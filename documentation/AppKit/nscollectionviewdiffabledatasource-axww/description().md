@@ -1,7 +1,8 @@
 # description()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string with a description of the diffable data source.
 

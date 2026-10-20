@@ -1,7 +1,8 @@
 # isApplication
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the resource is an application.
 
@@ -22,7 +23,8 @@ var isApplication: Bool? { get }
 
 ## See Also
 
-- [var applicationIsScriptable: Bool?](urlresourcevalues/applicationisscriptable.md)
+### Application values
+- [var applicationIsScriptable: Bool?](./applicationisscriptable.md)
   A Boolean value that indicates whether the application is scriptable.
 
 

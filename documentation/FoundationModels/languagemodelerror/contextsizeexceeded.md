@@ -1,7 +1,8 @@
 # LanguageModelError.ContextSizeExceeded
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about exceeding the context window size.
 
@@ -22,27 +23,28 @@ struct ContextSizeExceeded
 ## Topics
 
 ### Creating an error instance
-- [init(contextSize: Int, tokenCount: Int, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/contextsizeexceeded/init(contextsize:tokencount:debugdescription:metadata:).md)
+- [init(contextSize: Int, tokenCount: Int, debugDescription: String, metadata: [String : any Sendable])](./contextsizeexceeded/init%28contextsize,tokencount,debugdescription,metadata%29.md)
   Creates information describing a transcript that exceeded the model’s context size.
 ### Inspecting context size errors
-- [var metadata: [String : any Sendable]](languagemodelerror/contextsizeexceeded/metadata.md)
+- [var metadata: [String : any Sendable]](./contextsizeexceeded/metadata.md)
   Additional information about the failure, keyed by name.
-- [var tokenCount: Int](languagemodelerror/contextsizeexceeded/tokencount.md)
+- [var tokenCount: Int](./contextsizeexceeded/tokencount.md)
   The number of tokens in the transcript that exceeded the model’s context size.
-- [var contextSize: Int](languagemodelerror/contextsizeexceeded/contextsize.md)
+- [var contextSize: Int](./contextsizeexceeded/contextsize.md)
   The model’s maximum context size, in tokens.
-- [var debugDescription: String](languagemodelerror/contextsizeexceeded/debugdescription.md)
+- [var debugDescription: String](./contextsizeexceeded/debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case contextSizeExceeded(LanguageModelError.ContextSizeExceeded)](languagemodelerror/contextsizeexceeded(_:).md)
+### Exceeded context size error
+- [case contextSizeExceeded(LanguageModelError.ContextSizeExceeded)](./contextsizeexceeded%28_%29.md)
   The session’s transcript exceeded the model’s context size.
 
 

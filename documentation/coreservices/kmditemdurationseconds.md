@@ -1,7 +1,8 @@
 # kMDItemDurationSeconds
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The duration, in seconds, of the content of file. A value of 10.5 represents media that is 10 and 1/2 seconds long. A CFNumber.
 
@@ -12,6 +13,10 @@ The duration, in seconds, of the content of file. A value of 10.5 represents med
 
 ```swift
 let kMDItemDurationSeconds: CFString!
+```
+
+```c
+const CFStringRef kMDItemDurationSeconds;
 ```
 
 

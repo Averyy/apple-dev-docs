@@ -1,7 +1,8 @@
 # UIPageControlTimerProgressDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -16,27 +17,32 @@
 protocol UIPageControlTimerProgressDelegate : UIPageControlProgressDelegate
 ```
 
+```objc
+@protocol UIPageControlTimerProgressDelegate <UIPageControlProgressDelegate>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func pageControlTimerProgress(UIPageControlTimerProgress, shouldAdvanceToPage: Int) -> Bool](uipagecontroltimerprogressdelegate/pagecontroltimerprogress(_:shouldadvancetopage:).md)
+- [func pageControlTimerProgress(UIPageControlTimerProgress, shouldAdvanceToPage: Int) -> Bool](./uipagecontroltimerprogressdelegate/pagecontroltimerprogress%28_,shouldadvancetopage%29.md)
   Determines if the time interval progress should advance to the next page upon progress completion of the current page’s duration. Default is YES.
-- [func pageControlTimerProgressDidChange(UIPageControlTimerProgress)](uipagecontroltimerprogressdelegate/pagecontroltimerprogressdidchange(_:).md)
+- [func pageControlTimerProgressDidChange(UIPageControlTimerProgress)](./uipagecontroltimerprogressdelegate/pagecontroltimerprogressdidchange%28_%29.md)
   Called when the progress has changed from the time interval progress.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIPageControlProgressDelegate](uipagecontrolprogressdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIPageControlProgressDelegate](./uipagecontrolprogressdelegate.md)
 
 ## See Also
 
-- [var progress: UIPageControlProgress?](uipagecontrol/progress.md)
+### Configuring page progress
+- [var progress: UIPageControlProgress?](./uipagecontrol/progress.md)
   An object that defines the progress of the page control. Default is nil.
-- [class UIPageControlProgress](uipagecontrolprogress.md)
-- [class UIPageControlTimerProgress](uipagecontroltimerprogress.md)
-- [protocol UIPageControlProgressDelegate](uipagecontrolprogressdelegate.md)
+- [class UIPageControlProgress](./uipagecontrolprogress.md)
+- [class UIPageControlTimerProgress](./uipagecontroltimerprogress.md)
+- [protocol UIPageControlProgressDelegate](./uipagecontrolprogressdelegate.md)
 
 
 ---

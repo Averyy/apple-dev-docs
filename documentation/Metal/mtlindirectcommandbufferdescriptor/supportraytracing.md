@@ -1,7 +1,8 @@
 # supportRayTracing
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var supportRayTracing: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL supportRayTracing;
 ```
 
 

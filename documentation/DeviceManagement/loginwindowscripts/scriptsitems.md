@@ -1,7 +1,8 @@
 # LoginWindowScripts.ScriptsItems
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary of login scripts.
 
@@ -10,7 +11,7 @@ A dictionary of login scripts.
 
 ## Declaration
 
-```swift
+```
 object LoginWindowScripts.ScriptsItems
 ```
 

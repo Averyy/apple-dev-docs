@@ -1,7 +1,8 @@
 # PositionError
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface PositionError
 ```
 
 ## Topics
 
 ### Instance Properties
-- [code](positionerror/1629375-code.md)
-- [message](positionerror/1633298-message.md)
+- [code](./positionerror/api-1629375-code.md)
+- [message](./positionerror/api-1633298-message.md)
 ### Miscellaneous
-- [PERMISSION_DENIED](positionerror/1633363-permission_denied.md)
-- [POSITION_UNAVAILABLE](positionerror/1633704-position_unavailable.md)
-- [TIMEOUT](positionerror/1630601-timeout.md)
+- [PERMISSION_DENIED](./positionerror/api-1633363-permission_denied.md)
+- [POSITION_UNAVAILABLE](./positionerror/api-1633704-position_unavailable.md)
+- [TIMEOUT](./positionerror/api-1630601-timeout.md)
 
 
 ---

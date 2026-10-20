@@ -1,17 +1,18 @@
 # CILinearGradient
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure a linear gradient filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,34 +20,40 @@ The properties you use to configure a linear gradient filter.
 protocol CILinearGradient : CIFilterProtocol
 ```
 
+```objc
+@protocol CILinearGradient <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var color0: CIColor](cilineargradient/color0.md)
+- [var color0: CIColor](./cilineargradient/color0.md)
   The first color to use in the gradient.
-- [var color1: CIColor](cilineargradient/color1.md)
+- [var color1: CIColor](./cilineargradient/color1.md)
   The second color to use in the gradient.
-- [var point0: CGPoint](cilineargradient/point0.md)
+- [var point0: CGPoint](./cilineargradient/point0.md)
   The starting position of the gradient.
-- [var point1: CGPoint](cilineargradient/point1.md)
+- [var point1: CGPoint](./cilineargradient/point1.md)
   The ending position of the gradient.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [class func linearGradient() -> any CIFilter & CILinearGradient](cifilter-swift.class/lineargradient.md)
+### Related Documentation
+- [class func linearGradient() -> any CIFilter & CILinearGradient](./cifilter-swift.class/lineargradient%28%29.md)
   Generates a color gradient that varies along a linear axis between two defined endpoints.
-- [protocol CIGaussianGradient](cigaussiangradient.md)
+### Protocols
+- [protocol CIGaussianGradient](./cigaussiangradient.md)
   The properties you use to configure a Gaussian gradient filter.
-- [protocol CIHueSaturationValueGradient](cihuesaturationvaluegradient.md)
+- [protocol CIHueSaturationValueGradient](./cihuesaturationvaluegradient.md)
   The properties you use to configure a hue-saturation-value gradient filter.
-- [protocol CIRadialGradient](ciradialgradient.md)
+- [protocol CIRadialGradient](./ciradialgradient.md)
   The properties you use to configure a radial gradient filter.
-- [protocol CISmoothLinearGradient](cismoothlineargradient.md)
+- [protocol CISmoothLinearGradient](./cismoothlineargradient.md)
   The properties you use to configure a smooth linear gradient filter.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a constant from a value you provide.
 

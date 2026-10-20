@@ -1,7 +1,8 @@
 # typeMismatch
 
 **Framework**: ManagedApp  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates the decoder encountered a type mismatch.
 

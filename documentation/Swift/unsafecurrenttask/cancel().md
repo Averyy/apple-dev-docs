@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancel the current task.
 
@@ -28,9 +29,9 @@ The task will be immediately cancelled and cancellation will propagate towards a
 
 Note that cancellation may not be observed if a task is currently executing with an active task cancellation shield. Refer to cancellation shield documentation for detailed semantics.
 
-> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
+> **See Also**: `withTaskCancellationShield(operation:)-(()->Value)`
 
-> **Note**: [`hasActiveCancellationShield`](task/hasactivecancellationshield.md)
+> **See Also**: [`hasActiveCancellationShield`](../task/hasactivecancellationshield.md)
 
 
 ---

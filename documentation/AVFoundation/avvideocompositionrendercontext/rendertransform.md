@@ -1,7 +1,8 @@
 # renderTransform
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transform to apply to the source image.
 
@@ -19,21 +20,26 @@ A transform to apply to the source image.
 var renderTransform: CGAffineTransform { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGAffineTransform renderTransform;
+```
+
 #### Discussion
 
-The transform to apply to the source image incorporating the [`renderScale`](avvideocompositionrendercontext/renderscale.md), [`pixelAspectRatio`](avvideocompositionrendercontext/pixelaspectratio.md), and [`edgeWidths`](avvideocompositionrendercontext/edgewidths.md).
+The transform to apply to the source image incorporating the [`renderScale`](./renderscale.md), [`pixelAspectRatio`](./pixelaspectratio.md), and [`edgeWidths`](./edgewidths.md).
 
 The coordinate system origin is the top left corner of the buffer.
 
 ## See Also
 
-- [var videoComposition: AVVideoComposition](avvideocompositionrendercontext/videocomposition.md)
+### Getting the render settings
+- [var videoComposition: AVVideoComposition](./videocomposition.md)
   The video composition being rendered.
-- [var highQualityRendering: Bool](avvideocompositionrendercontext/highqualityrendering.md)
+- [var highQualityRendering: Bool](./highqualityrendering.md)
   The rendering quality to use.
-- [var renderScale: Float](avvideocompositionrendercontext/renderscale.md)
+- [var renderScale: Float](./renderscale.md)
   A scaling ratio that is applied when rendering frames.
-- [var size: CGSize](avvideocompositionrendercontext/size.md)
+- [var size: CGSize](./size.md)
   The width and height for the rendering frames.
 
 

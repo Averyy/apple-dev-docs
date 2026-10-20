@@ -1,7 +1,8 @@
 # HKWorkoutSessionState.prepared
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is ready but not yet running.
 
@@ -9,7 +10,7 @@ The session is ready but not yet running.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -19,23 +20,29 @@ The session is ready but not yet running.
 case prepared
 ```
 
+```c
+HKWorkoutSessionStatePrepared
+```
+
 #### Discussion
 
 The app can continue to run in the background, even after the user lowers their wrist, but it doesn’t yet generate workout data.
 
 ## See Also
 
-- [func prepare()](hkworkoutsession/prepare.md)
+### Related Documentation
+- [func prepare()](../hkworkoutsession/prepare%28%29.md)
   Prepares the workout session.
-- [HKWorkoutSessionState.notStarted](hkworkoutsessionstate/notstarted.md)
+### Session states
+- [HKWorkoutSessionState.notStarted](./notstarted.md)
   The workout session has not started.
-- [HKWorkoutSessionState.running](hkworkoutsessionstate/running.md)
+- [HKWorkoutSessionState.running](./running.md)
   The workout session is running.
-- [HKWorkoutSessionState.paused](hkworkoutsessionstate/paused.md)
+- [HKWorkoutSessionState.paused](./paused.md)
   The workout session has paused.
-- [HKWorkoutSessionState.stopped](hkworkoutsessionstate/stopped.md)
+- [HKWorkoutSessionState.stopped](./stopped.md)
   The session has stopped.
-- [HKWorkoutSessionState.ended](hkworkoutsessionstate/ended.md)
+- [HKWorkoutSessionState.ended](./ended.md)
   The workout session has ended.
 
 

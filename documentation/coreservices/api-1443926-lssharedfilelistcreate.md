@@ -1,7 +1,8 @@
 # LSSharedFileListCreate(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+ - Deprecated in 10.11
@@ -10,6 +11,10 @@
 
 ```swift
 func LSSharedFileListCreate(_ inAllocator: CFAllocator?, _ inListType: CFString, _ listOptions: CFTypeRef?) -> Unmanaged<LSSharedFileList>?
+```
+
+```c
+LSSharedFileListRef LSSharedFileListCreate(CFAllocatorRef inAllocator, CFStringRef inListType, CFTypeRef listOptions);
 ```
 
 

@@ -1,7 +1,8 @@
 # NSCriticalMessagingUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app needs to send SMS messages.
 
@@ -10,13 +11,15 @@ A message that tells people why the app needs to send SMS messages.
 - iPadOS 18.2+
 - watchOS 11.2+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSCriticalMessagingUsageDescription` (Privacy - Critical Messaging Usage Description)
+- **Type**: string
 
 ## See Also
 
-- [NSStickerSharingLevel](information-property-list/nsstickersharinglevel.md)
+### Messages
+- [NSStickerSharingLevel](./nsstickersharinglevel.md)
 
 
 ---

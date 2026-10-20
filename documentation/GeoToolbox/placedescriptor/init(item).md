@@ -1,7 +1,8 @@
 # init(item:)
 
 **Framework**: GeoToolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a place descriptor from a map item.
 
@@ -39,7 +40,8 @@ Note that it’s possible for this initialization to fail if the system can’t 
 
 ## See Also
 
-- [init(representations: [PlaceDescriptor.PlaceRepresentation], commonName: String?, supportingRepresentations: [PlaceDescriptor.SupportingPlaceRepresentation])](placedescriptor/init(representations:commonname:supportingrepresentations:).md)
+### Creating a place descriptor
+- [init(representations: [PlaceDescriptor.PlaceRepresentation], commonName: String?, supportingRepresentations: [PlaceDescriptor.SupportingPlaceRepresentation])](./init%28representations,commonname,supportingrepresentations%29.md)
   Creates a place descriptor, suitable for use when searching or retrieving rich data about a place.
 
 

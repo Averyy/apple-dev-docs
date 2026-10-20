@@ -2,6 +2,7 @@
 
 **Framework**: MusicKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Loads a new instance of the music item that includes the specified properties.
@@ -25,7 +26,7 @@ func with(_ properties: PartialMusicAsyncProperty<Self>..., preferredSource: Mus
 
 This asynchronous method fetches a more complete representation of the receiver, loading the contents for each property you request from either the Apple Music catalog or the user’s library, depending on the preferred source as well the availability of the content in those respective data sources.
 
-For example, if you want to load the [`tracks`](partialmusicproperty/tracks-9mk2l.md) relationship for an [`Album`](album.md), as found in the user’s library, as well as other associations of content that only live in the Apple Music catalog, like the [`recordLabels`](partialmusicproperty/recordlabels.md) and [`relatedAlbums`](partialmusicproperty/relatedalbums.md) associations, you can use this code:
+For example, if you want to load the [`tracks`](../partialmusicproperty/tracks-9mk2l.md) relationship for an [`Album`](../album.md), as found in the user’s library, as well as other associations of content that only live in the Apple Music catalog, like the [`recordLabels`](../partialmusicproperty/recordlabels.md) and [`relatedAlbums`](../partialmusicproperty/relatedalbums.md) associations, you can use this code:
 
 ```swift
 let album: Album = …
@@ -37,7 +38,7 @@ let detailedAlbum = try await album.with(
 )
 ```
 
-Here, because the [`tracks`](partialmusicproperty/tracks-9mk2l.md) relationship for an [`Album`](album.md) is supported in both the library and the catalog, and because the this code specifically requests [`MusicPropertySource.library`](musicpropertysource/library.md) as the preferred source, the framework will load the tracks from the user’s library. However, because the [`recordLabels`](partialmusicproperty/recordlabels.md) and [`relatedAlbums`](partialmusicproperty/relatedalbums.md) associations are only available in the Apple Music catalog, the framework will also issue a network request to Apple Music API to fetch those associations of content from the catalog.
+Here, because the [`tracks`](../partialmusicproperty/tracks-9mk2l.md) relationship for an [`Album`](../album.md) is supported in both the library and the catalog, and because the this code specifically requests [`MusicPropertySource.library`](../musicpropertysource/library.md) as the preferred source, the framework will load the tracks from the user’s library. However, because the [`recordLabels`](../partialmusicproperty/recordlabels.md) and [`relatedAlbums`](../partialmusicproperty/relatedalbums.md) associations are only available in the Apple Music catalog, the framework will also issue a network request to Apple Music API to fetch those associations of content from the catalog.
 
 
 ---

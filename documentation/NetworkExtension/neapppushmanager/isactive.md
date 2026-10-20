@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a configuration is in use.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether a configuration is in use.
 var isActive: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isActive) BOOL active;
+```
+
 #### Discussion
 
 Use key-value observing to watch for changes in this property.
 
 ## See Also
 
-- [var isEnabled: Bool](neapppushmanager/isenabled.md)
+### Inspecting manager properties
+- [var isEnabled: Bool](./isenabled.md)
   A property you use to toggle enabling the configuration.
-- [var localizedDescription: String?](neapppushmanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string that contains the localized description of the app push manager.
 
 

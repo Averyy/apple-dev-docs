@@ -1,14 +1,17 @@
 # showsExplicitLabel
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the list item displays its explicit content indicator.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
+- iOS 14.0+ - Deprecated in 14.0
+- iPadOS 14.0+ - Deprecated in 14.0
+- Mac Catalyst 14.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use [`isExplicitContent`](./isexplicitcontent.md) instead.
 
 ## Declaration
 
@@ -16,23 +19,28 @@ A Boolean value that determines whether the list item displays its explicit cont
 var showsExplicitLabel: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL showsExplicitLabel;
+```
+
 ## See Also
 
-- [var showsDisclosureIndicator: Bool](cplistitem/showsdisclosureindicator.md)
+### Deprecated Properties
+- [var showsDisclosureIndicator: Bool](./showsdisclosureindicator.md)
   A Boolean value that indicates whether the list item cell shows a disclosure indicator on its trailing edge.
-- [func setRootTemplate(CPTemplate, animated: Bool)](cpinterfacecontroller/setroottemplate(_:animated:).md)
+- [func setRootTemplate(CPTemplate, animated: Bool)](../cpinterfacecontroller/setroottemplate%28_,animated%29.md)
   Sets the root template, starting a new stack for the template navigation hierarchy.
-- [func pushTemplate(CPTemplate, animated: Bool)](cpinterfacecontroller/pushtemplate(_:animated:).md)
+- [func pushTemplate(CPTemplate, animated: Bool)](../cpinterfacecontroller/pushtemplate%28_,animated%29.md)
   Pushes a template onto the navigation stack and updates the CarPlay display.
-- [func popTemplate(animated: Bool)](cpinterfacecontroller/poptemplate(animated:).md)
+- [func popTemplate(animated: Bool)](../cpinterfacecontroller/poptemplate%28animated%29.md)
   Pops the top template from the navigation stack and updates the CarPlay display.
-- [func popToRootTemplate(animated: Bool)](cpinterfacecontroller/poptoroottemplate(animated:).md)
+- [func popToRootTemplate(animated: Bool)](../cpinterfacecontroller/poptoroottemplate%28animated%29.md)
   Pops all templates on the stack—except the root template—and updates the CarPlay display.
-- [func pop(to: CPTemplate, animated: Bool)](cpinterfacecontroller/pop(to:animated:).md)
+- [func pop(to: CPTemplate, animated: Bool)](../cpinterfacecontroller/pop%28to,animated%29.md)
   Pops templates until the specified template is at the top of the navigation stack.
-- [func presentTemplate(CPTemplate, animated: Bool)](cpinterfacecontroller/presenttemplate(_:animated:).md)
+- [func presentTemplate(CPTemplate, animated: Bool)](../cpinterfacecontroller/presenttemplate%28_,animated%29.md)
   Presents a template modally.
-- [func dismissTemplate(animated: Bool)](cpinterfacecontroller/dismisstemplate(animated:).md)
+- [func dismissTemplate(animated: Bool)](../cpinterfacecontroller/dismisstemplate%28animated%29.md)
   Dismisses the template that the interface controller is displaying modally.
 
 

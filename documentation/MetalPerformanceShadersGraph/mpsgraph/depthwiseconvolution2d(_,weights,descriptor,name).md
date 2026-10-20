@@ -1,7 +1,8 @@
 # depthwiseConvolution2D(_:weights:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 2D-depthwise convolution operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 2D-depthwise convolution operation and returns the result tensor.
 
 ```swift
 func depthwiseConvolution2D(_ source: MPSGraphTensor, weights: MPSGraphTensor, descriptor: MPSGraphDepthwiseConvolution2DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) depthwiseConvolution2DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphDepthwiseConvolution2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

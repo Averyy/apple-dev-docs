@@ -1,7 +1,8 @@
 # CiGitRefKind
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that represents the kind of a Git References resource.
 
@@ -10,15 +11,21 @@ A string that represents the kind of a Git References resource.
 
 ## Declaration
 
-```swift
+```
 string CiGitRefKind
 ```
 
+## Possible Values
+
+- `BRANCH`: The Git reference represents a branch.
+- `TAG`: The Git reference represents a tag.
+
 ## See Also
 
-- [object ScmGitReference.Attributes](scmgitreference/attributes-data.dictionary.md)
+### Objects and types
+- [object ScmGitReference.Attributes](./scmgitreference/attributes-data.dictionary.md)
   The attributes that describe a Git Reference resource.
-- [object ScmGitReference.Relationships](scmgitreference/relationships-data.dictionary.md)
+- [object ScmGitReference.Relationships](./scmgitreference/relationships-data.dictionary.md)
   The relationships of the Git References resource you included in the request and those on which you can operate.
 
 

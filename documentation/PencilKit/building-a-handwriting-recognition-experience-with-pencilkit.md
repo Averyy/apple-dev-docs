@@ -1,6 +1,8 @@
 # Building a handwriting recognition experience with PencilKit
 
-**Framework**: PencilKit
+**Framework**: PencilKit  
+**Role**: Sample Code  
+**Download**: [BuildingAHandwritingRecognitionExperienceWithPencilKit.zip](https://docs-assets.developer.apple.com/published/48bcc5ceffcb/BuildingAHandwritingRecognitionExperienceWithPencilKit.zip)
 
 Integrate handwriting recognition into your app to identify written text across multiple languages, and explore path conversion and substrokes to enhance the drawing experience.
 
@@ -12,17 +14,18 @@ Integrate handwriting recognition into your app to identify written text across 
 
 #### Overview
 
-![A screenshot showing the word heart handwritten in English on the canvas, with PencilKit displaying its Chinese character translation at the top of the screen.](/images/com.apple.pencilkit/building-a-handwriting-recognition-experience-with-pencilkit@2x.png)
+![A screenshot showing the word heart handwritten in English on the canvas, with PencilKit displaying its Chinese character translation at the top of the screen.](https://developer.apple.com/tutorials/images/com.apple.pencilkit/building-a-handwriting-recognition-experience-with-pencilkit@2x.png)
 
-> **Note**: This sample code project is associated with WWDC26 session [`203: Read Between the Strokes with PencilKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc26/203/).
+> **Note**: This sample code project is associated with WWDC26 session [203: Read Between the Strokes with PencilKit](https://developer.apple.com/videos/play/wwdc26/203/).
 
 This sample code project must be run on a physical device with Apple Pencil.
 
 ## See Also
 
-- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+### Handwriting recognition
+- [Recognizing handwriting and converting it to text](./recognizing-handwriting-and-converting-to-text.md)
   Analyze handwritten strokes in a PencilKit canvas using on-device recognition, and convert them to text that your app can display, copy, or index.
-- [actor PKStrokeRecognizer](pkstrokerecognizer.md)
+- [actor PKStrokeRecognizer](./pkstrokerecognizer.md)
   An actor that recognizes handwriting and searches for text within a PencilKit drawing.
 
 

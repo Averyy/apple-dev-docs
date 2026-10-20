@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new version that supersedes the current version.
 
@@ -16,6 +17,10 @@ Creates a new version that supersedes the current version.
 
 ```swift
 func next() -> NSFileProviderDomainVersion
+```
+
+```objc
+- (NSFileProviderDomainVersion *) next;
 ```
 
 

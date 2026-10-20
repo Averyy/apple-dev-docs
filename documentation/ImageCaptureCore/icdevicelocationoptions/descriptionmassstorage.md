@@ -1,7 +1,8 @@
 # descriptionMassStorage
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mass storage device.
 
@@ -18,13 +19,18 @@ A mass storage device.
 static let descriptionMassStorage: ICDeviceLocationOptions
 ```
 
+```c
+extern ICDeviceLocationOptions const ICDeviceLocationDescriptionMassStorage;
+```
+
 ## See Also
 
-- [static let descriptionBluetooth: ICDeviceLocationOptions](icdevicelocationoptions/descriptionbluetooth.md)
+### Determining a Location
+- [static let descriptionBluetooth: ICDeviceLocationOptions](./descriptionbluetooth.md)
   A paired Bluetooth device.
-- [static let descriptionFireWire: ICDeviceLocationOptions](icdevicelocationoptions/descriptionfirewire.md)
+- [static let descriptionFireWire: ICDeviceLocationOptions](./descriptionfirewire.md)
   A device that’s directly attached to the Mac through its FireWire port.
-- [static let descriptionUSB: ICDeviceLocationOptions](icdevicelocationoptions/descriptionusb.md)
+- [static let descriptionUSB: ICDeviceLocationOptions](./descriptionusb.md)
   A device that’s directly attached to the Mac through its USB port.
 
 

@@ -1,17 +1,24 @@
 # MPMovieFinishReason.userExited
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 case userExited
+```
+
+```c
+MPMovieFinishReasonUserExited
 ```
 
 #### Discussion
@@ -20,8 +27,9 @@ The user stopped playback.
 
 ## See Also
 
-- [MPMovieFinishReason.playbackEnded](mpmoviefinishreason/playbackended.md)
-- [MPMovieFinishReason.playbackError](mpmoviefinishreason/playbackerror.md)
+### Constants
+- [MPMovieFinishReason.playbackEnded](./playbackended.md)
+- [MPMovieFinishReason.playbackError](./playbackerror.md)
 
 
 ---

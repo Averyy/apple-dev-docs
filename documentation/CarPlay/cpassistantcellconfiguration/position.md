@@ -1,7 +1,8 @@
 # position
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the assistant cell in the list template.
 
@@ -16,13 +17,18 @@ The position of the assistant cell in the list template.
 var position: CPListItem.AssistantCellPosition { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CPAssistantCellPosition position;
+```
+
 ## See Also
 
-- [var visibility: CPListItem.AssistantCellVisibility](cpassistantcellconfiguration/visibility.md)
+### Getting the Configuration Attributes
+- [var visibility: CPListItem.AssistantCellVisibility](./visibility.md)
   The visibility of the assistant cell in the list template.
-- [var assistantAction: CPAssistantCellActionType](cpassistantcellconfiguration/assistantaction.md)
+- [var assistantAction: CPAssistantCellActionType](./assistantaction.md)
   The action that Siri performs when the user selects the assistant cell.
-- [enum CPAssistantCellActionType](cpassistantcellactiontype.md)
+- [enum CPAssistantCellActionType](../cpassistantcellactiontype.md)
   The supported Siri actions of the assistant cell.
 
 

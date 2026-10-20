@@ -1,7 +1,8 @@
 # FSDataCacheError.Code.errorCacheOperationConflict
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A conflicting cache operation is in progress.
 
@@ -14,19 +15,24 @@ A conflicting cache operation is in progress.
 case errorCacheOperationConflict
 ```
 
+```c
+FSErrorCacheOperationConflict
+```
+
 #### Discussion
 
 This error occurs when multiple cache operations on the same item conflict, such as attempting to change cache mode while I/O is active.
 
 ## See Also
 
-- [FSDataCacheError.Code.errorInvalidCacheModeCoherency](fsdatacacheerror/code/errorinvalidcachemodecoherency.md)
+### Error codes
+- [FSDataCacheError.Code.errorInvalidCacheModeCoherency](./errorinvalidcachemodecoherency.md)
   The requested cache mode and coherency type combination is invalid.
-- [FSDataCacheError.Code.errorInvalidCacheTransition](fsdatacacheerror/code/errorinvalidcachetransition.md)
+- [FSDataCacheError.Code.errorInvalidCacheTransition](./errorinvalidcachetransition.md)
   The cache transition is not allowed.
-- [FSDataCacheError.Code.errorCacheFlushFailed](fsdatacacheerror/code/errorcacheflushfailed.md)
+- [FSDataCacheError.Code.errorCacheFlushFailed](./errorcacheflushfailed.md)
   Failed to flush dirty cached data to storage.
-- [FSDataCacheError.Code.errorCacheInvalidationFailed](fsdatacacheerror/code/errorcacheinvalidationfailed.md)
+- [FSDataCacheError.Code.errorCacheInvalidationFailed](./errorcacheinvalidationfailed.md)
   Failed to invalidate (clear) cached data.
 
 

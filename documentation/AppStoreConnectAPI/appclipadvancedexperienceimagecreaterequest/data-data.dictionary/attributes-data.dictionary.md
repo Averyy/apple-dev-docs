@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceImageCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the new Advanced App Clip Experience Images resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the new Advanced App Clip Experience Images
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceImageCreateRequest.Data.Attributes
 ```
 

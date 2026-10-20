@@ -1,7 +1,8 @@
 # FSVolume.SeekRegion.data
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Seek the next data region.
 
@@ -14,13 +15,18 @@ Seek the next data region.
 case data
 ```
 
+```c
+FSSeekRegionData
+```
+
 #### Discussion
 
 When there are no more data regions past the supplied `offset`, an error code `ENXIO` should be returned.
 
 ## See Also
 
-- [FSVolume.SeekRegion.hole](fsvolume/seekregion/hole.md)
+### Seek region types
+- [FSVolume.SeekRegion.hole](./hole.md)
   Seek the next hole region.
 
 

@@ -1,7 +1,8 @@
 # localizedDisplayName
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized display name for the application.
 
@@ -22,9 +23,10 @@ In an extension that provides shield configurations, this property provides the 
 
 ## See Also
 
-- [let bundleIdentifier: String?](application/bundleidentifier.md)
+### Accessing application information
+- [let bundleIdentifier: String?](./bundleidentifier.md)
   The unique string that identifies this app.
-- [let token: ApplicationToken?](application/token.md)
+- [let token: ApplicationToken?](./token.md)
   An opaque representation of a specific web domain.
 
 

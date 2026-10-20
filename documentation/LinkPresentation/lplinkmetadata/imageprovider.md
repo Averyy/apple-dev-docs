@@ -1,7 +1,8 @@
 # imageProvider
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that retrieves data corresponding to a representative image for the URL.
 
@@ -20,9 +21,14 @@ An object that retrieves data corresponding to a representative image for the UR
 var imageProvider: NSItemProvider? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSItemProvider * imageProvider;
+```
+
 ## See Also
 
-- [var iconProvider: NSItemProvider?](lplinkmetadata/iconprovider.md)
+### Getting the link’s images
+- [var iconProvider: NSItemProvider?](./iconprovider.md)
   An object that retrieves data corresponding to a representative icon for the URL.
 
 

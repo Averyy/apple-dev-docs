@@ -1,7 +1,8 @@
 # knobStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroller’s knob style.
 
@@ -14,17 +15,22 @@ The scroller’s knob style.
 var knobStyle: NSScroller.KnobStyle { get set }
 ```
 
+```objc
+@property NSScrollerKnobStyle knobStyle;
+```
+
 #### Discussion
 
-The value of this property does not affect legacy scrollers. [`NSScroller.KnobStyle.default`](nsscroller/knobstyle-swift.enum/default.md) is appropriate for a wide range of content, but in some cases choosing an alternative knob style may enhance visibility of the scroller knob atop some kinds of content.
+The value of this property does not affect legacy scrollers. [`NSScroller.KnobStyle.default`](./knobstyle-swift.enum/default.md) is appropriate for a wide range of content, but in some cases choosing an alternative knob style may enhance visibility of the scroller knob atop some kinds of content.
 
-For a list of possible values, see [`NSScroller.KnobStyle`](nsscroller/knobstyle-swift.enum.md).
+For a list of possible values, see [`NSScroller.KnobStyle`](./knobstyle-swift.enum.md).
 
 ## See Also
 
-- [class var preferredScrollerStyle: NSScroller.Style](nsscroller/preferredscrollerstyle.md)
+### Managing Presentation Style
+- [class var preferredScrollerStyle: NSScroller.Style](./preferredscrollerstyle.md)
   Returns the style of scrollers that applications should use wherever possible.
-- [var scrollerStyle: NSScroller.Style](nsscroller/scrollerstyle.md)
+- [var scrollerStyle: NSScroller.Style](./scrollerstyle.md)
   The scroller style for this scroller.
 
 

@@ -1,7 +1,8 @@
 # startTime
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom start time for the music video.
 

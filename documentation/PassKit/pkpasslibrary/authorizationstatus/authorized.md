@@ -1,7 +1,8 @@
 # PKPassLibrary.AuthorizationStatus.authorized
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that occurs when the person allows your app to add one or more passes to Wallet.
 
@@ -19,13 +20,18 @@ A status that occurs when the person allows your app to add one or more passes t
 case authorized
 ```
 
+```c
+PKPassLibraryAuthorizationStatusAuthorized
+```
+
 ## See Also
 
-- [PKPassLibrary.AuthorizationStatus.denied](pkpasslibrary/authorizationstatus/denied.md)
+### Authorization statuses
+- [PKPassLibrary.AuthorizationStatus.denied](./denied.md)
   A status that occurs when the person doesn’t allow your app to add one or more passes to Wallet.
-- [PKPassLibrary.AuthorizationStatus.notDetermined](pkpasslibrary/authorizationstatus/notdetermined.md)
+- [PKPassLibrary.AuthorizationStatus.notDetermined](./notdetermined.md)
   A status that occurs when the authorization status isn’t specified.
-- [PKPassLibrary.AuthorizationStatus.restricted](pkpasslibrary/authorizationstatus/restricted.md)
+- [PKPassLibrary.AuthorizationStatus.restricted](./restricted.md)
   A status that occurs when the authorization status is limited.
 
 

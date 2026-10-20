@@ -1,7 +1,8 @@
 # ManagedAppIdentitiesProvider
 
 **Framework**: ManagedApp  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that provides identities that an MDM admin provisions for a managed app or extension.
 
@@ -19,7 +20,7 @@ class ManagedAppIdentitiesProvider
 
 ## Mentions
 
-- [Accessing provisioned secrets with identifiers](accessing-provisioned-secrets-with-identifiers.md)
+- [Accessing provisioned secrets with identifiers](./accessing-provisioned-secrets-with-identifiers.md)
 
 #### Overview
 
@@ -28,22 +29,23 @@ Create an instance of this class when your app needs to access identities that t
 ## Topics
 
 ### Initializing an identities provider
-- [init()](managedappidentitiesprovider/init.md)
+- [init()](./managedappidentitiesprovider/init%28%29.md)
   Initializes an identities provider.
 ### Identifying identities
-- [var identifiers: some AsyncSequence<Array<String>, Never>](managedappidentitiesprovider/identifiers.md)
+- [var identifiers: some AsyncSequence<Array<String>, Never>](./managedappidentitiesprovider/identifiers.md)
   An asynchronous sequence of arrays of identity identifiers provided by the MDM server.
 ### Accessing identities
-- [func identity(withIdentifier: String) async throws(ManagedAppError) -> SecIdentity](managedappidentitiesprovider/identity(withidentifier:).md)
+- [func identity(withIdentifier: String) async throws(ManagedAppError) -> SecIdentity](./managedappidentitiesprovider/identity%28withidentifier%29.md)
   Provides an identity by its identifier.
 
 ## See Also
 
-- [Accessing provisioned secrets with identifiers](accessing-provisioned-secrets-with-identifiers.md)
+### Secrets and identifiers
+- [Accessing provisioned secrets with identifiers](./accessing-provisioned-secrets-with-identifiers.md)
   Specify the secrets your app requires for device management features, receive secrets from MDM servers and use secrets in your app.
-- [class ManagedAppCertificatesProvider](managedappcertificatesprovider.md)
+- [class ManagedAppCertificatesProvider](./managedappcertificatesprovider.md)
   A class that provides certificates that an MDM admin provisions for a managed app or extension.
-- [class ManagedAppPasswordsProvider](managedapppasswordsprovider.md)
+- [class ManagedAppPasswordsProvider](./managedapppasswordsprovider.md)
   A class that provides passwords that an MDM admin provisions for a managed app or extension.
 
 

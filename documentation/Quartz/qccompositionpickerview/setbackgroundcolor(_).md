@@ -1,17 +1,24 @@
 # setBackgroundColor(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the background color for the composition picker view.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func setBackgroundColor(_ color: NSColor!)
+```
+
+```objc
+- (void) setBackgroundColor:(NSColor *) color;
 ```
 
 ## Parameters
@@ -20,7 +27,8 @@ func setBackgroundColor(_ color: NSColor!)
 
 ## See Also
 
-- [func backgroundColor() -> NSColor!](qccompositionpickerview/backgroundcolor.md)
+### Setting and Getting the Background Color
+- [func backgroundColor() -> NSColor!](./backgroundcolor%28%29.md)
   Returns the background color of the composition picker view.
 
 

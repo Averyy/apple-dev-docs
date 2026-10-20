@@ -1,7 +1,8 @@
 # hasCommands
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the extension includes commands that users can invoke.
 
@@ -18,9 +19,13 @@ A Boolean value indicating whether the extension includes commands that users ca
 var hasCommands: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasCommands;
+```
+
 #### Discussion
 
-If this property is `YES`, the extension contains one or more commands that can be performed by the user. These commands should be accessible via keyboard shortcuts, menu items, or other user interface elements provided by the app. The list of commands can be accessed via [`commands`](wkwebextensioncontext/commands.md) on an extension context, and invoked via [`performCommand(_:)`](wkwebextensioncontext/performcommand(_:).md).
+If this property is `YES`, the extension contains one or more commands that can be performed by the user. These commands should be accessible via keyboard shortcuts, menu items, or other user interface elements provided by the app. The list of commands can be accessed via [`commands`](../wkwebextensioncontext/commands.md) on an extension context, and invoked via [`performCommand(_:)`](../wkwebextensioncontext/performcommand%28_%29.md).
 
 
 ---

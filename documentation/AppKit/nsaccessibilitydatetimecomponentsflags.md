@@ -1,15 +1,20 @@
 # NSAccessibilityDateTimeComponentsFlags
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 typealias NSAccessibilityDateTimeComponentsFlags = Int
+```
+
+```c
+typedef NSUInteger NSAccessibilityDateTimeComponentsFlags;
 ```
 
 

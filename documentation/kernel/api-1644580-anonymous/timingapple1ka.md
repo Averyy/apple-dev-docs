@@ -1,14 +1,15 @@
 # timingApple1Ka
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 timingApple1Ka = timingVESA_1024x768_60hz
 ```
 

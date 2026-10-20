@@ -1,12 +1,13 @@
 # registryDidChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted whenever the image representation class registry changes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Posted whenever the image representation class registry changes.
 class let registryDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSImageRepRegistryDidChangeNotification;
+```
+
 #### Discussion
 
 The notification object is the image class that is registered or unregistered. This notification does not contain a `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSImageRep.RegistryDidChangeMessage`](nsimagerep/registrydidchangemessage.md).
+To observe this notification using Swift concurrency, use [`NSImageRep.RegistryDidChangeMessage`](./registrydidchangemessage.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a decimal with the provided unsigned integer value.
 
@@ -22,13 +23,14 @@ init(_ value: UInt)
 
 ## See Also
 
-- [init(UInt8)](decimal/init(_:)-4gbgq.md)
+### Creating a decimal from an unsigned integer
+- [init(UInt8)](./init%28_%29-4gbgq.md)
   Creates and initializes a decimal with the provided unsigned integer value.
-- [init(UInt16)](decimal/init(_:)-9lio1.md)
+- [init(UInt16)](./init%28_%29-9lio1.md)
   Creates and initializes a decimal with the provided unsigned integer value.
-- [init(UInt32)](decimal/init(_:)-9okou.md)
+- [init(UInt32)](./init%28_%29-9okou.md)
   Creates and initializes a decimal with the provided unsigned integer value.
-- [init(UInt64)](decimal/init(_:)-43cx6.md)
+- [init(UInt64)](./init%28_%29-43cx6.md)
   Creates and initializes a decimal with the provided unsigned integer value.
 
 

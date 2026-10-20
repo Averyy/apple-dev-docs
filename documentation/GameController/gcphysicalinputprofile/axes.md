@@ -1,7 +1,8 @@
 # axes
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axes in the profile as key-value pairs for lookup by name.
 
@@ -19,17 +20,22 @@ The axes in the profile as key-value pairs for lookup by name.
 var axes: [String : GCControllerAxisInput] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDictionary<NSString *,GCControllerAxisInput *> * axes;
+```
+
 ## See Also
 
-- [var elements: [String : GCControllerElement]](gcphysicalinputprofile/elements.md)
+### Accessing elements by name or key
+- [var elements: [String : GCControllerElement]](./elements.md)
   The elements in the profile as key-value pairs for lookup by name.
-- [var buttons: [String : GCControllerButtonInput]](gcphysicalinputprofile/buttons.md)
+- [var buttons: [String : GCControllerButtonInput]](./buttons.md)
   The buttons in the profile as key-value pairs for lookup by name.
-- [var dpads: [String : GCControllerDirectionPad]](gcphysicalinputprofile/dpads.md)
+- [var dpads: [String : GCControllerDirectionPad]](./dpads.md)
   The directional pads in the profile as key-value pairs for lookup by name.
-- [var touchpads: [String : GCControllerTouchpad]](gcphysicalinputprofile/touchpads.md)
+- [var touchpads: [String : GCControllerTouchpad]](./touchpads.md)
   The touchpads in the profile as key-value pairs for lookup by name.
-- [subscript(String) -> GCControllerElement?](gcphysicalinputprofile/subscript(_:).md)
+- [subscript(String) -> GCControllerElement?](./subscript%28_%29.md)
   Returns the element that the key specifies.
 
 

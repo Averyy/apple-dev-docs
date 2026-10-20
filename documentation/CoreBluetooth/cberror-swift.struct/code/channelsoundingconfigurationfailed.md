@@ -1,7 +1,8 @@
 # CBError.Code.channelSoundingConfigurationFailed
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case channelSoundingConfigurationFailed
+```
+
+```c
+CBErrorChannelSoundingConfigurationFailed
 ```
 
 

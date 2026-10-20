@@ -1,7 +1,8 @@
 # NEVPNConnectionError.pluginDisabled
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the VPN plugin isn’t available or needs an update.
 
@@ -19,9 +20,14 @@ An error code that indicates the VPN plugin isn’t available or needs an update
 case pluginDisabled
 ```
 
+```c
+NEVPNConnectionErrorPluginDisabled
+```
+
 ## See Also
 
-- [NEVPNConnectionError.pluginFailed](nevpnconnectionerror/pluginfailed.md)
+### Plugin error codes
+- [NEVPNConnectionError.pluginFailed](./pluginfailed.md)
   An error code that indicates the VPN plugin failed unexpectedly.
 
 

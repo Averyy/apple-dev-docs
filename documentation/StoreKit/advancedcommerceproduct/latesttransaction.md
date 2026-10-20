@@ -1,7 +1,8 @@
 # latestTransaction
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent transaction associated with the generic product ID, if it exists.
 
@@ -26,9 +27,10 @@ This value is `nil` if the customer hasn’t made any purchases associated with 
 
 ## See Also
 
-- [var allTransactions: Transaction.Transactions](advancedcommerceproduct/alltransactions.md)
+### Getting transactions and entitlements
+- [var allTransactions: Transaction.Transactions](./alltransactions.md)
   All transactions associated with the generic product ID.
-- [var currentEntitlements: Transaction.Transactions](advancedcommerceproduct/currententitlements.md)
+- [var currentEntitlements: Transaction.Transactions](./currententitlements.md)
   The transactions that entitle the customer to Advanced Commerce Items purchased using the generic product ID.
 
 

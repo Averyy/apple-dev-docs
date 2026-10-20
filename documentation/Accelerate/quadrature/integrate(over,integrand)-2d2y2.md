@@ -1,7 +1,8 @@
 # integrate(over:integrand:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the integration over the supplied scalar function.
 
@@ -11,7 +12,7 @@ Performs the integration over the supplied scalar function.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ func integrate(over interval: ClosedRange<Double>, integrand: (Double) -> Double
 
 ## See Also
 
-- [func integrate(over: ClosedRange<Double>, integrand: (UnsafeBufferPointer<Double>, UnsafeMutableBufferPointer<Double>) -> ()) -> Result<(integralResult: Double, estimatedAbsoluteError: Double), Quadrature.Error>](quadrature/integrate(over:integrand:)-56h8b.md)
+### Instance Methods
+- [func integrate(over: ClosedRange<Double>, integrand: (UnsafeBufferPointer<Double>, UnsafeMutableBufferPointer<Double>) -> ()) -> Result<(integralResult: Double, estimatedAbsoluteError: Double), Quadrature.Error>](./integrate%28over,integrand%29-56h8b.md)
   Performs the integration over the supplied vector function.
 
 

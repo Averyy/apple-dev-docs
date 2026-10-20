@@ -1,7 +1,8 @@
 # UTTypeSymbolName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of an SF Symbol that represents this type.
 
@@ -11,9 +12,10 @@ The name of an SF Symbol that represents this type.
 - macOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UTTypeSymbolName` (Symbol Name)
+- **Type**: string
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # initializeMemory(as:repeating:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the memory referenced by this buffer slice with the given value, binds the memory to the value’s type, and returns a typed buffer of the initialized memory.
 
@@ -20,6 +21,8 @@ Initializes the memory referenced by this buffer slice with the given value, bin
 @discardableResult
 func initializeMemory<T>(as type: T.Type, repeating repeatedValue: T) -> UnsafeMutableBufferPointer<T>
 ```
+
+Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
 #### Return Value
 

@@ -1,21 +1,23 @@
 # OSUnserializeXML
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 OSPtr<OSObject> OSUnserializeXML(const char *buffer, OSString **errorString);
 ```
 
 ## See Also
 
-- [OSUnserialize](1584516-osunserialize.md)
-- [OSUnserializeBinary](1575008-osunserializebinary.md)
+### Serialization
+- [OSUnserialize](./api-1584516-osunserialize.md)
+- [OSUnserializeBinary](./api-1575008-osunserializebinary.md)
 
 
 ---

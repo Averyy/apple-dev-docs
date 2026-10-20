@@ -1,7 +1,8 @@
 # Limit
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A ranged limit.
 
@@ -10,7 +11,7 @@ A ranged limit.
 
 ## Declaration
 
-```swift
+```
 object Limit
 ```
 
@@ -21,13 +22,14 @@ object Limit
 
 ## See Also
 
-- [object Device](device.md)
+### Objects and data types
+- [object Device](./device.md)
   A device’s properties and their values.
-- [object MachineInfo](machineinfo.md)
+- [object MachineInfo](./machineinfo.md)
   A device’s information in response to a MDM enrollment profile request.
-- [object Profile](profile.md)
+- [object Profile](./profile.md)
   A profile’s properties and their values.
-- [object Url](url.md)
+- [object Url](./url.md)
   A URL object.
 
 

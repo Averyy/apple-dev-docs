@@ -1,7 +1,8 @@
 # SVGFEDistantLightElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFEDistantLightElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [azimuth](svgfedistantlightelement/1633647-azimuth.md)
-- [elevation](svgfedistantlightelement/1631165-elevation.md)
+- [azimuth](./svgfedistantlightelement/api-1633647-azimuth.md)
+- [elevation](./svgfedistantlightelement/api-1631165-elevation.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

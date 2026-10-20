@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All fields of the shipping contact on the payment sheet are editable by the user.
 
@@ -13,25 +14,32 @@ All fields of the shipping contact on the payment sheet are editable by the user
 - visionOS 1.0+
 - watchOS 8.0+
 
+> **Deprecated**: Use [`PKShippingContactEditingMode.available`](./available.md) instead.
+
 ## Declaration
 
 ```swift
 static var enabled: PKShippingContactEditingMode { get }
 ```
 
+```c
+PKShippingContactEditingModeEnabled
+```
+
 ## See Also
 
-- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
+### Deprecated
+- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](../pkpaymentrequest/applepaylateravailability-3dxrt.md)
   A value that indicates whether Apple Pay Later is available for a transaction.
-- [var requiredBillingAddressFields: PKAddressField](pkpaymentrequest/requiredbillingaddressfields.md)
+- [var requiredBillingAddressFields: PKAddressField](../pkpaymentrequest/requiredbillingaddressfields.md)
   A bit field of billing address fields that you need in order to process the transaction.
-- [var requiredShippingAddressFields: PKAddressField](pkpaymentrequest/requiredshippingaddressfields.md)
+- [var requiredShippingAddressFields: PKAddressField](../pkpaymentrequest/requiredshippingaddressfields.md)
   A bit field of shipping address fields that you need in order to process the transaction.
-- [struct PKAddressField](pkaddressfield.md)
+- [struct PKAddressField](../pkaddressfield.md)
   Billing or shipping address fields.
-- [var billingAddress: ABRecord?](pkpaymentrequest/billingaddress.md)
+- [var billingAddress: ABRecord?](../pkpaymentrequest/billingaddress.md)
   A prepopulated billing address.
-- [var shippingAddress: ABRecord?](pkpaymentrequest/shippingaddress.md)
+- [var shippingAddress: ABRecord?](../pkpaymentrequest/shippingaddress.md)
   A prepopulated shipping address.
 
 

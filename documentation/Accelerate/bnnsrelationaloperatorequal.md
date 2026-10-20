@@ -1,7 +1,8 @@
 # BNNSRelationalOperatorEqual
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operator that indicates the equal-to relationship.
 
@@ -20,17 +21,22 @@ The operator that indicates the equal-to relationship.
 var BNNSRelationalOperatorEqual: BNNSRelationalOperator { get }
 ```
 
+```c
+BNNSRelationalOperatorEqual
+```
+
 ## See Also
 
-- [var BNNSRelationalOperatorGreater: BNNSRelationalOperator](bnnsrelationaloperatorgreater.md)
+### Relational Operators
+- [var BNNSRelationalOperatorGreater: BNNSRelationalOperator](./bnnsrelationaloperatorgreater.md)
   The operator that indicates the greater-than relationship.
-- [var BNNSRelationalOperatorGreaterEqual: BNNSRelationalOperator](bnnsrelationaloperatorgreaterequal.md)
+- [var BNNSRelationalOperatorGreaterEqual: BNNSRelationalOperator](./bnnsrelationaloperatorgreaterequal.md)
   The operator that indicates the greater-than or equal-to relationship.
-- [var BNNSRelationalOperatorLess: BNNSRelationalOperator](bnnsrelationaloperatorless.md)
+- [var BNNSRelationalOperatorLess: BNNSRelationalOperator](./bnnsrelationaloperatorless.md)
   The operator that indicates the less-than relationship.
-- [var BNNSRelationalOperatorLessEqual: BNNSRelationalOperator](bnnsrelationaloperatorlessequal.md)
+- [var BNNSRelationalOperatorLessEqual: BNNSRelationalOperator](./bnnsrelationaloperatorlessequal.md)
   The operator that indicates the less-than or equal-to relationship.
-- [var BNNSRelationalOperatorNotEqual: BNNSRelationalOperator](bnnsrelationaloperatornotequal.md)
+- [var BNNSRelationalOperatorNotEqual: BNNSRelationalOperator](./bnnsrelationaloperatornotequal.md)
   The operator that indicates the not-equal relationship.
 
 

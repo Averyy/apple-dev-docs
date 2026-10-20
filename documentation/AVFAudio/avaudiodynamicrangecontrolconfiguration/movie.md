@@ -1,16 +1,17 @@
 # AVAudioDynamicRangeControlConfiguration.movie
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 case movie
 ```
 
+```c
+AVAudioDynamicRangeControlConfiguration_Movie
+```
+
 ## See Also
 
-- [AVAudioDynamicRangeControlConfiguration.capture](avaudiodynamicrangecontrolconfiguration/capture.md)
-- [AVAudioDynamicRangeControlConfiguration.music](avaudiodynamicrangecontrolconfiguration/music.md)
-- [AVAudioDynamicRangeControlConfiguration.none](avaudiodynamicrangecontrolconfiguration/none.md)
-- [AVAudioDynamicRangeControlConfiguration.speech](avaudiodynamicrangecontrolconfiguration/speech.md)
+### Choosing a dynamic range profile
+- [AVAudioDynamicRangeControlConfiguration.capture](./capture.md)
+- [AVAudioDynamicRangeControlConfiguration.music](./music.md)
+- [AVAudioDynamicRangeControlConfiguration.none](./none.md)
+- [AVAudioDynamicRangeControlConfiguration.speech](./speech.md)
 
 
 ---

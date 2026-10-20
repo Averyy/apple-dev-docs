@@ -1,7 +1,8 @@
 # isGraphemeBase
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a grapheme base.
 
@@ -26,7 +27,7 @@ A grapheme base can be thought of as a space-occupying glyph above or below whic
 
 The set of scalars for which `isGraphemeBase` is `true` is disjoint by definition from the set for which `isGraphemeExtend` is `true`.
 
-This property corresponds to the “Grapheme_Base” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Grapheme_Base” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

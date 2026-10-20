@@ -1,7 +1,8 @@
 # AVPlayerView
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that displays content from a player and presents a native user interface to control playback.
 
@@ -14,9 +15,13 @@ A view that displays content from a player and presents a native user interface 
 class AVPlayerView
 ```
 
+```objc
+@interface AVPlayerView : NSView
+```
+
 ## Mentions
 
-- [Implementing trimming in a macOS player](implementing-trimming-in-a-macos-player.md)
+- [Implementing trimming in a macOS player](./implementing-trimming-in-a-macos-player.md)
 
 #### Overview
 
@@ -29,128 +34,129 @@ The player view supports several controls styles, ranging from no controls to co
 - The K key stops playback.
 - The L key fast-forwards. Press it multiple times to cycle through fast-forward speeds.
 
-The player view also makes it simple to add trimming capabilities to your player. Call the view’s [`beginTrimming(completionHandler:)`](avplayerview/begintrimming(completionhandler:).md) method to present a trimming UI that matches the QuickTime Player interface.
+The player view also makes it simple to add trimming capabilities to your player. Call the view’s [`beginTrimming(completionHandler:)`](./avplayerview/begintrimming%28completionhandler%29.md) method to present a trimming UI that matches the QuickTime Player interface.
 
 ## Topics
 
 ### Customizing the user interface
-- [var controlsStyle: AVPlayerViewControlsStyle](avplayerview/controlsstyle.md)
+- [var controlsStyle: AVPlayerViewControlsStyle](./avplayerview/controlsstyle.md)
   The player view’s controls style.
-- [enum AVPlayerViewControlsStyle](avplayerviewcontrolsstyle.md)
+- [enum AVPlayerViewControlsStyle](./avplayerviewcontrolsstyle.md)
   Constants that indicate which user interface controls the view displays.
-- [var showsFrameSteppingButtons: Bool](avplayerview/showsframesteppingbuttons.md)
+- [var showsFrameSteppingButtons: Bool](./avplayerview/showsframesteppingbuttons.md)
   A Boolean value that determines whether the player view displays frame stepping buttons.
-- [var showsSharingServiceButton: Bool](avplayerview/showssharingservicebutton.md)
+- [var showsSharingServiceButton: Bool](./avplayerview/showssharingservicebutton.md)
   A Boolean value that determines whether the player view displays a sharing service button.
-- [var showsFullScreenToggleButton: Bool](avplayerview/showsfullscreentogglebutton.md)
+- [var showsFullScreenToggleButton: Bool](./avplayerview/showsfullscreentogglebutton.md)
   A Boolean value that determines whether the player view displays a full-screen toggle button.
-- [var showsTimecodes: Bool](avplayerview/showstimecodes.md)
+- [var showsTimecodes: Bool](./avplayerview/showstimecodes.md)
   A Boolean value that determines whether the player view displays timecodes, if available.
-- [var contentOverlayView: NSView?](avplayerview/contentoverlayview.md)
+- [var contentOverlayView: NSView?](./avplayerview/contentoverlayview.md)
   A view that adds additional custom views between the video content and the controls.
-- [var actionPopUpButtonMenu: NSMenu?](avplayerview/actionpopupbuttonmenu.md)
+- [var actionPopUpButtonMenu: NSMenu?](./avplayerview/actionpopupbuttonmenu.md)
   An action pop-up button menu that the player view displays.
-- [var updatesNowPlayingInfoCenter: Bool](avplayerview/updatesnowplayinginfocenter.md)
+- [var updatesNowPlayingInfoCenter: Bool](./avplayerview/updatesnowplayinginfocenter.md)
   A Boolean value that indicates whether the player view controller updates the Now Playing info center.
 ### Customizing the video presentation
-- [var isReadyForDisplay: Bool](avplayerview/isreadyfordisplay.md)
+- [var isReadyForDisplay: Bool](./avplayerview/isreadyfordisplay.md)
   A Boolean value that indicates whether the current player item’s first video frame is ready for display.
-- [var videoBounds: NSRect](avplayerview/videobounds.md)
+- [var videoBounds: NSRect](./avplayerview/videobounds.md)
   The current size and position of the video image that displays within the player view’s bounds.
-- [var videoGravity: AVLayerVideoGravity](avplayerview/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./avplayerview/videogravity.md)
   A value that determines how the player view displays video content within its bounds.
 ### Configuring frame analysis
-- [var allowsVideoFrameAnalysis: Bool](avplayerview/allowsvideoframeanalysis.md)
+- [var allowsVideoFrameAnalysis: Bool](./avplayerview/allowsvideoframeanalysis.md)
   A Boolean value that indicates whether to perform video frame analysis.
-- [var videoFrameAnalysisTypes: AVVideoFrameAnalysisType](avplayerview/videoframeanalysistypes.md)
-- [struct AVVideoFrameAnalysisType](avvideoframeanalysistype.md)
+- [var videoFrameAnalysisTypes: AVVideoFrameAnalysisType](./avplayerview/videoframeanalysistypes.md)
+- [struct AVVideoFrameAnalysisType](./avvideoframeanalysistype.md)
   Constants that define the types of analysis a player view controller may perform on a paused video frame.
 ### Configuring the playback speed
-- [var speeds: [AVPlaybackSpeed]](avplayerview/speeds.md)
+- [var speeds: [AVPlaybackSpeed]](./avplayerview/speeds.md)
   A list of user-selectable playback speeds to show in the playback speed control.
-- [var selectedSpeed: AVPlaybackSpeed?](avplayerview/selectedspeed.md)
+- [var selectedSpeed: AVPlaybackSpeed?](./avplayerview/selectedspeed.md)
   The currently selected playback speed.
-- [func selectSpeed(AVPlaybackSpeed)](avplayerview/selectspeed(_:).md)
+- [func selectSpeed(AVPlaybackSpeed)](./avplayerview/selectspeed%28_%29.md)
   Selects a specified playback speed.
-- [class AVPlaybackSpeed](avplaybackspeed.md)
+- [class AVPlaybackSpeed](./avplaybackspeed.md)
   An object that represents a user-selectable playback speed in a playback user interface.
 ### Configuring picture in picture
-- [var allowsPictureInPicturePlayback: Bool](avplayerview/allowspictureinpictureplayback.md)
+- [var allowsPictureInPicturePlayback: Bool](./avplayerview/allowspictureinpictureplayback.md)
   A Boolean value that determines whether the player view allows Picture in Picture playback.
-- [var pictureInPictureDelegate: (any AVPlayerViewPictureInPictureDelegate)?](avplayerview/pictureinpicturedelegate.md)
+- [var pictureInPictureDelegate: (any AVPlayerViewPictureInPictureDelegate)?](./avplayerview/pictureinpicturedelegate.md)
   The Picture in Picture delegate object.
-- [protocol AVPlayerViewPictureInPictureDelegate](avplayerviewpictureinpicturedelegate.md)
+- [protocol AVPlayerViewPictureInPictureDelegate](./avplayerviewpictureinpicturedelegate.md)
   A protocol that defines the methods to implement to respond to Picture in Picture playback events.
 ### Magnifying video
-- [var allowsMagnification: Bool](avplayerview/allowsmagnification.md)
+- [var allowsMagnification: Bool](./avplayerview/allowsmagnification.md)
   A Boolean value that indicates whether the magnify gesture changes the video’s view magnification.
-- [var magnification: CGFloat](avplayerview/magnification.md)
+- [var magnification: CGFloat](./avplayerview/magnification.md)
   The factor by which the video’s view is currently scaled.
-- [func setMagnification(CGFloat, centeredAt: CGPoint)](avplayerview/setmagnification(_:centeredat:).md)
+- [func setMagnification(CGFloat, centeredAt: CGPoint)](./avplayerview/setmagnification%28_,centeredat%29.md)
   Scales the video’s view by a specified factor, and centers the result on a specified point.
 ### Displaying the chapter and title
-- [func flashChapterNumber(Int, chapterTitle: String?)](avplayerview/flashchapternumber(_:chaptertitle:).md)
+- [func flashChapterNumber(Int, chapterTitle: String?)](./avplayerview/flashchapternumber%28_,chaptertitle%29.md)
   Displays the chapter number and title in the player view for a brief moment.
 ### Trimming media
-- [var canBeginTrimming: Bool](avplayerview/canbegintrimming.md)
+- [var canBeginTrimming: Bool](./avplayerview/canbegintrimming.md)
   A Boolean value that indicates whether the player view can begin trimming.
-- [func beginTrimming(completionHandler: ((AVPlayerViewTrimResult) -> Void)?)](avplayerview/begintrimming(completionhandler:).md)
+- [func beginTrimming(completionHandler: ((AVPlayerViewTrimResult) -> Void)?)](./avplayerview/begintrimming%28completionhandler%29.md)
   Puts the player view into trimming mode.
-- [enum AVPlayerViewTrimResult](avplayerviewtrimresult.md)
+- [enum AVPlayerViewTrimResult](./avplayerviewtrimresult.md)
   Constants that specify an action a user takes when trimming media in a player view.
 ### Setting the player object
-- [var player: AVPlayer?](avplayerview/player.md)
+- [var player: AVPlayer?](./avplayerview/player.md)
   The player instance that provides the media content for the view.
 ### Setting the delegate object
-- [var delegate: (any AVPlayerViewDelegate)?](avplayerview/delegate.md)
+- [var delegate: (any AVPlayerViewDelegate)?](./avplayerview/delegate.md)
   The player view’s delegate object.
-- [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
+- [protocol AVPlayerViewDelegate](./avplayerviewdelegate.md)
   A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
 ### High dynamic range
-- [var preferredDisplayDynamicRange: AVDisplayDynamicRange](avplayerview/preferreddisplaydynamicrange.md)
+- [var preferredDisplayDynamicRange: AVDisplayDynamicRange](./avplayerview/preferreddisplaydynamicrange.md)
   Describes how High Dynamic Range (HDR) video content renders.
-- [enum AVDisplayDynamicRange](avdisplaydynamicrange.md)
+- [enum AVDisplayDynamicRange](./avdisplaydynamicrange.md)
   Describes how High Dynamic Range (HDR) video content renders.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
+- [NSView](../AppKit/nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Playing video content in a standard user interface](playing-video-content-in-a-standard-user-interface.md)
+### Standard player interfaces
+- [Playing video content in a standard user interface](./playing-video-content-in-a-standard-user-interface.md)
   Play media full screen, embedded inline, or in a floating Picture in Picture (PiP) window using a player view controller.
-- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
+- [Customizing the tvOS playback experience](./customizing-the-tvos-playback-experience.md)
   Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
-- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
+- [Adopting the system player interface in visionOS](./adopting-the-system-player-interface-in-visionos.md)
   Provide an optimized viewing experience for watching 3D video content.
-- [class AVPlayerViewController](avplayerviewcontroller.md)
+- [class AVPlayerViewController](./avplayerviewcontroller.md)
   A view controller that displays content from a player and presents a native user interface to control playback.
-- [protocol AVPlayerViewControllerDelegate](avplayerviewcontrollerdelegate.md)
+- [protocol AVPlayerViewControllerDelegate](./avplayerviewcontrollerdelegate.md)
   A protocol that defines the methods to implement to respond to player view controller events.
-- [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
+- [protocol AVPlayerViewDelegate](./avplayerviewdelegate.md)
   A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
-- [struct VideoPlayer](videoplayer.md)
+- [struct VideoPlayer](./videoplayer.md)
   A view that displays content from a player and a native user interface to control playback.
 
 

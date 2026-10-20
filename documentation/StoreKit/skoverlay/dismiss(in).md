@@ -1,7 +1,8 @@
 # dismiss(in:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Dismisses an App Store overlay.
 
@@ -16,6 +17,10 @@ Dismisses an App Store overlay.
 ```swift
 @MainActor
 class func dismiss(in scene: UIWindowScene)
+```
+
+```objc
++ (void) dismissOverlayInScene:(UIWindowScene *) scene;
 ```
 
 ## Parameters

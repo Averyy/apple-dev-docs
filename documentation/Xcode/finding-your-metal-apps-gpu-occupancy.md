@@ -1,6 +1,7 @@
 # Finding your Metal app’s GPU occupancy
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Understand the GPU usage for executing shaders by using occupancy.
 
@@ -14,9 +15,9 @@ A GPU has a maximum number of threads that it can execute at the same time. *Occ
 
 The sum of these percentages is the total percentage of the GPU’s capacity in use.
 
-You can get shader occupancy counters in Instruments and in the Metal debugger’s Performance timeline. For more information, see [`Analyzing the performance of your Metal app`](analyzing-the-performance-of-your-metal-app.md) and [`Analyzing Apple GPU performance using a visual timeline`](analyzing-apple-gpu-performance-using-a-visual-timeline.md).
+You can get shader occupancy counters in Instruments and in the Metal debugger’s Performance timeline. For more information, see [Analyzing the performance of your Metal app](./analyzing-the-performance-of-your-metal-app.md) and [Analyzing Apple GPU performance using a visual timeline](./analyzing-apple-gpu-performance-using-a-visual-timeline.md).
 
-##### Determine Whether Your App Has Low Gpu Occupancy
+##### Determine whether your app has low GPU occupancy
 
 Your app may have low occupancy when the overall occupancy measurements aren’t approaching 100%. Each shader has a maximum theoretical occupancy, depending on the amount of internal resources it consumes on the device. You can get this information for each shader in the Performance timeline.
 
@@ -28,9 +29,9 @@ When overall occupancy is low, it likely means one of the following is true:
 - Your shaders are simple enough that threads finish executing faster than the GPU can create new ones.
 - Your app is rendering to a small area inside the render targets, or dispatching very small compute grids, such that the GPU runs out of threads to create.
 
-For more information on the Performance timeline, see [`Analyzing Apple GPU performance using a visual timeline`](analyzing-apple-gpu-performance-using-a-visual-timeline.md).
+For more information on the Performance timeline, see [Analyzing Apple GPU performance using a visual timeline](./analyzing-apple-gpu-performance-using-a-visual-timeline.md).
 
-##### Determine the Impact on Your App
+##### Determine the impact on your app
 
 If you’re seeing overall low occupancy, your next step is to determine whether it’s negatively impacting your app. If an examination of the limiter counters also shows low values, the GPU is executing very little work.
 
@@ -42,13 +43,14 @@ In rare cases, when overall occupancy is very high, the GPU may execute its work
 - Reduce how much memory you access.
 - Change the temporal or spatial access patterns you use when accessing memory.
 
-The memory read or write limiter counters may provide more insight into whether your app has a problem. For more information, see [`Reducing shader bottlenecks`](reducing-shader-bottlenecks.md). In addition, use the other counters to determine how effectively you’re using the GPU and where it spends the most time.
+The memory read or write limiter counters may provide more insight into whether your app has a problem. For more information, see [Reducing shader bottlenecks](./reducing-shader-bottlenecks.md). In addition, use the other counters to determine how effectively you’re using the GPU and where it spends the most time.
 
 ## See Also
 
-- [Reducing shader bottlenecks](reducing-shader-bottlenecks.md)
+### Counters
+- [Reducing shader bottlenecks](./reducing-shader-bottlenecks.md)
   Identify and minimize congestion points in a GPU’s subsystems by checking its limiter and utilization counters.
-- [Measuring the GPU’s use of memory bandwidth](measuring-the-gpus-use-of-memory-bandwidth.md)
+- [Measuring the GPU’s use of memory bandwidth](./measuring-the-gpus-use-of-memory-bandwidth.md)
   Check whether your Metal app correctly reads and writes to memory by measuring the GPU’s memory bandwidth.
 
 

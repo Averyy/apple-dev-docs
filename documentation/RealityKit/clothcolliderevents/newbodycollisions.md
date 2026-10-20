@@ -1,7 +1,8 @@
 # ClothColliderEvents.NewBodyCollisions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event type that a cloth collider publishes (before simulation update) when cloth bodies collide with it.
 
@@ -23,22 +24,22 @@ This event should be treated as having a non-escapable lifetime. Some of its dat
 ## Topics
 
 ### Accessing collision data
-- [func withCollisions<Result>((Span<ClothColliderEvents.NewBodyCollisions.Collision>) -> Result) -> Result](clothcolliderevents/newbodycollisions/withcollisions(_:).md)
+- [func withCollisions<Result>((Span<ClothColliderEvents.NewBodyCollisions.Collision>) -> Result) -> Result](./newbodycollisions/withcollisions%28_%29.md)
   Provides access to the collisions with cloth bodies that took place.
-- [ClothColliderEvents.NewBodyCollisions.Collision](clothcolliderevents/newbodycollisions/collision.md)
+- [ClothColliderEvents.NewBodyCollisions.Collision](./newbodycollisions/collision.md)
   A collision with a cloth body.
 ### Identifying the event
-- [let colliderEntity: Entity](clothcolliderevents/newbodycollisions/colliderentity.md)
+- [let colliderEntity: Entity](./newbodycollisions/colliderentity.md)
   The entity that has the collider component that this event originates from.
-- [let updateCount: UInt64](clothcolliderevents/newbodycollisions/updatecount.md)
+- [let updateCount: UInt64](./newbodycollisions/updatecount.md)
   The simulation update that this event originates from.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

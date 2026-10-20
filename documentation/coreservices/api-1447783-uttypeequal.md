@@ -1,7 +1,8 @@
 # UTTypeEqual(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether two uniform type identifiers are equal.
 
@@ -20,7 +21,11 @@ Returns whether two uniform type identifiers are equal.
 func UTTypeEqual(_ inUTI1: CFString, _ inUTI2: CFString) -> Bool
 ```
 
-#### Return_value
+```c
+Boolean UTTypeEqual(CFStringRef inUTI1, CFStringRef inUTI2);
+```
+
+#### Return Value
 
 Returns `true` if the two uniform type identifiers are equivalent.
 

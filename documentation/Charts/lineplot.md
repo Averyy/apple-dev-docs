@@ -1,7 +1,8 @@
 # LinePlot
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Chart content that represents a function or a collection of data using a sequence of connected line segments.
 
@@ -22,9 +23,9 @@ struct LinePlot<Content>
 
 #### Overview
 
-Use `LinePlot` when you want to visualize data in the same way as with [`LineMark`](linemark.md), but you want to plot a function or visualize an entire data collection with a single plot.
+Use `LinePlot` when you want to visualize data in the same way as with [`LineMark`](./linemark.md), but you want to plot a function or visualize an entire data collection with a single plot.
 
-##### Plotting Lines From a Collection
+##### Plotting lines from a collection
 
 You can initialize and style the plot with simple values or key paths. Add modifiers with `KeyPath` before adding modifiers with simple values.
 
@@ -40,7 +41,7 @@ Chart {
 }
 ```
 
-##### Plotting Functions
+##### Plotting functions
 
 In addition to providing data points, you can provide a function to a `LinePlot` to plot a function. For example, you can plot the function y = x^2 with:
 
@@ -85,58 +86,59 @@ Chart {
 ## Topics
 
 ### Plotting lines from a collection
-- [init<Data>(Data, x: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, y: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>)](lineplot/init(_:x:y:).md)
-- [init<Data>(Data, x: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, y: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, series: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>)](lineplot/init(_:x:y:series:).md)
+- [init<Data>(Data, x: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, y: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>)](./lineplot/init%28_,x,y%29.md)
+- [init<Data>(Data, x: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, y: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>, series: PlottableProjection<LinePlot<Content>.DataElement, some Plottable>)](./lineplot/init%28_,x,y,series%29.md)
 ### Plotting functions
-- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-6m9gg.md)
+- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](./lineplot/init%28x,y,domain,function%29-6m9gg.md)
   Creates a mark that graphs a function y = f(x).
-- [init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-1135f.md)
+- [init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> Double)](./lineplot/init%28x,y,domain,function%29-1135f.md)
   Creates a mark that graphs a function y = f(x).
-- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-17i43.md)
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](./lineplot/init%28x,y,domain,function%29-17i43.md)
   Creates a mark that graphs a function y = f(x).
-- [init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-6gv5v.md)
+- [init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>?, function: (Double) -> Double)](./lineplot/init%28x,y,domain,function%29-6gv5v.md)
   Creates a mark that graphs a function y = f(x).
 ### Plotting parametric functions
-- [init(x: Text, y: Text, t: Text, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-5c4bo.md)
+- [init(x: Text, y: Text, t: Text, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](./lineplot/init%28x,y,t,domain,function%29-5c4bo.md)
   Creates a mark that graphs a parametric function (x, y) = f(t).
-- [init(x: LocalizedStringKey, y: LocalizedStringKey, t: LocalizedStringKey, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-7bvyi.md)
+- [init(x: LocalizedStringKey, y: LocalizedStringKey, t: LocalizedStringKey, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](./lineplot/init%28x,y,t,domain,function%29-7bvyi.md)
   Creates a mark that graphs a parametric function (x, y) = f(t).
-- [init(x: LocalizedStringResource, y: LocalizedStringResource, t: LocalizedStringResource, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-610ta.md)
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, t: LocalizedStringResource, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](./lineplot/init%28x,y,t,domain,function%29-610ta.md)
   Creates a mark that graphs a parametric function (x, y) = f(t).
-- [init<S1, S2, S3>(x: S1, y: S2, t: S3, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-3mqls.md)
+- [init<S1, S2, S3>(x: S1, y: S2, t: S3, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](./lineplot/init%28x,y,t,domain,function%29-3mqls.md)
   Creates a mark that graphs a parametric function (x, y) = f(t).
 ### Supporting types
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+- [var body: Self.Body](./chartcontent/body-swift.property.md)
   The content and behavior of the chart content.
-- [struct VectorizedLinePlotContent](vectorizedlineplotcontent.md)
+- [struct VectorizedLinePlotContent](./vectorizedlineplotcontent.md)
   An opaque vectorized chart content type.
-- [struct FunctionLinePlotContent](functionlineplotcontent.md)
+- [struct FunctionLinePlotContent](./functionlineplotcontent.md)
 
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [VectorizedChartContent](vectorizedchartcontent.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [VectorizedChartContent](./vectorizedchartcontent.md)
 
 ## See Also
 
-- [Creating a data visualization dashboard with Swift Charts](creating-a-data-visualization-dashboard-with-swift-charts.md)
+### Vectorized plots
+- [Creating a data visualization dashboard with Swift Charts](./creating-a-data-visualization-dashboard-with-swift-charts.md)
   Visualize an entire data collection efficiently by instantiating a single vectorized plot in Swift Charts.
-- [struct AreaPlot](areaplot.md)
+- [struct AreaPlot](./areaplot.md)
   Chart content that represents a function or a collection of data using the area of one or more regions.
-- [struct PointPlot](pointplot.md)
+- [struct PointPlot](./pointplot.md)
   Chart content that represents a collection of data using points.
-- [struct RectanglePlot](rectangleplot.md)
+- [struct RectanglePlot](./rectangleplot.md)
   Chart content that represents a collection of data using rectangles.
-- [struct RulePlot](ruleplot.md)
+- [struct RulePlot](./ruleplot.md)
   Chart content that represents a collection of data using a single horizontal or vertical rule.
-- [struct BarPlot](barplot.md)
+- [struct BarPlot](./barplot.md)
   Chart content that represents a collection of data using bars.
-- [struct SectorPlot](sectorplot.md)
+- [struct SectorPlot](./sectorplot.md)
   Chart content that represents a collection of data using a sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
-- [protocol VectorizedChartContent](vectorizedchartcontent.md)
+- [protocol VectorizedChartContent](./vectorizedchartcontent.md)
   A generic type that represents content conveyed via a chart.
 
 

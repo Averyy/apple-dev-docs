@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of confidence in the observation’s accuracy.
 
@@ -25,11 +26,12 @@ The framework normalizes this value to `[0, 1]`, where `1` represents the most c
 
 ## See Also
 
-- [let uuid: UUID](documentobservation/uuid.md)
+### Inspecting an observation
+- [let uuid: UUID](./uuid.md)
   A unique alphanumeric value that the framework assigns to the observation.
-- [let document: DocumentObservation.Container](documentobservation/document.md)
+- [let document: DocumentObservation.Container](./document.md)
   The contents of the document.
-- [let timeRange: CMTimeRange?](documentobservation/timerange.md)
+- [let timeRange: CMTimeRange?](./timerange.md)
   Time in a video frame where the observation was detected.
 
 

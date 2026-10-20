@@ -1,10 +1,13 @@
 # UIWindowSceneReplacePlacement
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`UIWindowScenePushPlacement`](./uiwindowscenepushplacement-swift.struct.md) instead.
 
 ## Declaration
 
@@ -15,14 +18,14 @@ struct UIWindowSceneReplacePlacement
 ## Topics
 
 ### Initializers
-- [init(replacing: UISceneSession)](uiwindowscenereplaceplacement-swift.struct/init(replacing:).md)
+- [init(replacing: UISceneSession)](./uiwindowscenereplaceplacement-swift.struct/init%28replacing%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [UIWindowScenePlacement](uiwindowsceneplacement-swift.protocol.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [UIWindowScenePlacement](./uiwindowsceneplacement-swift.protocol.md)
 
 
 ---

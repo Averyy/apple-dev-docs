@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.japan
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Japan (Katakana) in the HID specification.
 

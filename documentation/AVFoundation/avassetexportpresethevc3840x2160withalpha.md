@@ -1,7 +1,8 @@
 # AVAssetExportPresetHEVC3840x2160WithAlpha
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A preset to export a 3840 by 2160 movie that contains HEVC video with alpha and AAC audio.
 
@@ -19,16 +20,21 @@ A preset to export a 3840 by 2160 movie that contains HEVC video with alpha and 
 let AVAssetExportPresetHEVC3840x2160WithAlpha: String
 ```
 
+```c
+extern NSString * const AVAssetExportPresetHEVC3840x2160WithAlpha;
+```
+
 ## See Also
 
-- [let AVAssetExportPresetHEVC1920x1080: String](avassetexportpresethevc1920x1080.md)
+### HEVC size presets
+- [let AVAssetExportPresetHEVC1920x1080: String](./avassetexportpresethevc1920x1080.md)
   A preset to export a 1920 by 1080 movie that contains HEVC video and AAC audio.
-- [let AVAssetExportPresetHEVC3840x2160: String](avassetexportpresethevc3840x2160.md)
+- [let AVAssetExportPresetHEVC3840x2160: String](./avassetexportpresethevc3840x2160.md)
   A preset to export a 3840 by 2160 movie that contains HEVC video and AAC audio.
-- [let AVAssetExportPresetHEVC1920x1080WithAlpha: String](avassetexportpresethevc1920x1080withalpha.md)
+- [let AVAssetExportPresetHEVC1920x1080WithAlpha: String](./avassetexportpresethevc1920x1080withalpha.md)
   A preset to export a 1920 by 1080 movie that contains HEVC video with alpha and AAC audio.
-- [let AVAssetExportPresetHEVC4320x2160: String](avassetexportpresethevc4320x2160.md)
-- [let AVAssetExportPresetHEVC7680x4320: String](avassetexportpresethevc7680x4320.md)
+- [let AVAssetExportPresetHEVC4320x2160: String](./avassetexportpresethevc4320x2160.md)
+- [let AVAssetExportPresetHEVC7680x4320: String](./avassetexportpresethevc7680x4320.md)
   A preset to export a 7680 by 4320 movie that contains HEVC video and AAC audio.
 
 

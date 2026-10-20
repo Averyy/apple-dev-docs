@@ -1,7 +1,8 @@
 # insertChildren(_:at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts an array of children at a specified position in the receiver’s array of children.
 
@@ -15,22 +16,27 @@ Inserts an array of children at a specified position in the receiver’s array o
 func insertChildren(_ children: [XMLNode], at index: Int)
 ```
 
+```objc
+- (void) insertChildren:(NSArray<NSXMLNode *> *) children atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
-- `children`: An array of [`XMLNode`](xmlnode.md) objects representing comments, processing instructions, or the root element.
+- `children`: An array of [`XMLNode`](../xmlnode.md) objects representing comments, processing instructions, or the root element.
 - `index`: An integer identifying the location in the receiver’s children array for insertion. The indexes of children after the new child are increased by `[children count`]. If `index` is less than zero or greater than the number of children, an out-of-bounds exception is raised.
 
 ## See Also
 
-- [func addChild(XMLNode)](xmldocument/addchild(_:).md)
+### Adding and Removing Child Nodes
+- [func addChild(XMLNode)](./addchild%28_%29.md)
   Adds a child node after the last of the receiver’s existing children.
-- [func insertChild(XMLNode, at: Int)](xmldocument/insertchild(_:at:).md)
+- [func insertChild(XMLNode, at: Int)](./insertchild%28_,at%29.md)
   Inserts a node object at specified position in the receiver’s array of children.
-- [func removeChild(at: Int)](xmldocument/removechild(at:).md)
+- [func removeChild(at: Int)](./removechild%28at%29.md)
   Removes the child node of the receiver located at a specified position in its array of children.
-- [func replaceChild(at: Int, with: XMLNode)](xmldocument/replacechild(at:with:).md)
+- [func replaceChild(at: Int, with: XMLNode)](./replacechild%28at,with%29.md)
   Replaces the child node of the receiver located at a specified position in its array of children with another node.
-- [func setChildren([XMLNode]?)](xmldocument/setchildren(_:).md)
+- [func setChildren([XMLNode]?)](./setchildren%28_%29.md)
   Sets the child nodes of the receiver.
 
 

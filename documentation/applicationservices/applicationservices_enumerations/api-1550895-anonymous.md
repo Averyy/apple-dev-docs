@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kATSCubicCurveType: Int](katscubiccurvetype.md)
-- [var kATSOtherCurveType: Int](katsothercurvetype.md)
-- [var kATSQuadCurveType: Int](katsquadcurvetype.md)
+- [var kATSCubicCurveType: Int](../katscubiccurvetype.md)
+- [var kATSOtherCurveType: Int](../katsothercurvetype.md)
+- [var kATSQuadCurveType: Int](../katsquadcurvetype.md)
 
 
 ---

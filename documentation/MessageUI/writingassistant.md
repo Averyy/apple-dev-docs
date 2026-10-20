@@ -1,7 +1,8 @@
 # WritingAssistant
 
 **Framework**: Message UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 3.0+

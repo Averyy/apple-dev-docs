@@ -1,6 +1,7 @@
 # height
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the maximum height for an image.
 
@@ -12,22 +13,23 @@ The image is shrunk to fit the bounding box if the image is bigger than the size
 <img src="resource://mpaa-g" height="200">
 ```
 
-##### Values for Height
+##### Values for height
 
 - **Integer**: The height of the element, in points.
 
-##### Elements That Use Height
+##### Elements that Use height
 
-- [`decorationLabel`](decorationlabel.md)
-- [`fullscreenImg`](fullscreenimg.md)
-- [`heroImg`](heroimg.md)
-- [`img`](img.md)
+- [decorationLabel](./decorationlabel.md)
+- [fullscreenImg](./fullscreenimg.md)
+- [heroImg](./heroimg.md)
+- [img](./img.md)
 
 ## See Also
 
-- [width](image-attributes-width.md)
+### Image Size
+- [width](./image-attributes-width.md)
   Specifies the maximum width for an image element.
-- [aspectRatio](aspectratio.md)
+- [aspectRatio](./aspectratio.md)
   Specifies the aspect ratio of an image.
 
 

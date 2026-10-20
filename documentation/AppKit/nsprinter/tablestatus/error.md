@@ -1,12 +1,13 @@
 # NSPrinter.TableStatus.error
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Printer table is not valid.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Printer table is not valid.
 case error
 ```
 
+```c
+NSPrinterTableError
+```
+
 ## See Also
 
-- [NSPrinter.TableStatus.ok](nsprinter/tablestatus/ok.md)
+### Constants
+- [NSPrinter.TableStatus.ok](./ok.md)
   Printer table was found and is valid.
-- [NSPrinter.TableStatus.notFound](nsprinter/tablestatus/notfound.md)
+- [NSPrinter.TableStatus.notFound](./notfound.md)
   Printer table was not found.
 
 

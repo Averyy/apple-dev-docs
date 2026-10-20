@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the value.
 
@@ -26,11 +27,12 @@ For any finite value, this property provides a string that can be converted back
 
 ## See Also
 
-- [var debugDescription: String](double/debugdescription.md)
+### Describing a Double
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the value, suitable for debugging.
-- [var customMirror: Mirror](double/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Double` instance.
-- [func hash(into: inout Hasher)](double/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

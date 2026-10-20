@@ -1,7 +1,8 @@
 # updatePrecisionRecallCurves(_:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the per-label precision-recall curve using the input data.
 

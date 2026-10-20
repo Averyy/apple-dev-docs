@@ -1,11 +1,12 @@
 # kAudioStreamPropertyLatency
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,16 +14,21 @@
 var kAudioStreamPropertyLatency: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioStreamPropertyLatency
+```
+
 ## See Also
 
-- [var kAudioStreamPropertyAvailablePhysicalFormats: AudioObjectPropertySelector](kaudiostreampropertyavailablephysicalformats.md)
-- [var kAudioStreamPropertyAvailableVirtualFormats: AudioObjectPropertySelector](kaudiostreampropertyavailablevirtualformats.md)
-- [var kAudioStreamPropertyDirection: AudioObjectPropertySelector](kaudiostreampropertydirection.md)
-- [var kAudioStreamPropertyIsActive: AudioObjectPropertySelector](kaudiostreampropertyisactive.md)
-- [var kAudioStreamPropertyPhysicalFormat: AudioObjectPropertySelector](kaudiostreampropertyphysicalformat.md)
-- [var kAudioStreamPropertyStartingChannel: AudioObjectPropertySelector](kaudiostreampropertystartingchannel.md)
-- [var kAudioStreamPropertyTerminalType: AudioObjectPropertySelector](kaudiostreampropertyterminaltype.md)
-- [var kAudioStreamPropertyVirtualFormat: AudioObjectPropertySelector](kaudiostreampropertyvirtualformat.md)
+### Constants
+- [var kAudioStreamPropertyAvailablePhysicalFormats: AudioObjectPropertySelector](./kaudiostreampropertyavailablephysicalformats.md)
+- [var kAudioStreamPropertyAvailableVirtualFormats: AudioObjectPropertySelector](./kaudiostreampropertyavailablevirtualformats.md)
+- [var kAudioStreamPropertyDirection: AudioObjectPropertySelector](./kaudiostreampropertydirection.md)
+- [var kAudioStreamPropertyIsActive: AudioObjectPropertySelector](./kaudiostreampropertyisactive.md)
+- [var kAudioStreamPropertyPhysicalFormat: AudioObjectPropertySelector](./kaudiostreampropertyphysicalformat.md)
+- [var kAudioStreamPropertyStartingChannel: AudioObjectPropertySelector](./kaudiostreampropertystartingchannel.md)
+- [var kAudioStreamPropertyTerminalType: AudioObjectPropertySelector](./kaudiostreampropertyterminaltype.md)
+- [var kAudioStreamPropertyVirtualFormat: AudioObjectPropertySelector](./kaudiostreampropertyvirtualformat.md)
 
 
 ---

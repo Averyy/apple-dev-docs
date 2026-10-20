@@ -1,14 +1,15 @@
 # au_evclass_map_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct au_evclass_map {
     ...
 } au_evclass_map_t;
@@ -17,8 +18,8 @@ typedef struct au_evclass_map {
 ## Topics
 
 ### Instance Properties
-- [ec_class](au_evclass_map_t/1520227-ec_class.md)
-- [ec_number](au_evclass_map_t/1520209-ec_number.md)
+- [ec_class](./au_evclass_map_t/api-1520227-ec_class.md)
+- [ec_number](./au_evclass_map_t/api-1520209-ec_number.md)
 
 
 ---

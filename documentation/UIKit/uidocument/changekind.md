@@ -1,15 +1,16 @@
 # UIDocument.ChangeKind
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the kind of change to a document.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,41 +18,46 @@ Constants that specify the kind of change to a document.
 enum ChangeKind
 ```
 
+```c
+enum UIDocumentChangeKind : NSInteger;
+```
+
 #### Overview
 
-You specify one of these constants as a parameter of the [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) method.
+You specify one of these constants as a parameter of the [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) method.
 
 ## Topics
 
 ### Constants
-- [UIDocument.ChangeKind.done](uidocument/changekind/done.md)
+- [UIDocument.ChangeKind.done](./changekind/done.md)
   A change has been made to the document.
-- [UIDocument.ChangeKind.undone](uidocument/changekind/undone.md)
+- [UIDocument.ChangeKind.undone](./changekind/undone.md)
   A change to the document has been undone.
-- [UIDocument.ChangeKind.redone](uidocument/changekind/redone.md)
+- [UIDocument.ChangeKind.redone](./changekind/redone.md)
   An undone change to the document has been redone.
-- [UIDocument.ChangeKind.cleared](uidocument/changekind/cleared.md)
+- [UIDocument.ChangeKind.cleared](./changekind/cleared.md)
   The document is cleared of outstanding changes.
 ### Initializers
-- [init?(rawValue: Int)](uidocument/changekind/init(rawvalue:).md)
+- [init?(rawValue: Int)](./changekind/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIDocument.SaveOperation](uidocument/saveoperation.md)
+### Constants
+- [UIDocument.SaveOperation](./saveoperation.md)
   Constants that specify the type of save operation.
-- [UIDocument.State](uidocument/state.md)
+- [UIDocument.State](./state.md)
   Constants that specify the document state.
-- [class let userActivityURLKey: String](uidocument/useractivityurlkey.md)
+- [class let userActivityURLKey: String](./useractivityurlkey.md)
   The key that identifies the document associated with a user activity.
 
 

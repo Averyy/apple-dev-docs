@@ -1,7 +1,8 @@
 # View
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A view for the resource.
 
@@ -10,16 +11,16 @@ A view for the resource.
 
 ## Declaration
 
-```swift
+```
 object View
 ```
 
 ## Topics
 
 ### Objects
-- [object View.Attributes](view/attributes-data.dictionary.md)
+- [object View.Attributes](./view/attributes-data.dictionary.md)
   The attribute metadata for the view.
-- [object View.Meta](view/meta-data.dictionary.md)
+- [object View.Meta](./view/meta-data.dictionary.md)
   Contextual data about the view.
 
 ## Properties
@@ -32,10 +33,11 @@ object View
 
 ## See Also
 
-- [object Resource.Attributes](resource/attributes-data.dictionary.md)
-- [object Resource.Meta](resource/meta-data.dictionary.md)
-- [object Resource.Relationships](resource/relationships-data.dictionary.md)
-- [object Resource.Views](resource/views-data.dictionary.md)
+### Related Objects
+- [object Resource.Attributes](./resource/attributes-data.dictionary.md)
+- [object Resource.Meta](./resource/meta-data.dictionary.md)
+- [object Resource.Relationships](./resource/relationships-data.dictionary.md)
+- [object Resource.Views](./resource/views-data.dictionary.md)
 
 
 ---

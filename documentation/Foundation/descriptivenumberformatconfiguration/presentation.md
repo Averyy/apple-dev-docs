@@ -1,7 +1,8 @@
 # DescriptiveNumberFormatConfiguration.Presentation
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -21,22 +22,23 @@ struct Presentation
 ## Topics
 
 ### Type Properties
-- [static var ordinal: DescriptiveNumberFormatConfiguration.Presentation](descriptivenumberformatconfiguration/presentation/ordinal.md)
-- [static var spellOut: DescriptiveNumberFormatConfiguration.Presentation](descriptivenumberformatconfiguration/presentation/spellout.md)
+- [static var ordinal: DescriptiveNumberFormatConfiguration.Presentation](./presentation/ordinal.md)
+- [static var spellOut: DescriptiveNumberFormatConfiguration.Presentation](./presentation/spellout.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DescriptiveNumberFormatConfiguration.CapitalizationContext](descriptivenumberformatconfiguration/capitalizationcontext.md)
+### Specifying Configuration
+- [DescriptiveNumberFormatConfiguration.CapitalizationContext](./capitalizationcontext.md)
 
 
 ---

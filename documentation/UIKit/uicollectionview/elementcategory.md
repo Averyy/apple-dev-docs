@@ -1,16 +1,17 @@
 # UICollectionView.ElementCategory
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants specifying the type of view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,33 +19,38 @@ Constants specifying the type of view.
 enum ElementCategory
 ```
 
+```c
+enum UICollectionElementCategory : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UICollectionView.ElementCategory.cell](uicollectionview/elementcategory/cell.md)
+- [UICollectionView.ElementCategory.cell](./elementcategory/cell.md)
   The view is a cell.
-- [UICollectionView.ElementCategory.supplementaryView](uicollectionview/elementcategory/supplementaryview.md)
+- [UICollectionView.ElementCategory.supplementaryView](./elementcategory/supplementaryview.md)
   The view is a supplementary view.
-- [UICollectionView.ElementCategory.decorationView](uicollectionview/elementcategory/decorationview.md)
+- [UICollectionView.ElementCategory.decorationView](./elementcategory/decorationview.md)
   The view is a decoration view.
 ### Initializers
-- [init?(rawValue: UInt)](uicollectionview/elementcategory/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./elementcategory/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let elementKindSectionFooter: String](uicollectionview/elementkindsectionfooter.md)
+### Identifying collection view elements
+- [class let elementKindSectionFooter: String](./elementkindsectionfooter.md)
   A supplementary view that identifies the footer for a given section.
-- [class let elementKindSectionHeader: String](uicollectionview/elementkindsectionheader.md)
+- [class let elementKindSectionHeader: String](./elementkindsectionheader.md)
   A supplementary view that identifies the header for a given section.
 
 

@@ -1,7 +1,8 @@
 # cancelCommissioning(forNodeID:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func cancelCommissioning(forNodeID nodeID: NSNumber) throws
+```
+
+```objc
+- (BOOL) cancelCommissioningForNodeID:(NSNumber *) nodeID error:(NSError **) error;
 ```
 
 

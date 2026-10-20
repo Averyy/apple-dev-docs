@@ -1,7 +1,8 @@
 # AutomotiveRepair
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for automotive repair services.
 
@@ -10,7 +11,7 @@ The point-of-interest category for automotive repair services.
 
 ## Declaration
 
-```swift
+```
 readonly AutomotiveRepair: "AutomotiveRepair";
 ```
 

@@ -1,7 +1,8 @@
 # init(truncating:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new affine transform from a double-precision 4 x 4 matrix truncated to a  4 x 3 matrix.
 

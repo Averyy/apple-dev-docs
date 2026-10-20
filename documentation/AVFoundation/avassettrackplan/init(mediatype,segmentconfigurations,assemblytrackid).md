@@ -1,7 +1,8 @@
 # init(mediaType:segmentConfigurations:assemblyTrackID:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an instance of AVAssetTrackPlan
 
@@ -17,6 +18,10 @@ Returns an instance of AVAssetTrackPlan
 
 ```swift
 init(mediaType: AVMediaType, segmentConfigurations: [AVPlannedSegmentConfiguration], assemblyTrackID trackID: CMPersistentTrackID)
+```
+
+```objc
+- (instancetype) initWithMediaType:(AVMediaType) mediaType segmentConfigurations:(NSArray<AVPlannedSegmentConfiguration *> *) segmentConfigurations assemblyTrackID:(CMPersistentTrackID) trackID;
 ```
 
 #### Discussion

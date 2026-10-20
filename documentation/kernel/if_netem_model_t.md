@@ -1,14 +1,15 @@
 # if_netem_model_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum if_netem_model_t : unsigned int {
     ...
 } if_netem_model_t;
@@ -17,8 +18,8 @@ typedef enum if_netem_model_t : unsigned int {
 ## Topics
 
 ### Constants
-- [IF_NETEM_MODEL_NLC](if_netem_model_t/if_netem_model_nlc.md)
-- [IF_NETEM_MODEL_NULL](if_netem_model_t/if_netem_model_null.md)
+- [IF_NETEM_MODEL_NLC](./if_netem_model_t/if_netem_model_nlc.md)
+- [IF_NETEM_MODEL_NULL](./if_netem_model_t/if_netem_model_null.md)
 
 
 ---

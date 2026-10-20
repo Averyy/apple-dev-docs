@@ -1,7 +1,8 @@
 # NSTabView.TabViewBorderType.bezel
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.12+
@@ -12,10 +13,15 @@
 case bezel
 ```
 
+```c
+NSTabViewBorderTypeBezel
+```
+
 ## See Also
 
-- [NSTabView.TabViewBorderType.line](nstabview/tabviewbordertype-swift.enum/line.md)
-- [NSTabView.TabViewBorderType.none](nstabview/tabviewbordertype-swift.enum/none.md)
+### Constants
+- [NSTabView.TabViewBorderType.line](./line.md)
+- [NSTabView.TabViewBorderType.none](./none.md)
 
 
 ---

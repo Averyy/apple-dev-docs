@@ -1,12 +1,13 @@
 # NSSelectionAffinity.downstream
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The selection is moving toward the bottom of the document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The selection is moving toward the bottom of the document.
 case downstream
 ```
 
+```c
+NSSelectionAffinityDownstream
+```
+
 ## See Also
 
-- [NSSelectionAffinity.upstream](nsselectionaffinity/upstream.md)
+### Constants
+- [NSSelectionAffinity.upstream](./upstream.md)
   The selection is moving toward the top of the document.
 
 

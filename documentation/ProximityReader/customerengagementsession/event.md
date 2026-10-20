@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Event
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events that occur during a customer engagement session.
 
@@ -19,26 +20,27 @@ enum Event
 ## Topics
 
 ### Enumeration Cases
-- [CustomerEngagementSession.Event.closed](customerengagementsession/event/closed.md)
+- [CustomerEngagementSession.Event.closed](./event/closed.md)
   An event indicating that the connection to the peer closed.
-- [CustomerEngagementSession.Event.connected](customerengagementsession/event/connected.md)
+- [CustomerEngagementSession.Event.connected](./event/connected.md)
   An event indicating that the peer has connected.
-- [CustomerEngagementSession.Event.disconnected](customerengagementsession/event/disconnected.md)
+- [CustomerEngagementSession.Event.disconnected](./event/disconnected.md)
   An event indicating that the peer has disconnected.
-- [CustomerEngagementSession.Event.ready](customerengagementsession/event/ready.md)
+- [CustomerEngagementSession.Event.ready](./event/ready.md)
   An event indicating that the peer is ready to accept requests.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let events: any AsyncSequence<CustomerEngagementSession.Event, Never>](customerengagementsession/events.md)
+### Getting events during a session
+- [let events: any AsyncSequence<CustomerEngagementSession.Event, Never>](./events.md)
   An asynchronous sequence of events that occur during the engagement session.
 
 

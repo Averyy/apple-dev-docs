@@ -1,9 +1,10 @@
 # outputPaused
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Indicates whether speech output in the synthesizer has been paused by sending the message [`pauseSpeaking(at:)`](nsspeechsynthesizer/pausespeaking(at:).md).
+Indicates whether speech output in the synthesizer has been paused by sending the message [`pauseSpeaking(at:)`](../../pausespeaking%28at%29.md).
 
 **Availability**:
 - macOS 10.5+
@@ -14,13 +15,18 @@ Indicates whether speech output in the synthesizer has been paused by sending th
 static let outputPaused: NSSpeechSynthesizer.SpeechPropertyKey.StatusKey
 ```
 
+```c
+extern NSSpeechStatusKey const NSSpeechStatusOutputPaused;
+```
+
 ## See Also
 
-- [static let numberOfCharactersLeft: NSSpeechSynthesizer.SpeechPropertyKey.StatusKey](nsspeechsynthesizer/speechpropertykey/statuskey/numberofcharactersleft.md)
+### Status Keys
+- [static let numberOfCharactersLeft: NSSpeechSynthesizer.SpeechPropertyKey.StatusKey](./numberofcharactersleft.md)
   The number of characters left in the input string of text.
-- [static let outputBusy: NSSpeechSynthesizer.SpeechPropertyKey.StatusKey](nsspeechsynthesizer/speechpropertykey/statuskey/outputbusy.md)
+- [static let outputBusy: NSSpeechSynthesizer.SpeechPropertyKey.StatusKey](./outputbusy.md)
   Indicates whether the synthesizer is currently producing speech.
-- [static let phonemeCode: NSSpeechSynthesizer.SpeechPropertyKey.StatusKey](nsspeechsynthesizer/speechpropertykey/statuskey/phonemecode.md)
+- [static let phonemeCode: NSSpeechSynthesizer.SpeechPropertyKey.StatusKey](./phonemecode.md)
   Indicates that the synthesizer is in phoneme-processing mode. When in phoneme-processing mode, a text buffer is interpreted to be a series of characters representing various phonemes and prosodic controls.
 
 

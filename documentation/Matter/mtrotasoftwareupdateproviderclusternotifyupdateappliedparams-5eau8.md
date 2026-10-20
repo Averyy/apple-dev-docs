@@ -1,7 +1,8 @@
 # MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,28 +19,32 @@
 class MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams
 ```
 
+```objc
+@interface MTROTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var serverSideProcessingTimeout: NSNumber?](mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-5eau8/serversideprocessingtimeout.md)
-- [var softwareVersion: NSNumber](mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-5eau8/softwareversion.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-5eau8/timedinvoketimeoutms.md)
-- [var updateToken: Data](mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-5eau8/updatetoken.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-5eau8/serversideprocessingtimeout.md)
+- [var softwareVersion: NSNumber](./mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-5eau8/softwareversion.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-5eau8/timedinvoketimeoutms.md)
+- [var updateToken: Data](./mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-5eau8/updatetoken.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTROtaSoftwareUpdateProviderClusterNotifyUpdateAppliedParams](mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-6s1jv.md)
+- [MTROtaSoftwareUpdateProviderClusterNotifyUpdateAppliedParams](./mtrotasoftwareupdateproviderclusternotifyupdateappliedparams-6s1jv.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

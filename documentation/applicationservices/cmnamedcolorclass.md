@@ -1,7 +1,8 @@
 # cmNamedColorClass
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A named color space profile.
 

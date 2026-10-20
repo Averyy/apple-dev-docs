@@ -1,7 +1,8 @@
 # NSTextTable.LayoutAlgorithm.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 6.0+
@@ -17,9 +18,13 @@
 case automatic
 ```
 
+```c
+NSTextTableLayoutAlgorithmAutomatic
+```
+
 ## Mentions
 
-- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+- [Adding tables to attributed strings in UIKit](../../adding-tables-to-attributed-strings.md)
 
 
 ---

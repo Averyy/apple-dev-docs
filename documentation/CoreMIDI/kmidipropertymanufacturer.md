@@ -1,7 +1,8 @@
 # kMIDIPropertyManufacturer
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The manufacturer name of a device or endpoint.
 
@@ -18,6 +19,10 @@ The manufacturer name of a device or endpoint.
 let kMIDIPropertyManufacturer: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyManufacturer;
+```
+
 #### Discussion
 
 Use this property in the following cases:
@@ -28,13 +33,14 @@ Use this property in the following cases:
 
 ## See Also
 
-- [let kMIDIPropertyName: CFString](kmidipropertyname.md)
+### Identification
+- [let kMIDIPropertyName: CFString](./kmidipropertyname.md)
   A name for a device, entity, or endpoint.
-- [let kMIDIPropertyModel: CFString](kmidipropertymodel.md)
+- [let kMIDIPropertyModel: CFString](./kmidipropertymodel.md)
   The model name of a device or endpoint.
-- [let kMIDIPropertyUniqueID: CFString](kmidipropertyuniqueid.md)
+- [let kMIDIPropertyUniqueID: CFString](./kmidipropertyuniqueid.md)
   The unique identifier of a device, entity, or, endpoint.
-- [let kMIDIPropertyDeviceID: CFString](kmidipropertydeviceid.md)
+- [let kMIDIPropertyDeviceID: CFString](./kmidipropertydeviceid.md)
   The user-visible System Exclusive (SysEx) identifier of a device or entity.
 
 

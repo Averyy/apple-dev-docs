@@ -1,7 +1,8 @@
 # directoryURL
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current directory shown in the panel.
 
@@ -14,23 +15,28 @@ The current directory shown in the panel.
 var directoryURL: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * directoryURL;
+```
+
 ## See Also
 
-- [var title: String!](nssavepanel/title.md)
+### Configuring the Panel’s Appearance
+- [var title: String!](./title.md)
   The title of the panel.
-- [var prompt: String!](nssavepanel/prompt.md)
+- [var prompt: String!](./prompt.md)
   The text to display in the default button.
-- [var message: String!](nssavepanel/message.md)
+- [var message: String!](./message.md)
   The message text displayed in the panel.
-- [var nameFieldLabel: String!](nssavepanel/namefieldlabel.md)
+- [var nameFieldLabel: String!](./namefieldlabel.md)
   The label text displayed in front of the filename text field.
-- [var nameFieldStringValue: String](nssavepanel/namefieldstringvalue.md)
+- [var nameFieldStringValue: String](./namefieldstringvalue.md)
   The user-editable filename currently shown in the name field.
-- [var accessoryView: NSView?](nssavepanel/accessoryview.md)
+- [var accessoryView: NSView?](./accessoryview.md)
   The custom accessory view for the current app.
-- [var showsTagField: Bool](nssavepanel/showstagfield.md)
+- [var showsTagField: Bool](./showstagfield.md)
   A Boolean value that indicates whether the panel displays the Tags field.
-- [var tagNames: [String]?](nssavepanel/tagnames.md)
+- [var tagNames: [String]?](./tagnames.md)
   The tag names that you want to include on a saved file.
 
 

@@ -1,7 +1,8 @@
 # DASession
 
 **Framework**: Disk Arbitration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Type of a reference to DASession instances.
 
@@ -15,11 +16,15 @@ Type of a reference to DASession instances.
 class DASession
 ```
 
+```c
+typedef struct __DASession * DASessionRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

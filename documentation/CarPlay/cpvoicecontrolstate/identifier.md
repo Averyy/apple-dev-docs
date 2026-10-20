@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that your app uses to identify the voice control state.
 
@@ -16,17 +17,22 @@ The string that your app uses to identify the voice control state.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
-Use [`identifier`](cpvoicecontrolstate/identifier.md) when calling the [`activateVoiceControlState(withIdentifier:)`](cpvoicecontroltemplate/activatevoicecontrolstate(withidentifier:).md) method to activate the voice control state.
+Use [`identifier`](./identifier.md) when calling the [`activateVoiceControlState(withIdentifier:)`](../cpvoicecontroltemplate/activatevoicecontrolstate%28withidentifier%29.md) method to activate the voice control state.
 
 ## See Also
 
-- [var titleVariants: [String]?](cpvoicecontrolstate/titlevariants.md)
+### Getting State Information
+- [var titleVariants: [String]?](./titlevariants.md)
   The array of title variants for the voice control state.
-- [var image: UIImage?](cpvoicecontrolstate/image.md)
+- [var image: UIImage?](./image.md)
   The image displayed while the voice control template is in this state.
-- [var repeats: Bool](cpvoicecontrolstate/repeats.md)
+- [var repeats: Bool](./repeats.md)
   A Boolean value that indicates whether the display of an animated image repeats the animation sequence indefinitely.
 
 

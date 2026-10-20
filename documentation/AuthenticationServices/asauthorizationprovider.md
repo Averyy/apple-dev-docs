@@ -1,7 +1,8 @@
 # ASAuthorizationProvider
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that authorization providers must implement.
 
@@ -20,21 +21,26 @@ An interface that authorization providers must implement.
 protocol ASAuthorizationProvider : NSObjectProtocol
 ```
 
+```objc
+@protocol ASAuthorizationProvider <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [ASAuthorizationAccountCreationProvider](asauthorizationaccountcreationprovider.md)
-- [ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)
-- [ASAuthorizationPasswordProvider](asauthorizationpasswordprovider.md)
-- [ASAuthorizationPlatformPublicKeyCredentialProvider](asauthorizationplatformpublickeycredentialprovider.md)
-- [ASAuthorizationSecurityKeyPublicKeyCredentialProvider](asauthorizationsecuritykeypublickeycredentialprovider.md)
-- [ASAuthorizationSingleSignOnProvider](asauthorizationsinglesignonprovider.md)
+- [ASAuthorizationAccountCreationProvider](./asauthorizationaccountcreationprovider.md)
+- [ASAuthorizationAppleIDProvider](./asauthorizationappleidprovider.md)
+- [ASAuthorizationPasswordProvider](./asauthorizationpasswordprovider.md)
+- [ASAuthorizationPlatformPublicKeyCredentialProvider](./asauthorizationplatformpublickeycredentialprovider.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialProvider](./asauthorizationsecuritykeypublickeycredentialprovider.md)
+- [ASAuthorizationSingleSignOnProvider](./asauthorizationsinglesignonprovider.md)
 
 ## See Also
 
-- [var provider: any ASAuthorizationProvider](asauthorizationrequest/provider.md)
+### Inspecting the Provider
+- [var provider: any ASAuthorizationProvider](./asauthorizationrequest/provider.md)
   The provider servicing the request.
 
 

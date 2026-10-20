@@ -1,7 +1,8 @@
 # CSUserQuery.Responses.Response
 
 **Framework**: Core Spotlight  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -19,17 +20,17 @@ enum Response
 ## Topics
 
 ### Enumeration Cases
-- [CSUserQuery.Responses.Response.item(_:)](csuserquery/responses-swift.struct/response/item(_:).md)
-- [CSUserQuery.Responses.Response.suggestion(_:)](csuserquery/responses-swift.struct/response/suggestion(_:).md)
+- [CSUserQuery.Responses.Response.item(_:)](./response/item%28_%29.md)
+- [CSUserQuery.Responses.Response.suggestion(_:)](./response/suggestion%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Identifiable](../../../Swift/identifiable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

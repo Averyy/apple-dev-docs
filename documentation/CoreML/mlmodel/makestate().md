@@ -1,7 +1,8 @@
 # makeState()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new state object.
 

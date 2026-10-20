@@ -1,18 +1,19 @@
 # SCNPhysicsShape
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstraction of a physics body’s solid volume for tuning collision detection.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,9 +21,13 @@ An abstraction of a physics body’s solid volume for tuning collision detection
 class SCNPhysicsShape
 ```
 
+```objc
+@interface SCNPhysicsShape : NSObject
+```
+
 #### Overview
 
-When SceneKit performs contact detection and other simulations for the [`SCNPhysicsBody`](scnphysicsbody.md) objects in your scene, it uses physics shapes instead of the rendered geometry of visible objects. This approach both improves simulation performance and allows you to more easily design your gameplay around scene elements the player can interact with.
+When SceneKit performs contact detection and other simulations for the [`SCNPhysicsBody`](./scnphysicsbody.md) objects in your scene, it uses physics shapes instead of the rendered geometry of visible objects. This approach both improves simulation performance and allows you to more easily design your gameplay around scene elements the player can interact with.
 
 ##### Simple Versus Complex Shapes
 
@@ -30,55 +35,56 @@ When you allow SceneKit to automatically create a physics shape, it uses the sim
 
 You can make the simulation behave more realistically by defining physics shapes that more closely follow the visible geometry in your scene. This approach comes at a cost to performance, so you want to limit the amount of detail in your physics shapes. Use the highest levels of detail only on bodies for which precise collision detection is important for your app.
 
-If you create a physics shape using one of the basic geometry classes ([`SCNBox`](scnbox.md), [`SCNSphere`](scnsphere.md), [`SCNPyramid`](scnpyramid.md), [`SCNCone`](scncone.md), [`SCNCylinder`](scncylinder.md), or [`SCNCapsule`](scncapsule.md)), SceneKit uses an idealized form of that geometry for the physics shape instead of using the geometry’s vertex data to simulate collisions. For example, if you create a physics shape from an [`SCNSphere`](scnsphere.md) object, SceneKit simulates collisions for any object that passes within the sphere’s radius.
+If you create a physics shape using one of the basic geometry classes ([`SCNBox`](./scnbox.md), [`SCNSphere`](./scnsphere.md), [`SCNPyramid`](./scnpyramid.md), [`SCNCone`](./scncone.md), [`SCNCylinder`](./scncylinder.md), or [`SCNCapsule`](./scncapsule.md)), SceneKit uses an idealized form of that geometry for the physics shape instead of using the geometry’s vertex data to simulate collisions. For example, if you create a physics shape from an [`SCNSphere`](./scnsphere.md) object, SceneKit simulates collisions for any object that passes within the sphere’s radius.
 
-Because the idealized forms of simple geometries are computationally much simpler than the vertex data needed for displaying them, using basic geometries for physics shapes (or compound shapes created from basic geometries with the [`init(shapes:transforms:)`](scnphysicsshape/init(shapes:transforms:).md) method) often provides the best balance between simulation accuracy and performance.
+Because the idealized forms of simple geometries are computationally much simpler than the vertex data needed for displaying them, using basic geometries for physics shapes (or compound shapes created from basic geometries with the [`init(shapes:transforms:)`](./scnphysicsshape/init%28shapes,transforms%29.md) method) often provides the best balance between simulation accuracy and performance.
 
-##### Changing a Physics Bodys Shape
+##### Changing a Physics Body’s Shape
 
-Physics shapes are immutable, but you can change the shape associated with a physics body by creating a new [`SCNPhysicsShape`](scnphysicsshape.md) instance and assigning it to the body’s [`physicsShape`](scnphysicsbody/physicsshape.md) property.
+Physics shapes are immutable, but you can change the shape associated with a physics body by creating a new [`SCNPhysicsShape`](./scnphysicsshape.md) instance and assigning it to the body’s [`physicsShape`](./scnphysicsbody/physicsshape.md) property.
 
 ## Topics
 
 ### Creating Physics Shapes
-- [convenience init(geometry: SCNGeometry, options: [SCNPhysicsShape.Option : Any]?)](scnphysicsshape/init(geometry:options:).md)
+- [convenience init(geometry: SCNGeometry, options: [SCNPhysicsShape.Option : Any]?)](./scnphysicsshape/init%28geometry,options%29.md)
   Creates a physics shape based on a geometry object.
-- [convenience init(node: SCNNode, options: [SCNPhysicsShape.Option : Any]?)](scnphysicsshape/init(node:options:).md)
+- [convenience init(node: SCNNode, options: [SCNPhysicsShape.Option : Any]?)](./scnphysicsshape/init%28node,options%29.md)
   Creates a physics shape from a node or hierarchy of nodes.
 ### Combining Physics Shapes
-- [convenience init(shapes: [SCNPhysicsShape], transforms: [NSValue]?)](scnphysicsshape/init(shapes:transforms:).md)
+- [convenience init(shapes: [SCNPhysicsShape], transforms: [NSValue]?)](./scnphysicsshape/init%28shapes,transforms%29.md)
   Creates a new physics shape by combining others.
 ### Getting Information About a Shape
-- [var sourceObject: Any](scnphysicsshape/sourceobject.md)
+- [var sourceObject: Any](./scnphysicsshape/sourceobject.md)
   The object that was used to create the shape.
-- [var options: [SCNPhysicsShape.Option : Any]?](scnphysicsshape/options.md)
+- [var options: [SCNPhysicsShape.Option : Any]?](./scnphysicsshape/options.md)
   The options dictionary that was used to create the shape.
-- [var transforms: [NSValue]?](scnphysicsshape/transforms.md)
+- [var transforms: [NSValue]?](./scnphysicsshape/transforms.md)
   The array of transforms that was used to create a compound shape.
 ### Shape Options
-- [SCNPhysicsShape.Option](scnphysicsshape/option.md)
+- [SCNPhysicsShape.Option](./scnphysicsshape/option.md)
   Keys for the options dictionary used when creating a physics shape.
 ### Initializers
-- [init?(coder: NSCoder)](scnphysicsshape/init(coder:).md)
+- [init?(coder: NSCoder)](./scnphysicsshape/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SCNPhysicsBody](scnphysicsbody.md)
+### Physics Bodies
+- [class SCNPhysicsBody](./scnphysicsbody.md)
   The physics simulation attributes attached to a scene graph node.
 
 

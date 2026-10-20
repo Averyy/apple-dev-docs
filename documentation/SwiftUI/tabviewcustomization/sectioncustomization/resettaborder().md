@@ -1,7 +1,8 @@
 # resetTabOrder()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the order of the tabs in the section back to the default.
 

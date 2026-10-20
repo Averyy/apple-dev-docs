@@ -1,7 +1,8 @@
 # beginDelayingAppearance()
 
 **Framework**: LockedCameraCapture  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system that the application wants to delay the application launch during a transition between the extension and the application
 

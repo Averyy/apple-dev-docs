@@ -1,7 +1,8 @@
 # MobilePhotoIDDataRequest.Response.DocumentElements.IssuingAuthority
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the state or government that issued the identity document.
 
@@ -19,20 +20,20 @@ struct IssuingAuthority
 ## Topics
 
 ### Instance Properties
-- [let isoCountryCode: String?](mobilephotoiddatarequest/response/documentelements-swift.struct/issuingauthority-swift.struct/isocountrycode.md)
+- [let isoCountryCode: String?](./issuingauthority-swift.struct/isocountrycode.md)
   The country that issued the identity document.
-- [let jurisdiction: String?](mobilephotoiddatarequest/response/documentelements-swift.struct/issuingauthority-swift.struct/jurisdiction.md)
+- [let jurisdiction: String?](./issuingauthority-swift.struct/jurisdiction.md)
   The name of the jurisdiction that issued the identity document.
-- [let name: String?](mobilephotoiddatarequest/response/documentelements-swift.struct/issuingauthority-swift.struct/name.md)
+- [let name: String?](./issuingauthority-swift.struct/name.md)
   The name of the state or government that issued the identity document.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

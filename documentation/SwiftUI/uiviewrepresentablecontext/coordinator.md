@@ -1,7 +1,8 @@
 # coordinator
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view’s associated coordinator.
 
@@ -21,7 +22,8 @@ The view’s associated coordinator.
 
 ## See Also
 
-- [var transaction: Transaction](uiviewrepresentablecontext/transaction.md)
+### Coordinating view-related interactions
+- [var transaction: Transaction](./transaction.md)
   The current transaction.
 
 

@@ -1,7 +1,8 @@
 # init(responseValue:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(responseValue: [String : Any]) throws
+```
+
+```objc
+- (instancetype) initWithResponseValue:(NSDictionary<NSString *,id> *) responseValue error:(NSError **) error;
 ```
 
 

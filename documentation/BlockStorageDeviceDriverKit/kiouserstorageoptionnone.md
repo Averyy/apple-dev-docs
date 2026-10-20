@@ -1,7 +1,8 @@
 # kIOUserStorageOptionNone
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 A value that defines no options.
 
@@ -10,7 +11,7 @@ A value that defines no options.
 
 ## Declaration
 
-```swift
+```c
 #define kIOUserStorageOptionNone
 ```
 
@@ -20,7 +21,8 @@ This value equals `0x0000`.
 
 ## See Also
 
-- [kIOUserStorageOptionForceUnitAccess](kiouserstorageoptionforceunitaccess.md)
+### Storage Options
+- [kIOUserStorageOptionForceUnitAccess](./kiouserstorageoptionforceunitaccess.md)
   An option to use Force Unit Access (FUA).
 
 

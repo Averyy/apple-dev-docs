@@ -1,7 +1,8 @@
 # NSView.ExclusiveGestureBehavior.inherit
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Inherit from superview
 
@@ -14,11 +15,16 @@ Inherit from superview
 case inherit
 ```
 
+```c
+NSViewExclusiveGestureBehaviorInherit
+```
+
 ## See Also
 
-- [NSView.ExclusiveGestureBehavior.exclusive](nsview/exclusivegesturebehavior-swift.enum/exclusive.md)
+### Getting exclusivity values
+- [NSView.ExclusiveGestureBehavior.exclusive](./exclusive.md)
   This view and its subviews have exclusive gestures
-- [NSView.ExclusiveGestureBehavior.notExclusive](nsview/exclusivegesturebehavior-swift.enum/notexclusive.md)
+- [NSView.ExclusiveGestureBehavior.notExclusive](./notexclusive.md)
   This view and its subviews do not have exclusive gestures
 
 

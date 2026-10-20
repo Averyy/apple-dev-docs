@@ -1,7 +1,8 @@
 # init(type:start:end:objects:device:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates and returns a new correlation instance with the provided device and metadata.
 
@@ -17,6 +18,10 @@ Instantiates and returns a new correlation instance with the provided device and
 
 ```swift
 convenience init(type correlationType: HKCorrelationType, start startDate: Date, end endDate: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)
+```
+
+```objc
++ (instancetype) correlationWithType:(HKCorrelationType *) correlationType startDate:(NSDate *) startDate endDate:(NSDate *) endDate objects:(NSSet<HKSample *> *) objects device:(HKDevice *) device metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
 #### Return Value
@@ -151,30 +156,36 @@ HKCorrelation *bloodPressure =
 
 ## Parameters
 
-- `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md).
-- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
-- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
-- `objects`: A set of [`HKSample`](hksample.md) objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.
+- `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](../hkcorrelationtypeidentifier.md).
+- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
+- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
+- `objects`: A set of [`HKSample`](../hksample.md) objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.
 - `device`: The device that generated the data for this sample.
-- `metadata`: The metadata dictionary containing extra information that describes this correlation. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects . The values may be [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) objects. For a complete list of predefined metadata keys, see Metadata Keys. Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create custom keys as needed to extend the HealthKit sample’s capabilities. When creating correlations representing food, always use the [`HKMetadataKeyFoodType`](hkmetadatakeyfoodtype.md) key to provide the food’s name.
+- `metadata`: The metadata dictionary containing extra information that describes this correlation. The dictionary’s keys are all [`NSString`](../../Foundation/nsstring.md) objects . The values may be [`NSString`](../../Foundation/nsstring.md), [`NSNumber`](../../Foundation/nsnumber.md), or [`NSDate`](../../Foundation/nsdate.md) objects. For a complete list of predefined metadata keys, see Metadata Keys.
+
+  Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create custom keys as needed to extend the HealthKit sample’s capabilities.
+
+  When creating correlations representing food, always use the [`HKMetadataKeyFoodType`](../hkmetadatakeyfoodtype.md) key to provide the food’s name.
 
 ## See Also
 
-- [var objects: Set<HKSample>](hkcorrelation/objects.md)
+### Related Documentation
+- [var objects: Set<HKSample>](./objects.md)
   The set of sample objects that make up the correlation.
-- [class func correlationType(forIdentifier: HKCorrelationTypeIdentifier) -> HKCorrelationType?](hkobjecttype/correlationtype(foridentifier:).md)
+- [class func correlationType(forIdentifier: HKCorrelationTypeIdentifier) -> HKCorrelationType?](../hkobjecttype/correlationtype%28foridentifier%29.md)
   Returns the shared correlation type for the provided identifier.
-- [var endDate: Date](hksample/enddate.md)
+- [var endDate: Date](../hksample/enddate.md)
   The sample’s end date.
-- [var correlationType: HKCorrelationType](hkcorrelation/correlationtype.md)
+- [var correlationType: HKCorrelationType](./correlationtype.md)
   The type for this correlation.
-- [var metadata: [String : Any]?](hkobject/metadata.md)
+- [var metadata: [String : Any]?](../hkobject/metadata.md)
   The metadata for this HealthKit object.
-- [var startDate: Date](hksample/startdate.md)
+- [var startDate: Date](../hksample/startdate.md)
   The sample’s start date.
-- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>)](hkcorrelation/init(type:start:end:objects:).md)
+### Creating Correlations
+- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>)](./init%28type,start,end,objects%29.md)
   Instantiates and returns a new correlation instance.
-- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, metadata: [String : Any]?)](hkcorrelation/init(type:start:end:objects:metadata:).md)
+- [convenience init(type: HKCorrelationType, start: Date, end: Date, objects: Set<HKSample>, metadata: [String : Any]?)](./init%28type,start,end,objects,metadata%29.md)
   Instantiates and returns a new correlation instance with the provided metadata.
 
 

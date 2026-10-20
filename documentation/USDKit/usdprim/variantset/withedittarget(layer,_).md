@@ -1,7 +1,8 @@
 # withEditTarget(layer:_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the closure with the stage’s edit target set to author into the currently selected variant.
 
@@ -27,7 +28,7 @@ The value returned by `body`.
 
 The previous edit target is restored when the closure returns.
 
-> **Note**: Errors from `body` are rethrown.
+> **Throws**: Errors from `body` are rethrown.
 
 ## Parameters
 

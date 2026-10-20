@@ -1,14 +1,15 @@
 # KF_PREEMPTION_DISABLED_DEBUG_OVRD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 KF_PREEMPTION_DISABLED_DEBUG_OVRD
 ```
 

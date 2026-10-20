@@ -1,22 +1,24 @@
 # flsll
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 int flsll(unsigned long long);
 ```
 
 ## See Also
 
-- [fls](2869617-fls.md)
-- [ffs](1441046-ffs.md)
-- [ffsll](2869615-ffsll.md)
+### Non Quad Routines
+- [fls](./api-2869617-fls.md)
+- [ffs](./api-1441046-ffs.md)
+- [ffsll](./api-2869615-ffsll.md)
 
 
 ---

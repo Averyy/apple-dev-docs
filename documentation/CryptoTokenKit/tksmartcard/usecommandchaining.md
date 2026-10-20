@@ -1,7 +1,8 @@
 # useCommandChaining
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to use command chaining of APDU with a data field longer than 255 bytes.
 
@@ -20,15 +21,20 @@ Whether to use command chaining of APDU with a data field longer than 255 bytes.
 var useCommandChaining: Bool { get set }
 ```
 
+```objc
+@property BOOL useCommandChaining;
+```
+
 #### Discussion
 
-By default, this property is set to [`true`](https://developer.apple.com/documentation/swift/true) when the Smart Card ATR announces that command chaining is supported.
+By default, this property is set to [`true`](../../Swift/true.md) when the Smart Card ATR announces that command chaining is supported.
 
 ## See Also
 
-- [var cla: UInt8](tksmartcard/cla.md)
+### Configuring APDU Behavior
+- [var cla: UInt8](./cla.md)
   The CLA byte used for APDU transmission. `0x00` by default.
-- [var useExtendedLength: Bool](tksmartcard/useextendedlength.md)
+- [var useExtendedLength: Bool](./useextendedlength.md)
   Whether to use extended length APDU.
 
 

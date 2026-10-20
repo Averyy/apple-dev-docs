@@ -1,7 +1,8 @@
 # XcodeKit
 
 **Framework**: XcodeKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Create extensions to add commands to the Xcode source editor.
 
@@ -15,26 +16,26 @@ Using the XcodeKit framework, you can customize Xcode with source editor extensi
 ## Topics
 
 ### Essentials
-- [Creating a Source Editor Extension](creating-a-source-editor-extension.md)
+- [Creating a Source Editor Extension](./creating-a-source-editor-extension.md)
   Add and configure a source editor extension in your Xcode project.
-- [Testing Your Source Editor Extension](testing-your-source-editor-extension.md)
+- [Testing Your Source Editor Extension](./testing-your-source-editor-extension.md)
   Launch a special instance of Xcode to test your source editor extension.
-- [protocol XCSourceEditorExtension](xcsourceeditorextension.md)
+- [protocol XCSourceEditorExtension](./xcsourceeditorextension.md)
   The protocol you implement to create Xcode source editor extensions.
 ### Editor Commands
-- [protocol XCSourceEditorCommand](xcsourceeditorcommand.md)
+- [protocol XCSourceEditorCommand](./xcsourceeditorcommand.md)
   The protocol you implement to handle command invocations in a source editor extension.
-- [class XCSourceEditorCommandInvocation](xcsourceeditorcommandinvocation.md)
+- [class XCSourceEditorCommandInvocation](./xcsourceeditorcommandinvocation.md)
   An object that identifies the command issued to your extension and provides the contents of the active source editor.
 ### Source Text
-- [class XCSourceTextBuffer](xcsourcetextbuffer.md)
+- [class XCSourceTextBuffer](./xcsourcetextbuffer.md)
   A buffer you use to access and modify the text contents and text selections in a source editor.
-- [struct XCSourceTextPosition](xcsourcetextposition.md)
+- [struct XCSourceTextPosition](./xcsourcetextposition.md)
   A zero-based position in a source editor, defined by a line number and column number.
-- [class XCSourceTextRange](xcsourcetextrange.md)
+- [class XCSourceTextRange](./xcsourcetextrange.md)
   A half-open range of text in a buffer you use to select text or specify the insertion point for new text.
 ### XcodeKit Constants
-- [XcodeKit Version Constants](xcodekit-version-constants.md)
+- [XcodeKit Version Constants](./xcodekit-version-constants.md)
   Determine the version of XcodeKit available in an instance of Xcode.
 
 

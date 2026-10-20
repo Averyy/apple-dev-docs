@@ -1,7 +1,8 @@
 # init(cameraPosition:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sort configuration with the given camera position.
 
@@ -23,7 +24,8 @@ init(cameraPosition: SIMD3<Float>)
 
 ## See Also
 
-- [var cameraPosition: SIMD3<Float>](lowlevelrenderer/sortconfiguration/cameraposition.md)
+### Creating a sort configuration
+- [var cameraPosition: SIMD3<Float>](./cameraposition.md)
   The camera position used to compute per-instance back-to-front sort distances for transparent draw calls.
 
 

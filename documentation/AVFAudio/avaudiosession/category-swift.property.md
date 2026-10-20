@@ -1,7 +1,8 @@
 # category
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current audio session category.
 
@@ -19,19 +20,24 @@ The current audio session category.
 var category: AVAudioSession.Category { get }
 ```
 
+```objc
+@property (readonly) AVAudioSessionCategory category;
+```
+
 #### Discussion
 
-An audio session category defines a set of audio behaviors for your app. The default category assigned to an audio session is [`soloAmbient`](avaudiosession/category-swift.struct/soloambient.md).
+An audio session category defines a set of audio behaviors for your app. The default category assigned to an audio session is [`soloAmbient`](./category-swift.struct/soloambient.md).
 
 ## See Also
 
-- [var availableCategories: [AVAudioSession.Category]](avaudiosession/availablecategories.md)
+### Inspecting the category configuration
+- [var availableCategories: [AVAudioSession.Category]](./availablecategories.md)
   The audio session categories available on the current device.
-- [AVAudioSession.Category](avaudiosession/category-swift.struct.md)
+- [AVAudioSession.Category](./category-swift.struct.md)
   Audio session category identifiers.
-- [var categoryOptions: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.property.md)
+- [var categoryOptions: AVAudioSession.CategoryOptions](./categoryoptions-swift.property.md)
   The set of options associated with the current audio session category.
-- [AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct.md)
+- [AVAudioSession.CategoryOptions](./categoryoptions-swift.struct.md)
   Constants that specify optional audio behaviors.
 
 

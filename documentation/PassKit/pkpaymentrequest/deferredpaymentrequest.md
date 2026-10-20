@@ -1,7 +1,8 @@
 # deferredPaymentRequest
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A request to set up a deferred payment, such as a hotel booking or a pre-order.
 
@@ -18,6 +19,10 @@ A request to set up a deferred payment, such as a hotel booking or a pre-order.
 var deferredPaymentRequest: PKDeferredPaymentRequest? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PKDeferredPaymentRequest * deferredPaymentRequest;
+```
+
 #### Discussion
 
 > **Note**:  watchOS doesn’t support merchant-specific payment tokens.
@@ -28,15 +33,16 @@ This payment request receives a merchant-specific payment token if the payment n
 
 ## See Also
 
-- [var recurringPaymentRequest: PKRecurringPaymentRequest?](pkpaymentrequest/recurringpaymentrequest.md)
+### Requesting recurring, automatic, and deferred payments
+- [var recurringPaymentRequest: PKRecurringPaymentRequest?](./recurringpaymentrequest.md)
   An optional request to set up a recurring payment, typically a subscription.
-- [class PKRecurringPaymentRequest](pkrecurringpaymentrequest.md)
+- [class PKRecurringPaymentRequest](../pkrecurringpaymentrequest.md)
   A class that represents a request to set up a recurring payment, typically a subscription.
-- [var automaticReloadPaymentRequest: PKAutomaticReloadPaymentRequest?](pkpaymentrequest/automaticreloadpaymentrequest.md)
+- [var automaticReloadPaymentRequest: PKAutomaticReloadPaymentRequest?](./automaticreloadpaymentrequest.md)
   An optional request to set up an automatic reload payment, such as a store card top-up.
-- [class PKAutomaticReloadPaymentRequest](pkautomaticreloadpaymentrequest.md)
+- [class PKAutomaticReloadPaymentRequest](../pkautomaticreloadpaymentrequest.md)
   A class that represents a request to set up an automatic reload payment, such as a store card top-up or a prepaid account.
-- [class PKDeferredPaymentRequest](pkdeferredpaymentrequest.md)
+- [class PKDeferredPaymentRequest](../pkdeferredpaymentrequest.md)
   An object that represents a request to set up a deferred payment, such as a hotel booking or a pre-order.
 
 

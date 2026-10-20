@@ -1,7 +1,8 @@
 # init(transform:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new manipulation gesture state with the given transform.
 

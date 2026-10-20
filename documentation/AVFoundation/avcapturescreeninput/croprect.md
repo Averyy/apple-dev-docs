@@ -1,7 +1,8 @@
 # cropRect
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the bounding rectangle of the screen area to be captured, in pixels.
 
@@ -14,6 +15,10 @@ Indicates the bounding rectangle of the screen area to be captured, in pixels.
 var cropRect: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect cropRect;
+```
+
 #### Discussion
 
 By default, `AVCaptureScreenInput` captures the entire area of the displayID with which it is associated.
@@ -24,9 +29,10 @@ The rectangle should define a smaller section of the screen in the screen’s co
 
 ## See Also
 
-- [var minFrameDuration: CMTime](avcapturescreeninput/minframeduration.md)
+### Setting video capture options
+- [var minFrameDuration: CMTime](./minframeduration.md)
   The screen input’s minimum frame duration.
-- [var scaleFactor: CGFloat](avcapturescreeninput/scalefactor.md)
+- [var scaleFactor: CGFloat](./scalefactor.md)
   Indicates the factor by which video buffers captured from the screen are to be scaled.
 
 

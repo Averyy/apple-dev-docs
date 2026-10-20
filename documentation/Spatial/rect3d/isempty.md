@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether two or three of the dimensions are zero.
 
@@ -20,11 +21,16 @@ A Boolean value that indicates whether two or three of the dimensions are zero.
 var isEmpty: Bool { get }
 ```
 
+```c
+static bool SPRect3DIsEmpty(SPRect3D rect);
+```
+
 ## See Also
 
-- [func contains(anyOf: [Point3D]) -> Bool](rect3d/contains(anyof:).md)
+### Checking characteristics
+- [func contains(anyOf: [Point3D]) -> Bool](./contains%28anyof%29.md)
   Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
-- [func intersects(Rect3D) -> Bool](rect3d/intersects(_:).md)
+- [func intersects(Rect3D) -> Bool](./intersects%28_%29.md)
   Returns a Boolean value that indicates whether two rectangles intersect.
 
 

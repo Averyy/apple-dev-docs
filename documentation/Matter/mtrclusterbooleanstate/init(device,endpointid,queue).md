@@ -1,7 +1,8 @@
 # init(device:endpointID:queue:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)
+```
+
+```objc
+- (instancetype) initWithDevice:(MTRDevice *) device endpointID:(NSNumber *) endpointID queue:(dispatch_queue_t) queue;
 ```
 
 

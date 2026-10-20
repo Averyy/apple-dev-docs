@@ -1,7 +1,8 @@
 # Unused
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 channel is present, but has no intended use or destination
 
@@ -10,15 +11,16 @@ channel is present, but has no intended use or destination
 
 ## Declaration
 
-```swift
+```c
 Unused
 ```
 
 ## See Also
 
-- [Unknown](videodriverkit/iouservideochannellabel/unknown.md)
+### Special values
+- [Unknown](./unknown.md)
   unknown or unspecified other use
-- [UseCoordinates](videodriverkit/iouservideochannellabel/usecoordinates.md)
+- [UseCoordinates](./usecoordinates.md)
   channel is described by the mCoordinates fields.
 
 

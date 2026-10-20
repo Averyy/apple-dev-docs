@@ -1,7 +1,8 @@
 # text
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that analyzes an image for text.
 
@@ -20,9 +21,10 @@ static let text: ImageAnalyzer.AnalysisTypes
 
 ## See Also
 
-- [static let machineReadableCode: ImageAnalyzer.AnalysisTypes](imageanalyzer/analysistypes/machinereadablecode.md)
+### Specifying types to find
+- [static let machineReadableCode: ImageAnalyzer.AnalysisTypes](./machinereadablecode.md)
   An option that analyzes an image for machine-readable codes, such as QR codes.
-- [static let visualLookUp: ImageAnalyzer.AnalysisTypes](imageanalyzer/analysistypes/visuallookup.md)
+- [static let visualLookUp: ImageAnalyzer.AnalysisTypes](./visuallookup.md)
   An option that analyzes an image for subjects that the framework can look up for more information.
 
 

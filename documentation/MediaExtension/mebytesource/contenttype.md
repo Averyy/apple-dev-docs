@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the byte source file.
 
@@ -14,13 +15,18 @@ The format of the byte source file.
 var contentType: UTType? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UTType * contentType;
+```
+
 ## See Also
 
-- [var fileName: String](mebytesource/filename.md)
+### Inspecting a byte source
+- [var fileName: String](./filename.md)
   The name of the file for the byte source.
-- [var fileLength: Int64](mebytesource/filelength.md)
+- [var fileLength: Int64](./filelength.md)
   The length of the byte source file.
-- [var relatedFileNamesInSameDirectory: [String]](mebytesource/relatedfilenamesinsamedirectory.md)
+- [var relatedFileNamesInSameDirectory: [String]](./relatedfilenamesinsamedirectory.md)
   An array of related file names in the parent directory of the byte source file.
 
 

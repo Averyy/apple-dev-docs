@@ -1,7 +1,8 @@
 # requestedRecordTypes
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of record type names to use when filtering changes.
 
@@ -10,7 +11,7 @@ The array of record type names to use when filtering changes.
 
 ## Declaration
 
-```swift
+```
 attribute string[]? requestedRecordTypes;
 ```
 

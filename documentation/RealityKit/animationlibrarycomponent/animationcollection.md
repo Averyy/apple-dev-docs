@@ -1,7 +1,8 @@
 # AnimationLibraryComponent.AnimationCollection
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of animations an entity can play.
 
@@ -21,70 +22,71 @@ struct AnimationCollection
 
 #### Overview
 
-You use `AnimationCollection` to access animations in an [`AnimationLibraryComponent`](animationlibrarycomponent.md).
+You use `AnimationCollection` to access animations in an [`AnimationLibraryComponent`](../animationlibrarycomponent.md).
 
-The initializers for [`AnimationLibraryComponent`](animationlibrarycomponent.md) create an `AnimationCollection`, so you don’t need to create one directly. You can access the collection with the [`animations`](animationlibrarycomponent/animations.md) property.
+The initializers for [`AnimationLibraryComponent`](../animationlibrarycomponent.md) create an `AnimationCollection`, so you don’t need to create one directly. You can access the collection with the [`animations`](./animations.md) property.
 
 ## Topics
 
 ### Creating an animation collection
-- [init(dictionaryLiteral: (String, AnimationResource)...)](animationlibrarycomponent/animationcollection/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (String, AnimationResource)...)](./animationcollection/init%28dictionaryliteral%29.md)
   Creates an animation collection from a dictionary literal.
 ### Accessing animations
-- [subscript(String) -> AnimationResource?](animationlibrarycomponent/animationcollection/subscript(_:)-4sfyo.md)
+- [subscript(String) -> AnimationResource?](./animationcollection/subscript%28_%29-4sfyo.md)
   Accesses a single animation in the collection with a key.
-- [subscript(Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence](animationlibrarycomponent/animationcollection/subscript(_:)-2n5pw.md)
+- [subscript(Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence](./animationcollection/subscript%28_%29-2n5pw.md)
   Accesses animations in the collection within an index range.
-- [subscript(AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element](animationlibrarycomponent/animationcollection/subscript(_:)-45p83.md)
+- [subscript(AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element](./animationcollection/subscript%28_%29-45p83.md)
   Accesses a single animation in the collection at an index.
-- [AnimationLibraryComponent.AnimationCollection.SubSequence](animationlibrarycomponent/animationcollection/subsequence.md)
+- [AnimationLibraryComponent.AnimationCollection.SubSequence](./animationcollection/subsequence.md)
   A sequence that represents a contiguous subrange of animations in the collection.
-- [AnimationLibraryComponent.AnimationCollection.Element](animationlibrarycomponent/animationcollection/element.md)
+- [AnimationLibraryComponent.AnimationCollection.Element](./animationcollection/element.md)
   A key-value pair from the collection consisting of the name of an animation and the animation itself.
 ### Manipulating indices
-- [var startIndex: AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/startindex.md)
+- [var startIndex: AnimationLibraryComponent.AnimationCollection.Index](./animationcollection/startindex.md)
   An index to the first animation in the collection.
-- [var endIndex: AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/endindex.md)
+- [var endIndex: AnimationLibraryComponent.AnimationCollection.Index](./animationcollection/endindex.md)
   An index to the last animation in the collection.
-- [func index(after: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/index(after:).md)
+- [func index(after: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Index](./animationcollection/index%28after%29.md)
   Returns the position in the collection that follows an index.
-- [func formIndex(after: inout AnimationLibraryComponent.AnimationCollection.Index)](animationlibrarycomponent/animationcollection/formindex(after:).md)
+- [func formIndex(after: inout AnimationLibraryComponent.AnimationCollection.Index)](./animationcollection/formindex%28after%29.md)
   Replaces the index with its successor.
-- [AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/index.md)
+- [AnimationLibraryComponent.AnimationCollection.Index](./animationcollection/index.md)
   An object that represents a position in the collection.
 ### Iterating over animations
-- [func makeIterator() -> AnimationLibraryComponent.AnimationCollection.Iterator](animationlibrarycomponent/animationcollection/makeiterator.md)
+- [func makeIterator() -> AnimationLibraryComponent.AnimationCollection.Iterator](./animationcollection/makeiterator%28%29.md)
   Returns an iterator over the animations in the collection.
-- [AnimationLibraryComponent.AnimationCollection.Iterator](animationlibrarycomponent/animationcollection/iterator.md)
+- [AnimationLibraryComponent.AnimationCollection.Iterator](./animationcollection/iterator.md)
   An object to iterate over all animations in the collection.
 ### Instance Properties
-- [var count: Int](animationlibrarycomponent/animationcollection/count.md)
+- [var count: Int](./animationcollection/count.md)
   The number of animations in the collection.
-- [var isEmpty: Bool](animationlibrarycomponent/animationcollection/isempty.md)
+- [var isEmpty: Bool](./animationcollection/isempty.md)
   A Boolean value that indicates whether the collection is empty.
 ### Subscripts
-- [subscript(_:)](animationlibrarycomponent/animationcollection/subscript(_:).md)
+- [subscript(_:)](./animationcollection/subscript%28_%29.md)
   Accesses animations in the collection within an index range.
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../../Swift/collection.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+### Animation playback
+- [Automatically animating RealityKit entities](../automatically-animating-realitykit-entities.md)
   Invoke implicit animations by setting the entity’s desired end state.
-- [class AnimationResource](animationresource.md)
+- [class AnimationResource](../animationresource.md)
   An animation for the properties of scenes or entities.
-- [struct AnimationLibraryComponent](animationlibrarycomponent.md)
+- [struct AnimationLibraryComponent](../animationlibrarycomponent.md)
   A component that represents a collection of animations that an entity can play.
-- [enum AnimationEvents](animationevents.md)
+- [enum AnimationEvents](../animationevents.md)
   Notable milestones that the framework signals during animation playback.
-- [class AnimationPlaybackController](animationplaybackcontroller.md)
+- [class AnimationPlaybackController](../animationplaybackcontroller.md)
   A controller that manages animation playback.
-- [enum AnimationRepeatMode](animationrepeatmode.md)
+- [enum AnimationRepeatMode](../animationrepeatmode.md)
   Options that determine whether an animation replays after completion.
 
 

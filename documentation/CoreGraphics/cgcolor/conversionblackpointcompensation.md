@@ -1,7 +1,8 @@
 # conversionBlackPointCompensation
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option for whether to apply black point compensation when converting between color profiles.
 
@@ -20,9 +21,13 @@ An option for whether to apply black point compensation when converting between 
 class let conversionBlackPointCompensation: CFString
 ```
 
+```c
+extern CFStringRef const kCGColorConversionBlackPointCompensation;
+```
+
 #### Discussion
 
-ICC profiles specify how to convert the lightest level of white between color spaces, but they do not specify how black should be converted. To account for this, set a value of [`true`](https://developer.apple.com/documentation/swift/true) for this key when creating a color conversion with the [`CGColorConversionInfoCreateFromList`](cgcolorconversioninfocreatefromlist.md) function.
+ICC profiles specify how to convert the lightest level of white between color spaces, but they do not specify how black should be converted. To account for this, set a value of [`true`](../../Swift/true.md) for this key when creating a color conversion with the [`CGColorConversionInfoCreateFromList`](../cgcolorconversioninfocreatefromlist.md) function.
 
 
 ---

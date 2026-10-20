@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The published value of the future or an error, delivered asynchronously.
 
@@ -20,13 +21,16 @@ The published value of the future or an error, delivered asynchronously.
 final var value: Output { get async throws }
 ```
 
+Available when `Failure` conforms to `Error`.
+
 #### Discussion
 
-This property subscribes to the `Future` and delivers the value asynchronously when the `Future` publishes it. If the `Future` terminates with an error, the awaiting caller receives the error instead. Use this property when you want to the `async`-`await` syntax with a `Future` whose [`Failure`](publisher/failure.md) type is not [`Never`](https://developer.apple.com/documentation/swift/never).
+This property subscribes to the `Future` and delivers the value asynchronously when the `Future` publishes it. If the `Future` terminates with an error, the awaiting caller receives the error instead. Use this property when you want to the `async`-`await` syntax with a `Future` whose [`Failure`](../publisher/failure.md) type is not [`Never`](../../Swift/never.md).
 
 ## See Also
 
-- [var value: Output](future/value-9iwjz.md)
+### Accessing the value asynchronously
+- [var value: Output](./value-9iwjz.md)
   The published value of the future, delivered asynchronously.
 
 

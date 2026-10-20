@@ -1,7 +1,8 @@
 # BNNSDataLayout2DFirstMajor
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 2D first-major matrix.
 
@@ -20,6 +21,10 @@ A constant that represents a 2D first-major matrix.
 var BNNSDataLayout2DFirstMajor: BNNSDataLayout { get }
 ```
 
+```c
+BNNSDataLayout2DFirstMajor
+```
+
 #### Discussion
 
 The value `(i, j)` is at index `j * stride[0] + i * stride[1]`.
@@ -31,11 +36,12 @@ This is the BLAS/LAPACK row-major equivalent.
 
 ## See Also
 
-- [var BNNSDataLayoutColumnMajorMatrix: BNNSDataLayout](bnnsdatalayoutcolumnmajormatrix.md)
+### 2D Data Layouts
+- [var BNNSDataLayoutColumnMajorMatrix: BNNSDataLayout](./bnnsdatalayoutcolumnmajormatrix.md)
   A constant that represents a 2D column-major matrix.
-- [var BNNSDataLayoutRowMajorMatrix: BNNSDataLayout](bnnsdatalayoutrowmajormatrix.md)
+- [var BNNSDataLayoutRowMajorMatrix: BNNSDataLayout](./bnnsdatalayoutrowmajormatrix.md)
   A constant that represents a 2D row-major matrix.
-- [var BNNSDataLayout2DLastMajor: BNNSDataLayout](bnnsdatalayout2dlastmajor.md)
+- [var BNNSDataLayout2DLastMajor: BNNSDataLayout](./bnnsdatalayout2dlastmajor.md)
   A constant that represents a 2D last-major matrix.
 
 

@@ -1,7 +1,8 @@
 # hierarchicalRootRecordID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record ID of the shared hierarchy’s root record.
 
@@ -21,15 +22,20 @@ The record ID of the shared hierarchy’s root record.
 var hierarchicalRootRecordID: CKRecord.ID? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) CKRecordID * hierarchicalRootRecordID;
+```
+
 #### Discussion
 
 CloudKit populates this property only for metadata that belongs to a shared record hierarchy. If the metadata is part of a shared record zone, the property is `nil`. This is because, unlike a shared record hierarchy, a shared record zone doesn’t have a nominated root record.
 
 ## See Also
 
-- [var rootRecord: CKRecord?](ckshare/metadata/rootrecord.md)
+### Accessing the Root Record
+- [var rootRecord: CKRecord?](./rootrecord.md)
   The share’s root record.
-- [var rootRecordID: CKRecord.ID](ckshare/metadata/rootrecordid.md)
+- [var rootRecordID: CKRecord.ID](./rootrecordid.md)
   The record ID of the share’s root record.
 
 

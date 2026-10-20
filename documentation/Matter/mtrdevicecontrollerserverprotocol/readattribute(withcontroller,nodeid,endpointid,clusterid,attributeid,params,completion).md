@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func readAttribute(withController controller: Any?, nodeId: UInt64, endpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, params: [String : Any]?, completion: @escaping @Sendable (Any?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttribute(withController controller: Any?, nodeId: UInt64, endpointId: NSNumber?, clusterId: NSNumber?, attributeId: NSNumber?, params: [String : Any]?) async throws -> Any
+```
+
+```objc
+- (void) readAttributeWithController:(id) controller nodeId:(uint64_t) nodeId endpointId:(NSNumber *) endpointId clusterId:(NSNumber *) clusterId attributeId:(NSNumber *) attributeId params:(NSDictionary<NSString *,id> *) params completion:(MTRValuesHandler) completion;
 ```
 
 

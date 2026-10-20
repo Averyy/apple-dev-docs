@@ -1,7 +1,8 @@
 # ClothColliderShape
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Shape suitable for use as a collider.
 
@@ -19,35 +20,36 @@ enum ClothColliderShape
 ## Topics
 
 ### Specifying the collider shape
-- [ClothColliderShape.box(_:)](clothcollidershape/box(_:).md)
+- [ClothColliderShape.box(_:)](./clothcollidershape/box%28_%29.md)
   A box collider shape.
-- [case roundedBox(ClothRoundedBoxShape)](clothcollidershape/roundedbox(_:).md)
+- [case roundedBox(ClothRoundedBoxShape)](./clothcollidershape/roundedbox%28_%29.md)
   A rounded box collider shape.
-- [ClothColliderShape.sphere(_:)](clothcollidershape/sphere(_:).md)
+- [ClothColliderShape.sphere(_:)](./clothcollidershape/sphere%28_%29.md)
   A sphere collider shape.
-- [case capsule(ClothCapsuleShape)](clothcollidershape/capsule(_:).md)
+- [case capsule(ClothCapsuleShape)](./clothcollidershape/capsule%28_%29.md)
   A capsule collider shape.
-- [ClothColliderShape.plane(_:)](clothcollidershape/plane(_:).md)
+- [ClothColliderShape.plane(_:)](./clothcollidershape/plane%28_%29.md)
   A plane collider shape.
-- [ClothColliderShape.mesh(_:)](clothcollidershape/mesh(_:).md)
+- [ClothColliderShape.mesh(_:)](./clothcollidershape/mesh%28_%29.md)
   A mesh collider shape.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ClothColliderComponent](clothcollidercomponent.md)
+### Collision
+- [struct ClothColliderComponent](./clothcollidercomponent.md)
   A component that adds a cloth-compatible collider to an entity.
-- [struct ClothColliderMaterial](clothcollidermaterial.md)
+- [struct ClothColliderMaterial](./clothcollidermaterial.md)
   A struct that represents a collider’s material.
-- [struct ClothCollisionFilter](clothcollisionfilter.md)
+- [struct ClothCollisionFilter](./clothcollisionfilter.md)
   Defines the collision groups for a body or collider and the mask for one-way collisions.
-- [struct ClothCollisionGroupSet](clothcollisiongroupset.md)
+- [struct ClothCollisionGroupSet](./clothcollisiongroupset.md)
   `ClothCollisionGroupSet` is the basis for the `ClothCollisionFilter` and should not be used separately.
 
 

@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A globally unique identifier for the session participant.
 

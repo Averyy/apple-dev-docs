@@ -1,7 +1,8 @@
 # placeName
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tag indicating that the token is a place name.
 
@@ -20,11 +21,16 @@ A tag indicating that the token is a place name.
 static let placeName: NLTag
 ```
 
+```c
+extern NLTag const NLTagPlaceName;
+```
+
 ## See Also
 
-- [static let personalName: NLTag](nltag/personalname.md)
+### Name types
+- [static let personalName: NLTag](./personalname.md)
   A tag indicating that the token is a personal name.
-- [static let organizationName: NLTag](nltag/organizationname.md)
+- [static let organizationName: NLTag](./organizationname.md)
   A tag indicating that the token is an organization name.
 
 

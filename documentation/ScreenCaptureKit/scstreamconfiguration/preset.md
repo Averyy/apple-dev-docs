@@ -1,7 +1,8 @@
 # SCStreamConfiguration.Preset
 
 **Framework**: ScreenCaptureKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 enum Preset
 ```
 
+```c
+enum SCStreamConfigurationPreset : NSInteger;
+```
+
 #### Overview
 
 Client can use SCStreamConfigurationPreset to create SCStreamConfiguration with suggested values of properties for various use cases
@@ -22,27 +27,28 @@ Client can use SCStreamConfigurationPreset to create SCStreamConfiguration with 
 ## Topics
 
 ### Enumeration Cases
-- [SCStreamConfiguration.Preset.captureHDRRecordingPreservedSDRHDR10](scstreamconfiguration/preset/capturehdrrecordingpreservedsdrhdr10.md)
-- [SCStreamConfiguration.Preset.captureHDRScreenshotCanonicalDisplay](scstreamconfiguration/preset/capturehdrscreenshotcanonicaldisplay.md)
-- [SCStreamConfiguration.Preset.captureHDRScreenshotLocalDisplay](scstreamconfiguration/preset/capturehdrscreenshotlocaldisplay.md)
-- [SCStreamConfiguration.Preset.captureHDRStreamCanonicalDisplay](scstreamconfiguration/preset/capturehdrstreamcanonicaldisplay.md)
-- [SCStreamConfiguration.Preset.captureHDRStreamLocalDisplay](scstreamconfiguration/preset/capturehdrstreamlocaldisplay.md)
+- [SCStreamConfiguration.Preset.captureHDRRecordingPreservedSDRHDR10](./preset/capturehdrrecordingpreservedsdrhdr10.md)
+- [SCStreamConfiguration.Preset.captureHDRScreenshotCanonicalDisplay](./preset/capturehdrscreenshotcanonicaldisplay.md)
+- [SCStreamConfiguration.Preset.captureHDRScreenshotLocalDisplay](./preset/capturehdrscreenshotlocaldisplay.md)
+- [SCStreamConfiguration.Preset.captureHDRStreamCanonicalDisplay](./preset/capturehdrstreamcanonicaldisplay.md)
+- [SCStreamConfiguration.Preset.captureHDRStreamLocalDisplay](./preset/capturehdrstreamlocaldisplay.md)
 ### Initializers
-- [init?(rawValue: Int)](scstreamconfiguration/preset/init(rawvalue:).md)
+- [init?(rawValue: Int)](./preset/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SCCaptureDynamicRange](sccapturedynamicrange.md)
+### Enumerations
+- [enum SCCaptureDynamicRange](../sccapturedynamicrange.md)
   Specifies whether the captured screen output is standard or high dynamic range.
 
 

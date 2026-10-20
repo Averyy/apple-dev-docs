@@ -1,7 +1,8 @@
 # addApplicationParameterHeader(_:length:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func addApplicationParameterHeader(_ inHeaderData: UnsafeRawPointer!, length inHeaderDataLength: UInt32) -> OBEXError
+```
+
+```objc
+- (OBEXError) addApplicationParameterHeader:(const void *) inHeaderData length:(uint32_t) inHeaderDataLength;
 ```
 
 

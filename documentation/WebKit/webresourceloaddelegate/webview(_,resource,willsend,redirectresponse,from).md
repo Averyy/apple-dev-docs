@@ -1,17 +1,22 @@
 # webView(_:resource:willSend:redirectResponse:from:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked before a request is initiated for a resource and returns a possibly modified request.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, resource identifier: Any!, willSend request: URLRequest!, redirectResponse: URLResponse!, from dataSource: WebDataSource!) -> URLRequest!
+```
+
+```objc
+- (NSURLRequest *) webView:(WebView *) sender resource:(id) identifier willSendRequest:(NSURLRequest *) request redirectResponse:(NSURLResponse *) redirectResponse fromDataSource:(WebDataSource *) dataSource;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ A possibly modified request.
 
 #### Discussion
 
-Delegates might implement this method to modify resource requests before they are sent. Note that this method might be invoked multiple times per load (as a result of a server redirect) where as the  [`webView(_:identifierForInitialRequest:from:)`](webresourceloaddelegate/webview(_:identifierforinitialrequest:from:).md) method is invoked once.
+Delegates might implement this method to modify resource requests before they are sent. Note that this method might be invoked multiple times per load (as a result of a server redirect) where as the  [`webView(_:identifierForInitialRequest:from:)`](./webview%28_,identifierforinitialrequest,from%29.md) method is invoked once.
 
 ## Parameters
 
@@ -32,15 +37,16 @@ Delegates might implement this method to modify resource requests before they ar
 
 ## See Also
 
-- [func webView(WebView!, resource: Any!, didFinishLoadingFrom: WebDataSource!)](webresourceloaddelegate/webview(_:resource:didfinishloadingfrom:).md)
+### Loading Content
+- [func webView(WebView!, resource: Any!, didFinishLoadingFrom: WebDataSource!)](./webview%28_,resource,didfinishloadingfrom%29.md)
   Invoked when all of the data for a given resource is loaded.
-- [func webView(WebView!, resource: Any!, didReceive: URLResponse!, from: WebDataSource!)](webresourceloaddelegate/webview(_:resource:didreceive:from:)-22bdg.md)
+- [func webView(WebView!, resource: Any!, didReceive: URLResponse!, from: WebDataSource!)](./webview%28_,resource,didreceive,from%29-22bdg.md)
   Invoked after a resource has been loaded.
-- [func webView(WebView!, resource: Any!, didReceiveContentLength: Int, from: WebDataSource!)](webresourceloaddelegate/webview(_:resource:didreceivecontentlength:from:).md)
+- [func webView(WebView!, resource: Any!, didReceiveContentLength: Int, from: WebDataSource!)](./webview%28_,resource,didreceivecontentlength,from%29.md)
   Invoked when some of the data for a given resource has arrived.
-- [func webView(WebView!, resource: Any!, didFailLoadingWithError: (any Error)!, from: WebDataSource!)](webresourceloaddelegate/webview(_:resource:didfailloadingwitherror:from:).md)
+- [func webView(WebView!, resource: Any!, didFailLoadingWithError: (any Error)!, from: WebDataSource!)](./webview%28_,resource,didfailloadingwitherror,from%29.md)
   Invoked when a resource failed to load.
-- [func webView(WebView!, plugInFailedWithError: (any Error)!, dataSource: WebDataSource!)](webresourceloaddelegate/webview(_:pluginfailedwitherror:datasource:).md)
+- [func webView(WebView!, plugInFailedWithError: (any Error)!, dataSource: WebDataSource!)](./webview%28_,pluginfailedwitherror,datasource%29.md)
   Invoked when a plug-in fails to load.
 
 

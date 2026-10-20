@@ -1,7 +1,8 @@
 # LinkMarkup
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A URL link that a person can tap on in the canvas.
 
@@ -21,34 +22,35 @@ struct LinkMarkup
 ## Topics
 
 ### Creating a link
-- [init(url: URL, frame: CGRect, allowedInteractions: MarkupInteractions, id: MarkupID<LinkMarkup>)](linkmarkup/init(url:frame:allowedinteractions:id:).md)
+- [init(url: URL, frame: CGRect, allowedInteractions: MarkupInteractions, id: MarkupID<LinkMarkup>)](./linkmarkup/init%28url,frame,allowedinteractions,id%29.md)
   Initializes and returns a new link markup from the specified parameters.
 ### Accessing the destination
-- [var url: URL](linkmarkup/url.md)
+- [var url: URL](./linkmarkup/url.md)
   The URL that the link navigates to when activated.
 ### Identifying markup
-- [var id: MarkupID<LinkMarkup>](linkmarkup/id.md)
+- [var id: MarkupID<LinkMarkup>](./linkmarkup/id.md)
   Stable unique identity of the markup.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Markup](markup.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Markup](./markup.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Markup](markup.md)
+### Markup elements
+- [protocol Markup](./markup.md)
   A markup component.
-- [struct ImageMarkup](imagemarkup.md)
+- [struct ImageMarkup](./imagemarkup.md)
   A markup element that represents an image.
-- [struct ShapeMarkup](shapemarkup.md)
+- [struct ShapeMarkup](./shapemarkup.md)
   A markup element that represents a shape or text box with customizable appearance and behavior.
-- [struct LoupeMarkup](loupemarkup.md)
+- [struct LoupeMarkup](./loupemarkup.md)
   A loupe magnifier that magnifies the content below the loupe.
-- [struct MarkupInteractions](markupinteractions.md)
+- [struct MarkupInteractions](./markupinteractions.md)
   Interactions that people can perform on markup elements.
 
 

@@ -1,16 +1,17 @@
 # UIReturnKeyType.search
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the Return key displays an indication to perform a search.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,29 +19,34 @@ Specifies that the Return key displays an indication to perform a search.
 case search
 ```
 
+```c
+UIReturnKeySearch
+```
+
 ## See Also
 
-- [UIReturnKeyType.default](uireturnkeytype/default.md)
+### Constants
+- [UIReturnKeyType.default](./default.md)
   Specifies that the Return key displays an indication to accept the user’s input.
-- [UIReturnKeyType.go](uireturnkeytype/go.md)
+- [UIReturnKeyType.go](./go.md)
   Specifies that the Return key displays an indication to proceed.
-- [UIReturnKeyType.google](uireturnkeytype/google.md)
+- [UIReturnKeyType.google](./google.md)
   Specifies that the Return key displays an indication to search using Google.
-- [UIReturnKeyType.join](uireturnkeytype/join.md)
+- [UIReturnKeyType.join](./join.md)
   Specifies that the Return key displays an indication to join something, such as a meeting.
-- [UIReturnKeyType.next](uireturnkeytype/next.md)
+- [UIReturnKeyType.next](./next.md)
   Specifies that the Return key displays an indication to proceed forward.
-- [UIReturnKeyType.route](uireturnkeytype/route.md)
+- [UIReturnKeyType.route](./route.md)
   Specifies that the Return key displays an indication to plan a route to a location.
-- [UIReturnKeyType.send](uireturnkeytype/send.md)
+- [UIReturnKeyType.send](./send.md)
   Specifies that the Return key displays an indication to send something, such as an email.
-- [UIReturnKeyType.yahoo](uireturnkeytype/yahoo.md)
+- [UIReturnKeyType.yahoo](./yahoo.md)
   Specifies that the Return key displays an indication to search using Yahoo.
-- [UIReturnKeyType.done](uireturnkeytype/done.md)
+- [UIReturnKeyType.done](./done.md)
   Specifies that the Return key displays an indication to accept the user’s input.
-- [UIReturnKeyType.emergencyCall](uireturnkeytype/emergencycall.md)
+- [UIReturnKeyType.emergencyCall](./emergencycall.md)
   Specifies that the Return key displays an indication to place an emergency phone call.
-- [UIReturnKeyType.continue](uireturnkeytype/continue.md)
+- [UIReturnKeyType.continue](./continue.md)
   Specifies that the Return key displays an indication to continue what the user is doing.
 
 

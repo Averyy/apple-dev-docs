@@ -1,7 +1,8 @@
 # Dimension3DSet
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of dimensions.
 
@@ -11,7 +12,7 @@ A set of dimensions.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,41 +24,42 @@ struct Dimension3DSet
 ## Topics
 
 ### Type properties
-- [static let all: Dimension3DSet](dimension3dset/all.md)
+- [static let all: Dimension3DSet](./dimension3dset/all.md)
   All dimensions.
-- [static let x: Dimension3DSet](dimension3dset/x.md)
+- [static let x: Dimension3DSet](./dimension3dset/x.md)
   The x-dimension.
-- [static let y: Dimension3DSet](dimension3dset/y.md)
+- [static let y: Dimension3DSet](./dimension3dset/y.md)
   The y-dimension.
-- [static let z: Dimension3DSet](dimension3dset/z.md)
+- [static let z: Dimension3DSet](./dimension3dset/z.md)
   The z-dimension.
 ### Instance properties
-- [let rawValue: Int](dimension3dset/rawvalue.md)
+- [let rawValue: Int](./dimension3dset/rawvalue.md)
   The corresponding value of the raw type.
 ### Initializers
-- [init(rawValue: Int)](dimension3dset/init(rawvalue:).md)
+- [init(rawValue: Int)](./dimension3dset/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var isInvertible: Bool](affinetransform3d/isinvertible.md)
+### Checking characteristics
+- [var isInvertible: Bool](./affinetransform3d/isinvertible.md)
   Returns a Boolean value that indicates whether the transform is invertible.
-- [func isUniform(overDimensions: Dimension3DSet) -> Bool](affinetransform3d/isuniform(overdimensions:).md)
+- [func isUniform(overDimensions: Dimension3DSet) -> Bool](./affinetransform3d/isuniform%28overdimensions%29.md)
   Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
-- [var matrix: simd_double4x3](affinetransform3d/matrix.md)
+- [var matrix: simd_double4x3](./affinetransform3d/matrix.md)
   The affine transform’s underlying matrix.
-- [var matrix3x3: simd_double3x3](affinetransform3d/matrix3x3.md)
+- [var matrix3x3: simd_double3x3](./affinetransform3d/matrix3x3.md)
   The first three columns of an affine transform’s underlying matrix.
-- [var matrix4x4: simd_double4x4](affinetransform3d/matrix4x4.md)
+- [var matrix4x4: simd_double4x4](./affinetransform3d/matrix4x4.md)
   A 4 x 4 matrix that results from constructing the affine transform’s underlying matrix.
 
 

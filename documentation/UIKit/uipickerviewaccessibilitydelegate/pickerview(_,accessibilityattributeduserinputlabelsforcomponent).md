@@ -1,7 +1,8 @@
 # pickerView(_:accessibilityAttributedUserInputLabelsForComponent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,17 +16,22 @@
 optional func pickerView(_ pickerView: UIPickerView, accessibilityAttributedUserInputLabelsForComponent component: Int) -> [NSAttributedString]
 ```
 
+```objc
+- (NSArray<NSAttributedString *> *) pickerView:(UIPickerView *) pickerView accessibilityAttributedUserInputLabelsForComponent:(NSInteger) component;
+```
+
 ## See Also
 
-- [func pickerView(UIPickerView, accessibilityLabelForComponent: Int) -> String?](uipickerviewaccessibilitydelegate/pickerview(_:accessibilitylabelforcomponent:).md)
+### Providing descriptive information
+- [func pickerView(UIPickerView, accessibilityLabelForComponent: Int) -> String?](./pickerview%28_,accessibilitylabelforcomponent%29.md)
   Returns a string that identifies the picker view component.
-- [func pickerView(UIPickerView, accessibilityAttributedLabelForComponent: Int) -> NSAttributedString?](uipickerviewaccessibilitydelegate/pickerview(_:accessibilityattributedlabelforcomponent:).md)
+- [func pickerView(UIPickerView, accessibilityAttributedLabelForComponent: Int) -> NSAttributedString?](./pickerview%28_,accessibilityattributedlabelforcomponent%29.md)
   Returns an attributed string that identifies the picker view component.
-- [func pickerView(UIPickerView, accessibilityHintForComponent: Int) -> String?](uipickerviewaccessibilitydelegate/pickerview(_:accessibilityhintforcomponent:).md)
+- [func pickerView(UIPickerView, accessibilityHintForComponent: Int) -> String?](./pickerview%28_,accessibilityhintforcomponent%29.md)
   Returns a string that describes the result of performing an action on the component.
-- [func pickerView(UIPickerView, accessibilityAttributedHintForComponent: Int) -> NSAttributedString?](uipickerviewaccessibilitydelegate/pickerview(_:accessibilityattributedhintforcomponent:).md)
+- [func pickerView(UIPickerView, accessibilityAttributedHintForComponent: Int) -> NSAttributedString?](./pickerview%28_,accessibilityattributedhintforcomponent%29.md)
   Returns an attributed string that describes the result of performing an action on the specified component.
-- [func pickerView(UIPickerView, accessibilityUserInputLabelsForComponent: Int) -> [String]](uipickerviewaccessibilitydelegate/pickerview(_:accessibilityuserinputlabelsforcomponent:).md)
+- [func pickerView(UIPickerView, accessibilityUserInputLabelsForComponent: Int) -> [String]](./pickerview%28_,accessibilityuserinputlabelsforcomponent%29.md)
 
 
 ---

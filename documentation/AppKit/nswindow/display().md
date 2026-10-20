@@ -1,17 +1,22 @@
 # display()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Passes a display message down the window’s view hierarchy, thus redrawing all views within the window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func display()
+```
+
+```objc
+- (void) display;
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ This method includes the frame view that draws the border, title bar, and other 
 
 ## See Also
 
-- [func displayIfNeeded()](nswindow/displayifneeded.md)
+### Drawing Windows
+- [func displayIfNeeded()](./displayifneeded%28%29.md)
   Passes a display message down the window’s view hierarchy, thus redrawing all views that need displaying.
-- [var viewsNeedDisplay: Bool](nswindow/viewsneeddisplay.md)
+- [var viewsNeedDisplay: Bool](./viewsneeddisplay.md)
   A Boolean value that indicates whether any of the window’s views need to be displayed.
-- [var allowsConcurrentViewDrawing: Bool](nswindow/allowsconcurrentviewdrawing.md)
+- [var allowsConcurrentViewDrawing: Bool](./allowsconcurrentviewdrawing.md)
   A Boolean value that indicates whether the window allows multithreaded view drawing.
 
 

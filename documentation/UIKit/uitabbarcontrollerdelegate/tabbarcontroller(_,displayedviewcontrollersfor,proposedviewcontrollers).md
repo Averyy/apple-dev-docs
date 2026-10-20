@@ -1,7 +1,8 @@
 # tabBarController(_:displayedViewControllersFor:proposedViewControllers:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Used with `UITabGroup.managingNavigationController`, this method allows the delegate to customize the displayed view controllers within the navigation stack for each level of selected tab. This method is called by the system if the selected tab in the `UITabBarController` belongs to or is in the hierarchy of a managing tab group (i.e. a `UITabGroup` with a non-nil `managingNavigationController`). By default, if this method is not implemented, the system will build the navigation stack by adding each tab’s `viewController` into the hierarchy, if one exists. This is especially useful to hide certain view controllers when transitioning between compact and regular size classes.
 
@@ -15,6 +16,10 @@ Used with `UITabGroup.managingNavigationController`, this method allows the dele
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, displayedViewControllersFor tab: UITab, proposedViewControllers: [UIViewController]) -> [UIViewController]
+```
+
+```objc
+- (NSArray<UIViewController *> *) tabBarController:(UITabBarController *) tabBarController displayedViewControllersForTab:(UITab *) tab proposedViewControllers:(NSArray<UIViewController *> *) proposedViewControllers;
 ```
 
 #### Return Value

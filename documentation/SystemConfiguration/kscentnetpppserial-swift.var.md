@@ -1,7 +1,8 @@
 # kSCEntNetPPPSerial
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The network entity key for the `PPPSerial` dictionary.
 
@@ -14,37 +15,42 @@ The network entity key for the `PPPSerial` dictionary.
 let kSCEntNetPPPSerial: CFString
 ```
 
+```c
+extern CFStringRef const kSCEntNetPPPSerial;
+```
+
 ## See Also
 
-- [let kSCEntNetAirPort: CFString](kscentnetairport-swift.var.md)
+### Constants
+- [let kSCEntNetAirPort: CFString](./kscentnetairport-swift.var.md)
   The network entity key for the `AirPort` dictionary.
-- [let kSCEntNetDHCP: CFString](kscentnetdhcp-swift.var.md)
+- [let kSCEntNetDHCP: CFString](./kscentnetdhcp-swift.var.md)
   The network entity key for the `DHCP` dictionary.
-- [let kSCEntNetDNS: CFString](kscentnetdns-swift.var.md)
+- [let kSCEntNetDNS: CFString](./kscentnetdns-swift.var.md)
   The network entity key for the `DNS` dictionary.
-- [let kSCEntNetEthernet: CFString](kscentnetethernet-swift.var.md)
+- [let kSCEntNetEthernet: CFString](./kscentnetethernet-swift.var.md)
   The network entity key for the `Ethernet` dictionary.
-- [let kSCEntNetFireWire: CFString](kscentnetfirewire-swift.var.md)
+- [let kSCEntNetFireWire: CFString](./kscentnetfirewire-swift.var.md)
   The network entity key for the `FireWire` dictionary.
-- [let kSCEntNetInterface: CFString](kscentnetinterface-swift.var.md)
+- [let kSCEntNetInterface: CFString](./kscentnetinterface-swift.var.md)
   The network entity key for the `Interface` dictionary.
-- [let kSCEntNetIPSec: CFString](kscentnetipsec-swift.var.md)
+- [let kSCEntNetIPSec: CFString](./kscentnetipsec-swift.var.md)
   The network entity key for the `IPSec` dictionary.
-- [let kSCEntNetIPv4: CFString](kscentnetipv4-swift.var.md)
+- [let kSCEntNetIPv4: CFString](./kscentnetipv4-swift.var.md)
   The network entity key for the `IPv4` dictionary.
-- [let kSCEntNetIPv6: CFString](kscentnetipv6-swift.var.md)
+- [let kSCEntNetIPv6: CFString](./kscentnetipv6-swift.var.md)
   The network entity key for the `IPv6` dictionary.
-- [let kSCEntNetL2TP: CFString](kscentnetl2tp-swift.var.md)
+- [let kSCEntNetL2TP: CFString](./kscentnetl2tp-swift.var.md)
   The network entity key for the `L2TP` dictionary.
-- [let kSCEntNetLink: CFString](kscentnetlink-swift.var.md)
+- [let kSCEntNetLink: CFString](./kscentnetlink-swift.var.md)
   The network entity key for the `Link` dictionary.
-- [let kSCEntNetModem: CFString](kscentnetmodem-swift.var.md)
+- [let kSCEntNetModem: CFString](./kscentnetmodem-swift.var.md)
   The network entity key for the `Modem` dictionary.
-- [let kSCEntNetPPP: CFString](kscentnetppp-swift.var.md)
+- [let kSCEntNetPPP: CFString](./kscentnetppp-swift.var.md)
   The network entity key for the `PPP` dictionary.
-- [let kSCEntNetPPPoE: CFString](kscentnetpppoe-swift.var.md)
+- [let kSCEntNetPPPoE: CFString](./kscentnetpppoe-swift.var.md)
   The network entity key for the `PPPoE` dictionary.
-- [let kSCEntNetPPTP: CFString](kscentnetpptp-swift.var.md)
+- [let kSCEntNetPPTP: CFString](./kscentnetpptp-swift.var.md)
   The network entity key for the `PPTP` dictionary.
 
 

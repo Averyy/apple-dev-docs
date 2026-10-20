@@ -1,7 +1,8 @@
 # bnns_graph_realloc_fn_t
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The workspace and output allocation function.
 
@@ -20,6 +21,10 @@ The workspace and output allocation function.
 typealias bnns_graph_realloc_fn_t = (UnsafeMutableRawPointer?, Int, UnsafeMutablePointer<UnsafeMutableRawPointer?>, Int, Int) -> Int32
 ```
 
+```c
+typedef int (*)(void *, unsigned long, void **, unsigned long, unsigned long) bnns_graph_realloc_fn_t;
+```
+
 #### Return Value
 
 `0` on success, nonzero on failure.
@@ -34,11 +39,12 @@ An optimized implementation should track sizes and avoid reallocating if the siz
 
 ## See Also
 
-- [func BNNSGraphContextSetWorkspaceAllocationCallback(bnns_graph_context_t, bnns_graph_realloc_fn_t?, bnns_graph_free_all_fn_t?, Int, UnsafeMutableRawPointer?) -> Int32](bnnsgraphcontextsetworkspaceallocationcallback(_:_:_:_:_:).md)
+### Specifying a context’s allocation callbacks
+- [func BNNSGraphContextSetWorkspaceAllocationCallback(bnns_graph_context_t, bnns_graph_realloc_fn_t?, bnns_graph_free_all_fn_t?, Int, UnsafeMutableRawPointer?) -> Int32](./bnnsgraphcontextsetworkspaceallocationcallback%28_,_,_,_,_%29.md)
   Sets the allocation and deallocation callbacks for internal workspace.
-- [func BNNSGraphContextSetOutputAllocationCallback(bnns_graph_context_t, bnns_graph_realloc_fn_t?, bnns_graph_free_all_fn_t?, Int, UnsafeMutableRawPointer?) -> Int32](bnnsgraphcontextsetoutputallocationcallback(_:_:_:_:_:).md)
+- [func BNNSGraphContextSetOutputAllocationCallback(bnns_graph_context_t, bnns_graph_realloc_fn_t?, bnns_graph_free_all_fn_t?, Int, UnsafeMutableRawPointer?) -> Int32](./bnnsgraphcontextsetoutputallocationcallback%28_,_,_,_,_%29.md)
   Sets the allocation and deallocation callbacks for function outputs.
-- [typealias bnns_graph_free_all_fn_t](bnns_graph_free_all_fn_t.md)
+- [typealias bnns_graph_free_all_fn_t](./bnns_graph_free_all_fn_t.md)
   The workspace and output deallocation function.
 
 

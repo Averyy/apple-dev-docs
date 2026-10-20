@@ -1,14 +1,15 @@
 # kBluetoothHCIVersionCoreSpecification3_0HS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIVersionCoreSpecification3_0HS = 0x05
 ```
 

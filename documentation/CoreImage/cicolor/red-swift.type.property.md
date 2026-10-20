@@ -1,7 +1,8 @@
 # red
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,0,0` and alpha value `1`.
 
@@ -19,25 +20,30 @@ Returns a singleton Core Image color instance in the sRGB color space with RGB v
 class var red: CIColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) CIColor * redColor;
+```
+
 ## See Also
 
-- [class var black: CIColor](cicolor/black.md)
+### Creating a CIColor Object with Preset Components
+- [class var black: CIColor](./black.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,0,0` and alpha value `1`.
-- [class var blue: CIColor](cicolor/blue-swift.type.property.md)
+- [class var blue: CIColor](./blue-swift.type.property.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,0,1` and alpha value `1`.
-- [class var clear: CIColor](cicolor/clear.md)
+- [class var clear: CIColor](./clear.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,0,0` and alpha value `0`.
-- [class var cyan: CIColor](cicolor/cyan.md)
+- [class var cyan: CIColor](./cyan.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,1,1` and alpha value `1`.
-- [class var gray: CIColor](cicolor/gray.md)
+- [class var gray: CIColor](./gray.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `0.5,0.5,0.5` and alpha value `1`.
-- [class var green: CIColor](cicolor/green-swift.type.property.md)
+- [class var green: CIColor](./green-swift.type.property.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `0,1,0` and alpha value `1`.
-- [class var magenta: CIColor](cicolor/magenta.md)
+- [class var magenta: CIColor](./magenta.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,0,1` and alpha value `1`.
-- [class var white: CIColor](cicolor/white.md)
+- [class var white: CIColor](./white.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,1,1` and alpha value `1`.
-- [class var yellow: CIColor](cicolor/yellow.md)
+- [class var yellow: CIColor](./yellow.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,1,0` and alpha value `1`.
 
 

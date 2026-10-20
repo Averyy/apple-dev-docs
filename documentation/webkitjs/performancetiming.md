@@ -1,7 +1,8 @@
 # PerformanceTiming
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,35 +10,35 @@
 
 ## Declaration
 
-```swift
+```
 interface PerformanceTiming
 ```
 
 ## Topics
 
 ### Instance Properties
-- [connectEnd](performancetiming/1632054-connectend.md)
-- [connectStart](performancetiming/1633238-connectstart.md)
-- [domComplete](performancetiming/1631223-domcomplete.md)
-- [domContentLoadedEventEnd](performancetiming/1631794-domcontentloadedeventend.md)
-- [domContentLoadedEventStart](performancetiming/1634405-domcontentloadedeventstart.md)
-- [domInteractive](performancetiming/1634272-dominteractive.md)
-- [domLoading](performancetiming/1631044-domloading.md)
-- [domainLookupEnd](performancetiming/1633000-domainlookupend.md)
-- [domainLookupStart](performancetiming/1630303-domainlookupstart.md)
-- [fetchStart](performancetiming/1634386-fetchstart.md)
-- [loadEventEnd](performancetiming/1629917-loadeventend.md)
-- [loadEventStart](performancetiming/1634005-loadeventstart.md)
-- [navigationStart](performancetiming/1631736-navigationstart.md)
-- [redirectEnd](performancetiming/1630687-redirectend.md)
-- [redirectStart](performancetiming/1632214-redirectstart.md)
-- [requestStart](performancetiming/1632354-requeststart.md)
-- [responseEnd](performancetiming/1634039-responseend.md)
-- [responseStart](performancetiming/1633268-responsestart.md)
-- [secureConnectionStart](performancetiming/1629608-secureconnectionstart.md)
-- [serializer](performancetiming/2871012-serializer.md)
-- [unloadEventEnd](performancetiming/1632410-unloadeventend.md)
-- [unloadEventStart](performancetiming/1632029-unloadeventstart.md)
+- [connectEnd](./performancetiming/api-1632054-connectend.md)
+- [connectStart](./performancetiming/api-1633238-connectstart.md)
+- [domComplete](./performancetiming/api-1631223-domcomplete.md)
+- [domContentLoadedEventEnd](./performancetiming/api-1631794-domcontentloadedeventend.md)
+- [domContentLoadedEventStart](./performancetiming/api-1634405-domcontentloadedeventstart.md)
+- [domInteractive](./performancetiming/api-1634272-dominteractive.md)
+- [domLoading](./performancetiming/api-1631044-domloading.md)
+- [domainLookupEnd](./performancetiming/api-1633000-domainlookupend.md)
+- [domainLookupStart](./performancetiming/api-1630303-domainlookupstart.md)
+- [fetchStart](./performancetiming/api-1634386-fetchstart.md)
+- [loadEventEnd](./performancetiming/api-1629917-loadeventend.md)
+- [loadEventStart](./performancetiming/api-1634005-loadeventstart.md)
+- [navigationStart](./performancetiming/api-1631736-navigationstart.md)
+- [redirectEnd](./performancetiming/api-1630687-redirectend.md)
+- [redirectStart](./performancetiming/api-1632214-redirectstart.md)
+- [requestStart](./performancetiming/api-1632354-requeststart.md)
+- [responseEnd](./performancetiming/api-1634039-responseend.md)
+- [responseStart](./performancetiming/api-1633268-responsestart.md)
+- [secureConnectionStart](./performancetiming/api-1629608-secureconnectionstart.md)
+- [serializer](./performancetiming/api-2871012-serializer.md)
+- [unloadEventEnd](./performancetiming/api-1632410-unloadeventend.md)
+- [unloadEventStart](./performancetiming/api-1632029-unloadeventstart.md)
 
 
 ---

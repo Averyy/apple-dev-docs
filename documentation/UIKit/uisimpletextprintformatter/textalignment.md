@@ -1,7 +1,8 @@
 # textAlignment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of the printed text.
 
@@ -17,15 +18,20 @@ The alignment of the printed text.
 var textAlignment: NSTextAlignment { get set }
 ```
 
+```objc
+@property (nonatomic) NSTextAlignment textAlignment;
+```
+
 #### Discussion
 
-The default text alignment is [`UITextAlignmentLeft`](uitextalignment/uitextalignmentleft.md).
+The default text alignment is [`UITextAlignmentLeft`](../uitextalignment/uitextalignmentleft.md).
 
 ## See Also
 
-- [var font: UIFont?](uisimpletextprintformatter/font.md)
+### Text attributes for printed content
+- [var font: UIFont?](./font.md)
   The font of the printed text.
-- [var color: UIColor?](uisimpletextprintformatter/color.md)
+- [var color: UIColor?](./color.md)
   The color of the printed text.
 
 

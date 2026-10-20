@@ -1,26 +1,27 @@
 # LowLatencyUserBufferInfo
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 typedef struct LowLatencyUserBufferInfo LowLatencyUserBufferInfo;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [bufferAddress](lowlatencyuserbufferinfo/1546487-bufferaddress.md)
-- [bufferSize](lowlatencyuserbufferinfo/1546554-buffersize.md)
-- [bufferType](lowlatencyuserbufferinfo/1546298-buffertype.md)
-- [cookie](lowlatencyuserbufferinfo/1546403-cookie.md)
-- [isPrepared](lowlatencyuserbufferinfo/1545964-isprepared.md)
-- [nextBuffer](lowlatencyuserbufferinfo/1546460-nextbuffer.md)
+- [bufferAddress](./lowlatencyuserbufferinfo/api-1546487-bufferaddress.md)
+- [bufferSize](./lowlatencyuserbufferinfo/api-1546554-buffersize.md)
+- [bufferType](./lowlatencyuserbufferinfo/api-1546298-buffertype.md)
+- [cookie](./lowlatencyuserbufferinfo/api-1546403-cookie.md)
+- [isPrepared](./lowlatencyuserbufferinfo/api-1545964-isprepared.md)
+- [nextBuffer](./lowlatencyuserbufferinfo/api-1546460-nextbuffer.md)
 
 
 ---

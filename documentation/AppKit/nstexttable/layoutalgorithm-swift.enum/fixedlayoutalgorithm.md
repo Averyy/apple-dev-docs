@@ -1,12 +1,13 @@
 # fixedLayoutAlgorithm
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies fixed layout algorithm
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0 (renamed: NSTextTable.LayoutAlgorithm.fixed)
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Specifies fixed layout algorithm
 static var fixedLayoutAlgorithm: NSTextTable.LayoutAlgorithm { get }
 ```
 
+```c
+NSTextTableFixedLayoutAlgorithm
+```
+
 ## See Also
 
-- [static var automaticLayoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/automaticlayoutalgorithm.md)
+### Constants
+- [static var automaticLayoutAlgorithm: NSTextTable.LayoutAlgorithm](./automaticlayoutalgorithm.md)
   Specifies automatic layout algorithm
 
 

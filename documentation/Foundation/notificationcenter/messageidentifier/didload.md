@@ -1,7 +1,8 @@
 # didLoad
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a bundle dynamically loading a class.
 
@@ -20,9 +21,11 @@ An identifier for a message about a bundle dynamically loading a class.
 static var didLoad: NotificationCenter.BaseMessageIdentifier<Bundle.DidLoadMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Bundle.DidLoadMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Bundle.DidLoadMessage`](bundle/didloadmessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Bundle.DidLoadMessage`](../../bundle/didloadmessage.md).
 
 
 ---

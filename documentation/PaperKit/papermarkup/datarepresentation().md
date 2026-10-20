@@ -1,7 +1,8 @@
 # dataRepresentation()
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generate a serialized data representation of the data model.
 

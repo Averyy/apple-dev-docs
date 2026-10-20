@@ -1,7 +1,8 @@
 # HKWorkoutEventType
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent events occurring during a workout.
 
@@ -19,37 +20,41 @@ Constants that represent events occurring during a workout.
 enum HKWorkoutEventType
 ```
 
+```c
+enum HKWorkoutEventType : NSInteger;
+```
+
 ## Topics
 
 ### Events
-- [HKWorkoutEventType.pause](hkworkouteventtype/pause.md)
+- [HKWorkoutEventType.pause](./hkworkouteventtype/pause.md)
   A constant indicating that the workout has paused.
-- [HKWorkoutEventType.resume](hkworkouteventtype/resume.md)
+- [HKWorkoutEventType.resume](./hkworkouteventtype/resume.md)
   A constant indicating that the workout has resumed.
-- [HKWorkoutEventType.motionPaused](hkworkouteventtype/motionpaused.md)
+- [HKWorkoutEventType.motionPaused](./hkworkouteventtype/motionpaused.md)
   A constant indicating that the system has automatically paused a workout session.
-- [HKWorkoutEventType.motionResumed](hkworkouteventtype/motionresumed.md)
+- [HKWorkoutEventType.motionResumed](./hkworkouteventtype/motionresumed.md)
   A constant indicating that the system has automatically resumed a workout session.
-- [HKWorkoutEventType.pauseOrResumeRequest](hkworkouteventtype/pauseorresumerequest.md)
+- [HKWorkoutEventType.pauseOrResumeRequest](./hkworkouteventtype/pauseorresumerequest.md)
   A constant indicating that the user has requested a pause or resume.
-- [HKWorkoutEventType.lap](hkworkouteventtype/lap.md)
+- [HKWorkoutEventType.lap](./hkworkouteventtype/lap.md)
   A constant indicating a lap.
-- [HKWorkoutEventType.segment](hkworkouteventtype/segment.md)
+- [HKWorkoutEventType.segment](./hkworkouteventtype/segment.md)
   A constant indicating a period of time of interest during a workout.
-- [HKWorkoutEventType.marker](hkworkouteventtype/marker.md)
+- [HKWorkoutEventType.marker](./hkworkouteventtype/marker.md)
   A constant indicating a point of interest during a workout session.
 ### Initializers
-- [init?(rawValue: Int)](hkworkouteventtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkworkouteventtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

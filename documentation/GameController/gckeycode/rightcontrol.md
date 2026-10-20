@@ -1,7 +1,8 @@
 # rightControl
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The keyboard code for the Control key on the right side of the keyboard.
 
@@ -19,21 +20,26 @@ The keyboard code for the Control key on the right side of the keyboard.
 static let rightControl: GCKeyCode
 ```
 
+```c
+extern const GCKeyCode GCKeyCodeRightControl;
+```
+
 ## See Also
 
-- [static let leftControl: GCKeyCode](gckeycode/leftcontrol.md)
+### Left- and Right-Side Keys
+- [static let leftControl: GCKeyCode](./leftcontrol.md)
   The keyboard code for the Control key on the left side of the keyboard.
-- [static let leftShift: GCKeyCode](gckeycode/leftshift.md)
+- [static let leftShift: GCKeyCode](./leftshift.md)
   The keyboard code for the Shift key on the left side of the keyboard.
-- [static let leftAlt: GCKeyCode](gckeycode/leftalt.md)
+- [static let leftAlt: GCKeyCode](./leftalt.md)
   The keyboard code for the Option or Alt key on the left side of the keyboard.
-- [static let leftGUI: GCKeyCode](gckeycode/leftgui.md)
+- [static let leftGUI: GCKeyCode](./leftgui.md)
   The keyboard code for the Command key on the left side of the keyboard.
-- [static let rightShift: GCKeyCode](gckeycode/rightshift.md)
+- [static let rightShift: GCKeyCode](./rightshift.md)
   The keyboard code for the Shift key on the right side of the keyboard.
-- [static let rightAlt: GCKeyCode](gckeycode/rightalt.md)
+- [static let rightAlt: GCKeyCode](./rightalt.md)
   The keyboard code for the Option or Alt key on the right side of the keyboard.
-- [static let rightGUI: GCKeyCode](gckeycode/rightgui.md)
+- [static let rightGUI: GCKeyCode](./rightgui.md)
   The keyboard code for the Command key on the right side of the keyboard.
 
 

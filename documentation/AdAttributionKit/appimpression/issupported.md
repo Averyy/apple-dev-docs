@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the framework supports app impressions on a person’s device.
 

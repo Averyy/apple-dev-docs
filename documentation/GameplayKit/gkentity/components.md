@@ -1,7 +1,8 @@
 # components
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity’s list of components.
 
@@ -19,9 +20,14 @@ The entity’s list of components.
 var components: [GKComponent] { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) NSArray<GKComponent *> * components;
+```
+
 ## See Also
 
-- [func addComponent(GKComponent)](gkentity/addcomponent(_:).md)
+### Managing an Entity’s List of Components
+- [func addComponent(GKComponent)](./addcomponent%28_%29.md)
   Adds a component to the entity.
 
 

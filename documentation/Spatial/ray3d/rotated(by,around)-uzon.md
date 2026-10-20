@@ -1,7 +1,8 @@
 # rotated(by:around:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a ray that’s rotated by the specified quaternion around a specified pivot.
 
@@ -11,7 +12,7 @@ Returns a ray that’s rotated by the specified quaternion around a specified pi
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,29 +28,30 @@ func rotated(by quaternion: simd_quatd, around pivot: Point3D) -> Ray3D
 
 ## See Also
 
-- [func apply(Pose3D)](ray3d/apply(_:).md)
+### Transforming a 3D ray structure
+- [func apply(Pose3D)](./apply%28_%29.md)
   Applies the specified pose to the ray.
-- [func applying(AffineTransform3D) -> Ray3D](ray3d/applying(_:)-337n0.md)
+- [func applying(AffineTransform3D) -> Ray3D](./applying%28_%29-337n0.md)
   Returns a ray that results from applying the specified affine transform.
-- [func applying(ProjectiveTransform3D) -> Ray3D](ray3d/applying(_:)-2aom9.md)
+- [func applying(ProjectiveTransform3D) -> Ray3D](./applying%28_%29-2aom9.md)
   Returns a ray that results from applying the specified projective transform.
-- [func applying(Pose3D) -> Ray3D](ray3d/applying(_:)-34rqi.md)
+- [func applying(Pose3D) -> Ray3D](./applying%28_%29-34rqi.md)
   Returns a ray that results from applying the specified pose.
-- [func unapplying(AffineTransform3D) -> Ray3D](ray3d/unapplying(_:)-7bc37.md)
+- [func unapplying(AffineTransform3D) -> Ray3D](./unapplying%28_%29-7bc37.md)
   Returns a ray that results from unapplying the specified affine transform.
-- [func unapplying(ProjectiveTransform3D) -> Ray3D](ray3d/unapplying(_:)-6tj2w.md)
+- [func unapplying(ProjectiveTransform3D) -> Ray3D](./unapplying%28_%29-6tj2w.md)
   Returns a ray that results from unapplying the specified projective transform.
-- [func unapplying(Pose3D) -> Ray3D](ray3d/unapplying(_:)-928o9.md)
+- [func unapplying(Pose3D) -> Ray3D](./unapplying%28_%29-928o9.md)
   Unapplies the specified pose to the ray.
-- [func rotated(by: Rotation3D) -> Ray3D](ray3d/rotated(by:)-qxp0.md)
+- [func rotated(by: Rotation3D) -> Ray3D](./rotated%28by%29-qxp0.md)
   Returns a ray that results from applying the specified rotation.
-- [func rotated(by: simd_quatd) -> Ray3D](ray3d/rotated(by:)-81glv.md)
+- [func rotated(by: simd_quatd) -> Ray3D](./rotated%28by%29-81glv.md)
   Returns a ray that results from rotating with the specified quaternion.
-- [func rotated(by: Rotation3D, around: Point3D) -> Ray3D](ray3d/rotated(by:around:)-7h43.md)
+- [func rotated(by: Rotation3D, around: Point3D) -> Ray3D](./rotated%28by,around%29-7h43.md)
   Returns a ray that’s rotated by the specified rotation around a specified pivot.
-- [func applying(ScaledPose3D) -> Ray3D](ray3d/applying(_:)-6hfqw.md)
+- [func applying(ScaledPose3D) -> Ray3D](./applying%28_%29-6hfqw.md)
   Returns a ray that’s transformed by the specified scaled pose.
-- [func unapplying(ScaledPose3D) -> Ray3D](ray3d/unapplying(_:)-9x164.md)
+- [func unapplying(ScaledPose3D) -> Ray3D](./unapplying%28_%29-9x164.md)
   Returns a ray that’s transformed by the inverse of the specified scaled pose.
 
 

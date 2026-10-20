@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the model and optimizer to an encoder.
 
@@ -18,6 +19,8 @@ Encodes the model and optimizer to an encoder.
 ```swift
 func encodeWithOptimizer(_ transformer: TimeSeriesClassifier<Scalar, Label>.Transformer, to encoder: inout any EstimatorEncoder) throws
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
 
 
 ---

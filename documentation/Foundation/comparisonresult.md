@@ -1,7 +1,8 @@
 # ComparisonResult
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate sort order.
 
@@ -21,6 +22,10 @@ Constants that indicate sort order.
 enum ComparisonResult
 ```
 
+```c
+enum NSComparisonResult : NSInteger;
+```
+
 #### Overview
 
 These constants are used to indicate how items in a request are ordered, from the first one given in a method invocation or function call to the last (that is, left to right in code).
@@ -28,42 +33,43 @@ These constants are used to indicate how items in a request are ordered, from th
 ## Topics
 
 ### Creating a comparison result
-- [init?(rawValue: Int)](comparisonresult/init(rawvalue:).md)
+- [init?(rawValue: Int)](./comparisonresult/init%28rawvalue%29.md)
 ### Constants
-- [ComparisonResult.orderedAscending](comparisonresult/orderedascending.md)
+- [ComparisonResult.orderedAscending](./comparisonresult/orderedascending.md)
   The left operand is smaller than the right operand.
-- [ComparisonResult.orderedSame](comparisonresult/orderedsame.md)
+- [ComparisonResult.orderedSame](./comparisonresult/orderedsame.md)
   The two operands are equal.
-- [ComparisonResult.orderedDescending](comparisonresult/ordereddescending.md)
+- [ComparisonResult.orderedDescending](./comparisonresult/ordereddescending.md)
   The left operand is greater than the right operand.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSSortDescriptor](nssortdescriptor.md)
+### Sorting
+- [class NSSortDescriptor](./nssortdescriptor.md)
   An immutable description of how to order a collection of objects according to a property common to all the objects.
-- [struct SortDescriptor](sortdescriptor.md)
+- [struct SortDescriptor](./sortdescriptor.md)
   A serializable description of how to sort numerics and strings.
-- [protocol SortComparator](sortcomparator.md)
+- [protocol SortComparator](./sortcomparator.md)
   A comparison algorithm for a specified type.
-- [struct ComparableComparator](comparablecomparator.md)
+- [struct ComparableComparator](./comparablecomparator.md)
   A comparator that compares types according to their conformance to the comparable protocol.
-- [struct KeyPathComparator](keypathcomparator.md)
+- [struct KeyPathComparator](./keypathcomparator.md)
   A comparator that uses another sort comparator to provide the comparison of values at a key path.
-- [enum SortOrder](sortorder.md)
+- [enum SortOrder](./sortorder.md)
   The orderings that you can perform sorts with.
 
 

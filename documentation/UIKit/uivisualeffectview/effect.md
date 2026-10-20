@@ -1,7 +1,8 @@
 # effect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visual effect provided by the view.
 
@@ -9,7 +10,7 @@ The visual effect provided by the view.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ The visual effect provided by the view.
 var effect: UIVisualEffect? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIVisualEffect * effect;
+```
+
 #### Discussion
 
-The effect is either a [`UIBlurEffect`](uiblureffect.md) or a [`UIVibrancyEffect`](uivibrancyeffect.md).
+The effect is either a [`UIBlurEffect`](../uiblureffect.md) or a [`UIVibrancyEffect`](../uivibrancyeffect.md).
 
 ## See Also
 
-- [var contentView: UIView](uivisualeffectview/contentview.md)
+### Retrieving view information
+- [var contentView: UIView](./contentview.md)
   A view object that can have a visual effect view added to it.
 
 

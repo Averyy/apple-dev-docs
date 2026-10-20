@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a session property with the specified key path.
 

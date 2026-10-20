@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kAndConnections](1645143-anonymous/kandconnections.md)
-- [kOrConnections](1645143-anonymous/korconnections.md)
+- [kAndConnections](./api-1645143-anonymous/kandconnections.md)
+- [kOrConnections](./api-1645143-anonymous/korconnections.md)
 
 
 ---

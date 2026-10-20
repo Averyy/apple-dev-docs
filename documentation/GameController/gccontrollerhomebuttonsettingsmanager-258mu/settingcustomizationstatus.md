@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingsManager.SettingCustomizationStatus
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 27.0+

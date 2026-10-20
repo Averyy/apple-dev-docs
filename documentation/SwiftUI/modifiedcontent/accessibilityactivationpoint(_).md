@@ -1,7 +1,8 @@
 # accessibilityActivationPoint(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The activation point for an element is the location assistive technologies use to initiate gestures.
 
@@ -19,6 +20,15 @@ The activation point for an element is the location assistive technologies use t
 ```swift
 nonisolated
 func accessibilityActivationPoint(_ activationPoint: CGPoint) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityActivationPoint(_ activationPoint: UnitPoint) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetDoorState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the state of a door.
 
@@ -19,29 +20,34 @@ Values that indicate the state of a door.
 enum HMCharacteristicValueTargetDoorState
 ```
 
+```c
+enum HMCharacteristicValueTargetDoorState : NSInteger;
+```
+
 ## Topics
 
 ### Door States
-- [HMCharacteristicValueTargetDoorState.closed](hmcharacteristicvaluetargetdoorstate/closed.md)
+- [HMCharacteristicValueTargetDoorState.closed](./hmcharacteristicvaluetargetdoorstate/closed.md)
   A closed door.
-- [HMCharacteristicValueTargetDoorState.open](hmcharacteristicvaluetargetdoorstate/open.md)
+- [HMCharacteristicValueTargetDoorState.open](./hmcharacteristicvaluetargetdoorstate/open.md)
   An open door.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetargetdoorstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetargetdoorstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HMCharacteristicValueDoorState](hmcharacteristicvaluedoorstate.md)
+### Values
+- [enum HMCharacteristicValueDoorState](./hmcharacteristicvaluedoorstate.md)
   Possible values for the state of a door.
 
 

@@ -1,7 +1,8 @@
 # init(device:kernelWidth:kernelHeight:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a spatial normalization kernel.
 
@@ -19,9 +20,13 @@ Initializes a spatial normalization kernel.
 init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight;
+```
+
 #### Return Value
 
-A valid [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object or `nil`, if failure.
+A valid [`MPSCNNSpatialNormalization`](../mpscnnspatialnormalization.md) object or `nil`, if failure.
 
 #### Discussion
 
@@ -35,7 +40,8 @@ A valid [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object or 
 
 ## See Also
 
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnspatialnormalization/init(coder:device:).md)
+### Initializers
+- [init?(coder: NSCoder, device: any MTLDevice)](./init%28coder,device%29.md)
   Initializes a spatial normalization kernel.
 
 

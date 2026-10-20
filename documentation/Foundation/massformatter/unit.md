@@ -1,7 +1,8 @@
 # MassFormatter.Unit
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The units supported by the `NSMassFormatter` class.
 
@@ -20,31 +21,35 @@ The units supported by the `NSMassFormatter` class.
 enum Unit
 ```
 
+```c
+enum NSMassFormatterUnit : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MassFormatter.Unit.gram](massformatter/unit/gram.md)
+- [MassFormatter.Unit.gram](./unit/gram.md)
   The gram unit.
-- [MassFormatter.Unit.kilogram](massformatter/unit/kilogram.md)
+- [MassFormatter.Unit.kilogram](./unit/kilogram.md)
   The kilogram unit.
-- [MassFormatter.Unit.ounce](massformatter/unit/ounce.md)
+- [MassFormatter.Unit.ounce](./unit/ounce.md)
   The ounce unit.
-- [MassFormatter.Unit.pound](massformatter/unit/pound.md)
+- [MassFormatter.Unit.pound](./unit/pound.md)
   The pound unit.
-- [MassFormatter.Unit.stone](massformatter/unit/stone.md)
+- [MassFormatter.Unit.stone](./unit/stone.md)
   The stone unit.
 ### Initializers
-- [init?(rawValue: Int)](massformatter/unit/init(rawvalue:).md)
+- [init?(rawValue: Int)](./unit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

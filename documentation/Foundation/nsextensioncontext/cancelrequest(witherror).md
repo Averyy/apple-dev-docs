@@ -1,7 +1,8 @@
 # cancelRequest(withError:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the host app to cancel the app extension request, with a supplied error.
 
@@ -20,9 +21,13 @@ Tells the host app to cancel the app extension request, with a supplied error.
 func cancelRequest(withError error: any Error)
 ```
 
+```objc
+- (void) cancelRequestWithError:(NSError *) error;
+```
+
 #### Discussion
 
-On return, the `userInfo` dictionary of the [`NSError`](nserror.md) object contains a key named [`NSExtensionItemsAndErrorsKey`](nsextensionitemsanderrorskey.md) which has as its value a dictionary of [`NSExtensionItem`](nsextensionitem.md) objects and associated [`NSError`](nserror.md) instances.
+On return, the `userInfo` dictionary of the [`NSError`](../nserror.md) object contains a key named [`NSExtensionItemsAndErrorsKey`](../nsextensionitemsanderrorskey.md) which has as its value a dictionary of [`NSExtensionItem`](../nsextensionitem.md) objects and associated [`NSError`](../nserror.md) instances.
 
 ## Parameters
 
@@ -30,10 +35,12 @@ On return, the `userInfo` dictionary of the [`NSError`](nserror.md) object conta
 
 ## See Also
 
-- [App Extension Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214)
-- [func completeRequest(returningItems: [Any]?, completionHandler: ((Bool) -> Void)?)](nsextensioncontext/completerequest(returningitems:completionhandler:).md)
+### Related Documentation
+- [App Extension Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214)
+### Handling requests
+- [func completeRequest(returningItems: [Any]?, completionHandler: ((Bool) -> Void)?)](./completerequest%28returningitems,completionhandler%29.md)
   Tells the host app to complete the app extension request with an array of result items.
-- [let NSExtensionItemsAndErrorsKey: String](nsextensionitemsanderrorskey.md)
+- [let NSExtensionItemsAndErrorsKey: String](../nsextensionitemsanderrorskey.md)
   The extension items and errors key.
 
 

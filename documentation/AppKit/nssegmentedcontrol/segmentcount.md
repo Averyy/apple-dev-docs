@@ -1,17 +1,22 @@
 # segmentCount
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of segments in the control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var segmentCount: Int { get set }
+```
+
+```objc
+@property NSInteger segmentCount;
 ```
 
 

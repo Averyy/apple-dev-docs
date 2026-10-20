@@ -2,9 +2,10 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
-An array of [`VNFaceObservation`](vnfaceobservation.md) objects to process as part of the request.
+An array of [`VNFaceObservation`](../vnfaceobservation.md) objects to process as part of the request.
 
 **Availability**:
 - iOS 11.0+
@@ -18,6 +19,10 @@ An array of [`VNFaceObservation`](vnfaceobservation.md) objects to process as pa
 
 ```swift
 var inputFaceObservations: [VNFaceObservation]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<VNFaceObservation *> * inputFaceObservations;
 ```
 
 

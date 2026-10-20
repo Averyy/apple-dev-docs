@@ -1,7 +1,8 @@
 # implementsPreferredStartTimePattern
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether this clock implements preferred start time patterns.
 

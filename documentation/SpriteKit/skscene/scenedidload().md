@@ -1,7 +1,8 @@
 # sceneDidLoad()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells you when the scene is presented.
 
@@ -20,9 +21,13 @@ Tells you when the scene is presented.
 func sceneDidLoad()
 ```
 
+```objc
+- (void) sceneDidLoad;
+```
+
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
+- [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ This method is intended to be overridden in a subclass. It is the preferred loca
 
 ## See Also
 
-- [func didChangeSize(CGSize)](skscene/didchangesize(_:).md)
+### Responding to Loading and Resizing Events
+- [func didChangeSize(CGSize)](./didchangesize%28_%29.md)
   Tells you when the scene’s size has changed.
-- [func willMove(from: SKView)](skscene/willmove(from:).md)
+- [func willMove(from: SKView)](./willmove%28from%29.md)
   Tells you when the scene is about to be removed from a view.
-- [func didMove(to: SKView)](skscene/didmove(to:).md)
+- [func didMove(to: SKView)](./didmove%28to%29.md)
   Tells you when the scene is presented by a view.
 
 

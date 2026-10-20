@@ -1,7 +1,8 @@
 # IOUSBHostCIPortEventMessageData0PortNumberPhase
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 var IOUSBHostCIPortEventMessageData0PortNumberPhase: Int { get }
 ```
 
+```c
+IOUSBHostCIPortEventMessageData0PortNumberPhase
+```
+
 ## See Also
 
-- [var IOUSBHostCIPortEventMessageData0PortNumber: Int](iousbhostciporteventmessagedata0portnumber.md)
+### Constants
+- [var IOUSBHostCIPortEventMessageData0PortNumber: Int](./iousbhostciporteventmessagedata0portnumber.md)
 
 
 ---

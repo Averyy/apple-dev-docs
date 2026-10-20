@@ -1,7 +1,8 @@
 # optionsPageURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the extension’s options page, if the extension has one.
 
@@ -18,6 +19,10 @@ The URL of the extension’s options page, if the extension has one.
 var optionsPageURL: URL? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSURL * optionsPageURL;
+```
+
 #### Discussion
 
 Provides the URL for the dedicated options page, if provided by the extension; otherwise `nil` if no page is defined.
@@ -28,7 +33,8 @@ The app should provide access to this page through a user interface element.
 
 ## See Also
 
-- [var webViewConfiguration: WKWebViewConfiguration?](wkwebextensioncontext/webviewconfiguration.md)
+### Related Documentation
+- [var webViewConfiguration: WKWebViewConfiguration?](./webviewconfiguration.md)
   The web view configuration to use for web views that load pages from this extension.
 
 

@@ -1,27 +1,28 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeFrom<Self>](reversedcollection/index/'...(_:)-7td6l.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-7td6l.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](reversedcollection/index/'...(_:)-9yax3.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-9yax3.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](reversedcollection/index/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](reversedcollection/index/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](reversedcollection/index/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func < (ReversedCollection<Base>.Index, ReversedCollection<Base>.Index) -> Bool](reversedcollection/index/_(_:_:).md)
+- [static func < (ReversedCollection<Base>.Index, ReversedCollection<Base>.Index) -> Bool](./op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (borrowing Self, borrowing Self) -> Bool](reversedcollection/index/_(_:_:)-40y9l.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-40y9l.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](reversedcollection/index/_=(_:_:)-3lx1x.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-3lx1x.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](reversedcollection/index/_=(_:_:)-9ksg6.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-9ksg6.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

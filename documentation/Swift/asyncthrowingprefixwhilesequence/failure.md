@@ -1,7 +1,8 @@
 # AsyncThrowingPrefixWhileSequence.Failure
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of error produced by this asynchronous sequence.
 
@@ -19,6 +20,8 @@ The type of error produced by this asynchronous sequence.
 ```swift
 typealias Failure = any Error
 ```
+
+Available when `Base` conforms to `AsyncSequence`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # MKGeoJSONFeature
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The decoded representation of a GeoJSON feature.
 
@@ -20,42 +21,47 @@ The decoded representation of a GeoJSON feature.
 class MKGeoJSONFeature
 ```
 
+```objc
+@interface MKGeoJSONFeature : NSObject
+```
+
 #### Overview
 
-A feature is an object with associated geometry and optional properties in JSON that you define. MapKit exposes these optional properties, but treats them as opaque. [`MKGeoJSONFeature`](mkgeojsonfeature.md) is one of the classes that the GeoJSON decoder ([`MKGeoJSONDecoder`](mkgeojsondecoder.md)) can return.
+A feature is an object with associated geometry and optional properties in JSON that you define. MapKit exposes these optional properties, but treats them as opaque. [`MKGeoJSONFeature`](./mkgeojsonfeature.md) is one of the classes that the GeoJSON decoder ([`MKGeoJSONDecoder`](./mkgeojsondecoder.md)) can return.
 
-See the GeoJSON standards specification [`RFC 7946`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7946#section-3.2) for more information about `Feature` objects.
+See the GeoJSON standards specification [RFC 7946](https://tools.ietf.org/html/rfc7946#section-3.2) for more information about `Feature` objects.
 
 ## Topics
 
 ### Feature properties
-- [var geometry: [any MKShape & MKGeoJSONObject]](mkgeojsonfeature/geometry.md)
+- [var geometry: [any MKShape & MKGeoJSONObject]](./mkgeojsonfeature/geometry.md)
   The shape or shapes associated with the GeoJSON feature.
-- [var identifier: String?](mkgeojsonfeature/identifier.md)
+- [var identifier: String?](./mkgeojsonfeature/identifier.md)
   An optional identifier the class returns as a string.
-- [var properties: Data?](mkgeojsonfeature/properties.md)
+- [var properties: Data?](./mkgeojsonfeature/properties.md)
   Optional serialized JSON data that corresponds to the properties key.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MKGeoJSONObject](mkgeojsonobject.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MKGeoJSONObject](./mkgeojsonobject.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Displaying an Indoor Map](displaying-an-indoor-map.md)
+### Geographical features
+- [Displaying an Indoor Map](./displaying-an-indoor-map.md)
   Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest.
-- [class MKGeoJSONDecoder](mkgeojsondecoder.md)
+- [class MKGeoJSONDecoder](./mkgeojsondecoder.md)
   An object that decodes GeoJSON objects into MapKit types.
-- [protocol MKGeoJSONObject](mkgeojsonobject.md)
+- [protocol MKGeoJSONObject](./mkgeojsonobject.md)
   Objects that the GeoJSON decoder can return.
 
 

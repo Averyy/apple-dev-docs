@@ -1,7 +1,8 @@
 # typeFalse
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 `FALSE` Boolean value.
 

@@ -1,7 +1,8 @@
 # MPSkipIntervalCommand
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the skip intervals for the player.
 
@@ -20,6 +21,10 @@ An object that defines the skip intervals for the player.
 class MPSkipIntervalCommand
 ```
 
+```objc
+@interface MPSkipIntervalCommand : MPRemoteCommand
+```
+
 #### Overview
 
 You use a skip interval to move the playback of a media item, forward or backward, the indicated number of seconds. For example, a forward skip interval of 30 seconds at 2 minutes and 30 seconds into a song would immediately jump to 3 minutes into the song and continue playing. The skipped content isn’t played.
@@ -27,30 +32,31 @@ You use a skip interval to move the playback of a media item, forward or backwar
 ## Topics
 
 ### Retrieving skip intervals
-- [var preferredIntervals: [NSNumber]](mpskipintervalcommand/preferredintervals.md)
+- [var preferredIntervals: [NSNumber]](./mpskipintervalcommand/preferredintervals.md)
   The available skip intervals, in seconds, for a media item.
 
 ## Relationships
 
 ### Inherits From
-- [MPRemoteCommand](mpremotecommand.md)
+- [MPRemoteCommand](./mpremotecommand.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPChangePlaybackPositionCommand](mpchangeplaybackpositioncommand.md)
+### Responding to track navigation events
+- [class MPChangePlaybackPositionCommand](./mpchangeplaybackpositioncommand.md)
   An object that responds to requests to change the current playback position of the playing item.
-- [class MPChangePlaybackPositionCommandEvent](mpchangeplaybackpositioncommandevent.md)
+- [class MPChangePlaybackPositionCommandEvent](./mpchangeplaybackpositioncommandevent.md)
   An event requesting a change in the playback position.
-- [class MPSeekCommandEvent](mpseekcommandevent.md)
+- [class MPSeekCommandEvent](./mpseekcommandevent.md)
   An event requesting that the player seek to a new position.
-- [class MPSkipIntervalCommandEvent](mpskipintervalcommandevent.md)
+- [class MPSkipIntervalCommandEvent](./mpskipintervalcommandevent.md)
   An event requesting a change in the current skip interval.
 
 

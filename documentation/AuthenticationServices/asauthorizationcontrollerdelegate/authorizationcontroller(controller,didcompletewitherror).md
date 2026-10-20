@@ -1,7 +1,8 @@
 # authorizationController(controller:didCompleteWithError:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when authorization fails, and provides an error explaining why.
 
@@ -20,21 +21,26 @@ Tells the delegate when authorization fails, and provides an error explaining wh
 optional func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: any Error)
 ```
 
+```objc
+- (void) authorizationController:(ASAuthorizationController *) controller didCompleteWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Supporting passkeys](supporting-passkeys.md)
-- [Supporting Security Key Authentication Using Physical Keys](supporting-security-key-authentication-using-physical-keys.md)
+- [Supporting passkeys](../supporting-passkeys.md)
+- [Supporting Security Key Authentication Using Physical Keys](../supporting-security-key-authentication-using-physical-keys.md)
 
 ## Parameters
 
 - `controller`: The controller that performs the authorization attempt.
-- `error`: An error that explains the failure using one of the codes in [`ASAuthorizationError.Code`](asauthorizationerror-swift.struct/code.md).
+- `error`: An error that explains the failure using one of the codes in [`ASAuthorizationError.Code`](../asauthorizationerror-swift.struct/code.md).
 
 ## See Also
 
-- [let ASAuthorizationErrorDomain: String](asauthorizationerrordomain.md)
+### Handling Authorization Errors
+- [let ASAuthorizationErrorDomain: String](../asauthorizationerrordomain.md)
   The domain of authorization errors.
-- [struct ASAuthorizationError](asauthorizationerror-swift.struct.md)
+- [struct ASAuthorizationError](../asauthorizationerror-swift.struct.md)
   Errors that can occur during authorization.
 
 

@@ -1,7 +1,8 @@
 # scrollPositionUpdatePreservesVelocity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a programmatic update to the scroll position of a scroll view preserves the current velocity of any active scroll of the scroll view.
 

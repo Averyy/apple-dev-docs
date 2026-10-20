@@ -1,7 +1,8 @@
 # MPSCNNLossNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a loss kernel.
 
@@ -19,30 +20,35 @@ A representation of a loss kernel.
 class MPSCNNLossNode
 ```
 
+```objc
+@interface MPSCNNLossNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, lossDescriptor: MPSCNNLossDescriptor)](mpscnnlossnode/init(source:lossdescriptor:).md)
+- [init(source: MPSNNImageNode, lossDescriptor: MPSCNNLossDescriptor)](./mpscnnlossnode/init%28source,lossdescriptor%29.md)
 ### Instance Properties
-- [var inputLabels: MPSNNLabelsNode](mpscnnlossnode/inputlabels.md)
+- [var inputLabels: MPSNNLabelsNode](./mpscnnlossnode/inputlabels.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNYOLOLossNode](mpscnnyololossnode.md)
+### Loss Layer Nodes
+- [class MPSCNNYOLOLossNode](./mpscnnyololossnode.md)
   A representation of a YOLO loss kernel.
-- [class MPSNNLabelsNode](mpsnnlabelsnode.md)
+- [class MPSNNLabelsNode](./mpsnnlabelsnode.md)
   A placeholder node denoting the per-element weight buffer used by loss and gradient loss kernels.
 
 

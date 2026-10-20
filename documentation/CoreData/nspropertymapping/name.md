@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the property in the destination entity for the property mapping.
 
@@ -10,7 +11,7 @@ The name of the property in the destination entity for the property mapping.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,12 +21,18 @@ The name of the property in the destination entity for the property mapping.
 var name: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * name;
+```
+
 ## See Also
 
-- [Core Data Model Versioning and Data Migration Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399)
-- [var valueExpression: NSExpression?](nspropertymapping/valueexpression.md)
+### Related Documentation
+- [Core Data Model Versioning and Data Migration Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399)
+### Managing Mapping Attributes
+- [var valueExpression: NSExpression?](./valueexpression.md)
   The value expression for the property mapping.
-- [var userInfo: [AnyHashable : Any]?](nspropertymapping/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user info for the property mapping.
 
 

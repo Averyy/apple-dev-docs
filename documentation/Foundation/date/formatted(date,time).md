@@ -1,7 +1,8 @@
 # formatted(date:time:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a locale-aware string representation of a date using specified date and time format styles.
 
@@ -26,9 +27,9 @@ A string, formatted according to the specified date and time styles.
 
 #### Discussion
 
-When displaying a date to a user, use the convenient [`formatted(date:time:)`](date/formatted(date:time:).md) instance method to customize the string representation of the date. Set the date and time styles of the date format style separately, according to your particular needs.
+When displaying a date to a user, use the convenient [`formatted(date:time:)`](./formatted%28date,time%29.md) instance method to customize the string representation of the date. Set the date and time styles of the date format style separately, according to your particular needs.
 
-For example, to create a string with a full date and no time representation, set the [`Date.FormatStyle.DateStyle`](date/formatstyle/datestyle.md) to [`complete`](date/formatstyle/datestyle/complete.md) and the [`Date.FormatStyle.TimeStyle`](date/formatstyle/timestyle.md) to [`omitted`](date/formatstyle/timestyle/omitted.md). Conversely, to create a string representing only the time, set the date style to [`omitted`](date/formatstyle/datestyle/omitted.md) and the time style to [`complete`](date/formatstyle/timestyle/complete.md).
+For example, to create a string with a full date and no time representation, set the [`Date.FormatStyle.DateStyle`](./formatstyle/datestyle.md) to [`complete`](./formatstyle/datestyle/complete.md) and the [`Date.FormatStyle.TimeStyle`](./formatstyle/timestyle.md) to [`omitted`](./formatstyle/timestyle/omitted.md). Conversely, to create a string representing only the time, set the date style to [`omitted`](./formatstyle/datestyle/omitted.md) and the time style to [`complete`](./formatstyle/timestyle/complete.md).
 
 ```swift
 let birthday = Date()
@@ -37,7 +38,7 @@ birthday.formatted(date: .complete, time: .omitted) // Sunday, January 17, 2021
 birthday.formatted(date: .omitted, time: .complete) // 4:03:12 PM CST
 ```
 
-You can create string representations of a [`Date`](date.md) instance with several levels of brevity using a variety of preset date and time styles. This example shows date styles of [`long`](date/formatstyle/datestyle/long.md), [`abbreviated`](date/formatstyle/datestyle/abbreviated.md), and [`numeric`](date/formatstyle/datestyle/numeric.md), and time styles of [`shortened`](date/formatstyle/timestyle/shortened.md), [`standard`](date/formatstyle/timestyle/standard.md), and [`complete`](date/formatstyle/timestyle/complete.md).
+You can create string representations of a [`Date`](../date.md) instance with several levels of brevity using a variety of preset date and time styles. This example shows date styles of [`long`](./formatstyle/datestyle/long.md), [`abbreviated`](./formatstyle/datestyle/abbreviated.md), and [`numeric`](./formatstyle/datestyle/numeric.md), and time styles of [`shortened`](./formatstyle/timestyle/shortened.md), [`standard`](./formatstyle/timestyle/standard.md), and [`complete`](./formatstyle/timestyle/complete.md).
 
 ```swift
 let birthday = Date()
@@ -49,11 +50,11 @@ birthday.formatted(date: .numeric, time: .complete) // 1/17/2021, 4:03:12 PM CST
 birthday.formatted() // Jan 17, 2021, 4:03 PM
 ```
 
-The default date style is [`abbreviated`](date/formatstyle/datestyle/abbreviated.md) and the default time style is [`shortened`](date/formatstyle/timestyle/shortened.md).
+The default date style is [`abbreviated`](./formatstyle/datestyle/abbreviated.md) and the default time style is [`shortened`](./formatstyle/timestyle/shortened.md).
 
-For the default date formatting, use the [`formatted()`](date/formatted().md) method. To customize the formatted measurement string, use the [`formatted(_:)`](date/formatted(_:).md) method and include a `Date.FormatStyle`.
+For the default date formatting, use the [`formatted()`](./formatted%28%29.md) method. To customize the formatted measurement string, use the [`formatted(_:)`](./formatted%28_%29.md) method and include a `Date.FormatStyle`.
 
-For more information about formatting dates, see the [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see the [`Date.FormatStyle`](./formatstyle.md).
 
 ## Parameters
 
@@ -62,19 +63,20 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 
 ## See Also
 
-- [func formatted() -> String](date/formatted.md)
+### Formatting a Date
+- [func formatted() -> String](./formatted%28%29.md)
   Generates a locale-aware string representation of a date using the default date format style.
-- [func formatted<F>(F) -> F.FormatOutput](date/formatted(_:).md)
+- [func formatted<F>(F) -> F.FormatOutput](./formatted%28_%29.md)
   Generates a locale-aware string representation of a date using the specified date format style.
-- [struct FormatStyle](date/formatstyle.md)
+- [struct FormatStyle](./formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](./relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](./intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [func ISO8601Format(Date.ISO8601FormatStyle) -> String](date/iso8601format(_:).md)
+- [func ISO8601Format(Date.ISO8601FormatStyle) -> String](./iso8601format%28_%29.md)
   Generates a locale-aware string representation of a date using the ISO 8601 date format.
-- [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
+- [struct ISO8601FormatStyle](./iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a coordinate type for a Downlink Time-Difference-of-Arrival measurement.
 

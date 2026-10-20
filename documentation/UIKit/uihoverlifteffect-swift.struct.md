@@ -1,7 +1,8 @@
 # UIHoverLiftEffect
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An effect that can visually lift the view on hover where appropriate.
 
@@ -20,23 +21,24 @@ struct UIHoverLiftEffect
 ## Topics
 
 ### Creating a lift hover effect
-- [init()](uihoverlifteffect-swift.struct/init.md)
+- [init()](./uihoverlifteffect-swift.struct/init%28%29.md)
   Creates an effect that can visually lift the view on hover where appropriate.
 
 ## Relationships
 
 ### Conforms To
-- [UIHoverEffect](uihovereffect-40091.md)
+- [UIHoverEffect](./uihovereffect-40091.md)
 
 ## See Also
 
-- [var effect: any UIHoverEffect](uihoverstyle/effect-4vdoj.md)
+### Specifying a hover effect
+- [var effect: any UIHoverEffect](./uihoverstyle/effect-4vdoj.md)
   The effect to apply to the view with this style.
-- [struct UIHoverAutomaticEffect](uihoverautomaticeffect-swift.struct.md)
+- [struct UIHoverAutomaticEffect](./uihoverautomaticeffect-swift.struct.md)
   A system-default hover effect that automatically selects the appropriate effect based on the view to which it applies.
-- [struct UIHoverHighlightEffect](uihoverhighlighteffect-swift.struct.md)
+- [struct UIHoverHighlightEffect](./uihoverhighlighteffect-swift.struct.md)
   An effect that applies a highlight to the view on hover.
-- [protocol UIHoverEffect](uihovereffect-40091.md)
+- [protocol UIHoverEffect](./uihovereffect-40091.md)
   A hover effect that can apply to a view through a hover style.
 
 

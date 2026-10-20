@@ -1,7 +1,8 @@
 # init(hours:minutes:seconds:frames:userBits:frameDuration:sourceType:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -18,7 +19,8 @@ init(hours: UInt8, minutes: UInt8, seconds: UInt8, frames: UInt8, userBits: UInt
 
 ## See Also
 
-- [init()](avcapturetimecode/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

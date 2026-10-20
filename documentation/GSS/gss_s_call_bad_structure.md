@@ -1,7 +1,8 @@
 # GSS_S_CALL_BAD_STRUCTURE
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Improperly formatted parameter.
 
@@ -18,11 +19,16 @@ Improperly formatted parameter.
 var GSS_S_CALL_BAD_STRUCTURE: UInt { get }
 ```
 
+```c
+#define GSS_S_CALL_BAD_STRUCTURE
+```
+
 ## See Also
 
-- [var GSS_S_CALL_INACCESSIBLE_READ: UInt](gss_s_call_inaccessible_read.md)
+### Calling Errors
+- [var GSS_S_CALL_INACCESSIBLE_READ: UInt](./gss_s_call_inaccessible_read.md)
   A required input parameter could not be read.
-- [var GSS_S_CALL_INACCESSIBLE_WRITE: UInt](gss_s_call_inaccessible_write.md)
+- [var GSS_S_CALL_INACCESSIBLE_WRITE: UInt](./gss_s_call_inaccessible_write.md)
   A required output parameter failed to write.
 
 

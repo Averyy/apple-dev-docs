@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A factor that increases or decreases the animation’s rate of playback.
 
@@ -11,7 +12,7 @@ A factor that increases or decreases the animation’s rate of playback.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,21 +24,22 @@ var speed: Float { get set }
 
 The default value is `1.0`, which doesn’t alter the animation’s duration. A value of `2.0` indicates that the duration is half the normal rate. A value of `0.5` indicates that the duration is twice the normal rate. Negative values play the animation in reverse.
 
-This property doesn’t affect the animation’s [`delay`](fromtobyanimation/delay.md).
+This property doesn’t affect the animation’s [`delay`](../fromtobyanimation/delay.md).
 
 ## See Also
 
-- [var delay: TimeInterval](animationgroup/delay.md)
+### Timing the group
+- [var delay: TimeInterval](./delay.md)
   An amount of time that lapses before the animation plays.
-- [var duration: TimeInterval](animationgroup/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The total playback time of the animation.
-- [var offset: TimeInterval](animationgroup/offset.md)
+- [var offset: TimeInterval](./offset.md)
   The time, in seconds, at which the animations begin within the duration.
-- [var trimDuration: TimeInterval?](animationgroup/trimduration.md)
+- [var trimDuration: TimeInterval?](./trimduration.md)
   An optional duration that overrides the calculated duration.
-- [var trimStart: TimeInterval?](animationgroup/trimstart.md)
+- [var trimStart: TimeInterval?](./trimstart.md)
   The time, in seconds, at which the animations play.
-- [var trimEnd: TimeInterval?](animationgroup/trimend.md)
+- [var trimEnd: TimeInterval?](./trimend.md)
   The time, in seconds, at which the animations stop.
 
 

@@ -1,7 +1,8 @@
 # kICSMTPHost
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kICSMTPHost: String { get }
+```
+
+```c
+#define kICSMTPHost
 ```
 
 

@@ -9,16 +9,17 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_CHANNEL_UNKNOWN;
 ```
 
 ## See Also
 
-- [SVG_CHANNEL_A](svgfedisplacementmapelement/1628815-svg_channel_a.md)
-- [SVG_CHANNEL_B](svgfedisplacementmapelement/1631000-svg_channel_b.md)
-- [SVG_CHANNEL_G](svgfedisplacementmapelement/1633063-svg_channel_g.md)
-- [SVG_CHANNEL_R](svgfedisplacementmapelement/1633323-svg_channel_r.md)
+### Miscellaneous
+- [SVG_CHANNEL_A](./api-1628815-svg_channel_a.md)
+- [SVG_CHANNEL_B](./api-1631000-svg_channel_b.md)
+- [SVG_CHANNEL_G](./api-1633063-svg_channel_g.md)
+- [SVG_CHANNEL_R](./api-1633323-svg_channel_r.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # portName
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptive name for the port.
 
@@ -19,21 +20,26 @@ A descriptive name for the port.
 var portName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * portName;
+```
+
 ## See Also
 
-- [var portType: AVAudioSession.Port](avaudiosessionportdescription/porttype.md)
+### Getting the port attributes
+- [var portType: AVAudioSession.Port](./porttype.md)
   The type of the port.
-- [AVAudioSession.Port](avaudiosession/port.md)
+- [AVAudioSession.Port](../avaudiosession/port.md)
   A structure that defines the available input and output port types.
-- [var channels: [AVAudioSessionChannelDescription]?](avaudiosessionportdescription/channels.md)
+- [var channels: [AVAudioSessionChannelDescription]?](./channels.md)
   An array of channel objects that describe the port’s input or output channels.
-- [class AVAudioSessionChannelDescription](avaudiosessionchanneldescription.md)
+- [class AVAudioSessionChannelDescription](../avaudiosessionchanneldescription.md)
   A class that describes a hardware channel on the current device.
-- [var uid: String](avaudiosessionportdescription/uid.md)
+- [var uid: String](./uid.md)
   A system-assigned unique identifier (UID) for the port.
-- [var hasHardwareVoiceCallProcessing: Bool](avaudiosessionportdescription/hashardwarevoicecallprocessing.md)
+- [var hasHardwareVoiceCallProcessing: Bool](./hashardwarevoicecallprocessing.md)
   A Boolean value that indicates whether the associated hardware port has built-in processing for two-way voice communication.
-- [var isSpatialAudioEnabled: Bool](avaudiosessionportdescription/isspatialaudioenabled.md)
+- [var isSpatialAudioEnabled: Bool](./isspatialaudioenabled.md)
   A Boolean value that indicates whether the port supports spatial audio playback.
 
 

@@ -1,7 +1,8 @@
 # allowsFocusDuringEditing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the table view allows its cells to become focused in edit mode.
 
@@ -18,19 +19,24 @@ A Boolean value that determines whether the table view allows its cells to becom
 var allowsFocusDuringEditing: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsFocusDuringEditing;
+```
+
 #### Discussion
 
-If you implement [`tableView(_:canFocusRowAt:)`](uitableviewdelegate/tableview(_:canfocusrowat:).md), its return value takes precedence over the value of this property.
+If you implement [`tableView(_:canFocusRowAt:)`](../uitableviewdelegate/tableview%28_,canfocusrowat%29.md), its return value takes precedence over the value of this property.
 
 The system determines the default value of this property according to the platform and other properties of the table view.
 
 ## See Also
 
-- [var allowsFocus: Bool](uitableview/allowsfocus.md)
+### Working with focus
+- [var allowsFocus: Bool](./allowsfocus.md)
   A Boolean value that determines whether the table view allows its cells to become focused.
-- [var selectionFollowsFocus: Bool](uitableview/selectionfollowsfocus.md)
+- [var selectionFollowsFocus: Bool](./selectionfollowsfocus.md)
   A Boolean value that triggers an automatic selection when focus moves to a cell.
-- [var remembersLastFocusedIndexPath: Bool](uitableview/rememberslastfocusedindexpath.md)
+- [var remembersLastFocusedIndexPath: Bool](./rememberslastfocusedindexpath.md)
   A Boolean value that indicates whether the table view automatically returns the focus to the cell at the last focused index path.
 
 

@@ -1,7 +1,8 @@
 # IORegistryEntryCopyPath(_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 9.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func IORegistryEntryCopyPath(_ entry: io_registry_entry_t, _ plane: UnsafePointer<CChar>!) -> Unmanaged<CFString>!
+```
+
+```c
+CFStringRef IORegistryEntryCopyPath(io_registry_entry_t entry, const io_name_t plane);
 ```
 
 

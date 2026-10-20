@@ -1,7 +1,8 @@
 # canEnterState(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether it is valid for the state machine to transition from its current state to a state of the specified class.
 
@@ -19,15 +20,19 @@ Returns a Boolean value indicating whether it is valid for the state machine to 
 func canEnterState(_ stateClass: AnyClass) -> Bool
 ```
 
+```objc
+- (BOOL) canEnterState:(Class) stateClass;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a transition is allowed from the current state to a state of the specified class; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if a transition is allowed from the current state to a state of the specified class; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-You build a state machine by creating a unique [`GKState`](gkstate.md) subclass for each distinct state possible for the machine. The [`isValidNextState(_:)`](gkstate/isvalidnextstate(_:).md) method of each state object determines which other states a state machine is allowed to transition into from that state.
+You build a state machine by creating a unique [`GKState`](../gkstate.md) subclass for each distinct state possible for the machine. The [`isValidNextState(_:)`](../gkstate/isvalidnextstate%28_%29.md) method of each state object determines which other states a state machine is allowed to transition into from that state.
 
-A newly created state machine’s [`currentState`](gkstatemachine/currentstate.md) property is `nil`. In this case, the [`canEnterState(_:)`](gkstatemachine/canenterstate(_:).md) method always returns [`true`](https://developer.apple.com/documentation/swift/true). To choose and enter an initial state, use the [`enter(_:)`](gkstatemachine/enter(_:).md) method.
+A newly created state machine’s [`currentState`](./currentstate.md) property is `nil`. In this case, the [`canEnterState(_:)`](./canenterstate%28_%29.md) method always returns [`true`](../../Swift/true.md). To choose and enter an initial state, use the [`enter(_:)`](./enter%28_%29.md) method.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ A newly created state machine’s [`currentState`](gkstatemachine/currentstate.m
 
 ## See Also
 
-- [var currentState: GKState?](gkstatemachine/currentstate.md)
+### Working with States
+- [var currentState: GKState?](./currentstate.md)
   The state machine’s current state.
-- [func enter(AnyClass) -> Bool](gkstatemachine/enter(_:).md)
+- [func enter(AnyClass) -> Bool](./enter%28_%29.md)
   Attempts to transition the state machine from its current state to a state of the specified class.
-- [func update(deltaTime: TimeInterval)](gkstatemachine/update(deltatime:).md)
+- [func update(deltaTime: TimeInterval)](./update%28deltatime%29.md)
   Tells the current state object to perform per-frame updates.
 
 

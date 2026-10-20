@@ -1,7 +1,8 @@
 # MusicAuthorization.Status
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that indicates the authorization status the user sets for the current app to access their Apple Music data.
 
@@ -23,26 +24,26 @@ enum Status
 ## Topics
 
 ### Enumeration Cases
-- [MusicAuthorization.Status.authorized](musicauthorization/status/authorized.md)
+- [MusicAuthorization.Status.authorized](./status/authorized.md)
   The user granted permission for the current app to use MusicKit.
-- [MusicAuthorization.Status.denied](musicauthorization/status/denied.md)
+- [MusicAuthorization.Status.denied](./status/denied.md)
   The user denied permission for the current app to use MusicKit.
-- [MusicAuthorization.Status.notDetermined](musicauthorization/status/notdetermined.md)
+- [MusicAuthorization.Status.notDetermined](./status/notdetermined.md)
   The user has yet to decide whether to authorize the current app to use MusicKit.
-- [MusicAuthorization.Status.restricted](musicauthorization/status/restricted.md)
+- [MusicAuthorization.Status.restricted](./status/restricted.md)
   Apps on this device can’t access MusicKit in a way that the user can’t change.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

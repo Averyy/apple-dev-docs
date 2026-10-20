@@ -1,7 +1,8 @@
 # ObservationTracking
 
 **Framework**: Observation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,15 +22,15 @@ struct ObservationTracking
 ## Topics
 
 ### Structures
-- [ObservationTracking.Event](observationtracking/event.md)
-- [ObservationTracking.Options](observationtracking/options.md)
-- [ObservationTracking.Token](observationtracking/token.md)
+- [ObservationTracking.Event](./observationtracking/event.md)
+- [ObservationTracking.Options](./observationtracking/options.md)
+- [ObservationTracking.Token](./observationtracking/token.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

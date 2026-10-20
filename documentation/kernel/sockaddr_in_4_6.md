@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 union sockaddr_in_4_6 {
     ...
 };
@@ -17,10 +17,10 @@ union sockaddr_in_4_6 {
 ## Topics
 
 ### Miscellaneous
-- [sa](sockaddr_in_4_6/3944347-sa.md)
-- [sah](sockaddr_in_4_6/3955331-sah.md)
-- [sin](sockaddr_in_4_6/3944348-sin.md)
-- [sin6](sockaddr_in_4_6/3944349-sin6.md)
+- [sa](./sockaddr_in_4_6/api-3944347-sa.md)
+- [sah](./sockaddr_in_4_6/api-3955331-sah.md)
+- [sin](./sockaddr_in_4_6/api-3944348-sin.md)
+- [sin6](./sockaddr_in_4_6/api-3944349-sin6.md)
 
 
 ---

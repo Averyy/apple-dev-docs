@@ -1,7 +1,8 @@
 # target
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target component if the path contains one, otherwise `nil`.
 

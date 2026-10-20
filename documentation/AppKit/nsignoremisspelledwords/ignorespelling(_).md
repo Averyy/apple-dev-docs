@@ -2,15 +2,20 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func ignoreSpelling(_ sender: Any?)
+```
+
+```objc
+- (void) ignoreSpelling:(id) sender;
 ```
 
 #### Discussion
@@ -21,7 +26,8 @@ Implement this method by using the code shown in the protocol description.
 
 ## See Also
 
-- [Spell Checking Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SpellCheck/SpellCheck.html#//apple_ref/doc/uid/10000092i)
+### Related Documentation
+- [Spell Checking Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SpellCheck/SpellCheck.html#//apple_ref/doc/uid/10000092i)
 
 
 ---

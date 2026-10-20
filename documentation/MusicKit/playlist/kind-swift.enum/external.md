@@ -1,7 +1,8 @@
 # Playlist.Kind.external
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the playlist was created by an external curator.
 

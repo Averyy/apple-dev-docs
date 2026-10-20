@@ -1,7 +1,8 @@
 # clip(to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the clipping mask for the drawing context to the specified rectangle.
 
@@ -18,11 +19,15 @@ Sets the clipping mask for the drawing context to the specified rectangle.
 func clip(to rect: CGRect)
 ```
 
+```objc
+- (void) clipToRect:(CGRect) rect;
+```
+
 #### Discussion
 
 To restrict the active drawing area to the specified rectangle, call this method before executing drawing commands.
 
-To use a more complex shape as a clipping mask, use the [`clip(to:mask:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/clip(to:mask:)) method on the underlying Core Graphics context, accessed through the [`cgContext`](uigraphicsrenderercontext/cgcontext.md) property.
+To use a more complex shape as a clipping mask, use the [`clip(to:mask:)`](../../CoreGraphics/cgcontext/clip%28to,mask%29.md) method on the underlying Core Graphics context, accessed through the [`cgContext`](./cgcontext.md) property.
 
 ## Parameters
 

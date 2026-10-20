@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIONetworkEventTypeDLIL](1646688-anonymous/kionetworkeventtypedlil.md)
-- [kIONetworkEventTypeLinkDown](1646688-anonymous/kionetworkeventtypelinkdown.md)
-- [kIONetworkEventTypeLinkSpeedChange](1646688-anonymous/kionetworkeventtypelinkspeedchange.md)
-- [kIONetworkEventTypeLinkUp](1646688-anonymous/kionetworkeventtypelinkup.md)
-- [kIONetworkEventWakeOnLANSupportChanged](1646688-anonymous/kionetworkeventwakeonlansupportchanged.md)
+- [kIONetworkEventTypeDLIL](./api-1646688-anonymous/kionetworkeventtypedlil.md)
+- [kIONetworkEventTypeLinkDown](./api-1646688-anonymous/kionetworkeventtypelinkdown.md)
+- [kIONetworkEventTypeLinkSpeedChange](./api-1646688-anonymous/kionetworkeventtypelinkspeedchange.md)
+- [kIONetworkEventTypeLinkUp](./api-1646688-anonymous/kionetworkeventtypelinkup.md)
+- [kIONetworkEventWakeOnLANSupportChanged](./api-1646688-anonymous/kionetworkeventwakeonlansupportchanged.md)
 
 
 ---

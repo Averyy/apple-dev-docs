@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that the app displays in the title bar of a window when running in macOS.
 
@@ -18,19 +19,24 @@ A string that the app displays in the title bar of a window when running in macO
 var subtitle: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * subtitle;
+```
+
 #### Discussion
 
 When this property is an empty string, the system removes the subtitle from the window layout. The default value is an empty string.
 
-> **Note**:  Apps running in iOS ignore the [`subtitle`](uiscene/subtitle.md) property.
+> **Note**:  Apps running in iOS ignore the [`subtitle`](./subtitle.md) property.
 
 ## See Also
 
-- [var activationState: UIScene.ActivationState](uiscene/activationstate-swift.property.md)
+### Getting the scene attributes
+- [var activationState: UIScene.ActivationState](./activationstate-swift.property.md)
   The current execution state of the scene.
-- [UIScene.ActivationState](uiscene/activationstate-swift.enum.md)
+- [UIScene.ActivationState](./activationstate-swift.enum.md)
   Constants that indicate the foreground or background execution state of your app.
-- [var title: String!](uiscene/title.md)
+- [var title: String!](./title.md)
   A user-visible string you supply to help users differentiate among your app’s scenes.
 
 

@@ -1,7 +1,8 @@
 # shouldPlaySound
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you must play a sound manually.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether you must play a sound manually.
 var shouldPlaySound: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL shouldPlaySound;
+```
+
 #### Discussion
 
 This property is `true` only when both of the following conditions are true:
@@ -23,13 +28,14 @@ This property is `true` only when both of the following conditions are true:
 1. A person performs an AirPod stem click.
 2. You disable the default capture sound.
 
-If this property is `false`, calling [`play(_:)`](avcaptureevent/play(_:).md) has no effect. Omitting the sound when expected can significantly impact the user experience.
+If this property is `false`, calling [`play(_:)`](./play%28_%29.md) has no effect. Omitting the sound when expected can significantly impact the user experience.
 
 > ❗ **Important**: To use AirPods Camera Control, it must be available in your country or region. AirPods Camera Control is not currently available in the European Union.
 
 ## See Also
 
-- [func play(AVCaptureEventSound) -> Bool](avcaptureevent/play(_:).md)
+### Playing a sound
+- [func play(AVCaptureEventSound) -> Bool](./play%28_%29.md)
   Plays the specified capture sound through AirPods.
 
 

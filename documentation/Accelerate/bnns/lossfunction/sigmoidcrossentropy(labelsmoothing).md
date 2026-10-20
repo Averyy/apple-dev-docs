@@ -1,7 +1,8 @@
 # BNNS.LossFunction.sigmoidCrossEntropy(labelSmoothing:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sigmoid activation on input logits, and independent computation of cross-entropy loss for each class.
 
@@ -11,8 +12,10 @@ Sigmoid activation on input logits, and independent computation of cross-entropy
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,25 +25,26 @@ case sigmoidCrossEntropy(labelSmoothing: Float)
 
 ## See Also
 
-- [BNNS.LossFunction.categoricalCrossEntropy](bnns/lossfunction/categoricalcrossentropy.md)
+### Loss Functions
+- [BNNS.LossFunction.categoricalCrossEntropy](./categoricalcrossentropy.md)
   Categorical cross-entropy computation between input prediction and labels.
-- [BNNS.LossFunction.cosineDistance](bnns/lossfunction/cosinedistance.md)
+- [BNNS.LossFunction.cosineDistance](./cosinedistance.md)
   Cosine distance loss computation between input predictions and labels.
-- [BNNS.LossFunction.hinge](bnns/lossfunction/hinge.md)
+- [BNNS.LossFunction.hinge](./hinge.md)
   Hinge loss computation between labels and unbounded, zero-centered binary predictions.
-- [BNNS.LossFunction.huber(huberDelta:)](bnns/lossfunction/huber(huberdelta:).md)
+- [BNNS.LossFunction.huber(huberDelta:)](./huber%28huberdelta%29.md)
   Huber loss computation between input logits and one-hot encoded labels.
-- [BNNS.LossFunction.log](bnns/lossfunction/log.md)
+- [BNNS.LossFunction.log](./log.md)
   Log loss computation between labels and predictions.
-- [BNNS.LossFunction.meanAbsoluteError](bnns/lossfunction/meanabsoluteerror.md)
+- [BNNS.LossFunction.meanAbsoluteError](./meanabsoluteerror.md)
   Mean absolute error (MAE) computation between input prediction and labels.
-- [BNNS.LossFunction.meanSquareError](bnns/lossfunction/meansquareerror.md)
+- [BNNS.LossFunction.meanSquareError](./meansquareerror.md)
   Mean square error (MSE) computation between input logits and one-hot encoded labels.
-- [BNNS.LossFunction.softmaxCrossEntropy(labelSmoothing:)](bnns/lossfunction/softmaxcrossentropy(labelsmoothing:).md)
+- [BNNS.LossFunction.softmaxCrossEntropy(labelSmoothing:)](./softmaxcrossentropy%28labelsmoothing%29.md)
   Softmax activation on input logits, and computation of cross-entropy loss with one-hot encoded labels.
-- [case yolo(parameters: BNNS.LossFunction.YoloParameters)](bnns/lossfunction/yolo(parameters:).md)
+- [case yolo(parameters: BNNS.LossFunction.YoloParameters)](./yolo%28parameters%29.md)
   You Only Look Once (YOLO) loss computation between prediction and ground truth labels.
-- [BNNS.LossFunction.YoloParameters](bnns/lossfunction/yoloparameters.md)
+- [BNNS.LossFunction.YoloParameters](./yoloparameters.md)
   A structure that contains the parameters for You Only Look Once (YOLO) loss computation.
 
 

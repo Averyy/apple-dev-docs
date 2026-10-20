@@ -1,7 +1,8 @@
 # feedback(title:shortTitle:status:_:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a command that handles user feedback (positive, neutral, or negative) for the current content.
 
@@ -29,7 +30,8 @@ static func feedback(title: String? = nil, shortTitle: String? = nil, status: Me
 
 ## See Also
 
-- [MediaCommand.FeedbackStatus](mediacommand/feedbackstatus.md)
+### Providing feedback
+- [MediaCommand.FeedbackStatus](./feedbackstatus.md)
   The feedback status for a media item.
 
 

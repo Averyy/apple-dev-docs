@@ -1,7 +1,8 @@
 # init(item:section:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize for use with `NSCollectionView`.
 

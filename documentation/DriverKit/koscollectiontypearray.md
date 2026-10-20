@@ -1,30 +1,32 @@
 # kOSCollectionTypeArray
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kOSCollectionTypeArray
 ```
 
 ## See Also
 
-- [kOSCollectionTypeBoolean](koscollectiontypeboolean.md)
-- [kOSCollectionTypeData](koscollectiontypedata.md)
-- [kOSCollectionTypeDictionary](koscollectiontypedictionary.md)
-- [kOSCollectionTypeNumber](koscollectiontypenumber.md)
-- [kOSCollectionTypeSerialization](koscollectiontypeserialization.md)
-- [kOSCollectionTypeSet](koscollectiontypeset.md)
-- [kOSCollectionTypeString](koscollectiontypestring.md)
-- [kOSCollectionTypeSymbol](koscollectiontypesymbol.md)
+### Types
+- [kOSCollectionTypeBoolean](./koscollectiontypeboolean.md)
+- [kOSCollectionTypeData](./koscollectiontypedata.md)
+- [kOSCollectionTypeDictionary](./koscollectiontypedictionary.md)
+- [kOSCollectionTypeNumber](./koscollectiontypenumber.md)
+- [kOSCollectionTypeSerialization](./koscollectiontypeserialization.md)
+- [kOSCollectionTypeSet](./koscollectiontypeset.md)
+- [kOSCollectionTypeString](./koscollectiontypestring.md)
+- [kOSCollectionTypeSymbol](./koscollectiontypesymbol.md)
 
 
 ---

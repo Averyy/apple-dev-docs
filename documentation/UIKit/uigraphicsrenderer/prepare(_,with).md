@@ -1,7 +1,8 @@
 # prepare(_:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies the configuration specified in the renderer context to the Core Graphics context.
 
@@ -18,22 +19,27 @@ Applies the configuration specified in the renderer context to the Core Graphics
 class func prepare(_ context: CGContext, with rendererContext: UIGraphicsRendererContext)
 ```
 
+```objc
++ (void) prepareCGContext:(CGContextRef) context withRendererContext:(UIGraphicsRendererContext *) rendererContext;
+```
+
 #### Discussion
 
-The graphics renderer calls this method when the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method is invoked. Override this method in a subclass to configure the underlying Core Graphics context before the renderer begins renderering.
+The graphics renderer calls this method when the [`runDrawingActions(_:completionActions:)`](./rundrawingactions%28_,completionactions%29.md) method is invoked. Override this method in a subclass to configure the underlying Core Graphics context before the renderer begins renderering.
 
-Core Graphics contexts are reused for repeated calls to the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method. Therefore, be sure to clean up the context to make it ready for reuse.
+Core Graphics contexts are reused for repeated calls to the [`runDrawingActions(_:completionActions:)`](./rundrawingactions%28_,completionactions%29.md) method. Therefore, be sure to clean up the context to make it ready for reuse.
 
 ## Parameters
 
 - `context`: The Core Graphics context that the graphics renderer performs drawing actions on.
-- `rendererContext`: The renderer context object that is provided to the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method. This object is of the type returned by the [`rendererContextClass()`](uigraphicsrenderer/renderercontextclass().md) static method.
+- `rendererContext`: The renderer context object that is provided to the [`runDrawingActions(_:completionActions:)`](./rundrawingactions%28_,completionactions%29.md) method. This object is of the type returned by the [`rendererContextClass()`](./renderercontextclass%28%29.md) static method.
 
 ## See Also
 
-- [class func context(with: UIGraphicsRendererFormat) -> CGContext?](uigraphicsrenderer/context(with:).md)
+### Managing graphics contexts
+- [class func context(with: UIGraphicsRendererFormat) -> CGContext?](./context%28with%29.md)
   Creates a Core Graphics context configured according to the supplied format object.
-- [class func rendererContextClass() -> AnyClass](uigraphicsrenderer/renderercontextclass.md)
+- [class func rendererContextClass() -> AnyClass](./renderercontextclass%28%29.md)
   Specifies the drawing context class used by this graphics renderer.
 
 

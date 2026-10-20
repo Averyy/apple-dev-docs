@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_BaseLayerBitRateFraction
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 15.0+
@@ -17,10 +18,15 @@
 let kVTCompressionPropertyKey_BaseLayerBitRateFraction: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_BaseLayerBitRateFraction;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_BaseLayerFrameRate: CFString](kvtcompressionpropertykey_baselayerframerate.md)
-- [let kVTCompressionPropertyKey_BaseLayerFrameRateFraction: CFString](kvtcompressionpropertykey_baselayerframeratefraction.md)
+### Temporal Scalability
+- [let kVTCompressionPropertyKey_BaseLayerFrameRate: CFString](./kvtcompressionpropertykey_baselayerframerate.md)
+- [let kVTCompressionPropertyKey_BaseLayerFrameRateFraction: CFString](./kvtcompressionpropertykey_baselayerframeratefraction.md)
 
 
 ---

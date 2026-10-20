@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 All result items.
@@ -12,7 +13,7 @@ All result items.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

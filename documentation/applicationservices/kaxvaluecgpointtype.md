@@ -1,7 +1,8 @@
 # kAXValueCGPointType
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.11+
@@ -10,6 +11,10 @@
 
 ```swift
 let kAXValueCGPointType: UInt32
+```
+
+```c
+const UInt32 kAXValueCGPointType;
 ```
 
 

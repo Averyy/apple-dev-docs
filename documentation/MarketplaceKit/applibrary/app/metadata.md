@@ -1,7 +1,8 @@
 # AppLibrary.App.Metadata
 
 **Framework**: MarketplaceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about an app’s version and account.
 
@@ -17,26 +18,27 @@ struct Metadata
 
 #### Overview
 
-The [`installedMetadata`](applibrary/app/installedmetadata.md) property of the [`AppLibrary.App`](applibrary/app.md) class is of this type.
+The [`installedMetadata`](./installedmetadata.md) property of the [`AppLibrary.App`](../app.md) class is of this type.
 
 ## Topics
 
 ### Inspecting app metadata
-- [let account: String?](applibrary/app/metadata/account.md)
-- [let appleVersionID: AppleVersionID](applibrary/app/metadata/appleversionid.md)
-- [let shortVersion: String](applibrary/app/metadata/shortversion.md)
-- [let version: String](applibrary/app/metadata/version.md)
+- [let account: String?](./metadata/account.md)
+- [let appleVersionID: AppleVersionID](./metadata/appleversionid.md)
+- [let shortVersion: String](./metadata/shortversion.md)
+- [let version: String](./metadata/version.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var installedMetadata: AppLibrary.App.Metadata?](applibrary/app/installedmetadata.md)
+### Inspecting an app’s version and account
+- [var installedMetadata: AppLibrary.App.Metadata?](./installedmetadata.md)
   The app version and the account that’s installing the app
 
 

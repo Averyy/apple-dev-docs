@@ -1,7 +1,8 @@
 # MTLTextureSwizzle
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A set of options to choose from when creating a texture swizzle pattern.
 
@@ -19,65 +20,70 @@ A set of options to choose from when creating a texture swizzle pattern.
 enum MTLTextureSwizzle
 ```
 
+```c
+enum MTLTextureSwizzle : uint8_t;
+```
+
 ## Topics
 
 ### Specifying swizzle channels
-- [MTLTextureSwizzle.alpha](mtltextureswizzle/alpha.md)
+- [MTLTextureSwizzle.alpha](./mtltextureswizzle/alpha.md)
   The alpha channel of the source pixel is copied to the destination channel.
-- [MTLTextureSwizzle.blue](mtltextureswizzle/blue.md)
+- [MTLTextureSwizzle.blue](./mtltextureswizzle/blue.md)
   The blue channel of the source pixel is copied to the destination channel.
-- [MTLTextureSwizzle.green](mtltextureswizzle/green.md)
+- [MTLTextureSwizzle.green](./mtltextureswizzle/green.md)
   The green channel of the source pixel is copied to the destination channel.
-- [MTLTextureSwizzle.red](mtltextureswizzle/red.md)
+- [MTLTextureSwizzle.red](./mtltextureswizzle/red.md)
   The red channel of the source pixel is copied to the destination channel.
-- [MTLTextureSwizzle.one](mtltextureswizzle/one.md)
+- [MTLTextureSwizzle.one](./mtltextureswizzle/one.md)
   A value of `1.0` is copied to the destination channel.
-- [MTLTextureSwizzle.zero](mtltextureswizzle/zero.md)
+- [MTLTextureSwizzle.zero](./mtltextureswizzle/zero.md)
   A value of `0.0` is copied to the destination channel.
 ### Initializers
-- [init?(rawValue: UInt8)](mtltextureswizzle/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtltextureswizzle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var textureType: MTLTextureType](mtltexturedescriptor/texturetype.md)
+### Specifying texture attributes
+- [var textureType: MTLTextureType](./mtltexturedescriptor/texturetype.md)
   The dimension and arrangement of texture image data.
-- [var pixelFormat: MTLPixelFormat](mtltexturedescriptor/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./mtltexturedescriptor/pixelformat.md)
   The size and bit layout of all pixels in the texture.
-- [var width: Int](mtltexturedescriptor/width.md)
+- [var width: Int](./mtltexturedescriptor/width.md)
   The width of the texture image for the base level mipmap, in pixels.
-- [var height: Int](mtltexturedescriptor/height.md)
+- [var height: Int](./mtltexturedescriptor/height.md)
   The height of the texture image for the base level mipmap, in pixels.
-- [var depth: Int](mtltexturedescriptor/depth.md)
+- [var depth: Int](./mtltexturedescriptor/depth.md)
   The depth of the texture image for the base level mipmap, in pixels.
-- [var mipmapLevelCount: Int](mtltexturedescriptor/mipmaplevelcount.md)
+- [var mipmapLevelCount: Int](./mtltexturedescriptor/mipmaplevelcount.md)
   The number of mipmap levels for this texture.
-- [var sampleCount: Int](mtltexturedescriptor/samplecount.md)
+- [var sampleCount: Int](./mtltexturedescriptor/samplecount.md)
   The number of samples in each fragment.
-- [var arrayLength: Int](mtltexturedescriptor/arraylength.md)
+- [var arrayLength: Int](./mtltexturedescriptor/arraylength.md)
   The number of array elements for this texture.
-- [var resourceOptions: MTLResourceOptions](mtltexturedescriptor/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./mtltexturedescriptor/resourceoptions.md)
   The behavior of a new memory allocation.
-- [var cpuCacheMode: MTLCPUCacheMode](mtltexturedescriptor/cpucachemode.md)
+- [var cpuCacheMode: MTLCPUCacheMode](./mtltexturedescriptor/cpucachemode.md)
   The CPU cache mode used for the CPU mapping of the texture.
-- [var storageMode: MTLStorageMode](mtltexturedescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./mtltexturedescriptor/storagemode.md)
   The location and access permissions of the texture.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtltexturedescriptor/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./mtltexturedescriptor/hazardtrackingmode.md)
   The texture’s hazard tracking mode.
-- [var allowGPUOptimizedContents: Bool](mtltexturedescriptor/allowgpuoptimizedcontents.md)
+- [var allowGPUOptimizedContents: Bool](./mtltexturedescriptor/allowgpuoptimizedcontents.md)
   A Boolean value indicating whether the GPU is allowed to adjust the texture’s contents to improve GPU performance.
-- [var usage: MTLTextureUsage](mtltexturedescriptor/usage.md)
+- [var usage: MTLTextureUsage](./mtltexturedescriptor/usage.md)
   Options that determine how you can use the texture.
-- [var swizzle: MTLTextureSwizzleChannels](mtltexturedescriptor/swizzle.md)
+- [var swizzle: MTLTextureSwizzleChannels](./mtltexturedescriptor/swizzle.md)
   The pattern you want the GPU to apply to pixels when you read or sample pixels from the texture.
 
 

@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an edit menu interaction object with the delegate object you specify.
 
@@ -17,9 +18,13 @@ Initializes an edit menu interaction object with the delegate object you specify
 init(delegate: (any UIEditMenuInteractionDelegate)?)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<UIEditMenuInteractionDelegate>) delegate;
+```
+
 #### Discussion
 
-Create an object that conforms to the [`UIEditMenuInteractionDelegate`](uieditmenuinteractiondelegate.md) protocol and assign it to this property. The interaction uses the system delegate if no delegate is provided (if you pass in `nil`).
+Create an object that conforms to the [`UIEditMenuInteractionDelegate`](../uieditmenuinteractiondelegate.md) protocol and assign it to this property. The interaction uses the system delegate if no delegate is provided (if you pass in `nil`).
 
 
 ---

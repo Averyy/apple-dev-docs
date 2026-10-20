@@ -1,7 +1,8 @@
 # init(andTestWith:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSLogicalTest` object initialized to perform an `AND` operation with the `NSSpecifierTest` objects in a given array.
 
@@ -15,6 +16,10 @@ Returns an `NSLogicalTest` object initialized to perform an `AND` operation with
 init(andTestWith subTests: [NSSpecifierTest])
 ```
 
+```objc
+- (instancetype) initAndTestWithTests:(NSArray<NSSpecifierTest *> *) subTests;
+```
+
 #### Return Value
 
 An `NSLogicalTest` object initialized to perform an `AND` operation with the `NSSpecifierTest` objects in `subTests`.
@@ -25,10 +30,12 @@ An `NSLogicalTest` object initialized to perform an `AND` operation with the `NS
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
-- [init(notTestWith: NSScriptWhoseTest)](nslogicaltest/init(nottestwith:).md)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Initializing a logical test
+- [init(notTestWith: NSScriptWhoseTest)](./init%28nottestwith%29.md)
   Returns an `NSLogicalTest` object initialized to perform a `NOT` operation on the given `NSScriptWhoseTest` object.
-- [init(orTestWith: [NSSpecifierTest])](nslogicaltest/init(ortestwith:).md)
+- [init(orTestWith: [NSSpecifierTest])](./init%28ortestwith%29.md)
   Returns an `NSLogicalTest` object initialized to perform an `OR` operation with the `NSSpecifierTest` objects in a given array.
 
 

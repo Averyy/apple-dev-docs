@@ -1,23 +1,28 @@
 # CFDictionaryAddValue(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a key-value pair to a dictionary if the specified key is not already present.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFDictionaryAddValue(_ theDict: CFMutableDictionary!, _ key: UnsafeRawPointer!, _ value: UnsafeRawPointer!)
+```
+
+```c
+extern void CFDictionaryAddValue(CFMutableDictionaryRef theDict, const void *key, const void *value);
 ```
 
 ## Parameters
@@ -28,13 +33,14 @@ func CFDictionaryAddValue(_ theDict: CFMutableDictionary!, _ key: UnsafeRawPoint
 
 ## See Also
 
-- [func CFDictionaryRemoveAllValues(CFMutableDictionary!)](cfdictionaryremoveallvalues(_:).md)
+### Modifying a Dictionary
+- [func CFDictionaryRemoveAllValues(CFMutableDictionary!)](./cfdictionaryremoveallvalues%28_%29.md)
   Removes all the key-value pairs from a dictionary, making it empty.
-- [func CFDictionaryRemoveValue(CFMutableDictionary!, UnsafeRawPointer!)](cfdictionaryremovevalue(_:_:).md)
+- [func CFDictionaryRemoveValue(CFMutableDictionary!, UnsafeRawPointer!)](./cfdictionaryremovevalue%28_,_%29.md)
   Removes a key-value pair.
-- [func CFDictionaryReplaceValue(CFMutableDictionary!, UnsafeRawPointer!, UnsafeRawPointer!)](cfdictionaryreplacevalue(_:_:_:).md)
+- [func CFDictionaryReplaceValue(CFMutableDictionary!, UnsafeRawPointer!, UnsafeRawPointer!)](./cfdictionaryreplacevalue%28_,_,_%29.md)
   Replaces a value corresponding to a given key.
-- [func CFDictionarySetValue(CFMutableDictionary!, UnsafeRawPointer!, UnsafeRawPointer!)](cfdictionarysetvalue(_:_:_:).md)
+- [func CFDictionarySetValue(CFMutableDictionary!, UnsafeRawPointer!, UnsafeRawPointer!)](./cfdictionarysetvalue%28_,_,_%29.md)
   Sets the value corresponding to a given key.
 
 

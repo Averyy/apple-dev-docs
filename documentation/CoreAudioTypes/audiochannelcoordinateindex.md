@@ -1,9 +1,10 @@
 # AudioChannelCoordinateIndex
 
 **Framework**: Core Audio Types  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Indexes the fields of the `mCoordinates` array in an [`AudioChannelDescription`](audiochanneldescription.md) structure.
+Indexes the fields of the `mCoordinates` array in an [`AudioChannelDescription`](./audiochanneldescription.md) structure.
 
 **Availability**:
 - iOS 9.0+
@@ -20,41 +21,46 @@ Indexes the fields of the `mCoordinates` array in an [`AudioChannelDescription`]
 enum AudioChannelCoordinateIndex
 ```
 
+```c
+enum AudioChannelCoordinateIndex : UInt32;
+```
+
 ## Topics
 
 ### Coordinates
-- [AudioChannelCoordinateIndex.coordinates_BackFront](audiochannelcoordinateindex/coordinates_backfront.md)
+- [AudioChannelCoordinateIndex.coordinates_BackFront](./audiochannelcoordinateindex/coordinates_backfront.md)
   For rectangular coordinates, negative is back and positive is front. The units are specified by the `mChannelFlags` field.
-- [AudioChannelCoordinateIndex.coordinates_DownUp](audiochannelcoordinateindex/coordinates_downup.md)
+- [AudioChannelCoordinateIndex.coordinates_DownUp](./audiochannelcoordinateindex/coordinates_downup.md)
   For rectangular coordinates, negative is below ground level, `0` is ground level, and positive is above ground level. The units are specified by the `mChannelFlags` field.
-- [AudioChannelCoordinateIndex.coordinates_LeftRight](audiochannelcoordinateindex/coordinates_leftright.md)
+- [AudioChannelCoordinateIndex.coordinates_LeftRight](./audiochannelcoordinateindex/coordinates_leftright.md)
   For rectangular coordinates, negative is left and positive is right. The units are specified by the `mChannelFlags` field of the `AudioChannelDescription` structure.
-- [static var coordinates_Azimuth: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_azimuth.md)
+- [static var coordinates_Azimuth: AudioChannelCoordinateIndex](./audiochannelcoordinateindex/coordinates_azimuth.md)
   For spherical coordinates, `0` is front center, positive is right, negative is left, and measurements are in degrees.
-- [static var coordinates_Distance: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_distance.md)
+- [static var coordinates_Distance: AudioChannelCoordinateIndex](./audiochannelcoordinateindex/coordinates_distance.md)
   For spherical coordinates, distance is radially from the center. The units are specified by the `mChannelFlags` field of the `AudioChannelDescription` structure.
-- [static var coordinates_Elevation: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_elevation.md)
+- [static var coordinates_Elevation: AudioChannelCoordinateIndex](./audiochannelcoordinateindex/coordinates_elevation.md)
   For spherical coordinates, `+90` is zenith, `0` is horizontal, `-90` is nadir, and measurements are in degrees.
 ### Initializers
-- [init?(rawValue: UInt32)](audiochannelcoordinateindex/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./audiochannelcoordinateindex/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var coordinates_Azimuth: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_azimuth.md)
+### Coordinates
+- [static var coordinates_Azimuth: AudioChannelCoordinateIndex](./audiochannelcoordinateindex/coordinates_azimuth.md)
   For spherical coordinates, `0` is front center, positive is right, negative is left, and measurements are in degrees.
-- [static var coordinates_Distance: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_distance.md)
+- [static var coordinates_Distance: AudioChannelCoordinateIndex](./audiochannelcoordinateindex/coordinates_distance.md)
   For spherical coordinates, distance is radially from the center. The units are specified by the `mChannelFlags` field of the `AudioChannelDescription` structure.
-- [static var coordinates_Elevation: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_elevation.md)
+- [static var coordinates_Elevation: AudioChannelCoordinateIndex](./audiochannelcoordinateindex/coordinates_elevation.md)
   For spherical coordinates, `+90` is zenith, `0` is horizontal, `-90` is nadir, and measurements are in degrees.
 
 

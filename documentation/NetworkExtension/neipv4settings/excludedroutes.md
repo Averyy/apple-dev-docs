@@ -1,7 +1,8 @@
 # excludedRoutes
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IPv4 network traffic that the system routes to the primary physical interface, not the TUN interface.
 
@@ -19,19 +20,24 @@ The IPv4 network traffic that the system routes to the primary physical interfac
 var excludedRoutes: [NEIPv4Route]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NEIPv4Route *> * excludedRoutes;
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
 #### Discussion
 
-This property excludes routes that the system might otherwise include from the [`includedRoutes`](neipv4settings/includedroutes.md) property. The system automatically excludes the IP address of the tunnel server.
+This property excludes routes that the system might otherwise include from the [`includedRoutes`](./includedroutes.md) property. The system automatically excludes the IP address of the tunnel server.
 
 ## See Also
 
-- [var includedRoutes: [NEIPv4Route]?](neipv4settings/includedroutes.md)
+### Routing network traffic
+- [var includedRoutes: [NEIPv4Route]?](./includedroutes.md)
   The IPv4 network traffic that the system routes to the TUN interface.
-- [class NEIPv4Route](neipv4route.md)
+- [class NEIPv4Route](../neipv4route.md)
   The settings for an IPv4 route.
 
 

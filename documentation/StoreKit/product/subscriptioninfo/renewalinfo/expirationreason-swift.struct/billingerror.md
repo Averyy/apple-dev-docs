@@ -1,7 +1,8 @@
 # billingError
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The auto-renewable subscription expired because of a billing error.
 
@@ -22,17 +23,18 @@ static let billingError: Product.SubscriptionInfo.RenewalInfo.ExpirationReason
 
 #### Discussion
 
-Check the value of [`isInBillingRetry`](product/subscriptioninfo/renewalinfo/isinbillingretry.md) to determine whether an auto-renewable subscription is in a billing retry state.
+Check the value of [`isInBillingRetry`](../isinbillingretry.md) to determine whether an auto-renewable subscription is in a billing retry state.
 
 ## See Also
 
-- [static let autoRenewDisabled: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/autorenewdisabled.md)
+### Getting the expiration reason
+- [static let autoRenewDisabled: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](./autorenewdisabled.md)
   The auto-renewable subscription expired because the customer voluntarily canceled their subscription.
-- [static let didNotConsentToPriceIncrease: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/didnotconsenttopriceincrease.md)
+- [static let didNotConsentToPriceIncrease: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](./didnotconsenttopriceincrease.md)
   The subscription expired because the customer didn’t consent to a price increase that requires customer consent.
-- [static let productUnavailable: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/productunavailable.md)
+- [static let productUnavailable: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](./productunavailable.md)
   The auto-renewable subscription expired because the product was unavailable for purchase at the time of the renewal.
-- [static let unknown: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/unknown.md)
+- [static let unknown: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](./unknown.md)
   The auto-renewable subscription expired for an unknown reason.
 
 

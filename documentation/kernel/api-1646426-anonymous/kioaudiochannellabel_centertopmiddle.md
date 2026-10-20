@@ -1,14 +1,15 @@
 # kIOAudioChannelLabel_CenterTopMiddle
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kIOAudioChannelLabel_CenterTopMiddle = kIOAudioChannelLabel_TopCenterSurround
 ```
 

@@ -1,7 +1,8 @@
 # tearDown()
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity to perform cleanup after each test method in a test case ends.
 
@@ -11,25 +12,31 @@ Provides an opportunity to perform cleanup after each test method in a test case
 func tearDown()
 ```
 
+```objc
+- (void) tearDown;
+```
+
 #### Discussion
 
-After each test completes, `XCTest` calls [`tearDown()`](xctest/teardown().md), then `tearDownWithError()`, followed by [`tearDown(completion:)`](xctest/teardown(completion:).md). Override this method to perform any per-test cleanup.
+After each test completes, `XCTest` calls [`tearDown()`](./teardown%28%29.md), then `tearDownWithError()`, followed by [`tearDown(completion:)`](./teardown%28completion%29.md). Override this method to perform any per-test cleanup.
 
-If state cleanup might throw errors, override [`tearDownWithError()`](xctest/teardownwitherror().md) or [`tearDown(completion:)`](xctest/teardown(completion:).md) instead. `XCTest` marks the test failed when when it catches errors, or skipped when it catches `XCTSkip`.
+If state cleanup might throw errors, override [`tearDownWithError()`](./teardownwitherror%28%29.md) or [`tearDown(completion:)`](./teardown%28completion%29.md) instead. `XCTest` marks the test failed when when it catches errors, or skipped when it catches `XCTSkip`.
 
 ## See Also
 
-- [class func tearDown()](xctestcase/teardown.md)
+### Related Documentation
+- [class func tearDown()](../xctestcase/teardown%28%29.md)
   Provides an opportunity to perform cleanup after a test case ends.
-- [func setUp(completion: ((any Error)?) -> Void)](xctest/setup(completion:).md)
+### Setting Up and Tearing Down
+- [func setUp(completion: ((any Error)?) -> Void)](./setup%28completion%29.md)
   Provides an opportunity to reset state asynchronously and handle errors before calling each test method in a test case.
-- [func setUpWithError() throws](xctest/setupwitherror.md)
+- [func setUpWithError() throws](./setupwitherror%28%29.md)
   Provides an opportunity to reset state and to throw errors before calling each test method in a test case.
-- [func setUp()](xctest/setup.md)
+- [func setUp()](./setup%28%29.md)
   Provides an opportunity to reset state before calling each test method in a test case.
-- [func tearDown(completion: ((any Error)?) -> Void)](xctest/teardown(completion:).md)
+- [func tearDown(completion: ((any Error)?) -> Void)](./teardown%28completion%29.md)
   Provides an opportunity to perform cleanup asynchronously and handle errors after each test method in a test case ends.
-- [func tearDownWithError() throws](xctest/teardownwitherror.md)
+- [func tearDownWithError() throws](./teardownwitherror%28%29.md)
   Provides an opportunity to perform cleanup and to throw errors after each test method in a test case ends.
 
 

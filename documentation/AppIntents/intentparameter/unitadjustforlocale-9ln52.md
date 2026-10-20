@@ -1,7 +1,8 @@
 # unitAdjustForLocale
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unitAdjustForLocale: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitVolume>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Volume?](intentparameter/unit-95hrl.md)
-- [IntentParameter.Volume](intentparameter/volume.md)
-- [var defaultUnit: IntentParameter<Value>.Volume?](intentparameter/defaultunit-2bsyg.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-903r6.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Volume?](./unit-95hrl.md)
+- [IntentParameter.Volume](./volume.md)
+- [var defaultUnit: IntentParameter<Value>.Volume?](./defaultunit-2bsyg.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-903r6.md)
 
 
 ---

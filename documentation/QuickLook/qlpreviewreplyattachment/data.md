@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data content of an html preview
 
@@ -15,6 +16,10 @@ The data content of an html preview
 
 ```swift
 var data: Data { get }
+```
+
+```objc
+@property (readonly) NSData * data;
 ```
 
 

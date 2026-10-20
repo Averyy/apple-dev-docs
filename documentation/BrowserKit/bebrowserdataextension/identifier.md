@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for an extension.
 
@@ -15,13 +16,18 @@ A unique identifier for an extension.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var developerName: String](bebrowserdataextension/developername.md)
+### Accessing extension metadata
+- [var developerName: String](./developername.md)
   An extension developer’s name.
-- [var displayName: String](bebrowserdataextension/displayname.md)
+- [var displayName: String](./displayname.md)
   An extension’s localized display name.
-- [var storeIdentifier: String](bebrowserdataextension/storeidentifier.md)
+- [var storeIdentifier: String](./storeidentifier.md)
   An identifier that locates the extension in the App Store.
 
 

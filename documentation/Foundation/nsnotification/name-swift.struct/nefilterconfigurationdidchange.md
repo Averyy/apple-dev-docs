@@ -1,7 +1,8 @@
 # NEFilterConfigurationDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted after the filter configuration stored in the Network Extension preferences changes.
 
@@ -20,13 +21,14 @@ static let NEFilterConfigurationDidChange: NSNotification.Name
 
 ## See Also
 
-- [static let NEVPNConfigurationChange: NSNotification.Name](nsnotification/name-swift.struct/nevpnconfigurationchange.md)
+### NetworkExtension
+- [static let NEVPNConfigurationChange: NSNotification.Name](./nevpnconfigurationchange.md)
   Posted after the VPN configuration stored in the Network Extension preferences changes.
-- [static let NEVPNStatusDidChange: NSNotification.Name](nsnotification/name-swift.struct/nevpnstatusdidchange.md)
+- [static let NEVPNStatusDidChange: NSNotification.Name](./nevpnstatusdidchange.md)
   Posted when the status of the VPN connection changes.
-- [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](nsnotification/name-swift.struct/nednsproxyconfigurationdidchange.md)
+- [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](./nednsproxyconfigurationdidchange.md)
   A notification that is posted when the DNS proxy configuration changes.
-- [static let NEDNSSettingsConfigurationDidChange: NSNotification.Name](nsnotification/name-swift.struct/nednssettingsconfigurationdidchange.md)
+- [static let NEDNSSettingsConfigurationDidChange: NSNotification.Name](./nednssettingsconfigurationdidchange.md)
 
 
 ---

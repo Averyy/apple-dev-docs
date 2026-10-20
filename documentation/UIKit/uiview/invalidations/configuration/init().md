@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration invalidation structure.
 
@@ -10,7 +11,7 @@ Creates a configuration invalidation structure.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - Swift 5.1+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # unknownDataStoreSchema
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates the data store’s schema is not recognized.
 

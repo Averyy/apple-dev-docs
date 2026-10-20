@@ -1,7 +1,8 @@
 # MTLFunctionStitchingInputNode
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A call graph node that describes an input to the call graph.
 
@@ -19,6 +20,10 @@ A call graph node that describes an input to the call graph.
 class MTLFunctionStitchingInputNode
 ```
 
+```objc
+@interface MTLFunctionStitchingInputNode : NSObject
+```
+
 #### Overview
 
 An input node contains data from one of the stitched function’s parameters. The output data type of an input node has the same type as the matching parameter.
@@ -26,41 +31,42 @@ An input node contains data from one of the stitched function’s parameters. Th
 ## Topics
 
 ### Initializing an input node
-- [init(argumentIndex: Int)](mtlfunctionstitchinginputnode/init(argumentindex:).md)
+- [init(argumentIndex: Int)](./mtlfunctionstitchinginputnode/init%28argumentindex%29.md)
   Creates a new input node.
 ### Configuring an input node
-- [var argumentIndex: Int](mtlfunctionstitchinginputnode/argumentindex.md)
+- [var argumentIndex: Int](./mtlfunctionstitchinginputnode/argumentindex.md)
   The index in the command’s buffer argument table that declares which data to read for this input node.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MTLFunctionStitchingNode](mtlfunctionstitchingnode.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MTLFunctionStitchingNode](./mtlfunctionstitchingnode.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Customizing shaders using function pointers and stitching](customizing-shaders-using-function-pointers-and-stitching.md)
+### Stitched function libraries
+- [Customizing shaders using function pointers and stitching](./customizing-shaders-using-function-pointers-and-stitching.md)
   Define custom shader behavior at runtime by creating functions from existing ones and preferentially linking to others in a dynamic library.
-- [class MTLStitchedLibraryDescriptor](mtlstitchedlibrarydescriptor.md)
+- [class MTLStitchedLibraryDescriptor](./mtlstitchedlibrarydescriptor.md)
   A description of a new library of procedurally generated functions.
-- [class MTLFunctionStitchingGraph](mtlfunctionstitchinggraph.md)
+- [class MTLFunctionStitchingGraph](./mtlfunctionstitchinggraph.md)
   A description of a new stitched function.
-- [class MTLFunctionStitchingFunctionNode](mtlfunctionstitchingfunctionnode.md)
+- [class MTLFunctionStitchingFunctionNode](./mtlfunctionstitchingfunctionnode.md)
   A call graph node that describes a function call and its inputs.
-- [protocol MTLFunctionStitchingNode](mtlfunctionstitchingnode.md)
+- [protocol MTLFunctionStitchingNode](./mtlfunctionstitchingnode.md)
   A protocol to identify call graph nodes.
-- [class MTLFunctionStitchingAttributeAlwaysInline](mtlfunctionstitchingattributealwaysinline.md)
+- [class MTLFunctionStitchingAttributeAlwaysInline](./mtlfunctionstitchingattributealwaysinline.md)
   An attribute to specify that Metal needs to inline all of the function calls when generating the stitched function.
-- [protocol MTLFunctionStitchingAttribute](mtlfunctionstitchingattribute.md)
+- [protocol MTLFunctionStitchingAttribute](./mtlfunctionstitchingattribute.md)
   A protocol to identify types that customize how the Metal compiler stitches a function together.
 
 

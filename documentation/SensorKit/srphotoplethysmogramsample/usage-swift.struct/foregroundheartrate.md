@@ -1,7 +1,8 @@
 # foregroundHeartRate
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A heart rate reading that a person takes while using an app.
 
@@ -16,17 +17,22 @@ A heart rate reading that a person takes while using an app.
 static let foregroundHeartRate: SRPhotoplethysmogramSample.Usage
 ```
 
+```c
+extern SRPhotoplethysmogramSampleUsage const SRPhotoplethysmogramSampleUsageForegroundHeartRate;
+```
+
 #### Discussion
 
 An example is a sample of a heart rate reading from a person using the Heart Rate or a workout app.
 
 ## See Also
 
-- [static let deepBreathing: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/deepbreathing.md)
+### Getting the reading method
+- [static let deepBreathing: SRPhotoplethysmogramSample.Usage](./deepbreathing.md)
   A deep breathing sensor reading that a person takes while using an app.
-- [static let foregroundBloodOxygen: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/foregroundbloodoxygen.md)
+- [static let foregroundBloodOxygen: SRPhotoplethysmogramSample.Usage](./foregroundbloodoxygen.md)
   A blood oxygen reading that a person takes while using an app.
-- [static let backgroundSystem: SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct/backgroundsystem.md)
+- [static let backgroundSystem: SRPhotoplethysmogramSample.Usage](./backgroundsystem.md)
   A reading taken by the system in the background.
 
 

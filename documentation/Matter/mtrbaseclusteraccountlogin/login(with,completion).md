@@ -1,7 +1,8 @@
 # login(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func login(with params: MTRAccountLoginClusterLoginParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func login(with params: MTRAccountLoginClusterLoginParams) async throws
+```
+
+```objc
+- (void) loginWithParams:(MTRAccountLoginClusterLoginParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

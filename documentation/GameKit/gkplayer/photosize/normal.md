@@ -1,7 +1,8 @@
 # GKPlayer.PhotoSize.normal
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Loads a normal-sized photo.
 
@@ -19,9 +20,14 @@ Loads a normal-sized photo.
 case normal
 ```
 
+```c
+GKPhotoSizeNormal
+```
+
 ## See Also
 
-- [GKPlayer.PhotoSize.small](gkplayer/photosize/small.md)
+### Constants
+- [GKPlayer.PhotoSize.small](./small.md)
   Loads a small photo.
 
 

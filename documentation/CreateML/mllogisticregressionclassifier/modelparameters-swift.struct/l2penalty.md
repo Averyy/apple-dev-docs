@@ -1,7 +1,8 @@
 # l2Penalty
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -19,14 +20,15 @@ var l2Penalty: Double
 
 ## See Also
 
-- [var convergenceThreshold: Double](mllogisticregressionclassifier/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mllogisticregressionclassifier/modelparameters-swift.struct/featurerescaling.md)
-- [var l1Penalty: Double](mllogisticregressionclassifier/modelparameters-swift.struct/l1penalty.md)
-- [var maxIterations: Int](mllogisticregressionclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var stepSize: Double](mllogisticregressionclassifier/modelparameters-swift.struct/stepsize.md)
-- [var validationData: MLDataTable?](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var convergenceThreshold: Double](./convergencethreshold.md)
+- [var featureRescaling: Bool](./featurerescaling.md)
+- [var l1Penalty: Double](./l1penalty.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var stepSize: Double](./stepsize.md)
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var validation: MLLogisticRegressionClassifier.ModelParameters.ValidationData](mllogisticregressionclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLLogisticRegressionClassifier.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

@@ -1,7 +1,8 @@
 # TupleIntentPrediction
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a collection of predictions for a specific app intent.
 
@@ -11,7 +12,7 @@ A type that represents a collection of predictions for a specific app intent.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,13 +24,14 @@ struct TupleIntentPrediction<Intent, T> where Intent : AppIntent
 ## Relationships
 
 ### Conforms To
-- [IntentPredictionConfiguration](intentpredictionconfiguration.md)
+- [IntentPredictionConfiguration](./intentpredictionconfiguration.md)
 
 ## See Also
 
-- [static func buildBlock<A0>(A0) -> A0](intentpredictionsbuilder/buildblock(_:).md)
-- [static func buildBlock<A0, A1>(A0, A1) -> TupleIntentPrediction<A0.Intent, (A0, A1)>](intentpredictionsbuilder/buildblock(_:_:).md)
-- [static func buildBlock<A0, A1, A2>(A0, A1, A2) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2)>](intentpredictionsbuilder/buildblock(_:_:_:).md)
+### Building predictions
+- [static func buildBlock<A0>(A0) -> A0](./intentpredictionsbuilder/buildblock%28_%29.md)
+- [static func buildBlock<A0, A1>(A0, A1) -> TupleIntentPrediction<A0.Intent, (A0, A1)>](./intentpredictionsbuilder/buildblock%28_,_%29.md)
+- [static func buildBlock<A0, A1, A2>(A0, A1, A2) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2)>](./intentpredictionsbuilder/buildblock%28_,_,_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated mutable dictionary.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated mutable dictionary.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A mutable dictionary.
@@ -30,9 +35,10 @@ This method is a designated initializer of `NSMutableDictionary`.
 
 ## See Also
 
-- [init(capacity: Int)](nsmutabledictionary/init(capacity:).md)
+### Creating and Initializing a Mutable Dictionary
+- [init(capacity: Int)](./init%28capacity%29.md)
   Initializes a newly allocated mutable dictionary, allocating enough memory to hold `numItems` entries.
-- [init(sharedKeySet: Any)](nsmutabledictionary/init(sharedkeyset:).md)
+- [init(sharedKeySet: Any)](./init%28sharedkeyset%29.md)
   Creates a mutable dictionary which is optimized for dealing with a known set of keys.
 
 

@@ -1,7 +1,8 @@
 # UISplitViewController.LayoutEnvironment.expanded
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Contained within an expanded split view controller.
 
@@ -18,11 +19,16 @@ Contained within an expanded split view controller.
 case expanded
 ```
 
+```c
+UISplitViewControllerLayoutEnvironmentExpanded
+```
+
 ## See Also
 
-- [UISplitViewController.LayoutEnvironment.collapsed](uisplitviewcontroller/layoutenvironment/collapsed.md)
+### Constants
+- [UISplitViewController.LayoutEnvironment.collapsed](./collapsed.md)
   Contained within a collapsed split view controller.
-- [UISplitViewController.LayoutEnvironment.none](uisplitviewcontroller/layoutenvironment/none.md)
+- [UISplitViewController.LayoutEnvironment.none](./none.md)
   There is no containing split view controller.
 
 

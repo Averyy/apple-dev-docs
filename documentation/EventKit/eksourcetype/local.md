@@ -1,17 +1,18 @@
 # EKSourceType.local
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents a local source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ Represents a local source.
 case local
 ```
 
+```c
+EKSourceTypeLocal
+```
+
 ## See Also
 
-- [EKSourceType.exchange](eksourcetype/exchange.md)
+### EventKit Source Types
+- [EKSourceType.exchange](./exchange.md)
   Represents an Exchange source.
-- [EKSourceType.calDAV](eksourcetype/caldav.md)
+- [EKSourceType.calDAV](./caldav.md)
   Represents a CalDAV or iCloud source.
-- [EKSourceType.mobileMe](eksourcetype/mobileme.md)
+- [EKSourceType.mobileMe](./mobileme.md)
   Represents a MobileMe source.
-- [EKSourceType.subscribed](eksourcetype/subscribed.md)
+- [EKSourceType.subscribed](./subscribed.md)
   Represents a subscribed source.
-- [EKSourceType.birthdays](eksourcetype/birthdays.md)
+- [EKSourceType.birthdays](./birthdays.md)
   Represents a birthday source.
 
 

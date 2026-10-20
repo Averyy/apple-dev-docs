@@ -1,7 +1,8 @@
 # boundingRegion
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A polygon that defines the boundary of the table.
 
@@ -25,9 +26,10 @@ var boundingRegion: NormalizedRegion { get }
 
 ## See Also
 
-- [var columns: [[DocumentObservation.Container.Table.Cell]]](documentobservation/container/table/columns.md)
+### Inspecting a table
+- [var columns: [[DocumentObservation.Container.Table.Cell]]](./columns.md)
   The columns in a table.
-- [var rows: [[DocumentObservation.Container.Table.Cell]]](documentobservation/container/table/rows.md)
+- [var rows: [[DocumentObservation.Container.Table.Cell]]](./rows.md)
   The rows in a table.
 
 

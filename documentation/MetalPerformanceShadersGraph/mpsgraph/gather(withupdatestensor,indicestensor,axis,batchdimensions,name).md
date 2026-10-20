@@ -1,7 +1,8 @@
 # gather(withUpdatesTensor:indicesTensor:axis:batchDimensions:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a Gather operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a Gather operation and returns the result tensor.
 
 ```swift
 func gather(withUpdatesTensor updatesTensor: MPSGraphTensor, indicesTensor: MPSGraphTensor, axis: Int, batchDimensions: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) gatherWithUpdatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor axis:(NSUInteger) axis batchDimensions:(NSUInteger) batchDimensions name:(NSString *) name;
 ```
 
 #### Return Value

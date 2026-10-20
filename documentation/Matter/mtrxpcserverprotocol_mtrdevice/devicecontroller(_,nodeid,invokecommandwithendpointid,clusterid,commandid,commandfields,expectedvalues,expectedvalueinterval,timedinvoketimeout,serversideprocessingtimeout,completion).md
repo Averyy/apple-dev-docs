@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func deviceController(_ controller: UUID, nodeID: NSNumber, invokeCommandWithEndpointID endpointID: NSNumber, clusterID: NSNumber, commandID: NSNumber, commandFields: Any, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, timedInvokeTimeout timeout: NSNumber?, serverSideProcessingTimeout: NSNumber?, completion: @escaping @Sendable ([[String : Any]]?, (any Error)?) -> Void)
+```
+
+```swift
 func deviceController(_ controller: UUID, nodeID: NSNumber, invokeCommandWithEndpointID endpointID: NSNumber, clusterID: NSNumber, commandID: NSNumber, commandFields: Any, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, timedInvokeTimeout timeout: NSNumber?, serverSideProcessingTimeout: NSNumber?) async throws -> [[String : Any]]
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID invokeCommandWithEndpointID:(NSNumber *) endpointID clusterID:(NSNumber *) clusterID commandID:(NSNumber *) commandID commandFields:(id) commandFields expectedValues:(NSArray<NSDictionary<NSString *,id> *> *) expectedValues expectedValueInterval:(NSNumber *) expectedValueInterval timedInvokeTimeout:(NSNumber *) timeout serverSideProcessingTimeout:(NSNumber *) serverSideProcessingTimeout completion:(MTRDeviceResponseHandler) completion;
 ```
 
 

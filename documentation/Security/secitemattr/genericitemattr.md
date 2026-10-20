@@ -1,7 +1,8 @@
 # SecItemAttr.genericItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the generic attribute.
 
@@ -13,6 +14,10 @@ Identifies the generic attribute.
 
 ```swift
 case genericItemAttr
+```
+
+```c
+kSecGenericItemAttr
 ```
 
 #### Discussion

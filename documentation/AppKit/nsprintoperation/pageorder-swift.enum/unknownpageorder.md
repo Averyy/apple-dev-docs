@@ -1,12 +1,13 @@
 # NSPrintOperation.PageOrder.unknownPageOrder
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No page order specified.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ No page order specified.
 case unknownPageOrder
 ```
 
+```c
+NSUnknownPageOrder
+```
+
 ## See Also
 
-- [NSPrintOperation.PageOrder.ascendingPageOrder](nsprintoperation/pageorder-swift.enum/ascendingpageorder.md)
+### Constants
+- [NSPrintOperation.PageOrder.ascendingPageOrder](./ascendingpageorder.md)
   Ascending (back to front) page order.
-- [NSPrintOperation.PageOrder.descendingPageOrder](nsprintoperation/pageorder-swift.enum/descendingpageorder.md)
+- [NSPrintOperation.PageOrder.descendingPageOrder](./descendingpageorder.md)
   Descending (front to back) page order.
-- [NSPrintOperation.PageOrder.specialPageOrder](nsprintoperation/pageorder-swift.enum/specialpageorder.md)
+- [NSPrintOperation.PageOrder.specialPageOrder](./specialpageorder.md)
   The spooler does not rearrange pages—they are printed in the order received by the spooler.
 
 

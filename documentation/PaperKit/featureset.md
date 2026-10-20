@@ -1,7 +1,8 @@
 # FeatureSet
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The features PaperKit supports in its UI and data models.
 
@@ -21,55 +22,56 @@ struct FeatureSet
 ## Topics
 
 ### Creating a feature set
-- [static var version1: FeatureSet](featureset/version1.md)
+- [static var version1: FeatureSet](./featureset/version1.md)
   A new feature set supporting all features in version 1.
-- [static var latest: FeatureSet](featureset/latest.md)
+- [static var latest: FeatureSet](./featureset/latest.md)
   A new feature set supporting all features.
-- [static var empty: FeatureSet](featureset/empty.md)
+- [static var empty: FeatureSet](./featureset/empty.md)
   A maximally empty feature set.
 ### Configuring features
-- [var features: Set<FeatureSet.Feature>](featureset/features.md)
+- [var features: Set<FeatureSet.Feature>](./featureset/features.md)
   The supported features.
-- [var shapes: Set<ShapeConfiguration.Shape>](featureset/shapes.md)
+- [var shapes: Set<ShapeConfiguration.Shape>](./featureset/shapes.md)
   The supported shape types.
-- [var inks: Set<PKInkingTool.InkType>](featureset/inks.md)
+- [var inks: Set<PKInkingTool.InkType>](./featureset/inks.md)
   The supported ink types.
-- [var contentVersion: FeatureSet.ContentVersion](featureset/contentversion-swift.property.md)
+- [var contentVersion: FeatureSet.ContentVersion](./featureset/contentversion-swift.property.md)
   The PaperKit version the feature set supports.
-- [var lineMarkerPositions: FeatureSet.LineMarkerPositions](featureset/linemarkerpositions-swift.property.md)
+- [var lineMarkerPositions: FeatureSet.LineMarkerPositions](./featureset/linemarkerpositions-swift.property.md)
   The allowed ends of line for arrows.
-- [var colorMaximumLinearExposure: CGFloat](featureset/colormaximumlinearexposure.md)
+- [var colorMaximumLinearExposure: CGFloat](./featureset/colormaximumlinearexposure.md)
   The maximum exposure to allow for choosing colors.
 ### Checking features
-- [func contains(FeatureSet.Feature) -> Bool](featureset/contains(_:).md)
+- [func contains(FeatureSet.Feature) -> Bool](./featureset/contains%28_%29.md)
   Returns a Boolean value that indicates whether the given feature exists in the set.
-- [func isSubset(of: FeatureSet) -> Bool](featureset/issubset(of:).md)
+- [func isSubset(of: FeatureSet) -> Bool](./featureset/issubset%28of%29.md)
   Returns a Boolean value that indicates whether this feature set is a subset of the given feature set.
-- [func insert(FeatureSet.Feature)](featureset/insert(_:).md)
+- [func insert(FeatureSet.Feature)](./featureset/insert%28_%29.md)
   Inserts the given feature in the set if it is not already present.
-- [func remove(FeatureSet.Feature)](featureset/remove(_:).md)
+- [func remove(FeatureSet.Feature)](./featureset/remove%28_%29.md)
   Removes the given feature.
 ### Describing feature types
-- [FeatureSet.Feature](featureset/feature.md)
+- [FeatureSet.Feature](./featureset/feature.md)
   The features that PaperKit markup supports.
-- [FeatureSet.ContentVersion](featureset/contentversion-swift.enum.md)
-- [FeatureSet.LineMarkerPositions](featureset/linemarkerpositions-swift.struct.md)
+- [FeatureSet.ContentVersion](./featureset/contentversion-swift.enum.md)
+- [FeatureSet.LineMarkerPositions](./featureset/linemarkerpositions-swift.struct.md)
   The arrow marker positions for the ends of a line.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ShapeConfiguration](shapeconfiguration.md)
+### Configuration
+- [struct ShapeConfiguration](./shapeconfiguration.md)
   A configuration that specifies the appearance of a shape.
-- [struct RenderingOptions](renderingoptions.md)
+- [struct RenderingOptions](./renderingoptions.md)
   The rendering options for drawing paper data models.
-- [struct MarkupAutoresizing](markupautoresizing.md)
+- [struct MarkupAutoresizing](./markupautoresizing.md)
   Automatic sizing behaviors for this markup.
 
 

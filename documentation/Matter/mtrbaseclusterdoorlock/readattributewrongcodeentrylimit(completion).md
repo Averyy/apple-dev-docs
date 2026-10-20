@@ -1,7 +1,8 @@
 # readAttributeWrongCodeEntryLimit(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeWrongCodeEntryLimit(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeWrongCodeEntryLimit() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeWrongCodeEntryLimitWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

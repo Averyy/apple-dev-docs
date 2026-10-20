@@ -1,7 +1,8 @@
 # HandAnchor.Chirality
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that indicates a left or right hand.
 
@@ -18,36 +19,37 @@ enum Chirality
 ## Topics
 
 ### Getting hand chirality
-- [HandAnchor.Chirality.left](handanchor/chirality-swift.enum/left.md)
+- [HandAnchor.Chirality.left](./chirality-swift.enum/left.md)
   A left hand.
-- [HandAnchor.Chirality.right](handanchor/chirality-swift.enum/right.md)
+- [HandAnchor.Chirality.right](./chirality-swift.enum/right.md)
   A right hand.
 ### Instance Properties
-- [var description: String](handanchor/chirality-swift.enum/description.md)
+- [var description: String](./chirality-swift.enum/description.md)
   A textual representation of HandAnchor.Chirality.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var originFromAnchorTransform: simd_float4x4](handanchor/originfromanchortransform.md)
+### Getting hand information
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The location and orientation of a hand in world space.
-- [var handSkeleton: HandSkeleton?](handanchor/handskeleton.md)
+- [var handSkeleton: HandSkeleton?](./handskeleton.md)
   The current position and orientation of joints on a hand.
-- [var chirality: HandAnchor.Chirality](handanchor/chirality-swift.property.md)
+- [var chirality: HandAnchor.Chirality](./chirality-swift.property.md)
   The chirality of this hand.
-- [var isTracked: Bool](handanchor/istracked.md)
+- [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this hand.
-- [var description: String](handanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
 
 

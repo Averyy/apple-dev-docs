@@ -1,7 +1,8 @@
 # FadeCommand.FadeDirection.out
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents fading out of the video frames to a requested color.
 
@@ -20,7 +21,8 @@ case out
 
 ## See Also
 
-- [FadeCommand.FadeDirection.in](fadecommand/fadedirection/in.md)
+### Enumeration Cases
+- [FadeCommand.FadeDirection.in](./in.md)
   A value that represents fading in of the video frames from a requested color.
 
 

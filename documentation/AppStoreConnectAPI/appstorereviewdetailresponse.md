@@ -1,7 +1,8 @@
 # AppStoreReviewDetailResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read or modify App Store review details for a version.
 
@@ -10,25 +11,26 @@ The response body for endpoints that read or modify App Store review details for
 
 ## Declaration
 
-```swift
+```
 object AppStoreReviewDetailResponse
 ```
 
 ## Properties
 
 - `data` (AppStoreReviewDetail) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `AppStoreReviewAttachment`, `AppStoreVersion`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object AppStoreReviewDetail](appstorereviewdetail.md)
+### Objects
+- [object AppStoreReviewDetail](./appstorereviewdetail.md)
   The data structure that represent an App Store Review Details  resource.
-- [object AppStoreReviewDetailCreateRequest](appstorereviewdetailcreaterequest.md)
+- [object AppStoreReviewDetailCreateRequest](./appstorereviewdetailcreaterequest.md)
   The request body you use to create an App Store Review Detail.
-- [object AppStoreReviewDetailUpdateRequest](appstorereviewdetailupdaterequest.md)
+- [object AppStoreReviewDetailUpdateRequest](./appstorereviewdetailupdaterequest.md)
   The request body you use to update an App Store Review Detail.
-- [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
+- [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](./appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
 
 
 ---

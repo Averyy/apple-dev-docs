@@ -1,7 +1,8 @@
 # MTRDeviceEnergyManagementFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,30 +19,34 @@
 struct MTRDeviceEnergyManagementFeature
 ```
 
+```c
+enum MTRDeviceEnergyManagementFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrdeviceenergymanagementfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrdeviceenergymanagementfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var constraintBasedAdjustment: MTRDeviceEnergyManagementFeature](mtrdeviceenergymanagementfeature/constraintbasedadjustment.md)
-- [static var forecastAdjustment: MTRDeviceEnergyManagementFeature](mtrdeviceenergymanagementfeature/forecastadjustment.md)
-- [static var pausable: MTRDeviceEnergyManagementFeature](mtrdeviceenergymanagementfeature/pausable.md)
-- [static var powerAdjustment: MTRDeviceEnergyManagementFeature](mtrdeviceenergymanagementfeature/poweradjustment.md)
-- [static var powerForecastReporting: MTRDeviceEnergyManagementFeature](mtrdeviceenergymanagementfeature/powerforecastreporting.md)
-- [static var startTimeAdjustment: MTRDeviceEnergyManagementFeature](mtrdeviceenergymanagementfeature/starttimeadjustment.md)
-- [static var stateForecastReporting: MTRDeviceEnergyManagementFeature](mtrdeviceenergymanagementfeature/stateforecastreporting.md)
+- [static var constraintBasedAdjustment: MTRDeviceEnergyManagementFeature](./mtrdeviceenergymanagementfeature/constraintbasedadjustment.md)
+- [static var forecastAdjustment: MTRDeviceEnergyManagementFeature](./mtrdeviceenergymanagementfeature/forecastadjustment.md)
+- [static var pausable: MTRDeviceEnergyManagementFeature](./mtrdeviceenergymanagementfeature/pausable.md)
+- [static var powerAdjustment: MTRDeviceEnergyManagementFeature](./mtrdeviceenergymanagementfeature/poweradjustment.md)
+- [static var powerForecastReporting: MTRDeviceEnergyManagementFeature](./mtrdeviceenergymanagementfeature/powerforecastreporting.md)
+- [static var startTimeAdjustment: MTRDeviceEnergyManagementFeature](./mtrdeviceenergymanagementfeature/starttimeadjustment.md)
+- [static var stateForecastReporting: MTRDeviceEnergyManagementFeature](./mtrdeviceenergymanagementfeature/stateforecastreporting.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

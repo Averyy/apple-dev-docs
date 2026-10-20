@@ -1,7 +1,8 @@
 # init(title:subtitle:image:identifier:discoverabilityTitle:attributes:alternate:_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activation action using the specified parameters.
 
@@ -9,7 +10,7 @@ Creates an activation action using the specified parameters.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,16 +23,17 @@ Creates an activation action using the specified parameters.
 
 - `title`: The title to display for the action.
 - `subtitle`: The subtitle to display for the action.
-- `image`: The image to display next to the action’s title. Only the [`context`](uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
+- `image`: The image to display next to the action’s title. Only the [`context`](../../uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
 - `identifier`: The unique identifier for the action. Specify `nil` to let this method create a unique identifier for you.
 - `discoverabilityTitle`: An elaborated title that explains the purpose of the action.
 - `attributes`: The attributes indicating the style of the action.
 - `alternate`: An alternate action to perform if the platform doesn’t support multiple scenes or if requesting a scene fails.
-- `configuration`: The closure the system calls when the user selects the action. The closure should return a [`UIWindowScene.ActivationConfiguration`](uiwindowscene/activationconfiguration.md) object.
+- `configuration`: The closure the system calls when the user selects the action. The closure should return a [`UIWindowScene.ActivationConfiguration`](../activationconfiguration.md) object.
 
 ## See Also
 
-- [UIWindowScene.ActivationAction.ConfigurationProvider](uiwindowscene/activationaction/configurationprovider.md)
+### Creating an activation action
+- [UIWindowScene.ActivationAction.ConfigurationProvider](./configurationprovider.md)
   A type alias defining a closure that provides an activation configuration for the activation action.
 
 

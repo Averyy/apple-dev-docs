@@ -1,7 +1,8 @@
 # annotationColumnID
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The column id that contains the annotation. The default value is “annotation” with `Annotation` type.
 
@@ -22,13 +23,14 @@ var annotationColumnID: ColumnID<Annotation>
 
 ## See Also
 
-- [var endTimeColumnID: ColumnID<Double>?](dataframetemporalannotationparameters/endtimecolumnid.md)
+### Getting the properties
+- [var endTimeColumnID: ColumnID<Double>?](./endtimecolumnid.md)
   The column id that contains the end time. The default value is `nil`.
-- [var filePathColumnID: ColumnID<String>](dataframetemporalannotationparameters/filepathcolumnid.md)
+- [var filePathColumnID: ColumnID<String>](./filepathcolumnid.md)
   The column id that contains the file path. The default value is “filePath” with String type.
-- [var filePathType: DataFrameTemporalAnnotationParameters<Annotation>.FilePathType](dataframetemporalannotationparameters/filepathtype-swift.property.md)
+- [var filePathType: DataFrameTemporalAnnotationParameters<Annotation>.FilePathType](./filepathtype-swift.property.md)
   The file path type in the annotation file. The default value is `.absolute`.
-- [var startTimeColumnID: ColumnID<Double>?](dataframetemporalannotationparameters/starttimecolumnid.md)
+- [var startTimeColumnID: ColumnID<Double>?](./starttimecolumnid.md)
   The column id that contains the start time. The default value is `nil`.
 
 

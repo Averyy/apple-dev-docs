@@ -1,7 +1,8 @@
 # intensityExponent
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity value for the resource, which RealityKit defines on a logarithmic scale.
 

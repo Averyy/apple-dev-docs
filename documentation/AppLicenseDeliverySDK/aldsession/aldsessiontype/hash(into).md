@@ -1,13 +1,16 @@
 # hash(into:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 ## Declaration
 
 ```swift
 func hash(into hasher: inout Hasher)
 ```
+
+Available when `Self` conforms to `Hashable` and `RawValue` conforms to `Hashable`.
 
 
 ---

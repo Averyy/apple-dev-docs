@@ -1,7 +1,8 @@
 # ContactProviderError.deniedByUser
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person using the app denied the action.
 
@@ -17,7 +18,8 @@ case deniedByUser
 
 ## See Also
 
-- [ContactProviderError.featureNotAvailable](contactprovidererror/featurenotavailable.md)
+### Availability errors
+- [ContactProviderError.featureNotAvailable](./featurenotavailable.md)
   The extension can’t run because the feature isn’t available.
 
 

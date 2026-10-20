@@ -1,7 +1,8 @@
 # appendInterpolation(_:format:privacy:attributes:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated 32-bit integer with the specified attributes.
 
@@ -11,7 +12,7 @@ Appends an interpolated 32-bit integer with the specified attributes.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -27,23 +28,24 @@ mutating func appendInterpolation(_ number: @autoclosure @escaping () -> Int32, 
 ## Parameters
 
 - `number`: The interpolated 32-bit integer. The system automatically wraps this value in a closure.
-- `format`: The format to apply to the value when the system renders it in a log message. For more information, see [`OSLogInt32ExtendedFormat`](oslogint32extendedformat.md).
-- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](oslogprivacy.md). The default value is [`auto`](oslogprivacy/auto.md).
-- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see [`Instruments Developer Help`](https://developer.apple.comhttps://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
+- `format`: The format to apply to the value when the system renders it in a log message. For more information, see [`OSLogInt32ExtendedFormat`](../oslogint32extendedformat.md).
+- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](../oslogprivacy.md). The default value is [`auto`](../oslogprivacy/auto.md).
+- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see [Instruments Developer Help](https://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> Int, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-8kli1.md)
+### Appending Signed Integers
+- [func appendInterpolation(@autoclosure () -> Int, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-8kli1.md)
   Appends an interpolated integer.
-- [func appendInterpolation(@autoclosure () -> Int8, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-5ihzf.md)
+- [func appendInterpolation(@autoclosure () -> Int8, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-5ihzf.md)
   Appends an interpolated 8-bit integer.
-- [func appendInterpolation(@autoclosure () -> Int16, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-190d0.md)
+- [func appendInterpolation(@autoclosure () -> Int16, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-190d0.md)
   Appends an interpolated 16-bit integer.
-- [func appendInterpolation(@autoclosure () -> Int32, format: OSLogInt32ExtendedFormat, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:privacy:)-3ji02.md)
+- [func appendInterpolation(@autoclosure () -> Int32, format: OSLogInt32ExtendedFormat, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,privacy%29-3ji02.md)
   Appends an interpolated 32-bit integer.
-- [func appendInterpolation(@autoclosure () -> Int32, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-2sb1i.md)
+- [func appendInterpolation(@autoclosure () -> Int32, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-2sb1i.md)
   Appends an interpolated 32-bit integer with the specified alignment.
-- [func appendInterpolation(@autoclosure () -> Int64, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:align:privacy:)-802m9.md)
+- [func appendInterpolation(@autoclosure () -> Int64, format: OSLogIntegerFormatting, align: OSLogStringAlignment, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,align,privacy%29-802m9.md)
   Appends an interpolated 64-bit integer.
 
 

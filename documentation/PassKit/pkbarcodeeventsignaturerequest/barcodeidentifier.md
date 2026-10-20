@@ -1,13 +1,14 @@
 # barcodeIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 7.0+
 
@@ -17,10 +18,15 @@
 var barcodeIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * barcodeIdentifier;
+```
+
 ## See Also
 
-- [var partialSignature: Data](pkbarcodeeventsignaturerequest/partialsignature.md)
-- [var deviceAccountIdentifier: String](pkbarcodeeventsignaturerequest/deviceaccountidentifier.md)
+### Getting Signing Information
+- [var partialSignature: Data](./partialsignature.md)
+- [var deviceAccountIdentifier: String](./deviceaccountidentifier.md)
 
 
 ---

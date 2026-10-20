@@ -1,16 +1,21 @@
 # CGWindowBackingType.backingStoreBuffered
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case backingStoreBuffered
+```
+
+```c
+kCGBackingStoreBuffered
 ```
 
 #### Discussion
@@ -21,8 +26,9 @@ You should typically use this mode. It supports hardware acceleration, Quartz dr
 
 ## See Also
 
-- [CGWindowBackingType.backingStoreNonretained](cgwindowbackingtype/backingstorenonretained.md)
-- [CGWindowBackingType.backingStoreRetained](cgwindowbackingtype/backingstoreretained.md)
+### Constants
+- [CGWindowBackingType.backingStoreNonretained](./backingstorenonretained.md)
+- [CGWindowBackingType.backingStoreRetained](./backingstoreretained.md)
 
 
 ---

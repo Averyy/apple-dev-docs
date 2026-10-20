@@ -1,7 +1,8 @@
 # name
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the appearance.
 
@@ -14,13 +15,18 @@ The name of the appearance.
 var name: NSAppearance.Name { get }
 ```
 
+```objc
+@property (copy, readonly) NSAppearanceName name;
+```
+
 #### Discussion
 
-For a list of standard appearance names, see [`NSAppearance.Name`](nsappearance/name-swift.struct.md).
+For a list of standard appearance names, see [`NSAppearance.Name`](./name-swift.struct.md).
 
 ## See Also
 
-- [NSAppearance.Name](nsappearance/name-swift.struct.md)
+### Getting the Appearance Name
+- [NSAppearance.Name](./name-swift.struct.md)
 
 
 ---

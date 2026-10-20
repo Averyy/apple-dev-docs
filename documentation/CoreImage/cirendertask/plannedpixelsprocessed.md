@@ -1,7 +1,8 @@
 # plannedPixelsProcessed
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var plannedPixelsProcessed: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger plannedPixelsProcessed;
 ```
 
 

@@ -1,7 +1,8 @@
 # ssid
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Service Set Identifier (SSID) of the network, also known as the network name.
 
@@ -18,7 +19,8 @@ let ssid: WISSID
 
 ## See Also
 
-- [let isSSIDBroadcast: Bool](winetworksharingprovider/network/isssidbroadcast.md)
+### Getting the network SSID
+- [let isSSIDBroadcast: Bool](./isssidbroadcast.md)
   A Boolean value indicating whether the access point broadcasts the SSID.
 
 

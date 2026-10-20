@@ -1,7 +1,8 @@
 # RCSService
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that provides an interface for performing RCS operations.
 
@@ -16,21 +17,21 @@ final class RCSService
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
 #### Overview
 
-Use the [`TelephonyMessagingSession`](telephonymessagingsession.md) property [`rcsService`](telephonymessagingsession/rcsservice.md) to get an instance of this class.
+Use the [`TelephonyMessagingSession`](./telephonymessagingsession.md) property [`rcsService`](./telephonymessagingsession/rcsservice.md) to get an instance of this class.
 
-An `RCSService` sends and receives different kinds of messages, distinguished by the [`content`](rcsmessage/content-swift.property.md) property of [`RCSMessage`](rcsmessage.md):
+An `RCSService` sends and receives different kinds of messages, distinguished by the [`content`](./rcsmessage/content-swift.property.md) property of [`RCSMessage`](./rcsmessage.md):
 
-- **[`RCSMessage.Text`](rcsmessage/text.md)**: Plain text.
-- **[`RCSMessage.FileTransfer`](rcsmessage/filetransfer.md)**: Incoming or outgoing file transfer. To send a file to a receipient, call the [`upload(_:)`](rcsservice/upload(_:).md): method, then send a message of this type. To receive a file, handle the incoming message from the [`incomingMessageNotifications`](rcsservice/incomingmessagenotifications.md) asynchronous sequence, and use its metadata to call [`download(_:)`](rcsservice/download(_:).md).
-- **[`RCSMessage.GeolocationPush`](rcsmessage/geolocationpush.md)**: The sender’s location, as indicated by a latitude and longitude pair.
-- **[`RCSMessage.ComposingIndicator`](rcsmessage/composingindicator.md)**: An indicator that the sender is currently composing a message. Use this content type to provide “is typing” indicators to recipients.
-- **[`RCSMessage.DispositionNotification`](rcsmessage/dispositionnotification.md)**: An update regarding the processing of a message by the recipient app. This includes things like whether delivery suceeded or failed, and whether the app displayed the message to the recipient.
+- **[`RCSMessage.Text`](./rcsmessage/text.md)**: Plain text.
+- **[`RCSMessage.FileTransfer`](./rcsmessage/filetransfer.md)**: Incoming or outgoing file transfer. To send a file to a receipient, call the [`upload(_:)`](./rcsservice/upload%28_%29.md): method, then send a message of this type. To receive a file, handle the incoming message from the [`incomingMessageNotifications`](./rcsservice/incomingmessagenotifications.md) asynchronous sequence, and use its metadata to call [`download(_:)`](./rcsservice/download%28_%29.md).
+- **[`RCSMessage.GeolocationPush`](./rcsmessage/geolocationpush.md)**: The sender’s location, as indicated by a latitude and longitude pair.
+- **[`RCSMessage.ComposingIndicator`](./rcsmessage/composingindicator.md)**: An indicator that the sender is currently composing a message. Use this content type to provide “is typing” indicators to recipients.
+- **[`RCSMessage.DispositionNotification`](./rcsmessage/dispositionnotification.md)**: An update regarding the processing of a message by the recipient app. This includes things like whether delivery suceeded or failed, and whether the app displayed the message to the recipient.
 
-Use the various overloads of `sendMessage(_:to:using:messageID)` to send messages of these types to recipients. The following example shows how to send a plain text message with [`sendMessage(_:to:using:messageID:)`](rcsservice/sendmessage(_:to:using:messageid:)-70q7h.md):
+Use the various overloads of `sendMessage(_:to:using:messageID)` to send messages of these types to recipients. The following example shows how to send a plain text message with [`sendMessage(_:to:using:messageID:)`](./rcsservice/sendmessage%28_,to,using,messageid%29-70q7h.md):
 
 ```swift
 let service = TelephonyMessagingSession.shared.rcsService
@@ -48,7 +49,7 @@ try await service.sendMessage(message,
                    messageID: RCSMessageID(rawValue: SAMPLE_RCS_MESSAGE_ID))
 ```
 
-To receive messages, iterate over the [`incomingMessageNotifications`](rcsservice/incomingmessagenotifications.md) asynchronous sequence with a `for`-`await`-`in` loop, then handle each notification based on its message content type, like this:
+To receive messages, iterate over the [`incomingMessageNotifications`](./rcsservice/incomingmessagenotifications.md) asynchronous sequence with a `for`-`await`-`in` loop, then handle each notification based on its message content type, like this:
 
 ```swift
 let service = TelephonyMessagingSession.shared.rcsService
@@ -71,166 +72,167 @@ Task {
 ## Topics
 
 ### Determining service viabililty
-- [func isViable(for: CellularServiceID) -> Bool](rcsservice/isviable(for:).md)
+- [func isViable(for: CellularServiceID) -> Bool](./rcsservice/isviable%28for%29.md)
   Queries whether the device can perform RCS operations at this time.
-- [var viabilityNotifications: some AsyncSequence<RCSService.ViabilityNotification, Never>](rcsservice/viabilitynotifications.md)
+- [var viabilityNotifications: some AsyncSequence<RCSService.ViabilityNotification, Never>](./rcsservice/viabilitynotifications.md)
   An asynchronous sequence of service viability notifications produced by the service.
-- [RCSService.ViabilityNotification](rcsservice/viabilitynotification.md)
+- [RCSService.ViabilityNotification](./rcsservice/viabilitynotification.md)
   A notification that indicates whether RCS is viable for a given cellular service.
 ### Managing RCS configuration
-- [func configuration(for: CellularServiceID) throws -> RCSService.Configuration](rcsservice/configuration(for:).md)
+- [func configuration(for: CellularServiceID) throws -> RCSService.Configuration](./rcsservice/configuration%28for%29.md)
   Retrieves the RCS configuration for the specified cellular service.
-- [RCSService.Configuration](rcsservice/configuration.md)
+- [RCSService.Configuration](./rcsservice/configuration.md)
   A structure that contains RCS configuration parameters, such as timing and size limits.
 ### Sending messages
-- [func sendMessage(RCSMessage.Text, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-70q7h.md)
+- [func sendMessage(RCSMessage.Text, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-70q7h.md)
   Sends a text message to a specified destination.
-- [RCSMessage.Text](rcsmessage/text.md)
+- [RCSMessage.Text](./rcsmessage/text.md)
   A structure that represents text content in an RCS message.
-- [func sendMessage(RCSMessage.FileTransfer, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-63zct.md)
+- [func sendMessage(RCSMessage.FileTransfer, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-63zct.md)
   Sends a file transfer message to a specified destination.
-- [RCSMessage.FileTransfer](rcsmessage/filetransfer.md)
+- [RCSMessage.FileTransfer](./rcsmessage/filetransfer.md)
   A structure that represents file transfer content in an RCS message.
-- [func sendMessage(RCSMessage.ComposingIndicator, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-9i178.md)
+- [func sendMessage(RCSMessage.ComposingIndicator, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-9i178.md)
   Sends a composing indicator message to a specified destination.
-- [RCSMessage.ComposingIndicator](rcsmessage/composingindicator.md)
+- [RCSMessage.ComposingIndicator](./rcsmessage/composingindicator.md)
   A structure that represents RFC 3994 composing indicator content in an RCS message.
-- [func sendMessage(RCSMessage.GeolocationPush, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-y1z.md)
+- [func sendMessage(RCSMessage.GeolocationPush, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-y1z.md)
   Sends a geolocation push message to a specified destination.
-- [RCSMessage.GeolocationPush](rcsmessage/geolocationpush.md)
+- [RCSMessage.GeolocationPush](./rcsmessage/geolocationpush.md)
   A structure that represents geolocation push content in an RCS message.
-- [func sendMessage(RCSMessage.DispositionNotification, to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID, group: RCSHandle.Group?) async throws](rcsservice/sendmessage(_:to:using:messageid:group:).md)
+- [func sendMessage(RCSMessage.DispositionNotification, to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID, group: RCSHandle.Group?) async throws](./rcsservice/sendmessage%28_,to,using,messageid,group%29.md)
   Sends the disposition for an incoming message.
-- [RCSMessage.DispositionNotification](rcsmessage/dispositionnotification.md)
+- [RCSMessage.DispositionNotification](./rcsmessage/dispositionnotification.md)
   A structure that represents disposition notification content in an RCS message, such as whether delivery succeeded or failed.
-- [enum RCSHandle](rcshandle.md)
+- [enum RCSHandle](./rcshandle.md)
   An enumeration that represents an RCS destination or sender.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](./cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [struct RCSMessageID](rcsmessageid.md)
+- [struct RCSMessageID](./rcsmessageid.md)
   A structure that represents an RCS message identifier.
 ### Sending encrypted messages
-- [func sendEncryptedMessageRequest(RCSService.SendEncryptedMessageRequest) async throws -> RCSService.SendEncryptedMessageRequest.Result](rcsservice/sendencryptedmessagerequest(_:).md)
+- [func sendEncryptedMessageRequest(RCSService.SendEncryptedMessageRequest) async throws -> RCSService.SendEncryptedMessageRequest.Result](./rcsservice/sendencryptedmessagerequest%28_%29.md)
   Sends an encrypted message to a specified destination.
-- [RCSService.SendEncryptedMessageRequest](rcsservice/sendencryptedmessagerequest.md)
+- [RCSService.SendEncryptedMessageRequest](./rcsservice/sendencryptedmessagerequest.md)
   A structure that represents a request to send an encrypted message.
-- [RCSService.SendEncryptedMessageRequest.Result](rcsservice/sendencryptedmessagerequest/result.md)
+- [RCSService.SendEncryptedMessageRequest.Result](./rcsservice/sendencryptedmessagerequest/result.md)
   A structure that represents the result of sending an encrypted message.
 ### Receiving messages
-- [var incomingMessageNotifications: some AsyncSequence<RCSService.IncomingMessageNotification, Never>](rcsservice/incomingmessagenotifications.md)
+- [var incomingMessageNotifications: some AsyncSequence<RCSService.IncomingMessageNotification, Never>](./rcsservice/incomingmessagenotifications.md)
   An asynchronous sequence of incoming message notifications produced by this service.
-- [RCSService.IncomingMessageNotification](rcsservice/incomingmessagenotification.md)
+- [RCSService.IncomingMessageNotification](./rcsservice/incomingmessagenotification.md)
   A structure that contains information about an incoming RCS message.
-- [struct RCSMessage](rcsmessage.md)
+- [struct RCSMessage](./rcsmessage.md)
   A structure that contains an RCS message’s content and metadata.
 ### Revoking messages
-- [func revokeMessage(RCSService.RevokeMessageRequest) async throws -> Bool](rcsservice/revokemessage(_:).md)
+- [func revokeMessage(RCSService.RevokeMessageRequest) async throws -> Bool](./rcsservice/revokemessage%28_%29.md)
   Requests revocation of an RCS message.
-- [RCSService.RevokeMessageRequest](rcsservice/revokemessagerequest.md)
+- [RCSService.RevokeMessageRequest](./rcsservice/revokemessagerequest.md)
   A structure that respresents a request to revoke a previously sent message.
 ### Transferring files
-- [func upload(RCSService.FileUploadRequest) async throws -> RCSService.FileUploadRequest.Metadata](rcsservice/upload(_:).md)
+- [func upload(RCSService.FileUploadRequest) async throws -> RCSService.FileUploadRequest.Metadata](./rcsservice/upload%28_%29.md)
   Uploads a file to the RCS content server.
-- [RCSService.FileUploadRequest](rcsservice/fileuploadrequest.md)
+- [RCSService.FileUploadRequest](./rcsservice/fileuploadrequest.md)
   A structure that represents an RCS file upload request.
-- [RCSService.FileUploadRequest.Metadata](rcsservice/fileuploadrequest/metadata.md)
+- [RCSService.FileUploadRequest.Metadata](./rcsservice/fileuploadrequest/metadata.md)
   A structure that contains upload metadata from the content server.
-- [func download(RCSService.FileDownloadRequest) async throws -> RCSService.FileDownloadRequest.Metadata](rcsservice/download(_:).md)
+- [func download(RCSService.FileDownloadRequest) async throws -> RCSService.FileDownloadRequest.Metadata](./rcsservice/download%28_%29.md)
   Downloads a file from the RCS content server.
-- [RCSService.FileDownloadRequest](rcsservice/filedownloadrequest.md)
+- [RCSService.FileDownloadRequest](./rcsservice/filedownloadrequest.md)
   A structure that represents an RCS file download request.
-- [RCSService.FileDownloadRequest.Metadata](rcsservice/filedownloadrequest/metadata.md)
+- [RCSService.FileDownloadRequest.Metadata](./rcsservice/filedownloadrequest/metadata.md)
   A structure that contains download metadata from the content server.
 ### Receiving handle updates
-- [var remoteHandleUpdates: some AsyncSequence<RCSService.RemoteHandleUpdate, Never>](rcsservice/remotehandleupdates.md)
+- [var remoteHandleUpdates: some AsyncSequence<RCSService.RemoteHandleUpdate, Never>](./rcsservice/remotehandleupdates.md)
   An asynchronous sequence of remote handle updates produced by this service.
-- [RCSService.RemoteHandleUpdate](rcsservice/remotehandleupdate.md)
+- [RCSService.RemoteHandleUpdate](./rcsservice/remotehandleupdate.md)
   A structure that contains information about an update to a remote handle.
 ### Reporting spam
-- [func reportSpam(RCSService.ReportSpamRequest) async throws](rcsservice/reportspam(_:).md)
+- [func reportSpam(RCSService.ReportSpamRequest) async throws](./rcsservice/reportspam%28_%29.md)
   Reports an RCS message as spam to the carrier and to partners.
-- [RCSService.ReportSpamRequest](rcsservice/reportspamrequest.md)
+- [RCSService.ReportSpamRequest](./rcsservice/reportspamrequest.md)
   A structure that contains information about a spam reporting request for an RCS message.
 ### Managing group chats
-- [func createGroupChat(RCSService.CreateGroupChatRequest) async throws -> RCSService.CreateGroupChatRequest.Result](rcsservice/creategroupchat(_:).md)
+- [func createGroupChat(RCSService.CreateGroupChatRequest) async throws -> RCSService.CreateGroupChatRequest.Result](./rcsservice/creategroupchat%28_%29.md)
   Creates a group with a list of participants and a specified subject.
-- [RCSService.CreateGroupChatRequest](rcsservice/creategroupchatrequest.md)
+- [RCSService.CreateGroupChatRequest](./rcsservice/creategroupchatrequest.md)
   Structure representing a request for creating a group chat.
-- [func leaveGroupChat(RCSService.LeaveGroupChatRequest) async throws](rcsservice/leavegroupchat(_:).md)
+- [func leaveGroupChat(RCSService.LeaveGroupChatRequest) async throws](./rcsservice/leavegroupchat%28_%29.md)
   Leave a group chat.
-- [RCSService.LeaveGroupChatRequest](rcsservice/leavegroupchatrequest.md)
+- [RCSService.LeaveGroupChatRequest](./rcsservice/leavegroupchatrequest.md)
   Structure representing a request to leave a group chat.
-- [func addGroupChatParticipants(RCSService.AddGroupChatParticipantsRequest) async throws -> RCSService.AddGroupChatParticipantsRequest.Result](rcsservice/addgroupchatparticipants(_:).md)
+- [func addGroupChatParticipants(RCSService.AddGroupChatParticipantsRequest) async throws -> RCSService.AddGroupChatParticipantsRequest.Result](./rcsservice/addgroupchatparticipants%28_%29.md)
   Adds participants to a group chat.
-- [RCSService.AddGroupChatParticipantsRequest](rcsservice/addgroupchatparticipantsrequest.md)
+- [RCSService.AddGroupChatParticipantsRequest](./rcsservice/addgroupchatparticipantsrequest.md)
   Structure representing a request for adding participants to a group chat.
-- [func removeGroupChatParticipants(RCSService.RemoveGroupChatParticipantsRequest) async throws -> RCSService.RemoveGroupChatParticipantsRequest.Result](rcsservice/removegroupchatparticipants(_:).md)
+- [func removeGroupChatParticipants(RCSService.RemoveGroupChatParticipantsRequest) async throws -> RCSService.RemoveGroupChatParticipantsRequest.Result](./rcsservice/removegroupchatparticipants%28_%29.md)
   Removes participants from a group chat.
-- [RCSService.RemoveGroupChatParticipantsRequest](rcsservice/removegroupchatparticipantsrequest.md)
+- [RCSService.RemoveGroupChatParticipantsRequest](./rcsservice/removegroupchatparticipantsrequest.md)
   Structure representing a request for removing participants from a group chat.
-- [func changeGroupChatSubject(RCSService.ChangeGroupChatSubjectRequest) async throws](rcsservice/changegroupchatsubject(_:).md)
+- [func changeGroupChatSubject(RCSService.ChangeGroupChatSubjectRequest) async throws](./rcsservice/changegroupchatsubject%28_%29.md)
   Changes subject of a group.
-- [RCSService.ChangeGroupChatSubjectRequest](rcsservice/changegroupchatsubjectrequest.md)
+- [RCSService.ChangeGroupChatSubjectRequest](./rcsservice/changegroupchatsubjectrequest.md)
   Structure representing a request for changing a group chat’s subject.
-- [var groupChatEvents: some AsyncSequence<RCSService.GroupChatEvent, Never>](rcsservice/groupchatevents.md)
+- [var groupChatEvents: some AsyncSequence<RCSService.GroupChatEvent, Never>](./rcsservice/groupchatevents.md)
   Returns an asynchronous sequence of incoming group chat notifications produced by this service.
-- [RCSService.GroupChatEvent](rcsservice/groupchatevent.md)
+- [RCSService.GroupChatEvent](./rcsservice/groupchatevent.md)
   Enumeration representing an RCS group chat event.
 ### Discovering remote capabilities
-- [func remoteCapabilities(for: RCSService.RemoteCapabilitiesRequest) async throws -> RCSService.RemoteCapabilities?](rcsservice/remotecapabilities(for:).md)
+- [func remoteCapabilities(for: RCSService.RemoteCapabilitiesRequest) async throws -> RCSService.RemoteCapabilities?](./rcsservice/remotecapabilities%28for%29.md)
   Requests remote capability discovery for a given handle
-- [RCSService.RemoteCapabilitiesRequest](rcsservice/remotecapabilitiesrequest.md)
+- [RCSService.RemoteCapabilitiesRequest](./rcsservice/remotecapabilitiesrequest.md)
   A structure representing a request to retrieve the capabilities of a remote handle.
-- [RCSService.RemoteCapabilities](rcsservice/remotecapabilities.md)
+- [RCSService.RemoteCapabilities](./rcsservice/remotecapabilities.md)
   Structure representing the capabilities of a remote handle.
 ### Responding to business suggestions
-- [func sendSuggestionResponse(RCSService.SuggestionResponse) async throws](rcsservice/sendsuggestionresponse(_:).md)
+- [func sendSuggestionResponse(RCSService.SuggestionResponse) async throws](./rcsservice/sendsuggestionresponse%28_%29.md)
   Sends a response for a business suggestion.
-- [RCSService.SuggestionResponse](rcsservice/suggestionresponse.md)
+- [RCSService.SuggestionResponse](./rcsservice/suggestionresponse.md)
   Structure representing a response to a business suggestion.
-- [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/senddevicespecifics(to:using:messageid:).md)
+- [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/senddevicespecifics%28to,using,messageid%29.md)
   Sends device specifics in response to a suggested action to send device specifics.
 ### Retrieving business information
-- [func businessInformation(for: RCSService.BusinessInformationRequest) async throws -> RCSService.Business?](rcsservice/businessinformation(for:).md)
+- [func businessInformation(for: RCSService.BusinessInformationRequest) async throws -> RCSService.Business?](./rcsservice/businessinformation%28for%29.md)
   Requests business information for a specified handle.
-- [RCSService.BusinessInformationRequest](rcsservice/businessinformationrequest.md)
+- [RCSService.BusinessInformationRequest](./rcsservice/businessinformationrequest.md)
   A structure representing a request to retrieve information about a business.
-- [RCSService.Business](rcsservice/business.md)
+- [RCSService.Business](./rcsservice/business.md)
   Structure containing details about a business.
 ### Handling errors
-- [RCSService.Error](rcsservice/error.md)
+- [RCSService.Error](./rcsservice/error.md)
   A type to define errors that can occur when performing RCS operations.
 ### Supporting types
-- [RCSService.GroupChatEndedEvent](rcsservice/groupchatendedevent.md)
+- [RCSService.GroupChatEndedEvent](./rcsservice/groupchatendedevent.md)
   Event triggered when a group chat is ended.
-- [RCSService.GroupChatParticipantsAddedEvent](rcsservice/groupchatparticipantsaddedevent.md)
+- [RCSService.GroupChatParticipantsAddedEvent](./rcsservice/groupchatparticipantsaddedevent.md)
   Event triggered when participants are added to a group.
-- [RCSService.GroupChatParticipantsRemovedEvent](rcsservice/groupchatparticipantsremovedevent.md)
+- [RCSService.GroupChatParticipantsRemovedEvent](./rcsservice/groupchatparticipantsremovedevent.md)
   Event triggered when participants are removed from a group.
-- [RCSService.GroupChatStartedEvent](rcsservice/groupchatstartedevent.md)
+- [RCSService.GroupChatStartedEvent](./rcsservice/groupchatstartedevent.md)
   Event triggered when group chat is started.
-- [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
+- [RCSService.GroupChatSubjectUpdatedEvent](./rcsservice/groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
 ### Structures
-- [RCSService.GroupChatSubjectInvalidatedEvent](rcsservice/groupchatsubjectinvalidatedevent.md)
+- [RCSService.GroupChatSubjectInvalidatedEvent](./rcsservice/groupchatsubjectinvalidatedevent.md)
   Event triggered when a group’s encryption state changes, which causes the group subject to be cleared on the server.
 ### Instance Methods
-- [func sendMessage(RCSMessage.Reply, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-61imq.md)
+- [func sendMessage(RCSMessage.Reply, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-61imq.md)
   Sends a reply message to a specified destination.
-- [func sendMessage(RCSMessage.Reaction, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-6kuet.md)
+- [func sendMessage(RCSMessage.Reaction, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-6kuet.md)
   Sends a reaction message to a specified destination.
-- [func sendMessage(RCSMessage.CustomReaction, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-8213t.md)
+- [func sendMessage(RCSMessage.CustomReaction, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](./rcsservice/sendmessage%28_,to,using,messageid%29-8213t.md)
   Sends a custom reaction message to a specified destination.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var rcsService: RCSService](telephonymessagingsession/rcsservice.md)
+### Using Rich Communication Services (RCS)
+- [var rcsService: RCSService](./telephonymessagingsession/rcsservice.md)
   RCS service associated with this session.
 
 

@@ -1,14 +1,15 @@
 # disparity(in:sourceDisparity:detectionType:priorDisparity:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines the disparity to use to focus on the object in the rectangle.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

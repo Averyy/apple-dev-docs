@@ -1,7 +1,8 @@
 # USDRenderError
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error produced when rendering a USD stage fails.
 
@@ -26,16 +27,16 @@ An error that occurs while rendering or converting a USD stage for RealityKit.
 ## Topics
 
 ### Instance Properties
-- [var errorDescription: String?](usdrendererror/errordescription.md)
+- [var errorDescription: String?](./usdrendererror/errordescription.md)
   A localized message describing what error occurred.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

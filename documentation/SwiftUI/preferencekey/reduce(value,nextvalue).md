@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Combines a sequence of values by modifying the previously-accumulated value with the result of a closure that provides the next value.

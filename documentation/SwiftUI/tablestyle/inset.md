@@ -1,7 +1,8 @@
 # inset
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
 
@@ -19,19 +20,22 @@ The table style that describes the behavior and appearance of a table with its c
 @export(implementation) @preconcurrency static var inset: InsetTableStyle { get }
 ```
 
+Available when `Self` is `InsetTableStyle`.
+
 #### Discussion
 
-To customize whether the rows of the table should alternate their backgrounds, use [`alternatingRowBackgrounds(_:)`](view/alternatingrowbackgrounds(_:).md).
+To customize whether the rows of the table should alternate their backgrounds, use [`alternatingRowBackgrounds(_:)`](../view/alternatingrowbackgrounds%28_%29.md).
 
 ## See Also
 
-- [static var automatic: AutomaticTableStyle](tablestyle/automatic.md)
+### Getting built-in table styles
+- [static var automatic: AutomaticTableStyle](./automatic.md)
   The default table style in the current context.
-- [static var bordered: BorderedTableStyle](tablestyle/bordered.md)
+- [static var bordered: BorderedTableStyle](./bordered.md)
   The table style that describes the behavior and appearance of a table with standard border.
-- [static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle](tablestyle/inset(alternatesrowbackgrounds:).md)
+- [static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle](./inset%28alternatesrowbackgrounds%29.md)
   The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
-- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle](tablestyle/bordered(alternatesrowbackgrounds:).md)
+- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle](./bordered%28alternatesrowbackgrounds%29.md)
   The table style that describes the behavior and appearance of a table with standard border.
 
 

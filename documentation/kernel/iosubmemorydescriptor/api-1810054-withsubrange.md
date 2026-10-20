@@ -7,7 +7,7 @@ Create an IOMemoryDescriptor to describe a subrange of an existing descriptor.
 
 ## Declaration
 
-```swift
+```c
 static IOSubMemoryDescriptor * withSubRange(
  IOMemoryDescriptor *of, 
  IOByteCountoffset, 
@@ -15,7 +15,7 @@ static IOSubMemoryDescriptor * withSubRange(
  IOOptionBitsoptions);
 ```
 
-#### Return_value
+#### Return Value
 
 The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure.
 

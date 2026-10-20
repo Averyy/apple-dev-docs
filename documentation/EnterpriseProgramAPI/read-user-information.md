@@ -1,7 +1,8 @@
 # Read User Information
 
 **Framework**: Enterprise Program API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a user on your team, such as name, roles, and app visibility.
 
@@ -9,7 +10,7 @@ Get information about a user on your team, such as name, roles, and app visibili
 
 **Request**:
 
-```None
+```
 https://qa.api.adep.ase.apple.com/v1/users/345bb7dc-a653-43ff-acee-a4817cd28479
 ```
 
@@ -44,11 +45,28 @@ https://qa.api.adep.ase.apple.com/v1/users/345bb7dc-a653-43ff-acee-a4817cd28479
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+### Query Parameters
+
 - `fields[users]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `firstName`, `lastName`, `roles`, `username`
+
+## Responses
+
+- `200` OK (`UserResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
 
 ## See Also
 
-- [List Users](list-users.md)
+### Getting User Information
+- [List Users](./list-users.md)
   Get a list of the users on your team.
 
 

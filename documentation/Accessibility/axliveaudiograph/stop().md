@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Ends the live audio graph session.
 
@@ -20,9 +21,14 @@ Ends the live audio graph session.
 class func stop()
 ```
 
+```objc
++ (void) stop;
+```
+
 ## See Also
 
-- [class func start()](axliveaudiograph/start.md)
+### Controlling playback
+- [class func start()](./start%28%29.md)
   Begins the live audio graph session.
 
 

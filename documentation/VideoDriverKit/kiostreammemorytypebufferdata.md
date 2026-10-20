@@ -1,23 +1,25 @@
 # kIOStreamMemoryTypeBufferData
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 kIOStreamMemoryTypeBufferData
 ```
 
 ## See Also
 
-- [kIOStreamMemoryTypeBufferControl](kiostreammemorytypebuffercontrol.md)
-- [kIOStreamMemoryTypeInputQueue](kiostreammemorytypeinputqueue.md)
-- [kIOStreamMemoryTypeMask](kiostreammemorytypemask.md)
-- [kIOStreamMemoryTypeOutputQueue](kiostreammemorytypeoutputqueue.md)
+### Stream memory types
+- [kIOStreamMemoryTypeBufferControl](./kiostreammemorytypebuffercontrol.md)
+- [kIOStreamMemoryTypeInputQueue](./kiostreammemorytypeinputqueue.md)
+- [kIOStreamMemoryTypeMask](./kiostreammemorytypemask.md)
+- [kIOStreamMemoryTypeOutputQueue](./kiostreammemorytypeoutputqueue.md)
 
 
 ---

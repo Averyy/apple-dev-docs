@@ -1,7 +1,8 @@
 # readAttributeNullableBitmap8(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNullableBitmap8(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNullableBitmap8() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNullableBitmap8WithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

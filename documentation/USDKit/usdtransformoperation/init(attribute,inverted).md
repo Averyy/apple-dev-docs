@@ -1,7 +1,8 @@
 # init(attribute:inverted:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transform operation from an attribute.
 

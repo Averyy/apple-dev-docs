@@ -2,6 +2,7 @@
 
 **Framework**: USDKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:

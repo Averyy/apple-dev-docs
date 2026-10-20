@@ -1,17 +1,22 @@
 # setEnd(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the ending point for the line.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setEnd(_ point: NSPoint)
+```
+
+```objc
+- (void) setEndPoint:(NSPoint) point;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ Page space is a 72-dpi coordinate system with the origin at the lower-left corne
 
 ## See Also
 
-- [func startPoint() -> NSPoint](pdfannotationline/startpoint.md)
+### Specifying the Starting and Ending Points
+- [func startPoint() -> NSPoint](./startpoint%28%29.md)
   Returns the starting point for the line.
-- [func setStart(NSPoint)](pdfannotationline/setstart(_:)-86is0.md)
+- [func setStart(NSPoint)](./setstart%28_%29-86is0.md)
   Sets the starting point for the line.
-- [func endPoint() -> NSPoint](pdfannotationline/endpoint.md)
+- [func endPoint() -> NSPoint](./endpoint%28%29.md)
   Returns the ending point for the line in page space.
 
 

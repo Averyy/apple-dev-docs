@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The shape of the table.
@@ -14,6 +15,12 @@ The shape of the table.
 ```swift
 var shape: TabletopShape { get }
 ```
+
+## Default Implementations
+
+### EntityTabletop Implementations
+- [var shape: TabletopShape](../entitytabletop/shape.md)
+  The shape of the table.
 
 
 ---

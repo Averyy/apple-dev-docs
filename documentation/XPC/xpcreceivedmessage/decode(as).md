@@ -1,7 +1,8 @@
 # decode(as:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes a message as the given type.
 
@@ -11,7 +12,7 @@ Decodes a message as the given type.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ A value of the specified type if the message data decodes successfully.
 
 #### Discussion
 
-If the message data doesn’t decode to the type, this method throws the appropriate [`DecodingError`](https://developer.apple.com/documentation/swift/decodingerror).
+If the message data doesn’t decode to the type, this method throws the appropriate [`DecodingError`](../../Swift/decodingerror.md).
 
 ## Parameters
 
@@ -34,7 +35,8 @@ If the message data doesn’t decode to the type, this method throws the appropr
 
 ## See Also
 
-- [var isSync: Bool](xpcreceivedmessage/issync.md)
+### Accessing message content
+- [var isSync: Bool](./issync.md)
   A Boolean value that indicates if this message is from a synchronous request.
 
 

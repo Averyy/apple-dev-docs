@@ -1,7 +1,8 @@
 # isBoundToSystemGesture
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user binds the element to a system gesture.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the user binds the element to a system ge
 var isBoundToSystemGesture: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isBoundToSystemGesture) BOOL boundToSystemGesture;
+```
+
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the user binds this element to a gesture; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
+This property is [`true`](../../Swift/true.md) if the user binds this element to a gesture; otherwise, it’s [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var preferredSystemGestureState: GCControllerElement.SystemGestureState](gccontrollerelement/preferredsystemgesturestate.md)
+### Handling system gesture input
+- [var preferredSystemGestureState: GCControllerElement.SystemGestureState](./preferredsystemgesturestate.md)
   The preferred state for handling input when the user binds the element to a system gesture.
-- [GCControllerElement.SystemGestureState](gccontrollerelement/systemgesturestate.md)
+- [GCControllerElement.SystemGestureState](./systemgesturestate.md)
   A state for handling input when an element is part of a system gesture.
 
 

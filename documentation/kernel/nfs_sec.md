@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfs_sec {
     ...
 };
@@ -17,8 +17,8 @@ struct nfs_sec {
 ## Topics
 
 ### Instance Properties
-- [count](nfs_sec/3944829-count.md)
-- [flavors](nfs_sec/3944830-flavors.md)
+- [count](./nfs_sec/api-3944829-count.md)
+- [flavors](./nfs_sec/api-3944830-flavors.md)
 
 
 ---

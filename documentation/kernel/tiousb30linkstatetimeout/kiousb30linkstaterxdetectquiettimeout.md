@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateRxDetectQuietTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The receive detect quiet timeout.
 
@@ -10,7 +11,7 @@ The receive detect quiet timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateRxDetectQuietTimeout = 12
 ```
 

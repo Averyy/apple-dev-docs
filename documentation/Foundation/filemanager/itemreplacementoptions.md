@@ -1,7 +1,8 @@
 # FileManager.ItemReplacementOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for specifying the behavior of file replacement operations.
 
@@ -20,37 +21,42 @@ Options for specifying the behavior of file replacement operations.
 struct ItemReplacementOptions
 ```
 
+```c
+enum NSFileManagerItemReplacementOptions : NSUInteger;
+```
+
 #### Overview
 
-These options are used by [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](filemanager/replaceitem(at:withitemat:backupitemname:options:resultingitemurl:).md).
+These options are used by [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](./replaceitem%28at,withitemat,backupitemname,options,resultingitemurl%29.md).
 
 ## Topics
 
 ### Using File Replacement Options
-- [init(rawValue: UInt)](filemanager/itemreplacementoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./itemreplacementoptions/init%28rawvalue%29.md)
   Creates a value for a file replacement operation.
-- [static var usingNewMetadataOnly: FileManager.ItemReplacementOptions](filemanager/itemreplacementoptions/usingnewmetadataonly.md)
+- [static var usingNewMetadataOnly: FileManager.ItemReplacementOptions](./itemreplacementoptions/usingnewmetadataonly.md)
   Only metadata from the new item is used, and metadata from the original item isn’t preserved (default).
-- [static var withoutDeletingBackupItem: FileManager.ItemReplacementOptions](filemanager/itemreplacementoptions/withoutdeletingbackupitem.md)
+- [static var withoutDeletingBackupItem: FileManager.ItemReplacementOptions](./itemreplacementoptions/withoutdeletingbackupitem.md)
   The backup item remains in place after a successful replacement.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:).md)
+### Replacing items
+- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](./replaceitemat%28_,withitemat,backupitemname,options%29.md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
-- [func replaceItem(at: URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](filemanager/replaceitem(at:withitemat:backupitemname:options:resultingitemurl:).md)
+- [func replaceItem(at: URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](./replaceitem%28at,withitemat,backupitemname,options,resultingitemurl%29.md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 volatile unsigned int producerCount;
 ```
 
@@ -15,12 +15,13 @@ Current count of produced interrupts that have been received.
 
 ## See Also
 
-- [reserved](iointerrupteventsource/reserved.md)
-- [provider](iointerrupteventsource/provider.md)
-- [intIndex](iointerrupteventsource/intindex.md)
-- [explicitDisable](iointerrupteventsource/explicitdisable.md)
-- [consumerCount](iointerrupteventsource/consumercount.md)
-- [autoDisable](iointerrupteventsource/autodisable.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [provider](./provider.md)
+- [intIndex](./intindex.md)
+- [explicitDisable](./explicitdisable.md)
+- [consumerCount](./consumercount.md)
+- [autoDisable](./autodisable.md)
 
 
 ---

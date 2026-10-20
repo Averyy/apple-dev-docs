@@ -1,7 +1,8 @@
 # SecTrustSetNetworkFetchAllowed(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies whether a trust evaluation is permitted to fetch missing intermediate certificates from the network.
 
@@ -20,9 +21,13 @@ Specifies whether a trust evaluation is permitted to fetch missing intermediate 
 func SecTrustSetNetworkFetchAllowed(_ trust: SecTrust, _ allowFetch: Bool) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustSetNetworkFetchAllowed(SecTrustRef trust, Boolean allowFetch);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 

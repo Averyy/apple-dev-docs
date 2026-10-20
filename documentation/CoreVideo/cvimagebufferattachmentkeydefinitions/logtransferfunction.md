@@ -1,7 +1,8 @@
 # logTransferFunction
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the transfer function or gamma of the content is a log format and identifies the specific log curve.
 

@@ -1,7 +1,8 @@
 # SSL_RSA_WITH_3DES_EDE_CBC_MD5
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 This value can be specified for SSL 2 but not SSL 3.
 
@@ -18,6 +19,10 @@ This value can be specified for SSL 2 but not SSL 3.
 
 ```swift
 var SSL_RSA_WITH_3DES_EDE_CBC_MD5: SSLCipherSuite { get }
+```
+
+```c
+SSL_RSA_WITH_3DES_EDE_CBC_MD5
 ```
 
 

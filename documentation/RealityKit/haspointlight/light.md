@@ -1,7 +1,8 @@
 # light
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A point light component for the entity.
 

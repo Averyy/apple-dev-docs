@@ -1,7 +1,8 @@
 # init(objects:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an activity items configuration with the specified objects.
 
@@ -17,9 +18,14 @@ Initializes and returns an activity items configuration with the specified objec
 init(objects: [any NSItemProviderWriting])
 ```
 
+```objc
+- (instancetype) initWithObjects:(NSArray<id<NSItemProviderWriting>> *) objects;
+```
+
 ## See Also
 
-- [init(itemProviders: [NSItemProvider])](uiactivityitemsconfiguration/init(itemproviders:).md)
+### Creating an activity items configuration
+- [init(itemProviders: [NSItemProvider])](./init%28itemproviders%29.md)
   Initializes and returns an activity items configuration with the specified item providers.
 
 

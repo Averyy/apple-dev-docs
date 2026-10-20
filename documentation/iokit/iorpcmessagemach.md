@@ -1,7 +1,8 @@
 # IORPCMessageMach
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,15 +14,21 @@
 struct IORPCMessageMach
 ```
 
+```c
+typedef struct IORPCMessageMach {
+    ...
+} IORPCMessageMach;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](iorpcmessagemach/3757891-init.md)
-- [init(msgh: mach_msg_header_t, msgh_body: mach_msg_body_t, objects: ())](iorpcmessagemach/3757892-init.md)
+- [init()](./iorpcmessagemach/api-3757891-init.md)
+- [init(msgh: mach_msg_header_t, msgh_body: mach_msg_body_t, objects: ())](./iorpcmessagemach/api-3757892-init.md)
 ### Instance Properties
-- [var msgh: mach_msg_header_t](iorpcmessagemach/3074887-msgh.md)
-- [var msgh_body: mach_msg_body_t](iorpcmessagemach/3074888-msgh_body.md)
-- [var objects: ()](iorpcmessagemach/3074889-objects.md)
+- [var msgh: mach_msg_header_t](./iorpcmessagemach/api-3074887-msgh.md)
+- [var msgh_body: mach_msg_body_t](./iorpcmessagemach/api-3074888-msgh_body.md)
+- [var objects: ()](./iorpcmessagemach/api-3074889-objects.md)
 
 
 ---

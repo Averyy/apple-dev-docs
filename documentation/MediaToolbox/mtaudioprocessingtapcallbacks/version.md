@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Media Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version number of the structure.
 
@@ -19,23 +20,28 @@ The version number of the structure.
 var version: Int32
 ```
 
+```c
+int version;
+```
+
 #### Discussion
 
-The value is passed as a parameter to [`MTAudioProcessingTapCreate(_:_:_:_:)`](mtaudioprocessingtapcreate(_:_:_:_:).md). It must be set to [`kMTAudioProcessingTapCallbacksVersion_0`](kmtaudioprocessingtapcallbacksversion_0.md).
+The value is passed as a parameter to [`MTAudioProcessingTapCreate(_:_:_:_:)`](../mtaudioprocessingtapcreate%28_,_,_,_%29.md). It must be set to [`kMTAudioProcessingTapCallbacksVersion_0`](../kmtaudioprocessingtapcallbacksversion_0.md).
 
 ## See Also
 
-- [var clientInfo: UnsafeMutableRawPointer?](mtaudioprocessingtapcallbacks/clientinfo.md)
+### Fields
+- [var clientInfo: UnsafeMutableRawPointer?](./clientinfo.md)
   App data that the system passes to the initialization callback.
-- [var `init`: MTAudioProcessingTapInitCallback?](mtaudioprocessingtapcallbacks/init.md)
+- [var `init`: MTAudioProcessingTapInitCallback?](./init.md)
   A callback to initialize the tap processor.
-- [var finalize: MTAudioProcessingTapFinalizeCallback?](mtaudioprocessingtapcallbacks/finalize.md)
+- [var finalize: MTAudioProcessingTapFinalizeCallback?](./finalize.md)
   A callback to perform any necessary cleanup.
-- [var prepare: MTAudioProcessingTapPrepareCallback?](mtaudioprocessingtapcallbacks/prepare.md)
+- [var prepare: MTAudioProcessingTapPrepareCallback?](./prepare.md)
   A callback to prepare the tap processor.
-- [var unprepare: MTAudioProcessingTapUnprepareCallback?](mtaudioprocessingtapcallbacks/unprepare.md)
+- [var unprepare: MTAudioProcessingTapUnprepareCallback?](./unprepare.md)
   A callback to perform any necessary cleanup for previous preparation.
-- [var process: MTAudioProcessingTapProcessCallback](mtaudioprocessingtapcallbacks/process.md)
+- [var process: MTAudioProcessingTapProcessCallback](./process.md)
   A callback for processing the audio.
 
 

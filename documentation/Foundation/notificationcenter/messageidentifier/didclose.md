@@ -1,7 +1,8 @@
 # didClose
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didClose: NotificationCenter.BaseMessageIdentifier<NSPopover.DidCloseMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSPopover.DidCloseMessage>`.
 
 
 ---

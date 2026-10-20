@@ -1,21 +1,26 @@
 # init(modelDimension:keyDimension:valueDimension:headCount:dropout:hasBiases:hasAttentionBiases:addsZeroAttention:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a multi-head attention descriptor with the dimensions, number of attention heads, dropout rate, and bias and padding options you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init?(modelDimension: Int, keyDimension: Int, valueDimension: Int, headCount: Int, dropout: Float, hasBiases: Bool, hasAttentionBiases: Bool, addsZeroAttention: Bool)
+```
+
+```objc
++ (instancetype) descriptorWithModelDimension:(NSUInteger) modelDimension keyDimension:(NSUInteger) keyDimension valueDimension:(NSUInteger) valueDimension headCount:(NSUInteger) headCount dropout:(float) dropout hasBiases:(BOOL) hasBiases hasAttentionBiases:(BOOL) hasAttentionBiases addsZeroAttention:(BOOL) addsZeroAttention;
 ```
 
 ## Parameters
@@ -31,7 +36,8 @@ convenience init?(modelDimension: Int, keyDimension: Int, valueDimension: Int, h
 
 ## See Also
 
-- [convenience init(modelDimension: Int, headCount: Int)](mlcmultiheadattentiondescriptor/init(modeldimension:headcount:).md)
+### Creating Multi-Head Attention Descriptors
+- [convenience init(modelDimension: Int, headCount: Int)](./init%28modeldimension,headcount%29.md)
   Creates a multi-head attention descriptor with the model dimension and number of parallel attention heads you specify.
 
 

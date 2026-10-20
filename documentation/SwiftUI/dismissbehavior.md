@@ -1,7 +1,8 @@
 # DismissBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Programmatic window dismissal behaviors.
 
@@ -22,7 +23,7 @@ struct DismissBehavior
 
 Use values of this type to control window dismissal during the current transaction.
 
-For example, to dismiss windows showing a modal presentation that would otherwise prohibit dismissal, use the [`destructive`](dismissbehavior/destructive.md) behavior:
+For example, to dismiss windows showing a modal presentation that would otherwise prohibit dismissal, use the [`destructive`](./dismissbehavior/destructive.md) behavior:
 
 ```swift
 struct DismissWindowButton: View {
@@ -41,26 +42,27 @@ struct DismissWindowButton: View {
 ## Topics
 
 ### Getting behaviors
-- [static let destructive: DismissBehavior](dismissbehavior/destructive.md)
+- [static let destructive: DismissBehavior](./dismissbehavior/destructive.md)
   The destructive dismiss behavior.
-- [static let interactive: DismissBehavior](dismissbehavior/interactive.md)
+- [static let interactive: DismissBehavior](./dismissbehavior/interactive.md)
   The interactive dismiss behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var dismissWindow: DismissWindowAction](environmentvalues/dismisswindow.md)
+### Closing windows
+- [var dismissWindow: DismissWindowAction](./environmentvalues/dismisswindow.md)
   A window dismissal action stored in a view’s environment.
-- [struct DismissWindowAction](dismisswindowaction.md)
+- [struct DismissWindowAction](./dismisswindowaction.md)
   An action that dismisses a window associated to a particular scene.
-- [var dismiss: DismissAction](environmentvalues/dismiss.md)
+- [var dismiss: DismissAction](./environmentvalues/dismiss.md)
   An action that dismisses the current presentation.
-- [struct DismissAction](dismissaction.md)
+- [struct DismissAction](./dismissaction.md)
   An action that dismisses a presentation.
 
 

@@ -1,18 +1,19 @@
 # c
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entry at position `[2,1]` in the matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The entry at position `[2,1]` in the matrix.
 var c: Double
 ```
 
+```c
+double c;
+```
+
 ## See Also
 
-- [var a: Double](vimage_affinetransform_double/a.md)
+### Affine Transform Matrix Elements
+- [var a: Double](./a.md)
   The entry at position `[1,1]` in the matrix.
-- [var b: Double](vimage_affinetransform_double/b.md)
+- [var b: Double](./b.md)
   The entry at position `[1,2]` in the matrix.
-- [var d: Double](vimage_affinetransform_double/d.md)
+- [var d: Double](./d.md)
   The entry at position `[2,2]` in the matrix.
-- [var tx: Double](vimage_affinetransform_double/tx.md)
+- [var tx: Double](./tx.md)
   The entry at position `[3,1]` in the matrix.
-- [var ty: Double](vimage_affinetransform_double/ty.md)
+- [var ty: Double](./ty.md)
   The entry at position `[3,2]` in the matrix.
 
 

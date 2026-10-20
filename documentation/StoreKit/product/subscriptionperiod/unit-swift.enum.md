@@ -1,7 +1,8 @@
 # Product.SubscriptionPeriod.Unit
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Units of time that describe subscription periods.
 
@@ -23,38 +24,39 @@ enum Unit
 ## Topics
 
 ### Getting the subscription period units
-- [Product.SubscriptionPeriod.Unit.day](product/subscriptionperiod/unit-swift.enum/day.md)
+- [Product.SubscriptionPeriod.Unit.day](./unit-swift.enum/day.md)
   A subscription period unit of a day.
-- [Product.SubscriptionPeriod.Unit.month](product/subscriptionperiod/unit-swift.enum/month.md)
+- [Product.SubscriptionPeriod.Unit.month](./unit-swift.enum/month.md)
   A subscription period unit of a month.
-- [Product.SubscriptionPeriod.Unit.week](product/subscriptionperiod/unit-swift.enum/week.md)
+- [Product.SubscriptionPeriod.Unit.week](./unit-swift.enum/week.md)
   A subscription period unit of a week.
-- [Product.SubscriptionPeriod.Unit.year](product/subscriptionperiod/unit-swift.enum/year.md)
+- [Product.SubscriptionPeriod.Unit.year](./unit-swift.enum/year.md)
   A subscription period unit of a year.
 ### Getting localized and debug descriptions
-- [var localizedDescription: String](product/subscriptionperiod/unit-swift.enum/localizeddescription.md)
+- [var localizedDescription: String](./unit-swift.enum/localizeddescription.md)
   The localized text that describes the subscription period unit.
 ### Getting the formatted description
-- [func formatted<S>(S) -> S.FormatOutput](product/subscriptionperiod/unit-swift.enum/formatted(_:).md)
-- [Product.SubscriptionPeriod.Unit.FormatStyle](product/subscriptionperiod/unit-swift.enum/formatstyle.md)
+- [func formatted<S>(S) -> S.FormatOutput](./unit-swift.enum/formatted%28_%29.md)
+- [Product.SubscriptionPeriod.Unit.FormatStyle](./unit-swift.enum/formatstyle.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../../Swift/comparable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let value: Int](product/subscriptionperiod/value.md)
+### Getting the subscription period
+- [let value: Int](./value.md)
   The number of period units.
-- [let unit: Product.SubscriptionPeriod.Unit](product/subscriptionperiod/unit-swift.property.md)
+- [let unit: Product.SubscriptionPeriod.Unit](./unit-swift.property.md)
   The increment of time for the subscription period.
 
 

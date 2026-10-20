@@ -1,7 +1,8 @@
 # activeGroupPreset
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The settings that define playback for a group of sounds.
 
@@ -19,15 +20,20 @@ The settings that define playback for a group of sounds.
 var activeGroupPreset: PHASEGroupPreset? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) PHASEGroupPreset * activeGroupPreset;
+```
+
 #### Discussion
 
-This property returns the most recent group preset on which the app calls [`activate()`](phasegrouppreset/activate().md). Group presets map a collection of sounds in a group to settings the app applies in a specific context. For more information, see [`PHASEGroupPreset`](phasegrouppreset.md).
+This property returns the most recent group preset on which the app calls [`activate()`](../phasegrouppreset/activate%28%29.md). Group presets map a collection of sounds in a group to settings the app applies in a specific context. For more information, see [`PHASEGroupPreset`](../phasegrouppreset.md).
 
 ## See Also
 
-- [var groups: [String : PHASEGroup]](phaseengine/groups.md)
+### Managing Groups of Sounds
+- [var groups: [String : PHASEGroup]](./groups.md)
   A list of named groups that contain sounds the app operates on collectively.
-- [var duckers: [PHASEDucker]](phaseengine/duckers.md)
+- [var duckers: [PHASEDucker]](./duckers.md)
   An array of objects that reduce the volume of simultaneously playing sounds.
 
 

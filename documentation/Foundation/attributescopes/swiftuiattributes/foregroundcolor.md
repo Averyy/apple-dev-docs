@@ -1,7 +1,8 @@
 # foregroundColor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a foreground color attribute.
 
@@ -22,7 +23,8 @@ let foregroundColor: AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute
 
 ## See Also
 
-- [let backgroundColor: AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute](attributescopes/swiftuiattributes/backgroundcolor.md)
+### Using Color Attributes
+- [let backgroundColor: AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute](./backgroundcolor.md)
   A property for accessing a background color attribute.
 
 

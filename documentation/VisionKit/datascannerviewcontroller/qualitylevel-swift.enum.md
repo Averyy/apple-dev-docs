@@ -1,7 +1,8 @@
 # DataScannerViewController.QualityLevel
 
 **Framework**: VisionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible quality levels that the scanner uses to find data.
 
@@ -23,36 +24,37 @@ The quality levels mostly impact the camera resolution.
 ## Topics
 
 ### Identifying quality levels
-- [DataScannerViewController.QualityLevel.balanced](datascannerviewcontroller/qualitylevel-swift.enum/balanced.md)
+- [DataScannerViewController.QualityLevel.balanced](./qualitylevel-swift.enum/balanced.md)
   A quality level that’s between fast and accurate.
-- [DataScannerViewController.QualityLevel.fast](datascannerviewcontroller/qualitylevel-swift.enum/fast.md)
+- [DataScannerViewController.QualityLevel.fast](./qualitylevel-swift.enum/fast.md)
   A quality level that prioritizes recognition speed over accuracy.
-- [DataScannerViewController.QualityLevel.accurate](datascannerviewcontroller/qualitylevel-swift.enum/accurate.md)
+- [DataScannerViewController.QualityLevel.accurate](./qualitylevel-swift.enum/accurate.md)
   A quality level that prioritizes recognition accuracy over speed.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var delegate: (any DataScannerViewControllerDelegate)?](datascannerviewcontroller/delegate.md)
+### Configuring data scanners
+- [var delegate: (any DataScannerViewControllerDelegate)?](./delegate.md)
   The delegate that handles user interaction with items recognized by the data scanner.
-- [let qualityLevel: DataScannerViewController.QualityLevel](datascannerviewcontroller/qualitylevel-swift.property.md)
+- [let qualityLevel: DataScannerViewController.QualityLevel](./qualitylevel-swift.property.md)
   The resolution that the scanner uses to find data.
-- [let recognizesMultipleItems: Bool](datascannerviewcontroller/recognizesmultipleitems.md)
+- [let recognizesMultipleItems: Bool](./recognizesmultipleitems.md)
   A Boolean value that indicates whether the scanner should identify all items in the live video.
-- [let isHighFrameRateTrackingEnabled: Bool](datascannerviewcontroller/ishighframeratetrackingenabled.md)
+- [let isHighFrameRateTrackingEnabled: Bool](./ishighframeratetrackingenabled.md)
   A Boolean value that determines the frequency at which the scanner updates the geometry of recognized items.
-- [let isPinchToZoomEnabled: Bool](datascannerviewcontroller/ispinchtozoomenabled.md)
+- [let isPinchToZoomEnabled: Bool](./ispinchtozoomenabled.md)
   A Boolean value that indicates whether people can use a two-finger pinch-to-zoom gesture.
-- [let isGuidanceEnabled: Bool](datascannerviewcontroller/isguidanceenabled.md)
+- [let isGuidanceEnabled: Bool](./isguidanceenabled.md)
   A Boolean value that indicates whether the scanner provides help to a person when selecting items.
-- [let isHighlightingEnabled: Bool](datascannerviewcontroller/ishighlightingenabled.md)
+- [let isHighlightingEnabled: Bool](./ishighlightingenabled.md)
   A Boolean value that indicates whether the scanner displays highlights around recognized items.
 
 

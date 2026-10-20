@@ -1,7 +1,8 @@
 # featureColumnNames
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the columns containing feature values.
 
@@ -22,9 +23,10 @@ var featureColumnNames: [String] { get }
 
 ## See Also
 
-- [var classCount: Int](treeclassifiermodel/classcount.md)
+### Getting the properties
+- [var classCount: Int](./classcount.md)
   The number of classes.
-- [var predictionColumnName: String](treeclassifiermodel/predictioncolumnname.md)
+- [var predictionColumnName: String](./predictioncolumnname.md)
   The name of the column containing the predicted labels.
 
 

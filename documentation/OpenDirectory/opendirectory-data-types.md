@@ -1,24 +1,26 @@
 # OpenDirectory Data Types
 
-**Framework**: Open Directory
+**Framework**: Open Directory  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias ODPolicyAttributeType](odpolicyattributetype.md)
-- [typealias ODPolicyCategoryType](odpolicycategorytype.md)
-- [typealias ODPolicyKeyType](odpolicykeytype.md)
-- [typealias ODPolicyType](odpolicytype.md)
-- [typealias ODErrorUserInfoKeyType](oderroruserinfokeytype.md)
-- [struct ODFrameworkErrors](odframeworkerrors.md)
-- [typealias ODOptionKeyType](odoptionkeytype.md)
+- [typealias ODPolicyAttributeType](./odpolicyattributetype.md)
+- [typealias ODPolicyCategoryType](./odpolicycategorytype.md)
+- [typealias ODPolicyKeyType](./odpolicykeytype.md)
+- [typealias ODPolicyType](./odpolicytype.md)
+- [typealias ODErrorUserInfoKeyType](./oderroruserinfokeytype.md)
+- [struct ODFrameworkErrors](./odframeworkerrors.md)
+- [typealias ODOptionKeyType](./odoptionkeytype.md)
 
 ## See Also
 
-- [OpenDirectory Functions](opendirectory-functions.md)
+### Reference
+- [OpenDirectory Functions](./opendirectory-functions.md)
   This document describes the functions, constants, and data types used to interact with Open Directory.
-- [OpenDirectory Enumerations](opendirectory-enumerations.md)
-- [OpenDirectory Constants](opendirectory-constants.md)
+- [OpenDirectory Enumerations](./opendirectory-enumerations.md)
+- [OpenDirectory Constants](./opendirectory-constants.md)
 
 
 ---

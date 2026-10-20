@@ -1,7 +1,8 @@
 # constantLocation(named:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the resolved buffer and constant indices for the named constant parameter, or `nil` if no parameter with that name exists.
 
@@ -19,7 +20,7 @@ func constantLocation(named name: String) -> LowLevelMaterialParameterMapping.Co
 
 #### Return Value
 
-A [`LowLevelMaterialParameterMapping.ConstantLocation`](lowlevelmaterialparametermapping/constantlocation.md) with the buffer and constant indices, or `nil` if no constant parameter with that name exists.
+A [`LowLevelMaterialParameterMapping.ConstantLocation`](./constantlocation.md) with the buffer and constant indices, or `nil` if no constant parameter with that name exists.
 
 ## Parameters
 
@@ -27,11 +28,12 @@ A [`LowLevelMaterialParameterMapping.ConstantLocation`](lowlevelmaterialparamete
 
 ## See Also
 
-- [func bufferLocation(named: String) -> Int?](lowlevelmaterialparametermapping/bufferlocation(named:).md)
+### Locating parameters
+- [func bufferLocation(named: String) -> Int?](./bufferlocation%28named%29.md)
   Returns the argument table buffer slot index for the named buffer parameter, or `nil` if no parameter with that name exists.
-- [func textureLocation(named: String) -> Int?](lowlevelmaterialparametermapping/texturelocation(named:).md)
+- [func textureLocation(named: String) -> Int?](./texturelocation%28named%29.md)
   Returns the argument table texture slot index for the named texture parameter, or `nil` if no parameter with that name exists.
-- [LowLevelMaterialParameterMapping.ConstantLocation](lowlevelmaterialparametermapping/constantlocation.md)
+- [LowLevelMaterialParameterMapping.ConstantLocation](./constantlocation.md)
   The resolved buffer and constant slot indices for a named constant parameter.
 
 

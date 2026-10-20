@@ -1,7 +1,8 @@
 # naturalWind
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var naturalWind: MTRFanControlWindBitmap { get }
+```
+
+```c
+MTRFanControlWindBitmapNaturalWind
 ```
 
 

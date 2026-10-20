@@ -7,24 +7,25 @@ Send a notification to the user client that data is available for reading on the
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn sendOutputNotification(
  void);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns kIOReturnSuccess if the notification was successfully sent.
 
 ## See Also
 
-- [getInputPort](iostream/1809770-getinputport.md)
+### Managing notification ports
+- [getInputPort](./api-1809770-getinputport.md)
   Get the Mach port used to receive notifications from user space that a buffer has been added to the input queue.
-- [getOutputPort](iostream/1809774-getoutputport.md)
+- [getOutputPort](./api-1809774-getoutputport.md)
   Get the Mach port used to send notifications to user space that a buffer has been added to the output queue.
-- [setInputPort](iostream/1809793-setinputport.md)
+- [setInputPort](./api-1809793-setinputport.md)
   Set the Mach port used to receive notifications from user space that a buffer has been added to the input queue.
-- [setOutputPort](iostream/1809801-setoutputport.md)
+- [setOutputPort](./api-1809801-setoutputport.md)
   Set the Mach port used to send notifications to user space that a buffer has been added to the output queue.
 
 

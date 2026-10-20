@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that identifies the library.
@@ -20,15 +21,20 @@ A string that identifies the library.
 var label: String? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSString * label;
+```
+
 #### Discussion
 
-Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtldynamiclibrary/device.md)
+### Identifying the library
+- [var device: any MTLDevice](./device.md)
   The Metal device object that created the dynamic library.
-- [var installName: String](mtldynamiclibrary/installname.md)
+- [var installName: String](./installname.md)
   A file path for this dynamic library.
 
 

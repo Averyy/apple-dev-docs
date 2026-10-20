@@ -1,7 +1,8 @@
 # AdSystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Enumeration of system-evaluated delivery states for an ad.
 
@@ -10,19 +11,24 @@ Enumeration of system-evaluated delivery states for an ad.
 
 ## Declaration
 
-```swift
+```
 string AdSystemStatus
 ```
 
+## Possible Values
+
+- `RUNNING`: The ad is active and eligible to serve.
+- `NOT_RUNNING`: The system has identified a condition preventing the ad from delivering.
+
 ## See Also
 
-- [type AdStatus](adstatus.md)
+- [type AdStatus](./adstatus.md)
   Enumeration of advertiser-configurable serving states for an ad.
-- [type AdDisplayStatus](addisplaystatus.md)
+- [type AdDisplayStatus](./addisplaystatus.md)
   Rolled-up delivery state for an ad, combining advertiser settings and system conditions into a single user-facing label.
-- [type AdSystemStatusReason](adsystemstatusreason.md)
+- [type AdSystemStatusReason](./adsystemstatusreason.md)
   A reason code explaining why an ad is not currently running.
-- [type AdSystemLimitedStatusReason](adsystemlimitedstatusreason.md)
+- [type AdSystemLimitedStatusReason](./adsystemlimitedstatusreason.md)
   A reason code indicating that an ad is running but at reduced delivery capacity due to a policy condition.
 
 

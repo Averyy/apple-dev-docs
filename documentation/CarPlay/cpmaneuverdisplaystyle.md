@@ -1,7 +1,8 @@
 # CPManeuverDisplayStyle
 
 **Framework**: CarPlay  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A display style that determines the visual layout for a maneuver.
 
@@ -16,36 +17,41 @@ A display style that determines the visual layout for a maneuver.
 struct CPManeuverDisplayStyle
 ```
 
+```c
+enum CPManeuverDisplayStyle : NSInteger;
+```
+
 ## Topics
 
 ### Display Styles
-- [static var leadingSymbol: CPManeuverDisplayStyle](cpmaneuverdisplaystyle/leadingsymbol.md)
+- [static var leadingSymbol: CPManeuverDisplayStyle](./cpmaneuverdisplaystyle/leadingsymbol.md)
   The symbol appears before the instructions for the maneuver.
-- [static var trailingSymbol: CPManeuverDisplayStyle](cpmaneuverdisplaystyle/trailingsymbol.md)
+- [static var trailingSymbol: CPManeuverDisplayStyle](./cpmaneuverdisplaystyle/trailingsymbol.md)
   The symbol appears after the instructions for the maneuver.
-- [static var instructionOnly: CPManeuverDisplayStyle](cpmaneuverdisplaystyle/instructiononly.md)
+- [static var instructionOnly: CPManeuverDisplayStyle](./cpmaneuverdisplaystyle/instructiononly.md)
   Only the instructions appear for the maneuver.
-- [static var symbolOnly: CPManeuverDisplayStyle](cpmaneuverdisplaystyle/symbolonly.md)
+- [static var symbolOnly: CPManeuverDisplayStyle](./cpmaneuverdisplaystyle/symbolonly.md)
   Only the symbol appears for the maneuver.
 ### Initializers
-- [init(rawValue: Int)](cpmaneuverdisplaystyle/init(rawvalue:).md)
+- [init(rawValue: Int)](./cpmaneuverdisplaystyle/init%28rawvalue%29.md)
   Initializes a maneuver display style using the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func mapTemplate(CPMapTemplate, displayStyleFor: CPManeuver) -> CPManeuverDisplayStyle](cpmaptemplatedelegate/maptemplate(_:displaystylefor:).md)
+### Setting the Display Style
+- [func mapTemplate(CPMapTemplate, displayStyleFor: CPManeuver) -> CPManeuverDisplayStyle](./cpmaptemplatedelegate/maptemplate%28_,displaystylefor%29.md)
   Asks the delegate for the maneuver’s display style.
 
 

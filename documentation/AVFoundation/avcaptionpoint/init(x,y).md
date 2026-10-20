@@ -1,15 +1,16 @@
 # init(x:y:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a caption point with x and y coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

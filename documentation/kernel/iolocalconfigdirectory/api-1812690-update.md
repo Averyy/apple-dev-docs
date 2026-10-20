@@ -5,13 +5,13 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn update(
  UInt32 offset,
  const UInt32 *&romBase);
 ```
 
-#### Return_value
+#### Return Value
 
 kIOReturnSuccess if the specified offset is now accessable at romBase[offset].
 

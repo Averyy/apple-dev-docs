@@ -1,7 +1,8 @@
 # MPSImageEuclideanDistanceTransform
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that performs a Euclidean distance transform on an image.
 
@@ -19,31 +20,35 @@ A filter that performs a Euclidean distance transform on an image.
 class MPSImageEuclideanDistanceTransform
 ```
 
+```objc
+@interface MPSImageEuclideanDistanceTransform : MPSUnaryImageKernel
+```
+
 ## Topics
 
 ### Creating a Euclidean distance transform
-- [init(device: any MTLDevice)](mpsimageeuclideandistancetransform/init(device:).md)
+- [init(device: any MTLDevice)](./mpsimageeuclideandistancetransform/init%28device%29.md)
   Creates a Euclidean distance transform that runs on a specified device.
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimageeuclideandistancetransform/init(coder:device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimageeuclideandistancetransform/init%28coder,device%29.md)
   Creates a Euclidean distance transform that uses a specified decoder for your data and runs on a specified device.
 ### Limiting the search for nonzero pixels
-- [var searchLimitRadius: Float](mpsimageeuclideandistancetransform/searchlimitradius.md)
+- [var searchLimitRadius: Float](./mpsimageeuclideandistancetransform/searchlimitradius.md)
   Limits the search in an image from a pixel to the closest nonzero pixel within a specified radius.
 
 ## Relationships
 
 ### Inherits From
-- [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [MPSUnaryImageKernel](./mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

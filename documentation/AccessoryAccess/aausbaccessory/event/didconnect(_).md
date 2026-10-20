@@ -1,7 +1,8 @@
 # AAUSBAccessory.Event.didConnect(_:)
 
 **Framework**: Accessory Access  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The event the framework sends when a USB accessory connects to the system.
 
@@ -16,7 +17,8 @@ case didConnect(AAUSBAccessory)
 
 ## See Also
 
-- [AAUSBAccessory.Event.didDisconnect(_:)](aausbaccessory/event/diddisconnect(_:).md)
+### Responding to USB accessory events
+- [AAUSBAccessory.Event.didDisconnect(_:)](./diddisconnect%28_%29.md)
   The method the framework calls when a USB accessory disconnects from the system.
 
 

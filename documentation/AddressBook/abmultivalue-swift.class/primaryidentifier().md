@@ -1,17 +1,22 @@
 # primaryIdentifier()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identifier for the primary value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func primaryIdentifier() -> String!
+```
+
+```objc
+- (NSString *) primaryIdentifier;
 ```
 
 

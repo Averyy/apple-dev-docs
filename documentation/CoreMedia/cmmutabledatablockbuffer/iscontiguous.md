@@ -1,7 +1,8 @@
 # isContiguous
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determine whether the block buffer is contiguous.
 

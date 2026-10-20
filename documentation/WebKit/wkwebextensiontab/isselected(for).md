@@ -1,7 +1,8 @@
 # isSelected(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the selected state of the tab is needed.
 
@@ -16,6 +17,10 @@ Called when the selected state of the tab is needed.
 
 ```swift
 optional func isSelected(for context: WKWebExtensionContext) -> Bool
+```
+
+```objc
+- (BOOL) isSelectedForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

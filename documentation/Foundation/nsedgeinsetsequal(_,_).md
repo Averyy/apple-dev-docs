@@ -1,7 +1,8 @@
 # NSEdgeInsetsEqual(_:_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether two edge insets structures are equal.
 
@@ -15,6 +16,10 @@ Returns a Boolean value that indicates whether two edge insets structures are eq
 
 ```swift
 func NSEdgeInsetsEqual(_ aInsets: NSEdgeInsets, _ bInsets: NSEdgeInsets) -> Bool
+```
+
+```c
+extern BOOL NSEdgeInsetsEqual(NSEdgeInsets aInsets, NSEdgeInsets bInsets);
 ```
 
 

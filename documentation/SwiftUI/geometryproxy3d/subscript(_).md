@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Resolves the value of an anchor to the container view.
 
@@ -16,13 +17,14 @@ subscript<T>(anchor: Anchor<T>) -> T { get }
 
 ## See Also
 
-- [func frame(in: some CoordinateSpaceProtocol) -> Rect3D](geometryproxy3d/frame(in:).md)
+### Accessing geometry characteristics
+- [func frame(in: some CoordinateSpaceProtocol) -> Rect3D](./frame%28in%29.md)
   The container view’s bounds rectangle converted to a defined coordinate space.
-- [var size: Size3D](geometryproxy3d/size.md)
+- [var size: Size3D](./size.md)
   The size of the container view.
-- [var safeAreaInsets: EdgeInsets3D](geometryproxy3d/safeareainsets.md)
+- [var safeAreaInsets: EdgeInsets3D](./safeareainsets.md)
   The safe area inset of the container view.
-- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy3d/transform(in:).md)
+- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](./transform%28in%29.md)
   The container view’s 3D transform converted to a defined coordinate space.
 
 

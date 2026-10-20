@@ -1,7 +1,8 @@
 # MTREventPriority
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.5+
@@ -18,24 +19,28 @@
 enum MTREventPriority
 ```
 
+```c
+enum MTREventPriority : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTREventPriority.critical](mtreventpriority/critical.md)
-- [MTREventPriority.debug](mtreventpriority/debug.md)
-- [MTREventPriority.info](mtreventpriority/info.md)
+- [MTREventPriority.critical](./mtreventpriority/critical.md)
+- [MTREventPriority.debug](./mtreventpriority/debug.md)
+- [MTREventPriority.info](./mtreventpriority/info.md)
 ### Initializers
-- [init?(rawValue: UInt)](mtreventpriority/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtreventpriority/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

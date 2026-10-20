@@ -1,14 +1,15 @@
 # About the EXT-X-VERSION tag
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Find the protocol version that corresponds with the HLS features your app supports.
 
 #### Overview
 
-The `EXT-X-VERSION` tag indicates the compatibility version of the Playlist file. This file, its associated media, and its server must comply with all provisions of the IETF Internet-Draft of [`HTTP Live Streaming 2nd Edition`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-hls-rfc8216bis) (or earlier specifications) describing the protocol version indicated by the tag value. A Playlist file that doesn’t contain an `EXT-X-VERSION` tag must comply with version 1 of this protocol. Support for M3U8 Playlists was introduced with iOS 3.0, Mac OS X 10.6, and Safari 4.
+The `EXT-X-VERSION` tag indicates the compatibility version of the Playlist file. This file, its associated media, and its server must comply with all provisions of the IETF Internet-Draft of [HTTP Live Streaming 2nd Edition](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis) (or earlier specifications) describing the protocol version indicated by the tag value. A Playlist file that doesn’t contain an `EXT-X-VERSION` tag must comply with version 1 of this protocol. Support for M3U8 Playlists was introduced with iOS 3.0, Mac OS X 10.6, and Safari 4.
 
-##### High Level Features
+##### High-level features
 
 | EXT-X-VERSION | Features and usage notes |
 | --- | --- |
@@ -24,7 +25,7 @@ The `EXT-X-VERSION` tag indicates the compatibility version of the Playlist file
 | 11 | `QUERYPARAM` attribute of `EXT-X-DEFINE` |
 | 12 | Attributes starting with ‘`REQ-`’ |
 
-##### Backward Compatibility
+##### Backward compatibility
 
 > ❗ **Important**: Older clients ignore backward-compatible features and will still play back the content in some form. Specify only the protocol version that’s required for backward compatibility in a given feature. For example, you don’t have to specify protocol version 5 if you’ve just added SUBTITLES.
 
@@ -46,9 +47,9 @@ The following features aren’t backward compatible. Older clients may fail to p
 
 The following tables list the versions of specifications where specific features are described, along with the corresponding iOS release that supports those features.
 
-> **Note**: Over time, HLS has been described by different documents: draft-pantos-http-live-streaming, which became [`RFC 8216`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8216), and now [`draft-pantos-hls-rfc8216bis`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
+> **Note**: Over time, HLS has been described by different documents: draft-pantos-http-live-streaming, which became [RFC 8216](https://datatracker.ietf.org/doc/html/rfc8216), and now [draft-pantos-hls-rfc8216bis](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
 
-##### Draft Pantos Http Live Streaming and Rfc 8216
+##### draft-pantos-http-live-streaming and RFC 8216
 
 | Revision | iOS Version | Notes |
 | --- | --- | --- |
@@ -70,7 +71,7 @@ The following tables list the versions of specifications where specific features
 | 21, 22, 23 | 10.3.1 | Clarified `AUTOSELECT=YES` uniqueness. Added mention of CMAF. |
 | RFC8216 | 10.3.1 | Wording changes and clarifications. |
 
-##### Draft Pantos Hls Rfc8216bis
+##### draft-pantos-hls-rfc8216bis
 
 | Revision | iOS Version | Notes |
 | --- | --- | --- |
@@ -91,11 +92,12 @@ The following tables list the versions of specifications where specific features
 | 14 | 17.0 | Added `BIT-DEPTH` and `SAMPLE-RATE` attributes to `EXT-X-MEDIA`.  Extended `CHANNELS` attribute of `EXT-X-MEDIA` to allow a third parameter.  Added `REQ-VIDEO-LAYOUT` attribute to `EXT-X-STREAM-INF` and `EXT-X-I-FRAME-STREAM-INF`.  Added mention of the extensible priority scheme.  Added appendix on “Displaying Rendition Names”. Minor clarifications. |
 | 15 | 17.5 | Added mention of `SAMPLE-AES-CTR` method of `EXT-X-KEY`.  Some clarifications. |
 
-> ❗ **Important**: Always use the most recent version of the [`HTTP Live Streaming tools`](https://developer.apple.comhttps://developer.apple.com/go/?id=http-live-streaming-tools) to generate or test your HTTP Live Streams.
+> ❗ **Important**: Always use the most recent version of the [HTTP Live Streaming tools](https://developer.apple.com/go/?id=http-live-streaming-tools) to generate or test your HTTP Live Streams.
 
 ## See Also
 
-- [Example playlists for HTTP Live Streaming](example-playlists-for-http-live-streaming.md)
+### Stream creation
+- [Example playlists for HTTP Live Streaming](./example-playlists-for-http-live-streaming.md)
   View and compare playlists for different HLS applications.
 
 

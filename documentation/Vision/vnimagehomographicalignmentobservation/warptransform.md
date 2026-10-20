@@ -1,7 +1,8 @@
 # warpTransform
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The warp transform matrix to morph the floating image into the reference image.
 
@@ -17,6 +18,10 @@ The warp transform matrix to morph the floating image into the reference image.
 
 ```swift
 var warpTransform: matrix_float3x3 { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) matrix_float3x3 warpTransform;
 ```
 
 

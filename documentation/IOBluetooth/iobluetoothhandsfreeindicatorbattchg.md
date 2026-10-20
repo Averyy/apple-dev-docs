@@ -1,17 +1,22 @@
 # IOBluetoothHandsFreeIndicatorBattChg
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The command string you use to show a battery charge level indicator on a phone.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 let IOBluetoothHandsFreeIndicatorBattChg: String
+```
+
+```c
+extern NSString * const IOBluetoothHandsFreeIndicatorBattChg;
 ```
 
 #### Discussion

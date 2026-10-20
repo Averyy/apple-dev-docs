@@ -1,7 +1,8 @@
 # getSelectedItem
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Retrieves the menu item in the menu bar that is currently in focus.
 
@@ -10,21 +11,22 @@ Retrieves the menu item in the menu bar that is currently in focus.
 
 ## Declaration
 
-```swift
+```
 Element getSelectedItem();
 ```
 
-#### Return_value
+#### Return Value
 
 The currently selected element.
 
 ## See Also
 
-- [getDocument](menubardocument/1627405-getdocument.md)
+### Setting and Retrieving Menu Item Documents
+- [getDocument](./api-1627405-getdocument.md)
   Retrieves the document associated with the specified menu item.
-- [setDocument](menubardocument/1627374-setdocument.md)
+- [setDocument](./api-1627374-setdocument.md)
   Associates a document with a menu item.
-- [setSelectedItem](menubardocument/1627427-setselecteditem.md)
+- [setSelectedItem](./api-1627427-setselecteditem.md)
   Sets the focus in a menu bar to the specified menu item.
 
 

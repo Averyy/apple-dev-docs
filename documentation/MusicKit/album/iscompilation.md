@@ -1,7 +1,8 @@
 # isCompilation
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the album is a compilation.
 

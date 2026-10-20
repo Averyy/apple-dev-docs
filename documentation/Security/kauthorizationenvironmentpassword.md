@@ -1,7 +1,8 @@
 # kAuthorizationEnvironmentPassword
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type for an authorization item containing a password.
 
@@ -13,6 +14,10 @@ The type for an authorization item containing a password.
 
 ```swift
 var kAuthorizationEnvironmentPassword: String { get }
+```
+
+```c
+#define kAuthorizationEnvironmentPassword
 ```
 
 

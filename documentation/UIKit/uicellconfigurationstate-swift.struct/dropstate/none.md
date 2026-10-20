@@ -1,7 +1,8 @@
 # UICellConfigurationState.DropState.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system hasn’t associated the cell with a drag session.
 
@@ -10,7 +11,7 @@ The system hasn’t associated the cell with a drag session.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ case none
 
 ## See Also
 
-- [UICellConfigurationState.DropState.notTargeted](uicellconfigurationstate-swift.struct/dropstate/nottargeted.md)
+### Drop states
+- [UICellConfigurationState.DropState.notTargeted](./nottargeted.md)
   A drag session is active and can perform a drop in the cell’s container, but the cell itself isn’t the drop target.
-- [UICellConfigurationState.DropState.targeted](uicellconfigurationstate-swift.struct/dropstate/targeted.md)
+- [UICellConfigurationState.DropState.targeted](./targeted.md)
   The cell is the drop target for a drag session.
 
 

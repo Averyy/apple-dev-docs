@@ -1,17 +1,22 @@
 # copyDescription
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A copy description callback for your program-defined context data. Optional.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var copyDescription: CFXMLParserCopyDescriptionCallBack!
+```
+
+```c
+CFXMLParserCopyDescriptionCallBack copyDescription;
 ```
 
 

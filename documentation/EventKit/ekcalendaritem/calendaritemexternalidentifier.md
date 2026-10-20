@@ -1,7 +1,8 @@
 # calendarItemExternalIdentifier
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar item’s external identifier as provided by the calendar server.
 
@@ -17,6 +18,10 @@ The calendar item’s external identifier as provided by the calendar server.
 
 ```swift
 var calendarItemExternalIdentifier: String! { get }
+```
+
+```objc
+@property (nonatomic, readonly, null_unspecified) NSString * calendarItemExternalIdentifier;
 ```
 
 #### Discussion
@@ -38,9 +43,10 @@ For Exchange servers, the identifier is different between iOS and macOS and diff
 
 ## See Also
 
-- [var calendarItemIdentifier: String](ekcalendaritem/calendaritemidentifier.md)
+### Accessing Calendar Items
+- [var calendarItemIdentifier: String](./calendaritemidentifier.md)
   The calendar item’s unique identifier.
-- [var uuid: String](ekcalendaritem/uuid.md)
+- [var uuid: String](./uuid.md)
   The calendar item’s unique identifier.
 
 

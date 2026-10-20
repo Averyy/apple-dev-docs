@@ -1,7 +1,8 @@
 # UIView.TintAdjustmentMode.dimmed
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view’s tint color property returns a desaturated, dimmed version of the view’s original tint color.
 
@@ -9,7 +10,7 @@ The view’s tint color property returns a desaturated, dimmed version of the vi
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ The view’s tint color property returns a desaturated, dimmed version of the vi
 case dimmed
 ```
 
+```c
+UIViewTintAdjustmentModeDimmed
+```
+
 ## See Also
 
-- [UIView.TintAdjustmentMode.automatic](uiview/tintadjustmentmode-swift.enum/automatic.md)
+### Constants
+- [UIView.TintAdjustmentMode.automatic](./automatic.md)
   The tint adjustment mode of the view is the same as its superview’s tint adjustment mode (or `UIViewTintAdjustmentModeNormal` if the view has no superview).
-- [UIView.TintAdjustmentMode.normal](uiview/tintadjustmentmode-swift.enum/normal.md)
+- [UIView.TintAdjustmentMode.normal](./normal.md)
   The view’s tint color property returns the completely unmodified tint color of the view.
 
 

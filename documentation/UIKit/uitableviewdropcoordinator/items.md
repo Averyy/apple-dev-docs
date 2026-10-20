@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The items being dragged.
@@ -16,6 +17,10 @@ The items being dragged.
 
 ```swift
 var items: [any UITableViewDropItem] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<id<UITableViewDropItem>> * items;
 ```
 
 

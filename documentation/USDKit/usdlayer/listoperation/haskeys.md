@@ -1,7 +1,8 @@
 # hasKeys
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether any operation slot has been authored.
 

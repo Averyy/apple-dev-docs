@@ -1,7 +1,8 @@
 # firmwareStatus
 
 **Framework**: Playground Bluetooth  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A value that indicates whether a peripheral needs a firmware update.
 
@@ -17,9 +18,10 @@ var firmwareStatus: PlaygroundBluetoothConnectionView.Item.FirmwareStatus?
 
 ## See Also
 
-- [var batteryLevel: Double?](playgroundbluetoothconnectionview/item/3029494-batterylevel.md)
+### Displaying Statuses
+- [var batteryLevel: Double?](./api-3029494-batterylevel.md)
   A value between 0 and 1.0 indicating a peripheral’s percent battery charge.
-- [enum PlaygroundBluetoothConnectionView.Item.FirmwareStatus](playgroundbluetoothconnectionview/item/firmwarestatus.md)
+- [enum PlaygroundBluetoothConnectionView.Item.FirmwareStatus](./firmwarestatus.md)
   The states you use to indicate whether a peripheral’s firmware is current
 
 

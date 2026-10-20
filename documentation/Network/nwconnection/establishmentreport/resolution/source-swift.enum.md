@@ -1,7 +1,8 @@
 # NWConnection.EstablishmentReport.Resolution.Source
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Sources that may provide DNS responses.
 
@@ -23,30 +24,31 @@ enum Source
 ## Topics
 
 ### Resolution Sources
-- [NWConnection.EstablishmentReport.Resolution.Source.query](nwconnection/establishmentreport/resolution/source-swift.enum/query.md)
+- [NWConnection.EstablishmentReport.Resolution.Source.query](./source-swift.enum/query.md)
   The DNS response was received from the network.
-- [NWConnection.EstablishmentReport.Resolution.Source.cache](nwconnection/establishmentreport/resolution/source-swift.enum/cache.md)
+- [NWConnection.EstablishmentReport.Resolution.Source.cache](./source-swift.enum/cache.md)
   The DNS response was retrieved from a local cache.
-- [NWConnection.EstablishmentReport.Resolution.Source.expiredCache](nwconnection/establishmentreport/resolution/source-swift.enum/expiredcache.md)
+- [NWConnection.EstablishmentReport.Resolution.Source.expiredCache](./source-swift.enum/expiredcache.md)
   The DNS response had expired and was retrieved from a local cache.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let duration: TimeInterval](nwconnection/establishmentreport/resolution/duration.md)
+### Measuring Performance
+- [let duration: TimeInterval](./duration.md)
   The duration of this resolution step, from when the query was issued to when the response was complete.
-- [let source: NWConnection.EstablishmentReport.Resolution.Source](nwconnection/establishmentreport/resolution/source-swift.property.md)
+- [let source: NWConnection.EstablishmentReport.Resolution.Source](./source-swift.property.md)
   The source of the DNS response.
-- [var dnsProtocol: NWConnection.EstablishmentReport.Resolution.DNSProtocol](nwconnection/establishmentreport/resolution/dnsprotocol-swift.property.md)
+- [var dnsProtocol: NWConnection.EstablishmentReport.Resolution.DNSProtocol](./dnsprotocol-swift.property.md)
   The transport protocol your connection used for DNS resolution.
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol](./dnsprotocol-swift.enum.md)
   A set of transport protocols connections use for DNS resolution.
 
 

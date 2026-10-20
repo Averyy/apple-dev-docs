@@ -1,7 +1,8 @@
 # MarkupOrderedSet.Element
 
 **Framework**: PaperKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element in the set.
 
@@ -20,9 +21,10 @@ typealias Element = any Markup
 
 ## See Also
 
-- [MarkupOrderedSet.ElementID](markuporderedset/elementid.md)
+### Identifying elements
+- [MarkupOrderedSet.ElementID](./elementid.md)
   The markup ID types supported in a markup ordered set.
-- [MarkupOrderedSet.ElementIDs](markuporderedset/elementids.md)
+- [MarkupOrderedSet.ElementIDs](./elementids.md)
   A view of a set’s ids.
 
 

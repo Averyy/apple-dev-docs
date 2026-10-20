@@ -1,7 +1,8 @@
 # constraints
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A change that invalidates a view’s constraints.
 
@@ -15,19 +16,22 @@ A change that invalidates a view’s constraints.
 static var constraints: NSView.Invalidations.Constraints { get }
 ```
 
+Available when `Self` is `NSView.Invalidations.Constraints`.
+
 #### Discussion
 
-Use this invalidation type to set [`needsUpdateConstraints`](nsview/needsupdateconstraints.md) so that a change in property value triggers the containing view to update constraints.
+Use this invalidation type to set [`needsUpdateConstraints`](../nsview/needsupdateconstraints.md) so that a change in property value triggers the containing view to update constraints.
 
 ## See Also
 
-- [static var display: NSView.Invalidations.Display](nsviewinvalidating/display.md)
+### Types of Invalidations
+- [static var display: NSView.Invalidations.Display](./display.md)
   A change that requires the system to redraw a view’s content.
-- [static var intrinsicContentSize: NSView.Invalidations.IntrinsicContentSize](nsviewinvalidating/intrinsiccontentsize.md)
+- [static var intrinsicContentSize: NSView.Invalidations.IntrinsicContentSize](./intrinsiccontentsize.md)
   A change that invalidates a view’s intrinsic size.
-- [static var layout: NSView.Invalidations.Layout](nsviewinvalidating/layout.md)
+- [static var layout: NSView.Invalidations.Layout](./layout.md)
   A change that invalidates the layout of the containing view’s subviews.
-- [static var restorableState: NSView.Invalidations.RestorableState](nsviewinvalidating/restorablestate.md)
+- [static var restorableState: NSView.Invalidations.RestorableState](./restorablestate.md)
   A change that invalidates the restorable state of the view.
 
 

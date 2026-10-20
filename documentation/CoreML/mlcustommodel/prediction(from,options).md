@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Predicts output values from the given input features.
@@ -21,6 +22,10 @@ Predicts output values from the given input features.
 func prediction(from input: any MLFeatureProvider, options: MLPredictionOptions) throws -> any MLFeatureProvider
 ```
 
+```objc
+- (id<MLFeatureProvider>) predictionFromFeatures:(id<MLFeatureProvider>) input options:(MLPredictionOptions *) options error:(NSError **) error;
+```
+
 #### Return Value
 
 A feature provider that represents the model’s prediction.
@@ -32,7 +37,8 @@ A feature provider that represents the model’s prediction.
 
 ## See Also
 
-- [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](mlcustommodel/predictions(from:options:).md)
+### Making predictions
+- [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](./predictions%28from,options%29.md)
   Predicts output values from the given batch of input features.
 
 

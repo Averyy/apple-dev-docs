@@ -1,7 +1,8 @@
 # Progress.UnpublishingHandler
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block that the system calls when an observed progress object terminates the subscription.
 
@@ -20,15 +21,20 @@ A block that the system calls when an observed progress object terminates the su
 typealias UnpublishingHandler = @Sendable () -> Void
 ```
 
+```c
+typedef void (^)(void) NSProgressUnpublishingHandler;
+```
+
 ## See Also
 
-- [class func addSubscriber(forFileURL: URL, withPublishingHandler: Progress.PublishingHandler) -> Any](progress/addsubscriber(forfileurl:withpublishinghandler:).md)
+### Observing and Controlling File Progress by Other Processes
+- [class func addSubscriber(forFileURL: URL, withPublishingHandler: Progress.PublishingHandler) -> Any](./addsubscriber%28forfileurl,withpublishinghandler%29.md)
   Registers a file URL to hear about the progress of a file operation.
-- [class func removeSubscriber(Any)](progress/removesubscriber(_:).md)
+- [class func removeSubscriber(Any)](./removesubscriber%28_%29.md)
   Removes a proxy progress object that the add subscriber method returns.
-- [var isOld: Bool](progress/isold.md)
+- [var isOld: Bool](./isold.md)
   A Boolean value that indicates when the observed progress object invokes the publish method before you subscribe to it.
-- [typealias PublishingHandler](progress/publishinghandler.md)
+- [typealias PublishingHandler](./publishinghandler.md)
   A block that the system calls when an observed progress object matches the subscription.
 
 

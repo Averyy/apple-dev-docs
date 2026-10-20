@@ -1,7 +1,8 @@
 # init(endpointID:clusterID:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init(endpointID: NSNumber, clusterID: NSNumber)
+```
+
+```objc
++ (MTRClusterPath *) clusterPathWithEndpointID:(NSNumber *) endpointID clusterID:(NSNumber *) clusterID;
 ```
 
 

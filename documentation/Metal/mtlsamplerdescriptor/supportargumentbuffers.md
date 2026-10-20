@@ -1,7 +1,8 @@
 # supportArgumentBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can reference a sampler, that you make with this descriptor, by its resource ID from an argument buffer.
 
@@ -19,19 +20,23 @@ A Boolean value that indicates whether you can reference a sampler, that you mak
 var supportArgumentBuffers: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportArgumentBuffers;
+```
+
 ## Mentions
 
-- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md)
 
 #### Discussion
 
-The default value is  [`false`](https://developer.apple.com/documentation/swift/false), which means that you can only encode the samplers you make with this descriptor as individual resources in the sampler state argument table.
+The default value is  [`false`](../../Swift/false.md), which means that you can only encode the samplers you make with this descriptor as individual resources in the sampler state argument table.
 
-Your app can encode samplers into an argument buffer if you create them with an [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance that has this property equal to [`true`](https://developer.apple.com/documentation/swift/true).
+Your app can encode samplers into an argument buffer if you create them with an [`MTLSamplerDescriptor`](../mtlsamplerdescriptor.md) instance that has this property equal to [`true`](../../Swift/true.md).
 
-> 💡 **Tip**: Check [`maxArgumentBufferSamplerCount`](mtldevice/maxargumentbuffersamplercount.md) at runtime to query the number of samplers your app can encode into an argument buffer.
+> 💡 **Tip**: Check [`maxArgumentBufferSamplerCount`](../mtldevice/maxargumentbuffersamplercount.md) at runtime to query the number of samplers your app can encode into an argument buffer.
 
-Each unique configuration of an [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance’s properties creates a unique [`MTLSamplerState`](mtlsamplerstate.md) instance. For example, you can create unique samplers with the same [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance by changing one or more values of its properties, such as [`minFilter`](mtlsamplerdescriptor/minfilter.md) or [`magFilter`](mtlsamplerdescriptor/magfilter.md) before creating another instance.
+Each unique configuration of an [`MTLSamplerDescriptor`](../mtlsamplerdescriptor.md) instance’s properties creates a unique [`MTLSamplerState`](../mtlsamplerstate.md) instance. For example, you can create unique samplers with the same [`MTLSamplerDescriptor`](../mtlsamplerdescriptor.md) instance by changing one or more values of its properties, such as [`minFilter`](./minfilter.md) or [`magFilter`](./magfilter.md) before creating another instance.
 
 Conversely, creating secondary sampler instances with the same descriptor property values doesn’t create any additional, unique samplers. Instead, they refer to the same underlying sampler, even if you create it with a difference descriptor instance because the configuration is the same.
 

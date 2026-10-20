@@ -1,15 +1,20 @@
 # majorRev
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var majorRev: UInt8
+```
+
+```c
+UInt8 majorRev;
 ```
 
 

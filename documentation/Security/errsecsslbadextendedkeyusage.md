@@ -1,7 +1,8 @@
 # errSecSSLBadExtendedKeyUsage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The appropriate extended key usage for SSL is not found.
 
@@ -18,6 +19,10 @@ The appropriate extended key usage for SSL is not found.
 
 ```swift
 var errSecSSLBadExtendedKeyUsage: OSStatus { get }
+```
+
+```c
+errSecSSLBadExtendedKeyUsage
 ```
 
 

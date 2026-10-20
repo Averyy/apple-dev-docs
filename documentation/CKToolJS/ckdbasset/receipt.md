@@ -1,7 +1,8 @@
 # receipt
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receipt for uploading the asset.
 
@@ -10,7 +11,7 @@ The receipt for uploading the asset.
 
 ## Declaration
 
-```swift
+```
 attribute string? receipt;
 ```
 

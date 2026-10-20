@@ -1,7 +1,8 @@
 # RequestDescriptor.generateAttentionBasedSaliencyImageRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a generate attention based saliency image request.
 
@@ -22,7 +23,8 @@ case generateAttentionBasedSaliencyImageRequest(GenerateAttentionBasedSaliencyIm
 
 ## See Also
 
-- [case generateObjectnessBasedSaliencyImageRequest(GenerateObjectnessBasedSaliencyImageRequest.Revision)](requestdescriptor/generateobjectnessbasedsaliencyimagerequest(_:).md)
+### Getting the saliency descriptor
+- [case generateObjectnessBasedSaliencyImageRequest(GenerateObjectnessBasedSaliencyImageRequest.Revision)](./generateobjectnessbasedsaliencyimagerequest%28_%29.md)
   A descriptor that describes a generate objectness based saliency image request.
 
 

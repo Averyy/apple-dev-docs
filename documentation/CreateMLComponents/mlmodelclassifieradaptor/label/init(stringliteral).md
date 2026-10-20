@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Label with a string literal.
 
@@ -19,6 +20,8 @@ Creates a Label with a string literal.
 ```swift
 init(stringLiteral value: String)
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 
 ---

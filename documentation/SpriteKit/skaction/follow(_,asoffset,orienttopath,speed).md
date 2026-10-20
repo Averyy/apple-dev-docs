@@ -1,23 +1,28 @@
 # follow(_:asOffset:orientToPath:speed:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that moves the node at a specified speed along a path.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func follow(_ path: CGPath, asOffset offset: Bool, orientToPath orient: Bool, speed: CGFloat) -> SKAction
+```
+
+```objc
++ (SKAction *) followPath:(CGPathRef) path asOffset:(BOOL) offset orientToPath:(BOOL) orient speed:(CGFloat) speed;
 ```
 
 #### Return Value
@@ -26,24 +31,25 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the node’s [`position`](sknode/position.md) and [`zRotation`](sknode/zrotation.md) properties are animated along the provided path. The duration of the action is determined by the length of the path and the speed of the node.
+When the action executes, the node’s [`position`](../sknode/position.md) and [`zRotation`](../sknode/zrotation.md) properties are animated along the provided path. The duration of the action is determined by the length of the path and the speed of the node.
 
 This action is reversible; the resulting action creates a reversed path and then follows it, with the same speed.
 
 ## Parameters
 
 - `path`: A path to follow.
-- `offset`: If [`true`](https://developer.apple.com/documentation/swift/true), the points in the path are relative offsets to the node’s starting position. If [`false`](https://developer.apple.com/documentation/swift/false), the points in the node are absolute coordinate values.
-- `orient`: If [`true`](https://developer.apple.com/documentation/swift/true), the node’s [`zRotation`](sknode/zrotation.md) property animates so that the node turns to follow the path. If [`false`](https://developer.apple.com/documentation/swift/false), the [`zRotation`](sknode/zrotation.md) property of the node is unchanged.
+- `offset`: If [`true`](../../Swift/true.md), the points in the path are relative offsets to the node’s starting position. If [`false`](../../Swift/false.md), the points in the node are absolute coordinate values.
+- `orient`: If [`true`](../../Swift/true.md), the node’s [`zRotation`](../sknode/zrotation.md) property animates so that the node turns to follow the path. If [`false`](../../Swift/false.md), the [`zRotation`](../sknode/zrotation.md) property of the node is unchanged.
 - `speed`: The speed at which the node should move, in points per second.
 
 ## See Also
 
-- [class func follow(CGPath, duration: TimeInterval) -> SKAction](skaction/follow(_:duration:).md)
+### Animating a Node’s Position Along a Custom Path
+- [class func follow(CGPath, duration: TimeInterval) -> SKAction](./follow%28_,duration%29.md)
   Creates an action that moves the node along a relative path, orienting the node to the path.
-- [class func follow(CGPath, speed: CGFloat) -> SKAction](skaction/follow(_:speed:).md)
+- [class func follow(CGPath, speed: CGFloat) -> SKAction](./follow%28_,speed%29.md)
   Creates an action that moves the node along a relative path at a specified speed, orienting the node to the path.
-- [class func follow(CGPath, asOffset: Bool, orientToPath: Bool, duration: TimeInterval) -> SKAction](skaction/follow(_:asoffset:orienttopath:duration:).md)
+- [class func follow(CGPath, asOffset: Bool, orientToPath: Bool, duration: TimeInterval) -> SKAction](./follow%28_,asoffset,orienttopath,duration%29.md)
   Creates an action that moves the node along a path.
 
 

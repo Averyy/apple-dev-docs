@@ -1,7 +1,8 @@
 # description()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string with a description of the diffable data source.
 
@@ -10,7 +11,7 @@ Returns a string with a description of the diffable data source.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

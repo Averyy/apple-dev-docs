@@ -1,6 +1,7 @@
 # keyboardType
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the keyboard to display.
 

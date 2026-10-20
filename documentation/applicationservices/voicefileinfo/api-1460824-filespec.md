@@ -1,7 +1,8 @@
 # fileSpec
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A file system specification structure that contains the volume, directory, and name of the file containing the voice. Generally, files containing a single voice are of type `kTextToSpeechVoiceFileType`, and files containing multiple voices are of type `kTextToSpeechVoiceBundleType`. 
 
@@ -12,6 +13,10 @@ A file system specification structure that contains the volume, directory, and n
 
 ```swift
 var fileSpec: FSSpec
+```
+
+```c
+FSSpec fileSpec;
 ```
 
 

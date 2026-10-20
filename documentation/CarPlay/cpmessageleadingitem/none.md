@@ -1,7 +1,8 @@
 # CPMessageLeadingItem.none
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Don’t show a leading item.
 
@@ -16,11 +17,16 @@ Don’t show a leading item.
 case none
 ```
 
+```c
+CPMessageLeadingItemNone
+```
+
 ## See Also
 
-- [CPMessageLeadingItem.pin](cpmessageleadingitem/pin.md)
+### Leading Items
+- [CPMessageLeadingItem.pin](./pin.md)
   Show a pin icon.
-- [CPMessageLeadingItem.star](cpmessageleadingitem/star.md)
+- [CPMessageLeadingItem.star](./star.md)
   Show a star icon.
 
 

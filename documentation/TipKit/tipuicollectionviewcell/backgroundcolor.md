@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color to use for the tip view.
 

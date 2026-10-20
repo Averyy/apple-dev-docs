@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying parameters used when training the model.
 
@@ -21,9 +22,10 @@ let modelParameters: MLLinearRegressor.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mllinearregressor/model.md)
+### Inspecting a linear regressor
+- [var model: MLModel](./model.md)
   The Core ML model.
-- [MLLinearRegressor.ModelParameters](mllinearregressor/modelparameters-swift.struct.md)
+- [MLLinearRegressor.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
 
 

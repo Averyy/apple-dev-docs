@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Incrementally updates the hash function with the contents of the buffer.
@@ -23,9 +24,9 @@ mutating func update(bufferPointer: UnsafeRawBufferPointer)
 
 #### Discussion
 
-Call this method one or more times to provide data to the hash function in blocks. After providing the last block of data, call the [`finalize()`](hashfunction/finalize().md) method to get the computed digest. Don’t call the update method again after finalizing the hash function.
+Call this method one or more times to provide data to the hash function in blocks. After providing the last block of data, call the [`finalize()`](./finalize%28%29.md) method to get the computed digest. Don’t call the update method again after finalizing the hash function.
 
-> **Note**: Typically, it’s safer to use an instance of [`Data`](https://developer.apple.com/documentation/foundation/data), or some other type that conforms to the [`DataProtocol`](https://developer.apple.com/documentation/foundation/dataprotocol), to hold your data. When possible, use the [`update(data:)`](hashfunction/update(data:).md) method instead.
+> **Note**: Typically, it’s safer to use an instance of [`Data`](../../Foundation/data.md), or some other type that conforms to the [`DataProtocol`](../../Foundation/dataprotocol.md), to hold your data. When possible, use the [`update(data:)`](./update%28data%29.md) method instead.
 
 ## Parameters
 
@@ -33,11 +34,12 @@ Call this method one or more times to provide data to the hash function in block
 
 ## See Also
 
-- [init()](hashfunction/init.md)
+### Computing a hash iteratively
+- [init()](./init%28%29.md)
   Creates a hash function.
-- [func update<D>(data: D)](hashfunction/update(data:).md)
+- [func update<D>(data: D)](./update%28data%29.md)
   Incrementally updates the hash function with the given data.
-- [func finalize() -> Self.Digest](hashfunction/finalize.md)
+- [func finalize() -> Self.Digest](./finalize%28%29.md)
   Finalizes the hash function and returns the computed digest.
 
 

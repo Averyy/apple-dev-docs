@@ -50,7 +50,7 @@ func swapTwoInts(_ a: inout Int, _ b: inout Int) {
 -->
 
 This function makes use of in-out parameters to swap the values of `a` and `b`,
-as described in [In Out Parameters](Functions.md#In-Out-Parameters).
+as described in [In-Out Parameters](Functions.md#In-Out-Parameters).
 
 The `swapTwoInts(_:_:)` function swaps the original value of `b` into `a`,
 and the original value of `a` into `b`.
@@ -335,7 +335,7 @@ Similarly, a stack allows items to be removed only from the end of the collectio
 
 The illustration below shows the push and pop behavior for a stack:
 
-![](stackPushPop)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/stackPushPop@2x.png)
 
 1. There are currently three values on the stack.
 2. A fourth value is pushed onto the top of the stack.
@@ -475,7 +475,7 @@ stackOfStrings.push("cuatro")
 
 Here's how `stackOfStrings` looks after pushing these four values on to the stack:
 
-![](stackPushedFourStrings)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/stackPushedFourStrings@2x.png)
 
 Popping a value from the stack removes and returns the top value, `"cuatro"`:
 
@@ -496,7 +496,7 @@ let fromTheTop = stackOfStrings.pop()
 
 Here's how the stack looks after popping its top value:
 
-![](stackPoppedOneString)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/stackPoppedOneString@2x.png)
 
 ## Extending a Generic Type
 
@@ -2036,7 +2036,7 @@ and it's an error to consume that value more than once.
 Noncopyable values like `y`
 must be passed as in-out, borrowing, or consuming parameters ---
 for more information,
-see [Borrowing and Consuming Parameters](Declarations.md#Borrowing-and-Consuming-Parameters).
+see [Borrowing and Consuming Parameters](../ReferenceManual/Declarations.md#Borrowing-and-Consuming-Parameters).
 
 For details about when generic code
 includes an implicit constraint to a given protocol,

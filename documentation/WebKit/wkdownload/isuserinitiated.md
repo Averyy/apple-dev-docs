@@ -1,7 +1,8 @@
 # isUserInitiated
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.2+
@@ -14,6 +15,10 @@
 
 ```swift
 var isUserInitiated: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isUserInitiated) BOOL userInitiated;
 ```
 
 

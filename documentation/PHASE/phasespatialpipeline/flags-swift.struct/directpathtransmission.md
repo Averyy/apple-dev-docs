@@ -1,17 +1,18 @@
 # directPathTransmission
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A spatial property that refers to the original audio signal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ A spatial property that refers to the original audio signal.
 static var directPathTransmission: PHASESpatialPipeline.Flags { get }
 ```
 
+```c
+PHASESpatialPipelineFlagDirectPathTransmission
+```
+
 ## Mentions
 
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](../../playing-sound-from-a-location-in-a-3d-scene.md)
 
 ## See Also
 
-- [static var earlyReflections: PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.struct/earlyreflections.md)
+### Choosing a Flag
+- [static var earlyReflections: PHASESpatialPipeline.Flags](./earlyreflections.md)
   A spatial property that refers to the earlier echoes along the duration of sound resonance.
-- [static var lateReverb: PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.struct/latereverb.md)
+- [static var lateReverb: PHASESpatialPipeline.Flags](./latereverb.md)
   A spatial property that refers to the later echoes along the duration of sound resonance.
 
 

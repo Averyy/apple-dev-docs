@@ -1,7 +1,8 @@
 # defaultDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Custom week of the year format style showing the minimum number of digits that represents the year in week-of-year calendars.
 
@@ -26,9 +27,10 @@ This represents week-of-year values like `1` or `18`.
 
 ## See Also
 
-- [static var twoDigits: Date.FormatStyle.Symbol.YearForWeekOfYear](date/formatstyle/symbol/yearforweekofyear/twodigits.md)
+### Modifying a Year for Week-of-Year
+- [static var twoDigits: Date.FormatStyle.Symbol.YearForWeekOfYear](./twodigits.md)
   The custom format style that represents the two-digit numeric year in week-of-year calendars, zero-padded or truncated if necessary.
-- [static func padded(Int) -> Date.FormatStyle.Symbol.YearForWeekOfYear](date/formatstyle/symbol/yearforweekofyear/padded(_:).md)
+- [static func padded(Int) -> Date.FormatStyle.Symbol.YearForWeekOfYear](./padded%28_%29.md)
   Returns a custom format style that represents the three or more digits of the year in week-of-year calendars, zero-padded if necessary.
 
 

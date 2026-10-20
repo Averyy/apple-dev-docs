@@ -1,7 +1,8 @@
 # ContentUnavailableView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
 
@@ -35,7 +36,7 @@ ContentUnavailableView {
 }
 ```
 
-The system provides default `ContentUnavailableView`s that you can use in specific situations. The example below illustrates the usage of the [`search`](contentunavailableview/search.md) view:
+The system provides default `ContentUnavailableView`s that you can use in specific situations. The example below illustrates the usage of the [`search`](./contentunavailableview/search.md) view:
 
 ```swift
 struct ContentView: View {
@@ -67,25 +68,25 @@ struct ContentView: View {
 ## Topics
 
 ### Getting built-in unavailable views
-- [static var search: ContentUnavailableView<SearchUnavailableContent.Label, SearchUnavailableContent.Description, SearchUnavailableContent.Actions>](contentunavailableview/search.md)
+- [static var search: ContentUnavailableView<SearchUnavailableContent.Label, SearchUnavailableContent.Description, SearchUnavailableContent.Actions>](./contentunavailableview/search.md)
   Creates a `ContentUnavailableView` instance that conveys a search state.
-- [static func search(text: String) -> ContentUnavailableView<Label, Description, Actions>](contentunavailableview/search(text:).md)
+- [static func search(text: String) -> ContentUnavailableView<Label, Description, Actions>](./contentunavailableview/search%28text%29.md)
   Creates a `ContentUnavailableView` instance that conveys a search state.
 ### Creating an unavailable view
-- [init(label: () -> Label, description: () -> Description, actions: () -> Actions)](contentunavailableview/init(label:description:actions:).md)
+- [init(label: () -> Label, description: () -> Description, actions: () -> Actions)](./contentunavailableview/init%28label,description,actions%29.md)
   Creates an interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
-- [init(_:image:description:)](contentunavailableview/init(_:image:description:).md)
+- [init(_:image:description:)](./contentunavailableview/init%28_,image,description%29.md)
   Creates an interface, consisting of a title generated from a localized string resource, an image and additional content, that you display when the content of your app is unavailable to users.
-- [init(_:systemImage:description:)](contentunavailableview/init(_:systemimage:description:).md)
+- [init(_:systemImage:description:)](./contentunavailableview/init%28_,systemimage,description%29.md)
   Creates an interface, consisting of a title generated from a localized string resource, a system icon image and additional content, that you display when the content of your app is unavailable to users.
 ### Supporting types
-- [struct SearchUnavailableContent](searchunavailablecontent.md)
+- [struct SearchUnavailableContent](./searchunavailablecontent.md)
   A structure that represents the body of a static placeholder search view.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

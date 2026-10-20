@@ -1,0 +1,50 @@
+# &=(_:_:)
+
+**Framework**: Swift  
+**Kind**: op  
+**Role**: Operator
+
+Stores the result of performing a bitwise AND operation on the two given values in the left-hand-side variable.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+static func &= (lhs: inout Int, rhs: Int)
+```
+
+#### Discussion
+
+A bitwise AND operation results in a value that has each bit set to `1` where *both* of its arguments have that bit set to `1`. For example:
+
+```swift
+var x: UInt8 = 5          // 0b00000101
+let y: UInt8 = 14         // 0b00001110
+x &= y                    // 0b00000100
+```
+
+## Parameters
+
+- `lhs`: An integer value.
+- `rhs`: Another integer value.
+
+## See Also
+
+### Bitwise Operations
+- [static func & (Int, Int) -> Int](./amp%28_,_%29.md)
+  Returns the result of performing a bitwise AND operation on the two given values.
+- [static func ~ (Self) -> Self](./tilde%28_%29.md)
+  Returns the inverse of the bits set in the argument.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/int/&=(_:_:))*

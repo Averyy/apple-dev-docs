@@ -1,7 +1,8 @@
 # VNHumanBodyPoseObservation.JointsGroupName
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The supported joint group names for the body pose.
 
@@ -19,55 +20,60 @@ The supported joint group names for the body pose.
 struct JointsGroupName
 ```
 
+```c
+typedef VNRecognizedPointGroupKey VNHumanBodyPoseObservationJointsGroupName;
+```
+
 ## Mentions
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+- [Detecting Human Body Poses in Images](../detecting-human-body-poses-in-images.md)
 
 ## Topics
 
 ### Head
-- [static let face: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/face.md)
+- [static let face: VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname/face.md)
   The face.
 ### Body
-- [static let torso: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/torso.md)
+- [static let torso: VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname/torso.md)
   The torso.
 ### Arms
-- [static let leftArm: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/leftarm.md)
+- [static let leftArm: VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname/leftarm.md)
   The left arm.
-- [static let rightArm: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/rightarm.md)
+- [static let rightArm: VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname/rightarm.md)
   The right arm.
 ### Legs
-- [static let leftLeg: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/leftleg.md)
+- [static let leftLeg: VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname/leftleg.md)
   The left leg.
-- [static let rightLeg: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/rightleg.md)
+- [static let rightLeg: VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname/rightleg.md)
   The right leg.
 ### All
-- [static let all: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/all.md)
+- [static let all: VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname/all.md)
   All body point groups.
 ### Initializers
-- [init(rawValue: VNRecognizedPointGroupKey)](vnhumanbodyposeobservation/jointsgroupname/init(rawvalue:).md)
+- [init(rawValue: VNRecognizedPointGroupKey)](./jointsgroupname/init%28rawvalue%29.md)
   Creates a joint group name with a recognized point group key.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var availableJointNames: [VNHumanBodyPoseObservation.JointName]](vnhumanbodyposeobservation/availablejointnames.md)
+### Accessing Points
+- [var availableJointNames: [VNHumanBodyPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname.md)
+- [VNHumanBodyPoseObservation.JointName](./jointname.md)
   The supported joint names for the body pose.
-- [var availableJointsGroupNames: [VNHumanBodyPoseObservation.JointsGroupName]](vnhumanbodyposeobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanBodyPoseObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The available joint group names in the observation.
-- [func recognizedPoint(VNHumanBodyPoseObservation.JointName) throws -> VNRecognizedPoint](vnhumanbodyposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNHumanBodyPoseObservation.JointName) throws -> VNRecognizedPoint](./recognizedpoint%28_%29.md)
   Retrieves the recognized point for a joint name.
-- [func recognizedPoints(VNHumanBodyPoseObservation.JointsGroupName) throws -> [VNHumanBodyPoseObservation.JointName : VNRecognizedPoint]](vnhumanbodyposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNHumanBodyPoseObservation.JointsGroupName) throws -> [VNHumanBodyPoseObservation.JointName : VNRecognizedPoint]](./recognizedpoints%28_%29.md)
   Retrieves the recognized points associated with the joint group name.
 
 

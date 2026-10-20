@@ -1,7 +1,8 @@
 # AudioReader.MicrophoneAsyncBuffers.Iterator
 
 **Framework**: Create ML Components  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An async iterator of audio frames.
 
@@ -21,17 +22,18 @@ final class Iterator
 ## Topics
 
 ### Getting the next element
-- [func next() async throws -> TemporalFeature<AudioReader.MicrophoneAsyncBuffers.Feature>?](audioreader/microphoneasyncbuffers/iterator/next.md)
+- [func next() async throws -> TemporalFeature<AudioReader.MicrophoneAsyncBuffers.Feature>?](./iterator/next%28%29.md)
   Advances to the next element and returns it, or nil if no next element exists.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> AudioReader.MicrophoneAsyncBuffers.Iterator](audioreader/microphoneasyncbuffers/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> AudioReader.MicrophoneAsyncBuffers.Iterator](./makeasynciterator%28%29.md)
   Constructs an iterator.
 
 

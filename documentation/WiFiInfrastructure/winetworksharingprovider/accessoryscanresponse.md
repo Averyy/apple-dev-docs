@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.AccessoryScanResponse
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scan response from the accessory containing Wi-Fi scan results, if any.
 
@@ -25,38 +26,39 @@ Create responses that correspond to specific scan requests and include all relev
 ## Topics
 
 ### Identifying a scan response
-- [WINetworkSharingProvider.AccessoryScanResponse.ID](winetworksharingprovider/accessoryscanresponse/id-swift.typealias.md)
+- [WINetworkSharingProvider.AccessoryScanResponse.ID](./accessoryscanresponse/id-swift.typealias.md)
   The type of value that uniquely identifies this scan response.
-- [var id: WINetworkSharingProvider.AccessoryScanResponse.ID](winetworksharingprovider/accessoryscanresponse/id-swift.property.md)
+- [var id: WINetworkSharingProvider.AccessoryScanResponse.ID](./accessoryscanresponse/id-swift.property.md)
   A stable identifier that uniquely identifies this scan response.
 ### Getting the originating scan request
-- [let scanRequest: WINetworkSharingProvider.AccessoryScanRequest](winetworksharingprovider/accessoryscanresponse/scanrequest.md)
+- [let scanRequest: WINetworkSharingProvider.AccessoryScanRequest](./accessoryscanresponse/scanrequest.md)
   The original scan request that prompted this response.
 ### Getting the scan results from the Accessory
-- [let results: [WINetworkSharingProvider.AccessoryScanResult]](winetworksharingprovider/accessoryscanresponse/results.md)
+- [let results: [WINetworkSharingProvider.AccessoryScanResult]](./accessoryscanresponse/results.md)
   An array of scan results containing access points the accessory has discovered.
 ### Initializers
-- [init(scanRequest: WINetworkSharingProvider.AccessoryScanRequest, results: [WINetworkSharingProvider.AccessoryScanResult])](winetworksharingprovider/accessoryscanresponse/init(scanrequest:results:).md)
+- [init(scanRequest: WINetworkSharingProvider.AccessoryScanRequest, results: [WINetworkSharingProvider.AccessoryScanResult])](./accessoryscanresponse/init%28scanrequest,results%29.md)
   Creates an accessory scan response.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func presentAskToShareUI(scanProvider: ((ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)?) async throws -> WINetworkSharingAskToShareState](winetworksharingprovider/presentasktoshareui(scanprovider:).md)
+### Displaying network selection
+- [func presentAskToShareUI(scanProvider: ((ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)?) async throws -> WINetworkSharingAskToShareState](./presentasktoshareui%28scanprovider%29.md)
   Presents system UI asking people to share available networks with an accessory.
-- [WINetworkSharingProvider.AccessoryScanRequest](winetworksharingprovider/accessoryscanrequest.md)
+- [WINetworkSharingProvider.AccessoryScanRequest](./accessoryscanrequest.md)
   A request for the accessory to scan for available Wi-Fi networks.
-- [WINetworkSharingProvider.AccessoryScanResult](winetworksharingprovider/accessoryscanresult.md)
+- [WINetworkSharingProvider.AccessoryScanResult](./accessoryscanresult.md)
   An access point that the accessory was able to discover in its Wi-Fi scans.
 
 

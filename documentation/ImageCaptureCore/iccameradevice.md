@@ -1,7 +1,8 @@
 # ICCameraDevice
 
 **Framework**: ImageCaptureCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a camera.
 
@@ -18,106 +19,111 @@ An object that represents a camera.
 class ICCameraDevice
 ```
 
+```objc
+@interface ICCameraDevice : ICDevice
+```
+
 ## Topics
 
 ### Reading Files
-- [var contents: [ICCameraItem]?](iccameradevice/contents.md)
+- [var contents: [ICCameraItem]?](./iccameradevice/contents.md)
   All image, movie, and audio files stored on the camera, in an order that reflects the camera’s storage folder structure.
-- [var mediaFiles: [ICCameraItem]?](iccameradevice/mediafiles.md)
+- [var mediaFiles: [ICCameraItem]?](./iccameradevice/mediafiles.md)
   All image, movie and audio files stored on the camera, without regard to the camera’s storage folder structure.
-- [var contentCatalogPercentCompleted: Int](iccameradevice/contentcatalogpercentcompleted.md)
+- [var contentCatalogPercentCompleted: Int](./iccameradevice/contentcatalogpercentcompleted.md)
   The percentage of the camera’s content that has been catalogued.
-- [func files(ofType: String) -> [String]?](iccameradevice/files(oftype:).md)
+- [func files(ofType: String) -> [String]?](./iccameradevice/files%28oftype%29.md)
   Returns an array of files of the selected type on the camera.
-- [func requestReadData(from: ICCameraFile, atOffset: off_t, length: off_t, readDelegate: Any, didReadDataSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](iccameradevice/requestreaddata(from:atoffset:length:readdelegate:didreaddataselector:contextinfo:).md)
+- [func requestReadData(from: ICCameraFile, atOffset: off_t, length: off_t, readDelegate: Any, didReadDataSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](./iccameradevice/requestreaddata%28from,atoffset,length,readdelegate,didreaddataselector,contextinfo%29.md)
   Asynchronously reads data of a specified length from a specified offset.
 ### Uploading Files
-- [struct ICUploadOption](icuploadoption.md)
+- [struct ICUploadOption](./icuploadoption.md)
   An option for uploading a file to the camera.
-- [func requestUploadFile(URL, options: [ICUploadOption : Any], uploadDelegate: Any, didUploadSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](iccameradevice/requestuploadfile(_:options:uploaddelegate:diduploadselector:contextinfo:).md)
+- [func requestUploadFile(URL, options: [ICUploadOption : Any], uploadDelegate: Any, didUploadSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](./iccameradevice/requestuploadfile%28_,options,uploaddelegate,diduploadselector,contextinfo%29.md)
   Uploads a file to the camera.
 ### Downloading Files
-- [struct ICDownloadOption](icdownloadoption.md)
+- [struct ICDownloadOption](./icdownloadoption.md)
   An option for downloading a file from the camera.
-- [func cancelDownload()](iccameradevice/canceldownload.md)
+- [func cancelDownload()](./iccameradevice/canceldownload%28%29.md)
   Cancels a download from the camera.
-- [func requestDownloadFile(ICCameraFile, options: [ICDownloadOption : Any], downloadDelegate: any ICCameraDeviceDownloadDelegate, didDownloadSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](iccameradevice/requestdownloadfile(_:options:downloaddelegate:diddownloadselector:contextinfo:).md)
+- [func requestDownloadFile(ICCameraFile, options: [ICDownloadOption : Any], downloadDelegate: any ICCameraDeviceDownloadDelegate, didDownloadSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](./iccameradevice/requestdownloadfile%28_,options,downloaddelegate,diddownloadselector,contextinfo%29.md)
   Downloads a file from the camera.
-- [protocol ICCameraDeviceDownloadDelegate](iccameradevicedownloaddelegate.md)
+- [protocol ICCameraDeviceDownloadDelegate](./iccameradevicedownloaddelegate.md)
   Methods for managing camera file downloads.
 ### Deleting Files
-- [var isLocked: Bool](iccameradevice/islocked.md)
+- [var isLocked: Bool](./iccameradevice/islocked.md)
   A Boolean value indicating whether the device is locked, preventing deletion of any asset.
-- [struct ICDeleteResult](icdeleteresult.md)
+- [struct ICDeleteResult](./icdeleteresult.md)
   The result of a deletion request.
-- [struct ICDeleteError](icdeleteerror.md)
+- [struct ICDeleteError](./icdeleteerror.md)
   An error resulting from a deletion request.
-- [func requestDeleteFiles([ICCameraItem])](iccameradevice/requestdeletefiles(_:).md)
+- [func requestDeleteFiles([ICCameraItem])](./iccameradevice/requestdeletefiles%28_%29.md)
   Deletes files from the camera.
-- [func requestDeleteFiles([ICCameraItem], deleteFailed: ([ICDeleteError : ICCameraItem]) -> Void, completion: ([ICDeleteResult : [ICCameraItem]], (any Error)?) -> Void) -> Progress?](iccameradevice/requestdeletefiles(_:deletefailed:completion:).md)
+- [func requestDeleteFiles([ICCameraItem], deleteFailed: ([ICDeleteError : ICCameraItem]) -> Void, completion: ([ICDeleteResult : [ICCameraItem]], (any Error)?) -> Void) -> Progress?](./iccameradevice/requestdeletefiles%28_,deletefailed,completion%29.md)
   Deletes files from the camera, with the ability to catch failures and execute a completion block.
-- [func cancelDelete()](iccameradevice/canceldelete.md)
+- [func cancelDelete()](./iccameradevice/canceldelete%28%29.md)
   Cancels the current delete operation.
 ### Taking Pictures
-- [var tetheredCaptureEnabled: Bool](iccameradevice/tetheredcaptureenabled.md)
+- [var tetheredCaptureEnabled: Bool](./iccameradevice/tetheredcaptureenabled.md)
   A Boolean value indicating whether tethered capture is enabled on the camera.
-- [var ptpEventHandler: (Data) -> Void](iccameradevice/ptpeventhandler.md)
+- [var ptpEventHandler: (Data) -> Void](./iccameradevice/ptpeventhandler.md)
   A closure for handling PTP event packets.
-- [func requestEnableTethering()](iccameradevice/requestenabletethering.md)
+- [func requestEnableTethering()](./iccameradevice/requestenabletethering%28%29.md)
   Enables tethered capture if the camera has the capability to take pictures while connected.
-- [func requestTakePicture()](iccameradevice/requesttakepicture.md)
+- [func requestTakePicture()](./iccameradevice/requesttakepicture%28%29.md)
   Captures a new image using the camera.
-- [func requestSendPTPCommand(Data, outData: Data?, sendCommandDelegate: Any, didSendCommand: Selector, contextInfo: UnsafeMutableRawPointer?)](iccameradevice/requestsendptpcommand(_:outdata:sendcommanddelegate:didsendcommand:contextinfo:).md)
+- [func requestSendPTPCommand(Data, outData: Data?, sendCommandDelegate: Any, didSendCommand: Selector, contextInfo: UnsafeMutableRawPointer?)](./iccameradevice/requestsendptpcommand%28_,outdata,sendcommanddelegate,didsendcommand,contextinfo%29.md)
   Sends a Picture Transfer Protocol (PTP) command to a camera asynchronously.
-- [func requestSendPTPCommand(Data, outData: Data?, completion: (Data, Data, (any Error)?) -> Void)](iccameradevice/requestsendptpcommand(_:outdata:completion:).md)
+- [func requestSendPTPCommand(Data, outData: Data?, completion: (Data, Data, (any Error)?) -> Void)](./iccameradevice/requestsendptpcommand%28_,outdata,completion%29.md)
   Sends a Picture Transfer Protocol (PTP) command to a camera asynchronously.
-- [func requestDisableTethering()](iccameradevice/requestdisabletethering.md)
+- [func requestDisableTethering()](./iccameradevice/requestdisabletethering%28%29.md)
   Disables tethered capture on the camera.
 ### Inspecting the Battery Charge Level
-- [var batteryLevelAvailable: Bool](iccameradevice/batterylevelavailable.md)
+- [var batteryLevelAvailable: Bool](./iccameradevice/batterylevelavailable.md)
   A Boolean value that indicates whether the battery charge level is available.
-- [var batteryLevel: Int](iccameradevice/batterylevel.md)
+- [var batteryLevel: Int](./iccameradevice/batterylevel.md)
   The battery charge level.
 ### Synchronizing the Clock
-- [var timeOffset: TimeInterval](iccameradevice/timeoffset.md)
+- [var timeOffset: TimeInterval](./iccameradevice/timeoffset.md)
   The time offset, in seconds, between the camera’s clock and the computer’s clock.
-- [func requestSyncClock()](iccameradevice/requestsyncclock.md)
+- [func requestSyncClock()](./iccameradevice/requestsyncclock%28%29.md)
   Synchronizes the camera’s clock with the computer’s clock.
 ### Detecting Apple Devices
-- [var isAccessRestrictedAppleDevice: Bool](iccameradevice/isaccessrestrictedappledevice.md)
+- [var isAccessRestrictedAppleDevice: Bool](./iccameradevice/isaccessrestrictedappledevice.md)
   A Boolean value indicating whether the device is an Apple device, passcode-locked, and connected to an untrusted host.
-- [var iCloudPhotosEnabled: Bool](iccameradevice/icloudphotosenabled.md)
+- [var iCloudPhotosEnabled: Bool](./iccameradevice/icloudphotosenabled.md)
   A Boolean value indicating whether the iCloud Photo Library is enabled on the device.
 ### Detecting Mass Storage Devices
-- [var mountPoint: String?](iccameradevice/mountpoint.md)
+- [var mountPoint: String?](./iccameradevice/mountpoint.md)
   The file system mount point for a camera using the mass storage transport type.
 ### Removing a Device
-- [var isEjectable: Bool](iccameradevice/isejectable.md)
+- [var isEjectable: Bool](./iccameradevice/isejectable.md)
   A Boolean value indicating whether the device can be ‘soft’ removed or disconnected.
 ### Instance Properties
-- [var mediaPresentation: ICMediaPresentation](iccameradevice/mediapresentation.md)
+- [var mediaPresentation: ICMediaPresentation](./iccameradevice/mediapresentation.md)
 
 ## Relationships
 
 ### Inherits From
-- [ICDevice](icdevice.md)
+- [ICDevice](./icdevice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol ICCameraDeviceDelegate](iccameradevicedelegate.md)
+### Cameras
+- [protocol ICCameraDeviceDelegate](./iccameradevicedelegate.md)
   Methods for detecting cameras, getting metadata and thumbnails, handling access and capability changes, and performing other actions on connected cameras.
-- [class ICCameraItem](iccameraitem.md)
+- [class ICCameraItem](./iccameraitem.md)
   An abstract class that represents a camera item.
-- [class ICCameraFile](iccamerafile.md)
+- [class ICCameraFile](./iccamerafile.md)
   An object that represents a file on a camera.
-- [class ICCameraFolder](iccamerafolder.md)
+- [class ICCameraFolder](./iccamerafolder.md)
   An object that represents a folder on a camera.
 
 

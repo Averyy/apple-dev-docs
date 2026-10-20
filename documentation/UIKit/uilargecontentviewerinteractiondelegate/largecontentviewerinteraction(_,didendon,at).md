@@ -1,7 +1,8 @@
 # largeContentViewerInteraction(_:didEndOn:at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an action when the large content viewer gesture ends at the location of the specified item.
 
@@ -17,9 +18,13 @@ Performs an action when the large content viewer gesture ends at the location of
 optional func largeContentViewerInteraction(_ interaction: UILargeContentViewerInteraction, didEndOn item: (any UILargeContentViewerItem)?, at point: CGPoint)
 ```
 
+```objc
+- (void) largeContentViewerInteraction:(UILargeContentViewerInteraction *) interaction didEndOnItem:(id<UILargeContentViewerItem>) item atPoint:(CGPoint) point;
+```
+
 #### Discussion
 
-If you don’t implement this method and are using standard UIKit controls, the system performs a default action, such as sending a [`touchUpInside`](uicontrol/event/touchupinside.md) event to the control. If you’re using a custom view with its own tap gesture recognizer, implement this method to handle the interaction. For example, to perform the action that would have occurred if the user tapped on that item.
+If you don’t implement this method and are using standard UIKit controls, the system performs a default action, such as sending a [`touchUpInside`](../uicontrol/event/touchupinside.md) event to the control. If you’re using a custom view with its own tap gesture recognizer, implement this method to handle the interaction. For example, to perform the action that would have occurred if the user tapped on that item.
 
 UIKit only calls this method if the gesture ends successfully, not if it fails or gets canceled.
 
@@ -31,9 +36,10 @@ UIKit only calls this method if the gesture ends successfully, not if it fails o
 
 ## See Also
 
-- [func largeContentViewerInteraction(UILargeContentViewerInteraction, itemAt: CGPoint) -> (any UILargeContentViewerItem)?](uilargecontentviewerinteractiondelegate/largecontentviewerinteraction(_:itemat:).md)
+### Customizing large content viewer interactions
+- [func largeContentViewerInteraction(UILargeContentViewerInteraction, itemAt: CGPoint) -> (any UILargeContentViewerItem)?](./largecontentviewerinteraction%28_,itemat%29.md)
   Identifies the large content viewer item for the specified interaction and location.
-- [func viewController(for: UILargeContentViewerInteraction) -> UIViewController](uilargecontentviewerinteractiondelegate/viewcontroller(for:).md)
+- [func viewController(for: UILargeContentViewerInteraction) -> UIViewController](./viewcontroller%28for%29.md)
   Specifies which view controller should display the large content viewer.
 
 

@@ -1,7 +1,8 @@
 # sourceTrackIDForFrameTiming
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier of the source track from which the video composition derives frame timing.
 
@@ -19,13 +20,18 @@ An identifier of the source track from which the video composition derives frame
 var sourceTrackIDForFrameTiming: CMPersistentTrackID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMPersistentTrackID sourceTrackIDForFrameTiming;
+```
+
 #### Discussion
 
-If an empty edit is encountered in the source asset’s track, the compositor composes frames as needed up to the frequency specified in [`frameDuration`](avvideocomposition/frameduration.md) property. Otherwise the frame timing for the video composition is derived from the source asset’s track with the corresponding ID.
+If an empty edit is encountered in the source asset’s track, the compositor composes frames as needed up to the frequency specified in [`frameDuration`](./frameduration.md) property. Otherwise the frame timing for the video composition is derived from the source asset’s track with the corresponding ID.
 
 ## See Also
 
-- [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](avvideocomposition/sourcesampledatatrackids-2hgue.md)
+### Identifying source tracks
+- [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](./sourcesampledatatrackids-2hgue.md)
   The identifiers of source sample data tracks in the composition that the object requires to compose frames.
 
 

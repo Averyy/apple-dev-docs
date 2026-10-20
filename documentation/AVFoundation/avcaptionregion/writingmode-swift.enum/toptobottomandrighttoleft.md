@@ -1,7 +1,8 @@
 # AVCaptionRegion.WritingMode.topToBottomAndRightToLeft
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A top-to-bottom and right-to-left writing mode.
 
@@ -17,9 +18,14 @@ A top-to-bottom and right-to-left writing mode.
 case topToBottomAndRightToLeft
 ```
 
+```c
+AVCaptionRegionWritingModeTopToBottomAndRightToLeft
+```
+
 ## See Also
 
-- [AVCaptionRegion.WritingMode.leftToRightAndTopToBottom](avcaptionregion/writingmode-swift.enum/lefttorightandtoptobottom.md)
+### Writing modes
+- [AVCaptionRegion.WritingMode.leftToRightAndTopToBottom](./lefttorightandtoptobottom.md)
   A left-to-right and top-to-bottom writing mode.
 
 

@@ -1,7 +1,8 @@
 # NSLog(_:_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Logs an error message to the Apple System Log facility.
 
@@ -22,7 +23,8 @@ func NSLog(_ format: String, _ args: any CVarArg...)
 
 ## See Also
 
-- [func NSLogv(String, CVaListPointer)](nslogv(_:_:).md)
+### Diagnostics and Debugging
+- [func NSLogv(String, CVaListPointer)](./nslogv%28_,_%29.md)
   Logs an error message to the Apple System Log facility.
 
 

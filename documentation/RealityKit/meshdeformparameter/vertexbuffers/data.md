@@ -1,7 +1,8 @@
 # MeshDeformParameter.VertexBuffers.Data
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Provides low-level information about the memory allocation of the buffers.
 
@@ -22,19 +23,20 @@ struct Data
 ## Topics
 
 ### Accessing buffer data
-- [let buffer: Buffer](meshdeformparameter/vertexbuffers/data/buffer.md)
+- [let buffer: Buffer](./data/buffer.md)
   The allocation containing the vertex data.
-- [let stride: Int](meshdeformparameter/vertexbuffers/data/stride.md)
+- [let stride: Int](./data/stride.md)
   The stride of the vertex data.
 ### Instance Properties
-- [let format: MTLVertexFormat](meshdeformparameter/vertexbuffers/data/format.md)
+- [let format: MTLVertexFormat](./data/format.md)
   The format of the vertices.
-- [let offset: Int](meshdeformparameter/vertexbuffers/data/offset.md)
+- [let offset: Int](./data/offset.md)
   The offset of the vertex data.
 
 ## See Also
 
-- [let count: Int](meshdeformparameter/vertexbuffers/count.md)
+### Inspecting buffer storage
+- [let count: Int](./count.md)
   The number of elements in each of the specified buffers.
 
 

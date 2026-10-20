@@ -1,21 +1,23 @@
 # init
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserVideoDriver *in_driver, IOUserVideoStreamDirection in_direction, IOMemoryDescriptor *in_data_memory_descriptor, IOMemoryDescriptor *in_control_memory_descriptor, uint32_t bufferID);
 ```
 
 ## See Also
 
-- [Create](iouservideobuffer/create.md)
-- [IOUserVideoDriver](iouservideodriver.md)
+### Creating a video buffer
+- [Create](./create.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
 
 

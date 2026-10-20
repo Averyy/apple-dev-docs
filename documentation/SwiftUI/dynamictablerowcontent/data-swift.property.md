@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The collection of underlying data.
@@ -21,7 +22,8 @@ var data: Self.Data { get }
 
 ## See Also
 
-- [associatedtype Data : Collection](dynamictablerowcontent/data-swift.associatedtype.md)
+### Getting row data
+- [associatedtype Data : Collection](./data-swift.associatedtype.md)
   The type of the underlying collection of data.
 
 

@@ -1,7 +1,8 @@
 # automatedDeviceEnrollmentAddition(isPresented:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a modal view that enables users to add devices to their organization.
 
@@ -55,7 +56,8 @@ struct ContentView: View {
 
 ## See Also
 
-- [func managedContentStyle(ManagedContentStyle) -> some View](view/managedcontentstyle(_:).md)
+### Working with managed devices
+- [func managedContentStyle(ManagedContentStyle) -> some View](./managedcontentstyle%28_%29.md)
   Applies a managed content style to the view.
 
 

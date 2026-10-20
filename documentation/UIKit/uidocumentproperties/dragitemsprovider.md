@@ -1,7 +1,8 @@
 # dragItemsProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that provides drag items that represent the document.
 
@@ -15,6 +16,10 @@ A closure that provides drag items that represent the document.
 
 ```swift
 var dragItemsProvider: ((any UIDragSession) -> [UIDragItem])? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<UIDragItem *> * (^dragItemsProvider)(id<UIDragSession>);
 ```
 
 #### Discussion

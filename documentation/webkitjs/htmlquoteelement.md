@@ -1,7 +1,8 @@
 # HTMLQuoteElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLQuoteElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [cite](htmlquoteelement/1632690-cite.md)
+- [cite](./htmlquoteelement/api-1632690-cite.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

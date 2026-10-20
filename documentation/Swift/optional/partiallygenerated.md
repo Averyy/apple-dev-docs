@@ -1,7 +1,8 @@
 # Optional.PartiallyGenerated
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A representation of partially generated content for the wrapped type.
 
@@ -18,6 +19,8 @@ A representation of partially generated content for the wrapped type.
 ```swift
 typealias PartiallyGenerated = Wrapped.PartiallyGenerated
 ```
+
+Available when `Wrapped` conforms to `Generable`.
 
 
 ---

@@ -1,7 +1,8 @@
 # DetectedObject
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An item in a detection result.
 
@@ -22,32 +23,33 @@ struct DetectedObject<Label> where Label : Comparable, Label : Hashable
 ## Topics
 
 ### Creating a detected object
-- [init(boundingBox: CGRect, label: Label, probability: Float)](detectedobject/init(boundingbox:label:probability:).md)
+- [init(boundingBox: CGRect, label: Label, probability: Float)](./detectedobject/init%28boundingbox,label,probability%29.md)
   Creates a detected object with bounding box, object label and confidence.
 ### Getting the properties
-- [var boundingBox: CGRect](detectedobject/boundingbox.md)
+- [var boundingBox: CGRect](./detectedobject/boundingbox.md)
   The bounding box of the detected object.
-- [var confidence: Float](detectedobject/confidence.md)
+- [var confidence: Float](./detectedobject/confidence.md)
   The detection confidence. The value will always be between 0.0 and 1.0.
-- [var label: Label](detectedobject/label.md)
+- [var label: Label](./detectedobject/label.md)
   The detected object label.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ObjectDetectionAnnotation](objectdetectionannotation.md)
+### Object detection components
+- [struct ObjectDetectionAnnotation](./objectdetectionannotation.md)
   An object detection annotation.
-- [struct ObjectDetectionMetrics](objectdetectionmetrics.md)
+- [struct ObjectDetectionMetrics](./objectdetectionmetrics.md)
   Metrics for object detection model.
 
 

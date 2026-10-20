@@ -1,7 +1,8 @@
 # PMPaperMargins
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A data structure that specifies the unprintable area of a paper object.
 
@@ -14,9 +15,13 @@ A data structure that specifies the unprintable area of a paper object.
 typealias PMPaperMargins = PMRect
 ```
 
+```c
+typedef PMRect PMPaperMargins;
+```
+
 #### Discussion
 
-Your application specifies paper margins when calling the function [`PMPaperCreateCustom(_:_:_:_:_:_:_:)`](1459322-pmpapercreatecustom.md) to create a custom paper type. You can obtain a paper’s margins with the function [`PMPaperGetMargins(_:_:)`](1461994-pmpapergetmargins.md).
+Your application specifies paper margins when calling the function [`PMPaperCreateCustom(_:_:_:_:_:_:_:)`](./api-1459322-pmpapercreatecustom.md) to create a custom paper type. You can obtain a paper’s margins with the function [`PMPaperGetMargins(_:_:)`](./api-1461994-pmpapergetmargins.md).
 
 
 ---

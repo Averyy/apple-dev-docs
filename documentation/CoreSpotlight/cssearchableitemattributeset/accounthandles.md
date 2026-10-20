@@ -1,7 +1,8 @@
 # accountHandles
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the canonical handles for the account with which the message is associated.
 
@@ -18,41 +19,46 @@ An array of the canonical handles for the account with which the message is asso
 var accountHandles: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * accountHandles;
+```
+
 #### Discussion
 
 Account handles can include chat handles, email addresses, phone numbers, and so on.
 
 ## See Also
 
-- [Common Mailbox Identifiers](common-mailbox-identifiers.md)
+### Describing messages
+- [Common Mailbox Identifiers](../common-mailbox-identifiers.md)
   Constants that describe common mailbox names.
-- [var htmlContentData: Data?](cssearchableitemattributeset/htmlcontentdata.md)
+- [var htmlContentData: Data?](./htmlcontentdata.md)
   The HTML content of the document encoded as an NSData object representing a UTF-8 encoded string.
-- [var accountIdentifier: String?](cssearchableitemattributeset/accountidentifier.md)
+- [var accountIdentifier: String?](./accountidentifier.md)
   The unique identifier for the account with which the message is associated, if any.
-- [var additionalRecipients: [CSPerson]?](cssearchableitemattributeset/additionalrecipients.md)
-  An array of [`CSPerson`](csperson.md) objects representing the content of the Cc: field in an email message.
-- [var authorAddresses: [String]?](cssearchableitemattributeset/authoraddresses.md)
+- [var additionalRecipients: [CSPerson]?](./additionalrecipients.md)
+  An array of [`CSPerson`](../csperson.md) objects representing the content of the Cc: field in an email message.
+- [var authorAddresses: [String]?](./authoraddresses.md)
   An array of addresses associated with the author of the message.
-- [var authorEmailAddresses: [String]?](cssearchableitemattributeset/authoremailaddresses.md)
+- [var authorEmailAddresses: [String]?](./authoremailaddresses.md)
   An array of email addresses associated with the author of the message.
-- [var authorNames: [String]?](cssearchableitemattributeset/authornames.md)
+- [var authorNames: [String]?](./authornames.md)
   An array of names representing the authors who have worked on the message.
-- [var authors: [CSPerson]?](cssearchableitemattributeset/authors.md)
-  An array of [`CSPerson`](csperson.md) objects representing the content of the From: field in an item.
-- [var emailAddresses: [String]?](cssearchableitemattributeset/emailaddresses.md)
+- [var authors: [CSPerson]?](./authors.md)
+  An array of [`CSPerson`](../csperson.md) objects representing the content of the From: field in an item.
+- [var emailAddresses: [String]?](./emailaddresses.md)
   An array of email addresses associated with the message.
-- [var emailHeaders: [String : [Any]]?](cssearchableitemattributeset/emailheaders.md)
+- [var emailHeaders: [String : [Any]]?](./emailheaders.md)
   A dictionary that contains all the headers of the message.
-- [var hiddenAdditionalRecipients: [CSPerson]?](cssearchableitemattributeset/hiddenadditionalrecipients.md)
-  An array of [`CSPerson`](csperson.md) objects representing the content of the Bcc: field in an email message.
-- [var instantMessageAddresses: [String]?](cssearchableitemattributeset/instantmessageaddresses.md)
+- [var hiddenAdditionalRecipients: [CSPerson]?](./hiddenadditionalrecipients.md)
+  An array of [`CSPerson`](../csperson.md) objects representing the content of the Bcc: field in an email message.
+- [var instantMessageAddresses: [String]?](./instantmessageaddresses.md)
   An array of instant message addresses for the message.
-- [var likelyJunk: NSNumber](cssearchableitemattributeset/likelyjunk.md)
+- [var likelyJunk: NSNumber](./likelyjunk.md)
   A value that indicates if the message is likely to be considered junk.
-- [var mailboxIdentifiers: [String]?](cssearchableitemattributeset/mailboxidentifiers.md)
+- [var mailboxIdentifiers: [String]?](./mailboxidentifiers.md)
   An array of mailbox identifiers associated with the message.
-- [var phoneNumbers: [String]?](cssearchableitemattributeset/phonenumbers.md)
+- [var phoneNumbers: [String]?](./phonenumbers.md)
   An array of phone numbers associated with the message.
 
 

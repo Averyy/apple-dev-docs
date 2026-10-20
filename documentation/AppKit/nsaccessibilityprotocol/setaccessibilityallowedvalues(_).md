@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the allowed values for the slider accessibility element.
@@ -17,15 +18,16 @@ func setAccessibilityAllowedValues(_ accessibilityAllowedValues: [NSNumber]?)
 
 ## See Also
 
-- [func accessibilityAllowedValues() -> [NSNumber]?](nsaccessibilityprotocol/accessibilityallowedvalues.md)
+### Configuring sliders
+- [func accessibilityAllowedValues() -> [NSNumber]?](./accessibilityallowedvalues%28%29.md)
   Returns the allowed values for the slider accessibility element.
-- [func accessibilityLabelUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitylabeluielements.md)
+- [func accessibilityLabelUIElements() -> [Any]?](./accessibilitylabeluielements%28%29.md)
   Returns the child label elements for the slider accessibility element.
-- [func setAccessibilityLabelUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitylabeluielements(_:).md)
+- [func setAccessibilityLabelUIElements([Any]?)](./setaccessibilitylabeluielements%28_%29.md)
   Sets the child label elements for the slider accessibility element.
-- [func accessibilityLabelValue() -> Float](nsaccessibilityprotocol/accessibilitylabelvalue.md)
+- [func accessibilityLabelValue() -> Float](./accessibilitylabelvalue%28%29.md)
   Returns the value of the label accessibility element.
-- [func setAccessibilityLabelValue(Float)](nsaccessibilityprotocol/setaccessibilitylabelvalue(_:).md)
+- [func setAccessibilityLabelValue(Float)](./setaccessibilitylabelvalue%28_%29.md)
   Sets the value of the label accessibility element.
 
 

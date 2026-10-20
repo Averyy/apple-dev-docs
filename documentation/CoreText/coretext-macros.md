@@ -1,6 +1,7 @@
 # Macros
 
-**Framework**: Core Text
+**Framework**: Core Text  
+**Role**: API Collection
 
 
 ---

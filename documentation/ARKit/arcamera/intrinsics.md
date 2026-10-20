@@ -1,7 +1,8 @@
 # intrinsics
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A matrix that converts between the 2D camera plane and 3D world coordinate space.
 
@@ -15,17 +16,22 @@ A matrix that converts between the 2D camera plane and 3D world coordinate space
 var intrinsics: simd_float3x3 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) simd_float3x3 intrinsics;
+```
+
 #### Discussion
 
 The intrinsic matrix (commonly represented in equations as `K`) is based on physical characteristics of the device camera and a pinhole camera model. You can use the matrix to transform 3D coordinates to 2D coordinates on an image plane.
 
-![None](/images/com.apple.arkit/media-2902622@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2902622@2x.png)
 
 The values `fx` and `fy` are the pixel focal length, and are identical for square pixels. The values `ox` and `oy` are the offsets of the principal point from the top-left corner of the image frame. All values are expressed in pixels.
 
 ## See Also
 
-- [var imageResolution: CGSize](arcamera/imageresolution.md)
+### Examining Imaging Parameters
+- [var imageResolution: CGSize](./imageresolution.md)
   The width and height, in pixels, of the captured camera image.
 
 

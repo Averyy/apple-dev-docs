@@ -1,7 +1,8 @@
 # ShapeMarkup.LineMarker.none
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No marker.
 

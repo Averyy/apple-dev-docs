@@ -1,7 +1,8 @@
 # appendArguments(_:tokenCount:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that appends argument text to the tool call.
 
@@ -26,7 +27,8 @@ static func appendArguments(_ content: String, tokenCount: Int) -> LanguageModel
 
 ## See Also
 
-- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.struct/updatemetadata(_:).md)
+### Tool call actions
+- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](./updatemetadata%28_%29.md)
   Creates an action that replaces the metadata for a tool call.
 
 

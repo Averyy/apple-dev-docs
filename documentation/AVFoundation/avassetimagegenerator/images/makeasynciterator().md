@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous iterator that produces elements of this type.
 

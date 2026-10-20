@@ -1,14 +1,15 @@
 # kIONetworkEventTypeLinkSpeedChange
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIONetworkEventTypeLinkSpeedChange = 0xff000005
 ```
 

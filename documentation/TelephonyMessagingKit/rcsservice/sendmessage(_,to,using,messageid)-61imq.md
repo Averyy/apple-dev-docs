@@ -1,7 +1,8 @@
 # sendMessage(_:to:using:messageID:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a reply message to a specified destination.
 
@@ -16,7 +17,7 @@ final func sendMessage(_ content: RCSMessage.Reply, to destination: RCSHandle, u
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of [`RCSMessage.Reply`](rcsmessage/reply.md).
+- `content`: The content of the message to send, as an instance of [`RCSMessage.Reply`](../rcsmessage/reply.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.

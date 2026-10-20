@@ -1,7 +1,8 @@
 # DefaultLabelStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default label style in the current context.
 
@@ -23,26 +24,27 @@ struct DefaultLabelStyle
 
 #### Overview
 
-You can also use [`automatic`](labelstyle/automatic.md) to construct this style.
+You can also use [`automatic`](./labelstyle/automatic.md) to construct this style.
 
 ## Topics
 
 ### Creating the label style
-- [init()](defaultlabelstyle/init.md)
+- [init()](./defaultlabelstyle/init%28%29.md)
   Creates an automatic label style.
 
 ## Relationships
 
 ### Conforms To
-- [LabelStyle](labelstyle.md)
+- [LabelStyle](./labelstyle.md)
 
 ## See Also
 
-- [struct IconOnlyLabelStyle](icononlylabelstyle.md)
+### Supporting types
+- [struct IconOnlyLabelStyle](./icononlylabelstyle.md)
   A label style that only displays the icon of the label.
-- [struct TitleAndIconLabelStyle](titleandiconlabelstyle.md)
+- [struct TitleAndIconLabelStyle](./titleandiconlabelstyle.md)
   A label style that shows both the title and icon of the label using a system-standard layout.
-- [struct TitleOnlyLabelStyle](titleonlylabelstyle.md)
+- [struct TitleOnlyLabelStyle](./titleonlylabelstyle.md)
   A label style that only displays the title of the label.
 
 

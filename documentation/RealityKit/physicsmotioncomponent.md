@@ -1,7 +1,8 @@
 # PhysicsMotionComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that controls the motion of the body in physics simulations.
 
@@ -11,7 +12,7 @@ A component that controls the motion of the body in physics simulations.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,40 +22,41 @@ struct PhysicsMotionComponent
 
 ## Mentions
 
-- [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
+- [Designing scene hierarchies for efficient physics simulation](./designing-scene-hierarchies-for-efficient-physics-simulation.md)
 
 #### Overview
 
-You specify velocities in the coordinate space of the physics simulation defined by [`nearestSimulationEntity(for:)`](physicssimulationcomponent/nearestsimulationentity(for:).md).
+You specify velocities in the coordinate space of the physics simulation defined by [`nearestSimulationEntity(for:)`](./physicssimulationcomponent/nearestsimulationentity%28for%29.md).
 
-The behavior of an entity with a physics motion component depends on the entity’s [`mode`](physicsbodycomponent/mode.md) setting:
+The behavior of an entity with a physics motion component depends on the entity’s [`mode`](./physicsbodycomponent/mode.md) setting:
 
-- **[`PhysicsBodyMode.static`](physicsbodymode/static.md)**: The physics simulation ignores the velocities. The entity doesn’t move.
-- **[`PhysicsBodyMode.kinematic`](physicsbodymode/kinematic.md)**: The physics simulation moves the body according to the values you set for [`angularVelocity`](physicsmotioncomponent/angularvelocity.md) and [`linearVelocity`](physicsmotioncomponent/linearvelocity.md).
-- **[`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md)**: The physics simulation overwrites the velocity values based on simulation, and ignores any values that you write.
+- **[`PhysicsBodyMode.static`](./physicsbodymode/static.md)**: The physics simulation ignores the velocities. The entity doesn’t move.
+- **[`PhysicsBodyMode.kinematic`](./physicsbodymode/kinematic.md)**: The physics simulation moves the body according to the values you set for [`angularVelocity`](./physicsmotioncomponent/angularvelocity.md) and [`linearVelocity`](./physicsmotioncomponent/linearvelocity.md).
+- **[`PhysicsBodyMode.dynamic`](./physicsbodymode/dynamic.md)**: The physics simulation overwrites the velocity values based on simulation, and ignores any values that you write.
 
 ## Topics
 
 ### Creating the motion component
-- [init()](physicsmotioncomponent/init.md)
+- [init()](./physicsmotioncomponent/init%28%29.md)
   Creates a physics motion component at rest.
-- [init(linearVelocity: SIMD3<Float>, angularVelocity: SIMD3<Float>)](physicsmotioncomponent/init(linearvelocity:angularvelocity:).md)
+- [init(linearVelocity: SIMD3<Float>, angularVelocity: SIMD3<Float>)](./physicsmotioncomponent/init%28linearvelocity,angularvelocity%29.md)
   Creates a physics motion component with the given velocities.
 ### Setting velocity
-- [var angularVelocity: SIMD3<Float>](physicsmotioncomponent/angularvelocity.md)
+- [var angularVelocity: SIMD3<Float>](./physicsmotioncomponent/angularvelocity.md)
   The angular velocity of the body around the center of mass.
-- [var linearVelocity: SIMD3<Float>](physicsmotioncomponent/linearvelocity.md)
+- [var linearVelocity: SIMD3<Float>](./physicsmotioncomponent/linearvelocity.md)
   The linear velocity of the body in the physics simulation.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct ImpulseAction](impulseaction.md)
+### Physics motion
+- [struct ImpulseAction](./impulseaction.md)
   An action that applies an impulse to the physics body at its center of mass when played as an animation.
 
 

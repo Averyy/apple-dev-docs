@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the Default App Clip Experiences resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the Default App Clip Experiences resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceCreateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object AppClipDefaultExperienceCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppClipDefaultExperienceCreateRequest.Data.Relationships](appclipdefaultexperiencecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppClipDefaultExperienceCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

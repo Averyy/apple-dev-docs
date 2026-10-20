@@ -1,7 +1,8 @@
 # model
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A string that identifies the device model.
 
@@ -10,7 +11,7 @@ A string that identifies the device model.
 
 ## Declaration
 
-```swift
+```
 readonly attribute String model;
 ```
 
@@ -20,15 +21,16 @@ The property contains a human readable string identifying the device, for exampl
 
 ## See Also
 
-- [appIdentifier](device/1627339-appidentifier.md)
+### Retrieving Device Information
+- [appIdentifier](./api-1627339-appidentifier.md)
   The unique identifier for the app.
-- [appVersion](device/1627395-appversion.md)
+- [appVersion](./api-1627395-appversion.md)
   The current app version.
-- [productType](device/1627386-producttype.md)
+- [productType](./api-1627386-producttype.md)
   The version of the product installed on the Apple TV.
-- [systemVersion](device/1627323-systemversion.md)
+- [systemVersion](./api-1627323-systemversion.md)
   The tvOS version.
-- [vendorIdentifier](device/1627383-vendoridentifier.md)
+- [vendorIdentifier](./api-1627383-vendoridentifier.md)
   The universally unique identifier (UUID) of the device.
 
 

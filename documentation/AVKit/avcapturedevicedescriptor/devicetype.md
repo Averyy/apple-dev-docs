@@ -1,7 +1,8 @@
 # deviceType
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of camera, such as a wide-angle or telephoto camera.
 
@@ -16,15 +17,20 @@ The kind of camera, such as a wide-angle or telephoto camera.
 var deviceType: AVCaptureDevice.DeviceType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureDeviceType deviceType;
+```
+
 #### Discussion
 
-This value matches the doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype of the camera it describes.
+This value matches the https://developer.apple.com/documentation/avfoundation/avcapturedevice/devicetype of the camera it describes.
 
 ## See Also
 
-- [var mediaTypes: Set<AVMediaType>](avcapturedevicedescriptor/mediatypes.md)
+### Inspecting the device’s characteristics
+- [var mediaTypes: Set<AVMediaType>](./mediatypes.md)
   The kinds of media the camera captures.
-- [var position: AVCaptureDevice.Position](avcapturedevicedescriptor/position.md)
+- [var position: AVCaptureDevice.Position](./position.md)
   The physical position of the camera on the device.
 
 

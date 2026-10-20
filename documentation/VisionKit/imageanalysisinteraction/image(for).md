@@ -1,7 +1,8 @@
 # image(for:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an image asynchronously that contains the given subjects with the background removed.
 
@@ -20,7 +21,7 @@ final func image(for subjects: Set<ImageAnalysisInteraction.Subject>) async thro
 
 #### Discussion
 
-If one or more subjects fail to produce an image, the method throws [`ImageAnalysisInteraction.SubjectUnavailable.imageUnavailable`](imageanalysisinteraction/subjectunavailable/imageunavailable.md).
+If one or more subjects fail to produce an image, the method throws [`ImageAnalysisInteraction.SubjectUnavailable.imageUnavailable`](./subjectunavailable/imageunavailable.md).
 
 ## Parameters
 
@@ -28,11 +29,12 @@ If one or more subjects fail to produce an image, the method throws [`ImageAnaly
 
 ## See Also
 
-- [var subjects: Set<ImageAnalysisInteraction.Subject>](imageanalysisinteraction/subjects.md)
+### Accessing image subjects
+- [var subjects: Set<ImageAnalysisInteraction.Subject>](./subjects.md)
   The set of all subjects the framework identifies in an image.
-- [ImageAnalysisInteraction.Subject](imageanalysisinteraction/subject.md)
+- [ImageAnalysisInteraction.Subject](./subject.md)
   An area of interest in an image that the framework identifies as a primary focal point.
-- [func subject(at: CGPoint) async -> ImageAnalysisInteraction.Subject?](imageanalysisinteraction/subject(at:).md)
+- [func subject(at: CGPoint) async -> ImageAnalysisInteraction.Subject?](./subject%28at%29.md)
   Returns the subject at the given point within the interaction’s image, if one exists.
 
 

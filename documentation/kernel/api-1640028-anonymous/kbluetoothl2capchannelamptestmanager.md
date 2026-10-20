@@ -1,14 +1,15 @@
 # kBluetoothL2CAPChannelAMPTestManager
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPChannelAMPTestManager = 0x003F
 ```
 

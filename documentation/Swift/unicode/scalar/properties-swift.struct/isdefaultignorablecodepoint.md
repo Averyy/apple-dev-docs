@@ -1,7 +1,8 @@
 # isDefaultIgnorableCodePoint
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a default-ignorable code point.
 
@@ -24,7 +25,7 @@ var isDefaultIgnorableCodePoint: Bool { get }
 
 Default-ignorable code points are those that should be ignored by default in rendering (unless explicitly supported). They have no visible glyph or advance width in and of themselves, although they may affect the display, positioning, or adornment of adjacent or surrounding characters.
 
-This property corresponds to the “Default_Ignorable_Code_Point” and the “Other_Default_Ignorable_Code_point” properties in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Default_Ignorable_Code_Point” and the “Other_Default_Ignorable_Code_point” properties in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

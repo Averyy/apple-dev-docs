@@ -1,7 +1,8 @@
 # indexData
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Updated index buffer data.
 

@@ -1,7 +1,8 @@
 # ComposedTabularTransformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that composes two tabular transformers by applying them one after the other.
 
@@ -27,36 +28,37 @@ The result of this transformer is equivalent to invoking `outer(inner(x))` on an
 ## Topics
 
 ### Creating the transformer
-- [init(Inner, Outer)](composedtabulartransformer/init(_:_:).md)
+- [init(Inner, Outer)](./composedtabulartransformer/init%28_,_%29.md)
   Creates a composed tabular transformer from two tabular transformers.
 ### Getting the properties
-- [var inner: Inner](composedtabulartransformer/inner.md)
+- [var inner: Inner](./composedtabulartransformer/inner.md)
   The inner transformer.
-- [var outer: Outer](composedtabulartransformer/outer.md)
+- [var outer: Outer](./composedtabulartransformer/outer.md)
   The outer transformer.
 ### Applying a transformation
-- [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](composedtabulartransformer/applied(to:eventhandler:).md)
+- [func applied(to: DataFrame, eventHandler: EventHandler?) async throws -> DataFrame](./composedtabulartransformer/applied%28to,eventhandler%29.md)
   Performs the composed transformation on a single input.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TabularTransformer](tabulartransformer.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TabularTransformer](./tabulartransformer.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [struct ComposedTransformer](composedtransformer.md)
+### Composition
+- [struct ComposedTransformer](./composedtransformer.md)
   A transformer that composes two transformers by applying them one after the other.
-- [struct ComposedTemporalTransformer](composedtemporaltransformer.md)
+- [struct ComposedTemporalTransformer](./composedtemporaltransformer.md)
   A temporal transformer that composes two temporal transformers by applying them one after the other.
 
 

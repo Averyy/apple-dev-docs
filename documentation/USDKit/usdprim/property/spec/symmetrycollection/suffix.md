@@ -1,7 +1,8 @@
 # suffix
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored suffix used for symmetry-driven name substitution, or `nil` if not authored.
 

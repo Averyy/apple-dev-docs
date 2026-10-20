@@ -1,7 +1,8 @@
 # MTLCounter
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An individual counter a GPU device lists within one of its counter sets.
 
@@ -19,32 +20,37 @@ An individual counter a GPU device lists within one of its counter sets.
 protocol MTLCounter : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol MTLCounter <NSObject>
+```
+
 #### Overview
 
-You can determine which counters a GPU supports within a counter set (see [`MTLCounterSet`](mtlcounterset.md)) by checking the elements of its [`counters`](mtlcounterset/counters.md) property. A counter’s [`name`](mtlcounter/name.md) property typically matches one of the common counter set names that [`MTLCommonCounter`](mtlcommoncounter.md) defines. For more information, see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
+You can determine which counters a GPU supports within a counter set (see [`MTLCounterSet`](./mtlcounterset.md)) by checking the elements of its [`counters`](./mtlcounterset/counters.md) property. A counter’s [`name`](./mtlcounter/name.md) property typically matches one of the common counter set names that [`MTLCommonCounter`](./mtlcommoncounter.md) defines. For more information, see [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
 ## Topics
 
 ### Identifying a counter
-- [var name: String](mtlcounter/name.md)
+- [var name: String](./mtlcounter/name.md)
   The name of a GPU’s counter instance.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+### Counters and counter sets
+- [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md)
   Check whether a GPU produces the runtime performance data you want to sample.
-- [protocol MTLCounterSet](mtlcounterset.md)
+- [protocol MTLCounterSet](./mtlcounterset.md)
   A collection of individual counters a GPU device supports for a counter set.
-- [struct MTLCommonCounterSet](mtlcommoncounterset.md)
+- [struct MTLCommonCounterSet](./mtlcommoncounterset.md)
   The name of a specific counter set that a GPU device can support.
-- [struct MTLCommonCounter](mtlcommoncounter.md)
+- [struct MTLCommonCounter](./mtlcommoncounter.md)
   The name of a specific counter that can appear in a GPU device’s counter sets.
 
 

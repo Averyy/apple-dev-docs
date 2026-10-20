@@ -1,7 +1,8 @@
 # Transaction.RefundRequestError
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error codes for refund requests.
 
@@ -22,43 +23,44 @@ enum RefundRequestError
 
 #### Overview
 
-The following methods throw refund request errors: [`beginRefundRequest(in:)`](transaction/beginrefundrequest(in:)-9k0pj.md), [`beginRefundRequest(for:in:)`](transaction/beginrefundrequest(for:in:)-65tph.md), [`beginRefundRequest(in:)`](transaction/beginrefundrequest(in:)-63bvd.md), and [`beginRefundRequest(for:in:)`](transaction/beginrefundrequest(for:in:)-9mscy.md).
+The following methods throw refund request errors: [`beginRefundRequest(in:)`](./beginrefundrequest%28in%29-9k0pj.md), [`beginRefundRequest(for:in:)`](./beginrefundrequest%28for,in%29-65tph.md), [`beginRefundRequest(in:)`](./beginrefundrequest%28in%29-63bvd.md), and [`beginRefundRequest(for:in:)`](./beginrefundrequest%28for,in%29-9mscy.md).
 
 ## Topics
 
 ### Error Enumeration
-- [Transaction.RefundRequestError.duplicateRequest](transaction/refundrequesterror/duplicaterequest.md)
+- [Transaction.RefundRequestError.duplicateRequest](./refundrequesterror/duplicaterequest.md)
   The App Store has already received a refund request for this Apple In-App Purchase.
-- [Transaction.RefundRequestError.failed](transaction/refundrequesterror/failed.md)
+- [Transaction.RefundRequestError.failed](./refundrequesterror/failed.md)
   The refund request submission failed.
 ### Enumeration Cases
-- [Transaction.RefundRequestError.ineligible](transaction/refundrequesterror/ineligible.md)
+- [Transaction.RefundRequestError.ineligible](./refundrequesterror/ineligible.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Testing refund requests](testing-refund-requests.md)
+### Requesting refunds
+- [Testing refund requests](../testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
-- [func beginRefundRequest(in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(in:)-9k0pj.md)
+- [func beginRefundRequest(in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28in%29-9k0pj.md)
   Presents the refund request sheet for the transaction in a window scene.
-- [func beginRefundRequest(in: NSViewController) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(in:)-63bvd.md)
+- [func beginRefundRequest(in: NSViewController) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28in%29-63bvd.md)
   Presents the refund request sheet for the transaction in a view controller.
-- [static func beginRefundRequest(for: UInt64, in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(for:in:)-65tph.md)
+- [static func beginRefundRequest(for: UInt64, in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28for,in%29-65tph.md)
   Presents the refund request sheet for the specified transaction in a window scene.
-- [static func beginRefundRequest(for: UInt64, in: NSViewController) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(for:in:)-9mscy.md)
+- [static func beginRefundRequest(for: UInt64, in: NSViewController) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28for,in%29-9mscy.md)
   Presents the refund request sheet for the specified transaction in a view controller.
-- [Transaction.RefundRequestStatus](transaction/refundrequeststatus.md)
+- [Transaction.RefundRequestStatus](./refundrequeststatus.md)
   The status codes for refund requests.
 
 

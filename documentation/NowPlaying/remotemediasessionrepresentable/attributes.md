@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A `Codable` type you define to identify this session and carry its remote state.

@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that allows view content to reference information about a contained map.
 
@@ -11,7 +12,7 @@ Creates an instance that allows view content to reference information about a co
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ Creates an instance that allows view content to reference information about a co
 
 #### Return Value
 
-Returns a [`MapProxy`](mapproxy.md) that allows you to introspect the content of a map.
+Returns a [`MapProxy`](../mapproxy.md) that allows you to introspect the content of a map.
 
 ## Parameters
 

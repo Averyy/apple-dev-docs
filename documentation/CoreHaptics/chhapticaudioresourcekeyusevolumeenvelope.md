@@ -1,7 +1,8 @@
 # CHHapticAudioResourceKeyUseVolumeEnvelope
 
 **Framework**: Core Haptics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for a Boolean value that indicates whether audio file playback fades in and out using an envelope.
 
@@ -19,17 +20,22 @@ A key for a Boolean value that indicates whether audio file playback fades in an
 let CHHapticAudioResourceKeyUseVolumeEnvelope: String
 ```
 
+```c
+extern CHHapticAudioResourceKey CHHapticAudioResourceKeyUseVolumeEnvelope;
+```
+
 #### Discussion
 
 Fading, or ramping, the volume of an audio resource can prevent clicks during playback. It’s also useful in cases where the app modulates the envelope to use different attack and release times.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../Swift/true.md).
 
 ## See Also
 
-- [let CHHapticAudioResourceKeyLoopEnabled: String](chhapticaudioresourcekeyloopenabled.md)
+### Audio Resource Keys
+- [let CHHapticAudioResourceKeyLoopEnabled: String](./chhapticaudioresourcekeyloopenabled.md)
   A key for a Boolean value that indicates whether to loop audio playback.
-- [typealias CHHapticAudioResourceKey](chhapticaudioresourcekey.md)
+- [typealias CHHapticAudioResourceKey](./chhapticaudioresourcekey.md)
   A type alias for a key that identifies the playback behavior of an audio resource.
 
 

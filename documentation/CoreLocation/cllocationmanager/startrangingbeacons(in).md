@@ -1,15 +1,18 @@
 # startRangingBeacons(in:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the delivery of notifications for the specified beacon region.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- Mac Catalyst 14.0+ - Deprecated in 14.0
+- macOS 11.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use [`startRangingBeacons(satisfying:)`](./startrangingbeacons%28satisfying%29.md) instead.
 
 ## Declaration
 
@@ -17,13 +20,17 @@ Starts the delivery of notifications for the specified beacon region.
 func startRangingBeacons(in region: CLBeaconRegion)
 ```
 
+```objc
+- (void) startRangingBeaconsInRegion:(CLBeaconRegion *) region;
+```
+
 ## Mentions
 
-- [Determining the proximity to an iBeacon device](determining-the-proximity-to-an-ibeacon-device.md)
+- [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 
 #### Discussion
 
-Once registered, the location manager reports any encountered beacons to its delegate by calling the [`locationManager(_:didRangeBeacons:in:)`](cllocationmanagerdelegate/locationmanager(_:didrangebeacons:in:).md) method. If there is an error registering the specified beacon region, the location manager calls its delegate’s [`locationManager(_:rangingBeaconsDidFailFor:withError:)`](cllocationmanagerdelegate/locationmanager(_:rangingbeaconsdidfailfor:witherror:).md) method and provides the appropriate error information.
+Once registered, the location manager reports any encountered beacons to its delegate by calling the [`locationManager(_:didRangeBeacons:in:)`](../cllocationmanagerdelegate/locationmanager%28_,didrangebeacons,in%29.md) method. If there is an error registering the specified beacon region, the location manager calls its delegate’s [`locationManager(_:rangingBeaconsDidFailFor:withError:)`](../cllocationmanagerdelegate/locationmanager%28_,rangingbeaconsdidfailfor,witherror%29.md) method and provides the appropriate error information.
 
 ## Parameters
 
@@ -31,27 +38,28 @@ Once registered, the location manager reports any encountered beacons to its del
 
 ## See Also
 
-- [func startMonitoring(for: CLRegion)](cllocationmanager/startmonitoring(for:).md)
+### Methods
+- [func startMonitoring(for: CLRegion)](./startmonitoring%28for%29.md)
   Starts monitoring the specified region.
-- [func stopMonitoring(for: CLRegion)](cllocationmanager/stopmonitoring(for:).md)
+- [func stopMonitoring(for: CLRegion)](./stopmonitoring%28for%29.md)
   Stops monitoring the specified region.
-- [class func regionMonitoringAvailable() -> Bool](cllocationmanager/regionmonitoringavailable.md)
+- [class func regionMonitoringAvailable() -> Bool](./regionmonitoringavailable%28%29.md)
   Returns a Boolean value indicating whether region monitoring is supported on the current device.
-- [class func regionMonitoringEnabled() -> Bool](cllocationmanager/regionmonitoringenabled.md)
+- [class func regionMonitoringEnabled() -> Bool](./regionmonitoringenabled%28%29.md)
   Returns a Boolean value indicating whether region monitoring is currently enabled.
-- [class func authorizationStatus() -> CLAuthorizationStatus](cllocationmanager/authorizationstatus.md)
+- [class func authorizationStatus() -> CLAuthorizationStatus](./authorizationstatus%28%29.md)
   Returns the app’s authorization status for using location services.
-- [func startMonitoring(for: CLRegion, desiredAccuracy: CLLocationAccuracy)](cllocationmanager/startmonitoring(for:desiredaccuracy:).md)
+- [func startMonitoring(for: CLRegion, desiredAccuracy: CLLocationAccuracy)](./startmonitoring%28for,desiredaccuracy%29.md)
   Starts monitoring the specified region for boundary crossings.
-- [func requestState(for: CLRegion)](cllocationmanager/requeststate(for:).md)
+- [func requestState(for: CLRegion)](./requeststate%28for%29.md)
   Retrieves the state of a region asynchronously.
-- [func stopRangingBeacons(in: CLBeaconRegion)](cllocationmanager/stoprangingbeacons(in:).md)
+- [func stopRangingBeacons(in: CLBeaconRegion)](./stoprangingbeacons%28in%29.md)
   Stops the delivery of notifications for the specified beacon region.
-- [class func deferredLocationUpdatesAvailable() -> Bool](cllocationmanager/deferredlocationupdatesavailable.md)
+- [class func deferredLocationUpdatesAvailable() -> Bool](./deferredlocationupdatesavailable%28%29.md)
   Returns a Boolean value indicating whether the device supports deferred location updates.
-- [func allowDeferredLocationUpdates(untilTraveled: CLLocationDistance, timeout: TimeInterval)](cllocationmanager/allowdeferredlocationupdates(untiltraveled:timeout:).md)
+- [func allowDeferredLocationUpdates(untilTraveled: CLLocationDistance, timeout: TimeInterval)](./allowdeferredlocationupdates%28untiltraveled,timeout%29.md)
   Asks the location manager to defer the delivery of location updates until the specified criteria are met.
-- [func disallowDeferredLocationUpdates()](cllocationmanager/disallowdeferredlocationupdates.md)
+- [func disallowDeferredLocationUpdates()](./disallowdeferredlocationupdates%28%29.md)
   Cancels the deferral of location updates for this app.
 
 

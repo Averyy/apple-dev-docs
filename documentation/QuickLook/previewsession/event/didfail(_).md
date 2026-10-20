@@ -1,7 +1,8 @@
 # PreviewSession.Event.didFail(_:)
 
 **Framework**: Quick Look  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session failed to open with an error.
 

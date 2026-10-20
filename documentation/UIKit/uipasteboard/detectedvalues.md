@@ -1,7 +1,8 @@
 # UIPasteboard.DetectedValues
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains common types of data that the data detection system matches for a pasteboard.
 
@@ -9,7 +10,7 @@ An object that contains common types of data that the data detection system matc
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,45 +21,46 @@ struct DetectedValues
 ## Topics
 
 ### Detected patterns
-- [var patterns: Set<PartialKeyPath<UIPasteboard.DetectedValues>>](uipasteboard/detectedvalues/patterns.md)
+- [var patterns: Set<PartialKeyPath<UIPasteboard.DetectedValues>>](./detectedvalues/patterns.md)
   A set of key paths that represent patterns that the data detection system identifies.
-- [var probableWebSearch: String](uipasteboard/detectedvalues/probablewebsearch.md)
+- [var probableWebSearch: String](./detectedvalues/probablewebsearch.md)
   A string that the data detection system identifies as a probable web search item.
-- [var probableWebURL: String](uipasteboard/detectedvalues/probableweburl.md)
+- [var probableWebURL: String](./detectedvalues/probableweburl.md)
   A string that the data detection system identifies as a probable web URL.
 ### Detected values
-- [var calendarEvents: [DDMatchCalendarEvent]](uipasteboard/detectedvalues/calendarevents.md)
+- [var calendarEvents: [DDMatchCalendarEvent]](./detectedvalues/calendarevents.md)
   An array of calendar events that the data detection system identifies.
-- [var emailAddresses: [DDMatchEmailAddress]](uipasteboard/detectedvalues/emailaddresses.md)
+- [var emailAddresses: [DDMatchEmailAddress]](./detectedvalues/emailaddresses.md)
   An array of email addresses that the data detection system identifies.
-- [var flightNumbers: [DDMatchFlightNumber]](uipasteboard/detectedvalues/flightnumbers.md)
+- [var flightNumbers: [DDMatchFlightNumber]](./detectedvalues/flightnumbers.md)
   An array of flight numbers that the system data detection system identifies.
-- [var links: [DDMatchLink]](uipasteboard/detectedvalues/links.md)
+- [var links: [DDMatchLink]](./detectedvalues/links.md)
   An array of web links that the data detection system identifies.
-- [var moneyAmounts: [DDMatchMoneyAmount]](uipasteboard/detectedvalues/moneyamounts.md)
+- [var moneyAmounts: [DDMatchMoneyAmount]](./detectedvalues/moneyamounts.md)
   An array of money amounts and currencies that the data detection system identifies.
-- [var number: Double?](uipasteboard/detectedvalues/number.md)
+- [var number: Double?](./detectedvalues/number.md)
   A number that the data detection system identifies.
-- [var phoneNumbers: [DDMatchPhoneNumber]](uipasteboard/detectedvalues/phonenumbers.md)
+- [var phoneNumbers: [DDMatchPhoneNumber]](./detectedvalues/phonenumbers.md)
   An array of phone numbers that the data detection system identifies.
-- [var postalAddresses: [DDMatchPostalAddress]](uipasteboard/detectedvalues/postaladdresses.md)
+- [var postalAddresses: [DDMatchPostalAddress]](./detectedvalues/postaladdresses.md)
   An array of postal addresses that the data detection system identifies.
-- [var shipmentTrackingNumbers: [DDMatchShipmentTrackingNumber]](uipasteboard/detectedvalues/shipmenttrackingnumbers.md)
+- [var shipmentTrackingNumbers: [DDMatchShipmentTrackingNumber]](./detectedvalues/shipmenttrackingnumbers.md)
   An array of parcel tracking numbers that the data detection system identifies.
 
 ## See Also
 
-- [func detectedPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<UIPasteboard.DetectedValues>>](uipasteboard/detectedpatterns(for:).md)
+### Detecting patterns of content in pasteboard items
+- [func detectedPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<UIPasteboard.DetectedValues>>](./detectedpatterns%28for%29.md)
   Requests that the data detection system asynchronously identify the patterns that you specify for the pasteboard, and return the patterns that it matches.
-- [func detectedPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?) async throws -> [Set<PartialKeyPath<UIPasteboard.DetectedValues>>]](uipasteboard/detectedpatterns(for:initemset:).md)
+- [func detectedPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?) async throws -> [Set<PartialKeyPath<UIPasteboard.DetectedValues>>]](./detectedpatterns%28for,initemset%29.md)
   Requests that the data detection system asynchronously identify the patterns that you specify for the pasteboard items, and return the patterns that it matches.
-- [func detectedValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> UIPasteboard.DetectedValues](uipasteboard/detectedvalues(for:).md)
+- [func detectedValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> UIPasteboard.DetectedValues](./detectedvalues%28for%29.md)
   Requests that the data detection system asynchronously identify the types of values that you specify for the pasteboard, and return the values that it matches.
-- [func detectValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?, completionHandler: (Result<[UIPasteboard.DetectedValues], any Error>) -> ())](uipasteboard/detectvalues(for:initemset:completionhandler:)-pm9l.md)
+- [func detectValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?, completionHandler: (Result<[UIPasteboard.DetectedValues], any Error>) -> ())](./detectvalues%28for,initemset,completionhandler%29-pm9l.md)
   Requests that the data detection system identify the types of data that you specify for the pasteboard items, and provide the values that it matches to your closure.
-- [func detectedValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?) async throws -> [UIPasteboard.DetectedValues]](uipasteboard/detectedvalues(for:initemset:).md)
+- [func detectedValues(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?) async throws -> [UIPasteboard.DetectedValues]](./detectedvalues%28for,initemset%29.md)
   Requests that the data detection system asynchronously identify the types of values that you specify for the pasteboard item, and return the values that it matches for each pasteboard.
-- [UIPasteboard.DetectionPattern](uipasteboard/detectionpattern.md)
+- [UIPasteboard.DetectionPattern](./detectionpattern.md)
   An object that represents a pattern to detect for the pasteboard, such as a URL, text, or a number.
 
 

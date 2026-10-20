@@ -1,7 +1,8 @@
 # Creative.Eligibility
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Eligibility data summarizing whether the ad creative meets requirements to serve ads.
 
@@ -10,13 +11,13 @@ Eligibility data summarizing whether the ad creative meets requirements to serve
 
 ## Declaration
 
-```swift
+```
 object Creative.Eligibility
 ```
 
 #### Discussion
 
-Eligibility is read-only and reflects the platform’s current delivery checks for the ad creative across supply sources and placements. See [`CreativeEligibility`](creativeeligibility.md) for the full field reference.
+Eligibility is read-only and reflects the platform’s current delivery checks for the ad creative across supply sources and placements. See [`CreativeEligibility`](../creativeeligibility.md) for the full field reference.
 
 ## Properties
 

@@ -1,7 +1,8 @@
 # imageUTType
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the uniform type identifier that reflects the user’s selection.
 
@@ -14,11 +15,16 @@ Returns the uniform type identifier that reflects the user’s selection.
 var imageUTType: String! { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * imageUTType;
+```
+
 ## See Also
 
-- [var imageProperties: [AnyHashable : Any]!](iksaveoptions/imageproperties.md)
+### Retrieving User Responses
+- [var imageProperties: [AnyHashable : Any]!](./imageproperties.md)
   Returns a dictionary of updated image properties that reflects the user’s selection.
-- [var userSelection: [AnyHashable : Any]!](iksaveoptions/userselection.md)
+- [var userSelection: [AnyHashable : Any]!](./userselection.md)
   Returns a dictionary that contains the save options selected by the user.
 
 

@@ -1,7 +1,8 @@
 # NSLayoutManager.GlyphProperty
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Glyph properties.
 
@@ -14,52 +15,57 @@ Glyph properties.
 struct GlyphProperty
 ```
 
+```c
+enum NSGlyphProperty : NSInteger;
+```
+
 ## Topics
 
 ### Glyph properties
-- [static var null: NSLayoutManager.GlyphProperty](nslayoutmanager/glyphproperty/null.md)
+- [static var null: NSLayoutManager.GlyphProperty](./glyphproperty/null.md)
   The null glyph, which the layout manager ignores.
-- [static var controlCharacter: NSLayoutManager.GlyphProperty](nslayoutmanager/glyphproperty/controlcharacter.md)
+- [static var controlCharacter: NSLayoutManager.GlyphProperty](./glyphproperty/controlcharacter.md)
   A glyph representing a control character.
-- [static var elastic: NSLayoutManager.GlyphProperty](nslayoutmanager/glyphproperty/elastic.md)
+- [static var elastic: NSLayoutManager.GlyphProperty](./glyphproperty/elastic.md)
   A glyph with a changeable width, such as a white space character.
-- [static var nonBaseCharacter: NSLayoutManager.GlyphProperty](nslayoutmanager/glyphproperty/nonbasecharacter.md)
+- [static var nonBaseCharacter: NSLayoutManager.GlyphProperty](./glyphproperty/nonbasecharacter.md)
   A glyph that combines several properties.
 ### Initializers
-- [init(rawValue: Int)](nslayoutmanager/glyphproperty/init(rawvalue:).md)
+- [init(rawValue: Int)](./glyphproperty/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<CGGlyph>?, properties: UnsafeMutablePointer<NSLayoutManager.GlyphProperty>?, characterIndexes: UnsafeMutablePointer<Int>?, bidiLevels: UnsafeMutablePointer<UInt8>?) -> Int](nslayoutmanager/getglyphs(in:glyphs:properties:characterindexes:bidilevels:).md)
+### Accessing glyphs
+- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<CGGlyph>?, properties: UnsafeMutablePointer<NSLayoutManager.GlyphProperty>?, characterIndexes: UnsafeMutablePointer<Int>?, bidiLevels: UnsafeMutablePointer<UInt8>?) -> Int](./getglyphs%28in,glyphs,properties,characterindexes,bidilevels%29.md)
   Fills a passed-in buffer with a sequence of glyphs.
-- [func cgGlyph(at: Int) -> CGGlyph](nslayoutmanager/cgglyph(at:).md)
+- [func cgGlyph(at: Int) -> CGGlyph](./cgglyph%28at%29.md)
   Returns the glyph at the specified index.
-- [func cgGlyph(at: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) -> CGGlyph](nslayoutmanager/cgglyph(at:isvalidindex:).md)
+- [func cgGlyph(at: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) -> CGGlyph](./cgglyph%28at,isvalidindex%29.md)
   Returns the glyph at the specified index along with information about whether the glyph index is valid.
-- [func setGlyphs(UnsafePointer<CGGlyph>, properties: UnsafePointer<NSLayoutManager.GlyphProperty>, characterIndexes: UnsafePointer<Int>, font: NSFont, forGlyphRange: NSRange)](nslayoutmanager/setglyphs(_:properties:characterindexes:font:forglyphrange:).md)
+- [func setGlyphs(UnsafePointer<CGGlyph>, properties: UnsafePointer<NSLayoutManager.GlyphProperty>, characterIndexes: UnsafePointer<Int>, font: NSFont, forGlyphRange: NSRange)](./setglyphs%28_,properties,characterindexes,font,forglyphrange%29.md)
   Stores the initial glyphs and glyph properties for a character range.
-- [func characterIndexForGlyph(at: Int) -> Int](nslayoutmanager/characterindexforglyph(at:).md)
+- [func characterIndexForGlyph(at: Int) -> Int](./characterindexforglyph%28at%29.md)
   Returns the index in the text storage for the first character of the specified glyph.
-- [func glyphIndexForCharacter(at: Int) -> Int](nslayoutmanager/glyphindexforcharacter(at:).md)
+- [func glyphIndexForCharacter(at: Int) -> Int](./glyphindexforcharacter%28at%29.md)
   Returns the index of the first glyph of the character at the specified index.
-- [func isValidGlyphIndex(Int) -> Bool](nslayoutmanager/isvalidglyphindex(_:).md)
+- [func isValidGlyphIndex(Int) -> Bool](./isvalidglyphindex%28_%29.md)
   Indicates whether the specified index refers to a valid glyph.
-- [var numberOfGlyphs: Int](nslayoutmanager/numberofglyphs.md)
+- [var numberOfGlyphs: Int](./numberofglyphs.md)
   The number of glyphs in the layout manager.
-- [func propertyForGlyph(at: Int) -> NSLayoutManager.GlyphProperty](nslayoutmanager/propertyforglyph(at:).md)
+- [func propertyForGlyph(at: Int) -> NSLayoutManager.GlyphProperty](./propertyforglyph%28at%29.md)
   Returns the glyph property of the glyph at the specified index.
 
 

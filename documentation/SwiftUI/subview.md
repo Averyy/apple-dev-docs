@@ -1,7 +1,8 @@
 # Subview
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque value representing a subview of another view.
 
@@ -30,34 +31,35 @@ Subviews are proxies to the resolved view they represent, meaning that modifiers
 ## Topics
 
 ### Structures
-- [Subview.ID](subview/id-swift.struct.md)
+- [Subview.ID](./subview/id-swift.struct.md)
   A unique identifier for a subview.
 ### Instance Properties
-- [var containerValues: ContainerValues](subview/containervalues.md)
+- [var containerValues: ContainerValues](./subview/containervalues.md)
   The container values associated with the given subview.
-- [var id: Subview.ID](subview/id-swift.property.md)
+- [var id: Subview.ID](./subview/id-swift.property.md)
   The unique identifier of the view.
 ### Enumerations
-- [Subview.ContainerSizingOptions](subview/containersizingoptions.md)
+- [Subview.ContainerSizingOptions](./subview/containersizingoptions.md)
   Options on how all subviews should be sized when in a container.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [View](view.md)
+- [Identifiable](../Swift/identifiable.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct SubviewsCollection](subviewscollection.md)
+### Accessing a container’s subviews
+- [struct SubviewsCollection](./subviewscollection.md)
   An opaque collection representing the subviews of view.
-- [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+- [struct SubviewsCollectionSlice](./subviewscollectionslice.md)
   A slice of a SubviewsCollection.
-- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
+- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](./view/containervalue%28_,_%29.md)
   Sets a particular container value of a view.
-- [struct ContainerValues](containervalues.md)
+- [struct ContainerValues](./containervalues.md)
   A collection of container values associated with a given view.
-- [protocol ContainerValueKey](containervaluekey.md)
+- [protocol ContainerValueKey](./containervaluekey.md)
   A key for accessing container values.
 
 

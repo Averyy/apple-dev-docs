@@ -1,12 +1,13 @@
 # maxValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value the slider can send to its target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The maximum value the slider can send to its target.
 var maxValue: Double { get set }
 ```
 
+```objc
+@property double maxValue;
+```
+
 #### Discussion
 
-A horizontal slider sends its maximum value when the knob is at the right end of the slider; a vertical slider sends it when the knob is at the top. The maximum selectable value for a circular slider is just below [`maxValue`](nsslidercell/maxvalue.md); for example, if [`maxValue`](nsslidercell/maxvalue.md) is 360, you can set the dial up to 359.999.
+A horizontal slider sends its maximum value when the knob is at the right end of the slider; a vertical slider sends it when the knob is at the top. The maximum selectable value for a circular slider is just below [`maxValue`](./maxvalue.md); for example, if [`maxValue`](./maxvalue.md) is 360, you can set the dial up to 359.999.
 
 ## See Also
 
-- [var minValue: Double](nsslidercell/minvalue.md)
+### Managing Value Limits
+- [var minValue: Double](./minvalue.md)
   The minimum value the slider can send to its target.
 
 

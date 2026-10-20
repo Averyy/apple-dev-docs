@@ -1,19 +1,20 @@
 # SignedInteger Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init<T>(T)](int32/init(_:)-47iba.md)
+- [init<T>(T)](./init%28_%29-47iba.md)
   Creates a new instance from the given integer.
-- [init?<T>(exactly: T)](int32/init(exactly:)-7er6b.md)
+- [init?<T>(exactly: T)](./init%28exactly%29-7er6b.md)
 ### Type Properties
-- [static var isSigned: Bool](int32/issigned.md)
+- [static var isSigned: Bool](./issigned.md)
   A Boolean value indicating whether this type is a signed integer type.
-- [static var max: Self](int32/max.md)
+- [static var max: Self](./max.md)
   The maximum representable integer in this type.
-- [static var min: Self](int32/min.md)
+- [static var min: Self](./min.md)
   The minimum representable integer in this type.
 
 

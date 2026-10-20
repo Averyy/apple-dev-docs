@@ -1,7 +1,8 @@
 # NEHotspotManager.Error
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of errors thrown by hotspot manager methods.
 
@@ -20,22 +21,22 @@ enum Error
 ## Topics
 
 ### Configuration errors
-- [NEHotspotManager.Error.configurationNotLoaded](nehotspotmanager/error/configurationnotloaded.md)
+- [NEHotspotManager.Error.configurationNotLoaded](./error/configurationnotloaded.md)
   The hotspot manager configuration is not loaded.
-- [NEHotspotManager.Error.configurationInvalid](nehotspotmanager/error/configurationinvalid.md)
+- [NEHotspotManager.Error.configurationInvalid](./error/configurationinvalid.md)
   The hotspot manager configuration is invalid.
 ### Other errors
-- [NEHotspotManager.Error.internalError](nehotspotmanager/error/internalerror.md)
+- [NEHotspotManager.Error.internalError](./error/internalerror.md)
   The hotspot manager encountered an internal error.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

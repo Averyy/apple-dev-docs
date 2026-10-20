@@ -1,7 +1,8 @@
 # tagData
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An abstract data blob representing the tags associated with the item.
 
@@ -18,21 +19,26 @@ An abstract data blob representing the tags associated with the item.
 optional var tagData: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * tagData;
+```
+
 ## See Also
 
-- [var extendedAttributes: [String : Data]](nsfileprovideritemprotocol/extendedattributes.md)
+### Managing Metadata
+- [var extendedAttributes: [String : Data]](./extendedattributes.md)
   The extended file attributes synced by the File Provider extension.
-- [var fileSystemFlags: NSFileProviderFileSystemFlags](nsfileprovideritemprotocol/filesystemflags.md)
+- [var fileSystemFlags: NSFileProviderFileSystemFlags](./filesystemflags.md)
   Flags that define an item’s on-disk properties and its appearance in the user interface.
-- [struct NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags.md)
+- [struct NSFileProviderFileSystemFlags](../nsfileproviderfilesystemflags.md)
   Flags that define an item’s on-disk properties and its appearance in the user interface.
-- [var userInfo: [AnyHashable : Any]?](nsfileprovideritemprotocol/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   A property list that contains additional data about the item.
-- [var favoriteRank: NSNumber?](nsfileprovideritemprotocol/favoriterank.md)
+- [var favoriteRank: NSNumber?](./favoriterank.md)
   A 64-bit, unsigned integer indicating the order of the favorite item in the Favorites list.
-- [let NSFileProviderFavoriteRankUnranked: UInt64](nsfileproviderfavoriterankunranked.md)
+- [let NSFileProviderFavoriteRankUnranked: UInt64](../nsfileproviderfavoriterankunranked.md)
   A value that indicates that the item is not ranked.
-- [var typeAndCreator: NSFileProviderTypeAndCreator](nsfileprovideritemprotocol/typeandcreator.md)
+- [var typeAndCreator: NSFileProviderTypeAndCreator](./typeandcreator.md)
   The file type and creator codes for the item.
 
 

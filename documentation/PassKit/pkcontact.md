@@ -1,7 +1,8 @@
 # PKContact
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that encapsulates contact information needed for billing and shipping.
 
@@ -19,6 +20,10 @@ An object that encapsulates contact information needed for billing and shipping.
 class PKContact
 ```
 
+```objc
+@interface PKContact : NSObject
+```
+
 #### Overview
 
 Instances contain only the information needed for the given transaction. All other properties are set to `nil`.
@@ -26,38 +31,39 @@ Instances contain only the information needed for the given transaction. All oth
 ## Topics
 
 ### Contact information
-- [var emailAddress: String?](pkcontact/emailaddress.md)
+- [var emailAddress: String?](./pkcontact/emailaddress.md)
   The contact’s email address, or `nil` if the contact’s email is not needed for the transaction.
-- [var name: PersonNameComponents?](pkcontact/name.md)
+- [var name: PersonNameComponents?](./pkcontact/name.md)
   The contact’s first and last name, or `nil` if the contact’s name is not needed for the transaction.
-- [var phoneNumber: CNPhoneNumber?](pkcontact/phonenumber.md)
+- [var phoneNumber: CNPhoneNumber?](./pkcontact/phonenumber.md)
   The contact’s telephone number, or `nil` if the contact’s phone number is not needed for the transaction.
-- [var postalAddress: CNPostalAddress?](pkcontact/postaladdress.md)
+- [var postalAddress: CNPostalAddress?](./pkcontact/postaladdress.md)
   The contact’s full postal address.
-- [var supplementarySubLocality: String?](pkcontact/supplementarysublocality.md)
+- [var supplementarySubLocality: String?](./pkcontact/supplementarysublocality.md)
   The contact’s sublocality, or `nil` if the sublocality is not needed for the transaction.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var billingContact: PKContact?](pkpayment/billingcontact.md)
+### Working with billing and shipping information
+- [var billingContact: PKContact?](./pkpayment/billingcontact.md)
   The user-selected billing address for this transaction.
-- [var shippingContact: PKContact?](pkpayment/shippingcontact.md)
+- [var shippingContact: PKContact?](./pkpayment/shippingcontact.md)
   The user-selected shipping address for this transaction.
-- [var shippingMethod: PKShippingMethod?](pkpayment/shippingmethod.md)
+- [var shippingMethod: PKShippingMethod?](./pkpayment/shippingmethod.md)
   The user-selected shipping method for this transaction.
-- [class PKShippingMethod](pkshippingmethod.md)
+- [class PKShippingMethod](./pkshippingmethod.md)
   An object that defines a shipping method for delivering physical goods.
 
 

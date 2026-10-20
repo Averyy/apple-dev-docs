@@ -1,23 +1,25 @@
 # kIOUSB30DeviceNotificationTypeFunctionWake
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30DeviceNotificationTypeFunctionWake
 ```
 
 ## See Also
 
-- [kIOUSB30DeviceNotificationTypeLatencyTolerance](tiousb30devicenotificationtype/kiousb30devicenotificationtypelatencytolerance.md)
-- [kIOUSB30DeviceNotificationTypeBusIntervalAdjustment](tiousb30devicenotificationtype/kiousb30devicenotificationtypebusintervaladjustment.md)
-- [kIOUSB30DeviceNotificationTypeHostRoleRequest](tiousb30devicenotificationtype/kiousb30devicenotificationtypehostrolerequest.md)
-- [kIOUSB30DeviceNotificationTypeSublinkSpeed](tiousb30devicenotificationtype/kiousb30devicenotificationtypesublinkspeed.md)
+### Getting the Notification Types
+- [kIOUSB30DeviceNotificationTypeLatencyTolerance](./kiousb30devicenotificationtypelatencytolerance.md)
+- [kIOUSB30DeviceNotificationTypeBusIntervalAdjustment](./kiousb30devicenotificationtypebusintervaladjustment.md)
+- [kIOUSB30DeviceNotificationTypeHostRoleRequest](./kiousb30devicenotificationtypehostrolerequest.md)
+- [kIOUSB30DeviceNotificationTypeSublinkSpeed](./kiousb30devicenotificationtypesublinkspeed.md)
 
 
 ---

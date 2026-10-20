@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the data source for the number of rows for a specified component.
@@ -18,6 +19,10 @@ Asks the data source for the number of rows for a specified component.
 func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
 ```
 
+```objc
+- (NSInteger) pickerView:(UIPickerView *) pickerView numberOfRowsInComponent:(NSInteger) component;
+```
+
 #### Return Value
 
 The number of rows for the component.
@@ -29,7 +34,8 @@ The number of rows for the component.
 
 ## See Also
 
-- [func numberOfComponents(in: UIPickerView) -> Int](uipickerviewdatasource/numberofcomponents(in:).md)
+### Providing counts for the picker view
+- [func numberOfComponents(in: UIPickerView) -> Int](./numberofcomponents%28in%29.md)
   Asks the data source for the number of components in the picker view.
 
 

@@ -1,7 +1,8 @@
 # MediaCommand.FeedbackStatus.neutral
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has not expressed a preference.
 

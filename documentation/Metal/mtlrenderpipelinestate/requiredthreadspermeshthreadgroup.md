@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 var requiredThreadsPerMeshThreadgroup: MTLSize { get }
+```
+
+```objc
+@property (readonly) MTLSize requiredThreadsPerMeshThreadgroup;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # controller(_:storeValues:securityLevel:sharingType:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func controller(_ controller: MTRDeviceController, storeValues values: [String : any NSSecureCoding], securityLevel: MTRStorageSecurityLevel, sharingType: MTRStorageSharingType) -> Bool
+```
+
+```objc
+- (BOOL) controller:(MTRDeviceController *) controller storeValues:(NSDictionary<NSString *,id<NSSecureCoding>> *) values securityLevel:(MTRStorageSecurityLevel) securityLevel sharingType:(MTRStorageSharingType) sharingType;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(id:materialIndex:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new part.
 
@@ -11,7 +12,7 @@ Create a new part.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # paddingCharacter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that the receiver uses to pad numbers in the formatted string representation.
 
@@ -20,9 +21,14 @@ The string that the receiver uses to pad numbers in the formatted string represe
 var paddingCharacter: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * paddingCharacter;
+```
+
 ## See Also
 
-- [var paddingPosition: NumberFormatter.PadPosition](numberformatter/paddingposition.md)
+### Managing the Padding of Numbers
+- [var paddingPosition: NumberFormatter.PadPosition](./paddingposition.md)
   The padding position used by the receiver.
 
 

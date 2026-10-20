@@ -1,11 +1,12 @@
 # AudioHardwarePowerHint.favorSavingPower
 
 **Framework**: Core Audio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 case favorSavingPower
 ```
 
+```c
+kAudioHardwarePowerHintFavorSavingPower
+```
+
 ## See Also
 
-- [AudioHardwarePowerHint.none](audiohardwarepowerhint/none.md)
+### Constants
+- [AudioHardwarePowerHint.none](./none.md)
 
 
 ---

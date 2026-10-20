@@ -1,7 +1,8 @@
 # MTLMotionBorderMode.clamp
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that specifies treating times outside the specified endpoint as if they were at the endpoint.
 
@@ -19,9 +20,14 @@ A mode that specifies treating times outside the specified endpoint as if they w
 case clamp
 ```
 
+```c
+MTLMotionBorderModeClamp
+```
+
 ## See Also
 
-- [MTLMotionBorderMode.vanish](mtlmotionbordermode/vanish.md)
+### Specifying motion modes
+- [MTLMotionBorderMode.vanish](./vanish.md)
   A mode that specifies that times outside the specified endpoint need to prevent any ray-intersections with the primitive.
 
 

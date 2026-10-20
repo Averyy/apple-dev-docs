@@ -1,7 +1,8 @@
 # track
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The track from which the output reads sample buffers.
 
@@ -19,9 +20,14 @@ The track from which the output reads sample buffers.
 var track: AVAssetTrack { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAssetTrack * track;
+```
+
 ## See Also
 
-- [var outputSettings: [String : Any]?](avassetreadertrackoutput/outputsettings.md)
+### Inspecting an output
+- [var outputSettings: [String : Any]?](./outputsettings.md)
   The output settings for this track output.
 
 

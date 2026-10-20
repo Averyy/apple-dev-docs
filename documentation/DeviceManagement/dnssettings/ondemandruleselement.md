@@ -1,44 +1,72 @@
 # DNSSettings.OnDemandRulesElement
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A list of domain strings that determine which DNS queries use the DNS server.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.0
+- iPadOS 14.0+ - Deprecated in 27.0
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use the declarative management `com.apple.configuration.network.dns-settings` configuration.
 
 ## Declaration
 
-```swift
+```
 object DNSSettings.OnDemandRulesElement
 ```
 
 ## Topics
 
 ### Objects
-- [object DNSSettings.OnDemandRulesElement.ActionParameter](dnssettings/ondemandruleselement/actionparameter.md)
+- [object DNSSettings.OnDemandRulesElement.ActionParameter](./ondemandruleselement/actionparameter.md)
   A dictionary that provides per-connection rules.
 
 ## Properties
 
-- `Action` (string) *(required)*: The action to take if this dictionary matches the current network. Allowed values: - `Connect`: Apply DNS Settings when the dictionary matches.
-- `Disconnect`: Don’t apply DNS Settings when the dictionary matches.
-- `EvaluateConnection`: Apply DNS Settings with per-domain exceptions when the dictionary matches. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `ActionParameters` ([DNSSettings.OnDemandRulesElement.ActionParameter]): An array of dictionaries that provide per-connection rules. The system uses this array only for settings where the `Action` value is `EvaluateConnection`. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `DNSDomainMatch` ([string]): An array of domain names. This rule matches if any of the domain names in the specified list matches any domain in the device’s search domains list. The system supports a single wildcard (`\*`) prefix, but it’s not required. For example, both `\*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don’t match against `mydomain-example.com`. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `DNSServerAddressMatch` ([string]): An array of IP addresses. This rule matches if any of the network’s specified DNS servers match any entry in the array. The system supports matching with a single wildcard. For example, `17.\*` matches any DNS server in the 17.0.0.0/8 subnet. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `InterfaceTypeMatch` (string): An interface type. If specified, this rule matches only if the primary network interface hardware matches the specified type. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `SSIDMatch` ([string]): An array of SSIDs to match against the current network. If the network isn’t a Wi-Fi network or if the SSID doesn’t appear in this array, the match fails. Omit this key and the corresponding array to match against any SSID. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
-- `URLStringProbe` (string): A URL to probe. This rule matches if this URL is successfully fetched and returns a 200 HTTP status code without redirection. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `Action` (string) *(required)* *(deprecated)*: The action to take if this dictionary matches the current network. Allowed values:
+
+  - `Connect`: Apply DNS Settings when the dictionary matches.
+  - `Disconnect`: Don’t apply DNS Settings when the dictionary matches.
+  - `EvaluateConnection`: Apply DNS Settings with per-domain exceptions when the dictionary matches.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
+  **Allowed Values**: `Connect`, `Disconnect`, `EvaluateConnection`
+- `ActionParameters` ([DNSSettings.OnDemandRulesElement.ActionParameter]) *(deprecated)*: An array of dictionaries that provide per-connection rules. The system uses this array only for settings where the `Action` value is `EvaluateConnection`.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `DNSDomainMatch` ([string]) *(deprecated)*: An array of domain names. This rule matches if any of the domain names in the specified list matches any domain in the device’s search domains list.
+
+  The system supports a single wildcard (`\*`) prefix, but it’s not required. For example, both `\*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don’t match against `mydomain-example.com`.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `DNSServerAddressMatch` ([string]) *(deprecated)*: An array of IP addresses. This rule matches if any of the network’s specified DNS servers match any entry in the array.
+
+  The system supports matching with a single wildcard. For example, `17.\*` matches any DNS server in the 17.0.0.0/8 subnet.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `InterfaceTypeMatch` (string) *(deprecated)*: An interface type. If specified, this rule matches only if the primary network interface hardware matches the specified type.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+
+  **Allowed Values**: `Ethernet`, `WiFi`, `Cellular`
+- `SSIDMatch` ([string]) *(deprecated)*: An array of SSIDs to match against the current network. If the network isn’t a Wi-Fi network or if the SSID doesn’t appear in this array, the match fails. Omit this key and the corresponding array to match against any SSID.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
+- `URLStringProbe` (string) *(deprecated)*: A URL to probe. This rule matches if this URL is successfully fetched and returns a 200 HTTP status code without redirection.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 
 ## See Also
 
-- [object DNSSettings.DNSSettings](dnssettings/dnssettings-data.dictionary.md)
+### Objects
+- [object DNSSettings.DNSSettings](./dnssettings-data.dictionary.md)
   A dictionary that defines a configuration for an encrypted DNS server.
 
 

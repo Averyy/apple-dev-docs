@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,10 +19,16 @@
 mutating func actionSkippedWithResult(event: Self.EventType) -> ActionResult?
 ```
 
+## Default Implementations
+
+### BehaviorTreeActionHandler Implementations
+- [func actionSkippedWithResult(event: Self.EventType) -> ActionResult?](./actionskippedwithresult%28event%29-4y64m.md)
+
 ## See Also
 
-- [func actionEndedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionendedwithresult(event:).md)
-- [func actionTerminatedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionterminatedwithresult(event:).md)
+### Responding to action completion
+- [func actionEndedWithResult(event: Self.EventType) -> ActionResult?](./actionendedwithresult%28event%29.md)
+- [func actionTerminatedWithResult(event: Self.EventType) -> ActionResult?](./actionterminatedwithresult%28event%29.md)
 
 
 ---

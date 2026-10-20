@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Compositor Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 26.0+

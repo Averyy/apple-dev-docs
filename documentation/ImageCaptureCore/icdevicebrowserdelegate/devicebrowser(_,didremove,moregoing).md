@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a device has been removed.
@@ -19,16 +20,21 @@ Tells the delegate that a device has been removed.
 func deviceBrowser(_ browser: ICDeviceBrowser, didRemove device: ICDevice, moreGoing: Bool)
 ```
 
+```objc
+- (void) deviceBrowser:(ICDeviceBrowser *) browser didRemoveDevice:(ICDevice *) device moreGoing:(BOOL) moreGoing;
+```
+
 #### Discussion
 
 If several devices are removed at the same time, then this message is sent once for each device with the value of `moreGoing` set to `true` in each message except the last one.
 
 ## See Also
 
-- [func deviceBrowser(ICDeviceBrowser, didAdd: ICDevice, moreComing: Bool)](icdevicebrowserdelegate/devicebrowser(_:didadd:morecoming:).md)
+### Adding and Removing Devices
+- [func deviceBrowser(ICDeviceBrowser, didAdd: ICDevice, moreComing: Bool)](./devicebrowser%28_,didadd,morecoming%29.md)
   Tells the delegate that a device has been added.
-- [func deviceBrowserDidEnumerateLocalDevices(ICDeviceBrowser)](icdevicebrowserdelegate/devicebrowserdidenumeratelocaldevices(_:).md)
-  Tells the delegate that the device browser has completed sending [`deviceBrowser(_:didAdd:moreComing:)`](icdevicebrowserdelegate/devicebrowser(_:didadd:morecoming:).md) for all local devices.
+- [func deviceBrowserDidEnumerateLocalDevices(ICDeviceBrowser)](./devicebrowserdidenumeratelocaldevices%28_%29.md)
+  Tells the delegate that the device browser has completed sending [`deviceBrowser(_:didAdd:moreComing:)`](./devicebrowser%28_,didadd,morecoming%29.md) for all local devices.
 
 
 ---

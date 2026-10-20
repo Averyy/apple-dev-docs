@@ -1,16 +1,18 @@
 # Cinematic Constants
 
-**Framework**: Cinematic
+**Framework**: Cinematic  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [let CNCinematicErrorDomain: String](cncinematicerrordomain.md)
+- [let CNCinematicErrorDomain: String](./cncinematicerrordomain.md)
 
 ## See Also
 
-- [Cinematic Enumerations](cinematic-enumerations.md)
-- [Cinematic Data Types](cinematic-data-types.md)
+### Reference
+- [Cinematic Enumerations](./cinematic-enumerations.md)
+- [Cinematic Data Types](./cinematic-data-types.md)
 
 
 ---

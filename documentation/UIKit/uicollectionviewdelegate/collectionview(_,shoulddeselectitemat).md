@@ -1,7 +1,8 @@
 # collectionView(_:shouldDeselectItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the specified item should be deselected.
 
@@ -18,15 +19,19 @@ Asks the delegate if the specified item should be deselected.
 optional func collectionView(_ collectionView: UICollectionView, shouldDeselectItemAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) collectionView:(UICollectionView *) collectionView shouldDeselectItemAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item should be deselected or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](../../Swift/true.md) if the item should be deselected or [`false`](../../Swift/false.md) if it should not.
 
 #### Discussion
 
 The collection view calls this method when the user tries to deselect an item in the collection view. It does not call this method when you programmatically deselect items.
 
-If you do not implement this method, the default return value is [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method, the default return value is [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -35,21 +40,22 @@ If you do not implement this method, the default return value is [`true`](https:
 
 ## See Also
 
-- [Changing the appearance of selected and highlighted cells](changing-the-appearance-of-selected-and-highlighted-cells.md)
+### Managing the selected cells
+- [Changing the appearance of selected and highlighted cells](../changing-the-appearance-of-selected-and-highlighted-cells.md)
   Provide visual feedback to the user about the state of a cell and the transition between states.
-- [Selecting multiple items with a two-finger pan gesture](selecting-multiple-items-with-a-two-finger-pan-gesture.md)
+- [Selecting multiple items with a two-finger pan gesture](../selecting-multiple-items-with-a-two-finger-pan-gesture.md)
   Accelerate user selection of multiple items using the multiselect gesture on table and collection views.
-- [func collectionView(UICollectionView, shouldSelectItemAt: IndexPath) -> Bool](uicollectionviewdelegate/collectionview(_:shouldselectitemat:).md)
+- [func collectionView(UICollectionView, shouldSelectItemAt: IndexPath) -> Bool](./collectionview%28_,shouldselectitemat%29.md)
   Asks the delegate if the specified item should be selected.
-- [func collectionView(UICollectionView, didSelectItemAt: IndexPath)](uicollectionviewdelegate/collectionview(_:didselectitemat:).md)
+- [func collectionView(UICollectionView, didSelectItemAt: IndexPath)](./collectionview%28_,didselectitemat%29.md)
   Tells the delegate that the item at the specified index path was selected.
-- [func collectionView(UICollectionView, didDeselectItemAt: IndexPath)](uicollectionviewdelegate/collectionview(_:diddeselectitemat:).md)
+- [func collectionView(UICollectionView, didDeselectItemAt: IndexPath)](./collectionview%28_,diddeselectitemat%29.md)
   Tells the delegate that the item at the specified path was deselected.
-- [func collectionView(UICollectionView, shouldBeginMultipleSelectionInteractionAt: IndexPath) -> Bool](uicollectionviewdelegate/collectionview(_:shouldbeginmultipleselectioninteractionat:).md)
+- [func collectionView(UICollectionView, shouldBeginMultipleSelectionInteractionAt: IndexPath) -> Bool](./collectionview%28_,shouldbeginmultipleselectioninteractionat%29.md)
   Asks the delegate whether the user can select multiple items using a two-finger pan gesture in a collection view.
-- [func collectionView(UICollectionView, didBeginMultipleSelectionInteractionAt: IndexPath)](uicollectionviewdelegate/collectionview(_:didbeginmultipleselectioninteractionat:).md)
+- [func collectionView(UICollectionView, didBeginMultipleSelectionInteractionAt: IndexPath)](./collectionview%28_,didbeginmultipleselectioninteractionat%29.md)
   Tells the delegate when the user starts using a two-finger pan gesture to select multiple items in a collection view.
-- [func collectionViewDidEndMultipleSelectionInteraction(UICollectionView)](uicollectionviewdelegate/collectionviewdidendmultipleselectioninteraction(_:).md)
+- [func collectionViewDidEndMultipleSelectionInteraction(UICollectionView)](./collectionviewdidendmultipleselectioninteraction%28_%29.md)
   Tells the delegate when the user stops using a two-finger pan gesture to select multiple items in a collection view.
 
 

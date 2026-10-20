@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No falloff is applied.
 

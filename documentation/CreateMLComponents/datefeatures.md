@@ -1,7 +1,8 @@
 # DateFeatures
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of date and time features.
 
@@ -26,73 +27,74 @@ The choice of features for a particular task depends on the relevance of differe
 ## Topics
 
 ### Features
-- [static let day: DateFeatures](datefeatures/day.md)
+- [static let day: DateFeatures](./datefeatures/day.md)
   A feature representing the day within the month.
-- [static let dayOfYear: DateFeatures](datefeatures/dayofyear.md)
+- [static let dayOfYear: DateFeatures](./datefeatures/dayofyear.md)
   A feature representing the day within the year.
-- [static let hour: DateFeatures](datefeatures/hour.md)
+- [static let hour: DateFeatures](./datefeatures/hour.md)
   A feature representing the hour within the day.
-- [static let minute: DateFeatures](datefeatures/minute.md)
+- [static let minute: DateFeatures](./datefeatures/minute.md)
   A feature representing the minute within the hour.
-- [static let month: DateFeatures](datefeatures/month.md)
+- [static let month: DateFeatures](./datefeatures/month.md)
   A feature representing the month within the year.
-- [static let second: DateFeatures](datefeatures/second.md)
+- [static let second: DateFeatures](./datefeatures/second.md)
   A feature representing the second within the minute.
-- [static let weekOfMonth: DateFeatures](datefeatures/weekofmonth.md)
+- [static let weekOfMonth: DateFeatures](./datefeatures/weekofmonth.md)
   A feature representing the week within the month.
-- [static let weekOfYear: DateFeatures](datefeatures/weekofyear.md)
+- [static let weekOfYear: DateFeatures](./datefeatures/weekofyear.md)
   A feature representing the week within the year.
-- [static let weekday: DateFeatures](datefeatures/weekday.md)
+- [static let weekday: DateFeatures](./datefeatures/weekday.md)
   A feature representing the weekday.
 ### Creating a date feature type
-- [init(rawValue: Int)](datefeatures/init(rawvalue:).md)
+- [init(rawValue: Int)](./datefeatures/init%28rawvalue%29.md)
   Creates a feature from a raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Creating a time-series classifier](creating-a-time-series-classifier.md)
+### Time-based components
+- [Creating a time-series classifier](./creating-a-time-series-classifier.md)
   Train a machine learning model to predict the class label of time-series signals.
-- [Creating a time-series forecaster](creating-a-time-series-forecaster.md)
+- [Creating a time-series forecaster](./creating-a-time-series-forecaster.md)
   Forecast future data points by training a machine learning model using historical data.
-- [struct DateFeatureExtractor](datefeatureextractor.md)
+- [struct DateFeatureExtractor](./datefeatureextractor.md)
   A time and date feature extractor.
-- [struct LinearTimeSeriesForecaster](lineartimeseriesforecaster.md)
+- [struct LinearTimeSeriesForecaster](./lineartimeseriesforecaster.md)
   A time-series forecasting estimator.
-- [struct LinearTimeSeriesForecasterConfiguration](lineartimeseriesforecasterconfiguration.md)
+- [struct LinearTimeSeriesForecasterConfiguration](./lineartimeseriesforecasterconfiguration.md)
   The configuration for a linear time-series forecaster.
-- [struct TimeSeriesForecasterBatches](timeseriesforecasterbatches.md)
+- [struct TimeSeriesForecasterBatches](./timeseriesforecasterbatches.md)
   A sequence of forecaster batches on a time series shaped array.
-- [struct TimeSeriesForecasterAnnotatedWindows](timeseriesforecasterannotatedwindows.md)
+- [struct TimeSeriesForecasterAnnotatedWindows](./timeseriesforecasterannotatedwindows.md)
   A sequence of forecasting windows on a time series shaped array.
-- [struct TemporalFeature](temporalfeature.md)
+- [struct TemporalFeature](./temporalfeature.md)
   A temporal feature contains a segment identifier and a feature value.
-- [protocol TemporalSequence](temporalsequence.md)
+- [protocol TemporalSequence](./temporalsequence.md)
   Async sequence for temporal features.
-- [struct TemporalSegmentIdentifier](temporalsegmentidentifier.md)
+- [struct TemporalSegmentIdentifier](./temporalsegmentidentifier.md)
   Uniquely identifiers a segment of a temporal sequence.
-- [struct SlidingWindows](slidingwindows.md)
+- [struct SlidingWindows](./slidingwindows.md)
   A sequence of windows on a time series shaped array.
-- [struct SlidingWindowTransformer](slidingwindowtransformer.md)
+- [struct SlidingWindowTransformer](./slidingwindowtransformer.md)
   A temporal transformer that groups input elements.
-- [struct Downsampler](downsampler.md)
+- [struct Downsampler](./downsampler.md)
   A temporal transformer that down samples the input stream.
-- [struct VideoReader](videoreader.md)
+- [struct VideoReader](./videoreader.md)
   A video file reader.
-- [struct TemporalFileSegment](temporalfilesegment.md)
+- [struct TemporalFileSegment](./temporalfilesegment.md)
   A URL and a time range identifying a specific segment of a time-based (temporal) file.
 
 

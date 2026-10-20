@@ -1,14 +1,15 @@
 # kSBCModePageCaching_LBCSS_Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSBCModePageCaching_LBCSS_Mask = (1 << kSBCModePageCaching_LBCSS_Bit)
 ```
 

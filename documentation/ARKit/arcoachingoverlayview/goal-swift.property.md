@@ -1,7 +1,8 @@
 # goal
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A field that indicates your app’s tracking requirements.
 
@@ -15,13 +16,18 @@ A field that indicates your app’s tracking requirements.
 var goal: ARCoachingOverlayView.Goal { get set }
 ```
 
+```objc
+@property (nonatomic, assign) ARCoachingGoal goal;
+```
+
 #### Discussion
 
 The goal you choose determines the particular instructions the coaching overlay presents to the user.
 
 ## See Also
 
-- [ARCoachingOverlayView.Goal](arcoachingoverlayview/goal-swift.enum.md)
+### Defining a Goal
+- [ARCoachingOverlayView.Goal](./goal-swift.enum.md)
   The options that specify your app’s tracking requirements.
 
 

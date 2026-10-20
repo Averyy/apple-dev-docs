@@ -1,7 +1,8 @@
 # copyAndMergeEvents(in:from:mergeAt:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the events from the source track and merges them into the current music track.
 
@@ -19,6 +20,10 @@ Copies the events from the source track and merges them into the current music t
 func copyAndMergeEvents(in range: AVBeatRange, from sourceTrack: AVMusicTrack, mergeAt mergeStartBeat: AVMusicTimeStamp)
 ```
 
+```objc
+- (void) copyAndMergeEventsInRange:(AVBeatRange) range fromTrack:(AVMusicTrack *) sourceTrack mergeAtBeat:(AVMusicTimeStamp) mergeStartBeat;
+```
+
 #### Discussion
 
 The system won’t modify events originally at or past the start beat. Copying events from track to track follows the same type-exclusion rules as adding events.
@@ -31,9 +36,10 @@ The system won’t modify events originally at or past the start beat. Copying e
 
 ## See Also
 
-- [func cutEvents(in: AVBeatRange)](avmusictrack/cutevents(in:).md)
+### Cutting and copying events
+- [func cutEvents(in: AVBeatRange)](./cutevents%28in%29.md)
   Splices all events in the beat range from the music track.
-- [func copyEvents(in: AVBeatRange, from: AVMusicTrack, insertAt: AVMusicTimeStamp)](avmusictrack/copyevents(in:from:insertat:).md)
+- [func copyEvents(in: AVBeatRange, from: AVMusicTrack, insertAt: AVMusicTimeStamp)](./copyevents%28in,from,insertat%29.md)
   Copies the events from the source track and splices them into the current music track.
 
 

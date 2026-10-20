@@ -1,14 +1,15 @@
 # kdebug_live_flags_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum kdebug_live_flags_t : uint32_t {
     ...
 } kdebug_live_flags_t;
@@ -17,8 +18,8 @@ typedef enum kdebug_live_flags_t : uint32_t {
 ## Topics
 
 ### Constants
-- [KDBG_NOWRAP](kdebug_live_flags_t/kdbg_nowrap.md)
-- [KDBG_WRAPPED](kdebug_live_flags_t/kdbg_wrapped.md)
+- [KDBG_NOWRAP](./kdebug_live_flags_t/kdbg_nowrap.md)
+- [KDBG_WRAPPED](./kdebug_live_flags_t/kdbg_wrapped.md)
 
 
 ---

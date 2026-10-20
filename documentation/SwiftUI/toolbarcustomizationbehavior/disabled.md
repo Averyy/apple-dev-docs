@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The disabled customization behavior.
 
@@ -26,9 +27,10 @@ Items with this behavior may not be removed or moved by the user. They will be p
 
 ## See Also
 
-- [static var `default`: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/default.md)
+### Getting customization behaviors
+- [static var `default`: ToolbarCustomizationBehavior](./default.md)
   The default customization behavior.
-- [static var reorderable: ToolbarCustomizationBehavior](toolbarcustomizationbehavior/reorderable.md)
+- [static var reorderable: ToolbarCustomizationBehavior](./reorderable.md)
   The reorderable customization behavior.
 
 

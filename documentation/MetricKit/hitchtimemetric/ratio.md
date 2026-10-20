@@ -1,7 +1,8 @@
 # ratio
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Ratio of time the application spent hitching during tracked animations.
 
@@ -19,13 +20,14 @@ let ratio: Measurement<HitchTimeRatio>
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let totalHitchTime: Measurement<UnitDuration>](hitchtimemetric/totalhitchtime.md)
+### Measurements
+- [let totalHitchTime: Measurement<UnitDuration>](./totalhitchtime.md)
   Total time the application spent hitching during tracked animations.
-- [let totalAnimationTime: Measurement<UnitDuration>](hitchtimemetric/totalanimationtime.md)
+- [let totalAnimationTime: Measurement<UnitDuration>](./totalanimationtime.md)
   Total time the application spent animating.
 
 

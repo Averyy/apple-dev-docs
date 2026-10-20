@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,9 +12,9 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated symbols
-- [static var beginGesture: NSEvent.EventTypeMask](nsevent/eventtypemask/begingesture.md)
+- [static var beginGesture: NSEvent.EventTypeMask](./nsevent/eventtypemask/begingesture.md)
   A mask for begin-gesture events.
-- [static var endGesture: NSEvent.EventTypeMask](nsevent/eventtypemask/endgesture.md)
+- [static var endGesture: NSEvent.EventTypeMask](./nsevent/eventtypemask/endgesture.md)
   A mask for end-gesture events.
 
 

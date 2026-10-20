@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCode.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase offer code resource.
 
@@ -10,21 +11,22 @@ Attributes that describe an In-App Purchase offer code resource.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCode.Attributes
 ```
 
 ## Properties
 
 - `active` (boolean)
-- `customerEligibilities` ([string])
+- `customerEligibilities` ([string]): **Allowed Values**: `NON_SPENDER`, `ACTIVE_SPENDER`, `CHURNED_SPENDER`
 - `name` (string)
 - `productionCodeCount` (integer)
 - `sandboxCodeCount` (integer)
 
 ## See Also
 
-- [object InAppPurchaseOfferCode.Relationships](inapppurchaseoffercode/relationships-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCode.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

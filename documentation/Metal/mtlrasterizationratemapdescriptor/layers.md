@@ -1,7 +1,8 @@
 # layers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rasterization rates for one or more layers in the rate map.
 
@@ -19,15 +20,20 @@ The rasterization rates for one or more layers in the rate map.
 var layers: MTLRasterizationRateLayerArray { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLRasterizationRateLayerArray * layers;
+```
+
 ## See Also
 
-- [var layerCount: Int](mtlrasterizationratemapdescriptor/layercount.md)
+### Configuring the rate map layers
+- [var layerCount: Int](./layercount.md)
   The number of layers in the rate map.
-- [func layer(at: Int) -> MTLRasterizationRateLayerDescriptor?](mtlrasterizationratemapdescriptor/layer(at:).md)
+- [func layer(at: Int) -> MTLRasterizationRateLayerDescriptor?](./layer%28at%29.md)
   Returns the layer description for a layer in the rate map.
-- [func setLayer(MTLRasterizationRateLayerDescriptor?, at: Int)](mtlrasterizationratemapdescriptor/setlayer(_:at:).md)
+- [func setLayer(MTLRasterizationRateLayerDescriptor?, at: Int)](./setlayer%28_,at%29.md)
   Sets a configuration for a layer rate map.
-- [class MTLRasterizationRateLayerArray](mtlrasterizationratelayerarray.md)
+- [class MTLRasterizationRateLayerArray](../mtlrasterizationratelayerarray.md)
   Descriptions for the rasterization rates to apply to the set of layers in a rate map.
 
 

@@ -1,21 +1,26 @@
 # ICReturnObjectError.Code.codeObjectDataEmpty
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The object data is empty.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case codeObjectDataEmpty
+```
+
+```c
+ICReturnCodeObjectDataEmpty
 ```
 
 

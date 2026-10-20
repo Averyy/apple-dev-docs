@@ -1,7 +1,8 @@
 # speakerControl
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the speaker settings on the camera.
 
@@ -19,11 +20,16 @@ Controls the speaker settings on the camera.
 var speakerControl: HMCameraAudioControl? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) HMCameraAudioControl * speakerControl;
+```
+
 ## See Also
 
-- [var microphoneControl: HMCameraAudioControl?](hmcameraprofile/microphonecontrol.md)
+### Playing audio
+- [var microphoneControl: HMCameraAudioControl?](./microphonecontrol.md)
   Controls the microphone settings on the camera.
-- [class HMCameraAudioControl](hmcameraaudiocontrol.md)
+- [class HMCameraAudioControl](../hmcameraaudiocontrol.md)
   An object that controls a camera’s audio settings.
 
 

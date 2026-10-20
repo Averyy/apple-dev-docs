@@ -1,7 +1,8 @@
 # currentImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the drawing context, expressed as an object that manages image data in your app.
 
@@ -18,9 +19,13 @@ The current state of the drawing context, expressed as an object that manages im
 var currentImage: UIImage { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIImage * currentImage;
+```
+
 #### Discussion
 
-Use this property to access the current Core Graphics context as a [`UIImage`](uiimage.md) object while providing drawing instructions for one of the drawing methods in [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md).
+Use this property to access the current Core Graphics context as a [`UIImage`](../uiimage.md) object while providing drawing instructions for one of the drawing methods in [`UIGraphicsImageRenderer`](../uigraphicsimagerenderer.md).
 
 
 ---

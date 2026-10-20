@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 20.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,7 +19,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSB30RetimerDepthLimit](../usbdriverkit/kiousb30retimerdepthlimit.md)
+- [kIOUSB30RetimerDepthLimit](../USBDriverKit/kiousb30retimerdepthlimit.md)
 
 
 ---

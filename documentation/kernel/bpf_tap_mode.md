@@ -1,7 +1,8 @@
 # bpf_tap_mode
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Mode for tapping. BPF_MODE_DISABLED/BPF_MODE_INPUT_OUTPUT etc.
 
@@ -10,7 +11,7 @@ Mode for tapping. BPF_MODE_DISABLED/BPF_MODE_INPUT_OUTPUT etc.
 
 ## Declaration
 
-```swift
+```c
 typedef u_int32_t bpf_tap_mode;
 ```
 

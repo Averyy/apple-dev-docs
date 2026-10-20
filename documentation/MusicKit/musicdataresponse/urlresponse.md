@@ -1,7 +1,8 @@
 # urlResponse
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL response returned by the Apple Music API endpoint for the originating data request.
 

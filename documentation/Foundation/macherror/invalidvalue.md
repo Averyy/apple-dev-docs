@@ -1,7 +1,8 @@
 # invalidValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A blatant range error.
 

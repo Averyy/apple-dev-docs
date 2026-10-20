@@ -1,23 +1,28 @@
 # CFWriteStreamClose(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Closes a writable stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFWriteStreamClose(_ stream: CFWriteStream!)
+```
+
+```c
+extern void CFWriteStreamClose(CFWriteStreamRef stream);
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ This function terminates the flow of bytes and releases any system resources req
 
 ## See Also
 
-- [func CFWriteStreamOpen(CFWriteStream!) -> Bool](cfwritestreamopen(_:).md)
+### Opening and Closing a Stream
+- [func CFWriteStreamOpen(CFWriteStream!) -> Bool](./cfwritestreamopen%28_%29.md)
   Opens a stream for writing.
 
 

@@ -1,7 +1,8 @@
 # pose3D
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 3D pose of the input device.
 
@@ -17,9 +18,10 @@ var pose3D: Pose3D
 
 ## See Also
 
-- [var altitude: Angle](spatialeventcollection/event/inputdevicepose-swift.struct/altitude.md)
+### Getting the event type
+- [var altitude: Angle](./altitude.md)
   The altitude angle.
-- [var azimuth: Angle](spatialeventcollection/event/inputdevicepose-swift.struct/azimuth.md)
+- [var azimuth: Angle](./azimuth.md)
   The azimuth angle.
 
 

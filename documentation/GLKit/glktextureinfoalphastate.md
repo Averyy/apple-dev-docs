@@ -1,7 +1,8 @@
 # GLKTextureInfoAlphaState
 
 **Framework**: GLKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the alpha information stored in a source image’s pixel data.
 
@@ -17,31 +18,36 @@ Values that describe the alpha information stored in a source image’s pixel da
 enum GLKTextureInfoAlphaState
 ```
 
+```c
+enum GLKTextureInfoAlphaState : GLint;
+```
+
 ## Topics
 
 ### Constants
-- [GLKTextureInfoAlphaState.none](glktextureinfoalphastate/none.md)
+- [GLKTextureInfoAlphaState.none](./glktextureinfoalphastate/none.md)
   Indicates that the texture has no alpha information.
-- [GLKTextureInfoAlphaState.nonPremultiplied](glktextureinfoalphastate/nonpremultiplied.md)
+- [GLKTextureInfoAlphaState.nonPremultiplied](./glktextureinfoalphastate/nonpremultiplied.md)
   Indicates that the color values in the texture were not premultiplied by the alpha value.
-- [GLKTextureInfoAlphaState.premultiplied](glktextureinfoalphastate/premultiplied.md)
+- [GLKTextureInfoAlphaState.premultiplied](./glktextureinfoalphastate/premultiplied.md)
   Indicates that the color values in the texture have already been premultiplied by the alpha value.
 ### Initializers
-- [init?(rawValue: GLint)](glktextureinfoalphastate/init(rawvalue:).md)
+- [init?(rawValue: GLint)](./glktextureinfoalphastate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum GLKTextureInfoOrigin](glktextureinfoorigin.md)
+### Constants
+- [enum GLKTextureInfoOrigin](./glktextureinfoorigin.md)
   The location of the origin in the original source image.
 
 

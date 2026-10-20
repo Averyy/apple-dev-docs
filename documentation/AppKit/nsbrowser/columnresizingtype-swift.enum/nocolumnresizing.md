@@ -1,15 +1,20 @@
 # NSBrowser.ColumnResizingType.noColumnResizing
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case noColumnResizing
+```
+
+```c
+NSBrowserNoColumnResizing
 ```
 
 #### Discussion
@@ -18,8 +23,9 @@ Neither `NSBrowser` nor the user can change the column width. The developer must
 
 ## See Also
 
-- [NSBrowser.ColumnResizingType.autoColumnResizing](nsbrowser/columnresizingtype-swift.enum/autocolumnresizing.md)
-- [NSBrowser.ColumnResizingType.userColumnResizing](nsbrowser/columnresizingtype-swift.enum/usercolumnresizing.md)
+### Constants
+- [NSBrowser.ColumnResizingType.autoColumnResizing](./autocolumnresizing.md)
+- [NSBrowser.ColumnResizingType.userColumnResizing](./usercolumnresizing.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # merging(_:uniquingKeysWith:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a dictionary by merging key-value pairs in a sequence into the dictionary, using a combining closure to determine the value for duplicate keys.
 
@@ -19,6 +20,8 @@ Creates a dictionary by merging key-value pairs in a sequence into the dictionar
 ```swift
 func merging<S, E>(_ other: S, uniquingKeysWith combine: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value] where S : Sequence, E : Error, S.Element == (Key, Value)
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Return Value
 

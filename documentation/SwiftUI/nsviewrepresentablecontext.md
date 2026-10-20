@@ -1,7 +1,8 @@
 # NSViewRepresentableContext
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contextual information about the state of the system that you use to create and update your AppKit view.
 
@@ -17,35 +18,36 @@ Contextual information about the state of the system that you use to create and 
 
 #### Overview
 
-An [`NSViewRepresentableContext`](nsviewrepresentablecontext.md) structure contains details about the current state of the system. When creating and updating your view, the system creates one of these structures and passes it to the appropriate method of your custom [`NSViewRepresentable`](nsviewrepresentable.md) instance. Use the information in this structure to configure your view. For example, use the provided environment values to configure the appearance of your view. Don’t create this structure yourself.
+An [`NSViewRepresentableContext`](./nsviewrepresentablecontext.md) structure contains details about the current state of the system. When creating and updating your view, the system creates one of these structures and passes it to the appropriate method of your custom [`NSViewRepresentable`](./nsviewrepresentable.md) instance. Use the information in this structure to configure your view. For example, use the provided environment values to configure the appearance of your view. Don’t create this structure yourself.
 
 ## Topics
 
 ### Coordinating view-related interactions
-- [let coordinator: View.Coordinator](nsviewrepresentablecontext/coordinator.md)
+- [let coordinator: View.Coordinator](./nsviewrepresentablecontext/coordinator.md)
   An instance you use to communicate your AppKit view’s behavior and state out to SwiftUI objects.
-- [var transaction: Transaction](nsviewrepresentablecontext/transaction.md)
+- [var transaction: Transaction](./nsviewrepresentablecontext/transaction.md)
   The current transaction.
 ### Getting the current environment data
-- [var environment: EnvironmentValues](nsviewrepresentablecontext/environment.md)
+- [var environment: EnvironmentValues](./nsviewrepresentablecontext/environment.md)
   Environment data that describes the current state of the system.
 ### Instance Methods
-- [func animate(changes: () -> Void, completion: (() -> Void)?)](nsviewrepresentablecontext/animate(changes:completion:).md)
+- [func animate(changes: () -> Void, completion: (() -> Void)?)](./nsviewrepresentablecontext/animate%28changes,completion%29.md)
   Animates changes using the animation in the current transaction.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NSViewRepresentable](nsviewrepresentable.md)
+### Adding AppKit views to SwiftUI view hierarchies
+- [protocol NSViewRepresentable](./nsviewrepresentable.md)
   A wrapper that you use to integrate an AppKit view into your SwiftUI view hierarchy.
-- [protocol NSViewControllerRepresentable](nsviewcontrollerrepresentable.md)
+- [protocol NSViewControllerRepresentable](./nsviewcontrollerrepresentable.md)
   A wrapper that you use to integrate an AppKit view controller into your SwiftUI interface.
-- [struct NSViewControllerRepresentableContext](nsviewcontrollerrepresentablecontext.md)
+- [struct NSViewControllerRepresentableContext](./nsviewcontrollerrepresentablecontext.md)
   Contextual information about the state of the system that you use to create and update your AppKit view controller.
 
 

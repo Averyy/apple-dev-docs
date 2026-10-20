@@ -1,7 +1,8 @@
 # InAppPurchaseLocalizationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase localization create request resource.
 
@@ -10,19 +11,20 @@ Attributes that describe an In-App Purchase localization create request resource
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseLocalizationCreateRequest.Data.Attributes
 ```
 
 ## Properties
 
 - `description` (string): Include this field before submitting, even though it’s optional when creating the resource.
-- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string) *(required)*: The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `name` (string) *(required)*
 
 ## See Also
 
-- [object InAppPurchaseLocalizationCreateRequest.Data.Relationships](inapppurchaselocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object InAppPurchaseLocalizationCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

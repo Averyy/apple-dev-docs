@@ -1,7 +1,8 @@
 # IsBetweenComparator
 
 **Framework**: App Intents  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This comparator is only supported for `Date` types in Shortcuts.
 
@@ -11,7 +12,7 @@ This comparator is only supported for `Date` types in Shortcuts.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,29 +24,30 @@ final class IsBetweenComparator<Property, PropertyType, InputType, ComparatorMap
 ## Topics
 
 ### Initializers
-- [init(mappingTransform: (InputType, InputType) -> ComparatorMappingType)](isbetweencomparator/init(mappingtransform:).md)
+- [init(mappingTransform: (InputType, InputType) -> ComparatorMappingType)](./isbetweencomparator/init%28mappingtransform%29.md)
   Declares support for `Between` comparisons between a property and user-supplied values.
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType, InputType) -> ComparatorMappingType)](isbetweencomparator/init(withresolvers:mappingtransform:).md)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType, InputType) -> ComparatorMappingType)](./isbetweencomparator/init%28withresolvers,mappingtransform%29.md)
   Declares support for `Between` comparisons between a property and user-supplied values.
 
 ## Relationships
 
 ### Inherits From
-- [EntityQueryComparator](entityquerycomparator.md)
+- [EntityQueryComparator](./entityquerycomparator.md)
 
 ## See Also
 
-- [class EqualToComparator](equaltocomparator.md)
+### Equatable comparisons
+- [class EqualToComparator](./equaltocomparator.md)
   An object that determines whether the value of an equatable property is equal to the specified value.
-- [class NotEqualToComparator](notequaltocomparator.md)
+- [class NotEqualToComparator](./notequaltocomparator.md)
   An object that determines whether the value of an equatable property is not equal to the specified value.
-- [class GreaterThanComparator](greaterthancomparator.md)
+- [class GreaterThanComparator](./greaterthancomparator.md)
   An object that determines whether the value of a comparable property is greater than the specified value.
-- [class GreaterThanOrEqualToComparator](greaterthanorequaltocomparator.md)
+- [class GreaterThanOrEqualToComparator](./greaterthanorequaltocomparator.md)
   An object that determines whether the value of a comparable property is greater than or equal to the specified value.
-- [class LessThanComparator](lessthancomparator.md)
+- [class LessThanComparator](./lessthancomparator.md)
   An object that determines whether the value of a comparable property is less than the specified value.
-- [class LessThanOrEqualToComparator](lessthanorequaltocomparator.md)
+- [class LessThanOrEqualToComparator](./lessthanorequaltocomparator.md)
   An object that determines whether the value of a comparable property is less than or equal to the specified value.
 
 

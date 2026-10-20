@@ -1,7 +1,8 @@
 # init(sampleDataReference:formatDescription:sampleProperties:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sample buffer with references to sample data.
 
@@ -19,6 +20,8 @@ Creates a sample buffer with references to sample data.
 ```swift
 init(sampleDataReference content: Content, formatDescription: CMFormatDescription, sampleProperties: CMSampleBuffer.SamplePropertiesCollection)
 ```
+
+Available when `Content` is `CMSampleDataReference`.
 
 ## Parameters
 

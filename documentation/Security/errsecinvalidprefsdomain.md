@@ -1,7 +1,8 @@
 # errSecInvalidPrefsDomain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The preference domain specified is invalid.
 
@@ -18,6 +19,10 @@ The preference domain specified is invalid.
 
 ```swift
 var errSecInvalidPrefsDomain: OSStatus { get }
+```
+
+```c
+errSecInvalidPrefsDomain
 ```
 
 #### Discussion

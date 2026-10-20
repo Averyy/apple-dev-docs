@@ -1,7 +1,8 @@
 # addressComponents
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address dictionary of a type checking result.
 
@@ -20,13 +21,18 @@ The address dictionary of a type checking result.
 var addressComponents: [NSTextCheckingKey : String]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,NSString *> * addressComponents;
+```
+
 #### Discussion
 
-The dictionary keys are described in [`Keys for Address Components`](keys-for-address-components.md).
+The dictionary keys are described in [Keys for Address Components](../keys-for-address-components.md).
 
 ## See Also
 
-- [class func addressCheckingResult(range: NSRange, components: [NSTextCheckingKey : String]) -> NSTextCheckingResult](nstextcheckingresult/addresscheckingresult(range:components:).md)
+### Text Checking Results for Addresses
+- [class func addressCheckingResult(range: NSRange, components: [NSTextCheckingKey : String]) -> NSTextCheckingResult](./addresscheckingresult%28range,components%29.md)
   Creates and returns a text checking result with the specified address components.
 
 

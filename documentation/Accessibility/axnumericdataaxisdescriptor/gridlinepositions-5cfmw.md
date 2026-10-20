@@ -1,7 +1,8 @@
 # gridlinePositions
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The positions of the gridlines along the axis.
 

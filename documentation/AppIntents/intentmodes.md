@@ -1,7 +1,8 @@
 # IntentModes
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of options you use to configure the runtime behavior of an app intent.
 
@@ -22,48 +23,49 @@ struct IntentModes
 
 #### Overview
 
-This structure defines the mode values you can assign to the [`supportedModes`](appintent/supportedmodes.md) property of your app intent. Intent modes indicate whether your app needs to run in the foreground or background when performing the app intent’s action. For example, the [`foreground`](intentmodes/foreground.md) mode requires your app intent code to run in a foreground process.
+This structure defines the mode values you can assign to the [`supportedModes`](./appintent/supportedmodes.md) property of your app intent. Intent modes indicate whether your app needs to run in the foreground or background when performing the app intent’s action. For example, the [`foreground`](./intentmodes/foreground.md) mode requires your app intent code to run in a foreground process.
 
-At runtime, an app intent’s [`systemContext`](appintent/systemcontext.md) property also contains information about whether the process is currently running in the foreground or background. Use that information to make additional decisions about how to perform the action. For more information, see the [`IntentModes.Current`](intentmodes/current.md) type.
+At runtime, an app intent’s [`systemContext`](./appintent/systemcontext.md) property also contains information about whether the process is currently running in the foreground or background. Use that information to make additional decisions about how to perform the action. For more information, see the [`IntentModes.Current`](./intentmodes/current.md) type.
 
 ## Topics
 
 ### Structures
-- [IntentModes.Current](intentmodes/current.md)
+- [IntentModes.Current](./intentmodes/current.md)
   The current runtime behavior of an app intent.
-- [IntentModes.ForegroundMode](intentmodes/foregroundmode.md)
+- [IntentModes.ForegroundMode](./intentmodes/foregroundmode.md)
   A type that defines the available foreground behaviors for an app intent.
 ### Type Properties
-- [static var background: IntentModes](intentmodes/background.md)
+- [static var background: IntentModes](./intentmodes/background.md)
   A value that indicates the action can run in the background.
-- [static var foreground: IntentModes](intentmodes/foreground.md)
+- [static var foreground: IntentModes](./intentmodes/foreground.md)
   A value that indicates the action needs to run in the foreground.
 ### Type Methods
-- [static func foreground(IntentModes.ForegroundMode) -> IntentModes](intentmodes/foreground(_:).md)
+- [static func foreground(IntentModes.ForegroundMode) -> IntentModes](./intentmodes/foreground%28_%29.md)
   Creates and returns a foreground mode with a specified behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct IntentSystemContext](intentsystemcontext.md)
+### Intent-related data
+- [struct IntentSystemContext](./intentsystemcontext.md)
   Contextual information that the system provides while it performs an app intent.
-- [struct IntentDescription](intentdescription.md)
+- [struct IntentDescription](./intentdescription.md)
   The human-readable description and metadata for an app intent.
-- [struct IntentDialog](intentdialog.md)
+- [struct IntentDialog](./intentdialog.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [struct IntentDeprecation](intentdeprecation.md)
-- [class IntentProjection](intentprojection.md)
+- [struct IntentDeprecation](./intentdeprecation.md)
+- [class IntentProjection](./intentprojection.md)
   Projections for an app intent that returns non-optional values for parameters.
 
 

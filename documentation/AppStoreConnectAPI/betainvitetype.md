@@ -1,7 +1,8 @@
 # BetaInviteType
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 String that indicates how you offer a beta invitation.
 
@@ -10,17 +11,23 @@ String that indicates how you offer a beta invitation.
 
 ## Declaration
 
-```swift
+```
 string BetaInviteType
 ```
 
+## Possible Values
+
+- `EMAIL`
+- `PUBLIC_LINK`
+
 ## See Also
 
-- [object BetaTester.Attributes](betatester/attributes-data.dictionary.md)
+### Attributes and Relationships
+- [object BetaTester.Attributes](./betatester/attributes-data.dictionary.md)
   Attributes that describe a beta tester resource.
-- [type BetaTesterState](betatesterstate.md)
+- [type BetaTesterState](./betatesterstate.md)
   String that describes the state of a beta tester.
-- [object BetaTester.Relationships](betatester/relationships-data.dictionary.md)
+- [object BetaTester.Relationships](./betatester/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

@@ -1,18 +1,19 @@
 # mbuf_datastart
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void * mbuf_datastart(mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 A pointer to smallest possible value for data.
 

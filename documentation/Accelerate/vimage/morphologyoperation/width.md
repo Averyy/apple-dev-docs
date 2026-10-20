@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the morphology kernel.
 
@@ -11,7 +12,7 @@ The width of the morphology kernel.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var width: vImagePixelCount { get }
 
 ## See Also
 
-- [var structuringElement: vImage.ConvolutionKernel2D<ComponentType>?](vimage/morphologyoperation/structuringelement.md)
+### Instance Properties
+- [var structuringElement: vImage.ConvolutionKernel2D<ComponentType>?](./structuringelement.md)
   The dilation or erosion structuring element.
-- [var height: vImagePixelCount](vimage/morphologyoperation/height.md)
+- [var height: vImagePixelCount](./height.md)
   The height of the morphology kernel.
 
 

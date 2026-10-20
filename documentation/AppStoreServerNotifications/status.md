@@ -1,7 +1,8 @@
 # status
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The status of an auto-renewable subscription at the time the App Store signs the notification.
 
@@ -10,27 +11,36 @@ The status of an auto-renewable subscription at the time the App Store signs the
 
 ## Declaration
 
-```swift
+```
 int32 status
 ```
 
+## Possible Values
+
+- `1`: The auto-renewable subscription is active.
+- `2`: The auto-renewable subscription is expired.
+- `3`: The auto-renewable subscription is in a billing retry period.
+- `4`: The auto-renewable subscription is in a Billing Grace Period.
+- `5`: The auto-renewable subscription is revoked. The App Store refunded the transaction or revoked it from Family Sharing.
+
 ## Mentions
 
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+- [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
 #### Discussion
 
-This status value is current as of the `signedDate` in the decoded payload, [`responseBodyV2DecodedPayload`](responsebodyv2decodedpayload.md).
+This status value is current as of the `signedDate` in the decoded payload, [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md).
 
 ## See Also
 
-- [type appAppleId](appappleid.md)
+### App metadata and environment
+- [type appAppleId](./appappleid.md)
   The unique identifier of an app in the App Store.
-- [type bundleId](bundleid.md)
+- [type bundleId](./bundleid.md)
   The bundle identifier of an app.
-- [type bundleVersion](bundleversion.md)
+- [type bundleVersion](./bundleversion.md)
   The version of the build that identifies an iteration of the bundle.
-- [type environment](environment.md)
+- [type environment](./environment.md)
   The server environment, either sandbox or production.
 
 

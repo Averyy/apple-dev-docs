@@ -1,7 +1,8 @@
 # CMTaggedBuffer
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An instance of a media buffer containing metadata tags.
 
@@ -23,47 +24,48 @@ struct CMTaggedBuffer
 ## Topics
 
 ### Creating Tagged Buffers
-- [init(tags: [CMTag], buffer: CMTaggedBuffer.Buffer)](cmtaggedbuffer/init(tags:buffer:).md)
+- [init(tags: [CMTag], buffer: CMTaggedBuffer.Buffer)](./cmtaggedbuffer/init%28tags,buffer%29.md)
   Creates a new tagged buffer from tags and an existing media buffer.
-- [init(tags: [CMTag], sampleBuffer: CMSampleBuffer)](cmtaggedbuffer/init(tags:samplebuffer:).md)
+- [init(tags: [CMTag], sampleBuffer: CMSampleBuffer)](./cmtaggedbuffer/init%28tags,samplebuffer%29.md)
   Creates a new tagged buffer from tags and an existing sample buffer.
-- [init(tags: [CMTag], pixelBuffer: CVPixelBuffer)](cmtaggedbuffer/init(tags:pixelbuffer:).md)
+- [init(tags: [CMTag], pixelBuffer: CVPixelBuffer)](./cmtaggedbuffer/init%28tags,pixelbuffer%29.md)
   Creates a new tagged buffer from tags and an existing pixel buffer.
 ### Inspecting Data
-- [let tags: [CMTag]](cmtaggedbuffer/tags.md)
+- [let tags: [CMTag]](./cmtaggedbuffer/tags.md)
   The tags for this buffer.
-- [let buffer: CMTaggedBuffer.Buffer](cmtaggedbuffer/buffer-swift.property.md)
+- [let buffer: CMTaggedBuffer.Buffer](./cmtaggedbuffer/buffer-swift.property.md)
   The underlying buffer containing media data.
 ### Buffer Wrappers
-- [CMTaggedBuffer.Buffer](cmtaggedbuffer/buffer-swift.enum.md)
+- [CMTaggedBuffer.Buffer](./cmtaggedbuffer/buffer-swift.enum.md)
   A wrapper type for the underlying buffer of a tagged buffer.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [CMSampleBuffer](cmsamplebuffer-api.md)
+### Sample Processing
+- [CMSampleBuffer](./cmsamplebuffer-api.md)
   An object that contains zero or more media samples of a uniform media type.
-- [CMBlockBuffer](cmblockbuffer-api.md)
+- [CMBlockBuffer](./cmblockbuffer-api.md)
   An object the system uses to move blocks of memory through a processing system.
-- [CMTaggedBufferGroup](cmtaggedbuffergroup.md)
+- [CMTaggedBufferGroup](./cmtaggedbuffergroup.md)
   Objective-C types and interfaces for working with Core Media tagged buffer groups.
-- [CMFormatDescription](cmformatdescription-api.md)
+- [CMFormatDescription](./cmformatdescription-api.md)
   A media format descriptor that describes the samples in a sample buffer.
-- [CMAttachment](cmattachment-api.md)
+- [CMAttachment](./cmattachment-api.md)
   Add supporting metadata to sample buffers.
-- [struct CMMutableDataBlockBuffer](cmmutabledatablockbuffer.md)
+- [struct CMMutableDataBlockBuffer](./cmmutabledatablockbuffer.md)
   A block buffer that provides read-write access to a range of bytes.
-- [struct CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
+- [struct CMReadOnlyDataBlockBuffer](./cmreadonlydatablockbuffer.md)
   A block buffer that provides read-only access to the a range of bytes.
-- [struct CMReadySampleBuffer](cmreadysamplebuffer.md)
+- [struct CMReadySampleBuffer](./cmreadysamplebuffer.md)
   Buffer carrying readily available samples of media data.
-- [struct CMSampleDataReference](cmsampledatareference.md)
+- [struct CMSampleDataReference](./cmsampledatareference.md)
   References sample data in at a URL.
-- [struct CMTaggedDynamicBuffer](cmtaggeddynamicbuffer.md)
+- [struct CMTaggedDynamicBuffer](./cmtaggeddynamicbuffer.md)
   Contains a collection of tags associated with a read-only media buffer.
 
 

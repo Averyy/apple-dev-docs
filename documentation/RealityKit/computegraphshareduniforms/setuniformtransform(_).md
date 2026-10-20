@@ -1,7 +1,8 @@
 # setUniformTransform(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a closure that transforms a uniform value of type `V` on a per-entity basis.
 

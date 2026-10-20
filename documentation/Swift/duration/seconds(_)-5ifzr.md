@@ -1,7 +1,8 @@
 # seconds(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Construct a `Duration` given a number of seconds represented as a `Double` by converting the value into the closest attosecond scale value.
 
@@ -32,17 +33,18 @@ A `Duration` representing a given number of seconds.
 
 ## See Also
 
-- [init(secondsComponent: Int64, attosecondsComponent: Int64)](duration/init(secondscomponent:attosecondscomponent:).md)
+### Creating a duration
+- [init(secondsComponent: Int64, attosecondsComponent: Int64)](./init%28secondscomponent,attosecondscomponent%29.md)
   Construct a `Duration` by adding attoseconds to a seconds value.
-- [static func seconds<T>(T) -> Duration](duration/seconds(_:)-311cx.md)
+- [static func seconds<T>(T) -> Duration](./seconds%28_%29-311cx.md)
   Construct a `Duration` given a number of seconds represented as a `BinaryInteger`.
-- [static func milliseconds<T>(T) -> Duration](duration/milliseconds(_:)-1w328.md)
+- [static func milliseconds<T>(T) -> Duration](./milliseconds%28_%29-1w328.md)
   Construct a `Duration` given a number of milliseconds represented as a `BinaryInteger`.
-- [static func milliseconds(Double) -> Duration](duration/milliseconds(_:)-7ledy.md)
+- [static func milliseconds(Double) -> Duration](./milliseconds%28_%29-7ledy.md)
   Construct a `Duration` given a number of seconds milliseconds as a `Double` by converting the value into the closest attosecond scale value.
-- [static func microseconds(Double) -> Duration](duration/microseconds(_:)-1zzcc.md)
+- [static func microseconds(Double) -> Duration](./microseconds%28_%29-1zzcc.md)
   Construct a `Duration` given a number of seconds microseconds as a `Double` by converting the value into the closest attosecond scale value.
-- [static func microseconds<T>(T) -> Duration](duration/microseconds(_:)-2majo.md)
+- [static func microseconds<T>(T) -> Duration](./microseconds%28_%29-2majo.md)
   Construct a `Duration` given a number of microseconds represented as a `BinaryInteger`.
 
 

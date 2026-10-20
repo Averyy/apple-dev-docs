@@ -1,7 +1,8 @@
 # alternateGroupID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that identifies the track as a member of a particular alternate group.
 
@@ -19,13 +20,18 @@ A value that identifies the track as a member of a particular alternate group.
 var alternateGroupID: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger alternateGroupID;
+```
+
 ## See Also
 
-- [var mediaDataStorage: AVMediaDataStorage?](avmovietrack/mediadatastorage.md)
+### Retrieving track information
+- [var mediaDataStorage: AVMediaDataStorage?](./mediadatastorage.md)
   The storage container for media data added to a track.
-- [var mediaDecodeTimeRange: CMTimeRange](avmovietrack/mediadecodetimerange.md)
+- [var mediaDecodeTimeRange: CMTimeRange](./mediadecodetimerange.md)
   A range of decode times for the track’s media.
-- [var mediaPresentationTimeRange: CMTimeRange](avmovietrack/mediapresentationtimerange.md)
+- [var mediaPresentationTimeRange: CMTimeRange](./mediapresentationtimerange.md)
   A range of presentation times for the track’s media.
 
 

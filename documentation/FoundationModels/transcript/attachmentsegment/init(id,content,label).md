@@ -1,7 +1,8 @@
 # init(id:content:label:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment segment that wraps the content you provide.
 

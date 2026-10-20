@@ -1,7 +1,8 @@
 # maximumDepth
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum depth supported by the water submersion manager.
 
@@ -18,11 +19,15 @@ The maximum depth supported by the water submersion manager.
 var maximumDepth: Measurement<UnitLength>? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSMeasurement<NSUnitLength *> * maximumDepth;
+```
+
 #### Discussion
 
-To access data for dives with a maximum depth of 6 m, add the Shallow Depth and Pressure capability to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+To access data for dives with a maximum depth of 6 m, add the Shallow Depth and Pressure capability to your app. For more information, see [Adding capabilities to your app](../../Xcode/adding-capabilities-to-your-app.md).
 
-To enable a maximum depth of 40 m, you must apply for the full Submerged Depth and Pressure entitlement. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
+To enable a maximum depth of 40 m, you must apply for the full Submerged Depth and Pressure entitlement. For more information, see [Express interest in the Submerged Depth and Pressure API](https://developer.apple.com/contact/request/submerged-depth-pressure-api/).
 
 
 ---

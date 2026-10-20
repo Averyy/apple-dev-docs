@@ -1,9 +1,10 @@
 # NSRelativeSpecifier.RelativePosition
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants are used by [`relativePosition`](nsrelativespecifier/relativeposition-swift.property.md) and [`relativePosition`](nsrelativespecifier/relativeposition-swift.property.md).
+These constants are used by [`relativePosition`](./relativeposition-swift.property.md) and [`relativePosition`](./relativeposition-swift.property.md).
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,25 +16,29 @@ These constants are used by [`relativePosition`](nsrelativespecifier/relativepos
 enum RelativePosition
 ```
 
+```c
+enum NSRelativePosition : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSRelativeSpecifier.RelativePosition.after](nsrelativespecifier/relativeposition-swift.enum/after.md)
+- [NSRelativeSpecifier.RelativePosition.after](./relativeposition-swift.enum/after.md)
   Specifies a position after another object.
-- [NSRelativeSpecifier.RelativePosition.before](nsrelativespecifier/relativeposition-swift.enum/before.md)
+- [NSRelativeSpecifier.RelativePosition.before](./relativeposition-swift.enum/before.md)
   Specifies a position before another object.
 ### Initializers
-- [init?(rawValue: UInt)](nsrelativespecifier/relativeposition-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./relativeposition-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

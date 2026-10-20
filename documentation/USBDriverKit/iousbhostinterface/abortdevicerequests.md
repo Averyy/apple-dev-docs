@@ -1,7 +1,8 @@
 # AbortDeviceRequests
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Aborts device requests that you made previously from the current interface client.
 
@@ -10,17 +11,17 @@ Aborts device requests that you made previously from the current interface clien
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t AbortDeviceRequests(IOOptionBits options, IOReturn withError);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-Use this method to abort any requests you made previously with the [`AsyncDeviceRequest`](iousbhostinterface/asyncdevicerequest.md) method. This method aborts only the requests that the current interface object initiated.
+Use this method to abort any requests you made previously with the [`AsyncDeviceRequest`](./asyncdevicerequest.md) method. This method aborts only the requests that the current interface object initiated.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ Use this method to abort any requests you made previously with the [`AsyncDevice
 
 ## See Also
 
-- [DeviceRequest](iousbhostinterface/devicerequest.md)
+### Requesting Data from the Default Control Endpoint
+- [DeviceRequest](./devicerequest.md)
   Sends a synchronous request to the device on the default control endpoint.
-- [AsyncDeviceRequest](iousbhostinterface/asyncdevicerequest.md)
+- [AsyncDeviceRequest](./asyncdevicerequest.md)
   Enqueues a request on the default control endpoint of the device.
 
 

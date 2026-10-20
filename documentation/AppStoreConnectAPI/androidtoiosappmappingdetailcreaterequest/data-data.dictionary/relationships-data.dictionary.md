@@ -1,7 +1,8 @@
 # AndroidToIosAppMappingDetailCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships.App](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data that describes the app related to an Android to iOS app mapping detail.
 
 ## Properties
@@ -26,7 +27,8 @@ object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AndroidToIosAppMappingDetailCreateRequest.Data.Attributes](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Dictionaries
+- [object AndroidToIosAppMappingDetailCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an Android to iOS app mapping detail of a create request resource.
 
 

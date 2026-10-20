@@ -1,7 +1,8 @@
 # keyDecodingStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that determines how to decode a type’s coding keys from JSON keys.
 
@@ -22,13 +23,14 @@ var keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy { get set }
 
 ## See Also
 
-- [JSONDecoder.KeyDecodingStrategy](jsondecoder/keydecodingstrategy-swift.enum.md)
+### Customizing Decoding
+- [JSONDecoder.KeyDecodingStrategy](./keydecodingstrategy-swift.enum.md)
   The values that determine how to decode a type’s coding keys from JSON keys.
-- [var userInfo: [CodingUserInfoKey : any Sendable]](jsondecoder/userinfo.md)
+- [var userInfo: [CodingUserInfoKey : any Sendable]](./userinfo.md)
   A dictionary you use to customize the decoding process by providing contextual information.
-- [var allowsJSON5: Bool](jsondecoder/allowsjson5.md)
+- [var allowsJSON5: Bool](./allowsjson5.md)
   Specifies that decoding supports the JSON5 syntax.
-- [var assumesTopLevelDictionary: Bool](jsondecoder/assumestopleveldictionary.md)
+- [var assumesTopLevelDictionary: Bool](./assumestopleveldictionary.md)
   Specifies that decoding assumes the top level of the JSON data is a dictionary, even if it doesn’t begin and end with braces.
 
 

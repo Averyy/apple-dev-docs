@@ -1,7 +1,8 @@
 # add(_:position:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an existing payload arc to the prim.
 
@@ -21,7 +22,7 @@ func add(_ payload: USDPrim.Payload, position: USDPrim.ListPosition = .backOfPre
 
 #### Discussion
 
-> **Note**: An error if the payload cannot be added.
+> **Throws**: An error if the payload cannot be added.
 
 ## Parameters
 

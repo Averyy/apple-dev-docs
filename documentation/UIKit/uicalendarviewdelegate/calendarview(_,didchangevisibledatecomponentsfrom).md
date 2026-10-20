@@ -1,7 +1,8 @@
 # calendarView(_:didChangeVisibleDateComponentsFrom:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.2+
@@ -13,6 +14,10 @@
 
 ```swift
 optional func calendarView(_ calendarView: UICalendarView, didChangeVisibleDateComponentsFrom previousDateComponents: DateComponents)
+```
+
+```objc
+- (void) calendarView:(UICalendarView *) calendarView didChangeVisibleDateComponentsFrom:(NSDateComponents *) previousDateComponents;
 ```
 
 #### Discussion

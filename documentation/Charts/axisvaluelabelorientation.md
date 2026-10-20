@@ -1,7 +1,8 @@
 # AxisValueLabelOrientation
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the orientation of a label.
 
@@ -23,22 +24,23 @@ struct AxisValueLabelOrientation
 ## Topics
 
 ### Type Properties
-- [static var automatic: AxisValueLabelOrientation](axisvaluelabelorientation/automatic.md)
-- [static var horizontal: AxisValueLabelOrientation](axisvaluelabelorientation/horizontal.md)
+- [static var automatic: AxisValueLabelOrientation](./axisvaluelabelorientation/automatic.md)
+- [static var horizontal: AxisValueLabelOrientation](./axisvaluelabelorientation/horizontal.md)
   A horizontal label
-- [static var vertical: AxisValueLabelOrientation](axisvaluelabelorientation/vertical.md)
+- [static var vertical: AxisValueLabelOrientation](./axisvaluelabelorientation/vertical.md)
   A vertical label, reading top down.
-- [static var verticalReversed: AxisValueLabelOrientation](axisvaluelabelorientation/verticalreversed.md)
+- [static var verticalReversed: AxisValueLabelOrientation](./axisvaluelabelorientation/verticalreversed.md)
   A vertical label, reading bottom up.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [struct AxisValueLabelCollisionResolution](axisvaluelabelcollisionresolution.md)
+### Supporting types
+- [struct AxisValueLabelCollisionResolution](./axisvaluelabelcollisionresolution.md)
 
 
 ---

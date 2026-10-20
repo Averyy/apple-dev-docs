@@ -1,18 +1,19 @@
 # Creating a plane with low-level mesh
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Article
 
 Create a low-level mesh and set its vertex positions and normals to form a plane.
 
 #### Overview
 
-A plane mesh is an excellent starting point for a variety of interactive applications, such as a cloth or water simulation. However, to achieve these dynamic effects you need to modify the mesh’s vertices in every frame, which is inefficient without direct access to the underlying GPU buffers. [`LowLevelMesh`](lowlevelmesh.md) addresses this inefficiency by allowing you to create a custom vertex format and vertex buffer layout, which you can update in real time on the GPU by dispatching Metal compute shaders.
+A plane mesh is an excellent starting point for a variety of interactive applications, such as a cloth or water simulation. However, to achieve these dynamic effects you need to modify the mesh’s vertices in every frame, which is inefficient without direct access to the underlying GPU buffers. [`LowLevelMesh`](./lowlevelmesh.md) addresses this inefficiency by allowing you to create a custom vertex format and vertex buffer layout, which you can update in real time on the GPU by dispatching Metal compute shaders.
 
-Construct a plane mesh by defining a custom vertex structure and creating a [`LowLevelMesh`](lowlevelmesh.md) with enough vertex and index capacity to store the vertices. Position the vertices of the mesh in the shape of a plane by filling in the index and vertex buffers with data. See [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md) for further applications of this mesh, including a terrain editor and water simulation.
+Construct a plane mesh by defining a custom vertex structure and creating a [`LowLevelMesh`](./lowlevelmesh.md) with enough vertex and index capacity to store the vertices. Position the vertices of the mesh in the shape of a plane by filling in the index and vertex buffers with data. See [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md) for further applications of this mesh, including a terrain editor and water simulation.
 
-#### Define a Custom Vertex Structure
+#### Define a custom vertex structure
 
-Start by defining a custom vertex structure in a [`Metal Shading Language`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) header file:
+Start by defining a custom vertex structure in a [Metal Shading Language](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) header file:
 
 ```cpp
 struct PlaneVertex {
@@ -23,9 +24,9 @@ struct PlaneVertex {
 
 In this example, the vertex has a 3D position and a 3D normal vector, but you can further customize your vertex structure with different names and additional data, such as color and UV data.
 
-Make `PlaneVertex` accessible in both Swift files and Metal files by referencing it in a bridging file. See [`Passing Structured Data to a Metal Compute Function`](passing-structured-data-to-a-metal-compute-function.md) for more information about bridging files.
+Make `PlaneVertex` accessible in both Swift files and Metal files by referencing it in a bridging file. See [Passing Structured Data to a Metal Compute Function](./passing-structured-data-to-a-metal-compute-function.md) for more information about bridging files.
 
-#### Define a Plane Mesh Structure
+#### Define a plane mesh structure
 
 Define a structure that constructs the plane low-level mesh with size and dimensions:
 
@@ -68,9 +69,9 @@ struct PlaneMesh {
 
 See the following sections for the implementation details of each of the methods in the structure’s initializer.
 
-#### Create the Low Level Mesh
+#### Create the low-level mesh
 
-Start by specifying the layout of the vertex data with a [`LowLevelMesh.Attribute`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/lowlevelmesh/attribute) array and a [`LowLevelMesh.Layout`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/lowlevelmesh/layout) array:
+Start by specifying the layout of the vertex data with a [LowLevelMesh.Attribute](./lowlevelmesh/attribute.md) array and a [LowLevelMesh.Layout](./lowlevelmesh/layout.md) array:
 
 ```swift
 /// Creates a low-level mesh with `PlaneVertex` vertices.
@@ -113,13 +114,13 @@ Finally, create the low-level mesh by describing its vertex capacity, attributes
 }
 ```
 
-#### Initialize the Data in the Meshs Vertex and Index Buffers
+#### Initialize the data in the mesh’s vertex and index buffers
 
 Prepare the mesh for rendering by filling in its vertex and index buffers with data on the CPU, as in the following image:
 
-![A screenshot of a wireframe rendering of the plane mesh with 16 vertices in each dimension, floating in a kitchen scene. Lines connect the vertices to form 512 triangles.](/images/com.apple.RealityKit/creating-a-plane-with-low-level-mesh-1.jpg)
+![A screenshot of a wireframe rendering of the plane mesh with 16 vertices in each dimension, floating in a kitchen scene. Lines connect the vertices to form 512 triangles.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/creating-a-plane-with-low-level-mesh-1.jpg)
 
-> **Note**: You can also fill in the data on the GPU by running a Metal compute shader (see [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md)).
+> **Note**: You can also fill in the data on the GPU by running a Metal compute shader (see [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md)).
 
 Start by defining a helper method that converts a two-dimensional vertex coordinate to a one-dimensional vertex buffer array index:
 
@@ -165,7 +166,7 @@ private func initializeVertexData() {
 }
 ```
 
-Loop over the vertices within the [`withUnsafeMutableBytes`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/lowlevelmesh/withunsafemutablebytes(bufferindex:_:)) callback for best performance, as calling this method repeatedly is costly.
+Loop over the vertices within the [withUnsafeMutableBytes](./lowlevelmesh/withunsafemutablebytes%28bufferindex,_%29.md) callback for best performance, as calling this method repeatedly is costly.
 
 Finally, fill the index buffer by iterating through each cell in the mesh and adding the vertices of the two triangles that make up the cell in a counterclockwise winding order:
 
@@ -214,11 +215,11 @@ private func initializeIndexData() {
 }
 ```
 
-Loop over the indices within the [`withUnsafeMutableIndices`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/lowlevelmesh/withunsafemutableindices(_:)) callback for best performance.
+Loop over the indices within the [withUnsafeMutableIndices](./lowlevelmesh/withunsafemutableindices%28_%29.md) callback for best performance.
 
 > **Note**: The winding order of the vertices in a triangle determine which side of the triangle is the front. RealityKit considers a counterclockwise winding order to be front-facing.
 
-#### Initialize the Mesh Parts
+#### Initialize the mesh parts
 
 Initialize the mesh parts by specifying the mesh’s index count, topology, and bounds:
 
@@ -239,9 +240,9 @@ In this example, the `maxVertexDepth` property specifies the maximum offset dept
 
 > **Note**: RealityKit uses `bounds` to determine whether or not to cull an object during rendering. Therefore, it’s essential that the bounds you define are large enough to contain all of the vertices of your mesh; otherwise, RealityKit may not render it correctly.
 
-#### Create an Entity with the Low Level Mesh
+#### Create an entity with the low-level mesh
 
-View `PlaneMesh`’s low-level mesh by creating a [`MeshResource`](meshresource.md) from it and adding that to the [`ModelComponent`](modelcomponent.md) of an entity in the scene:
+View `PlaneMesh`’s low-level mesh by creating a [`MeshResource`](./meshresource.md) from it and adding that to the [`ModelComponent`](./modelcomponent.md) of an entity in the scene:
 
 ```swift
 RealityView { content in
@@ -261,30 +262,31 @@ RealityView { content in
 
 The following image shows the result of rendering a `PlaneMesh`’s low-level mesh in the scene:
 
-![A screenshot of a flat plane mesh floating in a kitchen scene. The plane appears light gray.](/images/com.apple.RealityKit/creating-a-plane-with-low-level-mesh-2.jpg)
+![A screenshot of a flat plane mesh floating in a kitchen scene. The plane appears light gray.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/creating-a-plane-with-low-level-mesh-2.jpg)
 
 ## See Also
 
-- [Integrating virtual objects with your environment](integrating-virtual-objects-with-your-environment.md)
+### Updatable meshes
+- [Integrating virtual objects with your environment](./integrating-virtual-objects-with-your-environment.md)
   Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
-- [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
+- [Creating a spatial drawing app with RealityKit](./creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
-- [class LowLevelMesh](lowlevelmesh.md)
+- [class LowLevelMesh](./lowlevelmesh.md)
   A container for vertex data that you can use to create and update meshes using your own format.
-- [LowLevelMesh.Descriptor](lowlevelmesh/descriptor-swift.struct.md)
+- [LowLevelMesh.Descriptor](./lowlevelmesh/descriptor-swift.struct.md)
   An object that describes the data format and layout of the buffers in a low-level mesh.
-- [LowLevelMesh.Part](lowlevelmesh/part.md)
+- [LowLevelMesh.Part](./lowlevelmesh/part.md)
   An object that describes a range of primitives to display, and their material index.
-- [LowLevelMesh.Layout](lowlevelmesh/layout.md)
+- [LowLevelMesh.Layout](./lowlevelmesh/layout.md)
   An object that describes a set of attributes that share a buffer index, offset, and stride.
-- [LowLevelMesh.Attribute](lowlevelmesh/attribute.md)
+- [LowLevelMesh.Attribute](./lowlevelmesh/attribute.md)
   An object that determines how to store vertex attribute data in memory and map it to RealityKit shader attributes.
-- [LowLevelMesh.VertexSemantic](lowlevelmesh/vertexsemantic.md)
+- [LowLevelMesh.VertexSemantic](./lowlevelmesh/vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
-- [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
+- [LowLevelMesh.PartsCollection](./lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
-- [class LowLevelBuffer](lowlevelbuffer.md)
-- [class LowLevelInstanceData](lowlevelinstancedata.md)
+- [class LowLevelBuffer](./lowlevelbuffer.md)
+- [class LowLevelInstanceData](./lowlevelinstancedata.md)
 
 
 ---

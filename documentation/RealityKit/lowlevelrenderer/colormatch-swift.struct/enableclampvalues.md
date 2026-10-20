@@ -1,7 +1,8 @@
 # enableClampValues
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether output values are clamped to `[0, 1]` after gamut conversion.
 
@@ -23,7 +24,8 @@ Set this to `true` when the output texture uses a non-extended pixel format.
 
 ## See Also
 
-- [var colorGamutConversion: simd_half3x3](lowlevelrenderer/colormatch-swift.struct/colorgamutconversion.md)
+### Configuring color matching
+- [var colorGamutConversion: simd_half3x3](./colorgamutconversion.md)
   A 3×3 half-precision matrix that converts RGB values from the renderer’s working color space to the output display’s color space.
 
 

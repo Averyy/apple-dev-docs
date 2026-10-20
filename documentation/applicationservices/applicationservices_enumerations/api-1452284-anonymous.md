@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kATSUStyleDoubleLineCount: Int](katsustyledoublelinecount.md)
-- [var kATSUStyleSingleLineCount: Int](katsustylesinglelinecount.md)
+- [var kATSUStyleDoubleLineCount: Int](../katsustyledoublelinecount.md)
+- [var kATSUStyleSingleLineCount: Int](../katsustylesinglelinecount.md)
 
 
 ---

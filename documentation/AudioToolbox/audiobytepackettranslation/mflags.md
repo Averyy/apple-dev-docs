@@ -1,17 +1,18 @@
 # mFlags
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A translation flag value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ A translation flag value.
 var mFlags: AudioBytePacketTranslationFlags
 ```
 
+```c
+AudioBytePacketTranslationFlags mFlags;
+```
+
 #### Discussion
 
-See [`Audio File Packet Translation Flags`](audio_file_packet_translation_flags.md) for supported values.
+See [Audio File Packet Translation Flags](../audio_file_packet_translation_flags.md) for supported values.
 
 
 ---

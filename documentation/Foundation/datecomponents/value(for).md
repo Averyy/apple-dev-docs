@@ -1,7 +1,8 @@
 # value(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value of one of the properties, using an enumeration value instead of a property name.
 
@@ -26,9 +27,10 @@ The calendar and timeZone and isLeapMonth property values cannot be retrieved by
 
 ## See Also
 
-- [func setValue(Int?, for: Calendar.Component)](datecomponents/setvalue(_:for:).md)
+### Accessing Calendar Components
+- [func setValue(Int?, for: Calendar.Component)](./setvalue%28_,for%29.md)
   Set the value of one of the properties, using an enumeration value instead of a property name.
-- [Calendar.Component](calendar/component.md)
+- [Calendar.Component](../calendar/component.md)
   An enumeration for the various components of a calendar date.
 
 

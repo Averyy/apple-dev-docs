@@ -1,7 +1,8 @@
 # setFunctions(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a range of table entries to point to an array of callable functions.
 
@@ -11,7 +12,7 @@ Sets a range of table entries to point to an array of callable functions.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ func setFunctions(_ functions: [(any MTLFunctionHandle)?], range: Range<Int>)
 
 ## See Also
 
-- [func setFunction((any MTLFunctionHandle)?, index: Int)](mtlvisiblefunctiontable/setfunction(_:index:).md)
+### Setting a table entry
+- [func setFunction((any MTLFunctionHandle)?, index: Int)](./setfunction%28_,index%29.md)
   Sets a table entry to point to a callable function.
 
 

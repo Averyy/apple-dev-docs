@@ -1,7 +1,8 @@
 # packageDirectory
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The directory that contains `Package.swift`.
 

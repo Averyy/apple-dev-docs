@@ -1,7 +1,8 @@
 # titleShadowColor(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the shadow color of the title used for a state.
 
@@ -9,7 +10,7 @@ Returns the shadow color of the title used for a state.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,31 +19,36 @@ Returns the shadow color of the title used for a state.
 func titleShadowColor(for state: UIControl.State) -> UIColor?
 ```
 
+```objc
+- (UIColor *) titleShadowColorForState:(UIControlState) state;
+```
+
 #### Return Value
 
 The color of the title’s shadow for the specified state.
 
 ## Parameters
 
-- `state`: The state that uses the title shadow color. The possible values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
+- `state`: The state that uses the title shadow color. The possible values are described in [`UIControl.State`](../uicontrol/state-swift.struct.md).
 
 ## See Also
 
-- [var titleLabel: UILabel?](uibutton/titlelabel.md)
+### Managing the title
+- [var titleLabel: UILabel?](./titlelabel.md)
   A view that displays the value of the `currentTitle` property for a button.
-- [func title(for: UIControl.State) -> String?](uibutton/title(for:).md)
+- [func title(for: UIControl.State) -> String?](./title%28for%29.md)
   Returns the title associated with the specified state.
-- [func setTitle(String?, for: UIControl.State)](uibutton/settitle(_:for:).md)
+- [func setTitle(String?, for: UIControl.State)](./settitle%28_,for%29.md)
   Sets the title to use for the specified state.
-- [func attributedTitle(for: UIControl.State) -> NSAttributedString?](uibutton/attributedtitle(for:).md)
+- [func attributedTitle(for: UIControl.State) -> NSAttributedString?](./attributedtitle%28for%29.md)
   Returns the styled title associated with the specified state.
-- [func setAttributedTitle(NSAttributedString?, for: UIControl.State)](uibutton/setattributedtitle(_:for:).md)
+- [func setAttributedTitle(NSAttributedString?, for: UIControl.State)](./setattributedtitle%28_,for%29.md)
   Sets the styled title to use for the specified state.
-- [func titleColor(for: UIControl.State) -> UIColor?](uibutton/titlecolor(for:).md)
+- [func titleColor(for: UIControl.State) -> UIColor?](./titlecolor%28for%29.md)
   Returns the title color used for a state.
-- [func setTitleColor(UIColor?, for: UIControl.State)](uibutton/settitlecolor(_:for:).md)
+- [func setTitleColor(UIColor?, for: UIControl.State)](./settitlecolor%28_,for%29.md)
   Sets the color of the title to use for the specified state.
-- [func setTitleShadowColor(UIColor?, for: UIControl.State)](uibutton/settitleshadowcolor(_:for:).md)
+- [func setTitleShadowColor(UIColor?, for: UIControl.State)](./settitleshadowcolor%28_,for%29.md)
   Sets the color of the title shadow to use for the specified state.
 
 

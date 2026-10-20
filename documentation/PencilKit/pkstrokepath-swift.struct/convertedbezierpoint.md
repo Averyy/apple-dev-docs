@@ -1,7 +1,8 @@
 # PKStrokePath.ConvertedBezierPoint
 
 **Framework**: PencilKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a B-spline control point converted from a Bézier path.
 
@@ -20,36 +21,37 @@ struct ConvertedBezierPoint
 
 ## Mentions
 
-- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+- [Importing Bézier path data into PencilKit](../importing-external-drawing-data-into-pencilkit.md)
 
 #### Overview
 
-`ConvertedBezierPoint` values are passed one at a time to the `pointProvider` closure of [`init(bezierPath:creationDate:pointProvider:)`](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md). Use the provided location, index, and segment information to initialize each `PKStrokePoint` with appropriate size, opacity, force, and other drawing properties.
+`ConvertedBezierPoint` values are passed one at a time to the `pointProvider` closure of [`init(bezierPath:creationDate:pointProvider:)`](./init%28bezierpath,creationdate,pointprovider%29.md). Use the provided location, index, and segment information to initialize each `PKStrokePoint` with appropriate size, opacity, force, and other drawing properties.
 
 ## Topics
 
 ### Getting the point data
-- [let index: Int](pkstrokepath-swift.struct/convertedbezierpoint/index.md)
+- [let index: Int](./convertedbezierpoint/index.md)
   The index of the point along the path.
-- [let pointCount: Int](pkstrokepath-swift.struct/convertedbezierpoint/pointcount.md)
+- [let pointCount: Int](./convertedbezierpoint/pointcount.md)
   The total number of B-Spline control points in the path.
-- [let location: CGPoint](pkstrokepath-swift.struct/convertedbezierpoint/location.md)
+- [let location: CGPoint](./convertedbezierpoint/location.md)
   The location of the cubic uniform B-Spline control point.
-- [let bezierSegmentIndex: Int](pkstrokepath-swift.struct/convertedbezierpoint/beziersegmentindex.md)
+- [let bezierSegmentIndex: Int](./convertedbezierpoint/beziersegmentindex.md)
   The index of the Bézier segment the point originates from, not including `move to` elements.
 ### Using reference types
-- [class PKConvertedBezierPointReference](pkconvertedbezierpointreference.md)
+- [class PKConvertedBezierPointReference](../pkconvertedbezierpointreference.md)
   An object that provides information about a B-spline control point converted from a Bézier path.
 
 ## See Also
 
-- [init()](pkstrokepath-swift.struct/init.md)
+### Creating a new stroke path
+- [init()](./init%28%29.md)
   Creates an empty stroke path.
-- [init<T>(controlPoints: T, creationDate: Date)](pkstrokepath-swift.struct/init(controlpoints:creationdate:).md)
+- [init<T>(controlPoints: T, creationDate: Date)](./init%28controlpoints,creationdate%29.md)
   Creates a stroke path with the cubic B-spline control points and a date that you specify.
-- [init<T>(controlPoints: T, creationDate: Date, id: UUID)](pkstrokepath-swift.struct/init(controlpoints:creationdate:id:).md)
+- [init<T>(controlPoints: T, creationDate: Date, id: UUID)](./init%28controlpoints,creationdate,id%29.md)
   Creates a stroke path with the specified cubic B-spline control points and a unique identifier.
-- [init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKStrokePath.ConvertedBezierPoint) -> PKStrokePoint)](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md)
+- [init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKStrokePath.ConvertedBezierPoint) -> PKStrokePoint)](./init%28bezierpath,creationdate,pointprovider%29.md)
   Creates a stroke path recreating the specified Bézier path as a cubic uniform B-Spline.
 
 

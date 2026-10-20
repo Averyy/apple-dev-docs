@@ -1,7 +1,8 @@
 # MTRPM10ConcentrationMeasurementMeasurementUnit.PM3
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 case PM3
+```
+
+```c
+MTRPM10ConcentrationMeasurementMeasurementUnitPM3
 ```
 
 

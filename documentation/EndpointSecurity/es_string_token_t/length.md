@@ -1,18 +1,23 @@
 # length
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the data buffer, in bytes.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var length: Int
+```
+
+```c
+size_t length;
 ```
 
 #### Discussion
@@ -21,7 +26,8 @@ This value doesn’t include the null terminator.
 
 ## See Also
 
-- [var data: UnsafePointer<CChar>!](es_string_token_t/data.md)
+### Inspecting the Token
+- [var data: UnsafePointer<CChar>!](./data.md)
   The string data.
 
 

@@ -1,7 +1,8 @@
 # inputChannelLayout
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The channel layout of input audio.
 
@@ -19,13 +20,18 @@ The channel layout of input audio.
 var inputChannelLayout: AVAudioChannelLayout { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) AVAudioChannelLayout * inputChannelLayout;
+```
+
 #### Discussion
 
-The framework sets the value to the `channelLayout` initializer argument. See [`init(channelLayout:orientation:)`](phaseambientmixerdefinition/init(channellayout:orientation:).md).
+The framework sets the value to the `channelLayout` initializer argument. See [`init(channelLayout:orientation:)`](./init%28channellayout,orientation%29.md).
 
 ## See Also
 
-- [var orientation: simd_quatf](phaseambientmixerdefinition/orientation.md)
+### Inspecting the Mixer
+- [var orientation: simd_quatf](./orientation.md)
   A quaternion that describes the orientation of the speaker layout relative to the scene origin.
 
 

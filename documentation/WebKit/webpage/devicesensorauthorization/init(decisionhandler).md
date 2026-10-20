@@ -1,7 +1,8 @@
 # init(decisionHandler:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `DeviceSensorAuthorization` using the specified policy.
 

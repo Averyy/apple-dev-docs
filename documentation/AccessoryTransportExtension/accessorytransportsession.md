@@ -1,7 +1,8 @@
 # AccessoryTransportSession
 
 **Framework**: Accessory Transport Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that manages a transport session between the extension and the system.
 
@@ -16,50 +17,51 @@ class AccessoryTransportSession
 
 #### Overview
 
-The [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protocol’s [`accept(sessionRequest:)`](accessorytransportappextension/accept(sessionrequest:).md) method receives a [`AccessoryTransportSession.Request`](accessorytransportsession/request.md) object containing an instance of this class.
+The [`AccessoryTransportAppExtension`](./accessorytransportappextension.md) protocol’s [`accept(sessionRequest:)`](./accessorytransportappextension/accept%28sessionrequest%29.md) method receives a [`AccessoryTransportSession.Request`](./accessorytransportsession/request.md) object containing an instance of this class.
 
 ## Topics
 
 ### Managing session requests
-- [AccessoryTransportSession.Request](accessorytransportsession/request.md)
+- [AccessoryTransportSession.Request](./accessorytransportsession/request.md)
   An incoming session request that your extension accepts or rejects.
 ### Handling session events
-- [AccessoryTransportSession.EventHandler](accessorytransportsession/eventhandler.md)
+- [AccessoryTransportSession.EventHandler](./accessorytransportsession/eventhandler.md)
   A protocol that defines methods for handling transport session events.
-- [AccessoryTransportSession.DataEvent](accessorytransportsession/dataevent.md)
+- [AccessoryTransportSession.DataEvent](./accessorytransportsession/dataevent.md)
   An enumeration of data events that the transport extension receives.
 ### Managing the session life cycle
-- [func cancel(error: AccessoryTransportSession.Error?)](accessorytransportsession/cancel(error:).md)
+- [func cancel(error: AccessoryTransportSession.Error?)](./accessorytransportsession/cancel%28error%29.md)
   Cancels the session.
 ### Accessing session properties
-- [var description: String](accessorytransportsession/description.md)
+- [var description: String](./accessorytransportsession/description.md)
   A string that describes the transport session.
 ### Sending data
-- [func sendMessageToDataProvider(TransportMessage) throws(AccessoryTransportSession.Error)](accessorytransportsession/sendmessagetodataprovider(_:).md)
+- [func sendMessageToDataProvider(TransportMessage) throws(AccessoryTransportSession.Error)](./accessorytransportsession/sendmessagetodataprovider%28_%29.md)
   Sends a message to the data provider extension.
 ### Handling errors
-- [AccessoryTransportSession.Error](accessorytransportsession/error.md)
+- [AccessoryTransportSession.Error](./accessorytransportsession/error.md)
   Errors that can occur with an accessory transport session.
 ### Determining the communication method
-- [var transport: AccessoryTransport?](accessorytransportsession/transport.md)
+- [var transport: AccessoryTransport?](./accessorytransportsession/transport.md)
   A transport method that the session uses to communicate with the accessory.
-- [var transportStateRestoreIdentifier: String?](accessorytransportsession/transportstaterestoreidentifier.md)
+- [var transportStateRestoreIdentifier: String?](./accessorytransportsession/transportstaterestoreidentifier.md)
   An optional identifier for restoring transport state across sessions.
-- [var pushToken: Data?](accessorytransportsession/pushtoken.md)
+- [var pushToken: Data?](./accessorytransportsession/pushtoken.md)
   A token that identifies the iOS device to the Apple Push Notification service for routing accessory responses over the internet.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [protocol AccessoryTransportAppExtension](accessorytransportappextension.md)
+### Wi-Fi network sharing
+- [protocol AccessoryTransportAppExtension](./accessorytransportappextension.md)
   A protocol for an extension that transmits data to an accessory you develop.
-- [protocol AccessoryTransportExtensionConfiguration](accessorytransportextensionconfiguration.md)
+- [protocol AccessoryTransportExtensionConfiguration](./accessorytransportextensionconfiguration.md)
   An interface that enables you to configure and manage communication between your extension and the system.
-- [Wi-Fi Infrastructure](../wifiinfrastructure/wifiinfrastructure.md)
+- [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md)
   Share Wi-Fi network credentials securely between devices and connected accessories.
 
 

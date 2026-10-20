@@ -1,7 +1,8 @@
 # setLocalizedDateFormatFromTemplate(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the date format from a template using the specified locale for the receiver.
 
@@ -20,31 +21,39 @@ Sets the date format from a template using the specified locale for the receiver
 func setLocalizedDateFormatFromTemplate(_ dateFormatTemplate: String)
 ```
 
+```objc
+- (void) setLocalizedDateFormatFromTemplate:(NSString *) dateFormatTemplate;
+```
+
 #### Discussion
 
-See [`Data Formatting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i) for a list of the conversion specifiers permitted in date format strings.
+See [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i) for a list of the conversion specifiers permitted in date format strings.
 
-Calling this method is equivalent to, but not necessarily implemented as, setting the [`dateFormat`](dateformatter/dateformat.md) property to the result of calling the [`dateFormat(fromTemplate:options:locale:)`](dateformatter/dateformat(fromtemplate:options:locale:).md) method, passing no options and the [`locale`](dateformatter/locale.md) property value.
+Calling this method is equivalent to, but not necessarily implemented as, setting the [`dateFormat`](./dateformat.md) property to the result of calling the [`dateFormat(fromTemplate:options:locale:)`](./dateformat%28fromtemplate,options,locale%29.md) method, passing no options and the [`locale`](./locale.md) property value.
 
-> ❗ **Important**:  You should call this method only after setting the [`locale`](dateformatter/locale.md) of the receiver.
+> ❗ **Important**:  You should call this method only after setting the [`locale`](./locale.md) of the receiver.
 
 ## Parameters
 
-- `dateFormatTemplate`: A string containing date format patterns (such as “MM” or “h”). For full details, see [`Date and Time Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
+- `dateFormatTemplate`: A string containing date format patterns (such as “MM” or “h”).
+
+  For full details, see [Date and Time Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
 
 ## See Also
 
-- [var locale: Locale!](dateformatter/locale.md)
+### Related Documentation
+- [var locale: Locale!](./locale.md)
   The locale for the receiver.
-- [var dateStyle: DateFormatter.Style](dateformatter/datestyle.md)
+### Managing Formats and Styles
+- [var dateStyle: DateFormatter.Style](./datestyle.md)
   The date style of the receiver.
-- [var timeStyle: DateFormatter.Style](dateformatter/timestyle.md)
+- [var timeStyle: DateFormatter.Style](./timestyle.md)
   The time style of the receiver.
-- [var dateFormat: String!](dateformatter/dateformat.md)
+- [var dateFormat: String!](./dateformat.md)
   The date format string used by the receiver.
-- [class func dateFormat(fromTemplate: String, options: Int, locale: Locale?) -> String?](dateformatter/dateformat(fromtemplate:options:locale:).md)
+- [class func dateFormat(fromTemplate: String, options: Int, locale: Locale?) -> String?](./dateformat%28fromtemplate,options,locale%29.md)
   Returns a localized date format string representing the given date format components arranged appropriately for the specified locale.
-- [var formattingContext: Formatter.Context](dateformatter/formattingcontext.md)
+- [var formattingContext: Formatter.Context](./formattingcontext.md)
   The capitalization formatting context used when formatting a date.
 
 

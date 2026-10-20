@@ -1,7 +1,8 @@
 # local(ports:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allow local network connections, limited to a range of allowed ports.
 

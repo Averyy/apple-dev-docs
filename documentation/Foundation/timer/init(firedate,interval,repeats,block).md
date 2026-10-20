@@ -1,7 +1,8 @@
 # init(fireDate:interval:repeats:block:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+

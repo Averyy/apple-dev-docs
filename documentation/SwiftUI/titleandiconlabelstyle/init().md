@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a label style that shows both the title and icon of the label using a system-standard layout.
 

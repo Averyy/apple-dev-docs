@@ -1,14 +1,15 @@
 # idle_timer_refcon
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void *idle_timer_refcon;
 ```
 

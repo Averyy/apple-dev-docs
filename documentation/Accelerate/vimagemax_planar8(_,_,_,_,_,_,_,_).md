@@ -1,7 +1,8 @@
 # vImageMax_Planar8(_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Maximizes an 8-bit planar buffer.
 
@@ -20,15 +21,19 @@ Maximizes an 8-bit planar buffer.
 func vImageMax_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ srcOffsetToROI_X: vImagePixelCount, _ srcOffsetToROI_Y: vImagePixelCount, _ kernel_height: vImagePixelCount, _ kernel_width: vImagePixelCount, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageMax_Planar8(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, vImagePixelCount kernel_height, vImagePixelCount kernel_width, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
 The maximize filter is an optimized version of the dilation in which all the filter elements are zero.
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -45,23 +50,29 @@ You can use the same workspace memory for a group of images that are different s
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
 - `srcOffsetToROI_X`: The horizontal offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `srcOffsetToROI_Y`: The vertical offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `kernel_height`: The height of the kernel in pixels. This value needs to be odd.
 - `kernel_width`: The width of the kernel in pixels. This value needs to be odd.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. To determine the minimum size for the temporary buffer, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
+
+  To determine the minimum size for the temporary buffer, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
 
 ## See Also
 
-- [Adding a bokeh effect to images](adding-a-bokeh-effect-to-images.md)
+### Related Documentation
+- [Adding a bokeh effect to images](./adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
-- [func vImageMax_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](vimagemax_planarf(_:_:_:_:_:_:_:_:).md)
+### Maximizing an object
+- [func vImageMax_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](./vimagemax_planarf%28_,_,_,_,_,_,_,_%29.md)
   Maximizes a 32-bit planar buffer.
-- [func vImageMax_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](vimagemax_argb8888(_:_:_:_:_:_:_:_:).md)
+- [func vImageMax_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](./vimagemax_argb8888%28_,_,_,_,_,_,_,_%29.md)
   Maximizes an 8-bit-per-channel, 4-channel interleaved buffer.
-- [func vImageMax_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](vimagemax_argbffff(_:_:_:_:_:_:_:_:).md)
+- [func vImageMax_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImagePixelCount, vImage_Flags) -> vImage_Error](./vimagemax_argbffff%28_,_,_,_,_,_,_,_%29.md)
   Maximizes a 32-bit-per-channel, 4-channel interleaved buffer.
 
 

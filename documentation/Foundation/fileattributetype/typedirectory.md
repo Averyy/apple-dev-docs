@@ -1,7 +1,8 @@
 # typeDirectory
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A directory.
 
@@ -20,19 +21,24 @@ A directory.
 static let typeDirectory: FileAttributeType
 ```
 
+```c
+extern NSFileAttributeType const NSFileTypeDirectory;
+```
+
 ## See Also
 
-- [static let typeBlockSpecial: FileAttributeType](fileattributetype/typeblockspecial.md)
+### Accessing File Type Attributes
+- [static let typeBlockSpecial: FileAttributeType](./typeblockspecial.md)
   A block special file.
-- [static let typeCharacterSpecial: FileAttributeType](fileattributetype/typecharacterspecial.md)
+- [static let typeCharacterSpecial: FileAttributeType](./typecharacterspecial.md)
   A character special file.
-- [static let typeRegular: FileAttributeType](fileattributetype/typeregular.md)
+- [static let typeRegular: FileAttributeType](./typeregular.md)
   A regular file.
-- [static let typeSocket: FileAttributeType](fileattributetype/typesocket.md)
+- [static let typeSocket: FileAttributeType](./typesocket.md)
   A socket.
-- [static let typeSymbolicLink: FileAttributeType](fileattributetype/typesymboliclink.md)
+- [static let typeSymbolicLink: FileAttributeType](./typesymboliclink.md)
   A symbolic link.
-- [static let typeUnknown: FileAttributeType](fileattributetype/typeunknown.md)
+- [static let typeUnknown: FileAttributeType](./typeunknown.md)
   A file whose type is unknown.
 
 

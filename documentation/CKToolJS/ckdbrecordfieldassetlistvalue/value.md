@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of asset objects in this record field.
 
@@ -10,7 +11,7 @@ The array of asset objects in this record field.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBAsset[]? value;
 ```
 

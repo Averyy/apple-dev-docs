@@ -1,7 +1,8 @@
 # readAttributeWiredCurrentType(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeWiredCurrentType(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeWiredCurrentType() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeWiredCurrentTypeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # inertia
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How snappy the object’s movement is in response to input.
 

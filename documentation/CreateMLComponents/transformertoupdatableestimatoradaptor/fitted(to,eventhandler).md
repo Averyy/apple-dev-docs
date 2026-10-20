@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the pre-defined transformer.
 
@@ -31,9 +32,10 @@ The pre-defined transformer.
 
 ## See Also
 
-- [func makeTransformer() -> Transformer](transformertoupdatableestimatoradaptor/maketransformer.md)
+### Fitting and updating
+- [func makeTransformer() -> Transformer](./maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update<InputSequence>(inout Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](transformertoupdatableestimatoradaptor/update(_:with:eventhandler:).md)
+- [func update<InputSequence>(inout Transformer, with: InputSequence, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29.md)
   Does nothing since this estimator uses a pre-defined transformer.
 
 

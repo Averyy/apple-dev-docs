@@ -1,7 +1,8 @@
 # vector
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The force vector applied to the particle, in Newtons.
 

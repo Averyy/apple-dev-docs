@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The individual gain in decibels of the audio playback controller output.
 
@@ -11,7 +12,7 @@ The individual gain in decibels of the audio playback controller output.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,11 +25,12 @@ The individual gain in decibels of the audio playback controller output.
 
 The gain must be zero or negative, where zero is nominal loudness and negative infinity is silent. If the gain is positive, it will be reset to zero.
 
-Use the [`fade(to:duration:)`](audioplaybackcontroller/fade(to:duration:).md) method to change the gain gradually and create smooth transitions.
+Use the [`fade(to:duration:)`](./fade%28to,duration%29.md) method to change the gain gradually and create smooth transitions.
 
 ## See Also
 
-- [func fade(to: AudioPlaybackController.Decibel, duration: TimeInterval)](audioplaybackcontroller/fade(to:duration:).md)
+### Setting the volume
+- [func fade(to: AudioPlaybackController.Decibel, duration: TimeInterval)](./fade%28to,duration%29.md)
   Transitions the gain to the given value over a time interval using a linear curve.
 
 

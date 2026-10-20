@@ -1,7 +1,8 @@
 # type
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UTI type of the attachment.
 
@@ -19,15 +20,28 @@ The UTI type of the attachment.
 var type: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * type;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * type;
+```
+
 #### Discussion
 
 The system derives the value of this property from the attachment data.
 
 ## See Also
 
-- [var identifier: String](unnotificationattachment/identifier.md)
+### Getting the Attachment Contents
+- [var identifier: String](./identifier.md)
   The unique identifier for the attachment.
-- [var url: URL](unnotificationattachment/url.md)
+- [var url: URL](./url.md)
   The URL of the file for this attachment.
 
 

@@ -1,14 +1,15 @@
 # alternativeStrings
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that represent alternatives to the currently selected text.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -16,6 +17,10 @@ An array of strings that represent alternatives to the currently selected text.
 
 ```swift
 var alternativeStrings: [String] { get }
+```
+
+```objc
+@property (readonly) NSArray<NSString *> * alternativeStrings;
 ```
 
 

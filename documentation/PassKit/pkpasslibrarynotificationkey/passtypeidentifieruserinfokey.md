@@ -1,7 +1,8 @@
 # passTypeIdentifierUserInfoKey
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pass’s pass type identifier.
 
@@ -19,16 +20,21 @@ The pass’s pass type identifier.
 static let passTypeIdentifierUserInfoKey: PKPassLibraryNotificationKey
 ```
 
+```c
+extern PKPassLibraryNotificationKey const PKPassLibraryPassTypeIdentifierUserInfoKey;
+```
+
 ## See Also
 
-- [static let addedPassesUserInfoKey: PKPassLibraryNotificationKey](pkpasslibrarynotificationkey/addedpassesuserinfokey.md)
+### Notification keys
+- [static let addedPassesUserInfoKey: PKPassLibraryNotificationKey](./addedpassesuserinfokey.md)
   An array of added passes.
-- [static let recoveredPassesUserInfoKey: PKPassLibraryNotificationKey](pkpasslibrarynotificationkey/recoveredpassesuserinfokey.md)
-- [static let removedPassInfosUserInfoKey: PKPassLibraryNotificationKey](pkpasslibrarynotificationkey/removedpassinfosuserinfokey.md)
+- [static let recoveredPassesUserInfoKey: PKPassLibraryNotificationKey](./recoveredpassesuserinfokey.md)
+- [static let removedPassInfosUserInfoKey: PKPassLibraryNotificationKey](./removedpassinfosuserinfokey.md)
   An array of dictionaries that describes the removed passes.
-- [static let replacementPassesUserInfoKey: PKPassLibraryNotificationKey](pkpasslibrarynotificationkey/replacementpassesuserinfokey.md)
+- [static let replacementPassesUserInfoKey: PKPassLibraryNotificationKey](./replacementpassesuserinfokey.md)
   An array of replaced passes.
-- [static let serialNumberUserInfoKey: PKPassLibraryNotificationKey](pkpasslibrarynotificationkey/serialnumberuserinfokey.md)
+- [static let serialNumberUserInfoKey: PKPassLibraryNotificationKey](./serialnumberuserinfokey.md)
   The pass’s serial number.
 
 

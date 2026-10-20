@@ -1,7 +1,8 @@
 # hasPointerRepresentation
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the static string stores a pointer to a null-terminated sequence of UTF-8 code units.
 

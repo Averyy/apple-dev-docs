@@ -1,7 +1,8 @@
 # MTRSoftwareDiagnosticsClusterThreadMetricsStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,29 +19,33 @@
 class MTRSoftwareDiagnosticsClusterThreadMetricsStruct
 ```
 
+```objc
+@interface MTRSoftwareDiagnosticsClusterThreadMetricsStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var id: NSNumber](mtrsoftwarediagnosticsclusterthreadmetricsstruct/id.md)
-- [var name: String?](mtrsoftwarediagnosticsclusterthreadmetricsstruct/name.md)
-- [var stackFreeCurrent: NSNumber?](mtrsoftwarediagnosticsclusterthreadmetricsstruct/stackfreecurrent.md)
-- [var stackFreeMinimum: NSNumber?](mtrsoftwarediagnosticsclusterthreadmetricsstruct/stackfreeminimum.md)
-- [var stackSize: NSNumber?](mtrsoftwarediagnosticsclusterthreadmetricsstruct/stacksize.md)
+- [var id: NSNumber](./mtrsoftwarediagnosticsclusterthreadmetricsstruct/id.md)
+- [var name: String?](./mtrsoftwarediagnosticsclusterthreadmetricsstruct/name.md)
+- [var stackFreeCurrent: NSNumber?](./mtrsoftwarediagnosticsclusterthreadmetricsstruct/stackfreecurrent.md)
+- [var stackFreeMinimum: NSNumber?](./mtrsoftwarediagnosticsclusterthreadmetricsstruct/stackfreeminimum.md)
+- [var stackSize: NSNumber?](./mtrsoftwarediagnosticsclusterthreadmetricsstruct/stacksize.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRSoftwareDiagnosticsClusterThreadMetrics](mtrsoftwarediagnosticsclusterthreadmetrics.md)
+- [MTRSoftwareDiagnosticsClusterThreadMetrics](./mtrsoftwarediagnosticsclusterthreadmetrics.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
@@ -47,13 +48,24 @@ print(j)
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection, unless the index passed as `limit` prevents offsetting beyond those bounds.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
 
 ## Parameters
 
 - `i`: A valid index of the collection.
 - `distance`: The distance to offset `i`. `distance` must not be negative unless the collection conforms to the `BidirectionalCollection` protocol.
 - `limit`: A valid index of the collection to use as a limit. If `distance > 0`, a limit that is less than `i` has no effect. Likewise, if `distance < 0`, a limit that is greater than `i` has no effect.
+
+## Default Implementations
+
+### BidirectionalCollection Implementations
+- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](../bidirectionalcollection/index%28_,offsetby,limitedby%29-567lj.md)
+- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](../bidirectionalcollection/index%28_,offsetby,limitedby%29-8jlcd.md)
+  Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
+### Collection Implementations
+- [func index<T>(Self.Index, offsetBy: T, limitedBy: Self.Index) -> Self.Index?](./index%28_,offsetby,limitedby%29-4m1pi.md)
+- [func index(Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Self.Index?](./index%28_,offsetby,limitedby%29-7713p.md)
+  Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
 
 
 ---

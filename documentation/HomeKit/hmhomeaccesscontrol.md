@@ -1,7 +1,8 @@
 # HMHomeAccessControl
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The access privileges of a user associated with a home.
 
@@ -19,33 +20,38 @@ The access privileges of a user associated with a home.
 class HMHomeAccessControl
 ```
 
+```objc
+@interface HMHomeAccessControl : HMAccessControl
+```
+
 ## Topics
 
 ### Getting the Privileges of a User
-- [var isAdministrator: Bool](hmhomeaccesscontrol/isadministrator.md)
+- [var isAdministrator: Bool](./hmhomeaccesscontrol/isadministrator.md)
   Specifies if the user has administrative privileges for the home.
 
 ## Relationships
 
 ### Inherits From
-- [HMAccessControl](hmaccesscontrol.md)
+- [HMAccessControl](./hmaccesscontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func homeAccessControl(for: HMUser) -> HMHomeAccessControl](hmhome/homeaccesscontrol(for:).md)
+### Controlling user access
+- [func homeAccessControl(for: HMUser) -> HMHomeAccessControl](./hmhome/homeaccesscontrol%28for%29.md)
   Retrieves the access level of a user associated with the home.
-- [class HMAccessControl](hmaccesscontrol.md)
+- [class HMAccessControl](./hmaccesscontrol.md)
   An abstract superclass for accessing user privileges.
-- [let HMUserFailedAccessoriesKey: String](hmuserfailedaccessorieskey.md)
+- [let HMUserFailedAccessoriesKey: String](./hmuserfailedaccessorieskey.md)
   The key for retrieving details of what accessories failed to add or remove a user.
 
 

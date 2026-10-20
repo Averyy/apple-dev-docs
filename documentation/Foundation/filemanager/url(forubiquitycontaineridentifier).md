@@ -1,7 +1,8 @@
 # url(forUbiquityContainerIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the URL for the iCloud container associated with the specified identifier and establishes access to that container.
 
@@ -20,17 +21,21 @@ Returns the URL for the iCloud container associated with the specified identifie
 func url(forUbiquityContainerIdentifier containerIdentifier: String?) -> URL?
 ```
 
+```objc
+- (NSURL *) URLForUbiquityContainerIdentifier:(NSString *) containerIdentifier;
+```
+
 #### Return Value
 
 A URL pointing to the specified ubiquity container, or `nil` if the container could not be located or if iCloud storage is unavailable for the current user or device.
 
 #### Discussion
 
-You use this method to determine the location of your app’s ubiquity container directories and to configure your app’s initial iCloud access. The first time you call this method for a given ubiquity container, the system extends your app’s sandbox to include that container. In iOS, you must call this method at least once before trying to search for cloud-based files in the ubiquity container. If your app accesses multiple ubiquity containers, call this method once for each container. In macOS, you do not need to call this method if you use [`NSDocument`](https://developer.apple.com/documentation/appkit/nsdocument)-based objects, because the system then calls this method automatically.
+You use this method to determine the location of your app’s ubiquity container directories and to configure your app’s initial iCloud access. The first time you call this method for a given ubiquity container, the system extends your app’s sandbox to include that container. In iOS, you must call this method at least once before trying to search for cloud-based files in the ubiquity container. If your app accesses multiple ubiquity containers, call this method once for each container. In macOS, you do not need to call this method if you use [`NSDocument`](../../AppKit/nsdocument.md)-based objects, because the system then calls this method automatically.
 
 You can use the URL returned by this method to build paths to files and directories within your app’s ubiquity container. Each app that syncs documents to the cloud must have at least one associated ubiquity container in which to put those files. This container can be unique to the app or shared by multiple apps.
 
-> ❗ **Important**:  Do not call this method from your app’s main thread. Because this method might take a nontrivial amount of time to set up iCloud and return the requested URL, you should always call it from a secondary thread. To determine if iCloud is available, especially at launch time, check the value of the [`ubiquityIdentityToken`](filemanager/ubiquityidentitytoken.md) property instead.
+> ❗ **Important**:  Do not call this method from your app’s main thread. Because this method might take a nontrivial amount of time to set up iCloud and return the requested URL, you should always call it from a secondary thread. To determine if iCloud is available, especially at launch time, check the value of the [`ubiquityIdentityToken`](./ubiquityidentitytoken.md) property instead.
 
 In addition to writing to its own ubiquity container, an app can write to any container directory for which it has the appropriate permission. Each additional ubiquity container should be listed as an additional value in the `com.apple.developer.ubiquity-container-identifiers` entitlement array.
 
@@ -40,21 +45,26 @@ To learn how to view your development team’s unique *<TEAM_ID>* value, read To
 
 ## Parameters
 
-- `containerIdentifier`: The fully-qualified container identifier for an iCloud container directory. The string you specify must not contain wildcards and must be of the form *<TEAMID>*`.`*<CONTAINER>*, where *<TEAMID>* is your development team ID and *<CONTAINER>* is the bundle identifier of the container you want to access. The container identifiers for your app must be declared in the `com.apple.developer.ubiquity-container-identifiers` array of the `.entitlements` property list file in your Xcode project. If you specify `nil` for this parameter, this method returns the first container listed in the `com.apple.developer.ubiquity-container-identifiers` entitlement array.
+- `containerIdentifier`: The fully-qualified container identifier for an iCloud container directory. The string you specify must not contain wildcards and must be of the form *<TEAMID>*`.`*<CONTAINER>*, where *<TEAMID>* is your development team ID and *<CONTAINER>* is the bundle identifier of the container you want to access.
+
+  The container identifiers for your app must be declared in the `com.apple.developer.ubiquity-container-identifiers` array of the `.entitlements` property list file in your Xcode project.
+
+  If you specify `nil` for this parameter, this method returns the first container listed in the `com.apple.developer.ubiquity-container-identifiers` entitlement array.
 
 ## See Also
 
-- [var ubiquityIdentityToken: (any NSCoding & NSCopying & NSObjectProtocol)?](filemanager/ubiquityidentitytoken.md)
+### Managing iCloud-based items
+- [var ubiquityIdentityToken: (any NSCoding & NSCopying & NSObjectProtocol)?](./ubiquityidentitytoken.md)
   An opaque token that represents the current user’s iCloud Drive Documents identity.
-- [func isUbiquitousItem(at: URL) -> Bool](filemanager/isubiquitousitem(at:).md)
+- [func isUbiquitousItem(at: URL) -> Bool](./isubiquitousitem%28at%29.md)
   Returns a Boolean indicating whether the item is targeted for storage in iCloud.
-- [func setUbiquitous(Bool, itemAt: URL, destinationURL: URL) throws](filemanager/setubiquitous(_:itemat:destinationurl:).md)
+- [func setUbiquitous(Bool, itemAt: URL, destinationURL: URL) throws](./setubiquitous%28_,itemat,destinationurl%29.md)
   Indicates whether the item at the specified URL should be stored in iCloud.
-- [func startDownloadingUbiquitousItem(at: URL) throws](filemanager/startdownloadingubiquitousitem(at:).md)
+- [func startDownloadingUbiquitousItem(at: URL) throws](./startdownloadingubiquitousitem%28at%29.md)
   Starts downloading (if necessary) the specified item to the local system.
-- [func evictUbiquitousItem(at: URL) throws](filemanager/evictubiquitousitem(at:).md)
+- [func evictUbiquitousItem(at: URL) throws](./evictubiquitousitem%28at%29.md)
   Removes the local copy of the specified item that’s stored in iCloud.
-- [func url(forPublishingUbiquitousItemAt: URL, expiration: AutoreleasingUnsafeMutablePointer<NSDate?>?) throws -> URL](filemanager/url(forpublishingubiquitousitemat:expiration:).md)
+- [func url(forPublishingUbiquitousItemAt: URL, expiration: AutoreleasingUnsafeMutablePointer<NSDate?>?) throws -> URL](./url%28forpublishingubiquitousitemat,expiration%29.md)
   Returns a URL that can be emailed to users to allow them to download a copy of a flat file item from iCloud.
 
 

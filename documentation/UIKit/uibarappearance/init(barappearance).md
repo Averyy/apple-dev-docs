@@ -1,7 +1,8 @@
 # init(barAppearance:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new bar appearance object by copying relevant data from the specified appearance object.
 
@@ -18,6 +19,10 @@ Creates a new bar appearance object by copying relevant data from the specified 
 init(barAppearance: UIBarAppearance)
 ```
 
+```objc
+- (instancetype) initWithBarAppearance:(UIBarAppearance *) barAppearance;
+```
+
 #### Return Value
 
 A new bar appearance object containing the relevant properties from the other object.
@@ -32,11 +37,12 @@ This method copies over the properties from `barAppearance` that are also releva
 
 ## See Also
 
-- [init(idiom: UIUserInterfaceIdiom)](uibarappearance/init(idiom:).md)
+### Creating a custom bar appearance object
+- [init(idiom: UIUserInterfaceIdiom)](./init%28idiom%29.md)
   Creates a new bar appearance object that targets the specified idiom.
-- [convenience init()](uibarappearance/init.md)
+- [convenience init()](./init%28%29.md)
   Creates a new bar appearance object containing default values.
-- [init(coder: NSCoder)](uibarappearance/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates an appearance object from data in an unarchiver.
 
 

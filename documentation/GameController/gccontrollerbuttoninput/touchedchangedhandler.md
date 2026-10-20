@@ -1,7 +1,8 @@
 # touchedChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the element calls when the user touches the button.
 
@@ -19,19 +20,24 @@ The block that the element calls when the user touches the button.
 var touchedChangedHandler: GCControllerButtonTouchedChangedHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCControllerButtonTouchedChangedHandler touchedChangedHandler;
+```
+
 #### Discussion
 
 Set this handler when you want to know when the user touches the button before pressing the button.
 
 ## See Also
 
-- [typealias GCControllerButtonTouchedChangedHandler](gccontrollerbuttontouchedchangedhandler.md)
+### Getting change information
+- [typealias GCControllerButtonTouchedChangedHandler](../gccontrollerbuttontouchedchangedhandler.md)
   The signature for the block that executes when the user touches the button if the controller supports that feature.
-- [var pressedChangedHandler: GCControllerButtonValueChangedHandler?](gccontrollerbuttoninput/pressedchangedhandler.md)
+- [var pressedChangedHandler: GCControllerButtonValueChangedHandler?](./pressedchangedhandler.md)
   The block that the element calls when the user presses or releases the button.
-- [var valueChangedHandler: GCControllerButtonValueChangedHandler?](gccontrollerbuttoninput/valuechangedhandler.md)
+- [var valueChangedHandler: GCControllerButtonValueChangedHandler?](./valuechangedhandler.md)
   The block that the element calls when the user changes the level of pressure on the button.
-- [typealias GCControllerButtonValueChangedHandler](gccontrollerbuttonvaluechangedhandler.md)
+- [typealias GCControllerButtonValueChangedHandler](../gccontrollerbuttonvaluechangedhandler.md)
   The signature for the block that executes when a button’s state changes.
 
 

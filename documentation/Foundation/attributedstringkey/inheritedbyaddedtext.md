@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,11 @@
 ```swift
 static var inheritedByAddedText: Bool { get }
 ```
+
+## Default Implementations
+
+### AttributedStringKey Implementations
+- [static var inheritedByAddedText: Bool](./inheritedbyaddedtext-7uc4l.md)
 
 
 ---

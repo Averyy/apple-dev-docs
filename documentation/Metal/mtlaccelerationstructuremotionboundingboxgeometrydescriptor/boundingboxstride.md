@@ -1,7 +1,8 @@
 # boundingBoxStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between bounding boxes in each buffer.
 
@@ -19,9 +20,14 @@ The stride, in bytes, between bounding boxes in each buffer.
 var boundingBoxStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger boundingBoxStride;
+```
+
 ## See Also
 
-- [var boundingBoxBuffers: [MTLMotionKeyframeData]](mtlaccelerationstructuremotionboundingboxgeometrydescriptor/boundingboxbuffers.md)
+### Specifying bounding boxes data
+- [var boundingBoxBuffers: [MTLMotionKeyframeData]](./boundingboxbuffers.md)
   A array of motion keyframes, each containing bounding box data.
 
 

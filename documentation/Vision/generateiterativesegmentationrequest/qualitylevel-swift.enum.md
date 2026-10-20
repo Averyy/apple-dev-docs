@@ -1,7 +1,8 @@
 # GenerateIterativeSegmentationRequest.QualityLevel
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The resolution and quality of the segmentation mask the request produces.
 
@@ -26,27 +27,28 @@ Higher quality levels produce a smoother, higher-resolution mask. Lower quality 
 ## Topics
 
 ### Quality cases
-- [GenerateIterativeSegmentationRequest.QualityLevel.accurate](generateiterativesegmentationrequest/qualitylevel-swift.enum/accurate.md)
+- [GenerateIterativeSegmentationRequest.QualityLevel.accurate](./qualitylevel-swift.enum/accurate.md)
   Produces a high-resolution mask.
-- [GenerateIterativeSegmentationRequest.QualityLevel.balanced](generateiterativesegmentationrequest/qualitylevel-swift.enum/balanced.md)
+- [GenerateIterativeSegmentationRequest.QualityLevel.balanced](./qualitylevel-swift.enum/balanced.md)
   Produces a medium-resolution mask that balances speed and accuracy. This is the default setting.
-- [GenerateIterativeSegmentationRequest.QualityLevel.fast](generateiterativesegmentationrequest/qualitylevel-swift.enum/fast.md)
+- [GenerateIterativeSegmentationRequest.QualityLevel.fast](./qualitylevel-swift.enum/fast.md)
   Produces a low-resolution mask, but runs very quickly.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel](generateiterativesegmentationrequest/qualitylevel-swift.property.md)
+### Accessing the quality level
+- [var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel](./qualitylevel-swift.property.md)
   Controls the resolution of the produced mask.
 
 

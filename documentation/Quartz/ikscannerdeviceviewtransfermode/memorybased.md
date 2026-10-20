@@ -1,7 +1,8 @@
 # IKScannerDeviceViewTransferMode.memoryBased
 
 **Framework**: Quartz  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scanned data is returned to the delegate as a `NSData` object.
 
@@ -14,9 +15,14 @@ The scanned data is returned to the delegate as a `NSData` object.
 case memoryBased
 ```
 
+```c
+IKScannerDeviceViewTransferModeMemoryBased
+```
+
 ## See Also
 
-- [IKScannerDeviceViewTransferMode.fileBased](ikscannerdeviceviewtransfermode/filebased.md)
+### Constants
+- [IKScannerDeviceViewTransferMode.fileBased](./filebased.md)
   The scanned content will be saved to the specified download directory.
 
 

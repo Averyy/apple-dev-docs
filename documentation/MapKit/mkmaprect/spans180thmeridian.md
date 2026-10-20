@@ -1,7 +1,8 @@
 # spans180thMeridian
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the specified map rectangle crosses the 180th meridian.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the specified map rectangle crosses the 1
 var spans180thMeridian: Bool { get }
 ```
 
+```c
+extern BOOL MKMapRectSpans180thMeridian(MKMapRect rect);
+```
+
 ## See Also
 
-- [var isNull: Bool](mkmaprect/isnull.md)
+### Comparing rectangles
+- [var isNull: Bool](./isnull.md)
   A Boolean value that indicates whether the specified rectangle is null.
-- [func MKMapRectEqualToRect(MKMapRect, MKMapRect) -> Bool](mkmaprectequaltorect(_:_:).md)
+- [func MKMapRectEqualToRect(MKMapRect, MKMapRect) -> Bool](../mkmaprectequaltorect%28_,_%29.md)
   Returns a Boolean value that indicates whether two map rectangles are equal.
-- [var isEmpty: Bool](mkmaprect/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the specified rectangle has no area.
-- [var remainder: MKMapRect](mkmaprect/remainder.md)
+- [var remainder: MKMapRect](./remainder.md)
   A rectangle that represents the normalized portion of the specified rectangle that lies outside the world map boundaries.
 
 

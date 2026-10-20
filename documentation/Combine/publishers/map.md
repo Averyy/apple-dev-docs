@@ -1,7 +1,8 @@
 # Publishers.Map
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that transforms all elements from the upstream publisher with a provided closure.
 
@@ -23,38 +24,39 @@ struct Map<Upstream, Output> where Upstream : Publisher
 ## Topics
 
 ### Creating a map publisher
-- [init(upstream: Upstream, transform: (Upstream.Output) -> Output)](publishers/map/init(upstream:transform:).md)
+- [init(upstream: Upstream, transform: (Upstream.Output) -> Output)](./map/init%28upstream,transform%29.md)
   Creates a publisher that transforms all elements from the upstream publisher with a provided closure.
 ### Mapping elements
-- [func map<T>((Output) -> T) -> Publishers.Map<Upstream, T>](publishers/map/map(_:).md)
-- [func tryMap<T>((Output) throws -> T) -> Publishers.TryMap<Upstream, T>](publishers/map/trymap(_:).md)
+- [func map<T>((Output) -> T) -> Publishers.Map<Upstream, T>](./map/map%28_%29.md)
+- [func tryMap<T>((Output) throws -> T) -> Publishers.TryMap<Upstream, T>](./map/trymap%28_%29.md)
 ### Declaring supporting types
-- [Publishers.Output](publishers/output.md)
+- [Publishers.Output](./output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
-- [Publishers.Map.Failure](publishers/map/failure.md)
+- [Publishers.Map.Failure](./map/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/map/upstream.md)
+- [let upstream: Upstream](./map/upstream.md)
   The publisher from which this publisher receives elements.
-- [let transform: (Upstream.Output) -> Output](publishers/map/transform.md)
+- [let transform: (Upstream.Output) -> Output](./map/transform.md)
   The closure that transforms elements from the upstream publisher.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.TryMap](publishers/trymap.md)
+### Mapping elements
+- [Publishers.TryMap](./trymap.md)
   A publisher that transforms all elements from the upstream publisher with a provided error-throwing closure.
-- [Publishers.MapError](publishers/maperror.md)
+- [Publishers.MapError](./maperror.md)
   A publisher that converts any failure from the upstream publisher into a new error.
-- [Publishers.Scan](publishers/scan.md)
+- [Publishers.Scan](./scan.md)
   A publisher that transforms elements from the upstream publisher by providing the current element to a closure along with the last value returned by the closure.
-- [Publishers.TryScan](publishers/tryscan.md)
+- [Publishers.TryScan](./tryscan.md)
   A publisher that transforms elements from the upstream publisher by providing the current element to a failable closure along with the last value returned by the closure.
-- [Publishers.SetFailureType](publishers/setfailuretype.md)
+- [Publishers.SetFailureType](./setfailuretype.md)
   A publisher that appears to send a specified failure type.
 
 

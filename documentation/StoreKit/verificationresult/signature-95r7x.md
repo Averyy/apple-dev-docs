@@ -1,7 +1,8 @@
 # signature
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signature component of the JSON web signature.
 
@@ -20,27 +21,30 @@ The signature component of the JSON web signature.
 var signature: P256.Signing.ECDSASignature { get }
 ```
 
+Available when `SignedType` is `Product.SubscriptionInfo.RenewalInfo`.
+
 #### Discussion
 
-Use this [`signature`](verificationresult/signature-95r7x.md) with [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) if you verify the signature on the device.
+Use this [`signature`](./signature-95r7x.md) with [Apple CryptoKit](../../CryptoKit/CryptoKit.md) if you verify the signature on the device.
 
 ## See Also
 
-- [var jwsRepresentation: String](verificationresult/jwsrepresentation-178oj.md)
+### Getting properties for subscription renewal information
+- [var jwsRepresentation: String](./jwsrepresentation-178oj.md)
   The subscription renewal information signed by the App Store, in JWS Compact Serialization format.
-- [var deviceVerification: Data](verificationresult/deviceverification-5hvi9.md)
+- [var deviceVerification: Data](./deviceverification-5hvi9.md)
   The device verification value to use to verify whether the subscription renewal information belongs to the device.
-- [var deviceVerificationNonce: UUID](verificationresult/deviceverificationnonce-6mzfc.md)
+- [var deviceVerificationNonce: UUID](./deviceverificationnonce-6mzfc.md)
   The UUID for computing the device verification value.
-- [var signedDate: Date](verificationresult/signeddate-3tvo5.md)
+- [var signedDate: Date](./signeddate-3tvo5.md)
   The date that the App Store signed the JWS subscription renewal information.
-- [var headerData: Data](verificationresult/headerdata-3be0o.md)
+- [var headerData: Data](./headerdata-3be0o.md)
   The header component of the JWS subscription renewal information.
-- [var payloadData: Data](verificationresult/payloaddata-abfv.md)
+- [var payloadData: Data](./payloaddata-abfv.md)
   The payload component of the JWS subscription renewal information.
-- [var signedData: Data](verificationresult/signeddata-1t80n.md)
+- [var signedData: Data](./signeddata-1t80n.md)
   The subscription renewal information data that the signature applies to.
-- [var signatureData: Data](verificationresult/signaturedata-9uw8c.md)
+- [var signatureData: Data](./signaturedata-9uw8c.md)
   The signature component of the JWS subscription renewal information.
 
 

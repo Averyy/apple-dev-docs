@@ -1,7 +1,8 @@
 # AppCategoriesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list App Store categories.
 
@@ -10,7 +11,7 @@ The response body for endpoints that list App Store categories.
 
 ## Declaration
 
-```swift
+```
 object AppCategoriesResponse
 ```
 
@@ -23,20 +24,21 @@ object AppCategoriesResponse
 
 ## See Also
 
-- [object AppCategory](appcategory.md)
+### Objects
+- [object AppCategory](./appcategory.md)
   The data structure that represent an App Categories resource.
-- [object AppCategoryResponse](appcategoryresponse.md)
+- [object AppCategoryResponse](./appcategoryresponse.md)
   The response body for endpoints that read a single App Store category.
-- [object AppCategoriesWithoutIncludesResponse](appcategorieswithoutincludesresponse.md)
+- [object AppCategoriesWithoutIncludesResponse](./appcategorieswithoutincludesresponse.md)
   A response containing a list of App Store categories, without including subcategory resources.
-- [object AppCategoryWithoutIncludesResponse](appcategorywithoutincludesresponse.md)
+- [object AppCategoryWithoutIncludesResponse](./appcategorywithoutincludesresponse.md)
   A response containing a single App Store category, without including subcategory resources.
-- [object AppInfoPrimaryCategoryLinkageResponse](appinfoprimarycategorylinkageresponse.md)
-- [object AppInfoPrimarySubcategoryOneLinkageResponse](appinfoprimarysubcategoryonelinkageresponse.md)
-- [object AppInfoPrimarySubcategoryTwoLinkageResponse](appinfoprimarysubcategorytwolinkageresponse.md)
-- [object AppInfoSecondaryCategoryLinkageResponse](appinfosecondarycategorylinkageresponse.md)
-- [object AppInfoSecondarySubcategoryOneLinkageResponse](appinfosecondarysubcategoryonelinkageresponse.md)
-- [object AppInfoSecondarySubcategoryTwoLinkageResponse](appinfosecondarysubcategorytwolinkageresponse.md)
+- [object AppInfoPrimaryCategoryLinkageResponse](./appinfoprimarycategorylinkageresponse.md)
+- [object AppInfoPrimarySubcategoryOneLinkageResponse](./appinfoprimarysubcategoryonelinkageresponse.md)
+- [object AppInfoPrimarySubcategoryTwoLinkageResponse](./appinfoprimarysubcategorytwolinkageresponse.md)
+- [object AppInfoSecondaryCategoryLinkageResponse](./appinfosecondarycategorylinkageresponse.md)
+- [object AppInfoSecondarySubcategoryOneLinkageResponse](./appinfosecondarysubcategoryonelinkageresponse.md)
+- [object AppInfoSecondarySubcategoryTwoLinkageResponse](./appinfosecondarysubcategorytwolinkageresponse.md)
 
 
 ---

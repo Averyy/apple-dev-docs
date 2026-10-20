@@ -1,7 +1,8 @@
 # screenBounds
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding rectangle of the screen.
 
@@ -14,13 +15,18 @@ The bounding rectangle of the screen.
 var screenBounds: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect screenBounds;
+```
+
 #### Discussion
 
 The rectangle represents the dimensions of the screen and may be different from the rectangle used to display your app’s content.
 
 ## See Also
 
-- [var screenScale: CGFloat](wkinterfacedevice/screenscale.md)
+### Reading the Screen Information
+- [var screenScale: CGFloat](./screenscale.md)
   The number of pixels per point for the current screen.
 
 

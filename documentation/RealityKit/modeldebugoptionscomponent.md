@@ -1,7 +1,8 @@
 # ModelDebugOptionsComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that changes how RealityKit renders its entity to help with debugging.
 
@@ -11,7 +12,7 @@ A component that changes how RealityKit renders its entity to help with debuggin
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,9 @@ struct ModelDebugOptionsComponent
 
 #### Overview
 
-Attaching a `ModelDebugOptionsComponent` to a [`ModelEntity`](modelentity.md) tells RealityKit to change the way it renders that entity based on a specified [`visualizationMode`](modeldebugoptionscomponent/visualizationmode-swift.property.md). This component isolates individual parts of the rendering process, such as the entity’s transparency or roughness, and displays surface color to help identify visual anomalies.
+Attaching a `ModelDebugOptionsComponent` to a [`ModelEntity`](./modelentity.md) tells RealityKit to change the way it renders that entity based on a specified [`visualizationMode`](./modeldebugoptionscomponent/visualizationmode-swift.property.md). This component isolates individual parts of the rendering process, such as the entity’s transparency or roughness, and displays surface color to help identify visual anomalies.
 
-To use this component, create a `ModelDebugOptionsComponent` and set its [`visualizationMode`](modeldebugoptionscomponent/visualizationmode-swift.property.md) to the desired value. Then, set the component as the entity’s `ModelEntity/modelDebugOptions` property:
+To use this component, create a `ModelDebugOptionsComponent` and set its [`visualizationMode`](./modeldebugoptionscomponent/visualizationmode-swift.property.md) to the desired value. Then, set the component as the entity’s `ModelEntity/modelDebugOptions` property:
 
 ```swift
 if let robot = anchor.findEntity(named: "Robot") as? ModelEntity {
@@ -32,9 +33,9 @@ if let robot = anchor.findEntity(named: "Robot") as? ModelEntity {
 }
 ```
 
-For more information on the visualization modes supported by `ModelDebugOptionsComponent`, see [`ModelDebugOptionsComponent.VisualizationMode`](modeldebugoptionscomponent/visualizationmode-swift.enum.md).
+For more information on the visualization modes supported by `ModelDebugOptionsComponent`, see [`ModelDebugOptionsComponent.VisualizationMode`](./modeldebugoptionscomponent/visualizationmode-swift.enum.md).
 
-##### Attach a Debug Component to an Entity
+##### Attach a debug component to an entity
 
 To attach a debug component to a particular entity, traverse the entity tree while passing the component to each child:
 
@@ -55,9 +56,9 @@ func debugLightingDiffuseButtonCallback() {
 }
 ```
 
-##### Attach a Debug Component to a Trait
+##### Attach a debug component to a trait
 
-To attach a debug component based on a trait, traverse the entity tree while checking for [`HasModel`](hasmodel.md) adoption:
+To attach a debug component based on a trait, traverse the entity tree while checking for [`HasModel`](./hasmodel.md) adoption:
 
 ```swift
 func attachDebug(entity: Entity, debug: ModelDebugOptionsComponent) {
@@ -80,30 +81,31 @@ func debugLightingDiffuseButtonCallback() {
 ## Topics
 
 ### Creating model debug options components
-- [init(visualizationMode: ModelDebugOptionsComponent.VisualizationMode)](modeldebugoptionscomponent/init(visualizationmode:).md)
+- [init(visualizationMode: ModelDebugOptionsComponent.VisualizationMode)](./modeldebugoptionscomponent/init%28visualizationmode%29.md)
   Creates a component that isolates a portion of the rendering process and displays it as the entity’s surface texture.
 ### Setting the visualization mode
-- [var visualizationMode: ModelDebugOptionsComponent.VisualizationMode](modeldebugoptionscomponent/visualizationmode-swift.property.md)
+- [var visualizationMode: ModelDebugOptionsComponent.VisualizationMode](./modeldebugoptionscomponent/visualizationmode-swift.property.md)
   The part of the rendering process to display as the entity’s surface texture.
-- [ModelDebugOptionsComponent.VisualizationMode](modeldebugoptionscomponent/visualizationmode-swift.enum.md)
+- [ModelDebugOptionsComponent.VisualizationMode](./modeldebugoptionscomponent/visualizationmode-swift.enum.md)
   A mode that specifies the portion of the rendering process to isolate and display for debugging.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct ModelSortGroupComponent](modelsortgroupcomponent.md)
+### Render configuration
+- [struct ModelSortGroupComponent](./modelsortgroupcomponent.md)
   A component that configures the rendering order for an entity’s model.
-- [struct ModelSortGroup](modelsortgroup.md)
+- [struct ModelSortGroup](./modelsortgroup.md)
   A group that you assign to multiple entities to tell the renderer what order and how to render the entities in the group.
-- [struct OpacityComponent](opacitycomponent.md)
+- [struct OpacityComponent](./opacitycomponent.md)
   A component that controls the opacity of an entity and its descendants.
-- [struct AdaptiveResolutionComponent](adaptiveresolutioncomponent.md)
+- [struct AdaptiveResolutionComponent](./adaptiveresolutioncomponent.md)
   A component that provides the suggested pixels per meter necessary to render an object.
-- [struct MeshInstancesComponent](meshinstancescomponent.md)
+- [struct MeshInstancesComponent](./meshinstancescomponent.md)
   A component that performs GPU instancing on the model of the same entity.
 
 

@@ -1,7 +1,8 @@
 # authorization()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the authorization object associated with this view.
 
@@ -14,18 +15,23 @@ Returns the authorization object associated with this view.
 func authorization() -> SFAuthorization!
 ```
 
+```objc
+- (SFAuthorization *) authorization;
+```
+
 #### Discussion
 
-The authorization object is defined in [`Security Foundation`](https://developer.apple.com/documentation/securityfoundation).
+The authorization object is defined in [Security Foundation](../../SecurityFoundation/SecurityFoundation.md).
 
 ## See Also
 
-- [func authorizationRights() -> UnsafeMutablePointer<AuthorizationRights>!](sfauthorizationview/authorizationrights.md)
+### Getting information about the authorization view
+- [func authorizationRights() -> UnsafeMutablePointer<AuthorizationRights>!](./authorizationrights%28%29.md)
   Returns the authorization rights for this view.
-- [func authorizationState() -> SFAuthorizationViewState](sfauthorizationview/authorizationstate.md)
+- [func authorizationState() -> SFAuthorizationViewState](./authorizationstate%28%29.md)
   Returns the current state of the authorization view.
-- [func isEnabled() -> Bool](sfauthorizationview/isenabled.md)
-  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/swift/false)).
+- [func isEnabled() -> Bool](./isenabled%28%29.md)
+  Indicates whether the authorization view is enabled ([`true`](../../Swift/true.md)) or disabled ([`false`](../../Swift/false.md)).
 
 
 ---

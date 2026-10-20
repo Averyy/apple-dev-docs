@@ -1,9 +1,10 @@
 # typeIntlText
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-For important information, see the Version Notes section of the [`typeUnicodeText`](https://developer.apple.com/documentation/applicationservices/apple_event_manager/1542918-typeunicodetext) enum.
+For important information, see the Version Notes section of the [typeUnicodeText](../applicationservices/apple_event_manager/api-1542918-typeunicodetext.md) enum.
 
 **Availability**:
 - Mac Catalyst 13.0+

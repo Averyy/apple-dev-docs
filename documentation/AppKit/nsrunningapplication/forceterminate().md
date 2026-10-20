@@ -1,7 +1,8 @@
 # forceTerminate()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to force the receiver to quit.
 
@@ -14,25 +15,30 @@ Attempts to force the receiver to quit.
 func forceTerminate() -> Bool
 ```
 
+```objc
+- (BOOL) forceTerminate;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the application successfully terminated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../../Swift/true.md) if the application successfully terminated, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method will return [`false`](https://developer.apple.com/documentation/swift/false) if the application is no longer running when the `forceTerminate` message is sent to the receiver.
+This method will return [`false`](../../Swift/false.md) if the application is no longer running when the `forceTerminate` message is sent to the receiver.
 
 This method may return before the receiver exits; you should observe the terminated property to determine when the application terminates.
 
-Sandboxed applications can’t use this method to terminate other applciations. This method returns [`false`](https://developer.apple.com/documentation/swift/false) when called from a sandboxed application.
+Sandboxed applications can’t use this method to terminate other applciations. This method returns [`false`](../../Swift/false.md) when called from a sandboxed application.
 
 ## See Also
 
-- [func terminate() -> Bool](nsrunningapplication/terminate.md)
+### Terminating applications
+- [func terminate() -> Bool](./terminate%28%29.md)
   Attempts to quit the receiver normally.
-- [var isTerminated: Bool](nsrunningapplication/isterminated.md)
+- [var isTerminated: Bool](./isterminated.md)
   Indicates that the receiver’s application has terminated.
-- [class func terminateAutomaticallyTerminableApplications()](nsrunningapplication/terminateautomaticallyterminableapplications.md)
+- [class func terminateAutomaticallyTerminableApplications()](./terminateautomaticallyterminableapplications%28%29.md)
   Terminates invisibly running applications as if triggered by system memory pressure.
 
 

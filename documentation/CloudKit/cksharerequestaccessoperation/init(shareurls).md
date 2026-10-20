@@ -1,7 +1,8 @@
 # init(shareURLs:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a share request access operation configured with specified share URLs.
 
@@ -20,9 +21,13 @@ Creates a share request access operation configured with specified share URLs.
 convenience init(shareURLs: [URL])
 ```
 
+```objc
+- (instancetype) initWithShareURLs:(NSArray<NSURL *> *) shareURLs;
+```
+
 #### Return Value
 
-A configured [`CKShareRequestAccessOperation`](cksharerequestaccessoperation.md) instance.
+A configured [`CKShareRequestAccessOperation`](../cksharerequestaccessoperation.md) instance.
 
 ## Parameters
 

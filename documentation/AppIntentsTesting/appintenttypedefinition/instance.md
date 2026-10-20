@@ -2,6 +2,7 @@
 
 **Framework**: App Intents Testing  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The instance type that corresponds to this definition type.

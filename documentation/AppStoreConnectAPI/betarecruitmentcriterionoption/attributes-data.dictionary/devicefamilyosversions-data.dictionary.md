@@ -1,7 +1,8 @@
 # BetaRecruitmentCriterionOption.Attributes.DeviceFamilyOsVersions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The device family and minimum OS version pairings available for selection in a beta recruitment criterion option.
 
@@ -10,7 +11,7 @@ The device family and minimum OS version pairings available for selection in a b
 
 ## Declaration
 
-```swift
+```
 object BetaRecruitmentCriterionOption.Attributes.DeviceFamilyOsVersions
 ```
 

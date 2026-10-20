@@ -1,6 +1,7 @@
 # Tag Values
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 
 ---

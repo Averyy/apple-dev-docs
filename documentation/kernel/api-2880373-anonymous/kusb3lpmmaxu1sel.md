@@ -1,14 +1,15 @@
 # kUSB3LPMMaxU1SEL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kUSB3LPMMaxU1SEL = 0xFF
 ```
 

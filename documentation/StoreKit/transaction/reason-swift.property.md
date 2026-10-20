@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cause of the purchase transaction, whether it’s a customer’s purchase or an auto-renewable subscription renewal that the system initiates.
 
@@ -22,7 +23,8 @@ let reason: Transaction.Reason
 
 ## See Also
 
-- [Transaction.Reason](transaction/reason-swift.struct.md)
+### Getting transaction reason
+- [Transaction.Reason](./reason-swift.struct.md)
   A cause of a purchase transaction, indicating whether it’s a customer’s purchase or an auto-renewable subscription renewal that the system initiates.
 
 

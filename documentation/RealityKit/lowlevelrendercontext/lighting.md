@@ -1,7 +1,8 @@
 # lighting
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lighting function creation interface for this context.
 

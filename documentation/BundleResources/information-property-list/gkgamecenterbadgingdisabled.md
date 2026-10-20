@@ -1,7 +1,8 @@
 # GKGameCenterBadgingDisabled
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
 
@@ -10,29 +11,31 @@ A Boolean value indicating whether GameKit can add badges to a turn-based game i
 - iPadOS 7.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `GKGameCenterBadgingDisabled`
+- **Type**: boolean
 
 ## See Also
 
-- [AVGameBypassSystemSpatialAudio](information-property-list/avgamebypasssystemspatialaudio.md)
+### Games
+- [AVGameBypassSystemSpatialAudio](./avgamebypasssystemspatialaudio.md)
   A key that ignores the system spatial-audio toggle in Control Center.
-- [GCDisableInferringGameMetadata](information-property-list/gcdisableinferringgamemetadata.md)
+- [GCDisableInferringGameMetadata](./gcdisableinferringgamemetadata.md)
   A Boolean value that indicates whether the Games app excludes game information for non-App Store games.
-- [GCSupportedGameControllers](information-property-list/gcsupportedgamecontrollers.md)
+- [GCSupportedGameControllers](./gcsupportedgamecontrollers.md)
   The types of game controller profiles that the app supports or requires.
-- [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)
+- [GCSupportsControllerUserInteraction](./gcsupportscontrolleruserinteraction.md)
   A Boolean value indicating whether the app supports a game controller.
-- [GCRequiresControllerUserInteraction](information-property-list/gcrequirescontrolleruserinteraction.md)
+- [GCRequiresControllerUserInteraction](./gcrequirescontrolleruserinteraction.md)
   The platforms for which your app requires or you recommend a game controller.
-- [GCSupportsMultipleMicroGamepads](information-property-list/gcsupportsmultiplemicrogamepads.md)
+- [GCSupportsMultipleMicroGamepads](./gcsupportsmultiplemicrogamepads.md)
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
-- [LSSupportsGameMode](information-property-list/lssupportsgamemode.md)
+- [LSSupportsGameMode](./lssupportsgamemode.md)
   A Boolean value indicating whether the app supports Game Mode.
-- [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
+- [GCSupportsGameMode](./gcsupportsgamemode.md)
   A Boolean value indicating whether the app supports game mode.
-- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
+- [GKShowChallengeBanners](./gkshowchallengebanners.md)
   A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 

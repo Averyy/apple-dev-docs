@@ -1,7 +1,8 @@
 # didDisconnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a racing wheel accessory disconnects from the device.
 
@@ -14,6 +15,8 @@ The identifier of the message that posts after a racing wheel accessory disconne
 ```swift
 static var didDisconnect: NotificationCenter.BaseMessageIdentifier<GCRacingWheel.DidDisconnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCRacingWheel.DidDisconnectMessage>`.
 
 
 ---

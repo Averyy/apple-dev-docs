@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ctl_event_data {
     ...
 };
@@ -21,9 +21,9 @@ This structure is used for KEV_CTL_SUBCLASS kernel events.
 ## Topics
 
 ### Fields
-- [ctl_id](ctl_event_data/1809197-ctl_id.md)
+- [ctl_id](./ctl_event_data/api-1809197-ctl_id.md)
   The kernel control id.
-- [ctl_unit](ctl_event_data/1809200-ctl_unit.md)
+- [ctl_unit](./ctl_event_data/api-1809200-ctl_unit.md)
   The kernel control unit.
 
 

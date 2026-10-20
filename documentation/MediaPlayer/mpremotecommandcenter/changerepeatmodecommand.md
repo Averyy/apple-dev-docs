@@ -1,7 +1,8 @@
 # changeRepeatModeCommand
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command object for changing the repeat mode.
 
@@ -20,17 +21,22 @@ The command object for changing the repeat mode.
 var changeRepeatModeCommand: MPChangeRepeatModeCommand { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPChangeRepeatModeCommand * changeRepeatModeCommand;
+```
+
 #### Discussion
 
 Use the object in this property to register your app’s handler for changing the repeat mode for the playlist. In your handler, change the repeat mode to the new value. You can disable the command if your app does not support it.
 
 ## See Also
 
-- [var nextTrackCommand: MPRemoteCommand](mpremotecommandcenter/nexttrackcommand.md)
+### Navigating between tracks
+- [var nextTrackCommand: MPRemoteCommand](./nexttrackcommand.md)
   The command object for selecting the next track.
-- [var previousTrackCommand: MPRemoteCommand](mpremotecommandcenter/previoustrackcommand.md)
+- [var previousTrackCommand: MPRemoteCommand](./previoustrackcommand.md)
   The command object for selecting the previous track.
-- [var changeShuffleModeCommand: MPChangeShuffleModeCommand](mpremotecommandcenter/changeshufflemodecommand.md)
+- [var changeShuffleModeCommand: MPChangeShuffleModeCommand](./changeshufflemodecommand.md)
   The command object for changing the shuffle mode.
 
 

@@ -1,7 +1,8 @@
 # init(yaw:pitch:roll:)
 
 **Framework**: DockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the limit object.
 

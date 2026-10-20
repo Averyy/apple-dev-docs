@@ -1,7 +1,8 @@
 # init(player:templateItem:timeRange:existingItemsOrdering:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player looper that continuously plays the full duration of a player item while adhering to the specified ordering of existing items in the queue.
 
@@ -19,30 +20,35 @@ Creates a player looper that continuously plays the full duration of a player it
 init(player: AVQueuePlayer, templateItem itemToLoop: AVPlayerItem, timeRange loopRange: CMTimeRange, existingItemsOrdering itemOrdering: AVPlayerLooper.ItemOrdering)
 ```
 
+```objc
+- (instancetype) initWithPlayer:(AVQueuePlayer *) player templateItem:(AVPlayerItem *) itemToLoop timeRange:(CMTimeRange) loopRange existingItemsOrdering:(AVPlayerLooperItemOrdering) itemOrdering;
+```
+
 #### Discussion
 
 The player looper doesn’t use the player item you specify for playback, and instead uses it as a template to create at least three player item replicas that it uses for looping playback. Because the looper only uses the player item as a template, any changes that you make to it after initialization aren’t reflected in the looping playback.
 
-> ❗ **Important**:  Load the [`duration`](avpartialasyncproperty/duration.md) value of a player item’s asset before passing the item to the looper to prevent blocking the calling thread until the duration is known.
+> ❗ **Important**:  Load the [`duration`](../avpartialasyncproperty/duration.md) value of a player item’s asset before passing the item to the looper to prevent blocking the calling thread until the duration is known.
 
 ## Parameters
 
 - `player`: A queue player to control playback.
 - `itemToLoop`: A player item to loop.
-- `loopRange`: The player item time range to loop. Passing a value of [`invalid`](https://developer.apple.com/documentation/coremedia/cmtimerange/invalid) is equivalent to a time range of [0, player item’s duration].
+- `loopRange`: The player item time range to loop. Passing a value of [`invalid`](../../CoreMedia/cmtimerange/invalid.md) is equivalent to a time range of [0, player item’s duration].
 - `itemOrdering`: A value that indicates whether the looper inserts replica items before or after existing items in the specified queue player.
 
 ## Topics
 
 ### Item ordering
-- [AVPlayerLooper.ItemOrdering](avplayerlooper/itemordering.md)
+- [AVPlayerLooper.ItemOrdering](./itemordering.md)
   Constants that define the ordering of items in a player looper.
 
 ## See Also
 
-- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem)](avplayerlooper/init(player:templateitem:).md)
+### Creating a player looper
+- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem)](./init%28player,templateitem%29.md)
   Creates a player looper that continuously plays the full duration of a player item.
-- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](avplayerlooper/init(player:templateitem:timerange:).md)
+- [convenience init(player: AVQueuePlayer, templateItem: AVPlayerItem, timeRange: CMTimeRange)](./init%28player,templateitem,timerange%29.md)
   Creates a player looper that continuously plays the specified time range of a player item.
 
 

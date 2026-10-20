@@ -1,7 +1,8 @@
 # remoteMaxStreamsUnidirectional
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the maximum number of unidirectional streams advertised by peer that an application is allowed to create.
 
@@ -19,6 +20,8 @@ Get the maximum number of unidirectional streams advertised by peer that an appl
 ```swift
 final var remoteMaxStreamsUnidirectional: Int { get }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 #### Discussion
 

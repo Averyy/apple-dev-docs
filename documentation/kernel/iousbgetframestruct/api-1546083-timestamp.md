@@ -1,7 +1,8 @@
 # timeStamp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The timestamp of the frame.
 
@@ -10,13 +11,14 @@ The timestamp of the frame.
 
 ## Declaration
 
-```swift
+```c
 AbsoluteTime timeStamp;
 ```
 
 ## See Also
 
-- [frame](iousbgetframestruct/1546070-frame.md)
+### Getting the Properties
+- [frame](./api-1546070-frame.md)
   The frame indicator.
 
 

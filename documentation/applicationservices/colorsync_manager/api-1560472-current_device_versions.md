@@ -7,9 +7,9 @@ Specify the current versions of the data structure containing information on reg
 ## Topics
 
 ### Constants
-- [var cmDeviceInfoVersion1: Int](cmdeviceinfoversion1.md)
-- [var cmDeviceProfileInfoVersion1: Int](cmdeviceprofileinfoversion1.md)
-- [var cmDeviceProfileInfoVersion2: Int](cmdeviceprofileinfoversion2.md)
+- [var cmDeviceInfoVersion1: Int](../cmdeviceinfoversion1.md)
+- [var cmDeviceProfileInfoVersion1: Int](../cmdeviceprofileinfoversion1.md)
+- [var cmDeviceProfileInfoVersion2: Int](../cmdeviceprofileinfoversion2.md)
 
 
 ---

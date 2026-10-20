@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [PROCESSOR_GENERAL](1646403-anonymous/processor_general.md)
-- [PROCESSOR_UNDEFINED](1646403-anonymous/processor_undefined.md)
+- [PROCESSOR_GENERAL](./api-1646403-anonymous/processor_general.md)
+- [PROCESSOR_UNDEFINED](./api-1646403-anonymous/processor_undefined.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSLocale.LanguageDirection
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The directions that a language may take across a page of text.
 
@@ -20,43 +21,48 @@ The directions that a language may take across a page of text.
 enum LanguageDirection
 ```
 
+```c
+enum NSLocaleLanguageDirection : NSUInteger;
+```
+
 #### Overview
 
-Use these constants with the methods [`lineDirection(forLanguage:)`](nslocale/linedirection(forlanguage:).md) and [`characterDirection(forLanguage:)`](nslocale/characterdirection(forlanguage:).md).
+Use these constants with the methods [`lineDirection(forLanguage:)`](./linedirection%28forlanguage%29.md) and [`characterDirection(forLanguage:)`](./characterdirection%28forlanguage%29.md).
 
 ## Topics
 
 ### Constants
-- [NSLocale.LanguageDirection.unknown](nslocale/languagedirection/unknown.md)
+- [NSLocale.LanguageDirection.unknown](./languagedirection/unknown.md)
   The direction of the language is unknown.
-- [NSLocale.LanguageDirection.leftToRight](nslocale/languagedirection/lefttoright.md)
+- [NSLocale.LanguageDirection.leftToRight](./languagedirection/lefttoright.md)
   The language direction is from left to right.
-- [NSLocale.LanguageDirection.rightToLeft](nslocale/languagedirection/righttoleft.md)
+- [NSLocale.LanguageDirection.rightToLeft](./languagedirection/righttoleft.md)
   The language direction is from right to left.
-- [NSLocale.LanguageDirection.topToBottom](nslocale/languagedirection/toptobottom.md)
+- [NSLocale.LanguageDirection.topToBottom](./languagedirection/toptobottom.md)
   The language direction is from top to bottom.
-- [NSLocale.LanguageDirection.bottomToTop](nslocale/languagedirection/bottomtotop.md)
+- [NSLocale.LanguageDirection.bottomToTop](./languagedirection/bottomtotop.md)
   The language direction is from bottom to top.
 ### Initializers
-- [init?(rawValue: UInt)](nslocale/languagedirection/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./languagedirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func characterDirection(forLanguage: String) -> Locale.LanguageDirection](locale/characterdirection(forlanguage:).md)
+### Getting line and character direction for a language
+- [static func characterDirection(forLanguage: String) -> Locale.LanguageDirection](../locale/characterdirection%28forlanguage%29.md)
   Returns the character direction for a specified language code.
-- [static func lineDirection(forLanguage: String) -> Locale.LanguageDirection](locale/linedirection(forlanguage:).md)
+- [static func lineDirection(forLanguage: String) -> Locale.LanguageDirection](../locale/linedirection%28forlanguage%29.md)
   Returns the line direction for a specified language code.
-- [typealias LanguageDirection](locale/languagedirection.md)
+- [typealias LanguageDirection](../locale/languagedirection.md)
   An alias for the standard set of language directions.
 
 

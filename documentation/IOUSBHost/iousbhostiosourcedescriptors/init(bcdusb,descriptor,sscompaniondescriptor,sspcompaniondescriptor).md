@@ -1,7 +1,8 @@
 # init(bcdUSB:descriptor:ssCompanionDescriptor:sspCompanionDescriptor:)
 
 **Framework**: IOUSBHost  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new source descriptor structure.
 
@@ -28,7 +29,8 @@ The `ssCompanionDescriptor` and `sspCompanionDescriptor` descriptors may be nece
 
 ## See Also
 
-- [init()](iousbhostiosourcedescriptors/init.md)
+### Initializing the Structure
+- [init()](./init%28%29.md)
   Creates a new source descriptor structure.
 
 

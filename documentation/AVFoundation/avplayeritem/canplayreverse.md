@@ -1,7 +1,8 @@
 # canPlayReverse
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the item can play in reverse.
 
@@ -21,15 +22,20 @@ nonisolated
 var canPlayReverse: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canPlayReverse;
+```
+
 ## See Also
 
-- [var canPlayFastForward: Bool](avplayeritem/canplayfastforward.md)
+### Determining playback capabilities
+- [var canPlayFastForward: Bool](./canplayfastforward.md)
   A Boolean value that indicates whether the item can play at fast-forward rates.
-- [var canPlayFastReverse: Bool](avplayeritem/canplayfastreverse.md)
+- [var canPlayFastReverse: Bool](./canplayfastreverse.md)
   A Boolean value that indicates whether the item can be quickly reversed.
-- [var canPlaySlowForward: Bool](avplayeritem/canplayslowforward.md)
+- [var canPlaySlowForward: Bool](./canplayslowforward.md)
   A Boolean value that indicates whether the item can play slower than normal.
-- [var canPlaySlowReverse: Bool](avplayeritem/canplayslowreverse.md)
+- [var canPlaySlowReverse: Bool](./canplayslowreverse.md)
   A Boolean value that indicates whether the item can play slowly backward.
 
 

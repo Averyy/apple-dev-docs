@@ -1,7 +1,8 @@
 # MIDIThruConnectionSetParams(_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Updates a thru connection’s parameters.
 
@@ -18,6 +19,10 @@ Updates a thru connection’s parameters.
 func MIDIThruConnectionSetParams(_ connection: MIDIThruConnectionRef, _ inConnectionParams: CFData) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIThruConnectionSetParams(MIDIThruConnectionRef connection, CFDataRef inConnectionParams);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
@@ -25,17 +30,18 @@ An `OSStatus` result code.
 ## Parameters
 
 - `connection`: The connection to update.
-- `inConnectionParams`: The connection’s new parameters in a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata).
+- `inConnectionParams`: The connection’s new parameters in a [`CFData`](../CoreFoundation/cfdata.md).
 
 ## See Also
 
-- [struct MIDIThruConnectionParams](midithruconnectionparams.md)
+### Configuring Parameters
+- [struct MIDIThruConnectionParams](./midithruconnectionparams.md)
   A set of MIDI routings and transformations.
-- [func MIDIThruConnectionParamsSize(UnsafePointer<MIDIThruConnectionParams>) -> Int](midithruconnectionparamssize(_:).md)
+- [func MIDIThruConnectionParamsSize(UnsafePointer<MIDIThruConnectionParams>) -> Int](./midithruconnectionparamssize%28_%29.md)
   Returns the size of a MIDI thru connection parameters object.
-- [func MIDIThruConnectionParamsInitialize(UnsafeMutablePointer<MIDIThruConnectionParams>)](midithruconnectionparamsinitialize(_:).md)
+- [func MIDIThruConnectionParamsInitialize(UnsafeMutablePointer<MIDIThruConnectionParams>)](./midithruconnectionparamsinitialize%28_%29.md)
   Initializes a parameters object with its default values.
-- [func MIDIThruConnectionGetParams(MIDIThruConnectionRef, UnsafeMutablePointer<Unmanaged<CFData>>) -> OSStatus](midithruconnectiongetparams(_:_:).md)
+- [func MIDIThruConnectionGetParams(MIDIThruConnectionRef, UnsafeMutablePointer<Unmanaged<CFData>>) -> OSStatus](./midithruconnectiongetparams%28_,_%29.md)
   Returns the thru connection’s parameters.
 
 

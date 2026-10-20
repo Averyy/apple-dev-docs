@@ -1,6 +1,7 @@
 # Using Delegates to Customize Object Behavior
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Respond to events on behalf of a delegator.
 
@@ -12,7 +13,7 @@ You use delegates to interact with Cocoa objects that inform you of events in an
 
 Cocoa APIs often provide protocols that include delegate methods. When an event occurs—such as a user resizing a window—a class that’s a delegator will detect the event and call delegate methods on the class you specify as the delegate. Delegate methods can customize how an app responds to an event.
 
-The example below adopts the [`NSWindowDelegate`](https://developer.apple.com/documentation/appkit/nswindowdelegate) protocol and implements its [`window(_:willUseFullScreenContentSize:)`](https://developer.apple.com/documentation/appkit/nswindowdelegate/window(_:willusefullscreencontentsize:)) method:
+The example below adopts the [`NSWindowDelegate`](../AppKit/nswindowdelegate.md) protocol and implements its [`window(_:willUseFullScreenContentSize:)`](../AppKit/nswindowdelegate/window%28_,willusefullscreencontentsize%29.md) method:
 
 ```swift
 class MyDelegate: NSObject, NSWindowDelegate {
@@ -26,7 +27,7 @@ class MyDelegate: NSObject, NSWindowDelegate {
 
 The Cocoa delegation pattern doesn’t require that delegates are instantiated. If you don’t need to respond to events, you don’t need to create a delegate. Before you call a method on an object’s delegate, make sure that the delegate isn’t `nil`.
 
-The example below creates an [`NSWindow`](https://developer.apple.com/documentation/appkit/nswindow) and uses optional chaining to check that the window’s delegate exists before sending a message to the delegate.
+The example below creates an [`NSWindow`](../AppKit/nswindow.md) and uses optional chaining to check that the window’s delegate exists before sending a message to the delegate.
 
 ```swift
 let myWindow = NSWindow(
@@ -44,13 +45,14 @@ if let fullScreenSize = myWindow.delegate?.window(myWindow, willUseFullScreenCon
 
 ## See Also
 
-- [Using Key-Value Observing in Swift](using-key-value-observing-in-swift.md)
+### Common Patterns
+- [Using Key-Value Observing in Swift](./using-key-value-observing-in-swift.md)
   Notify objects about changes to the properties of other objects.
-- [Managing a Shared Resource Using a Singleton](managing-a-shared-resource-using-a-singleton.md)
+- [Managing a Shared Resource Using a Singleton](./managing-a-shared-resource-using-a-singleton.md)
   Provide access to a shared resource using a single, shared class instance.
-- [About Imported Cocoa Error Parameters](about-imported-cocoa-error-parameters.md)
+- [About Imported Cocoa Error Parameters](./about-imported-cocoa-error-parameters.md)
   Learn how Cocoa error parameters are converted to Swift throwing methods.
-- [Handling Cocoa Errors in Swift](handling-cocoa-errors-in-swift.md)
+- [Handling Cocoa Errors in Swift](./handling-cocoa-errors-in-swift.md)
   Throw and catch errors that use Cocoa’s error types.
 
 

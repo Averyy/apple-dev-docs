@@ -1,17 +1,22 @@
 # withSDPServiceRecordRef(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Method call to convert an IOBluetoothSDPServiceRecordRef into an IOBluetoothSDPServiceRecord *.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withSDPServiceRecordRef(_ sdpServiceRecordRef: IOBluetoothSDPServiceRecordRef!) -> Self!
+```
+
+```objc
++ (instancetype) withSDPServiceRecordRef:(IOBluetoothSDPServiceRecordRef) sdpServiceRecordRef;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(blendsOutputs:computesBitangent:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a blend-shape descriptor.
 

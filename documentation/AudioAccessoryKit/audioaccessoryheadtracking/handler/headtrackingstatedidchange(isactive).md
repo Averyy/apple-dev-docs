@@ -2,6 +2,7 @@
 
 **Framework**: AudioAccessoryKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the user-facing Head Tracking state for this accessory changes (e.g. via Settings or Control Center).

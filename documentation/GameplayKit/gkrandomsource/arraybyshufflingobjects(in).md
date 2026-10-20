@@ -1,7 +1,8 @@
 # arrayByShufflingObjects(in:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array whose contents are the same as those of the specified array, but in a random order determined by the random source.
 
@@ -19,13 +20,17 @@ Returns an array whose contents are the same as those of the specified array, bu
 func arrayByShufflingObjects(in array: [Any]) -> [Any]
 ```
 
+```objc
+- (NSArray *) arrayByShufflingObjectsInArray:(NSArray *) array;
+```
+
 #### Return Value
 
 An array whose contents have been randomly shuffled.
 
 #### Discussion
 
-Use this method with an instance of [`GKRandomSource`](gkrandomsource.md) (or of one of its subclasses) to randomly rearrange the contents of an array. For example, in a card game you might use this method to randomize an array of card objects.
+Use this method with an instance of [`GKRandomSource`](../gkrandomsource.md) (or of one of its subclasses) to randomly rearrange the contents of an array. For example, in a card game you might use this method to randomize an array of card objects.
 
 ## Parameters
 

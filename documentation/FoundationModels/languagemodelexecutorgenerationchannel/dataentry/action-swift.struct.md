@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.DataEntry.Action
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An operation that can be performed on a data entry.
 
@@ -21,18 +22,18 @@ struct Action
 
 #### Overview
 
-`Action` is an enum-like struct; construct one with a leading-dot factory such as [`update(contentType:content:metadata:)`](languagemodelexecutorgenerationchannel/dataentry/action-swift.struct/update(contenttype:content:metadata:).md).
+`Action` is an enum-like struct; construct one with a leading-dot factory such as [`update(contentType:content:metadata:)`](./action-swift.struct/update%28contenttype,content,metadata%29.md).
 
 ## Topics
 
 ### Type Methods
-- [static func update(contentType: UTType, content: Data, metadata: GeneratedContent) -> LanguageModelExecutorGenerationChannel.DataEntry.Action](languagemodelexecutorgenerationchannel/dataentry/action-swift.struct/update(contenttype:content:metadata:).md)
+- [static func update(contentType: UTType, content: Data, metadata: GeneratedContent) -> LanguageModelExecutorGenerationChannel.DataEntry.Action](./action-swift.struct/update%28contenttype,content,metadata%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

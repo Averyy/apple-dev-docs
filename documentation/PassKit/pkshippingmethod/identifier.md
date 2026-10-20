@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the shipping method, used by the app.
 
@@ -19,19 +20,24 @@ A unique identifier for the shipping method, used by the app.
 var identifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * identifier;
+```
+
 #### Discussion
 
 This property isn’t user visible.
 
-Use this property of the shipping method passed to your delegate in the [`paymentAuthorizationViewController(_:didSelect:completion:)`](pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller(_:didselect:completion:)-9otrj.md) method to identify the chosen shipping method.
+Use this property of the shipping method passed to your delegate in the [`paymentAuthorizationViewController(_:didSelect:completion:)`](../pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller%28_,didselect,completion%29-9otrj.md) method to identify the chosen shipping method.
 
 ## See Also
 
-- [var detail: String?](pkshippingmethod/detail.md)
+### Working with shipping methods
+- [var detail: String?](./detail.md)
   A user-readable description of the shipping method.
-- [var dateComponentsRange: PKDateComponentsRange?](pkshippingmethod/datecomponentsrange.md)
+- [var dateComponentsRange: PKDateComponentsRange?](./datecomponentsrange.md)
   An expected range of delivery or shipping dates for a package, or the time range when an item is available for pickup.
-- [class PKDateComponentsRange](pkdatecomponentsrange.md)
+- [class PKDateComponentsRange](../pkdatecomponentsrange.md)
   An object that specifies the start and end dates for a range of time.
 
 

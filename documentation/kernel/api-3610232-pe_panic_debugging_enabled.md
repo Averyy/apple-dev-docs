@@ -1,14 +1,15 @@
 # PE_panic_debugging_enabled
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t PE_panic_debugging_enabled(void);
 ```
 

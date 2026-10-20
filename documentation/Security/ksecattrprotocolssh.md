@@ -1,7 +1,8 @@
 # kSecAttrProtocolSSH
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 SSH protocol.
 
@@ -18,6 +19,10 @@ SSH protocol.
 
 ```swift
 let kSecAttrProtocolSSH: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolSSH;
 ```
 
 

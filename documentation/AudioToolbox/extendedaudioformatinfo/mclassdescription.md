@@ -1,17 +1,18 @@
 # mClassDescription
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A structure that describes an audio codec.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ A structure that describes an audio codec.
 var mClassDescription: AudioClassDescription
 ```
 
+```c
+AudioClassDescription mClassDescription;
+```
+
 #### Discussion
 
-An [`AudioClassDescription`](https://developer.apple.com/documentation/coreaudiotypes/audioclassdescription) struct that specifies the codec to be used.
+An [`AudioClassDescription`](../../CoreAudioTypes/audioclassdescription.md) struct that specifies the codec to be used.
 
 
 ---

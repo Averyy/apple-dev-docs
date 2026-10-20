@@ -1,7 +1,8 @@
 # UNNotificationDefaultActionIdentifier
 
 **Framework**: User Notifications  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An action that indicates the user opened the app from the notification interface.
 
@@ -19,19 +20,24 @@ An action that indicates the user opened the app from the notification interface
 let UNNotificationDefaultActionIdentifier: String
 ```
 
+```c
+extern NSString * const UNNotificationDefaultActionIdentifier;
+```
+
 #### Discussion
 
-The delivery of this action doesn’t require any special configuration of notification categories. Use the [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](unusernotificationcenterdelegate/usernotificationcenter(_:didreceive:withcompletionhandler:).md) method of your delegate object to receive this action.
+The delivery of this action doesn’t require any special configuration of notification categories. Use the [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](./unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method of your delegate object to receive this action.
 
 ## See Also
 
-- [var actionIdentifier: String](unnotificationresponse/actionidentifier.md)
+### Getting the Response Information
+- [var actionIdentifier: String](./unnotificationresponse/actionidentifier.md)
   The identifier string of the action that the user selected.
-- [var notification: UNNotification](unnotificationresponse/notification.md)
+- [var notification: UNNotification](./unnotificationresponse/notification.md)
   The notification to which the user responded.
-- [var targetScene: UIScene?](unnotificationresponse/targetscene.md)
+- [var targetScene: UIScene?](./unnotificationresponse/targetscene.md)
   The scene where the system reflects the user’s response to a notification.
-- [let UNNotificationDismissActionIdentifier: String](unnotificationdismissactionidentifier.md)
+- [let UNNotificationDismissActionIdentifier: String](./unnotificationdismissactionidentifier.md)
   The action that indicates the user explicitly dismissed the notification interface.
 
 

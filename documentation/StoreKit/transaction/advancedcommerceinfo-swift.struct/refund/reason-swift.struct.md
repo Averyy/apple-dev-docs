@@ -1,7 +1,8 @@
 # Transaction.AdvancedCommerceInfo.Refund.Reason
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The reason for the refund.
 
@@ -23,30 +24,31 @@ struct Reason
 ## Topics
 
 ### Type Properties
-- [static let legal: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/legal.md)
+- [static let legal: Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.struct/legal.md)
   The customer requested a refund based on a legal reason.
-- [static let modifyItems: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/modifyitems.md)
-- [static let other: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/other.md)
+- [static let modifyItems: Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.struct/modifyitems.md)
+- [static let other: Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.struct/other.md)
   The customer requested a refund for other reasons.
-- [static let unfulfilled: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unfulfilled.md)
+- [static let unfulfilled: Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.struct/unfulfilled.md)
   The customer had issues with receiving or using the Apple In-App Purchase.
-- [static let unintended: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unintended.md)
+- [static let unintended: Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.struct/unintended.md)
   The customer didn’t intend to make the Apple In-App Purchase.
-- [static let unsatisfied: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct/unsatisfied.md)
+- [static let unsatisfied: Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.struct/unsatisfied.md)
   The customer wasn’t satisfied with the Apple In-App Purchase.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transaction.AdvancedCommerceInfo.Refund.RefundType](transaction/advancedcommerceinfo-swift.struct/refund/refundtype.md)
+### Structures
+- [Transaction.AdvancedCommerceInfo.Refund.RefundType](./refundtype.md)
   The type of refund.
 
 

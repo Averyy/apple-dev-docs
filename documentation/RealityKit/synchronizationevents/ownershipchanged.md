@@ -1,7 +1,8 @@
 # SynchronizationEvents.OwnershipChanged
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The event raised when ownership of an entity changes.
 
@@ -11,7 +12,7 @@ The event raised when ownership of an entity changes.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,21 +23,22 @@ struct OwnershipChanged
 ## Topics
 
 ### Getting the involved parties
-- [let entity: Entity](synchronizationevents/ownershipchanged/entity.md)
+- [let entity: Entity](./ownershipchanged/entity.md)
   The entity for which ownership is changed.
-- [let newOwner: (any SynchronizationPeerID)?](synchronizationevents/ownershipchanged/newowner.md)
+- [let newOwner: (any SynchronizationPeerID)?](./ownershipchanged/newowner.md)
   The new owner of the entity.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SynchronizationEvents.OwnershipRequest](synchronizationevents/ownershiprequest.md)
+### Detecting ownership updates
+- [SynchronizationEvents.OwnershipRequest](./ownershiprequest.md)
   The event raised when a network peer wants to gain ownership of an entity.
 
 

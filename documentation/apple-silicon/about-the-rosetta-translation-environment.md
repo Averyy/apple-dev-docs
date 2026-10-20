@@ -1,6 +1,7 @@
 # About the Rosetta translation environment
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Article
 
 Learn how Rosetta translates executables, and understand what Rosetta can’t translate.
 
@@ -14,24 +15,24 @@ To someone using a Mac, Rosetta is mostly transparent. If a macOS binary contain
 
 The system prefers to execute a Mac app’s `arm64` instructions on Apple silicon. If a binary includes both `arm64` and `x86_64` instructions, a person can tell the system to launch the app using Rosetta translation from the app’s Get Info window in the Finder. For example, someone might enable Rosetta translation to allow the app to run older plug-ins that don’t yet support the `arm64` architecture
 
-![A screen that highlights the Open using Rosetta option in the Get Info window for Mail.](/images/com.apple.Apple-Silicon/about-the-rosetta-translation-environment-1@2x.png)
+![A screen that highlights the Open using Rosetta option in the Get Info window for Mail.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/about-the-rosetta-translation-environment-1@2x.png)
 
-> ❗ **Important**: The system prevents you from mixing `arm64` code and `x86_64` code in the same process. Rosetta translation applies to an entire process, including all code modules that the process loads dynamically. For information on how to determine when your app is running under Rosetta translation, see [`Determine whether your app is running as a translated binary`](about-the-rosetta-translation-environment#Determine-whether-your-app-is-running-as-a-translated-binary.md).
+> ❗ **Important**: The system prevents you from mixing `arm64` code and `x86_64` code in the same process. Rosetta translation applies to an entire process, including all code modules that the process loads dynamically. For information on how to determine when your app is running under Rosetta translation, see [Determine whether your app is running as a translated binary](./about-the-rosetta-translation-environment.md#Determine-whether-your-app-is-running-as-a-translated-binary).
 
-##### Learn What Rosetta Cant Translate
+##### Learn what Rosetta can’t translate
 
 Rosetta can translate most Intel-based apps, including apps that contain just-in-time (JIT) compilers. However, Rosetta doesn’t translate the following executables:
 
 - Kernel extensions
 - Virtual Machine apps that virtualize x86_64 computer platforms
 
-Rosetta translates all `x86_64` instructions, including ones from the AVX and AVX2  instruction set, but it doesn’t support the execution of AVX512 vector instructions. If you include these unsupported instructions in your code, run them only after verifying that they’re available. For example, to determine if AVX512 vector instructions are available, use the [`sysctlbyname`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname) function to check the `hw.optional.avx512f` attribute.
+Rosetta translates all `x86_64` instructions, including ones from the AVX and AVX2  instruction set, but it doesn’t support the execution of AVX512 vector instructions. If you include these unsupported instructions in your code, run them only after verifying that they’re available. For example, to determine if AVX512 vector instructions are available, use the [`sysctlbyname`](../kernel/api-1387446-sysctlbyname.md) function to check the `hw.optional.avx512f` attribute.
 
-##### Determine Whether Your App Is Running As a Translated Binary
+##### Determine whether your app is running as a translated binary
 
 On Apple silicon, a universal binary may run either natively or as a translated binary. The system runs the native version whenever possible, but the user might opt to run the code using Rosetta to support older plug-ins.
 
-To programmatically determine when a process is running under Rosetta translation, call the [`sysctlbyname`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname) function with the `sysctl.proc_translated` flag, as shown in the following example.
+To programmatically determine when a process is running under Rosetta translation, call the [`sysctlbyname`](../kernel/api-1387446-sysctlbyname.md) function with the `sysctl.proc_translated` flag, as shown in the following example.
 
 The example function returns the value `0` for a native process, `1` for a translated process, and `-1` when an error occurs.
 

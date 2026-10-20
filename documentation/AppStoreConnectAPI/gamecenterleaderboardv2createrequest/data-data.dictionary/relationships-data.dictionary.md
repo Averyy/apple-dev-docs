@@ -1,7 +1,8 @@
 # GameCenterLeaderboardV2CreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those you can operate on.
 
@@ -10,7 +11,7 @@ The relationships you include in the request and those you can operate on.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardV2CreateRequest.Data.Relationships
 ```
 
@@ -24,13 +25,13 @@ object GameCenterLeaderboardV2CreateRequest.Data.Relationships
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterDetail](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterDetail](./relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
   The data that describes the Game Center detail of the Game Center leaderboard.
-- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterGroup](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterGroup](./relationships-data.dictionary/gamecentergroup-data.dictionary.md)
   The data that describes the Game Center group of the Game Center leaderboard.
-- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterLeaderboardSets](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary.md)
+- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.GameCenterLeaderboardSets](./relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary.md)
   The data that describes the Game Center leaderboard sets of the Game Center leaderboard.
-- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.Versions](gamecenterleaderboardv2createrequest/data-data.dictionary/relationships-data.dictionary/versions-data.dictionary.md)
+- [object GameCenterLeaderboardV2CreateRequest.Data.Relationships.Versions](./relationships-data.dictionary/versions-data.dictionary.md)
   The data that describes the versions of the Game Center leaderboard.
 
 ## Properties
@@ -42,7 +43,8 @@ object GameCenterLeaderboardV2CreateRequest.Data.Relationships
 
 ## See Also
 
-- [object GameCenterLeaderboardV2CreateRequest.Data.Attributes](gamecenterleaderboardv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardV2CreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The request body you use to create a Game Center leaderboard create request.
 
 

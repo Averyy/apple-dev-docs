@@ -1,7 +1,8 @@
 # kAXIncrementPageSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The increment area in the scroll track of a scroll bar.
 
@@ -12,6 +13,10 @@ The increment area in the scroll track of a scroll bar.
 
 ```swift
 var kAXIncrementPageSubrole: String { get }
+```
+
+```c
+#define kAXIncrementPageSubrole
 ```
 
 

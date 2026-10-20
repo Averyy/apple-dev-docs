@@ -1,7 +1,8 @@
 # init(collectionViewIndexPath:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.11+
@@ -10,6 +11,10 @@
 
 ```swift
 convenience init(collectionViewIndexPath indexPath: IndexPath)
+```
+
+```objc
++ (instancetype) setWithCollectionViewIndexPath:(NSIndexPath *) indexPath;
 ```
 
 

@@ -1,7 +1,8 @@
 # withUnsafeBytes(for:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -19,6 +20,8 @@
 ```swift
 func withUnsafeBytes<R>(for attachment: borrowing Attachment<ArraySlice<Element>>, _ body: (UnsafeRawBufferPointer) throws -> R) throws -> R
 ```
+
+Available when `Element` is `UInt8`.
 
 
 ---

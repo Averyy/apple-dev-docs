@@ -1,7 +1,8 @@
 # SetFirmwarePasswordResponse.SetFirmwarePassword
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes the result of a command to change the firmware password.
 
@@ -10,7 +11,7 @@ A dictionary that describes the result of a command to change the firmware passw
 
 ## Declaration
 
-```swift
+```
 object SetFirmwarePasswordResponse.SetFirmwarePassword
 ```
 
@@ -20,7 +21,8 @@ object SetFirmwarePasswordResponse.SetFirmwarePassword
 
 ## See Also
 
-- [object SetFirmwarePasswordResponse.ErrorChainItem](setfirmwarepasswordresponse/errorchainitem.md)
+### Objects
+- [object SetFirmwarePasswordResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
 
 

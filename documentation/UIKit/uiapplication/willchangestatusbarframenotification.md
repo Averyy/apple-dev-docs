@@ -1,14 +1,17 @@
 # willChangeStatusBarFrameNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the app is about to change the frame of the status bar.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 13.0
+- iPadOS 2.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`viewWillTransition(to:with:)`](../uicontentcontainer/viewwilltransition%28to,with%29.md) instead.
 
 ## Declaration
 
@@ -17,17 +20,22 @@ nonisolated
 class let willChangeStatusBarFrameNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIApplicationWillChangeStatusBarFrameNotification;
+```
+
 #### Discussion
 
-The `userInfo` dictionary contains an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that encapsulates a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) structure expressing the location and size of the new status bar frame. Use [`statusBarFrameUserInfoKey`](uiapplication/statusbarframeuserinfokey.md) to access this value.
+The `userInfo` dictionary contains an [`NSValue`](../../Foundation/nsvalue.md) object that encapsulates a [`CGRect`](../../CoreFoundation/cgrect.md) structure expressing the location and size of the new status bar frame. Use [`statusBarFrameUserInfoKey`](./statusbarframeuserinfokey.md) to access this value.
 
 ## See Also
 
-- [class let didChangeStatusBarFrameNotification: NSNotification.Name](uiapplication/didchangestatusbarframenotification.md)
+### Deprecated notifications
+- [class let didChangeStatusBarFrameNotification: NSNotification.Name](./didchangestatusbarframenotification.md)
   Posted when the frame of the status bar changes.
-- [class let willChangeStatusBarOrientationNotification: NSNotification.Name](uiapplication/willchangestatusbarorientationnotification.md)
+- [class let willChangeStatusBarOrientationNotification: NSNotification.Name](./willchangestatusbarorientationnotification.md)
   Posted when the app is about to change the orientation of its interface.
-- [class let didChangeStatusBarOrientationNotification: NSNotification.Name](uiapplication/didchangestatusbarorientationnotification.md)
+- [class let didChangeStatusBarOrientationNotification: NSNotification.Name](./didchangestatusbarorientationnotification.md)
   Posted when the orientation of the app’s user interface changes.
 
 

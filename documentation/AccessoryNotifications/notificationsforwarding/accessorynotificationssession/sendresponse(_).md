@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Notifications  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends a notification response from the accessory to the system.
@@ -17,11 +18,11 @@ func sendResponse(_ response: NotificationResponse) async throws
 
 ## Mentions
 
-- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+- [Responding to forwarded notifications](../../responding-to-forwarded-notifications.md)
 
 #### Discussion
 
-After receiving a message through [`messageHandler(_:)`](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md), parse the accessory’s response data and create a [`NotificationResponse`](notificationresponse.md) instance. Call this method to deliver the response to the system for handling.
+After receiving a message through [`messageHandler(_:)`](../accessorynotificationshandler/messagehandler%28_%29.md), parse the accessory’s response data and create a [`NotificationResponse`](../../notificationresponse.md) instance. Call this method to deliver the response to the system for handling.
 
 > **Note**: The response data arrives decrypted in `messageHandler(_:)`. Your extension needs to parse the data according to the format your accessory uses and then extract the notification identifiers and action details.
 

@@ -1,7 +1,8 @@
 # identificationHint
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A hint making it easier for the user to identify the payment method among others of similar name or type, such as the last several digits of a credit card number
 
@@ -11,7 +12,7 @@ A hint making it easier for the user to identify the payment method among others
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var identificationHint: String? { get }
 
 ## See Also
 
-- [var paymentType: IntentPaymentMethod.PaymentType](intentpaymentmethod/paymenttype-swift.property.md)
+### Getting the payment details
+- [var paymentType: IntentPaymentMethod.PaymentType](./paymenttype-swift.property.md)
   The kind of payment method, such as a credit card or bank account
-- [var name: String?](intentpaymentmethod/name.md)
+- [var name: String?](./name.md)
   The user-visible name of the payment method
-- [var icon: DisplayRepresentation.Image?](intentpaymentmethod/icon.md)
+- [var icon: DisplayRepresentation.Image?](./icon.md)
   The icon or image representing this payment method
-- [IntentPaymentMethod.PaymentType](intentpaymentmethod/paymenttype-swift.enum.md)
+- [IntentPaymentMethod.PaymentType](./paymenttype-swift.enum.md)
   Constants that describe the available payment options, such as credit cards or bank accounts.
 
 

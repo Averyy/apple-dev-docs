@@ -1,7 +1,8 @@
 # velocity
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI velocity.
 
@@ -19,13 +20,18 @@ The MIDI velocity.
 var velocity: UInt32 { get set }
 ```
 
+```objc
+@property (readwrite) UInt32 velocity;
+```
+
 ## See Also
 
-- [var channel: UInt32](avmidinoteevent/channel.md)
+### Configuring a MIDI note event
+- [var channel: UInt32](./channel.md)
   The MIDI channel.
-- [var key: UInt32](avmidinoteevent/key.md)
+- [var key: UInt32](./key.md)
   The MIDI key number.
-- [var duration: AVMusicTimeStamp](avmidinoteevent/duration.md)
+- [var duration: AVMusicTimeStamp](./duration.md)
   The duration for the note, in beats.
 
 

@@ -1,7 +1,8 @@
 # kIOBundleIdentifierKey
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kIOBundleIdentifierKey: String { get }
+```
+
+```c
+#define kIOBundleIdentifierKey
 ```
 
 

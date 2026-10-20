@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-opt1_3.html
 
 # Optimizing OPT Model
 
-**
-
-- [.md](../_sources/source/opt-opt1_3.md)
-- **
-
-.pdf
-
-**
-
-# Optimizing OPT Model
-
- Table of contents 
-
-## Contents
-
-# Optimizing OPT Model
-
 In this tutorial, we will explore how we can use Core ML Tools APIs
 for compressing an [OPT-1.3B](https://huggingface.co/docs/transformers/en/model_doc/opt) model.
 `OPT-1.3B` is a decoder-only pretrained transformer model, with 1.3 billion parameters, which
@@ -96,7 +79,7 @@ Let’s look at the model size vs accuracy trade-off for these different configu
 | 4 bits per channel | 0.66 | 31.51 | 31.91 | 38.78 |
 | 4 bits per block, block size 1024 | 0.668 | 23.12 | 22.63 | 41.39 |
 | 4 bits per block, block size 32 | 0.747 | 17.02 | 15.28 | 45.16 |
-| 4 bits per block, block size 16 | 0.829 | 16.78 | 14.9 | 45.26 |
+| **4 bits per block, block size 16** | **0.829** | **16.78** | **14.9** | 45.26 |
 | 4 bits per block, block size 8 | 0.993 | 16.55 | 14.83 | 45.60 |
 | 4 bits per block, block size 4 | 1.32 | 16.33 | 14.64 | 45.63 |
 
@@ -232,14 +215,14 @@ matrices.
 
 As before, let us look at the model size vs accuracy trade-off for these different configurations and algorithms:
 
-| Config | Model Size (GB) | c4 Perplexity (PostTrainingPalettizer) | c4 Perplexity (SKMPalettizer) |
+| Config | Model Size (GB) | c4 Perplexity (`PostTrainingPalettizer`) | c4 Perplexity (`SKMPalettizer`) |
 | --- | --- | --- | --- |
 | Uncompressed | 2.63 | 16.07 | 16.07 |
 | 4 bits per tensor | 0.819 | 21.57 | 17.02 |
 | 4 bits per grouped channel, group size 8 | 0.821 | 17.80 | 16.58 |
-| 4 bits per grouped channel, group size 4 | 0.823 | 17.41 | 16.51 |
+| *4 bits per grouped channel, group size 4* | *0.823* | 17.41 | *16.51* |
 | 4 bits per grouped channel, group size 2 | 0.827 | 17.34 | 16.47 |
-| 4 bits per channel | 0.834 | 17.07 | 16.41 |
+| **4 bits per channel** | **0.834** | 17.07 | **16.41** |
 | 3 bits per channel | 0.676 | 93.35 | 18.24 |
 | 2 bits per channel | 0.521 | 6704 | 456 |
 
@@ -259,7 +242,7 @@ data free algorithm.
 
 #### Effect of per channel scales
 
-| Config | Model Size (GB) | c4 Perplexity (PostTrainingPalettizer) | c4 Perplexity Perplexity (SKMPalettizer) |
+| Config | Model Size (GB) | c4 Perplexity (`PostTrainingPalettizer`) | c4 Perplexity Perplexity (`SKMPalettizer`) |
 | --- | --- | --- | --- |
 | Uncompressed | 2.63 | 16.07 | 16.07 |
 | 4 bits per tensor | 0.820 | 18.71 | 16.78 |
@@ -290,7 +273,7 @@ Models compressed with `per grouped channel` palettization run efficiently on NE
 | Uncompressed | 92.15 | 1x |
 | 4 bits per tensor | 14.76 | 6.24x |
 | 4 bits per grouped channel, group size 8 | 15.49 | 5.95x |
-| 4 bits per grouped channel, group size 4 | 17.07 | 5.4x |
+| *4 bits per grouped channel, group size 4* | *17.07* | *5.4x* |
 | 4 bits per grouped channel, group size 2 | 30.72 | 3x |
 | 4 bits per channel | 59.11 | 1.6x |
 
@@ -339,5 +322,3 @@ are often weight memory bound, and thus reducing the model size correlates with
 reduction in model runtime latency. Model accuracy can be traded-off with model size
 and runtime latency by using higher granularity of compression and this often produces
 good quality models which run fast.
-
-** Contents

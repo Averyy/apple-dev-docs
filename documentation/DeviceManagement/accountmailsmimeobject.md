@@ -1,7 +1,8 @@
 # AccountMailSMIMEObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings for S/MIME.
 
@@ -13,16 +14,16 @@ Settings for S/MIME.
 
 ## Declaration
 
-```swift
+```
 object AccountMailSMIMEObject
 ```
 
 ## Topics
 
 ### Objects
-- [object AccountMailSMIME_EncryptionObject](accountmailsmime_encryptionobject.md)
+- [object AccountMailSMIME_EncryptionObject](./accountmailsmime_encryptionobject.md)
   Settings for S/MIME encryption.
-- [object AccountMailSMIME_SigningObject](accountmailsmime_signingobject.md)
+- [object AccountMailSMIME_SigningObject](./accountmailsmime_signingobject.md)
   Settings for S/MIME signing.
 
 ## Properties
@@ -32,9 +33,10 @@ object AccountMailSMIMEObject
 
 ## See Also
 
-- [object AccountMailIncomingServerObject](accountmailincomingserverobject.md)
+### Objects
+- [object AccountMailIncomingServerObject](./accountmailincomingserverobject.md)
   The settings for the incoming mail server for this account.
-- [object AccountMailOutgoingServerObject](accountmailoutgoingserverobject.md)
+- [object AccountMailOutgoingServerObject](./accountmailoutgoingserverobject.md)
   The settings for the outgoing mail server for this account.
 
 

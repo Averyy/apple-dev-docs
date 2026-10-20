@@ -1,14 +1,15 @@
 # kIOMemoryPurgeableVolatileGroup4
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMemoryPurgeableVolatileGroup4 = VM_VOLATILE_GROUP_4
 ```
 

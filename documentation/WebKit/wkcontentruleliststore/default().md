@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default content rule list store.
 
@@ -18,6 +19,10 @@ Returns the default content rule list store.
 class func `default`() -> Self!
 ```
 
+```objc
++ (instancetype) defaultStore;
+```
+
 #### Return Value
 
 The default rule list store.
@@ -28,7 +33,8 @@ The default store contains the rules that your app created specifically for the 
 
 ## See Also
 
-- [convenience init!(url: URL!)](wkcontentruleliststore/init(url:)-dile.md)
+### Creating a Content Rule List Store
+- [convenience init!(url: URL!)](./init%28url%29-dile.md)
   Creates a new content rule list store in the specified directory.
 
 

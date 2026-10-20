@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -20,9 +21,10 @@ var pixelBuffer: CVReadOnlyPixelBuffer { get }
 
 ## See Also
 
-- [var pixelFormat: OSType](opticalflowobservation/pixelformat.md)
+### Inspecting an observation
+- [var pixelFormat: OSType](./pixelformat.md)
   The four-character code that identifies the pixel format.
-- [var size: CGSize](opticalflowobservation/size.md)
+- [var size: CGSize](./size.md)
   The size of the observation image.
 
 

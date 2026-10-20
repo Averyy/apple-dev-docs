@@ -1,18 +1,19 @@
 # CFPropertyListFormat.openStepFormat
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 OpenStep format (use of this format is discouraged).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ OpenStep format (use of this format is discouraged).
 case openStepFormat
 ```
 
+```c
+kCFPropertyListOpenStepFormat
+```
+
 ## See Also
 
-- [CFPropertyListFormat.xmlFormat_v1_0](cfpropertylistformat/xmlformat_v1_0.md)
+### Constants
+- [CFPropertyListFormat.xmlFormat_v1_0](./xmlformat_v1_0.md)
   XML format version 1.0.
-- [CFPropertyListFormat.binaryFormat_v1_0](cfpropertylistformat/binaryformat_v1_0.md)
+- [CFPropertyListFormat.binaryFormat_v1_0](./binaryformat_v1_0.md)
   Binary format version 1.0.
 
 

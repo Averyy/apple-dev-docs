@@ -1,6 +1,7 @@
 # Writing ARMv6 code for iOS
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Create ARMv6 assembly language instructions that adhere to the application binary interface (ABI) that iOS supports.
 
@@ -15,9 +16,9 @@ The ARMv6 specification defines the calling conventions for passing arguments an
 
 > **Note**: Apple defines its own procedural programming interfaces for passing arguments to functions. Object-oriented languages may use different rules for their own method calls. For example, the conventions for C++ virtual functions are typically different than the conventions for C functions.
 
-The Procedure Call Standard for the ARM Architecture (AAPCS) is available at [`https://developer.arm.com`](https://developer.apple.comhttps://developer.arm.com).
+The Procedure Call Standard for the ARM Architecture (AAPCS) is available at [https://developer.arm.com](https://developer.arm.com).
 
-##### Preserve Specific Registers in Armv6
+##### Preserve specific registers in ARMv6
 
 The following table lists the ARM architecture registers and their volatility in procedure calls:
 
@@ -44,7 +45,7 @@ Consider the following additional behaviors with regard to register usage:
 - Some ARM environments refer to R11 with the mnemonic FP. In iOS, R11 is a general-purpose, nonvolatile register. To avoid confusion, iOS doesn’t use the term FP.
 - Don’t access the VFP registers from Thumb mode in ARMv6. To access the VFP registers, run your code in ARM mode. In iOS, you can switch between ARM and Thumb mode only at function boundaries.
 
-##### Handle Data Types and Data Alignment Properly
+##### Handle data types and data alignment properly
 
 The following table lists the ANSI C scalar data types, their sizes, and their natural alignments in the ARMv6 environment. The natural alignment represents the default alignment for values of that type.
 
@@ -70,7 +71,7 @@ The ARMv6 environment uses little-endian byte ordering to store numeric and poin
 
 As standalone arguments, scalar data types use their natural alignment. When part of a composite data type (array, structure, or union), the system chooses the member with the largest alignment value and uses that value for the overall type alignment. An array assumes the same alignment as its elements. The overall size of a composite data type is a multiple of its alignment value, which might require extra padding to accomplish.
 
-##### Configure Stack Frames Using Correct Conventions
+##### Configure stack frames using correct conventions
 
 In iOS, all subroutine call and return sequences must work in both the ARM and Thumb states. Specifically, you must use the appropriate `BLX` and `BX` instructions, and not the `MOV` instruction, for all calls to function pointers. The main difference between the ARM and Thumb instruction sets is how you set up the stacks and parameter lists.
 
@@ -85,12 +86,12 @@ In the ARMv6 environment, the stack frame size is not fixed and the stack pointe
 - The *parameter area* stores the arguments, or space for the arguments, that the caller passes to the called function. This area resides in the caller’s stack frame. The type of argument, and the availability of registers, defines whether the argument resides on the stack or in registers.
 - The *saved link register* contains the address of the caller’s next instruction.
 - The *saved frame pointer* (optional) contains the base address of the caller’s stack frame.
-- The *saved registers area* contains the values of registers that the callee must restore before it returns. For more information, see [`Preserve specific registers in ARMv6`](writing-armv6-code-for-ios#Preserve-specific-registers-in-ARMv6.md).
+- The *saved registers area* contains the values of registers that the callee must restore before it returns. For more information, see [Preserve specific registers in ARMv6](./writing-armv6-code-for-ios.md#Preserve-specific-registers-in-ARMv6).
 - The *local storage area* contains each subroutine’s local variables.
 
-![An illustration of the ARM stack, before and after a function call.](/images/com.apple.Xcode/writing-armv6-code-for-ios-1@2x.png)
+![An illustration of the ARM stack, before and after a function call.](https://developer.apple.com/tutorials/images/com.apple.Xcode/writing-armv6-code-for-ios-1@2x.png)
 
-##### Create the Prolog and Epilog for a Function
+##### Create the prolog and epilog for a function
 
 When a function calls a subroutine, the subroutine must allocate its own stack frame. It accomplishes this task using a prolog, which is a section of code the compiler places before the body of the function. The compiler places an epilog at the end of the subroutine to restore the process to its prior state.
 
@@ -99,7 +100,7 @@ The prolog performs the following tasks:
 1. It pushes the value of the link register (LR) onto the stack.
 2. It pushes the value of the frame pointer (R7) onto the stack.
 3. It sets the frame pointer (R7) to the value of the stack pointer (SP). (This step gives the debugger a way to find previous stack frames.)
-4. It pushes appropriate register values onto the stack to preserve them. For more information, see [`Preserve specific registers in ARMv6`](writing-armv6-code-for-ios#Preserve-specific-registers-in-ARMv6.md).
+4. It pushes appropriate register values onto the stack to preserve them. For more information, see [Preserve specific registers in ARMv6](./writing-armv6-code-for-ios.md#Preserve-specific-registers-in-ARMv6).
 5. It allocates space for local storage in the stack frame.
 
 The epilog performs the following tasks:
@@ -157,21 +158,22 @@ pop    {r4-r7, pc)     // Restore R4-R6, saved R7, and
 
 ```
 
-##### Pass Arguments to Functions and Handle Return Values
+##### Pass arguments to functions and handle return values
 
 The compiler generally adheres to the argument passing rules in the AAPCS document, but the following items are worth noting:
 
-- Typically, you place the first four scalar arguments into the core registers (R0, R1, R2, and R3), and place any remaining arguments on the stack. For exceptions, see the AAPCS document at [`https://developer.arm.com`](https://developer.apple.comhttps://developer.arm.com).
+- Typically, you place the first four scalar arguments into the core registers (R0, R1, R2, and R3), and place any remaining arguments on the stack. For exceptions, see the AAPCS document at [https://developer.arm.com](https://developer.arm.com).
 - Use 4-byte alignment for data types larger than 4 bytes in size.
 - Use the Base Standard variant of the procedure call standard for floating-point arguments. In this variant, you pass floating-point and vector arguments in general-purpose registers (GPRs) instead of in VFP registers.
 
 The compiler generally returns results according to the standard rules. Specifically, it returns most values in R0 unless the size of the return value warrants a different approach.
 
-For complete details about argument-passing and return result behaviors, see the AAPCS document at [`https://developer.arm.com`](https://developer.apple.comhttps://developer.arm.com).
+For complete details about argument-passing and return result behaviors, see the AAPCS document at [https://developer.arm.com](https://developer.arm.com).
 
 ## See Also
 
-- [Writing ARMv7 code for iOS](writing-armv7-code-for-ios.md)
+### iOS interfaces
+- [Writing ARMv7 code for iOS](./writing-armv7-code-for-ios.md)
   Create ARMv7 assembly language instructions that adhere to the application binary interface (ABI) that iOS supports.
 
 

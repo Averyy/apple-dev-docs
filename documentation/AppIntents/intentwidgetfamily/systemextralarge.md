@@ -1,7 +1,8 @@
 # IntentWidgetFamily.systemExtraLarge
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An extra large widget.
 
@@ -10,7 +11,7 @@ An extra large widget.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

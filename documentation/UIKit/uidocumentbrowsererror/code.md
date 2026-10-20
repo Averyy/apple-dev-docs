@@ -1,7 +1,8 @@
 # UIDocumentBrowserError.Code
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error codes for document browser errors.
 
@@ -17,33 +18,39 @@ The error codes for document browser errors.
 enum Code
 ```
 
+```c
+enum UIDocumentBrowserErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [UIDocumentBrowserError.Code.generic](uidocumentbrowsererror/code/generic.md)
+- [UIDocumentBrowserError.Code.generic](./code/generic.md)
   An unspecified error.
-- [UIDocumentBrowserError.Code.noLocationAvailable](uidocumentbrowsererror/code/nolocationavailable.md)
+- [UIDocumentBrowserError.Code.noLocationAvailable](./code/nolocationavailable.md)
   An error indicating that no location exists.
 ### Initializers
-- [init?(rawValue: Int)](uidocumentbrowsererror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIDocumentBrowserViewController](uidocumentbrowserviewcontroller.md)
+### Related Documentation
+- [class UIDocumentBrowserViewController](../uidocumentbrowserviewcontroller.md)
   A view controller for browsing and performing actions on documents that you store locally and in the cloud.
-- [struct UIDocumentBrowserError](uidocumentbrowsererror.md)
+### Handling errors
+- [struct UIDocumentBrowserError](../uidocumentbrowsererror.md)
   A structure that contains information about document browser errors.
-- [let UIDocumentBrowserErrorDomain: String](uidocumentbrowsererrordomain.md)
+- [let UIDocumentBrowserErrorDomain: String](../uidocumentbrowsererrordomain.md)
   The error domain for document browser errors.
 
 

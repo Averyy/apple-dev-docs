@@ -1,7 +1,8 @@
 # returnIndicesDataType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the data type for returned indices.
 
@@ -19,9 +20,13 @@ Defines the data type for returned indices.
 var returnIndicesDataType: MPSDataType { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSDataType returnIndicesDataType;
+```
+
 #### Discussion
 
-Use this in conjunction with [`maxPooling4DReturnIndices(_:descriptor:name:)`](mpsgraph/maxpooling4dreturnindices(_:descriptor:name:).md) API. Currently MPSGraph supports the following datatypes: `MPSDataTypeInt32`. Default value: `MPSDataTypeInt32`.
+Use this in conjunction with [`maxPooling4DReturnIndices(_:descriptor:name:)`](../mpsgraph/maxpooling4dreturnindices%28_,descriptor,name%29.md) API. Currently MPSGraph supports the following datatypes: `MPSDataTypeInt32`. Default value: `MPSDataTypeInt32`.
 
 
 ---

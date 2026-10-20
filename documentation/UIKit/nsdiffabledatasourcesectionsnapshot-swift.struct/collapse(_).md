@@ -1,7 +1,8 @@
 # collapse(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Collapses the specified items in the section snapshot.
 
@@ -10,7 +11,7 @@ Collapses the specified items in the section snapshot.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ mutating func collapse(_ items: [ItemIdentifierType])
 
 ## See Also
 
-- [func isExpanded(ItemIdentifierType) -> Bool](nsdiffabledatasourcesectionsnapshot-swift.struct/isexpanded(_:).md)
+### Expanding and collapsing items
+- [func isExpanded(ItemIdentifierType) -> Bool](./isexpanded%28_%29.md)
   Indicates whether the item with the specified identifier is in an expanded state.
-- [func expand([ItemIdentifierType])](nsdiffabledatasourcesectionsnapshot-swift.struct/expand(_:).md)
+- [func expand([ItemIdentifierType])](./expand%28_%29.md)
   Expands the specified items in the section snapshot.
 
 

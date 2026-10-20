@@ -1,7 +1,8 @@
 # DefaultDateProgressLabel
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default type of the current value label when used by a date-relative progress view.
 
@@ -24,19 +25,20 @@ struct DefaultDateProgressLabel
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Gauge](gauge.md)
+### Indicating a value
+- [struct Gauge](./gauge.md)
   A view that shows a value within a range.
-- [func gaugeStyle<S>(S) -> some View](view/gaugestyle(_:).md)
+- [func gaugeStyle<S>(S) -> some View](./view/gaugestyle%28_%29.md)
   Sets the style for gauges within this view.
-- [struct ProgressView](progressview.md)
+- [struct ProgressView](./progressview.md)
   A view that shows the progress toward completion of a task.
-- [func progressViewStyle<S>(S) -> some View](view/progressviewstyle(_:).md)
+- [func progressViewStyle<S>(S) -> some View](./view/progressviewstyle%28_%29.md)
   Sets the style for progress views in this view.
-- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+- [struct DefaultButtonLabel](./defaultbuttonlabel.md)
   The default label to use for a button.
 
 

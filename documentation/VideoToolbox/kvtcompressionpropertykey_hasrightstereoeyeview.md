@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_HasRightStereoEyeView
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -16,19 +17,24 @@
 let kVTCompressionPropertyKey_HasRightStereoEyeView: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_HasRightStereoEyeView;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_HasLeftStereoEyeView: CFString](kvtcompressionpropertykey_hasleftstereoeyeview.md)
-- [let kVTCompressionPropertyKey_HeroEye: CFString](kvtcompressionpropertykey_heroeye.md)
+### Video Extended Usage (VEXU) Signaling
+- [let kVTCompressionPropertyKey_HasLeftStereoEyeView: CFString](./kvtcompressionpropertykey_hasleftstereoeyeview.md)
+- [let kVTCompressionPropertyKey_HeroEye: CFString](./kvtcompressionpropertykey_heroeye.md)
   A value that indicates which eye is the primary eye when rendering in 2D.
-- [let kVTCompressionPropertyKey_HorizontalDisparityAdjustment: CFString](kvtcompressionpropertykey_horizontaldisparityadjustment.md)
+- [let kVTCompressionPropertyKey_HorizontalDisparityAdjustment: CFString](./kvtcompressionpropertykey_horizontaldisparityadjustment.md)
   A value that indicates a relative shift of the left and right images, which changes the zero parallax plane.
-- [let kVTCompressionPropertyKey_HorizontalFieldOfView: CFString](kvtcompressionpropertykey_horizontalfieldofview.md)
-- [let kVTCompressionPropertyKey_ProjectionKind: CFString](kvtcompressionpropertykey_projectionkind.md)
+- [let kVTCompressionPropertyKey_HorizontalFieldOfView: CFString](./kvtcompressionpropertykey_horizontalfieldofview.md)
+- [let kVTCompressionPropertyKey_ProjectionKind: CFString](./kvtcompressionpropertykey_projectionkind.md)
   A value that indicates the projection kind.
-- [let kVTCompressionPropertyKey_StereoCameraBaseline: CFString](kvtcompressionpropertykey_stereocamerabaseline.md)
+- [let kVTCompressionPropertyKey_StereoCameraBaseline: CFString](./kvtcompressionpropertykey_stereocamerabaseline.md)
   A value that specifies the distance between centers of the lenses of the camera system.
-- [let kVTCompressionPropertyKey_ViewPackingKind: CFString](kvtcompressionpropertykey_viewpackingkind.md)
+- [let kVTCompressionPropertyKey_ViewPackingKind: CFString](./kvtcompressionpropertykey_viewpackingkind.md)
   A value that indicates the view packing kind.
 
 

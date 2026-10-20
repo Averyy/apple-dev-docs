@@ -1,7 +1,8 @@
 # batteryLevelAvailable
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the battery charge level is available.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether the battery charge level is available.
 var batteryLevelAvailable: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL batteryLevelAvailable;
+```
+
 ## See Also
 
-- [var batteryLevel: Int](iccameradevice/batterylevel.md)
+### Inspecting the Battery Charge Level
+- [var batteryLevel: Int](./batterylevel.md)
   The battery charge level.
 
 

@@ -1,7 +1,8 @@
 # AggregationOperation.variance(of:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The variance of the metric’s values.
 

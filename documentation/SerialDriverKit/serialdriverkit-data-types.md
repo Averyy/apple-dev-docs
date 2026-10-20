@@ -1,15 +1,17 @@
 # SerialDriverKit Data Types
 
-**Framework**: SerialDriverKit
+**Framework**: SerialDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [SerialPortInterface](driverkit/serial/serialportinterface.md)
+- [SerialPortInterface](./driverkit/serial/serialportinterface.md)
 
 ## See Also
 
-- [SerialDriverKit Enumerations](serialdriverkit-enumerations.md)
+### Reference
+- [SerialDriverKit Enumerations](./serialdriverkit-enumerations.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: InputMethodKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an unsigned integer that contains a union of event masks
@@ -13,6 +14,10 @@ Returns an unsigned integer that contains a union of event masks
 
 ```swift
 func recognizedEvents(_ sender: Any!) -> Int
+```
+
+```objc
+- (NSUInteger) recognizedEvents:(id) sender;
 ```
 
 #### Return Value

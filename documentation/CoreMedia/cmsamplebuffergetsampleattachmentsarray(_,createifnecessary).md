@@ -1,7 +1,8 @@
 # CMSampleBufferGetSampleAttachmentsArray(_:createIfNecessary:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves an array of sample attachment dictionaries that represents each sample in a sample buffer.
 
@@ -20,6 +21,10 @@ Retrieves an array of sample attachment dictionaries that represents each sample
 func CMSampleBufferGetSampleAttachmentsArray(_ sbuf: CMSampleBuffer, createIfNecessary: Bool) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCMSampleBufferGetSampleAttachmentsArray(CMSampleBufferRef sbuf, Boolean createIfNecessary);
+```
+
 #### Return Value
 
 A reference to the `CMSampleBuffer's` immutable array of mutable sample attachments dictionaries (one dictionary per sample in the `CMSampleBuffer`). `NULL` is returned if there is an error
@@ -35,7 +40,8 @@ Attachments can then be added/removed directly by the caller, using Core Foundat
 
 ## See Also
 
-- [Sample Attachment Keys](sample-attachment-keys.md)
+### Managing Attachments
+- [Sample Attachment Keys](./sample-attachment-keys.md)
   Keys that specify attachments to individual samples in a buffer.
 
 

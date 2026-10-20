@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,21 +18,21 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kEfiACPIMemoryNVS](1644008-anonymous/kefiacpimemorynvs.md)
-- [kEfiACPIReclaimMemory](1644008-anonymous/kefiacpireclaimmemory.md)
-- [kEfiBootServicesCode](1644008-anonymous/kefibootservicescode.md)
-- [kEfiBootServicesData](1644008-anonymous/kefibootservicesdata.md)
-- [kEfiConventionalMemory](1644008-anonymous/keficonventionalmemory.md)
-- [kEfiLoaderCode](1644008-anonymous/kefiloadercode.md)
-- [kEfiLoaderData](1644008-anonymous/kefiloaderdata.md)
-- [kEfiMaxMemoryType](1644008-anonymous/kefimaxmemorytype.md)
-- [kEfiMemoryMappedIO](1644008-anonymous/kefimemorymappedio.md)
-- [kEfiMemoryMappedIOPortSpace](1644008-anonymous/kefimemorymappedioportspace.md)
-- [kEfiPalCode](1644008-anonymous/kefipalcode.md)
-- [kEfiReservedMemoryType](1644008-anonymous/kefireservedmemorytype.md)
-- [kEfiRuntimeServicesCode](1644008-anonymous/kefiruntimeservicescode.md)
-- [kEfiRuntimeServicesData](1644008-anonymous/kefiruntimeservicesdata.md)
-- [kEfiUnusableMemory](1644008-anonymous/kefiunusablememory.md)
+- [kEfiACPIMemoryNVS](./api-1644008-anonymous/kefiacpimemorynvs.md)
+- [kEfiACPIReclaimMemory](./api-1644008-anonymous/kefiacpireclaimmemory.md)
+- [kEfiBootServicesCode](./api-1644008-anonymous/kefibootservicescode.md)
+- [kEfiBootServicesData](./api-1644008-anonymous/kefibootservicesdata.md)
+- [kEfiConventionalMemory](./api-1644008-anonymous/keficonventionalmemory.md)
+- [kEfiLoaderCode](./api-1644008-anonymous/kefiloadercode.md)
+- [kEfiLoaderData](./api-1644008-anonymous/kefiloaderdata.md)
+- [kEfiMaxMemoryType](./api-1644008-anonymous/kefimaxmemorytype.md)
+- [kEfiMemoryMappedIO](./api-1644008-anonymous/kefimemorymappedio.md)
+- [kEfiMemoryMappedIOPortSpace](./api-1644008-anonymous/kefimemorymappedioportspace.md)
+- [kEfiPalCode](./api-1644008-anonymous/kefipalcode.md)
+- [kEfiReservedMemoryType](./api-1644008-anonymous/kefireservedmemorytype.md)
+- [kEfiRuntimeServicesCode](./api-1644008-anonymous/kefiruntimeservicescode.md)
+- [kEfiRuntimeServicesData](./api-1644008-anonymous/kefiruntimeservicesdata.md)
+- [kEfiUnusableMemory](./api-1644008-anonymous/kefiunusablememory.md)
 
 
 ---

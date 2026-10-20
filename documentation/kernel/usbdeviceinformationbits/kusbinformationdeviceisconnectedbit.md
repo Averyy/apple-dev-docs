@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsConnectedBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system has connected the USB device to its hub.
 
@@ -10,7 +11,7 @@ The system has connected the USB device to its hub.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsConnectedBit = 3
 ```
 

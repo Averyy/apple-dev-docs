@@ -1,7 +1,8 @@
 # minimumDate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The oldest selectable date.
 
@@ -21,7 +22,8 @@ var minimumDate: Date?
 
 ## See Also
 
-- [var maximumDate: Date?](datepickerstyleconfiguration/maximumdate.md)
+### Establishing the date range
+- [var maximumDate: Date?](./maximumdate.md)
   The most recent selectable date.
 
 

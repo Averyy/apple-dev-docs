@@ -1,7 +1,8 @@
 # pause
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An action that indicates an end to playback.
 
@@ -21,11 +22,12 @@ static let pause: GroupSessionEvent.Action
 
 ## See Also
 
-- [static let play: GroupSessionEvent.Action](groupsessionevent/action-swift.struct/play.md)
+### Getting playback-related actions
+- [static let play: GroupSessionEvent.Action](./play.md)
   An action that indicates the start of playback.
-- [static let seek: GroupSessionEvent.Action](groupsessionevent/action-swift.struct/seek.md)
+- [static let seek: GroupSessionEvent.Action](./seek.md)
   An event that indicates a change to the current playback location.
-- [static func skip(item: String) -> GroupSessionEvent.Action](groupsessionevent/action-swift.struct/skip(item:).md)
+- [static func skip(item: String) -> GroupSessionEvent.Action](./skip%28item%29.md)
   Returns an event that indicates a skipped track or playback item.
 
 

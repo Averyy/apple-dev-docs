@@ -1,7 +1,8 @@
 # groupUUID
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group `UUID` of the file.
 
@@ -18,11 +19,16 @@ The group `UUID` of the file.
 var groupUUID: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * groupUUID;
+```
+
 ## See Also
 
-- [var relatedUUID: String?](iccamerafile/relateduuid.md)
+### Inspecting a File’s Identity
+- [var relatedUUID: String?](./relateduuid.md)
   A related UUID correlating several images from an Apple device.
-- [var originatingAssetID: String?](iccamerafile/originatingassetid.md)
+- [var originatingAssetID: String?](./originatingassetid.md)
   The originating asset ID of an `HEIF` or `HVEC` file.
 
 

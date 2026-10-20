@@ -1,7 +1,8 @@
 # CLServiceSession.Diagnostics
 
 **Framework**: Core Location  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to access location service session diagnostic events.
 
@@ -22,16 +23,17 @@ final class Diagnostics
 ## Topics
 
 ### Structures
-- [CLServiceSession.Diagnostics.Iterator](clservicesession-pt7n/diagnostics-swift.class/iterator.md)
+- [CLServiceSession.Diagnostics.Iterator](./diagnostics-swift.class/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var diagnostics: CLServiceSession.Diagnostics](clservicesession-pt7n/diagnostics-swift.property.md)
+### Getting diagnostic information
+- [var diagnostics: CLServiceSession.Diagnostics](./diagnostics-swift.property.md)
   A property that describes the current state of the services session.
 
 

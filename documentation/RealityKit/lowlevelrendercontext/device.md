@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The Metal device that backs this render context.
@@ -20,7 +21,8 @@ var device: any MTLDevice { get }
 
 ## See Also
 
-- [var shaderGraph: any LowLevelRenderContextShaderGraph](lowlevelrendercontext/shadergraph.md)
+### Accessing the render context
+- [var shaderGraph: any LowLevelRenderContextShaderGraph](./shadergraph.md)
   The ShaderGraph function creation interface for this render context.
 
 

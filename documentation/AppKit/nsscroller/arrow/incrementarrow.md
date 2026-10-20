@@ -1,12 +1,15 @@
 # NSScroller.Arrow.incrementArrow
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The down or right scroll button.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: This enum is not needed in macOS 10.7 and later.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The down or right scroll button.
 case incrementArrow
 ```
 
+```c
+NSScrollerIncrementArrow
+```
+
 ## See Also
 
-- [NSScroller.Arrow.decrementArrow](nsscroller/arrow/decrementarrow.md)
+### Constants
+- [NSScroller.Arrow.decrementArrow](./decrementarrow.md)
   The up or left scroll button.
 
 

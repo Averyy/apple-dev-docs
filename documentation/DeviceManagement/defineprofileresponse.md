@@ -1,18 +1,19 @@
 # DefineProfileResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object DefineProfileResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object DefineProfileResponse.Devices](defineprofileresponse/devices-data.dictionary.md)
+- [object DefineProfileResponse.Devices](./defineprofileresponse/devices-data.dictionary.md)
 
 ## Properties
 
@@ -21,7 +22,8 @@ object DefineProfileResponse
 
 ## See Also
 
-- [object DefineProfileResponse.Devices](defineprofileresponse/devices-data.dictionary.md)
+### Request and Response
+- [object DefineProfileResponse.Devices](./defineprofileresponse/devices-data.dictionary.md)
 
 
 ---

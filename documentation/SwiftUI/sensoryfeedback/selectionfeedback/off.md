@@ -1,7 +1,8 @@
 # off
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a control’s value has changed to off, such as when a toggle is released and turned off.
 

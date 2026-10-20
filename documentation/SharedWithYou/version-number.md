@@ -1,10 +1,12 @@
 # Version number
 
-**Framework**: Shared with You
+**Framework**: Shared with You  
+**Role**: API Collection
 
 ## See Also
 
-- [Version string](version-string.md)
+### Framework versions
+- [Version string](./version-string.md)
 
 
 ---

@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var evtNotEnb: Int](evtnotenb.md)
+- [var evtNotEnb: Int](../../evtnotenb.md)
 
 
 ---

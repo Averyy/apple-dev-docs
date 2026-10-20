@@ -1,7 +1,8 @@
 # TranslationPerformForData(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func TranslationPerformForData(_ inTranslation: Translation!, _ inSourceData: CFData!, _ outDestinationData: UnsafeMutablePointer<Unmanaged<CFData>?>!) -> OSStatus
+```
+
+```c
+OSStatus TranslationPerformForData(TranslationRef inTranslation, CFDataRef inSourceData, CFDataRef *outDestinationData);
 ```
 
 

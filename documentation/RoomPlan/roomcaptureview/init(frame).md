@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view that sizes to the specified frame.
 
@@ -19,9 +20,9 @@ Creates a view that sizes to the specified frame.
 
 #### Overview
 
-This property inherits from [`UIView`](https://developer.apple.com/documentation/uikit/uiview).
+This property inherits from [`UIView`](../../UIKit/uiview.md).
 
-The system invokes this initializer if you omit the `arSession` argument to [`init(frame:arSession:)`](roomcaptureview/init(frame:arsession:).md). RoomPlan creates its own `ARSession` instance, which you can access through the [`captureSession`](roomcaptureview/capturesession.md) property’s [`arSession`](roomcapturesession/arsession.md).
+The system invokes this initializer if you omit the `arSession` argument to [`init(frame:arSession:)`](./init%28frame,arsession%29.md). RoomPlan creates its own `ARSession` instance, which you can access through the [`captureSession`](./capturesession.md) property’s [`arSession`](../roomcapturesession/arsession.md).
 
 ## Parameters
 
@@ -29,9 +30,10 @@ The system invokes this initializer if you omit the `arSession` argument to [`in
 
 ## See Also
 
-- [init(frame: CGRect, arSession: ARSession)](roomcaptureview/init(frame:arsession:).md)
+### Creating a room-capture view
+- [init(frame: CGRect, arSession: ARSession)](./init%28frame,arsession%29.md)
   Creates a room-capture view with the given AR session.
-- [init?(coder: NSCoder)](roomcaptureview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a view by deserializing from the specified coder.
 
 

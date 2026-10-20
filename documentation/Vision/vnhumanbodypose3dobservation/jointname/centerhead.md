@@ -1,7 +1,8 @@
 # centerHead
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A joint name that represents the center of the head.
 
@@ -19,9 +20,14 @@ A joint name that represents the center of the head.
 static let centerHead: VNHumanBodyPose3DObservation.JointName
 ```
 
+```c
+extern VNHumanBodyPose3DObservationJointName const VNHumanBodyPose3DObservationJointNameCenterHead;
+```
+
 ## See Also
 
-- [static let topHead: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/tophead.md)
+### Getting the Head Joint Names
+- [static let topHead: VNHumanBodyPose3DObservation.JointName](./tophead.md)
   A joint name that represents the top of the head.
 
 

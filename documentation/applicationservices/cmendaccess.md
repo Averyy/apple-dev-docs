@@ -1,7 +1,8 @@
 # cmEndAccess
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 End the process of procedural access. This is always the last operation constant passed to the access procedure (unless the `cmBeginAccess` call failed).
 

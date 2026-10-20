@@ -1,7 +1,8 @@
 # bypassVoiceProcessing
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Audio processing bypasses the system voice processor.
 
@@ -14,6 +15,10 @@ Audio processing bypasses the system voice processor.
 
 ```swift
 static var bypassVoiceProcessing: SRSpeechMetrics.SessionFlags { get }
+```
+
+```c
+SRSpeechMetricsSessionFlagsBypassVoiceProcessing
 ```
 
 

@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeSensor
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A sensor accessory.
 
@@ -19,9 +20,14 @@ A sensor accessory.
 let HMAccessoryCategoryTypeSensor: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeSensor;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeSecuritySystem: String](hmaccessorycategorytypesecuritysystem.md)
+### Safety and security
+- [let HMAccessoryCategoryTypeSecuritySystem: String](./hmaccessorycategorytypesecuritysystem.md)
   A security system accessory.
 
 

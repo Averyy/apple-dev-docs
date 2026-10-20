@@ -1,23 +1,25 @@
 # kIOHIDDigitizerCollectionTypeFinger
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDDigitizerCollectionTypeFinger
 ```
 
 ## See Also
 
-- [kIOHIDDigitizerCollectionTypeHand](iohiddigitizercollectiontype/kiohiddigitizercollectiontypehand.md)
-- [kIOHIDDigitizerCollectionTypePuck](iohiddigitizercollectiontype/kiohiddigitizercollectiontypepuck.md)
-- [kIOHIDDigitizerCollectionTypeStylus](iohiddigitizercollectiontype/kiohiddigitizercollectiontypestylus.md)
+### Getting the Collection Types
+- [kIOHIDDigitizerCollectionTypeHand](./kiohiddigitizercollectiontypehand.md)
+- [kIOHIDDigitizerCollectionTypePuck](./kiohiddigitizercollectiontypepuck.md)
+- [kIOHIDDigitizerCollectionTypeStylus](./kiohiddigitizercollectiontypestylus.md)
 
 
 ---

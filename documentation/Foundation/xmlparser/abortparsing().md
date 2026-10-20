@@ -1,7 +1,8 @@
 # abortParsing()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the parser object.
 
@@ -20,16 +21,21 @@ Stops the parser object.
 func abortParsing()
 ```
 
+```objc
+- (void) abortParsing;
+```
+
 #### Discussion
 
-If you invoke this method, the delegate, if it implements [`parser(_:parseErrorOccurred:)`](xmlparserdelegate/parser(_:parseerroroccurred:).md), is informed of the cancelled parsing operation.
+If you invoke this method, the delegate, if it implements [`parser(_:parseErrorOccurred:)`](../xmlparserdelegate/parser%28_,parseerroroccurred%29.md), is informed of the cancelled parsing operation.
 
 ## See Also
 
-- [func parse() -> Bool](xmlparser/parse.md)
+### Parsing
+- [func parse() -> Bool](./parse%28%29.md)
   Starts the event-driven parsing operation.
-- [var parserError: (any Error)?](xmlparser/parsererror.md)
-  An [`NSError`](nserror.md) object from which you can obtain information about a parsing error.
+- [var parserError: (any Error)?](./parsererror.md)
+  An [`NSError`](../nserror.md) object from which you can obtain information about a parsing error.
 
 
 ---

@@ -1,7 +1,8 @@
 # Geoposition
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface Geoposition
 ```
 
 ## Topics
 
 ### Instance Properties
-- [coords](geoposition/1629797-coords.md)
-- [timestamp](geoposition/1629887-timestamp.md)
+- [coords](./geoposition/api-1629797-coords.md)
+- [timestamp](./geoposition/api-1629887-timestamp.md)
 
 
 ---

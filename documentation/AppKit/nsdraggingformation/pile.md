@@ -1,7 +1,8 @@
 # NSDraggingFormation.pile
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents a pile formation, so drag images display on top of each other with random rotations.
 
@@ -14,15 +15,20 @@ A constant that represents a pile formation, so drag images display on top of ea
 case pile
 ```
 
+```c
+NSDraggingFormationPile
+```
+
 ## See Also
 
-- [NSDraggingFormation.default](nsdraggingformation/default.md)
+### Constants
+- [NSDraggingFormation.default](./default.md)
   A constant that represents the system determined formation.
-- [NSDraggingFormation.none](nsdraggingformation/none.md)
+- [NSDraggingFormation.none](./none.md)
   A constant that represents no custom formation, so drag images maintain their set positions relative to each other.
-- [NSDraggingFormation.list](nsdraggingformation/list.md)
+- [NSDraggingFormation.list](./list.md)
   A constant that represents a list formation, so drag images display vertically, non-overlapping with the left edges aligned.
-- [NSDraggingFormation.stack](nsdraggingformation/stack.md)
+- [NSDraggingFormation.stack](./stack.md)
   A constant that represents a stack formation, so drag images display overlapping diagonally.
 
 

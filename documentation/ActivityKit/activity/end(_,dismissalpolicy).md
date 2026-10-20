@@ -1,7 +1,8 @@
 # end(_:dismissalPolicy:)
 
 **Framework**: ActivityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends an active Live Activity.
 
@@ -17,11 +18,11 @@ func end(_ content: ActivityContent<Activity<Attributes>.ContentState>?, dismiss
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
 #### Discussion
 
-End an active Live Activity while your app is in the foreground or while it’s in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks). When you end a Live Activity, include a final content update using the `content` parameter to ensure the Live Activity shows the latest and final content update after it ends. This is important because the Live Activity may remain visible until the system or the person removes it.
+End an active Live Activity while your app is in the foreground or while it’s in the background — for example, by using [Background Tasks](../../BackgroundTasks/BackgroundTasks.md). When you end a Live Activity, include a final content update using the `content` parameter to ensure the Live Activity shows the latest and final content update after it ends. This is important because the Live Activity may remain visible until the system or the person removes it.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ End an active Live Activity while your app is in the foreground or while it’s 
 
 ## See Also
 
-- [struct ActivityUIDismissalPolicy](activityuidismissalpolicy.md)
+### Ending a Live Activity
+- [struct ActivityUIDismissalPolicy](../activityuidismissalpolicy.md)
   The structure that describes when the system should remove a Live Activity that ended.
-- [func end(ActivityContent<Activity<Attributes>.ContentState>?, dismissalPolicy: ActivityUIDismissalPolicy, timestamp: Date) async](activity/end(_:dismissalpolicy:timestamp:).md)
+- [func end(ActivityContent<Activity<Attributes>.ContentState>?, dismissalPolicy: ActivityUIDismissalPolicy, timestamp: Date) async](./end%28_,dismissalpolicy,timestamp%29.md)
   Ends an active Live Activity.
 
 

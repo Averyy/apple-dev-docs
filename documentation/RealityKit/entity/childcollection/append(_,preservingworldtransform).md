@@ -1,7 +1,8 @@
 # append(_:preservingWorldTransform:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified entity as a child to this entity.
 
@@ -11,7 +12,7 @@ Adds the specified entity as a child to this entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ Adds the specified entity as a child to this entity.
 
 ## See Also
 
-- [func append<S>(contentsOf: S, preservingWorldTransforms: Bool)](entity/childcollection/append(contentsof:preservingworldtransforms:)-7g61.md)
+### Adding entities
+- [func append<S>(contentsOf: S, preservingWorldTransforms: Bool)](./append%28contentsof,preservingworldtransforms%29-7g61.md)
   Adds the specified list of entity as children to this entity.
-- [func append(contentsOf: [Entity], preservingWorldTransforms: Bool)](entity/childcollection/append(contentsof:preservingworldtransforms:)-7p4hd.md)
+- [func append(contentsOf: [Entity], preservingWorldTransforms: Bool)](./append%28contentsof,preservingworldtransforms%29-7p4hd.md)
   Adds the specified list of entity as children to this entity.
 
 

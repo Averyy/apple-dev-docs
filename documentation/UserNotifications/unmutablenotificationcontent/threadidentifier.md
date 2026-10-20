@@ -1,7 +1,8 @@
 # threadIdentifier
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier that groups related notifications.
 
@@ -19,9 +20,21 @@ The identifier that groups related notifications.
 var threadIdentifier: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readwrite) NSString * threadIdentifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readwrite) NSString * threadIdentifier;
+```
+
 ## Mentions
 
-- [Generating a remote notification](generating-a-remote-notification.md)
+- [Generating a remote notification](../generating-a-remote-notification.md)
 
 #### Discussion
 
@@ -29,11 +42,12 @@ You may specify any value for the string, but assign the same thread identifier 
 
 ## See Also
 
-- [var categoryIdentifier: String](unmutablenotificationcontent/categoryidentifier.md)
+### Grouping notifications
+- [var categoryIdentifier: String](./categoryidentifier.md)
   The identifier of the notification’s category.
-- [var summaryArgument: String](unmutablenotificationcontent/summaryargument.md)
+- [var summaryArgument: String](./summaryargument.md)
   The text the system adds to the notification summary to provide additional context.
-- [var summaryArgumentCount: Int](unmutablenotificationcontent/summaryargumentcount.md)
+- [var summaryArgumentCount: Int](./summaryargumentcount.md)
   The number the system adds to the notification summary when the notification represents multiple items.
 
 

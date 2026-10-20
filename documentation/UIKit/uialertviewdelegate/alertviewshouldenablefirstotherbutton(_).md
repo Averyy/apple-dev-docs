@@ -1,14 +1,17 @@
 # alertViewShouldEnableFirstOtherButton(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to determine whether the first non-cancel button in the alert should be enabled.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIAlertView`](../uialertview.md).
 
 ## Declaration
 
@@ -16,9 +19,13 @@ Sent to the delegate to determine whether the first non-cancel button in the ale
 optional func alertViewShouldEnableFirstOtherButton(_ alertView: UIAlertView) -> Bool
 ```
 
+```objc
+- (BOOL) alertViewShouldEnableFirstOtherButton:(UIAlertView *) alertView;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the button should be enabled, no if the button should be disabled.
+[`true`](../../Swift/true.md) if the button should be enabled, no if the button should be disabled.
 
 ## Parameters
 
@@ -26,17 +33,18 @@ optional func alertViewShouldEnableFirstOtherButton(_ alertView: UIAlertView) ->
 
 ## See Also
 
-- [func alertView(UIAlertView, clickedButtonAt: Int)](uialertviewdelegate/alertview(_:clickedbuttonat:).md)
+### Deprecated methods
+- [func alertView(UIAlertView, clickedButtonAt: Int)](./alertview%28_,clickedbuttonat%29.md)
   Sent to the delegate when the user clicks a button on an alert view.
-- [func willPresent(UIAlertView)](uialertviewdelegate/willpresent(_:).md)
+- [func willPresent(UIAlertView)](./willpresent%28_%29.md)
   Sent to the delegate before a model view is presented to the user.
-- [func didPresent(UIAlertView)](uialertviewdelegate/didpresent(_:).md)
+- [func didPresent(UIAlertView)](./didpresent%28_%29.md)
   Sent to the delegate after an alert view is presented to the user.
-- [func alertView(UIAlertView, willDismissWithButtonIndex: Int)](uialertviewdelegate/alertview(_:willdismisswithbuttonindex:).md)
+- [func alertView(UIAlertView, willDismissWithButtonIndex: Int)](./alertview%28_,willdismisswithbuttonindex%29.md)
   Sent to the delegate before an alert view is dismissed.
-- [func alertView(UIAlertView, didDismissWithButtonIndex: Int)](uialertviewdelegate/alertview(_:diddismisswithbuttonindex:).md)
+- [func alertView(UIAlertView, didDismissWithButtonIndex: Int)](./alertview%28_,diddismisswithbuttonindex%29.md)
   Sent to the delegate after an alert view is dismissed from the screen.
-- [func alertViewCancel(UIAlertView)](uialertviewdelegate/alertviewcancel(_:).md)
+- [func alertViewCancel(UIAlertView)](./alertviewcancel%28_%29.md)
   Sent to the delegate before an alert view is canceled.
 
 

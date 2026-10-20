@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An integer containing a set of bit flags that indicate the state of certain optional features of the Mach-O file format. These are the masks you can use to manipulate this field:
 
@@ -10,7 +11,7 @@ An integer containing a set of bit flags that indicate the state of certain opti
 
 ## Declaration
 
-```swift
+```c
 uint32_t flags;
 ```
 

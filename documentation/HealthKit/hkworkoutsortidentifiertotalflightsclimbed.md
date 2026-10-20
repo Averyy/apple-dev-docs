@@ -1,7 +1,8 @@
 # HKWorkoutSortIdentifierTotalFlightsClimbed
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for sorting workouts based on the number of flights of steps climbed.
 
@@ -19,15 +20,20 @@ A constant for sorting workouts based on the number of flights of steps climbed.
 let HKWorkoutSortIdentifierTotalFlightsClimbed: String
 ```
 
+```c
+extern NSString * const HKWorkoutSortIdentifierTotalFlightsClimbed;
+```
+
 ## See Also
 
-- [let HKWorkoutSortIdentifierDuration: String](hkworkoutsortidentifierduration.md)
+### Workout sort identifiers
+- [let HKWorkoutSortIdentifierDuration: String](./hkworkoutsortidentifierduration.md)
   A constant for sorting workouts based on their duration.
-- [let HKWorkoutSortIdentifierTotalDistance: String](hkworkoutsortidentifiertotaldistance.md)
+- [let HKWorkoutSortIdentifierTotalDistance: String](./hkworkoutsortidentifiertotaldistance.md)
   A constant for sorting workouts based on their total distance.
-- [let HKWorkoutSortIdentifierTotalEnergyBurned: String](hkworkoutsortidentifiertotalenergyburned.md)
+- [let HKWorkoutSortIdentifierTotalEnergyBurned: String](./hkworkoutsortidentifiertotalenergyburned.md)
   A constant for sorting workouts based on the total energy burned.
-- [let HKWorkoutSortIdentifierTotalSwimmingStrokeCount: String](hkworkoutsortidentifiertotalswimmingstrokecount.md)
+- [let HKWorkoutSortIdentifierTotalSwimmingStrokeCount: String](./hkworkoutsortidentifiertotalswimmingstrokecount.md)
   A constant for sorting workouts based on the number of swimming strokes.
 
 

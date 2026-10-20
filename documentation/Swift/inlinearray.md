@@ -1,7 +1,8 @@
 # InlineArray
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A fixed-size array.
 
@@ -94,64 +95,65 @@ An *empty* `InlineArray`’s size is zero. Its stride and alignment are both one
 ## Topics
 
 ### Initializers
-- [init<E>((InlineArray<count, Element>.Index) throws(E) -> Element) throws(E)](inlinearray/init(_:).md)
+- [init<E>((InlineArray<count, Element>.Index) throws(E) -> Element) throws(E)](./inlinearray/init%28_%29.md)
   Initializes every element in this array, by calling the given closure with each index.
-- [init<E>(first: consuming Element, next: (borrowing Element) throws(E) -> Element) throws(E)](inlinearray/init(first:next:).md)
+- [init<E>(first: consuming Element, next: (borrowing Element) throws(E) -> Element) throws(E)](./inlinearray/init%28first,next%29.md)
   Initializes every element in this array, by calling the given closure with each preceding element.
-- [init<E>(initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](inlinearray/init(initializingwith:).md)
-- [init(repeating: Element)](inlinearray/init(repeating:).md)
+- [init<E>(initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](./inlinearray/init%28initializingwith%29.md)
+- [init(repeating: Element)](./inlinearray/init%28repeating%29.md)
   Initializes every element in this array to a copy of the given value.
 ### Instance Properties
-- [var count: Int](inlinearray/count.md)
+- [var count: Int](./inlinearray/count.md)
   The number of elements in the array.
-- [var endIndex: InlineArray<count, Element>.Index](inlinearray/endindex.md)
+- [var endIndex: InlineArray<count, Element>.Index](./inlinearray/endindex.md)
   The array’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var indices: Range<InlineArray<count, Element>.Index>](inlinearray/indices.md)
+- [var indices: Range<InlineArray<count, Element>.Index>](./inlinearray/indices.md)
   The indices that are valid for subscripting the array, in ascending order.
-- [var isEmpty: Bool](inlinearray/isempty.md)
+- [var isEmpty: Bool](./inlinearray/isempty.md)
   A Boolean value indicating whether the array is empty.
-- [var mutableSpan: MutableSpan<Element>](inlinearray/mutablespan.md)
+- [var mutableSpan: MutableSpan<Element>](./inlinearray/mutablespan.md)
   A mutable span over the elements of this array.
-- [var span: Span<Element>](inlinearray/span.md)
+- [var span: Span<Element>](./inlinearray/span.md)
   A span over the elements of this array.
-- [var startIndex: InlineArray<count, Element>.Index](inlinearray/startindex.md)
+- [var startIndex: InlineArray<count, Element>.Index](./inlinearray/startindex.md)
   The position of the first element in a nonempty array.
 ### Instance Methods
-- [func index(after: InlineArray<count, Element>.Index) -> InlineArray<count, Element>.Index](inlinearray/index(after:).md)
+- [func index(after: InlineArray<count, Element>.Index) -> InlineArray<count, Element>.Index](./inlinearray/index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(before: InlineArray<count, Element>.Index) -> InlineArray<count, Element>.Index](inlinearray/index(before:).md)
+- [func index(before: InlineArray<count, Element>.Index) -> InlineArray<count, Element>.Index](./inlinearray/index%28before%29.md)
   Returns the position immediately before the given index.
-- [func swapAt(InlineArray<count, Element>.Index, InlineArray<count, Element>.Index)](inlinearray/swapat(_:_:).md)
+- [func swapAt(InlineArray<count, Element>.Index, InlineArray<count, Element>.Index)](./inlinearray/swapat%28_,_%29.md)
   Exchanges the values at the specified indices of the array.
 ### Subscripts
-- [subscript(InlineArray<count, Element>.Index) -> Element](inlinearray/subscript(_:).md)
+- [subscript(InlineArray<count, Element>.Index) -> Element](./inlinearray/subscript%28_%29.md)
   Accesses the element at the specified position.
-- [subscript(unchecked _: InlineArray<count, Element>.Index) -> Element](inlinearray/subscript(unchecked:).md)
+- [subscript(unchecked _: InlineArray<count, Element>.Index) -> Element](./inlinearray/subscript%28unchecked%29.md)
   Accesses the element at the specified position.
 ### Type Aliases
-- [InlineArray.Index](inlinearray/index.md)
+- [InlineArray.Index](./inlinearray/index.md)
   A type that represents a position in the array.
 ### Default Implementations
-- [Iterable Implementations](inlinearray/iterable-implementations.md)
+- [Iterable Implementations](./inlinearray/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [ConvertibleFromBytes](convertiblefrombytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Iterable](iterable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [ConvertibleFromBytes](./convertiblefrombytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [Iterable](./iterable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct Array](array.md)
+### Arrays and Dictionaries
+- [struct Array](./array.md)
   An ordered, random-access collection.
-- [struct Dictionary](dictionary.md)
+- [struct Dictionary](./dictionary.md)
   A collection whose elements are key-value pairs.
 
 

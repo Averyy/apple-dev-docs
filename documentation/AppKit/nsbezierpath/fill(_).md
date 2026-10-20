@@ -1,17 +1,22 @@
 # fill(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Fills the specified rectangular path with the current fill color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func fill(_ rect: NSRect)
+```
+
+```objc
++ (void) fillRect:(NSRect) rect;
 ```
 
 #### Discussion
@@ -24,23 +29,25 @@ This method fills the specified region immediately. This method uses the composi
 
 ## See Also
 
-- [func set()](nscolor/set.md)
+### Related Documentation
+- [func set()](../nscolor/set%28%29.md)
   Sets the color of subsequent drawing to the color that the color object represents.
-- [init(rect: NSRect)](nsbezierpath/init(rect:).md)
+- [init(rect: NSRect)](./init%28rect%29.md)
   Creates and returns a new Bézier path object initialized with a rectangular path.
-- [func appendRect(NSRect)](nsbezierpath/appendrect(_:).md)
+- [func appendRect(NSRect)](./appendrect%28_%29.md)
   Appends a rectangular path to the path.
-- [var compositingOperation: NSCompositingOperation](nsgraphicscontext/compositingoperation.md)
+- [var compositingOperation: NSCompositingOperation](../nsgraphicscontext/compositingoperation.md)
   The graphics context’s global compositing operation setting.
-- [func stroke()](nsbezierpath/stroke.md)
+### Drawing a Path
+- [func stroke()](./stroke%28%29.md)
   Draws a line along the path using the current stroke color and drawing attributes.
-- [func fill()](nsbezierpath/fill.md)
+- [func fill()](./fill%28%29.md)
   Paints the region enclosed by the path.
-- [class func stroke(NSRect)](nsbezierpath/stroke(_:).md)
+- [class func stroke(NSRect)](./stroke%28_%29.md)
   Strokes the path of the specified rectangle using the current stroke color and the default drawing attributes.
-- [class func strokeLine(from: NSPoint, to: NSPoint)](nsbezierpath/strokeline(from:to:).md)
+- [class func strokeLine(from: NSPoint, to: NSPoint)](./strokeline%28from,to%29.md)
   Strokes a line between two points using the current stroke color and the default drawing attributes.
-- [class func drawPackedGlyphs(UnsafePointer<CChar>, at: NSPoint)](nsbezierpath/drawpackedglyphs(_:at:).md)
+- [class func drawPackedGlyphs(UnsafePointer<CChar>, at: NSPoint)](./drawpackedglyphs%28_,at%29.md)
   Draws a set of packed glyphs at the specified point in the current coordinate system.
 
 

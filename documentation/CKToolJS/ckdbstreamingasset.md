@@ -1,7 +1,8 @@
 # CKDBStreamingAsset
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A streaming asset object that represents a streaming asset in CloudKit.
 
@@ -10,7 +11,7 @@ A streaming asset object that represents a streaming asset in CloudKit.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBStreamingAsset {
 	string? fileSignature;
 	string? referenceSignature;
@@ -37,52 +38,53 @@ import type { CKDBStreamingAsset } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [downloadUrl](ckdbstreamingasset/downloadurl.md)
+- [downloadUrl](./ckdbstreamingasset/downloadurl.md)
   The URL for accessing the asset.
-- [fileSignature](ckdbstreamingasset/filesignature.md)
+- [fileSignature](./ckdbstreamingasset/filesignature.md)
   The signature of a file returned from the file upload step.
-- [referenceSignature](ckdbstreamingasset/referencesignature.md)
+- [referenceSignature](./ckdbstreamingasset/referencesignature.md)
   The signature of a file returned from the asset upload step.
-- [requestedSize](ckdbstreamingasset/requestedsize.md)
+- [requestedSize](./ckdbstreamingasset/requestedsize.md)
   The requested size of streaming asset.
-- [reservedSize](ckdbstreamingasset/reservedsize.md)
+- [reservedSize](./ckdbstreamingasset/reservedsize.md)
   The reserved size of streaming asset.
-- [uploadReceipt](ckdbstreamingasset/uploadreceipt.md)
+- [uploadReceipt](./ckdbstreamingasset/uploadreceipt.md)
   The receipt for uploading the asset.
-- [uploadedSize](ckdbstreamingasset/uploadedsize.md)
+- [uploadedSize](./ckdbstreamingasset/uploadedsize.md)
   The uploaded size of streaming asset.
 
 ## See Also
 
-- [CKDBAsset](ckdbasset.md)
+### Structures
+- [CKDBAsset](./ckdbasset.md)
   An object that represents an asset uploaded to CloudKit.
-- [CKDBAssetUploadUrlResponse](ckdbassetuploadurlresponse.md)
+- [CKDBAssetUploadUrlResponse](./ckdbassetuploadurlresponse.md)
   An object that represents the results of creating an asset upload URL.
-- [CKDBChangeMetadata](ckdbchangemetadata.md)
+- [CKDBChangeMetadata](./ckdbchangemetadata.md)
   An object that represents metadata about a record change via creation or modification.
-- [CKDBCreateAssetUploadUrlRequestBody](ckdbcreateassetuploadurlrequestbody.md)
+- [CKDBCreateAssetUploadUrlRequestBody](./ckdbcreateassetuploadurlrequestbody.md)
   An object that represents the request for creating an asset upload URL.
-- [CKDBCreateRecordRequestBody](ckdbcreaterecordrequestbody.md)
+- [CKDBCreateRecordRequestBody](./ckdbcreaterecordrequestbody.md)
   An object that represents the request to create a new record.
-- [CKDBCreateZoneRequestBody](ckdbcreatezonerequestbody.md)
+- [CKDBCreateZoneRequestBody](./ckdbcreatezonerequestbody.md)
   An object that represents the request to create a new zone.
-- [CKDBDeleteRecordsByQueryRequestBody](ckdbdeleterecordsbyqueryrequestbody.md)
+- [CKDBDeleteRecordsByQueryRequestBody](./ckdbdeleterecordsbyqueryrequestbody.md)
   An object that represents the request to delete multiple records that match a query.
-- [CKDBDeletedRecordResult](ckdbdeletedrecordresult.md)
+- [CKDBDeletedRecordResult](./ckdbdeletedrecordresult.md)
   An object that represents a deleted record result.
-- [CKDBErrorRecordResult](ckdberrorrecordresult.md)
+- [CKDBErrorRecordResult](./ckdberrorrecordresult.md)
   An object that represents a record lookup failure.
-- [CKDBExistingRecordResult](ckdbexistingrecordresult.md)
+- [CKDBExistingRecordResult](./ckdbexistingrecordresult.md)
   An object that represents a successful record result.
-- [CKDBForRecord](ckdbforrecord.md)
+- [CKDBForRecord](./ckdbforrecord.md)
   An object that represents a record that is being shared.
-- [CKDBLocation](ckdblocation.md)
+- [CKDBLocation](./ckdblocation.md)
   An object that represents a location field value.
-- [CKDBLookupRecordsRequestBody](ckdblookuprecordsrequestbody.md)
+- [CKDBLookupRecordsRequestBody](./ckdblookuprecordsrequestbody.md)
   An object that represents the request for looking up multiple records by record name.
-- [CKDBLookupRecordsResponse](ckdblookuprecordsresponse.md)
+- [CKDBLookupRecordsResponse](./ckdblookuprecordsresponse.md)
   An object that represents the results of a batch record lookup operation.
-- [CKDBModifyRecordRequestBody](ckdbmodifyrecordrequestbody.md)
+- [CKDBModifyRecordRequestBody](./ckdbmodifyrecordrequestbody.md)
   An object that represents the request for updating an existing record.
 
 

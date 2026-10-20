@@ -1,7 +1,8 @@
 # observedModels
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model types that the observer filters for when evaluating history transactions.
 
@@ -26,11 +27,12 @@ When non-empty, the observer only reports changes whose transactions contain mod
 
 ## See Also
 
-- [var eventCounter: Int](historyobserver/eventcounter.md)
+### Accessing observer properties
+- [var eventCounter: Int](./eventcounter.md)
   A counter that increments each time the observer detects relevant changes.
-- [let modelContainer: ModelContainer](historyobserver/modelcontainer.md)
+- [let modelContainer: ModelContainer](./modelcontainer.md)
   The model container whose data stores this observer monitors for changes.
-- [let authors: Set<String>](historyobserver/authors.md)
+- [let authors: Set<String>](./authors.md)
   The transaction authors that the observer filters for when evaluating history transactions.
 
 

@@ -1,7 +1,8 @@
 # readAttributeCompensationText(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCompensationText(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCompensationText() async throws -> String
+```
+
+```objc
+- (void) readAttributeCompensationTextWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

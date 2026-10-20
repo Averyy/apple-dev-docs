@@ -1,7 +1,8 @@
 # becomeArbiter()
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 2.0+
@@ -14,7 +15,8 @@ func becomeArbiter()
 
 ## See Also
 
-- [func followArbiter(TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/followarbiter(_:).md)
+### Changing the arbiter role between players
+- [func followArbiter(TabletopNetworkSession<Coordinator>.Peer)](./followarbiter%28_%29.md)
 
 
 ---

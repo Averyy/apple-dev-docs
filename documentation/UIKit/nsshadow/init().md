@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shadow object with default values.
 
@@ -19,13 +20,18 @@ Creates a shadow object with default values.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An `NSShadow` object initialized with `0` as its offset, `0` as its blur radius, and the default color as its color. The returned object may be different from the original receiver.
 
 ## See Also
 
-- [init?(coder: NSCoder)](nsshadow/init(coder:).md)
+### Creating a shadow
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a shadow object from data in an unarchiver.
 
 

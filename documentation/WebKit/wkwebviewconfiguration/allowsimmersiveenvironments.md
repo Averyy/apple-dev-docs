@@ -1,7 +1,8 @@
 # allowsImmersiveEnvironments
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 8.0+
@@ -14,6 +15,10 @@
 var allowsImmersiveEnvironments: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsImmersiveEnvironments;
+```
+
 #### Discussion
 
 A Boolean value that determines whether the web view allows immersive environments.
@@ -22,10 +27,11 @@ Set this property to YES to enable support for website-provided immersive enviro
 
 ## See Also
 
-- [class WKImmersiveEnvironment](wkimmersiveenvironment.md)
-- [protocol WKImmersiveEnvironmentDelegate](wkimmersiveenvironmentdelegate.md)
-- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
-- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
+### Immersive environments
+- [class WKImmersiveEnvironment](../wkimmersiveenvironment.md)
+- [protocol WKImmersiveEnvironmentDelegate](../wkimmersiveenvironmentdelegate.md)
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](../wkwebview/immersiveenvironmentdelegate.md)
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](../wkwebview/dismissimmersiveenvironment%28completionhandler%29.md)
 
 
 ---

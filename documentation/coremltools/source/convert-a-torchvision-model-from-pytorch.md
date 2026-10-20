@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/convert-a-torchvisio
 
 # Converting a torchvision Model from PyTorch
 
-**
-
-- [.md](../_sources/source/convert-a-torchvision-model-from-pytorch.md)
-- **
-
-.pdf
-
-**
-
-# Converting a torchvision Model from PyTorch
-
- Table of contents 
-
-## Contents
-
-# Converting a torchvision Model from PyTorch
-
 The following example shows how to convert into Core ML a [MobileNetV2](https://pytorch.org/hub/pytorch_vision_mobilenet_v2/) model trained using PyTorch. MobileNet is a type of convolutional neural network designed for mobile and embedded vision applications.
 
 The example is similar to the one provided in [Getting Started](introductory-quickstart.md), in which you convert the TensorFlow version of the model.
@@ -38,7 +21,7 @@ In this example you do the following:
 7. Make a prediction with the original torch model as benchmark.
 8. Make a prediction with the converted model.
 
-Once you have converted the model, you can follow the steps in [Save and Load the Model](introductory-quickstart.html#save-and-load-the-model) and [Use the Model with Xcode](introductory-quickstart.html#use-the-model-with-xcode).
+Once you have converted the model, you can follow the steps in [Save and Load the Model](introductory-quickstart.md#save-and-load-the-model) and [Use the Model with Xcode](introductory-quickstart.md#use-the-model-with-xcode).
 
 ## Requirements
 
@@ -52,18 +35,24 @@ pip install -U coremltools
 
 ## Load the MobileNetV2 Model
 
-The example uses a pre-trained version of the [MobileNetV2](https://pytorch.org/hub/pytorch_vision_mobilenet_v2/) model from [torchvision](https://pytorch.org/vision/stable/index.md). Follow these steps:
+The example uses a pre-trained version of the [MobileNetV2](https://pytorch.org/hub/pytorch_vision_mobilenet_v2/) model from [torchvision](https://pytorch.org/vision/stable/index.html). Follow these steps:
 
 1. Load the pre-trained version of MobileNetV2:
-import numpy as np
-import torch
-import torchvision
 
-# Load a pre-trained version of MobileNetV2 model.
-torch_model = torchvision.models.mobilenet_v2(pretrained=True)
+   ```
+   import numpy as np
+   import torch
+   import torchvision
+
+   # Load a pre-trained version of MobileNetV2 model.
+   torch_model = torchvision.models.mobilenet_v2(pretrained=True)
+   ```
 2. Set the model to evaluation mode:
-# Set the model in evaluation mode.
-torch_model.eval()
+
+   ```
+   # Set the model in evaluation mode.
+   torch_model.eval()
+   ```
 
 Set the Model to Evaluation Mode
 
@@ -97,7 +86,7 @@ assert len(class_labels) == 1000
 
 ## Preprocess the Image Input for torchvision Models
 
-Image-based models typically require the input image to be preprocessed before using it with the model. For the details of how to preprocess image input for torchvision models, see [Preprocessing for Torch](image-inputs.html#preprocessing-for-torch).
+Image-based models typically require the input image to be preprocessed before using it with the model. For the details of how to preprocess image input for torchvision models, see [Preprocessing for Torch](image-inputs.md#preprocessing-for-torch).
 
 The Core ML Tools [ImageType](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#coremltools.converters.mil.input_types.ImageType) input type lets you specify the `scale` and `bias` parameters. The scale is applied to the image first, and then the bias is added. Import coremltools, and before converting, specify the `ImageType` input type as follows:
 
@@ -152,9 +141,9 @@ mlmodel_from_export.save("mobilenet.mlpackage")
 print("model converted and saved")
 ```
 
-You can now incorporate this model into an application in Xcode, as described in [Use the Model With Xcode](introductory-quickstart.html#use-the-model-with-xcode).
+You can now incorporate this model into an application in Xcode, as described in [Use the Model With Xcode](introductory-quickstart.md#use-the-model-with-xcode).
 
-The above example also sets the `class_labels` for classifying the image, and the `compute_units` to restrict execution to the CPU. For more information about `compute_units`, see [Set the Compute Units](load-and-convert-model.html#set-the-compute-units).
+The above example also sets the `class_labels` for classifying the image, and the `compute_units` to restrict execution to the CPU. For more information about `compute_units`, see [Set the Compute Units](load-and-convert-model.md#set-the-compute-units).
 
 ## Load the Test Image
 
@@ -171,7 +160,7 @@ img = img.resize([224, 224], Image.LANCZOS)
 
 Right-click the following image and save it as `daisy.jpg` in the same folder as your Python project.
 
-![Daisy image](../_images/daisy.jpg)
+![Daisy image](https://apple.github.io/coremltools/docs-guides/_images/daisy.jpg)
 
 ## Make a PyTorch Prediction and Compare
 
@@ -284,5 +273,3 @@ class name: ant, raw score value: 8.2109375
 ```
 
 As you can see from the results, the converted model performs very closely to the original model — the raw score values are very similar.
-
-** Contents

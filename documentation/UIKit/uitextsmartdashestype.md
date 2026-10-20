@@ -1,7 +1,8 @@
 # UITextSmartDashesType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the automatic conversion behavior between hyphens and en or em dashes.
 
@@ -18,39 +19,44 @@ Constants that specify the automatic conversion behavior between hyphens and en 
 enum UITextSmartDashesType
 ```
 
+```c
+enum UITextSmartDashesType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UITextSmartDashesType.default](uitextsmartdashestype/default.md)
+- [UITextSmartDashesType.default](./uitextsmartdashestype/default.md)
   Use the default smart dash behavior.
-- [UITextSmartDashesType.no](uitextsmartdashestype/no.md)
+- [UITextSmartDashesType.no](./uitextsmartdashestype/no.md)
   Disable smart dashes.
-- [UITextSmartDashesType.yes](uitextsmartdashestype/yes.md)
+- [UITextSmartDashesType.yes](./uitextsmartdashestype/yes.md)
   Enable smart dashes.
 ### Initializers
-- [init?(rawValue: Int)](uitextsmartdashestype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uitextsmartdashestype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var smartQuotesType: UITextSmartQuotesType](uitextinputtraits/smartquotestype.md)
+### Configuring the autoformatting behaviors
+- [var smartQuotesType: UITextSmartQuotesType](./uitextinputtraits/smartquotestype.md)
   The configuration state for smart quotes.
-- [enum UITextSmartQuotesType](uitextsmartquotestype.md)
+- [enum UITextSmartQuotesType](./uitextsmartquotestype.md)
   Constants that indicate whether to enable or disable smart quotes.
-- [var smartDashesType: UITextSmartDashesType](uitextinputtraits/smartdashestype.md)
+- [var smartDashesType: UITextSmartDashesType](./uitextinputtraits/smartdashestype.md)
   The configuration state for smart dashes.
-- [var smartInsertDeleteType: UITextSmartInsertDeleteType](uitextinputtraits/smartinsertdeletetype.md)
+- [var smartInsertDeleteType: UITextSmartInsertDeleteType](./uitextinputtraits/smartinsertdeletetype.md)
   The configuration state for the smart insertion and deletion of space characters.
-- [enum UITextSmartInsertDeleteType](uitextsmartinsertdeletetype.md)
+- [enum UITextSmartInsertDeleteType](./uitextsmartinsertdeletetype.md)
   Constants that specify whether to automatically insert extra spaces after a paste operation or to delete them after a cut or delete operation.
 
 

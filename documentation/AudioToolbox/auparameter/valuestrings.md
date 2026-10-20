@@ -1,7 +1,8 @@
 # valueStrings
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameter’s localized value strings.
 
@@ -19,25 +20,38 @@ The parameter’s localized value strings.
 var valueStrings: [String]? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<NSString *> * valueStrings;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSArray<NSString *> * valueStrings;
+```
+
 #### Discussion
 
 This property allows you to specify an array of strings to be used for the values of an indexed parameter—for example, a *band* parameter could publish these values: “High”, “Medium”, “Low”.
 
 ## See Also
 
-- [var minValue: AUValue](auparameter/minvalue.md)
+### Querying Parameter Properties
+- [var minValue: AUValue](./minvalue.md)
   The parameter’s minimum value.
-- [var maxValue: AUValue](auparameter/maxvalue.md)
+- [var maxValue: AUValue](./maxvalue.md)
   The parameter’s maximum value.
-- [var unit: AudioUnitParameterUnit](auparameter/unit.md)
+- [var unit: AudioUnitParameterUnit](./unit.md)
   The parameter’s unit of measurement.
-- [var unitName: String?](auparameter/unitname.md)
+- [var unitName: String?](./unitname.md)
   The parameter’s localized unit name.
-- [var flags: AudioUnitParameterOptions](auparameter/flags.md)
+- [var flags: AudioUnitParameterOptions](./flags.md)
   The parameter’s characteristic details.
-- [var address: AUParameterAddress](auparameter/address.md)
+- [var address: AUParameterAddress](./address.md)
   The parameter’s address.
-- [var dependentParameters: [NSNumber]?](auparameter/dependentparameters.md)
+- [var dependentParameters: [NSNumber]?](./dependentparameters.md)
   Any other parameter’s whose values may change as a side effect of this parameter’s value changing.
 
 

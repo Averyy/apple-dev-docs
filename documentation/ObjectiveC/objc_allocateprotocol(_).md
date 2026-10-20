@@ -1,7 +1,8 @@
 # objc_allocateProtocol(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new protocol instance.
 
@@ -20,13 +21,17 @@ Creates a new protocol instance.
 func objc_allocateProtocol(_ name: UnsafePointer<CChar>) -> Protocol?
 ```
 
+```c
+extern Protocol *objc_allocateProtocol(const char *name);
+```
+
 #### Return Value
 
 A new protocol instance or `nil` if a protocol with the same name as `name` already exists.
 
 #### Discussion
 
-You must register the returned protocol instance with the [`objc_registerProtocol(_:)`](objc_registerprotocol(_:).md) function before you can use it.
+You must register the returned protocol instance with the [`objc_registerProtocol(_:)`](./objc_registerprotocol%28_%29.md) function before you can use it.
 
 There is no dispose method associated with this function.
 
@@ -36,33 +41,34 @@ There is no dispose method associated with this function.
 
 ## See Also
 
-- [func objc_getProtocol(UnsafePointer<CChar>) -> Protocol?](objc_getprotocol(_:).md)
+### Working with Protocols
+- [func objc_getProtocol(UnsafePointer<CChar>) -> Protocol?](./objc_getprotocol%28_%29.md)
   Returns a specified protocol.
-- [func objc_copyProtocolList(UnsafeMutablePointer<UInt32>?) -> AutoreleasingUnsafeMutablePointer<Protocol>?](objc_copyprotocollist(_:).md)
+- [func objc_copyProtocolList(UnsafeMutablePointer<UInt32>?) -> AutoreleasingUnsafeMutablePointer<Protocol>?](./objc_copyprotocollist%28_%29.md)
   Returns an array of all the protocols known to the runtime.
-- [func objc_registerProtocol(Protocol)](objc_registerprotocol(_:).md)
+- [func objc_registerProtocol(Protocol)](./objc_registerprotocol%28_%29.md)
   Registers a newly created protocol with the Objective-C runtime.
-- [func protocol_addMethodDescription(Protocol, Selector, UnsafePointer<CChar>?, Bool, Bool)](protocol_addmethoddescription(_:_:_:_:_:).md)
+- [func protocol_addMethodDescription(Protocol, Selector, UnsafePointer<CChar>?, Bool, Bool)](./protocol_addmethoddescription%28_,_,_,_,_%29.md)
   Adds a method to a protocol.
-- [func protocol_addProtocol(Protocol, Protocol)](protocol_addprotocol(_:_:).md)
+- [func protocol_addProtocol(Protocol, Protocol)](./protocol_addprotocol%28_,_%29.md)
   Adds a registered protocol to another protocol that is under construction.
-- [func protocol_addProperty(Protocol, UnsafePointer<CChar>, UnsafePointer<objc_property_attribute_t>?, UInt32, Bool, Bool)](protocol_addproperty(_:_:_:_:_:_:).md)
+- [func protocol_addProperty(Protocol, UnsafePointer<CChar>, UnsafePointer<objc_property_attribute_t>?, UInt32, Bool, Bool)](./protocol_addproperty%28_,_,_,_,_,_%29.md)
   Adds a property to a protocol that is under construction.
-- [func protocol_getName(Protocol) -> UnsafePointer<CChar>](protocol_getname(_:).md)
+- [func protocol_getName(Protocol) -> UnsafePointer<CChar>](./protocol_getname%28_%29.md)
   Returns the name of a protocol.
-- [func protocol_isEqual(Protocol?, Protocol?) -> Bool](protocol_isequal(_:_:).md)
+- [func protocol_isEqual(Protocol?, Protocol?) -> Bool](./protocol_isequal%28_,_%29.md)
   Returns a Boolean value that indicates whether two protocols are equal.
-- [func protocol_copyMethodDescriptionList(Protocol, Bool, Bool, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<objc_method_description>?](protocol_copymethoddescriptionlist(_:_:_:_:).md)
+- [func protocol_copyMethodDescriptionList(Protocol, Bool, Bool, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<objc_method_description>?](./protocol_copymethoddescriptionlist%28_,_,_,_%29.md)
   Returns an array of method descriptions of methods meeting a given specification for a given protocol.
-- [func protocol_getMethodDescription(Protocol, Selector, Bool, Bool) -> objc_method_description](protocol_getmethoddescription(_:_:_:_:).md)
+- [func protocol_getMethodDescription(Protocol, Selector, Bool, Bool) -> objc_method_description](./protocol_getmethoddescription%28_,_,_,_%29.md)
   Returns a method description structure for a specified method of a given protocol.
-- [func protocol_copyPropertyList(Protocol, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<objc_property_t>?](protocol_copypropertylist(_:_:).md)
+- [func protocol_copyPropertyList(Protocol, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<objc_property_t>?](./protocol_copypropertylist%28_,_%29.md)
   Returns an array of the properties declared by a protocol.
-- [func protocol_getProperty(Protocol, UnsafePointer<CChar>, Bool, Bool) -> objc_property_t?](protocol_getproperty(_:_:_:_:).md)
+- [func protocol_getProperty(Protocol, UnsafePointer<CChar>, Bool, Bool) -> objc_property_t?](./protocol_getproperty%28_,_,_,_%29.md)
   Returns the specified property of a given protocol.
-- [func protocol_copyProtocolList(Protocol, UnsafeMutablePointer<UInt32>?) -> AutoreleasingUnsafeMutablePointer<Protocol>?](protocol_copyprotocollist(_:_:).md)
+- [func protocol_copyProtocolList(Protocol, UnsafeMutablePointer<UInt32>?) -> AutoreleasingUnsafeMutablePointer<Protocol>?](./protocol_copyprotocollist%28_,_%29.md)
   Returns an array of the protocols adopted by a protocol.
-- [func protocol_conformsToProtocol(Protocol?, Protocol?) -> Bool](protocol_conformstoprotocol(_:_:).md)
+- [func protocol_conformsToProtocol(Protocol?, Protocol?) -> Bool](./protocol_conformstoprotocol%28_,_%29.md)
   Returns a Boolean value that indicates whether one protocol conforms to another protocol.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the view scales the item’s image to a larger size or not.
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the view scales the item’s image to a l
 var scalesLargeContentImage: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL scalesLargeContentImage;
+```
+
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), the viewer displays the image at its intrinsic size.
+If [`false`](../../Swift/false.md), the viewer displays the image at its intrinsic size.
 
 > 💡 **Tip**:  For best results when scaling, use a PDF asset with the Preserve Vector Data checked in the asset catalog.
 
 ## See Also
 
-- [var largeContentTitle: String?](uilargecontentvieweritem/largecontenttitle.md)
+### Configuring display properties
+- [var largeContentTitle: String?](./largecontenttitle.md)
   A string that describes an item to display in the large content viewer.
-- [var largeContentImage: UIImage?](uilargecontentvieweritem/largecontentimage.md)
+- [var largeContentImage: UIImage?](./largecontentimage.md)
   An image that represents an item to display in the large content viewer.
-- [var largeContentImageInsets: UIEdgeInsets](uilargecontentvieweritem/largecontentimageinsets.md)
+- [var largeContentImageInsets: UIEdgeInsets](./largecontentimageinsets.md)
   Insets to adjust the position of the item’s image so it appears visually centered in the large content viewer.
 
 

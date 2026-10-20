@@ -1,7 +1,8 @@
 # accessibilityRepresentation(representation:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces one or more accessibility elements for this view with new accessibility elements.
 
@@ -23,9 +24,9 @@ func accessibilityRepresentation<V>(@ContentBuilder representation: () -> V) -> 
 
 #### Discussion
 
-You can make controls accessible by using a custom style. For example, a custom [`ToggleStyle`](togglestyle.md) that you create inherits the accessibility features of [`Toggle`](toggle.md) automatically. When you can’t use the parent view’s accessibility elements, use the `accessibilityRepresentation(representation:)` modifier instead. This modifier replaces default accessibility elements with different accessibility elements that you provide. You use synthetic, non-visual accessibility elements to represent what the view displays.
+You can make controls accessible by using a custom style. For example, a custom [`ToggleStyle`](../togglestyle.md) that you create inherits the accessibility features of [`Toggle`](../toggle.md) automatically. When you can’t use the parent view’s accessibility elements, use the `accessibilityRepresentation(representation:)` modifier instead. This modifier replaces default accessibility elements with different accessibility elements that you provide. You use synthetic, non-visual accessibility elements to represent what the view displays.
 
-The example below makes a custom adjustable control accessible by explicitly defining the representation of its step increments using a [`Slider`](slider.md):
+The example below makes a custom adjustable control accessible by explicitly defining the representation of its step increments using a [`Slider`](../slider.md):
 
 ```swift
 var body: some View {
@@ -48,11 +49,12 @@ SwiftUI hides the view that you provide in the `representation` closure and make
 
 ## See Also
 
-- [func accessibilityElement(children: AccessibilityChildBehavior) -> some View](view/accessibilityelement(children:).md)
-  Creates a new accessibility element, or modifies the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element.
-- [func accessibilityChildren<V>(children: () -> V) -> some View](view/accessibilitychildren(children:).md)
+### Creating accessible elements
+- [func accessibilityElement(children: AccessibilityChildBehavior) -> some View](./accessibilityelement%28children%29.md)
+  Creates a new accessibility element, or modifies the [`AccessibilityChildBehavior`](../accessibilitychildbehavior.md) of the existing accessibility element.
+- [func accessibilityChildren<V>(children: () -> V) -> some View](./accessibilitychildren%28children%29.md)
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
-- [struct AccessibilityChildBehavior](accessibilitychildbehavior.md)
+- [struct AccessibilityChildBehavior](../accessibilitychildbehavior.md)
   Defines the behavior for the child elements of the new parent element.
 
 

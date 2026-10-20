@@ -1,7 +1,8 @@
 # pageWidth
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,19 +19,20 @@ static let pageWidth: SearchableItemAttribute
 
 ## See Also
 
-- [static let audiences: SearchableItemAttribute](searchableitemattribute/audiences.md)
-- [static let contentDescription: SearchableItemAttribute](searchableitemattribute/contentdescription.md)
-- [static let creator: SearchableItemAttribute](searchableitemattribute/creator.md)
-- [static let encodingApplications: SearchableItemAttribute](searchableitemattribute/encodingapplications.md)
-- [static let fileSize: SearchableItemAttribute](searchableitemattribute/filesize.md)
-- [static let fontNames: SearchableItemAttribute](searchableitemattribute/fontnames.md)
-- [static let identifier: SearchableItemAttribute](searchableitemattribute/identifier.md)
-- [static let kind: SearchableItemAttribute](searchableitemattribute/kind.md)
-- [static let pageCount: SearchableItemAttribute](searchableitemattribute/pagecount.md)
-- [static let pageHeight: SearchableItemAttribute](searchableitemattribute/pageheight.md)
-- [static let securityMethod: SearchableItemAttribute](searchableitemattribute/securitymethod.md)
-- [static let subject: SearchableItemAttribute](searchableitemattribute/subject.md)
-- [static let theme: SearchableItemAttribute](searchableitemattribute/theme.md)
+### Describing document content
+- [static let audiences: SearchableItemAttribute](./audiences.md)
+- [static let contentDescription: SearchableItemAttribute](./contentdescription.md)
+- [static let creator: SearchableItemAttribute](./creator.md)
+- [static let encodingApplications: SearchableItemAttribute](./encodingapplications.md)
+- [static let fileSize: SearchableItemAttribute](./filesize.md)
+- [static let fontNames: SearchableItemAttribute](./fontnames.md)
+- [static let identifier: SearchableItemAttribute](./identifier.md)
+- [static let kind: SearchableItemAttribute](./kind.md)
+- [static let pageCount: SearchableItemAttribute](./pagecount.md)
+- [static let pageHeight: SearchableItemAttribute](./pageheight.md)
+- [static let securityMethod: SearchableItemAttribute](./securitymethod.md)
+- [static let subject: SearchableItemAttribute](./subject.md)
+- [static let theme: SearchableItemAttribute](./theme.md)
 
 
 ---

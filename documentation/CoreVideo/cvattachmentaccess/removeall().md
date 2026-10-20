@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all attachments.
 

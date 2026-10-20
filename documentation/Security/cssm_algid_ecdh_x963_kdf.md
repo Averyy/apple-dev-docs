@@ -1,7 +1,8 @@
 # CSSM_ALGID_ECDH_X963_KDF
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ALGID_ECDH_X963_KDF: UInt32 { get }
+```
+
+```c
+CSSM_ALGID_ECDH_X963_KDF
 ```
 
 

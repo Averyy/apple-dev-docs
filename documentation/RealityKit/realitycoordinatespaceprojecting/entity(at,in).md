@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Finds the first entity hit when projecting a ray from a starting point.
@@ -25,7 +26,7 @@ The entity at `point`. Returns `nil` if no entity was found.
 
 #### Discussion
 
-> ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a valid [`CollisionComponent`](collisioncomponent.md) are ignored by hit tests.
+> ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a valid [`CollisionComponent`](../collisioncomponent.md) are ignored by hit tests.
 
 ## Parameters
 

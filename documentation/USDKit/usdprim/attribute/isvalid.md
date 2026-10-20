@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this attribute is valid.
 
@@ -21,7 +22,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-An attribute’s validity is connected to a [`USDStage`](usdstage.md). An attribute becomes invalid when the lifetime of its stage ends.
+An attribute’s validity is connected to a [`USDStage`](../../usdstage.md). An attribute becomes invalid when the lifetime of its stage ends.
 
 An attribute will also expire if its stage no longer defines a value for the attribute. `isValid` is false if this attribute has expired.
 

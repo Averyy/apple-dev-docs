@@ -1,7 +1,8 @@
 # init(mutating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new mutable raw pointer from the given immutable raw pointer.
 

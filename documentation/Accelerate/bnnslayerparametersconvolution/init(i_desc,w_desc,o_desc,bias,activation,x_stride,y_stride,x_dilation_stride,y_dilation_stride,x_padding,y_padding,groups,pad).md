@@ -1,18 +1,21 @@
 # init(i_desc:w_desc:o_desc:bias:activation:x_stride:y_stride:x_dilation_stride:y_dilation_stride:x_padding:y_padding:groups:pad:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new convolution layer parameters structure from the specified parameters.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -25,7 +28,7 @@ init(i_desc: BNNSNDArrayDescriptor, w_desc: BNNSNDArrayDescriptor, o_desc: BNNSN
 If `groups` is greater than 1, the layer uses input, output, weights, and bias for a set of convolutions, and you must meet the following:
 
 - Input and output channels must be divisible by groups.
-- The layout of the weights descriptor must be [`BNNSDataLayoutConvolutionWeightsOIHW`](bnnsdatalayoutconvolutionweightsoihw.md).
+- The layout of the weights descriptor must be [`BNNSDataLayoutConvolutionWeightsOIHW`](../bnnsdatalayoutconvolutionweightsoihw.md).
 - The size of the second dimension of the weights must equal the number of input channels.
 - The size of the third dimension of the weights must equal the number of output channels.
 - When calling apply forward and backward functions, `in_stride`, `out_stride`, and gradient strides should be the strides for the entire convolution group.
@@ -35,9 +38,9 @@ If `groups` is greater than 1, the layer uses input, output, weights, and bias f
 
 ## Parameters
 
-- `i_desc`: The descriptor of the input. The data type of the input must be [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
-- `w_desc`: The descriptor of the weights. The data type of the weights must be [`BNNSDataLayoutConvolutionWeightsOIHW`](bnnsdatalayoutconvolutionweightsoihw.md), [`BNNSDataLayoutConvolutionWeightsOIHrWr`](bnnsdatalayoutconvolutionweightsoihrwr.md), [`BNNSDataLayoutConvolutionWeightsIOHrWr`](bnnsdatalayoutconvolutionweightsiohrwr.md), or [`BNNSDataLayoutConvolutionWeightsOIHW_Pack32`](bnnsdatalayoutconvolutionweightsoihw_pack32.md).
-- `o_desc`: The descriptor of the output. The data type of the output must be [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
+- `i_desc`: The descriptor of the input. The data type of the input must be [`BNNSDataLayoutImageCHW`](../bnnsdatalayoutimagechw.md).
+- `w_desc`: The descriptor of the weights. The data type of the weights must be [`BNNSDataLayoutConvolutionWeightsOIHW`](../bnnsdatalayoutconvolutionweightsoihw.md), [`BNNSDataLayoutConvolutionWeightsOIHrWr`](../bnnsdatalayoutconvolutionweightsoihrwr.md), [`BNNSDataLayoutConvolutionWeightsIOHrWr`](../bnnsdatalayoutconvolutionweightsiohrwr.md), or [`BNNSDataLayoutConvolutionWeightsOIHW_Pack32`](../bnnsdatalayoutconvolutionweightsoihw_pack32.md).
+- `o_desc`: The descriptor of the output. The data type of the output must be [`BNNSDataLayoutImageCHW`](../bnnsdatalayoutimagechw.md).
 - `bias`: The descriptor of the bias.
 - `activation`: The activation function that the layer applies to the output.
 - `x_stride`: The width increment of the input image.
@@ -51,7 +54,8 @@ If `groups` is greater than 1, the layer uses input, output, weights, and bias f
 
 ## See Also
 
-- [init()](bnnslayerparametersconvolution/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new convolution layer parameters structure.
 
 

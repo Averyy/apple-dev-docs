@@ -1,7 +1,8 @@
 # BEScrollViewScrollUpdate.Phase.began
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scroll phase that indicates the gesture has begun.
 
@@ -15,6 +16,10 @@ The scroll phase that indicates the gesture has begun.
 
 ```swift
 case began
+```
+
+```c
+BEScrollViewScrollUpdatePhaseBegan
 ```
 
 

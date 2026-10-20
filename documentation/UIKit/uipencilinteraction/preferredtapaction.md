@@ -1,7 +1,8 @@
 # preferredTapAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A person’s preferred double-tap action for Apple Pencil, as specified in the Settings app.
 
@@ -17,11 +18,16 @@ A person’s preferred double-tap action for Apple Pencil, as specified in the S
 class var preferredTapAction: UIPencilPreferredAction { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIPencilPreferredAction preferredTapAction;
+```
+
 ## See Also
 
-- [class var preferredSqueezeAction: UIPencilPreferredAction](uipencilinteraction/preferredsqueezeaction.md)
+### Determining preferences for actions
+- [class var preferredSqueezeAction: UIPencilPreferredAction](./preferredsqueezeaction.md)
   A person’s preferred squeeze action for Apple Pencil, as specified in the Settings app.
-- [enum UIPencilPreferredAction](uipencilpreferredaction.md)
+- [enum UIPencilPreferredAction](../uipencilpreferredaction.md)
   The actions Apple Pencil can perform after a person performs a double tap or squeeze.
 
 

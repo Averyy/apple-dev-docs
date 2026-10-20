@@ -1,14 +1,15 @@
 # Relationship.Meta
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.1+
 
 ## Declaration
 
-```swift
+```
 object Relationship.Meta
 ```
 

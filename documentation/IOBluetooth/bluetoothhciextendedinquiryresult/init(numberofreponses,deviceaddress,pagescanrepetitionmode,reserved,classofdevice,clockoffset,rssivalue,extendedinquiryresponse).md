@@ -1,10 +1,11 @@
 # init(numberOfReponses:deviceAddress:pageScanRepetitionMode:reserved:classOfDevice:clockOffset:RSSIValue:extendedInquiryResponse:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # prf
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -13,6 +14,10 @@
 
 ```swift
 var prf: __ASAuthorizationPublicKeyCredentialPRFAssertionInput? { get set }
+```
+
+```objc
+@property (nonatomic, nullable) ASAuthorizationPublicKeyCredentialPRFAssertionInput * prf;
 ```
 
 

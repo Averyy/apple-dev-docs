@@ -1,7 +1,8 @@
 # leadSurrogate(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the high-surrogate code unit of the surrogate pair representing the specified Unicode scalar.
 

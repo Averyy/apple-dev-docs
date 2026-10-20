@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that this question expires, if any.
 
@@ -24,9 +25,10 @@ Once the date passes, the person that receives the question can no longer respon
 
 ## See Also
 
-- [let id: UUID](permissionquestion/id.md)
+### Accessing properties
+- [let id: UUID](./id.md)
   A unique identifier for the question.
-- [let topic: Topic](permissionquestion/topic.md)
+- [let topic: Topic](./topic.md)
   A topic that can be used to interpret a person’s request.
 
 

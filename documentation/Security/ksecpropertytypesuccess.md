@@ -1,7 +1,8 @@
 # kSecPropertyTypeSuccess
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string describing a trust evaluation success.
 
@@ -12,6 +13,10 @@ A key whose value is a string describing a trust evaluation success.
 
 ```swift
 let kSecPropertyTypeSuccess: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeSuccess;
 ```
 
 

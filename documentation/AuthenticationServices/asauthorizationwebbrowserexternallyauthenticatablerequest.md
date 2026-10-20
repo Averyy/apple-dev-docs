@@ -1,7 +1,8 @@
 # ASAuthorizationWebBrowserExternallyAuthenticatableRequest
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An authorization request for which a web browser can retrieve credentials.
 
@@ -14,24 +15,29 @@ An authorization request for which a web browser can retrieve credentials.
 protocol ASAuthorizationWebBrowserExternallyAuthenticatableRequest : NSObjectProtocol
 ```
 
+```objc
+@protocol ASAuthorizationWebBrowserExternallyAuthenticatableRequest <NSObject>
+```
+
 ## Topics
 
 ### Local authentication
-- [var authenticatedContext: LAContext?](asauthorizationwebbrowserexternallyauthenticatablerequest/authenticatedcontext.md)
+- [var authenticatedContext: LAContext?](./asauthorizationwebbrowserexternallyauthenticatablerequest/authenticatedcontext.md)
   The local authentication context for the authorization.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationplatformpublickeycredentialassertionrequest.md)
+- [ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](./asauthorizationplatformpublickeycredentialassertionrequest.md)
 
 ## See Also
 
-- [protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialAssertionRequest](asauthorizationwebbrowserplatformpublickeycredentialassertionrequest.md)
+### Website authentication requests
+- [protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialAssertionRequest](./asauthorizationwebbrowserplatformpublickeycredentialassertionrequest.md)
   An interface you use to respond to authentication challenges in a web browser.
-- [protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest.md)
+- [protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialRegistrationRequest](./asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest.md)
   An interface you use to respond to passkey-creation challenges in a web browser.
 
 

@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration.
 
@@ -22,9 +23,10 @@ let configuration: LinearTimeSeriesForecaster<Scalar>.Configuration
 
 ## See Also
 
-- [var forecastWindowSize: Int](lineartimeseriesforecaster/forecastwindowsize.md)
+### Inspecting a linear time series forecaster
+- [var forecastWindowSize: Int](./forecastwindowsize.md)
   The number of predicted samples.
-- [var inputWindowSize: Int](lineartimeseriesforecaster/inputwindowsize.md)
+- [var inputWindowSize: Int](./inputwindowsize.md)
   The number of input samples.
 
 

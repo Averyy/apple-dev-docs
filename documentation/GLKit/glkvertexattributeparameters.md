@@ -1,7 +1,8 @@
 # GLKVertexAttributeParameters
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 5.0+
@@ -15,6 +16,10 @@
 typealias GLKVertexAttributeParameters = _GLKVertexAttributeParameters
 ```
 
+```c
+typedef struct _GLKVertexAttributeParameters GLKVertexAttributeParameters;
+```
+
 #### Fields
 
 - `GLboolean normalized`
@@ -23,7 +28,8 @@ typealias GLKVertexAttributeParameters = _GLKVertexAttributeParameters
 
 ## See Also
 
-- [typealias GLKTextureLoaderCallback](glktextureloadercallback.md)
+### Data Types
+- [typealias GLKTextureLoaderCallback](./glktextureloadercallback.md)
   Signature for the block executed after an asynchronous texture loading operation completes.
 
 

@@ -1,7 +1,8 @@
 # angle
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle of the observed horizon.
 
@@ -19,15 +20,20 @@ The angle of the observed horizon.
 var angle: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CGFloat angle;
+```
+
 #### Discussion
 
 Use the angle to orient the image in an upright position and make the detected horizon level.
 
 ## See Also
 
-- [var transform: CGAffineTransform](vnhorizonobservation/transform.md)
+### Evaluating the Horizon
+- [var transform: CGAffineTransform](./transform.md)
   The transform to apply to the detected horizon.
-- [func transform(forImageWidth: Int, height: Int) -> CGAffineTransform](vnhorizonobservation/transform(forimagewidth:height:).md)
+- [func transform(forImageWidth: Int, height: Int) -> CGAffineTransform](./transform%28forimagewidth,height%29.md)
   Creates an affine transform for the specified image width and height.
 
 

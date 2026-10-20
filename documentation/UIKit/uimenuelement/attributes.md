@@ -1,7 +1,8 @@
 # UIMenuElement.Attributes
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Attributes that determine the style of the menu element.
 
@@ -18,53 +19,58 @@ Attributes that determine the style of the menu element.
 struct Attributes
 ```
 
+```c
+enum UIMenuElementAttributes : NSUInteger;
+```
+
 ## Topics
 
 ### Attributes
-- [static var destructive: UIMenuElement.Attributes](uimenuelement/attributes/destructive.md)
+- [static var destructive: UIMenuElement.Attributes](./attributes/destructive.md)
   An attribute indicating the destructive style.
-- [static var disabled: UIMenuElement.Attributes](uimenuelement/attributes/disabled.md)
+- [static var disabled: UIMenuElement.Attributes](./attributes/disabled.md)
   An attribute indicating the disabled style.
-- [static var hidden: UIMenuElement.Attributes](uimenuelement/attributes/hidden.md)
+- [static var hidden: UIMenuElement.Attributes](./attributes/hidden.md)
   An attribute indicating the hidden style.
-- [static var keepsMenuPresented: UIMenuElement.Attributes](uimenuelement/attributes/keepsmenupresented.md)
+- [static var keepsMenuPresented: UIMenuElement.Attributes](./attributes/keepsmenupresented.md)
   An attribute indicating that the menu remains presented after firing the element’s action instead of dismissing.
 ### Initializers
-- [init(rawValue: UInt)](uimenuelement/attributes/init(rawvalue:).md)
+- [init(rawValue: UInt)](./attributes/init%28rawvalue%29.md)
   Creates a menu-element attributes structure with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+### Menu elements and keyboard shortcuts
+- [Adding menus and shortcuts to the menu bar and user interface](../adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
-- [Adopting menus and UIActions in your user interface](adopting-menus-and-uiactions-in-your-user-interface.md)
+- [Adopting menus and UIActions in your user interface](../adopting-menus-and-uiactions-in-your-user-interface.md)
   Add menus to your user interface, with built-in button support and bar-button items, and create custom menu experiences.
-- [class UIMenuElement](uimenuelement.md)
+- [class UIMenuElement](../uimenuelement.md)
   An object representing a menu, action, or command.
-- [class UIAction](uiaction.md)
+- [class UIAction](../uiaction.md)
   A menu element that performs its action in a closure.
-- [class UICommand](uicommand.md)
+- [class UICommand](../uicommand.md)
   A menu element that performs its action in a selector.
-- [class UIKeyCommand](uikeycommand.md)
+- [class UIKeyCommand](../uikeycommand.md)
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
-- [class UIDeferredMenuElement](uideferredmenuelement.md)
+- [class UIDeferredMenuElement](../uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
-- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
-- [UIMenuElement.State](uimenuelement/state.md)
+- [UIDeferredMenuElement.Provider](../uideferredmenuelement/provider.md)
+- [UIMenuElement.State](./state.md)
   Constants that indicate the state of an action- or command-based menu element.
-- [protocol UIMenuLeaf](uimenuleaf.md)
+- [protocol UIMenuLeaf](../uimenuleaf.md)
   An interface for an object that represents a menu element without child elements.
 
 

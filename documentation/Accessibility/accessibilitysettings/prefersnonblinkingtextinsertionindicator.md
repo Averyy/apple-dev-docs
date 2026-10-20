@@ -1,7 +1,8 @@
 # prefersNonBlinkingTextInsertionIndicator
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the system setting to prefer a nonblinking cursor in editable text fields is on.
 
@@ -22,11 +23,12 @@ static var prefersNonBlinkingTextInsertionIndicator: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the system setting for Prefer Non-Blinking Cursor is on; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This preference is relevant for apps that draw custom insertion indicators.
+The value of this property is [`true`](../../Swift/true.md) if the system setting for Prefer Non-Blinking Cursor is on; otherwise, [`false`](../../Swift/false.md). This preference is relevant for apps that draw custom insertion indicators.
 
 ## See Also
 
-- [static let prefersNonBlinkingTextInsertionIndicatorDidChangeNotification: NSNotification.Name](accessibilitysettings/prefersnonblinkingtextinsertionindicatordidchangenotification.md)
+### Reducing animation for text insertion indicators
+- [static let prefersNonBlinkingTextInsertionIndicatorDidChangeNotification: NSNotification.Name](./prefersnonblinkingtextinsertionindicatordidchangenotification.md)
   A notification that posts when the system setting to prefer a nonblinking cursor in editable text fields changes.
 
 

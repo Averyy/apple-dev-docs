@@ -1,7 +1,8 @@
 # download(_:didReceive:completionHandler:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to resolve the specified URL authentication challenge.
 
@@ -16,19 +17,27 @@ Tells the delegate to resolve the specified URL authentication challenge.
 ## Declaration
 
 ```swift
+optional func download(_ download: BADownload, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping @Sendable (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
+```
+
+```swift
 optional func download(_ download: BADownload, didReceive challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
+```
+
+```objc
+- (void) download:(BADownload *) download didReceiveChallenge:(NSURLAuthenticationChallenge *) challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential)) completionHandler;
 ```
 
 #### Discussion
 
 The completion handler takes the following parameters:
 
-- An [`URLSession.AuthChallengeDisposition`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition) that indicates whether the system processes, cancels, or rejects the challenge.
-- If the specified dispostion is [`URLSession.AuthChallengeDisposition.useCredential`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition/usecredential), the [`URLCredential`](https://developer.apple.com/documentation/foundation/urlcredential) to use for authentication; otherwise, specify `nil`.
+- An [`URLSession.AuthChallengeDisposition`](../../Foundation/urlsession/authchallengedisposition.md) that indicates whether the system processes, cancels, or rejects the challenge.
+- If the specified dispostion is [`URLSession.AuthChallengeDisposition.useCredential`](../../Foundation/urlsession/authchallengedisposition/usecredential.md), the [`URLCredential`](../../Foundation/urlcredential.md) to use for authentication; otherwise, specify `nil`.
 
 If you implement this method, make sure to call the completion handler promptly and with the necessary information. Otherwise, the server may deny the request and the associated asset download fails.
 
-For more information about authentication challenges, see [`Handling an authentication challenge`](https://developer.apple.com/documentation/foundation/handling-an-authentication-challenge).
+For more information about authentication challenges, see [Handling an authentication challenge](../../Foundation/handling-an-authentication-challenge.md).
 
 ## Parameters
 
@@ -38,11 +47,12 @@ For more information about authentication challenges, see [`Handling an authenti
 
 ## See Also
 
-- [func downloadDidBegin(BADownload)](badownloadmanagerdelegate/downloaddidbegin(_:).md)
+### Reacting to download events
+- [func downloadDidBegin(BADownload)](./downloaddidbegin%28_%29.md)
   Informs the delegate about a started asset download.
-- [func download(BADownload, didWriteBytes: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64)](badownloadmanagerdelegate/download(_:didwritebytes:totalbyteswritten:totalbytesexpectedtowrite:).md)
+- [func download(BADownload, didWriteBytes: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64)](./download%28_,didwritebytes,totalbyteswritten,totalbytesexpectedtowrite%29.md)
   Informs the delegate about the progress of the specified asset download.
-- [func downloadDidPause(BADownload)](badownloadmanagerdelegate/downloaddidpause(_:).md)
+- [func downloadDidPause(BADownload)](./downloaddidpause%28_%29.md)
   Informs the delegate about a paused asset download.
 
 

@@ -1,7 +1,8 @@
 # getWeekDaySchedule(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getWeekDaySchedule(with params: MTRDoorLockClusterGetWeekDayScheduleParams, completion: @escaping @Sendable (MTRDoorLockClusterGetWeekDayScheduleResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func weekDaySchedule(with params: MTRDoorLockClusterGetWeekDayScheduleParams) async throws -> MTRDoorLockClusterGetWeekDayScheduleResponseParams
+```
+
+```objc
+- (void) getWeekDayScheduleWithParams:(MTRDoorLockClusterGetWeekDayScheduleParams *) params completion:(void (^)(MTRDoorLockClusterGetWeekDayScheduleResponseParams *data, NSError *error)) completion;
 ```
 
 

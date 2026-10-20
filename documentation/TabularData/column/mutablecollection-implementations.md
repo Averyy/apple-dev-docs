@@ -1,11 +1,12 @@
 # MutableCollection Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<WrappedElement?>) throws -> R) rethrows -> R?](column/withcontiguousmutablestorageifavailable(_:)-77itz.md)
+- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<WrappedElement?>) throws -> R) rethrows -> R?](./withcontiguousmutablestorageifavailable%28_%29-77itz.md)
   This method always returns `nil` without calling `body`.
 
 

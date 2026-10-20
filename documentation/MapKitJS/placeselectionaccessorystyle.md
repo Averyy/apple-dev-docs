@@ -1,7 +1,8 @@
 # PlaceSelectionAccessoryStyle
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of styles for configuring how a place selection accessory appears.
 
@@ -10,7 +11,7 @@ The set of styles for configuring how a place selection accessory appears.
 
 ## Declaration
 
-```swift
+```
 const PlaceSelectionAccessoryStyle: Readonly<{
     readonly Automatic: "automatic";
     readonly Callout: "callout";
@@ -25,20 +26,21 @@ type PlaceSelectionAccessoryStyle =
 ## Topics
 
 ### Style values
-- [Automatic](placeselectionaccessorystyle/automatic.md)
+- [Automatic](./placeselectionaccessorystyle/automatic.md)
   A style that MapKit automatically chooses based on the size of the map view.
-- [Callout](placeselectionaccessorystyle/callout.md)
+- [Callout](./placeselectionaccessorystyle/callout.md)
   A style that selects between a full and compact presentation based on the map’s size.
-- [CompactCallout](placeselectionaccessorystyle/compactcallout.md)
+- [CompactCallout](./placeselectionaccessorystyle/compactcallout.md)
   A style that displays a compact, space-saving presentation.
-- [FullCallout](placeselectionaccessorystyle/fullcallout.md)
+- [FullCallout](./placeselectionaccessorystyle/fullcallout.md)
   A style that displays a rich, detailed presentation.
-- [OpenInMaps](placeselectionaccessorystyle/openinmaps.md)
+- [OpenInMaps](./placeselectionaccessorystyle/openinmaps.md)
   A style that displays a caption to open in Maps.
 
 ## See Also
 
-- [style](placeselectionaccessory/style.md)
+### Working with styles
+- [style](./placeselectionaccessory/style.md)
   The visual appearance of the place selection accessory.
 
 

@@ -1,7 +1,8 @@
 # init(url:writable:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a path URL resource.
 
@@ -12,6 +13,10 @@ Creates a path URL resource.
 
 ```swift
 init(url URL: URL, writable: Bool)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) URL writable:(BOOL) writable;
 ```
 
 ## Parameters

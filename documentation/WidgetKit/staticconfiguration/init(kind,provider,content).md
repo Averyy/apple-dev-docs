@@ -1,7 +1,8 @@
 # init(kind:provider:content:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for a widget, with no user-configurable options.
 
@@ -20,6 +21,8 @@ Creates a configuration for a widget, with no user-configurable options.
 @preconcurrency init<Provider>(kind: String, provider: Provider, @ViewBuilder content: @escaping (Provider.Entry) -> Content) where Provider : TimelineProvider
 ```
 
+Available when `Content` conforms to `View`.
+
 ## Parameters
 
 - `kind`: A unique string that you choose.
@@ -28,7 +31,8 @@ Creates a configuration for a widget, with no user-configurable options.
 
 ## See Also
 
-- [var body: Self.Body](../swiftui/widgetconfiguration/body-swift.property.md)
+### Creating a widget configuration
+- [var body: Self.Body](../../SwiftUI/widgetconfiguration/body-swift.property.md)
   The content and behavior of this widget.
 
 

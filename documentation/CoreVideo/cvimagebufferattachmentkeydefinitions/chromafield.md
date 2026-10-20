@@ -1,7 +1,8 @@
 # chromaField
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The chroma field information for the image buffer.
 

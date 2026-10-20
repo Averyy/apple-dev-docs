@@ -1,7 +1,8 @@
 # bytes
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the raw bytes of the key.
 

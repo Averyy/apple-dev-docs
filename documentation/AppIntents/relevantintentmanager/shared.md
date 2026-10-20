@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance of this class.
 
@@ -11,7 +12,7 @@ The shared instance of this class.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

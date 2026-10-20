@@ -1,7 +1,8 @@
 # AccountMailOutgoingServerObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The settings for the outgoing mail server for this account.
 
@@ -14,22 +15,27 @@ The settings for the outgoing mail server for this account.
 
 ## Declaration
 
-```swift
+```
 object AccountMailOutgoingServerObject
 ```
 
 ## Properties
 
-- `AuthenticationCredentialsAssetReference` (string): The identifier of an asset declaration that contains the credentials for this account to authenticate with an outgoing mail server. The corresponding asset must be of type `CredentialUserNameAndPassword`. If the `AuthenticationMethod` is `None`, this field must be blank. Otherwise, the declaration must contain this field.
+- `AuthenticationCredentialsAssetReference` (string): The identifier of an asset declaration that contains the credentials for this account to authenticate with an outgoing mail server. The corresponding asset must be of type `CredentialUserNameAndPassword`.
+
+  If the `AuthenticationMethod` is `None`, this field must be blank. Otherwise, the declaration must contain this field.
 - `AuthenticationMethod` (string) *(required)*: The authentication method for the outgoing mail server.
+
+  **Allowed Values**: `None`, `Password`, `CRAMMD5`, `NTLM`, `HTTPMD5`
 - `HostName` (string) *(required)*: The host name for the outgoing mail server.
 - `Port` (integer): The port number for the outgoing mail server.
 
 ## See Also
 
-- [object AccountMailIncomingServerObject](accountmailincomingserverobject.md)
+### Objects
+- [object AccountMailIncomingServerObject](./accountmailincomingserverobject.md)
   The settings for the incoming mail server for this account.
-- [object AccountMailSMIMEObject](accountmailsmimeobject.md)
+- [object AccountMailSMIMEObject](./accountmailsmimeobject.md)
   Settings for S/MIME.
 
 

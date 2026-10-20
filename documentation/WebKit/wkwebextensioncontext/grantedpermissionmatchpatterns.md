@@ -1,7 +1,8 @@
 # grantedPermissionMatchPatterns
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently granted permission match patterns and their expiration dates.
 
@@ -18,6 +19,10 @@ The currently granted permission match patterns and their expiration dates.
 var grantedPermissionMatchPatterns: [WKWebExtension.MatchPattern : Date] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSDictionary<WKWebExtensionMatchPattern *,NSDate *> * grantedPermissionMatchPatterns;
+```
+
 #### Discussion
 
 Match patterns that don’t expire will have a distant future date. This will never include expired entries at time of access.
@@ -28,9 +33,10 @@ Match patterns in this dictionary should be explicitly granted by the user befor
 
 ## See Also
 
-- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.MatchPattern)](wkwebextensioncontext/setpermissionstatus(_:for:)-6auqv.md)
+### Related Documentation
+- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.MatchPattern)](./setpermissionstatus%28_,for%29-6auqv.md)
   Sets the status of a match pattern with a distant future expiration date.
-- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.MatchPattern, expirationDate: Date?)](wkwebextensioncontext/setpermissionstatus(_:for:expirationdate:)-7038f.md)
+- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.MatchPattern, expirationDate: Date?)](./setpermissionstatus%28_,for,expirationdate%29-7038f.md)
   Sets the status of a match pattern with a specific expiration date.
 
 

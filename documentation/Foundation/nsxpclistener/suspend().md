@@ -1,7 +1,8 @@
 # suspend()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspends the listener.
 
@@ -20,17 +21,22 @@ Suspends the listener.
 func suspend()
 ```
 
+```objc
+- (void) suspend;
+```
+
 #### Discussion
 
-As you cannot invalidate a suspended listener, every call to [`suspend()`](nsxpclistener/suspend().md) that you make must be balanced by a call to [`resume()`](nsxpclistener/resume().md).
+As you cannot invalidate a suspended listener, every call to [`suspend()`](./suspend%28%29.md) that you make must be balanced by a call to [`resume()`](./resume%28%29.md).
 
 ## See Also
 
-- [func activate()](nsxpclistener/activate.md)
+### Managing connection state
+- [func activate()](./activate%28%29.md)
   Activates the listener.
-- [func resume()](nsxpclistener/resume.md)
+- [func resume()](./resume%28%29.md)
   Starts processing of incoming requests.
-- [func invalidate()](nsxpclistener/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates the listener.
 
 

@@ -1,22 +1,29 @@
 # scale
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale factor to use when creating the image.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- tvOS 9.2+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 7.0+ - Deprecated in 27.2
+- iPadOS 7.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- tvOS 9.2+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`traitCollection`](../snapshot/traitcollection.md) instead.
 
 ## Declaration
 
 ```swift
 var scale: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGFloat scale;
 ```
 
 #### Discussion
@@ -27,11 +34,12 @@ This snapshotter sets this property to a default value that corresponds to the r
 
 ## See Also
 
-- [var traitCollection: UITraitCollection](mkmapsnapshotter/options/traitcollection.md)
+### Configuring the image output
+- [var traitCollection: UITraitCollection](./traitcollection.md)
   Traits that determine the appearance of the map snapshot.
-- [var size: CGSize](mkmapsnapshotter/options/size.md)
+- [var size: CGSize](./size.md)
   The size of the image that you want to create.
-- [var appearance: NSAppearance?](mkmapsnapshotter/options/appearance.md)
+- [var appearance: NSAppearance?](./appearance.md)
   The visual style (light or dark) to apply to the map when rendering the snapshot image.
 
 

@@ -1,7 +1,8 @@
 # SecTrustGetCertificateCount(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of certificates in an evaluated certificate chain.
 
@@ -20,17 +21,21 @@ Returns the number of certificates in an evaluated certificate chain.
 func SecTrustGetCertificateCount(_ trust: SecTrust) -> CFIndex
 ```
 
+```c
+CFIndex SecTrustGetCertificateCount(SecTrustRef trust);
+```
+
 #### Return Value
 
 The number of certificates in the certificate chain.
 
 #### Discussion
 
-Call the [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) function before calling this function.
+Call the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function before calling this function.
 
 ## Parameters
 
-- `trust`: The trust management object for the certificate that has been evaluated.  Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object and the [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) function to evaluate the certificate chain.
+- `trust`: The trust management object for the certificate that has been evaluated.  Use the [`SecTrustCreateWithCertificates(_:_:_:)`](./sectrustcreatewithcertificates%28_,_,_%29.md) function to create a trust management object and the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function to evaluate the certificate chain.
 
 
 ---

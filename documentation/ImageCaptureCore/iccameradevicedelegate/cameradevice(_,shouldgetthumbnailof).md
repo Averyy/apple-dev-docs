@@ -1,7 +1,8 @@
 # cameraDevice(_:shouldGetThumbnailOf:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the client when the camera is about to execute queued requests for the thumbnail of a specific item.
 
@@ -18,15 +19,20 @@ Tells the client when the camera is about to execute queued requests for the thu
 optional func cameraDevice(_ cameraDevice: ICCameraDevice, shouldGetThumbnailOf item: ICCameraItem) -> Bool
 ```
 
+```objc
+- (BOOL) cameraDevice:(ICCameraDevice *) cameraDevice shouldGetThumbnailOfItem:(ICCameraItem *) item;
+```
+
 #### Discussion
 
 If the request is no longer needed—for example, if the item is no longer displayed on the screen—the client can cancel sending a request to the camera, speeding up the execution queue.
 
 ## See Also
 
-- [func cameraDevice(ICCameraDevice, didReceiveThumbnail: CGImage?, for: ICCameraItem, error: (any Error)?)](iccameradevicedelegate/cameradevice(_:didreceivethumbnail:for:error:).md)
+### Receiving Thumbnails
+- [func cameraDevice(ICCameraDevice, didReceiveThumbnail: CGImage?, for: ICCameraItem, error: (any Error)?)](./cameradevice%28_,didreceivethumbnail,for,error%29.md)
   Tells the client when the requested thumbnail is available.
-- [func cameraDevice(ICCameraDevice, didReceiveThumbnailFor: ICCameraItem)](iccameradevicedelegate/cameradevice(_:didreceivethumbnailfor:).md)
+- [func cameraDevice(ICCameraDevice, didReceiveThumbnailFor: ICCameraItem)](./cameradevice%28_,didreceivethumbnailfor%29.md)
   Tells the client when the requested thumbnail is available.
 
 

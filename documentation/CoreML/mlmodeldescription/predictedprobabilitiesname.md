@@ -1,7 +1,8 @@
 # predictedProbabilitiesName
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the feature output description for all probabilities of a prediction.
 
@@ -20,9 +21,14 @@ The name of the feature output description for all probabilities of a prediction
 var predictedProbabilitiesName: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * predictedProbabilitiesName;
+```
+
 ## See Also
 
-- [var predictedFeatureName: String?](mlmodeldescription/predictedfeaturename.md)
+### Accessing prediction names
+- [var predictedFeatureName: String?](./predictedfeaturename.md)
   The name of the primary prediction feature output description.
 
 

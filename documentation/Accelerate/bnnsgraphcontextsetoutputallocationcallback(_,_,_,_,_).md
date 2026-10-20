@@ -1,7 +1,8 @@
 # BNNSGraphContextSetOutputAllocationCallback(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the allocation and deallocation callbacks for function outputs.
 
@@ -20,6 +21,10 @@ Sets the allocation and deallocation callbacks for function outputs.
 func BNNSGraphContextSetOutputAllocationCallback(_ context: bnns_graph_context_t, _ realloc: bnns_graph_realloc_fn_t?, _ free: bnns_graph_free_all_fn_t?, _ user_memory_context_size: Int, _ user_memory_context: UnsafeMutableRawPointer?) -> Int32
 ```
 
+```c
+int BNNSGraphContextSetOutputAllocationCallback(bnns_graph_context_t context, bnns_graph_realloc_fn_t realloc, bnns_graph_free_all_fn_t free, size_t user_memory_context_size, void *user_memory_context);
+```
+
 #### Return Value
 
 `0` on success, nonzero on failure.
@@ -28,7 +33,7 @@ func BNNSGraphContextSetOutputAllocationCallback(_ context: bnns_graph_context_t
 
 If BNNS can’t bound the required output size prior to execution — for example, if the tensor sizes depend on input data — it allocates outputs during execution. Use this function to override the default memory allocation mechanisms.
 
-If you pass the same `user_memory_context` to [`BNNSGraphContextSetWorkspaceAllocationCallback(_:_:_:_:_:)`](bnnsgraphcontextsetworkspaceallocationcallback(_:_:_:_:_:).md) and [`BNNSGraphContextSetOutputAllocationCallback(_:_:_:_:_:)`](bnnsgraphcontextsetoutputallocationcallback(_:_:_:_:_:).md), BNNS only calls the `free` function once.
+If you pass the same `user_memory_context` to [`BNNSGraphContextSetWorkspaceAllocationCallback(_:_:_:_:_:)`](./bnnsgraphcontextsetworkspaceallocationcallback%28_,_,_,_,_%29.md) and [`BNNSGraphContextSetOutputAllocationCallback(_:_:_:_:_:)`](./bnnsgraphcontextsetoutputallocationcallback%28_,_,_,_,_%29.md), BNNS only calls the `free` function once.
 
 ## Parameters
 
@@ -40,11 +45,12 @@ If you pass the same `user_memory_context` to [`BNNSGraphContextSetWorkspaceAllo
 
 ## See Also
 
-- [func BNNSGraphContextSetWorkspaceAllocationCallback(bnns_graph_context_t, bnns_graph_realloc_fn_t?, bnns_graph_free_all_fn_t?, Int, UnsafeMutableRawPointer?) -> Int32](bnnsgraphcontextsetworkspaceallocationcallback(_:_:_:_:_:).md)
+### Specifying a context’s allocation callbacks
+- [func BNNSGraphContextSetWorkspaceAllocationCallback(bnns_graph_context_t, bnns_graph_realloc_fn_t?, bnns_graph_free_all_fn_t?, Int, UnsafeMutableRawPointer?) -> Int32](./bnnsgraphcontextsetworkspaceallocationcallback%28_,_,_,_,_%29.md)
   Sets the allocation and deallocation callbacks for internal workspace.
-- [typealias bnns_graph_realloc_fn_t](bnns_graph_realloc_fn_t.md)
+- [typealias bnns_graph_realloc_fn_t](./bnns_graph_realloc_fn_t.md)
   The workspace and output allocation function.
-- [typealias bnns_graph_free_all_fn_t](bnns_graph_free_all_fn_t.md)
+- [typealias bnns_graph_free_all_fn_t](./bnns_graph_free_all_fn_t.md)
   The workspace and output deallocation function.
 
 

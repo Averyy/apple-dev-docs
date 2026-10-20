@@ -1,7 +1,8 @@
 # CFErrorCopyFailureReason(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a human-presentable failure reason for a given error.
 
@@ -20,17 +21,21 @@ Returns a human-presentable failure reason for a given error.
 func CFErrorCopyFailureReason(_ err: CFError!) -> CFString!
 ```
 
+```c
+extern CFStringRefCFErrorCopyFailureReason(CFErrorRef err);
+```
+
 #### Return Value
 
-A localized, human-presentable failure reason for `err`, or `NULL` if no user-presentable string is available. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A localized, human-presentable failure reason for `err`, or `NULL` if no user-presentable string is available. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
 The failure reason is a complete sentence which describes why the operation failed. In many cases this will be just the “because” part of the description (but as a complete sentence, which makes localization easier). For example, an error description “Could not save file ‘Letter’ in folder ‘Documents’ because the volume ‘MyDisk’ doesn’t have enough space.” might have a corresponding failure reason, “The volume ‘MyDisk’ doesn’t have enough space.”
 
-By default, this function looks for a value for the [`kCFErrorLocalizedFailureReasonKey`](kcferrorlocalizedfailurereasonkey.md) key in the user info dictionary. Toll-free bridged instances of `NSError` might provide additional behaviors for manufacturing this value.
+By default, this function looks for a value for the [`kCFErrorLocalizedFailureReasonKey`](./kcferrorlocalizedfailurereasonkey.md) key in the user info dictionary. Toll-free bridged instances of `NSError` might provide additional behaviors for manufacturing this value.
 
-When you create a CFError, you should try to make sure the return value is human-presentable and localized by providing a value for [`kCFErrorLocalizedFailureReasonKey`](kcferrorlocalizedfailurereasonkey.md) in the user info dictionary.
+When you create a CFError, you should try to make sure the return value is human-presentable and localized by providing a value for [`kCFErrorLocalizedFailureReasonKey`](./kcferrorlocalizedfailurereasonkey.md) in the user info dictionary.
 
 ## Parameters
 
@@ -38,15 +43,16 @@ When you create a CFError, you should try to make sure the return value is human
 
 ## See Also
 
-- [func CFErrorGetDomain(CFError!) -> CFErrorDomain!](cferrorgetdomain(_:).md)
+### Getting Information About an Error
+- [func CFErrorGetDomain(CFError!) -> CFErrorDomain!](./cferrorgetdomain%28_%29.md)
   Returns the error domain for a given CFError.
-- [func CFErrorGetCode(CFError!) -> CFIndex](cferrorgetcode(_:).md)
+- [func CFErrorGetCode(CFError!) -> CFIndex](./cferrorgetcode%28_%29.md)
   Returns the error code for a given CFError.
-- [func CFErrorCopyUserInfo(CFError!) -> CFDictionary!](cferrorcopyuserinfo(_:).md)
+- [func CFErrorCopyUserInfo(CFError!) -> CFDictionary!](./cferrorcopyuserinfo%28_%29.md)
   Returns the user info dictionary for a given CFError.
-- [func CFErrorCopyDescription(CFError!) -> CFString!](cferrorcopydescription(_:).md)
+- [func CFErrorCopyDescription(CFError!) -> CFString!](./cferrorcopydescription%28_%29.md)
   Returns a human-presentable description for a given error.
-- [func CFErrorCopyRecoverySuggestion(CFError!) -> CFString!](cferrorcopyrecoverysuggestion(_:).md)
+- [func CFErrorCopyRecoverySuggestion(CFError!) -> CFString!](./cferrorcopyrecoverysuggestion%28_%29.md)
   Returns a human presentable recovery suggestion for a given error.
 
 

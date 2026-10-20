@@ -1,18 +1,19 @@
 # dead
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The receive right corresponding to the given send right was destroyed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

@@ -1,25 +1,27 @@
 # OSCollectionType
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t OSCollectionType;
 ```
 
 ## See Also
 
-- [OSCollectionTypeID](oscollectiontypeid.md)
-- [OSCollectionTypeName](oscollectiontypename.md)
-- [Collection Types](3180990-collection_types.md)
+### Getting Type Information
+- [OSCollectionTypeID](./oscollectiontypeid.md)
+- [OSCollectionTypeName](./oscollectiontypename.md)
+- [Collection Types](./api-3180990-collection_types.md)
 
 
 ---

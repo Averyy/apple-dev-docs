@@ -1,7 +1,8 @@
 # operationalCertificateIssuerQueue
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var operationalCertificateIssuerQueue: dispatch_queue_t? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) dispatch_queue_t operationalCertificateIssuerQueue;
 ```
 
 

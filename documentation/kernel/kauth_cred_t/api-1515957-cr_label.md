@@ -1,14 +1,15 @@
 # cr_label
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 struct label *__ptrauth(2,1,35728,"authenticates-null-values") cr_label;
 ```
 

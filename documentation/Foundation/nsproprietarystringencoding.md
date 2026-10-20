@@ -1,7 +1,8 @@
 # NSProprietaryStringEncoding
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Installation-specific encoding.
 
@@ -14,10 +15,16 @@ Installation-specific encoding.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: This encoding has been deprecated—there is no replacement.
+
 ## Declaration
 
 ```swift
 var NSProprietaryStringEncoding: UInt { get }
+```
+
+```c
+NSProprietaryStringEncoding
 ```
 
 #### Discussion

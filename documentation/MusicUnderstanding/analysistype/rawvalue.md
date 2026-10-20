@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that identifies the type of music analysis to perform.
 
@@ -22,17 +23,18 @@ let rawValue: String
 
 ## See Also
 
-- [static let key: AnalysisType](analysistype/key.md)
+### Types of analysis
+- [static let key: AnalysisType](./key.md)
   A value that identifies the key music analysis type.
-- [static let instrumentActivity: AnalysisType](analysistype/instrumentactivity.md)
+- [static let instrumentActivity: AnalysisType](./instrumentactivity.md)
   A value that identifies the instrument activity music analysis type.
-- [static let loudness: AnalysisType](analysistype/loudness.md)
+- [static let loudness: AnalysisType](./loudness.md)
   A value that identifies the loudness music analysis type.
-- [static let pace: AnalysisType](analysistype/pace.md)
+- [static let pace: AnalysisType](./pace.md)
   A value that identifies the pace music analysis type.
-- [static let rhythm: AnalysisType](analysistype/rhythm.md)
+- [static let rhythm: AnalysisType](./rhythm.md)
   A value that identifies the rhythm music analysis type.
-- [static let structure: AnalysisType](analysistype/structure.md)
+- [static let structure: AnalysisType](./structure.md)
   A value that identifies the structure music analysis type.
 
 

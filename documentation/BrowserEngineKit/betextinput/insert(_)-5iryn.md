@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts a text suggestion in response to a suggestion selection.
@@ -18,9 +19,13 @@ Inserts a text suggestion in response to a suggestion selection.
 func insert(_ textSuggestion: BETextSuggestion)
 ```
 
+```objc
+- (void) insertTextSuggestion:(BETextSuggestion *) textSuggestion;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 
@@ -32,13 +37,14 @@ The system calls this method to suggest text-view insertions, for example, for A
 
 ## See Also
 
-- [func insert(BETextAlternatives)](betextinput/insert(_:)-6x7hd.md)
+### Inserting and replacing text
+- [func insert(BETextAlternatives)](./insert%28_%29-6x7hd.md)
   Inserts the given text or one of the available alternatives.
-- [func replaceSelectedText(String, withText: String)](betextinput/replaceselectedtext(_:withtext:).md)
+- [func replaceSelectedText(String, withText: String)](./replaceselectedtext%28_,withtext%29.md)
   Replaces text with new text, either within the current selection or near the cursor.
-- [func replaceDictatedText(String, withText: String)](betextinput/replacedictatedtext(_:withtext:).md)
+- [func replaceDictatedText(String, withText: String)](./replacedictatedtext%28_,withtext%29.md)
   Replaces the specified text for the text of a dictation.
-- [func add(BETextAlternatives)](betextinput/add(_:).md)
+- [func add(BETextAlternatives)](./add%28_%29.md)
   Adds text alternatives to the text input object for the current selection.
 
 

@@ -1,7 +1,8 @@
 # currentLaneGuidance
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current lane guidance to use for navigation metadata.
 
@@ -17,25 +18,30 @@ The current lane guidance to use for navigation metadata.
 var currentLaneGuidance: CPLaneGuidance? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) CPLaneGuidance * currentLaneGuidance;
+```
+
 #### Discussion
 
-First, add the required [`CPLaneGuidance`](cplaneguidance.md) objects to the session using [`add(_:)`](cpnavigationsession/add(_:)-93qpu.md), then set this property with the current lane guidance.
+First, add the required [`CPLaneGuidance`](../cplaneguidance.md) objects to the session using [`add(_:)`](./add%28_%29-93qpu.md), then set this property with the current lane guidance.
 
 Set this property to `nil` if there’s no current lane guidance.
 
 ## See Also
 
-- [var upcomingManeuvers: [CPManeuver]](cpnavigationsession/upcomingmaneuvers.md)
+### Managing Upcoming Maneuvers
+- [var upcomingManeuvers: [CPManeuver]](./upcomingmaneuvers.md)
   The next set of maneuvers the user should perform while following the current route.
-- [var maneuverState: CPManeuverState](cpnavigationsession/maneuverstate.md)
+- [var maneuverState: CPManeuverState](./maneuverstate.md)
   The current maneuver state.
-- [var currentRoadNameVariants: [String]](cpnavigationsession/currentroadnamevariants.md)
+- [var currentRoadNameVariants: [String]](./currentroadnamevariants.md)
   An array of strings that describe variants of the current road name.
-- [func add([CPManeuver])](cpnavigationsession/add(_:)-17l62.md)
+- [func add([CPManeuver])](./add%28_%29-17l62.md)
   Adds one or more maneuvers, in chronological order, to the navigation session.
-- [func add([CPLaneGuidance])](cpnavigationsession/add(_:)-93qpu.md)
+- [func add([CPLaneGuidance])](./add%28_%29-93qpu.md)
   Adds one or more lane guidance instances to the navigation session.
-- [class CPManeuver](cpmaneuver.md)
+- [class CPManeuver](../cpmaneuver.md)
   An object that describes a single navigation instruction.
 
 

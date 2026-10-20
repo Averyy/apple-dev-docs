@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The value in unit coordinates.
@@ -20,13 +21,18 @@ The value in unit coordinates.
 var value: Float { get }
 ```
 
+```objc
+@property (readonly) float value;
+```
+
 ## See Also
 
-- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCLinearInput, Float) -> Void)?](gclinearinput/valuedidchangehandler.md)
+### Getting the value
+- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCLinearInput, Float) -> Void)?](./valuedidchangehandler.md)
   The block that the profile calls when an element’s value changes.
-- [var lastValueTimestamp: TimeInterval](gclinearinput/lastvaluetimestamp.md)
+- [var lastValueTimestamp: TimeInterval](./lastvaluetimestamp.md)
   The time of the most recent value change.
-- [var lastValueLatency: TimeInterval](gclinearinput/lastvaluelatency.md)
+- [var lastValueLatency: TimeInterval](./lastvaluelatency.md)
   The time in seconds between the last value change and the current time.
 
 

@@ -1,7 +1,8 @@
 # SetRange
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current range of the slider control.
 
@@ -10,7 +11,7 @@ Sets the current range of the slider control.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetRange(IOUserVideoSliderRange in_range);
 ```
 
@@ -24,13 +25,14 @@ Changing the range will send a notification to the host to update the object sta
 
 ## See Also
 
-- [SetControlValue](iouservideoslidercontrol/setcontrolvalue.md)
+### Accessing the value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the current control value.
-- [GetControlValue](iouservideoslidercontrol/getcontrolvalue.md)
+- [GetControlValue](./getcontrolvalue.md)
   Gets the current value of the control.
-- [GetRange](iouservideoslidercontrol/getrange.md)
+- [GetRange](./getrange.md)
   Gets the current range of the slider control.
-- [IOUserVideoSliderRange](iouservideosliderrange.md)
+- [IOUserVideoSliderRange](../iouservideosliderrange.md)
   The minimum and maximum range for the slider value.
 
 

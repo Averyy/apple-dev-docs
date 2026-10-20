@@ -1,7 +1,8 @@
 # UIUserInterfaceActiveAppearance.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The interface has an unspecified appearance.
 
@@ -18,11 +19,16 @@ The interface has an unspecified appearance.
 case unspecified
 ```
 
+```c
+UIUserInterfaceActiveAppearanceUnspecified
+```
+
 ## See Also
 
-- [UIUserInterfaceActiveAppearance.inactive](uiuserinterfaceactiveappearance/inactive.md)
+### Constants
+- [UIUserInterfaceActiveAppearance.inactive](./inactive.md)
   The interface has an inactive appearance.
-- [UIUserInterfaceActiveAppearance.active](uiuserinterfaceactiveappearance/active.md)
+- [UIUserInterfaceActiveAppearance.active](./active.md)
   The interface has an active appearance.
 
 

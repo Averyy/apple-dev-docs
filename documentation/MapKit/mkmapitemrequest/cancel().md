@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels an in-progress map item request.
 
@@ -20,9 +21,14 @@ Cancels an in-progress map item request.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 ## See Also
 
-- [func getMapItem(completionHandler: (MKMapItem?, (any Error)?) -> Void)](mkmapitemrequest/getmapitem(completionhandler:).md)
+### Starting and stopping requests
+- [func getMapItem(completionHandler: (MKMapItem?, (any Error)?) -> Void)](./getmapitem%28completionhandler%29.md)
   Requests a map item and calls the provided completion handler.
 
 

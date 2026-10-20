@@ -1,7 +1,8 @@
 # TVTopShelfContentProvider
 
 **Framework**: TV Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The main interface for your Top Shelf app extension, which you use to provide content for the top shelf area of the tvOS Home Screen.
 
@@ -14,38 +15,43 @@ The main interface for your Top Shelf app extension, which you use to provide co
 class TVTopShelfContentProvider
 ```
 
+```objc
+@interface TVTopShelfContentProvider : NSObject
+```
+
 #### Overview
 
 Adopt this protocol in the principal class of your Top Shelf app extension. Use its methods to create the items that you want to display in the top shelf interface. For each item, specify additional resources such as the image or video to display.
 
-Fill the top shelf area with the user’s active content or with content you want to highlight or promote. For each distinct piece of content, create a [`TVTopShelfCarouselItem`](tvtopshelfcarouselitem.md) or [`TVTopShelfSectionedItem`](tvtopshelfsectioneditem.md) and fill the object with details about that content. For example, provide an identifier for the item and URLs for the pictures or videos you want to display for that item. After creating your items, add them to an appropriate content object and return them from your [`loadTopShelfContent(completionHandler:)`](tvtopshelfcontentprovider/loadtopshelfcontent(completionhandler:).md) method.
+Fill the top shelf area with the user’s active content or with content you want to highlight or promote. For each distinct piece of content, create a [`TVTopShelfCarouselItem`](./tvtopshelfcarouselitem.md) or [`TVTopShelfSectionedItem`](./tvtopshelfsectioneditem.md) and fill the object with details about that content. For example, provide an identifier for the item and URLs for the pictures or videos you want to display for that item. After creating your items, add them to an appropriate content object and return them from your [`loadTopShelfContent(completionHandler:)`](./tvtopshelfcontentprovider/loadtopshelfcontent%28completionhandler%29.md) method.
 
 ## Topics
 
 ### Providing the Top Shelf Content
-- [func loadTopShelfContent(completionHandler: ((any TVTopShelfContent)?) -> Void)](tvtopshelfcontentprovider/loadtopshelfcontent(completionhandler:).md)
+- [func loadTopShelfContent(completionHandler: ((any TVTopShelfContent)?) -> Void)](./tvtopshelfcontentprovider/loadtopshelfcontent%28completionhandler%29.md)
   Provides the content you want to display in the top shelf for your app.
 ### Updating Your Content
-- [class func topShelfContentDidChange()](tvtopshelfcontentprovider/topshelfcontentdidchange.md)
+- [class func topShelfContentDidChange()](./tvtopshelfcontentprovider/topshelfcontentdidchange%28%29.md)
   Tells the system that your top shelf content changed and requires an update.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Building a Full Screen Top Shelf Extension](building-a-full-screen-top-shelf-extension.md)
+### Top shelf app extensions
+- [Building a Full Screen Top Shelf Extension](./building-a-full-screen-top-shelf-extension.md)
   Highlight content from your Apple TV application by building a full screen Top Shelf extension.
-- [Legacy Extension](legacy-extension.md)
+- [Legacy Extension](./legacy-extension.md)
   Help users discover your app by providing top shelf content and a description of your tvOS app.
 
 

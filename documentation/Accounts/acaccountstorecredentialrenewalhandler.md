@@ -1,7 +1,8 @@
 # ACAccountStoreCredentialRenewalHandler
 
 **Framework**: Accounts  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Specifies a handler to call when credentials are renewed.
 
@@ -17,6 +18,10 @@ Specifies a handler to call when credentials are renewed.
 typealias ACAccountStoreCredentialRenewalHandler = (ACAccountCredentialRenewResult, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(enum ACAccountCredentialRenewResult, NSError *) ACAccountStoreCredentialRenewalHandler;
+```
+
 #### Discussion
 
 The renewal handler parameters are:
@@ -26,9 +31,10 @@ The renewal handler parameters are:
 
 ## See Also
 
-- [func renewCredentials(for: ACAccount!, completion: ((ACAccountCredentialRenewResult, (any Error)?) -> Void)!)](acaccountstore/renewcredentials(for:completion:).md)
+### Renewing Account Credentials
+- [func renewCredentials(for: ACAccount!, completion: ((ACAccountCredentialRenewResult, (any Error)?) -> Void)!)](./acaccountstore/renewcredentials%28for,completion%29.md)
   Renews account credentials when the credentials are no longer valid.
-- [enum ACAccountCredentialRenewResult](acaccountcredentialrenewresult.md)
+- [enum ACAccountCredentialRenewResult](./acaccountcredentialrenewresult.md)
   Status codes of credential renewal requests.
 
 

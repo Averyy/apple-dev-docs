@@ -1,6 +1,7 @@
 # Analyzing Apple GPU performance using the shader cost graph
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Discover potential shader performance issues by examining pipeline states.
 
@@ -10,7 +11,7 @@ One key method of triaging performance bottlenecks is to look at the most expens
 
 > ❗ **Important**: The shader cost graph feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
-##### View the Shader Cost Graph
+##### View the shader cost graph
 
 To open the shader cost graph, click the Performance button in the Metal debugger’s Debug navigator, and then click the Shaders tab above the Performance timeline.
 
@@ -18,27 +19,27 @@ To open the shader cost graph, click the Performance button in the Metal debugge
 
 When you select a pipeline state in the Timeline navigator, the shader cost graph for that pipeline state’s shaders appears on the right.
 
-![A screenshot of the Metal debugger’s shader cost graph.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-shader-cost-graph@2x.png)
+![A screenshot of the Metal debugger’s shader cost graph.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-essentials-shader-cost-graph@2x.png)
 
-##### Switch Between Shader Types
+##### Switch between shader types
 
 By default, selecting a render pipeline state shows the fragment shader cost graph. Selecting a compute pipeline state shows the compute shader cost graph.
 
 You can switch between different shader types using the Vertex and Fragment tabs above the shader cost graph.
 
-##### Navigate the Shader Cost Graph
+##### Navigate the shader cost graph
 
 The shader cost graph in the top section left-aligns the most expensive shader function calls, and shows the function call stack from top to bottom. The shader source code of the corresponding shader type appears below the graph.
 
 You can select a function in the shader cost graph to view its shader source code below in the source editor.
 
-##### Understand Per Line Costs
+##### Understand per-line costs
 
 The percentage weights appear in the gutter of the shader source code to the left of the lines of code.
 
 The pie chart to the right of each weight contains performance statistics to help you improve the shader code. Hover over a pie chart to display the detailed breakdown of the instructions of a line.
 
-![A screenshot showing the popover that appears after clicking a pie chart icon. The popover contains information about runtime statistics, instruction types, and instruction data types.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-shader-cost-graph-per-line-stats@2x.png)
+![A screenshot showing the popover that appears after clicking a pie chart icon. The popover contains information about runtime statistics, instruction types, and instruction data types.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-essentials-shader-cost-graph-per-line-stats@2x.png)
 
 The instruction details include the following runtime statistics infomation:
 
@@ -84,7 +85,7 @@ Each arithmetic instruction may operate on different data types, such as half-fl
 - Integer
 - Bits
 
-##### Switch Between Per Line Metric Modes
+##### Switch between per-line metric modes
 
 In the shader source code control bar, you can choose different modes for the per-line shader profiling statistics in the gutter. Options include the following:
 
@@ -94,23 +95,24 @@ In the shader source code control bar, you can choose different modes for the pe
 | Number of Instructions | The total number of assembly instructions that active threads executed. |
 | Thread Divergence | 1 - the total number of instructions from active threads divided by the number of theoretical maximum instructions that the system can execute. |
 
-For more information about the Metal profiling tools for M3 and A17 Pro, see [`Discover new Metal profiling tools for M3 and A17 Pro`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/111374/).
+For more information about the Metal profiling tools for M3 and A17 Pro, see [Discover new Metal profiling tools for M3 and A17 Pro](https://developer.apple.com/videos/play/tech-talks/111374/).
 
 ## See Also
 
-- [Analyzing your Metal workload](analyzing-your-metal-workload.md)
+### Metal workload analysis
+- [Analyzing your Metal workload](./analyzing-your-metal-workload.md)
   Investigate your app’s workload, dependencies, performance, and memory impact using the Metal debugger.
-- [Analyzing resource dependencies](analyzing-resource-dependencies.md)
+- [Analyzing resource dependencies](./analyzing-resource-dependencies.md)
   Avoid unnecessary work in your Metal app by understanding the relationships between resources.
-- [Analyzing memory usage](analyzing-memory-usage.md)
+- [Analyzing memory usage](./analyzing-memory-usage.md)
   Manage your Metal app’s memory usage by inspecting its resources.
-- [Analyzing Apple GPU performance using a visual timeline](analyzing-apple-gpu-performance-using-a-visual-timeline.md)
+- [Analyzing Apple GPU performance using a visual timeline](./analyzing-apple-gpu-performance-using-a-visual-timeline.md)
   Locate performance issues using the Performance timeline.
-- [Analyzing Apple GPU performance using counter statistics](analyzing-apple-gpu-performance-using-counter-statistics.md)
+- [Analyzing Apple GPU performance using counter statistics](./analyzing-apple-gpu-performance-using-counter-statistics.md)
   Optimize performance by examining counters for individual passes and commands.
-- [Analyzing Apple GPU performance with performance heat maps](analyzing-apple-gpu-performance-using-performance-heatmaps-a17-m3.md)
+- [Analyzing Apple GPU performance with performance heat maps](./analyzing-apple-gpu-performance-using-performance-heatmaps-a17-m3.md)
   Gain insights to SIMD group performance by inspecting source code execution.
-- [Analyzing non-Apple GPU performance using counter statistics](analyzing-non-apple-gpu-performance-using-counter-statistics.md)
+- [Analyzing non-Apple GPU performance using counter statistics](./analyzing-non-apple-gpu-performance-using-counter-statistics.md)
   Optimize performance by examining counters for individual passes and commands.
 
 

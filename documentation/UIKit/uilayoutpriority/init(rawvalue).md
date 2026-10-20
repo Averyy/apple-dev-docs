@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layout priority structure with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(rawValue: Float)
 
 ## See Also
 
-- [init(Float)](uilayoutpriority/init(_:).md)
+### Initializers
+- [init(Float)](./init%28_%29.md)
   Creates a layout priority structure.
 
 

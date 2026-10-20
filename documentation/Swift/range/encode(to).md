@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes this value into the given encoder.
 
@@ -20,6 +21,8 @@ Encodes this value into the given encoder.
 func encode(to encoder: any Encoder) throws
 ```
 
+Available when `Bound` conforms to `Comparable` and `Encodable`.
+
 #### Discussion
 
 If the value fails to encode anything, `encoder` will encode an empty keyed container in its place.
@@ -32,7 +35,8 @@ This function throws an error if any values are invalid for the given encoder’
 
 ## See Also
 
-- [init(from: any Decoder) throws](range/init(from:).md)
+### Encoding and Decoding a Range
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 
 

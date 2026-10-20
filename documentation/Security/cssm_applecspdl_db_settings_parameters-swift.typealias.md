@@ -1,7 +1,8 @@
 # CSSM_APPLECSPDL_DB_SETTINGS_PARAMETERS
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias CSSM_APPLECSPDL_DB_SETTINGS_PARAMETERS = cssm_applecspdl_db_settings_parameters
+```
+
+```c
+typedef struct cssm_applecspdl_db_settings_parameters CSSM_APPLECSPDL_DB_SETTINGS_PARAMETERS;
 ```
 
 

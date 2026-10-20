@@ -1,7 +1,8 @@
 # moveColor(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func moveColor(with params: MTRColorControlClusterMoveColorParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func moveColor(with params: MTRColorControlClusterMoveColorParams) async throws
+```
+
+```objc
+- (void) moveColorWithParams:(MTRColorControlClusterMoveColorParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(repeating:count:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new collection containing the specified number of a single, repeated value.
 
@@ -19,6 +20,8 @@ Creates a new collection containing the specified number of a single, repeated v
 ```swift
 init(repeating repeatedValue: Base.Element, count: Int)
 ```
+
+Available when `Base` conforms to `RangeReplaceableCollection`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # addProgressRange(fromStart:toEnd:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a progress range to a given activity.
 
@@ -18,9 +19,13 @@ Adds a progress range to a given activity.
 func addProgressRange(fromStart start: Double, toEnd end: Double)
 ```
 
+```objc
+- (void) addProgressRangeFromStart:(double) start toEnd:(double) end;
+```
+
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](../recording-student-progress.md)
 
 ## Parameters
 
@@ -29,7 +34,8 @@ func addProgressRange(fromStart start: Double, toEnd end: Double)
 
 ## See Also
 
-- [var progress: Double](clsactivity/progress.md)
+### Measuring progress
+- [var progress: Double](./progress.md)
   A measure of progress through the task, given as a fraction in the range [0, 1].
 
 

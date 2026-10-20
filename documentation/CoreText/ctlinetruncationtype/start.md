@@ -1,21 +1,26 @@
 # CTLineTruncationType.start
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case start
+```
+
+```c
+kCTLineTruncationStart
 ```
 
 #### Discussion
@@ -24,8 +29,9 @@ Truncate the beginning of the line, leaving the end portion visible.
 
 ## See Also
 
-- [CTLineTruncationType.end](ctlinetruncationtype/end.md)
-- [CTLineTruncationType.middle](ctlinetruncationtype/middle.md)
+### Constants
+- [CTLineTruncationType.end](./end.md)
+- [CTLineTruncationType.middle](./middle.md)
 
 
 ---

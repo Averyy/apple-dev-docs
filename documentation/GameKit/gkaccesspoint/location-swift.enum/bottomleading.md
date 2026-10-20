@@ -1,7 +1,8 @@
 # GKAccessPoint.Location.bottomLeading
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The lower-left corner of the screen.
 
@@ -19,17 +20,22 @@ The lower-left corner of the screen.
 case bottomLeading
 ```
 
+```c
+GKAccessPointLocationBottomLeading
+```
+
 ## Mentions
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+- [Adding an access point to your game](../../adding-an-access-point-to-your-game.md)
 
 ## See Also
 
-- [GKAccessPoint.Location.bottomTrailing](gkaccesspoint/location-swift.enum/bottomtrailing.md)
+### Corners
+- [GKAccessPoint.Location.bottomTrailing](./bottomtrailing.md)
   The lower-right corner of the screen.
-- [GKAccessPoint.Location.topLeading](gkaccesspoint/location-swift.enum/topleading.md)
+- [GKAccessPoint.Location.topLeading](./topleading.md)
   The upper-left corner of the screen.
-- [GKAccessPoint.Location.topTrailing](gkaccesspoint/location-swift.enum/toptrailing.md)
+- [GKAccessPoint.Location.topTrailing](./toptrailing.md)
   The upper-right corner of the screen.
 
 

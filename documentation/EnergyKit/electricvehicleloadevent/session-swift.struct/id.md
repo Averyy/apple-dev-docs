@@ -1,14 +1,15 @@
 # id
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the session.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,15 +19,16 @@ let id: UUID
 
 ## See Also
 
-- [init(id: UUID, state: ElectricVehicleLoadEvent.Session.State, guidanceState: ElectricVehicleLoadEvent.Session.GuidanceState)](electricvehicleloadevent/session-swift.struct/init(id:state:guidancestate:).md)
+### Creating a load event
+- [init(id: UUID, state: ElectricVehicleLoadEvent.Session.State, guidanceState: ElectricVehicleLoadEvent.Session.GuidanceState)](./init%28id,state,guidancestate%29.md)
   Creates an electrical load event session.
-- [let guidanceState: ElectricVehicleLoadEvent.Session.GuidanceState](electricvehicleloadevent/session-swift.struct/guidancestate-swift.property.md)
+- [let guidanceState: ElectricVehicleLoadEvent.Session.GuidanceState](./guidancestate-swift.property.md)
   Identifies the provided guidance and its usability by the load device
-- [let state: ElectricVehicleLoadEvent.Session.State](electricvehicleloadevent/session-swift.struct/state-swift.property.md)
+- [let state: ElectricVehicleLoadEvent.Session.State](./state-swift.property.md)
   The state of the session.
-- [ElectricVehicleLoadEvent.Session.GuidanceState](electricvehicleloadevent/session-swift.struct/guidancestate-swift.struct.md)
+- [ElectricVehicleLoadEvent.Session.GuidanceState](./guidancestate-swift.struct.md)
   Identifies the provided guidance and its usability by the load device
-- [ElectricVehicleLoadEvent.Session.State](electricvehicleloadevent/session-swift.struct/state-swift.enum.md)
+- [ElectricVehicleLoadEvent.Session.State](./state-swift.enum.md)
   The state of the session.
 
 

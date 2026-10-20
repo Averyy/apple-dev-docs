@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration.
 

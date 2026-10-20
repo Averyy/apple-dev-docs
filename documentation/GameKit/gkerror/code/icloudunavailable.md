@@ -1,7 +1,8 @@
 # GKError.Code.iCloudUnavailable
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system can’t complete the requested operation because it can’t access the player’s iCloud account.
 
@@ -20,31 +21,36 @@ The system can’t complete the requested operation because it can’t access th
 case iCloudUnavailable
 ```
 
+```c
+GKErrorICloudUnavailable
+```
+
 ## See Also
 
-- [GKError.Code.userDenied](gkerror/code/userdenied.md)
+### Player-Related Errors
+- [GKError.Code.userDenied](./userdenied.md)
   The system can’t complete the requested operation because the user denied it.
-- [GKError.Code.invalidCredentials](gkerror/code/invalidcredentials.md)
+- [GKError.Code.invalidCredentials](./invalidcredentials.md)
   The system can’t complete the requested operation because the user name or password are incorrect.
-- [GKError.Code.notAuthenticated](gkerror/code/notauthenticated.md)
+- [GKError.Code.notAuthenticated](./notauthenticated.md)
   The system can’t complete the requested operation because the system hasn’t authorized the player.
-- [GKError.Code.authenticationInProgress](gkerror/code/authenticationinprogress.md)
+- [GKError.Code.authenticationInProgress](./authenticationinprogress.md)
   The system can’t complete the requested operation because the local player is already authenticating.
-- [GKError.Code.parentalControlsBlocked](gkerror/code/parentalcontrolsblocked.md)
+- [GKError.Code.parentalControlsBlocked](./parentalcontrolsblocked.md)
   The system can’t complete the requested operation because the user disabled this feature in Restrictions.
-- [GKError.Code.playerStatusExceedsMaximumLength](gkerror/code/playerstatusexceedsmaximumlength.md)
+- [GKError.Code.playerStatusExceedsMaximumLength](./playerstatusexceedsmaximumlength.md)
   The player’s status exceeds the maximum length.
-- [GKError.Code.playerStatusInvalid](gkerror/code/playerstatusinvalid.md)
+- [GKError.Code.playerStatusInvalid](./playerstatusinvalid.md)
   The player’s status is invalid.
-- [GKError.Code.underage](gkerror/code/underage.md)
+- [GKError.Code.underage](./underage.md)
   The system can’t complete the requested operation because this feature isn’t available to underage players.
-- [GKError.Code.playerPhotoFailure](gkerror/code/playerphotofailure.md)
+- [GKError.Code.playerPhotoFailure](./playerphotofailure.md)
   The system can’t complete the requested operation to retrieve a player’s photo.
-- [GKError.Code.ubiquityContainerUnavailable](gkerror/code/ubiquitycontainerunavailable.md)
+- [GKError.Code.ubiquityContainerUnavailable](./ubiquitycontainerunavailable.md)
   The system can’t complete the requested operation because the user hasn’t signed in to iCloud or hasn’t enabled iCloud Drive.
-- [GKError.Code.notAuthorized](gkerror/code/notauthorized.md)
+- [GKError.Code.notAuthorized](./notauthorized.md)
   The system can’t complete the requested operation because the system hasn’t authorized the player.
-- [GKError.Code.lockdownMode](gkerror/code/lockdownmode.md)
+- [GKError.Code.lockdownMode](./lockdownmode.md)
   The system can’t complete the requested operation because the player enabled Lockdown Mode on the device.
 
 

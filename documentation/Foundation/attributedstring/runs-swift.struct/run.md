@@ -1,7 +1,8 @@
 # AttributedString.Runs.Run
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -22,22 +23,22 @@ struct Run
 ## Topics
 
 ### Instance Properties
-- [var attributes: AttributeContainer](attributedstring/runs-swift.struct/run/attributes.md)
-- [var range: Range<AttributedString.Index>](attributedstring/runs-swift.struct/run/range.md)
+- [var attributes: AttributeContainer](./run/attributes.md)
+- [var range: Range<AttributedString.Index>](./run/range.md)
 ### Subscripts
-- [subscript<K>(K.Type) -> K.Value?](attributedstring/runs-swift.struct/run/subscript(_:).md)
-- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](attributedstring/runs-swift.struct/run/subscript(dynamicmember:)-66vfm.md)
-- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](attributedstring/runs-swift.struct/run/subscript(dynamicmember:)-6royv.md)
+- [subscript<K>(K.Type) -> K.Value?](./run/subscript%28_%29.md)
+- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](./run/subscript%28dynamicmember%29-66vfm.md)
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](./run/subscript%28dynamicmember%29-6royv.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

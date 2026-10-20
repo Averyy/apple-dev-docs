@@ -1,7 +1,8 @@
 # isInTemporaryStore
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this item is in a temporary store.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether this item is in a temporary store.
 var isInTemporaryStore: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isInTemporaryStore) BOOL inTemporaryStore;
+```
+
 #### Discussion
 
 A device may use a temporary store when it captures images while tethered to a computer.
 
 ## See Also
 
-- [var device: ICCameraDevice?](iccameraitem/device.md)
+### Locating an Item
+- [var device: ICCameraDevice?](./device.md)
   The item’s parent device.
-- [var fileSystemPath: String?](iccameraitem/filesystempath.md)
+- [var fileSystemPath: String?](./filesystempath.md)
   The item’s file system path on a camera using the mass storage transport type.
-- [var parentFolder: ICCameraFolder?](iccameraitem/parentfolder.md)
+- [var parentFolder: ICCameraFolder?](./parentfolder.md)
   This item’s parent folder.
 
 

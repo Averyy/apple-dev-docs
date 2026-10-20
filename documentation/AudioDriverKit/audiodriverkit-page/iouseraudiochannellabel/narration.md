@@ -1,7 +1,8 @@
 # Narration
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The narration channel.
 
@@ -10,21 +11,22 @@ The narration channel.
 
 ## Declaration
 
-```swift
+```c
 Narration
 ```
 
 ## See Also
 
-- [ClickTrack](audiodriverkit/iouseraudiochannellabel/clicktrack.md)
+### Alternate Content Channels
+- [ClickTrack](./clicktrack.md)
   The click track channel.
-- [DialogCentricMix](audiodriverkit/iouseraudiochannellabel/dialogcentricmix.md)
+- [DialogCentricMix](./dialogcentricmix.md)
   The dialog-centric mix channel.
-- [ForeignLanguage](audiodriverkit/iouseraudiochannellabel/foreignlanguage.md)
+- [ForeignLanguage](./foreignlanguage.md)
   The foreign language channel.
-- [HearingImpaired](audiodriverkit/iouseraudiochannellabel/hearingimpaired.md)
+- [HearingImpaired](./hearingimpaired.md)
   The audio for the hearing-impaired channel.
-- [Haptic](audiodriverkit/iouseraudiochannellabel/haptic.md)
+- [Haptic](./haptic.md)
   The haptic effects channel.
 
 

@@ -1,7 +1,8 @@
 # symbolicLink
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Symbolic link
 

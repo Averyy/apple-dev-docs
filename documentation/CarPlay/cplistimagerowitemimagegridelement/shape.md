@@ -1,7 +1,8 @@
 # CPListImageRowItemImageGridElement.Shape
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of shape used to draw a list item.
 
@@ -16,25 +17,29 @@ Types of shape used to draw a list item.
 enum Shape
 ```
 
+```c
+enum CPListImageRowItemImageGridElementShape : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CPListImageRowItemImageGridElement.Shape.circular](cplistimagerowitemimagegridelement/shape/circular.md)
+- [CPListImageRowItemImageGridElement.Shape.circular](./shape/circular.md)
   The list item will render a row of elements.
-- [CPListImageRowItemImageGridElement.Shape.roundedRectangle](cplistimagerowitemimagegridelement/shape/roundedrectangle.md)
+- [CPListImageRowItemImageGridElement.Shape.roundedRectangle](./shape/roundedrectangle.md)
   The list item will render a condensed list of rounded rectangle elements.
 ### Initializers
-- [init?(rawValue: Int)](cplistimagerowitemimagegridelement/shape/init(rawvalue:).md)
+- [init?(rawValue: Int)](./shape/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

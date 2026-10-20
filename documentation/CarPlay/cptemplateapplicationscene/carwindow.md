@@ -1,7 +1,8 @@
 # carWindow
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window that belongs to the scene.
 
@@ -16,13 +17,18 @@ The window that belongs to the scene.
 var carWindow: CPWindow { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nonnull) CPWindow * carWindow;
+```
+
 #### Discussion
 
 Use this property to access the window CarPlay creates for your scene. Only navigation apps have access to that window, and use it to draw their map content. All other categories of apps must use templates exclusively to draw their user interfaces.
 
 ## See Also
 
-- [class CPWindow](cpwindow.md)
+### Accessing the Window
+- [class CPWindow](../cpwindow.md)
   A window that displays its content on the CarPlay screen.
 
 

@@ -1,7 +1,8 @@
 # setNotShownAttribute(_:forGlyphAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the visibility of the glyph at the specified index.
 
@@ -14,6 +15,10 @@ Sets the visibility of the glyph at the specified index.
 func setNotShownAttribute(_ flag: Bool, forGlyphAt glyphIndex: Int)
 ```
 
+```objc
+- (void) setNotShownAttribute:(BOOL) flag forGlyphAtIndex:(NSUInteger) glyphIndex;
+```
+
 #### Discussion
 
 The typesetter decides which glyphs are not shown and sets this attribute in the layout manager to ensure that those glyphs are not displayed. For example, a tab or newline character doesn’t leave any marks; it just indicates where following glyphs are laid out.
@@ -24,20 +29,21 @@ This method is used by the layout mechanism and should be invoked only during ty
 
 ## Parameters
 
-- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), the glyph is not shown; if [`false`](https://developer.apple.com/documentation/swift/false), it is shown.
+- `flag`: If [`true`](../../Swift/true.md), the glyph is not shown; if [`false`](../../Swift/false.md), it is shown.
 - `glyphIndex`: Index of the glyph whose attribute is set.
 
 ## See Also
 
-- [func setAttachmentSize(NSSize, forGlyphRange: NSRange)](nslayoutmanager/setattachmentsize(_:forglyphrange:).md)
+### Setting layout information
+- [func setAttachmentSize(NSSize, forGlyphRange: NSRange)](./setattachmentsize%28_,forglyphrange%29.md)
   Sets the size to use when drawing a glyph that represents an attachment.
-- [func setDrawsOutsideLineFragment(Bool, forGlyphAt: Int)](nslayoutmanager/setdrawsoutsidelinefragment(_:forglyphat:).md)
+- [func setDrawsOutsideLineFragment(Bool, forGlyphAt: Int)](./setdrawsoutsidelinefragment%28_,forglyphat%29.md)
   Indicates whether the specified glyph exceeds the bounds of the line fragment for its layout.
-- [func setExtraLineFragmentRect(NSRect, usedRect: NSRect, textContainer: NSTextContainer)](nslayoutmanager/setextralinefragmentrect(_:usedrect:textcontainer:).md)
+- [func setExtraLineFragmentRect(NSRect, usedRect: NSRect, textContainer: NSTextContainer)](./setextralinefragmentrect%28_,usedrect,textcontainer%29.md)
   Sets the bounds and container for the extra line fragment.
-- [func setLineFragmentRect(NSRect, forGlyphRange: NSRange, usedRect: NSRect)](nslayoutmanager/setlinefragmentrect(_:forglyphrange:usedrect:).md)
+- [func setLineFragmentRect(NSRect, forGlyphRange: NSRange, usedRect: NSRect)](./setlinefragmentrect%28_,forglyphrange,usedrect%29.md)
   Associates the line fragment bounds for the specified range of glyphs.
-- [func setLocation(NSPoint, forStartOfGlyphRange: NSRange)](nslayoutmanager/setlocation(_:forstartofglyphrange:).md)
+- [func setLocation(NSPoint, forStartOfGlyphRange: NSRange)](./setlocation%28_,forstartofglyphrange%29.md)
   Sets the location for the first glyph in the specified range.
 
 

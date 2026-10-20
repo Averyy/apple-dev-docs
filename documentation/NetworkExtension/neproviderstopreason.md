@@ -1,7 +1,8 @@
 # NEProviderStopReason
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Reasons why the provider extension was stopped.
 
@@ -19,6 +20,10 @@ Reasons why the provider extension was stopped.
 enum NEProviderStopReason
 ```
 
+```c
+enum NEProviderStopReason : NSInteger;
+```
+
 #### Overview
 
 `NEProviderStopReasonUserLogout` and `NEProviderStopReasonUserSwitch` are available only in macOS.
@@ -26,53 +31,53 @@ enum NEProviderStopReason
 ## Topics
 
 ### Stop Reasons
-- [NEProviderStopReason.none](neproviderstopreason/none.md)
+- [NEProviderStopReason.none](./neproviderstopreason/none.md)
   No specific reason.
-- [NEProviderStopReason.userInitiated](neproviderstopreason/userinitiated.md)
+- [NEProviderStopReason.userInitiated](./neproviderstopreason/userinitiated.md)
   The user stopped the provider extension.
-- [NEProviderStopReason.providerFailed](neproviderstopreason/providerfailed.md)
+- [NEProviderStopReason.providerFailed](./neproviderstopreason/providerfailed.md)
   The provider failed to function correctly.
-- [NEProviderStopReason.noNetworkAvailable](neproviderstopreason/nonetworkavailable.md)
+- [NEProviderStopReason.noNetworkAvailable](./neproviderstopreason/nonetworkavailable.md)
   No network connectivity is currently available.
-- [NEProviderStopReason.unrecoverableNetworkChange](neproviderstopreason/unrecoverablenetworkchange.md)
+- [NEProviderStopReason.unrecoverableNetworkChange](./neproviderstopreason/unrecoverablenetworkchange.md)
   The device’s network connectivity changed.
-- [NEProviderStopReason.providerDisabled](neproviderstopreason/providerdisabled.md)
+- [NEProviderStopReason.providerDisabled](./neproviderstopreason/providerdisabled.md)
   The provider was disabled.
-- [NEProviderStopReason.authenticationCanceled](neproviderstopreason/authenticationcanceled.md)
+- [NEProviderStopReason.authenticationCanceled](./neproviderstopreason/authenticationcanceled.md)
   The authentication process was canceled.
-- [NEProviderStopReason.configurationFailed](neproviderstopreason/configurationfailed.md)
+- [NEProviderStopReason.configurationFailed](./neproviderstopreason/configurationfailed.md)
   The configuration is invalid.
-- [NEProviderStopReason.idleTimeout](neproviderstopreason/idletimeout.md)
+- [NEProviderStopReason.idleTimeout](./neproviderstopreason/idletimeout.md)
   The session timed out.
-- [NEProviderStopReason.configurationDisabled](neproviderstopreason/configurationdisabled.md)
+- [NEProviderStopReason.configurationDisabled](./neproviderstopreason/configurationdisabled.md)
   The configuration was disabled.
-- [NEProviderStopReason.configurationRemoved](neproviderstopreason/configurationremoved.md)
+- [NEProviderStopReason.configurationRemoved](./neproviderstopreason/configurationremoved.md)
   The configuration was removed.
-- [NEProviderStopReason.superceded](neproviderstopreason/superceded.md)
+- [NEProviderStopReason.superceded](./neproviderstopreason/superceded.md)
   The configuration was superceded by a higher-priority configuration.
-- [NEProviderStopReason.userLogout](neproviderstopreason/userlogout.md)
+- [NEProviderStopReason.userLogout](./neproviderstopreason/userlogout.md)
   The user logged out.
-- [NEProviderStopReason.userSwitch](neproviderstopreason/userswitch.md)
+- [NEProviderStopReason.userSwitch](./neproviderstopreason/userswitch.md)
   The current console user changed.
-- [NEProviderStopReason.appUpdate](neproviderstopreason/appupdate.md)
-- [NEProviderStopReason.connectionFailed](neproviderstopreason/connectionfailed.md)
+- [NEProviderStopReason.appUpdate](./neproviderstopreason/appupdate.md)
+- [NEProviderStopReason.connectionFailed](./neproviderstopreason/connectionfailed.md)
   The connection failed.
-- [NEProviderStopReason.sleep](neproviderstopreason/sleep.md)
+- [NEProviderStopReason.sleep](./neproviderstopreason/sleep.md)
   A stop reason indicating the configuration enabled disconnect on sleep and the device went to sleep.
-- [NEProviderStopReason.internalError](neproviderstopreason/internalerror.md)
+- [NEProviderStopReason.internalError](./neproviderstopreason/internalerror.md)
   The provider encountered an internal error.
 ### Initializers
-- [init?(rawValue: Int)](neproviderstopreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./neproviderstopreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

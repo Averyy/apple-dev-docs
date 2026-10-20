@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [init(decompressionOutputCallback: VTDecompressionOutputCallback?, decompressionOutputRefCon: UnsafeMutableRawPointer?)](vtdecompressionoutputcallbackrecord/init(decompressionoutputcallback:decompressionoutputrefcon:).md)
+### Initializers
+- [init(decompressionOutputCallback: VTDecompressionOutputCallback?, decompressionOutputRefCon: UnsafeMutableRawPointer?)](./init%28decompressionoutputcallback,decompressionoutputrefcon%29.md)
 
 
 ---

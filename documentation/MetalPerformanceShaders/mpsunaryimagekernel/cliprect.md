@@ -1,7 +1,8 @@
 # clipRect
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional clip rectangle to use when writing data. Only the pixels in the rectangle will be overwritten.
 
@@ -19,23 +20,28 @@ An optional clip rectangle to use when writing data. Only the pixels in the rect
 var clipRect: MTLRegion { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLRegion clipRect;
+```
+
 #### Discussion
 
 This value indicates which part of the destination to overwrite. If the clip rectangle does not lie completely within the destination image, then the intersection between the clip rectangle and destination bounds is used instead.
 
-The default value is [`MPSRectNoClip`](mpsrectnoclip.md), indicating that the entire image is used.
+The default value is [`MPSRectNoClip`](../mpsrectnoclip.md), indicating that the entire image is used.
 
 ## See Also
 
-- [var offset: MPSOffset](mpsunaryimagekernel/offset.md)
+### Properties
+- [var offset: MPSOffset](./offset.md)
   The position of the destination clip rectangle origin relative to the source buffer.
-- [struct MPSOffset](mpsoffset.md)
+- [struct MPSOffset](../mpsoffset.md)
   A signed coordinate with x, y, and z components.
-- [struct MPSRegion](mpsregion.md)
+- [struct MPSRegion](../mpsregion.md)
   A region of an image.
-- [var edgeMode: MPSImageEdgeMode](mpsunaryimagekernel/edgemode.md)
+- [var edgeMode: MPSImageEdgeMode](./edgemode.md)
   The edge mode to use when texture reads stray off the edge of an image.
-- [enum MPSImageEdgeMode](mpsimageedgemode.md)
+- [enum MPSImageEdgeMode](../mpsimageedgemode.md)
   The options used to control the edge behavior of an image filter when it reads outside the bounds of a source texture.
 
 

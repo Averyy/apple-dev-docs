@@ -1,14 +1,15 @@
 # StandardUSB::kEndpointDescriptorUsageTypeInterruptReserved1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB::kEndpointDescriptorUsageTypeInterruptReserved1 = kIOUSBEndpointDescriptorUsageTypeInterruptReserved1
 ```
 

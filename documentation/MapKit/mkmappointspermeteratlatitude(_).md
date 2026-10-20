@@ -1,7 +1,8 @@
 # MKMapPointsPerMeterAtLatitude(_:)
 
 **Framework**: MapKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of map points that represent one meter at the specified latitude.
 
@@ -20,6 +21,10 @@ Returns the number of map points that represent one meter at the specified latit
 func MKMapPointsPerMeterAtLatitude(_ latitude: CLLocationDegrees) -> Double
 ```
 
+```c
+extern double MKMapPointsPerMeterAtLatitude(CLLocationDegrees latitude);
+```
+
 #### Return Value
 
 The number of map points that span one meter.
@@ -34,9 +39,10 @@ The number of map points per meter increases as the latitude approaches the pole
 
 ## See Also
 
-- [func distance(to: MKMapPoint) -> CLLocationDistance](mkmappoint/distance(to:).md)
+### Getting the distance between points
+- [func distance(to: MKMapPoint) -> CLLocationDistance](./mkmappoint/distance%28to%29.md)
   Returns the number of meters between two map points.
-- [func MKMetersPerMapPointAtLatitude(CLLocationDegrees) -> CLLocationDistance](mkmeterspermappointatlatitude(_:).md)
+- [func MKMetersPerMapPointAtLatitude(CLLocationDegrees) -> CLLocationDistance](./mkmeterspermappointatlatitude%28_%29.md)
   Returns the distance that one map point spans at the specified latitude.
 
 

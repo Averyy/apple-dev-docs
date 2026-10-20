@@ -1,54 +1,56 @@
 # Foundation Data Types
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 This document describes the data types and constants found in the Foundation framework.
 
 ## Topics
 
 ### Classes
-- [class NSKeyValueObservation](nskeyvalueobservation.md)
-- [class NSKeyValueSharedObservers](nskeyvaluesharedobservers.md)
+- [class NSKeyValueObservation](./nskeyvalueobservation.md)
+- [class NSKeyValueSharedObservers](./nskeyvaluesharedobservers.md)
   A collection of key-value observations which may be registered with multiple observable objects
-- [class NSKeyValueSharedObserversSnapshot](nskeyvaluesharedobserverssnapshot.md)
+- [class NSKeyValueSharedObserversSnapshot](./nskeyvaluesharedobserverssnapshot.md)
   A collection of key-value observations which may be registered with multiple observable objects. Create using `-[NSKeyValueSharedObservers snapshot]`
 ### Protocols
-- [protocol DiscreteFormatStyle](discreteformatstyle.md)
+- [protocol DiscreteFormatStyle](./discreteformatstyle.md)
   A format style that transforms a continuous input into a discrete output and provides information about its discretization boundaries.
-- [protocol NSKeyValueObservingCustomization](nskeyvalueobservingcustomization.md)
+- [protocol NSKeyValueObservingCustomization](./nskeyvalueobservingcustomization.md)
   Conforming to NSKeyValueObservingCustomization is not required to use Key-Value Observing. Provide an implementation of these functions if you need to disable auto-notifying for a key, or add dependent keys
 ### Structures
-- [struct AsyncCharacterSequence](asynccharactersequence.md)
+- [struct AsyncCharacterSequence](./asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [struct AsyncLineSequence](asynclinesequence.md)
+- [struct AsyncLineSequence](./asynclinesequence.md)
   An asynchronous sequence of lines of text.
-- [struct AsyncUnicodeScalarSequence](asyncunicodescalarsequence.md)
+- [struct AsyncUnicodeScalarSequence](./asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
-- [struct Expression](expression.md)
-- [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+- [struct Expression](./expression.md)
+- [struct NSAttributedStringFormattingContextKey](./nsattributedstringformattingcontextkey.md)
   A type that represents a key in the formatting context dictionary.
-- [struct NSKeyValueChangeKey](nskeyvaluechangekey.md)
+- [struct NSKeyValueChangeKey](./nskeyvaluechangekey.md)
   The keys that can appear in the change dictionary.
-- [struct NSKeyValueObservedChange](nskeyvalueobservedchange.md)
-- [struct NSKeyValueOperator](nskeyvalueoperator.md)
-  These constants define the available array operators. See [`Using Collection Operators`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
-- [struct PresentationIntent](presentationintent.md)
+- [struct NSKeyValueObservedChange](./nskeyvalueobservedchange.md)
+- [struct NSKeyValueOperator](./nskeyvalueoperator.md)
+  These constants define the available array operators. See [Using Collection Operators](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
+- [struct PresentationIntent](./presentationintent.md)
   A type that defines presentation intent for blocks of characters like paragraphs, lists, block quotes, and tables.
 ### Variables
-- [let NSOperationNotSupportedForKeyException: String](nsoperationnotsupportedforkeyexception.md)
-- [let NSURLSessionUploadTaskResumeData: String](nsurlsessionuploadtaskresumedata.md)
+- [let NSOperationNotSupportedForKeyException: String](./nsoperationnotsupportedforkeyexception.md)
+- [let NSURLSessionUploadTaskResumeData: String](./nsurlsessionuploadtaskresumedata.md)
   Key in the userInfo dictionary of an NSError received during a failed upload.
-- [var kCFStringEncodingASCII: CFStringEncoding](kcfstringencodingascii.md)
+- [var kCFStringEncodingASCII: CFStringEncoding](./kcfstringencodingascii.md)
 ### Macros
-- [macro Expression<each Input, Output>((repeat each Input) -> Output) -> Expression<repeat each Input, Output>](expression(_:).md)
-- [macro Predicate<each Input>((repeat each Input) -> Bool) -> Predicate<repeat each Input>](predicate(_:).md)
+- [macro Expression<each Input, Output>((repeat each Input) -> Output) -> Expression<repeat each Input, Output>](./expression%28_%29.md)
+- [macro Predicate<each Input>((repeat each Input) -> Bool) -> Predicate<repeat each Input>](./predicate%28_%29.md)
 ### Type Aliases
-- [typealias uuid_string_t](uuid_string_t.md)
-- [typealias uuid_t](uuid_t.md)
+- [typealias uuid_string_t](./uuid_string_t.md)
+- [typealias uuid_t](./uuid_t.md)
 
 ## See Also
 
-- [Foundation Enumerations](foundation-enumerations.md)
+### Reference
+- [Foundation Enumerations](./foundation-enumerations.md)
 
 
 ---

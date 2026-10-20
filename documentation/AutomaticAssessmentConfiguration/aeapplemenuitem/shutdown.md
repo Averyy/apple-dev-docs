@@ -1,7 +1,8 @@
 # shutDown
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Shut Down item, covering both the command and its confirmation.
 
@@ -13,6 +14,10 @@ The Shut Down item, covering both the command and its confirmation.
 
 ```swift
 static let shutDown: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemShutDown;
 ```
 
 

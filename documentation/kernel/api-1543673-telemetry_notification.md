@@ -1,14 +1,15 @@
 # telemetry_notification
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t telemetry_notification(mach_port_t telemetry_port, uint32_t flags);
 ```
 

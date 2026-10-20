@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy this sampling mode uses to choose the next token.
 
@@ -21,7 +22,8 @@ let kind: GenerationOptions.SamplingMode.Kind
 
 ## See Also
 
-- [GenerationOptions.SamplingMode.Kind](generationoptions/samplingmode-swift.struct/kind-swift.enum.md)
+### Getting the kind of sampling
+- [GenerationOptions.SamplingMode.Kind](./kind-swift.enum.md)
   A representation of the different strategies for choosing the next token.
 
 

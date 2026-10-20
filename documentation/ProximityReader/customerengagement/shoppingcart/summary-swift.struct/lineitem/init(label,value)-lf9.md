@@ -1,7 +1,8 @@
 # init(label:value:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a line item with the given label and string value.
 

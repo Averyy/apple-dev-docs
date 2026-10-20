@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command to build a new acceleration structure.
@@ -20,9 +21,13 @@ Encodes a command to build a new acceleration structure.
 func build(accelerationStructure: any MTLAccelerationStructure, descriptor: MTLAccelerationStructureDescriptor, scratchBuffer: any MTLBuffer, scratchBufferOffset: Int)
 ```
 
+```objc
+- (void) buildAccelerationStructure:(id<MTLAccelerationStructure>) accelerationStructure descriptor:(MTLAccelerationStructureDescriptor *) descriptor scratchBuffer:(id<MTLBuffer>) scratchBuffer scratchBufferOffset:(NSUInteger) scratchBufferOffset;
+```
+
 #### Discussion
 
-The destination acceleration structure and the scratch buffer needs enough space in memory to hold the acceleration structure data. Call the [`accelerationStructureSizes(descriptor:)`](mtldevice/accelerationstructuresizes(descriptor:).md) method on the Metal device object to get the required space.
+The destination acceleration structure and the scratch buffer needs enough space in memory to hold the acceleration structure data. Call the [`accelerationStructureSizes(descriptor:)`](../mtldevice/accelerationstructuresizes%28descriptor%29.md) method on the Metal device object to get the required space.
 
 The resulting acceleration structure contains references to any other acceleration structures referenced by the descriptor, but not any other underlying buffer data. As part of creating the structure, the GPU overwrites data in the scratch buffer.
 

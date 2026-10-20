@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The local authentication context for the authorization.
@@ -13,6 +14,10 @@ The local authentication context for the authorization.
 
 ```swift
 var authenticatedContext: LAContext? { get set }
+```
+
+```objc
+@property (nonatomic, nullable) LAContext * authenticatedContext;
 ```
 
 #### Discussion

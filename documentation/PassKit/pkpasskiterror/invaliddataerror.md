@@ -1,7 +1,8 @@
 # invalidDataError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 6.0+
@@ -19,13 +20,14 @@ static var invalidDataError: PKPassKitError.Code { get }
 
 ## See Also
 
-- [static var invalidSignature: PKPassKitError.Code](pkpasskiterror/invalidsignature.md)
-- [static var notEntitledError: PKPassKitError.Code](pkpasskiterror/notentitlederror.md)
-- [static var unknownError: PKPassKitError.Code](pkpasskiterror/unknownerror.md)
-- [static var unsupportedVersionError: PKPassKitError.Code](pkpasskiterror/unsupportedversionerror.md)
-- [PKPassKitError.Code](pkpasskiterror/code.md)
+### Error codes
+- [static var invalidSignature: PKPassKitError.Code](./invalidsignature.md)
+- [static var notEntitledError: PKPassKitError.Code](./notentitlederror.md)
+- [static var unknownError: PKPassKitError.Code](./unknownerror.md)
+- [static var unsupportedVersionError: PKPassKitError.Code](./unsupportedversionerror.md)
+- [PKPassKitError.Code](./code.md)
   Errors that the PassKit framework uses.
-- [enum PKAddPaymentPassError](pkaddpaymentpasserror.md)
+- [enum PKAddPaymentPassError](../pkaddpaymentpasserror.md)
   Error codes for adding payment passes.
 
 

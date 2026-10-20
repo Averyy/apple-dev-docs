@@ -1,7 +1,8 @@
 # MusicPlayer.State
 
 **Framework**: MusicKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that exposes the observable properties of a music player.
 
@@ -22,24 +23,24 @@ class State
 ## Topics
 
 ### Instance Properties
-- [var audioVariant: AudioVariant?](musicplayer/state-swift.class/audiovariant.md)
+- [var audioVariant: AudioVariant?](./state-swift.class/audiovariant.md)
   The active variant that indicates the quality of audio for the current entry.
-- [var playbackRate: Float](musicplayer/state-swift.class/playbackrate.md)
+- [var playbackRate: Float](./state-swift.class/playbackrate.md)
   The current playback rate for the player.
-- [var playbackStatus: MusicPlayer.PlaybackStatus](musicplayer/state-swift.class/playbackstatus.md)
+- [var playbackStatus: MusicPlayer.PlaybackStatus](./state-swift.class/playbackstatus.md)
   The current playback status of the music player.
-- [var repeatMode: MusicPlayer.RepeatMode?](musicplayer/state-swift.class/repeatmode.md)
+- [var repeatMode: MusicPlayer.RepeatMode?](./state-swift.class/repeatmode.md)
   The current repeat mode of the music player.
-- [var shuffleMode: MusicPlayer.ShuffleMode?](musicplayer/state-swift.class/shufflemode.md)
+- [var shuffleMode: MusicPlayer.ShuffleMode?](./state-swift.class/shufflemode.md)
   The current shuffle mode of the music player.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [ObservableObject](../combine/observableobject.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Observable](../../Observation/observable.md)
+- [ObservableObject](../../Combine/observableobject.md)
 
 
 ---

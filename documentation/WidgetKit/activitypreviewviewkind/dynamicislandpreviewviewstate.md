@@ -1,7 +1,8 @@
 # ActivityPreviewViewKind.DynamicIslandPreviewViewState
 
 **Framework**: WidgetKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that represent the different presentations of a Live Activity in the Dynamic Island for use in Xcode previews.
 
@@ -19,26 +20,27 @@ enum DynamicIslandPreviewViewState
 ## Topics
 
 ### Dynamic Island presentations
-- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.compact](activitypreviewviewkind/dynamicislandpreviewviewstate/compact.md)
-  The presentation of a Live Activity in the Dynamic Island that shows both the [`compactLeading`](dynamicislandmode/compactleading.md) and [`compactTrailing`](dynamicislandmode/compacttrailing.md) views combined.
-- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.minimal](activitypreviewviewkind/dynamicislandpreviewviewstate/minimal.md)
+- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.compact](./dynamicislandpreviewviewstate/compact.md)
+  The presentation of a Live Activity in the Dynamic Island that shows both the [`compactLeading`](../dynamicislandmode/compactleading.md) and [`compactTrailing`](../dynamicislandmode/compacttrailing.md) views combined.
+- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.minimal](./dynamicislandpreviewviewstate/minimal.md)
   The minimal presentation of a Live Activity in the Dynamic Island.
-- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.expanded](activitypreviewviewkind/dynamicislandpreviewviewstate/expanded.md)
+- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.expanded](./dynamicislandpreviewviewstate/expanded.md)
   The expanded presentation of a Live Activity in the Dynamic Island.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ActivityPreviewViewKind.content](activitypreviewviewkind/content.md)
+### Live Activity preview types
+- [ActivityPreviewViewKind.content](./content.md)
   The Live Activity presentation that appears on the Lock Screen and as a banner on devices that don’t support the Dynamic Island.
-- [case dynamicIsland(ActivityPreviewViewKind.DynamicIslandPreviewViewState)](activitypreviewviewkind/dynamicisland(_:).md)
+- [case dynamicIsland(ActivityPreviewViewKind.DynamicIslandPreviewViewState)](./dynamicisland%28_%29.md)
   The Live Activity presentation that appears in the Dynamic Island.
 
 

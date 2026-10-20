@@ -1,7 +1,8 @@
 # lossWH
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var lossWH: MPSCNNLoss { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nonnull) MPSCNNLoss * lossWH;
 ```
 
 

@@ -1,7 +1,8 @@
 # repeatMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option that determines how the animation repeats.
 
@@ -11,7 +12,7 @@ An option that determines how the animation repeats.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var repeatMode: AnimationRepeatMode { get set }
 
 #### Discussion
 
-If you call `BlendTreeAnimation/trimmed(start:end:duration:)` with a `start` or `end` that lies outside of the timeline defined by [`duration`](blendtreeanimation/duration.md), the animation fills the additional playback by applying this property.
+If you call `BlendTreeAnimation/trimmed(start:end:duration:)` with a `start` or `end` that lies outside of the timeline defined by [`duration`](./duration.md), the animation fills the additional playback by applying this property.
 
 ## See Also
 
-- [var fillMode: AnimationFillMode](blendtreeanimation/fillmode.md)
+### Repeating animation playback
+- [var fillMode: AnimationFillMode](./fillmode.md)
   An option that determines which data displays outside of the normal duration.
 
 

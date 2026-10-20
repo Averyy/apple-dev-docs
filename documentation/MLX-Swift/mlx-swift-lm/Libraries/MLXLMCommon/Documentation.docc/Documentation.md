@@ -10,11 +10,11 @@ Common language model code.
 
 ## Articles
 
-- <doc:model-compatibility>
-- <doc:upgrade>
-- <doc:wired-memory>
-- <doc:kv-cache-quantization>
-- <doc:generation-observability>
+- [Model Compatibility](model-compatibility.md)
+- [Upgrade From 2.x Release](upgrade.md)
+- [Wired Memory and Weight Reservations](wired-memory.md)
+- [KV Cache Quantization](kv-cache-quantization.md)
+- [Observing token log probabilities](generation-observability.md)
 
 ## Reranking
 

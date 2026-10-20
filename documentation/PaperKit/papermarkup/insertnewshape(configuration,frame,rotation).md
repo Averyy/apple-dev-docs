@@ -1,7 +1,8 @@
 # insertNewShape(configuration:frame:rotation:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a new element on top of the paper.
 
@@ -26,13 +27,14 @@ mutating func insertNewShape(configuration: ShapeConfiguration, frame: CGRect, r
 
 ## See Also
 
-- [func insertNewImage(CGImage, frame: CGRect, rotation: CGFloat)](papermarkup/insertnewimage(_:frame:rotation:).md)
+### Inserting elements
+- [func insertNewImage(CGImage, frame: CGRect, rotation: CGFloat)](./insertnewimage%28_,frame,rotation%29.md)
   Add a new image on top of the paper.
-- [func insertNewLine(configuration: ShapeConfiguration, from: CGPoint, to: CGPoint, startMarker: Bool, endMarker: Bool)](papermarkup/insertnewline(configuration:from:to:startmarker:endmarker:).md)
+- [func insertNewLine(configuration: ShapeConfiguration, from: CGPoint, to: CGPoint, startMarker: Bool, endMarker: Bool)](./insertnewline%28configuration,from,to,startmarker,endmarker%29.md)
   Add a line element on top of the paper.
-- [func insertNewTextbox(attributedText: AttributedString, frame: CGRect, rotation: CGFloat)](papermarkup/insertnewtextbox(attributedtext:frame:rotation:)-53rs.md)
+- [func insertNewTextbox(attributedText: AttributedString, frame: CGRect, rotation: CGFloat)](./insertnewtextbox%28attributedtext,frame,rotation%29-53rs.md)
   Add a new text box on top of the paper.
-- [func insertNewTextbox(attributedText: NSAttributedString, frame: CGRect, rotation: CGFloat)](papermarkup/insertnewtextbox(attributedtext:frame:rotation:)-67igk.md)
+- [func insertNewTextbox(attributedText: NSAttributedString, frame: CGRect, rotation: CGFloat)](./insertnewtextbox%28attributedtext,frame,rotation%29-67igk.md)
   Add a new text box on top of the paper.
 
 

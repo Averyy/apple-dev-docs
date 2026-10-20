@@ -1,11 +1,12 @@
 # ConvertibleToGeneratedContent Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var generatedContent: GeneratedContent](generatedcontent/generatedcontent.md)
+- [var generatedContent: GeneratedContent](./generatedcontent.md)
   A representation of this instance.
 
 

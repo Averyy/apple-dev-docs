@@ -1,9 +1,10 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The system determines the minimize behavior. By default, navigation bars on iOS will minimize when the view has a searchable using the [`toolbarPrincipal`](searchfieldplacement/toolbarprincipal.md) placement.
+The system determines the minimize behavior. By default, navigation bars on iOS will minimize when the view has a searchable using the [`toolbarPrincipal`](../searchfieldplacement/toolbarprincipal.md) placement.
 
 **Availability**:
 - iOS 27.0+
@@ -22,11 +23,12 @@ static var automatic: ToolbarMinimizationBehavior { get }
 
 ## See Also
 
-- [static let never: ToolbarMinimizationBehavior](toolbarminimizationbehavior/never.md)
+### Getting behaviors
+- [static let never: ToolbarMinimizationBehavior](./never.md)
   The toolbar cannot be minimized.
-- [static let onScrollDown: ToolbarMinimizationBehavior](toolbarminimizationbehavior/onscrolldown.md)
+- [static let onScrollDown: ToolbarMinimizationBehavior](./onscrolldown.md)
   Minimize when scrolling down.
-- [static let onScrollUp: ToolbarMinimizationBehavior](toolbarminimizationbehavior/onscrollup.md)
+- [static let onScrollUp: ToolbarMinimizationBehavior](./onscrollup.md)
   Minimize when scrolling up.
 
 

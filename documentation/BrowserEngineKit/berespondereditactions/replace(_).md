@@ -1,7 +1,8 @@
 # replace(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the selected text and inputs the chosen replacement text.
 
@@ -17,9 +18,13 @@ Removes the selected text and inputs the chosen replacement text.
 optional func replace(_ sender: Any?)
 ```
 
+```objc
+- (void) replace:(id) sender;
+```
+
 #### Discussion
 
-To invoke the standard system behavior for replacing text, call [`textInput(_:deferReplaceTextActionToSystem:)`](betextinputdelegate/textinput(_:deferreplacetextactiontosystem:).md) in your implementation of this method.
+To invoke the standard system behavior for replacing text, call [`textInput(_:deferReplaceTextActionToSystem:)`](../betextinputdelegate/textinput%28_,deferreplacetextactiontosystem%29.md) in your implementation of this method.
 
 ## Parameters
 
@@ -27,11 +32,12 @@ To invoke the standard system behavior for replacing text, call [`textInput(_:de
 
 ## See Also
 
-- [func findSelected(Any?)](berespondereditactions/findselected(_:).md)
+### Finding and replacing text
+- [func findSelected(Any?)](./findselected%28_%29.md)
   Begins a search for the selected content in your browser text view.
-- [func promptForReplace(Any?)](berespondereditactions/promptforreplace(_:).md)
+- [func promptForReplace(Any?)](./promptforreplace%28_%29.md)
   Shows potential replacements for the selected content.
-- [func addShortcut(Any?)](berespondereditactions/addshortcut(_:).md)
+- [func addShortcut(Any?)](./addshortcut%28_%29.md)
   Adds a text-replacement shortcut to the edit dictionary.
 
 

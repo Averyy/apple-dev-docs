@@ -1,7 +1,8 @@
 # RemoveCustomProperty
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Always returns an error, because a custom property cannot have a custom property.
 
@@ -10,13 +11,14 @@ Always returns an error, because a custom property cannot have a custom property
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t RemoveCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 ```
 
 ## See Also
 
-- [AddCustomProperty](iouservideocustomproperty/addcustomproperty.md)
+### Working with custom properties
+- [AddCustomProperty](./addcustomproperty.md)
   Always returns `kIOReturnError` because a custom property cannot have a custom property.
 
 

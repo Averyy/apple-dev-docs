@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The document type this page is for.
@@ -10,7 +11,7 @@ The document type this page is for.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ associatedtype Document : MergeableDocument
 
 ## See Also
 
-- [MergeableDocumentPage.Thumbnail](mergeabledocumentpage/thumbnail.md)
+### Implementing a mergeable page
+- [MergeableDocumentPage.Thumbnail](./thumbnail.md)
   The thumbnail type for this page.
 
 

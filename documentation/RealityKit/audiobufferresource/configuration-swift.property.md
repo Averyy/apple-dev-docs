@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration for this `AudioBufferResource`.
 
@@ -22,7 +23,8 @@ The configuration for this `AudioBufferResource`.
 
 ## See Also
 
-- [var duration: Duration](audiobufferresource/duration.md)
+### Describing the resource
+- [var duration: Duration](./duration.md)
   The duration of this `AudioBufferResource`.
 
 

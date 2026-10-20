@@ -1,7 +1,8 @@
 # container
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The safe area defined by the device and containers within the user interface, including elements such as top and bottom bars.
 
@@ -22,9 +23,10 @@ static let container: SafeAreaRegions
 
 ## See Also
 
-- [static let all: SafeAreaRegions](safearearegions/all.md)
+### Getting safe area regions
+- [static let all: SafeAreaRegions](./all.md)
   All safe area regions.
-- [static let keyboard: SafeAreaRegions](safearearegions/keyboard.md)
+- [static let keyboard: SafeAreaRegions](./keyboard.md)
   The safe area matching the current extent of any software keyboard displayed over the view content.
 
 

@@ -1,7 +1,8 @@
 # MTROTASoftwareUpdateRequestorClusterStateTransitionEvent
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,28 +19,32 @@
 class MTROTASoftwareUpdateRequestorClusterStateTransitionEvent
 ```
 
+```objc
+@interface MTROTASoftwareUpdateRequestorClusterStateTransitionEvent : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var newState: NSNumber](mtrotasoftwareupdaterequestorclusterstatetransitionevent-3xhxb/newstate.md)
-- [var previousState: NSNumber](mtrotasoftwareupdaterequestorclusterstatetransitionevent-3xhxb/previousstate.md)
-- [var reason: NSNumber](mtrotasoftwareupdaterequestorclusterstatetransitionevent-3xhxb/reason.md)
-- [var targetSoftwareVersion: NSNumber?](mtrotasoftwareupdaterequestorclusterstatetransitionevent-3xhxb/targetsoftwareversion.md)
+- [var newState: NSNumber](./mtrotasoftwareupdaterequestorclusterstatetransitionevent-3xhxb/newstate.md)
+- [var previousState: NSNumber](./mtrotasoftwareupdaterequestorclusterstatetransitionevent-3xhxb/previousstate.md)
+- [var reason: NSNumber](./mtrotasoftwareupdaterequestorclusterstatetransitionevent-3xhxb/reason.md)
+- [var targetSoftwareVersion: NSNumber?](./mtrotasoftwareupdaterequestorclusterstatetransitionevent-3xhxb/targetsoftwareversion.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTROtaSoftwareUpdateRequestorClusterStateTransitionEvent](mtrotasoftwareupdaterequestorclusterstatetransitionevent-1xzd5.md)
+- [MTROtaSoftwareUpdateRequestorClusterStateTransitionEvent](./mtrotasoftwareupdaterequestorclusterstatetransitionevent-1xzd5.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

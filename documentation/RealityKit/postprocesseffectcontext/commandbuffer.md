@@ -1,7 +1,8 @@
 # commandBuffer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal command buffer for encoding the frame.
 

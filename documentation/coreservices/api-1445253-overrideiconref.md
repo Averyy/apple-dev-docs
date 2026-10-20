@@ -1,7 +1,8 @@
 # OverrideIconRef(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.15
@@ -10,6 +11,10 @@
 
 ```swift
 func OverrideIconRef(_ oldIconRef: IconRef!, _ newIconRef: IconRef!) -> OSErr
+```
+
+```c
+OSErr OverrideIconRef(IconRef oldIconRef, IconRef newIconRef);
 ```
 
 

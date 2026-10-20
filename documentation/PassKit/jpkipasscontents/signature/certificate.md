@@ -1,7 +1,8 @@
 # certificate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The certificate associated with an identity document.
 
@@ -17,7 +18,8 @@ let certificate: JPKIPassContents.Certificate<IdentityType>
 
 ## See Also
 
-- [let signatureData: Data](jpkipasscontents/signature/signaturedata.md)
+### Defining the certificate and signed data
+- [let signatureData: Data](./signaturedata.md)
   The result of signing the data provided by the caller using the requested digital identity.
 
 

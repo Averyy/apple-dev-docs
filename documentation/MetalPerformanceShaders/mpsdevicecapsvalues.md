@@ -1,15 +1,16 @@
 # MPSDeviceCapsValues
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,22 +18,26 @@
 struct MPSDeviceCapsValues
 ```
 
+```c
+typedef enum { ... } MPSDeviceCapsValues;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](mpsdevicecapsvalues/init(_:).md)
-- [init(rawValue: UInt32)](mpsdevicecapsvalues/init(rawvalue:).md)
+- [init(UInt32)](./mpsdevicecapsvalues/init%28_%29.md)
+- [init(rawValue: UInt32)](./mpsdevicecapsvalues/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](mpsdevicecapsvalues/rawvalue.md)
+- [var rawValue: UInt32](./mpsdevicecapsvalues/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # markComplete(_:at:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the workout as complete.
 
@@ -20,13 +21,14 @@ final func markComplete(_ workout: WorkoutPlan, at: DateComponents) async
 
 ## See Also
 
-- [var scheduledWorkouts: [ScheduledWorkoutPlan]](workoutscheduler/scheduledworkouts.md)
+### Managing scheduled workouts
+- [var scheduledWorkouts: [ScheduledWorkoutPlan]](./scheduledworkouts.md)
   An array of all the workouts scheduled by your app.
-- [static let maxAllowedScheduledWorkoutCount: Int](workoutscheduler/maxallowedscheduledworkoutcount.md)
+- [static let maxAllowedScheduledWorkoutCount: Int](./maxallowedscheduledworkoutcount.md)
   The maximum number of workouts your app can schedule.
-- [func remove(WorkoutPlan, at: DateComponents) async](workoutscheduler/remove(_:at:).md)
+- [func remove(WorkoutPlan, at: DateComponents) async](./remove%28_,at%29.md)
   Removes the scheduled workout.
-- [func removeAllWorkouts() async](workoutscheduler/removeallworkouts.md)
+- [func removeAllWorkouts() async](./removeallworkouts%28%29.md)
   Removes all scheduled workouts.
 
 

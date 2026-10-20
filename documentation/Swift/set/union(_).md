@@ -1,7 +1,8 @@
 # union(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new set with the elements of both this set and the given sequence.
 
@@ -19,6 +20,8 @@ Returns a new set with the elements of both this set and the given sequence.
 ```swift
 func union<S>(_ other: S) -> Set<Element> where Element == S.Element, S : Sequence
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Return Value
 
@@ -51,27 +54,28 @@ print(expandedIndices)
 
 ## See Also
 
-- [func formUnion<S>(S)](set/formunion(_:).md)
+### Combining Sets
+- [func formUnion<S>(S)](./formunion%28_%29.md)
   Inserts the elements of the given sequence into the set.
-- [func intersection(Set<Element>) -> Set<Element>](set/intersection(_:)-1zh8f.md)
+- [func intersection(Set<Element>) -> Set<Element>](./intersection%28_%29-1zh8f.md)
   Returns a new set with the elements that are common to both this set and the given sequence.
-- [func intersection<S>(S) -> Set<Element>](set/intersection(_:)-6uts9.md)
+- [func intersection<S>(S) -> Set<Element>](./intersection%28_%29-6uts9.md)
   Returns a new set with the elements that are common to both this set and the given sequence.
-- [func formIntersection<S>(S)](set/formintersection(_:).md)
+- [func formIntersection<S>(S)](./formintersection%28_%29.md)
   Removes the elements of the set that aren’t also in the given sequence.
-- [func symmetricDifference<S>(S) -> Set<Element>](set/symmetricdifference(_:).md)
+- [func symmetricDifference<S>(S) -> Set<Element>](./symmetricdifference%28_%29.md)
   Returns a new set with the elements that are either in this set or in the given sequence, but not in both.
-- [func formSymmetricDifference(Set<Element>)](set/formsymmetricdifference(_:)-22p0m.md)
+- [func formSymmetricDifference(Set<Element>)](./formsymmetricdifference%28_%29-22p0m.md)
   Removes the elements of the set that are also in the given sequence and adds the members of the sequence that are not already in the set.
-- [func formSymmetricDifference<S>(S)](set/formsymmetricdifference(_:)-5u38b.md)
+- [func formSymmetricDifference<S>(S)](./formsymmetricdifference%28_%29-5u38b.md)
   Replace this set with the elements contained in this set or the given set, but not both.
-- [func subtract(Set<Element>)](set/subtract(_:)-8gc48.md)
+- [func subtract(Set<Element>)](./subtract%28_%29-8gc48.md)
   Removes the elements of the given set from this set.
-- [func subtract<S>(S)](set/subtract(_:)-7cd3y.md)
+- [func subtract<S>(S)](./subtract%28_%29-7cd3y.md)
   Removes the elements of the given sequence from the set.
-- [func subtracting(Set<Element>) -> Set<Element>](set/subtracting(_:)-3n4lc.md)
+- [func subtracting(Set<Element>) -> Set<Element>](./subtracting%28_%29-3n4lc.md)
   Returns a new set containing the elements of this set that do not occur in the given set.
-- [func subtracting<S>(S) -> Set<Element>](set/subtracting(_:)-2qge3.md)
+- [func subtracting<S>(S) -> Set<Element>](./subtracting%28_%29-2qge3.md)
   Returns a new set containing the elements of this set that do not occur in the given sequence.
 
 

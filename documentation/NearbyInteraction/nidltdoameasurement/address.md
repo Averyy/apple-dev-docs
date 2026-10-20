@@ -1,7 +1,8 @@
 # address
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that uniquely identifies an anchor in a tracked area.
 
@@ -16,13 +17,18 @@ A value that uniquely identifies an anchor in a tracked area.
 var address: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSUInteger address;
+```
+
 #### Discussion
 
 This property functions solely as a unique identifer.
 
 ## See Also
 
-- [var clusterInitiatorAddress: Int](nidltdoameasurement/clusterinitiatoraddress.md)
+### Identifying the anchor
+- [var clusterInitiatorAddress: Int](./clusterinitiatoraddress.md)
   The address of the initiator anchor within the same cluster.
 
 

@@ -1,7 +1,8 @@
 # AVAssetWritingPlanner.SegmentResult.success
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Finish the segment successfully without saving state.
 
@@ -27,9 +28,10 @@ This is equivalent to calling `finish()` on the segment request.
 
 ## See Also
 
-- [AVAssetWritingPlanner.SegmentResult.successWithState(_:)](avassetwritingplanner/segmentresult/successwithstate(_:).md)
+### Completion Options
+- [AVAssetWritingPlanner.SegmentResult.successWithState(_:)](./successwithstate%28_%29.md)
   Finish the segment successfully with custom client state.
-- [AVAssetWritingPlanner.SegmentResult.cancelled](avassetwritingplanner/segmentresult/cancelled.md)
+- [AVAssetWritingPlanner.SegmentResult.cancelled](./cancelled.md)
   Cancel the current segment while allowing future resumption.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of the gesture.
@@ -24,7 +25,8 @@ The content and behavior of the gesture.
 
 ## See Also
 
-- [associatedtype Body : Gesture](gesture/body-swift.associatedtype.md)
+### Implementing a custom gesture
+- [associatedtype Body : Gesture](./body-swift.associatedtype.md)
   The type of gesture representing the body of `Self`.
 
 

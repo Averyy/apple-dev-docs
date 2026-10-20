@@ -1,7 +1,8 @@
 # state
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of a presentment intent assertion, indicating whether it’s currently valid.
 
@@ -21,7 +22,8 @@ Be sure to check if the state of the acquired intent assertion is stale before a
 
 ## See Also
 
-- [CredentialSession.PresentmentIntentAssertion.State](credentialsession/presentmentintentassertion/state-swift.enum.md)
+### Inspecting assertion state
+- [CredentialSession.PresentmentIntentAssertion.State](./state-swift.enum.md)
   An enumeration of possible states of a presentment intent assertion.
 
 

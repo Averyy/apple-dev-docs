@@ -1,7 +1,8 @@
 # CLTimeIntervalMax
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value representing an unlimited amount of time.
 
@@ -18,6 +19,10 @@ A value representing an unlimited amount of time.
 
 ```swift
 let CLTimeIntervalMax: TimeInterval
+```
+
+```c
+extern const NSTimeInterval CLTimeIntervalMax;
 ```
 
 #### Discussion

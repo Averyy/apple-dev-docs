@@ -1,14 +1,15 @@
 # kcdata_invalid_iter
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 const kcdata_iter_t kcdata_invalid_iter;
 ```
 

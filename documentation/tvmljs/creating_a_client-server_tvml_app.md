@@ -1,6 +1,8 @@
 # Creating a Client-Server TVML App
 
-**Framework**: TVMLKit JS
+**Framework**: TVMLKit JS  
+**Role**: Sample Code  
+**Download**: [CreatingAClientServerTVMLApp.zip](https://docs-assets.developer.apple.com/published/fda592b920/CreatingAClientServerTVMLApp.zip)
 
 Display and navigate between TVML documents on Apple TV by retrieving and parsing information from a remote server.
 
@@ -10,9 +12,9 @@ Display and navigate between TVML documents on Apple TV by retrieving and parsin
 
 #### Overview
 
-A TVML app creates a client-server connection to retrieve information stored on a server. The retrieved information is parsed into a document and displayed on a TV screen. Use this sample code project to create your first client-server app. The app uses JavaScript to load an initial TVML document from a local server. The user navigates between two images and the app loads a new document after the user selects one of the images. For detailed information about the TVML framework, see [`TVML`](https://developer.apple.com/documentation/tvml).
+A TVML app creates a client-server connection to retrieve information stored on a server. The retrieved information is parsed into a document and displayed on a TV screen. Use this sample code project to create your first client-server app. The app uses JavaScript to load an initial TVML document from a local server. The user navigates between two images and the app loads a new document after the user selects one of the images. For detailed information about the TVML framework, see [TVML](../TVML/TVML.md).
 
-##### 3562974
+##### Configure the Sample Code Project
 
 Before running the app, you need to set up a local server on your machine:
 
@@ -24,7 +26,7 @@ Before running the app, you need to set up a local server on your machine:
 
 After testing the sample app in Apple TV Simulator, you can close the local server by pressing Control-C in Terminal. Closing the Terminal window also kills the server.
 
-##### 3562975
+##### Display the Initial Document
 
 The `application.js` file controls the app. The app creates two global variables that contain URL information. When the app launches, the app populates the variables with information contained in the `AppDelegate.swift` file and retrieves the first document from the server.
 
@@ -40,7 +42,7 @@ App.onLaunch = function(options) {
 }
 ```
 
-##### 3562976
+##### Retrieve a TVML Document From the Server
 
 While you can’t control a user’s internet access, you can control what they see on the screen. To avoid showing a blank screen, create and display a loading document to provide users with a visual cue that your app is working, despite not having a connection to the server.
 
@@ -56,7 +58,7 @@ function loadingTemplate() {
 }
 ```
 
-Create a new [`XMLHttpRequest`](xmlhttprequest.md) to retrieve information from the server. After successfully loading a new document, push the document onto the navigation stack to display it.
+Create a new [`XMLHttpRequest`](./xmlhttprequest.md) to retrieve information from the server. After successfully loading a new document, push the document onto the navigation stack to display it.
 
 ```javascript
 function getDocument(extension) {
@@ -71,11 +73,11 @@ function getDocument(extension) {
 }
 ```
 
-##### 3562977
+##### Replace the Previous Document
 
 After the user selects a new document, push that document onto the navigation stack. This places the new document at the top of the current document stack and displays it. When the user presses the Menu button on the Siri Remote, the system removes the current document from the stack and displays the previous document. Doing this causes the previous loading document to display when you want the user to see the selection document.
 
-To fix this, replace the loading document with the new document using the [`replaceDocument`](navigationdocument/1627430-replacedocument.md) method. The following function takes the new document and the loading document as parameters and replaces the loading document with the new document.
+To fix this, replace the loading document with the new document using the [`replaceDocument`](./navigationdocument/api-1627430-replacedocument.md) method. The following function takes the new document and the loading document as parameters and replaces the loading document with the new document.
 
 ```javascript
 function pushPage(page, loading) {
@@ -84,9 +86,9 @@ function pushPage(page, loading) {
 }
 ```
 
-##### 3562978
+##### Select a New TVML Document
 
-Each file on your server contains the information to display a single document onscreen. In this app, the initial document contains information that displays two images, each with their own title. Each image is a [`Lockup Elements`](https://developer.apple.com/documentation/tvml/lockup-elements) element. When the user selects a lockup, the app uses the `onselect` attribute to call the `getDocument` method. The lockup passes the URL for the next document to the `getDocument` method.
+Each file on your server contains the information to display a single document onscreen. In this app, the initial document contains information that displays two images, each with their own title. Each image is a [Lockup Elements](../TVML/lockup-elements.md) element. When the user selects a lockup, the app uses the `onselect` attribute to call the `getDocument` method. The lockup passes the URL for the next document to the `getDocument` method.
 
 `<lockup onselect="getDocument('/Templates/PageOne.xml')">`
 

@@ -1,7 +1,8 @@
 # NSMenuToolbarItem
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A control that presents a menu in a window’s toolbar.
 
@@ -17,50 +18,55 @@ A control that presents a menu in a window’s toolbar.
 class NSMenuToolbarItem
 ```
 
+```objc
+@interface NSMenuToolbarItem : NSToolbarItem
+```
+
 #### Overview
 
-If you set an action on an [`NSMenuToolbarItem`](nsmenutoolbaritem.md) control item, the user invokes the action when clicking on the item through pressing and holding to display the menu. If you set an action on the item and [`showsIndicator`](nsmenutoolbaritem/showsindicator.md) to [`true`](https://developer.apple.com/documentation/swift/true), the system displays the indicator as a separate segment so the user can invoke the menu with a click on that segment.
+If you set an action on an [`NSMenuToolbarItem`](./nsmenutoolbaritem.md) control item, the user invokes the action when clicking on the item through pressing and holding to display the menu. If you set an action on the item and [`showsIndicator`](./nsmenutoolbaritem/showsindicator.md) to [`true`](../Swift/true.md), the system displays the indicator as a separate segment so the user can invoke the menu with a click on that segment.
 
-If you don’t set an action on the [`NSMenuToolbarItem`](nsmenutoolbaritem.md), a simple click invokes the menu, and the indicator is purely decorative.
+If you don’t set an action on the [`NSMenuToolbarItem`](./nsmenutoolbaritem.md), a simple click invokes the menu, and the indicator is purely decorative.
 
 ## Topics
 
 ### Configuring a menu toolbar item
-- [var showsIndicator: Bool](nsmenutoolbaritem/showsindicator.md)
+- [var showsIndicator: Bool](./nsmenutoolbaritem/showsindicator.md)
   A Boolean value that determines whether the toolbar item displays an indicator of additional functionality.
-- [var menu: NSMenu](nsmenutoolbaritem/menu.md)
+- [var menu: NSMenu](./nsmenutoolbaritem/menu.md)
   The menu presented from the toolbar item.
-- [var itemMenu: UIMenu](nsmenutoolbaritem/itemmenu.md)
+- [var itemMenu: UIMenu](./nsmenutoolbaritem/itemmenu.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSToolbarItem](nstoolbaritem.md)
+- [NSToolbarItem](./nstoolbaritem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMenuItemValidation](./nsmenuitemvalidation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSValidatedUserInterfaceItem](./nsvalidateduserinterfaceitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSToolbarItem](nstoolbaritem.md)
+### Items
+- [class NSToolbarItem](./nstoolbaritem.md)
   A single item that appears in a window’s toolbar.
-- [class NSToolbarItemGroup](nstoolbaritemgroup.md)
+- [class NSToolbarItemGroup](./nstoolbaritemgroup.md)
   A group of subitems in a toolbar item.
-- [NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.enum.md)
-- [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
+- [NSToolbarItemGroup.ControlRepresentation](./nstoolbaritemgroup/controlrepresentation-swift.enum.md)
+- [NSToolbarItemGroup.SelectionMode](./nstoolbaritemgroup/selectionmode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
-- [class NSSearchToolbarItem](nssearchtoolbaritem.md)
+- [class NSSearchToolbarItem](./nssearchtoolbaritem.md)
   A toolbar item that contains a search field optimized for performing text-based searches.
-- [class NSTrackingSeparatorToolbarItem](nstrackingseparatortoolbaritem.md)
+- [class NSTrackingSeparatorToolbarItem](./nstrackingseparatortoolbaritem.md)
   A toolbar separator that aligns with the vertical split view in the same window.
 
 

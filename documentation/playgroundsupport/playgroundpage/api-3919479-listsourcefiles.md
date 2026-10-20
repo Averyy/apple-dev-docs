@@ -1,7 +1,8 @@
 # listSourceFiles(inUserModule:)
 
 **Framework**: Playground Support  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Xcode 13.2+

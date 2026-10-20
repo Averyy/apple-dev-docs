@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error in the top-level encode.
 
@@ -20,13 +21,18 @@ An error in the top-level encode.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSError * error;
+```
+
 #### Discussion
 
-The meaning of this property depends on the setting of the [`decodingFailurePolicy`](nscoder/decodingfailurepolicy-swift.property.md) property. For [`NSCoder.DecodingFailurePolicy.raiseException`](nscoder/decodingfailurepolicy-swift.enum/raiseexception.md), this property is always `nil`. For [`NSCoder.DecodingFailurePolicy.setErrorAndReturn`](nscoder/decodingfailurepolicy-swift.enum/seterrorandreturn.md), a non-`nil` value represents the first error encountered while decoding the archive.
+The meaning of this property depends on the setting of the [`decodingFailurePolicy`](./decodingfailurepolicy-swift.property.md) property. For [`NSCoder.DecodingFailurePolicy.raiseException`](./decodingfailurepolicy-swift.enum/raiseexception.md), this property is always `nil`. For [`NSCoder.DecodingFailurePolicy.setErrorAndReturn`](./decodingfailurepolicy-swift.enum/seterrorandreturn.md), a non-`nil` value represents the first error encountered while decoding the archive.
 
 ## See Also
 
-- [func failWithError(any Error)](nscoder/failwitherror(_:).md)
+### Managing Decode Errors
+- [func failWithError(any Error)](./failwitherror%28_%29.md)
   Signals to this coder that the decode operation has failed.
 
 

@@ -1,7 +1,8 @@
 # current
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current tracking state of the device.
 

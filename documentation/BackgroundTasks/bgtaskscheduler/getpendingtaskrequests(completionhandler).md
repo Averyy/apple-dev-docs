@@ -1,7 +1,8 @@
 # getPendingTaskRequests(completionHandler:)
 
 **Framework**: Background Tasks  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Request a list of unexecuted scheduled task requests.
 
@@ -15,18 +16,34 @@ Request a list of unexecuted scheduled task requests.
 ## Declaration
 
 ```swift
+func getPendingTaskRequests(completionHandler: @escaping @Sendable ([BGTaskRequest]) -> Void)
+```
+
+```swift
 func pendingTaskRequests() async -> [BGTaskRequest]
+```
+
+```objc
+- (void) getPendingTaskRequestsWithCompletionHandler:(void (^)(NSArray<BGTaskRequest *> *taskRequests)) completionHandler;
 ```
 
 #### Discussion
 
-> **Note**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func pendingTaskRequests() async -> [BGTaskRequest]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> **Concurrency note**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func pendingTaskRequests() async -> [BGTaskRequest]
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
-- `completionHandler`: The completion handler called with the pending tasks. The handler may execute on a background thread. The handler takes a single parameter `tasksRequests`, an array of `BGTaskRequest` objects. The array is empty if there are no scheduled tasks. The objects passed in the array are copies of the existing requests. Changing the attributes of a request has no effect. To change the attributes submit a new task request using [`submit(_:)`](bgtaskscheduler/submit(_:).md).
+- `completionHandler`: The completion handler called with the pending tasks. The handler may execute on a background thread.
+
+  The handler takes a single parameter `tasksRequests`, an array of `BGTaskRequest` objects. The array is empty if there are no scheduled tasks.
+
+  The objects passed in the array are copies of the existing requests. Changing the attributes of a request has no effect. To change the attributes submit a new task request using [`submit(_:)`](./submit%28_%29.md).
 
 
 ---

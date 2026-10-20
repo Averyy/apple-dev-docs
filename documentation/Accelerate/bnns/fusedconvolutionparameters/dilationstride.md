@@ -1,7 +1,8 @@
 # dilationStride
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width and height increments between elements in the input image during convolution.
 
@@ -11,8 +12,10 @@ The width and height increments between elements in the input image during convo
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,17 +25,18 @@ var dilationStride: (x: Int, y: Int)
 
 ## See Also
 
-- [var type: BNNS.ConvolutionType](bnns/fusedconvolutionparameters/type.md)
+### Inspecting the Properties of a Fused Convolution Parameters Structure
+- [var type: BNNS.ConvolutionType](./type.md)
   An enumeration that specifies the convolution type.
-- [var weights: BNNSNDArrayDescriptor](bnns/fusedconvolutionparameters/weights.md)
+- [var weights: BNNSNDArrayDescriptor](./weights.md)
   The descriptor of the weights.
-- [var bias: BNNSNDArrayDescriptor?](bnns/fusedconvolutionparameters/bias.md)
+- [var bias: BNNSNDArrayDescriptor?](./bias.md)
   The descriptor of the bias.
-- [var stride: (x: Int, y: Int)](bnns/fusedconvolutionparameters/stride.md)
+- [var stride: (x: Int, y: Int)](./stride.md)
   The width and height increments of the input image.
-- [var groupSize: Int](bnns/fusedconvolutionparameters/groupsize.md)
+- [var groupSize: Int](./groupsize.md)
   The convolution group size.
-- [var padding: BNNS.ConvolutionPadding](bnns/fusedconvolutionparameters/padding.md)
+- [var padding: BNNS.ConvolutionPadding](./padding.md)
   The number of zeros that the operation virtually adds to the edges of the input.
 
 

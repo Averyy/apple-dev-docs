@@ -1,7 +1,8 @@
 # all
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A range expression that selects the entire dimension.
 
@@ -17,6 +18,8 @@ A range expression that selects the entire dimension.
 ```swift
 static var all: _AllRange { get }
 ```
+
+Available when `Self` is `_AllRange`.
 
 
 ---

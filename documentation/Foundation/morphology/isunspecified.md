@@ -1,7 +1,8 @@
 # isUnspecified
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this instance specifies no particular grammar.
 
@@ -22,21 +23,22 @@ var isUnspecified: Bool { get }
 
 #### Discussion
 
-This value is equivalent to having set none of the properties in this [`Morphology`](morphology.md). This occurs when the user hasn’t specified preferences, or chose not to share them with this app. When the morphology is unspecified, inflecting a string with this morphology does nothing.
+This value is equivalent to having set none of the properties in this [`Morphology`](../morphology.md). This occurs when the user hasn’t specified preferences, or chose not to share them with this app. When the morphology is unspecified, inflecting a string with this morphology does nothing.
 
 ## See Also
 
-- [var grammaticalGender: Morphology.GrammaticalGender?](morphology/grammaticalgender-swift.property.md)
+### Accessing Grammatical Properties
+- [var grammaticalGender: Morphology.GrammaticalGender?](./grammaticalgender-swift.property.md)
   The grammatical gender used for inflecting strings with this morphology.
-- [Morphology.GrammaticalGender](morphology/grammaticalgender-swift.enum.md)
+- [Morphology.GrammaticalGender](./grammaticalgender-swift.enum.md)
   A representation of grammatical gender, used for inflecting strings.
-- [var number: Morphology.GrammaticalNumber?](morphology/number.md)
+- [var number: Morphology.GrammaticalNumber?](./number.md)
   The grammatical number used for inflecting strings with this morphology.
-- [Morphology.GrammaticalNumber](morphology/grammaticalnumber.md)
+- [Morphology.GrammaticalNumber](./grammaticalnumber.md)
   A representation of grammatical number, used for inflecting strings.
-- [var partOfSpeech: Morphology.PartOfSpeech?](morphology/partofspeech-swift.property.md)
+- [var partOfSpeech: Morphology.PartOfSpeech?](./partofspeech-swift.property.md)
   The grammatical part of speech used for inflecting strings with this morphology.
-- [Morphology.PartOfSpeech](morphology/partofspeech-swift.enum.md)
+- [Morphology.PartOfSpeech](./partofspeech-swift.enum.md)
   A representation of grammatical parts of speech, used for inflecting strings.
 
 

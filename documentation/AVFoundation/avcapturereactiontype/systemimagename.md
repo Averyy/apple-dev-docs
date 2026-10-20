@@ -1,7 +1,8 @@
 # systemImageName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the name of a system image that displays the recommended iconography for a specified reaction type.
 
@@ -16,6 +17,10 @@ Returns the name of a system image that displays the recommended iconography for
 
 ```swift
 var systemImageName: String { get }
+```
+
+```c
+extern NSString *AVCaptureReactionSystemImageNameForType(AVCaptureReactionType reactionType);
 ```
 
 

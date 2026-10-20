@@ -1,7 +1,8 @@
 # RelevantContext.InferredLocation
 
 **Framework**: RelevanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure with values for a person’s inferred home, work, school, and commute locations.
 
@@ -23,20 +24,21 @@ struct InferredLocation
 ## Topics
 
 ### Conditions
-- [static var commute: RelevantContext.InferredLocation](relevantcontext/inferredlocation/commute.md)
+- [static var commute: RelevantContext.InferredLocation](./inferredlocation/commute.md)
   A person’s commute between two inferred locations.
-- [static var home: RelevantContext.InferredLocation](relevantcontext/inferredlocation/home.md)
+- [static var home: RelevantContext.InferredLocation](./inferredlocation/home.md)
   A person’s inferred home location.
-- [static var school: RelevantContext.InferredLocation](relevantcontext/inferredlocation/school.md)
+- [static var school: RelevantContext.InferredLocation](./inferredlocation/school.md)
   A person’s inferred school location.
-- [static var work: RelevantContext.InferredLocation](relevantcontext/inferredlocation/work.md)
+- [static var work: RelevantContext.InferredLocation](./inferredlocation/work.md)
   A person’s inferred work location.
 
 ## See Also
 
-- [static func location(CLRegion) -> RelevantContext](relevantcontext/location(_:).md)
+### Location clues
+- [static func location(CLRegion) -> RelevantContext](./location%28_%29.md)
   Tells the system a widget is relevant at a specific location.
-- [static func location(inferred: RelevantContext.InferredLocation) -> RelevantContext](relevantcontext/location(inferred:).md)
+- [static func location(inferred: RelevantContext.InferredLocation) -> RelevantContext](./location%28inferred%29.md)
   Tells the system a widget is relevant at a person’s inferred location.
 
 

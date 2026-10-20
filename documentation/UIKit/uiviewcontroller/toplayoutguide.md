@@ -1,15 +1,18 @@
 # topLayoutGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the highest vertical extent for your onscreen content, for use with Auto Layout constraints.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- tvOS 7.0+
+- iOS 7.0+ - Deprecated in 11.0
+- iPadOS 7.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use the [`safeAreaLayoutGuide`](../uiview/safearealayoutguide.md) property of [`UIView`](../uiview.md) instead.
 
 ## Declaration
 
@@ -17,11 +20,15 @@ Indicates the highest vertical extent for your onscreen content, for use with Au
 var topLayoutGuide: any UILayoutSupport { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) id<UILayoutSupport> topLayoutGuide;
+```
+
 #### Discussion
 
-The [`topLayoutGuide`](uiviewcontroller/toplayoutguide.md) property comes into play when a view controller is frontmost onscreen. It indicates the highest vertical extent for content that you don’t want to appear behind a translucent or transparent UIKit bar (such as a status or navigation bar). This property implements the [`UILayoutSupport`](uilayoutsupport.md) protocol and you can employ it as a constraint item when using the [`NSLayoutConstraint`](nslayoutconstraint.md) class.
+The [`topLayoutGuide`](./toplayoutguide.md) property comes into play when a view controller is frontmost onscreen. It indicates the highest vertical extent for content that you don’t want to appear behind a translucent or transparent UIKit bar (such as a status or navigation bar). This property implements the [`UILayoutSupport`](../uilayoutsupport.md) protocol and you can employ it as a constraint item when using the [`NSLayoutConstraint`](../nslayoutconstraint.md) class.
 
-The value of this property is, specifically, the value of the [`length`](uilayoutsupport/length.md) property of the object returned when you query this property. This value is constrained by either the view controller or by its enclosing container view controller (such as a navigation or tab bar controller), as follows:
+The value of this property is, specifically, the value of the [`length`](../uilayoutsupport/length.md) property of the object returned when you query this property. This value is constrained by either the view controller or by its enclosing container view controller (such as a navigation or tab bar controller), as follows:
 
 - A view controller **not within** a container view controller constrains this property to indicate the bottom of the status bar, if visible, or else to indicate the top edge of the view controller’s view.
 - A view controller **within** a container view controller does not set this property’s value. Instead, the container view controller constrains the value to indicate:
@@ -31,7 +38,7 @@ The value of this property is, specifically, the value of the [`length`](uilayou
 
 If a container navigation controller’s navigation bar is visible and opaque, the navigation controller lays out the frontmost view controller’s view so its top edge abuts the bottom of the navigation bar. In this case, the value of this property is `0`.
 
-Query this property within your implementation of the [`viewDidLayoutSubviews()`](uiviewcontroller/viewdidlayoutsubviews().md) method.
+Query this property within your implementation of the [`viewDidLayoutSubviews()`](./viewdidlayoutsubviews%28%29.md) method.
 
 When laying out a storyboard scene, the Top Layout Guide object is available in the Interface Builder outline view as a child of the View Controller object. Adding a top layout guide using Interface Builder provides backward compatibility to iOS 6.
 
@@ -72,19 +79,20 @@ In the case of using a view subclass, obtain the numbers you need as follows:
 
 ## See Also
 
-- [var shouldAutorotate: Bool](uiviewcontroller/shouldautorotate.md)
+### Deprecated properties
+- [var shouldAutorotate: Bool](./shouldautorotate.md)
   A Boolean value that indicates whether the view controller’s contents should autorotate.
-- [var previewActionItems: [any UIPreviewActionItem]](uiviewcontroller/previewactionitems.md)
+- [var previewActionItems: [any UIPreviewActionItem]](./previewactionitems.md)
   The quick actions displayed when a user swipes upward on a 3D Touch preview.
-- [var automaticallyAdjustsScrollViewInsets: Bool](uiviewcontroller/automaticallyadjustsscrollviewinsets.md)
+- [var automaticallyAdjustsScrollViewInsets: Bool](./automaticallyadjustsscrollviewinsets.md)
   A Boolean value that indicates whether the view controller should automatically adjust its scroll view insets.
-- [var bottomLayoutGuide: any UILayoutSupport](uiviewcontroller/bottomlayoutguide.md)
+- [var bottomLayoutGuide: any UILayoutSupport](./bottomlayoutguide.md)
   Indicates the lowest vertical extent for your onscreen content, for use with Auto Layout constraints.
-- [var interfaceOrientation: UIInterfaceOrientation](uiviewcontroller/interfaceorientation.md)
+- [var interfaceOrientation: UIInterfaceOrientation](./interfaceorientation.md)
   Convenience property that provides the current orientation of the interface, meaningful only if the view controller is taking up the full screen.
-- [var isModalInPopover: Bool](uiviewcontroller/ismodalinpopover.md)
+- [var isModalInPopover: Bool](./ismodalinpopover.md)
   A Boolean value indicating whether the view controller should be presented modally by a popover.
-- [var searchDisplayController: UISearchDisplayController?](uiviewcontroller/searchdisplaycontroller.md)
+- [var searchDisplayController: UISearchDisplayController?](./searchdisplaycontroller.md)
   The search display controller associated with the view controller.
 
 

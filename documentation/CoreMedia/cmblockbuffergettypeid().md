@@ -1,7 +1,8 @@
 # CMBlockBufferGetTypeID()
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for block buffer objects.
 
@@ -18,6 +19,10 @@ Returns the type identifier for block buffer objects.
 
 ```swift
 func CMBlockBufferGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CMBlockBufferGetTypeID();
 ```
 
 #### Return Value

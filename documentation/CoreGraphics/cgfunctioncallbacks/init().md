@@ -1,16 +1,17 @@
 # init()
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(version: UInt32, evaluate: CGFunctionEvaluateCallback?, releaseInfo: CGFunctionReleaseInfoCallback?)](cgfunctioncallbacks/init(version:evaluate:releaseinfo:).md)
+### Initializers
+- [init(version: UInt32, evaluate: CGFunctionEvaluateCallback?, releaseInfo: CGFunctionReleaseInfoCallback?)](./init%28version,evaluate,releaseinfo%29.md)
 
 
 ---

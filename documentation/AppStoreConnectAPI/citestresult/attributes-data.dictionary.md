@@ -1,7 +1,8 @@
 # CiTestResult.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Test Results resource.
 
@@ -10,16 +11,16 @@ The attributes that describe a Test Results resource.
 
 ## Declaration
 
-```swift
+```
 object CiTestResult.Attributes
 ```
 
 ## Topics
 
 ### Objects and types
-- [object CiTestResult.Attributes.DestinationTestResults](citestresult/attributes-data.dictionary/destinationtestresults-data.dictionary.md)
+- [object CiTestResult.Attributes.DestinationTestResults](./attributes-data.dictionary/destinationtestresults-data.dictionary.md)
   The results of a test action Xcode Cloud performed using a specific test destination.
-- [type CiTestStatus](citeststatus.md)
+- [type CiTestStatus](../citeststatus.md)
   A string that represents test status information.
 
 ## Properties

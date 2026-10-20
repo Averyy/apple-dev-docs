@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 unsigned int consumerCount;
 ```
 
@@ -15,12 +15,13 @@ Current count of produced interrupts that the owner has been informed of.
 
 ## See Also
 
-- [reserved](iointerrupteventsource/reserved.md)
-- [provider](iointerrupteventsource/provider.md)
-- [producerCount](iointerrupteventsource/producercount.md)
-- [intIndex](iointerrupteventsource/intindex.md)
-- [explicitDisable](iointerrupteventsource/explicitdisable.md)
-- [autoDisable](iointerrupteventsource/autodisable.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [provider](./provider.md)
+- [producerCount](./producercount.md)
+- [intIndex](./intindex.md)
+- [explicitDisable](./explicitdisable.md)
+- [autoDisable](./autodisable.md)
 
 
 ---

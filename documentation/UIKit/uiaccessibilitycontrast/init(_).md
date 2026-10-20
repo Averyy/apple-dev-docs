@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an accessibility contrast from the specified SwiftUI color scheme contrast.
 
@@ -10,7 +11,7 @@ Creates an accessibility contrast from the specified SwiftUI color scheme contra
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

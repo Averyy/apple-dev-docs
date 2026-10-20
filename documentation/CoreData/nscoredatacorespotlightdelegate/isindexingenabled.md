@@ -1,7 +1,8 @@
 # isIndexingEnabled
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Core Data is currently updating the Core Spotlight index with the persistent store’s entities.
 
@@ -18,11 +19,16 @@ A Boolean value that indicates whether Core Data is currently updating the Core 
 var isIndexingEnabled: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isIndexingEnabled) BOOL indexingEnabled;
+```
+
 ## See Also
 
-- [func domainIdentifier() -> String](nscoredatacorespotlightdelegate/domainidentifier.md)
+### Configuring the Index
+- [func domainIdentifier() -> String](./domainidentifier%28%29.md)
   Returns the domain identifier.
-- [func indexName() -> String?](nscoredatacorespotlightdelegate/indexname.md)
+- [func indexName() -> String?](./indexname%28%29.md)
   Returns the index’s name.
 
 

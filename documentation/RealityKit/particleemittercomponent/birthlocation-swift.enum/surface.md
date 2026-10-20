@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.BirthLocation.surface
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from the surface of the shape.
 

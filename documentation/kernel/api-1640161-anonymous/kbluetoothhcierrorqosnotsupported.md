@@ -1,14 +1,15 @@
 # kBluetoothHCIErrorQoSNotSupported
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIErrorQoSNotSupported = 0x27
 ```
 

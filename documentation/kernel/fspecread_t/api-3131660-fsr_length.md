@@ -1,14 +1,15 @@
 # fsr_length
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 off_t fsr_length;
 ```
 

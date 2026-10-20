@@ -1,14 +1,15 @@
 # MBUF_MCAST
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 MBUF_MCAST = 0x0200
 ```
 

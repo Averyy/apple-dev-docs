@@ -1,7 +1,8 @@
 # init(_:onRequest:onCompletion:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Sign in with Apple button.
 
@@ -29,9 +30,10 @@ init(_ label: SignInWithAppleButton.Label = .signIn, onRequest: @escaping (ASAut
 
 ## See Also
 
-- [SignInWithAppleButton.Label](signinwithapplebutton/label.md)
+### Creating a button
+- [SignInWithAppleButton.Label](./label.md)
   The label that appears on the button.
-- [SignInWithAppleButton.Style](signinwithapplebutton/style.md)
+- [SignInWithAppleButton.Style](./style.md)
   The structure that defines styles that you use to control the button’s appearance.
 
 

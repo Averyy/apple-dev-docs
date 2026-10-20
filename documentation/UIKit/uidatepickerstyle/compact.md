@@ -1,7 +1,8 @@
 # UIDatePickerStyle.compact
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style indicating that the date picker displays as a label that when tapped displays a calendar-style editor.
 
@@ -17,17 +18,22 @@ A style indicating that the date picker displays as a label that when tapped dis
 case compact
 ```
 
+```c
+UIDatePickerStyleCompact
+```
+
 #### Discussion
 
-You can’t use this style with the [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md) mode.
+You can’t use this style with the [`UIDatePicker.Mode.countDownTimer`](../uidatepicker/mode/countdowntimer.md) mode.
 
 ## See Also
 
-- [UIDatePickerStyle.automatic](uidatepickerstyle/automatic.md)
+### Styles
+- [UIDatePickerStyle.automatic](./automatic.md)
   A style indicating that the system picks the concrete style based on the current platform and date picker mode.
-- [UIDatePickerStyle.inline](uidatepickerstyle/inline.md)
+- [UIDatePickerStyle.inline](./inline.md)
   A style indicating that the date pickers displays as an inline, editable field.
-- [UIDatePickerStyle.wheels](uidatepickerstyle/wheels.md)
+- [UIDatePickerStyle.wheels](./wheels.md)
   A style indicating that the date picker displays as a wheel picker.
 
 

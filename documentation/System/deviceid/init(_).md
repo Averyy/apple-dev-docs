@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a strongly-typed `DeviceID` from the raw C value.
 

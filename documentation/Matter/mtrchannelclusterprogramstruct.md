@@ -1,7 +1,8 @@
 # MTRChannelClusterProgramStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,37 +19,41 @@
 class MTRChannelClusterProgramStruct
 ```
 
+```objc
+@interface MTRChannelClusterProgramStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var audioLanguages: [Any]?](mtrchannelclusterprogramstruct/audiolanguages.md)
-- [var castList: [Any]?](mtrchannelclusterprogramstruct/castlist.md)
-- [var categoryList: [Any]?](mtrchannelclusterprogramstruct/categorylist.md)
-- [var channel: MTRChannelClusterChannelInfoStruct](mtrchannelclusterprogramstruct/channel.md)
-- [var descriptionString: String?](mtrchannelclusterprogramstruct/descriptionstring.md)
-- [var endTime: NSNumber](mtrchannelclusterprogramstruct/endtime.md)
-- [var identifier: String](mtrchannelclusterprogramstruct/identifier.md)
-- [var parentalGuidanceText: String?](mtrchannelclusterprogramstruct/parentalguidancetext.md)
-- [var ratings: [Any]?](mtrchannelclusterprogramstruct/ratings.md)
-- [var recordingFlag: NSNumber?](mtrchannelclusterprogramstruct/recordingflag.md)
-- [var releaseDate: String?](mtrchannelclusterprogramstruct/releasedate.md)
-- [var seriesInfo: MTRChannelClusterSeriesInfoStruct?](mtrchannelclusterprogramstruct/seriesinfo.md)
-- [var startTime: NSNumber](mtrchannelclusterprogramstruct/starttime.md)
-- [var subtitle: String?](mtrchannelclusterprogramstruct/subtitle.md)
-- [var title: String](mtrchannelclusterprogramstruct/title.md)
+- [var audioLanguages: [Any]?](./mtrchannelclusterprogramstruct/audiolanguages.md)
+- [var castList: [Any]?](./mtrchannelclusterprogramstruct/castlist.md)
+- [var categoryList: [Any]?](./mtrchannelclusterprogramstruct/categorylist.md)
+- [var channel: MTRChannelClusterChannelInfoStruct](./mtrchannelclusterprogramstruct/channel.md)
+- [var descriptionString: String?](./mtrchannelclusterprogramstruct/descriptionstring.md)
+- [var endTime: NSNumber](./mtrchannelclusterprogramstruct/endtime.md)
+- [var identifier: String](./mtrchannelclusterprogramstruct/identifier.md)
+- [var parentalGuidanceText: String?](./mtrchannelclusterprogramstruct/parentalguidancetext.md)
+- [var ratings: [Any]?](./mtrchannelclusterprogramstruct/ratings.md)
+- [var recordingFlag: NSNumber?](./mtrchannelclusterprogramstruct/recordingflag.md)
+- [var releaseDate: String?](./mtrchannelclusterprogramstruct/releasedate.md)
+- [var seriesInfo: MTRChannelClusterSeriesInfoStruct?](./mtrchannelclusterprogramstruct/seriesinfo.md)
+- [var startTime: NSNumber](./mtrchannelclusterprogramstruct/starttime.md)
+- [var subtitle: String?](./mtrchannelclusterprogramstruct/subtitle.md)
+- [var title: String](./mtrchannelclusterprogramstruct/title.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

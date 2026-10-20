@@ -1,7 +1,8 @@
 # UCCollateOptions
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Specifies options for Unicode string comparison.
 
@@ -15,22 +16,26 @@ Specifies options for Unicode string comparison.
 typealias UCCollateOptions = UInt32
 ```
 
+```c
+typedef UInt32 UCCollateOptions;
+```
+
 #### Discussion
 
-For a description of the `UCCollateOptions` values, see [`Standard Options Mask`](carbon_core/unicode_utilities/1390444-standard_options_mask.md).
+For a description of the `UCCollateOptions` values, see [Standard Options Mask](./carbon_core/unicode_utilities/api-1390444-standard_options_mask.md).
 
 ## Topics
 
 ### Constants
-- [var kUCCollateComposeInsensitiveMask: Int](kuccollatecomposeinsensitivemask.md)
-- [var kUCCollateWidthInsensitiveMask: Int](kuccollatewidthinsensitivemask.md)
-- [var kUCCollateCaseInsensitiveMask: Int](kuccollatecaseinsensitivemask.md)
+- [var kUCCollateComposeInsensitiveMask: Int](./kuccollatecomposeinsensitivemask.md)
+- [var kUCCollateWidthInsensitiveMask: Int](./kuccollatewidthinsensitivemask.md)
+- [var kUCCollateCaseInsensitiveMask: Int](./kuccollatecaseinsensitivemask.md)
   If the corresponding bit is set, then uppercase and titlecase characters are treated as equivalent to the corresponding lowercase characters.
-- [var kUCCollateDiacritInsensitiveMask: Int](kuccollatediacritinsensitivemask.md)
+- [var kUCCollateDiacritInsensitiveMask: Int](./kuccollatediacritinsensitivemask.md)
   If the corresponding bit is set, then characters with diacritics are treated as equivalent to the corresponding characters without diacritics.
-- [var kUCCollatePunctuationSignificantMask: Int](kuccollatepunctuationsignificantmask.md)
-- [var kUCCollateDigitsOverrideMask: Int](kuccollatedigitsoverridemask.md)
-- [var kUCCollateDigitsAsNumberMask: Int](kuccollatedigitsasnumbermask.md)
+- [var kUCCollatePunctuationSignificantMask: Int](./kuccollatepunctuationsignificantmask.md)
+- [var kUCCollateDigitsOverrideMask: Int](./kuccollatedigitsoverridemask.md)
+- [var kUCCollateDigitsAsNumberMask: Int](./kuccollatedigitsasnumbermask.md)
 
 
 ---

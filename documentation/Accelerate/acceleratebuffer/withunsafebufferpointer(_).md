@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Calls a closure with a pointer to the object’s contiguous storage.
@@ -12,7 +13,7 @@ Calls a closure with a pointer to the object’s contiguous storage.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,7 +24,12 @@ func withUnsafeBufferPointer<R>(_ body: (UnsafeBufferPointer<Self.Element>) thro
 
 ## Parameters
 
-- `body`: A closure that receives an [`UnsafeBufferPointer`](https://developer.apple.com/documentation/swift/unsafebufferpointer) to the sequence’s contiguous storage.
+- `body`: A closure that receives an [`UnsafeBufferPointer`](../../Swift/unsafebufferpointer.md) to the sequence’s contiguous storage.
+
+## Default Implementations
+
+### AccelerateBuffer Implementations
+- [func withUnsafeBufferPointer<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R](./withunsafebufferpointer%28_%29-3oi0a.md)
 
 
 ---

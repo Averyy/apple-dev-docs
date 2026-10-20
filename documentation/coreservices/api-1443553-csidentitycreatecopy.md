@@ -1,7 +1,8 @@
 # CSIdentityCreateCopy(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 func CSIdentityCreateCopy(_ allocator: CFAllocator!, _ identity: CSIdentity!) -> Unmanaged<CSIdentity>!
+```
+
+```c
+CSIdentityRef CSIdentityCreateCopy(CFAllocatorRef allocator, CSIdentityRef identity);
 ```
 
 

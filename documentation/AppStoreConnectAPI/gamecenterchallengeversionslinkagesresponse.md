@@ -1,21 +1,22 @@
 # GameCenterChallengeVersionsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeVersionsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeVersionsLinkagesResponse.Data](gamecenterchallengeversionslinkagesresponse/data-data.dictionary.md)
+- [object GameCenterChallengeVersionsLinkagesResponse.Data](./gamecenterchallengeversionslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,25 +26,26 @@ object GameCenterChallengeVersionsLinkagesResponse
 
 ## See Also
 
-- [object GameCenterChallenge](gamecenterchallenge.md)
+### Objects
+- [object GameCenterChallenge](./gamecenterchallenge.md)
   The data structure that represent a challenge.
-- [object GameCenterChallengesResponse](gamecenterchallengesresponse.md)
+- [object GameCenterChallengesResponse](./gamecenterchallengesresponse.md)
   A response containing a list of Game Center challenges configured for an app.
-- [object GameCenterChallengeCreateRequest](gamecenterchallengecreaterequest.md)
+- [object GameCenterChallengeCreateRequest](./gamecenterchallengecreaterequest.md)
   The request body you use to create a challenge.
-- [object GameCenterChallengeResponse](gamecenterchallengeresponse.md)
+- [object GameCenterChallengeResponse](./gamecenterchallengeresponse.md)
   A response containing a single Game Center challenge configuration.
-- [object GameCenterChallengeUpdateRequest](gamecenterchallengeupdaterequest.md)
+- [object GameCenterChallengeUpdateRequest](./gamecenterchallengeupdaterequest.md)
   The request body you use to update a challenge.
-- [object GameCenterChallengeVersion](gamecenterchallengeversion.md)
+- [object GameCenterChallengeVersion](./gamecenterchallengeversion.md)
   The data structure that represent a challenge version.
-- [object GameCenterChallengeVersionInlineCreate](gamecenterchallengeversioninlinecreate.md)
+- [object GameCenterChallengeVersionInlineCreate](./gamecenterchallengeversioninlinecreate.md)
   The data structure you use to configure a challenge version while creating a challenge.
-- [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)
+- [object GameCenterChallengeVersionRelease](./gamecenterchallengeversionrelease.md)
   The data structure that represent a challenge version release.
-- [object GameCenterChallengeLeaderboardV2LinkageRequest](gamecenterchallengeleaderboardv2linkagerequest.md)
+- [object GameCenterChallengeLeaderboardV2LinkageRequest](./gamecenterchallengeleaderboardv2linkagerequest.md)
   The data structure that represents a Game Center challenge leaderboard linkage request resource.
-- [object GameCenterChallengeLeaderboardLinkageRequest](gamecenterchallengeleaderboardlinkagerequest.md)
+- [object GameCenterChallengeLeaderboardLinkageRequest](./gamecenterchallengeleaderboardlinkagerequest.md)
 
 
 ---

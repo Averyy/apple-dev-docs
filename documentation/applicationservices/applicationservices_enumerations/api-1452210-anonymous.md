@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kInvertHighlighting: Int](kinverthighlighting.md)
-- [var kRedrawHighlighting: Int](kredrawhighlighting.md)
+- [var kInvertHighlighting: Int](../kinverthighlighting.md)
+- [var kRedrawHighlighting: Int](../kredrawhighlighting.md)
 
 
 ---

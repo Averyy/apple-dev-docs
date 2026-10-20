@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount of sharpening to apply.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The amount of sharpening to apply.
 var sharpness: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float sharpness;
+```
+
 ## See Also
 
-- [var angle: Float](cihatchedscreen/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the pattern.
-- [var center: CGPoint](cihatchedscreen/center.md)
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the hatched screen pattern.
-- [var inputImage: CIImage?](cihatchedscreen/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var width: Float](cihatchedscreen/width.md)
+- [var width: Float](./width.md)
   The distance between lines in the pattern.
 
 

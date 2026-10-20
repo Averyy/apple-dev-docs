@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.squeeze
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.Buffer.squeeze.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.Buffer.squeeze
-
- Table of contents 
-
-## Contents
-
-# mlx.data.Buffer.squeeze
-
 **Buffer.squeeze(*self: mlx.data._c.Buffer*, *key: str*, *dim: int | List[int] | None = None*, *output_key: str = ''*) → mlx.data._c.Buffer**
 : Squeeze singleton dimensions.
 If no dimension is provided squeeze all singleton dimensions.
@@ -34,5 +17,3 @@ Parameters:
 not provided squeeze all the singleton dimensions. (default: None)
 **output_key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – If it is not empty then write the result to this
 key instead of overwriting `key`. (default: ‘’)
-
-** Contents

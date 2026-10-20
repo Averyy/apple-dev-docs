@@ -1,7 +1,8 @@
 # AccessibilitySettings
 
 **Framework**: Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure for working with accessibility system settings.
 
@@ -23,60 +24,60 @@ struct AccessibilitySettings
 ## Topics
 
 ### Opening the Settings app
-- [static func openSettings(for: AccessibilitySettings.Feature) async throws](accessibilitysettings/opensettings(for:).md)
+- [static func openSettings(for: AccessibilitySettings.Feature) async throws](./accessibilitysettings/opensettings%28for%29.md)
   Opens the Settings app to a specific section of Accessibility settings.
-- [AccessibilitySettings.Feature](accessibilitysettings/feature.md)
+- [AccessibilitySettings.Feature](./accessibilitysettings/feature.md)
   Constants that describe specific Accessibility settings in the Settings app.
 ### Pausing animated images
-- [Animated images](animated-images.md)
+- [Animated images](./animated-images.md)
   Pause animations in animated images in your app when people turn off the Animated Images setting.
-- [static var animatedImagesEnabled: Bool](accessibilitysettings/animatedimagesenabled.md)
+- [static var animatedImagesEnabled: Bool](./accessibilitysettings/animatedimagesenabled.md)
   A Boolean value that indicates whether the system setting for playing animated images is on.
-- [static var animatedImagesEnabledDidChangeNotification: Notification.Name](accessibilitysettings/animatedimagesenableddidchangenotification.md)
+- [static var animatedImagesEnabledDidChangeNotification: Notification.Name](./accessibilitysettings/animatedimagesenableddidchangenotification.md)
   A notification that posts when the system setting for playing animated images changes.
 ### Customizing vertical text layout
-- [Horizontal text](horizontal-text.md)
+- [Horizontal text](./horizontal-text.md)
   Lay out vertical text horizontally in your app when people turn on the Prefer Horizontal Text setting.
-- [static var prefersHorizontalTextLayout: Bool](accessibilitysettings/prefershorizontaltextlayout.md)
+- [static var prefersHorizontalTextLayout: Bool](./accessibilitysettings/prefershorizontaltextlayout.md)
   A Boolean value that indicates whether the system setting to prefer horizontal text for languages that support both vertical and horizontal text layout is on.
-- [static var prefersHorizontalTextLayoutDidChangeNotification: Notification.Name](accessibilitysettings/prefershorizontaltextlayoutdidchangenotification.md)
+- [static var prefersHorizontalTextLayoutDidChangeNotification: Notification.Name](./accessibilitysettings/prefershorizontaltextlayoutdidchangenotification.md)
   A notification that posts when the system setting to prefer horizontal text for languages that support both vertical and horizontal text layout changes.
 ### Supporting head-anchored content
-- [static var prefersHeadAnchorAlternative: Bool](accessibilitysettings/prefersheadanchoralternative.md)
+- [static var prefersHeadAnchorAlternative: Bool](./accessibilitysettings/prefersheadanchoralternative.md)
   A Boolean value that indicates the person’s preference for content that follows their head position.
-- [static var prefersHeadAnchorAlternativeDidChangeNotification: Notification.Name](accessibilitysettings/prefersheadanchoralternativedidchangenotification.md)
+- [static var prefersHeadAnchorAlternativeDidChangeNotification: Notification.Name](./accessibilitysettings/prefersheadanchoralternativedidchangenotification.md)
   A notification that posts when the system setting for head-anchored content changes.
 ### Reducing animation for text insertion indicators
-- [static var prefersNonBlinkingTextInsertionIndicator: Bool](accessibilitysettings/prefersnonblinkingtextinsertionindicator.md)
+- [static var prefersNonBlinkingTextInsertionIndicator: Bool](./accessibilitysettings/prefersnonblinkingtextinsertionindicator.md)
   A Boolean value that indicates whether the system setting to prefer a nonblinking cursor in editable text fields is on.
-- [static let prefersNonBlinkingTextInsertionIndicatorDidChangeNotification: NSNotification.Name](accessibilitysettings/prefersnonblinkingtextinsertionindicatordidchangenotification.md)
+- [static let prefersNonBlinkingTextInsertionIndicatorDidChangeNotification: NSNotification.Name](./accessibilitysettings/prefersnonblinkingtextinsertionindicatordidchangenotification.md)
   A notification that posts when the system setting to prefer a nonblinking cursor in editable text fields changes.
 ### Checking if Assistive Access is running
-- [static var isAssistiveAccessEnabled: Bool](accessibilitysettings/isassistiveaccessenabled.md)
+- [static var isAssistiveAccessEnabled: Bool](./accessibilitysettings/isassistiveaccessenabled.md)
   A Boolean value that indicates whether Assistive Access is running.
 ### Creating an accessibility settings structure
-- [init()](accessibilitysettings/init.md)
+- [init()](./accessibilitysettings/init%28%29.md)
 ### Structures
-- [AccessibilitySettings.ApplicationAccessibilityEnabledDidChangeMessage](accessibilitysettings/applicationaccessibilityenableddidchangemessage.md)
-  A type- and concurrency-safe `NotificationCenter` message posted when the value of [`isApplicationAccessibilityEnabled`](accessibilitysettings/isapplicationaccessibilityenabled.md) changes.
+- [AccessibilitySettings.ApplicationAccessibilityEnabledDidChangeMessage](./accessibilitysettings/applicationaccessibilityenableddidchangemessage.md)
+  A type- and concurrency-safe `NotificationCenter` message posted when the value of [`isApplicationAccessibilityEnabled`](./accessibilitysettings/isapplicationaccessibilityenabled.md) changes.
 ### Type Properties
-- [static let applicationAccessibilityEnabledDidChangeNotification: NSNotification.Name](accessibilitysettings/applicationaccessibilityenableddidchangenotification.md)
+- [static let applicationAccessibilityEnabledDidChangeNotification: NSNotification.Name](./accessibilitysettings/applicationaccessibilityenableddidchangenotification.md)
   Posted when the value returned by `AXApplicationAccessibilityEnabled()` changes.
-- [static var isApplicationAccessibilityEnabled: Bool](accessibilitysettings/isapplicationaccessibilityenabled.md)
+- [static var isApplicationAccessibilityEnabled: Bool](./accessibilitysettings/isapplicationaccessibilityenabled.md)
   Returns whether application accessibility is currently enabled for this process.
-- [static var isReduceHighlightingEffectsEnabled: Bool](accessibilitysettings/isreducehighlightingeffectsenabled.md)
-- [static var prefersActionSliderAlternative: Bool](accessibilitysettings/prefersactionslideralternative.md)
-- [static let prefersActionSliderAlternativeDidChangeNotification: NSNotification.Name](accessibilitysettings/prefersactionslideralternativedidchangenotification.md)
-- [static let reduceHighlightingEffectsEnabledDidChangeNotification: NSNotification.Name](accessibilitysettings/reducehighlightingeffectsenableddidchangenotification.md)
-- [static var showBordersEnabled: Bool](accessibilitysettings/showbordersenabled.md)
-- [static let showBordersEnabledStatusDidChangeNotification: NSNotification.Name](accessibilitysettings/showbordersenabledstatusdidchangenotification.md)
+- [static var isReduceHighlightingEffectsEnabled: Bool](./accessibilitysettings/isreducehighlightingeffectsenabled.md)
+- [static var prefersActionSliderAlternative: Bool](./accessibilitysettings/prefersactionslideralternative.md)
+- [static let prefersActionSliderAlternativeDidChangeNotification: NSNotification.Name](./accessibilitysettings/prefersactionslideralternativedidchangenotification.md)
+- [static let reduceHighlightingEffectsEnabledDidChangeNotification: NSNotification.Name](./accessibilitysettings/reducehighlightingeffectsenableddidchangenotification.md)
+- [static var showBordersEnabled: Bool](./accessibilitysettings/showbordersenabled.md)
+- [static let showBordersEnabledStatusDidChangeNotification: NSNotification.Name](./accessibilitysettings/showbordersenabledstatusdidchangenotification.md)
 ### Type Methods
-- [static func canOpenSettings(for: AccessibilitySettings.Feature) -> Bool](accessibilitysettings/canopensettings(for:).md)
+- [static func canOpenSettings(for: AccessibilitySettings.Feature) -> Bool](./accessibilitysettings/canopensettings%28for%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

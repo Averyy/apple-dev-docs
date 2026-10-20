@@ -1,6 +1,7 @@
 # Informing ClassKit that a task is about to begin
 
-**Framework**: ClassKit
+**Framework**: ClassKit  
+**Role**: Article
 
 Activate and deactivate contexts according to user interaction.
 
@@ -8,11 +9,11 @@ Activate and deactivate contexts according to user interaction.
 
 To provide hints to Schoolwork about which tasks are most recently and commonly used, activate the context that represents that task.
 
-##### Activate Contexts When Users Begin Tasks
+##### Activate contexts when users begin tasks
 
-When a person navigates to a point in your app that corresponds to a particular context, you activate that context with a call to the [`becomeActive()`](clscontext/becomeactive().md) method.
+When a person navigates to a point in your app that corresponds to a particular context, you activate that context with a call to the [`becomeActive()`](./clscontext/becomeactive%28%29.md) method.
 
-In many cases, contexts correspond directly to views in your app. This lets you associate view appearance with context activation. For example, if your app presents one section of a chapter as a scroll view, and the corresponding view controller has a handle on the model instance representing that section, you can use the [`viewDidAppear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidappear(_:)) method to activate the context:
+In many cases, contexts correspond directly to views in your app. This lets you associate view appearance with context activation. For example, if your app presents one section of a chapter as a scroll view, and the corresponding view controller has a handle on the model instance representing that section, you can use the [`viewDidAppear(_:)`](../UIKit/uiviewcontroller/viewdidappear%28_%29.md) method to activate the context:
 
 ```swift
 override func viewDidAppear(_ animated: Bool) {
@@ -25,9 +26,9 @@ override func viewDidAppear(_ animated: Bool) {
 }
 ```
 
-##### Deactivate Contexts When Users Finish
+##### Deactivate contexts when users finish
 
-Similarly, you deactivate a context when the user leaves the corresponding area of your app using a call to the [`resignActive()`](clscontext/resignactive().md) method. In the case of the section view, you can add the call to the view controller’s [`viewWillDisappear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewwilldisappear(_:)) method:
+Similarly, you deactivate a context when the user leaves the corresponding area of your app using a call to the [`resignActive()`](./clscontext/resignactive%28%29.md) method. In the case of the section view, you can add the call to the view controller’s [`viewWillDisappear(_:)`](../UIKit/uiviewcontroller/viewwilldisappear%28_%29.md) method:
 
 ```swift
 override func viewWillDisappear(_ animated: Bool) {
@@ -46,11 +47,12 @@ Only one context can be active at a time. If you activate a new context when one
 
 ## See Also
 
-- [func becomeActive()](clscontext/becomeactive.md)
+### Activating and deactivating a context
+- [func becomeActive()](./clscontext/becomeactive%28%29.md)
   Tells a context to become the active context.
-- [func resignActive()](clscontext/resignactive.md)
+- [func resignActive()](./clscontext/resignactive%28%29.md)
   Tells a context to stop being the active context.
-- [var isActive: Bool](clscontext/isactive.md)
+- [var isActive: Bool](./clscontext/isactive.md)
   A Boolean indicating whether the context is active.
 
 

@@ -1,7 +1,8 @@
 # HoverPhase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The current hovering state and value of the pointer.
 
@@ -22,7 +23,7 @@ enum HoverPhase
 
 #### Overview
 
-When you use the [`onContinuousHover(coordinateSpace:perform:)`](view/oncontinuoushover(coordinatespace:perform:).md) modifier, you can handle the hovering state using the `action` closure. SwiftUI calls the closure with a phase value to indicate the current hovering state. The following example updates `hoverLocation` and `isHovering` based on the phase provided to the closure:
+When you use the [`onContinuousHover(coordinateSpace:perform:)`](./view/oncontinuoushover%28coordinatespace,perform%29.md) modifier, you can handle the hovering state using the `action` closure. SwiftUI calls the closure with a phase value to indicate the current hovering state. The following example updates `hoverLocation` and `isHovering` based on the phase provided to the closure:
 
 ```swift
 @State private var hoverLocation: CGPoint = .zero
@@ -54,39 +55,40 @@ var body: some View {
 ## Topics
 
 ### Getting hover phases
-- [HoverPhase.active(_:)](hoverphase/active(_:).md)
+- [HoverPhase.active(_:)](./hoverphase/active%28_%29.md)
   The pointer’s location moved to the specified point within the view.
-- [HoverPhase.ended](hoverphase/ended.md)
+- [HoverPhase.ended](./hoverphase/ended.md)
   The pointer exited the view.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func onHover(perform: (Bool) -> Void) -> some View](view/onhover(perform:).md)
+### Responding to hover events
+- [func onHover(perform: (Bool) -> Void) -> some View](./view/onhover%28perform%29.md)
   Adds an action to perform when the user moves the pointer over or away from the view’s frame.
-- [func hoverEffect(_:isEnabled:)](view/hovereffect(_:isenabled:).md)
+- [func hoverEffect(_:isEnabled:)](./view/hovereffect%28_,isenabled%29.md)
   Applies a hover effect to this view.
-- [func hoverEffectDisabled(Bool) -> some View](view/hovereffectdisabled(_:).md)
+- [func hoverEffectDisabled(Bool) -> some View](./view/hovereffectdisabled%28_%29.md)
   Adds a condition that controls whether this view can display hover effects.
-- [func defaultHoverEffect(_:)](view/defaulthovereffect(_:).md)
+- [func defaultHoverEffect(_:)](./view/defaulthovereffect%28_%29.md)
   Sets the default hover effect to use for views within this view.
-- [var isHoverEffectEnabled: Bool](environmentvalues/ishovereffectenabled.md)
+- [var isHoverEffectEnabled: Bool](./environmentvalues/ishovereffectenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows hover effects to be displayed.
-- [struct HoverEffectPhaseOverride](hovereffectphaseoverride.md)
+- [struct HoverEffectPhaseOverride](./hovereffectphaseoverride.md)
   Options for overriding a hover effect’s current phase.
-- [struct OrnamentHoverContentEffect](ornamenthovercontenteffect.md)
+- [struct OrnamentHoverContentEffect](./ornamenthovercontenteffect.md)
   Presents an ornament on hover using a custom effect.
-- [struct OrnamentHoverEffect](ornamenthovereffect.md)
+- [struct OrnamentHoverEffect](./ornamenthovereffect.md)
   Presents an ornament on hover.
-- [func onContinuousHover(coordinateSpace:perform:)](view/oncontinuoushover(coordinatespace:perform:).md)
+- [func onContinuousHover(coordinateSpace:perform:)](./view/oncontinuoushover%28coordinatespace,perform%29.md)
   Adds an action to perform when the pointer enters, moves within, and exits the view’s bounds.
 
 

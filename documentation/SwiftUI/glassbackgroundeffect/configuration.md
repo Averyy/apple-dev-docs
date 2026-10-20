@@ -1,7 +1,8 @@
 # GlassBackgroundEffect.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The configuration type passed to `makeBody(configuration:)`.
 

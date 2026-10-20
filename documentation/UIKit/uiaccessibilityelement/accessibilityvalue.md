@@ -1,7 +1,8 @@
 # accessibilityValue
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the current value of the accessibility element.
 
@@ -9,13 +10,17 @@ A string that represents the current value of the accessibility element.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var accessibilityValue: String? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSString * accessibilityValue;
 ```
 
 #### Discussion
@@ -26,15 +31,16 @@ Use the value property only when an accessibility element can have a value that 
 
 ## See Also
 
-- [var accessibilityLabel: String?](uiaccessibilityelement/accessibilitylabel.md)
+### Accessing the attributes of an accessibility element
+- [var accessibilityLabel: String?](./accessibilitylabel.md)
   A string that succinctly identifies the accessibility element.
-- [var accessibilityHint: String?](uiaccessibilityelement/accessibilityhint.md)
+- [var accessibilityHint: String?](./accessibilityhint.md)
   A string that briefly describes the result of performing an action on the accessibility element.
-- [var accessibilityFrame: CGRect](uiaccessibilityelement/accessibilityframe.md)
+- [var accessibilityFrame: CGRect](./accessibilityframe.md)
   The frame of the accessibility element, in screen coordinates.
-- [var accessibilityFrameInContainerSpace: CGRect](uiaccessibilityelement/accessibilityframeincontainerspace.md)
+- [var accessibilityFrameInContainerSpace: CGRect](./accessibilityframeincontainerspace.md)
   The frame of the accessibility element, in the coordinate space of its container view.
-- [var accessibilityTraits: UIAccessibilityTraits](uiaccessibilityelement/accessibilitytraits.md)
+- [var accessibilityTraits: UIAccessibilityTraits](./accessibilitytraits.md)
   The combination of traits that best characterize the accessibility element.
 
 

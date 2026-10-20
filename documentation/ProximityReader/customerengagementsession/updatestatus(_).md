@@ -1,7 +1,8 @@
 # updateStatus(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the status on the customer’s screen.
 
@@ -18,13 +19,13 @@ final func updateStatus(_ status: CustomerEngagement.Status) async throws
 
 ## Mentions
 
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+- [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
 #### Discussion
 
-When there isn’t any form, like a sign-up form being displayed, the screen defaults to [`CustomerEngagement.Status.ready`](customerengagement/status/ready.md) unless there is a [`CustomerEngagement.ShoppingCart`](customerengagement/shoppingcart.md). [`CustomerEngagement.Status.ready`](customerengagement/status/ready.md) resets the default screen from [`CustomerEngagement.ShoppingCart`](customerengagement/shoppingcart.md).
+When there isn’t any form, like a sign-up form being displayed, the screen defaults to [`CustomerEngagement.Status.ready`](../customerengagement/status/ready.md) unless there is a [`CustomerEngagement.ShoppingCart`](../customerengagement/shoppingcart.md). [`CustomerEngagement.Status.ready`](../customerengagement/status/ready.md) resets the default screen from [`CustomerEngagement.ShoppingCart`](../customerengagement/shoppingcart.md).
 
-> **Note**: [`CustomerEngagementSession.Error`](customerengagementsession/error.md) if the request fails.
+> **Throws**: [`CustomerEngagementSession.Error`](./error.md) if the request fails.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ When there isn’t any form, like a sign-up form being displayed, the screen def
 
 ## See Also
 
-- [func updateShoppingCart(CustomerEngagement.ShoppingCart) async throws -> CustomerEngagement.ShoppingCartToken](customerengagementsession/updateshoppingcart(_:).md)
+### Updating the customer status and cart
+- [func updateShoppingCart(CustomerEngagement.ShoppingCart) async throws -> CustomerEngagement.ShoppingCartToken](./updateshoppingcart%28_%29.md)
   Updates the shopping cart on the customer’s device.
 
 

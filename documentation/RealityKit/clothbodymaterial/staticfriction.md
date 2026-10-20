@@ -1,7 +1,8 @@
 # staticFriction
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The friction a cloth body particle experiences when in contact with another particle or collider with no relative motion.
 
@@ -22,7 +23,8 @@ Must be non-negative; negative values are clamped to zero. The default value is 
 
 ## See Also
 
-- [var kineticFriction: Float](clothbodymaterial/kineticfriction.md)
+### Configuring friction
+- [var kineticFriction: Float](./kineticfriction.md)
   The friction a cloth body particle experiences when in contact with another particle or collider with relative motion.
 
 

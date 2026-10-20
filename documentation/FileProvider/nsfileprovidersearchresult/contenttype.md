@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The result file’s content type.
@@ -16,15 +17,20 @@ The result file’s content type.
 var contentType: UTType { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UTType * contentType;
+```
+
 ## See Also
 
-- [var creationDate: Date?](nsfileprovidersearchresult/creationdate.md)
+### Accessing file metadata
+- [var creationDate: Date?](./creationdate.md)
   The result file’s creation date.
-- [var contentModificationDate: Date?](nsfileprovidersearchresult/contentmodificationdate.md)
+- [var contentModificationDate: Date?](./contentmodificationdate.md)
   The result file’s content modification date.
-- [var lastUsedDate: Date?](nsfileprovidersearchresult/lastuseddate.md)
+- [var lastUsedDate: Date?](./lastuseddate.md)
   The result file’s last-used date.
-- [var documentSize: NSNumber?](nsfileprovidersearchresult/documentsize.md)
+- [var documentSize: NSNumber?](./documentsize.md)
   The result file’s size.
 
 

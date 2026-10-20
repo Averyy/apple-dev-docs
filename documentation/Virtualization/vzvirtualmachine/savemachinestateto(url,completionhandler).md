@@ -1,7 +1,8 @@
 # saveMachineStateTo(url:completionHandler:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves the state of a VM.
 
@@ -11,7 +12,15 @@ Saves the state of a VM.
 ## Declaration
 
 ```swift
+func saveMachineStateTo(url saveFileURL: URL, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 func saveMachineStateTo(url saveFileURL: URL) async throws
+```
+
+```objc
+- (void) saveMachineStateToURL:(NSURL *) saveFileURL completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
 #### Discussion
@@ -24,12 +33,15 @@ If this method is successful, the framework writes the file, and the VM state re
 
 ## Parameters
 
-- `saveFileURL`: An [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) that indicates the location where the framework writes the saved state of the VM.
-- `completionHandler`: A block the framework calls after successfully saving the VM or upon returning an error. The error parameter passed to the block is `nil` if the save was successful.
+- `saveFileURL`: An [`NSURL`](../../Foundation/nsurl.md) that indicates the location where the framework writes the saved state of the VM.
+- `completionHandler`: A block the framework calls after successfully saving the VM or upon returning an error.
+
+  The error parameter passed to the block is `nil` if the save was successful.
 
 ## See Also
 
-- [func restoreMachineStateFrom(url: URL, completionHandler: ((any Error)?) -> Void)](vzvirtualmachine/restoremachinestatefrom(url:completionhandler:).md)
+### Saving and restoring the VM state
+- [func restoreMachineStateFrom(url: URL, completionHandler: ((any Error)?) -> Void)](./restoremachinestatefrom%28url,completionhandler%29.md)
   Restores a VM from a previously saved state.
 
 

@@ -1,7 +1,8 @@
 # cancelEditing()
 
 **Framework**: EventKit UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the editing session and discards any changes that were made to the event.
 
@@ -17,9 +18,13 @@ Ends the editing session and discards any changes that were made to the event.
 func cancelEditing()
 ```
 
+```objc
+- (void) cancelEditing;
+```
+
 #### Discussion
 
-This method is the programmatic equivalent of the user tapping Cancel. The delegate won’t receive the [`eventEditViewController(_:didCompleteWith:)`](ekeventeditviewdelegate/eventeditviewcontroller(_:didcompletewith:).md) message, so you must dismiss the controller after calling this method.
+This method is the programmatic equivalent of the user tapping Cancel. The delegate won’t receive the [`eventEditViewController(_:didCompleteWith:)`](../ekeventeditviewdelegate/eventeditviewcontroller%28_,didcompletewith%29.md) message, so you must dismiss the controller after calling this method.
 
 
 ---

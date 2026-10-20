@@ -1,7 +1,8 @@
 # dispatchMessageToScript(withName:userInfo:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dispatches a message from the app extension to the content script injected in this page.
 
@@ -14,10 +15,14 @@ Dispatches a message from the app extension to the content script injected in th
 func dispatchMessageToScript(withName messageName: String, userInfo: [String : Any]? = nil)
 ```
 
+```objc
+- (void) dispatchMessageToScriptWithName:(NSString *) messageName userInfo:(NSDictionary<NSString *,id> *) userInfo;
+```
+
 ## Mentions
 
-- [Adjusting settings for contextual menu items](adjusting-settings-for-contextual-menu-items.md)
-- [Passing messages between Safari app extensions and injected scripts](passing-messages-between-safari-app-extensions-and-injected-scripts.md)
+- [Adjusting settings for contextual menu items](../adjusting-settings-for-contextual-menu-items.md)
+- [Passing messages between Safari app extensions and injected scripts](../passing-messages-between-safari-app-extensions-and-injected-scripts.md)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # AVMetricHLSMediaSegmentRequestEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that represents a live streaming media segment resource request.
 
@@ -20,47 +21,52 @@ An event that represents a live streaming media segment resource request.
 class AVMetricHLSMediaSegmentRequestEvent
 ```
 
+```objc
+@interface AVMetricHLSMediaSegmentRequestEvent : AVMetricEvent
+```
+
 ## Topics
 
 ### Inspecting the event
-- [var byteRange: NSRange](avmetrichlsmediasegmentrequestevent/byterange.md)
-- [var indexFileURL: URL](avmetrichlsmediasegmentrequestevent/indexfileurl.md)
-- [var isMapSegment: Bool](avmetrichlsmediasegmentrequestevent/ismapsegment.md)
-- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](avmetrichlsmediasegmentrequestevent/mediaresourcerequestevent.md)
-- [var mediaType: AVMediaType](avmetrichlsmediasegmentrequestevent/mediatype.md)
-- [var segmentDuration: TimeInterval](avmetrichlsmediasegmentrequestevent/segmentduration.md)
+- [var byteRange: NSRange](./avmetrichlsmediasegmentrequestevent/byterange.md)
+- [var indexFileURL: URL](./avmetrichlsmediasegmentrequestevent/indexfileurl.md)
+- [var isMapSegment: Bool](./avmetrichlsmediasegmentrequestevent/ismapsegment.md)
+- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](./avmetrichlsmediasegmentrequestevent/mediaresourcerequestevent.md)
+- [var mediaType: AVMediaType](./avmetrichlsmediasegmentrequestevent/mediatype.md)
+- [var segmentDuration: TimeInterval](./avmetrichlsmediasegmentrequestevent/segmentduration.md)
   Returns the duration of segment in seconds.
-- [var url: URL?](avmetrichlsmediasegmentrequestevent/url.md)
+- [var url: URL?](./avmetrichlsmediasegmentrequestevent/url.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricEvent](avmetricevent.md)
+- [AVMetricEvent](./avmetricevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVMetricMediaResourceRequestEvent](avmetricmediaresourcerequestevent.md)
+### HTTP Live Streaming
+- [class AVMetricMediaResourceRequestEvent](./avmetricmediaresourcerequestevent.md)
   An event that represents a media resource request.
-- [class AVMetricContentKeyRequestEvent](avmetriccontentkeyrequestevent.md)
+- [class AVMetricContentKeyRequestEvent](./avmetriccontentkeyrequestevent.md)
   An event that represents a live streaming content key resource request.
-- [class AVMetricHLSPlaylistRequestEvent](avmetrichlsplaylistrequestevent.md)
+- [class AVMetricHLSPlaylistRequestEvent](./avmetrichlsplaylistrequestevent.md)
   An event that represents a live streaming playlist resource request.
-- [class AVMetricPlayerItemVariantSwitchStartEvent](avmetricplayeritemvariantswitchstartevent.md)
+- [class AVMetricPlayerItemVariantSwitchStartEvent](./avmetricplayeritemvariantswitchstartevent.md)
   An event that represents when the player attempts a variant switch.
-- [class AVMetricPlayerItemVariantSwitchEvent](avmetricplayeritemvariantswitchevent.md)
+- [class AVMetricPlayerItemVariantSwitchEvent](./avmetricplayeritemvariantswitchevent.md)
   An event that represents when the player completes a variant switch.
-- [class AVMetricMediaRendition](avmetricmediarendition.md)
+- [class AVMetricMediaRendition](./avmetricmediarendition.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A vector with zero in all lanes.
 
@@ -19,6 +20,8 @@ A vector with zero in all lanes.
 ```swift
 static var zero: Self { get }
 ```
+
+Available when `Scalar` conforms to `FixedWidthInteger`.
 
 
 ---

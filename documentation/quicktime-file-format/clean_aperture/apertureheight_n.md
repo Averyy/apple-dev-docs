@@ -1,29 +1,31 @@
 # apertureHeight_N
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit signed integer containing either the height of the clean aperture in picture lines or the numerator portion of a fractional height.
 
 ## See Also
 
-- [Size](clean_aperture/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer.
-- [Type](clean_aperture/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer.
-- [apertureWidth_N](clean_aperture/aperturewidth_n.md)
+- [apertureWidth_N](./aperturewidth_n.md)
   A 32-bit signed integer containing either the width of the clean aperture in pixels or the numerator portion of a fractional width.
-- [apertureWidth_D](clean_aperture/aperturewidth_d.md)
+- [apertureWidth_D](./aperturewidth_d.md)
   A 32-bit signed integer containing either the denominator portion of a fractional width or the number 1.
-- [apertureHeight_D](clean_aperture/apertureheight_d.md)
+- [apertureHeight_D](./apertureheight_d.md)
   A 32-bit signed integer containing either the denominator portion of a fractional height or the number 1.
-- [horizOff_N](clean_aperture/horizoff_n.md)
+- [horizOff_N](./horizoff_n.md)
   A 32-bit signed integer containing either the horizontal offset of the clean aperture center minus (width–1)/2 or the numerator portion of a fractional offset.
-- [horizOff_D](clean_aperture/horizoff_d.md)
+- [horizOff_D](./horizoff_d.md)
   A 32-bit signed integer containing either the denominator portion of the horizontal offset or the number 1.
-- [vertOff_N](clean_aperture/vertoff_n.md)
+- [vertOff_N](./vertoff_n.md)
   A 32-bit signed integer containing either the vertical offset of the clean aperture center minus (height–1)/2 or the numerator portion of a fractional offset.
-- [vertOff_D](clean_aperture/vertoff_d.md)
+- [vertOff_D](./vertoff_d.md)
   A 32-bit signed integer containing either the denominator portion of the vertical offset or the number 1.
 
 

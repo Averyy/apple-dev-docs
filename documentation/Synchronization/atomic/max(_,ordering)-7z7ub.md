@@ -1,7 +1,8 @@
 # max(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic maximum operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic maximum operation and return the old and new value, applying t
 @discardableResult
 func max(_ operand: UInt8, ordering: AtomicUpdateOrdering) -> (oldValue: UInt8, newValue: UInt8)
 ```
+
+Available when `Value` is `UInt8`.
 
 #### Return Value
 

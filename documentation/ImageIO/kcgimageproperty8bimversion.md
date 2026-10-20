@@ -1,7 +1,8 @@
 # kCGImageProperty8BIMVersion
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Adobe Photoshop file version.
 
@@ -20,9 +21,14 @@ The Adobe Photoshop file version.
 let kCGImageProperty8BIMVersion: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageProperty8BIMVersion;
+```
+
 ## See Also
 
-- [let kCGImageProperty8BIMLayerNames: CFString](kcgimageproperty8bimlayernames.md)
+### File Information
+- [let kCGImageProperty8BIMLayerNames: CFString](./kcgimageproperty8bimlayernames.md)
   The layer names for an Adobe Photoshop file.
 
 

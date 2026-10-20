@@ -1,7 +1,8 @@
 # label
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-visible label for the keychain item.
 
@@ -20,16 +21,21 @@ The user-visible label for the keychain item.
 var label: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * label;
+```
+
 #### Discussion
 
 This property is equivalent to the `kSecAttrLabel` attribute type.
 
 ## See Also
 
-- [var objectID: TKToken.ObjectID](tktokenkeychainitem/objectid.md)
+### Accessing Keychain Item Attributes
+- [var objectID: TKToken.ObjectID](./objectid.md)
   Returns the object ID used for keychain item identification.
-- [var constraints: [NSNumber : Any]?](tktokenkeychainitem/constraints.md)
-  Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
+- [var constraints: [NSNumber : Any]?](./constraints.md)
+  Access constraints for the keychain item, keyed by [`TKTokenOperation`](../tktokenoperation.md) values wrapped in [`NSNumber`](../../Foundation/nsnumber.md) objects.
 
 
 ---

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A double value.
 
@@ -10,7 +11,7 @@ A double value.
 
 ## Declaration
 
-```swift
+```
 attribute Double? value;
 ```
 

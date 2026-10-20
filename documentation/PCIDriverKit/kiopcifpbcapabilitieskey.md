@@ -1,15 +1,16 @@
 # kIOPCIFPBCapabilitiesKey
 
 **Framework**: PCIDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define kIOPCIFPBCapabilitiesKey
 ```
 

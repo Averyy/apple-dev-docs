@@ -1,12 +1,13 @@
 # indicator
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a badge styled as an indicator. In this context, an indicator is simply a badge without any text.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

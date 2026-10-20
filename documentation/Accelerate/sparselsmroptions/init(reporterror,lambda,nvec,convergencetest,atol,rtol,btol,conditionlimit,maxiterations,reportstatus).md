@@ -1,18 +1,19 @@
 # init(reportError:lambda:nvec:convergenceTest:atol:rtol:btol:conditionLimit:maxIterations:reportStatus:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new LSMR options structure using the specified parameters.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -35,7 +36,8 @@ init(reportError: ((UnsafePointer<CChar>) -> Void)?, lambda: Double, nvec: Int32
 
 ## See Also
 
-- [init()](sparselsmroptions/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new LSMR options structure.
 
 

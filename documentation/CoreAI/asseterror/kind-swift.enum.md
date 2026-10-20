@@ -1,7 +1,8 @@
 # AssetError.Kind
 
 **Framework**: Core AI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reasons an asset operation can fail.
 
@@ -21,22 +22,22 @@ enum Kind
 ## Topics
 
 ### Types of errors
-- [AssetError.Kind.corruptedMetadata](asseterror/kind-swift.enum/corruptedmetadata.md)
+- [AssetError.Kind.corruptedMetadata](./kind-swift.enum/corruptedmetadata.md)
   An error that indicates the asset metadata is corrupted.
-- [AssetError.Kind.duplicateName](asseterror/kind-swift.enum/duplicatename.md)
+- [AssetError.Kind.duplicateName](./kind-swift.enum/duplicatename.md)
   An error that indicates a component with that name already exists in the asset.
-- [AssetError.Kind.invalidFeatureType(_:)](asseterror/kind-swift.enum/invalidfeaturetype(_:).md)
+- [AssetError.Kind.invalidFeatureType(_:)](./kind-swift.enum/invalidfeaturetype%28_%29.md)
   An error that indicates the feature type is invalid.
-- [AssetError.Kind.invalidName](asseterror/kind-swift.enum/invalidname.md)
+- [AssetError.Kind.invalidName](./kind-swift.enum/invalidname.md)
   An error that indicates the component name is invalid.
-- [AssetError.Kind.unsupportedVersion(_:)](asseterror/kind-swift.enum/unsupportedversion(_:).md)
+- [AssetError.Kind.unsupportedVersion(_:)](./kind-swift.enum/unsupportedversion%28_%29.md)
   An error that indicates the asset version is unsupported.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

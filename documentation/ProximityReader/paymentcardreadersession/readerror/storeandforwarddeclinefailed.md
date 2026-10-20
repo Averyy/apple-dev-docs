@@ -1,7 +1,8 @@
 # PaymentCardReaderSession.ReadError.storeAndForwardDeclineFailed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Decline request was made after the allowance time window.
 

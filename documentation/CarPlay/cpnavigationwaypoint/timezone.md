@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timezone for the waypoint.
 
@@ -14,6 +15,10 @@ The timezone for the waypoint.
 
 ```swift
 var timeZone: TimeZone? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSTimeZone * timeZone;
 ```
 
 

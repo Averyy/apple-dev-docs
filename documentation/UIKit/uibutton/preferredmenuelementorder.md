@@ -1,7 +1,8 @@
 # preferredMenuElementOrder
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred menu-element ordering strategy for the menu.
 
@@ -18,13 +19,18 @@ The preferred menu-element ordering strategy for the menu.
 var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder { get set }
 ```
 
+```objc
+@property (nonatomic) UIContextMenuConfigurationElementOrder preferredMenuElementOrder;
+```
+
 ## See Also
 
-- [var menu: UIMenu?](uibutton/menu.md)
+### Supporting menu and toggle buttons
+- [var menu: UIMenu?](./menu.md)
   A menu that the button displays.
-- [var isHeld: Bool](uibutton/isheld.md)
+- [var isHeld: Bool](./isheld.md)
   A Boolean value that indicates whether the button menu is visible.
-- [var changesSelectionAsPrimaryAction: Bool](uibutton/changesselectionasprimaryaction.md)
+- [var changesSelectionAsPrimaryAction: Bool](./changesselectionasprimaryaction.md)
   A Boolean value that indicates whether the button tracks a selection, either through a menu or a toggle.
 
 

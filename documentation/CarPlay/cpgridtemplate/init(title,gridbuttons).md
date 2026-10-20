@@ -1,7 +1,8 @@
 # init(title:gridButtons:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a grid template with a title and a set of buttons.
 
@@ -16,6 +17,10 @@ Creates a grid template with a title and a set of buttons.
 init(title: String?, gridButtons: [CPGridButton])
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title gridButtons:(NSArray<CPGridButton *> *) gridButtons;
+```
+
 #### Return Value
 
 A newly initialized grid template.
@@ -27,7 +32,8 @@ A newly initialized grid template.
 
 ## See Also
 
-- [class CPGridButton](cpgridbutton.md)
+### Creating a Grid Template
+- [class CPGridButton](../cpgridbutton.md)
   A menu item button displayed on a grid template.
 
 

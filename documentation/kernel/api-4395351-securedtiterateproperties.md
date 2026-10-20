@@ -1,14 +1,15 @@
 # SecureDTIterateProperties
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int SecureDTIterateProperties(DTPropertyIterator iterator, const char **foundProperty);
 ```
 

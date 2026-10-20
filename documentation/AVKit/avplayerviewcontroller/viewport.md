@@ -1,7 +1,8 @@
 # viewport
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A configuration object that manages viewport settings for different presentation modes.
 
@@ -14,29 +15,34 @@ A configuration object that manages viewport settings for different presentation
 var viewport: AVViewport { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) AVViewport * viewport;
+```
+
 #### Discussion
 
-Set [`portal`](avviewport/portal.md) to control the aspect ratio of the frame the system uses for a portal presentation. When you don’t specify an aspect ratio, the portal defaults to 16:9 (1.78).
+Set [`portal`](../avviewport/portal.md) to control the aspect ratio of the frame the system uses for a portal presentation. When you don’t specify an aspect ratio, the portal defaults to 16:9 (1.78).
 
 ## See Also
 
-- [var infoViewActions: [UIAction]!](avplayerviewcontroller/infoviewactions.md)
+### Configuring the visionOS player UI
+- [var infoViewActions: [UIAction]!](./infoviewactions.md)
   An array of actions to present in the Info content view.
-- [var customInfoViewControllers: [UIViewController]](avplayerviewcontroller/custominfoviewcontrollers.md)
+- [var customInfoViewControllers: [UIViewController]](./custominfoviewcontrollers.md)
   An array of view controllers to display as content tabs in the player user interface.
-- [var contextualActions: [UIAction]](avplayerviewcontroller/contextualactions.md)
+- [var contextualActions: [UIAction]](./contextualactions.md)
   An array of action controls to present contextually during playback.
-- [var contextualActionsInfoView: UIView](avplayerviewcontroller/contextualactionsinfoview.md)
+- [var contextualActionsInfoView: UIView](./contextualactionsinfoview.md)
   A view the system shows adjacent to the contextual actions that’s suitable for showing related information.
-- [var contextualActionsPreviewImage: UIImage?](avplayerviewcontroller/contextualactionspreviewimage.md)
+- [var contextualActionsPreviewImage: UIImage?](./contextualactionspreviewimage.md)
   An image to show alongside the contextual actions.
-- [var requiresMonoscopicViewingMode: Bool](avplayerviewcontroller/requiresmonoscopicviewingmode.md)
+- [var requiresMonoscopicViewingMode: Bool](./requiresmonoscopicviewingmode.md)
   A Boolean value that indicates whether to permit playback of 2D video content only.
-- [var experienceController: AVExperienceController](avplayerviewcontroller/experiencecontroller.md)
+- [var experienceController: AVExperienceController](./experiencecontroller.md)
   The experience controller for this view controller.
-- [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
+- [var groupExperienceCoordinator: AVGroupExperienceCoordinator](./groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
-- [class AVViewport](avviewport.md)
+- [class AVViewport](../avviewport.md)
   An object that provides configuration options for how the player displays content in different viewing contexts.
 
 

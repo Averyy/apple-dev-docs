@@ -1,6 +1,7 @@
 # CGPDFString
 
-**Framework**: Core Graphics
+**Framework**: Core Graphics  
+**Role**: API Collection
 
 A text string in a PDF document.
 
@@ -15,22 +16,23 @@ This object is not derived from CFType and therefore there are no functions for 
 ## Topics
 
 ### Converting PDF Strings
-- [func CGPDFStringCopyTextString(CGPDFStringRef) -> CFString?](cgpdfstringcopytextstring(_:).md)
+- [func CGPDFStringCopyTextString(CGPDFStringRef) -> CFString?](./cgpdfstringcopytextstring%28_%29.md)
   Returns a CFString object that represents a PDF string as a text string.
-- [func CGPDFStringCopyDate(CGPDFStringRef) -> CFDate?](cgpdfstringcopydate(_:).md)
+- [func CGPDFStringCopyDate(CGPDFStringRef) -> CFDate?](./cgpdfstringcopydate%28_%29.md)
   Converts a string to a date.
 ### Getting PDF String Data
-- [func CGPDFStringGetBytePtr(CGPDFStringRef) -> UnsafePointer<UInt8>?](cgpdfstringgetbyteptr(_:).md)
+- [func CGPDFStringGetBytePtr(CGPDFStringRef) -> UnsafePointer<UInt8>?](./cgpdfstringgetbyteptr%28_%29.md)
   Returns a pointer to the bytes of a PDF string.
-- [func CGPDFStringGetLength(CGPDFStringRef) -> Int](cgpdfstringgetlength(_:).md)
+- [func CGPDFStringGetLength(CGPDFStringRef) -> Int](./cgpdfstringgetlength%28_%29.md)
   Returns the number of bytes in a PDF string.
 ### Data Types
-- [struct CGPDFStringRef](cgpdfstringref.md)
+- [struct CGPDFStringRef](./cgpdfstringref.md)
   A data type that represents a string in a PDF document.
 
 ## See Also
 
-- [Quartz 2D Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
+### Related Documentation
+- [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
 
 
 ---

@@ -1,7 +1,8 @@
 # request
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the request that initiated the receiver’s download.
 
@@ -14,13 +15,18 @@ Returns the request that initiated the receiver’s download.
 var request: URLRequest { get }
 ```
 
+```objc
+@property (copy, readonly) NSURLRequest * request;
+```
+
 #### Return Value
 
 The URL request that initiated the receiver’s download.
 
 ## See Also
 
-- [var deletesFileUponFailure: Bool](nsurldownload/deletesfileuponfailure.md)
+### Getting download properties
+- [var deletesFileUponFailure: Bool](./deletesfileuponfailure.md)
   Returns whether the receiver deletes partially downloaded files when a download stops prematurely.
 
 

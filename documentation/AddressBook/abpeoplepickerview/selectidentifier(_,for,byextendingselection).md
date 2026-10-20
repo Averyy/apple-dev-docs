@@ -1,7 +1,8 @@
 # selectIdentifier(_:for:byExtendingSelection:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects a value or a set of values in a multivalue property.
 
@@ -14,37 +15,42 @@ Selects a value or a set of values in a multivalue property.
 func selectIdentifier(_ identifier: String!, for person: ABPerson!, byExtendingSelection extend: Bool)
 ```
 
+```objc
+- (void) selectIdentifier:(NSString *) identifier forPerson:(ABPerson *) person byExtendingSelection:(BOOL) extend;
+```
+
 ## Parameters
 
 - `identifier`: The identifier to be selected, or to be added to the current selection.
 - `person`: The person that the value to be selected is associated with.
-- `extend`: [`true`](https://developer.apple.com/documentation/swift/true) to extend the current selection; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `extend`: [`true`](../../Swift/true.md) to extend the current selection; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var allowsGroupSelection: Bool](abpeoplepickerview/allowsgroupselection.md)
+### Selecting Groups and Records
+- [var allowsGroupSelection: Bool](./allowsgroupselection.md)
   A Boolean value that specifies whether the user can select entire groups in the group column.
-- [var allowsMultipleSelection: Bool](abpeoplepickerview/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean value that specifies whether multiple groups, records, or values of multivalue properties can be selected at a time.
-- [func deselectAll(Any!)](abpeoplepickerview/deselectall(_:).md)
+- [func deselectAll(Any!)](./deselectall%28_%29.md)
   Deselects all selected groups, records, and values in multivalue properties.
-- [func deselect(ABGroup!)](abpeoplepickerview/deselect(_:)-3x7tl.md)
+- [func deselect(ABGroup!)](./deselect%28_%29-3x7tl.md)
   Deselects a group selected in the group list.
-- [func deselectIdentifier(String!, for: ABPerson!)](abpeoplepickerview/deselectidentifier(_:for:).md)
+- [func deselectIdentifier(String!, for: ABPerson!)](./deselectidentifier%28_,for%29.md)
   Deselects a value selected in a multivalue property.
-- [func deselect(ABRecord!)](abpeoplepickerview/deselect(_:)-1yy11.md)
+- [func deselect(ABRecord!)](./deselect%28_%29-1yy11.md)
   Deselects a record selected in the record list.
-- [var selectedGroups: [Any]!](abpeoplepickerview/selectedgroups.md)
+- [var selectedGroups: [Any]!](./selectedgroups.md)
   The groups selected in the group list. (read-only)
-- [func selectedIdentifiers(for: ABPerson!) -> [Any]!](abpeoplepickerview/selectedidentifiers(for:).md)
+- [func selectedIdentifiers(for: ABPerson!) -> [Any]!](./selectedidentifiers%28for%29.md)
   Returns the identifiers of the selected values in a multivalue property.
-- [var selectedRecords: [Any]!](abpeoplepickerview/selectedrecords.md)
+- [var selectedRecords: [Any]!](./selectedrecords.md)
   The selection in the records list. (read-only)
-- [func selectedValues() -> [Any]!](abpeoplepickerview/selectedvalues.md)
+- [func selectedValues() -> [Any]!](./selectedvalues%28%29.md)
   Returns an array of all the values selected in the displayed multivalue property.
-- [func select(ABGroup!, byExtendingSelection: Bool)](abpeoplepickerview/select(_:byextendingselection:)-6mrii.md)
+- [func select(ABGroup!, byExtendingSelection: Bool)](./select%28_,byextendingselection%29-6mrii.md)
   Selects a group or a set of groups in the group list.
-- [func select(ABRecord!, byExtendingSelection: Bool)](abpeoplepickerview/select(_:byextendingselection:)-9eldk.md)
+- [func select(ABRecord!, byExtendingSelection: Bool)](./select%28_,byextendingselection%29-9eldk.md)
   Selects a record or a set of records in the record list.
 
 

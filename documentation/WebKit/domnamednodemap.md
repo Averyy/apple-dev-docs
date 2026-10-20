@@ -1,10 +1,11 @@
 # DOMNamedNodeMap
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -12,49 +13,54 @@
 class DOMNamedNodeMap
 ```
 
+```objc
+@interface DOMNamedNodeMap : DOMObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var length: UInt32](domnamednodemap/length.md)
+- [var length: UInt32](./domnamednodemap/length.md)
 ### Instance Methods
-- [func getNamedItem(String!) -> DOMNode!](domnamednodemap/getnameditem(_:).md)
-- [func getNamedItemNS(String!, localName: String!) -> DOMNode!](domnamednodemap/getnameditemns(_:localname:).md)
-- [func item(UInt32) -> DOMNode!](domnamednodemap/item(_:).md)
-- [func removeNamedItem(String!) -> DOMNode!](domnamednodemap/removenameditem(_:).md)
-- [func removeNamedItemNS(String!, localName: String!) -> DOMNode!](domnamednodemap/removenameditemns(_:localname:).md)
-- [func setNamedItem(DOMNode!) -> DOMNode!](domnamednodemap/setnameditem(_:).md)
-- [func setNamedItemNS(DOMNode!) -> DOMNode!](domnamednodemap/setnameditemns(_:).md)
+- [func getNamedItem(String!) -> DOMNode!](./domnamednodemap/getnameditem%28_%29.md)
+- [func getNamedItemNS(String!, localName: String!) -> DOMNode!](./domnamednodemap/getnameditemns%28_,localname%29.md)
+- [func item(UInt32) -> DOMNode!](./domnamednodemap/item%28_%29.md)
+- [func removeNamedItem(String!) -> DOMNode!](./domnamednodemap/removenameditem%28_%29.md)
+- [func removeNamedItemNS(String!, localName: String!) -> DOMNode!](./domnamednodemap/removenameditemns%28_,localname%29.md)
+- [func setNamedItem(DOMNode!) -> DOMNode!](./domnamednodemap/setnameditem%28_%29.md)
+- [func setNamedItemNS(DOMNode!) -> DOMNode!](./domnamednodemap/setnameditemns%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [DOMObject](domobject.md)
+- [DOMObject](./domobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class DOMAbstractView](domabstractview.md)
-- [class DOMAttr](domattr.md)
-- [class DOMBlob](domblob.md)
-- [class DOMCDATASection](domcdatasection.md)
-- [class DOMCharacterData](domcharacterdata.md)
-- [class DOMComment](domcomment.md)
-- [class DOMCounter](domcounter.md)
-- [class DOMCSSCharsetRule](domcsscharsetrule.md)
-- [class DOMCSSFontFaceRule](domcssfontfacerule.md)
-- [class DOMCSSImportRule](domcssimportrule.md)
-- [class DOMCSSMediaRule](domcssmediarule.md)
-- [class DOMCSSPageRule](domcsspagerule.md)
-- [class DOMCSSPrimitiveValue](domcssprimitivevalue.md)
-- [class DOMCSSRule](domcssrule.md)
-- [class DOMCSSRuleList](domcssrulelist.md)
+### Document Object Model (DOM) APIs
+- [class DOMAbstractView](./domabstractview.md)
+- [class DOMAttr](./domattr.md)
+- [class DOMBlob](./domblob.md)
+- [class DOMCDATASection](./domcdatasection.md)
+- [class DOMCharacterData](./domcharacterdata.md)
+- [class DOMComment](./domcomment.md)
+- [class DOMCounter](./domcounter.md)
+- [class DOMCSSCharsetRule](./domcsscharsetrule.md)
+- [class DOMCSSFontFaceRule](./domcssfontfacerule.md)
+- [class DOMCSSImportRule](./domcssimportrule.md)
+- [class DOMCSSMediaRule](./domcssmediarule.md)
+- [class DOMCSSPageRule](./domcsspagerule.md)
+- [class DOMCSSPrimitiveValue](./domcssprimitivevalue.md)
+- [class DOMCSSRule](./domcssrule.md)
+- [class DOMCSSRuleList](./domcssrulelist.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A positive integer that identifies the drawable.
@@ -20,9 +21,13 @@ A positive integer that identifies the drawable.
 var drawableID: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger drawableID;
+```
+
 #### Discussion
 
-Drawable objects are usually owned by some other object, such as a [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer). The owning object gives the first drawable it creates an ID of `0`, and it increments the ID by `1` for each additional drawable it creates.
+Drawable objects are usually owned by some other object, such as a [`CAMetalLayer`](../../QuartzCore/cametallayer.md). The owning object gives the first drawable it creates an ID of `0`, and it increments the ID by `1` for each additional drawable it creates.
 
 
 ---

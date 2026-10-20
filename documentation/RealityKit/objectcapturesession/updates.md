@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Updates
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Used to provide an `AsyncSequence` of change events for the observable properties.
 
@@ -18,14 +19,14 @@ struct Updates<Element> where Element : Sendable
 ## Topics
 
 ### Structures
-- [ObjectCaptureSession.Updates.Iterator](objectcapturesession/updates/iterator.md)
+- [ObjectCaptureSession.Updates.Iterator](./updates/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MKLookAroundBadgePosition
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that control the position of badges on LookAround views.
 
@@ -18,37 +19,42 @@ Constants that control the position of badges on LookAround views.
 enum MKLookAroundBadgePosition
 ```
 
+```c
+enum MKLookAroundBadgePosition : NSInteger;
+```
+
 ## Topics
 
 ### Badge positions
-- [MKLookAroundBadgePosition.bottomTrailing](mklookaroundbadgeposition/bottomtrailing.md)
+- [MKLookAroundBadgePosition.bottomTrailing](./mklookaroundbadgeposition/bottomtrailing.md)
   The value that indicates the bottom-right badge position.
-- [MKLookAroundBadgePosition.topLeading](mklookaroundbadgeposition/topleading.md)
+- [MKLookAroundBadgePosition.topLeading](./mklookaroundbadgeposition/topleading.md)
   The value that indicates the top-left badge position.
-- [MKLookAroundBadgePosition.topTrailing](mklookaroundbadgeposition/toptrailing.md)
+- [MKLookAroundBadgePosition.topTrailing](./mklookaroundbadgeposition/toptrailing.md)
   The value that indicates the top-right badge position.
 ### Initializers
-- [init?(rawValue: Int)](mklookaroundbadgeposition/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mklookaroundbadgeposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isNavigationEnabled: Bool](mklookaroundviewcontroller/isnavigationenabled.md)
+### Customizing the LookAround display
+- [var isNavigationEnabled: Bool](./mklookaroundviewcontroller/isnavigationenabled.md)
   A Boolean value that indicates whether the map’s navigation controls are visible.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklookaroundviewcontroller/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./mklookaroundviewcontroller/pointofinterestfilter.md)
   The filter used to determine the points of interest shown on the map.
-- [var showsRoadLabels: Bool](mklookaroundviewcontroller/showsroadlabels.md)
+- [var showsRoadLabels: Bool](./mklookaroundviewcontroller/showsroadlabels.md)
   A Boolean value that indicates whether the map display road labels.
-- [var badgePosition: MKLookAroundBadgePosition](mklookaroundviewcontroller/badgeposition.md)
+- [var badgePosition: MKLookAroundBadgePosition](./mklookaroundviewcontroller/badgeposition.md)
   A value that indicates the badge’s position on the LookAround view.
 
 

@@ -1,7 +1,8 @@
 # Font.Design.monospaced
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ case monospaced
 
 ## See Also
 
-- [Font.Design.default](font/design/default.md)
-- [Font.Design.rounded](font/design/rounded.md)
-- [Font.Design.serif](font/design/serif.md)
+### Getting font designs
+- [Font.Design.default](./default.md)
+- [Font.Design.rounded](./rounded.md)
+- [Font.Design.serif](./serif.md)
 
 
 ---

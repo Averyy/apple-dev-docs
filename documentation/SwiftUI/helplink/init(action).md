@@ -1,7 +1,8 @@
 # init(action:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs a new help link with the specified action.
 
@@ -25,11 +26,12 @@ Use this initializer when you want the standard help button appearance with a cu
 
 ## See Also
 
-- [init(destination: URL)](helplink/init(destination:).md)
+### Creating a help link
+- [init(destination: URL)](./init%28destination%29.md)
   Constructs a new help link that opens the specified destination URL.
-- [init(anchor: NSHelpManager.AnchorName)](helplink/init(anchor:).md)
+- [init(anchor: NSHelpManager.AnchorName)](./init%28anchor%29.md)
   Constructs a new help link with the specified anchor in the main app bundle’s book.
-- [init(anchor: NSHelpManager.AnchorName, book: NSHelpManager.BookName)](helplink/init(anchor:book:).md)
+- [init(anchor: NSHelpManager.AnchorName, book: NSHelpManager.BookName)](./init%28anchor,book%29.md)
   Constructs a new help link with the specified anchor and book.
 
 

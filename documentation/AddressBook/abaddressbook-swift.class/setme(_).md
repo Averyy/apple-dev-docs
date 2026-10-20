@@ -1,17 +1,22 @@
 # setMe(_:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the record that represents the logged-in user.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setMe(_ moi: ABPerson!)
+```
+
+```objc
+- (void) setMe:(ABPerson *) moi;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ If you don’t want a record to represent the logged-in user, then pass `nil` as
 
 ## See Also
 
-- [func me() -> ABPerson!](abaddressbook-swift.class/me.md)
+### Setting and Retrieving the Logged-in User’s Record
+- [func me() -> ABPerson!](./me%28%29.md)
   Returns the `ABPerson` record that represents the logged-in user.
 
 

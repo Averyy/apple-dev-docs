@@ -1,7 +1,8 @@
 # imagePlaygroundSheet(isPresented:concept:sourceImage:onCompletion:onAdaptiveImageGlyphCreation:onCancellation:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the system sheet to create images from the specified input.
 
@@ -55,29 +56,34 @@ if supportsImagePlayground {
 - `isPresented`: A binding to a Boolean value that determines whether to display the sheet.
 - `concept`: An initial natural language string that describes the expected contents of the image. The person viewing the creation UI can edit the concepts from inside that UI. `concept: str` is equivalent to `concepts: [.text(str)]`.
 - `sourceImage`: Specify an existing image to use as source input for creating the new image. The person viewing the sheet can override the image you provide, and choose different images and concepts inside the creation UI. If you don’t provide a starting image, the system creates the new image using only the contents of the `concepts` parameter.
-- `onCompletion`: The block to receive the created image. The block has no return value and receives the following parameter: - **url**: A URL with the path to the image. The system saves the file at a temporary location inside your app container. Move the file to a new location if you intend to keep it after the dismissal of the sheet, or remove it if you don’t.
-- `onAdaptiveImageGlyphCreation`: The block to receive the generated Genmoji. The block has no return value and receives the following parameter: - imageGlyph: A NSAdaptiveImageGlyph representing the generated Genmoji.
+- `onCompletion`: The block to receive the created image. The block has no return value and receives the following parameter:
+
+  - **url**: A URL with the path to the image. The system saves the file at a temporary location inside your app container. Move the file to a new location if you intend to keep it after the dismissal of the sheet, or remove it if you don’t.
+- `onAdaptiveImageGlyphCreation`: The block to receive the generated Genmoji. The block has no return value and receives the following parameter:
+
+  - imageGlyph: A NSAdaptiveImageGlyph representing the generated Genmoji.
 - `onCancellation`: The block to handle the cancellation of the image-creation process, when the user chooses to exit the creation UI without choosing any image. After executing this block, the system automatically dismisses the sheet.
 
 ## See Also
 
-- [func imagePlaygroundGenerationStyle(ImagePlaygroundStyle, in: [ImagePlaygroundStyle]) -> some View](view/imageplaygroundgenerationstyle(_:in:).md)
+### Generating images
+- [func imagePlaygroundGenerationStyle(ImagePlaygroundStyle, in: [ImagePlaygroundStyle]) -> some View](./imageplaygroundgenerationstyle%28_,in%29.md)
   Sets the selected and allowed styles to use when displaying the image generation sheet.
-- [func imagePlaygroundOptions(ImagePlaygroundOptions) -> some View](view/imageplaygroundoptions(_:).md)
+- [func imagePlaygroundOptions(ImagePlaygroundOptions) -> some View](./imageplaygroundoptions%28_%29.md)
   Sets the options to use when generating an image.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:).md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](./imageplaygroundsheet%28ispresented,concept,sourceimage,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using the specified string and optional starting image.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:oncancellation:).md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](./imageplaygroundsheet%28ispresented,concept,sourceimageurl,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using the specified string and image URL.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImageURL: URL, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:onadaptiveimageglyphcreation:oncancellation:).md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImageURL: URL, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](./imageplaygroundsheet%28ispresented,concept,sourceimageurl,oncompletion,onadaptiveimageglyphcreation,oncancellation%29.md)
   Presents the system sheet to create an image or Genmoji using the specified string and image URL.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concepts:sourceimage:oncompletion:oncancellation:).md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](./imageplaygroundsheet%28ispresented,concepts,sourceimage,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using one or more concepts and an optional starting image.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concepts:sourceimage:oncompletion:onadaptiveimageglyphcreation:oncancellation:).md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](./imageplaygroundsheet%28ispresented,concepts,sourceimage,oncompletion,onadaptiveimageglyphcreation,oncancellation%29.md)
   Presents the system sheet to create an image or Genmoji using one or more concepts and an optional starting image.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concepts:sourceimageurl:oncompletion:oncancellation:).md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](./imageplaygroundsheet%28ispresented,concepts,sourceimageurl,oncompletion,oncancellation%29.md)
   Presents the system sheet to create an image using one or more concepts and an image URL.
-- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concepts:sourceimageurl:oncompletion:onadaptiveimageglyphcreation:oncancellation:).md)
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](./imageplaygroundsheet%28ispresented,concepts,sourceimageurl,oncompletion,onadaptiveimageglyphcreation,oncancellation%29.md)
   Presents the system sheet to create an image or Genmoji using one or more concepts and an image URL.
 
 

@@ -1,7 +1,8 @@
 # homeWithSimilarNameExists
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt to assign a home the same name as an existing home.
 
@@ -21,11 +22,12 @@ static var homeWithSimilarNameExists: HMError.Code { get }
 
 ## See Also
 
-- [static var objectWithSimilarNameExists: HMError.Code](hmerror/objectwithsimilarnameexists.md)
+### Detecting collision errors
+- [static var objectWithSimilarNameExists: HMError.Code](./objectwithsimilarnameexists.md)
   An object with a similar name already exists.
-- [static var objectWithSimilarNameExistsInHome: HMError.Code](hmerror/objectwithsimilarnameexistsinhome.md)
+- [static var objectWithSimilarNameExistsInHome: HMError.Code](./objectwithsimilarnameexistsinhome.md)
   An attempt to give the name of one object to another object in the home.
-- [static var renameWithSimilarName: HMError.Code](hmerror/renamewithsimilarname.md)
+- [static var renameWithSimilarName: HMError.Code](./renamewithsimilarname.md)
   An attempt to rename an object with its current name.
 
 

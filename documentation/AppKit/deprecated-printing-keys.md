@@ -1,38 +1,40 @@
 # Deprecated Printing Keys
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 These keys refer to older printing properties that are no longer used.
 
 ## Topics
 
 ### Constants
-- [NSPrintFaxReceiverNames](nsprintfaxreceivernames.md)
+- [NSPrintFaxReceiverNames](./nsprintfaxreceivernames.md)
   Deprecated. Do not use.
-- [NSPrintFaxReceiverNumbers](nsprintfaxreceivernumbers.md)
+- [NSPrintFaxReceiverNumbers](./nsprintfaxreceivernumbers.md)
   Deprecated. Do not use.
-- [NSPrintFaxSendTime](nsprintfaxsendtime.md)
+- [NSPrintFaxSendTime](./nsprintfaxsendtime.md)
   Deprecated. Do not use.
-- [NSPrintFaxUseCoverSheet](nsprintfaxusecoversheet.md)
+- [NSPrintFaxUseCoverSheet](./nsprintfaxusecoversheet.md)
   Deprecated. Do not use.
-- [NSPrintFaxCoverSheetName](nsprintfaxcoversheetname.md)
+- [NSPrintFaxCoverSheetName](./nsprintfaxcoversheetname.md)
   Deprecated. Do not use.
-- [NSPrintFaxReturnReceipt](nsprintfaxreturnreceipt.md)
+- [NSPrintFaxReturnReceipt](./nsprintfaxreturnreceipt.md)
   Deprecated. Do not use.
-- [NSPrintFaxHighResolution](nsprintfaxhighresolution.md)
+- [NSPrintFaxHighResolution](./nsprintfaxhighresolution.md)
   Deprecated. Do not use.
-- [NSPrintFaxTrimPageEnds](nsprintfaxtrimpageends.md)
+- [NSPrintFaxTrimPageEnds](./nsprintfaxtrimpageends.md)
   Deprecated. Do not use.
-- [NSPrintFaxModem](nsprintfaxmodem.md)
+- [NSPrintFaxModem](./nsprintfaxmodem.md)
   Deprecated. Do not use.
-- [NSPrintFaxJob](nsprintfaxjob.md)
+- [NSPrintFaxJob](./nsprintfaxjob.md)
   Deprecated. Do not use.
 
 ## See Also
 
-- [class var defaultPrinter: NSPrinter?](nsprintinfo/defaultprinter.md)
+### Deprecated
+- [class var defaultPrinter: NSPrinter?](./nsprintinfo/defaultprinter.md)
   Deprecated.
-- [NSPrintInfo.Orientation](nsprintinfo/orientation-swift.enum.md)
+- [NSPrintInfo.Orientation](./nsprintinfo/orientation-swift.enum.md)
   Constants that specify page orientations.
 
 

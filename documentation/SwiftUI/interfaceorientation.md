@@ -1,7 +1,8 @@
 # InterfaceOrientation
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The orientation of the interface from the user’s perspective.
 
@@ -22,7 +23,7 @@ struct InterfaceOrientation
 
 #### Overview
 
-By default, device previews appear right side up, using orientation [`portrait`](interfaceorientation/portrait.md). You can change the orientation with a call to the [`previewInterfaceOrientation(_:)`](view/previewinterfaceorientation(_:).md) modifier:
+By default, device previews appear right side up, using orientation [`portrait`](./interfaceorientation/portrait.md). You can change the orientation with a call to the [`previewInterfaceOrientation(_:)`](./view/previewinterfaceorientation%28_%29.md) modifier:
 
 ```swift
 struct CircleImage_Previews: PreviewProvider {
@@ -36,33 +37,34 @@ struct CircleImage_Previews: PreviewProvider {
 ## Topics
 
 ### Getting an orientation
-- [static let portrait: InterfaceOrientation](interfaceorientation/portrait.md)
+- [static let portrait: InterfaceOrientation](./interfaceorientation/portrait.md)
   The device is in portrait mode, with the top of the device on top.
-- [static let portraitUpsideDown: InterfaceOrientation](interfaceorientation/portraitupsidedown.md)
+- [static let portraitUpsideDown: InterfaceOrientation](./interfaceorientation/portraitupsidedown.md)
   The device is in portrait mode, but is upside down.
-- [static let landscapeLeft: InterfaceOrientation](interfaceorientation/landscapeleft.md)
+- [static let landscapeLeft: InterfaceOrientation](./interfaceorientation/landscapeleft.md)
   The device is in landscape mode, with the top of the device on the left.
-- [static let landscapeRight: InterfaceOrientation](interfaceorientation/landscaperight.md)
+- [static let landscapeRight: InterfaceOrientation](./interfaceorientation/landscaperight.md)
   The device is in landscape mode, with the top of the device on the right.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Equatable](../Swift/equatable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func previewDevice(PreviewDevice?) -> some View](view/previewdevice(_:).md)
+### Customizing a preview
+- [func previewDevice(PreviewDevice?) -> some View](./view/previewdevice%28_%29.md)
   Overrides the device for a preview.
-- [struct PreviewDevice](previewdevice.md)
+- [struct PreviewDevice](./previewdevice.md)
   A simulator device that runs a preview.
-- [func previewLayout(PreviewLayout) -> some View](view/previewlayout(_:).md)
+- [func previewLayout(PreviewLayout) -> some View](./view/previewlayout%28_%29.md)
   Overrides the size of the container for the preview.
-- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](view/previewinterfaceorientation(_:).md)
+- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](./view/previewinterfaceorientation%28_%29.md)
   Overrides the orientation of the preview.
 
 

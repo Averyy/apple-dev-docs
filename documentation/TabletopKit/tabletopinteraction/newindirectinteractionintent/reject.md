@@ -1,7 +1,8 @@
 # reject
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Return `reject` to indicate that interaction should not be started
 

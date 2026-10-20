@@ -1,7 +1,8 @@
 # setContext(_:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets contextual information to improve or inform the analysis.
 
@@ -29,7 +30,8 @@ Other analyzer instances may use the same context object.
 
 ## See Also
 
-- [var context: AnalysisContext](speechanalyzer/context.md)
+### Managing contexts
+- [var context: AnalysisContext](./context.md)
   An object containing contextual information.
 
 

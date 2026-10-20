@@ -1,7 +1,8 @@
 # PKIssuerProvisioningExtensionStatus
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that indicates whether there are any payment cards available to add as Wallet passes.
 
@@ -9,7 +10,7 @@ An object that indicates whether there are any payment cards available to add as
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,35 +19,40 @@ An object that indicates whether there are any payment cards available to add as
 class PKIssuerProvisioningExtensionStatus
 ```
 
+```objc
+@interface PKIssuerProvisioningExtensionStatus : NSObject
+```
+
 ## Topics
 
 ### Creating an issuer extension provisioning status
-- [init()](pkissuerprovisioningextensionstatus/init.md)
+- [init()](./pkissuerprovisioningextensionstatus/init%28%29.md)
   Creates a new extension-handler status object.
 ### Reporting pass availability
-- [var passEntriesAvailable: Bool](pkissuerprovisioningextensionstatus/passentriesavailable.md)
+- [var passEntriesAvailable: Bool](./pkissuerprovisioningextensionstatus/passentriesavailable.md)
   A Boolean value that indicates whether a payment card is available to add to an iPhone.
-- [var remotePassEntriesAvailable: Bool](pkissuerprovisioningextensionstatus/remotepassentriesavailable.md)
+- [var remotePassEntriesAvailable: Bool](./pkissuerprovisioningextensionstatus/remotepassentriesavailable.md)
   A Boolean value that indicates whether a payment card is available to add to an Apple Watch.
 ### Reporting requirements for authentication
-- [var requiresAuthentication: Bool](pkissuerprovisioningextensionstatus/requiresauthentication.md)
+- [var requiresAuthentication: Bool](./pkissuerprovisioningextensionstatus/requiresauthentication.md)
   A Boolean value that indicates whether adding a card requires an authorization-user-interface extension provided by your app.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func status(completion: (PKIssuerProvisioningExtensionStatus) -> Void)](pkissuerprovisioningextensionhandler/status(completion:).md)
+### Returning extension status
+- [func status(completion: (PKIssuerProvisioningExtensionStatus) -> Void)](./pkissuerprovisioningextensionhandler/status%28completion%29.md)
   Reports the status of your Wallet extension.
 
 

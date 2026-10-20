@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the volume.
 

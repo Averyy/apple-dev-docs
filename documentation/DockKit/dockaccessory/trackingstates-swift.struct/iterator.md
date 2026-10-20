@@ -1,7 +1,8 @@
 # DockAccessory.TrackingStates.Iterator
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that allows iteration over tracking states.
 
@@ -20,13 +21,13 @@ struct Iterator
 ## Topics
 
 ### Instance Methods
-- [func next() async -> DockAccessory.TrackingState?](dockaccessory/trackingstates-swift.struct/iterator/next.md)
+- [func next() async -> DockAccessory.TrackingState?](./iterator/next%28%29.md)
   Provide the next tracking session state in the list.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

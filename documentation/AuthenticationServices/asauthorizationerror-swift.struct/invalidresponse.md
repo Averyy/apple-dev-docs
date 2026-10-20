@@ -1,7 +1,8 @@
 # invalidResponse
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The authorization request received an invalid response.
 
@@ -22,19 +23,20 @@ static var invalidResponse: ASAuthorizationError.Code { get }
 
 ## See Also
 
-- [static var canceled: ASAuthorizationError.Code](asauthorizationerror-swift.struct/canceled.md)
+### Error Codes
+- [static var canceled: ASAuthorizationError.Code](./canceled.md)
   The user canceled the authorization attempt.
-- [static var failed: ASAuthorizationError.Code](asauthorizationerror-swift.struct/failed.md)
+- [static var failed: ASAuthorizationError.Code](./failed.md)
   The authorization attempt failed.
-- [static var notHandled: ASAuthorizationError.Code](asauthorizationerror-swift.struct/nothandled.md)
+- [static var notHandled: ASAuthorizationError.Code](./nothandled.md)
   The authorization request wasn’t handled.
-- [static var unknown: ASAuthorizationError.Code](asauthorizationerror-swift.struct/unknown.md)
+- [static var unknown: ASAuthorizationError.Code](./unknown.md)
   The authorization attempt failed for an unknown reason.
-- [static var credentialExport: ASAuthorizationError.Code](asauthorizationerror-swift.struct/credentialexport.md)
+- [static var credentialExport: ASAuthorizationError.Code](./credentialexport.md)
   The credential export request failed.
-- [static var credentialImport: ASAuthorizationError.Code](asauthorizationerror-swift.struct/credentialimport.md)
+- [static var credentialImport: ASAuthorizationError.Code](./credentialimport.md)
   The credential import request failed.
-- [ASAuthorizationError.Code](asauthorizationerror-swift.struct/code.md)
+- [ASAuthorizationError.Code](./code.md)
   Codes that authorization errors can have.
 
 

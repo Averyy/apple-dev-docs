@@ -1,7 +1,8 @@
 # MTLCounterSampleBufferError.Code
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The underlying error code type that indicates why a GPU driver can’t create a counter sample buffer.
 
@@ -19,33 +20,37 @@ The underlying error code type that indicates why a GPU driver can’t create a 
 enum Code
 ```
 
+```c
+enum MTLCounterSampleBufferError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [MTLCounterSampleBufferError.Code.outOfMemory](mtlcountersamplebuffererror-swift.struct/code/outofmemory.md)
+- [MTLCounterSampleBufferError.Code.outOfMemory](./code/outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
-- [MTLCounterSampleBufferError.Code.invalid](mtlcountersamplebuffererror-swift.struct/code/invalid.md)
+- [MTLCounterSampleBufferError.Code.invalid](./code/invalid.md)
   An error code that indicates when a counter-sample buffer descriptor has at least one invalid property.
-- [MTLCounterSampleBufferError.Code.internal](mtlcountersamplebuffererror-swift.struct/code/internal.md)
+- [MTLCounterSampleBufferError.Code.internal](./code/internal.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLCounterSampleBufferError.Code.outOfMemory](mtlcountersamplebuffererror-swift.struct/code/outofmemory.md)
+- [MTLCounterSampleBufferError.Code.outOfMemory](./code/outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
-- [MTLCounterSampleBufferError.Code.invalid](mtlcountersamplebuffererror-swift.struct/code/invalid.md)
+- [MTLCounterSampleBufferError.Code.invalid](./code/invalid.md)
   An error code that indicates when a counter-sample buffer descriptor has at least one invalid property.
-- [MTLCounterSampleBufferError.Code.internal](mtlcountersamplebuffererror-swift.struct/code/internal.md)
+- [MTLCounterSampleBufferError.Code.internal](./code/internal.md)
   An error code that indicates the Metal framework has an internal problem.
 ### Initializers
-- [init?(rawValue: Int)](mtlcountersamplebuffererror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

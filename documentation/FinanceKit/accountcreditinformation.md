@@ -1,7 +1,8 @@
 # AccountCreditInformation
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the credit information associated with an account.
 
@@ -22,42 +23,43 @@ Credit information includes credit limits, payment dates, and minimum payment da
 ## Topics
 
 ### Instance Properties
-- [let creditLimit: CurrencyAmount?](accountcreditinformation/creditlimit.md)
+- [let creditLimit: CurrencyAmount?](./accountcreditinformation/creditlimit.md)
   The credit limit of the account.
-- [let minimumNextPaymentAmount: CurrencyAmount?](accountcreditinformation/minimumnextpaymentamount.md)
+- [let minimumNextPaymentAmount: CurrencyAmount?](./accountcreditinformation/minimumnextpaymentamount.md)
   Minimum amount of the next non-overdue payment.
-- [let nextPaymentDueDate: Date?](accountcreditinformation/nextpaymentduedate.md)
+- [let nextPaymentDueDate: Date?](./accountcreditinformation/nextpaymentduedate.md)
   Date of the next payment.
-- [let overduePaymentAmount: CurrencyAmount?](accountcreditinformation/overduepaymentamount.md)
+- [let overduePaymentAmount: CurrencyAmount?](./accountcreditinformation/overduepaymentamount.md)
   The amount by which the account is overdue for the current period.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](financestore/transactionhistory(foraccountid:since:ismonitoring:).md)
+### Transactions
+- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](./financestore/transactionhistory%28foraccountid,since,ismonitoring%29.md)
   Returns the transactions for the specified account ID, optional starting time, and monitoring indicator for long running transaction queries.
-- [func transactions(query: TransactionQuery) async throws -> [Transaction]](financestore/transactions(query:).md)
+- [func transactions(query: TransactionQuery) async throws -> [Transaction]](./financestore/transactions%28query%29.md)
   Returns transactions that match the provided transaction query.
-- [struct AccountQuery](accountquery.md)
+- [struct AccountQuery](./accountquery.md)
   A structure that defines an account query.
-- [struct CurrencyAmount](currencyamount.md)
+- [struct CurrencyAmount](./currencyamount.md)
   A structure that describes a monetary amount and its currency.
-- [struct Transaction](transaction.md)
+- [struct Transaction](./transaction.md)
   A structure that represents a transaction relating to a specific financial account.
-- [struct TransactionQuery](transactionquery.md)
+- [struct TransactionQuery](./transactionquery.md)
   A structure that describes the parameters to use for a transaction query.
-- [enum TransactionType](transactiontype.md)
+- [enum TransactionType](./transactiontype.md)
   Values that describe kinds of transactions.
-- [enum TransactionStatus](transactionstatus.md)
+- [enum TransactionStatus](./transactionstatus.md)
   Values that describe the status of a transaction.
 
 

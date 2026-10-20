@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color the glass effect view uses to tint the background and glass effect toward.
 
@@ -13,6 +14,10 @@ The color the glass effect view uses to tint the background and glass effect tow
 ```swift
 @NSCopying
 var tintColor: NSColor? { get set }
+```
+
+```objc
+@property (copy, nullable) NSColor * tintColor;
 ```
 
 

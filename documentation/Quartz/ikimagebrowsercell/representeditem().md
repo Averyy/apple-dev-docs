@@ -1,7 +1,8 @@
 # representedItem()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the receiver’s represented object.
 
@@ -14,6 +15,10 @@ Returns the receiver’s represented object.
 func representedItem() -> Any!
 ```
 
+```objc
+- (id) representedItem;
+```
+
 #### Return Value
 
 The item represented by the cell.
@@ -24,7 +29,8 @@ Subclasses should not override this method.
 
 ## See Also
 
-- [func indexOfRepresentedItem() -> Int](ikimagebrowsercell/indexofrepresenteditem.md)
+### Represented Item
+- [func indexOfRepresentedItem() -> Int](./indexofrepresenteditem%28%29.md)
   Returns the index of the receiver’s represented object in the datasource.
 
 

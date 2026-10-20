@@ -1,7 +1,8 @@
 # items
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media items in the queue.
 
@@ -16,6 +17,10 @@ The media items in the queue.
 
 ```swift
 var items: [MPMediaItem] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<MPMediaItem *> * items;
 ```
 
 #### Discussion

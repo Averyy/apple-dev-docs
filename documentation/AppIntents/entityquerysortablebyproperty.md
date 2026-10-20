@@ -1,7 +1,8 @@
 # EntityQuerySortableByProperty
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Details about a specific property you use to sort the query results.
 
@@ -11,7 +12,7 @@ Details about a specific property you use to sort the query results.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,13 +24,14 @@ struct EntityQuerySortableByProperty<Entity> where Entity : AppEntity
 ## Topics
 
 ### Creating the sort option
-- [init<Property>(KeyPath<Entity, Property>)](entityquerysortablebyproperty/init(_:).md)
+- [init<Property>(KeyPath<Entity, Property>)](./entityquerysortablebyproperty/init%28_%29.md)
 
 ## See Also
 
-- [struct EntityQuerySortingOptions](entityquerysortingoptions.md)
+### Sort options
+- [struct EntityQuerySortingOptions](./entityquerysortingoptions.md)
   The potential properties you can use to sort the results of a query.
-- [struct EntityQuerySort](entityquerysort.md)
+- [struct EntityQuerySort](./entityquerysort.md)
   The properties to use to sort the results when the query runs.
 
 

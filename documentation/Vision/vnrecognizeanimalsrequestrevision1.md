@@ -1,7 +1,8 @@
 # VNRecognizeAnimalsRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the animal recognition request.
 
@@ -19,9 +20,14 @@ A constant for specifying revision 1 of the animal recognition request.
 var VNRecognizeAnimalsRequestRevision1: Int { get }
 ```
 
+```c
+static const NSUInteger VNRecognizeAnimalsRequestRevision1;
+```
+
 ## See Also
 
-- [var VNRecognizeAnimalsRequestRevision2: Int](vnrecognizeanimalsrequestrevision2.md)
+### Identifying Request Revisions
+- [var VNRecognizeAnimalsRequestRevision2: Int](./vnrecognizeanimalsrequestrevision2.md)
   A constant for specifying revision 2 of the animal recognition request.
 
 

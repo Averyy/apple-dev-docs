@@ -1,14 +1,15 @@
 # CoalesceSenseData
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 SCSITaskStatus CoalesceSenseData(FWSBP2StatusBlock *sourceData, UInt8 quadletCount, SCSI_Sense_Data *targetData);
 ```
 

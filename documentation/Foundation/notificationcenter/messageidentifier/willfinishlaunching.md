@@ -1,7 +1,8 @@
 # willFinishLaunching
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willFinishLaunching: NotificationCenter.BaseMessageIdentifier<NSApplication.WillFinishLaunchingMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSApplication.WillFinishLaunchingMessage>`.
 
 
 ---

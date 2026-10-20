@@ -1,7 +1,8 @@
 # metadataObjects
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Metadata objects associated with the current frame.
 
@@ -15,11 +16,15 @@ Metadata objects associated with the current frame.
 var metadataObjects: [AVMetadataObject] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<__kindof AVMetadataObject *> * metadataObjects;
+```
+
 #### Discussion
 
 This array contains `AVMetadataFaceObject`s for detected faces when running an `ARFaceTrackingConfiguration` and face tracking is not active (`maximumNumberOfTrackedFaces` set to 0).
 
-> **Note**: [`maximumNumberOfTrackedFaces`](arfacetrackingconfiguration/maximumnumberoftrackedfaces.md)
+> **See Also**: [`maximumNumberOfTrackedFaces`](../arfacetrackingconfiguration/maximumnumberoftrackedfaces.md)
 
 
 ---

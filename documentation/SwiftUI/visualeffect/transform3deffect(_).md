@@ -1,7 +1,8 @@
 # transform3DEffect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a 3D transformation to this view’s rendered output.
 
@@ -19,9 +20,9 @@ func transform3DEffect(_ transform: AffineTransform3D) -> some VisualEffect
 
 An effect that renders transformed according to the provided `transform`
 
-##### Apply a Transform About an Anchor
+##### Apply a transform about an anchor
 
-This does not adjust the transform relative to an anchor point. Instead, apply the scale and rotation separately using [`scaleEffect(_:anchor:)`](view/scaleeffect(_:anchor:).md) together with [`rotation3DEffect(_:anchor:)`](view/rotation3deffect(_:anchor:).md).
+This does not adjust the transform relative to an anchor point. Instead, apply the scale and rotation separately using [`scaleEffect(_:anchor:)`](../view/scaleeffect%28_,anchor%29.md) together with [`rotation3DEffect(_:anchor:)`](../view/rotation3deffect%28_,anchor%29.md).
 
 ```swift
 Model3D(url: URL(string: "https://example.com/robot.usdz")!)
@@ -37,7 +38,8 @@ Model3D(url: URL(string: "https://example.com/robot.usdz")!)
 
 ## See Also
 
-- [func transformEffect(_:)](visualeffect/transformeffect(_:).md)
+### Applying a transform
+- [func transformEffect(_:)](./transformeffect%28_%29.md)
   Applies an affine transformation to the view’s rendered output.
 
 

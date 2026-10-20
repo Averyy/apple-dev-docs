@@ -1,7 +1,8 @@
 # AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data for updating the search keywords associated with a custom product page localization.
 
@@ -10,14 +11,14 @@ The resource linkage data for updating the search keywords associated with a cus
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appKeywords`
 
 
 ---

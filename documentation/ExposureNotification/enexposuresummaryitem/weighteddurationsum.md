@@ -1,19 +1,26 @@
 # weightedDurationSum
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sum of exposure durations weighted by their attenuation.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var weightedDurationSum: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval weightedDurationSum;
 ```
 
 #### Discussion
@@ -22,13 +29,14 @@ var weightedDurationSum: TimeInterval { get }
 
 This value is stored as seconds, rounded up to the next minute. Divide by 60 to convert to minutes when displaying to the user.
 
-[`weightedDurationSum`](enexposuresummaryitem/weighteddurationsum.md) ignores [`infectiousness`](enexposurewindow/infectiousness.md) and [`diagnosisReportType`](enexposurewindow/diagnosisreporttype.md); therefore, it can be nonzero for encounters that have a infectiousness weight or diagnosis report type weight of `0`.
+[`weightedDurationSum`](./weighteddurationsum.md) ignores [`infectiousness`](../enexposurewindow/infectiousness.md) and [`diagnosisReportType`](../enexposurewindow/diagnosisreporttype.md); therefore, it can be nonzero for encounters that have a infectiousness weight or diagnosis report type weight of `0`.
 
 ## See Also
 
-- [var maximumScore: Double](enexposuresummaryitem/maximumscore.md)
+### Getting Summary Properties
+- [var maximumScore: Double](./maximumscore.md)
   The highest score of all exposures for this item.
-- [var scoreSum: Double](enexposuresummaryitem/scoresum.md)
+- [var scoreSum: Double](./scoresum.md)
   The sum of scores for all exposure for this item.
 
 

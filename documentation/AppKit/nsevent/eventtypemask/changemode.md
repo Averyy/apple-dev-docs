@@ -1,7 +1,8 @@
 # changeMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mask for change-mode events.
 
@@ -14,9 +15,14 @@ A mask for change-mode events.
 static var changeMode: NSEvent.EventTypeMask { get }
 ```
 
+```c
+NSEventMaskChangeMode
+```
+
 ## See Also
 
-- [static var scrollWheel: NSEvent.EventTypeMask](nsevent/eventtypemask/scrollwheel.md)
+### Getting Input Events
+- [static var scrollWheel: NSEvent.EventTypeMask](./scrollwheel.md)
   A mask for scroll-wheel events.
 
 

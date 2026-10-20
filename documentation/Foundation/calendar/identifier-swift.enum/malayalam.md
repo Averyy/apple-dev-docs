@@ -1,7 +1,8 @@
 # Calendar.Identifier.malayalam
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

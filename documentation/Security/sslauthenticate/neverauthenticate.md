@@ -1,7 +1,8 @@
 # SSLAuthenticate.neverAuthenticate
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that client-side authentication is not required. (Default.)
 
@@ -13,6 +14,10 @@ Indicates that client-side authentication is not required. (Default.)
 
 ```swift
 case neverAuthenticate
+```
+
+```c
+kNeverAuthenticate
 ```
 
 

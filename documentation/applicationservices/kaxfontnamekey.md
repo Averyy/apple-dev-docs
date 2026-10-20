@@ -1,9 +1,10 @@
 # kAXFontNameKey
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Required key of the [`kAXFontTextAttribute`](kaxfonttextattribute.md) dictionary for the font name in a `CFStringRef`.
+Required key of the [`kAXFontTextAttribute`](./kaxfonttextattribute.md) dictionary for the font name in a `CFStringRef`.
 
 **Availability**:
 - macOS 10.4+
@@ -12,6 +13,10 @@ Required key of the [`kAXFontTextAttribute`](kaxfonttextattribute.md) dictionary
 
 ```swift
 var kAXFontNameKey: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXFontNameKey;
 ```
 
 #### Discussion

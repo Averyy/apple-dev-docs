@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the specified completion block to the animator.
@@ -19,13 +20,18 @@ Adds the specified completion block to the animator.
 func addCompletion(_ completion: @escaping () -> Void)
 ```
 
+```objc
+- (void) addCompletion:(void (^)()) completion;
+```
+
 ## Parameters
 
 - `completion`: The completion block.
 
 ## See Also
 
-- [func addAnimations(() -> Void)](uicontextmenuinteractionanimating/addanimations(_:).md)
+### Adding Custom Animations
+- [func addAnimations(() -> Void)](./addanimations%28_%29.md)
   Adds the specified animation block to the animator.
 
 

@@ -1,7 +1,8 @@
 # setDirection
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Changes the direction associated with the buffer’s memory transfers.
 
@@ -10,7 +11,7 @@ Changes the direction associated with the buffer’s memory transfers.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setDirection(IODirection direction);
 ```
 
@@ -20,9 +21,10 @@ virtual void setDirection(IODirection direction);
 
 ## See Also
 
-- [- getCapacity](iobuffermemorydescriptor/1574844-getcapacity.md)
+### Configuring the Descriptor
+- [- getCapacity](./api-1574844-getcapacity.md)
   Returns the number of bytes the buffer is capable of holding. 
-- [- setLength](iobuffermemorydescriptor/1574850-setlength.md)
+- [- setLength](./api-1574850-setlength.md)
   Sets the length of the data in the buffer.
 
 

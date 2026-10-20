@@ -1,7 +1,8 @@
 # kMDItemAudioChannelCount
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Number of channels in the audio data contained in the file. A CFNumber.
 
@@ -12,6 +13,10 @@ Number of channels in the audio data contained in the file. A CFNumber.
 
 ```swift
 let kMDItemAudioChannelCount: CFString!
+```
+
+```c
+const CFStringRef kMDItemAudioChannelCount;
 ```
 
 #### Discussion

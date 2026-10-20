@@ -1,18 +1,21 @@
 # BNNSFilterCreateFusedLayer(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new fused layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,13 +23,17 @@ Returns a new fused layer.
 func BNNSFilterCreateFusedLayer(_ number_of_fused_filters: Int, _ filter_type: UnsafePointer<BNNSFilterType>, _ layer_params: UnsafeMutablePointer<UnsafeRawPointer>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
 ```
 
+```c
+BNNSFilterBNNSFilterCreateFusedLayer(const size_t number_of_fused_filters, const BNNSFilterType *filter_type, const void **layer_params, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-Use this function to create an `N` layer fused filter that processes input as: `input → filter0 → filter1 →` … `→ filter N-1 → output`. The first `N - 1` filters must have [`BNNSActivationFunctionIdentity`](bnnsactivationfunctionidentity.md) activation function. For the first `N - 2` filters, each filter’s output descriptor and its subsequent filter’s input descriptor must have the same size, stride, and data type.
+Use this function to create an `N` layer fused filter that processes input as: `input → filter0 → filter1 →` … `→ filter N-1 → output`. The first `N - 1` filters must have [`BNNSActivationFunctionIdentity`](./bnnsactivationfunctionidentity.md) activation function. For the first `N - 2` filters, each filter’s output descriptor and its subsequent filter’s input descriptor must have the same size, stride, and data type.
 
-[`BNNSFilterCreateFusedLayer(_:_:_:_:)`](bnnsfiltercreatefusedlayer(_:_:_:_:).md) supports two filters. The first filter must be either [`BNNSConvolution`](bnnsconvolution.md) or [`BNNSFullyConnected`](bnnsfullyconnected.md). The second filter must be one of [`BNNSBatchNorm`](bnnsbatchnorm.md), [`BNNSInstanceNorm`](bnnsinstancenorm.md), [`BNNSLayerNorm`](bnnslayernorm.md), or [`BNNSGroupNorm`](bnnsgroupnorm.md).
+[`BNNSFilterCreateFusedLayer(_:_:_:_:)`](./bnnsfiltercreatefusedlayer%28_,_,_,_%29.md) supports two filters. The first filter must be either [`BNNSConvolution`](./bnnsconvolution.md) or [`BNNSFullyConnected`](./bnnsfullyconnected.md). The second filter must be one of [`BNNSBatchNorm`](./bnnsbatchnorm.md), [`BNNSInstanceNorm`](./bnnsinstancenorm.md), [`BNNSLayerNorm`](./bnnslayernorm.md), or [`BNNSGroupNorm`](./bnnsgroupnorm.md).
 
-The following code shows how you pass [`BNNSLayerParametersConvolution`](bnnslayerparametersconvolution.md) and [`BNNSLayerParametersNormalization`](bnnslayerparametersnormalization.md) structures to [`BNNSFilterCreateFusedLayer(_:_:_:_:)`](bnnsfiltercreatefusedlayer(_:_:_:_:).md) to create a fused convolution-layer normalization filter:
+The following code shows how you pass [`BNNSLayerParametersConvolution`](./bnnslayerparametersconvolution.md) and [`BNNSLayerParametersNormalization`](./bnnslayerparametersnormalization.md) structures to [`BNNSFilterCreateFusedLayer(_:_:_:_:)`](./bnnsfiltercreatefusedlayer%28_,_,_,_%29.md) to create a fused convolution-layer normalization filter:
 
 ```swift
 // The `input`, `output`, and `weights` are single-precision arrays.
@@ -97,22 +104,23 @@ weights.withUnsafeMutableBytes { weightsPtr in
 
 ## See Also
 
-- [protocol FusableLayerParameters](fusablelayerparameters.md)
-- [class FusedParametersLayer](bnns/fusedparameterslayer.md)
+### Fused layers
+- [protocol FusableLayerParameters](./fusablelayerparameters.md)
+- [class FusedParametersLayer](./bnns/fusedparameterslayer.md)
   A layer object that wraps a fused layer and manages its deinitialization.
-- [class FusedConvolutionNormalizationLayer](bnns/fusedconvolutionnormalizationlayer.md)
+- [class FusedConvolutionNormalizationLayer](./bnns/fusedconvolutionnormalizationlayer.md)
   A layer object that wraps a fused, convolution normalization layer and manages its deinitialization.
-- [class FusedFullyConnectedNormalizationLayer](bnns/fusedfullyconnectednormalizationlayer.md)
+- [class FusedFullyConnectedNormalizationLayer](./bnns/fusedfullyconnectednormalizationlayer.md)
   A layer object that wraps a fused, fully connected normalization layer and manages its deinitialization.
-- [struct BNNSFilterType](bnnsfiltertype.md)
+- [struct BNNSFilterType](./bnnsfiltertype.md)
   Constants that define the component filters of a fused layer.
-- [func BNNSFusedFilterApplyBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutableRawPointer, Int, Bool) -> Int32](bnnsfusedfilterapplybatch(_:_:_:_:_:_:_:).md)
+- [func BNNSFusedFilterApplyBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutableRawPointer, Int, Bool) -> Int32](./bnnsfusedfilterapplybatch%28_,_,_,_,_,_,_%29.md)
   Applies a fused filter to a set of input objects, writing the result to a set of output objects.
-- [func BNNSFusedFilterApplyMultiInputBatch(BNNSFilter?, Int, Int, UnsafeMutablePointer<UnsafeRawPointer>, UnsafePointer<Int>, UnsafeMutableRawPointer, Int, Bool) -> Int32](bnnsfusedfilterapplymultiinputbatch(_:_:_:_:_:_:_:_:).md)
+- [func BNNSFusedFilterApplyMultiInputBatch(BNNSFilter?, Int, Int, UnsafeMutablePointer<UnsafeRawPointer>, UnsafePointer<Int>, UnsafeMutableRawPointer, Int, Bool) -> Int32](./bnnsfusedfilterapplymultiinputbatch%28_,_,_,_,_,_,_,_%29.md)
   Applies a multiple-input fused filter to a set of input objects, writing the result to a set of output objects.
-- [func BNNSFusedFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>?>?) -> Int32](bnnsfusedfilterapplybackwardbatch(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSFusedFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>?>?) -> Int32](./bnnsfusedfilterapplybackwardbatch%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a fused filter backward to generate input gradients.
-- [func BNNSFusedFilterApplyBackwardMultiInputBatch(BNNSFilter?, Int, Int, UnsafeMutablePointer<UnsafeRawPointer?>?, UnsafePointer<Int>?, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>>, UnsafePointer<Int>, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>?>?) -> Int32](bnnsfusedfilterapplybackwardmultiinputbatch(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSFusedFilterApplyBackwardMultiInputBatch(BNNSFilter?, Int, Int, UnsafeMutablePointer<UnsafeRawPointer?>?, UnsafePointer<Int>?, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>>, UnsafePointer<Int>, UnsafeRawPointer?, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>?>?) -> Int32](./bnnsfusedfilterapplybackwardmultiinputbatch%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a multiple-input fused filter backward to generate input gradients.
 
 

@@ -1,7 +1,8 @@
 # HKPredicateKeyPathCDATitle
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing the document’s title inside a predicate format string.
 
@@ -19,13 +20,18 @@ The key path for accessing the document’s title inside a predicate format stri
 let HKPredicateKeyPathCDATitle: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathCDATitle;
+```
+
 ## See Also
 
-- [let HKPredicateKeyPathCDAAuthorName: String](hkpredicatekeypathcdaauthorname.md)
+### Specifying Predicate Key Paths
+- [let HKPredicateKeyPathCDAAuthorName: String](./hkpredicatekeypathcdaauthorname.md)
   The key path for accessing the author’s name inside a predicate format string.
-- [let HKPredicateKeyPathCDACustodianName: String](hkpredicatekeypathcdacustodianname.md)
+- [let HKPredicateKeyPathCDACustodianName: String](./hkpredicatekeypathcdacustodianname.md)
   The key path for accessing the custodian’s name inside a predicate format string.
-- [let HKPredicateKeyPathCDAPatientName: String](hkpredicatekeypathcdapatientname.md)
+- [let HKPredicateKeyPathCDAPatientName: String](./hkpredicatekeypathcdapatientname.md)
   The key path for accessing the patient’s name inside a predicate format string.
 
 

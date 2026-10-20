@@ -1,14 +1,15 @@
 # SignedNumeric Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func - (Self) -> Self](float/-(_:)-41os2.md)
+- [static func - (Self) -> Self](./minus%28_%29-41os2.md)
   Returns the additive inverse of the specified value.
 ### Instance Methods
-- [func negate()](float/negate-jfhp.md)
+- [func negate()](./negate%28%29-jfhp.md)
   Replaces this value with its additive inverse.
 
 

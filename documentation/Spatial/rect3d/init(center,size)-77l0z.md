@@ -1,7 +1,8 @@
 # init(center:size:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle with the specified center and the specified size from double-precision vectors.
 
@@ -11,7 +12,7 @@ Creates a rectangle with the specified center and the specified size from double
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,25 +28,26 @@ init(center: simd_double3 = .zero, size: simd_double3)
 
 ## See Also
 
-- [init()](rect3d/init.md)
+### Creating a 3D rectangle structure
+- [init()](./init%28%29.md)
   Creates a rectangle structure.
-- [init(center: Point3D, size: Size3D)](rect3d/init(center:size:)-133fy.md)
+- [init(center: Point3D, size: Size3D)](./init%28center,size%29-133fy.md)
   Creates a rectangle with the specified center and the specified size from Spatial structures.
-- [init(center: Vector3D, size: Vector3D)](rect3d/init(center:size:)-9cfq7.md)
+- [init(center: Vector3D, size: Vector3D)](./init%28center,size%29-9cfq7.md)
   Creates a rectangle with the specified center and the specified size from Spatial vectors.
-- [init(center: simd_float3, size: simd_float3)](rect3d/init(center:size:)-zr2x.md)
+- [init(center: simd_float3, size: simd_float3)](./init%28center,size%29-zr2x.md)
   Creates a rectangle with the specified center and the specified size from single-precision vectors.
-- [init(origin: simd_double3, size: simd_double3)](rect3d/init(origin:size:)-5xyrs.md)
+- [init(origin: simd_double3, size: simd_double3)](./init%28origin,size%29-5xyrs.md)
   Creates a rectangle at the specified origin with the specified size from double-precision vectors.
-- [init(origin: simd_float3, size: simd_float3)](rect3d/init(origin:size:)-7fnuf.md)
+- [init(origin: simd_float3, size: simd_float3)](./init%28origin,size%29-7fnuf.md)
   Creates a rectangle at the specified origin with the specified size from single-precision vectors.
-- [init(origin: Vector3D, size: Vector3D)](rect3d/init(origin:size:)-7o8ad.md)
+- [init(origin: Vector3D, size: Vector3D)](./init%28origin,size%29-7o8ad.md)
   Creates a rectangle with the specified origin and the specified size from Spatial vectors.
-- [init(origin: Point3D, size: Size3D)](rect3d/init(origin:size:)-7v73.md)
+- [init(origin: Point3D, size: Size3D)](./init%28origin,size%29-7v73.md)
   Creates a rectangle at the specified origin and the specified size from Spatial structures.
-- [init(origin: Point3D, size: Size3D)](rect3d/init(origin:size:)-9a089.md)
+- [init(origin: Point3D, size: Size3D)](./init%28origin,size%29-9a089.md)
   Creates a rectangle structure.
-- [init(points: [Point3D])](rect3d/init(points:).md)
+- [init(points: [Point3D])](./init%28points%29.md)
   Creates a rectangle that’s the bounding box of the specified points.
 
 

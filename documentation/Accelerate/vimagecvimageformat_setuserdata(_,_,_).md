@@ -1,7 +1,8 @@
 # vImageCVImageFormat_SetUserData(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the user data of a Core Video image format.
 
@@ -20,9 +21,13 @@ Sets the user data of a Core Video image format.
 func vImageCVImageFormat_SetUserData(_ format: vImageCVImageFormat, _ userData: UnsafeMutableRawPointer!, _ userDataReleaseCallback: ((vImageCVImageFormat?, UnsafeMutableRawPointer?) -> Void)!) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageCVImageFormat_SetUserData(vImageCVImageFormatRef format, void *userData, void (*)(struct vImageCVImageFormat *, void *)userDataReleaseCallback);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -30,11 +35,12 @@ func vImageCVImageFormat_SetUserData(_ format: vImageCVImageFormat, _ userData: 
 
 - `format`: The Core Video image format to update.
 - `userData`: The new user data for the format.
-- `userDataReleaseCallback`: The callback the system calls when it releases the [`vImageCVImageFormat`](vimagecvimageformat.md) instance or overwrites the `userData` pointer.
+- `userDataReleaseCallback`: The callback the system calls when it releases the [`vImageCVImageFormat`](./vimagecvimageformat.md) instance or overwrites the `userData` pointer.
 
 ## See Also
 
-- [func vImageCVImageFormat_GetUserData(vImageConstCVImageFormat) -> UnsafeMutableRawPointer!](vimagecvimageformat_getuserdata(_:).md)
+### Querying and setting the user data
+- [func vImageCVImageFormat_GetUserData(vImageConstCVImageFormat) -> UnsafeMutableRawPointer!](./vimagecvimageformat_getuserdata%28_%29.md)
   Returns the user data of a Core Video image format.
 
 

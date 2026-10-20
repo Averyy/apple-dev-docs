@@ -1,7 +1,8 @@
 # NSFileTypeForHFSTypeCode(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a string encoding a file type code.
 
@@ -15,6 +16,10 @@ Returns a string encoding a file type code.
 func NSFileTypeForHFSTypeCode(_ hfsFileTypeCode: OSType) -> String!
 ```
 
+```c
+extern NSString *NSFileTypeForHFSTypeCode(OSType hfsFileTypeCode);
+```
+
 #### Return Value
 
 A string that encodes `hfsFileTypeCode`.
@@ -25,9 +30,10 @@ A string that encodes `hfsFileTypeCode`.
 
 ## See Also
 
-- [func NSHFSTypeCodeFromFileType(String!) -> OSType](nshfstypecodefromfiletype(_:).md)
+### Working with HFS file types
+- [func NSHFSTypeCodeFromFileType(String!) -> OSType](./nshfstypecodefromfiletype%28_%29.md)
   Returns a file type code.
-- [func NSHFSTypeOfFile(String!) -> String!](nshfstypeoffile(_:).md)
+- [func NSHFSTypeOfFile(String!) -> String!](./nshfstypeoffile%28_%29.md)
   Returns a string encoding a file type.
 
 

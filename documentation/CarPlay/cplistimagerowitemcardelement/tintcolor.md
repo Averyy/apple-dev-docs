@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UIColor used to tint the element. When @c showsImageFullHeight is true, the tint color is applied behind the labels at the bottom of the card. Otherwise, this color is part of the gradient color at the bottom of the card.
 
@@ -15,6 +16,10 @@ A UIColor used to tint the element. When @c showsImageFullHeight is true, the ti
 ```swift
 @NSCopying
 var tintColor: UIColor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIColor * tintColor;
 ```
 
 #### Discussion

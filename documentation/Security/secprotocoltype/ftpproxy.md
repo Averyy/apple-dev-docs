@@ -1,7 +1,8 @@
 # SecProtocolType.ftpProxy
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates FTP proxy.
 
@@ -13,6 +14,10 @@ Indicates FTP proxy.
 
 ```swift
 case ftpProxy
+```
+
+```c
+kSecProtocolTypeFTPProxy
 ```
 
 

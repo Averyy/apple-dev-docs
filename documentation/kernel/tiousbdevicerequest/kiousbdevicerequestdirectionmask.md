@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestDirectionMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The direction mask.
 
@@ -10,7 +11,7 @@ The direction mask.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestDirectionMask = IOUSBBit(7)
 ```
 

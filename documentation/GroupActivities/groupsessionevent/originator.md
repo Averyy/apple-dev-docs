@@ -1,7 +1,8 @@
 # originator
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant that initiated the event.
 
@@ -21,11 +22,12 @@ let originator: Participant
 
 ## See Also
 
-- [let url: URL?](groupsessionevent/url.md)
+### Getting the event details
+- [let url: URL?](./url.md)
   The URL to open when the participant taps the event link in the system UI.
-- [let action: GroupSessionEvent.Action](groupsessionevent/action-swift.property.md)
+- [let action: GroupSessionEvent.Action](./action-swift.property.md)
   The reason for the event.
-- [GroupSessionEvent.Action](groupsessionevent/action-swift.struct.md)
+- [GroupSessionEvent.Action](./action-swift.struct.md)
   A playback-related change that occurs during the session.
 
 

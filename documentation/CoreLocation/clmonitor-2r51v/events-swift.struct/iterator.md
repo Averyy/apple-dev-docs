@@ -1,7 +1,8 @@
 # CLMonitor.Events.Iterator
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type that allows iteration over the elements of the sequence.
 
@@ -19,12 +20,12 @@ struct Iterator
 
 #### Overview
 
-Use `CLMonitor.Events.Iterator` to process events that [`CLMonitor`](clmonitor-2r51v.md) delivers.
+Use `CLMonitor.Events.Iterator` to process events that [`CLMonitor`](../../clmonitor-2r51v.md) delivers.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

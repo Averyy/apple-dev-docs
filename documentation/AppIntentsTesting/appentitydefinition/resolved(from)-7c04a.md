@@ -1,7 +1,8 @@
 # resolved(from:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves an entity from a transferable intent value type through the entity type’s transferable conformance.
 
@@ -28,7 +29,7 @@ The resolved entity.
 
 The value is serialized through its `TransferRepresentation` and resolved into the entity type through the same pipeline used at runtime.
 
-> **Note**: If the entity type does not support the given value type.
+> **Throws**: If the entity type does not support the given value type.
 
 ```swift
 let person = try await entity.exported(as: IntentPerson.self)

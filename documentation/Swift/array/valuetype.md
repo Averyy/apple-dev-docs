@@ -1,7 +1,8 @@
 # Array.ValueType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 typealias ValueType = Element
 ```
+
+Available when `Element` conforms to `_IntentValue`.
 
 
 ---

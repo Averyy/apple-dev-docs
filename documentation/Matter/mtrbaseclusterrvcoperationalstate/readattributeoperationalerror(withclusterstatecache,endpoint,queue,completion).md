@@ -1,7 +1,8 @@
 # readAttributeOperationalError(withClusterStateCache:endpoint:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+class func readAttributeOperationalError(withClusterStateCache clusterStateCacheContainer: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: @escaping @Sendable (MTRRVCOperationalStateClusterErrorStateStruct?, (any Error)?) -> Void)
+```
+
+```swift
 class func readAttributeOperationalError(withClusterStateCache clusterStateCacheContainer: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t) async throws -> MTRRVCOperationalStateClusterErrorStateStruct
+```
+
+```objc
++ (void) readAttributeOperationalErrorWithClusterStateCache:(MTRClusterStateCacheContainer *) clusterStateCacheContainer endpoint:(NSNumber *) endpoint queue:(dispatch_queue_t) queue completion:(void (^)(MTRRVCOperationalStateClusterErrorStateStruct *value, NSError *error)) completion;
 ```
 
 

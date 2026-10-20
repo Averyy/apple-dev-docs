@@ -1,10 +1,11 @@
 # kDitherAlgorithm_TPDF
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kDitherAlgorithm_TPDF: UInt32 { get }
 ```
 
+```c
+kDitherAlgorithm_TPDF
+```
+
 ## See Also
 
-- [var kDitherAlgorithm_NoiseShaping: UInt32](kditheralgorithm_noiseshaping.md)
+### Constants
+- [var kDitherAlgorithm_NoiseShaping: UInt32](./kditheralgorithm_noiseshaping.md)
 
 
 ---

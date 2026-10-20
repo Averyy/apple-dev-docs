@@ -1,7 +1,8 @@
 # verticalSyncOffset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 First line of vertical sync.
 
@@ -10,7 +11,7 @@ First line of vertical sync.
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalSyncOffset;
 ```
 

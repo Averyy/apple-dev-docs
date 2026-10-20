@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value.
 

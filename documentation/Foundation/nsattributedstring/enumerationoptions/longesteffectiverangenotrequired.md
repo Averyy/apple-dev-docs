@@ -1,7 +1,8 @@
 # longestEffectiveRangeNotRequired
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If `NSAttributedStringEnumerationLongestEffectiveRangeNotRequired` option is supplied, then the longest effective range computation is not performed; the blocks may be invoked with consecutive attribute runs that have the same value.
 
@@ -20,9 +21,14 @@ If `NSAttributedStringEnumerationLongestEffectiveRangeNotRequired` option is sup
 static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions { get }
 ```
 
+```c
+NSAttributedStringEnumerationLongestEffectiveRangeNotRequired
+```
+
 ## See Also
 
-- [static var reverse: NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions/reverse.md)
+### Getting the enumeration options
+- [static var reverse: NSAttributedString.EnumerationOptions](./reverse.md)
   Causes the enumeration to occur in reverse.
 
 

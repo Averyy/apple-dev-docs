@@ -1,7 +1,8 @@
 # HMCharacteristicValuePowerModeSelection.show
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The selection is showing power mode.
 
@@ -19,9 +20,14 @@ The selection is showing power mode.
 case show
 ```
 
+```c
+HMCharacteristicValuePowerModeSelectionShow
+```
+
 ## See Also
 
-- [HMCharacteristicValuePowerModeSelection.hide](hmcharacteristicvaluepowermodeselection/hide.md)
+### Power mode status
+- [HMCharacteristicValuePowerModeSelection.hide](./hide.md)
   The selection is hiding power mode.
 
 

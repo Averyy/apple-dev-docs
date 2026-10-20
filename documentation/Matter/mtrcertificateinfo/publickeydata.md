@@ -1,7 +1,8 @@
 # publicKeyData
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Public key data for this certificate
 
@@ -18,6 +19,10 @@ Public key data for this certificate
 
 ```swift
 var publicKeyData: Data? { get }
+```
+
+```objc
+@property (retain, readonly, nullable) NSData * publicKeyData;
 ```
 
 

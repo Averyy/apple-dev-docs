@@ -1,7 +1,8 @@
 # textFormat
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier for a group of text format controls.
 
@@ -14,15 +15,20 @@ The identifier for a group of text format controls.
 static let textFormat: NSTouchBarItem.Identifier
 ```
 
+```c
+extern NSTouchBarItemIdentifier const NSTouchBarItemIdentifierTextFormat;
+```
+
 ## See Also
 
-- [static let textAlignment: NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct/textalignment.md)
+### Creating identifiers for text items
+- [static let textAlignment: NSTouchBarItem.Identifier](./textalignment.md)
   The identifier for a Touch Bar item used to select the text alignment.
-- [static let textColorPicker: NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct/textcolorpicker.md)
+- [static let textColorPicker: NSTouchBarItem.Identifier](./textcolorpicker.md)
   The identifier for a Touch Bar item used to select the text color.
-- [static let textList: NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct/textlist.md)
+- [static let textList: NSTouchBarItem.Identifier](./textlist.md)
   The identifier for a Touch Bar item used to control the text list style.
-- [static let textStyle: NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct/textstyle.md)
+- [static let textStyle: NSTouchBarItem.Identifier](./textstyle.md)
   The identifier for a Touch Bar item used to control the text style.
 
 

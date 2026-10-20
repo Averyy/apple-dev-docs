@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a new `NSTextFinder` instance.
 
@@ -12,6 +13,10 @@ Initializes and returns a new `NSTextFinder` instance.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value

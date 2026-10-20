@@ -1,7 +1,8 @@
 # CNResourceStatus.unsupportedAsset
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The given asset is unsupported on the current build
 
@@ -16,6 +17,10 @@ The given asset is unsupported on the current build
 
 ```swift
 case unsupportedAsset
+```
+
+```c
+CNResourceStatusUnsupportedAsset
 ```
 
 

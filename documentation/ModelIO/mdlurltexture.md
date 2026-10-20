@@ -1,7 +1,8 @@
 # MDLURLTexture
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A lightweight reference to a URL from which to load texture data.
 
@@ -19,51 +20,56 @@ A lightweight reference to a URL from which to load texture data.
 class MDLURLTexture
 ```
 
+```objc
+@interface MDLURLTexture : MDLTexture
+```
+
 #### Overview
 
-Unlike the superclass [`MDLTexture`](mdltexture.md), the [`MDLURLTexture`](mdlurltexture.md) class loads texel data from the file at that URL only when that data is first referenced, and then caches it for future use.
+Unlike the superclass [`MDLTexture`](./mdltexture.md), the [`MDLURLTexture`](./mdlurltexture.md) class loads texel data from the file at that URL only when that data is first referenced, and then caches it for future use.
 
 ## Topics
 
 ### Creating a URL Texture
-- [init(url: URL, name: String?)](mdlurltexture/init(url:name:)-1y03u.md)
+- [init(url: URL, name: String?)](./mdlurltexture/init%28url,name%29-1y03u.md)
   Initializes a texture that loads its texel data from a file at the specified URL.
 ### Inspecting the Texture URL
-- [var url: URL](mdlurltexture/url.md)
+- [var url: URL](./mdlurltexture/url.md)
   The URL from which to load texture data.
 ### Initializers
-- [init(URL: URL, name: String?)](mdlurltexture/init(url:name:)-5dfk1.md)
+- [init(URL: URL, name: String?)](./mdlurltexture/init%28url,name%29-5dfk1.md)
 
 ## Relationships
 
 ### Inherits From
-- [MDLTexture](mdltexture.md)
+- [MDLTexture](./mdltexture.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MDLTexture](mdltexture.md)
+### Textures
+- [class MDLTexture](./mdltexture.md)
   A source of texel data to be used in rendering material surface appearances.
-- [class MDLCheckerboardTexture](mdlcheckerboardtexture.md)
+- [class MDLCheckerboardTexture](./mdlcheckerboardtexture.md)
   A generator of texel data that creates a checkerboard pattern with two specified colors.
-- [class MDLColorSwatchTexture](mdlcolorswatchtexture.md)
+- [class MDLColorSwatchTexture](./mdlcolorswatchtexture.md)
   A generator of texel data that creates a gradient between two specified colors.
-- [class MDLNoiseTexture](mdlnoisetexture.md)
+- [class MDLNoiseTexture](./mdlnoisetexture.md)
   A generator of texel data that creates a field of random noise.
-- [class MDLNormalMapTexture](mdlnormalmaptexture.md)
+- [class MDLNormalMapTexture](./mdlnormalmaptexture.md)
   A generator of texel data that computes a normal map from a supplied texture.
-- [class MDLSkyCubeTexture](mdlskycubetexture.md)
+- [class MDLSkyCubeTexture](./mdlskycubetexture.md)
   A generator of texel data that creates cube textures using a physically realistic simulation of the sunlit sky.
-- [class MDLTextureFilter](mdltexturefilter.md)
+- [class MDLTextureFilter](./mdltexturefilter.md)
   A description of filtering modes for a renderer to use when sampling from a texture.
-- [class MDLTextureSampler](mdltexturesampler.md)
+- [class MDLTextureSampler](./mdltexturesampler.md)
   An object that pairs a source of texture data with sampling parameters to be used in rendering the texture.
 
 

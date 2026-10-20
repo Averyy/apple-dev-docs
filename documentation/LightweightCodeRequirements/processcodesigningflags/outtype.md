@@ -1,9 +1,10 @@
 # ProcessCodeSigningFlags.OutType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The type of this constraint: [`ProcessCodeSigningFlags`](processcodesigningflags.md)
+The type of this constraint: [`ProcessCodeSigningFlags`](../processcodesigningflags.md)
 
 **Availability**:
 - iOS 17.4+

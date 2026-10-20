@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Result.pointCloud(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The result of a request for a point cloud.
 

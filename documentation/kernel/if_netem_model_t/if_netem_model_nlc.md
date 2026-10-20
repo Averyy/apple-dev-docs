@@ -1,14 +1,15 @@
 # IF_NETEM_MODEL_NLC
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IF_NETEM_MODEL_NLC = 1
 ```
 

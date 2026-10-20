@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Offset, in bytes, of this member in its containing structure
 
@@ -12,7 +13,7 @@ Offset, in bytes, of this member in its containing structure
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

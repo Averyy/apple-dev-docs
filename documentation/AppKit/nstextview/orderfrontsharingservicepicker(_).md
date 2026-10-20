@@ -1,7 +1,8 @@
 # orderFrontSharingServicePicker(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and displays a new instance of the sharing service picker.
 
@@ -15,9 +16,13 @@ Creates and displays a new instance of the sharing service picker.
 func orderFrontSharingServicePicker(_ sender: Any?)
 ```
 
+```objc
+- (void) orderFrontSharingServicePicker:(id) sender;
+```
+
 #### Discussion
 
-Creates a new instance of [`NSSharingServicePicker`](nssharingservicepicker.md) based on the current selection and shows to the screen. The items passed to the [`NSSharingServicePicker`](nssharingservicepicker.md) initializer are determined using the delegate method `textView:willShowSharingServicePicker:forItems:`.
+Creates a new instance of [`NSSharingServicePicker`](../nssharingservicepicker.md) based on the current selection and shows to the screen. The items passed to the [`NSSharingServicePicker`](../nssharingservicepicker.md) initializer are determined using the delegate method `textView:willShowSharingServicePicker:forItems:`.
 
 When the current selection is 0 length, the whole document is passed to the method.
 

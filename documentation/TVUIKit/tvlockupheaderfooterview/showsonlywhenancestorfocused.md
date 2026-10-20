@@ -1,7 +1,8 @@
 # showsOnlyWhenAncestorFocused
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether titles and subtitles are displayed when a lockup view isn’t in focus.
 
@@ -12,6 +13,10 @@ A Boolean value indicating whether titles and subtitles are displayed when a loc
 
 ```swift
 var showsOnlyWhenAncestorFocused: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL showsOnlyWhenAncestorFocused;
 ```
 
 #### Discussion

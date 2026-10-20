@@ -1,7 +1,8 @@
 # SubscriptionAvailability.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAvailability.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionAvailability.Relationships.AvailableTerritories](subscriptionavailability/relationships-data.dictionary/availableterritories-data.dictionary.md)
-- [object Subscription](subscription.md)
+- [object SubscriptionAvailability.Relationships.AvailableTerritories](./relationships-data.dictionary/availableterritories-data.dictionary.md)
+- [object Subscription](../subscription.md)
   An auto-renewable subscription product offered within an app, with configurable pricing, duration, and promotional offers.
 
 ## Properties
@@ -27,7 +28,8 @@ object SubscriptionAvailability.Relationships
 
 ## See Also
 
-- [object SubscriptionAvailability.Attributes](subscriptionavailability/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionAvailability.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription availability resource.
 
 

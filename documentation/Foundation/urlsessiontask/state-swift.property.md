@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the task—active, suspended, in the process of being canceled, or completed.
 
@@ -20,20 +21,25 @@ The current state of the task—active, suspended, in the process of being cance
 var state: URLSessionTask.State { get }
 ```
 
+```objc
+@property (readonly) NSURLSessionTaskState state;
+```
+
 ## See Also
 
-- [func cancel()](urlsessiontask/cancel.md)
+### Controlling the task state
+- [func cancel()](./cancel%28%29.md)
   Cancels the task.
-- [func resume()](urlsessiontask/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes the task, if it is suspended.
-- [func suspend()](urlsessiontask/suspend.md)
+- [func suspend()](./suspend%28%29.md)
   Temporarily suspends a task.
-- [URLSessionTask.State](urlsessiontask/state-swift.enum.md)
+- [URLSessionTask.State](./state-swift.enum.md)
   Constants for determining the current state of a task.
-- [var priority: Float](urlsessiontask/priority.md)
+- [var priority: Float](./priority.md)
   The relative priority at which you’d like a host to handle the task, specified as a floating point value between `0.0` (lowest priority) and `1.0` (highest priority).
-- [URL session task priority](url-session-task-priority.md)
-  Constants for providing task priority hints to a host, used with the [`priority`](urlsessiontask/priority.md) property.
+- [URL session task priority](../url-session-task-priority.md)
+  Constants for providing task priority hints to a host, used with the [`priority`](./priority.md) property.
 
 
 ---

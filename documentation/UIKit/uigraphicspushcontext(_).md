@@ -1,16 +1,17 @@
 # UIGraphicsPushContext(_:)
 
 **Framework**: UIKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Makes the specified graphics context the current context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Makes the specified graphics context the current context.
 func UIGraphicsPushContext(_ context: CGContext)
 ```
 
+```c
+extern void UIGraphicsPushContext(CGContextRef context);
+```
+
 #### Discussion
 
-You can use this function to save the previous graphics state and make the specified context the current context. You must balance calls to this function with matching calls to the [`UIGraphicsPopContext()`](uigraphicspopcontext().md) function.
+You can use this function to save the previous graphics state and make the specified context the current context. You must balance calls to this function with matching calls to the [`UIGraphicsPopContext()`](./uigraphicspopcontext%28%29.md) function.
 
 This function may be called from any thread of your app.
 
@@ -31,11 +36,12 @@ This function may be called from any thread of your app.
 
 ## See Also
 
-- [func UIGraphicsGetCurrentContext() -> CGContext?](uigraphicsgetcurrentcontext().md)
+### Graphics context primitives
+- [func UIGraphicsGetCurrentContext() -> CGContext?](./uigraphicsgetcurrentcontext%28%29.md)
   Returns the current graphics context.
-- [func UIGraphicsPopContext()](uigraphicspopcontext().md)
+- [func UIGraphicsPopContext()](./uigraphicspopcontext%28%29.md)
   Removes the current graphics context from the top of the stack, restoring the previous context.
-- [func UIRectClip(CGRect)](uirectclip(_:).md)
+- [func UIRectClip(CGRect)](./uirectclip%28_%29.md)
   Modifies the current clipping path by intersecting it with the specified rectangle.
 
 

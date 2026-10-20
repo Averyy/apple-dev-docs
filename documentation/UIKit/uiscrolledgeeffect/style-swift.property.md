@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of this edge effect.
 
@@ -16,6 +17,10 @@ The style of this edge effect.
 
 ```swift
 var style: UIScrollEdgeEffect.Style { get set }
+```
+
+```objc
+@property (nonatomic, strong) UIScrollEdgeEffectStyle * style;
 ```
 
 

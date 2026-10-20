@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the current runtime environment supports hand-tracking providers.
 
@@ -16,9 +17,10 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [init()](handtrackingprovider/init.md)
+### Creating a hand-tracking provider
+- [init()](./init%28%29.md)
   Creates a hand-tracking provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](handtrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for tracking hands.
 
 

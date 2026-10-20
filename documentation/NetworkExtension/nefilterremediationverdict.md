@@ -1,7 +1,8 @@
 # NEFilterRemediationVerdict
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result from a filter data provider after the user requests remediation for a blocked flow.
 
@@ -17,48 +18,53 @@ The result from a filter data provider after the user requests remediation for a
 class NEFilterRemediationVerdict
 ```
 
+```objc
+@interface NEFilterRemediationVerdict : NEFilterVerdict
+```
+
 ## Topics
 
 ### Creating remediation verdicts
-- [class func allow() -> NEFilterRemediationVerdict](nefilterremediationverdict/allow.md)
+- [class func allow() -> NEFilterRemediationVerdict](./nefilterremediationverdict/allow%28%29.md)
   Create a verdict that indicates to the system that the Filter Data Provider will allow the flow to pass to its final destination when/if the flow is requested again.
-- [class func drop() -> NEFilterRemediationVerdict](nefilterremediationverdict/drop.md)
+- [class func drop() -> NEFilterRemediationVerdict](./nefilterremediationverdict/drop%28%29.md)
   Create a verdict that indicates to the system that the Filter Data Provider will continue to block the flow of network data if/when the flow is requested again.
-- [class func needRules() -> NEFilterRemediationVerdict](nefilterremediationverdict/needrules.md)
+- [class func needRules() -> NEFilterRemediationVerdict](./nefilterremediationverdict/needrules%28%29.md)
   Create a verdict that indicates to the system that the Filter Data Provider needs the filtering rules to be updated before it can make a remediation decision about the current flow of network data.
 
 ## Relationships
 
 ### Inherits From
-- [NEFilterVerdict](nefilterverdict.md)
+- [NEFilterVerdict](./nefilterverdict.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEFilterFlow](nefilterflow.md)
+### Flow handling
+- [class NEFilterFlow](./nefilterflow.md)
   The abstract base class for types that represent flows of network data.
-- [class NEFilterBrowserFlow](nefilterbrowserflow.md)
+- [class NEFilterBrowserFlow](./nefilterbrowserflow.md)
   A flow of network data, originating from a WebKit-based browser, that the filter examines.
-- [class NEFilterSocketFlow](nefiltersocketflow.md)
+- [class NEFilterSocketFlow](./nefiltersocketflow.md)
   A flow of network data that the filter examines.
-- [class NEFilterNewFlowVerdict](nefilternewflowverdict.md)
+- [class NEFilterNewFlowVerdict](./nefilternewflowverdict.md)
   The result from a filter data provder after the initial examination of a flow.
-- [class NEFilterDataVerdict](nefilterdataverdict.md)
+- [class NEFilterDataVerdict](./nefilterdataverdict.md)
   The result from a filter data provder for subsequent chunks of data on a flow.
-- [class NEFilterControlVerdict](nefiltercontrolverdict.md)
+- [class NEFilterControlVerdict](./nefiltercontrolverdict.md)
   The result from a filter control provider.
-- [class NEFilterVerdict](nefilterverdict.md)
+- [class NEFilterVerdict](./nefilterverdict.md)
   The abstract base class for filter verdict classes.
-- [class NEFilterReport](nefilterreport.md)
+- [class NEFilterReport](./nefilterreport.md)
   The report of the data provider’s action on a flow.
 
 

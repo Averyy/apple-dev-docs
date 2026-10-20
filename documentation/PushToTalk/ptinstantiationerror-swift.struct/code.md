@@ -1,7 +1,8 @@
 # PTInstantiationError.Code
 
 **Framework**: Push to Talk  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for instantiation operations.
 
@@ -16,45 +17,50 @@ Error codes for instantiation operations.
 enum Code
 ```
 
+```c
+enum PTInstantiationError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [PTInstantiationError.Code.unknown](ptinstantiationerror-swift.struct/code/unknown.md)
+- [PTInstantiationError.Code.unknown](./code/unknown.md)
   An instantiation error that indicates an unknown error.
-- [PTInstantiationError.Code.invalidPlatform](ptinstantiationerror-swift.struct/code/invalidplatform.md)
+- [PTInstantiationError.Code.invalidPlatform](./code/invalidplatform.md)
   An instantiation error that indicates the API isn’t available on the simulator or macOS devices.
-- [PTInstantiationError.Code.missingBackgroundMode](ptinstantiationerror-swift.struct/code/missingbackgroundmode.md)
+- [PTInstantiationError.Code.missingBackgroundMode](./code/missingbackgroundmode.md)
   An instantiation error that indicates the app doesn’t have the background mode in an enabled state.
-- [PTInstantiationError.Code.missingPushServerEnvironment](ptinstantiationerror-swift.struct/code/missingpushserverenvironment.md)
+- [PTInstantiationError.Code.missingPushServerEnvironment](./code/missingpushserverenvironment.md)
   An instantiation error that indicates the app doesn’t have the push notification capability in an enabled state.
-- [PTInstantiationError.Code.missingEntitlement](ptinstantiationerror-swift.struct/code/missingentitlement.md)
+- [PTInstantiationError.Code.missingEntitlement](./code/missingentitlement.md)
   An instantiation error that indicates the app is missing the entitlement.
-- [PTInstantiationError.Code.instantiationAlreadyInProgress](ptinstantiationerror-swift.struct/code/instantiationalreadyinprogress.md)
+- [PTInstantiationError.Code.instantiationAlreadyInProgress](./code/instantiationalreadyinprogress.md)
   An instantiation error that indicates there’s already an in-flight instantiation request.
 ### Initializers
-- [init?(rawValue: Int)](ptinstantiationerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PTChannelError](ptchannelerror-swift.struct.md)
+### Push to Talk errors
+- [struct PTChannelError](../ptchannelerror-swift.struct.md)
   A structure that represents a channel error.
-- [PTChannelError.Code](ptchannelerror-swift.struct/code.md)
+- [PTChannelError.Code](../ptchannelerror-swift.struct/code.md)
   Error codes for channel operations.
-- [struct PTInstantiationError](ptinstantiationerror-swift.struct.md)
+- [struct PTInstantiationError](../ptinstantiationerror-swift.struct.md)
   A structure that represents an instantiation error.
-- [let PTChannelErrorDomain: String](ptchannelerrordomain.md)
+- [let PTChannelErrorDomain: String](../ptchannelerrordomain.md)
   A string representation of the channel error domain.
-- [let PTInstantiationErrorDomain: String](ptinstantiationerrordomain.md)
+- [let PTInstantiationErrorDomain: String](../ptinstantiationerrordomain.md)
   A string representation of the instantiation error domain.
 
 

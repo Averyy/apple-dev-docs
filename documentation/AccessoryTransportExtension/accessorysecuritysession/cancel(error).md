@@ -1,7 +1,8 @@
 # cancel(error:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the security session.
 
@@ -20,7 +21,8 @@ func cancel(error: AccessorySecuritySession.Error?)
 
 ## See Also
 
-- [func sendSecurityMessage(SecurityMessage) throws(AccessorySecuritySession.Error)](accessorysecuritysession/sendsecuritymessage(_:).md)
+### Managing the session life cycle
+- [func sendSecurityMessage(SecurityMessage) throws(AccessorySecuritySession.Error)](./sendsecuritymessage%28_%29.md)
   Sends a security message to the system.
 
 

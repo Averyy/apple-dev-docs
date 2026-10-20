@@ -1,7 +1,8 @@
 # AES.GCM
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The Advanced Encryption Standard (AES) Galois Counter Mode (GCM) cipher suite.
 
@@ -23,32 +24,32 @@ enum GCM
 ## Topics
 
 ### Storing the output
-- [AES.GCM.SealedBox](aes/gcm/sealedbox.md)
+- [AES.GCM.SealedBox](./gcm/sealedbox.md)
   A secure container for your data that you can access using a cipher.
 ### Getting a nonce
-- [AES.GCM.Nonce](aes/gcm/nonce.md)
+- [AES.GCM.Nonce](./gcm/nonce.md)
   A value used once during a cryptographic operation and then discarded.
 ### Securing the plaintext message
-- [static func seal<Plaintext>(Plaintext, using: SymmetricKey, nonce: AES.GCM.Nonce?) throws -> AES.GCM.SealedBox](aes/gcm/seal(_:using:nonce:).md)
+- [static func seal<Plaintext>(Plaintext, using: SymmetricKey, nonce: AES.GCM.Nonce?) throws -> AES.GCM.SealedBox](./gcm/seal%28_,using,nonce%29.md)
   Secures the given plaintext message with encryption and an authentication tag.
-- [static func seal<Plaintext, AuthenticatedData>(Plaintext, using: SymmetricKey, nonce: AES.GCM.Nonce?, authenticating: AuthenticatedData) throws -> AES.GCM.SealedBox](aes/gcm/seal(_:using:nonce:authenticating:).md)
+- [static func seal<Plaintext, AuthenticatedData>(Plaintext, using: SymmetricKey, nonce: AES.GCM.Nonce?, authenticating: AuthenticatedData) throws -> AES.GCM.SealedBox](./gcm/seal%28_,using,nonce,authenticating%29.md)
   Secures the given plaintext message with encryption and an authentication tag that covers both the encrypted data and additional data.
 ### Decrypting and verifying the message
-- [static func open(AES.GCM.SealedBox, using: SymmetricKey) throws -> Data](aes/gcm/open(_:using:).md)
+- [static func open(AES.GCM.SealedBox, using: SymmetricKey) throws -> Data](./gcm/open%28_,using%29.md)
   Decrypts the message and verifies its authenticity.
-- [static func open<AuthenticatedData>(AES.GCM.SealedBox, using: SymmetricKey, authenticating: AuthenticatedData) throws -> Data](aes/gcm/open(_:using:authenticating:).md)
+- [static func open<AuthenticatedData>(AES.GCM.SealedBox, using: SymmetricKey, authenticating: AuthenticatedData) throws -> Data](./gcm/open%28_,using,authenticating%29.md)
   Decrypts the message and verifies the authenticity of both the encrypted message and additional data.
 ### Type Methods
-- [static func open(inPlace: inout MutableRawSpan, using: SymmetricKey, nonce: AES.GCM.Nonce, authenticating: RawSpan?, tag: RawSpan) throws](aes/gcm/open(inplace:using:nonce:authenticating:tag:).md)
+- [static func open(inPlace: inout MutableRawSpan, using: SymmetricKey, nonce: AES.GCM.Nonce, authenticating: RawSpan?, tag: RawSpan) throws](./gcm/open%28inplace,using,nonce,authenticating,tag%29.md)
   Decrypts the message and verifies its authenticity.
-- [static func seal(inPlace: inout MutableRawSpan, using: SymmetricKey, nonce: AES.GCM.Nonce, authenticating: RawSpan?, tag: inout OutputRawSpan) throws](aes/gcm/seal(inplace:using:nonce:authenticating:tag:).md)
+- [static func seal(inPlace: inout MutableRawSpan, using: SymmetricKey, nonce: AES.GCM.Nonce, authenticating: RawSpan?, tag: inout OutputRawSpan) throws](./gcm/seal%28inplace,using,nonce,authenticating,tag%29.md)
   Secures the given plaintext message with encryption and an optional authentication tag.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

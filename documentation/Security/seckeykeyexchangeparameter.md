@@ -1,7 +1,8 @@
 # SecKeyKeyExchangeParameter
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The dictionary keys used to specify Diffie-Hellman key exchange parameters.
 
@@ -20,26 +21,30 @@ The dictionary keys used to specify Diffie-Hellman key exchange parameters.
 struct SecKeyKeyExchangeParameter
 ```
 
+```c
+typedef CFStringRef SecKeyKeyExchangeParameter;
+```
+
 #### Discussion
 
-Use these constants as keys in the dictionary that you input to the [`SecKeyCopyKeyExchangeResult(_:_:_:_:_:)`](seckeycopykeyexchangeresult(_:_:_:_:_:).md) function as a means to refine the process of Diffie-Hellman key exchange.
+Use these constants as keys in the dictionary that you input to the [`SecKeyCopyKeyExchangeResult(_:_:_:_:_:)`](./seckeycopykeyexchangeresult%28_,_,_,_,_%29.md) function as a means to refine the process of Diffie-Hellman key exchange.
 
 ## Topics
 
 ### Type Properties
-- [static let requestedSize: SecKeyKeyExchangeParameter](seckeykeyexchangeparameter/requestedsize.md)
-- [static let sharedInfo: SecKeyKeyExchangeParameter](seckeykeyexchangeparameter/sharedinfo.md)
+- [static let requestedSize: SecKeyKeyExchangeParameter](./seckeykeyexchangeparameter/requestedsize.md)
+- [static let sharedInfo: SecKeyKeyExchangeParameter](./seckeykeyexchangeparameter/sharedinfo.md)
 ### Initializers
-- [init(rawValue: CFString)](seckeykeyexchangeparameter/init(rawvalue:).md)
+- [init(rawValue: CFString)](./seckeykeyexchangeparameter/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # filter(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new dictionary containing the key-value pairs of the dictionary that satisfy the given predicate.
 
@@ -21,6 +22,8 @@ Returns a new dictionary containing the key-value pairs of the dictionary that s
 consuming func filter<E>(_ isIncluded: (Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value] where E : Error
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Return Value
 
 A dictionary of the key-value pairs that `isIncluded` allows.
@@ -31,11 +34,12 @@ A dictionary of the key-value pairs that `isIncluded` allows.
 
 ## See Also
 
-- [func removeValue(forKey: Key) -> Value?](dictionary/removevalue(forkey:).md)
+### Removing Keys and Values
+- [func removeValue(forKey: Key) -> Value?](./removevalue%28forkey%29.md)
   Removes the given key and its associated value from the dictionary.
-- [func remove(at: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](dictionary/remove(at:).md)
+- [func remove(at: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](./remove%28at%29.md)
   Removes and returns the key-value pair at the specified index.
-- [func removeAll(keepingCapacity: Bool)](dictionary/removeall(keepingcapacity:).md)
+- [func removeAll(keepingCapacity: Bool)](./removeall%28keepingcapacity%29.md)
   Removes all key-value pairs from the dictionary.
 
 

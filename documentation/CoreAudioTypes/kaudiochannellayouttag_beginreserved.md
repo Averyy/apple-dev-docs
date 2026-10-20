@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_BeginReserved
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The beginning value for a reserved range of layout tags.
 
@@ -20,13 +21,18 @@ The beginning value for a reserved range of layout tags.
 var kAudioChannelLayoutTag_BeginReserved: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_BeginReserved
+```
+
 #### Discussion
 
-The values in the range between `kAudioChannelLayoutTag_BeginReserved` and [`kAudioChannelLayoutTag_EndReserved`](kaudiochannellayouttag_endreserved.md) are for future Apple use. Do not create layout tags that fall in the range created by these values.
+The values in the range between `kAudioChannelLayoutTag_BeginReserved` and [`kAudioChannelLayoutTag_EndReserved`](./kaudiochannellayouttag_endreserved.md) are for future Apple use. Do not create layout tags that fall in the range created by these values.
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_EndReserved: AudioChannelLayoutTag](kaudiochannellayouttag_endreserved.md)
+### Reserved Tag Range
+- [var kAudioChannelLayoutTag_EndReserved: AudioChannelLayoutTag](./kaudiochannellayouttag_endreserved.md)
   The ending value for a reserved range of layout tags.
 
 

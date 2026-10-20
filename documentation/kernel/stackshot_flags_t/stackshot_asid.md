@@ -1,14 +1,15 @@
 # STACKSHOT_ASID
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_ASID
 ```
 

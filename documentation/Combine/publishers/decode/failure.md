@@ -1,7 +1,8 @@
 # Publishers.Decode.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -22,11 +23,12 @@ typealias Failure = Error
 
 #### Discussion
 
-This publisher produces the Swift [`Error`](https://developer.apple.com/documentation/swift/error) type.
+This publisher produces the Swift [`Error`](../../../Swift/error.md) type.
 
 ## See Also
 
-- [Publishers.Output](publishers/output.md)
+### Declaring supporting types
+- [Publishers.Output](../output.md)
   A publisher that publishes elements specified by a range in the sequence of published elements.
 
 

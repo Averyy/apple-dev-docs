@@ -1,7 +1,8 @@
 # recordName
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique name used to identify the record. The default value is a random UUID.
 
@@ -10,7 +11,7 @@ The unique name used to identify the record. The default value is a random UUID.
 
 ## Declaration
 
-```swift
+```
 attribute String recordName;
 ```
 

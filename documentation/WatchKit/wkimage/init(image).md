@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an image object using the specified UIKit image.
 
@@ -12,6 +13,10 @@ Creates and returns an image object using the specified UIKit image.
 
 ```swift
 convenience init(image: UIImage)
+```
+
+```objc
++ (instancetype) imageWithImage:(UIImage *) image;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ Use this method when you already have a UIKit image object and want to use it in
 
 ## See Also
 
-- [convenience init(imageData: Data)](wkimage/init(imagedata:).md)
+### Creating Image Objects
+- [convenience init(imageData: Data)](./init%28imagedata%29.md)
   Creates an image with the specified raw image data.
-- [convenience init(imageName: String)](wkimage/init(imagename:).md)
+- [convenience init(imageName: String)](./init%28imagename%29.md)
   Creates an image by loading an image file from the Watch app bundle.
 
 

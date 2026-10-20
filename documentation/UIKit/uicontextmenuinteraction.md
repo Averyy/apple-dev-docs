@@ -1,7 +1,8 @@
 # UIContextMenuInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction object that you use to display relevant actions for your content.
 
@@ -19,69 +20,74 @@ An interaction object that you use to display relevant actions for your content.
 class UIContextMenuInteraction
 ```
 
+```objc
+@interface UIContextMenuInteraction : NSObject
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 
 #### Overview
 
-Use a [`UIContextMenuInteraction`](uicontextmenuinteraction.md) object to focus the user’s attention on a specific portion of your content, and to provide actions for the user to perform on that content. A context menu interaction object tracks Force Touch gestures on devices that support 3D Touch, and long-press gestures on devices that don’t support it. When the appropriate gesture occurs, this object animates your content to a new interface and displays the contextual menu that you supplied. UIKit manages all menu-related interactions and reports the selected action, if any, back to your app.
+Use a [`UIContextMenuInteraction`](./uicontextmenuinteraction.md) object to focus the user’s attention on a specific portion of your content, and to provide actions for the user to perform on that content. A context menu interaction object tracks Force Touch gestures on devices that support 3D Touch, and long-press gestures on devices that don’t support it. When the appropriate gesture occurs, this object animates your content to a new interface and displays the contextual menu that you supplied. UIKit manages all menu-related interactions and reports the selected action, if any, back to your app.
 
-A context menu interaction object inherits from [`UIInteraction`](uiinteraction.md). After creating the object, assign an appropriate object to its [`delegate`](uicontextmenuinteraction/delegate.md) property and use the [`addInteraction(_:)`](uiview/addinteraction(_:).md) method to attach it to one of your views. The delegate object you provide must adopt the [`UIContextMenuInteractionDelegate`](uicontextmenuinteractiondelegate.md) protocol. Use the methods of that object to provide the contents of the contextual menu. Add your context menu interaction object to a view in your interface using the view’s [`addInteraction(_:)`](uiview/addinteraction(_:).md) method.
+A context menu interaction object inherits from [`UIInteraction`](./uiinteraction.md). After creating the object, assign an appropriate object to its [`delegate`](./uicontextmenuinteraction/delegate.md) property and use the [`addInteraction(_:)`](./uiview/addinteraction%28_%29.md) method to attach it to one of your views. The delegate object you provide must adopt the [`UIContextMenuInteractionDelegate`](./uicontextmenuinteractiondelegate.md) protocol. Use the methods of that object to provide the contents of the contextual menu. Add your context menu interaction object to a view in your interface using the view’s [`addInteraction(_:)`](./uiview/addinteraction%28_%29.md) method.
 
 ## Topics
 
 ### Creating a context menu interaction object
-- [init(delegate: any UIContextMenuInteractionDelegate)](uicontextmenuinteraction/init(delegate:).md)
+- [init(delegate: any UIContextMenuInteractionDelegate)](./uicontextmenuinteraction/init%28delegate%29.md)
   Creates a context menu interaction object with the specified delegate object.
-- [Adding context menus in your app](adding-context-menus-in-your-app.md)
+- [Adding context menus in your app](./adding-context-menus-in-your-app.md)
   Provide quick access to useful actions by adding context menus to your iOS app.
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+- [Adding menus and shortcuts to the menu bar and user interface](./adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
 ### Previewing and managing the content
-- [var delegate: (any UIContextMenuInteractionDelegate)?](uicontextmenuinteraction/delegate.md)
+- [var delegate: (any UIContextMenuInteractionDelegate)?](./uicontextmenuinteraction/delegate.md)
   The object that provides the preview and contextual menu for your content and responds to interaction-related events.
-- [protocol UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)
+- [protocol UIContextMenuInteractionDelegate](./uicontextmenuinteractiondelegate.md)
   The methods for providing the set of actions to perform on your content, and for customizing the preview of that content.
 ### Getting the interaction’s location
-- [func location(in: UIView?) -> CGPoint](uicontextmenuinteraction/location(in:).md)
+- [func location(in: UIView?) -> CGPoint](./uicontextmenuinteraction/location%28in%29.md)
   Returns the location of the user interaction in the specified view’s coordinate system.
 ### Getting the menu appearance
-- [var menuAppearance: UIContextMenuInteraction.appearance](uicontextmenuinteraction/menuappearance.md)
+- [var menuAppearance: UIContextMenuInteraction.appearance](./uicontextmenuinteraction/menuappearance.md)
   The appearance of the context menu.
-- [UIContextMenuInteraction.appearance](uicontextmenuinteraction/appearance.md)
+- [UIContextMenuInteraction.appearance](./uicontextmenuinteraction/appearance.md)
   Constants that describe the appearance of the menu.
 ### Managing menu interactions
-- [func dismissMenu()](uicontextmenuinteraction/dismissmenu.md)
+- [func dismissMenu()](./uicontextmenuinteraction/dismissmenu%28%29.md)
   Dismisses the context menu.
-- [func updateVisibleMenu((UIMenu) -> UIMenu)](uicontextmenuinteraction/updatevisiblemenu(_:).md)
+- [func updateVisibleMenu((UIMenu) -> UIMenu)](./uicontextmenuinteraction/updatevisiblemenu%28_%29.md)
   Updates the currently visible menu.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [class UIContextMenuSystem](uicontextmenusystem.md)
+### Contextual menus
+- [class UIContextMenuSystem](./uicontextmenusystem.md)
   The context menu system.
-- [protocol UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)
+- [protocol UIContextMenuInteractionDelegate](./uicontextmenuinteractiondelegate.md)
   The methods for providing the set of actions to perform on your content, and for customizing the preview of that content.
-- [class UITargetedPreview](uitargetedpreview.md)
+- [class UITargetedPreview](./uitargetedpreview.md)
   An object describing the view to use during preview-related animations.
-- [class UIPreviewTarget](uipreviewtarget.md)
+- [class UIPreviewTarget](./uipreviewtarget.md)
   An object that specifies the container view to use for animations.
-- [class UIPreviewParameters](uipreviewparameters.md)
+- [class UIPreviewParameters](./uipreviewparameters.md)
   Additional parameters to use when animating a preview interface.
 
 

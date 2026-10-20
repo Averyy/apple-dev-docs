@@ -111,9 +111,8 @@
       "hash": "25c1f4b8a44240d42f5e707e45bf5ea53e71a354c375ecb18c86e681273fa34c"
     },
     "https://developer.apple.com/documentation/system/errno/!=(_:_:)": {
-      "etag": "W/\"776e2f3a58aeedf56fb80a03c05b4d44\"",
       "file_path": "documentation/System/errno/noteq(_,_).md",
-      "hash": "bfa815ed14ecba754b40e5bb3918860d66baeb6eb38b88629dcc92e44b2c8d9c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/system/errno/addressfamilynotsupported": {
       "etag": "\"1e72-65d55ee79fb94-df\"",
@@ -2346,9 +2345,8 @@
       "hash": "25c1f4b8a44240d42f5e707e45bf5ea53e71a354c375ecb18c86e681273fa34c"
     },
     "https://developer.apple.com/tutorials/data/documentation/system/errno/!=(_:_:).json": {
-      "etag": "W/\"776e2f3a58aeedf56fb80a03c05b4d44\"",
       "file_path": "documentation/System/errno/noteq(_,_).md",
-      "hash": "bfa815ed14ecba754b40e5bb3918860d66baeb6eb38b88629dcc92e44b2c8d9c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/system/errno/addressfamilynotsupported.json": {
       "etag": "\"1e72-65d55ee79fb94-df\"",
@@ -4492,6 +4490,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 899
   }
 }

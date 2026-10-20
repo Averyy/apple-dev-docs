@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The required byte alignment in memory for the element data.
 
@@ -19,15 +20,20 @@ The required byte alignment in memory for the element data.
 var alignment: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger alignment;
+```
+
 ## See Also
 
-- [var dataSize: Int](mtlpointertype/datasize.md)
+### Describing the pointer elements
+- [var dataSize: Int](./datasize.md)
   The size, in bytes, of the element data.
-- [var elementType: MTLDataType](mtlpointertype/elementtype.md)
+- [var elementType: MTLDataType](./elementtype.md)
   The data type of the element data.
-- [var access: MTLBindingAccess](mtlpointertype/access.md)
+- [var access: MTLBindingAccess](./access.md)
   The function’s read/write access to the element data.
-- [var elementIsArgumentBuffer: Bool](mtlpointertype/elementisargumentbuffer.md)
+- [var elementIsArgumentBuffer: Bool](./elementisargumentbuffer.md)
   A Boolean value that indicates whether the element is an argument buffer.
 
 

@@ -1,7 +1,8 @@
 # MTLDataType.char2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 8-bit, signed integer values.
 
@@ -10,7 +11,7 @@ A two-component vector with 8-bit, signed integer values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A two-component vector with 8-bit, signed integer values.
 case char2
 ```
 
+```c
+MTLDataTypeChar2
+```
+
 ## See Also
 
-- [MTLDataType.char](mtldatatype/char.md)
+### 8-bit integer types
+- [MTLDataType.char](./char.md)
   An 8-bit, signed integer value.
-- [MTLDataType.char3](mtldatatype/char3.md)
+- [MTLDataType.char3](./char3.md)
   A three-component vector with 8-bit, signed integer values.
-- [MTLDataType.char4](mtldatatype/char4.md)
+- [MTLDataType.char4](./char4.md)
   A four-component vector with 8-bit, signed integer values.
-- [MTLDataType.uchar](mtldatatype/uchar.md)
+- [MTLDataType.uchar](./uchar.md)
   An 8-bit, unsigned integer value.
-- [MTLDataType.uchar2](mtldatatype/uchar2.md)
+- [MTLDataType.uchar2](./uchar2.md)
   A two-component vector with 8-bit, unsigned integer values.
-- [MTLDataType.uchar3](mtldatatype/uchar3.md)
+- [MTLDataType.uchar3](./uchar3.md)
   A three-component vector with 8-bit, unsigned integer values.
-- [MTLDataType.uchar4](mtldatatype/uchar4.md)
+- [MTLDataType.uchar4](./uchar4.md)
   A four-component vector with 8-bit, unsigned integer values.
 
 

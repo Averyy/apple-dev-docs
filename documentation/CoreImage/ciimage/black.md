@@ -1,7 +1,8 @@
 # black
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -17,19 +18,24 @@
 class var black: CIImage { get }
 ```
 
+```objc
+@property (class, strong, readonly) CIImage * blackImage;
+```
+
 ## See Also
 
-- [init(color: CIColor)](ciimage/init(color:).md)
+### Creating Solid Colors
+- [init(color: CIColor)](./init%28color%29.md)
   Initializes an image of infinite extent whose entire content is the specified color.
-- [class var blue: CIImage](ciimage/blue.md)
-- [class var clear: CIImage](ciimage/clear.md)
-- [class var cyan: CIImage](ciimage/cyan.md)
-- [class var gray: CIImage](ciimage/gray.md)
-- [class var green: CIImage](ciimage/green.md)
-- [class var magenta: CIImage](ciimage/magenta.md)
-- [class var red: CIImage](ciimage/red.md)
-- [class var white: CIImage](ciimage/white.md)
-- [class var yellow: CIImage](ciimage/yellow.md)
+- [class var blue: CIImage](./blue.md)
+- [class var clear: CIImage](./clear.md)
+- [class var cyan: CIImage](./cyan.md)
+- [class var gray: CIImage](./gray.md)
+- [class var green: CIImage](./green.md)
+- [class var magenta: CIImage](./magenta.md)
+- [class var red: CIImage](./red.md)
+- [class var white: CIImage](./white.md)
+- [class var yellow: CIImage](./yellow.md)
 
 
 ---

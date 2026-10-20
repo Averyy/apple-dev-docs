@@ -1,7 +1,8 @@
 # NSErrorDomain
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -18,10 +19,15 @@
 typealias NSErrorDomain = NSString
 ```
 
+```c
+typedef NSString * NSErrorDomain;
+```
+
 ## See Also
 
-- [typealias ErrorPointer](errorpointer.md)
-- [typealias NSErrorPointer](nserrorpointer.md)
+### Supporting Types
+- [typealias ErrorPointer](./errorpointer.md)
+- [typealias NSErrorPointer](./nserrorpointer.md)
 
 
 ---

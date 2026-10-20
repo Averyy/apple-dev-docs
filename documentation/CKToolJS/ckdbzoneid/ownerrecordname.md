@@ -1,7 +1,8 @@
 # ownerRecordName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The owner of the zone.
 
@@ -10,7 +11,7 @@ The owner of the zone.
 
 ## Declaration
 
-```swift
+```
 attribute string? ownerRecordName;
 ```
 

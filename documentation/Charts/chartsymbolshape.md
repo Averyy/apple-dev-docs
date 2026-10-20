@@ -1,7 +1,8 @@
 # ChartSymbolShape
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can act as a shape for the marks that you add to a chart.
 
@@ -23,52 +24,53 @@ protocol ChartSymbolShape : Shape
 ## Topics
 
 ### Instance Properties
-- [var perceptualUnitRect: CGRect](chartsymbolshape/perceptualunitrect.md)
+- [var perceptualUnitRect: CGRect](./chartsymbolshape/perceptualunitrect.md)
   Returns a rectangle that bounds the shape in such a way that viewers perceive it as having the same size and position as a unit rectangle.
 ### Instance Methods
-- [func strokeBorder(lineWidth: CGFloat) -> some ChartSymbolShape](chartsymbolshape/strokeborder(linewidth:).md)
-- [func strokeBorder(style: StrokeStyle) -> some ChartSymbolShape](chartsymbolshape/strokeborder(style:).md)
+- [func strokeBorder(lineWidth: CGFloat) -> some ChartSymbolShape](./chartsymbolshape/strokeborder%28linewidth%29.md)
+- [func strokeBorder(style: StrokeStyle) -> some ChartSymbolShape](./chartsymbolshape/strokeborder%28style%29.md)
 ### Type Properties
-- [static var asterisk: BasicChartSymbolShape](chartsymbolshape/asterisk.md)
+- [static var asterisk: BasicChartSymbolShape](./chartsymbolshape/asterisk.md)
   Asterisk symbol.
-- [static var circle: BasicChartSymbolShape](chartsymbolshape/circle.md)
+- [static var circle: BasicChartSymbolShape](./chartsymbolshape/circle.md)
   Circle symbol.
-- [static var cross: BasicChartSymbolShape](chartsymbolshape/cross.md)
+- [static var cross: BasicChartSymbolShape](./chartsymbolshape/cross.md)
   Cross symbol.
-- [static var diamond: BasicChartSymbolShape](chartsymbolshape/diamond.md)
+- [static var diamond: BasicChartSymbolShape](./chartsymbolshape/diamond.md)
   Diamond symbol.
-- [static var pentagon: BasicChartSymbolShape](chartsymbolshape/pentagon.md)
+- [static var pentagon: BasicChartSymbolShape](./chartsymbolshape/pentagon.md)
   Pentagon symbol.
-- [static var plus: BasicChartSymbolShape](chartsymbolshape/plus.md)
+- [static var plus: BasicChartSymbolShape](./chartsymbolshape/plus.md)
   Plus symbol.
-- [static var square: BasicChartSymbolShape](chartsymbolshape/square.md)
+- [static var square: BasicChartSymbolShape](./chartsymbolshape/square.md)
   Square symbol.
-- [static var triangle: BasicChartSymbolShape](chartsymbolshape/triangle.md)
+- [static var triangle: BasicChartSymbolShape](./chartsymbolshape/triangle.md)
   Triangle symbol.
 
 ## Relationships
 
 ### Inherits From
-- [Animatable](../swiftui/animatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](../swiftui/shape.md)
-- [View](../swiftui/view.md)
+- [Animatable](../SwiftUI/animatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](../SwiftUI/shape.md)
+- [View](../SwiftUI/view.md)
 ### Conforming Types
-- [AnyChartSymbolShape](anychartsymbolshape.md)
-- [BasicChartSymbolShape](basicchartsymbolshape.md)
+- [AnyChartSymbolShape](./anychartsymbolshape.md)
+- [BasicChartSymbolShape](./basicchartsymbolshape.md)
 
 ## See Also
 
-- [struct MarkStackingMethod](markstackingmethod.md)
+### Mark configuration
+- [struct MarkStackingMethod](./markstackingmethod.md)
   The ways in which you can stack marks in a chart.
-- [struct MarkDimension](markdimension.md)
+- [struct MarkDimension](./markdimension.md)
   An individual dimension representing a mark’s width or height.
-- [struct InterpolationMethod](interpolationmethod.md)
+- [struct InterpolationMethod](./interpolationmethod.md)
   The ways in which line or area marks interpolate their data.
-- [struct BasicChartSymbolShape](basicchartsymbolshape.md)
+- [struct BasicChartSymbolShape](./basicchartsymbolshape.md)
   A basic chart symbol shape.
-- [struct AnyChartSymbolShape](anychartsymbolshape.md)
+- [struct AnyChartSymbolShape](./anychartsymbolshape.md)
   A type-erased plotting shape.
 
 

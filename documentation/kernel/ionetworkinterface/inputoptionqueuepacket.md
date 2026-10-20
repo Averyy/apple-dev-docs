@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum {
    kInputOptionQueuePacket = 0x1
 };
@@ -18,7 +18,7 @@ Options for `inputPacket()`.
 ## Topics
 
 ### Constants
-- [kInputOptionQueuePacket](ionetworkinterface/inputoptionqueuepacket/kinputoptionqueuepacket.md)
+- [kInputOptionQueuePacket](./inputoptionqueuepacket/kinputoptionqueuepacket.md)
 
 
 ---

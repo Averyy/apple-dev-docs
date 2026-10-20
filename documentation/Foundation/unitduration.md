@@ -1,7 +1,8 @@
 # UnitDuration
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for a duration of time.
 
@@ -20,69 +21,74 @@ A unit of measure for a duration of time.
 class UnitDuration
 ```
 
+```objc
+@interface NSUnitDuration : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitDuration`](unitduration.md) to represent specific quantities of planar angle using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitDuration`](./unitduration.md) to represent specific quantities of planar angle using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Duration
 
 Duration is a quantity of time. The SI unit for time is the second (sec), which is defined in terms of the radioactivity of a cesium-133 atom. Duration is also commonly expressed in terms of minutes (min) and hours (hr).
 
-> **Note**:  Use the [`NSDateComponents`](nsdatecomponents.md) class to represent quantities of calendrical units, such as days, weeks, months, and years.
+> **Note**:  Use the [`NSDateComponents`](./nsdatecomponents.md) class to represent quantities of calendrical units, such as days, weeks, months, and years.
 
-The [`UnitDuration`](unitduration.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`seconds`](unitduration/seconds.md), and provides the following units, which [`UnitConverterLinear`](unitconverterlinear.md) converters initialize with the given coefficients:
+The [`UnitDuration`](./unitduration.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`seconds`](./unitduration/seconds.md), and provides the following units, which [`UnitConverterLinear`](./unitconverterlinear.md) converters initialize with the given coefficients:
 
 | Name | Method | Symbol | Coefficient |
 | --- | --- | --- | --- |
-| Seconds | [`seconds`](unitduration/seconds.md) | sec | `1` |
-| Minutes | [`minutes`](unitduration/minutes.md) | min | `60` |
-| Hours | [`hours`](unitduration/hours.md) | hr | `3600` |
+| Seconds | [`seconds`](./unitduration/seconds.md) | sec | `1` |
+| Minutes | [`minutes`](./unitduration/minutes.md) | min | `60` |
+| Hours | [`hours`](./unitduration/hours.md) | hr | `3600` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var hours: UnitDuration](unitduration/hours.md)
+- [class var hours: UnitDuration](./unitduration/hours.md)
   The hour unit of duration.
-- [class var minutes: UnitDuration](unitduration/minutes.md)
+- [class var minutes: UnitDuration](./unitduration/minutes.md)
   The minute unit of duration.
-- [class var seconds: UnitDuration](unitduration/seconds.md)
+- [class var seconds: UnitDuration](./unitduration/seconds.md)
   The second unit of duration.
-- [class var milliseconds: UnitDuration](unitduration/milliseconds.md)
+- [class var milliseconds: UnitDuration](./unitduration/milliseconds.md)
   The millisecond unit of duration.
-- [class var microseconds: UnitDuration](unitduration/microseconds.md)
+- [class var microseconds: UnitDuration](./unitduration/microseconds.md)
   The microsecond unit of duration.
-- [class var nanoseconds: UnitDuration](unitduration/nanoseconds.md)
+- [class var nanoseconds: UnitDuration](./unitduration/nanoseconds.md)
   The nanosecond unit of duration.
-- [class var picoseconds: UnitDuration](unitduration/picoseconds.md)
+- [class var picoseconds: UnitDuration](./unitduration/picoseconds.md)
   The picosecond unit of duration.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitAcceleration](unitacceleration.md)
+### Time and Motion
+- [class UnitAcceleration](./unitacceleration.md)
   A unit of measure for acceleration.
-- [class UnitFrequency](unitfrequency.md)
+- [class UnitFrequency](./unitfrequency.md)
   A unit of measure for frequency.
-- [class UnitSpeed](unitspeed.md)
+- [class UnitSpeed](./unitspeed.md)
   A unit of measure for speed.
 
 

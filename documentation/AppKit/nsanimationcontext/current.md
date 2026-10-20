@@ -1,7 +1,8 @@
 # current
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the current animation context.
 
@@ -12,6 +13,10 @@ Returns the current animation context.
 
 ```swift
 class var current: NSAnimationContext { get }
+```
+
+```objc
+@property (class, strong, readonly) NSAnimationContext * currentContext;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # backBarButtonItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bar button item for adding a Back button to the navigation bar.
 
@@ -17,27 +18,33 @@ The bar button item for adding a Back button to the navigation bar.
 var backBarButtonItem: UIBarButtonItem? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) UIBarButtonItem * backBarButtonItem;
+```
+
 #### Discussion
 
-When this navigation item is immediately below the top item in the stack, the navigation controller derives the Back button for the navigation bar from this navigation item. If you want to specify a custom title or image for the Back button, you can assign a custom bar button item (with your custom title or image) to this property. When you configure your bar button item, don’t assign a custom view to it; the navigation item ignores custom views in the [`backBarButtonItem`](uinavigationitem/backbarbuttonitem.md).
+When this navigation item is immediately below the top item in the stack, the navigation controller derives the Back button for the navigation bar from this navigation item. If you want to specify a custom title or image for the Back button, you can assign a custom bar button item (with your custom title or image) to this property. When you configure your bar button item, don’t assign a custom view to it; the navigation item ignores custom views in the [`backBarButtonItem`](./backbarbuttonitem.md).
 
-When this property is `nil`, the navigation item determines the title of its Back button according to its [`backButtonDisplayMode`](uinavigationitem/backbuttondisplaymode-swift.property.md). The default value of this property is `nil`.
+When this property is `nil`, the navigation item determines the title of its Back button according to its [`backButtonDisplayMode`](./backbuttondisplaymode-swift.property.md). The default value of this property is `nil`.
 
 ## See Also
 
-- [var backItem: UINavigationItem?](uinavigationbar/backitem.md)
+### Related Documentation
+- [var backItem: UINavigationItem?](../uinavigationbar/backitem.md)
   The navigation item that is immediately below the topmost item on a navigation bar’s stack.
-- [var backButtonTitle: String?](uinavigationitem/backbuttontitle.md)
+### Configuring the Back button
+- [var backButtonTitle: String?](./backbuttontitle.md)
   The custom title of the Back button.
-- [var backButtonDisplayMode: UINavigationItem.BackButtonDisplayMode](uinavigationitem/backbuttondisplaymode-swift.property.md)
+- [var backButtonDisplayMode: UINavigationItem.BackButtonDisplayMode](./backbuttondisplaymode-swift.property.md)
   The display mode of the Back button.
-- [UINavigationItem.BackButtonDisplayMode](uinavigationitem/backbuttondisplaymode-swift.enum.md)
+- [UINavigationItem.BackButtonDisplayMode](./backbuttondisplaymode-swift.enum.md)
   Constants that describe the display modes of the Back button.
-- [var hidesBackButton: Bool](uinavigationitem/hidesbackbutton.md)
+- [var hidesBackButton: Bool](./hidesbackbutton.md)
   A Boolean value that determines whether the navigation item hides the Back button.
-- [func setHidesBackButton(Bool, animated: Bool)](uinavigationitem/sethidesbackbutton(_:animated:).md)
+- [func setHidesBackButton(Bool, animated: Bool)](./sethidesbackbutton%28_,animated%29.md)
   Hides or shows the Back button, optionally animating the transition.
-- [var backAction: UIAction?](uinavigationitem/backaction.md)
+- [var backAction: UIAction?](./backaction.md)
   The back action for the navigation bar.
 
 

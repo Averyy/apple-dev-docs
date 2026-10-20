@@ -1,7 +1,8 @@
 # kSecAttrProtocolIMAP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 IMAP  protocol.
 
@@ -18,6 +19,10 @@ IMAP  protocol.
 
 ```swift
 let kSecAttrProtocolIMAP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolIMAP;
 ```
 
 

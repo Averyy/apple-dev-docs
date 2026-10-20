@@ -1,7 +1,8 @@
 # LibraryPlaylistFolders.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents the attributes for a library playlist folder.
 
@@ -10,7 +11,7 @@ A resource object that represents the attributes for a library playlist folder.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistFolders.Attributes
 ```
 
@@ -21,7 +22,8 @@ object LibraryPlaylistFolders.Attributes
 
 ## See Also
 
-- [object LibraryPlaylistFolders.Relationships](libraryplaylistfolders/relationships-data.dictionary.md)
+### Related Objects
+- [object LibraryPlaylistFolders.Relationships](./relationships-data.dictionary.md)
   A resource Object that represents the relationships for a library playlist folder.
 
 

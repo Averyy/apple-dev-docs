@@ -1,7 +1,8 @@
 # HMServiceTypeLightSensor
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A light sensor service.
 
@@ -19,9 +20,14 @@ A light sensor service.
 let HMServiceTypeLightSensor: String
 ```
 
+```c
+extern NSString * const HMServiceTypeLightSensor;
+```
+
 ## See Also
 
-- [let HMServiceTypeLightbulb: String](hmservicetypelightbulb.md)
+### Light
+- [let HMServiceTypeLightbulb: String](./hmservicetypelightbulb.md)
   A light bulb service.
 
 

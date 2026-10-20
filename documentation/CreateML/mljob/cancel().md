@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the training session’s execution.
 
@@ -21,7 +22,8 @@ final func cancel()
 
 ## See Also
 
-- [var isCanceled: Bool](mljob/iscanceled.md)
+### Managing a job
+- [var isCanceled: Bool](./iscanceled.md)
   A Boolean value that indicates whether you canceled the job.
 
 

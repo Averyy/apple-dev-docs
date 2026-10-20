@@ -1,7 +1,8 @@
 # person
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A format usage of a temperature measurement for displaying a temperature as it relates to people.
 
@@ -20,9 +21,12 @@ A format usage of a temperature measurement for displaying a temperature as it r
 static var person: MeasurementFormatUnitUsage<UnitTemperature> { get }
 ```
 
+Available when `UnitType` is `UnitTemperature`.
+
 ## See Also
 
-- [static var weather: MeasurementFormatUnitUsage<UnitTemperature>](measurementformatunitusage/weather.md)
+### Selecting a Format for a Temperature Measurement
+- [static var weather: MeasurementFormatUnitUsage<UnitTemperature>](./weather.md)
   A usage of a temperature measurement related to the weather.
 
 

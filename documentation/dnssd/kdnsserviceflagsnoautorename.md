@@ -1,7 +1,8 @@
 # kDNSServiceFlagsNoAutoRename
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceFlagsNoAutoRename: UInt32 { get }
+```
+
+```c
+kDNSServiceFlagsNoAutoRename
 ```
 
 #### Discussion

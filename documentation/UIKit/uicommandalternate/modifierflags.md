@@ -1,7 +1,8 @@
 # modifierFlags
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bit mask of modifier keys that the user must press to invoke the action for the alternative command.
 
@@ -18,11 +19,16 @@ The bit mask of modifier keys that the user must press to invoke the action for 
 var modifierFlags: UIKeyModifierFlags { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIKeyModifierFlags modifierFlags;
+```
+
 ## See Also
 
-- [var title: String](uicommandalternate/title.md)
+### Getting information about the alternative
+- [var title: String](./title.md)
   The command alternative’s title.
-- [var action: Selector](uicommandalternate/action.md)
+- [var action: Selector](./action.md)
   The command alternative’s action-method selector.
 
 

@@ -1,7 +1,8 @@
 # keyboardShortcut(_:modifiers:localization:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a keyboard shortcut for opening new scene windows.
 
@@ -38,7 +39,7 @@ Provide a `localization` value to specify how this shortcut should be localized.
 
 Given that `key` is always defined in relation to the US-English keyboard layout, it might be hard to reach on different international layouts. For example the shortcut `⌘[` works well for the US layout but is hard to reach for German users, where `[` is available by pressing `⌥5`, making users type `⌥⌘5`. The automatic keyboard shortcut remapping re-assigns the shortcut to an appropriate replacement, `⌘Ö` in this case.
 
-Providing the option [`custom`](keyboardshortcut/localization-swift.struct/custom.md) disables the automatic localization for this shortcut to tell the system that internationalization is taken care of in a different way.
+Providing the option [`custom`](../keyboardshortcut/localization-swift.struct/custom.md) disables the automatic localization for this shortcut to tell the system that internationalization is taken care of in a different way.
 
 ## Parameters
 
@@ -48,13 +49,14 @@ Providing the option [`custom`](keyboardshortcut/localization-swift.struct/custo
 
 ## See Also
 
-- [func commands<Content>(content: () -> Content) -> some Scene](scene/commands(content:).md)
+### Setting commands
+- [func commands<Content>(content: () -> Content) -> some Scene](./commands%28content%29.md)
   Adds commands to the scene.
-- [func commandsRemoved() -> some Scene](scene/commandsremoved.md)
+- [func commandsRemoved() -> some Scene](./commandsremoved%28%29.md)
   Removes all commands defined by the modified scene.
-- [func commandsReplaced<Content>(content: () -> Content) -> some Scene](scene/commandsreplaced(content:).md)
+- [func commandsReplaced<Content>(content: () -> Content) -> some Scene](./commandsreplaced%28content%29.md)
   Replaces all commands defined by the modified scene with the commands from the builder.
-- [func keyboardShortcut(KeyboardShortcut?) -> some Scene](scene/keyboardshortcut(_:).md)
+- [func keyboardShortcut(KeyboardShortcut?) -> some Scene](./keyboardshortcut%28_%29.md)
   Defines a keyboard shortcut for opening new scene windows.
 
 

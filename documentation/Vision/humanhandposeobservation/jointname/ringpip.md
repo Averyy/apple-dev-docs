@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.JointName.ringPIP
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A joint name that represents the ring finger’s proximal interphalangeal joint.
 
@@ -21,11 +22,12 @@ case ringPIP
 
 ## See Also
 
-- [HumanHandPoseObservation.JointName.ringDIP](humanhandposeobservation/jointname/ringdip.md)
+### Getting the ring finger joint name
+- [HumanHandPoseObservation.JointName.ringDIP](./ringdip.md)
   A joint name that represents the ring finger’s distal interphalangeal joint.
-- [HumanHandPoseObservation.JointName.ringMCP](humanhandposeobservation/jointname/ringmcp.md)
+- [HumanHandPoseObservation.JointName.ringMCP](./ringmcp.md)
   A joint name that represents the ring finger’s metacarpophalangeal joint.
-- [HumanHandPoseObservation.JointName.ringTip](humanhandposeobservation/jointname/ringtip.md)
+- [HumanHandPoseObservation.JointName.ringTip](./ringtip.md)
   A joint name that represents the tip of the ring finger.
 
 

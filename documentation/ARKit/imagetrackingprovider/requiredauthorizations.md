@@ -1,7 +1,8 @@
 # requiredAuthorizations
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The types of authorizations necessary for tracking images.
 
@@ -16,9 +17,10 @@ static var requiredAuthorizations: [ARKitSession.AuthorizationType] { get }
 
 ## See Also
 
-- [init(referenceImages: [ReferenceImage])](imagetrackingprovider/init(referenceimages:).md)
+### Creating an image-tracking provider
+- [init(referenceImages: [ReferenceImage])](./init%28referenceimages%29.md)
   Creates an image-tracking provider that tracks the reference images you supply.
-- [static var isSupported: Bool](imagetrackingprovider/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports image-tracking providers.
 
 

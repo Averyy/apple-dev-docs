@@ -1,7 +1,8 @@
 # scoring(_:rationale:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a metric with a numeric result.
 
@@ -22,7 +23,7 @@ func scoring(_ value: Double, rationale: String? = nil) -> Metric
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
 
 #### Discussion
 
@@ -32,11 +33,12 @@ let scoreResult = metric.scoring(0.85, rationale: "Partial match")
 
 ## See Also
 
-- [func passing(rationale: String?) -> Metric](metric/passing(rationale:).md)
+### Producing results
+- [func passing(rationale: String?) -> Metric](./passing%28rationale%29.md)
   Returns a metric with a passing result.
-- [func failing(rationale: String?) -> Metric](metric/failing(rationale:).md)
+- [func failing(rationale: String?) -> Metric](./failing%28rationale%29.md)
   Returns a metric with a failing result.
-- [func ignore(rationale: String?) -> Metric](metric/ignore(rationale:).md)
+- [func ignore(rationale: String?) -> Metric](./ignore%28rationale%29.md)
   Returns a metric with an ignored result, excluded from aggregation.
 
 

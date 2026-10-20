@@ -1,7 +1,8 @@
 # nickname
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s nickname.
 
@@ -10,7 +11,7 @@ The user’s nickname.
 
 ## Declaration
 
-```swift
+```
 attribute string? nickname;
 ```
 

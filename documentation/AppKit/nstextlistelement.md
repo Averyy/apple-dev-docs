@@ -1,7 +1,8 @@
 # NSTextListElement
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a text list node.
 
@@ -14,58 +15,63 @@ A class that represents a text list node.
 class NSTextListElement
 ```
 
+```objc
+@interface NSTextListElement : NSTextParagraph
+```
+
 ## Topics
 
 ### Create a text list element
-- [convenience init?(children: [NSTextListElement], textList: NSTextList, nestingLevel: Int)](nstextlistelement/init(children:textlist:nestinglevel:).md)
+- [convenience init?(children: [NSTextListElement], textList: NSTextList, nestingLevel: Int)](./nstextlistelement/init%28children,textlist,nestinglevel%29.md)
   Creates a text list element with the list elements and nesting level you provide.
-- [convenience init(contents: NSAttributedString, markerAttributes: [NSAttributedString.Key : Any]?, textList: NSTextList, children: [NSTextListElement]?)](nstextlistelement/init(contents:markerattributes:textlist:children:).md)
+- [convenience init(contents: NSAttributedString, markerAttributes: [NSAttributedString.Key : Any]?, textList: NSTextList, children: [NSTextListElement]?)](./nstextlistelement/init%28contents,markerattributes,textlist,children%29.md)
   Creates a text list element with the list elements, nesting level, and marker attributes you provide.
-- [init(parent: NSTextListElement?, textList: NSTextList, contents: NSAttributedString?, markerAttributes: [NSAttributedString.Key : Any]?, children: [NSTextListElement]?)](nstextlistelement/init(parent:textlist:contents:markerattributes:children:).md)
+- [init(parent: NSTextListElement?, textList: NSTextList, contents: NSAttributedString?, markerAttributes: [NSAttributedString.Key : Any]?, children: [NSTextListElement]?)](./nstextlistelement/init%28parent,textlist,contents,markerattributes,children%29.md)
   Creates a text list element with the parent, list elements, nesting level, and marker attributes you provide.
 ### Accessing the text elements
-- [var textList: NSTextList](nstextlistelement/textlist.md)
+- [var textList: NSTextList](./nstextlistelement/textlist.md)
   The value that represents the text list.
-- [var parent: NSTextListElement?](nstextlistelement/parent.md)
+- [var parent: NSTextListElement?](./nstextlistelement/parent.md)
   A text list element that refers to the enclosing text list element.
-- [var childElements: [NSTextListElement]](nstextlistelement/childelements.md)
+- [var childElements: [NSTextListElement]](./nstextlistelement/childelements.md)
   An array that contains child text elements.
 ### Accessing the text list’s attributes
-- [var markerAttributes: [NSAttributedString.Key : Any]?](nstextlistelement/markerattributes.md)
+- [var markerAttributes: [NSAttributedString.Key : Any]?](./nstextlistelement/markerattributes.md)
   A dictionary of attributed string keys and IDs that represent the list’s marker attributes.
 ### Accessing the formatted string data
-- [var attributedString: NSAttributedString](nstextlistelement/attributedstring.md)
+- [var attributedString: NSAttributedString](./nstextlistelement/attributedstring.md)
   An attributed string that represents the string the framework displays for this element taking into account markers and the indentation level of the list element.
-- [var contents: NSAttributedString?](nstextlistelement/contents.md)
+- [var contents: NSAttributedString?](./nstextlistelement/contents.md)
   The text list element contents without markers and formatting.
 ### Initializers
-- [convenience init?(childElements: [NSTextListElement], textList: NSTextList, nestingLevel: Int)](nstextlistelement/init(childelements:textlist:nestinglevel:).md)
-- [convenience init(contents: NSAttributedString, markerAttributes: [NSAttributedString.Key : Any]?, textList: NSTextList, childElements: [NSTextListElement]?)](nstextlistelement/init(contents:markerattributes:textlist:childelements:).md)
-- [init(parentElement: NSTextListElement?, textList: NSTextList, contents: NSAttributedString?, markerAttributes: [NSAttributedString.Key : Any]?, childElements: [NSTextListElement]?)](nstextlistelement/init(parentelement:textlist:contents:markerattributes:childelements:).md)
+- [convenience init?(childElements: [NSTextListElement], textList: NSTextList, nestingLevel: Int)](./nstextlistelement/init%28childelements,textlist,nestinglevel%29.md)
+- [convenience init(contents: NSAttributedString, markerAttributes: [NSAttributedString.Key : Any]?, textList: NSTextList, childElements: [NSTextListElement]?)](./nstextlistelement/init%28contents,markerattributes,textlist,childelements%29.md)
+- [init(parentElement: NSTextListElement?, textList: NSTextList, contents: NSAttributedString?, markerAttributes: [NSAttributedString.Key : Any]?, childElements: [NSTextListElement]?)](./nstextlistelement/init%28parentelement,textlist,contents,markerattributes,childelements%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSTextParagraph](nstextparagraph.md)
+- [NSTextParagraph](./nstextparagraph.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Enriching your text in text views](../uikit/enriching-your-text-in-text-views.md)
+### Content elements
+- [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
   Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
-- [class NSTextParagraph](nstextparagraph.md)
+- [class NSTextParagraph](./nstextparagraph.md)
   A class that represents a single paragraph backed by an attributed string as the contents.
-- [class NSTextElement](nstextelement.md)
+- [class NSTextElement](./nstextelement.md)
   An abstract base class that represents the smallest units of text layout such as paragraphs or attachments.
-- [protocol NSTextElementProvider](nstextelementprovider.md)
+- [protocol NSTextElementProvider](./nstextelementprovider.md)
   A protocol the text content manager and its concrete subclasses conform to, which defines the interface for interacting with custom content types of a text document.
 
 

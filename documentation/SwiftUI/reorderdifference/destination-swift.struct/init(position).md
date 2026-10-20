@@ -1,7 +1,8 @@
 # init(position:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the destination value with the provided position and an instance of `ReorderableSingleCollectionIdentifier`.
 

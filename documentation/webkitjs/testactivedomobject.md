@@ -1,24 +1,25 @@
 # TestActiveDOMObject
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 interface TestActiveDOMObject
 ```
 
 ## Topics
 
 ### Instance Properties
-- [excitingAttr](testactivedomobject/1630907-excitingattr.md)
+- [excitingAttr](./testactivedomobject/api-1630907-excitingattr.md)
 ### Instance Methods
-- [excitingFunction](testactivedomobject/1631265-excitingfunction.md)
-- [postMessage](testactivedomobject/1629881-postmessage.md)
+- [excitingFunction](./testactivedomobject/api-1631265-excitingfunction.md)
+- [postMessage](./testactivedomobject/api-1629881-postmessage.md)
 
 
 ---

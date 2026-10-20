@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 void *refcon;
 ```
 
@@ -15,12 +15,13 @@ What ever the client wants to do, see $link setRefcon.
 
 ## See Also
 
-- [workLoop](ioeventsource/workloop.md)
-- [reserved](ioeventsource/reserved.md)
-- [owner](ioeventsource/owner.md)
-- [eventChainNext](ioeventsource/eventchainnext.md)
-- [enabled](ioeventsource/enabled.md)
-- [action](ioeventsource/action-8l7.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [reserved](./reserved.md)
+- [owner](./owner.md)
+- [eventChainNext](./eventchainnext.md)
+- [enabled](./enabled.md)
+- [action](./action-8l7.md)
 
 
 ---

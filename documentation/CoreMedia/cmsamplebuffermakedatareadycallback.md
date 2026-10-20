@@ -1,9 +1,10 @@
 # CMSampleBufferMakeDataReadyCallback
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-Client callback called by [`CMSampleBufferMakeDataReady(_:)`](cmsamplebuffermakedataready(_:).md).
+Client callback called by [`CMSampleBufferMakeDataReady(_:)`](./cmsamplebuffermakedataready%28_%29.md).
 
 **Availability**:
 - iOS 4.0+
@@ -20,6 +21,10 @@ Client callback called by [`CMSampleBufferMakeDataReady(_:)`](cmsamplebuffermake
 typealias CMSampleBufferMakeDataReadyCallback = (CMSampleBuffer, UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+```c
+typedef int (*)(struct opaqueCMSampleBuffer *, void *) CMSampleBufferMakeDataReadyCallback;
+```
+
 #### Discussion
 
 This callback must make the data ready (e.g. force a scheduled read to finish). If this callback succeeds and returns 0, the sample buffer will then be marked as “data ready”.
@@ -27,7 +32,9 @@ This callback must make the data ready (e.g. force a scheduled read to finish). 
 ## Parameters
 
 - `sbuf`: The sample buffer to make ready.
-- `makeDataReadyRefcon`: Client refcon provided to `CMSampleBufferCreate`. For example, it could point at info about the scheduled read that needs to be forced to finish.
+- `makeDataReadyRefcon`: Client refcon provided to `CMSampleBufferCreate`.
+
+  For example, it could point at info about the scheduled read that needs to be forced to finish.
 
 
 ---

@@ -1,7 +1,8 @@
 # start
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting point in unit coordinate space.
 

@@ -1,14 +1,15 @@
 # MLCComparisonOperation.less
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.4
+- iPadOS 14.5+ - Deprecated in 17.4
+- Mac Catalyst 14.5+ - Deprecated in 17.4
+- macOS 11.3+ - Deprecated in 14.3
+- tvOS 14.5+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -16,20 +17,25 @@
 case less
 ```
 
+```c
+MLCComparisonOperationLess
+```
+
 ## See Also
 
-- [MLCComparisonOperation.equal](mlccomparisonoperation/equal.md)
-- [MLCComparisonOperation.greater](mlccomparisonoperation/greater.md)
-- [MLCComparisonOperation.greaterOrEqual](mlccomparisonoperation/greaterorequal.md)
-- [MLCComparisonOperation.lessOrEqual](mlccomparisonoperation/lessorequal.md)
-- [MLCComparisonOperation.logicalAND](mlccomparisonoperation/logicaland.md)
-- [MLCComparisonOperation.logicalNAND](mlccomparisonoperation/logicalnand.md)
-- [MLCComparisonOperation.logicalNOR](mlccomparisonoperation/logicalnor.md)
-- [MLCComparisonOperation.logicalNOT](mlccomparisonoperation/logicalnot.md)
-- [MLCComparisonOperation.logicalOR](mlccomparisonoperation/logicalor.md)
-- [MLCComparisonOperation.logicalXOR](mlccomparisonoperation/logicalxor.md)
-- [MLCComparisonOperation.notEqual](mlccomparisonoperation/notequal.md)
-- [var debugDescription: String](mlccomparisonoperation/debugdescription.md)
+### Enumeration Cases
+- [MLCComparisonOperation.equal](./equal.md)
+- [MLCComparisonOperation.greater](./greater.md)
+- [MLCComparisonOperation.greaterOrEqual](./greaterorequal.md)
+- [MLCComparisonOperation.lessOrEqual](./lessorequal.md)
+- [MLCComparisonOperation.logicalAND](./logicaland.md)
+- [MLCComparisonOperation.logicalNAND](./logicalnand.md)
+- [MLCComparisonOperation.logicalNOR](./logicalnor.md)
+- [MLCComparisonOperation.logicalNOT](./logicalnot.md)
+- [MLCComparisonOperation.logicalOR](./logicalor.md)
+- [MLCComparisonOperation.logicalXOR](./logicalxor.md)
+- [MLCComparisonOperation.notEqual](./notequal.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual description of the comparison operation, suitable for debugging.
 
 

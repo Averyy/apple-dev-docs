@@ -1,7 +1,8 @@
 # addTrackAssociation(to:type:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Establishes a track association of a specific type between two tracks.
 
@@ -20,6 +21,10 @@ Establishes a track association of a specific type between two tracks.
 func addTrackAssociation(to compositionTrack: AVCompositionTrack, type trackAssociationType: AVAssetTrack.AssociationType)
 ```
 
+```objc
+- (void) addTrackAssociationToTrack:(AVCompositionTrack *) compositionTrack type:(AVTrackAssociationType) trackAssociationType;
+```
+
 ## Parameters
 
 - `compositionTrack`: A composition track to associate.
@@ -27,7 +32,8 @@ func addTrackAssociation(to compositionTrack: AVCompositionTrack, type trackAsso
 
 ## See Also
 
-- [func removeTrackAssociation(to: AVCompositionTrack, type: AVAssetTrack.AssociationType)](avmutablecompositiontrack/removetrackassociation(to:type:).md)
+### Associating tracks
+- [func removeTrackAssociation(to: AVCompositionTrack, type: AVAssetTrack.AssociationType)](./removetrackassociation%28to,type%29.md)
   Removes an association from a composition track.
 
 

@@ -1,7 +1,8 @@
 # menuItemLabelsTooltips
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var menuItemLabelsTooltips: [String] { get }
+```
+
+```objc
+@property (readonly) NSArray<NSString *> * menuItemLabelsTooltips;
 ```
 
 

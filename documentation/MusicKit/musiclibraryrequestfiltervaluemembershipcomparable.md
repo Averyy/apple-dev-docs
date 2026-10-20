@@ -1,7 +1,8 @@
 # MusicLibraryRequestFilterValueMembershipComparable
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for types of values your app can use with membership filters when fetching items using a music library request.
 
@@ -23,7 +24,7 @@ protocol MusicLibraryRequestFilterValueMembershipComparable
 ## Relationships
 
 ### Conforming Types
-- [MusicItemID](musicitemid.md)
+- [MusicItemID](./musicitemid.md)
 
 
 ---

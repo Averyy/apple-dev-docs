@@ -1,7 +1,8 @@
 # MPSGraphPaddingMode.clampToEdge
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 ClampToEdge (PyTorch ReplicationPad)
 
@@ -17,6 +18,10 @@ ClampToEdge (PyTorch ReplicationPad)
 
 ```swift
 case clampToEdge
+```
+
+```c
+MPSGraphPaddingModeClampToEdge
 ```
 
 

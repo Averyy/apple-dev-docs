@@ -1,7 +1,8 @@
 # init(using:on:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a network listener, with an optional local port.
 
@@ -22,15 +23,16 @@ init(using: NWParameters, on: NWEndpoint.Port = .any) throws
 
 ## See Also
 
-- [func start(queue: DispatchQueue)](nwlistener/start(queue:).md)
+### Creating Listeners
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Registers for listening, and sets the queue on which all listener events are delivered.
-- [var stateUpdateHandler: ((NWListener.State) -> Void)?](nwlistener/stateupdatehandler.md)
+- [var stateUpdateHandler: ((NWListener.State) -> Void)?](./stateupdatehandler.md)
   A handler that receives listener state updates.
-- [NWListener.State](nwlistener/state-swift.enum.md)
+- [NWListener.State](./state-swift.enum.md)
   States indicating whether a listener is able to accept incoming connections.
-- [var port: NWEndpoint.Port?](nwlistener/port.md)
+- [var port: NWEndpoint.Port?](./port.md)
   The port on which the listener can accept connections.
-- [func cancel()](nwlistener/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Stops listening for inbound connections.
 
 

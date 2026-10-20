@@ -1,7 +1,8 @@
 # presentAgeExceptionApproveInPersonSheet()
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a sheet that enables a parent or guardian to approve age-exception requests.
 
@@ -18,13 +19,13 @@ final func presentAgeExceptionApproveInPersonSheet() async throws
 
 ## Mentions
 
-- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+- [Providing age-rating appropriate content](../../providing-age-rating-appropriate-content.md)
 
 #### Discussion
 
-Call this method when a person wants to display a sheet that enables a parent or guardian to review an installation exception request in person. For more information, see [`Providing age-rating appropriate content`](providing-age-rating-appropriate-content.md).
+Call this method when a person wants to display a sheet that enables a parent or guardian to review an installation exception request in person. For more information, see [Providing age-rating appropriate content](../../providing-age-rating-appropriate-content.md).
 
-The framework throws [`MarketplaceKitError.missingAgeRatingExceptionRequest`](marketplacekiterror/missingageratingexceptionrequest.md) if your app calls this method when there’s no age-rating exception requests for the app in the [`currentAgeExceptionRequests()`](applibrary/currentageexceptionrequests().md) list.
+The framework throws [`MarketplaceKitError.missingAgeRatingExceptionRequest`](../../marketplacekiterror/missingageratingexceptionrequest.md) if your app calls this method when there’s no age-rating exception requests for the app in the [`currentAgeExceptionRequests()`](../currentageexceptionrequests%28%29.md) list.
 
 
 ---

@@ -1,7 +1,8 @@
 # underlyingError
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error which caused this error, if any.
 

@@ -1,7 +1,8 @@
 # GameCenterChallenge.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a challenge resource.
 
@@ -10,14 +11,14 @@ Attributes that describe a challenge resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallenge.Attributes
 ```
 
 ## Properties
 
 - `archived` (boolean)
-- `challengeType` (string)
+- `challengeType` (string): **Allowed Values**: `LEADERBOARD`
 - `referenceName` (string)
 - `repeatable` (boolean)
 - `vendorIdentifier` (string)

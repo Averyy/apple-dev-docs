@@ -1,7 +1,8 @@
 # serialize(package:descriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Serialize the MPSGraph executable at the provided url.
 
@@ -17,6 +18,10 @@ Serialize the MPSGraph executable at the provided url.
 
 ```swift
 func serialize(package url: URL, descriptor: MPSGraphExecutableSerializationDescriptor?)
+```
+
+```objc
+- (void) serializeToMPSGraphPackageAtURL:(NSURL *) url descriptor:(MPSGraphExecutableSerializationDescriptor *) descriptor;
 ```
 
 ## Parameters

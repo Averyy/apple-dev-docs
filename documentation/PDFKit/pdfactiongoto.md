@@ -1,7 +1,8 @@
 # PDFActionGoTo
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 `PDFActionGoTo`, a subclass of `PDFAction`, defines methods for getting and setting the destination of a go-to action.
 
@@ -19,6 +20,10 @@
 class PDFActionGoTo
 ```
 
+```objc
+@interface PDFActionGoTo : PDFAction
+```
+
 #### Overview
 
 A `PDFActionGoTo` object represents the action of going to a specific location within the PDF document.
@@ -26,36 +31,37 @@ A `PDFActionGoTo` object represents the action of going to a specific location w
 ## Topics
 
 ### Accessing the Destination
-- [var destination: PDFDestination](pdfactiongoto/destination.md)
+- [var destination: PDFDestination](./pdfactiongoto/destination.md)
   Returns the destination associated with the action.
 ### Initializing the Action
-- [init(destination: PDFDestination)](pdfactiongoto/init(destination:).md)
+- [init(destination: PDFDestination)](./pdfactiongoto/init%28destination%29.md)
   Initializes the go-to action.
 
 ## Relationships
 
 ### Inherits From
-- [PDFAction](pdfaction.md)
+- [PDFAction](./pdfaction.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PDFActionNamed](pdfactionnamed.md)
+### Action Types
+- [class PDFActionNamed](./pdfactionnamed.md)
   `PDFActionNamed` defines methods used to work with actions in PDF documents, some of which are named in the Adobe PDF Specification.
-- [class PDFActionRemoteGoTo](pdfactionremotegoto.md)
+- [class PDFActionRemoteGoTo](./pdfactionremotegoto.md)
   `PDFActionRemoteGoTo`, a subclass of `PDFAction`, defines methods for getting and setting the destination of a go-to action that targets another document.
-- [class PDFActionResetForm](pdfactionresetform.md)
+- [class PDFActionResetForm](./pdfactionresetform.md)
   `PDFActionResetForm`, a subclass of `PDFAction`, defines methods for getting and clearing fields in a PDF form.
-- [class PDFActionURL](pdfactionurl.md)
+- [class PDFActionURL](./pdfactionurl.md)
   `PDFActionURL`, a subclass of `PDFAction`, defines methods for getting and setting the URL associated with a URL action.
-- [enum PDFActionNamedName](pdfactionnamedname.md)
+- [enum PDFActionNamedName](./pdfactionnamedname.md)
 
 
 ---

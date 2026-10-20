@@ -1,7 +1,8 @@
 # TKTokenDriver
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class for building token drivers.
 
@@ -20,47 +21,52 @@ A base class for building token drivers.
 class TKTokenDriver
 ```
 
+```objc
+@interface TKTokenDriver : NSObject
+```
+
 #### Overview
 
-When using the [`TKTokenDriver`](tktokendriver.md) class, implement the [`TKTokenDriverDelegate`](tktokendriverdelegate.md) protocol with the [`tokenDriver(_:tokenFor:)`](tktokendriverdelegate/tokendriver(_:tokenfor:).md) method, which the system invokes when it requests the creation of a token instance. After you create the token driver, it can examine [`keychainItems`](tktoken/configuration-swift.class/keychainitems.md) and [`configurationData`](tktoken/configuration-swift.class/configurationdata.md) to implement your desired functionality.
+When using the [`TKTokenDriver`](./tktokendriver.md) class, implement the [`TKTokenDriverDelegate`](./tktokendriverdelegate.md) protocol with the [`tokenDriver(_:tokenFor:)`](./tktokendriverdelegate/tokendriver%28_,tokenfor%29.md) method, which the system invokes when it requests the creation of a token instance. After you create the token driver, it can examine [`keychainItems`](./tktoken/configuration-swift.class/keychainitems.md) and [`configurationData`](./tktoken/configuration-swift.class/configurationdata.md) to implement your desired functionality.
 
-An implementation can also access its associated token configuration using the [`TKToken.Configuration`](tktoken/configuration-swift.class.md) property.
+An implementation can also access its associated token configuration using the [`TKToken.Configuration`](./tktoken/configuration-swift.class.md) property.
 
-> **Note**:  When working with smart card tokens, use or inherit from the [`TKSmartCardTokenDriver`](tksmartcardtokendriver.md) subclass instead.
+> **Note**:  When working with smart card tokens, use or inherit from the [`TKSmartCardTokenDriver`](./tksmartcardtokendriver.md) subclass instead.
 
 ## Topics
 
 ### Responding to Token Creation
-- [var delegate: (any TKTokenDriverDelegate)?](tktokendriver/delegate.md)
+- [var delegate: (any TKTokenDriverDelegate)?](./tktokendriver/delegate.md)
   The token driver delegate.
-- [protocol TKTokenDriverDelegate](tktokendriverdelegate.md)
+- [protocol TKTokenDriverDelegate](./tktokendriverdelegate.md)
   The interface that a token driver delegate implements to respond to token creation events.
-- [TKTokenDriver.ClassID](tktokendriver/classid.md)
+- [TKTokenDriver.ClassID](./tktokendriver/classid.md)
   The type of the class identifier for the token driver.
-- [TKTokenDriver.Configuration](tktokendriver/configuration.md)
+- [TKTokenDriver.Configuration](./tktokendriver/configuration.md)
   A configuration for one class of token.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [TKSmartCardTokenDriver](tksmartcardtokendriver.md)
+- [TKSmartCardTokenDriver](./tksmartcardtokendriver.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TKTokenWatcher](tktokenwatcher.md)
+### Tokens
+- [class TKTokenWatcher](./tktokenwatcher.md)
   An object that tracks the tokens available in the system.
-- [class TKToken](tktoken.md)
+- [class TKToken](./tktoken.md)
   A representation of a hardware-based cryptographic token.
-- [class TKTokenSession](tktokensession.md)
+- [class TKTokenSession](./tktokensession.md)
   A token session that manages the authentication state of a token.
 
 

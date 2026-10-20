@@ -1,7 +1,8 @@
 # ChartResponse.Results.SongsChart
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The songs results of a chart.
 
@@ -10,7 +11,7 @@ The songs results of a chart.
 
 ## Declaration
 
-```swift
+```
 object ChartResponse.Results.SongsChart
 ```
 
@@ -24,11 +25,12 @@ object ChartResponse.Results.SongsChart
 
 ## See Also
 
-- [object ChartResponse.Results.AlbumsChart](chartresponse/results-data.dictionary/albumschart.md)
+### Related Objects
+- [object ChartResponse.Results.AlbumsChart](./albumschart.md)
   The albums results of a chart.
-- [object ChartResponse.Results.MusicVideosChart](chartresponse/results-data.dictionary/musicvideoschart.md)
+- [object ChartResponse.Results.MusicVideosChart](./musicvideoschart.md)
   The music videos results of a chart.
-- [object ChartResponse.Results.PlaylistsChart](chartresponse/results-data.dictionary/playlistschart.md)
+- [object ChartResponse.Results.PlaylistsChart](./playlistschart.md)
   The playlists results of a chart.
 
 

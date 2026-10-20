@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the profile.
 
@@ -19,11 +20,16 @@ A unique identifier for the profile.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var accessory: HMAccessory?](hmaccessoryprofile/accessory.md)
+### Getting information about a profile
+- [var accessory: HMAccessory?](./accessory.md)
   The accessory that implements this profile.
-- [var services: [HMService]](hmaccessoryprofile/services.md)
+- [var services: [HMService]](./services.md)
   An array of services that represents this profile.
 
 

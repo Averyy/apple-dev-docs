@@ -1,6 +1,7 @@
 # centered
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Centers media items in a shelf.
 
@@ -8,19 +9,20 @@ Centers media items in a shelf.
 
 Use the `centered` attribute to center items horizontally in a `shelf` element when there are fewer elements than the shelf length.
 
-##### Values for Centered
+##### Values for centered
 
 - **Boolean**: The shelf horizontally centers the elements inside of it when this attribute is set to `true`.
 
-##### Elements That Use Centered
+##### Elements that Use centered
 
-- [`shelf`](shelf.md)
+- [shelf](./shelf.md)
 
 ## See Also
 
-- [minLength](minlength.md)
+### Element Alignment
+- [minLength](./minlength.md)
   Reserves space for an element.
-- [rowCount](rowcount.md)
+- [rowCount](./rowcount.md)
   Specifies the number of rows in a shelf.
 
 

@@ -1,7 +1,8 @@
 # kSecAttrRounds
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the number of rounds to run the pseudorandom function.
 
@@ -14,9 +15,13 @@ A key whose value indicates the number of rounds to run the pseudorandom functio
 let kSecAttrRounds: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrRounds;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and indicates the number of rounds to run the pseudorandom function specified by [`kSecAttrPRF`](ksecattrprf.md) for a cryptographic key.
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and indicates the number of rounds to run the pseudorandom function specified by [`kSecAttrPRF`](./ksecattrprf.md) for a cryptographic key.
 
 
 ---

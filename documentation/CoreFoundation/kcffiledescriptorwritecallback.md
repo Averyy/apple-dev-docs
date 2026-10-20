@@ -1,18 +1,19 @@
 # kCFFileDescriptorWriteCallBack
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Identifies the write callback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Identifies the write callback.
 var kCFFileDescriptorWriteCallBack: CFOptionFlags { get }
 ```
 
+```c
+kCFFileDescriptorWriteCallBack
+```
+
 ## See Also
 
-- [var kCFFileDescriptorReadCallBack: CFOptionFlags](kcffiledescriptorreadcallback.md)
+### Constants
+- [var kCFFileDescriptorReadCallBack: CFOptionFlags](./kcffiledescriptorreadcallback.md)
   Identifies the read callback.
 
 

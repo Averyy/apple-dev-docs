@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The height, in pixels, of the generated barcode.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The height, in pixels, of the generated barcode.
 var barcodeHeight: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float barcodeHeight;
+```
+
 ## See Also
 
-- [var message: Data](cicode128barcodegenerator/message.md)
+### Instance Properties
+- [var message: Data](./message.md)
   The message to encode in the Code 128 barcode.
-- [var quietSpace: Float](cicode128barcodegenerator/quietspace.md)
+- [var quietSpace: Float](./quietspace.md)
   The number of empty white pixels that should surround the barcode.
 
 

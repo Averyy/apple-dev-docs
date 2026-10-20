@@ -1,7 +1,8 @@
 # minimumFrameRepeatCount
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of additional frames for which the system displays the same content.
 
@@ -13,6 +14,10 @@ The number of additional frames for which the system displays the same content.
 
 ```swift
 var minimumFrameRepeatCount: Int32 { get set }
+```
+
+```c
+int cp_layer_renderer_get_minimum_frame_repeat_count(cp_layer_renderer_t layer_renderer);
 ```
 
 #### Discussion

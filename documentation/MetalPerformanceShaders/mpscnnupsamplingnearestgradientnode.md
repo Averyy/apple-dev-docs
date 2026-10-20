@@ -1,7 +1,8 @@
 # MPSCNNUpsamplingNearestGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a gradient nearest spatial upsampling filter.
 
@@ -19,33 +20,38 @@ A representation of a gradient nearest spatial upsampling filter.
 class MPSCNNUpsamplingNearestGradientNode
 ```
 
+```objc
+@interface MPSCNNUpsamplingNearestGradientNode : MPSNNGradientFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, scaleFactorX: Double, scaleFactorY: Double)](mpscnnupsamplingnearestgradientnode/init(sourcegradient:sourceimage:gradientstate:scalefactorx:scalefactory:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, scaleFactorX: Double, scaleFactorY: Double)](./mpscnnupsamplingnearestgradientnode/init%28sourcegradient,sourceimage,gradientstate,scalefactorx,scalefactory%29.md)
 ### Instance Properties
-- [var scaleFactorX: Double](mpscnnupsamplingnearestgradientnode/scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsamplingnearestgradientnode/scalefactory.md)
+- [var scaleFactorX: Double](./mpscnnupsamplingnearestgradientnode/scalefactorx.md)
+- [var scaleFactorY: Double](./mpscnnupsamplingnearestgradientnode/scalefactory.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+- [MPSNNGradientFilterNode](./mpsnngradientfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNUpsamplingBilinearNode](mpscnnupsamplingbilinearnode.md)
+### Upsampling Layer Nodes
+- [class MPSCNNUpsamplingBilinearNode](./mpscnnupsamplingbilinearnode.md)
   A representation of a bilinear spatial upsampling filter.
-- [class MPSCNNUpsamplingNearestNode](mpscnnupsamplingnearestnode.md)
+- [class MPSCNNUpsamplingNearestNode](./mpscnnupsamplingnearestnode.md)
   A representation of a nearest spatial upsampling filter.
-- [class MPSCNNUpsamplingBilinearGradientNode](mpscnnupsamplingbilineargradientnode.md)
+- [class MPSCNNUpsamplingBilinearGradientNode](./mpscnnupsamplingbilineargradientnode.md)
   A representation of a gradient bilinear spatial upsampling filter.
 
 

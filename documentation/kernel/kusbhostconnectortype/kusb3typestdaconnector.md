@@ -1,14 +1,15 @@
 # kUSB3TypeStdAConnector
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kUSB3TypeStdAConnector = 0x03
 ```
 

@@ -1,20 +1,22 @@
 # Miscellaneous Defines
 
-**Framework**: dnssd
+**Framework**: dnssd  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [_DNS_SD_H](dns_sd_h.md)
+- [_DNS_SD_H](./dns_sd_h.md)
   API version number.
-- [var kDNSServiceMaxDomainName: Int32](kdnsservicemaxdomainname.md)
-- [var kDNSServiceMaxServiceName: Int32](kdnsservicemaxservicename.md)
-- [var kDNSServiceProperty_DaemonVersion: String](kdnsserviceproperty_daemonversion.md)
+- [var kDNSServiceMaxDomainName: Int32](./kdnsservicemaxdomainname.md)
+- [var kDNSServiceMaxServiceName: Int32](./kdnsservicemaxservicename.md)
+- [var kDNSServiceProperty_DaemonVersion: String](./kdnsserviceproperty_daemonversion.md)
   The daemon version property.
 
 ## See Also
 
-- [Constants for specifying an interface index](constants-for-specifying-an-interface-index.md)
+### Constants
+- [Constants for specifying an interface index](./constants-for-specifying-an-interface-index.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # deallocator
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -20,17 +21,18 @@ var deallocator: BNNSFree? { get set }
 
 ## See Also
 
-- [var flags: UInt32](bnnsfilterparameters/flags.md)
+### Instance Properties
+- [var flags: UInt32](./flags.md)
   A logical OR of zero or more values from BNNS flags.
-- [var n_threads: Int](bnnsfilterparameters/n_threads.md)
+- [var n_threads: Int](./n_threads.md)
   The number of worker threads to execute.
-- [var alloc_memory: BNNSAlloc?](bnnsfilterparameters/alloc_memory.md)
+- [var alloc_memory: BNNSAlloc?](./alloc_memory.md)
   The function called to allocate memory.
-- [var free_memory: BNNSFree?](bnnsfilterparameters/free_memory.md)
+- [var free_memory: BNNSFree?](./free_memory.md)
   The function called to deallocate memory.
-- [var allocator: BNNSAlloc?](bnnsfilterparameters/allocator.md)
-- [var options: BNNSFlags](bnnsfilterparameters/options.md)
-- [var threadCount: Int](bnnsfilterparameters/threadcount.md)
+- [var allocator: BNNSAlloc?](./allocator.md)
+- [var options: BNNSFlags](./options.md)
+- [var threadCount: Int](./threadcount.md)
 
 
 ---

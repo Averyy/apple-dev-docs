@@ -1,7 +1,8 @@
 # MeshBuffer
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Mesh buffer containing elements of any type.
 
@@ -11,7 +12,7 @@ Mesh buffer containing elements of any type.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,118 +23,119 @@ struct MeshBuffer<Element>
 ## Topics
 
 ### Creating a mesh buffer
-- [init<S>(S)](meshbuffer/init(_:)-13uzl.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-13uzl.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-1f0ai.md)
+- [init([Element])](./meshbuffer/init%28_%29-1f0ai.md)
   Create buffer from an array of elements.
-- [init([Element])](meshbuffer/init(_:)-1hyiz.md)
+- [init([Element])](./meshbuffer/init%28_%29-1hyiz.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-2okpc.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-2okpc.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-3bqai.md)
+- [init([Element])](./meshbuffer/init%28_%29-3bqai.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-3pbx9.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-3pbx9.md)
   Create a buffer from any sequence of elements.
-- [init<S>(S)](meshbuffer/init(_:)-4ahf1.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-4ahf1.md)
   Create a buffer from any sequence of elements.
-- [init<S>(S)](meshbuffer/init(_:)-5a11h.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-5a11h.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-5sh0b.md)
+- [init([Element])](./meshbuffer/init%28_%29-5sh0b.md)
   Create buffer from an array of elements.
-- [init([Element])](meshbuffer/init(_:)-650mf.md)
+- [init([Element])](./meshbuffer/init%28_%29-650mf.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-6hldv.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-6hldv.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-77mou.md)
+- [init([Element])](./meshbuffer/init%28_%29-77mou.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-7d6t8.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-7d6t8.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-8m4zg.md)
+- [init([Element])](./meshbuffer/init%28_%29-8m4zg.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-8p5ux.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-8p5ux.md)
   Create a buffer from any sequence of elements.
-- [init<S>(S)](meshbuffer/init(_:)-8yhn7.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-8yhn7.md)
   Create a buffer from any sequence of elements.
-- [init<S>(S)](meshbuffer/init(_:)-94e5y.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-94e5y.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-991gl.md)
+- [init([Element])](./meshbuffer/init%28_%29-991gl.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-9eppl.md)
+- [init<S>(S)](./meshbuffer/init%28_%29-9eppl.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-9o6sp.md)
+- [init([Element])](./meshbuffer/init%28_%29-9o6sp.md)
   Create buffer from an array of elements.
-- [init([Element])](meshbuffer/init(_:)-9tja8.md)
+- [init([Element])](./meshbuffer/init%28_%29-9tja8.md)
   Create buffer from an array of elements.
-- [init([Element])](meshbuffer/init(_:)-11fcy.md)
+- [init([Element])](./meshbuffer/init%28_%29-11fcy.md)
   Create buffer from an array of elements.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-2f47d.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-2f47d.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-2nr7l.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-2nr7l.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-2wcfg.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-2wcfg.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-3m3mo.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-3m3mo.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-4kg29.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-4kg29.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-4yxh4.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-4yxh4.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-5mhon.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-5mhon.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-76tes.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-76tes.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-7gw7i.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-7gw7i.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-8dbzg.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-8dbzg.md)
   Create buffer from an array of element values and an array of indices into that value array.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-97yff.md)
+- [init(elements: [Element], indices: [UInt32])](./meshbuffer/init%28elements,indices%29-97yff.md)
   Create buffer from an array of element values and an array of indices into that value array.
 ### Inspecting a mesh
-- [var elements: [Element]](meshbuffer/elements.md)
+- [var elements: [Element]](./meshbuffer/elements.md)
   Access the buffer as an array. This may create a copy if the data are not already an array.
-- [var rate: MeshBuffers.Rate](meshbuffer/rate.md)
+- [var rate: MeshBuffers.Rate](./meshbuffer/rate.md)
   Rate of the buffer.
 ### Iterating the elements of a buffer
-- [func forEach((Element, Element) throws -> Void) rethrows](meshbuffer/foreach(_:)-53vhs.md)
+- [func forEach((Element, Element) throws -> Void) rethrows](./meshbuffer/foreach%28_%29-53vhs.md)
   Iterate over pairs of elements.
-- [func forEach((Element, Element, Element) throws -> Void) rethrows](meshbuffer/foreach(_:)-7o3tb.md)
+- [func forEach((Element, Element, Element) throws -> Void) rethrows](./meshbuffer/foreach%28_%29-7o3tb.md)
   Iterate over three elements per step.
-- [func forEach((Element, Element, Element, Element) throws -> Void) rethrows](meshbuffer/foreach(_:)-xhri.md)
+- [func forEach((Element, Element, Element, Element) throws -> Void) rethrows](./meshbuffer/foreach%28_%29-xhri.md)
   Iterate over four elements per step.
-- [func usingRate(MeshBuffers.Rate) -> MeshBuffer<Element>](meshbuffer/usingrate(_:).md)
+- [func usingRate(MeshBuffers.Rate) -> MeshBuffer<Element>](./meshbuffer/usingrate%28_%29.md)
   New object with updated rate.
 ### Initializers
-- [init(_:)](meshbuffer/init(_:).md)
+- [init(_:)](./meshbuffer/init%28_%29.md)
   Create buffer from an array of elements.
-- [init(elements:indices:)](meshbuffer/init(elements:indices:).md)
+- [init(elements:indices:)](./meshbuffer/init%28elements,indices%29.md)
   Create buffer from an array of element values and an array of indices into that value array.
 ### Instance Properties
-- [let count: Int](meshbuffer/count.md)
+- [let count: Int](./meshbuffer/count.md)
   The number of elements in the buffer.
 ### Instance Methods
-- [func forEach(_:)](meshbuffer/foreach(_:).md)
+- [func forEach(_:)](./meshbuffer/foreach%28_%29.md)
   Iterate over pairs of elements.
 
 ## Relationships
 
 ### Conforms To
-- [Sequence](../swift/sequence.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [protocol MeshBufferContainer](meshbuffercontainer.md)
+### Mesh description
+- [protocol MeshBufferContainer](./meshbuffercontainer.md)
   Conforming objects contain a table of mesh buffers.
-- [protocol MeshBufferSemantic](meshbuffersemantic.md)
+- [protocol MeshBufferSemantic](./meshbuffersemantic.md)
   A protocol that holds an identifier value for mesh buffers.
-- [enum MeshBuffers](meshbuffers.md)
+- [enum MeshBuffers](./meshbuffers.md)
   An object that holds the data for an model entity’s mesh.
-- [struct AnyMeshBuffer](anymeshbuffer.md)
+- [struct AnyMeshBuffer](./anymeshbuffer.md)
   Mesh buffer stored in the container.
-- [struct MeshInstanceCollection](meshinstancecollection.md)
+- [struct MeshInstanceCollection](./meshinstancecollection.md)
   An object that holds a collection of mesh resource instances.
-- [struct MeshModelCollection](meshmodelcollection.md)
+- [struct MeshModelCollection](./meshmodelcollection.md)
   An object that holds a collection of mesh models.
-- [struct MeshPartCollection](meshpartcollection.md)
+- [struct MeshPartCollection](./meshpartcollection.md)
   An object that holds a collection of mesh parts.
 
 

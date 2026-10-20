@@ -1,7 +1,8 @@
 # issuerTextField
 
 **Framework**: Security Interface  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
@@ -11,6 +12,10 @@
 ```swift
 @IBOutlet
 unowned(unsafe) var issuerTextField: NSTextField! { get set }
+```
+
+```objc
+@property (assign) NSTextField * issuerTextField;
 ```
 
 

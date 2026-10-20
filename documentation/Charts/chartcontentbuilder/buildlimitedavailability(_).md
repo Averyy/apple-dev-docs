@@ -1,7 +1,8 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds a partial result that propagates or erases type information outside a compiler-controlled availability check.
 

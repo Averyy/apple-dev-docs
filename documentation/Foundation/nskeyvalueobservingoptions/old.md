@@ -1,7 +1,8 @@
 # old
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the change dictionary should contain the old attribute value, if applicable.
 
@@ -20,13 +21,18 @@ Indicates that the change dictionary should contain the old attribute value, if 
 static var old: NSKeyValueObservingOptions { get }
 ```
 
+```c
+NSKeyValueObservingOptionOld
+```
+
 ## See Also
 
-- [static var new: NSKeyValueObservingOptions](nskeyvalueobservingoptions/new.md)
+### Constants
+- [static var new: NSKeyValueObservingOptions](./new.md)
   Indicates that the change dictionary should provide the new attribute value, if applicable.
-- [static var initial: NSKeyValueObservingOptions](nskeyvalueobservingoptions/initial.md)
+- [static var initial: NSKeyValueObservingOptions](./initial.md)
   If specified, a notification should be sent to the observer immediately, before the observer registration method even returns.
-- [static var prior: NSKeyValueObservingOptions](nskeyvalueobservingoptions/prior.md)
+- [static var prior: NSKeyValueObservingOptions](./prior.md)
   Whether separate notifications should be sent to the observer before and after each change, instead of a single notification after the change.
 
 

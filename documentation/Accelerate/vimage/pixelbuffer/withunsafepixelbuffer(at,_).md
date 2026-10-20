@@ -1,7 +1,8 @@
 # withUnsafePixelBuffer(at:_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with the pixel buffer that references the individual plane at the given index.
 
@@ -11,7 +12,7 @@ Calls the given closure with the pixel buffer that references the individual pla
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Calls the given closure with the pixel buffer that references the individual pla
 ```swift
 func withUnsafePixelBuffer<R>(at index: Int, _ body: (vImage.PixelBuffer<Format.PlanarPixelFormat>) throws -> R) rethrows -> R
 ```
+
+Available when `Format` conforms to `MultiplePlanePixelFormat`.
 
 #### Return Value
 
@@ -43,11 +46,12 @@ Use this function to access a single planar pixel buffer from a multiple-plane p
 ## Parameters
 
 - `index`: The index of the plane.
-- `body`: A closure with a [`vImage.PixelBuffer`](vimage/pixelbuffer.md) parameter that points to the underlying pixel buffer at the given index.
+- `body`: A closure with a [`vImage.PixelBuffer`](../pixelbuffer.md) parameter that points to the underlying pixel buffer at the given index.
 
 ## See Also
 
-- [func withUnsafePixelBuffers<R>(([vImage.PixelBuffer<Format.PlanarPixelFormat>]) throws -> R) rethrows -> R](vimage/pixelbuffer/withunsafepixelbuffers(_:).md)
+### Accessing component pixel buffers
+- [func withUnsafePixelBuffers<R>(([vImage.PixelBuffer<Format.PlanarPixelFormat>]) throws -> R) rethrows -> R](./withunsafepixelbuffers%28_%29.md)
   Calls the given closure with the array of pixel buffers that reference the individual planes.
 
 

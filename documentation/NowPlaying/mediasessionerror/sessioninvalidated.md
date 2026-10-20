@@ -1,7 +1,8 @@
 # MediaSessionError.sessionInvalidated
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is already invalidated.
 

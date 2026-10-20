@@ -1,7 +1,8 @@
 # CreateKernelClassMatchingDictionary
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - DriverKit 19.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 static OSDictionary * CreateKernelClassMatchingDictionary(OSString *className, OSDictionary *matching);
 ```
 

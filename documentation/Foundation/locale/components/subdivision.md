@@ -1,7 +1,8 @@
 # subdivision
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional subdivision of the region used by this locale.
 
@@ -22,21 +23,22 @@ var subdivision: Locale.Subdivision?
 
 #### Discussion
 
-Set this property to override the locale’s regional subdivision of [`region`](locale/components/region.md).
+Set this property to override the locale’s regional subdivision of [`region`](./region.md).
 
 This property corresponds to the `sd` key of the Unicode BCP 47 extension.
 
 ## See Also
 
-- [var region: Locale.Region?](locale/components/region.md)
+### Specifying region components
+- [var region: Locale.Region?](./region.md)
   The region used by the locale.
-- [Locale.Region](locale/region-swift.struct.md)
+- [Locale.Region](../region-swift.struct.md)
   A type that represents a geographic region, for use in specifying a locale or language.
-- [Locale.Subdivision](locale/subdivision-swift.struct.md)
+- [Locale.Subdivision](../subdivision-swift.struct.md)
   A type that represents a subdivision of a region, such as a state in the US or a province in Canada.
-- [var variant: Locale.Variant?](locale/components/variant.md)
+- [var variant: Locale.Variant?](./variant.md)
   An optional variant used by the locale.
-- [Locale.Variant](locale/variant-swift.struct.md)
+- [Locale.Variant](../variant-swift.struct.md)
   A type that represents a locale’s language variant.
 
 

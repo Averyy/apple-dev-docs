@@ -1,7 +1,8 @@
 # formIndex(_:offsetBy:limitedBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 func formIndex(_ i: inout FlattenSequence<Base>.Index, offsetBy n: Int, limitedBy limit: FlattenSequence<Base>.Index) -> Bool
 ```
+
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
 
 ---

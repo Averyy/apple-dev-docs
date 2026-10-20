@@ -1,7 +1,8 @@
 # connectNetwork(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func connectNetwork(with params: MTRNetworkCommissioningClusterConnectNetworkParams, completion: @escaping @Sendable (MTRNetworkCommissioningClusterConnectNetworkResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func connectNetwork(with params: MTRNetworkCommissioningClusterConnectNetworkParams) async throws -> MTRNetworkCommissioningClusterConnectNetworkResponseParams
+```
+
+```objc
+- (void) connectNetworkWithParams:(MTRNetworkCommissioningClusterConnectNetworkParams *) params completion:(void (^)(MTRNetworkCommissioningClusterConnectNetworkResponseParams *data, NSError *error)) completion;
 ```
 
 

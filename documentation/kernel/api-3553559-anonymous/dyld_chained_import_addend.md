@@ -1,14 +1,15 @@
 # DYLD_CHAINED_IMPORT_ADDEND
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 DYLD_CHAINED_IMPORT_ADDEND = 2
 ```
 

@@ -1,7 +1,8 @@
 # securityDomainKeyInfo
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data blob which contains the security domain On-Board Generated Key (OBGK).
 
@@ -21,7 +22,8 @@ This data has the information required to form a Secure Channel Protocol 3 (SCP0
 
 ## See Also
 
-- [let securityDomainAID: Data](credentialsession/credential/instanceinfo/securitydomainaid.md)
+### Creating a secure channel
+- [let securityDomainAID: Data](./securitydomainaid.md)
   The unique identifier of the security domain you use to install the instance.
 
 

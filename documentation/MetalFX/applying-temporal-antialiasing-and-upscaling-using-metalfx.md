@@ -1,6 +1,8 @@
 # Applying temporal antialiasing and upscaling using MetalFX
 
-**Framework**: MetalFX
+**Framework**: MetalFX  
+**Role**: Sample Code  
+**Download**: [ApplyingTemporalAntialiasingAndUpscalingUsingMetalFX.zip](https://docs-assets.developer.apple.com/published/cd4b8936af25/ApplyingTemporalAntialiasingAndUpscalingUsingMetalFX.zip)
 
 Reduce render workloads while increasing image detail with MetalFX.
 
@@ -13,9 +15,9 @@ Reduce render workloads while increasing image detail with MetalFX.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session [`10103: Boost performance with MetalFX upscaling`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10103/).
+> **Note**: This sample code project is associated with WWDC22 session [10103: Boost performance with MetalFX upscaling](https://developer.apple.com/wwdc22/10103/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 This sample code project requires the following:
 
@@ -25,9 +27,10 @@ This sample code project requires the following:
 
 ## See Also
 
-- [protocol MTLFXTemporalScaler](mtlfxtemporalscaler.md)
+### Temporal scaling
+- [protocol MTLFXTemporalScaler](./mtlfxtemporalscaler.md)
   An upscaling effect that generates a higher resolution texture in a render pass by analyzing multiple input textures over time.
-- [class MTLFXTemporalScalerDescriptor](mtlfxtemporalscalerdescriptor.md)
+- [class MTLFXTemporalScalerDescriptor](./mtlfxtemporalscalerdescriptor.md)
   A set of properties that configure a temporal scaling effect, and a factory method that creates the effect.
 
 

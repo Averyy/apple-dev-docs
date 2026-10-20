@@ -1,7 +1,8 @@
 # kAudioUnitProperty_SpeechChannel
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The speech channel property in the speech synthesis audio unit.
 

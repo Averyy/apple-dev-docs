@@ -1,6 +1,7 @@
 # showsScrollIndicator
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Shows a scroll indicator along the side of an element appropriate for the userâ€™s specified language.
 
@@ -8,17 +9,18 @@ Shows a scroll indicator along the side of an element appropriate for the userâ€
 
 For left-to-right languages, the scroll indicator is on the right side of the element. For right-to-left languages, the scroll indicator is on the left side of the element.
 
-##### Values for Showsscrollindicator
+##### Values for showsScrollIndicator
 
 - **Boolean**: When set to `true`, displays the scroll indicator.
 
-##### Elements That Use Showsscrollindicator
+##### Elements that Use showsScrollIndicator
 
-- [`description`](description.md) element inside of a `descriptiveAlertTemplate` element.
+- [description](./description.md) element inside of a `descriptiveAlertTemplate` element.
 
 ## See Also
 
-- [indexTitles](indextitles.md)
+### Scrolling
+- [indexTitles](./indextitles.md)
   Specifies index bar titles for a section element.
 
 

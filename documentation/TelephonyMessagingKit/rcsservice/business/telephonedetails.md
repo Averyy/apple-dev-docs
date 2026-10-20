@@ -1,7 +1,8 @@
 # RCSService.Business.TelephoneDetails
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure containing the telephone number details provided by a business.
 
@@ -17,47 +18,48 @@ struct TelephoneDetails
 ## Topics
 
 ### Accessing telephone details
-- [let label: String](rcsservice/business/telephonedetails/label.md)
+- [let label: String](./telephonedetails/label.md)
   The label for the phone number.
-- [let phoneNumber: String](rcsservice/business/telephonedetails/phonenumber.md)
+- [let phoneNumber: String](./telephonedetails/phonenumber.md)
   Phone number provided by business.
-- [let phoneNumberType: String](rcsservice/business/telephonedetails/phonenumbertype.md)
+- [let phoneNumberType: String](./telephonedetails/phonenumbertype.md)
   A string to represent the type of phone number; for example, “Work”.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [RCSService.Business.Card](rcsservice/business/card.md)
+### Supporting types
+- [RCSService.Business.Card](./card.md)
   Structure representing a standalone card.
-- [RCSService.Business.CardCarousel](rcsservice/business/cardcarousel.md)
+- [RCSService.Business.CardCarousel](./cardcarousel.md)
   Structure representing a card carousel.
-- [RCSService.Business.ComposeRecordingAction](rcsservice/business/composerecordingaction.md)
+- [RCSService.Business.ComposeRecordingAction](./composerecordingaction.md)
   Compose a draft message with a media recording.
-- [RCSService.Business.ComposeTextAction](rcsservice/business/composetextaction.md)
+- [RCSService.Business.ComposeTextAction](./composetextaction.md)
   Compose a draft text message.
-- [RCSService.Business.CreateCalendarEventAction](rcsservice/business/createcalendareventaction.md)
+- [RCSService.Business.CreateCalendarEventAction](./createcalendareventaction.md)
   Structure representing an action to create a calendar event.
-- [RCSService.Business.DialPhoneNumberAction](rcsservice/business/dialphonenumberaction.md)
+- [RCSService.Business.DialPhoneNumberAction](./dialphonenumberaction.md)
   Suggested action to dial a phone number.
-- [RCSService.Business.Media](rcsservice/business/media.md)
+- [RCSService.Business.Media](./media.md)
   Structure containing media information provided by a business.
-- [RCSService.Business.OpenURLAction](rcsservice/business/openurlaction.md)
+- [RCSService.Business.OpenURLAction](./openurlaction.md)
   Suggested action to open a URL.
-- [RCSService.Business.ShowLocationAction](rcsservice/business/showlocationaction.md)
+- [RCSService.Business.ShowLocationAction](./showlocationaction.md)
   Shows a location on a map.
-- [RCSService.Business.SuggestedAction](rcsservice/business/suggestedaction.md)
+- [RCSService.Business.SuggestedAction](./suggestedaction.md)
   Suggested action sent by a business.
-- [RCSService.Business.SuggestedReply](rcsservice/business/suggestedreply.md)
+- [RCSService.Business.SuggestedReply](./suggestedreply.md)
   Suggested reply in response to a business message.
-- [RCSService.Business.URIEntry](rcsservice/business/urientry.md)
+- [RCSService.Business.URIEntry](./urientry.md)
   Structure containing details of a URI provided by a business.
 
 

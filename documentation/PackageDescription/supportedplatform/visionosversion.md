@@ -1,7 +1,8 @@
 # SupportedPlatform.VisionOSVersion
 
 **Framework**: PackageDescription  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The supported visionOS version.
 
@@ -14,28 +15,29 @@ struct VisionOSVersion
 ## Topics
 
 ### Type Properties
-- [static let v1: SupportedPlatform.VisionOSVersion](supportedplatform/visionosversion/v1.md)
+- [static let v1: SupportedPlatform.VisionOSVersion](./visionosversion/v1.md)
   The value that represents visionOS 1.0.
-- [static let v2: SupportedPlatform.VisionOSVersion](supportedplatform/visionosversion/v2.md)
+- [static let v2: SupportedPlatform.VisionOSVersion](./visionosversion/v2.md)
   The value that represents visionOS 2.0.
-- [static let v26: SupportedPlatform.VisionOSVersion](supportedplatform/visionosversion/v26.md)
+- [static let v26: SupportedPlatform.VisionOSVersion](./visionosversion/v26.md)
   The value that represents visionOS 26.0.
-- [static let v27: SupportedPlatform.VisionOSVersion](supportedplatform/visionosversion/v27.md)
+- [static let v27: SupportedPlatform.VisionOSVersion](./visionosversion/v27.md)
   The value that represents visionOS 27.0.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func visionOS(SupportedPlatform.VisionOSVersion) -> SupportedPlatform](supportedplatform/visionos(_:)-3ip0z.md)
+### Supporting visionOS
+- [static func visionOS(SupportedPlatform.VisionOSVersion) -> SupportedPlatform](./visionos%28_%29-3ip0z.md)
   Configure the minimum deployment target version for the visionOS platform.
-- [static func visionOS(String) -> SupportedPlatform](supportedplatform/visionos(_:)-6ur2u.md)
+- [static func visionOS(String) -> SupportedPlatform](./visionos%28_%29-6ur2u.md)
   Configure the minimum deployment target version for the visionOS platform using a custom version string.
-- [static let visionOS: Platform](platform/visionos.md)
+- [static let visionOS: Platform](../platform/visionos.md)
   The visionOS platform.
 
 

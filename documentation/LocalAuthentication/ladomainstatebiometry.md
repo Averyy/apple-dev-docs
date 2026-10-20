@@ -1,7 +1,8 @@
 # LADomainStateBiometry
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -16,25 +17,29 @@
 class LADomainStateBiometry
 ```
 
+```objc
+@interface LADomainStateBiometry : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var biometryType: LABiometryType](ladomainstatebiometry/biometrytype.md)
+- [var biometryType: LABiometryType](./ladomainstatebiometry/biometrytype.md)
   Indicates biometry type available on the device.
-- [var stateHash: Data?](ladomainstatebiometry/statehash.md)
+- [var stateHash: Data?](./ladomainstatebiometry/statehash.md)
   Contains state hash data for the available biometry type. Returns `nil` if no biometry entities are enrolled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # setCaption(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the text of the label on a push button control.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setCaption(_ name: String!)
+```
+
+```objc
+- (void) setCaption:(NSString *) name;
 ```
 
 ## Parameters
@@ -20,9 +25,11 @@ func setCaption(_ name: String!)
 
 ## See Also
 
-- [class PDFAnnotationButtonWidget](pdfannotationbuttonwidget.md)
+### Related Documentation
+- [class PDFAnnotationButtonWidget](../pdfannotationbuttonwidget.md)
   A `PDFAnnotationButtonWidget` object provides user interactivity on a page of a PDF document. There are three types of buttons available: push button, radio button, and checkbox.
-- [func caption() -> String!](pdfannotationbuttonwidget/caption.md)
+### Getting and Setting the Control Label Text
+- [func caption() -> String!](./caption%28%29.md)
   Returns the text of the label on a push button control.
 
 

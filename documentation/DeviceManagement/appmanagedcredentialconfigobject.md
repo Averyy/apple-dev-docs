@@ -1,7 +1,8 @@
 # AppManagedCredentialConfigObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary of values associated with a credential config.
 
@@ -14,18 +15,18 @@ A dictionary of values associated with a credential config.
 
 ## Declaration
 
-```swift
+```
 object AppManagedCredentialConfigObject
 ```
 
 ## Mentions
 
-- [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
+- [Configuring managed apps and extensions](./configuring-managed-apps-and-extensions.md)
 
 ## Properties
 
-- `AssetReference` (string) *(required)*: Specifies the identifier of an asset declaration containing a username and password. The [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework makes the password available to the app or extension. The [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework ignores the username.
-- `Identifier` (string) *(required)*: The app or extension uses this identifier to fetch the corresponding password using the [`ManagedApp`](https://developer.apple.com/documentation/managedapp) framework. App developers define the values for these identifiers.
+- `AssetReference` (string) *(required)*: Specifies the identifier of an asset declaration containing a username and password. The [ManagedApp](../ManagedApp/ManagedApp.md) framework makes the password available to the app or extension. The [ManagedApp](../ManagedApp/ManagedApp.md) framework ignores the username.
+- `Identifier` (string) *(required)*: The app or extension uses this identifier to fetch the corresponding password using the [ManagedApp](../ManagedApp/ManagedApp.md) framework. App developers define the values for these identifiers.
 
 
 ---

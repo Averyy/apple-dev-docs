@@ -1,7 +1,8 @@
 # applyingGainMap(_:headroom:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create an image that applies a gain map Core Image image with a specified headroom to the received Core Image image.
 
@@ -19,18 +20,23 @@ Create an image that applies a gain map Core Image image with a specified headro
 func applyingGainMap(_ gainmap: CIImage, headroom: Float) -> CIImage
 ```
 
+```objc
+- (CIImage *) imageByApplyingGainMap:(CIImage *) gainmap headroom:(float) headroom;
+```
+
 #### Return Value
 
- An autoreleased [`CIImage`](ciimage.md) instance or the received image.
+ An autoreleased [`CIImage`](../ciimage.md) instance or the received image.
 
 ## Parameters
 
-- `gainmap`: The gain map [`CIImage`](ciimage.md) instance to apply to the receiver.
+- `gainmap`: The gain map [`CIImage`](../ciimage.md) instance to apply to the receiver.
 - `headroom`: A float value that specify how much headroom the resulting image should have. The headroom value will be limited to between 1.0 (i.e. SDR) and the full headroom allowed by the gain map.
 
 ## See Also
 
-- [func applyingGainMap(CIImage) -> CIImage](ciimage/applyinggainmap(_:).md)
+### Instance Methods
+- [func applyingGainMap(CIImage) -> CIImage](./applyinggainmap%28_%29.md)
   Create an image that applies a gain map Core Image image to the received Core Image image.
 
 

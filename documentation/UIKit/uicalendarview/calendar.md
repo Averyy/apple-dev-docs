@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar that the calendar view illustrates.
 
@@ -17,15 +18,20 @@ The calendar that the calendar view illustrates.
 var calendar: Calendar { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nonnull) NSCalendar * calendar;
+```
+
 #### Discussion
 
-Defaults to [`current`](https://developer.apple.com/documentation/foundation/nscalendar/current), which is the user’s current calendar set in Settings.
+Defaults to [`current`](../../Foundation/nscalendar/current.md), which is the user’s current calendar set in Settings.
 
 ## See Also
 
-- [var locale: Locale](uicalendarview/locale.md)
+### Setting calendar details
+- [var locale: Locale](./locale.md)
   The locale the calendar view uses for calendar conventions.
-- [var timeZone: TimeZone?](uicalendarview/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone from the date the calendar view displays.
 
 

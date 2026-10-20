@@ -1,7 +1,8 @@
 # aligned
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The aligned axis markers style.
 

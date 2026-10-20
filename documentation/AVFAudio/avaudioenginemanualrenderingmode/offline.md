@@ -1,7 +1,8 @@
 # AVAudioEngineManualRenderingMode.offline
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An engine that operates in an offline mode.
 
@@ -20,9 +21,14 @@ An engine that operates in an offline mode.
 case offline
 ```
 
+```c
+AVAudioEngineManualRenderingModeOffline
+```
+
 ## See Also
 
-- [AVAudioEngineManualRenderingMode.realtime](avaudioenginemanualrenderingmode/realtime.md)
+### Choosing a rendering mode
+- [AVAudioEngineManualRenderingMode.realtime](./realtime.md)
   An engine that operates under real-time constraints and doesn’t make blocking calls while rendering.
 
 

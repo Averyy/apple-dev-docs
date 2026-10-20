@@ -1,7 +1,8 @@
 # nw_ip_ecn_flag_ce
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Congestion Experienced.
 
@@ -20,13 +21,18 @@ Congestion Experienced.
 var nw_ip_ecn_flag_ce: nw_ip_ecn_flag_t { get }
 ```
 
+```c
+nw_ip_ecn_flag_ce
+```
+
 ## See Also
 
-- [var nw_ip_ecn_flag_non_ect: nw_ip_ecn_flag_t](nw_ip_ecn_flag_non_ect.md)
+### ECN Flags
+- [var nw_ip_ecn_flag_non_ect: nw_ip_ecn_flag_t](./nw_ip_ecn_flag_non_ect.md)
   Non-ECN Capable Transport.
-- [var nw_ip_ecn_flag_ect_0: nw_ip_ecn_flag_t](nw_ip_ecn_flag_ect_0.md)
+- [var nw_ip_ecn_flag_ect_0: nw_ip_ecn_flag_t](./nw_ip_ecn_flag_ect_0.md)
   ECN Capable Transport (flag 0).
-- [var nw_ip_ecn_flag_ect_1: nw_ip_ecn_flag_t](nw_ip_ecn_flag_ect_1.md)
+- [var nw_ip_ecn_flag_ect_1: nw_ip_ecn_flag_t](./nw_ip_ecn_flag_ect_1.md)
   ECN Capable Transport (flag 1).
 
 

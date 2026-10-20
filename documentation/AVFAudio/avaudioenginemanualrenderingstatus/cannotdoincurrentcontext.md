@@ -1,7 +1,8 @@
 # AVAudioEngineManualRenderingStatus.cannotDoInCurrentContext
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that the system can’t perform under the current conditions.
 
@@ -20,17 +21,22 @@ An operation that the system can’t perform under the current conditions.
 case cannotDoInCurrentContext
 ```
 
+```c
+AVAudioEngineManualRenderingStatusCannotDoInCurrentContext
+```
+
 #### Discussion
 
 This status guards a real-time render operation when a reconfiguration of the engine’s internal state is in progress. The client can try again later.
 
 ## See Also
 
-- [AVAudioEngineManualRenderingStatus.error](avaudioenginemanualrenderingstatus/error.md)
+### Interpreting rendering results
+- [AVAudioEngineManualRenderingStatus.error](./error.md)
   A problem that occurs during rendering and results in no data returning.
-- [AVAudioEngineManualRenderingStatus.success](avaudioenginemanualrenderingstatus/success.md)
+- [AVAudioEngineManualRenderingStatus.success](./success.md)
   A status that indicates the successful return of the requested data.
-- [AVAudioEngineManualRenderingStatus.insufficientDataFromInputNode](avaudioenginemanualrenderingstatus/insufficientdatafrominputnode.md)
+- [AVAudioEngineManualRenderingStatus.insufficientDataFromInputNode](./insufficientdatafrominputnode.md)
   A condition that occurs when the input node doesn’t return enough input data to satisfy the render request at the time of the request.
 
 

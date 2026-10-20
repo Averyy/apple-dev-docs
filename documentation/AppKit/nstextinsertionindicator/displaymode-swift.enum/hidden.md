@@ -1,7 +1,8 @@
 # NSTextInsertionIndicator.DisplayMode.hidden
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 14.0+
@@ -12,14 +13,19 @@
 case hidden
 ```
 
+```c
+NSTextInsertionIndicatorDisplayModeHidden
+```
+
 ## Mentions
 
-- [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
+- [Adopting the system text cursor in custom text views](../../adopting-the-system-text-cursor-in-custom-text-views.md)
 
 ## See Also
 
-- [NSTextInsertionIndicator.DisplayMode.automatic](nstextinsertionindicator/displaymode-swift.enum/automatic.md)
-- [NSTextInsertionIndicator.DisplayMode.visible](nstextinsertionindicator/displaymode-swift.enum/visible.md)
+### Defining the display mode
+- [NSTextInsertionIndicator.DisplayMode.automatic](./automatic.md)
+- [NSTextInsertionIndicator.DisplayMode.visible](./visible.md)
 
 
 ---

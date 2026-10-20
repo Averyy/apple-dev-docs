@@ -1,7 +1,8 @@
 # MicrosoftGSM
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The Microsoft GSM 6.10 format.
 
@@ -10,15 +11,16 @@ The Microsoft GSM 6.10 format.
 
 ## Declaration
 
-```swift
+```c
 MicrosoftGSM
 ```
 
 ## See Also
 
-- [ALaw](audiodriverkit/iouseraudioformatid/alaw.md)
+### Narrowband Formats
+- [ALaw](./alaw.md)
   The aLaw 2:1 format.
-- [ULaw](audiodriverkit/iouseraudioformatid/ulaw.md)
+- [ULaw](./ulaw.md)
   The µLaw 2:1 format.
 
 

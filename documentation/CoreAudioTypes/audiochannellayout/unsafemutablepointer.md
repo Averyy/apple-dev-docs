@@ -1,7 +1,8 @@
 # AudioChannelLayout.UnsafeMutablePointer
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,24 +22,24 @@ struct UnsafeMutablePointer
 ## Topics
 
 ### Initializers
-- [init?(UnsafeMutablePointer<AudioChannelLayout>?)](audiochannellayout/unsafemutablepointer/init(_:)-6v77t.md)
-- [init(UnsafeMutablePointer<AudioChannelLayout>)](audiochannellayout/unsafemutablepointer/init(_:)-xfym.md)
+- [init?(UnsafeMutablePointer<AudioChannelLayout>?)](./unsafemutablepointer/init%28_%29-6v77t.md)
+- [init(UnsafeMutablePointer<AudioChannelLayout>)](./unsafemutablepointer/init%28_%29-xfym.md)
 ### Instance Properties
-- [var count: Int](audiochannellayout/unsafemutablepointer/count.md)
+- [var count: Int](./unsafemutablepointer/count.md)
   The number of `AudioChannelDescription`s
-- [var unsafeMutablePointer: UnsafeMutablePointer<AudioChannelLayout>](audiochannellayout/unsafemutablepointer/unsafemutablepointer.md)
-- [var unsafePointer: UnsafePointer<AudioChannelLayout>](audiochannellayout/unsafemutablepointer/unsafepointer.md)
+- [var unsafeMutablePointer: UnsafeMutablePointer<AudioChannelLayout>](./unsafemutablepointer/unsafemutablepointer.md)
+- [var unsafePointer: UnsafePointer<AudioChannelLayout>](./unsafemutablepointer/unsafepointer.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [MutableCollection](../../Swift/mutablecollection.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

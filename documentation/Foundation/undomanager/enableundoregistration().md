@@ -1,7 +1,8 @@
 # enableUndoRegistration()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables the recording of undo operations.
 
@@ -20,15 +21,20 @@ Enables the recording of undo operations.
 func enableUndoRegistration()
 ```
 
+```objc
+- (void) enableUndoRegistration;
+```
+
 #### Discussion
 
-Because undo registration is enabled by default, it is often used to balance a prior [`disableUndoRegistration()`](undomanager/disableundoregistration().md) message. Undo registration isn’t actually re-enabled until an enable message balances the last disable message in effect. Raises an `NSInternalInconsistencyException` if invoked while no [`disableUndoRegistration()`](undomanager/disableundoregistration().md) message is in effect.
+Because undo registration is enabled by default, it is often used to balance a prior [`disableUndoRegistration()`](./disableundoregistration%28%29.md) message. Undo registration isn’t actually re-enabled until an enable message balances the last disable message in effect. Raises an `NSInternalInconsistencyException` if invoked while no [`disableUndoRegistration()`](./disableundoregistration%28%29.md) message is in effect.
 
 ## See Also
 
-- [func disableUndoRegistration()](undomanager/disableundoregistration.md)
+### Enabling and disabling undo
+- [func disableUndoRegistration()](./disableundoregistration%28%29.md)
   Disables the recording of undo operations.
-- [var isUndoRegistrationEnabled: Bool](undomanager/isundoregistrationenabled.md)
+- [var isUndoRegistrationEnabled: Bool](./isundoregistrationenabled.md)
   A Boolean value that indicates whether the recording of undo operations is enabled.
 
 

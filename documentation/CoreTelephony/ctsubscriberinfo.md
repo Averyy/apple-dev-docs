@@ -1,7 +1,8 @@
 # CTSubscriberInfo
 
 **Framework**: Core Telephony  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides an array of cellular network subscribers.
 
@@ -16,35 +17,40 @@ An object that provides an array of cellular network subscribers.
 class CTSubscriberInfo
 ```
 
+```objc
+@interface CTSubscriberInfo : NSObject
+```
+
 #### Overview
 
-Use the [`CTSubscriber`](ctsubscriber.md) instances provided by this class to identify individual subscribers by their [`carrierToken`](ctsubscriber/carriertoken.md) or [`identifier`](ctsubscriber/identifier.md) properties.
+Use the [`CTSubscriber`](./ctsubscriber.md) instances provided by this class to identify individual subscribers by their [`carrierToken`](./ctsubscriber/carriertoken.md) or [`identifier`](./ctsubscriber/identifier.md) properties.
 
 ## Topics
 
 ### Getting Subscriber Information
-- [class func subscribers() -> [CTSubscriber]](ctsubscriberinfo/subscribers.md)
+- [class func subscribers() -> [CTSubscriber]](./ctsubscriberinfo/subscribers%28%29.md)
   Returns the cellular network subscribers.
-- [class func subscriber() -> CTSubscriber](ctsubscriberinfo/subscriber.md)
+- [class func subscriber() -> CTSubscriber](./ctsubscriberinfo/subscriber%28%29.md)
   Returns the cellular network subscribers.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CTSubscriber](ctsubscriber.md)
+### Subscriber information
+- [class CTSubscriber](./ctsubscriber.md)
   A cellular network subscriber.
-- [protocol CTSubscriberDelegate](ctsubscriberdelegate.md)
+- [protocol CTSubscriberDelegate](./ctsubscriberdelegate.md)
   A protocol to handle changes to subscriber information.
 
 

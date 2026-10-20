@@ -1,17 +1,18 @@
 # MPSImageKeypointRangeInfo
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that specifies information to find the keypoints in an image.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,26 +20,31 @@ A structure that specifies information to find the keypoints in an image.
 struct MPSImageKeypointRangeInfo
 ```
 
+```c
+typedef struct { ... } MPSImageKeypointRangeInfo;
+```
+
 ## Topics
 
 ### Instance Properties
-- [var maximumKeypoints: Int](mpsimagekeypointrangeinfo/maximumkeypoints.md)
-- [var minimumThresholdValue: Float](mpsimagekeypointrangeinfo/minimumthresholdvalue.md)
+- [var maximumKeypoints: Int](./mpsimagekeypointrangeinfo/maximumkeypoints.md)
+- [var minimumThresholdValue: Float](./mpsimagekeypointrangeinfo/minimumthresholdvalue.md)
 ### Initializers
-- [init()](mpsimagekeypointrangeinfo/init.md)
-- [init(maximumKeypoints: Int, minimumThresholdValue: Float)](mpsimagekeypointrangeinfo/init(maximumkeypoints:minimumthresholdvalue:).md)
+- [init()](./mpsimagekeypointrangeinfo/init%28%29.md)
+- [init(maximumKeypoints: Int, minimumThresholdValue: Float)](./mpsimagekeypointrangeinfo/init%28maximumkeypoints,minimumthresholdvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class MPSImageFindKeypoints](mpsimagefindkeypoints.md)
+### Keypoints
+- [class MPSImageFindKeypoints](./mpsimagefindkeypoints.md)
   A kernel that is used to find a list of keypoints.
-- [struct MPSImageKeypointData](mpsimagekeypointdata.md)
+- [struct MPSImageKeypointData](./mpsimagekeypointdata.md)
   A structure that specifies keypoint information.
 
 

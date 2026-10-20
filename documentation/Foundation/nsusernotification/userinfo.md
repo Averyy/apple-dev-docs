@@ -1,17 +1,24 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Application-specific user info that can be attached to the notification.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
 ```swift
 var userInfo: [String : Any]? { get set }
+```
+
+```objc
+@property (copy, nullable) NSDictionary<NSString *,id> * userInfo;
 ```
 
 #### Discussion

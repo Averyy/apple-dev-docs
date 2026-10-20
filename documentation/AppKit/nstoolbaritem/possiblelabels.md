@@ -1,7 +1,8 @@
 # possibleLabels
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of labels that the item might display.
 
@@ -17,19 +18,24 @@ The set of labels that the item might display.
 var possibleLabels: Set<String> { get set }
 ```
 
+```objc
+@property (copy) NSSet<NSString *> * possibleLabels;
+```
+
 #### Discussion
 
 Use this property to specify all of the labels you might possibly use for the toolbar item. Specify all strings in the current locale. To ensure there’s space for the longest label, the item sizes itself using the strings you provide.
 
 ## See Also
 
-- [var label: String](nstoolbaritem/label.md)
+### Describing the item
+- [var label: String](./label.md)
   The label that appears for this item in the toolbar.
-- [var paletteLabel: String](nstoolbaritem/palettelabel.md)
+- [var paletteLabel: String](./palettelabel.md)
   The label that appears when the toolbar item is in the customization palette.
-- [var title: String](nstoolbaritem/title.md)
+- [var title: String](./title.md)
   The title of the toolbar item.
-- [var toolTip: String?](nstoolbaritem/tooltip.md)
+- [var toolTip: String?](./tooltip.md)
   The tooltip to display when someone hovers over the item in the toolbar.
 
 

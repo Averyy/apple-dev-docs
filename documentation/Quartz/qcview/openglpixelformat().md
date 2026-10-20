@@ -1,17 +1,24 @@
 # openGLPixelFormat()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the OpenGL pixel format used by the view.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func openGLPixelFormat() -> NSOpenGLPixelFormat!
+```
+
+```objc
+- (NSOpenGLPixelFormat *) openGLPixelFormat;
 ```
 
 #### Return Value
@@ -24,7 +31,8 @@ This pixel format as a read-only object. Do not attempt to change any of its set
 
 ## See Also
 
-- [func openGLContext() -> NSOpenGLContext!](qcview/openglcontext.md)
+### Working With OpenGL
+- [func openGLContext() -> NSOpenGLContext!](./openglcontext%28%29.md)
   Returns the OpenGL context used by the view.
 
 

@@ -1,7 +1,8 @@
 # SQLResultSet
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface SQLResultSet
 ```
 
 ## Topics
 
 ### Instance Properties
-- [insertId](sqlresultset/1634165-insertid.md)
-- [rows](sqlresultset/1632474-rows.md)
-- [rowsAffected](sqlresultset/1631681-rowsaffected.md)
+- [insertId](./sqlresultset/api-1634165-insertid.md)
+- [rows](./sqlresultset/api-1632474-rows.md)
+- [rowsAffected](./sqlresultset/api-1631681-rowsaffected.md)
 
 
 ---

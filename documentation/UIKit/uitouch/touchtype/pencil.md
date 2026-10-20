@@ -1,7 +1,8 @@
 # UITouch.TouchType.pencil
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A touch from Apple Pencil.
 
@@ -18,17 +19,22 @@ A touch from Apple Pencil.
 case pencil
 ```
 
+```c
+UITouchTypePencil
+```
+
 #### Discussion
 
 A pencil touch occurs when Apple Pencil interacts with the device’s screen.
 
 ## See Also
 
-- [UITouch.TouchType.direct](uitouch/touchtype/direct.md)
+### Touch types
+- [UITouch.TouchType.direct](./direct.md)
   A touch resulting from direct contact with the screen.
-- [UITouch.TouchType.indirect](uitouch/touchtype/indirect.md)
+- [UITouch.TouchType.indirect](./indirect.md)
   A touch that doesn’t result from contact with the screen.
-- [UITouch.TouchType.indirectPointer](uitouch/touchtype/indirectpointer.md)
+- [UITouch.TouchType.indirectPointer](./indirectpointer.md)
   A touch resulting from a button-based, indirect input device that describes the input sequence from button press to button release.
 
 

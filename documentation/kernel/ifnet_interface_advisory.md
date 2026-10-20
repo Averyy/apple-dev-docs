@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifnet_interface_advisory;
 ```
 

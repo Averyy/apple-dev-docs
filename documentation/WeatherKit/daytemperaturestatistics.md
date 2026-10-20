@@ -1,7 +1,8 @@
 # DayTemperatureStatistics
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes temperature statistics for a day.
 
@@ -23,21 +24,21 @@ struct DayTemperatureStatistics
 ## Topics
 
 ### Instance Properties
-- [var averageHighTemperature: Measurement<UnitTemperature>](daytemperaturestatistics/averagehightemperature.md)
+- [var averageHighTemperature: Measurement<UnitTemperature>](./daytemperaturestatistics/averagehightemperature.md)
   The average observed high temperature for the day.
-- [var averageLowTemperature: Measurement<UnitTemperature>](daytemperaturestatistics/averagelowtemperature.md)
+- [var averageLowTemperature: Measurement<UnitTemperature>](./daytemperaturestatistics/averagelowtemperature.md)
   The average observed low temperature for the day.
-- [var day: Int](daytemperaturestatistics/day.md)
+- [var day: Int](./daytemperaturestatistics/day.md)
   The day of the year, in UTC.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

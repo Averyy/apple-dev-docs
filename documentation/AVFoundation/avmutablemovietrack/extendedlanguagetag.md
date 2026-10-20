@@ -1,7 +1,8 @@
 # extendedLanguageTag
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language tag of the track.
 
@@ -19,13 +20,18 @@ The language tag of the track.
 var extendedLanguageTag: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * extendedLanguageTag;
+```
+
 #### Discussion
 
-The value is a [`BCP-47`](https://developer.apple.comhttps://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
+The value is a [BCP-47](https://tools.ietf.org/html/bcp47) language tag, or `nil` if the track doesn’t specify a language tag.
 
 ## See Also
 
-- [var languageCode: String?](avmutablemovietrack/languagecode.md)
+### Accessing language support
+- [var languageCode: String?](./languagecode.md)
   The language code of the track.
 
 

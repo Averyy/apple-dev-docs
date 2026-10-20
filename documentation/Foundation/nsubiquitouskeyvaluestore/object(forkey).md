@@ -1,7 +1,8 @@
 # object(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object associated with the specified key.
 
@@ -20,6 +21,10 @@ Returns the object associated with the specified key.
 func object(forKey aKey: String) -> Any?
 ```
 
+```objc
+- (id) objectForKey:(NSString *) aKey;
+```
+
 #### Return Value
 
 The object associated with `aKey`, or `nil` if the key isn’t present.
@@ -30,21 +35,22 @@ The object associated with `aKey`, or `nil` if the key isn’t present.
 
 ## See Also
 
-- [func bool(forKey: String) -> Bool](nsubiquitouskeyvaluestore/bool(forkey:).md)
+### Getting values
+- [func bool(forKey: String) -> Bool](./bool%28forkey%29.md)
   Returns the Boolean value associated with the specified key.
-- [func double(forKey: String) -> Double](nsubiquitouskeyvaluestore/double(forkey:).md)
+- [func double(forKey: String) -> Double](./double%28forkey%29.md)
   Returns the double value associated with the specified key.
-- [func longLong(forKey: String) -> Int64](nsubiquitouskeyvaluestore/longlong(forkey:).md)
+- [func longLong(forKey: String) -> Int64](./longlong%28forkey%29.md)
   Returns the 64-bit integer value associated with the specified key.
-- [func string(forKey: String) -> String?](nsubiquitouskeyvaluestore/string(forkey:).md)
+- [func string(forKey: String) -> String?](./string%28forkey%29.md)
   Returns the string associated with the specified key.
-- [func data(forKey: String) -> Data?](nsubiquitouskeyvaluestore/data(forkey:).md)
+- [func data(forKey: String) -> Data?](./data%28forkey%29.md)
   Returns the data object associated with the specified key.
-- [func array(forKey: String) -> [Any]?](nsubiquitouskeyvaluestore/array(forkey:).md)
+- [func array(forKey: String) -> [Any]?](./array%28forkey%29.md)
   Returns the array associated with the specified key.
-- [func dictionary(forKey: String) -> [String : Any]?](nsubiquitouskeyvaluestore/dictionary(forkey:).md)
+- [func dictionary(forKey: String) -> [String : Any]?](./dictionary%28forkey%29.md)
   Returns the dictionary object associated with the specified key.
-- [var dictionaryRepresentation: [String : Any]](nsubiquitouskeyvaluestore/dictionaryrepresentation.md)
+- [var dictionaryRepresentation: [String : Any]](./dictionaryrepresentation.md)
   A dictionary with all of the key-value pairs in the iCloud key-value store.
 
 

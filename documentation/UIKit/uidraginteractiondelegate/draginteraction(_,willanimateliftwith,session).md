@@ -1,7 +1,8 @@
 # dragInteraction(_:willAnimateLiftWith:session:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the system’s lift animation is about to start.
 
@@ -17,11 +18,15 @@ Tells the delegate the system’s lift animation is about to start.
 optional func dragInteraction(_ interaction: UIDragInteraction, willAnimateLiftWith animator: any UIDragAnimating, session: any UIDragSession)
 ```
 
+```objc
+- (void) dragInteraction:(UIDragInteraction *) interaction willAnimateLiftWithAnimator:(id<UIDragAnimating>) animator session:(id<UIDragSession>) session;
+```
+
 #### Discussion
 
-To add a custom animation block that runs during the lift animation, pass the block to the animator’s [`addAnimations(_:)`](uidraganimating/addanimations(_:).md) method.
+To add a custom animation block that runs during the lift animation, pass the block to the animator’s [`addAnimations(_:)`](../uidraganimating/addanimations%28_%29.md) method.
 
-To add a completion block that runs after the lift animation has finished, pass the block to the animator’s [`addCompletion(_:)`](uidraganimating/addcompletion(_:).md) method.
+To add a completion block that runs after the lift animation has finished, pass the block to the animator’s [`addCompletion(_:)`](../uidraganimating/addcompletion%28_%29.md) method.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ To add a completion block that runs after the lift animation has finished, pass 
 
 ## See Also
 
-- [func dragInteraction(UIDragInteraction, item: UIDragItem, willAnimateCancelWith: any UIDragAnimating)](uidraginteractiondelegate/draginteraction(_:item:willanimatecancelwith:).md)
+### Animating the drag behaviors
+- [func dragInteraction(UIDragInteraction, item: UIDragItem, willAnimateCancelWith: any UIDragAnimating)](./draginteraction%28_,item,willanimatecancelwith%29.md)
   Tells the delegate the system’s cancellation animation is about to start.
 
 

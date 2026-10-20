@@ -1,17 +1,20 @@
 # players
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The players connected to the channel.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 18.0
+- iPadOS 8.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.10+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,9 +22,22 @@ The players connected to the channel.
 var players: [GKPlayer] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) NSArray<GKPlayer *> * players;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSArray<GKPlayer *> * players;
+```
+
 ## See Also
 
-- [var name: String](gkvoicechat/name.md)
+### Accessing Properties
+- [var name: String](./name.md)
   The name of the voice chat channel.
 
 

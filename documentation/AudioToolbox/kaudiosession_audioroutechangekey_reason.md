@@ -1,16 +1,19 @@
 # kAudioSession_AudioRouteChangeKey_Reason
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Identifies the reason for the audio route change.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+
+> **Deprecated**: Deprecated in iOS 7.0.
 
 ## Declaration
 
@@ -18,13 +21,17 @@ Identifies the reason for the audio route change.
 var kAudioSession_AudioRouteChangeKey_Reason: String { get }
 ```
 
+```c
+#define kAudioSession_AudioRouteChangeKey_Reason
+```
+
 #### Discussion
 
-Value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object that identifies the reason for the audio route change. See [`Audio Route Change Reasons`](1618380-audio-route-change-reasons.md).
+Value is a [`CFNumber`](../CoreFoundation/cfnumber.md) object that identifies the reason for the audio route change. See [Audio Route Change Reasons](./api-1618380-audio-route-change-reasons.md).
 
 #### Discussion
 
-> **Note**:  It is typically more convenient to instead use the [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) version of this constant, [`kAudioSession_RouteChangeKey_Reason`](kaudiosession_routechangekey_reason.md).
+> **Note**:  It is typically more convenient to instead use the [`CFString`](../CoreFoundation/cfstring.md) version of this constant, [`kAudioSession_RouteChangeKey_Reason`](./kaudiosession_routechangekey_reason.md).
 
 
 ---

@@ -1,18 +1,19 @@
 # preferredTransform
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The track’s transform preference to apply to its visual content during presentation or processing.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ var preferredTransform: CGAffineTransform { get }
 
 #### Discussion
 
-The value of this property is typically, but not always, [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity).
+The value of this property is typically, but not always, [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md).
 
 ## See Also
 
-- [var naturalSize: CGSize](avcompositiontrack/naturalsize.md)
+### Accessing visual characteristics
+- [var naturalSize: CGSize](./naturalsize.md)
   The natural dimensions of the media data that the track references.
 
 

@@ -1,16 +1,19 @@
 # pixelBufferPool
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pixel buffer pool that vends and efficiently recycles the pixel buffers of tagged buffer groups.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- visionOS 1.0+
+- iOS 17.0+ - Deprecated in 27.0
+- iPadOS 17.0+ - Deprecated in 27.0
+- Mac Catalyst 17.0+ - Deprecated in 27.0
+- macOS 14.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVAssetWriter.inputTaggedPixelBufferGroupReceiver(for:pixelBufferAttributes:) instead
 
 ## Declaration
 
@@ -18,17 +21,22 @@ A pixel buffer pool that vends and efficiently recycles the pixel buffers of tag
 var pixelBufferPool: CVPixelBufferPool? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CVPixelBufferPoolRef pixelBufferPool;
+```
+
 #### Discussion
 
-For maximum efficiency, create the pixel buffers of tagged buffer groups using this pool with the [`CVPixelBufferPoolCreatePixelBuffer(_:_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferpoolcreatepixelbuffer(_:_:_:)) function.
+For maximum efficiency, create the pixel buffers of tagged buffer groups using this pool with the [`CVPixelBufferPoolCreatePixelBuffer(_:_:_:)`](../../CoreVideo/cvpixelbufferpoolcreatepixelbuffer%28_,_,_%29.md) function.
 
-The value of this property is `nil` before you call [`startWriting()`](avassetwriter/startwriting().md) on the associated [`AVAssetWriter`](avassetwriter.md) object. Query this property after writing starts to retrieve a `non-nil` value.
+The value of this property is `nil` before you call [`startWriting()`](../avassetwriter/startwriting%28%29.md) on the associated [`AVAssetWriter`](../avassetwriter.md) object. Query this property after writing starts to retrieve a `non-nil` value.
 
 This property is not key value observable.
 
 ## See Also
 
-- [var sourcePixelBufferAttributes: [String : any Sendable]?](avassetwriterinputtaggedpixelbuffergroupadaptor/sourcepixelbufferattributes.md)
+### Configuring the buffer pool
+- [var sourcePixelBufferAttributes: [String : any Sendable]?](./sourcepixelbufferattributes.md)
   The attributes of buffers that the adaptor’s pixel buffer pool vends.
 
 

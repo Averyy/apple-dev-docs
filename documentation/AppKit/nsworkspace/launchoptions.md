@@ -1,12 +1,13 @@
 # NSWorkspace.LaunchOptions
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants specifying how you want to launch an app
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,31 +15,36 @@ Constants specifying how you want to launch an app
 struct LaunchOptions
 ```
 
+```c
+enum NSWorkspaceLaunchOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](nsworkspace/launchoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./launchoptions/init%28rawvalue%29.md)
 ### Deprecated
-- [Deprecated symbols](launchoptions-deprecated-symbols.md)
+- [Deprecated symbols](../launchoptions-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [NSWorkspace.LaunchConfigurationKey](nsworkspace/launchconfigurationkey.md)
-  The following keys can be used in the configuration dictionary of the [`launchApplication(at:options:configuration:)`](nsworkspace/launchapplication(at:options:configuration:).md) method.  Each key is optional, and if omitted, default behavior is applied.
-- [NSWorkspace.FileOperationName](nsworkspace/fileoperationname.md)
+### Deprecated types
+- [NSWorkspace.LaunchConfigurationKey](./launchconfigurationkey.md)
+  The following keys can be used in the configuration dictionary of the [`launchApplication(at:options:configuration:)`](./launchapplication%28at,options,configuration%29.md) method.  Each key is optional, and if omitted, default behavior is applied.
+- [NSWorkspace.FileOperationName](./fileoperationname.md)
   Constants that define types of file operations.
 
 

@@ -1,26 +1,28 @@
 # txPI
 
 **Framework**: SerialDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 mutable uint32_t txPI;
 ```
 
 ## See Also
 
-- [rxCI](driverkit/serial/serialportinterface/rxci.md)
-- [rxPI](driverkit/serial/serialportinterface/rxpi.md)
-- [rxqlogsz](driverkit/serial/serialportinterface/rxqlogsz.md)
-- [rxqoffset](driverkit/serial/serialportinterface/rxqoffset.md)
-- [txCI](driverkit/serial/serialportinterface/txci.md)
-- [txqlogsz](driverkit/serial/serialportinterface/txqlogsz.md)
-- [txqoffset](driverkit/serial/serialportinterface/txqoffset.md)
+### Instance Properties
+- [rxCI](./rxci.md)
+- [rxPI](./rxpi.md)
+- [rxqlogsz](./rxqlogsz.md)
+- [rxqoffset](./rxqoffset.md)
+- [txCI](./txci.md)
+- [txqlogsz](./txqlogsz.md)
+- [txqoffset](./txqoffset.md)
 
 
 ---

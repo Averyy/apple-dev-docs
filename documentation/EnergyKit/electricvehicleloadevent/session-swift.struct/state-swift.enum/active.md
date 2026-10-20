@@ -1,14 +1,15 @@
 # ElectricVehicleLoadEvent.Session.State.active
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that represents all electricity consumption or production events with active states.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,7 @@ case active
 
 ## Mentions
 
-- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+- [Providing charging history for electric vehicles](../../../providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 

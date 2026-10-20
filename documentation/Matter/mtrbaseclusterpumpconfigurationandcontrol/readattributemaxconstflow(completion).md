@@ -1,7 +1,8 @@
 # readAttributeMaxConstFlow(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMaxConstFlow(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMaxConstFlow() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMaxConstFlowWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

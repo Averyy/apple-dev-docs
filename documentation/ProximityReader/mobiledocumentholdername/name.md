@@ -1,7 +1,8 @@
 # name
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representation of the name.
 

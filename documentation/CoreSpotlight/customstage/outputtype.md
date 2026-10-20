@@ -2,6 +2,7 @@
 
 **Framework**: Core Spotlight  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The data type this stage produces as output.
@@ -21,17 +22,18 @@ static var outputType: SearchPipelineDataType { get }
 
 #### Discussion
 
-Specify the type of data your custom stage supports. In the implementation of your type’s `execute` methods, generate a [`SearchPipelineData`](searchpipelinedata.md) structure with the type of data you specified in this property.
+Specify the type of data your custom stage supports. In the implementation of your type’s `execute` methods, generate a [`SearchPipelineData`](../searchpipelinedata.md) structure with the type of data you specified in this property.
 
 The model considers your stage’s input types, output type, and other factors when determining whether to include the stage in a pipeline. When constructing the pipeline, the system maps the output from one stage to the input of the next.
 
 ## See Also
 
-- [static var name: String](customstage/name.md)
+### Getting the stage metadata
+- [static var name: String](./name.md)
   The name of the stage as you want it to appear in the pipeline.
-- [static var description: String](customstage/description.md)
+- [static var description: String](./description.md)
   A human-readable description of what this stage does.
-- [static var inputTypes: [SearchPipelineDataType]](customstage/inputtypes.md)
+- [static var inputTypes: [SearchPipelineDataType]](./inputtypes.md)
   The data types this stage accepts as input.
 
 

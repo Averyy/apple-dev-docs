@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a type-erased categorical summary from a typed categorical summary.
 

@@ -1,7 +1,8 @@
 # requiresReleaseOS
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device must be running a final customer release of the operating system to start an assessment.
 
@@ -15,11 +16,15 @@ A Boolean value that indicates whether the device must be running a final custom
 var requiresReleaseOS: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL requiresReleaseOS;
+```
+
 #### Discussion
 
 When set to `true`, the assessment session will only start if the device is running a released build of the operating system, rather than a beta, seed, or other prerelease build. Defaults to `false`.
 
-> **Note**: [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) for the limits that apply to every enablement requirement.
+> **See Also**: [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) for the limits that apply to every enablement requirement.
 
 
 ---

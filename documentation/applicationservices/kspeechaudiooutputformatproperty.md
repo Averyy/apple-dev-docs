@@ -1,7 +1,8 @@
 # kSpeechAudioOutputFormatProperty
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.9+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSpeechAudioOutputFormatProperty: CFString
+```
+
+```c
+const CFStringRef kSpeechAudioOutputFormatProperty;
 ```
 
 

@@ -1,7 +1,8 @@
 # SHA3_256.Digest
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The digest type for a SHA3-256 hash function.
 

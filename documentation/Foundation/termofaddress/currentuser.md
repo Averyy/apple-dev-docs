@@ -1,7 +1,8 @@
 # currentUser
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The term of address that should be used for addressing the user
 

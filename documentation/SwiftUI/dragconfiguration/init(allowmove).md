@@ -1,7 +1,8 @@
 # init(allowMove:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a drag configuration that can support drag-to-move in addition to drag-to-copy.
 

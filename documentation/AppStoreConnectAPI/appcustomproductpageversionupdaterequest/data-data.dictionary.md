@@ -1,7 +1,8 @@
 # AppCustomProductPageVersionUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app custom product page version update request.
 
@@ -10,21 +11,21 @@ The request body you use to update an app custom product page version update req
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageVersionUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppCustomProductPageVersionUpdateRequest.Data.Attributes](appcustomproductpageversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppCustomProductPageVersionUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app custom product page version update request resource.
 
 ## Properties
 
 - `attributes` (AppCustomProductPageVersionUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appCustomProductPageVersions`
 
 
 ---

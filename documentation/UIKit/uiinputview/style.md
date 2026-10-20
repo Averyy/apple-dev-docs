@@ -1,7 +1,8 @@
 # UIInputView.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the appearance changes for an input view.
 
@@ -9,7 +10,7 @@ Constants that indicate the appearance changes for an input view.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,29 +19,34 @@ Constants that indicate the appearance changes for an input view.
 enum Style
 ```
 
+```c
+enum UIInputViewStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIInputView.Style.default](uiinputview/style/default.md)
+- [UIInputView.Style.default](./style/default.md)
   Apply blur behaviors to the view so that it looks like it belongs with the keyboard.
-- [UIInputView.Style.keyboard](uiinputview/style/keyboard.md)
+- [UIInputView.Style.keyboard](./style/keyboard.md)
   Apply both blur and tinting effects to the view to mimic the keyboard background.
 ### Initializers
-- [init?(rawValue: Int)](uiinputview/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var inputViewStyle: UIInputView.Style](uiinputview/inputviewstyle.md)
+### Getting the input style
+- [var inputViewStyle: UIInputView.Style](./inputviewstyle.md)
   The style for the content of the view.
 
 

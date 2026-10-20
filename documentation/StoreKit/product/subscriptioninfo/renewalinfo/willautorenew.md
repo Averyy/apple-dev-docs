@@ -1,7 +1,8 @@
 # willAutoRenew
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the subscription automatically renews in the next period.
 
@@ -22,18 +23,19 @@ let willAutoRenew: Bool
 
 ## Mentions
 
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](../../../managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting win-back offers in your app](../../../supporting-win-back-offers-in-your-app.md)
 
 ## See Also
 
-- [let state: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/status-swift.struct/state.md)
+### Getting the renewal or expiration state
+- [let state: Product.SubscriptionInfo.RenewalState](../status-swift.struct/state.md)
   The renewal state of the auto-renewable subscription.
-- [let autoRenewPreference: String?](product/subscriptioninfo/renewalinfo/autorenewpreference.md)
+- [let autoRenewPreference: String?](./autorenewpreference.md)
   The product ID of the auto-renewable subscription that will automatically renew.
-- [let expirationReason: Product.SubscriptionInfo.RenewalInfo.ExpirationReason?](product/subscriptioninfo/renewalinfo/expirationreason-swift.property.md)
+- [let expirationReason: Product.SubscriptionInfo.RenewalInfo.ExpirationReason?](./expirationreason-swift.property.md)
   The reason the auto-renewable subscription expired.
-- [Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct.md)
+- [Product.SubscriptionInfo.RenewalInfo.ExpirationReason](./expirationreason-swift.struct.md)
   The reasons for auto-renewable subscription expirations.
 
 

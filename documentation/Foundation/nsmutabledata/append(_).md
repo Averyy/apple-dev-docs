@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the content of another data object to the receiver.
 
@@ -20,15 +21,20 @@ Appends the content of another data object to the receiver.
 func append(_ other: Data)
 ```
 
+```objc
+- (void) appendData:(NSData *) other;
+```
+
 ## Parameters
 
 - `other`: The data object whose content is to be appended to the contents of the receiver.
 
 ## See Also
 
-- [func append(UnsafeRawPointer, length: Int)](nsmutabledata/append(_:length:).md)
+### Adding Bytes
+- [func append(UnsafeRawPointer, length: Int)](./append%28_,length%29.md)
   Appends to the receiver a given number of bytes from a given buffer.
-- [func increaseLength(by: Int)](nsmutabledata/increaselength(by:).md)
+- [func increaseLength(by: Int)](./increaselength%28by%29.md)
   Increases the length of the receiver by a given number of bytes.
 
 

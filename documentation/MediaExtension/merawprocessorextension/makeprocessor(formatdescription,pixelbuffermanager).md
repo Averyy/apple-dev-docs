@@ -2,6 +2,7 @@
 
 **Framework**: MediaExtension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A factory method to create a video RAW processor.
@@ -13,6 +14,10 @@ A factory method to create a video RAW processor.
 
 ```swift
 func makeProcessor(formatDescription: CMVideoFormatDescription, pixelBufferManager extensionPixelBufferManager: MERAWProcessorPixelBufferManager) throws -> any MERAWProcessor
+```
+
+```objc
+- (id<MERAWProcessor>) processorWithFormatDescription:(CMVideoFormatDescriptionRef) formatDescription extensionPixelBufferManager:(MERAWProcessorPixelBufferManager *) extensionPixelBufferManager error:(NSError **) error;
 ```
 
 #### Discussion

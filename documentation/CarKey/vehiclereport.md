@@ -1,7 +1,8 @@
 # VehicleReport
 
 **Framework**: CarKey  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains information about a vehicle configured for remote keyless entry in the user’s Apple Wallet.
 
@@ -27,28 +28,29 @@ A vehicle can optionally attach proprietary data to one of its function identifi
 ## Topics
 
 ### Getting the Vehicle Details
-- [let identifier: String](vehiclereport/identifier.md)
+- [let identifier: String](./vehiclereport/identifier.md)
   The string you use to identify the vehicle when making requests.
-- [var isConnected: Bool](vehiclereport/isconnected.md)
+- [var isConnected: Bool](./vehiclereport/isconnected.md)
   A Boolean value that indicates whether the vehicle is currently connected over Bluetooth.
 ### Getting the Vehicle’s Supported Functions
-- [var supportedFunctions: [FunctionIdentifier]](vehiclereport/supportedfunctions.md)
+- [var supportedFunctions: [FunctionIdentifier]](./vehiclereport/supportedfunctions.md)
   An array of function identifiers that indicates the features the vehicle supports, populated only after the first BLE connection with the vehicle.
-- [func status(for: FunctionIdentifier) throws -> FunctionStatus?](vehiclereport/status(for:).md)
+- [func status(for: FunctionIdentifier) throws -> FunctionStatus?](./vehiclereport/status%28for%29.md)
   Returns the current status of the specified vehicle function.
-- [struct FunctionStatus](functionstatus.md)
+- [struct FunctionStatus](./functionstatus.md)
   A value that the vehicle can return to indicate the status of a particular vehicle feature.
 ### Fetching Data Sent by the Vehicle
-- [func proprietaryData(for: FunctionIdentifier) throws -> Data?](vehiclereport/proprietarydata(for:).md)
+- [func proprietaryData(for: FunctionIdentifier) throws -> Data?](./vehiclereport/proprietarydata%28for%29.md)
   Retrieves the proprietary data associated with one of the vehicle’s functions.
 
 ## See Also
 
-- [class CarKeyRemoteControl](carkeyremotecontrol.md)
+### Setup
+- [class CarKeyRemoteControl](./carkeyremotecontrol.md)
   The object you use to start a new vehicle-related session.
-- [class CarKeyRemoteControlSession](carkeyremotecontrolsession.md)
+- [class CarKeyRemoteControlSession](./carkeyremotecontrolsession.md)
   The object that manages communication with the vehicles you manufacture.
-- [protocol CarKeyRemoteControlSessionDelegate](carkeyremotecontrolsessiondelegate.md)
+- [protocol CarKeyRemoteControlSessionDelegate](./carkeyremotecontrolsessiondelegate.md)
   An interface you use to receive session- and vehicle-related information from the system.
 
 

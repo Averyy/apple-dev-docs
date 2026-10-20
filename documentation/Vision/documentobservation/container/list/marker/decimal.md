@@ -1,7 +1,8 @@
 # DocumentObservation.Container.List.Marker.decimal
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A numerical character that precedes items in an ordered list.
 
@@ -21,17 +22,18 @@ case decimal
 
 ## See Also
 
-- [DocumentObservation.Container.List.Marker.bullet](documentobservation/container/list/marker/bullet.md)
+### Getting the list marker types
+- [DocumentObservation.Container.List.Marker.bullet](./bullet.md)
   A bullet point symbol that precedes items in an unordered list.
-- [DocumentObservation.Container.List.Marker.compositeDecimal](documentobservation/container/list/marker/compositedecimal.md)
+- [DocumentObservation.Container.List.Marker.compositeDecimal](./compositedecimal.md)
   A decimal character containing multiple numbers and digits that precedes items in a list.
-- [DocumentObservation.Container.List.Marker.decorativeDecimal](documentobservation/container/list/marker/decorativedecimal.md)
+- [DocumentObservation.Container.List.Marker.decorativeDecimal](./decorativedecimal.md)
   A decorative character with a number enclosed in a circle that precedes items in a list.
-- [DocumentObservation.Container.List.Marker.hyphen](documentobservation/container/list/marker/hyphen.md)
+- [DocumentObservation.Container.List.Marker.hyphen](./hyphen.md)
   A hyphen character that precedes items in a list.
-- [DocumentObservation.Container.List.Marker.lowercaseLatin](documentobservation/container/list/marker/lowercaselatin.md)
+- [DocumentObservation.Container.List.Marker.lowercaseLatin](./lowercaselatin.md)
   A lowercase alphabetical character that precedes items in a list.
-- [DocumentObservation.Container.List.Marker.uppercaseLatin](documentobservation/container/list/marker/uppercaselatin.md)
+- [DocumentObservation.Container.List.Marker.uppercaseLatin](./uppercaselatin.md)
   An uppercase alphabetical character that precedes items in a list.
 
 

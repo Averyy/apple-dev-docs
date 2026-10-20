@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the timer is currently valid.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the timer is currently valid.
 var isValid: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isValid) BOOL valid;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is still capable of firing or [`false`](https://developer.apple.com/documentation/swift/false) if the timer has been invalidated and is no longer capable of firing.
+[`true`](../../Swift/true.md) if the receiver is still capable of firing or [`false`](../../Swift/false.md) if the timer has been invalidated and is no longer capable of firing.
 
 ## See Also
 
-- [var fireDate: Date](timer/firedate.md)
+### Retrieving Timer Information
+- [var fireDate: Date](./firedate.md)
   The date at which the timer will fire.
-- [var timeInterval: TimeInterval](timer/timeinterval.md)
+- [var timeInterval: TimeInterval](./timeinterval.md)
   The timer’s time interval, in seconds.
-- [var userInfo: Any?](timer/userinfo.md)
+- [var userInfo: Any?](./userinfo.md)
   The receiver’s `userInfo` object.
 
 

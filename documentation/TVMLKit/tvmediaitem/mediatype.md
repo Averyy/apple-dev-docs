@@ -1,12 +1,15 @@
 # TVMediaItem.MediaType
 
 **Framework**: TVMLKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value indicating whether the media is audio or video.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,41 +17,46 @@ A value indicating whether the media is audio or video.
 struct MediaType
 ```
 
+```c
+typedef NSString * TVMediaItemType;
+```
+
 ## Topics
 
 ### Media Types
-- [static let audio: TVMediaItem.MediaType](tvmediaitem/mediatype/audio.md)
+- [static let audio: TVMediaItem.MediaType](./mediatype/audio.md)
   The media item is audio only.
-- [static let video: TVMediaItem.MediaType](tvmediaitem/mediatype/video.md)
+- [static let video: TVMediaItem.MediaType](./mediatype/video.md)
   The media item incorporates video.
 ### Initializers
-- [init(String)](tvmediaitem/mediatype/init(_:).md)
-- [init(rawValue: String)](tvmediaitem/mediatype/init(rawvalue:).md)
+- [init(String)](./mediatype/init%28_%29.md)
+- [init(rawValue: String)](./mediatype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var artworkImageURL: URL?](tvmediaitem/artworkimageurl.md)
+### Identifying Media Items
+- [var artworkImageURL: URL?](./artworkimageurl.md)
   The URL path to the artwork that accompanies the media item.
-- [var itemDescription: String?](tvmediaitem/itemdescription.md)
+- [var itemDescription: String?](./itemdescription.md)
   The description for a media item.
-- [var subtitle: String?](tvmediaitem/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle for a media item.
-- [var title: String?](tvmediaitem/title.md)
+- [var title: String?](./title.md)
   The title for a media item.
-- [var type: TVMediaItem.MediaType?](tvmediaitem/type.md)
+- [var type: TVMediaItem.MediaType?](./type.md)
   The type of media item.
-- [var url: URL?](tvmediaitem/url.md)
+- [var url: URL?](./url.md)
   The URL path to the media item.
-- [var userInfo: [String : Any]](tvmediaitem/userinfo.md)
+- [var userInfo: [String : Any]](./userinfo.md)
   User-defined metadata, like a developer-specific identifier, for a media item.
 
 

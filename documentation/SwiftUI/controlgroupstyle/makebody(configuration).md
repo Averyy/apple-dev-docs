@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view representing the body of a control group.
@@ -23,7 +24,7 @@ Creates a view representing the body of a control group.
 
 #### Discussion
 
-This method will be called for each instance of [`ControlGroup`](controlgroup.md) created within a view hierarchy where this style is the current `ControlGroupStyle`.
+This method will be called for each instance of [`ControlGroup`](../controlgroup.md) created within a view hierarchy where this style is the current `ControlGroupStyle`.
 
 ## Parameters
 
@@ -31,9 +32,10 @@ This method will be called for each instance of [`ControlGroup`](controlgroup.md
 
 ## See Also
 
-- [ControlGroupStyle.Configuration](controlgroupstyle/configuration.md)
+### Creating custom control group styles
+- [ControlGroupStyle.Configuration](./configuration.md)
   The properties of a `ControlGroup` instance being created.
-- [associatedtype Body : View](controlgroupstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view representing the body of a control group.
 
 

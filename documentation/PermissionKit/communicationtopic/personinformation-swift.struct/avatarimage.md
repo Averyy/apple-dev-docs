@@ -1,7 +1,8 @@
 # avatarImage
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image that represents the person.
 
@@ -20,9 +21,10 @@ var avatarImage: CGImage?
 
 ## See Also
 
-- [var handle: CommunicationHandle](communicationtopic/personinformation-swift.struct/handle.md)
+### Accessing properties
+- [var handle: CommunicationHandle](./handle.md)
   The handle to identify and communicate with the person.
-- [var nameComponents: PersonNameComponents?](communicationtopic/personinformation-swift.struct/namecomponents.md)
+- [var nameComponents: PersonNameComponents?](./namecomponents.md)
   The components that make up the person’s name.
 
 

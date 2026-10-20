@@ -1,7 +1,8 @@
 # height
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of each drawable’s texture in pixels.
 
@@ -11,7 +12,7 @@ The height of each drawable’s texture in pixels.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,18 @@ var height: Int { get }
 
 ## See Also
 
-- [var allowsNextDrawableTimeout: Bool](textureresource/drawablequeue-swift.class/allowsnextdrawabletimeout.md)
+### Working with queues
+- [var allowsNextDrawableTimeout: Bool](./allowsnextdrawabletimeout.md)
   A Boolean value that determines whether requests for a new drawable expire if the system can’t satisfy them.
-- [var mipmapsMode: TextureResource.MipmapsMode](textureresource/drawablequeue-swift.class/mipmapsmode.md)
+- [var mipmapsMode: TextureResource.MipmapsMode](./mipmapsmode.md)
   Options that determine how mipmaps are handled for each drawable’s textures.
-- [var pixelFormat: MTLPixelFormat](textureresource/drawablequeue-swift.class/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The size and bit layout of all pixels in each drawable’s texture.
-- [var usage: MTLTextureUsage](textureresource/drawablequeue-swift.class/usage.md)
+- [var usage: MTLTextureUsage](./usage.md)
   Options that determine how you can use each drawable’s textures.
-- [var width: Int](textureresource/drawablequeue-swift.class/width.md)
+- [var width: Int](./width.md)
   The width of each drawable’s texture in pixels.
-- [func nextDrawable() throws -> TextureResource.Drawable](textureresource/drawablequeue-swift.class/nextdrawable.md)
+- [func nextDrawable() throws -> TextureResource.Drawable](./nextdrawable%28%29.md)
   Returns drawable when one is available, blocking the caller in the meantime.
 
 

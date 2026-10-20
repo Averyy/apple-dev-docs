@@ -1,22 +1,27 @@
 # SCNetworkConnectionCallBack
 
 **Framework**: System Configuration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of callback function used when a status event is delivered.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias SCNetworkConnectionCallBack = (SCNetworkConnection, SCNetworkConnectionStatus, UnsafeMutableRawPointer?) -> Void
+```
+
+```c
+typedef void (*)(const struct __SCNetworkConnection *, enum SCNetworkConnectionStatus, void *) SCNetworkConnectionCallBack;
 ```
 
 ## Parameters
@@ -28,16 +33,17 @@ typealias SCNetworkConnectionCallBack = (SCNetworkConnection, SCNetworkConnectio
 ## Topics
 
 ### Fields
-- [connection](1807883-connection.md)
+- [connection](./api-1807883-connection.md)
   The network connection.
-- [status](1807884-status.md)
+- [status](./api-1807884-status.md)
   The connection status.
 
 ## See Also
 
-- [class SCNetworkConnection](scnetworkconnection.md)
+### Data Types
+- [class SCNetworkConnection](./scnetworkconnection.md)
   The handle to manage a connection-oriented service.
-- [struct SCNetworkConnectionContext](scnetworkconnectioncontext.md)
+- [struct SCNetworkConnectionContext](./scnetworkconnectioncontext.md)
   A structure containing user-specified data and callbacks for a network connection.
 
 

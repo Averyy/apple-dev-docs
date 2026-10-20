@@ -1,7 +1,8 @@
 # hopLimit
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default hop limit for packets a connection generates.
 
@@ -22,11 +23,12 @@ var hopLimit: UInt8 { get set }
 
 ## See Also
 
-- [var shouldCalculateReceiveTime: Bool](nwprotocolip/options/shouldcalculatereceivetime.md)
+### Customizing IP Behavior
+- [var shouldCalculateReceiveTime: Bool](./shouldcalculatereceivetime.md)
   A Boolean that indicates whether a connection delivers receive timestamps for IP packets.
-- [var useMinimumMTU: Bool](nwprotocolip/options/useminimummtu.md)
+- [var useMinimumMTU: Bool](./useminimummtu.md)
   A Boolean indicating that the connection uses the  minimum MTU value, which is 1280 bytes for IPv6.
-- [var disableFragmentation: Bool](nwprotocolip/options/disablefragmentation.md)
+- [var disableFragmentation: Bool](./disablefragmentation.md)
   A Boolean that indicates whether fragmentation is disabled on outbound packets.
 
 

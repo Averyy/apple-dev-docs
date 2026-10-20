@@ -1,7 +1,8 @@
 # lexical
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Compares `String`s lexically.
 

@@ -1,7 +1,8 @@
 # wMaxPacketSize
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The maximum packet size.
 
@@ -10,39 +11,40 @@ The maximum packet size.
 
 ## Declaration
 
-```swift
+```c
 UInt16 wMaxPacketSize;
 ```
 
 #### Discussion
 
-The meaning of this value depends on whether [`GetPipePropertiesV3`](https://developer.apple.com/documentation/iokit/iousbinterfaceinterface942/2977226-getpipepropertiesv3) or [`GetEndpointPropertiesV3`](https://developer.apple.com/documentation/iokit/iousbinterfaceinterface942/2977212-getendpointpropertiesv3) uses it.
+The meaning of this value depends on whether [`GetPipePropertiesV3`](../../iokit/iousbinterfaceinterface942/api-2977226-getpipepropertiesv3.md) or [`GetEndpointPropertiesV3`](../../iokit/iousbinterfaceinterface942/api-2977212-getendpointpropertiesv3.md) uses it.
 
 ## See Also
 
-- [bVersion](iousbendpointproperties/1546121-bversion.md)
+### Getting the Properties
+- [bVersion](./api-1546121-bversion.md)
   The version of the structure.
-- [bAlternateSetting](iousbendpointproperties/1546104-balternatesetting.md)
+- [bAlternateSetting](./api-1546104-balternatesetting.md)
   The alternative setting for obtaining endpoint and pipe properties.
-- [bDirection](iousbendpointproperties/1546544-bdirection.md)
+- [bDirection](./api-1546544-bdirection.md)
   The direction of the endpoint.
-- [bEndpointNumber](iousbendpointproperties/1546577-bendpointnumber.md)
+- [bEndpointNumber](./api-1546577-bendpointnumber.md)
   The number of the endpoint.
-- [bTransferType](iousbendpointproperties/1546085-btransfertype.md)
+- [bTransferType](./api-1546085-btransfertype.md)
   The transfer type of the endpoint.
-- [bUsageType](iousbendpointproperties/1545903-busagetype.md)
+- [bUsageType](./api-1545903-busagetype.md)
   The usage type of the endpoint.
-- [bSyncType](iousbendpointproperties/1546228-bsynctype.md)
+- [bSyncType](./api-1546228-bsynctype.md)
   The type for isochronous endpoints.
-- [bInterval](iousbendpointproperties/1546398-binterval.md)
+- [bInterval](./api-1546398-binterval.md)
   The interval field from the standard endpoint descriptor.
-- [bMaxBurst](iousbendpointproperties/1546213-bmaxburst.md)
+- [bMaxBurst](./api-1546213-bmaxburst.md)
   The maximum number of packets the endpoint can send or receive for SuperSpeed endpoints.
-- [bMaxStreams](iousbendpointproperties/1546220-bmaxstreams.md)
+- [bMaxStreams](./api-1546220-bmaxstreams.md)
   The maximum number of streams this endpoint supports for SuperSpeed bulk endpoints.
-- [bMult](iousbendpointproperties/1546456-bmult.md)
+- [bMult](./api-1546456-bmult.md)
   The mult value for isochronous endpoints.
-- [wBytesPerInterval](iousbendpointproperties/1546060-wbytesperinterval.md)
+- [wBytesPerInterval](./api-1546060-wbytesperinterval.md)
   The number of bytes per interval.
 
 

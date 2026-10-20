@@ -2,9 +2,10 @@
 
 **Framework**: DiskImageKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
-The [`OpenConfiguration.Mode`](openconfiguration/mode-swift.enum.md) in which to open the disk image.
+The [`OpenConfiguration.Mode`](../openconfiguration/mode-swift.enum.md) in which to open the disk image.
 
 **Availability**:
 - macOS 27.0+

@@ -1,7 +1,8 @@
 # requestReadData(atOffset:length:completion:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests to asynchronously read data of a specified length from a specified offset, then executes the completion block.
 
@@ -15,7 +16,15 @@ Requests to asynchronously read data of a specified length from a specified offs
 ## Declaration
 
 ```swift
+func requestReadData(atOffset offset: off_t, length: off_t, completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func requestReadData(atOffset offset: off_t, length: off_t) async throws -> Data
+```
+
+```objc
+- (void) requestReadDataAtOffset:(off_t) offset length:(off_t) length completion:(void (^)(NSData *, NSError *)) completion;
 ```
 
 #### Discussion

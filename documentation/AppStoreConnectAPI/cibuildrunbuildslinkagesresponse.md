@@ -1,21 +1,22 @@
 # CiBuildRunBuildsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object CiBuildRunBuildsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object CiBuildRunBuildsLinkagesResponse.Data](cibuildrunbuildslinkagesresponse/data-data.dictionary.md)
+- [object CiBuildRunBuildsLinkagesResponse.Data](./cibuildrunbuildslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,15 +26,16 @@ object CiBuildRunBuildsLinkagesResponse
 
 ## See Also
 
-- [object CiBuildRun](cibuildrun.md)
+### Objects
+- [object CiBuildRun](./cibuildrun.md)
   A single execution of an Xcode Cloud workflow, capturing the trigger, commit, status, and artifacts produced.
-- [object CiBuildRunCreateRequest](cibuildruncreaterequest.md)
+- [object CiBuildRunCreateRequest](./cibuildruncreaterequest.md)
   The request body you use to start a new Xcode Cloud build.
-- [object CiBuildRunResponse](cibuildrunresponse.md)
+- [object CiBuildRunResponse](./cibuildrunresponse.md)
   The response body for endpoints that start or read a single Xcode Cloud build run.
-- [object CiBuildActionsResponse](cibuildactionsresponse.md)
+- [object CiBuildActionsResponse](./cibuildactionsresponse.md)
   The response body for endpoints that list actions for an Xcode Cloud build run.
-- [object CiBuildRunActionsLinkagesResponse](cibuildrunactionslinkagesresponse.md)
+- [object CiBuildRunActionsLinkagesResponse](./cibuildrunactionslinkagesresponse.md)
 
 
 ---

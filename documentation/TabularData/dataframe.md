@@ -1,7 +1,8 @@
 # DataFrame
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection that arranges data in rows and columns.
 
@@ -24,139 +25,140 @@ struct DataFrame
 ## Topics
 
 ### Creating a Data Frame
-- [init()](dataframe/init.md)
+- [init()](./dataframe/init%28%29.md)
   Creates an empty data frame with no rows or columns.
-- [init<S>(columns: S)](dataframe/init(columns:).md)
+- [init<S>(columns: S)](./dataframe/init%28columns%29.md)
   Creates a new data frame from a sequence of columns.
-- [init(dictionaryLiteral: (String, [Any?])...)](dataframe/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (String, [Any?])...)](./dataframe/init%28dictionaryliteral%29.md)
   Creates a data frame from a dictionary literal.
 ### Creating a Data Frame from Other Data Frames
-- [init(DataFrame.Slice)](dataframe/init(_:).md)
+- [init(DataFrame.Slice)](./dataframe/init%28_%29.md)
   Creates a new data frame with a slice of rows from another data frame.
-- [DataFrame.Slice](dataframe/slice.md)
+- [DataFrame.Slice](./dataframe/slice.md)
   A set of a data frame’s rows you create by using a method from a data frame instance or another data frame slice.
 ### Creating a Data Frame from a JSON File
-- [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](dataframe/init(contentsofjsonfile:columns:types:options:).md)
+- [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28contentsofjsonfile,columns,types,options%29.md)
   Creates a data frame by reading a JSON file.
-- [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](dataframe/init(jsondata:columns:types:options:).md)
+- [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28jsondata,columns,types,options%29.md)
   Creates a data frame by converting JSON data.
-- [enum JSONType](jsontype.md)
+- [enum JSONType](./jsontype.md)
   Represents the value types in a JSON file.
-- [struct JSONReadingOptions](jsonreadingoptions.md)
+- [struct JSONReadingOptions](./jsonreadingoptions.md)
   A set of JSON file-reading options.
 ### Creating a Data Frame from a CSV
-- [init(contentsOfCSVFile: URL, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](dataframe/init(contentsofcsvfile:columns:rows:types:options:).md)
+- [init(contentsOfCSVFile: URL, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,types,options%29.md)
   Creates a data frame from a CSV file.
-- [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](dataframe/init(csvdata:columns:rows:types:options:).md)
+- [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,types,options%29.md)
   Creates a data frame from CSV data.
-- [enum CSVType](csvtype.md)
+- [enum CSVType](./csvtype.md)
   Represents the value types in a CSV file.
-- [struct CSVReadingOptions](csvreadingoptions.md)
+- [struct CSVReadingOptions](./csvreadingoptions.md)
   A set of CSV file-reading options.
 ### Creating a Data Frame from Turi Create Types
-- [init(contentsOfSFrameDirectory: URL, columns: [String]?, rows: Range<Int>?) throws](dataframe/init(contentsofsframedirectory:columns:rows:).md)
+- [init(contentsOfSFrameDirectory: URL, columns: [String]?, rows: Range<Int>?) throws](./dataframe/init%28contentsofsframedirectory,columns,rows%29.md)
   Creates a data frame from a Turi Create scalable data frame.
-- [struct ShapedData](shapeddata.md)
+- [struct ShapedData](./shapeddata.md)
   A collection type that represents multidimensional data in a data frame element.
 ### Inspecting a Data Frame
-- [var shape: (rows: Int, columns: Int)](dataframe/shape.md)
+- [var shape: (rows: Int, columns: Int)](./dataframe/shape.md)
   The number of rows and columns in the data frame.
-- [var columns: [AnyColumn]](dataframe/columns.md)
+- [var columns: [AnyColumn]](./dataframe/columns.md)
   The entire data frame as a collection of columns.
-- [var rows: DataFrame.Rows](dataframe/rows-swift.property.md)
+- [var rows: DataFrame.Rows](./dataframe/rows-swift.property.md)
   The entire data frame as a collection of rows.
-- [DataFrame.Rows](dataframe/rows-swift.struct.md)
+- [DataFrame.Rows](./dataframe/rows-swift.struct.md)
   A collection of rows in a data frame.
-- [var base: DataFrame](dataframe/base.md)
+- [var base: DataFrame](./dataframe/base.md)
   The underlying data frame.
-- [func containsColumn<T>(String, T.Type) -> Bool](dataframe/containscolumn(_:_:).md)
+- [func containsColumn<T>(String, T.Type) -> Bool](./dataframe/containscolumn%28_,_%29.md)
   Returns a Boolean value indicating whether the data frame contains a column.
 ### Sorting a Data Frame
-- [func sort(on: String, order: Order)](dataframe/sort(on:order:)-4vns7.md)
+- [func sort(on: String, order: Order)](./dataframe/sort%28on,order%29-4vns7.md)
   Arranges the rows of a data frame according to a column that you select by its name.
-- [func sort<T>(on: String, T.Type, order: Order)](dataframe/sort(on:_:order:)-78avw.md)
+- [func sort<T>(on: String, T.Type, order: Order)](./dataframe/sort%28on,_,order%29-78avw.md)
   Arranges the rows of a data frame according to a column that you select by its name and type.
-- [func sort<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows](dataframe/sort(on:_:by:).md)
+- [func sort<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows](./dataframe/sort%28on,_,by%29.md)
   Arranges the rows of a data frame according to a column that you select by its name and type, with a predicate.
-- [func sort<T>(on: ColumnID<T>, by: (T, T) throws -> Bool) rethrows](dataframe/sort(on:by:).md)
+- [func sort<T>(on: ColumnID<T>, by: (T, T) throws -> Bool) rethrows](./dataframe/sort%28on,by%29.md)
   Arranges the rows of a data frame according to a column that you select by its column identifier, with a predicate.
-- [func sort<T>(on: ColumnID<T>, order: Order)](dataframe/sort(on:order:)-5ep7w.md)
+- [func sort<T>(on: ColumnID<T>, order: Order)](./dataframe/sort%28on,order%29-5ep7w.md)
   Arranges the rows of a data frame according to a column that you select by its column identifier.
-- [func sort<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, order: Order)](dataframe/sort(on:_:order:)-8wrkl.md)
+- [func sort<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, order: Order)](./dataframe/sort%28on,_,order%29-8wrkl.md)
   Arranges the rows of a data frame according to two columns that you select by their column identifiers.
-- [func sort<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order)](dataframe/sort(on:_:_:order:).md)
+- [func sort<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order)](./dataframe/sort%28on,_,_,order%29.md)
   Arranges the rows of a data frame according to three columns that you select by their column identifiers.
 ### Summarizing a Data Frame
-- [func summary() -> DataFrame](dataframe/summary.md)
+- [func summary() -> DataFrame](./dataframe/summary%28%29.md)
   Generates a data frame that summarizes the columns of the data frame.
-- [func summary(of: String...) -> DataFrame](dataframe/summary(of:).md)
+- [func summary(of: String...) -> DataFrame](./dataframe/summary%28of%29.md)
   Generates a data frame that summarizes the columns you select by name.
-- [func summary(ofColumns: Int...) -> DataFrame](dataframe/summary(ofcolumns:).md)
+- [func summary(ofColumns: Int...) -> DataFrame](./dataframe/summary%28ofcolumns%29.md)
   Generates a data frame that summarizes the columns you select by index.
-- [enum SummaryColumnIDs](summarycolumnids.md)
+- [enum SummaryColumnIDs](./summarycolumnids.md)
   The summary data frame column identifiers.
 ### Saving a Data Frame to a CSV Format
-- [struct CSVWritingOptions](csvwritingoptions.md)
+- [struct CSVWritingOptions](./csvwritingoptions.md)
   A set of CSV file-writing options.
 ### Describing a Data Frame
-- [var description: String](dataframe/description.md)
+- [var description: String](./dataframe/description.md)
   A text representation of the data frame.
-- [var debugDescription: String](dataframe/debugdescription.md)
+- [var debugDescription: String](./dataframe/debugdescription.md)
   A text representation of the data frame suitable for debugging.
-- [var customMirror: Mirror](dataframe/custommirror.md)
+- [var customMirror: Mirror](./dataframe/custommirror.md)
   A mirror that reflects the data frame.
 ### Comparing Data Frames
-- [static func == (DataFrame, DataFrame) -> Bool](dataframe/==(_:_:).md)
+- [static func == (DataFrame, DataFrame) -> Bool](./dataframe/eqeq%28_,_%29.md)
   Returns a Boolean that indicates whether the data frames are equal.
 ### Hashing a Data Frame
-- [func hash(into: inout Hasher)](dataframe/hash(into:).md)
+- [func hash(into: inout Hasher)](./dataframe/hash%28into%29.md)
   Hashes the essential components of the data frame by feeding them into a hasher.
 ### Initializers
-- [init<S, Feature, Annotation>(S, featuresColumnID: ColumnID<Feature>, annotationsColumnID: ColumnID<Annotation>) throws](dataframe/init(_:featurescolumnid:annotationscolumnid:).md)
+- [init<S, Feature, Annotation>(S, featuresColumnID: ColumnID<Feature>, annotationsColumnID: ColumnID<Annotation>) throws](./dataframe/init%28_,featurescolumnid,annotationscolumnid%29.md)
   Creates a data frame from a sequence of annotated features.
-- [init<each T>(contentsOfCSVFile: URL, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](dataframe/init(contentsofcsvfile:columns:rows:options:).md)
+- [init<each T>(contentsOfCSVFile: URL, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,options%29.md)
   Creates a data frame from a CSV file.
-- [init<each T>(csvData: Data, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](dataframe/init(csvdata:columns:rows:options:).md)
+- [init<each T>(csvData: Data, columns: repeat ColumnID<each T>, rows: Range<Int>?, options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,options%29.md)
   Creates a data frame from CSV data.
 ### Instance Methods
-- [func containsColumn<T>(ColumnID<T>) -> Bool](dataframe/containscolumn(_:)-6nqfs.md)
+- [func containsColumn<T>(ColumnID<T>) -> Bool](./dataframe/containscolumn%28_%29-6nqfs.md)
   Returns a Boolean value indicating whether the data frame contains a column matching a column ID.
-- [func containsColumn(String) -> Bool](dataframe/containscolumn(_:)-8spst.md)
+- [func containsColumn(String) -> Bool](./dataframe/containscolumn%28_%29-8spst.md)
   Returns a Boolean value indicating whether the data frame contains a column.
-- [func loadRangedAnnotations<Annotation>(parameters: DataFrameTemporalAnnotationParameters<Annotation>, continueOnFailure: Bool) throws -> [AnnotatedFeature<TemporalFileSegment, Annotation>]](dataframe/loadrangedannotations(parameters:continueonfailure:).md)
+- [func loadRangedAnnotations<Annotation>(parameters: DataFrameTemporalAnnotationParameters<Annotation>, continueOnFailure: Bool) throws -> [AnnotatedFeature<TemporalFileSegment, Annotation>]](./dataframe/loadrangedannotations%28parameters,continueonfailure%29.md)
   Loads training examples from a data frame containing annotations.
-- [func selecting(ColumnSelection) -> DataFrame](dataframe/selecting(_:).md)
+- [func selecting(ColumnSelection) -> DataFrame](./dataframe/selecting%28_%29.md)
   Generates a data frame that includes only the column selection.
 ### Subscripts
-- [subscript<T>(ResultColumn<T>) -> Column<T>](dataframe/subscript(_:)-4jbhp.md)
+- [subscript<T>(ResultColumn<T>) -> Column<T>](./dataframe/subscript%28_%29-4jbhp.md)
   Accesses a result column by its typed descriptor.
-- [subscript(metric _: Metric) -> Column<Metric>](dataframe/subscript(metric:).md)
+- [subscript(metric _: Metric) -> Column<Metric>](./dataframe/subscript%28metric%29.md)
   Accesses a metric column using the metric’s name
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](dataframe/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](dataframe/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](dataframe/customstringconvertible-implementations.md)
-- [DataFrameProtocol Implementations](dataframe/dataframeprotocol-implementations.md)
-- [Equatable Implementations](dataframe/equatable-implementations.md)
-- [ExpressibleByDictionaryLiteral Implementations](dataframe/expressiblebydictionaryliteral-implementations.md)
-- [Hashable Implementations](dataframe/hashable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./dataframe/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./dataframe/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./dataframe/customstringconvertible-implementations.md)
+- [DataFrameProtocol Implementations](./dataframe/dataframeprotocol-implementations.md)
+- [Equatable Implementations](./dataframe/equatable-implementations.md)
+- [ExpressibleByDictionaryLiteral Implementations](./dataframe/expressiblebydictionaryliteral-implementations.md)
+- [Hashable Implementations](./dataframe/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataFrameProtocol](dataframeprotocol.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataFrameProtocol](./dataframeprotocol.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByDictionaryLiteral](../Swift/expressiblebydictionaryliteral.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol DataFrameProtocol](dataframeprotocol.md)
+### Data Tables
+- [protocol DataFrameProtocol](./dataframeprotocol.md)
   A type that represents a data frame.
 
 

@@ -1,7 +1,8 @@
 # operationalKeypair
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var operationalKeypair: (any MTRKeypair)? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id<MTRKeypair> operationalKeypair;
 ```
 
 

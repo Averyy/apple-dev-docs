@@ -1,7 +1,8 @@
 # wPortChange
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The port status change bits.
 
@@ -10,15 +11,16 @@ The port status change bits.
 
 ## Declaration
 
-```swift
+```c
 uint16_t wPortChange;
 ```
 
 ## See Also
 
-- [dwExtPortStatus](iousb30hubportstatusext/3166559-dwextportstatus.md)
+### Getting the Properties
+- [dwExtPortStatus](./api-3166559-dwextportstatus.md)
   The extended port status bits.
-- [wPortStatus](iousb30hubportstatusext/3166561-wportstatus.md)
+- [wPortStatus](./api-3166561-wportstatus.md)
   The port status field bits.
 
 

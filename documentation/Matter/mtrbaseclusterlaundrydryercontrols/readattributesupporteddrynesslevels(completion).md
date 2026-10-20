@@ -1,7 +1,8 @@
 # readAttributeSupportedDrynessLevels(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSupportedDrynessLevels(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSupportedDrynessLevels() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeSupportedDrynessLevelsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

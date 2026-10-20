@@ -1,17 +1,18 @@
 # CIRenderDestinationAlphaMode.premultiplied
 
 **Framework**: Core Image  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Designates a destination that expects premultiplied alpha values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ Designates a destination that expects premultiplied alpha values.
 case premultiplied
 ```
 
+```c
+CIRenderDestinationAlphaPremultiplied
+```
+
 ## See Also
 
-- [CIRenderDestinationAlphaMode.none](cirenderdestinationalphamode/none.md)
+### Enumeration Cases
+- [CIRenderDestinationAlphaMode.none](./none.md)
   Designates a destination with no alpha compositing.
-- [CIRenderDestinationAlphaMode.unpremultiplied](cirenderdestinationalphamode/unpremultiplied.md)
+- [CIRenderDestinationAlphaMode.unpremultiplied](./unpremultiplied.md)
   Designates a destination that expects non-premultiplied alpha values.
 
 

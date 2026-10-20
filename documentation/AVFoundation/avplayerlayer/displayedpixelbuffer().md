@@ -1,22 +1,27 @@
 # displayedPixelBuffer()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the pixel buffer that the player layer currently displays.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.0
+- iPadOS 16.0+ - Deprecated in 27.0
+- Mac Catalyst 16.0+ - Deprecated in 27.0
+- macOS 13.0+ - Deprecated in 27.0
+- tvOS 16.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 func displayedPixelBuffer() -> CVPixelBuffer?
+```
+
+```objc
+- (CVPixelBufferRef) copyDisplayedPixelBuffer;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ This method only returns an image when playback is in a paused state, and otherw
 
 ## See Also
 
-- [var pixelBufferAttributes: [String : Any]?](avplayerlayer/pixelbufferattributes.md)
+### Processing pixel buffers
+- [var pixelBufferAttributes: [String : Any]?](./pixelbufferattributes.md)
   The attributes of the visual output that displays in the player layer during playback.
-- [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](avplayerlayer/displayedreadonlypixelbuffer.md)
+- [func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?](./displayedreadonlypixelbuffer%28%29.md)
   Returns the pixel buffer which is currently being displayed.
 
 

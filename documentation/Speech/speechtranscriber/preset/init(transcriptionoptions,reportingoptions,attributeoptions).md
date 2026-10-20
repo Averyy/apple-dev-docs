@@ -1,7 +1,8 @@
 # init(transcriptionOptions:reportingOptions:attributeOptions:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preset.
 

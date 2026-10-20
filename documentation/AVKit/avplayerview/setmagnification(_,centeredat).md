@@ -1,7 +1,8 @@
 # setMagnification(_:centeredAt:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales the video’s view by a specified factor, and centers the result on a specified point.
 
@@ -12,6 +13,10 @@ Scales the video’s view by a specified factor, and centers the result on a spe
 
 ```swift
 func setMagnification(_ magnification: CGFloat, centeredAt point: CGPoint)
+```
+
+```objc
+- (void) setMagnification:(CGFloat) magnification centeredAtPoint:(CGPoint) point;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ The supported magnification range is `1.0` to `64.0`. The system zooms using nea
 
 ## See Also
 
-- [var allowsMagnification: Bool](avplayerview/allowsmagnification.md)
+### Magnifying video
+- [var allowsMagnification: Bool](./allowsmagnification.md)
   A Boolean value that indicates whether the magnify gesture changes the video’s view magnification.
-- [var magnification: CGFloat](avplayerview/magnification.md)
+- [var magnification: CGFloat](./magnification.md)
   The factor by which the video’s view is currently scaled.
 
 

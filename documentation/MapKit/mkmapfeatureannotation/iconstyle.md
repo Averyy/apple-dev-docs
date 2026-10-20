@@ -1,7 +1,8 @@
 # iconStyle
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The icon style of a feature annotation.
 
@@ -17,13 +18,18 @@ The icon style of a feature annotation.
 var iconStyle: MKIconStyle? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MKIconStyle * iconStyle;
+```
+
 ## See Also
 
-- [var featureType: MKMapFeatureAnnotation.FeatureType](mkmapfeatureannotation/featuretype-swift.property.md)
+### Customizing the annotation
+- [var featureType: MKMapFeatureAnnotation.FeatureType](./featuretype-swift.property.md)
   The type of map feature this annotation represents.
-- [MKMapFeatureAnnotation.FeatureType](mkmapfeatureannotation/featuretype-swift.enum.md)
+- [MKMapFeatureAnnotation.FeatureType](./featuretype-swift.enum.md)
   Values that describe the kinds of features visible on the map.
-- [var pointOfInterestCategory: MKPointOfInterestCategory?](mkmapfeatureannotation/pointofinterestcategory.md)
+- [var pointOfInterestCategory: MKPointOfInterestCategory?](./pointofinterestcategory.md)
   The feature annotation’s point of interest category.
 
 

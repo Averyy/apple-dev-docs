@@ -1,7 +1,8 @@
 # MTLCounterSamplingPoint.atStageBoundary
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Counter sampling is allowed at the start and end of a render pass’s vertex and fragment stages, and at the start and end of compute and blit passes.
 
@@ -19,19 +20,24 @@ Counter sampling is allowed at the start and end of a render pass’s vertex and
 case atStageBoundary
 ```
 
+```c
+MTLCounterSamplingPointAtStageBoundary
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## See Also
 
-- [MTLCounterSamplingPoint.atBlitBoundary](mtlcountersamplingpoint/atblitboundary.md)
+### Reading sampling boundary types
+- [MTLCounterSamplingPoint.atBlitBoundary](./atblitboundary.md)
   Counter sampling is allowed between blit commands in a blit pass.
-- [MTLCounterSamplingPoint.atDispatchBoundary](mtlcountersamplingpoint/atdispatchboundary.md)
+- [MTLCounterSamplingPoint.atDispatchBoundary](./atdispatchboundary.md)
   Counter sampling is allowed between kernel dispatches in a compute pass.
-- [MTLCounterSamplingPoint.atDrawBoundary](mtlcountersamplingpoint/atdrawboundary.md)
+- [MTLCounterSamplingPoint.atDrawBoundary](./atdrawboundary.md)
   Counter sampling is allowed between draw commands in a render pass.
-- [MTLCounterSamplingPoint.atTileDispatchBoundary](mtlcountersamplingpoint/attiledispatchboundary.md)
+- [MTLCounterSamplingPoint.atTileDispatchBoundary](./attiledispatchboundary.md)
   Counter sampling is allowed between tile dispatches in a render pass.
 
 

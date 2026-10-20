@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct gpt_hdr {
     ...
 };
@@ -17,20 +17,20 @@ struct gpt_hdr {
 ## Topics
 
 ### Instance Properties
-- [hdr_crc_self](gpt_hdr/1581409-hdr_crc_self.md)
-- [hdr_crc_table](gpt_hdr/1581407-hdr_crc_table.md)
-- [hdr_entries](gpt_hdr/1581405-hdr_entries.md)
-- [hdr_entsz](gpt_hdr/1581437-hdr_entsz.md)
-- [hdr_lba_alt](gpt_hdr/1581433-hdr_lba_alt.md)
-- [hdr_lba_end](gpt_hdr/1581440-hdr_lba_end.md)
-- [hdr_lba_self](gpt_hdr/1581429-hdr_lba_self.md)
-- [hdr_lba_start](gpt_hdr/1581435-hdr_lba_start.md)
-- [hdr_lba_table](gpt_hdr/1581427-hdr_lba_table.md)
-- [hdr_revision](gpt_hdr/1581442-hdr_revision.md)
-- [hdr_sig](gpt_hdr/1581439-hdr_sig.md)
-- [hdr_size](gpt_hdr/1581418-hdr_size.md)
-- [hdr_uuid](gpt_hdr/1581434-hdr_uuid.md)
-- [padding](gpt_hdr/1581404-padding.md)
+- [hdr_crc_self](./gpt_hdr/api-1581409-hdr_crc_self.md)
+- [hdr_crc_table](./gpt_hdr/api-1581407-hdr_crc_table.md)
+- [hdr_entries](./gpt_hdr/api-1581405-hdr_entries.md)
+- [hdr_entsz](./gpt_hdr/api-1581437-hdr_entsz.md)
+- [hdr_lba_alt](./gpt_hdr/api-1581433-hdr_lba_alt.md)
+- [hdr_lba_end](./gpt_hdr/api-1581440-hdr_lba_end.md)
+- [hdr_lba_self](./gpt_hdr/api-1581429-hdr_lba_self.md)
+- [hdr_lba_start](./gpt_hdr/api-1581435-hdr_lba_start.md)
+- [hdr_lba_table](./gpt_hdr/api-1581427-hdr_lba_table.md)
+- [hdr_revision](./gpt_hdr/api-1581442-hdr_revision.md)
+- [hdr_sig](./gpt_hdr/api-1581439-hdr_sig.md)
+- [hdr_size](./gpt_hdr/api-1581418-hdr_size.md)
+- [hdr_uuid](./gpt_hdr/api-1581434-hdr_uuid.md)
+- [padding](./gpt_hdr/api-1581404-padding.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -20,15 +21,16 @@ init<T>(_ source: T) where T : BinaryFloatingPoint
 
 ## See Also
 
-- [init(Double)](int/init(_:)-8vbwo.md)
+### Converting Floating-Point Values
+- [init(Double)](./init%28_%29-8vbwo.md)
   Creates an integer from the given floating-point value, rounding toward zero.
-- [init(Float)](int/init(_:)-2oscb.md)
+- [init(Float)](./init%28_%29-2oscb.md)
   Creates an integer from the given floating-point value, rounding toward zero.
-- [init(Float16)](int/init(_:)-3huv0.md)
+- [init(Float16)](./init%28_%29-3huv0.md)
   Creates an integer from the given floating-point value, rounding toward zero.
-- [init(Float80)](int/init(_:)-66i0w.md)
+- [init(Float80)](./init%28_%29-66i0w.md)
   Creates an integer from the given floating-point value, rounding toward zero.
-- [init(CGFloat)](int/init(_:)-5q6q5.md)
+- [init(CGFloat)](./init%28_%29-5q6q5.md)
 
 
 ---

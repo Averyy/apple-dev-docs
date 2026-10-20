@@ -1,7 +1,8 @@
 # setShowsUserHeading(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether the map shows the user heading.
 
@@ -14,19 +15,24 @@ Sets whether the map shows the user heading.
 func setShowsUserHeading(_ showsUserHeading: Bool)
 ```
 
+```objc
+- (void) setShowsUserHeading:(BOOL) showsUserHeading;
+```
+
 #### Discussion
 
 By default, the map doesn’t show the user’s heading.
 
-> **Note**:  Calling this method has no effect unless the map is showing the user’s location. For more information, see [`setShowsUserLocation(_:)`](wkinterfacemap/setshowsuserlocation(_:).md).
+> **Note**:  Calling this method has no effect unless the map is showing the user’s location. For more information, see [`setShowsUserLocation(_:)`](./setshowsuserlocation%28_%29.md).
 
 ## See Also
 
-- [func setShowsUserLocation(Bool)](wkinterfacemap/setshowsuserlocation(_:).md)
+### Displaying the User’s Location
+- [func setShowsUserLocation(Bool)](./setshowsuserlocation%28_%29.md)
   Sets whether the map shows the user’s current location.
-- [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](wkinterfacemap/setusertrackingmode(_:animated:).md)
+- [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](./setusertrackingmode%28_,animated%29.md)
   Sets the map’s tracking mode.
-- [WKInterfaceMap.UserTrackingMode](wkinterfacemap/usertrackingmode.md)
+- [WKInterfaceMap.UserTrackingMode](./usertrackingmode.md)
   Modes for tracking the user’s location on the map.
 
 

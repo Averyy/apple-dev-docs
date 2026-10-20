@@ -1,7 +1,8 @@
 # wantsInteractiveStart
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the transition is interactive when it starts.
 
@@ -18,13 +19,18 @@ A Boolean value indicating whether the transition is interactive when it starts.
 optional var wantsInteractiveStart: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL wantsInteractiveStart;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the transition is interactive from the moment it starts. The property is [`false`](https://developer.apple.com/documentation/swift/false) when the transition starts off as noninteractive. However, even a transition that starts off as noninteractive may become interactive later if it implements the [`interruptibleAnimator(using:)`](uiviewcontrolleranimatedtransitioning/interruptibleanimator(using:).md) method of the [`UIViewControllerAnimatedTransitioning`](uiviewcontrolleranimatedtransitioning.md) protocol.
+The value of this property is [`true`](../../Swift/true.md) when the transition is interactive from the moment it starts. The property is [`false`](../../Swift/false.md) when the transition starts off as noninteractive. However, even a transition that starts off as noninteractive may become interactive later if it implements the [`interruptibleAnimator(using:)`](../uiviewcontrolleranimatedtransitioning/interruptibleanimator%28using%29.md) method of the [`UIViewControllerAnimatedTransitioning`](../uiviewcontrolleranimatedtransitioning.md) protocol.
 
 ## See Also
 
-- [func startInteractiveTransition(any UIViewControllerContextTransitioning)](uiviewcontrollerinteractivetransitioning/startinteractivetransition(_:).md)
+### Starting an interactive transition
+- [func startInteractiveTransition(any UIViewControllerContextTransitioning)](./startinteractivetransition%28_%29.md)
   Called when the system needs to set up the interactive portions of a view controller transition and start the animations.
 
 

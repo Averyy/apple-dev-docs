@@ -1,7 +1,8 @@
 # reversed(alongAxes:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new tensor with the specified dimensions reversed.
 
@@ -18,6 +19,12 @@ Returns a new tensor with the specified dimensions reversed.
 
 ```swift
 func reversed(alongAxes axes: Int...) -> MLTensor
+```
+
+**Other overloads**:
+
+```swift
+func reversed(alongAxes axes: [Int]) -> MLTensor
 ```
 
 #### Return Value

@@ -1,14 +1,15 @@
 # CRYPTEX_AUTH_MAX
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 CRYPTEX_AUTH_MAX
 ```
 

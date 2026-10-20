@@ -1,7 +1,8 @@
 # resultState(forSourceArrays:sourceStates:destinationArray:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func resultState(forSourceArrays sourceArrays: [MPSNDArray], sourceStates: [MPSState]?, destinationArray: MPSNDArray) -> MPSState?
+```
+
+```objc
+- (MPSState *) resultStateForSourceArrays:(NSArray<MPSNDArray *> *) sourceArrays sourceStates:(NSArray<MPSState *> *) sourceStates destinationArray:(MPSNDArray *) destinationArray;
 ```
 
 

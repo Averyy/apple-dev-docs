@@ -1,7 +1,8 @@
 # kAUSoundIsolationParam_SoundToIsolate
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -16,9 +17,14 @@
 var kAUSoundIsolationParam_SoundToIsolate: AudioUnitParameterID { get }
 ```
 
+```c
+kAUSoundIsolationParam_SoundToIsolate
+```
+
 ## See Also
 
-- [var kAUSoundIsolationParam_WetDryMixPercent: AudioUnitParameterID](kausoundisolationparam_wetdrymixpercent.md)
+### Constants
+- [var kAUSoundIsolationParam_WetDryMixPercent: AudioUnitParameterID](./kausoundisolationparam_wetdrymixpercent.md)
 
 
 ---

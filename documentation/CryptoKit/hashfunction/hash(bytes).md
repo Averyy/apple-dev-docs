@@ -1,7 +1,8 @@
 # hash(bytes:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Computes a digest of a span of bytes.
 

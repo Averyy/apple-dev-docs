@@ -1,7 +1,8 @@
 # PhysicsCustomJoint
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A joint with six degrees of freedom that can be individually specified.
 
@@ -21,11 +22,11 @@ struct PhysicsCustomJoint
 
 #### Overview
 
-A custom joint allows you to choose the restraints of all 6 degrees of freedom. You can set a [`PhysicsCustomJoint.MotionLimit`](physicscustomjoint/motionlimit.md) for each degrees’ motion.
+A custom joint allows you to choose the restraints of all 6 degrees of freedom. You can set a [`PhysicsCustomJoint.MotionLimit`](./physicscustomjoint/motionlimit.md) for each degrees’ motion.
 
-> **Note**: By default all degrees of freedom are locked, similar to [`PhysicsFixedJoint`](physicsfixedjoint.md).
+> **Note**: By default all degrees of freedom are locked, similar to [`PhysicsFixedJoint`](./physicsfixedjoint.md).
 
-For example, you can constrain the motion of `pin1` in the xy-plane of `pin0`, set movement along the x-axis to [`PhysicsCustomJoint.MotionLimit.unlimited`](physicscustomjoint/motionlimit/unlimited.md), and leave all rotations as the default value of [`PhysicsCustomJoint.MotionLimit.fixed`](physicscustomjoint/motionlimit/fixed.md).
+For example, you can constrain the motion of `pin1` in the xy-plane of `pin0`, set movement along the x-axis to [`PhysicsCustomJoint.MotionLimit.unlimited`](./physicscustomjoint/motionlimit/unlimited.md), and leave all rotations as the default value of [`PhysicsCustomJoint.MotionLimit.fixed`](./physicscustomjoint/motionlimit/fixed.md).
 
 > **Note**: The xy-plane is a plane that aligns with the x and y axes.
 
@@ -43,44 +44,45 @@ If `pin0` is in a fixed location for the example above, this joint allows `pin1`
 ## Topics
 
 ### Initializers
-- [init(pin0: GeometricPin, pin1: GeometricPin, linearMotionAlongX: PhysicsCustomJoint.MotionLimit, linearMotionAlongY: PhysicsCustomJoint.MotionLimit, linearMotionAlongZ: PhysicsCustomJoint.MotionLimit, angularMotionAroundX: PhysicsCustomJoint.MotionLimit, angularMotionAroundY: PhysicsCustomJoint.MotionLimit, angularMotionAroundZ: PhysicsCustomJoint.MotionLimit, checksForInternalCollisions: Bool)](physicscustomjoint/init(pin0:pin1:linearmotionalongx:linearmotionalongy:linearmotionalongz:angularmotionaroundx:angularmotionaroundy:angularmotionaroundz:checksforinternalcollisions:).md)
+- [init(pin0: GeometricPin, pin1: GeometricPin, linearMotionAlongX: PhysicsCustomJoint.MotionLimit, linearMotionAlongY: PhysicsCustomJoint.MotionLimit, linearMotionAlongZ: PhysicsCustomJoint.MotionLimit, angularMotionAroundX: PhysicsCustomJoint.MotionLimit, angularMotionAroundY: PhysicsCustomJoint.MotionLimit, angularMotionAroundZ: PhysicsCustomJoint.MotionLimit, checksForInternalCollisions: Bool)](./physicscustomjoint/init%28pin0,pin1,linearmotionalongx,linearmotionalongy,linearmotionalongz,angularmotionaroundx,angularmotionaroundy,angularmotionaroundz,checksforinternalcollisions%29.md)
   Creates a new custom joint.
 ### Instance Properties
-- [var angularMotionAroundX: PhysicsCustomJoint.MotionLimit](physicscustomjoint/angularmotionaroundx.md)
+- [var angularMotionAroundX: PhysicsCustomJoint.MotionLimit](./physicscustomjoint/angularmotionaroundx.md)
   The angular motion limits around the x-axis.
-- [var angularMotionAroundY: PhysicsCustomJoint.MotionLimit](physicscustomjoint/angularmotionaroundy.md)
+- [var angularMotionAroundY: PhysicsCustomJoint.MotionLimit](./physicscustomjoint/angularmotionaroundy.md)
   The angular motion limits around the y-axis.
-- [var angularMotionAroundZ: PhysicsCustomJoint.MotionLimit](physicscustomjoint/angularmotionaroundz.md)
+- [var angularMotionAroundZ: PhysicsCustomJoint.MotionLimit](./physicscustomjoint/angularmotionaroundz.md)
   The angular motion limits around the z-axis.
-- [var linearMotionAlongX: PhysicsCustomJoint.MotionLimit](physicscustomjoint/linearmotionalongx.md)
+- [var linearMotionAlongX: PhysicsCustomJoint.MotionLimit](./physicscustomjoint/linearmotionalongx.md)
   The linear motion limits along the x-axis.
-- [var linearMotionAlongY: PhysicsCustomJoint.MotionLimit](physicscustomjoint/linearmotionalongy.md)
+- [var linearMotionAlongY: PhysicsCustomJoint.MotionLimit](./physicscustomjoint/linearmotionalongy.md)
   The linear motion limits along the y-axis.
-- [var linearMotionAlongZ: PhysicsCustomJoint.MotionLimit](physicscustomjoint/linearmotionalongz.md)
+- [var linearMotionAlongZ: PhysicsCustomJoint.MotionLimit](./physicscustomjoint/linearmotionalongz.md)
   The linear motion limits along the z-axis.
 ### Enumerations
-- [PhysicsCustomJoint.MotionLimit](physicscustomjoint/motionlimit.md)
+- [PhysicsCustomJoint.MotionLimit](./physicscustomjoint/motionlimit.md)
   Specifies allowed linear or angular motion.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [PhysicsJoint](physicsjoint.md)
+- [Equatable](../Swift/equatable.md)
+- [PhysicsJoint](./physicsjoint.md)
 
 ## See Also
 
-- [struct PhysicsRevoluteJoint](physicsrevolutejoint.md)
+### Built-in joint types
+- [struct PhysicsRevoluteJoint](./physicsrevolutejoint.md)
   A joint that allows one degree of rotational freedom between two entity pins, similar to a door swinging on its hinges.
-- [struct PhysicsPrismaticJoint](physicsprismaticjoint.md)
+- [struct PhysicsPrismaticJoint](./physicsprismaticjoint.md)
   A joint that allows movement along a straight line, similar to a sliding drawer.
-- [struct PhysicsSphericalJoint](physicssphericaljoint.md)
+- [struct PhysicsSphericalJoint](./physicssphericaljoint.md)
   A spherical joint that allows free rotational movement between two entities’ pins.
-- [struct PhysicsDistanceJoint](physicsdistancejoint.md)
+- [struct PhysicsDistanceJoint](./physicsdistancejoint.md)
   A joint that maintains a minimum and maximum distance between two entity pins.
-- [struct PhysicsFixedJoint](physicsfixedjoint.md)
+- [struct PhysicsFixedJoint](./physicsfixedjoint.md)
   A joint that rigidly connects two entity pins, with zero degrees of freedom.
-- [struct PhysicsJoints](physicsjoints.md)
+- [struct PhysicsJoints](./physicsjoints.md)
   A collection of physics joints.
 
 

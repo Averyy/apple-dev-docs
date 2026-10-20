@@ -1,7 +1,8 @@
 # readLine(strippingNewline:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a string read from standard input through the end of the current line or until EOF is reached.
 
@@ -26,7 +27,7 @@ The string of characters read from standard input. If EOF has already been reach
 
 #### Discussion
 
-Standard input is interpreted as `UTF-8`. Invalid bytes are replaced by Unicode [`replacement characters`](https://developer.apple.comhttps://unicode.org/glossary/#replacement_character).
+Standard input is interpreted as `UTF-8`. Invalid bytes are replaced by Unicode [replacement characters](https://unicode.org/glossary/#replacement_character).
 
 ## Parameters
 
@@ -34,7 +35,8 @@ Standard input is interpreted as `UTF-8`. Invalid bytes are replaced by Unicode 
 
 ## See Also
 
-- [enum CommandLine](commandline.md)
+### Command Line Input
+- [enum CommandLine](./commandline.md)
   Command-line arguments for the current process.
 
 

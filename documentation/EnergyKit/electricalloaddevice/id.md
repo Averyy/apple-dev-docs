@@ -1,14 +1,15 @@
 # id
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique, stable identifier for a device.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,7 @@ let id: String
 
 #### Discussion
 
-Provide this identifier when you create an [`ElectricalLoadDevice`](electricalloaddevice.md) instance for submitting electrical load events. The EnergyKit framework uses this identifier to associate events with devices and generate device-specific insights.
+Provide this identifier when you create an [`ElectricalLoadDevice`](../electricalloaddevice.md) instance for submitting electrical load events. The EnergyKit framework uses this identifier to associate events with devices and generate device-specific insights.
 
 The system expects the value to be a maximum of 64 UTF-8 characters, such as a UUID. Ensure the identifier:
 
@@ -28,11 +29,12 @@ The system expects the value to be a maximum of 64 UTF-8 characters, such as a U
 
 ## See Also
 
-- [let name: String](electricalloaddevice/name.md)
+### Getting device information
+- [let name: String](./name.md)
   A human-readable name for the device.
-- [let type: ElectricalLoadDevice.DeviceType](electricalloaddevice/type.md)
+- [let type: ElectricalLoadDevice.DeviceType](./type.md)
   The type of electrical load device.
-- [ElectricalLoadDevice.DeviceType](electricalloaddevice/devicetype.md)
+- [ElectricalLoadDevice.DeviceType](./devicetype.md)
   The type of electrical load device.
 
 

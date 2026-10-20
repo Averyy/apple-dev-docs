@@ -1,7 +1,8 @@
 # symmetricPeer
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symmetric peer path, or `nil` if not authored.
 

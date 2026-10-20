@@ -1,17 +1,18 @@
 # EKReminderPriority.medium
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The reminder is medium priority.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The reminder is medium priority.
 case medium
 ```
 
+```c
+EKReminderPriorityMedium
+```
+
 ## See Also
 
-- [EKReminderPriority.none](ekreminderpriority/none.md)
+### Constants
+- [EKReminderPriority.none](./none.md)
   The reminder has no priority set.
-- [EKReminderPriority.high](ekreminderpriority/high.md)
+- [EKReminderPriority.high](./high.md)
   The reminder is high priority.
-- [EKReminderPriority.low](ekreminderpriority/low.md)
+- [EKReminderPriority.low](./low.md)
   The reminder is low priority.
 
 

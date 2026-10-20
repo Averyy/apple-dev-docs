@@ -1,7 +1,8 @@
 # init(_:angle:innerRadius:outerRadius:angularInset:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -21,7 +22,8 @@ init<Data>(_ data: Data, angle: PlottableProjection<SectorPlot<Content>.DataElem
 
 ## See Also
 
-- [init<Data>(Data, angle: PlottableProjection<SectorPlot<Content>.DataElement, some Plottable>, innerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, outerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, angularInset: KeyPath<SectorPlot<Content>.DataElement, CGFloat>)](sectorplot/init(_:angle:innerradius:outerradius:angularinset:)-9pmo7.md)
+### Plotting sectors from a collection
+- [init<Data>(Data, angle: PlottableProjection<SectorPlot<Content>.DataElement, some Plottable>, innerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, outerRadius: MarkDimensions<SectorPlot<Content>.DataElement>, angularInset: KeyPath<SectorPlot<Content>.DataElement, CGFloat>)](./init%28_,angle,innerradius,outerradius,angularinset%29-9pmo7.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSAnimationTriggerOrderIn
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,13 +13,18 @@
 let NSAnimationTriggerOrderIn: String
 ```
 
+```c
+extern NSAnimatablePropertyKey NSAnimationTriggerOrderIn;
+```
+
 #### Discussion
 
 The key that references the transition animation used when a view becomes visible, either as a result of being inserted into the visible view hierarchy or as a result of the view no longer being set as hidden .
 
 ## See Also
 
-- [let NSAnimationTriggerOrderOut: String](nsanimationtriggerorderout.md)
+### Constants
+- [let NSAnimationTriggerOrderOut: String](./nsanimationtriggerorderout.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # rightExists
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The task already has send or receive rights for the port under another name.
 

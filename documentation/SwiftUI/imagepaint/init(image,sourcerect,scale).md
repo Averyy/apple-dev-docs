@@ -1,7 +1,8 @@
 # init(image:sourceRect:scale:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shape-filling shape style.
 

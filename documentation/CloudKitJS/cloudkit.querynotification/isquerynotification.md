@@ -1,16 +1,17 @@
 # isQueryNotification
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Boolean value indicating whether this notification is a [`CloudKit.QueryNotification`](cloudkit.querynotification.md) object.
+Boolean value indicating whether this notification is a [`CloudKit.QueryNotification`](../cloudkit.querynotification.md) object.
 
 **Availability**:
 - CloudKit JS 1.0+
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean isQueryNotification;
 ```
 
@@ -20,7 +21,8 @@ This property is `true`.
 
 ## See Also
 
-- [notificationType](cloudkit.querynotification/notificationtype.md)
+### Getting the Notification Type
+- [notificationType](./notificationtype.md)
   The type of notification.
 
 

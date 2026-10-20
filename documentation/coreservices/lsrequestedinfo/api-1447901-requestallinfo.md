@@ -1,7 +1,8 @@
 # requestAllInfo
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests all available item information.
 

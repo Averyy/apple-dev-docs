@@ -1,7 +1,8 @@
 # playsHapticsOnly
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the engine ignores audio events.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the engine ignores audio events.
 var playsHapticsOnly: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL playsHapticsOnly;
+```
+
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) causes the engine to ignore all audio events, such as [`audioContinuous`](chhapticevent/eventtype/audiocontinuous.md) and [`audioCustom`](chhapticevent/eventtype/audiocustom.md). This also reduces latency of starting haptic playback.
+Setting this property to [`true`](../../Swift/true.md) causes the engine to ignore all audio events, such as [`audioContinuous`](../chhapticevent/eventtype/audiocontinuous.md) and [`audioCustom`](../chhapticevent/eventtype/audiocustom.md). This also reduces latency of starting haptic playback.
 
 > ❗ **Important**:  Changing the value of this property on a running engine has no effect until you stop and restart the engine.
 
 ## See Also
 
-- [var playsAudioOnly: Bool](chhapticengine/playsaudioonly.md)
+### Modifying Playback Properties
+- [var playsAudioOnly: Bool](./playsaudioonly.md)
   A Boolean value that indicates whether the engine ignores haptic events and plays audio events only.
-- [var isMutedForAudio: Bool](chhapticengine/ismutedforaudio.md)
+- [var isMutedForAudio: Bool](./ismutedforaudio.md)
   A Boolean value that indicates whether the engine mutes audio.
-- [var isMutedForHaptics: Bool](chhapticengine/ismutedforhaptics.md)
+- [var isMutedForHaptics: Bool](./ismutedforhaptics.md)
   A Boolean value that indicates whether the engine mutes haptics.
 
 

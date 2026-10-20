@@ -1,16 +1,17 @@
 # mask
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var mask: DispatchSource.MachSendEvent { get }
 
 ## See Also
 
-- [var data: DispatchSource.MachSendEvent](dispatchsourcemachsend/data.md)
+### Getting the Event Data
+- [var data: DispatchSource.MachSendEvent](./data.md)
 
 
 ---

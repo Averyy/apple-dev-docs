@@ -1,18 +1,19 @@
 # angularVelocity
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The physics body’s angular speed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ The physics body’s angular speed.
 var angularVelocity: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat angularVelocity;
+```
+
 ## Mentions
 
-- [Making Physics Bodies Move](making-physics-bodies-move.md)
+- [Making Physics Bodies Move](../making-physics-bodies-move.md)
 
 #### Discussion
 
@@ -30,9 +35,10 @@ The angular velocity is a pseudo vector around an axis vector of `(0.0,0.0,1.0)`
 
 ## See Also
 
-- [var velocity: CGVector](skphysicsbody/velocity.md)
+### Inspecting a Physics Body’s Position and Velocity
+- [var velocity: CGVector](./velocity.md)
   The physics body’s velocity vector, measured in meters per second.
-- [var isResting: Bool](skphysicsbody/isresting.md)
+- [var isResting: Bool](./isresting.md)
   A Boolean property that indicates whether the object is at rest within the physics simulation.
 
 

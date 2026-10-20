@@ -1,7 +1,8 @@
 # SecTrustSettingsResult.deny
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This certificate is explicitly distrusted.
 
@@ -13,6 +14,10 @@ This certificate is explicitly distrusted.
 
 ```swift
 case deny
+```
+
+```c
+kSecTrustSettingsResultDeny
 ```
 
 

@@ -1,7 +1,8 @@
 # OS_sec_trust
 
 **Framework**: Security  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 These are os_object compatible and ARC-able wrappers around existing CoreFoundation Security types, including: SecTrustRef, SecIdentityRef, and SecCertificateRef. They allow clients to use these types in os_object-type APIs and data structures. The underlying CoreFoundation types may be extracted and used by clients as needed.
 
@@ -20,10 +21,14 @@ These are os_object compatible and ARC-able wrappers around existing CoreFoundat
 protocol OS_sec_trust : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_sec_trust <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

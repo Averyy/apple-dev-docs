@@ -1,20 +1,25 @@
 # accessibilityValue
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 var accessibilityValue: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * accessibilityValue;
 ```
 
 

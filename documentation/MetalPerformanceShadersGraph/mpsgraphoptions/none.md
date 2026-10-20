@@ -1,7 +1,8 @@
 # MPSGraphOptions.none
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No Options.
 
@@ -17,6 +18,10 @@ No Options.
 
 ```swift
 case none
+```
+
+```c
+MPSGraphOptionsNone
 ```
 
 

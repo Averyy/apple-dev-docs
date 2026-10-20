@@ -1,7 +1,8 @@
 # mask
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An instance mask to ignore geometry during ray tracing.
 
@@ -17,6 +18,10 @@ An instance mask to ignore geometry during ray tracing.
 
 ```swift
 var mask: UInt32
+```
+
+```c
+uint32_t mask;
 ```
 
 

@@ -1,7 +1,8 @@
 # HKObject
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A piece of data that can be stored inside the HealthKit store.
 
@@ -19,60 +20,65 @@ A piece of data that can be stored inside the HealthKit store.
 class HKObject
 ```
 
+```objc
+@interface HKObject : NSObject
+```
+
 ## Mentions
 
-- [About the HealthKit framework](about-the-healthkit-framework.md)
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
 
 #### Overview
 
-The `HKObject` class is an abstract class. You should never instantiate a `HKObject` object directly. Instead, always work with one of its concrete subclasses: [`HKCategorySample`](hkcategorysample.md), [`HKQuantitySample`](hkquantitysample.md), [`HKCorrelation`](hkcorrelation.md), or [`HKWorkout`](hkworkout.md).
+The `HKObject` class is an abstract class. You should never instantiate a `HKObject` object directly. Instead, always work with one of its concrete subclasses: [`HKCategorySample`](./hkcategorysample.md), [`HKQuantitySample`](./hkquantitysample.md), [`HKCorrelation`](./hkcorrelation.md), or [`HKWorkout`](./hkworkout.md).
 
 HealthKit objects are all immutable. With a few exceptions (such as the object’s source revision), the object’s properties are set when the object is first created and they cannot change.
 
 ## Topics
 
 ### Accessing Properties
-- [var uuid: UUID](hkobject/uuid.md)
+- [var uuid: UUID](./hkobject/uuid.md)
   The universally unique identifier (UUID) for this HealthKit object.
-- [var metadata: [String : Any]?](hkobject/metadata.md)
+- [var metadata: [String : Any]?](./hkobject/metadata.md)
   The metadata for this HealthKit object.
-- [var device: HKDevice?](hkobject/device.md)
+- [var device: HKDevice?](./hkobject/device.md)
   The device that generated the data for this object.
-- [var sourceRevision: HKSourceRevision](hkobject/sourcerevision.md)
+- [var sourceRevision: HKSourceRevision](./hkobject/sourcerevision.md)
   The app or device that created this object.
-- [var source: HKSource](hkobject/source.md)
+- [var source: HKSource](./hkobject/source.md)
   A HealthKit source, representing the app or device that created this object.
 ### Specifying Predicate Key Paths
-- [let HKPredicateKeyPathUUID: String](hkpredicatekeypathuuid.md)
+- [let HKPredicateKeyPathUUID: String](./hkpredicatekeypathuuid.md)
   The key path for accessing the object’s UUID inside a predicate format string.
-- [let HKPredicateKeyPathMetadata: String](hkpredicatekeypathmetadata.md)
+- [let HKPredicateKeyPathMetadata: String](./hkpredicatekeypathmetadata.md)
   The key path for accessing the object’s metadata dictionary inside a predicate format string.
 ### Initializers
-- [init?(coder: NSCoder)](hkobject/init(coder:).md)
+- [init?(coder: NSCoder)](./hkobject/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HKSample](hksample.md)
+- [HKSample](./hksample.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKQuantitySample](hkquantitysample.md)
+### Abstract superclasses
+- [class HKQuantitySample](./hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKSample](hksample.md)
+- [class HKSample](./hksample.md)
   A HealthKit sample represents a piece of data associated with a start and end time.
 
 

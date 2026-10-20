@@ -1,7 +1,8 @@
 # LocaleDependentSpeechModule
 
 **Framework**: Speech  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A module that requires locale-specific assets.
 
@@ -22,33 +23,34 @@ protocol LocaleDependentSpeechModule : SpeechModule
 ## Topics
 
 ### Getting supported locales
-- [static var supportedLocales: [Locale]](localedependentspeechmodule/supportedlocales.md)
+- [static var supportedLocales: [Locale]](./localedependentspeechmodule/supportedlocales.md)
   The set of all possible asset locales that the module supports.
-- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](localedependentspeechmodule/supportedlocale(equivalentto:).md)
+- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](./localedependentspeechmodule/supportedlocale%28equivalentto%29.md)
   A locale from the module’s supported locales equivalent to the given locale.
 ### Inspecting an instance’s locales
-- [var selectedLocales: [Locale]](localedependentspeechmodule/selectedlocales.md)
+- [var selectedLocales: [Locale]](./localedependentspeechmodule/selectedlocales.md)
   The set of asset locales specified by the module’s configuration.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpeechModule](speechmodule.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpeechModule](./speechmodule.md)
 ### Conforming Types
-- [DictationTranscriber](dictationtranscriber.md)
-- [SpeechTranscriber](speechtranscriber.md)
+- [DictationTranscriber](./dictationtranscriber.md)
+- [SpeechTranscriber](./speechtranscriber.md)
 
 ## See Also
 
-- [class SpeechTranscriber](speechtranscriber.md)
+### Modules
+- [class SpeechTranscriber](./speechtranscriber.md)
   A speech-to-text transcription module that’s appropriate for normal conversation and general purposes.
-- [class DictationTranscriber](dictationtranscriber.md)
+- [class DictationTranscriber](./dictationtranscriber.md)
   A speech-to-text transcription module that’s similar to system dictation features and compatible with older devices.
-- [class SpeechDetector](speechdetector.md)
+- [class SpeechDetector](./speechdetector.md)
   A module that performs a voice activity detection (VAD) analysis.
-- [protocol SpeechModule](speechmodule.md)
+- [protocol SpeechModule](./speechmodule.md)
   Protocol that all analyzer modules conform to.
 
 

@@ -1,7 +1,8 @@
 # ManagedBuffer
 
 **Framework**: Swift  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class whose instances contain a property of type `Header` and raw storage for an array of `Element`, whose size is determined at instance creation.
 
@@ -29,24 +30,25 @@ Note that the `Element` array is suitably-aligned **raw memory**. You are expect
 ## Topics
 
 ### Instance Properties
-- [var capacity: Int](managedbuffer/capacity.md)
+- [var capacity: Int](./managedbuffer/capacity.md)
   The actual number of elements that can be stored in this object.
-- [var header: Header](managedbuffer/header.md)
+- [var header: Header](./managedbuffer/header.md)
   The stored `Header` instance.
 ### Instance Methods
-- [func withUnsafeMutablePointerToElements<E, R>((UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](managedbuffer/withunsafemutablepointertoelements(_:).md)
+- [func withUnsafeMutablePointerToElements<E, R>((UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](./managedbuffer/withunsafemutablepointertoelements%28_%29.md)
   Call `body` with an `UnsafeMutablePointer` to the `Element` storage.
-- [func withUnsafeMutablePointerToHeader<E, R>((UnsafeMutablePointer<Header>) throws(E) -> R) throws(E) -> R](managedbuffer/withunsafemutablepointertoheader(_:).md)
+- [func withUnsafeMutablePointerToHeader<E, R>((UnsafeMutablePointer<Header>) throws(E) -> R) throws(E) -> R](./managedbuffer/withunsafemutablepointertoheader%28_%29.md)
   Call `body` with an `UnsafeMutablePointer` to the stored `Header`.
-- [func withUnsafeMutablePointers<E, R>((UnsafeMutablePointer<Header>, UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](managedbuffer/withunsafemutablepointers(_:).md)
+- [func withUnsafeMutablePointers<E, R>((UnsafeMutablePointer<Header>, UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](./managedbuffer/withunsafemutablepointers%28_%29.md)
   Call `body` with `UnsafeMutablePointer`s to the stored `Header` and raw `Element` storage.
 ### Type Methods
-- [class func create(minimumCapacity: Int, makingHeaderWith: (ManagedBuffer<Header, Element>) throws -> Header) rethrows -> ManagedBuffer<Header, Element>](managedbuffer/create(minimumcapacity:makingheaderwith:).md)
+- [class func create(minimumCapacity: Int, makingHeaderWith: (ManagedBuffer<Header, Element>) throws -> Header) rethrows -> ManagedBuffer<Header, Element>](./managedbuffer/create%28minimumcapacity,makingheaderwith%29.md)
   Create a new instance of the most-derived class, calling `factory` on the partially-constructed object to generate an initial `Header`.
 
 ## See Also
 
-- [struct ManagedBufferPointer](managedbufferpointer.md)
+### Buffer Implementation
+- [struct ManagedBufferPointer](./managedbufferpointer.md)
   Contains a buffer object, and provides access to an instance of `Header` and contiguous storage for an arbitrary number of `Element` instances stored in that buffer.
 
 

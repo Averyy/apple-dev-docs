@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetV2.Relationships.GameCenterLeaderboards
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the Game Center leaderboards of the Game Center leaderboard set v2.
 
@@ -10,7 +11,7 @@ The data and links that describe the Game Center leaderboards of the Game Center
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetV2.Relationships.GameCenterLeaderboards
 ```
 
@@ -23,7 +24,7 @@ object GameCenterLeaderboardSetV2.Relationships.GameCenterLeaderboards
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardSetV2.Relationships.GameCenterLeaderboards.Data](gamecenterleaderboardsetv2/relationships-data.dictionary/gamecenterleaderboards-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboardSetV2.Relationships.GameCenterLeaderboards.Data](./gamecenterleaderboards-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -33,11 +34,12 @@ object GameCenterLeaderboardSetV2.Relationships.GameCenterLeaderboards
 
 ## See Also
 
-- [object GameCenterLeaderboardSetV2.Relationships.GameCenterDetail](gamecenterleaderboardsetv2/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardSetV2.Relationships.GameCenterDetail](./gamecenterdetail-data.dictionary.md)
   The data that describes the Game Center detail of the Game Center leaderboard set v2.
-- [object GameCenterLeaderboardSetV2.Relationships.GameCenterGroup](gamecenterleaderboardsetv2/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterLeaderboardSetV2.Relationships.GameCenterGroup](./gamecentergroup-data.dictionary.md)
   The data that describes the Game Center group of the Game Center leaderboard set v2.
-- [object GameCenterLeaderboardSetV2.Relationships.Versions](gamecenterleaderboardsetv2/relationships-data.dictionary/versions-data.dictionary.md)
+- [object GameCenterLeaderboardSetV2.Relationships.Versions](./versions-data.dictionary.md)
   The data and links that describe the versions of the Game Center leaderboard set v2.
 
 

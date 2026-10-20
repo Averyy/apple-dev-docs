@@ -1,7 +1,8 @@
 # GroupedFormStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A form style with grouped rows.
 
@@ -25,7 +26,7 @@ struct GroupedFormStyle
 
 Rows in this form style have leading aligned labels and trailing aligned controls within visually grouped sections.
 
-Use the [`grouped`](formstyle/grouped.md) static variable to create this style:
+Use the [`grouped`](./formstyle/grouped.md) static variable to create this style:
 
 ```swift
 Form {
@@ -37,19 +38,20 @@ Form {
 ## Topics
 
 ### Creating the form style
-- [init()](groupedformstyle/init.md)
+- [init()](./groupedformstyle/init%28%29.md)
   Creates a form style with scrolling, grouped rows.
 
 ## Relationships
 
 ### Conforms To
-- [FormStyle](formstyle.md)
+- [FormStyle](./formstyle.md)
 
 ## See Also
 
-- [struct AutomaticFormStyle](automaticformstyle.md)
+### Supporting types
+- [struct AutomaticFormStyle](./automaticformstyle.md)
   The default form style.
-- [struct ColumnsFormStyle](columnsformstyle.md)
+- [struct ColumnsFormStyle](./columnsformstyle.md)
   A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
 
 

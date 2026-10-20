@@ -1,7 +1,8 @@
 # AdSystemLimitedStatusReason
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A reason code indicating that an ad is running but at reduced delivery capacity due to a policy condition.
 
@@ -10,19 +11,23 @@ A reason code indicating that an ad is running but at reduced delivery capacity 
 
 ## Declaration
 
-```swift
+```
 string AdSystemLimitedStatusReason
 ```
 
+## Possible Values
+
+- `CREATIVE_POLICY_ISSUES`: The ad creative associated with this ad has policy violations that limit but do not fully stop delivery.
+
 ## See Also
 
-- [type AdStatus](adstatus.md)
+- [type AdStatus](./adstatus.md)
   Enumeration of advertiser-configurable serving states for an ad.
-- [type AdSystemStatus](adsystemstatus.md)
+- [type AdSystemStatus](./adsystemstatus.md)
   Enumeration of system-evaluated delivery states for an ad.
-- [type AdDisplayStatus](addisplaystatus.md)
+- [type AdDisplayStatus](./addisplaystatus.md)
   Rolled-up delivery state for an ad, combining advertiser settings and system conditions into a single user-facing label.
-- [type AdSystemStatusReason](adsystemstatusreason.md)
+- [type AdSystemStatusReason](./adsystemstatusreason.md)
   A reason code explaining why an ad is not currently running.
 
 

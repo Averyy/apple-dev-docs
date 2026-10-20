@@ -1,7 +1,8 @@
 # errSecRequestLost
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The request is lost.
 
@@ -18,6 +19,10 @@ The request is lost.
 
 ```swift
 var errSecRequestLost: OSStatus { get }
+```
+
+```c
+errSecRequestLost
 ```
 
 

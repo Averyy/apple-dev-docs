@@ -1,7 +1,8 @@
 # frameDropped
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A frame decode operation status that indicates the system dropped the output of the frame for a reason other than an error.
 
@@ -14,9 +15,13 @@ A frame decode operation status that indicates the system dropped the output of 
 static var frameDropped: MEDecodeFrameStatus { get }
 ```
 
+```c
+MEDecodeFrameFrameDropped
+```
+
 #### Discussion
 
-The decoder sets this value if [`doNotOutputFrame`](medecodeframeoptions/donotoutputframe.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The decoder sets this value if [`doNotOutputFrame`](../medecodeframeoptions/donotoutputframe.md) is [`true`](../../Swift/true.md).
 
 
 ---

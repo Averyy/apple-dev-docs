@@ -1,7 +1,8 @@
 # MACaptionAppearanceBehavior.useContentIfAvailable
 
 **Framework**: Media Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The preference setting should be used unless the content media being played has its own custom value for this setting.
 
@@ -19,9 +20,14 @@ The preference setting should be used unless the content media being played has 
 case useContentIfAvailable
 ```
 
+```c
+kMACaptionAppearanceBehaviorUseContentIfAvailable
+```
+
 ## See Also
 
-- [MACaptionAppearanceBehavior.useValue](macaptionappearancebehavior/usevalue.md)
+### Constants
+- [MACaptionAppearanceBehavior.useValue](./usevalue.md)
   The preference setting should always be used.
 
 

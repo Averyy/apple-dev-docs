@@ -1,7 +1,8 @@
 # init(backgroundBlurStyle:backgroundColor:icon:title:subtitle:primaryButtonLabel:primaryButtonBackgroundColor:secondaryButtonLabel:secondaryButtonSubmenuItems:)
 
 **Framework**: Managed Settings UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a shield configuration with optional submenu items for the secondary button.
 
@@ -34,7 +35,8 @@ This initializer extends the shield configuration structure to display a submenu
 
 ## See Also
 
-- [init(backgroundBlurStyle: UIBlurEffect.Style?, backgroundColor: UIColor?, icon: UIImage?, title: ShieldConfiguration.Label?, subtitle: ShieldConfiguration.Label?, primaryButtonLabel: ShieldConfiguration.Label?, primaryButtonBackgroundColor: UIColor?, secondaryButtonLabel: ShieldConfiguration.Label?)](shieldconfiguration/init(backgroundblurstyle:backgroundcolor:icon:title:subtitle:primarybuttonlabel:primarybuttonbackgroundcolor:secondarybuttonlabel:).md)
+### Initializing a shield configuration
+- [init(backgroundBlurStyle: UIBlurEffect.Style?, backgroundColor: UIColor?, icon: UIImage?, title: ShieldConfiguration.Label?, subtitle: ShieldConfiguration.Label?, primaryButtonLabel: ShieldConfiguration.Label?, primaryButtonBackgroundColor: UIColor?, secondaryButtonLabel: ShieldConfiguration.Label?)](./init%28backgroundblurstyle,backgroundcolor,icon,title,subtitle,primarybuttonlabel,primarybuttonbackgroundcolor,secondarybuttonlabel%29.md)
   Creates a shield configuration with the specified values.
 
 

@@ -1,7 +1,8 @@
 # xpc_connection_cancel(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Cancels the connection and ensures that its event handler doesn’t fire again.
 
@@ -10,7 +11,7 @@ Cancels the connection and ensures that its event handler doesn’t fire again.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,15 @@ Cancels the connection and ensures that its event handler doesn’t fire again.
 func xpc_connection_cancel(_ connection: xpc_connection_t)
 ```
 
+```c
+extern void xpc_connection_cancel(xpc_connection_t connection);
+```
+
 #### Discussion
 
-After this call, any messages that have not yet been sent will be discarded, and the connection will be unwound. If there are messages that are awaiting replies, they will have their reply handlers invoked with the [`XPC_ERROR_CONNECTION_INVALID`](xpc_error_connection_invalid-swift.var.md) error.
+After this call, any messages that have not yet been sent will be discarded, and the connection will be unwound. If there are messages that are awaiting replies, they will have their reply handlers invoked with the [`XPC_ERROR_CONNECTION_INVALID`](./xpc_error_connection_invalid-swift.var.md) error.
 
-Cancellation is asynchronous and non-preemptive and therefore this method will not interrupt the execution of an already-running event handler block. If the event handler is executing at the time of this call, it will finish, and then the connection will be canceled, causing a final invocation of the event handler to be scheduled with the [`XPC_ERROR_CONNECTION_INVALID`](xpc_error_connection_invalid-swift.var.md) error. After that invocation, there will be no further invocations of the event handler.
+Cancellation is asynchronous and non-preemptive and therefore this method will not interrupt the execution of an already-running event handler block. If the event handler is executing at the time of this call, it will finish, and then the connection will be canceled, causing a final invocation of the event handler to be scheduled with the [`XPC_ERROR_CONNECTION_INVALID`](./xpc_error_connection_invalid-swift.var.md) error. After that invocation, there will be no further invocations of the event handler.
 
 The XPC runtime guarantees this non-preemptiveness even for concurrent target queues.
 
@@ -34,19 +39,20 @@ The XPC runtime guarantees this non-preemptiveness even for concurrent target qu
 
 ## See Also
 
-- [func xpc_main(xpc_connection_handler_t) -> Never](xpc_main(_:).md)
+### Life cycle
+- [func xpc_main(xpc_connection_handler_t) -> Never](./xpc_main%28_%29.md)
   Starts listening for incoming connections and processes them with the specified event handler.
-- [func xpc_connection_activate(xpc_connection_t)](xpc_connection_activate(_:).md)
+- [func xpc_connection_activate(xpc_connection_t)](./xpc_connection_activate%28_%29.md)
   Activates a new connection.
-- [func xpc_connection_suspend(xpc_connection_t)](xpc_connection_suspend(_:).md)
+- [func xpc_connection_suspend(xpc_connection_t)](./xpc_connection_suspend%28_%29.md)
   Suspends the connection so the event handler block doesn’t fire and the connection doesn’t attempt to send any messages it has in its queue.
-- [func xpc_connection_resume(xpc_connection_t)](xpc_connection_resume(_:).md)
+- [func xpc_connection_resume(xpc_connection_t)](./xpc_connection_resume%28_%29.md)
   Resumes a suspended connection.
-- [func xpc_transaction_begin()](xpc_transaction_begin().md)
+- [func xpc_transaction_begin()](./xpc_transaction_begin%28%29.md)
   Informs the XPC runtime when a transaction begins, indicating that the service isn’t idle.
-- [func xpc_transaction_end()](xpc_transaction_end().md)
+- [func xpc_transaction_end()](./xpc_transaction_end%28%29.md)
   Informs the XPC runtime when a transaction ends.
-- [func xpc_connection_copy_invalidation_reason(xpc_connection_t) -> UnsafeMutablePointer<CChar>?](xpc_connection_copy_invalidation_reason(_:).md)
+- [func xpc_connection_copy_invalidation_reason(xpc_connection_t) -> UnsafeMutablePointer<CChar>?](./xpc_connection_copy_invalidation_reason%28_%29.md)
 
 
 ---

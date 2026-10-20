@@ -1,12 +1,13 @@
 # scrollWheel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mask for scroll-wheel events.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A mask for scroll-wheel events.
 static var scrollWheel: NSEvent.EventTypeMask { get }
 ```
 
+```c
+NSEventMaskScrollWheel
+```
+
 ## See Also
 
-- [static var changeMode: NSEvent.EventTypeMask](nsevent/eventtypemask/changemode.md)
+### Getting Input Events
+- [static var changeMode: NSEvent.EventTypeMask](./changemode.md)
   A mask for change-mode events.
 
 

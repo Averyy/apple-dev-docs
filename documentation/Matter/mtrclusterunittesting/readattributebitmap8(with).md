@@ -1,7 +1,8 @@
 # readAttributeBitmap8(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeBitmap8(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeBitmap8WithParams:(MTRReadParams *) params;
 ```
 
 

@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.ArgumentsFragment
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Argument text appended to this tool call.
 
@@ -21,31 +22,32 @@ struct ArgumentsFragment
 
 #### Overview
 
-The first event for a given id opens the tool call (using `name` from the enclosing [`LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall`](languagemodelexecutorgenerationchannel/toolcalls/toolcall.md)); subsequent events append additional argument text.
+The first event for a given id opens the tool call (using `name` from the enclosing [`LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall`](../toolcall.md)); subsequent events append additional argument text.
 
 ## Topics
 
 ### Handling the arguments fragment
-- [var content: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment/content.md)
+- [var content: String](./argumentsfragment/content.md)
   The argument text to append to the tool call.
-- [var tokenCount: Int](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment/tokencount.md)
+- [var tokenCount: Int](./argumentsfragment/tokencount.md)
   The number of tokens the argument text carries.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.property.md)
+### Handling a tool call
+- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](./action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](./action-swift.struct.md)
   An operation that can be performed on a tool call.
-- [var id: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/id.md)
+- [var id: String](./id.md)
   The identifier for the tool call.
-- [var name: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/name.md)
+- [var name: String](./name.md)
   The name of the tool call.
 
 

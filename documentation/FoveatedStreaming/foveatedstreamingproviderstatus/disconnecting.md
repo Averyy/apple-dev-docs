@@ -1,9 +1,10 @@
 # FoveatedStreamingProviderStatus.disconnecting
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-[`disconnect()`](foveatedstreamingextension/disconnect().md) has been called.
+[`disconnect()`](../foveatedstreamingextension/disconnect%28%29.md) has been called.
 
 **Availability**:
 - visionOS 27.0+

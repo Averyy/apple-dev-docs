@@ -1,7 +1,8 @@
 # shouldPrint()
 
 **Framework**: Application Services  
-**Kind**: intfm
+**Kind**: intfm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func shouldPrint() -> Bool
+```
+
+```objc
+- (BOOL)shouldPrint;
 ```
 
 

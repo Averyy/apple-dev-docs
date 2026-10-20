@@ -1,12 +1,13 @@
 # ciContext
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A context for Core Image objects that you can use to render into the graphics context.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ A context for Core Image objects that you can use to render into the graphics co
 var ciContext: CIContext? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) CIContext * CIContext;
+```
+
 #### Discussion
 
-The [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext) object is created on demand and remains in existence for the lifetime of its owning [`NSGraphicsContext`](nsgraphicscontext.md) object. A [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext) object is an evaluation context for rendering a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) object through Quartz 2D or OpenGL. You use [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext)` `objects in conjunction with [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class), [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), [`CIVector`](https://developer.apple.com/documentation/coreimage/civector), and [`CIColor`](https://developer.apple.com/documentation/coreimage/cicolor) objects to take advantage of the built-in Core Image filters when processing images.
+The [`CIContext`](../../CoreImage/cicontext.md) object is created on demand and remains in existence for the lifetime of its owning [`NSGraphicsContext`](../nsgraphicscontext.md) object. A [`CIContext`](../../CoreImage/cicontext.md) object is an evaluation context for rendering a [`CIImage`](../../CoreImage/ciimage.md) object through Quartz 2D or OpenGL. You use [`CIContext`](../../CoreImage/cicontext.md)` `objects in conjunction with [`CIFilter`](../../CoreImage/cifilter-swift.class.md), [`CIImage`](../../CoreImage/ciimage.md), [`CIVector`](../../CoreImage/civector.md), and [`CIColor`](../../CoreImage/cicolor.md) objects to take advantage of the built-in Core Image filters when processing images.
 
-For more on [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext) objects and related Core Image objects, see [`Core Image Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185).
+For more on [`CIContext`](../../CoreImage/cicontext.md) objects and related Core Image objects, see [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185).
 
 
 ---

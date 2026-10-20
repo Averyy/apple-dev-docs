@@ -1,7 +1,8 @@
 # inverse(input:output:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes an out-of-place inverse fast Fourier transform.
 
@@ -11,7 +12,7 @@ Computes an out-of-place inverse fast Fourier transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ func inverse(input: DSPSplitComplex, output: inout DSPSplitComplex)
 
 ## See Also
 
-- [func forward(input: DSPSplitComplex, output: inout DSPSplitComplex)](vdsp/fft/forward(input:output:).md)
+### Instance Methods
+- [func forward(input: DSPSplitComplex, output: inout DSPSplitComplex)](./forward%28input,output%29.md)
   Computes an out-of-place forward fast Fourier transform.
-- [func transform<T>(input: T, output: inout T, direction: vDSP.FourierTransformDirection)](vdsp/fft/transform(input:output:direction:).md)
+- [func transform<T>(input: T, output: inout T, direction: vDSP.FourierTransformDirection)](./transform%28input,output,direction%29.md)
   Computes an out-of-place fast Fourier transform.
 
 

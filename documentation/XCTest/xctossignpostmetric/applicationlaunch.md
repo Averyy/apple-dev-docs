@@ -1,17 +1,20 @@
 # applicationLaunch
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A metric that records the time that elapses during app launch.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 14.0
+- iPadOS 13.0+ - Deprecated in 14.0
+- Mac Catalyst 13.0+ - Deprecated in 14.0
+- macOS 10.15+ - Deprecated in 11.0
+- tvOS 13.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`XCTApplicationLaunchMetric`](../xctapplicationlaunchmetric.md) instead.
 
 ## Declaration
 
@@ -19,11 +22,16 @@ A metric that records the time that elapses during app launch.
 class var applicationLaunch: XCTOSSignpostMetric { get }
 ```
 
+```objc
+@property (class, readonly) XCTOSSignpostMetric * applicationLaunchMetric;
+```
+
 ## See Also
 
-- [class var scrollDecelerationMetric: any XCTMetric](xctossignpostmetric/scrolldecelerationmetric.md)
+### Deprecated
+- [class var scrollDecelerationMetric: any XCTMetric](./scrolldecelerationmetric.md)
   A metric that records scroll deceleration animations.
-- [class var scrollDraggingMetric: any XCTMetric](xctossignpostmetric/scrolldraggingmetric.md)
+- [class var scrollDraggingMetric: any XCTMetric](./scrolldraggingmetric.md)
   A metric that records scroll-dragging animations.
 
 

@@ -1,16 +1,17 @@
 # UITableView.ScrollPosition.middle
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The table view scrolls the row of interest to the middle of the visible table view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ The table view scrolls the row of interest to the middle of the visible table vi
 case middle
 ```
 
+```c
+UITableViewScrollPositionMiddle
+```
+
 ## See Also
 
-- [UITableView.ScrollPosition.none](uitableview/scrollposition/none.md)
+### Constants
+- [UITableView.ScrollPosition.none](./none.md)
   The table view scrolls the row of interest to be fully visible with a minimum of movement.
-- [UITableView.ScrollPosition.top](uitableview/scrollposition/top.md)
+- [UITableView.ScrollPosition.top](./top.md)
   The table view scrolls the row of interest to the top of the visible table view.
-- [UITableView.ScrollPosition.bottom](uitableview/scrollposition/bottom.md)
+- [UITableView.ScrollPosition.bottom](./bottom.md)
   The table view scrolls the row of interest to the bottom of the visible table view.
 
 

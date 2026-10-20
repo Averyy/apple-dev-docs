@@ -2,15 +2,16 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 var sourceHeight: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger sourceHeight;
+```
+
 ## See Also
 
-- [var sourceWidth: Int](mpsimagesizeencodingstate/sourcewidth.md)
+### Instance Properties
+- [var sourceWidth: Int](./sourcewidth.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # WidgetCenter.UserInfoKey
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that defines keys for accessing information in a user info dictionary.
 
@@ -21,24 +22,25 @@ struct UserInfoKey
 
 #### Overview
 
-> **Note**: In Objective-C, use [`WGWidgetUserInfoKeyFamily`](wgwidgetuserinfokeyfamily.md) and [`WGWidgetUserInfoKeyKind`](wgwidgetuserinfokeykind.md) instead.
+> **Note**: In Objective-C, use [`WGWidgetUserInfoKeyFamily`](../wgwidgetuserinfokeyfamily.md) and [`WGWidgetUserInfoKeyKind`](../wgwidgetuserinfokeykind.md) instead.
 
 ## Topics
 
 ### Describing a widget
-- [static let family: String](widgetcenter/userinfokey/family.md)
+- [static let family: String](./userinfokey/family.md)
   A key you use to access the widget’s family.
-- [static let kind: String](widgetcenter/userinfokey/kind.md)
+- [static let kind: String](./userinfokey/kind.md)
   A key you use to access the widget’s kind. The value matches the `kind` property specified in the widget’s configuration.
 ### Describing a Live Activity
-- [static let activityID: String](widgetcenter/userinfokey/activityid.md)
+- [static let activityID: String](./userinfokey/activityid.md)
   A key you use to access the activity ID if the widget represents a Live Activity.
 
 ## See Also
 
-- [static let shared: WidgetCenter](widgetcenter/shared.md)
+### Getting Widget Information
+- [static let shared: WidgetCenter](./shared.md)
   The shared widget center.
-- [func getCurrentConfigurations((Result<[WidgetInfo], any Error>) -> Void)](widgetcenter/getcurrentconfigurations(_:).md)
+- [func getCurrentConfigurations((Result<[WidgetInfo], any Error>) -> Void)](./getcurrentconfigurations%28_%29.md)
   Retrieves information about user-configured widgets.
 
 

@@ -1,7 +1,8 @@
 # CiMacOsVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A macOS version available in Xcode Cloud infrastructure for running workflow builds.
 
@@ -10,16 +11,16 @@ A macOS version available in Xcode Cloud infrastructure for running workflow bui
 
 ## Declaration
 
-```swift
+```
 object CiMacOsVersion
 ```
 
 ## Topics
 
 ### Objects
-- [object CiMacOsVersion.Attributes](cimacosversion/attributes-data.dictionary.md)
+- [object CiMacOsVersion.Attributes](./cimacosversion/attributes-data.dictionary.md)
   The attributes that describe a macOS Versions resource.
-- [object CiMacOsVersion.Relationships](cimacosversion/relationships-data.dictionary.md)
+- [object CiMacOsVersion.Relationships](./cimacosversion/relationships-data.dictionary.md)
   The relationships of the macOS Versions resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,13 +31,16 @@ object CiMacOsVersion
 - `relationships` (CiMacOsVersion.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ciMacOsVersions`
+
 ## See Also
 
-- [object CiMacOsVersionResponse](cimacosversionresponse.md)
+### Objects
+- [object CiMacOsVersionResponse](./cimacosversionresponse.md)
   A response containing a single macOS version available in Xcode Cloud.
-- [object CiMacOsVersionsResponse](cimacosversionsresponse.md)
+- [object CiMacOsVersionsResponse](./cimacosversionsresponse.md)
   A response containing a list of macOS versions supported by Xcode Cloud.
-- [object CiMacOsVersionXcodeVersionsLinkagesResponse](cimacosversionxcodeversionslinkagesresponse.md)
+- [object CiMacOsVersionXcodeVersionsLinkagesResponse](./cimacosversionxcodeversionslinkagesresponse.md)
 
 
 ---

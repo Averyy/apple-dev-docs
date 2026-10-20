@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.internalError
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework encountered an internal error.
 
@@ -17,7 +18,8 @@ case internalError
 
 ## See Also
 
-- [CredentialSession.ErrorCode.invalidInput](credentialsession/errorcode/invalidinput.md)
+### Miscellaneous error codes
+- [CredentialSession.ErrorCode.invalidInput](./invalidinput.md)
   One or more parameters is invalid.
 
 

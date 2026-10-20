@@ -1,7 +1,8 @@
 # MTLLogLevel.undefined
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The log level when the log level hasn’t been configured.
 
@@ -19,17 +20,22 @@ The log level when the log level hasn’t been configured.
 case undefined
 ```
 
+```c
+MTLLogLevelUndefined
+```
+
 ## See Also
 
-- [MTLLogLevel.debug](mtlloglevel/debug.md)
+### Enumeration cases
+- [MTLLogLevel.debug](./debug.md)
   The log level that captures diagnostic information.
-- [MTLLogLevel.info](mtlloglevel/info.md)
+- [MTLLogLevel.info](./info.md)
   The log level that captures additional information.
-- [MTLLogLevel.notice](mtlloglevel/notice.md)
+- [MTLLogLevel.notice](./notice.md)
   The log level that captures notifications.
-- [MTLLogLevel.error](mtlloglevel/error.md)
+- [MTLLogLevel.error](./error.md)
   The log level that captures error information.
-- [MTLLogLevel.fault](mtlloglevel/fault.md)
+- [MTLLogLevel.fault](./fault.md)
   The log level that captures fault information.
 
 

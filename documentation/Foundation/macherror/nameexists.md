@@ -1,7 +1,8 @@
 # nameExists
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name already denotes a right in the task.
 

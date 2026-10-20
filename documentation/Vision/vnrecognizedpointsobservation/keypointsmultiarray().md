@@ -1,7 +1,8 @@
 # keypointsMultiArray()
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the grouping of normalized point coordinates and confidence scores in a format compatible with Core ML.
 
@@ -19,9 +20,13 @@ Retrieves the grouping of normalized point coordinates and confidence scores in 
 func keypointsMultiArray() throws -> MLMultiArray
 ```
 
+```objc
+- (MLMultiArray *) keypointsMultiArrayAndReturnError:(NSError **) error;
+```
+
 #### Return Value
 
-The key points converted to an [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray).
+The key points converted to an [`MLMultiArray`](../../CoreML/mlmultiarray.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # setCapacity(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Grow or shrink the capacity of a unique array instance without discarding its contents.
 
@@ -24,7 +25,7 @@ mutating func setCapacity(_ newCapacity: Int)
 
 This operation replaces the array’s storage buffer with a newly allocated buffer of the specified capacity, moving all existing elements to its new storage. The old storage is then deallocated.
 
-> **Note**: O(`count`)
+> **Complexity**: O(`count`)
 
 
 ---

@@ -1,6 +1,7 @@
 # Reducing terminations in your app
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Minimize how frequently the system stops your app by addressing common termination reasons.
 
@@ -10,13 +11,13 @@ Terminations are part of the app lifecycle, when the system stops your process. 
 
 When the system terminates your app, your app must re-launch the next time a user activates it. A re-launch is much slower than re-activating your app.
 
-View Termination data using the [`Xcode Organizer`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10076/) or collect data in your app using MetricKit’s [`ForegroundTerminationMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/foregroundterminationmetric) and [`BackgroundTerminationMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/backgroundterminationmetric).
+View Termination data using the [Xcode Organizer](https://developer.apple.com/videos/play/wwdc2020/10076/) or collect data in your app using MetricKit’s [ForegroundTerminationMetric](../MetricKit/foregroundterminationmetric.md) and [BackgroundTerminationMetric](../MetricKit/backgroundterminationmetric.md).
 
-![Screenshot of the Terminations pane in the Xcode Organizer. From left to right is the list of metrics and reports, Report List, the foreground and background terminations charts, and the Inspector with additional details for the selected and latest app versions.  ](/images/com.apple.Xcode/reduce-terminations-in-your-app-1@2x.png)
+![Screenshot of the Terminations pane in the Xcode Organizer. From left to right is the list of metrics and reports, Report List, the foreground and background terminations charts, and the Inspector with additional details for the selected and latest app versions.  ](https://developer.apple.com/tutorials/images/com.apple.Xcode/reduce-terminations-in-your-app-1@2x.png)
 
-For more information about debugging your terminations, see the following WWDC session video: [`developer.apple.com/videos/play/wwdc2020/10078`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10078/).
+For more information about debugging your terminations, see the following WWDC session video: [developer.apple.com/videos/play/wwdc2020/10078](https://developer.apple.com/videos/play/wwdc2020/10078/).
 
-##### Understand Termination Reasons
+##### Understand termination reasons
 
 The system stops your app when it encounters any of the following issues.
 
@@ -27,32 +28,33 @@ The system stops your app when it encounters any of the following issues.
 - App Watchdog. An App Timeout happens when your app takes too long to launch. The system gives a lenient amount of time to launch, and a timeout is generally indicative of your app getting stuck on launch. Many users will quit your app before this limit is hit, and those quits will not be considered an App Timeout. macOS apps do not have a launch time limit.
 - Memory Pressure. As part of the normal app lifecycle, iOS & watchOS terminate apps when the system requires more memory than is currently available. The system most often terminates apps in the background when a foreground app needs more memory. Reduce the frequency of memory pressure terminations for your app by lowering your memory at suspension. You can see memory at suspension in the Xcode Organizer. Because you cannot remove all memory pressure terminations, ensure that your app has proper state restoration to provide a fluid user experience.
 
-To resolve terminations that are crashes, view the stack trace for the crash in the Crashes Organizer in Xcode. For more information about diagnosing and resolving a crash, see [`Diagnosing Issues Using Crash Reports and Device Logs `](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/diagnosing-issues-using-crash-reports-and-device-logs).
+To resolve terminations that are crashes, view the stack trace for the crash in the Crashes Organizer in Xcode. For more information about diagnosing and resolving a crash, see [Diagnosing Issues Using Crash Reports and Device Logs ](./diagnosing-issues-using-crash-reports-and-device-logs.md).
 
-##### Background Termination Reasons
+##### Background termination reasons
 
 Some termination reasons only apply while your app is in the background:
 
-- Task Timeout. The system allows your app to continue executing in the background, after the user has placed the app in the background, through the use of the [`beginBackgroundTask API`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/uiapplication/1623051-beginbackgroundtask). If your app does not finish its work in the allotted time, the system will terminate it with the Task Timeout reason.
+- Task Timeout. The system allows your app to continue executing in the background, after the user has placed the app in the background, through the use of the [beginBackgroundTask API](../UIKit/uiapplication/api-1623051-beginbackgroundtask.md). If your app does not finish its work in the allotted time, the system will terminate it with the Task Timeout reason.
 - File Lock. A File Lock termination happens when your app continues to hold a lock on a shared file held in your AppGroup when the user put your app in the background. The system performs this termination to avoid blocking on a lock that your app may never release.
 
 ## See Also
 
-- [Analyzing responsiveness issues in your shipping app](analyzing-responsiveness-issues-in-your-shipping-app.md)
+### Responsiveness
+- [Analyzing responsiveness issues in your shipping app](./analyzing-responsiveness-issues-in-your-shipping-app.md)
   Identify responsiveness issues your users encounter, and use the hang and hitch data in Xcode Organizer to determine which issues are most important to fix.
-- [Improving app responsiveness](improving-app-responsiveness.md)
+- [Improving app responsiveness](./improving-app-responsiveness.md)
   Create a user experience that feels responsive by removing hangs and hitches from your app.
-- [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
+- [Understanding user interface responsiveness](./understanding-user-interface-responsiveness.md)
   Make your app more responsive by examining the event-handling and rendering loop.
-- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+- [Understanding and improving SwiftUI performance](./understanding-and-improving-swiftui-performance.md)
   Identify and address long-running view updates, and reduce the frequency of updates.
-- [Understanding hangs in your app](understanding-hangs-in-your-app.md)
+- [Understanding hangs in your app](./understanding-hangs-in-your-app.md)
   Determine the cause for delays in user interactions by examining the main thread and the main run loop.
-- [Understanding hitches in your app](understanding-hitches-in-your-app.md)
+- [Understanding hitches in your app](./understanding-hitches-in-your-app.md)
   Determine the cause of interruptions in motion by examining the render loop.
-- [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
+- [Diagnosing performance issues early](./diagnosing-performance-issues-early.md)
   Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
-- [Reducing your app’s launch time](reducing-your-app-s-launch-time.md)
+- [Reducing your app’s launch time](./reducing-your-app-s-launch-time.md)
   Create a more responsive experience with your app by minimizing time spent in startup.
 
 

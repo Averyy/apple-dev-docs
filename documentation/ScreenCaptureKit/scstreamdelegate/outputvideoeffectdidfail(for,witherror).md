@@ -1,7 +1,8 @@
 # outputVideoEffectDidFail(for:withError:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 optional func outputVideoEffectDidFail(for stream: SCStream, withError error: any Error)
+```
+
+```objc
+- (void) outputVideoEffectDidFailForStream:(SCStream *) stream withError:(NSError *) error;
 ```
 
 #### Discussion

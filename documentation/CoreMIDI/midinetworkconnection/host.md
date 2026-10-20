@@ -1,7 +1,8 @@
 # host
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The host connection.
 
@@ -16,6 +17,10 @@ The host connection.
 
 ```swift
 var host: MIDINetworkHost { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDINetworkHost * host;
 ```
 
 

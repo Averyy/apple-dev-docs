@@ -1,7 +1,8 @@
 # MPSImageFeatureChannelFormat.none
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -17,15 +18,20 @@
 case none
 ```
 
+```c
+MPSImageFeatureChannelFormatNone
+```
+
 ## See Also
 
-- [MPSImageFeatureChannelFormat.unorm8](mpsimagefeaturechannelformat/unorm8.md)
+### Constants
+- [MPSImageFeatureChannelFormat.unorm8](./unorm8.md)
   `uint8_t` type with value `[0,255]` and encoding `[0,1.0]`.
-- [MPSImageFeatureChannelFormat.unorm16](mpsimagefeaturechannelformat/unorm16.md)
+- [MPSImageFeatureChannelFormat.unorm16](./unorm16.md)
   `uint16_t` type with value `[0,65535]` and encoding `[0,1.0]`.
-- [MPSImageFeatureChannelFormat.float16](mpsimagefeaturechannelformat/float16.md)
+- [MPSImageFeatureChannelFormat.float16](./float16.md)
   IEEE-754 16-bit floating-point type (half precision). Representable normal range is `+-[2^-14, 65504], 0, INF, NaN`. 11 bits of precision + exponent.
-- [MPSImageFeatureChannelFormat.float32](mpsimagefeaturechannelformat/float32.md)
+- [MPSImageFeatureChannelFormat.float32](./float32.md)
   IEEE-754 32-bit floating-point type (single precision, standard `float` type in C). 24 bits of precision + exponent.
 
 

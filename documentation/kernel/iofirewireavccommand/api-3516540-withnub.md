@@ -1,14 +1,15 @@
 # withNub
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 static IOFireWireAVCCommand * withNub(IOFireWireNub *device, UInt32 generation, const UInt8 *command, UInt32 cmdLen, UInt8 *response, UInt32 *responseLen);
 ```
 

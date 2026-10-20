@@ -1,7 +1,8 @@
 # AccessibilityNotification.ScreenChanged
 
 **Framework**: Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A notification that an app posts when a new view appears that occupies a major portion of the screen.
 
@@ -27,16 +28,17 @@ Optionally, include a parameter that contains the accessibility element for Voic
 ## Topics
 
 ### Creating a screen change notification
-- [init(Any?)](accessibilitynotification/screenchanged/init(_:).md)
+- [init(Any?)](./screenchanged/init%28_%29.md)
   Creates a screen change notification.
 
 ## See Also
 
-- [AccessibilityNotification.Announcement](accessibilitynotification/announcement.md)
+### Notifications
+- [AccessibilityNotification.Announcement](./announcement.md)
   A notification that an app posts when it needs to convey an announcement to an assistive app.
-- [AccessibilityNotification.LayoutChanged](accessibilitynotification/layoutchanged.md)
+- [AccessibilityNotification.LayoutChanged](./layoutchanged.md)
   A notification that an app posts when the layout of a screen changes.
-- [AccessibilityNotification.PageScrolled](accessibilitynotification/pagescrolled.md)
+- [AccessibilityNotification.PageScrolled](./pagescrolled.md)
   A notification that an app posts when a scroll action completes.
 
 

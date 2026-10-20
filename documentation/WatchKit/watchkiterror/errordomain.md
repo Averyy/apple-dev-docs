@@ -1,10 +1,11 @@
 # errorDomain
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 

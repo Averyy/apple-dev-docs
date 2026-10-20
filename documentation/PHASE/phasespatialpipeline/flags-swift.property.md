@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of environmental effects to include in the output.
 
@@ -19,13 +20,18 @@ A collection of environmental effects to include in the output.
 var flags: PHASESpatialPipeline.Flags { get }
 ```
 
+```objc
+@property (nonatomic, readonly) PHASESpatialPipelineFlags flags;
+```
+
 #### Discussion
 
-The framework sets the value of this property to the [`init(flags:)`](phasespatialpipeline/init(flags:).md) argument.
+The framework sets the value of this property to the [`init(flags:)`](./init%28flags%29.md) argument.
 
 ## See Also
 
-- [var entries: [PHASESpatialCategory : PHASESpatialPipelineEntry]](phasespatialpipeline/entries.md)
+### Inspecting Effects
+- [var entries: [PHASESpatialCategory : PHASESpatialPipelineEntry]](./entries.md)
   Audio layers for environmental effects to add to the output.
 
 

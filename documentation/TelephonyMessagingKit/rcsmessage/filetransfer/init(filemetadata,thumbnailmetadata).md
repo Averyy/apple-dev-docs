@@ -1,7 +1,8 @@
 # init(fileMetadata:thumbnailMetadata:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a file transfer content instance with the given metadata.
 
@@ -21,7 +22,8 @@ init(fileMetadata: RCSFileTransferMetadata, thumbnailMetadata: RCSFileTransferMe
 
 ## See Also
 
-- [struct RCSFileTransferMetadata](rcsfiletransfermetadata.md)
+### Creating a file transfer instance
+- [struct RCSFileTransferMetadata](../../rcsfiletransfermetadata.md)
   A structure that contains metadata about an RCS file transfer.
 
 

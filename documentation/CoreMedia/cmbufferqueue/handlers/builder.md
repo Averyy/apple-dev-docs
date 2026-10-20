@@ -1,7 +1,8 @@
 # CMBufferQueue.Handlers.Builder
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,20 +22,20 @@ struct Builder
 ## Topics
 
 ### Instance Properties
-- [var dataBecameReadyNotification: String?](cmbufferqueue/handlers/builder/databecamereadynotification.md)
+- [var dataBecameReadyNotification: String?](./builder/databecamereadynotification.md)
 ### Instance Methods
-- [func compare(CMBufferCompareHandler)](cmbufferqueue/handlers/builder/compare(_:).md)
-- [func getDecodeTimeStamp(CMBufferGetTimeHandler)](cmbufferqueue/handlers/builder/getdecodetimestamp(_:).md)
-- [func getDuration(CMBufferGetTimeHandler)](cmbufferqueue/handlers/builder/getduration(_:).md)
-- [func getPresentationTimeStamp(CMBufferGetTimeHandler)](cmbufferqueue/handlers/builder/getpresentationtimestamp(_:).md)
-- [func getSize(CMBufferGetSizeHandler)](cmbufferqueue/handlers/builder/getsize(_:).md)
-- [func isDataReady(CMBufferGetBooleanHandler)](cmbufferqueue/handlers/builder/isdataready(_:).md)
+- [func compare(CMBufferCompareHandler)](./builder/compare%28_%29.md)
+- [func getDecodeTimeStamp(CMBufferGetTimeHandler)](./builder/getdecodetimestamp%28_%29.md)
+- [func getDuration(CMBufferGetTimeHandler)](./builder/getduration%28_%29.md)
+- [func getPresentationTimeStamp(CMBufferGetTimeHandler)](./builder/getpresentationtimestamp%28_%29.md)
+- [func getSize(CMBufferGetSizeHandler)](./builder/getsize%28_%29.md)
+- [func isDataReady(CMBufferGetBooleanHandler)](./builder/isdataready%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

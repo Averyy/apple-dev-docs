@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an environment property to read the specified key path.
 
@@ -20,9 +21,19 @@ Creates an environment property to read the specified key path.
 init(_ keyPath: KeyPath<EnvironmentValues, Value>)
 ```
 
+**Other overloads**:
+
+```swift
+init(_ objectType: Value.Type) where Value : AnyObject, Value : Observable
+```
+
+```swift
+init<T>(_ objectType: T.Type) where Value == T?, T : AnyObject, T : Observable
+```
+
 #### Discussion
 
-Don’t call this initializer directly. Instead, declare a property with the [`Environment`](environment.md) property wrapper, and provide the key path of the environment value that the property should reflect:
+Don’t call this initializer directly. Instead, declare a property with the [`Environment`](../environment.md) property wrapper, and provide the key path of the environment value that the property should reflect:
 
 ```swift
 struct MyView: View {
@@ -32,7 +43,7 @@ struct MyView: View {
 }
 ```
 
-SwiftUI automatically updates any parts of `MyView` that depend on the property when the associated environment value changes. You can’t modify the environment value using a property like this. Instead, use the [`environment(_:_:)`](view/environment(_:_:).md) view modifier on a view to set a value for a view hierarchy.
+SwiftUI automatically updates any parts of `MyView` that depend on the property when the associated environment value changes. You can’t modify the environment value using a property like this. Instead, use the [`environment(_:_:)`](../view/environment%28_,_%29.md) view modifier on a view to set a value for a view hierarchy.
 
 ## Parameters
 

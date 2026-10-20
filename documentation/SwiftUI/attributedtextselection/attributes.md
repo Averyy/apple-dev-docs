@@ -1,7 +1,8 @@
 # AttributedTextSelection.Attributes
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence of all attribute values a selection has in a certain text.
 
@@ -24,7 +25,7 @@ struct Attributes<Text>
 
 The values of a selection are the attribute values of each run that is fully or partially selected, or the typing attributes in the case the selection is an insertion point.
 
-By default, the sequence contains the attribute container for every run or the typing attributes. Use the [`AttributedTextSelection.Attributes`](attributedtextselection/attributes.md)’ subscript to obtain only the values for a single attribute:
+By default, the sequence contains the attribute container for every run or the typing attributes. Use the [`AttributedTextSelection.Attributes`](./attributes.md)’ subscript to obtain only the values for a single attribute:
 
 ```swift
 selection.attributes(in: text)[\.foregroundColor].contains(.red)
@@ -33,13 +34,13 @@ selection.attributes(in: text)[\.foregroundColor].contains(.red)
 ## Topics
 
 ### Subscripts
-- [subscript(_:)](attributedtextselection/attributes/subscript(_:).md)
+- [subscript(_:)](./attributes/subscript%28_%29.md)
   Returns a sequence which iterates of the values of a single attribute.
 
 ## Relationships
 
 ### Conforms To
-- [Sequence](../swift/sequence.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

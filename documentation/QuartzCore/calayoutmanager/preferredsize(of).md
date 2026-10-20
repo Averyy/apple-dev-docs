@@ -1,7 +1,8 @@
 # preferredSize(of:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Override to customize layer size.
 
@@ -15,11 +16,16 @@ Override to customize layer size.
 optional func preferredSize(of layer: CALayer) -> CGSize
 ```
 
+```objc
+- (CGSize) preferredSizeOfLayer:(CALayer *) layer;
+```
+
 ## See Also
 
-- [func invalidateLayout(of: CALayer)](calayoutmanager/invalidatelayout(of:).md)
+### Managing Layout
+- [func invalidateLayout(of: CALayer)](./invalidatelayout%28of%29.md)
   Invalidates the layout of a layer so it knows to refresh its content on the next frame.
-- [func layoutSublayers(of: CALayer)](calayoutmanager/layoutsublayers(of:).md)
+- [func layoutSublayers(of: CALayer)](./layoutsublayers%28of%29.md)
   Override to customize layout of sublayers whenever the layer needs redrawing.
 
 

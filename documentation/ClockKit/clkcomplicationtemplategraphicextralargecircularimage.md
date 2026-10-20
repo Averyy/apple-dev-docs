@@ -1,12 +1,15 @@
 # CLKComplicationTemplateGraphicExtraLargeCircularImage
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template for displaying an extra-large, full-color circular image.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,11 +17,15 @@ A template for displaying an extra-large, full-color circular image.
 class CLKComplicationTemplateGraphicExtraLargeCircularImage
 ```
 
+```objc
+@interface CLKComplicationTemplateGraphicExtraLargeCircularImage : CLKComplicationTemplateGraphicExtraLargeCircular
+```
+
 #### Overview
 
-This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](clkcomplicationfamily/graphicextralarge.md) family. [`Figure 1`](clkcomplicationtemplategraphicextralargecircularimage#3667238.md) shows the layout of the complication and where it appears on the clock face.
+This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](./clkcomplicationfamily/graphicextralarge.md) family. [Figure 1](./clkcomplicationtemplategraphicextralargecircularimage.md#3667238) shows the layout of the complication and where it appears on the clock face.
 
-![A diagram showing the layout of the complication that calls out the content produced by the image provider.](/images/com.apple.clockkit/media-3667238@2x.png)
+![A diagram showing the layout of the complication that calls out the content produced by the image provider.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3667238@2x.png)
 
 The table below lists the dimensions of the image you use in this template. Use @2x images for display on Apple Watch so the point-based dimensions are half the listed size.
 
@@ -36,34 +43,35 @@ Instead of providing multiple images with different resolutions, you can provide
 ## Topics
 
 ### Creating the Template
-- [init(imageProvider: CLKFullColorImageProvider)](clkcomplicationtemplategraphicextralargecircularimage/init(imageprovider:).md)
+- [init(imageProvider: CLKFullColorImageProvider)](./clkcomplicationtemplategraphicextralargecircularimage/init%28imageprovider%29.md)
   Creates a template with a circular image.
 ### Setting the Complication Data
-- [var imageProvider: CLKFullColorImageProvider](clkcomplicationtemplategraphicextralargecircularimage/imageprovider.md)
+- [var imageProvider: CLKFullColorImageProvider](./clkcomplicationtemplategraphicextralargecircularimage/imageprovider.md)
   The image to display.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationTemplateGraphicExtraLargeCircular](clkcomplicationtemplategraphicextralargecircular.md)
+- [CLKComplicationTemplateGraphicExtraLargeCircular](./clkcomplicationtemplategraphicextralargecircular.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationTemplateGraphicExtraLargeCircularView](clkcomplicationtemplategraphicextralargecircularview.md)
+### Text and images
+- [class CLKComplicationTemplateGraphicExtraLargeCircularView](./clkcomplicationtemplategraphicextralargecircularview.md)
   A template for displaying a circular SwiftUI view.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularStackImage](clkcomplicationtemplategraphicextralargecircularstackimage.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularStackImage](./clkcomplicationtemplategraphicextralargecircularstackimage.md)
   A template for displaying an extra-large, full-color circular image and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularStackViewText](clkcomplicationtemplategraphicextralargecircularstackviewtext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularStackViewText](./clkcomplicationtemplategraphicextralargecircularstackviewtext.md)
   A template for displaying a SwiftUI view and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularStackText](clkcomplicationtemplategraphicextralargecircularstacktext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularStackText](./clkcomplicationtemplategraphicextralargecircularstacktext.md)
   A template for displaying two rows of text in an extra-large, circular complication.
 
 

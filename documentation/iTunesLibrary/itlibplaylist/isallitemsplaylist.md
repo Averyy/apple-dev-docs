@@ -1,7 +1,8 @@
 # isAllItemsPlaylist
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the API exposes every item in the playlist.
 
@@ -9,21 +10,28 @@ Indicates whether the API exposes every item in the playlist.
 - Mac Catalyst 14.0+
 - macOS 10.13+
 
+> **Deprecated**: not useful
+
 ## Declaration
 
 ```swift
 var isAllItemsPlaylist: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isAllItemsPlaylist) BOOL allItemsPlaylist;
+```
+
 #### Discussion
 
-This property always returns [`true`](https://developer.apple.com/documentation/swift/true).
+This property always returns [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isMaster: Bool](itlibplaylist/ismaster.md)
+### Deprecated
+- [var isMaster: Bool](./ismaster.md)
   A Boolean value that indicates whether the playlist represents the entire iTunes library.
-- [let ITLibPlaylistPropertyMaster: String](itlibplaylistpropertymaster.md)
+- [let ITLibPlaylistPropertyMaster: String](../itlibplaylistpropertymaster.md)
   A Boolean value that indicates whether the playlist represents the entire iTunes library.
 
 

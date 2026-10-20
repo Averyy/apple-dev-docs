@@ -1,7 +1,8 @@
 # NWError.tls(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A TLS error reported by a TLS connection or listener.
 
@@ -22,9 +23,10 @@ case tls(OSStatus)
 
 ## See Also
 
-- [case posix(POSIXErrorCode)](nwerror/posix(_:).md)
+### Checking Error Types
+- [case posix(POSIXErrorCode)](./posix%28_%29.md)
   A POSIX error, which is used for most network protocol and routing errors.
-- [case dns(DNSServiceErrorType)](nwerror/dns(_:).md)
+- [case dns(DNSServiceErrorType)](./dns%28_%29.md)
   A DNS error encountered in resolving, browsing, or advertising.
 
 

@@ -1,7 +1,8 @@
 # isOutputObscuredDueToInsufficientExternalProtection
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system obscures decoded output due to insufficient external protection on the current device.
 
@@ -19,9 +20,14 @@ A Boolean value that indicates whether the system obscures decoded output due to
 var isOutputObscuredDueToInsufficientExternalProtection: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL outputObscuredDueToInsufficientExternalProtection;
+```
+
 ## See Also
 
-- [var preventsCapture: Bool](avsamplebufferdisplaylayer/preventscapture.md)
+### Protecting content
+- [var preventsCapture: Bool](./preventscapture.md)
   A Boolean value that indicates whether the layer protects against screen capture.
 
 

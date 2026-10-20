@@ -1,7 +1,8 @@
 # isSentenceTerminal
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a punctuation mark that generally marks the end of a sentence.
 
@@ -22,7 +23,7 @@ var isSentenceTerminal: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Sentence_Terminal” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Sentence_Terminal” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

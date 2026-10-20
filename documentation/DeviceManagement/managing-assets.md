@@ -1,6 +1,7 @@
 # Managing assets
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Assign and revoke app and book licenses across your organization.
 
@@ -8,9 +9,9 @@ Assign and revoke app and book licenses across your organization.
 
 Assets are the apps and books that an organization owns. The asset management endpoints allow for asynchronous management of these assets to users and devices with your device management service.
 
-#### Retrieve Asset Information
+#### Retrieve asset information
 
-Before managing the assets in an organization, you need to retrieve all of the assets that the organization owns by making a request to [`Get Assets`](get-assets-4ski1.md).
+Before managing the assets in an organization, you need to retrieve all of the assets that the organization owns by making a request to [`Get Assets`](./get-assets-4ski1.md).
 
 The following code shows an example of requesting an organization’s assets:
 
@@ -94,9 +95,9 @@ The code above results in a response like the following:
 }
 ```
 
-You can identify assets by the unique pair of store identifier and quality properties in `RequestAsset`. Assets in the [`GetAssetsResponse`](getassetsresponse.md) have additional fields regarding quantity and assignability in [`ResponseAsset`](responseasset.md). For pagination response fields, see [`Using paginated endpoints`](using-paginated-endpoints.md).
+You can identify assets by the unique pair of store identifier and quality properties in `RequestAsset`. Assets in the [`GetAssetsResponse`](./getassetsresponse.md) have additional fields regarding quantity and assignability in [`ResponseAsset`](./responseasset.md). For pagination response fields, see [Using paginated endpoints](./using-paginated-endpoints.md).
 
-Free apps and books will allow for unlimited assignment by default, however organizations may decide to use their existing fixed inventory on an organizational unit basis. Use the `unlimited` query parameter to filter for unlimited assets. When set to `true`, the response includes a separate `unlimitedAssets` array containing [`UnlimitedResponseAsset`](unlimitedresponseasset.md) objects with unlimited licenses. When set to `false`, the response excludes unlimited assets. If the `unlimited` parameter is omitted, any unlimited free assets in the organizational unit return with a `totalCount` value of `2147483647`, the maximum integer value.
+Free apps and books will allow for unlimited assignment by default, however organizations may decide to use their existing fixed inventory on an organizational unit basis. Use the `unlimited` query parameter to filter for unlimited assets. When set to `true`, the response includes a separate `unlimitedAssets` array containing [`UnlimitedResponseAsset`](./unlimitedresponseasset.md) objects with unlimited licenses. When set to `false`, the response excludes unlimited assets. If the `unlimited` parameter is omitted, any unlimited free assets in the organizational unit return with a `totalCount` value of `2147483647`, the maximum integer value.
 
 The Get Assets endpoint supports several additional query parameters for filtering results:
 
@@ -112,7 +113,7 @@ The Get Assets endpoint supports several additional query parameters for filteri
 | `minAvailableCount` | integer | Returns assets with at least this many available licenses. |
 | `maxAvailableCount` | integer | Returns assets with at most this many available licenses. |
 
-The Get Assets endpoint returns only apps and books. To filter and retrieve subscription inventory, use the dedicated subscription endpoints described in [`Managing subscriptions`](managing-subscriptions.md).
+The Get Assets endpoint returns only apps and books. To filter and retrieve subscription inventory, use the dedicated subscription endpoints described in [Managing subscriptions](./managing-subscriptions.md).
 
 The following code shows an example of requesting only device-assignable apps:
 
@@ -121,9 +122,9 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assets?produc
 --header 'Authorization: Bearer {sToken}'
 ```
 
-#### Retrieve Assignments
+#### Retrieve assignments
 
-Making a request to [`Get Assignments`](get-assignments-9wv1e.md) allows you to retrieve all active asset assignments for the organization.
+Making a request to [`Get Assignments`](./get-assignments-9wv1e.md) allows you to retrieve all active asset assignments for the organization.
 
 The following code shows an example of retrieving an organization’s assignments:
 
@@ -173,7 +174,7 @@ The code above results in a response like the following:
 }
 ```
 
-You can assign an asset to either a user or a device. For all other response fields, see [`GetAssignmentsResponse`](getassignmentsresponse.md) and [`Using paginated endpoints`](using-paginated-endpoints.md).
+You can assign an asset to either a user or a device. For all other response fields, see [`GetAssignmentsResponse`](./getassignmentsresponse.md) and [Using paginated endpoints](./using-paginated-endpoints.md).
 
 Use query parameters to filter assignment results:
 
@@ -193,13 +194,13 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/assignments?a
 --header 'Authorization: Bearer {sToken}'
 ```
 
-#### Check Request Size Limits
+#### Check request size limits
 
-The size limits for a [`ManageAssetsRequest`](manageassetsrequest.md) and [`RevokeAssetsRequest`](revokeassetsrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](serviceconfigresponse/limits-data.dictionary.md). For the specific request-limit keys and their meanings, see [`Service Config`](service-config.md).
+The size limits for a [`ManageAssetsRequest`](./manageassetsrequest.md) and [`RevokeAssetsRequest`](./revokeassetsrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](./serviceconfigresponse/limits-data.dictionary.md). For the specific request-limit keys and their meanings, see [`Service Config`](./service-config.md).
 
-#### Assign Assets
+#### Assign assets
 
-Use [`ManageAssetsRequest`](manageassetsrequest.md) to asynchronously associate assets with users and devices. Because these requests are asynchronous, install assets on a device only after the server sends a successful notification.
+Use [`ManageAssetsRequest`](./manageassetsrequest.md) to asynchronously associate assets with users and devices. Because these requests are asynchronous, install assets on a device only after the server sends a successful notification.
 
 The following code shows an example of associating assets to users and devices:
 
@@ -241,9 +242,9 @@ The code above results in a response like the following:
 }
 ```
 
-#### Unassign Assets
+#### Unassign assets
 
-Use [`ManageAssetsRequest`](manageassetsrequest.md) to asynchronously disassociate assets from users and devices. Because these requests are asynchronous, remove assets from a device only after the server sends a successful notification. An unassigned asset that remains installed on a device becomes unusable after 30 days.
+Use [`ManageAssetsRequest`](./manageassetsrequest.md) to asynchronously disassociate assets from users and devices. Because these requests are asynchronous, remove assets from a device only after the server sends a successful notification. An unassigned asset that remains installed on a device becomes unusable after 30 days.
 
 The following code shows an example of disassociating assets from currently assigned users and devices:
 
@@ -285,7 +286,7 @@ The code above results in a response like the following:
 }
 ```
 
-Use [`RevokeAssetsRequest`](revokeassetsrequest.md) to disassociate all assigned revocable assets from users and devices, as the following code shows:
+Use [`RevokeAssetsRequest`](./revokeassetsrequest.md) to disassociate all assigned revocable assets from users and devices, as the following code shows:
 
 ```javascript
 curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/assets/revoke' \
@@ -317,7 +318,7 @@ The code above results in a response like the following:
 }
 ```
 
-To view event progress, make a request to [`Event Status`](events-status.md) using the unique identifier that the synchronous [`EventResponse`](eventresponse.md) returns, as the following code demonstrates:
+To view event progress, make a request to [`Event Status`](./events-status.md) using the unique identifier that the synchronous [`EventResponse`](./eventresponse.md) returns, as the following code demonstrates:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventId=29ddf6fe-8b2e-4c3f-91d9-aea3c63e4235' \
@@ -388,19 +389,20 @@ The code above results in a response like the following:
 }
 ```
 
-The [`StatusResponse`](statusresponse.md) returns as `PENDING`, `COMPLETE`, or `FAILED`, which represents the overall status of the asynchronous request.
+The [`StatusResponse`](./statusresponse.md) returns as `PENDING`, `COMPLETE`, or `FAILED`, which represents the overall status of the asynchronous request.
 
-#### Handle Notifications
+#### Handle notifications
 
-For device management services that subscribe to `ASSET_MANAGEMENT` notifications in [`Client Config`](client-config-4szk1.md), the server sends incremental notifications as it makes assignments. For more information, see [`Subscribing to notifications`](subscribing-to-notifications.md).
+For device management services that subscribe to `ASSET_MANAGEMENT` notifications in [`Client Config`](./client-config-4szk1.md), the server sends incremental notifications as it makes assignments. For more information, see [Subscribing to notifications](./subscribing-to-notifications.md).
 
 ## See Also
 
-- [Managing subscriptions](managing-subscriptions.md)
+### Managing content
+- [Managing subscriptions](./managing-subscriptions.md)
   Administer auto-renewable subscription seats for your organization.
-- [Managing users](managing-users.md)
+- [Managing users](./managing-users.md)
   Register and manage users for your organization’s managed organizational unit.
-- [Setting up and assigning content](setting-up-and-assigning-content.md)
+- [Setting up and assigning content](./setting-up-and-assigning-content.md)
   Distribute purchased licenses to managed users through your device management service.
 
 

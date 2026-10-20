@@ -1,7 +1,8 @@
 # init(texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified texture
 

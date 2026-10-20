@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.peap
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that indicates the system allows the Protected Extensible Authentication Protocol (PEAP) for this network.
 

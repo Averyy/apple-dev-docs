@@ -1,7 +1,8 @@
 # NSAccessibilityCustomRotor.RotorType.landmark
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A landmark.
 
@@ -14,37 +15,42 @@ A landmark.
 case landmark
 ```
 
+```c
+NSAccessibilityCustomRotorTypeLandmark
+```
+
 ## See Also
 
-- [NSAccessibilityCustomRotor.RotorType.custom](nsaccessibilitycustomrotor/rotortype/custom.md)
+### Constants
+- [NSAccessibilityCustomRotor.RotorType.custom](./custom.md)
   A rotor with a custom label.
-- [NSAccessibilityCustomRotor.RotorType.any](nsaccessibilitycustomrotor/rotortype/any.md)
+- [NSAccessibilityCustomRotor.RotorType.any](./any.md)
   Any type of item.
-- [NSAccessibilityCustomRotor.RotorType.link](nsaccessibilitycustomrotor/rotortype/link.md)
+- [NSAccessibilityCustomRotor.RotorType.link](./link.md)
   A link.
-- [NSAccessibilityCustomRotor.RotorType.visitedLink](nsaccessibilitycustomrotor/rotortype/visitedlink.md)
+- [NSAccessibilityCustomRotor.RotorType.visitedLink](./visitedlink.md)
   A visited link.
-- [NSAccessibilityCustomRotor.RotorType.heading](nsaccessibilitycustomrotor/rotortype/heading.md)
+- [NSAccessibilityCustomRotor.RotorType.heading](./heading.md)
   Any heading-level text.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel1](nsaccessibilitycustomrotor/rotortype/headinglevel1.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel1](./headinglevel1.md)
   A first-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel2](nsaccessibilitycustomrotor/rotortype/headinglevel2.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel2](./headinglevel2.md)
   A second-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel3](nsaccessibilitycustomrotor/rotortype/headinglevel3.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel3](./headinglevel3.md)
   A third-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel4](nsaccessibilitycustomrotor/rotortype/headinglevel4.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel4](./headinglevel4.md)
   A fourth-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel5](nsaccessibilitycustomrotor/rotortype/headinglevel5.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel5](./headinglevel5.md)
   A fifth-level heading.
-- [NSAccessibilityCustomRotor.RotorType.headingLevel6](nsaccessibilitycustomrotor/rotortype/headinglevel6.md)
+- [NSAccessibilityCustomRotor.RotorType.headingLevel6](./headinglevel6.md)
   A sixth-level heading.
-- [NSAccessibilityCustomRotor.RotorType.boldText](nsaccessibilitycustomrotor/rotortype/boldtext.md)
+- [NSAccessibilityCustomRotor.RotorType.boldText](./boldtext.md)
   Any bold text.
-- [NSAccessibilityCustomRotor.RotorType.italicText](nsaccessibilitycustomrotor/rotortype/italictext.md)
+- [NSAccessibilityCustomRotor.RotorType.italicText](./italictext.md)
   Any italicized text.
-- [NSAccessibilityCustomRotor.RotorType.underlinedText](nsaccessibilitycustomrotor/rotortype/underlinedtext.md)
+- [NSAccessibilityCustomRotor.RotorType.underlinedText](./underlinedtext.md)
   Any underlined text.
-- [NSAccessibilityCustomRotor.RotorType.misspelledWord](nsaccessibilitycustomrotor/rotortype/misspelledword.md)
+- [NSAccessibilityCustomRotor.RotorType.misspelledWord](./misspelledword.md)
   A misspelled word.
 
 

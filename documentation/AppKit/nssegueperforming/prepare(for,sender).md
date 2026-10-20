@@ -1,7 +1,8 @@
 # prepare(for:sender:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a segue is about to be performed.
 
@@ -13,6 +14,10 @@ Called when a segue is about to be performed.
 ```swift
 @MainActor
 optional func prepare(for segue: NSStoryboardSegue, sender: Any?)
+```
+
+```objc
+- (void) prepareForSegue:(NSStoryboardSegue *) segue sender:(id) sender;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ Segues can be triggered from multiple sources, so use the information in the `se
 
 ## See Also
 
-- [func performSegue(withIdentifier: NSStoryboardSegue.Identifier, sender: Any?)](nssegueperforming/performsegue(withidentifier:sender:).md)
+### Working with Storyboard Segues
+- [func performSegue(withIdentifier: NSStoryboardSegue.Identifier, sender: Any?)](./performsegue%28withidentifier,sender%29.md)
   Performs the specified segue.
-- [func shouldPerformSegue(withIdentifier: NSStoryboardSegue.Identifier, sender: Any?) -> Bool](nssegueperforming/shouldperformsegue(withidentifier:sender:).md)
+- [func shouldPerformSegue(withIdentifier: NSStoryboardSegue.Identifier, sender: Any?) -> Bool](./shouldperformsegue%28withidentifier,sender%29.md)
   Called immediately prior to the performance of a storyboard segue.
 
 

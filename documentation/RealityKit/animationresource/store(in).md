@@ -1,7 +1,8 @@
 # store(in:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the animation to an entity without playing it.
 
@@ -11,7 +12,7 @@ Adds the animation to an entity without playing it.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,12 +1,13 @@
 # NSColor.ColorType.componentBased
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Colors that include floating-point color components and a color space.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Colors that include floating-point color components and a color space.
 case componentBased
 ```
 
+```c
+NSColorTypeComponentBased
+```
+
 #### Discussion
 
-Examples of this type are RGB, CMYK, and HSB colors. Before acessing components that are specific to one colorspace, such as the [`redComponent`](nscolor/redcomponent.md) of an RGB color, call [`usingColorSpace(_:)`](nscolor/usingcolorspace(_:).md).
+Examples of this type are RGB, CMYK, and HSB colors. Before acessing components that are specific to one colorspace, such as the [`redComponent`](../redcomponent.md) of an RGB color, call [`usingColorSpace(_:)`](../usingcolorspace%28_%29.md).
 
 ## See Also
 
-- [NSColor.ColorType.pattern](nscolor/colortype/pattern.md)
+### Color Types
+- [NSColor.ColorType.pattern](./pattern.md)
   Colors that include an image to be used as a pattern.
-- [NSColor.ColorType.catalog](nscolor/colortype/catalog.md)
+- [NSColor.ColorType.catalog](./catalog.md)
   Colors that are retrieved from an asset catalog.
 
 

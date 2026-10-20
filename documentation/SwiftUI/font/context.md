@@ -1,7 +1,8 @@
 # Font.Context
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information used to resolve a font.
 
@@ -22,18 +23,18 @@ struct Context
 
 #### Overview
 
-> **Note**: [`fontResolutionContext`](environmentvalues/fontresolutioncontext.md), [`resolve(in:)`](font/resolve(in:).md)
+> **See Also**: [`fontResolutionContext`](../environmentvalues/fontresolutioncontext.md), [`resolve(in:)`](./resolve%28in%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

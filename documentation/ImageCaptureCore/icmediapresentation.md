@@ -1,7 +1,8 @@
 # ICMediaPresentation
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 14.0+
@@ -16,23 +17,27 @@
 enum ICMediaPresentation
 ```
 
+```c
+enum ICMediaPresentation : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [ICMediaPresentation.convertedAssets](icmediapresentation/convertedassets.md)
-- [ICMediaPresentation.originalAssets](icmediapresentation/originalassets.md)
+- [ICMediaPresentation.convertedAssets](./icmediapresentation/convertedassets.md)
+- [ICMediaPresentation.originalAssets](./icmediapresentation/originalassets.md)
 ### Initializers
-- [init?(rawValue: UInt)](icmediapresentation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./icmediapresentation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(numberOfBands:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio unit equalizer object with the specified number of bands.
 
@@ -19,6 +20,10 @@ Creates an audio unit equalizer object with the specified number of bands.
 init(numberOfBands: Int)
 ```
 
+```objc
+- (instancetype) initWithNumberOfBands:(NSUInteger) numberOfBands;
+```
+
 #### Return Value
 
 A new `AVAudioUnitEQ` instance.
@@ -29,7 +34,8 @@ A new `AVAudioUnitEQ` instance.
 
 ## See Also
 
-- [var bands: [AVAudioUnitEQFilterParameters]](avaudiouniteq/bands.md)
+### Related Documentation
+- [var bands: [AVAudioUnitEQFilterParameters]](./bands.md)
   An array of equalizer filter parameters.
 
 

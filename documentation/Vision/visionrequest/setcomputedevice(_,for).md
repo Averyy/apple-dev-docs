@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Assigns a compute device for a compute stage.
@@ -25,7 +26,7 @@ mutating func setComputeDevice(_ computeDevice: MLComputeDevice?, for computeSta
 
 If the parameter `computeDevice` is `nil`, the framework removes any explicit compute device assignment and allows the framework to select the device.
 
-Configure any compute device for a given compute stage. When performing a request, the system makes a validity check. Use [`supportedComputeStageDevices`](visionrequest/supportedcomputestagedevices.md) to get valid compute devices for a request’s compute stages.
+Configure any compute device for a given compute stage. When performing a request, the system makes a validity check. Use [`supportedComputeStageDevices`](./supportedcomputestagedevices.md) to get valid compute devices for a request’s compute stages.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # kIOUSBBusVoltageDefault
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The default bus voltage.
 
@@ -10,7 +11,7 @@ The default bus voltage.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBBusVoltageDefault = 5
 ```
 

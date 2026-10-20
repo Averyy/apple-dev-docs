@@ -1,7 +1,8 @@
 # init(analyzerFormat:configurationHandler:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio input converter.
 
@@ -22,11 +23,14 @@ init(analyzerFormat: AVAudioFormat, configurationHandler: ((AVAudioConverter) ->
 ## Parameters
 
 - `analyzerFormat`: The audio format to convert the audio samples to. The audio format should be one supported by the speech analyzer’s modules.
-- `configurationHandler`: A closure called to customize the instances of `AVAudioConverter` that this converter creates as needed. The closure takes the following parameter: - **audioConverter**: A newly-created instance of `AVAudioConverter`.
+- `configurationHandler`: A closure called to customize the instances of `AVAudioConverter` that this converter creates as needed. The closure takes the following parameter:
+
+  - **audioConverter**: A newly-created instance of `AVAudioConverter`.
 
 ## See Also
 
-- [static func converter(compatibleWith: [any SpeechModule]) async throws -> AnalyzerInputConverter](analyzerinputconverter/converter(compatiblewith:).md)
+### Creating a converter
+- [static func converter(compatibleWith: [any SpeechModule]) async throws -> AnalyzerInputConverter](./converter%28compatiblewith%29.md)
   Returns an audio input converter compatible with the given modules.
 
 

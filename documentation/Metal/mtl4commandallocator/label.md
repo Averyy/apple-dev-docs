@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Provides the optional label you specify at creation time for debug purposes.
@@ -18,6 +19,10 @@ Provides the optional label you specify at creation time for debug purposes.
 
 ```swift
 var label: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * label;
 ```
 
 

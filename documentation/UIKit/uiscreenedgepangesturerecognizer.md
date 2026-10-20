@@ -1,7 +1,8 @@
 # UIScreenEdgePanGestureRecognizer
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A continuous gesture recognizer that interprets panning gestures that start near an edge of the screen.
 
@@ -17,61 +18,66 @@ A continuous gesture recognizer that interprets panning gestures that start near
 class UIScreenEdgePanGestureRecognizer
 ```
 
+```objc
+@interface UIScreenEdgePanGestureRecognizer : UIPanGestureRecognizer
+```
+
 ## Mentions
 
-- [Handling pan gestures](handling-pan-gestures.md)
+- [Handling pan gestures](./handling-pan-gestures.md)
 
 #### Overview
 
 The system uses screen edge gestures in some cases to initiate view controller transitions. You can use this class to replicate the same gesture behavior for your own actions.
 
-After creating a screen edge pan gesture recognizer, assign an appropriate value to the [`edges`](uiscreenedgepangesturerecognizer/edges.md) property before attaching the gesture recognizer to your view. You use this property to specify the edges where the gesture can start. This gesture recognizer ignores any touches beyond the first touch.
+After creating a screen edge pan gesture recognizer, assign an appropriate value to the [`edges`](./uiscreenedgepangesturerecognizer/edges.md) property before attaching the gesture recognizer to your view. You use this property to specify the edges where the gesture can start. This gesture recognizer ignores any touches beyond the first touch.
 
 ## Topics
 
 ### Specifying the starting edges
-- [var edges: UIRectEdge](uiscreenedgepangesturerecognizer/edges.md)
+- [var edges: UIRectEdge](./uiscreenedgepangesturerecognizer/edges.md)
   The acceptable starting edges for the gesture.
-- [struct UIRectEdge](uirectedge.md)
+- [struct UIRectEdge](./uirectedge.md)
   Constants that specify the edges of a rectangle.
 
 ## Relationships
 
 ### Inherits From
-- [UIPanGestureRecognizer](uipangesturerecognizer.md)
+- [UIPanGestureRecognizer](./uipangesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Handling UIKit gestures](handling-uikit-gestures.md)
+### Standard gestures
+- [Handling UIKit gestures](./handling-uikit-gestures.md)
   Use gesture recognizers to simplify touch handling and create a consistent user experience.
-- [Coordinating multiple gesture recognizers](coordinating-multiple-gesture-recognizers.md)
+- [Coordinating multiple gesture recognizers](./coordinating-multiple-gesture-recognizers.md)
   Discover how to use multiple gesture recognizers on the same view.
-- [Adopting hover support for Apple Pencil](adopting-hover-support-for-apple-pencil.md)
+- [Adopting hover support for Apple Pencil](./adopting-hover-support-for-apple-pencil.md)
   Enhance user feedback for your iPadOS app with a hover preview for Apple Pencil input.
-- [Supporting gesture interaction in your apps](supporting-gesture-interaction-in-your-apps.md)
+- [Supporting gesture interaction in your apps](./supporting-gesture-interaction-in-your-apps.md)
   Enrich your app’s user experience by supporting standard and custom gesture interaction.
-- [class UIHoverGestureRecognizer](uihovergesturerecognizer.md)
+- [class UIHoverGestureRecognizer](./uihovergesturerecognizer.md)
   A continuous gesture recognizer that interprets pointer movement over a view.
-- [class UILongPressGestureRecognizer](uilongpressgesturerecognizer.md)
+- [class UILongPressGestureRecognizer](./uilongpressgesturerecognizer.md)
   A continuous gesture recognizer that interprets long-press gestures.
-- [class UIPanGestureRecognizer](uipangesturerecognizer.md)
+- [class UIPanGestureRecognizer](./uipangesturerecognizer.md)
   A continuous gesture recognizer that interprets panning gestures.
-- [class UIPinchGestureRecognizer](uipinchgesturerecognizer.md)
+- [class UIPinchGestureRecognizer](./uipinchgesturerecognizer.md)
   A continuous gesture recognizer that interprets pinching gestures involving two touches.
-- [class UIRotationGestureRecognizer](uirotationgesturerecognizer.md)
+- [class UIRotationGestureRecognizer](./uirotationgesturerecognizer.md)
   A continuous gesture recognizer that interprets rotation gestures involving two touches.
-- [class UISwipeGestureRecognizer](uiswipegesturerecognizer.md)
+- [class UISwipeGestureRecognizer](./uiswipegesturerecognizer.md)
   A discrete gesture recognizer that interprets swiping gestures in one or more directions.
-- [class UITapGestureRecognizer](uitapgesturerecognizer.md)
+- [class UITapGestureRecognizer](./uitapgesturerecognizer.md)
   A discrete gesture recognizer that interprets single or multiple taps.
 
 

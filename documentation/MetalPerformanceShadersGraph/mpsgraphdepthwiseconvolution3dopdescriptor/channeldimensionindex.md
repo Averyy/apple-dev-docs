@@ -1,7 +1,8 @@
 # channelDimensionIndex
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axis that contains the channels in the input and the weights, within the 4D tile of the last dimensions.
 
@@ -17,6 +18,10 @@ The axis that contains the channels in the input and the weights, within the 4D 
 
 ```swift
 var channelDimensionIndex: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSInteger channelDimensionIndex;
 ```
 
 #### Discussion

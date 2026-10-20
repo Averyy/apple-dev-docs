@@ -1,7 +1,8 @@
 # authorizationStatus
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authorization status for receiving fall detection event notifications.
 
@@ -14,11 +15,16 @@ The authorization status for receiving fall detection event notifications.
 var authorizationStatus: CMAuthorizationStatus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMAuthorizationStatus authorizationStatus;
+```
+
 ## See Also
 
-- [func requestAuthorization(handler: (CMAuthorizationStatus) -> Void)](cmfalldetectionmanager/requestauthorization(handler:).md)
+### Requesting Authorization
+- [func requestAuthorization(handler: (CMAuthorizationStatus) -> Void)](./requestauthorization%28handler%29.md)
   Requests authorization to receive notifications about fall detection events.
-- [enum CMAuthorizationStatus](cmauthorizationstatus.md)
+- [enum CMAuthorizationStatus](../cmauthorizationstatus.md)
   The authorization status for motion-related features.
 
 

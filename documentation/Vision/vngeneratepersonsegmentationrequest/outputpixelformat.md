@@ -1,7 +1,8 @@
 # outputPixelFormat
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the output image.
 
@@ -19,21 +20,26 @@ The pixel format of the output image.
 var outputPixelFormat: OSType { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) OSType outputPixelFormat;
+```
+
 #### Discussion
 
 The property supports the following values:
 
-- [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8)
-- [`kCVPixelFormatType_OneComponent16Half`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent16half)
-- [`kCVPixelFormatType_OneComponent32Float`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent32float)
+- [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md)
+- [`kCVPixelFormatType_OneComponent16Half`](../../CoreVideo/kcvpixelformattype_onecomponent16half.md)
+- [`kCVPixelFormatType_OneComponent32Float`](../../CoreVideo/kcvpixelformattype_onecomponent32float.md)
 
-The default value is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8).
+The default value is [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md).
 
 ## See Also
 
-- [var qualityLevel: VNGeneratePersonSegmentationRequest.QualityLevel](vngeneratepersonsegmentationrequest/qualitylevel-swift.property.md)
+### Configuring the Request
+- [var qualityLevel: VNGeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.property.md)
   A value that indicates how the request balances accuracy and performance.
-- [VNGeneratePersonSegmentationRequest.QualityLevel](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum.md)
+- [VNGeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.enum.md)
   Constants that define the levels of quality for a person segmentation request.
 
 

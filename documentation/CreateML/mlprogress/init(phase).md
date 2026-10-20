@@ -1,7 +1,8 @@
 # init(phase:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a training session progress instance from a training phase.
 
@@ -25,7 +26,8 @@ init(phase: MLPhase)
 
 ## See Also
 
-- [init?(progress: Progress)](mlprogress/init(progress:).md)
+### Creating a training progress update
+- [init?(progress: Progress)](./init%28progress%29.md)
   Creates a training session progress instance from a foundation progress object.
 
 

@@ -1,7 +1,8 @@
 # devicePasscode
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Constraint to access an item with a passcode.
 
@@ -18,6 +19,10 @@ Constraint to access an item with a passcode.
 
 ```swift
 static var devicePasscode: SecAccessControlCreateFlags { get }
+```
+
+```c
+kSecAccessControlDevicePasscode
 ```
 
 

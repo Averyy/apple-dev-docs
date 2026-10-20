@@ -1,7 +1,8 @@
 # fillOpacity
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The opacity of the fill color.
 
@@ -10,14 +11,14 @@ The opacity of the fill color.
 
 ## Declaration
 
-```swift
+```
 get fillOpacity(): number;
 set fillOpacity(fillOpacity: number);
 ```
 
 ## Mentions
 
-- [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
+- [Adding interactivity to overlays](../adding-interactivity-to-overlays.md)
 
 #### Discussion
 
@@ -25,9 +26,10 @@ The value of this property can be in the range of `0` (fully transparent) to `1`
 
 ## See Also
 
-- [fillColor](style/fillcolor.md)
+### Styling fills
+- [fillColor](./fillcolor.md)
   The fill color of a shape.
-- [fillRule](style/fillrule.md)
+- [fillRule](./fillrule.md)
   A rule for determining whether a point is inside or outside a polygon.
 
 

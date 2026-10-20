@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The underlying data format of the data plane.
@@ -18,6 +19,10 @@ The underlying data format of the data plane.
 
 ```swift
 var dataType: MTLTensorDataType { get }
+```
+
+```objc
+@property (readonly) MTLTensorDataType dataType;
 ```
 
 

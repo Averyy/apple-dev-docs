@@ -1,29 +1,31 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that specifies the number of bytes in this media header atom.
 
 ## See Also
 
-- [Type](media_header_atom/type.md)
+### Data fields
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](media_header_atom/version.md)
+- [Version](./version.md)
   One byte that specifies the version of this header atom.
-- [Flags](media_header_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes of space for media header flags.
-- [Creation time](media_header_atom/creation_time.md)
+- [Creation time](./creation_time.md)
   A 32-bit integer that specifies the creation date for the media atom.
-- [Modification time](media_header_atom/modification_time.md)
+- [Modification time](./modification_time.md)
   A 32-bit integer that specifies the last modification date for the media atom.
-- [Time scale](media_header_atom/time_scale.md)
+- [Time scale](./time_scale.md)
   A time value that indicates the time scale for this media.
-- [Duration](media_header_atom/duration.md)
+- [Duration](./duration.md)
   The duration of this media in units of its time scale.
-- [Language](media_header_atom/language.md)
+- [Language](./language.md)
   A 16-bit integer that specifies the language code for this media.
-- [Quality](media_header_atom/quality.md)
+- [Quality](./quality.md)
   A 16-bit integer that specifies the media’s playback quality.
 
 

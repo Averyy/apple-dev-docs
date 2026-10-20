@@ -1,18 +1,19 @@
 # AVSampleBufferRequest.Mode.immediate
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that indicates that sample buffer creation requests load data as soon as possible.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A mode that indicates that sample buffer creation requests load data as soon as 
 case immediate
 ```
 
+```c
+AVSampleBufferRequestModeImmediate
+```
+
 ## See Also
 
-- [AVSampleBufferRequest.Mode.scheduled](avsamplebufferrequest/mode-swift.enum/scheduled.md)
+### Mode scheduling
+- [AVSampleBufferRequest.Mode.scheduled](./scheduled.md)
   A mode that indicates that sample buffer creation requests load data according to a scheduled deadline.
-- [AVSampleBufferRequest.Mode.opportunistic](avsamplebufferrequest/mode-swift.enum/opportunistic.md)
+- [AVSampleBufferRequest.Mode.opportunistic](./opportunistic.md)
   A mode that indicates that opportunistic sample buffer creation requests load data as soon as possible.
 
 

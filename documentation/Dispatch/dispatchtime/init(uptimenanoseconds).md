@@ -1,18 +1,19 @@
 # init(uptimeNanoseconds:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time relative to the amount of time the system has been running.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ init(uptimeNanoseconds: UInt64)
 
 #### Discussion
 
-On Apple platforms, this clock is the same as the value returned by [`mach_absolute_time`](https://developer.apple.com/documentation/kernel/1462446-mach_absolute_time) when converted into nanoseconds.
+On Apple platforms, this clock is the same as the value returned by [`mach_absolute_time`](../../kernel/api-1462446-mach_absolute_time.md) when converted into nanoseconds.
 
 ## Parameters
 

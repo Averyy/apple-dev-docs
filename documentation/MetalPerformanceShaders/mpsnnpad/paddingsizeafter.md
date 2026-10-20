@@ -1,7 +1,8 @@
 # paddingSizeAfter
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.1+
@@ -15,6 +16,10 @@
 
 ```swift
 var paddingSizeAfter: MPSImageCoordinate { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSImageCoordinate paddingSizeAfter;
 ```
 
 

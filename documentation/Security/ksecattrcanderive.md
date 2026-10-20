@@ -1,7 +1,8 @@
 # kSecAttrCanDerive
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean that indicates whether the cryptographic key can be used for derivation.
 
@@ -20,11 +21,15 @@ A key whose value is a Boolean that indicates whether the cryptographic key can 
 let kSecAttrCanDerive: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrCanDerive;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) and indicates whether this cryptographic key can be used to derive another key.
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether this cryptographic key can be used to derive another key.
 
-On key creation, if not explicitly specified, this attribute defaults to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue).
+On key creation, if not explicitly specified, this attribute defaults to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md).
 
 
 ---

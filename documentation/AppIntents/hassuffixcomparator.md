@@ -1,7 +1,8 @@
 # HasSuffixComparator
 
 **Framework**: App Intents  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that determines whether the value of a string property has the specified suffix.
 
@@ -11,7 +12,7 @@ An object that determines whether the value of a string property has the specifi
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,25 +24,26 @@ final class HasSuffixComparator<Property, PropertyType, InputType, ComparatorMap
 ## Topics
 
 ### Creating a comparator
-- [init(mappingTransform: (InputType) -> ComparatorMappingType)](hassuffixcomparator/init(mappingtransform:)-4dp26.md)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](./hassuffixcomparator/init%28mappingtransform%29-4dp26.md)
   Declares support for the `hasSuffix` operator between a `String` property and user-supplied values.
-- [init(mappingTransform: (InputType) -> ComparatorMappingType)](hassuffixcomparator/init(mappingtransform:)-5cmgi.md)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](./hassuffixcomparator/init%28mappingtransform%29-5cmgi.md)
   Declares support for the `hasSuffix` operator between a `String?` property and user-supplied values.
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](hassuffixcomparator/init(withresolvers:mappingtransform:)-5rtmw.md)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](./hassuffixcomparator/init%28withresolvers,mappingtransform%29-5rtmw.md)
   Declares support for the `hasSuffix` operator between a `String?` property and user-supplied values.
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](hassuffixcomparator/init(withresolvers:mappingtransform:)-7tdan.md)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](./hassuffixcomparator/init%28withresolvers,mappingtransform%29-7tdan.md)
   Declares support for the `hasSuffix` operator between a `String` property and user-supplied values.
 
 ## Relationships
 
 ### Inherits From
-- [EntityQueryComparator](entityquerycomparator.md)
+- [EntityQueryComparator](./entityquerycomparator.md)
 
 ## See Also
 
-- [class HasPrefixComparator](hasprefixcomparator.md)
+### String comparisons
+- [class HasPrefixComparator](./hasprefixcomparator.md)
   An object that determines whether the value of a string property has the specified prefix.
-- [enum StringComparisonOperator](stringcomparisonoperator.md)
+- [enum StringComparisonOperator](./stringcomparisonoperator.md)
 
 
 ---

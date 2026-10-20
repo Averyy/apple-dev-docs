@@ -1,7 +1,8 @@
 # kSpeechStatusOutputBusy
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the speech channel is currently producing speech.
 
@@ -12,6 +13,10 @@ Indicates whether the speech channel is currently producing speech.
 
 ```swift
 let kSpeechStatusOutputBusy: CFString
+```
+
+```c
+const CFStringRef kSpeechStatusOutputBusy;
 ```
 
 #### Discussion

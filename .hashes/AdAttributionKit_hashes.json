@@ -16,14 +16,12 @@
       "hash": "774103770a84f2be8b1b02d7432056b57370ff1775961e6a672530efc1629ff8"
     },
     "https://developer.apple.com/documentation/adattributionkit/adattributionkiterror/!=(_:_:)": {
-      "etag": "W/\"23d2b472abe306b293bf70532b714097\"",
       "file_path": "documentation/AdAttributionKit/adattributionkiterror/noteq(_,_).md",
-      "hash": "4b4d76a6a0d4b84943484b574f747ba4582cd1a4c2dace64f3846bea2ad297aa"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/adattributionkit/adattributionkiterror/==(_:_:)": {
-      "etag": "W/\"dd05461af800a2d056e91ff8e8cd7ace\"",
       "file_path": "documentation/AdAttributionKit/adattributionkiterror/eqeq(_,_).md",
-      "hash": "2f5097a6492f22ba3f1a8dfbe0134e5a587c4533cbc65a8d065159490b3a82e6"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/adattributionkit/adattributionkiterror/conversiontagnotsupported": {
       "etag": "\"f2f-65d55d3753b4c-df\"",
@@ -361,14 +359,12 @@
       "hash": "774103770a84f2be8b1b02d7432056b57370ff1775961e6a672530efc1629ff8"
     },
     "https://developer.apple.com/tutorials/data/documentation/adattributionkit/adattributionkiterror/!=(_:_:).json": {
-      "etag": "W/\"23d2b472abe306b293bf70532b714097\"",
       "file_path": "documentation/AdAttributionKit/adattributionkiterror/noteq(_,_).md",
-      "hash": "4b4d76a6a0d4b84943484b574f747ba4582cd1a4c2dace64f3846bea2ad297aa"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/adattributionkit/adattributionkiterror/==(_:_:).json": {
-      "etag": "W/\"dd05461af800a2d056e91ff8e8cd7ace\"",
       "file_path": "documentation/AdAttributionKit/adattributionkiterror/eqeq(_,_).md",
-      "hash": "2f5097a6492f22ba3f1a8dfbe0134e5a587c4533cbc65a8d065159490b3a82e6"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/adattributionkit/adattributionkiterror/conversiontagnotsupported.json": {
       "etag": "\"f2f-65d55d3753b4c-df\"",
@@ -692,6 +688,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 138
   }
 }

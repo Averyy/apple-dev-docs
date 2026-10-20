@@ -1,7 +1,8 @@
 # MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle.compact
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A compact, space-saving callout style.
 
@@ -16,6 +17,10 @@ A compact, space-saving callout style.
 
 ```swift
 case compact
+```
+
+```c
+MKMapItemDetailSelectionAccessoryCalloutStyleCompact
 ```
 
 

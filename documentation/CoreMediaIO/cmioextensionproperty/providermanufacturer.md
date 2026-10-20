@@ -1,7 +1,8 @@
 # providerManufacturer
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property key for the provider manufacturer.
 
@@ -15,13 +16,18 @@ A property key for the provider manufacturer.
 static let providerManufacturer: CMIOExtensionProperty
 ```
 
+```c
+extern CMIOExtensionProperty const CMIOExtensionPropertyProviderManufacturer;
+```
+
 #### Discussion
 
 The property state for this property is a string with a read-only attribute.
 
 ## See Also
 
-- [static let providerName: CMIOExtensionProperty](cmioextensionproperty/providername.md)
+### Provider Properties
+- [static let providerName: CMIOExtensionProperty](./providername.md)
   A property key for the provider name.
 
 

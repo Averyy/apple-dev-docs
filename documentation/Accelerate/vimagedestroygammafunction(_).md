@@ -1,7 +1,8 @@
 # vImageDestroyGammaFunction(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Destroys a gamma function object.
 
@@ -20,23 +21,28 @@ Destroys a gamma function object.
 func vImageDestroyGammaFunction(_ f: GammaFunction!)
 ```
 
+```c
+void vImageDestroyGammaFunction(GammaFunction f);
+```
+
 ## Parameters
 
 - `f`: The gamma function object.
 
 ## See Also
 
-- [func vImageCreateGammaFunction(Float, Int32, vImage_Flags) -> GammaFunction!](vimagecreategammafunction(_:_:_:).md)
+### Applying a gamma function
+- [func vImageCreateGammaFunction(Float, Int32, vImage_Flags) -> GammaFunction!](./vimagecreategammafunction%28_,_,_%29.md)
   Returns a gamma function object.
-- [Gamma function types](1584480-gamma-function-types.md)
+- [Gamma function types](./api-1584480-gamma-function-types.md)
   Types of full- or half-precision gamma functions.
-- [func vImageGamma_Planar8toPlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](vimagegamma_planar8toplanarf(_:_:_:_:).md)
+- [func vImageGamma_Planar8toPlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](./vimagegamma_planar8toplanarf%28_,_,_,_%29.md)
   Applies a gamma function to an 8-bit planar image to produce a 32-bit planar image.
-- [func vImageGamma_PlanarFtoPlanar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](vimagegamma_planarftoplanar8(_:_:_:_:).md)
+- [func vImageGamma_PlanarFtoPlanar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](./vimagegamma_planarftoplanar8%28_,_,_,_%29.md)
   Applies a gamma function to a 32-bit planar image to produce an 8-bit planar image.
-- [func vImageGamma_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](vimagegamma_planarf(_:_:_:_:).md)
+- [func vImageGamma_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, GammaFunction!, vImage_Flags) -> vImage_Error](./vimagegamma_planarf%28_,_,_,_%29.md)
   Applies a gamma function to a PlanarF image.
-- [Adjusting saturation and applying tone mapping](adjusting-saturation-and-applying-tone-mapping.md)
+- [Adjusting saturation and applying tone mapping](./adjusting-saturation-and-applying-tone-mapping.md)
   Convert an RGB image to discrete luminance and chrominance channels, and apply color and contrast treatments.
 
 

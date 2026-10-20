@@ -1,17 +1,18 @@
 # init(_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a temporal transformer from a transformer.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 18.0 (renamed: TemporalAdaptor)
+- iPadOS 16.0+ - Deprecated in 18.0 (renamed: TemporalAdaptor)
+- Mac Catalyst 16.0+ - Deprecated in 18.0 (renamed: TemporalAdaptor)
+- macOS 13.0+ - Deprecated in 15.0 (renamed: TemporalAdaptor)
+- tvOS 16.0+ - Deprecated in 18.0 (renamed: TemporalAdaptor)
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: TemporalAdaptor)
 
 ## Declaration
 

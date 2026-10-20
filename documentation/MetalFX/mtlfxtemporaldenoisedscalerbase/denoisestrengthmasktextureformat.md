@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the input denoise strength mask texture for this denoiser scaler.
@@ -17,6 +18,10 @@ The pixel format of the input denoise strength mask texture for this denoiser sc
 
 ```swift
 var denoiseStrengthMaskTextureFormat: MTLPixelFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLPixelFormat denoiseStrengthMaskTextureFormat;
 ```
 
 

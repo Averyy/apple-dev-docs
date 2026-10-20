@@ -1,7 +1,8 @@
 # SecKeychainAttrType
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The keychain attribute type.
 
@@ -12,6 +13,10 @@ The keychain attribute type.
 
 ```swift
 typealias SecKeychainAttrType = OSType
+```
+
+```c
+typedef OSType SecKeychainAttrType;
 ```
 
 

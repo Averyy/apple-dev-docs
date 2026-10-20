@@ -1,7 +1,8 @@
 # Locale.Weekday
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents weekdays, used for indicating a locale’s first day of the week.
 
@@ -23,43 +24,44 @@ enum Weekday
 ## Topics
 
 ### Using defined weekdays
-- [Locale.Weekday.monday](locale/weekday/monday.md)
+- [Locale.Weekday.monday](./weekday/monday.md)
   The weekday enumeration value for Monday.
-- [Locale.Weekday.tuesday](locale/weekday/tuesday.md)
+- [Locale.Weekday.tuesday](./weekday/tuesday.md)
   The weekday enumeration value for Tuesday.
-- [Locale.Weekday.wednesday](locale/weekday/wednesday.md)
+- [Locale.Weekday.wednesday](./weekday/wednesday.md)
   The weekday enumeration value for Wednesday.
-- [Locale.Weekday.thursday](locale/weekday/thursday.md)
+- [Locale.Weekday.thursday](./weekday/thursday.md)
   The weekday enumeration value for Thursday.
-- [Locale.Weekday.friday](locale/weekday/friday.md)
+- [Locale.Weekday.friday](./weekday/friday.md)
   The weekday enumeration value for Friday.
-- [Locale.Weekday.saturday](locale/weekday/saturday.md)
+- [Locale.Weekday.saturday](./weekday/saturday.md)
   The weekday enumeration value for Saturday.
-- [Locale.Weekday.sunday](locale/weekday/sunday.md)
+- [Locale.Weekday.sunday](./weekday/sunday.md)
   The weekday enumeration value for Sunday.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var firstDayOfWeek: Locale.Weekday](locale/firstdayofweek.md)
+### Getting date and time components
+- [var firstDayOfWeek: Locale.Weekday](./firstdayofweek.md)
   The first day of the week as represented by this locale.
-- [var hourCycle: Locale.HourCycle](locale/hourcycle-swift.property.md)
+- [var hourCycle: Locale.HourCycle](./hourcycle-swift.property.md)
   The hour cycle used by the locale, like one-to-twelve or zero-to-twenty-three.
-- [Locale.HourCycle](locale/hourcycle-swift.enum.md)
+- [Locale.HourCycle](./hourcycle-swift.enum.md)
   A type that represents the hour cycle used in a locale, like one-to-twelve or zero-to-twenty-three.
-- [var timeZone: TimeZone?](locale/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone associated with the locale, if any.
 
 

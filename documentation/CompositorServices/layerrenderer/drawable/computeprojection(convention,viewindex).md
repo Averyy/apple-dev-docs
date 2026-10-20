@@ -1,7 +1,8 @@
 # computeProjection(convention:viewIndex:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+

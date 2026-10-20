@@ -1,7 +1,8 @@
 # MTRPM10ConcentrationMeasurementLevelValue
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,26 +19,30 @@
 enum MTRPM10ConcentrationMeasurementLevelValue
 ```
 
+```c
+enum MTRPM10ConcentrationMeasurementLevelValue : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRPM10ConcentrationMeasurementLevelValue.critical](mtrpm10concentrationmeasurementlevelvalue/critical.md)
-- [MTRPM10ConcentrationMeasurementLevelValue.high](mtrpm10concentrationmeasurementlevelvalue/high.md)
-- [MTRPM10ConcentrationMeasurementLevelValue.low](mtrpm10concentrationmeasurementlevelvalue/low.md)
-- [MTRPM10ConcentrationMeasurementLevelValue.medium](mtrpm10concentrationmeasurementlevelvalue/medium.md)
-- [MTRPM10ConcentrationMeasurementLevelValue.unknown](mtrpm10concentrationmeasurementlevelvalue/unknown.md)
+- [MTRPM10ConcentrationMeasurementLevelValue.critical](./mtrpm10concentrationmeasurementlevelvalue/critical.md)
+- [MTRPM10ConcentrationMeasurementLevelValue.high](./mtrpm10concentrationmeasurementlevelvalue/high.md)
+- [MTRPM10ConcentrationMeasurementLevelValue.low](./mtrpm10concentrationmeasurementlevelvalue/low.md)
+- [MTRPM10ConcentrationMeasurementLevelValue.medium](./mtrpm10concentrationmeasurementlevelvalue/medium.md)
+- [MTRPM10ConcentrationMeasurementLevelValue.unknown](./mtrpm10concentrationmeasurementlevelvalue/unknown.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrpm10concentrationmeasurementlevelvalue/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrpm10concentrationmeasurementlevelvalue/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

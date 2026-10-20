@@ -1,12 +1,13 @@
 # endModalSession(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finishes a modal session.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,29 @@ Finishes a modal session.
 func endModalSession(_ session: NSApplication.ModalSession)
 ```
 
+```objc
+- (void) endModalSession:(NSModalSession) session;
+```
+
 ## Parameters
 
-- `session`: A modal session structure returned by a previous invocation of [`beginModalSession(for:)`](nsapplication/beginmodalsession(for:).md).
+- `session`: A modal session structure returned by a previous invocation of [`beginModalSession(for:)`](./beginmodalsession%28for%29.md).
 
 ## See Also
 
-- [func beginModalSession(for: NSWindow) -> NSApplication.ModalSession](nsapplication/beginmodalsession(for:).md)
+### Related Documentation
+- [func beginModalSession(for: NSWindow) -> NSApplication.ModalSession](./beginmodalsession%28for%29.md)
   Sets up a modal session with the given window and returns a pointer to the `NSModalSession` structure representing the session.
-- [func runModalSession(NSApplication.ModalSession) -> NSApplication.ModalResponse](nsapplication/runmodalsession(_:).md)
-  Runs a given modal session, as defined in a previous invocation of [`beginModalSession(for:)`](nsapplication/beginmodalsession(for:).md).
-- [func activate(ignoringOtherApps: Bool)](nsapplication/activate(ignoringotherapps:).md)
+- [func runModalSession(NSApplication.ModalSession) -> NSApplication.ModalResponse](./runmodalsession%28_%29.md)
+  Runs a given modal session, as defined in a previous invocation of [`beginModalSession(for:)`](./beginmodalsession%28for%29.md).
+### Deprecated methods
+- [func activate(ignoringOtherApps: Bool)](./activate%28ignoringotherapps%29.md)
   Makes the receiver the active app.
-- [func beginSheet(NSWindow, modalFor: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer!)](nsapplication/beginsheet(_:modalfor:modaldelegate:didend:contextinfo:).md)
+- [func beginSheet(NSWindow, modalFor: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer!)](./beginsheet%28_,modalfor,modaldelegate,didend,contextinfo%29.md)
   Starts a document modal session.
-- [func endSheet(NSWindow)](nsapplication/endsheet(_:).md)
+- [func endSheet(NSWindow)](./endsheet%28_%29.md)
   Ends a document modal session by specifying the sheet window.
-- [func endSheet(NSWindow, returnCode: Int)](nsapplication/endsheet(_:returncode:).md)
+- [func endSheet(NSWindow, returnCode: Int)](./endsheet%28_,returncode%29.md)
   Ends a document modal session by specifying the sheet window.
 
 

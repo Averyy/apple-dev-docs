@@ -1,7 +1,8 @@
 # Optional.TicksCollection
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,8 @@
 ```swift
 typealias TicksCollection = [SliderTick<Wrapped.Value>]
 ```
+
+Available when `Wrapped` conforms to `SliderTickContent`.
 
 
 ---

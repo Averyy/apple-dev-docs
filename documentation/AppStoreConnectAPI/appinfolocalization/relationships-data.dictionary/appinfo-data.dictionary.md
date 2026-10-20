@@ -1,7 +1,8 @@
 # AppInfoLocalization.Relationships.AppInfo
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object AppInfoLocalization.Relationships.AppInfo
 ```
 
 ## Topics
 
 ### Objects
-- [object AppInfoLocalization.Relationships.AppInfo.Data](appinfolocalization/relationships-data.dictionary/appinfo-data.dictionary/data-data.dictionary.md)
+- [object AppInfoLocalization.Relationships.AppInfo.Data](./appinfo-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

@@ -1,7 +1,8 @@
 # match
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The details of the data detected.
 

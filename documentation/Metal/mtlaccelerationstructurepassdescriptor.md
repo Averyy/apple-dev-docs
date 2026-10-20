@@ -1,7 +1,8 @@
 # MTLAccelerationStructurePassDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.0+
@@ -17,32 +18,37 @@
 class MTLAccelerationStructurePassDescriptor
 ```
 
+```objc
+@interface MTLAccelerationStructurePassDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## Topics
 
 ### Instance Properties
-- [var sampleBufferAttachments: MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray](mtlaccelerationstructurepassdescriptor/samplebufferattachments.md)
+- [var sampleBufferAttachments: MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray](./mtlaccelerationstructurepassdescriptor/samplebufferattachments.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLAccelerationStructurePassSampleBufferAttachmentDescriptor](mtlaccelerationstructurepasssamplebufferattachmentdescriptor.md)
-- [class MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray](mtlaccelerationstructurepasssamplebufferattachmentdescriptorarray.md)
+### Acceleration structures passes
+- [class MTLAccelerationStructurePassSampleBufferAttachmentDescriptor](./mtlaccelerationstructurepasssamplebufferattachmentdescriptor.md)
+- [class MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray](./mtlaccelerationstructurepasssamplebufferattachmentdescriptorarray.md)
 
 
 ---

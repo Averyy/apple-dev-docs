@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPCILatencySnooped](1640337-anonymous/kiopcilatencysnooped.md)
-- [kIOPCILatencyUnsnooped](1640337-anonymous/kiopcilatencyunsnooped.md)
+- [kIOPCILatencySnooped](./api-1640337-anonymous/kiopcilatencysnooped.md)
+- [kIOPCILatencyUnsnooped](./api-1640337-anonymous/kiopcilatencyunsnooped.md)
 
 
 ---

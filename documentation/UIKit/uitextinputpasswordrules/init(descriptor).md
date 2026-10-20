@@ -1,7 +1,8 @@
 # init(descriptor:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a password rules object with a descriptor.
 
@@ -16,6 +17,10 @@ Initializes a password rules object with a descriptor.
 
 ```swift
 convenience init(descriptor passwordRulesDescriptor: String)
+```
+
+```objc
++ (instancetype) passwordRulesWithDescriptor:(NSString *) passwordRulesDescriptor;
 ```
 
 

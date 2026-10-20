@@ -1,14 +1,17 @@
 # ARSKView
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that blends virtual 2D content from SpriteKit into the 3D space of an augmented reality experience.
 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: This API is deprecated on visionOS.
 
 ## Declaration
 
@@ -16,82 +19,87 @@ A view that blends virtual 2D content from SpriteKit into the 3D space of an aug
 class ARSKView
 ```
 
+```objc
+@interface ARSKView : SKView
+```
+
 ## Mentions
 
-- [Providing 2D Virtual Content with SpriteKit](providing-2d-virtual-content-with-spritekit.md)
+- [Providing 2D Virtual Content with SpriteKit](./providing-2d-virtual-content-with-spritekit.md)
 
 #### Overview
 
-Use the [`ARSKView`](arskview.md) class to create augmented reality experiences that position 2D elements in 3D space within a device camera view of the real world. When you run the view’s provided [`ARSession`](arsession.md) object:
+Use the [`ARSKView`](./arskview.md) class to create augmented reality experiences that position 2D elements in 3D space within a device camera view of the real world. When you run the view’s provided [`ARSession`](./arsession.md) object:
 
 - The view automatically renders the live video feed from the device camera as the scene background.
-- When you implement [`ARSKViewDelegate`](arskviewdelegate.md) methods to associate SpriteKit content with real-world positions, the view automatically scales and rotates those SpriteKit nodes so that they appear to track the real world seen by the camera.
+- When you implement [`ARSKViewDelegate`](./arskviewdelegate.md) methods to associate SpriteKit content with real-world positions, the view automatically scales and rotates those SpriteKit nodes so that they appear to track the real world seen by the camera.
 
 ## Topics
 
 ### First Steps
-- [Providing 2D Virtual Content with SpriteKit](providing-2d-virtual-content-with-spritekit.md)
+- [Providing 2D Virtual Content with SpriteKit](./providing-2d-virtual-content-with-spritekit.md)
   Use SpriteKit to place two-dimensional images in 3D space in your AR experience.
-- [var session: ARSession](arskview/session.md)
+- [var session: ARSession](./arskview/session.md)
   The AR session that manages motion tracking and camera image processing for the view’s contents.
 ### Responding to AR Updates
-- [var delegate: (any ARSKViewDelegate)?](arskview/delegate.md)
+- [var delegate: (any ARSKViewDelegate)?](./arskview/delegate.md)
   An object you provide to mediate synchronization of the view’s AR scene information with SpriteKit content.
-- [protocol ARSKViewDelegate](arskviewdelegate.md)
+- [protocol ARSKViewDelegate](./arskviewdelegate.md)
   Methods you can implement to mediate the automatic synchronization of SpriteKit content with an AR session.
 ### Finding Real-World Surfaces
-- [func hitTest(CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]](arskview/hittest(_:types:).md)
+- [func hitTest(CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]](./arskview/hittest%28_,types%29.md)
   Searches for real-world objects or AR anchors in the captured camera image corresponding to a point in the SpriteKit view.
 ### Mapping Content to Real-World Positions
-- [func anchor(for: SKNode) -> ARAnchor?](arskview/anchor(for:).md)
+- [func anchor(for: SKNode) -> ARAnchor?](./arskview/anchor%28for%29.md)
   Returns the AR anchor associated with the specified SpriteKit node, if any.
-- [func node(for: ARAnchor) -> SKNode?](arskview/node(for:).md)
+- [func node(for: ARAnchor) -> SKNode?](./arskview/node%28for%29.md)
   Returns the SpriteKit node associated with the specified AR anchor, if any.
 
 ## Relationships
 
 ### Inherits From
-- [SKView](../spritekit/skview.md)
+- [SKView](../SpriteKit/skview.md)
 ### Conforms To
-- [ARSessionProviding](arsessionproviding.md)
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [ARSessionProviding](./arsessionproviding.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [struct RealityView](../realitykit/realityview.md)
+### Views
+- [struct RealityView](../RealityKit/realityview.md)
   A view that contains RealityKit content.
-- [class ARView](../realitykit/arview.md)
+- [class ARView](../RealityKit/arview.md)
   A view that enables you to display an AR experience with RealityKit.
-- [class ARSCNView](arscnview.md)
+- [class ARSCNView](./arscnview.md)
   A view that blends virtual 3D content from SceneKit into your augmented reality experience.
-- [class ARCoachingOverlayView](arcoachingoverlayview.md)
+- [class ARCoachingOverlayView](./arcoachingoverlayview.md)
   A view that displays standardized onboarding instructions to direct users toward a specific goal.
 
 

@@ -1,7 +1,8 @@
 # MTRDeviceEnergyManagementClusterConstraintsStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,27 +19,31 @@
 class MTRDeviceEnergyManagementClusterConstraintsStruct
 ```
 
+```objc
+@interface MTRDeviceEnergyManagementClusterConstraintsStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var duration: NSNumber](mtrdeviceenergymanagementclusterconstraintsstruct/duration.md)
-- [var loadControl: NSNumber?](mtrdeviceenergymanagementclusterconstraintsstruct/loadcontrol.md)
-- [var maximumEnergy: NSNumber?](mtrdeviceenergymanagementclusterconstraintsstruct/maximumenergy.md)
-- [var nominalPower: NSNumber?](mtrdeviceenergymanagementclusterconstraintsstruct/nominalpower.md)
-- [var startTime: NSNumber](mtrdeviceenergymanagementclusterconstraintsstruct/starttime.md)
+- [var duration: NSNumber](./mtrdeviceenergymanagementclusterconstraintsstruct/duration.md)
+- [var loadControl: NSNumber?](./mtrdeviceenergymanagementclusterconstraintsstruct/loadcontrol.md)
+- [var maximumEnergy: NSNumber?](./mtrdeviceenergymanagementclusterconstraintsstruct/maximumenergy.md)
+- [var nominalPower: NSNumber?](./mtrdeviceenergymanagementclusterconstraintsstruct/nominalpower.md)
+- [var startTime: NSNumber](./mtrdeviceenergymanagementclusterconstraintsstruct/starttime.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SafariBookmarksBookmarkGroupObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A group of managed bookmarks.
 
@@ -14,14 +15,14 @@ A group of managed bookmarks.
 
 ## Declaration
 
-```swift
+```
 object SafariBookmarksBookmarkGroupObject
 ```
 
 ## Topics
 
 ### Objects
-- [object SafariBookmarksBookmarksItemObject](safaribookmarksbookmarksitemobject.md)
+- [object SafariBookmarksBookmarksItemObject](./safaribookmarksbookmarksitemobject.md)
   A bookmark that specifies a title, and either a URL for the bookmark, or a nested folder of bookmarks.
 
 ## Properties

@@ -1,7 +1,8 @@
 # NSPersonNameComponentSuffix
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -18,17 +19,22 @@
 let NSPersonNameComponentSuffix: String
 ```
 
+```c
+extern NSString * const NSPersonNameComponentSuffix;
+```
+
 #### Discussion
 
 Identifies a name suffix component.
 
 ## See Also
 
-- [let NSPersonNameComponentGivenName: String](nspersonnamecomponentgivenname.md)
-- [let NSPersonNameComponentFamilyName: String](nspersonnamecomponentfamilyname.md)
-- [let NSPersonNameComponentMiddleName: String](nspersonnamecomponentmiddlename.md)
-- [let NSPersonNameComponentPrefix: String](nspersonnamecomponentprefix.md)
-- [let NSPersonNameComponentNickname: String](nspersonnamecomponentnickname.md)
+### Constants
+- [let NSPersonNameComponentGivenName: String](./nspersonnamecomponentgivenname.md)
+- [let NSPersonNameComponentFamilyName: String](./nspersonnamecomponentfamilyname.md)
+- [let NSPersonNameComponentMiddleName: String](./nspersonnamecomponentmiddlename.md)
+- [let NSPersonNameComponentPrefix: String](./nspersonnamecomponentprefix.md)
+- [let NSPersonNameComponentNickname: String](./nspersonnamecomponentnickname.md)
 
 
 ---

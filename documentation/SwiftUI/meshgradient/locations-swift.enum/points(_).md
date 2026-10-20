@@ -1,7 +1,8 @@
 # MeshGradient.Locations.points(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Vertices are only specified as their location, their control points are inferred from the locations of their neighbors.
 

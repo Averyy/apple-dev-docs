@@ -1,7 +1,8 @@
 # completeOneTimeCodeRequest(using:completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the user-selected one-time passcode (OTP).
 
@@ -15,12 +16,20 @@ Provides the user-selected one-time passcode (OTP).
 ## Declaration
 
 ```swift
+func completeOneTimeCodeRequest(using credential: ASOneTimeCodeCredential, completionHandler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func completeOneTimeCodeRequest(using credential: ASOneTimeCodeCredential) async -> Bool
+```
+
+```objc
+- (void) completeOneTimeCodeRequestWithSelectedCredential:(ASOneTimeCodeCredential *) credential completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
 ## Mentions
 
-- [Providing one-time passcodes to AutoFill](providing-one-time-passcodes-to-autofill.md)
+- [Providing one-time passcodes to AutoFill](../providing-one-time-passcodes-to-autofill.md)
 
 #### Overview
 
@@ -33,19 +42,20 @@ After calling this method, the system dismisses the associated view controller.
 
 ## See Also
 
-- [func completeRequest(withSelectedCredential: ASPasswordCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completerequest(withselectedcredential:completionhandler:).md)
+### Providing credentials
+- [func completeRequest(withSelectedCredential: ASPasswordCredential, completionHandler: ((Bool) -> Void)?)](./completerequest%28withselectedcredential,completionhandler%29.md)
   Provides the user-selected credential.
-- [func completeAssertionRequest(using: ASPasskeyAssertionCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completeassertionrequest(using:completionhandler:).md)
+- [func completeAssertionRequest(using: ASPasskeyAssertionCredential, completionHandler: ((Bool) -> Void)?)](./completeassertionrequest%28using,completionhandler%29.md)
   Complete the passkey assertion request by providing the user-selected passkey credential.
-- [func completeRegistrationRequest(using: ASPasskeyRegistrationCredential, completionHandler: ((Bool) -> Void)?)](ascredentialproviderextensioncontext/completeregistrationrequest(using:completionhandler:).md)
+- [func completeRegistrationRequest(using: ASPasskeyRegistrationCredential, completionHandler: ((Bool) -> Void)?)](./completeregistrationrequest%28using,completionhandler%29.md)
   Complete the registration request by providing the newly-created passkey credential.
-- [class ASPasswordCredential](aspasswordcredential.md)
+- [class ASPasswordCredential](../aspasswordcredential.md)
   A password credential.
-- [class ASPasskeyAssertionCredential](aspasskeyassertioncredential.md)
+- [class ASPasskeyAssertionCredential](../aspasskeyassertioncredential.md)
   A passkey assertion credential.
-- [class ASPasskeyRegistrationCredential](aspasskeyregistrationcredential.md)
+- [class ASPasskeyRegistrationCredential](../aspasskeyregistrationcredential.md)
   A passkey registration credential.
-- [class ASOneTimeCodeCredential](asonetimecodecredential.md)
+- [class ASOneTimeCodeCredential](../asonetimecodecredential.md)
   A one-time passcode (OTP) credential.
 
 

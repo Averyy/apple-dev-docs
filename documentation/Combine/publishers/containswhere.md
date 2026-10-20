@@ -1,7 +1,8 @@
 # Publishers.ContainsWhere
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that emits a Boolean value upon receiving an element that satisfies the predicate closure.
 
@@ -23,33 +24,34 @@ struct ContainsWhere<Upstream> where Upstream : Publisher
 ## Topics
 
 ### Creating a contains where publisher
-- [init(upstream: Upstream, predicate: (Upstream.Output) -> Bool)](publishers/containswhere/init(upstream:predicate:).md)
+- [init(upstream: Upstream, predicate: (Upstream.Output) -> Bool)](./containswhere/init%28upstream,predicate%29.md)
   Creates a publisher that emits a Boolean value upon receiving an element that satisfies the predicate closure.
 ### Declaring supporting types
-- [Publishers.ContainsWhere.Output](publishers/containswhere/output.md)
+- [Publishers.ContainsWhere.Output](./containswhere/output.md)
   The kind of values published by this publisher.
-- [Publishers.ContainsWhere.Failure](publishers/containswhere/failure.md)
+- [Publishers.ContainsWhere.Failure](./containswhere/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/containswhere/upstream.md)
+- [let upstream: Upstream](./containswhere/upstream.md)
   The publisher from which this publisher receives elements.
-- [let predicate: (Upstream.Output) -> Bool](publishers/containswhere/predicate.md)
+- [let predicate: (Upstream.Output) -> Bool](./containswhere/predicate.md)
   The closure that determines whether the publisher should consider an element as a match.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.Contains](publishers/contains.md)
+### Applying matching criteria to elements
+- [Publishers.Contains](./contains.md)
   A publisher that emits a Boolean value when it receives a specific element from its upstream publisher.
-- [Publishers.TryContainsWhere](publishers/trycontainswhere.md)
+- [Publishers.TryContainsWhere](./trycontainswhere.md)
   A publisher that emits a Boolean value upon receiving an element that satisfies the throwing predicate closure.
-- [Publishers.AllSatisfy](publishers/allsatisfy.md)
+- [Publishers.AllSatisfy](./allsatisfy.md)
   A publisher that publishes a single Boolean value that indicates whether all received elements pass a given predicate.
-- [Publishers.TryAllSatisfy](publishers/tryallsatisfy.md)
+- [Publishers.TryAllSatisfy](./tryallsatisfy.md)
   A publisher that publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
 
 

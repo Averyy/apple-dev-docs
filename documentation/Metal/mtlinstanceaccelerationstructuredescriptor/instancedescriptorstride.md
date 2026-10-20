@@ -1,7 +1,8 @@
 # instanceDescriptorStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between instance descriptions.
 
@@ -19,17 +20,22 @@ The stride, in bytes, between instance descriptions.
 var instanceDescriptorStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger instanceDescriptorStride;
+```
+
 #### Discussion
 
 The stride needs to be at least 64 bytes and needs to be a multiple of 4 bytes. Defaults to 64 bytes.
 
 ## See Also
 
-- [var instanceCount: Int](mtlinstanceaccelerationstructuredescriptor/instancecount.md)
+### Specifying the list of instances
+- [var instanceCount: Int](./instancecount.md)
   The number of instances in the instance descriptor buffer.
-- [var instanceDescriptorBuffer: (any MTLBuffer)?](mtlinstanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
+- [var instanceDescriptorBuffer: (any MTLBuffer)?](./instancedescriptorbuffer.md)
   A buffer that contains descriptions of each instance in the acceleration structure.
-- [var instanceDescriptorBufferOffset: Int](mtlinstanceaccelerationstructuredescriptor/instancedescriptorbufferoffset.md)
+- [var instanceDescriptorBufferOffset: Int](./instancedescriptorbufferoffset.md)
   The offset, in bytes, to the descripton of the first instance.
 
 

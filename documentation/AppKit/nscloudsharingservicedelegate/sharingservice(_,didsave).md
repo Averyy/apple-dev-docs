@@ -1,7 +1,8 @@
 # sharingService(_:didSave:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the cloud-sharing service saves the CloudKit share.
 
@@ -12,6 +13,10 @@ Tells the delegate when the cloud-sharing service saves the CloudKit share.
 
 ```swift
 optional func sharingService(_ sharingService: NSSharingService, didSave share: CKShare)
+```
+
+```objc
+- (void) sharingService:(NSSharingService *) sharingService didSaveShare:(CKShare *) share;
 ```
 
 #### Discussion
@@ -25,13 +30,14 @@ The cloud-sharing service invokes this method when it saves changes to the share
 
 ## See Also
 
-- [func sharingService(NSSharingService, didCompleteForItems: [Any], error: (any Error)?)](nscloudsharingservicedelegate/sharingservice(_:didcompleteforitems:error:).md)
+### Managing the Cloud-Sharing Service
+- [func sharingService(NSSharingService, didCompleteForItems: [Any], error: (any Error)?)](./sharingservice%28_,didcompleteforitems,error%29.md)
   Tells the delegate when the cloud-sharing service completes.
-- [func sharingService(NSSharingService, didStopSharing: CKShare)](nscloudsharingservicedelegate/sharingservice(_:didstopsharing:).md)
+- [func sharingService(NSSharingService, didStopSharing: CKShare)](./sharingservice%28_,didstopsharing%29.md)
   Tells the delegate when the user stops sharing the CloudKit share.
-- [func options(for: NSSharingService, share: NSItemProvider) -> NSSharingService.CloudKitOptions](nscloudsharingservicedelegate/options(for:share:).md)
+- [func options(for: NSSharingService, share: NSItemProvider) -> NSSharingService.CloudKitOptions](./options%28for,share%29.md)
   Asks the delegate for the participant options for the cloud-sharing service.
-- [NSSharingService.CloudKitOptions](nssharingservice/cloudkitoptions.md)
+- [NSSharingService.CloudKitOptions](../nssharingservice/cloudkitoptions.md)
   Constants that describe how a participant can configure a CloudKit share.
 
 

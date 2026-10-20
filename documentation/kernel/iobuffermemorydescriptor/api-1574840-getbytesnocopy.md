@@ -1,7 +1,8 @@
 # getBytesNoCopy
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the virtual address of the beginning of the memory buffer.
 
@@ -10,13 +11,14 @@ Returns the virtual address of the beginning of the memory buffer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void * getBytesNoCopy(void);
 ```
 
 ## See Also
 
-- [- getBytesNoCopy](iobuffermemorydescriptor/3516445-getbytesnocopy.md)
+### Getting the Buffer Contents
+- [- getBytesNoCopy](./api-3516445-getbytesnocopy.md)
   Returns the virtual address of an offset into the memory buffer. 
 
 

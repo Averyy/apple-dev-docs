@@ -1,56 +1,60 @@
 # InAppPurchaseResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single In-App Purchase.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 3.0
+
+> **Deprecated**: This object is deprecated. Use [`InAppPurchaseV2Response`](./inapppurchasev2response.md) instead.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseResponse
 ```
 
 ## Properties
 
-- `data` (InAppPurchase) *(required)*
+- `data` (InAppPurchase) *(required)* *(deprecated)*
 - `links` (DocumentLinks) *(required)*
 - `included` ([App])
 
 ## See Also
 
-- [object App](app.md)
+### Objects and data types
+- [object App](./app.md)
   An app registered in App Store Connect, representing all versions, metadata, and configuration for your iOS, macOS, tvOS, or watchOS application.
-- [object AppWithoutIncludesResponse](appwithoutincludesresponse.md)
+- [object AppWithoutIncludesResponse](./appwithoutincludesresponse.md)
   A response containing a single app, without including related resources.
-- [object AppsWithoutIncludesResponse](appswithoutincludesresponse.md)
+- [object AppsWithoutIncludesResponse](./appswithoutincludesresponse.md)
   A response containing a list of apps, without including related resources.
-- [object AppUpdateRequest](appupdaterequest.md)
+- [object AppUpdateRequest](./appupdaterequest.md)
   The request body you use to update an App Update.
-- [object AppClipsResponse](appclipsresponse.md)
+- [object AppClipsResponse](./appclipsresponse.md)
   The response body for endpoints that list App Clips for an app.
-- [object AppResponse](appresponse.md)
+- [object AppResponse](./appresponse.md)
   The response body for endpoints that read or modify a single app in your team.
-- [object AppsResponse](appsresponse.md)
+- [object AppsResponse](./appsresponse.md)
   A response containing a list of apps registered in your App Store Connect team.
-- [object InAppPurchase](inapppurchase.md)
+- [object InAppPurchase](./inapppurchase.md)
   A one-time purchasable item available in an app, such as a consumable, non-consumable, or non-renewing subscription.
-- [object InAppPurchasesResponse](inapppurchasesresponse.md)
+- [object InAppPurchasesResponse](./inapppurchasesresponse.md)
   The response body for endpoints that list In-App Purchases for an app.
-- [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
+- [object AppBetaTestersLinkagesRequest](./appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
-- [object AppPricePointV3](apppricepointv3.md)
+- [object AppPricePointV3](./apppricepointv3.md)
   A specific price tier in App Store pricing, defining the customer price and developer proceeds across territories.
-- [object AppPricePointV3Response](apppricepointv3response.md)
+- [object AppPricePointV3Response](./apppricepointv3response.md)
   A response containing a single App Store price point with its territory-specific pricing details.
-- [object AppPricePointsV3Response](apppricepointsv3response.md)
+- [object AppPricePointsV3Response](./apppricepointsv3response.md)
   A response containing a list of available App Store price points.
-- [object AppPriceSchedule](apppriceschedule.md)
+- [object AppPriceSchedule](./apppriceschedule.md)
   The pricing schedule for an app, specifying base territory prices, manual prices for other territories, and scheduled price changes.
-- [object AppPriceScheduleCreateRequest](apppriceschedulecreaterequest.md)
+- [object AppPriceScheduleCreateRequest](./apppriceschedulecreaterequest.md)
   The request body you use to create an app price schedule.
 
 

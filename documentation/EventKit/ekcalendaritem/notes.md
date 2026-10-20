@@ -1,7 +1,8 @@
 # notes
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notes associated with the calendar item.
 
@@ -19,9 +20,14 @@ The notes associated with the calendar item.
 var notes: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * notes;
+```
+
 ## See Also
 
-- [var hasNotes: Bool](ekcalendaritem/hasnotes.md)
+### Attaching Notes
+- [var hasNotes: Bool](./hasnotes.md)
   A Boolean value that indicates whether the calendar item has notes.
 
 

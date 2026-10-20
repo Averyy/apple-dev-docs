@@ -1,7 +1,8 @@
 # init(int64s:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sequence of integers from an array of numbers.
 
@@ -20,15 +21,20 @@ Creates a sequence of integers from an array of numbers.
 convenience init(int64s int64Values: [NSNumber])
 ```
 
+```objc
++ (instancetype) sequenceWithInt64Array:(NSArray<NSNumber *> *) int64Values;
+```
+
 ## Parameters
 
-- `int64Values`: An array of integer values represented as [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) instances.
+- `int64Values`: An array of integer values represented as [`NSNumber`](../../Foundation/nsnumber.md) instances.
 
 ## See Also
 
-- [convenience init(strings: [String])](mlsequence/init(strings:).md)
+### Creating a sequence
+- [convenience init(strings: [String])](./init%28strings%29.md)
   Creates a sequence of strings from a string array.
-- [convenience init(empty: MLFeatureType)](mlsequence/init(empty:).md)
+- [convenience init(empty: MLFeatureType)](./init%28empty%29.md)
   Creates an empty sequence of strings or integers.
 
 

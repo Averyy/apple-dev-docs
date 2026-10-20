@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares the dictionary with an OSObject
 
@@ -11,11 +12,11 @@ Compares the dictionary with an OSObject
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isEqualTo(const OSMetaClassBase *anObject);
 ```
 
-#### Return_value
+#### Return Value
 
 true iff the object is of class OSDictionary and isEqualTo(const OSDictionary * anArray) returns true.
 
@@ -29,9 +30,10 @@ If the object is of class OSDictionary, the result of isEqualTo(const OSDictiona
 
 ## See Also
 
-- [- isEqualTo](osdictionary/3180902-isequalto.md)
+### Comparing Dictionaries
+- [- isEqualTo](./api-3180902-isequalto.md)
   Compares certain members of two dictionaries with isEqualTo().
-- [- isEqualTo](osdictionary/3433847-isequalto.md)
+- [- isEqualTo](./api-3433847-isequalto.md)
   Compares all members of two dictionaries with isEqualTo().
 
 

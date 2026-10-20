@@ -1,14 +1,15 @@
 # allocClassWithName
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 static OSObject * allocClassWithName(const OSString *name);
 ```
 

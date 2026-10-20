@@ -1,7 +1,8 @@
 # aspectRatio
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The aspect ratio of the camera.
 
@@ -17,6 +18,10 @@ The aspect ratio of the camera.
 
 ```swift
 var aspectRatio: Double { get }
+```
+
+```objc
+@property (readonly) double aspectRatio;
 ```
 
 

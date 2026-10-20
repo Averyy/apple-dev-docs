@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the framework’s Camera Assistance feature.
 

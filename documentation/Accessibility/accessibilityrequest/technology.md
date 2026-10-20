@@ -1,7 +1,8 @@
 # technology
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var technology: AccessibilityTechnology { get }
+```
+
+```objc
+@property (nonatomic, readonly) AXTechnology technology;
 ```
 
 

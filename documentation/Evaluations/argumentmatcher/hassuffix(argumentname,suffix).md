@@ -1,7 +1,8 @@
 # ArgumentMatcher.hasSuffix(argumentName:suffix:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that the argument must be present and its string value must end with the specified suffix.
 
@@ -27,11 +28,12 @@ case hasSuffix(argumentName: String, suffix: String)
 
 ## See Also
 
-- [case pattern(argumentName: String, regex: String)](argumentmatcher/pattern(argumentname:regex:).md)
+### String matching
+- [case pattern(argumentName: String, regex: String)](./pattern%28argumentname,regex%29.md)
   A value that indicates that the argument must be present and its string value must match the specified regex pattern.
-- [case contains(argumentName: String, substring: String)](argumentmatcher/contains(argumentname:substring:).md)
+- [case contains(argumentName: String, substring: String)](./contains%28argumentname,substring%29.md)
   A value that indicates that the argument must be present and its string value must contain the specified substring.
-- [case hasPrefix(argumentName: String, prefix: String)](argumentmatcher/hasprefix(argumentname:prefix:).md)
+- [case hasPrefix(argumentName: String, prefix: String)](./hasprefix%28argumentname,prefix%29.md)
   A value that indicates that the argument must be present and its string value must start with the specified prefix.
 
 

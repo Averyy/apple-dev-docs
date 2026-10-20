@@ -1,7 +1,8 @@
 # ClipboardEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface ClipboardEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [clipboardData](clipboardevent/2871350-clipboarddata.md)
+- [clipboardData](./clipboardevent/api-2871350-clipboarddata.md)
 
 ## Relationships
 

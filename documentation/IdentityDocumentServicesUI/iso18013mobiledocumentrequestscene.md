@@ -1,12 +1,13 @@
 # ISO18013MobileDocumentRequestScene
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,26 +19,27 @@
 ## Topics
 
 ### Initializers
-- [init(content: (ISO18013MobileDocumentRequestContext) -> Content)](iso18013mobiledocumentrequestscene/init(content:).md)
+- [init(content: (ISO18013MobileDocumentRequestContext) -> Content)](./iso18013mobiledocumentrequestscene/init%28content%29.md)
   Initialize an ISO 18013 mobile document raw request scene.
 
 ## Relationships
 
 ### Conforms To
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
-- [IdentityDocumentRequestScene](identitydocumentrequestscene.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
+- [IdentityDocumentRequestScene](./identitydocumentrequestscene.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol IdentityDocumentProvider](identitydocumentprovider.md)
+### Building identity document provider authorization UI
+- [protocol IdentityDocumentProvider](./identitydocumentprovider.md)
   An app extension that provides an identity document.
-- [protocol IdentityDocumentRequestScene](identitydocumentrequestscene.md)
+- [protocol IdentityDocumentRequestScene](./identitydocumentrequestscene.md)
   A scene that indicates support for a specific document request type.
-- [struct ISO18013MobileDocumentRequestContext](iso18013mobiledocumentrequestcontext.md)
+- [struct ISO18013MobileDocumentRequestContext](./iso18013mobiledocumentrequestcontext.md)
   An object that contains details about the ISO 18013 mobile document request.
-- [struct IdentityDocumentRequestSceneBuilder](identitydocumentrequestscenebuilder.md)
+- [struct IdentityDocumentRequestSceneBuilder](./identitydocumentrequestscenebuilder.md)
   A result builder that combines one or more `IdentityDocumentRequestScene`s into a single scene.
 
 

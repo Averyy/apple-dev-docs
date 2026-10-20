@@ -1,14 +1,15 @@
 # venues()
 
 **Framework**: EnergyKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a list of electricity venues.
 
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,7 @@ static func venues() async throws -> [EnergyVenue]
 
 ## Mentions
 
-- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+- [Providing charging history for electric vehicles](../providing-informative-charging-history-for-electric-vehicles.md)
 
 
 ---

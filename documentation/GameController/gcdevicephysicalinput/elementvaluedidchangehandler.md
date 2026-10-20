@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A block that the profile calls when an element’s value changes.
@@ -20,9 +21,13 @@ A block that the profile calls when an element’s value changes.
 var elementValueDidChangeHandler: ((any GCDevicePhysicalInput, any GCPhysicalInputElement) -> Void)? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) void (^elementValueDidChangeHandler)(id<GCDevicePhysicalInput>physicalInput, id<GCPhysicalInputElement>element);
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](../handling-input-events.md)
 
 #### Discussion
 
@@ -30,17 +35,18 @@ Use this property to get the latest state of the element. If multiple elements c
 
 - **element**: The element whose value changes.
 
-> ❗ **Important**:  To track every element value change, set the [`inputStateAvailableHandler`](gcdevicephysicalinput/inputstateavailablehandler.md) property instead and use the [`nextInputState()`](gcdevicephysicalinput/nextinputstate().md) method to get all the buffered changes.
+> ❗ **Important**:  To track every element value change, set the [`inputStateAvailableHandler`](./inputstateavailablehandler.md) property instead and use the [`nextInputState()`](./nextinputstate%28%29.md) method to get all the buffered changes.
 
 ## See Also
 
-- [func nextInputState() -> (any GCDevicePhysicalInputState & GCDevicePhysicalInputStateDiff)?](gcdevicephysicalinput/nextinputstate.md)
+### Handling device input
+- [func nextInputState() -> (any GCDevicePhysicalInputState & GCDevicePhysicalInputStateDiff)?](./nextinputstate%28%29.md)
   Returns the next input state from the queue.
-- [var inputStateAvailableHandler: ((any GCDevicePhysicalInput) -> Void)?](gcdevicephysicalinput/inputstateavailablehandler.md)
+- [var inputStateAvailableHandler: ((any GCDevicePhysicalInput) -> Void)?](./inputstateavailablehandler.md)
   The block that the profile calls when Game Controller adds an input state to the queue.
-- [var inputStateQueueDepth: Int](gcdevicephysicalinput/inputstatequeuedepth.md)
+- [var inputStateQueueDepth: Int](./inputstatequeuedepth.md)
   The maximum number of input values that the queue stores.
-- [func capture() -> any GCDevicePhysicalInputState](gcdevicephysicalinput/capture.md)
+- [func capture() -> any GCDevicePhysicalInputState](./capture%28%29.md)
   Returns a snapshot of the physical device inputs.
 
 

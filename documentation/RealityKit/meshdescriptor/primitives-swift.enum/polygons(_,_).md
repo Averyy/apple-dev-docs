@@ -1,7 +1,8 @@
 # MeshDescriptor.Primitives.polygons(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines one or more triangles and quadrilaterals with two separate arrays of indices.
 
@@ -11,7 +12,7 @@ Defines one or more triangles and quadrilaterals with two separate arrays of ind
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

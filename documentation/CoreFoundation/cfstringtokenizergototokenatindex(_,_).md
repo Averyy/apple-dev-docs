@@ -1,7 +1,8 @@
 # CFStringTokenizerGoToTokenAtIndex(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds a token that includes the character at a given index, and set it as the current token.
 
@@ -20,13 +21,17 @@ Finds a token that includes the character at a given index, and set it as the cu
 func CFStringTokenizerGoToTokenAtIndex(_ tokenizer: CFStringTokenizer!, _ index: CFIndex) -> CFStringTokenizerTokenType
 ```
 
+```c
+extern CFStringTokenizerTokenType CFStringTokenizerGoToTokenAtIndex(CFStringTokenizerRef tokenizer, CFIndex index);
+```
+
 #### Return Value
 
-The type of the token if the tokenizer succeeded in finding a token and setting it as the current token. Returns `kCFStringTokenizerTokenNone` if the tokenizer failed to find a token. For possible values, see [`CFStringTokenizerTokenType`](cfstringtokenizertokentype.md).
+The type of the token if the tokenizer succeeded in finding a token and setting it as the current token. Returns `kCFStringTokenizerTokenNone` if the tokenizer failed to find a token. For possible values, see [`CFStringTokenizerTokenType`](./cfstringtokenizertokentype.md).
 
 #### Discussion
 
-You can obtain the range and attribute of the token calling [`CFStringTokenizerGetCurrentTokenRange(_:)`](cfstringtokenizergetcurrenttokenrange(_:).md) and [`CFStringTokenizerCopyCurrentTokenAttribute(_:_:)`](cfstringtokenizercopycurrenttokenattribute(_:_:).md). If the token is a compound (with type `kCFStringTokenizerTokenHasSubTokensMask` or `kCFStringTokenizerTokenHasDerivedSubTokensMask`), you can obtain its subtokens and (or) derived subtokens by calling [`CFStringTokenizerGetCurrentSubTokens(_:_:_:_:)`](cfstringtokenizergetcurrentsubtokens(_:_:_:_:).md).
+You can obtain the range and attribute of the token calling [`CFStringTokenizerGetCurrentTokenRange(_:)`](./cfstringtokenizergetcurrenttokenrange%28_%29.md) and [`CFStringTokenizerCopyCurrentTokenAttribute(_:_:)`](./cfstringtokenizercopycurrenttokenattribute%28_,_%29.md). If the token is a compound (with type `kCFStringTokenizerTokenHasSubTokensMask` or `kCFStringTokenizerTokenHasDerivedSubTokensMask`), you can obtain its subtokens and (or) derived subtokens by calling [`CFStringTokenizerGetCurrentSubTokens(_:_:_:_:)`](./cfstringtokenizergetcurrentsubtokens%28_,_,_,_%29.md).
 
 ## Parameters
 
@@ -35,7 +40,8 @@ You can obtain the range and attribute of the token calling [`CFStringTokenizerG
 
 ## See Also
 
-- [func CFStringTokenizerAdvanceToNextToken(CFStringTokenizer!) -> CFStringTokenizerTokenType](cfstringtokenizeradvancetonexttoken(_:).md)
+### Changing the Location
+- [func CFStringTokenizerAdvanceToNextToken(CFStringTokenizer!) -> CFStringTokenizerTokenType](./cfstringtokenizeradvancetonexttoken%28_%29.md)
   Advances the tokenizer to the next token and sets that as the current token.
 
 

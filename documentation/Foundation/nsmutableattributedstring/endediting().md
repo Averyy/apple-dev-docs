@@ -1,7 +1,8 @@
 # endEditing()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the buffering of changes to the string’s characters and attributes.
 
@@ -20,17 +21,23 @@ Ends the buffering of changes to the string’s characters and attributes.
 func endEditing()
 ```
 
+```objc
+- (void) endEditing;
+```
+
 #### Discussion
 
-Override this method in a subclass to consolidate changes made since a previous call to [`beginEditing()`](nsmutableattributedstring/beginediting().md). When you call this method, the string notifies observers of the changes.
+Override this method in a subclass to consolidate changes made since a previous call to [`beginEditing()`](./beginediting%28%29.md). When you call this method, the string notifies observers of the changes.
 
-The default implementation of this method does nothing. Subclasses such as [`NSTextStorage`](https://developer.apple.com/documentation/appkit/nstextstorage) override this method and use it to tell the layout manager to update the text layout.
+The default implementation of this method does nothing. Subclasses such as [`NSTextStorage`](../../AppKit/nstextstorage.md) override this method and use it to tell the layout manager to update the text layout.
 
 ## See Also
 
-- [func processEditing()](../appkit/nstextstorage/processediting.md)
+### Related Documentation
+- [func processEditing()](../../AppKit/nstextstorage/processediting%28%29.md)
   Cleans up changes to the text storage object and notifies its delegate and layout managers of changes.
-- [func beginEditing()](nsmutableattributedstring/beginediting.md)
+### Grouping Changes
+- [func beginEditing()](./beginediting%28%29.md)
   Begins the buffering of changes to the string’s characters and attributes.
 
 

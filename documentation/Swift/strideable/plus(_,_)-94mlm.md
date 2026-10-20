@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 8.0+
@@ -18,13 +19,16 @@
 static func + (lhs: Self.Stride, rhs: Self) -> Self
 ```
 
+Available when `Self` conforms to `_Pointer`.
+
 ## See Also
 
-- [func advanced(by: Self.Stride) -> Self](strideable/advanced(by:).md)
+### Getting an Offset Value
+- [func advanced(by: Self.Stride) -> Self](./advanced%28by%29.md)
   Returns a value that is offset the specified distance from this value.
-- [static func + (Self, Self.Stride) -> Self](strideable/+(_:_:)-8m1px.md)
-- [static func - (Self, Self.Stride) -> Self](strideable/-(_:_:)-1kjns.md)
-- [static func - (Self, Self) -> Self.Stride](strideable/-(_:_:)-2mot7.md)
+- [static func + (Self, Self.Stride) -> Self](./plus%28_,_%29-8m1px.md)
+- [static func - (Self, Self.Stride) -> Self](./minus%28_,_%29-1kjns.md)
+- [static func - (Self, Self) -> Self.Stride](./minus%28_,_%29-2mot7.md)
 
 
 ---

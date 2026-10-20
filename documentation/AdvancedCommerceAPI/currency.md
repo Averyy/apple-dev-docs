@@ -1,7 +1,8 @@
 # currency
 
 **Framework**: Advanced Commerce API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The three-letter ISO 4217 currency code for the price of a product.
 
@@ -10,14 +11,14 @@ The three-letter ISO 4217 currency code for the price of a product.
 
 ## Declaration
 
-```swift
+```
 string currency
 ```
 
 ## Mentions
 
-- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
-- [Specifying prices for Advanced Commerce SKUs](prices.md)
+- [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
+- [Specifying prices for Advanced Commerce SKUs](./prices.md)
 
 #### Discussion
 
@@ -25,42 +26,43 @@ The currency property contains an ISO 4217 alpha-3 string that represents the cu
 
 To get the current storefront’s currency in your app:
 
-- In iOS 15 through iOS 17, check the `Product.priceFormatStyle.currencyCode` of the generic product ID that represents your Advanced Commerce product. For more information, see [`priceFormatStyle`](https://developer.apple.com/documentation/storekit/product/priceformatstyle).
+- In iOS 15 through iOS 17, check the `Product.priceFormatStyle.currencyCode` of the generic product ID that represents your Advanced Commerce product. For more information, see [`priceFormatStyle`](../StoreKit/product/priceformatstyle.md).
 - In iOS 17 and later, get the currency value using `Storefront.current.currency`.
 
-For a list of regions and currencies that the App Store supports, see [`Financial reports regions and currencies`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/financial-report-regions-and-currencies).
+For a list of regions and currencies that the App Store supports, see [Financial reports regions and currencies](https://developer.apple.com/help/app-store-connect/reference/financial-report-regions-and-currencies).
 
 ## See Also
 
-- [type description](description.md)
+### Data types
+- [type description](./description.md)
   A string you provide that describes a SKU.
-- [type dependentSKU](dependentsku.md)
+- [type dependentSKU](./dependentsku.md)
   The product identifier of a dependent SKU in a subscription price change.
-- [type displayName](displayname.md)
+- [type displayName](./displayname.md)
   A string with a product name that you can localize and is suitable for display to customers.
-- [type effective](effective.md)
+- [type effective](./effective.md)
   A string value that indicates when a requested change to an auto-renewable subscription goes into effect.
-- [type period](period.md)
+- [type period](./period.md)
   The duration of a single cycle of an auto-renewable subscription.
-- [type price](price.md)
+- [type price](./price.md)
   A price, in milliunits of a currency, for an Advanced Commerce API SKU.
-- [type proratedPrice](proratedprice.md)
+- [type proratedPrice](./proratedprice.md)
   A prorated price, in milliunits of a currency, for an Advanced Commerce API SKU.
-- [type retainBillingCycle](retainbillingcycle.md)
+- [type retainBillingCycle](./retainbillingcycle.md)
   A Boolean value that determines whether to keep the existing billing cycle with the change you request.
-- [type refundAmount](refundamount.md)
+- [type refundAmount](./refundamount.md)
   A refund amount, in milliunits of the currency.
-- [type refundReason](refundreason.md)
+- [type refundReason](./refundreason.md)
   A reason to request a refund.
-- [type refundRiskingPreference](refundriskingpreference.md)
+- [type refundRiskingPreference](./refundriskingpreference.md)
   A Boolean value that indicates whether the App Store asks you for consumption data to help inform the refund decision.
-- [type SKU](sku.md)
+- [type SKU](./sku.md)
   The product identifier of an Apple In-App Purchase product you manage in your own system.
-- [type storefront](storefront.md)
+- [type storefront](./storefront.md)
   A three-letter code that represents the country or region associated with the App Store storefront.
-- [type taxCode](taxcode.md)
+- [type taxCode](./taxcode.md)
   A tax code that applies to a SKU.
-- [type targetProductId](targetproductid.md)
+- [type targetProductId](./targetproductid.md)
   A generic product identifier that represents all Advanced Commerce API products to App Store Connect, which you use when you migrate a product.
 
 

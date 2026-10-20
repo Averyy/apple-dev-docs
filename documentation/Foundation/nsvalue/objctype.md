@@ -1,7 +1,8 @@
 # objCType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A C string containing the Objective-C type of the data contained in the value object.
 
@@ -20,17 +21,22 @@ A C string containing the Objective-C type of the data contained in the value ob
 var objCType: UnsafePointer<CChar> { get }
 ```
 
+```objc
+@property (readonly) const char * objCType;
+```
+
 #### Discussion
 
 This property provides the same string produced by the `@encode()` compiler directive.
 
 ## See Also
 
-- [init(bytes: UnsafeRawPointer, objCType: UnsafePointer<CChar>)](nsvalue/init(bytes:objctype:).md)
+### Working with Raw Values
+- [init(bytes: UnsafeRawPointer, objCType: UnsafePointer<CChar>)](./init%28bytes,objctype%29.md)
   Initializes a value object to contain the specified value, interpreted with the specified Objective-C type.
-- [init(UnsafeRawPointer, withObjCType: UnsafePointer<CChar>)](nsvalue/init(_:withobjctype:).md)
+- [init(UnsafeRawPointer, withObjCType: UnsafePointer<CChar>)](./init%28_,withobjctype%29.md)
   Creates a value object containing the specified value, interpreted with the specified Objective-C type.
-- [func getValue(UnsafeMutableRawPointer)](nsvalue/getvalue(_:).md)
+- [func getValue(UnsafeMutableRawPointer)](./getvalue%28_%29.md)
   Copies the value into the specified buffer.
 
 

@@ -1,7 +1,8 @@
 # init(_:name:isAdditive:bindTarget:blendLayer:repeatMode:fillMode:trimStart:trimEnd:trimDuration:offset:delay:speed:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a unique animation from a combination of other animations in the form of a tree.
 
@@ -11,7 +12,7 @@ Creates a unique animation from a combination of other animations in the form of
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

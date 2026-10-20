@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asynchronous sequence of speech detection results.
 
@@ -27,8 +28,9 @@ Accessing this property does not create a new sequence.
 
 ## See Also
 
-- [SpeechDetector.Result](speechdetector/result.md)
-  A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](speechdetector/init(detectionoptions:reportresults:).md) and currently only support error handling from the VAD model.
+### Getting results
+- [SpeechDetector.Result](./result.md)
+  A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](./init%28detectionoptions,reportresults%29.md) and currently only support error handling from the VAD model.
 
 
 ---

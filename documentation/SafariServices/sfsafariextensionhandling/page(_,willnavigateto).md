@@ -1,7 +1,8 @@
 # page(_:willNavigateTo:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method the system calls when a webpage is about to navigate to a new URL.
 
@@ -12,6 +13,10 @@ A method the system calls when a webpage is about to navigate to a new URL.
 
 ```swift
 optional func page(_ page: SFSafariPage, willNavigateTo url: URL?)
+```
+
+```objc
+- (void) page:(SFSafariPage *) page willNavigateToURL:(NSURL *) url;
 ```
 
 #### Discussion

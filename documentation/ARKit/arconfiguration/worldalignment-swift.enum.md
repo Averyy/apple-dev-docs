@@ -1,7 +1,8 @@
 # ARConfiguration.WorldAlignment
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for how ARKit constructs a scene coordinate system based on real-world device motion.
 
@@ -15,33 +16,38 @@ Options for how ARKit constructs a scene coordinate system based on real-world d
 enum WorldAlignment
 ```
 
+```c
+enum ARWorldAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Alignments
-- [ARConfiguration.WorldAlignment.gravity](arconfiguration/worldalignment-swift.enum/gravity.md)
+- [ARConfiguration.WorldAlignment.gravity](./worldalignment-swift.enum/gravity.md)
   The coordinate system’s y-axis is parallel to gravity, and its origin is the initial position of the device.
-- [ARConfiguration.WorldAlignment.gravityAndHeading](arconfiguration/worldalignment-swift.enum/gravityandheading.md)
+- [ARConfiguration.WorldAlignment.gravityAndHeading](./worldalignment-swift.enum/gravityandheading.md)
   The coordinate system’s y-axis is parallel to gravity, its x- and z-axes are oriented to compass heading, and its origin is the initial position of the device.
-- [ARConfiguration.WorldAlignment.camera](arconfiguration/worldalignment-swift.enum/camera.md)
+- [ARConfiguration.WorldAlignment.camera](./worldalignment-swift.enum/camera.md)
   The scene coordinate system is locked to match the orientation of the camera.
 ### Initializers
-- [init?(rawValue: Int)](arconfiguration/worldalignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./worldalignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isLightEstimationEnabled: Bool](arconfiguration/islightestimationenabled.md)
+### Configuring the AR session
+- [var isLightEstimationEnabled: Bool](./islightestimationenabled.md)
   A Boolean value specifying whether ARKit analyzes scene lighting in captured camera images.
-- [var worldAlignment: ARConfiguration.WorldAlignment](arconfiguration/worldalignment-swift.property.md)
+- [var worldAlignment: ARConfiguration.WorldAlignment](./worldalignment-swift.property.md)
   A value specifying how the session maps real-world device motion into a 3D scene coordinate system.
 
 

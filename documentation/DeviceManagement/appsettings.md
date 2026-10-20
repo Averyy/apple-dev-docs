@@ -1,7 +1,8 @@
 # AppSettings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure app settings.
 
@@ -15,28 +16,32 @@ The declaration to configure app settings.
 
 ## Declaration
 
-```swift
+```
 object AppSettings
 ```
 
 ## Mentions
 
-- [Allowing and denying apps and binaries](allowing-and-denying-apps-and-binaries.md)
+- [Allowing and denying apps and binaries](./allowing-and-denying-apps-and-binaries.md)
 
 #### Discussion
 
 Specify `com.apple.configuration.app.settings` as the declaration type.
 
-##### Binary Identifier Rules
+##### Binary identifier rules
 
 The following combinations of binary identifiers are supported for each key:
 
-- `AllowedBinaries`: - Either `CDHash` or `TeamID` needs to be present.
-- `SigningID`, `PathPrefix`, or `SigningState` may be present.
-- `DeniedBinaries`: - Either `CDHash` or `TeamID` or `SigningID` needs to be present.
-- `PathPrefix` or `SigningState` may be present.
+- `AllowedBinaries`:
 
-##### Privacy Permission Defaults
+  - Either `CDHash` or `TeamID` needs to be present.
+  - `SigningID`, `PathPrefix`, or `SigningState` may be present.
+- `DeniedBinaries`:
+
+  - Either `CDHash` or `TeamID` or `SigningID` needs to be present.
+  - `PathPrefix` or `SigningState` may be present.
+
+##### Privacy permission defaults
 
 Privacy permission defaults allow an organization to suggest a set of privacy permissions for use with an app. When set, the app displays a consent prompt listing all the configured defaults. If the user accepts, the device applies those defaults for the app. If the user declines, no defaults are set and the device prompts the user in the normal way when the app requires permission.
 
@@ -49,7 +54,7 @@ The user can change the app permission privacy settings in Settings.app if they 
 
 Only AppKit-based apps on macOS support this feature.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -61,9 +66,9 @@ Only AppKit-based apps on macOS support this feature.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Examples
+##### Configuration examples
 
-###### App Privacy Examples
+###### App privacy examples
 
 **Allow various permission defaults for several apps in iOS**:
 
@@ -123,7 +128,7 @@ This configuration sets various privacy permission defaults for several apps.
 }
 ```
 
-###### App Settings Allowlist Examples
+###### App settings allowlist examples
 
 **Allow apps by code directory hash**:
 
@@ -192,7 +197,7 @@ This configuration allows any app that matches a set of complex rules to run on 
 }
 ```
 
-###### App Settings Denylist Examples
+###### App settings denylist examples
 
 **Deny apps by code directory hash**:
 
@@ -282,7 +287,7 @@ This configuration prevents any app that matches a set of complex rules from run
 }
 ```
 
-###### App Settings Allowlist and Denylist Examples
+###### App settings allowlist and denylist examples
 
 This configuration allows one set of apps to run, and prevents ome other apps that would otherwise be allowed from running.
 
@@ -319,7 +324,7 @@ This configuration allows one set of apps to run, and prevents ome other apps th
 }
 ```
 
-###### App Settings Managed Apps Examples
+###### App settings managed apps examples
 
 This configuration always allows all managed apps and one other app to run on macOS.
 
@@ -342,7 +347,7 @@ This configuration always allows all managed apps and one other app to run on ma
 }
 ```
 
-###### App Settings Webclips Examples
+###### App settings WebClips examples
 
 **Allow WebClips on macOS**:
 
@@ -390,48 +395,51 @@ This configuration prevents all WebClips from running on macOS.
 ## Topics
 
 ### Objects
-- [object AppSettingsAllowedObject](appsettingsallowedobject.md)
+- [object AppSettingsAllowedObject](./appsettingsallowedobject.md)
   The dictionary of allowed app settings.
-- [object AppSettingsPrivacyObject](appsettingsprivacyobject.md)
+- [object AppSettingsPrivacyObject](./appsettingsprivacyobject.md)
   The dictionary of app settings.
 
 ## Properties
 
 - `Allowed` (AppSettingsAllowedObject): The dictionary of allowed app settings.
-- `Privacy` (AppSettingsPrivacyObject): The dictionary of app settings. Available: iOS 27+ | iPadOS 27+ | macOS 27+
-Allowed scopes: iOS: system | macOS: user
+- `Privacy` (AppSettingsPrivacyObject): The dictionary of app settings.
+
+  Available: iOS 27+ | iPadOS 27+ | macOS 27+
+  Allowed scopes: iOS: system | macOS: user
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
-- [object ExternalIntelligenceSettings](externalintelligencesettings.md)
+- [object ExternalIntelligenceSettings](./externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 
 

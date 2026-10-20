@@ -1,7 +1,8 @@
 # init(definition:)
 
 **Framework**: GameKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a game activity with definition.
 
@@ -19,11 +20,16 @@ Creates a game activity with definition.
 init(definition activityDefinition: GKGameActivityDefinition)
 ```
 
+```objc
+- (instancetype) initWithDefinition:(GKGameActivityDefinition *) activityDefinition;
+```
+
 ## See Also
 
-- [class func start(definition: GKGameActivityDefinition) throws -> GKGameActivity](gkgameactivity/start(definition:).md)
+### Creating an activity
+- [class func start(definition: GKGameActivityDefinition) throws -> GKGameActivity](./start%28definition%29.md)
   Creates and starts a game activity with a definition.
-- [class func start(definition: GKGameActivityDefinition, partyCode: String) throws -> GKGameActivity](gkgameactivity/start(definition:partycode:).md)
+- [class func start(definition: GKGameActivityDefinition, partyCode: String) throws -> GKGameActivity](./start%28definition,partycode%29.md)
   Creates and starts a new game activity with a custom party code.
 
 

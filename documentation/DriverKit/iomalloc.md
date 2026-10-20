@@ -1,19 +1,20 @@
 # IOMalloc
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Allocates the specified amount of general-purpose memory.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void *IOMalloc(size_t length);
 ```
 
@@ -23,7 +24,7 @@ A pointer to the allocated memory block, or `NULL` on failure.
 
 #### Discussion
 
-This is a general-purpose utility to allocate memory. There are no alignment guarantees on the returned memory, and alignment may vary depending on the configuration. To allocate memory for use in I/O transfers, create an [`IOBufferMemoryDescriptor`](iobuffermemorydescriptor.md) instead.
+This is a general-purpose utility to allocate memory. There are no alignment guarantees on the returned memory, and alignment may vary depending on the configuration. To allocate memory for use in I/O transfers, create an [`IOBufferMemoryDescriptor`](./iobuffermemorydescriptor.md) instead.
 
 ## Parameters
 
@@ -31,13 +32,14 @@ This is a general-purpose utility to allocate memory. There are no alignment gua
 
 ## See Also
 
-- [IONew](ionew.md)
+### Allocation
+- [IONew](./ionew.md)
   Allocates memory for an array of the specified type.
-- [IONewZero](ionewzero.md)
+- [IONewZero](./ionewzero.md)
   Allocates memory for an array of the specified type and zero-initializes that memory.
-- [IOMallocZero](iomalloczero.md)
+- [IOMallocZero](./iomalloczero.md)
   Allocates the specified amount of general-purpose memory and zero-initializes it.
-- [OSTypeAlloc](ostypealloc.md)
+- [OSTypeAlloc](./ostypealloc.md)
   Allocates memory for a named class.
 
 

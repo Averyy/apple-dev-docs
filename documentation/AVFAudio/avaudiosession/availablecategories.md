@@ -1,7 +1,8 @@
 # availableCategories
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio session categories available on the current device.
 
@@ -19,21 +20,26 @@ The audio session categories available on the current device.
 var availableCategories: [AVAudioSession.Category] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * availableCategories;
+```
+
 #### Discussion
 
-Not every device supports every audio session category. For instance, the [`record`](avaudiosession/category-swift.struct/record.md) category isn’t available on a device that doesn’t support audio input.
+Not every device supports every audio session category. For instance, the [`record`](./category-swift.struct/record.md) category isn’t available on a device that doesn’t support audio input.
 
 Query this property to determine if the category you’d like to use is available on the current device.
 
 ## See Also
 
-- [var category: AVAudioSession.Category](avaudiosession/category-swift.property.md)
+### Inspecting the category configuration
+- [var category: AVAudioSession.Category](./category-swift.property.md)
   The current audio session category.
-- [AVAudioSession.Category](avaudiosession/category-swift.struct.md)
+- [AVAudioSession.Category](./category-swift.struct.md)
   Audio session category identifiers.
-- [var categoryOptions: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.property.md)
+- [var categoryOptions: AVAudioSession.CategoryOptions](./categoryoptions-swift.property.md)
   The set of options associated with the current audio session category.
-- [AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct.md)
+- [AVAudioSession.CategoryOptions](./categoryoptions-swift.struct.md)
   Constants that specify optional audio behaviors.
 
 

@@ -1,14 +1,15 @@
 # proc_find_ident
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 proc_t proc_find_ident(const struct proc_ident *i);
 ```
 

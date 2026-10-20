@@ -1,7 +1,8 @@
 # indexBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer that contains indices for the vertices that compose the triangle list.
 
@@ -19,15 +20,20 @@ A buffer that contains indices for the vertices that compose the triangle list.
 var indexBuffer: (any MTLBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> indexBuffer;
+```
+
 #### Discussion
 
 This property can be `nil`, in which case the vertex data defines the triangle list implicitly. You need to store indices in a packed data format.
 
 ## See Also
 
-- [var indexType: MTLIndexType](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indextype.md)
+### Specifying index data
+- [var indexType: MTLIndexType](./indextype.md)
   The data type of indices in the index buffer.
-- [var indexBufferOffset: Int](mtlaccelerationstructuremotiontrianglegeometrydescriptor/indexbufferoffset.md)
+- [var indexBufferOffset: Int](./indexbufferoffset.md)
   The offset, in bytes, to the first index in the buffer.
 
 

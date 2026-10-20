@@ -1,7 +1,8 @@
 # nw_ws_opcode_cont
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A continuation message.
 
@@ -20,15 +21,20 @@ A continuation message.
 var nw_ws_opcode_cont: nw_ws_opcode_t { get }
 ```
 
+```c
+nw_ws_opcode_cont
+```
+
 #### Discussion
 
 Continuations are handled automatically, and should not be manually sent.
 
 ## See Also
 
-- [var nw_ws_opcode_binary: nw_ws_opcode_t](nw_ws_opcode_binary.md)
+### Data Types
+- [var nw_ws_opcode_binary: nw_ws_opcode_t](./nw_ws_opcode_binary.md)
   A binary data message.
-- [var nw_ws_opcode_text: nw_ws_opcode_t](nw_ws_opcode_text.md)
+- [var nw_ws_opcode_text: nw_ws_opcode_t](./nw_ws_opcode_text.md)
   A text data message.
 
 

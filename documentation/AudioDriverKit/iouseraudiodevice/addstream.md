@@ -1,7 +1,8 @@
 # AddStream
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an audio stream to the device.
 
@@ -10,13 +11,13 @@ Adds an audio stream to the device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddStream(IOUserAudioStream *in_stream);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -28,9 +29,10 @@ If adding the stream succeeds, the stream’s reference count increments by one.
 
 ## See Also
 
-- [RemoveStream](iouseraudiodevice/removestream.md)
+### Working with Audio Streams
+- [RemoveStream](./removestream.md)
   Removes an audio stream from the device.
-- [IOUserAudioStream](iouseraudiostream.md)
+- [IOUserAudioStream](../iouseraudiostream.md)
   An audio object that performs I/O for an audio device.
 
 

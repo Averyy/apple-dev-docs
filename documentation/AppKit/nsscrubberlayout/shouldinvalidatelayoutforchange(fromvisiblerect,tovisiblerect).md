@@ -1,7 +1,8 @@
 # shouldInvalidateLayoutForChange(fromVisibleRect:toVisibleRect:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the scrubber should refresh its layout in response to a change of its visible region.
 
@@ -14,27 +15,32 @@ Determines whether the scrubber should refresh its layout in response to a chang
 func shouldInvalidateLayoutForChange(fromVisibleRect: NSRect, toVisibleRect: NSRect) -> Bool
 ```
 
+```objc
+- (BOOL) shouldInvalidateLayoutForChangeFromVisibleRect:(NSRect) fromVisibleRect toVisibleRect:(NSRect) toVisibleRect;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the scrubber invalidates its layout in response to a change of the visible region, in response to a user scroll action, or to the scrubber being resized. Subclasses that rely on the size or origin of the visible region should return [`true`](https://developer.apple.com/documentation/swift/true).
+If [`true`](../../Swift/true.md), the scrubber invalidates its layout in response to a change of the visible region, in response to a user scroll action, or to the scrubber being resized. Subclasses that rely on the size or origin of the visible region should return [`true`](../../Swift/true.md).
 
-The base implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+The base implementation of this method returns [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func prepare()](nsscrubberlayout/prepare.md)
+### Subclassing a scrubber layout
+- [func prepare()](./prepare%28%29.md)
   Gives you an opportunity to perform layout calculations when the scrubber’s layout is invalidated.
-- [var scrubberContentSize: NSSize](nsscrubberlayout/scrubbercontentsize.md)
+- [var scrubberContentSize: NSSize](./scrubbercontentsize.md)
   The size required to contain all elements within the scrubber.
-- [func layoutAttributesForItem(at: Int) -> NSScrubberLayoutAttributes?](nsscrubberlayout/layoutattributesforitem(at:).md)
+- [func layoutAttributesForItem(at: Int) -> NSScrubberLayoutAttributes?](./layoutattributesforitem%28at%29.md)
   The layout attributes for the item with the specified index.
-- [func layoutAttributesForItems(in: NSRect) -> Set<NSScrubberLayoutAttributes>](nsscrubberlayout/layoutattributesforitems(in:).md)
+- [func layoutAttributesForItems(in: NSRect) -> Set<NSScrubberLayoutAttributes>](./layoutattributesforitems%28in%29.md)
   The set of layout attributes for all items within the provided rectangle.
-- [var shouldInvalidateLayoutForSelectionChange: Bool](nsscrubberlayout/shouldinvalidatelayoutforselectionchange.md)
+- [var shouldInvalidateLayoutForSelectionChange: Bool](./shouldinvalidatelayoutforselectionchange.md)
   Determines whether the scrubber should refresh its layout when the selection changes.
-- [var shouldInvalidateLayoutForHighlightChange: Bool](nsscrubberlayout/shouldinvalidatelayoutforhighlightchange.md)
+- [var shouldInvalidateLayoutForHighlightChange: Bool](./shouldinvalidatelayoutforhighlightchange.md)
   Determines whether the scrubber should refresh its layout when an item is highlighted.
-- [var automaticallyMirrorsInRightToLeftLayout: Bool](nsscrubberlayout/automaticallymirrorsinrighttoleftlayout.md)
+- [var automaticallyMirrorsInRightToLeftLayout: Bool](./automaticallymirrorsinrighttoleftlayout.md)
   Determines whether the scrubber mirrors its layout for right-to-left layouts.
 
 

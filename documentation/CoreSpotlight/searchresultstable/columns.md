@@ -1,7 +1,8 @@
 # columns
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Column definitions with name and type hint.
 
@@ -20,12 +21,13 @@ let columns: [SearchResultsTable.Column]
 
 ## See Also
 
-- [let header: String?](searchresultstable/header.md)
+### Getting the column and row details
+- [let header: String?](./header.md)
   What this table represents (e.g., “Emails per month from John”).
-- [let rows: [SearchResultsTable.Row]](searchresultstable/rows.md)
+- [let rows: [SearchResultsTable.Row]](./rows.md)
   Data rows — each row’s values array matches `columns` by index.
-- [SearchResultsTable.Column](searchresultstable/column.md)
-- [SearchResultsTable.Row](searchresultstable/row.md)
+- [SearchResultsTable.Column](./column.md)
+- [SearchResultsTable.Row](./row.md)
 
 
 ---

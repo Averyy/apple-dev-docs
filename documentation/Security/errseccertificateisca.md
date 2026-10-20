@@ -1,7 +1,8 @@
 # errSecCertificateIsCA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var errSecCertificateIsCA: OSStatus { get }
+```
+
+```c
+errSecCertificateIsCA
 ```
 
 

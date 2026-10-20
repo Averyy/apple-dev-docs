@@ -1,7 +1,8 @@
 # toolbarsVisibility
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the webpage requested a visible toolbar.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the webpage requested a visible toolbar.
 var toolbarsVisibility: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * toolbarsVisibility;
+```
+
 #### Discussion
 
 If the webpage didn’t request a visible toolbar, this property is `nil`.
 
 ## See Also
 
-- [var menuBarVisibility: NSNumber?](wkwindowfeatures/menubarvisibility.md)
+### Inspecting Visibility Properties
+- [var menuBarVisibility: NSNumber?](./menubarvisibility.md)
   A Boolean value that indicates whether the webpage requests a visible menu bar.
-- [var statusBarVisibility: NSNumber?](wkwindowfeatures/statusbarvisibility.md)
+- [var statusBarVisibility: NSNumber?](./statusbarvisibility.md)
   A Boolean value that indicates whether the webpage requested a visible status bar.
 
 

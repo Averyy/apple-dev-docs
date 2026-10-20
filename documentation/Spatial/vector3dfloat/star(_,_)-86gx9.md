@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the vector that results from applying the transform to the vector.
 

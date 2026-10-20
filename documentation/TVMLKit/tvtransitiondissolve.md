@@ -1,18 +1,20 @@
 # TVTransitionDissolve
 
-**Framework**: TVMLKit
+**Framework**: TVMLKit  
+**Role**: Article
 
 The element stays in place and a dissolve effect is applied.
 
 ## See Also
 
-- [TVTransitionMagicMove](tvtransitionmagicmove.md)
+### Constants
+- [TVTransitionMagicMove](./tvtransitionmagicmove.md)
   The magic move transition is to be used.
-- [TVTransitionNone](tvtransitionnone.md)
+- [TVTransitionNone](./tvtransitionnone.md)
   No transition effect is to be applied.
-- [TVTransitionPush](tvtransitionpush.md)
+- [TVTransitionPush](./tvtransitionpush.md)
   The element is pushed onto the screen.
-- [TVTransitionWipe](tvtransitionwipe.md)
+- [TVTransitionWipe](./tvtransitionwipe.md)
   The element is wiped from the screen.
 
 

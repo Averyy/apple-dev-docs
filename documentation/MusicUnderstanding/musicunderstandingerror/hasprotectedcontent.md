@@ -1,7 +1,8 @@
 # MusicUnderstandingError.hasProtectedContent
 
 **Framework**: Music Understanding  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error that occurs when a session is initialized with an `AVAsset` whose content is protected by DRM and cannot be decoded for analysis.
 

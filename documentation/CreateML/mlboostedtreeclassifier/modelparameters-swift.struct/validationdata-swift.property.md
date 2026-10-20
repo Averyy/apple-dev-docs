@@ -1,16 +1,19 @@
 # validationData
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Validation data represented as a `MLDataTable`.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.14+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+- Mac Catalyst 15.0+ - Deprecated in 16.0
+- macOS 10.14+ - Deprecated in 10.15
 - visionOS 1.0+
+
+> **Deprecated**: Use the validation property instead.
 
 ## Declaration
 
@@ -24,20 +27,21 @@ var validationData: MLDataTable? { get set }
 
 ## See Also
 
-- [var maxDepth: Int](mlboostedtreeclassifier/modelparameters-swift.struct/maxdepth.md)
-- [var maxIterations: Int](mlboostedtreeclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var minLossReduction: Double](mlboostedtreeclassifier/modelparameters-swift.struct/minlossreduction.md)
-- [var minChildWeight: Double](mlboostedtreeclassifier/modelparameters-swift.struct/minchildweight.md)
-- [var randomSeed: Int](mlboostedtreeclassifier/modelparameters-swift.struct/randomseed.md)
-- [var stepSize: Double](mlboostedtreeclassifier/modelparameters-swift.struct/stepsize.md)
+### Accessing parameters
+- [var maxDepth: Int](./maxdepth.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var minLossReduction: Double](./minlossreduction.md)
+- [var minChildWeight: Double](./minchildweight.md)
+- [var randomSeed: Int](./randomseed.md)
+- [var stepSize: Double](./stepsize.md)
   Must be in the range (0, 1).
-- [var earlyStoppingRounds: Int?](mlboostedtreeclassifier/modelparameters-swift.struct/earlystoppingrounds.md)
+- [var earlyStoppingRounds: Int?](./earlystoppingrounds.md)
   Validation data must be specified for an early stop.
-- [var rowSubsample: Double](mlboostedtreeclassifier/modelparameters-swift.struct/rowsubsample.md)
+- [var rowSubsample: Double](./rowsubsample.md)
   Must be in the range (0, 1).
-- [var columnSubsample: Double](mlboostedtreeclassifier/modelparameters-swift.struct/columnsubsample.md)
+- [var columnSubsample: Double](./columnsubsample.md)
   Must be in the range (0, 1).
-- [var validation: MLBoostedTreeClassifier.ModelParameters.ValidationData](mlboostedtreeclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLBoostedTreeClassifier.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

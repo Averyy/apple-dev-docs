@@ -1,7 +1,8 @@
 # backwards
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Search from the end of the data object.
 
@@ -20,9 +21,14 @@ Search from the end of the data object.
 static var backwards: NSData.SearchOptions { get }
 ```
 
+```c
+NSDataSearchBackwards
+```
+
 ## See Also
 
-- [static var anchored: NSData.SearchOptions](nsdata/searchoptions/anchored.md)
+### Constants
+- [static var anchored: NSData.SearchOptions](./anchored.md)
   Search is limited to start (or end, if searching backwards) of the data object.
 
 

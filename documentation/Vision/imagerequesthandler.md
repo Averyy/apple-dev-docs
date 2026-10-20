@@ -1,7 +1,8 @@
 # ImageRequestHandler
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that processes one or more image-analysis requests pertaining to a single image.
 
@@ -22,49 +23,50 @@ final class ImageRequestHandler
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
 
 #### Overview
 
-Instantiate this handler to perform Vision requests on a single image. You specify the image, and then call [`perform(_:)`](imagerequesthandler/perform(_:)-7b6g5.md) to begin executing the request.
+Instantiate this handler to perform Vision requests on a single image. You specify the image, and then call [`perform(_:)`](./imagerequesthandler/perform%28_%29-7b6g5.md) to begin executing the request.
 
 ## Topics
 
 ### Creating a request handler
-- [convenience init(URL, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-6imw8.md)
+- [convenience init(URL, orientation: CGImagePropertyOrientation?)](./imagerequesthandler/init%28_,orientation%29-6imw8.md)
   Creates a handler for performing requests on an image at the specified URL.
-- [convenience init(Data, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8cwes.md)
+- [convenience init(Data, orientation: CGImagePropertyOrientation?)](./imagerequesthandler/init%28_,orientation%29-8cwes.md)
   Creates a handler for performing requests on an image contained in a data object.
-- [convenience init(CGImage, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8nodt.md)
+- [convenience init(CGImage, orientation: CGImagePropertyOrientation?)](./imagerequesthandler/init%28_,orientation%29-8nodt.md)
   Creates a handler for performing requests on Core Graphics images.
-- [convenience init(CVPixelBuffer, depthData: AVDepthData?, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:depthdata:orientation:)-3ebxg.md)
+- [convenience init(CVPixelBuffer, depthData: AVDepthData?, orientation: CGImagePropertyOrientation?)](./imagerequesthandler/init%28_,depthdata,orientation%29-3ebxg.md)
   Creates a handler for performing requests on a Core Video pixel buffer.
-- [convenience init(CMSampleBuffer, depthData: AVDepthData?, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:depthdata:orientation:)-5itte.md)
+- [convenience init(CMSampleBuffer, depthData: AVDepthData?, orientation: CGImagePropertyOrientation?)](./imagerequesthandler/init%28_,depthdata,orientation%29-5itte.md)
   Creates a request handler that performs requests on an image contained within a sample buffer.
-- [convenience init(CIImage, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-2hvfr.md)
+- [convenience init(CIImage, orientation: CGImagePropertyOrientation?)](./imagerequesthandler/init%28_,orientation%29-2hvfr.md)
   Creates a handler for performing requests on Core Image images.
-- [convenience init(CVPixelBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-3zrh5.md)
-- [convenience init(CMSampleBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8q7vz.md)
+- [convenience init(CVPixelBuffer, orientation: CGImagePropertyOrientation?)](./imagerequesthandler/init%28_,orientation%29-3zrh5.md)
+- [convenience init(CMSampleBuffer, orientation: CGImagePropertyOrientation?)](./imagerequesthandler/init%28_,orientation%29-8q7vz.md)
 ### Performing the request
-- [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](imagerequesthandler/perform(_:)-l6er.md)
+- [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](./imagerequesthandler/perform%28_%29-l6er.md)
   Performs one or more framework requests on the handler’s image.
-- [func perform<T>(T) async throws -> T.Result](imagerequesthandler/perform(_:)-7b6g5.md)
+- [func perform<T>(T) async throws -> T.Result](./imagerequesthandler/perform%28_%29-7b6g5.md)
   Performs a framework request on the handler’s image.
 - [func performAll(some Collection<any VisionRequest>) -> some AsyncSequence<VisionResult, Never>
-](imagerequesthandler/performall(_:).md)
+](./imagerequesthandler/performall%28_%29.md)
   Schedules a collection of framework requests to perform on the handler’s image.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class TargetedImageRequestHandler](targetedimagerequesthandler.md)
+### Request handlers
+- [class TargetedImageRequestHandler](./targetedimagerequesthandler.md)
   An object that performs image-analysis requests on two images.
-- [class VideoProcessor](videoprocessor.md)
+- [class VideoProcessor](./videoprocessor.md)
   An object that performs offline analysis of video content.
 
 

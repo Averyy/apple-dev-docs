@@ -1,17 +1,20 @@
 # minimumObjectSize
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum radius of the tracked shape’s bounding circle.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 14.0
+- iPadOS 14.0+ - Deprecated in 14.0
+- Mac Catalyst 14.0+ - Deprecated in 14.0
+- macOS 11.0+ - Deprecated in 11.0
+- tvOS 14.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`objectMinimumNormalizedRadius`](./objectminimumnormalizedradius.md) instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ The minimum radius of the tracked shape’s bounding circle.
 var minimumObjectSize: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) float minimumObjectSize;
+```
+
 ## Mentions
 
-- [Identifying Trajectories in Video](identifying-trajectories-in-video.md)
+- [Identifying Trajectories in Video](../identifying-trajectories-in-video.md)
 
 #### Discussion
 
@@ -33,15 +40,16 @@ Specify the size in normalized (0.0 to 1.0) coordinates.
 
 ## See Also
 
-- [var targetFrameTime: CMTime](vndetecttrajectoriesrequest/targetframetime.md)
+### Configuring the Request
+- [var targetFrameTime: CMTime](./targetframetime.md)
   The requested target frame time for processing trajectory detection.
-- [var trajectoryLength: Int](vndetecttrajectoriesrequest/trajectorylength.md)
+- [var trajectoryLength: Int](./trajectorylength.md)
   The number of points to detect before calculating a trajectory.
-- [var objectMinimumNormalizedRadius: Float](vndetecttrajectoriesrequest/objectminimumnormalizedradius.md)
+- [var objectMinimumNormalizedRadius: Float](./objectminimumnormalizedradius.md)
   The minimum radius of the bounding circle of the object to track.
-- [var objectMaximumNormalizedRadius: Float](vndetecttrajectoriesrequest/objectmaximumnormalizedradius.md)
+- [var objectMaximumNormalizedRadius: Float](./objectmaximumnormalizedradius.md)
   The maximum radius of the bounding circle of the object to track.
-- [var maximumObjectSize: Float](vndetecttrajectoriesrequest/maximumobjectsize.md)
+- [var maximumObjectSize: Float](./maximumobjectsize.md)
   The maximum radius of the tracked shape’s bounding circle.
 
 

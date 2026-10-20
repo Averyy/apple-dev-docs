@@ -1,7 +1,8 @@
 # promotional
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A promotional offer for an auto-renewable subscription.
 
@@ -22,17 +23,18 @@ static let promotional: Transaction.OfferType
 
 #### Discussion
 
-For more information about promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions).
+For more information about promotional offers, see [Set up promotional offers for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions).
 
-The raw value of the [`promotional`](transaction/offertype-swift.struct/promotional.md) offer type is `2`.
+The raw value of the [`promotional`](./promotional.md) offer type is `2`.
 
 ## See Also
 
-- [static let introductory: Transaction.OfferType](transaction/offertype-swift.struct/introductory.md)
+### Getting offer types
+- [static let introductory: Transaction.OfferType](./introductory.md)
   An introductory offer for an auto-renewable subscription.
-- [static let code: Transaction.OfferType](transaction/offertype-swift.struct/code.md)
+- [static let code: Transaction.OfferType](./code.md)
   An offer code.
-- [static var winBack: Transaction.OfferType](transaction/offertype-swift.struct/winback.md)
+- [static var winBack: Transaction.OfferType](./winback.md)
   A win-back offer for an auto-renewable subscription.
 
 

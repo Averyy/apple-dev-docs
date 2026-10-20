@@ -1,14 +1,15 @@
 # kSCSICmd_MODE_SENSE_10
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_MODE_SENSE_10 = 0x5A
 ```
 

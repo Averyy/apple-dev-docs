@@ -1,7 +1,8 @@
 # setAllowsAntialiasing(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether or not to allow antialiasing for a graphics context.
 
@@ -10,7 +11,7 @@ Sets whether or not to allow antialiasing for a graphics context.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Sets whether or not to allow antialiasing for a graphics context.
 
 ```swift
 func setAllowsAntialiasing(_ allowsAntialiasing: Bool)
+```
+
+```c
+extern void CGContextSetAllowsAntialiasing(CGContextRef c, bool allowsAntialiasing);
 ```
 
 #### Discussion
@@ -32,23 +37,24 @@ This parameter is not part of the graphics state.
 
 ## See Also
 
-- [func setFlatness(CGFloat)](cgcontext/setflatness(_:).md)
+### Setting Path Drawing Options
+- [func setFlatness(CGFloat)](./setflatness%28_%29.md)
   Sets the accuracy of curved paths in a graphics context.
-- [func setLineCap(CGLineCap)](cgcontext/setlinecap(_:).md)
+- [func setLineCap(CGLineCap)](./setlinecap%28_%29.md)
   Sets the style for the endpoints of lines drawn in a graphics context.
-- [func setLineDash(phase: CGFloat, lengths: [CGFloat])](cgcontext/setlinedash(phase:lengths:).md)
+- [func setLineDash(phase: CGFloat, lengths: [CGFloat])](./setlinedash%28phase,lengths%29.md)
   Sets the pattern for drawing dashed lines.
-- [func setLineJoin(CGLineJoin)](cgcontext/setlinejoin(_:).md)
+- [func setLineJoin(CGLineJoin)](./setlinejoin%28_%29.md)
   Sets the style for the joins of connected lines in a graphics context.
-- [func setLineWidth(CGFloat)](cgcontext/setlinewidth(_:).md)
+- [func setLineWidth(CGFloat)](./setlinewidth%28_%29.md)
   Sets the line width for a graphics context.
-- [func setMiterLimit(CGFloat)](cgcontext/setmiterlimit(_:).md)
+- [func setMiterLimit(CGFloat)](./setmiterlimit%28_%29.md)
   Sets the miter limit for the joins of connected lines in a graphics context.
-- [func setPatternPhase(CGSize)](cgcontext/setpatternphase(_:).md)
+- [func setPatternPhase(CGSize)](./setpatternphase%28_%29.md)
   Sets the pattern phase of a context.
-- [func setFillPattern(CGPattern, colorComponents: UnsafePointer<CGFloat>)](cgcontext/setfillpattern(_:colorcomponents:).md)
+- [func setFillPattern(CGPattern, colorComponents: UnsafePointer<CGFloat>)](./setfillpattern%28_,colorcomponents%29.md)
   Sets the fill pattern in the specified graphics context.
-- [func setShouldAntialias(Bool)](cgcontext/setshouldantialias(_:).md)
+- [func setShouldAntialias(Bool)](./setshouldantialias%28_%29.md)
   Sets antialiasing on or off for a graphics context.
 
 

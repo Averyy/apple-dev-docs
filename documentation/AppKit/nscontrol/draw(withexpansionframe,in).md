@@ -1,7 +1,8 @@
 # draw(withExpansionFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom expansion tool tip drawing.
 
@@ -12,6 +13,10 @@ Performs custom expansion tool tip drawing.
 
 ```swift
 func draw(withExpansionFrame contentFrame: NSRect, in view: NSView)
+```
+
+```objc
+- (void) drawWithExpansionFrame:(NSRect) contentFrame inView:(NSView *) view;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ Note that the view may be different from the original view in which the text app
 
 ## See Also
 
-- [var allowsExpansionToolTips: Bool](nscontrol/allowsexpansiontooltips.md)
+### Managing Expansion Tool Tips
+- [var allowsExpansionToolTips: Bool](./allowsexpansiontooltips.md)
   A Boolean value that indicates whether expansion tool tips are shown when the control is hovered over.
-- [func expansionFrame(withFrame: NSRect) -> NSRect](nscontrol/expansionframe(withframe:).md)
+- [func expansionFrame(withFrame: NSRect) -> NSRect](./expansionframe%28withframe%29.md)
   The frame in which a tool tip can be displayed, if needed.
 
 

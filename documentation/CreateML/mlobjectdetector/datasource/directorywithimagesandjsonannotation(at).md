@@ -1,7 +1,8 @@
 # MLObjectDetector.DataSource.directoryWithImagesAndJsonAnnotation(at:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An object-detector data source you create by selecting a directory that contains image files and exactly one JSON annotation file.
 
@@ -20,9 +21,10 @@ case directoryWithImagesAndJsonAnnotation(at: URL)
 
 ## See Also
 
-- [MLObjectDetector.DataSource.directoryWithImages(at:annotationFile:)](mlobjectdetector/datasource/directorywithimages(at:annotationfile:).md)
+### Creating a data source
+- [MLObjectDetector.DataSource.directoryWithImages(at:annotationFile:)](./directorywithimages%28at,annotationfile%29.md)
   An object-detector data source you create by selecting the location of a directory of image files, and the location of a JSON annotation file.
-- [case table(MLDataTable, imageColumn: String, annotationColumn: String)](mlobjectdetector/datasource/table(_:imagecolumn:annotationcolumn:).md)
+- [case table(MLDataTable, imageColumn: String, annotationColumn: String)](./table%28_,imagecolumn,annotationcolumn%29.md)
   An object-detector data source you create with a data table.
 
 

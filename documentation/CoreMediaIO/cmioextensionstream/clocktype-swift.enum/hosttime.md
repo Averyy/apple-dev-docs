@@ -1,7 +1,8 @@
 # CMIOExtensionStream.ClockType.hostTime
 
 **Framework**: Core Media I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the stream uses the host time clock.
 
@@ -15,11 +16,16 @@ Indicates that the stream uses the host time clock.
 case hostTime
 ```
 
+```c
+CMIOExtensionStreamClockTypeHostTime
+```
+
 ## See Also
 
-- [CMIOExtensionStream.ClockType.linkedCoreAudioDeviceUID](cmioextensionstream/clocktype-swift.enum/linkedcoreaudiodeviceuid.md)
+### Clock Types
+- [CMIOExtensionStream.ClockType.linkedCoreAudioDeviceUID](./linkedcoreaudiodeviceuid.md)
   Indicates that the stream uses the clock of the linked Core Audio device.
-- [CMIOExtensionStream.ClockType.custom](cmioextensionstream/clocktype-swift.enum/custom.md)
+- [CMIOExtensionStream.ClockType.custom](./custom.md)
   Indicates that the stream’s clock is specific to the device hosting the stream.
 
 

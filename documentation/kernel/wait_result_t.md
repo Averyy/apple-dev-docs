@@ -1,14 +1,15 @@
 # wait_result_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 typedef int wait_result_t;
 ```
 

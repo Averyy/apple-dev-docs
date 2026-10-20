@@ -1,7 +1,8 @@
 # PredicateExpressions.SequenceStartsWith
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,22 +22,22 @@ struct SequenceStartsWith<Base, Prefix> where Base : PredicateExpression, Prefix
 ## Topics
 
 ### Initializers
-- [init(base: Base, prefix: Prefix)](predicateexpressions/sequencestartswith/init(base:prefix:).md)
+- [init(base: Base, prefix: Prefix)](./sequencestartswith/init%28base,prefix%29.md)
 ### Instance Properties
-- [let base: Base](predicateexpressions/sequencestartswith/base.md)
-- [let prefix: Prefix](predicateexpressions/sequencestartswith/prefix.md)
+- [let base: Base](./sequencestartswith/base.md)
+- [let prefix: Prefix](./sequencestartswith/prefix.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

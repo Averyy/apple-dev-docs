@@ -1,7 +1,8 @@
 # availableRawPhotoCodecTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var availableRawPhotoCodecTypes: [AVVideoCodecType] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * availableRawPhotoCodecTypes;
 ```
 
 

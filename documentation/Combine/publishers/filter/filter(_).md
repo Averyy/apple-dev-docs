@@ -1,7 +1,8 @@
 # filter(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,9 +19,12 @@
 func filter(_ isIncluded: @escaping (Publishers.Filter<Upstream>.Output) -> Bool) -> Publishers.Filter<Upstream>
 ```
 
+Available when `Upstream` conforms to `Publisher`.
+
 ## See Also
 
-- [func tryFilter((Publishers.Filter<Upstream>.Output) throws -> Bool) -> Publishers.TryFilter<Upstream>](publishers/filter/tryfilter(_:).md)
+### Filtering elements
+- [func tryFilter((Publishers.Filter<Upstream>.Output) throws -> Bool) -> Publishers.TryFilter<Upstream>](./tryfilter%28_%29.md)
 
 
 ---

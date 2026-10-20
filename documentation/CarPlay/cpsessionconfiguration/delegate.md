@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that serves as the delegate to the session configuration.
 
@@ -14,6 +15,10 @@ An object that serves as the delegate to the session configuration.
 
 ```swift
 weak var delegate: (any CPSessionConfigurationDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak) id<CPSessionConfigurationDelegate> delegate;
 ```
 
 

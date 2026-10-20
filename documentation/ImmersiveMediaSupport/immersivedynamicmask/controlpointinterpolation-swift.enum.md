@@ -1,7 +1,8 @@
 # ImmersiveDynamicMask.ControlPointInterpolation
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents the interpolation method used while processing the control points.
 
@@ -21,18 +22,18 @@ enum ControlPointInterpolation
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveDynamicMask.ControlPointInterpolation.cubicHermite](immersivedynamicmask/controlpointinterpolation-swift.enum/cubichermite.md)
-- [ImmersiveDynamicMask.ControlPointInterpolation.linear](immersivedynamicmask/controlpointinterpolation-swift.enum/linear.md)
+- [ImmersiveDynamicMask.ControlPointInterpolation.cubicHermite](./controlpointinterpolation-swift.enum/cubichermite.md)
+- [ImmersiveDynamicMask.ControlPointInterpolation.linear](./controlpointinterpolation-swift.enum/linear.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

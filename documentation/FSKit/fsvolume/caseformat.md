@@ -1,7 +1,8 @@
 # FSVolume.CaseFormat
 
 **Framework**: FSKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of case-sensitivity support types.
 
@@ -14,6 +15,10 @@ An enumeration of case-sensitivity support types.
 enum CaseFormat
 ```
 
+```c
+enum FSVolumeCaseFormat : NSInteger;
+```
+
 #### Overview
 
 A case-sensitive volume is a volume that treats upper and lower case characters in file and directory names as being distinct from each other. For example, `FILE.TXT` and `file.TXT` are different names in a case-sensitive volume, and the same name in a case-insensitive volume.
@@ -21,28 +26,29 @@ A case-sensitive volume is a volume that treats upper and lower case characters 
 ## Topics
 
 ### Declaring case formats
-- [FSVolume.CaseFormat.sensitive](fsvolume/caseformat/sensitive.md)
+- [FSVolume.CaseFormat.sensitive](./caseformat/sensitive.md)
   The volume is case sensitive.
-- [FSVolume.CaseFormat.insensitive](fsvolume/caseformat/insensitive.md)
+- [FSVolume.CaseFormat.insensitive](./caseformat/insensitive.md)
   The volume isn’t case sensitive.
-- [FSVolume.CaseFormat.insensitiveCasePreserving](fsvolume/caseformat/insensitivecasepreserving.md)
+- [FSVolume.CaseFormat.insensitiveCasePreserving](./caseformat/insensitivecasepreserving.md)
   The volume isn’t case sensitive, but supports preserving the case of file and directory names.
 ### Initializers
-- [init?(rawValue: Int)](fsvolume/caseformat/init(rawvalue:).md)
+- [init?(rawValue: Int)](./caseformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var caseFormat: FSVolume.CaseFormat](fsvolume/supportedcapabilities/caseformat.md)
+### Working with case sensitivity
+- [var caseFormat: FSVolume.CaseFormat](./supportedcapabilities/caseformat.md)
   A value that indicates the volume’s support for case sensitivity.
 
 

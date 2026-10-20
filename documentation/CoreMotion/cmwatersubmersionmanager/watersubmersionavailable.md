@@ -1,7 +1,8 @@
 # waterSubmersionAvailable
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value indicating whether the current device supports the submersion manager.
 
@@ -18,17 +19,22 @@ A Boolean value indicating whether the current device supports the submersion ma
 class var waterSubmersionAvailable: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) BOOL waterSubmersionAvailable;
+```
+
 ## Mentions
 
-- [Accessing submersion data](accessing-submersion-data.md)
+- [Accessing submersion data](../accessing-submersion-data.md)
 
 #### Discussion
 
-On Apple Watch Ultra, the system sets `waterSubmersionAvailable` to [`true`](https://developer.apple.com/documentation/swift/true). On all other devices and in Simulator, the system sets it to [`false`](https://developer.apple.com/documentation/swift/false).
+On Apple Watch Ultra, the system sets `waterSubmersionAvailable` to [`true`](../../Swift/true.md). On all other devices and in Simulator, the system sets it to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class var authorizationStatus: CMAuthorizationStatus](cmwatersubmersionmanager/authorizationstatus.md)
+### Checking availability and authorization
+- [class var authorizationStatus: CMAuthorizationStatus](./authorizationstatus.md)
   A value indicating whether the app has user authorization to receive submersion data.
 
 

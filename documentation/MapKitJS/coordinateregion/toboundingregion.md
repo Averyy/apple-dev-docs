@@ -1,7 +1,8 @@
 # toBoundingRegion()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the bounding region that corresponds to the specified coordinate region.
 
@@ -10,13 +11,13 @@ Returns the bounding region that corresponds to the specified coordinate region.
 
 ## Declaration
 
-```swift
+```
 toBoundingRegion(): BoundingRegion;
 ```
 
 #### Return Value
 
-A [`BoundingRegion`](boundingregion.md).
+A [`BoundingRegion`](../boundingregion.md).
 
 #### Discussion
 
@@ -38,11 +39,12 @@ const myBoundingRegion = myRegion.toBoundingRegion();
 
 ## See Also
 
-- [copy()](coordinateregion/copy.md)
+### Comparing, copying, and converting regions
+- [copy()](./copy.md)
   Returns a copy of the calling coordinate region.
-- [equals(anotherRegion)](coordinateregion/equals.md)
+- [equals(anotherRegion)](./equals.md)
   Returns a Boolean value indicating whether two regions are equal.
-- [toMapRect()](coordinateregion/tomaprect.md)
+- [toMapRect()](./tomaprect.md)
   Returns the map rectangle that corresponds to the calling coordinate region.
 
 

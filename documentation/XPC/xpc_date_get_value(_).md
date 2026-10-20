@@ -1,7 +1,8 @@
 # xpc_date_get_value(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the underlying date interval from an object.
 
@@ -10,7 +11,7 @@ Returns the underlying date interval from an object.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the underlying date interval from an object.
 
 ```swift
 func xpc_date_get_value(_ xdate: xpc_object_t) -> Int64
+```
+
+```c
+extern int64_t xpc_date_get_value(xpc_object_t xdate);
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ The underlying date interval.
 
 ## See Also
 
-- [func xpc_date_create(Int64) -> xpc_object_t](xpc_date_create(_:).md)
+### Date objects
+- [func xpc_date_create(Int64) -> xpc_object_t](./xpc_date_create%28_%29.md)
   Creates an XPC date object.
-- [func xpc_date_create_from_current() -> xpc_object_t](xpc_date_create_from_current().md)
+- [func xpc_date_create_from_current() -> xpc_object_t](./xpc_date_create_from_current%28%29.md)
   Creates an XPC date object that represents the current date.
 
 

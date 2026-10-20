@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options for this instance.
 
@@ -17,6 +18,10 @@ The options for this instance.
 
 ```swift
 var options: MTLAccelerationStructureInstanceOptions
+```
+
+```c
+MTLAccelerationStructureInstanceOptions options;
 ```
 
 

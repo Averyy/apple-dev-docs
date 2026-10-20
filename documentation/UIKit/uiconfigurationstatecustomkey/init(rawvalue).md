@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom state key with the specified raw value.
 
@@ -20,7 +21,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](uiconfigurationstatecustomkey/init(_:).md)
+### Creating a custom state key
+- [init(String)](./init%28_%29.md)
   Creates a custom state key.
 
 

@@ -1,7 +1,8 @@
 # Published.Publisher
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher for properties marked with the `@Published` attribute.
 
@@ -23,11 +24,12 @@ struct Publisher
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [var projectedValue: Published<Value>.Publisher](published/projectedvalue.md)
+### Publishing the value
+- [var projectedValue: Published<Value>.Publisher](./projectedvalue.md)
   The property for which this instance exposes a publisher.
 
 

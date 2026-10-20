@@ -1,7 +1,8 @@
 # init(server:panelType:)
 
 **Framework**: InputMethodKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the initialized `IMKCandidates` object.
 
@@ -12,6 +13,10 @@ Returns the initialized `IMKCandidates` object.
 
 ```swift
 init!(server: IMKServer!, panelType: IMKCandidatePanelType)
+```
+
+```objc
+- (id) initWithServer:(IMKServer *) server panelType:(IMKCandidatePanelType) panelType;
 ```
 
 #### Return Value

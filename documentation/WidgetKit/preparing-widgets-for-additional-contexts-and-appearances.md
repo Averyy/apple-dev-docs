@@ -1,6 +1,7 @@
 # Preparing widgets for additional platforms, contexts, and appearances
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Create widgets that support additional platforms and adapt to their context.
 
@@ -10,27 +11,27 @@ Widgets change their appearance to best fit their context. For example, widgets 
 
 WidgetKit uses three different rendering modes:
 
-- **[`accented`](widgetrenderingmode/accented.md)**: Divides the widget’s view hierarchy into an accent group and a primary group, and then applies a solid color to each group. Use the [`widgetAccentable(_:)`](https://developer.apple.com/documentation/swiftui/view/widgetaccentable(_:)) view modifier to group views into the accent group. To learn more about using the `accented` rendering mode and making your widget fit the system’s look across Apple platforms, refer to [`Optimizing your widget for accented rendering mode and Liquid Glass`](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md).
-- **[`vibrant`](widgetrenderingmode/vibrant.md)**: Desaturates text, images, and gauges into monochrome and creates a vibrant effect by coloring your content appropriately for the Lock Screen background or a macOS desktop. Note that people can also color the Lock Screen to a colored tint and WidgetKit uses a red tint for widgets that appear on iPhone in StandBy in low-light conditions.
-- **[`fullColor`](widgetrenderingmode/fullcolor.md)**: Doesn’t change the color of your complication’s views in this rendering mode. Use gradients and full-color images, text, and gauges.
+- **[`accented`](./widgetrenderingmode/accented.md)**: Divides the widget’s view hierarchy into an accent group and a primary group, and then applies a solid color to each group. Use the [`widgetAccentable(_:)`](../SwiftUI/view/widgetaccentable%28_%29.md) view modifier to group views into the accent group. To learn more about using the `accented` rendering mode and making your widget fit the system’s look across Apple platforms, refer to [Optimizing your widget for accented rendering mode and Liquid Glass](./optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md).
+- **[`vibrant`](./widgetrenderingmode/vibrant.md)**: Desaturates text, images, and gauges into monochrome and creates a vibrant effect by coloring your content appropriately for the Lock Screen background or a macOS desktop. Note that people can also color the Lock Screen to a colored tint and WidgetKit uses a red tint for widgets that appear on iPhone in StandBy in low-light conditions.
+- **[`fullColor`](./widgetrenderingmode/fullcolor.md)**: Doesn’t change the color of your complication’s views in this rendering mode. Use gradients and full-color images, text, and gauges.
 
 The following table shows the rendering modes for each widget you need to support:
 
-| Widget size | [`fullColor`](widgetrenderingmode/fullcolor.md) | [`accented`](widgetrenderingmode/accented.md) | [`vibrant`](widgetrenderingmode/vibrant.md) |
+| Widget size | [`fullColor`](./widgetrenderingmode/fullcolor.md) | [`accented`](./widgetrenderingmode/accented.md) | [`vibrant`](./widgetrenderingmode/vibrant.md) |
 | --- | --- | --- | --- |
-| [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) | Yes | Yes | Yes |
-| [`WidgetFamily.systemMedium`](widgetfamily/systemmedium.md) | Yes | Yes | Yes |
-| [`WidgetFamily.systemLarge`](widgetfamily/systemlarge.md) | Yes | Yes | Yes |
-| [`WidgetFamily.systemExtraLarge`](widgetfamily/systemextralarge.md) | Yes | Yes | Yes |
-| [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) | Yes | Yes | Yes |
-| [`WidgetFamily.accessoryCircular`](widgetfamily/accessorycircular.md) | No | Yes | Yes |
-| [`WidgetFamily.accessoryCorner`](widgetfamily/accessorycorner.md) | No | Yes | Yes |
-| [`WidgetFamily.accessoryRectangular`](widgetfamily/accessoryrectangular.md) | Yes | Yes | Yes |
-| [`WidgetFamily.accessoryInline`](widgetfamily/accessoryinline.md) | No | Yes | Yes |
+| [`WidgetFamily.systemSmall`](./widgetfamily/systemsmall.md) | Yes | Yes | Yes |
+| [`WidgetFamily.systemMedium`](./widgetfamily/systemmedium.md) | Yes | Yes | Yes |
+| [`WidgetFamily.systemLarge`](./widgetfamily/systemlarge.md) | Yes | Yes | Yes |
+| [`WidgetFamily.systemExtraLarge`](./widgetfamily/systemextralarge.md) | Yes | Yes | Yes |
+| [`WidgetFamily.systemExtraLargePortrait`](./widgetfamily/systemextralargeportrait.md) | Yes | Yes | Yes |
+| [`WidgetFamily.accessoryCircular`](./widgetfamily/accessorycircular.md) | No | Yes | Yes |
+| [`WidgetFamily.accessoryCorner`](./widgetfamily/accessorycorner.md) | No | Yes | Yes |
+| [`WidgetFamily.accessoryRectangular`](./widgetfamily/accessoryrectangular.md) | Yes | Yes | Yes |
+| [`WidgetFamily.accessoryInline`](./widgetfamily/accessoryinline.md) | No | Yes | Yes |
 
-> **Note**: For design guidance, see [`Human Interface Guidelines > Complications`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/complications) and [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/widgets).
+> **Note**: For design guidance, see [Human Interface Guidelines > Complications](https://developer.apple.com/design/human-interface-guidelines/complications) and [Human Interface Guidelines > Widgets](https://developer.apple.com/design/human-interface-guidelines/widgets).
 
-In your code, read the [`widgetRenderingMode`](https://developer.apple.com/documentation/swiftui/environmentvalues/widgetrenderingmode) environment variable to create SwiftUI views for each applicable rendering mode, as shown in the following example:
+In your code, read the [`widgetRenderingMode`](../SwiftUI/environmentvalues/widgetrenderingmode.md) environment variable to create SwiftUI views for each applicable rendering mode, as shown in the following example:
 
 ```swift
 // ...
@@ -55,41 +56,42 @@ var body: some View {
 }
 ```
 
-##### Make Your Background Views Removable
+##### Make your background views removable
 
-In many contexts, the system removes your widget’s background views to match the system appearance. To control which components of your widget the system removes, group them into background containers and mark them as removable. For more information, refer to [`Displaying the right widget background`](displaying-the-right-widget-background.md).
+In many contexts, the system removes your widget’s background views to match the system appearance. To control which components of your widget the system removes, group them into background containers and mark them as removable. For more information, refer to [Displaying the right widget background](./displaying-the-right-widget-background.md).
 
-##### Support Always on
+##### Support Always On
 
-If you create accessory widgets and WidgetKit complications, make sure to use SwiftUI’s [`isLuminanceReduced`](https://developer.apple.com/documentation/swiftui/environmentvalues/isluminancereduced) environment variable to detect Always On and color your views to look great with reduced luminance. For design guidance, see [`Human Interface Guidelines > Always On`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/always-on) and [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/widgets).
+If you create accessory widgets and WidgetKit complications, make sure to use SwiftUI’s [`isLuminanceReduced`](../SwiftUI/environmentvalues/isluminancereduced.md) environment variable to detect Always On and color your views to look great with reduced luminance. For design guidance, see [Human Interface Guidelines > Always On](https://developer.apple.com/design/human-interface-guidelines/always-on) and [Human Interface Guidelines > Widgets](https://developer.apple.com/design/human-interface-guidelines/widgets).
 
-##### Update Your Small Widget to Support Standby and Carplay
+##### Update your small widget to support StandBy and CarPlay
 
-On iPhone in StandBy, the Lock Screen shows two widgets side by side on a dark background. In CarPlay, widgets appear on a dedicated Widgets screen. For both appearances, WidgetKit uses your [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) widget and scales it to fit available space. For more information about supporting StandBy and CarPlay, refer to [`Adding StandBy and CarPlay support to your widget`](adding-standby-and-carplay-support-to-your-widget.md).
+On iPhone in StandBy, the Lock Screen shows two widgets side by side on a dark background. In CarPlay, widgets appear on a dedicated Widgets screen. For both appearances, WidgetKit uses your [`WidgetFamily.systemSmall`](./widgetfamily/systemsmall.md) widget and scales it to fit available space. For more information about supporting StandBy and CarPlay, refer to [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md).
 
-##### Indicate That a Widget Might Not Fit a Specific Context
+##### Indicate that a widget might not fit a specific context
 
-By default, the system suggests widgets in many contexts, and people can choose widgets in the widget gallery to personalize their system experience. However, a widget might not be a good fit for a specific context. For example, a widget that relies on high-resolution photos and background colors for its functionality may not work well on the Lock Screen, where the system applies a vibrant treatment to the widget. To indicate that a widget doesn’t work well in a specific context, use [`disfavoredLocations(_:for:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/disfavoredlocations(_:for:)) and provide the applicable [`WidgetLocation`](widgetlocation.md). As a result, the widget appears in the widget gallery’s “Other” section for the disfavored location.
+By default, the system suggests widgets in many contexts, and people can choose widgets in the widget gallery to personalize their system experience. However, a widget might not be a good fit for a specific context. For example, a widget that relies on high-resolution photos and background colors for its functionality may not work well on the Lock Screen, where the system applies a vibrant treatment to the widget. To indicate that a widget doesn’t work well in a specific context, use [`disfavoredLocations(_:for:)`](../SwiftUI/widgetconfiguration/disfavoredlocations%28_,for%29.md) and provide the applicable [`WidgetLocation`](./widgetlocation.md). As a result, the widget appears in the widget gallery’s “Other” section for the disfavored location.
 
-##### Verify Font Sizes in Macos
+##### Verify font sizes in macOS
 
 When people place an iPhone widget on a Mac desktop, the system renders it using iOS font metrics. However, a native Mac app’s widgets use macOS font sizing. If you’re sharing code across your iOS and macOS targets in your Xcode project, make sure to verify font sizing in macOS and adjust it for macOS as needed.
 
 ## See Also
 
-- [Creating a widget extension](creating-a-widget-extension.md)
+### Widget creation
+- [Creating a widget extension](./creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
+- [Developing a WidgetKit strategy](./developing-a-widgetkit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [protocol Widget](../swiftui/widget.md)
+- [protocol Widget](../SwiftUI/widget.md)
   The configuration and content of a widget to display on the Home screen or in Notification Center.
-- [enum WidgetFamily](widgetfamily.md)
+- [enum WidgetFamily](./widgetfamily.md)
   Values that define the widget’s size and shape.
-- [struct StaticConfiguration](staticconfiguration.md)
+- [struct StaticConfiguration](./staticconfiguration.md)
   An object describing the content of a widget that has no user-configurable options.
-- [var widgetFamily: WidgetFamily](../swiftui/environmentvalues/widgetfamily.md)
+- [var widgetFamily: WidgetFamily](../SwiftUI/environmentvalues/widgetfamily.md)
   The template of the widget — small, medium, or large.
 
 

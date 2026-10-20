@@ -1,7 +1,8 @@
 # Mach.PortRightError.deadName
 
 **Framework**: System  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returned when an operation cannot be completed, because the Mach port right has become a dead name. This is caused by deallocation of the receive right on the other end.
 

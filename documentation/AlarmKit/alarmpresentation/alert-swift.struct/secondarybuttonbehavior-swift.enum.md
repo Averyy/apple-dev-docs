@@ -1,7 +1,8 @@
 # AlarmPresentation.Alert.SecondaryButtonBehavior
 
 **Framework**: AlarmKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the behaviour of the second button.
 
@@ -23,26 +24,27 @@ You define your secondary action using `SecondaryButtonBehavior` parameter when 
 ## Topics
 
 ### Enumeration Cases
-- [AlarmPresentation.Alert.SecondaryButtonBehavior.countdown](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/countdown.md)
+- [AlarmPresentation.Alert.SecondaryButtonBehavior.countdown](./secondarybuttonbehavior-swift.enum/countdown.md)
   A case that indicates the secondary button is a countdown.
-- [AlarmPresentation.Alert.SecondaryButtonBehavior.custom](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/custom.md)
+- [AlarmPresentation.Alert.SecondaryButtonBehavior.custom](./secondarybuttonbehavior-swift.enum/custom.md)
   A case that indicates the secondary button has a custom behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var secondaryButton: AlarmButton?](alarmpresentation/alert-swift.struct/secondarybutton.md)
+### Creating a second button
+- [var secondaryButton: AlarmButton?](./secondarybutton.md)
   The appearance of the secondary button.
-- [var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.md)
+- [var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?](./secondarybuttonbehavior-swift.property.md)
   The defined behavior of the second button.
 
 

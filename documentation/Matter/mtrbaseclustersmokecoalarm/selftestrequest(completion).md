@@ -1,7 +1,8 @@
 # selfTestRequest(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func selfTestRequest(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func selfTestRequest() async throws
+```
+
+```objc
+- (void) selfTestRequestWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

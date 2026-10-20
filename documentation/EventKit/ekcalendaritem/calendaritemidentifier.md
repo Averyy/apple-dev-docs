@@ -1,7 +1,8 @@
 # calendarItemIdentifier
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar item’s unique identifier.
 
@@ -19,20 +20,26 @@ The calendar item’s unique identifier.
 var calendarItemIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * calendarItemIdentifier;
+```
+
 #### Discussion
 
-This property is set when the calendar item is created and can be used as a local identifier. Use [`calendarItem(withIdentifier:)`](ekeventstore/calendaritem(withidentifier:).md) to look up the item by this value.
+This property is set when the calendar item is created and can be used as a local identifier. Use [`calendarItem(withIdentifier:)`](../ekeventstore/calendaritem%28withidentifier%29.md) to look up the item by this value.
 
 A full sync with the calendar will lose this identifier. You should have a plan for dealing with a calendar whose identifier is no longer fetch-able by caching its other properties.
 
 ## See Also
 
-- [var calendarIdentifier: String](ekcalendar/calendaridentifier.md)
+### Related Documentation
+- [var calendarIdentifier: String](../ekcalendar/calendaridentifier.md)
   A unique identifier for the calendar.
-- [Calendar and Reminders Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
-- [var calendarItemExternalIdentifier: String!](ekcalendaritem/calendaritemexternalidentifier.md)
+- [Calendar and Reminders Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
+### Accessing Calendar Items
+- [var calendarItemExternalIdentifier: String!](./calendaritemexternalidentifier.md)
   The calendar item’s external identifier as provided by the calendar server.
-- [var uuid: String](ekcalendaritem/uuid.md)
+- [var uuid: String](./uuid.md)
   The calendar item’s unique identifier.
 
 

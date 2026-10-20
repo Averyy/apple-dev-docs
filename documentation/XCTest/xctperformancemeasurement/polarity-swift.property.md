@@ -1,7 +1,8 @@
 # polarity
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance.
 
@@ -11,15 +12,20 @@ A constant that states whether larger or smaller measurements, relative to a set
 var polarity: XCTPerformanceMeasurement.Polarity { get }
 ```
 
+```objc
+@property (readonly) XCTPerformanceMeasurementPolarity polarity;
+```
+
 ## See Also
 
-- [var doubleValue: Double](xctperformancemeasurement/doublevalue.md)
+### Accessing Measured Values
+- [var doubleValue: Double](./doublevalue.md)
   The measured value.
-- [var unitSymbol: String](xctperformancemeasurement/unitsymbol.md)
+- [var unitSymbol: String](./unitsymbol.md)
   A string that represents the unit of measurement.
-- [var value: Measurement<Unit>](xctperformancemeasurement/value.md)
+- [var value: Measurement<Unit>](./value.md)
   The measured value, including the unit of measure.
-- [XCTPerformanceMeasurement.Polarity](xctperformancemeasurement/polarity-swift.enum.md)
+- [XCTPerformanceMeasurement.Polarity](./polarity-swift.enum.md)
   Constants that state whether larger or smaller measurements, relative to a set baseline, indicate better performance.
 
 

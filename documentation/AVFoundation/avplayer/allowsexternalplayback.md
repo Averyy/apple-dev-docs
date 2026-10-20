@@ -1,7 +1,8 @@
 # allowsExternalPlayback
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player allows switching to external playback mode.
 
@@ -19,17 +20,22 @@ nonisolated
 var allowsExternalPlayback: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsExternalPlayback;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isExternalPlaybackActive: Bool](avplayer/isexternalplaybackactive.md)
+### Managing external playback
+- [var isExternalPlaybackActive: Bool](./isexternalplaybackactive.md)
   A Boolean value that indicates whether the player is currently playing video in external playback mode.
-- [var usesExternalPlaybackWhileExternalScreenIsActive: Bool](avplayer/usesexternalplaybackwhileexternalscreenisactive.md)
+- [var usesExternalPlaybackWhileExternalScreenIsActive: Bool](./usesexternalplaybackwhileexternalscreenisactive.md)
   A Boolean value that indicates whether the player should automatically switch to external playback mode while the external screen mode is active.
-- [var externalPlaybackVideoGravity: AVLayerVideoGravity](avplayer/externalplaybackvideogravity.md)
+- [var externalPlaybackVideoGravity: AVLayerVideoGravity](./externalplaybackvideogravity.md)
   The video gravity of the player for external playback mode only.
 
 

@@ -1,7 +1,8 @@
 # shapeConstraint
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constraint on the shape of the multiarray.
 
@@ -20,13 +21,18 @@ The constraint on the shape of the multiarray.
 var shapeConstraint: MLMultiArrayShapeConstraint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLMultiArrayShapeConstraint * shapeConstraint;
+```
+
 ## See Also
 
-- [var shape: [NSNumber]](mlmultiarrayconstraint/shape.md)
+### Accessing the Constraints
+- [var shape: [NSNumber]](./shape.md)
   The shape of the multi array.
-- [var dataType: MLMultiArrayDataType](mlmultiarrayconstraint/datatype.md)
+- [var dataType: MLMultiArrayDataType](./datatype.md)
   The type for the multi array.
-- [class MLMultiArrayShapeConstraint](mlmultiarrayshapeconstraint.md)
+- [class MLMultiArrayShapeConstraint](../mlmultiarrayshapeconstraint.md)
   The lists of shapes or ranges of shapes that constrain a multiarray feature.
 
 

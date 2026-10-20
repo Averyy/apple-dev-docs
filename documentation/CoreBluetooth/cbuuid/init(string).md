@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID string.
 
@@ -20,15 +21,19 @@ Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID string.
 init(string theString: String)
 ```
 
+```objc
++ (CBUUID *) UUIDWithString:(NSString *) theString;
+```
+
 #### Return Value
 
-A new [`CBUUID`](cbuuid.md) object for the specified UUID string.
+A new [`CBUUID`](../cbuuid.md) object for the specified UUID string.
 
 #### Discussion
 
-Specify 128-bit UUIDs as a string of hexadecimal digits punctuated by hyphens, for example, 68753A44-4D6F-1226-9C60-0050E4C00067. Specify 16- or 32-bit UUIDs as a string of 4 or 8 hexadecimal digits, respectively. For an example of how to use this method, see [`Services and Characteristics Are Identified by UUIDs`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/PerformingCommonPeripheralRoleTasks/PerformingCommonPeripheralRoleTasks.html#//apple_ref/doc/uid/TP40013257-CH4-SW8) and [`Create Your Own UUIDs for Custom Services and Characteristics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/PerformingCommonPeripheralRoleTasks/PerformingCommonPeripheralRoleTasks.html#//apple_ref/doc/uid/TP40013257-CH4-SW9).
+Specify 128-bit UUIDs as a string of hexadecimal digits punctuated by hyphens, for example, 68753A44-4D6F-1226-9C60-0050E4C00067. Specify 16- or 32-bit UUIDs as a string of 4 or 8 hexadecimal digits, respectively. For an example of how to use this method, see [Services and Characteristics Are Identified by UUIDs](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/PerformingCommonPeripheralRoleTasks/PerformingCommonPeripheralRoleTasks.html#//apple_ref/doc/uid/TP40013257-CH4-SW8) and [Create Your Own UUIDs for Custom Services and Characteristics](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/PerformingCommonPeripheralRoleTasks/PerformingCommonPeripheralRoleTasks.html#//apple_ref/doc/uid/TP40013257-CH4-SW9).
 
-For more information, see [`Core Bluetooth Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
+For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 
 ## Parameters
 
@@ -36,11 +41,12 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 
 ## See Also
 
-- [init(data: Data)](cbuuid/init(data:).md)
+### Creating New CBUUID Objects
+- [init(data: Data)](./init%28data%29.md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID data container.
-- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:)-3h0ry.md)
+- [init(cfuuid: CFUUID)](./init%28cfuuid%29-3h0ry.md)
   Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
-- [init(nsuuid: UUID)](cbuuid/init(nsuuid:)-2amob.md)
+- [init(nsuuid: UUID)](./init%28nsuuid%29-2amob.md)
   Creates a Core Bluetooth UUID object from a Foundation UUID object.
 
 

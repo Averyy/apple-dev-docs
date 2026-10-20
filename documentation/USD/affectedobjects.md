@@ -1,6 +1,7 @@
 # affectedObjects
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 A list of prims that respond to the notification.
 
@@ -16,15 +17,16 @@ rel affectedObjects
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [audio](audio.md)
+- [audio](./audio.md)
   The location of an audio file.
-- [type](type.md)
+- [type](./type.md)
   An option that controls the order in which the actions execute.
-- [gain](gain.md)
+- [gain](./gain.md)
   A value that controls the audio volume.
-- [auralMode](auralmode.md)
+- [auralMode](./auralmode.md)
   An option that controls the audio signal’s spacial dynamics.
 
 

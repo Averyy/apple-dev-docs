@@ -1,7 +1,8 @@
 # image
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image returned by the snapshot request.
 
@@ -14,8 +15,28 @@ The image returned by the snapshot request.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var image: UIImage { get }
+```
+
+*macOS*
+
 ```swift
 var image: NSImage { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) UIImage * image;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSImage * image;
 ```
 
 

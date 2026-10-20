@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subscription option’s icon.
 
@@ -21,16 +22,17 @@ var icon: SubscriptionStoreControlStyleConfiguration.Icon? { get }
 
 #### Discussion
 
-Use this property to access the icon you configure for a subscription option using the [`subscriptionStoreControlIcon(icon:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolicon(icon:)) view modifier.
+Use this property to access the icon you configure for a subscription option using the [`subscriptionStoreControlIcon(icon:)`](../../../SwiftUI/view/subscriptionstorecontrolicon%28icon%29.md) view modifier.
 
 ## See Also
 
-- [var subscription: Product](subscriptionstorecontrolstyleconfiguration/pickeroption/subscription.md)
+### Getting properties of the subscription picker option
+- [var subscription: Product](./subscription.md)
   The auto-renewable subscription that the picker option represents.
-- [var activeOffer: Product.SubscriptionOffer?](subscriptionstorecontrolstyleconfiguration/pickeroption/activeoffer.md)
-- [let isSelected: Bool](subscriptionstorecontrolstyleconfiguration/pickeroption/isselected.md)
+- [var activeOffer: Product.SubscriptionOffer?](./activeoffer.md)
+- [let isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the picker option is in a selected state.
-- [var id: Product.ID](subscriptionstorecontrolstyleconfiguration/pickeroption/id.md)
+- [var id: Product.ID](./id.md)
 
 
 ---

@@ -6,43 +6,14 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ce
 
 # mlx.core.ceil
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.ceil.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.ceil
-
- Table of contents 
-
-## Contents
-
-# mlx.core.ceil
-
-**ceil(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**ceil(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Element-wise ceil.
 
 Parameters:
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
 Returns:
 The ceil of `a`.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

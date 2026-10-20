@@ -1,7 +1,8 @@
 # markedTextRects
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that requests the rectangular bounds of marked text regions.
 
@@ -17,9 +18,14 @@ An option that requests the rectangular bounds of marked text regions.
 static var markedTextRects: BETextDocumentRequest.Options { get }
 ```
 
+```c
+BETextDocumentOptionMarkedTextRects
+```
+
 ## See Also
 
-- [static var textRects: BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct/textrects.md)
+### Getting geometric information
+- [static var textRects: BETextDocumentRequest.Options](./textrects.md)
   An option that requests the rectangular bounds of text within a document’s layout.
 
 

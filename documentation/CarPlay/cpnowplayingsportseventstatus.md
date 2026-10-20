@@ -1,7 +1,8 @@
 # CPNowPlayingSportsEventStatus
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of the status of a sporting event.
 
@@ -17,34 +18,38 @@ A representation of the status of a sporting event.
 class CPNowPlayingSportsEventStatus
 ```
 
+```objc
+@interface CPNowPlayingSportsEventStatus : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cpnowplayingsportseventstatus/init(coder:).md)
-- [init(eventStatusText: [String]?, eventStatusImage: UIImage?, eventClock: CPNowPlayingSportsClock?)](cpnowplayingsportseventstatus/init(eventstatustext:eventstatusimage:eventclock:).md)
+- [init?(coder: NSCoder)](./cpnowplayingsportseventstatus/init%28coder%29.md)
+- [init(eventStatusText: [String]?, eventStatusImage: UIImage?, eventClock: CPNowPlayingSportsClock?)](./cpnowplayingsportseventstatus/init%28eventstatustext,eventstatusimage,eventclock%29.md)
   Initialize an event status with optional event status text, an optional event status image, and an optional event clock.
 ### Instance Properties
-- [var eventClock: CPNowPlayingSportsClock?](cpnowplayingsportseventstatus/eventclock.md)
+- [var eventClock: CPNowPlayingSportsClock?](./cpnowplayingsportseventstatus/eventclock.md)
   The event timer, if it applies to this event. See @c CPNowPlayingSportsClock.
-- [var eventStatusImage: UIImage?](cpnowplayingsportseventstatus/eventstatusimage.md)
+- [var eventStatusImage: UIImage?](./cpnowplayingsportseventstatus/eventstatusimage.md)
   An optional event status image for this event, if it applies to this event. For example, a baseball game could display a representation of the bases and outs, indicating how many bases are loaded and the number of outs in the current inning.
-- [var eventStatusText: [String]?](cpnowplayingsportseventstatus/eventstatustext.md)
+- [var eventStatusText: [String]?](./cpnowplayingsportseventstatus/eventstatustext.md)
   Up to three separate strings for event status may be displayed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

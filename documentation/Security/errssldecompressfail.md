@@ -1,7 +1,8 @@
 # errSSLDecompressFail
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Decompression failed.
 
@@ -18,6 +19,10 @@ Decompression failed.
 
 ```swift
 var errSSLDecompressFail: OSStatus { get }
+```
+
+```c
+errSSLDecompressFail
 ```
 
 

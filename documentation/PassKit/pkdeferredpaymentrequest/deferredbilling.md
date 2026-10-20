@@ -1,7 +1,8 @@
 # deferredBilling
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains details about the deferred payment.
 
@@ -18,13 +19,18 @@ An object that contains details about the deferred payment.
 var deferredBilling: PKDeferredPaymentSummaryItem { get set }
 ```
 
+```objc
+@property (nonatomic, strong) PKDeferredPaymentSummaryItem * deferredBilling;
+```
+
 #### Discussion
 
 For example “Pay $2.99 on October 9, 2023.”
 
 ## See Also
 
-- [class PKDeferredPaymentSummaryItem](pkdeferredpaymentsummaryitem.md)
+### Setting payment summary items
+- [class PKDeferredPaymentSummaryItem](../pkdeferredpaymentsummaryitem.md)
   An object that defines a summary item for a payment that occurs at a later date, such as a pre-order.
 
 

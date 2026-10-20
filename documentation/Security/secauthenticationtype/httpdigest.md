@@ -1,7 +1,8 @@
 # SecAuthenticationType.httpDigest
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies HTTP Digest Access authentication.
 
@@ -13,6 +14,10 @@ Specifies HTTP Digest Access authentication.
 
 ```swift
 case httpDigest
+```
+
+```c
+kSecAuthenticationTypeHTTPDigest
 ```
 
 

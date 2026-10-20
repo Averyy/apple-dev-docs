@@ -1,7 +1,8 @@
 # CenterSurround
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 WAVE: “Back Center” or plain “Rear Surround”
 
@@ -10,20 +11,21 @@ WAVE: “Back Center” or plain “Rear Surround”
 
 ## Declaration
 
-```swift
+```c
 CenterSurround
 ```
 
 ## See Also
 
-- [CenterSurroundDirect](videodriverkit/iouservideochannellabel/centersurrounddirect.md)
+### Surround channels
+- [CenterSurroundDirect](./centersurrounddirect.md)
   back center, non diffuse
-- [LeftSurround](videodriverkit/iouservideochannellabel/leftsurround.md)
-- [LeftSurroundDirect](videodriverkit/iouservideochannellabel/leftsurrounddirect.md)
-- [RearSurroundLeft](videodriverkit/iouservideochannellabel/rearsurroundleft.md)
-- [RearSurroundRight](videodriverkit/iouservideochannellabel/rearsurroundright.md)
-- [RightSurround](videodriverkit/iouservideochannellabel/rightsurround.md)
-- [RightSurroundDirect](videodriverkit/iouservideochannellabel/rightsurrounddirect.md)
+- [LeftSurround](./leftsurround.md)
+- [LeftSurroundDirect](./leftsurrounddirect.md)
+- [RearSurroundLeft](./rearsurroundleft.md)
+- [RearSurroundRight](./rearsurroundright.md)
+- [RightSurround](./rightsurround.md)
+- [RightSurroundDirect](./rightsurrounddirect.md)
 
 
 ---

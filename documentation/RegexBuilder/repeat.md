@@ -1,7 +1,8 @@
 # Repeat
 
 **Framework**: RegexBuilder  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A regex component that matches a selectable number of occurrences of its underlying component.
 
@@ -11,7 +12,7 @@ A regex component that matches a selectable number of occurrences of its underly
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,113 +24,114 @@ struct Repeat<Output>
 ## Topics
 
 ### Initializers
-- [init<W, C1, C2, C3, C4, C5, C6>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-1bcjh.md)
+- [init<W, C1, C2, C3, C4, C5, C6>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-1bcjh.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-1qgnj.md)
+- [init<W, C1, C2, C3, C4, C5>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-1qgnj.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-24n0n.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-24n0n.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-2ev8z.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-2ev8z.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-3ghwd.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-3ghwd.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-3mo6.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-3mo6.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-545c4.md)
+- [init<W, C1, C2, C3>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-545c4.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-76l8q.md)
+- [init<W, C1, C2, C3>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-76l8q.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-7adwb.md)
+- [init<W, C1, C2>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-7adwb.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-7lskd.md)
+- [init<W, C1>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-7lskd.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-7qz0e.md)
+- [init<W, C1, C2, C3, C4>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-7qz0e.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-7sn7t.md)
+- [init<W, C1>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-7sn7t.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-80rd3.md)
+- [init<W, C1, C2>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-80rd3.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-83kcm.md)
+- [init<W, C1, C2, C3, C4, C5>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-83kcm.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-8574u.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-8574u.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-891vb.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-891vb.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-8cwmc.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-8cwmc.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-8zx0q.md)
+- [init<W, C1, C2, C3, C4>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-8zx0q.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-947au.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-947au.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-9h724.md)
+- [init(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-9h724.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](repeat/init(_:_:_:)-9tzos.md)
+- [init(some RangeExpression<Int>, RegexRepetitionBehavior?, () -> some RegexComponent)](./repeat/init%28_,_,_%29-9tzos.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](repeat/init(_:_:_:)-rxdn.md)
+- [init<W, C1, C2, C3, C4, C5, C6>(some RegexComponent, some RangeExpression<Int>, RegexRepetitionBehavior?)](./repeat/init%28_,_,_%29-rxdn.md)
   Creates a regex component that matches the given component repeated a number of times specified by the given range expression.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(some RegexComponent, count: Int)](repeat/init(_:count:)-1qk17.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-1qk17.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7>(some RegexComponent, count: Int)](repeat/init(_:count:)-21lm6.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-21lm6.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5>(some RegexComponent, count: Int)](repeat/init(_:count:)-2domp.md)
+- [init<W, C1, C2, C3, C4, C5>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-2domp.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6>(some RegexComponent, count: Int)](repeat/init(_:count:)-2q199.md)
+- [init<W, C1, C2, C3, C4, C5, C6>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-2q199.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(some RegexComponent, count: Int)](repeat/init(_:count:)-4dhzv.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-4dhzv.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2>(some RegexComponent, count: Int)](repeat/init(_:count:)-56csz.md)
+- [init<W, C1, C2>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-56csz.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1>(some RegexComponent, count: Int)](repeat/init(_:count:)-62ivb.md)
+- [init<W, C1>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-62ivb.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init(some RegexComponent, count: Int)](repeat/init(_:count:)-82evl.md)
+- [init(some RegexComponent, count: Int)](./repeat/init%28_,count%29-82evl.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4>(some RegexComponent, count: Int)](repeat/init(_:count:)-8cqm4.md)
+- [init<W, C1, C2, C3, C4>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-8cqm4.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3>(some RegexComponent, count: Int)](repeat/init(_:count:)-9b88v.md)
+- [init<W, C1, C2, C3>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-9b88v.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RegexComponent, count: Int)](repeat/init(_:count:)-9racn.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(some RegexComponent, count: Int)](./repeat/init%28_,count%29-9racn.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-1g72m.md)
+- [init<W, C1>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-1g72m.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-1lb2y.md)
+- [init<W, C1, C2, C3, C4, C5, C6>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-1lb2y.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-5tyx7.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-5tyx7.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-7kfzx.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-7kfzx.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-7ueje.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-7ueje.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-80zg2.md)
+- [init<W, C1, C2, C3>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-80zg2.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-8n0o0.md)
+- [init(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-8n0o0.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-8z2mq.md)
+- [init<W, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-8z2mq.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-96dkt.md)
+- [init<W, C1, C2>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-96dkt.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-9nywm.md)
+- [init<W, C1, C2, C3, C4>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-9nywm.md)
   Creates a regex component that matches the given component repeated the specified number of times.
-- [init<W, C1, C2, C3, C4, C5>(count: Int, () -> some RegexComponent)](repeat/init(count:_:)-9snpn.md)
+- [init<W, C1, C2, C3, C4, C5>(count: Int, () -> some RegexComponent)](./repeat/init%28count,_%29-9snpn.md)
   Creates a regex component that matches the given component repeated the specified number of times.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RegexComponent](../swift/regexcomponent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RegexComponent](../Swift/regexcomponent.md)
 
 ## See Also
 
-- [struct One](one.md)
+### Quantifiers
+- [struct One](./one.md)
   A regex component that matches exactly one occurrence of its underlying component.
-- [struct Optionally](optionally.md)
+- [struct Optionally](./optionally.md)
   A regex component that matches zero or one occurrences of its underlying component.
-- [struct ZeroOrMore](zeroormore.md)
+- [struct ZeroOrMore](./zeroormore.md)
   A regex component that matches zero or more occurrences of its underlying component.
-- [struct OneOrMore](oneormore.md)
+- [struct OneOrMore](./oneormore.md)
   A regex component that matches one or more occurrences of its underlying component.
-- [struct Local](local.md)
+- [struct Local](./local.md)
   A regex component that represents an atomic group.
 
 

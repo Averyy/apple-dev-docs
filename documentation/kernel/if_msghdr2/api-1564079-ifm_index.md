@@ -1,14 +1,15 @@
 # ifm_index
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 u_short ifm_index;
 ```
 

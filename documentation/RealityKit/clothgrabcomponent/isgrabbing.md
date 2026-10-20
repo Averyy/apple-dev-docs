@@ -1,7 +1,8 @@
 # isGrabbing
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether particles are currently being grabbed.
 

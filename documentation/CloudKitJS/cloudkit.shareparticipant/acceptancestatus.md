@@ -1,7 +1,8 @@
 # acceptanceStatus
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the status of accepting the shared record.
 
@@ -10,7 +11,7 @@ Indicates the status of accepting the shared record.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.ShareParticipantAcceptanceStatus acceptanceStatus;
 ```
 

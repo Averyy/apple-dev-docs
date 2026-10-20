@@ -1,7 +1,8 @@
 # maxFragmentCallStackDepth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum function call depth from the top-most fragment shader function.
 
@@ -19,17 +20,22 @@ The maximum function call depth from the top-most fragment shader function.
 var maxFragmentCallStackDepth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxFragmentCallStackDepth;
+```
+
 #### Discussion
 
 The default value is 1.
 
 ## See Also
 
-- [var vertexFunction: (any MTLFunction)?](mtlrenderpipelinedescriptor/vertexfunction.md)
+### Specifying graphics functions and associated data
+- [var vertexFunction: (any MTLFunction)?](./vertexfunction.md)
   The vertex function the pipeline calls to process vertices.
-- [var fragmentFunction: (any MTLFunction)?](mtlrenderpipelinedescriptor/fragmentfunction.md)
+- [var fragmentFunction: (any MTLFunction)?](./fragmentfunction.md)
   The fragment function the pipeline calls to process fragments.
-- [var maxVertexCallStackDepth: Int](mtlrenderpipelinedescriptor/maxvertexcallstackdepth.md)
+- [var maxVertexCallStackDepth: Int](./maxvertexcallstackdepth.md)
   The maximum function call depth from the top-most vertex shader function.
 
 

@@ -1,7 +1,8 @@
 # init(fileHandleForReading:fileHandleForWriting:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a serial port attachment object from the specified file handles.
 
@@ -12,6 +13,10 @@ Creates a serial port attachment object from the specified file handles.
 
 ```swift
 init(fileHandleForReading: FileHandle?, fileHandleForWriting: FileHandle?)
+```
+
+```objc
+- (instancetype) initWithFileHandleForReading:(NSFileHandle *) fileHandleForReading fileHandleForWriting:(NSFileHandle *) fileHandleForWriting;
 ```
 
 #### Return Value

@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an endpoint object that lets the host app communicate with the File Provider extension.
@@ -19,11 +20,16 @@ Returns an endpoint object that lets the host app communicate with the File Prov
 func makeListenerEndpoint() throws -> NSXPCListenerEndpoint
 ```
 
+```objc
+- (NSXPCListenerEndpoint *) makeListenerEndpointAndReturnError:(NSError **) error;
+```
+
 ## See Also
 
-- [var serviceName: NSFileProviderServiceName](nsfileproviderservicesource/servicename.md)
+### Accessing the Service
+- [var serviceName: NSFileProviderServiceName](./servicename.md)
   A name that uniquely identifies the service (reverse domain name notation is recommended).
-- [var isRestricted: Bool](nsfileproviderservicesource/isrestricted.md)
+- [var isRestricted: Bool](./isrestricted.md)
 
 
 ---

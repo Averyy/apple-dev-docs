@@ -1,6 +1,7 @@
 # App Clip Usage
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze how users engage with your App Clips.
 
@@ -8,17 +9,19 @@ Analyze how users engage with your App Clips.
 
 The App Clip Usage Report includes App Clip engagement and usage data from users who have opted-in to share their data with Apple and developers. Use these reports to estimate the number of App Clip card views, App Clip installations, App Clip Sessions, and session duration.
 
-Data is available in two reports: standard and detailed. The *standard* reports include all fields that are not easily related to uniquely identifiable user data. to potentially sensitive data, and the *detailed* report includes all fields. Detailed reports include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. To learn more, see [`Protecting user privacy in report data`](privacy.md).
+Data is available in two reports: standard and detailed. The *standard* reports include all fields that are not easily related to uniquely identifiable user data. to potentially sensitive data, and the *detailed* report includes all fields. Detailed reports include additional privacy measures for the data, to help protect uniquely identifiable information for individuals. To learn more, see [Protecting user privacy in report data](./privacy.md).
 
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, macOS, tvOS, visionOS
-- Availability: - Daily: Every day
-- Weekly: Every Friday for the previous week (Monday to Sunday).
-- Monthly: On the fifth day of the following month.
+- Availability:
+
+  - Daily: Every day
+  - Weekly: Every Friday for the previous week (Monday to Sunday).
+  - Monthly: On the fifth day of the following month.
 - History: On request, data is available beginning from January 1, 2024.
 - Completeness: Within five days. Weekly and monthly reports are complete by default.
 
-The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
+The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
 > **Note**: Download the standard report unless you need to analyze the unique fields in the detailed report.
 
@@ -61,21 +64,22 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 ## See Also
 
-- [App Crashes](app-crashes.md)
+### App Usage
+- [App Crashes](./app-crashes.md)
   Review crashes for your App Store apps based on app version and device type.
-- [App Store Installations and Deletions](app-installs.md)
+- [App Store Installations and Deletions](./app-installs.md)
   Analyze details on the number of times users install and delete your apps.
-- [App Store Opt-in](app-store-opt-in.md)
+- [App Store Opt-in](./app-store-opt-in.md)
   Analyze the percentage of first-time app downloaders who choose to share their data with you.
-- [App Sessions](app-sessions.md)
+- [App Sessions](./app-sessions.md)
   Analyze how often people open your App Store apps, and the average session duration.
-- [CarPlay App Usage](carplay-app-usage.md)
+- [CarPlay App Usage](./carplay-app-usage.md)
   Review how people use CarPlay in your app.
-- [Platform App Installs](platform-app-installs.md)
+- [Platform App Installs](./platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
-- [Shortcut App Usage](shortcut-app-usage.md)
+- [Shortcut App Usage](./shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+- [Shortcuts Actions Usage](./shortcuts-actions-usage.md)
   Analyze how often people run shortcuts with your app’s actions.
 
 

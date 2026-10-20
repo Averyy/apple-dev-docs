@@ -1,17 +1,24 @@
 # clearDrawable()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disassociates the OpenGL context from its viewport.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use Metal or MetalKit.
 
 ## Declaration
 
 ```swift
 func clearDrawable()
+```
+
+```objc
+- (void) clearDrawable;
 ```
 
 #### Discussion
@@ -20,9 +27,10 @@ This method disassociates the receiver from any associated `NSView` object. If t
 
 ## See Also
 
-- [var view: NSView?](nsopenglcontext/view.md)
+### Managing the Drawable Object
+- [var view: NSView?](./view.md)
   Returns the OpenGL context’s view.
-- [func update()](nsopenglcontext/update.md)
+- [func update()](./update%28%29.md)
   Updates the OpenGL context’s drawable object.
 
 

@@ -1,7 +1,8 @@
 # AttributedString.AttributeInvalidationCondition
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -21,18 +22,18 @@ struct AttributeInvalidationCondition
 ## Topics
 
 ### Type Properties
-- [static let textChanged: AttributedString.AttributeInvalidationCondition](attributedstring/attributeinvalidationcondition/textchanged.md)
+- [static let textChanged: AttributedString.AttributeInvalidationCondition](./attributeinvalidationcondition/textchanged.md)
 ### Type Methods
-- [static func attributeChanged<T>(KeyPath<AttributeDynamicLookup, T>) -> AttributedString.AttributeInvalidationCondition](attributedstring/attributeinvalidationcondition/attributechanged(_:)-1vgwv.md)
-- [static func attributeChanged<T>(T.Type) -> AttributedString.AttributeInvalidationCondition](attributedstring/attributeinvalidationcondition/attributechanged(_:)-4jci1.md)
+- [static func attributeChanged<T>(KeyPath<AttributeDynamicLookup, T>) -> AttributedString.AttributeInvalidationCondition](./attributeinvalidationcondition/attributechanged%28_%29-1vgwv.md)
+- [static func attributeChanged<T>(T.Type) -> AttributedString.AttributeInvalidationCondition](./attributeinvalidationcondition/attributechanged%28_%29-4jci1.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

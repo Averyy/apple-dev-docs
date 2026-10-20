@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceLocalizationUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for updating the localized subtitle and action button label for a default App Clip experience.
 
@@ -10,14 +11,14 @@ The request body for updating the localized subtitle and action button label for
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceLocalizationUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipDefaultExperienceLocalizationUpdateRequest.Data](appclipdefaultexperiencelocalizationupdaterequest/data-data.dictionary.md)
+- [object AppClipDefaultExperienceLocalizationUpdateRequest.Data](./appclipdefaultexperiencelocalizationupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,13 +27,14 @@ object AppClipDefaultExperienceLocalizationUpdateRequest
 
 ## See Also
 
-- [object AppClipDefaultExperienceLocalization](appclipdefaultexperiencelocalization.md)
+### Objects
+- [object AppClipDefaultExperienceLocalization](./appclipdefaultexperiencelocalization.md)
   The localized metadata for a default App Clip experience, including the subtitle displayed on the App Clip card.
-- [object AppClipDefaultExperienceLocalizationResponse](appclipdefaultexperiencelocalizationresponse.md)
+- [object AppClipDefaultExperienceLocalizationResponse](./appclipdefaultexperiencelocalizationresponse.md)
   The response body for endpoints that create, read, or modify a localized App Clip card subtitle.
-- [object AppClipDefaultExperienceLocalizationCreateRequest](appclipdefaultexperiencelocalizationcreaterequest.md)
+- [object AppClipDefaultExperienceLocalizationCreateRequest](./appclipdefaultexperiencelocalizationcreaterequest.md)
   The request body you use to create a Default App Clip Experience Localization.
-- [object AppClipDefaultExperienceLocalizationsResponse](appclipdefaultexperiencelocalizationsresponse.md)
+- [object AppClipDefaultExperienceLocalizationsResponse](./appclipdefaultexperiencelocalizationsresponse.md)
   The response body for endpoints that list localized App Clip card subtitles for a default experience.
 
 

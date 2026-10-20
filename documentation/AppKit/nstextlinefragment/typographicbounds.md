@@ -1,7 +1,8 @@
 # typographicBounds
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The typographic bounds that specifies the dimensions of the line fragment for laying out line fragments to each other.
 
@@ -14,17 +15,22 @@ The typographic bounds that specifies the dimensions of the line fragment for la
 var typographicBounds: CGRect { get }
 ```
 
+```objc
+@property (readonly) CGRect typographicBounds;
+```
+
 #### Discussion
 
 The origin value is offset from the beginning of the line fragment group belonging to the parent layout fragment.
 
 ## See Also
 
-- [var attributedString: NSAttributedString](nstextlinefragment/attributedstring.md)
+### Line fragment characteristics
+- [var attributedString: NSAttributedString](./attributedstring.md)
   The source attributed string.
-- [var characterRange: NSRange](nstextlinefragment/characterrange.md)
+- [var characterRange: NSRange](./characterrange.md)
   The string range for the source attributed string that corresponds to this line fragment.
-- [var glyphOrigin: CGPoint](nstextlinefragment/glyphorigin.md)
+- [var glyphOrigin: CGPoint](./glyphorigin.md)
   Rendering origin for the left-most glyph in the line fragment coordinate system.
 
 

@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an image view initialized with the specified image.
 
@@ -9,7 +10,7 @@ Returns an image view initialized with the specified image.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ Returns an image view initialized with the specified image.
 init(image: UIImage?)
 ```
 
+```objc
+- (instancetype) initWithImage:(UIImage *) image;
+```
+
 #### Return Value
 
 An initialized image view object.
 
 #### Discussion
 
-The image you specified is used to configure the initial size of the image view itself. Use constraints and the image view’s content mode to adjust the image view’s final size onscreen. This method disables user interactions for the image view by setting the [`isUserInteractionEnabled`](uiimageview/isuserinteractionenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+The image you specified is used to configure the initial size of the image view itself. Use constraints and the image view’s content mode to adjust the image view’s final size onscreen. This method disables user interactions for the image view by setting the [`isUserInteractionEnabled`](./isuserinteractionenabled.md) property to [`false`](../../Swift/false.md).
 
 If you specify an animated image whose duration is greater than `0`, the image view automatically starts playing the animation.
 
@@ -34,7 +39,8 @@ If you specify an animated image whose duration is greater than `0`, the image v
 
 ## See Also
 
-- [init(image: UIImage?, highlightedImage: UIImage?)](uiimageview/init(image:highlightedimage:).md)
+### Creating an image view
+- [init(image: UIImage?, highlightedImage: UIImage?)](./init%28image,highlightedimage%29.md)
   Returns an image view initialized with the specified regular and highlighted images.
 
 

@@ -1,14 +1,15 @@
 # kcdata_memory_get_uncompressed_bytes
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t kcdata_memory_get_uncompressed_bytes(kcdata_descriptor_t kcd);
 ```
 

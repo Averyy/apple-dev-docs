@@ -1,7 +1,8 @@
 # modifier(_:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Attach a `PreviewModifier` to the preview.
 
@@ -20,6 +21,8 @@ Attach a `PreviewModifier` to the preview.
 @MainActor
 static func modifier(_ modifier: some PreviewModifier) -> PreviewTrait<T>
 ```
+
+Available when `T` is `Preview.ViewTraits`.
 
 #### Discussion
 

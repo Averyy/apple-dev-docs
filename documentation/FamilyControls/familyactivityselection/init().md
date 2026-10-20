@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Family Controls  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new activity selection instance.
 

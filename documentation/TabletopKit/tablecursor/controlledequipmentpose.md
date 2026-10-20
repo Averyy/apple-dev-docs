@@ -1,7 +1,8 @@
 # controlledEquipmentPose
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the equipment and the pose of the equipment in table space. NOTE: the equipment pose returned here does not include the resting orientation, similarly to the `pose` and `initialPose`in `TabletopInteraction.Value`. This is unlike the `pose` returned in `TableVisualState`, which does include resting orientation.
 
@@ -16,7 +17,8 @@ let controlledEquipmentPose: EquipmentPose3D
 
 ## See Also
 
-- [var hovering: TabletopInteraction.Destination?](tablecursor/hovering.md)
+### Getting information about the equipment in the interaction
+- [var hovering: TabletopInteraction.Destination?](./hovering.md)
   The current destination for the equipment, if the interaction were to end now. `nil` if no destination is currently available.
 
 

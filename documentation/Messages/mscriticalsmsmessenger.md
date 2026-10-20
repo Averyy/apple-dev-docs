@@ -1,7 +1,8 @@
 # MSCriticalSMSMessenger
 
 **Framework**: Messages  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The user interface for the Critical Messaging API.
 
@@ -19,42 +20,43 @@ class MSCriticalSMSMessenger
 ## Topics
 
 ### Determining the maximum allowed recipients
-- [var maximumCriticalMessagingRecipients: Int](mscriticalsmsmessenger/maximumcriticalmessagingrecipients.md)
+- [var maximumCriticalMessagingRecipients: Int](./mscriticalsmsmessenger/maximumcriticalmessagingrecipients.md)
   An integer that defines the maximum number of recipients to which the framework can send messages at one time.
 ### Requesting authorization
-- [func requestAuthorization(for: [MSRecipient]) async throws -> [MSRecipient : MSCriticalMessagingAuthorizationStatus]](mscriticalsmsmessenger/requestauthorization(for:).md)
+- [func requestAuthorization(for: [MSRecipient]) async throws -> [MSRecipient : MSCriticalMessagingAuthorizationStatus]](./mscriticalsmsmessenger/requestauthorization%28for%29.md)
   Requests a person’s authorization to send messages to the provided recipients.
 ### Checking authorization status
-- [func checkAuthorizationStatus(for: [MSRecipient]) async throws -> [MSRecipient : MSCriticalMessagingAuthorizationStatus]](mscriticalsmsmessenger/checkauthorizationstatus(for:).md)
+- [func checkAuthorizationStatus(for: [MSRecipient]) async throws -> [MSRecipient : MSCriticalMessagingAuthorizationStatus]](./mscriticalsmsmessenger/checkauthorizationstatus%28for%29.md)
   Confirms the current authorization status for sending critical messages from this app.
 ### Sending critical messages
-- [func send(MSCriticalMessage, to: MSRecipient) async throws -> Bool](mscriticalsmsmessenger/send(_:to:).md)
+- [func send(MSCriticalMessage, to: MSRecipient) async throws -> Bool](./mscriticalsmsmessenger/send%28_,to%29.md)
   Sends a critical message to the specified recipient.
 ### Instance Methods
-- [init()](mscriticalsmsmessenger/init.md)
+- [init()](./mscriticalsmsmessenger/init%28%29.md)
   Creates an instance of the critical messenger object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Sending SMS messages from an app](critical-messaging-api.md)
+### Critical messages
+- [Sending SMS messages from an app](./critical-messaging-api.md)
   Send critical messages from inside your app using the Critical Messaging API.
-- [struct MSRecipient](msrecipient.md)
+- [struct MSRecipient](./msrecipient.md)
   A structure that describes the recipient of a critical message.
-- [struct MSCriticalMessage](mscriticalmessage.md)
+- [struct MSCriticalMessage](./mscriticalmessage.md)
   A message for critical communications.
-- [enum MSCriticalMessagingAuthorizationStatus](mscriticalmessagingauthorizationstatus.md)
+- [enum MSCriticalMessagingAuthorizationStatus](./mscriticalmessagingauthorizationstatus.md)
   Values that describe the authorization status for the Critical Messaging API.
 
 

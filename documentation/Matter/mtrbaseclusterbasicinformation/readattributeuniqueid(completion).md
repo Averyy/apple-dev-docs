@@ -1,7 +1,8 @@
 # readAttributeUniqueID(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeUniqueID(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeUniqueID() async throws -> String
+```
+
+```objc
+- (void) readAttributeUniqueIDWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

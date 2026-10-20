@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scrollable picker’s title.
 
@@ -14,6 +15,10 @@ The scrollable picker’s title.
 
 ```swift
 var title: String { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * title;
 ```
 
 

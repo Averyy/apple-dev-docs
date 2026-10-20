@@ -1,16 +1,17 @@
 # MLCYOLOLossDescriptor
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The configuration object you use to create the YOLO loss layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,49 +19,54 @@ The configuration object you use to create the YOLO loss layer.
 class MLCYOLOLossDescriptor
 ```
 
+```objc
+@interface MLCYOLOLossDescriptor : NSObject
+```
+
 ## Topics
 
 ### Creating YOLO Loss Descriptors
-- [convenience init(anchorBoxes: Data, anchorBoxCount: Int)](mlcyololossdescriptor/init(anchorboxes:anchorboxcount:).md)
+- [convenience init(anchorBoxes: Data, anchorBoxCount: Int)](./mlcyololossdescriptor/init%28anchorboxes,anchorboxcount%29.md)
   Creates a YOLO loss filter descriptor with the anchor box data and number of anchor boxes you specify.
 ### Inspecting YOLO Loss Descriptors
-- [var anchorBoxCount: Int](mlcyololossdescriptor/anchorboxcount.md)
+- [var anchorBoxCount: Int](./mlcyololossdescriptor/anchorboxcount.md)
   The number of anchor boxes you use to detect an object in each grid cell.
-- [var anchorBoxes: Data](mlcyololossdescriptor/anchorboxes.md)
+- [var anchorBoxes: Data](./mlcyololossdescriptor/anchorboxes.md)
   Data that contains the width and height for all the anchor boxes.
-- [var maximumIOUForObjectAbsence: Float](mlcyololossdescriptor/maximumiouforobjectabsence.md)
+- [var maximumIOUForObjectAbsence: Float](./mlcyololossdescriptor/maximumiouforobjectabsence.md)
   The negative intersection over union (IOU).
-- [var minimumIOUForObjectPresence: Float](mlcyololossdescriptor/minimumiouforobjectpresence.md)
+- [var minimumIOUForObjectPresence: Float](./mlcyololossdescriptor/minimumiouforobjectpresence.md)
   The positive intersection over union (IOU).
-- [var scaleClassLoss: Float](mlcyololossdescriptor/scaleclassloss.md)
+- [var scaleClassLoss: Float](./mlcyololossdescriptor/scaleclassloss.md)
   The scale factor you use for loss when there are no object classes, and for loss gradient.
-- [var scaleObjectConfidenceLoss: Float](mlcyololossdescriptor/scaleobjectconfidenceloss.md)
+- [var scaleObjectConfidenceLoss: Float](./mlcyololossdescriptor/scaleobjectconfidenceloss.md)
   The scale factor you use for object confidence loss and loss gradient.
-- [var scaleNoObjectConfidenceLoss: Float](mlcyololossdescriptor/scalenoobjectconfidenceloss.md)
+- [var scaleNoObjectConfidenceLoss: Float](./mlcyololossdescriptor/scalenoobjectconfidenceloss.md)
   The scale factor you use for no object confidence loss and loss gradient.
-- [var scaleSpatialPositionLoss: Float](mlcyololossdescriptor/scalespatialpositionloss.md)
+- [var scaleSpatialPositionLoss: Float](./mlcyololossdescriptor/scalespatialpositionloss.md)
   The scale factor you use for spatial position loss and loss gradient.
-- [var scaleSpatialSizeLoss: Float](mlcyololossdescriptor/scalespatialsizeloss.md)
+- [var scaleSpatialSizeLoss: Float](./mlcyololossdescriptor/scalespatialsizeloss.md)
   The scale factor you use for spatial size loss and loss gradient.
-- [var shouldRescore: Bool](mlcyololossdescriptor/shouldrescore.md)
+- [var shouldRescore: Bool](./mlcyololossdescriptor/shouldrescore.md)
   A Boolean that indicates whether the layer scales the object confidence loss by the intersection over union (IOU) overlap.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [convenience init(descriptor: MLCYOLOLossDescriptor)](mlcyololosslayer/init(descriptor:).md)
+### Creating YOLO Loss Layers
+- [convenience init(descriptor: MLCYOLOLossDescriptor)](./mlcyololosslayer/init%28descriptor%29.md)
   Creates a YOLO loss layer with the descriptor you specify.
 
 

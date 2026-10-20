@@ -1,7 +1,8 @@
 # popoverBackgroundViewClass
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The class to use for displaying the popover background content.
 
@@ -17,19 +18,24 @@ The class to use for displaying the popover background content.
 var popoverBackgroundViewClass: (any UIPopoverBackgroundViewMethods.Type)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) Class<UIPopoverBackgroundViewMethods> * popoverBackgroundViewClass;
+```
+
 #### Discussion
 
-The default value of this property is `nil`, which causes the presentation controller to use the default popover appearance. Setting this property to a value other than `nil` causes the presentation controller to use the specified class to draw the popover’s background content. The class you specify must be a subclass of [`UIPopoverBackgroundView`](uipopoverbackgroundview.md).
+The default value of this property is `nil`, which causes the presentation controller to use the default popover appearance. Setting this property to a value other than `nil` causes the presentation controller to use the specified class to draw the popover’s background content. The class you specify must be a subclass of [`UIPopoverBackgroundView`](../uipopoverbackgroundview.md).
 
 ## See Also
 
-- [var popoverLayoutMargins: UIEdgeInsets](uipopoverpresentationcontroller/popoverlayoutmargins.md)
+### Configuring the popover appearance
+- [var popoverLayoutMargins: UIEdgeInsets](./popoverlayoutmargins.md)
   The margins that define the portion of the screen in which it is permissible to display the popover.
-- [var backgroundColor: UIColor?](uipopoverpresentationcontroller/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The color of the popover’s backdrop view.
-- [var passthroughViews: [UIView]?](uipopoverpresentationcontroller/passthroughviews.md)
+- [var passthroughViews: [UIView]?](./passthroughviews.md)
   An array of views that the user can interact with while the popover is visible.
-- [var canOverlapSourceViewRect: Bool](uipopoverpresentationcontroller/canoverlapsourceviewrect.md)
+- [var canOverlapSourceViewRect: Bool](./canoverlapsourceviewrect.md)
   A Boolean value indicating whether the popover can overlap its view rectangle.
 
 

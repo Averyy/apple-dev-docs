@@ -1,9 +1,10 @@
 # pushToStartTokenUpdates
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-An asynchronous sequence that delivers updated tokens for starting a [`RemoteMediaSession`](remotemediasession.md) through a push notification.
+An asynchronous sequence that delivers updated tokens for starting a [`RemoteMediaSession`](../remotemediasession.md) through a push notification.
 
 **Availability**:
 - iOS 27.0+
@@ -17,13 +18,15 @@ An asynchronous sequence that delivers updated tokens for starting a [`RemoteMed
 static var pushToStartTokenUpdates: AsyncStream<Data> { get }
 ```
 
+Available when `Attributes` conforms to `RemoteMediaSessionAttributes`.
+
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 #### Discussion
 
-Use push notifications to start new remote sessions and update ongoing ones. For additional information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+Use push notifications to start new remote sessions and update ongoing ones. For additional information, see [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 
 ---

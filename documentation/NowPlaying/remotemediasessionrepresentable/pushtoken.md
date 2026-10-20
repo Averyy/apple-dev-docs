@@ -1,7 +1,8 @@
 # pushToken
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token you use to send push notifications to update this remote session.
 
@@ -20,11 +21,11 @@ var pushToken: Data? { get }
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 #### Discussion
 
-The push token for a remote session may change over time. Use [`pushTokenUpdates`](remotemediasessionrepresentable/pushtokenupdates.md) to receive the updated push token.
+The push token for a remote session may change over time. Use [`pushTokenUpdates`](./pushtokenupdates.md) to receive the updated push token.
 
 > **Note**: When you receive an updated push token, transmit it securely to your server (for example, over HTTPS) and invalidate the outdated token promptly so it cannot be reused. The push token is a device-scoped identifier — handle it securely and retain it only as long as needed.
 

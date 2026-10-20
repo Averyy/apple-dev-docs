@@ -1,17 +1,18 @@
 # bounded_ptr<T, TrappingPolicy>
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Constructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 bounded_ptr<T, TrappingPolicy>(detail::nullptr_t );
 ```
 

@@ -1,7 +1,8 @@
 # data
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of underlying identified data that SwiftUI uses to create views dynamically.
 
@@ -22,7 +23,8 @@ var data: Data
 
 ## See Also
 
-- [var content: (Data.Element) -> Content](foreach/content.md)
+### Accessing content
+- [var content: (Data.Element) -> Content](./content.md)
   A function to create content on demand using the underlying data.
 
 

@@ -1,7 +1,8 @@
 # dismissalConfirmationDialog(_:shouldPresent:actions:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 
@@ -16,6 +17,23 @@ Presents a confirmation dialog upon an attempt to dismiss the window for this vi
 ```swift
 @export(implementation)
 nonisolated func dismissalConfirmationDialog<A>(_ titleResource: LocalizedStringResource, shouldPresent: Bool, @ContentBuilder actions: () -> A) -> some View where A : View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func dismissalConfirmationDialog<A>(_ title: Text, shouldPresent: Bool, @ContentBuilder actions: () -> A) -> some View where A : View
+```
+
+```swift
+nonisolated
+func dismissalConfirmationDialog<A>(_ titleKey: LocalizedStringKey, shouldPresent: Bool, @ContentBuilder actions: () -> A) -> some View where A : View
+```
+
+```swift
+nonisolated
+func dismissalConfirmationDialog<S, A>(_ title: S, shouldPresent: Bool, @ContentBuilder actions: () -> A) -> some View where S : StringProtocol, A : View
 ```
 
 #### Discussion
@@ -50,15 +68,15 @@ struct ComposeMessage: View {
 }
 ```
 
-All actions in the dialog will dismiss the dialog after the action runs. The default button will be shown with greater prominence. You can influence the default button by assigning it the [`defaultAction`](keyboardshortcut/defaultaction.md) keyboard shortcut.
+All actions in the dialog will dismiss the dialog after the action runs. The default button will be shown with greater prominence. You can influence the default button by assigning it the [`defaultAction`](../keyboardshortcut/defaultaction.md) keyboard shortcut.
 
 The system may reorder the buttons based on their role and prominence.
 
-Dismissal dialogs include a standard cancellation action by default. If you provide a button with a role of [`cancel`](buttonrole/cancel.md), that button takes the place of the default cancellation action.
+Dismissal dialogs include a standard cancellation action by default. If you provide a button with a role of [`cancel`](../buttonrole/cancel.md), that button takes the place of the default cancellation action.
 
 The cancellation action will always prevent the dismissal, while other actions will allow the dismiss to proceed.
 
-On iOS, in addition to the standard cancellation action, the dismissal dialog also includes a standard close action by default. If you provide a button with a role of [`destructive`](buttonrole/destructive.md), that button takes the place of the default close action. This action will immediately dismiss the dialog and the view’s associated window.
+On iOS, in addition to the standard cancellation action, the dismissal dialog also includes a standard close action by default. If you provide a button with a role of [`destructive`](../buttonrole/destructive.md), that button takes the place of the default close action. This action will immediately dismiss the dialog and the view’s associated window.
 
 ## Parameters
 
@@ -68,9 +86,10 @@ On iOS, in addition to the standard cancellation action, the dismissal dialog al
 
 ## See Also
 
-- [func confirmationDialog(_:isPresented:titleVisibility:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:).md)
+### Getting confirmation for an action
+- [func confirmationDialog(_:isPresented:titleVisibility:actions:)](./confirmationdialog%28_,ispresented,titlevisibility,actions%29.md)
   Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
-- [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:).md)
+- [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)](./confirmationdialog%28_,ispresented,titlevisibility,presenting,actions%29.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 
 

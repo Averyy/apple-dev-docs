@@ -1,7 +1,8 @@
 # init(viewing:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 View initialized raw memory as a span of bytes.
 
@@ -19,6 +20,8 @@ View initialized raw memory as a span of bytes.
 ```swift
 init(viewing bytes: RawSpan)
 ```
+
+Available when `Element` is `UInt8`.
 
 ## Parameters
 

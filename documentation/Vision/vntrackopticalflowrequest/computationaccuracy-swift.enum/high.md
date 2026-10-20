@@ -1,7 +1,8 @@
 # VNTrackOpticalFlowRequest.ComputationAccuracy.high
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that indicates a high level of computational accuracy.
 
@@ -19,19 +20,24 @@ An option that indicates a high level of computational accuracy.
 case high
 ```
 
+```c
+VNTrackOpticalFlowRequestComputationAccuracyHigh
+```
+
 ## See Also
 
-- [VNTrackOpticalFlowRequest.ComputationAccuracy.low](vntrackopticalflowrequest/computationaccuracy-swift.enum/low.md)
+### Options
+- [VNTrackOpticalFlowRequest.ComputationAccuracy.low](./low.md)
   An option that indicates a low level of computational accuracy.
-- [VNTrackOpticalFlowRequest.ComputationAccuracy.medium](vntrackopticalflowrequest/computationaccuracy-swift.enum/medium.md)
+- [VNTrackOpticalFlowRequest.ComputationAccuracy.medium](./medium.md)
   An option that indicates a moderate level of computational accuracy.
-- [VNTrackOpticalFlowRequest.ComputationAccuracy.veryHigh](vntrackopticalflowrequest/computationaccuracy-swift.enum/veryhigh.md)
+- [VNTrackOpticalFlowRequest.ComputationAccuracy.veryHigh](./veryhigh.md)
   An option that indicates a very high level of computational accuracy.
-- [VNTrackOpticalFlowRequest.ComputationAccuracy.low](vntrackopticalflowrequest/computationaccuracy-swift.enum/low.md)
+- [VNTrackOpticalFlowRequest.ComputationAccuracy.low](./low.md)
   An option that indicates a low level of computational accuracy.
-- [VNTrackOpticalFlowRequest.ComputationAccuracy.medium](vntrackopticalflowrequest/computationaccuracy-swift.enum/medium.md)
+- [VNTrackOpticalFlowRequest.ComputationAccuracy.medium](./medium.md)
   An option that indicates a moderate level of computational accuracy.
-- [VNTrackOpticalFlowRequest.ComputationAccuracy.veryHigh](vntrackopticalflowrequest/computationaccuracy-swift.enum/veryhigh.md)
+- [VNTrackOpticalFlowRequest.ComputationAccuracy.veryHigh](./veryhigh.md)
   An option that indicates a very high level of computational accuracy.
 
 

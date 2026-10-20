@@ -1,14 +1,15 @@
 # sadb_msg_version
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 u_int8_t sadb_msg_version;
 ```
 

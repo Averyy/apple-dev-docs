@@ -1,7 +1,8 @@
 # medium
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A preset suitable for capturing medium-quality output.
 
@@ -18,15 +19,20 @@ A preset suitable for capturing medium-quality output.
 static let medium: AVCaptureSession.Preset
 ```
 
+```c
+extern AVCaptureSessionPreset const AVCaptureSessionPresetMedium;
+```
+
 #### Discussion
 
 Use this preset to achieve output video and audio bitrates suitable for sharing over WiFi.
 
 ## See Also
 
-- [static let high: AVCaptureSession.Preset](avcapturesession/preset/high.md)
+### Quality levels
+- [static let high: AVCaptureSession.Preset](./high.md)
   A preset suitable for capturing high-quality output.
-- [static let low: AVCaptureSession.Preset](avcapturesession/preset/low.md)
+- [static let low: AVCaptureSession.Preset](./low.md)
   A preset suitable for capturing low-quality output.
 
 

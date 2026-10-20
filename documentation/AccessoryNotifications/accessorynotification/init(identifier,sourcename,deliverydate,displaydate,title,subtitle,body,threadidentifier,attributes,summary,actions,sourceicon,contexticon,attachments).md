@@ -1,7 +1,8 @@
 # init(identifier:sourceName:deliveryDate:displayDate:title:subtitle:body:threadIdentifier:attributes:summary:actions:sourceIcon:contextIcon:attachments:)
 
 **Framework**: Accessory Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an accessory notification.
 

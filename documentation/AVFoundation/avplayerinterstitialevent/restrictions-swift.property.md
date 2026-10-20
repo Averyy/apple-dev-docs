@@ -1,7 +1,8 @@
 # restrictions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The restrictions the event imposes on the playback of interstitial content.
 
@@ -20,9 +21,14 @@ The restrictions the event imposes on the playback of interstitial content.
 var restrictions: AVPlayerInterstitialEvent.Restrictions { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) AVPlayerInterstitialEventRestrictions restrictions;
+```
+
 ## See Also
 
-- [AVPlayerInterstitialEvent.Restrictions](avplayerinterstitialevent/restrictions-swift.struct.md)
+### Managing restrictions
+- [AVPlayerInterstitialEvent.Restrictions](./restrictions-swift.struct.md)
   Constants that define restrictions on the playback of interstitial content.
 
 

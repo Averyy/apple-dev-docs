@@ -1,7 +1,8 @@
 # init(sessionWithNoConnection:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layer to preview the visual output of a capture session, without making connections to eligible video inputs.
 
@@ -18,9 +19,13 @@ Creates a layer to preview the visual output of a capture session, without makin
 init(sessionWithNoConnection session: AVCaptureSession)
 ```
 
+```objc
+- (instancetype) initWithSessionWithNoConnection:(AVCaptureSession *) session;
+```
+
 #### Discussion
 
-Only use this initializer if you intend to manually connect the layer to a particular [`AVCaptureInput.Port`](avcaptureinput/port.md) by calling the session’s [`addConnection(_:)`](avcapturesession/addconnection(_:).md) method.
+Only use this initializer if you intend to manually connect the layer to a particular [`AVCaptureInput.Port`](../avcaptureinput/port.md) by calling the session’s [`addConnection(_:)`](../avcapturesession/addconnection%28_%29.md) method.
 
 ## Parameters
 
@@ -28,7 +33,8 @@ Only use this initializer if you intend to manually connect the layer to a parti
 
 ## See Also
 
-- [init(session: AVCaptureSession)](avcapturevideopreviewlayer/init(session:).md)
+### Creating a preview layer
+- [init(session: AVCaptureSession)](./init%28session%29.md)
   Creates a layer to preview the visual output of a capture session.
 
 

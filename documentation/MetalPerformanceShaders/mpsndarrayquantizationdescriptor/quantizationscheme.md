@@ -1,7 +1,8 @@
 # quantizationScheme
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var quantizationScheme: MPSNDArrayQuantizationScheme { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSNDArrayQuantizationScheme quantizationScheme;
 ```
 
 

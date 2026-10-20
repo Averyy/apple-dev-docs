@@ -1,7 +1,8 @@
 # NEDNSSettingsManagerError
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes specific to DNS managers.
 
@@ -18,33 +19,38 @@ Error codes specific to DNS managers.
 enum NEDNSSettingsManagerError
 ```
 
+```c
+enum NEDNSSettingsManagerError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [NEDNSSettingsManagerError.configurationInvalid](nednssettingsmanagererror/configurationinvalid.md)
+- [NEDNSSettingsManagerError.configurationInvalid](./nednssettingsmanagererror/configurationinvalid.md)
   An error code that indicates the DNS settings manager is invalid.
-- [NEDNSSettingsManagerError.configurationDisabled](nednssettingsmanagererror/configurationdisabled.md)
+- [NEDNSSettingsManagerError.configurationDisabled](./nednssettingsmanagererror/configurationdisabled.md)
   An error code that indicates the DNS settings manager isn’t enabled.
-- [NEDNSSettingsManagerError.configurationStale](nednssettingsmanagererror/configurationstale.md)
+- [NEDNSSettingsManagerError.configurationStale](./nednssettingsmanagererror/configurationstale.md)
   An error code that indicates the DNS settings manager isn’t loaded.
-- [NEDNSSettingsManagerError.configurationCannotBeRemoved](nednssettingsmanagererror/configurationcannotberemoved.md)
+- [NEDNSSettingsManagerError.configurationCannotBeRemoved](./nednssettingsmanagererror/configurationcannotberemoved.md)
   An error code that indicates removing the DNS settings manager failed.
 ### Initializers
-- [init?(rawValue: Int)](nednssettingsmanagererror/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nednssettingsmanagererror/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let NEDNSSettingsErrorDomain: String](nednssettingserrordomain.md)
+### Handling errors
+- [let NEDNSSettingsErrorDomain: String](./nednssettingserrordomain.md)
   The domain for errors resulting from calls to the DNS settings manager.
 
 

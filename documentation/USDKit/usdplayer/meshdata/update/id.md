@@ -1,7 +1,8 @@
 # id
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Unique identifier for the mesh being updated.
 

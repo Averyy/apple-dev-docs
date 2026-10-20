@@ -1,7 +1,8 @@
 # typesettingLanguage(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the language for typesetting.
 
@@ -18,6 +19,12 @@ Specifies the language for typesetting.
 
 ```swift
 func typesettingLanguage(_ language: Locale.Language, isEnabled: Bool = true) -> Text
+```
+
+**Other overloads**:
+
+```swift
+func typesettingLanguage(_ language: TypesettingLanguage, isEnabled: Bool = true) -> Text
 ```
 
 #### Return Value

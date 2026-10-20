@@ -1,7 +1,8 @@
 # withCompressionStream(appendingTo:flags:threadCount:_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reopens a compression sequential output stream and calls the given closure.
 
@@ -11,7 +12,7 @@ Reopens a compression sequential output stream and calls the given closure.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ The result of the closure.
 
 #### Discussion
 
-This function opens a stream created by [`compressionStream(appendingTo:flags:threadCount:)`](archivebytestream/compressionstream(appendingto:flags:threadcount:).md), calls the specified closure, and closes the stream.
+This function opens a stream created by [`compressionStream(appendingTo:flags:threadCount:)`](./compressionstream%28appendingto,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 
 ## Parameters
 
@@ -37,11 +38,12 @@ This function opens a stream created by [`compressionStream(appendingTo:flags:th
 
 ## See Also
 
-- [static func compressionStream(using: ArchiveCompression, writingTo: ArchiveByteStream, blockSize: Int, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](archivebytestream/compressionstream(using:writingto:blocksize:flags:threadcount:).md)
+### Compressing Data
+- [static func compressionStream(using: ArchiveCompression, writingTo: ArchiveByteStream, blockSize: Int, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](./compressionstream%28using,writingto,blocksize,flags,threadcount%29.md)
   Creates a compression sequential output stream.
-- [static func withCompressionStream<E>(using: ArchiveCompression, writingTo: ArchiveByteStream, blockSize: Int, flags: ArchiveFlags, threadCount: Int, (ArchiveByteStream) throws -> E) throws -> E](archivebytestream/withcompressionstream(using:writingto:blocksize:flags:threadcount:_:).md)
+- [static func withCompressionStream<E>(using: ArchiveCompression, writingTo: ArchiveByteStream, blockSize: Int, flags: ArchiveFlags, threadCount: Int, (ArchiveByteStream) throws -> E) throws -> E](./withcompressionstream%28using,writingto,blocksize,flags,threadcount,_%29.md)
   Calls the given closure with a compression sequential output stream.
-- [static func compressionStream(appendingTo: ArchiveByteStream, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](archivebytestream/compressionstream(appendingto:flags:threadcount:).md)
+- [static func compressionStream(appendingTo: ArchiveByteStream, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](./compressionstream%28appendingto,flags,threadcount%29.md)
   Reopens a compression sequential output stream.
 
 

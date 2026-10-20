@@ -1,17 +1,22 @@
 # closeConnection()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Close down the baseband connection to the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func closeConnection() -> IOReturn
+```
+
+```objc
+- (IOReturn) closeConnection;
 ```
 
 #### Return Value

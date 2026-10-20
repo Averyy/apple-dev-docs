@@ -1,20 +1,21 @@
 # Apps.Attributes.Offers.Discounts
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.1+
 
 ## Declaration
 
-```swift
+```
 object Apps.Attributes.Offers.Discounts
 ```
 
 ## Properties
 
-- `modeType` (string)
+- `modeType` (string): **Allowed Values**: `FreeTrial`, `PayAsYouGo`, `PayUpFront`, `PayUpFrontSeasonPass`
 - `numOfPeriods` (integer)
 - `price` (number)
 - `priceFormatted` (string)
@@ -22,8 +23,9 @@ object Apps.Attributes.Offers.Discounts
 
 ## See Also
 
-- [object Apps.Attributes.Offers.Assets](apps/attributes-data.dictionary/offers-data.dictionary/assets-data.dictionary.md)
-- [object Apps.Attributes.Offers.Download](apps/attributes-data.dictionary/offers-data.dictionary/download-data.dictionary.md)
+### Related Objects
+- [object Apps.Attributes.Offers.Assets](./assets-data.dictionary.md)
+- [object Apps.Attributes.Offers.Download](./download-data.dictionary.md)
 
 
 ---

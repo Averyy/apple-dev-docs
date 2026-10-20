@@ -1,7 +1,8 @@
 # round(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rounds the value to an integral value using the specified rounding rule.
 
@@ -60,10 +61,11 @@ w1.round()
 
 ## See Also
 
-- [func rounded() -> Self](float/rounded.md)
-- [func rounded(FloatingPointRoundingRule) -> Self](float/rounded(_:).md)
+### Rounding Values
+- [func rounded() -> Self](./rounded%28%29.md)
+- [func rounded(FloatingPointRoundingRule) -> Self](./rounded%28_%29.md)
   Returns this value rounded to an integral value using the specified rounding rule.
-- [func round()](float/round.md)
+- [func round()](./round%28%29.md)
 
 
 ---

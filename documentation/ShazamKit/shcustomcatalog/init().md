@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ShazamKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new custom catalog object for storing reference audio signatures and their associated metadata.
 
@@ -18,6 +19,10 @@ Creates a new custom catalog object for storing reference audio signatures and t
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

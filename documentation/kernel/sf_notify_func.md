@@ -1,14 +1,15 @@
 # sf_notify_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*sf_notify_func)(void *cookie, socket_t so, sflt_event_t event, void *param);
 ```
 

@@ -1,7 +1,8 @@
 # escape
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value that represents an accessibility action that dismisses a modal view or cancels an operation.
 
@@ -22,11 +23,12 @@ static let escape: AccessibilityActionKind
 
 ## See Also
 
-- [static let `default`: AccessibilityActionKind](accessibilityactionkind/default.md)
+### Getting the kind of action
+- [static let `default`: AccessibilityActionKind](./default.md)
   The value that represents the default accessibility action.
-- [static let delete: AccessibilityActionKind](accessibilityactionkind/delete.md)
-- [static let magicTap: AccessibilityActionKind](accessibilityactionkind/magictap.md)
-- [static let showMenu: AccessibilityActionKind](accessibilityactionkind/showmenu.md)
+- [static let delete: AccessibilityActionKind](./delete.md)
+- [static let magicTap: AccessibilityActionKind](./magictap.md)
+- [static let showMenu: AccessibilityActionKind](./showmenu.md)
 
 
 ---

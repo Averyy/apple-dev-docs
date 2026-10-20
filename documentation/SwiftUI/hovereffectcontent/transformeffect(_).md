@@ -1,7 +1,8 @@
 # transformEffect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an affine transformation to the view’s rendered output.
 
@@ -20,11 +21,11 @@ An effect that applies an affine transformation to the view’s rendered output.
 
 #### Discussion
 
-Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform).
+Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md).
 
 ## Parameters
 
-- `transform`: A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply to the view.
+- `transform`: A [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) to apply to the view.
 
 
 ---

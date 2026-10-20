@@ -1,7 +1,8 @@
 # finishLoading(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the receiver to handle the failure to load a resource for which a resource loader’s delegate took responsibility.
 
@@ -19,6 +20,10 @@ Causes the receiver to handle the failure to load a resource for which a resourc
 func finishLoading(with error: (any Error)?)
 ```
 
+```objc
+- (void) finishLoadingWithError:(NSError *) error;
+```
+
 #### Discussion
 
 When a resource loader’s delegate takes responsibility for loading a resource, it calls this method when a failure occurred when loading the resource. This method marks the loading request as finished and notifies the resource loader object that the resource could not be loaded.
@@ -29,15 +34,16 @@ When a resource loader’s delegate takes responsibility for loading a resource,
 
 ## See Also
 
-- [var response: URLResponse?](avassetresourceloadingrequest/response.md)
+### Reporting the result of the request
+- [var response: URLResponse?](./response.md)
   The URL response for the loading request.
-- [func finishLoading()](avassetresourceloadingrequest/finishloading.md)
+- [func finishLoading()](./finishloading%28%29.md)
   Causes the receiver to treat the processing of the request as complete.
-- [var isCancelled: Bool](avassetresourceloadingrequest/iscancelled.md)
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates whether the request has been cancelled.
-- [var isFinished: Bool](avassetresourceloadingrequest/isfinished.md)
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value that indicates whether loading of the resource has finished.
-- [func finishLoading(with: URLResponse?, data: Data?, redirect: URLRequest?)](avassetresourceloadingrequest/finishloading(with:data:redirect:).md)
+- [func finishLoading(with: URLResponse?, data: Data?, redirect: URLRequest?)](./finishloading%28with,data,redirect%29.md)
   Causes the receiver to finish loading a resource for which a resource loader’s delegate took responsibility .
 
 

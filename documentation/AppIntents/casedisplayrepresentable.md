@@ -1,7 +1,8 @@
 # CaseDisplayRepresentable
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for providing the visual representation for an iterable collection of values.
 
@@ -11,7 +12,7 @@ An interface for providing the visual representation for an iterable collection 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,47 +24,48 @@ protocol CaseDisplayRepresentable : CustomLocalizedStringResourceConvertible, Ca
 ## Topics
 
 ### Describing the case conditions
-- [static var caseDisplayRepresentations: [Self : DisplayRepresentation]](casedisplayrepresentable/casedisplayrepresentations.md)
+- [static var caseDisplayRepresentations: [Self : DisplayRepresentation]](./casedisplayrepresentable/casedisplayrepresentations.md)
   A dictionary that maps each value to the visual elements that represent it.
 ### Providing a localized description
-- [var localizedStringResource: LocalizedStringResource](casedisplayrepresentable/localizedstringresource-7gj71.md)
+- [var localizedStringResource: LocalizedStringResource](./casedisplayrepresentable/localizedstringresource-7gj71.md)
   A resource that helps provide a description of this instance.
-- [var localizedStringResource: LocalizedStringResource](casedisplayrepresentable/localizedstringresource-78c15.md)
+- [var localizedStringResource: LocalizedStringResource](./casedisplayrepresentable/localizedstringresource-78c15.md)
   A resource that helps provide a description of this instance.
 ### Default Implementations
-- [CustomLocalizedStringResourceConvertible Implementations](casedisplayrepresentable/customlocalizedstringresourceconvertible-implementations.md)
+- [CustomLocalizedStringResourceConvertible Implementations](./casedisplayrepresentable/customlocalizedstringresourceconvertible-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [CaseIterable](../swift/caseiterable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 ### Inherited By
-- [AppEnum](appenum.md)
-- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
-- [AssistantEnum](assistantenum.md)
-- [AssistantSchemaEnum](assistantschemaenum.md)
-- [StaticDisplayRepresentable](staticdisplayrepresentable.md)
-- [URLRepresentableEnum](urlrepresentableenum.md)
+- [AppEnum](./appenum.md)
+- [AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
+- [AssistantEnum](./assistantenum.md)
+- [AssistantSchemaEnum](./assistantschemaenum.md)
+- [StaticDisplayRepresentable](./staticdisplayrepresentable.md)
+- [URLRepresentableEnum](./urlrepresentableenum.md)
 ### Conforming Types
-- [StringSearchScope](stringsearchscope.md)
-- [VideoCategory](videocategory.md)
+- [StringSearchScope](./stringsearchscope.md)
+- [VideoCategory](./videocategory.md)
 
 ## See Also
 
-- [struct DisplayRepresentation](displayrepresentation.md)
+### Data representations
+- [struct DisplayRepresentation](./displayrepresentation.md)
   A type that describes the user interface presentation of a custom type.
-- [protocol DisplayRepresentable](displayrepresentable.md)
+- [protocol DisplayRepresentable](./displayrepresentable.md)
   An interface for providing a dynamic visual representation of a specific type and instances of that type.
-- [protocol InstanceDisplayRepresentable](instancedisplayrepresentable.md)
+- [protocol InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
   An interface for providing the visual representation for an instance of a specific type.
-- [protocol TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [protocol TypeDisplayRepresentable](./typedisplayrepresentable.md)
   An interface for providing the visual representation of a specific type.
-- [struct TypeDisplayRepresentation](typedisplayrepresentation.md)
+- [struct TypeDisplayRepresentation](./typedisplayrepresentation.md)
   A type that describes the user interface presentation of a custom type.
-- [protocol StaticDisplayRepresentable](staticdisplayrepresentable.md)
+- [protocol StaticDisplayRepresentable](./staticdisplayrepresentable.md)
   An interface for providing a static visual representation of a specific type.
 
 

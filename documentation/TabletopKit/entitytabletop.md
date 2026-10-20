@@ -1,7 +1,8 @@
 # EntityTabletop
 
 **Framework**: TabletopKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for the table surface in your game when you render it using RealityKit.
 
@@ -16,7 +17,7 @@ protocol EntityTabletop : Tabletop
 
 #### Overview
 
-To create a [`TableSetup`](tablesetup.md) object that configures your game table, pass an object that conforms to either the [`Tabletop`](tabletop.md) or `EntityTabletop` protocol to the `TableSetup` initializer. If you render your table surface using RealityKit, conform to the `EntityTabletop` protocol. Implement your `EntityTabletop` structure to set the protocol properties, such as the `shape`, `entity`, and `id` properties.
+To create a [`TableSetup`](./tablesetup.md) object that configures your game table, pass an object that conforms to either the [`Tabletop`](./tabletop.md) or `EntityTabletop` protocol to the `TableSetup` initializer. If you render your table surface using RealityKit, conform to the `EntityTabletop` protocol. Implement your `EntityTabletop` structure to set the protocol properties, such as the `shape`, `entity`, and `id` properties.
 
 ```swift
 struct Table: EntityTabletop {
@@ -35,33 +36,34 @@ struct Table: EntityTabletop {
 ## Topics
 
 ### Creating a round or rectangular table
-- [var shape: TabletopShape](entitytabletop/shape.md)
+- [var shape: TabletopShape](./entitytabletop/shape.md)
   The shape of the table.
 ### Displaying the tabletop
-- [var entity: Entity](entitytabletop/entity.md)
+- [var entity: Entity](./entitytabletop/entity.md)
   The entity associated with the equipment.
 ### Default Implementations
-- [Tabletop Implementations](entitytabletop/tabletop-implementations.md)
+- [Tabletop Implementations](./entitytabletop/tabletop-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../swift/identifiable.md)
-- [Tabletop](tabletop.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Tabletop](./tabletop.md)
 
 ## See Also
 
-- [Creating tabletop games](creating-tabletop-games.md)
+### Essentials
+- [Creating tabletop games](./creating-tabletop-games.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
-- [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
+- [Synchronizing group gameplay with TabletopKit](./synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
-- [class TabletopGame](tabletopgame.md)
+- [class TabletopGame](./tabletopgame.md)
   An object that manages the setup and gameplay of a tabletop game.
-- [struct TableSetup](tablesetup.md)
+- [struct TableSetup](./tablesetup.md)
   An object that represents the arrangement of seats, equipment, and counters around the game table.
-- [protocol Tabletop](tabletop.md)
+- [protocol Tabletop](./tabletop.md)
   A protocol for the table surface in your game.
-- [struct TabletopShape](tabletopshape.md)
+- [struct TabletopShape](./tabletopshape.md)
   An object that represents the physical properties of the table.
 
 

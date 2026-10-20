@@ -1,7 +1,8 @@
 # first(where:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,11 +21,12 @@ func first(where predicate: (Output) -> Bool) -> Optional<Output>.Publisher
 
 ## See Also
 
-- [func first() -> Just<Output>](just/first.md)
-- [func last() -> Just<Output>](just/last.md)
-- [func last(where: (Output) -> Bool) -> Optional<Output>.Publisher](just/last(where:).md)
-- [func output(at: Int) -> Optional<Output>.Publisher](just/output(at:).md)
-- [func output<R>(in: R) -> Optional<Output>.Publisher](just/output(in:).md)
+### Selecting specific elements
+- [func first() -> Just<Output>](./first%28%29.md)
+- [func last() -> Just<Output>](./last%28%29.md)
+- [func last(where: (Output) -> Bool) -> Optional<Output>.Publisher](./last%28where%29.md)
+- [func output(at: Int) -> Optional<Output>.Publisher](./output%28at%29.md)
+- [func output<R>(in: R) -> Optional<Output>.Publisher](./output%28in%29.md)
 
 
 ---

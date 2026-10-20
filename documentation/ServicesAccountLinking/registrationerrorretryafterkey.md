@@ -1,9 +1,10 @@
 # RegistrationErrorRetryAfterKey
 
 **Framework**: ServicesAccountLinking  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-`userInfo` key whose value is an `NSNumber` containing the server-provided retry interval in seconds. Present on [`rateLimited`](registrationerror/ratelimited.md) errors.
+`userInfo` key whose value is an `NSNumber` containing the server-provided retry interval in seconds. Present on [`rateLimited`](./registrationerror/ratelimited.md) errors.
 
 **Availability**:
 - iOS 16.4+
@@ -14,6 +15,10 @@
 
 ```swift
 let RegistrationErrorRetryAfterKey: String
+```
+
+```c
+static NSString * const SALRegistrationErrorRetryAfterKey;
 ```
 
 

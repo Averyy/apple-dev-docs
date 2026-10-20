@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a message that the cookies in a cookie storage instance changed.
 

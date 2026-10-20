@@ -1,7 +1,8 @@
 # init(from:configurations:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads an entity from a configuration catalog and a dictionary of configuration choices.
 
@@ -27,7 +28,8 @@ Loads an entity from a configuration catalog and a dictionary of configuration c
 
 ## See Also
 
-- [Entity.ConfigurationCatalog](entity/configurationcatalog.md)
+### Loading an entity from a configuration catalog
+- [Entity.ConfigurationCatalog](./configurationcatalog.md)
   A collection of alternative representations of an entity you can choose from.
 
 

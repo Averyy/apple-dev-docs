@@ -1,7 +1,8 @@
 # init(size:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new region with a rectangular area.
 
@@ -20,6 +21,10 @@ Initializes a new region with a rectangular area.
 init(size: CGSize)
 ```
 
+```objc
+- (instancetype) initWithSize:(CGSize) size;
+```
+
 #### Return Value
 
 A newly initialized region. The region is rectangular and centered on the origin.
@@ -30,19 +35,20 @@ A newly initialized region. The region is rectangular and centered on the origin
 
 ## See Also
 
-- [class func infinite() -> Self](skregion/infinite.md)
+### Creating and Initializing Region Objects
+- [class func infinite() -> Self](./infinite%28%29.md)
   Returns a region that defines a region that includes all points.
-- [init(radius: Float)](skregion/init(radius:).md)
+- [init(radius: Float)](./init%28radius%29.md)
   Initializes a new region with a circular area.
-- [init(path: CGPath)](skregion/init(path:).md)
+- [init(path: CGPath)](./init%28path%29.md)
   Initializes a new region using a Core Graphics path.
-- [func inverse() -> Self](skregion/inverse.md)
+- [func inverse() -> Self](./inverse%28%29.md)
   Returns a new region that is the mathematical inverse of an existing region.
-- [func byDifference(from: SKRegion) -> Self](skregion/bydifference(from:).md)
+- [func byDifference(from: SKRegion) -> Self](./bydifference%28from%29.md)
   Returns a new region created by subtracting the contents of another region from this region.
-- [func byIntersection(with: SKRegion) -> Self](skregion/byintersection(with:).md)
+- [func byIntersection(with: SKRegion) -> Self](./byintersection%28with%29.md)
   Returns a new region created by intersecting the contents of this region with another region.
-- [func byUnion(with: SKRegion) -> Self](skregion/byunion(with:).md)
+- [func byUnion(with: SKRegion) -> Self](./byunion%28with%29.md)
   Returns a new region created by combining the contents of this region with another region.
 
 

@@ -1,7 +1,8 @@
 # captureSession
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture session.
 
@@ -20,9 +21,9 @@ var captureSession: AVCaptureSession { get }
 
 #### Discussion
 
-You can use the capture session to create a preview with [`AVCaptureVideoPreviewLayer`](https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer) and to configure the input device, for example switching the input camera.
+You can use the capture session to create a preview with [`AVCaptureVideoPreviewLayer`](../../../AVFoundation/avcapturevideopreviewlayer.md) and to configure the input device, for example switching the input camera.
 
-```None
+```
 let sequence = try await VideoReader.readCamera(configuration: configuration)
 sequence.captureSession.beginConfiguration()
 sequence.captureSession.removeInput(captureSession.inputs[0])

@@ -1,7 +1,8 @@
 # keyPath
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key path to the field for comparison.
 

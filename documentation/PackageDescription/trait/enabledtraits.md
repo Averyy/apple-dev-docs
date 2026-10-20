@@ -1,7 +1,8 @@
 # enabledTraits
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of other traits of this package that this trait enables.
 

@@ -1,7 +1,8 @@
 # criticalMessageStateNotifications
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of critical message state notifications.
 
@@ -16,11 +17,12 @@ final var criticalMessageStateNotifications: some AsyncSequence<SMSService.Criti
 
 #### Discussion
 
-This sequence tracks messages sent with the Critical Messaging API, as described in [`Sending SMS messages from an app`](https://developer.apple.com/documentation/messages/critical-messaging-api).
+This sequence tracks messages sent with the Critical Messaging API, as described in [Sending SMS messages from an app](../../Messages/critical-messaging-api.md).
 
 ## See Also
 
-- [SMSService.CriticalMessageStateNotification](smsservice/criticalmessagestatenotification.md)
+### Handling critical state changes
+- [SMSService.CriticalMessageStateNotification](./criticalmessagestatenotification.md)
   A structure that contains information about a critical SMS message.
 
 

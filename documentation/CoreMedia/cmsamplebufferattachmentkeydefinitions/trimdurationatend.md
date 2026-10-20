@@ -1,7 +1,8 @@
 # trimDurationAtEnd
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The duration that should be removed at the end of the sample buffer, after decoding.
 
@@ -22,7 +23,7 @@ static let trimDurationAtEnd: CVAttachmentKeyDefinitionWithDefault<CMSampleBuffe
 
 #### Discussion
 
-The getter returns the default value of [`zero`](cmtime/zero.md) (nothing removed) if this attachment is not present.
+The getter returns the default value of [`zero`](../cmtime/zero.md) (nothing removed) if this attachment is not present.
 
 
 ---

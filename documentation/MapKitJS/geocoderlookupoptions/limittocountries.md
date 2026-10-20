@@ -1,7 +1,8 @@
 # limitToCountries
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A list of countries for constraining the lookup results.
 
@@ -10,7 +11,7 @@ A list of countries for constraining the lookup results.
 
 ## Declaration
 
-```swift
+```
 limitToCountries?: string;
 ```
 
@@ -20,13 +21,14 @@ This property tells the geocoder to return results within a list of countries. S
 
 ## See Also
 
-- [coordinate](geocoderlookupoptions/coordinate.md)
+### Options
+- [coordinate](./coordinate.md)
   Coordinates for constraining the lookup results.
-- [language](geocoderlookupoptions/language.md)
+- [language](./language.md)
   The language to use when displaying the lookup results.
-- [region](geocoderlookupoptions/region.md)
+- [region](./region.md)
   A region for constraining lookup results.
-- [signal](geocoderlookupoptions/signal.md)
+- [signal](./signal.md)
   A signal object allowing you to cancel the request.
 
 

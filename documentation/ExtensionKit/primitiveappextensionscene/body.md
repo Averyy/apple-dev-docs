@@ -1,7 +1,8 @@
 # body
 
 **Framework**: ExtensionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene’s user interface.
 

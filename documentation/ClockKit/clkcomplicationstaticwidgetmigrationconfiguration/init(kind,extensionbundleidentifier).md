@@ -1,7 +1,8 @@
 # init(kind:extensionBundleIdentifier:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that describes a static watchOS complication in your WidgetKit extension.
 
@@ -12,6 +13,10 @@ Creates an object that describes a static watchOS complication in your WidgetKit
 
 ```swift
 init(kind: String, extensionBundleIdentifier: String)
+```
+
+```objc
+- (instancetype) initWithKind:(NSString *) kind extensionBundleIdentifier:(NSString *) extensionBundleIdentifier;
 ```
 
 ## Parameters

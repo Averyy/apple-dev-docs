@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_AllowOpenGOP
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Enables Open GOP (Group Of Pictures) encoding.
 
@@ -19,15 +20,20 @@ Enables Open GOP (Group Of Pictures) encoding.
 let kVTCompressionPropertyKey_AllowOpenGOP: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_AllowOpenGOP;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_AllowFrameReordering: CFString](kvtcompressionpropertykey_allowframereordering.md)
+### Frame Dependency
+- [let kVTCompressionPropertyKey_AllowFrameReordering: CFString](./kvtcompressionpropertykey_allowframereordering.md)
   A Boolean value that indicates whether frame reordering is enabled.
-- [let kVTCompressionPropertyKey_AllowTemporalCompression: CFString](kvtcompressionpropertykey_allowtemporalcompression.md)
+- [let kVTCompressionPropertyKey_AllowTemporalCompression: CFString](./kvtcompressionpropertykey_allowtemporalcompression.md)
   A Boolean value indicating whether temporal compression is enabled.
-- [let kVTCompressionPropertyKey_MaxKeyFrameInterval: CFString](kvtcompressionpropertykey_maxkeyframeinterval.md)
+- [let kVTCompressionPropertyKey_MaxKeyFrameInterval: CFString](./kvtcompressionpropertykey_maxkeyframeinterval.md)
   The maximum interval between key frames, also known as the key frame rate.
-- [let kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration: CFString](kvtcompressionpropertykey_maxkeyframeintervalduration.md)
+- [let kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration: CFString](./kvtcompressionpropertykey_maxkeyframeintervalduration.md)
   The maximum duration from one key frame to the next in seconds.
 
 

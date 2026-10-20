@@ -1,7 +1,8 @@
 # didChange()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a publisher that emits values when a KVO-compliant property changes.
 
@@ -11,7 +12,7 @@ Returns a publisher that emits values when a KVO-compliant property changes.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Returns a publisher that emits values when a KVO-compliant property changes.
 ```swift
 func didChange() -> Publishers.Map<NSObject.KeyValueObservingPublisher<Subject, Value>, Void>
 ```
+
+Available when `Subject` inherits `NSObject`.
 
 #### Return Value
 

@@ -1,7 +1,8 @@
 # readAttributeInt48s(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeInt48s(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeInt48sWithParams:(MTRReadParams *) params;
 ```
 
 

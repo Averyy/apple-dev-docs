@@ -1,9 +1,10 @@
 # MDLLightType
 
 **Framework**: Model I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for the shape and style of illumination provided by a light, used by the [`lightType`](mdllight/lighttype.md) property.
+Options for the shape and style of illumination provided by a light, used by the [`lightType`](./mdllight/lighttype.md) property.
 
 **Availability**:
 - iOS 9.0+
@@ -19,45 +20,49 @@ Options for the shape and style of illumination provided by a light, used by the
 enum MDLLightType
 ```
 
+```c
+enum MDLLightType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MDLLightType.unknown](mdllighttype/unknown.md)
+- [MDLLightType.unknown](./mdllighttype/unknown.md)
   The type of the light is unknown or has not been initialized.
-- [MDLLightType.ambient](mdllighttype/ambient.md)
+- [MDLLightType.ambient](./mdllighttype/ambient.md)
   The light source should illuminate a scene evenly regardless of position or direction.
-- [MDLLightType.directional](mdllighttype/directional.md)
+- [MDLLightType.directional](./mdllighttype/directional.md)
   The light source illuminates a scene from a uniform direction regardless of its position.
-- [MDLLightType.spot](mdllighttype/spot.md)
+- [MDLLightType.spot](./mdllighttype/spot.md)
   The light source illuminates a scene from a specific position and direction.
-- [MDLLightType.point](mdllighttype/point.md)
+- [MDLLightType.point](./mdllighttype/point.md)
   The light source illuminates a scene in all directions from a specific position.
-- [MDLLightType.linear](mdllighttype/linear.md)
+- [MDLLightType.linear](./mdllighttype/linear.md)
   The light source illuminates a scene in all directions from an area in the shape of a line.
-- [MDLLightType.discArea](mdllighttype/discarea.md)
+- [MDLLightType.discArea](./mdllighttype/discarea.md)
   The light source illuminates a scene in all directions from an area in the shape of a disc.
-- [MDLLightType.rectangularArea](mdllighttype/rectangulararea.md)
+- [MDLLightType.rectangularArea](./mdllighttype/rectangulararea.md)
   The light source illuminates a scene in all directions from an area in the shape of a rectangle.
-- [MDLLightType.superElliptical](mdllighttype/superelliptical.md)
+- [MDLLightType.superElliptical](./mdllighttype/superelliptical.md)
   The light source illuminates a scene in all directions from an area in the shape of a superellipse.
-- [MDLLightType.photometric](mdllighttype/photometric.md)
+- [MDLLightType.photometric](./mdllighttype/photometric.md)
   The illumination from the light is determined by a photometric profile.
-- [MDLLightType.probe](mdllighttype/probe.md)
+- [MDLLightType.probe](./mdllighttype/probe.md)
   The illumination from the light is determined by texture images representing a sample of a scene at a specific point.
-- [MDLLightType.environment](mdllighttype/environment.md)
+- [MDLLightType.environment](./mdllighttype/environment.md)
   The illumination from the light is determined by texture images representing a sample of the surrounding environment for a scene.
 ### Initializers
-- [init?(rawValue: UInt)](mdllighttype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mdllighttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

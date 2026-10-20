@@ -1,7 +1,8 @@
 # init(pageIndex:atPoint:fileURL:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -12,6 +13,14 @@
 - visionOS 1.0+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+init(pageIndex: Int, atPoint point: CGPoint, fileURL url: URL)
+```
+
+*macOS*
 
 ```swift
 init(pageIndex: Int, atPoint point: NSPoint, fileURL url: URL)

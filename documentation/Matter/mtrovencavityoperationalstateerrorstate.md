@@ -1,7 +1,8 @@
 # MTROvenCavityOperationalStateErrorState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTROvenCavityOperationalStateErrorState
 ```
 
+```c
+enum MTROvenCavityOperationalStateErrorState : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTROvenCavityOperationalStateErrorState.commandInvalidInState](mtrovencavityoperationalstateerrorstate/commandinvalidinstate.md)
-- [MTROvenCavityOperationalStateErrorState.noError](mtrovencavityoperationalstateerrorstate/noerror.md)
-- [MTROvenCavityOperationalStateErrorState.unableToCompleteOperation](mtrovencavityoperationalstateerrorstate/unabletocompleteoperation.md)
-- [MTROvenCavityOperationalStateErrorState.unableToStartOrResume](mtrovencavityoperationalstateerrorstate/unabletostartorresume.md)
+- [MTROvenCavityOperationalStateErrorState.commandInvalidInState](./mtrovencavityoperationalstateerrorstate/commandinvalidinstate.md)
+- [MTROvenCavityOperationalStateErrorState.noError](./mtrovencavityoperationalstateerrorstate/noerror.md)
+- [MTROvenCavityOperationalStateErrorState.unableToCompleteOperation](./mtrovencavityoperationalstateerrorstate/unabletocompleteoperation.md)
+- [MTROvenCavityOperationalStateErrorState.unableToStartOrResume](./mtrovencavityoperationalstateerrorstate/unabletostartorresume.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrovencavityoperationalstateerrorstate/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrovencavityoperationalstateerrorstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

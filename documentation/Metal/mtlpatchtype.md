@@ -1,7 +1,8 @@
 # MTLPatchType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of tessellation patches that can be inputs of a post-tessellation vertex function.
 
@@ -19,33 +20,38 @@ Types of tessellation patches that can be inputs of a post-tessellation vertex f
 enum MTLPatchType
 ```
 
+```c
+enum MTLPatchType : NSUInteger;
+```
+
 ## Topics
 
 ### Patch types
-- [MTLPatchType.none](mtlpatchtype/none.md)
+- [MTLPatchType.none](./mtlpatchtype/none.md)
   An option that indicates that this isn’t a post-tessellation vertex function.
-- [MTLPatchType.triangle](mtlpatchtype/triangle.md)
+- [MTLPatchType.triangle](./mtlpatchtype/triangle.md)
   A triangle patch.
-- [MTLPatchType.quad](mtlpatchtype/quad.md)
+- [MTLPatchType.quad](./mtlpatchtype/quad.md)
   A quad patch.
 ### Initializers
-- [init?(rawValue: UInt)](mtlpatchtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlpatchtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var patchType: MTLPatchType](mtlfunction/patchtype.md)
+### Identifying the tessellation patch
+- [var patchType: MTLPatchType](./mtlfunction/patchtype.md)
   The tessellation patch type of a post-tessellation vertex function.
-- [var patchControlPointCount: Int](mtlfunction/patchcontrolpointcount.md)
+- [var patchControlPointCount: Int](./mtlfunction/patchcontrolpointcount.md)
   The number of patch control points in the post-tessellation vertex function.
 
 

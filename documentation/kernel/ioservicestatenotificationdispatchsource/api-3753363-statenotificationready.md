@@ -1,14 +1,15 @@
 # StateNotificationReady
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void StateNotificationReady(OSAction *action, OSDispatchMethod supermethod);
 ```
 

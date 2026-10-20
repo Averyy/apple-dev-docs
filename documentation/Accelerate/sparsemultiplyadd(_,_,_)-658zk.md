@@ -1,7 +1,8 @@
 # SparseMultiplyAdd(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs `Y += AX` for complex double values
 
@@ -20,6 +21,10 @@ Performs `Y += AX` for complex double values
 func SparseMultiplyAdd(_ A: SparseMatrix_Complex_Double, _ X: DenseMatrix_Complex_Double, _ Y: DenseMatrix_Complex_Double)
 ```
 
+```c
+static void SparseMultiplyAdd(SparseMatrix_Complex_Double A, DenseMatrix_Complex_Double X, DenseMatrix_Complex_Double Y);
+```
+
 #### Discussion
 
 - Parameter `A`: (input) sparse matrix.
@@ -28,7 +33,8 @@ func SparseMultiplyAdd(_ A: SparseMatrix_Complex_Double, _ X: DenseMatrix_Comple
 
 ## See Also
 
-- [func SparseMultiplyAdd(SparseMatrix_Complex_Float, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float)](sparsemultiplyadd(_:_:_:)-4dpyu.md)
+### Complex multiply-add functions
+- [func SparseMultiplyAdd(SparseMatrix_Complex_Float, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float)](./sparsemultiplyadd%28_,_,_%29-4dpyu.md)
   Performs `Y += AX` for complex float values
 
 

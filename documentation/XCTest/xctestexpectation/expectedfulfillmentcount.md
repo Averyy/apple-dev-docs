@@ -1,9 +1,10 @@
 # expectedFulfillmentCount
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The number of times [`fulfill()`](xctestexpectation/fulfill().md) must be called before the expectation is completely fulfilled.
+The number of times [`fulfill()`](./fulfill%28%29.md) must be called before the expectation is completely fulfilled.
 
 ## Declaration
 
@@ -11,15 +12,20 @@ The number of times [`fulfill()`](xctestexpectation/fulfill().md) must be called
 var expectedFulfillmentCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger expectedFulfillmentCount;
+```
+
 #### Discussion
 
-The value of [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) must be greater than 0. By default, expectations have an [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) of 1.
+The value of [`expectedFulfillmentCount`](./expectedfulfillmentcount.md) must be greater than 0. By default, expectations have an [`expectedFulfillmentCount`](./expectedfulfillmentcount.md) of 1.
 
-> **Note**:  The value of [`expectedFulfillmentCount`](xctestexpectation/expectedfulfillmentcount.md) is ignored when [`isInverted`](xctestexpectation/isinverted.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**:  The value of [`expectedFulfillmentCount`](./expectedfulfillmentcount.md) is ignored when [`isInverted`](./isinverted.md) is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var assertForOverFulfill: Bool](xctestexpectation/assertforoverfulfill.md)
+### Fulfillment Count
+- [var assertForOverFulfill: Bool](./assertforoverfulfill.md)
   Indicates that an assertion should be triggered during testing if the expectation is over-fulfilled.
 
 

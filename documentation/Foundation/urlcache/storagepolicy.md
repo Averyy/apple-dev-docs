@@ -1,9 +1,10 @@
 # URLCache.StoragePolicy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants specify the caching strategy used by an [`CachedURLResponse`](cachedurlresponse.md) object.
+These constants specify the caching strategy used by an [`CachedURLResponse`](../cachedurlresponse.md) object.
 
 **Availability**:
 - iOS 2.0+
@@ -20,27 +21,31 @@ These constants specify the caching strategy used by an [`CachedURLResponse`](ca
 enum StoragePolicy
 ```
 
+```c
+enum NSURLCacheStoragePolicy : NSUInteger;
+```
+
 ## Topics
 
 ### Policies
-- [URLCache.StoragePolicy.allowed](urlcache/storagepolicy/allowed.md)
-  Storage in [`URLCache`](urlcache.md) is allowed without restriction.
-- [URLCache.StoragePolicy.allowedInMemoryOnly](urlcache/storagepolicy/allowedinmemoryonly.md)
-  Storage in [`URLCache`](urlcache.md) is allowed; however storage should be restricted to memory only.
-- [URLCache.StoragePolicy.notAllowed](urlcache/storagepolicy/notallowed.md)
-  Storage in [`URLCache`](urlcache.md) is not allowed in any fashion, either in memory or on disk.
+- [URLCache.StoragePolicy.allowed](./storagepolicy/allowed.md)
+  Storage in [`URLCache`](../urlcache.md) is allowed without restriction.
+- [URLCache.StoragePolicy.allowedInMemoryOnly](./storagepolicy/allowedinmemoryonly.md)
+  Storage in [`URLCache`](../urlcache.md) is allowed; however storage should be restricted to memory only.
+- [URLCache.StoragePolicy.notAllowed](./storagepolicy/notallowed.md)
+  Storage in [`URLCache`](../urlcache.md) is not allowed in any fashion, either in memory or on disk.
 ### Initializers
-- [init?(rawValue: UInt)](urlcache/storagepolicy/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./storagepolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

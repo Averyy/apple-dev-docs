@@ -1,7 +1,8 @@
 # textureBufferDescriptor(with:width:resourceOptions:usage:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a texture descriptor object for a texture buffer.
 
@@ -19,22 +20,27 @@ Creates a texture descriptor object for a texture buffer.
 class func textureBufferDescriptor(with pixelFormat: MTLPixelFormat, width: Int, resourceOptions: MTLResourceOptions = [], usage: MTLTextureUsage) -> MTLTextureDescriptor
 ```
 
+```objc
++ (MTLTextureDescriptor *) textureBufferDescriptorWithPixelFormat:(MTLPixelFormat) pixelFormat width:(NSUInteger) width resourceOptions:(MTLResourceOptions) resourceOptions usage:(MTLTextureUsage) usage;
+```
+
 #### Return Value
 
 A pointer to a texture descriptor object for a texture buffer.
 
 ## Parameters
 
-- `pixelFormat`: The format describing how every pixel on the texture buffer is stored. The default value is [`MTLPixelFormat.rgba8Unorm`](mtlpixelformat/rgba8unorm.md).
+- `pixelFormat`: The format describing how every pixel on the texture buffer is stored. The default value is [`MTLPixelFormat.rgba8Unorm`](../mtlpixelformat/rgba8unorm.md).
 - `width`: The width of the texture buffer. The value needs to be greater than or equal to `1`.
 - `resourceOptions`: The access options to use for the new texture buffer.
 - `usage`: The allowed usage of the new texture buffer.
 
 ## See Also
 
-- [class func texture2DDescriptor(pixelFormat: MTLPixelFormat, width: Int, height: Int, mipmapped: Bool) -> MTLTextureDescriptor](mtltexturedescriptor/texture2ddescriptor(pixelformat:width:height:mipmapped:).md)
+### Creating texture descriptors
+- [class func texture2DDescriptor(pixelFormat: MTLPixelFormat, width: Int, height: Int, mipmapped: Bool) -> MTLTextureDescriptor](./texture2ddescriptor%28pixelformat,width,height,mipmapped%29.md)
   Creates a texture descriptor object for a 2D texture.
-- [class func textureCubeDescriptor(pixelFormat: MTLPixelFormat, size: Int, mipmapped: Bool) -> MTLTextureDescriptor](mtltexturedescriptor/texturecubedescriptor(pixelformat:size:mipmapped:).md)
+- [class func textureCubeDescriptor(pixelFormat: MTLPixelFormat, size: Int, mipmapped: Bool) -> MTLTextureDescriptor](./texturecubedescriptor%28pixelformat,size,mipmapped%29.md)
   Creates a texture descriptor object for a cube texture.
 
 

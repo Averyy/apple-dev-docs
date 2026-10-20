@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kATSUDefaultFontFallbacks: Int](katsudefaultfontfallbacks.md)
-- [var kATSULastResortOnlyFallback: Int](katsulastresortonlyfallback.md)
-- [var kATSUSequentialFallbacksExclusive: Int](katsusequentialfallbacksexclusive.md)
-- [var kATSUSequentialFallbacksPreferred: Int](katsusequentialfallbackspreferred.md)
+- [var kATSUDefaultFontFallbacks: Int](../katsudefaultfontfallbacks.md)
+- [var kATSULastResortOnlyFallback: Int](../katsulastresortonlyfallback.md)
+- [var kATSUSequentialFallbacksExclusive: Int](../katsusequentialfallbacksexclusive.md)
+- [var kATSUSequentialFallbacksPreferred: Int](../katsusequentialfallbackspreferred.md)
 
 
 ---

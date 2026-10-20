@@ -1,14 +1,15 @@
 # sptm_vector_type_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef enum sptm_vector_type_t : uint8_t {
     ...
 } sptm_vector_type_t;
@@ -17,11 +18,11 @@ typedef enum sptm_vector_type_t : uint8_t {
 ## Topics
 
 ### Constants
-- [SPTM_N_VECTOR_TYPES](sptm_vector_type_t/sptm_n_vector_types.md)
-- [SPTM_VECTOR_FIQ](sptm_vector_type_t/sptm_vector_fiq.md)
-- [SPTM_VECTOR_IRQ](sptm_vector_type_t/sptm_vector_irq.md)
-- [SPTM_VECTOR_SERROR](sptm_vector_type_t/sptm_vector_serror.md)
-- [SPTM_VECTOR_SYNC](sptm_vector_type_t/sptm_vector_sync.md)
+- [SPTM_N_VECTOR_TYPES](./sptm_vector_type_t/sptm_n_vector_types.md)
+- [SPTM_VECTOR_FIQ](./sptm_vector_type_t/sptm_vector_fiq.md)
+- [SPTM_VECTOR_IRQ](./sptm_vector_type_t/sptm_vector_irq.md)
+- [SPTM_VECTOR_SERROR](./sptm_vector_type_t/sptm_vector_serror.md)
+- [SPTM_VECTOR_SYNC](./sptm_vector_type_t/sptm_vector_sync.md)
 
 
 ---

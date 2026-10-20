@@ -1,17 +1,22 @@
 # rects(forCharacterRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An array containing the located text in the content view’s coordinate system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func rects(forCharacterRange range: NSRange) -> [NSValue]?
+```
+
+```objc
+- (NSArray<NSValue *> *) rectsForCharacterRange:(NSRange) range;
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ The given range is guaranteed not to overlap multiple views.
 
 ## See Also
 
-- [func contentView(at: Int, effectiveCharacterRange: NSRangePointer) -> NSView](nstextfinderclient/contentview(at:effectivecharacterrange:).md)
+### Determining and Displaying Text Locations
+- [func contentView(at: Int, effectiveCharacterRange: NSRangePointer) -> NSView](./contentview%28at,effectivecharacterrange%29.md)
   Returns the view the context is displayed in.
-- [func scrollRangeToVisible(NSRange)](nstextfinderclient/scrollrangetovisible(_:).md)
+- [func scrollRangeToVisible(NSRange)](./scrollrangetovisible%28_%29.md)
   Scrolls the specified range such that it is visible.
-- [var visibleCharacterRanges: [NSValue]](nstextfinderclient/visiblecharacterranges.md)
+- [var visibleCharacterRanges: [NSValue]](./visiblecharacterranges.md)
   An array of visible character ranges.
 
 

@@ -1,9 +1,10 @@
 # deltaTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-See: [`deltaTime`](animationstateprotocol/deltatime.md)
+See: [`deltaTime`](../animationstateprotocol/deltatime.md)
 
 **Availability**:
 - iOS 18.0+

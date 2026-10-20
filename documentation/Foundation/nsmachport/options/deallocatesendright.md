@@ -1,7 +1,8 @@
 # deallocateSendRight
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Deallocate a send right when the `NSMachPort` object is invalidated or destroyed.
 
@@ -20,9 +21,14 @@ Deallocate a send right when the `NSMachPort` object is invalidated or destroyed
 static var deallocateSendRight: NSMachPort.Options { get }
 ```
 
+```c
+NSMachPortDeallocateSendRight
+```
+
 ## See Also
 
-- [static var deallocateReceiveRight: NSMachPort.Options](nsmachport/options/deallocatereceiveright.md)
+### Constants
+- [static var deallocateReceiveRight: NSMachPort.Options](./deallocatereceiveright.md)
   Remove a receive right when the `NSMachPort` object is invalidated or destroyed.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -13,6 +14,10 @@
 
 ```swift
 func readMultipleBlock(readConfiguration: NFCISO15693ReadMultipleBlocksConfiguration, completionHandler: @escaping (Data, (any Error)?) -> Void)
+```
+
+```objc
+- (void) readMultipleBlocksWithConfiguration:(NFCISO15693ReadMultipleBlocksConfiguration *) readConfiguration completionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
 #### Discussion

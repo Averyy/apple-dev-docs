@@ -1,7 +1,8 @@
 # readAttributeCurrentApp(withClusterStateCache:endpoint:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+class func readAttributeCurrentApp(withClusterStateCache clusterStateCacheContainer: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: @escaping @Sendable (MTRApplicationLauncherClusterApplicationEPStruct?, (any Error)?) -> Void)
+```
+
+```swift
 class func readAttributeCurrentApp(withClusterStateCache clusterStateCacheContainer: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t) async throws -> MTRApplicationLauncherClusterApplicationEPStruct
+```
+
+```objc
++ (void) readAttributeCurrentAppWithClusterStateCache:(MTRClusterStateCacheContainer *) clusterStateCacheContainer endpoint:(NSNumber *) endpoint queue:(dispatch_queue_t) queue completion:(void (^)(MTRApplicationLauncherClusterApplicationEPStruct *value, NSError *error)) completion;
 ```
 
 

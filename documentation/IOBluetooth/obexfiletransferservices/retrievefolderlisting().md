@@ -1,17 +1,22 @@
 # retrieveFolderListing()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get a remote directory listing
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func retrieveFolderListing() -> OBEXError
+```
+
+```objc
+- (OBEXError) retrieveFolderListing;
 ```
 
 #### Return Value

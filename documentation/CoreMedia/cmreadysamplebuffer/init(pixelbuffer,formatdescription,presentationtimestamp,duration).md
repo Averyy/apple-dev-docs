@@ -1,7 +1,8 @@
 # init(pixelBuffer:formatDescription:presentationTimeStamp:duration:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sample buffer carrying image buffer.
 
@@ -19,6 +20,8 @@ Creates a sample buffer carrying image buffer.
 ```swift
 init(pixelBuffer content: Content, formatDescription: CMVideoFormatDescription? = nil, presentationTimeStamp: CMTime, duration: CMTime = .invalid)
 ```
+
+Available when `Content` is `CVReadOnlyPixelBuffer`.
 
 ## Parameters
 

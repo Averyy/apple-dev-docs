@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The tessellation patch type of a post-tessellation vertex function.
@@ -20,15 +21,20 @@ The tessellation patch type of a post-tessellation vertex function.
 var patchType: MTLPatchType { get }
 ```
 
+```objc
+@property (readonly) MTLPatchType patchType;
+```
+
 #### Discussion
 
-This value is [`MTLPatchType.none`](mtlpatchtype/none.md) if the function isn’t a post-tessellation vertex function.
+This value is [`MTLPatchType.none`](../mtlpatchtype/none.md) if the function isn’t a post-tessellation vertex function.
 
 ## See Also
 
-- [var patchControlPointCount: Int](mtlfunction/patchcontrolpointcount.md)
+### Identifying the tessellation patch
+- [var patchControlPointCount: Int](./patchcontrolpointcount.md)
   The number of patch control points in the post-tessellation vertex function.
-- [enum MTLPatchType](mtlpatchtype.md)
+- [enum MTLPatchType](../mtlpatchtype.md)
   Types of tessellation patches that can be inputs of a post-tessellation vertex function.
 
 

@@ -1,7 +1,8 @@
 # init(minimum:maximum:preferred:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -19,7 +20,8 @@ init(minimum: Float, maximum: Float, preferred: Float? = nil)
 
 ## See Also
 
-- [init()](caframeraterange/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

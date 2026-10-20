@@ -1,7 +1,8 @@
 # realGroupID
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The caller’s real group ID.
 
@@ -14,13 +15,18 @@ The caller’s real group ID.
 var realGroupID: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger realGroupID;
+```
+
 ## See Also
 
-- [var realUserID: Int](fscontext/realuserid.md)
+### Accessing context properties
+- [var realUserID: Int](./realuserid.md)
   The caller’s real user ID.
-- [var effectiveUserID: Int](fscontext/effectiveuserid.md)
+- [var effectiveUserID: Int](./effectiveuserid.md)
   The caller’s effective user ID.
-- [var effectiveGroupID: Int](fscontext/effectivegroupid.md)
+- [var effectiveGroupID: Int](./effectivegroupid.md)
   The caller’s effective group ID.
 
 

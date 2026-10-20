@@ -1,7 +1,8 @@
 # application(_:didReceiveRemoteNotification:fetchCompletionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the app that a remote notification arrived that indicates there is data to be fetched.
 
@@ -9,18 +10,26 @@ Tells the app that a remote notification arrived that indicates there is data to
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
+optional func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void)
+```
+
+```swift
 optional func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) async -> UIBackgroundFetchResult
+```
+
+```objc
+- (void) application:(UIApplication *) application didReceiveRemoteNotification:(NSDictionary *) userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result)) completionHandler;
 ```
 
 #### Discussion
 
-Use this method to process incoming remote notifications for your app. Unlike the [`application(_:didReceiveRemoteNotification:)`](uiapplicationdelegate/application(_:didreceiveremotenotification:).md) method, which is called only when your app is running in the foreground, the system calls this method when your app is running in the foreground or background. In addition, if you enabled the remote notifications background mode, the system launches your app (or wakes it from the suspended state) and puts it in the background state when a remote notification arrives. However, the system does not automatically launch your app if the user has force-quit it. In that situation, the user must relaunch your app or restart the device before the system attempts to launch your app automatically again.
+Use this method to process incoming remote notifications for your app. Unlike the [`application(_:didReceiveRemoteNotification:)`](./application%28_,didreceiveremotenotification%29.md) method, which is called only when your app is running in the foreground, the system calls this method when your app is running in the foreground or background. In addition, if you enabled the remote notifications background mode, the system launches your app (or wakes it from the suspended state) and puts it in the background state when a remote notification arrives. However, the system does not automatically launch your app if the user has force-quit it. In that situation, the user must relaunch your app or restart the device before the system attempts to launch your app automatically again.
 
 > **Note**:  If the user opens your app from the system-displayed alert, the system may call this method again when your app is about to enter the foreground so that you can update your user interface and display information pertaining to the notification.
 
@@ -31,14 +40,15 @@ As soon as you finish processing the notification, you *must* call the block in 
 ## Parameters
 
 - `application`: Your singleton app object.
-- `userInfo`: A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull). For more information about the contents of the remote notification dictionary, see [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification).
-- `completionHandler`: The block to execute when the download operation is complete. When calling this block, pass in the fetch result value that best describes the results of your download operation. You must call this handler and should do so as soon as possible. For a list of possible values, see the [`UIBackgroundFetchResult`](uibackgroundfetchresult.md) type.
+- `userInfo`: A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an [`NSDictionary`](../../Foundation/nsdictionary.md) object; the dictionary may contain only property-list objects plus [`NSNull`](../../Foundation/nsnull.md). For more information about the contents of the remote notification dictionary, see [Generating a remote notification](../../UserNotifications/generating-a-remote-notification.md).
+- `completionHandler`: The block to execute when the download operation is complete. When calling this block, pass in the fetch result value that best describes the results of your download operation. You must call this handler and should do so as soon as possible. For a list of possible values, see the [`UIBackgroundFetchResult`](../uibackgroundfetchresult.md) type.
 
 ## See Also
 
-- [func application(UIApplication, didRegisterForRemoteNotificationsWithDeviceToken: Data)](uiapplicationdelegate/application(_:didregisterforremotenotificationswithdevicetoken:).md)
+### Handling remote notification registration
+- [func application(UIApplication, didRegisterForRemoteNotificationsWithDeviceToken: Data)](./application%28_,didregisterforremotenotificationswithdevicetoken%29.md)
   Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).
-- [func application(UIApplication, didFailToRegisterForRemoteNotificationsWithError: any Error)](uiapplicationdelegate/application(_:didfailtoregisterforremotenotificationswitherror:).md)
+- [func application(UIApplication, didFailToRegisterForRemoteNotificationsWithError: any Error)](./application%28_,didfailtoregisterforremotenotificationswitherror%29.md)
   Tells the delegate when Apple Push Notification service cannot successfully complete the registration process.
 
 

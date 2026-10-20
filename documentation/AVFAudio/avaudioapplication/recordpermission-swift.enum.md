@@ -1,18 +1,19 @@
 # AVAudioApplication.recordPermission
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the app’s permission to record audio.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ Constants that indicate the app’s permission to record audio.
 enum recordPermission
 ```
 
+```c
+enum AVAudioApplicationRecordPermission : NSInteger;
+```
+
 ## Topics
 
 ### Creating a permission state
-- [init?(rawValue: Int)](avaudioapplication/recordpermission-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./recordpermission-swift.enum/init%28rawvalue%29.md)
 ### Checking permission states
-- [AVAudioApplication.recordPermission.undetermined](avaudioapplication/recordpermission-swift.enum/undetermined.md)
+- [AVAudioApplication.recordPermission.undetermined](./recordpermission-swift.enum/undetermined.md)
   Indicates the app hasn’t requested recording permission.
-- [AVAudioApplication.recordPermission.granted](avaudioapplication/recordpermission-swift.enum/granted.md)
+- [AVAudioApplication.recordPermission.granted](./recordpermission-swift.enum/granted.md)
   Indicates the user grants the app permission to record audio.
-- [AVAudioApplication.recordPermission.denied](avaudioapplication/recordpermission-swift.enum/denied.md)
+- [AVAudioApplication.recordPermission.denied](./recordpermission-swift.enum/denied.md)
   Indicates the user denies the app permission to record audio.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func requestRecordPermission(completionHandler: (Bool) -> Void)](avaudioapplication/requestrecordpermission(completionhandler:).md)
+### Requesting audio recording permission
+- [class func requestRecordPermission(completionHandler: (Bool) -> Void)](./requestrecordpermission%28completionhandler%29.md)
   Determines whether the app has permission to record audio.
-- [var recordPermission: AVAudioApplication.recordPermission](avaudioapplication/recordpermission-swift.property.md)
+- [var recordPermission: AVAudioApplication.recordPermission](./recordpermission-swift.property.md)
   The app’s permission to record audio.
 
 

@@ -1,7 +1,8 @@
 # launchUserNotificationUserInfoKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that indicates your app was launched because a user activated a notification in the Notification Center.
 
@@ -14,9 +15,13 @@ A key that indicates your app was launched because a user activated a notificati
 class let launchUserNotificationUserInfoKey: String
 ```
 
+```c
+extern NSString * const NSApplicationLaunchUserNotificationKey;
+```
+
 #### Discussion
 
-The [`launchUserNotificationUserInfoKey`](nsapplication/launchusernotificationuserinfokey.md) key is an [`NSUserNotification`](https://developer.apple.com/documentation/foundation/nsusernotification) object that is present in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/userinfo) dictionary of the [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md) notification if your app was launched because a user activated a notification in the Notification Center. To access the notification payload in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/userinfo) dictionary, you can use code like this:
+The [`launchUserNotificationUserInfoKey`](./launchusernotificationuserinfokey.md) key is an [`NSUserNotification`](../../Foundation/nsusernotification.md) object that is present in the [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary of the [`didFinishLaunchingNotification`](./didfinishlaunchingnotification.md) notification if your app was launched because a user activated a notification in the Notification Center. To access the notification payload in the [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary, you can use code like this:
 
 ```objc
 NSUserNotification *userNotification = [[myNotification userInfo]
@@ -28,7 +33,8 @@ NSUserNotification *userNotification = [[myNotification userInfo]
 
 ## See Also
 
-- [class let launchIsDefaultUserInfoKey: String](nsapplication/launchisdefaultuserinfokey.md)
+### Keys
+- [class let launchIsDefaultUserInfoKey: String](./launchisdefaultuserinfokey.md)
   A Boolean value that indicates if the app launch is a default launch.
 
 

@@ -1,7 +1,8 @@
 # isDaylightSavingTime
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is currently using daylight saving time.
 
@@ -20,21 +21,26 @@ A Boolean value that indicates whether the receiver is currently using daylight 
 var isDaylightSavingTime: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isDaylightSavingTime) BOOL daylightSavingTime;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the receiver is currently using daylight saving time, otherwise [`false`](https://developer.apple.com/documentation/swift/false). This property invokes [`isDaylightSavingTime(for:)`](nstimezone/isdaylightsavingtime(for:).md) with the current date as the argument.
+If [`true`](../../Swift/true.md), the receiver is currently using daylight saving time, otherwise [`false`](../../Swift/false.md). This property invokes [`isDaylightSavingTime(for:)`](./isdaylightsavingtime%28for%29.md) with the current date as the argument.
 
 ## See Also
 
-- [func isDaylightSavingTime(for: Date) -> Bool](nstimezone/isdaylightsavingtime(for:).md)
+### Working with Daylight Savings
+- [func isDaylightSavingTime(for: Date) -> Bool](./isdaylightsavingtime%28for%29.md)
   Indicates whether the receiver uses daylight saving time on a given date.
-- [var daylightSavingTimeOffset: TimeInterval](nstimezone/daylightsavingtimeoffset.md)
+- [var daylightSavingTimeOffset: TimeInterval](./daylightsavingtimeoffset.md)
   The current daylight saving time offset of the receiver.
-- [func daylightSavingTimeOffset(for: Date) -> TimeInterval](nstimezone/daylightsavingtimeoffset(for:).md)
+- [func daylightSavingTimeOffset(for: Date) -> TimeInterval](./daylightsavingtimeoffset%28for%29.md)
   Returns the daylight saving time offset for a given date.
-- [var nextDaylightSavingTimeTransition: Date?](nstimezone/nextdaylightsavingtimetransition.md)
+- [var nextDaylightSavingTimeTransition: Date?](./nextdaylightsavingtimetransition.md)
   The date of the next daylight saving time transition for the receiver.
-- [func nextDaylightSavingTimeTransition(after: Date) -> Date?](nstimezone/nextdaylightsavingtimetransition(after:).md)
+- [func nextDaylightSavingTimeTransition(after: Date) -> Date?](./nextdaylightsavingtimetransition%28after%29.md)
   Returns the next daylight saving time transition after a given date.
 
 

@@ -1,23 +1,28 @@
 # sampleIsFullSync
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a sample is a full sync sample.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var sampleIsFullSync: ObjCBool
+```
+
+```c
+BOOL sampleIsFullSync;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ A full sync sample, also called a Instantaneous Decoder Refresh sample, is suffi
 
 ## See Also
 
-- [var sampleIsPartialSync: ObjCBool](avsamplecursorsyncinfo/sampleispartialsync.md)
+### Sync information
+- [var sampleIsPartialSync: ObjCBool](./sampleispartialsync.md)
   A Boolean value that indicates whether a sample is a partial sync sample.
-- [var sampleIsDroppable: ObjCBool](avsamplecursorsyncinfo/sampleisdroppable.md)
+- [var sampleIsDroppable: ObjCBool](./sampleisdroppable.md)
   A Boolean value that indicates whether a sample is droppable.
 
 

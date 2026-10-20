@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The accessory manager singleton object.
 
@@ -19,7 +20,7 @@ static let shared: DockAccessoryManager
 
 #### Discussion
 
-Use this property to obtain an instance of [`DockAccessoryManager`](dockaccessorymanager.md).
+Use this property to obtain an instance of [`DockAccessoryManager`](../dockaccessorymanager.md).
 
 
 ---

@@ -1,14 +1,15 @@
 # stack_contents
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 uint8_t stack_contents[8];
 ```
 

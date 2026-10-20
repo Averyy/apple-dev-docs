@@ -1,7 +1,8 @@
 # localizedString()
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the localized string for the current language.
 
@@ -16,6 +17,10 @@ Returns the localized string for the current language.
 
 ```swift
 func localizedString() -> String
+```
+
+```objc
+- (NSString *) localizedString;
 ```
 
 #### Return Value

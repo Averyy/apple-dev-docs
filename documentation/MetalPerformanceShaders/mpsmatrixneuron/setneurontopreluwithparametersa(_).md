@@ -1,7 +1,8 @@
 # setNeuronToPReLUWithParametersA(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setNeuronToPReLUWithParametersA(_ A: Data)
+```
+
+```objc
+- (void) setNeuronToPReLUWithParametersA:(NSData *) A;
 ```
 
 

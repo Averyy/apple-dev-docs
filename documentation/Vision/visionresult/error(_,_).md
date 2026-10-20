@@ -1,7 +1,8 @@
 # VisionResult.error(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from encountering a framework error.
 

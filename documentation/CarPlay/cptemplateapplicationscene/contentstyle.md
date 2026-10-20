@@ -1,7 +1,8 @@
 # contentStyle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -12,6 +13,10 @@
 
 ```swift
 var contentStyle: UIUserInterfaceStyle { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIUserInterfaceStyle contentStyle;
 ```
 
 

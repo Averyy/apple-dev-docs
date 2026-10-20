@@ -1,7 +1,8 @@
 # SecCodeValidateFileResource(_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
@@ -10,6 +11,10 @@
 
 ```swift
 func SecCodeValidateFileResource(_ code: SecStaticCode, _ relativePath: CFString, _ fileData: CFData, _ flags: SecCSFlags) -> OSStatus
+```
+
+```c
+OSStatus SecCodeValidateFileResource(SecStaticCodeRef code, CFStringRef relativePath, CFDataRef fileData, SecCSFlags flags);
 ```
 
 

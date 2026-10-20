@@ -1,7 +1,8 @@
 # openPlayground(withContentIdentifier:toPageAtIndex:)
 
 **Framework**: Playground Support  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Xcode 10.2+

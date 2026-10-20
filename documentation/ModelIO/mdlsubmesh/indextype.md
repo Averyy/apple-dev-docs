@@ -1,7 +1,8 @@
 # indexType
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type for each element in the submesh’s index buffer.
 
@@ -19,21 +20,26 @@ The data type for each element in the submesh’s index buffer.
 var indexType: MDLIndexBitDepth { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MDLIndexBitDepth indexType;
+```
+
 #### Discussion
 
 For optimum performance, an index buffer should generally use the smallest possible data type to fit its number of indices.
 
 ## See Also
 
-- [var indexBuffer: any MDLMeshBuffer](mdlsubmesh/indexbuffer.md)
+### Working with a Submesh’s Index Buffer
+- [var indexBuffer: any MDLMeshBuffer](./indexbuffer.md)
   An object that provides index data for the submesh.
-- [var indexCount: Int](mdlsubmesh/indexcount.md)
+- [var indexCount: Int](./indexcount.md)
   The number of indices in the submesh’s index buffer.
-- [var geometryType: MDLGeometryType](mdlsubmesh/geometrytype.md)
+- [var geometryType: MDLGeometryType](./geometrytype.md)
   The type of geometric primitives described by the submesh’s index buffer.
-- [var topology: MDLSubmeshTopology?](mdlsubmesh/topology.md)
+- [var topology: MDLSubmeshTopology?](./topology.md)
   A description of how the non-uniform layout of the submesh’s index buffer defines the shape of the mesh.
-- [func indexBuffer(asIndexType: MDLIndexBitDepth) -> any MDLMeshBuffer](mdlsubmesh/indexbuffer(asindextype:).md)
+- [func indexBuffer(asIndexType: MDLIndexBitDepth) -> any MDLMeshBuffer](./indexbuffer%28asindextype%29.md)
 
 
 ---

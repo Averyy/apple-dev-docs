@@ -1,7 +1,8 @@
 # transposeTensor(_:dimension:withDimension:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a transpose operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a transpose operation and returns the result tensor.
 
 ```swift
 func transposeTensor(_ tensor: MPSGraphTensor, dimension dimensionIndex: Int, withDimension dimensionIndex2: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) transposeTensor:(MPSGraphTensor *) tensor dimension:(NSUInteger) dimensionIndex withDimension:(NSUInteger) dimensionIndex2 name:(NSString *) name;
 ```
 
 #### Return Value

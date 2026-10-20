@@ -1,6 +1,7 @@
 # Revoking API Keys
 
-**Framework**: Enterprise Program API
+**Framework**: Enterprise Program API  
+**Role**: Article
 
 Revoke unused, lost, or compromised private keys.
 
@@ -12,7 +13,7 @@ Revoke an API key immediately if it becomes inactive, lost, or compromised. A re
 
 ##### Revoking Enterprise Program Keys
 
-To revoke a team API key, log in to the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com) with an Admin account.
+To revoke a team API key, log in to the [Apple Developer website](https://developer.apple.com) with an Admin account.
 
 1. Select Users and Access, then select the Integrations tab.
 2. Click Edit next to the list of Active keys.
@@ -21,13 +22,14 @@ To revoke a team API key, log in to the [`Apple Developer website`](https://deve
 
 ## See Also
 
-- [Creating API Keys for Enterprise Program API](creating-api-keys-for-enterprise-program-api.md)
+### Essentials
+- [Creating API Keys for Enterprise Program API](./creating-api-keys-for-enterprise-program-api.md)
   Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
-- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
+- [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md)
   Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
-- [Identifying Rate Limits](identifying-rate-limits.md)
+- [Identifying Rate Limits](./identifying-rate-limits.md)
   Recognize the rate limits that REST API responses provide and handle them in your code.
-- [Enterprise Program API Release Notes](enterprise-api-release-notes.md)
+- [Enterprise Program API Release Notes](./enterprise-api-release-notes.md)
   Learn about new features and updates in the Enterprise Program API.
 
 

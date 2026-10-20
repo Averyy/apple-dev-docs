@@ -1,7 +1,8 @@
 # availableDateRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of dates that the calendar view displays.
 
@@ -17,15 +18,20 @@ The range of dates that the calendar view displays.
 var availableDateRange: DateInterval { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nonnull) NSDateInterval * availableDateRange;
+```
+
 #### Discussion
 
-Set `availableDateRange` to restrict the earliest or latest dates that the calendar view displays. The default date range starts with [`distantPast`](https://developer.apple.com/documentation/foundation/date/distantpast) (Swift) or [`distantPast`](https://developer.apple.com/documentation/foundation/nsdate/distantpast) (Objective-C), and ends with [`distantFuture`](https://developer.apple.com/documentation/foundation/date/distantfuture) (Swift) or [`distantFuture`](https://developer.apple.com/documentation/foundation/nsdate/distantfuture) (Objective-C).
+Set `availableDateRange` to restrict the earliest or latest dates that the calendar view displays. The default date range starts with [`distantPast`](../../Foundation/date/distantpast.md) (Swift) or [`distantPast`](../../Foundation/nsdate/distantpast.md) (Objective-C), and ends with [`distantFuture`](../../Foundation/date/distantfuture.md) (Swift) or [`distantFuture`](../../Foundation/nsdate/distantfuture.md) (Objective-C).
 
 ## See Also
 
-- [var visibleDateComponents: DateComponents](uicalendarview/visibledatecomponents.md)
+### Setting the visible date and range
+- [var visibleDateComponents: DateComponents](./visibledatecomponents.md)
   The date components that represent the visible date in the calendar view.
-- [func setVisibleDateComponents(DateComponents, animated: Bool)](uicalendarview/setvisibledatecomponents(_:animated:).md)
+- [func setVisibleDateComponents(DateComponents, animated: Bool)](./setvisibledatecomponents%28_,animated%29.md)
   Sets the date components that represent the date for the calendar view to make visible, with an option to animate the date change.
 
 

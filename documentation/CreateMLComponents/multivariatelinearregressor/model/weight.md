@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The linear coefficients.
 
@@ -22,11 +23,12 @@ var weight: MLShapedArray<Scalar> { get }
 
 ## See Also
 
-- [var inputSize: Int](multivariatelinearregressor/model/inputsize.md)
+### Getting the properties
+- [var inputSize: Int](./inputsize.md)
   The input size.
-- [var outputSize: Int](multivariatelinearregressor/model/outputsize.md)
+- [var outputSize: Int](./outputsize.md)
   The output size.
-- [var bias: MLShapedArray<Scalar>?](multivariatelinearregressor/model/bias.md)
+- [var bias: MLShapedArray<Scalar>?](./bias.md)
   The bias coefficients.
 
 

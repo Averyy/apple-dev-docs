@@ -1,7 +1,8 @@
 # eulerAngles()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -18,10 +19,15 @@
 func eulerAngles() -> vector_float3
 ```
 
+```objc
+- (vector_float3) eulerAngles;
+```
+
 ## See Also
 
-- [func quaternion() -> simd_quatf](sktransformnode/quaternion.md)
-- [func rotationMatrix() -> matrix_float3x3](sktransformnode/rotationmatrix.md)
+### Reading the Current Rotation
+- [func quaternion() -> simd_quatf](./quaternion%28%29.md)
+- [func rotationMatrix() -> matrix_float3x3](./rotationmatrix%28%29.md)
 
 
 ---

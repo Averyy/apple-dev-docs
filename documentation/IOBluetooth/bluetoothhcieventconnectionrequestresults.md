@@ -1,10 +1,11 @@
 # BluetoothHCIEventConnectionRequestResults
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,39 +13,44 @@
 struct BluetoothHCIEventConnectionRequestResults
 ```
 
+```c
+struct BluetoothHCIEventConnectionRequestResults;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](bluetoothhcieventconnectionrequestresults/init.md)
-- [init(deviceAddress: BluetoothDeviceAddress, classOfDevice: BluetoothClassOfDevice, linkType: BluetoothLinkType)](bluetoothhcieventconnectionrequestresults/init(deviceaddress:classofdevice:linktype:).md)
+- [init()](./bluetoothhcieventconnectionrequestresults/init%28%29.md)
+- [init(deviceAddress: BluetoothDeviceAddress, classOfDevice: BluetoothClassOfDevice, linkType: BluetoothLinkType)](./bluetoothhcieventconnectionrequestresults/init%28deviceaddress,classofdevice,linktype%29.md)
 ### Instance Properties
-- [var classOfDevice: BluetoothClassOfDevice](bluetoothhcieventconnectionrequestresults/classofdevice.md)
-- [var deviceAddress: BluetoothDeviceAddress](bluetoothhcieventconnectionrequestresults/deviceaddress.md)
-- [var linkType: BluetoothLinkType](bluetoothhcieventconnectionrequestresults/linktype.md)
+- [var classOfDevice: BluetoothClassOfDevice](./bluetoothhcieventconnectionrequestresults/classofdevice.md)
+- [var deviceAddress: BluetoothDeviceAddress](./bluetoothhcieventconnectionrequestresults/deviceaddress.md)
+- [var linkType: BluetoothLinkType](./bluetoothhcieventconnectionrequestresults/linktype.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct BluetoothAFHHostChannelClassification](bluetoothafhhostchannelclassification.md)
-- [struct BluetoothAFHResults](bluetoothafhresults.md)
-- [struct BluetoothAMPCommandRejectReason](bluetoothampcommandrejectreason.md)
-- [struct BluetoothAMPCreatePhysicalLinkResponseStatus](bluetoothampcreatephysicallinkresponsestatus.md)
-- [struct BluetoothAMPDisconnectPhysicalLinkResponseStatus](bluetoothampdisconnectphysicallinkresponsestatus.md)
-- [struct BluetoothAMPDiscoverResponseControllerStatus](bluetoothampdiscoverresponsecontrollerstatus.md)
-- [struct BluetoothAMPGetAssocResponseStatus](bluetoothampgetassocresponsestatus.md)
-- [struct BluetoothAMPGetInfoResponseStatus](bluetoothampgetinforesponsestatus.md)
-- [struct BluetoothAMPManagerCode](bluetoothampmanagercode.md)
-- [struct BluetoothAuthenticationRequirementsValues](bluetoothauthenticationrequirementsvalues.md)
-- [struct BluetoothCompanyIdentifers](bluetoothcompanyidentifers.md)
-- [struct BluetoothDeviceAddress](bluetoothdeviceaddress.md)
-- [struct BluetoothEnhancedSynchronousConnectionInfo](bluetoothenhancedsynchronousconnectioninfo.md)
-- [struct BluetoothEventFilterCondition](bluetootheventfiltercondition.md)
-- [struct BluetoothFeatureBits](bluetoothfeaturebits.md)
+### Structures
+- [struct BluetoothAFHHostChannelClassification](./bluetoothafhhostchannelclassification.md)
+- [struct BluetoothAFHResults](./bluetoothafhresults.md)
+- [struct BluetoothAMPCommandRejectReason](./bluetoothampcommandrejectreason.md)
+- [struct BluetoothAMPCreatePhysicalLinkResponseStatus](./bluetoothampcreatephysicallinkresponsestatus.md)
+- [struct BluetoothAMPDisconnectPhysicalLinkResponseStatus](./bluetoothampdisconnectphysicallinkresponsestatus.md)
+- [struct BluetoothAMPDiscoverResponseControllerStatus](./bluetoothampdiscoverresponsecontrollerstatus.md)
+- [struct BluetoothAMPGetAssocResponseStatus](./bluetoothampgetassocresponsestatus.md)
+- [struct BluetoothAMPGetInfoResponseStatus](./bluetoothampgetinforesponsestatus.md)
+- [struct BluetoothAMPManagerCode](./bluetoothampmanagercode.md)
+- [struct BluetoothAuthenticationRequirementsValues](./bluetoothauthenticationrequirementsvalues.md)
+- [struct BluetoothCompanyIdentifers](./bluetoothcompanyidentifers.md)
+- [struct BluetoothDeviceAddress](./bluetoothdeviceaddress.md)
+- [struct BluetoothEnhancedSynchronousConnectionInfo](./bluetoothenhancedsynchronousconnectioninfo.md)
+- [struct BluetoothEventFilterCondition](./bluetootheventfiltercondition.md)
+- [struct BluetoothFeatureBits](./bluetoothfeaturebits.md)
 
 
 ---

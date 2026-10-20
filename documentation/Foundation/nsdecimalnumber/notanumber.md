@@ -1,7 +1,8 @@
 # notANumber
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A decimal number that specifies no number.
 
@@ -21,21 +22,26 @@ A decimal number that specifies no number.
 class var notANumber: NSDecimalNumber { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSDecimalNumber * notANumber;
+```
+
 #### Return Value
 
 An `NSDecimalNumber` object that specifies no number.
 
 #### Discussion
 
-Any arithmetic method receiving [`notANumber`](nsdecimalnumber/notanumber.md) as an argument returns [`notANumber`](nsdecimalnumber/notanumber.md).
+Any arithmetic method receiving [`notANumber`](./notanumber.md) as an argument returns [`notANumber`](./notanumber.md).
 
-This value can be a useful way of handling non-numeric data in an input file. This method can also be a useful response to calculation errors. For more information on calculation errors, see the [`exceptionDuringOperation(_:error:leftOperand:rightOperand:)`](nsdecimalnumberbehaviors/exceptionduringoperation(_:error:leftoperand:rightoperand:).md) method description in the [`NSDecimalNumberBehaviors`](nsdecimalnumberbehaviors.md) protocol specification.
+This value can be a useful way of handling non-numeric data in an input file. This method can also be a useful response to calculation errors. For more information on calculation errors, see the [`exceptionDuringOperation(_:error:leftOperand:rightOperand:)`](../nsdecimalnumberbehaviors/exceptionduringoperation%28_,error,leftoperand,rightoperand%29.md) method description in the [`NSDecimalNumberBehaviors`](../nsdecimalnumberbehaviors.md) protocol specification.
 
 ## See Also
 
-- [class var one: NSDecimalNumber](nsdecimalnumber/one.md)
+### Creating a Decimal Number
+- [class var one: NSDecimalNumber](./one.md)
   A decimal number equivalent to the number 1.0.
-- [class var zero: NSDecimalNumber](nsdecimalnumber/zero.md)
+- [class var zero: NSDecimalNumber](./zero.md)
   A decimal number equivalent to the number 0.0.
 
 

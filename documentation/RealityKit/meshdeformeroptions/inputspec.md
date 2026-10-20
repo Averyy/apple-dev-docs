@@ -1,7 +1,8 @@
 # inputSpec
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected vertex buffer input spec for the deformer type.
 
@@ -25,7 +26,8 @@ This is used to determine dependencies lower in the deformation stack that may r
 
 ## See Also
 
-- [let outputSpec: MeshDeformerVertexOptions](meshdeformeroptions/outputspec.md)
+### Specifying vertex data
+- [let outputSpec: MeshDeformerVertexOptions](./outputspec.md)
   The expected vertex buffer output spec for the deformer type.
 
 

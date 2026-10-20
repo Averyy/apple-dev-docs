@@ -1,7 +1,8 @@
 # addTextField(configurationHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a text field to an alert.
 
@@ -9,7 +10,7 @@ Adds a text field to an alert.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ Adds a text field to an alert.
 func addTextField(configurationHandler: ((UITextField) -> Void)? = nil)
 ```
 
+```objc
+- (void) addTextFieldWithConfigurationHandler:(void (^)(UITextField *textField)) configurationHandler;
+```
+
 #### Discussion
 
 Calling this method adds an editable text field to the alert. You can call this method more than once to add additional text fields. The text fields are stacked in the resulting alert.
 
-You can add a text field only if the [`preferredStyle`](uialertcontroller/preferredstyle.md) property is set to [`UIAlertController.Style.alert`](uialertcontroller/style/alert.md).
+You can add a text field only if the [`preferredStyle`](./preferredstyle.md) property is set to [`UIAlertController.Style.alert`](./style/alert.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ You can add a text field only if the [`preferredStyle`](uialertcontroller/prefer
 
 ## See Also
 
-- [var textFields: [UITextField]?](uialertcontroller/textfields.md)
+### Configuring text fields
+- [var textFields: [UITextField]?](./textfields.md)
   The array of text fields displayed by the alert.
 
 

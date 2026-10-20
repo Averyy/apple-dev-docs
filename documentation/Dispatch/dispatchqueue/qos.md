@@ -1,7 +1,8 @@
 # qos
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quality-of-service level assgined to the queue.
 
@@ -10,9 +11,9 @@ The quality-of-service level assgined to the queue.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ var qos: DispatchQoS { get }
 
 ## See Also
 
-- [var label: String](dispatchqueue/label.md)
+### Managing Queue Attributes
+- [var label: String](./label.md)
   The label you assigned to the dispatch queue at creation time.
-- [func setTarget(queue: dispatch_queue_t?)](dispatchobject/settarget(queue:).md)
+- [func setTarget(queue: dispatch_queue_t?)](../dispatchobject/settarget%28queue%29.md)
   Specifies the dispatch queue on which to perform work associated with the current object.
 
 

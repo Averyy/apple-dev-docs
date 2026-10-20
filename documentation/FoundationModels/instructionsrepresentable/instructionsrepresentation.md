@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An instance that represents the instructions.
@@ -20,6 +21,14 @@ An instance that represents the instructions.
 @InstructionsBuilder
 var instructionsRepresentation: Instructions { get }
 ```
+
+## Default Implementations
+
+### InstructionsRepresentable Implementations
+- [var instructionsRepresentation: Instructions](./instructionsrepresentation-2g2fb.md)
+  An instance that represents the instructions.
+- [var instructionsRepresentation: Instructions](./instructionsrepresentation-57k7v.md)
+  An instance that represents the instructions.
 
 
 ---

@@ -1,26 +1,28 @@
 # Standard Protocol Output Keys
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 Output ports of a composition.
 
 ## Topics
 
 ### Constants
-- [let QCCompositionOutputImageKey: String](qccompositionoutputimagekey.md)
+- [let QCCompositionOutputImageKey: String](./qccompositionoutputimagekey.md)
   An image output port whose key is `outputImage`.
-- [let QCCompositionOutputWebPageURLKey: String](qccompositionoutputwebpageurlkey.md)
+- [let QCCompositionOutputWebPageURLKey: String](./qccompositionoutputwebpageurlkey.md)
   A string output port whose key is `outputWebPageURL`.
 
 ## See Also
 
-- [Attribute Keys](attribute-keys.md)
+### Constants
+- [Attribute Keys](./attribute-keys.md)
   Attributes of a composition.
-- [Composition Categories](composition-categories.md)
+- [Composition Categories](./composition-categories.md)
   Categories for compositions.
-- [Standard Protocol Input Keys](standard-protocol-input-keys.md)
+- [Standard Protocol Input Keys](./standard-protocol-input-keys.md)
   Input ports of a composition.
-- [Standard Protocols](standard-protocols.md)
+- [Standard Protocols](./standard-protocols.md)
   Protocols for a composition.
 
 

@@ -1,7 +1,8 @@
 # init(filePath:lineNumber:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new instance with a file path and a line number.
 
@@ -11,6 +12,10 @@ Initializes a new instance with a file path and a line number.
 convenience init(filePath: String, lineNumber: Int)
 ```
 
+```objc
+- (instancetype) initWithFilePath:(NSString *) filePath lineNumber:(NSInteger) lineNumber;
+```
+
 ## Parameters
 
 - `filePath`: A string that represents a file path to the source code file.
@@ -18,9 +23,10 @@ convenience init(filePath: String, lineNumber: Int)
 
 ## See Also
 
-- [init(fileURL: URL, lineNumber: Int)](xctsourcecodelocation/init(fileurl:linenumber:).md)
+### Initializers
+- [init(fileURL: URL, lineNumber: Int)](./init%28fileurl,linenumber%29.md)
   Initializes a new instance with a file URL and a line number.
-- [convenience init(filePath: StaticString, lineNumber: UInt)](xctsourcecodelocation/init(filepath:linenumber:)-8qw52.md)
+- [convenience init(filePath: StaticString, lineNumber: UInt)](./init%28filepath,linenumber%29-8qw52.md)
   Initializes a new instance with a file path and a line number.
 
 

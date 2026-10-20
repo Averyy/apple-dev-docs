@@ -1,13 +1,14 @@
 # CGPSConverterEndPageCallback
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Performs custom tasks at the end of each page of a PostScript conversion process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Performs custom tasks at the end of each page of a PostScript conversion process
 typealias CGPSConverterEndPageCallback = (UnsafeMutableRawPointer?, Int, CFDictionary) -> Void
 ```
 
+```c
+typedef void (*)(void *, unsigned long, const struct __CFDictionary *) CGPSConverterEndPageCallback;
+```
+
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](cgpsconverter/init(info:callbacks:options:).md).
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](./cgpsconverter/init%28info,callbacks,options%29.md).
 - `pageNumber`: The current page number. Page numbers start at `1`.
 - `pageInfo`: A dictionary that contains contextual information about the page. This parameter is reserved for future API expansion, and is currently unused.
 

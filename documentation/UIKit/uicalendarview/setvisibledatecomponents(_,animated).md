@@ -1,7 +1,8 @@
 # setVisibleDateComponents(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the date components that represent the date for the calendar view to make visible, with an option to animate the date change.
 
@@ -17,11 +18,15 @@ Sets the date components that represent the date for the calendar view to make v
 func setVisibleDateComponents(_ dateComponents: DateComponents, animated: Bool)
 ```
 
+```objc
+- (void) setVisibleDateComponents:(NSDateComponents *) dateComponents animated:(BOOL) animated;
+```
+
 #### Discussion
 
-The date that `dateComponents` represents must be within the dates that [`availableDateRange`](uicalendarview/availabledaterange.md) represents.
+The date that `dateComponents` represents must be within the dates that [`availableDateRange`](./availabledaterange.md) represents.
 
-If `dateComponents.calendar` is `nil` or isn’t equal to [`calendar`](uicalendarview/calendar.md), the calendar view uses [`calendar`](uicalendarview/calendar.md), which may result in an invalid date from the date components.
+If `dateComponents.calendar` is `nil` or isn’t equal to [`calendar`](./calendar.md), the calendar view uses [`calendar`](./calendar.md), which may result in an invalid date from the date components.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ If `dateComponents.calendar` is `nil` or isn’t equal to [`calendar`](uicalenda
 
 ## See Also
 
-- [var visibleDateComponents: DateComponents](uicalendarview/visibledatecomponents.md)
+### Setting the visible date and range
+- [var visibleDateComponents: DateComponents](./visibledatecomponents.md)
   The date components that represent the visible date in the calendar view.
-- [var availableDateRange: DateInterval](uicalendarview/availabledaterange.md)
+- [var availableDateRange: DateInterval](./availabledaterange.md)
   The range of dates that the calendar view displays.
 
 

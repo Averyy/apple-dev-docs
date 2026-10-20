@@ -1,7 +1,8 @@
 # init(from:by:mode:timing:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new action that interpolates from a specified starting transform towards a specified transform, which is relative to the start. Alternatively, interpolates towards the default source if `by` is not supplied.
 
@@ -18,6 +19,8 @@ Creates a new action that interpolates from a specified starting transform towar
 ```swift
 init(from: Value, by: Value? = nil, mode: FromToByAction<Value>.TransformMode = .default, timing: AnimationTimingFunction = .linear, isAdditive: Bool = false)
 ```
+
+Available when `Value` is `Transform`.
 
 #### Discussion
 

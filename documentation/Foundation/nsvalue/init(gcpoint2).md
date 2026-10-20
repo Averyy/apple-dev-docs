@@ -1,7 +1,8 @@
 # init(GCPoint2:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.4+
@@ -14,7 +15,15 @@
 ## Declaration
 
 ```swift
+convenience init(GCPoint2 point: GCPoint2)
+```
+
+```swift
 convenience init(gcPoint2 point: GCPoint2)
+```
+
+```objc
++ (instancetype) valueWithGCPoint2:(GCPoint2) point;
 ```
 
 

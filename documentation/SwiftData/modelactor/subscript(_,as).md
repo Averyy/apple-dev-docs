@@ -1,7 +1,8 @@
 # subscript(_:as:)
 
 **Framework**: SwiftData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the model for the specified identifier, downcast to the appropriate class.
 

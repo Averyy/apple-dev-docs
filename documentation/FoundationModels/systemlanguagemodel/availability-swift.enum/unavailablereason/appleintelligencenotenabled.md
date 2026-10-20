@@ -1,7 +1,8 @@
 # SystemLanguageModel.Availability.UnavailableReason.appleIntelligenceNotEnabled
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apple Intelligence is not enabled on the system.
 
@@ -20,9 +21,10 @@ case appleIntelligenceNotEnabled
 
 ## See Also
 
-- [SystemLanguageModel.Availability.UnavailableReason.deviceNotEligible](systemlanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible.md)
+### Getting the unavailable reasons
+- [SystemLanguageModel.Availability.UnavailableReason.deviceNotEligible](./devicenoteligible.md)
   The device does not support Apple Intelligence.
-- [SystemLanguageModel.Availability.UnavailableReason.modelNotReady](systemlanguagemodel/availability-swift.enum/unavailablereason/modelnotready.md)
+- [SystemLanguageModel.Availability.UnavailableReason.modelNotReady](./modelnotready.md)
   The models aren’t available on the user’s device.
 
 

@@ -1,7 +1,8 @@
 # DeleteUserCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to delete a user’s account from a device.
 
@@ -13,18 +14,18 @@ The command to delete a user’s account from a device.
 
 ## Declaration
 
-```swift
+```
 object DeleteUserCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object DeleteUserCommand.Command](deleteusercommand/command-data.dictionary.md)
+- [object DeleteUserCommand.Command](./deleteusercommand/command-data.dictionary.md)
   The command to delete a user’s account from a device.
 
 ## Properties
@@ -34,7 +35,8 @@ object DeleteUserCommand
 
 ## See Also
 
-- [object DeleteUserResponse](deleteuserresponse.md)
+### Commands and responses
+- [object DeleteUserResponse](./deleteuserresponse.md)
   A response from the device after it processes the command to delete a user’s account from a device.
 
 

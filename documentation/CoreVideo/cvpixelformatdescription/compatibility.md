@@ -1,7 +1,8 @@
 # CVPixelFormatDescription.Compatibility
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of options that control compatibility between different pixel formats.
 
@@ -23,26 +24,26 @@ struct Compatibility
 ## Topics
 
 ### Type Properties
-- [static let cgBitmapContext: CVPixelFormatDescription.Compatibility](cvpixelformatdescription/compatibility/cgbitmapcontext.md)
+- [static let cgBitmapContext: CVPixelFormatDescription.Compatibility](./compatibility/cgbitmapcontext.md)
   The pixel format is compatible with a Core Graphics bitmap context.
-- [static let cgImage: CVPixelFormatDescription.Compatibility](cvpixelformatdescription/compatibility/cgimage.md)
+- [static let cgImage: CVPixelFormatDescription.Compatibility](./compatibility/cgimage.md)
   The pixel format is compatible with a Core Graphics image.
-- [static let ioSurfaceCoreAnimation: CVPixelFormatDescription.Compatibility](cvpixelformatdescription/compatibility/iosurfacecoreanimation.md)
+- [static let ioSurfaceCoreAnimation: CVPixelFormatDescription.Compatibility](./compatibility/iosurfacecoreanimation.md)
   The CVPixelBuffer’s IOSurface is compatible with CoreAnimation CALayer.
-- [static let metalTexture: CVPixelFormatDescription.Compatibility](cvpixelformatdescription/compatibility/metaltexture.md)
+- [static let metalTexture: CVPixelFormatDescription.Compatibility](./compatibility/metaltexture.md)
   The pixel format is compatible with a Metal texture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # dismissContentProposal(for:animated:completion:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the current content proposal.
 
@@ -11,12 +12,20 @@ Dismisses the current content proposal.
 ## Declaration
 
 ```swift
+func dismissContentProposal(for action: AVContentProposalAction, animated: Bool, completion block: (() -> Void)? = nil)
+```
+
+```swift
 func dismissContentProposal(for action: AVContentProposalAction, animated: Bool) async
+```
+
+```objc
+- (void) dismissContentProposalForAction:(AVContentProposalAction) action animated:(BOOL) animated completion:(void (^)()) block;
 ```
 
 ## Mentions
 
-- [Presenting content proposals in tvOS](presenting-content-proposals-in-tvos.md)
+- [Presenting content proposals in tvOS](../presenting-content-proposals-in-tvos.md)
 
 #### Discussion
 
@@ -30,7 +39,8 @@ Call this method to indicate the user action when leaving this proposal.
 
 ## See Also
 
-- [enum AVContentProposalAction](avcontentproposalaction.md)
+### Dismissing the proposal
+- [enum AVContentProposalAction](../avcontentproposalaction.md)
   Constant that indicate the action a user takes when dismissing a content proposal.
 
 

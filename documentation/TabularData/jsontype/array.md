@@ -1,7 +1,8 @@
 # JSONType.array
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An array type.
 

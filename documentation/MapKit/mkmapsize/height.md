@@ -1,18 +1,19 @@
 # height
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the specified area, measured in map points.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The height of the specified area, measured in map points.
 var height: Double
 ```
 
+```c
+double height;
+```
+
 ## See Also
 
-- [var width: Double](mkmapsize/width.md)
+### Getting the width and height
+- [var width: Double](./width.md)
   The width of the specified area, measured in map points.
 
 

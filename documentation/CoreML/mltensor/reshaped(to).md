@@ -1,7 +1,8 @@
 # reshaped(to:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reshape to the specified shape.
 
@@ -36,7 +37,8 @@ y.shape // is [1, 2, 1]
 
 ## See Also
 
-- [func flattened() -> MLTensor](mltensor/flattened.md)
+### Reshaping the tensor
+- [func flattened() -> MLTensor](./flattened%28%29.md)
   Reshape to a one-dimensional tensor.
 
 

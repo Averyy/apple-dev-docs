@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the extension is enabled.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the extension is enabled.
 
 ```swift
 var isEnabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
 ```
 
 

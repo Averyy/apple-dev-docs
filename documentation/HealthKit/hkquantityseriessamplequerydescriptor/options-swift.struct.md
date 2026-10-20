@@ -1,7 +1,8 @@
 # HKQuantitySeriesSampleQueryDescriptor.Options
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options used when querying series data.
 
@@ -10,7 +11,7 @@ Options used when querying series data.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,25 +23,26 @@ struct Options
 ## Topics
 
 ### Setting Options
-- [static let includeSample: HKQuantitySeriesSampleQueryDescriptor.Options](hkquantityseriessamplequerydescriptor/options-swift.struct/includesample.md)
+- [static let includeSample: HKQuantitySeriesSampleQueryDescriptor.Options](./options-swift.struct/includesample.md)
   An option indicating that the results should include a reference to the quantity sample that contains the series data.
-- [static let orderByQuantitySampleStartDate: HKQuantitySeriesSampleQueryDescriptor.Options](hkquantityseriessamplequerydescriptor/options-swift.struct/orderbyquantitysamplestartdate.md)
+- [static let orderByQuantitySampleStartDate: HKQuantitySeriesSampleQueryDescriptor.Options](./options-swift.struct/orderbyquantitysamplestartdate.md)
   An option indicating that the results are grouped by the containing quantity sample’s start date.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(predicate: HKSamplePredicate<HKQuantitySample>, options: HKQuantitySeriesSampleQueryDescriptor.Options)](hkquantityseriessamplequerydescriptor/init(predicate:options:).md)
+### Creating Series Query Descriptors
+- [init(predicate: HKSamplePredicate<HKQuantitySample>, options: HKQuantitySeriesSampleQueryDescriptor.Options)](./init%28predicate,options%29.md)
   Creates a quantity series query descriptor.
 
 

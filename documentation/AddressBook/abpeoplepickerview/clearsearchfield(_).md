@@ -1,7 +1,8 @@
 # clearSearchField(_:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the search field and resets the list of displayed records.
 
@@ -14,21 +15,26 @@ Clears the search field and resets the list of displayed records.
 func clearSearchField(_ sender: Any!)
 ```
 
+```objc
+- (void) clearSearchField:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: The object sending this message.
 
 ## See Also
 
-- [func editInAddressBook(Any!)](abpeoplepickerview/editinaddressbook(_:).md)
+### Managing Actions
+- [func editInAddressBook(Any!)](./editinaddressbook%28_%29.md)
   Launches Address Book to edit the item selected in the people picker.
-- [var groupDoubleAction: Selector!](abpeoplepickerview/groupdoubleaction.md)
+- [var groupDoubleAction: Selector!](./groupdoubleaction.md)
   The action to be invoked when a group is double-clicked.
-- [var nameDoubleAction: Selector!](abpeoplepickerview/namedoubleaction.md)
+- [var nameDoubleAction: Selector!](./namedoubleaction.md)
   The action to be invoked when a name is double-clicked.
-- [func selectInAddressBook(Any!)](abpeoplepickerview/selectinaddressbook(_:).md)
+- [func selectInAddressBook(Any!)](./selectinaddressbook%28_%29.md)
   Launches Address Book and selects the item selected in the people picker.
-- [var target: AnyObject!](abpeoplepickerview/target.md)
+- [var target: AnyObject!](./target.md)
   The target for double-click actions.
 
 

@@ -1,7 +1,8 @@
 # weightNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Weight names that define the weights for the blend shape.
 
@@ -18,6 +19,8 @@ Weight names that define the weights for the blend shape.
 ```swift
 var weightNames: [String] { get set }
 ```
+
+Available when `Value` is `BlendShapeWeights`.
 
 
 ---

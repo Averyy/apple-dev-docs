@@ -1,7 +1,8 @@
 # AssetCredentialSCEPReferenceObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The external reference. Ensure that the asset data:
 
@@ -16,7 +17,7 @@ The external reference. Ensure that the asset data:
 
 ## Declaration
 
-```swift
+```
 object AssetCredentialSCEPReferenceObject
 ```
 
@@ -34,7 +35,8 @@ object AssetCredentialSCEPReferenceObject
 
 ## See Also
 
-- [object AssetCredentialSCEPAuthenticationObject](assetcredentialscepauthenticationobject.md)
+### Objects
+- [object AssetCredentialSCEPAuthenticationObject](./assetcredentialscepauthenticationobject.md)
   The server authentication details. If this key is absent, the default authentication type is MDM.
 
 

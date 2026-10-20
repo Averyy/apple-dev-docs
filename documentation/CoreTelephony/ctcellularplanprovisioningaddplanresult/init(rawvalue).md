@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Telephony  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+

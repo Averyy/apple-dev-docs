@@ -1,7 +1,8 @@
 # setConstantValues(_:type:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets values for a group of function constants within a specific index range.
 
@@ -11,7 +12,7 @@ Sets values for a group of function constants within a specific index range.
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -47,9 +48,10 @@ constantValues.setConstantValues(abc,
 
 ## See Also
 
-- [func setConstantValue(UnsafeRawPointer, type: MTLDataType, index: Int)](mtlfunctionconstantvalues/setconstantvalue(_:type:index:).md)
+### Setting constant values
+- [func setConstantValue(UnsafeRawPointer, type: MTLDataType, index: Int)](./setconstantvalue%28_,type,index%29.md)
   Sets a value for a function constant at a specific index.
-- [func setConstantValue(UnsafeRawPointer, type: MTLDataType, withName: String)](mtlfunctionconstantvalues/setconstantvalue(_:type:withname:).md)
+- [func setConstantValue(UnsafeRawPointer, type: MTLDataType, withName: String)](./setconstantvalue%28_,type,withname%29.md)
   Sets a value for a function constant with a specific name.
 
 

@@ -1,7 +1,8 @@
 # JoinKind.right
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A join kind that contains all rows from the right data frame type, and only the rows with matching values from the left data frame type.
 

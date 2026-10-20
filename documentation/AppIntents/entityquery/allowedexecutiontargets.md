@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A set of targets that can run this query.
@@ -20,6 +21,12 @@ A set of targets that can run this query.
 ```swift
 static var allowedExecutionTargets: IntentExecutionTargets { get }
 ```
+
+## Default Implementations
+
+### EntityQuery Implementations
+- [static var allowedExecutionTargets: IntentExecutionTargets](./allowedexecutiontargets-698jp.md)
+  A set of targets that can run this query.
 
 
 ---

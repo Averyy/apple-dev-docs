@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The enabled rendering effect mode.
 
@@ -20,9 +21,10 @@ static var enabled: RealityViewRenderingEffectMode { get }
 
 ## See Also
 
-- [static var `default`: RealityViewRenderingEffectMode](realityviewrenderingeffectmode/default.md)
+### Setting the rendering effect mode
+- [static var `default`: RealityViewRenderingEffectMode](./default.md)
   The default rendering effect mode.
-- [static var disabled: RealityViewRenderingEffectMode](realityviewrenderingeffectmode/disabled.md)
+- [static var disabled: RealityViewRenderingEffectMode](./disabled.md)
   The disabled rendering effect mode.
 
 

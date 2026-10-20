@@ -1,7 +1,8 @@
 # colorSpace
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the `CGColorSpace` associated with the color
 
@@ -10,7 +11,7 @@ Returns the `CGColorSpace` associated with the color
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ Returns the `CGColorSpace` associated with the color
 var colorSpace: CGColorSpace { get }
 ```
 
+```objc
+@property (readonly) CGColorSpaceRef colorSpace;
+```
+
 ## See Also
 
-- [var components: UnsafePointer<CGFloat>](cicolor/components.md)
+### Getting Color Components
+- [var components: UnsafePointer<CGFloat>](./components.md)
   Return a pointer to an array of `CGFloat` values including alpha.
-- [var numberOfComponents: Int](cicolor/numberofcomponents.md)
+- [var numberOfComponents: Int](./numberofcomponents.md)
   Returns the color components of the color including alpha.
-- [var red: CGFloat](cicolor/red-swift.property.md)
+- [var red: CGFloat](./red-swift.property.md)
   Returns the unpremultiplied red component of the color.
-- [var green: CGFloat](cicolor/green-swift.property.md)
+- [var green: CGFloat](./green-swift.property.md)
   Returns the unpremultiplied green component of the color.
-- [var blue: CGFloat](cicolor/blue-swift.property.md)
+- [var blue: CGFloat](./blue-swift.property.md)
   Returns the unpremultiplied blue component of the color.
-- [var alpha: CGFloat](cicolor/alpha.md)
+- [var alpha: CGFloat](./alpha.md)
   Returns the alpha value of the color.
-- [var stringRepresentation: String](cicolor/stringrepresentation.md)
+- [var stringRepresentation: String](./stringrepresentation.md)
   Returns a formatted string with the unpremultiplied color and alpha components of the color.
 
 

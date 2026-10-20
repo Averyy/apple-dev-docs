@@ -1,7 +1,8 @@
 # ioBufferDuration
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current I/O buffer duration, in seconds.
 
@@ -19,11 +20,16 @@ The current I/O buffer duration, in seconds.
 var ioBufferDuration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval IOBufferDuration;
+```
+
 ## See Also
 
-- [var preferredIOBufferDuration: TimeInterval](avaudiosession/preferrediobufferduration.md)
+### Configuring I/O buffer duration
+- [var preferredIOBufferDuration: TimeInterval](./preferrediobufferduration.md)
   The preferred I/O buffer duration, in seconds.
-- [func setPreferredIOBufferDuration(TimeInterval) throws](avaudiosession/setpreferrediobufferduration(_:).md)
+- [func setPreferredIOBufferDuration(TimeInterval) throws](./setpreferrediobufferduration%28_%29.md)
   Sets the preferred audio I/O buffer duration.
 
 

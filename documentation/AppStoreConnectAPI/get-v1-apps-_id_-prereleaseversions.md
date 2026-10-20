@@ -1,7 +1,8 @@
 # List all prerelease versions for an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of prerelease versions associated with a specific app.
 
@@ -14,7 +15,7 @@ Get a list of prerelease versions associated with a specific app.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/6446998023/preReleaseVersions
 ```
 
@@ -119,15 +120,35 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/preReleaseVersions
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
 - `limit` (integer): Number of resources to return.
+
+  **Maximum**: `200`
 - `fields[preReleaseVersions]` ([string]): Fields to return for included related types.
+
+  **Allowed Values**: `version`, `platform`, `builds`, `app`
+
+## Responses
+
+- `200` OK (`PreReleaseVersionsWithoutIncludesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all builds of an app](get-v1-apps-_id_-builds.md)
+### Getting app build and prerelease version information
+- [List all builds of an app](./get-v1-apps-_id_-builds.md)
   Get a list of builds associated with a specific app.
-- [List build IDs for an app](get-v1-apps-_id_-relationships-builds.md)
-- [List prerelease version IDs for an app](get-v1-apps-_id_-relationships-prereleaseversions.md)
+- [List build IDs for an app](./get-v1-apps-_id_-relationships-builds.md)
+- [List prerelease version IDs for an app](./get-v1-apps-_id_-relationships-prereleaseversions.md)
 
 
 ---

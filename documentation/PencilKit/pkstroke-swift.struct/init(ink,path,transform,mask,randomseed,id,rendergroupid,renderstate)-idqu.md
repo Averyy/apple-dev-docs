@@ -1,7 +1,8 @@
 # init(ink:path:transform:mask:randomSeed:id:renderGroupID:renderState:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

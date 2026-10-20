@@ -1,7 +1,8 @@
 # SerializationError.packageAlreadyExists(_:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the package already exists at the URL.
 
@@ -22,9 +23,10 @@ case packageAlreadyExists(URL)
 
 ## See Also
 
-- [SerializationError.notRepresentableAsCoreML(debugDescription:)](serializationerror/notrepresentableascoreml(debugdescription:).md)
+### Analyzing the error
+- [SerializationError.notRepresentableAsCoreML(debugDescription:)](./notrepresentableascoreml%28debugdescription%29.md)
   An error that indicates that the transformer cannot be represented as a CoreML model.
-- [SerializationError.packageNotFound(_:)](serializationerror/packagenotfound(_:).md)
+- [SerializationError.packageNotFound(_:)](./packagenotfound%28_%29.md)
   An error that indicates that the package at specified URL was not found.
 
 

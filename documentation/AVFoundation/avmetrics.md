@@ -1,7 +1,8 @@
 # AVMetrics
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous stream of metric information.
 
@@ -23,28 +24,29 @@ struct AVMetrics<MetricEvent> where MetricEvent : AVMetricEvent
 ## Topics
 
 ### Merging metrics
-- [func chronologicalMerge<OtherSecondMetric, each MetricEventPack>(with: AVMetrics<OtherSecondMetric>, repeat AVMetrics<each MetricEventPack>) -> AVMergedMetrics<MetricEvent, OtherSecondMetric, repeat each MetricEventPack>](avmetrics/chronologicalmerge(with:_:).md)
+- [func chronologicalMerge<OtherSecondMetric, each MetricEventPack>(with: AVMetrics<OtherSecondMetric>, repeat AVMetrics<each MetricEventPack>) -> AVMergedMetrics<MetricEvent, OtherSecondMetric, repeat each MetricEventPack>](./avmetrics/chronologicalmerge%28with,_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AVMergedMetrics](avmergedmetrics.md)
+### Metrics
+- [struct AVMergedMetrics](./avmergedmetrics.md)
   An asynchronous stream of metric information from different publishers.
-- [class AVVideoPerformanceMetrics](avvideoperformancemetrics.md)
+- [class AVVideoPerformanceMetrics](./avvideoperformancemetrics.md)
   An object that provides metrics related to video playback quality.
-- [protocol AVMetricEventStreamPublisher](avmetriceventstreampublisher.md)
+- [protocol AVMetricEventStreamPublisher](./avmetriceventstreampublisher.md)
   A type for objects that publish metric events to the event stream.
-- [class AVMetricEvent](avmetricevent.md)
+- [class AVMetricEvent](./avmetricevent.md)
   A base class that represents a metric event.
-- [class AVMetricErrorEvent](avmetricerrorevent.md)
+- [class AVMetricErrorEvent](./avmetricerrorevent.md)
   An object that represents a metric event when an error occurs.
-- [Metric event types](metric-event-types.md)
+- [Metric event types](./metric-event-types.md)
 
 
 ---

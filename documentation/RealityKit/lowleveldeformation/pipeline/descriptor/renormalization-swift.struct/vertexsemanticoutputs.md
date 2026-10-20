@@ -1,7 +1,8 @@
 # LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Identifies which vertex attributes are renormalized to unit length.
 
@@ -20,20 +21,20 @@ struct VertexSemanticOutputs
 ## Topics
 
 ### Type Properties
-- [static let bitangent: LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs](lowleveldeformation/pipeline/descriptor/renormalization-swift.struct/vertexsemanticoutputs/bitangent.md)
-- [static let normal: LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs](lowleveldeformation/pipeline/descriptor/renormalization-swift.struct/vertexsemanticoutputs/normal.md)
-- [static let tangent: LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs](lowleveldeformation/pipeline/descriptor/renormalization-swift.struct/vertexsemanticoutputs/tangent.md)
+- [static let bitangent: LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs](./vertexsemanticoutputs/bitangent.md)
+- [static let normal: LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs](./vertexsemanticoutputs/normal.md)
+- [static let tangent: LowLevelDeformation.Pipeline.Descriptor.Renormalization.VertexSemanticOutputs](./vertexsemanticoutputs/tangent.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../../../Swift/optionset.md)
+- [RawRepresentable](../../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../../../Swift/setalgebra.md)
 
 
 ---

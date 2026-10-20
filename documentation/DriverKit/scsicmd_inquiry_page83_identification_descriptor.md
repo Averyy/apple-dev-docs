@@ -1,17 +1,18 @@
 # SCSICmd_INQUIRY_Page83_Identification_Descriptor
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef struct SCSICmd_INQUIRY_Page83_Identification_Descriptor { ... } SCSICmd_INQUIRY_Page83_Identification_Descriptor;
 ```
 
@@ -22,29 +23,30 @@ INQUIRY Page 83h Identification Descriptor.
 ## Topics
 
 ### Instance Properties
-- [CODE_SET](scsicmd_inquiry_page83_identification_descriptor/code_set.md)
-- [IDENTIFIER](scsicmd_inquiry_page83_identification_descriptor/identifier.md)
-- [IDENTIFIER_LENGTH](scsicmd_inquiry_page83_identification_descriptor/identifier_length.md)
-- [IDENTIFIER_TYPE](scsicmd_inquiry_page83_identification_descriptor/identifier_type.md)
-- [RESERVED](scsicmd_inquiry_page83_identification_descriptor/reserved.md)
+- [CODE_SET](./scsicmd_inquiry_page83_identification_descriptor/code_set.md)
+- [IDENTIFIER](./scsicmd_inquiry_page83_identification_descriptor/identifier.md)
+- [IDENTIFIER_LENGTH](./scsicmd_inquiry_page83_identification_descriptor/identifier_length.md)
+- [IDENTIFIER_TYPE](./scsicmd_inquiry_page83_identification_descriptor/identifier_type.md)
+- [RESERVED](./scsicmd_inquiry_page83_identification_descriptor/reserved.md)
 
 ## See Also
 
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IORPCMessageErrorReturnContent](iorpcmessageerrorreturncontent.md)
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Structures
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IORPCMessageErrorReturnContent](./iorpcmessageerrorreturncontent.md)
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

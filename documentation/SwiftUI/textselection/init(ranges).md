@@ -1,7 +1,8 @@
 # init(ranges:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create multiple selections with a given range-set.
 

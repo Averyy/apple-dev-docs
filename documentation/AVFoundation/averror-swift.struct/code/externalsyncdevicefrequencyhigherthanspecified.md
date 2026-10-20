@@ -1,7 +1,8 @@
 # AVError.Code.externalSyncDeviceFrequencyHigherThanSpecified
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case externalSyncDeviceFrequencyHigherThanSpecified
+```
+
+```c
+AVErrorExternalSyncDeviceFrequencyHigherThanSpecified
 ```
 
 

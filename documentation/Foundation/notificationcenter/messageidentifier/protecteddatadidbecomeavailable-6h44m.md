@@ -1,7 +1,8 @@
 # protectedDataDidBecomeAvailable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,8 @@
 ```swift
 static var protectedDataDidBecomeAvailable: NotificationCenter.BaseMessageIdentifier<UIApplication.ProtectedDataDidBecomeAvailableMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIApplication.ProtectedDataDidBecomeAvailableMessage>`.
 
 
 ---

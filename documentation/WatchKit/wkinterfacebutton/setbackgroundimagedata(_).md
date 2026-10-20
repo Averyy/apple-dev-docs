@@ -1,7 +1,8 @@
 # setBackgroundImageData(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the button’s background image to the image in the specified data object.
 
@@ -14,9 +15,13 @@ Sets the button’s background image to the image in the specified data object.
 func setBackgroundImageData(_ imageData: Data?)
 ```
 
+```objc
+- (void) setBackgroundImageData:(NSData *) imageData;
+```
+
 #### Discussion
 
-Use this method when you already have image data in the raw PNG or JPG format. This method sends the data as-is, which lets you send the data in a compressed format. Sending compressed data is often more efficient than sending a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object.
+Use this method when you already have image data in the raw PNG or JPG format. This method sends the data as-is, which lets you send the data in a compressed format. Sending compressed data is often more efficient than sending a [`UIImage`](../../UIKit/uiimage.md) object.
 
 ## Parameters
 
@@ -24,11 +29,12 @@ Use this method when you already have image data in the raw PNG or JPG format. T
 
 ## See Also
 
-- [func setBackgroundColor(UIColor?)](wkinterfacebutton/setbackgroundcolor(_:).md)
+### Setting the Button Background
+- [func setBackgroundColor(UIColor?)](./setbackgroundcolor%28_%29.md)
   Sets the background color of the button.
-- [func setBackgroundImage(UIImage?)](wkinterfacebutton/setbackgroundimage(_:).md)
+- [func setBackgroundImage(UIImage?)](./setbackgroundimage%28_%29.md)
   Sets the button’s background image to the specified image.
-- [func setBackgroundImageNamed(String?)](wkinterfacebutton/setbackgroundimagenamed(_:).md)
+- [func setBackgroundImageNamed(String?)](./setbackgroundimagenamed%28_%29.md)
   Sets the button’s background image to the image in the named resource file.
 
 

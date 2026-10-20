@@ -1,7 +1,8 @@
 # autoRenewPreference
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The auto-renewable subscripton product that renews at the next billing cycle.
 
@@ -22,9 +23,9 @@ var autoRenewPreference: Product? { get }
 
 #### Discussion
 
-Use the [`autoRenewPreference`](subscriptionstorecontrolstyleconfiguration/autorenewpreference.md) property to identify the subscription that renews in the next billing cycle, if there is one. The property is `nil` if the customer doesn’t have an auto-renewable subscription that renews in the next billing period. This indicates that the customer turned off the auto-renew preference, or that they don’t have a current subscription.
+Use the [`autoRenewPreference`](./autorenewpreference.md) property to identify the subscription that renews in the next billing cycle, if there is one. The property is `nil` if the customer doesn’t have an auto-renewable subscription that renews in the next billing period. This indicates that the customer turned off the auto-renew preference, or that they don’t have a current subscription.
 
-Display the subscription in the auto-renew preference only if it appears in the [`options`](subscriptionstorecontrolstyleconfiguration/options.md) or [`sections`](subscriptionstorecontrolstyleconfiguration/sections.md) arrays. However, disable its [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) control so the customer doesn’t try to subscribe to it again, to prevent a system dialog that explains that the customer is already subscribed. The following code example shows how to check for the auto-renew preference and disable the subscribe functionality:
+Display the subscription in the auto-renew preference only if it appears in the [`options`](./options.md) or [`sections`](./sections.md) arrays. However, disable its [`subscribe()`](./option/subscribe%28%29.md) control so the customer doesn’t try to subscribe to it again, to prevent a system dialog that explains that the customer is already subscribed. The following code example shows how to check for the auto-renew preference and disable the subscribe functionality:
 
 ```swift
 ForEach(configuration.options) { option in 
@@ -33,13 +34,14 @@ ForEach(configuration.options) { option in
 }
 ```
 
-> ❗ **Important**:  Don’t use the [`autoRenewPreference`](subscriptionstorecontrolstyleconfiguration/autorenewpreference.md) property to determine whether to grant access to a service. Always check the full transaction information before granting access to a paid service.
+> ❗ **Important**:  Don’t use the [`autoRenewPreference`](./autorenewpreference.md) property to determine whether to grant access to a service. Always check the full transaction information before granting access to a paid service.
 
 ## See Also
 
-- [var groupDisplayName: String](subscriptionstorecontrolstyleconfiguration/groupdisplayname.md)
+### Getting subscription group properties
+- [var groupDisplayName: String](./groupdisplayname.md)
   The localized display name of the subscription group that the subscription store view merchandises.
-- [var allOptions: [Product]](subscriptionstorecontrolstyleconfiguration/alloptions.md)
+- [var allOptions: [Product]](./alloptions.md)
   All subscription options in the subscription group.
 
 

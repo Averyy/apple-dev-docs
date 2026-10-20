@@ -1,7 +1,8 @@
 # errSecInvalidItemRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The item reference is invalid.
 
@@ -18,6 +19,10 @@ The item reference is invalid.
 
 ```swift
 var errSecInvalidItemRef: OSStatus { get }
+```
+
+```c
+errSecInvalidItemRef
 ```
 
 

@@ -1,7 +1,8 @@
 # presentationContentInteraction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the behavior of swipe gestures on a presentation.
 
@@ -25,7 +26,7 @@ func presentationContentInteraction(_ behavior: PresentationContentInteraction) 
 
 By default, when a person swipes up on a scroll view in a resizable presentation, the presentation grows to the next detent. A scroll view embedded in the presentation only scrolls after the presentation reaches its largest size. Use this modifier to control which action takes precedence.
 
-For example, you can request that swipe gestures scroll content first, resizing the sheet only after hitting the end of the scroll view, by passing the [`scrolls`](presentationcontentinteraction/scrolls.md) value to this modifier:
+For example, you can request that swipe gestures scroll content first, resizing the sheet only after hitting the end of the scroll view, by passing the [`scrolls`](../presentationcontentinteraction/scrolls.md) value to this modifier:
 
 ```swift
 struct ContentView: View {
@@ -52,21 +53,22 @@ People can always resize your presentation using the drag indicator.
 
 ## See Also
 
-- [func presentationDetents(Set<PresentationDetent>) -> some View](view/presentationdetents(_:).md)
+### Configuring a sheet’s height and placement
+- [func presentationDetents(Set<PresentationDetent>) -> some View](./presentationdetents%28_%29.md)
   Sets the available detents for the enclosing sheet.
-- [func presentationDetents(Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View](view/presentationdetents(_:selection:).md)
+- [func presentationDetents(Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View](./presentationdetents%28_,selection%29.md)
   Sets the available detents for the enclosing sheet, giving you programmatic control of the currently selected detent.
-- [func presentationDragIndicator(Visibility) -> some View](view/presentationdragindicator(_:).md)
+- [func presentationDragIndicator(Visibility) -> some View](./presentationdragindicator%28_%29.md)
   Sets the visibility of the drag indicator on top of a sheet.
-- [struct PresentationDetent](presentationdetent.md)
+- [struct PresentationDetent](../presentationdetent.md)
   A type that represents a height where a sheet naturally rests.
-- [protocol CustomPresentationDetent](custompresentationdetent.md)
+- [protocol CustomPresentationDetent](../custompresentationdetent.md)
   The definition of a custom detent with a calculated height.
-- [struct PresentationContentInteraction](presentationcontentinteraction.md)
+- [struct PresentationContentInteraction](../presentationcontentinteraction.md)
   A behavior that you can use to influence how a presentation responds to swipe gestures.
-- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+- [func presentationPlacement(PresentationPlacement) -> some View](./presentationplacement%28_%29.md)
   Sets the placement of a presentation within the presenting view.
-- [struct PresentationPlacement](presentationplacement.md)
+- [struct PresentationPlacement](../presentationplacement.md)
   The placement of a presentation within the presenting view.
 
 

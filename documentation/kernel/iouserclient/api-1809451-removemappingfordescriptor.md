@@ -5,12 +5,12 @@
 
 ## Declaration
 
-```swift
+```c
 IOMemoryMap * removeMappingForDescriptor(
  IOMemoryDescriptor *memory);
 ```
 
-#### Return_value
+#### Return Value
 
 A reference to the first IOMemoryMap instance found in the list of mappings created by IOUserClient from that passed memory descriptor is returned, or zero if none exist. The caller should release this reference.
 
@@ -24,12 +24,13 @@ Remove the first mapping created from the memory descriptor returned by clientMe
 
 ## See Also
 
-- [exportObjectToClient](iouserclient/1809421-exportobjecttoclient.md)
-- [releaseAsyncReference64](iouserclient/1809435-releaseasyncreference64.md)
+### Miscellaneous
+- [exportObjectToClient](./api-1809421-exportobjecttoclient.md)
+- [releaseAsyncReference64](./api-1809435-releaseasyncreference64.md)
   Release the mach_port_t reference held within the OSAsyncReference64 structure.
-- [releaseNotificationPort](iouserclient/1809442-releasenotificationport.md)
+- [releaseNotificationPort](./api-1809442-releasenotificationport.md)
   Release the mach_port_t passed to registerNotificationPort().
-- [sendAsyncResult64WithOptions](iouserclient/1809458-sendasyncresult64withoptions.md)
+- [sendAsyncResult64WithOptions](./api-1809458-sendasyncresult64withoptions.md)
   Send a notification as with sendAsyncResult, but with finite queueing.
 
 

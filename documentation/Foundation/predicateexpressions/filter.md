@@ -1,7 +1,8 @@
 # PredicateExpressions.Filter
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,26 +22,26 @@ struct Filter<LHS, RHS> where LHS : PredicateExpression, RHS : PredicateExpressi
 ## Topics
 
 ### Initializers
-- [init(LHS, (PredicateExpressions.Variable<PredicateExpressions.Filter<LHS, RHS>.Element>) -> RHS)](predicateexpressions/filter/init(_:_:).md)
+- [init(LHS, (PredicateExpressions.Variable<PredicateExpressions.Filter<LHS, RHS>.Element>) -> RHS)](./filter/init%28_,_%29.md)
 ### Instance Properties
-- [let filter: RHS](predicateexpressions/filter/filter.md)
-- [let sequence: LHS](predicateexpressions/filter/sequence.md)
-- [let variable: PredicateExpressions.Variable<PredicateExpressions.Filter<LHS, RHS>.Element>](predicateexpressions/filter/variable.md)
+- [let filter: RHS](./filter/filter.md)
+- [let sequence: LHS](./filter/sequence.md)
+- [let variable: PredicateExpressions.Variable<PredicateExpressions.Filter<LHS, RHS>.Element>](./filter/variable.md)
 ### Type Aliases
-- [PredicateExpressions.Filter.Element](predicateexpressions/filter/element.md)
+- [PredicateExpressions.Filter.Element](./filter/element.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

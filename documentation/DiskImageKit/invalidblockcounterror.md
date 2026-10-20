@@ -1,7 +1,8 @@
 # InvalidBlockCountError
 
 **Framework**: DiskImageKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The block count specified for the disk image is invalid (zero or negative).
 
@@ -17,18 +18,19 @@ struct InvalidBlockCountError
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct IncompatibleStackingError](incompatiblestackingerror.md)
+### Errors
+- [struct IncompatibleStackingError](./incompatiblestackingerror.md)
   The appended layer isn’t compatible with the existing stack.
-- [struct CorruptedImageError](corruptedimageerror.md)
+- [struct CorruptedImageError](./corruptedimageerror.md)
   The disk image is corrupted or contains invalid data.
-- [struct UnsupportedFormatError](unsupportedformaterror.md)
+- [struct UnsupportedFormatError](./unsupportedformaterror.md)
   The disk image format isn’t supported.
 
 

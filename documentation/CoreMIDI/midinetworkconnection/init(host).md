@@ -1,7 +1,8 @@
 # init(host:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a connection to the specified host.
 
@@ -16,6 +17,10 @@ Creates a connection to the specified host.
 
 ```swift
 convenience init(host: MIDINetworkHost)
+```
+
+```objc
++ (instancetype) connectionWithHost:(MIDINetworkHost *) host;
 ```
 
 ## Parameters

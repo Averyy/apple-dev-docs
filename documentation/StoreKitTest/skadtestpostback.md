@@ -1,7 +1,8 @@
 # SKAdTestPostback
 
 **Framework**: StoreKit Test  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A test postback that contains ad conversion information in the testing environment.
 
@@ -16,6 +17,10 @@ A test postback that contains ad conversion information in the testing environme
 class SKAdTestPostback
 ```
 
+```objc
+@interface SKAdTestPostback : NSObject
+```
+
 #### Overview
 
 Use this class to create test postbacks to use for unit testing.
@@ -27,73 +32,74 @@ In the testing environment, you can mimic a postback by creating it directly. Yo
 ## Topics
 
 ### Creating test postbacks
-- [init?(version: SKAdTestPostbackVersion, adNetworkIdentifier: String, sourceIdentifier: String, appStoreItemIdentifier: Int, sourceAppStoreItemIdentifier: Int, sourceDomain: String?, fidelityType: Int, isRedownload: Bool, didWin: Bool, postbackURL: String)](skadtestpostback/init(version:adnetworkidentifier:sourceidentifier:appstoreitemidentifier:sourceappstoreitemidentifier:sourcedomain:fidelitytype:isredownload:didwin:postbackurl:).md)
+- [init?(version: SKAdTestPostbackVersion, adNetworkIdentifier: String, sourceIdentifier: String, appStoreItemIdentifier: Int, sourceAppStoreItemIdentifier: Int, sourceDomain: String?, fidelityType: Int, isRedownload: Bool, didWin: Bool, postbackURL: String)](./skadtestpostback/init%28version,adnetworkidentifier,sourceidentifier,appstoreitemidentifier,sourceappstoreitemidentifier,sourcedomain,fidelitytype,isredownload,didwin,postbackurl%29.md)
   Creates a test postback for a web ad or an in-app ad.
-- [class func winningPostbacks(withVersion: SKAdTestPostbackVersion, adNetworkIdentifier: String, sourceIdentifier: String, appStoreItemIdentifier: Int, sourceAppStoreItemIdentifier: Int, sourceDomain: String?, fidelityType: Int, isRedownload: Bool, postbackURL: String) -> [SKAdTestPostback]?](skadtestpostback/winningpostbacks(withversion:adnetworkidentifier:sourceidentifier:appstoreitemidentifier:sourceappstoreitemidentifier:sourcedomain:fidelitytype:isredownload:postbackurl:).md)
+- [class func winningPostbacks(withVersion: SKAdTestPostbackVersion, adNetworkIdentifier: String, sourceIdentifier: String, appStoreItemIdentifier: Int, sourceAppStoreItemIdentifier: Int, sourceDomain: String?, fidelityType: Int, isRedownload: Bool, postbackURL: String) -> [SKAdTestPostback]?](./skadtestpostback/winningpostbacks%28withversion,adnetworkidentifier,sourceidentifier,appstoreitemidentifier,sourceappstoreitemidentifier,sourcedomain,fidelitytype,isredownload,postbackurl%29.md)
   Creates a sequence of test postbacks for an in-app or web ad impression.
-- [init?(version: SKAdTestPostbackVersion, adNetworkIdentifier: String, adCampaignIdentifier: Int, appStoreItemIdentifier: Int, sourceAppStoreItemIdentifier: Int, conversionValue: Int, fidelityType: Int, isRedownload: Bool, didWin: Bool, postbackURL: String)](skadtestpostback/init(version:adnetworkidentifier:adcampaignidentifier:appstoreitemidentifier:sourceappstoreitemidentifier:conversionvalue:fidelitytype:isredownload:didwin:postbackurl:).md)
+- [init?(version: SKAdTestPostbackVersion, adNetworkIdentifier: String, adCampaignIdentifier: Int, appStoreItemIdentifier: Int, sourceAppStoreItemIdentifier: Int, conversionValue: Int, fidelityType: Int, isRedownload: Bool, didWin: Bool, postbackURL: String)](./skadtestpostback/init%28version,adnetworkidentifier,adcampaignidentifier,appstoreitemidentifier,sourceappstoreitemidentifier,conversionvalue,fidelitytype,isredownload,didwin,postbackurl%29.md)
   Creates a test postback for an in-app ad.
 ### Getting the Postback Destination
-- [var postbackURL: String](skadtestpostback/postbackurl.md)
+- [var postbackURL: String](./skadtestpostback/postbackurl.md)
   A URL on your server where the testing environment sends test postbacks.
 ### Getting general information
-- [var version: SKAdTestPostbackVersion](skadtestpostback/version.md)
+- [var version: SKAdTestPostbackVersion](./skadtestpostback/version.md)
   The SKAdNetwork version that the postback uses.
-- [var transactionIdentifier: String](skadtestpostback/transactionidentifier.md)
+- [var transactionIdentifier: String](./skadtestpostback/transactionidentifier.md)
   A unique transaction identifier that the system generates.
-- [var postbackSequenceIndex: Int](skadtestpostback/postbacksequenceindex.md)
+- [var postbackSequenceIndex: Int](./skadtestpostback/postbacksequenceindex.md)
   The position of this postback among all postbacks for an ad impression.
-- [var isRegistered: Bool](skadtestpostback/isregistered.md)
+- [var isRegistered: Bool](./skadtestpostback/isregistered.md)
   A Boolean value that indicates whether the postback is registered in the testing environment.
-- [var isRedownload: Bool](skadtestpostback/isredownload.md)
+- [var isRedownload: Bool](./skadtestpostback/isredownload.md)
   A Boolean value that indicates whether the user redownloaded and reinstalled the app.
 ### Getting advertisement information
-- [var adNetworkIdentifier: String](skadtestpostback/adnetworkidentifier.md)
+- [var adNetworkIdentifier: String](./skadtestpostback/adnetworkidentifier.md)
   A string that represents the advertising network’s unique identifier.
-- [var appStoreItemIdentifier: Int](skadtestpostback/appstoreitemidentifier.md)
+- [var appStoreItemIdentifier: Int](./skadtestpostback/appstoreitemidentifier.md)
   The item identifier of the app that this ad impression advertises.
-- [var sourceAppStoreItemIdentifier: Int](skadtestpostback/sourceappstoreitemidentifier.md)
+- [var sourceAppStoreItemIdentifier: Int](./skadtestpostback/sourceappstoreitemidentifier.md)
   The item identifier of the app that displays the ad.
-- [var sourceDomain: String?](skadtestpostback/sourcedomain.md)
+- [var sourceDomain: String?](./skadtestpostback/sourcedomain.md)
   The source of a web ad.
-- [var sourceIdentifier: String?](skadtestpostback/sourceidentifier.md)
+- [var sourceIdentifier: String?](./skadtestpostback/sourceidentifier.md)
   A string that identifies an ad campaign.
 ### Getting conversion information
-- [var fidelityType: Int](skadtestpostback/fidelitytype.md)
+- [var fidelityType: Int](./skadtestpostback/fidelitytype.md)
   An integer that indicates the type of ad impression, StoreKit-rendered or view-through.
-- [var fineConversionValue: Int](skadtestpostback/fineconversionvalue.md)
+- [var fineConversionValue: Int](./skadtestpostback/fineconversionvalue.md)
   The specific conversion value of an ad postback.
-- [var coarseConversionValue: SKAdNetwork.CoarseConversionValue?](skadtestpostback/coarseconversionvalue.md)
+- [var coarseConversionValue: SKAdNetwork.CoarseConversionValue?](./skadtestpostback/coarseconversionvalue.md)
   A value that indicates a high, medium, or low conversion value for an ad postback.
-- [var didWin: Bool](skadtestpostback/didwin.md)
+- [var didWin: Bool](./skadtestpostback/didwin.md)
   A Boolean value that indicates whether the postback won the attribution.
 ### Getting information in earlier versions
-- [var adCampaignIdentifier: Int](skadtestpostback/adcampaignidentifier.md)
+- [var adCampaignIdentifier: Int](./skadtestpostback/adcampaignidentifier.md)
   A number that represents the advertising network’s campaign.
-- [var conversionValue: Int](skadtestpostback/conversionvalue.md)
+- [var conversionValue: Int](./skadtestpostback/conversionvalue.md)
   An unsigned 6-bit value that the app or ad network controls.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
+### Ad impression and postback testing
+- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](./testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
   Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
-- [class SKAdTestSession](skadtestsession.md)
+- [class SKAdTestSession](./skadtestsession.md)
   The class you use to test ad impressions and postbacks in Xcode.
-- [class SKAdTestPostbackResponse](skadtestpostbackresponse.md)
+- [class SKAdTestPostbackResponse](./skadtestpostbackresponse.md)
   The status and error information for a postback that the system sends in the testing environment.
-- [struct SKAdTestPostbackVersion](skadtestpostbackversion.md)
+- [struct SKAdTestPostbackVersion](./skadtestpostbackversion.md)
   A constant that indicates the postback version.
 
 

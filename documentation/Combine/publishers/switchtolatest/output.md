@@ -1,7 +1,8 @@
 # Publishers.SwitchToLatest.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher produces elements of the type produced by the upstream publisher-
 
 ## See Also
 
-- [Publishers.SwitchToLatest.Failure](publishers/switchtolatest/failure.md)
+### Declaring supporting types
+- [Publishers.SwitchToLatest.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

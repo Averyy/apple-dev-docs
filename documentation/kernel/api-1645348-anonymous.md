@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kCDTOCFormatATIP](1645348-anonymous/kcdtocformatatip.md)
-- [kCDTOCFormatPMA](1645348-anonymous/kcdtocformatpma.md)
-- [kCDTOCFormatTEXT](1645348-anonymous/kcdtocformattext.md)
-- [kCDTOCFormatTOC](1645348-anonymous/kcdtocformattoc.md)
+- [kCDTOCFormatATIP](./api-1645348-anonymous/kcdtocformatatip.md)
+- [kCDTOCFormatPMA](./api-1645348-anonymous/kcdtocformatpma.md)
+- [kCDTOCFormatTEXT](./api-1645348-anonymous/kcdtocformattext.md)
+- [kCDTOCFormatTOC](./api-1645348-anonymous/kcdtocformattoc.md)
 
 
 ---

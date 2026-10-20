@@ -1,7 +1,8 @@
 # Delete a Featuring Nomination
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove a specific featuring nomination.
 
@@ -10,7 +11,7 @@ Remove a specific featuring nomination.
 
 #### Overview
 
-- id: An opaque resource ID that uniquely identifies the resource. Obtain the nomination resource ID from the [`List Nominations`](get-v1-nominations.md) response.
+- id: An opaque resource ID that uniquely identifies the resource. Obtain the nomination resource ID from the [`List Nominations`](./get-v1-nominations.md) response.
 
 ## Endpoint
 
@@ -18,17 +19,29 @@ Remove a specific featuring nomination.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Featuring Nomination](post-v1-nominations.md)
+### Managing nominations
+- [Create a Featuring Nomination](./post-v1-nominations.md)
   Tell Apple about your upcoming app or feature.
-- [List Nominations](get-v1-nominations.md)
+- [List Nominations](./get-v1-nominations.md)
   Get all featuring nominations.
-- [Read Details for a Nomination](get-v1-nominations-_id_.md)
+- [Read Details for a Nomination](./get-v1-nominations-_id_.md)
   Get information for a specific featuring nomination.
-- [Modify a Nomination](patch-v1-nominations-_id_.md)
+- [Modify a Nomination](./patch-v1-nominations-_id_.md)
   Update a specific featuring nomination.
 
 

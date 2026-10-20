@@ -1,14 +1,15 @@
 # GetWriteCacheState
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn GetWriteCacheState(IOMemoryDescriptor *buffer, UInt8 modePageControlValue);
 ```
 

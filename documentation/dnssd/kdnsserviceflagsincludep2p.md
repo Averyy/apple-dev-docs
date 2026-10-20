@@ -1,7 +1,8 @@
 # kDNSServiceFlagsIncludeP2P
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -18,9 +19,13 @@
 var kDNSServiceFlagsIncludeP2P: UInt32 { get }
 ```
 
+```c
+kDNSServiceFlagsIncludeP2P
+```
+
 #### Discussion
 
-Include P2P interfaces when [`kDNSServiceInterfaceIndexAny`](kdnsserviceinterfaceindexany.md) is specified. By default, specifying [`kDNSServiceInterfaceIndexAny`](kdnsserviceinterfaceindexany.md) does not include P2P interfaces.
+Include P2P interfaces when [`kDNSServiceInterfaceIndexAny`](./kdnsserviceinterfaceindexany.md) is specified. By default, specifying [`kDNSServiceInterfaceIndexAny`](./kdnsserviceinterfaceindexany.md) does not include P2P interfaces.
 
 
 ---

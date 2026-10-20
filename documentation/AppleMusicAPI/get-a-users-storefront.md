@@ -1,7 +1,8 @@
 # Get a User's Storefront
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch a storefront for a specific user.
 
@@ -10,15 +11,15 @@ Fetch a storefront for a specific user.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains a single [`Storefronts`](storefronts.md) object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
+If successful, the HTTP status code is 200 (OK) and the `data` array contains a single [`Storefronts`](./storefronts.md) object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/storefront
 ```
 
@@ -55,17 +56,27 @@ https://api.music.apple.com/v1/me/storefront
 
 ## Parameters
 
+### Query Parameters
+
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
 - `include` ([string]): Additional relationships to include in the fetch.
-- `offset` (string): The offset to use for a paginated request. See [`Fetching Resources by Page`](fetching-resources-by-page.md).
+- `offset` (string): The offset to use for a paginated request. See [Fetching Resources by Page](./fetching-resources-by-page.md).
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
+
+## Responses
+
+- `200` OK (`PaginatedResourceCollectionResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 ## See Also
 
-- [object Storefronts](storefronts.md)
+### Related Documentation
+- [object Storefronts](./storefronts.md)
   A resource object that represents a storefront, an Apple Music and iTunes Store territory that the content is available in.
-- [object StorefrontsResponse](storefrontsresponse.md)
+- [object StorefrontsResponse](./storefrontsresponse.md)
   The response to a storefront request.
 
 

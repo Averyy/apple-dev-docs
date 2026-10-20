@@ -1,12 +1,13 @@
 # WebViewInsertAction.pasted
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the user inserted content by pasting.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Indicates the user inserted content by pasting.
 case pasted
 ```
 
+```c
+WebViewInsertActionPasted
+```
+
 ## See Also
 
-- [WebViewInsertAction.typed](webviewinsertaction/typed.md)
+### Constants
+- [WebViewInsertAction.typed](./typed.md)
   Indicates the user inserted content by typing.
-- [WebViewInsertAction.dropped](webviewinsertaction/dropped.md)
+- [WebViewInsertAction.dropped](./dropped.md)
   Indicates the user inserted content by dropping.
 
 

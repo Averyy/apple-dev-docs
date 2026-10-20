@@ -1,7 +1,8 @@
 # acousticSettings
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 static let acousticSettings: SRSensor
+```
+
+```c
+extern SRSensor const SRSensorAcousticSettings;
 ```
 
 #### Discussion

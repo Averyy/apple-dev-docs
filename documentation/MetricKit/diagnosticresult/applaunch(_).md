@@ -1,7 +1,8 @@
 # DiagnosticResult.appLaunch(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,7 +18,7 @@ case appLaunch(AppLaunchDiagnostic)
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 
 ---

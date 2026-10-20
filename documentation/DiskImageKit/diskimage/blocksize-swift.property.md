@@ -1,7 +1,8 @@
 # blockSize
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block size, either 512 bytes or 4 KB.
 

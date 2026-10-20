@@ -1,7 +1,8 @@
 # kColorSyncAlphaFirst
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The alpha component is stored first and is not premultiplied. For example, non-premultiplied ARGB.
 
@@ -20,21 +21,26 @@ The alpha component is stored first and is not premultiplied. For example, non-p
 var kColorSyncAlphaFirst: ColorSyncAlphaInfo { get }
 ```
 
+```c
+kColorSyncAlphaFirst
+```
+
 ## See Also
 
-- [var kColorSyncAlphaInfoMask: Int](kcolorsyncalphainfomask.md)
-  The mask for extracting the [`ColorSyncAlphaInfo`](colorsyncalphainfo.md) value from a [`ColorSyncDataLayout`](colorsyncdatalayout.md).
-- [var kColorSyncAlphaLast: ColorSyncAlphaInfo](kcolorsyncalphalast.md)
+### Handling alpha
+- [var kColorSyncAlphaInfoMask: Int](./kcolorsyncalphainfomask.md)
+  The mask for extracting the [`ColorSyncAlphaInfo`](./colorsyncalphainfo.md) value from a [`ColorSyncDataLayout`](./colorsyncdatalayout.md).
+- [var kColorSyncAlphaLast: ColorSyncAlphaInfo](./kcolorsyncalphalast.md)
   The alpha component is stored last and is not premultiplied. For example, non-premultiplied RGBA.
-- [var kColorSyncAlphaNone: ColorSyncAlphaInfo](kcolorsyncalphanone.md)
+- [var kColorSyncAlphaNone: ColorSyncAlphaInfo](./kcolorsyncalphanone.md)
   There is no alpha channel. For example, RGB.
-- [var kColorSyncAlphaNoneSkipFirst: ColorSyncAlphaInfo](kcolorsyncalphanoneskipfirst.md)
+- [var kColorSyncAlphaNoneSkipFirst: ColorSyncAlphaInfo](./kcolorsyncalphanoneskipfirst.md)
   There is no alpha channel; the most significant bits are ignored. For example, XRGB.
-- [var kColorSyncAlphaNoneSkipLast: ColorSyncAlphaInfo](kcolorsyncalphanoneskiplast.md)
+- [var kColorSyncAlphaNoneSkipLast: ColorSyncAlphaInfo](./kcolorsyncalphanoneskiplast.md)
   There is no alpha channel; the least significant bits are ignored. For example, RGBX.
-- [var kColorSyncAlphaPremultipliedFirst: ColorSyncAlphaInfo](kcolorsyncalphapremultipliedfirst.md)
+- [var kColorSyncAlphaPremultipliedFirst: ColorSyncAlphaInfo](./kcolorsyncalphapremultipliedfirst.md)
   The alpha component is stored first and the color components are premultiplied by it. For example, premultiplied ARGB.
-- [var kColorSyncAlphaPremultipliedLast: ColorSyncAlphaInfo](kcolorsyncalphapremultipliedlast.md)
+- [var kColorSyncAlphaPremultipliedLast: ColorSyncAlphaInfo](./kcolorsyncalphapremultipliedlast.md)
   The alpha component is stored last and the color components are premultiplied by it. For example, premultiplied RGBA.
 
 

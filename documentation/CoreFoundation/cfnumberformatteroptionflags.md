@@ -1,18 +1,19 @@
 # CFNumberFormatterOptionFlags
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Type for constants specifying how numbers should be parsed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,35 +21,40 @@ Type for constants specifying how numbers should be parsed.
 struct CFNumberFormatterOptionFlags
 ```
 
+```c
+enum CFNumberFormatterOptionFlags : CFOptionFlags;
+```
+
 #### Overview
 
-For values, see [`Number Format Options`](number_format_options.md)
+For values, see [Number Format Options](./number_format_options.md)
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: CFOptionFlags)](cfnumberformatteroptionflags/init(rawvalue:).md)
+- [init(rawValue: CFOptionFlags)](./cfnumberformatteroptionflags/init%28rawvalue%29.md)
 ### Type Properties
-- [static var parseIntegersOnly: CFNumberFormatterOptionFlags](cfnumberformatteroptionflags/parseintegersonly.md)
+- [static var parseIntegersOnly: CFNumberFormatterOptionFlags](./cfnumberformatteroptionflags/parseintegersonly.md)
   Specifies that only integers should be parsed.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum CFNumberFormatterStyle](cfnumberformatterstyle.md)
+### Data Types
+- [enum CFNumberFormatterStyle](./cfnumberformatterstyle.md)
   Type for constants specifying a formatter style.
-- [enum CFNumberFormatterPadPosition](cfnumberformatterpadposition.md)
+- [enum CFNumberFormatterPadPosition](./cfnumberformatterpadposition.md)
   Type for constants specifying how numbers should be padded.
 
 

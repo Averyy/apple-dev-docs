@@ -1,7 +1,8 @@
 # lineCap
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The style to use when drawing line endings.
 
@@ -10,7 +11,7 @@ The style to use when drawing line endings.
 
 ## Declaration
 
-```swift
+```
 lineCap?: "butt" | "round" | "square";
 ```
 
@@ -20,13 +21,14 @@ The three options for line endings are `butt` (squared-off ends), `round` (round
 
 ## See Also
 
-- [lineDash](styleconstructoroptions/linedash.md)
+### Setting line styles
+- [lineDash](./linedash.md)
   An array of line and gap lengths for creating a dashed line.
-- [lineDashOffset](styleconstructoroptions/linedashoffset.md)
+- [lineDashOffset](./linedashoffset.md)
   The number of CSS pixels to use as the offset when drawing a line’s dash pattern.
-- [lineJoin](styleconstructoroptions/linejoin.md)
+- [lineJoin](./linejoin.md)
   The style to use when drawing joins between line segments.
-- [lineWidth](styleconstructoroptions/linewidth.md)
+- [lineWidth](./linewidth.md)
   The width of a line’s stroke, in CSS pixels.
 
 

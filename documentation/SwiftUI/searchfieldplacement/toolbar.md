@@ -1,7 +1,8 @@
 # toolbar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The search field appears in the toolbar.
 
@@ -29,13 +30,14 @@ The precise placement depends on the platform:
 
 ## See Also
 
-- [static let automatic: SearchFieldPlacement](searchfieldplacement/automatic.md)
+### Getting a search field placement
+- [static let automatic: SearchFieldPlacement](./automatic.md)
   SwiftUI places the search field automatically.
-- [static let navigationBarDrawer: SearchFieldPlacement](searchfieldplacement/navigationbardrawer.md)
+- [static let navigationBarDrawer: SearchFieldPlacement](./navigationbardrawer.md)
   The search field appears in the navigation bar.
-- [static func navigationBarDrawer(displayMode: SearchFieldPlacement.NavigationBarDrawerDisplayMode) -> SearchFieldPlacement](searchfieldplacement/navigationbardrawer(displaymode:).md)
+- [static func navigationBarDrawer(displayMode: SearchFieldPlacement.NavigationBarDrawerDisplayMode) -> SearchFieldPlacement](./navigationbardrawer%28displaymode%29.md)
   The search field appears in the navigation bar using the specified display mode.
-- [static var sidebar: SearchFieldPlacement](searchfieldplacement/sidebar.md)
+- [static var sidebar: SearchFieldPlacement](./sidebar.md)
   The search field appears in the sidebar of a navigation view.
 
 

@@ -1,7 +1,8 @@
 # supportsUserFaceTracking
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that tells you whether the iOS device supports tracking the user’s face during a world-tracking session.
 
@@ -15,13 +16,18 @@ A Boolean value that tells you whether the iOS device supports tracking the user
 class var supportsUserFaceTracking: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) BOOL supportsUserFaceTracking;
+```
+
 #### Discussion
 
-Check the value of this property first, before you enable face tracking using [`userFaceTrackingEnabled`](arworldtrackingconfiguration/userfacetrackingenabled.md).
+Check the value of this property first, before you enable face tracking using [`userFaceTrackingEnabled`](./userfacetrackingenabled.md).
 
 ## See Also
 
-- [var userFaceTrackingEnabled: Bool](arworldtrackingconfiguration/userfacetrackingenabled.md)
+### Tracking the User’s Face
+- [var userFaceTrackingEnabled: Bool](./userfacetrackingenabled.md)
   A flag that determines whether ARKit tracks the user’s face in a world-tracking session.
 
 

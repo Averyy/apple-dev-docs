@@ -1,7 +1,8 @@
 # append(contentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the elements of a sequence to the end of the array.
 
@@ -31,7 +32,7 @@ print(numbers)
 // Prints "[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]"
 ```
 
-> **Note**: O(*m*) on average, where *m* is the length of `newElements`, over many calls to `append(contentsOf:)` on the same array.
+> **Complexity**: O(*m*) on average, where *m* is the length of `newElements`, over many calls to `append(contentsOf:)` on the same array.
 
 ## Parameters
 

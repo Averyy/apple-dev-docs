@@ -1,7 +1,8 @@
 # UVIndex
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The expected intensity of ultraviolet radiation from the sun.
 
@@ -23,33 +24,34 @@ struct UVIndex
 ## Topics
 
 ### Getting the UV index
-- [var category: UVIndex.ExposureCategory](uvindex/category.md)
+- [var category: UVIndex.ExposureCategory](./uvindex/category.md)
   The UV Index exposure category.
-- [var value: Int](uvindex/value.md)
+- [var value: Int](./uvindex/value.md)
   The UV Index value.
-- [UVIndex.ExposureCategory](uvindex/exposurecategory.md)
+- [UVIndex.ExposureCategory](./uvindex/exposurecategory.md)
   An enumeration that indicates risk of harm from unprotected sun exposure.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Precipitation](precipitation.md)
+### Characteristics
+- [enum Precipitation](./precipitation.md)
   The form of precipitation.
-- [enum PressureTrend](pressuretrend.md)
+- [enum PressureTrend](./pressuretrend.md)
   The atmospheric pressure change over time.
-- [struct Wind](wind.md)
+- [struct Wind](./wind.md)
   Contains wind data of speed, direction, and gust.
-- [enum WeatherCondition](weathercondition.md)
+- [enum WeatherCondition](./weathercondition.md)
   A description of the current weather condition.
 
 

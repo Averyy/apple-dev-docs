@@ -1,10 +1,11 @@
 # IOBluetoothHandsFreeDeviceFeatures.voiceRecognition
 
 **Framework**: IOBluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,16 +13,21 @@
 case voiceRecognition
 ```
 
+```c
+IOBluetoothHandsFreeDeviceFeatureVoiceRecognition
+```
+
 ## See Also
 
-- [IOBluetoothHandsFreeDeviceFeatures.cliPresentation](iobluetoothhandsfreedevicefeatures/clipresentation.md)
-- [IOBluetoothHandsFreeDeviceFeatures.codecNegotiation](iobluetoothhandsfreedevicefeatures/codecnegotiation.md)
-- [IOBluetoothHandsFreeDeviceFeatures.ecAndOrNRFunction](iobluetoothhandsfreedevicefeatures/ecandornrfunction.md)
-- [IOBluetoothHandsFreeDeviceFeatures.enhancedCallControl](iobluetoothhandsfreedevicefeatures/enhancedcallcontrol.md)
-- [IOBluetoothHandsFreeDeviceFeatures.enhancedCallStatus](iobluetoothhandsfreedevicefeatures/enhancedcallstatus.md)
-- [IOBluetoothHandsFreeDeviceFeatures.none](iobluetoothhandsfreedevicefeatures/none.md)
-- [IOBluetoothHandsFreeDeviceFeatures.remoteVolumeControl](iobluetoothhandsfreedevicefeatures/remotevolumecontrol.md)
-- [IOBluetoothHandsFreeDeviceFeatures.threeWayCalling](iobluetoothhandsfreedevicefeatures/threewaycalling.md)
+### Enumeration Cases
+- [IOBluetoothHandsFreeDeviceFeatures.cliPresentation](./clipresentation.md)
+- [IOBluetoothHandsFreeDeviceFeatures.codecNegotiation](./codecnegotiation.md)
+- [IOBluetoothHandsFreeDeviceFeatures.ecAndOrNRFunction](./ecandornrfunction.md)
+- [IOBluetoothHandsFreeDeviceFeatures.enhancedCallControl](./enhancedcallcontrol.md)
+- [IOBluetoothHandsFreeDeviceFeatures.enhancedCallStatus](./enhancedcallstatus.md)
+- [IOBluetoothHandsFreeDeviceFeatures.none](./none.md)
+- [IOBluetoothHandsFreeDeviceFeatures.remoteVolumeControl](./remotevolumecontrol.md)
+- [IOBluetoothHandsFreeDeviceFeatures.threeWayCalling](./threewaycalling.md)
 
 
 ---

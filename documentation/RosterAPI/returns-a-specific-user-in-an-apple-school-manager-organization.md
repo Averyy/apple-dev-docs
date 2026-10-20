@@ -1,7 +1,8 @@
 # Read a user
 
 **Framework**: Roster API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Read a user in an Apple School Manager organization.
 
@@ -10,7 +11,7 @@ Read a user in an Apple School Manager organization.
 
 ## Mentions
 
-- [Integrating with Roster API and Sign in with Apple](integrating-with-roster-api-and-sign-in-with-apple.md)
+- [Integrating with Roster API and Sign in with Apple](./integrating-with-roster-api-and-sign-in-with-apple.md)
 
 #### Discussion
 
@@ -20,7 +21,7 @@ Access to the `users` resource requires authorization to the `edu.users.read` sc
 
 **Request**:
 
-```None
+```
 curl "https://api-school.apple.com/rosterapi/v1/users/1234" \
         -H "Authorization: Bearer ${TOKEN}"
 ```
@@ -52,19 +53,31 @@ curl "https://api-school.apple.com/rosterapi/v1/users/1234" \
 
 ## Parameters
 
-- `userId` (string) *(required)*: The identifier from the user. Use the `id` field from the [`User`](user.md) object.
+### Path Parameters
+
+- `userId` (string) *(required)*: The identifier from the user. Use the `id` field from the [`User`](./user.md) object.
+
+## Responses
+
+- `200` OK (`User`, `application/json`): The request was successful.
+- `401` Unauthorized: The access token was invalid.
+- `403` Forbidden: Access to the requested user was forbidden.
+- `404` Not Found: The server didn’t find a user with the given `userId` in the organization.
+- `429`: The client made too many requests. The response includes an `X-Retry-After` header that indicates the number of seconds to wait before making another request.
+- `500` Internal Server Error: The server encountered an internal error.
 
 ## See Also
 
-- [object User](user.md)
+### Information about users
+- [object User](./user.md)
   A user in an Apple School Manager organization.
-- [object RoleLocation](rolelocation.md)
+- [object RoleLocation](./rolelocation.md)
   A mapping between a role assumed by a user in an Apple School Manager organization, and the corresponding location.
-- [List users](returns-a-list-of-users-in-an-apple-school-manager-organization.md)
+- [List users](./returns-a-list-of-users-in-an-apple-school-manager-organization.md)
   List users in an Apple School Manager organization.
-- [List users in a class](returns-a-users-for-an-apple-school-manager-class.md)
+- [List users in a class](./returns-a-users-for-an-apple-school-manager-class.md)
   List users in a class of an Apple School Manager organization.
-- [object Users](users.md)
+- [object Users](./users.md)
   A list of users, with a token for pagination.
 
 

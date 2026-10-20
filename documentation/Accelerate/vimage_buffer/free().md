@@ -1,7 +1,8 @@
 # free()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees the resources associated with the vImage buffer.
 
@@ -11,7 +12,7 @@ Frees the resources associated with the vImage buffer.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

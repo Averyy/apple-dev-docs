@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Combine
+**Framework**: Combine  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Publishers.Contains<Upstream>, Publishers.Contains<Upstream>) -> Bool](publishers/contains/==(_:_:).md)
+- [static func == (Publishers.Contains<Upstream>, Publishers.Contains<Upstream>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 
 

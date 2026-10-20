@@ -1,7 +1,8 @@
 # Wi-Fi Aware
 
 **Framework**: Wi-Fi Aware  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Securely pair and connect to external devices over peer-to-peer Wi-Fi.
 
@@ -20,102 +21,104 @@ Wi-Fi Aware™ (also known as Neighbor Awareness Networking or NAN) is a Wi-Fi A
 - Simultaneous use of Wi-Fi Aware devices and a Wi-Fi infrastructure network
 - Fully peer-to-peer topology, allowing peers to come and go without breaking connections to other peers
 
-The Wi-Fi Aware technology works without the need for Wi-Fi infrastructure networks, cellular links, internet connections, or cloud servers. Your app can pair Wi-Fi Aware devices using [`AccessorySetupKit`](https://developer.apple.comhttps://developer.apple.com/documentation/accessorysetupkit/) or [`DeviceDiscoveryUI`](https://developer.apple.comhttps://developer.apple.com/documentation/devicediscoveryui). When paired, your app can create secure, authenticated, and encrypted peer-to-peer connections between paired devices on-demand, using the Wi-Fi Aware and [`Network`](https://developer.apple.comhttps://developer.apple.com/documentation/Network) frameworks.
+The Wi-Fi Aware technology works without the need for Wi-Fi infrastructure networks, cellular links, internet connections, or cloud servers. Your app can pair Wi-Fi Aware devices using [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) or [DeviceDiscoveryUI](../DeviceDiscoveryUI/DeviceDiscoveryUI.md). When paired, your app can create secure, authenticated, and encrypted peer-to-peer connections between paired devices on-demand, using the Wi-Fi Aware and [Network](../Network/Network.md) frameworks.
 
-Your app may connect to paired Wi-Fi Aware devices whenever it’s running, in both foreground and background states. Your app may get runtime using any of the existing mechanisms on the platform, such as with the [`BackgroundTasks`](https://developer.apple.comhttps://developer.apple.com/documentation/backgroundtasks) API.
+Your app may connect to paired Wi-Fi Aware devices whenever it’s running, in both foreground and background states. Your app may get runtime using any of the existing mechanisms on the platform, such as with the [BackgroundTasks](../BackgroundTasks/BackgroundTasks.md) API.
 
-If you are building a hardware device or accessory that uses Wi-Fi Aware, refer to the Wi-Fi Aware chapter of the [`Accessory Guide`](https://developer.apple.comhttps://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf) for the requirements to work well with Apple devices.
+If you are building a hardware device or accessory that uses Wi-Fi Aware, refer to the Wi-Fi Aware chapter of the [Accessory Guide](https://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf) for the requirements to work well with Apple devices.
 
-> ❗ **Important**: The following Apple devices support the Wi-Fi Aware framework: - iPhone 12 and later
-- iPad (10th generation) and later
-- iPad Air (4th generation) and later
-- iPad Pro 11-inch (3rd generation) and later
-- iPad Pro 12.9-inch (5th generation) and later
-- iPad mini (6th generation) and later
+> ❗ **Important**: The following Apple devices support the Wi-Fi Aware framework:
+>
+> - iPhone 12 and later
+> - iPad (10th generation) and later
+> - iPad Air (4th generation) and later
+> - iPad Pro 11-inch (3rd generation) and later
+> - iPad Pro 12.9-inch (5th generation) and later
+> - iPad mini (6th generation) and later
 
 ## Topics
 
 ### Essentials
-- [Building peer-to-peer apps](building-peer-to-peer-apps.md)
+- [Building peer-to-peer apps](./building-peer-to-peer-apps.md)
   Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
-- [Connecting devices for peer-to-peer Wi-Fi](connecting-paired-devices.md)
+- [Connecting devices for peer-to-peer Wi-Fi](./connecting-paired-devices.md)
   Make outgoing and accept incoming secure connections with paired devices.
-- [Adopting Wi-Fi Aware](adopting-wi-fi-aware.md)
+- [Adopting Wi-Fi Aware](./adopting-wi-fi-aware.md)
   Add entitlements and declare your app’s services.
-- [com.apple.developer.wifi-aware](../bundleresources/entitlements/com.apple.developer.wifi-aware.md)
+- [com.apple.developer.wifi-aware](../BundleResources/entitlements/com.apple.developer.wifi-aware.md)
   The entitlement the system requires for an app to use the Wi-Fi Aware framework.
-- [WiFiAwareServices](../bundleresources/information-property-list/wifiawareservices.md)
+- [WiFiAwareServices](../BundleResources/information-property-list/wifiawareservices.md)
   Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 ### Host capabilities
-- [struct WACapabilities](wacapabilities.md)
+- [struct WACapabilities](./wacapabilities.md)
   A structure that checks the host device’s supported features and capabilities.
-- [WACapabilities.Feature](wacapabilities/feature.md)
+- [WACapabilities.Feature](./wacapabilities/feature.md)
   Features that your app’s current host device can support.
 ### Services to discover
-- [protocol WAService](waservice.md)
+- [protocol WAService](./waservice.md)
   A protocol that defines a service that a device can publish or subscribe to.
-- [struct WASubscribableService](wasubscribableservice.md)
+- [struct WASubscribableService](./wasubscribableservice.md)
   A service your app discovers on remote devices and can connect to.
-- [struct WAPublishableService](wapublishableservice.md)
+- [struct WAPublishableService](./wapublishableservice.md)
   A service, hosted by your app, that remote devices can connect to.
 ### Paired devices
-- [struct WAPairedDevice](wapaireddevice.md)
+- [struct WAPairedDevice](./wapaireddevice.md)
   A known Wi-Fi Aware device that your app can connect to.
-- [WAPairedDevice.Devices](wapaireddevice/devices.md)
+- [WAPairedDevice.Devices](./wapaireddevice/devices.md)
   A dictionary holding a snapshot of currently paired devices accessible and known to your app.
-- [WAPairedDevice.DevicesSequence](wapaireddevice/devicessequence.md)
+- [WAPairedDevice.DevicesSequence](./wapaireddevice/devicessequence.md)
   A sequence that vends updates to a paired device list, as the list changes.
-- [WAPairedDevice.PairingInfo](wapaireddevice/pairinginfo-swift.struct.md)
+- [WAPairedDevice.PairingInfo](./wapaireddevice/pairinginfo-swift.struct.md)
   A collection of unauthenticated information the system receives from a device before it’s paired for the first time.
 ### Subscriber
-- [struct WASubscriberBrowser](wasubscriberbrowser.md)
+- [struct WASubscriberBrowser](./wasubscriberbrowser.md)
   The structure that configures a network browser to subscribe to a Wi-Fi Aware service and make outgoing connections to paired devices.
-- [WASubscriberBrowser.Action](wasubscriberbrowser/action.md)
+- [WASubscriberBrowser.Action](./wasubscriberbrowser/action.md)
   The structure that configures the Wi-Fi Aware subscriber operation the network browser performs.
-- [WASubscriberBrowser.Devices](wasubscriberbrowser/devices.md)
+- [WASubscriberBrowser.Devices](./wasubscriberbrowser/devices.md)
   The structure that determines the devices to connect to.
 ### Publisher
-- [struct WAPublisherListener](wapublisherlistener.md)
+- [struct WAPublisherListener](./wapublisherlistener.md)
   Configures a network listener to publish a service over Wi-Fi Aware and accept incoming connections from paired devices.
-- [WAPublisherListener.Action](wapublisherlistener/action.md)
+- [WAPublisherListener.Action](./wapublisherlistener/action.md)
   The structure that configures the Wi-Fi Aware publisher operation that the network listener performs.
-- [WAPublisherListener.Devices](wapublisherlistener/devices.md)
+- [WAPublisherListener.Devices](./wapublisherlistener/devices.md)
   The structure that determines the devices to connect to.
-- [WAPublisherListener.DatapathParameters](wapublisherlistener/datapathparameters.md)
+- [WAPublisherListener.DatapathParameters](./wapublisherlistener/datapathparameters.md)
   The parameter that sets the initial Wi-Fi Aware data path configuration for any devices that are connected.
 ### Parameters
-- [class NWParameters](../network/nwparameters.md)
+- [class NWParameters](../Network/nwparameters.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
-- [struct NWParametersBuilder](../network/nwparametersbuilder.md)
+- [struct NWParametersBuilder](../Network/nwparametersbuilder.md)
   An opaque class that is responsible for creating and configuring NWParameters based on the parameterized protocol stack.
-- [struct WAParameters](waparameters.md)
+- [struct WAParameters](./waparameters.md)
   Parameters configuring a Wi-Fi Aware data path connection.
 ### Connections
-- [struct WAEndpoint](waendpoint.md)
+- [struct WAEndpoint](./waendpoint.md)
   The endpoint of a Wi-Fi Aware connection.
-- [class WAConnection](waconnection.md)
+- [class WAConnection](./waconnection.md)
   Provides access to the Wi-Fi Aware-specific configuration and information that underlies a given `Network/NetworkConnection`.
 ### Security
-- [struct WASharedSecret](washaredsecret.md)
+- [struct WASharedSecret](./washaredsecret.md)
   A high-entropy shared secret unique to this network connection.
 ### Connection performance
-- [struct NWPath](../network/nwpath.md)
+- [struct NWPath](../Network/nwpath.md)
   An object that contains information about the properties of the network that a connection uses, or that are available to your app.
-- [struct WAPath](wapath.md)
+- [struct WAPath](./wapath.md)
   A representation of the current Wi-Fi Aware path.
-- [enum WAPerformanceMode](waperformancemode.md)
+- [enum WAPerformanceMode](./waperformancemode.md)
   The performance mode that indicates what performance criterion to prioritize.
-- [enum WAAccessCategory](waaccesscategory.md)
+- [enum WAAccessCategory](./waaccesscategory.md)
   The underling quality-of-service (QoS) the Wi-Fi layer uses to transmit data packets from a connection over the air.
-- [struct WAPerformanceReport](waperformancereport.md)
+- [struct WAPerformanceReport](./waperformancereport.md)
   The current performance state of the data path.
 ### Errors
-- [enum NWError](../network/nwerror.md)
+- [enum NWError](../Network/nwerror.md)
   The errors returned by objects in the Network framework.
-- [enum WAError](waerror.md)
+- [enum WAError](./waerror.md)
   An error in Wi-Fi Aware.
 ### Structures
-- [struct WAPerformanceForecast](waperformanceforecast.md)
+- [struct WAPerformanceForecast](./waperformanceforecast.md)
   The performance forecast for a connection setup to the remote device.
 
 

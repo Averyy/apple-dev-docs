@@ -1,22 +1,23 @@
 # DSPSplitComplex
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef struct DSPSplitComplex DSPSplitComplex;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [imagp](dspsplitcomplex/1579985-imagp.md)
-- [realp](dspsplitcomplex/1579962-realp.md)
+- [imagp](./dspsplitcomplex/api-1579985-imagp.md)
+- [realp](./dspsplitcomplex/api-1579962-realp.md)
 
 
 ---

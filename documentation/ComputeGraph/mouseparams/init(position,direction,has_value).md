@@ -1,16 +1,17 @@
 # init(position:direction:has_value:)
 
 **Framework**: Compute Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- Reality Composer Pro ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # triangleKaleidoscope()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a triangular kaleidoscope effect and then tiles the result.
 
@@ -19,6 +20,10 @@ Create a triangular kaleidoscope effect and then tiles the result.
 class func triangleKaleidoscope() -> any CIFilter & CITriangleKaleidoscope
 ```
 
+```objc
++ (CIFilter<CITriangleKaleidoscope> *) triangleKaleidoscopeFilter;
+```
+
 #### Return Value
 
 The tiled image.
@@ -29,11 +34,11 @@ This method applies the triangle kaleidoscope filter to an image. The effect pro
 
 The triangle kaleidoscope tile filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`decay`**: A `float` representing the intensity of the color fade from the center of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`point`**: A set of coordinates marking the center of the triangular area of the input image as a [`CIVector`](civector.md).
-- **`rotation`**: A `float` representing the angle of rotation of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`size`**: A `float` representing the size in pixels of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`decay`**: A `float` representing the intensity of the color fade from the center of the triangle as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`point`**: A set of coordinates marking the center of the triangular area of the input image as a [`CIVector`](../civector.md).
+- **`rotation`**: A `float` representing the angle of rotation of the triangle as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`size`**: A `float` representing the size in pixels of the triangle as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that produces a triangle tile of the input image, creating an optical illusion:
 
@@ -49,39 +54,40 @@ func triangleKaleidoscope(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, a triangle kaleidoscope filter is applied, resulting in a triangular portion of the image being angled and repeated throughout the entire image.](/images/com.apple.coreimage/media-3599889@2x.png)
+![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, a triangle kaleidoscope filter is applied, resulting in a triangular portion of the image being angled and repeated throughout the entire image.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3599889@2x.png)
 
 ## See Also
 
-- [class func affineClamp() -> any CIFilter & CIAffineClamp](cifilter-swift.class/affineclamp.md)
+### Filters
+- [class func affineClamp() -> any CIFilter & CIAffineClamp](./affineclamp%28%29.md)
   Performs a transform on the image and extends the image edges to infinity.
-- [class func affineTile() -> any CIFilter & CIAffineTile](cifilter-swift.class/affinetile.md)
+- [class func affineTile() -> any CIFilter & CIAffineTile](./affinetile%28%29.md)
   Performs a transform on the image and tiles the result.
-- [class func eightfoldReflectedTile() -> any CIFilter & CIEightfoldReflectedTile](cifilter-swift.class/eightfoldreflectedtile.md)
+- [class func eightfoldReflectedTile() -> any CIFilter & CIEightfoldReflectedTile](./eightfoldreflectedtile%28%29.md)
   Creates an eight-way reflected pattern.
-- [class func fourfoldReflectedTile() -> any CIFilter & CIFourfoldReflectedTile](cifilter-swift.class/fourfoldreflectedtile.md)
+- [class func fourfoldReflectedTile() -> any CIFilter & CIFourfoldReflectedTile](./fourfoldreflectedtile%28%29.md)
   Creates a four-way reflected pattern.
-- [class func fourfoldRotatedTile() -> any CIFilter & CIFourfoldRotatedTile](cifilter-swift.class/fourfoldrotatedtile.md)
+- [class func fourfoldRotatedTile() -> any CIFilter & CIFourfoldRotatedTile](./fourfoldrotatedtile%28%29.md)
   Creates a tiled image by rotating a tile in increments of 90 degrees.
-- [class func fourfoldTranslatedTile() -> any CIFilter & CIFourfoldTranslatedTile](cifilter-swift.class/fourfoldtranslatedtile.md)
+- [class func fourfoldTranslatedTile() -> any CIFilter & CIFourfoldTranslatedTile](./fourfoldtranslatedtile%28%29.md)
   Creates a tiled image by applying four translation operations.
-- [class func glideReflectedTile() -> any CIFilter & CIGlideReflectedTile](cifilter-swift.class/glidereflectedtile.md)
+- [class func glideReflectedTile() -> any CIFilter & CIGlideReflectedTile](./glidereflectedtile%28%29.md)
   Tiles an image by rotating and reflecting a tile from the image.
-- [class func kaleidoscope() -> any CIFilter & CIKaleidoscope](cifilter-swift.class/kaleidoscope.md)
+- [class func kaleidoscope() -> any CIFilter & CIKaleidoscope](./kaleidoscope%28%29.md)
   Creates a 12-way kaleidoscopic image from an image.
-- [class func opTile() -> any CIFilter & CIOpTile](cifilter-swift.class/optile.md)
+- [class func opTile() -> any CIFilter & CIOpTile](./optile%28%29.md)
   Produces an effect that mimics a style of visual art that uses optical illusions.
-- [class func parallelogramTile() -> any CIFilter & CIParallelogramTile](cifilter-swift.class/parallelogramtile.md)
+- [class func parallelogramTile() -> any CIFilter & CIParallelogramTile](./parallelogramtile%28%29.md)
   Warps the image to create a parallelogram and tiles the result.
-- [class func perspectiveTile() -> any CIFilter & CIPerspectiveTile](cifilter-swift.class/perspectivetile.md)
+- [class func perspectiveTile() -> any CIFilter & CIPerspectiveTile](./perspectivetile%28%29.md)
   Tiles an image by adjusting the perspective of the image.
-- [class func sixfoldReflectedTile() -> any CIFilter & CISixfoldReflectedTile](cifilter-swift.class/sixfoldreflectedtile.md)
+- [class func sixfoldReflectedTile() -> any CIFilter & CISixfoldReflectedTile](./sixfoldreflectedtile%28%29.md)
   Produces a tiled image from a source image by applying a six-way reflected symmetry.
-- [class func sixfoldRotatedTile() -> any CIFilter & CISixfoldRotatedTile](cifilter-swift.class/sixfoldrotatedtile.md)
+- [class func sixfoldRotatedTile() -> any CIFilter & CISixfoldRotatedTile](./sixfoldrotatedtile%28%29.md)
   Creates a tiled image by rotating in increments of 60 degrees.
-- [class func triangleTile() -> any CIFilter & CITriangleTile](cifilter-swift.class/triangletile.md)
+- [class func triangleTile() -> any CIFilter & CITriangleTile](./triangletile%28%29.md)
   Tiles a triangular area of an image.
-- [class func twelvefoldReflectedTile() -> any CIFilter & CITwelvefoldReflectedTile](cifilter-swift.class/twelvefoldreflectedtile.md)
+- [class func twelvefoldReflectedTile() -> any CIFilter & CITwelvefoldReflectedTile](./twelvefoldreflectedtile%28%29.md)
   Creates a tiled image by rotating in increments of 30 degrees.
 
 

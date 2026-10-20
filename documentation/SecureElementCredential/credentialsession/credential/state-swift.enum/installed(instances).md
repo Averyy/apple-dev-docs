@@ -1,7 +1,8 @@
 # CredentialSession.Credential.State.installed(instances:)
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The credential installation is complete for one or more instances.
 
@@ -21,11 +22,12 @@ The associated value `instances` is an array of applet instances associated with
 
 ## See Also
 
-- [CredentialSession.Credential.State.installationPending](credentialsession/credential/state-swift.enum/installationpending.md)
+### Credential states
+- [CredentialSession.Credential.State.installationPending](./installationpending.md)
   The credential installation is pending but isn’t complete.
-- [CredentialSession.Credential.InstanceInfo](credentialsession/credential/instanceinfo.md)
+- [CredentialSession.Credential.InstanceInfo](../instanceinfo.md)
   Information about an applet instance associated with a specific credential.
-- [CredentialSession.Credential.State.installationFailed](credentialsession/credential/state-swift.enum/installationfailed.md)
+- [CredentialSession.Credential.State.installationFailed](./installationfailed.md)
   The credential installation failed.
 
 

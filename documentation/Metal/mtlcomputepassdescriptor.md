@@ -1,7 +1,8 @@
 # MTLComputePassDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of how to dispatch execution of pass commands and GPU performance sampling.
 
@@ -19,41 +20,46 @@ A description of how to dispatch execution of pass commands and GPU performance 
 class MTLComputePassDescriptor
 ```
 
+```objc
+@interface MTLComputePassDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## Topics
 
 ### Configuring the dispatch mechanism
-- [var dispatchType: MTLDispatchType](mtlcomputepassdescriptor/dispatchtype.md)
+- [var dispatchType: MTLDispatchType](./mtlcomputepassdescriptor/dispatchtype.md)
   The strategy for dispatching any compute commands encoded in the compute pass.
 ### Specifying sample buffers for GPU counters
-- [var sampleBufferAttachments: MTLComputePassSampleBufferAttachmentDescriptorArray](mtlcomputepassdescriptor/samplebufferattachments.md)
+- [var sampleBufferAttachments: MTLComputePassSampleBufferAttachmentDescriptorArray](./mtlcomputepassdescriptor/samplebufferattachments.md)
   The sample buffers that the compute pass can access.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum MTLDispatchType](mtldispatchtype.md)
+### Configuring a compute pass
+- [enum MTLDispatchType](./mtldispatchtype.md)
   The type of dispatch method to use when calling encoded functions.
-- [struct MTLDispatchThreadgroupsIndirectArguments](mtldispatchthreadgroupsindirectarguments.md)
+- [struct MTLDispatchThreadgroupsIndirectArguments](./mtldispatchthreadgroupsindirectarguments.md)
   The data layout required for arguments needed to specify the size of threadgroups.
-- [class MTLComputePassSampleBufferAttachmentDescriptor](mtlcomputepasssamplebufferattachmentdescriptor.md)
+- [class MTLComputePassSampleBufferAttachmentDescriptor](./mtlcomputepasssamplebufferattachmentdescriptor.md)
   A configuration that instructs the GPU where to store counter data from the beginning and end of a compute pass.
-- [class MTLComputePassSampleBufferAttachmentDescriptorArray](mtlcomputepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLComputePassSampleBufferAttachmentDescriptorArray](./mtlcomputepasssamplebufferattachmentdescriptorarray.md)
   A container that stores an array of sample buffer attachments for a compute pass.
 
 

@@ -1,7 +1,8 @@
 # AEInitializeDesc(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Initializes a new descriptor. 
 
@@ -14,21 +15,26 @@ Initializes a new descriptor.
 func AEInitializeDesc(_ desc: UnsafeMutablePointer<AEDesc>!)
 ```
 
+```c
+void AEInitializeDesc(AEDesc *desc);
+```
+
 #### Discussion
 
-The function sets the type of the descriptor to `typeNull` and sets the data handle to `NULL`. If you need to initialize a descriptor that already has some data in it, use [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) to deallocate the memory and initialize the descriptor.
+The function sets the type of the descriptor to `typeNull` and sets the data handle to `NULL`. If you need to initialize a descriptor that already has some data in it, use [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md) to deallocate the memory and initialize the descriptor.
 
-##### 1770232
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `desc`: A pointer to a new descriptor. See [`AEDesc`](aedesc.md).
+- `desc`: A pointer to a new descriptor. See [`AEDesc`](./aedesc.md).
 
 ## See Also
 
-- [func AECheckIsRecord(UnsafePointer<AEDesc>!) -> Bool](1444011-aecheckisrecord.md)
+### Miscellaneous
+- [func AECheckIsRecord(UnsafePointer<AEDesc>!) -> Bool](./api-1444011-aecheckisrecord.md)
   Determines whether a descriptor is truly an `AERecord`.
 
 

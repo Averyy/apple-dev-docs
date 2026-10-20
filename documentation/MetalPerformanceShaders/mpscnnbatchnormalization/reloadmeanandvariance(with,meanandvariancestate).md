@@ -1,7 +1,8 @@
 # reloadMeanAndVariance(with:meanAndVarianceState:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func reloadMeanAndVariance(with commandBuffer: any MTLCommandBuffer, meanAndVarianceState: MPSCNNNormalizationMeanAndVarianceState)
+```
+
+```objc
+- (void) reloadMeanAndVarianceWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer meanAndVarianceState:(MPSCNNNormalizationMeanAndVarianceState *) meanAndVarianceState;
 ```
 
 

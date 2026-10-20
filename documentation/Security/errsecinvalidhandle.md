@@ -1,7 +1,8 @@
 # errSecInvalidHandle
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid handle was encountered.
 
@@ -18,6 +19,10 @@ An invalid handle was encountered.
 
 ```swift
 var errSecInvalidHandle: OSStatus { get }
+```
+
+```c
+errSecInvalidHandle
 ```
 
 

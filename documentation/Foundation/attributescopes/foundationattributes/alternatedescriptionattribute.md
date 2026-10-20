@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.AlternateDescriptionAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for using an alternative description as an attribute.
 
@@ -24,16 +25,17 @@ enum AlternateDescriptionAttribute
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let alternateDescription: AttributeScopes.FoundationAttributes.AlternateDescriptionAttribute](attributescopes/foundationattributes/alternatedescription.md)
+### Using alternative description attributes
+- [let alternateDescription: AttributeScopes.FoundationAttributes.AlternateDescriptionAttribute](./alternatedescription.md)
   A property for accessing an alternative presentation attribute.
 
 

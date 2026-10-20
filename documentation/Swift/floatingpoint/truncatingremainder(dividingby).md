@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the remainder of this value divided by the given value using truncating division.
@@ -50,6 +51,12 @@ If this value and `other` are both finite numbers, the truncating remainder has 
 ## Parameters
 
 - `other`: The value to use when dividing this value.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [func truncatingRemainder(dividingBy: Self) -> Self](./truncatingremainder%28dividingby%29-6ay9c.md)
+  Returns the remainder of this value divided by the given value using truncating division.
 
 
 ---

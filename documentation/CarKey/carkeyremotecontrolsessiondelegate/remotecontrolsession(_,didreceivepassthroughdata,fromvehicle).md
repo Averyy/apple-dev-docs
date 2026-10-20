@@ -2,6 +2,7 @@
 
 **Framework**: CarKey  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the delegate object that the vehicle sent passthrough data for you to handle.
@@ -29,11 +30,12 @@ The system executes this method on the dispatch queue you specified when you sta
 
 - `session`: The current session.
 - `didReceivePassthroughData`: The passthrough data that the vehicle sent. Use the data to determine what actions to take, if any.
-- `vehicleID`: The identifier of the vehicle that sent the data. This identifier is the same string in the [`identifier`](vehiclereport/identifier.md) property of the vehicle report.
+- `vehicleID`: The identifier of the vehicle that sent the data. This identifier is the same string in the [`identifier`](../vehiclereport/identifier.md) property of the vehicle report.
 
 ## See Also
 
-- [func remoteControlSession(CarKeyRemoteControlSession, vehicleDidUpdateReport: VehicleReport)](carkeyremotecontrolsessiondelegate/remotecontrolsession(_:vehicledidupdatereport:).md)
+### Receiving Data from the Vehicle
+- [func remoteControlSession(CarKeyRemoteControlSession, vehicleDidUpdateReport: VehicleReport)](./remotecontrolsession%28_,vehicledidupdatereport%29.md)
   Notifies your delegate object that the status of the specified vehicle changed.
 
 

@@ -8,7 +8,7 @@ Displays user options for a media item.
 
 Use the `mainTemplate` element to display options to the user; for example, the main page for a movie with options to play the movie, see extra content, and jump to specific scenes. The background area contains an image relating to the product, and the options are contained in a menu bar along the bottom of the screen. The following figure shows the basic layout for a `mainTemplate` page. The default theme for a main template is `dark`.
 
-![Layout diagram showing a large background area with a menu bar at the bottom.](/images/com.apple.TVML/maintemplate-1@2x.png)
+![Layout diagram showing a large background area with a menu bar at the bottom.](https://developer.apple.com/tutorials/images/com.apple.TVML/maintemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -28,10 +28,10 @@ The following listing shows the elements of the mainTemplate element in TVML for
 
 ###### Element Descriptions
 
-- **[`background`](background.md)**: The background elements used on the page, such as `audio`.
-- **[`menuBar`](menubar.md)**: A list of displayed menu items.
-- **[`menuItem`](menuitem.md)**: Information for an individual menu item.
-- **[`section`](section.md)**: An area containing a group of menu items.
+- **[background](./background.md)**: The background elements used on the page, such as `audio`.
+- **[menuBar](./menubar.md)**: A list of displayed menu items.
+- **[menuItem](./menuitem.md)**: Information for an individual menu item.
+- **[section](./section.md)**: An area containing a group of menu items.
 
 ##### Example
 
@@ -62,51 +62,52 @@ The following listing shows the TVML for a `mainTemplate` example. The example d
 
 The following figure shows the output for the above example:
 
-![Screenshot showing a stylized city landscape. A menu bar showing user options is along the bottom.](/images/com.apple.TVML/maintemplate-2@2x.png)
+![Screenshot showing a stylized city landscape. A menu bar showing user options is along the bottom.](https://developer.apple.com/tutorials/images/com.apple.TVML/maintemplate-2@2x.png)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [alertTemplate](alerttemplate.md)
+### Full-Page Templates
+- [alertTemplate](./alerttemplate.md)
   Displays important information to the user.
-- [catalogTemplate](catalogtemplate.md)
+- [catalogTemplate](./catalogtemplate.md)
   Displays groups of items along one side of a page and images of a group’s contents on the other side.
-- [compilationTemplate](compilationtemplate.md)
+- [compilationTemplate](./compilationtemplate.md)
   Displays information about a single media item and its components.
-- [descriptiveAlertTemplate](descriptivealerttemplate.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
   Displays large amounts of important information to the user.
-- [divTemplate](divtemplate.md)
+- [divTemplate](./divtemplate.md)
   Provides the ability to create pages that don’t conform to a layout defined by another template.
-- [formTemplate](formtemplate.md)
+- [formTemplate](./formtemplate.md)
   Provides the ability to gather information from the user.
-- [listTemplate](listtemplate.md)
+- [listTemplate](./listtemplate.md)
   Displays a list of items along one side of a page and the corresponding image on the other side.
-- [loadingTemplate](loadingtemplate.md)
+- [loadingTemplate](./loadingtemplate.md)
   Displays a spinner and description on the screen.
-- [menuBarTemplate](menubartemplate.md)
+- [menuBarTemplate](./menubartemplate.md)
   Creates a page with items along the top and related information below.
-- [oneupTemplate](oneuptemplate.md)
+- [oneupTemplate](./oneuptemplate.md)
   Creates a page that allows users to navigate between full-screen images.
-- [paradeTemplate](paradetemplate.md)
+- [paradeTemplate](./paradetemplate.md)
   Displays a groups of items along one side of a page and scrolling images on the other side.
-- [productBundleTemplate](productbundletemplate.md)
+- [productBundleTemplate](./productbundletemplate.md)
   Displays information for a group of related media items.
-- [productTemplate](producttemplate.md)
+- [productTemplate](./producttemplate.md)
   Displays detailed information about a single product.
-- [ratingTemplate](ratingtemplate.md)
+- [ratingTemplate](./ratingtemplate.md)
   Displays a rating for an item.
-- [searchTemplate](searchtemplate.md)
+- [searchTemplate](./searchtemplate.md)
   Searches for a media item based on user input.
 
 

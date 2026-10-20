@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the object with an attestation type.
 
@@ -24,7 +25,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](asauthorizationpublickeycredentialattestationkind/init(rawvalue:).md)
+### Creating the attestation type
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates the object with an attestation type.
 
 

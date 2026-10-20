@@ -1,7 +1,8 @@
 # uniqueID
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that uniquely identifies the device’s camera.
 
@@ -16,13 +17,18 @@ An identifier that uniquely identifies the device’s camera.
 var uniqueID: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * uniqueID;
+```
+
 #### Discussion
 
-This value matches the [`uniqueID`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/uniqueid) of the camera it describes. Pass it to [`init(uniqueID:)`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/init(uniqueid:)) on a background actor to get the camera itself.
+This value matches the [`uniqueID`](../../AVFoundation/avcapturedevice/uniqueid.md) of the camera it describes. Pass it to [`init(uniqueID:)`](../../AVFoundation/avcapturedevice/init%28uniqueid%29.md) on a background actor to get the camera itself.
 
 ## See Also
 
-- [var localizedName: String](avcapturedevicedescriptor/localizedname.md)
+### Identifying the device
+- [var localizedName: String](./localizedname.md)
   A name for the camera that’s suitable for display in your interface.
 
 

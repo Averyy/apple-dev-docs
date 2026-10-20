@@ -1,7 +1,8 @@
 # prefix(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new slice that contains the initial elements of the original slice.
 
@@ -30,13 +31,14 @@ A new slice of the underlying data frame.
 
 ## See Also
 
-- [func prefix(upTo: Int) -> DataFrame.Slice](dataframe/slice/prefix(upto:).md)
+### Creating a Slice by Selecting Rows
+- [func prefix(upTo: Int) -> DataFrame.Slice](./prefix%28upto%29.md)
   Returns a new slice that contains the initial elements of the original slice up to, but not including, the element at a position.
-- [func prefix(through: Int) -> DataFrame.Slice](dataframe/slice/prefix(through:).md)
+- [func prefix(through: Int) -> DataFrame.Slice](./prefix%28through%29.md)
   Returns a new slice that contains the initial elements of the original slice up to and including the element at a position.
-- [func suffix(Int) -> DataFrame.Slice](dataframe/slice/suffix(_:).md)
+- [func suffix(Int) -> DataFrame.Slice](./suffix%28_%29.md)
   Returns a new slice that contains the final elements of the original slice.
-- [func suffix(from: Int) -> DataFrame.Slice](dataframe/slice/suffix(from:).md)
+- [func suffix(from: Int) -> DataFrame.Slice](./suffix%28from%29.md)
   Returns a new slice that contains the final elements of the original slice beginning with the element at a position.
 
 

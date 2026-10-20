@@ -1,7 +1,8 @@
 # mandarinToLatin
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant containing the transliteration of a string from Han script to Latin.
 
@@ -20,41 +21,46 @@ A constant containing the transliteration of a string from Han script to Latin.
 static let mandarinToLatin: StringTransform
 ```
 
+```c
+extern NSStringTransform const NSStringTransformMandarinToLatin;
+```
+
 #### Discussion
 
 For example, the string “hàn zì” transliterates to “汉字”.
 
-This is equivalent to [`kCFStringTransformMandarinLatin`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformmandarinlatin).
+This is equivalent to [`kCFStringTransformMandarinLatin`](../../CoreFoundation/kcfstringtransformmandarinlatin.md).
 
 ## See Also
 
-- [static let latinToKatakana: StringTransform](stringtransform/latintokatakana.md)
+### Constants
+- [static let latinToKatakana: StringTransform](./latintokatakana.md)
   A constant containing the transliteration of a string from Latin script to Katakana script.
-- [static let latinToHiragana: StringTransform](stringtransform/latintohiragana.md)
+- [static let latinToHiragana: StringTransform](./latintohiragana.md)
   A constant containing the transliteration of a string from Latin script to Hiragana script.
-- [static let latinToHangul: StringTransform](stringtransform/latintohangul.md)
+- [static let latinToHangul: StringTransform](./latintohangul.md)
   A constant containing the transliteration of a string from Latin script to Hangul script.
-- [static let latinToArabic: StringTransform](stringtransform/latintoarabic.md)
+- [static let latinToArabic: StringTransform](./latintoarabic.md)
   A constant containing the transliteration of a string from Latin script to Arabic script.
-- [static let latinToHebrew: StringTransform](stringtransform/latintohebrew.md)
+- [static let latinToHebrew: StringTransform](./latintohebrew.md)
   A constant containing the transliteration of a string from Latin script to Hebrew script.
-- [static let latinToThai: StringTransform](stringtransform/latintothai.md)
+- [static let latinToThai: StringTransform](./latintothai.md)
   A constant containing the transliteration of a string from Latin script to Thai script.
-- [static let latinToCyrillic: StringTransform](stringtransform/latintocyrillic.md)
+- [static let latinToCyrillic: StringTransform](./latintocyrillic.md)
   A constant containing the transliteration of a string from Latin script to Cyrillic script.
-- [static let toLatin: StringTransform](stringtransform/tolatin.md)
+- [static let toLatin: StringTransform](./tolatin.md)
   A constant containing the transliteration of a string from any script to Latin script.
-- [static let hiraganaToKatakana: StringTransform](stringtransform/hiraganatokatakana.md)
+- [static let hiraganaToKatakana: StringTransform](./hiraganatokatakana.md)
   A constant containing the transliteration of a string from Hiragana script to Katakana script.
-- [static let fullwidthToHalfwidth: StringTransform](stringtransform/fullwidthtohalfwidth.md)
+- [static let fullwidthToHalfwidth: StringTransform](./fullwidthtohalfwidth.md)
   A constant containing the transformation of a string from full-width CJK characters to half-width forms.
-- [static let toXMLHex: StringTransform](stringtransform/toxmlhex.md)
+- [static let toXMLHex: StringTransform](./toxmlhex.md)
   A constant containing the transformation of a string from characters to XML hexadecimal escape codes.
-- [static let toUnicodeName: StringTransform](stringtransform/tounicodename.md)
+- [static let toUnicodeName: StringTransform](./tounicodename.md)
   An identifier for a transform that converts characters to Unicode names.
-- [static let stripCombiningMarks: StringTransform](stringtransform/stripcombiningmarks.md)
+- [static let stripCombiningMarks: StringTransform](./stripcombiningmarks.md)
   A constant containing the transformation of a string by removing combining marks.
-- [static let stripDiacritics: StringTransform](stringtransform/stripdiacritics.md)
+- [static let stripDiacritics: StringTransform](./stripdiacritics.md)
   A constant containing the transformation of a string by removing diacritics.
 
 

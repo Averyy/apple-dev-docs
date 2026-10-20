@@ -1,7 +1,8 @@
 # DidChangeLibraryMessage
 
 **Framework**: iTunes Library  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -16,8 +17,8 @@ struct DidChangeLibraryMessage
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

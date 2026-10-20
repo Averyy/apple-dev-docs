@@ -1,7 +1,8 @@
 # contrast(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that applies a contrast adjustment.
 
@@ -34,7 +35,8 @@ This filter is equivalent to the `contrast` filter primitive defined by the Scal
 
 ## See Also
 
-- [static func brightness(Double) -> GraphicsContext.Filter](graphicscontext/filter/brightness(_:).md)
+### Changing brightness and contrast
+- [static func brightness(Double) -> GraphicsContext.Filter](./brightness%28_%29.md)
   Returns a filter that applies a brightness adjustment.
 
 

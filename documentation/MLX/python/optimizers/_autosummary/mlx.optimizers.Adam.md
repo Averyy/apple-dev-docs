@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.Adam
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.Adam.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.Adam
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.Adam
-
 **class Adam(*learning_rate: float | Callable[[array], array]*, *betas: List[float] = [0.9, 0.999]*, *eps: float = 1e-08*, *bias_correction: bool = False*)**
 : The Adam optimizer [1]. In detail,
 [1]: Kingma, D.P. and Ba, J., 2015. Adam: A method for stochastic
@@ -62,5 +35,3 @@ Performs the Adam parameter update and stores \(v\) and \(m\) in the optimizer s
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

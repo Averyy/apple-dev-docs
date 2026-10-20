@@ -1,7 +1,8 @@
 # bit_VerticalHeightLeft
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The vertical height left channel.
 
@@ -20,23 +21,28 @@ The vertical height left channel.
 static var bit_VerticalHeightLeft: AudioChannelBitmap { get }
 ```
 
+```c
+kAudioChannelBit_VerticalHeightLeft
+```
+
 ## See Also
 
-- [static var bit_Left: AudioChannelBitmap](audiochannelbitmap/bit_left.md)
+### Left
+- [static var bit_Left: AudioChannelBitmap](./bit_left.md)
   The left channel.
-- [static var bit_LeftCenter: AudioChannelBitmap](audiochannelbitmap/bit_leftcenter.md)
+- [static var bit_LeftCenter: AudioChannelBitmap](./bit_leftcenter.md)
   The left center channel.
-- [static var bit_LeftSurround: AudioChannelBitmap](audiochannelbitmap/bit_leftsurround.md)
+- [static var bit_LeftSurround: AudioChannelBitmap](./bit_leftsurround.md)
   The left surround channel.
-- [static var bit_LeftSurroundDirect: AudioChannelBitmap](audiochannelbitmap/bit_leftsurrounddirect.md)
+- [static var bit_LeftSurroundDirect: AudioChannelBitmap](./bit_leftsurrounddirect.md)
   The left surround direct channel.
-- [static var bit_LeftTopFront: AudioChannelBitmap](audiochannelbitmap/bit_lefttopfront.md)
+- [static var bit_LeftTopFront: AudioChannelBitmap](./bit_lefttopfront.md)
   The left-top front channel.
-- [static var bit_LeftTopMiddle: AudioChannelBitmap](audiochannelbitmap/bit_lefttopmiddle.md)
+- [static var bit_LeftTopMiddle: AudioChannelBitmap](./bit_lefttopmiddle.md)
   The left-top middle channel.
-- [static var bit_LeftTopRear: AudioChannelBitmap](audiochannelbitmap/bit_lefttoprear.md)
+- [static var bit_LeftTopRear: AudioChannelBitmap](./bit_lefttoprear.md)
   The left-top rear channel.
-- [static var bit_TopBackLeft: AudioChannelBitmap](audiochannelbitmap/bit_topbackleft.md)
+- [static var bit_TopBackLeft: AudioChannelBitmap](./bit_topbackleft.md)
   The top-back left channel.
 
 

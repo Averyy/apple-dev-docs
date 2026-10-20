@@ -1,7 +1,8 @@
 # formIndex(_:offsetBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Offsets the given index by the specified distance.
 
@@ -24,7 +25,7 @@ func formIndex(_ i: inout Self.Index, offsetBy distance: Int)
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
 
 ## Parameters
 
@@ -33,15 +34,16 @@ The value passed as `distance` must not offset `i` beyond the bounds of the coll
 
 ## See Also
 
-- [var startIndex: Self.Index](collection/startindex.md)
+### Manipulating Indices
+- [var startIndex: Self.Index](./startindex.md)
   The position of the first element in a nonempty collection.
-- [var endIndex: Self.Index](collection/endindex.md)
+- [var endIndex: Self.Index](./endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var indices: Self.Indices](collection/indices-9kkbf.md)
+- [var indices: Self.Indices](./indices-9kkbf.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [func index(after: Self.Index) -> Self.Index](collection/index(after:).md)
+- [func index(after: Self.Index) -> Self.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](collection/formindex(_:offsetby:limitedby:)-6jwra.md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29-6jwra.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
 
 

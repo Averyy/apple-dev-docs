@@ -1,7 +1,8 @@
 # starts(with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether the initial elements of the sequence 
 ```swift
 func starts<PossiblePrefix>(with possiblePrefix: PossiblePrefix) -> Bool where PossiblePrefix : Sequence, Self.Element == PossiblePrefix.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 
@@ -43,7 +46,7 @@ print(b.starts(with: []))
 // Prints "true"
 ```
 
-> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `possiblePrefix`.
+> **Complexity**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `possiblePrefix`.
 
 ## Parameters
 

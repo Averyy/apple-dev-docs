@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces a range of elements with the elements in the specified collection.
 
@@ -37,7 +38,7 @@ If you pass a zero-length range as the `subrange` parameter, this method inserts
 
 Likewise, if you pass a zero-length collection as the `newElements` parameter, this method removes the elements in the given subrange without replacement. Calling the `removeSubrange(_:)` method instead is preferred.
 
-> **Note**: O(*n* + *m*), where *n* is length of the array and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the array, this method is equivalent to `append(contentsOf:)`.
+> **Complexity**: O(*n* + *m*), where *n* is length of the array and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the array, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 

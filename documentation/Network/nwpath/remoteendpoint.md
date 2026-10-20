@@ -1,7 +1,8 @@
 # remoteEndpoint
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remote endpoint in use by a connection’s network path.
 
@@ -22,7 +23,8 @@ let remoteEndpoint: NWEndpoint?
 
 ## See Also
 
-- [let localEndpoint: NWEndpoint?](nwpath/localendpoint.md)
+### Inspecting Connected Paths
+- [let localEndpoint: NWEndpoint?](./localendpoint.md)
   The local endpoint in use by a connection’s network path.
 
 

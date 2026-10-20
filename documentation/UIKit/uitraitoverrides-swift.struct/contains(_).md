@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the trait overrides contain a change for the trait you provide.
 
@@ -10,7 +11,7 @@ Returns a Boolean value that indicates whether the trait overrides contain a cha
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

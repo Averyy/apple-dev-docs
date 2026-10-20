@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL of the open document if it is saved to disk.
 
@@ -25,9 +26,10 @@ Returns `nil` if the document has never been saved.
 
 ## See Also
 
-- [var lastContentModificationDate: Date?](urldocumentconfiguration/lastcontentmodificationdate.md)
+### Accessing document properties
+- [var lastContentModificationDate: Date?](./lastcontentmodificationdate.md)
   The date on which the contents of the document were last modified, if available.
-- [var creationSource: DocumentCreationSource?](urldocumentconfiguration/creationsource.md)
+- [var creationSource: DocumentCreationSource?](./creationsource.md)
   The source associated with the button that created this document.
 
 

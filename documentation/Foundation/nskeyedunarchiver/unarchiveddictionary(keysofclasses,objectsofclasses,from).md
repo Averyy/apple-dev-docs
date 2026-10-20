@@ -1,7 +1,8 @@
 # unarchivedDictionary(keysOfClasses:objectsOfClasses:from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 14.0+

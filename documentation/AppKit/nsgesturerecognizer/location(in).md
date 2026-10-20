@@ -1,7 +1,8 @@
 # location(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the point computed as the location of the gesture.
 
@@ -12,6 +13,10 @@ Returns the point computed as the location of the gesture.
 
 ```swift
 func location(in view: NSView?) -> NSPoint
+```
+
+```objc
+- (NSPoint) locationInView:(NSView *) view;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # NWBrowser.Result.Metadata.none
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value indicating that no associated data was discovered on a service.
 
@@ -22,7 +23,8 @@ case none
 
 ## See Also
 
-- [NWBrowser.Result.Metadata.bonjour(_:)](nwbrowser/result/metadata-swift.enum/bonjour(_:).md)
+### Metadata Types
+- [NWBrowser.Result.Metadata.bonjour(_:)](./bonjour%28_%29.md)
   A TXT record associated with a discovered service.
 
 

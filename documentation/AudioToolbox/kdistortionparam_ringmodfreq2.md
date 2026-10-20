@@ -1,15 +1,16 @@
 # kDistortionParam_RingModFreq2
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,23 +18,28 @@
 var kDistortionParam_RingModFreq2: AudioUnitParameterID { get }
 ```
 
+```c
+kDistortionParam_RingModFreq2
+```
+
 ## See Also
 
-- [var kDistortionParam_CubicTerm: AudioUnitParameterID](kdistortionparam_cubicterm.md)
-- [var kDistortionParam_Decay: AudioUnitParameterID](kdistortionparam_decay.md)
-- [var kDistortionParam_Decimation: AudioUnitParameterID](kdistortionparam_decimation.md)
-- [var kDistortionParam_DecimationMix: AudioUnitParameterID](kdistortionparam_decimationmix.md)
-- [var kDistortionParam_Delay: AudioUnitParameterID](kdistortionparam_delay.md)
-- [var kDistortionParam_DelayMix: AudioUnitParameterID](kdistortionparam_delaymix.md)
-- [var kDistortionParam_FinalMix: AudioUnitParameterID](kdistortionparam_finalmix.md)
-- [var kDistortionParam_LinearTerm: AudioUnitParameterID](kdistortionparam_linearterm.md)
-- [var kDistortionParam_PolynomialMix: AudioUnitParameterID](kdistortionparam_polynomialmix.md)
-- [var kDistortionParam_RingModBalance: AudioUnitParameterID](kdistortionparam_ringmodbalance.md)
-- [var kDistortionParam_RingModFreq1: AudioUnitParameterID](kdistortionparam_ringmodfreq1.md)
-- [var kDistortionParam_RingModMix: AudioUnitParameterID](kdistortionparam_ringmodmix.md)
-- [var kDistortionParam_Rounding: AudioUnitParameterID](kdistortionparam_rounding.md)
-- [var kDistortionParam_SoftClipGain: AudioUnitParameterID](kdistortionparam_softclipgain.md)
-- [var kDistortionParam_SquaredTerm: AudioUnitParameterID](kdistortionparam_squaredterm.md)
+### Constants
+- [var kDistortionParam_CubicTerm: AudioUnitParameterID](./kdistortionparam_cubicterm.md)
+- [var kDistortionParam_Decay: AudioUnitParameterID](./kdistortionparam_decay.md)
+- [var kDistortionParam_Decimation: AudioUnitParameterID](./kdistortionparam_decimation.md)
+- [var kDistortionParam_DecimationMix: AudioUnitParameterID](./kdistortionparam_decimationmix.md)
+- [var kDistortionParam_Delay: AudioUnitParameterID](./kdistortionparam_delay.md)
+- [var kDistortionParam_DelayMix: AudioUnitParameterID](./kdistortionparam_delaymix.md)
+- [var kDistortionParam_FinalMix: AudioUnitParameterID](./kdistortionparam_finalmix.md)
+- [var kDistortionParam_LinearTerm: AudioUnitParameterID](./kdistortionparam_linearterm.md)
+- [var kDistortionParam_PolynomialMix: AudioUnitParameterID](./kdistortionparam_polynomialmix.md)
+- [var kDistortionParam_RingModBalance: AudioUnitParameterID](./kdistortionparam_ringmodbalance.md)
+- [var kDistortionParam_RingModFreq1: AudioUnitParameterID](./kdistortionparam_ringmodfreq1.md)
+- [var kDistortionParam_RingModMix: AudioUnitParameterID](./kdistortionparam_ringmodmix.md)
+- [var kDistortionParam_Rounding: AudioUnitParameterID](./kdistortionparam_rounding.md)
+- [var kDistortionParam_SoftClipGain: AudioUnitParameterID](./kdistortionparam_softclipgain.md)
+- [var kDistortionParam_SquaredTerm: AudioUnitParameterID](./kdistortionparam_squaredterm.md)
 
 
 ---

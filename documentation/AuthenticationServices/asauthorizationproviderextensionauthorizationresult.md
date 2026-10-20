@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionAuthorizationResult
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of an authorization request.
 
@@ -18,44 +19,49 @@ The result of an authorization request.
 class ASAuthorizationProviderExtensionAuthorizationResult
 ```
 
+```objc
+@interface ASAuthorizationProviderExtensionAuthorizationResult : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(httpAuthorizationHeaders: [String : String])](asauthorizationproviderextensionauthorizationresult/init(httpauthorizationheaders:)-ywja.md)
+- [init(httpAuthorizationHeaders: [String : String])](./asauthorizationproviderextensionauthorizationresult/init%28httpauthorizationheaders%29-ywja.md)
   Initializes an authorization with tokens stored in HTTP headers.
-- [init(httpResponse: HTTPURLResponse, httpBody: Data?)](asauthorizationproviderextensionauthorizationresult/init(httpresponse:httpbody:)-2j92m.md)
+- [init(httpResponse: HTTPURLResponse, httpBody: Data?)](./asauthorizationproviderextensionauthorizationresult/init%28httpresponse,httpbody%29-2j92m.md)
   Initializes an authorization with a HTTP response and body.
-- [init(HTTPAuthorizationHeaders: [String : String])](asauthorizationproviderextensionauthorizationresult/init(httpauthorizationheaders:)-932pm.md)
-- [init(HTTPResponse: HTTPURLResponse, httpBody: Data?)](asauthorizationproviderextensionauthorizationresult/init(httpresponse:httpbody:)-48yla.md)
+- [init(HTTPAuthorizationHeaders: [String : String])](./asauthorizationproviderextensionauthorizationresult/init%28httpauthorizationheaders%29-932pm.md)
+- [init(HTTPResponse: HTTPURLResponse, httpBody: Data?)](./asauthorizationproviderextensionauthorizationresult/init%28httpresponse,httpbody%29-48yla.md)
 ### Instance Properties
-- [var httpAuthorizationHeaders: [String : String]?](asauthorizationproviderextensionauthorizationresult/httpauthorizationheaders.md)
+- [var httpAuthorizationHeaders: [String : String]?](./asauthorizationproviderextensionauthorizationresult/httpauthorizationheaders.md)
   A dictionary of authorization HTTP headers.
-- [var httpResponse: HTTPURLResponse?](asauthorizationproviderextensionauthorizationresult/httpresponse.md)
+- [var httpResponse: HTTPURLResponse?](./asauthorizationproviderextensionauthorizationresult/httpresponse.md)
   The HTTP response for authentications.
-- [var httpBody: Data?](asauthorizationproviderextensionauthorizationresult/httpbody.md)
+- [var httpBody: Data?](./asauthorizationproviderextensionauthorizationresult/httpbody.md)
   The HTTP response body.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ASAuthorizationSingleSignOnProvider](asauthorizationsinglesignonprovider.md)
+### Performing enterprise single sign-on
+- [class ASAuthorizationSingleSignOnProvider](./asauthorizationsinglesignonprovider.md)
   A mechanism for generating requests to authenticate users with third-party providers.
-- [class ASAuthorizationSingleSignOnCredential](asauthorizationsinglesignoncredential.md)
+- [class ASAuthorizationSingleSignOnCredential](./asauthorizationsinglesignoncredential.md)
   A credential that results from a successful single sign-on (SSO) authentication.
-- [protocol ASAuthorizationProviderExtensionAuthorizationRequestHandler](asauthorizationproviderextensionauthorizationrequesthandler.md)
+- [protocol ASAuthorizationProviderExtensionAuthorizationRequestHandler](./asauthorizationproviderextensionauthorizationrequesthandler.md)
   An interface through which a single sign-on (SSO) authentication provider extension handles authentication requests.
-- [ASAuthorizationController.RequestOptions](asauthorizationcontroller/requestoptions.md)
+- [ASAuthorizationController.RequestOptions](./asauthorizationcontroller/requestoptions.md)
   Options that modify how a controller performs authorization requests.
 
 

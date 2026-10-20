@@ -1,7 +1,8 @@
 # DockAccessory.MotionStates
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of orientation and velocity updates from the device.
 
@@ -20,27 +21,28 @@ struct MotionStates
 ## Topics
 
 ### Iterating over motion states
-- [DockAccessory.MotionStates.Iterator](dockaccessory/motionstates-swift.struct/iterator.md)
+- [DockAccessory.MotionStates.Iterator](./motionstates-swift.struct/iterator.md)
   An object that allows iteration over dock accessory motion states.
-- [func makeAsyncIterator() -> DockAccessory.MotionStates.Iterator](dockaccessory/motionstates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> DockAccessory.MotionStates.Iterator](./motionstates-swift.struct/makeasynciterator%28%29.md)
   Creates and returns an iterator that traverses the list of dock accessory motion states.
-- [DockAccessory.MotionStates.Element](dockaccessory/motionstates-swift.struct/element.md)
+- [DockAccessory.MotionStates.Element](./motionstates-swift.struct/element.md)
   A dock accessory motion state.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var motionStates: DockAccessory.MotionStates](dockaccessory/motionstates-swift.property.md)
+### Getting position and limits
+- [var motionStates: DockAccessory.MotionStates](./motionstates-swift.property.md)
   Motion information from the dock accessory that includes current orientation and velocity of all axes.
-- [var limits: DockAccessory.Limits](dockaccessory/limits-swift.property.md)
+- [var limits: DockAccessory.Limits](./limits-swift.property.md)
   Current limits for the axes of rotation and maximum angular velocity.
-- [DockAccessory.MotionState](dockaccessory/motionstate.md)
+- [DockAccessory.MotionState](./motionstate.md)
   An event that indicates the state of a dock accessory’s current position and speed.
-- [DockAccessory.Limits](dockaccessory/limits-swift.struct.md)
+- [DockAccessory.Limits](./limits-swift.struct.md)
   Soft limits on multiple axes of rotation.
 
 

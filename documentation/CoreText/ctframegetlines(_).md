@@ -1,7 +1,8 @@
 # CTFrameGetLines(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of lines stored in the frame.
 
@@ -20,6 +21,10 @@ Returns an array of lines stored in the frame.
 func CTFrameGetLines(_ frame: CTFrame) -> CFArray
 ```
 
+```c
+extern CFArrayRefCTFrameGetLines(CTFrameRef frame);
+```
+
 #### Return Value
 
 A CFArray object containing the CTLine objects that make up the frame, or, if there are no lines in the frame, an array with no elements.
@@ -30,7 +35,8 @@ A CFArray object containing the CTLine objects that make up the frame, or, if th
 
 ## See Also
 
-- [func CTFrameGetLineOrigins(CTFrame, CFRange, UnsafeMutablePointer<CGPoint>)](ctframegetlineorigins(_:_:_:).md)
+### Getting Lines
+- [func CTFrameGetLineOrigins(CTFrame, CFRange, UnsafeMutablePointer<CGPoint>)](./ctframegetlineorigins%28_,_,_%29.md)
   Copies a range of line origins for a frame.
 
 

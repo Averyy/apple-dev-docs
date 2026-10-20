@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSet.Relationships.Teams.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of a matchmaking team.
 
@@ -10,7 +11,7 @@ The data structure of a matchmaking team.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSet.Relationships.Teams.Data
 ```
 
@@ -18,6 +19,8 @@ object GameCenterMatchmakingRuleSet.Relationships.Teams.Data
 
 - `id` (string) *(required)*: A unique identifier for a team.
 - `type` (string) *(required)*: The type of resource.
+
+  **Allowed Values**: `gameCenterMatchmakingTeams`
 
 
 ---

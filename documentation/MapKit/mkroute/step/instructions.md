@@ -1,7 +1,8 @@
 # instructions
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The written instructions for following the path that the step represents.
 
@@ -20,17 +21,22 @@ The written instructions for following the path that the step represents.
 var instructions: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * instructions;
+```
+
 #### Discussion
 
 The framework localizes the string in this property according to the user’s language preferences. You can present this string to the user from your app’s interface.
 
 ## See Also
 
-- [var notice: String?](mkroute/step/notice.md)
+### Getting additional step details
+- [var notice: String?](./notice.md)
   Additional notices that apply to the step.
-- [var distance: CLLocationDistance](mkroute/step/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The step distance, in meters.
-- [var transportType: MKDirectionsTransportType](mkroute/step/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The transport type of the step.
 
 

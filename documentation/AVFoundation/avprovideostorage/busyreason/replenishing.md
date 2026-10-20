@@ -1,7 +1,8 @@
 # replenishing
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Pro Video Storage capacity is being replenished.
 
@@ -16,6 +17,10 @@ Pro Video Storage capacity is being replenished.
 
 ```swift
 static let replenishing: AVProVideoStorage.BusyReason
+```
+
+```c
+extern AVProVideoStorageBusyReason const AVProVideoStorageBusyReasonReplenishing;
 ```
 
 

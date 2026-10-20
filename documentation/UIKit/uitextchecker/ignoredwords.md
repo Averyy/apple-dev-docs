@@ -1,7 +1,8 @@
 # ignoredWords
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the words that the text checker ignores when spell-checking.
 
@@ -9,13 +10,17 @@ Returns the words that the text checker ignores when spell-checking.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var ignoredWords: [String]? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSArray<NSString *> * ignoredWords;
 ```
 
 #### Return Value
@@ -28,13 +33,14 @@ The spell checker excludes ignored words as misspelled words during the current 
 
 ## See Also
 
-- [func ignoreWord(String)](uitextchecker/ignoreword(_:).md)
+### Learning and Ignoring Words
+- [func ignoreWord(String)](./ignoreword%28_%29.md)
   Tells the text checker to ignore the specified word when spell-checking.
-- [class func learnWord(String)](uitextchecker/learnword(_:).md)
+- [class func learnWord(String)](./learnword%28_%29.md)
   Tells the text checker to learn the specified word so that it doesn’t evaluate it as misspelled.
-- [class func unlearnWord(String)](uitextchecker/unlearnword(_:).md)
+- [class func unlearnWord(String)](./unlearnword%28_%29.md)
   Tells the text checker to unlearn the specified word.
-- [class func hasLearnedWord(String) -> Bool](uitextchecker/haslearnedword(_:).md)
+- [class func hasLearnedWord(String) -> Bool](./haslearnedword%28_%29.md)
   Returns whether the text checker has learned the specified word.
 
 

@@ -1,7 +1,8 @@
 # setNormalOffsets(_:offset:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the buffer containing blend-shape normal offsets.
 
@@ -21,7 +22,7 @@ func setNormalOffsets(_ buffer: any MTLBuffer, offset: Int) throws
 
 The buffer must contain `targetCount × vertexCount` entries in the same format as the input mesh’s `.normal` attribute.
 
-> **Note**: If `offset` is out of bounds for `buffer`, or if the buffer is too small.
+> **Throws**: If `offset` is out of bounds for `buffer`, or if the buffer is too small.
 
 ## Parameters
 

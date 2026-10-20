@@ -1,7 +1,8 @@
 # CMMemoryPoolFlush(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deallocates all memory the pool holds.
 
@@ -20,15 +21,20 @@ Deallocates all memory the pool holds.
 func CMMemoryPoolFlush(_ pool: CMMemoryPool)
 ```
 
+```c
+extern void CMMemoryPoolFlush(CMMemoryPoolRef pool);
+```
+
 ## Parameters
 
 - `pool`: The memory pool to flush.
 
 ## See Also
 
-- [func CMMemoryPoolGetAllocator(CMMemoryPool) -> CFAllocator](cmmemorypoolgetallocator(_:).md)
+### Managing a Memory Pool
+- [func CMMemoryPoolGetAllocator(CMMemoryPool) -> CFAllocator](./cmmemorypoolgetallocator%28_%29.md)
   Returns the allocator for the memory pool.
-- [func CMMemoryPoolInvalidate(CMMemoryPool)](cmmemorypoolinvalidate(_:).md)
+- [func CMMemoryPoolInvalidate(CMMemoryPool)](./cmmemorypoolinvalidate%28_%29.md)
   Invalidates the memory pool, which causes its allocator to stop recycling memory.
 
 

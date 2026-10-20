@@ -1,7 +1,8 @@
 # pixelsProcessed
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of pixels the render produced executing kernels.
 
@@ -19,13 +20,18 @@ The number of pixels the render produced executing kernels.
 var pixelsProcessed: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger pixelsProcessed;
+```
+
 ## See Also
 
-- [var kernelExecutionTime: TimeInterval](cirenderinfo/kernelexecutiontime.md)
+### Instance Properties
+- [var kernelExecutionTime: TimeInterval](./kernelexecutiontime.md)
   The amount of time a render spent executing kernels.
-- [var passCount: Int](cirenderinfo/passcount.md)
+- [var passCount: Int](./passcount.md)
   The number of passes the render took.
-- [var kernelCompileTime: TimeInterval](cirenderinfo/kernelcompiletime.md)
+- [var kernelCompileTime: TimeInterval](./kernelcompiletime.md)
 
 
 ---

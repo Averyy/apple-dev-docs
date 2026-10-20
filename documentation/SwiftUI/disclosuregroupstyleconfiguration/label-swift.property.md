@@ -1,7 +1,8 @@
 # label
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label for the disclosure group.
 
@@ -20,7 +21,8 @@ let label: DisclosureGroupStyleConfiguration.Label
 
 ## See Also
 
-- [DisclosureGroupStyleConfiguration.Label](disclosuregroupstyleconfiguration/label-swift.struct.md)
+### Configuring the label
+- [DisclosureGroupStyleConfiguration.Label](./label-swift.struct.md)
   A type-erased label of a disclosure group.
 
 

@@ -1,7 +1,8 @@
 # FFEGES_EMULATED
 
 **Framework**: Force Feedback  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,10 +14,15 @@
 var FFEGES_EMULATED: Int { get }
 ```
 
+```c
+FFEGES_EMULATED
+```
+
 ## See Also
 
-- [var FFEGES_NOTPLAYING: Int](ffeges_notplaying.md)
-- [var FFEGES_PLAYING: Int](ffeges_playing.md)
+### Constants
+- [var FFEGES_NOTPLAYING: Int](./ffeges_notplaying.md)
+- [var FFEGES_PLAYING: Int](./ffeges_playing.md)
 
 
 ---

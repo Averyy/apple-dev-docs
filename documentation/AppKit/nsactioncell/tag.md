@@ -1,17 +1,22 @@
 # tag
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the receiver’s tag.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var tag: Int { get set }
+```
+
+```objc
+@property NSInteger tag;
 ```
 
 

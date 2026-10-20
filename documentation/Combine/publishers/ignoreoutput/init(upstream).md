@@ -1,7 +1,8 @@
 # init(upstream:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that ignores all upstream elements, but passes along the upstream publisher’s completion state (finish or failed).
 

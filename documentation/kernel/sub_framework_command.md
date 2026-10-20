@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sub_framework_command {
     ...
 };
@@ -17,9 +17,9 @@ struct sub_framework_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](sub_framework_command/1525468-cmd.md)
-- [cmdsize](sub_framework_command/1525737-cmdsize.md)
-- [umbrella](sub_framework_command/1525674-umbrella.md)
+- [cmd](./sub_framework_command/api-1525468-cmd.md)
+- [cmdsize](./sub_framework_command/api-1525737-cmdsize.md)
+- [umbrella](./sub_framework_command/api-1525674-umbrella.md)
 
 
 ---

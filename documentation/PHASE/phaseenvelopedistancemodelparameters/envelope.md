@@ -1,7 +1,8 @@
 # envelope
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An envelope that shapes sound dissipation over distance.
 
@@ -17,6 +18,10 @@ An envelope that shapes sound dissipation over distance.
 
 ```swift
 var envelope: PHASEEnvelope { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) PHASEEnvelope * envelope;
 ```
 
 

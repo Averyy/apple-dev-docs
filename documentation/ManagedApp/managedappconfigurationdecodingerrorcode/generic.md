@@ -1,7 +1,8 @@
 # generic
 
 **Framework**: ManagedApp  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A reserved error that indicates the decoder threw an unknown custom error.
 

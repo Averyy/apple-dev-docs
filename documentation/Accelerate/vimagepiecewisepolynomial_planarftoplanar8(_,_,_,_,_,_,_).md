@@ -1,7 +1,8 @@
 # vImagePiecewisePolynomial_PlanarFtoPlanar8(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a set of piecewise polynomials to transform a 32-bit planar image to an 8-bit planar image.
 
@@ -20,15 +21,19 @@ Applies a set of piecewise polynomials to transform a 32-bit planar image to an 
 func vImagePiecewisePolynomial_PlanarFtoPlanar8(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ coefficients: UnsafeMutablePointer<UnsafePointer<Float>?>, _ boundaries: UnsafePointer<Float>, _ order: UInt32, _ log2segments: UInt32, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImagePiecewisePolynomial_PlanarFtoPlanar8(const vImage_Buffer *src, const vImage_Buffer *dest, const float **coefficients, const float *boundaries, uint32_t order, uint32_t log2segments, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-You can approximate many different correction functions by carefully choosing the polynomials and the ranges of input values they operate on. For example, the sample code project [`Applying tone curve adjustments to images`](applying-tone-curve-adjustments-to-images.md) demonstrates how to apply tone curve adjustments to images using polynomial transforms.
+You can approximate many different correction functions by carefully choosing the polynomials and the ranges of input values they operate on. For example, the sample code project [Applying tone curve adjustments to images](./applying-tone-curve-adjustments-to-images.md) demonstrates how to apply tone curve adjustments to images using polynomial transforms.
 
-The following code defines two sets of polynomial coefficients, `coefficients0` as `[0, 127, 0]` and `coefficients1` as `[0, 0, 255].` The boundaries array, `[0, 0.5, 1]`, specifies that the [`vImagePiecewisePolynomial_PlanarFtoPlanar8(_:_:_:_:_:_:_:)`](vimagepiecewisepolynomial_planarftoplanar8(_:_:_:_:_:_:_:).md) function applies `coefficients0` to source pixels less than `0.5`, and applies `coefficients1` to other pixels.
+The following code defines two sets of polynomial coefficients, `coefficients0` as `[0, 127, 0]` and `coefficients1` as `[0, 0, 255].` The boundaries array, `[0, 0.5, 1]`, specifies that the [`vImagePiecewisePolynomial_PlanarFtoPlanar8(_:_:_:_:_:_:_:)`](./vimagepiecewisepolynomial_planarftoplanar8%28_,_,_,_,_,_,_%29.md) function applies `coefficients0` to source pixels less than `0.5`, and applies `coefficients1` to other pixels.
 
 Note that the boundaries array contains three elements that define two ranges: `0..<0.5` and `0.5...1`. The `order` value equals the number of coefficients in each segment minus one.
 
@@ -137,19 +142,22 @@ For best performance, choose a single higher-order polynomial over many lower-or
 
 - `src`: The source vImage buffer.
 - `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `coefficients`: A pointer to an array of polynomial coefficient arrays. Each polynomial coefficient array contains the coefficients for one polynomial. A polynomial of order `R` has `R+1` coefficients, and all of the polynomials in this array must have the same order. Order the coefficients from the zeroth-order term to the highest order term. For example, the function evaluates the coefficients `[0.5, 0.6, 0.7]` as `0.5 * x⁰ + 0.6 * x¹ + 0.7 * x²`.
+- `coefficients`: A pointer to an array of polynomial coefficient arrays. Each polynomial coefficient array contains the coefficients for one polynomial. A polynomial of order `R` has `R+1` coefficients, and all of the polynomials in this array must have the same order.
+
+  Order the coefficients from the zeroth-order term to the highest order term. For example, the function evaluates the coefficients `[0.5, 0.6, 0.7]` as `0.5 * x⁰ + 0.6 * x¹ + 0.7 * x²`.
 - `boundaries`: A pointer to an array of boundary values, in increasing order, that separates adjacent ranges of pixel values. The first boundary value is the lowest in the range and the function clips input values lower than this to this value. The last boundary value is the highest in the range and the function clips input values higher than this to this value. The boundary values between the first and last separate the subranges from each other.
 - `order`: The order of the polynomials.
 - `log2segments`: The number of polynomials to represent as a base-2 logarithm. If you pass a noninteger power-of-two number of polynomials, round up to the next integer power of two, and repeat the last polynomial the appropriate number of times.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Applying tone curve adjustments to images](applying-tone-curve-adjustments-to-images.md)
+### Applying a polynomial
+- [Applying tone curve adjustments to images](./applying-tone-curve-adjustments-to-images.md)
   Use the vImage library’s polynomial transform to apply tone curve adjustments to images.
-- [func vImagePiecewisePolynomial_Planar8toPlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafePointer<Float>?>, UnsafePointer<Float>, UInt32, UInt32, vImage_Flags) -> vImage_Error](vimagepiecewisepolynomial_planar8toplanarf(_:_:_:_:_:_:_:).md)
+- [func vImagePiecewisePolynomial_Planar8toPlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafePointer<Float>?>, UnsafePointer<Float>, UInt32, UInt32, vImage_Flags) -> vImage_Error](./vimagepiecewisepolynomial_planar8toplanarf%28_,_,_,_,_,_,_%29.md)
   Applies a set of piecewise polynomials to transform an 8-bit planar image to a 32-bit planar image.
-- [func vImagePiecewisePolynomial_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafePointer<Float>?>, UnsafePointer<Float>, UInt32, UInt32, vImage_Flags) -> vImage_Error](vimagepiecewisepolynomial_planarf(_:_:_:_:_:_:_:).md)
+- [func vImagePiecewisePolynomial_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafePointer<Float>?>, UnsafePointer<Float>, UInt32, UInt32, vImage_Flags) -> vImage_Error](./vimagepiecewisepolynomial_planarf%28_,_,_,_,_,_,_%29.md)
   Applies a set of piecewise polynomials to transform a 32-bit planar image.
 
 

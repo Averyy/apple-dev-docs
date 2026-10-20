@@ -1,7 +1,8 @@
 # init(orientation:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image flipper.
 
@@ -25,7 +26,8 @@ init(orientation: ImageFlipper.Orientation)
 
 ## See Also
 
-- [ImageFlipper.Orientation](imageflipper/orientation-swift.enum.md)
+### Creating a transformer
+- [ImageFlipper.Orientation](./orientation-swift.enum.md)
   The orientation to flip the image.
 
 

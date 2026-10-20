@@ -1,23 +1,28 @@
 # normal
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that defines the nominal orientation of the surface at each point for use in lighting.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var normal: SCNMaterialProperty { get }
+```
+
+```objc
+@property (nonatomic, readonly) SCNMaterialProperty * normal;
 ```
 
 #### Discussion
@@ -26,32 +31,34 @@ Simulating the interaction of lights with a material requires information about 
 
 Alternatively, you can use a texture image as a *normal map* that describes the orientation of a surface for each pixel in the texture. When SceneKit uses an image, it treats the R, G, and B components of each as the X, Y, and Z components of a surface normal vector. Because a normal map texture can store much more detailed surface information than a geometry, you can use a material’s normal property to simulate rough surfaces such as stone or add embossed or engraved designs to an otherwise smooth surface.
 
-By default, the normal property’s [`contents`](scnmaterialproperty/contents.md) object is a white color. Setting the normal property’s contents to any solid color disables normal mapping, causing SceneKit to shade the material using only the surface normal information provided by its geometry. Setting the normal property’s contents to an image or other texture-mapped content enables normal mapping, which also automatically sets the material’s [`isLitPerPixel`](scnmaterial/islitperpixel.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+By default, the normal property’s [`contents`](../scnmaterialproperty/contents.md) object is a white color. Setting the normal property’s contents to any solid color disables normal mapping, causing SceneKit to shade the material using only the surface normal information provided by its geometry. Setting the normal property’s contents to an image or other texture-mapped content enables normal mapping, which also automatically sets the material’s [`isLitPerPixel`](./islitperpixel.md) property to [`true`](../../Swift/true.md).
 
 The figure below shows the effect of setting the normal property’s contents to a texture image on a material whose other properties have default contents.
 
-![None](/images/com.apple.scenekit/media-2934163@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2934163@2x.png)
 
-The material’s [`lightingModel`](scnmaterial/lightingmodel-swift.property.md) property determines the formula SceneKit uses to combine its surface normals and other visual properties with lights and other contents in a scene to produce the final color for each rendered pixel in the rendered scene. For details, see `Lighting Models`.
+The material’s [`lightingModel`](./lightingmodel-swift.property.md) property determines the formula SceneKit uses to combine its surface normals and other visual properties with lights and other contents in a scene to produce the final color for each rendered pixel in the rendered scene. For details, see `Lighting Models`.
 
 ## See Also
 
-- [var specular: SCNMaterialProperty](scnmaterial/specular.md)
+### Related Documentation
+- [var specular: SCNMaterialProperty](./specular.md)
   An object that manages the material’s specular response to lighting.
-- [var reflective: SCNMaterialProperty](scnmaterial/reflective.md)
+- [var reflective: SCNMaterialProperty](./reflective.md)
   An object that defines the reflected color for each point on a surface.
-- [var multiply: SCNMaterialProperty](scnmaterial/multiply.md)
+- [var multiply: SCNMaterialProperty](./multiply.md)
   An object that provides color values that are multiplied with pixels in a material after all other shading is complete.
-- [var ambient: SCNMaterialProperty](scnmaterial/ambient.md)
+- [var ambient: SCNMaterialProperty](./ambient.md)
   An object that manages the material’s response to ambient lighting.
-- [var transparent: SCNMaterialProperty](scnmaterial/transparent.md)
+- [var transparent: SCNMaterialProperty](./transparent.md)
   An object that determines the opacity of each point in a material.
-- [var displacement: SCNMaterialProperty](scnmaterial/displacement.md)
-- [var emission: SCNMaterialProperty](scnmaterial/emission.md)
+### Visual Properties for Special Effects
+- [var displacement: SCNMaterialProperty](./displacement.md)
+- [var emission: SCNMaterialProperty](./emission.md)
   An object that defines the color emitted by each point on a surface.
-- [var selfIllumination: SCNMaterialProperty](scnmaterial/selfillumination.md)
+- [var selfIllumination: SCNMaterialProperty](./selfillumination.md)
   An object that provides color values representing the global illumination of the surface.
-- [var ambientOcclusion: SCNMaterialProperty](scnmaterial/ambientocclusion.md)
+- [var ambientOcclusion: SCNMaterialProperty](./ambientocclusion.md)
   An object that provides color values to be multiplied with the ambient light affecting the material.
 
 

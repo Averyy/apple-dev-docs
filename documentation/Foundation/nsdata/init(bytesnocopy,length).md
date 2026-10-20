@@ -1,7 +1,8 @@
 # init(bytesNoCopy:length:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a data object filled with a given number of bytes of data from a given buffer.
 
@@ -20,6 +21,10 @@ Initializes a data object filled with a given number of bytes of data from a giv
 init(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int)
 ```
 
+```objc
+- (instancetype) initWithBytesNoCopy:(void *) bytes length:(NSUInteger) length;
+```
+
 #### Return Value
 
 A data object initialized by adding to it `length` bytes of data from the buffer `bytes`. The returned object might be different than the original receiver.
@@ -35,13 +40,14 @@ The returned object takes ownership of the `bytes` pointer and frees it on deall
 
 ## See Also
 
-- [init(bytes: UnsafeRawPointer?, length: Int)](nsdata/init(bytes:length:).md)
+### Creating Data
+- [init(bytes: UnsafeRawPointer?, length: Int)](./init%28bytes,length%29.md)
   Initializes a data object filled with a given number of bytes copied from a given buffer.
-- [init(bytesNoCopy: UnsafeMutableRawPointer, length: Int, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?)](nsdata/init(bytesnocopy:length:deallocator:).md)
+- [init(bytesNoCopy: UnsafeMutableRawPointer, length: Int, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?)](./init%28bytesnocopy,length,deallocator%29.md)
   Initializes a data object filled with a given number of bytes of data from a given buffer, with a custom deallocator block.
-- [init(bytesNoCopy: UnsafeMutableRawPointer, length: Int, freeWhenDone: Bool)](nsdata/init(bytesnocopy:length:freewhendone:).md)
+- [init(bytesNoCopy: UnsafeMutableRawPointer, length: Int, freeWhenDone: Bool)](./init%28bytesnocopy,length,freewhendone%29.md)
   Initializes a newly allocated data object by adding the given number of bytes from the given buffer.
-- [init(data: Data)](nsdata/init(data:).md)
+- [init(data: Data)](./init%28data%29.md)
   Initializes a data object with the contents of another data object.
 
 

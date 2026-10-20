@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct in_addr_4in6 {
     ...
 };
@@ -17,8 +17,8 @@ struct in_addr_4in6 {
 ## Topics
 
 ### Instance Properties
-- [ia46_addr4](in_addr_4in6/3754343-ia46_addr4.md)
-- [ia46_pad32](in_addr_4in6/3754344-ia46_pad32.md)
+- [ia46_addr4](./in_addr_4in6/api-3754343-ia46_addr4.md)
+- [ia46_pad32](./in_addr_4in6/api-3754344-ia46_pad32.md)
 
 
 ---

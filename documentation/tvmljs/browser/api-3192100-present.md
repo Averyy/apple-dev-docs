@@ -1,7 +1,8 @@
 # present
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Shows the Browser UI if it is not currently visible.
 
@@ -10,7 +11,7 @@ Shows the Browser UI if it is not currently visible.
 
 ## Declaration
 
-```swift
+```
 void present();
 ```
 

@@ -1,7 +1,8 @@
 # &*(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 The pointwise wrapping product of two vectors.
 
@@ -19,6 +20,8 @@ The pointwise wrapping product of two vectors.
 ```swift
 static func &* (a: SIMD8<Scalar>, b: SIMD8<Scalar>) -> SIMD8<Scalar>
 ```
+
+Available when `Scalar` is `Int16`.
 
 
 ---

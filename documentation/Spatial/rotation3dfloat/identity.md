@@ -1,23 +1,28 @@
 # identity
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A single-precision structure that represents a rotation in three dimensions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static let identity: Rotation3DFloat
+```
+
+```c
+static const SPRotation3DFloat SPRotation3DFloatIdentity;
 ```
 
 

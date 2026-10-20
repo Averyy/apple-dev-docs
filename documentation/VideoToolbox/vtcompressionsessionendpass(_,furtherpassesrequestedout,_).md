@@ -1,7 +1,8 @@
 # VTCompressionSessionEndPass(_:furtherPassesRequestedOut:_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Marks the end of a compression pass.
 
@@ -19,23 +20,28 @@ Marks the end of a compression pass.
 func VTCompressionSessionEndPass(_ session: VTCompressionSession, furtherPassesRequestedOut: UnsafeMutablePointer<DarwinBoolean>?, _ reserved: UnsafeMutablePointer<UInt32>?) -> OSStatus
 ```
 
+```c
+extern OSStatus VTCompressionSessionEndPass(VTCompressionSessionRef session, Boolean *furtherPassesRequestedOut, uint32_t *reserved);
+```
+
 #### Discussion
 
 This function can take a long time, because the video encoder may perform significant processing between passes. You indicate with the `furtherPassesRequestedOut` argument whether the video encoder is requesting another pass.  There is no particular limit on the number of passes the video encoder may request, but the client is free to disregard this request and use the last-emitted set of frames.
 
-It’s an error to call this function when multi-pass encoding has not been enabled by setting [`kVTCompressionPropertyKey_MultiPassStorage`](kvtcompressionpropertykey_multipassstorage.md).
+It’s an error to call this function when multi-pass encoding has not been enabled by setting [`kVTCompressionPropertyKey_MultiPassStorage`](./kvtcompressionpropertykey_multipassstorage.md).
 
 ## Parameters
 
 - `session`: The compression session.
-- `furtherPassesRequestedOut`: A pointer to a Boolean that is set to [`true`](https://developer.apple.com/documentation/swift/true) if the video encoder requests to perform another pass, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. You may pass `NULL` to indicate that the client is certain to use this as the final pass, in which case the video encoder can skip that evaluation step.
+- `furtherPassesRequestedOut`: A pointer to a Boolean that is set to [`true`](../Swift/true.md) if the video encoder requests to perform another pass, [`false`](../Swift/false.md) otherwise. You may pass `NULL` to indicate that the client is certain to use this as the final pass, in which case the video encoder can skip that evaluation step.
 - `reserved`: Reserved for future use and not currently used. Pass `NULL` for this argument.
 
 ## See Also
 
-- [func VTCompressionSessionBeginPass(VTCompressionSession, flags: VTCompressionSessionOptionFlags, UnsafeMutablePointer<UInt32>?) -> OSStatus](vtcompressionsessionbeginpass(_:flags:_:).md)
+### Performing Multiple Passes
+- [func VTCompressionSessionBeginPass(VTCompressionSession, flags: VTCompressionSessionOptionFlags, UnsafeMutablePointer<UInt32>?) -> OSStatus](./vtcompressionsessionbeginpass%28_,flags,_%29.md)
   Marks the start of a specific compression pass.
-- [func VTCompressionSessionGetTimeRangesForNextPass(VTCompressionSession, timeRangeCountOut: UnsafeMutablePointer<CMItemCount>, timeRangeArrayOut: UnsafeMutablePointer<UnsafePointer<CMTimeRange>?>) -> OSStatus](vtcompressionsessiongettimerangesfornextpass(_:timerangecountout:timerangearrayout:).md)
+- [func VTCompressionSessionGetTimeRangesForNextPass(VTCompressionSession, timeRangeCountOut: UnsafeMutablePointer<CMItemCount>, timeRangeArrayOut: UnsafeMutablePointer<UnsafePointer<CMTimeRange>?>) -> OSStatus](./vtcompressionsessiongettimerangesfornextpass%28_,timerangecountout,timerangearrayout%29.md)
   Retrieves the time ranges for the next pass.
 
 

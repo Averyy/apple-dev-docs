@@ -1,7 +1,8 @@
 # text
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A base type that represents all text-encoded data, including text with markup.
 
@@ -24,19 +25,20 @@ static var text: UTType { get }
 
 The identifier for this type is `public.text`.
 
-This type conforms to [`UTTypeData`](uttypedata.md) and [`UTTypeContent`](uttypecontent.md).
+This type conforms to [`UTTypeData`](../uttypedata.md) and [`UTTypeContent`](../uttypecontent.md).
 
 ## See Also
 
-- [static var plainText: UTType](uttype-swift.struct/plaintext.md)
+### Text files
+- [static var plainText: UTType](./plaintext.md)
   A type that represents text with no markup and an unspecified encoding.
-- [static var utf8PlainText: UTType](uttype-swift.struct/utf8plaintext.md)
+- [static var utf8PlainText: UTType](./utf8plaintext.md)
   A type that represents plain text encoded as UTF-8.
-- [static var utf16PlainText: UTType](uttype-swift.struct/utf16plaintext.md)
+- [static var utf16PlainText: UTType](./utf16plaintext.md)
   A type that represents plain text encoded as UTF-16 in native byte order with an optional bill of materials.
-- [static var utf16ExternalPlainText: UTType](uttype-swift.struct/utf16externalplaintext.md)
+- [static var utf16ExternalPlainText: UTType](./utf16externalplaintext.md)
   A type that represents plain text encoded as UTF-16 with an optional bill of materials.
-- [static var markdown: UTType](uttype-swift.struct/markdown.md)
+- [static var markdown: UTType](./markdown.md)
   A type that represents Markdown data.
 
 

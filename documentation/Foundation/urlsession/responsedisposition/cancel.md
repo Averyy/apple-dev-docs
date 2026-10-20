@@ -1,7 +1,8 @@
 # URLSession.ResponseDisposition.cancel
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cancel the load.
 
@@ -20,18 +21,23 @@ Cancel the load.
 case cancel
 ```
 
+```c
+NSURLSessionResponseCancel
+```
+
 #### Discussion
 
-Using this disposition is equivalent to calling [`cancel()`](urlsessiontask/cancel().md) on the task.
+Using this disposition is equivalent to calling [`cancel()`](../../urlsessiontask/cancel%28%29.md) on the task.
 
 ## See Also
 
-- [URLSession.ResponseDisposition.allow](urlsession/responsedisposition/allow.md)
+### Task dispositions
+- [URLSession.ResponseDisposition.allow](./allow.md)
   Allow the load operation to continue.
-- [URLSession.ResponseDisposition.becomeDownload](urlsession/responsedisposition/becomedownload.md)
-  Convert the response for this request to use a [`URLSessionDownloadTask`](urlsessiondownloadtask.md).
-- [URLSession.ResponseDisposition.becomeStream](urlsession/responsedisposition/becomestream.md)
-  Convert the response for this request to use a [`URLSessionStreamTask`](urlsessionstreamtask.md).
+- [URLSession.ResponseDisposition.becomeDownload](./becomedownload.md)
+  Convert the response for this request to use a [`URLSessionDownloadTask`](../../urlsessiondownloadtask.md).
+- [URLSession.ResponseDisposition.becomeStream](./becomestream.md)
+  Convert the response for this request to use a [`URLSessionStreamTask`](../../urlsessionstreamtask.md).
 
 
 ---

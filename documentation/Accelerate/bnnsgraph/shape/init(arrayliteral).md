@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shape structure from the given array literal.
 
@@ -11,7 +12,7 @@ Creates a shape structure from the given array literal.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ init(arrayLiteral elements: Int...)
 
 ## See Also
 
-- [init([Int])](bnnsgraph/shape/init(_:).md)
+### Creating a shape structure
+- [init([Int])](./init%28_%29.md)
   Creates a shape structure from the given array elements.
 
 

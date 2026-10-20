@@ -1,7 +1,8 @@
 # child(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the child node of the receiver at the specified location.
 
@@ -13,6 +14,10 @@ Returns the child node of the receiver at the specified location.
 
 ```swift
 func child(at index: Int) -> XMLNode?
+```
+
+```objc
+- (NSXMLNode *) childAtIndex:(NSUInteger) index;
 ```
 
 #### Return Value
@@ -29,23 +34,24 @@ The receiver should be an `NSXMLNode` object representing a document, element, o
 
 ## See Also
 
-- [var rootDocument: XMLDocument?](xmlnode/rootdocument.md)
-  Returns the [`XMLDocument`](xmldocument.md) object containing the root element and representing the XML document as a whole.
-- [var parent: XMLNode?](xmlnode/parent.md)
+### Navigating the Tree of Nodes
+- [var rootDocument: XMLDocument?](./rootdocument.md)
+  Returns the [`XMLDocument`](../xmldocument.md) object containing the root element and representing the XML document as a whole.
+- [var parent: XMLNode?](./parent.md)
   Returns the parent node of the receiver.
-- [var childCount: Int](xmlnode/childcount.md)
+- [var childCount: Int](./childcount.md)
   Returns the number of child nodes the receiver has.
-- [var children: [XMLNode]?](xmlnode/children.md)
+- [var children: [XMLNode]?](./children.md)
   Returns an immutable array containing the child nodes of the receiver (as `NSXMLNode` objects).
-- [var next: XMLNode?](xmlnode/next.md)
+- [var next: XMLNode?](./next.md)
   Returns the next `NSXMLNode` object in document order.
-- [var nextSibling: XMLNode?](xmlnode/nextsibling.md)
+- [var nextSibling: XMLNode?](./nextsibling.md)
   Returns the next `NSXMLNode` object that is a sibling node to the receiver.
-- [var previous: XMLNode?](xmlnode/previous.md)
+- [var previous: XMLNode?](./previous.md)
   Returns the previous `NSXMLNode` object in document order.
-- [var previousSibling: XMLNode?](xmlnode/previoussibling.md)
+- [var previousSibling: XMLNode?](./previoussibling.md)
   Returns the previous `NSXMLNode` object that is a sibling node to the receiver.
-- [func detach()](xmlnode/detach.md)
+- [func detach()](./detach%28%29.md)
   Detaches the receiver from its parent node.
 
 

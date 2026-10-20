@@ -1,19 +1,20 @@
 # setLastObject
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an object at the end of the OSOrderedSet if it is not already present.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool setLastObject(const OSMetaClassBase *anObject);
 ```
 

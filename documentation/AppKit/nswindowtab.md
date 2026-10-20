@@ -1,7 +1,8 @@
 # NSWindowTab
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A tab associated with a window that is part of a tabbing group.
 
@@ -14,49 +15,55 @@ A tab associated with a window that is part of a tabbing group.
 class NSWindowTab
 ```
 
+```objc
+@interface NSWindowTab : NSObject
+```
+
 #### Overview
 
-[`NSWindowTab`](nswindowtab.md) describes the way a window displays as part of a tabbed window group. The properties of [`NSWindowTab`](nswindowtab.md) are configurable at any time, but only take effect when the associated [`NSWindow`](nswindow.md) displays in a tab.
+[`NSWindowTab`](./nswindowtab.md) describes the way a window displays as part of a tabbed window group. The properties of [`NSWindowTab`](./nswindowtab.md) are configurable at any time, but only take effect when the associated [`NSWindow`](./nswindow.md) displays in a tab.
 
-AppKit automatically creates an instance of [`NSWindowTab`](nswindowtab.md) for each [`NSWindow`](nswindow.md). You can access a window’s tab object using the [`tab`](nswindow/tab.md) property.
+AppKit automatically creates an instance of [`NSWindowTab`](./nswindowtab.md) for each [`NSWindow`](./nswindow.md). You can access a window’s tab object using the [`tab`](./nswindow/tab.md) property.
 
 ## Topics
 
 ### Customizing the Title
-- [var title: String!](nswindowtab/title.md)
+- [var title: String!](./nswindowtab/title.md)
   The title for the window tab.
-- [var attributedTitle: NSAttributedString?](nswindowtab/attributedtitle.md)
+- [var attributedTitle: NSAttributedString?](./nswindowtab/attributedtitle.md)
   The title for the window tab, specified as an attributed string.
 ### Customizing the Tooltip
-- [var toolTip: String!](nswindowtab/tooltip.md)
+- [var toolTip: String!](./nswindowtab/tooltip.md)
   The tooltip for this window tab.
 ### Adding an Accessory View
-- [var accessoryView: NSView?](nswindowtab/accessoryview.md)
+- [var accessoryView: NSView?](./nswindowtab/accessoryview.md)
   An optional accessory view for the tab.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var tabbingIdentifier: NSWindow.TabbingIdentifier](nswindow/tabbingidentifier-swift.property.md)
+### Related Documentation
+- [var tabbingIdentifier: NSWindow.TabbingIdentifier](./nswindow/tabbingidentifier-swift.property.md)
   A value that allows a group of related windows.
-- [class NSWindow](nswindow.md)
+### Windows
+- [class NSWindow](./nswindow.md)
   A window that an app displays on the screen.
-- [class NSPanel](nspanel.md)
+- [class NSPanel](./nspanel.md)
   A special kind of window that typically performs a function that is auxiliary to the main window.
-- [protocol NSWindowDelegate](nswindowdelegate.md)
+- [protocol NSWindowDelegate](./nswindowdelegate.md)
   A set of optional methods that a window’s delegate can implement to respond to events, such as window resizing, moving, exposing, and minimizing.
-- [class NSWindowTabGroup](nswindowtabgroup.md)
+- [class NSWindowTabGroup](./nswindowtabgroup.md)
   A group of windows that display together as a single tabbed window.
 
 

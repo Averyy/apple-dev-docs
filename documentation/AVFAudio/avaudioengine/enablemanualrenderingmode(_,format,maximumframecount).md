@@ -1,7 +1,8 @@
 # enableManualRenderingMode(_:format:maximumFrameCount:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
 
@@ -20,11 +21,15 @@ Sets the engine to operate in manual rendering mode with the render format and m
 func enableManualRenderingMode(_ mode: AVAudioEngineManualRenderingMode, format pcmFormat: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws
 ```
 
+```objc
+- (BOOL) enableManualRenderingMode:(AVAudioEngineManualRenderingMode) mode format:(AVAudioFormat *) pcmFormat maximumFrameCount:(AVAudioFrameCount) maximumFrameCount error:(NSError **) outError;
+```
+
 #### Discussion
 
 Use this method to configure the engine to render in response to requests from the client. You must stop the engine before calling this method. The render format must be a PCM format and match the format of the rendering buffer.
 
-The source nodes can supply the input data in manual rendering mode. For more information, see [`AVAudioPlayerNode`](avaudioplayernode.md) and [`AVAudioInputNode`](avaudioinputnode.md).
+The source nodes can supply the input data in manual rendering mode. For more information, see [`AVAudioPlayerNode`](../avaudioplayernode.md) and [`AVAudioInputNode`](../avaudioinputnode.md).
 
 ## Parameters
 
@@ -34,15 +39,16 @@ The source nodes can supply the input data in manual rendering mode. For more in
 
 ## See Also
 
-- [enum AVAudioEngineManualRenderingMode](avaudioenginemanualrenderingmode.md)
+### Rendering audio manually
+- [enum AVAudioEngineManualRenderingMode](../avaudioenginemanualrenderingmode.md)
   The two modes for manual rendering.
-- [func disableManualRenderingMode()](avaudioengine/disablemanualrenderingmode.md)
+- [func disableManualRenderingMode()](./disablemanualrenderingmode%28%29.md)
   Sets the engine to render to or from an audio device.
-- [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](avaudioengine/renderoffline(_:to:).md)
+- [func renderOffline(AVAudioFrameCount, to: AVAudioPCMBuffer) throws -> AVAudioEngineManualRenderingStatus](./renderoffline%28_,to%29.md)
   Makes a render call to the engine operating in the offline manual rendering mode.
-- [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
+- [enum AVAudioEngineManualRenderingStatus](../avaudioenginemanualrenderingstatus.md)
   Status codes that return from the render call to the engine operating in manual rendering mode.
-- [enum AVAudioEngineManualRenderingError](avaudioenginemanualrenderingerror.md)
+- [enum AVAudioEngineManualRenderingError](../avaudioenginemanualrenderingerror.md)
   Constants that describe error codes that the framework returns from manual rendering mode methods.
 
 

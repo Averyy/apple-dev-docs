@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The number of bits in a channel.
@@ -12,7 +13,7 @@ The number of bits in a channel.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

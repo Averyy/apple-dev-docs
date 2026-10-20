@@ -1,7 +1,8 @@
 # adverb
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tag indicating that the token is an adverb.
 
@@ -20,37 +21,42 @@ A tag indicating that the token is an adverb.
 static let adverb: NLTag
 ```
 
+```c
+extern NLTag const NLTagAdverb;
+```
+
 ## See Also
 
-- [static let noun: NLTag](nltag/noun.md)
+### Lexical classes
+- [static let noun: NLTag](./noun.md)
   A tag indicating that the token is a noun.
-- [static let verb: NLTag](nltag/verb.md)
+- [static let verb: NLTag](./verb.md)
   A tag indicating that the token is a verb.
-- [static let adjective: NLTag](nltag/adjective.md)
+- [static let adjective: NLTag](./adjective.md)
   A tag indicating that the token is an adjective
-- [static let pronoun: NLTag](nltag/pronoun.md)
+- [static let pronoun: NLTag](./pronoun.md)
   A tag indicating that the token is a pronoun.
-- [static let determiner: NLTag](nltag/determiner.md)
+- [static let determiner: NLTag](./determiner.md)
   A tag indicating that the token is a determiner.
-- [static let particle: NLTag](nltag/particle.md)
+- [static let particle: NLTag](./particle.md)
   A tag indicating that the token is a particle.
-- [static let preposition: NLTag](nltag/preposition.md)
+- [static let preposition: NLTag](./preposition.md)
   A tag indicating that the token is a preposition.
-- [static let number: NLTag](nltag/number.md)
+- [static let number: NLTag](./number.md)
   A tag indicating that the token is a number.
-- [static let conjunction: NLTag](nltag/conjunction.md)
+- [static let conjunction: NLTag](./conjunction.md)
   A tag indicating that the token is a conjunction.
-- [static let interjection: NLTag](nltag/interjection.md)
+- [static let interjection: NLTag](./interjection.md)
   A tag indicating that the token is an interjection.
-- [static let classifier: NLTag](nltag/classifier.md)
+- [static let classifier: NLTag](./classifier.md)
   A tag indicating that the token is a classifier.
-- [static let idiom: NLTag](nltag/idiom.md)
+- [static let idiom: NLTag](./idiom.md)
   A tag indicating that the token is an idiom.
-- [static let otherWord: NLTag](nltag/otherword.md)
+- [static let otherWord: NLTag](./otherword.md)
   A tag indicating that the token is a word other than a kind described by other lexical classes (noun, verb, adjective, adverb, pronoun, determiner, particle, preposition, number, conjunction, interjection, classifier, and idiom).
-- [static let sentenceTerminator: NLTag](nltag/sentenceterminator.md)
+- [static let sentenceTerminator: NLTag](./sentenceterminator.md)
   A tag indicating that the token is punctuation at the end of a sentence.
-- [static let openQuote: NLTag](nltag/openquote.md)
+- [static let openQuote: NLTag](./openquote.md)
   A tag indicating that the token is an open quote.
 
 

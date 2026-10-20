@@ -1,7 +1,8 @@
 # interfaceProperty
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the outlet in your interface controller to which the object is bound.
 
@@ -14,9 +15,13 @@ The name of the outlet in your interface controller to which the object is bound
 var interfaceProperty: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * interfaceProperty;
+```
+
 #### Discussion
 
-The string in this property corresponds to the name of a property in one of your [`WKInterfaceController`](wkinterfacecontroller.md) subclasses. WatchKit uses this value internally to manage the connection between the interface object and the corresponding object on Apple Watch. You do not need to use this property directly.
+The string in this property corresponds to the name of a property in one of your [`WKInterfaceController`](../wkinterfacecontroller.md) subclasses. WatchKit uses this value internally to manage the connection between the interface object and the corresponding object on Apple Watch. You do not need to use this property directly.
 
 
 ---

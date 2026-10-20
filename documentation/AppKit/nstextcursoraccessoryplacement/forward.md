@@ -1,7 +1,8 @@
 # NSTextCursorAccessoryPlacement.forward
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 14.0+
@@ -12,16 +13,21 @@
 case forward
 ```
 
+```c
+NSTextCursorAccessoryPlacementForward
+```
+
 ## See Also
 
-- [NSTextCursorAccessoryPlacement.backward](nstextcursoraccessoryplacement/backward.md)
-- [NSTextCursorAccessoryPlacement.center](nstextcursoraccessoryplacement/center.md)
-- [NSTextCursorAccessoryPlacement.invisible](nstextcursoraccessoryplacement/invisible.md)
-- [NSTextCursorAccessoryPlacement.offscreenBottom](nstextcursoraccessoryplacement/offscreenbottom.md)
-- [NSTextCursorAccessoryPlacement.offscreenLeft](nstextcursoraccessoryplacement/offscreenleft.md)
-- [NSTextCursorAccessoryPlacement.offscreenRight](nstextcursoraccessoryplacement/offscreenright.md)
-- [NSTextCursorAccessoryPlacement.offscreenTop](nstextcursoraccessoryplacement/offscreentop.md)
-- [NSTextCursorAccessoryPlacement.unspecified](nstextcursoraccessoryplacement/unspecified.md)
+### Enumeration Cases
+- [NSTextCursorAccessoryPlacement.backward](./backward.md)
+- [NSTextCursorAccessoryPlacement.center](./center.md)
+- [NSTextCursorAccessoryPlacement.invisible](./invisible.md)
+- [NSTextCursorAccessoryPlacement.offscreenBottom](./offscreenbottom.md)
+- [NSTextCursorAccessoryPlacement.offscreenLeft](./offscreenleft.md)
+- [NSTextCursorAccessoryPlacement.offscreenRight](./offscreenright.md)
+- [NSTextCursorAccessoryPlacement.offscreenTop](./offscreentop.md)
+- [NSTextCursorAccessoryPlacement.unspecified](./unspecified.md)
 
 
 ---

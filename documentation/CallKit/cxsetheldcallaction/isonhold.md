@@ -1,7 +1,8 @@
 # isOnHold
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the call is placed on hold.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the call is placed on hold.
 
 ```swift
 var isOnHold: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isOnHold) BOOL onHold;
 ```
 
 

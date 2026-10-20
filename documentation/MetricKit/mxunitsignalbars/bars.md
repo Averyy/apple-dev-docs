@@ -1,22 +1,29 @@
 # bars
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bars of connectivity to the cellular network.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`SignalBars`](../signalbars.md) instead.
 
 ## Declaration
 
 ```swift
 @NSCopying
 class var bars: MXUnitSignalBars { get }
+```
+
+```objc
+@property (class, copy, readonly) MXUnitSignalBars * bars;
 ```
 
 #### Discussion

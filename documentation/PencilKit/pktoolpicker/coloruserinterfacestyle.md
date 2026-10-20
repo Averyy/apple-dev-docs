@@ -1,7 +1,8 @@
 # colorUserInterfaceStyle
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user interface style for the tool picker.
 
@@ -17,15 +18,20 @@ The user interface style for the tool picker.
 var colorUserInterfaceStyle: UIUserInterfaceStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIUserInterfaceStyle colorUserInterfaceStyle;
+```
+
 ## See Also
 
-- [var isRulerActive: Bool](pktoolpicker/isruleractive.md)
+### Customizing picker behavior
+- [var isRulerActive: Bool](./isruleractive.md)
   A Boolean value that indicates whether the ruler is visible on the canvas.
-- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](pktoolpicker/overrideuserinterfacestyle.md)
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./overrideuserinterfacestyle.md)
   The specific user interface style to apply to the tool picker.
-- [var showsDrawingPolicyControls: Bool](pktoolpicker/showsdrawingpolicycontrols.md)
+- [var showsDrawingPolicyControls: Bool](./showsdrawingpolicycontrols.md)
   A Boolean value that indicates whether the default drawing policy UI is visible.
-- [var stateAutosaveName: String?](pktoolpicker/stateautosavename.md)
+- [var stateAutosaveName: String?](./stateautosavename.md)
   The name used to automatically save the tool picker’s state in the defaults system.
 
 

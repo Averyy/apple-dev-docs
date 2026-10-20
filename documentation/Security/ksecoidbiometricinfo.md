@@ -1,7 +1,8 @@
 # kSecOIDBiometricInfo
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDBiometricInfo: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDBiometricInfo;
 ```
 
 

@@ -1,7 +1,8 @@
 # object(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value of the component corresponding to the specified key.
 
@@ -20,19 +21,24 @@ Returns the value of the component corresponding to the specified key.
 func object(forKey key: NSLocale.Key) -> Any?
 ```
 
+```objc
+- (id) objectForKey:(NSLocaleKey) key;
+```
+
 #### Return Value
 
 The object corresponding to `key`.
 
 ## Parameters
 
-- `key`: The component for which to return the corresponding value. For possible values, see [`NSLocale.Key`](nslocale/key.md).
+- `key`: The component for which to return the corresponding value. For possible values, see [`NSLocale.Key`](./key.md).
 
 ## See Also
 
-- [func displayName(forKey: NSLocale.Key, value: Any) -> String?](nslocale/displayname(forkey:value:).md)
+### Accessing Locale Information by Key
+- [func displayName(forKey: NSLocale.Key, value: Any) -> String?](./displayname%28forkey,value%29.md)
   Returns the display name for the given locale component value.
-- [NSLocale.Key](nslocale/key.md)
+- [NSLocale.Key](./key.md)
   The keys used to access components of a locale.
 
 

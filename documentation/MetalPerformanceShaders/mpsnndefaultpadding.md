@@ -1,7 +1,8 @@
 # MPSNNDefaultPadding
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that provides predefined padding policies for common tasks.
 
@@ -19,32 +20,36 @@ A class that provides predefined padding policies for common tasks.
 class MPSNNDefaultPadding
 ```
 
+```objc
+@interface MPSNNDefaultPadding : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(method: MPSNNPaddingMethod)](mpsnndefaultpadding/init(method:).md)
-- [struct MPSNNPaddingMethod](mpsnnpaddingmethod.md)
+- [convenience init(method: MPSNNPaddingMethod)](./mpsnndefaultpadding/init%28method%29.md)
+- [struct MPSNNPaddingMethod](./mpsnnpaddingmethod.md)
   Options that define a graph’s padding.
 ### Instance Methods
-- [func label() -> String](mpsnndefaultpadding/label.md)
+- [func label() -> String](./mpsnndefaultpadding/label%28%29.md)
 ### Type Methods
-- [class func forTensorflowAveragePooling() -> Self](mpsnndefaultpadding/fortensorflowaveragepooling.md)
-- [class func forTensorflowAveragePoolingValidOnly() -> Self](mpsnndefaultpadding/fortensorflowaveragepoolingvalidonly.md)
+- [class func forTensorflowAveragePooling() -> Self](./mpsnndefaultpadding/fortensorflowaveragepooling%28%29.md)
+- [class func forTensorflowAveragePoolingValidOnly() -> Self](./mpsnndefaultpadding/fortensorflowaveragepoolingvalidonly%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSNNPadding](mpsnnpadding.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSNNPadding](./mpsnnpadding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

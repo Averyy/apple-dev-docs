@@ -1,12 +1,13 @@
 # redComponent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The red component value of the color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,43 +15,49 @@ The red component value of the color.
 var redComponent: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat redComponent;
+```
+
 #### Discussion
 
-Access this property only for colors in the [`calibratedRGB`](nscolorspacename/calibratedrgb.md) or [`deviceRGB`](nscolorspacename/devicergb.md) color spaces. Accessing it for other color types raises an exception.
+Access this property only for colors in the [`calibratedRGB`](../nscolorspacename/calibratedrgb.md) or [`deviceRGB`](../nscolorspacename/devicergb.md) color spaces. Accessing it for other color types raises an exception.
 
 ## See Also
 
-- [func getRed(UnsafeMutablePointer<CGFloat>?, green: UnsafeMutablePointer<CGFloat>?, blue: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?)](nscolor/getred(_:green:blue:alpha:).md)
+### Related Documentation
+- [func getRed(UnsafeMutablePointer<CGFloat>?, green: UnsafeMutablePointer<CGFloat>?, blue: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?)](./getred%28_,green,blue,alpha%29.md)
   Returns the color object’s RGB component and opacity values in the respective arguments.
-- [var alphaComponent: CGFloat](nscolor/alphacomponent.md)
+### Retrieving individual components
+- [var alphaComponent: CGFloat](./alphacomponent.md)
   The alpha (opacity) component value of the color.
-- [var whiteComponent: CGFloat](nscolor/whitecomponent.md)
+- [var whiteComponent: CGFloat](./whitecomponent.md)
   The white component value of the color.
-- [var greenComponent: CGFloat](nscolor/greencomponent.md)
+- [var greenComponent: CGFloat](./greencomponent.md)
   The green component value of the color.
-- [var blueComponent: CGFloat](nscolor/bluecomponent.md)
+- [var blueComponent: CGFloat](./bluecomponent.md)
   The blue component value of the color.
-- [var cyanComponent: CGFloat](nscolor/cyancomponent.md)
+- [var cyanComponent: CGFloat](./cyancomponent.md)
   The cyan component value of the color.
-- [var magentaComponent: CGFloat](nscolor/magentacomponent.md)
+- [var magentaComponent: CGFloat](./magentacomponent.md)
   The magenta component value of the color.
-- [var yellowComponent: CGFloat](nscolor/yellowcomponent.md)
+- [var yellowComponent: CGFloat](./yellowcomponent.md)
   The yellow component value of the color.
-- [var blackComponent: CGFloat](nscolor/blackcomponent.md)
+- [var blackComponent: CGFloat](./blackcomponent.md)
   The black component value of the color.
-- [var hueComponent: CGFloat](nscolor/huecomponent.md)
+- [var hueComponent: CGFloat](./huecomponent.md)
   The hue component value of the color.
-- [var saturationComponent: CGFloat](nscolor/saturationcomponent.md)
+- [var saturationComponent: CGFloat](./saturationcomponent.md)
   The saturation component value of the color.
-- [var brightnessComponent: CGFloat](nscolor/brightnesscomponent.md)
+- [var brightnessComponent: CGFloat](./brightnesscomponent.md)
   The brightness component value of the color.
-- [var catalogNameComponent: NSColorList.Name](nscolor/catalognamecomponent.md)
+- [var catalogNameComponent: NSColorList.Name](./catalognamecomponent.md)
   The catalog containing the color’s name.
-- [var localizedCatalogNameComponent: String](nscolor/localizedcatalognamecomponent.md)
+- [var localizedCatalogNameComponent: String](./localizedcatalognamecomponent.md)
   The localized version of the catalog name containing the color.
-- [var colorNameComponent: NSColor.Name](nscolor/colornamecomponent.md)
+- [var colorNameComponent: NSColor.Name](./colornamecomponent.md)
   The name of the color.
-- [var localizedColorNameComponent: String](nscolor/localizedcolornamecomponent.md)
+- [var localizedColorNameComponent: String](./localizedcolornamecomponent.md)
   The localized version of the color name.
 
 

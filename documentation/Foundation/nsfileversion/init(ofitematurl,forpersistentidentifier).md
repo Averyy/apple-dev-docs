@@ -1,7 +1,8 @@
 # init(ofItemAtURL:forPersistentIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 5.0+

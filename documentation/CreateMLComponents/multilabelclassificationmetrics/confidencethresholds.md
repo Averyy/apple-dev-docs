@@ -1,7 +1,8 @@
 # confidenceThresholds
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of label and confidence thresholds.
 
@@ -22,11 +23,12 @@ var confidenceThresholds: [Label : Float] { get }
 
 ## See Also
 
-- [var exampleCount: Int](multilabelclassificationmetrics/examplecount.md)
+### Getting the properties
+- [var exampleCount: Int](./examplecount.md)
   The number of examples used to compute the metrics.
-- [var labels: Set<Label>](multilabelclassificationmetrics/labels.md)
+- [var labels: Set<Label>](./labels.md)
   The classifier labels.
-- [var meanAveragePrecision: Float](multilabelclassificationmetrics/meanaverageprecision.md)
+- [var meanAveragePrecision: Float](./meanaverageprecision.md)
   The mean average precision.
 
 

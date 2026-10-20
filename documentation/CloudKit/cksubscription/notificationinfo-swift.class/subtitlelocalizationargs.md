@@ -1,7 +1,8 @@
 # subtitleLocalizationArgs
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields for building a notification’s subtitle.
 
@@ -10,7 +11,7 @@ The fields for building a notification’s subtitle.
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
 - macOS 10.13+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 
@@ -28,9 +29,10 @@ If you use `%@` for your substitution variables, CloudKit replaces those variabl
 
 ## See Also
 
-- [var subtitle: String?](cksubscription/notificationinfo-swift.class/subtitle.md)
+### Accessing the Notification Subtitle
+- [var subtitle: String?](./subtitle.md)
   The notification’s subtitle.
-- [var subtitleLocalizationKey: String?](cksubscription/notificationinfo-swift.class/subtitlelocalizationkey.md)
+- [var subtitleLocalizationKey: String?](./subtitlelocalizationkey.md)
   The key that identifies the localized string for the notification’s subtitle.
 
 

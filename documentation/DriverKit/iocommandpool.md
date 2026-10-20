@@ -1,17 +1,18 @@
 # IOCommandPool
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class IOCommandPool;
 ```
 
@@ -24,39 +25,40 @@ The IOCommandPool class is used to manipulate a pool of commands which inherit f
 ## Topics
 
 ### Instance Methods
-- [free](iocommandpool/free.md)
-- [gatedGetCommand](iocommandpool/gatedgetcommand.md)
-- [gatedReturnCommand](iocommandpool/gatedreturncommand.md)
-- [getCommand](iocommandpool/getcommand.md)
-- [init](iocommandpool/init.md)
-- [initWithQueue](iocommandpool/initwithqueue.md)
-- [returnCommand](iocommandpool/returncommand.md)
+- [free](./iocommandpool/free.md)
+- [gatedGetCommand](./iocommandpool/gatedgetcommand.md)
+- [gatedReturnCommand](./iocommandpool/gatedreturncommand.md)
+- [getCommand](./iocommandpool/getcommand.md)
+- [init](./iocommandpool/init.md)
+- [initWithQueue](./iocommandpool/initwithqueue.md)
+- [returnCommand](./iocommandpool/returncommand.md)
 ### Type Methods
-- [withQueue](iocommandpool/withqueue.md)
+- [withQueue](./iocommandpool/withqueue.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOCallOnceBlock](iocallonceblock.md)
-- [IOCallOnceFlag](iocallonceflag.md)
-- [IOCommand](iocommand.md)
-- [IOCommandPoolPtr](iocommandpoolptr.md)
-- [IOCommandPtr](iocommandptr.md)
-- [IODMACommand](iodmacommand.md)
+### Data Types
+- [IOCallOnceBlock](./iocallonceblock.md)
+- [IOCallOnceFlag](./iocallonceflag.md)
+- [IOCommand](./iocommand.md)
+- [IOCommandPoolPtr](./iocommandpoolptr.md)
+- [IOCommandPtr](./iocommandptr.md)
+- [IODMACommand](./iodmacommand.md)
   An object that converts memory references to I/O bus addresses.
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IODispatchAction](iodispatchaction.md)
-- [IOHistogramReporter_IVars](iohistogramreporter_ivars.md)
-- [IOReportLegendEntry](ioreportlegendentry.md)
-- [IOReporter_IVars](ioreporter_ivars.md)
-- [IOSimpleReporter_IVars](iosimplereporter_ivars.md)
-- [IOStateReporter_IVars](iostatereporter_ivars.md)
-- [IOStateReporter_valueSelector](iostatereporter_valueselector.md)
-- [IVarsInvalidator](ivarsinvalidator.md)
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IODispatchAction](./iodispatchaction.md)
+- [IOHistogramReporter_IVars](./iohistogramreporter_ivars.md)
+- [IOReportLegendEntry](./ioreportlegendentry.md)
+- [IOReporter_IVars](./ioreporter_ivars.md)
+- [IOSimpleReporter_IVars](./iosimplereporter_ivars.md)
+- [IOStateReporter_IVars](./iostatereporter_ivars.md)
+- [IOStateReporter_valueSelector](./iostatereporter_valueselector.md)
+- [IVarsInvalidator](./ivarsinvalidator.md)
 
 
 ---

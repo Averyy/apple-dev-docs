@@ -1,7 +1,8 @@
 # linkURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the link that the user clicked.
 
@@ -15,6 +16,10 @@ The URL of the link that the user clicked.
 
 ```swift
 var linkURL: URL? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSURL * linkURL;
 ```
 
 

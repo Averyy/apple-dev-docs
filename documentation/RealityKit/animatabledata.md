@@ -1,7 +1,8 @@
 # AnimatableData
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A functionality specification that animatable data types adopt.
 
@@ -11,7 +12,7 @@ A functionality specification that animatable data types adopt.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,18 +22,19 @@ protocol AnimatableData
 
 #### Overview
 
-The templated animation objects, for example [`BlendTreeAnimation`](blendtreeanimation.md) `<Value>`, determine that the type you specify for `Value` adopts this protocol. The types that the framework accepts are: [`JointTransforms`](jointtransforms.md), [`Transform`](transform.md), [`Float`](https://developer.apple.com/documentation/swift/float), [`Double`](https://developer.apple.com/documentation/swift/double), [`SIMD2`](https://developer.apple.com/documentation/swift/simd2), [`SIMD3`](https://developer.apple.com/documentation/swift/simd3), [`SIMD4`](https://developer.apple.com/documentation/swift/simd4), and [`simd_quatf`](https://developer.apple.com/documentation/simd/simd_quatf).
+The templated animation objects, for example [`BlendTreeAnimation`](./blendtreeanimation.md) `<Value>`, determine that the type you specify for `Value` adopts this protocol. The types that the framework accepts are: [`JointTransforms`](./jointtransforms.md), [`Transform`](./transform.md), [`Float`](../Swift/float.md), [`Double`](../Swift/double.md), [`SIMD2`](../Swift/simd2.md), [`SIMD3`](../Swift/simd3.md), [`SIMD4`](../Swift/simd4.md), and [`simd_quatf`](https://developer.apple.com/documentation/simd/simd_quatf).
 
 ## Relationships
 
 ### Conforming Types
-- [BlendShapeWeights](blendshapeweights.md)
-- [JointTransforms](jointtransforms.md)
-- [Transform](transform.md)
+- [BlendShapeWeights](./blendshapeweights.md)
+- [JointTransforms](./jointtransforms.md)
+- [Transform](./transform.md)
 
 ## See Also
 
-- [protocol BindableData](bindabledata.md)
+### Compliance-related protocols
+- [protocol BindableData](./bindabledata.md)
   An opaque base protocol for bindable data objects.
 
 

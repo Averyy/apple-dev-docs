@@ -1,7 +1,8 @@
 # errSecUnknownCertExtension
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unknown certificate extension was detected.
 
@@ -18,6 +19,10 @@ An unknown certificate extension was detected.
 
 ```swift
 var errSecUnknownCertExtension: OSStatus { get }
+```
+
+```c
+errSecUnknownCertExtension
 ```
 
 

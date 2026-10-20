@@ -1,14 +1,15 @@
 # StandardUSB::USB20ExtensionCapabilityDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::USB20ExtensionCapabilityDescriptor {
     ...
 } StandardUSB::USB20ExtensionCapabilityDescriptor;
@@ -17,7 +18,7 @@ typedef struct StandardUSB::USB20ExtensionCapabilityDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bmAttributes](standardusb_usb20extensioncapabilitydescriptor/3794152-bmattributes.md)
+- [bmAttributes](./standardusb_usb20extensioncapabilitydescriptor/api-3794152-bmattributes.md)
 
 
 ---

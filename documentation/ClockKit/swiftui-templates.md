@@ -1,79 +1,81 @@
 # SwiftUI templates
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: API Collection
 
 Design complication templates using SwiftUI views.
 
 #### Overview
 
-ClockKit provides SwiftUI versions of the other graphic templates. These templates use a [`View`](https://developer.apple.com/documentation/swiftui/view) instance to draw some or all of the complication’s content. However, the following templates are particularly useful when drawing the complication with SwiftUI:
+ClockKit provides SwiftUI versions of the other graphic templates. These templates use a [`View`](../SwiftUI/view.md) instance to draw some or all of the complication’s content. However, the following templates are particularly useful when drawing the complication with SwiftUI:
 
-- [`CLKComplicationTemplateGraphicCircularView`](clkcomplicationtemplategraphiccircularview.md)
-- [`CLKComplicationTemplateGraphicRectangularFullView`](clkcomplicationtemplategraphicrectangularfullview.md)
-- [`CLKComplicationTemplateGraphicExtraLargeCircularView`](clkcomplicationtemplategraphicextralargecircularview.md)
+- [`CLKComplicationTemplateGraphicCircularView`](./clkcomplicationtemplategraphiccircularview.md)
+- [`CLKComplicationTemplateGraphicRectangularFullView`](./clkcomplicationtemplategraphicrectangularfullview.md)
+- [`CLKComplicationTemplateGraphicExtraLargeCircularView`](./clkcomplicationtemplategraphicextralargecircularview.md)
 
 These templates use a single SwiftUI view to fill the entire complication, providing a blank canvas that you can use to draw the entire complication.
 
 ## Topics
 
 ### Corner templates
-- [class CLKComplicationTemplateGraphicCornerCircularView](clkcomplicationtemplategraphiccornercircularview.md)
+- [class CLKComplicationTemplateGraphicCornerCircularView](./clkcomplicationtemplategraphiccornercircularview.md)
   A template for displaying a SwiftUI view in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerGaugeView](clkcomplicationtemplategraphiccornergaugeview.md)
+- [class CLKComplicationTemplateGraphicCornerGaugeView](./clkcomplicationtemplategraphiccornergaugeview.md)
   A template for displaying a SwiftUI view and a gauge in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerTextView](clkcomplicationtemplategraphiccornertextview.md)
+- [class CLKComplicationTemplateGraphicCornerTextView](./clkcomplicationtemplategraphiccornertextview.md)
   A template for displaying a SwiftUI view and text in the clock face’s corner.
 ### Circular templates
-- [class CLKComplicationTemplateGraphicCircularView](clkcomplicationtemplategraphiccircularview.md)
+- [class CLKComplicationTemplateGraphicCircularView](./clkcomplicationtemplategraphiccircularview.md)
   A template for displaying a circular view.
-- [class CLKComplicationTemplateGraphicCircularOpenGaugeView](clkcomplicationtemplategraphiccircularopengaugeview.md)
+- [class CLKComplicationTemplateGraphicCircularOpenGaugeView](./clkcomplicationtemplategraphiccircularopengaugeview.md)
   A template for displaying a SwiftUI view, an open gauge, and text.
-- [class CLKComplicationTemplateGraphicCircularClosedGaugeView](clkcomplicationtemplategraphiccircularclosedgaugeview.md)
+- [class CLKComplicationTemplateGraphicCircularClosedGaugeView](./clkcomplicationtemplategraphiccircularclosedgaugeview.md)
   A template for displaying a SwiftUI view inside a closed circular gauge.
-- [class CLKComplicationTemplateGraphicCircularStackViewText](clkcomplicationtemplategraphiccircularstackviewtext.md)
+- [class CLKComplicationTemplateGraphicCircularStackViewText](./clkcomplicationtemplategraphiccircularstackviewtext.md)
   A template for displaying a SwiftUI view and text.
 ### Rectangular templates
-- [class CLKComplicationTemplateGraphicRectangularStandardBodyView](clkcomplicationtemplategraphicrectangularstandardbodyview.md)
+- [class CLKComplicationTemplateGraphicRectangularStandardBodyView](./clkcomplicationtemplategraphicrectangularstandardbodyview.md)
   A template for displaying a SwiftUI label and up to three rows of text.
-- [class CLKComplicationTemplateGraphicRectangularTextGaugeView](clkcomplicationtemplategraphicrectangulartextgaugeview.md)
+- [class CLKComplicationTemplateGraphicRectangularTextGaugeView](./clkcomplicationtemplategraphicrectangulartextgaugeview.md)
   A template for displaying a header row with a SwiftUI view and text, a second row of text, and a gauge.
-- [class CLKComplicationTemplateGraphicRectangularLargeView](clkcomplicationtemplategraphicrectangularlargeview.md)
+- [class CLKComplicationTemplateGraphicRectangularLargeView](./clkcomplicationtemplategraphicrectangularlargeview.md)
   A template for displaying a large rectangle containing header text and a SwiftUI view.
-- [class CLKComplicationTemplateGraphicRectangularFullView](clkcomplicationtemplategraphicrectangularfullview.md)
+- [class CLKComplicationTemplateGraphicRectangularFullView](./clkcomplicationtemplategraphicrectangularfullview.md)
   A template for displaying a SwiftUI view that fills the entire template.
 ### Extra large templates
-- [class CLKComplicationTemplateGraphicExtraLargeCircularView](clkcomplicationtemplategraphicextralargecircularview.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularView](./clkcomplicationtemplategraphicextralargecircularview.md)
   A template for displaying a circular SwiftUI view.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeView](clkcomplicationtemplategraphicextralargecircularopengaugeview.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeView](./clkcomplicationtemplategraphicextralargecircularopengaugeview.md)
   A template for displaying a SwiftUI view, an open gauge, and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeView](clkcomplicationtemplategraphicextralargecircularclosedgaugeview.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeView](./clkcomplicationtemplategraphicextralargecircularclosedgaugeview.md)
   A template for displaying an extra-large SwiftUI view inside a closed circular gauge.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularStackViewText](clkcomplicationtemplategraphicextralargecircularstackviewtext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularStackViewText](./clkcomplicationtemplategraphicextralargecircularstackviewtext.md)
   A template for displaying a SwiftUI view and text.
 
 ## See Also
 
-- [enum ComplicationRenderingMode](complicationrenderingmode.md)
+### Templates
+- [enum ComplicationRenderingMode](./complicationrenderingmode.md)
   The complication’s appearance, as specified by the watch face.
-- [Data providers](data-providers.md)
+- [Data providers](./data-providers.md)
   Feed data to a complication template.
-- [Circular small](circular-small.md)
+- [Circular small](./circular-small.md)
   Display small, circular content in the corners of the Color watch face.
-- [Extra large](extra-large.md)
+- [Extra large](./extra-large.md)
   Display content on the X-Large watch face.
-- [Modular small](modular-small.md)
+- [Modular small](./modular-small.md)
   Display content in the smaller spaces of the Modular watch face.
-- [Modular large](modular-large.md)
+- [Modular large](./modular-large.md)
   Display multiple rows of content in the large, central complication on the Modular watch face.
-- [Utilitarian](utilitarian.md)
+- [Utilitarian](./utilitarian.md)
   Use the utilitarian templates to display content on a variety of watch faces, including the Utility, Chronograph, Simple, and character watch faces.
-- [Graphic](graphic.md)
+- [Graphic](./graphic.md)
   Display visually rich content on watch faces.
-- [class CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [class CLKComplicationTemplate](./clkcomplicationtemplate.md)
   An abstract class that defines the base behavior for all templates.
-- [enum CLKComplicationFamily](clkcomplicationfamily.md)
+- [enum CLKComplicationFamily](./clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
+- [CLKComplicationSupportedFamilies](../BundleResources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

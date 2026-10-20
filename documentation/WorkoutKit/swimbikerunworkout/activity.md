@@ -1,7 +1,8 @@
 # SwimBikeRunWorkout.Activity
 
 **Framework**: WorkoutKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An activity in a multisport workout.
 
@@ -21,26 +22,27 @@ enum Activity
 ## Topics
 
 ### Setting valid activities
-- [case cycling(HKWorkoutSessionLocationType)](swimbikerunworkout/activity/cycling(_:).md)
+- [case cycling(HKWorkoutSessionLocationType)](./activity/cycling%28_%29.md)
   A cycling workout activity, with the specified location type.
-- [case running(HKWorkoutSessionLocationType)](swimbikerunworkout/activity/running(_:).md)
+- [case running(HKWorkoutSessionLocationType)](./activity/running%28_%29.md)
   A running workout activity, with the specified location type.
-- [case swimming(HKWorkoutSwimmingLocationType)](swimbikerunworkout/activity/swimming(_:).md)
+- [case swimming(HKWorkoutSwimmingLocationType)](./activity/swimming%28_%29.md)
   A swimming workout activity, with the specified location type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(activities: [SwimBikeRunWorkout.Activity], displayName: String?)](swimbikerunworkout/init(activities:displayname:).md)
+### Creating new multisport workouts.
+- [init(activities: [SwimBikeRunWorkout.Activity], displayName: String?)](./init%28activities,displayname%29.md)
   Creates a new multisport workout for the specified activities.
-- [static func supportsActivityOrdering([SwimBikeRunWorkout.Activity]) -> Bool](swimbikerunworkout/supportsactivityordering(_:).md)
+- [static func supportsActivityOrdering([SwimBikeRunWorkout.Activity]) -> Bool](./supportsactivityordering%28_%29.md)
   Returns a Boolean value that indicates whether the system supports a multisport workout with the specified list of activities.
 
 

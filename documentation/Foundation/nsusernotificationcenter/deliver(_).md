@@ -1,12 +1,15 @@
 # deliver(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deliver the specified user notification.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Deliver the specified user notification.
 func deliver(_ notification: NSUserNotification)
 ```
 
+```objc
+- (void) deliverNotification:(NSUserNotification *) notification;
+```
+
 #### Discussion
 
-The notification will be presented to the user (subject to the user’s preferences). The [`isPresented`](nsusernotification/ispresented.md) property of the [`NSUserNotification`](nsusernotification.md) object will always be set to [`true`](https://developer.apple.com/documentation/swift/true) if a notification is delivered using this method.
+The notification will be presented to the user (subject to the user’s preferences). The [`isPresented`](../nsusernotification/ispresented.md) property of the [`NSUserNotification`](../nsusernotification.md) object will always be set to [`true`](../../Swift/true.md) if a notification is delivered using this method.
 
 ## Parameters
 
@@ -24,13 +31,15 @@ The notification will be presented to the user (subject to the user’s preferen
 
 ## See Also
 
-- [func removeScheduledNotification(NSUserNotification)](nsusernotificationcenter/removeschedulednotification(_:).md)
+### Related Documentation
+- [func removeScheduledNotification(NSUserNotification)](./removeschedulednotification%28_%29.md)
   Removes the specified user notification for the scheduled notifications.
-- [var deliveredNotifications: [NSUserNotification]](nsusernotificationcenter/deliverednotifications.md)
+### Managing the Delivered Notifications
+- [var deliveredNotifications: [NSUserNotification]](./deliverednotifications.md)
   An array of all user notifications delivered to the notification center.
-- [func removeDeliveredNotification(NSUserNotification)](nsusernotificationcenter/removedeliverednotification(_:).md)
+- [func removeDeliveredNotification(NSUserNotification)](./removedeliverednotification%28_%29.md)
   Remove a delivered user notification from the user notification center.
-- [func removeAllDeliveredNotifications()](nsusernotificationcenter/removealldeliverednotifications.md)
+- [func removeAllDeliveredNotifications()](./removealldeliverednotifications%28%29.md)
   Remove all delivered user notifications from the user notification center.
 
 

@@ -1,7 +1,8 @@
 # TKSmartCardPINFormat.Encoding.binary
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,14 +19,19 @@
 case binary
 ```
 
+```c
+TKSmartCardPINEncodingBinary
+```
+
 #### Discussion
 
 Characters are encoded in Binary format (for example, `1234` is encoded as `01h 02h 03h 04h`).
 
 ## See Also
 
-- [TKSmartCardPINFormat.Encoding.ascii](tksmartcardpinformat/encoding-swift.enum/ascii.md)
-- [TKSmartCardPINFormat.Encoding.bcd](tksmartcardpinformat/encoding-swift.enum/bcd.md)
+### Constants
+- [TKSmartCardPINFormat.Encoding.ascii](./ascii.md)
+- [TKSmartCardPINFormat.Encoding.bcd](./bcd.md)
 
 
 ---

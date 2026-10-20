@@ -1,7 +1,8 @@
 # init(recordsToSave:recordIDsToDelete:atomicByZone:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a batch of records to modify.
 
@@ -11,7 +12,7 @@ Creates a batch of records to modify.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ init(recordsToSave: [CKRecord] = [], recordIDsToDelete: [CKRecord.ID] = [], atom
 
 #### Discussion
 
-> ❗ **Important**: When using this initializer to create batches, consider the number of records you specify and their combined size. If you specify too many records, or their combined size is too large, the send operation may fail with an error of type [`CKError.Code.limitExceeded`](ckerror/code/limitexceeded.md).
+> ❗ **Important**: When using this initializer to create batches, consider the number of records you specify and their combined size. If you specify too many records, or their combined size is too large, the send operation may fail with an error of type [`CKError.Code.limitExceeded`](../../ckerror/code/limitexceeded.md).
 
 ## Parameters
 
@@ -32,9 +33,10 @@ init(recordsToSave: [CKRecord] = [], recordIDsToDelete: [CKRecord.ID] = [], atom
 
 ## See Also
 
-- [init?(pendingChanges: [CKSyncEngine.PendingRecordZoneChange], recordProvider: (CKRecord.ID) async -> CKRecord?) async](cksyncengine-5sie5/recordzonechangebatch/init(pendingchanges:recordprovider:).md)
+### Creating a batch
+- [init?(pendingChanges: [CKSyncEngine.PendingRecordZoneChange], recordProvider: (CKRecord.ID) async -> CKRecord?) async](./init%28pendingchanges,recordprovider%29.md)
   Creates a batch of records to modify using the provided record zone changes.
-- [CKSyncEngine.PendingRecordZoneChange](cksyncengine-5sie5/pendingrecordzonechange.md)
+- [CKSyncEngine.PendingRecordZoneChange](../pendingrecordzonechange.md)
   Describes an unsent record modification.
 
 

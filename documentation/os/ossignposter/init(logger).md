@@ -1,7 +1,8 @@
 # init(logger:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a signposter that uses the subsystem and category of an existing logger.
 
@@ -11,7 +12,7 @@ Creates a signposter that uses the subsystem and category of an existing logger.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,19 +23,20 @@ init(logger: Logger)
 
 ## Parameters
 
-- `logger`: The logger that provides a subsystem and category for the signposter to use. For more information, see [`Logger`](logger.md).
+- `logger`: The logger that provides a subsystem and category for the signposter to use. For more information, see [`Logger`](../logger.md).
 
 ## See Also
 
-- [init()](ossignposter/init.md)
+### Creating a Signposter
+- [init()](./init%28%29.md)
   Creates a signposter that uses the default subsystem.
-- [init(subsystem: String, category: String)](ossignposter/init(subsystem:category:)-94xpb.md)
+- [init(subsystem: String, category: String)](./init%28subsystem,category%29-94xpb.md)
   Creates a signposter that uses the specified subsystem and category.
-- [init(subsystem: String, category: OSLog.Category)](ossignposter/init(subsystem:category:)-4vdri.md)
+- [init(subsystem: String, category: OSLog.Category)](./init%28subsystem,category%29-4vdri.md)
   Creates a signposter that uses the specified subsystem and system-defined log category.
-- [init(logHandle: OSLog)](ossignposter/init(loghandle:).md)
+- [init(logHandle: OSLog)](./init%28loghandle%29.md)
   Creates a signposter that uses the subsystem and category of an existing log.
-- [static var disabled: OSSignposter](ossignposter/disabled.md)
+- [static var disabled: OSSignposter](./disabled.md)
   A shared signposter that doesn’t emit signposts at runtime.
 
 

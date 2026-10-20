@@ -1,7 +1,8 @@
 # instanceCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of active instances to draw.
 
@@ -23,7 +24,8 @@ Defaults to `0` after creation. Set this to the number of transforms written bef
 
 ## See Also
 
-- [var instanceCapacity: Int](lowlevelinstancetransformresource/instancecapacity.md)
+### Inspecting instance counts
+- [var instanceCapacity: Int](./instancecapacity.md)
   The maximum number of instances the buffer holds.
 
 

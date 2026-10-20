@@ -1,7 +1,8 @@
 # CNErrorUserInfoKeyPathsKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An array of key paths associated with a given error.
 
@@ -19,17 +20,22 @@ An array of key paths associated with a given error.
 let CNErrorUserInfoKeyPathsKey: String
 ```
 
+```c
+extern NSString * const CNErrorUserInfoKeyPathsKey;
+```
+
 #### Discussion
 
 For validation errors, this contains key paths to specific object properties.
 
 ## See Also
 
-- [let CNErrorUserInfoAffectedRecordsKey: String](cnerroruserinfoaffectedrecordskey.md)
+### Error data keys
+- [let CNErrorUserInfoAffectedRecordsKey: String](./cnerroruserinfoaffectedrecordskey.md)
   The contact, group, and container objects for which the error code applies.
-- [let CNErrorUserInfoAffectedRecordIdentifiersKey: String](cnerroruserinfoaffectedrecordidentifierskey.md)
+- [let CNErrorUserInfoAffectedRecordIdentifiersKey: String](./cnerroruserinfoaffectedrecordidentifierskey.md)
   String objects for which the error code applies.
-- [let CNErrorUserInfoValidationErrorsKey: String](cnerroruserinfovalidationerrorskey.md)
+- [let CNErrorUserInfoValidationErrorsKey: String](./cnerroruserinfovalidationerrorskey.md)
   An array of validation-related error objects.
 
 

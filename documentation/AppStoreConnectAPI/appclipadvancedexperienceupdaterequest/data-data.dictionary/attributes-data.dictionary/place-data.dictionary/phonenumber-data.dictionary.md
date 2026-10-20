@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.PhoneNumber
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The phone number of a point of interest or business in Apple Maps.
 
@@ -10,7 +11,7 @@ The phone number of a point of interest or business in Apple Maps.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.PhoneNumber
 ```
 
@@ -20,11 +21,14 @@ object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.PhoneNumber
 - `number` (string): The phone number as a string.
 - `type` (string): The resource type.
 
+  **Allowed Values**: `FAX`, `LANDLINE`, `MOBILE`, `TOLLFREE`
+
 ## See Also
 
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.DisplayPoint](appclipadvancedexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary/displaypoint-data.dictionary.md)
+### Objects
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.DisplayPoint](./displaypoint-data.dictionary.md)
   A point-based representation of a place in Apple Maps.
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.MainAddress](appclipadvancedexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary/mainaddress-data.dictionary.md)
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes.Place.MainAddress](./mainaddress-data.dictionary.md)
   The main address for a point of interest or business in Apple Maps.
 
 

@@ -1,7 +1,8 @@
 # setURL(_:for:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the location of the specified persistent store.
 
@@ -10,7 +11,7 @@ Changes the location of the specified persistent store.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Changes the location of the specified persistent store.
 func setURL(_ url: URL, for store: NSPersistentStore) -> Bool
 ```
 
+```objc
+- (BOOL) setURL:(NSURL *) url forPersistentStore:(NSPersistentStore *) store;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the store was relocated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the store was relocated, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -35,9 +40,10 @@ For atomic stores, this method alters the location to which the next save operat
 
 ## See Also
 
-- [func persistentStore(for: URL) -> NSPersistentStore?](nspersistentstorecoordinator/persistentstore(for:).md)
+### Managing a store’s location
+- [func persistentStore(for: URL) -> NSPersistentStore?](./persistentstore%28for%29.md)
   Returns the persistent store for the specified file URL.
-- [func url(for: NSPersistentStore) -> URL](nspersistentstorecoordinator/url(for:).md)
+- [func url(for: NSPersistentStore) -> URL](./url%28for%29.md)
   Returns the location of the provided persistent store.
 
 

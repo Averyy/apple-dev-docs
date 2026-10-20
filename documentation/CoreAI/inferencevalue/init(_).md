@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an inference value that wraps the specified pixel buffer.
 

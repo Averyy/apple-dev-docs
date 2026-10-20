@@ -1,7 +1,8 @@
 # GenerationOptions.SamplingMode.Kind
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of the different strategies for choosing the next token.
 
@@ -22,23 +23,24 @@ enum Kind
 ## Topics
 
 ### Sampling cases
-- [GenerationOptions.SamplingMode.Kind.greedy](generationoptions/samplingmode-swift.struct/kind-swift.enum/greedy.md)
+- [GenerationOptions.SamplingMode.Kind.greedy](./kind-swift.enum/greedy.md)
   A strategy that always chooses the most likely token.
-- [GenerationOptions.SamplingMode.Kind.randomProbabilityThreshold(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomprobabilitythreshold(_:seed:).md)
+- [GenerationOptions.SamplingMode.Kind.randomProbabilityThreshold(_:seed:)](./kind-swift.enum/randomprobabilitythreshold%28_,seed%29.md)
   A strategy that samples from the highest-probability tokens whose cumulative probability reaches a threshold.
-- [GenerationOptions.SamplingMode.Kind.randomTopK(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomtopk(_:seed:).md)
+- [GenerationOptions.SamplingMode.Kind.randomTopK(_:seed:)](./kind-swift.enum/randomtopk%28_,seed%29.md)
   A strategy that samples from a fixed number of the highest-probability tokens.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let kind: GenerationOptions.SamplingMode.Kind](generationoptions/samplingmode-swift.struct/kind-swift.property.md)
+### Getting the kind of sampling
+- [let kind: GenerationOptions.SamplingMode.Kind](./kind-swift.property.md)
   The strategy this sampling mode uses to choose the next token.
 
 

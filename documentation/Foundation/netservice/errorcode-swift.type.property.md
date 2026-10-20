@@ -1,7 +1,8 @@
 # errorCode
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This key identifies the error that occurred during the most recent operation.
 
@@ -19,9 +20,14 @@ This key identifies the error that occurred during the most recent operation.
 class let errorCode: String
 ```
 
+```c
+extern NSString * const NSNetServicesErrorCode;
+```
+
 ## See Also
 
-- [class let errorDomain: String](netservice/errordomain.md)
+### Constants
+- [class let errorDomain: String](./errordomain.md)
   This key identifies the originator of the error, which is either the `NSNetService` object or the mach network layer. For most errors, you should not need the value provided by this key.
 
 

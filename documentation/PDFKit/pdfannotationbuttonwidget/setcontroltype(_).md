@@ -1,17 +1,22 @@
 # setControlType(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the type of the control.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setControlType(_ type: PDFWidgetControlType)
+```
+
+```objc
+- (void) setControlType:(PDFWidgetControlType) type;
 ```
 
 ## Parameters
@@ -20,9 +25,11 @@ func setControlType(_ type: PDFWidgetControlType)
 
 ## See Also
 
-- [enum PDFWidgetControlType](pdfwidgetcontroltype.md)
+### Related Documentation
+- [enum PDFWidgetControlType](../pdfwidgetcontroltype.md)
   The types of annotation buttons.
-- [func controlType() -> PDFWidgetControlType](pdfannotationbuttonwidget/controltype.md)
+### Getting and Setting the Control Type
+- [func controlType() -> PDFWidgetControlType](./controltype%28%29.md)
   Returns the type of the control.
 
 

@@ -1,7 +1,8 @@
 # localizedCaseInsensitiveCompare(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the string and the given string using a case-insensitive, localized, comparison.
 

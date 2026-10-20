@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var isIdentity: Bool { get }
+```
+
+```c
+static bool SPRotation3DFloatIsIdentity(SPRotation3DFloat rotation);
 ```
 
 #### Discussion

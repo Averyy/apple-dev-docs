@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](cksyncengine-5sie5/pendingrecordzonechange/description.md)
+- [var description: String](./description.md)
   A textual description of the change that’s suitable for logging.
 
 

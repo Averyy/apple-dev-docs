@@ -1,7 +1,8 @@
 # parent(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The anchor point for the ornament expressed as a 3D unit point relative to its parent.
 

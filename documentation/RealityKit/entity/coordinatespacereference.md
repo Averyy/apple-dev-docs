@@ -1,7 +1,8 @@
 # Entity.CoordinateSpaceReference
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the coordinate space reference for transform conversion.
 
@@ -23,26 +24,27 @@ Depending on the coordinate space that a caller entity is parented under, and wh
 ## Topics
 
 ### Enumeration Cases
-- [Entity.CoordinateSpaceReference.immersiveSpace](entity/coordinatespacereference/immersivespace.md)
+- [Entity.CoordinateSpaceReference.immersiveSpace](./coordinatespacereference/immersivespace.md)
   A reference to an opened immersive space.
-- [Entity.CoordinateSpaceReference.scene](entity/coordinatespacereference/scene.md)
+- [Entity.CoordinateSpaceReference.scene](./coordinatespacereference/scene.md)
   A reference to an entity’s parent window scene.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [protocol HasTransform](hastransform.md)
+### Positioning entities in space
+- [protocol HasTransform](../hastransform.md)
   An interface that enables manipulating the scale, rotation, and translation of an entity.
-- [struct Transform](transform.md)
+- [struct Transform](../transform.md)
   A component that defines the scale, rotation, and translation of an entity.
-- [func transformMatrix(relativeTo: Entity.CoordinateSpaceReference) -> float4x4?](entity/transformmatrix(relativeto:).md)
+- [func transformMatrix(relativeTo: Entity.CoordinateSpaceReference) -> float4x4?](./transformmatrix%28relativeto%29.md)
   Returns the 4 x 4 transform matrix of an entity relative to the given coordinate space.
-- [Entity.ForwardDirection](entity/forwarddirection.md)
+- [Entity.ForwardDirection](./forwarddirection.md)
   Defines the forward direction for an entity.
 
 

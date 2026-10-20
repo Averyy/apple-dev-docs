@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Combines statement blocks into a single product.
 
@@ -21,13 +22,14 @@ static func buildBlock(_ components: any TemplateInsertable...) -> any TemplateI
 
 ## See Also
 
-- [static func buildArray([any TemplateInsertable]) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildarray(_:).md)
+### Result builder methods
+- [static func buildArray([any TemplateInsertable]) -> any TemplateInsertable](./buildarray%28_%29.md)
   Enables support for `for..in` loops.
-- [static func buildEither(first: any TemplateInsertable) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildeither(first:).md)
+- [static func buildEither(first: any TemplateInsertable) -> any TemplateInsertable](./buildeither%28first%29.md)
   Enables support for `if-else` and `switch` constructs.
-- [static func buildEither(second: any TemplateInsertable) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildeither(second:).md)
+- [static func buildEither(second: any TemplateInsertable) -> any TemplateInsertable](./buildeither%28second%29.md)
   Enables support for `if-else` and `switch` constructs.
-- [static func buildOptional((any TemplateInsertable)?) -> any TemplateInsertable](sfcustomlanguagemodeldata/templateinsertablebuilder/buildoptional(_:).md)
+- [static func buildOptional((any TemplateInsertable)?) -> any TemplateInsertable](./buildoptional%28_%29.md)
   Enables support for `if` statements that do not have an `else` clause.
 
 

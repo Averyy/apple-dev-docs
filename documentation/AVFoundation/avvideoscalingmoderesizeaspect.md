@@ -1,7 +1,8 @@
 # AVVideoScalingModeResizeAspect
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The string identifier for resizing a video to its surrounding view’s shorter dimension while preserving its aspect ratio.
 
@@ -19,19 +20,24 @@ The string identifier for resizing a video to its surrounding view’s shorter d
 let AVVideoScalingModeResizeAspect: String
 ```
 
+```c
+extern NSString * const AVVideoScalingModeResizeAspect;
+```
+
 #### Discussion
 
 This mode preserves the aspect ratio of the source and fills the remaining areas with black to fit the destination dimensions.
 
 ## See Also
 
-- [let AVVideoScalingModeFit: String](avvideoscalingmodefit.md)
+### Scaling mode
+- [let AVVideoScalingModeFit: String](./avvideoscalingmodefit.md)
   The string identifier for scaling a video to fit the surrounding view’s dimensions.
-- [let AVVideoScalingModeKey: String](avvideoscalingmodekey.md)
+- [let AVVideoScalingModeKey: String](./avvideoscalingmodekey.md)
   A key to retrieve the video scaling mode from a dictionary.
-- [let AVVideoScalingModeResize: String](avvideoscalingmoderesize.md)
+- [let AVVideoScalingModeResize: String](./avvideoscalingmoderesize.md)
   The string identifier for resizing a video to fit the surrounding view’s dimensions.
-- [let AVVideoScalingModeResizeAspectFill: String](avvideoscalingmoderesizeaspectfill.md)
+- [let AVVideoScalingModeResizeAspectFill: String](./avvideoscalingmoderesizeaspectfill.md)
   The string identifier for resizing a video to fit the surrounding view’s longer dimension while preserving aspect ratio.
 
 

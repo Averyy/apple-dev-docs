@@ -1,7 +1,8 @@
 # MTLVisibilityResultMode.disabled
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The result doesn’t contain any data because visibility testing was disabled.
 
@@ -10,7 +11,7 @@ The result doesn’t contain any data because visibility testing was disabled.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ The result doesn’t contain any data because visibility testing was disabled.
 case disabled
 ```
 
+```c
+MTLVisibilityResultModeDisabled
+```
+
 ## See Also
 
-- [MTLVisibilityResultMode.boolean](mtlvisibilityresultmode/boolean.md)
+### Result modes
+- [MTLVisibilityResultMode.boolean](./boolean.md)
   The result records whether any samples passed depth and stencil tests.
-- [MTLVisibilityResultMode.counting](mtlvisibilityresultmode/counting.md)
+- [MTLVisibilityResultMode.counting](./counting.md)
   The result records how many samples passed depth and stencil tests.
 
 

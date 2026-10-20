@@ -1,6 +1,7 @@
 # Formatting data for blocking and identity information
 
-**Framework**: SMS and Call Reporting
+**Framework**: SMS and Call Reporting  
+**Role**: Article
 
 Set up your PIR payload for call blocking and identity information.
 
@@ -11,16 +12,16 @@ With Live Caller ID Lookup, when a device receives an incoming call, the system 
 - A blocking information request
 - An identity information request
 
-For more information, see the [`Swift homomorphic encryption library`](https://developer.apple.comhttps://github.com/apple/swift-homomorphic-encryption).
+For more information, see the [Swift homomorphic encryption library](https://github.com/apple/swift-homomorphic-encryption).
 
-##### Block a Caller
+##### Block a caller
 
 The blocking information request is a single byte with two defined values:
 
 - **0**: This value means don’t block the caller.
 - **1**: This value means block the caller.
 
-##### Identify Caller Information
+##### Identify caller information
 
 The identity request displays caller information on the device. This information is a serialized protocol buffer message of type `CallIdentity`. The following example shows the response formatting for an identity request:
 
@@ -67,21 +68,22 @@ message CallIdentity {
 
 ## See Also
 
-- [Understanding how Live Caller ID Lookup preserves privacy](understanding-how-live-caller-id-lookup-preserves-privacy.md)
+### Live Caller ID Lookup
+- [Understanding how Live Caller ID Lookup preserves privacy](./understanding-how-live-caller-id-lookup-preserves-privacy.md)
   Use Live Caller ID Lookup to protect user privacy by hiding the client’s IP address, using anonymous authentication, and hiding the incoming phone number.
-- [Setting up the HTTP endpoints for Live Caller ID Lookup](setting-up-the-http-endpoints-for-live-caller-id-lookup.md)
+- [Setting up the HTTP endpoints for Live Caller ID Lookup](./setting-up-the-http-endpoints-for-live-caller-id-lookup.md)
   Connect the on-device system to your server.
-- [Getting up-to-date calling and blocking information for your app](getting-up-to-date-calling-and-blocking-information-for-your-app.md)
+- [Getting up-to-date calling and blocking information for your app](./getting-up-to-date-calling-and-blocking-information-for-your-app.md)
   Implement the Live Caller ID Lookup app extension to provide call-blocking and identity services.
-- [protocol LiveCallerIDLookupProtocol](livecalleridlookupprotocol.md)
+- [protocol LiveCallerIDLookupProtocol](./livecalleridlookupprotocol.md)
   Information the system uses to query the app extension for context.
-- [protocol LiveCallerIDLookupExtensionConfiguration](livecalleridlookupextensionconfiguration.md)
+- [protocol LiveCallerIDLookupExtensionConfiguration](./livecalleridlookupextensionconfiguration.md)
   An object that allows the system to query the app extension.
-- [struct LiveCallerIDLookupExtensionContext](livecalleridlookupextensioncontext.md)
+- [struct LiveCallerIDLookupExtensionContext](./livecalleridlookupextensioncontext.md)
   The information the system uses for configuration.
-- [enum CallLookupExtensionStatus](calllookupextensionstatus.md)
+- [enum CallLookupExtensionStatus](./calllookupextensionstatus.md)
   Returns a value with the current state of the app extension.
-- [class LiveCallerIDLookupManager](livecalleridlookupmanager.md)
+- [class LiveCallerIDLookupManager](./livecalleridlookupmanager.md)
   The entry point that provides access to a collection of functions that help manage the state of the Live Caller ID Lookup app extension.
 
 

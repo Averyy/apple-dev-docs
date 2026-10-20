@@ -1,7 +1,8 @@
 # histogramInfo
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var histogramInfo: MPSImageHistogramInfo { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSImageHistogramInfo histogramInfo;
 ```
 
 

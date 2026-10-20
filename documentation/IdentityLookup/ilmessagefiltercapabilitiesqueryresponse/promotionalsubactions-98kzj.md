@@ -1,13 +1,14 @@
 # promotionalSubActions
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,7 +18,8 @@ final var promotionalSubActions: [ILMessageFilterSubAction] { get set }
 
 ## See Also
 
-- [var transactionalSubActions: [ILMessageFilterSubAction]](ilmessagefiltercapabilitiesqueryresponse/transactionalsubactions-4bfqz.md)
+### Setting the Subactions
+- [var transactionalSubActions: [ILMessageFilterSubAction]](./transactionalsubactions-4bfqz.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # withUTF8Buffer(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes the given closure with a buffer containing the static string’s UTF-8 code unit sequence (excluding the null terminator).
 

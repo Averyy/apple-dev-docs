@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSENSE_RESPONSE_CODE_Current_Errors](1646697-anonymous/ksense_response_code_current_errors.md)
-- [kSENSE_RESPONSE_CODE_Deferred_Errors](1646697-anonymous/ksense_response_code_deferred_errors.md)
-- [kSENSE_RESPONSE_CODE_Mask](1646697-anonymous/ksense_response_code_mask.md)
+- [kSENSE_RESPONSE_CODE_Current_Errors](./api-1646697-anonymous/ksense_response_code_current_errors.md)
+- [kSENSE_RESPONSE_CODE_Deferred_Errors](./api-1646697-anonymous/ksense_response_code_deferred_errors.md)
+- [kSENSE_RESPONSE_CODE_Mask](./api-1646697-anonymous/ksense_response_code_mask.md)
 
 
 ---

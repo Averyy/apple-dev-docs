@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a caption region.
 
@@ -17,9 +18,14 @@ Creates a caption region.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(identifier: String)](avmutablecaptionregion/init(identifier:).md)
+### Creating a caption region
+- [init(identifier: String)](./init%28identifier%29.md)
   Creates a caption region that has an identifier.
 
 

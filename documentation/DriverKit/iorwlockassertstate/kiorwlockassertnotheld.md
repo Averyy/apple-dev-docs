@@ -1,25 +1,27 @@
 # kIORWLockAssertNotHeld
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIORWLockAssertNotHeld
 ```
 
 ## See Also
 
-- [kIORWLockAssertHeld](iorwlockassertstate/kiorwlockassertheld.md)
-- [kIORWLockAssertRead](iorwlockassertstate/kiorwlockassertread.md)
-- [kIORWLockAssertWrite](iorwlockassertstate/kiorwlockassertwrite.md)
+### Constants
+- [kIORWLockAssertHeld](./kiorwlockassertheld.md)
+- [kIORWLockAssertRead](./kiorwlockassertread.md)
+- [kIORWLockAssertWrite](./kiorwlockassertwrite.md)
 
 
 ---

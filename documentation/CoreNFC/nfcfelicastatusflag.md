@@ -1,7 +1,8 @@
 # NFCFeliCaStatusFlag
 
 **Framework**: Core NFC  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 14.0+
@@ -17,8 +18,8 @@ struct NFCFeliCaStatusFlag
 ## Topics
 
 ### Instance Properties
-- [var statusFlag1: Int](nfcfelicastatusflag/statusflag1.md)
-- [var statusFlag2: Int](nfcfelicastatusflag/statusflag2.md)
+- [var statusFlag1: Int](./nfcfelicastatusflag/statusflag1.md)
+- [var statusFlag2: Int](./nfcfelicastatusflag/statusflag2.md)
 
 
 ---

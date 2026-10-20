@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -12,6 +13,10 @@
 
 ```swift
 var cursorMoveHandler: PGDisplayCursorMoveHandler? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) PGDisplayCursorMoveHandler cursorMoveHandler;
 ```
 
 

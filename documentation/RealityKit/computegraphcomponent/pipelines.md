@@ -1,7 +1,8 @@
 # pipelines
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compiled pipelines used to execute the simulation.
 
@@ -20,7 +21,7 @@ var pipelines: ComputeNodeGraph.Pipelines? { get set }
 
 #### Discussion
 
-When `nil`, the pipelines from [`resource`](computegraphcomponent/resource.md) are used. Assigning a value overrides the resource’s pipelines without replacing the loaded assets.
+When `nil`, the pipelines from [`resource`](./resource.md) are used. Assigning a value overrides the resource’s pipelines without replacing the loaded assets.
 
 
 ---

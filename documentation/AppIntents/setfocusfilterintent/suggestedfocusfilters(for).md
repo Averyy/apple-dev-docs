@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 You can implement this method to return a list of suggested focus configurations. This is useful when the suggested focus configurations are different from the configuration when the focus is turned off.
@@ -12,7 +13,7 @@ You can implement this method to return a list of suggested focus configurations
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -29,9 +30,16 @@ A list of suggested focus configurations where the first one is the most suggest
 
 - `context`: The focus configuration context which the suggested configurations could be determined from.
 
+## Default Implementations
+
+### SetFocusFilterIntent Implementations
+- [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](./suggestedfocusfilters%28for%29-3d5tv.md)
+  You can implement this method to return a list of suggested focus configurations. This is useful when the suggested focus configurations are different from the configuration when the focus is turned off.
+
 ## See Also
 
-- [static var current: Self](setfocusfilterintent/current.md)
+### Getting the current app configuration
+- [static var current: Self](./current.md)
 
 
 ---

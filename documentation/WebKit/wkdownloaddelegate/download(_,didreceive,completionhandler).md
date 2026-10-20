@@ -1,7 +1,8 @@
 # download(_:didReceive:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to respond to an authentication challenge.
 
@@ -15,14 +16,22 @@ Asks the delegate to respond to an authentication challenge.
 ## Declaration
 
 ```swift
+optional func download(_ download: WKDownload, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping @MainActor @Sendable (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
+```
+
+```swift
 optional func download(_ download: WKDownload, respondTo challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
+```
+
+```objc
+- (void) download:(WKDownload *) download didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge completionHandler:(void (^)(enum NSURLSessionAuthChallengeDisposition, NSURLCredential *)) completionHandler;
 ```
 
 #### Discussion
 
 Determine how to respond to the authentication challenge in this method. Then invoke `completionHandler` with a disposition that describes how to respond to the authorization challenge, and optional credentials.
 
-If you don’t implement this method, the web view responds to the challenge with [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition/rejectprotectionspace).
+If you don’t implement this method, the web view responds to the challenge with [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](../../Foundation/urlsession/authchallengedisposition/rejectprotectionspace.md).
 
 ## Parameters
 
@@ -32,7 +41,8 @@ If you don’t implement this method, the web view responds to the challenge wit
 
 ## See Also
 
-- [WKDownload.RedirectPolicy](wkdownload/redirectpolicy.md)
+### Responding to Authorization Challenges
+- [WKDownload.RedirectPolicy](../wkdownload/redirectpolicy.md)
   An enumeration with cases that indicate whether to proceed with a redirect.
 
 

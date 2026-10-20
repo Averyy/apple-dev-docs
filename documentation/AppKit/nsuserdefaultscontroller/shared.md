@@ -1,17 +1,22 @@
 # shared
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the shared instance of NSUserDefaultsController, creating it if necessary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var shared: NSUserDefaultsController { get }
+```
+
+```objc
+@property (class, strong, readonly) NSUserDefaultsController * sharedUserDefaultsController;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This instance has no initial values, and uses `[NSUserDefaults standardUserDefau
 
 ## See Also
 
-- [Cocoa Bindings Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i)
+### Related Documentation
+- [Cocoa Bindings Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i)
 
 
 ---

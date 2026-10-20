@@ -1,7 +1,8 @@
 # adaptiveToneMapping
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The adaptive tone mapping to apply, if any.
 

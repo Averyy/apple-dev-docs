@@ -1,7 +1,8 @@
 # taskIdentifier
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique name of the task to distinguish it from all other tasks at runtime.
 
@@ -18,6 +19,10 @@ A unique name of the task to distinguish it from all other tasks at runtime.
 
 ```swift
 var taskIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * taskIdentifier;
 ```
 
 

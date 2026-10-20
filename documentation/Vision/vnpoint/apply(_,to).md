@@ -1,7 +1,8 @@
 # apply(_:to:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a point object that’s shifted by the X and Y offsets of the specified vector.
 
@@ -19,6 +20,10 @@ Creates a point object that’s shifted by the X and Y offsets of the specified 
 class func apply(_ vector: VNVector, to point: VNPoint) -> VNPoint
 ```
 
+```objc
++ (VNPoint *) pointByApplyingVector:(VNVector *) vector toPoint:(VNPoint *) point;
+```
+
 ## Parameters
 
 - `vector`: The vector to apply to offset the point.
@@ -26,12 +31,13 @@ class func apply(_ vector: VNVector, to point: VNPoint) -> VNPoint
 
 ## See Also
 
-- [init(x: Double, y: Double)](vnpoint/init(x:y:).md)
+### Creating a Point
+- [init(x: Double, y: Double)](./init%28x,y%29.md)
   Creates a point object with the specified coordinates.
-- [convenience init(location: CGPoint)](vnpoint/init(location:).md)
+- [convenience init(location: CGPoint)](./init%28location%29.md)
   Creates a point object from the specified Core Graphics point.
-- [init?(coder: NSCoder)](vnpoint/init(coder:).md)
-- [class var zero: VNPoint](vnpoint/zero.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [class var zero: VNPoint](./zero.md)
   A point object that represents the origin.
 
 

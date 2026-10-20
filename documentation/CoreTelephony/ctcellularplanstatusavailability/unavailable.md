@@ -1,7 +1,8 @@
 # CTCellularPlanStatusAvailability.unavailable
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the phone number’s cellular plan is inactive or the system can’t determine the status.
 
@@ -16,9 +17,14 @@ A status that indicates the phone number’s cellular plan is inactive or the sy
 case unavailable
 ```
 
+```c
+CTCellularPlanStatusAvailabilityUnavailable
+```
+
 ## See Also
 
-- [CTCellularPlanStatusAvailability.available](ctcellularplanstatusavailability/available.md)
+### Determining availability
+- [CTCellularPlanStatusAvailability.available](./available.md)
   A status that indicates the phone number has an active cellular plan on the device.
 
 

@@ -1,7 +1,8 @@
 # GCKeyLeftArrow
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keyboard code for the Left Arrow key.
 
@@ -19,31 +20,36 @@ The keyboard code for the Left Arrow key.
 let GCKeyLeftArrow: String
 ```
 
+```c
+extern NSString * const GCKeyLeftArrow;
+```
+
 ## See Also
 
-- [let GCKeyPrintScreen: String](gckeyprintscreen.md)
+### Directional and Similar Keys
+- [let GCKeyPrintScreen: String](./gckeyprintscreen.md)
   The keyboard code for the Print Screen key.
-- [let GCKeyScrollLock: String](gckeyscrolllock.md)
+- [let GCKeyScrollLock: String](./gckeyscrolllock.md)
   The keyboard code for the Scroll Lock key.
-- [let GCKeyPause: String](gckeypause.md)
+- [let GCKeyPause: String](./gckeypause.md)
   The keyboard code for the Pause key.
-- [let GCKeyInsert: String](gckeyinsert.md)
+- [let GCKeyInsert: String](./gckeyinsert.md)
   The keyboard code for the Insert key.
-- [let GCKeyHome: String](gckeyhome.md)
+- [let GCKeyHome: String](./gckeyhome.md)
   The keyboard code for the Home key.
-- [let GCKeyPageUp: String](gckeypageup.md)
+- [let GCKeyPageUp: String](./gckeypageup.md)
   The keyboard code for the Page Up key.
-- [let GCKeyDeleteForward: String](gckeydeleteforward.md)
+- [let GCKeyDeleteForward: String](./gckeydeleteforward.md)
   The keyboard code for the Delete-Forward key.
-- [let GCKeyEnd: String](gckeyend.md)
+- [let GCKeyEnd: String](./gckeyend.md)
   The keyboard code for the End key.
-- [let GCKeyPageDown: String](gckeypagedown.md)
+- [let GCKeyPageDown: String](./gckeypagedown.md)
   The keyboard code for the Page Down key.
-- [let GCKeyRightArrow: String](gckeyrightarrow.md)
+- [let GCKeyRightArrow: String](./gckeyrightarrow.md)
   The keyboard code for the Right Arrow key.
-- [let GCKeyDownArrow: String](gckeydownarrow.md)
+- [let GCKeyDownArrow: String](./gckeydownarrow.md)
   The keyboard code for the Down Arrow key.
-- [let GCKeyUpArrow: String](gckeyuparrow.md)
+- [let GCKeyUpArrow: String](./gckeyuparrow.md)
   The keyboard code for the Up Arrow key.
 
 

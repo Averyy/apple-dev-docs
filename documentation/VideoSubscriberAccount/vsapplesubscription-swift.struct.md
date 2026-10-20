@@ -1,7 +1,8 @@
 # VSAppleSubscription
 
 **Framework**: Video Subscriber Account  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An Apple streaming service customer and their subscriptions.
 
@@ -21,27 +22,28 @@ struct VSAppleSubscription
 ## Topics
 
 ### Creating an Apple subscription
-- [init(customerID: String, productCodes: [String])](vsapplesubscription-swift.struct/init(customerid:productcodes:).md)
+- [init(customerID: String, productCodes: [String])](./vsapplesubscription-swift.struct/init%28customerid,productcodes%29.md)
   Initializes an Apple subscription object.
 ### Identifying a subscription
-- [var customerID: String](vsapplesubscription-swift.struct/customerid.md)
+- [var customerID: String](./vsapplesubscription-swift.struct/customerid.md)
   The identifier of the customer as previously reported to Apple.
-- [var productCodes: [String]](vsapplesubscription-swift.struct/productcodes.md)
+- [var productCodes: [String]](./vsapplesubscription-swift.struct/productcodes.md)
   A list of product codes for Apple services the customer subscribes to.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VSSubscriptionRegistrationCenter](vssubscriptionregistrationcenter.md)
+### TV app integration
+- [class VSSubscriptionRegistrationCenter](./vssubscriptionregistrationcenter.md)
   An object that stores subscription information that the system provides to the Apple TV app.
-- [class VSAccountApplicationProvider](vsaccountapplicationprovider.md)
+- [class VSAccountApplicationProvider](./vsaccountapplicationprovider.md)
   An object to display app-specific providers in your app.
 
 

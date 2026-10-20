@@ -1,7 +1,8 @@
 # ASIdentifierManager
 
 **Framework**: AdSupport  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The object that contains the advertising identifier.
 
@@ -18,28 +19,32 @@ The object that contains the advertising identifier.
 class ASIdentifierManager
 ```
 
+```objc
+@interface ASIdentifierManager : NSObject
+```
+
 ## Topics
 
 ### Getting the Advertising Identifier
-- [class func shared() -> ASIdentifierManager](asidentifiermanager/shared.md)
+- [class func shared() -> ASIdentifierManager](./asidentifiermanager/shared%28%29.md)
   The shared instance of the identifier manager class.
-- [var advertisingIdentifier: UUID](asidentifiermanager/advertisingidentifier.md)
+- [var advertisingIdentifier: UUID](./asidentifiermanager/advertisingidentifier.md)
   The UUID that is specific to a device.
 ### Deprecated
-- [var isAdvertisingTrackingEnabled: Bool](asidentifiermanager/isadvertisingtrackingenabled.md)
+- [var isAdvertisingTrackingEnabled: Bool](./asidentifiermanager/isadvertisingtrackingenabled.md)
   A Boolean value that indicates whether the user has limited ad tracking enabled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

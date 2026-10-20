@@ -1,7 +1,8 @@
 # audioTimePitchAlgorithm
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The processing algorithm to use for scaled audio edits.
 
@@ -19,13 +20,18 @@ The processing algorithm to use for scaled audio edits.
 var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
+```
+
 #### Discussion
 
-See [`Time pitch algorithm settings`](time-pitch-algorithm-settings.md) for possible values. The system throws an exception if you set this property to a value other than one of the defined constants.
+See [Time pitch algorithm settings](../time-pitch-algorithm-settings.md) for possible values. The system throws an exception if you set this property to a value other than one of the defined constants.
 
 ## See Also
 
-- [var audioMix: AVAudioMix?](avassetreaderaudiomixoutput/audiomix.md)
+### Configuring audio settings
+- [var audioMix: AVAudioMix?](./audiomix.md)
   The audio mix to use with this output.
 
 

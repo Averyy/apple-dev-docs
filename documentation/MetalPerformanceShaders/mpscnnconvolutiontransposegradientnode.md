@@ -1,7 +1,8 @@
 # MPSCNNConvolutionTransposeGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,23 +18,27 @@
 class MPSCNNConvolutionTransposeGradientNode
 ```
 
+```objc
+@interface MPSCNNConvolutionTransposeGradientNode : MPSCNNConvolutionGradientNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionTransposeGradientState: MPSCNNConvolutionTransposeGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](mpscnnconvolutiontransposegradientnode/init(sourcegradient:sourceimage:convolutiontransposegradientstate:weights:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, convolutionTransposeGradientState: MPSCNNConvolutionTransposeGradientStateNode, weights: (any MPSCNNConvolutionDataSource)?)](./mpscnnconvolutiontransposegradientnode/init%28sourcegradient,sourceimage,convolutiontransposegradientstate,weights%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNConvolutionGradientNode](mpscnnconvolutiongradientnode.md)
+- [MPSCNNConvolutionGradientNode](./mpscnnconvolutiongradientnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSNNTrainableNode](mpsnntrainablenode.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSNNTrainableNode](./mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

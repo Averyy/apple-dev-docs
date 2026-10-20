@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 OSSet *userClients;
 ```
 
@@ -15,11 +15,13 @@ A list of user clients that have requested value change notifications.
 
 ## See Also
 
-- [workLoop](ioaudiocontrol/workloop.md)
-- [isStarted](ioaudiocontrol/isstarted.md)
-- [controlID](ioaudiocontrol/controlid.md)
-- [commandGate](ioaudiocontrol/commandgate.md)
-- [channelID](ioaudiocontrol/channelid.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [isStarted](./isstarted.md)
+- [controlID](./controlid.md)
+- [commandGate](./commandgate.md)
+- [channelID](./channelid.md)
+### Related Documentation
 - [collectionGroup-1663367](collectionGroup-1663367)
 
 

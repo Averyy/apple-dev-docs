@@ -1,7 +1,8 @@
 # clearDocumentation()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the authored documentation on this object.
 

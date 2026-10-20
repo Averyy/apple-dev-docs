@@ -1,7 +1,8 @@
 # sidebarRowSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current size of sidebar rows.
 
@@ -32,7 +33,8 @@ SwiftUI views like `Label` automatically adapt to the sidebar row size.
 
 ## See Also
 
-- [enum SidebarRowSize](sidebarrowsize.md)
+### Configuring the sidebar
+- [enum SidebarRowSize](../sidebarrowsize.md)
   The standard sizes of sidebar rows.
 
 

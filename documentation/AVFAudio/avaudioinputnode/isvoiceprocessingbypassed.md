@@ -1,7 +1,8 @@
 # isVoiceProcessingBypassed
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the node bypasses all microphone uplink processing of the voice-processing unit.
 
@@ -20,15 +21,20 @@ A Boolean that indicates whether the node bypasses all microphone uplink process
 var isVoiceProcessingBypassed: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isVoiceProcessingBypassed) BOOL voiceProcessingBypassed;
+```
+
 ## See Also
 
-- [var isVoiceProcessingInputMuted: Bool](avaudioinputnode/isvoiceprocessinginputmuted.md)
+### Configuring voice processing
+- [var isVoiceProcessingInputMuted: Bool](./isvoiceprocessinginputmuted.md)
   A Boolean that indicates whether the input of the voice processing unit is in a muted state.
-- [var isVoiceProcessingAGCEnabled: Bool](avaudioinputnode/isvoiceprocessingagcenabled.md)
+- [var isVoiceProcessingAGCEnabled: Bool](./isvoiceprocessingagcenabled.md)
   A Boolean that indicates whether automatic gain control on the processed microphone uplink signal is active.
-- [var voiceProcessingOtherAudioDuckingConfiguration: AVAudioVoiceProcessingOtherAudioDuckingConfiguration](avaudioinputnode/voiceprocessingotheraudioduckingconfiguration.md)
+- [var voiceProcessingOtherAudioDuckingConfiguration: AVAudioVoiceProcessingOtherAudioDuckingConfiguration](./voiceprocessingotheraudioduckingconfiguration.md)
   The ducking configuration of nonvoice audio.
-- [struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration](avaudiovoiceprocessingotheraudioduckingconfiguration.md)
+- [struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration](../avaudiovoiceprocessingotheraudioduckingconfiguration.md)
   The configuration of ducking non-voice audio.
 
 

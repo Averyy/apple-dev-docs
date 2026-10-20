@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -19,7 +20,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let PKPaymentErrorDomain: String](pkpaymenterrordomain.md)
+### Querying the error domain
+- [let PKPaymentErrorDomain: String](../pkpaymenterrordomain.md)
   The error domain for specific errors associated with Apple Pay in-app or web payments.
 
 

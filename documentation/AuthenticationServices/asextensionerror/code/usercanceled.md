@@ -1,7 +1,8 @@
 # ASExtensionError.Code.userCanceled
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user canceled the operation.
 
@@ -18,17 +19,22 @@ The user canceled the operation.
 case userCanceled
 ```
 
+```c
+ASExtensionErrorCodeUserCanceled
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 ## See Also
 
-- [ASExtensionError.Code.credentialIdentityNotFound](asextensionerror/code/credentialidentitynotfound.md)
+### Codes
+- [ASExtensionError.Code.credentialIdentityNotFound](./credentialidentitynotfound.md)
   The credential identity was not found.
-- [ASExtensionError.Code.failed](asextensionerror/code/failed.md)
+- [ASExtensionError.Code.failed](./failed.md)
   The operation failed.
-- [ASExtensionError.Code.userInteractionRequired](asextensionerror/code/userinteractionrequired.md)
+- [ASExtensionError.Code.userInteractionRequired](./userinteractionrequired.md)
   User interaction is required.
 
 

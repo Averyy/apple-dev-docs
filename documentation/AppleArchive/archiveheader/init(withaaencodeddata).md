@@ -1,7 +1,8 @@
 # init(withAAEncodedData:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new archive header from encoded data.
 
@@ -11,7 +12,7 @@ Creates a new archive header from encoded data.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ required init?(withAAEncodedData data: UnsafeBufferPointer<UInt8>)
 
 ## See Also
 
-- [init()](archiveheader/init.md)
+### Creating an Archive Header
+- [init()](./init%28%29.md)
   Creates a new empty archive header.
-- [init?(keySet: ArchiveHeader.FieldKeySet, directory: FilePath, path: FilePath, flags: ArchiveFlags)](archiveheader/init(keyset:directory:path:flags:).md)
+- [init?(keySet: ArchiveHeader.FieldKeySet, directory: FilePath, path: FilePath, flags: ArchiveFlags)](./init%28keyset,directory,path,flags%29.md)
   Creates a new archive header with fields derived from the filesystem object, at the specified directory and path.
-- [init(copying: ArchiveHeader)](archiveheader/init(copying:).md)
+- [init(copying: ArchiveHeader)](./init%28copying%29.md)
   Creates a copy of an archive header.
 
 

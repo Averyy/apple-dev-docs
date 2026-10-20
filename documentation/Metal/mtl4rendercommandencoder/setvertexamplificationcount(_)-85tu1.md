@@ -1,7 +1,8 @@
 # setVertexAmplificationCount(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the vertex amplification count and its view mapping for each amplification ID.
 
@@ -29,7 +30,8 @@ Each view mapping element describes how to route the corresponding amplification
 
 ## See Also
 
-- [func setVertexAmplificationCount([MTLVertexAmplificationViewMapping])](mtl4rendercommandencoder/setvertexamplificationcount(_:)-911ja.md)
+### Configuring vertex amplification
+- [func setVertexAmplificationCount([MTLVertexAmplificationViewMapping])](./setvertexamplificationcount%28_%29-911ja.md)
   Sets the vertex amplification count and its view mapping for each amplification ID.
 
 

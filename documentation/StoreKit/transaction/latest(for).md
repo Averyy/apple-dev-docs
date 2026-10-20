@@ -1,7 +1,8 @@
 # latest(for:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets the customer’s most recent transaction for an Apple In-App Purchase.
 
@@ -22,7 +23,7 @@ static func latest(for productID: String) async -> VerificationResult<Transactio
 
 #### Return Value
 
-A [`VerificationResult`](verificationresult.md) with a single [`Transaction`](transaction.md), or `nil` if the customer hasn’t purchased the product.
+A [`VerificationResult`](../verificationresult.md) with a single [`Transaction`](../transaction.md), or `nil` if the customer hasn’t purchased the product.
 
 #### Discussion
 
@@ -46,9 +47,9 @@ case .unverified(let transaction, let verificationError):
 }
 ```
 
-By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key is `false`, this method excludes finished consumable Apple In-App Purchases unless they are refunded or revoked.
+By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](../../BundleResources/information-property-list/skincludeconsumableinapppurchasehistory.md) property list key is `false`, this method excludes finished consumable Apple In-App Purchases unless they are refunded or revoked.
 
-If you set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key to `true`, this method returns all transactions, including consumable Apple In-App Purchases that your app marked as finished ([`finish()`](transaction/finish().md)).
+If you set the [`SKIncludeConsumableInAppPurchaseHistory`](../../BundleResources/information-property-list/skincludeconsumableinapppurchasehistory.md) property list key to `true`, this method returns all transactions, including consumable Apple In-App Purchases that your app marked as finished ([`finish()`](./finish%28%29.md)).
 
 ## Parameters
 
@@ -56,11 +57,12 @@ If you set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.app
 
 ## See Also
 
-- [static var all: Transaction.Transactions](transaction/all.md)
+### Getting transaction history
+- [static var all: Transaction.Transactions](./all.md)
   A sequence that emits all the customer’s transactions for your app.
-- [static var unfinished: Transaction.Transactions](transaction/unfinished.md)
+- [static var unfinished: Transaction.Transactions](./unfinished.md)
   A sequence that emits unfinished transactions for the customer.
-- [SKIncludeConsumableInAppPurchaseHistory](../bundleresources/information-property-list/skincludeconsumableinapppurchasehistory.md)
+- [SKIncludeConsumableInAppPurchaseHistory](../../BundleResources/information-property-list/skincludeconsumableinapppurchasehistory.md)
   A Boolean value that determines whether StoreKit includes finished consumable In-App Purchases in transaction information.
 
 

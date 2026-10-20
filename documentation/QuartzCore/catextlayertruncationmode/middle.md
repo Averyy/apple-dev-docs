@@ -1,7 +1,8 @@
 # middle
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Each line is displayed so that the beginning and end fit in the container and the missing text is indicated by some kind of ellipsis glyph in the middle.
 
@@ -19,13 +20,18 @@ Each line is displayed so that the beginning and end fit in the container and th
 static let middle: CATextLayerTruncationMode
 ```
 
+```c
+extern CATextLayerTruncationMode const kCATruncationMiddle;
+```
+
 ## See Also
 
-- [static let none: CATextLayerTruncationMode](catextlayertruncationmode/none.md)
+### Constants
+- [static let none: CATextLayerTruncationMode](./none.md)
   Each line is displayed so that the text is either wrapped or clipped.
-- [static let start: CATextLayerTruncationMode](catextlayertruncationmode/start.md)
+- [static let start: CATextLayerTruncationMode](./start.md)
   Each line is displayed so that the end fits in the container and the missing text is indicated by some kind of ellipsis glyph.
-- [static let end: CATextLayerTruncationMode](catextlayertruncationmode/end.md)
+- [static let end: CATextLayerTruncationMode](./end.md)
   Each line is displayed so that the beginning fits in the container and the missing text is indicated by some kind of ellipsis glyph.
 
 

@@ -1,17 +1,22 @@
 # hyphenationFactor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the current hyphenation factor.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var hyphenationFactor: Float { get set }
+```
+
+```objc
+@property float hyphenationFactor;
 ```
 
 #### Return Value
@@ -20,11 +25,12 @@ The hyphenation factor, a value ranging from 0.0 to 1.0 that controls when hyphe
 
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nstypesetter/layoutmanager.md)
+### Accessing the layout manager
+- [var layoutManager: NSLayoutManager?](./layoutmanager.md)
   Returns the layout manager for the text being typeset.
-- [var usesFontLeading: Bool](nstypesetter/usesfontleading.md)
+- [var usesFontLeading: Bool](./usesfontleading.md)
   Returns whether the typesetter uses the leading (or line gap) value specified in the font metric information of the current font.
-- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](nstypesetter/typesetterbehavior.md)
+- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](./typesetterbehavior.md)
   Returns the current typesetter behavior.
 
 

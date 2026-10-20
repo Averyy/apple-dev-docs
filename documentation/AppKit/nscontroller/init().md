@@ -1,10 +1,11 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder)](nscontroller/init(coder:).md)
+### Initializers
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

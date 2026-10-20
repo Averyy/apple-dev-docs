@@ -1,7 +1,8 @@
 # valueTransformerName
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the transformer to use for the attribute value.
 
@@ -10,7 +11,7 @@ The name of the transformer to use for the attribute value.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,28 @@ The name of the transformer to use for the attribute value.
 var valueTransformerName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * valueTransformerName;
+```
+
 #### Discussion
 
 The attribute must be of type `NSTransformedAttributeType`.
 
-The transformer must output an `NSData` object from [`transformedValue(_:)`](https://developer.apple.com/documentation/foundation/valuetransformer/transformedvalue(_:)) and must allow reverse transformations.
+The transformer must output an `NSData` object from [`transformedValue(_:)`](../../Foundation/valuetransformer/transformedvalue%28_%29.md) and must allow reverse transformations.
 
-If this value is `nil`, Core Data uses a default a transformer that uses [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) to archive and unarchive the attribute value.
+If this value is `nil`, Core Data uses a default a transformer that uses [`NSCoding`](../../Foundation/nscoding.md) to archive and unarchive the attribute value.
 
 ## See Also
 
-- [var allowsCloudEncryption: Bool](nsattributedescription/allowscloudencryption.md)
+### Configuring the behavior
+- [var allowsCloudEncryption: Bool](./allowscloudencryption.md)
   A Boolean value that determines whether to encrypt the attribute’s value.
-- [var allowsExternalBinaryDataStorage: Bool](nsattributedescription/allowsexternalbinarydatastorage.md)
+- [var allowsExternalBinaryDataStorage: Bool](./allowsexternalbinarydatastorage.md)
   A Boolean value that indicates whether the attribute allows external binary storage.
-- [var defaultValue: Any?](nsattributedescription/defaultvalue.md)
+- [var defaultValue: Any?](./defaultvalue.md)
   The default value of the attribute.
-- [var preservesValueInHistoryOnDeletion: Bool](nsattributedescription/preservesvalueinhistoryondeletion.md)
+- [var preservesValueInHistoryOnDeletion: Bool](./preservesvalueinhistoryondeletion.md)
   A Boolean value that indicates whether the attribute records its value in the persistent history transaction for a managed object’s deletion.
 
 

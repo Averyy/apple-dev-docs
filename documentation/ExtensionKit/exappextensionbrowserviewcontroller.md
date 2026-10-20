@@ -1,7 +1,8 @@
 # EXAppExtensionBrowserViewController
 
 **Framework**: ExtensionKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that displays an interface to enable or disable the host app’s extensions.
 
@@ -19,7 +20,7 @@ class EXAppExtensionBrowserViewController
 
 ## Mentions
 
-- [Displaying the app extensions available to your app](displaying-the-app-extensions-available-to-your-app.md)
+- [Displaying the app extensions available to your app](./displaying-the-app-extensions-available-to-your-app.md)
 
 #### Overview
 
@@ -30,41 +31,42 @@ Present this view controller modally from your app, or embed the view controller
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../appkit/nsviewcontroller.md)
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](../appkit/nseditor.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](../appkit/nssegueperforming.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](../AppKit/nseditor.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](../AppKit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Displaying the app extensions available to your app](displaying-the-app-extensions-available-to-your-app.md)
+### Host app presentation
+- [Displaying the app extensions available to your app](./displaying-the-app-extensions-available-to-your-app.md)
   Show the app extensions available to your app, so that people can approve, enable, or disable them.
-- [class EXHostViewController](exhostviewcontroller.md)
+- [class EXHostViewController](./exhostviewcontroller.md)
   A view controller that hosts remote views provided by an app extension.
 
 

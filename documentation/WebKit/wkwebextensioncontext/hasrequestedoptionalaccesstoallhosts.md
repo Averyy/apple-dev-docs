@@ -1,7 +1,8 @@
 # hasRequestedOptionalAccessToAllHosts
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating if the extension has requested optional access to all hosts.
 
@@ -16,6 +17,10 @@ A Boolean value indicating if the extension has requested optional access to all
 
 ```swift
 var hasRequestedOptionalAccessToAllHosts: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL hasRequestedOptionalAccessToAllHosts;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # .>(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 A vector mask with the result of a pointwise greater-than comparison.
 
@@ -19,6 +20,8 @@ A vector mask with the result of a pointwise greater-than comparison.
 ```swift
 static func .> (a: SIMD4<Scalar>, b: SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>
 ```
+
+Available when `Scalar` is `UInt8`.
 
 
 ---

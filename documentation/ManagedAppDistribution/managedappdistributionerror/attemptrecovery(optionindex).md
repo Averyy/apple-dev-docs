@@ -1,7 +1,8 @@
 # attemptRecovery(optionIndex:)
 
 **Framework**: ManagedAppDistribution  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempt to recover from this error when someone selects the option at the given index.
 
@@ -24,7 +25,8 @@ func attemptRecovery(optionIndex recoveryOptionIndex: Int) -> Bool
 
 ## See Also
 
-- [func attemptRecovery(optionIndex: Int, resultHandler: (Bool) -> Void)](managedappdistributionerror/attemptrecovery(optionindex:resulthandler:).md)
+### Recovering from errors
+- [func attemptRecovery(optionIndex: Int, resultHandler: (Bool) -> Void)](./attemptrecovery%28optionindex,resulthandler%29.md)
   Attempt to recover from this error when someone selects the option at the given index.
 
 

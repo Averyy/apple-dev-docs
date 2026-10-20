@@ -1,7 +1,8 @@
 # SubscriptionGroupVersionCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship you include in the request and the one on which you can operate.
 
@@ -10,14 +11,14 @@ The relationship you include in the request and the one on which you can operate
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupVersionCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroupVersionCreateRequest.Data.Relationships.SubscriptionGroup](subscriptiongroupversioncreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptiongroup-data.dictionary.md)
+- [object SubscriptionGroupVersionCreateRequest.Data.Relationships.SubscriptionGroup](./relationships-data.dictionary/subscriptiongroup-data.dictionary.md)
   The subscription group to associate with the new subscription group version.
 
 ## Properties

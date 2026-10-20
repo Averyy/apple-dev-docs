@@ -1,7 +1,8 @@
 # serialNumberString
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device’s serial number as a string.
 
@@ -15,15 +16,20 @@ The device’s serial number as a string.
 static let serialNumberString: IOUSBHostDevicePropertyKey
 ```
 
+```c
+extern IOUSBHostDevicePropertyKey IOUSBHostDevicePropertyKeySerialNumberString;
+```
+
 ## See Also
 
-- [static let currentConfiguration: IOUSBHostDevicePropertyKey](iousbhostdevicepropertykey/currentconfiguration.md)
+### Properties
+- [static let currentConfiguration: IOUSBHostDevicePropertyKey](./currentconfiguration.md)
   The device’s current configuration value.
-- [static let containerID: IOUSBHostDevicePropertyKey](iousbhostdevicepropertykey/containerid.md)
+- [static let containerID: IOUSBHostDevicePropertyKey](./containerid.md)
   The device’s container ID.
-- [static let vendorString: IOUSBHostDevicePropertyKey](iousbhostdevicepropertykey/vendorstring.md)
+- [static let vendorString: IOUSBHostDevicePropertyKey](./vendorstring.md)
   The device’s vendor name.
-- [typealias IOUSBHostPropertyKey](iousbhostpropertykey.md)
+- [typealias IOUSBHostPropertyKey](../iousbhostpropertykey.md)
   Properties that the USB host device and interface classes share.
 
 

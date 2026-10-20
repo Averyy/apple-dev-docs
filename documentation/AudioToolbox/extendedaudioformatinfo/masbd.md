@@ -1,17 +1,18 @@
 # mASBD
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A format specification for an audio stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ A format specification for an audio stream.
 var mASBD: AudioStreamBasicDescription
 ```
 
+```c
+AudioStreamBasicDescription mASBD;
+```
+
 #### Discussion
 
-An [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) struct.
+An [`AudioStreamBasicDescription`](../../CoreAudioTypes/audiostreambasicdescription.md) struct.
 
 
 ---

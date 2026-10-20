@@ -1,7 +1,8 @@
 # init(target:clippingMode:crossingMode:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a portal component with a target entity, clipping mode, and crossing mode.
 
@@ -21,15 +22,15 @@ init(target: Entity, clippingMode: PortalComponent.ClippingMode, crossingMode: P
 
 #### Discussion
 
-To render a portal, an entity needs a [`PortalComponent`](portalcomponent.md) and a [`ModelComponent`](modelcomponent.md), using one or more [`PortalMaterial`](portalmaterial.md) instances.
+To render a portal, an entity needs a [`PortalComponent`](../portalcomponent.md) and a [`ModelComponent`](../modelcomponent.md), using one or more [`PortalMaterial`](../portalmaterial.md) instances.
 
-The target entity needs to have a [`WorldComponent`](worldcomponent.md) or the portal does not render.
+The target entity needs to have a [`WorldComponent`](../worldcomponent.md) or the portal does not render.
 
-Provide [`PortalComponent.ClippingMode`](portalcomponent/clippingmode-swift.enum.md) and [`PortalComponent.CrossingMode`](portalcomponent/crossingmode-swift.enum.md) to configure the corresponding clipping and crossing features.
+Provide [`PortalComponent.ClippingMode`](./clippingmode-swift.enum.md) and [`PortalComponent.CrossingMode`](./crossingmode-swift.enum.md) to configure the corresponding clipping and crossing features.
 
-Using this initializer is equivalent to setting [`targetEntity`](portalcomponent/targetentity.md), [`clippingMode`](portalcomponent/clippingmode-swift.property.md) and [`crossingMode`](portalcomponent/crossingmode-swift.property.md) properties directly.
+Using this initializer is equivalent to setting [`targetEntity`](./targetentity.md), [`clippingMode`](./clippingmode-swift.property.md) and [`crossingMode`](./crossingmode-swift.property.md) properties directly.
 
-See [`PortalComponent`](portalcomponent.md) for example usage.
+See [`PortalComponent`](../portalcomponent.md) for example usage.
 
 ## Parameters
 

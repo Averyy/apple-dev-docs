@@ -1,18 +1,19 @@
 # particleScaleSequence
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sequence used to specify the scale factor of a particle over its lifetime.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,22 +21,27 @@ The sequence used to specify the scale factor of a particle over its lifetime.
 var particleScaleSequence: SKKeyframeSequence? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SKKeyframeSequence * particleScaleSequence;
+```
+
 ## Mentions
 
-- [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
+- [Animating Particle Properties Across Disparate Values](../animating-particle-properties-across-disparate-values.md)
+- [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
 #### Discussion
 
-The default value is `nil`. If a non-`nil` value is specified, then the [`particleScale`](skemitternode/particlescale.md), [`particleScaleRange`](skemitternode/particlescalerange.md), and [`particleScaleSpeed`](skemitternode/particlescalespeed.md) properties are ignored. Instead, the sequence is used to specify the scale factor.
+The default value is `nil`. If a non-`nil` value is specified, then the [`particleScale`](./particlescale.md), [`particleScaleRange`](./particlescalerange.md), and [`particleScaleSpeed`](./particlescalespeed.md) properties are ignored. Instead, the sequence is used to specify the scale factor.
 
 ## See Also
 
-- [var particleScale: CGFloat](skemitternode/particlescale.md)
+### Scaling Particles by a Factor
+- [var particleScale: CGFloat](./particlescale.md)
   The average initial scale factor of a particle.
-- [var particleScaleRange: CGFloat](skemitternode/particlescalerange.md)
+- [var particleScaleRange: CGFloat](./particlescalerange.md)
   The range of allowed random values for a particle’s initial scale.
-- [var particleScaleSpeed: CGFloat](skemitternode/particlescalespeed.md)
+- [var particleScaleSpeed: CGFloat](./particlescalespeed.md)
   The rate at which a particle’s scale factor changes per second.
 
 

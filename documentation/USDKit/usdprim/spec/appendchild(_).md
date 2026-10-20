@@ -1,7 +1,8 @@
 # appendChild(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends `child` to the end of the children list.
 

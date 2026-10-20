@@ -1,7 +1,8 @@
 # init(forwardFlow:backwardFlow:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object with forward and backward optical flow pixel buffers.
 
@@ -17,6 +18,10 @@ Creates an object with forward and backward optical flow pixel buffers.
 
 ```swift
 init?(forwardFlow: CVPixelBuffer, backwardFlow: CVPixelBuffer)
+```
+
+```objc
+- (instancetype) initWithForwardFlow:(CVPixelBufferRef) forwardFlow backwardFlow:(CVPixelBufferRef) backwardFlow;
 ```
 
 #### Discussion

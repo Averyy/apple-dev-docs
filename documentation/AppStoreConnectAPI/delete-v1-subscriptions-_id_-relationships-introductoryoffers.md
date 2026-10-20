@@ -1,7 +1,8 @@
 # Delete an introductory offer from a subscription
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete a specific introductory offer for an auto-renewable subscription.
 
@@ -18,13 +19,32 @@ Delete a specific introductory offer for an auto-renewable subscription.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `SubscriptionIntroductoryOffersLinkagesRequest`
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all introductory offers for a subscription](get-v1-subscriptions-_id_-introductoryoffers.md)
+### Getting introductory offers
+- [List all introductory offers for a subscription](./get-v1-subscriptions-_id_-introductoryoffers.md)
   Get a list of introductory offers for a specific auto-renewable subscription.
-- [List all introductory offer resource ids for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+- [List all introductory offer resource ids for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
 
 

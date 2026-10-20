@@ -1,7 +1,8 @@
 # VisionError.ioError(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates an I/O problem for an image, image sequence, or Core ML model.
 
@@ -22,21 +23,22 @@ case ioError(String)
 
 ## See Also
 
-- [VisionError.internalError(_:)](visionerror/internalerror(_:).md)
+### Getting the error
+- [VisionError.internalError(_:)](./internalerror%28_%29.md)
   An error that indicates the framework produces an internal error.
-- [VisionError.operationFailed(_:)](visionerror/operationfailed(_:).md)
+- [VisionError.operationFailed(_:)](./operationfailed%28_%29.md)
   An error that indicates the operation you request fails.
-- [VisionError.outOfBoundsError(_:)](visionerror/outofboundserror(_:).md)
+- [VisionError.outOfBoundsError(_:)](./outofboundserror%28_%29.md)
   An error that indicates an app attempts to access data that’s out-of-bounds.
-- [VisionError.outOfMemory(_:)](visionerror/outofmemory(_:).md)
+- [VisionError.outOfMemory(_:)](./outofmemory%28_%29.md)
   An error that indicates there’s not enough memory to perform the operation.
-- [VisionError.pixelBufferCreationFailed(_:)](visionerror/pixelbuffercreationfailed(_:).md)
+- [VisionError.pixelBufferCreationFailed(_:)](./pixelbuffercreationfailed%28_%29.md)
   An error that indicates a problem occurs when creating a pixel buffer.
-- [VisionError.requestCancelled(_:)](visionerror/requestcancelled(_:).md)
+- [VisionError.requestCancelled(_:)](./requestcancelled%28_%29.md)
   An error that indicates an app cancels the request.
-- [VisionError.timeStampNotFound(_:)](visionerror/timestampnotfound(_:).md)
+- [VisionError.timeStampNotFound(_:)](./timestampnotfound%28_%29.md)
   An error that indicates the system can’t find a timestamp.
-- [VisionError.timeout(_:)](visionerror/timeout(_:).md)
+- [VisionError.timeout(_:)](./timeout%28_%29.md)
   An error that indicates an operation times out.
 
 

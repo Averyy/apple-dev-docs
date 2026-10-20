@@ -1,12 +1,13 @@
 # NSFontUIOptimizedTrait
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The font synthesizes appropriate attributes for user interface rendering, such as control titles, if necessary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The font synthesizes appropriate attributes for user interface rendering, such a
 var NSFontUIOptimizedTrait: Int { get }
 ```
 
+```c
+NSFontUIOptimizedTrait
+```
+
 ## See Also
 
-- [var NSFontItalicTrait: Int](nsfontitalictrait.md)
+### Constants
+- [var NSFontItalicTrait: Int](./nsfontitalictrait.md)
   The font’s typestyle is italic.
-- [var NSFontBoldTrait: Int](nsfontboldtrait.md)
+- [var NSFontBoldTrait: Int](./nsfontboldtrait.md)
   The font’s typestyle is boldface.
-- [var NSFontExpandedTrait: Int](nsfontexpandedtrait.md)
+- [var NSFontExpandedTrait: Int](./nsfontexpandedtrait.md)
   The font’s typestyle is expanded. Expanded and condensed traits are mutually exclusive.
-- [var NSFontCondensedTrait: Int](nsfontcondensedtrait.md)
+- [var NSFontCondensedTrait: Int](./nsfontcondensedtrait.md)
   The font’s typestyle is condensed. Expanded and condensed traits are mutually exclusive.
-- [var NSFontMonoSpaceTrait: Int](nsfontmonospacetrait.md)
+- [var NSFontMonoSpaceTrait: Int](./nsfontmonospacetrait.md)
   The font uses fixed-pitch glyphs if available. The font may have multiple glyph advances (many CJK glyphs contain two spaces).
-- [var NSFontVerticalTrait: Int](nsfontverticaltrait.md)
+- [var NSFontVerticalTrait: Int](./nsfontverticaltrait.md)
   The font uses vertical glyph variants and metrics.
 
 

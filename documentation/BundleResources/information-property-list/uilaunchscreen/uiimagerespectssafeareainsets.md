@@ -1,7 +1,8 @@
 # UIImageRespectsSafeAreaInsets
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean that specifies whether the launch image should respect the safe area insets.
 
@@ -9,15 +10,17 @@ A Boolean that specifies whether the launch image should respect the safe area i
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `UIImageRespectsSafeAreaInsets` (Image respects safe area insets)
+- **Type**: boolean
 
 ## See Also
 
-- [UIColorName](information-property-list/uilaunchscreen/uicolorname.md)
+### Main Interface
+- [UIColorName](./uicolorname.md)
   The name of a color to use as the background color on the launch screen.
-- [UIImageName](information-property-list/uilaunchscreen/uiimagename.md)
+- [UIImageName](./uiimagename.md)
   The name of an image to display during app launch.
 
 

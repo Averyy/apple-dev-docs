@@ -1,7 +1,8 @@
 # HKMetadataKeyReferenceRangeUpperLimit
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the upper limit of the reference range for a lab result.
 
@@ -19,15 +20,20 @@ A key that indicates the upper limit of the reference range for a lab result.
 let HKMetadataKeyReferenceRangeUpperLimit: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyReferenceRangeUpperLimit;
+```
+
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) value.
+This key takes an [`NSNumber`](../Foundation/nsnumber.md) value.
 
 ## See Also
 
-- [let HKMetadataKeyWasTakenInLab: String](hkmetadatakeywastakeninlab.md)
+### Lab Keys
+- [let HKMetadataKeyWasTakenInLab: String](./hkmetadatakeywastakeninlab.md)
   A key that indicates whether the sample was taken in a lab.
-- [let HKMetadataKeyReferenceRangeLowerLimit: String](hkmetadatakeyreferencerangelowerlimit.md)
+- [let HKMetadataKeyReferenceRangeLowerLimit: String](./hkmetadatakeyreferencerangelowerlimit.md)
   A key that indicates the lower limit of the reference range for a lab result.
 
 

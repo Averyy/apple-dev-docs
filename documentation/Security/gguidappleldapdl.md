@@ -1,7 +1,8 @@
 # gGuidAppleLDAPDL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 let gGuidAppleLDAPDL: cssm_guid
+```
+
+```c
+extern const CSSM_GUID gGuidAppleLDAPDL;
 ```
 
 

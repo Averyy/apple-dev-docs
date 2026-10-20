@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The output texture into which this scaler writes its output.
@@ -18,6 +19,10 @@ The output texture into which this scaler writes its output.
 
 ```swift
 var outputTexture: (any MTLTexture)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> outputTexture;
 ```
 
 #### Discussion

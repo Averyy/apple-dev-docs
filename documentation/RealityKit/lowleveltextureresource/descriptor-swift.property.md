@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor used to create this texture resource.
 
@@ -19,7 +20,8 @@ final var descriptor: LowLevelTextureResource.Descriptor { get }
 
 ## See Also
 
-- [LowLevelTextureResource.Descriptor](lowleveltextureresource/descriptor-swift.struct.md)
+### Accessing the descriptor
+- [LowLevelTextureResource.Descriptor](./descriptor-swift.struct.md)
   The configuration for a new low-level texture resource.
 
 

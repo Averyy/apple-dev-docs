@@ -1,6 +1,7 @@
 # Starting and Terminating Tasks During Development
 
-**Framework**: Background Tasks
+**Framework**: Background Tasks  
+**Role**: Article
 
 Use the debugger during development to start tasks and to terminate them before completion.
 
@@ -14,7 +15,7 @@ The delay between the time you schedule a background task and when the system la
 
 To launch a task:
 
-1. Set a breakpoint in the code that executes after a successful call to [`submit(_:)`](bgtaskscheduler/submit(_:).md).
+1. Set a breakpoint in the code that executes after a successful call to [`submit(_:)`](./bgtaskscheduler/submit%28_%29.md).
 2. Run your app on a device until the breakpoint pauses your app.
 3. In the debugger, execute the line shown below, substituting the identifier of the desired task for `TASK_IDENTIFIER`.
 4. Resume your app. The system calls the launch handler for the desired task.

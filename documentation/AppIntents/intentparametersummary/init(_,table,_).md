@@ -1,7 +1,8 @@
 # init(_:table:_:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,10 @@ init(_ string: ParameterSummaryString<Intent>, table: String? = nil, @IntentPara
 
 ## See Also
 
-- [init()](intentparametersummary/init.md)
-- [init(() -> [PartialKeyPath<Intent>])](intentparametersummary/init(_:).md)
-- [init(ParameterSummaryString<Intent>, table: String?)](intentparametersummary/init(_:table:).md)
+### Crearing a parameter summary
+- [init()](./init%28%29.md)
+- [init(() -> [PartialKeyPath<Intent>])](./init%28_%29.md)
+- [init(ParameterSummaryString<Intent>, table: String?)](./init%28_,table%29.md)
 
 
 ---

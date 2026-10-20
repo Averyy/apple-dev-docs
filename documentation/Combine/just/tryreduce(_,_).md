@@ -1,7 +1,8 @@
 # tryReduce(_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ func tryReduce<T>(_ initialResult: T, _ nextPartialResult: (T, Output) throws ->
 
 ## See Also
 
-- [func collect() -> Just<[Output]>](just/collect.md)
-- [func ignoreOutput() -> Empty<Output, Just<Output>.Failure>](just/ignoreoutput.md)
-- [func reduce<T>(T, (T, Output) -> T) -> Result<T, Just<Output>.Failure>.Publisher](just/reduce(_:_:).md)
+### Reducing elements
+- [func collect() -> Just<[Output]>](./collect%28%29.md)
+- [func ignoreOutput() -> Empty<Output, Just<Output>.Failure>](./ignoreoutput%28%29.md)
+- [func reduce<T>(T, (T, Output) -> T) -> Result<T, Just<Output>.Failure>.Publisher](./reduce%28_,_%29.md)
 
 
 ---

@@ -1,12 +1,15 @@
 # render(toBuffer:withBytesPerRow:pixelFormat:forBounds:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders a subregion of the image into  the supplied memory buffer using the specified pixel format.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Renders a subregion of the image into  the supplied memory buffer using the spec
 optional func render(toBuffer baseAddress: UnsafeMutableRawPointer!, withBytesPerRow rowBytes: Int, pixelFormat format: String!, forBounds bounds: NSRect) -> Bool
 ```
 
+```objc
+- (BOOL) renderToBuffer:(void *) baseAddress withBytesPerRow:(NSUInteger) rowBytes pixelFormat:(NSString *) format forBounds:(NSRect) bounds;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image is rendered successfully into the buffer; [`false`](https://developer.apple.com/documentation/swift/false) on failure or if the image provider doesn’t support CPU rendering.
+[`true`](../../Swift/true.md) if the image is rendered successfully into the buffer; [`false`](../../Swift/false.md) on failure or if the image provider doesn’t support CPU rendering.
 
 #### Discussion
 
@@ -31,11 +38,12 @@ The Quartz Composer engine calls this method when it needs pixels. It gives you 
 
 ## See Also
 
-- [func copyRenderedTexture(forCGLContext: CGLContextObj!, pixelFormat: String!, bounds: NSRect, isFlipped: UnsafeMutablePointer<ObjCBool>!) -> GLuint](qcpluginoutputimageprovider/copyrenderedtexture(forcglcontext:pixelformat:bounds:isflipped:).md)
+### Rendering an Image to a Destination
+- [func copyRenderedTexture(forCGLContext: CGLContextObj!, pixelFormat: String!, bounds: NSRect, isFlipped: UnsafeMutablePointer<ObjCBool>!) -> GLuint](./copyrenderedtexture%28forcglcontext,pixelformat,bounds,isflipped%29.md)
   Returns the name of an OpenGL texture of type `GL_TEXTURE_RECTANGLE_EXT` that contains a subregion of the image in a given pixel format.
-- [func render(withCGLContext: CGLContextObj!, forBounds: NSRect) -> Bool](qcpluginoutputimageprovider/render(withcglcontext:forbounds:).md)
+- [func render(withCGLContext: CGLContextObj!, forBounds: NSRect) -> Bool](./render%28withcglcontext,forbounds%29.md)
   Renders a subregion of the image to the provided CGL context.
-- [func releaseRenderedTexture(GLuint, forCGLContext: CGLContextObj!)](qcpluginoutputimageprovider/releaserenderedtexture(_:forcglcontext:).md)
+- [func releaseRenderedTexture(GLuint, forCGLContext: CGLContextObj!)](./releaserenderedtexture%28_,forcglcontext%29.md)
   Releases the previously copied texture.
 
 

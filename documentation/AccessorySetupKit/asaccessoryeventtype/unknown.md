@@ -1,19 +1,24 @@
 # ASAccessoryEventType.unknown
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unknown event occurred.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
 ```swift
 case unknown
+```
+
+```c
+ASAccessoryEventTypeUnknown
 ```
 
 #### Discussion

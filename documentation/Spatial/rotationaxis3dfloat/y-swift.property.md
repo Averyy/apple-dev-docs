@@ -1,7 +1,8 @@
 # y
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The y-axis value.
 

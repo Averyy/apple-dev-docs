@@ -1,14 +1,15 @@
 # STACKSHOT_SAVE_LOADINFO
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_SAVE_LOADINFO
 ```
 

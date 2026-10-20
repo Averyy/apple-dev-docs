@@ -1,7 +1,8 @@
 # HIDUsage.HapticsUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,48 +16,48 @@ enum HapticsUsage
 ## Topics
 
 ### Enumeration Cases
-- [HIDUsage.HapticsUsage.autoTrigger](hidusage/hapticsusage/autotrigger.md)
-- [HIDUsage.HapticsUsage.autoTriggerAssociatedControl](hidusage/hapticsusage/autotriggerassociatedcontrol.md)
-- [HIDUsage.HapticsUsage.durationList](hidusage/hapticsusage/durationlist.md)
-- [HIDUsage.HapticsUsage.intensity](hidusage/hapticsusage/intensity.md)
-- [HIDUsage.HapticsUsage.manualTrigger](hidusage/hapticsusage/manualtrigger.md)
-- [HIDUsage.HapticsUsage.repeatCount](hidusage/hapticsusage/repeatcount.md)
-- [HIDUsage.HapticsUsage.retriggerPeriod](hidusage/hapticsusage/retriggerperiod.md)
-- [HIDUsage.HapticsUsage.simpleHapticController](hidusage/hapticsusage/simplehapticcontroller.md)
-- [HIDUsage.HapticsUsage.waveformBrushContinuous](hidusage/hapticsusage/waveformbrushcontinuous.md)
-- [HIDUsage.HapticsUsage.waveformBuzzContinuous](hidusage/hapticsusage/waveformbuzzcontinuous.md)
-- [HIDUsage.HapticsUsage.waveformChiselMarkerContinuous](hidusage/hapticsusage/waveformchiselmarkercontinuous.md)
-- [HIDUsage.HapticsUsage.waveformClick](hidusage/hapticsusage/waveformclick.md)
-- [HIDUsage.HapticsUsage.waveformCutoffTime](hidusage/hapticsusage/waveformcutofftime.md)
-- [HIDUsage.HapticsUsage.waveformEraserContinuous](hidusage/hapticsusage/waveformerasercontinuous.md)
-- [HIDUsage.HapticsUsage.waveformError](hidusage/hapticsusage/waveformerror.md)
-- [HIDUsage.HapticsUsage.waveformHover](hidusage/hapticsusage/waveformhover.md)
-- [HIDUsage.HapticsUsage.waveformInkContinuous](hidusage/hapticsusage/waveforminkcontinuous.md)
-- [HIDUsage.HapticsUsage.waveformList](hidusage/hapticsusage/waveformlist.md)
-- [HIDUsage.HapticsUsage.waveformMarkerContinuous](hidusage/hapticsusage/waveformmarkercontinuous.md)
-- [HIDUsage.HapticsUsage.waveformNone](hidusage/hapticsusage/waveformnone.md)
-- [HIDUsage.HapticsUsage.waveformPencilContinuous](hidusage/hapticsusage/waveformpencilcontinuous.md)
-- [HIDUsage.HapticsUsage.waveformPress](hidusage/hapticsusage/waveformpress.md)
-- [HIDUsage.HapticsUsage.waveformRelease](hidusage/hapticsusage/waveformrelease.md)
-- [HIDUsage.HapticsUsage.waveformRumbleContinuous](hidusage/hapticsusage/waveformrumblecontinuous.md)
-- [HIDUsage.HapticsUsage.waveformSparkleContinuous](hidusage/hapticsusage/waveformsparklecontinuous.md)
-- [HIDUsage.HapticsUsage.waveformStop](hidusage/hapticsusage/waveformstop.md)
-- [HIDUsage.HapticsUsage.waveformSuccess](hidusage/hapticsusage/waveformsuccess.md)
-- [HIDUsage.HapticsUsage.waveformVendorID](hidusage/hapticsusage/waveformvendorid.md)
-- [HIDUsage.HapticsUsage.waveformVendorPage](hidusage/hapticsusage/waveformvendorpage.md)
+- [HIDUsage.HapticsUsage.autoTrigger](./hapticsusage/autotrigger.md)
+- [HIDUsage.HapticsUsage.autoTriggerAssociatedControl](./hapticsusage/autotriggerassociatedcontrol.md)
+- [HIDUsage.HapticsUsage.durationList](./hapticsusage/durationlist.md)
+- [HIDUsage.HapticsUsage.intensity](./hapticsusage/intensity.md)
+- [HIDUsage.HapticsUsage.manualTrigger](./hapticsusage/manualtrigger.md)
+- [HIDUsage.HapticsUsage.repeatCount](./hapticsusage/repeatcount.md)
+- [HIDUsage.HapticsUsage.retriggerPeriod](./hapticsusage/retriggerperiod.md)
+- [HIDUsage.HapticsUsage.simpleHapticController](./hapticsusage/simplehapticcontroller.md)
+- [HIDUsage.HapticsUsage.waveformBrushContinuous](./hapticsusage/waveformbrushcontinuous.md)
+- [HIDUsage.HapticsUsage.waveformBuzzContinuous](./hapticsusage/waveformbuzzcontinuous.md)
+- [HIDUsage.HapticsUsage.waveformChiselMarkerContinuous](./hapticsusage/waveformchiselmarkercontinuous.md)
+- [HIDUsage.HapticsUsage.waveformClick](./hapticsusage/waveformclick.md)
+- [HIDUsage.HapticsUsage.waveformCutoffTime](./hapticsusage/waveformcutofftime.md)
+- [HIDUsage.HapticsUsage.waveformEraserContinuous](./hapticsusage/waveformerasercontinuous.md)
+- [HIDUsage.HapticsUsage.waveformError](./hapticsusage/waveformerror.md)
+- [HIDUsage.HapticsUsage.waveformHover](./hapticsusage/waveformhover.md)
+- [HIDUsage.HapticsUsage.waveformInkContinuous](./hapticsusage/waveforminkcontinuous.md)
+- [HIDUsage.HapticsUsage.waveformList](./hapticsusage/waveformlist.md)
+- [HIDUsage.HapticsUsage.waveformMarkerContinuous](./hapticsusage/waveformmarkercontinuous.md)
+- [HIDUsage.HapticsUsage.waveformNone](./hapticsusage/waveformnone.md)
+- [HIDUsage.HapticsUsage.waveformPencilContinuous](./hapticsusage/waveformpencilcontinuous.md)
+- [HIDUsage.HapticsUsage.waveformPress](./hapticsusage/waveformpress.md)
+- [HIDUsage.HapticsUsage.waveformRelease](./hapticsusage/waveformrelease.md)
+- [HIDUsage.HapticsUsage.waveformRumbleContinuous](./hapticsusage/waveformrumblecontinuous.md)
+- [HIDUsage.HapticsUsage.waveformSparkleContinuous](./hapticsusage/waveformsparklecontinuous.md)
+- [HIDUsage.HapticsUsage.waveformStop](./hapticsusage/waveformstop.md)
+- [HIDUsage.HapticsUsage.waveformSuccess](./hapticsusage/waveformsuccess.md)
+- [HIDUsage.HapticsUsage.waveformVendorID](./hapticsusage/waveformvendorid.md)
+- [HIDUsage.HapticsUsage.waveformVendorPage](./hapticsusage/waveformvendorpage.md)
 ### Type Properties
-- [static let page: UInt16](hidusage/hapticsusage/page.md)
+- [static let page: UInt16](./hapticsusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Offering Apple Music Subscription in Your App
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Allow eligible customers to subscribe to Apple Music.
 
@@ -14,7 +15,7 @@ With an Apple Music membership, customers can play songs from the entire Apple M
 
 ##### Request Apple Music Library Access
 
-The user must grant permission before your app can access Apple Music library. See [`Requesting Access to Apple Music Library`](requesting-access-to-apple-music-library.md) for details. Use [`authorizationStatus()`](skcloudservicecontroller/authorizationstatus().md) to determine your app’s authorization status. If the authorization status is [`SKCloudServiceAuthorizationStatus.authorized`](skcloudserviceauthorizationstatus/authorized.md), your app can check if the user is eligible for an Apple Music subscription offer.
+The user must grant permission before your app can access Apple Music library. See [Requesting Access to Apple Music Library](./requesting-access-to-apple-music-library.md) for details. Use [`authorizationStatus()`](./skcloudservicecontroller/authorizationstatus%28%29.md) to determine your app’s authorization status. If the authorization status is [`SKCloudServiceAuthorizationStatus.authorized`](./skcloudserviceauthorizationstatus/authorized.md), your app can check if the user is eligible for an Apple Music subscription offer.
 
 **Swift**:
 
@@ -28,11 +29,11 @@ SKCloudServiceController.authorizationStatus() == .authorized
 SKCloudServiceAuthorizationStatus status = ([SKCloudServiceController authorizationStatus] == SKCloudServiceAuthorizationStatusAuthorized); 
 ```
 
-> ❗ **Important**:  When the Music app is absent on the user’s device, [`load(options:completionHandler:)`](skcloudservicesetupviewcontroller/load(options:completionhandler:).md) fails to load.
+> ❗ **Important**:  When the Music app is absent on the user’s device, [`load(options:completionHandler:)`](./skcloudservicesetupviewcontroller/load%28options,completionhandler%29.md) fails to load.
 
-##### Determine If the User Is Eligible for an Apple Music Subscription
+##### Determine if the User is Eligible for an Apple Music Subscription
 
-After getting Apple Music access from the user, call [`requestCapabilities(completionHandler:)`](skcloudservicecontroller/requestcapabilities(completionhandler:).md) on an instance of [`SKCloudServiceController`](skcloudservicecontroller.md) to query the user’s capabilities. Then, inspect the `capabilities` parameter of this method to determine eligibility. See [`Determining a person’s Apple Music capabilities`](determining-a-person-s-apple-music-capabilities.md) for details. A user has an active subscription to Apple Music when `capabilities` contains [`musicCatalogPlayback`](skcloudservicecapability/musiccatalogplayback.md). A user is eligible for the offer when `capabilities` doesn’t include [`musicCatalogPlayback`](skcloudservicecapability/musiccatalogplayback.md) but contains [`musicCatalogSubscriptionEligible`](skcloudservicecapability/musiccatalogsubscriptioneligible.md).
+After getting Apple Music access from the user, call [`requestCapabilities(completionHandler:)`](./skcloudservicecontroller/requestcapabilities%28completionhandler%29.md) on an instance of [`SKCloudServiceController`](./skcloudservicecontroller.md) to query the user’s capabilities. Then, inspect the `capabilities` parameter of this method to determine eligibility. See [Determining a person’s Apple Music capabilities](./determining-a-person-s-apple-music-capabilities.md) for details. A user has an active subscription to Apple Music when `capabilities` contains [`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md). A user is eligible for the offer when `capabilities` doesn’t include [`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md) but contains [`musicCatalogSubscriptionEligible`](./skcloudservicecapability/musiccatalogsubscriptioneligible.md).
 
 **Swift**:
 
@@ -65,7 +66,7 @@ SKCloudServiceController *controller = [[SKCloudServiceController alloc] init];
 
 For users who are eligible for an Apple Music subscription, use the following steps to allow users to sign up for it.
 
-First, create a dictionary with an [`action`](skcloudservicesetupoptionskey/action.md) key to [`subscribe`](skcloudservicesetupaction/subscribe.md):
+First, create a dictionary with an [`action`](./skcloudservicesetupoptionskey/action.md) key to [`subscribe`](./skcloudservicesetupaction/subscribe.md):
 
 **Swift**:
 
@@ -79,7 +80,7 @@ let options: [SKCloudServiceSetupOptionsKey: Any] = [.action: SKCloudServiceSetu
 NSDictionary<SKCloudServiceSetupOptionsKey, id> *options = @{SKCloudServiceSetupOptionsActionKey: SKCloudServiceSetupActionSubscribe};
 ```
 
-If you have an [`iTunes Store affiliate account`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/itcfa7936330), you can add the [`affiliateToken`](skcloudservicesetupoptionskey/affiliatetoken.md) key to the dictionary to earn commision if the user subscribes:
+If you have an [iTunes Store affiliate account](https://help.apple.com/app-store-connect/#/itcfa7936330), you can add the [`affiliateToken`](./skcloudservicesetupoptionskey/affiliatetoken.md) key to the dictionary to earn commision if the user subscribes:
 
 **Swift**:
 
@@ -95,7 +96,7 @@ NSString *affiliateToken = @"Your_Affiliate_Token";
 NSDictionary<SKCloudServiceSetupOptionsKey, id> *options = @{SKCloudServiceSetupOptionsActionKey: SKCloudServiceSetupActionSubscribe, SKCloudServiceSetupOptionsAffiliateTokenKey: affiliateToken};
 ```
 
-By default, the setup view is configured with the [`messageIdentifier`](skcloudservicesetupoptionskey/messageidentifier.md) key set to [`join`](skcloudservicesetupmessageidentifier/join.md). Add [`messageIdentifier`](skcloudservicesetupoptionskey/messageidentifier.md) to the dictionary and set it to [`addMusic`](skcloudservicesetupmessageidentifier/addmusic.md), [`connect`](skcloudservicesetupmessageidentifier/connect.md), or [`playMusic`](skcloudservicesetupmessageidentifier/playmusic.md) if you wish to change the default message that your app shows to the user:
+By default, the setup view is configured with the [`messageIdentifier`](./skcloudservicesetupoptionskey/messageidentifier.md) key set to [`join`](./skcloudservicesetupmessageidentifier/join.md). Add [`messageIdentifier`](./skcloudservicesetupoptionskey/messageidentifier.md) to the dictionary and set it to [`addMusic`](./skcloudservicesetupmessageidentifier/addmusic.md), [`connect`](./skcloudservicesetupmessageidentifier/connect.md), or [`playMusic`](./skcloudservicesetupmessageidentifier/playmusic.md) if you wish to change the default message that your app shows to the user:
 
 **Swift**:
 
@@ -109,7 +110,7 @@ let options: [SKCloudServiceSetupOptionsKey: Any] = [.action: SKCloudServiceSetu
 NSDictionary<SKCloudServiceSetupOptionsKey, id> *options = @{SKCloudServiceSetupOptionsActionKey: SKCloudServiceSetupActionSubscribe, SKCloudServiceSetupOptionsMessageIdentifierKey: SKCloudServiceSetupMessageIdentifierAddMusic};
 ```
 
-Next, create an [`SKCloudServiceSetupViewController`](skcloudservicesetupviewcontroller.md) object and set the view controller class as its delegate:
+Next, create an [`SKCloudServiceSetupViewController`](./skcloudservicesetupviewcontroller.md) object and set the view controller class as its delegate:
 
 **Swift**:
 
@@ -125,7 +126,7 @@ SKCloudServiceSetupViewController *controller = [[SKCloudServiceSetupViewControl
 controller.delegate = self;
 ```
 
-Then, pass the dictionary to the [`load(options:completionHandler:)`](skcloudservicesetupviewcontroller/load(options:completionhandler:).md) method of the [`SKCloudServiceSetupViewController`](skcloudservicesetupviewcontroller.md) object. Finally, present the [`SKCloudServiceSetupViewController`](skcloudservicesetupviewcontroller.md) object modally from your app:
+Then, pass the dictionary to the [`load(options:completionHandler:)`](./skcloudservicesetupviewcontroller/load%28options,completionhandler%29.md) method of the [`SKCloudServiceSetupViewController`](./skcloudservicesetupviewcontroller.md) object. Finally, present the [`SKCloudServiceSetupViewController`](./skcloudservicesetupviewcontroller.md) object modally from your app:
 
 **Swift**:
 
@@ -153,11 +154,12 @@ controller.load(options: options) { [weak self] (result: Bool, error: Error?) in
 
 ## See Also
 
-- [struct SKCloudServiceSetupOptionsKey](skcloudservicesetupoptionskey.md)
+### Loading the setup view
+- [struct SKCloudServiceSetupOptionsKey](./skcloudservicesetupoptionskey.md)
   Keys to specify the types of setup options for a cloud service.
-- [func load(options: [SKCloudServiceSetupOptionsKey : Any], completionHandler: ((Bool, (any Error)?) -> Void)?)](skcloudservicesetupviewcontroller/load(options:completionhandler:).md)
+- [func load(options: [SKCloudServiceSetupOptionsKey : Any], completionHandler: ((Bool, (any Error)?) -> Void)?)](./skcloudservicesetupviewcontroller/load%28options,completionhandler%29.md)
   Loads the cloud service setup view with the specified options.
-- [class SKArcadeService](skarcadeservice.md)
+- [class SKArcadeService](./skarcadeservice.md)
 
 
 ---

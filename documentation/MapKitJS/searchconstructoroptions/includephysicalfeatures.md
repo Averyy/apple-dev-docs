@@ -1,7 +1,8 @@
 # includePhysicalFeatures
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that indicates whether the search results include physical features, such as mountain ranges, rivers, and ocean basins.
 
@@ -10,17 +11,18 @@ A Boolean value that indicates whether the search results include physical featu
 
 ## Declaration
 
-```swift
+```
 includePhysicalFeatures?: boolean;
 ```
 
 ## See Also
 
-- [includeQueries](searchconstructoroptions/includequeries.md)
+### Search filtering
+- [includeQueries](./includequeries.md)
   A Boolean value that indicates whether the search results include queries.
-- [limitToCountries](searchconstructoroptions/limittocountries.md)
+- [limitToCountries](./limittocountries.md)
   A string that constrains search results to within the provided countries.
-- [regionPriority](searchconstructoroptions/regionpriority.md)
+- [regionPriority](./regionpriority.md)
   A region priority value that controls whether results occur outside, or strictly within, the region.
 
 

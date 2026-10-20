@@ -1,7 +1,8 @@
 # uext_object_t
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias uext_object_t = io_object_t
+```
+
+```c
+typedef io_object_t uext_object_t;
 ```
 
 

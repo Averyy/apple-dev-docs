@@ -1,21 +1,22 @@
 # GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterAchievement
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterAchievement
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterAchievement.Data](gamecenterachievementreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievement-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterAchievement.Data](./gamecenterachievement-data.dictionary/data-data.dictionary.md)
   The request body you use to create a Game Center achievement release.
 
 ## Properties
@@ -24,7 +25,8 @@ object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterAc
 
 ## See Also
 
-- [object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterDetail](gamecenterachievementreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterDetail](./gamecenterdetail-data.dictionary.md)
 
 
 ---

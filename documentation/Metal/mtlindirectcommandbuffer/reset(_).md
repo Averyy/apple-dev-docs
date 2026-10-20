@@ -1,7 +1,8 @@
 # reset(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets a range of commands to their default state.
 
@@ -11,7 +12,7 @@ Resets a range of commands to their default state.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

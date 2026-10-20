@@ -1,7 +1,8 @@
 # plate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A plate glass background effect.
 
@@ -13,6 +14,8 @@ A plate glass background effect.
 ```swift
 static var plate: PlateGlassBackgroundEffect { get }
 ```
+
+Available when `Self` is `PlateGlassBackgroundEffect`.
 
 
 ---

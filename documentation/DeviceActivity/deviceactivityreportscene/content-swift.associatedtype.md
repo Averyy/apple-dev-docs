@@ -2,6 +2,7 @@
 
 **Framework**: Device Activity  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of view that represents the scene’s content.

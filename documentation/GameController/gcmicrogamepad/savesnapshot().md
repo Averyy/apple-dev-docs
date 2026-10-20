@@ -1,22 +1,29 @@
 # saveSnapshot()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves a snapshot of all of the profile’s elements.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 13.0
+- iPadOS 9.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.11+ - Deprecated in 10.15
+- tvOS 9.0+ - Deprecated in 13.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`capture()`](../gccontroller/capture%28%29.md) instead.
 
 ## Declaration
 
 ```swift
 func saveSnapshot() -> GCMicroGamepadSnapshot
+```
+
+```objc
+- (GCMicroGamepadSnapshot *) saveSnapshot;
 ```
 
 #### Return Value
@@ -25,7 +32,8 @@ A snapshot that is a copy of the controller at a moment in time, and has element
 
 ## See Also
 
-- [func setStateFrom(GCMicroGamepad)](gcmicrogamepad/setstatefrom(_:).md)
+### Setting snapshot avlues
+- [func setStateFrom(GCMicroGamepad)](./setstatefrom%28_%29.md)
   Copies the input values from a specified micro gamepad to a snapshot of a micro gamepad.
 
 

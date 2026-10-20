@@ -1,7 +1,8 @@
 # isSnapped
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents whether the scene is currently snapped to a physical surface or not.
 

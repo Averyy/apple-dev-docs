@@ -1,7 +1,8 @@
 # contentIdentifier
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom string your app uses to identify the app intent.
 
@@ -17,6 +18,8 @@ A custom string your app uses to identify the app intent.
 ```swift
 var contentIdentifier: String { get }
 ```
+
+Available when `Self` conforms to `OpenIntent`.
 
 #### Discussion
 

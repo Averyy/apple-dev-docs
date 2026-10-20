@@ -1,7 +1,8 @@
 # Manipulable.InputDevice.Kind.indirectPinch
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indirectly targeted pinching hand.
 

@@ -1,7 +1,8 @@
 # FadeCommand
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A command type for color fading during immersive media playback.
 
@@ -27,49 +28,50 @@ Fade commands can be absolute time based or offset based. If fade commands are a
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](fadecommand/init(from:).md)
-- [init(id: Int, time: CMTime, duration: CMTime, direction: FadeCommand.FadeDirection, color: simd_float3, offset: CMTime?)](fadecommand/init(id:time:duration:direction:color:offset:).md)
+- [init(from: any Decoder) throws](./fadecommand/init%28from%29.md)
+- [init(id: Int, time: CMTime, duration: CMTime, direction: FadeCommand.FadeDirection, color: simd_float3, offset: CMTime?)](./fadecommand/init%28id,time,duration,direction,color,offset%29.md)
   Initializes a color fade command.
 ### Instance Properties
-- [var color: simd_float3](fadecommand/color.md)
+- [var color: simd_float3](./fadecommand/color.md)
   The fade color value ranging from `0.0` to `1.0` for each color channel representing RGB color space. If the color is set to black, and the direction is `in`, then it fades from black to the video frame.
-- [var direction: FadeCommand.FadeDirection](fadecommand/direction.md)
+- [var direction: FadeCommand.FadeDirection](./fadecommand/direction.md)
   Fade direction for this command instance.
-- [var duration: CMTime](fadecommand/duration.md)
+- [var duration: CMTime](./fadecommand/duration.md)
   The duration of the command.
-- [var id: Int](fadecommand/id.md)
+- [var id: Int](./fadecommand/id.md)
   A unique command ID for the entire immersive media file.
-- [var offset: CMTime?](fadecommand/offset.md)
+- [var offset: CMTime?](./fadecommand/offset.md)
   The offset from the start time of this command.
-- [var time: CMTime](fadecommand/time.md)
+- [var time: CMTime](./fadecommand/time.md)
   The time this command starts during playback.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](fadecommand/encode(to:).md)
+- [func encode(to: any Encoder) throws](./fadecommand/encode%28to%29.md)
 ### Enumerations
-- [FadeCommand.FadeDirection](fadecommand/fadedirection.md)
+- [FadeCommand.FadeDirection](./fadecommand/fadedirection.md)
   A value that represents the direction of the fade command.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PresentationCommand](presentationcommand.md)
+### Presentation commands
+- [enum PresentationCommand](./presentationcommand.md)
   A set of properties that define the interface for a presentation command.
-- [struct FadeEnvironmentCommand](fadeenvironmentcommand.md)
+- [struct FadeEnvironmentCommand](./fadeenvironmentcommand.md)
   A command type for opacity fading environment backdrops during immersive media playback.
-- [struct SetCameraCommand](setcameracommand.md)
+- [struct SetCameraCommand](./setcameracommand.md)
   A command type for immersive camera switching during playback.
-- [struct ShotFlopCommand](shotflopcommand.md)
+- [struct ShotFlopCommand](./shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
-- [struct ShotFlipCommand](shotflipcommand.md)
+- [struct ShotFlipCommand](./shotflipcommand.md)
   A command type to flip the video frames vertically during playback for the duration of the command.
-- [struct PresentationDescriptor](presentationdescriptor.md)
+- [struct PresentationDescriptor](./presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
-- [class PresentationDescriptorReader](presentationdescriptorreader.md)
+- [class PresentationDescriptorReader](./presentationdescriptorreader.md)
   An object that provides the functionality required to understand and process immersive presentation commands.
 
 

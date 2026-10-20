@@ -1,7 +1,8 @@
 # activationState
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The activation state of the pass.
 
@@ -11,17 +12,18 @@ The activation state of the pass.
 
 ## Declaration
 
-```swift
+```
 required ApplePayPaymentPassActivationState activationState;
 ```
 
 #### Discussion
 
-The activation state is of type [`ApplePayPaymentPassActivationState`](applepaypaymentpassactivationstate.md).
+The activation state is of type [`ApplePayPaymentPassActivationState`](../applepaypaymentpassactivationstate.md).
 
 ## See Also
 
-- [ApplePayPaymentPassActivationState](applepaypaymentpassactivationstate.md)
+### Activation State
+- [ApplePayPaymentPassActivationState](../applepaypaymentpassactivationstate.md)
   Payment pass activation states.
 
 

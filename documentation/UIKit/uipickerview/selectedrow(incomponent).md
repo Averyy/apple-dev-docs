@@ -1,7 +1,8 @@
 # selectedRow(inComponent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the selected row in a given component.
 
@@ -17,6 +18,10 @@ Returns the index of the selected row in a given component.
 func selectedRow(inComponent component: Int) -> Int
 ```
 
+```objc
+- (NSInteger) selectedRowInComponent:(NSInteger) component;
+```
+
 #### Return Value
 
 A zero-indexed number identifying the selected row, or `-1` if no row is selected.
@@ -27,7 +32,8 @@ A zero-indexed number identifying the selected row, or `-1` if no row is selecte
 
 ## See Also
 
-- [func selectRow(Int, inComponent: Int, animated: Bool)](uipickerview/selectrow(_:incomponent:animated:).md)
+### Selecting rows in the view picker
+- [func selectRow(Int, inComponent: Int, animated: Bool)](./selectrow%28_,incomponent,animated%29.md)
   Selects a row in a specified component of the picker view.
 
 

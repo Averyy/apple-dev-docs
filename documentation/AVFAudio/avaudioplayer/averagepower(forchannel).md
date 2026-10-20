@@ -1,7 +1,8 @@
 # averagePower(forChannel:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the average power, in decibels full-scale (dBFS), for an audio channel.
 
@@ -20,13 +21,17 @@ Returns the average power, in decibels full-scale (dBFS), for an audio channel.
 func averagePower(forChannel channelNumber: Int) -> Float
 ```
 
+```objc
+- (float) averagePowerForChannel:(NSUInteger) channelNumber;
+```
+
 #### Return Value
 
 A floating-point value, in dBFS, that indicates the audio channel’s current average power.
 
 #### Discussion
 
-Before asking the player for its average power value, you must call [`updateMeters()`](avaudioplayer/updatemeters().md) to generate the latest data. The returned value ranges from `–160` dBFS, indicating minimum power, to 0 dBFS, indicating maximum power.
+Before asking the player for its average power value, you must call [`updateMeters()`](./updatemeters%28%29.md) to generate the latest data. The returned value ranges from `–160` dBFS, indicating minimum power, to 0 dBFS, indicating maximum power.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ Before asking the player for its average power value, you must call [`updateMete
 
 ## See Also
 
-- [var isMeteringEnabled: Bool](avaudioplayer/ismeteringenabled.md)
+### Managing audio-level metering
+- [var isMeteringEnabled: Bool](./ismeteringenabled.md)
   A Boolean value that indicates whether the player is able to generate audio-level metering data.
-- [func updateMeters()](avaudioplayer/updatemeters.md)
+- [func updateMeters()](./updatemeters%28%29.md)
   Refreshes the average and peak power values for all channels of an audio player.
-- [func peakPower(forChannel: Int) -> Float](avaudioplayer/peakpower(forchannel:).md)
+- [func peakPower(forChannel: Int) -> Float](./peakpower%28forchannel%29.md)
   Returns the peak power, in decibels full-scale (dBFS), for an audio channel.
 
 

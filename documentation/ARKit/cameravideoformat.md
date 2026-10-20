@@ -1,7 +1,8 @@
 # CameraVideoFormat
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a camera video format.
 
@@ -17,46 +18,47 @@ struct CameraVideoFormat
 ## Topics
 
 ### Getting camera video format information
-- [var cameraPositions: [CameraFrameProvider.CameraPosition]](cameravideoformat/camerapositions.md)
+- [var cameraPositions: [CameraFrameProvider.CameraPosition]](./cameravideoformat/camerapositions.md)
   The camera positions for this video format.
-- [var cameraType: CameraFrameProvider.CameraType](cameravideoformat/cameratype.md)
+- [var cameraType: CameraFrameProvider.CameraType](./cameravideoformat/cameratype.md)
   The camera type for this video format.
-- [var frameSize: CGSize](cameravideoformat/framesize.md)
+- [var frameSize: CGSize](./cameravideoformat/framesize.md)
   The frame size for this video format.
-- [var pixelFormat: OSType](cameravideoformat/pixelformat.md)
+- [var pixelFormat: OSType](./cameravideoformat/pixelformat.md)
   The pixel format for this video format.
-- [var maxFrameDuration: Float](cameravideoformat/maxframeduration.md)
+- [var maxFrameDuration: Float](./cameravideoformat/maxframeduration.md)
   The maximum frame duration for this video format, in seconds.
-- [var minFrameDuration: Float](cameravideoformat/minframeduration.md)
+- [var minFrameDuration: Float](./cameravideoformat/minframeduration.md)
   The minimum frame duration for this video format, in seconds.
-- [static func supportedVideoFormats(for: CameraFrameProvider.CameraType, cameraPositions: [CameraFrameProvider.CameraPosition]) -> [CameraVideoFormat]](cameravideoformat/supportedvideoformats(for:camerapositions:).md)
+- [static func supportedVideoFormats(for: CameraFrameProvider.CameraType, cameraPositions: [CameraFrameProvider.CameraPosition]) -> [CameraVideoFormat]](./cameravideoformat/supportedvideoformats%28for,camerapositions%29.md)
   Returns the video formats the provided camera type and camera position supports.
-- [var description: String](cameravideoformat/description.md)
+- [var description: String](./cameravideoformat/description.md)
   A textual representation of this camera video format.
 ### Operators
-- [static func == (CameraVideoFormat, CameraVideoFormat) -> Bool](cameravideoformat/==(_:_:).md)
+- [static func == (CameraVideoFormat, CameraVideoFormat) -> Bool](./cameravideoformat/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two camera video formats are equal.
 ### Instance Properties
-- [var cameraRectification: CameraFrameProvider.CameraRectification](cameravideoformat/camerarectification.md)
+- [var cameraRectification: CameraFrameProvider.CameraRectification](./cameravideoformat/camerarectification.md)
   The camera rectification for this video format.
 ### Instance Methods
-- [func hash(into: inout Hasher)](cameravideoformat/hash(into:).md)
+- [func hash(into: inout Hasher)](./cameravideoformat/hash%28into%29.md)
   Hashes the essential components of this camera video format.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CameraFrameProvider](cameraframeprovider.md)
+### Camera sampling
+- [class CameraFrameProvider](./cameraframeprovider.md)
   An object that provides camera streams.
-- [struct CameraFrame](cameraframe.md)
+- [struct CameraFrame](./cameraframe.md)
   The representation of a camera frame.
 
 

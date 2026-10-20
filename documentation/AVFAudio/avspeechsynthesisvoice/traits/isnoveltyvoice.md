@@ -1,7 +1,8 @@
 # isNoveltyVoice
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The trait that indicates a voice is a novelty voice.
 
@@ -20,13 +21,18 @@ The trait that indicates a voice is a novelty voice.
 static var isNoveltyVoice: AVSpeechSynthesisVoice.Traits { get }
 ```
 
+```c
+AVSpeechSynthesisVoiceTraitIsNoveltyVoice
+```
+
 #### Discussion
 
 An example of a novelty voice is a character’s voice in a game.
 
 ## See Also
 
-- [static var isPersonalVoice: AVSpeechSynthesisVoice.Traits](avspeechsynthesisvoice/traits/ispersonalvoice.md)
+### Inspecting a voice trait
+- [static var isPersonalVoice: AVSpeechSynthesisVoice.Traits](./ispersonalvoice.md)
   The trait that indicates a voice is a personal voice.
 
 

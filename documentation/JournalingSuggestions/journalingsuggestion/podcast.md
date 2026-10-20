@@ -1,7 +1,8 @@
 # JournalingSuggestion.Podcast
 
 **Framework**: Journaling Suggestions  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A suggestion that describes a podcast episode a person listened to.
 
@@ -16,59 +17,60 @@ struct Podcast
 
 ## Mentions
 
-- [Presenting the suggestions picker and processing a selection](presenting-the-suggestions-picker-and-processing-a-selection.md)
+- [Presenting the suggestions picker and processing a selection](../presenting-the-suggestions-picker-and-processing-a-selection.md)
 
 #### Overview
 
-The system provides an instance of this structure to your app when a person chooses a podcast suggestion in the [`JournalingSuggestionsPicker`](journalingsuggestionspicker.md).
+The system provides an instance of this structure to your app when a person chooses a podcast suggestion in the [`JournalingSuggestionsPicker`](../journalingsuggestionspicker.md).
 
 ## Topics
 
 ### Identifying the podcast
-- [var show: String?](journalingsuggestion/podcast/show.md)
+- [var show: String?](./podcast/show.md)
   The podcast’s show name.
-- [var episode: String?](journalingsuggestion/podcast/episode.md)
+- [var episode: String?](./podcast/episode.md)
   The podcast episode’s name.
-- [var artwork: URL?](journalingsuggestion/podcast/artwork.md)
+- [var artwork: URL?](./podcast/artwork.md)
   The URL to an image on disk for the podcast artwork.
 ### Inspecting interaction details
-- [var date: Date?](journalingsuggestion/podcast/date.md)
+- [var date: Date?](./podcast/date.md)
   The podcast’s recent play date.
 
 ## Relationships
 
 ### Conforms To
-- [JournalingSuggestionAsset](journalingsuggestionasset.md)
+- [JournalingSuggestionAsset](../journalingsuggestionasset.md)
 
 ## See Also
 
-- [JournalingSuggestion.Contact](journalingsuggestion/contact.md)
+### Interacting with suggestion types
+- [JournalingSuggestion.Contact](./contact.md)
   A suggestion for a connection a person makes with someone else.
-- [JournalingSuggestion.EventPoster](journalingsuggestion/eventposter.md)
+- [JournalingSuggestion.EventPoster](./eventposter.md)
   A suggestion for a poster image of an event.
-- [JournalingSuggestion.GenericMedia](journalingsuggestion/genericmedia.md)
+- [JournalingSuggestion.GenericMedia](./genericmedia.md)
   A suggestion describing now playable media that a person listened to.
-- [JournalingSuggestion.LivePhoto](journalingsuggestion/livephoto.md)
+- [JournalingSuggestion.LivePhoto](./livephoto.md)
   A suggestion for a Live Photo from a person’s library.
-- [JournalingSuggestion.Location](journalingsuggestion/location.md)
+- [JournalingSuggestion.Location](./location.md)
   A suggestion that represents a location that a person visits.
-- [JournalingSuggestion.LocationGroup](journalingsuggestion/locationgroup.md)
+- [JournalingSuggestion.LocationGroup](./locationgroup.md)
   A suggestion that contains multiple visited locations that a person chooses in the picker.
-- [JournalingSuggestion.MotionActivity](journalingsuggestion/motionactivity.md)
+- [JournalingSuggestion.MotionActivity](./motionactivity.md)
   A suggestion that describes motion activity, including the number of steps a person takes.
-- [JournalingSuggestion.Photo](journalingsuggestion/photo.md)
+- [JournalingSuggestion.Photo](./photo.md)
   A suggestion for a photo from a person’s library.
-- [JournalingSuggestion.Reflection](journalingsuggestion/reflection.md)
+- [JournalingSuggestion.Reflection](./reflection.md)
   A suggestion for a reflection prompt.
-- [JournalingSuggestion.StateOfMind](journalingsuggestion/stateofmind.md)
+- [JournalingSuggestion.StateOfMind](./stateofmind.md)
   A suggestion that describes a state of mind reflection in the Health app.
-- [JournalingSuggestion.Song](journalingsuggestion/song.md)
+- [JournalingSuggestion.Song](./song.md)
   A suggestion for a song from a person’s music library.
-- [JournalingSuggestion.Video](journalingsuggestion/video.md)
+- [JournalingSuggestion.Video](./video.md)
   A suggestion for a video from a person’s library.
-- [JournalingSuggestion.Workout](journalingsuggestion/workout.md)
+- [JournalingSuggestion.Workout](./workout.md)
   A suggestion that describes a workout that a person completed.
-- [JournalingSuggestion.WorkoutGroup](journalingsuggestion/workoutgroup.md)
+- [JournalingSuggestion.WorkoutGroup](./workoutgroup.md)
   A suggestion that contains multiple workouts that a person chooses in the picker.
 
 

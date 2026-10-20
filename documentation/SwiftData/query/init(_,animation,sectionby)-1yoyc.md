@@ -1,7 +1,8 @@
 # init(_:animation:sectionBy:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sectioned query from a fetch descriptor, grouped into sections by a required String key path.
 
@@ -20,6 +21,8 @@ Creates a sectioned query from a fetch descriptor, grouped into sections by a re
 @MainActor
 @preconcurrency init(_ descriptor: FetchDescriptor<Element>, animation: Animation, sectionBy sectionKeyPath: KeyPath<Element, String>) where Result == SectionedResults<Element, String>
 ```
+
+Available when `Element` conforms to `PersistentModel`.
 
 
 ---

@@ -1,7 +1,8 @@
 # withNetworkConnection(to:using:_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+

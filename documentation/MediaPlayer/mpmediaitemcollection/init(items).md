@@ -1,7 +1,8 @@
 # init(items:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a media item collection with an array of media items.
 
@@ -15,6 +16,10 @@ Initializes a media item collection with an array of media items.
 
 ```swift
 init(items: [MPMediaItem])
+```
+
+```objc
+- (instancetype) initWithItems:(NSArray<MPMediaItem *> *) items;
 ```
 
 #### Return Value

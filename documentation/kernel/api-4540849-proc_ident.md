@@ -1,14 +1,15 @@
 # proc_ident
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 struct proc_ident proc_ident(proc_t p);
 ```
 

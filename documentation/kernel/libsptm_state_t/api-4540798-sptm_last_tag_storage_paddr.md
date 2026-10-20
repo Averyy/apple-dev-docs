@@ -1,14 +1,15 @@
 # sptm_last_tag_storage_paddr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 sptm_paddr_t sptm_last_tag_storage_paddr;
 ```
 

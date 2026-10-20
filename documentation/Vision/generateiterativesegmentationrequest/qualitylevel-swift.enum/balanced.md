@@ -1,7 +1,8 @@
 # GenerateIterativeSegmentationRequest.QualityLevel.balanced
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Produces a medium-resolution mask that balances speed and accuracy. This is the default setting.
 
@@ -21,13 +22,14 @@ case balanced
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../../segmenting-objects-with-iterative-refinement.md)
 
 ## See Also
 
-- [GenerateIterativeSegmentationRequest.QualityLevel.accurate](generateiterativesegmentationrequest/qualitylevel-swift.enum/accurate.md)
+### Quality cases
+- [GenerateIterativeSegmentationRequest.QualityLevel.accurate](./accurate.md)
   Produces a high-resolution mask.
-- [GenerateIterativeSegmentationRequest.QualityLevel.fast](generateiterativesegmentationrequest/qualitylevel-swift.enum/fast.md)
+- [GenerateIterativeSegmentationRequest.QualityLevel.fast](./fast.md)
   Produces a low-resolution mask, but runs very quickly.
 
 

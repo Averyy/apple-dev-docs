@@ -1,7 +1,8 @@
 # vImageConvert_RGB16UToARGB8888(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts an unsigned 16-bit-per-channel, 3-channel interleaved buffer to an 8-bit-per-channel, 4-channel interleaved buffer using permutation.
 
@@ -20,9 +21,13 @@ Converts an unsigned 16-bit-per-channel, 3-channel interleaved buffer to an 8-bi
 func vImageConvert_RGB16UToARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ permuteMap: UnsafePointer<UInt8>, _ copyMask: UInt8, _ backgroundColor: UnsafePointer<UInt8>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_RGB16UToARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, const uint8_t permuteMap[4], uint8_t copyMask, const Pixel_8888 backgroundColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -31,19 +36,20 @@ This function doesn’t work in place.
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `permuteMap`: An array of four 8-bit integers with the values `0`, `1`, `2`, and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
 - `copyMask`: A bitmask that specifies the channel from the background color that the function copies to the destination channel at the corresponding index. The `1000` bit corresponds to the alpha channel, the `0100` bit corresponds to the red channel, the `0010` corresponds to the green channel, and the `0001` bit corresponds to the blue channel.
 - `backgroundColor`: A 16-bit-per-channel, 4-channel pixel value that replaces the destination pixels based on the copy mask.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageConvert_RGB16UtoARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>!, Pixel_16U, UnsafePointer<vImage_Buffer>, Bool, vImage_Flags) -> vImage_Error](vimageconvert_rgb16utoargb16u(_:_:_:_:_:_:).md)
+### Conversion from unsigned 16-bit-per-channel, 3-channel interleaved buffers
+- [func vImageConvert_RGB16UtoARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>!, Pixel_16U, UnsafePointer<vImage_Buffer>, Bool, vImage_Flags) -> vImage_Error](./vimageconvert_rgb16utoargb16u%28_,_,_,_,_,_%29.md)
   Combines an unsigned 16-bit-per-channel, 3-channel RGB buffer and either an unsigned 16-bit alpha buffer or constant alpha value to produce an ARGB result.
-- [func vImageConvert_RGB16UtoBGRA16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>!, Pixel_16U, UnsafePointer<vImage_Buffer>, Bool, vImage_Flags) -> vImage_Error](vimageconvert_rgb16utobgra16u(_:_:_:_:_:_:).md)
+- [func vImageConvert_RGB16UtoBGRA16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>!, Pixel_16U, UnsafePointer<vImage_Buffer>, Bool, vImage_Flags) -> vImage_Error](./vimageconvert_rgb16utobgra16u%28_,_,_,_,_,_%29.md)
   Combines an unsigned 16-bit-per-channel, 3-channel RGB buffer and either an unsigned 16-bit alpha buffer or constant alpha value to produce a BGRA result.
-- [func vImageConvert_RGB16UtoRGBA16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>!, Pixel_16U, UnsafePointer<vImage_Buffer>, Bool, vImage_Flags) -> vImage_Error](vimageconvert_rgb16utorgba16u(_:_:_:_:_:_:).md)
+- [func vImageConvert_RGB16UtoRGBA16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>!, Pixel_16U, UnsafePointer<vImage_Buffer>, Bool, vImage_Flags) -> vImage_Error](./vimageconvert_rgb16utorgba16u%28_,_,_,_,_,_%29.md)
   Combines an unsigned 16-bit-per-channel, 3-channel RGB buffer and either an unsigned 16-bit alpha buffer or constant alpha value to produce an RGBA result.
 
 

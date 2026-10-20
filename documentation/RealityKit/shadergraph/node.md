@@ -1,7 +1,8 @@
 # ShaderGraph.Node
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -18,19 +19,19 @@ struct Node
 ## Topics
 
 ### Initializers
-- [init(name: String, data: ShaderGraph.Node.NodeData)](shadergraph/node/init(name:data:).md)
+- [init(name: String, data: ShaderGraph.Node.NodeData)](./node/init%28name,data%29.md)
 ### Instance Properties
-- [var data: ShaderGraph.Node.NodeData](shadergraph/node/data.md)
+- [var data: ShaderGraph.Node.NodeData](./node/data.md)
   The content of this node.
-- [var name: String](shadergraph/node/name.md)
+- [var name: String](./node/name.md)
   The unique name of this node instance.
 ### Enumerations
-- [ShaderGraph.Node.NodeData](shadergraph/node/nodedata.md)
+- [ShaderGraph.Node.NodeData](./node/nodedata.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

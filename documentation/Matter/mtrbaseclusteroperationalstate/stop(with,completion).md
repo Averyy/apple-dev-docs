@@ -1,7 +1,8 @@
 # stop(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stop(with params: MTROperationalStateClusterStopParams?, completion: @escaping @Sendable (MTROperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func stop(with params: MTROperationalStateClusterStopParams?) async throws -> MTROperationalStateClusterOperationalCommandResponseParams
+```
+
+```objc
+- (void) stopWithParams:(MTROperationalStateClusterStopParams *) params completion:(void (^)(MTROperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
 

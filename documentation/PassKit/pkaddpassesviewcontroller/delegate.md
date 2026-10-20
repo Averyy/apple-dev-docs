@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller’s delegate.
 
@@ -17,13 +18,18 @@ The view controller’s delegate.
 weak var delegate: (any PKAddPassesViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PKAddPassesViewControllerDelegate> delegate;
+```
+
 #### Discussion
 
-For information about the protocol that the delegate must implement, see [`PKAddPassesViewControllerDelegate`](pkaddpassesviewcontrollerdelegate.md).
+For information about the protocol that the delegate must implement, see [`PKAddPassesViewControllerDelegate`](../pkaddpassesviewcontrollerdelegate.md).
 
 ## See Also
 
-- [protocol PKAddPassesViewControllerDelegate](pkaddpassesviewcontrollerdelegate.md)
+### Adding passes
+- [protocol PKAddPassesViewControllerDelegate](../pkaddpassesviewcontrollerdelegate.md)
   Methods that an add-passes view controller’s delegate implements.
 
 

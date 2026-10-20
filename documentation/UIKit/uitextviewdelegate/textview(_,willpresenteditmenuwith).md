@@ -1,7 +1,8 @@
 # textView(_:willPresentEditMenuWith:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 optional func textView(_ textView: UITextView, willPresentEditMenuWith animator: any UIEditMenuInteractionAnimating)
 ```
 
+```objc
+- (void) textView:(UITextView *) textView willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>) animator;
+```
+
 #### Discussion
 
 Called when the text view is about to present the edit menu.
@@ -26,7 +31,8 @@ Called when the text view is about to present the edit menu.
 
 ## See Also
 
-- [func textView(UITextView, willDismissEditMenuWith: any UIEditMenuInteractionAnimating)](uitextviewdelegate/textview(_:willdismisseditmenuwith:).md)
+### Customizing an edit menu
+- [func textView(UITextView, willDismissEditMenuWith: any UIEditMenuInteractionAnimating)](./textview%28_,willdismisseditmenuwith%29.md)
 
 
 ---

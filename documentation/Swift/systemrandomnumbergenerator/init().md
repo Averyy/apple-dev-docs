@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance of the system’s default random number generator.
 

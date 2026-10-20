@@ -1,7 +1,8 @@
 # propertyList
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,8 @@
 ```swift
 static var propertyList: NetworkPropertyListCoder { get }
 ```
+
+Available when `Self` is `NetworkPropertyListCoder`.
 
 
 ---

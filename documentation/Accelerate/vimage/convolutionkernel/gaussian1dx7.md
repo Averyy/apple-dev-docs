@@ -1,7 +1,8 @@
 # gaussian1Dx7
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A seven-element Gaussian convolution kernel.
 
@@ -11,7 +12,7 @@ A seven-element Gaussian convolution kernel.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ static let gaussian1Dx7: [Float]
 
 ## See Also
 
-- [static let gaussian1Dx3: [Float]](vimage/convolutionkernel/gaussian1dx3.md)
+### Constants
+- [static let gaussian1Dx3: [Float]](./gaussian1dx3.md)
   A three-element Gaussian convolution kernel.
-- [static let gaussian1Dx5: [Float]](vimage/convolutionkernel/gaussian1dx5.md)
+- [static let gaussian1Dx5: [Float]](./gaussian1dx5.md)
   A five-element Gaussian convolution kernel.
 
 

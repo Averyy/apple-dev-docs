@@ -1,18 +1,19 @@
 # SparseLSMRConvergenceTest_t
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the type of convergence test.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,48 +21,53 @@ Constants that specify the type of convergence test.
 struct SparseLSMRConvergenceTest_t
 ```
 
+```c
+typedef enum { ... } SparseLSMRConvergenceTest_t;
+```
+
 ## Topics
 
 ### Constants
-- [var SparseLSMRCTDefault: SparseLSMRConvergenceTest_t](sparselsmrctdefault.md)
+- [var SparseLSMRCTDefault: SparseLSMRConvergenceTest_t](./sparselsmrctdefault.md)
   The default convergence test.
-- [var SparseLSMRCTFongSaunders: SparseLSMRConvergenceTest_t](sparselsmrctfongsaunders.md)
+- [var SparseLSMRCTFongSaunders: SparseLSMRConvergenceTest_t](./sparselsmrctfongsaunders.md)
   Fong and Saunder’s original convergence test.
 ### Raw Values
-- [init(Int32)](sparselsmrconvergencetest_t/init(_:).md)
-- [init(rawValue: Int32)](sparselsmrconvergencetest_t/init(rawvalue:).md)
-- [var rawValue: Int32](sparselsmrconvergencetest_t/rawvalue.md)
+- [init(Int32)](./sparselsmrconvergencetest_t/init%28_%29.md)
+- [init(rawValue: Int32)](./sparselsmrconvergencetest_t/init%28rawvalue%29.md)
+- [var rawValue: Int32](./sparselsmrconvergencetest_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var atol: Double](sparselsmroptions/atol.md)
+### Inspecting LSMR Options
+- [var atol: Double](./sparselsmroptions/atol.md)
   The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
-- [var btol: Double](sparselsmroptions/btol.md)
+- [var btol: Double](./sparselsmroptions/btol.md)
   The *B* tolerance (Fong-Saunders test only).
-- [var conditionLimit: Double](sparselsmroptions/conditionlimit.md)
+- [var conditionLimit: Double](./sparselsmroptions/conditionlimit.md)
   The condition number limit (Fong-Saunders test only).
-- [var convergenceTest: SparseLSMRConvergenceTest_t](sparselsmroptions/convergencetest.md)
+- [var convergenceTest: SparseLSMRConvergenceTest_t](./sparselsmroptions/convergencetest.md)
   The convergence test to use for iterative solve methods.
-- [var lambda: Double](sparselsmroptions/lambda.md)
+- [var lambda: Double](./sparselsmroptions/lambda.md)
   The damping parameter lambda for regularized least squares.
-- [var maxIterations: Int32](sparselsmroptions/maxiterations.md)
+- [var maxIterations: Int32](./sparselsmroptions/maxiterations.md)
   The maximum number of iterations.
-- [var nvec: Int32](sparselsmroptions/nvec.md)
+- [var nvec: Int32](./sparselsmroptions/nvec.md)
   The number of vectors to use for local reorthogonalization.
-- [var reportError: ((UnsafePointer<CChar>) -> Void)?](sparselsmroptions/reporterror.md)
+- [var reportError: ((UnsafePointer<CChar>) -> Void)?](./sparselsmroptions/reporterror.md)
   An optional error-reporting routine.
-- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](sparselsmroptions/reportstatus.md)
+- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](./sparselsmroptions/reportstatus.md)
   An optional status-reporting routine.
-- [var rtol: Double](sparselsmroptions/rtol.md)
+- [var rtol: Double](./sparselsmroptions/rtol.md)
   The relative convergence tolerance (default test only).
 
 

@@ -1,7 +1,8 @@
 # download(_:didWriteBytes:totalBytesWritten:totalBytesExpectedToWrite:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate about the progress of the specified asset download.
 
@@ -19,9 +20,13 @@ Informs the delegate about the progress of the specified asset download.
 optional func download(_ download: BADownload, didWriteBytes bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite totalExpectedBytes: Int64)
 ```
 
+```objc
+- (void) download:(BADownload *) download didWriteBytes:(int64_t) bytesWritten totalBytesWritten:(int64_t) totalBytesWritten totalBytesExpectedToWrite:(int64_t) totalExpectedBytes;
+```
+
 #### Discussion
 
-Because the framework may be processing several asset downloads at once, it may call this method frequently and for different downloads. Cache an asset download’s [`uniqueIdentifier`](badownload/uniqueidentifier.md) when you first schedule it, and then match the identifier against the same property on `download` so you can track the individual progress of all in-progress downloads.
+Because the framework may be processing several asset downloads at once, it may call this method frequently and for different downloads. Cache an asset download’s [`uniqueIdentifier`](../badownload/uniqueidentifier.md) when you first schedule it, and then match the identifier against the same property on `download` so you can track the individual progress of all in-progress downloads.
 
 ## Parameters
 
@@ -32,11 +37,12 @@ Because the framework may be processing several asset downloads at once, it may 
 
 ## See Also
 
-- [func downloadDidBegin(BADownload)](badownloadmanagerdelegate/downloaddidbegin(_:).md)
+### Reacting to download events
+- [func downloadDidBegin(BADownload)](./downloaddidbegin%28_%29.md)
   Informs the delegate about a started asset download.
-- [func download(BADownload, didReceive: URLAuthenticationChallenge, completionHandler: (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)](badownloadmanagerdelegate/download(_:didreceive:completionhandler:).md)
+- [func download(BADownload, didReceive: URLAuthenticationChallenge, completionHandler: (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)](./download%28_,didreceive,completionhandler%29.md)
   Tells the delegate to resolve the specified URL authentication challenge.
-- [func downloadDidPause(BADownload)](badownloadmanagerdelegate/downloaddidpause(_:).md)
+- [func downloadDidPause(BADownload)](./downloaddidpause%28_%29.md)
   Informs the delegate about a paused asset download.
 
 

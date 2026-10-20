@@ -1,7 +1,8 @@
 # NumberBins
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of bins for a chart that plots data against numbers.
 
@@ -23,45 +24,46 @@ struct NumberBins<Value> where Value : Comparable, Value : Numeric
 ## Topics
 
 ### Initializers
-- [init(data: [Value], desiredCount: Int?, minimumStride: Value)](numberbins/init(data:desiredcount:minimumstride:)-3txi5.md)
+- [init(data: [Value], desiredCount: Int?, minimumStride: Value)](./numberbins/init%28data,desiredcount,minimumstride%29-3txi5.md)
   Automatically determine the bins from data.
-- [init(data: [Value], desiredCount: Int?, minimumStride: Value)](numberbins/init(data:desiredcount:minimumstride:)-8pvv7.md)
+- [init(data: [Value], desiredCount: Int?, minimumStride: Value)](./numberbins/init%28data,desiredcount,minimumstride%29-8pvv7.md)
   Automatically determine the bins from data.
-- [init(range: ClosedRange<Value>, count: Int)](numberbins/init(range:count:)-6hip8.md)
+- [init(range: ClosedRange<Value>, count: Int)](./numberbins/init%28range,count%29-6hip8.md)
   Creates the given number of bins for the range. Expects that the range length is a multiple of `count` to allow uniform integer bins.
-- [init(range: ClosedRange<Value>, count: Int)](numberbins/init(range:count:)-7975l.md)
+- [init(range: ClosedRange<Value>, count: Int)](./numberbins/init%28range,count%29-7975l.md)
   Creates the given number of bins for the range.
-- [init(range: ClosedRange<Value>, desiredCount: Int, minimumStride: Value)](numberbins/init(range:desiredcount:minimumstride:)-32ok2.md)
+- [init(range: ClosedRange<Value>, desiredCount: Int, minimumStride: Value)](./numberbins/init%28range,desiredcount,minimumstride%29-32ok2.md)
   Automatically determine the bins from a range of data.
-- [init(range: ClosedRange<Value>, desiredCount: Int, minimumStride: Value)](numberbins/init(range:desiredcount:minimumstride:)-4qxfa.md)
+- [init(range: ClosedRange<Value>, desiredCount: Int, minimumStride: Value)](./numberbins/init%28range,desiredcount,minimumstride%29-4qxfa.md)
   Automatically determine the bins from a range of data.
-- [init(size: Value, range: ClosedRange<Value>)](numberbins/init(size:range:)-3ach2.md)
+- [init(size: Value, range: ClosedRange<Value>)](./numberbins/init%28size,range%29-3ach2.md)
   Creates uniform bins covering the given range.
-- [init(size: Value, range: ClosedRange<Value>)](numberbins/init(size:range:)-5me6y.md)
+- [init(size: Value, range: ClosedRange<Value>)](./numberbins/init%28size,range%29-5me6y.md)
   Creates uniform bins covering the given range.
-- [init(thresholds: [Value])](numberbins/init(thresholds:).md)
+- [init(thresholds: [Value])](./numberbins/init%28thresholds%29.md)
   Creates N-1 bins with the given N `thresholds`.
 ### Instance Properties
-- [var thresholds: [Value]](numberbins/thresholds.md)
+- [var thresholds: [Value]](./numberbins/thresholds.md)
   Find the bin thresholds.
 ### Instance Methods
-- [func index(for: Value) -> Int](numberbins/index(for:).md)
+- [func index(for: Value) -> Int](./numberbins/index%28for%29.md)
   Returns the bin index for the given value.
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct DateBins](datebins.md)
+### Data bins
+- [struct DateBins](./datebins.md)
   A collection of bins for a chart that plots data against dates.
-- [struct ChartBinRange](chartbinrange.md)
+- [struct ChartBinRange](./chartbinrange.md)
   The range of data that a single bin of a chart represents.
 
 

@@ -1,17 +1,22 @@
 # setEventCallback(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the C-API callback used when the session recieves data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setEventCallback(_ inEventCallback: OBEXSessionEventCallback!)
+```
+
+```objc
+- (void) setEventCallback:(OBEXSessionEventCallback) inEventCallback;
 ```
 
 #### Discussion

@@ -1,63 +1,65 @@
 # Metric event types
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 ## Topics
 
 ### HTTP Live Streaming
-- [class AVMetricMediaResourceRequestEvent](avmetricmediaresourcerequestevent.md)
+- [class AVMetricMediaResourceRequestEvent](./avmetricmediaresourcerequestevent.md)
   An event that represents a media resource request.
-- [class AVMetricContentKeyRequestEvent](avmetriccontentkeyrequestevent.md)
+- [class AVMetricContentKeyRequestEvent](./avmetriccontentkeyrequestevent.md)
   An event that represents a live streaming content key resource request.
-- [class AVMetricHLSMediaSegmentRequestEvent](avmetrichlsmediasegmentrequestevent.md)
+- [class AVMetricHLSMediaSegmentRequestEvent](./avmetrichlsmediasegmentrequestevent.md)
   An event that represents a live streaming media segment resource request.
-- [class AVMetricHLSPlaylistRequestEvent](avmetrichlsplaylistrequestevent.md)
+- [class AVMetricHLSPlaylistRequestEvent](./avmetrichlsplaylistrequestevent.md)
   An event that represents a live streaming playlist resource request.
-- [class AVMetricPlayerItemVariantSwitchStartEvent](avmetricplayeritemvariantswitchstartevent.md)
+- [class AVMetricPlayerItemVariantSwitchStartEvent](./avmetricplayeritemvariantswitchstartevent.md)
   An event that represents when the player attempts a variant switch.
-- [class AVMetricPlayerItemVariantSwitchEvent](avmetricplayeritemvariantswitchevent.md)
+- [class AVMetricPlayerItemVariantSwitchEvent](./avmetricplayeritemvariantswitchevent.md)
   An event that represents when the player completes a variant switch.
-- [class AVMetricMediaRendition](avmetricmediarendition.md)
+- [class AVMetricMediaRendition](./avmetricmediarendition.md)
 ### Buffering
-- [class AVMetricPlayerItemStallEvent](avmetricplayeritemstallevent.md)
+- [class AVMetricPlayerItemStallEvent](./avmetricplayeritemstallevent.md)
   An event that represents when playback stalls.
-- [class AVMetricPlayerItemLikelyToKeepUpEvent](avmetricplayeritemlikelytokeepupevent.md)
+- [class AVMetricPlayerItemLikelyToKeepUpEvent](./avmetricplayeritemlikelytokeepupevent.md)
   An event that represents when playback is likely to continue without stalling.
-- [class AVMetricPlayerItemInitialLikelyToKeepUpEvent](avmetricplayeriteminitiallikelytokeepupevent.md)
+- [class AVMetricPlayerItemInitialLikelyToKeepUpEvent](./avmetricplayeriteminitiallikelytokeepupevent.md)
   An event that represents the initial state for whether playback is likely to continue without stalling.
 ### Transport control
-- [class AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
+- [class AVMetricPlayerItemPlaybackSummaryEvent](./avmetricplayeritemplaybacksummaryevent.md)
   An event that represents the combined metrics for the entire playback session.
-- [class AVMetricPlayerItemRateChangeEvent](avmetricplayeritemratechangeevent.md)
+- [class AVMetricPlayerItemRateChangeEvent](./avmetricplayeritemratechangeevent.md)
   An event that represents when the playback rate changes.
-- [class AVMetricPlayerItemSeekDidCompleteEvent](avmetricplayeritemseekdidcompleteevent.md)
+- [class AVMetricPlayerItemSeekDidCompleteEvent](./avmetricplayeritemseekdidcompleteevent.md)
   An event that represents when the playback seek completes.
-- [class AVMetricPlayerItemSeekEvent](avmetricplayeritemseekevent.md)
+- [class AVMetricPlayerItemSeekEvent](./avmetricplayeritemseekevent.md)
   An event that represents when a playback seek occurs.
 ### Playback mode
-- [enum AVMetricPlaybackMode](avmetricplaybackmode.md)
+- [enum AVMetricPlaybackMode](./avmetricplaybackmode.md)
   These constants are the possible playback modes returned by the property “mode” on AVMetricPlaybackModeSwitchEvent
-- [class AVMetricPlaybackModeSwitchEvent](avmetricplaybackmodeswitchevent.md)
+- [class AVMetricPlaybackModeSwitchEvent](./avmetricplaybackmodeswitchevent.md)
   Represents a change in playback state, entering one of AVMetricPlaybackMode
 ### Summary
-- [class AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
+- [class AVMetricPlayerItemPlaybackSummaryEvent](./avmetricplayeritemplaybacksummaryevent.md)
   An event that represents the combined metrics for the entire playback session.
-- [class AVMetricDownloadSummaryEvent](avmetricdownloadsummaryevent.md)
+- [class AVMetricDownloadSummaryEvent](./avmetricdownloadsummaryevent.md)
   Represents a summary metric event with aggregated metrics for the entire download task.
 
 ## See Also
 
-- [struct AVMetrics](avmetrics.md)
+### Metrics
+- [struct AVMetrics](./avmetrics.md)
   An asynchronous stream of metric information.
-- [struct AVMergedMetrics](avmergedmetrics.md)
+- [struct AVMergedMetrics](./avmergedmetrics.md)
   An asynchronous stream of metric information from different publishers.
-- [class AVVideoPerformanceMetrics](avvideoperformancemetrics.md)
+- [class AVVideoPerformanceMetrics](./avvideoperformancemetrics.md)
   An object that provides metrics related to video playback quality.
-- [protocol AVMetricEventStreamPublisher](avmetriceventstreampublisher.md)
+- [protocol AVMetricEventStreamPublisher](./avmetriceventstreampublisher.md)
   A type for objects that publish metric events to the event stream.
-- [class AVMetricEvent](avmetricevent.md)
+- [class AVMetricEvent](./avmetricevent.md)
   A base class that represents a metric event.
-- [class AVMetricErrorEvent](avmetricerrorevent.md)
+- [class AVMetricErrorEvent](./avmetricerrorevent.md)
   An object that represents a metric event when an error occurs.
 
 

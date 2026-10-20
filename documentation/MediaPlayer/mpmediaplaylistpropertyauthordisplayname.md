@@ -1,7 +1,8 @@
 # MPMediaPlaylistPropertyAuthorDisplayName
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 App defined name for the playlist.
 
@@ -9,7 +10,7 @@ App defined name for the playlist.
 - iOS 9.3+
 - iPadOS 9.3+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - tvOS 9.2+
 - visionOS 1.0+
 - watchOS 2.2+
@@ -20,23 +21,28 @@ App defined name for the playlist.
 let MPMediaPlaylistPropertyAuthorDisplayName: String
 ```
 
+```c
+extern NSString * const MPMediaPlaylistPropertyAuthorDisplayName;
+```
+
 #### Discussion
 
 This is required for 3rd party apps. Defaults to the app display name when not defined.
 
 ## See Also
 
-- [let MPMediaPlaylistPropertyName: String](mpmediaplaylistpropertyname.md)
+### Property keys
+- [let MPMediaPlaylistPropertyName: String](./mpmediaplaylistpropertyname.md)
   The name of the playlist.
-- [let MPMediaPlaylistPropertyDescriptionText: String](mpmediaplaylistpropertydescriptiontext.md)
+- [let MPMediaPlaylistPropertyDescriptionText: String](./mpmediaplaylistpropertydescriptiontext.md)
   Descriptive text for the playlist.
-- [let MPMediaPlaylistPropertyPersistentID: String](mpmediaplaylistpropertypersistentid.md)
+- [let MPMediaPlaylistPropertyPersistentID: String](./mpmediaplaylistpropertypersistentid.md)
   The persistent identifier for the playlist.
-- [let MPMediaPlaylistPropertyPlaylistAttributes: String](mpmediaplaylistpropertyplaylistattributes.md)
+- [let MPMediaPlaylistPropertyPlaylistAttributes: String](./mpmediaplaylistpropertyplaylistattributes.md)
   The attributes associated with the playlist.
-- [let MPMediaPlaylistPropertyCloudGlobalID: String](mpmediaplaylistpropertycloudglobalid.md)
+- [let MPMediaPlaylistPropertyCloudGlobalID: String](./mpmediaplaylistpropertycloudglobalid.md)
   The cloud identifier for the playlist.
-- [let MPMediaPlaylistPropertySeedItems: String](mpmediaplaylistpropertyseeditems.md)
+- [let MPMediaPlaylistPropertySeedItems: String](./mpmediaplaylistpropertyseeditems.md)
   The items seeded to generate the playlist; applies only to Genius playlists.
 
 

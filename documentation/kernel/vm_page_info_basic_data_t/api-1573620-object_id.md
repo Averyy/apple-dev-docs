@@ -1,14 +1,15 @@
 # object_id
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 vm_object_id_t object_id;
 ```
 

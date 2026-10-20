@@ -1,7 +1,8 @@
 # string(from:countStyle:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Formats the value of the given measurement using the given `countStyle`.
 
@@ -18,6 +19,10 @@ Formats the value of the given measurement using the given `countStyle`.
 
 ```swift
 class func string(from measurement: Measurement<UnitInformationStorage>, countStyle: ByteCountFormatter.CountStyle) -> String
+```
+
+```objc
++ (NSString *) stringFromMeasurement:(NSMeasurement<NSUnitInformationStorage *> *) measurement countStyle:(NSByteCountFormatterCountStyle) countStyle;
 ```
 
 #### Discussion

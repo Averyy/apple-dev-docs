@@ -1,7 +1,8 @@
 # GaussianSplatResource.ActivationFunction
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A transformation the framework applies to raw scale or opacity values before rendering.
 
@@ -25,18 +26,18 @@ Trained Gaussian splat models often store scale and opacity in a form that needs
 ## Topics
 
 ### Enumeration Cases
-- [GaussianSplatResource.ActivationFunction.exponential](gaussiansplatresource/activationfunction/exponential.md)
+- [GaussianSplatResource.ActivationFunction.exponential](./activationfunction/exponential.md)
   Applies an exponential function to each value.
-- [GaussianSplatResource.ActivationFunction.identity](gaussiansplatresource/activationfunction/identity.md)
+- [GaussianSplatResource.ActivationFunction.identity](./activationfunction/identity.md)
   Uses the values without transformation.
-- [GaussianSplatResource.ActivationFunction.sigmoid](gaussiansplatresource/activationfunction/sigmoid.md)
+- [GaussianSplatResource.ActivationFunction.sigmoid](./activationfunction/sigmoid.md)
   Applies a sigmoid function to each value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

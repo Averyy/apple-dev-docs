@@ -1,7 +1,8 @@
 # MediaOutputDevice.VolumeControl
 
 **Framework**: Media Device  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the type of volume control supported by an output device or group.
 
@@ -18,7 +19,7 @@ enum VolumeControl
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Overview
 
@@ -27,30 +28,31 @@ This enumeration specifies how volume can be controlled on a device, affecting w
 ## Topics
 
 ### Enumeration Cases
-- [MediaOutputDevice.VolumeControl.absolute](mediaoutputdevice/volumecontrol-swift.enum/absolute.md)
-  Full volume control is supported, [`setVolume(_:for:)`](mediadeviceextension/setvolume(_:for:).md) may be used to set the volume.
-- [MediaOutputDevice.VolumeControl.none](mediaoutputdevice/volumecontrol-swift.enum/none.md)
+- [MediaOutputDevice.VolumeControl.absolute](./volumecontrol-swift.enum/absolute.md)
+  Full volume control is supported, [`setVolume(_:for:)`](../mediadeviceextension/setvolume%28_,for%29.md) may be used to set the volume.
+- [MediaOutputDevice.VolumeControl.none](./volumecontrol-swift.enum/none.md)
   Volume control is not available.
-- [MediaOutputDevice.VolumeControl.relative](mediaoutputdevice/volumecontrol-swift.enum/relative.md)
-  Relative volume control is supported, [`changeVolume(by:for:)`](mediadeviceextension/changevolume(by:for:).md) must be used to change the volume.
+- [MediaOutputDevice.VolumeControl.relative](./volumecontrol-swift.enum/relative.md)
+  Relative volume control is supported, [`changeVolume(by:for:)`](../mediadeviceextension/changevolume%28by,for%29.md) must be used to change the volume.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MediaOutputDevice](mediaoutputdevice.md)
+### Device discovery and management
+- [struct MediaOutputDevice](../mediaoutputdevice.md)
   Represents a discoverable media output device such as a TV, speaker, or streaming stick.
-- [MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.struct.md)
-  Defines the media capabilities supported by a [`MediaOutputDevice`](mediaoutputdevice.md).
-- [MediaOutputDevice.DeviceType](mediaoutputdevice/devicetype-swift.enum.md)
+- [MediaOutputDevice.Capabilities](./capabilities-swift.struct.md)
+  Defines the media capabilities supported by a [`MediaOutputDevice`](../mediaoutputdevice.md).
+- [MediaOutputDevice.DeviceType](./devicetype-swift.enum.md)
   A device type used for display in user interfaces.
-- [MediaOutputDevice.AuthorizationMethod](mediaoutputdevice/authorizationmethod.md)
+- [MediaOutputDevice.AuthorizationMethod](./authorizationmethod.md)
   Specifies what kind of authorization UI to present when connecting to a device.
 
 

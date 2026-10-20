@@ -1,7 +1,8 @@
 # columnSpan
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
@@ -17,11 +18,16 @@
 var columnSpan: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger columnSpan;
+```
+
 ## See Also
 
-- [var startingRow: Int](nstexttableblock/startingrow.md)
-- [var rowSpan: Int](nstexttableblock/rowspan.md)
-- [var startingColumn: Int](nstexttableblock/startingcolumn.md)
+### Accessing cell position
+- [var startingRow: Int](./startingrow.md)
+- [var rowSpan: Int](./rowspan.md)
+- [var startingColumn: Int](./startingcolumn.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # TXTRecordDecoder
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,15 +22,15 @@ struct TXTRecordDecoder
 ## Topics
 
 ### Initializers
-- [init()](txtrecorddecoder/init.md)
+- [init()](./txtrecorddecoder/init%28%29.md)
 ### Instance Methods
-- [func decode<T>(T.Type, from: NWTXTRecord) throws -> T](txtrecorddecoder/decode(_:from:).md)
+- [func decode<T>(T.Type, from: NWTXTRecord) throws -> T](./txtrecorddecoder/decode%28_,from%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

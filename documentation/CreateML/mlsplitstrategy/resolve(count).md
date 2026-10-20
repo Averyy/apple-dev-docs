@@ -1,7 +1,8 @@
 # resolve(count:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves this split strategy for a specific element count.
 
@@ -29,9 +30,10 @@ The split fraction and the random seed to use.
 
 ## See Also
 
-- [MLSplitStrategy.automatic](mlsplitstrategy/automatic.md)
+### Partitioning data
+- [MLSplitStrategy.automatic](./automatic.md)
   Create ML automatically decides how much of your training dataset it uses for a validation dataset.
-- [case fixed(ratio: Double, seed: Int?)](mlsplitstrategy/fixed(ratio:seed:).md)
+- [case fixed(ratio: Double, seed: Int?)](./fixed%28ratio,seed%29.md)
   Create ML uses a portion of your training dataset to create a validation dataset based on the ratio.
 
 

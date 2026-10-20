@@ -1,7 +1,8 @@
 # browser
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer web browsing functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer web browsing functionali
 ```swift
 static var browser: some AssistantSchemas.BrowserIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

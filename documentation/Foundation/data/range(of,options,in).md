@@ -1,7 +1,8 @@
 # range(of:options:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds the range of the specified data as a subsequence of this data, if it exists.
 
@@ -36,7 +37,8 @@ Precondition: `range` must be in the bounds of the Data.
 
 ## See Also
 
-- [typealias SearchOptions](data/searchoptions.md)
+### Finding Bytes
+- [typealias SearchOptions](./searchoptions.md)
   Options that control a data search operation.
 
 

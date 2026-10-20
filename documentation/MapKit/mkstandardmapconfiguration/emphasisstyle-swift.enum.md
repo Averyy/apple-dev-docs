@@ -1,7 +1,8 @@
 # MKStandardMapConfiguration.EmphasisStyle
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that control how the framework emphasizes map features.
 
@@ -20,41 +21,46 @@ Values that control how the framework emphasizes map features.
 enum EmphasisStyle
 ```
 
+```c
+enum MKStandardMapEmphasisStyle : NSInteger;
+```
+
 ## Topics
 
 ### Controlling the map’s emphasis
-- [MKStandardMapConfiguration.EmphasisStyle.default](mkstandardmapconfiguration/emphasisstyle-swift.enum/default.md)
+- [MKStandardMapConfiguration.EmphasisStyle.default](./emphasisstyle-swift.enum/default.md)
   The default level of emphasis.
-- [MKStandardMapConfiguration.EmphasisStyle.muted](mkstandardmapconfiguration/emphasisstyle-swift.enum/muted.md)
+- [MKStandardMapConfiguration.EmphasisStyle.muted](./emphasisstyle-swift.enum/muted.md)
   The muted level of emphasis.
-- [MKStandardMapConfiguration.EmphasisStyle.default](mkstandardmapconfiguration/emphasisstyle-swift.enum/default.md)
+- [MKStandardMapConfiguration.EmphasisStyle.default](./emphasisstyle-swift.enum/default.md)
   The default level of emphasis.
-- [MKStandardMapConfiguration.EmphasisStyle.muted](mkstandardmapconfiguration/emphasisstyle-swift.enum/muted.md)
+- [MKStandardMapConfiguration.EmphasisStyle.muted](./emphasisstyle-swift.enum/muted.md)
   The muted level of emphasis.
 ### Initializers
-- [init?(rawValue: Int)](mkstandardmapconfiguration/emphasisstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./emphasisstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init()](mkstandardmapconfiguration/init.md)
+### Creating a standard map configuration
+- [init()](./init%28%29.md)
   Creates a new standard map configuration.
-- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)](mkstandardmapconfiguration/init(elevationstyle:).md)
+- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)](./init%28elevationstyle%29.md)
   Creates a new standard map configuration with the specified elevation style.
-- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle, emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](mkstandardmapconfiguration/init(elevationstyle:emphasisstyle:).md)
+- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle, emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](./init%28elevationstyle,emphasisstyle%29.md)
   Creates a standard map configuration with the specified elevation and emphasis styles.
-- [convenience init(emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](mkstandardmapconfiguration/init(emphasisstyle:).md)
+- [convenience init(emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](./init%28emphasisstyle%29.md)
   Creates a standard map configuration with the specified emphasis style.
-- [MKMapConfiguration.ElevationStyle](mkmapconfiguration/elevationstyle-swift.enum.md)
+- [MKMapConfiguration.ElevationStyle](../mkmapconfiguration/elevationstyle-swift.enum.md)
   Values that control the map’s elevation style.
 
 

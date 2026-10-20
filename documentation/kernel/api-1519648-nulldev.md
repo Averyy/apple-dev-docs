@@ -1,14 +1,15 @@
 # nulldev
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int nulldev(void);
 ```
 

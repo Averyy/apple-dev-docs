@@ -1,21 +1,22 @@
 # GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions.Data](gamecenterdetail/relationships-data.dictionary/challengesminimumplatformversions-data.dictionary/data-data.dictionary.md)
+- [object GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions.Data](./challengesminimumplatformversions-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

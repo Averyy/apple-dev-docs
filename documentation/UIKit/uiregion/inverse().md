@@ -1,7 +1,8 @@
 # inverse()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new region that’s the mathematical inverse of the current region.
 
@@ -18,6 +19,10 @@ Returns a new region that’s the mathematical inverse of the current region.
 func inverse() -> Self
 ```
 
+```objc
+- (instancetype) inverseRegion;
+```
+
 #### Return Value
 
 A new region whose contents include all points that are not in the current region.
@@ -28,11 +33,12 @@ The inverse of the infinite region is an empty region.
 
 ## See Also
 
-- [func byDifference(from: UIRegion) -> Self](uiregion/bydifference(from:).md)
+### Creating complex regions
+- [func byDifference(from: UIRegion) -> Self](./bydifference%28from%29.md)
   Returns a new region created by subtracting the specified region from the current region.
-- [func byIntersection(with: UIRegion) -> Self](uiregion/byintersection(with:).md)
+- [func byIntersection(with: UIRegion) -> Self](./byintersection%28with%29.md)
   Returns a new region containing only the area occupied by both the specified region and current region.
-- [func byUnion(with: UIRegion) -> Self](uiregion/byunion(with:).md)
+- [func byUnion(with: UIRegion) -> Self](./byunion%28with%29.md)
   Returns a new region containing the combined areas of the specified region and the current region.
 
 

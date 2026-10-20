@@ -1,7 +1,8 @@
 # TerritoryAgeRating.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object TerritoryAgeRating.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object TerritoryAgeRating.Relationships.Territory](territoryagerating/relationships-data.dictionary/territory-data.dictionary.md)
+- [object TerritoryAgeRating.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
   The data that describes the Territory related to a age.
 
 ## Properties
@@ -26,7 +27,8 @@ object TerritoryAgeRating.Relationships
 
 ## See Also
 
-- [object TerritoryAgeRating.Attributes](territoryagerating/attributes-data.dictionary.md)
+### Dictionaries
+- [object TerritoryAgeRating.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a territory age rating resource.
 
 

@@ -1,7 +1,8 @@
 # subscript(unchecked:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified index in the `MutableSpan`.
 
@@ -24,7 +25,7 @@ subscript(unchecked position: MutableSpan<Element>.Index) -> Element { borrow mu
 
 This subscript does not validate `position`; this is an unsafe operation.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

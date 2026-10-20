@@ -1,7 +1,8 @@
 # bufferSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the internal buffer the log state uses, specified in bytes.
 
@@ -19,6 +20,10 @@ The size of the internal buffer the log state uses, specified in bytes.
 var bufferSize: Int { get set }
 ```
 
+```objc
+@property (assign, readwrite) NSInteger bufferSize;
+```
+
 #### Discussion
 
 The default value is 1MB. The minimum size of log buffer is 1KB and the maximum size is 1GB.
@@ -27,7 +32,8 @@ Carefully consider the size of this buffer based on how many messages you expect
 
 ## See Also
 
-- [var level: MTLLogLevel](mtllogstatedescriptor/level.md)
+### Instance properties
+- [var level: MTLLogLevel](./level.md)
   The minimum level of messages that the shader can log.
 
 

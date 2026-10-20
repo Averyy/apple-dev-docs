@@ -1,7 +1,8 @@
 # updatedStatistics
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of statistics that have changed.
 
@@ -10,7 +11,7 @@ A collection of statistics that have changed.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,7 +22,8 @@ let updatedStatistics: [HKStatistics]?
 
 ## See Also
 
-- [let statisticsCollection: HKStatisticsCollection](hkstatisticscollectionquerydescriptor/result/statisticscollection.md)
+### Accessing Statistical Data
+- [let statisticsCollection: HKStatisticsCollection](./statisticscollection.md)
   A collection of statistics, representing the results calculated over separate time intervals.
 
 

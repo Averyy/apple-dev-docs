@@ -1,14 +1,15 @@
 # wake_pkt_spi
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t wake_pkt_spi;
 ```
 

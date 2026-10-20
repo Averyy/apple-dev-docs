@@ -1,7 +1,8 @@
 # itemProviders(for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds item providers that conform to at least one of the specified uniform type identifiers.
 
@@ -16,6 +17,12 @@ Finds item providers that conform to at least one of the specified uniform type 
 
 ```swift
 func itemProviders(for contentTypes: [UTType]) -> [NSItemProvider]
+```
+
+**Other overloads**:
+
+```swift
+func itemProviders(for types: [String]) -> [NSItemProvider]
 ```
 
 #### Return Value

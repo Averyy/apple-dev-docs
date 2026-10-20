@@ -1,7 +1,8 @@
 # init(_:physicalSize:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the image anchoring source from image file URL.
 

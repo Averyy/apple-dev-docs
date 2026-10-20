@@ -1,7 +1,8 @@
 # CMSampleBuffer.SampleAttachmentsArray
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,16 +22,17 @@ struct SampleAttachmentsArray
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../../Swift/collection.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey.md)
+### Managing Attachments
+- [CMSampleBuffer.AttachmentKey](./attachmentkey.md)
   Keys that identify sample buffer attachments.
-- [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](cmsamplebuffer/sampleattachments-swift.property.md)
+- [var sampleAttachments: CMSampleBuffer.SampleAttachmentsArray](./sampleattachments-swift.property.md)
   An array of sample attachments.
-- [CMSampleBuffer.PerSampleAttachmentsDictionary](cmsamplebuffer/persampleattachmentsdictionary.md)
+- [CMSampleBuffer.PerSampleAttachmentsDictionary](./persampleattachmentsdictionary.md)
   A structure that defines keys to identify per-sample attachments.
 
 

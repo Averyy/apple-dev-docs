@@ -1,6 +1,7 @@
 # Sharing environment variables across Xcode Cloud workflows
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Apply common configurations to multiple workflows by using shared environment variables.
 
@@ -10,7 +11,7 @@ You can use shared environment variables in your custom build scripts to extend 
 
 Before you begin, configure your project to use Xcode Cloud and create two or more workflows to share environment variables with.
 
-##### Manage Shared Environment Variables in Xcode
+##### Manage shared environment variables in Xcode
 
 To create shared environment variables in Xcode:
 
@@ -38,7 +39,7 @@ To apply environment variables to workflows in Xcode:
 
 To create another environment variable, click the Add button and choose New Shared Environment Variable from the pop-up menu.
 
-##### Manage Shared Environment Variables in App Store Connect
+##### Manage shared environment variables in App Store Connect
 
 You can also apply shared environment variables to workflows in App Store Connect with the following steps:
 
@@ -58,21 +59,22 @@ To edit or delete custom aliases, click More (…) next to the environment varia
 
 ## See Also
 
-- [Making dependencies available to Xcode Cloud](making-dependencies-available-to-xcode-cloud.md)
+### Setup and maintenance
+- [Making dependencies available to Xcode Cloud](./making-dependencies-available-to-xcode-cloud.md)
   Confirm that Xcode Cloud has access to every dependency your project needs to build.
-- [Configuring Xcode Cloud for your team](configuring-xcode-cloud-for-your-team.md)
+- [Configuring Xcode Cloud for your team](./configuring-xcode-cloud-for-your-team.md)
   Start using continuous integration and delivery with Xcode Cloud as a team.
-- [Sharing macOS and Xcode versions across Xcode Cloud workflows](sharing-custom-aliases-across-xcode-cloud-workflows.md)
+- [Sharing macOS and Xcode versions across Xcode Cloud workflows](./sharing-custom-aliases-across-xcode-cloud-workflows.md)
   Use custom aliases to share configurations with multiple workflows.
-- [Building Swift packages and Swift Playgrounds app projects with Xcode Cloud](building-swift-packages-or-swift-playground-app-projects-with-xcode-cloud.md)
+- [Building Swift packages and Swift Playgrounds app projects with Xcode Cloud](./building-swift-packages-or-swift-playground-app-projects-with-xcode-cloud.md)
   Add your Swift package or Swift Playgrounds app project to an Xcode project to build it in Xcode Cloud.
-- [Setting the next build number for Xcode Cloud builds](setting-the-next-build-number-for-xcode-cloud-builds.md)
+- [Setting the next build number for Xcode Cloud builds](./setting-the-next-build-number-for-xcode-cloud-builds.md)
   Start numbering builds from a custom build number for your existing Mac app to avoid version collisions.
-- [Including notes for testers with a beta release of your app](including-notes-for-testers-with-a-beta-release-of-your-app.md)
+- [Including notes for testers with a beta release of your app](./including-notes-for-testers-with-a-beta-release-of-your-app.md)
   Add text files to your Xcode project to provide notes to beta testers about what to test.
-- [Removing your project from Xcode Cloud](removing-your-project-from-xcode-cloud.md)
+- [Removing your project from Xcode Cloud](./removing-your-project-from-xcode-cloud.md)
   Remove your project from Xcode Cloud to delete app and workflow data, disconnect your Git repository, and remove the Slack integration.
-- [Changing the bundle identifier](changing-the-bundle-identifier.md)
+- [Changing the bundle identifier](./changing-the-bundle-identifier.md)
   Modify your app’s bundle identifier and update it anywhere it appears.
 
 

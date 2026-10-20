@@ -1,7 +1,8 @@
 # UIColorEffect
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A visual effect that applies a solid color background.
 
@@ -19,38 +20,43 @@ A visual effect that applies a solid color background.
 class UIColorEffect
 ```
 
+```objc
+@interface UIColorEffect : UIVisualEffect
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(color: UIColor?)](uicoloreffect/init(color:).md)
+- [convenience init(color: UIColor?)](./uicoloreffect/init%28color%29.md)
   Creates a color effect with the specified color.
 
 ## Relationships
 
 ### Inherits From
-- [UIVisualEffect](uivisualeffect.md)
+- [UIVisualEffect](./uivisualeffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIVisualEffect](uivisualeffect.md)
+### Visual effects
+- [class UIVisualEffect](./uivisualeffect.md)
   An initializer for visual effect views and blur and vibrancy effect objects.
-- [class UIVisualEffectView](uivisualeffectview.md)
+- [class UIVisualEffectView](./uivisualeffectview.md)
   An object that implements some complex visual effects.
-- [class UIVibrancyEffect](uivibrancyeffect.md)
+- [class UIVibrancyEffect](./uivibrancyeffect.md)
   An object that amplifies and adjusts the color of the content layered behind a visual effect view.
-- [class UIBlurEffect](uiblureffect.md)
+- [class UIBlurEffect](./uiblureffect.md)
   An object that applies a blurring effect to the content layered behind a visual effect view.
 
 

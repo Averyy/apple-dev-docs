@@ -1,7 +1,8 @@
 # valueDidChangeHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the profile calls when an element’s value changes.
 
@@ -19,6 +20,10 @@ The block that the profile calls when an element’s value changes.
 var valueDidChangeHandler: ((GCPhysicalInputProfile, GCControllerElement) -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^valueDidChangeHandler)(GCPhysicalInputProfile *profile, GCControllerElement *element);
+```
+
 #### Discussion
 
 The block’s parameters are:
@@ -30,7 +35,8 @@ If multiple elements change values at the same time, the profile calls this bloc
 
 ## See Also
 
-- [var lastEventTimestamp: TimeInterval](gcphysicalinputprofile/lasteventtimestamp.md)
+### Getting change information
+- [var lastEventTimestamp: TimeInterval](./lasteventtimestamp.md)
   The time of the most recent change to an element’s value.
 
 

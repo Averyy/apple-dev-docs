@@ -1,7 +1,8 @@
 # runAnimationGroup(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.12+
@@ -10,6 +11,10 @@
 
 ```swift
 class func runAnimationGroup(_ changes: (NSAnimationContext) -> Void)
+```
+
+```objc
++ (void) runAnimationGroup:(void (^)(NSAnimationContext *context)) changes;
 ```
 
 

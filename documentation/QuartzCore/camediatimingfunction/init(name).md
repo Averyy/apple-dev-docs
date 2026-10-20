@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new instance of `CAMediaTimingFunction` configured with the predefined timing function specified by `name`.
 
@@ -19,18 +20,24 @@ Creates and returns a new instance of `CAMediaTimingFunction` configured with th
 convenience init(name: CAMediaTimingFunctionName)
 ```
 
+```objc
++ (instancetype) functionWithName:(CAMediaTimingFunctionName) name;
+```
+
 #### Return Value
 
 A new instance of `CAMediaTimingFunction` with the timing function specified by `name`.
 
 ## Parameters
 
-- `name`: The timing function to use as specified in [`Predefined Timing Functions`](predefined-timing-functions.md).
+- `name`: The timing function to use as specified in [Predefined Timing Functions](../predefined-timing-functions.md).
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
-- [init(controlPoints: Float, Float, Float, Float)](camediatimingfunction/init(controlpoints:_:_:_:).md)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Creating Timing Functions
+- [init(controlPoints: Float, Float, Float, Float)](./init%28controlpoints,_,_,_%29.md)
   Returns an initialized timing function modeled as a cubic Bézier curve using the specified control points.
 
 

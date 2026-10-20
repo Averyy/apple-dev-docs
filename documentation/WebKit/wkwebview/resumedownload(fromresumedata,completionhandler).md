@@ -1,7 +1,8 @@
 # resumeDownload(fromResumeData:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes a failed or canceled download.
 
@@ -15,7 +16,15 @@ Resumes a failed or canceled download.
 ## Declaration
 
 ```swift
+func resumeDownload(fromResumeData resumeData: Data, completionHandler: @escaping @MainActor @Sendable (WKDownload) -> Void)
+```
+
+```swift
 func resumeDownload(fromResumeData resumeData: Data) async -> WKDownload
+```
+
+```objc
+- (void) resumeDownloadFromResumeData:(NSData *) resumeData completionHandler:(void (^)(WKDownload *)) completionHandler;
 ```
 
 #### Discussion
@@ -29,7 +38,8 @@ To receive progress updates, set the delegate of the download object in the comp
 
 ## See Also
 
-- [func startDownload(using: URLRequest, completionHandler: (WKDownload) -> Void)](wkwebview/startdownload(using:completionhandler:).md)
+### Managing downloads
+- [func startDownload(using: URLRequest, completionHandler: (WKDownload) -> Void)](./startdownload%28using,completionhandler%29.md)
   Starts to download the resource at the URL in the request.
 
 

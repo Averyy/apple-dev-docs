@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip6_opt_nsap {
     ...
 };
@@ -17,10 +17,10 @@ struct ip6_opt_nsap {
 ## Topics
 
 ### Instance Properties
-- [ip6on_dst_nsap_len](ip6_opt_nsap/3754512-ip6on_dst_nsap_len.md)
-- [ip6on_len](ip6_opt_nsap/3754513-ip6on_len.md)
-- [ip6on_src_nsap_len](ip6_opt_nsap/3754514-ip6on_src_nsap_len.md)
-- [ip6on_type](ip6_opt_nsap/3754515-ip6on_type.md)
+- [ip6on_dst_nsap_len](./ip6_opt_nsap/api-3754512-ip6on_dst_nsap_len.md)
+- [ip6on_len](./ip6_opt_nsap/api-3754513-ip6on_len.md)
+- [ip6on_src_nsap_len](./ip6_opt_nsap/api-3754514-ip6on_src_nsap_len.md)
+- [ip6on_type](./ip6_opt_nsap/api-3754515-ip6on_type.md)
 
 
 ---

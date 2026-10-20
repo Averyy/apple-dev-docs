@@ -1,7 +1,8 @@
 # AudioClassDescription
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes an audio codec.
 
@@ -20,26 +21,30 @@ A structure that describes an audio codec.
 struct AudioClassDescription
 ```
 
+```c
+struct AudioClassDescription;
+```
+
 ## Topics
 
 ### Accessing the Data
-- [var mType: OSType](audioclassdescription/mtype.md)
+- [var mType: OSType](./audioclassdescription/mtype.md)
   A four character code that a manufacturer defines for a codec type.
-- [var mSubType: OSType](audioclassdescription/msubtype.md)
+- [var mSubType: OSType](./audioclassdescription/msubtype.md)
   A four character code that a manufacturer defines for a codec subtype.
-- [var mManufacturer: OSType](audioclassdescription/mmanufacturer.md)
+- [var mManufacturer: OSType](./audioclassdescription/mmanufacturer.md)
   A four character code that identifies a codec manufacturer.
 ### Initializers
-- [init()](audioclassdescription/init.md)
+- [init()](./audioclassdescription/init%28%29.md)
   Creates an empty audio class description.
-- [init(mType: OSType, mSubType: OSType, mManufacturer: OSType)](audioclassdescription/init(mtype:msubtype:mmanufacturer:).md)
+- [init(mType: OSType, mSubType: OSType, mManufacturer: OSType)](./audioclassdescription/init%28mtype,msubtype,mmanufacturer%29.md)
   Creates an audio class description for the type, subtype, and manufacturer.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the data set in the asset catalog.
 
@@ -14,11 +15,16 @@ The name of the data set in the asset catalog.
 var name: NSDataAsset.Name { get }
 ```
 
+```objc
+@property (copy, readonly) NSDataAssetName name;
+```
+
 ## See Also
 
-- [NSDataAsset.Name](nsdataasset/name-swift.typealias.md)
+### Getting data asset information
+- [NSDataAsset.Name](./name-swift.typealias.md)
   The name of a data asset.
-- [var typeIdentifier: String](nsdataasset/typeidentifier.md)
+- [var typeIdentifier: String](./typeidentifier.md)
   The uniform type identifier for the data asset.
 
 

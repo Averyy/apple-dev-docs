@@ -1,7 +1,8 @@
 # VoiceSpecPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias VoiceSpecPtr = UnsafeMutablePointer<VoiceSpec>
+```
+
+```c
+typedef VoiceSpec *VoiceSpecPtr;
 ```
 
 

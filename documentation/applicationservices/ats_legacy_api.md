@@ -1,7 +1,8 @@
 # ATS_LEGACY_API
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var ATS_LEGACY_API: Int32 { get }
+```
+
+```c
+#define ATS_LEGACY_API
 ```
 
 

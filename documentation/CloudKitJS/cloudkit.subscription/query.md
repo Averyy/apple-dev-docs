@@ -1,7 +1,8 @@
 # query
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The matching criteria to apply to records.
 
@@ -10,7 +11,7 @@ The matching criteria to apply to records.
 
 ## Declaration
 
-```swift
+```
 attribute Query query;
 ```
 

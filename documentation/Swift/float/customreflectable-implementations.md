@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](float/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Float` instance.
 
 

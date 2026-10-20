@@ -1,7 +1,8 @@
 # converter(compatibleWith:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an audio input converter compatible with the given modules.
 
@@ -29,7 +30,8 @@ An instance of this class.
 
 ## See Also
 
-- [init(analyzerFormat: AVAudioFormat, configurationHandler: ((AVAudioConverter) -> Void)?)](analyzerinputconverter/init(analyzerformat:configurationhandler:).md)
+### Creating a converter
+- [init(analyzerFormat: AVAudioFormat, configurationHandler: ((AVAudioConverter) -> Void)?)](./init%28analyzerformat,configurationhandler%29.md)
   Creates an audio input converter.
 
 

@@ -1,7 +1,8 @@
 # PKDisbursementRequest
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a request to disburse funds from a merchant to an individual.
 
@@ -18,6 +19,10 @@ An object that represents a request to disburse funds from a merchant to an indi
 class PKDisbursementRequest
 ```
 
+```objc
+@interface PKDisbursementRequest : NSObject
+```
+
 #### Overview
 
 Use this object to create a disbursement (payment) request from a merchant to a user account — for example, a withdrawal from an online account.
@@ -25,62 +30,62 @@ Use this object to create a disbursement (payment) request from a merchant to a 
 ## Topics
 
 ### Initializers
-- [convenience init(merchantIdentifier: String, currency: Locale.Currency, region: Locale.Region, supportedNetworks: [PKPaymentNetwork], merchantCapabilities: PKMerchantCapability, summaryItems: [PKPaymentSummaryItem])](pkdisbursementrequest/init(merchantidentifier:currency:region:supportednetworks:merchantcapabilities:summaryitems:).md)
+- [convenience init(merchantIdentifier: String, currency: Locale.Currency, region: Locale.Region, supportedNetworks: [PKPaymentNetwork], merchantCapabilities: PKMerchantCapability, summaryItems: [PKPaymentSummaryItem])](./pkdisbursementrequest/init%28merchantidentifier,currency,region,supportednetworks,merchantcapabilities,summaryitems%29.md)
   Creates a disbursement request with the parameters you specify.
 ### Setting currency and region information
-- [var currency: Locale.Currency](pkdisbursementrequest/currency.md)
+- [var currency: Locale.Currency](./pkdisbursementrequest/currency.md)
   The currency to use for this disbursement.
-- [var region: Locale.Region](pkdisbursementrequest/region.md)
+- [var region: Locale.Region](./pkdisbursementrequest/region.md)
   The geographic region that describes the location for this disbursement.
-- [var supportedRegions: [Locale.Region]?](pkdisbursementrequest/supportedregions-1cl0f.md)
+- [var supportedRegions: [Locale.Region]?](./pkdisbursementrequest/supportedregions-1cl0f.md)
   An array of regions that describe the locations to support.
 ### Setting the summary items
-- [var summaryItems: [PKPaymentSummaryItem]](pkdisbursementrequest/summaryitems.md)
+- [var summaryItems: [PKPaymentSummaryItem]](./pkdisbursementrequest/summaryitems.md)
   An array of payment summary item objects that the framework presents to people.
-- [class PKPaymentSummaryItem](pkpaymentsummaryitem.md)
+- [class PKPaymentSummaryItem](./pkpaymentsummaryitem.md)
   An object that defines a summary item in a payment request, taxes, discounts, shipping, a grand total, and the like.
-- [class PKDisbursementSummaryItem](pkdisbursementsummaryitem.md)
+- [class PKDisbursementSummaryItem](./pkdisbursementsummaryitem.md)
   A summary item that represents a disbursement.
-- [class PKInstantFundsOutFeeSummaryItem](pkinstantfundsoutfeesummaryitem.md)
+- [class PKInstantFundsOutFeeSummaryItem](./pkinstantfundsoutfeesummaryitem.md)
   A summary item that represents a fee for an instant funds out transfer.
 ### Setting custom application data
-- [var applicationData: Data?](pkdisbursementrequest/applicationdata.md)
+- [var applicationData: Data?](./pkdisbursementrequest/applicationdata.md)
   Optional merchant-supplied information about the disbursement request.
 ### Setting the merchant information
-- [var merchantIdentifier: String](pkdisbursementrequest/merchantidentifier.md)
+- [var merchantIdentifier: String](./pkdisbursementrequest/merchantidentifier.md)
   A string that identifies the merchant.
-- [var merchantCapabilities: PKMerchantCapability](pkdisbursementrequest/merchantcapabilities.md)
+- [var merchantCapabilities: PKMerchantCapability](./pkdisbursementrequest/merchantcapabilities.md)
   A value that represents the payment-processing capabilities of the merchant.
-- [var supportedNetworks: [PKPaymentNetwork]](pkdisbursementrequest/supportednetworks.md)
+- [var supportedNetworks: [PKPaymentNetwork]](./pkdisbursementrequest/supportednetworks.md)
   An array of payment networks the merchant supports.
 ### Requesting recipient contact fields
-- [var recipientContact: PKContact?](pkdisbursementrequest/recipientcontact.md)
+- [var recipientContact: PKContact?](./pkdisbursementrequest/recipientcontact.md)
   A contact object that describes the recipient.
-- [var requiredRecipientContactFields: [PKContactField]](pkdisbursementrequest/requiredrecipientcontactfields.md)
+- [var requiredRecipientContactFields: [PKContactField]](./pkdisbursementrequest/requiredrecipientcontactfields.md)
   An array that indicates which of the recipient’s contact details the merchant requires in order to process a disbursement.
 ### Excluding cards from the payment sheet
-- [var unsupportedPrimaryAccountIdentifiers: [String]](pkdisbursementrequest/unsupportedprimaryaccountidentifiers.md)
+- [var unsupportedPrimaryAccountIdentifiers: [String]](./pkdisbursementrequest/unsupportedprimaryaccountidentifiers.md)
   An array of Apple Pay cards to exclude from payment.
 ### Handling errors
-- [class func disbursementCardUnsupportedError() -> any Error](pkdisbursementrequest/disbursementcardunsupportederror.md)
+- [class func disbursementCardUnsupportedError() -> any Error](./pkdisbursementrequest/disbursementcardunsupportederror%28%29.md)
   Creates an error that indicates that the selected payment pass doesn’t support receiving funds through disbursements.
-- [class func disbursementContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](pkdisbursementrequest/disbursementcontactinvaliderror(withcontactfield:localizeddescription:).md)
+- [class func disbursementContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](./pkdisbursementrequest/disbursementcontactinvaliderror%28withcontactfield,localizeddescription%29.md)
   Creates a recipient contact error with the supplied field.
 ### Instance Properties
-- [var isDelegatedRequest: Bool](pkdisbursementrequest/isdelegatedrequest.md)
+- [var isDelegatedRequest: Bool](./pkdisbursementrequest/isdelegatedrequest.md)
   A Boolean value that indicates whether this disbursement request is being made by a delegated entity on behalf of a merchant.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

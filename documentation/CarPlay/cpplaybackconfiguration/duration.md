@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration of the media content as a CMTime value. Provide 0 if the duration of the content is unknown or unavailable, for example in live-streaming content.
 
@@ -14,6 +15,10 @@ The total duration of the media content as a CMTime value. Provide 0 if the dura
 
 ```swift
 var duration: CMTime { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CMTime duration;
 ```
 
 

@@ -1,7 +1,8 @@
 # notApplicable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.14+
@@ -12,10 +13,15 @@
 class var notApplicable: NSBindingSelectionMarker { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSBindingSelectionMarker * notApplicableSelectionMarker;
+```
+
 ## See Also
 
-- [class var multipleValues: NSBindingSelectionMarker](nsbindingselectionmarker/multiplevalues.md)
-- [class var noSelection: NSBindingSelectionMarker](nsbindingselectionmarker/noselection.md)
+### Type Properties
+- [class var multipleValues: NSBindingSelectionMarker](./multiplevalues.md)
+- [class var noSelection: NSBindingSelectionMarker](./noselection.md)
 
 
 ---

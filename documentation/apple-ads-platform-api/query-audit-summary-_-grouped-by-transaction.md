@@ -1,7 +1,8 @@
 # Query Change History
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query audit summaries grouped by transaction across a specified time range.
 
@@ -12,9 +13,9 @@ Query audit summaries grouped by transaction across a specified time range.
 
 This endpoint returns one `AuditSummary` row per (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination. The `count` field on each row indicates how many individual field changes that transaction group contains.
 
-To fetch field-level details via `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](get-change-details-by-detailid.md)), you need a composite `detailId` in the form `EntityType.entityId.txnId`. A summary row alone doesn’t include `entityId`, so set `options.metadata` to `latest` or `snapshot` on the query request: each resulting row’s `metas` array then includes a ready-to-use `detailId` you can pass directly to the detail endpoint.
+To fetch field-level details via `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](./get-change-details-by-detailid.md)), you need a composite `detailId` in the form `EntityType.entityId.txnId`. A summary row alone doesn’t include `entityId`, so set `options.metadata` to `latest` or `snapshot` on the query request: each resulting row’s `metas` array then includes a ready-to-use `detailId` you can pass directly to the detail endpoint.
 
-See [`AuditOperator`](auditoperator.md) for the full set of supported comparison operators.
+See [`AuditOperator`](./auditoperator.md) for the full set of supported comparison operators.
 
 #### Request Body
 
@@ -25,7 +26,7 @@ The following fields support filtering. For non-time fields, the API supports on
 | Field | Operators | Notes |
 | --- | --- | --- |
 | `eventTime` | `BETWEEN`, `GREATER_THAN`, `LESS_THAN` | **Required.** ISO 8601 date strings. Maximum lookback is 6 months. `BETWEEN` requires two values. `GREATER_THAN` and `LESS_THAN` take one. |
-| `entityType` | `IN` | Not a closed enum. A string matching the name of the API entity that changed, such as `Campaign`, `AdGroup`, `Keyword`, `NegativeKeyword`, `Ad`, `Creative`, `AdAccount`, `Org`, or `LocationGroup`. See [`Change History Endpoints`](change-history-endpoints.md) for the entity types this endpoint reports on. |
+| `entityType` | `IN` | Not a closed enum. A string matching the name of the API entity that changed, such as `Campaign`, `AdGroup`, `Keyword`, `NegativeKeyword`, `Ad`, `Creative`, `AdAccount`, `Org`, or `LocationGroup`. See [Change History Endpoints](./change-history-endpoints.md) for the entity types this endpoint reports on. |
 | `entityId` | `EQUALS`, `IN` | The specific entity that changed. |
 | `eventType` | `IN` | `CREATE`, `UPDATE`, `DELETE` |
 | `userType` | `IN` | `CUSTOMER`, `CUSTOMER_API`, `APPLE_SUPPORT` |
@@ -396,15 +397,30 @@ Query keyword changes with `options.metadata` set to `latest`, returning per-ent
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
 
 ## Request Body
 
-An [`AuditQuery`](auditquery.md) object specifying filter fields, sorting, pagination, and options. Every request requires a time-range filter on `eventTime`. Use `BETWEEN` for a bounded range or `GREATER_THAN` or `LESS_THAN` for an open-ended range.
+**Content-Type**: `application/json`  
+**Type**: `AuditQuery`
+
+An [`AuditQuery`](./auditquery.md) object specifying filter fields, sorting, pagination, and options. Every request requires a time-range filter on `eventTime`. Use `BETWEEN` for a bounded range or `GREATER_THAN` or `LESS_THAN` for an open-ended range.
+
+## Responses
+
+- `200` OK (`AuditSummaryResponse`, `application/json`): Successful operation. Returns [`AuditSummaryResponse`](./auditsummaryresponse.md) (`result`: array of [`AuditSummary`](./auditsummary.md)).
+- `400` Bad Request (`Error`, `application/json`): Bad Request. Returns [`ErrorMessage`](./errormessage.md).
+- `401` Unauthorized (`Error`, `application/json`): Unauthorized.
+- `403` Forbidden (`Error`, `application/json`): Forbidden.
+- `404` Not Found (`Error`, `application/json`): Not Found. Returns [`ErrorMessage`](./errormessage.md).
+- `429` Too Many Requests (`Error`, `application/json`): Rate Limit Exceeded. Returns [`ErrorMessage`](./errormessage.md).
+- `500` Internal Server Error (`Error`, `application/json`): Internal Server Error. Returns [`ErrorMessage`](./errormessage.md).
 
 ## See Also
 
-- [Get Change History Detail](get-change-details-by-detailid.md)
+- [Get Change History Detail](./get-change-details-by-detailid.md)
   Retrieve field-level before and after values for a single entity change by its detail ID.
 
 

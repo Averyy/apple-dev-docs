@@ -1,7 +1,8 @@
 # init(call:handle:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new action to start a call with the specified UUID to a recipient with the specified handle.
 
@@ -18,18 +19,23 @@ Initializes a new action to start a call with the specified UUID to a recipient 
 init(call callUUID: UUID, handle: CXHandle)
 ```
 
+```objc
+- (instancetype) initWithCallUUID:(NSUUID *) callUUID handle:(CXHandle *) handle;
+```
+
 #### Return Value
 
 A new action for the specified call UUID and handle.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object.
+- `callUUID`: The unique identifier for the associated [`CXCall`](../cxcall.md) object.
 - `handle`: The handle for the receipient, such as a phone number or email address.
 
 ## See Also
 
-- [init?(coder: NSCoder)](cxstartcallaction/init(coder:).md)
+### Creating New Actions
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new action to start a call with data in an unarchiver.
 
 

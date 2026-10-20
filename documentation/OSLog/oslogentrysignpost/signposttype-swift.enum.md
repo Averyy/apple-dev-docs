@@ -1,7 +1,8 @@
 # OSLogEntrySignpost.SignpostType
 
 **Framework**: OSLog  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available signpost types.
 
@@ -20,33 +21,38 @@ The available signpost types.
 enum SignpostType
 ```
 
+```c
+enum OSLogEntrySignpostType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [OSLogEntrySignpost.SignpostType.undefined](oslogentrysignpost/signposttype-swift.enum/undefined.md)
+- [OSLogEntrySignpost.SignpostType.undefined](./signposttype-swift.enum/undefined.md)
   The signpost does not have a type.
-- [OSLogEntrySignpost.SignpostType.intervalBegin](oslogentrysignpost/signposttype-swift.enum/intervalbegin.md)
+- [OSLogEntrySignpost.SignpostType.intervalBegin](./signposttype-swift.enum/intervalbegin.md)
   The signpost marks the start of a time interval.
-- [OSLogEntrySignpost.SignpostType.intervalEnd](oslogentrysignpost/signposttype-swift.enum/intervalend.md)
+- [OSLogEntrySignpost.SignpostType.intervalEnd](./signposttype-swift.enum/intervalend.md)
   The signpost marks the end of a time interval.
-- [OSLogEntrySignpost.SignpostType.event](oslogentrysignpost/signposttype-swift.enum/event.md)
+- [OSLogEntrySignpost.SignpostType.event](./signposttype-swift.enum/event.md)
   The signpost marks an event.
 ### Initializers
-- [init?(rawValue: Int)](oslogentrysignpost/signposttype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./signposttype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var signpostType: OSLogEntrySignpost.SignpostType](oslogentrysignpost/signposttype-swift.property.md)
+### Accessing Signpost Types
+- [var signpostType: OSLogEntrySignpost.SignpostType](./signposttype-swift.property.md)
   The signpost’s type.
 
 

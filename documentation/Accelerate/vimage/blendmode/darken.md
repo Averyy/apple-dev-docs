@@ -1,7 +1,8 @@
 # vImage.BlendMode.darken
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sets each channel of the destination pixel as the darkest value for the corresponding channel of the two source layers.
 
@@ -11,7 +12,7 @@ Sets each channel of the destination pixel as the darkest value for the correspo
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ case darken
 
 The following image shows the result of compositing using the darken blend mode:
 
-![Graphic showing the darken blend mode composite operation.](/images/com.apple.accelerate/media-3958272@2x.png)
+![Graphic showing the darken blend mode composite operation.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3958272@2x.png)
 
 The bottom-right quadrant in the result is black because no pixels in the bottom layer are darker than the corresponding pixels in the top layer.
 
@@ -32,13 +33,15 @@ The bottom-left quadrant in the result looks darker than the corresponding quadr
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](../../compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [vImage.BlendMode.lighten](vimage/blendmode/lighten.md)
+### Enumeration Cases
+- [vImage.BlendMode.lighten](./lighten.md)
   Sets each channel of the destination pixel as the lightest value for the corresponding channel of the two source layers
-- [vImage.BlendMode.multiply](vimage/blendmode/multiply.md)
+- [vImage.BlendMode.multiply](./multiply.md)
   Sets the destination pixel as the product of the corresponding source pixels.
-- [vImage.BlendMode.screen](vimage/blendmode/screen.md)
+- [vImage.BlendMode.screen](./screen.md)
   Sets the destination pixel as the inverted product of the inverted corresponding source pixels.
 
 

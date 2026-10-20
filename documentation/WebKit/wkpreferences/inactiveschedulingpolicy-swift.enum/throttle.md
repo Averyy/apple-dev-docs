@@ -1,7 +1,8 @@
 # WKPreferences.InactiveSchedulingPolicy.throttle
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy where a web view that’s not in a window limits processing, but does not fully suspend tasks.
 
@@ -18,11 +19,16 @@ A policy where a web view that’s not in a window limits processing, but does n
 case throttle
 ```
 
+```c
+WKInactiveSchedulingPolicyThrottle
+```
+
 ## See Also
 
-- [WKPreferences.InactiveSchedulingPolicy.none](wkpreferences/inactiveschedulingpolicy-swift.enum/none.md)
+### Scheduling policies
+- [WKPreferences.InactiveSchedulingPolicy.none](./none.md)
   A policy where a web view that’s not in a window runs tasks normally.
-- [WKPreferences.InactiveSchedulingPolicy.suspend](wkpreferences/inactiveschedulingpolicy-swift.enum/suspend.md)
+- [WKPreferences.InactiveSchedulingPolicy.suspend](./suspend.md)
   A policy where a web view that’s not in a window fully suspends tasks.
 
 

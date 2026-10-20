@@ -1,7 +1,8 @@
 # drawIndexed
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An indexed draw call command.
 
@@ -19,17 +20,22 @@ An indexed draw call command.
 static var drawIndexed: MTLIndirectCommandType { get }
 ```
 
+```c
+MTLIndirectCommandTypeDrawIndexed
+```
+
 ## See Also
 
-- [static var draw: MTLIndirectCommandType](mtlindirectcommandtype/draw.md)
+### Specifying command types
+- [static var draw: MTLIndirectCommandType](./draw.md)
   A draw call command.
-- [static var drawPatches: MTLIndirectCommandType](mtlindirectcommandtype/drawpatches.md)
+- [static var drawPatches: MTLIndirectCommandType](./drawpatches.md)
   A draw call command for tessellated patches.
-- [static var drawIndexedPatches: MTLIndirectCommandType](mtlindirectcommandtype/drawindexedpatches.md)
+- [static var drawIndexedPatches: MTLIndirectCommandType](./drawindexedpatches.md)
   An indexed draw call command for tessellated patches.
-- [static var concurrentDispatch: MTLIndirectCommandType](mtlindirectcommandtype/concurrentdispatch.md)
+- [static var concurrentDispatch: MTLIndirectCommandType](./concurrentdispatch.md)
   A compute command using a grid aligned to threadgroup boundaries.
-- [static var concurrentDispatchThreads: MTLIndirectCommandType](mtlindirectcommandtype/concurrentdispatchthreads.md)
+- [static var concurrentDispatchThreads: MTLIndirectCommandType](./concurrentdispatchthreads.md)
   A compute command using an arbitrarily sized grid.
 
 

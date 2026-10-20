@@ -1,7 +1,8 @@
 # referenceDisplayModeStatusDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,11 +16,14 @@
 static var referenceDisplayModeStatusDidChange: NotificationCenter.BaseMessageIdentifier<UIScreen.ReferenceDisplayModeStatusDidChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIScreen.ReferenceDisplayModeStatusDidChangeMessage>`.
+
 ## See Also
 
-- [static var brightnessDidChange: NotificationCenter.BaseMessageIdentifier<UIScreen.BrightnessDidChangeMessage>](notificationcenter/messageidentifier/brightnessdidchange.md)
-- [static var modeDidChange: NotificationCenter.BaseMessageIdentifier<UIScreen.ModeDidChangeMessage>](notificationcenter/messageidentifier/modedidchange.md)
-- [static var capturedDidChange: NotificationCenter.BaseMessageIdentifier<UIScreen.CapturedDidChangeMessage>](notificationcenter/messageidentifier/captureddidchange.md)
+### Identifying UIKit screen messages
+- [static var brightnessDidChange: NotificationCenter.BaseMessageIdentifier<UIScreen.BrightnessDidChangeMessage>](./brightnessdidchange.md)
+- [static var modeDidChange: NotificationCenter.BaseMessageIdentifier<UIScreen.ModeDidChangeMessage>](./modedidchange.md)
+- [static var capturedDidChange: NotificationCenter.BaseMessageIdentifier<UIScreen.CapturedDidChangeMessage>](./captureddidchange.md)
 
 
 ---

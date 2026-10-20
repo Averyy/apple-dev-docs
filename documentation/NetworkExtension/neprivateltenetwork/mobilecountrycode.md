@@ -1,7 +1,8 @@
 # mobileCountryCode
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Mobile Country Code (MCC) of the private LTE network.
 
@@ -17,11 +18,16 @@ The Mobile Country Code (MCC) of the private LTE network.
 var mobileCountryCode: String { get set }
 ```
 
+```objc
+@property (copy) NSString * mobileCountryCode;
+```
+
 ## See Also
 
-- [var mobileNetworkCode: String](neprivateltenetwork/mobilenetworkcode.md)
+### Accessing network properties
+- [var mobileNetworkCode: String](./mobilenetworkcode.md)
   The Mobile Network Code (MNC) of the private LTE network.
-- [var trackingAreaCode: String?](neprivateltenetwork/trackingareacode.md)
+- [var trackingAreaCode: String?](./trackingareacode.md)
   The Tracking Area Code of the private LTE network.
 
 

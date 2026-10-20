@@ -1,7 +1,8 @@
 # NSMenuItemBadge.BadgeType.alerts
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A badge representing the number of alerts.
 
@@ -14,13 +15,18 @@ A badge representing the number of alerts.
 case alerts
 ```
 
+```c
+NSMenuItemBadgeTypeAlerts
+```
+
 ## See Also
 
-- [NSMenuItemBadge.BadgeType.newItems](nsmenuitembadge/badgetype/newitems.md)
+### Getting badge types
+- [NSMenuItemBadge.BadgeType.newItems](./newitems.md)
   A badge representing the number of new items.
-- [NSMenuItemBadge.BadgeType.none](nsmenuitembadge/badgetype/none.md)
+- [NSMenuItemBadge.BadgeType.none](./none.md)
   A badge with no string portion.
-- [NSMenuItemBadge.BadgeType.updates](nsmenuitembadge/badgetype/updates.md)
+- [NSMenuItemBadge.BadgeType.updates](./updates.md)
   A badge representing the number of available updates.
 
 

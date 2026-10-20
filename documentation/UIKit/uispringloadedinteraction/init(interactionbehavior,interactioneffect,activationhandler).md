@@ -1,7 +1,8 @@
 # init(interactionBehavior:interactionEffect:activationHandler:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new spring-loaded interaction with a specific behavior, visual effect, and activation handler block.
 
@@ -17,6 +18,10 @@ Initializes a new spring-loaded interaction with a specific behavior, visual eff
 init(interactionBehavior: (any UISpringLoadedInteractionBehavior)?, interactionEffect: (any UISpringLoadedInteractionEffect)?, activationHandler handler: @escaping (UISpringLoadedInteraction, any UISpringLoadedInteractionContext) -> Void)
 ```
 
+```objc
+- (instancetype) initWithInteractionBehavior:(id<UISpringLoadedInteractionBehavior>) interactionBehavior interactionEffect:(id<UISpringLoadedInteractionEffect>) interactionEffect activationHandler:(void (^)(UISpringLoadedInteraction *interaction, id<UISpringLoadedInteractionContext>context)) handler;
+```
+
 #### Return Value
 
 A spring-loaded interaction that has a specific behavior, visual effect, and activation handler block.
@@ -29,7 +34,8 @@ A spring-loaded interaction that has a specific behavior, visual effect, and act
 
 ## See Also
 
-- [convenience init(activationHandler: (UISpringLoadedInteraction, any UISpringLoadedInteractionContext) -> Void)](uispringloadedinteraction/init(activationhandler:).md)
+### Initializing a spring-loaded interaction
+- [convenience init(activationHandler: (UISpringLoadedInteraction, any UISpringLoadedInteractionContext) -> Void)](./init%28activationhandler%29.md)
   Initializes a new spring-loaded interaction with a specified activation handler block, employing the default behavior and visual effect.
 
 

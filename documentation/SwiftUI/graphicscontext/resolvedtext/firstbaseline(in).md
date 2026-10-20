@@ -1,7 +1,8 @@
 # firstBaseline(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the distance from the first line’s ascender to its baseline.
 
@@ -22,11 +23,12 @@ func firstBaseline(in size: CGSize) -> CGFloat
 
 ## See Also
 
-- [func lastBaseline(in: CGSize) -> CGFloat](graphicscontext/resolvedtext/lastbaseline(in:).md)
+### Getting the text properties
+- [func lastBaseline(in: CGSize) -> CGFloat](./lastbaseline%28in%29.md)
   Gets the distance from the first line’s ascender to the last line’s baseline.
-- [func measure(in: CGSize) -> CGSize](graphicscontext/resolvedtext/measure(in:).md)
+- [func measure(in: CGSize) -> CGSize](./measure%28in%29.md)
   Measures the size of the resolved text for a given area into which the text should be placed.
-- [var shading: GraphicsContext.Shading](graphicscontext/resolvedtext/shading.md)
+- [var shading: GraphicsContext.Shading](./shading.md)
   The shading to fill uncolored text regions with.
 
 

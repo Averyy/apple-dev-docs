@@ -1,7 +1,8 @@
 # data
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a DER-encoded representation of an X.509 certificate.
 
@@ -18,6 +19,10 @@ Returns a DER-encoded representation of an X.509 certificate.
 
 ```swift
 var data: Data { get }
+```
+
+```objc
+@property (copy, readonly) NSData * data;
 ```
 
 

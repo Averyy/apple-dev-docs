@@ -1,9 +1,10 @@
 # init(username:service:)
 
 **Framework**: Contacts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Returns a [`CNInstantMessageAddress`](cninstantmessageaddress.md) object initialized with the specified user name and service.
+Returns a [`CNInstantMessageAddress`](../cninstantmessageaddress.md) object initialized with the specified user name and service.
 
 **Availability**:
 - iOS 9.0+
@@ -19,18 +20,22 @@ Returns a [`CNInstantMessageAddress`](cninstantmessageaddress.md) object initial
 init(username: String, service: String)
 ```
 
+```objc
+- (instancetype) initWithUsername:(NSString *) username service:(NSString *) service;
+```
+
 #### Return Value
 
-The initialized [`CNInstantMessageAddress`](cninstantmessageaddress.md) object with the specified user name and service.
+The initialized [`CNInstantMessageAddress`](../cninstantmessageaddress.md) object with the specified user name and service.
 
 #### Discussion
 
-User name and service are required to initialize [`CNInstantMessageAddress`](cninstantmessageaddress.md) object.
+User name and service are required to initialize [`CNInstantMessageAddress`](../cninstantmessageaddress.md) object.
 
 ## Parameters
 
-- `username`: The user name with which to initialize the [`CNInstantMessageAddress`](cninstantmessageaddress.md) object.
-- `service`: The service with which to Initialize the [`CNInstantMessageAddress`](cninstantmessageaddress.md) object.
+- `username`: The user name with which to initialize the [`CNInstantMessageAddress`](../cninstantmessageaddress.md) object.
+- `service`: The service with which to Initialize the [`CNInstantMessageAddress`](../cninstantmessageaddress.md) object.
 
 
 ---

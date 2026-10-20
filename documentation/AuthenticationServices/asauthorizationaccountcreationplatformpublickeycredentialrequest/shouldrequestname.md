@@ -1,7 +1,8 @@
 # shouldRequestName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to request the user’s name.
 

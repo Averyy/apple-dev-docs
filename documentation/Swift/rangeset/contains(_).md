@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the given value is contained by the ranges in the range set.
 
@@ -26,7 +27,7 @@ func contains(_ value: Bound) -> Bool
 
 #### Discussion
 
-> **Note**: O(log *n*), where *n* is the number of ranges in the range set.
+> **Complexity**: O(log *n*), where *n* is the number of ranges in the range set.
 
 ## Parameters
 

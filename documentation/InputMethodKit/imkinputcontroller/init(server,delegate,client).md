@@ -1,7 +1,8 @@
 # init(server:delegate:client:)
 
 **Framework**: InputMethodKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the input control by setting the delegate.
 
@@ -14,13 +15,17 @@ Initializes the input control by setting the delegate.
 init!(server: IMKServer!, delegate: Any!, client inputClient: Any!)
 ```
 
+```objc
+- (id) initWithServer:(IMKServer *) server delegate:(id) delegate client:(id) inputClient;
+```
+
 #### Return Value
 
 The initialized input controller object.
 
 #### Discussion
 
-Methods in the [`IMKStateSetting`](imkstatesetting.md) and [`IMKMouseHandling`](imkmousehandling.md) protocols that are implemented by the delegate object always include a client parameter. Methods in the `IMKInputController` class do not need to take a client  because the `initWithServer:delegate:client:` method stores the client object you supply as an ivar when it initializes the `IMKInputController` object.
+Methods in the [`IMKStateSetting`](../imkstatesetting.md) and [`IMKMouseHandling`](../imkmousehandling.md) protocols that are implemented by the delegate object always include a client parameter. Methods in the `IMKInputController` class do not need to take a client  because the `initWithServer:delegate:client:` method stores the client object you supply as an ivar when it initializes the `IMKInputController` object.
 
 ## Parameters
 

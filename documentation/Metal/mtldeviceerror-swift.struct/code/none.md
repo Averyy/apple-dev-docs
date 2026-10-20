@@ -1,7 +1,8 @@
 # MTLDeviceError.Code.none
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the absence of any problems.
 
@@ -17,6 +18,10 @@ Indicates the absence of any problems.
 
 ```swift
 case none
+```
+
+```c
+MTLDeviceErrorNone
 ```
 
 

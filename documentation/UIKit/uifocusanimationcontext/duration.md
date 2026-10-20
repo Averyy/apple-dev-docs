@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The duration (measured in seconds) of the focus animation.
@@ -17,6 +18,10 @@ The duration (measured in seconds) of the focus animation.
 
 ```swift
 var duration: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval duration;
 ```
 
 

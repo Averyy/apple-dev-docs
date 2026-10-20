@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the collection is empty.
 
@@ -19,6 +20,8 @@ A Boolean value indicating whether the collection is empty.
 ```swift
 var isEmpty: Bool { get }
 ```
+
+Available when `Base` conforms to `Collection`.
 
 
 ---

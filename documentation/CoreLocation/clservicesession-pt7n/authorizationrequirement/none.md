@@ -1,7 +1,8 @@
 # CLServiceSession.AuthorizationRequirement.none
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,8 +20,9 @@ case none
 
 ## See Also
 
-- [CLServiceSession.AuthorizationRequirement.always](clservicesession-pt7n/authorizationrequirement/always.md)
-- [CLServiceSession.AuthorizationRequirement.whenInUse](clservicesession-pt7n/authorizationrequirement/wheninuse.md)
+### Authorization requirement values
+- [CLServiceSession.AuthorizationRequirement.always](./always.md)
+- [CLServiceSession.AuthorizationRequirement.whenInUse](./wheninuse.md)
 
 
 ---

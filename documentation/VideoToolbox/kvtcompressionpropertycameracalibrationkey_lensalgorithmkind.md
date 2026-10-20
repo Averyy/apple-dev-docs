@@ -1,7 +1,8 @@
 # kVTCompressionPropertyCameraCalibrationKey_LensAlgorithmKind
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -17,26 +18,31 @@
 let kVTCompressionPropertyCameraCalibrationKey_LensAlgorithmKind: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyCameraCalibrationKey_LensAlgorithmKind;
+```
+
 ## Topics
 
 ### Algorithm Kinds
-- [let kVTCameraCalibrationLensAlgorithmKind_ParametricLens: CFString](kvtcameracalibrationlensalgorithmkind_parametriclens.md)
+- [let kVTCameraCalibrationLensAlgorithmKind_ParametricLens: CFString](./kvtcameracalibrationlensalgorithmkind_parametriclens.md)
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_CameraCalibrationDataLensCollection: CFString](kvtcompressionpropertykey_cameracalibrationdatalenscollection.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_ExtrinsicOrientationQuaternion: CFString](kvtcompressionpropertycameracalibrationkey_extrinsicorientationquaternion.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_ExtrinsicOriginSource: CFString](kvtcompressionpropertycameracalibrationkey_extrinsicoriginsource.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrix: CFString](kvtcompressionpropertycameracalibrationkey_intrinsicmatrix.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrixProjectionOffset: CFString](kvtcompressionpropertycameracalibrationkey_intrinsicmatrixprojectionoffset.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrixReferenceDimensions: CFString](kvtcompressionpropertycameracalibrationkey_intrinsicmatrixreferencedimensions.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_LensDistortions: CFString](kvtcompressionpropertycameracalibrationkey_lensdistortions.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_LensDomain: CFString](kvtcompressionpropertycameracalibrationkey_lensdomain.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_LensFrameAdjustmentsPolynomialX: CFString](kvtcompressionpropertycameracalibrationkey_lensframeadjustmentspolynomialx.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_LensFrameAdjustmentsPolynomialY: CFString](kvtcompressionpropertycameracalibrationkey_lensframeadjustmentspolynomialy.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_LensIdentifier: CFString](kvtcompressionpropertycameracalibrationkey_lensidentifier.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_LensRole: CFString](kvtcompressionpropertycameracalibrationkey_lensrole.md)
-- [let kVTCompressionPropertyCameraCalibrationKey_RadialAngleLimit: CFString](kvtcompressionpropertycameracalibrationkey_radialanglelimit.md)
+### Camera Calibration
+- [let kVTCompressionPropertyKey_CameraCalibrationDataLensCollection: CFString](./kvtcompressionpropertykey_cameracalibrationdatalenscollection.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_ExtrinsicOrientationQuaternion: CFString](./kvtcompressionpropertycameracalibrationkey_extrinsicorientationquaternion.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_ExtrinsicOriginSource: CFString](./kvtcompressionpropertycameracalibrationkey_extrinsicoriginsource.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrix: CFString](./kvtcompressionpropertycameracalibrationkey_intrinsicmatrix.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrixProjectionOffset: CFString](./kvtcompressionpropertycameracalibrationkey_intrinsicmatrixprojectionoffset.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_IntrinsicMatrixReferenceDimensions: CFString](./kvtcompressionpropertycameracalibrationkey_intrinsicmatrixreferencedimensions.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensDistortions: CFString](./kvtcompressionpropertycameracalibrationkey_lensdistortions.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensDomain: CFString](./kvtcompressionpropertycameracalibrationkey_lensdomain.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensFrameAdjustmentsPolynomialX: CFString](./kvtcompressionpropertycameracalibrationkey_lensframeadjustmentspolynomialx.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensFrameAdjustmentsPolynomialY: CFString](./kvtcompressionpropertycameracalibrationkey_lensframeadjustmentspolynomialy.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensIdentifier: CFString](./kvtcompressionpropertycameracalibrationkey_lensidentifier.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_LensRole: CFString](./kvtcompressionpropertycameracalibrationkey_lensrole.md)
+- [let kVTCompressionPropertyCameraCalibrationKey_RadialAngleLimit: CFString](./kvtcompressionpropertycameracalibrationkey_radialanglelimit.md)
 
 
 ---

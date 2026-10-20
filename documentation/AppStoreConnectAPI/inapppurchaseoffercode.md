@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCode
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents an In-App Purchase offer code resource.
 
@@ -10,16 +11,16 @@ The data structure that represents an In-App Purchase offer code resource.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCode
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCode.Attributes](inapppurchaseoffercode/attributes-data.dictionary.md)
+- [object InAppPurchaseOfferCode.Attributes](./inapppurchaseoffercode/attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase offer code resource.
-- [object InAppPurchaseOfferCode.Relationships](inapppurchaseoffercode/relationships-data.dictionary.md)
+- [object InAppPurchaseOfferCode.Relationships](./inapppurchaseoffercode/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,39 +29,40 @@ object InAppPurchaseOfferCode
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (InAppPurchaseOfferCode.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchaseOfferCodes`
 
 ## See Also
 
-- [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)
+### Objects and types
+- [object InAppPurchaseOfferCodeResponse](./inapppurchaseoffercoderesponse.md)
   A response that contains a single In-App Purchase offer code resource.
-- [object InAppPurchaseOfferCodeCustomCodesResponse](inapppurchaseoffercodecustomcodesresponse.md)
+- [object InAppPurchaseOfferCodeCustomCodesResponse](./inapppurchaseoffercodecustomcodesresponse.md)
   A response that contains a list of In-App Purchase offer code custom code resources.
-- [object InAppPurchaseOfferCodeCustomCode](inapppurchaseoffercodecustomcode.md)
+- [object InAppPurchaseOfferCodeCustomCode](./inapppurchaseoffercodecustomcode.md)
   The data structure that represents an In-App Purchase offer code custom code resource.
-- [object InAppPurchaseOfferCodeOneTimeUseCodeValue](inapppurchaseoffercodeonetimeusecodevalue.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCodeValue](./inapppurchaseoffercodeonetimeusecodevalue.md)
   The data structure that represents an In-App Purchase offer code one-time use code value resource.
-- [object InAppPurchaseOfferCodeOneTimeUseCodesResponse](inapppurchaseoffercodeonetimeusecodesresponse.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCodesResponse](./inapppurchaseoffercodeonetimeusecodesresponse.md)
   A response that contains a list of In-App Purchase offer code one-time use code resources.
-- [object InAppPurchaseOfferCodeOneTimeUseCode](inapppurchaseoffercodeonetimeusecode.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCode](./inapppurchaseoffercodeonetimeusecode.md)
   The data structure that represents an In-App Purchase offer code one-time use code resource.
-- [object InAppPurchaseOfferCodePricesLinkagesResponse](inapppurchaseoffercodepriceslinkagesresponse.md)
+- [object InAppPurchaseOfferCodePricesLinkagesResponse](./inapppurchaseoffercodepriceslinkagesresponse.md)
   A response that contains a list of In-App Purchase offer code prices linkage resources.
-- [object InAppPurchaseOfferPrice](inapppurchaseofferprice.md)
+- [object InAppPurchaseOfferPrice](./inapppurchaseofferprice.md)
   The data structure that represents an In-App Purchase offer price resource.
-- [object InAppPurchaseOfferPriceInlineCreate](inapppurchaseofferpriceinlinecreate.md)
+- [object InAppPurchaseOfferPriceInlineCreate](./inapppurchaseofferpriceinlinecreate.md)
   The data structure you use to configure an offer price when you create an In-App Purchase offer code.
-- [object InAppPurchaseOfferPricesResponse](inapppurchaseofferpricesresponse.md)
+- [object InAppPurchaseOfferPricesResponse](./inapppurchaseofferpricesresponse.md)
   A response that contains a list of In-App Purchase offer price resources.
-- [object InAppPurchaseOfferCodeCreateRequest](inapppurchaseoffercodecreaterequest.md)
+- [object InAppPurchaseOfferCodeCreateRequest](./inapppurchaseoffercodecreaterequest.md)
   The request body you use to create an In-App Purchase offer code.
-- [object InAppPurchaseOfferCodeCustomCodeCreateRequest](inapppurchaseoffercodecustomcodecreaterequest.md)
+- [object InAppPurchaseOfferCodeCustomCodeCreateRequest](./inapppurchaseoffercodecustomcodecreaterequest.md)
   The request body you use to create an In-App Purchase offer code custom code.
-- [object InAppPurchaseOfferCodeCustomCodeResponse](inapppurchaseoffercodecustomcoderesponse.md)
+- [object InAppPurchaseOfferCodeCustomCodeResponse](./inapppurchaseoffercodecustomcoderesponse.md)
   A response that contains a single In-App Purchase offer code custom code resource.
-- [object InAppPurchaseOfferCodeCustomCodeUpdateRequest](inapppurchaseoffercodecustomcodeupdaterequest.md)
+- [object InAppPurchaseOfferCodeCustomCodeUpdateRequest](./inapppurchaseoffercodecustomcodeupdaterequest.md)
   The request body you use to update an In-App Purchase offer code custom code.
-- [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest](inapppurchaseoffercodeonetimeusecodecreaterequest.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest](./inapppurchaseoffercodeonetimeusecodecreaterequest.md)
   The request body you use to create an In-App Purchase offer code one-time use code.
 
 

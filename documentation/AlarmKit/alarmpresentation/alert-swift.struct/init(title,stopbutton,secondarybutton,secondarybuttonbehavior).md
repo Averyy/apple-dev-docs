@@ -1,14 +1,17 @@
 # init(title:stopButton:secondaryButton:secondaryButtonBehavior:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alert for an alarm.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
+- iOS 26.0+ - Deprecated in 26.1
+- iPadOS 26.0+ - Deprecated in 26.1
+- Mac Catalyst 26.0+ - Deprecated in 26.1
+
+> **Deprecated**: stopButton is deprecated and will no longer be used
 
 ## Declaration
 
@@ -25,7 +28,8 @@ init(title: LocalizedStringResource, stopButton: AlarmButton, secondaryButton: A
 
 ## See Also
 
-- [var stopButton: AlarmButton](alarmpresentation/alert-swift.struct/stopbutton.md)
+### Deprecated
+- [var stopButton: AlarmButton](./stopbutton.md)
   The appearance of the stop button.
 
 

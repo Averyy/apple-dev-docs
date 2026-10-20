@@ -1,7 +1,8 @@
 # readAttributeAverageMeasuredValueWindow(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAverageMeasuredValueWindow(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAverageMeasuredValueWindow() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeAverageMeasuredValueWindowWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

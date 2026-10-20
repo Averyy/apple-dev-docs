@@ -1,21 +1,23 @@
 # hidDescriptorType
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t hidDescriptorType;
 ```
 
 ## See Also
 
-- [hidDescriptorLengthLo](iousbhidreportdesc/hiddescriptorlengthlo.md)
-- [hidDescriptorLengthHi](iousbhidreportdesc/hiddescriptorlengthhi.md)
+### Accessing the Descriptor Properties
+- [hidDescriptorLengthLo](./hiddescriptorlengthlo.md)
+- [hidDescriptorLengthHi](./hiddescriptorlengthhi.md)
 
 
 ---

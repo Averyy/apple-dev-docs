@@ -1,7 +1,8 @@
 # totalPickupsWithoutApplicationActivity
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the number of device pickups without application use.
 
@@ -18,7 +19,8 @@ var totalPickupsWithoutApplicationActivity: Int
 
 ## See Also
 
-- [var firstPickup: Date?](deviceactivitydata/activitysegment/firstpickup.md)
+### Tracking device usage
+- [var firstPickup: Date?](./firstpickup.md)
   Access the first time the person picked up the device during the activity segment.
 
 

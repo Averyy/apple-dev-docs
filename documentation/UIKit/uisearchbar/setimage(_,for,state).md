@@ -1,7 +1,8 @@
 # setImage(_:for:state:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the image for a given search bar icon type and control state.
 
@@ -9,7 +10,7 @@ Sets the image for a given search bar icon type and control state.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,35 +19,42 @@ Sets the image for a given search bar icon type and control state.
 func setImage(_ iconImage: UIImage?, for icon: UISearchBar.Icon, state: UIControl.State)
 ```
 
+```objc
+- (void) setImage:(UIImage *) iconImage forSearchBarIcon:(UISearchBarIcon) icon state:(UIControlState) state;
+```
+
 ## Parameters
 
 - `iconImage`: The image to use for the search bar icon identified by `icon` in the state identified by `state`.
 - `icon`: An icon identifier constant.
-- `state`: A control state. Valid states are [`normal`](uicontrol/state-swift.struct/normal.md) and [`disabled`](uicontrol/state-swift.struct/disabled.md).
+- `state`: A control state.
+
+  Valid states are [`normal`](../uicontrol/state-swift.struct/normal.md) and [`disabled`](../uicontrol/state-swift.struct/disabled.md).
 
 ## See Also
 
-- [var backgroundImage: UIImage?](uisearchbar/backgroundimage.md)
+### Customizing the search bar appearance
+- [var backgroundImage: UIImage?](./backgroundimage.md)
   The background image for the search bar.
-- [func backgroundImage(for: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](uisearchbar/backgroundimage(for:barmetrics:).md)
+- [func backgroundImage(for: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](./backgroundimage%28for,barmetrics%29.md)
   Returns the image used for the background in a given position and with given metrics.
-- [func setBackgroundImage(UIImage?, for: UIBarPosition, barMetrics: UIBarMetrics)](uisearchbar/setbackgroundimage(_:for:barmetrics:).md)
+- [func setBackgroundImage(UIImage?, for: UIBarPosition, barMetrics: UIBarMetrics)](./setbackgroundimage%28_,for,barmetrics%29.md)
   Sets the image to use for the background in a given position and with given metrics.
-- [func image(for: UISearchBar.Icon, state: UIControl.State) -> UIImage?](uisearchbar/image(for:state:).md)
+- [func image(for: UISearchBar.Icon, state: UIControl.State) -> UIImage?](./image%28for,state%29.md)
   Returns the image for a given search bar icon type and control state.
-- [func positionAdjustment(for: UISearchBar.Icon) -> UIOffset](uisearchbar/positionadjustment(for:).md)
+- [func positionAdjustment(for: UISearchBar.Icon) -> UIOffset](./positionadjustment%28for%29.md)
   Returns the position adjustment for a given icon.
-- [func setPositionAdjustment(UIOffset, for: UISearchBar.Icon)](uisearchbar/setpositionadjustment(_:for:).md)
+- [func setPositionAdjustment(UIOffset, for: UISearchBar.Icon)](./setpositionadjustment%28_,for%29.md)
   Returns the position adjustment for a given icon.
-- [var inputAccessoryView: UIView?](uisearchbar/inputaccessoryview.md)
+- [var inputAccessoryView: UIView?](./inputaccessoryview.md)
   A custom input accessory view for the keyboard of the search bar.
-- [func searchFieldBackgroundImage(for: UIControl.State) -> UIImage?](uisearchbar/searchfieldbackgroundimage(for:).md)
+- [func searchFieldBackgroundImage(for: UIControl.State) -> UIImage?](./searchfieldbackgroundimage%28for%29.md)
   Returns the search text field image for a given state.
-- [func setSearchFieldBackgroundImage(UIImage?, for: UIControl.State)](uisearchbar/setsearchfieldbackgroundimage(_:for:).md)
+- [func setSearchFieldBackgroundImage(UIImage?, for: UIControl.State)](./setsearchfieldbackgroundimage%28_,for%29.md)
   Sets the search text field image for a given state.
-- [var searchFieldBackgroundPositionAdjustment: UIOffset](uisearchbar/searchfieldbackgroundpositionadjustment.md)
+- [var searchFieldBackgroundPositionAdjustment: UIOffset](./searchfieldbackgroundpositionadjustment.md)
   The offset of the search text field background in the search bar.
-- [var searchTextPositionAdjustment: UIOffset](uisearchbar/searchtextpositionadjustment.md)
+- [var searchTextPositionAdjustment: UIOffset](./searchtextpositionadjustment.md)
   The offset of the text within the search text field background.
 
 

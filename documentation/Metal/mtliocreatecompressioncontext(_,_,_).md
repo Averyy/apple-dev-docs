@@ -1,7 +1,8 @@
 # MTLIOCreateCompressionContext(_:_:_:)
 
 **Framework**: Metal  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a compression context that you use to compress data into a single file.
 
@@ -11,7 +12,7 @@ Creates a compression context that you use to compress data into a single file.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,17 +28,18 @@ func MTLIOCreateCompressionContext(_ path: String, _ type: MTLIOCompressionMetho
 
 ## See Also
 
-- [enum MTLIOCompressionMethod](mtliocompressionmethod.md)
+### Asset compression
+- [enum MTLIOCompressionMethod](./mtliocompressionmethod.md)
   The compression codecs that Metal supports for input/output handles.
-- [func MTLIOCompressionContextDefaultChunkSize() -> Int](mtliocompressioncontextdefaultchunksize().md)
+- [func MTLIOCompressionContextDefaultChunkSize() -> Int](./mtliocompressioncontextdefaultchunksize%28%29.md)
   Returns a compression chunk size you can use as a default for creating a compression context.
-- [typealias MTLIOCompressionContext](mtliocompressioncontext.md)
+- [typealias MTLIOCompressionContext](./mtliocompressioncontext.md)
   A pointer that represents the state of a file compression session in progress.
-- [func MTLIOCompressionContextAppendData(MTLIOCompressionContext, UnsafeRawPointer, Int)](mtliocompressioncontextappenddata(_:_:_:).md)
+- [func MTLIOCompressionContextAppendData(MTLIOCompressionContext, UnsafeRawPointer, Int)](./mtliocompressioncontextappenddata%28_,_,_%29.md)
   Adds data to a compression context.
-- [func MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext) -> MTLIOCompressionStatus](mtlioflushanddestroycompressioncontext(_:).md)
+- [func MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext) -> MTLIOCompressionStatus](./mtlioflushanddestroycompressioncontext%28_%29.md)
   Finishes compressing and saves the file that a compression context represents.
-- [enum MTLIOCompressionStatus](mtliocompressionstatus.md)
+- [enum MTLIOCompressionStatus](./mtliocompressionstatus.md)
   Represents the final state of a compression context.
 
 

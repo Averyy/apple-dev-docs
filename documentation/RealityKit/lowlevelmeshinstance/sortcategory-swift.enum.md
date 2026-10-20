@@ -1,7 +1,8 @@
 # LowLevelMeshInstance.SortCategory
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The sort category of this mesh instance.
 
@@ -20,22 +21,23 @@ enum SortCategory
 ## Topics
 
 ### Identifying sort categories
-- [LowLevelMeshInstance.SortCategory.opaque](lowlevelmeshinstance/sortcategory-swift.enum/opaque.md)
+- [LowLevelMeshInstance.SortCategory.opaque](./sortcategory-swift.enum/opaque.md)
   An opaque draw call that renders before all transparent instances.
-- [LowLevelMeshInstance.SortCategory.transparent](lowlevelmeshinstance/sortcategory-swift.enum/transparent.md)
+- [LowLevelMeshInstance.SortCategory.transparent](./sortcategory-swift.enum/transparent.md)
   A transparent draw call sorted back-to-front by distance from the camera.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sortCategory: LowLevelMeshInstance.SortCategory](lowlevelmeshinstance/sortcategory-swift.property.md)
+### Sorting instances
+- [var sortCategory: LowLevelMeshInstance.SortCategory](./sortcategory-swift.property.md)
   The sort category of this mesh instance.
 
 

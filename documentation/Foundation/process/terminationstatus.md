@@ -1,7 +1,8 @@
 # terminationStatus
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exit status the receiver’s executable returns.
 
@@ -13,6 +14,10 @@ The exit status the receiver’s executable returns.
 
 ```swift
 var terminationStatus: Int32 { get }
+```
+
+```objc
+@property (readonly) int terminationStatus;
 ```
 
 #### Return Value
@@ -55,13 +60,15 @@ if (![task isRunning]) {
 
 ## See Also
 
-- [func waitUntilExit()](process/waituntilexit.md)
+### Related Documentation
+- [func waitUntilExit()](./waituntilexit%28%29.md)
   Blocks the process until the receiver is finished.
-- [func terminate()](process/terminate.md)
+- [func terminate()](./terminate%28%29.md)
   Sends a terminate signal to the receiver and all of its subtasks.
-- [var isRunning: Bool](process/isrunning.md)
+### Querying the process state
+- [var isRunning: Bool](./isrunning.md)
   A status that indicates whether the receiver is still running.
-- [var terminationReason: Process.TerminationReason](process/terminationreason-swift.property.md)
+- [var terminationReason: Process.TerminationReason](./terminationreason-swift.property.md)
   The reason the system terminated the task.
 
 

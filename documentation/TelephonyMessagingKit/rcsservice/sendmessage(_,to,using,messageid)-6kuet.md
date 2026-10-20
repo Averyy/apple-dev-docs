@@ -1,7 +1,8 @@
 # sendMessage(_:to:using:messageID:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a reaction message to a specified destination.
 
@@ -16,11 +17,11 @@ final func sendMessage(_ content: RCSMessage.Reaction, to destination: RCSHandle
 
 #### Discussion
 
-> **Note**:  If the reaction content is not a valid emoji sequence, this method throws [`RCSService.Error.invalidArgument`](rcsservice/error/invalidargument.md).
+> **Throws**:  If the reaction content is not a valid emoji sequence, this method throws [`RCSService.Error.invalidArgument`](./error/invalidargument.md).
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of [`RCSMessage.Reaction`](rcsmessage/reaction.md).
+- `content`: The content of the message to send, as an instance of [`RCSMessage.Reaction`](../rcsmessage/reaction.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.

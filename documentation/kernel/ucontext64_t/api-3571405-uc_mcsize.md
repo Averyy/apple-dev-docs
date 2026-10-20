@@ -1,14 +1,15 @@
 # uc_mcsize
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 __darwin_size_t uc_mcsize;
 ```
 

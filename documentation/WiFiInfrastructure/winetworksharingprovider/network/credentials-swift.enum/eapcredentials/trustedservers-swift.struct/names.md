@@ -1,7 +1,8 @@
 # names
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of trusted server names the framework uses to verify a server’s certificates.
 

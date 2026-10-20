@@ -1,21 +1,22 @@
 # Subscription.Relationships.Versions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object Subscription.Relationships.Versions
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object Subscription.Relationships.Versions.Data](subscription/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
+- [object Subscription.Relationships.Versions.Data](./versions-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

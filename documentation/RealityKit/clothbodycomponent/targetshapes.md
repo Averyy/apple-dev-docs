@@ -1,7 +1,8 @@
 # targetShapes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target shapes associated with the body.
 
@@ -22,7 +23,8 @@ Target shapes pull the body towards a mix of animatable shapes.
 
 ## See Also
 
-- [ClothBodyComponent.TargetShape](clothbodycomponent/targetshape.md)
+### Defining target shapes
+- [ClothBodyComponent.TargetShape](./targetshape.md)
   Pulls particles of a cloth body toward positions in either local or simulation space.
 
 

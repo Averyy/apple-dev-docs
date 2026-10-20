@@ -1,7 +1,8 @@
 # unsupportedForPresetOnPlatform
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that resumption isn’t supported for this preset and platform combination.
 
@@ -19,17 +20,22 @@ Indicates that resumption isn’t supported for this preset and platform combina
 static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason
 ```
 
+```c
+extern AVAssetExportSessionResumptionFailureReason const AVAssetExportSessionResumptionFailureReasonUnsupportedForPresetOnPlatform;
+```
+
 #### Discussion
 
 You can continue the export, but it runs as a non-resumable (default) export.
 
 ## See Also
 
-- [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatiblesessionsettings.md)
+### Failure reasons
+- [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](./incompatiblesessionsettings.md)
   Indicates the export session settings are incompatible with resumable export.
-- [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatibletemporarydirectorycontents.md)
+- [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](./incompatibletemporarydirectorycontents.md)
   Indicates that the contents of the specified temporary files directory are inconsistent with the current resuming export.
-- [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/temporarydirectorydoesnotexist.md)
+- [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](./temporarydirectorydoesnotexist.md)
   Indicates that the specified temporary files directory doesn’t exist.
 
 

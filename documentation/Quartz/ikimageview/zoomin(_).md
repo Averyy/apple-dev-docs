@@ -1,7 +1,8 @@
 # zoomIn(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Zooms the image in.
 
@@ -15,33 +16,38 @@ Zooms the image in.
 func zoomIn(_ sender: Any!)
 ```
 
+```objc
+- (void) zoomIn:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: Typically the object that invoked this method.
 
 ## See Also
 
-- [func setRotationAngle(CGFloat, center: NSPoint)](ikimageview/setrotationangle(_:center:).md)
+### Manipulating the Image in a View
+- [func setRotationAngle(CGFloat, center: NSPoint)](./setrotationangle%28_,center%29.md)
   Sets the rotation angle at the provided origin.
-- [func setImageZoomFactor(CGFloat, center: NSPoint)](ikimageview/setimagezoomfactor(_:center:).md)
+- [func setImageZoomFactor(CGFloat, center: NSPoint)](./setimagezoomfactor%28_,center%29.md)
   Sets the zoom factor at the provided origin.
-- [func zoomImageToFit(Any!)](ikimageview/zoomimagetofit(_:).md)
+- [func zoomImageToFit(Any!)](./zoomimagetofit%28_%29.md)
   Zooms the image so that it fits in the image view.
-- [func zoomImageToActualSize(Any!)](ikimageview/zoomimagetoactualsize(_:).md)
+- [func zoomImageToActualSize(Any!)](./zoomimagetoactualsize%28_%29.md)
   Zooms the image so that it is displayed using its true size.
-- [func zoomImage(to: NSRect)](ikimageview/zoomimage(to:).md)
+- [func zoomImage(to: NSRect)](./zoomimage%28to%29.md)
   Zooms the image so that it fits in the specified rectangle.
-- [func zoomOut(Any!)](ikimageview/zoomout(_:).md)
+- [func zoomOut(Any!)](./zoomout%28_%29.md)
   Zooms the image out.
-- [func crop(Any!)](ikimageview/crop(_:).md)
+- [func crop(Any!)](./crop%28_%29.md)
   Crops the image using the current selection.
-- [func flipImageHorizontal(Any!)](ikimageview/flipimagehorizontal(_:).md)
+- [func flipImageHorizontal(Any!)](./flipimagehorizontal%28_%29.md)
   Flips an image along the horizontal axis.
-- [func flipImageVertical(Any!)](ikimageview/flipimagevertical(_:).md)
+- [func flipImageVertical(Any!)](./flipimagevertical%28_%29.md)
   Flips an image along the vertical axis.
-- [func rotateImageLeft(Any!)](ikimageview/rotateimageleft(_:).md)
+- [func rotateImageLeft(Any!)](./rotateimageleft%28_%29.md)
   Rotates the image left (counter-clockwise).
-- [func rotateImageRight(Any!)](ikimageview/rotateimageright(_:).md)
+- [func rotateImageRight(Any!)](./rotateimageright%28_%29.md)
   Rotates the image right (clockwise).
 
 

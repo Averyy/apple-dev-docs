@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language setting.
 
@@ -16,11 +17,12 @@ var language: NLLanguage?
 
 ## See Also
 
-- [var algorithm: MLWordTagger.ModelAlgorithmType](mlwordtagger/modelparameters-swift.struct/algorithm.md)
+### Accessing parameters
+- [var algorithm: MLWordTagger.ModelAlgorithmType](./algorithm.md)
   The algorithm type.
-- [var validation: MLWordTagger.ModelParameters.ValidationData](mlwordtagger/modelparameters-swift.struct/validation.md)
+- [var validation: MLWordTagger.ModelParameters.ValidationData](./validation.md)
   The validation dataset.
-- [var maxIterations: Int?](mlwordtagger/modelparameters-swift.struct/maxiterations.md)
+- [var maxIterations: Int?](./maxiterations.md)
   The maximum training iterations.
 
 

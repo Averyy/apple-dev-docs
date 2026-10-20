@@ -1,22 +1,27 @@
 # info
 
 **Framework**: System Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A C pointer to a user-specified block of data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var info: UnsafeMutableRawPointer?
+```
+
+```c
+void * info;
 ```
 
 

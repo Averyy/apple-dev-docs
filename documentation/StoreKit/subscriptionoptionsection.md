@@ -1,7 +1,8 @@
 # SubscriptionOptionSection
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,31 +23,32 @@
 ## Topics
 
 ### Creating subscription option sections
-- [init(LocalizedStringKey, isIncluded: (Product) -> Bool, footer: () -> Footer)](subscriptionoptionsection/init(_:isincluded:footer:)-17lo3.md)
-- [init(some StringProtocol, isIncluded: (Product) -> Bool, footer: () -> Footer)](subscriptionoptionsection/init(_:isincluded:footer:)-36k79.md)
-- [init(isIncluded: (Product) -> Bool, header: () -> Header, footer: () -> Footer)](subscriptionoptionsection/init(isincluded:header:footer:).md)
+- [init(LocalizedStringKey, isIncluded: (Product) -> Bool, footer: () -> Footer)](./subscriptionoptionsection/init%28_,isincluded,footer%29-17lo3.md)
+- [init(some StringProtocol, isIncluded: (Product) -> Bool, footer: () -> Footer)](./subscriptionoptionsection/init%28_,isincluded,footer%29-36k79.md)
+- [init(isIncluded: (Product) -> Bool, header: () -> Header, footer: () -> Footer)](./subscriptionoptionsection/init%28isincluded,header,footer%29.md)
 ### Choosing a subscription option group style
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
-](../swiftui/view/subscriptionstoreoptiongroupstyle(_:).md)
+](../SwiftUI/view/subscriptionstoreoptiongroupstyle%28_%29.md)
   Sets the style subscription store views within this view use to display groups of subscription options.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StoreContent](storecontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [StoreContent](./storecontent.md)
 
 ## See Also
 
-- [struct SubscriptionOptionGroup](subscriptionoptiongroup.md)
+### Declaring the structure of a subscription store
+- [struct SubscriptionOptionGroup](./subscriptionoptiongroup.md)
   A group of subscription options that includes optional views for labels and marketing content.
-- [struct SubscriptionOptionGroupSet](subscriptionoptiongroupset.md)
+- [struct SubscriptionOptionGroupSet](./subscriptionoptiongroupset.md)
   A set of groups of subscription options that include optional views for labels and marketing content.
-- [struct SubscriptionPeriodGroupSet](subscriptionperiodgroupset.md)
-- [protocol StoreContent](storecontent.md)
+- [struct SubscriptionPeriodGroupSet](./subscriptionperiodgroupset.md)
+- [protocol StoreContent](./storecontent.md)
   A type that represents the content of a store.
-- [struct StoreContentBuilder](storecontentbuilder.md)
+- [struct StoreContentBuilder](./storecontentbuilder.md)
   A result builder that creates store content from closures that you provide.
 
 

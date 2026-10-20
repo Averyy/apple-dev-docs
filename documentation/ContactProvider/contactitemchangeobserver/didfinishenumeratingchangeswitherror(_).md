@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Finishes the change enumeration with an error, indicating failure, to the observer.
@@ -22,9 +23,10 @@ Use `ContactProviderError.changeAnchorExpired` to restart the content enumeratio
 
 ## See Also
 
-- [func didFinishEnumeratingChanges(upTo: ContactItemSyncAnchor, moreComing: Bool)](contactitemchangeobserver/didfinishenumeratingchanges(upto:morecoming:).md)
+### Ending enumeration
+- [func didFinishEnumeratingChanges(upTo: ContactItemSyncAnchor, moreComing: Bool)](./didfinishenumeratingchanges%28upto,morecoming%29.md)
   Marks a sync anchor of changed contact items as completed.
-- [struct ContactItemSyncAnchor](contactitemsyncanchor.md)
+- [struct ContactItemSyncAnchor](../contactitemsyncanchor.md)
   A snapshot point into enumerating changed contact items.
 
 

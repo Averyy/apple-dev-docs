@@ -1,7 +1,8 @@
 # init(named:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads the texture with the specified filename from the app’s main bundle.
 
@@ -19,13 +20,17 @@ Loads the texture with the specified filename from the app’s main bundle.
 convenience init?(named name: String)
 ```
 
+```objc
++ (instancetype) textureNamed:(NSString *) name;
+```
+
 #### Return Value
 
 A new texture object for the specified image file, or `nil` if no such file exists.
 
 #### Discussion
 
-Calling this method immediately loads image data from the specified file. To instead create a texture object referencing a file and defer loading image data, use the [`MDLURLTexture`](mdlurltexture.md) class.
+Calling this method immediately loads image data from the specified file. To instead create a texture object referencing a file and defer loading image data, use the [`MDLURLTexture`](../mdlurltexture.md) class.
 
 This method does not cache the texture objects it creates; calling this method again with the same `name` parameter as a previous call will load image data from the file again.
 
@@ -35,11 +40,12 @@ This method does not cache the texture objects it creates; calling this method a
 
 ## See Also
 
-- [convenience init?(named: String, bundle: Bundle?)](mdltexture/init(named:bundle:).md)
+### Loading Textures from a Bundle
+- [convenience init?(named: String, bundle: Bundle?)](./init%28named,bundle%29.md)
   Loads the texture with the specified filename from the specified bundle.
-- [convenience init?(cubeWithImagesNamed: [String])](mdltexture/init(cubewithimagesnamed:).md)
+- [convenience init?(cubeWithImagesNamed: [String])](./init%28cubewithimagesnamed%29.md)
   Loads a cube texture from the specified image files in the app’s main bundle.
-- [convenience init?(cubeWithImagesNamed: [String], bundle: Bundle?)](mdltexture/init(cubewithimagesnamed:bundle:).md)
+- [convenience init?(cubeWithImagesNamed: [String], bundle: Bundle?)](./init%28cubewithimagesnamed,bundle%29.md)
   Loads a cube texture from the specified image files in the specified bundle.
 
 

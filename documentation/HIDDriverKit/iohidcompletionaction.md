@@ -1,17 +1,18 @@
 # IOHIDCompletionAction
 
 **Framework**: HIDDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A function to call when a report operation completes.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef void (*)(void *, void *, int, unsigned int) IOHIDCompletionAction;
 ```
 
@@ -23,11 +24,12 @@ typedef void (*)(void *, void *, int, unsigned int) IOHIDCompletionAction;
 
 ## See Also
 
-- [IOHIDCompletion](iohidcompletion.md)
+### Internal Structures
+- [IOHIDCompletion](./iohidcompletion.md)
   A structure specifying the action to perform when a set/get report completes.
-- [HIDReportCommandType](hidreportcommandtype.md)
+- [HIDReportCommandType](./hidreportcommandtype.md)
   The type of the report command for a DriverKit driver.
-- [HIDActionType](hidactiontype.md)
+- [HIDActionType](./hidactiontype.md)
 
 
 ---

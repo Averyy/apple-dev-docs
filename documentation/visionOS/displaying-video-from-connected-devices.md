@@ -1,6 +1,8 @@
 # Displaying video from connected devices
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [DisplayingVideoFromConnectedDevices.zip](https://docs-assets.developer.apple.com/published/8f55dc525fb3/DisplayingVideoFromConnectedDevices.zip)
 
 Show video from devices connected with the Developer Strap in your visionOS app.
 
@@ -10,15 +12,15 @@ Show video from devices connected with the Developer Strap in your visionOS app.
 
 #### Overview
 
-Apple’s audiovisual frameworks allow your visionOS app to access video from USB video class (UVC) devices connected with the [`Developer Strap`](https://developer.apple.comhttps://developer.apple.com/visionos/developer-strap/purchase) for Apple Vision Pro. You can use this functionality to display real-time video in your app. For example, a medical professional can view the output from an endoscopic camera during a procedure. This article outlines the requirements to access UVC devices in visionOS. The sample code project shows a picker for each device connected to Apple Vision Pro, and displays the selected device’s video feed.
+Apple’s audiovisual frameworks allow your visionOS app to access video from USB video class (UVC) devices connected with the [Developer Strap](https://developer.apple.com/visionos/developer-strap/purchase) for Apple Vision Pro. You can use this functionality to display real-time video in your app. For example, a medical professional can view the output from an endoscopic camera during a procedure. This article outlines the requirements to access UVC devices in visionOS. The sample code project shows a picker for each device connected to Apple Vision Pro, and displays the selected device’s video feed.
 
-##### Add Usage Descriptions for Camera Access
+##### Add usage descriptions for camera access
 
-To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) to your app’s information property list file to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to camera data.
+To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSCameraUsageDescription`](../BundleResources/information-property-list/nscamerausagedescription.md) to your app’s information property list file to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to camera data.
 
-##### Create the Device Picker
+##### Create the device picker
 
-Use an [`AVCaptureDevice.DiscoverySession`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/discoverysession) to obtain an array of connected devices.
+Use an [`AVCaptureDevice.DiscoverySession`](../AVFoundation/avcapturedevice/discoverysession.md) to obtain an array of connected devices.
 
 ```swift
 // ConnectionManager
@@ -37,7 +39,7 @@ private func updateDeviceList() {
     }
 ```
 
-Next, observe [`wasConnectedNotification`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/wasconnectednotification) and [`wasDisconnectedNotification`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/wasdisconnectednotification) to update the array when a device connects or disconnects.
+Next, observe [`wasConnectedNotification`](../AVFoundation/avcapturedevice/wasconnectednotification.md) and [`wasDisconnectedNotification`](../AVFoundation/avcapturedevice/wasdisconnectednotification.md) to update the array when a device connects or disconnects.
 
 ```swift
 // ConnectionManager
@@ -72,9 +74,9 @@ Picker("Device Picker", selection: $previewManager.selectedDevice) {
 }
 ```
 
-##### Display the Selected Devices Video Feed
+##### Display the selected device’s video feed
 
-Configure an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) to capture [`AVCaptureDeviceInput`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput) from the selected device and output it to an [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput).
+Configure an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) to capture [`AVCaptureDeviceInput`](../AVFoundation/avcapturedeviceinput.md) from the selected device and output it to an [`AVCaptureVideoDataOutput`](../AVFoundation/avcapturevideodataoutput.md).
 
 ```swift
 // CaptureManager
@@ -140,7 +142,7 @@ func select(device: Device?) {
 }
 ```
 
-Call [`startRunning()`](https://developer.apple.com/documentation/avfoundation/avcapturesession/startrunning()) on the capture session to start the flow of data from the capture session’s inputs to its outputs.
+Call [`startRunning()`](../AVFoundation/avcapturesession/startrunning%28%29.md) on the capture session to start the flow of data from the capture session’s inputs to its outputs.
 
 ```swift
 // CaptureManager
@@ -151,7 +153,7 @@ func start() {
 }
 ```
 
-`AVCaptureSession` delivers a steady stream of updates to the [`AVCaptureVideoDataOutputSampleBufferDelegate`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutputsamplebufferdelegate) assigned to the `AVCaptureVideoDataOutput`. Each update includes a [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) that contains the latest video frame from the device. Render the `CMSampleBuffer` to an [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer) using the layer’s [`AVSampleBufferVideoRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebuffervideorenderer).
+`AVCaptureSession` delivers a steady stream of updates to the [`AVCaptureVideoDataOutputSampleBufferDelegate`](../AVFoundation/avcapturevideodataoutputsamplebufferdelegate.md) assigned to the `AVCaptureVideoDataOutput`. Each update includes a [`CMSampleBuffer`](../CoreMedia/cmsamplebuffer.md) that contains the latest video frame from the device. Render the `CMSampleBuffer` to an [`AVSampleBufferDisplayLayer`](../AVFoundation/avsamplebufferdisplaylayer.md) using the layer’s [`AVSampleBufferVideoRenderer`](../AVFoundation/avsamplebuffervideorenderer.md).
 
 ```swift
 // CaptureManager
@@ -173,7 +175,7 @@ extension CaptureManager: AVCaptureVideoDataOutputSampleBufferDelegate {
 }
 ```
 
-Add the `AVSampleBufferDisplayLayer` to a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) and use a [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) to display the `UIView` in a SwiftUI view.
+Add the `AVSampleBufferDisplayLayer` to a [`UIView`](../UIKit/uiview.md) and use a [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) to display the `UIView` in a SwiftUI view.
 
 ```swift
 struct DevicePreview: UIViewRepresentable {
@@ -218,29 +220,30 @@ struct DevicePreview: UIViewRepresentable {
 }
 ```
 
-##### Display a Prompt When Denying Access to the Camera
+##### Display a prompt when denying access to the camera
 
-If the person denies camera access, the sample app prompts them to grant access in the Settings app. For more information about providing camera access in your app, see [`Requesting authorization to capture and save media`](https://developer.apple.com/documentation/avfoundation/requesting-authorization-to-capture-and-save-media).
+If the person denies camera access, the sample app prompts them to grant access in the Settings app. For more information about providing camera access in your app, see [Requesting authorization to capture and save media](../AVFoundation/requesting-authorization-to-capture-and-save-media.md).
 
 ## See Also
 
-- [Destination Video](destination-video.md)
+### Video playback
+- [Destination Video](./destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Playing immersive media with RealityKit](playing-immersive-media-with-realitykit.md)
+- [Playing immersive media with RealityKit](./playing-immersive-media-with-realitykit.md)
   Create an immersive video playback experience with RealityKit.
-- [Rendering stereoscopic video with RealityKit](../realitykit/rendering-stereoscopic-video-with-realitykit.md)
+- [Rendering stereoscopic video with RealityKit](../RealityKit/rendering-stereoscopic-video-with-realitykit.md)
   Render stereoscopic video in visionOS with RealityKit.
-- [Creating a multiview video playback experience in visionOS](../avkit/creating-a-multiview-video-playback-experience-in-visionos.md)
+- [Creating a multiview video playback experience in visionOS](../AVKit/creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
-- [Configuring your app for media playback](../avfoundation/configuring-your-app-for-media-playback.md)
+- [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md)
   Configure apps to enable standard media playback behavior.
-- [Adopting the system player interface in visionOS](../avkit/adopting-the-system-player-interface-in-visionos.md)
+- [Adopting the system player interface in visionOS](../AVKit/adopting-the-system-player-interface-in-visionos.md)
   Provide an optimized viewing experience for watching 3D video content.
-- [Controlling the transport behavior of a player](../avfoundation/controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](../AVFoundation/controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
-- [Monitoring playback progress in your app](../avfoundation/monitoring-playback-progress-in-your-app.md)
+- [Monitoring playback progress in your app](../AVFoundation/monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
-- [Trimming and exporting media in visionOS](../avkit/trimming-and-exporting-media-in-visionos.md)
+- [Trimming and exporting media in visionOS](../AVKit/trimming-and-exporting-media-in-visionos.md)
   Display standard controls in your app to edit the timeline of the currently playing media.
 
 

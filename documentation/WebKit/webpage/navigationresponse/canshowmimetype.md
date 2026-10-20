@@ -1,7 +1,8 @@
 # canShowMimeType
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether WebKit is capable of displaying the response’s MIME type natively.
 

@@ -1,7 +1,8 @@
 # isInsertion
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return `true` if the selection is an insertion point.
 

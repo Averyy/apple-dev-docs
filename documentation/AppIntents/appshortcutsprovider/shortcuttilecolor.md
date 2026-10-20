@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The background color of the tile that Shortcuts displays for each of the app’s App Shortcuts.
@@ -12,7 +13,7 @@ The background color of the tile that Shortcuts displays for each of the app’s
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,9 +22,16 @@ The background color of the tile that Shortcuts displays for each of the app’s
 static var shortcutTileColor: ShortcutTileColor { get }
 ```
 
+## Default Implementations
+
+### AppShortcutsProvider Implementations
+- [static var shortcutTileColor: ShortcutTileColor](./shortcuttilecolor-png1.md)
+  The background color of the tile that Shortcuts displays for each of the app’s App Shortcuts.
+
 ## See Also
 
-- [enum ShortcutTileColor](shortcuttilecolor.md)
+### Configuring shortcut tiles
+- [enum ShortcutTileColor](../shortcuttilecolor.md)
   Describes the colors a shortcut tile in the Shortcuts app.
 
 

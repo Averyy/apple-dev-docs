@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layout manager from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a layout manager from data in an unarchiver.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Creates a layout manager from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
-- `coder`: A coder that implements [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder).
+- `coder`: A coder that implements [`NSCoder`](../../Foundation/nscoder.md).
 
 ## See Also
 
-- [init()](nslayoutmanager/init.md)
+### Creating a layout manager
+- [init()](./init%28%29.md)
   Initializes a newly created layout manager object.
 
 

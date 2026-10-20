@@ -1,7 +1,8 @@
 # changingLayout(to:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy with the specified buffer layout.
 
@@ -19,6 +20,8 @@ Returns a copy with the specified buffer layout.
 ```swift
 func changingLayout(to bufferLayout: MLShapedArrayBufferLayout) -> MLShapedArray<Scalar>
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
 #### Discussion
 
@@ -51,15 +54,16 @@ It raises a precondition error if the custom strides and the shape have differen
 
 ## See Also
 
-- [func expandingShape(at: Int) -> MLShapedArray<Scalar>](mlshapedarray/expandingshape(at:).md)
+### Shaping the array
+- [func expandingShape(at: Int) -> MLShapedArray<Scalar>](./expandingshape%28at%29.md)
   Returns a new shaped array with expanded dimensions.
-- [func reshaped(to: [Int]) -> MLShapedArray<Scalar>](mlshapedarray/reshaped(to:).md)
+- [func reshaped(to: [Int]) -> MLShapedArray<Scalar>](./reshaped%28to%29.md)
   Returns a new reshaped shaped array.
-- [func squeezingShape() -> MLShapedArray<Scalar>](mlshapedarray/squeezingshape.md)
+- [func squeezingShape() -> MLShapedArray<Scalar>](./squeezingshape%28%29.md)
   Returns a new squeezed shaped array.
-- [func transposed() -> MLShapedArray<Scalar>](mlshapedarray/transposed.md)
+- [func transposed() -> MLShapedArray<Scalar>](./transposed%28%29.md)
   Returns a new transposed shaped array.
-- [func transposed(permutation: [Int]) -> MLShapedArray<Scalar>](mlshapedarray/transposed(permutation:).md)
+- [func transposed(permutation: [Int]) -> MLShapedArray<Scalar>](./transposed%28permutation%29.md)
   Returns a transposed shaped array using a custom permutation.
 
 

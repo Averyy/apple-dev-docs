@@ -1,7 +1,8 @@
 # keyCertSign
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `KeyCertSign` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `KeyCertSign` bit is set in KeyUsage extension.
 
 ```swift
 static var keyCertSign: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageKeyCertSign
 ```
 
 

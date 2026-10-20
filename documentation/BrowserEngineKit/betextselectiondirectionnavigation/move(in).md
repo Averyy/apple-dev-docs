@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Moves the cursor in the specified directions, such as in response to an arrow key press.
@@ -18,9 +19,14 @@ Moves the cursor in the specified directions, such as in response to an arrow ke
 func move(in direction: UITextLayoutDirection)
 ```
 
+```objc
+- (void) moveInLayoutDirection:(UITextLayoutDirection) direction;
+```
+
 ## See Also
 
-- [func move(in: UITextStorageDirection, by: UITextGranularity)](betextselectiondirectionnavigation/move(in:by:).md)
+### Moving the cursor
+- [func move(in: UITextStorageDirection, by: UITextGranularity)](./move%28in,by%29.md)
   Moves the cursor in the specified directions by granularity, in response to different key combinations:
 
 

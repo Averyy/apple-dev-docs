@@ -1,7 +1,8 @@
 # numberOfSections(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the data source to return the number of sections in the table view.
 
@@ -9,13 +10,17 @@ Asks the data source to return the number of sections in the table view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func numberOfSections(in tableView: UITableView) -> Int
+```
+
+```objc
+- (NSInteger) numberOfSectionsInTableView:(UITableView *) tableView;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ If you don’t implement this method, the table configures the table with one se
 
 ## See Also
 
-- [func tableView(UITableView, numberOfRowsInSection: Int) -> Int](uitableviewdatasource/tableview(_:numberofrowsinsection:).md)
+### Providing the number of rows and sections
+- [func tableView(UITableView, numberOfRowsInSection: Int) -> Int](./tableview%28_,numberofrowsinsection%29.md)
   Tells the data source to return the number of rows in a given section of a table view.
 
 

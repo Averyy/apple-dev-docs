@@ -1,7 +1,8 @@
 # TextureResource.Dimensions2D
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The dimensions of a 2D texture.
 
@@ -26,16 +27,16 @@ This specifies the width and height of a 2D texture.
 ## Topics
 
 ### Creating the 2D dimensions
-- [static func dimensions(width: Int, height: Int) -> TextureResource.Dimensions2D](textureresource/dimensions2d/dimensions(width:height:).md)
+- [static func dimensions(width: Int, height: Int) -> TextureResource.Dimensions2D](./dimensions2d/dimensions%28width,height%29.md)
   Specifies the dimensions of the 2D texture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

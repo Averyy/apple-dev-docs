@@ -1,7 +1,8 @@
 # addPower
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The correction for nearsightedness.
 
@@ -20,17 +21,22 @@ The correction for nearsightedness.
 var addPower: HKQuantity? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) HKQuantity * addPower;
+```
+
 #### Discussion
 
-This quantity uses [`diopter()`](hkunit/diopter().md) units. The range is from 0.25 to 2.5. The right and left eyes should have the same value.
+This quantity uses [`diopter()`](../hkunit/diopter%28%29.md) units. The range is from 0.25 to 2.5. The right and left eyes should have the same value.
 
 ## See Also
 
-- [var sphere: HKQuantity](hklensspecification/sphere.md)
+### Accessing lens specification data
+- [var sphere: HKQuantity](./sphere.md)
   The correction for farsightedness.
-- [var cylinder: HKQuantity?](hklensspecification/cylinder.md)
+- [var cylinder: HKQuantity?](./cylinder.md)
   Part of the correction for astigmatism that measures the strength of the correction.
-- [var axis: HKQuantity?](hklensspecification/axis.md)
+- [var axis: HKQuantity?](./axis.md)
   Part of the correction for astigmatism that measures the orientation fo the correction.
 
 

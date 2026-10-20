@@ -1,7 +1,8 @@
 # SubscriptionAppStoreReviewScreenshotResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single App Store review screenshot for a subscription.
 
@@ -10,7 +11,7 @@ A response containing a single App Store review screenshot for a subscription.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAppStoreReviewScreenshotResponse
 ```
 
@@ -22,11 +23,12 @@ object SubscriptionAppStoreReviewScreenshotResponse
 
 ## See Also
 
-- [object SubscriptionAppStoreReviewScreenshot](subscriptionappstorereviewscreenshot.md)
+### Objects
+- [object SubscriptionAppStoreReviewScreenshot](./subscriptionappstorereviewscreenshot.md)
   A screenshot of the subscription paywall submitted alongside a subscription for App Store review.
-- [object SubscriptionAppStoreReviewScreenshotCreateRequest](subscriptionappstorereviewscreenshotcreaterequest.md)
+- [object SubscriptionAppStoreReviewScreenshotCreateRequest](./subscriptionappstorereviewscreenshotcreaterequest.md)
   The request body you use to create a subscription App Store review screenshot.
-- [object SubscriptionAppStoreReviewScreenshotUpdateRequest](subscriptionappstorereviewscreenshotupdaterequest.md)
+- [object SubscriptionAppStoreReviewScreenshotUpdateRequest](./subscriptionappstorereviewscreenshotupdaterequest.md)
   The request body you use to update a subscription app store review screenshot update request.
 
 

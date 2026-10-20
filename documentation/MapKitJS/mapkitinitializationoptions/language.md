@@ -1,7 +1,8 @@
 # language
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An ID that indicates the preferred language to use when displaying map labels, controls, directions, and other text.
 
@@ -10,7 +11,7 @@ An ID that indicates the preferred language to use when displaying map labels, c
 
 ## Declaration
 
-```swift
+```
 language?: string | null;
 ```
 
@@ -25,11 +26,12 @@ The language ID lets you indicate the language to use for displaying map labels,
 
 If the language ID is invalid or missing, MapKit JS uses the language that the user’s browser specifies. If MapKit JS doesn’t support the preferred language, the language defaults to English.
 
-For more information about language IDs, see [`Internationalization and Localization Guide`](https://developer.apple.comhttps://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html).
+For more information about language IDs, see [Internationalization and Localization Guide](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html).
 
 ## See Also
 
-- [authorizationCallback](mapkitinitializationoptions/authorizationcallback.md)
+### Callback and language
+- [authorizationCallback](./authorizationcallback.md)
   A callback function that obtains a token.
 
 

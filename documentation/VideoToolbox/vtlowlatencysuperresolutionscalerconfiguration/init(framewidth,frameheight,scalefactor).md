@@ -1,7 +1,8 @@
 # init(frameWidth:frameHeight:scaleFactor:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new low-latency super-resolution scaler configuration with specified frame width and height.
 
@@ -19,11 +20,15 @@ Creates a new low-latency super-resolution scaler configuration with specified f
 init(frameWidth: Int, frameHeight: Int, scaleFactor: Float)
 ```
 
+```objc
+- (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight scaleFactor:(float) scaleFactor;
+```
+
 ## Parameters
 
 - `frameWidth`: Width of source frame in pixels.
 - `frameHeight`: Height of source frame in pixels.
-- `scaleFactor`: The scale factor to apply. This must be a supported value that [`supportedScaleFactorsForFrameWidth:frameHeight:`](vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactorsforframewidth:frameheight:.md) returns.
+- `scaleFactor`: The scale factor to apply. This must be a supported value that [`supportedScaleFactorsForFrameWidth:frameHeight:`](./supportedscalefactorsforframewidth_frameheight_.md) returns.
 
 
 ---

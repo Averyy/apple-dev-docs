@@ -1,7 +1,8 @@
 # UIToolTipInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction object that makes it possible to show a tooltip when hovering a pointer over a view or control.
 
@@ -18,9 +19,13 @@ An interaction object that makes it possible to show a tooltip when hovering a p
 class UIToolTipInteraction
 ```
 
+```objc
+@interface UIToolTipInteraction : NSObject
+```
+
 #### Overview
 
-To show a tooltip when the pointer hovers over a view, add a [`UIToolTipInteraction`](uitooltipinteraction.md) object to the view. For example, the following code listings shows how to add a tooltip to a label:
+To show a tooltip when the pointer hovers over a view, add a [`UIToolTipInteraction`](./uitooltipinteraction.md) object to the view. For example, the following code listings shows how to add a tooltip to a label:
 
 ```swift
 let label = UILabel()
@@ -30,56 +35,57 @@ let tooltipInteraction = UIToolTipInteraction(defaultToolTip: "The label's toolt
 label.addInteraction(tooltipInteraction)
 ```
 
-If you want your app to determine the tooltip text at a later time — for instance, to reflect the current state of your app — set the interaction’s [`delegate`](uitooltipinteraction/delegate.md) property to an object that conforms to the [`UIToolTipInteractionDelegate`](uitooltipinteractiondelegate.md) protocol.
+If you want your app to determine the tooltip text at a later time — for instance, to reflect the current state of your app — set the interaction’s [`delegate`](./uitooltipinteraction/delegate.md) property to an object that conforms to the [`UIToolTipInteractionDelegate`](./uitooltipinteractiondelegate.md) protocol.
 
-To add a tooltip to a control derived from [`UIControl`](uicontrol.md), use the convenience property [`toolTip`](uicontrol/tooltip.md); for example, to add a tooltip to the button:
+To add a tooltip to a control derived from [`UIControl`](./uicontrol.md), use the convenience property [`toolTip`](./uicontrol/tooltip.md); for example, to add a tooltip to the button:
 
 ```swift
 let button = UIButton(configuration: configuration, primaryAction: action)
 button.toolTip = "Click to buy this item. You'll have a chance to change your mind before confirming your purchase."
 ```
 
-Setting the [`toolTip`](uicontrol/tooltip.md) property creates a tooltip interaction for the control, which you can retrieve from the [`toolTipInteraction`](uicontrol/tooltipinteraction.md) property.
+Setting the [`toolTip`](./uicontrol/tooltip.md) property creates a tooltip interaction for the control, which you can retrieve from the [`toolTipInteraction`](./uicontrol/tooltipinteraction.md) property.
 
 > **Note**:  Tooltips appear when your app runs in macOS or visionOS. To show a tooltip in macOS, your app must be an iPhone or iPad app running on a Mac with Apple silicon, or built with Mac Catalyst.
 
 ## Topics
 
 ### Creating a tooltip interaction
-- [init()](uitooltipinteraction/init.md)
+- [init()](./uitooltipinteraction/init%28%29.md)
   Creates a tooltip interaction object.
-- [init(defaultToolTip: String)](uitooltipinteraction/init(defaulttooltip:).md)
+- [init(defaultToolTip: String)](./uitooltipinteraction/init%28defaulttooltip%29.md)
   Creates a tooltip interaction object and sets the default tooltip text.
 ### Managing the interaction
-- [var isEnabled: Bool](uitooltipinteraction/isenabled.md)
+- [var isEnabled: Bool](./uitooltipinteraction/isenabled.md)
   A Boolean value that indicates whether the tooltip interaction is in the enabled state.
-- [var defaultToolTip: String?](uitooltipinteraction/defaulttooltip.md)
+- [var defaultToolTip: String?](./uitooltipinteraction/defaulttooltip.md)
   The text that appears in a tooltip by default.
 ### Providing tooltip configurations
-- [var delegate: (any UIToolTipInteractionDelegate)?](uitooltipinteraction/delegate.md)
+- [var delegate: (any UIToolTipInteractionDelegate)?](./uitooltipinteraction/delegate.md)
   An object that provides text that a tooltip displays instead of the default text.
-- [protocol UIToolTipInteractionDelegate](uitooltipinteractiondelegate.md)
+- [protocol UIToolTipInteractionDelegate](./uitooltipinteractiondelegate.md)
   An interface that provides tooltip settings to an interaction.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [Showing help tags for views and controls using tooltip interactions](showing-help-tags-for-views-and-controls-using-tooltip-interactions.md)
+### Tooltips
+- [Showing help tags for views and controls using tooltip interactions](./showing-help-tags-for-views-and-controls-using-tooltip-interactions.md)
   Explain the purpose of interface elements by showing a tooltip when a person positions the pointer over the element.
-- [protocol UIToolTipInteractionDelegate](uitooltipinteractiondelegate.md)
+- [protocol UIToolTipInteractionDelegate](./uitooltipinteractiondelegate.md)
   An interface that provides tooltip settings to an interaction.
 
 

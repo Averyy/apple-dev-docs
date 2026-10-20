@@ -1,7 +1,8 @@
 # SessionCreationFlags
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The flags that affect the creation of a security session.
 
@@ -15,26 +16,30 @@ The flags that affect the creation of a security session.
 struct SessionCreationFlags
 ```
 
+```c
+enum SessionCreationFlags : UInt32;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](sessioncreationflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./sessioncreationflags/init%28rawvalue%29.md)
   Initializes a session creation flags value.
 ### Flags
-- [static var sessionKeepCurrentBootstrap: SessionCreationFlags](sessioncreationflags/sessionkeepcurrentbootstrap.md)
+- [static var sessionKeepCurrentBootstrap: SessionCreationFlags](./sessioncreationflags/sessionkeepcurrentbootstrap.md)
   The caller has allocated sub-bootstrap.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

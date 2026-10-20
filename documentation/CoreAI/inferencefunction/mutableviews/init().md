@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an empty instance.
 

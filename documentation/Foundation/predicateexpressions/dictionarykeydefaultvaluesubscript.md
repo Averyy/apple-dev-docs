@@ -1,7 +1,8 @@
 # PredicateExpressions.DictionaryKeyDefaultValueSubscript
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,24 +22,24 @@ struct DictionaryKeyDefaultValueSubscript<Wrapped, Key, Default> where Wrapped :
 ## Topics
 
 ### Initializers
-- [init(wrapped: Wrapped, key: Key, default: Default)](predicateexpressions/dictionarykeydefaultvaluesubscript/init(wrapped:key:default:).md)
+- [init(wrapped: Wrapped, key: Key, default: Default)](./dictionarykeydefaultvaluesubscript/init%28wrapped,key,default%29.md)
 ### Instance Properties
-- [let `default`: Default](predicateexpressions/dictionarykeydefaultvaluesubscript/default.md)
-- [let key: Key](predicateexpressions/dictionarykeydefaultvaluesubscript/key.md)
-- [let wrapped: Wrapped](predicateexpressions/dictionarykeydefaultvaluesubscript/wrapped.md)
+- [let `default`: Default](./dictionarykeydefaultvaluesubscript/default.md)
+- [let key: Key](./dictionarykeydefaultvaluesubscript/key.md)
+- [let wrapped: Wrapped](./dictionarykeydefaultvaluesubscript/wrapped.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

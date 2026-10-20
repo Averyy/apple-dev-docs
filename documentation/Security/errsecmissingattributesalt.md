@@ -1,7 +1,8 @@
 # errSecMissingAttributeSalt
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A salt attribute is missing.
 
@@ -18,6 +19,10 @@ A salt attribute is missing.
 
 ```swift
 var errSecMissingAttributeSalt: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeSalt
 ```
 
 

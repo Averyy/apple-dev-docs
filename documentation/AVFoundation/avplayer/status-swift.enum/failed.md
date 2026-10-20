@@ -1,18 +1,19 @@
 # AVPlayer.Status.failed
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the player can no longer play media due to an error.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A value that indicates the player can no longer play media due to an error.
 case failed
 ```
 
+```c
+AVPlayerStatusFailed
+```
+
 #### Discussion
 
-Inspect the value of the player’s [`error`](avplayer/error.md) property to determine the details of the failure.
+Inspect the value of the player’s [`error`](../error.md) property to determine the details of the failure.
 
 ## See Also
 
-- [AVPlayer.Status.unknown](avplayer/status-swift.enum/unknown.md)
+### Status values
+- [AVPlayer.Status.unknown](./unknown.md)
   A value that indicates a player hasn’t attempted to load media for playback.
-- [AVPlayer.Status.readyToPlay](avplayer/status-swift.enum/readytoplay.md)
+- [AVPlayer.Status.readyToPlay](./readytoplay.md)
   A value that indicates the player is ready to media.
 
 

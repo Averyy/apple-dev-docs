@@ -1,14 +1,15 @@
 # xig_gen
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 inp_gen_t xig_gen;
 ```
 

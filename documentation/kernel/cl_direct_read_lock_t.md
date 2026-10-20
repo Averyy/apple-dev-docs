@@ -1,14 +1,15 @@
 # cl_direct_read_lock_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef struct cl_direct_read_lock cl_direct_read_lock_t;
 ```
 

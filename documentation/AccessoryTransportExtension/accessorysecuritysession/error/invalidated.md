@@ -1,7 +1,8 @@
 # AccessorySecuritySession.Error.invalidated
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Session was invalidated.
 
@@ -16,9 +17,10 @@ case invalidated
 
 ## See Also
 
-- [AccessorySecuritySession.Error.unknown](accessorysecuritysession/error/unknown.md)
+### Interpreting the error cause
+- [AccessorySecuritySession.Error.unknown](./unknown.md)
   Underlying failure with an unknown cause.
-- [AccessorySecuritySession.Error.unsupported](accessorysecuritysession/error/unsupported.md)
+- [AccessorySecuritySession.Error.unsupported](./unsupported.md)
   Unsupported value, operation, etc.
 
 

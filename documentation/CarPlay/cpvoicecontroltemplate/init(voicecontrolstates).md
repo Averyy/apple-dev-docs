@@ -1,7 +1,8 @@
 # init(voiceControlStates:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a voice control template with a list of voice control states.
 
@@ -16,13 +17,17 @@ Creates a voice control template with a list of voice control states.
 init(voiceControlStates: [CPVoiceControlState])
 ```
 
+```objc
+- (instancetype) initWithVoiceControlStates:(NSArray<CPVoiceControlState *> *) voiceControlStates;
+```
+
 #### Return Value
 
 A newly initialized voice control template.
 
 #### Discussion
 
-When presenting the voice control template for the first time, the template defaults to the first state in the `voiceControlStates` array. You can change the state after presenting the template by calling the [`activateVoiceControlState(withIdentifier:)`](cpvoicecontroltemplate/activatevoicecontrolstate(withidentifier:).md) method.
+When presenting the voice control template for the first time, the template defaults to the first state in the `voiceControlStates` array. You can change the state after presenting the template by calling the [`activateVoiceControlState(withIdentifier:)`](./activatevoicecontrolstate%28withidentifier%29.md) method.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ When presenting the voice control template for the first time, the template defa
 
 ## See Also
 
-- [class CPVoiceControlState](cpvoicecontrolstate.md)
+### Creating a Voice Control Template
+- [class CPVoiceControlState](../cpvoicecontrolstate.md)
   A voice control state containing title variants and images for use by a voice control template.
 
 

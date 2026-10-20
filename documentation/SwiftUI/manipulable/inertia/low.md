@@ -1,7 +1,8 @@
 # low
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A view has low inertia and low resistance to being manipulated.
 

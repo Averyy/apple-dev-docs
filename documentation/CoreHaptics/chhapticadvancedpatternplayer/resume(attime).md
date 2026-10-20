@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Resumes playing a paused haptic.
@@ -20,15 +21,20 @@ Resumes playing a paused haptic.
 func resume(atTime time: TimeInterval) throws
 ```
 
+```objc
+- (BOOL) resumeAtTime:(NSTimeInterval) time error:(NSError **) outError;
+```
+
 ## Parameters
 
 - `time`: The time in the haptic pattern at which to resume playback.
 
 ## See Also
 
-- [func pause(atTime: TimeInterval) throws](chhapticadvancedpatternplayer/pause(attime:).md)
+### Controlling Playback
+- [func pause(atTime: TimeInterval) throws](./pause%28attime%29.md)
   Pauses the haptic player during playback.
-- [func seek(toOffset: TimeInterval) throws](chhapticadvancedpatternplayer/seek(tooffset:).md)
+- [func seek(toOffset: TimeInterval) throws](./seek%28tooffset%29.md)
   Jumps to the specified offset time in playing the haptic.
 
 

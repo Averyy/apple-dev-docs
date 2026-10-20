@@ -1,7 +1,8 @@
 # blockSize
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for the volume’s block size, in bytes.
 
@@ -12,6 +13,10 @@ A property for the volume’s block size, in bytes.
 
 ```swift
 var blockSize: Int { get set }
+```
+
+```objc
+@property NSInteger blockSize;
 ```
 
 #### Discussion

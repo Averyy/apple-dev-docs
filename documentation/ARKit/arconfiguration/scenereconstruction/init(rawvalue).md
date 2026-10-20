@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a scene-reconstruction object.
 
@@ -17,9 +18,10 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [static var mesh: ARConfiguration.SceneReconstruction](arconfiguration/scenereconstruction/mesh.md)
+### Modeling the Environment
+- [static var mesh: ARConfiguration.SceneReconstruction](./mesh.md)
   A polygonal mesh approximation of the physical environment.
-- [static var meshWithClassification: ARConfiguration.SceneReconstruction](arconfiguration/scenereconstruction/meshwithclassification.md)
+- [static var meshWithClassification: ARConfiguration.SceneReconstruction](./meshwithclassification.md)
   An approximate shape of the physical environment, including classification of the real-world objects within it.
 
 

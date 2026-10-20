@@ -1,7 +1,8 @@
 # sharingServicePicker(_:delegateFor:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks your delegate to provide an object that the selected sharing service can use as its delegate.
 
@@ -14,13 +15,17 @@ Asks your delegate to provide an object that the selected sharing service can us
 optional func sharingServicePicker(_ sharingServicePicker: NSSharingServicePicker, delegateFor sharingService: NSSharingService) -> (any NSSharingServiceDelegate)?
 ```
 
+```objc
+- (id<NSSharingServiceDelegate>) sharingServicePicker:(NSSharingServicePicker *) sharingServicePicker delegateForSharingService:(NSSharingService *) sharingService;
+```
+
 #### Return Value
 
-An object that adopts the [`NSSharingServiceDelegate`](nssharingservicedelegate.md) protocol.
+An object that adopts the [`NSSharingServiceDelegate`](../nssharingservicedelegate.md) protocol.
 
 #### Discussion
 
-The sharing service assigns the returned object to its [`delegate`](nssharingservice/delegate.md) property.
+The sharing service assigns the returned object to its [`delegate`](../nssharingservice/delegate.md) property.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ The sharing service assigns the returned object to its [`delegate`](nssharingser
 
 ## See Also
 
-- [func sharingServicePicker(NSSharingServicePicker, didChoose: NSSharingService?)](nssharingservicepickerdelegate/sharingservicepicker(_:didchoose:).md)
+### Customizing Behavior
+- [func sharingServicePicker(NSSharingServicePicker, didChoose: NSSharingService?)](./sharingservicepicker%28_,didchoose%29.md)
   Tells the delegate that the person selected a sharing service for the current item.
 
 

@@ -1,7 +1,8 @@
 # initialize(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the buffer slice’s memory with the given elements.
 
@@ -19,6 +20,8 @@ Initializes the buffer slice’s memory with the given elements.
 ```swift
 func initialize<S>(from source: S) -> (unwritten: S.Iterator, index: Slice<Base>.Index) where Base == UnsafeMutableBufferPointer<S.Element>, S : Sequence
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Return Value
 

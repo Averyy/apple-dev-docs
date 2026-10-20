@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the scale factor applied to the cell. Animatable.
 
@@ -19,45 +20,51 @@ Specifies the scale factor applied to the cell. Animatable.
 var scale: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat scale;
+```
+
 #### Discussion
 
-The scale of the cell will vary by a random amount within the range specified by [`scaleRange`](caemittercell/scalerange.md). The [`scaleSpeed`](caemittercell/scalespeed.md) property determines the rate of change.
+The scale of the cell will vary by a random amount within the range specified by [`scaleRange`](./scalerange.md). The [`scaleSpeed`](./scalespeed.md) property determines the rate of change.
 
 The default value of this property is `1.0`.
 
 ## See Also
 
-- [var scaleSpeed: CGFloat](caemittercell/scalespeed.md)
+### Related Documentation
+- [var scaleSpeed: CGFloat](./scalespeed.md)
   The speed at which the scale changes over the lifetime of the cell. Animatable.
-- [var isEnabled: Bool](caemittercell/isenabled.md)
+### Setting Emitter Cell Visual Attributes
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether or not cells from this emitter are rendered.
-- [var color: CGColor?](caemittercell/color.md)
+- [var color: CGColor?](./color.md)
   The color of each emitted object. Animatable.
-- [var redRange: Float](caemittercell/redrange.md)
+- [var redRange: Float](./redrange.md)
   The amount by which the red color component of the cell can vary. Animatable.
-- [var greenRange: Float](caemittercell/greenrange.md)
+- [var greenRange: Float](./greenrange.md)
   The amount by which the green color component of the cell can vary. Animatable.
-- [var blueRange: Float](caemittercell/bluerange.md)
+- [var blueRange: Float](./bluerange.md)
   The amount by which the blue color component of the cell can vary. Animatable.
-- [var alphaRange: Float](caemittercell/alpharange.md)
+- [var alphaRange: Float](./alpharange.md)
   The amount by which the alpha component of the cell can vary. Animatable.
-- [var redSpeed: Float](caemittercell/redspeed.md)
+- [var redSpeed: Float](./redspeed.md)
   The speed, in seconds, at which the red color component changes over the lifetime of the cell. Animatable.
-- [var greenSpeed: Float](caemittercell/greenspeed.md)
+- [var greenSpeed: Float](./greenspeed.md)
   The speed, in seconds, at which the green color component changes over the lifetime of the cell. Animatable.
-- [var blueSpeed: Float](caemittercell/bluespeed.md)
+- [var blueSpeed: Float](./bluespeed.md)
   The speed, in seconds, at which the blue color component changes over the lifetime of the cell. Animatable.
-- [var alphaSpeed: Float](caemittercell/alphaspeed.md)
+- [var alphaSpeed: Float](./alphaspeed.md)
   The speed, in seconds, at which the alpha component changes over the lifetime of the cell. Animatable.
-- [var magnificationFilter: String](caemittercell/magnificationfilter.md)
+- [var magnificationFilter: String](./magnificationfilter.md)
   The filter used when increasing the size of the content.
-- [var minificationFilter: String](caemittercell/minificationfilter.md)
+- [var minificationFilter: String](./minificationfilter.md)
   The filter used when reducing the size of the content.
-- [var minificationFilterBias: Float](caemittercell/minificationfilterbias.md)
+- [var minificationFilterBias: Float](./minificationfilterbias.md)
   The bias factor used by the minification filter to determine the levels of detail.
-- [var scaleRange: CGFloat](caemittercell/scalerange.md)
+- [var scaleRange: CGFloat](./scalerange.md)
   Specifies the range over which the scale value can vary. Animatable.
-- [var contentsScale: CGFloat](caemittercell/contentsscale.md)
+- [var contentsScale: CGFloat](./contentsscale.md)
   The scale factor of the cell contents.
 
 

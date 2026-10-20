@@ -1,23 +1,28 @@
 # CFUUIDGetUUIDBytes(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the value of a UUID object as raw bytes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFUUIDGetUUIDBytes(_ uuid: CFUUID!) -> CFUUIDBytes
+```
+
+```c
+extern CFUUIDBytes CFUUIDGetUUIDBytes(CFUUIDRef uuid);
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ The value of `uuid` represented as raw bytes.
 
 ## See Also
 
-- [func CFUUIDCreateString(CFAllocator!, CFUUID!) -> CFString!](cfuuidcreatestring(_:_:).md)
+### Getting Information About CFUUID Objects
+- [func CFUUIDCreateString(CFAllocator!, CFUUID!) -> CFString!](./cfuuidcreatestring%28_,_%29.md)
   Returns the string representation of a specified CFUUID object.
-- [func CFUUIDGetConstantUUIDWithBytes(CFAllocator!, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8) -> CFUUID!](cfuuidgetconstantuuidwithbytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func CFUUIDGetConstantUUIDWithBytes(CFAllocator!, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8) -> CFUUID!](./cfuuidgetconstantuuidwithbytes%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Returns a CFUUID object from raw UUID bytes.
 
 

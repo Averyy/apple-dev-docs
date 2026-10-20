@@ -1,7 +1,8 @@
 # longitude
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The longitude of the coordinate point.
 
@@ -10,7 +11,7 @@ The longitude of the coordinate point.
 
 ## Declaration
 
-```swift
+```
 attribute Double longitude;
 ```
 

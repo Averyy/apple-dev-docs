@@ -1,12 +1,13 @@
 # manifestURL
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.5+
 - iPadOS 17.5+
-- macOS ?+
+- macOS
 - tvOS 17.5+
 - visionOS 1.2+
 - watchOS 10.5+
@@ -17,9 +18,14 @@
 var manifestURL: URL { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURL * manifestURL;
+```
+
 ## See Also
 
-- [var jsonData: Data](bewebappmanifest/jsondata.md)
+### Getting manifest information
+- [var jsonData: Data](./jsondata.md)
 
 
 ---

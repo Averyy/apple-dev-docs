@@ -1,7 +1,8 @@
 # MFMailComposeError.Code.saveFailed
 
 **Framework**: Message UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error occurred while trying to save the email message to the Drafts folder.
 
@@ -17,9 +18,14 @@ An error occurred while trying to save the email message to the Drafts folder.
 case saveFailed
 ```
 
+```c
+MFMailComposeErrorCodeSaveFailed
+```
+
 ## See Also
 
-- [MFMailComposeError.Code.sendFailed](mfmailcomposeerror/code/sendfailed.md)
+### Constants
+- [MFMailComposeError.Code.sendFailed](./sendfailed.md)
   An error occurred while trying to queue or send the email message.
 
 

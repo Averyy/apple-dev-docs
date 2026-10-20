@@ -1,7 +1,8 @@
 # Weather
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The collection of all requested weather data.
 
@@ -10,7 +11,7 @@ The collection of all requested weather data.
 
 ## Declaration
 
-```swift
+```
 object Weather
 ```
 
@@ -24,15 +25,16 @@ object Weather
 
 ## See Also
 
-- [GET /api/v1/availability/{latitude}/{longitude}](get-api-v1-availability-_latitude_-_longitude_.md)
+### Obtaining weather information for a location
+- [GET /api/v1/availability/{latitude}/{longitude}](./get-api-v1-availability-_latitude_-_longitude_.md)
   Determine the data sets available for the specified location.
-- [GET /api/v1/weather/{language}/{latitude}/{longitude}](get-api-v1-weather-_language_-_latitude_-_longitude_.md)
+- [GET /api/v1/weather/{language}/{latitude}/{longitude}](./get-api-v1-weather-_language_-_latitude_-_longitude_.md)
   Obtain weather data for the specified location.
-- [type Latitude](latitude.md)
+- [type Latitude](./latitude.md)
   A numeric value indicating the latitude of the coordinate between `-90` and `90`.
-- [type Longitude](longitude.md)
+- [type Longitude](./longitude.md)
   A numeric value indicating the longitude of the coordinate between `-180` and `180`.
-- [type DataSet](dataset.md)
+- [type DataSet](./dataset.md)
   The collection of weather information for a location.
 
 

@@ -1,7 +1,8 @@
 # AccessibilityComponent.RotorType.system(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rotor type provided by the system.
 
@@ -10,7 +11,7 @@ A rotor type provided by the system.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

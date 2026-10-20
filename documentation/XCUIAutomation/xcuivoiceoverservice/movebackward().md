@@ -1,7 +1,8 @@
 # moveBackward()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Move VoiceOver to the previous element and return its speech.
 
@@ -19,6 +20,10 @@ Move VoiceOver to the previous element and return its speech.
 
 ```swift
 func moveBackward() throws -> XCUIVoiceOverService.Output
+```
+
+```objc
+- (XCUIVoiceOverOutput *) moveBackwardAndReturnError:(NSError **) error;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(buffer:offset:size:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slice referencing a sub-range of the given buffer.
 
@@ -19,7 +20,7 @@ init(buffer: LowLevelBufferResource, offset: Int, size: Int) throws(LowLevelRend
 
 #### Discussion
 
-> **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if `offset` or `size` fall outside the buffer’s allocated capacity.
+> **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if `offset` or `size` fall outside the buffer’s allocated capacity.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(mean:standardDeviation:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a standard scaling transformer.
 

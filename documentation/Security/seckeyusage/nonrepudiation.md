@@ -1,7 +1,8 @@
 # nonRepudiation
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `NonRepudiation` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `NonRepudiation` bit is set in KeyUsage extension.
 
 ```swift
 static var nonRepudiation: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageNonRepudiation
 ```
 
 

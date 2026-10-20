@@ -1,7 +1,8 @@
 # isConnected
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the accessory currently has a connection to this Wi-Fi access point.
 

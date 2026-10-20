@@ -1,7 +1,8 @@
 # absolute(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns this path made absolute, anchored at the given path.
 

@@ -1,7 +1,8 @@
 # RemoveMediaCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove a previously installed book from a device.
 
@@ -12,7 +13,7 @@ The command to remove a previously installed book from a device.
 
 ## Declaration
 
-```swift
+```
 object RemoveMediaCommand.Command
 ```
 
@@ -20,9 +21,15 @@ object RemoveMediaCommand.Command
 
 - `iTunesStoreID` (string): The book’s iTunes Store identifier.
 - `MediaType` (string) *(required)*: The media type, which can only be `Book`.
+
+  **Allowed Values**: `Book`
 - `PersistentID` (string): The book’s persistent identifier in reverse-DNS form; for example, `com.acme.manuals.training`.
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `RemoveMedia`
 
 
 ---

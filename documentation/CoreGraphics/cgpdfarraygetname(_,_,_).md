@@ -1,7 +1,8 @@
 # CGPDFArrayGetName(_:_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether an object at a given index in a PDF array is a PDF name reference (represented as a constant C string) and, if so, retrieves that name.
 
@@ -10,7 +11,7 @@ Returns whether an object at a given index in a PDF array is a PDF name referenc
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Returns whether an object at a given index in a PDF array is a PDF name referenc
 func CGPDFArrayGetName(_ array: CGPDFArrayRef, _ index: Int, _ value: UnsafeMutablePointer<UnsafePointer<CChar>?>?) -> Bool
 ```
 
+```c
+extern bool CGPDFArrayGetName(CGPDFArrayRef array, size_t index, const char **value);
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if there is an array of characters at the specified index, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../Swift/true.md) if there is an array of characters at the specified index, otherwise [`false`](../Swift/false.md).
 
 ## Parameters
 
@@ -32,25 +37,26 @@ Returns [`true`](https://developer.apple.com/documentation/swift/true) if there 
 
 ## See Also
 
-- [func CGPDFArrayGetArray(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFArrayRef?>?) -> Bool](cgpdfarraygetarray(_:_:_:).md)
+### Getting Data from a PDF Array
+- [func CGPDFArrayGetArray(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFArrayRef?>?) -> Bool](./cgpdfarraygetarray%28_,_,_%29.md)
   Returns whether an object at a given index in a PDF array is another PDF array and, if so, retrieves that array.
-- [func CGPDFArrayGetBoolean(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFBoolean>?) -> Bool](cgpdfarraygetboolean(_:_:_:).md)
+- [func CGPDFArrayGetBoolean(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFBoolean>?) -> Bool](./cgpdfarraygetboolean%28_,_,_%29.md)
   Returns whether an object at a given index in a PDF array is a PDF Boolean and, if so, retrieves that Boolean.
-- [func CGPDFArrayGetCount(CGPDFArrayRef) -> Int](cgpdfarraygetcount(_:).md)
+- [func CGPDFArrayGetCount(CGPDFArrayRef) -> Int](./cgpdfarraygetcount%28_%29.md)
   Returns the number of items in a PDF array.
-- [func CGPDFArrayGetDictionary(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFDictionaryRef?>?) -> Bool](cgpdfarraygetdictionary(_:_:_:).md)
+- [func CGPDFArrayGetDictionary(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFDictionaryRef?>?) -> Bool](./cgpdfarraygetdictionary%28_,_,_%29.md)
   Returns whether an object at a given index in a PDF array is a PDF dictionary and, if so, retrieves that dictionary.
-- [func CGPDFArrayGetInteger(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFInteger>?) -> Bool](cgpdfarraygetinteger(_:_:_:).md)
+- [func CGPDFArrayGetInteger(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFInteger>?) -> Bool](./cgpdfarraygetinteger%28_,_,_%29.md)
   Returns whether an object at a given index in a PDF array is a PDF integer and, if so, retrieves that object.
-- [func CGPDFArrayGetNull(CGPDFArrayRef, Int) -> Bool](cgpdfarraygetnull(_:_:).md)
+- [func CGPDFArrayGetNull(CGPDFArrayRef, Int) -> Bool](./cgpdfarraygetnull%28_,_%29.md)
   Returns whether an object at a given index in a Quartz PDF array is a PDF null.
-- [func CGPDFArrayGetNumber(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFReal>?) -> Bool](cgpdfarraygetnumber(_:_:_:).md)
+- [func CGPDFArrayGetNumber(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFReal>?) -> Bool](./cgpdfarraygetnumber%28_,_,_%29.md)
   Returns whether an object at a given index in a PDF array is a PDF number and, if so, retrieves that object.
-- [func CGPDFArrayGetObject(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFObjectRef?>?) -> Bool](cgpdfarraygetobject(_:_:_:).md)
+- [func CGPDFArrayGetObject(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFObjectRef?>?) -> Bool](./cgpdfarraygetobject%28_,_,_%29.md)
   Returns whether an object at a given index in a PDF array is a PDF object and, if so, retrieves that object.
-- [func CGPDFArrayGetStream(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFStreamRef?>?) -> Bool](cgpdfarraygetstream(_:_:_:).md)
+- [func CGPDFArrayGetStream(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFStreamRef?>?) -> Bool](./cgpdfarraygetstream%28_,_,_%29.md)
   Returns whether an object at a given index in a PDF array is a PDF stream and, if so, retrieves that stream.
-- [func CGPDFArrayGetString(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFStringRef?>?) -> Bool](cgpdfarraygetstring(_:_:_:).md)
+- [func CGPDFArrayGetString(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFStringRef?>?) -> Bool](./cgpdfarraygetstring%28_,_,_%29.md)
   Returns whether an object at a given index in a PDF array is a PDF string and, if so, retrieves that string.
 
 

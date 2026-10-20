@@ -1,7 +1,8 @@
 # colliderShape
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of collider to use for the switch.
 
@@ -16,9 +17,14 @@ The shape of collider to use for the switch.
 var colliderShape: TCColliderShape { get set }
 ```
 
+```objc
+@property (nonatomic, assign) TCColliderShape colliderShape;
+```
+
 ## See Also
 
-- [enum TCColliderShape](tccollidershape.md)
+### Getting the collider shape
+- [enum TCColliderShape](../tccollidershape.md)
   Defines the shape of a control collider.
 
 

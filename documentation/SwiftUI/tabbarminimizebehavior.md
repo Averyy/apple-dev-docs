@@ -1,7 +1,8 @@
 # TabBarMinimizeBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A behavior that determines when a tab bar minimizes.
 
@@ -22,7 +23,7 @@ struct TabBarMinimizeBehavior
 
 #### Overview
 
-A minimized tab bar becomes smaller so that the content behind it has more room. Pass a value of this type to the [`tabBarMinimizeBehavior(_:)`](view/tabbarminimizebehavior(_:).md) modifier to specify the behavior.
+A minimized tab bar becomes smaller so that the content behind it has more room. Pass a value of this type to the [`tabBarMinimizeBehavior(_:)`](./view/tabbarminimizebehavior%28_%29.md) modifier to specify the behavior.
 
 The following example minimizes the tab bar as soon as someone scrolls down through a feed, and restores it when they scroll back up:
 
@@ -42,46 +43,47 @@ TabView {
 ## Topics
 
 ### Type Properties
-- [static let automatic: TabBarMinimizeBehavior](tabbarminimizebehavior/automatic.md)
+- [static let automatic: TabBarMinimizeBehavior](./tabbarminimizebehavior/automatic.md)
   Determine the behavior automatically based on the surrounding context.
-- [static let never: TabBarMinimizeBehavior](tabbarminimizebehavior/never.md)
+- [static let never: TabBarMinimizeBehavior](./tabbarminimizebehavior/never.md)
   Never minimize the tab bar.
-- [static let onScrollDown: TabBarMinimizeBehavior](tabbarminimizebehavior/onscrolldown.md)
+- [static let onScrollDown: TabBarMinimizeBehavior](./tabbarminimizebehavior/onscrolldown.md)
   Minimize the tab bar when downwards scrolling starts. Minimizing is supported for tab bars on only iPhone.
-- [static let onScrollUp: TabBarMinimizeBehavior](tabbarminimizebehavior/onscrollup.md)
+- [static let onScrollUp: TabBarMinimizeBehavior](./tabbarminimizebehavior/onscrollup.md)
   Minimize the tab bar when upwards scrolling starts. Minimizing is supported for tab bars on only iPhone.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func defaultAdaptableTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaultadaptabletabbarplacement(_:).md)
+### Configuring a tab bar
+- [func defaultAdaptableTabBarPlacement(AdaptableTabBarPlacement) -> some View](./view/defaultadaptabletabbarplacement%28_%29.md)
   Specifies the default placement for the tabs in a tab view using the adaptable sidebar style.
-- [func defaultTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaulttabbarplacement(_:).md)
-  Specifies the preferred placement for the tabs of a [`TabView`](tabview.md) in the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) style on platforms where the tab bar cannot adapt between different representations, and only one representation can be shown.
-- [func tabViewSidebarHeader<Content>(content: () -> Content) -> some View](view/tabviewsidebarheader(content:).md)
+- [func defaultTabBarPlacement(AdaptableTabBarPlacement) -> some View](./view/defaulttabbarplacement%28_%29.md)
+  Specifies the preferred placement for the tabs of a [`TabView`](./tabview.md) in the [`sidebarAdaptable`](./tabviewstyle/sidebaradaptable.md) style on platforms where the tab bar cannot adapt between different representations, and only one representation can be shown.
+- [func tabViewSidebarHeader<Content>(content: () -> Content) -> some View](./view/tabviewsidebarheader%28content%29.md)
   Adds a custom header to the sidebar of a tab view.
-- [func tabViewSidebarFooter<Content>(content: () -> Content) -> some View](view/tabviewsidebarfooter(content:).md)
+- [func tabViewSidebarFooter<Content>(content: () -> Content) -> some View](./view/tabviewsidebarfooter%28content%29.md)
   Adds a custom footer to the sidebar of a tab view.
-- [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](view/tabviewsidebarbottombar(content:).md)
+- [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](./view/tabviewsidebarbottombar%28content%29.md)
   Adds a custom bottom bar to the sidebar of a tab view.
-- [struct AdaptableTabBarPlacement](adaptabletabbarplacement.md)
+- [struct AdaptableTabBarPlacement](./adaptabletabbarplacement.md)
   A placement for tabs in a tab view using the adaptable sidebar style.
-- [var tabBarPlacement: TabBarPlacement?](environmentvalues/tabbarplacement.md)
+- [var tabBarPlacement: TabBarPlacement?](./environmentvalues/tabbarplacement.md)
   The current placement of the tab bar.
-- [struct TabBarPlacement](tabbarplacement.md)
+- [struct TabBarPlacement](./tabbarplacement.md)
   A placement for tabs in a tab view.
-- [var isTabBarShowingSections: Bool](environmentvalues/istabbarshowingsections.md)
+- [var isTabBarShowingSections: Bool](./environmentvalues/istabbarshowingsections.md)
   A Boolean value that determines whether a tab view shows the expanded contents of a tab section.
-- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](view/tabbarminimizebehavior(_:).md)
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](./view/tabbarminimizebehavior%28_%29.md)
   Sets the behavior for tab bar minimization.
-- [enum TabViewBottomAccessoryPlacement](tabviewbottomaccessoryplacement.md)
+- [enum TabViewBottomAccessoryPlacement](./tabviewbottomaccessoryplacement.md)
   A placement of the bottom accessory in a tab view. You can use this to adjust the content of the accessory view based on the placement.
 
 

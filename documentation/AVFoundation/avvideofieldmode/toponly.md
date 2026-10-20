@@ -1,7 +1,8 @@
 # AVVideoFieldMode.topOnly
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that a video connection only passes the top video field.
 
@@ -14,13 +15,18 @@ A value that indicates that a video connection only passes the top video field.
 case topOnly
 ```
 
+```c
+AVVideoFieldModeTopOnly
+```
+
 ## See Also
 
-- [AVVideoFieldMode.both](avvideofieldmode/both.md)
+### Constants
+- [AVVideoFieldMode.both](./both.md)
   A value that indicates that a video connection passes both the top and bottom video fields.
-- [AVVideoFieldMode.bottomOnly](avvideofieldmode/bottomonly.md)
+- [AVVideoFieldMode.bottomOnly](./bottomonly.md)
   A value that indicates that a video connection only passes the bottom video field.
-- [AVVideoFieldMode.deinterlace](avvideofieldmode/deinterlace.md)
+- [AVVideoFieldMode.deinterlace](./deinterlace.md)
   A value that indicates that a video connection deinterlaces the top and bottom video fields.
 
 

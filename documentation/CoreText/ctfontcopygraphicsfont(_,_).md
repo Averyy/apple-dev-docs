@@ -1,7 +1,8 @@
 # CTFontCopyGraphicsFont(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Core Graphics font reference and attributes.
 
@@ -20,9 +21,13 @@ Returns a Core Graphics font reference and attributes.
 func CTFontCopyGraphicsFont(_ font: CTFont, _ attributes: UnsafeMutablePointer<Unmanaged<CTFontDescriptor>?>?) -> CGFont
 ```
 
+```c
+extern CGFontRefCTFontCopyGraphicsFont(CTFontRef font, CTFontDescriptorRef*attributes);
+```
+
 #### Return Value
 
-A [`CGFont`](https://developer.apple.com/documentation/coregraphics/cgfont) object for the given font reference.
+A [`CGFont`](../CoreGraphics/cgfont.md) object for the given font reference.
 
 ## Parameters
 
@@ -31,13 +36,14 @@ A [`CGFont`](https://developer.apple.com/documentation/coregraphics/cgfont) obje
 
 ## See Also
 
-- [func CTFontCreateWithGraphicsFont(CGFont, CGFloat, UnsafePointer<CGAffineTransform>?, CTFontDescriptor?) -> CTFont](ctfontcreatewithgraphicsfont(_:_:_:_:).md)
+### Converting Fonts
+- [func CTFontCreateWithGraphicsFont(CGFont, CGFloat, UnsafePointer<CGAffineTransform>?, CTFontDescriptor?) -> CTFont](./ctfontcreatewithgraphicsfont%28_,_,_,_%29.md)
   Creates a new font reference from an existing Core Graphics font reference.
-- [func CTFontGetPlatformFont(CTFont, UnsafeMutablePointer<Unmanaged<CTFontDescriptor>?>?) -> ATSFontRef](ctfontgetplatformfont(_:_:).md)
+- [func CTFontGetPlatformFont(CTFont, UnsafeMutablePointer<Unmanaged<CTFontDescriptor>?>?) -> ATSFontRef](./ctfontgetplatformfont%28_,_%29.md)
   Returns an ATS font reference and attributes.
-- [func CTFontCreateWithPlatformFont(ATSFontRef, CGFloat, UnsafePointer<CGAffineTransform>?, CTFontDescriptor?) -> CTFont?](ctfontcreatewithplatformfont(_:_:_:_:).md)
+- [func CTFontCreateWithPlatformFont(ATSFontRef, CGFloat, UnsafePointer<CGAffineTransform>?, CTFontDescriptor?) -> CTFont?](./ctfontcreatewithplatformfont%28_,_,_,_%29.md)
   Creates a new font reference from an ATS font reference.
-- [func CTFontCreateWithQuickdrawInstance(ConstStr255Param?, Int16, UInt8, CGFloat) -> CTFont](ctfontcreatewithquickdrawinstance(_:_:_:_:).md)
+- [func CTFontCreateWithQuickdrawInstance(ConstStr255Param?, Int16, UInt8, CGFloat) -> CTFont](./ctfontcreatewithquickdrawinstance%28_,_,_,_%29.md)
   Returns a font reference for the given QuickDraw instance.
 
 

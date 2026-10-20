@@ -1,7 +1,8 @@
 # CFStringTokenizerCreate(_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a tokenizer for a given string.
 
@@ -20,17 +21,21 @@ Returns a tokenizer for a given string.
 func CFStringTokenizerCreate(_ alloc: CFAllocator!, _ string: CFString!, _ range: CFRange, _ options: CFOptionFlags, _ locale: CFLocale!) -> CFStringTokenizer!
 ```
 
+```c
+extern CFStringTokenizerRefCFStringTokenizerCreate(CFAllocatorRef alloc, CFStringRef string, CFRange range, CFOptionFlags options, CFLocaleRef locale);
+```
+
 #### Return Value
 
-A tokenizer to analyze the range `range` of `string` for the given locale and options. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A tokenizer to analyze the range `range` of `string` for the given locale and options. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `string`: The string to tokenize.
 - `range`: The range of the characters in `string` to tokenize.
-- `options`: A tokenization unit option that specifies how `string` should be tokenized. The options can be modified by adding unit modifier options to tell the tokenizer to prepare specified attributes when it tokenizes `string`. For possible values, see [`Tokenization Modifiers`](1588024-tokenization-modifiers.md).
-- `locale`: A locale that specifies language- or region-specific behavior for the tokenization. You can pass `NULL` to use the default system locale, although this is typically not recommended—instead use [`CFLocaleCopyCurrent()`](cflocalecopycurrent().md) to specify the locale of the current user. For more information, see [`Tokenization Modifiers`](1588024-tokenization-modifiers.md).
+- `options`: A tokenization unit option that specifies how `string` should be tokenized. The options can be modified by adding unit modifier options to tell the tokenizer to prepare specified attributes when it tokenizes `string`. For possible values, see [Tokenization Modifiers](./api-1588024-tokenization-modifiers.md).
+- `locale`: A locale that specifies language- or region-specific behavior for the tokenization. You can pass `NULL` to use the default system locale, although this is typically not recommended—instead use [`CFLocaleCopyCurrent()`](./cflocalecopycurrent%28%29.md) to specify the locale of the current user. For more information, see [Tokenization Modifiers](./api-1588024-tokenization-modifiers.md).
 
 
 ---

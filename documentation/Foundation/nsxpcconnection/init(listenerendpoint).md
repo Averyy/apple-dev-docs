@@ -1,9 +1,10 @@
 # init(listenerEndpoint:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initializes an [`NSXPCConnection`](nsxpcconnection.md) object to connect to an [`NSXPCListener`](nsxpclistener.md) object in another process, identified by an [`NSXPCListenerEndpoint`](nsxpclistenerendpoint.md) object.
+Initializes an [`NSXPCConnection`](../nsxpcconnection.md) object to connect to an [`NSXPCListener`](../nsxpclistener.md) object in another process, identified by an [`NSXPCListenerEndpoint`](../nsxpclistenerendpoint.md) object.
 
 **Availability**:
 - iOS 6.0+
@@ -20,19 +21,25 @@ Initializes an [`NSXPCConnection`](nsxpcconnection.md) object to connect to an [
 init(listenerEndpoint endpoint: NSXPCListenerEndpoint)
 ```
 
+```objc
+- (instancetype) initWithListenerEndpoint:(NSXPCListenerEndpoint *) endpoint;
+```
+
 ## Parameters
 
 - `endpoint`: The desired listener endpoint for the service.
 
 ## See Also
 
-- [Daemons and Services Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i)
-- [init(machServiceName: String, options: NSXPCConnection.Options)](nsxpcconnection/init(machservicename:options:).md)
-  Initializes an [`NSXPCConnection`](nsxpcconnection.md) object to connect to a LaunchAgent or LaunchDaemon with a name advertised in a `launchd.plist`.
-- [NSXPCConnection.Options](nsxpcconnection/options.md)
+### Related Documentation
+- [Daemons and Services Programming Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i)
+### Creating a connection
+- [init(machServiceName: String, options: NSXPCConnection.Options)](./init%28machservicename,options%29.md)
+  Initializes an [`NSXPCConnection`](../nsxpcconnection.md) object to connect to a LaunchAgent or LaunchDaemon with a name advertised in a `launchd.plist`.
+- [NSXPCConnection.Options](./options.md)
   Options that you can pass to a connection.
-- [init(serviceName: String)](nsxpcconnection/init(servicename:).md)
-  Initializes an [`NSXPCConnection`](nsxpcconnection.md) object to connect to an [`NSXPCListener`](nsxpclistener.md) object in an XPC service, identified by a service name.
+- [init(serviceName: String)](./init%28servicename%29.md)
+  Initializes an [`NSXPCConnection`](../nsxpcconnection.md) object to connect to an [`NSXPCListener`](../nsxpclistener.md) object in an XPC service, identified by a service name.
 
 
 ---

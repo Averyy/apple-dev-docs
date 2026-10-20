@@ -1,7 +1,8 @@
 # index(forKey:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the text-formatting coordinator.
 
@@ -18,9 +19,14 @@ The delegate of the text-formatting coordinator.
 weak var delegate: (any UITextFormattingCoordinatorDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UITextFormattingCoordinatorDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UITextFormattingCoordinatorDelegate](uitextformattingcoordinatordelegate.md)
+### Applying Updated Text Attributes
+- [protocol UITextFormattingCoordinatorDelegate](../uitextformattingcoordinatordelegate.md)
   The methods that delegates of text-formatting coordinators implement to apply font panel settings to the currently selected text.
 
 

@@ -1,7 +1,8 @@
 # displayedPixelBuffer()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -17,9 +18,14 @@
 func displayedPixelBuffer() -> CVPixelBuffer?
 ```
 
+```objc
+- (CVPixelBufferRef) copyDisplayedPixelBuffer;
+```
+
 ## See Also
 
-- [var recommendedPixelBufferAttributes: CVPixelBufferAttributes](avsamplebuffervideorenderer/recommendedpixelbufferattributes-6zrqb.md)
+### Accessing the pixel buffer
+- [var recommendedPixelBufferAttributes: CVPixelBufferAttributes](./recommendedpixelbufferattributes-6zrqb.md)
   Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
 
 

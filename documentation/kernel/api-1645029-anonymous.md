@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMBroadcastAggressiveness](1645029-anonymous/kiopmbroadcastaggressiveness.md)
-- [kIOPMUnidleDevice](1645029-anonymous/kiopmunidledevice.md)
+- [kIOPMBroadcastAggressiveness](./api-1645029-anonymous/kiopmbroadcastaggressiveness.md)
+- [kIOPMUnidleDevice](./api-1645029-anonymous/kiopmunidledevice.md)
 
 
 ---

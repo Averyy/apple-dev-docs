@@ -1,7 +1,8 @@
 # close(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func close(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func close() async throws
+```
+
+```objc
+- (void) closeWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

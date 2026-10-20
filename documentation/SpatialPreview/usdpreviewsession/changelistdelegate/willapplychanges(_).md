@@ -2,11 +2,14 @@
 
 **Framework**: Spatial Preview  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Use willApplyChanges(instanceIdentifier: String, operationIdentifier: UInt) instead
 
 ## Declaration
 
@@ -15,9 +18,15 @@
 func willApplyChanges(_ event: USDPreviewSession.Event)
 ```
 
+## Default Implementations
+
+### USDPreviewSession.ChangeListDelegate Implementations
+- [func willApplyChanges(USDPreviewSession.Event)](./willapplychanges%28_%29-4seho.md)
+
 ## See Also
 
-- [func didApplyChanges(USDPreviewSession.Event)](usdpreviewsession/changelistdelegate/didapplychanges(_:).md)
+### Deprecated
+- [func didApplyChanges(USDPreviewSession.Event)](./didapplychanges%28_%29.md)
 
 
 ---

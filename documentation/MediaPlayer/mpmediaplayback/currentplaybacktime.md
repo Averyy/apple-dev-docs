@@ -2,6 +2,7 @@
 
 **Framework**: Media Player  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current position of the playhead.
@@ -19,13 +20,18 @@ The current position of the playhead.
 var currentPlaybackTime: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval currentPlaybackTime;
+```
+
 #### Discussion
 
-For video-on-demand or progressively downloaded content, this value measures seconds from the beginning of the current item. Changing the value of this property moves the playhead to the new location. For content streamed live from a server, this value represents the time from the beginning of the playlist when it was first loaded. The system returns `NaN` if the [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) is invalid or indefinite.
+For video-on-demand or progressively downloaded content, this value measures seconds from the beginning of the current item. Changing the value of this property moves the playhead to the new location. For content streamed live from a server, this value represents the time from the beginning of the playlist when it was first loaded. The system returns `NaN` if the [`CMTime`](../../CoreMedia/cmtime.md) is invalid or indefinite.
 
 ## See Also
 
-- [var currentPlaybackRate: Float](mpmediaplayback/currentplaybackrate.md)
+### Accessing playback attributes
+- [var currentPlaybackRate: Float](./currentplaybackrate.md)
   The current playback rate for the player.
 
 

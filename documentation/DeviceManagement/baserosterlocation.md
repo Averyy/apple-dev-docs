@@ -1,7 +1,8 @@
 # BaseRosterLocation
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A base location’s properties and their values.
 
@@ -10,7 +11,7 @@ A base location’s properties and their values.
 
 ## Declaration
 
-```swift
+```
 object BaseRosterLocation
 ```
 
@@ -21,11 +22,12 @@ object BaseRosterLocation
 
 ## See Also
 
-- [object RosterLocation](rosterlocation.md)
+### Location management
+- [object RosterLocation](./rosterlocation.md)
   A location’s properties and their values.
-- [Get the List of Locations](fetch-location-roster.md)
+- [Get the List of Locations](./fetch-location-roster.md)
   Obtain a list of the locations the server manages.
-- [Sync the Locations](fetch-location-roster-sync.md)
+- [Sync the Locations](./fetch-location-roster-sync.md)
   Get updates about the list of locations the server manages.
 
 

@@ -1,7 +1,8 @@
 # kCGImagePropertyTIFFYResolution
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of pixels per resolution unit in the image height direction.
 
@@ -20,20 +21,25 @@ The number of pixels per resolution unit in the image height direction.
 let kCGImagePropertyTIFFYResolution: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyTIFFYResolution;
+```
+
 ## See Also
 
-- [let kCGImagePropertyTIFFOrientation: CFString](kcgimagepropertytifforientation.md)
+### Canvas Details
+- [let kCGImagePropertyTIFFOrientation: CFString](./kcgimagepropertytifforientation.md)
   The image orientation.
-- [let kCGImagePropertyTIFFXResolution: CFString](kcgimagepropertytiffxresolution.md)
+- [let kCGImagePropertyTIFFXResolution: CFString](./kcgimagepropertytiffxresolution.md)
   The number of pixels per resolution unit in the image width direction.
-- [let kCGImagePropertyTIFFResolutionUnit: CFString](kcgimagepropertytiffresolutionunit.md)
+- [let kCGImagePropertyTIFFResolutionUnit: CFString](./kcgimagepropertytiffresolutionunit.md)
   The units of resolution.
-- [let kCGImagePropertyTIFFWhitePoint: CFString](kcgimagepropertytiffwhitepoint.md)
+- [let kCGImagePropertyTIFFWhitePoint: CFString](./kcgimagepropertytiffwhitepoint.md)
   The white point of the image.
-- [let kCGImagePropertyTIFFPrimaryChromaticities: CFString](kcgimagepropertytiffprimarychromaticities.md)
+- [let kCGImagePropertyTIFFPrimaryChromaticities: CFString](./kcgimagepropertytiffprimarychromaticities.md)
   The chromaticities of the primaries of the image.
-- [let kCGImagePropertyTIFFTileLength: CFString](kcgimagepropertytifftilelength.md)
-- [let kCGImagePropertyTIFFTileWidth: CFString](kcgimagepropertytifftilewidth.md)
+- [let kCGImagePropertyTIFFTileLength: CFString](./kcgimagepropertytifftilelength.md)
+- [let kCGImagePropertyTIFFTileWidth: CFString](./kcgimagepropertytifftilewidth.md)
 
 
 ---

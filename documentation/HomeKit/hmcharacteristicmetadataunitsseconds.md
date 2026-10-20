@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataUnitsSeconds
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unit of the characteristic is seconds.
 
@@ -17,6 +18,10 @@ The unit of the characteristic is seconds.
 
 ```swift
 let HMCharacteristicMetadataUnitsSeconds: String
+```
+
+```c
+extern NSString * const HMCharacteristicMetadataUnitsSeconds;
 ```
 
 

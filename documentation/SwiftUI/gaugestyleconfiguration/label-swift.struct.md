@@ -1,7 +1,8 @@
 # GaugeStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label of a gauge, describing its purpose.
 
@@ -23,11 +24,12 @@ A type-erased label of a gauge, describing its purpose.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [var label: GaugeStyleConfiguration.Label](gaugestyleconfiguration/label-swift.property.md)
+### Describing the purpose of the gauge
+- [var label: GaugeStyleConfiguration.Label](./label-swift.property.md)
   A view that describes the purpose of the gauge.
 
 

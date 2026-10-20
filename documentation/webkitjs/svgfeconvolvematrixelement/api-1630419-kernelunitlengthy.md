@@ -1,7 +1,8 @@
 # kernelUnitLengthY
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 readonly attribute SVGAnimatedNumber kernelUnitLengthY;
 ```
 

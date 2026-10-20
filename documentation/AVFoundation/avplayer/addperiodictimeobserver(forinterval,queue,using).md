@@ -1,18 +1,19 @@
 # addPeriodicTimeObserver(forInterval:queue:using:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the periodic invocation of a given block during playback to report changing time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,17 +22,21 @@ nonisolated
 func addPeriodicTimeObserver(forInterval interval: CMTime, queue: dispatch_queue_t?, using block: @escaping @Sendable (CMTime) -> Void) -> Any
 ```
 
+```objc
+- (id) addPeriodicTimeObserverForInterval:(CMTime) interval queue:(dispatch_queue_t) queue usingBlock:(void (^)(CMTime time)) block;
+```
+
 ## Mentions
 
-- [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
+- [Monitoring playback progress in your app](../monitoring-playback-progress-in-your-app.md)
 
 #### Return Value
 
-An opaque object that you pass as the argument to [`removeTimeObserver(_:)`](avplayer/removetimeobserver(_:).md) to cancel observation.
+An opaque object that you pass as the argument to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) to cancel observation.
 
 #### Discussion
 
-You must maintain a strong reference to the returned value as long as you want the time observer to be invoked by the player. You must pair each invocation of this method with a corresponding call to [`removeTimeObserver(_:)`](avplayer/removetimeobserver(_:).md). Releasing the observer object without invoking [`removeTimeObserver(_:)`](avplayer/removetimeobserver(_:).md) results in undefined behavior.
+You must maintain a strong reference to the returned value as long as you want the time observer to be invoked by the player. You must pair each invocation of this method with a corresponding call to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md). Releasing the observer object without invoking [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) results in undefined behavior.
 
 The system invokes the block periodically at the interval specified, interpreted according to the timeline of the current item. It also invokes the block whenever time jumps or playback starts or stops. If the interval corresponds to a very short interval in real time, the player may invoke the block less frequently than your app requested. Even so, the player will invoke the block sufficiently often for the client to update indications of the current time appropriately in its end-user interface.
 
@@ -77,16 +82,23 @@ func addPeriodicTimeObserver() {
 ## Parameters
 
 - `interval`: The time interval at which the system invokes the block during normal playback, according to progress of the player’s current time.
-- `queue`: The dispatch queue on which the system calls the block. Passing a concurrent queue isn’t supported and results in undefined behavior. If you pass `NULL`, the system uses the main queue.
-- `block`: The block that the system periodically invokes. The block takes a single parameter: - **time**: The time at which the system invokes the block.
+- `queue`: The dispatch queue on which the system calls the block. Passing a concurrent queue isn’t supported and results in undefined behavior.
+
+  If you pass `NULL`, the system uses the main queue.
+- `block`: The block that the system periodically invokes.
+
+  The block takes a single parameter:
+
+  - **time**: The time at which the system invokes the block.
 
 ## See Also
 
-- [func currentTime() -> CMTime](avplayer/currenttime.md)
+### Observing playback time
+- [func currentTime() -> CMTime](./currenttime%28%29.md)
   Returns the current time of the current player item.
-- [func addBoundaryTimeObserver(forTimes: [NSValue], queue: dispatch_queue_t?, using: () -> Void) -> Any](avplayer/addboundarytimeobserver(fortimes:queue:using:).md)
+- [func addBoundaryTimeObserver(forTimes: [NSValue], queue: dispatch_queue_t?, using: () -> Void) -> Any](./addboundarytimeobserver%28fortimes,queue,using%29.md)
   Requests the invocation of a block when specified times are traversed during normal playback.
-- [func removeTimeObserver(Any)](avplayer/removetimeobserver(_:).md)
+- [func removeTimeObserver(Any)](./removetimeobserver%28_%29.md)
   Cancels a previously registered periodic or boundary time observer.
 
 

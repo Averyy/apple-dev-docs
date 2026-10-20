@@ -1,22 +1,24 @@
 # init
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 ## See Also
 
-- [Start](iouservideodriver/start.md)
-- [Stop](iouservideodriver/stop.md)
-- [free](iouservideodriver/free.md)
+### Running the driver service
+- [Start](./start.md)
+- [Stop](./stop.md)
+- [free](./free.md)
 
 
 ---

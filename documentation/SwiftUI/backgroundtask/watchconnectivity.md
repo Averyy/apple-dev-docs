@@ -1,7 +1,8 @@
 # watchConnectivity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A background task used to receive background updates from the Watch Connectivity framework.
 
@@ -16,7 +17,8 @@ static var watchConnectivity: BackgroundTask<Void, Void> { get }
 
 ## See Also
 
-- [static var bluetoothAlert: BackgroundTask<Void, Void>](backgroundtask/bluetoothalert.md)
+### Receiving connectivity updates
+- [static var bluetoothAlert: BackgroundTask<Void, Void>](./bluetoothalert.md)
   A background task used to receive critical alerts from paired bluetooth accessories.
 
 

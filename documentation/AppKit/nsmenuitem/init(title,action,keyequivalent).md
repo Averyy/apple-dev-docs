@@ -1,17 +1,22 @@
 # init(title:action:keyEquivalent:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized instance of `NSMenuItem`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(title string: String, action selector: Selector?, keyEquivalent charCode: String)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) string action:(SEL) selector keyEquivalent:(NSString *) charCode;
 ```
 
 #### Return Value
@@ -30,9 +35,11 @@ For instances of the `NSMenuItem` class, the default initial state is `NSOffStat
 
 ## See Also
 
-- [class NSMenuItem](nsmenuitem.md)
+### Related Documentation
+- [class NSMenuItem](../nsmenuitem.md)
   A command item in an app menu.
-- [init(coder: NSCoder)](nsmenuitem/init(coder:).md)
+### Creating a menu item
+- [init(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

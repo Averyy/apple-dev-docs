@@ -1,7 +1,8 @@
 # maximumZ
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum zoom level that the tiles of this overlay object support.
 
@@ -19,6 +20,10 @@ The maximum zoom level that the tiles of this overlay object support.
 var maximumZ: Int { get set }
 ```
 
+```objc
+@property (atomic) NSInteger maximumZ;
+```
+
 #### Discussion
 
 If you use different overlay objects to represent different tiles at different zoom levels, use this property to specify the maximum zoom level that this overlay’s tiles support. At zoom level 0, tiles cover the entire world map; at zoom level 1, tiles cover 1/4 of the world; at zoom level 2, tiles cover 1/16 of the world, and so on. The map doesn’t attempt to load tiles for a zoom level greater than the value that this property specifies.
@@ -27,13 +32,14 @@ The default value of this property is `21`. Setting the value of this property t
 
 ## See Also
 
-- [var tileSize: CGSize](mktileoverlay/tilesize.md)
+### Accessing the tile attributes
+- [var tileSize: CGSize](./tilesize.md)
   The size (in pixels) of your tile images.
-- [var isGeometryFlipped: Bool](mktileoverlay/isgeometryflipped.md)
+- [var isGeometryFlipped: Bool](./isgeometryflipped.md)
   A Boolean value that indicates the orientation of tile indexes along the y-axis.
-- [var minimumZ: Int](mktileoverlay/minimumz.md)
+- [var minimumZ: Int](./minimumz.md)
   The minimum zoom level that the tiles of this overlay object support.
-- [var canReplaceMapContent: Bool](mktileoverlay/canreplacemapcontent.md)
+- [var canReplaceMapContent: Bool](./canreplacemapcontent.md)
   A Boolean value that indicates whether the tile content is fully opaque.
 
 

@@ -1,7 +1,8 @@
 # keyReplyRequestedAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A Boolean value indicating whether the Apple event expects to be replied to.
 

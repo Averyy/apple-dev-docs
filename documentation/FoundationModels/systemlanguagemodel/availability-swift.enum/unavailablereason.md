@@ -1,7 +1,8 @@
 # SystemLanguageModel.Availability.UnavailableReason
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reason the system language model is unavailable.
 
@@ -21,26 +22,27 @@ enum UnavailableReason
 ## Topics
 
 ### Getting the unavailable reasons
-- [SystemLanguageModel.Availability.UnavailableReason.appleIntelligenceNotEnabled](systemlanguagemodel/availability-swift.enum/unavailablereason/appleintelligencenotenabled.md)
+- [SystemLanguageModel.Availability.UnavailableReason.appleIntelligenceNotEnabled](./unavailablereason/appleintelligencenotenabled.md)
   Apple Intelligence is not enabled on the system.
-- [SystemLanguageModel.Availability.UnavailableReason.deviceNotEligible](systemlanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible.md)
+- [SystemLanguageModel.Availability.UnavailableReason.deviceNotEligible](./unavailablereason/devicenoteligible.md)
   The device does not support Apple Intelligence.
-- [SystemLanguageModel.Availability.UnavailableReason.modelNotReady](systemlanguagemodel/availability-swift.enum/unavailablereason/modelnotready.md)
+- [SystemLanguageModel.Availability.UnavailableReason.modelNotReady](./unavailablereason/modelnotready.md)
   The models aren’t available on the user’s device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SystemLanguageModel.Availability.available](systemlanguagemodel/availability-swift.enum/available.md)
+### Checking for availability
+- [SystemLanguageModel.Availability.available](./available.md)
   The system is ready to make requests.
-- [case unavailable(SystemLanguageModel.Availability.UnavailableReason)](systemlanguagemodel/availability-swift.enum/unavailable(_:).md)
+- [case unavailable(SystemLanguageModel.Availability.UnavailableReason)](./unavailable%28_%29.md)
   The system isn’t ready for requests.
 
 

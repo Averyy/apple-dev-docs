@@ -1,7 +1,8 @@
 # BLASSetThreading(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the BLAS and LAPACK threading model.
 
@@ -20,6 +21,10 @@ Sets the BLAS and LAPACK threading model.
 func BLASSetThreading(_ threading: BLAS_THREADING) -> Int32
 ```
 
+```c
+int BLASSetThreading(const enum BLAS_THREADING threading);
+```
+
 #### Return Value
 
 `0` on success or `-1` if the current platform doesn’t support the threading model.
@@ -36,11 +41,12 @@ This setting is per thread, and Accelerate saves it in a thread-local variable.
 
 ## See Also
 
-- [struct BLAS](blas.md)
+### Specifying the threading model
+- [struct BLAS](./blas.md)
   An enumeration that acts as a namespace for Swift overlays to BLAS.
-- [func BLASGetThreading() -> BLAS_THREADING](blasgetthreading().md)
+- [func BLASGetThreading() -> BLAS_THREADING](./blasgetthreading%28%29.md)
   Returns the current BLAS and LAPACK threading model.
-- [struct BLAS_THREADING](blas_threading.md)
+- [struct BLAS_THREADING](./blas_threading.md)
   Constants that describe the BLAS and LAPACK threading model.
 
 

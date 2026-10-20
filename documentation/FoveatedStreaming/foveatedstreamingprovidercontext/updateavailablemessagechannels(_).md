@@ -1,7 +1,8 @@
 # updateAvailableMessageChannels(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the host app that the list of available message channels has updated.
 

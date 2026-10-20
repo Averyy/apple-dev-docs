@@ -1,7 +1,8 @@
 # HKMetadataKeySwimmingStrokeStyle
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the predominant stroke style for a lap of swimming.
 
@@ -19,24 +20,29 @@ A key that indicates the predominant stroke style for a lap of swimming.
 let HKMetadataKeySwimmingStrokeStyle: String
 ```
 
+```c
+extern NSString * const HKMetadataKeySwimmingStrokeStyle;
+```
+
 #### Discussion
 
-Set this key on workout lap events. Set its value to an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a valid value from the  [`HKSwimmingStrokeStyle`](hkswimmingstrokestyle.md) enumeration.
+Set this key on workout lap events. Set its value to an [`NSNumber`](../Foundation/nsnumber.md) object that contains a valid value from the  [`HKSwimmingStrokeStyle`](./hkswimmingstrokestyle.md) enumeration.
 
 ## Topics
 
 ### Valid Stroke Styles
-- [enum HKSwimmingStrokeStyle](hkswimmingstrokestyle.md)
+- [enum HKSwimmingStrokeStyle](./hkswimmingstrokestyle.md)
   The style of stroke while swimming.
 
 ## See Also
 
-- [let HKMetadataKeySwimmingLocationType: String](hkmetadatakeyswimminglocationtype.md)
+### Swimming
+- [let HKMetadataKeySwimmingLocationType: String](./hkmetadatakeyswimminglocationtype.md)
   A key that indicates the location for a swimming workout.
-- [let HKMetadataKeyLapLength: String](hkmetadatakeylaplength.md)
+- [let HKMetadataKeyLapLength: String](./hkmetadatakeylaplength.md)
   A key that indicates the length of a lap during a workout.
-- [let HKMetadataKeySWOLFScore: String](hkmetadatakeyswolfscore.md)
-- [let HKMetadataKeyWaterSalinity: String](hkmetadatakeywatersalinity.md)
+- [let HKMetadataKeySWOLFScore: String](./hkmetadatakeyswolfscore.md)
+- [let HKMetadataKeyWaterSalinity: String](./hkmetadatakeywatersalinity.md)
 
 
 ---

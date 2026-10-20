@@ -1,7 +1,8 @@
 # cameraDeviceCanAcceptPTPCommands
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the camera can accept PTP commands.
 
@@ -16,6 +17,10 @@ Indicates that the camera can accept PTP commands.
 
 ```swift
 static let cameraDeviceCanAcceptPTPCommands: ICDeviceCapability
+```
+
+```c
+extern ICDeviceCapability const ICCameraDeviceCanAcceptPTPCommands;
 ```
 
 

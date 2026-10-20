@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that can represent a collection of all values of this type.
@@ -23,7 +24,8 @@ associatedtype AllCases : Collection = [Self] where Self == Self.AllCases.Elemen
 
 ## See Also
 
-- [static var allCases: Self.AllCases](caseiterable/allcases-swift.type.property.md)
+### Accessing Cases
+- [static var allCases: Self.AllCases](./allcases-swift.type.property.md)
   A collection of all values of this type.
 
 

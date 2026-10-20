@@ -1,16 +1,19 @@
 # imagePlaygroundPersonalizationPolicy(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Policy determining whether to support the usage of people in the playground or not.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
-- Mac Catalyst 18.4+
-- macOS 15.4+
-- visionOS 2.4+
+- iOS 18.4+ - Deprecated in 26.4
+- iPadOS 18.4+ - Deprecated in 26.4
+- Mac Catalyst 18.4+ - Deprecated in 26.4
+- macOS 15.4+ - Deprecated in 26.4
+- visionOS 2.4+ - Deprecated in 26.4
+
+> **Deprecated**: Use imagePlaygroundOptions(_:) that takes ImagePlaygroundOptions.Personalization instead.
 
 ## Declaration
 

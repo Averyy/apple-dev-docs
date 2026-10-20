@@ -1,7 +1,8 @@
 # MTRGeneralDiagnosticsRadioFault.wiFiFault
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 case wiFiFault
+```
+
+```c
+MTRGeneralDiagnosticsRadioFaultWiFiFault
 ```
 
 

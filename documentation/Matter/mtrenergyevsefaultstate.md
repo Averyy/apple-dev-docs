@@ -1,7 +1,8 @@
 # MTREnergyEVSEFaultState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,38 +19,42 @@
 enum MTREnergyEVSEFaultState
 ```
 
+```c
+enum MTREnergyEVSEFaultState : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTREnergyEVSEFaultState.contactDryFailure](mtrenergyevsefaultstate/contactdryfailure.md)
-- [MTREnergyEVSEFaultState.contactWetFailure](mtrenergyevsefaultstate/contactwetfailure.md)
-- [MTREnergyEVSEFaultState.emergencyStop](mtrenergyevsefaultstate/emergencystop.md)
-- [MTREnergyEVSEFaultState.evDisconnected](mtrenergyevsefaultstate/evdisconnected.md)
-- [MTREnergyEVSEFaultState.groundFault](mtrenergyevsefaultstate/groundfault.md)
-- [MTREnergyEVSEFaultState.liveNeutralSwap](mtrenergyevsefaultstate/liveneutralswap.md)
-- [MTREnergyEVSEFaultState.meterFailure](mtrenergyevsefaultstate/meterfailure.md)
-- [MTREnergyEVSEFaultState.noError](mtrenergyevsefaultstate/noerror.md)
-- [MTREnergyEVSEFaultState.other](mtrenergyevsefaultstate/other.md)
-- [MTREnergyEVSEFaultState.overCurrent](mtrenergyevsefaultstate/overcurrent.md)
-- [MTREnergyEVSEFaultState.overTemperature](mtrenergyevsefaultstate/overtemperature.md)
-- [MTREnergyEVSEFaultState.overVoltage](mtrenergyevsefaultstate/overvoltage.md)
-- [MTREnergyEVSEFaultState.pilotShortCircuit](mtrenergyevsefaultstate/pilotshortcircuit.md)
-- [MTREnergyEVSEFaultState.powerLoss](mtrenergyevsefaultstate/powerloss.md)
-- [MTREnergyEVSEFaultState.powerQuality](mtrenergyevsefaultstate/powerquality.md)
-- [MTREnergyEVSEFaultState.underVoltage](mtrenergyevsefaultstate/undervoltage.md)
-- [MTREnergyEVSEFaultState.wrongPowerSupply](mtrenergyevsefaultstate/wrongpowersupply.md)
+- [MTREnergyEVSEFaultState.contactDryFailure](./mtrenergyevsefaultstate/contactdryfailure.md)
+- [MTREnergyEVSEFaultState.contactWetFailure](./mtrenergyevsefaultstate/contactwetfailure.md)
+- [MTREnergyEVSEFaultState.emergencyStop](./mtrenergyevsefaultstate/emergencystop.md)
+- [MTREnergyEVSEFaultState.evDisconnected](./mtrenergyevsefaultstate/evdisconnected.md)
+- [MTREnergyEVSEFaultState.groundFault](./mtrenergyevsefaultstate/groundfault.md)
+- [MTREnergyEVSEFaultState.liveNeutralSwap](./mtrenergyevsefaultstate/liveneutralswap.md)
+- [MTREnergyEVSEFaultState.meterFailure](./mtrenergyevsefaultstate/meterfailure.md)
+- [MTREnergyEVSEFaultState.noError](./mtrenergyevsefaultstate/noerror.md)
+- [MTREnergyEVSEFaultState.other](./mtrenergyevsefaultstate/other.md)
+- [MTREnergyEVSEFaultState.overCurrent](./mtrenergyevsefaultstate/overcurrent.md)
+- [MTREnergyEVSEFaultState.overTemperature](./mtrenergyevsefaultstate/overtemperature.md)
+- [MTREnergyEVSEFaultState.overVoltage](./mtrenergyevsefaultstate/overvoltage.md)
+- [MTREnergyEVSEFaultState.pilotShortCircuit](./mtrenergyevsefaultstate/pilotshortcircuit.md)
+- [MTREnergyEVSEFaultState.powerLoss](./mtrenergyevsefaultstate/powerloss.md)
+- [MTREnergyEVSEFaultState.powerQuality](./mtrenergyevsefaultstate/powerquality.md)
+- [MTREnergyEVSEFaultState.underVoltage](./mtrenergyevsefaultstate/undervoltage.md)
+- [MTREnergyEVSEFaultState.wrongPowerSupply](./mtrenergyevsefaultstate/wrongpowersupply.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrenergyevsefaultstate/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrenergyevsefaultstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

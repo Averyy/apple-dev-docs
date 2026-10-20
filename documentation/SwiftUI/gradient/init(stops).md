@@ -1,7 +1,8 @@
 # init(stops:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gradient from an array of color stops.
 
@@ -22,9 +23,10 @@ init(stops: [Gradient.Stop])
 
 ## See Also
 
-- [var stops: [Gradient.Stop]](gradient/stops.md)
+### Creating a gradient from stops
+- [var stops: [Gradient.Stop]](./stops.md)
   The array of color stops.
-- [Gradient.Stop](gradient/stop.md)
+- [Gradient.Stop](./stop.md)
   One color stop in the gradient.
 
 

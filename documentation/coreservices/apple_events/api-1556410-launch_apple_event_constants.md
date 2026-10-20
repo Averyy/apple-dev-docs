@@ -13,9 +13,9 @@ You check for a `keyAEPropData` parameter of the `kAEOpenApplication` Apple even
 ## Topics
 
 ### Constants
-- [var keyAELaunchedAsLogInItem: AEKeyword](keyaelaunchedasloginitem.md)
+- [var keyAELaunchedAsLogInItem: AEKeyword](../keyaelaunchedasloginitem.md)
   If present in a `kAEOpenApplication` event, the receiving application was launched as a login item and should only perform actions suitable to that environment—for example, it probably shouldn't open an untitled document.
-- [var keyAELaunchedAsServiceItem: AEKeyword](keyaelaunchedasserviceitem.md)
+- [var keyAELaunchedAsServiceItem: AEKeyword](../keyaelaunchedasserviceitem.md)
 
 
 ---

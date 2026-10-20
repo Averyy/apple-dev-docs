@@ -1,7 +1,8 @@
 # nationalIDCardData(region:retaining:notRetaining:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request which retrieves elements from the holder and returns the validated document elements.
 
@@ -16,9 +17,12 @@ A request which retrieves elements from the holder and returns the validated doc
 static func nationalIDCardData(region: Locale.Region, retaining retainedElements: [MobileNationalIDCardDataRequest.Element] = [], notRetaining nonRetainedElements: [MobileNationalIDCardDataRequest.Element] = []) -> Self
 ```
 
+Available when `Self` is `MobileNationalIDCardDataRequest`.
+
 ## See Also
 
-- [struct MobileNationalIDCardDataRequest](mobilenationalidcarddatarequest.md)
+### National ID card license data request
+- [struct MobileNationalIDCardDataRequest](../mobilenationalidcarddatarequest.md)
   A mobile national ID card request that retrieves elements from the holder and returns the validated document elements.
 
 

@@ -1,7 +1,8 @@
 # testStructArgumentRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testStructArgumentRequest(with params: MTRUnitTestingClusterTestStructArgumentRequestParams, completion: @escaping @Sendable (MTRUnitTestingClusterBooleanResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testStructArgumentRequest(with params: MTRUnitTestingClusterTestStructArgumentRequestParams) async throws -> MTRUnitTestingClusterBooleanResponseParams
+```
+
+```objc
+- (void) testStructArgumentRequestWithParams:(MTRUnitTestingClusterTestStructArgumentRequestParams *) params completion:(void (^)(MTRUnitTestingClusterBooleanResponseParams *data, NSError *error)) completion;
 ```
 
 

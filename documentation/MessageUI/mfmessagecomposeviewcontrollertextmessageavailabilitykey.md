@@ -1,7 +1,8 @@
 # MFMessageComposeViewControllerTextMessageAvailabilityKey
 
 **Framework**: Message UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value of this key is a number object that contains a Boolean value.
 
@@ -17,9 +18,13 @@ The value of this key is a number object that contains a Boolean value.
 let MFMessageComposeViewControllerTextMessageAvailabilityKey: String
 ```
 
+```c
+extern NSString * const MFMessageComposeViewControllerTextMessageAvailabilityKey;
+```
+
 #### Discussion
 
-This value matches the result of the [`canSendText()`](mfmessagecomposeviewcontroller/cansendtext().md) class method.The `userInfo` dictionary for the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification`](mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md) notification includes this key. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a Boolean value. This value matches the result of the [`canSendText()`](mfmessagecomposeviewcontroller/cansendtext().md) class method.
+This value matches the result of the [`canSendText()`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) class method.The `userInfo` dictionary for the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification`](./mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md) notification includes this key. The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) object that contains a Boolean value. This value matches the result of the [`canSendText()`](./mfmessagecomposeviewcontroller/cansendtext%28%29.md) class method.
 
 
 ---

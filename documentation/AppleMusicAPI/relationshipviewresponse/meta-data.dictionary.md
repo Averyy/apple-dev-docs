@@ -1,7 +1,8 @@
 # RelationshipViewResponse.Meta
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Contextual data about the view.
 
@@ -10,13 +11,14 @@ Contextual data about the view.
 
 ## Declaration
 
-```swift
+```
 object RelationshipViewResponse.Meta
 ```
 
 ## See Also
 
-- [object RelationshipViewResponse.Attributes](relationshipviewresponse/attributes-data.dictionary.md)
+### Related Objects
+- [object RelationshipViewResponse.Attributes](./attributes-data.dictionary.md)
   The attribute metadata for the view.
 
 

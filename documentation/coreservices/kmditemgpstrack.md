@@ -1,7 +1,8 @@
 # kMDItemGPSTrack
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The direction of travel of the item, in degrees from true north. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemGPSTrack: CFString!
+```
+
+```c
+const CFStringRef kMDItemGPSTrack;
 ```
 
 

@@ -1,7 +1,8 @@
 # AVAudioVoiceProcessingSpeechActivityEvent.ended
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the end of speech activity.
 
@@ -19,9 +20,14 @@ Indicates the end of speech activity.
 case ended
 ```
 
+```c
+AVAudioVoiceProcessingSpeechActivityEnded
+```
+
 ## See Also
 
-- [AVAudioVoiceProcessingSpeechActivityEvent.started](avaudiovoiceprocessingspeechactivityevent/started.md)
+### Identifying activity events
+- [AVAudioVoiceProcessingSpeechActivityEvent.started](./started.md)
   Indicates the start of speech activity.
 
 

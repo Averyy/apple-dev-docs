@@ -1,7 +1,8 @@
 # kMDItemProducer
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Producer of the content. A CFString.
 
@@ -12,6 +13,10 @@ Producer of the content. A CFString.
 
 ```swift
 let kMDItemProducer: CFString!
+```
+
+```c
+const CFStringRef kMDItemProducer;
 ```
 
 

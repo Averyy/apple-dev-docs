@@ -1,7 +1,8 @@
 # segment(forTrackTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a segment whose target time range contains, or is closest to, the specified track time.
 
@@ -19,9 +20,13 @@ Returns a segment whose target time range contains, or is closest to, the specif
 func segment(forTrackTime trackTime: CMTime) -> AVAssetTrackSegment?
 ```
 
+```objc
+- (AVAssetTrackSegment *) segmentForTrackTime:(CMTime) trackTime;
+```
+
 #### Return Value
 
-The [`AVCompositionTrackSegment`](avcompositiontracksegment.md) associated with the track time.
+The [`AVCompositionTrackSegment`](../avcompositiontracksegment.md) associated with the track time.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ The [`AVCompositionTrackSegment`](avcompositiontracksegment.md) associated with 
 
 ## See Also
 
-- [var segments: [AVAssetTrackSegment]](avmutablemovietrack/segments.md)
+### Accessing track segments
+- [var segments: [AVAssetTrackSegment]](./segments.md)
   The time mappings from the track’s media samples to its timeline.
 
 

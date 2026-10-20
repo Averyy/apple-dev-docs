@@ -1,7 +1,8 @@
 # CMBufferQueueCopyHead(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func CMBufferQueueCopyHead(_ queue: CMBufferQueue) -> CMBuffer?
+```
+
+```c
+extern CMBufferRefCMBufferQueueCopyHead(CMBufferQueueRef queue);
 ```
 
 

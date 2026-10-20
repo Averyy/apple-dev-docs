@@ -1,7 +1,8 @@
 # reloadRows(at:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the specified rows using the provided animation effect.
 
@@ -9,7 +10,7 @@ Reloads the specified rows using the provided animation effect.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,30 +19,38 @@ Reloads the specified rows using the provided animation effect.
 func reloadRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation)
 ```
 
+```objc
+- (void) reloadRowsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths withRowAnimation:(UITableViewRowAnimation) animation;
+```
+
 #### Discussion
 
 Reloading a row causes the table view to ask its data source for a new cell for that row. The table animates that new cell in as it animates the old row out. Call this method if you want to alert the user that the value of a cell is changing. If, however, notifying the user isn’t important — that is, you just want to change the value that a cell is displaying — you can get the cell for a particular row and set its new value.
 
-When this method is called in an animation block defined by the [`beginUpdates()`](uitableview/beginupdates().md) and [`endUpdates()`](uitableview/endupdates().md) methods, it behaves similarly to [`deleteRows(at:with:)`](uitableview/deleterows(at:with:).md). The indexes that [`UITableView`](uitableview.md) passes to the method are specified in the state of the table view prior to any updates. This happens regardless of ordering of the insertion, deletion, and reloading method calls within the animation block.
+When this method is called in an animation block defined by the [`beginUpdates()`](./beginupdates%28%29.md) and [`endUpdates()`](./endupdates%28%29.md) methods, it behaves similarly to [`deleteRows(at:with:)`](./deleterows%28at,with%29.md). The indexes that [`UITableView`](../uitableview.md) passes to the method are specified in the state of the table view prior to any updates. This happens regardless of ordering of the insertion, deletion, and reloading method calls within the animation block.
 
 ## Parameters
 
-- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects identifying the rows to reload.
-- `animation`: A constant that indicates how the reloading is to be animated, for example, fade out or slide out from the bottom. See [`UITableView.RowAnimation`](uitableview/rowanimation.md) for descriptions of these constants. The animation constant affects the direction in which both the old and the new rows slide. For example, if the animation constant is [`UITableView.RowAnimation.right`](uitableview/rowanimation/right.md), the old rows slide out to the right and the new cells slide in from the right.
+- `indexPaths`: An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects identifying the rows to reload.
+- `animation`: A constant that indicates how the reloading is to be animated, for example, fade out or slide out from the bottom. See [`UITableView.RowAnimation`](./rowanimation.md) for descriptions of these constants.
+
+  The animation constant affects the direction in which both the old and the new rows slide. For example, if the animation constant is [`UITableView.RowAnimation.right`](./rowanimation/right.md), the old rows slide out to the right and the new cells slide in from the right.
 
 ## See Also
 
-- [func insertRows(at: [IndexPath], with: UITableView.RowAnimation)](uitableview/insertrows(at:with:).md)
+### Related Documentation
+- [func insertRows(at: [IndexPath], with: UITableView.RowAnimation)](./insertrows%28at,with%29.md)
   Inserts rows in the table view at the locations that an array of index paths identifies, with an option to animate the insertion.
-- [var hasUncommittedUpdates: Bool](uitableview/hasuncommittedupdates.md)
+### Reloading the table view
+- [var hasUncommittedUpdates: Bool](./hasuncommittedupdates.md)
   A Boolean value that indicates whether the table view’s appearance contains changes that aren’t present in its data source.
-- [func reconfigureRows(at: [IndexPath])](uitableview/reconfigurerows(at:).md)
+- [func reconfigureRows(at: [IndexPath])](./reconfigurerows%28at%29.md)
   Updates the data for the rows at the index paths you specify, preserving the existing cells for the rows.
-- [func reloadData()](uitableview/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Reloads the rows and sections of the table view.
-- [func reloadSections(IndexSet, with: UITableView.RowAnimation)](uitableview/reloadsections(_:with:).md)
+- [func reloadSections(IndexSet, with: UITableView.RowAnimation)](./reloadsections%28_,with%29.md)
   Reloads the specified sections using the provided animation effect.
-- [func reloadSectionIndexTitles()](uitableview/reloadsectionindextitles.md)
+- [func reloadSectionIndexTitles()](./reloadsectionindextitles%28%29.md)
   Reloads the items in the index bar along the right side of the table view.
 
 

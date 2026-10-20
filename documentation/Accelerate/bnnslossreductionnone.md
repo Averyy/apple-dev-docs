@@ -1,7 +1,8 @@
 # BNNSLossReductionNone
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Returns the loss without any reduction.
 
@@ -20,20 +21,25 @@ Returns the loss without any reduction.
 var BNNSLossReductionNone: BNNSLossReductionFunction { get }
 ```
 
+```c
+BNNSLossReductionNone
+```
+
 #### Discussion
 
 ## See Also
 
-- [var rawValue: UInt32](bnnslossreductionfunction/rawvalue.md)
-- [init(UInt32)](bnnslossreductionfunction/init(_:).md)
-- [init(rawValue: UInt32)](bnnslossreductionfunction/init(rawvalue:).md)
-- [var BNNSLossReductionMean: BNNSLossReductionFunction](bnnslossreductionmean.md)
+### Reduction Functions
+- [var rawValue: UInt32](./bnnslossreductionfunction/rawvalue.md)
+- [init(UInt32)](./bnnslossreductionfunction/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnslossreductionfunction/init%28rawvalue%29.md)
+- [var BNNSLossReductionMean: BNNSLossReductionFunction](./bnnslossreductionmean.md)
   Sums the loss of all samples in the batch and divides by the number of samples.
-- [var BNNSLossReductionNonZeroWeightMean: BNNSLossReductionFunction](bnnslossreductionnonzeroweightmean.md)
+- [var BNNSLossReductionNonZeroWeightMean: BNNSLossReductionFunction](./bnnslossreductionnonzeroweightmean.md)
   Sums the loss of all samples in the batch and divides by the number of non-zero weights.
-- [var BNNSLossReductionSum: BNNSLossReductionFunction](bnnslossreductionsum.md)
+- [var BNNSLossReductionSum: BNNSLossReductionFunction](./bnnslossreductionsum.md)
   Sums the loss of all samples in the batch.
-- [var BNNSLossReductionWeightedMean: BNNSLossReductionFunction](bnnslossreductionweightedmean.md)
+- [var BNNSLossReductionWeightedMean: BNNSLossReductionFunction](./bnnslossreductionweightedmean.md)
   Sums the loss of all samples in the batch and divides by the sum of all weights.
 
 

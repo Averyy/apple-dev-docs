@@ -1,7 +1,8 @@
 # JSValueToUInt64(_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSValueToUInt64(_ ctx: JSContextRef, _ value: JSValueRef, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> UInt64
+```
+
+```c
+uint64_t JSValueToUInt64(JSContextRef ctx, JSValueRef value, JSValueRef*exception);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # FaceObservation.Landmarks2D.Region
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,28 +22,29 @@ struct Region
 ## Topics
 
 ### Inspecting a region
-- [let originatingRequestDescriptor: RequestDescriptor?](faceobservation/landmarks2d/region/originatingrequestdescriptor.md)
-- [let points: [NormalizedPoint]](faceobservation/landmarks2d/region/points.md)
-- [let pointsClassification: FaceObservation.Landmarks2D.Region.PointsClassification](faceobservation/landmarks2d/region/pointsclassification-swift.property.md)
-- [FaceObservation.Landmarks2D.Region.PointsClassification](faceobservation/landmarks2d/region/pointsclassification-swift.enum.md)
-- [let precisionEstimatesPerPoint: [Float]?](faceobservation/landmarks2d/region/precisionestimatesperpoint.md)
+- [let originatingRequestDescriptor: RequestDescriptor?](./region/originatingrequestdescriptor.md)
+- [let points: [NormalizedPoint]](./region/points.md)
+- [let pointsClassification: FaceObservation.Landmarks2D.Region.PointsClassification](./region/pointsclassification-swift.property.md)
+- [FaceObservation.Landmarks2D.Region.PointsClassification](./region/pointsclassification-swift.enum.md)
+- [let precisionEstimatesPerPoint: [Float]?](./region/precisionestimatesperpoint.md)
 ### Getting the points
-- [func pointsInImageCoordinates(CGSize, origin: CoordinateOrigin) -> [CGPoint]](faceobservation/landmarks2d/region/pointsinimagecoordinates(_:origin:).md)
+- [func pointsInImageCoordinates(CGSize, origin: CoordinateOrigin) -> [CGPoint]](./region/pointsinimagecoordinates%28_,origin%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var allPoints: FaceObservation.Landmarks2D.Region](faceobservation/landmarks2d/allpoints.md)
+### Getting all landmarks
+- [var allPoints: FaceObservation.Landmarks2D.Region](./allpoints.md)
 
 
 ---

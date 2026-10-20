@@ -1,7 +1,8 @@
 # init(view:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new drag item preview with a view, using the default appearance parameters.
 
@@ -17,6 +18,10 @@ Initializes a new drag item preview with a view, using the default appearance pa
 convenience init(view: UIView)
 ```
 
+```objc
+- (instancetype) initWithView:(UIView *) view;
+```
+
 #### Return Value
 
 A drag preview that is based on the specified view.
@@ -27,15 +32,16 @@ Use this method to display a drag item preview based on a view that you provide.
 
 ## Parameters
 
-- `view`: A [`UIView`](uiview.md) object representing the drag item.
+- `view`: A [`UIView`](../uiview.md) object representing the drag item.
 
 ## See Also
 
-- [init(view: UIView, parameters: UIDragPreviewParameters)](uidragpreview/init(view:parameters:).md)
+### Initializing a drag item preview
+- [init(view: UIView, parameters: UIDragPreviewParameters)](./init%28view,parameters%29.md)
   Initializes a new drag item preview with a view and with a set of appearance parameters.
-- [convenience init(forURL: URL)](uidragpreview/init(forurl:).md)
+- [convenience init(forURL: URL)](./init%28forurl%29.md)
   Initializes a new drag item preview with a URL.
-- [convenience init(forURL: URL, title: String?)](uidragpreview/init(forurl:title:).md)
+- [convenience init(forURL: URL, title: String?)](./init%28forurl,title%29.md)
   Initializes a drag item preview with a URL and title.
 
 

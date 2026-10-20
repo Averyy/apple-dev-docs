@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A static object you use to send a message with default properties.
 
@@ -22,7 +23,8 @@ static let `default`: NWConnectionGroup.Message
 
 ## See Also
 
-- [init(identifier: String, expiration: UInt64, priority: Double, isFinal: Bool, antecedent: NWConnection.ContentContext?, metadata: [NWProtocolMetadata]?)](nwconnectiongroup/message/init(identifier:expiration:priority:isfinal:antecedent:metadata:).md)
+### Sending Messages
+- [init(identifier: String, expiration: UInt64, priority: Double, isFinal: Bool, antecedent: NWConnection.ContentContext?, metadata: [NWProtocolMetadata]?)](./init%28identifier,expiration,priority,isfinal,antecedent,metadata%29.md)
   Initializes a custom message context you use to send data.
 
 

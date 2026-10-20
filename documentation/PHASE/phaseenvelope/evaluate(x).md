@@ -1,7 +1,8 @@
 # evaluate(x:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the height of the envelope for an input value.
 
@@ -19,19 +20,24 @@ Provides the height of the envelope for an input value.
 func evaluate(x: Double) -> Double
 ```
 
+```objc
+- (double) evaluateForValue:(double) x;
+```
+
 #### Return Value
 
 The curve’s height for the argument *x* value.
 
 ## Parameters
 
-- `x`: A value within the envelope’s domain. The envelope clamps this parameter to a value within [`domain`](phaseenvelope/domain.md).
+- `x`: A value within the envelope’s domain. The envelope clamps this parameter to a value within [`domain`](./domain.md).
 
 ## See Also
 
-- [var segments: [PHASEEnvelopeSegment]](phaseenvelope/segments.md)
+### Inspecting the Envelope
+- [var segments: [PHASEEnvelopeSegment]](./segments.md)
   An array of the envelope’s segments.
-- [var startPoint: simd_double2](phaseenvelope/startpoint.md)
+- [var startPoint: simd_double2](./startpoint.md)
   The starting point along the envelope’s duration.
 
 

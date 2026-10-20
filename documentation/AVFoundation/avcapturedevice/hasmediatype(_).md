@@ -1,7 +1,8 @@
 # hasMediaType(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the device captures media of a particular type.
 
@@ -19,23 +20,28 @@ Returns a Boolean value that indicates whether the device captures media of a pa
 func hasMediaType(_ mediaType: AVMediaType) -> Bool
 ```
 
+```objc
+- (BOOL) hasMediaType:(AVMediaType) mediaType;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device captures media of the specified type; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the device captures media of the specified type; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
-- `mediaType`: A media type, such as [`video`](avmediatype/video.md), [`audio`](avmediatype/audio.md), or [`muxed`](avmediatype/muxed.md).
+- `mediaType`: A media type, such as [`video`](../avmediatype/video.md), [`audio`](../avmediatype/audio.md), or [`muxed`](../avmediatype/muxed.md).
 
 ## See Also
 
-- [var isVirtualDevice: Bool](avcapturedevice/isvirtualdevice.md)
+### Inspecting device characteristics
+- [var isVirtualDevice: Bool](./isvirtualdevice.md)
   A Boolean value that indicates whether the device consists of two or more physical devices.
-- [var constituentDevices: [AVCaptureDevice]](avcapturedevice/constituentdevices.md)
+- [var constituentDevices: [AVCaptureDevice]](./constituentdevices.md)
   An array of physical devices that make up a virtual device.
-- [var transportType: Int32](avcapturedevice/transporttype.md)
+- [var transportType: Int32](./transporttype.md)
   The transport type of the device.
-- [func supportsSessionPreset(AVCaptureSession.Preset) -> Bool](avcapturedevice/supportssessionpreset(_:).md)
+- [func supportsSessionPreset(AVCaptureSession.Preset) -> Bool](./supportssessionpreset%28_%29.md)
   Returns a Boolean value that indicates whether you can use the device with capture session configured with the specified preset.
 
 

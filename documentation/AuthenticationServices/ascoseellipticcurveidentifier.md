@@ -1,7 +1,8 @@
 # ASCOSEEllipticCurveIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the elliptic curve identifier.
 
@@ -18,50 +19,55 @@ A structure that contains the elliptic curve identifier.
 struct ASCOSEEllipticCurveIdentifier
 ```
 
+```c
+typedef NSInteger ASCOSEEllipticCurveIdentifier;
+```
+
 ## Topics
 
 ### Creating the identifier
-- [init(Int)](ascoseellipticcurveidentifier/init(_:).md)
+- [init(Int)](./ascoseellipticcurveidentifier/init%28_%29.md)
   Creates the elliptic curve identifier.
-- [init(rawValue: Int)](ascoseellipticcurveidentifier/init(rawvalue:).md)
+- [init(rawValue: Int)](./ascoseellipticcurveidentifier/init%28rawvalue%29.md)
   Creates the elliptic curve identifier.
 ### Getting the properties
-- [static var P256: ASCOSEEllipticCurveIdentifier](ascoseellipticcurveidentifier/p256.md)
+- [static var P256: ASCOSEEllipticCurveIdentifier](./ascoseellipticcurveidentifier/p256.md)
   The 256-bit elliptic curve identifier.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ASPublicKeyCredential](aspublickeycredential.md)
+### Request configuration
+- [protocol ASPublicKeyCredential](./aspublickeycredential.md)
   An interface that defines the properties of the public key.
-- [class ASAuthorizationPublicKeyCredentialParameters](asauthorizationpublickeycredentialparameters.md)
+- [class ASAuthorizationPublicKeyCredentialParameters](./asauthorizationpublickeycredentialparameters.md)
   An object that provides required parameters for the credential during registration.
-- [struct ASCOSEAlgorithmIdentifier](ascosealgorithmidentifier.md)
+- [struct ASCOSEAlgorithmIdentifier](./ascosealgorithmidentifier.md)
   An identifier for the algorithm that a credential’s key pair uses.
-- [struct ASAuthorizationPublicKeyCredentialAttestationKind](asauthorizationpublickeycredentialattestationkind.md)
+- [struct ASAuthorizationPublicKeyCredentialAttestationKind](./asauthorizationpublickeycredentialattestationkind.md)
   A structure that defines the types of attestations a developer can request.
-- [struct ASAuthorizationPublicKeyCredentialResidentKeyPreference](asauthorizationpublickeycredentialresidentkeypreference.md)
+- [struct ASAuthorizationPublicKeyCredentialResidentKeyPreference](./asauthorizationpublickeycredentialresidentkeypreference.md)
   A structure that specifies the relying party’s preference for resident key storage.
-- [struct ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialuserverificationpreference.md)
+- [struct ASAuthorizationPublicKeyCredentialUserVerificationPreference](./asauthorizationpublickeycredentialuserverificationpreference.md)
   A structure that defines the relying party’s user verification preference.
-- [protocol ASAuthorizationPublicKeyCredentialDescriptor](asauthorizationpublickeycredentialdescriptor.md)
+- [protocol ASAuthorizationPublicKeyCredentialDescriptor](./asauthorizationpublickeycredentialdescriptor.md)
   An interface that defines the credential identifier.
-- [class ASAuthorizationPlatformPublicKeyCredentialDescriptor](asauthorizationplatformpublickeycredentialdescriptor.md)
+- [class ASAuthorizationPlatformPublicKeyCredentialDescriptor](./asauthorizationplatformpublickeycredentialdescriptor.md)
   An object that holds the credential.
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor](asauthorizationsecuritykeypublickeycredentialdescriptor.md)
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor](./asauthorizationsecuritykeypublickeycredentialdescriptor.md)
   An object that holds public key credential transport information.
-- [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](./asauthorizationsecuritykeypublickeycredentialdescriptor/transport.md)
   A structure that defines the security key credential transport type.
-- [static var allSupported: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](asauthorizationsecuritykeypublickeycredentialdescriptor/transport/allsupported.md)
+- [static var allSupported: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](./asauthorizationsecuritykeypublickeycredentialdescriptor/transport/allsupported.md)
   An array of currently supported transport types.
 
 

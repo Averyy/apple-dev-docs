@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tracks of media that an asset contains.
 
@@ -20,19 +21,22 @@ The tracks of media that an asset contains.
 static var tracks: AVAsyncProperty<Root, [AVAssetTrack]> { get }
 ```
 
+Available when `Root` inherits `AVAsset`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVAssetTrack?, (any Error)?) -> Void)](avasset/loadtrack(withtrackid:completionhandler:).md)
+### Loading tracks
+- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVAssetTrack?, (any Error)?) -> Void)](../avasset/loadtrack%28withtrackid,completionhandler%29.md)
   Loads a track that contains the specified identifier.
-- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](avasset/loadtracks(withmediatype:completionhandler:).md)
+- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](../avasset/loadtracks%28withmediatype,completionhandler%29.md)
   Loads tracks that contain media of a specified type.
-- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](avasset/loadtracks(withmediacharacteristic:completionhandler:).md)
+- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](../avasset/loadtracks%28withmediacharacteristic,completionhandler%29.md)
   Loads tracks that contain media of a specified characteristic.
-- [func findUnusedTrackID(completionHandler: (CMPersistentTrackID, (any Error)?) -> Void)](avasset/findunusedtrackid(completionhandler:).md)
+- [func findUnusedTrackID(completionHandler: (CMPersistentTrackID, (any Error)?) -> Void)](../avasset/findunusedtrackid%28completionhandler%29.md)
   Loads an identifier that no other track in the asset uses.
 
 

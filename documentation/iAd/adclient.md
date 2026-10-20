@@ -1,13 +1,14 @@
 # ADClient
 
 **Framework**: iAd  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The parent class you use to request an attribution response.
 
 ## Declaration
 
-```swift
+```objc
 @interface ADClient : NSObject
 ```
 
@@ -18,20 +19,21 @@ To use this class, fetch the shared client object, `shared()`. Then call its `re
 ## Topics
 
 ### Instance Methods
-- [- requestAttributionDetailsWithBlock:](adclient/requestattributiondetailswithblock:.md)
+- [- requestAttributionDetailsWithBlock:](./adclient/requestattributiondetailswithblock_.md)
 ### Type Methods
-- [+ sharedClient](adclient/sharedclient.md)
+- [+ sharedClient](./adclient/sharedclient.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 
 ## See Also
 
-- [iAd Changelog](iad-changelog.md)
+### Essentials
+- [iAd Changelog](./iad-changelog.md)
   Learn what’s new in the Apple Search Ads iAd Attribution API.
-- [Setting Up Apple Search Ads Attribution](setting-up-apple-search-ads-attribution.md)
+- [Setting Up Apple Search Ads Attribution](./setting-up-apple-search-ads-attribution.md)
   Retrieve the attribution dictionary.
 
 

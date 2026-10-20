@@ -1,12 +1,13 @@
 # properties()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of  the names of all the properties for the record in the Address Book database.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Returns an array of  the names of all the properties for the record in the Addre
 class func properties() -> [Any]!
 ```
 
+```objc
++ (NSArray *) properties;
+```
+
 ## See Also
 
-- [class func addPropertiesAndTypes([AnyHashable : Any]!) -> Int](abperson/addpropertiesandtypes(_:).md)
+### Managing Properties
+- [class func addPropertiesAndTypes([AnyHashable : Any]!) -> Int](./addpropertiesandtypes%28_%29.md)
   Adds the given properties to all the records of this type in the Address Book database.
-- [class func removeProperties([Any]!) -> Int](abperson/removeproperties(_:).md)
+- [class func removeProperties([Any]!) -> Int](./removeproperties%28_%29.md)
   Removes the given properties from all the records of this type in the Address Book database.
-- [class func type(ofProperty: String!) -> ABPropertyType](abperson/type(ofproperty:).md)
+- [class func type(ofProperty: String!) -> ABPropertyType](./type%28ofproperty%29.md)
   Returns the type of a given property.
 
 

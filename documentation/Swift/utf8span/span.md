@@ -1,7 +1,8 @@
 # span
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A span used to access the code units.
 
@@ -26,7 +27,7 @@ A `Span` over the UTF-8 code units of this `UTF8Span`.
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

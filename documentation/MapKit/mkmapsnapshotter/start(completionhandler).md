@@ -1,7 +1,8 @@
 # start(completionHandler:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Submits the request to create a snapshot and delivers the results to the specified block.
 
@@ -17,7 +18,15 @@ Submits the request to create a snapshot and delivers the results to the specifi
 ## Declaration
 
 ```swift
+func start(completionHandler: @escaping @MainActor @Sendable (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)
+```
+
+```swift
 func start() async throws -> MKMapSnapshotter.Snapshot
+```
+
+```objc
+- (void) startWithCompletionHandler:(MKMapSnapshotCompletionHandler) completionHandler;
 ```
 
 #### Discussion
@@ -34,13 +43,14 @@ In macOS, this method creates both standard and high-resolution representations 
 
 ## See Also
 
-- [func start(with: dispatch_queue_t, completionHandler: (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)](mkmapsnapshotter/start(with:completionhandler:).md)
+### Generating a snapshot
+- [func start(with: dispatch_queue_t, completionHandler: (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)](./start%28with,completionhandler%29.md)
   Submits the request to create a snapshot and executes the resulting block on the specified queue.
-- [MKMapSnapshotter.CompletionHandler](mkmapsnapshotter/completionhandler.md)
+- [MKMapSnapshotter.CompletionHandler](./completionhandler.md)
   A block that processes the results of a snapshot request.
-- [func cancel()](mkmapsnapshotter/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the request to create a snapshot.
-- [var isLoading: Bool](mkmapsnapshotter/isloading.md)
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether the snapshotter is generating an image.
 
 

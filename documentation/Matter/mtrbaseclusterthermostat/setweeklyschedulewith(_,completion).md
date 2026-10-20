@@ -1,7 +1,8 @@
 # setWeeklyScheduleWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func setWeeklyScheduleWith(_ params: MTRThermostatClusterSetWeeklyScheduleParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setWeeklyScheduleWith(_ params: MTRThermostatClusterSetWeeklyScheduleParams) async throws
+```
+
+```objc
+- (void) setWeeklyScheduleWithParams:(MTRThermostatClusterSetWeeklyScheduleParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

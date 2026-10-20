@@ -1,7 +1,8 @@
 # modifiedDate
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that this version was last modified.
 
@@ -20,7 +21,8 @@ var modifiedDate: Date
 
 ## See Also
 
-- [var localizedNameOfSavingComputer: String](gamesavesynceddirectory/version/localizednameofsavingcomputer.md)
+### Comparing versions
+- [var localizedNameOfSavingComputer: String](./localizednameofsavingcomputer.md)
   The localized name of the device that saved this version.
 
 

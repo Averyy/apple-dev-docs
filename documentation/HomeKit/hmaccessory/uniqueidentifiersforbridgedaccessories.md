@@ -1,7 +1,8 @@
 # uniqueIdentifiersForBridgedAccessories
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of unique identifiers, each of which represents an accessory vended by the bridge.
 
@@ -19,15 +20,20 @@ An array of unique identifiers, each of which represents an accessory vended by
 var uniqueIdentifiersForBridgedAccessories: [UUID]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<NSUUID *> * uniqueIdentifiersForBridgedAccessories;
+```
+
 #### Discussion
 
-This value is `nil` for accessories that aren’t bridges. See the [`isBridged`](hmaccessory/isbridged.md) property for more information about working with bridges.
+This value is `nil` for accessories that aren’t bridges. See the [`isBridged`](./isbridged.md) property for more information about working with bridges.
 
 ## See Also
 
-- [var isBridged: Bool](hmaccessory/isbridged.md)
+### Managing bridged accessories
+- [var isBridged: Bool](./isbridged.md)
   A Boolean that indicates whether the accessory is accessed through a bridge.
-- [var identifiersForBridgedAccessories: [UUID]?](hmaccessory/identifiersforbridgedaccessories.md)
+- [var identifiersForBridgedAccessories: [UUID]?](./identifiersforbridgedaccessories.md)
   An array of identifiers for accessories available through a bridge.
 
 

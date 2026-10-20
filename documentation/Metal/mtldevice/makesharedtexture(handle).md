@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a texture that references a shared texture.
@@ -20,31 +21,36 @@ Creates a texture that references a shared texture.
 func makeSharedTexture(handle sharedHandle: MTLSharedTextureHandle) -> (any MTLTexture)?
 ```
 
+```objc
+- (id<MTLTexture>) newSharedTextureWithHandle:(MTLSharedTextureHandle *) sharedHandle;
+```
+
 #### Return Value
 
-A new [`MTLTexture`](mtltexture.md) instance if the method completed successfully; otherwise `nil`.
+A new [`MTLTexture`](../mtltexture.md) instance if the method completed successfully; otherwise `nil`.
 
 #### Discussion
 
-Call this method from the same [`MTLDevice`](mtldevice.md) instance that created the shared texture instance.
+Call this method from the same [`MTLDevice`](../mtldevice.md) instance that created the shared texture instance.
 
-> 💡 **Tip**:  You can identify the correct device with the texture handle’s [`device`](mtlsharedtexturehandle/device.md) property.
+> 💡 **Tip**:  You can identify the correct device with the texture handle’s [`device`](../mtlsharedtexturehandle/device.md) property.
 
 ## Parameters
 
-- `sharedHandle`: An [`MTLSharedTextureHandle`](mtlsharedtexturehandle.md) instance, typically from another process using the same GPU device.
+- `sharedHandle`: An [`MTLSharedTextureHandle`](../mtlsharedtexturehandle.md) instance, typically from another process using the same GPU device.
 
 ## See Also
 
-- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtldevice/maketexture(descriptor:).md)
+### Creating textures
+- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](./maketexture%28descriptor%29.md)
   Creates a new texture instance.
-- [func makeTexture(descriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plane: Int) -> (any MTLTexture)?](mtldevice/maketexture(descriptor:iosurface:plane:).md)
+- [func makeTexture(descriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plane: Int) -> (any MTLTexture)?](./maketexture%28descriptor,iosurface,plane%29.md)
   Creates a texture instance that uses I/O surface to store its underlying data.
-- [func makeSharedTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtldevice/makesharedtexture(descriptor:).md)
+- [func makeSharedTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](./makesharedtexture%28descriptor%29.md)
   Creates a texture that you can share across process boundaries.
-- [func minimumLinearTextureAlignment(for: MTLPixelFormat) -> Int](mtldevice/minimumlineartexturealignment(for:).md)
+- [func minimumLinearTextureAlignment(for: MTLPixelFormat) -> Int](./minimumlineartexturealignment%28for%29.md)
   Returns the minimum alignment the GPU device requires to create a linear texture from a buffer.
-- [func minimumTextureBufferAlignment(for: MTLPixelFormat) -> Int](mtldevice/minimumtexturebufferalignment(for:).md)
+- [func minimumTextureBufferAlignment(for: MTLPixelFormat) -> Int](./minimumtexturebufferalignment%28for%29.md)
   Returns the minimum alignment the GPU device requires to create a texture buffer from a buffer.
 
 

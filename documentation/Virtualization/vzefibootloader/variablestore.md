@@ -1,7 +1,8 @@
 # variableStore
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The boot loader’s EFI variable store.
 
@@ -12,6 +13,10 @@ The boot loader’s EFI variable store.
 
 ```swift
 var variableStore: VZEFIVariableStore? { get set }
+```
+
+```objc
+@property (strong, nullable) VZEFIVariableStore * variableStore;
 ```
 
 

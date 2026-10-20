@@ -1,7 +1,8 @@
 # testAddArguments(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testAddArguments(with params: MTRUnitTestingClusterTestAddArgumentsParams, completion: @escaping @Sendable (MTRUnitTestingClusterTestAddArgumentsResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testAddArguments(with params: MTRUnitTestingClusterTestAddArgumentsParams) async throws -> MTRUnitTestingClusterTestAddArgumentsResponseParams
+```
+
+```objc
+- (void) testAddArgumentsWithParams:(MTRUnitTestingClusterTestAddArgumentsParams *) params completion:(void (^)(MTRUnitTestingClusterTestAddArgumentsResponseParams *data, NSError *error)) completion;
 ```
 
 

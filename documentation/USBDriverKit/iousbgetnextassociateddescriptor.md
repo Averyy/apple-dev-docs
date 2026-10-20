@@ -1,7 +1,8 @@
 # IOUSBGetNextAssociatedDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the next descriptor in the specified configuration descriptor that belongs to another container descriptor.
 
@@ -10,7 +11,7 @@ Gets the next descriptor in the specified configuration descriptor that belongs 
 
 ## Declaration
 
-```swift
+```c
 const IOUSBDescriptorHeader *IOUSBGetNextAssociatedDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *parentDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
@@ -30,13 +31,14 @@ This method uses `getNextDescriptor`, but returns `NULL` if it finds another des
 
 ## See Also
 
-- [IOUSBGetNextDescriptor](iousbgetnextdescriptor.md)
+### Configuration Descriptors
+- [IOUSBGetNextDescriptor](./iousbgetnextdescriptor.md)
   Gets the next descriptor in a configuration descriptor.
-- [IOUSBGetNextDescriptorWithType](iousbgetnextdescriptorwithtype.md)
+- [IOUSBGetNextDescriptorWithType](./iousbgetnextdescriptorwithtype.md)
   Finds the next descriptor matching a given type within a configuration descriptor.
-- [IOUSBGetNextAssociatedDescriptorWithType](iousbgetnextassociateddescriptorwithtype.md)
+- [IOUSBGetNextAssociatedDescriptorWithType](./iousbgetnextassociateddescriptorwithtype.md)
   Finds the next descriptor matching a specific type within a configuration descriptor that belongs to another container descriptor.
-- [IOUSBGetConfigurationMaxPowerMilliAmps](iousbgetconfigurationmaxpowermilliamps.md)
+- [IOUSBGetConfigurationMaxPowerMilliAmps](./iousbgetconfigurationmaxpowermilliamps.md)
   Extracts the maximum bus current a configuration descriptor requires.
 
 

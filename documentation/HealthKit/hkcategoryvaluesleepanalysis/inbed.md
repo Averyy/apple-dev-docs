@@ -1,7 +1,8 @@
 # HKCategoryValueSleepAnalysis.inBed
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is in bed.
 
@@ -17,6 +18,10 @@ The user is in bed.
 
 ```swift
 case inBed
+```
+
+```c
+HKCategoryValueSleepAnalysisInBed
 ```
 
 

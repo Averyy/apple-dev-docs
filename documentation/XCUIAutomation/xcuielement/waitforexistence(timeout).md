@@ -1,18 +1,19 @@
 # waitForExistence(timeout:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits the specified amount of time for an element to exist.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,21 +22,26 @@ Waits the specified amount of time for an element to exist.
 func waitForExistence(timeout: TimeInterval) -> Bool
 ```
 
+```objc
+- (BOOL) waitForExistenceWithTimeout:(NSTimeInterval) timeout;
+```
+
 #### Discussion
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if the timeout expires while the element’s [`exists`](xcuielement/exists.md) property equals [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`false`](../../Swift/false.md) if the timeout expires while the element’s [`exists`](./exists.md) property equals [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func waitForNonExistence(timeout: TimeInterval) -> Bool](xcuielement/waitfornonexistence(timeout:).md)
+### Querying element state
+- [func waitForNonExistence(timeout: TimeInterval) -> Bool](./waitfornonexistence%28timeout%29.md)
   Waits the specified amount of time for an element to no longer exist.
-- [func wait<V>(for: KeyPath<XCUIElement, V>, toEqual: V, timeout: TimeInterval) -> Bool](xcuielement/wait(for:toequal:timeout:).md)
+- [func wait<V>(for: KeyPath<XCUIElement, V>, toEqual: V, timeout: TimeInterval) -> Bool](./wait%28for,toequal,timeout%29.md)
   Waits a specified amount of time for a property value to equal a specified value.
-- [var exists: Bool](xcuielement/exists.md)
+- [var exists: Bool](./exists.md)
   Determines if the element exists.
-- [var isHittable: Bool](xcuielement/ishittable.md)
+- [var isHittable: Bool](./ishittable.md)
   Determines if the system can compute a hit point for the element.
-- [var debugDescription: String](xcuielement/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   Provides debugging information about the element.
 
 

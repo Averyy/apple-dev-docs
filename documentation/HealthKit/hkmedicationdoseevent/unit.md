@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit that the system associates with the medication when the person logs the dose.
 
@@ -18,6 +19,10 @@ The unit that the system associates with the medication when the person logs the
 ```swift
 @NSCopying
 var unit: HKUnit { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nonnull) HKUnit * unit;
 ```
 
 #### Discussion

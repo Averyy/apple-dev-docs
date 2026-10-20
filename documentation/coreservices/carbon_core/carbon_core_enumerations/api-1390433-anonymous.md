@@ -5,13 +5,13 @@
 ## Topics
 
 ### Constants
-- [var kUCTextBreakCharMask: Int](kuctextbreakcharmask.md)
+- [var kUCTextBreakCharMask: Int](../../kuctextbreakcharmask.md)
   If the bit specified by this mask is set, boundaries of characters may be located (with surrogate pairs treated as a single character).
-- [var kUCTextBreakClusterMask: Int](kuctextbreakclustermask.md)
-- [var kUCTextBreakLineMask: Int](kuctextbreaklinemask.md)
+- [var kUCTextBreakClusterMask: Int](../../kuctextbreakclustermask.md)
+- [var kUCTextBreakLineMask: Int](../../kuctextbreaklinemask.md)
   If the bit specified by this mask is set, potential line breaks may be located.
-- [var kUCTextBreakParagraphMask: Int](kuctextbreakparagraphmask.md)
-- [var kUCTextBreakWordMask: Int](kuctextbreakwordmask.md)
+- [var kUCTextBreakParagraphMask: Int](../../kuctextbreakparagraphmask.md)
+- [var kUCTextBreakWordMask: Int](../../kuctextbreakwordmask.md)
   If the bit specified by this mask is set, boundaries of words may be located. This can be used to determine what to highlight as the result of a double-click.
 
 

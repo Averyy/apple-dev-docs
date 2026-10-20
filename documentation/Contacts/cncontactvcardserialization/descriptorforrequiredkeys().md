@@ -1,7 +1,8 @@
 # descriptorForRequiredKeys()
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Use to fetch all contact keys required to create vCard data from a contact.
 
@@ -19,9 +20,13 @@ Use to fetch all contact keys required to create vCard data from a contact.
 class func descriptorForRequiredKeys() -> any CNKeyDescriptor
 ```
 
+```objc
++ (id<CNKeyDescriptor>) descriptorForRequiredKeys;
+```
+
 #### Return Value
 
-A key descriptor to be used in the [`keysToFetch`](cncontactfetchrequest/keystofetch.md) array when fetching the contacts.
+A key descriptor to be used in the [`keysToFetch`](../cncontactfetchrequest/keystofetch.md) array when fetching the contacts.
 
 
 ---

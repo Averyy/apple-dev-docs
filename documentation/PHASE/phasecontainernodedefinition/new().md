@@ -1,7 +1,8 @@
 # new()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a container node.
 
@@ -19,11 +20,16 @@ Creates a container node.
 class func new() -> Self
 ```
 
+```objc
++ (instancetype) new;
+```
+
 ## See Also
 
-- [init()](phasecontainernodedefinition/init.md)
+### Creating a Node
+- [init()](./init%28%29.md)
   Creates a container node.
-- [init(identifier: String)](phasecontainernodedefinition/init(identifier:).md)
+- [init(identifier: String)](./init%28identifier%29.md)
   Creates a container node with the given name.
 
 

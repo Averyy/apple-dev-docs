@@ -1,7 +1,8 @@
 # GameSaveSyncedDirectory.Version
 
 **Framework**: GameSave  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a version of the directory.
 
@@ -25,25 +26,26 @@ Used to describe the conflicted or local versions of a directory in case there a
 ## Topics
 
 ### Accessing saved game state
-- [var url: URL](gamesavesynceddirectory/version/url.md)
+- [var url: URL](./version/url.md)
   The URL of a directory where you read and write game-save data.
-- [var isLocal: Bool](gamesavesynceddirectory/version/islocal.md)
+- [var isLocal: Bool](./version/islocal.md)
   `true` if the directory version is local; otherwise `false`.
 ### Comparing versions
-- [var localizedNameOfSavingComputer: String](gamesavesynceddirectory/version/localizednameofsavingcomputer.md)
+- [var localizedNameOfSavingComputer: String](./version/localizednameofsavingcomputer.md)
   The localized name of the device that saved this version.
-- [var modifiedDate: Date](gamesavesynceddirectory/version/modifieddate.md)
+- [var modifiedDate: Date](./version/modifieddate.md)
   The date that this version was last modified.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Identifiable](../swift/identifiable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Identifiable](../../Swift/identifiable.md)
 
 ## See Also
 
-- [func resolveConflicts(with: GameSaveSyncedDirectory.Version)](gamesavesynceddirectory/resolveconflicts(with:).md)
+### Resolving conflicts
+- [func resolveConflicts(with: GameSaveSyncedDirectory.Version)](./resolveconflicts%28with%29.md)
   Indicates that you resolved a conflict.
 
 

@@ -1,6 +1,7 @@
 # Evaluating prompts to measure performance and improve model responses
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Systematically measure and improve the quality of your prompts by using structured evaluation.
 
@@ -14,9 +15,9 @@ Writing a prompt that works for one or two test cases might be straightforward i
 
 Starting with prompt evaluation doesn’t require building a complete system immediately. Begin with a single critical quality criterion and a handful of test scenarios. As you see the value — catching a failure you might have missed, making an improvement with confidence, or tracking quality over time — expand your coverage.
 
-This article applies to your evaluation strategy whether you choose to use Swift or Python. For more information about the Python Foundation Models SDK, see [`Foundation Models SDK for Python`](https://developer.apple.comhttps://github.com/apple/python-apple-fm-sdk).
+This article applies to your evaluation strategy whether you choose to use Swift or Python. For more information about the Python Foundation Models SDK, see [Foundation Models SDK for Python](https://github.com/apple/python-apple-fm-sdk).
 
-##### Understand Why Prompt Evaluation Matters
+##### Understand why prompt evaluation matters
 
 Unlike traditional software where the output is predictable and repeatable, generative models introduce unique challenges that make evaluation essential.
 
@@ -28,7 +29,7 @@ Adding a single word to your prompt can dramatically change the model’s behavi
 
 It’s important to remember that the response a model generates reaches a person. For example, a recipe app that suggests ingredients to someone with dietary restrictions or a summarization tool that misrepresents key information. By evaluating how the model responds to your app’s prompts, you can catch potentially harmful failures to help protect people who use your app.
 
-##### Transform Vague Goals Into Measurable Criteria
+##### Transform vague goals into measurable criteria
 
 The first step in evaluating prompts is transforming vague quality goals into concrete, measurable criteria. Instead of hoping your feature works well, you define exactly what success looks like in quantifiable terms.
 
@@ -46,7 +47,7 @@ These goals are a good start, but they’re too vague to measure. Evaluation req
 
 This transformation from something that seems good to something that meets defined criteria is what makes for a useful evaluation. You replace personal judgment with objective measurements that you can track, automate, and compare over time.
 
-##### Examine the Anatomy of an Evaluation
+##### Examine the anatomy of an evaluation
 
 A complete evaluation system has three core components working together: test inputs, quality criteria, and the measurement methods you use.
 
@@ -70,7 +71,7 @@ For each quality criterion, you need a way to automatically check if the output 
 
 When you run an evaluation, each test input flows through your feature’s prompt and the model generates output. That output is then automatically checked against all your quality criteria, producing a set of measurements —– pass-fail results, numeric scores, or percentage ratings —– that tell you exactly how well your prompt performs.
 
-##### Understand Measurement Approaches
+##### Understand measurement approaches
 
 Different quality criteria require different measurement approaches. Knowing which approach to use helps you build comprehensive evaluations.
 
@@ -81,7 +82,7 @@ Different quality criteria require different measurement approaches. Knowing whi
 
 Most robust evaluations combine multiple approaches. For example, measuring the effectiveness of a recipe recommendation might use rule-based checking for dietary compliance, comparison to ground truth for ingredient accuracy, and model-based judgment to rate the difficulty.
 
-##### Build Your Evaluation Dataset
+##### Build your evaluation dataset
 
 Your evaluation is only as good as the scenarios you test against. A narrow dataset might make a flawed prompt appear perfect, while a comprehensive dataset reveals issues before they reach the people who use your app.
 
@@ -93,7 +94,7 @@ If your feature serves people across different regions, experience levels, or us
 
 You might start a dataset with scenarios you manually create that target specific requirements. As people use your feature, real interactions reveal unexpected patterns and edge cases you can add. Consider using a generative model to build additional test scenarios by creating synthetic data that explores variations, like “Generate 50 different ways a person might ask for a low-carb recipe.”
 
-##### Follow the Evaluation Driven Workflow
+##### Follow the evaluation-driven workflow
 
 Evaluation isn’t a one-time verification step — it’s a continuous cycle that drives quality improvement throughout development. The cycle follows five steps:
 
@@ -115,7 +116,7 @@ Based on your analysis, you may need to refine your prompt, adjust the model set
 
 This iterative refinement process, often called *hill climbing*, systematically improves quality. Small, measured changes accumulate into significant improvements, with evaluation providing continuous feedback about whether you’re moving in the right direction.
 
-##### Prevent Regressions
+##### Prevent regressions
 
 One of evaluation’s most valuable benefits is regression prevention. As your feature evolves, evaluation verifies that improvements in one area don’t silently break functionality elsewhere.
 
@@ -125,9 +126,10 @@ Your evaluation suite catches these trade-offs and lets you refine the approach 
 
 ## See Also
 
-- [Evaluating language model responses](../evaluations/evaluating-language-model-responses.md)
+### Performance and evaluation
+- [Evaluating language model responses](../Evaluations/evaluating-language-model-responses.md)
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
-- [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
+- [Analyzing the runtime performance of your Foundation Models app](./analyzing-the-runtime-performance-of-your-foundation-models-app.md)
   Measure how prompts, responses, and tool calls affect token consumption and response times in Instruments.
 
 

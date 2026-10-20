@@ -1,7 +1,8 @@
 # ASAccountAuthenticationModificationControllerPresentationContextProviding
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface you implement to coordinate presentation of the user interface when modifying an account’s authentication properties.
 
@@ -18,26 +19,31 @@ An interface you implement to coordinate presentation of the user interface when
 protocol ASAccountAuthenticationModificationControllerPresentationContextProviding : NSObjectProtocol
 ```
 
+```objc
+@protocol ASAccountAuthenticationModificationControllerPresentationContextProviding <NSObject>
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](./upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 ## Topics
 
 ### Presenting the Account Modification Interface
-- [func presentationAnchor(for: ASAccountAuthenticationModificationController) -> ASPresentationAnchor](asaccountauthenticationmodificationcontrollerpresentationcontextproviding/presentationanchor(for:).md)
+- [func presentationAnchor(for: ASAccountAuthenticationModificationController) -> ASPresentationAnchor](./asaccountauthenticationmodificationcontrollerpresentationcontextproviding/presentationanchor%28for%29.md)
   Returns the most appropriate window for presenting the authentication modification interface.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func cancelRequest()](asaccountauthenticationmodificationviewcontroller/cancelrequest.md)
+### Handling Modification Requests
+- [func cancelRequest()](./asaccountauthenticationmodificationviewcontroller/cancelrequest%28%29.md)
   Cancels a request that the user initiated.
-- [protocol ASAccountAuthenticationModificationControllerDelegate](asaccountauthenticationmodificationcontrollerdelegate.md)
+- [protocol ASAccountAuthenticationModificationControllerDelegate](./asaccountauthenticationmodificationcontrollerdelegate.md)
   An interface you implement for receiving success and failure statuses about modification of an account’s authentication properties.
 
 

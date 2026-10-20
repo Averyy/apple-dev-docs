@@ -1,7 +1,8 @@
 # transform(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the receiver’s transform to the specified size and returns the results.
 
@@ -13,6 +14,10 @@ Applies the receiver’s transform to the specified size and returns the results
 
 ```swift
 func transform(_ aSize: NSSize) -> NSSize
+```
+
+```objc
+- (NSSize) transformSize:(NSSize) aSize;
 ```
 
 #### Return Value
@@ -31,9 +36,10 @@ This method is useful for transforming delta or distance values when you need to
 
 ## See Also
 
-- [func transform(NSPoint) -> NSPoint](nsaffinetransform/transform(_:)-41p16.md)
+### Transforming Data and Objects
+- [func transform(NSPoint) -> NSPoint](./transform%28_%29-41p16.md)
   Applies the receiver’s transform to the specified point and returns the result.
-- [func transform(NSBezierPath) -> NSBezierPath](nsaffinetransform/transform(_:)-6z1xo.md)
+- [func transform(NSBezierPath) -> NSBezierPath](./transform%28_%29-6z1xo.md)
   Creates and returns a new Bézier path object with each point in the given path transformed by the receiver.
 
 

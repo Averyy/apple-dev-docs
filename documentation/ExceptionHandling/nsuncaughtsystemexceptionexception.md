@@ -1,7 +1,8 @@
 # NSUncaughtSystemExceptionException
 
 **Framework**: Exception Handling  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Identifies an uncaught system exception.
 
@@ -15,11 +16,16 @@ Identifies an uncaught system exception.
 let NSUncaughtSystemExceptionException: String
 ```
 
+```c
+extern NSString * NSUncaughtSystemExceptionException;
+```
+
 ## See Also
 
-- [let NSStackTraceKey: String](nsstacktracekey.md)
-  The key for fetching the stack trace (an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object) in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsexception/userinfo-swift.property) dictionary of the [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) object passed into one of the delegate methods described in [`NSExceptionHandlerDelegate`](nsexceptionhandlerdelegate.md).
-- [let NSUncaughtRuntimeErrorException: String](nsuncaughtruntimeerrorexception.md)
+### Constants
+- [let NSStackTraceKey: String](./nsstacktracekey.md)
+  The key for fetching the stack trace (an [`NSString`](../Foundation/nsstring.md) object) in the [`userInfo`](../Foundation/nsexception/userinfo-swift.property.md) dictionary of the [`NSException`](../Foundation/nsexception.md) object passed into one of the delegate methods described in [NSExceptionHandlerDelegate](./nsexceptionhandlerdelegate.md).
+- [let NSUncaughtRuntimeErrorException: String](./nsuncaughtruntimeerrorexception.md)
   Identifies an Objective-C runtime error.
 
 

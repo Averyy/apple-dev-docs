@@ -1,12 +1,13 @@
 # NSApplication.PrintReply.printingSuccess
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Printing was successful.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Printing was successful.
 case printingSuccess
 ```
 
+```c
+NSPrintingSuccess
+```
+
 ## See Also
 
-- [NSApplication.PrintReply.printingCancelled](nsapplication/printreply/printingcancelled.md)
+### Constants
+- [NSApplication.PrintReply.printingCancelled](./printingcancelled.md)
   Printing was cancelled.
-- [NSApplication.PrintReply.printingFailure](nsapplication/printreply/printingfailure.md)
+- [NSApplication.PrintReply.printingFailure](./printingfailure.md)
   Printing failed.
-- [NSApplication.PrintReply.printingReplyLater](nsapplication/printreply/printingreplylater.md)
+- [NSApplication.PrintReply.printingReplyLater](./printingreplylater.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # gestureRecognizers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gesture recognizers that are receiving the press.
 
@@ -18,13 +19,18 @@ The gesture recognizers that are receiving the press.
 var gestureRecognizers: [UIGestureRecognizer]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<UIGestureRecognizer *> * gestureRecognizers;
+```
+
 #### Discussion
 
-The objects held in this array are instances of a subclass of the abstract base class, [`UIGestureRecognizer`](uigesturerecognizer.md). If there are no gesture recognizers currently receiving the touch objects, this property holds an empty array.
+The objects held in this array are instances of a subclass of the abstract base class, [`UIGestureRecognizer`](../uigesturerecognizer.md). If there are no gesture recognizers currently receiving the touch objects, this property holds an empty array.
 
 ## See Also
 
-- [var force: CGFloat](uipress/force.md)
+### Getting a press object’s gesture recognizers
+- [var force: CGFloat](./force.md)
   The force of the button press.
 
 

@@ -1,7 +1,8 @@
 # MLTextClassifier.ModelAlgorithmType.crf(revision:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A text classification algorithm that uses a statistical model of transition probabilities between words.
 
@@ -20,7 +21,7 @@ case crf(revision: Int?)
 
 ## Mentions
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+- [Creating a text classifier model](../../creating-a-text-classifier-model.md)
 
 ## Parameters
 
@@ -28,11 +29,12 @@ case crf(revision: Int?)
 
 ## See Also
 
-- [MLTextClassifier.ModelAlgorithmType.maxEnt(revision:)](mltextclassifier/modelalgorithmtype/maxent(revision:).md)
+### Selecting an algorithm type
+- [MLTextClassifier.ModelAlgorithmType.maxEnt(revision:)](./maxent%28revision%29.md)
   A text classification algorithm that uses multinomial logistic regression based on the frequencies of words, independent of context.
-- [case transferLearning(MLTextClassifier.FeatureExtractorType, revision: Int?)](mltextclassifier/modelalgorithmtype/transferlearning(_:revision:).md)
+- [case transferLearning(MLTextClassifier.FeatureExtractorType, revision: Int?)](./transferlearning%28_,revision%29.md)
   A text classification algorithm that uses transfer learning by leveraging a feature extractor to generate embeddings.
-- [MLTextClassifier.FeatureExtractorType](mltextclassifier/featureextractortype.md)
+- [MLTextClassifier.FeatureExtractorType](../featureextractortype.md)
   The text feature extractor type.
 
 

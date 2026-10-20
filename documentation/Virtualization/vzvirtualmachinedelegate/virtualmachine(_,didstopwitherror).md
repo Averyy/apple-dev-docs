@@ -1,7 +1,8 @@
 # virtualMachine(_:didStopWithError:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the VM stopped because of an error.
 
@@ -14,6 +15,10 @@ Tells the delegate that the VM stopped because of an error.
 optional func virtualMachine(_ virtualMachine: VZVirtualMachine, didStopWithError error: any Error)
 ```
 
+```objc
+- (void) virtualMachine:(VZVirtualMachine *) virtualMachine didStopWithError:(NSError *) error;
+```
+
 ## Parameters
 
 - `virtualMachine`: The VM that called the delegate method.
@@ -21,7 +26,8 @@ optional func virtualMachine(_ virtualMachine: VZVirtualMachine, didStopWithErro
 
 ## See Also
 
-- [func guestDidStop(VZVirtualMachine)](vzvirtualmachinedelegate/guestdidstop(_:).md)
+### Stopping the VM
+- [func guestDidStop(VZVirtualMachine)](./guestdidstop%28_%29.md)
   Tells the delegate that the guest operating system stopped the VM.
 
 

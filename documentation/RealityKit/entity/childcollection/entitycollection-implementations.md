@@ -1,19 +1,20 @@
 # EntityCollection Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func append<S>(contentsOf: S)](entity/childcollection/append(contentsof:).md)
+- [func append<S>(contentsOf: S)](./append%28contentsof%29.md)
   Adds the specified list of entity as children to this entity.
-- [func remove(Entity)](entity/childcollection/remove(_:).md)
+- [func remove(Entity)](./remove%28_%29.md)
   Removes the specified child from this entity.
-- [func remove(at: Int)](entity/childcollection/remove(at:).md)
+- [func remove(at: Int)](./remove%28at%29.md)
   Removes the specified child from this entity.
-- [func removeAll()](entity/childcollection/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Removes all children from this entity.
-- [func replaceAll<S>(S)](entity/childcollection/replaceall(_:).md)
+- [func replaceAll<S>(S)](./replaceall%28_%29.md)
   Removes all children from this entity and adds the specified list of entities as the new children.
 
 

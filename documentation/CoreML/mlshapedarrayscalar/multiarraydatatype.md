@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The shaped array’s scalar type as a multiarray data type.

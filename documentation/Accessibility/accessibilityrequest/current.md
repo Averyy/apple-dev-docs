@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 class var current: AccessibilityRequest? { get }
+```
+
+```objc
+@property (class, nonatomic, readonly, nullable) AXRequest * currentRequest;
 ```
 
 

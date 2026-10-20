@@ -1,7 +1,8 @@
 # eventCounter
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A counter that increments each time the observer detects relevant changes.
 
@@ -26,11 +27,12 @@ The observer increments this value when it processes a remote change notificatio
 
 ## See Also
 
-- [let modelContainer: ModelContainer](historyobserver/modelcontainer.md)
+### Accessing observer properties
+- [let modelContainer: ModelContainer](./modelcontainer.md)
   The model container whose data stores this observer monitors for changes.
-- [let observedModels: [any PersistentModel.Type]](historyobserver/observedmodels.md)
+- [let observedModels: [any PersistentModel.Type]](./observedmodels.md)
   The model types that the observer filters for when evaluating history transactions.
-- [let authors: Set<String>](historyobserver/authors.md)
+- [let authors: Set<String>](./authors.md)
   The transaction authors that the observer filters for when evaluating history transactions.
 
 

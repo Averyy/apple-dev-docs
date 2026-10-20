@@ -1,7 +1,8 @@
 # isEditable
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the text view is editable.
 
@@ -17,19 +18,24 @@ A Boolean value that indicates whether the text view is editable.
 var isEditable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEditable) BOOL editable;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var allowsEditingTextAttributes: Bool](uitextview/allowseditingtextattributes.md)
+### Managing the editing behavior
+- [var allowsEditingTextAttributes: Bool](./allowseditingtextattributes.md)
   A Boolean value that indicates whether the text view allows the user to edit style information.
-- [class let textDidBeginEditingNotification: NSNotification.Name](uitextview/textdidbegineditingnotification.md)
+- [class let textDidBeginEditingNotification: NSNotification.Name](./textdidbegineditingnotification.md)
   A notification that alerts observers when an editing session begins in a text view.
-- [class let textDidChangeNotification: NSNotification.Name](uitextview/textdidchangenotification.md)
+- [class let textDidChangeNotification: NSNotification.Name](./textdidchangenotification.md)
   A notification that alerts observers when the text in a text view changes.
-- [class let textDidEndEditingNotification: NSNotification.Name](uitextview/textdidendeditingnotification.md)
+- [class let textDidEndEditingNotification: NSNotification.Name](./textdidendeditingnotification.md)
   A notification that alerts observers when the editing session ends for a text view.
 
 

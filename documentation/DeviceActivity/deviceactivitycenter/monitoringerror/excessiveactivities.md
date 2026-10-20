@@ -1,7 +1,8 @@
 # DeviceActivityCenter.MonitoringError.excessiveActivities
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The calling process is monitoring too many activities.
 
@@ -22,13 +23,14 @@ The maximum number of activities that can be monitored at one time by an app and
 
 ## See Also
 
-- [DeviceActivityCenter.MonitoringError.intervalTooLong](deviceactivitycenter/monitoringerror/intervaltoolong.md)
+### Checking for Errors
+- [DeviceActivityCenter.MonitoringError.intervalTooLong](./intervaltoolong.md)
   The activity’s schedule has an interval that is too long.
-- [DeviceActivityCenter.MonitoringError.intervalTooShort](deviceactivitycenter/monitoringerror/intervaltooshort.md)
+- [DeviceActivityCenter.MonitoringError.intervalTooShort](./intervaltooshort.md)
   The activity’s schedule has an interval that is too short.
-- [DeviceActivityCenter.MonitoringError.invalidDateComponents](deviceactivitycenter/monitoringerror/invaliddatecomponents.md)
+- [DeviceActivityCenter.MonitoringError.invalidDateComponents](./invaliddatecomponents.md)
   The schedule’s date range is invalid.
-- [DeviceActivityCenter.MonitoringError.unauthorized](deviceactivitycenter/monitoringerror/unauthorized.md)
+- [DeviceActivityCenter.MonitoringError.unauthorized](./unauthorized.md)
   The calling process isn’t authorized to monitor device activity.
 
 

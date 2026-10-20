@@ -1,7 +1,8 @@
 # IdentityPreference
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the user’s identity on the device.
 
@@ -10,25 +11,25 @@ The payload that configures the user’s identity on the device.
 
 ## Declaration
 
-```swift
+```
 object IdentityPreference
 ```
 
 ## Mentions
 
-- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
 #### Discussion
 
 Specify `com.apple.security.identitypreference` as the payload type.
 
-This payload specifies an [`IdentityPreference`](identitypreference.md) item in the user’s keychain that references an identity payload included in the same profile. It can only appear in a user profile, not in a device profile.
+This payload specifies an [`IdentityPreference`](./identitypreference.md) item in the user’s keychain that references an identity payload included in the same profile. It can only appear in a user profile, not in a device profile.
 
-You can include multiple [`IdentityPreference`](identitypreference.md) payloads as needed.
+You can include multiple [`IdentityPreference`](./identitypreference.md) payloads as needed.
 
-See also [`CertificatePreference`](certificatepreference.md) for setting up certificate preferences.
+See also [`CertificatePreference`](./certificatepreference.md) for setting up certificate preferences.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +41,7 @@ See also [`CertificatePreference`](certificatepreference.md) for setting up cert
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -215,15 +216,16 @@ See also [`CertificatePreference`](certificatepreference.md) for setting up cert
 
 ## See Also
 
-- [object DirectoryService](directoryservice.md)
+### Authentication
+- [object DirectoryService](./directoryservice.md)
   The payload that configures an Active Directory (AD) domain.
-- [object ExtensibleSingleSignOn](extensiblesinglesignon.md)
+- [object ExtensibleSingleSignOn](./extensiblesinglesignon.md)
   The payload that configures an app extension that performs single sign-on (SSO).
-- [object ExtensibleSingleSignOnKerberos](extensiblesinglesignonkerberos.md)
+- [object ExtensibleSingleSignOnKerberos](./extensiblesinglesignonkerberos.md)
   The payload that configures an app extension that performs single sign-on with the Kerberos extension.
-- [object Identification](identification.md)
+- [object Identification](./identification.md)
   The payload that configures the names of the account user.
-- [object SingleSignOn](singlesignon.md)
+- [object SingleSignOn](./singlesignon.md)
   The payload that configures single sign-on (SSO).
 
 

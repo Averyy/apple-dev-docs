@@ -1,7 +1,8 @@
 # doubleValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The decimal number’s closest approximate `double` value.
 
@@ -20,17 +21,22 @@ The decimal number’s closest approximate `double` value.
 var doubleValue: Double { get }
 ```
 
+```objc
+@property (readonly) double doubleValue;
+```
+
 #### Discussion
 
 Not all decimal numbers can be accurately represented using a `double` value.
 
 ## See Also
 
-- [var decimalValue: Decimal](nsdecimalnumber/decimalvalue.md)
-  The decimal number’s value, expressed as an [`Decimal`](decimal.md) structure.
-- [func description(withLocale: Any?) -> String](nsdecimalnumber/description(withlocale:).md)
+### Accessing the Value
+- [var decimalValue: Decimal](./decimalvalue.md)
+  The decimal number’s value, expressed as an [`Decimal`](../decimal.md) structure.
+- [func description(withLocale: Any?) -> String](./description%28withlocale%29.md)
   Returns a string representation of the decimal number appropriate for the specified locale.
-- [var objCType: UnsafePointer<CChar>](nsdecimalnumber/objctype.md)
+- [var objCType: UnsafePointer<CChar>](./objctype.md)
   A C string containing the Objective-C type for the data contained in the decimal number object.
 
 

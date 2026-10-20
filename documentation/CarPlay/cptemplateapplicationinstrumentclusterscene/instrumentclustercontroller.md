@@ -1,7 +1,8 @@
 # instrumentClusterController
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -14,10 +15,15 @@
 var instrumentClusterController: CPInstrumentClusterController { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nonnull) CPInstrumentClusterController * instrumentClusterController;
+```
+
 ## See Also
 
-- [var contentStyle: UIUserInterfaceStyle](cptemplateapplicationinstrumentclusterscene/contentstyle.md)
-- [var delegate: (any CPTemplateApplicationInstrumentClusterSceneDelegate)?](cptemplateapplicationinstrumentclusterscene/delegate.md)
+### Instance Properties
+- [var contentStyle: UIUserInterfaceStyle](./contentstyle.md)
+- [var delegate: (any CPTemplateApplicationInstrumentClusterSceneDelegate)?](./delegate.md)
 
 
 ---

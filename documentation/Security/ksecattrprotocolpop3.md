@@ -1,7 +1,8 @@
 # kSecAttrProtocolPOP3
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 POP3 protocol.
 
@@ -18,6 +19,10 @@ POP3 protocol.
 
 ```swift
 let kSecAttrProtocolPOP3: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolPOP3;
 ```
 
 

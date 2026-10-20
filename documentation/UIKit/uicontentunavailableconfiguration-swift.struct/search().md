@@ -1,7 +1,8 @@
 # search()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration for searches that return no results.
 
@@ -10,7 +11,7 @@ Creates the default configuration for searches that return no results.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

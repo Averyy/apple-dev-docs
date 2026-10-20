@@ -1,7 +1,8 @@
 # init(forReadingFrom:device:error:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(forReadingFrom data: Data, device: any MTLDevice, error: NSErrorPointer)
+```
+
+```objc
+- (instancetype) initForReadingFromData:(NSData *) data device:(id<MTLDevice>) device error:(NSError **) error;
 ```
 
 

@@ -1,7 +1,8 @@
 # enumerateTokens(in:using:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enumerates over a given range of the string and calls the specified block for each token.
 
@@ -28,11 +29,12 @@ func enumerateTokens(in range: Range<String.Index>, using block: (Range<String.I
 
 ## See Also
 
-- [func tokens(for: Range<String.Index>) -> [Range<String.Index>]](nltokenizer/tokens(for:).md)
+### Enumerating the tokens
+- [func tokens(for: Range<String.Index>) -> [Range<String.Index>]](./tokens%28for%29.md)
   Tokenizes the string within the provided range.
-- [func tokenRange(at: String.Index) -> Range<String.Index>](nltokenizer/tokenrange(at:).md)
+- [func tokenRange(at: String.Index) -> Range<String.Index>](./tokenrange%28at%29.md)
   Finds the range of the token at the given index.
-- [func tokenRange(for: Range<String.Index>) -> Range<String.Index>](nltokenizer/tokenrange(for:).md)
+- [func tokenRange(for: Range<String.Index>) -> Range<String.Index>](./tokenrange%28for%29.md)
   Finds the entire range of all tokens contained completely or partially within the specified range.
 
 

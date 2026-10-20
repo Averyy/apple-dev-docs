@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new data frame with a slice of rows from another data frame.
 
@@ -26,7 +27,8 @@ init(_ other: DataFrame.Slice)
 
 ## See Also
 
-- [DataFrame.Slice](dataframe/slice.md)
+### Creating a Data Frame from Other Data Frames
+- [DataFrame.Slice](./slice.md)
   A set of a data frame’s rows you create by using a method from a data frame instance or another data frame slice.
 
 

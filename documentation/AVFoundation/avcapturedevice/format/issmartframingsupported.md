@@ -1,7 +1,8 @@
 # isSmartFramingSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns `true` if smart framing is supported by the current format.
 
@@ -14,6 +15,10 @@ Returns `true` if smart framing is supported by the current format.
 
 ```swift
 var isSmartFramingSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isSmartFramingSupported) BOOL smartFramingSupported;
 ```
 
 #### Discussion

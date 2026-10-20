@@ -1,7 +1,8 @@
 # Schema.Index.Types.rtree(_:)
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+

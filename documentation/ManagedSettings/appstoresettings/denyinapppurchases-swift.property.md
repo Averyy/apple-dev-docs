@@ -1,7 +1,8 @@
 # denyInAppPurchases
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to deny the user permission to make in-app purchases.
 
@@ -22,7 +23,8 @@ If your app doesn’t constrain this setting, the value is `nil`.
 
 ## See Also
 
-- [static let denyInAppPurchases: SettingMetadata<Bool>](appstoresettings/denyinapppurchases-swift.type.property.md)
+### Denying In-App Purchases
+- [static let denyInAppPurchases: SettingMetadata<Bool>](./denyinapppurchases-swift.type.property.md)
   The metadata associated with the setting to deny in-app purchases.
 
 

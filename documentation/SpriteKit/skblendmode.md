@@ -1,7 +1,8 @@
 # SKBlendMode
 
 **Framework**: SpriteKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The modes that describe how the source and destination pixel colors are used to calculate the new destination color.
 
@@ -10,7 +11,7 @@ The modes that describe how the source and destination pixel colors are used to 
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,69 +21,74 @@ The modes that describe how the source and destination pixel colors are used to 
 enum SKBlendMode
 ```
 
+```c
+enum SKBlendMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SKBlendMode.alpha](skblendmode/alpha.md)
+- [SKBlendMode.alpha](./skblendmode/alpha.md)
   The source and destination colors are blended by multiplying the source alpha value.
-- [SKBlendMode.add](skblendmode/add.md)
+- [SKBlendMode.add](./skblendmode/add.md)
   The source and destination colors are added together.
-- [SKBlendMode.subtract](skblendmode/subtract.md)
+- [SKBlendMode.subtract](./skblendmode/subtract.md)
   The source color is subtracted from the destination color.
-- [SKBlendMode.multiply](skblendmode/multiply.md)
+- [SKBlendMode.multiply](./skblendmode/multiply.md)
   The source color is multiplied by the destination color.
-- [SKBlendMode.multiplyX2](skblendmode/multiplyx2.md)
+- [SKBlendMode.multiplyX2](./skblendmode/multiplyx2.md)
   The source color is multiplied by the destination color and then doubled.
-- [SKBlendMode.screen](skblendmode/screen.md)
+- [SKBlendMode.screen](./skblendmode/screen.md)
   The source color is added to the destination color times the inverted source color.
-- [SKBlendMode.replace](skblendmode/replace.md)
+- [SKBlendMode.replace](./skblendmode/replace.md)
   The source color replaces the destination color.
 ### Enumeration Cases
-- [SKBlendMode.multiplyAlpha](skblendmode/multiplyalpha.md)
+- [SKBlendMode.multiplyAlpha](./skblendmode/multiplyalpha.md)
 ### Initializers
-- [init?(rawValue: Int)](skblendmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./skblendmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SKActionTimingMode](skactiontimingmode.md)
+### Enumerations
+- [enum SKActionTimingMode](./skactiontimingmode.md)
   The modes that an action can use to adjust the apparent timing of the action.
-- [enum SKAttributeType](skattributetype.md)
+- [enum SKAttributeType](./skattributetype.md)
   Options that specify an attribute’s data type.
-- [enum SKInterpolationMode](skinterpolationmode.md)
+- [enum SKInterpolationMode](./skinterpolationmode.md)
   The modes used to interpolate between keyframes in the sequence.
-- [enum SKLabelHorizontalAlignmentMode](sklabelhorizontalalignmentmode.md)
+- [enum SKLabelHorizontalAlignmentMode](./sklabelhorizontalalignmentmode.md)
   Options for aligning text horizontally.
-- [enum SKLabelVerticalAlignmentMode](sklabelverticalalignmentmode.md)
+- [enum SKLabelVerticalAlignmentMode](./sklabelverticalalignmentmode.md)
   Options for aligning text vertically.
-- [enum SKParticleRenderOrder](skparticlerenderorder.md)
+- [enum SKParticleRenderOrder](./skparticlerenderorder.md)
   The order to use when the emitter’s particles are rendered.
-- [enum SKRepeatMode](skrepeatmode.md)
+- [enum SKRepeatMode](./skrepeatmode.md)
   The modes used to determine how the sequence repeats.
-- [enum SKSceneScaleMode](skscenescalemode.md)
+- [enum SKSceneScaleMode](./skscenescalemode.md)
   The modes that determine how the scene’s area is mapped to the view that presents it.
-- [enum SKTextureFilteringMode](sktexturefilteringmode.md)
+- [enum SKTextureFilteringMode](./sktexturefilteringmode.md)
   Texture filtering modes to use when the texture is drawn in a size other than its native size.
-- [struct SKTileAdjacencyMask](sktileadjacencymask.md)
+- [struct SKTileAdjacencyMask](./sktileadjacencymask.md)
   An enumeration defining how neighboring tiles are automatically placed next to each other.
-- [enum SKTileDefinitionRotation](sktiledefinitionrotation.md)
+- [enum SKTileDefinitionRotation](./sktiledefinitionrotation.md)
   The allowed rotations for a given tile.
-- [enum SKTileSetType](sktilesettype.md)
+- [enum SKTileSetType](./sktilesettype.md)
   An enumeration defining how tiles are arranged.
-- [enum SKTransitionDirection](sktransitiondirection.md)
+- [enum SKTransitionDirection](./sktransitiondirection.md)
   For some transitions, the direction in which the transition is performed.
-- [enum SKUniformType](skuniformtype.md)
+- [enum SKUniformType](./skuniformtype.md)
   An enumerated type to identify the type of a uniform object.
-- [enum SKNodeFocusBehavior](sknodefocusbehavior.md)
+- [enum SKNodeFocusBehavior](./sknodefocusbehavior.md)
   Options for the focusable states of a SpriteKit node.
 
 

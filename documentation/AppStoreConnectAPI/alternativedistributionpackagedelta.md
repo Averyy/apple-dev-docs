@@ -1,7 +1,8 @@
 # AlternativeDistributionPackageDelta
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An incremental update package for an alternative distribution app, containing only the changes between two versions to reduce download size.
 
@@ -10,20 +11,20 @@ An incremental update package for an alternative distribution app, containing on
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackageDelta
 ```
 
 #### Discussion
 
-For more information about the responses that include alternative distribution package delta objects, see [`AlternativeDistributionPackageDeltaResponse`](alternativedistributionpackagedeltaresponse.md) or [`AlternativeDistributionPackageDeltasResponse`](alternativedistributionpackagedeltasresponse.md).
+For more information about the responses that include alternative distribution package delta objects, see [`AlternativeDistributionPackageDeltaResponse`](./alternativedistributionpackagedeltaresponse.md) or [`AlternativeDistributionPackageDeltasResponse`](./alternativedistributionpackagedeltasresponse.md).
 
 > 💡 **Tip**:  Use the `links` fields to navigate the resource object graph while making your requests. For example, from the alternative distribution package delta object above, you can also reach its package metadata, versions, and variants.
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionPackageDelta.Attributes](alternativedistributionpackagedelta/attributes-data.dictionary.md)
+- [object AlternativeDistributionPackageDelta.Attributes](./alternativedistributionpackagedelta/attributes-data.dictionary.md)
   Attributes that describe an alternative distribution package delta resource.
 
 ## Properties
@@ -31,35 +32,36 @@ For more information about the responses that include alternative distribution p
 - `attributes` (AlternativeDistributionPackageDelta.Attributes)
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the alternative distribution package delta.
 - `links` (ResourceLinks)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `alternativeDistributionPackageDeltas`
 
 ## See Also
 
-- [object AlternativeDistributionPackage](alternativedistributionpackage.md)
+### Objects
+- [object AlternativeDistributionPackage](./alternativedistributionpackage.md)
   The distributable package for an app on an alternative marketplace or web distribution, containing versioned variants and delta updates.
-- [object AlternativeDistributionPackageCreateRequest](alternativedistributionpackagecreaterequest.md)
+- [object AlternativeDistributionPackageCreateRequest](./alternativedistributionpackagecreaterequest.md)
   The request body you use to create an alternative distribution package.
-- [object AlternativeDistributionPackageResponse](alternativedistributionpackageresponse.md)
+- [object AlternativeDistributionPackageResponse](./alternativedistributionpackageresponse.md)
   The response body for endpoints that read a single alternative distribution package.
-- [object AlternativeDistributionPackageVersion](alternativedistributionpackageversion.md)
+- [object AlternativeDistributionPackageVersion](./alternativedistributionpackageversion.md)
   A versioned snapshot of an alternative distribution package, containing its variants and delta updates.
-- [object AlternativeDistributionPackageVersionResponse](alternativedistributionpackageversionresponse.md)
+- [object AlternativeDistributionPackageVersionResponse](./alternativedistributionpackageversionresponse.md)
   The response body for endpoints that read a single alternative distribution package version.
-- [object AlternativeDistributionPackageVersionsResponse](alternativedistributionpackageversionsresponse.md)
+- [object AlternativeDistributionPackageVersionsResponse](./alternativedistributionpackageversionsresponse.md)
   The response body for endpoints that list versions of an alternative distribution package.
-- [object AlternativeDistributionPackageDeltaResponse](alternativedistributionpackagedeltaresponse.md)
+- [object AlternativeDistributionPackageDeltaResponse](./alternativedistributionpackagedeltaresponse.md)
   A response containing a single delta update for an alternative distribution package.
-- [object AlternativeDistributionPackageDeltasResponse](alternativedistributionpackagedeltasresponse.md)
+- [object AlternativeDistributionPackageDeltasResponse](./alternativedistributionpackagedeltasresponse.md)
   A response containing a list of delta updates available for an alternative distribution package.
-- [object AlternativeDistributionPackageVariant](alternativedistributionpackagevariant.md)
+- [object AlternativeDistributionPackageVariant](./alternativedistributionpackagevariant.md)
   A device-specific file package within an alternative distribution app, targeting a particular device family.
-- [object AlternativeDistributionPackageVariantResponse](alternativedistributionpackagevariantresponse.md)
+- [object AlternativeDistributionPackageVariantResponse](./alternativedistributionpackagevariantresponse.md)
   A response containing a single variant of an alternative distribution package.
-- [object AlternativeDistributionPackageVariantsResponse](alternativedistributionpackagevariantsresponse.md)
+- [object AlternativeDistributionPackageVariantsResponse](./alternativedistributionpackagevariantsresponse.md)
   A response containing a list of device-specific variants within an alternative distribution package.
-- [object AlternativeDistributionPackageVersionDeltasLinkagesResponse](alternativedistributionpackageversiondeltaslinkagesresponse.md)
-- [object AlternativeDistributionPackageVersionVariantsLinkagesResponse](alternativedistributionpackageversionvariantslinkagesresponse.md)
-- [object AlternativeDistributionPackageVersionsLinkagesResponse](alternativedistributionpackageversionslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionDeltasLinkagesResponse](./alternativedistributionpackageversiondeltaslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionVariantsLinkagesResponse](./alternativedistributionpackageversionvariantslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionsLinkagesResponse](./alternativedistributionpackageversionslinkagesresponse.md)
 
 
 ---

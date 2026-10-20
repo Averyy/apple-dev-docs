@@ -1,12 +1,13 @@
 # systemColorsDidChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sent when the system colors have changed, such as through a system control panel interface.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Sent when the system colors have changed, such as through a system control panel
 class let systemColorsDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSSystemColorsDidChangeNotification;
+```
+
 #### Discussion
 
 This notification contains no notification object and no `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSColor.SystemColorsDidChangeMessage`](nscolor/systemcolorsdidchangemessage.md).
+To observe this notification using Swift concurrency, use [`NSColor.SystemColorsDidChangeMessage`](./systemcolorsdidchangemessage.md).
 
 
 ---

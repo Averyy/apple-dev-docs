@@ -1,7 +1,8 @@
 # kSMCCmd_REQUEST_VOLUME_ELEMENT_ADDRESS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSMCCmd_REQUEST_VOLUME_ELEMENT_ADDRESS = 0xB5
 ```
 

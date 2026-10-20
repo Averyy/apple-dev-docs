@@ -1,13 +1,14 @@
 # output::setUV6
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the sixth UV coordinate set for the rendered output mesh.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::setUV6(float4 value)
 
 This function assigns a custom UV coordinate to the sixth texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV6 channel, it will be created. This enables multi-texturing and advanced shader effects.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__setUV6.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__setUV6.svg)
 
 > **Note**: Reads and writes to output attribute `float4 uv6`
 

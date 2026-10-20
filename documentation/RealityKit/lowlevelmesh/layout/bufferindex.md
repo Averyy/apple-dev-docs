@@ -1,7 +1,8 @@
 # bufferIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the buffer to use for this layout.
 
@@ -21,13 +22,14 @@ var bufferIndex: Int
 
 #### Discussion
 
-Most usage scenarios only use one buffer. Use a buffer index that is less than [`vertexBufferCount`](lowlevelmesh/descriptor-swift.struct/vertexbuffercount.md).
+Most usage scenarios only use one buffer. Use a buffer index that is less than [`vertexBufferCount`](../descriptor-swift.struct/vertexbuffercount.md).
 
 ## See Also
 
-- [var bufferOffset: Int](lowlevelmesh/layout/bufferoffset.md)
+### Describing a low-level mesh layout
+- [var bufferOffset: Int](./bufferoffset.md)
   The byte offset into the buffer for the first byte of this layout.
-- [var bufferStride: Int](lowlevelmesh/layout/bufferstride.md)
+- [var bufferStride: Int](./bufferstride.md)
   The distance, in bytes, between consecutive vertices for attributes using this layout.
 
 

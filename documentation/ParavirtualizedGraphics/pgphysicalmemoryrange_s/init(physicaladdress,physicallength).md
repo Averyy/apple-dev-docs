@@ -1,7 +1,8 @@
 # init(physicalAddress:physicalLength:)
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a memory range.
 
@@ -22,7 +23,8 @@ init(physicalAddress: UInt64, physicalLength: UInt64)
 
 ## See Also
 
-- [init()](pgphysicalmemoryrange_s/init.md)
+### Creating a Memory Range
+- [init()](./init%28%29.md)
   Creates a default memory range.
 
 

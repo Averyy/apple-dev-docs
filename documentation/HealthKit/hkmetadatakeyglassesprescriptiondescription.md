@@ -1,7 +1,8 @@
 # HKMetadataKeyGlassesPrescriptionDescription
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A description of the glasses prescription.
 
@@ -19,11 +20,15 @@ A description of the glasses prescription.
 let HKMetadataKeyGlassesPrescriptionDescription: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyGlassesPrescriptionDescription;
+```
+
 #### Discussion
 
 If a glasses prescription was designed for a particular use, like reading or distance, use this metadata key to describe that use.
 
-This metadata key stores a [`String`](https://developer.apple.com/documentation/swift/string) value.
+This metadata key stores a [`String`](../Swift/string.md) value.
 
 
 ---

@@ -1,27 +1,29 @@
 # IsRemote
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool IsRemote();
 ```
 
 ## See Also
 
-- [GetClass](osmetaclassbase/getclass.md)
+### Getting Meta Information
+- [GetClass](./getclass.md)
   Internal helper for GetClassName. Not to be called directly.
-- [GetClassName](osmetaclassbase/getclassname-50b5y.md)
+- [GetClassName](./getclassname-50b5y.md)
   Returns the name of the class given an OSObject pointer.
-- [getMetaClass](osmetaclassbase/getmetaclass.md)
+- [getMetaClass](./getmetaclass.md)
   Internal helper for GetClassName. Not to be called directly.
 
 

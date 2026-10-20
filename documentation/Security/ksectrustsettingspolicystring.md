@@ -1,7 +1,8 @@
 # kSecTrustSettingsPolicyString
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string containing policy-specific data.
 
@@ -15,9 +16,13 @@ A string containing policy-specific data.
 var kSecTrustSettingsPolicyString: String { get }
 ```
 
+```c
+#define kSecTrustSettingsPolicyString
+```
+
 #### Discussion
 
-The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. For the SMIME policy, this string contains an email address. For the SSL policy, it contains a host name.
+The value is a [`CFString`](../CoreFoundation/cfstring.md) object. For the SMIME policy, this string contains an email address. For the SSL policy, it contains a host name.
 
 
 ---

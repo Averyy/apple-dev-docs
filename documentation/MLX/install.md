@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/install.html
 
 # Build and Install
 
-**
-
-- [.rst](_sources/install.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Build and Install
-
- Table of contents 
-
-## Contents
-
-# Build and Install
-
 ## Python Installation
 
 MLX is available on PyPI. All you have to do to use MLX with your own Apple
@@ -329,5 +302,3 @@ CMAKE_HOST_SYSTEM_PROCESSOR "arm64"
 If you see `"x86_64"`, try re-installing `cmake`. If you see `"arm64"`
 but the build errors out with “Building for x86_64 on macOS is not supported.”
 wipe your build cache with `rm -rf build/` and try again.
-
-** Contents

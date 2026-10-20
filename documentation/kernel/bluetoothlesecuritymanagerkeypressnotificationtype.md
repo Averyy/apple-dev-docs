@@ -1,45 +1,47 @@
 # BluetoothLESecurityManagerKeypressNotificationType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef enum BluetoothLESecurityManagerKeypressNotificationType BluetoothLESecurityManagerKeypressNotificationType;
 ```
 
 ## Topics
 
 ### Constants
-- [kBluetoothLESecurityManagerNotificationTypePasskeyCleared](bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeycleared.md)
-- [kBluetoothLESecurityManagerNotificationTypePasskeyDigitEntered](bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeydigitentered.md)
-- [kBluetoothLESecurityManagerNotificationTypePasskeyDigitErased](bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeydigiterased.md)
-- [kBluetoothLESecurityManagerNotificationTypePasskeyEntryCompleted](bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeyentrycompleted.md)
-- [kBluetoothLESecurityManagerNotificationTypePasskeyEntryStarted](bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeyentrystarted.md)
-- [kBluetoothLESecurityManagerNotificationTypeReservedEnd](bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypereservedend.md)
-- [kBluetoothLESecurityManagerNotificationTypeReservedStart](bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypereservedstart.md)
+- [kBluetoothLESecurityManagerNotificationTypePasskeyCleared](./bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeycleared.md)
+- [kBluetoothLESecurityManagerNotificationTypePasskeyDigitEntered](./bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeydigitentered.md)
+- [kBluetoothLESecurityManagerNotificationTypePasskeyDigitErased](./bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeydigiterased.md)
+- [kBluetoothLESecurityManagerNotificationTypePasskeyEntryCompleted](./bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeyentrycompleted.md)
+- [kBluetoothLESecurityManagerNotificationTypePasskeyEntryStarted](./bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypepasskeyentrystarted.md)
+- [kBluetoothLESecurityManagerNotificationTypeReservedEnd](./bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypereservedend.md)
+- [kBluetoothLESecurityManagerNotificationTypeReservedStart](./bluetoothlesecuritymanagerkeypressnotificationtype/kbluetoothlesecuritymanagernotificationtypereservedstart.md)
 
 ## See Also
 
-- [BluetoothLEAddressType](bluetoothleaddresstype.md)
-- [BluetoothLEAdvertisingType](bluetoothleadvertisingtype.md)
-- [BluetoothLEConnectionInterval](bluetoothleconnectioninterval.md)
-- [BluetoothLEFeatureBits](bluetoothlefeaturebits.md)
-- [BluetoothLEScan](bluetoothlescan.md)
-- [BluetoothLEScanDuplicateFilter](bluetoothlescanduplicatefilter.md)
-- [BluetoothLEScanFilter](bluetoothlescanfilter.md)
-- [BluetoothLEScanType](bluetoothlescantype.md)
-- [BluetoothLESecurityManagerCommandCode](bluetoothlesecuritymanagercommandcode.md)
-- [BluetoothLESecurityManagerIOCapability](bluetoothlesecuritymanageriocapability.md)
-- [BluetoothLESecurityManagerKeyDistributionFormat](bluetoothlesecuritymanagerkeydistributionformat.md)
-- [BluetoothLESecurityManagerOOBData](bluetoothlesecuritymanageroobdata.md)
-- [BluetoothLESecurityManagerPairingFailedReasonCode](bluetoothlesecuritymanagerpairingfailedreasoncode.md)
-- [BluetoothLESecurityManagerUserInputCapability](bluetoothlesecuritymanageruserinputcapability.md)
-- [BluetoothLESecurityManagerUserOutputCapability](bluetoothlesecuritymanageruseroutputcapability.md)
+### Bluetooth LE
+- [BluetoothLEAddressType](./bluetoothleaddresstype.md)
+- [BluetoothLEAdvertisingType](./bluetoothleadvertisingtype.md)
+- [BluetoothLEConnectionInterval](./bluetoothleconnectioninterval.md)
+- [BluetoothLEFeatureBits](./bluetoothlefeaturebits.md)
+- [BluetoothLEScan](./bluetoothlescan.md)
+- [BluetoothLEScanDuplicateFilter](./bluetoothlescanduplicatefilter.md)
+- [BluetoothLEScanFilter](./bluetoothlescanfilter.md)
+- [BluetoothLEScanType](./bluetoothlescantype.md)
+- [BluetoothLESecurityManagerCommandCode](./bluetoothlesecuritymanagercommandcode.md)
+- [BluetoothLESecurityManagerIOCapability](./bluetoothlesecuritymanageriocapability.md)
+- [BluetoothLESecurityManagerKeyDistributionFormat](./bluetoothlesecuritymanagerkeydistributionformat.md)
+- [BluetoothLESecurityManagerOOBData](./bluetoothlesecuritymanageroobdata.md)
+- [BluetoothLESecurityManagerPairingFailedReasonCode](./bluetoothlesecuritymanagerpairingfailedreasoncode.md)
+- [BluetoothLESecurityManagerUserInputCapability](./bluetoothlesecuritymanageruserinputcapability.md)
+- [BluetoothLESecurityManagerUserOutputCapability](./bluetoothlesecuritymanageruseroutputcapability.md)
 
 
 ---

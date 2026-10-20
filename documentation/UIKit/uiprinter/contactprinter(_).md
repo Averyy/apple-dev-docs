@@ -1,7 +1,8 @@
 # contactPrinter(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connects to the printer and gathers information about its capabilities.
 
@@ -14,18 +15,28 @@ Connects to the printer and gathers information about its capabilities.
 ## Declaration
 
 ```swift
+func contactPrinter(_ completionHandler: ((Bool) -> Void)? = nil)
+```
+
+```swift
 func contactPrinter() async -> Bool
+```
+
+```objc
+- (void) contactPrinter:(void (^)(BOOL available)) completionHandler;
 ```
 
 #### Discussion
 
-For printers you create yourself using the [`init(url:)`](uiprinter/init(url:)-1mibn.md) method, you must call this method prior to accessing properties containing printer-related information. This method runs asynchronously, returning immediately while the system continues to try and gather information about the printer’s name, location, capabilities, and so on. When the printer’s availability is determined, the results are delivered to the `completionHandler` block you provided.
+For printers you create yourself using the [`init(url:)`](./init%28url%29-1mibn.md) method, you must call this method prior to accessing properties containing printer-related information. This method runs asynchronously, returning immediately while the system continues to try and gather information about the printer’s name, location, capabilities, and so on. When the printer’s availability is determined, the results are delivered to the `completionHandler` block you provided.
 
 Calling this method can take a significantly long time (up to 30 seconds), so after calling this method you should continue with other tasks. Use your completion handler block to update your app as appropriate.
 
 ## Parameters
 
-- `completionHandler`: The block to execute with the results. This block has no return value and takes the following parameter: - **available**: [`true`](https://developer.apple.com/documentation/swift/true) if the printer was available and its information was retrieved or [`false`](https://developer.apple.com/documentation/swift/false) if the printer could not be found or was unavailable.
+- `completionHandler`: The block to execute with the results. This block has no return value and takes the following parameter:
+
+  - **available**: [`true`](../../Swift/true.md) if the printer was available and its information was retrieved or [`false`](../../Swift/false.md) if the printer could not be found or was unavailable.
 
 
 ---

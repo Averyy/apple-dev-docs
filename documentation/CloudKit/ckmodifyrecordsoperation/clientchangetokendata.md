@@ -1,7 +1,8 @@
 # clientChangeTokenData
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A token that tracks local changes to records.
 
@@ -10,7 +11,7 @@ A token that tracks local changes to records.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ A token that tracks local changes to records.
 
 ```swift
 var clientChangeTokenData: Data? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSData * clientChangeTokenData;
 ```
 
 #### Discussion
@@ -30,15 +35,16 @@ If you intend to change the value of this property, do so before you execute the
 
 ## See Also
 
-- [var recordsToSave: [CKRecord]?](ckmodifyrecordsoperation/recordstosave.md)
+### Configuring the Modify Record Operation
+- [var recordsToSave: [CKRecord]?](./recordstosave.md)
   The records to save to the database.
-- [var recordIDsToDelete: [CKRecord.ID]?](ckmodifyrecordsoperation/recordidstodelete.md)
+- [var recordIDsToDelete: [CKRecord.ID]?](./recordidstodelete.md)
   The IDs of the records to delete permanently from the database.
-- [var isAtomic: Bool](ckmodifyrecordsoperation/isatomic.md)
+- [var isAtomic: Bool](./isatomic.md)
   A Boolean value that indicates whether the entire operation fails when CloudKit can’t update one or more records in a record zone.
-- [var savePolicy: CKModifyRecordsOperation.RecordSavePolicy](ckmodifyrecordsoperation/savepolicy.md)
+- [var savePolicy: CKModifyRecordsOperation.RecordSavePolicy](./savepolicy.md)
   The policy to use when saving changes to records.
-- [CKModifyRecordsOperation.RecordSavePolicy](ckmodifyrecordsoperation/recordsavepolicy.md)
+- [CKModifyRecordsOperation.RecordSavePolicy](./recordsavepolicy.md)
   Constants that indicate which policy to apply when saving records.
 
 

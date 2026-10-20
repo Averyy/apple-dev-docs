@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_MORPHOLOGY_OPERATOR_ERODE;
 ```
 
 ## See Also
 
-- [SVG_MORPHOLOGY_OPERATOR_DILATE](svgfemorphologyelement/1630180-svg_morphology_operator_dilate.md)
-- [SVG_MORPHOLOGY_OPERATOR_UNKNOWN](svgfemorphologyelement/1632129-svg_morphology_operator_unknown.md)
+### Miscellaneous
+- [SVG_MORPHOLOGY_OPERATOR_DILATE](./api-1630180-svg_morphology_operator_dilate.md)
+- [SVG_MORPHOLOGY_OPERATOR_UNKNOWN](./api-1632129-svg_morphology_operator_unknown.md)
 
 
 ---

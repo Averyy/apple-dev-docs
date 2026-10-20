@@ -1,17 +1,24 @@
 # init(activityType:locationType:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly instantiated workout session.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 3.0
+
+> **Deprecated**: Use [`init(healthStore:configuration:)`](./init%28healthstore,configuration%29.md) instead.
 
 ## Declaration
 
 ```swift
 init(activityType: HKWorkoutActivityType, locationType: HKWorkoutSessionLocationType)
+```
+
+```objc
+- (instancetype) initWithActivityType:(HKWorkoutActivityType) activityType locationType:(HKWorkoutSessionLocationType) locationType;
 ```
 
 #### Return Value
@@ -24,16 +31,17 @@ HealthKit uses the session’s workout activity and location type to fine tune A
 
 ## Parameters
 
-- `activityType`: The type of activity being performed in the workout. For a list of possible activities, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
-- `locationType`: A value indicating whether the workout was performed indoors or outdoors. For a list of possible location values, see [`HKWorkoutSessionLocationType`](hkworkoutsessionlocationtype.md).
+- `activityType`: The type of activity being performed in the workout. For a list of possible activities, see [`HKWorkoutActivityType`](../hkworkoutactivitytype.md).
+- `locationType`: A value indicating whether the workout was performed indoors or outdoors. For a list of possible location values, see [`HKWorkoutSessionLocationType`](../hkworkoutsessionlocationtype.md).
 
 ## See Also
 
-- [init(configuration: HKWorkoutConfiguration) throws](hkworkoutsession/init(configuration:).md)
+### Deprecated methods
+- [init(configuration: HKWorkoutConfiguration) throws](./init%28configuration%29.md)
   Returns a newly instantiated workout session.
-- [var activityType: HKWorkoutActivityType](hkworkoutsession/activitytype.md)
+- [var activityType: HKWorkoutActivityType](./activitytype.md)
   The workout activity performed during this session.
-- [var locationType: HKWorkoutSessionLocationType](hkworkoutsession/locationtype.md)
+- [var locationType: HKWorkoutSessionLocationType](./locationtype.md)
   A value that indicates whether the workout session occurred indoors or outdoors.
 
 

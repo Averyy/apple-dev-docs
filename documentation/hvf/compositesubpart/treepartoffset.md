@@ -1,7 +1,8 @@
 # treePartOffset
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset of the part’s data in the render context transform tree (depth first)
 

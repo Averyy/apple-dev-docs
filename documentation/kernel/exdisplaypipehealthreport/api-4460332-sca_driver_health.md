@@ -1,14 +1,15 @@
 # sca_driver_health
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 EXDisplayPipeHealthRecord sca_driver_health;
 ```
 

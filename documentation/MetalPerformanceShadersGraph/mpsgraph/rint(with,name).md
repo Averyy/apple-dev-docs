@@ -1,7 +1,8 @@
 # rint(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rounds the input tensor elements by rounding to nearest even.
 
@@ -17,6 +18,10 @@ Rounds the input tensor elements by rounding to nearest even.
 
 ```swift
 func rint(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) rintWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

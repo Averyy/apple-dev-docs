@@ -1,7 +1,8 @@
 # segmentLength
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The segment length in bytes.
 
@@ -14,15 +15,20 @@ The segment length in bytes.
 var segmentLength: UInt64 { get }
 ```
 
+```objc
+@property (readonly) uint64_t segmentLength;
+```
+
 #### Discussion
 
-Ensure this value is a multiple of the corresponding resource’s [`blockSize`](fsblockdeviceresource/blocksize.md).
+Ensure this value is a multiple of the corresponding resource’s [`blockSize`](../fsblockdeviceresource/blocksize.md).
 
 ## See Also
 
-- [var startOffset: off_t](fsmetadatarange/startoffset.md)
+### Accessing range properties
+- [var startOffset: off_t](./startoffset.md)
   The start offset of the range in bytes.
-- [var segmentCount: UInt64](fsmetadatarange/segmentcount.md)
+- [var segmentCount: UInt64](./segmentcount.md)
   The number of segments in the range.
 
 

@@ -1,7 +1,8 @@
 # PGResumeErrorCode.invalidSuspendStateVersion
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The suspend state version is incompatible with this framework version.
 
@@ -15,15 +16,20 @@ The suspend state version is incompatible with this framework version.
 case invalidSuspendStateVersion
 ```
 
+```c
+PGResumeErrorCodeInvalidSuspendStateVersion
+```
+
 ## See Also
 
-- [PGResumeErrorCode.incompatibleDevice](pgresumeerrorcode/incompatibledevice.md)
+### Errors
+- [PGResumeErrorCode.incompatibleDevice](./incompatibledevice.md)
   The resume device is missing capabilities that the suspended device provided.
-- [PGResumeErrorCode.internalFault](pgresumeerrorcode/internalfault.md)
+- [PGResumeErrorCode.internalFault](./internalfault.md)
   An internal error occurred.
-- [PGResumeErrorCode.invalidContent](pgresumeerrorcode/invalidcontent.md)
+- [PGResumeErrorCode.invalidContent](./invalidcontent.md)
   The content of the suspend state or the guest memory isn’t valid.
-- [PGResumeErrorCode.invalidGuestVersion](pgresumeerrorcode/invalidguestversion.md)
+- [PGResumeErrorCode.invalidGuestVersion](./invalidguestversion.md)
   The guest version is incompatible with this framework version.
 
 

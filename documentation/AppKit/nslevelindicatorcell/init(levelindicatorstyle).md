@@ -1,17 +1,22 @@
 # init(levelIndicatorStyle:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver with the style specified by `levelIndicatorStyle`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(levelIndicatorStyle: NSLevelIndicator.Style)
+```
+
+```objc
+- (instancetype) initWithLevelIndicatorStyle:(NSLevelIndicatorStyle) levelIndicatorStyle;
 ```
 
 #### Discussion

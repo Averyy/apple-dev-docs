@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration’s localized description.
 
@@ -9,7 +10,7 @@ The configuration’s localized description.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The configuration’s localized description.
 var localizedDescription: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * localizedDescription;
+```
+
 #### Discussion
 
 > ❗ **Important**:  Apple reserves this property for future use, and hasn’t defined its value.
 
 ## See Also
 
-- [var issuerIdentifier: String?](pkaddsecureelementpassconfiguration/issueridentifier.md)
+### Managing the issuer identity
+- [var issuerIdentifier: String?](./issueridentifier.md)
   An opaque value for the configuration.
 
 

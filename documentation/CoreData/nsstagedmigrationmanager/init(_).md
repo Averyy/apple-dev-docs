@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a migration manager with the specified stages.
 
@@ -11,7 +12,7 @@ Creates a migration manager with the specified stages.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 - Swift 5.8+
 

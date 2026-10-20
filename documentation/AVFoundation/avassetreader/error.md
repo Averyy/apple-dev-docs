@@ -1,7 +1,8 @@
 # error
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error that describes the reason for a failure.
 
@@ -19,19 +20,24 @@ An error that describes the reason for a failure.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSError * error;
+```
+
 #### Discussion
 
-The value is `nil` if the asset reader’s status isn’t [`AVAssetReader.Status.failed`](avassetreader/status-swift.enum/failed.md).
+The value is `nil` if the asset reader’s status isn’t [`AVAssetReader.Status.failed`](./status-swift.enum/failed.md).
 
 This property is thread safe.
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avassetreader/timerange.md)
+### Configuring reading
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range within the asset to read.
-- [var status: AVAssetReader.Status](avassetreader/status-swift.property.md)
+- [var status: AVAssetReader.Status](./status-swift.property.md)
   The status of reading sample buffers from the asset.
-- [AVAssetReader.Status](avassetreader/status-swift.enum.md)
+- [AVAssetReader.Status](./status-swift.enum.md)
   Values that represent the possible states of an asset reader.
 
 

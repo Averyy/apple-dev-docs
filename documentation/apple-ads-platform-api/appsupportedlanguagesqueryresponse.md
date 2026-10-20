@@ -1,7 +1,8 @@
 # AppSupportedLanguagesQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Paginated response object for the supported app languages query.
 
@@ -10,13 +11,13 @@ Paginated response object for the supported app languages query.
 
 ## Declaration
 
-```swift
+```
 object AppSupportedLanguagesQueryResponse
 ```
 
 #### Discussion
 
-The `AppSupportedLanguagesQueryResponse` object is the top-level envelope returned by [`Query Supported App Languages`](query-supported-app-languages.md).
+The `AppSupportedLanguagesQueryResponse` object is the top-level envelope returned by [`Query Supported App Languages`](./query-supported-app-languages.md).
 
 ##### Example
 
@@ -68,19 +69,19 @@ The `pagination` object contains the following fields:
 
 - `result` ([AppSupportedLanguages]): Array of `AppSupportedLanguages` objects, one per market. Read-only.
 - `pagination` (QueryPaginationResult): Pagination metadata for the result set. See fields below. Read-only.
-- `error` (Error): Error details if the request failed. Omitted entirely on success. See [`Error`](error.md). Read-only.
+- `error` (Error): Error details if the request failed. Omitted entirely on success. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object AppInfo](appinfo.md)
+- [object AppInfo](./appinfo.md)
   A single app search result.
-- [object AppLocaleDetails](applocaledetails.md)
+- [object AppLocaleDetails](./applocaledetails.md)
   Localized content for an app’s Default Product Page.
-- [object AppsSearchResponse](appssearchresponse.md)
+- [object AppsSearchResponse](./appssearchresponse.md)
   Apps search response envelope.
-- [object AppLocaleDetailsQueryResponse](applocaledetailsqueryresponse.md)
+- [object AppLocaleDetailsQueryResponse](./applocaledetailsqueryresponse.md)
   Paginated response object for app locale detail queries.
-- [object AppSupportedLanguages](appsupportedlanguages.md)
+- [object AppSupportedLanguages](./appsupportedlanguages.md)
   App supported and default languages for an App Store country or region.
 
 

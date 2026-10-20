@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - watchOS 6.1+

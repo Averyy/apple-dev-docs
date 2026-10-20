@@ -1,7 +1,8 @@
 # SensoryFeedback
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a type of haptic and/or audio feedback that can be played.
 
@@ -27,70 +28,71 @@ This feedback can be passed to `View.sensoryFeedback` to play it.
 ## Topics
 
 ### Indicating start and stop
-- [static let start: SensoryFeedback](sensoryfeedback/start.md)
+- [static let start: SensoryFeedback](./sensoryfeedback/start.md)
   Indicates that an activity started.
-- [static let stop: SensoryFeedback](sensoryfeedback/stop.md)
+- [static let stop: SensoryFeedback](./sensoryfeedback/stop.md)
   Indicates that an activity stopped.
 ### Indicating changes and selections
-- [static let alignment: SensoryFeedback](sensoryfeedback/alignment.md)
+- [static let alignment: SensoryFeedback](./sensoryfeedback/alignment.md)
   Indicates the alignment of a dragged item.
-- [static let decrease: SensoryFeedback](sensoryfeedback/decrease.md)
+- [static let decrease: SensoryFeedback](./sensoryfeedback/decrease.md)
   Indicates that an important value decreased below a significant threshold.
-- [static let increase: SensoryFeedback](sensoryfeedback/increase.md)
+- [static let increase: SensoryFeedback](./sensoryfeedback/increase.md)
   Indicates that an important value increased above a significant threshold.
-- [static let levelChange: SensoryFeedback](sensoryfeedback/levelchange.md)
+- [static let levelChange: SensoryFeedback](./sensoryfeedback/levelchange.md)
   Indicates movement between discrete levels of pressure.
-- [static let selection: SensoryFeedback](sensoryfeedback/selection.md)
+- [static let selection: SensoryFeedback](./sensoryfeedback/selection.md)
   Indicates that a UI element’s values are changing.
-- [static let pathComplete: SensoryFeedback](sensoryfeedback/pathcomplete.md)
+- [static let pathComplete: SensoryFeedback](./sensoryfeedback/pathcomplete.md)
   Indicates a drawn path has completed and/or recognized.
 ### Indicating the outcome of an operation
-- [static let success: SensoryFeedback](sensoryfeedback/success.md)
+- [static let success: SensoryFeedback](./sensoryfeedback/success.md)
   Indicates that a task or action has completed.
-- [static let warning: SensoryFeedback](sensoryfeedback/warning.md)
+- [static let warning: SensoryFeedback](./sensoryfeedback/warning.md)
   Indicates that a task or action has produced a warning of some kind.
-- [static let error: SensoryFeedback](sensoryfeedback/error.md)
+- [static let error: SensoryFeedback](./sensoryfeedback/error.md)
   Indicates that an error has occurred.
 ### Producing a physical impact
-- [static let impact: SensoryFeedback](sensoryfeedback/impact.md)
+- [static let impact: SensoryFeedback](./sensoryfeedback/impact.md)
   Provides a physical metaphor you can use to complement a visual experience.
-- [static func impact(weight: SensoryFeedback.Weight, intensity: Double) -> SensoryFeedback](sensoryfeedback/impact(weight:intensity:).md)
+- [static func impact(weight: SensoryFeedback.Weight, intensity: Double) -> SensoryFeedback](./sensoryfeedback/impact%28weight,intensity%29.md)
   Provides a physical metaphor you can use to complement a visual experience.
-- [static func impact(flexibility: SensoryFeedback.Flexibility, intensity: Double) -> SensoryFeedback](sensoryfeedback/impact(flexibility:intensity:).md)
+- [static func impact(flexibility: SensoryFeedback.Flexibility, intensity: Double) -> SensoryFeedback](./sensoryfeedback/impact%28flexibility,intensity%29.md)
   Provides a physical metaphor you can use to complement a visual experience.
-- [SensoryFeedback.Flexibility](sensoryfeedback/flexibility.md)
+- [SensoryFeedback.Flexibility](./sensoryfeedback/flexibility.md)
   The flexibility to be represented by a type of feedback.
-- [SensoryFeedback.Weight](sensoryfeedback/weight.md)
+- [SensoryFeedback.Weight](./sensoryfeedback/weight.md)
   The weight to be represented by a type of feedback.
 ### Structures
-- [SensoryFeedback.PressFeedback](sensoryfeedback/pressfeedback.md)
+- [SensoryFeedback.PressFeedback](./sensoryfeedback/pressfeedback.md)
   Feedback that can be played in response to a press (touch down) on a control.
-- [SensoryFeedback.ReleaseFeedback](sensoryfeedback/releasefeedback.md)
+- [SensoryFeedback.ReleaseFeedback](./sensoryfeedback/releasefeedback.md)
   Feedback that can be played in response to a release (touch up) of a control.
-- [SensoryFeedback.SelectionFeedback](sensoryfeedback/selectionfeedback.md)
+- [SensoryFeedback.SelectionFeedback](./sensoryfeedback/selectionfeedback.md)
   Feedback that can be played in response to a specific UI element’s values changing.
 ### Type Methods
-- [static func press(SensoryFeedback.PressFeedback) -> SensoryFeedback](sensoryfeedback/press(_:).md)
+- [static func press(SensoryFeedback.PressFeedback) -> SensoryFeedback](./sensoryfeedback/press%28_%29.md)
   Plays feedback in response to a specific UI element being pressed (touch down).
-- [static func release(SensoryFeedback.ReleaseFeedback) -> SensoryFeedback](sensoryfeedback/release(_:).md)
+- [static func release(SensoryFeedback.ReleaseFeedback) -> SensoryFeedback](./sensoryfeedback/release%28_%29.md)
   Plays feedback in response to a specific UI element being released (touch up).
-- [static func selection(SensoryFeedback.SelectionFeedback) -> SensoryFeedback](sensoryfeedback/selection(_:).md)
+- [static func selection(SensoryFeedback.SelectionFeedback) -> SensoryFeedback](./sensoryfeedback/selection%28_%29.md)
   Plays feedback in response to a specific UI element’s values changing.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](view/sensoryfeedback(_:trigger:).md)
+### Providing haptic feedback
+- [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](./view/sensoryfeedback%28_,trigger%29.md)
   Plays the specified `feedback` when the provided `trigger` value changes.
-- [func sensoryFeedback(trigger:_:)](view/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback(trigger:_:)](./view/sensoryfeedback%28trigger,_%29.md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
-- [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](view/sensoryfeedback(_:trigger:condition:).md)
+- [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](./view/sensoryfeedback%28_,trigger,condition%29.md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
 
 

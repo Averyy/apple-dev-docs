@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct icmp6_namelookup {
     ...
 };
@@ -17,9 +17,9 @@ struct icmp6_namelookup {
 ## Topics
 
 ### Instance Properties
-- [icmp6_nl_hdr](icmp6_namelookup/3754029-icmp6_nl_hdr.md)
-- [icmp6_nl_nonce](icmp6_namelookup/3754030-icmp6_nl_nonce.md)
-- [icmp6_nl_ttl](icmp6_namelookup/3754031-icmp6_nl_ttl.md)
+- [icmp6_nl_hdr](./icmp6_namelookup/api-3754029-icmp6_nl_hdr.md)
+- [icmp6_nl_nonce](./icmp6_namelookup/api-3754030-icmp6_nl_nonce.md)
+- [icmp6_nl_ttl](./icmp6_namelookup/api-3754031-icmp6_nl_ttl.md)
 
 
 ---

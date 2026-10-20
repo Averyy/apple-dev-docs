@@ -1,7 +1,8 @@
 # ICUploadOption
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An option for uploading a file to the camera.
 
@@ -18,23 +19,28 @@ An option for uploading a file to the camera.
 struct ICUploadOption
 ```
 
+```c
+typedef NSString * ICUploadOption;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](icuploadoption/init(rawvalue:).md)
+- [init(rawValue: String)](./icuploadoption/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requestUploadFile(URL, options: [ICUploadOption : Any], uploadDelegate: Any, didUploadSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](iccameradevice/requestuploadfile(_:options:uploaddelegate:diduploadselector:contextinfo:).md)
+### Uploading Files
+- [func requestUploadFile(URL, options: [ICUploadOption : Any], uploadDelegate: Any, didUploadSelector: Selector, contextInfo: UnsafeMutableRawPointer?)](./iccameradevice/requestuploadfile%28_,options,uploaddelegate,diduploadselector,contextinfo%29.md)
   Uploads a file to the camera.
 
 

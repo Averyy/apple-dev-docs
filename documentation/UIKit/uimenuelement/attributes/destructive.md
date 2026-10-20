@@ -1,7 +1,8 @@
 # destructive
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attribute indicating the destructive style.
 
@@ -18,17 +19,22 @@ An attribute indicating the destructive style.
 static var destructive: UIMenuElement.Attributes { get }
 ```
 
+```c
+UIMenuElementAttributesDestructive
+```
+
 #### Discussion
 
 When you use this attribute, the menu system displays the menu element in a more prominent style, such as with red text.
 
 ## See Also
 
-- [static var disabled: UIMenuElement.Attributes](uimenuelement/attributes/disabled.md)
+### Attributes
+- [static var disabled: UIMenuElement.Attributes](./disabled.md)
   An attribute indicating the disabled style.
-- [static var hidden: UIMenuElement.Attributes](uimenuelement/attributes/hidden.md)
+- [static var hidden: UIMenuElement.Attributes](./hidden.md)
   An attribute indicating the hidden style.
-- [static var keepsMenuPresented: UIMenuElement.Attributes](uimenuelement/attributes/keepsmenupresented.md)
+- [static var keepsMenuPresented: UIMenuElement.Attributes](./keepsmenupresented.md)
   An attribute indicating that the menu remains presented after firing the element’s action instead of dismissing.
 
 

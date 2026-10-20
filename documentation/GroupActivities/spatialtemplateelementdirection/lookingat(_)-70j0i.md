@@ -1,7 +1,8 @@
 # lookingAt(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a direction that orients the participant to face another template element.
 
@@ -28,7 +29,8 @@ Call this method when you want one participant to look at another participant.
 
 ## See Also
 
-- [static func lookingAt(SpatialTemplateElementPosition) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/lookingat(_:)-1d7ak.md)
+### Looking at a specific location
+- [static func lookingAt(SpatialTemplateElementPosition) -> SpatialTemplateElementDirection](./lookingat%28_%29-1d7ak.md)
   Creates a direction that orients the participant to face the specified point in the shared coordinate space.
 
 

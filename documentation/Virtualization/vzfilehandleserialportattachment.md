@@ -1,7 +1,8 @@
 # VZFileHandleSerialPortAttachment
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An attachment point that allows bidirectional communication using file handles.
 
@@ -14,41 +15,46 @@ An attachment point that allows bidirectional communication using file handles.
 class VZFileHandleSerialPortAttachment
 ```
 
+```objc
+@interface VZFileHandleSerialPortAttachment : VZSerialPortAttachment
+```
+
 #### Overview
 
-Use a [`VZFileHandleSerialPortAttachment`](vzfilehandleserialportattachment.md) object to configure a serial port using separate file handles for reading and writing data. In your virtual machine, use the file handles in this object in the following way:
+Use a [`VZFileHandleSerialPortAttachment`](./vzfilehandleserialportattachment.md) object to configure a serial port using separate file handles for reading and writing data. In your virtual machine, use the file handles in this object in the following way:
 
-- To send data to the guest operating system, write data to the file handle in the [`fileHandleForReading`](vzfilehandleserialportattachment/filehandleforreading.md) property.
-- To receive data from the guest operating system, read data from the file handle in the [`fileHandleForWriting`](vzfilehandleserialportattachment/filehandleforwriting.md) property.
+- To send data to the guest operating system, write data to the file handle in the [`fileHandleForReading`](./vzfilehandleserialportattachment/filehandleforreading.md) property.
+- To receive data from the guest operating system, read data from the file handle in the [`fileHandleForWriting`](./vzfilehandleserialportattachment/filehandleforwriting.md) property.
 
 ## Topics
 
 ### Creating the attachment point
-- [init(fileHandleForReading: FileHandle?, fileHandleForWriting: FileHandle?)](vzfilehandleserialportattachment/init(filehandleforreading:filehandleforwriting:).md)
+- [init(fileHandleForReading: FileHandle?, fileHandleForWriting: FileHandle?)](./vzfilehandleserialportattachment/init%28filehandleforreading,filehandleforwriting%29.md)
   Creates a serial port attachment object from the specified file handles.
 ### Getting the file handles
-- [var fileHandleForReading: FileHandle?](vzfilehandleserialportattachment/filehandleforreading.md)
+- [var fileHandleForReading: FileHandle?](./vzfilehandleserialportattachment/filehandleforreading.md)
   The file handle that the guest operating system uses to read data.
-- [var fileHandleForWriting: FileHandle?](vzfilehandleserialportattachment/filehandleforwriting.md)
+- [var fileHandleForWriting: FileHandle?](./vzfilehandleserialportattachment/filehandleforwriting.md)
   The file handle that the guest operating system uses to write data.
 
 ## Relationships
 
 ### Inherits From
-- [VZSerialPortAttachment](vzserialportattachment.md)
+- [VZSerialPortAttachment](./vzserialportattachment.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZFileSerialPortAttachment](vzfileserialportattachment.md)
+### Attachment points
+- [class VZFileSerialPortAttachment](./vzfileserialportattachment.md)
   An attachment point that writes data from the guest system to a file.
-- [class VZSerialPortAttachment](vzserialportattachment.md)
+- [class VZSerialPortAttachment](./vzserialportattachment.md)
   The common behaviors for the serial attachment points of your virtual machine.
 
 

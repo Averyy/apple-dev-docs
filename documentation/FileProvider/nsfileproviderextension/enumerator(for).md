@@ -1,7 +1,8 @@
 # enumerator(for:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an enumerator for the specified item.
 
@@ -17,9 +18,13 @@ Returns an enumerator for the specified item.
 func enumerator(for containerItemIdentifier: NSFileProviderItemIdentifier) throws -> any NSFileProviderEnumerator
 ```
 
+```objc
+- (id<NSFileProviderEnumerator>) enumeratorForContainerItemIdentifier:(NSFileProviderItemIdentifier) containerItemIdentifier error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Defining Your File Provider’s Content](defining-your-file-provider-s-content.md)
+- [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md)
 
 #### Return Value
 
@@ -27,9 +32,9 @@ An enumerator for the specified document or folder, or `nil` in Objective-C if a
 
 #### Discussion
 
-Your File Provider extension must define one or more classes that adopt the [`NSFileProviderEnumerator`](nsfileproviderenumerator.md) protocol. Instances of these classes must be able to enumerate both the contents of the specified item and any changes to the content.
+Your File Provider extension must define one or more classes that adopt the [`NSFileProviderEnumerator`](../nsfileproviderenumerator.md) protocol. Instances of these classes must be able to enumerate both the contents of the specified item and any changes to the content.
 
-Override this method to return an instance of your custom [`NSFileProviderEnumerator`](nsfileproviderenumerator.md) class for the specified item (either a document or a folder). For more information, see [`Content and Change Tracking`](content-and-change-tracking.md).
+Override this method to return an instance of your custom [`NSFileProviderEnumerator`](../nsfileproviderenumerator.md) class for the specified item (either a document or a folder). For more information, see [Content and Change Tracking](../content-and-change-tracking.md).
 
 ## Parameters
 
@@ -37,13 +42,14 @@ Override this method to return an instance of your custom [`NSFileProviderEnumer
 
 ## See Also
 
-- [func persistentIdentifierForItem(at: URL) -> NSFileProviderItemIdentifier?](nsfileproviderextension/persistentidentifierforitem(at:).md)
+### Working with items and persistent identifiers
+- [func persistentIdentifierForItem(at: URL) -> NSFileProviderItemIdentifier?](./persistentidentifierforitem%28at%29.md)
   Returns a unique identifier for the given URL.
-- [func urlForItem(withPersistentIdentifier: NSFileProviderItemIdentifier) -> URL?](nsfileproviderextension/urlforitem(withpersistentidentifier:).md)
+- [func urlForItem(withPersistentIdentifier: NSFileProviderItemIdentifier) -> URL?](./urlforitem%28withpersistentidentifier%29.md)
   Returns the URL for a given persistent identifier.
-- [func item(for: NSFileProviderItemIdentifier) throws -> NSFileProviderItem](nsfileproviderextension/item(for:).md)
+- [func item(for: NSFileProviderItemIdentifier) throws -> NSFileProviderItem](./item%28for%29.md)
   Returns a description of the item associated with the persistent identifier.
-- [struct NSFileProviderItemIdentifier](nsfileprovideritemidentifier.md)
+- [struct NSFileProviderItemIdentifier](../nsfileprovideritemidentifier.md)
   A unique identifier for an item managed by the File Provider extension.
 
 

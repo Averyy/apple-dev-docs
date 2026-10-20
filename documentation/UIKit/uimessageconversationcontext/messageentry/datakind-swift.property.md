@@ -1,7 +1,8 @@
 # dataKind
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An item that represents the kind of data the message contains.
 
@@ -16,11 +17,16 @@ An item that represents the kind of data the message contains.
 var dataKind: UIMessageConversationContext.MessageEntry.DataKind { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIMessageConversationEntryDataKind dataKind;
+```
+
 ## See Also
 
-- [UIMessageConversationContext.MessageEntry.DataKind](uimessageconversationcontext/messageentry/datakind-swift.enum.md)
+### Categorizing the entry
+- [UIMessageConversationContext.MessageEntry.DataKind](./datakind-swift.enum.md)
   A list of options that represent the kinds of data a message can contain.
-- [var wasSentBySelf: Bool](uimessageconversationcontext/messageentry/wassentbyself.md)
+- [var wasSentBySelf: Bool](./wassentbyself.md)
   A Boolean value that indicates whether the current user sent the message.
 
 

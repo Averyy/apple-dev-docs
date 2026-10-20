@@ -1,7 +1,8 @@
 # init(_:transaction:sectionBy:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sectioned query from a fetch descriptor, grouped by a required optional-String key path.
 
@@ -20,6 +21,8 @@ Creates a sectioned query from a fetch descriptor, grouped by a required optiona
 @MainActor
 @preconcurrency init(_ descriptor: FetchDescriptor<Element>, transaction: Transaction? = nil, sectionBy sectionKeyPath: KeyPath<Element, String?>) where Result == SectionedResults<Element, String>
 ```
+
+Available when `Element` conforms to `PersistentModel`.
 
 
 ---

@@ -1,18 +1,19 @@
 # traits
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of traits added to this instance when it was initialized.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 

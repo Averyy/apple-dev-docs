@@ -1,14 +1,15 @@
 # kBluetoothHCIErrorSecureSimplePairingNotSupportedByHost
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIErrorSecureSimplePairingNotSupportedByHost = 0x37
 ```
 

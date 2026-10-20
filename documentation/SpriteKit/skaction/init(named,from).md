@@ -1,7 +1,8 @@
 # init(named:from:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action of the given name from an action file.
 
@@ -18,6 +19,10 @@ Creates an action of the given name from an action file.
 
 ```swift
 init?(named name: String, from url: URL)
+```
+
+```objc
++ (SKAction *) actionNamed:(NSString *) name fromURL:(NSURL *) url;
 ```
 
 ## Parameters

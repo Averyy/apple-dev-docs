@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/installing-coremltoo
 
 # Installing Core ML Tools
 
-**
-
-- [.md](../_sources/source/installing-coremltools.md)
-- **
-
-.pdf
-
-**
-
-# Installing Core ML Tools
-
- Table of contents 
-
-## Contents
-
-# Installing Core ML Tools
-
 This page describes how to install the [coremltools](https://github.com/apple/coremltools) Python package on macOS (10.13+) and Linux.
 
 Supported Python and MacOS Versions
@@ -42,14 +25,14 @@ If you are using macOS, you should already be familiar with the [Mac Terminal ap
 
 Before installing coremltools, you need [Python](https://www.python.org/downloads/) and the [pip](https://pip.pypa.io/en/stable/) installer.
 
-The `coremltools` package supports [Python 3](https://www.python.org/download/releases/3.0/). We recommend that you install Python 3.6 or newer. Use a Python package manager such as [Conda](https://docs.conda.io/en/latest/index.md) or [venv](https://docs.python.org/3/library/venv.md) to install the newest version of Python and other dependencies. [Conda](https://docs.conda.io/en/latest/index.md) is recommended because it is the most reliable way to install all required dependencies.
+The `coremltools` package supports [Python 3](https://www.python.org/download/releases/3.0/). We recommend that you install Python 3.6 or newer. Use a Python package manager such as [Conda](https://docs.conda.io/en/latest/index.html) or [venv](https://docs.python.org/3/library/venv.html) to install the newest version of Python and other dependencies. [Conda](https://docs.conda.io/en/latest/index.html) is recommended because it is the most reliable way to install all required dependencies.
 
 ## Install or Build Core ML Tools
 
 To install Core ML Tools, use one of the following methods:
 
 - The Conda package installer: Python is installed automatically. You can install [pip](https://pip.pypa.io/en/stable/) after setting up the Conda environment. Skip to [Set Up Conda](#set-up-conda).
-- A virtual environment: Install [pip](https://pip.pypa.io/en/stable/), and then use [venv](https://docs.python.org/3/library/venv.md), which also installs Python. Skip to [Set Up a New Virtual Environment](#set-up-a-new-virtual-environment).
+- A virtual environment: Install [pip](https://pip.pypa.io/en/stable/), and then use [venv](https://docs.python.org/3/library/venv.html), which also installs Python. Skip to [Set Up a New Virtual Environment](#set-up-a-new-virtual-environment).
 - Install a Python wheel: To download and install the most recent (or any available) Python wheel (`.whl` file) for Core ML Tools, see [Install From Source](#install-from-source).
 - Build from source: To build the most recent (or any available) version of Core ML Tools, see [Build From Source](#build-from-source).
 
@@ -59,7 +42,7 @@ To install third-party frameworks, libraries, or other software, see [Install Th
 
 Follow these steps:
 
-1. Use the appropriate [Miniconda installer](https://docs.conda.io/en/latest/miniconda.md) for your operating system.
+1. Use the appropriate [Miniconda installer](https://docs.conda.io/en/latest/miniconda.html) for your operating system.
 2. Create a Conda environment for `coremltools` using the following command:
 
 ```
@@ -123,8 +106,12 @@ The continuous integration (CI) system linked to the `coremltools` repo builds a
 To access the wheel for a particular `coremltools` release, follow these steps:
 
 1. Go to the [coremltoolsrepository](https://github.com/apple/coremltools) on GitHub, scroll down to the **README.md** heading, and click the **build passing** button. The **Branches** tab appears:
+![Branches tab](https://apple.github.io/coremltools/docs-guides/_images/repo-readme-build-passing-button-annot.png)
+![Branches passed](https://apple.github.io/coremltools/docs-guides/_images/repo-branches-passed-button.png)
 2. Click the **passed** button to show the **Pipeline** tab:
+![Pipeline tab](https://apple.github.io/coremltools/docs-guides/_images/repo-build-wheel-selected.png)
 3. Click a wheel in the **Build** column. For example, in the previous figure, the **build_wheel_macos_py38** wheel is highlighted for clicking. After clicking a wheel, the raw job log appears, with the **Download** and **Browse** buttons in the right column:
+![Download and Browse](https://apple.github.io/coremltools/docs-guides/_images/repo-job-artifacts.png)
 4. Click the **Download** button to download the `dist` folder with the wheel files.
 5. Install a wheel file using `pip`. For example, use the following command to install the `coremltools-4.0-cp38-none-macosx_10_12_intel.whl` wheel file for the 4.0 version of Core ML Tools:
 
@@ -149,5 +136,3 @@ For more information about building Core ML Tools, see [Building From Source](ht
 ## Upgrade Core ML Tools
 
 For either Conda or virtual environments, see [Install Core ML Tools](#install-core-ml-tools) for the command to upgrade Core ML Tools.
-
-** Contents

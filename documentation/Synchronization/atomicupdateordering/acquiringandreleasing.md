@@ -1,7 +1,8 @@
 # acquiringAndReleasing
 
 **Framework**: Synchronization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An acquiring-and-releasing operation is a combination of `.acquiring` and `.releasing` operation on the same variable.
 

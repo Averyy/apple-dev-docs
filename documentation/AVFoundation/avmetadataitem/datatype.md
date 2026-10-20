@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the metadata item’s value.
 
@@ -20,19 +21,24 @@ The data type of the metadata item’s value.
 var dataType: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * dataType;
+```
+
 ## See Also
 
-- [static var value: AVAsyncProperty<Root, (any NSCopying & NSObjectProtocol)?>](avpartialasyncproperty/value.md)
+### Loading values
+- [static var value: AVAsyncProperty<Root, (any NSCopying & NSObjectProtocol)?>](../avpartialasyncproperty/value.md)
   The value of the metadata item.
-- [static var stringValue: AVAsyncProperty<Root, String?>](avpartialasyncproperty/stringvalue.md)
+- [static var stringValue: AVAsyncProperty<Root, String?>](../avpartialasyncproperty/stringvalue.md)
   The value of the metadata item as a string.
-- [static var numberValue: AVAsyncProperty<Root, NSNumber?>](avpartialasyncproperty/numbervalue.md)
+- [static var numberValue: AVAsyncProperty<Root, NSNumber?>](../avpartialasyncproperty/numbervalue.md)
   The value of the metadata item as a number.
-- [static var dateValue: AVAsyncProperty<Root, Date?>](avpartialasyncproperty/datevalue.md)
+- [static var dateValue: AVAsyncProperty<Root, Date?>](../avpartialasyncproperty/datevalue.md)
   The value of the metadata item as a date.
-- [static var dataValue: AVAsyncProperty<Root, Data?>](avpartialasyncproperty/datavalue.md)
+- [static var dataValue: AVAsyncProperty<Root, Data?>](../avpartialasyncproperty/datavalue.md)
   The value of the metadata item as a data value.
-- [static var extraAttributes: AVAsyncProperty<Root, [AVMetadataExtraAttributeKey : Any]?>](avpartialasyncproperty/extraattributes.md)
+- [static var extraAttributes: AVAsyncProperty<Root, [AVMetadataExtraAttributeKey : Any]?>](../avpartialasyncproperty/extraattributes.md)
   A dictionary of additional attributes for the item.
 
 

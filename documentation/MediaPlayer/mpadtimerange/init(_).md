@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Media Player time range that indicates where an ad break exists in the current player.
 
@@ -16,6 +17,10 @@ Creates a Media Player time range that indicates where an ad break exists in the
 
 ```swift
 init(_ timeRange: CMTimeRange)
+```
+
+```objc
+- (instancetype) initWithTimeRange:(CMTimeRange) timeRange;
 ```
 
 ## Parameters

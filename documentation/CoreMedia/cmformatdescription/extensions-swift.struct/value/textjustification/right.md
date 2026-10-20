@@ -1,7 +1,8 @@
 # right
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,10 +21,11 @@ static let right: CMFormatDescription.Extensions.Value.TextJustification
 
 ## See Also
 
-- [static let bottom: CMFormatDescription.Extensions.Value.TextJustification](cmformatdescription/extensions-swift.struct/value/textjustification/bottom.md)
-- [static let centered: CMFormatDescription.Extensions.Value.TextJustification](cmformatdescription/extensions-swift.struct/value/textjustification/centered.md)
-- [static let left: CMFormatDescription.Extensions.Value.TextJustification](cmformatdescription/extensions-swift.struct/value/textjustification/left.md)
-- [static let top: CMFormatDescription.Extensions.Value.TextJustification](cmformatdescription/extensions-swift.struct/value/textjustification/top.md)
+### Text Justifications
+- [static let bottom: CMFormatDescription.Extensions.Value.TextJustification](./bottom.md)
+- [static let centered: CMFormatDescription.Extensions.Value.TextJustification](./centered.md)
+- [static let left: CMFormatDescription.Extensions.Value.TextJustification](./left.md)
+- [static let top: CMFormatDescription.Extensions.Value.TextJustification](./top.md)
 
 
 ---

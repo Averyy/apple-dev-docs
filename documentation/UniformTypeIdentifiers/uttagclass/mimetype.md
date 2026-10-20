@@ -1,7 +1,8 @@
 # mimeType
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type property that returns the tag class used to map a type to a MIME type.
 
@@ -26,7 +27,8 @@ The tag class for MIME types such as `text/plain`. The raw value of this tag cla
 
 ## See Also
 
-- [static var filenameExtension: UTTagClass](uttagclass/filenameextension.md)
+### Getting a declared types mapping
+- [static var filenameExtension: UTTagClass](./filenameextension.md)
   A type property that returns the tag class used to map a type to a filename extension.
 
 

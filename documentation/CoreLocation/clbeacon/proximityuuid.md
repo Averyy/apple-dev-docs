@@ -1,15 +1,18 @@
 # proximityUUID
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The proximity ID of the beacon.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.15+ - Deprecated in 10.15
+
+> **Deprecated**: Use [`uuid`](./uuid.md) instead.
 
 ## Declaration
 
@@ -17,13 +20,18 @@ The proximity ID of the beacon.
 var proximityUUID: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * proximityUUID;
+```
+
 ## See Also
 
-- [var uuid: UUID](clbeacon/uuid.md)
+### Getting the beacon identity
+- [var uuid: UUID](./uuid.md)
   The UUID that the observed beacon transmitted.
-- [var major: NSNumber](clbeacon/major.md)
+- [var major: NSNumber](./major.md)
   The major value that the observed beacon transmitted.
-- [var minor: NSNumber](clbeacon/minor.md)
+- [var minor: NSNumber](./minor.md)
   The minor value that the observed beacon transmitted.
 
 

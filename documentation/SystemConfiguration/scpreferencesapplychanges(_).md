@@ -1,7 +1,8 @@
 # SCPreferencesApplyChanges(_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Requests that the currently stored configuration preferences be applied to the active configuration.
 
@@ -14,6 +15,10 @@ Requests that the currently stored configuration preferences be applied to the a
 func SCPreferencesApplyChanges(_ prefs: SCPreferences) -> Bool
 ```
 
+```c
+Boolean SCPreferencesApplyChanges(SCPreferencesRef prefs);
+```
+
 #### Return Value
 
 `TRUE` if the lock was obtained; `FALSE` if an error occurred.
@@ -24,9 +29,10 @@ func SCPreferencesApplyChanges(_ prefs: SCPreferences) -> Bool
 
 ## See Also
 
-- [func SCPreferencesCommitChanges(SCPreferences) -> Bool](scpreferencescommitchanges(_:).md)
+### Applying and Committing Changes
+- [func SCPreferencesCommitChanges(SCPreferences) -> Bool](./scpreferencescommitchanges%28_%29.md)
   Commits changes made to the configuration preferences to persistent storage.
-- [func SCPreferencesSynchronize(SCPreferences)](scpreferencessynchronize(_:).md)
+- [func SCPreferencesSynchronize(SCPreferences)](./scpreferencessynchronize%28_%29.md)
   Synchronizes accessed preferences with committed changes.
 
 

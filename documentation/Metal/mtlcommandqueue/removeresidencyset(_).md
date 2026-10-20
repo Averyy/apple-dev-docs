@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes a residency set from a command queue’s list, which means Metal doesn’t apply it to the queue’s command buffers as you commit them.
@@ -20,23 +21,28 @@ Removes a residency set from a command queue’s list, which means Metal doesn�
 func removeResidencySet(_ residencySet: any MTLResidencySet)
 ```
 
+```objc
+- (void) removeResidencySet:(id<MTLResidencySet>) residencySet;
+```
+
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Discussion
 
-The method doesn’t remove the residency set from command buffers the queue owns with a [`status`](mtlcommandbuffer/status.md) property that’s equal to [`MTLCommandBufferStatus.committed`](mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](mtlcommandbufferstatus/scheduled.md).
+The method doesn’t remove the residency set from command buffers the queue owns with a [`status`](../mtlcommandbuffer/status.md) property that’s equal to [`MTLCommandBufferStatus.committed`](../mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](../mtlcommandbufferstatus/scheduled.md).
 
-See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](mtlresidencyset.md) for more information.
+See [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md) and [`MTLResidencySet`](../mtlresidencyset.md) for more information.
 
 ## Parameters
 
-- `residencySet`: A residency set that contains resource allocations, such as [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
+- `residencySet`: A residency set that contains resource allocations, such as [`MTLBuffer`](../mtlbuffer.md), [`MTLTexture`](../mtltexture.md), and [`MTLHeap`](../mtlheap.md) instances.
 
 ## See Also
 
-- [func removeResidencySets([any MTLResidencySet])](mtlcommandqueue/removeresidencysets(_:).md)
+### Detaching residency sets
+- [func removeResidencySets([any MTLResidencySet])](./removeresidencysets%28_%29.md)
   Removes multiple residency sets from a command queue’s list, which means Metal doesn’t apply them to the queue’s command buffers as you commit them.
 
 

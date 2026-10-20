@@ -1,7 +1,8 @@
 # CVImageStereoDisplayMaskRectangle.EdgePoint
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies inset point on a vertical edge of the rectangle.
 
@@ -23,20 +24,20 @@ struct EdgePoint
 ## Topics
 
 ### Initializers
-- [init(x: UInt16, y: UInt16)](cvimagestereodisplaymaskrectangle/edgepoint/init(x:y:).md)
+- [init(x: UInt16, y: UInt16)](./edgepoint/init%28x,y%29.md)
 ### Instance Properties
-- [var x: UInt16](cvimagestereodisplaymaskrectangle/edgepoint/x.md)
+- [var x: UInt16](./edgepoint/x.md)
   Offset from left edge (0) towards the right edge (width).
-- [var y: UInt16](cvimagestereodisplaymaskrectangle/edgepoint/y.md)
+- [var y: UInt16](./edgepoint/y.md)
   Offset from top edge (0) towards the bottom edge (height).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

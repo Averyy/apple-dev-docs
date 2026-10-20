@@ -1,7 +1,8 @@
 # readWrite
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current user is allowed to both read and write this item.
 
@@ -18,9 +19,14 @@ The current user is allowed to both read and write this item.
 static let readWrite: URLUbiquitousSharedItemPermissions
 ```
 
+```c
+extern NSURLUbiquitousSharedItemPermissions const NSURLUbiquitousSharedItemPermissionsReadWrite;
+```
+
 ## See Also
 
-- [static let readOnly: URLUbiquitousSharedItemPermissions](urlubiquitousshareditempermissions/readonly.md)
+### Constants
+- [static let readOnly: URLUbiquitousSharedItemPermissions](./readonly.md)
   The values returned for the `NSURLUbiquitousSharedItemCurrentUserPermissionsKey`. The current user is only allowed to read this item.
 
 

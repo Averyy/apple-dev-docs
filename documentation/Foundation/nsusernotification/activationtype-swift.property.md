@@ -1,12 +1,15 @@
 # activationType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies what caused a user notification to occur.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
@@ -14,15 +17,20 @@ Specifies what caused a user notification to occur.
 var activationType: NSUserNotification.ActivationType { get }
 ```
 
+```objc
+@property (readonly) NSUserNotificationActivationType activationType;
+```
+
 #### Discussion
 
-This property specifies why the user notification was sent to to the [`NSUserNotificationCenterDelegate`](nsusernotificationcenterdelegate.md) method [`userNotificationCenter(_:didActivate:)`](nsusernotificationcenterdelegate/usernotificationcenter(_:didactivate:).md). The supported values are described in [`NSUserNotification.ActivationType`](nsusernotification/activationtype-swift.enum.md).
+This property specifies why the user notification was sent to to the [`NSUserNotificationCenterDelegate`](../nsusernotificationcenterdelegate.md) method [`userNotificationCenter(_:didActivate:)`](../nsusernotificationcenterdelegate/usernotificationcenter%28_,didactivate%29.md). The supported values are described in [`NSUserNotification.ActivationType`](./activationtype-swift.enum.md).
 
 ## See Also
 
-- [var additionalActivationAction: NSUserNotificationAction?](nsusernotification/additionalactivationaction.md)
+### User Notification Activation Method
+- [var additionalActivationAction: NSUserNotificationAction?](./additionalactivationaction.md)
   An additional action selected by the user.
-- [var additionalActions: [NSUserNotificationAction]?](nsusernotification/additionalactions.md)
+- [var additionalActions: [NSUserNotificationAction]?](./additionalactions.md)
   The actions that can be taken on a notification in addition to the default action.
 
 

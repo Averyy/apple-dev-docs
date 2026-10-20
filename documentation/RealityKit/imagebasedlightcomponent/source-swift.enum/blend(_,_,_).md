@@ -1,7 +1,8 @@
 # ImageBasedLightComponent.Source.blend(_:_:_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Blending between 2 IBLs. The Float is in [0; 1]: 0 will use the first IBL and 1 will use the second.
 

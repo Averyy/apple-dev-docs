@@ -1,7 +1,8 @@
 # isPlayingAudio(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to check if the tab is currently playing audio.
 
@@ -16,6 +17,10 @@ Called to check if the tab is currently playing audio.
 
 ```swift
 optional func isPlayingAudio(for context: WKWebExtensionContext) -> Bool
+```
+
+```objc
+- (BOOL) isPlayingAudioForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

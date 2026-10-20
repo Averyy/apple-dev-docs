@@ -1,12 +1,15 @@
 # render(atTime:arguments:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders a frame of a composition at the specified time.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Renders a frame of a composition at the specified time.
 func render(atTime time: TimeInterval, arguments: [AnyHashable : Any]!) -> Bool
 ```
 
+```objc
+- (BOOL) renderAtTime:(NSTimeInterval) time arguments:(NSDictionary *) arguments;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful.
+[`true`](../../Swift/true.md) if successful.
 
 #### Discussion
 
@@ -30,12 +37,12 @@ All OpenGL states are preserved  *except* the following:
 
 If you are using double buffers, keep in mind that the `renderAtTime:arguments:` method does not swap the front and back buffers of the OpenGL context. You must perform the swap yourself by calling the OpenGL command `flushBuffer` on the context associated with the renderer.
 
-If you are interleaving OpenGL code with rendering of a composition, make sure that the OpenGL context is current. If you are using the [`NSOpenGLContext`](https://developer.apple.com/documentation/appkit/nsopenglcontext) class, call the [`makeCurrentContext()`](https://developer.apple.com/documentation/appkit/nsopenglcontext/makecurrentcontext()) method prior to rendering. If you are using the CGL API, call the function `CGLSetCurrentContext(_:)`.
+If you are interleaving OpenGL code with rendering of a composition, make sure that the OpenGL context is current. If you are using the [`NSOpenGLContext`](../../AppKit/nsopenglcontext.md) class, call the [`makeCurrentContext()`](../../AppKit/nsopenglcontext/makecurrentcontext%28%29.md) method prior to rendering. If you are using the CGL API, call the function `CGLSetCurrentContext(_:)`.
 
 ## Parameters
 
 - `time`: The time, in seconds, at which  to render a composition frame. The time must be a positive value or zero.
-- `arguments`: An optional dictionary that can have any of the entries defined in [`Rendering Arguments`](rendering-arguments.md).
+- `arguments`: An optional dictionary that can have any of the entries defined in [Rendering Arguments](../rendering-arguments.md).
 
 
 ---

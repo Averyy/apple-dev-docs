@@ -1,7 +1,8 @@
 # GCSwitchPositionInput
 
 **Framework**: Game Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The common properties of inputs that switch between two or more positions.
 
@@ -19,36 +20,41 @@ The common properties of inputs that switch between two or more positions.
 protocol GCSwitchPositionInput : NSObjectProtocol
 ```
 
+```objc
+@protocol GCSwitchPositionInput <NSObject>
+```
+
 ## Topics
 
 ### Getting the characteristics
-- [var positionRange: NSRange](gcswitchpositioninput/positionrange.md)
+- [var positionRange: NSRange](./gcswitchpositioninput/positionrange.md)
   The range of possible values for the switch.
-- [var isSequential: Bool](gcswitchpositioninput/issequential.md)
+- [var isSequential: Bool](./gcswitchpositioninput/issequential.md)
   A Boolean value that indicates whether the position change is sequential.
-- [var canWrap: Bool](gcswitchpositioninput/canwrap.md)
+- [var canWrap: Bool](./gcswitchpositioninput/canwrap.md)
   A Boolean value that indicates whether the position value wraps when it reaches the range’s minimum or maximum value.
 ### Getting the position
-- [var position: Int](gcswitchpositioninput/position.md)
+- [var position: Int](./gcswitchpositioninput/position.md)
   The position of the switch.
-- [var positionDidChangeHandler: ((any GCPhysicalInputElement, any GCSwitchPositionInput, Int) -> Void)?](gcswitchpositioninput/positiondidchangehandler.md)
+- [var positionDidChangeHandler: ((any GCPhysicalInputElement, any GCSwitchPositionInput, Int) -> Void)?](./gcswitchpositioninput/positiondidchangehandler.md)
   The block that the profile calls when the value of the switch changes.
-- [var lastPositionTimestamp: TimeInterval](gcswitchpositioninput/lastpositiontimestamp.md)
+- [var lastPositionTimestamp: TimeInterval](./gcswitchpositioninput/lastpositiontimestamp.md)
   A timestamp for when the profile reports the last position.
-- [var lastPositionLatency: TimeInterval](gcswitchpositioninput/lastpositionlatency.md)
+- [var lastPositionLatency: TimeInterval](./gcswitchpositioninput/lastpositionlatency.md)
   The time in seconds between the current and previous positions.
 ### Getting user actions
-- [var sources: Set<AnyHashable>](gcswitchpositioninput/sources.md)
+- [var sources: Set<AnyHashable>](./gcswitchpositioninput/sources.md)
   One or more physical actions the user performs to manipulate the input.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GCSteeringWheelElement](gcsteeringwheelelement.md)
+### Steering and switch elements
+- [class GCSteeringWheelElement](./gcsteeringwheelelement.md)
   The element that represents the wheel of a racing wheel controller.
 
 

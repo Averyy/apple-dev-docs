@@ -1,7 +1,8 @@
 # formattingContext
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of where the formatted string will appear, allowing the formatter to capitalize the output appropriately.
 
@@ -20,23 +21,28 @@ A description of where the formatted string will appear, allowing the formatter 
 var formattingContext: Formatter.Context { get set }
 ```
 
+```objc
+@property NSFormattingContext formattingContext;
+```
+
 #### Discussion
 
-The default value is [`Formatter.Context.unknown`](formatter/context/unknown.md). For additional details about specifying contexts, see [`Formatter.Context`](formatter/context.md).
+The default value is [`Formatter.Context.unknown`](../formatter/context/unknown.md). For additional details about specifying contexts, see [`Formatter.Context`](../formatter/context.md).
 
 ## See Also
 
-- [var calendar: Calendar!](relativedatetimeformatter/calendar.md)
+### Configuring Formatter Options
+- [var calendar: Calendar!](./calendar.md)
   The calendar to use for formatting values that don’t have an inherent calendar of their own.
-- [var locale: Locale!](relativedatetimeformatter/locale.md)
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting the date.
-- [var dateTimeStyle: RelativeDateTimeFormatter.DateTimeStyle](relativedatetimeformatter/datetimestyle-swift.property.md)
+- [var dateTimeStyle: RelativeDateTimeFormatter.DateTimeStyle](./datetimestyle-swift.property.md)
   The style to use when describing a relative date, for example “yesterday” or “1 day ago”.
-- [RelativeDateTimeFormatter.DateTimeStyle](relativedatetimeformatter/datetimestyle-swift.enum.md)
+- [RelativeDateTimeFormatter.DateTimeStyle](./datetimestyle-swift.enum.md)
   A type that represents the style to use when formatting relative dates, such as “1 week ago” or “last week”.
-- [var unitsStyle: RelativeDateTimeFormatter.UnitsStyle](relativedatetimeformatter/unitsstyle-swift.property.md)
+- [var unitsStyle: RelativeDateTimeFormatter.UnitsStyle](./unitsstyle-swift.property.md)
   The style to use when formatting the quantity or the name of the unit, such as “1 day ago” or “one day ago”.
-- [RelativeDateTimeFormatter.UnitsStyle](relativedatetimeformatter/unitsstyle-swift.enum.md)
+- [RelativeDateTimeFormatter.UnitsStyle](./unitsstyle-swift.enum.md)
   A type that represents the style to use when formatting the units of relative dates.
 
 

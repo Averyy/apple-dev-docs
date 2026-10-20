@@ -1,7 +1,8 @@
 # VideoMaterial
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A material that supports animated textures.
 
@@ -11,7 +12,7 @@ A material that supports animated textures.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,7 +24,7 @@ struct VideoMaterial
 
 In RealityKit, a *material* is an object that defines the surface properties of a rendered 3D object. A `VideoMaterial` is a material that maps a movie file on to the surface of an entity. Video materials are *unlit*, which means that scene lighting doesn’t affect them. Video materials support transparency if the source video’s file format also supports transparency.
 
-Video materials use an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) instance to control movie playback. You can use any movie file format that [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) supports to create a video material. To control playback of the material’s video, use the [`avPlayer`](videomaterial/avplayer.md) property, which offers methods like [`play()`](https://developer.apple.com/documentation/avfoundation/avplayer/play()) and [`pause()`](https://developer.apple.com/documentation/avfoundation/avplayer/pause()).
+Video materials use an [`AVPlayer`](../AVFoundation/avplayer.md) instance to control movie playback. You can use any movie file format that [`AVPlayer`](../AVFoundation/avplayer.md) supports to create a video material. To control playback of the material’s video, use the [`avPlayer`](./videomaterial/avplayer.md) property, which offers methods like [`play()`](../AVFoundation/avplayer/play%28%29.md) and [`pause()`](../AVFoundation/avplayer/pause%28%29.md).
 
 The following code demonstrates how to create and start playing a video material using a movie file from your application bundle.
 
@@ -48,47 +49,48 @@ if let url = Bundle.main.url(forResource: "MyMovie", withExtension: "mp4") {
 }
 ```
 
-To see an example of using a video texture in RealityKit, see [`Creating a game with scene understanding`](creating-a-game-with-scene-understanding.md).
+To see an example of using a video texture in RealityKit, see [Creating a game with scene understanding](./creating-a-game-with-scene-understanding.md).
 
 ## Topics
 
 ### Creating a video material
-- [init(avPlayer: AVPlayer)](videomaterial/init(avplayer:).md)
+- [init(avPlayer: AVPlayer)](./videomaterial/init%28avplayer%29.md)
   Creates a new video material.
 ### Controlling playback
-- [var avPlayer: AVPlayer?](videomaterial/avplayer.md)
+- [var avPlayer: AVPlayer?](./videomaterial/avplayer.md)
   The material’s video playback controller.
-- [var controller: VideoPlaybackController](videomaterial/controller.md)
+- [var controller: VideoPlaybackController](./videomaterial/controller.md)
   An object that configures framework-specific video options.
 ### Initializers
-- [init(videoRenderer: AVSampleBufferVideoRenderer)](videomaterial/init(videorenderer:).md)
+- [init(videoRenderer: AVSampleBufferVideoRenderer)](./videomaterial/init%28videorenderer%29.md)
   Creates and initializes a video material for a sample buffer video renderer object.
 ### Instance Properties
-- [var faceCulling: VideoMaterial.FaceCulling](videomaterial/faceculling-swift.property.md)
+- [var faceCulling: VideoMaterial.FaceCulling](./videomaterial/faceculling-swift.property.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
-- [var readsDepth: Bool](videomaterial/readsdepth.md)
+- [var readsDepth: Bool](./videomaterial/readsdepth.md)
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
-- [var triangleFillMode: VideoMaterial.TriangleFillMode](videomaterial/trianglefillmode-swift.property.md)
+- [var triangleFillMode: VideoMaterial.TriangleFillMode](./videomaterial/trianglefillmode-swift.property.md)
   The object that controls how RealityKit draws triangles.
-- [var videoRenderer: AVSampleBufferVideoRenderer?](videomaterial/videorenderer.md)
+- [var videoRenderer: AVSampleBufferVideoRenderer?](./videomaterial/videorenderer.md)
   The material’s video renderer.
-- [var writesDepth: Bool](videomaterial/writesdepth.md)
+- [var writesDepth: Bool](./videomaterial/writesdepth.md)
   A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
 ### Type Aliases
-- [VideoMaterial.FaceCulling](videomaterial/faceculling-swift.typealias.md)
+- [VideoMaterial.FaceCulling](./videomaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [VideoMaterial.TriangleFillMode](videomaterial/trianglefillmode-swift.typealias.md)
+- [VideoMaterial.TriangleFillMode](./videomaterial/trianglefillmode-swift.typealias.md)
 
 ## Relationships
 
 ### Conforms To
-- [Material](material.md)
+- [Material](./material.md)
 
 ## See Also
 
-- [VideoMaterial.FaceCulling](videomaterial/faceculling-swift.typealias.md)
+### Video materials
+- [VideoMaterial.FaceCulling](./videomaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [VideoMaterial.TriangleFillMode](videomaterial/trianglefillmode-swift.typealias.md)
+- [VideoMaterial.TriangleFillMode](./videomaterial/trianglefillmode-swift.typealias.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # pencilInteraction(_:didReceiveSqueeze:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when a person squeezes Apple Pencil.
 
@@ -15,6 +16,10 @@ Tells the delegate when a person squeezes Apple Pencil.
 
 ```swift
 optional func pencilInteraction(_ interaction: UIPencilInteraction, didReceiveSqueeze squeeze: UIPencilInteraction.Squeeze)
+```
+
+```objc
+- (void) pencilInteraction:(UIPencilInteraction *) interaction didReceiveSqueeze:(UIPencilInteractionSqueeze *) squeeze;
 ```
 
 

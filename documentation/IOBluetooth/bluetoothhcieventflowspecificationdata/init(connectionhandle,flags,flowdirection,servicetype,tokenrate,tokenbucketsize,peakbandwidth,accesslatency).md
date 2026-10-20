@@ -1,10 +1,11 @@
 # init(connectionHandle:flags:flowDirection:serviceType:tokenRate:tokenBucketSize:peakBandwidth:accessLatency:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

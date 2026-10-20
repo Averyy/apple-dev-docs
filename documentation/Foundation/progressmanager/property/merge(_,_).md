@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Merges two summary values into a single combined summary.

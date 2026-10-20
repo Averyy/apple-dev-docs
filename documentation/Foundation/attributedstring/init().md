@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty attributed string.
 
@@ -22,15 +23,16 @@ init()
 
 ## See Also
 
-- [init(AttributedSubstring)](attributedstring/init(_:)-8tnoq.md)
+### Creating an Attributed String
+- [init(AttributedSubstring)](./init%28_%29-8tnoq.md)
   Creates an attributed string from an attributed substring.
-- [init(String, attributes: AttributeContainer)](attributedstring/init(_:attributes:)-2a45h.md)
+- [init(String, attributes: AttributeContainer)](./init%28_,attributes%29-2a45h.md)
   Creates an attributed string from a string and an attribute container.
-- [init(Substring, attributes: AttributeContainer)](attributedstring/init(_:attributes:)-8jqhp.md)
+- [init(Substring, attributes: AttributeContainer)](./init%28_,attributes%29-8jqhp.md)
   Creates an attributed string from a substring and an attribute container.
-- [init<S>(S, attributes: AttributeContainer)](attributedstring/init(_:attributes:)-8l0iq.md)
+- [init<S>(S, attributes: AttributeContainer)](./init%28_,attributes%29-8l0iq.md)
   Creates an attributed string from a character sequence and an attribute container.
-- [struct AttributeContainer](attributecontainer.md)
+- [struct AttributeContainer](../attributecontainer.md)
   A container for attribute keys and values.
 
 

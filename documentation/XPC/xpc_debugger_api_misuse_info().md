@@ -1,23 +1,28 @@
 # xpc_debugger_api_misuse_info()
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a pointer to a string that describes the reason XPC aborts the calling process.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func xpc_debugger_api_misuse_info() -> UnsafePointer<CChar>!
+```
+
+```c
+const char *xpc_debugger_api_misuse_info();
 ```
 
 #### Return Value

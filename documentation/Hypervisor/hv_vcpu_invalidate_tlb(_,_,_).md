@@ -1,7 +1,8 @@
 # hv_vcpu_invalidate_tlb(_:_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func hv_vcpu_invalidate_tlb(_ vcpu: hv_vcpu_t, _ op: hv_tlbi_op_t, _ param: UInt64) -> hv_return_t
+```
+
+```c
+extern hv_return_t hv_vcpu_invalidate_tlb(hv_vcpu_t vcpu, hv_tlbi_op_t op, uint64_t param);
 ```
 
 #### Return Value

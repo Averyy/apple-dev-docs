@@ -1,12 +1,17 @@
 # Creating a poster event pass using semantic tags
 
-**Framework**: Wallet Passes
+**Framework**: Wallet Passes  
+**Role**: Article
 
 Use semantic tags to provide up-to-date information for event passes.
 
 #### Overview
 
-In iOS 26 and later and watchOS 26 and later you can provide an engaging event ticket experience by creating a poster event tickets using semantic tags in Wallet. This experience builds on the existing [`PKPass`](https://developer.apple.com/documentation/passkit/pkpass) bundle in Wallet and maintains backward compatibility. For more information on semantic tags, see [`Supporting semantic tags in Wallet passes`](supporting-semantic-tags-in-wallet-passes.md).
+In iOS 26 and later and watchOS 26 and later you can provide an engaging event ticket experience by creating a poster event tickets using semantic tags in Wallet. This experience builds on the existing [`PKPass`](../PassKit/pkpass.md) bundle in Wallet and maintains backward compatibility. For more information on semantic tags, see [Supporting semantic tags in Wallet passes](./supporting-semantic-tags-in-wallet-passes.md).
+
+![An image showing a mock poster pass for a sporting event.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/poster-event-ticket-sports@2x.png)
+
+![An image showing a mock poster pass for a live performance event.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/poster-event-ticket-live-performance@2x.png)
 
 Adding semantic tags to your event pass provides structured data that Wallet uses to automatically display information like event dates.
 
@@ -17,7 +22,7 @@ To create a poster event ticket using semantic tags, you need to meet the follow
 
 > ❗ **Important**: Poster event tickets aren’t compatible with tickets that require a QR code or barcode for entry.
 
-#### Set the Preferred Style Scheme
+#### Set the preferred style scheme
 
 The *preferred style scheme* is a top-level key that you provide. It takes an array of strings that correspond to schemes that the system resolves into a *style type*. Poster event tickets are considered event tickets, and the scheme is `posterEventTicket`.
 
@@ -32,9 +37,9 @@ The following is an example of the preferred style scheme structure:
 ]
 ```
 
-#### Add the Event Ticket Pass Style
+#### Add the event ticket pass style
 
-The pass’s style determines the overall visual appearance of the pass and the template for placement of information on the pass. The value of the pass style key is a dictionary containing fields that hold the pass content. Specify the pass style by providing the corresponding key at the top level of the `pass.json` file; event passes use the key `eventTicket`. For more information on building your pass json file, see [`Building a Pass`](building-a-pass.md).
+The pass’s style determines the overall visual appearance of the pass and the template for placement of information on the pass. The value of the pass style key is a dictionary containing fields that hold the pass content. Specify the pass style by providing the corresponding key at the top level of the `pass.json` file; event passes use the key `eventTicket`. For more information on building your pass json file, see [Building a Pass](./building-a-pass.md).
 
 The following example shows a partial event pass with top-level keys.
 
@@ -52,17 +57,17 @@ The pass style controls how Wallet lays out the pass fields and which images it 
 
 **Sport event**:
 
-![An image of pass fields for a poster event.](/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-sports@2x.png)
+![An image of pass fields for a poster event.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-sports@2x.png)
 
 **Live performance event**:
 
-![An image showing possible semantic tags for a live performance event.](/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-live-music@2x.png)
+![An image showing possible semantic tags for a live performance event.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-live-music@2x.png)
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. An event pass can display logo, strip, background, or thumbnail images. You can also include an extra row of up to four auxiliary fields. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 
-#### Add the Required Semantic Tags
+#### Add the required semantic tags
 
-Semantic tags are objects that contain machine-readable metadata the system uses to offer a pass and suggest related actions. For the poster event ticket style, the following list of semantic tags is required for the front of the pass and essential designs. If you omit any of these tags, your pass falls back to the legacy event pass style. For more information on semantic tags, see [`SemanticTags`](semantictags.md).
+Semantic tags are objects that contain machine-readable metadata the system uses to offer a pass and suggest related actions. For the poster event ticket style, the following list of semantic tags is required for the front of the pass and essential designs. If you omit any of these tags, your pass falls back to the legacy event pass style. For more information on semantic tags, see [`SemanticTags`](./semantictags.md).
 
 | Required tags for all event passes | Description |
 | --- | --- |
@@ -295,13 +300,13 @@ The following examples show a `pass.json` file with the required semantic tags f
 
 ```
 
-#### Include Recommended and Optional Semantic Tags
+#### Include recommended and optional semantic tags
 
 Using recommended and optional semantic tags can enhance someone’s event pass experience in Wallet. The event guide provides access to information like the venue map and weather forecast, and to quick actions like checking a baggage policy and ordering food. You can display a minimum of one and up to four quick action buttons.
 
-![An illustration showing a poster event guide for a live performance. The event guide displays a map of the venue, the time the doors open, and entrance information.](/images/com.apple.walletpasses/poster-event-guide@2x.png)
+![An illustration showing a poster event guide for a live performance. The event guide displays a map of the venue, the time the doors open, and entrance information.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/poster-event-guide@2x.png)
 
-For design guidance, see Human Interface Guidelines > Wallet > Passes > [`Event tickets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/wallet#Event-tickets).
+For design guidance, see Human Interface Guidelines > Wallet > Passes > [Event tickets](https://developer.apple.com/design/human-interface-guidelines/wallet#Event-tickets).
 
 The following list of semantic tags are optional, but recommended for optimal pass design:
 
@@ -335,9 +340,9 @@ The following semantic tags are optional:
 | --- | --- |
 | `artistIDs` | An array of the Apple Music persistent ID for each artist performing at the event, in decreasing order of significance. Use this key for any type of event ticket. |
 
-#### Populate Multiday Events
+#### Populate multiday events
 
-Use [`Pass.RelevantDates`](pass/relevantdates-data.dictionary.md) to provide a list of date ranges for events that are more than one day like multiday festivals or season tickets. The following code shows an example `relevantDates` object for a multi day event.
+Use [`Pass.RelevantDates`](./pass/relevantdates-data.dictionary.md) to provide a list of date ranges for events that are more than one day like multiday festivals or season tickets. The following code shows an example `relevantDates` object for a multi day event.
 
 ```json
 "relevantDates": [
@@ -351,11 +356,11 @@ Use [`Pass.RelevantDates`](pass/relevantdates-data.dictionary.md) to provide a l
 ]
 ```
 
-#### Ensure Backward Compatibility
+#### Ensure backward compatibility
 
-To ensure your pass is backward compatible, continue to provide the [`PassFields.PrimaryFields`](passfields/primaryfields-data.dictionary.md), [`PassFields.SecondaryFields`](passfields/secondaryfields-data.dictionary.md), and [`PassFields.AuxiliaryFields`](passfields/auxiliaryfields-data.dictionary.md) so the system presents the legacy event pass style, if necessary. Poster event tickets add keys and assets to the existing `PKPass` bundle that legacy event passes use. By building on the legacy pass bundle, Wallet automatically generates the appropriate device experience for iOS and watchOS.
+To ensure your pass is backward compatible, continue to provide the [`PassFields.PrimaryFields`](./passfields/primaryfields-data.dictionary.md), [`PassFields.SecondaryFields`](./passfields/secondaryfields-data.dictionary.md), and [`PassFields.AuxiliaryFields`](./passfields/auxiliaryfields-data.dictionary.md) so the system presents the legacy event pass style, if necessary. Poster event tickets add keys and assets to the existing `PKPass` bundle that legacy event passes use. By building on the legacy pass bundle, Wallet automatically generates the appropriate device experience for iOS and watchOS.
 
-| ![An image showing a non-poster event pass.](/images/com.apple.walletpasses/pass-fields-layout-event-ticket@2x.png) | ![An image of pass fields for a poster event.](/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-sports@2x.png) |
+| ![An image showing a non-poster event pass.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-event-ticket@2x.png) | ![An image of pass fields for a poster event.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-sports@2x.png) |
 | --- | --- |
 | Pass fields for a legacy event pass. | Pass fields for a poster event pass. |
 
@@ -367,37 +372,38 @@ When someone adds a pass to a device, that pass automatically syncs to all devic
 
 If someone adds a multiday event pass to an unsupported device and syncs it to a supported device with iOS 26 or later or watchOS 26 or later, Wallet displays the poster event ticket pass information after you meet the minimum requirements by setting the top-level style dictionary and adding the required semantic tags. If you don’t meet the requirements, Wallet displays a legacy event ticket pass.
 
-#### Provide Scannable Codes
+#### Provide scannable codes
 
 Passes can work with Near Field Communication (NFC) readers and barcodes. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
 Alternatively, passes can use scannable barcodes to convey information. Wallet supports QR, PDF417, Aztec, Code128, Code 39, Codabar, EAN-13, and Interleaved 2 of 5 (ITF) barcode formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
 
-For more information on barcodes, see [`Pass.Barcodes`](pass/barcodes-data.dictionary.md) and the [`Add to Apple Wallet Guidelines`](https://developer.apple.comhttps://developer.apple.com/wallet/add-to-apple-wallet-guidelines/).
+For more information on barcodes, see [`Pass.Barcodes`](./pass/barcodes-data.dictionary.md) and the [Add to Apple Wallet Guidelines](https://developer.apple.com/wallet/add-to-apple-wallet-guidelines/).
 
-For design guidance about event passes, see Human Interface Guidelines > Wallet > Passes > [`Event tickets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/wallet#Event-tickets).
+For design guidance about event passes, see Human Interface Guidelines > Wallet > Passes > [Event tickets](https://developer.apple.com/design/human-interface-guidelines/wallet#Event-tickets).
 
-#### Debug the Pass
+#### Debug the pass
 
 If the pass doesn’t display and add to Wallet, check the logs for a description of what went wrong. If you’re using Simulator to debug, you can drag your `.pkpass` file into the Simulator, then use the Console app on your Mac to view the Simulator device logs.
 
-When testing on a device, errors are logged to the device’s console, which you can view from the Xcode organizer window. You can filter the logs by using your pass type ID or serial number to limit the device log output to a specific pass instance. See [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs) for information on accessing a device’s console log, as well as downloading and installing the Wallet profile.
+When testing on a device, errors are logged to the device’s console, which you can view from the Xcode organizer window. You can filter the logs by using your pass type ID or serial number to limit the device log output to a specific pass instance. See [Acquiring crash reports and diagnostic logs](../Xcode/acquiring-crash-reports-and-diagnostic-logs.md) for information on accessing a device’s console log, as well as downloading and installing the Wallet profile.
 
-Common errors include malformed JSON files, misspelled keys or values, pass type identifiers that don’t match your certificate, and signatures that omit the Apple Worldwide Developer Relations Intermediate Certificate. For more information on common issues with pass creation, see [`Common Problems`](building-a-pass#Common-Problems.md).
+Common errors include malformed JSON files, misspelled keys or values, pass type identifiers that don’t match your certificate, and signatures that omit the Apple Worldwide Developer Relations Intermediate Certificate. For more information on common issues with pass creation, see [Common Problems](./building-a-pass.md#Common-Problems).
 
-For design guidance see, HIG > Wallet > Passes > [`Event tickets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/wallet#Event-tickets).
+For design guidance see, HIG > Wallet > Passes > [Event Tickets](https://developer.apple.com/design/human-interface-guidelines/wallet#Event-tickets).
 
 ## See Also
 
-- [object Pass.EventTicket](pass/eventticket-data.dictionary.md)
+### Event passes
+- [object Pass.EventTicket](./pass/eventticket-data.dictionary.md)
   An object that represents the groups of fields that display the information for an event ticket.
-- [object SemanticTags](semantictags.md)
+- [object SemanticTags](./semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](./semantictagtype.md)
   A compilation of data object types for semantic tags.
-- [object UpcomingPassInformationEntry](upcomingpassinformationentry.md)
+- [object UpcomingPassInformationEntry](./upcomingpassinformationentry.md)
   An object that represents the ordered list of all upcoming pass information entries.
-- [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
+- [object UpcomingPassInformationEntryType](./upcomingpassinformationentrytype.md)
   An object that represents a upcoming pass information entry for an specific upcoming event.
 
 

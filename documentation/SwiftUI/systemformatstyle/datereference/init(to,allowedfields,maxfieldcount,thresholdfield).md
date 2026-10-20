@@ -1,7 +1,8 @@
 # init(to:allowedFields:maxFieldCount:thresholdField:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a format style that refers to a comparison date using natural language.
 

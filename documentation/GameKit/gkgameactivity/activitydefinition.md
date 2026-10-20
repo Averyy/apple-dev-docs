@@ -1,7 +1,8 @@
 # activityDefinition
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The activity definition that this activity instance is based on.
 
@@ -17,6 +18,10 @@ The activity definition that this activity instance is based on.
 
 ```swift
 var activityDefinition: GKGameActivityDefinition { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) GKGameActivityDefinition * activityDefinition;
 ```
 
 

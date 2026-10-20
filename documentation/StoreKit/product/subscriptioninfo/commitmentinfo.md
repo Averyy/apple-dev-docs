@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.CommitmentInfo
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -21,17 +22,17 @@ struct CommitmentInfo
 ## Topics
 
 ### Instance Properties - generated
-- [let displayPrice: String](product/subscriptioninfo/commitmentinfo/displayprice.md)
-- [let period: SubscriptionPeriod](product/subscriptioninfo/commitmentinfo/period.md)
-- [let price: Decimal](product/subscriptioninfo/commitmentinfo/price.md)
+- [let displayPrice: String](./commitmentinfo/displayprice.md)
+- [let period: SubscriptionPeriod](./commitmentinfo/period.md)
+- [let price: Decimal](./commitmentinfo/price.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

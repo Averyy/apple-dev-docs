@@ -1,7 +1,8 @@
 # kIOUSBEndpointDirectionIn
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Data flows from the device into the driver.
 
@@ -10,15 +11,16 @@ Data flows from the device into the driver.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointDirectionIn
 ```
 
 ## See Also
 
-- [kIOUSBEndpointDirectionOut](tiousbendpointdirection/kiousbendpointdirectionout.md)
+### Getting the Endpoint Direction
+- [kIOUSBEndpointDirectionOut](./kiousbendpointdirectionout.md)
   Data flows from the driver out to the device.
-- [kIOUSBEndpointDirectionUnknown](tiousbendpointdirection/kiousbendpointdirectionunknown.md)
+- [kIOUSBEndpointDirectionUnknown](./kiousbendpointdirectionunknown.md)
   The transfer direction is unknown.
 
 

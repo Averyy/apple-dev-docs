@@ -1,7 +1,8 @@
 # replaceAdjacencies(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the adjacency buffer using the given closure.
 
@@ -25,7 +26,7 @@ The value returned by `body`.
 
 After the closure returns, the framework validates every entry against the triangle count. An out-of-range entry causes a throw.
 
-> **Note**: If any entry is ≥ `renormalizing.indexCount / 3`.
+> **Throws**: If any entry is ≥ `renormalizing.indexCount / 3`.
 
 ## Parameters
 

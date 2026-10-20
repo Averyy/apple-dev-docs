@@ -1,7 +1,8 @@
 # NSRemindersFullAccessUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to read and write their reminders data.
 
@@ -13,9 +14,10 @@ A message that tells people why the app is requesting access to read and write t
 - visionOS 1.0+
 - watchOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSRemindersFullAccessUsageDescription` (Privacy - Reminders Full Access Usage Description)
+- **Type**: string
 
 #### Discussion
 
@@ -23,11 +25,12 @@ A message that tells people why the app is requesting access to read and write t
 
 ## See Also
 
-- [NSCalendarsFullAccessUsageDescription](information-property-list/nscalendarsfullaccessusagedescription.md)
+### Calendar and reminders
+- [NSCalendarsFullAccessUsageDescription](./nscalendarsfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their calendar data.
-- [NSCalendarsWriteOnlyAccessUsageDescription](information-property-list/nscalendarswriteonlyaccessusagedescription.md)
+- [NSCalendarsWriteOnlyAccessUsageDescription](./nscalendarswriteonlyaccessusagedescription.md)
   A message that tells people why the app is requesting access to create calendar events.
-- [Accessing the event store](../eventkit/accessing-the-event-store.md)
+- [Accessing the event store](../../EventKit/accessing-the-event-store.md)
   Request access to a person’s calendar data through the event store.
 
 

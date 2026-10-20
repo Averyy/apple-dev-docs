@@ -1,7 +1,8 @@
 # MTLTensor
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A resource representing a multi-dimensional array that you can use with machine learning workloads.
 
@@ -19,64 +20,69 @@ A resource representing a multi-dimensional array that you can use with machine 
 protocol MTLTensor : MTLResource
 ```
 
+```objc
+@protocol MTLTensor <MTLResource>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var auxiliaryPlanes: [any MTLTensorAuxiliaryPlane]](mtltensor/auxiliaryplanes.md)
+- [var auxiliaryPlanes: [any MTLTensorAuxiliaryPlane]](./mtltensor/auxiliaryplanes.md)
   The auxiliary planes of this tensor.
-- [var buffer: (any MTLBuffer)?](mtltensor/buffer.md)
+- [var buffer: (any MTLBuffer)?](./mtltensor/buffer.md)
   A buffer instance this tensor shares its storage with or `nil` if this tensor does not wrap an underlying buffer.
-- [var bufferOffset: Int](mtltensor/bufferoffset.md)
+- [var bufferOffset: Int](./mtltensor/bufferoffset.md)
   An offset, in bytes, into the buffer instance this tensor shares its storage with, or zero if this tensor does not wrap an underlying buffer.
-- [var dataType: MTLTensorDataType](mtltensor/datatype.md)
+- [var dataType: MTLTensorDataType](./mtltensor/datatype.md)
   The underlying data format of the data plane.
-- [var dimensions: MTLTensorExtents](mtltensor/dimensions.md)
+- [var dimensions: MTLTensorExtents](./mtltensor/dimensions.md)
   An array of sizes, in elements, one for each dimension of this tensor.
-- [var gpuResourceID: MTLResourceID](mtltensor/gpuresourceid.md)
+- [var gpuResourceID: MTLResourceID](./mtltensor/gpuresourceid.md)
   A handle that represents the GPU resource, which you can store in an argument buffer.
-- [var strides: MTLTensorExtents?](mtltensor/strides.md)
+- [var strides: MTLTensorExtents?](./mtltensor/strides.md)
   An array of strides, in elements, one for each dimension of this tensor, if applicable.
-- [var usage: MTLTensorUsage](mtltensor/usage.md)
+- [var usage: MTLTensorUsage](./mtltensor/usage.md)
   A set of contexts in which you can use this tensor.
 ### Instance Methods
-- [func getBytes(UnsafeMutableRawPointer, strides: MTLTensorExtents, sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents)](mtltensor/getbytes(_:strides:sliceorigin:slicedimensions:).md)
+- [func getBytes(UnsafeMutableRawPointer, strides: MTLTensorExtents, sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents)](./mtltensor/getbytes%28_,strides,sliceorigin,slicedimensions%29.md)
   Copies data from a slice of the data plane of this tensor into a pointer you provide.
-- [func getBytes(UnsafeMutableRawPointer, strides: MTLTensorExtents, sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, plane: MTLTensorPlaneType)](mtltensor/getbytes(_:strides:sliceorigin:slicedimensions:plane:).md)
+- [func getBytes(UnsafeMutableRawPointer, strides: MTLTensorExtents, sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, plane: MTLTensorPlaneType)](./mtltensor/getbytes%28_,strides,sliceorigin,slicedimensions,plane%29.md)
   Copies data from a slice of a plane of this tensor into a pointer you provide.
-- [func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, plane: MTLTensorPlaneType, withBytes: UnsafeRawPointer, strides: MTLTensorExtents)](mtltensor/replace(sliceorigin:slicedimensions:plane:withbytes:strides:).md)
+- [func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, plane: MTLTensorPlaneType, withBytes: UnsafeRawPointer, strides: MTLTensorExtents)](./mtltensor/replace%28sliceorigin,slicedimensions,plane,withbytes,strides%29.md)
   Replaces a slice of a plane of this tensor with data from a pointer you provide.
-- [func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, withBytes: UnsafeRawPointer, strides: MTLTensorExtents)](mtltensor/replace(sliceorigin:slicedimensions:withbytes:strides:).md)
+- [func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, withBytes: UnsafeRawPointer, strides: MTLTensorExtents)](./mtltensor/replace%28sliceorigin,slicedimensions,withbytes,strides%29.md)
   Replaces a slice of the data plane of this tensor with data from a pointer you provide.
 
 ## Relationships
 
 ### Inherits From
-- [MTLAllocation](mtlallocation.md)
-- [MTLResource](mtlresource.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [MTLAllocation](./mtlallocation.md)
+- [MTLResource](./mtlresource.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLTensorDescriptor](mtltensordescriptor.md)
+### Tensors
+- [class MTLTensorDescriptor](./mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
-- [class MTLTensorExtents](mtltensorextents.md)
+- [class MTLTensorExtents](./mtltensorextents.md)
   An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
-- [class MTLTensorReferenceType](mtltensorreferencetype.md)
+- [class MTLTensorReferenceType](./mtltensorreferencetype.md)
   An object that represents a tensor in the shading language in a struct or array.
-- [struct MTLTensorUsage](mtltensorusage.md)
+- [struct MTLTensorUsage](./mtltensorusage.md)
   The contexts in which you can use a tensor.
-- [let MTLTensorDomain: String](mtltensordomain.md)
+- [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
-- [protocol MTLTensorBinding](mtltensorbinding.md)
+- [protocol MTLTensorBinding](./mtltensorbinding.md)
   An object that represents a tensor bound to a graphics or compute function or a machine learning function.
-- [struct MTLTensorError](mtltensorerror-swift.struct.md)
-- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+- [struct MTLTensorError](./mtltensorerror-swift.struct.md)
+- [MTLTensorError.Code](./mtltensorerror-swift.struct/code.md)
   The error codes that Metal can raise when you create a tensor.
-- [enum MTLTensorDataType](mtltensordatatype.md)
+- [enum MTLTensorDataType](./mtltensordatatype.md)
   The possible data types for the elements of a tensor.
-- [let MTLTensorDomain: String](mtltensordomain.md)
+- [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
-- [var MTL_TENSOR_MAX_RANK: Int32](mtl_tensor_max_rank.md)
+- [var MTL_TENSOR_MAX_RANK: Int32](./mtl_tensor_max_rank.md)
 
 
 ---

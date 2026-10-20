@@ -1,7 +1,8 @@
 # errSecInvalidAttributePassphrase
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A passphrase attribute is not valid.
 
@@ -18,6 +19,10 @@ A passphrase attribute is not valid.
 
 ```swift
 var errSecInvalidAttributePassphrase: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributePassphrase
 ```
 
 

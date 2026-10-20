@@ -1,23 +1,30 @@
 # BNNSFilterCreateLayerReduction(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new reduction layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSFilterCreateLayerReduction(_ layer_params: UnsafePointer<BNNSLayerParametersReduction>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
+```
+
+```c
+BNNSFilterBNNSFilterCreateLayerReduction(const BNNSLayerParametersReduction *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -136,15 +143,16 @@ On return, destination data contains `[45.0]`.
 
 ## See Also
 
-- [class ReductionLayer](bnns/reductionlayer.md)
+### Reduction layers
+- [class ReductionLayer](./bnns/reductionlayer.md)
   A layer object that wraps a reduction filter and manages its deinitialization.
-- [static func applyReduction(BNNS.ReductionFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](bnns/applyreduction(_:input:output:weights:filterparameters:).md)
+- [static func applyReduction(BNNS.ReductionFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](./bnns/applyreduction%28_,input,output,weights,filterparameters%29.md)
   Applies the specified reduction function.
-- [struct BNNSReduceFunction](bnnsreducefunction.md)
+- [struct BNNSReduceFunction](./bnnsreducefunction.md)
   Constants that describe reduction functions.
-- [struct BNNSLayerParametersReduction](bnnslayerparametersreduction.md)
+- [struct BNNSLayerParametersReduction](./bnnslayerparametersreduction.md)
   A set of parameters that define a reduction layer.
-- [func BNNSDirectApplyReduction(UnsafePointer<BNNSLayerParametersReduction>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsdirectapplyreduction(_:_:).md)
+- [func BNNSDirectApplyReduction(UnsafePointer<BNNSLayerParametersReduction>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnsdirectapplyreduction%28_,_%29.md)
   Applies a reduction operation directly to an input tensor.
 
 

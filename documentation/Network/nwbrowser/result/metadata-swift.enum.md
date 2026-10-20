@@ -1,7 +1,8 @@
 # NWBrowser.Result.Metadata
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values associated with discovered services, such as TXT records.
 
@@ -23,28 +24,29 @@ enum Metadata
 ## Topics
 
 ### Metadata Types
-- [NWBrowser.Result.Metadata.bonjour(_:)](nwbrowser/result/metadata-swift.enum/bonjour(_:).md)
+- [NWBrowser.Result.Metadata.bonjour(_:)](./metadata-swift.enum/bonjour%28_%29.md)
   A TXT record associated with a discovered service.
-- [NWBrowser.Result.Metadata.none](nwbrowser/result/metadata-swift.enum/none.md)
+- [NWBrowser.Result.Metadata.none](./metadata-swift.enum/none.md)
   A value indicating that no associated data was discovered on a service.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let endpoint: NWEndpoint](nwbrowser/result/endpoint.md)
+### Evaluating Browser Results
+- [let endpoint: NWEndpoint](./endpoint.md)
   The discovered service endpoint.
-- [let interfaces: [NWInterface]](nwbrowser/result/interfaces.md)
+- [let interfaces: [NWInterface]](./interfaces.md)
   The list of interfaces on which the service was discovered.
-- [let metadata: NWBrowser.Result.Metadata](nwbrowser/result/metadata-swift.property.md)
+- [let metadata: NWBrowser.Result.Metadata](./metadata-swift.property.md)
   The metadata associated with the discovered service, such as the TXT record.
-- [struct NWTXTRecord](nwtxtrecord.md)
+- [struct NWTXTRecord](../../nwtxtrecord.md)
   A dictionary representing a TXT record in a DNS packet.
 
 

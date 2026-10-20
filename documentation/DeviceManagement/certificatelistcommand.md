@@ -1,7 +1,8 @@
 # CertificateListCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of installed certificates on a device.
 
@@ -16,14 +17,14 @@ The command to get a list of installed certificates on a device.
 
 ## Declaration
 
-```swift
+```
 object CertificateListCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object CertificateListCommand.Command](certificatelistcommand/command-data.dictionary.md)
+- [object CertificateListCommand.Command](./certificatelistcommand/command-data.dictionary.md)
   The command to get a list of installed certificates on a device.
 
 ## Properties
@@ -33,7 +34,8 @@ object CertificateListCommand
 
 ## See Also
 
-- [object CertificateListResponse](certificatelistresponse.md)
+### Commands and responses
+- [object CertificateListResponse](./certificatelistresponse.md)
   A response from the device after it processes the command to get a list of installed certificates on a device.
 
 

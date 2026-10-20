@@ -1,6 +1,8 @@
 # Playing Media in a Client-Server App
 
-**Framework**: TVMLKit JS
+**Framework**: TVMLKit JS  
+**Role**: Sample Code  
+**Download**: [PlayingMediaInAClientServerApp.zip](https://docs-assets.developer.apple.com/published/b8eeccd4e1/PlayingMediaInAClientServerApp.zip)
 
 Play media items in a client-server app using the built-in media player for TVMLKit JS.
 
@@ -14,15 +16,16 @@ The TVML frameworks provide several built-in ways to play media items. After loa
 
 ## See Also
 
-- [Player](player.md)
+### Media Playback
+- [Player](./player.md)
   A media player that displays the UI for playing video and audio in an Apple TV client-server app.
-- [Playlist](playlist.md)
+- [Playlist](./playlist.md)
   An array of media items to be played in an Apple TV client-server app.
-- [MediaItem](mediaitem.md)
+- [MediaItem](./mediaitem.md)
   A single audio or video item.
-- [Slideshow](slideshow.md)
+- [Slideshow](./slideshow.md)
   An object used to display images on Apple TV in a slideshow format.
-- [Browser](browser.md)
+- [Browser](./browser.md)
   An object used to configure and present a browsable full screen view.
 
 

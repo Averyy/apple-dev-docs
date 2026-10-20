@@ -1,14 +1,15 @@
 # STACKSHOT_INCLUDE_DRIVER_THREADS_IN_KERNEL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_INCLUDE_DRIVER_THREADS_IN_KERNEL
 ```
 

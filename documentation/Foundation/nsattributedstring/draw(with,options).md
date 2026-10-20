@@ -1,17 +1,24 @@
 # draw(with:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the attributed string with the specified options within the specified rectangle in the current graphics context.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`draw(with:options:context:)`](./draw%28with,options,context%29.md) instead.
 
 ## Declaration
 
 ```swift
 func draw(with rect: NSRect, options: NSString.DrawingOptions = [])
+```
+
+```objc
+- (void) drawWithRect:(NSRect) rect options:(NSStringDrawingOptions) options;
 ```
 
 #### Discussion
@@ -23,13 +30,14 @@ You should only invoke this method when there is a current graphics context.
 ## Parameters
 
 - `rect`: The rectangle specifies the rendering origin in the current graphics context.
-- `options`: The string drawing options. See [`NSStringDrawingOptions`](https://developer.apple.com/documentation/uikit/nsstringdrawingoptions) for the available options.
+- `options`: The string drawing options. See [`NSStringDrawingOptions`](../../UIKit/nsstringdrawingoptions.md) for the available options.
 
 ## See Also
 
-- [func url(at: Int, effectiveRange: NSRangePointer) -> URL?](nsattributedstring/url(at:effectiverange:).md)
+### Deprecated Instance Methods
+- [func url(at: Int, effectiveRange: NSRangePointer) -> URL?](./url%28at,effectiverange%29.md)
   Returns a URL, either from a link attribute or from text at the specified location that appears to be a URL string, for use in automatic link detection.
-- [func boundingRect(with: NSSize, options: NSString.DrawingOptions) -> NSRect](nsattributedstring/boundingrect(with:options:).md)
+- [func boundingRect(with: NSSize, options: NSString.DrawingOptions) -> NSRect](./boundingrect%28with,options%29.md)
   Calculates and returns a bounding rectangle for the attributed string using the options specified within the specified rectangle in the current graphics context.
 
 

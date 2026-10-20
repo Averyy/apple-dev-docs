@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.storeAndForwardDeletionTokenExpired
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The token provided is expired, refresh it and try again.
 

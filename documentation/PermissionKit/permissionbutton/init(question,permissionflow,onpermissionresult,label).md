@@ -1,7 +1,8 @@
 # init(question:permissionFlow:onPermissionResult:label:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button that requests permission from parents or guardians, presenting a specific permission flow and reporting the outcome to a completion handler.
 

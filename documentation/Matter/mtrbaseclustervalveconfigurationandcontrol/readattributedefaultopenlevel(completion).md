@@ -1,7 +1,8 @@
 # readAttributeDefaultOpenLevel(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeDefaultOpenLevel(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeDefaultOpenLevel() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeDefaultOpenLevelWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

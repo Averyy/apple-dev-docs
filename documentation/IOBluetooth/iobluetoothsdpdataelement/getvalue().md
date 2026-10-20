@@ -1,17 +1,22 @@
 # getValue()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object value of the data element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getValue() -> NSObject!
+```
+
+```objc
+- (NSObject *) getValue;
 ```
 
 #### Return Value

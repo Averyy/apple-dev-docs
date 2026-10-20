@@ -1,7 +1,8 @@
 # SubscriptionOfferViewButtonKind
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -17,17 +18,18 @@ struct SubscriptionOfferViewButtonKind
 ## Topics
 
 ### Type Properties
-- [static var detailLink: SubscriptionOfferViewButtonKind](subscriptionofferviewbuttonkind/detaillink.md)
+- [static var detailLink: SubscriptionOfferViewButtonKind](./subscriptionofferviewbuttonkind/detaillink.md)
 
 ## See Also
 
+### Configuring accessory buttons
 - [func storeButton(Visibility, for: StoreButtonKind...) -> some View
-](../swiftui/view/storebutton(_:for:).md)
+](../SwiftUI/view/storebutton%28_,for%29.md)
   Specifies the visibility of auxiliary buttons that store view and subscription store view instances may use.
 - [func subscriptionStoreSignInAction((() -> ())?) -> some View
-](../swiftui/view/subscriptionstoresigninaction(_:).md)
+](../SwiftUI/view/subscriptionstoresigninaction%28_%29.md)
   Adds an action to perform when a person uses the sign-in button on a subscription store view within a view.
-- [struct StoreButtonKind](storebuttonkind.md)
+- [struct StoreButtonKind](./storebuttonkind.md)
   A button to display in a store view or subscription store view.
 
 

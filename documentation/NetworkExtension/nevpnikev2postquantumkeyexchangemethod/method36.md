@@ -1,7 +1,8 @@
 # NEVPNIKEv2PostQuantumKeyExchangeMethod.method36
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Instructs the server to use the ML-KEM-768 key exchange method.
 
@@ -19,11 +20,16 @@ Instructs the server to use the ML-KEM-768 key exchange method.
 case method36
 ```
 
+```c
+NEVPNIKEv2PostQuantumKeyExchangeMethod36
+```
+
 ## See Also
 
-- [NEVPNIKEv2PostQuantumKeyExchangeMethod.method37](nevpnikev2postquantumkeyexchangemethod/method37.md)
+### Key exchange methods
+- [NEVPNIKEv2PostQuantumKeyExchangeMethod.method37](./method37.md)
   Instructs the server to use the ML-KEM-1024 key exchange method.
-- [NEVPNIKEv2PostQuantumKeyExchangeMethod.methodNone](nevpnikev2postquantumkeyexchangemethod/methodnone.md)
+- [NEVPNIKEv2PostQuantumKeyExchangeMethod.methodNone](./methodnone.md)
   Instructs the server not to use a quantum-secure key exchange method.
 
 

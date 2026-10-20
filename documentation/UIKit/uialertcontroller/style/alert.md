@@ -1,7 +1,8 @@
 # UIAlertController.Style.alert
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An alert displayed modally for the app.
 
@@ -9,7 +10,7 @@ An alert displayed modally for the app.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ An alert displayed modally for the app.
 case alert
 ```
 
+```c
+UIAlertControllerStyleAlert
+```
+
 ## See Also
 
-- [UIAlertController.Style.actionSheet](uialertcontroller/style/actionsheet.md)
+### Constants
+- [UIAlertController.Style.actionSheet](./actionsheet.md)
   An action sheet displayed by the view controller that presented it.
 
 

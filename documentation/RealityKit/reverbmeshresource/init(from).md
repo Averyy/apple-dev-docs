@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reverb mesh resource from a mesh resource.
 
@@ -18,6 +19,12 @@ Creates a reverb mesh resource from a mesh resource.
 ```swift
 @MainActor
 convenience init(from mesh: MeshResource) throws
+```
+
+**Other overloads**:
+
+```swift
+convenience init(from descriptors: [MeshDescriptor]) throws
 ```
 
 #### Discussion

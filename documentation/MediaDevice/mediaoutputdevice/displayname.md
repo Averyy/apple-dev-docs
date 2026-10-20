@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A display name for the device, shown in user interfaces.
 

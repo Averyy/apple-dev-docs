@@ -1,14 +1,15 @@
 # MBUF_TC_BE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 MBUF_TC_BE = 0
 ```
 

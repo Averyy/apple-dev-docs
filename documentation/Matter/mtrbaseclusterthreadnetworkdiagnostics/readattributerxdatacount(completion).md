@@ -1,7 +1,8 @@
 # readAttributeRxDataCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRxDataCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRxDataCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRxDataCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

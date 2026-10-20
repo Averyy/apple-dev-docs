@@ -1,7 +1,8 @@
 # getRetainCount
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+uint32_t getRetainCount(void);
+```
+
+*macOS*
+
+```cpp
 virtual int getRetainCount(void);
 ```
 

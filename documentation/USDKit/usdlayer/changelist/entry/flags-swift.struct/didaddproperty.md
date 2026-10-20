@@ -1,7 +1,8 @@
 # didAddProperty
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a property was added.
 

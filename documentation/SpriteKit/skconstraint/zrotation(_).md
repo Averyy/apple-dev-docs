@@ -1,7 +1,8 @@
 # zRotation(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a constraint that limits the orientation of a node.
 
@@ -10,7 +11,7 @@ Creates a constraint that limits the orientation of a node.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a constraint that limits the orientation of a node.
 class func zRotation(_ zRange: SKRange) -> Self
 ```
 
+```objc
++ (instancetype) zRotation:(SKRange *) zRange;
+```
+
 ## Mentions
 
-- [Creating a Look-At Constraint](creating-a-look-at-constraint.md)
+- [Creating a Look-At Constraint](../creating-a-look-at-constraint.md)
 
 #### Return Value
 
@@ -30,21 +35,22 @@ A new constraint.
 
 #### Discussion
 
-Each time when constraints are applied, the node’s [`zRotation`](sknode/zrotation.md) property is clamped so that it is within the specified range.
+Each time when constraints are applied, the node’s [`zRotation`](../sknode/zrotation.md) property is clamped so that it is within the specified range.
 
 ## Parameters
 
-- `zRange`: A range value that specifies the minimum and maximum values of the node’s [`zRotation`](sknode/zrotation.md) property.
+- `zRange`: A range value that specifies the minimum and maximum values of the node’s [`zRotation`](../sknode/zrotation.md) property.
 
 ## See Also
 
-- [Creating a Look-At Constraint](creating-a-look-at-constraint.md)
+### Creating Orientation Constraints
+- [Creating a Look-At Constraint](../creating-a-look-at-constraint.md)
   Make a node automatically rotate itself based on the changing position of another node, by using orientation constraints.
-- [class func orient(to: SKNode, offset: SKRange) -> Self](skconstraint/orient(to:offset:)-1h1tw.md)
+- [class func orient(to: SKNode, offset: SKRange) -> Self](./orient%28to,offset%29-1h1tw.md)
   Creates a constraint that forces a node to rotate to face another node.
-- [class func orient(to: CGPoint, offset: SKRange) -> Self](skconstraint/orient(to:offset:)-9lq3h.md)
+- [class func orient(to: CGPoint, offset: SKRange) -> Self](./orient%28to,offset%29-9lq3h.md)
   Creates a constraint that forces a node to rotate to face a fixed point.
-- [class func orient(to: CGPoint, in: SKNode, offset: SKRange) -> Self](skconstraint/orient(to:in:offset:).md)
+- [class func orient(to: CGPoint, in: SKNode, offset: SKRange) -> Self](./orient%28to,in,offset%29.md)
   Creates a constraint that forces a node to rotate to face a point in another node’s coordinate system.
 
 

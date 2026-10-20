@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An input depth texture you set for the scaler that supports the correct color texture usage options.
@@ -18,6 +19,10 @@ An input depth texture you set for the scaler that supports the correct color te
 
 ```swift
 var depthTexture: (any MTLTexture)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> depthTexture;
 ```
 
 

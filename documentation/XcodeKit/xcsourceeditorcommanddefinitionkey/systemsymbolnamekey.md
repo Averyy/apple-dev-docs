@@ -1,7 +1,8 @@
 # systemSymbolNameKey
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An SF Symbol from the system associated with the command.
 
@@ -12,6 +13,10 @@ An SF Symbol from the system associated with the command.
 
 ```swift
 static let systemSymbolNameKey: XCSourceEditorCommandDefinitionKey
+```
+
+```c
+extern XCSourceEditorCommandDefinitionKey const XCSourceEditorCommandSystemSymbolNameKey;
 ```
 
 

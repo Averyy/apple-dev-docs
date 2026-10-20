@@ -1,7 +1,8 @@
 # IOUSBHostObject
 
 **Framework**: IOUSBHost  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This class provides basic functionality for sending device requests and retrieving descriptors.
 
@@ -15,71 +16,76 @@ This class provides basic functionality for sending device requests and retrievi
 class IOUSBHostObject
 ```
 
+```objc
+@interface IOUSBHostObject : NSObject
+```
+
 ## Topics
 
 ### Managing the Object Life Cycle
-- [struct IOUSBHostObjectInitOptions](iousbhostobjectinitoptions.md)
+- [struct IOUSBHostObjectInitOptions](./iousbhostobjectinitoptions.md)
   Options for initializing the host object.
-- [typealias IOUSBHostInterestHandler](iousbhostinteresthandler.md)
+- [typealias IOUSBHostInterestHandler](./iousbhostinteresthandler.md)
   The callback that handles underlying service-state changes.
-- [var ioService: io_service_t](iousbhostobject/ioservice.md)
+- [var ioService: io_service_t](./iousbhostobject/ioservice.md)
   A reference to the kernel object.
-- [var queue: dispatch_queue_t](iousbhostobject/queue.md)
+- [var queue: dispatch_queue_t](./iousbhostobject/queue.md)
   The queue for servicing input/output requests.
-- [func destroy()](iousbhostobject/destroy.md)
+- [func destroy()](./iousbhostobject/destroy%28%29.md)
   Removes underlying allocations and connections from the USB host object.
 ### Retrieving Base Class Descriptors
-- [Parsing USB Descriptors](parsing-usb-descriptors.md)
+- [Parsing USB Descriptors](./parsing-usb-descriptors.md)
   Extract information from various USB descriptors using helper methods.
 ### Creating I/O Buffers
-- [func ioData(withCapacity: Int) throws -> NSMutableData](iousbhostobject/iodata(withcapacity:).md)
+- [func ioData(withCapacity: Int) throws -> NSMutableData](./iousbhostobject/iodata%28withcapacity%29.md)
   Allocates a buffer for input/output requests.
 ### Sending Device Requests
-- [func IOUSBHostDeviceRequestType(tIOUSBDeviceRequestDirectionValue, tIOUSBDeviceRequestTypeValue, tIOUSBDeviceRequestRecipientValue) -> UInt8](iousbhostdevicerequesttype(_:_:_:).md)
+- [func IOUSBHostDeviceRequestType(tIOUSBDeviceRequestDirectionValue, tIOUSBDeviceRequestTypeValue, tIOUSBDeviceRequestRecipientValue) -> UInt8](./iousbhostdevicerequesttype%28_,_,_%29.md)
   Creates the request type field of a device request.
-- [let IOUSBHostDefaultControlCompletionTimeout: TimeInterval](iousbhostdefaultcontrolcompletiontimeout.md)
+- [let IOUSBHostDefaultControlCompletionTimeout: TimeInterval](./iousbhostdefaultcontrolcompletiontimeout.md)
   The default completion timeout for input/output requests.
 ### Enqueueing Device Requests
-- [typealias IOUSBHostCompletionHandler](iousbhostcompletionhandler.md)
+- [typealias IOUSBHostCompletionHandler](./iousbhostcompletionhandler.md)
   The completion handler for asynchronous control, bulk, and interrupt transfers.
 ### Aborting Device Requests
-- [enum IOUSBHostAbortOption](iousbhostabortoption.md)
+- [enum IOUSBHostAbortOption](./iousbhostabortoption.md)
   Options for aborting pending input/output requests.
 ### Getting Host Information
-- [var deviceAddress: Int](iousbhostobject/deviceaddress.md)
+- [var deviceAddress: Int](./iousbhostobject/deviceaddress.md)
   The device’s bus address.
 ### Instance Properties
-- [var capabilityDescriptors: UnsafePointer<IOUSBBOSDescriptor>?](iousbhostobject/capabilitydescriptors.md)
-- [var deviceDescriptor: UnsafePointer<IOUSBDeviceDescriptor>?](iousbhostobject/devicedescriptor.md)
+- [var capabilityDescriptors: UnsafePointer<IOUSBBOSDescriptor>?](./iousbhostobject/capabilitydescriptors.md)
+- [var deviceDescriptor: UnsafePointer<IOUSBDeviceDescriptor>?](./iousbhostobject/devicedescriptor.md)
 ### Instance Methods
-- [func configurationDescriptor(with: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>](iousbhostobject/configurationdescriptor(with:).md)
-- [func configurationDescriptor(withConfigurationValue: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>](iousbhostobject/configurationdescriptor(withconfigurationvalue:).md)
-- [func data(withCapacity: Int, options: IOUSBHostObjectDataOptions) throws -> NSMutableData](iousbhostobject/data(withcapacity:options:).md)
-- [func destroy(options: IOUSBHostObjectDestroyOptions)](iousbhostobject/destroy(options:).md)
+- [func configurationDescriptor(with: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>](./iousbhostobject/configurationdescriptor%28with%29.md)
+- [func configurationDescriptor(withConfigurationValue: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>](./iousbhostobject/configurationdescriptor%28withconfigurationvalue%29.md)
+- [func data(withCapacity: Int, options: IOUSBHostObjectDataOptions) throws -> NSMutableData](./iousbhostobject/data%28withcapacity,options%29.md)
+- [func destroy(options: IOUSBHostObjectDestroyOptions)](./iousbhostobject/destroy%28options%29.md)
 ### Related Documentation
-- [class IOUSBHostDevice](iousbhostdevice.md)
+- [class IOUSBHostDevice](./iousbhostdevice.md)
   The class that claims and configures devices, retrieves descriptors, and sends device requests.
-- [class IOUSBHostInterface](iousbhostinterface.md)
+- [class IOUSBHostInterface](./iousbhostinterface.md)
   The class for accessing USB-related services.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [IOUSBHostDevice](iousbhostdevice.md)
-- [IOUSBHostInterface](iousbhostinterface.md)
+- [IOUSBHostDevice](./iousbhostdevice.md)
+- [IOUSBHostInterface](./iousbhostinterface.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOUSBHostIOSource](iousbhostiosource.md)
+### Base Classes
+- [class IOUSBHostIOSource](./iousbhostiosource.md)
   This class provides basic functionality for deriving pipe and stream classes.
 
 

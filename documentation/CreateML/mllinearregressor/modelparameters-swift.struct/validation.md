@@ -1,7 +1,8 @@
 # validation
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Validation data.
 
@@ -25,14 +26,15 @@ The default is `.split(strategy: .automatic)`, which automatically generates the
 
 ## See Also
 
-- [var validationData: MLDataTable?](mllinearregressor/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var maxIterations: Int](mllinearregressor/modelparameters-swift.struct/maxiterations.md)
-- [var l1Penalty: Double](mllinearregressor/modelparameters-swift.struct/l1penalty.md)
-- [var l2Penalty: Double](mllinearregressor/modelparameters-swift.struct/l2penalty.md)
-- [var stepSize: Double](mllinearregressor/modelparameters-swift.struct/stepsize.md)
-- [var convergenceThreshold: Double](mllinearregressor/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mllinearregressor/modelparameters-swift.struct/featurerescaling.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var l1Penalty: Double](./l1penalty.md)
+- [var l2Penalty: Double](./l2penalty.md)
+- [var stepSize: Double](./stepsize.md)
+- [var convergenceThreshold: Double](./convergencethreshold.md)
+- [var featureRescaling: Bool](./featurerescaling.md)
 
 
 ---

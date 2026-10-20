@@ -1,6 +1,7 @@
 # Music Haptics
 
-**Framework**: Media Accessibility
+**Framework**: Media Accessibility  
+**Role**: API Collection
 
 Play haptic tracks along with known music tracks.
 
@@ -12,34 +13,35 @@ Music Haptics is an accessibility feature that allows a person to indicate that 
 
 To support Music Haptics in your app:
 
-- Add the [`MusicHapticsSupported`](https://developer.apple.com/documentation/bundleresources/information-property-list/musichapticssupported) key to your app’s `Info.plist` and set its value to `YES`.
-- Check whether Music Haptics is on using [`isActive`](mamusichapticsmanager/isactive.md) on the [`shared`](mamusichapticsmanager/shared.md) instance of [`MAMusicHapticsManager`](mamusichapticsmanager.md).
-- Register for the [`activeStatusDidChangeNotification`](mamusichapticsmanager/activestatusdidchangenotification.md) notification to listen for changes in the Music Haptics setting.
-- Supply a known song’s International Standard Recording Code (ISRC) as part of the [`nowPlayingInfo`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter/nowplayinginfo) dictionary of [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter), using the key [`MPNowPlayingInfoPropertyInternationalStandardRecordingCode`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfopropertyinternationalstandardrecordingcode). For more information about becoming the Now Playing app, refer to [`Becoming a now playable app`](https://developer.apple.com/documentation/mediaplayer/becoming-a-now-playable-app).
+- Add the [`MusicHapticsSupported`](../BundleResources/information-property-list/musichapticssupported.md) key to your app’s `Info.plist` and set its value to `YES`.
+- Check whether Music Haptics is on using [`isActive`](./mamusichapticsmanager/isactive.md) on the [`shared`](./mamusichapticsmanager/shared.md) instance of [`MAMusicHapticsManager`](./mamusichapticsmanager.md).
+- Register for the [`activeStatusDidChangeNotification`](./mamusichapticsmanager/activestatusdidchangenotification.md) notification to listen for changes in the Music Haptics setting.
+- Supply a known song’s International Standard Recording Code (ISRC) as part of the [`nowPlayingInfo`](../MediaPlayer/mpnowplayinginfocenter/nowplayinginfo.md) dictionary of [`MPNowPlayingInfoCenter`](../MediaPlayer/mpnowplayinginfocenter.md), using the key [`MPNowPlayingInfoPropertyInternationalStandardRecordingCode`](../MediaPlayer/mpnowplayinginfopropertyinternationalstandardrecordingcode.md). For more information about becoming the Now Playing app, refer to [Becoming a now playable app](../MediaPlayer/becoming-a-now-playable-app.md).
 
-##### Indicate Haptic Playback Status
+##### Indicate haptic playback status
 
 To indicate the status of haptic playback for Music Haptics, you can use the following symbols:
 
 | Symbol name | Status | API |
 | --- | --- | --- |
-| `"apple.haptics.and.music.note"` | Active | [`isActive`](mamusichapticsmanager/isactive.md) is `true` |
-| `"apple.haptics.and.music.note.slash"` | Paused | [`isActive`](mamusichapticsmanager/isactive.md) is `false` |
-| `"apple.haptics.and.exclamationmark.triangle"` | Unavailable | [`checkHapticTrackAvailabilityForMedia(matchingCode:completionHandler:)`](mamusichapticsmanager/checkhaptictrackavailabilityformedia(matchingcode:completionhandler:).md) is `false` |
+| `"apple.haptics.and.music.note"` | Active | [`isActive`](./mamusichapticsmanager/isactive.md) is `true` |
+| `"apple.haptics.and.music.note.slash"` | Paused | [`isActive`](./mamusichapticsmanager/isactive.md) is `false` |
+| `"apple.haptics.and.exclamationmark.triangle"` | Unavailable | [`checkHapticTrackAvailabilityForMedia(matchingCode:completionHandler:)`](./mamusichapticsmanager/checkhaptictrackavailabilityformedia%28matchingcode,completionhandler%29.md) is `false` |
 
-For more details about using these symbols, refer to the [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/) app.
+For more details about using these symbols, refer to the [SF Symbols](https://developer.apple.com/sf-symbols/) app.
 
 ## Topics
 
 ### Music Haptics
-- [class MAMusicHapticsManager](mamusichapticsmanager.md)
+- [class MAMusicHapticsManager](./mamusichapticsmanager.md)
   A class that reports information about the Music Haptics feature.
 
 ## See Also
 
-- [Captions](captions.md)
+### Features
+- [Captions](./captions.md)
   Coordinate the presentation of closed-captioned data for your app’s media files.
-- [Flashing lights](flashing-lights.md)
+- [Flashing lights](./flashing-lights.md)
   Detect, mitigate, and inform people about flashing lights in media content.
 
 

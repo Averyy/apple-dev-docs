@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let transform: (Upstream.Output) -> Output?](publishers/compactmap/transform.md)
+### Inspecting publisher properties
+- [let transform: (Upstream.Output) -> Output?](./transform.md)
   A closure that receives values from the upstream publisher and returns optional values.
 
 

@@ -1,7 +1,8 @@
 # alphaValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The opacity of the view.
 
@@ -14,21 +15,26 @@ The opacity of the view.
 var alphaValue: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat alphaValue;
+```
+
 #### Discussion
 
-This property contains the [`opacity`](https://developer.apple.com/documentation/quartzcore/calayer/opacity) value from the view’s layer. The acceptable range of values for this property are between `0.0` (transparent) and `1.0` (opaque). The default value of this property is `1.0`.
+This property contains the [`opacity`](../../QuartzCore/calayer/opacity.md) value from the view’s layer. The acceptable range of values for this property are between `0.0` (transparent) and `1.0` (opaque). The default value of this property is `1.0`.
 
 ## See Also
 
-- [var frameCenterRotation: CGFloat](nsview/framecenterrotation.md)
+### Managing Layer-Related Properties
+- [var frameCenterRotation: CGFloat](./framecenterrotation.md)
   The rotation angle of the view around the center of its layer.
-- [var backgroundFilters: [CIFilter]](nsview/backgroundfilters.md)
+- [var backgroundFilters: [CIFilter]](./backgroundfilters.md)
   An array of Core Image filters to apply to the view’s background.
-- [var compositingFilter: CIFilter?](nsview/compositingfilter.md)
+- [var compositingFilter: CIFilter?](./compositingfilter.md)
   The Core Image filter used to composite the view’s contents with its background.
-- [var contentFilters: [CIFilter]](nsview/contentfilters.md)
+- [var contentFilters: [CIFilter]](./contentfilters.md)
   An array of Core Image filters to apply to the contents of the view and its sublayers.
-- [var shadow: NSShadow?](nsview/shadow.md)
+- [var shadow: NSShadow?](./shadow.md)
   The shadow displayed underneath the view.
 
 

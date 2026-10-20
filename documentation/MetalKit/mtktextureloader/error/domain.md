@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The error domain used by `MetalKit` when returning texture loading errors.
 
@@ -19,10 +20,15 @@ The error domain used by `MetalKit` when returning texture loading errors.
 static let domain: MTKTextureLoader.Error
 ```
 
+```c
+extern MTKTextureLoaderError const MTKTextureLoaderErrorDomain;
+```
+
 ## See Also
 
-- [static let key: MTKTextureLoader.Error](mtktextureloader/error/key.md)
-  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
+### Keys
+- [static let key: MTKTextureLoader.Error](./key.md)
+  The key used to retrieve an error string from an error object’s [`userInfo`](../../../Foundation/nserror/userinfo.md) dictionary.
 
 
 ---

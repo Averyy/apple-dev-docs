@@ -1,7 +1,8 @@
 # request()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asks the user for permission for the current app to access MusicKit.
 
@@ -22,9 +23,9 @@ static func request() async -> MusicAuthorization.Status
 
 #### Discussion
 
-Before using any other MusicKit API in your app, make sure the user grants your app access to their Apple Music data, You can do this either by comparing [`currentStatus`](musicauthorization/currentstatus.md) to [`MusicAuthorization.Status.authorized`](musicauthorization/status/authorized.md), or by simply calling [`request()`](musicauthorization/request().md) regardless of the current authorization status value. Calling [`request()`](musicauthorization/request().md) results in presenting a standard user consent dialog to the user when necessary.
+Before using any other MusicKit API in your app, make sure the user grants your app access to their Apple Music data, You can do this either by comparing [`currentStatus`](./currentstatus.md) to [`MusicAuthorization.Status.authorized`](./status/authorized.md), or by simply calling [`request()`](./request%28%29.md) regardless of the current authorization status value. Calling [`request()`](./request%28%29.md) results in presenting a standard user consent dialog to the user when necessary.
 
-Requesting authorization to use MusicKit requires the inclusion of a short description of the app’s reason for using MusicKit. You need to add this purpose string to the app’s `Info.plist` file using the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapplemusicusagedescription) key.
+Requesting authorization to use MusicKit requires the inclusion of a short description of the app’s reason for using MusicKit. You need to add this purpose string to the app’s `Info.plist` file using the [NSAppleMusicUsageDescription](../../BundleResources/information-property-list/nsapplemusicusagedescription.md) key.
 
 
 ---

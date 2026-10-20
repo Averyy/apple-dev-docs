@@ -1,26 +1,30 @@
 # DisplayPriority
 
 **Framework**: MapKit JS  
-**Kind**: var
+**Kind**: var  
+**Role**: Static Property
 
 A static property that allows you to access the available display priority enumeration values.
 
 **Availability**:
 - MapKit JS 5.0+ - Deprecated in 6.0
 
+> **Deprecated**: Please use mapkit.AnnotationDisplayPriority instead.
+
 ## Declaration
 
-```swift
+```
 static get DisplayPriority(): typeof AnnotationDisplayPriority;
 ```
 
 ## Mentions
 
-- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+- [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
 ## See Also
 
-- [CollisionMode](annotation/collisionmode-data.var.md)
+### Deprecated
+- [CollisionMode](./collisionmode-data.var.md)
   A static property that allows you to access the annotation’s collision mode enumeration values.
 
 

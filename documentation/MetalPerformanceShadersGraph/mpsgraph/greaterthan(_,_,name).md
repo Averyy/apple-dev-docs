@@ -1,7 +1,8 @@
 # greaterThan(_:_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks in an elementwise manner if the first input tensor is greater than the second.
 
@@ -17,6 +18,10 @@ Checks in an elementwise manner if the first input tensor is greater than the se
 
 ```swift
 func greaterThan(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) greaterThanWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

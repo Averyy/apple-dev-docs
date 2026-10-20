@@ -1,7 +1,8 @@
 # PHASE
 
 **Framework**: PHASE  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Create dynamic audio experiences in your game or app that react to events and cues in the environment.
 
@@ -17,9 +18,9 @@ Create dynamic audio experiences in your game or app that react to events and cu
 
 Use PHASE (Physical Audio Spatialization Engine) to provide complex, dynamic audio experiences in your games and apps. With PHASE, you can control sound layers and adjust audio parameters in real time. As you develop your app, dynamic integration with your app’s visual scene enables audio to react to logic and visual changes automatically. The framework supports various audio hardware, which enables your app to provide a consistent spatial audio experience across platforms and output devices like headphones and speakers.
 
-![Illustration of in-game scenes that demonstrate PHASE features. At left, a polygon contains a dragon with a callout that reads Volumetric sound source. A sound wave emits from the dragon to a hero. A tree structure extends outward from the dragon with a callout that reads Sound event hierarchy. The tree structure highlights a specific path from its root node to one of its leaf nodes. The leaf node contains a sound wave, which indicates a particular sound wave that emits from the dragon. At right, a dragon fireball collides with a rock. Sound waves emit outward from the fireball, except in the area behind the rock. A callout extends from the area that reads Geometric sound occlusion.](/images/com.apple.phase/media-3855995@2x.png)
+![Illustration of in-game scenes that demonstrate PHASE features. At left, a polygon contains a dragon with a callout that reads Volumetric sound source. A sound wave emits from the dragon to a hero. A tree structure extends outward from the dragon with a callout that reads Sound event hierarchy. The tree structure highlights a specific path from its root node to one of its leaf nodes. The leaf node contains a sound wave, which indicates a particular sound wave that emits from the dragon. At right, a dragon fireball collides with a rock. Sound waves emit outward from the fireball, except in the area behind the rock. A callout extends from the area that reads Geometric sound occlusion.](https://developer.apple.com/tutorials/images/com.apple.phase/media-3855995@2x.png)
 
-> **Note**:  If the audio in your game or app doesn’t incorporate environmental events or cues, you can use [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) or [`Core Audio`](https://developer.apple.com/documentation/coreaudio).
+> **Note**:  If the audio in your game or app doesn’t incorporate environmental events or cues, you can use [AVFoundation](../AVFoundation/AVFoundation.md) or [Core Audio](../CoreAudio/CoreAudio.md).
 
 ##### Integrate Audio with Visual Simulation
 
@@ -33,107 +34,107 @@ Apps and games that model a detailed environment involve substantial revision du
 ## Topics
 
 ### Essentials
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
   Position sound from a specific direction and automatically raise or lower volume based on the environment.
-- [Personalizing spatial audio in your app](personalizing-spatial-audio-in-your-app.md)
+- [Personalizing spatial audio in your app](./personalizing-spatial-audio-in-your-app.md)
   Enhance the realism of spatial audio output by tracking a person’s head movement and accounting for their personal spatial audio profile.
-- [PHASE updates](../updates/phase.md)
+- [PHASE updates](../Updates/phase.md)
   Learn about important changes to PHASE.
 ### Setup
-- [class PHASEEngine](phaseengine.md)
+- [class PHASEEngine](./phaseengine.md)
   An object that manages audio assets, controls playback, and configures environmental effects.
-- [PHASEEngine.UpdateMode](phaseengine/updatemode.md)
+- [PHASEEngine.UpdateMode](./phaseengine/updatemode.md)
   Modes that determine when the framework consumes API calls and updates internal state.
-- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+- [PHASEEngine.RenderingMode](./phaseengine/renderingmode.md)
   Modes that determine whether the system renders audio in process or out of process.
-- [class PHASEAssetRegistry](phaseassetregistry.md)
+- [class PHASEAssetRegistry](./phaseassetregistry.md)
   A central repository of audio assets.
-- [enum PHASENormalizationMode](phasenormalizationmode.md)
+- [enum PHASENormalizationMode](./phasenormalizationmode.md)
   Options that determine whether the framework adjusts a sound asset’s loudness for the user’s output device.
-- [enum PHASESpatializationMode](phasespatializationmode.md)
+- [enum PHASESpatializationMode](./phasespatializationmode.md)
   The manner in which PHASE outputs spatial audio.
-- [enum PHASEReverbPreset](phasereverbpreset.md)
+- [enum PHASEReverbPreset](./phasereverbpreset.md)
   The manner in which PHASE diffuses resonating sound.
-- [class PHASEMedium](phasemedium.md)
+- [class PHASEMedium](./phasemedium.md)
   A property or quality of the environment that affects how sound travels.
 ### Soundscape Creation
-- [class PHASESource](phasesource.md)
+- [class PHASESource](./phasesource.md)
   An object that plays audio from a 3D location and orientation in a scene.
-- [class PHASEListener](phaselistener.md)
+- [class PHASEListener](./phaselistener.md)
   A central point of reference that defines the location within the scene that’s most audible to the user.
-- [class PHASEOccluder](phaseoccluder.md)
+- [class PHASEOccluder](./phaseoccluder.md)
   An object with a shape and position that blocks audio from reaching the listener.
-- [class PHASEObject](phaseobject.md)
+- [class PHASEObject](./phaseobject.md)
   An object in the scene.
-- [class PHASEShape](phaseshape.md)
+- [class PHASEShape](./phaseshape.md)
   A collection of points that connect to form a 3D volume.
-- [PHASEShape.Element](phaseshape/element.md)
+- [PHASEShape.Element](./phaseshape/element.md)
   An object that describes the characteristics of a physical surface.
-- [class PHASEMaterial](phasematerial.md)
+- [class PHASEMaterial](./phasematerial.md)
   Surface characteristics that determine the acoustic properties of an object.
-- [enum PHASEMaterialPreset](phasematerialpreset.md)
+- [enum PHASEMaterialPreset](./phasematerialpreset.md)
   A collection of physical surfaces that each add a unique acoustic quality to your app’s audio.
-- [class PHASEMixerParameters](phasemixerparameters.md)
+- [class PHASEMixerParameters](./phasemixerparameters.md)
   An object that specifies a mixer for sound events and orients them in 3D space.
 ### Audio Selection and Playback
-- [class PHASESoundAsset](phasesoundasset.md)
+- [class PHASESoundAsset](./phasesoundasset.md)
   A sound resource stored in the asset registry.
-- [class PHASESoundEvent](phasesoundevent.md)
+- [class PHASESoundEvent](./phasesoundevent.md)
   An object that determines which audio to play.
-- [PHASESoundEvent.RenderingState](phasesoundevent/renderingstate-swift.enum.md)
+- [PHASESoundEvent.RenderingState](./phasesoundevent/renderingstate-swift.enum.md)
   The playback status of audio.
-- [class PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [class PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
   A base class for sound event nodes that connect to form a node hierarchy.
-- [class PHASESoundEventNodeAsset](phasesoundeventnodeasset.md)
+- [class PHASESoundEventNodeAsset](./phasesoundeventnodeasset.md)
   A template object for sounds that can play in reaction to environmental state.
-- [class PHASEAsset](phaseasset.md)
+- [class PHASEAsset](./phaseasset.md)
   A base class that adds a name to framework assets.
-- [Sound Event Nodes](sound-event-nodes.md)
+- [Sound Event Nodes](./sound-event-nodes.md)
   Objects that connect to form a hierarchical tree of audio actions.
 ### Audio Layering and Effects
-- [class PHASEChannelMixerDefinition](phasechannelmixerdefinition.md)
+- [class PHASEChannelMixerDefinition](./phasechannelmixerdefinition.md)
   An audio-layering object that routes sound directly to the device’s output.
-- [class PHASEAmbientMixerDefinition](phaseambientmixerdefinition.md)
+- [class PHASEAmbientMixerDefinition](./phaseambientmixerdefinition.md)
   An audio-layering object that outputs sound in a particular direction in 3D space.
-- [class PHASEMixerDefinition](phasemixerdefinition.md)
+- [class PHASEMixerDefinition](./phasemixerdefinition.md)
   An object to initialize a mixer with a given configuration.
-- [class PHASEMixer](phasemixer.md)
+- [class PHASEMixer](./phasemixer.md)
   An object that combines multiple audio signals into a single signal.
-- [class PHASEDefinition](phasedefinition.md)
+- [class PHASEDefinition](./phasedefinition.md)
   A base class that adds a name to framework definitions.
-- [Spatial Mixing](spatial-mixing.md)
+- [Spatial Mixing](./spatial-mixing.md)
   Define environmental characteristics that determine how sound plays in your app’s 3D soundscape.
 ### Dynamic Sound Control
-- [class PHASEEnvelope](phaseenvelope.md)
+- [class PHASEEnvelope](./phaseenvelope.md)
   A collection of segments that connect to graph a complex curve over a linear input.
-- [class PHASEEnvelopeSegment](phaseenvelopesegment.md)
+- [class PHASEEnvelopeSegment](./phaseenvelopesegment.md)
   A curved portion of an envelope.
-- [enum PHASECurveType](phasecurvetype.md)
+- [enum PHASECurveType](./phasecurvetype.md)
   Options that apply a mathematical function to an input value.
-- [class PHASENumericPair](phasenumericpair.md)
+- [class PHASENumericPair](./phasenumericpair.md)
   An ordered pair that defines a bounding box for an envelope.
-- [Playback Parameterization](playback-parameterization.md)
+- [Playback Parameterization](./playback-parameterization.md)
   Change the characteristics of in-flight audio by adjusting its properties at runtime.
 ### Sound Grouping and Management
-- [class PHASEGroup](phasegroup.md)
+- [class PHASEGroup](./phasegroup.md)
   A container that shares audio parameters with a collection of sounds.
-- [class PHASEGroupPreset](phasegrouppreset.md)
+- [class PHASEGroupPreset](./phasegrouppreset.md)
   A collection of settings for groups.
-- [class PHASEGroupPresetSetting](phasegrouppresetsetting.md)
+- [class PHASEGroupPresetSetting](./phasegrouppresetsetting.md)
   Settings for group presets.
-- [class PHASEDucker](phaseducker.md)
+- [class PHASEDucker](./phaseducker.md)
   An object that manages competing sounds.
 ### Errors
-- [PHASE Errors](phase-errors.md)
+- [PHASE Errors](./phase-errors.md)
   Errors that the PHASE framework reports.
 ### Classes
-- [class PHASEPullStreamNode](phasepullstreamnode.md)
-- [class PHASEPullStreamNodeDefinition](phasepullstreamnodedefinition.md)
-- [class PHASEStreamNode](phasestreamnode.md)
+- [class PHASEPullStreamNode](./phasepullstreamnode.md)
+- [class PHASEPullStreamNodeDefinition](./phasepullstreamnodedefinition.md)
+- [class PHASEStreamNode](./phasestreamnode.md)
 ### Structures
-- [struct PHASEAutomaticHeadTrackingFlags](phaseautomaticheadtrackingflags.md)
+- [struct PHASEAutomaticHeadTrackingFlags](./phaseautomaticheadtrackingflags.md)
 ### Type Aliases
-- [typealias PHASEPullStreamRenderHandler](phasepullstreamrenderhandler.md)
+- [typealias PHASEPullStreamRenderHandler](./phasepullstreamrenderhandler.md)
 
 
 ---

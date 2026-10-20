@@ -1,7 +1,8 @@
 # coordinateWithSession(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins coordination of a player with a group session.
 
@@ -11,7 +12,7 @@ Begins coordination of a player with a group session.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

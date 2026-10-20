@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new dictionary by decoding from the given decoder.
 
@@ -20,6 +21,8 @@ Creates a new dictionary by decoding from the given decoder.
 init(from decoder: any Decoder) throws
 ```
 
+Available when `Key` conforms to `Decodable`, `Key` conforms to `Hashable`, and `Value` conforms to `Decodable`.
+
 #### Discussion
 
 This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
@@ -30,7 +33,8 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](dictionary/encode(to:).md)
+### Encoding and Decoding
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes the contents of this dictionary into the given encoder.
 
 

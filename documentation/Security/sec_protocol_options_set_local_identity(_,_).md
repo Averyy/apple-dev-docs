@@ -1,7 +1,8 @@
 # sec_protocol_options_set_local_identity(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_options_set_local_identity(_ options: sec_protocol_options_t, _ identity: sec_identity_t)
+```
+
+```c
+void sec_protocol_options_set_local_identity(sec_protocol_options_t options, sec_identity_t identity);
 ```
 
 #### Discussion

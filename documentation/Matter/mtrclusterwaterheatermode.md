@@ -1,7 +1,8 @@
 # MTRClusterWaterHeaterMode
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Water Heater Mode Attributes and commands for selecting a mode from a list of supported options.
 
@@ -20,32 +21,36 @@ Cluster Water Heater Mode Attributes and commands for selecting a mode from a li
 class MTRClusterWaterHeaterMode
 ```
 
+```objc
+@interface MTRClusterWaterHeaterMode : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterwaterheatermode/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterwaterheatermode/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func changeToMode(with: MTRWaterHeaterModeClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRWaterHeaterModeClusterChangeToModeResponseParams?, (any Error)?) -> Void)](mtrclusterwaterheatermode/changetomode(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermode/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermode/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermode/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentMode(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermode/readattributecurrentmode(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermode/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermode/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeSupportedModes(with: MTRReadParams?) -> [String : Any]?](mtrclusterwaterheatermode/readattributesupportedmodes(with:).md)
+- [func changeToMode(with: MTRWaterHeaterModeClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRWaterHeaterModeClusterChangeToModeResponseParams?, (any Error)?) -> Void)](./mtrclusterwaterheatermode/changetomode%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermode/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermode/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermode/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentMode(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermode/readattributecurrentmode%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermode/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermode/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeSupportedModes(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwaterheatermode/readattributesupportedmodes%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

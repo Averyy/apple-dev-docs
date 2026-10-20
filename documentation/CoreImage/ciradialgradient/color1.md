@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The second color to use in the gradient.
@@ -11,7 +12,7 @@ The second color to use in the gradient.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The second color to use in the gradient.
 var color1: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color1;
+```
+
 ## See Also
 
-- [var center: CGPoint](ciradialgradient/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The center of the effect as x and y coordinates.
-- [var color0: CIColor](ciradialgradient/color0.md)
+- [var color0: CIColor](./color0.md)
   The first color to use in the gradient.
-- [var radius0: Float](ciradialgradient/radius0.md)
+- [var radius0: Float](./radius0.md)
   The radius of the starting circle to use in the gradient.
-- [var radius1: Float](ciradialgradient/radius1.md)
+- [var radius1: Float](./radius1.md)
   The radius of the ending circle to use in the gradient.
 
 

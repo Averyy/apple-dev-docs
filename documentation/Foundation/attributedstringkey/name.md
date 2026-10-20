@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The name of the key.
@@ -23,7 +24,8 @@ static var name: String { get }
 
 ## See Also
 
-- [associatedtype Value : Hashable](attributedstringkey/value.md)
+### Delcaring Key Properties
+- [associatedtype Value : Hashable](./value.md)
   The type of the key’s value.
 
 

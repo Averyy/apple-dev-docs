@@ -1,7 +1,8 @@
 # presentationContextProvider
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides a presentation context for the account modification request’s user interface.
 
@@ -17,13 +18,18 @@ An object that provides a presentation context for the account modification requ
 weak var presentationContextProvider: (any ASAccountAuthenticationModificationControllerPresentationContextProviding)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<ASAccountAuthenticationModificationControllerPresentationContextProviding> presentationContextProvider;
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 ## See Also
 
-- [var delegate: (any ASAccountAuthenticationModificationControllerDelegate)?](asaccountauthenticationmodificationcontroller/delegate.md)
+### Configuring Requests
+- [var delegate: (any ASAccountAuthenticationModificationControllerDelegate)?](./delegate.md)
   An object that receives notifications about the request’s status.
 
 

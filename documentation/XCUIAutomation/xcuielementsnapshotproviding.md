@@ -1,18 +1,19 @@
 # XCUIElementSnapshotProviding
 
 **Framework**: XCUIAutomation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A method to capture a snapshot of an element’s attributes and descendant user interface hierarchy.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,29 +23,34 @@ A method to capture a snapshot of an element’s attributes and descendant user 
 protocol XCUIElementSnapshotProviding : NSObjectProtocol
 ```
 
+```objc
+@protocol XCUIElementSnapshotProviding <NSObject>
+```
+
 ## Topics
 
 ### Providing snapshots
-- [func snapshot() throws -> any XCUIElementSnapshot](xcuielementsnapshotproviding/snapshot.md)
+- [func snapshot() throws -> any XCUIElementSnapshot](./xcuielementsnapshotproviding/snapshot%28%29.md)
   Returns a snapshot of an element’s attributes and descendant user interface hierarchy.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [XCUIApplication](xcuiapplication.md)
-- [XCUIElement](xcuielement.md)
+- [XCUIApplication](./xcuiapplication.md)
+- [XCUIElement](./xcuielement.md)
 
 ## See Also
 
-- [class XCUIElement](xcuielement.md)
+### UI elements
+- [class XCUIElement](./xcuielement.md)
   A UI element in an application.
-- [protocol XCUIElementAttributes](xcuielementattributes.md)
+- [protocol XCUIElementAttributes](./xcuielementattributes.md)
   Attributes exposed by UI elements.
-- [protocol XCUIElementSnapshot](xcuielementsnapshot.md)
+- [protocol XCUIElementSnapshot](./xcuielementsnapshot.md)
   A set of attributes to express a snapshot of an element’s attributes and descendant user interface hierarchy.
-- [class XCUICoordinate](xcuicoordinate.md)
+- [class XCUICoordinate](./xcuicoordinate.md)
   A location on screen relative to a UI element.
 
 

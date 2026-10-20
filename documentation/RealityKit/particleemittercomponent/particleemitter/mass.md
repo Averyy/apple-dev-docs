@@ -1,7 +1,8 @@
 # mass
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mass, in grams, of each particle in the system. Defaults to 1.
 

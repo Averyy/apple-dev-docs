@@ -1,7 +1,8 @@
 # creditDebitIndicator
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the balance is a credit or a debit balance.
 
@@ -17,7 +18,7 @@ let creditDebitIndicator: CreditDebitIndicator
 
 #### Discussion
 
-If an asset account has a positive balance, then the [`CreditDebitIndicator`](creditdebitindicator.md) is [`CreditDebitIndicator.credit`](creditdebitindicator/credit.md). If it has a negative balance, then the `CreditDebitIndicator` is [`CreditDebitIndicator.debit`](creditdebitindicator/debit.md).
+If an asset account has a positive balance, then the [`CreditDebitIndicator`](../creditdebitindicator.md) is [`CreditDebitIndicator.credit`](../creditdebitindicator/credit.md). If it has a negative balance, then the `CreditDebitIndicator` is [`CreditDebitIndicator.debit`](../creditdebitindicator/debit.md).
 
 If a liability account has a *spent* balance, then the `CreditDebitIndicator` is `CreditDebitIndicator/debit`. If it has been *is in credit* then the `CreditDebitIndicator` is `CreditDebitIndicator/credit`.
 
@@ -25,9 +26,10 @@ If a liability account has a *spent* balance, then the `CreditDebitIndicator` is
 
 ## See Also
 
-- [let amount: CurrencyAmount](balance/amount.md)
+### Instance Properties
+- [let amount: CurrencyAmount](./amount.md)
   The amount of the balance.
-- [let asOfDate: Date](balance/asofdate.md)
+- [let asOfDate: Date](./asofdate.md)
   The date and time the system calculated the balance.
 
 

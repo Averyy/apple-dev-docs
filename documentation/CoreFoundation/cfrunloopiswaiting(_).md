@@ -1,23 +1,28 @@
 # CFRunLoopIsWaiting(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the run loop is waiting for an event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFRunLoopIsWaiting(_ rl: CFRunLoop!) -> Bool
+```
+
+```c
+extern Boolean CFRunLoopIsWaiting(CFRunLoopRef rl);
 ```
 
 #### Return Value
@@ -34,13 +39,14 @@ This function is useful only to test the state of another thread’s run loop. W
 
 ## See Also
 
-- [func CFRunLoopRun()](cfrunlooprun().md)
+### Starting and Stopping a Run Loop
+- [func CFRunLoopRun()](./cfrunlooprun%28%29.md)
   Runs the current thread’s CFRunLoop object in its default mode indefinitely.
-- [func CFRunLoopRunInMode(CFRunLoopMode!, CFTimeInterval, Bool) -> CFRunLoopRunResult](cfrunloopruninmode(_:_:_:).md)
+- [func CFRunLoopRunInMode(CFRunLoopMode!, CFTimeInterval, Bool) -> CFRunLoopRunResult](./cfrunloopruninmode%28_,_,_%29.md)
   Runs the current thread’s CFRunLoop object in a particular mode.
-- [func CFRunLoopWakeUp(CFRunLoop!)](cfrunloopwakeup(_:).md)
+- [func CFRunLoopWakeUp(CFRunLoop!)](./cfrunloopwakeup%28_%29.md)
   Wakes a waiting CFRunLoop object.
-- [func CFRunLoopStop(CFRunLoop!)](cfrunloopstop(_:).md)
+- [func CFRunLoopStop(CFRunLoop!)](./cfrunloopstop%28_%29.md)
   Forces a CFRunLoop object to stop running.
 
 

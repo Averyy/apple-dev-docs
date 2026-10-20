@@ -1,7 +1,8 @@
 # GameCenterActivityLocalizationCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center activity localization.
 
@@ -10,23 +11,23 @@ The request body you use to create a Game Center activity localization.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityLocalizationCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityLocalizationCreateRequest.Data.Attributes](gamecenteractivitylocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterActivityLocalizationCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an activity resource.
-- [object GameCenterActivityLocalizationCreateRequest.Data.Relationships](gamecenteractivitylocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterActivityLocalizationCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (GameCenterActivityLocalizationCreateRequest.Data.Attributes) *(required)*
 - `relationships` (GameCenterActivityLocalizationCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterActivityLocalizations`
 
 
 ---

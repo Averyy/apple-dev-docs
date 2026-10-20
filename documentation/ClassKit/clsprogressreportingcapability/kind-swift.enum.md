@@ -1,7 +1,8 @@
 # CLSProgressReportingCapability.Kind
 
 **Framework**: ClassKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available kinds of progress reporting that a context can perform.
 
@@ -18,41 +19,46 @@ The available kinds of progress reporting that a context can perform.
 enum Kind
 ```
 
+```c
+enum CLSProgressReportingCapabilityKind : NSInteger;
+```
+
 #### Overview
 
-Use one of these values to set the [`kind`](clsprogressreportingcapability/kind-swift.property.md) property in each [`CLSProgressReportingCapability`](clsprogressreportingcapability.md) instance when constructing a set of capabilities used to configure a context. Each kind corresponds to a different metric that you provide, like a score or a progress indication.
+Use one of these values to set the [`kind`](./kind-swift.property.md) property in each [`CLSProgressReportingCapability`](../clsprogressreportingcapability.md) instance when constructing a set of capabilities used to configure a context. Each kind corresponds to a different metric that you provide, like a score or a progress indication.
 
 ## Topics
 
 ### Reporting capabilities
-- [CLSProgressReportingCapability.Kind.duration](clsprogressreportingcapability/kind-swift.enum/duration.md)
+- [CLSProgressReportingCapability.Kind.duration](./kind-swift.enum/duration.md)
   Time spent performing the task.
-- [CLSProgressReportingCapability.Kind.percent](clsprogressreportingcapability/kind-swift.enum/percent.md)
+- [CLSProgressReportingCapability.Kind.percent](./kind-swift.enum/percent.md)
   The percentage of the total task that has been completed.
-- [CLSProgressReportingCapability.Kind.binary](clsprogressreportingcapability/kind-swift.enum/binary.md)
+- [CLSProgressReportingCapability.Kind.binary](./kind-swift.enum/binary.md)
   A binary outcome for the task, like true or false.
-- [CLSProgressReportingCapability.Kind.quantity](clsprogressreportingcapability/kind-swift.enum/quantity.md)
+- [CLSProgressReportingCapability.Kind.quantity](./kind-swift.enum/quantity.md)
   A discrete value.
-- [CLSProgressReportingCapability.Kind.score](clsprogressreportingcapability/kind-swift.enum/score.md)
+- [CLSProgressReportingCapability.Kind.score](./kind-swift.enum/score.md)
   A score.
 ### Initializers
-- [init?(rawValue: Int)](clsprogressreportingcapability/kind-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./kind-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var details: String?](clsprogressreportingcapability/details.md)
+### Characterizing the Capability
+- [var details: String?](./details.md)
   A description of the capability presented to teachers.
-- [var kind: CLSProgressReportingCapability.Kind](clsprogressreportingcapability/kind-swift.property.md)
+- [var kind: CLSProgressReportingCapability.Kind](./kind-swift.property.md)
   The kind of progress reporting capability.
 
 

@@ -1,7 +1,8 @@
 # init(dominantScript:languageMap:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an orthography object with the specified dominant script and language map.
 
@@ -20,13 +21,17 @@ Creates an orthography object with the specified dominant script and language ma
 init(dominantScript script: String, languageMap map: [String : [String]])
 ```
 
+```objc
+- (instancetype) initWithDominantScript:(NSString *) script languageMap:(NSDictionary<NSString *,NSArray<NSString *> *> *) map;
+```
+
 #### Return Value
 
 An orthography object initialized with the specified script and language map.
 
 #### Discussion
 
-You typically use the [`defaultOrthography(forLanguage:)`](nsorthography/defaultorthography(forlanguage:).md) method to create orthography objects with automatic language mapping. Use this initializer only if you need to override the script associated with one or more languages.
+You typically use the [`defaultOrthography(forLanguage:)`](./defaultorthography%28forlanguage%29.md) method to create orthography objects with automatic language mapping. Use this initializer only if you need to override the script associated with one or more languages.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ You typically use the [`defaultOrthography(forLanguage:)`](nsorthography/default
 
 ## See Also
 
-- [class func defaultOrthography(forLanguage: String) -> Self](nsorthography/defaultorthography(forlanguage:).md)
+### Creating Orthography Objects
+- [class func defaultOrthography(forLanguage: String) -> Self](./defaultorthography%28forlanguage%29.md)
   Creates and returns an orthography object with the default language map for the specified language.
 
 

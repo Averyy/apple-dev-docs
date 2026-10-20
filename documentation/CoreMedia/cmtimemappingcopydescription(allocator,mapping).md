@@ -1,7 +1,8 @@
 # CMTimeMappingCopyDescription(allocator:mapping:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies a string description of a time mapping.
 
@@ -20,6 +21,10 @@ Copies a string description of a time mapping.
 func CMTimeMappingCopyDescription(allocator: CFAllocator?, mapping: CMTimeMapping) -> CFString?
 ```
 
+```c
+extern CFStringRefCMTimeMappingCopyDescription(CFAllocatorRef allocator, CMTimeMapping mapping);
+```
+
 #### Return Value
 
 A string description of a time mapping.
@@ -31,9 +36,10 @@ A string description of a time mapping.
 
 ## See Also
 
-- [func CMTimeMappingCopyAsDictionary(CMTimeMapping, allocator: CFAllocator?) -> CFDictionary?](cmtimemappingcopyasdictionary(_:allocator:).md)
+### Representing Time Mappings
+- [func CMTimeMappingCopyAsDictionary(CMTimeMapping, allocator: CFAllocator?) -> CFDictionary?](./cmtimemappingcopyasdictionary%28_,allocator%29.md)
   Returns a dictionary representation of a time mapping.
-- [func CMTimeMappingShow(CMTimeMapping)](cmtimemappingshow(_:).md)
+- [func CMTimeMappingShow(CMTimeMapping)](./cmtimemappingshow%28_%29.md)
   Prints a description of a time mapping to standard output.
 
 

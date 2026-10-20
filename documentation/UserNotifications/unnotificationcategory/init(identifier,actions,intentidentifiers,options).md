@@ -1,7 +1,8 @@
 # init(identifier:actions:intentIdentifiers:options:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a category object containing the specified actions and options.
 
@@ -19,6 +20,10 @@ Creates a category object containing the specified actions and options.
 convenience init(identifier: String, actions: [UNNotificationAction], intentIdentifiers: [String], options: UNNotificationCategoryOptions = [])
 ```
 
+```objc
++ (instancetype) categoryWithIdentifier:(NSString *) identifier actions:(NSArray<UNNotificationAction *> *) actions intentIdentifiers:(NSArray<NSString *> *) intentIdentifiers options:(UNNotificationCategoryOptions) options;
+```
+
 #### Return Value
 
 An initialized category object.
@@ -28,13 +33,14 @@ An initialized category object.
 - `identifier`: The unique identifier for the category. Each category that your app uses must have a unique identifier. Don’t specify an empty string.
 - `actions`: The actions to display when the system delivers notifications of this type. When minimal space is available, the system displays only the first two actions in the array. You may specify an empty array for this parameter if you don’t want to display custom actions.
 - `intentIdentifiers`: The intent identifier strings that you want to associate with notifications of this type. The Intents framework defines constants for each type of intent that you can associate with your notifications.
-- `options`: Additional options for handling notifications of this type. For a list of possible values, see [`UNNotificationCategoryOptions`](unnotificationcategoryoptions.md).
+- `options`: Additional options for handling notifications of this type. For a list of possible values, see [`UNNotificationCategoryOptions`](../unnotificationcategoryoptions.md).
 
 ## See Also
 
-- [convenience init(identifier: String, actions: [UNNotificationAction], intentIdentifiers: [String], hiddenPreviewsBodyPlaceholder: String, options: UNNotificationCategoryOptions)](unnotificationcategory/init(identifier:actions:intentidentifiers:hiddenpreviewsbodyplaceholder:options:).md)
+### Essentials
+- [convenience init(identifier: String, actions: [UNNotificationAction], intentIdentifiers: [String], hiddenPreviewsBodyPlaceholder: String, options: UNNotificationCategoryOptions)](./init%28identifier,actions,intentidentifiers,hiddenpreviewsbodyplaceholder,options%29.md)
   Creates a category object containing the specified actions, options, and placeholder text used when previews aren’t shown.
-- [convenience init(identifier: String, actions: [UNNotificationAction], intentIdentifiers: [String], hiddenPreviewsBodyPlaceholder: String?, categorySummaryFormat: String?, options: UNNotificationCategoryOptions)](unnotificationcategory/init(identifier:actions:intentidentifiers:hiddenpreviewsbodyplaceholder:categorysummaryformat:options:).md)
+- [convenience init(identifier: String, actions: [UNNotificationAction], intentIdentifiers: [String], hiddenPreviewsBodyPlaceholder: String?, categorySummaryFormat: String?, options: UNNotificationCategoryOptions)](./init%28identifier,actions,intentidentifiers,hiddenpreviewsbodyplaceholder,categorysummaryformat,options%29.md)
   Creates a category object containing the specified actions, options, placeholder text used when previews aren’t shown, and summary format string.
 
 

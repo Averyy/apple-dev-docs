@@ -1,7 +1,8 @@
 # init(ssid:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new hotspot configuration, identified by an SSID, for an open Wi-Fi network.
 
@@ -18,21 +19,26 @@ Creates a new hotspot configuration, identified by an SSID, for an open Wi-Fi ne
 init(ssid SSID: String)
 ```
 
+```objc
+- (instancetype) initWithSSID:(NSString *) SSID;
+```
+
 ## Parameters
 
-- `SSID`: The SSID of the open Wi-Fi network. See [`ssid`](nehotspotconfiguration/ssid.md).
+- `SSID`: The SSID of the open Wi-Fi network. See [`ssid`](./ssid.md).
 
 ## See Also
 
-- [init(ssid: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssid:passphrase:iswep:)-3ll1v.md)
+### Initializing a configuration
+- [init(ssid: String, passphrase: String, isWEP: Bool)](./init%28ssid,passphrase,iswep%29-3ll1v.md)
   Creates a new hotspot configuration, identified by an SSID, for a protected WEP or WPA/WPA2 personal Wi-Fi network.
-- [init(ssid: String, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(ssid:eapsettings:)-53cpf.md)
+- [init(ssid: String, eapSettings: NEHotspotEAPSettings)](./init%28ssid,eapsettings%29-53cpf.md)
   Creates a new hotspot configuration, identified by an SSID, for a WPA/WPA2 enterprise Wi-Fi network with EAP settings.
-- [init(hs20Settings: NEHotspotHS20Settings, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(hs20settings:eapsettings:)-291m2.md)
+- [init(hs20Settings: NEHotspotHS20Settings, eapSettings: NEHotspotEAPSettings)](./init%28hs20settings,eapsettings%29-291m2.md)
   Creates a new hotspot configuration, identified by a domain name, for a Hotspot 2.0 Wi-Fi network with HS 2.0 and EAP settings.
-- [init(ssidPrefix: String)](nehotspotconfiguration/init(ssidprefix:)-1v8bx.md)
+- [init(ssidPrefix: String)](./init%28ssidprefix%29-1v8bx.md)
   Creates a new hotspot configuration, identified by an SSID prefix string, for an open Wi-Fi network.
-- [init(ssidPrefix: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssidprefix:passphrase:iswep:)-7ttmu.md)
+- [init(ssidPrefix: String, passphrase: String, isWEP: Bool)](./init%28ssidprefix,passphrase,iswep%29-7ttmu.md)
   Creates a new hotspot configuration, identified by an SSID prefix string, for a protected WEP or WPA/WPA2 personal Wi-Fi network.
 
 

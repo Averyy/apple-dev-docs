@@ -1,7 +1,8 @@
 # InferenceFunction.AsyncValue
 
 **Framework**: Core AI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A future which will provide an inference value once any pending write is complete.
 
@@ -41,33 +42,34 @@ Async values can be used in async pipelines of inference to dispatch multiple in
 ## Topics
 
 ### Creating an async value
-- [init(CVReadOnlyPixelBuffer)](inferencefunction/asyncvalue/init(_:)-5qtut.md)
+- [init(CVReadOnlyPixelBuffer)](./asyncvalue/init%28_%29-5qtut.md)
   Initialize the `AsyncValue` holding the provided pixel buffer.
-- [init(consuming InferenceFunction.AsyncMutableValue)](inferencefunction/asyncvalue/init(_:)-90hbj.md)
+- [init(consuming InferenceFunction.AsyncMutableValue)](./asyncvalue/init%28_%29-90hbj.md)
   Initialize an async value from an existing mutable async value.
-- [init(consuming NDArray)](inferencefunction/asyncvalue/init(_:)-9wk3.md)
+- [init(consuming NDArray)](./asyncvalue/init%28_%29-9wk3.md)
   Initialize the `AsyncValue` holding the provided ndArray.
-- [init(unsafeBuffer: consuming any MTLBuffer, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](inferencefunction/asyncvalue/init(unsafebuffer:byteoffset:scalartype:shape:strides:interleavelayout:).md)
+- [init(unsafeBuffer: consuming any MTLBuffer, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](./asyncvalue/init%28unsafebuffer,byteoffset,scalartype,shape,strides,interleavelayout%29.md)
   Creates an async ndArray value that directly references the provided metal buffer, interpreted as the specified scalar type and shape.
 ### Accessing an async value
-- [var kind: InferenceValue.Kind](inferencefunction/asyncvalue/kind.md)
+- [var kind: InferenceValue.Kind](./asyncvalue/kind.md)
   The kind of inference value held by this async value.
-- [var ndArray: NDArray?](inferencefunction/asyncvalue/ndarray.md)
+- [var ndArray: NDArray?](./asyncvalue/ndarray.md)
   Waits for any pending write access on the underlying ndArray to complete, then returns it.
-- [var pixelBuffer: CVReadOnlyPixelBuffer?](inferencefunction/asyncvalue/pixelbuffer.md)
+- [var pixelBuffer: CVReadOnlyPixelBuffer?](./asyncvalue/pixelbuffer.md)
   Waits for any pending write access on the underlying pixel buffer to complete, then returns it.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [InferenceFunction.AsyncMutableValue](inferencefunction/asyncmutablevalue.md)
+### Asynchronous inference
+- [InferenceFunction.AsyncMutableValue](./asyncmutablevalue.md)
   An async value which can be provided as a mutable argument to an inference function.
-- [InferenceFunction.AsyncMutableViews](inferencefunction/asyncmutableviews.md)
+- [InferenceFunction.AsyncMutableViews](./asyncmutableviews.md)
   A collection of mutable references to async states, used as the states argument to an inference function.
 
 

@@ -1,7 +1,8 @@
 # concurrentSubscriptionEstablishmentsAllowedOnThread
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 var concurrentSubscriptionEstablishmentsAllowedOnThread: Int { get set }
+```
+
+```objc
+@property (nonatomic, assign) NSUInteger concurrentSubscriptionEstablishmentsAllowedOnThread;
 ```
 
 

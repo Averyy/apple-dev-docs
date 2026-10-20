@@ -1,7 +1,8 @@
 # PartResult.notFound
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested part number was not found
 

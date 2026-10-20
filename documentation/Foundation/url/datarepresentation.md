@@ -1,7 +1,8 @@
 # dataRepresentation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data representation of the URL’s relativeString.
 
@@ -26,7 +27,8 @@ If the URL was initialized with `init?(dataRepresentation:relativeTo:isAbsolute:
 
 ## See Also
 
-- [init?(dataRepresentation: Data, relativeTo: URL?, isAbsolute: Bool)](url/init(datarepresentation:relativeto:isabsolute:).md)
+### Working with the data representation of a URL
+- [init?(dataRepresentation: Data, relativeTo: URL?, isAbsolute: Bool)](./init%28datarepresentation,relativeto,isabsolute%29.md)
   Initializes a newly created URL using the contents of the given data, relative to a base URL.
 
 

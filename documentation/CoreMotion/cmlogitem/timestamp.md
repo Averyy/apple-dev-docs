@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time when the logged item is valid.
 
@@ -19,9 +20,13 @@ The time when the logged item is valid.
 var timestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timestamp;
+```
+
 ## Mentions
 
-- [Getting processed device-motion data](getting-processed-device-motion-data.md)
+- [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
 #### Discussion
 

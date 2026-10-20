@@ -1,7 +1,8 @@
 # angularLimit
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A limit of the rotational freedom between the pins around the x-axis.
 

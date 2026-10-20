@@ -1,7 +1,8 @@
 # ElementType
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of element in feature print data.
 
@@ -23,26 +24,27 @@ enum ElementType
 ## Topics
 
 ### Getting the element types
-- [ElementType.double](elementtype/double.md)
-- [ElementType.float](elementtype/float.md)
+- [ElementType.double](./elementtype/double.md)
+- [ElementType.float](./elementtype/float.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let data: Data](featureprintobservation/data.md)
+### Inspecting an observation
+- [let data: Data](./featureprintobservation/data.md)
   The feature print data.
-- [let elementCount: Int](featureprintobservation/elementcount.md)
+- [let elementCount: Int](./featureprintobservation/elementcount.md)
   The total number of elements in the data.
-- [let elementType: ElementType](featureprintobservation/elementtype.md)
+- [let elementType: ElementType](./featureprintobservation/elementtype.md)
   The type of each element in the data.
 
 

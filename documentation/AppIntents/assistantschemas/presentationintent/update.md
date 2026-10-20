@@ -1,7 +1,8 @@
 # update
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for updating the name of a presentation.
 
@@ -39,7 +40,7 @@ struct UpdatePresentationIntent: AppIntent {
 }
 ```
 
-For more information about the `.presentation` app intent domain, see [`Presentation`](app-schema-domain-presentation.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.presentation` app intent domain, see [Presentation](../../app-schema-domain-presentation.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

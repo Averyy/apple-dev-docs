@@ -1,14 +1,15 @@
 # IFNET_LQM_THRESH_GOOD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IFNET_LQM_THRESH_GOOD = 100
 ```
 

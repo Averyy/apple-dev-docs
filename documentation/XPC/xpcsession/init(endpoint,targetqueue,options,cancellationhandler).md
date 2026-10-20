@@ -1,7 +1,8 @@
 # init(endpoint:targetQueue:options:cancellationHandler:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new session object representing a connection to the xpc endpoint.
 
@@ -22,7 +23,7 @@ Returns a new session object. The returned session is activated by default and c
 
 #### Discussion
 
-> **Note**: A `XPCRichError` describing the details of the error that occurred.
+> **Throws**: A `XPCRichError` describing the details of the error that occurred.
 
 This will throw a XPCRichError if the specified endpoint is invalid or unavailable.
 

@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a USB mass storage device with the provided configuration.
 
@@ -12,6 +13,10 @@ Creates a USB mass storage device with the provided configuration.
 
 ```swift
 init(configuration: VZUSBMassStorageDeviceConfiguration)
+```
+
+```objc
+- (instancetype) initWithConfiguration:(VZUSBMassStorageDeviceConfiguration *) configuration;
 ```
 
 ## Parameters

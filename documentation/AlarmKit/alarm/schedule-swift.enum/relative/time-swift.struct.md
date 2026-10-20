@@ -1,7 +1,8 @@
 # Alarm.Schedule.Relative.Time
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that describes the hour and minute at which an alarm alerts.
 
@@ -19,26 +20,27 @@ struct Time
 ## Topics
 
 ### Creating a scheduled time
-- [init(hour: Int, minute: Int)](alarm/schedule-swift.enum/relative/time-swift.struct/init(hour:minute:).md)
+- [init(hour: Int, minute: Int)](./time-swift.struct/init%28hour,minute%29.md)
   Creates an instance of time.
-- [var hour: Int](alarm/schedule-swift.enum/relative/time-swift.struct/hour.md)
+- [var hour: Int](./time-swift.struct/hour.md)
   The hour mark the alarm alerts.
-- [var minute: Int](alarm/schedule-swift.enum/relative/time-swift.struct/minute.md)
+- [var minute: Int](./time-swift.struct/minute.md)
   The minute of the hour the alarm alerts.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(time: Alarm.Schedule.Relative.Time, repeats: Alarm.Schedule.Relative.Recurrence)](alarm/schedule-swift.enum/relative/init(time:repeats:).md)
+### Creating a scheduled alarm
+- [init(time: Alarm.Schedule.Relative.Time, repeats: Alarm.Schedule.Relative.Recurrence)](./init%28time,repeats%29.md)
   Creates an alarm that fires at a specific time.
 
 

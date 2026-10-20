@@ -1,7 +1,8 @@
 # transferWindowSharing(to:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to move window sharing (within a SharePlay session) from this window to another window.
 
@@ -11,7 +12,15 @@ Attempts to move window sharing (within a SharePlay session) from this window to
 ## Declaration
 
 ```swift
+func transferWindowSharing(to window: NSWindow, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 func transferWindowSharing(to window: NSWindow) async throws
+```
+
+```objc
+- (void) transferWindowSharingToWindow:(NSWindow *) window completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -25,7 +34,8 @@ In response to this request, the user may choose to transfer sharing to the new 
 
 ## See Also
 
-- [var hasActiveWindowSharingSession: Bool](nswindow/hasactivewindowsharingsession.md)
+### Managing Window Sharing
+- [var hasActiveWindowSharingSession: Bool](./hasactivewindowsharingsession.md)
   Indicates whether the receiver is the subject of an active SharePlay sharing session.
 
 

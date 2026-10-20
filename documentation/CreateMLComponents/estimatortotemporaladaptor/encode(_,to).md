@@ -1,17 +1,18 @@
 # encode(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a fitted transformer.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -21,7 +22,8 @@ func encode(_ transformer: EstimatorToTemporalAdaptor<Base>.Transformer, to enco
 
 ## See Also
 
-- [func decode(from: inout any EstimatorDecoder) throws -> EstimatorToTemporalAdaptor<Base>.Transformer](estimatortotemporaladaptor/decode(from:).md)
+### Encoding and decoding
+- [func decode(from: inout any EstimatorDecoder) throws -> EstimatorToTemporalAdaptor<Base>.Transformer](./decode%28from%29.md)
   Decodes the transformer.
 
 

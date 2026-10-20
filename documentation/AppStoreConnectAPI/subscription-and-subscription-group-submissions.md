@@ -1,40 +1,42 @@
 # Subscription and Subscription Group Submissions
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Create review submissions for auto-renewable subscriptions and subscription groups.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
 
 #### Overview
 
-> ❗ **Important**:  This is deprecated. Use [`Review submissions`](review-submissions.md) instead.
+> ❗ **Important**:  This is deprecated. Use [Review submissions](./review-submissions.md) instead.
 
 ## Topics
 
 ### Endpoints
-- [Create a review submission for a subscription group](post-v1-subscriptiongroupsubmissions.md)
+- [Create a review submission for a subscription group](./post-v1-subscriptiongroupsubmissions.md)
   Create a subscription group submission for review.
-- [Create a review submission for a subscription](post-v1-subscriptionsubmissions.md)
+- [Create a review submission for a subscription](./post-v1-subscriptionsubmissions.md)
   Create a review submission for an auto-renewable subscription.
 ### Objects
-- [object SubscriptionGroupSubmissionCreateRequest](subscriptiongroupsubmissioncreaterequest.md)
+- [object SubscriptionGroupSubmissionCreateRequest](./subscriptiongroupsubmissioncreaterequest.md)
   The request body you use to create a subscription group submission.
-- [object SubscriptionGroupSubmission](subscriptiongroupsubmission.md)
+- [object SubscriptionGroupSubmission](./subscriptiongroupsubmission.md)
   A submission of a subscription group to App Store review, required before offering subscriptions to customers.
-- [object SubscriptionGroupSubmissionResponse](subscriptiongroupsubmissionresponse.md)
+- [object SubscriptionGroupSubmissionResponse](./subscriptiongroupsubmissionresponse.md)
   A response confirming the submission of a subscription group for App Store review.
-- [object SubscriptionSubmissionCreateRequest](subscriptionsubmissioncreaterequest.md)
+- [object SubscriptionSubmissionCreateRequest](./subscriptionsubmissioncreaterequest.md)
   The request body you use to create a subscription submission.
-- [object SubscriptionSubmission](subscriptionsubmission.md)
+- [object SubscriptionSubmission](./subscriptionsubmission.md)
   A submission of an auto-renewable subscription to App Store review.
-- [object SubscriptionSubmissionResponse](subscriptionsubmissionresponse.md)
+- [object SubscriptionSubmissionResponse](./subscriptionsubmissionresponse.md)
   A response confirming the submission of a subscription for App Store review.
 
 ## See Also
 
-- [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
+### Submitting Subscriptions and Groups for App Review
+- [Submitting subscriptions and subscription groups for App Review](./submitting-subscriptions-and-subscription-groups-for-app-review.md)
   Attach localizations and screenshots to a subscription version, then submit subscriptions and subscription groups for App Review.
 
 

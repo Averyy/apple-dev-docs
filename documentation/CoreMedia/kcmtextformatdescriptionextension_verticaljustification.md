@@ -1,7 +1,8 @@
 # kCMTextFormatDescriptionExtension_VerticalJustification
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The extension flag that represents the vertical justification.
 
@@ -20,27 +21,32 @@ The extension flag that represents the vertical justification.
 let kCMTextFormatDescriptionExtension_VerticalJustification: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextFormatDescriptionExtension_VerticalJustification;
+```
+
 #### Discussion
 
-The value needs to be `SInt8` and contains a [`CMTextJustificationValue`](cmtextjustificationvalue.md).
+The value needs to be `SInt8` and contains a [`CMTextJustificationValue`](./cmtextjustificationvalue.md).
 
 ## See Also
 
-- [let kCMTextFormatDescriptionExtension_DisplayFlags: CFString](kcmtextformatdescriptionextension_displayflags.md)
+### Description Extension Constants
+- [let kCMTextFormatDescriptionExtension_DisplayFlags: CFString](./kcmtextformatdescriptionextension_displayflags.md)
   The extension flag that represents the display flags.
-- [let kCMTextFormatDescriptionExtension_BackgroundColor: CFString](kcmtextformatdescriptionextension_backgroundcolor.md)
+- [let kCMTextFormatDescriptionExtension_BackgroundColor: CFString](./kcmtextformatdescriptionextension_backgroundcolor.md)
   The extension flag that represents the background color.
-- [let kCMTextFormatDescriptionExtension_DefaultTextBox: CFString](kcmtextformatdescriptionextension_defaulttextbox.md)
+- [let kCMTextFormatDescriptionExtension_DefaultTextBox: CFString](./kcmtextformatdescriptionextension_defaulttextbox.md)
   The extension flag that represents the default text box.
-- [let kCMTextFormatDescriptionExtension_DefaultStyle: CFString](kcmtextformatdescriptionextension_defaultstyle.md)
+- [let kCMTextFormatDescriptionExtension_DefaultStyle: CFString](./kcmtextformatdescriptionextension_defaultstyle.md)
   The extension flag that represents the default style.
-- [let kCMTextFormatDescriptionExtension_HorizontalJustification: CFString](kcmtextformatdescriptionextension_horizontaljustification.md)
+- [let kCMTextFormatDescriptionExtension_HorizontalJustification: CFString](./kcmtextformatdescriptionextension_horizontaljustification.md)
   The extension flag that represents the horizontal justification.
-- [let kCMTextFormatDescriptionExtension_FontTable: CFString](kcmtextformatdescriptionextension_fonttable.md)
+- [let kCMTextFormatDescriptionExtension_FontTable: CFString](./kcmtextformatdescriptionextension_fonttable.md)
   The extension flag that represents the font table.
-- [let kCMTextFormatDescriptionExtension_TextJustification: CFString](kcmtextformatdescriptionextension_textjustification.md)
+- [let kCMTextFormatDescriptionExtension_TextJustification: CFString](./kcmtextformatdescriptionextension_textjustification.md)
   The extension flag that represents the text justification.
-- [let kCMTextFormatDescriptionExtension_DefaultFontName: CFString](kcmtextformatdescriptionextension_defaultfontname.md)
+- [let kCMTextFormatDescriptionExtension_DefaultFontName: CFString](./kcmtextformatdescriptionextension_defaultfontname.md)
   The extension flag that represents the default font name.
 
 

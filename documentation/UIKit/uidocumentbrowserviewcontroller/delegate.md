@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document browser’s delegate.
 
@@ -17,15 +18,20 @@ The document browser’s delegate.
 weak var delegate: (any UIDocumentBrowserViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIDocumentBrowserViewControllerDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate object must implement the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) protocol.
+The delegate object must implement the [`UIDocumentBrowserViewControllerDelegate`](../uidocumentbrowserviewcontrollerdelegate.md) protocol.
 
 ## See Also
 
-- [protocol UIDocumentBrowserViewControllerDelegate](uidocumentbrowserviewcontrollerdelegate.md)
+### Responding to browser events
+- [protocol UIDocumentBrowserViewControllerDelegate](../uidocumentbrowserviewcontrollerdelegate.md)
   The protocol you implement to respond as the user interacts with the document browser.
-- [func importDocument(at: URL, nextToDocumentAt: URL, mode: UIDocumentBrowserViewController.ImportMode, completionHandler: (URL?, (any Error)?) -> Void)](uidocumentbrowserviewcontroller/importdocument(at:nexttodocumentat:mode:completionhandler:).md)
+- [func importDocument(at: URL, nextToDocumentAt: URL, mode: UIDocumentBrowserViewController.ImportMode, completionHandler: (URL?, (any Error)?) -> Void)](./importdocument%28at,nexttodocumentat,mode,completionhandler%29.md)
   Imports a document into the same location as an existing document.
 
 

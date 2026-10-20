@@ -1,7 +1,8 @@
 # typeIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that indicates the type of the font feature.
 
@@ -14,13 +15,18 @@ A key that indicates the type of the font feature.
 static let typeIdentifier: NSFontDescriptor.FeatureKey
 ```
 
+```c
+extern NSFontDescriptorFeatureKey NSFontFeatureTypeIdentifierKey;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object specifying a font feature type such as ligature, character shape, and so on. For more information on Apple Fonts see[` Fonts for Apple platforms`](https://developer.apple.comhttps://developer.apple.com/fonts/) and the [`AAT Font Feature Registry`](https://developer.apple.comhttps://developer.apple.com/fonts/TrueType-Reference-Manual/RM09/AppendixF.html).
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object specifying a font feature type such as ligature, character shape, and so on. For more information on Apple Fonts see[ Fonts for Apple platforms](https://developer.apple.com/fonts/) and the [AAT Font Feature Registry](https://developer.apple.com/fonts/TrueType-Reference-Manual/RM09/AppendixF.html).
 
 ## See Also
 
-- [static let selectorIdentifier: NSFontDescriptor.FeatureKey](nsfontdescriptor/featurekey/selectoridentifier.md)
+### Feature Keys
+- [static let selectorIdentifier: NSFontDescriptor.FeatureKey](./selectoridentifier.md)
   A key that indicates the selector of the font feature.
 
 

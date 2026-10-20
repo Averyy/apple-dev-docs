@@ -1,15 +1,16 @@
 # init(value:units:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a caption dimension with a value and unit type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

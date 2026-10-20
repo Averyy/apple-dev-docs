@@ -1,7 +1,8 @@
 # setOrphans(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setOrphans(_ orphans: String!)
+```
+
+```objc
+- (void) setOrphans:(NSString *) orphans;
 ```
 
 

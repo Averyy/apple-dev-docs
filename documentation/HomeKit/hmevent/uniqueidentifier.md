@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the event.
 
@@ -19,9 +20,14 @@ A unique identifier for the event.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [class func isSupported(for: HMHome) -> Bool](hmevent/issupported(for:).md)
+### Getting information about the event
+- [class func isSupported(for: HMHome) -> Bool](./issupported%28for%29.md)
   A Boolean value indicating whether the event can be added to an event trigger on the specified home.
 
 

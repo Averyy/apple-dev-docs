@@ -1,7 +1,8 @@
 # GameSaveErrorDomain
 
 **Framework**: GameSave  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain name for GameSave errors.
 

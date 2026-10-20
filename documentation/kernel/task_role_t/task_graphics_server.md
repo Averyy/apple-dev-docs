@@ -1,14 +1,15 @@
 # TASK_GRAPHICS_SERVER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 TASK_GRAPHICS_SERVER = 4
 ```
 

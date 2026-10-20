@@ -1,7 +1,8 @@
 # IOHIDCompletion
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Struct specifying action to perform when set/get report completes.
 
@@ -10,23 +11,24 @@ Struct specifying action to perform when set/get report completes.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOHIDCompletion IOHIDCompletion;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [action](../iokit/iohidcompletion/1556167-action.md)
-- [parameter](../iokit/iohidcompletion/1556182-parameter.md)
-- [target](../iokit/iohidcompletion/1556177-target.md)
+- [action](../iokit/iohidcompletion/api-1556167-action.md)
+- [parameter](../iokit/iohidcompletion/api-1556182-parameter.md)
+- [target](../iokit/iohidcompletion/api-1556177-target.md)
 
 ## See Also
 
-- [IOHIDReportType](iohidreporttype.md)
+### Reports
+- [IOHIDReportType](./iohidreporttype.md)
   Describes different type of HID reports.
-- [HIDReportCommandType](hidreportcommandtype.md)
-- [IOHIDCompletionAction](iohidcompletionaction.md)
+- [HIDReportCommandType](./hidreportcommandtype.md)
+- [IOHIDCompletionAction](./iohidcompletionaction.md)
   Function called when set/get report completes
 
 

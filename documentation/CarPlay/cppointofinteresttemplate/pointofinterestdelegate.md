@@ -1,7 +1,8 @@
 # pointOfInterestDelegate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that serves as the template’s delegate.
 
@@ -16,9 +17,14 @@ The object that serves as the template’s delegate.
 weak var pointOfInterestDelegate: (any CPPointOfInterestTemplateDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CPPointOfInterestTemplateDelegate> pointOfInterestDelegate;
+```
+
 ## See Also
 
-- [protocol CPPointOfInterestTemplateDelegate](cppointofinteresttemplatedelegate.md)
+### Handling Template Events
+- [protocol CPPointOfInterestTemplateDelegate](../cppointofinteresttemplatedelegate.md)
   The methods to handle a Point of Interest template’s events.
 
 

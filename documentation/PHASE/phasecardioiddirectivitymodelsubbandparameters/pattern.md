@@ -1,7 +1,8 @@
 # pattern
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A shape that determines the direction of sound.
 
@@ -19,13 +20,18 @@ A shape that determines the direction of sound.
 var pattern: Double { get set }
 ```
 
+```objc
+@property (nonatomic) double pattern;
+```
+
 #### Discussion
 
 The framework clamps the value to the range `[0.0, 1.0]`. The default value is `0.0`, which creates an omnidirectional shape. The value `0.5` creates a cardioid shape. The value `1.0` creates a dipole shape.
 
 ## See Also
 
-- [var sharpness: Double](phasecardioiddirectivitymodelsubbandparameters/sharpness.md)
+### Shaping Directivity
+- [var sharpness: Double](./sharpness.md)
   The amount that the shape overlaps with bordering subbands.
 
 

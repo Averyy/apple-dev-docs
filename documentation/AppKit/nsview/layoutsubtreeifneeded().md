@@ -1,7 +1,8 @@
 # layoutSubtreeIfNeeded()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the layout of the receiving view and its subviews based on the current views and constraints.
 
@@ -14,23 +15,28 @@ Updates the layout of the receiving view and its subviews based on the current v
 func layoutSubtreeIfNeeded()
 ```
 
+```objc
+- (void) layoutSubtreeIfNeeded;
+```
+
 #### Discussion
 
-Before displaying a view that uses constraints-based layout the system invokes this method to ensure that the layout of the view and its subviews is up to date. This method updates the layout if needed, first invoking [`updateConstraintsForSubtreeIfNeeded()`](nsview/updateconstraintsforsubtreeifneeded().md) to ensure that all constraints are up to date. This method is called automatically by the system, but may be invoked manually if you need to examine the most up to date layout.
+Before displaying a view that uses constraints-based layout the system invokes this method to ensure that the layout of the view and its subviews is up to date. This method updates the layout if needed, first invoking [`updateConstraintsForSubtreeIfNeeded()`](./updateconstraintsforsubtreeifneeded%28%29.md) to ensure that all constraints are up to date. This method is called automatically by the system, but may be invoked manually if you need to examine the most up to date layout.
 
 Subclasses should not override this method.
 
 ## See Also
 
-- [var needsLayout: Bool](nsview/needslayout.md)
+### Triggering Auto Layout
+- [var needsLayout: Bool](./needslayout.md)
   A Boolean value indicating whether the view needs a layout pass before it can be drawn.
-- [func layout()](nsview/layout.md)
+- [func layout()](./layout%28%29.md)
   Perform layout in concert with the constraint-based layout system.
-- [var needsUpdateConstraints: Bool](nsview/needsupdateconstraints.md)
+- [var needsUpdateConstraints: Bool](./needsupdateconstraints.md)
   A Boolean value indicating whether the view’s constraints need to be updated.
-- [func updateConstraints()](nsview/updateconstraints.md)
+- [func updateConstraints()](./updateconstraints%28%29.md)
   Update constraints for the view.
-- [func updateConstraintsForSubtreeIfNeeded()](nsview/updateconstraintsforsubtreeifneeded.md)
+- [func updateConstraintsForSubtreeIfNeeded()](./updateconstraintsforsubtreeifneeded%28%29.md)
   Updates the constraints for the receiving view and its subviews.
 
 

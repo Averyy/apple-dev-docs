@@ -1,7 +1,8 @@
 # baseSpecifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the specifier for the base object.
 
@@ -15,13 +16,18 @@ Sets the specifier for the base object.
 var baseSpecifier: NSScriptObjectSpecifier? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSScriptObjectSpecifier * baseSpecifier;
+```
+
 ## Parameters
 
 - `baseSpecifier`: The specifier for the base object—the object to which the relative specifier is related.
 
 ## See Also
 
-- [var relativePosition: NSRelativeSpecifier.RelativePosition](nsrelativespecifier/relativeposition-swift.property.md)
+### Accessing a relative specifier
+- [var relativePosition: NSRelativeSpecifier.RelativePosition](./relativeposition-swift.property.md)
   Sets the relative position encapsulated by the receiver.
 
 

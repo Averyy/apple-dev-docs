@@ -1,7 +1,8 @@
 # overlapFactor
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The proportion of overlap that the feature-extraction session uses to analyze two consecutive windows in the audio data.
 
@@ -44,9 +45,10 @@ A third session with a window size of `1.0` and an overlap factor of `0.75` samp
 
 ## See Also
 
-- [var featureExtractor: MLSoundClassifier.ModelParameters.FeatureExtractorType](mlsoundclassifier/featureextractionparameters/featureextractor.md)
+### Accessing feature extraction parameters
+- [var featureExtractor: MLSoundClassifier.ModelParameters.FeatureExtractorType](./featureextractor.md)
   The algorithm type the session uses to extract features from audio files.
-- [var featureExtractionTimeWindowSize: TimeInterval](mlsoundclassifier/featureextractionparameters/featureextractiontimewindowsize.md)
+- [var featureExtractionTimeWindowSize: TimeInterval](./featureextractiontimewindowsize.md)
   A time duration, in seconds, that determines how much audio data the feature-extraction session reads each time it samples an audio file.
 
 

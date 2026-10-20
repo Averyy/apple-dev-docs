@@ -1,7 +1,8 @@
 # kAuthorizationRuleAuthenticateAsSessionUser
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates a delegate rule definition constant specifying that the user must authenticate as the session owner (logged-in user).
 
@@ -13,6 +14,10 @@ Indicates a delegate rule definition constant specifying that the user must auth
 
 ```swift
 var kAuthorizationRuleAuthenticateAsSessionUser: String { get }
+```
+
+```c
+#define kAuthorizationRuleAuthenticateAsSessionUser
 ```
 
 

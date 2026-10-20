@@ -1,7 +1,8 @@
 # AudioResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A playable audio resource
 
@@ -11,7 +12,7 @@ A playable audio resource
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,39 +24,40 @@ A playable audio resource
 ## Topics
 
 ### Deprecated
-- [var inputMode: AudioResource.InputMode](audioresource/inputmode-swift.property.md)
-- [AudioResource.InputMode](audioresource/inputmode-swift.enum.md)
+- [var inputMode: AudioResource.InputMode](./audioresource/inputmode-swift.property.md)
+- [AudioResource.InputMode](./audioresource/inputmode-swift.enum.md)
 ### Structures
-- [AudioResource.Calibration](audioresource/calibration.md)
+- [AudioResource.Calibration](./audioresource/calibration.md)
   A container for different calibration modes that can be applied for playback.
-- [AudioResource.Normalization](audioresource/normalization.md)
+- [AudioResource.Normalization](./audioresource/normalization.md)
   Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 ## Relationships
 
 ### Inherited By
-- [AudioBufferResource](audiobufferresource.md)
-- [AudioFileGroupResource](audiofilegroupresource.md)
-- [AudioFileResource](audiofileresource.md)
+- [AudioBufferResource](./audiobufferresource.md)
+- [AudioFileGroupResource](./audiofilegroupresource.md)
+- [AudioFileResource](./audiofileresource.md)
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AudioFileResource](audiofileresource.md)
+### Audio resources
+- [class AudioFileResource](./audiofileresource.md)
   An audio resource that you load from a file or from a URL.
-- [class AudioFileGroupResource](audiofilegroupresource.md)
+- [class AudioFileGroupResource](./audiofilegroupresource.md)
   An audio file group.
-- [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
-- [struct AudioLibraryComponent](audiolibrarycomponent.md)
+- [class AudioBufferResource](./audiobufferresource.md)
+  An audio resource that you load from an [`AVAudioBuffer`](../AVFAudio/avaudiobuffer.md).
+- [struct AudioLibraryComponent](./audiolibrarycomponent.md)
   A container for audio resources that you can look up by user-defined names.
-- [AudioResource.Calibration](audioresource/calibration.md)
+- [AudioResource.Calibration](./audioresource/calibration.md)
   A container for different calibration modes that can be applied for playback.
-- [AudioResource.Normalization](audioresource/normalization.md)
+- [AudioResource.Normalization](./audioresource/normalization.md)
   Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 

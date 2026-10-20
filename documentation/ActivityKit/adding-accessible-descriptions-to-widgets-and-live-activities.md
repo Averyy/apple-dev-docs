@@ -1,6 +1,7 @@
 # Adding accessible descriptions to widgets and Live Activities
 
-**Framework**: ActivityKit
+**Framework**: ActivityKit  
+**Role**: Article
 
 Describe the interface elements of your widgets and Live Activities to help people understand what they represent.
 
@@ -8,11 +9,11 @@ Describe the interface elements of your widgets and Live Activities to help peop
 
 Designing with accessibility in mind is a foundational principle when creating an app. It also applies to widgets and Live Activities. To allow people to customize how they interact with your widget or Live Activity, to verify VoiceOver works correctly for them, and to help people understand what each interface element represents, add accessibility labels to the SwiftUI views you create for each widget and Live Activity presentation.
 
-##### Provide Accessibility Labels
+##### Provide accessibility labels
 
-Add accessibility labels for each SwiftUI view you use as needed and make sure your accessibility labels fit the widget or Live Activity content. To review API that allows you to add accessible descriptions to SwiftUI views, see [`Accessible descriptions`](https://developer.apple.com/documentation/swiftui/accessible-descriptions).
+Add accessibility labels for each SwiftUI view you use as needed and make sure your accessibility labels fit the widget or Live Activity content. To review API that allows you to add accessible descriptions to SwiftUI views, see [Accessible descriptions](../SwiftUI/accessible-descriptions.md).
 
-The example below shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app uses the [`accessibilityLabel(_:)`](https://developer.apple.com/documentation/swiftui/view/accessibilitylabel(_:)-1d7jv) modifier to add accessibility labels for minimal, compact leading, and compact trailing presentations.
+The example below shows how the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) app uses the [`accessibilityLabel(_:)`](../SwiftUI/view/accessibilitylabel%28_%29-1d7jv.md) modifier to add accessibility labels for minimal, compact leading, and compact trailing presentations.
 
 ```swift
 import SwiftUI
@@ -58,13 +59,14 @@ struct AdventureActivityConfiguration: Widget {
 }
 ```
 
-If you provide a content description for an image you update while a Live Activity is active and the image conveys status information or similar, make sure to also update the accessibility label to match the updated status. For example, if an image indicates a delivery status, make sure the accessibility label changes as the delivery status that the image indicates changes. Similarly, update accessibility labels when a widget updates displayed images or SwiftUI views. For guidance on providing content descriptions, see [`Human Interface Guidelines > Accessibility > VoiceOver > Content descriptions`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/foundations/accessibility#content-descriptions).
+If you provide a content description for an image you update while a Live Activity is active and the image conveys status information or similar, make sure to also update the accessibility label to match the updated status. For example, if an image indicates a delivery status, make sure the accessibility label changes as the delivery status that the image indicates changes. Similarly, update accessibility labels when a widget updates displayed images or SwiftUI views. For guidance on providing content descriptions, see [Human Interface Guidelines > Accessibility > VoiceOver > Content descriptions](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility#content-descriptions).
 
 ## See Also
 
-- [Creating custom views for Live Activities](creating-custom-views-for-live-activities.md)
+### User interface
+- [Creating custom views for Live Activities](./creating-custom-views-for-live-activities.md)
   Create reusable custom views and layouts that support each Live Activity presentation.
-- [Launching your app from a Live Activity](launching-your-app-from-a-live-activity.md)
+- [Launching your app from a Live Activity](./launching-your-app-from-a-live-activity.md)
   Use deep links to enable people to open your app’s scene that matches the data of you Live Activity.
 
 

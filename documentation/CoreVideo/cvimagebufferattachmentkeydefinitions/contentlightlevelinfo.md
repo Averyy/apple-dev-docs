@@ -1,7 +1,8 @@
 # contentLightLevelInfo
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The content light level information for the image.
 

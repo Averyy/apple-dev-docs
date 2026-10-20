@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an instance of this type that matches the specified exit status.
 

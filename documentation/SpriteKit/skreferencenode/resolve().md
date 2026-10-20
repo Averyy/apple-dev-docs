@@ -1,7 +1,8 @@
 # resolve()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the reference node’s content and adds it as a new child node.
 
@@ -18,6 +19,10 @@ Loads the reference node’s content and adds it as a new child node.
 
 ```swift
 func resolve()
+```
+
+```objc
+- (void) resolveReferenceNode;
 ```
 
 #### Discussion

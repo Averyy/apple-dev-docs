@@ -1,7 +1,8 @@
 # indicatorStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the scroll indicators.
 
@@ -9,7 +10,7 @@ The style of the scroll indicators.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,31 +19,36 @@ The style of the scroll indicators.
 var indicatorStyle: UIScrollView.IndicatorStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UIScrollViewIndicatorStyle indicatorStyle;
+```
+
 #### Discussion
 
-The default style is [`UIScrollView.IndicatorStyle.default`](uiscrollview/indicatorstyle-swift.enum/default.md). See [`UIScrollView.IndicatorStyle`](uiscrollview/indicatorstyle-swift.enum.md) for descriptions of these constants.
+The default style is [`UIScrollView.IndicatorStyle.default`](./indicatorstyle-swift.enum/default.md). See [`UIScrollView.IndicatorStyle`](./indicatorstyle-swift.enum.md) for descriptions of these constants.
 
 ## See Also
 
-- [UIScrollView.IndicatorStyle](uiscrollview/indicatorstyle-swift.enum.md)
+### Managing the scroll indicator and refresh control
+- [UIScrollView.IndicatorStyle](./indicatorstyle-swift.enum.md)
   Defines constants that represent the styles of the scroll indicators.
-- [var showsHorizontalScrollIndicator: Bool](uiscrollview/showshorizontalscrollindicator.md)
+- [var showsHorizontalScrollIndicator: Bool](./showshorizontalscrollindicator.md)
   A Boolean value that controls whether the horizontal scroll indicator is visible.
-- [var showsVerticalScrollIndicator: Bool](uiscrollview/showsverticalscrollindicator.md)
+- [var showsVerticalScrollIndicator: Bool](./showsverticalscrollindicator.md)
   A Boolean value that controls whether the vertical scroll indicator is visible.
-- [var horizontalScrollIndicatorInsets: UIEdgeInsets](uiscrollview/horizontalscrollindicatorinsets.md)
+- [var horizontalScrollIndicatorInsets: UIEdgeInsets](./horizontalscrollindicatorinsets.md)
   The horizontal distance the scroll indicators are inset from the edge of the scroll view.
-- [var verticalScrollIndicatorInsets: UIEdgeInsets](uiscrollview/verticalscrollindicatorinsets.md)
+- [var verticalScrollIndicatorInsets: UIEdgeInsets](./verticalscrollindicatorinsets.md)
   The vertical distance the scroll indicators are inset from the edge of the scroll view.
-- [var automaticallyAdjustsScrollIndicatorInsets: Bool](uiscrollview/automaticallyadjustsscrollindicatorinsets.md)
+- [var automaticallyAdjustsScrollIndicatorInsets: Bool](./automaticallyadjustsscrollindicatorinsets.md)
   A Boolean value that indicates whether the system automatically adjusts the scroll indicator insets.
-- [func flashScrollIndicators()](uiscrollview/flashscrollindicators.md)
+- [func flashScrollIndicators()](./flashscrollindicators%28%29.md)
   Displays the scroll indicators momentarily.
-- [func withScrollIndicatorsShown(forContentOffsetChanges: () -> Void)](uiscrollview/withscrollindicatorsshown(forcontentoffsetchanges:).md)
+- [func withScrollIndicatorsShown(forContentOffsetChanges: () -> Void)](./withscrollindicatorsshown%28forcontentoffsetchanges%29.md)
   Displays the scroll indicators during updates to the scroll view’s content offset.
-- [var refreshControl: UIRefreshControl?](uiscrollview/refreshcontrol.md)
+- [var refreshControl: UIRefreshControl?](./refreshcontrol.md)
   The refresh control associated with the scroll view.
-- [class UIRefreshControl](uirefreshcontrol.md)
+- [class UIRefreshControl](../uirefreshcontrol.md)
   A standard control that can initiate the refreshing of a scroll view’s contents.
 
 

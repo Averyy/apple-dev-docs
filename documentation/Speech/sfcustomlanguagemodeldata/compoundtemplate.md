@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.CompoundTemplate
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A class supporting the custom language model training data result builder. You are not intended to use this directly.
 
@@ -22,18 +23,19 @@ struct CompoundTemplate
 ## Topics
 
 ### Result builder methods
-- [init([any TemplateInsertable])](sfcustomlanguagemodeldata/compoundtemplate/init(_:).md)
+- [init([any TemplateInsertable])](./compoundtemplate/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [TemplateInsertable](templateinsertable.md)
+- [TemplateInsertable](../templateinsertable.md)
 
 ## See Also
 
-- [protocol DataInsertable](datainsertable.md)
+### Result builder support
+- [protocol DataInsertable](../datainsertable.md)
   A protocol supporting the custom language model training data result builder.
-- [protocol TemplateInsertable](templateinsertable.md)
+- [protocol TemplateInsertable](../templateinsertable.md)
   A protocol supporting the custom language model training data result builder.
 
 

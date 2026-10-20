@@ -1,7 +1,8 @@
 # minimumNumberOfTouchesForScrolling
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum number of touches needed for scrolling
 
@@ -12,6 +13,10 @@ The minimum number of touches needed for scrolling
 
 ```swift
 var minimumNumberOfTouchesForScrolling: Int { get set }
+```
+
+```objc
+@property NSInteger minimumNumberOfTouchesForScrolling;
 ```
 
 #### Discussion

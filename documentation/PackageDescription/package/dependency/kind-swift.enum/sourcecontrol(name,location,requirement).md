@@ -1,7 +1,8 @@
 # Package.Dependency.Kind.sourceControl(name:location:requirement:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A dependency based on a source control requirement.
 

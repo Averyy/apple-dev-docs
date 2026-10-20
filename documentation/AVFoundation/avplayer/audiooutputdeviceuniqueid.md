@@ -1,7 +1,8 @@
 # audioOutputDeviceUniqueID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the unique ID of the Core Audio output device used to play audio.
 
@@ -15,15 +16,20 @@ nonisolated
 var audioOutputDeviceUniqueID: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * audioOutputDeviceUniqueID;
+```
+
 #### Discussion
 
 The default value of this property is `nil`, indicating that the default audio output device is used. Otherwise the value of this property is a string containing the unique ID of the Core Audio output device to be used for audio output.
 
-Core Audio’s [`kAudioDevicePropertyDeviceUID`](https://developer.apple.com/documentation/coreaudio/kaudiodevicepropertydeviceuid) is a suitable source of audio output device unique IDs.
+Core Audio’s [`kAudioDevicePropertyDeviceUID`](../../CoreAudio/kaudiodevicepropertydeviceuid.md) is a suitable source of audio output device unique IDs.
 
 ## See Also
 
-- [var preferredVideoDecoderGPURegistryID: UInt64](avplayer/preferredvideodecodergpuregistryid.md)
+### Configuring audio and video devices
+- [var preferredVideoDecoderGPURegistryID: UInt64](./preferredvideodecodergpuregistryid.md)
   The registry identifier for the GPU used for video decoding.
 
 

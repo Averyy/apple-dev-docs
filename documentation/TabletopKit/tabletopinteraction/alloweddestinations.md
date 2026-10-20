@@ -1,7 +1,8 @@
 # TabletopInteraction.AllowedDestinations
 
 **Framework**: TabletopKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible destinations of equipment in an interaction.
 
@@ -17,26 +18,27 @@ enum AllowedDestinations
 ## Topics
 
 ### Destinations
-- [TabletopInteraction.AllowedDestinations.any](tabletopinteraction/alloweddestinations/any.md)
+- [TabletopInteraction.AllowedDestinations.any](./alloweddestinations/any.md)
   Any equipment is allowed to be the proposed destination
-- [TabletopInteraction.AllowedDestinations.restricted(_:)](tabletopinteraction/alloweddestinations/restricted(_:).md)
+- [TabletopInteraction.AllowedDestinations.restricted(_:)](./alloweddestinations/restricted%28_%29.md)
   Restricts the proposed destination to the given identifiers
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setConfiguration(TabletopInteraction.Configuration)](tabletopinteraction/setconfiguration(_:).md)
+### Managing the interaction destination
+- [func setConfiguration(TabletopInteraction.Configuration)](./setconfiguration%28_%29.md)
   Sets the configuration of this interaction.
-- [TabletopInteraction.Configuration](tabletopinteraction/configuration.md)
-- [TabletopInteraction.Destination](tabletopinteraction/destination.md)
+- [TabletopInteraction.Configuration](./configuration.md)
+- [TabletopInteraction.Destination](./destination.md)
   An object that represents the destination position and orientation of equipment in an interaction.
-- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](tabletopinteraction/setalloweddestinations(_:).md)
+- [func setAllowedDestinations(TabletopInteraction.AllowedDestinations)](./setalloweddestinations%28_%29.md)
   Sets which equipment the interaction can target.
 
 

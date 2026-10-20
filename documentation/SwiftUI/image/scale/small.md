@@ -1,7 +1,8 @@
 # Image.Scale.small
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scale that produces small images.
 
@@ -22,9 +23,10 @@ case small
 
 ## See Also
 
-- [Image.Scale.medium](image/scale/medium.md)
+### Getting image scales
+- [Image.Scale.medium](./medium.md)
   A scale that produces medium-sized images.
-- [Image.Scale.large](image/scale/large.md)
+- [Image.Scale.large](./large.md)
   A scale that produces large images.
 
 

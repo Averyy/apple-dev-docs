@@ -1,7 +1,8 @@
 # CFNetServiceClientContext
 
 **Framework**: CFNetwork  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure provided when a CFNetService is associated with a callback function or when a CFNetServiceBrowser is created.
 
@@ -19,61 +20,66 @@ A structure provided when a CFNetService is associated with a callback function 
 struct CFNetServiceClientContext
 ```
 
+```c
+struct CFNetServiceClientContext;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cfnetserviceclientcontext/init.md)
+- [init()](./cfnetserviceclientcontext/init%28%29.md)
   Creates an object that contains user-defined data and callbacks for net service browsers.
-- [init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: CFAllocatorRetainCallBack?, release: CFAllocatorReleaseCallBack?, copyDescription: CFAllocatorCopyDescriptionCallBack?)](cfnetserviceclientcontext/init(version:info:retain:release:copydescription:).md)
+- [init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: CFAllocatorRetainCallBack?, release: CFAllocatorReleaseCallBack?, copyDescription: CFAllocatorCopyDescriptionCallBack?)](./cfnetserviceclientcontext/init%28version,info,retain,release,copydescription%29.md)
   Creates an object that contains user-defined data and callbacks for net service browsers using the specified values.
 ### Instance Properties
-- [var copyDescription: CFAllocatorCopyDescriptionCallBack?](cfnetserviceclientcontext/copydescription.md)
+- [var copyDescription: CFAllocatorCopyDescriptionCallBack?](./cfnetserviceclientcontext/copydescription.md)
   Callback used to create a descriptive string representation of the data pointed to by `info`. In implementing this function, return a reference to a CFString object that describes your allocator and some characteristics of your user-defined data, which is used by `CFCopyDescription()`. You can set this field to `NULL`, in which case Core Foundation will provide a rudimentary description.
-- [var info: UnsafeMutableRawPointer?](cfnetserviceclientcontext/info.md)
+- [var info: UnsafeMutableRawPointer?](./cfnetserviceclientcontext/info.md)
   Arbitrary pointer to user-allocated memory containing user-defined data that is associated with the service, browser, or monitor and is passed to their respective callback functions. The data must be valid for as long as the CFNetService, CFNetServiceBrowser, or CFNetServiceMonitor is valid. Set this field to `NULL` if your callback function doesn’t want to receive user-defined data.
-- [var release: CFAllocatorReleaseCallBack?](cfnetserviceclientcontext/release.md)
+- [var release: CFAllocatorReleaseCallBack?](./cfnetserviceclientcontext/release.md)
   Callback that removes a retain previously added for the service or browser on the `info` pointer. This field can be `NULL`, but setting this field to `NULL` may result in memory leaks.
-- [var retain: CFAllocatorRetainCallBack?](cfnetserviceclientcontext/retain.md)
+- [var retain: CFAllocatorRetainCallBack?](./cfnetserviceclientcontext/retain.md)
   The callback used to add a retain for the service or browser using `info` for the life of the service or browser. This callback may be used for temporary references the service or browser needs to take. This callback returns the actual `info` pointer so it can be stored in the service or browser. This field can be `NULL`.
-- [var version: CFIndex](cfnetserviceclientcontext/version.md)
+- [var version: CFIndex](./cfnetserviceclientcontext/version.md)
   Version number for this structure. Currently the only valid value is zero.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [class CFNetService](cfnetservice.md)
+### Network Services
+- [class CFNetService](./cfnetservice.md)
   An opaque reference representing a CFNetService.
-- [class CFNetServiceBrowser](cfnetservicebrowser.md)
+- [class CFNetServiceBrowser](./cfnetservicebrowser.md)
   An opaque reference representing a CFNetServiceBrowser.
-- [struct CFNetServiceBrowserFlags](cfnetservicebrowserflags.md)
+- [struct CFNetServiceBrowserFlags](./cfnetservicebrowserflags.md)
   Flags that the system passes to net service browser callbacks.
-- [class CFNetServiceMonitor](cfnetservicemonitor.md)
+- [class CFNetServiceMonitor](./cfnetservicemonitor.md)
   An opaque reference for a service monitor.
-- [enum CFNetServiceMonitorType](cfnetservicemonitortype.md)
+- [enum CFNetServiceMonitorType](./cfnetservicemonitortype.md)
   Record type specifier used to tell a service monitor the type of record changes to watch for.
-- [struct CFNetServiceRegisterFlags](cfnetserviceregisterflags.md)
+- [struct CFNetServiceRegisterFlags](./cfnetserviceregisterflags.md)
   Options to use when registering a service on the network.
-- [enum CFNetServicesError](cfnetserviceserror.md)
+- [enum CFNetServicesError](./cfnetserviceserror.md)
   Error codes that may be returned by CFNetServices functions or passed to CFNetServices callback functions.
-- [func CFNetServiceBrowserInvalidate(CFNetServiceBrowser)](cfnetservicebrowserinvalidate(_:).md)
+- [func CFNetServiceBrowserInvalidate(CFNetServiceBrowser)](./cfnetservicebrowserinvalidate%28_%29.md)
   Invalidates an instance of a Network Service browser object.
-- [func CFNetServiceBrowserScheduleWithRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](cfnetservicebrowserschedulewithrunloop(_:_:_:).md)
+- [func CFNetServiceBrowserScheduleWithRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](./cfnetservicebrowserschedulewithrunloop%28_,_,_%29.md)
   Schedules a CFNetServiceBrowser on a run loop.
-- [func CFNetServiceBrowserCreate(CFAllocator?, CFNetServiceBrowserClientCallBack, UnsafeMutablePointer<CFNetServiceClientContext>) -> Unmanaged<CFNetServiceBrowser>](cfnetservicebrowsercreate(_:_:_:).md)
+- [func CFNetServiceBrowserCreate(CFAllocator?, CFNetServiceBrowserClientCallBack, UnsafeMutablePointer<CFNetServiceClientContext>) -> Unmanaged<CFNetServiceBrowser>](./cfnetservicebrowsercreate%28_,_,_%29.md)
   Creates an instance of a Network Service browser object.
-- [func CFNetServiceBrowserGetTypeID() -> CFTypeID](cfnetservicebrowsergettypeid().md)
+- [func CFNetServiceBrowserGetTypeID() -> CFTypeID](./cfnetservicebrowsergettypeid%28%29.md)
   Gets the Core Foundation type identifier for the Network Service browser object.
-- [func CFNetServiceBrowserSearchForDomains(CFNetServiceBrowser, Bool, UnsafeMutablePointer<CFStreamError>?) -> Bool](cfnetservicebrowsersearchfordomains(_:_:_:).md)
+- [func CFNetServiceBrowserSearchForDomains(CFNetServiceBrowser, Bool, UnsafeMutablePointer<CFStreamError>?) -> Bool](./cfnetservicebrowsersearchfordomains%28_,_,_%29.md)
   Searches for domains.
-- [func CFNetServiceBrowserSearchForServices(CFNetServiceBrowser, CFString, CFString, UnsafeMutablePointer<CFStreamError>?) -> Bool](cfnetservicebrowsersearchforservices(_:_:_:_:).md)
+- [func CFNetServiceBrowserSearchForServices(CFNetServiceBrowser, CFString, CFString, UnsafeMutablePointer<CFStreamError>?) -> Bool](./cfnetservicebrowsersearchforservices%28_,_,_,_%29.md)
   Searches a domain for services of a specified type.
-- [func CFNetServiceBrowserStopSearch(CFNetServiceBrowser, UnsafeMutablePointer<CFStreamError>?)](cfnetservicebrowserstopsearch(_:_:).md)
+- [func CFNetServiceBrowserStopSearch(CFNetServiceBrowser, UnsafeMutablePointer<CFStreamError>?)](./cfnetservicebrowserstopsearch%28_,_%29.md)
   Stops a search for domains or services.
-- [func CFNetServiceBrowserUnscheduleFromRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](cfnetservicebrowserunschedulefromrunloop(_:_:_:).md)
+- [func CFNetServiceBrowserUnscheduleFromRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](./cfnetservicebrowserunschedulefromrunloop%28_,_,_%29.md)
   Unschedules a CFNetServiceBrowser from a run loop and mode.
 
 

@@ -1,7 +1,8 @@
 # clippingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clipping behavior of the portal component.
 
@@ -21,7 +22,7 @@ var clippingMode: PortalComponent.ClippingMode { get set }
 
 #### Discussion
 
-Provide a [`PortalComponent.ClippingMode`](portalcomponent/clippingmode-swift.enum.md) to configure the clipping behaviors.
+Provide a [`PortalComponent.ClippingMode`](./clippingmode-swift.enum.md) to configure the clipping behaviors.
 
 
 ---

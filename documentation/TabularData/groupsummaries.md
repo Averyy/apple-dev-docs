@@ -1,7 +1,8 @@
 # GroupSummaries
 
 **Framework**: TabularData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A collection of group summaries.
 
@@ -23,25 +24,26 @@ protocol GroupSummaries : CustomStringConvertible
 ## Topics
 
 ### Instance Properties
-- [var description: String](groupsummaries/description.md)
+- [var description: String](./groupsummaries/description.md)
   A text representation of the group summaries.
 ### Instance Methods
-- [func description(options: FormattingOptions) -> String](groupsummaries/description(options:).md)
+- [func description(options: FormattingOptions) -> String](./groupsummaries/description%28options%29.md)
   Generates a text representation of the group summaries.
 ### Subscripts
-- [subscript(Any?...) -> DataFrame?](groupsummaries/subscript(_:).md)
+- [subscript(Any?...) -> DataFrame?](./groupsummaries/subscript%28_%29.md)
   Retrieves one or more summaries by their group keys.
 
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [func summary() -> any GroupSummaries](rowgrouping/summary.md)
+### Summarizing a Row Grouping
+- [func summary() -> any GroupSummaries](./rowgrouping/summary%28%29.md)
   Generates a group summaries instance for the columns of the row grouping.
-- [func summary(of: [String]) -> any GroupSummaries](rowgrouping/summary(of:).md)
+- [func summary(of: [String]) -> any GroupSummaries](./rowgrouping/summary%28of%29.md)
   Generates a group summaries instance for the columns you select by name.
 
 

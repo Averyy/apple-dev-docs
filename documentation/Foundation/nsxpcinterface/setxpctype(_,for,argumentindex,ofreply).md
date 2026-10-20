@@ -1,7 +1,8 @@
 # setXPCType(_:for:argumentIndex:ofReply:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func setXPCType(_ type: xpc_type_t, for sel: Selector, argumentIndex arg: Int, ofReply: Bool)
+```
+
+```objc
+- (void) setXPCType:(xpc_type_t) type forSelector:(SEL) sel argumentIndex:(NSUInteger) arg ofReply:(BOOL) ofReply;
 ```
 
 

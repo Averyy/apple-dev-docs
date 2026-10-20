@@ -1,7 +1,8 @@
 # namespaces
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets all of the namespace nodes of the receiver at once, replacing any existing namespace nodes.
 
@@ -15,21 +16,26 @@ Sets all of the namespace nodes of the receiver at once, replacing any existing 
 var namespaces: [XMLNode]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSXMLNode *> * namespaces;
+```
+
 ## Parameters
 
-- `namespaces`: An array of [`XMLNode`](xmlnode.md) objects of kind [`XMLNode.Kind.namespace`](xmlnode/kind-swift.enum/namespace.md).  If there are namespace nodes with the same prefix, the first attribute with that prefix is used. Send this message with `namespaces` as `nil` to remove all namespace nodes.
+- `namespaces`: An array of [`XMLNode`](../xmlnode.md) objects of kind [`XMLNode.Kind.namespace`](../xmlnode/kind-swift.enum/namespace.md).  If there are namespace nodes with the same prefix, the first attribute with that prefix is used. Send this message with `namespaces` as `nil` to remove all namespace nodes.
 
 ## See Also
 
-- [func addNamespace(XMLNode)](xmlelement/addnamespace(_:).md)
+### Handling Namespaces
+- [func addNamespace(XMLNode)](./addnamespace%28_%29.md)
   Adds a namespace node to the receiver.
-- [func namespace(forPrefix: String) -> XMLNode?](xmlelement/namespace(forprefix:).md)
+- [func namespace(forPrefix: String) -> XMLNode?](./namespace%28forprefix%29.md)
   Returns the namespace node with a specified prefix.
-- [func removeNamespace(forPrefix: String)](xmlelement/removenamespace(forprefix:).md)
+- [func removeNamespace(forPrefix: String)](./removenamespace%28forprefix%29.md)
   Removes a namespace node that is identified by a given prefix.
-- [func resolveNamespace(forName: String) -> XMLNode?](xmlelement/resolvenamespace(forname:).md)
+- [func resolveNamespace(forName: String) -> XMLNode?](./resolvenamespace%28forname%29.md)
   Returns the namespace node with the prefix matching the given qualified name.
-- [func resolvePrefix(forNamespaceURI: String) -> String?](xmlelement/resolveprefix(fornamespaceuri:).md)
+- [func resolvePrefix(forNamespaceURI: String) -> String?](./resolveprefix%28fornamespaceuri%29.md)
   Returns the prefix associated with the specified URI.
 
 

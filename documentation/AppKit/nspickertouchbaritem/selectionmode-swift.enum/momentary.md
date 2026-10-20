@@ -1,7 +1,8 @@
 # NSPickerTouchBarItem.SelectionMode.momentary
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode in which an option is only selected while a person is interacting within the bounds of that option.
 
@@ -17,11 +18,16 @@ A mode in which an option is only selected while a person is interacting within 
 case momentary
 ```
 
+```c
+NSPickerTouchBarItemSelectionModeMomentary
+```
+
 ## See Also
 
-- [NSPickerTouchBarItem.SelectionMode.selectOne](nspickertouchbaritem/selectionmode-swift.enum/selectone.md)
+### Selection modes
+- [NSPickerTouchBarItem.SelectionMode.selectOne](./selectone.md)
   A mode in which a person can only select one option in the control at a time.
-- [NSPickerTouchBarItem.SelectionMode.selectAny](nspickertouchbaritem/selectionmode-swift.enum/selectany.md)
+- [NSPickerTouchBarItem.SelectionMode.selectAny](./selectany.md)
   A mode in which a person can select one or more options in the control at a time.
 
 

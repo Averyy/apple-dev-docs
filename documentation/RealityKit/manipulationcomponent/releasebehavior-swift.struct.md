@@ -1,7 +1,8 @@
 # ManipulationComponent.ReleaseBehavior
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A behavior describing the path the object takes when it’s released after an interaction.
 
@@ -17,17 +18,17 @@ struct ReleaseBehavior
 ## Topics
 
 ### Type Properties
-- [static var reset: ManipulationComponent.ReleaseBehavior](manipulationcomponent/releasebehavior-swift.struct/reset.md)
+- [static var reset: ManipulationComponent.ReleaseBehavior](./releasebehavior-swift.struct/reset.md)
   The object animates back to its initial pose relative to its parent.
-- [static var stay: ManipulationComponent.ReleaseBehavior](manipulationcomponent/releasebehavior-swift.struct/stay.md)
+- [static var stay: ManipulationComponent.ReleaseBehavior](./releasebehavior-swift.struct/stay.md)
   The object stops immediately when released.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

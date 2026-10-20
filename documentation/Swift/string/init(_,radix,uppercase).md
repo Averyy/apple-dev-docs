@@ -1,7 +1,8 @@
 # init(_:radix:uppercase:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string representing the given value in base 10, or some other specified base.
 

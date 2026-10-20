@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional image to display in the overlay.
 
@@ -14,6 +15,10 @@ An optional image to display in the overlay.
 
 ```swift
 var image: UIImage? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) UIImage * image;
 ```
 
 

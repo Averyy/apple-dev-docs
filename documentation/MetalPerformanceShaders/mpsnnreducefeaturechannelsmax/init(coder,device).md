@@ -1,7 +1,8 @@
 # init(coder:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init?(coder aDecoder: NSCoder, device: any MTLDevice)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
 ```
 
 

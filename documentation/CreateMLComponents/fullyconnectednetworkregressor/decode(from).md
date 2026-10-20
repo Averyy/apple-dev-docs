@@ -1,7 +1,8 @@
 # decode(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes the estimator.
 
@@ -19,6 +20,8 @@ Decodes the estimator.
 ```swift
 func decode(from decoder: inout any EstimatorDecoder) throws -> FullyConnectedNetworkRegressorModel<Scalar>
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 #### Return Value
 

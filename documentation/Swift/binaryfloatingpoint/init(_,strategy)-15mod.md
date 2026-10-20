@@ -1,7 +1,8 @@
 # init(_:strategy:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an instance by parsing `value` with the given `strategy`.
 

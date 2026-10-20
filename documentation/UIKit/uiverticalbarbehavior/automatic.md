@@ -1,7 +1,8 @@
 # UIVerticalBarBehavior.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system determines whether the vertical bar is rendered.
 
@@ -18,9 +19,14 @@ The system determines whether the vertical bar is rendered.
 case automatic
 ```
 
+```c
+UIVerticalBarBehaviorAutomatic
+```
+
 ## See Also
 
-- [UIVerticalBarBehavior.disabled](uiverticalbarbehavior/disabled.md)
+### Specifying vertical bar behavior
+- [UIVerticalBarBehavior.disabled](./disabled.md)
   The vertical bar is disabled.
 
 

@@ -1,7 +1,8 @@
 # toolbarPrincipal
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The search field appears in the principal section of the toolbar.
 

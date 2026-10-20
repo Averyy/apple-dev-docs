@@ -1,7 +1,8 @@
 # NSTextTableBlock
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A text block that appears as a cell in a text table.
 
@@ -14,48 +15,53 @@ A text block that appears as a cell in a text table.
 class NSTextTableBlock
 ```
 
+```objc
+@interface NSTextTableBlock : NSTextBlock
+```
+
 ## Topics
 
 ### Creation
-- [init(table: NSTextTable, startingRow: Int, rowSpan: Int, startingColumn: Int, columnSpan: Int)](nstexttableblock/init(table:startingrow:rowspan:startingcolumn:columnspan:).md)
+- [init(table: NSTextTable, startingRow: Int, rowSpan: Int, startingColumn: Int, columnSpan: Int)](./nstexttableblock/init%28table,startingrow,rowspan,startingcolumn,columnspan%29.md)
   Returns an initialized text table block.
 ### Getting the block’s enclosing table
-- [var table: NSTextTable](nstexttableblock/table.md)
+- [var table: NSTextTable](./nstexttableblock/table.md)
   Returns the table containing this text table block.
 ### Getting information about the block’s position in its enclosing table
-- [var startingRow: Int](nstexttableblock/startingrow.md)
+- [var startingRow: Int](./nstexttableblock/startingrow.md)
   Returns the table row at which this text table block starts.
-- [var rowSpan: Int](nstexttableblock/rowspan.md)
+- [var rowSpan: Int](./nstexttableblock/rowspan.md)
   Returns the number of table rows spanned by this text table block.
-- [var startingColumn: Int](nstexttableblock/startingcolumn.md)
+- [var startingColumn: Int](./nstexttableblock/startingcolumn.md)
   Returns the table column at which this text table block starts.
-- [var columnSpan: Int](nstexttableblock/columnspan.md)
+- [var columnSpan: Int](./nstexttableblock/columnspan.md)
   Returns the number of table columns spanned by this text table block.
 ### Initializers
-- [init?(coder: NSCoder)](nstexttableblock/init(coder:).md)
+- [init?(coder: NSCoder)](./nstexttableblock/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSTextBlock](nstextblock.md)
+- [NSTextBlock](./nstextblock.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSTextTable](nstexttable.md)
+### Tables
+- [class NSTextTable](./nstexttable.md)
   An object that represents a text table as a whole.
-- [class NSTextBlock](nstextblock.md)
+- [class NSTextBlock](./nstextblock.md)
   A block of text laid out in a subregion of the text container.
 
 

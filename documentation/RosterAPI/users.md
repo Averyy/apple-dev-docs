@@ -1,7 +1,8 @@
 # Users
 
 **Framework**: Roster API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A list of users, with a token for pagination.
 
@@ -10,27 +11,28 @@ A list of users, with a token for pagination.
 
 ## Declaration
 
-```swift
+```
 object Users
 ```
 
 ## Properties
 
 - `moreToFollow` (boolean): A flag that indicates whether there are more users. If `true`, use the `nextPageToken` to request another list from the remaining users.
-- `nextPageToken` (string): A token to request additional users, if any. Use this as the `nextPageToken` parameter for the [`List users`](returns-a-list-of-users-in-an-apple-school-manager-organization.md) request.
-- `users` ([User]): A list of [`User`](user.md) objects.
+- `nextPageToken` (string): A token to request additional users, if any. Use this as the `nextPageToken` parameter for the [`List users`](./returns-a-list-of-users-in-an-apple-school-manager-organization.md) request.
+- `users` ([User]): A list of [`User`](./user.md) objects.
 
 ## See Also
 
-- [Read a user](returns-a-specific-user-in-an-apple-school-manager-organization.md)
+### Information about users
+- [Read a user](./returns-a-specific-user-in-an-apple-school-manager-organization.md)
   Read a user in an Apple School Manager organization.
-- [object User](user.md)
+- [object User](./user.md)
   A user in an Apple School Manager organization.
-- [object RoleLocation](rolelocation.md)
+- [object RoleLocation](./rolelocation.md)
   A mapping between a role assumed by a user in an Apple School Manager organization, and the corresponding location.
-- [List users](returns-a-list-of-users-in-an-apple-school-manager-organization.md)
+- [List users](./returns-a-list-of-users-in-an-apple-school-manager-organization.md)
   List users in an Apple School Manager organization.
-- [List users in a class](returns-a-users-for-an-apple-school-manager-class.md)
+- [List users in a class](./returns-a-users-for-an-apple-school-manager-class.md)
   List users in a class of an Apple School Manager organization.
 
 

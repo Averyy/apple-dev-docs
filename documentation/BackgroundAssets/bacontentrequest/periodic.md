@@ -1,7 +1,8 @@
 # BAContentRequest.periodic
 
 **Framework**: Background Assets  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content request resulting from a system request for updated content within the app.
 
@@ -19,13 +20,18 @@ A content request resulting from a system request for updated content within the
 case periodic
 ```
 
+```c
+BAContentRequestPeriodic
+```
+
 ## See Also
 
-- [BAContentRequest.install](bacontentrequest/install.md)
+### Content request types
+- [BAContentRequest.install](./install.md)
   A content request resulting from the installation of the app.
-- [BAContentRequest.update](bacontentrequest/update.md)
+- [BAContentRequest.update](./update.md)
   A content request resulting from an update of the app.
-- [BAContentRequest.languageChange](bacontentrequest/languagechange.md)
+- [BAContentRequest.languageChange](./languagechange.md)
   A content request resulting from someone changing the app’s preferred language.
 
 

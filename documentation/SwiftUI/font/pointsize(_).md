@@ -1,7 +1,8 @@
 # pointSize(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the point size of the font explicitly.
 
@@ -22,7 +23,7 @@ func pointSize(_ size: CGFloat) -> Font
 
 #### Discussion
 
-Setting the point size explicitly will result in style based fonts no longer scaling with the device’s preferred text size. To scale a font’s size relative to its current size, see [`scaled(by:)`](font/scaled(by:).md).
+Setting the point size explicitly will result in style based fonts no longer scaling with the device’s preferred text size. To scale a font’s size relative to its current size, see [`scaled(by:)`](./scaled%28by%29.md).
 
 
 ---

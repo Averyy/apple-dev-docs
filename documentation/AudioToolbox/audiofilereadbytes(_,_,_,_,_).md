@@ -1,7 +1,8 @@
 # AudioFileReadBytes(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Reads bytes of audio data from an audio file.
 
@@ -19,13 +20,17 @@ Reads bytes of audio data from an audio file.
 func AudioFileReadBytes(_ inAudioFile: AudioFileID, _ inUseCache: Bool, _ inStartingByte: Int64, _ ioNumBytes: UnsafeMutablePointer<UInt32>, _ outBuffer: UnsafeMutableRawPointer) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileReadBytes(AudioFileID inAudioFile, Boolean inUseCache, SInt64 inStartingByte, UInt32 *ioNumBytes, void *outBuffer);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
 
 #### Discussion
 
-In most cases, you should use [`AudioFileReadPackets(_:_:_:_:_:_:_:)`](audiofilereadpackets(_:_:_:_:_:_:_:).md) instead of this function.
+In most cases, you should use [`AudioFileReadPackets(_:_:_:_:_:_:_:)`](./audiofilereadpackets%28_,_,_,_,_,_,_%29.md) instead of this function.
 
 This function returns `eofErr` when the read operation encounters the end of the file.  Note that Audio File Services only reads one 32-bit chunk of a file at a time.
 
@@ -39,11 +44,12 @@ This function returns `eofErr` when the read operation encounters the end of the
 
 ## See Also
 
-- [func AudioFileWriteBytes(AudioFileID, Bool, Int64, UnsafeMutablePointer<UInt32>, UnsafeRawPointer) -> OSStatus](audiofilewritebytes(_:_:_:_:_:).md)
+### Reading and Writing Audio Files
+- [func AudioFileWriteBytes(AudioFileID, Bool, Int64, UnsafeMutablePointer<UInt32>, UnsafeRawPointer) -> OSStatus](./audiofilewritebytes%28_,_,_,_,_%29.md)
   Writes bytes of audio data to an audio file.
-- [func AudioFileReadPacketData(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audiofilereadpacketdata(_:_:_:_:_:_:_:).md)
+- [func AudioFileReadPacketData(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](./audiofilereadpacketdata%28_,_,_,_,_,_,_%29.md)
   Reads packets of audio data from an audio file.
-- [func AudioFileWritePackets(AudioFileID, Bool, UInt32, UnsafePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeRawPointer) -> OSStatus](audiofilewritepackets(_:_:_:_:_:_:_:).md)
+- [func AudioFileWritePackets(AudioFileID, Bool, UInt32, UnsafePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeRawPointer) -> OSStatus](./audiofilewritepackets%28_,_,_,_,_,_,_%29.md)
   Writes packets of audio data to an audio data file.
 
 

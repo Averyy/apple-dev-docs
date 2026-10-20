@@ -1,18 +1,19 @@
 # CFBundleCreateBundlesFromDirectory(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Searches a directory and constructs an array of CFBundle objects from all valid bundles in the specified directory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Searches a directory and constructs an array of CFBundle objects from all valid 
 func CFBundleCreateBundlesFromDirectory(_ allocator: CFAllocator!, _ directoryURL: CFURL!, _ bundleType: CFString!) -> CFArray!
 ```
 
+```c
+extern CFArrayRefCFBundleCreateBundlesFromDirectory(CFAllocatorRef allocator, CFURLRef directoryURL, CFStringRef bundleType);
+```
+
 #### Return Value
 
-A CFArray object containing CFBundle objects created from the contents of the specified directory. Returns an empty array if no bundles exist at `directoryURL`, and `NULL` if there was a memory allocation problem. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A CFArray object containing CFBundle objects created from the contents of the specified directory. Returns an empty array if no bundles exist at `directoryURL`, and `NULL` if there was a memory allocation problem. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -30,23 +35,24 @@ The array returned by this function will not contain stale CFBundle references.
 
 ##### Special Considerations
 
-The [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) applies both to the array returned and to the bundles in the array. In order to properly dispose of the returned value, you must release the array *and* any bundles returned in the array.
+The [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) applies both to the array returned and to the bundles in the array. In order to properly dispose of the returned value, you must release the array *and* any bundles returned in the array.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `directoryURL`: The location of the directory to search for valid bundles.
 - `bundleType`: The abstract type of the bundles to locate and create. The type is expressed as a filename extension, such as `bundle`. Pass `NULL` to create CFBundle objects for bundles of any type.
 
 ## See Also
 
-- [func CFBundleCreate(CFAllocator!, CFURL!) -> CFBundle!](cfbundlecreate(_:_:).md)
+### Creating and Accessing Bundles
+- [func CFBundleCreate(CFAllocator!, CFURL!) -> CFBundle!](./cfbundlecreate%28_,_%29.md)
   Creates a CFBundle object.
-- [func CFBundleGetAllBundles() -> CFArray!](cfbundlegetallbundles().md)
+- [func CFBundleGetAllBundles() -> CFArray!](./cfbundlegetallbundles%28%29.md)
   Returns an array containing all of the bundles currently open in the application.
-- [func CFBundleGetBundleWithIdentifier(CFString!) -> CFBundle!](cfbundlegetbundlewithidentifier(_:).md)
+- [func CFBundleGetBundleWithIdentifier(CFString!) -> CFBundle!](./cfbundlegetbundlewithidentifier%28_%29.md)
   Locate a bundle given its program-defined identifier.
-- [func CFBundleGetMainBundle() -> CFBundle!](cfbundlegetmainbundle().md)
+- [func CFBundleGetMainBundle() -> CFBundle!](./cfbundlegetmainbundle%28%29.md)
   Returns an application’s main bundle.
 
 

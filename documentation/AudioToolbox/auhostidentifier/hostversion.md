@@ -1,15 +1,20 @@
 # hostVersion
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var hostVersion: AUNumVersion
+```
+
+```c
+AUNumVersion hostVersion;
 ```
 
 

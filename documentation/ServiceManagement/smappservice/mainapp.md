@@ -1,7 +1,8 @@
 # mainApp
 
 **Framework**: Service Management  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An app service object that corresponds to the main application as a login item.
 
@@ -15,17 +16,22 @@ An app service object that corresponds to the main application as a login item.
 class var mainApp: SMAppService { get }
 ```
 
+```objc
+@property (class, readonly) SMAppService * mainAppService;
+```
+
 #### Discussion
 
 Use this `SMAppService` to configure the main app to launch at login.
 
 ## See Also
 
-- [class func agent(plistName: String) -> Self](smappservice/agent(plistname:).md)
+### Managing apps
+- [class func agent(plistName: String) -> Self](./agent%28plistname%29.md)
   Initializes an app service object with a launch agent with the property list name you provide.
-- [class func daemon(plistName: String) -> Self](smappservice/daemon(plistname:).md)
+- [class func daemon(plistName: String) -> Self](./daemon%28plistname%29.md)
   Initializes an app service object with a launch daemon with the property list name you provide.
-- [class func loginItem(identifier: String) -> Self](smappservice/loginitem(identifier:).md)
+- [class func loginItem(identifier: String) -> Self](./loginitem%28identifier%29.md)
   Initializes an app service object for a login item corresponding to the bundle with the identifier you provide.
 
 

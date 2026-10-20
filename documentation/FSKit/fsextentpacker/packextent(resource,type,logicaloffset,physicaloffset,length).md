@@ -1,7 +1,8 @@
 # packExtent(resource:type:logicalOffset:physicalOffset:length:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Packs a single extent to send to the kernel.
 
@@ -12,6 +13,10 @@ Packs a single extent to send to the kernel.
 
 ```swift
 func packExtent(resource: FSBlockDeviceResource, type: FSExtentType, logicalOffset: off_t, physicalOffset: off_t, length: Int) -> Bool
+```
+
+```objc
+- (BOOL) packExtentWithResource:(FSBlockDeviceResource *) resource type:(FSExtentType) type logicalOffset:(off_t) logicalOffset physicalOffset:(off_t) physicalOffset length:(size_t) length;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ A Boolean value that indicates whether the packer can pack more extents.
 
 ## See Also
 
-- [enum FSExtentType](fsextenttype.md)
+### Packing extents
+- [enum FSExtentType](../fsextenttype.md)
   An enumeration of types of extents.
 
 

@@ -1,7 +1,8 @@
 # defaultResolverSpecification
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 static var defaultResolverSpecification: some ResolverSpecification { get }
 ```
+
+Available when `Entity` conforms to `AppEntity`.
 
 
 ---

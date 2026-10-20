@@ -1,7 +1,8 @@
 # iconURL
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of an icon that represents the audio unit component.
 
@@ -14,17 +15,22 @@ The URL of an icon that represents the audio unit component.
 var iconURL: URL? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSURL * iconURL;
+```
+
 ## See Also
 
-- [var icon: UIImage?](avaudiounitcomponent/icon.md)
+### Getting Audio Unit component tags
+- [var icon: UIImage?](./icon.md)
   An icon that represents the component.
-- [var localizedTypeName: String](avaudiounitcomponent/localizedtypename.md)
+- [var localizedTypeName: String](./localizedtypename.md)
   The localized type name of the component.
-- [var allTagNames: [String]](avaudiounitcomponent/alltagnames.md)
+- [var allTagNames: [String]](./alltagnames.md)
   An array of tag names for the audio unit component.
-- [var userTagNames: [String]](avaudiounitcomponent/usertagnames.md)
+- [var userTagNames: [String]](./usertagnames.md)
   An array of tags the user creates.
-- [AVAudioUnitComponent.TagsDidChangeMessage](avaudiounitcomponent/tagsdidchangemessage.md)
+- [AVAudioUnitComponent.TagsDidChangeMessage](./tagsdidchangemessage.md)
   Type-safe notification message for audio unit component tag changes.
 
 

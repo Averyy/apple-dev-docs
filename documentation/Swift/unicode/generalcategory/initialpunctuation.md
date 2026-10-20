@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.initialPunctuation
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An initial quotation mark.
 
@@ -22,7 +23,7 @@ case initialPunctuation
 
 #### Discussion
 
-This value corresponds to the category `Initial_Punctuation` (abbreviated `Pi`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Initial_Punctuation` (abbreviated `Pi`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

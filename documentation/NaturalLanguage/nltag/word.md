@@ -1,7 +1,8 @@
 # word
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tag indicating that the token is a word.
 
@@ -20,13 +21,18 @@ A tag indicating that the token is a word.
 static let word: NLTag
 ```
 
+```c
+extern NLTag const NLTagWord;
+```
+
 ## See Also
 
-- [static let punctuation: NLTag](nltag/punctuation.md)
+### Token types
+- [static let punctuation: NLTag](./punctuation.md)
   A tag indicating that the token is punctuation.
-- [static let whitespace: NLTag](nltag/whitespace.md)
+- [static let whitespace: NLTag](./whitespace.md)
   A tag indicating that the token is white space of any sort.
-- [static let other: NLTag](nltag/other.md)
+- [static let other: NLTag](./other.md)
   A tag indicating that the token is a non-linguistic item, such as a symbol.
 
 

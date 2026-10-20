@@ -1,7 +1,8 @@
 # invalidParameter
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ static let invalidParameter: NSError
 
 ## See Also
 
-- [static let allocationFailed: NSError](cmformatdescription/error/allocationfailed.md)
-- [static let valueNotAvailable: NSError](cmformatdescription/error/valuenotavailable.md)
+### Errors
+- [static let allocationFailed: NSError](./allocationfailed.md)
+- [static let valueNotAvailable: NSError](./valuenotavailable.md)
 
 
 ---

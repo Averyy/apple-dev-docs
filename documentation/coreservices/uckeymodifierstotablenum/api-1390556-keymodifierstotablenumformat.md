@@ -1,7 +1,8 @@
 # keyModifiersToTableNumFormat
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the format of the `UCKeyModifiersToTableNum` structure. Set to `kUCKeyModifiersToTableNumFormat`.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the format of the `UCKeyModifiersToTableN
 
 ```swift
 var keyModifiersToTableNumFormat: UInt16
+```
+
+```c
+UInt16 keyModifiersToTableNumFormat;
 ```
 
 

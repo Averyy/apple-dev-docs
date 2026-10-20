@@ -1,7 +1,8 @@
 # GameCenterChallengeUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a challenge.
 
@@ -10,16 +11,16 @@ The request body you use to update a challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeUpdateRequest.Data.Attributes](gamecenterchallengeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterChallengeUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a challenge resource.
-- [object GameCenterChallengeUpdateRequest.Data.Relationships](gamecenterchallengeupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterChallengeUpdateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -27,7 +28,7 @@ object GameCenterChallengeUpdateRequest.Data
 - `attributes` (GameCenterChallengeUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
 - `relationships` (GameCenterChallengeUpdateRequest.Data.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallenges`
 
 
 ---

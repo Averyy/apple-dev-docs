@@ -1,7 +1,8 @@
 # CXErrorCodeIncomingCallError.Code.filteredDuringRestrictedSharingMode
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -14,6 +15,10 @@
 
 ```swift
 case filteredDuringRestrictedSharingMode
+```
+
+```c
+CXErrorCodeIncomingCallErrorFilteredDuringRestrictedSharingMode
 ```
 
 

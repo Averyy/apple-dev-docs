@@ -1,7 +1,8 @@
 # RCSService.Business.ShowLocationAction.Method.query(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Search for location(s) by query.
 
@@ -20,9 +21,10 @@ Search is based on user’s current location. Examples: “restaurants”, “GS
 
 ## See Also
 
-- [RCSService.Business.ShowLocationAction.Method.coordinates(_:)](rcsservice/business/showlocationaction/method-swift.enum/coordinates(_:).md)
+### Determining location method
+- [RCSService.Business.ShowLocationAction.Method.coordinates(_:)](./coordinates%28_%29.md)
   Search for location using coordinates.
-- [struct CLLocationCoordinate2D](../corelocation/cllocationcoordinate2d.md)
+- [struct CLLocationCoordinate2D](../../../../../CoreLocation/cllocationcoordinate2d.md)
   The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
 
 

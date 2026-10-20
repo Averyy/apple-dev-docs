@@ -1,14 +1,15 @@
 # CopyClientEntitlements_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t CopyClientEntitlements_Invoke(const IORPC rpc, OSMetaClassBase *target, CopyClientEntitlements_Handler func);
 ```
 

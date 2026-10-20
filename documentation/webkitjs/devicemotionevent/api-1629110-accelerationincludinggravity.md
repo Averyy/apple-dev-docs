@@ -1,7 +1,8 @@
 # accelerationIncludingGravity
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The total acceleration of the device, which includes the user acceleration and the gravity.
 
@@ -10,23 +11,24 @@ The total acceleration of the device, which includes the user acceleration and t
 
 ## Declaration
 
-```swift
+```
 readonly attribute Acceleration accelerationIncludingGravity;
 ```
 
 #### Discussion
 
-The acceleration data is expressed in m/s^2 and use the `x`, `y`, and `z` axis properties described in [`acceleration`](devicemotionevent/1629483-acceleration.md). This property is never `null` because every Apple device has an accelerometer.
+The acceleration data is expressed in m/s^2 and use the `x`, `y`, and `z` axis properties described in [`acceleration`](./api-1629483-acceleration.md). This property is never `null` because every Apple device has an accelerometer.
 
-Use the [`acceleration`](devicemotionevent/1629483-acceleration.md) property to get the user acceleration only.
+Use the [`acceleration`](./api-1629483-acceleration.md) property to get the user acceleration only.
 
 ## See Also
 
-- [acceleration](devicemotionevent/1629483-acceleration.md)
+### Getting Motion Event Properties
+- [acceleration](./api-1629483-acceleration.md)
   The acceleration that the user is giving to the device. 
-- [interval](devicemotionevent/1632148-interval.md)
+- [interval](./api-1632148-interval.md)
   The interval in milliseconds since the last device motion event.
-- [rotationRate](devicemotionevent/1634377-rotationrate.md)
+- [rotationRate](./api-1634377-rotationrate.md)
   The rotation rate of the device.
 
 

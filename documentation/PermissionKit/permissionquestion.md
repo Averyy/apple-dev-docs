@@ -1,7 +1,8 @@
 # PermissionQuestion
 
 **Framework**: PermissionKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that captures a permission question posed by a person.
 
@@ -20,44 +21,45 @@ final class PermissionQuestion<Topic> where Topic : QuestionTopic
 
 ## Mentions
 
-- [Creating a communication experience](creating-a-communication-experience.md)
+- [Creating a communication experience](./creating-a-communication-experience.md)
 
 ## Topics
 
 ### Creating permission requests
-- [convenience init(handle: CommunicationHandle)](permissionquestion/init(handle:).md)
+- [convenience init(handle: CommunicationHandle)](./permissionquestion/init%28handle%29.md)
   Creates a permission question that asks parents or guardians for permission to communicate with a person.
-- [convenience init(handles: [CommunicationHandle])](permissionquestion/init(handles:).md)
+- [convenience init(handles: [CommunicationHandle])](./permissionquestion/init%28handles%29.md)
   Creates a permission question that asks parents or guardians for permission to communicate with multiple people.
-- [convenience init(communicationTopic: Topic)](permissionquestion/init(communicationtopic:).md)
+- [convenience init(communicationTopic: Topic)](./permissionquestion/init%28communicationtopic%29.md)
   Creates a permission question that asks parents or guardians for communication permission.
-- [convenience init(significantAppUpdateTopic: Topic)](permissionquestion/init(significantappupdatetopic:).md)
+- [convenience init(significantAppUpdateTopic: Topic)](./permissionquestion/init%28significantappupdatetopic%29.md)
   Creates a permission question that asks parents or guardians for permission to continue using your app after a significant update.
 ### Working with choices
-- [var choices: [PermissionChoice]](permissionquestion/choices.md)
+- [var choices: [PermissionChoice]](./permissionquestion/choices.md)
   The possible answer choices associated with this question.
-- [var defaultChoice: PermissionChoice](permissionquestion/defaultchoice.md)
+- [var defaultChoice: PermissionChoice](./permissionquestion/defaultchoice.md)
   The default answer choice associated with the question.
 ### Accessing properties
-- [let id: UUID](permissionquestion/id.md)
+- [let id: UUID](./permissionquestion/id.md)
   A unique identifier for the question.
-- [let topic: Topic](permissionquestion/topic.md)
+- [let topic: Topic](./permissionquestion/topic.md)
   A topic that can be used to interpret a person’s request.
-- [var expirationDate: Date?](permissionquestion/expirationdate.md)
+- [var expirationDate: Date?](./permissionquestion/expirationdate.md)
   The date that this question expires, if any.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Identifiable](../swift/identifiable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [Creating a communication experience](creating-a-communication-experience.md)
+### Essentials
+- [Creating a communication experience](./creating-a-communication-experience.md)
   Request permission from a parent or guardian to modify a child’s communication rules.
-- [class AskCenter](askcenter.md)
+- [class AskCenter](./askcenter.md)
   A class that manages permission requests you send to parents or guardians for approval.
 
 

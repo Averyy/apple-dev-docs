@@ -1,7 +1,8 @@
 # HandAnchor
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A hand’s position in a person’s surroundings.
 
@@ -17,56 +18,57 @@ struct HandAnchor
 ## Topics
 
 ### Getting hand information
-- [var originFromAnchorTransform: simd_float4x4](handanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./handanchor/originfromanchortransform.md)
   The location and orientation of a hand in world space.
-- [var handSkeleton: HandSkeleton?](handanchor/handskeleton.md)
+- [var handSkeleton: HandSkeleton?](./handanchor/handskeleton.md)
   The current position and orientation of joints on a hand.
-- [var chirality: HandAnchor.Chirality](handanchor/chirality-swift.property.md)
+- [var chirality: HandAnchor.Chirality](./handanchor/chirality-swift.property.md)
   The chirality of this hand.
-- [HandAnchor.Chirality](handanchor/chirality-swift.enum.md)
+- [HandAnchor.Chirality](./handanchor/chirality-swift.enum.md)
   A value that indicates a left or right hand.
-- [var isTracked: Bool](handanchor/istracked.md)
+- [var isTracked: Bool](./handanchor/istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this hand.
-- [var description: String](handanchor/description.md)
+- [var description: String](./handanchor/description.md)
   A textual representation of this anchor.
 ### Identifying hand anchors
-- [var id: UUID](handanchor/id.md)
+- [var id: UUID](./handanchor/id.md)
   The unique identifier of this anchor.
 ### Instance Properties
-- [var fidelity: HandAnchor.Fidelity](handanchor/fidelity-swift.property.md)
+- [var fidelity: HandAnchor.Fidelity](./handanchor/fidelity-swift.property.md)
   The fidelity of this hand.
 ### Enumerations
-- [HandAnchor.Fidelity](handanchor/fidelity-swift.enum.md)
+- [HandAnchor.Fidelity](./handanchor/fidelity-swift.enum.md)
   Enumeration to distinguish hand fidelity
 ### Default Implementations
-- [ARKitCoordinateSpaceProviding Implementations](handanchor/arkitcoordinatespaceproviding-implementations.md)
-- [Equatable Implementations](handanchor/equatable-implementations.md)
+- [ARKitCoordinateSpaceProviding Implementations](./handanchor/arkitcoordinatespaceproviding-implementations.md)
+- [Equatable Implementations](./handanchor/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
-- [Anchor](anchor.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TrackableAnchor](trackableanchor.md)
+- [ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
+- [Anchor](./anchor.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TrackableAnchor](./trackableanchor.md)
 
 ## See Also
 
-- [Happy Beam](../visionos/happybeam.md)
+### Hand tracking
+- [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [class HandTrackingProvider](handtrackingprovider.md)
+- [class HandTrackingProvider](./handtrackingprovider.md)
   A source of live data about the position of a person’s hands and hand joints.
-- [struct HandSkeleton](handskeleton.md)
+- [struct HandSkeleton](./handskeleton.md)
   A collection of joints in a hand.
 
 

@@ -1,7 +1,8 @@
 # synthData
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Synthesizer-specific data. The size and format of the data in this field may vary.
 
@@ -12,6 +13,10 @@ Synthesizer-specific data. The size and format of the data in this field may var
 
 ```swift
 var synthData: (UInt8, UInt8)
+```
+
+```c
+Byte synthData[2];
 ```
 
 

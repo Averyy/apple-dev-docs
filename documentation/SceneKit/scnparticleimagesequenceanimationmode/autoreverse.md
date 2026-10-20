@@ -1,18 +1,19 @@
 # SCNParticleImageSequenceAnimationMode.autoReverse
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 After the animation displays all of its images, it plays again in reverse order.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,11 +21,16 @@ After the animation displays all of its images, it plays again in reverse order.
 case autoReverse
 ```
 
+```c
+SCNParticleImageSequenceAnimationModeAutoReverse
+```
+
 ## See Also
 
-- [SCNParticleImageSequenceAnimationMode.repeat](scnparticleimagesequenceanimationmode/repeat.md)
+### Constants
+- [SCNParticleImageSequenceAnimationMode.repeat](./repeat.md)
   The animation loops after displaying all of its images.
-- [SCNParticleImageSequenceAnimationMode.clamp](scnparticleimagesequenceanimationmode/clamp.md)
+- [SCNParticleImageSequenceAnimationMode.clamp](./clamp.md)
   The animation stops after displaying all of its images.
 
 

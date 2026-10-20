@@ -1,12 +1,13 @@
 # displayValuesKeyPath
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display values key path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The display values key path.
 var displayValuesKeyPath: String { get set }
 ```
 
+```objc
+@property (copy) NSString * displayValuesKeyPath;
+```
+
 #### Discussion
 
-The key path is used to get the display values for a row in the “rows” binding. The display values are the objects returned by calling the delegate’s [`ruleEditor(_:displayValueForCriterion:inRow:)`](nsruleeditordelegate/ruleeditor(_:displayvalueforcriterion:inrow:).md) method for the specified row. The corresponding property is an ordered to-many relationship.
+The key path is used to get the display values for a row in the “rows” binding. The display values are the objects returned by calling the delegate’s [`ruleEditor(_:displayValueForCriterion:inRow:)`](../nsruleeditordelegate/ruleeditor%28_,displayvalueforcriterion,inrow%29.md) method for the specified row. The corresponding property is an ordered to-many relationship.
 
 The default is `@"displayValues"`.
 
 ## See Also
 
-- [var rowClass: AnyClass](nsruleeditor/rowclass.md)
+### Supporting Bindings
+- [var rowClass: AnyClass](./rowclass.md)
   The class used to create a new row in the “rows” binding.
-- [var rowTypeKeyPath: String](nsruleeditor/rowtypekeypath.md)
+- [var rowTypeKeyPath: String](./rowtypekeypath.md)
   The key path for the row type.
-- [var subrowsKeyPath: String](nsruleeditor/subrowskeypath.md)
+- [var subrowsKeyPath: String](./subrowskeypath.md)
   The key path for the subrows.
-- [var criteriaKeyPath: String](nsruleeditor/criteriakeypath.md)
+- [var criteriaKeyPath: String](./criteriakeypath.md)
   The criteria key path.
 
 

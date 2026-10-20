@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The zero value.
@@ -24,6 +25,12 @@ static var zero: Self { get }
 #### Discussion
 
 Zero is the identity element for addition. For any value, `x + .zero == x` and `.zero + x == x`.
+
+## Default Implementations
+
+### AdditiveArithmetic Implementations
+- [static var zero: Self](./zero-7ss88.md)
+  The zero value.
 
 
 ---

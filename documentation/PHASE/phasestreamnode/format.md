@@ -1,7 +1,8 @@
 # format
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var format: AVAudioFormat { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) AVAudioFormat * format;
 ```
 
 #### Discussion

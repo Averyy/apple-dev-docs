@@ -1,7 +1,8 @@
 # operationQueue(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the operation queue from which to issue the write request.
 
@@ -15,6 +16,10 @@ Returns the operation queue from which to issue the write request.
 optional func operationQueue(for filePromiseProvider: NSFilePromiseProvider) -> OperationQueue
 ```
 
+```objc
+- (NSOperationQueue *) operationQueueForFilePromiseProvider:(NSFilePromiseProvider *) filePromiseProvider;
+```
+
 #### Discussion
 
 If this method isn’t implemented, the main operation queue is used. Although this method is optional, to avoid blocking your main thread, provide an operation queue other than the main operation queue.
@@ -25,9 +30,10 @@ If this method isn’t implemented, the main operation queue is used. Although t
 
 ## See Also
 
-- [func filePromiseProvider(NSFilePromiseProvider, fileNameForType: String) -> String](nsfilepromiseproviderdelegate/filepromiseprovider(_:filenamefortype:).md)
+### Handling File Promises
+- [func filePromiseProvider(NSFilePromiseProvider, fileNameForType: String) -> String](./filepromiseprovider%28_,filenamefortype%29.md)
   Provides the drag destination file’s name.
-- [func filePromiseProvider(NSFilePromiseProvider, writePromiseTo: URL, completionHandler: ((any Error)?) -> Void)](nsfilepromiseproviderdelegate/filepromiseprovider(_:writepromiseto:completionhandler:).md)
+- [func filePromiseProvider(NSFilePromiseProvider, writePromiseTo: URL, completionHandler: ((any Error)?) -> Void)](./filepromiseprovider%28_,writepromiseto,completionhandler%29.md)
   Writes the contents of a promise to the specified URL.
 
 

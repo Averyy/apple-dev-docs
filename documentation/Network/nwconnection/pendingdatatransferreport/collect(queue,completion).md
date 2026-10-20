@@ -1,7 +1,8 @@
 # collect(queue:completion:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops an outstanding data transfer report and delivers the result.
 

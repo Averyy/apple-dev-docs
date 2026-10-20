@@ -1,7 +1,8 @@
 # XCUISiriService
 
 **Framework**: XCUIAutomation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A proxy that simulates a device’s Siri interface.
 
@@ -18,6 +19,10 @@ A proxy that simulates a device’s Siri interface.
 class XCUISiriService
 ```
 
+```objc
+@interface XCUISiriService : NSObject
+```
+
 #### Overview
 
 This class allows issuing textual queries and producing element queries for UI shown by Siri.
@@ -25,35 +30,37 @@ This class allows issuing textual queries and producing element queries for UI s
 ## Topics
 
 ### Siri activation
-- [func activate(voiceRecognitionText: String)](xcuisiriservice/activate(voicerecognitiontext:).md)
+- [func activate(voiceRecognitionText: String)](./xcuisiriservice/activate%28voicerecognitiontext%29.md)
   Presents the Siri UI, if it’s not currently active, and accepts a string that is then processed as if it’s recognized speech.
 ### Siri proxy state
-- [var debugDescription: String](xcuisiriservice/debugdescription.md)
+- [var debugDescription: String](./xcuisiriservice/debugdescription.md)
   Provides debugging information about the element representing the root of the Siri UI.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [XCUIElementTypeQueryProvider](xcuielementtypequeryprovider.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [XCUIElementTypeQueryProvider](./xcuielementtypequeryprovider.md)
 
 ## See Also
 
-- [var siriService: XCUISiriService](xcuidevice/siriservice.md)
+### Related Documentation
+- [var siriService: XCUISiriService](./xcuidevice/siriservice.md)
   An object that represents the Siri interface on the device.
-- [class XCUIDevice](xcuidevice.md)
+### Device simulation
+- [class XCUIDevice](./xcuidevice.md)
   A proxy that can simulate physical buttons, device orientation, and Siri interaction for an iOS, watchOS, or tvOS device.
-- [class XCUISystem](xcuisystem.md)
+- [class XCUISystem](./xcuisystem.md)
   A proxy that provides an interface to OS-specific properties and actions.
 
 

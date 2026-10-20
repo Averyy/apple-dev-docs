@@ -1,23 +1,28 @@
 # init(url:options:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads a scene from the specified URL.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]? = nil) throws
+```
+
+```objc
++ (instancetype) sceneWithURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
 #### Return Value
@@ -26,9 +31,11 @@ A new scene object, or `nil` if no scene could be loaded.
 
 #### Discussion
 
-This method provides a convenient way to load a complete scene from a file at an arbitrary URL. For more detailed options or to load only part of a file’s scene graph, use the [`SCNSceneSource`](scnscenesource.md) class.
+This method provides a convenient way to load a complete scene from a file at an arbitrary URL. For more detailed options or to load only part of a file’s scene graph, use the [`SCNSceneSource`](../scnscenesource.md) class.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 When creating a scene using Xcode’s Scene Editor or an external tool, you should copy your scene file into a directory with the .scnassets extension inside your app bundle. You should also place any image files referenced as textures from that scene in an Asset Catalog. Xcode will optimize the scene and texture resources for best performance on each target device, and prepare your texture resources for delivery features such as App Thinning and On-Demand Resources.
 
@@ -39,9 +46,10 @@ When creating a scene using Xcode’s Scene Editor or an external tool, you shou
 
 ## See Also
 
-- [convenience init?(named: String)](scnscene/init(named:).md)
+### Creating a Scene from a File
+- [convenience init?(named: String)](./init%28named%29.md)
   Loads a scene from a file with the specified name in the app’s main bundle.
-- [convenience init?(named: String, inDirectory: String?, options: [SCNSceneSource.LoadingOption : Any]?)](scnscene/init(named:indirectory:options:).md)
+- [convenience init?(named: String, inDirectory: String?, options: [SCNSceneSource.LoadingOption : Any]?)](./init%28named,indirectory,options%29.md)
   Loads a scene from a file with the specified name in a specific subdirectory of the app’s main bundle.
 
 

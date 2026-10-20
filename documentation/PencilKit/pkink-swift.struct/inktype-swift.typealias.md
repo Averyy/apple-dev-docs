@@ -1,7 +1,8 @@
 # PKInk.InkType
 
 **Framework**: PencilKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias referring to the ink type of an inking tool.
 
@@ -20,9 +21,10 @@ typealias InkType = PKInkingTool.InkType
 
 ## See Also
 
-- [init(PKInk.InkType, color: UIColor)](pkink-swift.struct/init(_:color:)-2rx09.md)
+### Creating an ink object
+- [init(PKInk.InkType, color: UIColor)](./init%28_,color%29-2rx09.md)
   Creates a new ink, specifying its type and color.
-- [init(PKInk.InkType, color: NSColor)](pkink-swift.struct/init(_:color:)-7w46l.md)
+- [init(PKInk.InkType, color: NSColor)](./init%28_,color%29-7w46l.md)
   Creates a new ink, specifying its type and color.
 
 

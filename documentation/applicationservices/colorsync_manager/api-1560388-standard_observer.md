@@ -7,9 +7,9 @@ Standard observer measurement type encodings.
 ## Topics
 
 ### Constants
-- [var cmStdobsUnknown: Int](cmstdobsunknown.md)
-- [var cmStdobs1931TwoDegrees: Int](cmstdobs1931twodegrees.md)
-- [var cmStdobs1964TenDegrees: Int](cmstdobs1964tendegrees.md)
+- [var cmStdobsUnknown: Int](../cmstdobsunknown.md)
+- [var cmStdobs1931TwoDegrees: Int](../cmstdobs1931twodegrees.md)
+- [var cmStdobs1964TenDegrees: Int](../cmstdobs1964tendegrees.md)
 
 
 ---

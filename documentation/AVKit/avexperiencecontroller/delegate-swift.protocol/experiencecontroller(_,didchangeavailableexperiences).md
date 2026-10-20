@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when the available experiences change.
@@ -23,15 +24,16 @@ Use this callback to hide or show interface elements based on which experiences 
 ## Parameters
 
 - `controller`: The experience controller.
-- `availableExperiences`: The current value of [`availableExperiences`](avexperiencecontroller/availableexperiences.md).
+- `availableExperiences`: The current value of [`availableExperiences`](../availableexperiences.md).
 
 ## See Also
 
-- [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:preparefortransitionusing:).md)
+### Responding to experience changes
+- [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](./experiencecontroller%28_,preparefortransitionusing%29.md)
   Tells the delegate that the system is preparing for a transition.
-- [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangetransitioncontext:).md)
+- [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](./experiencecontroller%28_,didchangetransitioncontext%29.md)
   Tells the delegate when the transition context changes during a transition.
-- [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
+- [AVExperienceController.TransitionContext](../transitioncontext.md)
   The state of the transition that the system provides to the delegate object.
 
 

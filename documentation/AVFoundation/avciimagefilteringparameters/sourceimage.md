@@ -1,7 +1,8 @@
 # sourceImage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current video frame image.
 
@@ -21,9 +22,10 @@ let sourceImage: CIImage
 
 ## See Also
 
-- [let compositionTime: CMTime](avciimagefilteringparameters/compositiontime.md)
+### Inspecting the parameters
+- [let compositionTime: CMTime](./compositiontime.md)
   The time in the video composition corresponding to the frame being processed.
-- [let renderSize: CGSize](avciimagefilteringparameters/rendersize.md)
+- [let renderSize: CGSize](./rendersize.md)
   The width and height, in pixels, of the frame being processed.
 
 

@@ -1,14 +1,15 @@
 # efi_aurr_panic_data
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 char efi_aurr_panic_data[];
 ```
 

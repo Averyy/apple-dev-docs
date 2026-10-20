@@ -1,7 +1,8 @@
 # withExtendedGamepad()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a snapshot of a newly created controller with an extended gamepad profile.
 
@@ -19,21 +20,26 @@ Returns a snapshot of a newly created controller with an extended gamepad profil
 class func withExtendedGamepad() -> GCController
 ```
 
+```objc
++ (GCController *) controllerWithExtendedGamepad;
+```
+
 #### Return Value
 
 A snapshot with an extended gamepad profile.
 
 #### Discussion
 
-A snapshot is a copy of a real or virtual controller at a moment in time with its current element values. Unlike other controllers, you can set the values of a snapshot’s [`GCControllerElement`](gccontrollerelement.md) objects.
+A snapshot is a copy of a real or virtual controller at a moment in time with its current element values. Unlike other controllers, you can set the values of a snapshot’s [`GCControllerElement`](../gccontrollerelement.md) objects.
 
 ## See Also
 
-- [class func withMicroGamepad() -> GCController](gccontroller/withmicrogamepad.md)
+### Creating snapshots
+- [class func withMicroGamepad() -> GCController](./withmicrogamepad%28%29.md)
   Returns a snapshot of a newly created controller with a micro gamepad profile.
-- [func capture() -> GCController](gccontroller/capture.md)
+- [func capture() -> GCController](./capture%28%29.md)
   Returns a snapshot of the controller with its current element values.
-- [var isSnapshot: Bool](gccontroller/issnapshot.md)
+- [var isSnapshot: Bool](./issnapshot.md)
   A Boolean value that indicates whether the controller is a snapshot of a controller.
 
 

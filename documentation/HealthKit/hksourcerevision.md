@@ -1,7 +1,8 @@
 # HKSourceRevision
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object indicating the source of a HealthKit sample.
 
@@ -19,67 +20,72 @@ An object indicating the source of a HealthKit sample.
 class HKSourceRevision
 ```
 
+```objc
+@interface HKSourceRevision : NSObject
+```
+
 ## Mentions
 
-- [About the HealthKit framework](about-the-healthkit-framework.md)
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
 
 #### Overview
 
-The [`HKSourceRevision`](hksourcerevision.md) class acts as a wrapper for the [`HKSource`](hksource.md) class, adding information about the source’s version, operating system, and product type.
+The [`HKSourceRevision`](./hksourcerevision.md) class acts as a wrapper for the [`HKSource`](./hksource.md) class, adding information about the source’s version, operating system, and product type.
 
 Source revision objects are immutable: you set the source revision’s properties when you create the object, and they cannot change.
 
-When an [`HKObject`](hkobject.md) instance is created, its [`sourceRevision`](hkobject/sourcerevision.md) property is set to `nil`. When the object is saved to the HealthKit store, HealthKit assigns a new source revision to the object’s [`sourceRevision`](hkobject/sourcerevision.md) property. The source revision can be accessed only on objects retrieved from the HealthKit store.
+When an [`HKObject`](./hkobject.md) instance is created, its [`sourceRevision`](./hkobject/sourcerevision.md) property is set to `nil`. When the object is saved to the HealthKit store, HealthKit assigns a new source revision to the object’s [`sourceRevision`](./hkobject/sourcerevision.md) property. The source revision can be accessed only on objects retrieved from the HealthKit store.
 
 ##### Subclassing Source Revisions
 
-As with many HealthKit classes, don’t subclass the [`HKSourceRevision`](hksourcerevision.md) class.
+As with many HealthKit classes, don’t subclass the [`HKSourceRevision`](./hksourcerevision.md) class.
 
 ## Topics
 
 ### Creating Source Revision Objects
-- [init(source: HKSource, version: String?)](hksourcerevision/init(source:version:).md)
+- [init(source: HKSource, version: String?)](./hksourcerevision/init%28source,version%29.md)
   Initializes a new source revision object with the provided source and version information.
-- [init(source: HKSource, version: String?, productType: String?, operatingSystemVersion: OperatingSystemVersion)](hksourcerevision/init(source:version:producttype:operatingsystemversion:).md)
+- [init(source: HKSource, version: String?, productType: String?, operatingSystemVersion: OperatingSystemVersion)](./hksourcerevision/init%28source,version,producttype,operatingsystemversion%29.md)
   Initializes a new source revision object with the provided source, version, product type, and operating system.
 ### Accessing Source and Version Information
-- [var source: HKSource](hksourcerevision/source.md)
+- [var source: HKSource](./hksourcerevision/source.md)
   The source for a sample.
-- [var version: String?](hksourcerevision/version.md)
+- [var version: String?](./hksourcerevision/version.md)
   A string that identifies a particular version of the source.
-- [var operatingSystemVersion: OperatingSystemVersion](hksourcerevision/operatingsystemversion.md)
+- [var operatingSystemVersion: OperatingSystemVersion](./hksourcerevision/operatingsystemversion.md)
   A string that identifies the operating system used to save a sample.
-- [var productType: String?](hksourcerevision/producttype.md)
+- [var productType: String?](./hksourcerevision/producttype.md)
   A string that identifies the device used to save a sample.
 ### Initializers
-- [init?(coder: NSCoder)](hksourcerevision/init(coder:).md)
+- [init?(coder: NSCoder)](./hksourcerevision/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKSourceQueryDescriptor](hksourcequerydescriptor.md)
+### Sources and devices
+- [struct HKSourceQueryDescriptor](./hksourcequerydescriptor.md)
   A query interface that uses Swift concurrency to read the apps and devices that produced the matching samples.
-- [class HKSource](hksource.md)
+- [class HKSource](./hksource.md)
   An object indicating the app or device that created a HealthKit sample
-- [class HKDevice](hkdevice.md)
+- [class HKDevice](./hkdevice.md)
   A device that generates data for HealthKit.
-- [class HKSourceQuery](hksourcequery.md)
+- [class HKSourceQuery](./hksourcequery.md)
   A query that returns a list of sources, such as apps and devices, that have saved matching queries to the HealthKit store.
 
 

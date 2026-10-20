@@ -1,7 +1,8 @@
 # contentRatingDomain
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The domain that the rating applies to.
 
@@ -10,7 +11,7 @@ The domain that the rating applies to.
 
 ## Declaration
 
-```swift
+```
 attribute String contentRatingDomain;
 ```
 
@@ -20,9 +21,10 @@ There are three valid values for this property: `movie`, `music`, and `tvshow`.
 
 ## See Also
 
-- [contentRatingRanking](mediaitem/1627366-contentratingranking.md)
+### Rating Media Content
+- [contentRatingRanking](./api-1627366-contentratingranking.md)
   The rating for a video item.
-- [isExplicit](mediaitem/1627358-isexplicit.md)
+- [isExplicit](./api-1627358-isexplicit.md)
   A Boolean value indicating whether the item has explicit lyrics.
 
 

@@ -1,7 +1,8 @@
 # kCFProxyPasswordKey
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -17,19 +18,24 @@
 let kCFProxyPasswordKey: CFString
 ```
 
+```c
+extern CFStringRef const kCFProxyPasswordKey;
+```
+
 #### Discussion
 
 The password to be used when contacting the proxy. This key is only present if the password can be determined from the information passed in. (External credential stores such as the keychain are not consulted.)
 
 ## See Also
 
-- [let kCFProxyAutoConfigurationHTTPResponseKey: CFString](kcfproxyautoconfigurationhttpresponsekey.md)
-- [let kCFProxyAutoConfigurationJavaScriptKey: CFString](kcfproxyautoconfigurationjavascriptkey.md)
-- [let kCFProxyAutoConfigurationURLKey: CFString](kcfproxyautoconfigurationurlkey.md)
-- [let kCFProxyHostNameKey: CFString](kcfproxyhostnamekey.md)
-- [let kCFProxyPortNumberKey: CFString](kcfproxyportnumberkey.md)
-- [let kCFProxyTypeKey: CFString](kcfproxytypekey.md)
-- [let kCFProxyUsernameKey: CFString](kcfproxyusernamekey.md)
+### Constants
+- [let kCFProxyAutoConfigurationHTTPResponseKey: CFString](./kcfproxyautoconfigurationhttpresponsekey.md)
+- [let kCFProxyAutoConfigurationJavaScriptKey: CFString](./kcfproxyautoconfigurationjavascriptkey.md)
+- [let kCFProxyAutoConfigurationURLKey: CFString](./kcfproxyautoconfigurationurlkey.md)
+- [let kCFProxyHostNameKey: CFString](./kcfproxyhostnamekey.md)
+- [let kCFProxyPortNumberKey: CFString](./kcfproxyportnumberkey.md)
+- [let kCFProxyTypeKey: CFString](./kcfproxytypekey.md)
+- [let kCFProxyUsernameKey: CFString](./kcfproxyusernamekey.md)
 
 
 ---

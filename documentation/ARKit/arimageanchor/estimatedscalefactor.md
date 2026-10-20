@@ -1,7 +1,8 @@
 # estimatedScaleFactor
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A factor between the initial size and the estimated physical size.
 
@@ -15,13 +16,17 @@ A factor between the initial size and the estimated physical size.
 var estimatedScaleFactor: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat estimatedScaleFactor;
+```
+
 #### Discussion
 
-The default value is 1.0, which means that a version of this image that ARKit recognizes in the physical environment exactly matches its reference image [`physicalSize`](arreferenceimage/physicalsize.md).
+The default value is 1.0, which means that a version of this image that ARKit recognizes in the physical environment exactly matches its reference image [`physicalSize`](../arreferenceimage/physicalsize.md).
 
 Otherwise, ARKit automatically corrects the image anchor’s transform when `estimatedScaleFactor` is a value other than 1.0. This adjustment in turn, corrects ARKit’s understanding of where the image anchor is located in the physical environment.
 
-See [`automaticImageScaleEstimationEnabled`](arworldtrackingconfiguration/automaticimagescaleestimationenabled.md).
+See [`automaticImageScaleEstimationEnabled`](../arworldtrackingconfiguration/automaticimagescaleestimationenabled.md).
 
 
 ---

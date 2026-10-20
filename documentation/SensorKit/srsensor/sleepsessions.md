@@ -1,7 +1,8 @@
 # sleepSessions
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 static let sleepSessions: SRSensor
+```
+
+```c
+extern SRSensor const SRSensorSleepSessions;
 ```
 
 #### Discussion

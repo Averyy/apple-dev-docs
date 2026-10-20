@@ -1,7 +1,8 @@
 # HKPredicateKeyPathEndDate
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing the sample’s end date.
 
@@ -19,9 +20,14 @@ The key path for accessing the sample’s end date.
 let HKPredicateKeyPathEndDate: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathEndDate;
+```
+
 ## See Also
 
-- [let HKPredicateKeyPathStartDate: String](hkpredicatekeypathstartdate.md)
+### Specifying Predicate Key Paths
+- [let HKPredicateKeyPathStartDate: String](./hkpredicatekeypathstartdate.md)
   The key path for accessing the sample’s start date.
 
 

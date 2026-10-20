@@ -1,7 +1,8 @@
 # deleteHistory(for:)
 
 **Framework**: Screen Time  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes all the web history for the URL you specify.
 
@@ -17,6 +18,10 @@ Deletes all the web history for the URL you specify.
 func deleteHistory(for url: URL)
 ```
 
+```objc
+- (void) deleteHistoryForURL:(NSURL *) url;
+```
+
 #### Discussion
 
 The framework references the entire URL to determine which web-usage data to delete.
@@ -27,9 +32,10 @@ The framework references the entire URL to determine which web-usage data to del
 
 ## See Also
 
-- [func deleteAllHistory()](stwebhistory/deleteallhistory.md)
+### Instance methods
+- [func deleteAllHistory()](./deleteallhistory%28%29.md)
   Deletes all web history associated with the bundle identifier you specified during initialization.
-- [func deleteHistory(during: DateInterval)](stwebhistory/deletehistory(during:).md)
+- [func deleteHistory(during: DateInterval)](./deletehistory%28during%29.md)
   Deletes web history that occurred during the date interval you specify.
 
 

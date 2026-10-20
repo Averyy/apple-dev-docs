@@ -1,7 +1,8 @@
 # init(supportedFeatureSet:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a markup toolbar view controller.
 
@@ -26,7 +27,8 @@ The feature set limits the tools / actions a person can access from this toolbar
 
 ## See Also
 
-- [init?(coder: NSCoder)](markuptoolbarviewcontroller/init(coder:).md)
+### Creating a toolbar
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

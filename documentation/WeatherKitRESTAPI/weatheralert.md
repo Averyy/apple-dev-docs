@@ -1,7 +1,8 @@
 # WeatherAlert
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An official message indicating severe weather from a reporting agency.
 
@@ -10,35 +11,36 @@ An official message indicating severe weather from a reporting agency.
 
 ## Declaration
 
-```swift
+```
 object WeatherAlert
 ```
 
 ## Topics
 
 ### Getting the weather alert
-- [object WeatherAlert.WeatherAlertData](weatheralert/weatheralertdata.md)
+- [object WeatherAlert.WeatherAlertData](./weatheralert/weatheralertdata.md)
   The weather alert information.
 
 ## Relationships
 
 ### Inherits From
-- [WeatherAlert.WeatherAlertData](weatheralert/weatheralertdata.md)
-- [WeatherAlertSummary](weatheralertsummary.md)
+- [WeatherAlert.WeatherAlertData](./weatheralert/weatheralertdata.md)
+- [WeatherAlertSummary](./weatheralertsummary.md)
 
 ## See Also
 
-- [GET /api/v1/weatherAlert/{language}/{id}](get-api-v1-weatheralert-_language_-_id_.md)
+### Obtaining weather alerts
+- [GET /api/v1/weatherAlert/{language}/{id}](./get-api-v1-weatheralert-_language_-_id_.md)
   Receive an active weather alert.
-- [object WeatherAlertCollection](weatheralertcollection.md)
+- [object WeatherAlertCollection](./weatheralertcollection.md)
   A collection of severe weather alerts for a specified location.
-- [object WeatherAlertSummary](weatheralertsummary.md)
+- [object WeatherAlertSummary](./weatheralertsummary.md)
   Detailed information about the weather alert.
-- [type ResponseType](responsetype.md)
+- [type ResponseType](./responsetype.md)
   The recommended action from a reporting agency.
-- [type Severity](severity.md)
+- [type Severity](./severity.md)
   The level of danger to life and property.
-- [type Urgency](urgency.md)
+- [type Urgency](./urgency.md)
   An indication of urgency of action from the reporting agency.
 
 

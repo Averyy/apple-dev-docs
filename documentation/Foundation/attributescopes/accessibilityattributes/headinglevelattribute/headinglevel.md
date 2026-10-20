@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The hierarchy of a heading in relation other headings.
 
@@ -27,26 +28,26 @@ Assistive technologies can use this to improve a users navigation through multip
 ## Topics
 
 ### Enumeration Cases
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h1.md)
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h2](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h2.md)
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h3](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h3.md)
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h4](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h4.md)
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h5](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h5.md)
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h6](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/h6.md)
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.unspecified](attributescopes/accessibilityattributes/headinglevelattribute/headinglevel/unspecified.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h1](./headinglevel/h1.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h2](./headinglevel/h2.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h3](./headinglevel/h3.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h4](./headinglevel/h4.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h5](./headinglevel/h5.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.h6](./headinglevel/h6.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute.HeadingLevel.unspecified](./headinglevel/unspecified.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

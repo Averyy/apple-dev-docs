@@ -1,7 +1,8 @@
 # generationMarker
 
 **Framework**: ContactProvider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value specific to your data source identifying the database generation when enumeration of content started.
 
@@ -21,9 +22,10 @@ When a content enumeration is underway, you must use the same `generationMarker`
 
 ## See Also
 
-- [var offset: Int](contactitempage/offset.md)
+### Supporting paging
+- [var offset: Int](./offset.md)
   An offset from the page’s generation marker.
-- [static let initialPage: ContactItemPage](contactitempage/initialpage.md)
+- [static let initialPage: ContactItemPage](./initialpage.md)
   A static value the system uses to indicate the start of a new content enumeration.
 
 

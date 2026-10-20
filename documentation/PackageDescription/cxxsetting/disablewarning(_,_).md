@@ -1,7 +1,8 @@
 # disableWarning(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Disable a specific C++ compiler warning group.
 
@@ -18,7 +19,7 @@ static func disableWarning(_ name: String, _ condition: BuildSettingCondition? =
 
 Use this setting to disable a specific warning group. This is equivalent to passing `-Wno-` followed by the group name to the C++ compiler.
 
-> **Note**: First available in PackageDescription 6.2.
+> **Since**: First available in PackageDescription 6.2.
 
 ## Parameters
 

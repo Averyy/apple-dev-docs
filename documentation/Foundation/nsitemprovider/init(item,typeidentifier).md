@@ -1,23 +1,30 @@
 # init(item:typeIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an item provider with an object, according to the item provider type coercion policy.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 27.0
+- iPadOS 8.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 2.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use initWithObject: instead.
 
 ## Declaration
 
 ```swift
 init(item: (any NSSecureCoding)?, typeIdentifier: String?)
+```
+
+```objc
+- (instancetype) initWithItem:(id<NSSecureCoding>) item typeIdentifier:(NSString *) typeIdentifier;
 ```
 
 #### Return Value
@@ -35,13 +42,14 @@ Use this method to initialize an item provider for objects in your app. The item
 
 ## See Also
 
-- [convenience init?(contentsOf: URL!)](nsitemprovider/init(contentsof:).md)
+### Creating an item provider
+- [convenience init?(contentsOf: URL!)](./init%28contentsof%29.md)
   Provides data-backed content from an existing file.
-- [convenience init(contentsOf: URL, contentType: UTType?, openInPlace: Bool, coordinated: Bool, visibility: NSItemProviderRepresentationVisibility)](nsitemprovider/init(contentsof:contenttype:openinplace:coordinated:visibility:).md)
+- [convenience init(contentsOf: URL, contentType: UTType?, openInPlace: Bool, coordinated: Bool, visibility: NSItemProviderRepresentationVisibility)](./init%28contentsof,contenttype,openinplace,coordinated,visibility%29.md)
   Provides data-backed content from an existing file with the specified parameters.
-- [init()](nsitemprovider/init.md)
+- [init()](./init%28%29.md)
   Creates an empty item provider to which you can later register a data or file representation.
-- [convenience init(object: any NSItemProviderWriting)](nsitemprovider/init(object:).md)
+- [convenience init(object: any NSItemProviderWriting)](./init%28object%29.md)
   Creates a new item provider, employing a specified object’s type identifiers to specify the data representations eligible for the provider to load.
 
 

@@ -1,7 +1,8 @@
 # leadingDetailTextImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Image shown on the leading edge of the detail text.
 
@@ -15,6 +16,10 @@ Image shown on the leading edge of the detail text.
 ```swift
 @NSCopying
 var leadingDetailTextImage: UIImage? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIImage * leadingDetailTextImage;
 ```
 
 

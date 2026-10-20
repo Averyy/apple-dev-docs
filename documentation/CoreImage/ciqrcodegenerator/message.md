@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The message to encode in the QR code.
@@ -20,9 +21,14 @@ The message to encode in the QR code.
 var message: Data { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSData * message;
+```
+
 ## See Also
 
-- [var correctionLevel: String](ciqrcodegenerator/correctionlevel.md)
+### Instance Properties
+- [var correctionLevel: String](./correctionlevel.md)
   The QR code correction level: L, M, Q, or H.
 
 

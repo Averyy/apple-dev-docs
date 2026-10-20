@@ -1,7 +1,8 @@
 # NEVPNIKEv2IntegrityAlgorithm
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 8.0+
@@ -17,45 +18,50 @@
 enum NEVPNIKEv2IntegrityAlgorithm
 ```
 
+```c
+enum NEVPNIKEv2IntegrityAlgorithm : NSInteger;
+```
+
 ## Topics
 
 ### Integrity algorithms
-- [NEVPNIKEv2IntegrityAlgorithm.SHA256](nevpnikev2integrityalgorithm/sha256.md)
+- [NEVPNIKEv2IntegrityAlgorithm.SHA256](./nevpnikev2integrityalgorithm/sha256.md)
   SHA-2 256-bit.
-- [NEVPNIKEv2IntegrityAlgorithm.SHA384](nevpnikev2integrityalgorithm/sha384.md)
+- [NEVPNIKEv2IntegrityAlgorithm.SHA384](./nevpnikev2integrityalgorithm/sha384.md)
   SHA-2 384-bit.
-- [NEVPNIKEv2IntegrityAlgorithm.SHA512](nevpnikev2integrityalgorithm/sha512.md)
+- [NEVPNIKEv2IntegrityAlgorithm.SHA512](./nevpnikev2integrityalgorithm/sha512.md)
   SHA-2 512-bit.
 ### Initializers
-- [init?(rawValue: Int)](nevpnikev2integrityalgorithm/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nevpnikev2integrityalgorithm/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var encryptionAlgorithm: NEVPNIKEv2EncryptionAlgorithm](nevpnikev2securityassociationparameters/encryptionalgorithm.md)
+### IKEv2 Security Association parameters
+- [var encryptionAlgorithm: NEVPNIKEv2EncryptionAlgorithm](./nevpnikev2securityassociationparameters/encryptionalgorithm.md)
   The algorithm used by the Security Association to encrypt and decrypt data.
-- [enum NEVPNIKEv2EncryptionAlgorithm](nevpnikev2encryptionalgorithm.md)
+- [enum NEVPNIKEv2EncryptionAlgorithm](./nevpnikev2encryptionalgorithm.md)
   An enumeration of encryption algorithm values.
-- [var integrityAlgorithm: NEVPNIKEv2IntegrityAlgorithm](nevpnikev2securityassociationparameters/integrityalgorithm.md)
+- [var integrityAlgorithm: NEVPNIKEv2IntegrityAlgorithm](./nevpnikev2securityassociationparameters/integrityalgorithm.md)
   The algorithm used by the Security Association to verify the integrity of data.
-- [var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup](nevpnikev2securityassociationparameters/diffiehellmangroup.md)
+- [var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup](./nevpnikev2securityassociationparameters/diffiehellmangroup.md)
   The Diffie Hellman group used by the Security Association.
-- [enum NEVPNIKEv2DiffieHellmanGroup](nevpnikev2diffiehellmangroup.md)
+- [enum NEVPNIKEv2DiffieHellmanGroup](./nevpnikev2diffiehellmangroup.md)
   An enumeration of Diffie-Hellman group values.
-- [var lifetimeMinutes: Int32](nevpnikev2securityassociationparameters/lifetimeminutes.md)
+- [var lifetimeMinutes: Int32](./nevpnikev2securityassociationparameters/lifetimeminutes.md)
   The duration of the lifetime of the Security Association, in minutes.
-- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
+- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](./nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
   A list of the quantum-secure key exchange methods the Security Association uses.
-- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](nevpnikev2postquantumkeyexchangemethod.md)
+- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](./nevpnikev2postquantumkeyexchangemethod.md)
   Quantum-secure key exchange methods you use with IKEv2 servers.
 
 

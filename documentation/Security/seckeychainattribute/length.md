@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the buffer pointed to by data.
 
@@ -12,6 +13,10 @@ The length of the buffer pointed to by data.
 
 ```swift
 var length: UInt32
+```
+
+```c
+UInt32 length;
 ```
 
 

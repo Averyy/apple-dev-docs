@@ -1,7 +1,8 @@
 # MeasurementFormatUnitUsage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides the generalized usage for a formatted measurement.
 
@@ -23,55 +24,55 @@ struct MeasurementFormatUnitUsage<UnitType> where UnitType : Dimension
 ## Topics
 
 ### Selecting a General Format for a Measurement Unit
-- [static var general: MeasurementFormatUnitUsage<UnitType>](measurementformatunitusage/general.md)
+- [static var general: MeasurementFormatUnitUsage<UnitType>](./measurementformatunitusage/general.md)
   A general usage of the formatted measurement.
-- [static var asProvided: MeasurementFormatUnitUsage<UnitType>](measurementformatunitusage/asprovided.md)
+- [static var asProvided: MeasurementFormatUnitUsage<UnitType>](./measurementformatunitusage/asprovided.md)
   A usage of the formatted measurement that reflects the units that you used to create the measurement.
 ### Selecting a Format for an Energy Measurement
-- [static var food: MeasurementFormatUnitUsage<UnitEnergy>](measurementformatunitusage/food.md)
+- [static var food: MeasurementFormatUnitUsage<UnitEnergy>](./measurementformatunitusage/food.md)
   A usage of an energy measurement related to food.
-- [static var workout: MeasurementFormatUnitUsage<UnitEnergy>](measurementformatunitusage/workout.md)
+- [static var workout: MeasurementFormatUnitUsage<UnitEnergy>](./measurementformatunitusage/workout.md)
   A usage of a energy measurement related to a workout.
 ### Selecting a Format for a Length Measurement
-- [static var person: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/person-8bfxd.md)
+- [static var person: MeasurementFormatUnitUsage<UnitLength>](./measurementformatunitusage/person-8bfxd.md)
   A format usage of a length measurement for displaying a distance as it relates to people.
-- [static var personHeight: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/personheight.md)
+- [static var personHeight: MeasurementFormatUnitUsage<UnitLength>](./measurementformatunitusage/personheight.md)
   A usage of a length measurement related to a person’s height.
-- [static var road: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/road.md)
+- [static var road: MeasurementFormatUnitUsage<UnitLength>](./measurementformatunitusage/road.md)
   A usage of a length measurement related to a road.
 ### Selecting a Format for a Mass Measurement
-- [static var personWeight: MeasurementFormatUnitUsage<UnitMass>](measurementformatunitusage/personweight.md)
+- [static var personWeight: MeasurementFormatUnitUsage<UnitMass>](./measurementformatunitusage/personweight.md)
   A usage of a mass measurement related to a person’s weight.
 ### Selecting a Format for a Temperature Measurement
-- [static var person: MeasurementFormatUnitUsage<UnitTemperature>](measurementformatunitusage/person-4ifk7.md)
+- [static var person: MeasurementFormatUnitUsage<UnitTemperature>](./measurementformatunitusage/person-4ifk7.md)
   A format usage of a temperature measurement for displaying a temperature as it relates to people.
-- [static var weather: MeasurementFormatUnitUsage<UnitTemperature>](measurementformatunitusage/weather.md)
+- [static var weather: MeasurementFormatUnitUsage<UnitTemperature>](./measurementformatunitusage/weather.md)
   A usage of a temperature measurement related to the weather.
 ### Type Properties
-- [static var barometric: MeasurementFormatUnitUsage<UnitPressure>](measurementformatunitusage/barometric.md)
+- [static var barometric: MeasurementFormatUnitUsage<UnitPressure>](./measurementformatunitusage/barometric.md)
   Describes the unit for barometric pressure
-- [static var focalLength: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/focallength.md)
+- [static var focalLength: MeasurementFormatUnitUsage<UnitLength>](./measurementformatunitusage/focallength.md)
   Used to format the focal length of an optical system, such as that of camera lenses
-- [static var liquid: MeasurementFormatUnitUsage<UnitVolume>](measurementformatunitusage/liquid.md)
+- [static var liquid: MeasurementFormatUnitUsage<UnitVolume>](./measurementformatunitusage/liquid.md)
   Used to format the amount of liquid
-- [static var rainfall: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/rainfall.md)
+- [static var rainfall: MeasurementFormatUnitUsage<UnitLength>](./measurementformatunitusage/rainfall.md)
   Used to format the rainfall amount
-- [static var snowfall: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/snowfall.md)
+- [static var snowfall: MeasurementFormatUnitUsage<UnitLength>](./measurementformatunitusage/snowfall.md)
   Used to format the snowfall amount
-- [static var visibility: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/visibility.md)
+- [static var visibility: MeasurementFormatUnitUsage<UnitLength>](./measurementformatunitusage/visibility.md)
   Describes the distance of visibility
-- [static var wind: MeasurementFormatUnitUsage<UnitSpeed>](measurementformatunitusage/wind.md)
+- [static var wind: MeasurementFormatUnitUsage<UnitSpeed>](./measurementformatunitusage/wind.md)
   Describes the unit for wind speed
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

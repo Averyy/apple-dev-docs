@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Specifies input image with content headroom and average light level properties.
@@ -11,13 +12,17 @@ Specifies input image with content headroom and average light level properties.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var inputImage: CIImage? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
 ```
 
 

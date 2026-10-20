@@ -1,7 +1,8 @@
 # chartSymbolScale(range:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the symbol style scale for charts.
 
@@ -21,21 +22,29 @@ nonisolated
 func chartSymbolScale(range: [any ChartSymbolShape]) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func chartSymbolScale<Range>(range: Range) -> some View where Range : ScaleRange, Range.VisualValue : ChartSymbolShape
+```
+
 ## Parameters
 
 - `range`: The range of symbols that correspond to the scale domain.
 
 ## See Also
 
-- [func chartSymbolScale(_:)](view/chartsymbolscale(_:).md)
+### Symbol scales
+- [func chartSymbolScale(_:)](./chartsymbolscale%28_%29.md)
   Configures the symbol scale for charts.
-- [func chartSymbolScale<Domain>(domain: Domain) -> some View](view/chartsymbolscale(domain:).md)
+- [func chartSymbolScale<Domain>(domain: Domain) -> some View](./chartsymbolscale%28domain%29.md)
   Configures the symbol style scale for charts.
-- [func chartSymbolScale(domain:range:)](view/chartsymbolscale(domain:range:).md)
+- [func chartSymbolScale(domain:range:)](./chartsymbolscale%28domain,range%29.md)
   Configures the symbol style scale for charts.
-- [func chartSymbolScale<Domain, S>(domain: Domain, mapping: (Domain.Element) -> S) -> some View](view/chartsymbolscale(domain:mapping:).md)
+- [func chartSymbolScale<Domain, S>(domain: Domain, mapping: (Domain.Element) -> S) -> some View](./chartsymbolscale%28domain,mapping%29.md)
   Configures the symbol scale for charts.
-- [func chartSymbolScale<DataValue, S>(mapping: (DataValue) -> S) -> some View](view/chartsymbolscale(mapping:).md)
+- [func chartSymbolScale<DataValue, S>(mapping: (DataValue) -> S) -> some View](./chartsymbolscale%28mapping%29.md)
   Configures the symbol scale for charts.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the listener.
 
@@ -20,9 +21,13 @@ The delegate for the listener.
 weak var delegate: (any NSXPCListenerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSXPCListenerDelegate> delegate;
+```
+
 #### Discussion
 
-If no delegate is set, all new connections are rejected. See the documentation for [`NSXPCListenerDelegate`](nsxpclistenerdelegate.md) for implementation details.
+If no delegate is set, all new connections are rejected. See the documentation for [`NSXPCListenerDelegate`](../nsxpclistenerdelegate.md) for implementation details.
 
 
 ---

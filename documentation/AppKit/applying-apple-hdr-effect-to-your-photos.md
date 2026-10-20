@@ -1,6 +1,7 @@
 # Applying Apple HDR effect to your photos
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Article
 
 You can decode and apply Apple’s HDR gain map to your own images.
 
@@ -8,13 +9,13 @@ You can decode and apply Apple’s HDR gain map to your own images.
 
 You can apply Apple high dynamic range (HDR) effect to digital photography images without using Apple SDKs. You compute the Apple HDR gain map from the image’s auxiliary data and then apply it to the image. The *Apple HDR gain map* is an 8-bit, single-channel luminance map that’s stored with an image.
 
-##### Extract the Existing Hdr Gain Map From the Image
+##### Extract the existing HDR gain map from the image
 
 Get the existing HDR gain map from the image’s auxiliary data using the `urn:com:apple:photo:2020:aux:hdrgainmap` image data type. The gain map is untagged and formatted as linear data. It’s encoded using the Rec.709 transfer function and is 1/4 the resolution of the original image.
 
-For example, using Apple APIs, you can extract the gain map from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) object by passing [`kCGImageAuxiliaryDataTypeHDRGainMap`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypehdrgainmap) to the [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)) function.
+For example, using Apple APIs, you can extract the gain map from a [`CGImage`](../CoreGraphics/cgimage.md) object by passing [`kCGImageAuxiliaryDataTypeHDRGainMap`](../ImageIO/kcgimageauxiliarydatatypehdrgainmap.md) to the [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md) function.
 
-##### Calculate the Headroom From the Image Metadata
+##### Calculate the headroom from the image metadata
 
 Write code that computes the headroom you need to change the dynamic range image. The headroom is the ratio of the luminance of the image’s brightest white to the luminance of standard dynamic range (SDR) white, in the image’s native color space.
 
@@ -50,7 +51,7 @@ if maker33 < 1.0 {
 let headroom = pow(2.0, max(stops, 0.0))
 ```
 
-##### Apply the Hdr Gain Map to the Image
+##### Apply the HDR gain map to the image
 
 Before you apply the HDR gain map to the image, perform the following steps:
 
@@ -73,17 +74,18 @@ The result of applying the gain map is a linear HDR image with a scale where `1.
 
 ## See Also
 
-- [Providing images for different appearances](../uikit/providing-images-for-different-appearances.md)
+### Images
+- [Providing images for different appearances](../UIKit/providing-images-for-different-appearances.md)
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
-- [Supporting Continuity Camera in Your Mac App](supporting-continuity-camera-in-your-mac-app.md)
+- [Supporting Continuity Camera in Your Mac App](./supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
-- [Supporting HDR images in your app](../uikit/supporting-hdr-images-in-your-app.md)
+- [Supporting HDR images in your app](../UIKit/supporting-hdr-images-in-your-app.md)
   ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
-- [class NSImage](nsimage.md)
+- [class NSImage](./nsimage.md)
   A high-level interface for manipulating image data.
-- [protocol NSImageDelegate](nsimagedelegate.md)
+- [protocol NSImageDelegate](./nsimagedelegate.md)
   A set of optional methods that you can use to respond to drawing failures and manage incremental loads.
-- [class NSImageRep](nsimagerep.md)
+- [class NSImageRep](./nsimagerep.md)
   A semiabstract superclass that provides subclasses that you use to draw an image from a particular type of source data.
 
 

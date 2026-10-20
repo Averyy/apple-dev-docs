@@ -1,7 +1,8 @@
 # zone
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that identifies the workout zone.
 
@@ -21,7 +22,8 @@ let zone: HKWorkoutZone
 
 ## See Also
 
-- [let duration: TimeInterval](hkworkoutzoneduration/duration.md)
+### Accessing duration properties
+- [let duration: TimeInterval](./duration.md)
   A property that specifies the time spent in this zone, measured in seconds.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new element ID from a markup ID.
 
@@ -24,7 +25,8 @@ Supports all PaperKit types, will `fatalError` if used for an unsupported type.
 
 ## See Also
 
-- [init(UUID)](markuporderedset/elementid/init(_:)-5ykum.md)
+### Creating an element ID
+- [init(UUID)](./init%28_%29-5ykum.md)
   Creates a new element ID from a stroke UUID.
 
 

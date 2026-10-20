@@ -1,7 +1,8 @@
 # descriptions
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of description lines for this shopping cart item.
 

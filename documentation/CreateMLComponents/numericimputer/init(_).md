@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an imputer with a strategy.
 
@@ -22,7 +23,8 @@ init(_ strategy: NumericImputer<Element>.Strategy)
 
 ## See Also
 
-- [init(constant: Element)](numericimputer/init(constant:).md)
+### Creating an estimator
+- [init(constant: Element)](./init%28constant%29.md)
   Creates an imputer with a constant value to use when replacing missing values.
 
 

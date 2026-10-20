@@ -1,7 +1,8 @@
 # ModelJudgeEvaluator
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An evaluator that uses a language model as a judge to score responses.
 
@@ -22,63 +23,64 @@ struct ModelJudgeEvaluator<Input> where Input : ModelSampleProtocol
 
 ## Mentions
 
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
-- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
-- [Designing specific, measurable criteria in an evaluation suite](designing-evaluation-criteria.md)
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
+- [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
+- [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md)
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
 
 #### Overview
 
-`ModelJudgeEvaluator` sends the query, response, and optional reference data to a model judge, which returns scores for one or more dimensions. The response is automatically serialized as JSON, because `OutputType` is `Codable`, or is customizable via [`ModelJudgePrompt`](modeljudgeprompt.md).
+`ModelJudgeEvaluator` sends the query, response, and optional reference data to a model judge, which returns scores for one or more dimensions. The response is automatically serialized as JSON, because `OutputType` is `Codable`, or is customizable via [`ModelJudgePrompt`](./modeljudgeprompt.md).
 
 ## Topics
 
 ### Creating a single-dimension evaluator
-- [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode)](modeljudgeevaluator/init(_:scale:judge:scoringmode:).md)
+- [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode)](./modeljudgeevaluator/init%28_,scale,judge,scoringmode%29.md)
   Creates a single-metric evaluator with default prompt configuration.
-- [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](modeljudgeevaluator/init(_:scale:judge:scoringmode:prompt:).md)
+- [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](./modeljudgeevaluator/init%28_,scale,judge,scoringmode,prompt%29.md)
   Creates a single-metric evaluator with a custom judge prompt.
 ### Creating a multi-dimension evaluator
-- [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode)](modeljudgeevaluator/init(judge:dimensions:scoringmode:).md)
+- [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode)](./modeljudgeevaluator/init%28judge,dimensions,scoringmode%29.md)
   Creates a multi-metric evaluator with default prompt configuration.
-- [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](modeljudgeevaluator/init(judge:dimensions:scoringmode:prompt:).md)
+- [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, prompt: ModelJudgePrompt<Input>)](./modeljudgeevaluator/init%28judge,dimensions,scoringmode,prompt%29.md)
   Creates a multi-metric evaluator with a custom judge prompt.
 ### Creating a pairwise evaluator
-- [static func pairwise(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, evaluationTarget: ((Input.ExpectedValue) -> String)?) -> ModelJudgeEvaluator<Input>](modeljudgeevaluator/pairwise(_:scale:judge:scoringmode:evaluationtarget:).md)
+- [static func pairwise(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode, evaluationTarget: ((Input.ExpectedValue) -> String)?) -> ModelJudgeEvaluator<Input>](./modeljudgeevaluator/pairwise%28_,scale,judge,scoringmode,evaluationtarget%29.md)
   Creates a pairwise comparison evaluator that compares the model’s response against the sample’s expected value.
-- [static func pairwise(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, evaluationTarget: ((Input.ExpectedValue) -> String)?) -> ModelJudgeEvaluator<Input>](modeljudgeevaluator/pairwise(judge:dimensions:scoringmode:evaluationtarget:).md)
+- [static func pairwise(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, evaluationTarget: ((Input.ExpectedValue) -> String)?) -> ModelJudgeEvaluator<Input>](./modeljudgeevaluator/pairwise%28judge,dimensions,scoringmode,evaluationtarget%29.md)
   Creates a multi-metric pairwise comparison evaluator.
 ### Configuring the judge prompt
-- [static var defaultInstructions: String](modeljudgeevaluator/defaultinstructions.md)
+- [static var defaultInstructions: String](./modeljudgeevaluator/defaultinstructions.md)
   The default system instructions the model uses when no custom instructions are provided.
-- [func judgePrompt(for: Input, output: Input.ExpectedValue) async throws -> Prompt](modeljudgeevaluator/judgeprompt(for:output:).md)
+- [func judgePrompt(for: Input, output: Input.ExpectedValue) async throws -> Prompt](./modeljudgeevaluator/judgeprompt%28for,output%29.md)
   Builds and returns the full judge prompt for inspection, debugging, or logging.
 ### Inspecting the evaluator
-- [let dimensions: [ScoreDimension]](modeljudgeevaluator/dimensions.md)
+- [let dimensions: [ScoreDimension]](./modeljudgeevaluator/dimensions.md)
   The dimensions this evaluator scores.
-- [let scoringMode: ScoringMode](modeljudgeevaluator/scoringmode.md)
-  The scoring constraint mode. See [`ScoringMode`](scoringmode.md).
-- [enum ScoringMode](scoringmode.md)
+- [let scoringMode: ScoringMode](./modeljudgeevaluator/scoringmode.md)
+  The scoring constraint mode. See [`ScoringMode`](./scoringmode.md).
+- [enum ScoringMode](./scoringmode.md)
   The scoring constraint mode for a model evaluator.
 ### Errors
-- [enum ModelJudgeError](modeljudgeerror.md)
+- [enum ModelJudgeError](./modeljudgeerror.md)
 
 ## Relationships
 
 ### Conforms To
-- [EvaluatorProtocol](evaluatorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [EvaluatorProtocol](./evaluatorprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
+### Model-judge evaluations
+- [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
   Configure model-judge evaluators that produce scores you correlate with human review.
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
   Score subjective qualities like tone, accuracy, and relevance that programmatic checks cannot measure.
-- [struct ModelJudgePrompt](modeljudgeprompt.md)
+- [struct ModelJudgePrompt](./modeljudgeprompt.md)
   A configuration for how a model evaluator constructs its prompt.
-- [struct ScoreDimension](scoredimension.md)
+- [struct ScoreDimension](./scoredimension.md)
   A named scoring dimension for a model evaluator.
 
 

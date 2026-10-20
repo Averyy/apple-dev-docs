@@ -1,17 +1,22 @@
 # CFXMLParserCallBacks
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains version information and function pointers to callbacks needed when parsing XML.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 struct CFXMLParserCallBacks
+```
+
+```c
+typedef struct { ... } CFXMLParserCallBacks;
 ```
 
 #### Overview
@@ -21,31 +26,32 @@ This structure is passed to one of the `CFXMLParserCreate...` functions. Only th
 ## Topics
 
 ### Initializers
-- [init()](cfxmlparsercallbacks/init.md)
-- [init(version: CFIndex, createXMLStructure: CFXMLParserCreateXMLStructureCallBack!, addChild: CFXMLParserAddChildCallBack!, endXMLStructure: CFXMLParserEndXMLStructureCallBack!, resolveExternalEntity: CFXMLParserResolveExternalEntityCallBack!, handleError: CFXMLParserHandleErrorCallBack!)](cfxmlparsercallbacks/init(version:createxmlstructure:addchild:endxmlstructure:resolveexternalentity:handleerror:).md)
+- [init()](./cfxmlparsercallbacks/init%28%29.md)
+- [init(version: CFIndex, createXMLStructure: CFXMLParserCreateXMLStructureCallBack!, addChild: CFXMLParserAddChildCallBack!, endXMLStructure: CFXMLParserEndXMLStructureCallBack!, resolveExternalEntity: CFXMLParserResolveExternalEntityCallBack!, handleError: CFXMLParserHandleErrorCallBack!)](./cfxmlparsercallbacks/init%28version,createxmlstructure,addchild,endxmlstructure,resolveexternalentity,handleerror%29.md)
 ### Instance Properties
-- [var addChild: CFXMLParserAddChildCallBack!](cfxmlparsercallbacks/addchild.md)
+- [var addChild: CFXMLParserAddChildCallBack!](./cfxmlparsercallbacks/addchild.md)
   Called when a child is added.
-- [var createXMLStructure: CFXMLParserCreateXMLStructureCallBack!](cfxmlparsercallbacks/createxmlstructure.md)
+- [var createXMLStructure: CFXMLParserCreateXMLStructureCallBack!](./cfxmlparsercallbacks/createxmlstructure.md)
   Called when an XML structure is created.
-- [var endXMLStructure: CFXMLParserEndXMLStructureCallBack!](cfxmlparsercallbacks/endxmlstructure.md)
+- [var endXMLStructure: CFXMLParserEndXMLStructureCallBack!](./cfxmlparsercallbacks/endxmlstructure.md)
   Called when an XML structure has ended.
-- [var handleError: CFXMLParserHandleErrorCallBack!](cfxmlparsercallbacks/handleerror.md)
+- [var handleError: CFXMLParserHandleErrorCallBack!](./cfxmlparsercallbacks/handleerror.md)
   Called when a parse error needs to be handled.
-- [var resolveExternalEntity: CFXMLParserResolveExternalEntityCallBack!](cfxmlparsercallbacks/resolveexternalentity.md)
+- [var resolveExternalEntity: CFXMLParserResolveExternalEntityCallBack!](./cfxmlparsercallbacks/resolveexternalentity.md)
   Called when an external entity needs to be resolved.
-- [var version: CFIndex](cfxmlparsercallbacks/version.md)
+- [var version: CFIndex](./cfxmlparsercallbacks/version.md)
   Version number. Must be `0`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct CFXMLParserContext](cfxmlparsercontext.md)
+### Data Types
+- [struct CFXMLParserContext](./cfxmlparsercontext.md)
   Contains version information and function pointers to callbacks used when handling a program-defined context.
 
 

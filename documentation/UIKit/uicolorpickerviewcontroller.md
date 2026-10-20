@@ -1,7 +1,8 @@
 # UIColorPickerViewController
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that manages the interface for selecting a color.
 
@@ -18,13 +19,17 @@ A view controller that manages the interface for selecting a color.
 class UIColorPickerViewController
 ```
 
+```objc
+@interface UIColorPickerViewController : UIViewController
+```
+
 #### Overview
 
-[`UIColorPickerViewController`](uicolorpickerviewcontroller.md) provides a standard interface to select colors. Use this class instead of [`UIColorWell`](uicolorwell.md) if you need more fine-grained control over the presentation.
+[`UIColorPickerViewController`](./uicolorpickerviewcontroller.md) provides a standard interface to select colors. Use this class instead of [`UIColorWell`](./uicolorwell.md) if you need more fine-grained control over the presentation.
 
-![Screenshot of a color picker in a popover presentation style, showing a spectrum of color options. The title of the color picker is Colors.](/images/com.apple.uikit/media-4195196@2x.png)
+![Screenshot of a color picker in a popover presentation style, showing a spectrum of color options. The title of the color picker is Colors.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4195196@2x.png)
 
-You typically present a [`UIColorPickerViewController`](uicolorpickerviewcontroller.md) as a popover:
+You typically present a [`UIColorPickerViewController`](./uicolorpickerviewcontroller.md) as a popover:
 
 ```swift
 // This example code appears in a subclass of UIViewController that conforms to
@@ -40,57 +45,58 @@ func presentColorPicker() {
 }
 ```
 
-You can also react to the color-selection change or the dismissal of the color picker by implementing the [`UIColorPickerViewControllerDelegate`](uicolorpickerviewcontrollerdelegate.md) functions.
+You can also react to the color-selection change or the dismissal of the color picker by implementing the [`UIColorPickerViewControllerDelegate`](./uicolorpickerviewcontrollerdelegate.md) functions.
 
 ## Topics
 
 ### Creating a color picker view controller
-- [init()](uicolorpickerviewcontroller/init.md)
+- [init()](./uicolorpickerviewcontroller/init%28%29.md)
   Creates a color picker view controller.
 ### Configuring the color picker view controller
-- [var delegate: (any UIColorPickerViewControllerDelegate)?](uicolorpickerviewcontroller/delegate.md)
+- [var delegate: (any UIColorPickerViewControllerDelegate)?](./uicolorpickerviewcontroller/delegate.md)
   The delegate that receives updates about the color selection.
-- [protocol UIColorPickerViewControllerDelegate](uicolorpickerviewcontrollerdelegate.md)
+- [protocol UIColorPickerViewControllerDelegate](./uicolorpickerviewcontrollerdelegate.md)
   The delegate protocol to inform about changes in color selection.
-- [var maximumLinearExposure: CGFloat](uicolorpickerviewcontroller/maximumlinearexposure.md)
+- [var maximumLinearExposure: CGFloat](./uicolorpickerviewcontroller/maximumlinearexposure.md)
   The maximum exposure to apply to a color when returned by the color picker.
-- [var selectedColor: UIColor](uicolorpickerviewcontroller/selectedcolor.md)
+- [var selectedColor: UIColor](./uicolorpickerviewcontroller/selectedcolor.md)
   The color selected by the user.
-- [var supportsAlpha: Bool](uicolorpickerviewcontroller/supportsalpha.md)
+- [var supportsAlpha: Bool](./uicolorpickerviewcontroller/supportsalpha.md)
   A Boolean value that enables alpha value control.
-- [var supportsEyedropper: Bool](uicolorpickerviewcontroller/supportseyedropper.md)
+- [var supportsEyedropper: Bool](./uicolorpickerviewcontroller/supportseyedropper.md)
   If set to `NO` the eyedropper functionality is not supported for this color picker.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](uiviewcontroller.md)
+- [UIViewController](./uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](uiappearancecontainer.md)
-- [UIContentContainer](uicontentcontainer.md)
-- [UIFocusEnvironment](uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UIStateRestoring](uistaterestoring.md)
-- [UITraitChangeObservable](uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](uitraitenvironment.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](./uiappearancecontainer.md)
+- [UIContentContainer](./uicontentcontainer.md)
+- [UIFocusEnvironment](./uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UIStateRestoring](./uistaterestoring.md)
+- [UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](./uitraitenvironment.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 ## See Also
 
-- [protocol UIColorPickerViewControllerDelegate](uicolorpickerviewcontrollerdelegate.md)
+### Color picker
+- [protocol UIColorPickerViewControllerDelegate](./uicolorpickerviewcontrollerdelegate.md)
   The delegate protocol to inform about changes in color selection.
 
 

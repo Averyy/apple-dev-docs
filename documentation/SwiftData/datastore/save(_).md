@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -22,8 +23,9 @@ func save(_ request: DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataS
 
 ## See Also
 
-- [struct DataStoreSaveChangesRequest](datastoresavechangesrequest.md)
-- [class DataStoreSaveChangesResult](datastoresavechangesresult.md)
+### Persisting model data
+- [struct DataStoreSaveChangesRequest](../datastoresavechangesrequest.md)
+- [class DataStoreSaveChangesResult](../datastoresavechangesresult.md)
 
 
 ---

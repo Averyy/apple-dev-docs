@@ -1,15 +1,16 @@
 # AudioComponentInstantiationOptions
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,38 +18,43 @@
 struct AudioComponentInstantiationOptions
 ```
 
+```c
+enum AudioComponentInstantiationOptions : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [static var loadInProcess: AudioComponentInstantiationOptions](audiocomponentinstantiationoptions/loadinprocess.md)
-- [static var loadOutOfProcess: AudioComponentInstantiationOptions](audiocomponentinstantiationoptions/loadoutofprocess.md)
+- [static var loadInProcess: AudioComponentInstantiationOptions](./audiocomponentinstantiationoptions/loadinprocess.md)
+- [static var loadOutOfProcess: AudioComponentInstantiationOptions](./audiocomponentinstantiationoptions/loadoutofprocess.md)
 ### Initializers
-- [init(rawValue: UInt32)](audiocomponentinstantiationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./audiocomponentinstantiationoptions/init%28rawvalue%29.md)
 ### Type Properties
-- [static var loadedRemotely: AudioComponentInstantiationOptions](audiocomponentinstantiationoptions/loadedremotely.md)
+- [static var loadedRemotely: AudioComponentInstantiationOptions](./audiocomponentinstantiationoptions/loadedremotely.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func AudioComponentInstanceNew(AudioComponent, UnsafeMutablePointer<AudioComponentInstance?>) -> OSStatus](audiocomponentinstancenew(_:_:).md)
+### Creating an Audio Component Instance
+- [func AudioComponentInstanceNew(AudioComponent, UnsafeMutablePointer<AudioComponentInstance?>) -> OSStatus](./audiocomponentinstancenew%28_,_%29.md)
   Creates a new instance of an audio component.
-- [func AudioComponentInstantiate(AudioComponent, AudioComponentInstantiationOptions, (AudioComponentInstance?, OSStatus) -> Void)](audiocomponentinstantiate(_:_:_:).md)
-- [func AudioComponentInstanceDispose(AudioComponentInstance) -> OSStatus](audiocomponentinstancedispose(_:).md)
+- [func AudioComponentInstantiate(AudioComponent, AudioComponentInstantiationOptions, (AudioComponentInstance?, OSStatus) -> Void)](./audiocomponentinstantiate%28_,_,_%29.md)
+- [func AudioComponentInstanceDispose(AudioComponentInstance) -> OSStatus](./audiocomponentinstancedispose%28_%29.md)
   Disposes of an audio component instance.
-- [typealias AudioComponent](audiocomponent.md)
+- [typealias AudioComponent](./audiocomponent.md)
   An audio component.
-- [Audio Component Errors](1619490-audio-component-errors.md)
+- [Audio Component Errors](./api-1619490-audio-component-errors.md)
 
 
 ---

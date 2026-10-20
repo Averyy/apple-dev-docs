@@ -1,7 +1,8 @@
 # contentAlignment3D
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 26.0+

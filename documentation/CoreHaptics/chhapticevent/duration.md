@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the haptic event.
 
@@ -19,17 +20,22 @@ The duration of the haptic event.
 var duration: TimeInterval { get set }
 ```
 
+```objc
+@property (readwrite) NSTimeInterval duration;
+```
+
 #### Discussion
 
 The maximum duration of a continuous haptic event is 30 seconds.
 
 ## See Also
 
-- [var eventParameters: [CHHapticEventParameter]](chhapticevent/eventparameters.md)
+### Configuring Haptic Events
+- [var eventParameters: [CHHapticEventParameter]](./eventparameters.md)
   An array of event parameters, possibly empty.
-- [CHHapticEvent.ParameterID](chhapticevent/parameterid.md)
+- [CHHapticEvent.ParameterID](./parameterid.md)
   An identifier for an event parameter.
-- [var relativeTime: TimeInterval](chhapticevent/relativetime.md)
+- [var relativeTime: TimeInterval](./relativetime.md)
   The start time of the event, relative to other events in the same pattern.
 
 

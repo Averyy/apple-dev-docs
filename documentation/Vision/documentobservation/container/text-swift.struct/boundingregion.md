@@ -1,7 +1,8 @@
 # boundingRegion
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A polygon that defines the boundary of text.
 
@@ -25,9 +26,10 @@ var boundingRegion: NormalizedRegion { get }
 
 ## See Also
 
-- [var textAlignment: DocumentObservation.Container.Text.Alignment?](documentobservation/container/text-swift.struct/textalignment.md)
+### Inspecting the text
+- [var textAlignment: DocumentObservation.Container.Text.Alignment?](./textalignment.md)
   The alignment of the text within its container.
-- [DocumentObservation.Container.Text.Alignment](documentobservation/container/text-swift.struct/alignment.md)
+- [DocumentObservation.Container.Text.Alignment](./alignment.md)
   The different text alignment types within a container.
 
 

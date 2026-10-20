@@ -1,7 +1,8 @@
 # init(createPublisher:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a deferred publisher.
 

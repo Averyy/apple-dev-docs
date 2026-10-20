@@ -1,7 +1,8 @@
 # MTLTextureType.type2D
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-dimensional texture image.
 
@@ -10,7 +11,7 @@ A two-dimensional texture image.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,25 +20,30 @@ A two-dimensional texture image.
 case type2D
 ```
 
+```c
+MTLTextureType2D
+```
+
 ## See Also
 
-- [MTLTextureType.type1D](mtltexturetype/type1d.md)
+### Specifying the texture type
+- [MTLTextureType.type1D](./type1d.md)
   A one-dimensional texture image.
-- [MTLTextureType.type1DArray](mtltexturetype/type1darray.md)
+- [MTLTextureType.type1DArray](./type1darray.md)
   An array of one-dimensional texture images.
-- [MTLTextureType.type2DArray](mtltexturetype/type2darray.md)
+- [MTLTextureType.type2DArray](./type2darray.md)
   An array of two-dimensional texture images.
-- [MTLTextureType.type2DMultisample](mtltexturetype/type2dmultisample.md)
+- [MTLTextureType.type2DMultisample](./type2dmultisample.md)
   A two-dimensional texture image that uses more than one sample for each pixel.
-- [MTLTextureType.typeCube](mtltexturetype/typecube.md)
+- [MTLTextureType.typeCube](./typecube.md)
   A cube texture with six two-dimensional images.
-- [MTLTextureType.typeCubeArray](mtltexturetype/typecubearray.md)
+- [MTLTextureType.typeCubeArray](./typecubearray.md)
   An array of cube textures, each with six two-dimensional images.
-- [MTLTextureType.type3D](mtltexturetype/type3d.md)
+- [MTLTextureType.type3D](./type3d.md)
   A three-dimensional texture image.
-- [MTLTextureType.type2DMultisampleArray](mtltexturetype/type2dmultisamplearray.md)
+- [MTLTextureType.type2DMultisampleArray](./type2dmultisamplearray.md)
   An array of two-dimensional texture images that use more than one sample for each pixel.
-- [MTLTextureType.typeTextureBuffer](mtltexturetype/typetexturebuffer.md)
+- [MTLTextureType.typeTextureBuffer](./typetexturebuffer.md)
   A texture buffer.
 
 

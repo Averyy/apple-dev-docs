@@ -1,7 +1,8 @@
 # documents
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The documents currently on the stack.
 
@@ -10,7 +11,7 @@ The documents currently on the stack.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Array documents;
 ```
 

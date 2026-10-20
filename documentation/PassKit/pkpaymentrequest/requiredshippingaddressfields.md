@@ -1,17 +1,20 @@
 # requiredShippingAddressFields
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bit field of shipping address fields that you need in order to process the transaction.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 11.0
+- iPadOS 8.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 - macOS 11.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 4.0
+
+> **Deprecated**: This property is deprecated. Use [`requiredShippingContactFields`](./requiredshippingcontactfields.md) instead.
 
 ## Declaration
 
@@ -19,23 +22,28 @@ A bit field of shipping address fields that you need in order to process the tra
 var requiredShippingAddressFields: PKAddressField { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKAddressField requiredShippingAddressFields;
+```
+
 #### Discussion
 
-The default value is [`PKPaymentRequest`](pkpaymentrequest.md). For possible values, see [`PKPaymentRequest`](pkpaymentrequest.md).
+The default value is [`PKPaymentRequest`](../pkpaymentrequest.md). For possible values, see [`PKPaymentRequest`](../pkpaymentrequest.md).
 
 ## See Also
 
-- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
+### Deprecated
+- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](./applepaylateravailability-3dxrt.md)
   A value that indicates whether Apple Pay Later is available for a transaction.
-- [static var enabled: PKShippingContactEditingMode](pkshippingcontacteditingmode/enabled.md)
+- [static var enabled: PKShippingContactEditingMode](../pkshippingcontacteditingmode/enabled.md)
   All fields of the shipping contact on the payment sheet are editable by the user.
-- [var requiredBillingAddressFields: PKAddressField](pkpaymentrequest/requiredbillingaddressfields.md)
+- [var requiredBillingAddressFields: PKAddressField](./requiredbillingaddressfields.md)
   A bit field of billing address fields that you need in order to process the transaction.
-- [struct PKAddressField](pkaddressfield.md)
+- [struct PKAddressField](../pkaddressfield.md)
   Billing or shipping address fields.
-- [var billingAddress: ABRecord?](pkpaymentrequest/billingaddress.md)
+- [var billingAddress: ABRecord?](./billingaddress.md)
   A prepopulated billing address.
-- [var shippingAddress: ABRecord?](pkpaymentrequest/shippingaddress.md)
+- [var shippingAddress: ABRecord?](./shippingaddress.md)
   A prepopulated shipping address.
 
 

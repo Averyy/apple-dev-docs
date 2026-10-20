@@ -1,17 +1,18 @@
 # regionOriginX
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The x coordinate of the region to change, measured in tile coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The x coordinate of the region to change, measured in tile coordinates.
 var regionOriginX: UInt32
 ```
 
+```c
+uint32_t regionOriginX;
+```
+
 ## See Also
 
-- [var regionOriginY: UInt32](mtlmapindirectarguments/regionoriginy.md)
+### Specifying region origin
+- [var regionOriginY: UInt32](./regionoriginy.md)
   The y coordinate of the region to change, measured in tile coordinates.
-- [var regionOriginZ: UInt32](mtlmapindirectarguments/regionoriginz.md)
+- [var regionOriginZ: UInt32](./regionoriginz.md)
   The z coordinate of the region to change, measured in tile coordinates.
 
 

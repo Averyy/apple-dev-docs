@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to return the locations of text input elements inside the specified rectangle of the view.
@@ -10,7 +11,7 @@ Asks the delegate to return the locations of text input elements inside the spec
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,7 +31,8 @@ Each rectangle returned by the completion handler represents an area where the u
 
 ## See Also
 
-- [func indirectScribbleInteraction(any UIInteraction, frameForElement: Self.ElementIdentifier) -> CGRect](uiindirectscribbleinteractiondelegate-hdh/indirectscribbleinteraction(_:frameforelement:).md)
+### Finding Elements and Frames
+- [func indirectScribbleInteraction(any UIInteraction, frameForElement: Self.ElementIdentifier) -> CGRect](./indirectscribbleinteraction%28_,frameforelement%29.md)
   Asks the delegate to provide the frame of an element.
 
 

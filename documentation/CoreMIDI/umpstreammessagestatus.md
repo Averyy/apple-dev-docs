@@ -1,16 +1,17 @@
 # UMPStreamMessageStatus
 
 **Framework**: Core MIDI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,52 +19,57 @@
 enum UMPStreamMessageStatus
 ```
 
+```c
+enum UMPStreamMessageStatus : unsigned int;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UMPStreamMessageStatus.deviceIdentityNotification](umpstreammessagestatus/deviceidentitynotification.md)
-- [UMPStreamMessageStatus.endOfClip](umpstreammessagestatus/endofclip.md)
-- [UMPStreamMessageStatus.endpointDiscovery](umpstreammessagestatus/endpointdiscovery.md)
-- [UMPStreamMessageStatus.endpointInfoNotification](umpstreammessagestatus/endpointinfonotification.md)
-- [UMPStreamMessageStatus.endpointNameNotification](umpstreammessagestatus/endpointnamenotification.md)
-- [UMPStreamMessageStatus.functionBlockDiscovery](umpstreammessagestatus/functionblockdiscovery.md)
-- [UMPStreamMessageStatus.functionBlockInfoNotification](umpstreammessagestatus/functionblockinfonotification.md)
-- [UMPStreamMessageStatus.functionBlockNameNotification](umpstreammessagestatus/functionblocknamenotification.md)
-- [UMPStreamMessageStatus.productInstanceIDNotification](umpstreammessagestatus/productinstanceidnotification.md)
-- [UMPStreamMessageStatus.startOfClip](umpstreammessagestatus/startofclip.md)
-- [UMPStreamMessageStatus.streamConfigurationNotification](umpstreammessagestatus/streamconfigurationnotification.md)
-- [UMPStreamMessageStatus.streamConfigurationRequest](umpstreammessagestatus/streamconfigurationrequest.md)
+- [UMPStreamMessageStatus.deviceIdentityNotification](./umpstreammessagestatus/deviceidentitynotification.md)
+- [UMPStreamMessageStatus.endOfClip](./umpstreammessagestatus/endofclip.md)
+- [UMPStreamMessageStatus.endpointDiscovery](./umpstreammessagestatus/endpointdiscovery.md)
+- [UMPStreamMessageStatus.endpointInfoNotification](./umpstreammessagestatus/endpointinfonotification.md)
+- [UMPStreamMessageStatus.endpointNameNotification](./umpstreammessagestatus/endpointnamenotification.md)
+- [UMPStreamMessageStatus.functionBlockDiscovery](./umpstreammessagestatus/functionblockdiscovery.md)
+- [UMPStreamMessageStatus.functionBlockInfoNotification](./umpstreammessagestatus/functionblockinfonotification.md)
+- [UMPStreamMessageStatus.functionBlockNameNotification](./umpstreammessagestatus/functionblocknamenotification.md)
+- [UMPStreamMessageStatus.productInstanceIDNotification](./umpstreammessagestatus/productinstanceidnotification.md)
+- [UMPStreamMessageStatus.startOfClip](./umpstreammessagestatus/startofclip.md)
+- [UMPStreamMessageStatus.streamConfigurationNotification](./umpstreammessagestatus/streamconfigurationnotification.md)
+- [UMPStreamMessageStatus.streamConfigurationRequest](./umpstreammessagestatus/streamconfigurationrequest.md)
 ### Initializers
-- [init?(rawValue: UInt32)](umpstreammessagestatus/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./umpstreammessagestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var kMIDIInvalidUniqueID: MIDIUniqueID](kmidiinvaliduniqueid.md)
+### Enumerations
+- [var kMIDIInvalidUniqueID: MIDIUniqueID](./kmidiinvaliduniqueid.md)
   An invalid identifier.
-- [struct MIDICICategoryOptions](midicicategoryoptions.md)
-- [enum MIDICIDeviceType](midicidevicetype.md)
-- [enum MIDICIManagementMessageType](midicimanagementmessagetype.md)
-- [enum MIDICIProcessInquiryMessageType](midiciprocessinquirymessagetype.md)
-- [enum MIDICIProfileMessageType](midiciprofilemessagetype.md)
-- [enum MIDICIProfileType](midiciprofiletype.md)
-- [enum MIDICIPropertyExchangeMessageType](midicipropertyexchangemessagetype.md)
-- [enum MIDINetworkConnectionPolicy](midinetworkconnectionpolicy.md)
-- [enum MIDINoteAttribute](midinoteattribute.md)
-- [struct MIDIPerNoteManagementOptions](midipernotemanagementoptions.md)
-- [struct MIDIProgramChangeOptions](midiprogramchangeoptions.md)
-- [enum MIDIUMPCIObjectBackingType](midiumpciobjectbackingtype.md)
-- [enum MIDIUMPFunctionBlockDirection](midiumpfunctionblockdirection.md)
-- [enum MIDIUMPFunctionBlockMIDI1Info](midiumpfunctionblockmidi1info.md)
+- [struct MIDICICategoryOptions](./midicicategoryoptions.md)
+- [enum MIDICIDeviceType](./midicidevicetype.md)
+- [enum MIDICIManagementMessageType](./midicimanagementmessagetype.md)
+- [enum MIDICIProcessInquiryMessageType](./midiciprocessinquirymessagetype.md)
+- [enum MIDICIProfileMessageType](./midiciprofilemessagetype.md)
+- [enum MIDICIProfileType](./midiciprofiletype.md)
+- [enum MIDICIPropertyExchangeMessageType](./midicipropertyexchangemessagetype.md)
+- [enum MIDINetworkConnectionPolicy](./midinetworkconnectionpolicy.md)
+- [enum MIDINoteAttribute](./midinoteattribute.md)
+- [struct MIDIPerNoteManagementOptions](./midipernotemanagementoptions.md)
+- [struct MIDIProgramChangeOptions](./midiprogramchangeoptions.md)
+- [enum MIDIUMPCIObjectBackingType](./midiumpciobjectbackingtype.md)
+- [enum MIDIUMPFunctionBlockDirection](./midiumpfunctionblockdirection.md)
+- [enum MIDIUMPFunctionBlockMIDI1Info](./midiumpfunctionblockmidi1info.md)
 
 
 ---

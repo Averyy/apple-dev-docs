@@ -1,6 +1,7 @@
 # Xcode 13.2.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -30,19 +31,20 @@ Xcode 13.2.1 includes SDKs for iOS 15.2, iPadOS 15.2, tvOS 15.2, watchOS 8.3, an
 
 ## See Also
 
-- [Xcode 13.4.1 Release Notes](xcode-13_4_1-release-notes.md)
+### Xcode 13
+- [Xcode 13.4.1 Release Notes](./xcode-13_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.4 Release Notes](xcode-13_4-release-notes.md)
+- [Xcode 13.4 Release Notes](./xcode-13_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.3.1 Release Notes](xcode-13_3_1-release-notes.md)
+- [Xcode 13.3.1 Release Notes](./xcode-13_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.3 Release Notes](xcode-13_3-release-notes.md)
+- [Xcode 13.3 Release Notes](./xcode-13_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.2 Release Notes](xcode-13_2-release-notes.md)
+- [Xcode 13.2 Release Notes](./xcode-13_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13.1 Release Notes](xcode-13_1-release-notes.md)
+- [Xcode 13.1 Release Notes](./xcode-13_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 13 Release Notes](xcode-13-release-notes.md)
+- [Xcode 13 Release Notes](./xcode-13-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

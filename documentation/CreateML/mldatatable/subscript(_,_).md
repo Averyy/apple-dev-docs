@@ -1,7 +1,8 @@
 # subscript(_:_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Retrieves a column with the specified name and type.
 
@@ -21,11 +22,11 @@ subscript<T>(columnName: String, columnType: T.Type) -> MLDataColumn<T>? where T
 
 #### Return Value
 
-A new [`MLDataColumn`](mldatacolumn.md) with the specified name and type, if it exists; otherwise `nil`.
+A new [`MLDataColumn`](../mldatacolumn.md) with the specified name and type, if it exists; otherwise `nil`.
 
 #### Overview
 
-Use this subscript to get a typed [`MLDataColumn`](mldatacolumn.md), which is easier to work with than a [`MLUntypedColumn`](mluntypedcolumn.md) returned from [`subscript(_:)`](mldatatable/subscript(_:)-3wjk.md).
+Use this subscript to get a typed [`MLDataColumn`](../mldatacolumn.md), which is easier to work with than a [`MLUntypedColumn`](../mluntypedcolumn.md) returned from [`subscript(_:)`](./subscript%28_%29-3wjk.md).
 
 ## Parameters
 
@@ -34,7 +35,8 @@ Use this subscript to get a typed [`MLDataColumn`](mldatacolumn.md), which is ea
 
 ## See Also
 
-- [subscript(_:)](mldatatable/subscript(_:).md)
+### Accessing columns
+- [subscript(_:)](./subscript%28_%29.md)
   Retrieves or adds an untyped column with the specified name.
 
 

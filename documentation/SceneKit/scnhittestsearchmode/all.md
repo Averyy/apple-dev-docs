@@ -1,18 +1,19 @@
 # SCNHitTestSearchMode.all
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The hit test should return all possible results, sorted from nearest to farthest.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The hit test should return all possible results, sorted from nearest to farthest
 case all
 ```
 
+```c
+SCNHitTestSearchModeAll
+```
+
 ## See Also
 
-- [SCNHitTestSearchMode.any](scnhittestsearchmode/any.md)
+### Search Modes
+- [SCNHitTestSearchMode.any](./any.md)
   The hit test should return only the first object found, regardless of distance.
-- [SCNHitTestSearchMode.closest](scnhittestsearchmode/closest.md)
+- [SCNHitTestSearchMode.closest](./closest.md)
   The hit test should return only the closes object found.
 
 

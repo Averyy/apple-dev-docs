@@ -1,7 +1,8 @@
 # dismissPopover(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restores the previously visible main bar.
 
@@ -17,16 +18,21 @@ Restores the previously visible main bar.
 func dismissPopover(_ sender: Any?)
 ```
 
+```objc
+- (void) dismissPopover:(id) sender;
+```
+
 #### Discussion
 
 This method has the same effect as the user tapping the optional close button.
 
 ## See Also
 
-- [func showPopover(Any?)](nspopovertouchbaritem/showpopover(_:).md)
+### Expanding and collapsing a popover
+- [func showPopover(Any?)](./showpopover%28_%29.md)
   Replaces the main bar with this item’s popover bar.
-- [func makeStandardActivatePopoverGestureRecognizer() -> NSGestureRecognizer](nspopovertouchbaritem/makestandardactivatepopovergesturerecognizer.md)
-  Returns a gesture recognizer, configured to invoke the [`showPopover(_:)`](nspopovertouchbaritem/showpopover(_:).md) method.
+- [func makeStandardActivatePopoverGestureRecognizer() -> NSGestureRecognizer](./makestandardactivatepopovergesturerecognizer%28%29.md)
+  Returns a gesture recognizer, configured to invoke the [`showPopover(_:)`](./showpopover%28_%29.md) method.
 
 
 ---

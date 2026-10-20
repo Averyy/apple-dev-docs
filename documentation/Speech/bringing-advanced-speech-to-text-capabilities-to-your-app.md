@@ -1,6 +1,8 @@
 # Bringing advanced speech-to-text capabilities to your app
 
-**Framework**: Speech
+**Framework**: Speech  
+**Role**: Sample Code  
+**Download**: [BringingAdvancedSpeechToTextCapabilitiesToYourApp.zip](https://docs-assets.developer.apple.com/published/e40c20fc5641/BringingAdvancedSpeechToTextCapabilitiesToYourApp.zip)
 
 Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.
 
@@ -13,17 +15,18 @@ Learn how to incorporate live speech-to-text transcription into your app with Sp
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 277: [`Bring advanced speech-to-text to your app with SpeechAnalyzer`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/277).
+> **Note**: This sample code project is associated with WWDC25 session 277: [Bring advanced speech-to-text to your app with SpeechAnalyzer](https://developer.apple.com/videos/play/wwdc2025/277).
 
 ## See Also
 
-- [Speech updates](../updates/speech.md)
+### Essentials
+- [Speech updates](../Updates/speech.md)
   Learn about important changes to Speech.
-- [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
+- [Recognizing speech in live audio](./recognizing-speech-in-live-audio.md)
   Perform speech recognition and transcription on audio captured from the microphone of an iOS device.
-- [actor SpeechAnalyzer](speechanalyzer.md)
+- [actor SpeechAnalyzer](./speechanalyzer.md)
   Analyzes spoken audio content in various ways and manages the analysis session.
-- [class AssetInventory](assetinventory.md)
+- [class AssetInventory](./assetinventory.md)
   Manages the assets that are necessary for transcription or other analyses.
 
 

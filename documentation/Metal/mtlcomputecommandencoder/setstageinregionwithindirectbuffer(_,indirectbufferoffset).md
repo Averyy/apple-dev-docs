@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the region of the stage-in attributes to apply to a compute kernel using an indirect buffer.
@@ -20,9 +21,13 @@ Sets the region of the stage-in attributes to apply to a compute kernel using an
 func setStageInRegionWithIndirectBuffer(_ indirectBuffer: any MTLBuffer, indirectBufferOffset: Int)
 ```
 
+```objc
+- (void) setStageInRegionWithIndirectBuffer:(id<MTLBuffer>) indirectBuffer indirectBufferOffset:(NSUInteger) indirectBufferOffset;
+```
+
 #### Discussion
 
-> ❗ **Important**:  Lay out the data in the buffer as described in the [`MTLStageInRegionIndirectArguments`](mtlstageinregionindirectarguments.md) structure.
+> ❗ **Important**:  Lay out the data in the buffer as described in the [`MTLStageInRegionIndirectArguments`](../mtlstageinregionindirectarguments.md) structure.
 
 The region’s origin point, starting from `(0,0,0)` in the upper left of the bound data, determines the final index of `[[stage_in]]` data. Note that the total number of threads Metal launches may be larger than your stage-in data.
 
@@ -30,12 +35,13 @@ To determine the index used to fetch `[[stage_in]]` data for a given thread, the
 
 ## Parameters
 
-- `indirectBuffer`: The [`MTLRegion`](mtlregion.md) defining how to interpret a thread’s location as a coordinate for stage-in data.
+- `indirectBuffer`: The [`MTLRegion`](../mtlregion.md) defining how to interpret a thread’s location as a coordinate for stage-in data.
 - `indirectBufferOffset`: Where the data begins, in bytes, from the start of the buffer.
 
 ## See Also
 
-- [func setStageInRegion(MTLRegion)](mtlcomputecommandencoder/setstageinregion(_:).md)
+### Configuring stage-in data
+- [func setStageInRegion(MTLRegion)](./setstageinregion%28_%29.md)
   Sets the dimensions over the thread grid of how your compute kernel receives stage-in arguments.
 
 

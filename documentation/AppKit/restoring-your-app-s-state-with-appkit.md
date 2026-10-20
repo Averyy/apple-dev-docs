@@ -1,6 +1,8 @@
 # Restoring your app’s state with AppKit
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Sample Code  
+**Download**: [RestoringYourAppsStateWithAppKit.zip](https://docs-assets.developer.apple.com/published/92835358791e/RestoringYourAppsStateWithAppKit.zip)
 
 Provide continuity for people using your app by preserving current activities on macOS.
 
@@ -14,24 +16,24 @@ This sample app demonstrates how to preserve your app’s state information and 
 
 When using your app, people perform actions that update and alter the user interface. For example, someone might view a specific page of information, and after they leave the app, the operating system might terminate it to free up the resources it holds. The person should be able to return to where they left off—and window state restoration is a core part of making that experience seamless.
 
-This sample app demonstrates the use of state preservation and restoration for a macOS app. The sample app manages a set of products. Each product has a title, an image, and other metadata you can view and edit. The project shows how to preserve and restore product selection, tab state, editor state, and multiple windows using the [`NSWindowRestoration`](nswindowrestoration.md) protocol in AppKit.
+This sample app demonstrates the use of state preservation and restoration for a macOS app. The sample app manages a set of products. Each product has a title, an image, and other metadata you can view and edit. The project shows how to preserve and restore product selection, tab state, editor state, and multiple windows using the [`NSWindowRestoration`](./nswindowrestoration.md) protocol in AppKit.
 
 The state restoration system in AppKit uses three key mechanisms working together:
 
 - Window registration with a restoration class.
-- Encoding state into an [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) archive.
+- Encoding state into an [`NSCoder`](../Foundation/nscoder.md) archive.
 - Restoring windows on relaunch through the
-[`restoreWindow(withIdentifier:state:completionHandler:)`](nswindowrestoration/restorewindow(withidentifier:state:completionhandler:).md) protocol method.
+  [`restoreWindow(withIdentifier:state:completionHandler:)`](./nswindowrestoration/restorewindow%28withidentifier,state,completionhandler%29.md) protocol method.
 
-To learn how to adopt state restoration in your iOS app, see [`Restoring your app’s state`](https://developer.apple.com/documentation/uikit/restoring-your-app-s-state). For state restoration in your SwiftUI app, see [`Restoring your app’s state with SwiftUI`](https://developer.apple.com/documentation/swiftui/restoring-your-app-s-state-with-swiftui).
+To learn how to adopt state restoration in your iOS app, see [Restoring your app’s state](../UIKit/restoring-your-app-s-state.md). For state restoration in your SwiftUI app, see [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md).
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 In Xcode, select your development team on the macOS target’s Signing & Capabilities tab.
 
-#### Enable Window State Restoration
+#### Enable window state restoration
 
-To enable window state restoration, each window must be configured with a unique identifier, a frame autosave name, and a restoration class. The restoration class conforms to the [`NSWindowRestoration`](nswindowrestoration.md) protocol and is responsible for recreating the window during restoration.
+To enable window state restoration, each window must be configured with a unique identifier, a frame autosave name, and a restoration class. The restoration class conforms to the [`NSWindowRestoration`](./nswindowrestoration.md) protocol and is responsible for recreating the window during restoration.
 
 ```swift
 window.identifier = NSUserInterfaceItemIdentifier("MainWindow")
@@ -48,9 +50,9 @@ func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
 }
 ```
 
-#### Restore Windows with the Nswindowrestoration Protocol
+#### Restore windows with the NSWindowRestoration protocol
 
-The `WindowRestorationHandler` class conforms to [`NSWindowRestoration`](nswindowrestoration.md) and implements the static [`restoreWindow(withIdentifier:state:completionHandler:)`](nswindowrestoration/restorewindow(withidentifier:state:completionhandler:).md) method. AppKit calls this method at launch for each window that was open when the app last quit. The method creates the appropriate window controller based on the window identifier and passes the window back through the completion handler; otherwise, ignores the window and any errors by passing `nil`.
+The `WindowRestorationHandler` class conforms to [`NSWindowRestoration`](./nswindowrestoration.md) and implements the static [`restoreWindow(withIdentifier:state:completionHandler:)`](./nswindowrestoration/restorewindow%28withidentifier,state,completionhandler%29.md) method. AppKit calls this method at launch for each window that was open when the app last quit. The method creates the appropriate window controller based on the window identifier and passes the window back through the completion handler; otherwise, ignores the window and any errors by passing `nil`.
 
 ```swift
 @MainActor
@@ -84,11 +86,11 @@ class WindowRestorationHandler: NSObject, NSWindowRestoration {
 }
 ```
 
-After AppKit creates each window through this method, it calls [`restoreState(with:)`](nsresponder/restorestate(with:).md) on the window controller to decode the saved state.
+After AppKit creates each window through this method, it calls [`restoreState(with:)`](./nsresponder/restorestate%28with%29.md) on the window controller to decode the saved state.
 
-#### Encode and Decode Window State
+#### Encode and decode window state
 
-Each window controller overrides [`encodeRestorableState(with:)`](nsresponder/encoderestorablestate(with:).md) to save its state, and `restoreState(with:)` to read it back. The main window controller encodes the selected product identifier, the active tab index, and whether the editor sheet was presented with its field values:
+Each window controller overrides [`encodeRestorableState(with:)`](./nsresponder/encoderestorablestate%28with%29.md) to save its state, and `restoreState(with:)` to read it back. The main window controller encodes the selected product identifier, the active tab index, and whether the editor sheet was presented with its field values:
 
 ```swift
 override func encodeRestorableState(with coder: NSCoder) {
@@ -133,9 +135,9 @@ override func restoreState(with coder: NSCoder) {
 }
 ```
 
-#### Invalidate Restorable State on Changes
+#### Invalidate restorable state on changes
 
-Whenever someone makes a change that should be preserved—selecting a product, switching tabs, or editing fields—the window controller calls [`invalidateRestorableState()`](nsresponder/invalidaterestorablestate().md). This tells AppKit that the saved state is out of date and needs to be re-encoded before the app terminates.
+Whenever someone makes a change that should be preserved—selecting a product, switching tabs, or editing fields—the window controller calls [`invalidateRestorableState()`](./nsresponder/invalidaterestorablestate%28%29.md). This tells AppKit that the saved state is out of date and needs to be re-encoded before the app terminates.
 
 ```swift
 splitViewController.onProductSelected = { [weak self] product in
@@ -146,7 +148,7 @@ splitViewController.onTabChanged = { [weak self] in
 }
 ```
 
-#### Restore Multiple Windows
+#### Restore multiple windows
 
 The sample app supports multiple windows. The main window displays a split view with a product collection in the sidebar and a detail pane. Additional standalone image windows can be opened for any product. Each window type has its own window controller and encodes its own state independently.
 
@@ -163,7 +165,7 @@ override func encodeRestorableState(with coder: NSCoder) {
 
 AppKit restores all open windows on relaunch. The `WindowRestorationHandler` class routes each window to the correct controller based on its identifier.
 
-#### Test State Restoration
+#### Test state restoration
 
 This sample app restores the following user interface:
 
@@ -175,9 +177,10 @@ To test state restoration, quit the app normally (Command-Q or through the app m
 
 ## See Also
 
-- [protocol NSWindowRestoration](nswindowrestoration.md)
+### Window Restoration
+- [protocol NSWindowRestoration](./nswindowrestoration.md)
   A set of methods that restoration classes must implement to handle the recreation of windows.
-- [protocol NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
+- [protocol NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
   A set of methods used to associate a unique identifier with objects in your user interface.
 
 

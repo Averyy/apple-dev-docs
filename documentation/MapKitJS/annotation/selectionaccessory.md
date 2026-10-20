@@ -1,7 +1,8 @@
 # selectionAccessory
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An accessory that displays place information when a person selects a place.
 
@@ -10,18 +11,19 @@ An accessory that displays place information when a person selects a place.
 
 ## Declaration
 
-```swift
+```
 get selectionAccessory(): PlaceSelectionAccessory | null;
 set selectionAccessory(value: PlaceSelectionAccessory | null);
 ```
 
 #### Discussion
 
-You need to initialize an annotation with an instance of a [`place`](annotationconstructoroptions/place.md) so that the accessory displays the correct place.
+You need to initialize an annotation with an instance of a [`place`](../annotationconstructoroptions/place.md) so that the accessory displays the correct place.
 
 ## See Also
 
-- [selectionAccessoryOffset](annotation/selectionaccessoryoffset.md)
+### Managing selection accessories
+- [selectionAccessoryOffset](./selectionaccessoryoffset.md)
   An offset that changes the selection accessory’s default anchor point.
 
 

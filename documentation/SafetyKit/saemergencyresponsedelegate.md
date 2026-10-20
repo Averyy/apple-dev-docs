@@ -1,7 +1,8 @@
 # SAEmergencyResponseDelegate
 
 **Framework**: SafetyKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for receiving updates about a requested emergency response action.
 
@@ -18,22 +19,27 @@ The interface for receiving updates about a requested emergency response action.
 protocol SAEmergencyResponseDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SAEmergencyResponseDelegate <NSObject>
+```
+
 ## Topics
 
 ### Receiving voice call status
-- [func emergencyResponseManager(SAEmergencyResponseManager, didUpdateVoiceCallStatus: SAEmergencyResponseManager.VoiceCallStatus)](saemergencyresponsedelegate/emergencyresponsemanager(_:didupdatevoicecallstatus:).md)
+- [func emergencyResponseManager(SAEmergencyResponseManager, didUpdateVoiceCallStatus: SAEmergencyResponseManager.VoiceCallStatus)](./saemergencyresponsedelegate/emergencyresponsemanager%28_,didupdatevoicecallstatus%29.md)
   Provides the voice call status to the delegate.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SAEmergencyResponseManager](saemergencyresponsemanager.md)
+### Responding to a crash
+- [class SAEmergencyResponseManager](./saemergencyresponsemanager.md)
   Provides actions in response to a Crash Detection event.
-- [SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.enum.md)
+- [SACrashDetectionEvent.Response](./sacrashdetectionevent/response-swift.enum.md)
   An enumeration that defines possible emergency responses to a Crash Detection event.
 
 

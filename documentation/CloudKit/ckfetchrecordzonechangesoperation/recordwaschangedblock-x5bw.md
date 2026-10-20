@@ -1,7 +1,8 @@
 # recordWasChangedBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute with the results of retrieving a record change.
 
@@ -11,7 +12,7 @@ The closure to execute with the results of retrieving a record change.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -24,8 +25,10 @@ var recordWasChangedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?
 
 The closure returns no value and takes the following parameters:
 
-- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - The changed record. If you specify a value for the [`desiredKeys`](ckfetchrecordzonechangesoperation/zoneconfiguration/desiredkeys.md) property, the record contains only the corresponding fields.
-- An error that contains information about a problem encountered retrieving the changed record.
+- A [`Result`](../../Swift/result.md) that contains either:
+
+  - The changed record. If you specify a value for the [`desiredKeys`](./zoneconfiguration/desiredkeys.md) property, the record contains only the corresponding fields.
+  - An error that contains information about a problem encountered retrieving the changed record.
 
 The operation executes this closure once for each record in the record zone with changes since the previous fetch request. Each time the closure executes, it executes serially with respect to the other closures of the operation. If there aren’t any record changes, this closure doesn’t execute.
 

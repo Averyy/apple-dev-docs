@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data object that contains the payload content.
 
@@ -16,7 +17,8 @@ let data: Data
 
 ## See Also
 
-- [let transport: AccessoryTransport](accessorymessage/payload/transport.md)
+### Accessing payload content
+- [let transport: AccessoryTransport](./transport.md)
   A transport method for delivering the payload.
 
 

@@ -1,7 +1,8 @@
 # cachePolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s cache policy.
 
@@ -20,11 +21,17 @@ The request’s cache policy.
 var cachePolicy: NSURLRequest.CachePolicy { get }
 ```
 
+```objc
+@property (readonly) NSURLRequestCachePolicy cachePolicy;
+```
+
 ## See Also
 
-- [var cachePolicy: NSURLRequest.CachePolicy](nsmutableurlrequest/cachepolicy.md)
+### Related Documentation
+- [var cachePolicy: NSURLRequest.CachePolicy](../nsmutableurlrequest/cachepolicy.md)
   The request’s cache policy.
-- [NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.enum.md)
+### Working with a cache policy
+- [NSURLRequest.CachePolicy](./cachepolicy-swift.enum.md)
   The constants used to specify interaction with the cached responses.
 
 

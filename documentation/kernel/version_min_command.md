@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct version_min_command {
     ...
 };
@@ -17,10 +17,10 @@ struct version_min_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](version_min_command/1525652-cmd.md)
-- [cmdsize](version_min_command/1525894-cmdsize.md)
-- [sdk](version_min_command/1525516-sdk.md)
-- [version](version_min_command/1525478-version.md)
+- [cmd](./version_min_command/api-1525652-cmd.md)
+- [cmdsize](./version_min_command/api-1525894-cmdsize.md)
+- [sdk](./version_min_command/api-1525516-sdk.md)
+- [version](./version_min_command/api-1525478-version.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the synthesizer assembles digits into numbers (so that 12 is spoken as “twelve”) and text into words.
 
@@ -14,13 +15,18 @@ Indicates that the synthesizer assembles digits into numbers (so that 12 is spok
 static let normal: NSSpeechSynthesizer.SpeechPropertyKey.Mode
 ```
 
+```c
+extern NSSpeechMode const NSSpeechModeNormal;
+```
+
 ## See Also
 
-- [static let literal: NSSpeechSynthesizer.SpeechPropertyKey.Mode](nsspeechsynthesizer/speechpropertykey/mode/literal.md)
+### Type Properties
+- [static let literal: NSSpeechSynthesizer.SpeechPropertyKey.Mode](./literal.md)
   Indicates that each digit or character is spoken literally (so that 12 is spoken as “one, two”, or the word “cat” is spoken as “C A T”).
-- [static let phoneme: NSSpeechSynthesizer.SpeechPropertyKey.Mode](nsspeechsynthesizer/speechpropertykey/mode/phoneme.md)
+- [static let phoneme: NSSpeechSynthesizer.SpeechPropertyKey.Mode](./phoneme.md)
   Indicates that the synthesizer is in phoneme-processing mode. When in phoneme-processing mode, a text buffer is interpreted to be a series of characters representing various phonemes and prosodic controls.
-- [static let text: NSSpeechSynthesizer.SpeechPropertyKey.Mode](nsspeechsynthesizer/speechpropertykey/mode/text.md)
+- [static let text: NSSpeechSynthesizer.SpeechPropertyKey.Mode](./text.md)
   Indicates that the synthesizer is in text-processing mode.
 
 

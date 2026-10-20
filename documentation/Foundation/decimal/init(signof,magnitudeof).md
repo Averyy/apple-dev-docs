@@ -1,7 +1,8 @@
 # init(signOf:magnitudeOf:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a decimal with the sign and magnitude of the given decimals.
 
@@ -22,12 +23,13 @@ init(signOf: Decimal, magnitudeOf magnitude: Decimal)
 
 ## Parameters
 
-- `signOf`: A [`Decimal`](decimal.md) to use for the sign of the newly-created [`Decimal`](decimal.md).
-- `magnitude`: A [`Decimal`](decimal.md) to use for the magnitude of the newly-created [`Decimal`](decimal.md).
+- `signOf`: A [`Decimal`](../decimal.md) to use for the sign of the newly-created [`Decimal`](../decimal.md).
+- `magnitude`: A [`Decimal`](../decimal.md) to use for the magnitude of the newly-created [`Decimal`](../decimal.md).
 
 ## See Also
 
-- [func NSDecimalCopy(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>)](nsdecimalcopy(_:_:).md)
+### Creating a decimal from another decimal
+- [func NSDecimalCopy(UnsafeMutablePointer<Decimal>, UnsafePointer<Decimal>)](../nsdecimalcopy%28_,_%29.md)
   Copies the value of a decimal number.
 
 

@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus.noncompliant
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the mobile driver’s license is not DHS compliant.
 

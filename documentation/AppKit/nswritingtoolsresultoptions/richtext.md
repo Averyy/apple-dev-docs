@@ -1,7 +1,8 @@
 # richText
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to include style attributes consistent with the RTF format in the returned text.
 
@@ -14,13 +15,18 @@ An option to include style attributes consistent with the RTF format in the retu
 static var richText: NSWritingToolsResultOptions { get }
 ```
 
+```c
+NSWritingToolsResultRichText
+```
+
 ## See Also
 
-- [static var plainText: NSWritingToolsResultOptions](nswritingtoolsresultoptions/plaintext.md)
+### Getting the output options
+- [static var plainText: NSWritingToolsResultOptions](./plaintext.md)
   An option to allow only plain text without any attributes in the returned text.
-- [static var list: NSWritingToolsResultOptions](nswritingtoolsresultoptions/list.md)
+- [static var list: NSWritingToolsResultOptions](./list.md)
   An option to allow list-style formatting in the returned text.
-- [static var table: NSWritingToolsResultOptions](nswritingtoolsresultoptions/table.md)
+- [static var table: NSWritingToolsResultOptions](./table.md)
   An option to allow tabular layout attributes in the returned text.
 
 

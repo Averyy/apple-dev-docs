@@ -1,7 +1,8 @@
 # MTRContentLauncherMetricType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,26 +19,30 @@
 enum MTRContentLauncherMetricType
 ```
 
+```c
+enum MTRContentLauncherMetricType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRContentLauncherMetricType.percentage](mtrcontentlaunchermetrictype/percentage-swift.enum.case.md)
-- [MTRContentLauncherMetricType.pixels](mtrcontentlaunchermetrictype/pixels-swift.enum.case.md)
+- [MTRContentLauncherMetricType.percentage](./mtrcontentlaunchermetrictype/percentage-swift.enum.case.md)
+- [MTRContentLauncherMetricType.pixels](./mtrcontentlaunchermetrictype/pixels-swift.enum.case.md)
 ### Type Properties
-- [static var PERCENTAGE: MTRContentLauncherMetricType](mtrcontentlaunchermetrictype/percentage-swift.type.property.md)
-- [static var PIXELS: MTRContentLauncherMetricType](mtrcontentlaunchermetrictype/pixels-swift.type.property.md)
+- [static var PERCENTAGE: MTRContentLauncherMetricType](./mtrcontentlaunchermetrictype/percentage-swift.type.property.md)
+- [static var PIXELS: MTRContentLauncherMetricType](./mtrcontentlaunchermetrictype/pixels-swift.type.property.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcontentlaunchermetrictype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcontentlaunchermetrictype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

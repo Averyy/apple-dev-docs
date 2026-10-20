@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The published name of the scalar.
 
@@ -24,7 +25,7 @@ var name: String? { get }
 
 Some scalars, such as control characters, do not have a value for this property in the Unicode Character Database. For such scalars, this property is `nil`.
 
-This property corresponds to the “Name” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Name” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

@@ -1,7 +1,8 @@
 # setDelegate(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the receiver’s delegate to a given object.
 
@@ -20,13 +21,18 @@ Sets the receiver’s delegate to a given object.
 func setDelegate(_ anObject: (any PortDelegate)?)
 ```
 
+```objc
+- (void) setDelegate:(id<NSPortDelegate>) anObject;
+```
+
 ## Parameters
 
 - `anObject`: The delegate for the receiver.
 
 ## See Also
 
-- [func delegate() -> (any PortDelegate)?](port/delegate.md)
+### Working with the delegate
+- [func delegate() -> (any PortDelegate)?](./delegate%28%29.md)
   Returns the receiver’s delegate.
 
 

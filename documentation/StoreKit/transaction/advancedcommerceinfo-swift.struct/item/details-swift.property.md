@@ -1,7 +1,8 @@
 # details
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s details.
 
@@ -22,9 +23,10 @@ let details: Transaction.AdvancedCommerceInfo.Item.Details
 
 ## See Also
 
-- [let refunds: [Transaction.AdvancedCommerceInfo.Refund]?](transaction/advancedcommerceinfo-swift.struct/item/refunds.md)
+### Instance Properties
+- [let refunds: [Transaction.AdvancedCommerceInfo.Refund]?](./refunds.md)
   The list of refunds that were issued as part of this transaction.
-- [let revocationDate: Date?](transaction/advancedcommerceinfo-swift.struct/item/revocationdate.md)
+- [let revocationDate: Date?](./revocationdate.md)
   The date access to this item was revoked.
 
 

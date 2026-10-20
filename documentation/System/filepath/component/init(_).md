@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a file path component from a string.
 

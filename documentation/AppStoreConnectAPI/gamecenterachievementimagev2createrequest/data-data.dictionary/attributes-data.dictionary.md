@@ -1,14 +1,15 @@
 # GameCenterAchievementImageV2CreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementImageV2CreateRequest.Data.Attributes
 ```
 
@@ -24,7 +25,8 @@ object GameCenterAchievementImageV2CreateRequest.Data.Attributes
 
 ## See Also
 
-- [object GameCenterAchievementImageV2CreateRequest.Data.Relationships](gamecenterachievementimagev2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+### Dictionaries
+- [object GameCenterAchievementImageV2CreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 

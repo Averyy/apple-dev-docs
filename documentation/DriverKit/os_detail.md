@@ -1,29 +1,31 @@
 # os_detail
 
 **Framework**: DriverKit  
-**Kind**: namespace
+**Kind**: namespace  
+**Role**: Namespace
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 namespace os_detail;
 ```
 
 ## Topics
 
 ### Structures
-- [IOKit_allocator](os_detail/iokit_allocator.md)
-- [panic_trapping_policy](os_detail/panic_trapping_policy.md)
+- [IOKit_allocator](./os_detail/iokit_allocator.md)
+- [panic_trapping_policy](./os_detail/panic_trapping_policy.md)
 
 ## See Also
 
-- [libkern](libkern.md)
+### Namespaces
+- [libkern](./libkern.md)
 
 
 ---

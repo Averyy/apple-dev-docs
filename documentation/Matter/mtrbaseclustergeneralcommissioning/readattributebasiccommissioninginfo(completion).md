@@ -1,7 +1,8 @@
 # readAttributeBasicCommissioningInfo(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBasicCommissioningInfo(completion: @escaping @Sendable (MTRGeneralCommissioningClusterBasicCommissioningInfo?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBasicCommissioningInfo() async throws -> MTRGeneralCommissioningClusterBasicCommissioningInfo
+```
+
+```objc
+- (void) readAttributeBasicCommissioningInfoWithCompletion:(void (^)(MTRGeneralCommissioningClusterBasicCommissioningInfo *value, NSError *error)) completion;
 ```
 
 

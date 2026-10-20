@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Z-axis magnetic field in microteslas.
 
@@ -19,11 +20,16 @@ Z-axis magnetic field in microteslas.
 var z: Double
 ```
 
+```c
+double z;
+```
+
 ## See Also
 
-- [var x: Double](cmmagneticfield/x.md)
+### Getting the Field Values
+- [var x: Double](./x.md)
   X-axis magnetic field in microteslas.
-- [var y: Double](cmmagneticfield/y.md)
+- [var y: Double](./y.md)
   Y-axis magnetic field in microteslas.
 
 

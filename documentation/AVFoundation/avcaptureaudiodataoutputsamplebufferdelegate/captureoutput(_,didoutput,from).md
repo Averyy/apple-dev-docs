@@ -1,7 +1,8 @@
 # captureOutput(_:didOutput:from:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that a sample buffer was written.
 
@@ -16,6 +17,10 @@ Notifies the delegate that a sample buffer was written.
 
 ```swift
 optional func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection)
+```
+
+```objc
+- (void) captureOutput:(AVCaptureOutput *) output didOutputSampleBuffer:(CMSampleBufferRef) sampleBuffer fromConnection:(AVCaptureConnection *) connection;
 ```
 
 ## Parameters

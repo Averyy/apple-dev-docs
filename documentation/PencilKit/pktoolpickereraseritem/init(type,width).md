@@ -1,7 +1,8 @@
 # init(type:width:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new eraser item with the specified width.
 
@@ -20,7 +21,8 @@ convenience init(type: PKEraserTool.EraserType, width: CGFloat)
 
 ## See Also
 
-- [convenience init(type: PKEraserTool.EraserType)](pktoolpickereraseritem/init(type:).md)
+### Creating an eraser item
+- [convenience init(type: PKEraserTool.EraserType)](./init%28type%29.md)
   Creates a new eraser item.
 
 

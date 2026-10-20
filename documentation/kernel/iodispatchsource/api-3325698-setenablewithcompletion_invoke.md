@@ -1,14 +1,15 @@
 # SetEnableWithCompletion_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t SetEnableWithCompletion_Invoke(const IORPC rpc, OSMetaClassBase *target, SetEnableWithCompletion_Handler func);
 ```
 

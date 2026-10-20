@@ -1,7 +1,8 @@
 # NSURLAuthenticationMethodNTLM
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Use NTLM authentication for this protection space.
 
@@ -20,13 +21,18 @@ Use NTLM authentication for this protection space.
 let NSURLAuthenticationMethodNTLM: String
 ```
 
+```c
+extern NSString * const NSURLAuthenticationMethodNTLM;
+```
+
 ## See Also
 
-- [let NSURLAuthenticationMethodClientCertificate: String](nsurlauthenticationmethodclientcertificate.md)
+### Session-wide authentication challenges
+- [let NSURLAuthenticationMethodClientCertificate: String](./nsurlauthenticationmethodclientcertificate.md)
   Use client certificate authentication for this protection space.
-- [let NSURLAuthenticationMethodNegotiate: String](nsurlauthenticationmethodnegotiate.md)
+- [let NSURLAuthenticationMethodNegotiate: String](./nsurlauthenticationmethodnegotiate.md)
   Negotiate whether to use Kerberos or NTLM authentication for this protection space.
-- [let NSURLAuthenticationMethodServerTrust: String](nsurlauthenticationmethodservertrust.md)
+- [let NSURLAuthenticationMethodServerTrust: String](./nsurlauthenticationmethodservertrust.md)
   Perform server trust authentication (certificate validation) for this protection space.
 
 

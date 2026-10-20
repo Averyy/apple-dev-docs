@@ -1,7 +1,8 @@
 # checkAvailability(at:completionHandler:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines if geotracking supports a particular location.
 
@@ -15,17 +16,21 @@ Determines if geotracking supports a particular location.
 class func checkAvailability(at coordinate: CLLocationCoordinate2D, completionHandler: @escaping (Bool, (any Error)?) -> Void)
 ```
 
+```objc
++ (void) checkAvailabilityAtCoordinate:(CLLocationCoordinate2D) coordinate completionHandler:(void (^)(BOOL isAvailable, NSError *error)) completionHandler;
+```
+
 #### Discussion
 
-This function returns [`false`](https://developer.apple.com/documentation/swift/false) under the following circumstances:
+This function returns [`false`](../../Swift/false.md) under the following circumstances:
 
 - ARKit lacks localization imagery for the argument GPS coordinate.
 - A network connection is unavailable to download localization imagery.
 - The device lacks cellular (GPS) capability.
 
-To determine availability at the user’s GPS coordinate, use [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md) instead.
+To determine availability at the user’s GPS coordinate, use [`checkAvailability(completionHandler:)`](./checkavailability%28completionhandler%29.md) instead.
 
-For a list of supported areas and cities, see [`ARGeoTrackingConfiguration`](argeotrackingconfiguration.md).
+For a list of supported areas and cities, see [`ARGeoTrackingConfiguration`](../argeotrackingconfiguration.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ For a list of supported areas and cities, see [`ARGeoTrackingConfiguration`](arg
 
 ## See Also
 
-- [class func checkAvailability(completionHandler: (Bool, (any Error)?) -> Void)](argeotrackingconfiguration/checkavailability(completionhandler:).md)
+### Checking availability
+- [class func checkAvailability(completionHandler: (Bool, (any Error)?) -> Void)](./checkavailability%28completionhandler%29.md)
   Determines if geotracking supports the user’s current location.
 
 

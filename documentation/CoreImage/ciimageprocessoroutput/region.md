@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The rectangular region of the output image that your Core Image Processor Kernel must provide.
@@ -20,17 +21,22 @@ The rectangular region of the output image that your Core Image Processor Kernel
 var region: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect region;
+```
+
 #### Discussion
 
 > **Note**: This may be different (larger or smaller) than the `extent` that was passed to `/CIImageProcessorKernel/applyWithExtent:inputs:arguments:error:`.
 
 ## See Also
 
-- [var metalCommandBuffer: (any MTLCommandBuffer)?](ciimageprocessoroutput/metalcommandbuffer.md)
+### Getting Supplemental Information for Image Processing
+- [var metalCommandBuffer: (any MTLCommandBuffer)?](./metalcommandbuffer.md)
   Returns a Metal command buffer object that can be used for encoding commands.
-- [var bytesPerRow: Int](ciimageprocessoroutput/bytesperrow.md)
+- [var bytesPerRow: Int](./bytesperrow.md)
   The bytes per row of the CPU memory that your Core Image Processor Kernel can write pixels to.
-- [var format: CIFormat](ciimageprocessoroutput/format.md)
+- [var format: CIFormat](./format.md)
   The pixel format of the CPU memory that your Core Image Processor Kernel can write pixels to.
 
 

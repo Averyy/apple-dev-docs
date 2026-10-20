@@ -1,7 +1,8 @@
 # MTLCommandBufferDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration that customizes the behavior for a new command buffer.
 
@@ -19,48 +20,53 @@ A configuration that customizes the behavior for a new command buffer.
 class MTLCommandBufferDescriptor
 ```
 
+```objc
+@interface MTLCommandBufferDescriptor : NSObject
+```
+
 #### Overview
 
-Create a command buffer with a custom configuration by creating an [`MTLCommandBufferDescriptor`](mtlcommandbufferdescriptor.md) instance and passing it to an [`MTLCommandQueue`](mtlcommandqueue.md) instance’s [`makeCommandBuffer(descriptor:)`](mtlcommandqueue/makecommandbuffer(descriptor:).md) method. You can configure whether the command buffer retains references to resources that its commands refer to with the [`retainedReferences`](mtlcommandbufferdescriptor/retainedreferences.md) property. The command buffer can save extra error information, which is useful during development, by setting its [`errorOptions`](mtlcommandbufferdescriptor/erroroptions.md) property to [`encoderExecutionStatus`](mtlcommandbuffererroroption/encoderexecutionstatus.md).
+Create a command buffer with a custom configuration by creating an [`MTLCommandBufferDescriptor`](./mtlcommandbufferdescriptor.md) instance and passing it to an [`MTLCommandQueue`](./mtlcommandqueue.md) instance’s [`makeCommandBuffer(descriptor:)`](./mtlcommandqueue/makecommandbuffer%28descriptor%29.md) method. You can configure whether the command buffer retains references to resources that its commands refer to with the [`retainedReferences`](./mtlcommandbufferdescriptor/retainedreferences.md) property. The command buffer can save extra error information, which is useful during development, by setting its [`errorOptions`](./mtlcommandbufferdescriptor/erroroptions.md) property to [`encoderExecutionStatus`](./mtlcommandbuffererroroption/encoderexecutionstatus.md).
 
 ## Topics
 
 ### Configuring the command buffer
-- [var logState: (any MTLLogState)?](mtlcommandbufferdescriptor/logstate.md)
+- [var logState: (any MTLLogState)?](./mtlcommandbufferdescriptor/logstate.md)
   The shader logging configuration that the command buffer uses.
-- [var retainedReferences: Bool](mtlcommandbufferdescriptor/retainedreferences.md)
+- [var retainedReferences: Bool](./mtlcommandbufferdescriptor/retainedreferences.md)
   A Boolean value that indicates whether the command buffer the descriptor creates maintains strong references to the resources it uses.
-- [var errorOptions: MTLCommandBufferErrorOption](mtlcommandbufferdescriptor/erroroptions.md)
+- [var errorOptions: MTLCommandBufferErrorOption](./mtlcommandbufferdescriptor/erroroptions.md)
   The reporting configuration that indicates which information the GPU driver stores in a command buffer’s error property.
-- [struct MTLCommandBufferErrorOption](mtlcommandbuffererroroption.md)
+- [struct MTLCommandBufferErrorOption](./mtlcommandbuffererroroption.md)
   Options for reporting errors from a command buffer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting up a command structure](setting-up-a-command-structure.md)
+### Submitting work to a GPU with Metal
+- [Setting up a command structure](./setting-up-a-command-structure.md)
   Discover how Metal executes commands on a GPU.
-- [protocol MTLCommandQueue](mtlcommandqueue.md)
+- [protocol MTLCommandQueue](./mtlcommandqueue.md)
   An instance you use to create, submit, and schedule command buffers to a specific GPU device to run the commands within those buffers.
-- [class MTLCommandQueueDescriptor](mtlcommandqueuedescriptor.md)
+- [class MTLCommandQueueDescriptor](./mtlcommandqueuedescriptor.md)
   A configuration that customizes the behavior for a new command queue.
-- [protocol MTLCommandBuffer](mtlcommandbuffer.md)
+- [protocol MTLCommandBuffer](./mtlcommandbuffer.md)
   A container that stores a sequence of GPU commands that you encode into it.
-- [struct MTLCommandBufferError](mtlcommandbuffererror-swift.struct.md)
+- [struct MTLCommandBufferError](./mtlcommandbuffererror-swift.struct.md)
   The command buffer error codes that indicate why the GPU doesn’t finish executing a command buffer.
-- [protocol MTLCommandEncoder](mtlcommandencoder.md)
+- [protocol MTLCommandEncoder](./mtlcommandencoder.md)
   An encoder that writes GPU commands into a command buffer.
 
 

@@ -1,7 +1,8 @@
 # configurationDescriptor(with:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 func configurationDescriptor(with index: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>
 ```
 
+```objc
+- (const IOUSBConfigurationDescriptor *) configurationDescriptorWithIndex:(NSUInteger) index error:(NSError **) error;
+```
+
 ## See Also
 
-- [func configurationDescriptor(withConfigurationValue: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>](iousbhostobject/configurationdescriptor(withconfigurationvalue:).md)
+### Instance Methods
+- [func configurationDescriptor(withConfigurationValue: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>](./configurationdescriptor%28withconfigurationvalue%29.md)
 
 
 ---

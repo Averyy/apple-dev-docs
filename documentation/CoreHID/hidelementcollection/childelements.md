@@ -1,7 +1,8 @@
 # childElements
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elements contained by this collection, if there are any.
 

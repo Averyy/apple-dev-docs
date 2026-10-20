@@ -1,7 +1,8 @@
 # init(style:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an appearance object with appropriate default values for a tab bar, displaying its items with the specified layout style.
 
@@ -18,19 +19,24 @@ Creates an appearance object with appropriate default values for a tab bar, disp
 init(style: UITabBarItemAppearance.Style)
 ```
 
+```objc
+- (instancetype) initWithStyle:(UITabBarItemAppearanceStyle) style;
+```
+
 #### Return Value
 
 A new appearance object containing appropriate default values for the specified layout style.
 
 ## Parameters
 
-- `style`: The layout style for the appearance attributes. UIKit uses this value to configure the default appearance attributes. For a list of possible values, see [`UITabBarItemAppearance.Style`](uitabbaritemappearance/style.md).
+- `style`: The layout style for the appearance attributes. UIKit uses this value to configure the default appearance attributes. For a list of possible values, see [`UITabBarItemAppearance.Style`](./style.md).
 
 ## See Also
 
-- [convenience init()](uitabbaritemappearance/init.md)
+### Creating a tab bar item appearance object
+- [convenience init()](./init%28%29.md)
   Creates an appearance object with default values for a stacked tab bar item.
-- [init(coder: NSCoder)](uitabbaritemappearance/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates an appearance object from data in an unarchiver.
 
 

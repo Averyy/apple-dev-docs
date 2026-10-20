@@ -1,13 +1,14 @@
 # accessibilityPath
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 @NSCopying var accessibilityPath: UIBezierPath? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIBezierPath * accessibilityPath;
 ```
 
 

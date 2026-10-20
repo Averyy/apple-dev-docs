@@ -1,7 +1,8 @@
 # controller
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller object that connected to the device.
 

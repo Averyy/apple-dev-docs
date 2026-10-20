@@ -1,28 +1,33 @@
 # NSEnterpriseMCAMUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to the device’s main camera.
 
 **Availability**:
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 2.3
 
+> **Deprecated**: Use [`NSMainCameraUsageDescription`](./nsmaincamerausagedescription.md) instead.
 
+## Details
 
-**Type**: string
+- **Name**: `NSEnterpriseMCAMUsageDescription` (Main Camera Usage Description)
+- **Type**: string
 
 #### Discussion
 
-The system uses this string in visionOS 2-2.3 to tell someone why your app requests permission to use the main camera. In newer versions of visionOS, the system uses the value of [`NSMainCameraUsageDescription`](information-property-list/nsmaincamerausagedescription.md) instead.
+The system uses this string in visionOS 2-2.3 to tell someone why your app requests permission to use the main camera. In newer versions of visionOS, the system uses the value of [`NSMainCameraUsageDescription`](./nsmaincamerausagedescription.md) instead.
 
-For information about using the main camera in your visionOS app, see [`Accessing the main camera`](https://developer.apple.com/documentation/visionos/accessing-the-main-camera).
+For information about using the main camera in your visionOS app, see [Accessing the main camera](../../visionOS/accessing-the-main-camera.md).
 
 ## See Also
 
-- [NSCalendarsUsageDescription](information-property-list/nscalendarsusagedescription.md)
+### Deprecated keys
+- [NSCalendarsUsageDescription](./nscalendarsusagedescription.md)
   A message that tells people why the app is requesting access to their calendar data.
-- [NSRemindersUsageDescription](information-property-list/nsremindersusagedescription.md)
+- [NSRemindersUsageDescription](./nsremindersusagedescription.md)
   A message that tells people why the app is requesting access to their reminders.
 
 

@@ -1,7 +1,8 @@
 # MaterialParameterTypes.BlendMode.add
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Blend by adding the material’s color to the background color, ignoring alpha.
 

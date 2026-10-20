@@ -2,6 +2,7 @@
 
 **Framework**: GLKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Draws the view’s contents.
@@ -17,9 +18,13 @@ Draws the view’s contents.
 func glkView(_ view: GLKView, drawIn rect: CGRect)
 ```
 
+```objc
+- (void) glkView:(GLKView *) view drawInRect:(CGRect) rect;
+```
+
 #### Discussion
 
-The semantics of this method are identical to those of the [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) method; the [`GLKView`](glkview.md) object makes its OpenGL ES context the current context and binds its framebuffer as the target for OpenGL ES rendering commands. Your delegate method should then draw the view’s contents.
+The semantics of this method are identical to those of the [`draw(_:)`](../../UIKit/uiview/draw%28_%29.md) method; the [`GLKView`](../glkview.md) object makes its OpenGL ES context the current context and binds its framebuffer as the target for OpenGL ES rendering commands. Your delegate method should then draw the view’s contents.
 
 ## Parameters
 

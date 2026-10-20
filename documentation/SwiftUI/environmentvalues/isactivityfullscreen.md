@@ -1,7 +1,8 @@
 # isActivityFullscreen
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the Live Activity appears in a full-screen presentation.
 
@@ -18,17 +19,18 @@ var isActivityFullscreen: Bool { get }
 
 #### Discussion
 
-When a Live Activity fills the entire screen, the system extends the background tint color you set with the [`activityBackgroundTint(_:)`](view/activitybackgroundtint(_:).md) modifier to fill the screen.
+When a Live Activity fills the entire screen, the system extends the background tint color you set with the [`activityBackgroundTint(_:)`](../view/activitybackgroundtint%28_%29.md) modifier to fill the screen.
 
 Note that this environment variable is always `false` in iOS 16.
 
 ## See Also
 
-- [func activitySystemActionForegroundColor(Color?) -> some View](view/activitysystemactionforegroundcolor(_:).md)
+### Configuring a Live Activity
+- [func activitySystemActionForegroundColor(Color?) -> some View](../view/activitysystemactionforegroundcolor%28_%29.md)
   The text color for the auxiliary action button that the system shows next to a Live Activity on the Lock Screen.
-- [func activityBackgroundTint(Color?) -> some View](view/activitybackgroundtint(_:).md)
+- [func activityBackgroundTint(Color?) -> some View](../view/activitybackgroundtint%28_%29.md)
   Sets the tint color for the background of a Live Activity that appears on the Lock Screen.
-- [var activityFamily: ActivityFamily](environmentvalues/activityfamily.md)
+- [var activityFamily: ActivityFamily](./activityfamily.md)
   The size family of the current Live Activity.
 
 

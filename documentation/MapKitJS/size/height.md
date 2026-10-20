@@ -1,7 +1,8 @@
 # height
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The height value of the size structure.
 
@@ -10,7 +11,7 @@ The height value of the size structure.
 
 ## Declaration
 
-```swift
+```
 height: number;
 ```
 

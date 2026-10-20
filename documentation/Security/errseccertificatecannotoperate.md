@@ -1,7 +1,8 @@
 # errSecCertificateCannotOperate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate cannot operate.
 
@@ -18,6 +19,10 @@ The certificate cannot operate.
 
 ```swift
 var errSecCertificateCannotOperate: OSStatus { get }
+```
+
+```c
+errSecCertificateCannotOperate
 ```
 
 

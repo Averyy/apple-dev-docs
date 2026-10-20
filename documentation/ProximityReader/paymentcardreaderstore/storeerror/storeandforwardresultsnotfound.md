@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.storeAndForwardResultsNotFound
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Store and Forward store is empty.
 

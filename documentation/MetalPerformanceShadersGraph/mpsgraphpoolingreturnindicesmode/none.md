@@ -1,7 +1,8 @@
 # MPSGraphPoolingReturnIndicesMode.none
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No indices returned.
 
@@ -17,6 +18,10 @@ No indices returned.
 
 ```swift
 case none
+```
+
+```c
+MPSGraphPoolingReturnIndicesNone
 ```
 
 

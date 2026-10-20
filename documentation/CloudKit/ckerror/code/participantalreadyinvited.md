@@ -1,7 +1,8 @@
 # CKError.Code.participantAlreadyInvited
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is already an invited participant on this share. They must accept the existing share invitation before continuing.
 
@@ -18,6 +19,10 @@ The user is already an invited participant on this share. They must accept the e
 
 ```swift
 case participantAlreadyInvited
+```
+
+```c
+CKErrorParticipantAlreadyInvited
 ```
 
 

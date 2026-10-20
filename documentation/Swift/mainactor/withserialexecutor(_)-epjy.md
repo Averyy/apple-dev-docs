@@ -1,9 +1,10 @@
 # withSerialExecutor(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Perform an operation with the actor’s [`SerialExecutor`](serialexecutor.md).
+Perform an operation with the actor’s [`SerialExecutor`](../serialexecutor.md).
 
 **Availability**:
 - iOS 13.0+
@@ -23,7 +24,7 @@ func withSerialExecutor<T, E>(_ operation: nonisolated(nonsending) (any SerialEx
 
 #### Discussion
 
-This converts the actor’s [`unownedExecutor`](actor/unownedexecutor.md) to a [`SerialExecutor`](serialexecutor.md) while retaining the actor for the duration of the operation. This is to ensure the lifetime of the executor while performing the operation.
+This converts the actor’s [`unownedExecutor`](../actor/unownedexecutor.md) to a [`SerialExecutor`](../serialexecutor.md) while retaining the actor for the duration of the operation. This is to ensure the lifetime of the executor while performing the operation.
 
 
 ---

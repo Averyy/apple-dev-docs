@@ -1,7 +1,8 @@
 # missingCameraAuthorization
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the person using the device approves the camera authorization or not.
 

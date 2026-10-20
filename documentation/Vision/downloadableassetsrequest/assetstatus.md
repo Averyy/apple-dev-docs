@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current download status of the assets required by the request.
@@ -22,7 +23,7 @@ var assetStatus: DownloadableAssetsRequestStatus { get async }
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 
 ---

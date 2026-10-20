@@ -1,7 +1,8 @@
 # setReaderModeActive(_:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to set the reader mode for the tab.
 
@@ -15,7 +16,15 @@ Called to set the reader mode for the tab.
 ## Declaration
 
 ```swift
+optional func setReaderModeActive(_ active: Bool, for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func setReaderModeActive(_ active: Bool, for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) setReaderModeActive:(BOOL) active forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -30,9 +39,10 @@ No action is performed if not implemented.
 
 ## See Also
 
-- [func isReaderModeAvailable(for: WKWebExtensionContext) -> Bool](wkwebextensiontab/isreadermodeavailable(for:).md)
+### Related Documentation
+- [func isReaderModeAvailable(for: WKWebExtensionContext) -> Bool](./isreadermodeavailable%28for%29.md)
   Called to check if reader mode is available for the tab.
-- [func isReaderModeActive(for: WKWebExtensionContext) -> Bool](wkwebextensiontab/isreadermodeactive(for:).md)
+- [func isReaderModeActive(for: WKWebExtensionContext) -> Bool](./isreadermodeactive%28for%29.md)
   Called to check if the tab is currently showing reader mode.
 
 

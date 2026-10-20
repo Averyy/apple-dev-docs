@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

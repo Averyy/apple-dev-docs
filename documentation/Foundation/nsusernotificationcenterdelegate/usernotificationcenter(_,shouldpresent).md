@@ -1,12 +1,15 @@
 # userNotificationCenter(_:shouldPresent:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate when the user notification center has decided not to present your notification.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Sent to the delegate when the user notification center has decided not to presen
 optional func userNotificationCenter(_ center: NSUserNotificationCenter, shouldPresent notification: NSUserNotification) -> Bool
 ```
 
+```objc
+- (BOOL) userNotificationCenter:(NSUserNotificationCenter *) center shouldPresentNotification:(NSUserNotification *) notification;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user notification should be displayed regardless; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the user notification should be displayed regardless; [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 

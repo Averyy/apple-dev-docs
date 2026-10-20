@@ -1,7 +1,8 @@
 # init(ellipseIn:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shape node with an elliptical path that fills the specified rectangle.
 
@@ -20,6 +21,10 @@ Creates a shape node with an elliptical path that fills the specified rectangle.
 convenience init(ellipseIn rect: CGRect)
 ```
 
+```objc
++ (instancetype) shapeNodeWithEllipseInRect:(CGRect) rect;
+```
+
 #### Return Value
 
 A new shape node.
@@ -30,7 +35,8 @@ A new shape node.
 
 ## See Also
 
-- [convenience init(ellipseOf: CGSize)](skshapenode/init(ellipseof:).md)
+### Creating an Ellipse Shape
+- [convenience init(ellipseOf: CGSize)](./init%28ellipseof%29.md)
   Creates a shape node with an elliptical path centered on the node’s origin.
 
 

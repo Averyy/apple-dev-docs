@@ -1,7 +1,8 @@
 # MKStandardMapConfiguration.EmphasisStyle.default
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default level of emphasis.
 
@@ -20,11 +21,16 @@ The default level of emphasis.
 case `default`
 ```
 
+```c
+MKStandardMapEmphasisStyleDefault
+```
+
 ## See Also
 
-- [MKStandardMapConfiguration.EmphasisStyle.muted](mkstandardmapconfiguration/emphasisstyle-swift.enum/muted.md)
+### Controlling the map’s emphasis
+- [MKStandardMapConfiguration.EmphasisStyle.muted](./muted.md)
   The muted level of emphasis.
-- [MKStandardMapConfiguration.EmphasisStyle.muted](mkstandardmapconfiguration/emphasisstyle-swift.enum/muted.md)
+- [MKStandardMapConfiguration.EmphasisStyle.muted](./muted.md)
   The muted level of emphasis.
 
 

@@ -1,14 +1,15 @@
 # sptm_iommu_retype_params_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t sptm_iommu_retype_params_t;
 ```
 

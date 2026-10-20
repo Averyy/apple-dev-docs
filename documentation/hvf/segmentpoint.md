@@ -1,7 +1,8 @@
 # SegmentPoint
 
 **Framework**: hvf  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Which point within a segment
 
@@ -23,17 +24,17 @@ enum SegmentPoint
 ## Topics
 
 ### Enumeration Cases
-- [SegmentPoint.off](segmentpoint/off.md)
-- [SegmentPoint.on](segmentpoint/on.md)
+- [SegmentPoint.off](./segmentpoint/off.md)
+- [SegmentPoint.on](./segmentpoint/on.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

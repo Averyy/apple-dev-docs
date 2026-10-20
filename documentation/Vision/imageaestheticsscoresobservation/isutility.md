@@ -1,7 +1,8 @@
 # isUtility
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
@@ -22,9 +23,10 @@ let isUtility: Bool
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let overallScore: Float](imageaestheticsscoresobservation/overallscore.md)
+- [let overallScore: Float](./overallscore.md)
   A score which incorporates aesthetic score, failure score, and utility labels.
 
 

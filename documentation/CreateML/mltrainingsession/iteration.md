@@ -1,7 +1,8 @@
 # iteration
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The iteration number of a training session’s phase.
 
@@ -21,11 +22,12 @@ final var iteration: Int { get }
 
 ## See Also
 
-- [var phase: MLPhase](mltrainingsession/phase.md)
+### Checking a training session’s progress
+- [var phase: MLPhase](./phase.md)
   The training session’s current state.
-- [enum MLPhase](mlphase.md)
+- [enum MLPhase](../mlphase.md)
   The possible states of a training session.
-- [var checkpoints: [MLCheckpoint]](mltrainingsession/checkpoints.md)
+- [var checkpoints: [MLCheckpoint]](./checkpoints.md)
   An array of checkpoints the training session has created so far.
 
 

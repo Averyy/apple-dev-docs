@@ -1,7 +1,8 @@
 # animation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new version of the modifier that will apply `animation` to all animatable values within the modifier.
 
@@ -23,7 +24,8 @@ Returns a new version of the modifier that will apply `animation` to all animata
 
 ## See Also
 
-- [func concat<T>(T) -> ModifiedContent<Self, T>](viewmodifier/concat(_:).md)
+### Adding animations to a view
+- [func concat<T>(T) -> ModifiedContent<Self, T>](./concat%28_%29.md)
   Returns a new modifier that is the result of concatenating `self` with `modifier`.
 
 

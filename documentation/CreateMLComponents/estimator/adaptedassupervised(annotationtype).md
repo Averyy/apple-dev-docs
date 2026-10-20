@@ -1,7 +1,8 @@
 # adaptedAsSupervised(annotationType:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exposes this estimator as a supervised estimator.
 
@@ -22,11 +23,12 @@ func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type = Annotatio
 
 ## See Also
 
-- [func adaptedAsTemporal() -> EstimatorToTemporalAdaptor<Self>](estimator/adaptedastemporal.md)
+### Fitting and adapting
+- [func adaptedAsTemporal() -> EstimatorToTemporalAdaptor<Self>](./adaptedastemporal%28%29.md)
   Exposes this estimator as a temporal estimator.
-- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> Self.Transformer](estimator/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> Self.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a transformer to a sequence of examples.
-- [func fitted<S>(to: S) async throws -> Self.Transformer](estimator/fitted(to:).md)
+- [func fitted<S>(to: S) async throws -> Self.Transformer](./fitted%28to%29.md)
 
 
 ---

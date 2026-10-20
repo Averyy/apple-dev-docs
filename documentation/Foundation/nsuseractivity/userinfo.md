@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing app-specific state information needed to continue an activity on another device.
 
@@ -20,19 +21,24 @@ A dictionary containing app-specific state information needed to continue an act
 var userInfo: [AnyHashable : Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDictionary * userInfo;
+```
+
 ## Mentions
 
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+- [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 
 #### Discussion
 
-Each key and value must be of the following types: [`NSArray`](nsarray.md), [`NSData`](nsdata.md), [`NSDate`](nsdate.md), [`NSDictionary`](nsdictionary.md), [`NSNull`](nsnull.md), [`NSNumber`](nsnumber.md), [`NSSet`](nsset.md), [`NSString`](nsstring.md), or [`NSURL`](nsurl.md). The system may translate file scheme URLs that refer to iCloud documents to valid file URLs on a continuing device.
+Each key and value must be of the following types: [`NSArray`](../nsarray.md), [`NSData`](../nsdata.md), [`NSDate`](../nsdate.md), [`NSDictionary`](../nsdictionary.md), [`NSNull`](../nsnull.md), [`NSNumber`](../nsnumber.md), [`NSSet`](../nsset.md), [`NSString`](../nsstring.md), or [`NSURL`](../nsurl.md). The system may translate file scheme URLs that refer to iCloud documents to valid file URLs on a continuing device.
 
 ## See Also
 
-- [func addUserInfoEntries(from: [AnyHashable : Any])](nsuseractivity/adduserinfoentries(from:).md)
+### Specifying activity-related data
+- [func addUserInfoEntries(from: [AnyHashable : Any])](./adduserinfoentries%28from%29.md)
   Adds the contents of the specified dictionary to the user info dictionary.
-- [var requiredUserInfoKeys: Set<String>?](nsuseractivity/requireduserinfokeys.md)
+- [var requiredUserInfoKeys: Set<String>?](./requireduserinfokeys.md)
   A set of keys that represent the minimal information about the activity that should be stored for later restoration.
 
 

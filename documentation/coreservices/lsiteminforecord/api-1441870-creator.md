@@ -1,7 +1,8 @@
 # creator
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The item’s creator signature.
 
@@ -13,6 +14,10 @@ The item’s creator signature.
 
 ```swift
 var creator: OSType
+```
+
+```c
+OSType creator;
 ```
 
 

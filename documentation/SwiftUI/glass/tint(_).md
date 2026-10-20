@@ -1,7 +1,8 @@
 # tint(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the structure with a configured tint color.
 

@@ -1,7 +1,8 @@
 # payloads
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The payload composition arcs on this prim.
 

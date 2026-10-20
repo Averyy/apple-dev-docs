@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance by decoding from the given decoder.
 
@@ -11,7 +12,7 @@ Creates a new instance by decoding from the given decoder.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ init(from decoder: any Decoder) throws
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](vector3d/encode(to:).md)
+### Encoding and decoding a vector
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes this value into the given encoder.
 
 

@@ -1,7 +1,8 @@
 # bluetoothNameSubstringCompareOptions
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory’s over-the-air Bluetooth name substring compare options.
 
@@ -15,29 +16,34 @@ The accessory’s over-the-air Bluetooth name substring compare options.
 var bluetoothNameSubstringCompareOptions: NSString.CompareOptions { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) NSStringCompareOptions bluetoothNameSubstringCompareOptions;
+```
+
 ## See Also
 
-- [var bluetoothCompanyIdentifier: ASBluetoothCompanyIdentifier](asdiscoverydescriptor/bluetoothcompanyidentifier.md)
+### Specifying Bluetooth properties
+- [var bluetoothCompanyIdentifier: ASBluetoothCompanyIdentifier](./bluetoothcompanyidentifier.md)
   The accessory’s 16-bit Bluetooth Company Identifier.
-- [struct ASBluetoothCompanyIdentifier](asbluetoothcompanyidentifier.md)
+- [struct ASBluetoothCompanyIdentifier](../asbluetoothcompanyidentifier.md)
   The type used to identify a Bluetooth accessory provider.
-- [struct ASBluetoothCompanyIdentifier](asbluetoothcompanyidentifier.md)
+- [struct ASBluetoothCompanyIdentifier](../asbluetoothcompanyidentifier.md)
   The type used to identify a Bluetooth accessory provider.
-- [var bluetoothManufacturerDataBlob: Data?](asdiscoverydescriptor/bluetoothmanufacturerdatablob.md)
+- [var bluetoothManufacturerDataBlob: Data?](./bluetoothmanufacturerdatablob.md)
   A byte buffer that matches the accessory’s Bluetooth manufacturer data.
-- [var bluetoothManufacturerDataMask: Data?](asdiscoverydescriptor/bluetoothmanufacturerdatamask.md)
+- [var bluetoothManufacturerDataMask: Data?](./bluetoothmanufacturerdatamask.md)
   The accessory’s Bluetooth manufacturer data mask.
-- [var bluetoothServiceDataBlob: Data?](asdiscoverydescriptor/bluetoothservicedatablob.md)
+- [var bluetoothServiceDataBlob: Data?](./bluetoothservicedatablob.md)
   A byte buffer that matches the accessory’s Bluetooth service data.
-- [var bluetoothServiceDataMask: Data?](asdiscoverydescriptor/bluetoothservicedatamask.md)
+- [var bluetoothServiceDataMask: Data?](./bluetoothservicedatamask.md)
   The accessory’s Bluetooth service data mask.
-- [var bluetoothNameSubstring: String?](asdiscoverydescriptor/bluetoothnamesubstring.md)
+- [var bluetoothNameSubstring: String?](./bluetoothnamesubstring.md)
   The accessory’s over-the-air Bluetooth name substring.
-- [var bluetoothServiceUUID: CBUUID?](asdiscoverydescriptor/bluetoothserviceuuid.md)
+- [var bluetoothServiceUUID: CBUUID?](./bluetoothserviceuuid.md)
   The accessory’s Bluetooth service UUID.
-- [var bluetoothRange: ASDiscoveryDescriptor.Range](asdiscoverydescriptor/bluetoothrange.md)
+- [var bluetoothRange: ASDiscoveryDescriptor.Range](./bluetoothrange.md)
   A property that tells the session to discover accessories within a specific Bluetooth range.
-- [ASDiscoveryDescriptor.Range](asdiscoverydescriptor/range.md)
+- [ASDiscoveryDescriptor.Range](./range.md)
   The Bluetooth range in which to discover accessories.
 
 

@@ -1,7 +1,8 @@
 # aeBuildSyntaxNoErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 No error.
 

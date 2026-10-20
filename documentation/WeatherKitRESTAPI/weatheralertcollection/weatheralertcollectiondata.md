@@ -1,7 +1,8 @@
 # WeatherAlertCollection.WeatherAlertCollectionData
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A collecton of weather alerts.
 
@@ -10,7 +11,7 @@ A collecton of weather alerts.
 
 ## Declaration
 
-```swift
+```
 object WeatherAlertCollection.WeatherAlertCollectionData
 ```
 
@@ -22,7 +23,7 @@ object WeatherAlertCollection.WeatherAlertCollectionData
 ## Relationships
 
 ### Inherited By
-- [WeatherAlertCollection](weatheralertcollection.md)
+- [WeatherAlertCollection](../weatheralertcollection.md)
 
 
 ---

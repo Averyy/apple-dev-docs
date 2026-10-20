@@ -1,7 +1,8 @@
 # GlassBackgroundDisplayMode.implicit
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Display the glass material only when the view isn’t already contained in glass.
 
@@ -18,7 +19,7 @@ case implicit
 
 Use this value to avoid duplicate backgrounds when a view that has a glass background contains another view that also has a glass background.
 
-This display mode doesn’t suppress duplicate glass backgrounds for views that are offset by any amount in the z-axis. For example, the two subviews of the following [`HStack`](hstack.md) behave differently:
+This display mode doesn’t suppress duplicate glass backgrounds for views that are offset by any amount in the z-axis. For example, the two subviews of the following [`HStack`](../hstack.md) behave differently:
 
 ```swift
 HStack {
@@ -35,9 +36,10 @@ The first instance of `MyView` doesn’t display a background because its contai
 
 ## See Also
 
-- [GlassBackgroundDisplayMode.always](glassbackgrounddisplaymode/always.md)
+### Getting the mode
+- [GlassBackgroundDisplayMode.always](./always.md)
   Always display the glass material.
-- [GlassBackgroundDisplayMode.never](glassbackgrounddisplaymode/never.md)
+- [GlassBackgroundDisplayMode.never](./never.md)
   Never display the glass material.
 
 

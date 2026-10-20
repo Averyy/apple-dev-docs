@@ -1,14 +1,15 @@
 # mach_assert_type_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef enum mach_assert_type_t : unsigned char {
     ...
 } mach_assert_type_t;
@@ -17,10 +18,10 @@ typedef enum mach_assert_type_t : unsigned char {
 ## Topics
 
 ### Constants
-- [MACH_ASSERT_3P](mach_assert_type_t/mach_assert_3p.md)
-- [MACH_ASSERT_3S](mach_assert_type_t/mach_assert_3s.md)
-- [MACH_ASSERT_3U](mach_assert_type_t/mach_assert_3u.md)
-- [MACH_ASSERT_DEFAULT](mach_assert_type_t/mach_assert_default.md)
+- [MACH_ASSERT_3P](./mach_assert_type_t/mach_assert_3p.md)
+- [MACH_ASSERT_3S](./mach_assert_type_t/mach_assert_3s.md)
+- [MACH_ASSERT_3U](./mach_assert_type_t/mach_assert_3u.md)
+- [MACH_ASSERT_DEFAULT](./mach_assert_type_t/mach_assert_default.md)
 
 
 ---

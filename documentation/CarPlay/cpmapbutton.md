@@ -1,7 +1,8 @@
 # CPMapButton
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A button that represents an action that a map template displays on the CarPlay screen.
 
@@ -17,42 +18,47 @@ A button that represents an action that a map template displays on the CarPlay s
 class CPMapButton
 ```
 
+```objc
+@interface CPMapButton : NSObject
+```
+
 ## Topics
 
 ### Creating a Map Button
-- [init(handler: ((CPMapButton) -> Void)?)](cpmapbutton/init(handler:).md)
+- [init(handler: ((CPMapButton) -> Void)?)](./cpmapbutton/init%28handler%29.md)
   Creates a new map button.
 ### Providing Button Images
-- [var image: UIImage?](cpmapbutton/image.md)
+- [var image: UIImage?](./cpmapbutton/image.md)
   The image to display on the button.
-- [var focusedImage: UIImage?](cpmapbutton/focusedimage.md)
+- [var focusedImage: UIImage?](./cpmapbutton/focusedimage.md)
   The image to display when focus is on the button.
 ### Controlling the Button
-- [var isEnabled: Bool](cpmapbutton/isenabled.md)
+- [var isEnabled: Bool](./cpmapbutton/isenabled.md)
   A Boolean value that enables and disables the map button.
-- [var isHidden: Bool](cpmapbutton/ishidden.md)
+- [var isHidden: Bool](./cpmapbutton/ishidden.md)
   A Boolean value that hides and shows the map button.
 ### Initializers
-- [init?(coder: NSCoder)](cpmapbutton/init(coder:).md)
+- [init?(coder: NSCoder)](./cpmapbutton/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var mapButtons: [CPMapButton]](cpmaptemplate/mapbuttons.md)
+### Managing Map Buttons
+- [var mapButtons: [CPMapButton]](./cpmaptemplate/mapbuttons.md)
   An array of map buttons on the trailing bottom corner of the map template.
 
 

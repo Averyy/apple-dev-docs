@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Changes the volume by a specified number of increments for the specified device.
@@ -20,17 +21,17 @@ func changeVolume(by increments: Int, for device: MediaOutputDevice)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 
 For a group of devices, individual device volume changes should influence the group volume.
 
-Called when a device supports [`MediaOutputDevice.VolumeControl.relative`](mediaoutputdevice/volumecontrol-swift.enum/relative.md).
+Called when a device supports [`MediaOutputDevice.VolumeControl.relative`](../mediaoutputdevice/volumecontrol-swift.enum/relative.md).
 
 #### Grouping
 
-For a group of devices, all devices in the group must support [`MediaOutputDevice.VolumeControl.relative`](mediaoutputdevice/volumecontrol-swift.enum/relative.md).
+For a group of devices, all devices in the group must support [`MediaOutputDevice.VolumeControl.relative`](../mediaoutputdevice/volumecontrol-swift.enum/relative.md).
 
 ## Parameters
 

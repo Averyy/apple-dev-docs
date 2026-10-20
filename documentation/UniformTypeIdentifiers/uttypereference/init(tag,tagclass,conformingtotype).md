@@ -1,7 +1,8 @@
 # init(tag:tagClass:conformingToType:)
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a type that represents the specified tag and tag class and which conforms to an existing type.
 
@@ -22,33 +23,34 @@ convenience init?(tag: String, tagClass: String, conformingToType supertype: UTT
 
 #### Discussion
 
-If the system recognizes the filename extension, the intializer returns the corresponding type; otherwise, the initializer returns a dynamic type whose [`isDeclared`](uttype-swift.struct/isdeclared.md) and [`isPublic`](uttype-swift.struct/ispublic.md) properties are both set to [`false`](https://developer.apple.com/documentation/swift/false).
+If the system recognizes the filename extension, the intializer returns the corresponding type; otherwise, the initializer returns a dynamic type whose [`isDeclared`](../uttype-swift.struct/isdeclared.md) and [`isPublic`](../uttype-swift.struct/ispublic.md) properties are both set to [`false`](../../Swift/false.md).
 
 ## Parameters
 
 - `tag`: The tag, such as a filename extension.
-- `tagClass`: The appropriate tag class, such as [`filenameExtension`](uttagclass/filenameextension.md).
-- `supertype`: The type the resulting type must conform to, such as [`data`](uttype-swift.struct/data.md).
+- `tagClass`: The appropriate tag class, such as [`filenameExtension`](../uttagclass/filenameextension.md).
+- `supertype`: The type the resulting type must conform to, such as [`data`](../uttype-swift.struct/data.md).
 
 ## See Also
 
-- [convenience init?(String)](uttypereference/init(_:).md)
+### Creating a type
+- [convenience init?(String)](./init%28_%29.md)
   Creates a type based on an identifier.
-- [convenience init?(mimeType: String)](uttypereference/init(mimetype:)-1txq0.md)
+- [convenience init?(mimeType: String)](./init%28mimetype%29-1txq0.md)
   Creates a type based on a MIME type.
-- [convenience init?(mimeType: String, conformingTo: UTType)](uttypereference/init(mimetype:conformingto:).md)
+- [convenience init?(mimeType: String, conformingTo: UTType)](./init%28mimetype,conformingto%29.md)
   Creates a type based on a MIME type and a supertype that it conforms to.
-- [convenience init?(filenameExtension: String)](uttypereference/init(filenameextension:).md)
+- [convenience init?(filenameExtension: String)](./init%28filenameextension%29.md)
   Creates a type that represents the specified filename extension.
-- [convenience init?(filenameExtension: String, conformingTo: UTType)](uttypereference/init(filenameextension:conformingto:).md)
+- [convenience init?(filenameExtension: String, conformingTo: UTType)](./init%28filenameextension,conformingto%29.md)
   Creates a type that represents the specified filename extension and conforms to an existing type.
-- [init(exportedAs: String)](uttypereference/init(exportedas:).md)
+- [init(exportedAs: String)](./init%28exportedas%29.md)
   Creates a type your app owns based on an identifier.
-- [init(exportedAs: String, conformingTo: UTType)](uttypereference/init(exportedas:conformingto:).md)
+- [init(exportedAs: String, conformingTo: UTType)](./init%28exportedas,conformingto%29.md)
   Creates a type your app owns based on an identifier and a supertype that it conforms to.
-- [init(importedAs: String)](uttypereference/init(importedas:).md)
+- [init(importedAs: String)](./init%28importedas%29.md)
   Creates a type your app uses, but doesn’t own, based on an identifier.
-- [init(importedAs: String, conformingTo: UTType)](uttypereference/init(importedas:conformingto:).md)
+- [init(importedAs: String, conformingTo: UTType)](./init%28importedas,conformingto%29.md)
   Creates a type your app uses, but doesn’t own, based on an identifier and a supertype that it conforms to.
 
 

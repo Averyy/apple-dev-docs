@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -11,11 +12,15 @@
 - tvOS 27.0+
 - visionOS 27.0+
 
+> **Deprecated**: Use USDArray<UInt32> for uint[] or USDArray<UInt64> for uint64[].
+
 ## Declaration
 
 ```swift
 init(_ s: some Sequence<UInt>)
 ```
+
+Available when `Element` is `UInt`.
 
 
 ---

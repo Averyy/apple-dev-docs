@@ -1,7 +1,8 @@
 # inertia
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inertia in kilograms per square meter.
 
@@ -11,7 +12,7 @@ The inertia in kilograms per square meter.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,9 +26,10 @@ The vector contains the diagonal elements of the diagonalized inertia matrix.
 
 ## See Also
 
-- [var mass: Float](physicsmassproperties/mass.md)
+### Getting mass properties
+- [var mass: Float](./mass.md)
   The mass in kilograms.
-- [var centerOfMass: (position: SIMD3<Float>, orientation: simd_quatf)](physicsmassproperties/centerofmass.md)
+- [var centerOfMass: (position: SIMD3<Float>, orientation: simd_quatf)](./centerofmass.md)
   The position of the center of mass and the orientation of the principal axes.
 
 

@@ -1,7 +1,8 @@
 # write
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The write mode.
 
@@ -14,13 +15,18 @@ The write mode.
 static var write: FSVolume.OpenModes { get }
 ```
 
+```c
+FSVolumeOpenModesWrite
+```
+
 #### Discussion
 
 This mode is equivalent to POSIX `FRWITE`.
 
 ## See Also
 
-- [static var read: FSVolume.OpenModes](fsvolume/openmodes/read.md)
+### Declaring open modes
+- [static var read: FSVolume.OpenModes](./read.md)
   The read mode.
 
 

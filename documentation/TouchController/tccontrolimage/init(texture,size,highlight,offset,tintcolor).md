@@ -1,7 +1,8 @@
 # init(texture:size:highlight:offset:tintColor:)
 
 **Framework**: Touch Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new image with the specified texture, size, highlight texture, offset, and color tint.
 
@@ -14,6 +15,10 @@ Creates a new image with the specified texture, size, highlight texture, offset,
 
 ```swift
 init(texture: any MTLTexture, size: CGSize, highlight highlightTexture: (any MTLTexture)?, offset: CGPoint, tintColor: CGColor)
+```
+
+```objc
+- (instancetype) initWithTexture:(id<MTLTexture>) texture size:(CGSize) size highlightTexture:(id<MTLTexture>) highlightTexture offset:(CGPoint) offset tintColor:(CGColorRef) tintColor;
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ A new `TCControlImage` instance.
 
 ## See Also
 
-- [convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(cgimage:size:device:)-22z05.md)
+### Creating a control image
+- [convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)](./init%28cgimage,size,device%29-22z05.md)
   Creates a new image from a CGImage.
-- [convenience init(texture: any MTLTexture, size: CGSize)](tccontrolimage/init(texture:size:).md)
+- [convenience init(texture: any MTLTexture, size: CGSize)](./init%28texture,size%29.md)
   Creates a new image with the specified texture and size.
-- [convenience init?(uiImage: UIImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(uiimage:size:device:)-3hqf.md)
+- [convenience init?(uiImage: UIImage, size: CGSize, device: any MTLDevice)](./init%28uiimage,size,device%29-3hqf.md)
   Creates a new image from a UIImage.
 
 

@@ -1,7 +1,8 @@
 # receive(completion:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the subscriber that the publisher has completed publishing, either normally or with an error.
 
@@ -22,11 +23,12 @@ final func receive(completion: Subscribers.Completion<Never>)
 
 ## Parameters
 
-- `completion`: A [`Subscribers.Completion`](subscribers/completion.md) case indicating whether publishing completed normally or with an error.
+- `completion`: A [`Subscribers.Completion`](../completion.md) case indicating whether publishing completed normally or with an error.
 
 ## See Also
 
-- [func receive(subscription: any Subscription)](subscribers/assign/receive(subscription:).md)
+### Receiving life cycle events
+- [func receive(subscription: any Subscription)](./receive%28subscription%29.md)
   Tells the subscriber that it has successfully subscribed to the publisher and may request items.
 
 

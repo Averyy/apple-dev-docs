@@ -1,7 +1,8 @@
 # MTLReadWriteTextureTier.tier1
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the system supports tier 1 read-write textures.
 
@@ -19,19 +20,24 @@ Indicates the system supports tier 1 read-write textures.
 case tier1
 ```
 
+```c
+MTLReadWriteTextureTier1
+```
+
 #### Discussion
 
 Tier 1 read-write textures support the following pixel formats:
 
-- [`MTLPixelFormat.r32Float`](mtlpixelformat/r32float.md)
-- [`MTLPixelFormat.r32Uint`](mtlpixelformat/r32uint.md)
-- [`MTLPixelFormat.r32Sint`](mtlpixelformat/r32sint.md)
+- [`MTLPixelFormat.r32Float`](../mtlpixelformat/r32float.md)
+- [`MTLPixelFormat.r32Uint`](../mtlpixelformat/r32uint.md)
+- [`MTLPixelFormat.r32Sint`](../mtlpixelformat/r32sint.md)
 
 ## See Also
 
-- [MTLReadWriteTextureTier.tier2](mtlreadwritetexturetier/tier2.md)
+### Enumeration cases
+- [MTLReadWriteTextureTier.tier2](./tier2.md)
   Indicates the system supports tier 2 read-write textures.
-- [MTLReadWriteTextureTier.tierNone](mtlreadwritetexturetier/tiernone.md)
+- [MTLReadWriteTextureTier.tierNone](./tiernone.md)
   Indicates the system doesn’t support read-write textures.
 
 

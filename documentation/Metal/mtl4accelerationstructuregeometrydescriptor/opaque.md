@@ -1,7 +1,8 @@
 # opaque
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides a hint to Metal that this geometry is opaque, potentially accelerating the ray/primitive intersection process.
 
@@ -17,6 +18,10 @@ Provides a hint to Metal that this geometry is opaque, potentially accelerating 
 
 ```swift
 var opaque: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL opaque;
 ```
 
 

@@ -1,7 +1,8 @@
 # save(password:for:title:anchor:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Save or update a password credential to the user’s preferred password manager in the system.
 
@@ -21,7 +22,7 @@ final func save(password: ASPasswordCredential, for scope: ASAutoFillURLScope, t
 
 This functionality is equivalent to the saving behavior that occurs when submitting a form with a password field. The credential will be associated with the scope.
 
-> **Note**: `ASAuthorizationError` if the system failed to accept the update.
+> **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 
 > **Note**: The scope’s URL must be listed as an associated domain for Web Credentials for the current app *or* the app must have the `com.apple.developer.web-browser` entitlement.
 

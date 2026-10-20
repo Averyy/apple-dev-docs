@@ -1,7 +1,8 @@
 # near
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum distance in meters from the camera that the camera can see.
 
@@ -11,7 +12,7 @@ The minimum distance in meters from the camera that the camera can see.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var near: Float
 
 #### Discussion
 
-The value defaults to `1.0` centimeter. Use a value greater than `0.0` and less than the value of [`far`](perspectivecameracomponent/far.md). The renderer clips any surface closer than the `near` point.
+The value defaults to `1.0` centimeter. Use a value greater than `0.0` and less than the value of [`far`](./far.md). The renderer clips any surface closer than the `near` point.
 
 ## See Also
 
-- [var far: Float](perspectivecameracomponent/far.md)
+### Setting focal points
+- [var far: Float](./far.md)
   The maximum distance in meters from the camera that the camera can see.
 
 

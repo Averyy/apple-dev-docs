@@ -1,7 +1,8 @@
 # VideoCategory.freeform
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app supports searching for freeform video content like what may uploaded to social media platforms. This should not be used in cases of highly structured content like movies and episodic tv shows.
 
@@ -11,7 +12,7 @@ The app supports searching for freeform video content like what may uploaded to 
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

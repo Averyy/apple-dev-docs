@@ -1,7 +1,8 @@
 # init(toAlignWith:maxDistance:maxAngle:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a goal whose effect is to make an agent align its orientation with that of other agents in a specified group.
 
@@ -17,6 +18,10 @@ Creates a goal whose effect is to make an agent align its orientation with that 
 
 ```swift
 convenience init(toAlignWith agents: [GKAgent], maxDistance: Float, maxAngle: Float)
+```
+
+```objc
++ (instancetype) goalToAlignWithAgents:(NSArray<GKAgent *> *) agents maxDistance:(float) maxDistance maxAngle:(float) maxAngle;
 ```
 
 #### Return Value
@@ -39,9 +44,10 @@ You can combine separation, alignment, and cohesion goals to produce “flocking
 
 ## See Also
 
-- [convenience init(toSeparateFrom: [GKAgent], maxDistance: Float, maxAngle: Float)](gkgoal/init(toseparatefrom:maxdistance:maxangle:).md)
+### Creating Goals for Flocking Behavior
+- [convenience init(toSeparateFrom: [GKAgent], maxDistance: Float, maxAngle: Float)](./init%28toseparatefrom,maxdistance,maxangle%29.md)
   Creates a goal whose effect is to make an agent maintain the specified distance from other agents in a specified group.
-- [convenience init(toCohereWith: [GKAgent], maxDistance: Float, maxAngle: Float)](gkgoal/init(tocoherewith:maxdistance:maxangle:).md)
+- [convenience init(toCohereWith: [GKAgent], maxDistance: Float, maxAngle: Float)](./init%28tocoherewith,maxdistance,maxangle%29.md)
   Creates a goal whose effect is to make an agent stay near the other agents in a specified group.
 
 

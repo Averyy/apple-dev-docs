@@ -1,7 +1,8 @@
 # numberOfTouches
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of touches involved in the gesture represented by the gesture recognizer.
 
@@ -9,7 +10,7 @@ The number of touches involved in the gesture represented by the gesture recogni
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The number of touches involved in the gesture represented by the gesture recogni
 var numberOfTouches: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger numberOfTouches;
+```
+
 #### Return Value
 
-The number of [`UITouch`](uitouch.md) objects in a private array maintained by the receiver. Each of these objects represents a touch in the current gesture.
+The number of [`UITouch`](../uitouch.md) objects in a private array maintained by the receiver. Each of these objects represents a touch in the current gesture.
 
 #### Discussion
 
-Using the value returned by this method in a loop, you can ask for the location of individual touches using the [`location(ofTouch:in:)`](uigesturerecognizer/location(oftouch:in:).md) method.
+Using the value returned by this method in a loop, you can ask for the location of individual touches using the [`location(ofTouch:in:)`](./location%28oftouch,in%29.md) method.
 
 ## See Also
 
-- [func location(in: UIView?) -> CGPoint](uigesturerecognizer/location(in:).md)
+### Getting the touches and location of a gesture
+- [func location(in: UIView?) -> CGPoint](./location%28in%29.md)
   Returns the point computed as the location in a given view of the gesture represented by the gesture recognizer.
-- [func location(ofTouch: Int, in: UIView?) -> CGPoint](uigesturerecognizer/location(oftouch:in:).md)
+- [func location(ofTouch: Int, in: UIView?) -> CGPoint](./location%28oftouch,in%29.md)
   Returns the location of one of the gesture’s touches in the local coordinate system of a given view.
 
 

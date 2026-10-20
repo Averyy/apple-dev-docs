@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Shared with You  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+

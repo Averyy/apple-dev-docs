@@ -1,7 +1,8 @@
 # AVSystemRoute.LaunchMode
 
 **Framework**: AVSystemRouting  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The mode that determines how media playback launches on a remote device.
 
@@ -18,29 +19,30 @@ enum LaunchMode
 
 #### Overview
 
-Use this enumeration with [`init(url:mode:)`](avsystemroutesession-gp78/init(url:mode:).md) to control how media playback is initiated on the remote device. The launch mode determines whether your app launches its counterpart on the remote device, or uses a system-provided media player.
+Use this enumeration with [`init(url:mode:)`](../avsystemroutesession-gp78/init%28url,mode%29.md) to control how media playback is initiated on the remote device. The launch mode determines whether your app launches its counterpart on the remote device, or uses a system-provided media player.
 
 ## Topics
 
 ### Enumeration Cases
-- [AVSystemRoute.LaunchMode.application](avsystemroute-5s2um/launchmode/application.md)
+- [AVSystemRoute.LaunchMode.application](./launchmode/application.md)
   Launches the corresponding application on the remote device.
-- [AVSystemRoute.LaunchMode.player](avsystemroute-5s2um/launchmode/player.md)
+- [AVSystemRoute.LaunchMode.player](./launchmode/player.md)
   Launches the system’s built-in media player on the remote device.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVSystemRoute](avsystemroute-5s2um.md)
+### Routes and sessions
+- [class AVSystemRoute](../avsystemroute-5s2um.md)
   An active media route to a remote device that manages connection and communication for media playback and data exchange.
-- [class AVSystemRouteSession](avsystemroutesession-gp78.md)
+- [class AVSystemRouteSession](../avsystemroutesession-gp78.md)
   An object that manages a single media playback session on a remote device.
 
 

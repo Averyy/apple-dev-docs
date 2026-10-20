@@ -1,7 +1,8 @@
 # step(_:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 In a paused workflow, runs the next action in the workflow and then pauses again.
 
@@ -16,6 +17,10 @@ In a paused workflow, runs the next action in the workflow and then pauses again
 func step(_ sender: Any)
 ```
 
+```objc
+- (void) step:(id) sender;
+```
+
 #### Discussion
 
 Stepping allows a workflow to be executed one action at a time. This is useful for ensuring that the workflow is doing what it’s supposed to do, as the results of each individual action can be inspected before moving on to the next.
@@ -26,13 +31,14 @@ Stepping allows a workflow to be executed one action at a time. This is useful f
 
 ## See Also
 
-- [func pause(Any)](amworkflowcontroller/pause(_:).md)
+### Controlling the Workflow
+- [func pause(Any)](./pause%28_%29.md)
   Pauses a workflow that’s running.
-- [func reset(Any)](amworkflowcontroller/reset(_:).md)
+- [func reset(Any)](./reset%28_%29.md)
   Stops a workflow, clears any action results, and resets the workflow back to an un-run state.
-- [func run(Any)](amworkflowcontroller/run(_:).md)
+- [func run(Any)](./run%28_%29.md)
   Runs the associated workflow, after first clearing any results stored by its actions during any previous run.
-- [func stop(Any)](amworkflowcontroller/stop(_:).md)
+- [func stop(Any)](./stop%28_%29.md)
   Stops the associated workflow.
 
 

@@ -1,26 +1,28 @@
 # kIOUserNetworkGetLocalPortsActiveOnly
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkGetLocalPortsActiveOnly
 ```
 
 ## See Also
 
-- [kIOUserNetworkGetLocalPortsAnyTCPStateOK](kiousernetworkgetlocalportsanytcpstateok.md)
-- [kIOUserNetworkGetLocalPortsExtendedBackgroundIdleOnly](kiousernetworkgetlocalportsextendedbackgroundidleonly.md)
-- [kIOUserNetworkGetLocalPortsNoWakeupOk](kiousernetworkgetlocalportsnowakeupok.md)
-- [kIOUserNetworkGetLocalPortsRecvAnyInterfaceOnly](kiousernetworkgetlocalportsrecvanyinterfaceonly.md)
-- [kIOUserNetworkGetLocalPortsTCPOnly](kiousernetworkgetlocalportstcponly.md)
-- [kIOUserNetworkGetLocalPortsUDPOnly](kiousernetworkgetlocalportsudponly.md)
-- [kIOUserNetworkGetLocalPortsWildCardOk](kiousernetworkgetlocalportswildcardok.md)
+### Local port detection
+- [kIOUserNetworkGetLocalPortsAnyTCPStateOK](./kiousernetworkgetlocalportsanytcpstateok.md)
+- [kIOUserNetworkGetLocalPortsExtendedBackgroundIdleOnly](./kiousernetworkgetlocalportsextendedbackgroundidleonly.md)
+- [kIOUserNetworkGetLocalPortsNoWakeupOk](./kiousernetworkgetlocalportsnowakeupok.md)
+- [kIOUserNetworkGetLocalPortsRecvAnyInterfaceOnly](./kiousernetworkgetlocalportsrecvanyinterfaceonly.md)
+- [kIOUserNetworkGetLocalPortsTCPOnly](./kiousernetworkgetlocalportstcponly.md)
+- [kIOUserNetworkGetLocalPortsUDPOnly](./kiousernetworkgetlocalportsudponly.md)
+- [kIOUserNetworkGetLocalPortsWildCardOk](./kiousernetworkgetlocalportswildcardok.md)
 
 
 ---

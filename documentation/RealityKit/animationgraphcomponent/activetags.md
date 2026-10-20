@@ -1,7 +1,8 @@
 # activeTags
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tags that were active or fired during the most recent graph evaluation tick.
 
@@ -21,7 +22,8 @@ var activeTags: [AnimationGraphComponent.ActiveTag] { get }
 
 ## See Also
 
-- [AnimationGraphComponent.ActiveTag](animationgraphcomponent/activetag.md)
+### Accessing active tags
+- [AnimationGraphComponent.ActiveTag](./activetag.md)
   A graph-level signal raised by the graph while certain states are active.
 
 

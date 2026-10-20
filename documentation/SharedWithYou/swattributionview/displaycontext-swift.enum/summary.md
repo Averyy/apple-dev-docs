@@ -1,7 +1,8 @@
 # SWAttributionView.DisplayContext.summary
 
 **Framework**: Shared with You  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system is offering the attributed content shown along with this view to the user for consumption.
 
@@ -19,17 +20,22 @@ Indicates that the system is offering the attributed content shown along with th
 case summary
 ```
 
+```c
+SWAttributionViewDisplayContextSummary
+```
+
 ## Mentions
 
-- [Making your app content shareable](making-your-app-content-shareable.md)
+- [Making your app content shareable](../../making-your-app-content-shareable.md)
 
 #### Discussion
 
-The is the default value for [`displayContext`](swattributionview/displaycontext-swift.property.md).
+The is the default value for [`displayContext`](../displaycontext-swift.property.md).
 
 ## See Also
 
-- [SWAttributionView.DisplayContext.detail](swattributionview/displaycontext-swift.enum/detail.md)
+### Context styles
+- [SWAttributionView.DisplayContext.detail](./detail.md)
   Indicates that the attributed content shown along with this view is being actively consumed by the user.
 
 

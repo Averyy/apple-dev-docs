@@ -1,7 +1,8 @@
 # init(entityName:dictionaryHandler:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a batch-insertion request for a named managed entity, and specifies a closure that provides data dictionaries for insertion.
 
@@ -15,6 +16,10 @@ Creates a batch-insertion request for a named managed entity, and specifies a cl
 
 ```swift
 convenience init(entityName: String, dictionaryHandler handler: @escaping (NSMutableDictionary) -> Bool)
+```
+
+```objc
++ (instancetype) batchInsertRequestWithEntityName:(NSString *) entityName dictionaryHandler:(BOOL (^)(NSMutableDictionary<NSString *,id> *obj)) handler;
 ```
 
 #### Return Value
@@ -32,17 +37,18 @@ Core Data repeatedly calls the provided closure until it returns `true`, then fi
 
 ## See Also
 
-- [convenience init(entity: NSEntityDescription, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entity:dictionaryhandler:).md)
+### Creating a Request
+- [convenience init(entity: NSEntityDescription, dictionaryHandler: (NSMutableDictionary) -> Bool)](./init%28entity,dictionaryhandler%29.md)
   Creates a batch-insertion request for a managed entity, and specifies a closure that provides data dictionaries for insertion.
-- [convenience init(entity: NSEntityDescription, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entity:managedobjecthandler:).md)
+- [convenience init(entity: NSEntityDescription, managedObjectHandler: (NSManagedObject) -> Bool)](./init%28entity,managedobjecthandler%29.md)
   Creates a batch-insertion request for a managed entity, and specifies a closure that inserts data into the entity.
-- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entityname:managedobjecthandler:)-7dr6p.md)
+- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](./init%28entityname,managedobjecthandler%29-7dr6p.md)
   Creates a batch-insertion request for a named managed entity, and specifies a closure that inserts data into the entity.
-- [init(entity: NSEntityDescription, objects: [[String : Any]])](nsbatchinsertrequest/init(entity:objects:).md)
+- [init(entity: NSEntityDescription, objects: [[String : Any]])](./init%28entity,objects%29.md)
   Creates a batch-insertion request for a managed entity, and provides an array of data dictionaries for insertion.
-- [init(entityName: String, objects: [[String : Any]])](nsbatchinsertrequest/init(entityname:objects:).md)
+- [init(entityName: String, objects: [[String : Any]])](./init%28entityname,objects%29.md)
   Creates a batch-insertion request for a named managed entity, and provides an array of data dictionaries for insertion.
-- [convenience init()](nsbatchinsertrequest/init.md)
+- [convenience init()](./init%28%29.md)
   Creates a Core Data batch-insertion request.
 
 

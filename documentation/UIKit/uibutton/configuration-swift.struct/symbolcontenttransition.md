@@ -1,14 +1,15 @@
 # symbolContentTransition
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # init(pipelines:)
 
 **Framework**: Compute Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a ComputeGraphSimulation for the given pipelines, or a default pipeline if not specified.
 
@@ -12,7 +13,7 @@ Initialize a ComputeGraphSimulation for the given pipelines, or a default pipeli
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ convenience init(pipelines: ComputeNodeGraph.Pipelines?)
 
 #### Discussion
 
-The simulation will use the ComputeGraphFramework’s default queue for operations such as [`fastForward()`](computegraphsimulation/fastforward().md) and resetting after setting the pipeline.
+The simulation will use the ComputeGraphFramework’s default queue for operations such as [`fastForward()`](./fastforward%28%29.md) and resetting after setting the pipeline.
 
 Prefer `init(pipeline:commandQueue:)` to this method.
 

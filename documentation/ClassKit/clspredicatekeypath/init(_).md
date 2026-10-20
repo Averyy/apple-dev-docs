@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: ClassKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a predicate key path.
 
@@ -20,7 +21,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](clspredicatekeypath/init(rawvalue:).md)
+### Initializing a predicate key path
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Initializes a predicate key path with the given value.
 
 

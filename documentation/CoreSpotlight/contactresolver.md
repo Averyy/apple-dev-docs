@@ -1,7 +1,8 @@
 # ContactResolver
 
 **Framework**: Core Spotlight  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface you use to help Foundation models resolve references to the person using the app.
 
@@ -20,11 +21,11 @@ protocol ContactResolver : Sendable
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
 #### Overview
 
-When a search involves people, the search tool needs to know how to resolve references to “I” or “me” in any conversations. Implement this protocol in a custom type and assign it to the Spotlight search tool you use with your Foundation models session. Your custom type returns a [`ResolvedContact`](resolvedcontact.md) structure, which contains any information your app uses to refer to the person. For example, fill the structure with name information, email addresses, or phone numbers from the account your app manages.
+When a search involves people, the search tool needs to know how to resolve references to “I” or “me” in any conversations. Implement this protocol in a custom type and assign it to the Spotlight search tool you use with your Foundation models session. Your custom type returns a [`ResolvedContact`](./resolvedcontact.md) structure, which contains any information your app uses to refer to the person. For example, fill the structure with name information, email addresses, or phone numbers from the account your app manages.
 
 The following example shows an implementation of this structure and the code you use to assign it to your Spotlight search tool.
 
@@ -44,18 +45,19 @@ configuration.contactResolver = MyContactResolver()
 ## Topics
 
 ### Returning the identity data
-- [func userIdentity() -> ResolvedContact](contactresolver/useridentity.md)
+- [func userIdentity() -> ResolvedContact](./contactresolver/useridentity%28%29.md)
   Returns the information for the current contact.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ResolvedContact](resolvedcontact.md)
+### Contact resolution
+- [struct ResolvedContact](./resolvedcontact.md)
   Contact information to help a search query match references to a person or organization.
 
 

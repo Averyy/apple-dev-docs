@@ -1,7 +1,8 @@
 # invalidateCounterRange(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates a range of entries in this counter heap.
 

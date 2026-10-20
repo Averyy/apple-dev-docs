@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of a file on the local file system.
 
@@ -14,9 +15,14 @@ The URL of a file on the local file system.
 var url: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * URL;
+```
+
 ## See Also
 
-- [var append: Bool](vzfileserialportattachment/append.md)
+### Getting the file details
+- [var append: Bool](./append.md)
   A Boolean that indicates whether the virtual machine appends data to the file.
 
 

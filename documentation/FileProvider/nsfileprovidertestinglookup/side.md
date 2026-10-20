@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The location where the lookup occurs.
@@ -19,9 +20,14 @@ The location where the lookup occurs.
 var side: NSFileProviderTestingOperationSide { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderTestingOperationSide side;
+```
+
 ## See Also
 
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovidertestinglookup/itemidentifier.md)
+### Accessing the Operation’s Data
+- [var itemIdentifier: NSFileProviderItemIdentifier](./itemidentifier.md)
   The unique identifier for the item.
 
 

@@ -1,7 +1,8 @@
 # text
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The caption text.
 
@@ -15,6 +16,10 @@ The caption text.
 
 ```swift
 var text: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * text;
 ```
 
 #### Discussion
@@ -43,7 +48,8 @@ CEA608 closed captions support the following Unicode characters. They don’t su
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avcaption/timerange.md)
+### Accessing text and timing
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range over which the system presents the caption.
 
 

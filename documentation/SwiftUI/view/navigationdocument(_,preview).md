@@ -1,7 +1,8 @@
 # navigationDocument(_:preview:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the view’s document for purposes of navigation.
 
@@ -20,11 +21,28 @@ nonisolated
 func navigationDocument<D, I1, I2>(_ document: D, preview: SharePreview<I1, I2>) -> some View where D : Transferable, I1 : Transferable, I2 : Transferable
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func navigationDocument<D, I>(_ document: D, preview: SharePreview<I, Never>) -> some View where D : Transferable, I : Transferable
+```
+
+```swift
+nonisolated
+func navigationDocument<D, I>(_ document: D, preview: SharePreview<Never, I>) -> some View where D : Transferable, I : Transferable
+```
+
+```swift
+nonisolated
+func navigationDocument<D>(_ document: D, preview: SharePreview<Never, Never>) -> some View where D : Transferable
+```
+
 #### Discussion
 
 In iOS, iPadOS, this populates the title menu with a header previewing the document. In macOS, this populates a proxy icon.
 
-Refer to the [`Configure your apps navigation titles`](configure-your-apps-navigation-titles.md) article for more information on navigation document modifiers.
+Refer to the [Configure your apps navigation titles](../configure-your-apps-navigation-titles.md) article for more information on navigation document modifiers.
 
 ## Parameters
 
@@ -33,11 +51,12 @@ Refer to the [`Configure your apps navigation titles`](configure-your-apps-navig
 
 ## See Also
 
-- [func navigationTitle(_:)](view/navigationtitle(_:).md)
+### Setting titles for navigation content
+- [func navigationTitle(_:)](./navigationtitle%28_%29.md)
   Configures the view’s title for purposes of navigation, using a localized string resource.
-- [func navigationSubtitle(_:)](view/navigationsubtitle(_:).md)
+- [func navigationSubtitle(_:)](./navigationsubtitle%28_%29.md)
   Configures the view’s subtitle for purposes of navigation, using a localized string resource.
-- [func navigationDocument(_:)](view/navigationdocument(_:).md)
+- [func navigationDocument(_:)](./navigationdocument%28_%29.md)
   Configures the view’s document for purposes of navigation.
 
 

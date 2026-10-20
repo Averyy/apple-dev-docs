@@ -1,7 +1,8 @@
 # textureRemovals
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 IDs of texture assets removed this frame.
 

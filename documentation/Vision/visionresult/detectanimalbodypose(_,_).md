@@ -1,7 +1,8 @@
 # VisionResult.detectAnimalBodyPose(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a detect animal body pose request.
 
@@ -21,7 +22,8 @@ case detectAnimalBodyPose(DetectAnimalBodyPoseRequest, [AnimalBodyPoseObservatio
 
 ## See Also
 
-- [case recognizeAnimals(RecognizeAnimalsRequest, [RecognizedObjectObservation])](visionresult/recognizeanimals(_:_:).md)
+### Getting the animal detection result
+- [case recognizeAnimals(RecognizeAnimalsRequest, [RecognizedObjectObservation])](./recognizeanimals%28_,_%29.md)
   A result from performing a recognize animals request.
 
 

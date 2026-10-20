@@ -1,7 +1,8 @@
 # clientDataHash
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash of the client data for this assertion.
 
@@ -18,19 +19,24 @@ The hash of the client data for this assertion.
 var clientDataHash: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * clientDataHash;
+```
+
 #### Discussion
 
 Use the client data hash for both registration and assertion challenges.
 
 ## See Also
 
-- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](aspasskeycredentialrequest/userverificationpreference.md)
+### Viewing passkey challenge information
+- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./userverificationpreference.md)
   The relying party’s user verification preference.
-- [var supportedAlgorithms: [ASCOSEAlgorithmIdentifier]](aspasskeycredentialrequest/supportedalgorithms-74mad.md)
+- [var supportedAlgorithms: [ASCOSEAlgorithmIdentifier]](./supportedalgorithms-74mad.md)
   A list of cryptographic signature algorithms that the relying party supports.
-- [var extensionInput: ASPasskeyCredentialExtensionInput](aspasskeycredentialrequest/extensioninput.md)
+- [var extensionInput: ASPasskeyCredentialExtensionInput](./extensioninput.md)
   An input for WebAuthn extensions.
-- [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
+- [enum ASPasskeyCredentialExtensionInput](../aspasskeycredentialextensioninput.md)
   A type for WebAuthn extension inputs.
 
 

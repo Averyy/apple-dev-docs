@@ -1,7 +1,8 @@
 # badgePosition
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A value you set to specific the position of a badge on the Look Around preview.
 
@@ -10,13 +11,14 @@ A value you set to specific the position of a badge on the Look Around preview.
 
 ## Declaration
 
-```swift
+```
 badgePosition?: LookAroundBadgePosition;
 ```
 
 ## See Also
 
-- [const LookAroundBadgePosition](lookaroundbadgeposition.md)
+### Controlling the badge position
+- [const LookAroundBadgePosition](../lookaroundbadgeposition.md)
   Values that control the positions of a badge on a Look Around preview.
 
 

@@ -1,7 +1,8 @@
 # nextObject()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next object from the collection being enumerated.
 
@@ -18,6 +19,10 @@ Returns the next object from the collection being enumerated.
 
 ```swift
 func nextObject() -> Any?
+```
+
+```objc
+- (ObjectType) nextObject;
 ```
 
 #### Return Value
@@ -40,7 +45,8 @@ while ((object = [enumerator nextObject])) {
 
 ## See Also
 
-- [var allObjects: [Any]](nsenumerator/allobjects.md)
+### Getting the Enumerated Objects
+- [var allObjects: [Any]](./allobjects.md)
   The array of unenumerated objects.
 
 

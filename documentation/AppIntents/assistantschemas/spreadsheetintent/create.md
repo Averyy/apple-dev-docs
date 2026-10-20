@@ -1,7 +1,8 @@
 # create
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for creating a spreadsheet.
 
@@ -36,7 +37,7 @@ struct CreateSpreadsheetIntent: AppIntent {
 }
 ```
 
-For more information about the `.spreadsheet` app intent domain, see [`Spreadsheet`](app-schema-domain-spreadsheet.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.spreadsheet` app intent domain, see [Spreadsheet](../../app-schema-domain-spreadsheet.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # defaultConfiguration
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default configuration for operations in the group.
 
@@ -21,23 +22,28 @@ The default configuration for operations in the group.
 var defaultConfiguration: CKOperation.Configuration! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) CKOperationConfiguration * defaultConfiguration;
+```
+
 #### Discussion
 
-If an operation in the group has its own configuration, that configuration’s values override the default configuration’s values. For more information, see [`CKOperation.Configuration`](ckoperation/configuration-swift.class.md).
+If an operation in the group has its own configuration, that configuration’s values override the default configuration’s values. For more information, see [`CKOperation.Configuration`](../ckoperation/configuration-swift.class.md).
 
 ## See Also
 
-- [var expectedReceiveSize: CKOperationGroup.TransferSize](ckoperationgroup/expectedreceivesize.md)
+### Configuring an Operation Group
+- [var expectedReceiveSize: CKOperationGroup.TransferSize](./expectedreceivesize.md)
   The estimated size of traffic to download from CloudKit.
-- [var expectedSendSize: CKOperationGroup.TransferSize](ckoperationgroup/expectedsendsize.md)
+- [var expectedSendSize: CKOperationGroup.TransferSize](./expectedsendsize.md)
   The estimated size of traffic to upload to CloudKit.
-- [var name: String?](ckoperationgroup/name.md)
+- [var name: String?](./name.md)
   The operation group’s name.
-- [var operationGroupID: String](ckoperationgroup/operationgroupid.md)
+- [var operationGroupID: String](./operationgroupid.md)
   The operation group’s unique identifier.
-- [var quantity: Int](ckoperationgroup/quantity.md)
+- [var quantity: Int](./quantity.md)
   The number of operations in the operation group.
-- [CKOperationGroup.TransferSize](ckoperationgroup/transfersize.md)
+- [CKOperationGroup.TransferSize](./transfersize.md)
   Constants that represent possible data transfer sizes.
 
 

@@ -1,7 +1,8 @@
 # rooms
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of rooms in the zone.
 
@@ -19,11 +20,16 @@ Array of rooms in the zone.
 var rooms: [HMRoom] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMRoom *> * rooms;
+```
+
 ## See Also
 
-- [func addRoom(HMRoom, completionHandler: ((any Error)?) -> Void)](hmzone/addroom(_:completionhandler:).md)
+### Assigning Rooms to a Zone
+- [func addRoom(HMRoom, completionHandler: ((any Error)?) -> Void)](./addroom%28_,completionhandler%29.md)
   Adds a room to the zone.
-- [func removeRoom(HMRoom, completionHandler: ((any Error)?) -> Void)](hmzone/removeroom(_:completionhandler:).md)
+- [func removeRoom(HMRoom, completionHandler: ((any Error)?) -> Void)](./removeroom%28_,completionhandler%29.md)
   Removes a room from the zone.
 
 

@@ -1,7 +1,8 @@
 # MDLVertexFormat.invalid
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The vertex attribute has just been initialized or its format is unknown.
 
@@ -19,41 +20,46 @@ The vertex attribute has just been initialized or its format is unknown.
 case invalid
 ```
 
+```c
+MDLVertexFormatInvalid
+```
+
 #### Discussion
 
-This is the default format value for newly created [`MDLVertexAttribute`](mdlvertexattribute.md) objects. If a vertex attribute of invalid format is included in a [`MDLMesh`](mdlmesh.md) object, Model I/O  ignores the other properties of that attribute.
+This is the default format value for newly created [`MDLVertexAttribute`](../mdlvertexattribute.md) objects. If a vertex attribute of invalid format is included in a [`MDLMesh`](../mdlmesh.md) object, Model I/O  ignores the other properties of that attribute.
 
 ## See Also
 
-- [MDLVertexFormat.packedBit](mdlvertexformat/packedbit.md)
+### Constants
+- [MDLVertexFormat.packedBit](./packedbit.md)
   A bit mask for vertex attributes in packed vector formats.
-- [MDLVertexFormat.uCharBits](mdlvertexformat/ucharbits.md)
+- [MDLVertexFormat.uCharBits](./ucharbits.md)
   A bit mask for vertex attributes whose components are in 8-bit unsigned integer format.
-- [MDLVertexFormat.charBits](mdlvertexformat/charbits.md)
+- [MDLVertexFormat.charBits](./charbits.md)
   A bit mask for vertex attributes whose components are in 8-bit signed integer format.
-- [MDLVertexFormat.uCharNormalizedBits](mdlvertexformat/ucharnormalizedbits.md)
+- [MDLVertexFormat.uCharNormalizedBits](./ucharnormalizedbits.md)
   A bit mask for vertex attributes whose components are in 8-bit unsigned normalized integer format.
-- [MDLVertexFormat.charNormalizedBits](mdlvertexformat/charnormalizedbits.md)
+- [MDLVertexFormat.charNormalizedBits](./charnormalizedbits.md)
   A bit mask for vertex attributes whose components are in 8-bit signed normalized integer format.
-- [MDLVertexFormat.uShortBits](mdlvertexformat/ushortbits.md)
+- [MDLVertexFormat.uShortBits](./ushortbits.md)
   A bit mask for vertex attributes whose components are in 16-bit unsigned integer format.
-- [MDLVertexFormat.shortBits](mdlvertexformat/shortbits.md)
+- [MDLVertexFormat.shortBits](./shortbits.md)
   A bit mask for vertex attributes whose components are in 16-bit signed integer format.
-- [MDLVertexFormat.uShortNormalizedBits](mdlvertexformat/ushortnormalizedbits.md)
+- [MDLVertexFormat.uShortNormalizedBits](./ushortnormalizedbits.md)
   A bit mask for vertex attributes whose components are in 16-bit unsigned normalized integer format.
-- [MDLVertexFormat.shortNormalizedBits](mdlvertexformat/shortnormalizedbits.md)
+- [MDLVertexFormat.shortNormalizedBits](./shortnormalizedbits.md)
   A bit mask for vertex attributes whose components are in 16-bit signed normalized integer format.
-- [MDLVertexFormat.uIntBits](mdlvertexformat/uintbits.md)
+- [MDLVertexFormat.uIntBits](./uintbits.md)
   A bit mask for vertex attributes whose components are in 32-bit unsigned integer format.
-- [MDLVertexFormat.intBits](mdlvertexformat/intbits.md)
+- [MDLVertexFormat.intBits](./intbits.md)
   A bit mask for vertex attributes whose components are in 32-bit signed integer format.
-- [MDLVertexFormat.halfBits](mdlvertexformat/halfbits.md)
+- [MDLVertexFormat.halfBits](./halfbits.md)
   A bit mask for vertex attributes whose components are in 16-bit floating-point format.
-- [MDLVertexFormat.floatBits](mdlvertexformat/floatbits.md)
+- [MDLVertexFormat.floatBits](./floatbits.md)
   A bit mask for vertex attributes whose components are in 32-bit floating-point format.
-- [MDLVertexFormat.uChar](mdlvertexformat/uchar.md)
+- [MDLVertexFormat.uChar](./uchar.md)
   The attribute value for each vertex is a scalar of unsigned 8-bit integer type.
-- [MDLVertexFormat.uChar2](mdlvertexformat/uchar2.md)
+- [MDLVertexFormat.uChar2](./uchar2.md)
   The attribute value for each vertex is a vector with 2 components, each of unsigned 8-bit integer type.
 
 

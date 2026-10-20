@@ -1,7 +1,8 @@
 # AVCapturePhotoOutput.QualityPrioritization
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate how to prioritize photo quality relative to capture speed.
 
@@ -18,31 +19,36 @@ Constants that indicate how to prioritize photo quality relative to capture spee
 enum QualityPrioritization
 ```
 
+```c
+enum AVCapturePhotoQualityPrioritization : NSInteger;
+```
+
 ## Topics
 
 ### Specifying priority
-- [AVCapturePhotoOutput.QualityPrioritization.speed](avcapturephotooutput/qualityprioritization/speed.md)
+- [AVCapturePhotoOutput.QualityPrioritization.speed](./qualityprioritization/speed.md)
   Speed of photo delivery is most important, even at the expense of quality.
-- [AVCapturePhotoOutput.QualityPrioritization.quality](avcapturephotooutput/qualityprioritization/quality.md)
+- [AVCapturePhotoOutput.QualityPrioritization.quality](./qualityprioritization/quality.md)
   Photo quality is most important, even at the expense of shot-to-shot time.
-- [AVCapturePhotoOutput.QualityPrioritization.balanced](avcapturephotooutput/qualityprioritization/balanced.md)
+- [AVCapturePhotoOutput.QualityPrioritization.balanced](./qualityprioritization/balanced.md)
   Priority is balanced between photo quality and speed of delivery.
 ### Initializers
-- [init?(rawValue: Int)](avcapturephotooutput/qualityprioritization/init(rawvalue:).md)
+- [init?(rawValue: Int)](./qualityprioritization/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var maxPhotoQualityPrioritization: AVCapturePhotoOutput.QualityPrioritization](avcapturephotooutput/maxphotoqualityprioritization.md)
+### Setting the capture prioritization
+- [var maxPhotoQualityPrioritization: AVCapturePhotoOutput.QualityPrioritization](./maxphotoqualityprioritization.md)
   The highest quality the photo output should prepare to deliver on a capture-by-capture basis.
 
 

@@ -1,7 +1,8 @@
 # MTLAttributeFormat.char2Normalized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 8-bit, normalized, signed integer values.
 
@@ -19,21 +20,26 @@ A two-component vector with 8-bit, normalized, signed integer values.
 case char2Normalized
 ```
 
+```c
+MTLAttributeFormatChar2Normalized
+```
+
 ## See Also
 
-- [MTLAttributeFormat.charNormalized](mtlattributeformat/charnormalized.md)
+### 8-bit normalized integer formats
+- [MTLAttributeFormat.charNormalized](./charnormalized.md)
   An 8-bit, normalized, signed integer value.
-- [MTLAttributeFormat.char3Normalized](mtlattributeformat/char3normalized.md)
+- [MTLAttributeFormat.char3Normalized](./char3normalized.md)
   A three-component vector with 8-bit, normalized, signed integer values.
-- [MTLAttributeFormat.char4Normalized](mtlattributeformat/char4normalized.md)
+- [MTLAttributeFormat.char4Normalized](./char4normalized.md)
   A four-component vector with 8-bit, normalized, signed integer values.
-- [MTLAttributeFormat.ucharNormalized](mtlattributeformat/ucharnormalized.md)
+- [MTLAttributeFormat.ucharNormalized](./ucharnormalized.md)
   An 8-bit, normalized, unsigned integer value.
-- [MTLAttributeFormat.uchar2Normalized](mtlattributeformat/uchar2normalized.md)
+- [MTLAttributeFormat.uchar2Normalized](./uchar2normalized.md)
   A two-component vector with 8-bit, normalized, unsigned integer values.
-- [MTLAttributeFormat.uchar3Normalized](mtlattributeformat/uchar3normalized.md)
+- [MTLAttributeFormat.uchar3Normalized](./uchar3normalized.md)
   A three-component vector with 8-bit, normalized, unsigned integer values.
-- [MTLAttributeFormat.uchar4Normalized](mtlattributeformat/uchar4normalized.md)
+- [MTLAttributeFormat.uchar4Normalized](./uchar4normalized.md)
   A four-component vector with 8-bit, normalized, unsigned integer values.
 
 

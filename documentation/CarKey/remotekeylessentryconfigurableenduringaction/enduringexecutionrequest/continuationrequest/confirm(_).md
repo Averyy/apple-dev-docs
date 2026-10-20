@@ -1,7 +1,8 @@
 # confirm(_:)
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Method for your app to acknowledge receipt of this continuation request and commit to continue execution of this enduring action with optional arbitrary data to send to the vehicle. There is a maximum length of 64 bytes for the data to be sent.
 

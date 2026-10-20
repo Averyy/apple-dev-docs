@@ -1,7 +1,8 @@
 # expressionBlock
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that executes to evaluate the expression.
 
@@ -20,9 +21,14 @@ The block that executes to evaluate the expression.
 var expressionBlock: (Any?, [NSExpression], NSMutableDictionary?) -> Any { get }
 ```
 
+```objc
+@property (copy, readonly) id (^expressionBlock)(id , NSArray<NSExpression *> *, NSMutableDictionary *);
+```
+
 ## See Also
 
-- [init(block: (Any?, [NSExpression], NSMutableDictionary?) -> Any, arguments: [NSExpression]?)](nsexpression/init(block:arguments:).md)
+### Related Documentation
+- [init(block: (Any?, [NSExpression], NSMutableDictionary?) -> Any, arguments: [NSExpression]?)](./init%28block,arguments%29.md)
   Creates an expression object that uses the block for evaluating objects.
 
 

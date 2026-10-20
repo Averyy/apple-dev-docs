@@ -1,7 +1,8 @@
 # SparseGetStateSize_Double(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the size in bytes necessary for a call to the double-precision sparse iterate method.
 
@@ -20,6 +21,10 @@ Returns the size in bytes necessary for a call to the double-precision sparse it
 func SparseGetStateSize_Double(_ method: SparseIterativeMethod, _ preconditioner: Bool, _ m: Int32, _ n: Int32, _ nrhs: Int32) -> Int
 ```
 
+```c
+static size_t SparseGetStateSize_Double(SparseIterativeMethod method, bool preconditioner, int m, int n, int nrhs);
+```
+
 #### Return Value
 
 The size of the required state space, in bytes.
@@ -34,11 +39,12 @@ The size of the required state space, in bytes.
 
 ## See Also
 
-- [func SparseGetStateSize_Float(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](sparsegetstatesize_float(_:_:_:_:_:).md)
+### Functions that Calculate Iterate State Size
+- [func SparseGetStateSize_Float(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](./sparsegetstatesize_float%28_,_,_,_,_%29.md)
   Returns the size in bytes necessary for a call to the single-precision sparse iterate method.
-- [func SparseGetStateSize_Complex_Double(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](sparsegetstatesize_complex_double(_:_:_:_:_:).md)
+- [func SparseGetStateSize_Complex_Double(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](./sparsegetstatesize_complex_double%28_,_,_,_,_%29.md)
   Returns size in bytes of state space required for call to `SparseIterate()` for complex double values.
-- [func SparseGetStateSize_Complex_Float(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](sparsegetstatesize_complex_float(_:_:_:_:_:).md)
+- [func SparseGetStateSize_Complex_Float(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](./sparsegetstatesize_complex_float%28_,_,_,_,_%29.md)
   Returns size in bytes of state space required for call to `SparseIterate()` for complex float values.
 
 

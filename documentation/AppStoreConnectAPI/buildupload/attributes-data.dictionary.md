@@ -1,7 +1,8 @@
 # BuildUpload.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a build upload resource.
 
@@ -10,14 +11,14 @@ Attributes that describe a build upload resource.
 
 ## Declaration
 
-```swift
+```
 object BuildUpload.Attributes
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BuildUpload.Attributes.State](buildupload/attributes-data.dictionary/state-data.dictionary.md)
+- [object BuildUpload.Attributes.State](./attributes-data.dictionary/state-data.dictionary.md)
   The state of a build upload including any errors and warnings.
 
 ## Properties

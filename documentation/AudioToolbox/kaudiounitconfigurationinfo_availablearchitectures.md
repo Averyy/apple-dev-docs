@@ -1,10 +1,11 @@
 # kAudioUnitConfigurationInfo_AvailableArchitectures
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kAudioUnitConfigurationInfo_AvailableArchitectures: String { get }
 ```
 
+```c
+#define kAudioUnitConfigurationInfo_AvailableArchitectures
+```
+
 ## See Also
 
-- [var kAudioUnitConfigurationInfo_MIDIProtocol: String](kaudiounitconfigurationinfo_midiprotocol.md)
-- [var kAudioUnitConfigurationInfo_MigrateFromPlugin: String](kaudiounitconfigurationinfo_migratefromplugin.md)
+### Constants
+- [var kAudioUnitConfigurationInfo_MIDIProtocol: String](./kaudiounitconfigurationinfo_midiprotocol.md)
+- [var kAudioUnitConfigurationInfo_MigrateFromPlugin: String](./kaudiounitconfigurationinfo_migratefromplugin.md)
 
 
 ---

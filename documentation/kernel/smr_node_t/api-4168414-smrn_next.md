@@ -1,14 +1,15 @@
 # smrn_next
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 struct smr_node *smrn_next;
 ```
 

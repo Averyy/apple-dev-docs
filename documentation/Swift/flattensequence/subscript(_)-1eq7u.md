@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at `position`.
 
@@ -20,9 +21,11 @@ Accesses the element at `position`.
 subscript(position: FlattenSequence<Base>.Index) -> Base.Element.Element { get }
 ```
 
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
+
 #### Overview
 
-> **Note**: `position` is a valid position in `self` and `position != endIndex`.
+> **Precondition**: `position` is a valid position in `self` and `position != endIndex`.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(bitPattern:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value with the bit pattern of the given pointer.
 
@@ -30,9 +31,10 @@ The new value represents the address of the pointer passed as `pointer`. If `poi
 
 ## See Also
 
-- [init<P>(bitPattern: P?)](int/init(bitpattern:)-2i0qy.md)
+### Working with Memory Addresses
+- [init<P>(bitPattern: P?)](./init%28bitpattern%29-2i0qy.md)
   Creates a new value with the bit pattern of the given pointer.
-- [init(bitPattern: ObjectIdentifier)](int/init(bitpattern:)-2o9co.md)
+- [init(bitPattern: ObjectIdentifier)](./init%28bitpattern%29-2o9co.md)
   Creates an integer that captures the full value of the given object identifier.
 
 

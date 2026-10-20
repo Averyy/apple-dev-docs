@@ -1,6 +1,7 @@
 # Building your project with explicit module dependencies
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Reduce compile times by eliminating unnecessary module variants using the Xcode build system.
 
@@ -17,9 +18,9 @@ The Xcode build system explicitly builds module dependencies when:
 
 For Swift code, explicitly built modules improves the debugging experience.
 
-> **Note**: Explicitly built modules aren’t supported when using the C++ interoperability features in Swift and not enabled by default for targets using Swift 4 or earlier. To enable explicitly built modules, set the [`Explicitly Built Modules`](build-settings-reference#Explicitly-Built-Modules.md) build setting to `Yes`.
+> **Note**: Explicitly built modules aren’t supported when using the C++ interoperability features in Swift and not enabled by default for targets using Swift 4 or earlier. To enable explicitly built modules, set the [Explicitly Built Modules](./build-settings-reference.md#Explicitly-Built-Modules) build setting to `Yes`.
 
-##### Understand How Module Dependencies Are Built
+##### Understand how module dependencies are built
 
 When explicitly building module dependencies, compilation is divided into three distinct stages:
 
@@ -29,9 +30,9 @@ When explicitly building module dependencies, compilation is divided into three 
 
 In addition to appearing as distinct steps in the build log, you can also review the tasks in the build timeline:
 
-![A screenshot of an Xcode build log and accompanying timeline showing dependency scanning, module build, and compile tasks.](/images/com.apple.Xcode/building-your-project-with-explicit-module-dependencies-1@2x.png)
+![A screenshot of an Xcode build log and accompanying timeline showing dependency scanning, module build, and compile tasks.](https://developer.apple.com/tutorials/images/com.apple.Xcode/building-your-project-with-explicit-module-dependencies-1@2x.png)
 
-##### Improve Compile Times By Reducing Module Variants
+##### Improve compile times by reducing module variants
 
 In more complex projects, the build log may show multiple tasks that correspond to builds of the same module, but with different sets of options. Modules are sensitive to the compiler options used by their dependents, so building different parts of a project with different options may require building multiple variants. Sometimes, building multiple variants of a module is necessary. For example, when building code for multiple architectures, at least one module variant must be built for each. In other cases, inconsistent project configurations may lead to building many variants of a module unnecessarily. For example, two targets with the same dependencies but different values of the `Preprocessor Macros` build setting are unable to share built modules. To reduce build times and the number of variants to build, you’ll instead update the project configuration to compile sources using a uniform set of options.
 
@@ -39,11 +40,12 @@ Xcode provides tools to determine when differences in project settings require a
 
 ## See Also
 
-- [Configuring your project to use mergeable libraries](configuring-your-project-to-use-mergeable-libraries.md)
+### Performance
+- [Configuring your project to use mergeable libraries](./configuring-your-project-to-use-mergeable-libraries.md)
   Use mergeable dynamic libraries to get app launch times similar to static linking in release builds, without losing dynamically linked build times in debug builds.
-- [Improving the speed of incremental builds](improving-the-speed-of-incremental-builds.md)
+- [Improving the speed of incremental builds](./improving-the-speed-of-incremental-builds.md)
   Tell the Xcode build system about your project’s target-related dependencies, and reduce the compiler workload during each build cycle.
-- [Improving build efficiency with good coding practices](improving-build-efficiency-with-good-coding-practices.md)
+- [Improving build efficiency with good coding practices](./improving-build-efficiency-with-good-coding-practices.md)
   Shorten compile times by reducing the number of symbols your code exports and by giving the compiler the explicit information it needs.
 
 

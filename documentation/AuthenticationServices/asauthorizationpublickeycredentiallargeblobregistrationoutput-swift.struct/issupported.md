@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates support for the large binary object extension.
 

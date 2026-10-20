@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable title for the element. Presentational only; it should not be relied upon for accessibility.
 

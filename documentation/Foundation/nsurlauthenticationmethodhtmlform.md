@@ -1,7 +1,8 @@
 # NSURLAuthenticationMethodHTMLForm
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Use HTML form authentication for this protection space.
 
@@ -20,17 +21,22 @@ Use HTML form authentication for this protection space.
 let NSURLAuthenticationMethodHTMLForm: String
 ```
 
+```c
+extern NSString * const NSURLAuthenticationMethodHTMLForm;
+```
+
 #### Discussion
 
-The URL loading system never issues authentication challenges based on this authentication method. However, if your app authenticates by submitting a web form (or in some other protocol-neutral way), you can specify this protection space when you persist or look up credentials using the [`URLCredentialStorage`](urlcredentialstorage.md) class.
+The URL loading system never issues authentication challenges based on this authentication method. However, if your app authenticates by submitting a web form (or in some other protocol-neutral way), you can specify this protection space when you persist or look up credentials using the [`URLCredentialStorage`](./urlcredentialstorage.md) class.
 
 ## See Also
 
-- [let NSURLAuthenticationMethodDefault: String](nsurlauthenticationmethoddefault.md)
+### Task-specific authentication challenges
+- [let NSURLAuthenticationMethodDefault: String](./nsurlauthenticationmethoddefault.md)
   Use the default authentication method for a protocol.
-- [let NSURLAuthenticationMethodHTTPBasic: String](nsurlauthenticationmethodhttpbasic.md)
+- [let NSURLAuthenticationMethodHTTPBasic: String](./nsurlauthenticationmethodhttpbasic.md)
   Use HTTP basic authentication for this protection space.
-- [let NSURLAuthenticationMethodHTTPDigest: String](nsurlauthenticationmethodhttpdigest.md)
+- [let NSURLAuthenticationMethodHTTPDigest: String](./nsurlauthenticationmethodhttpdigest.md)
   Use HTTP digest authentication for this protection space.
 
 

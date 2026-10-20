@@ -1,17 +1,22 @@
 # init(device:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an autorelease IOBluetoothDevicePair object with a device as the pairing target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 convenience init!(device: IOBluetoothDevice!)
+```
+
+```objc
++ (instancetype) pairWithDevice:(IOBluetoothDevice *) device;
 ```
 
 #### Return Value

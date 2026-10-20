@@ -1,7 +1,8 @@
 # NSRollbackMergePolicy
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A merge policy that discards unsaved changes.
 
@@ -10,7 +11,7 @@ A merge policy that discards unsaved changes.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ A merge policy that discards unsaved changes.
 var NSRollbackMergePolicy: AnyObject
 ```
 
+```c
+extern id NSRollbackMergePolicy;
+```
+
 #### Discussion
 
 This policy merges conflicts between the persistent store’s version of the object and the current in-memory version by discarding unsaved changes.
 
 ## See Also
 
-- [var NSErrorMergePolicy: AnyObject](nserrormergepolicy.md)
+### Policies
+- [var NSErrorMergePolicy: AnyObject](./nserrormergepolicy.md)
   The default merge policy for all managed object contexts.
-- [var NSMergeByPropertyStoreTrumpMergePolicy: AnyObject](nsmergebypropertystoretrumpmergepolicy.md)
+- [var NSMergeByPropertyStoreTrumpMergePolicy: AnyObject](./nsmergebypropertystoretrumpmergepolicy.md)
   A property-based merge policy that applies external changes.
-- [var NSMergeByPropertyObjectTrumpMergePolicy: AnyObject](nsmergebypropertyobjecttrumpmergepolicy.md)
+- [var NSMergeByPropertyObjectTrumpMergePolicy: AnyObject](./nsmergebypropertyobjecttrumpmergepolicy.md)
   A property-based merge policy that applies in-memory changes.
-- [var NSOverwriteMergePolicy: AnyObject](nsoverwritemergepolicy.md)
+- [var NSOverwriteMergePolicy: AnyObject](./nsoverwritemergepolicy.md)
   A merge policy that overwrites the entire stored object.
-- [enum NSMergePolicyType](nsmergepolicytype.md)
+- [enum NSMergePolicyType](./nsmergepolicytype.md)
   Constants that define merge policy types.
 
 

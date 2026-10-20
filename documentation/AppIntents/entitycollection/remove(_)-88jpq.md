@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an entity’s identifier from the collection.
 
@@ -20,9 +21,13 @@ Removes an entity’s identifier from the collection.
 mutating func remove(_ entity: Entity)
 ```
 
+Available when `Entity` conforms to `AppEntity`.
+
 #### Discussion
 
-- Parameter: - entity: The entity containing the identifier to remove from the collection.
+- Parameter:
+
+  - entity: The entity containing the identifier to remove from the collection.
 
 
 ---

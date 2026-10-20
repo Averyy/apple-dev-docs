@@ -1,7 +1,8 @@
 # scriptErrorExpectedTypeDescriptor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets a descriptor for the expected type that will be put in the reply Apple event if the sender requested a reply, execution of the receiver completes, and an error number was set.
 
@@ -14,17 +15,22 @@ Sets a descriptor for the expected type that will be put in the reply Apple even
 var scriptErrorExpectedTypeDescriptor: NSAppleEventDescriptor? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSAppleEventDescriptor * scriptErrorExpectedTypeDescriptor;
+```
+
 ## Parameters
 
 - `errorExpectedTypeDescriptor`: A descriptor that specifies a type.
 
 ## See Also
 
-- [var scriptErrorNumber: Int](nsscriptcommand/scripterrornumber.md)
+### Handling script execution errors
+- [var scriptErrorNumber: Int](./scripterrornumber.md)
   Sets a script error number that is associated with the execution of the command and is returned in the reply Apple event, if a reply was requested by the sender.
-- [var scriptErrorOffendingObjectDescriptor: NSAppleEventDescriptor?](nsscriptcommand/scripterroroffendingobjectdescriptor.md)
+- [var scriptErrorOffendingObjectDescriptor: NSAppleEventDescriptor?](./scripterroroffendingobjectdescriptor.md)
   Sets a descriptor for an object that will be put in the reply Apple event if the sender requested a reply, execution of the receiver completes, and an error number was set.
-- [var scriptErrorString: String?](nsscriptcommand/scripterrorstring.md)
+- [var scriptErrorString: String?](./scripterrorstring.md)
   Sets a script error string that is associated with execution of the command.
 
 

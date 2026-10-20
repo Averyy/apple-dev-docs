@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The immediate ancestor view controller of the view controller.
 
@@ -14,15 +15,20 @@ The immediate ancestor view controller of the view controller.
 var parent: NSViewController? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSViewController * parentViewController;
+```
+
 #### Discussion
 
 The value of this property is `nil` if the view controller has no parent view controller, such as if the view controller is a window’s content view controller.
 
 ## See Also
 
-- [var presentedViewControllers: [NSViewController]?](nsviewcontroller/presentedviewcontrollers.md)
+### Getting Related View Controllers
+- [var presentedViewControllers: [NSViewController]?](./presentedviewcontrollers.md)
   The view controllers, if any, that are currently presented by the view controller.
-- [var presentingViewController: NSViewController?](nsviewcontroller/presentingviewcontroller.md)
+- [var presentingViewController: NSViewController?](./presentingviewcontroller.md)
   The view controller that presented the view controller or that presented its farthest ancestor view controller.
 
 

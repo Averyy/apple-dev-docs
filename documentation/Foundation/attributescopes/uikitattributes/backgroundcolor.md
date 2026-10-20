@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a background color attribute.
 
@@ -21,7 +22,8 @@ let backgroundColor: AttributeScopes.UIKitAttributes.BackgroundColorAttribute
 
 ## See Also
 
-- [let foregroundColor: AttributeScopes.UIKitAttributes.ForegroundColorAttribute](attributescopes/uikitattributes/foregroundcolor.md)
+### Using Color Attributes
+- [let foregroundColor: AttributeScopes.UIKitAttributes.ForegroundColorAttribute](./foregroundcolor.md)
   A property for accessing a foreground color attribute.
 
 

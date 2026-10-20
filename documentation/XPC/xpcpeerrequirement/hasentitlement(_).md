@@ -1,7 +1,8 @@
 # hasEntitlement(_:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a requirement that the peer has the specified entitlement
 

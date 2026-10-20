@@ -1,7 +1,8 @@
 # JSONDecoder.NonConformingFloatDecodingStrategy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The strategies for encoding nonconforming floating-point numbers, also known as IEEE 754 exceptional values.
 
@@ -22,25 +23,26 @@ enum NonConformingFloatDecodingStrategy
 
 #### Overview
 
-The IEEE 754 floating-point specification defines exceptional values, which include [`infinity`](https://developer.apple.com/documentation/swift/floatingpoint/infinity) and [`nan`](https://developer.apple.com/documentation/swift/floatingpoint/nan).
+The IEEE 754 floating-point specification defines exceptional values, which include [`infinity`](../../Swift/floatingpoint/infinity.md) and [`nan`](../../Swift/floatingpoint/nan.md).
 
 ## Topics
 
 ### Exceptional Values
-- [JSONDecoder.NonConformingFloatDecodingStrategy.convertFromString(positiveInfinity:negativeInfinity:nan:)](jsondecoder/nonconformingfloatdecodingstrategy-swift.enum/convertfromstring(positiveinfinity:negativeinfinity:nan:).md)
+- [JSONDecoder.NonConformingFloatDecodingStrategy.convertFromString(positiveInfinity:negativeInfinity:nan:)](./nonconformingfloatdecodingstrategy-swift.enum/convertfromstring%28positiveinfinity,negativeinfinity,nan%29.md)
   The strategy that decodes exceptional floating-point values from a specified string representation.
-- [JSONDecoder.NonConformingFloatDecodingStrategy.throw](jsondecoder/nonconformingfloatdecodingstrategy-swift.enum/throw.md)
+- [JSONDecoder.NonConformingFloatDecodingStrategy.throw](./nonconformingfloatdecodingstrategy-swift.enum/throw.md)
   The strategy that throws an error upon decoding an exceptional floating-point value.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var nonConformingFloatDecodingStrategy: JSONDecoder.NonConformingFloatDecodingStrategy](jsondecoder/nonconformingfloatdecodingstrategy-swift.property.md)
+### Decoding Exceptional Numbers
+- [var nonConformingFloatDecodingStrategy: JSONDecoder.NonConformingFloatDecodingStrategy](./nonconformingfloatdecodingstrategy-swift.property.md)
   The strategy used by a decoder when it encounters exceptional floating-point values.
 
 

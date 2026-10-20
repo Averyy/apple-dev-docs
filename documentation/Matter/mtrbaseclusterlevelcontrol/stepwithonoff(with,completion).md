@@ -1,7 +1,8 @@
 # stepWithOnOff(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stepWithOnOff(with params: MTRLevelControlClusterStepWithOnOffParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stepWithOnOff(with params: MTRLevelControlClusterStepWithOnOffParams) async throws
+```
+
+```objc
+- (void) stepWithOnOffWithParams:(MTRLevelControlClusterStepWithOnOffParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

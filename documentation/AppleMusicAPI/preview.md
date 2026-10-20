@@ -1,7 +1,8 @@
 # Preview
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents a preview for resources.
 
@@ -10,7 +11,7 @@ An object that represents a preview for resources.
 
 ## Declaration
 
-```swift
+```
 object Preview
 ```
 

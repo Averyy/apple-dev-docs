@@ -1,7 +1,8 @@
 # maximumLinearExposure
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum exposure to apply to a color when returned by the color well.
 
@@ -17,15 +18,20 @@ The maximum exposure to apply to a color when returned by the color well.
 var maximumLinearExposure: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat maximumLinearExposure;
+```
+
 ## See Also
 
-- [var title: String?](uicolorwell/title.md)
+### Configuring color picker attributes
+- [var title: String?](./title.md)
   The title for the color picker.
-- [var supportsAlpha: Bool](uicolorwell/supportsalpha.md)
+- [var supportsAlpha: Bool](./supportsalpha.md)
   A Boolean value that determines whether the color picker supports alpha values.
-- [var supportsEyedropper: Bool](uicolorwell/supportseyedropper.md)
+- [var supportsEyedropper: Bool](./supportseyedropper.md)
   If set to `NO` the eyedropper functionality is not supported for this color well.
-- [var selectedColor: UIColor?](uicolorwell/selectedcolor.md)
+- [var selectedColor: UIColor?](./selectedcolor.md)
   The selected color in the color picker.
 
 

@@ -1,14 +1,15 @@
 # mig_symtab_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct mig_symtab {
     ...
 } mig_symtab_t;
@@ -17,9 +18,9 @@ typedef struct mig_symtab {
 ## Topics
 
 ### Instance Properties
-- [ms_routine](mig_symtab_t/1558638-ms_routine.md)
-- [ms_routine_name](mig_symtab_t/1558656-ms_routine_name.md)
-- [ms_routine_number](mig_symtab_t/1558653-ms_routine_number.md)
+- [ms_routine](./mig_symtab_t/api-1558638-ms_routine.md)
+- [ms_routine_name](./mig_symtab_t/api-1558656-ms_routine_name.md)
+- [ms_routine_number](./mig_symtab_t/api-1558653-ms_routine_number.md)
 
 
 ---

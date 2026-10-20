@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.poland
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Poland in the HID specification.
 

@@ -1,7 +1,8 @@
 # section(for:collationStringSelector:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an integer identifying the section in which a model object belongs.
 
@@ -9,13 +10,17 @@ Returns an integer identifying the section in which a model object belongs.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func section(for object: Any, collationStringSelector selector: Selector) -> Int
+```
+
+```objc
+- (NSInteger) sectionForObject:(id) object collationStringSelector:(SEL) selector;
 ```
 
 #### Return Value
@@ -29,11 +34,12 @@ The table-view controller should iterate through all model objects for the table
 ## Parameters
 
 - `object`: A model object of the application that is part of the data model for the table view.
-- `selector`: The selector of a method of `object` that returns the string to use for sorting. The method represented by the selection must take no arguments and return an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object. For example, you might specify the selector for a `name` property of the object.
+- `selector`: The selector of a method of `object` that returns the string to use for sorting. The method represented by the selection must take no arguments and return an [`NSString`](../../Foundation/nsstring.md) object. For example, you might specify the selector for a `name` property of the object.
 
 ## See Also
 
-- [func sortedArray(from: [Any], collationStringSelector: Selector) -> [Any]](uilocalizedindexedcollation/sortedarray(from:collationstringselector:).md)
+### Preparing the sections and section indexes
+- [func sortedArray(from: [Any], collationStringSelector: Selector) -> [Any]](./sortedarray%28from,collationstringselector%29.md)
   Sorts the objects within a section by their localized titles.
 
 

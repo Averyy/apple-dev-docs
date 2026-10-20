@@ -1,7 +1,8 @@
 # keyAEDesiredClass
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -17,7 +18,7 @@ var keyAEDesiredClass: Int { get }
 
 A four-character code that identifies the object class of the specified object or objects.
 
-Constants for object class IDs are described in [`Key Form and Descriptor Type Object Specifier Constants`](apple_events/1572731-key_form_and_descriptor_type_obj.md).
+Constants for object class IDs are described in [Key Form and Descriptor Type Object Specifier Constants](./apple_events/api-1572731-key_form_and_descriptor_type_obj.md).
 
 
 ---

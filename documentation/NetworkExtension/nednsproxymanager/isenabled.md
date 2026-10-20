@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of a DNS proxy.
 
@@ -18,15 +19,20 @@ The status of a DNS proxy.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-Only one DNS proxy can be active in the system at a time. Therefore, setting this property to [`true`](https://developer.apple.com/documentation/swift/true) disables any DNS proxy configurations of other apps. Similarly, the system sets this property to [`false`](https://developer.apple.com/documentation/swift/false) when any other DNS proxy configuration is enabled.
+Only one DNS proxy can be active in the system at a time. Therefore, setting this property to [`true`](../../Swift/true.md) disables any DNS proxy configurations of other apps. Similarly, the system sets this property to [`false`](../../Swift/false.md) when any other DNS proxy configuration is enabled.
 
 ## See Also
 
-- [var providerProtocol: NEDNSProxyProviderProtocol?](nednsproxymanager/providerprotocol.md)
+### Accessing DNS proxy configuration properties
+- [var providerProtocol: NEDNSProxyProviderProtocol?](./providerprotocol.md)
   The provider-specific portion of the DNS proxy configuration.
-- [var localizedDescription: String?](nednsproxymanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A description of the DNS proxy.
 
 

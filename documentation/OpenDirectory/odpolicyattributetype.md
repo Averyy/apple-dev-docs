@@ -1,11 +1,12 @@
 # ODPolicyAttributeType
 
 **Framework**: Open Directory  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,14 +14,19 @@
 typealias ODPolicyAttributeType = NSString
 ```
 
+```c
+typedef NSString * ODPolicyAttributeType;
+```
+
 ## See Also
 
-- [typealias ODPolicyCategoryType](odpolicycategorytype.md)
-- [typealias ODPolicyKeyType](odpolicykeytype.md)
-- [typealias ODPolicyType](odpolicytype.md)
-- [typealias ODErrorUserInfoKeyType](oderroruserinfokeytype.md)
-- [struct ODFrameworkErrors](odframeworkerrors.md)
-- [typealias ODOptionKeyType](odoptionkeytype.md)
+### Data Types
+- [typealias ODPolicyCategoryType](./odpolicycategorytype.md)
+- [typealias ODPolicyKeyType](./odpolicykeytype.md)
+- [typealias ODPolicyType](./odpolicytype.md)
+- [typealias ODErrorUserInfoKeyType](./oderroruserinfokeytype.md)
+- [struct ODFrameworkErrors](./odframeworkerrors.md)
+- [typealias ODOptionKeyType](./odoptionkeytype.md)
 
 
 ---

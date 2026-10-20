@@ -1,7 +1,8 @@
 # isMono
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var isMono: Bool { get set }
+```
+
+```objc
+@property (atomic, readwrite, getter=isMono) BOOL mono;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # WeatherAlert.WeatherAlertData
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The weather alert information.
 
@@ -10,14 +11,14 @@ The weather alert information.
 
 ## Declaration
 
-```swift
+```
 object WeatherAlert.WeatherAlertData
 ```
 
 ## Topics
 
 ### Getting the Weather Alert Area
-- [object WeatherAlert.WeatherAlertData.Area](weatheralert/weatheralertdata/area-data.dictionary.md)
+- [object WeatherAlert.WeatherAlertData.Area](./weatheralertdata/area-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,7 @@ object WeatherAlert.WeatherAlertData
 ## Relationships
 
 ### Inherited By
-- [WeatherAlert](weatheralert.md)
+- [WeatherAlert](../weatheralert.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # stop
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that an activity stopped.
 
@@ -28,7 +29,8 @@ Only plays feedback on watchOS.
 
 ## See Also
 
-- [static let start: SensoryFeedback](sensoryfeedback/start.md)
+### Indicating start and stop
+- [static let start: SensoryFeedback](./start.md)
   Indicates that an activity started.
 
 

@@ -1,7 +1,8 @@
 # kCTFontManagerErrorDomain
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 3.2+
@@ -18,27 +19,32 @@
 let kCTFontManagerErrorDomain: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontManagerErrorDomain;
+```
+
 #### Discussion
 
-CFError objects with this domain have error codes corresponding to one of the `CTFontManagerError` errors listed in `Font Registration Errors` and [`CTFontManagerError`](ctfontmanagererror.md).
+CFError objects with this domain have error codes corresponding to one of the `CTFontManagerError` errors listed in `Font Registration Errors` and [`CTFontManagerError`](./ctfontmanagererror.md).
 
 ## See Also
 
-- [var ATSFONTREF_DEFINED: Int32](atsfontref_defined.md)
-- [var kBSLNIdeographicHighBaseline: Int](kbslnideographichighbaseline.md)
-- [let kCTAdaptiveImageProviderAttributeName: CFString](kctadaptiveimageproviderattributename.md)
-- [let kCTBackgroundColorAttributeName: CFString](kctbackgroundcolorattributename.md)
-- [let kCTBaselineClassAttributeName: CFString](kctbaselineclassattributename.md)
-- [let kCTBaselineClassHanging: CFString](kctbaselineclasshanging.md)
-- [let kCTBaselineClassIdeographicCentered: CFString](kctbaselineclassideographiccentered.md)
-- [let kCTBaselineClassIdeographicHigh: CFString](kctbaselineclassideographichigh.md)
-- [let kCTBaselineClassIdeographicLow: CFString](kctbaselineclassideographiclow.md)
-- [let kCTBaselineClassMath: CFString](kctbaselineclassmath.md)
-- [let kCTBaselineClassRoman: CFString](kctbaselineclassroman.md)
-- [let kCTBaselineInfoAttributeName: CFString](kctbaselineinfoattributename.md)
-- [let kCTBaselineOriginalFont: CFString](kctbaselineoriginalfont.md)
-- [let kCTBaselineReferenceFont: CFString](kctbaselinereferencefont.md)
-- [let kCTBaselineReferenceInfoAttributeName: CFString](kctbaselinereferenceinfoattributename.md)
+### Constants
+- [var ATSFONTREF_DEFINED: Int32](./atsfontref_defined.md)
+- [var kBSLNIdeographicHighBaseline: Int](./kbslnideographichighbaseline.md)
+- [let kCTAdaptiveImageProviderAttributeName: CFString](./kctadaptiveimageproviderattributename.md)
+- [let kCTBackgroundColorAttributeName: CFString](./kctbackgroundcolorattributename.md)
+- [let kCTBaselineClassAttributeName: CFString](./kctbaselineclassattributename.md)
+- [let kCTBaselineClassHanging: CFString](./kctbaselineclasshanging.md)
+- [let kCTBaselineClassIdeographicCentered: CFString](./kctbaselineclassideographiccentered.md)
+- [let kCTBaselineClassIdeographicHigh: CFString](./kctbaselineclassideographichigh.md)
+- [let kCTBaselineClassIdeographicLow: CFString](./kctbaselineclassideographiclow.md)
+- [let kCTBaselineClassMath: CFString](./kctbaselineclassmath.md)
+- [let kCTBaselineClassRoman: CFString](./kctbaselineclassroman.md)
+- [let kCTBaselineInfoAttributeName: CFString](./kctbaselineinfoattributename.md)
+- [let kCTBaselineOriginalFont: CFString](./kctbaselineoriginalfont.md)
+- [let kCTBaselineReferenceFont: CFString](./kctbaselinereferencefont.md)
+- [let kCTBaselineReferenceInfoAttributeName: CFString](./kctbaselinereferenceinfoattributename.md)
 
 
 ---

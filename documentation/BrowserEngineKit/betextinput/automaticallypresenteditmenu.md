@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Controls whether the edit menu is allowed to be presented or should be suppressed.
@@ -16,6 +17,10 @@ Controls whether the edit menu is allowed to be presented or should be suppresse
 
 ```swift
 var automaticallyPresentEditMenu: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL automaticallyPresentEditMenu;
 ```
 
 

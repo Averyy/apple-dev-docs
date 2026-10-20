@@ -1,7 +1,8 @@
 # contentUpdates
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence you use to observe changes to the dynamic content of a Live Activity.
 
@@ -17,11 +18,12 @@ var contentUpdates: Activity<Attributes>.ContentUpdates { get }
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
 ## See Also
 
-- [Activity.ContentUpdates](activity/contentupdates-swift.struct.md)
+### Observing Live Activity content changes
+- [Activity.ContentUpdates](./contentupdates-swift.struct.md)
   A structure that offers functionality to observe changes to the dynamic content of a Live Activity.
 
 

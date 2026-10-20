@@ -1,7 +1,8 @@
 # time
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp of the metadata item.
 
@@ -20,11 +21,16 @@ The timestamp of the metadata item.
 var time: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime time;
+```
+
 ## See Also
 
-- [var startDate: Date?](avmetadataitem/startdate.md)
+### Accessing timing
+- [var startDate: Date?](./startdate.md)
   The start date of the timed metadata.
-- [var duration: CMTime](avmetadataitem/duration.md)
+- [var duration: CMTime](./duration.md)
   The duration of the metadata item.
 
 

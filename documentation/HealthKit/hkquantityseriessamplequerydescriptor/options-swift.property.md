@@ -1,16 +1,17 @@
 # options
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A set of options for the query. For a list of possible values, see [`HKQuantitySeriesSampleQueryDescriptor.Options`](hkquantityseriessamplequerydescriptor/options-swift.struct.md).
+A set of options for the query. For a list of possible values, see [`HKQuantitySeriesSampleQueryDescriptor.Options`](./options-swift.struct.md).
 
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,7 +22,8 @@ var options: HKQuantitySeriesSampleQueryDescriptor.Options
 
 ## See Also
 
-- [var predicate: HKSamplePredicate<HKQuantitySample>](hkquantityseriessamplequerydescriptor/predicate.md)
+### Accessing Query Properties
+- [var predicate: HKSamplePredicate<HKQuantitySample>](./predicate.md)
   A predicate that defines the set of series samples that the query returns.
 
 

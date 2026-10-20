@@ -1,7 +1,8 @@
 # nativeScale
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The native scale factor for the physical screen.
 
@@ -9,7 +10,7 @@ The native scale factor for the physical screen.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ The native scale factor for the physical screen.
 var nativeScale: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat nativeScale;
+```
+
 ## See Also
 
-- [var bounds: CGRect](uiscreen/bounds.md)
+### Getting the size and scale
+- [var bounds: CGRect](./bounds.md)
   The bounding rectangle of the screen, measured in points.
-- [var nativeBounds: CGRect](uiscreen/nativebounds.md)
+- [var nativeBounds: CGRect](./nativebounds.md)
   The bounding rectangle of the physical screen, measured in pixels.
-- [var scale: CGFloat](uiscreen/scale.md)
+- [var scale: CGFloat](./scale.md)
   The natural scale factor associated with the screen.
 
 

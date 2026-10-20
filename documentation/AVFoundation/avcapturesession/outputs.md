@@ -1,7 +1,8 @@
 # outputs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output destinations to which a captures session sends its data.
 
@@ -19,17 +20,22 @@ The output destinations to which a captures session sends its data.
 var outputs: [AVCaptureOutput] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<__kindof AVCaptureOutput *> * outputs;
+```
+
 #### Discussion
 
-You add new outputs to a capture session by calling its [`addOutput(_:)`](avcapturesession/addoutput(_:).md) method.
+You add new outputs to a capture session by calling its [`addOutput(_:)`](./addoutput%28_%29.md) method.
 
 ## See Also
 
-- [func canAddOutput(AVCaptureOutput) -> Bool](avcapturesession/canaddoutput(_:).md)
+### Configuring outputs
+- [func canAddOutput(AVCaptureOutput) -> Bool](./canaddoutput%28_%29.md)
   Determines whether you can add an output to a session.
-- [func addOutput(AVCaptureOutput)](avcapturesession/addoutput(_:).md)
+- [func addOutput(AVCaptureOutput)](./addoutput%28_%29.md)
   Adds an output to the capture session.
-- [func removeOutput(AVCaptureOutput)](avcapturesession/removeoutput(_:).md)
+- [func removeOutput(AVCaptureOutput)](./removeoutput%28_%29.md)
   Removes an output from a capture session.
 
 

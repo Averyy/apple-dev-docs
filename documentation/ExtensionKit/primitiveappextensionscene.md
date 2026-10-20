@@ -1,7 +1,8 @@
 # PrimitiveAppExtensionScene
 
 **Framework**: ExtensionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type you use to deliver the contents of your app-extension-based UI.
 
@@ -23,43 +24,44 @@ A type you use to deliver the contents of your app-extension-based UI.
 
 ## Mentions
 
-- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+- [Including extension-based UI in your interface](./including-extension-based-ui-in-your-interface.md)
 
 #### Overview
 
-When defining an [`AppExtensionScene`](appextensionscene.md) type, provide a `PrimitiveAppExtensionScene` structure as the body of that type. This type facilitates the delivery of the scene’s UI views back to the host app for incorporation into the host view controller. When constructing this type, specify one of the defined scene identifiers that the host app supports.
+When defining an [`AppExtensionScene`](./appextensionscene.md) type, provide a `PrimitiveAppExtensionScene` structure as the body of that type. This type facilitates the delivery of the scene’s UI views back to the host app for incorporation into the host view controller. When constructing this type, specify one of the defined scene identifiers that the host app supports.
 
-For more information about creating scenes for your app extension, see [`Including extension-based UI in your interface`](including-extension-based-ui-in-your-interface.md).
+For more information about creating scenes for your app extension, see [Including extension-based UI in your interface](./including-extension-based-ui-in-your-interface.md).
 
 ## Topics
 
 ### Creating a primitive extension scene
-- [init<Content>(id: String, content: () -> Content, onConnection: (NSXPCConnection) -> Bool)](primitiveappextensionscene/init(id:content:onconnection:).md)
+- [init<Content>(id: String, content: () -> Content, onConnection: (NSXPCConnection) -> Bool)](./primitiveappextensionscene/init%28id,content,onconnection%29.md)
   Initializes the primitive app extension scene with the specified ID and closure for the content.
 ### Defining the scene contents
-- [var body: Never](primitiveappextensionscene/body.md)
+- [var body: Never](./primitiveappextensionscene/body.md)
   The scene’s user interface.
 ### Describing the scene
-- [var debugDescription: String](primitiveappextensionscene/debugdescription.md)
+- [var debugDescription: String](./primitiveappextensionscene/debugdescription.md)
   A string that provides information about the scene.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](primitiveappextensionscene/customdebugstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./primitiveappextensionscene/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AppExtensionScene](appextensionscene.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionScene](./appextensionscene.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AppExtensionScene](appextensionscene.md)
+### UI definition
+- [protocol AppExtensionScene](./appextensionscene.md)
   An interface you use to provide a specific scene from your app extension’s UI.
-- [struct AppExtensionSceneBuilder](appextensionscenebuilder.md)
+- [struct AppExtensionSceneBuilder](./appextensionscenebuilder.md)
   A custom parameter attribute that constructs extension scenes from closures.
 
 

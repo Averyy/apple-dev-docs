@@ -1,18 +1,19 @@
 # CGPDFDataFormat.raw
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data stream is not encoded.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The data stream is not encoded.
 case raw
 ```
 
+```c
+CGPDFDataFormatRaw
+```
+
 ## See Also
 
-- [CGPDFDataFormat.jpegEncoded](cgpdfdataformat/jpegencoded.md)
+### Constants
+- [CGPDFDataFormat.jpegEncoded](./jpegencoded.md)
   The data stream is encoded in JPEG format.
-- [CGPDFDataFormat.JPEG2000](cgpdfdataformat/jpeg2000.md)
+- [CGPDFDataFormat.JPEG2000](./jpeg2000.md)
   The data stream is encoded in JPEG-2000 format.
 
 

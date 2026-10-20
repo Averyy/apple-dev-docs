@@ -1,7 +1,8 @@
 # TupleSliderTickContent.TicksCollection
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 26.0+

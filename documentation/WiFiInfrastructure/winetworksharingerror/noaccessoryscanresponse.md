@@ -1,7 +1,8 @@
 # WINetworkSharingError.noAccessoryScanResponse
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the accessory didn’t send a scan response.
 
@@ -18,15 +19,16 @@ case noAccessoryScanResponse
 
 ## See Also
 
-- [WINetworkSharingError.accessoryNotConfigured](winetworksharingerror/accessorynotconfigured.md)
+### Checking for accessory issues
+- [WINetworkSharingError.accessoryNotConfigured](./accessorynotconfigured.md)
   Indicates the person hasn’t configured the accessory on this system.
-- [WINetworkSharingError.accessoryNotAuthorized](winetworksharingerror/accessorynotauthorized.md)
+- [WINetworkSharingError.accessoryNotAuthorized](./accessorynotauthorized.md)
   Indicates the person didn’t grant the accessory authorization to access network information.
-- [WINetworkSharingError.accessoryNotConnected](winetworksharingerror/accessorynotconnected.md)
+- [WINetworkSharingError.accessoryNotConnected](./accessorynotconnected.md)
   Indicates the accessory isn’t connected to the host.
-- [WINetworkSharingError.accessoryTransportNotSecured](winetworksharingerror/accessorytransportnotsecured.md)
+- [WINetworkSharingError.accessoryTransportNotSecured](./accessorytransportnotsecured.md)
   Indicates the accessory doesn’t use the required transport security, such as Bluetooth Secure Connections.
-- [WINetworkSharingError.noMatchingAccessoryScanRequest](winetworksharingerror/nomatchingaccessoryscanrequest.md)
+- [WINetworkSharingError.noMatchingAccessoryScanRequest](./nomatchingaccessoryscanrequest.md)
   Indicates the system found no matching scan request pending for the accessory.
 
 

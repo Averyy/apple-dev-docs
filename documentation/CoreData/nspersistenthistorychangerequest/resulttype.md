@@ -1,7 +1,8 @@
 # resultType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of result that this request returns.
 
@@ -20,13 +21,18 @@ The type of result that this request returns.
 var resultType: NSPersistentHistoryResultType { get set }
 ```
 
+```objc
+@property NSPersistentHistoryResultType resultType;
+```
+
 #### Discussion
 
-This value defaults to [`NSPersistentHistoryResultType.transactionsAndChanges`](nspersistenthistoryresulttype/transactionsandchanges.md).
+This value defaults to [`NSPersistentHistoryResultType.transactionsAndChanges`](../nspersistenthistoryresulttype/transactionsandchanges.md).
 
 ## See Also
 
-- [var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](nspersistenthistorychangerequest/fetchrequest.md)
+### Configuring the Request
+- [var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](./fetchrequest.md)
   The specified fetch request, when retrieving history.
 
 

@@ -1,9 +1,10 @@
 # takeMaterialUpdate(id:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Consumes and returns the [`USDPlayer.MaterialData.Update`](usdplayer/materialdata/update.md) for the given material delta update.
+Consumes and returns the [`USDPlayer.MaterialData.Update`](../materialdata/update.md) for the given material delta update.
 
 **Availability**:
 - iOS 27.0+

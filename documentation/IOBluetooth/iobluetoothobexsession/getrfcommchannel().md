@@ -1,17 +1,22 @@
 # getRFCOMMChannel()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the Bluetooth RFCOMM channel being used by the session object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getRFCOMMChannel() -> IOBluetoothRFCOMMChannel!
+```
+
+```objc
+- (IOBluetoothRFCOMMChannel *) getRFCOMMChannel;
 ```
 
 #### Return Value

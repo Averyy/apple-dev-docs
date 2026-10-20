@@ -1,7 +1,8 @@
 # Checksums.File
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A per-file checksum used to verify the integrity of an individual background asset upload file.
 
@@ -10,7 +11,7 @@ A per-file checksum used to verify the integrity of an individual background ass
 
 ## Declaration
 
-```swift
+```
 object Checksums.File
 ```
 
@@ -21,7 +22,8 @@ object Checksums.File
 
 ## See Also
 
-- [object Checksums.Composite](checksums/composite-data.dictionary.md)
+### Dictionaries
+- [object Checksums.Composite](./composite-data.dictionary.md)
   A composite checksum covering the entirety of a background asset upload file.
 
 

@@ -1,7 +1,8 @@
 # Query Location Groups
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a paginated list of location groups using filters and sorting.
 
@@ -12,11 +13,11 @@ Retrieve a paginated list of location groups using filters and sorting.
 
 This endpoint returns a paginated list of location groups accessible to the authenticated ad account. An empty request body returns all non-deleted groups with default pagination applied.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 #### Request Body
 
-See [`QueryRequest`](queryrequest.md).
+See [`QueryRequest`](./queryrequest.md).
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -48,7 +49,7 @@ The system excludes soft-deleted groups from results by default. To include them
 
 ##### Sorting and Pagination
 
-You can sort results by any filterable field using the `sorting` array; see [`QuerySort`](querysort.md) ([`QuerySortOrder`](querysortorder.md)) and [`QueryPagination`](querypagination.md) for the request shape. The response includes a `pagination` object with `totalCount`, `offset`, and `pageSize`. Page through large result sets by incrementing `offset`.
+You can sort results by any filterable field using the `sorting` array; see [`QuerySort`](./querysort.md) ([`QuerySortOrder`](./querysortorder.md)) and [`QueryPagination`](./querypagination.md) for the request shape. The response includes a `pagination` object with `totalCount`, `offset`, and `pageSize`. Page through large result sets by incrementing `offset`.
 
 #### Payload Examples
 
@@ -154,17 +155,34 @@ Returns only `DYNAMIC` location groups.
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`LocationGroupQueryResponse`, `application/json`)
+- `400` Bad Request (`LocationGroupQueryResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Create Location Group](create-location-group.md)
+- [Create Location Group](./create-location-group.md)
   Create a named group of locations for geographic targeting.
-- [Get Location Group](get-location-group-by-id.md)
+- [Get Location Group](./get-location-group-by-id.md)
   Retrieve a single location group by its unique identifier.
-- [Update Location Group](update-location-group.md)
+- [Update Location Group](./update-location-group.md)
   Update an existing location group’s name, rules, or location membership.
-- [Delete Location Group](delete-location-group.md)
+- [Delete Location Group](./delete-location-group.md)
   Delete a location group by its unique identifier.
 
 

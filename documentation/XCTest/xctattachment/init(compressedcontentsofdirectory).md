@@ -1,12 +1,17 @@
 # init(compressedContentsOfDirectory:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 ## Declaration
 
 ```swift
 convenience init(compressedContentsOfDirectory url: URL)
+```
+
+```objc
++ (instancetype) attachmentWithCompressedContentsOfDirectoryAtURL:(NSURL *) url;
 ```
 
 #### Discussion

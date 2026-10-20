@@ -1,7 +1,8 @@
 # LayerRenderer.State.invalidated
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the layer no longer supports drawing operations.
 
@@ -15,9 +16,13 @@ A state that indicates the layer no longer supports drawing operations.
 case invalidated
 ```
 
+```c
+cp_layer_renderer_state_invalidated
+```
+
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
 #### Discussion
 
@@ -25,9 +30,10 @@ A layer enters this state shortly before the system releases its resources. When
 
 ## See Also
 
-- [LayerRenderer.State.paused](layerrenderer/state-swift.enum/paused.md)
+### Getting the states
+- [LayerRenderer.State.paused](./paused.md)
   A state that indicates the layer is paused and not currently drawing.
-- [LayerRenderer.State.running](layerrenderer/state-swift.enum/running.md)
+- [LayerRenderer.State.running](./running.md)
   A state that indicates the layer is visible and ready for you to draw your content.
 
 

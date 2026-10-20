@@ -1,7 +1,8 @@
 # availableMetadataFormats
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata formats that contain metadata associated with the option.
 
@@ -20,15 +21,20 @@ The metadata formats that contain metadata associated with the option.
 var availableMetadataFormats: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * availableMetadataFormats;
+```
+
 #### Discussion
 
 The array contains `NSString` objects, each representing a metadata format that contains metadata associated with the option (for example, ID3, iTunes metadata, and so on).
 
 ## See Also
 
-- [var commonMetadata: [AVMetadataItem]](avmediaselectionoption/commonmetadata.md)
+### Managing metadata
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   An array of metadata items for each common metadata key for which a value is available.
-- [func metadata(forFormat: String) -> [AVMetadataItem]](avmediaselectionoption/metadata(forformat:).md)
+- [func metadata(forFormat: String) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns an array of metadata items—one for each metadata item in the container of a given format.
 
 

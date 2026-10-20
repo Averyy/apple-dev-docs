@@ -1,7 +1,8 @@
 # sortBy
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort descriptors used to order the results.
 
@@ -22,20 +23,21 @@ final var sortBy: [SortDescriptor<Element>] { get set }
 
 #### Discussion
 
-Setting this property updates the underlying [`fetchDescriptor`](resultsobserver/fetchdescriptor.md)‘s sort descriptors and immediately refetches on the calling actor. When sectioning is active, the section’s sort descriptor is automatically re-prepended if not already the first descriptor. A `SortDescriptor` by `persistentModelID` is appended automatically if not already present to ensure stable ordering for difference computation.
+Setting this property updates the underlying [`fetchDescriptor`](./fetchdescriptor.md)‘s sort descriptors and immediately refetches on the calling actor. When sectioning is active, the section’s sort descriptor is automatically re-prepended if not already the first descriptor. A `SortDescriptor` by `persistentModelID` is appended automatically if not already present to ensure stable ordering for difference computation.
 
 ## See Also
 
-- [var fetchDescriptor: FetchDescriptor<Element>](resultsobserver/fetchdescriptor.md)
+### Accessing observer properties
+- [var fetchDescriptor: FetchDescriptor<Element>](./fetchdescriptor.md)
   The fetch descriptor used to query the model context.
-- [var filterBy: Predicate<Element>?](resultsobserver/filterby.md)
+- [var filterBy: Predicate<Element>?](./filterby.md)
   The predicate used to filter which models are included in the results.
-- [let modelContext: ModelContext](resultsobserver/modelcontext.md)
+- [let modelContext: ModelContext](./modelcontext.md)
   The model context from which models are fetched.
-- [var sectionBy: PartialKeyPath<Element>?](resultsobserver/sectionby.md)
+- [var sectionBy: PartialKeyPath<Element>?](./sectionby.md)
   The key path on the element used to determine section grouping.
-- [var sections: SectionedResults<Element, SectionTitle>?](resultsobserver/sections.md)
-  The sections computed from the current results, grouped by [`sectionBy`](resultsobserver/sectionby.md).
+- [var sections: SectionedResults<Element, SectionTitle>?](./sections.md)
+  The sections computed from the current results, grouped by [`sectionBy`](./sectionby.md).
 
 
 ---

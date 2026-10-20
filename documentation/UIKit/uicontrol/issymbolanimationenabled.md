@@ -1,7 +1,8 @@
 # isSymbolAnimationEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether symbol effects animate.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether symbol effects animate.
 
 ```swift
 var isSymbolAnimationEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isSymbolAnimationEnabled) BOOL symbolAnimationEnabled;
 ```
 
 

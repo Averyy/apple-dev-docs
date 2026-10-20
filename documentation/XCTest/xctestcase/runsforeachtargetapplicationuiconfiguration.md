@@ -1,7 +1,8 @@
 # runsForEachTargetApplicationUIConfiguration
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether your UI tests run once for each possible combination of orientation, localization, and other appearance settings your app supports.
 
@@ -9,6 +10,10 @@ A Boolean value that indicates whether your UI tests run once for each possible 
 
 ```swift
 class var runsForEachTargetApplicationUIConfiguration: Bool { get }
+```
+
+```objc
+@property (class, readonly) BOOL runsForEachTargetApplicationUIConfiguration;
 ```
 
 #### Discussion
@@ -19,13 +24,14 @@ The default is `false`. Override this method to return `true` in your UI test ca
 - Orientation (for example, portrait or landscape)
 - Localization (for example, `en_US` or `zh_CN`)
 
-The test system calculates a set of configurations that encompasses all the possible combinations of those supported settings, and provides each configuration to an iteration of your tests when you call [`launch()`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/launch()) on [`XCUIApplication`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication).
+The test system calculates a set of configurations that encompasses all the possible combinations of those supported settings, and provides each configuration to an iteration of your tests when you call [`launch()`](../../XCUIAutomation/xcuiapplication/launch%28%29.md) on [`XCUIApplication`](../../XCUIAutomation/xcuiapplication.md).
 
 ## See Also
 
-- [var continueAfterFailure: Bool](xctestcase/continueafterfailure.md)
+### Managing Test Case Execution
+- [var continueAfterFailure: Bool](./continueafterfailure.md)
   A Boolean value that indicates whether a test method should continue running after a failure occurs.
-- [var executionTimeAllowance: TimeInterval](xctestcase/executiontimeallowance.md)
+- [var executionTimeAllowance: TimeInterval](./executiontimeallowance.md)
   The number of seconds, rounded up to the nearest minute, for a test to run before it fails with a timeout error.
 
 

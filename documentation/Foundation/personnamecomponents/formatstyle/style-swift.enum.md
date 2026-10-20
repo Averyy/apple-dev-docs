@@ -1,7 +1,8 @@
 # PersonNameComponents.FormatStyle.Style
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type that represents the style of the formatted result.
 
@@ -22,42 +23,43 @@ enum Style
 
 #### Overview
 
-The style type describes a length of the string representation of the name. The available values are [`PersonNameComponents.FormatStyle.Style.long`](personnamecomponents/formatstyle/style-swift.enum/long.md), [`PersonNameComponents.FormatStyle.Style.medium`](personnamecomponents/formatstyle/style-swift.enum/medium.md), [`PersonNameComponents.FormatStyle.Style.short`](personnamecomponents/formatstyle/style-swift.enum/short.md), and [`PersonNameComponents.FormatStyle.Style.abbreviated`](personnamecomponents/formatstyle/style-swift.enum/abbreviated.md).
+The style type describes a length of the string representation of the name. The available values are [`PersonNameComponents.FormatStyle.Style.long`](./style-swift.enum/long.md), [`PersonNameComponents.FormatStyle.Style.medium`](./style-swift.enum/medium.md), [`PersonNameComponents.FormatStyle.Style.short`](./style-swift.enum/short.md), and [`PersonNameComponents.FormatStyle.Style.abbreviated`](./style-swift.enum/abbreviated.md).
 
 ## Topics
 
 ### Enumeration Cases
-- [PersonNameComponents.FormatStyle.Style.abbreviated](personnamecomponents/formatstyle/style-swift.enum/abbreviated.md)
+- [PersonNameComponents.FormatStyle.Style.abbreviated](./style-swift.enum/abbreviated.md)
   Specifies an abbreviated person name components style.
-- [PersonNameComponents.FormatStyle.Style.long](personnamecomponents/formatstyle/style-swift.enum/long.md)
+- [PersonNameComponents.FormatStyle.Style.long](./style-swift.enum/long.md)
   Specifies a long person name components style.
-- [PersonNameComponents.FormatStyle.Style.medium](personnamecomponents/formatstyle/style-swift.enum/medium.md)
+- [PersonNameComponents.FormatStyle.Style.medium](./style-swift.enum/medium.md)
   Specifies a medium person name components style.
-- [PersonNameComponents.FormatStyle.Style.short](personnamecomponents/formatstyle/style-swift.enum/short.md)
+- [PersonNameComponents.FormatStyle.Style.short](./style-swift.enum/short.md)
   Specifies a short person name components style.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var style: PersonNameComponents.FormatStyle.Style](personnamecomponents/formatstyle/style-swift.property.md)
+### Modifying a Format Style
+- [var style: PersonNameComponents.FormatStyle.Style](./style-swift.property.md)
   Specifies the style of the formatted result.
-- [var locale: Locale](personnamecomponents/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting the person name components.
-- [var attributed: PersonNameComponents.AttributedStyle](personnamecomponents/formatstyle/attributed.md)
+- [var attributed: PersonNameComponents.AttributedStyle](./attributed.md)
   The style used to create a locale-aware attributed string representation of an instance of person name components.
-- [func locale(Locale) -> PersonNameComponents.FormatStyle](personnamecomponents/formatstyle/locale(_:).md)
+- [func locale(Locale) -> PersonNameComponents.FormatStyle](./locale%28_%29.md)
   Modifies the person name components format style to use the specified locale.
 
 

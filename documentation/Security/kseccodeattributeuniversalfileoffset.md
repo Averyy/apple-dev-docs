@@ -1,7 +1,8 @@
 # kSecCodeAttributeUniversalFileOffset
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the offset of a Mach-O specific slice of a universal Mach-O file.
 
@@ -13,6 +14,10 @@ A key whose value indicates the offset of a Mach-O specific slice of a universal
 
 ```swift
 let kSecCodeAttributeUniversalFileOffset: CFString
+```
+
+```c
+extern CFStringRef const kSecCodeAttributeUniversalFileOffset;
 ```
 
 

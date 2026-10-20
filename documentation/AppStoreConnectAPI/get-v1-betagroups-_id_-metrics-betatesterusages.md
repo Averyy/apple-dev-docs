@@ -1,7 +1,8 @@
 # Read Metrics for Beta Testers in a Beta Group
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get beta tester usage metrics for a beta group.
 
@@ -14,7 +15,7 @@ Get beta tester usage metrics for a beta group.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/betaGroups/db51edb0-a8a4-4be9-8481-09dff260ea6e/metrics/betaTesterUsages?groupBy=betaTesters&filter%5BbetaTesters%5D=1aa1fe09-bb5c-47dd-a067-a6066db1d32
 ```
 
@@ -69,26 +70,44 @@ https://api.appstoreconnect.apple.com/v1/betaGroups/db51edb0-a8a4-4be9-8481-09df
 
 ## Parameters
 
-- `filter[betaTesters]` (string): An opaque resource ID that uniquely identifies the resource. Obtain the `betaTesters` resource ID from the [`List beta testers`](get-v1-betatesters.md) response.
-- `groupBy` ([string])
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `betaGroups` resource ID from the [`List beta groups`](./get-v1-betagroups.md) response.
+
+### Query Parameters
+
+- `filter[betaTesters]` (string): An opaque resource ID that uniquely identifies the resource. Obtain the `betaTesters` resource ID from the [`List beta testers`](./get-v1-betatesters.md) response.
+- `groupBy` ([string]): **Allowed Values**: `betaTesters`
+- `limit` (integer): **Maximum**: `200`
 - `period` (string): -`P7D`: 7 days -`P30D`: 30 days -`P90D`: 90 days -`P365D`: 356 days
+
+  **Allowed Values**: `P7D`, `P30D`, `P90D`, `P365D`
+
+## Responses
+
+- `200` OK (`AppsBetaTesterUsagesV1MetricResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List beta groups](get-v1-betagroups.md)
+### Getting Beta Group Information
+- [List beta groups](./get-v1-betagroups.md)
   Find and list beta groups for all apps.
-- [Read beta group information](get-v1-betagroups-_id_.md)
+- [Read beta group information](./get-v1-betagroups-_id_.md)
   Get a specific beta group.
-- [Read the app information of a beta group](get-v1-betagroups-_id_-app.md)
+- [Read the app information of a beta group](./get-v1-betagroups-_id_-app.md)
   Get the app information for a specific beta group.
-- [Get the app ID for a beta group](get-v1-betagroups-_id_-relationships-app.md)
-- [Read Recruitment Criteria for a Beta Group](get-v1-betagroups-_id_-betarecruitmentcriteria.md)
+- [Get the app ID for a beta group](./get-v1-betagroups-_id_-relationships-app.md)
+- [Read Recruitment Criteria for a Beta Group](./get-v1-betagroups-_id_-betarecruitmentcriteria.md)
   Get the recruitment criteria information for a specific beta group.
-- [List beta recruitment criterion IDs for a beta group](get-v1-betagroups-_id_-relationships-betarecruitmentcriteria.md)
-- [Read build compatibility for a beta group](get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
+- [List beta recruitment criterion IDs for a beta group](./get-v1-betagroups-_id_-relationships-betarecruitmentcriteria.md)
+- [Read build compatibility for a beta group](./get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
   Get the build compatibility information for a specific beta group.
-- [Get the compatible build check ID for a beta group recruitment criterion](get-v1-betagroups-_id_-relationships-betarecruitmentcriterioncompatiblebuildcheck.md)
+- [Get the compatible build check ID for a beta group recruitment criterion](./get-v1-betagroups-_id_-relationships-betarecruitmentcriterioncompatiblebuildcheck.md)
 
 
 ---

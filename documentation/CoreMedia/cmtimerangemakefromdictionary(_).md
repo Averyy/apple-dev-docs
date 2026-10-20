@@ -1,7 +1,8 @@
 # CMTimeRangeMakeFromDictionary(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a time range from a dictionary representation of its fields.
 
@@ -20,13 +21,17 @@ Creates a time range from a dictionary representation of its fields.
 func CMTimeRangeMakeFromDictionary(_ dictionaryRepresentation: CFDictionary) -> CMTimeRange
 ```
 
+```c
+extern CMTimeRange CMTimeRangeMakeFromDictionary(CFDictionaryRef dictionaryRepresentation);
+```
+
 #### Return Value
 
 A valid time range structure, or an invalid time range if `dict` doesn’t have the necessary values.
 
 #### Discussion
 
-This is useful when getting Core Media time ranges from Core Foundation container types. For keys in the dictionary, see [`Dictionary Keys`](cmtimerange-dictionary-keys.md).
+This is useful when getting Core Media time ranges from Core Foundation container types. For keys in the dictionary, see [Dictionary Keys](./cmtimerange-dictionary-keys.md).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ This is useful when getting Core Media time ranges from Core Foundation containe
 
 ## See Also
 
-- [func CMTimeRangeMake(start: CMTime, duration: CMTime) -> CMTimeRange](cmtimerangemake(start:duration:).md)
+### Creating Time Ranges
+- [func CMTimeRangeMake(start: CMTime, duration: CMTime) -> CMTimeRange](./cmtimerangemake%28start,duration%29.md)
   Creates a valid time range with a start time and duration.
-- [func CMTimeRangeFromTimeToTime(start: CMTime, end: CMTime) -> CMTimeRange](cmtimerangefromtimetotime(start:end:).md)
+- [func CMTimeRangeFromTimeToTime(start: CMTime, end: CMTime) -> CMTimeRange](./cmtimerangefromtimetotime%28start,end%29.md)
   Creates a valid time range from a start and end time.
 
 

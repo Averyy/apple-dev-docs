@@ -1,7 +1,8 @@
 # OSObject
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 OSObject is the concrete root class of the Libkern and I/O Kit C++ class hierarchy.
 
@@ -10,7 +11,7 @@ OSObject is the concrete root class of the Libkern and I/O Kit C++ class hierarc
 
 ## Declaration
 
-```swift
+```cpp
 class OSObject : OSMetaClassBase
 ```
 
@@ -43,66 +44,67 @@ The basic features of OSObject are thread-safe. Most Libkern subclasses are not,
 ## Topics
 
 ### Miscellaneous
-- [free](osobject/1941146-free.md)
+- [free](./osobject/api-1941146-free.md)
   Deallocates/releases resources held by the object.
-- [getRetainCount](osobject/1941147-getretaincount.md)
+- [getRetainCount](./osobject/api-1941147-getretaincount.md)
   Returns the reference count of the object.
-- [init](osobject/1941148-init.md)
+- [init](./osobject/api-1941148-init.md)
   Initializes a newly-allocated object.
-- [operator delete](osobject/1941149-operator_delete.md)
+- [operator delete](./osobject/api-1941149-operator_delete.md)
   Frees the memory of the object itself.
-- [operator new](osobject/1941150-operator_new.md)
+- [operator new](./osobject/api-1941150-operator_new.md)
   Allocates memory for an instance of the class.
-- [release()](osobject/1941151-release.md)
+- [release()](./osobject/api-1941151-release.md)
   Releases a reference to the object, freeing it immediately if the reference count drops to zero.
-- [release(int)](osobject/1941153-release.md)
+- [release(int)](./osobject/api-1941153-release.md)
   Releases a reference to an object, freeing it immediately if the reference count drops below the specified threshold.
-- [retain](osobject/1941154-retain.md)
+- [retain](./osobject/api-1941154-retain.md)
   Retains a reference to the object.
-- [serialize](osobject/1941155-serialize.md)
+- [serialize](./osobject/api-1941155-serialize.md)
   Overridden by subclasses to archive the receiver into the provided OSSerialize object.
-- [taggedRelease(const void *)](osobject/1941156-taggedrelease.md)
+- [taggedRelease(const void *)](./osobject/api-1941156-taggedrelease.md)
   Releases a tagged reference to an object, freeing it immediately if the reference count drops to zero.
-- [taggedRelease(const void *, const int)](osobject/1941157-taggedrelease.md)
+- [taggedRelease(const void *, const int)](./osobject/api-1941157-taggedrelease.md)
   Releases a tagged reference to an object, freeing it immediately if the reference count drops below the specified threshold.
-- [taggedRetain](osobject/1941158-taggedretain.md)
+- [taggedRetain](./osobject/api-1941158-taggedretain.md)
   Retains a reference to the object with an optional tag used for reference-tracking.
 ### Instance Methods
-- [- CopyDispatchQueue](osobject/3180939-copydispatchqueue.md)
-- [- Dispatch](osobject/3180941-dispatch.md)
-- [- SetDispatchQueue](osobject/3180942-setdispatchqueue.md)
-- [- free](osobject/3180944-free.md)
-- [- getMetaClass](osobject/1546718-getmetaclass.md)
-- [- getRetainCount](osobject/1546715-getretaincount.md)
-- [- init](osobject/3180945-init.md)
-- [- release](osobject/1546709-release.md)
-- [- release](osobject/3180946-release.md)
+- [- CopyDispatchQueue](./osobject/api-3180939-copydispatchqueue.md)
+- [- Dispatch](./osobject/api-3180941-dispatch.md)
+- [- SetDispatchQueue](./osobject/api-3180942-setdispatchqueue.md)
+- [- free](./osobject/api-3180944-free.md)
+- [- getMetaClass](./osobject/api-1546718-getmetaclass.md)
+- [- getRetainCount](./osobject/api-1546715-getretaincount.md)
+- [- init](./osobject/api-3180945-init.md)
+- [- release](./osobject/api-1546709-release.md)
+- [- release](./osobject/api-3180946-release.md)
   Releases the OSObject instance
-- [- retain](osobject/3180947-retain.md)
+- [- retain](./osobject/api-3180947-retain.md)
   Retains the OSObject instance
-- [- serialize](osobject/1546714-serialize.md)
-- [- taggedRelease](osobject/1546712-taggedrelease.md)
-- [- taggedRelease](osobject/3516839-taggedrelease.md)
-- [- taggedRetain](osobject/1546708-taggedretain.md)
+- [- serialize](./osobject/api-1546714-serialize.md)
+- [- taggedRelease](./osobject/api-1546712-taggedrelease.md)
+- [- taggedRelease](./osobject/api-3516839-taggedrelease.md)
+- [- taggedRetain](./osobject/api-1546708-taggedretain.md)
 ### Type Methods
-- [+ CopyDispatchQueue_Invoke](osobject/3075311-copydispatchqueue_invoke.md)
-- [+ SetDispatchQueue_Invoke](osobject/3075323-setdispatchqueue_invoke.md)
+- [+ CopyDispatchQueue_Invoke](./osobject/api-3075311-copydispatchqueue_invoke.md)
+- [+ SetDispatchQueue_Invoke](./osobject/api-3075323-setdispatchqueue_invoke.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSMetaClassBase](osmetaclassbase.md)
+- [OSMetaClassBase](./osmetaclassbase.md)
 
 ## See Also
 
-- [OSSymbol](ossymbol.md)
+### Base Types
+- [OSSymbol](./ossymbol.md)
   OSSymbol wraps a C string in a unique C++ object for use as keys in Libkern collections.
-- [OSMetaClass](osmetaclass.md)
-- [OSMetaClassBase](osmetaclassbase.md)
+- [OSMetaClass](./osmetaclass.md)
+- [OSMetaClassBase](./osmetaclassbase.md)
   OSMetaClassBase is the abstract bootstrap class for the Libkern and I/O Kit run-time type information system.
-- [OSObjectPtr](osobjectptr.md)
-- [OSObjectRef](osobjectref.md)
-- [Additional Types](libkern/data_types/additional_types.md)
+- [OSObjectPtr](./osobjectptr.md)
+- [OSObjectRef](./osobjectref.md)
+- [Additional Types](./libkern/data_types/additional_types.md)
   Find custom type definitions and pointer types for standard classes. 
 
 

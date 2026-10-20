@@ -1,7 +1,8 @@
 # GKReleaseState
 
 **Framework**: GameKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the release state of an App Store Connect resource, such as an Achievement or Leaderboard.
 
@@ -20,31 +21,36 @@ Describes the release state of an App Store Connect resource, such as an Achieve
 struct GKReleaseState
 ```
 
+```c
+enum GKReleaseState : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](gkreleasestate/init(rawvalue:).md)
+- [init(rawValue: UInt)](./gkreleasestate/init%28rawvalue%29.md)
 ### Type Properties
-- [static var prereleased: GKReleaseState](gkreleasestate/prereleased.md)
+- [static var prereleased: GKReleaseState](./gkreleasestate/prereleased.md)
   The resource has been created in App Store Connect but isn’t yet associated with a released version of an App.
-- [static var released: GKReleaseState](gkreleasestate/released.md)
+- [static var released: GKReleaseState](./gkreleasestate/released.md)
   The resource is associated with a release in App Store Connect. This has no relationship with the “archived” state of a resource (i.e., A resource can be release *and* archived).
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var releaseState: GKReleaseState](gkchallengedefinition/releasestate.md)
+### Getting the release state
+- [var releaseState: GKReleaseState](./gkchallengedefinition/releasestate.md)
   The release state of the challenge definition in App Store Connect.
 
 

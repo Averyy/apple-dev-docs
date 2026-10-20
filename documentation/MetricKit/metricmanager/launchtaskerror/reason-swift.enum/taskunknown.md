@@ -1,7 +1,8 @@
 # MetricManager.LaunchTaskError.Reason.taskUnknown
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The task hasn’t been started or has already been finished.
 
@@ -19,15 +20,16 @@ case taskUnknown
 
 ## See Also
 
-- [MetricManager.LaunchTaskError.Reason.invalidID](metricmanager/launchtaskerror/reason-swift.enum/invalidid.md)
+### Error reasons
+- [MetricManager.LaunchTaskError.Reason.invalidID](./invalidid.md)
   The task ID is a null value or exceeds the maximum 128 character length.
-- [MetricManager.LaunchTaskError.Reason.maxCountExceeded](metricmanager/launchtaskerror/reason-swift.enum/maxcountexceeded.md)
+- [MetricManager.LaunchTaskError.Reason.maxCountExceeded](./maxcountexceeded.md)
   Exceeded the maximum number of tasks.
-- [MetricManager.LaunchTaskError.Reason.pastDeadline](metricmanager/launchtaskerror/reason-swift.enum/pastdeadline.md)
+- [MetricManager.LaunchTaskError.Reason.pastDeadline](./pastdeadline.md)
   The start call was made too late.
-- [MetricManager.LaunchTaskError.Reason.duplicateTask](metricmanager/launchtaskerror/reason-swift.enum/duplicatetask.md)
+- [MetricManager.LaunchTaskError.Reason.duplicateTask](./duplicatetask.md)
   A task with the same ID has already been started.
-- [MetricManager.LaunchTaskError.Reason.internalFailure](metricmanager/launchtaskerror/reason-swift.enum/internalfailure.md)
+- [MetricManager.LaunchTaskError.Reason.internalFailure](./internalfailure.md)
   Internal failures happened inside the framework.
 
 

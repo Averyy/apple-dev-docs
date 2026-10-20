@@ -1,7 +1,8 @@
 # GCXboxGamepad
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller profile that supports the Xbox controller.
 
@@ -19,68 +20,73 @@ A controller profile that supports the Xbox controller.
 class GCXboxGamepad
 ```
 
+```objc
+@interface GCXboxGamepad : GCExtendedGamepad
+```
+
 #### Overview
 
-The Xbox controller profile is similar to an extended game pad ([`GCExtendedGamepad`](gcextendedgamepad.md)), but has four paddle button elements.
+The Xbox controller profile is similar to an extended game pad ([`GCExtendedGamepad`](./gcextendedgamepad.md)), but has four paddle button elements.
 
-![An illustration of an Xbox controller with callouts for the four paddle buttons.](/images/com.apple.gamecontroller/media-3830808@2x.png)
+![An illustration of an Xbox controller with callouts for the four paddle buttons.](https://developer.apple.com/tutorials/images/com.apple.gamecontroller/media-3830808@2x.png)
 
 ## Topics
 
 ### Getting button inputs
-- [var paddleButton1: GCControllerButtonInput?](gcxboxgamepad/paddlebutton1.md)
+- [var paddleButton1: GCControllerButtonInput?](./gcxboxgamepad/paddlebutton1.md)
   The controller’s paddle 1 button element, which has a P1 label on the back of the controller.
-- [var paddleButton2: GCControllerButtonInput?](gcxboxgamepad/paddlebutton2.md)
+- [var paddleButton2: GCControllerButtonInput?](./gcxboxgamepad/paddlebutton2.md)
   The paddle 2 button element, which has a P2 label on the back of the controller.
-- [var paddleButton3: GCControllerButtonInput?](gcxboxgamepad/paddlebutton3.md)
+- [var paddleButton3: GCControllerButtonInput?](./gcxboxgamepad/paddlebutton3.md)
   The paddle 3 button element, which has a P3 label on the back of the controller.
-- [var paddleButton4: GCControllerButtonInput?](gcxboxgamepad/paddlebutton4.md)
+- [var paddleButton4: GCControllerButtonInput?](./gcxboxgamepad/paddlebutton4.md)
   The paddle 4 button element, which has a P4 label on the back of the controller.
-- [var buttonShare: GCControllerButtonInput?](gcxboxgamepad/buttonshare.md)
+- [var buttonShare: GCControllerButtonInput?](./gcxboxgamepad/buttonshare.md)
   The share button on an Xbox Series X|S controller or later.
 ### Accessing elements by name
-- [Xbox controller input names](xbox-controller-input-names.md)
+- [Xbox controller input names](./xbox-controller-input-names.md)
   Constants for names of Xbox elements.
 
 ## Relationships
 
 ### Inherits From
-- [GCExtendedGamepad](gcextendedgamepad.md)
+- [GCExtendedGamepad](./gcextendedgamepad.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var extendedGamepad: GCExtendedGamepad?](gccontroller/extendedgamepad.md)
+### Accessing controller profiles
+- [var extendedGamepad: GCExtendedGamepad?](./gccontroller/extendedgamepad.md)
   The extended gamepad profile.
-- [class GCPhysicalInputProfile](gcphysicalinputprofile.md)
+- [class GCPhysicalInputProfile](./gcphysicalinputprofile.md)
   The base class for controller profiles that support physical buttons, thumbsticks, and directional pads.
-- [class GCKeyboardInput](gckeyboardinput.md)
+- [class GCKeyboardInput](./gckeyboardinput.md)
   A controller profile that uses the keyboard as the input device.
-- [class GCMouseInput](gcmouseinput.md)
+- [class GCMouseInput](./gcmouseinput.md)
   A controller profile that tracks input from a mouse.
-- [class GCExtendedGamepad](gcextendedgamepad.md)
+- [class GCExtendedGamepad](./gcextendedgamepad.md)
   A controller profile that supports the extended set of gamepad controls.
-- [class GCDualShockGamepad](gcdualshockgamepad.md)
+- [class GCDualShockGamepad](./gcdualshockgamepad.md)
   A controller profile that supports the DualShock 4 controller.
-- [class GCDualSenseGamepad](gcdualsensegamepad.md)
+- [class GCDualSenseGamepad](./gcdualsensegamepad.md)
   A controller profile that supported the DualSense controller.
-- [var microGamepad: GCMicroGamepad?](gccontroller/microgamepad.md)
+- [var microGamepad: GCMicroGamepad?](./gccontroller/microgamepad.md)
   The micro gamepad profile.
-- [class GCMicroGamepad](gcmicrogamepad.md)
+- [class GCMicroGamepad](./gcmicrogamepad.md)
   A controller profile that supports the Siri Remote.
-- [class GCDirectionalGamepad](gcdirectionalgamepad.md)
+- [class GCDirectionalGamepad](./gcdirectionalgamepad.md)
   A profile that supports only the directional pad, without motion or rotation.
-- [var motion: GCMotion?](gccontroller/motion.md)
+- [var motion: GCMotion?](./gccontroller/motion.md)
   The motion input profile.
-- [var physicalInputProfile: GCPhysicalInputProfile](gccontroller/physicalinputprofile.md)
+- [var physicalInputProfile: GCPhysicalInputProfile](./gccontroller/physicalinputprofile.md)
   The physical input profile for the controller.
-- [var gamepad: GCGamepad?](gccontroller/gamepad.md)
+- [var gamepad: GCGamepad?](./gccontroller/gamepad.md)
   The gamepad profile.
 
 

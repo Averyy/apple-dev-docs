@@ -1,7 +1,8 @@
 # dateKind
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,9 +19,12 @@
 final var dateKind: IntentParameter<Value>.DateKind? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `DateComponents`.
+
 ## See Also
 
-- [IntentParameter.DateKind](intentparameter/datekind-swift.enum.md)
+### Accessing the date kind
+- [IntentParameter.DateKind](./datekind-swift.enum.md)
 
 
 ---

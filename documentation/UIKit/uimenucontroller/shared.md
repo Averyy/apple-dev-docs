@@ -1,15 +1,18 @@
 # shared
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the menu controller.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 16.0
+- iPadOS 3.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For more information, see [`UIMenuController`](../uimenucontroller.md).
 
 ## Declaration
 
@@ -17,9 +20,13 @@ Returns the menu controller.
 class var shared: UIMenuController { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIMenuController * sharedMenuController;
+```
+
 #### Return Value
 
-The shared [`UIMenuController`](uimenucontroller.md) instance.
+The shared [`UIMenuController`](../uimenucontroller.md) instance.
 
 
 ---

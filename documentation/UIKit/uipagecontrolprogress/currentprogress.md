@@ -1,7 +1,8 @@
 # currentProgress
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current progress value of the active page control indicator, between 0 and 1. Values outside of [0…1] will be clamped.
 
@@ -16,6 +17,10 @@ The current progress value of the active page control indicator, between 0 and 1
 
 ```swift
 var currentProgress: Float { get set }
+```
+
+```objc
+@property (nonatomic, assign) float currentProgress;
 ```
 
 

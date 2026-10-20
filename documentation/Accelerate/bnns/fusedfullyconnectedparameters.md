@@ -1,7 +1,8 @@
 # BNNS.FusedFullyConnectedParameters
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the parameters for a fused fully connected layer.
 
@@ -11,8 +12,10 @@ A structure that contains the parameters for a fused fully connected layer.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,34 +26,35 @@ struct FusedFullyConnectedParameters
 ## Topics
 
 ### Creating a Fused Fully Connected Parameters Structure
-- [init(weights: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor?)](bnns/fusedfullyconnectedparameters/init(weights:bias:).md)
+- [init(weights: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor?)](./fusedfullyconnectedparameters/init%28weights,bias%29.md)
   Returns a new fused dequantization parameters structure.
 ### Inspecting the Properties of a Fused Fully Connected Parameters Structure
-- [var weights: BNNSNDArrayDescriptor](bnns/fusedfullyconnectedparameters/weights.md)
+- [var weights: BNNSNDArrayDescriptor](./fusedfullyconnectedparameters/weights.md)
   The descriptor of the weights.
-- [var bias: BNNSNDArrayDescriptor?](bnns/fusedfullyconnectedparameters/bias.md)
+- [var bias: BNNSNDArrayDescriptor?](./fusedfullyconnectedparameters/bias.md)
   The descriptor of the bias.
 
 ## Relationships
 
 ### Conforms To
-- [FusableLayerParameters](fusablelayerparameters.md)
+- [FusableLayerParameters](../fusablelayerparameters.md)
 
 ## See Also
 
-- [struct FusedUnaryArithmeticParameters](bnns/fusedunaryarithmeticparameters.md)
+### Specifying a Layer Parameter
+- [struct FusedUnaryArithmeticParameters](./fusedunaryarithmeticparameters.md)
   A structure that contains the parameters for a fused unary arithmetic layer.
-- [struct FusedBinaryArithmeticParameters](bnns/fusedbinaryarithmeticparameters.md)
+- [struct FusedBinaryArithmeticParameters](./fusedbinaryarithmeticparameters.md)
   A structure that contains the parameters for a fused binary arithmetic layer.
-- [struct FusedTernaryArithmeticParameters](bnns/fusedternaryarithmeticparameters.md)
+- [struct FusedTernaryArithmeticParameters](./fusedternaryarithmeticparameters.md)
   A structure that contains the parameters for a fused ternary arithmetic layer.
-- [struct FusedConvolutionParameters](bnns/fusedconvolutionparameters.md)
+- [struct FusedConvolutionParameters](./fusedconvolutionparameters.md)
   A structure that contains the parameters for a fused convolution layer.
-- [struct FusedQuantizationParameters](bnns/fusedquantizationparameters.md)
+- [struct FusedQuantizationParameters](./fusedquantizationparameters.md)
   A structure that contains the parameters for a fused quantization layer.
-- [struct FusedDequantizationParameters](bnns/fuseddequantizationparameters.md)
+- [struct FusedDequantizationParameters](./fuseddequantizationparameters.md)
   A structure that contains the parameters for a fused dequantization layer.
-- [struct FusedNormalizationParameters](bnns/fusednormalizationparameters.md)
+- [struct FusedNormalizationParameters](./fusednormalizationparameters.md)
   A structure that contains the parameters for a fused normalization layer.
 
 

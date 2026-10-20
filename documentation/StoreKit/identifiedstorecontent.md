@@ -1,7 +1,8 @@
 # IdentifiedStoreContent
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of SwiftUI view that StoreKit transforms store content into.
 

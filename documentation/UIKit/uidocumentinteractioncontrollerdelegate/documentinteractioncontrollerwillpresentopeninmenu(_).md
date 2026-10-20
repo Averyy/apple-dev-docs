@@ -1,7 +1,8 @@
 # documentInteractionControllerWillPresentOpenInMenu(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a document interaction controller is about to display an Open In menu.
 
@@ -17,6 +18,10 @@ Called when a document interaction controller is about to display an Open In men
 optional func documentInteractionControllerWillPresentOpenInMenu(_ controller: UIDocumentInteractionController)
 ```
 
+```objc
+- (void) documentInteractionControllerWillPresentOpenInMenu:(UIDocumentInteractionController *) controller;
+```
+
 #### Discussion
 
 The Open In menu is used to select an application for opening the current file. You can use this method to update your user interface in response to displaying the menu.
@@ -27,17 +32,18 @@ The Open In menu is used to select an application for opening the current file. 
 
 ## See Also
 
-- [func documentInteractionControllerWillBeginPreview(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillbeginpreview(_:).md)
+### Presenting the user interface
+- [func documentInteractionControllerWillBeginPreview(UIDocumentInteractionController)](./documentinteractioncontrollerwillbeginpreview%28_%29.md)
   Called when a document interaction controller is about to display a preview for its document.
-- [func documentInteractionControllerDidEndPreview(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdidendpreview(_:).md)
+- [func documentInteractionControllerDidEndPreview(UIDocumentInteractionController)](./documentinteractioncontrollerdidendpreview%28_%29.md)
   Called when a document interaction controller has dismissed its document preview.
-- [func documentInteractionControllerWillPresentOptionsMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillpresentoptionsmenu(_:).md)
+- [func documentInteractionControllerWillPresentOptionsMenu(UIDocumentInteractionController)](./documentinteractioncontrollerwillpresentoptionsmenu%28_%29.md)
   Called when a document interaction controller is about to display an options menu.
-- [func documentInteractionControllerDidDismissOptionsMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissoptionsmenu(_:).md)
+- [func documentInteractionControllerDidDismissOptionsMenu(UIDocumentInteractionController)](./documentinteractioncontrollerdiddismissoptionsmenu%28_%29.md)
   Called when a document interaction controller has dismissed its options menu.
-- [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissopeninmenu(_:).md)
+- [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](./documentinteractioncontrollerdiddismissopeninmenu%28_%29.md)
   Called when a document interaction controller has dismissed its Open In menu.
-- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:canperformaction:).md)
+- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](./documentinteractioncontroller%28_,canperformaction%29.md)
   Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
 
 

@@ -1,7 +1,8 @@
 # animationCurve
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The standard UIKit animation curve to use for timing.
 
@@ -18,15 +19,20 @@ The standard UIKit animation curve to use for timing.
 var animationCurve: UIView.AnimationCurve { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIViewAnimationCurve animationCurve;
+```
+
 #### Discussion
 
 If you initialized this object using an animation curve, this property reflects the curve you specified. If you initialized the object using the control points for a cubic Bézier curve, the value of this property is undefined.
 
 ## See Also
 
-- [var controlPoint1: CGPoint](uicubictimingparameters/controlpoint1.md)
+### Getting the timing parameters
+- [var controlPoint1: CGPoint](./controlpoint1.md)
   The first control point for the cubic Bézier curve.
-- [var controlPoint2: CGPoint](uicubictimingparameters/controlpoint2.md)
+- [var controlPoint2: CGPoint](./controlpoint2.md)
   The second control point of the cubic Bézier curve.
 
 

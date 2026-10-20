@@ -1,7 +1,8 @@
 # WKWebExtensionContext.NotificationUserInfoKey
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants for specifying web extension context information in notifications.
 
@@ -18,31 +19,36 @@ Constants for specifying web extension context information in notifications.
 struct NotificationUserInfoKey
 ```
 
+```c
+typedef NSString * WKWebExtensionContextNotificationUserInfoKey;
+```
+
 ## Topics
 
 ### Type properties
-- [static let matchPatterns: WKWebExtensionContext.NotificationUserInfoKey](wkwebextensioncontext/notificationuserinfokey/matchpatterns.md)
-  The corresponding value represents the affected permission match patterns in [`WKWebExtensionContext`](wkwebextensioncontext.md) notifications.
-- [static let permissions: WKWebExtensionContext.NotificationUserInfoKey](wkwebextensioncontext/notificationuserinfokey/permissions.md)
-  The corresponding value represents the affected permissions in [`WKWebExtensionContext`](wkwebextensioncontext.md) notifications.
+- [static let matchPatterns: WKWebExtensionContext.NotificationUserInfoKey](./notificationuserinfokey/matchpatterns.md)
+  The corresponding value represents the affected permission match patterns in [`WKWebExtensionContext`](../wkwebextensioncontext.md) notifications.
+- [static let permissions: WKWebExtensionContext.NotificationUserInfoKey](./notificationuserinfokey/permissions.md)
+  The corresponding value represents the affected permissions in [`WKWebExtensionContext`](../wkwebextensioncontext.md) notifications.
 ### Initializers
-- [init(String)](wkwebextensioncontext/notificationuserinfokey/init(_:).md)
+- [init(String)](./notificationuserinfokey/init%28_%29.md)
   Creates a constant from a value you provide.
-- [init(rawValue: String)](wkwebextensioncontext/notificationuserinfokey/init(rawvalue:).md)
+- [init(rawValue: String)](./notificationuserinfokey/init%28rawvalue%29.md)
   Creates a constant from a raw value you provide.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WKWebExtensionContext.Error](wkwebextensioncontext/error.md)
+### Structures
+- [WKWebExtensionContext.Error](./error.md)
   Constants used to indicate errors in the web extension context domain.
 
 

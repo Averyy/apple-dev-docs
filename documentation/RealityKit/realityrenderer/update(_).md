@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tick the simulation
 

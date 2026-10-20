@@ -1,14 +1,15 @@
 # kIORangeColorimetryBT709
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 kIORangeColorimetryBT709 = 0x0080
 ```
 

@@ -1,17 +1,20 @@
 # GKSessionError.Code.dataTooBigError
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data your application attempted to send was too large for the session to transmit in a single call.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- tvOS 9.0+ - Deprecated in 18.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,38 +22,43 @@ The data your application attempted to send was too large for the session to tra
 case dataTooBigError
 ```
 
+```c
+GKSessionDataTooBigError
+```
+
 ## See Also
 
-- [GKSessionError.Code.invalidParameterError](gksessionerror-swift.struct/code/invalidparametererror.md)
+### Constants
+- [GKSessionError.Code.invalidParameterError](./invalidparametererror.md)
   A parameter had an unexpected value.
-- [GKSessionError.Code.peerNotFoundError](gksessionerror-swift.struct/code/peernotfounderror.md)
+- [GKSessionError.Code.peerNotFoundError](./peernotfounderror.md)
   A peer with the specified `peerID` string could not be found.
-- [GKSessionError.Code.declinedError](gksessionerror-swift.struct/code/declinederror.md)
+- [GKSessionError.Code.declinedError](./declinederror.md)
   The peer your application tried to connect to refused the connection.
-- [GKSessionError.Code.timedOutError](gksessionerror-swift.struct/code/timedouterror.md)
+- [GKSessionError.Code.timedOutError](./timedouterror.md)
   The operation could not be completed in the specified timeout period.
-- [GKSessionError.Code.cancelledError](gksessionerror-swift.struct/code/cancellederror.md)
+- [GKSessionError.Code.cancelledError](./cancellederror.md)
   A peer that invited the session to connect to them canceled the connection request.
-- [GKSessionError.Code.connectionFailedError](gksessionerror-swift.struct/code/connectionfailederror.md)
+- [GKSessionError.Code.connectionFailedError](./connectionfailederror.md)
   The attempt to establish a connection with another peer failed.
-- [GKSessionError.Code.connectionClosedError](gksessionerror-swift.struct/code/connectionclosederror.md)
+- [GKSessionError.Code.connectionClosedError](./connectionclosederror.md)
   The connection to another peer closed unexpectedly.
-- [GKSessionError.Code.notConnectedError](gksessionerror-swift.struct/code/notconnectederror.md)
+- [GKSessionError.Code.notConnectedError](./notconnectederror.md)
   Reserved for future use.
-- [GKSessionError.Code.cannotEnableError](gksessionerror-swift.struct/code/cannotenableerror.md)
+- [GKSessionError.Code.cannotEnableError](./cannotenableerror.md)
   Bluetooth is not currently available.
-- [GKSessionError.Code.inProgressError](gksessionerror-swift.struct/code/inprogresserror.md)
+- [GKSessionError.Code.inProgressError](./inprogresserror.md)
   The peer your application attempted to connect to has already requested a connection to your session.
-- [GKSessionError.Code.connectivityError](gksessionerror-swift.struct/code/connectivityerror.md)
-  An error occurred in the [`GKSession`](gksession.md) object’s connection code.
-- [GKSessionError.Code.transportError](gksessionerror-swift.struct/code/transporterror.md)
-  An error occurred in the [`GKSession`](gksession.md) object’s transport code.
-- [GKSessionError.Code.internalError](gksessionerror-swift.struct/code/internalerror.md)
-  A serious error occurred inside [`GKSession`](gksession.md).
-- [GKSessionError.Code.unknownError](gksessionerror-swift.struct/code/unknownerror.md)
+- [GKSessionError.Code.connectivityError](./connectivityerror.md)
+  An error occurred in the [`GKSession`](../../gksession.md) object’s connection code.
+- [GKSessionError.Code.transportError](./transporterror.md)
+  An error occurred in the [`GKSession`](../../gksession.md) object’s transport code.
+- [GKSessionError.Code.internalError](./internalerror.md)
+  A serious error occurred inside [`GKSession`](../../gksession.md).
+- [GKSessionError.Code.unknownError](./unknownerror.md)
   Reserved for when the error does not fit in another category above.
-- [GKSessionError.Code.systemError](gksessionerror-swift.struct/code/systemerror.md)
-  An error occurred outside of the [`GKSession`](gksession.md) object’s control, such as memory allocation.
+- [GKSessionError.Code.systemError](./systemerror.md)
+  An error occurred outside of the [`GKSession`](../../gksession.md) object’s control, such as memory allocation.
 
 
 ---

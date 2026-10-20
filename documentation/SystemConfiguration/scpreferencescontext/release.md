@@ -1,22 +1,27 @@
 # release
 
 **Framework**: System Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calllback used to remove a retain previously added for the `info` field. If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. The value may be `NULL`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var release: ((UnsafeRawPointer) -> Void)?
+```
+
+```c
+void (*)(const void *) release;
 ```
 
 

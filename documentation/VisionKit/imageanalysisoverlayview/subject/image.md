@@ -1,7 +1,8 @@
 # image
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image of the subjects with the background removed.
 

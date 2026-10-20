@@ -1,7 +1,8 @@
 # invokeMethod(_:withArguments:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the named JavaScript method on the value.
 
@@ -19,24 +20,29 @@ Calls the named JavaScript method on the value.
 func invokeMethod(_ method: String!, withArguments arguments: [Any]!) -> JSValue!
 ```
 
+```objc
+- (JSValue *) invokeMethod:(NSString *) method withArguments:(NSArray *) arguments;
+```
+
 #### Return Value
 
 The result of calling the value as a constructor, or `nil` if the value cannot be treated as a JavaScript constructor.
 
 #### Discussion
 
-Calling this Objective-C method first uses the [`forProperty(_:)`](jsvalue/forproperty(_:).md) method to look up the named field of the JavaScript value. Then, JavaScriptCore treats that field’s contents as a JavaScript function and sets the JavaScript `this` keyword to refer to this [`JSValue`](jsvalue.md) instance.
+Calling this Objective-C method first uses the [`forProperty(_:)`](./forproperty%28_%29.md) method to look up the named field of the JavaScript value. Then, JavaScriptCore treats that field’s contents as a JavaScript function and sets the JavaScript `this` keyword to refer to this [`JSValue`](../jsvalue.md) instance.
 
 ## Parameters
 
 - `method`: The name of a method on the value; that is, of a field whose contents are a function value.
-- `arguments`: The parameters to pass to the method. The objects in this array must be other [`JSValue`](jsvalue.md) objects or objects that can be converted to JavaScript values using the methods listed in the Creating JavaScript Values section in [`JSValue`](jsvalue.md).
+- `arguments`: The parameters to pass to the method. The objects in this array must be other [`JSValue`](../jsvalue.md) objects or objects that can be converted to JavaScript values using the methods listed in the Creating JavaScript Values section in [`JSValue`](../jsvalue.md).
 
 ## See Also
 
-- [func call(withArguments: [Any]!) -> JSValue!](jsvalue/call(witharguments:).md)
+### Working with Function and Constructor Values
+- [func call(withArguments: [Any]!) -> JSValue!](./call%28witharguments%29.md)
   Invokes the value as a JavaScript function.
-- [func construct(withArguments: [Any]!) -> JSValue!](jsvalue/construct(witharguments:).md)
+- [func construct(withArguments: [Any]!) -> JSValue!](./construct%28witharguments%29.md)
   Invokes the value as a JavaScript constructor.
 
 

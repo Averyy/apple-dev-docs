@@ -1,7 +1,8 @@
 # sectionActions(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds custom actions to a section.
 
@@ -42,13 +43,14 @@ List {
 
 ## See Also
 
-- [struct TabPlacement](tabplacement.md)
+### Configuring a tab
+- [struct TabPlacement](../tabplacement.md)
   A place that a tab can appear.
-- [struct TabContentBuilder](tabcontentbuilder.md)
+- [struct TabContentBuilder](../tabcontentbuilder.md)
   A result builder that constructs tabs for a tab view that supports programmatic selection. This builder requires that all tabs in the tab view have the same selection type.
-- [protocol TabContent](tabcontent.md)
+- [protocol TabContent](../tabcontent.md)
   A type that provides content for programmatically selectable tabs in a tab view.
-- [struct AnyTabContent](anytabcontent.md)
+- [struct AnyTabContent](../anytabcontent.md)
   Type erased tab content.
 
 

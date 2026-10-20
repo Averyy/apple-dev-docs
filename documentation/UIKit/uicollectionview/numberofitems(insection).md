@@ -1,7 +1,8 @@
 # numberOfItems(inSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the count of items in the specified section.
 
@@ -9,13 +10,17 @@ Fetches the count of items in the specified section.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func numberOfItems(inSection section: Int) -> Int
+```
+
+```objc
+- (NSInteger) numberOfItemsInSection:(NSInteger) section;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ The number of items in the specified section.
 
 ## See Also
 
-- [var numberOfSections: Int](uicollectionview/numberofsections.md)
+### Getting the state of the collection view
+- [var numberOfSections: Int](./numberofsections.md)
   The number of sections displayed by the collection view.
-- [var visibleCells: [UICollectionViewCell]](uicollectionview/visiblecells.md)
+- [var visibleCells: [UICollectionViewCell]](./visiblecells.md)
   An array of visible cells currently displayed by the collection view.
 
 

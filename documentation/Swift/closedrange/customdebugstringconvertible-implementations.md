@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](closedrange/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the range, suitable for debugging.
 
 

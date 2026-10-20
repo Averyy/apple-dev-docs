@@ -1,7 +1,8 @@
 # registerSystem()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers a system with RealityKit.
 
@@ -11,7 +12,7 @@ Registers a system with RealityKit.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,13 +23,13 @@ Registers a system with RealityKit.
 
 ## Mentions
 
-- [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
+- [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
 #### Discussion
 
-Calling this method informs RealityKit of a system of defined behavior for its scenes. RealityKit automatically creates an instance of all registered systems for every scene and calls every registered system’s [`update(context:)`](system/update(context:)-3d0qz.md) method on every scene update.
+Calling this method informs RealityKit of a system of defined behavior for its scenes. RealityKit automatically creates an instance of all registered systems for every scene and calls every registered system’s [`update(context:)`](./update%28context%29-3d0qz.md) method on every scene update.
 
-If you call [`registerSystem()`](system/registersystem().md) multiple times, RealityKit ignores additional calls after the first.
+If you call [`registerSystem()`](./registersystem%28%29.md) multiple times, RealityKit ignores additional calls after the first.
 
 
 ---

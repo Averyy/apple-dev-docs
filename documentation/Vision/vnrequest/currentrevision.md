@@ -1,7 +1,8 @@
 # currentRevision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current revison supported by the request.
 
@@ -19,13 +20,18 @@ The current revison supported by the request.
 class var currentRevision: Int { get }
 ```
 
+```objc
+@property (class, nonatomic, assign, readonly) NSUInteger currentRevision;
+```
+
 ## See Also
 
-- [protocol VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+### Determining the Revision
+- [protocol VNRequestRevisionProviding](../vnrequestrevisionproviding.md)
   A protocol for specifying the revision number of Vision algorithms.
-- [class var defaultRevision: Int](vnrequest/defaultrevision.md)
+- [class var defaultRevision: Int](./defaultrevision.md)
   The revision of the latest request for the particular SDK linked with the client application.
-- [class var supportedRevisions: IndexSet](vnrequest/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./supportedrevisions.md)
   The collection of currently-supported algorithm versions for the class of request.
 
 

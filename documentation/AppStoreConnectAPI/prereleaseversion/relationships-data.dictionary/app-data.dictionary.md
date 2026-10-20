@@ -1,7 +1,8 @@
 # PrereleaseVersion.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object PrereleaseVersion.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object PrereleaseVersion.Relationships.App.Data](prereleaseversion/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object PrereleaseVersion.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -27,7 +28,8 @@ object PrereleaseVersion.Relationships.App
 
 ## See Also
 
-- [object PrereleaseVersion.Relationships.Builds](prereleaseversion/relationships-data.dictionary/builds-data.dictionary.md)
+### Objects
+- [object PrereleaseVersion.Relationships.Builds](./builds-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

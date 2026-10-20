@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Assembly.Location.deviceBuffer(index:offset:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Value is in the deviceBuffers table at the specified index and offset
 
@@ -12,7 +13,7 @@ Value is in the deviceBuffers table at the specified index and offset
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

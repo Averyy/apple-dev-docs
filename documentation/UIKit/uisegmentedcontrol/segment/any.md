@@ -1,16 +1,17 @@
 # UISegmentedControl.Segment.any
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies any segment.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,15 +19,20 @@ Specifies any segment.
 case any
 ```
 
+```c
+UISegmentedControlSegmentAny
+```
+
 ## See Also
 
-- [UISegmentedControl.Segment.left](uisegmentedcontrol/segment/left.md)
+### Constants
+- [UISegmentedControl.Segment.left](./left.md)
   The capped, leftmost segment.
-- [UISegmentedControl.Segment.center](uisegmentedcontrol/segment/center.md)
+- [UISegmentedControl.Segment.center](./center.md)
   Any segment between the left and rightmost segments.
-- [UISegmentedControl.Segment.right](uisegmentedcontrol/segment/right.md)
+- [UISegmentedControl.Segment.right](./right.md)
   The capped, rightmost segment.
-- [UISegmentedControl.Segment.alone](uisegmentedcontrol/segment/alone.md)
+- [UISegmentedControl.Segment.alone](./alone.md)
   The standalone segment, capped on both ends.
 
 

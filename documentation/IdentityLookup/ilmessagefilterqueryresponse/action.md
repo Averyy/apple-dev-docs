@@ -1,7 +1,8 @@
 # action
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action the Message Filter app extension recommends that the system perform on the queried message.
 
@@ -17,9 +18,14 @@ The action the Message Filter app extension recommends that the system perform o
 var action: ILMessageFilterAction { get set }
 ```
 
+```objc
+@property (nonatomic) ILMessageFilterAction action;
+```
+
 ## See Also
 
-- [var subAction: ILMessageFilterSubAction](ilmessagefilterqueryresponse/subaction.md)
+### Specifying the Action
+- [var subAction: ILMessageFilterSubAction](./subaction.md)
   The subaction the Message Filter app extension recommends that the system perform on the queried message.
 
 

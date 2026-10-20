@@ -1,7 +1,8 @@
 # CPTravelEstimates
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the time and distance remaining for a maneuver in a navigation session.
 
@@ -16,70 +17,75 @@ An object that describes the time and distance remaining for a maneuver in a nav
 class CPTravelEstimates
 ```
 
+```objc
+@interface CPTravelEstimates : NSObject
+```
+
 ## Topics
 
 ### Getting the trip
-- [class CPTrip](cptrip.md)
+- [class CPTrip](./cptrip.md)
   An object that represents a journey between an origin and a destination.
 ### Managing upcoming maneuvers
-- [func add([CPManeuver])](cpnavigationsession/add(_:)-17l62.md)
+- [func add([CPManeuver])](./cpnavigationsession/add%28_%29-17l62.md)
   Adds one or more maneuvers, in chronological order, to the navigation session.
-- [func add([CPLaneGuidance])](cpnavigationsession/add(_:)-93qpu.md)
+- [func add([CPLaneGuidance])](./cpnavigationsession/add%28_%29-93qpu.md)
   Adds one or more lane guidance instances to the navigation session.
-- [class CPManeuver](cpmaneuver.md)
+- [class CPManeuver](./cpmaneuver.md)
   An object that describes a single navigation instruction.
 ### Creating a Travel Estimates Object
-- [init(distanceRemaining: Measurement<UnitLength>, timeRemaining: TimeInterval)](cptravelestimates/init(distanceremaining:timeremaining:).md)
+- [init(distanceRemaining: Measurement<UnitLength>, timeRemaining: TimeInterval)](./cptravelestimates/init%28distanceremaining,timeremaining%29.md)
   Creates travel estimates with the remaining distance and time.
-- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval)](cptravelestimates/init(distanceremaining:distanceremainingtodisplay:timeremaining:).md)
+- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval)](./cptravelestimates/init%28distanceremaining,distanceremainingtodisplay,timeremaining%29.md)
   Creates a travel estimates instance with the distance remaining that the framework displays to a person.
 ### Updating travel estimates
-- [func updateEstimates(CPTravelEstimates, for: CPManeuver)](cpnavigationsession/updateestimates(_:for:).md)
+- [func updateEstimates(CPTravelEstimates, for: CPManeuver)](./cpnavigationsession/updateestimates%28_,for%29.md)
   Updates the travel estimates for the specified maneuver.
 ### Managing trip navigation
-- [func cancelTrip()](cpnavigationsession/canceltrip.md)
+- [func cancelTrip()](./cpnavigationsession/canceltrip%28%29.md)
   Tells the navigation session to cancel the trip.
-- [func finishTrip()](cpnavigationsession/finishtrip.md)
+- [func finishTrip()](./cpnavigationsession/finishtrip%28%29.md)
   Tells the navigation session to finish the trip.
-- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](cpnavigationsession/pausetrip(for:description:).md)
+- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](./cpnavigationsession/pausetrip%28for,description%29.md)
   Tells the navigation session to pause the trip for the specified reason.
-- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](cpnavigationsession/pausetrip(for:description:turncardcolor:).md)
-- [func resumeTrip(updatedRouteInformation: CPRouteInformation)](cpnavigationsession/resumetrip(updatedrouteinformation:).md)
+- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](./cpnavigationsession/pausetrip%28for,description,turncardcolor%29.md)
+- [func resumeTrip(updatedRouteInformation: CPRouteInformation)](./cpnavigationsession/resumetrip%28updatedrouteinformation%29.md)
   Resumes the current trip with updated route information.
-- [CPNavigationSession.PauseReason](cpnavigationsession/pausereason.md)
+- [CPNavigationSession.PauseReason](./cpnavigationsession/pausereason.md)
   A set of reasons for pausing a trip.
 ### Getting Travel Estimates
-- [var distanceRemaining: Measurement<UnitLength>](cptravelestimates/distanceremaining.md)
+- [var distanceRemaining: Measurement<UnitLength>](./cptravelestimates/distanceremaining.md)
   The remaining distance for the travel estimate.
-- [var distanceRemainingToDisplay: Measurement<UnitLength>](cptravelestimates/distanceremainingtodisplay.md)
+- [var distanceRemainingToDisplay: Measurement<UnitLength>](./cptravelestimates/distanceremainingtodisplay.md)
   The distance remaining that the framework displays to a person, in the default units of measurement.
-- [var timeRemaining: TimeInterval](cptravelestimates/timeremaining.md)
+- [var timeRemaining: TimeInterval](./cptravelestimates/timeremaining.md)
   The remaining time for the travel estimate.
 ### Initializers
-- [init?(coder: NSCoder)](cptravelestimates/init(coder:).md)
-- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval, routeDetails: [CPRouteDetail])](cptravelestimates/init(distanceremaining:distanceremainingtodisplay:timeremaining:routedetails:).md)
+- [init?(coder: NSCoder)](./cptravelestimates/init%28coder%29.md)
+- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval, routeDetails: [CPRouteDetail])](./cptravelestimates/init%28distanceremaining,distanceremainingtodisplay,timeremaining,routedetails%29.md)
   Initialize a @c CPTravelEstimates with distance, distance to display, time remaining, and additional trip information.
 ### Instance Properties
-- [var routeDetails: [CPRouteDetail]](cptravelestimates/routedetails.md)
+- [var routeDetails: [CPRouteDetail]](./cptravelestimates/routedetails.md)
   Additional trip information such as battery, fuel, or toll information to display with travel estimates.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func updateEstimates(CPTravelEstimates, for: CPManeuver)](cpnavigationsession/updateestimates(_:for:).md)
+### Updating Travel Estimates
+- [func updateEstimates(CPTravelEstimates, for: CPManeuver)](./cpnavigationsession/updateestimates%28_,for%29.md)
   Updates the travel estimates for the specified maneuver.
 
 

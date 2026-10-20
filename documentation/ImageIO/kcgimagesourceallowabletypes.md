@@ -1,7 +1,8 @@
 # kCGImageSourceAllowableTypes
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Option key for restricting which image formats can be decoded.
 
@@ -20,13 +21,17 @@ Option key for restricting which image formats can be decoded.
 let kCGImageSourceAllowableTypes: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageSourceAllowableTypes;
+```
+
 #### Discussion
 
-The value is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) containing [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) Uniform Type Identifiers (UTIs) of allowed image formats. When specified, ImageIO will only decode images whose format matches one of the entries in the allow list. If no matching reader is found, decoding fails.
+The value is a [`CFArray`](../CoreFoundation/cfarray.md) containing [`CFString`](../CoreFoundation/cfstring.md) Uniform Type Identifiers (UTIs) of allowed image formats. When specified, ImageIO will only decode images whose format matches one of the entries in the allow list. If no matching reader is found, decoding fails.
 
-Unknown format identifiers are ignored. If not specified, all supported ImageIO formats are allowed (default behavior). If process-wide format restrictions were set via [`CGImageSourceSetAllowableTypes(_:)`](cgimagesourcesetallowabletypes(_:).md), only formats allowed by both mechanisms are permitted.
+Unknown format identifiers are ignored. If not specified, all supported ImageIO formats are allowed (default behavior). If process-wide format restrictions were set via [`CGImageSourceSetAllowableTypes(_:)`](./cgimagesourcesetallowabletypes%28_%29.md), only formats allowed by both mechanisms are permitted.
 
-See also [`System-declared uniform type identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers/system-declared-uniform-type-identifiers).
+See also [System-declared uniform type identifiers](../UniformTypeIdentifiers/system-declared-uniform-type-identifiers.md).
 
 #### Example
 
@@ -50,23 +55,24 @@ NSDictionary *options = @{
 
 ## See Also
 
-- [let kCGImageSourceTypeIdentifierHint: CFString](kcgimagesourcetypeidentifierhint.md)
+### Specifying the Read Options
+- [let kCGImageSourceTypeIdentifierHint: CFString](./kcgimagesourcetypeidentifierhint.md)
   The uniform type identifier that represents your best guess for the image’s type.
-- [let kCGImageSourceShouldAllowFloat: CFString](kcgimagesourceshouldallowfloat.md)
+- [let kCGImageSourceShouldAllowFloat: CFString](./kcgimagesourceshouldallowfloat.md)
   A Boolean that indicates whether to use floating-point values in returned images.
-- [let kCGImageSourceShouldCache: CFString](kcgimagesourceshouldcache.md)
+- [let kCGImageSourceShouldCache: CFString](./kcgimagesourceshouldcache.md)
   A Boolean value that indicates whether to cache the decoded image.
-- [let kCGImageSourceShouldCacheImmediately: CFString](kcgimagesourceshouldcacheimmediately.md)
+- [let kCGImageSourceShouldCacheImmediately: CFString](./kcgimagesourceshouldcacheimmediately.md)
   A Boolean value that indicates whether image decoding and caching happens at image creation time.
-- [let kCGImageSourceCreateThumbnailFromImageIfAbsent: CFString](kcgimagesourcecreatethumbnailfromimageifabsent.md)
+- [let kCGImageSourceCreateThumbnailFromImageIfAbsent: CFString](./kcgimagesourcecreatethumbnailfromimageifabsent.md)
   A Boolean value that indicates whether to create a thumbnail image automatically if the data source doesn’t contain one.
-- [let kCGImageSourceCreateThumbnailFromImageAlways: CFString](kcgimagesourcecreatethumbnailfromimagealways.md)
+- [let kCGImageSourceCreateThumbnailFromImageAlways: CFString](./kcgimagesourcecreatethumbnailfromimagealways.md)
   A Boolean value that indicates whether to always create a thumbnail image.
-- [let kCGImageSourceThumbnailMaxPixelSize: CFString](kcgimagesourcethumbnailmaxpixelsize.md)
+- [let kCGImageSourceThumbnailMaxPixelSize: CFString](./kcgimagesourcethumbnailmaxpixelsize.md)
   The maximum width and height of a thumbnail image, specified in pixels.
-- [let kCGImageSourceCreateThumbnailWithTransform: CFString](kcgimagesourcecreatethumbnailwithtransform.md)
+- [let kCGImageSourceCreateThumbnailWithTransform: CFString](./kcgimagesourcecreatethumbnailwithtransform.md)
   A Boolean value that indicates whether to rotate and scale the thumbnail image to match the image’s orientation and aspect ratio.
-- [let kCGImageSourceSubsampleFactor: CFString](kcgimagesourcesubsamplefactor.md)
+- [let kCGImageSourceSubsampleFactor: CFString](./kcgimagesourcesubsamplefactor.md)
   The factor by which to scale down any returned images.
 
 

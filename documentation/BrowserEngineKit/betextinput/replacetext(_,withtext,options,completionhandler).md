@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replace the specified text preceding the current selection.
@@ -15,7 +16,15 @@ Replace the specified text preceding the current selection.
 ## Declaration
 
 ```swift
+func replaceText(_ originalText: String, withText replacementText: String, options: BETextReplacementOptions = [], completionHandler: @escaping @Sendable ([UITextSelectionRect]) -> Void)
+```
+
+```swift
 func replaceText(_ originalText: String, withText replacementText: String, options: BETextReplacementOptions = []) async -> [UITextSelectionRect]
+```
+
+```objc
+- (void) replaceText:(NSString *) originalText withText:(NSString *) replacementText options:(BETextReplacementOptions) options completionHandler:(void (^)(NSArray<UITextSelectionRect *> *rects)) completionHandler;
 ```
 
 #### Discussion

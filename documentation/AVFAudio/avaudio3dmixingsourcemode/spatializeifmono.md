@@ -1,7 +1,8 @@
 # AVAudio3DMixingSourceMode.spatializeIfMono
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mono input bus that renders as a point source at the location of the source node.
 
@@ -19,17 +20,22 @@ A mono input bus that renders as a point source at the location of the source no
 case spatializeIfMono
 ```
 
+```c
+AVAudio3DMixingSourceModeSpatializeIfMono
+```
+
 #### Discussion
 
-The system bypasses an input bus with more than one channel. This is equivalent to [`AVAudio3DMixingSourceMode.pointSource`](avaudio3dmixingsourcemode/pointsource.md) for a mono bus and [`AVAudio3DMixingSourceMode.bypass`](avaudio3dmixingsourcemode/bypass.md) for a bus with more than one channel.
+The system bypasses an input bus with more than one channel. This is equivalent to [`AVAudio3DMixingSourceMode.pointSource`](./pointsource.md) for a mono bus and [`AVAudio3DMixingSourceMode.bypass`](./bypass.md) for a bus with more than one channel.
 
 ## See Also
 
-- [AVAudio3DMixingSourceMode.bypass](avaudio3dmixingsourcemode/bypass.md)
+### Choosing a source mode
+- [AVAudio3DMixingSourceMode.bypass](./bypass.md)
   A mode that does no spatial rendering.
-- [AVAudio3DMixingSourceMode.pointSource](avaudio3dmixingsourcemode/pointsource.md)
+- [AVAudio3DMixingSourceMode.pointSource](./pointsource.md)
   All channels of the bus render as a single source at the location of the source node.
-- [AVAudio3DMixingSourceMode.ambienceBed](avaudio3dmixingsourcemode/ambiencebed.md)
+- [AVAudio3DMixingSourceMode.ambienceBed](./ambiencebed.md)
   The input channels spread around the listener as far-field sources that anchor to global space.
 
 

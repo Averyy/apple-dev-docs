@@ -1,13 +1,14 @@
 # configurationData
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 7.0+
 
@@ -17,11 +18,16 @@
 var configurationData: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * configurationData;
+```
+
 ## See Also
 
-- [var deviceAccountIdentifier: String](pkbarcodeeventconfigurationrequest/deviceaccountidentifier.md)
-- [var configurationDataType: PKBarcodeEventConfigurationDataType](pkbarcodeeventconfigurationrequest/configurationdatatype.md)
-- [enum PKBarcodeEventConfigurationDataType](pkbarcodeeventconfigurationdatatype.md)
+### Reading Configuration Information
+- [var deviceAccountIdentifier: String](./deviceaccountidentifier.md)
+- [var configurationDataType: PKBarcodeEventConfigurationDataType](./configurationdatatype.md)
+- [enum PKBarcodeEventConfigurationDataType](../pkbarcodeeventconfigurationdatatype.md)
 
 
 ---

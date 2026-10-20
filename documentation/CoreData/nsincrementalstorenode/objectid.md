@@ -1,7 +1,8 @@
 # objectID
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object ID that identifies the data stored by the receiver.
 
@@ -10,7 +11,7 @@ The object ID that identifies the data stored by the receiver.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The object ID that identifies the data stored by the receiver.
 var objectID: NSManagedObjectID { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSManagedObjectID * objectID;
+```
+
 ## See Also
 
-- [func update(withValues: [String : Any], version: UInt64)](nsincrementalstorenode/update(withvalues:version:).md)
+### Managing Node Data
+- [func update(withValues: [String : Any], version: UInt64)](./update%28withvalues,version%29.md)
   Update the values and version to reflect new data being saved to or loaded from the external store.
-- [func value(for: NSPropertyDescription) -> Any?](nsincrementalstorenode/value(for:).md)
+- [func value(for: NSPropertyDescription) -> Any?](./value%28for%29.md)
   Returns the value for the given property.
-- [var version: UInt64](nsincrementalstorenode/version.md)
+- [var version: UInt64](./version.md)
   The version of data in the receiver.
 
 

@@ -1,6 +1,7 @@
 # Creating binary archives from device-built pipeline state objects
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Write your Metal pipeline states to a binary archive at app runtime, and build binaries for any supported GPU.
 
@@ -8,15 +9,15 @@ Write your Metal pipeline states to a binary archive at app runtime, and build b
 
 When building your shaders at runtime, Metal uses pipeline state descriptors in addition to the Metal intermediate representation (IR) it compiles from your shader functions. To build binary archives for distribution, the compiler needs some information about your app’s Metal pipelines, and a way to interpret them. When serializing a binary archive to device storage from your app, Metal includes a pipeline configuration script with it. The Metal translator is the part of the compiler that reads these configurations, and enables GPU-specific compilation for platforms other than the host GPU. Invoke the translator with the `metal-tt` command in Terminal or from a build script.
 
-![A block flow diagram of the workflow for creating Metal binary archives. At the upper left, the process starts with a shader.msl source file that flows to the metal command-line tool and the resulting Metal IR library, shader.metallib. At the bottom middle, an independent workflow shows two boxes labeled Extract from app and Author with text editor. These combine to a final configuration script named HASH.mtlp-json. At the right, the Metal IR library and Metal config boxes flow together into the metal-tt command-line tool and produce the final product of a binary archive named shader.binary.metallib.](/images/com.apple.metal/creating-binary-archives-from-device-built-pipeline-state-objects-1@2x.png)
+![A block flow diagram of the workflow for creating Metal binary archives. At the upper left, the process starts with a shader.msl source file that flows to the metal command-line tool and the resulting Metal IR library, shader.metallib. At the bottom middle, an independent workflow shows two boxes labeled Extract from app and Author with text editor. These combine to a final configuration script named HASH.mtlp-json. At the right, the Metal IR library and Metal config boxes flow together into the metal-tt command-line tool and produce the final product of a binary archive named shader.binary.metallib.](https://developer.apple.com/tutorials/images/com.apple.metal/creating-binary-archives-from-device-built-pipeline-state-objects-1@2x.png)
 
-This article explains how to serialize an [`MTLBinaryArchive`](mtlbinaryarchive.md) instance, extract the binary archive from an app you deploy to a device in Xcode, and provide it to the Metal translator to create GPU binaries for your project. You can use the code examples in this article with the app and shaders from the [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md) sample. Another common approach is to create a small command-line tool that loads and compiles your shaders to an initial binary archive in macOS, which you can integrate as part your app’s build scripts.
+This article explains how to serialize an [`MTLBinaryArchive`](./mtlbinaryarchive.md) instance, extract the binary archive from an app you deploy to a device in Xcode, and provide it to the Metal translator to create GPU binaries for your project. You can use the code examples in this article with the app and shaders from the [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md) sample. Another common approach is to create a small command-line tool that loads and compiles your shaders to an initial binary archive in macOS, which you can integrate as part your app’s build scripts.
 
-> **Note**: Support of specialized functions in [`MTLBinaryArchive`](mtlbinaryarchive.md) serialization on device requires macOS 15.0 or iOS 18.0 or later. If you’re supporting earlier OS versions, you need to manually edit the configuration script. For instructions, see [`Compiling binary archives from a custom configuration script`](compiling-binary-archives-from-a-custom-configuration-script.md).
+> **Note**: Support of specialized functions in [`MTLBinaryArchive`](./mtlbinaryarchive.md) serialization on device requires macOS 15.0 or iOS 18.0 or later. If you’re supporting earlier OS versions, you need to manually edit the configuration script. For instructions, see [Compiling binary archives from a custom configuration script](./compiling-binary-archives-from-a-custom-configuration-script.md).
 
-##### Create a Metal Binary Archive in Your App
+##### Create a Metal binary archive in your app
 
-Create an instance of [`MTLBinaryArchive`](mtlbinaryarchive.md) from an [`MTLBinaryArchiveDescriptor`](mtlbinaryarchivedescriptor.md) with a `nil` [`url`](mtlbinaryarchivedescriptor/url.md) property. This instructs Metal to create, rather than load, a binary archive. After creating the archive, add all pipeline descriptors you use in your encoder to the binary archive. The following code example performs these steps for an [`MTLDevice`](mtldevice.md) instance named `device` and an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance named `pipelineStateDescriptor`:
+Create an instance of [`MTLBinaryArchive`](./mtlbinaryarchive.md) from an [`MTLBinaryArchiveDescriptor`](./mtlbinaryarchivedescriptor.md) with a `nil` [`url`](./mtlbinaryarchivedescriptor/url.md) property. This instructs Metal to create, rather than load, a binary archive. After creating the archive, add all pipeline descriptors you use in your encoder to the binary archive. The following code example performs these steps for an [`MTLDevice`](./mtldevice.md) instance named `device` and an [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) instance named `pipelineStateDescriptor`:
 
 **Swift**:
 
@@ -43,7 +44,7 @@ BOOL success = [archive addRenderPipelineFunctionsWithDescriptor:pipelineStateDe
 
 > 💡 **Tip**:  If you’re adding binary archive serialization to an existing app, create your render pipeline state after creating your binary archive instance in the app. When you do, Metal can take advantage of optimizations that increase shader compilation speed, and reduce memory usage.
 
-After adding pipeline descriptors to the binary archive, serialize it to storage. The following code example shows how to serialize an [`MTLBinaryArchive`](mtlbinaryarchive.md) instance to device storage:
+After adding pipeline descriptors to the binary archive, serialize it to storage. The following code example shows how to serialize an [`MTLBinaryArchive`](./mtlbinaryarchive.md) instance to device storage:
 
 **Swift**:
 
@@ -86,11 +87,11 @@ fn serializeBinary(archive: MTLBinaryArchive, name: String) throws {
 }
 ```
 
-> **Note**:  In macOS, store resources outside your application bundle and within an appropriate directory. Storing runtime-created resources inside an application bundle can cause code-signing and verification errors when rebuilding. For more information on how to discover and diagnose these issues, see [`Testing a release build`](https://developer.apple.com/documentation/xcode/testing-a-release-build).
+> **Note**:  In macOS, store resources outside your application bundle and within an appropriate directory. Storing runtime-created resources inside an application bundle can cause code-signing and verification errors when rebuilding. For more information on how to discover and diagnose these issues, see [Testing a release build](../Xcode/testing-a-release-build.md).
 
 Run your app on a device to create a Metal binary archive at the URL in your code.
 
-##### Extract the Binary Archive From Your App
+##### Extract the binary archive from your app
 
 After running your app, the resulting binary archive contains a single binary slice for the GPU architecture of your target device. In macOS, you can access the archive directly on your development computer at the path `${HOME}/Library/Application Support/${BUNDLE_ID}/${LIBRARY_NAME}.binary.metallib`.
 
@@ -103,7 +104,7 @@ For archived binaries you produce on another type of device, retrieve them as fo
 5. In Finder, navigate to the container’s saved location, Control-click it, and select Show Package Contents to open it.
 6. Copy the binary archive located at `AppData/Library/Application Support/${LIBRARY_NAME}.binary.metallib` to another directory.
 
-![A screenshot of the Devices and Simulators window in Xcode, showing a connected iPhone 15. In the pane on the right, HelloTriangle is selected in the Installed Apps section. At the bottom of the pane, the Download Container option is highlighted in the More menu.](/images/com.apple.metal/creating-binary-archives-from-device-built-pipeline-state-objects-2@2x.png)
+![A screenshot of the Devices and Simulators window in Xcode, showing a connected iPhone 15. In the pane on the right, HelloTriangle is selected in the Installed Apps section. At the bottom of the pane, the Download Container option is highlighted in the More menu.](https://developer.apple.com/tutorials/images/com.apple.metal/creating-binary-archives-from-device-built-pipeline-state-objects-2@2x.png)
 
 Use `metal-lipo -archs` to inspect a binary archive and display the compiled GPU architectures. For example, a MacBook M1 Pro produces an `applegpu_g13g` binary archive.
 
@@ -114,7 +115,7 @@ applegpu_g13g air64_v26
 
 Note that binary archives still contain a Metal IR slice, `air64_v26`. Metal may invalidate binaries when upgrading a device’s operating system, and shaders recompile from the Metal IR in the archive.
 
-##### Copy and Modify the Configuration Script
+##### Copy and modify the configuration script
 
 The pipeline state that Metal builds during binary serialization is a *pipeline configuration script*, a JSON file with the extension `mtlp-json`. This is the data you retrieve from the binary archive and modify to compile new binary slices. Start by extracting the Metal binaries and configuration script from the archive using the `metal-source` command-line tool in Terminal.
 
@@ -160,11 +161,11 @@ Any compatible device can load the `precompiled.binary.metallib` and skip runtim
 applegpu_g12p applegpu_g13p applegpu_g13g applegpu_g14p applegpu_g14g applegpu_g16p applegpu_g15p
 ```
 
-##### Add Your Compiled Binary Archive to Your App
+##### Add your compiled binary archive to your app
 
-To use this newly created Metal binary archive, you need to add it to your Xcode project’s bundle resources. Add the `precompiled.binary.metallib` archive to your project’s Copy Bundle Resources build phase. For instructions, see [`Customizing the build phases of a target`](https://developer.apple.com/documentation/xcode/customizing-the-build-phases-of-a-target).
+To use this newly created Metal binary archive, you need to add it to your Xcode project’s bundle resources. Add the `precompiled.binary.metallib` archive to your project’s Copy Bundle Resources build phase. For instructions, see [Customizing the build phases of a target](../Xcode/customizing-the-build-phases-of-a-target.md).
 
-For Metal to take advantage of precompiled binaries, load them with [`makeBinaryArchive(descriptor:)`](mtldevice/makebinaryarchive(descriptor:).md) and provide an [`MTLBinaryArchiveDescriptor`](mtlbinaryarchivedescriptor.md) with a [`url`](mtlbinaryarchivedescriptor/url.md) pointing to the binary archive. Then add them to a pipeline descriptor instance’s [`binaryArchives`](mtlrenderpipelinedescriptor/binaryarchives.md) property.
+For Metal to take advantage of precompiled binaries, load them with [`makeBinaryArchive(descriptor:)`](./mtldevice/makebinaryarchive%28descriptor%29.md) and provide an [`MTLBinaryArchiveDescriptor`](./mtlbinaryarchivedescriptor.md) with a [`url`](./mtlbinaryarchivedescriptor/url.md) pointing to the binary archive. Then add them to a pipeline descriptor instance’s [`binaryArchives`](./mtlrenderpipelinedescriptor/binaryarchives.md) property.
 
 **Swift**:
 
@@ -196,13 +197,14 @@ if (archive == nil) {
 pipelineDescriptor.binaryArchives = [pipelineDescriptor.binaryArchives arrayByAddingObject:archive];
 ```
 
-> 💡 **Tip**:  Failing to load a binary archive isn’t a fatal error in Metal, and it falls back on the compilation of Metal IR at runtime. To cause a failure from the Metal system when an expected binary archive doesn’t load, configure your pipeline with an [`MTLPipelineOption`](mtlpipelineoption.md) of [`failOnBinaryArchiveMiss`](mtlpipelineoption/failonbinaryarchivemiss.md).
+> 💡 **Tip**:  Failing to load a binary archive isn’t a fatal error in Metal, and it falls back on the compilation of Metal IR at runtime. To cause a failure from the Metal system when an expected binary archive doesn’t load, configure your pipeline with an [`MTLPipelineOption`](./mtlpipelineoption.md) of [`failOnBinaryArchiveMiss`](./mtlpipelineoption/failonbinaryarchivemiss.md).
 
 ## See Also
 
-- [Manipulating Metal binary archives](manipulating-metal-binary-archives.md)
+### Working with Metal binary archives
+- [Manipulating Metal binary archives](./manipulating-metal-binary-archives.md)
   Split precompiled binaries into individual slices, and combine them back together for targeted distribution.
-- [Compiling binary archives from a custom configuration script](compiling-binary-archives-from-a-custom-configuration-script.md)
+- [Compiling binary archives from a custom configuration script](./compiling-binary-archives-from-a-custom-configuration-script.md)
   Define how the Metal translator builds binary archives without precompiled binaries as a starting source.
 
 

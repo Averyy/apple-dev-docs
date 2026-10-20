@@ -1,7 +1,8 @@
 # Get boolean rule results
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the results of a specific matchmaking rule that returns Boolean values.
 
@@ -14,7 +15,7 @@ Get the results of a specific matchmaking rule that returns Boolean values.
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRules/0f0fcbf9-43b6-429d-8c08-fcaf66a52872/metrics/matchmakingBooleanRuleResults?granularity=PT15M&groupBy=result
 
 ```
@@ -530,18 +531,42 @@ GET https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingRules/0f0fcbf9
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the rule.
+
+### Query Parameters
+
 - `filter[gameCenterMatchmakingQueue]` (string): The fields of the queues to include in the response.
 - `filter[result]` (string): The types of the results to include in the response.
 - `granularity` (string) *(required)*: The level of information you want in the response, specified as a time interval for the data collection, using the ISO 8601 format for durations.
+
+  **Allowed Values**: `P1D`, `PT1H`, `PT15M`
 - `groupBy` ([string]): Organizes the results by queue or outcome.
+
+  **Allowed Values**: `result`, `gameCenterMatchmakingQueue`
 - `limit` (integer): The maximum number of results to include.
+
+  **Maximum**: `200`
 - `sort` ([string]): Sort results by decreasing or increasing count. For example, `count` sorts the results by decreasing number of players that Game Center finds.
+
+  **Allowed Values**: `count`, `-count`
+
+## Responses
+
+- `200` OK (`GameCenterMatchmakingBooleanRuleResultsV1MetricResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Get Numeric Rule Results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingnumberruleresults.md)
+### Getting rule results and errors
+- [Get Numeric Rule Results](./get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingnumberruleresults.md)
   Get the results of a specific matchmaking rule that returns numeric values.
-- [Get Matchmaking Rule Errors](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingruleerrors.md)
+- [Get Matchmaking Rule Errors](./get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingruleerrors.md)
   Get errors that occur for a specific matchmaking rule.
 
 

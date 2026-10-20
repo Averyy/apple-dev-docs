@@ -1,17 +1,22 @@
 # webPlugInSetIsSelected(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls plug-in behavior based on its selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func webPlugInSetIsSelected(_ isSelected: Bool)
+```
+
+```objc
+- (void) webPlugInSetIsSelected:(BOOL) isSelected;
 ```
 
 #### Discussion
@@ -20,7 +25,7 @@ This may be used, for example, to change the plug-in’s appearance when it is s
 
 ## Parameters
 
-- `isSelected`: If [`YES`](yes.md), the plug-in is currently selected. Otherwise, it is not selected.
+- `isSelected`: If [`YES`](../yes.md), the plug-in is currently selected. Otherwise, it is not selected.
 
 
 ---

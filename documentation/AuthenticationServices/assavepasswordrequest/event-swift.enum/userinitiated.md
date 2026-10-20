@@ -1,7 +1,8 @@
 # ASSavePasswordRequest.Event.userInitiated
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The save event that occurs when a user has expressly stated they wish to save the credential.
 
@@ -15,6 +16,10 @@ The save event that occurs when a user has expressly stated they wish to save th
 
 ```swift
 case userInitiated
+```
+
+```c
+ASSavePasswordRequestEventUserInitiated
 ```
 
 #### Discussion

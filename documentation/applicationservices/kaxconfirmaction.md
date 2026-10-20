@@ -1,7 +1,8 @@
 # kAXConfirmAction
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Simulates pressing the Return key.
 
@@ -12,6 +13,10 @@ Simulates pressing the Return key.
 
 ```swift
 var kAXConfirmAction: String { get }
+```
+
+```c
+#define kAXConfirmAction
 ```
 
 

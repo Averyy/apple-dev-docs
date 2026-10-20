@@ -1,7 +1,8 @@
 # MTLSamplerReductionMode
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Configures how the sampler aggregates contributing samples to a final value.
 
@@ -19,37 +20,42 @@ Configures how the sampler aggregates contributing samples to a final value.
 enum MTLSamplerReductionMode
 ```
 
+```c
+enum MTLSamplerReductionMode : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLSamplerReductionMode.maximum](mtlsamplerreductionmode/maximum.md)
+- [MTLSamplerReductionMode.maximum](./mtlsamplerreductionmode/maximum.md)
   A reduction mode that finds the maximum contributing sample value by separately evaluating each channel.
-- [MTLSamplerReductionMode.minimum](mtlsamplerreductionmode/minimum.md)
+- [MTLSamplerReductionMode.minimum](./mtlsamplerreductionmode/minimum.md)
   A reduction mode that finds the minimum contributing sample value by separately evaluating each channel.
-- [MTLSamplerReductionMode.weightedAverage](mtlsamplerreductionmode/weightedaverage.md)
+- [MTLSamplerReductionMode.weightedAverage](./mtlsamplerreductionmode/weightedaverage.md)
   A reduction mode that adds together the product of each contributing sample value by its weight.
 ### Initializers
-- [init?(rawValue: UInt)](mtlsamplerreductionmode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlsamplerreductionmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating and sampling textures](creating-and-sampling-textures.md)
+### Texture samplers
+- [Creating and sampling textures](./creating-and-sampling-textures.md)
   Load image data into a texture and apply it to a quadrangle.
-- [protocol MTLSamplerState](mtlsamplerstate.md)
+- [protocol MTLSamplerState](./mtlsamplerstate.md)
   An instance that defines how a texture should be sampled.
-- [class MTLSamplerDescriptor](mtlsamplerdescriptor.md)
+- [class MTLSamplerDescriptor](./mtlsamplerdescriptor.md)
   An object that you use to configure a texture sampler.
-- [struct MTLSamplePosition](mtlsampleposition.md)
+- [struct MTLSamplePosition](./mtlsampleposition.md)
   A subpixel sample position for use in multisample antialiasing (MSAA).
 
 

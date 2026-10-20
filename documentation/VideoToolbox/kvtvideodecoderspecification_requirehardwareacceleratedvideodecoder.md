@@ -1,7 +1,8 @@
 # kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether to require hardware-accelerated decoding.
 
@@ -19,11 +20,15 @@ A Boolean value indicating whether to require hardware-accelerated decoding.
 let kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder: CFString
 ```
 
+```c
+extern CFStringRef const kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder;
+```
+
 #### Discussion
 
-This key is set in the `decoderSpecification` passed in to [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](vtdecompressionsessioncreate(allocator:formatdescription:decoderspecification:imagebufferattributes:outputcallback:decompressionsessionout:).md). If set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), VideoToolbox tries to allocate a hardware-accelerated decoder. If it cannot, it returns an error and the session creation fails.
+This key is set in the `decoderSpecification` passed in to [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](./vtdecompressionsessioncreate%28allocator,formatdescription,decoderspecification,imagebufferattributes,outputcallback,decompressionsessionout%29.md). If set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), VideoToolbox tries to allocate a hardware-accelerated decoder. If it cannot, it returns an error and the session creation fails.
 
-Setting this key automatically implies [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)–there is no need to set both and the Enable key does nothing if the Require key is set.	This key is useful for clients that have their own software decoding implementation or those that may want to configure software and hardware decode sessions differently.
+Setting this key automatically implies [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](./kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)–there is no need to set both and the Enable key does nothing if the Require key is set.	This key is useful for clients that have their own software decoding implementation or those that may want to configure software and hardware decode sessions differently.
 
 Hardware acceleration may be unavailable for a number of reasons:
 
@@ -33,9 +38,10 @@ Hardware acceleration may be unavailable for a number of reasons:
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder: CFString](kvtdecompressionpropertykey_usinghardwareacceleratedvideodecoder.md)
+### Hardware Acceleration
+- [let kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder: CFString](./kvtdecompressionpropertykey_usinghardwareacceleratedvideodecoder.md)
   Indicates if a hardware-accelerated video decoder is being used.
-- [let kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder: CFString](kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)
+- [let kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder: CFString](./kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)
   A Boolean value indicating whether VideoToolbox uses a hardware-accelerated video decoder, if available.
 
 

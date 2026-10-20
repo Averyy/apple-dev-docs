@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Rect3D, Rect3D) -> Bool](rect3d/==(_:_:).md)
+- [static func == (Rect3D, Rect3D) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 

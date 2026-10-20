@@ -1,7 +1,8 @@
 # customVirtioDeviceSaveState(forRestore:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls when a device needs to save its state.
 
@@ -14,9 +15,13 @@ The method the framework calls when a device needs to save its state.
 optional func customVirtioDeviceSaveState(forRestore device: VZCustomVirtioDevice) -> Data?
 ```
 
+```objc
+- (NSData *) customVirtioDeviceSaveStateForRestore:(VZCustomVirtioDevice *) device;
+```
+
 #### Discussion
 
-Return the state data to save in an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object. If there is no state to save, return an empty NSData object ([NSData data]).
+Return the state data to save in an [`NSData`](../../Foundation/nsdata.md) object. If there is no state to save, return an empty NSData object ([NSData data]).
 
 If you return `nil` from this method, the save operation fails.
 

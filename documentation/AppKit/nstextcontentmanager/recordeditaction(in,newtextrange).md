@@ -1,7 +1,8 @@
 # recordEditAction(in:newTextRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Records information about an edit action to the transaction.
 
@@ -12,6 +13,10 @@ Records information about an edit action to the transaction.
 
 ```swift
 func recordEditAction(in originalTextRange: NSTextRange, newTextRange: NSTextRange)
+```
+
+```objc
+- (void) recordEditActionInRange:(NSTextRange *) originalTextRange newTextRange:(NSTextRange *) newTextRange;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ The concrete subclass invokes this method for each edit action.
 
 ## See Also
 
-- [var hasEditingTransaction: Bool](nstextcontentmanager/haseditingtransaction.md)
+### Performing transactions
+- [var hasEditingTransaction: Bool](./haseditingtransaction.md)
   Indicates there’s an active editing transaction from the primary text layout manager.
-- [func performEditingTransaction(() -> Void)](nstextcontentmanager/performeditingtransaction(_:).md)
+- [func performEditingTransaction(() -> Void)](./performeditingtransaction%28_%29.md)
   Performs an editing transaction and invokes a block upon completion.
 
 

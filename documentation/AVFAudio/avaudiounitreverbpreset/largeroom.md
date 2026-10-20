@@ -1,7 +1,8 @@
 # AVAudioUnitReverbPreset.largeRoom
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A preset that represents a reverb with the acoustic characteristics of a large-sized room environment.
 
@@ -10,7 +11,7 @@ A preset that represents a reverb with the acoustic characteristics of a large-s
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ A preset that represents a reverb with the acoustic characteristics of a large-s
 case largeRoom
 ```
 
+```c
+AVAudioUnitReverbPresetLargeRoom
+```
+
 ## See Also
 
-- [AVAudioUnitReverbPreset.smallRoom](avaudiounitreverbpreset/smallroom.md)
+### Choosing a room preset
+- [AVAudioUnitReverbPreset.smallRoom](./smallroom.md)
   A preset that represents a reverb with the acoustic characteristics of a small-sized room environment.
-- [AVAudioUnitReverbPreset.mediumRoom](avaudiounitreverbpreset/mediumroom.md)
+- [AVAudioUnitReverbPreset.mediumRoom](./mediumroom.md)
   A preset that represents a reverb with the acoustic characteristics of a medium-sized room environment.
-- [AVAudioUnitReverbPreset.largeRoom2](avaudiounitreverbpreset/largeroom2.md)
+- [AVAudioUnitReverbPreset.largeRoom2](./largeroom2.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative large-sized room environment.
 
 

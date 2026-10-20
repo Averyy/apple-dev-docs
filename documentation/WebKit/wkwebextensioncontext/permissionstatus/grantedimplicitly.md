@@ -1,7 +1,8 @@
 # WKWebExtensionContext.PermissionStatus.grantedImplicitly
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the permission was implicitly granted because of another explicitly granted permission.
 
@@ -16,6 +17,10 @@ Indicates that the permission was implicitly granted because of another explicit
 
 ```swift
 case grantedImplicitly
+```
+
+```c
+WKWebExtensionContextPermissionStatusGrantedImplicitly
 ```
 
 

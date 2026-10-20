@@ -1,7 +1,8 @@
 # AVAssetExportPresetMVHEVC4320x4320
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,13 +17,18 @@
 let AVAssetExportPresetMVHEVC4320x4320: String
 ```
 
+```c
+extern NSString * const AVAssetExportPresetMVHEVC4320x4320;
+```
+
 ## See Also
 
-- [let AVAssetExportPresetMVHEVC960x960: String](avassetexportpresetmvhevc960x960.md)
+### MV-HEVC presets
+- [let AVAssetExportPresetMVHEVC960x960: String](./avassetexportpresetmvhevc960x960.md)
   A preset to export a 960 by 960 movie that contains MV-HEVC video and AAC audio.
-- [let AVAssetExportPresetMVHEVC1440x1440: String](avassetexportpresetmvhevc1440x1440.md)
+- [let AVAssetExportPresetMVHEVC1440x1440: String](./avassetexportpresetmvhevc1440x1440.md)
   A preset to export a 1440 by 1440 movie that contains MV-HEVC video and AAC audio.
-- [let AVAssetExportPresetMVHEVC7680x7680: String](avassetexportpresetmvhevc7680x7680.md)
+- [let AVAssetExportPresetMVHEVC7680x7680: String](./avassetexportpresetmvhevc7680x7680.md)
 
 
 ---

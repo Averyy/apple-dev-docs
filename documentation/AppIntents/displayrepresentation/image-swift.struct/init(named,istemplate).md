@@ -1,7 +1,8 @@
 # init(named:isTemplate:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image object from an image file in the extension’s bundle.
 
@@ -11,7 +12,7 @@ Creates an image object from an image file in the extension’s bundle.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

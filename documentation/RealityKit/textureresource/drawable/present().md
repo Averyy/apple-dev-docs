@@ -1,7 +1,8 @@
 # present()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the updated texture to the renderer as soon as possible.
 
@@ -11,7 +12,7 @@ Presents the updated texture to the renderer as soon as possible.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ Alternatively, instead of waiting for completion you can call `MTLCommandBuffer.
 
 ## See Also
 
-- [var drawableQueue: TextureResource.DrawableQueue](textureresource/drawable/drawablequeue.md)
+### Working with a drawable
+- [var drawableQueue: TextureResource.DrawableQueue](./drawablequeue.md)
   The DrawableQueue that this Drawable is owned by
-- [var texture: any MTLTexture](textureresource/drawable/texture.md)
+- [var texture: any MTLTexture](./texture.md)
   A Metal texture object that contains the drawable’s contents.
 
 

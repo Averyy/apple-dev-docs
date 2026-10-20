@@ -1,7 +1,8 @@
 # maximumPortCount
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unsigned integer that represents the maximum number of ports allocated by this device.
 
@@ -12,6 +13,10 @@ An unsigned integer that represents the maximum number of ports allocated by thi
 
 ```swift
 var maximumPortCount: UInt32 { get }
+```
+
+```objc
+@property (readonly) uint32_t maximumPortCount;
 ```
 
 

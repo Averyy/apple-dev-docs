@@ -1,7 +1,8 @@
 # isAnyKeyPressed
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user is pressing any of the keys.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the user is pressing any of the keys.
 var isAnyKeyPressed: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAnyKeyPressed) BOOL anyKeyPressed;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the user is pressing a key; otherwise, the user isn’t. You can use this property to check whether the user presses any key before getting the state of specific keys.
+If [`true`](../../Swift/true.md), the user is pressing a key; otherwise, the user isn’t. You can use this property to check whether the user presses any key before getting the state of specific keys.
 
 ## See Also
 
-- [func button(forKeyCode: GCKeyCode) -> GCControllerButtonInput?](gckeyboardinput/button(forkeycode:).md)
+### Accessing Buttons
+- [func button(forKeyCode: GCKeyCode) -> GCControllerButtonInput?](./button%28forkeycode%29.md)
   Returns the button element for the specified key code.
-- [struct GCKeyCode](gckeycode.md)
+- [struct GCKeyCode](../gckeycode.md)
   The key codes for keys on a keyboard.
-- [Keycode Constants](keycode-constants.md)
+- [Keycode Constants](../keycode-constants.md)
   Constants for the codes of keyboard keys.
 
 

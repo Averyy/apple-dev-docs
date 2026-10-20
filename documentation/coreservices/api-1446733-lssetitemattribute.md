@@ -1,7 +1,8 @@
 # LSSetItemAttribute(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+ - Deprecated in 10.10
@@ -10,6 +11,10 @@
 
 ```swift
 func LSSetItemAttribute(_ inItem: UnsafePointer<FSRef>!, _ inRoles: LSRolesMask, _ inAttributeName: CFString!, _ inValue: CFTypeRef!) -> OSStatus
+```
+
+```c
+OSStatus LSSetItemAttribute(const FSRef *inItem, LSRolesMask inRoles, CFStringRef inAttributeName, CFTypeRef inValue);
 ```
 
 

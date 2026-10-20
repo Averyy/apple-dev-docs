@@ -1,7 +1,8 @@
 # shaderGraph
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Shader graph constructed from the material prim.
 

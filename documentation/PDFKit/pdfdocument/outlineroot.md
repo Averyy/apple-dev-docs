@@ -1,7 +1,8 @@
 # outlineRoot
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document’s root outline to a PDF outline object.
 
@@ -19,6 +20,10 @@ The document’s root outline to a PDF outline object.
 var outlineRoot: PDFOutline? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PDFOutline * outlineRoot;
+```
+
 #### Discussion
 
 When a PDF document is saved, the outline tree structure is written out to the destination PDF file.
@@ -29,21 +34,23 @@ When a PDF document is saved, the outline tree structure is written out to the d
 
 ## See Also
 
-- [class PDFDocument](pdfdocument.md)
+### Related Documentation
+- [class PDFDocument](../pdfdocument.md)
   An object that represents PDF data or a PDF file and defines methods for writing, searching, and selecting PDF data.
-- [var documentURL: URL?](pdfdocument/documenturl.md)
+### Accessing Document Information
+- [var documentURL: URL?](./documenturl.md)
   The URL for the document.
-- [var majorVersion: Int](pdfdocument/majorversion.md)
+- [var majorVersion: Int](./majorversion.md)
   The major version of the document.
-- [var minorVersion: Int](pdfdocument/minorversion.md)
+- [var minorVersion: Int](./minorversion.md)
   The minor version of the document.
-- [var string: String?](pdfdocument/string.md)
+- [var string: String?](./string.md)
   A string representing the textual content for the entire document.
-- [func outlineItem(for: PDFSelection) -> PDFOutline?](pdfdocument/outlineitem(for:).md)
+- [func outlineItem(for: PDFSelection) -> PDFOutline?](./outlineitem%28for%29.md)
   Returns the most likely parent PDF outline object for the selection.
-- [var documentAttributes: [AnyHashable : Any]?](pdfdocument/documentattributes.md)
+- [var documentAttributes: [AnyHashable : Any]?](./documentattributes.md)
   A dictionary of document metadata.
-- [var documentRef: CGPDFDocument?](pdfdocument/documentref.md)
+- [var documentRef: CGPDFDocument?](./documentref.md)
   The `CGPDFDocument` associated with the `PDFDocument` object.
 
 

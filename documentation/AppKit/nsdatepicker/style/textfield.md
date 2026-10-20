@@ -1,10 +1,11 @@
 # NSDatePicker.Style.textField
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 case textField
 ```
 
+```c
+NSDatePickerStyleTextField
+```
+
 ## See Also
 
-- [NSDatePicker.Style.clockAndCalendar](nsdatepicker/style/clockandcalendar.md)
-- [NSDatePicker.Style.textFieldAndStepper](nsdatepicker/style/textfieldandstepper.md)
+### Enumeration Cases
+- [NSDatePicker.Style.clockAndCalendar](./clockandcalendar.md)
+- [NSDatePicker.Style.textFieldAndStepper](./textfieldandstepper.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # removed
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Participants that were removed by this operation.
 

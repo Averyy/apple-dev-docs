@@ -1,7 +1,8 @@
 # isLocal
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ var isLocal: Bool { get }
 
 ## See Also
 
-- [var isGlobal: Bool](coordinatespace/isglobal.md)
+### Testing a space
+- [var isGlobal: Bool](./isglobal.md)
 
 
 ---

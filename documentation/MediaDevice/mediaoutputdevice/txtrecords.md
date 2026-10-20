@@ -1,7 +1,8 @@
 # txtRecords
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 TXT records associated with the device discovered via network protocols.
 
@@ -20,7 +21,7 @@ let txtRecords: [NWTXTRecord]
 
 Contains key-value pairs of metadata about the device that were advertised during network discovery (for example, via Bonjour/mDNS). This information can include device-specific attributes, service capabilities, version information, or other properties that help identify and configure the connection.
 
-> **Note**: `NWTXTRecord` for details on working with TXT record data
+> **See Also**: `NWTXTRecord` for details on working with TXT record data
 
 
 ---

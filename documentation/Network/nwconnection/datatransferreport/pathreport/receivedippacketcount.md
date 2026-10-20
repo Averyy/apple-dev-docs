@@ -1,7 +1,8 @@
 # receivedIPPacketCount
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of IP packets the connection received.
 
@@ -22,7 +23,8 @@ let receivedIPPacketCount: UInt64
 
 ## See Also
 
-- [let sentIPPacketCount: UInt64](nwconnection/datatransferreport/pathreport/sentippacketcount.md)
+### Inspecting Packet Metrics
+- [let sentIPPacketCount: UInt64](./sentippacketcount.md)
   The number of IP packets the connection sent.
 
 

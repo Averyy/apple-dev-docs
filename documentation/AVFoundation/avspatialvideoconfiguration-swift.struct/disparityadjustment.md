@@ -1,7 +1,8 @@
 # disparityAdjustment
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies a relative shift of the left and right images, which changes the zero parallax plane.
 
@@ -25,11 +26,12 @@ The value is in normalized image space and measured over the range of -10000 to 
 
 ## See Also
 
-- [var cameraCalibrationDataLensCollection: CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection?](avspatialvideoconfiguration-swift.struct/cameracalibrationdatalenscollection.md)
+### Modifying the configuration
+- [var cameraCalibrationDataLensCollection: CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection?](./cameracalibrationdatalenscollection.md)
   Specifies intrinsic and extrinsic parameters for single or multiple lenses.
-- [var cameraSystemBaseline: UInt32?](avspatialvideoconfiguration-swift.struct/camerasystembaseline.md)
+- [var cameraSystemBaseline: UInt32?](./camerasystembaseline.md)
   Specifies the distance between centers of the lenses of the camera system that created the video.
-- [var horizontalFieldOfView: UInt32?](avspatialvideoconfiguration-swift.struct/horizontalfieldofview.md)
+- [var horizontalFieldOfView: UInt32?](./horizontalfieldofview.md)
   Specifies horizontal field of view in thousandths of a degree. Can be nil if the value is unknown.
 
 

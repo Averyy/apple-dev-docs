@@ -1,13 +1,14 @@
 # transactionStatus
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 7.0+
 
@@ -17,14 +18,19 @@
 var transactionStatus: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * transactionStatus;
+```
+
 ## See Also
 
-- [var amount: NSNumber](pkbarcodeeventsignaturerequest/amount.md)
-- [var currencyCode: String](pkbarcodeeventsignaturerequest/currencycode.md)
-- [var transactionDate: Date](pkbarcodeeventsignaturerequest/transactiondate.md)
-- [var transactionIdentifier: String](pkbarcodeeventsignaturerequest/transactionidentifier.md)
-- [var merchantName: String](pkbarcodeeventsignaturerequest/merchantname.md)
-- [var rawMerchantName: String](pkbarcodeeventsignaturerequest/rawmerchantname.md)
+### Getting Transaction Details
+- [var amount: NSNumber](./amount.md)
+- [var currencyCode: String](./currencycode.md)
+- [var transactionDate: Date](./transactiondate.md)
+- [var transactionIdentifier: String](./transactionidentifier.md)
+- [var merchantName: String](./merchantname.md)
+- [var rawMerchantName: String](./rawmerchantname.md)
 
 
 ---

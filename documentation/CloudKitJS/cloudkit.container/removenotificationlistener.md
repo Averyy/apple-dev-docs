@@ -1,7 +1,8 @@
 # removeNotificationListener
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a function to call when a push notification occurs.
 
@@ -10,7 +11,7 @@ Removes a function to call when a push notification occurs.
 
 ## Declaration
 
-```swift
+```
 void removeNotificationListener(
 	function listener
 );
@@ -18,13 +19,14 @@ void removeNotificationListener(
 
 ## See Also
 
-- [addNotificationListener](cloudkit.container/addnotificationlistener.md)
+### Receiving Notifications
+- [addNotificationListener](./addnotificationlistener.md)
   Adds a function to call when a push notification occurs.
-- [registerForNotifications](cloudkit.container/registerfornotifications.md)
+- [registerForNotifications](./registerfornotifications.md)
   Registers to receive push notifications.
-- [unregisterForNotifications](cloudkit.container/unregisterfornotifications.md)
+- [unregisterForNotifications](./unregisterfornotifications.md)
   Unregisters to receive push notifications.
-- [isRegisteredForNotifications](cloudkit.container/isregisteredfornotifications.md)
+- [isRegisteredForNotifications](./isregisteredfornotifications.md)
   Boolean value indicating whether this container is registered to receive push notifications.
 
 

@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option set which applies to the next acceleration structure motion-instance you create with the descriptor.
 
@@ -19,11 +20,16 @@ An option set which applies to the next acceleration structure motion-instance y
 var options: MTLAccelerationStructureInstanceOptions
 ```
 
+```c
+MTLAccelerationStructureInstanceOptions options;
+```
+
 ## See Also
 
-- [var intersectionFunctionTableOffset: UInt32](mtlaccelerationstructuremotioninstancedescriptor/intersectionfunctiontableoffset.md)
+### Customizing intersection and hit tests for the instance
+- [var intersectionFunctionTableOffset: UInt32](./intersectionfunctiontableoffset.md)
   An offset into the intersection-function table for ray tracing, which applies to the next acceleration-structure motion instance you create with the descriptor.
-- [var mask: UInt32](mtlaccelerationstructuremotioninstancedescriptor/mask.md)
+- [var mask: UInt32](./mask.md)
   A mask for testing ray-tracing rays with a scene’s geometry, which applies to the next acceleration-structure motion instance you create with the descriptor.
 
 

@@ -1,7 +1,8 @@
 # spacing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The floating-point value of the space.
 
@@ -16,6 +17,10 @@ The floating-point value of the space.
 
 ```swift
 var spacing: CGFloat { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGFloat spacing;
 ```
 
 

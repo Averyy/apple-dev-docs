@@ -1,7 +1,8 @@
 # addRequest(_:processingOptions:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a request with processing options to the video processor.
 
@@ -19,9 +20,13 @@ Adds a request with processing options to the video processor.
 func addRequest(_ request: VNRequest, processingOptions: VNVideoProcessor.RequestProcessingOptions) throws
 ```
 
+```objc
+- (BOOL) addRequest:(VNRequest *) request processingOptions:(VNVideoProcessorRequestProcessingOptions *) processingOptions error:(NSError **) error;
+```
+
 #### Discussion
 
-Call this method either before calling [`analyze(_:)`](vnvideoprocessor/analyze(_:).md) or from within the completion handler of an already associated request.
+Call this method either before calling [`analyze(_:)`](./analyze%28_%29.md) or from within the completion handler of an already associated request.
 
 ## Parameters
 
@@ -30,17 +35,18 @@ Call this method either before calling [`analyze(_:)`](vnvideoprocessor/analyze(
 
 ## See Also
 
-- [VNVideoProcessor.RequestProcessingOptions](vnvideoprocessor/requestprocessingoptions.md)
+### Performing Requests
+- [VNVideoProcessor.RequestProcessingOptions](./requestprocessingoptions.md)
   An object that defines a video processor’s configuration options.
-- [func removeRequest(VNRequest) throws](vnvideoprocessor/removerequest(_:).md)
+- [func removeRequest(VNRequest) throws](./removerequest%28_%29.md)
   Removes a Vision request from the video processor’s request queue.
-- [func analyze(CMTimeRange) throws](vnvideoprocessor/analyze(_:).md)
+- [func analyze(CMTimeRange) throws](./analyze%28_%29.md)
   Analyzes a time range of video content.
-- [func cancel()](vnvideoprocessor/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the video processing.
-- [func add(VNRequest, withProcessingOptions: [VNVideoProcessingOption : Any]) throws](vnvideoprocessor/add(_:withprocessingoptions:).md)
+- [func add(VNRequest, withProcessingOptions: [VNVideoProcessingOption : Any]) throws](./add%28_,withprocessingoptions%29.md)
   Adds a Vision request to perform with the specified configuration.
-- [func analyze(with: CMTimeRange) throws](vnvideoprocessor/analyze(with:).md)
+- [func analyze(with: CMTimeRange) throws](./analyze%28with%29.md)
   Analyzes the specifed time range of the video content.
 
 

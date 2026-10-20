@@ -1,6 +1,8 @@
 # Adding custom functions to a shader graph
 
-**Framework**: Metal Performance Shaders Graph
+**Framework**: Metal Performance Shaders Graph  
+**Role**: Sample Code  
+**Download**: [AddingCustomFunctionsToAShaderGraph.zip](https://docs-assets.developer.apple.com/published/abdb15a250d9/AddingCustomFunctionsToAShaderGraph.zip)
 
 Run your own graph functions on the GPU by building the function programmatically.
 
@@ -12,9 +14,9 @@ Run your own graph functions on the GPU by building the function programmaticall
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC20 session [`10677: Build Customized ML Models with the Metal Performance Shaders Graph`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10677/).
+> **Note**: This sample code project is associated with WWDC20 session [10677: Build Customized ML Models with the Metal Performance Shaders Graph](https://developer.apple.com/wwdc20/10677/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 This sample requires the following system and software configuration:
 
@@ -24,9 +26,10 @@ This sample requires the following system and software configuration:
 
 ## See Also
 
-- [Training a neural network using MPSGraph](training-a-neural-network-using-mps-graph.md)
+### Essentials
+- [Training a neural network using MPSGraph](./training-a-neural-network-using-mps-graph.md)
   Train a simple neural network digit classifier.
-- [Filtering images with MPSGraph FFT operations](filtering-images-with-mpsgraph-fft-operations.md)
+- [Filtering images with MPSGraph FFT operations](./filtering-images-with-mpsgraph-fft-operations.md)
   Filter an image with MPSGraph fast Fourier transforms using the convolutional theorem.
 
 

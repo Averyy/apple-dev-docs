@@ -1,7 +1,8 @@
 # MusicLibraryRequestable
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for music items that your app can fetch by using a library request.
 
@@ -23,26 +24,26 @@ protocol MusicLibraryRequestable : MusicItem
 ## Topics
 
 ### Associated Types
-- [associatedtype LibraryFilter](musiclibraryrequestable/libraryfilter.md)
+- [associatedtype LibraryFilter](./musiclibraryrequestable/libraryfilter.md)
   The associated type that contains the set of music item properties your app uses as a filter for a library request.
-- [associatedtype LibrarySortProperties](musiclibraryrequestable/librarysortproperties.md)
+- [associatedtype LibrarySortProperties](./musiclibraryrequestable/librarysortproperties.md)
   The associated type that contains the set of properties your app uses to sort results for a library request.
 
 ## Relationships
 
 ### Inherits From
-- [MusicItem](musicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MusicItem](./musicitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [Album](album.md)
-- [Artist](artist.md)
-- [Genre](genre.md)
-- [MusicVideo](musicvideo.md)
-- [Playlist](playlist.md)
-- [Playlist.Entry](playlist/entry.md)
-- [Song](song.md)
-- [Track](track.md)
+- [Album](./album.md)
+- [Artist](./artist.md)
+- [Genre](./genre.md)
+- [MusicVideo](./musicvideo.md)
+- [Playlist](./playlist.md)
+- [Playlist.Entry](./playlist/entry.md)
+- [Song](./song.md)
+- [Track](./track.md)
 
 
 ---

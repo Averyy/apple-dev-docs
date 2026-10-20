@@ -1,15 +1,17 @@
 # TVMLKit Enumerations
 
-**Framework**: TVMLKit
+**Framework**: TVMLKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [TVDocumentError.Code](tvdocumenterror-swift.struct/code.md)
+- [TVDocumentError.Code](./tvdocumenterror-swift.struct/code.md)
 
 ## See Also
 
-- [TVMLKit Constants](tvmlkit-constants.md)
+### Reference
+- [TVMLKit Constants](./tvmlkit-constants.md)
   This document defines constants in the TVMLKit framework that are not associated with a particular class.
 
 

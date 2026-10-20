@@ -1,7 +1,8 @@
 # Line
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A line-level stream.
 
@@ -10,7 +11,7 @@ A line-level stream.
 
 ## Declaration
 
-```swift
+```c
 Line
 ```
 
@@ -20,7 +21,8 @@ This terminal type applies to both input and output streams.
 
 ## See Also
 
-- [DigitalAudioInterface](audiodriverkit/iouseraudiostreamterminaltype/digitalaudiointerface.md)
+### Audio Interfaces
+- [DigitalAudioInterface](./digitalaudiointerface.md)
   A stream to or from a digital audio interface, defined by ISO 60958.
 
 

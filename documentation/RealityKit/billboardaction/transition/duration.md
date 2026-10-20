@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time the transition takes to go from one state to another.
 

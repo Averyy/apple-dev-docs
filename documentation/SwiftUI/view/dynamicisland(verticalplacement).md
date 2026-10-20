@@ -1,7 +1,8 @@
 # dynamicIsland(verticalPlacement:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
 

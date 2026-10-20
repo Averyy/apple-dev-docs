@@ -1,7 +1,8 @@
 # key
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique name of this image component instance.
 
@@ -14,11 +15,15 @@ The unique name of this image component instance.
 var key: NSDraggingItem.ImageComponentKey { get set }
 ```
 
+```objc
+@property (copy) NSDraggingImageComponentKey key;
+```
+
 #### Discussion
 
-The key must be unique for each component in an [`NSDraggingItem`](nsdraggingitem.md) instance. You can create your own named components, however the keys described in [`NSDragImage Component Keys`](nsdragimage-component-keys.md) have special meanings.
+The key must be unique for each component in an [`NSDraggingItem`](../nsdraggingitem.md) instance. You can create your own named components, however the keys described in [NSDragImage Component Keys](../nsdragimage-component-keys.md) have special meanings.
 
-When an NSDraggingItem instances [`imageComponents`](nsdraggingitem/imagecomponents.md) are changed by one of the `enumerateDraggingItemsWithOptions:forView:classes:searchOptions:usingBlock:` methods the image associated with this key is morphed into the new image component’s image associated with the same key.
+When an NSDraggingItem instances [`imageComponents`](../nsdraggingitem/imagecomponents.md) are changed by one of the `enumerateDraggingItemsWithOptions:forView:classes:searchOptions:usingBlock:` methods the image associated with this key is morphed into the new image component’s image associated with the same key.
 
 
 ---

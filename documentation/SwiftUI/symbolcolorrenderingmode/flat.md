@@ -1,7 +1,8 @@
 # flat
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The symbol image layer should be filled with a solid color.
 

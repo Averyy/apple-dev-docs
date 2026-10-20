@@ -1,7 +1,8 @@
 # isPrior
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ‘isPrior’ will be true if this change observation is being sent before the change happens, due to .prior being passed to `observe()`
 

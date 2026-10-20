@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width of a tile.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The width of a tile.
 var width: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float width;
+```
+
 ## See Also
 
-- [var angle: Float](cioptile/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of a tile.
-- [var center: CGPoint](cioptile/center.md)
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the effect.
-- [var inputImage: CIImage?](cioptile/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var scale: Float](cioptile/scale.md)
+- [var scale: Float](./scale.md)
   A value that determines the number of tiles in the effect.
 
 

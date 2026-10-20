@@ -1,7 +1,8 @@
 # timeStamp
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame’s observed completion time.
 
@@ -10,7 +11,7 @@ The frame’s observed completion time.
 
 ## Declaration
 
-```swift
+```c
 uint64_t timeStamp;
 ```
 
@@ -20,13 +21,14 @@ Interrupt latency and system load may result in more than one frame completing w
 
 ## See Also
 
-- [status](iousbisochronousframe/status.md)
+### Getting the Frame Properties
+- [status](./status.md)
   The completion status for this individual frame.
-- [requestCount](iousbisochronousframe/requestcount.md)
+- [requestCount](./requestcount.md)
   The number of bytes to transfer for this frame.
-- [completeCount](iousbisochronousframe/completecount.md)
+- [completeCount](./completecount.md)
   The number of bytes actually transferred for this frame.
-- [reserved](iousbisochronousframe/reserved.md)
+- [reserved](./reserved.md)
   Reserved for future use.
 
 

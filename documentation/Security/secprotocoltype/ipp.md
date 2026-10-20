@@ -1,7 +1,8 @@
 # SecProtocolType.IPP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates IPP.
 
@@ -13,6 +14,10 @@ Indicates IPP.
 
 ```swift
 case IPP
+```
+
+```c
+kSecProtocolTypeIPP
 ```
 
 

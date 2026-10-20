@@ -1,15 +1,16 @@
 # UIDocument.State
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the document state.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,48 +18,53 @@ Constants that specify the document state.
 struct State
 ```
 
+```c
+enum UIDocumentState : NSUInteger;
+```
+
 #### Overview
 
-A [`UIDocument`](uidocument.md) object stores the current state of the document in the [`documentState`](uidocument/documentstate.md) property. To receive notifications about changes in document state, observe the [`stateChangedNotification`](uidocument/statechangednotification.md) notification.
+A [`UIDocument`](../uidocument.md) object stores the current state of the document in the [`documentState`](./documentstate.md) property. To receive notifications about changes in document state, observe the [`stateChangedNotification`](./statechangednotification.md) notification.
 
 ## Topics
 
 ### Constants
-- [static var normal: UIDocument.State](uidocument/state/normal.md)
+- [static var normal: UIDocument.State](./state/normal.md)
   The document is open, editing is enabled, and there are no conflicts or errors associated with it.
-- [static var closed: UIDocument.State](uidocument/state/closed.md)
+- [static var closed: UIDocument.State](./state/closed.md)
   There was an error in reading the document.
-- [static var inConflict: UIDocument.State](uidocument/state/inconflict.md)
+- [static var inConflict: UIDocument.State](./state/inconflict.md)
   Conflicts exist for the document file located at the file URL.
-- [static var savingError: UIDocument.State](uidocument/state/savingerror.md)
+- [static var savingError: UIDocument.State](./state/savingerror.md)
   There was an error in saving or reverting the document.
-- [static var editingDisabled: UIDocument.State](uidocument/state/editingdisabled.md)
+- [static var editingDisabled: UIDocument.State](./state/editingdisabled.md)
   The document is busy and it isn’t currently safe for user edits.
-- [static var progressAvailable: UIDocument.State](uidocument/state/progressavailable.md)
+- [static var progressAvailable: UIDocument.State](./state/progressavailable.md)
   The document is being downloaded or uploaded and progress information is available.
 ### Initializers
-- [init(rawValue: UInt)](uidocument/state/init(rawvalue:).md)
+- [init(rawValue: UInt)](./state/init%28rawvalue%29.md)
   Creates a document state structure with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [UIDocument.ChangeKind](uidocument/changekind.md)
+### Constants
+- [UIDocument.ChangeKind](./changekind.md)
   Constants that specify the kind of change to a document.
-- [UIDocument.SaveOperation](uidocument/saveoperation.md)
+- [UIDocument.SaveOperation](./saveoperation.md)
   Constants that specify the type of save operation.
-- [class let userActivityURLKey: String](uidocument/useractivityurlkey.md)
+- [class let userActivityURLKey: String](./useractivityurlkey.md)
   The key that identifies the document associated with a user activity.
 
 

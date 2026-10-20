@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The developer defined identifier for a given game activity.
 
@@ -19,9 +20,14 @@ The developer defined identifier for a given game activity.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var groupIdentifier: String?](gkgameactivitydefinition/groupidentifier.md)
+### Getting the identifier properties
+- [var groupIdentifier: String?](./groupidentifier.md)
   The group identifier for the activity, if one exists.
 
 

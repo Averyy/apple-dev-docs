@@ -1,7 +1,8 @@
 # y
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Offset from top edge (0) towards the bottom edge (height).
 

@@ -1,7 +1,8 @@
 # menuBarExtraStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for menu bar extra created by this scene.
 
@@ -17,9 +18,10 @@ func menuBarExtraStyle<S>(_ style: S) -> some Scene where S : MenuBarExtraStyle
 
 ## See Also
 
-- [struct MenuBarExtra](menubarextra.md)
+### Creating a menu bar extra
+- [struct MenuBarExtra](../menubarextra.md)
   A scene that renders itself as a persistent control in the system menu bar.
-- [protocol MenuBarExtraStyle](menubarextrastyle.md)
+- [protocol MenuBarExtraStyle](../menubarextrastyle.md)
   A specification for the appearance and behavior of a menu bar extra scene.
 
 

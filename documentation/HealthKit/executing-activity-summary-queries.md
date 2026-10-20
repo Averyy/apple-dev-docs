@@ -1,12 +1,13 @@
 # Executing Activity Summary Queries
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Create and run activity summary queries.
 
 #### Overview
 
-Use activity summary queries to read [`HKActivitySummary`](hkactivitysummary.md) objects from the HealthKit store. Apps can display summary information using an activity ring view ([`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview) on iOS or [`WKInterfaceActivityRing`](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring) on watchOS).
+Use activity summary queries to read [`HKActivitySummary`](./hkactivitysummary.md) objects from the HealthKit store. Apps can display summary information using an activity ring view ([`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview) on iOS or [`WKInterfaceActivityRing`](../WatchKit/wkinterfaceactivityring.md) on watchOS).
 
 ##### Create the Predicate
 
@@ -35,7 +36,7 @@ let summariesWithinRange = HKQuery.predicate(forActivitySummariesBetweenStart: s
 
 ##### Create the Query
 
-Then create an activity summary query by calling the [`init(predicate:resultsHandler:)`](hkactivitysummaryquery/init(predicate:resultshandler:).md) initializer.
+Then create an activity summary query by calling the [`init(predicate:resultsHandler:)`](./hkactivitysummaryquery/init%28predicate,resultshandler%29.md) initializer.
 
 ```swift
 let query = HKActivitySummaryQuery(predicate: summariesWithinRange) { (query, summariesOrNil, errorOrNil) -> Void in
@@ -62,7 +63,7 @@ The query returns an array of activity summary objects. The results handler shou
 
 ##### Run the Query
 
-After instantiating the query, call the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method.
+After instantiating the query, call the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method.
 
 ```swift
 store.execute(query)
@@ -72,7 +73,8 @@ This method runs the query on an anonymous background queue. When the query is c
 
 ## See Also
 
-- [init(predicate: NSPredicate?, resultsHandler: (HKActivitySummaryQuery, [HKActivitySummary]?, (any Error)?) -> Void)](hkactivitysummaryquery/init(predicate:resultshandler:).md)
+### Creating activity summary queries
+- [init(predicate: NSPredicate?, resultsHandler: (HKActivitySummaryQuery, [HKActivitySummary]?, (any Error)?) -> Void)](./hkactivitysummaryquery/init%28predicate,resultshandler%29.md)
   Initializes a new active summary query.
 
 

@@ -1,7 +1,8 @@
 # changedPersistentIdentifier
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The persistent identifier of the change.
 

@@ -1,7 +1,8 @@
 # init(keyPointerFunctions:valuePointerFunctions:capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a map table, initialized with the given functions.
 
@@ -20,6 +21,10 @@ Returns a map table, initialized with the given functions.
 init(keyPointerFunctions keyFunctions: NSPointerFunctions, valuePointerFunctions valueFunctions: NSPointerFunctions, capacity initialCapacity: Int)
 ```
 
+```objc
+- (instancetype) initWithKeyPointerFunctions:(NSPointerFunctions *) keyFunctions valuePointerFunctions:(NSPointerFunctions *) valueFunctions capacity:(NSUInteger) initialCapacity;
+```
+
 #### Return Value
 
 A map table, initialized with the given functions.
@@ -32,19 +37,20 @@ A map table, initialized with the given functions.
 
 ## See Also
 
-- [init(keyOptions: NSPointerFunctions.Options, valueOptions: NSPointerFunctions.Options, capacity: Int)](nsmaptable/init(keyoptions:valueoptions:capacity:).md)
+### Creating and Initializing a Map Table
+- [init(keyOptions: NSPointerFunctions.Options, valueOptions: NSPointerFunctions.Options, capacity: Int)](./init%28keyoptions,valueoptions,capacity%29.md)
   Returns a map table, initialized with the given options.
-- [init(keyOptions: NSPointerFunctions.Options, valueOptions: NSPointerFunctions.Options)](nsmaptable/init(keyoptions:valueoptions:).md)
+- [init(keyOptions: NSPointerFunctions.Options, valueOptions: NSPointerFunctions.Options)](./init%28keyoptions,valueoptions%29.md)
   Returns a new map table, initialized with the given options
-- [class func strongToStrongObjects() -> NSMapTable<KeyType, ObjectType>](nsmaptable/strongtostrongobjects.md)
+- [class func strongToStrongObjects() -> NSMapTable<KeyType, ObjectType>](./strongtostrongobjects%28%29.md)
   Returns a new map table object which has strong references to the keys and values.
-- [class func weakToStrongObjects() -> NSMapTable<KeyType, ObjectType>](nsmaptable/weaktostrongobjects.md)
+- [class func weakToStrongObjects() -> NSMapTable<KeyType, ObjectType>](./weaktostrongobjects%28%29.md)
   Returns a new map table object which has weak references to the keys and strong references to the values.
-- [class func strongToWeakObjects() -> NSMapTable<KeyType, ObjectType>](nsmaptable/strongtoweakobjects.md)
+- [class func strongToWeakObjects() -> NSMapTable<KeyType, ObjectType>](./strongtoweakobjects%28%29.md)
   Returns a new map table object which has strong references to the keys and weak references to the values.
-- [class func weakToWeakObjects() -> NSMapTable<KeyType, ObjectType>](nsmaptable/weaktoweakobjects.md)
+- [class func weakToWeakObjects() -> NSMapTable<KeyType, ObjectType>](./weaktoweakobjects%28%29.md)
   Returns a new map table object which has weak references to the keys and values.
-- [typealias NSMapTableOptions](nsmaptableoptions.md)
+- [typealias NSMapTableOptions](../nsmaptableoptions.md)
   Constants used as components in a bitfield to specify the behavior of elements (keys and values) in an `NSMapTable` object.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionLocalizationV2CreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a SubscriptionLocalizationV2.
 
@@ -10,21 +11,21 @@ The request body you use to create a SubscriptionLocalizationV2.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalizationV2CreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionLocalizationV2CreateRequest.Data.Attributes](subscriptionlocalizationv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionLocalizationV2CreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a SubscriptionLocalizationV2CreateRequest resource.
-- [object SubscriptionLocalizationV2CreateRequest.Data.Relationships](subscriptionlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object SubscriptionLocalizationV2CreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionLocalizations`
 - `attributes` (SubscriptionLocalizationV2CreateRequest.Data.Attributes) *(required)*
 - `relationships` (SubscriptionLocalizationV2CreateRequest.Data.Relationships) *(required)*
 

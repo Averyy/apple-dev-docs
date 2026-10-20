@@ -1,7 +1,8 @@
 # fromOpaque(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Unsafely turns an opaque C pointer into an unmanaged class reference.
 

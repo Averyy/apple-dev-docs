@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A name that uniquely identifies the service (reverse domain name notation is recommended).
@@ -19,11 +20,16 @@ A name that uniquely identifies the service (reverse domain name notation is rec
 var serviceName: NSFileProviderServiceName { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSFileProviderServiceName serviceName;
+```
+
 ## See Also
 
-- [func makeListenerEndpoint() throws -> NSXPCListenerEndpoint](nsfileproviderservicesource/makelistenerendpoint.md)
+### Accessing the Service
+- [func makeListenerEndpoint() throws -> NSXPCListenerEndpoint](./makelistenerendpoint%28%29.md)
   Returns an endpoint object that lets the host app communicate with the File Provider extension.
-- [var isRestricted: Bool](nsfileproviderservicesource/isrestricted.md)
+- [var isRestricted: Bool](./isrestricted.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An index to the last weight in the collection.
 
@@ -21,7 +22,7 @@ var endIndex: BlendShapeWeights.Index { get }
 
 #### Discussion
 
-For more more on the sequence’s final index, see [`endIndex`](https://developer.apple.com/documentation/swift/array/endindex).
+For more more on the sequence’s final index, see [`endIndex`](../../Swift/array/endindex.md).
 
 
 ---

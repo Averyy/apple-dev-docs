@@ -1,7 +1,8 @@
 # kAXMenuItemCmdModifiersAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An integer mask that represents the modifier keys held down in the keyboard shortcut for the command represented by this accessibility object.
 
@@ -12,6 +13,10 @@ An integer mask that represents the modifier keys held down in the keyboard shor
 
 ```swift
 var kAXMenuItemCmdModifiersAttribute: String { get }
+```
+
+```c
+#define kAXMenuItemCmdModifiersAttribute
 ```
 
 

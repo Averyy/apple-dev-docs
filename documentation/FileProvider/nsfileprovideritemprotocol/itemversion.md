@@ -1,7 +1,8 @@
 # itemVersion
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A version object that tracks changes to an item.
 
@@ -18,15 +19,20 @@ A version object that tracks changes to an item.
 optional var itemVersion: NSFileProviderItemVersion { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSFileProviderItemVersion * itemVersion;
+```
+
 #### Discussion
 
-The version object lets you track changes to an item’s content and metadata separately. Updating the version also invalidates the thumbnail cache. For more information, see [`NSFileProviderItemVersion`](nsfileprovideritemversion.md).
+The version object lets you track changes to an item’s content and metadata separately. Updating the version also invalidates the thumbnail cache. For more information, see [`NSFileProviderItemVersion`](../nsfileprovideritemversion.md).
 
 ## See Also
 
-- [var versionIdentifier: Data?](nsfileprovideritemprotocol/versionidentifier.md)
+### Tracking Versions
+- [var versionIdentifier: Data?](./versionidentifier.md)
   A data value used to determine when the item changes.
-- [var isMostRecentVersionDownloaded: Bool](nsfileprovideritemprotocol/ismostrecentversiondownloaded.md)
+- [var isMostRecentVersionDownloaded: Bool](./ismostrecentversiondownloaded.md)
   A Boolean value that indicates whether the item is the most recent version downloaded from the server.
 
 

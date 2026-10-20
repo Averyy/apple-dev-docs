@@ -1,17 +1,24 @@
 # invalidateLayout(forCharacterRange:isSoft:actualCharacterRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the layout information for the glyphs mapped to the given range of characters.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
+
+> **Deprecated**: Use -invalidateLayoutForCharacterRange:actualCharacterRange: instead
 
 ## Declaration
 
 ```swift
 func invalidateLayout(forCharacterRange charRange: NSRange, isSoft flag: Bool, actualCharacterRange actualCharRange: NSRangePointer?)
+```
+
+```objc
+- (void) invalidateLayoutForCharacterRange:(NSRange) charRange isSoft:(BOOL) flag actualCharacterRange:(NSRangePointer) actualCharRange;
 ```
 
 #### Discussion
@@ -20,50 +27,51 @@ This method only invalidates information; it performs no glyph generation or lay
 
 For code that needs to work on both OS X v10.5 and previous releases, the following procedures should be used. For OS X v10.4 and before, invalidation should consist of
 
-1. Calling this method with the `flag` set to [`true`](https://developer.apple.com/documentation/swift/true), for the range that has actually become invalid.
-2. Calling this method with the `flag` set to [`false`](https://developer.apple.com/documentation/swift/false), for the range (if any) that follows that range, usually extending to the end of the text, that might need to be moved due to relayout of the invalidated range.
+1. Calling this method with the `flag` set to [`true`](../../Swift/true.md), for the range that has actually become invalid.
+2. Calling this method with the `flag` set to [`false`](../../Swift/false.md), for the range (if any) that follows that range, usually extending to the end of the text, that might need to be moved due to relayout of the invalidated range.
 
-As of OS X v10.5, the semantics of the `flag` parameter are slightly different. Soft layout holes are obsolete in macOS 10.5 and later, so the flag is no longer necessary. If the method is called with `flag` set to [`false`](https://developer.apple.com/documentation/swift/false), then it has the effect of invalidating layout.  If it’s called with the `flag` set to [`true`](https://developer.apple.com/documentation/swift/true), then it does not actually invalidate layout; it invalidates a number of internal caches, but otherwise has no effect, and in general is unnecessary.
+As of OS X v10.5, the semantics of the `flag` parameter are slightly different. Soft layout holes are obsolete in macOS 10.5 and later, so the flag is no longer necessary. If the method is called with `flag` set to [`false`](../../Swift/false.md), then it has the effect of invalidating layout.  If it’s called with the `flag` set to [`true`](../../Swift/true.md), then it does not actually invalidate layout; it invalidates a number of internal caches, but otherwise has no effect, and in general is unnecessary.
 
-This method is superseded by [`invalidateLayout(forCharacterRange:actualCharacterRange:)`](nslayoutmanager/invalidatelayout(forcharacterrange:actualcharacterrange:).md) and will be deprecated in a future release.
+This method is superseded by [`invalidateLayout(forCharacterRange:actualCharacterRange:)`](./invalidatelayout%28forcharacterrange,actualcharacterrange%29.md) and will be deprecated in a future release.
 
 ## Parameters
 
 - `charRange`: The character range for which glyphs are invalidated.
-- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), invalidates internal caches in the layout manager; if [`false`](https://developer.apple.com/documentation/swift/false), invalidates layout. See the discussion section.
+- `flag`: If [`true`](../../Swift/true.md), invalidates internal caches in the layout manager; if [`false`](../../Swift/false.md), invalidates layout. See the discussion section.
 - `actualCharRange`: If not `NULL`, on output, the range of characters mapped to the glyphs whose layout information is invalidated. This range can be larger than the range of characters given due to the effect of context on glyphs and layout.
 
 ## See Also
 
-- [func showCGGlyphs(UnsafePointer<CGGlyph>, positions: UnsafePointer<NSPoint>, count: Int, font: NSFont, matrix: AffineTransform, attributes: [NSAttributedString.Key : Any], in: NSGraphicsContext)](nslayoutmanager/showcgglyphs(_:positions:count:font:matrix:attributes:in:).md)
+### Deprecated methods
+- [func showCGGlyphs(UnsafePointer<CGGlyph>, positions: UnsafePointer<NSPoint>, count: Int, font: NSFont, matrix: AffineTransform, attributes: [NSAttributedString.Key : Any], in: NSGraphicsContext)](./showcgglyphs%28_,positions,count,font,matrix,attributes,in%29.md)
   Renders the glyphs at the specified positions, using the specified attributes.
-- [func invalidateGlyphs(onLayoutInvalidationForGlyphRange: NSRange)](nslayoutmanager/invalidateglyphs(onlayoutinvalidationforglyphrange:).md)
+- [func invalidateGlyphs(onLayoutInvalidationForGlyphRange: NSRange)](./invalidateglyphs%28onlayoutinvalidationforglyphrange%29.md)
   Specifies explicitly when portions of the glyph stream depend on layout.
-- [func textStorage(NSTextStorage, edited: Int, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](nslayoutmanager/textstorage(_:edited:range:changeinlength:invalidatedrange:).md)
+- [func textStorage(NSTextStorage, edited: Int, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](./textstorage%28_,edited,range,changeinlength,invalidatedrange%29.md)
   Invalidates glyph and layout information for a portion of the text in the given text storage object.
-- [func insertGlyph(NSGlyph, atGlyphIndex: Int, characterIndex: Int)](nslayoutmanager/insertglyph(_:atglyphindex:characterindex:).md)
+- [func insertGlyph(NSGlyph, atGlyphIndex: Int, characterIndex: Int)](./insertglyph%28_,atglyphindex,characterindex%29.md)
   Inserts a single glyph into the glyph stream at the given index and maps it to the character at the given character index.
-- [func insertGlyphs(UnsafePointer<NSGlyph>, length: Int, forStartingGlyphAt: Int, characterIndex: Int)](nslayoutmanager/insertglyphs(_:length:forstartingglyphat:characterindex:).md)
+- [func insertGlyphs(UnsafePointer<NSGlyph>, length: Int, forStartingGlyphAt: Int, characterIndex: Int)](./insertglyphs%28_,length,forstartingglyphat,characterindex%29.md)
   Inserts the given glyphs into the glyph cache at the given index and maps them to characters beginning at the given character index.
-- [func glyph(at: Int) -> NSGlyph](nslayoutmanager/glyph(at:).md)
+- [func glyph(at: Int) -> NSGlyph](./glyph%28at%29.md)
   Returns the glyph at the specified index.
-- [func glyph(at: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) -> NSGlyph](nslayoutmanager/glyph(at:isvalidindex:).md)
+- [func glyph(at: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) -> NSGlyph](./glyph%28at,isvalidindex%29.md)
   Returns the glyph at a specified index, and optionally returns a flag indicating whether the requested index is valid.
-- [func replaceGlyph(at: Int, withGlyph: NSGlyph)](nslayoutmanager/replaceglyph(at:withglyph:).md)
+- [func replaceGlyph(at: Int, withGlyph: NSGlyph)](./replaceglyph%28at,withglyph%29.md)
   Replaces the glyph at the given index with a new glyph.
-- [func getGlyphs(UnsafeMutablePointer<NSGlyph>?, range: NSRange) -> Int](nslayoutmanager/getglyphs(_:range:).md)
+- [func getGlyphs(UnsafeMutablePointer<NSGlyph>?, range: NSRange) -> Int](./getglyphs%28_,range%29.md)
   Fills the passed-in buffer with a sequence of glyphs.
-- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<NSGlyph>?, characterIndexes: UnsafeMutablePointer<Int>?, glyphInscriptions: UnsafeMutablePointer<NSGlyphInscription>?, elasticBits: UnsafeMutablePointer<ObjCBool>?) -> Int](nslayoutmanager/getglyphs(in:glyphs:characterindexes:glyphinscriptions:elasticbits:).md)
+- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<NSGlyph>?, characterIndexes: UnsafeMutablePointer<Int>?, glyphInscriptions: UnsafeMutablePointer<NSGlyphInscription>?, elasticBits: UnsafeMutablePointer<ObjCBool>?) -> Int](./getglyphs%28in,glyphs,characterindexes,glyphinscriptions,elasticbits%29.md)
   Returns the glyphs and information needed to perform layout for the given glyph range.
-- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<NSGlyph>?, characterIndexes: UnsafeMutablePointer<Int>?, glyphInscriptions: UnsafeMutablePointer<NSGlyphInscription>?, elasticBits: UnsafeMutablePointer<ObjCBool>?, bidiLevels: UnsafeMutablePointer<UInt8>?) -> Int](nslayoutmanager/getglyphs(in:glyphs:characterindexes:glyphinscriptions:elasticbits:bidilevels:).md)
+- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<NSGlyph>?, characterIndexes: UnsafeMutablePointer<Int>?, glyphInscriptions: UnsafeMutablePointer<NSGlyphInscription>?, elasticBits: UnsafeMutablePointer<ObjCBool>?, bidiLevels: UnsafeMutablePointer<UInt8>?) -> Int](./getglyphs%28in,glyphs,characterindexes,glyphinscriptions,elasticbits,bidilevels%29.md)
   Returns the glyphs and information needed to perform layout for the given glyph range.
-- [func deleteGlyphs(in: NSRange)](nslayoutmanager/deleteglyphs(in:).md)
+- [func deleteGlyphs(in: NSRange)](./deleteglyphs%28in%29.md)
   Deletes the glyphs in the given range from the receiver’s glyph store.
-- [func setCharacterIndex(Int, forGlyphAt: Int)](nslayoutmanager/setcharacterindex(_:forglyphat:).md)
+- [func setCharacterIndex(Int, forGlyphAt: Int)](./setcharacterindex%28_,forglyphat%29.md)
   Sets the index of the character corresponding to the glyph at the given glyph index.
-- [func intAttribute(Int, forGlyphAt: Int) -> Int](nslayoutmanager/intattribute(_:forglyphat:).md)
+- [func intAttribute(Int, forGlyphAt: Int) -> Int](./intattribute%28_,forglyphat%29.md)
   Returns the value of the attribute identified by the given attribute tag for the glyph at the given index.
-- [func setIntAttribute(Int, value: Int, forGlyphAt: Int)](nslayoutmanager/setintattribute(_:value:forglyphat:).md)
+- [func setIntAttribute(Int, value: Int, forGlyphAt: Int)](./setintattribute%28_,value,forglyphat%29.md)
   Sets a custom attribute value for a given glyph.
 
 

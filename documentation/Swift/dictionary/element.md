@@ -1,7 +1,8 @@
 # Dictionary.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The element type of a dictionary: a tuple containing an individual key-value pair.
 

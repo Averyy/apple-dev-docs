@@ -1,33 +1,35 @@
 # Null Window
 
-**Framework**: Core Graphics
+**Framework**: Core Graphics  
+**Role**: API Collection
 
 Defines a guaranteed invalid window ID.
 
 ## Topics
 
 ### Constants
-- [var kCGNullWindowID: CGWindowID](kcgnullwindowid.md)
+- [var kCGNullWindowID: CGWindowID](./kcgnullwindowid.md)
 
 ## See Also
 
-- [Window Sharing Constants](window-sharing-constants.md)
+### Constants
+- [Window Sharing Constants](./window-sharing-constants.md)
   Specifies whether and how windows are shared between applications.
-- [Backing Store Types](backing-store-types.md)
+- [Backing Store Types](./backing-store-types.md)
   Specifies how the window device buffers drawing commands.
-- [Window List Option Constants](window-list-option-constants.md)
+- [Window List Option Constants](./window-list-option-constants.md)
   Specifies which windows in the current user session to include in a generated list.
-- [Window Image Types](window-image-types.md)
+- [Window Image Types](./window-image-types.md)
   Specifies the options for capturing an image of a window.
-- [CGWindowID Encoding Type](cgwindowid-encoding-type.md)
+- [CGWindowID Encoding Type](./cgwindowid-encoding-type.md)
   Defines the encoding type for window IDs.
-- [Window Sharing Encoding Type](window-sharing-encoding-type.md)
+- [Window Sharing Encoding Type](./window-sharing-encoding-type.md)
   Defines the encoding type for window sharing values.
-- [Window Backing Encoding Type](window-backing-encoding-type.md)
+- [Window Backing Encoding Type](./window-backing-encoding-type.md)
   Defines the encoding type for window backing types.
-- [Required Window List Keys](required-window-list-keys.md)
+- [Required Window List Keys](./required-window-list-keys.md)
   The keys that are guaranteed to be available in a window’s information dictionary.
-- [Optional Window List Keys](optional-window-list-keys.md)
+- [Optional Window List Keys](./optional-window-list-keys.md)
   The keys that may optionally be available inside a window’s information dictionary.
 
 

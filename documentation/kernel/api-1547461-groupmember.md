@@ -1,14 +1,15 @@
 # groupmember
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int groupmember(gid_t gid, kauth_cred_t cred);
 ```
 

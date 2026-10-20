@@ -1,7 +1,8 @@
 # EOWNERDEAD
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Previous owner died.
 

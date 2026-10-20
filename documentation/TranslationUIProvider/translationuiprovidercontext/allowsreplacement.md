@@ -2,6 +2,7 @@
 
 **Framework**: TranslationUIProvider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the control can replace the source text.
@@ -23,7 +24,8 @@ Use this flag to indicate when a control replaces the source text with the trans
 
 ## See Also
 
-- [var inputText: AttributedString?](translationuiprovidercontext/inputtext.md)
+### Instance Properties
+- [var inputText: AttributedString?](./inputtext.md)
   The source text to translate.
 
 

@@ -1,21 +1,22 @@
 # XPathException
 
 **Framework**: TVMLKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 interface XPathException
 ```
 
 ## Topics
 
 ### Instance Properties
-- [code](xpathexception/3192174-code.md)
+- [code](./xpathexception/api-3192174-code.md)
 
 
 ---

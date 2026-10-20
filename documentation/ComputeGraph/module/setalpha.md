@@ -1,13 +1,14 @@
 # module::setAlpha
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the alpha (opacity) value of an element.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void module::setAlpha(half alpha)
 
 Use this function to control the transparency of an element without modifying its RGB color components.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__setAlpha.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__setAlpha.svg)
 
 ## Parameters
 

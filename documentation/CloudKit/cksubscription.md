@@ -1,7 +1,8 @@
 # CKSubscription
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for subscriptions.
 
@@ -10,7 +11,7 @@ An abstract base class for subscriptions.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,71 +21,76 @@ An abstract base class for subscriptions.
 class CKSubscription
 ```
 
+```objc
+@interface CKSubscription : NSObject
+```
+
 #### Overview
 
 A subscription acts like a persistent query on the server that can track the creation, deletion, and modification of records. When changes occur, they trigger the delivery of push notifications so that your app can respond appropriately.
 
-Subscriptions don’t become active until you save them to the server and the server has time to index them. To save a subscription, use an instance of [`CKModifySubscriptionsOperation`](ckmodifysubscriptionsoperation.md) or the [`save(_:completionHandler:)`](ckdatabase/save(_:completionhandler:)-9pona.md) method of [`CKDatabase`](ckdatabase.md). To cancel a subscription, delete the corresponding subscription from the server.
+Subscriptions don’t become active until you save them to the server and the server has time to index them. To save a subscription, use an instance of [`CKModifySubscriptionsOperation`](./ckmodifysubscriptionsoperation.md) or the [`save(_:completionHandler:)`](./ckdatabase/save%28_,completionhandler%29-9pona.md) method of [`CKDatabase`](./ckdatabase.md). To cancel a subscription, delete the corresponding subscription from the server.
 
-> **Note**: You don’t need to enable push notifications for the app’s explicit App ID in your developer account at [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com) to receive subscription notifications. Xcode automatically adds the APNs entitlement to your entitlement file when you enable CloudKit. To learn about enabling CloudKit, see [`Enabling CloudKit in Your App`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html#//apple_ref/doc/uid/TP40014987-CH2).
+> **Note**: You don’t need to enable push notifications for the app’s explicit App ID in your developer account at [developer.apple.com](https://developer.apple.com) to receive subscription notifications. Xcode automatically adds the APNs entitlement to your entitlement file when you enable CloudKit. To learn about enabling CloudKit, see [Enabling CloudKit in Your App](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html#//apple_ref/doc/uid/TP40014987-CH2).
 
-Most of a subscription’s configuration happens at initialization time. You must, however, specify how to deliver push notifications to the user’s device. Use the [`notificationInfo`](cksubscription/notificationinfo-swift.property.md) property to configure the delivery options. You must save the subscription before the changes take effect.
+Most of a subscription’s configuration happens at initialization time. You must, however, specify how to deliver push notifications to the user’s device. Use the [`notificationInfo`](./cksubscription/notificationinfo-swift.property.md) property to configure the delivery options. You must save the subscription before the changes take effect.
 
 > **Note**: Create subscriptions in the development environment first and then promote them to production. Attempting to create a subscription directly in the production environment results in an error.
 
 ##### Handling the Resulting Push Notifications
 
-When CloudKit modifies a record and triggers a subscription, the server sends push notifications to all devices with that subscription except for the one that makes the original changes. For subscription-based push notifications, the server can add data to the notification payload that indicates the condition that triggers the notification. In the [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didreceiveremotenotification:fetchcompletionhandler:)) method of your app delegate, create a [`CKNotification`](cknotification.md) object from the provided `userInfo` dictionary. You can then query it for the information that’s relevant to the notification.
+When CloudKit modifies a record and triggers a subscription, the server sends push notifications to all devices with that subscription except for the one that makes the original changes. For subscription-based push notifications, the server can add data to the notification payload that indicates the condition that triggers the notification. In the [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md) method of your app delegate, create a [`CKNotification`](./cknotification.md) object from the provided `userInfo` dictionary. You can then query it for the information that’s relevant to the notification.
 
-In addition to sending a record ID with a push notification, you can ask the server to send a limited amount of data from the record that triggers the notification. Use the [`desiredKeys`](cksubscription/notificationinfo-swift.class/desiredkeys.md) property of the object you assign to [`notificationInfo`](cksubscription/notificationinfo-swift.property.md) to specify the keys to include.
+In addition to sending a record ID with a push notification, you can ask the server to send a limited amount of data from the record that triggers the notification. Use the [`desiredKeys`](./cksubscription/notificationinfo-swift.class/desiredkeys.md) property of the object you assign to [`notificationInfo`](./cksubscription/notificationinfo-swift.property.md) to specify the keys to include.
 
-APNs limits the size of a push notification’s payload and CloudKit may omit keys and other pieces of data to keep the payload’s size under that limit. If this happens, you can fetch the entire payload from the server using an instance of `CKFetchNotificationChangesOperation`. This operation provides instances of [`CKQueryNotification`](ckquerynotification.md) or [`CKRecordZoneNotification`](ckrecordzonenotification.md), which contain information about the push notifications that CloudKit delivers to your app.
+APNs limits the size of a push notification’s payload and CloudKit may omit keys and other pieces of data to keep the payload’s size under that limit. If this happens, you can fetch the entire payload from the server using an instance of `CKFetchNotificationChangesOperation`. This operation provides instances of [`CKQueryNotification`](./ckquerynotification.md) or [`CKRecordZoneNotification`](./ckrecordzonenotification.md), which contain information about the push notifications that CloudKit delivers to your app.
 
 ## Topics
 
 ### Specifying the Push Notification Data
-- [var notificationInfo: CKSubscription.NotificationInfo?](cksubscription/notificationinfo-swift.property.md)
+- [var notificationInfo: CKSubscription.NotificationInfo?](./cksubscription/notificationinfo-swift.property.md)
   The configuration for a subscription’s push notifications.
-- [CKSubscription.NotificationInfo](cksubscription/notificationinfo-swift.class.md)
+- [CKSubscription.NotificationInfo](./cksubscription/notificationinfo-swift.class.md)
   An object that describes the configuration of a subscription’s push notifications.
 ### Accessing the Subscription Metadata
-- [var subscriptionID: CKSubscription.ID](cksubscription/subscriptionid-6fp3j.md)
+- [var subscriptionID: CKSubscription.ID](./cksubscription/subscriptionid-6fp3j.md)
   The subscription’s unique identifier.
-- [CKSubscription.ID](cksubscription/id.md)
+- [CKSubscription.ID](./cksubscription/id.md)
   A type that represents a subscription’s identifier.
-- [var subscriptionType: CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.property.md)
+- [var subscriptionType: CKSubscription.SubscriptionType](./cksubscription/subscriptiontype-swift.property.md)
   The behavior that a subscription provides.
-- [CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.enum.md)
+- [CKSubscription.SubscriptionType](./cksubscription/subscriptiontype-swift.enum.md)
   Constants that identify a subscription’s behavior.
 ### Initializers
-- [init?(coder: NSCoder)](cksubscription/init(coder:).md)
+- [init?(coder: NSCoder)](./cksubscription/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CKDatabaseSubscription](ckdatabasesubscription.md)
-- [CKQuerySubscription](ckquerysubscription.md)
-- [CKRecordZoneSubscription](ckrecordzonesubscription.md)
+- [CKDatabaseSubscription](./ckdatabasesubscription.md)
+- [CKQuerySubscription](./ckquerysubscription.md)
+- [CKRecordZoneSubscription](./ckrecordzonesubscription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKNotification](cknotification.md)
+### Base Objects
+- [class CKNotification](./cknotification.md)
   The abstract base class for CloudKit notifications.
-- [class CKDatabaseOperation](ckdatabaseoperation.md)
+- [class CKDatabaseOperation](./ckdatabaseoperation.md)
   The abstract base class for operations that act upon databases in CloudKit.
 
 

@@ -1,7 +1,8 @@
 # reader
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the reader domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the reader domain.
 ```swift
 static var reader: some AppSchema.ReaderIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

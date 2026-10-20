@@ -1,14 +1,15 @@
 # ml_page_protection_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 typedef int ml_page_protection_t;
 ```
 

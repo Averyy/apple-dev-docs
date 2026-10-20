@@ -1,15 +1,16 @@
 # AUSpatialMixerPointSourceInHeadMode.spatialMixerPointSourceInHeadMode_Bypass
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 case spatialMixerPointSourceInHeadMode_Bypass
 ```
 
+```c
+kSpatialMixerPointSourceInHeadMode_Bypass
+```
+
 ## See Also
 
-- [AUSpatialMixerPointSourceInHeadMode.spatialMixerPointSourceInHeadMode_Mono](auspatialmixerpointsourceinheadmode/spatialmixerpointsourceinheadmode_mono.md)
+### Modes
+- [AUSpatialMixerPointSourceInHeadMode.spatialMixerPointSourceInHeadMode_Mono](./spatialmixerpointsourceinheadmode_mono.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # mono
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays the image with a monoscopic presentation.
 

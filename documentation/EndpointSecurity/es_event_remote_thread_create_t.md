@@ -1,13 +1,14 @@
 # es_event_remote_thread_create_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for an event that indicates an attempt by one process to create a thread in another process.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,30 +16,35 @@ A type for an event that indicates an attempt by one process to create a thread 
 struct es_event_remote_thread_create_t
 ```
 
+```c
+typedef struct { ... } es_event_remote_thread_create_t;
+```
+
 ## Topics
 
 ### Inspecting Event Properties
-- [var target: UnsafeMutablePointer<es_process_t>](es_event_remote_thread_create_t/target.md)
+- [var target: UnsafeMutablePointer<es_process_t>](./es_event_remote_thread_create_t/target.md)
   The process targeted to spawn a new thread.
-- [var thread_state: UnsafeMutablePointer<es_thread_state_t>?](es_event_remote_thread_create_t/thread_state.md)
+- [var thread_state: UnsafeMutablePointer<es_thread_state_t>?](./es_event_remote_thread_create_t/thread_state.md)
   The new thread’s state.
-- [struct es_thread_state_t](es_thread_state_t.md)
+- [struct es_thread_state_t](./es_thread_state_t.md)
   A description of a thread’s machine-specfiic state.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_remote_thread_create_t/reserved.md)
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_event_remote_thread_create_t/reserved.md)
   An unused field reserved for future use.
 ### Initializers
-- [init(target: UnsafeMutablePointer<es_process_t>, thread_state: UnsafeMutablePointer<es_thread_state_t>?, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](es_event_remote_thread_create_t/init(target:thread_state:reserved:).md)
+- [init(target: UnsafeMutablePointer<es_process_t>, thread_state: UnsafeMutablePointer<es_thread_state_t>?, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](./es_event_remote_thread_create_t/init%28target,thread_state,reserved%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct es_event_proc_suspend_resume_t](es_event_proc_suspend_resume_t.md)
+### Interprocess Events
+- [struct es_event_proc_suspend_resume_t](./es_event_proc_suspend_resume_t.md)
   A type for an event that indicates a call to suspend, resume, or shut down sockets for a process.
-- [struct es_event_trace_t](es_event_trace_t.md)
+- [struct es_event_trace_t](./es_event_trace_t.md)
   A type for an event that indicates an attempt by one process to attach to another process.
 
 

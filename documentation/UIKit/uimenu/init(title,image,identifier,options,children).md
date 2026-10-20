@@ -1,7 +1,8 @@
 # init(title:image:identifier:options:children:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new menu with the specified values.
 
@@ -10,7 +11,7 @@ Creates a new menu with the specified values.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,21 +24,22 @@ Creates a new menu with the specified values.
 
 - `title`: The title of the menu.
 - `image`: The image to display next to the menu’s title.
-- `identifier`: The unique identifier for the menu. When creating standard menus for your app, specify an appropriate constant defined in [`UIMenu.Identifier`](uimenu/identifier-swift.struct.md). For custom menus, specify a custom reverse domain name value, or specify `nil` to let this method create a unique identifier for you.
-- `options`: Additional configuration options for the menu. For a list of possible values, see [`UIMenu.Options`](uimenu/options-swift.struct.md).
-- `children`: The menu elements in the menu. Specify leaf menu elements using [`UIMenuElement`](uimenuelement.md) subclasses like [`UIAction`](uiaction.md), [`UICommand`](uicommand.md), or [`UIKeyCommand`](uikeycommand.md), and specify submenus using [`UIMenu`](uimenu.md) objects. You may specify an empty array if the menu has no child menu elements.
+- `identifier`: The unique identifier for the menu. When creating standard menus for your app, specify an appropriate constant defined in [`UIMenu.Identifier`](./identifier-swift.struct.md). For custom menus, specify a custom reverse domain name value, or specify `nil` to let this method create a unique identifier for you.
+- `options`: Additional configuration options for the menu. For a list of possible values, see [`UIMenu.Options`](./options-swift.struct.md).
+- `children`: The menu elements in the menu. Specify leaf menu elements using [`UIMenuElement`](../uimenuelement.md) subclasses like [`UIAction`](../uiaction.md), [`UICommand`](../uicommand.md), or [`UIKeyCommand`](../uikeycommand.md), and specify submenus using [`UIMenu`](../uimenu.md) objects. You may specify an empty array if the menu has no child menu elements.
 
 ## See Also
 
-- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](uimenu/init(title:subtitle:image:identifier:options:children:).md)
+### Creating a menu object
+- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, children: [UIMenuElement])](./init%28title,subtitle,image,identifier,options,children%29.md)
   Creates a new menu with the specified title, subtitle, image, identifier, menu options, and child elements.
-- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](uimenu/init(title:subtitle:image:identifier:options:preferredelementsize:children:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](./init%28title,subtitle,image,identifier,options,preferredelementsize,children%29.md)
   Creates a new menu with the specified title, subtitle, image, identifier, menu options, element size, and child elements.
-- [UIMenu.Identifier](uimenu/identifier-swift.struct.md)
+- [UIMenu.Identifier](./identifier-swift.struct.md)
   Constants you use to identify an app’s standard menus.
-- [UIMenu.Options](uimenu/options-swift.struct.md)
+- [UIMenu.Options](./options-swift.struct.md)
   Options you use to configure a menu’s appearance.
-- [init?(coder: NSCoder)](uimenu/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a menu from data in an unarchiver.
 
 

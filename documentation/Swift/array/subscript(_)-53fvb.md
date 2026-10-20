@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous subrange of the array’s elements.
 
@@ -43,19 +44,20 @@ print(streets[i!])
 
 ## See Also
 
-- [subscript(Int) -> Element](array/subscript(_:)-25iat.md)
+### Accessing Elements
+- [subscript(Int) -> Element](./subscript%28_%29-25iat.md)
   Accesses the element at the specified position.
-- [var first: Self.Element?](array/first.md)
+- [var first: Self.Element?](./first.md)
   The first element of the collection.
-- [var last: Self.Element?](array/last.md)
+- [var last: Self.Element?](./last.md)
   The last element of the collection.
-- [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-3kwny.md)
-- [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-4h7rl.md)
+- [subscript<R>(R) -> Self.SubSequence](./subscript%28_%29-3kwny.md)
+- [subscript<R>(R) -> Self.SubSequence](./subscript%28_%29-4h7rl.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript(UnboundedRange) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
-- [func randomElement() -> Self.Element?](array/randomelement.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](./subscript%28_%29-3pmfg.md)
+- [func randomElement() -> Self.Element?](./randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](array/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 
 

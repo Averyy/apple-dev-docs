@@ -1,7 +1,8 @@
 # layerEffect
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shader will be used as a layer effect.
 

@@ -1,7 +1,8 @@
 # nameOrder(for:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the display name order.
 
@@ -19,13 +20,17 @@ Returns the display name order.
 class func nameOrder(for contact: CNContact) -> CNContactDisplayNameOrder
 ```
 
+```objc
++ (CNContactDisplayNameOrder) nameOrderForContact:(CNContact *) contact;
+```
+
 #### Return Value
 
 The display order to use when combining the given name and family name components.
 
 #### Discussion
 
-For more information about display name orders, see [`CNContactDisplayNameOrder`](cncontactdisplaynameorder.md).
+For more information about display name orders, see [`CNContactDisplayNameOrder`](../cncontactdisplaynameorder.md).
 
 ## Parameters
 
@@ -33,9 +38,10 @@ For more information about display name orders, see [`CNContactDisplayNameOrder`
 
 ## See Also
 
-- [class func delimiter(for: CNContact) -> String](cncontactformatter/delimiter(for:).md)
+### Getting format information
+- [class func delimiter(for: CNContact) -> String](./delimiter%28for%29.md)
   Returns the delimiter to use between name components.
-- [enum CNContactDisplayNameOrder](cncontactdisplaynameorder.md)
+- [enum CNContactDisplayNameOrder](../cncontactdisplaynameorder.md)
   The formatting orders for contact names component.
 
 

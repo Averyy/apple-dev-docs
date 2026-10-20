@@ -1,7 +1,8 @@
 # cellularServices
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of cellular services available on the system.
 
@@ -16,17 +17,18 @@ final var cellularServices: [CellularServiceState] { get throws }
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
 #### Discussion
 
-To receive notification of changes to the available services, monitor the [`cellularServiceStateUpdates`](telephonymessagingsession/cellularservicestateupdates.md) property.
+To receive notification of changes to the available services, monitor the [`cellularServiceStateUpdates`](./cellularservicestateupdates.md) property.
 
 ## See Also
 
-- [var cellularServiceStateUpdates: some AsyncSequence<CellularServiceState, Never>](telephonymessagingsession/cellularservicestateupdates.md)
+### Determining service availability
+- [var cellularServiceStateUpdates: some AsyncSequence<CellularServiceState, Never>](./cellularservicestateupdates.md)
   An asynchronous sequence of cellular service state updates produced by this session.
-- [struct CellularServiceState](cellularservicestate.md)
+- [struct CellularServiceState](../cellularservicestate.md)
   A structure that contains information about a cellular service.
 
 

@@ -1,7 +1,8 @@
 # ArchiveHash
 
 **Framework**: Apple Archive  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -21,31 +22,32 @@ struct ArchiveHash
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](archivehash/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./archivehash/init%28rawvalue%29.md)
 ### Instance Properties
-- [var description: String](archivehash/description.md)
-- [var rawValue: UInt32](archivehash/rawvalue.md)
-- [var size: Int](archivehash/size.md)
+- [var description: String](./archivehash/description.md)
+- [var rawValue: UInt32](./archivehash/rawvalue.md)
+- [var size: Int](./archivehash/size.md)
 ### Type Properties
-- [static let crc32: ArchiveHash](archivehash/crc32.md)
-- [static let maxSize: Int](archivehash/maxsize.md)
-- [static let sha1: ArchiveHash](archivehash/sha1.md)
-- [static let sha256: ArchiveHash](archivehash/sha256.md)
-- [static let sha384: ArchiveHash](archivehash/sha384.md)
-- [static let sha512: ArchiveHash](archivehash/sha512.md)
+- [static let crc32: ArchiveHash](./archivehash/crc32.md)
+- [static let maxSize: Int](./archivehash/maxsize.md)
+- [static let sha1: ArchiveHash](./archivehash/sha1.md)
+- [static let sha256: ArchiveHash](./archivehash/sha256.md)
+- [static let sha384: ArchiveHash](./archivehash/sha384.md)
+- [static let sha512: ArchiveHash](./archivehash/sha512.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [struct AEAContextTraits](aeacontexttraits.md)
-- [struct ArchiveFlags](archiveflags.md)
+### Structures
+- [struct AEAContextTraits](./aeacontexttraits.md)
+- [struct ArchiveFlags](./archiveflags.md)
 
 
 ---

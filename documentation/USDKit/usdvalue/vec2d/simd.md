@@ -1,7 +1,8 @@
 # simd
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vector as a `SIMD2<Double>`.
 

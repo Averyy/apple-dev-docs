@@ -1,7 +1,8 @@
 # AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A key for the color that draws a run of attributed text.
 
@@ -25,7 +26,7 @@ enum ForegroundColorAttribute
 
 Set this key to tint part of a string without splitting it into several `Text` views:
 
-```None
+```
 var status = AttributedString("Low battery")
 status.foregroundColor = .red
 
@@ -35,14 +36,14 @@ Text(status)
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

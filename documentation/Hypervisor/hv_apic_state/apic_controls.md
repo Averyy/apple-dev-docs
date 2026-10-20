@@ -1,15 +1,20 @@
 # apic_controls
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var apic_controls: UInt64
+```
+
+```c
+uint64_t apic_controls;
 ```
 
 

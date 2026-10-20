@@ -1,7 +1,8 @@
 # CSSM_APPLEDL_OPEN_PARAMETERS_VERSION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_APPLEDL_OPEN_PARAMETERS_VERSION: Int { get }
+```
+
+```c
+CSSM_APPLEDL_OPEN_PARAMETERS_VERSION
 ```
 
 

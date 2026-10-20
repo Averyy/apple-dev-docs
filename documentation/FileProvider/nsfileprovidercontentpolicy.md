@@ -1,7 +1,8 @@
 # NSFileProviderContentPolicy
 
 **Framework**: File Provider  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -16,33 +17,38 @@
 enum NSFileProviderContentPolicy
 ```
 
+```c
+enum NSFileProviderContentPolicy : NSInteger;
+```
+
 ## Topics
 
 ### Policies
-- [NSFileProviderContentPolicy.downloadEagerlyAndKeepDownloaded](nsfileprovidercontentpolicy/downloadeagerlyandkeepdownloaded.md)
-- [NSFileProviderContentPolicy.downloadLazily](nsfileprovidercontentpolicy/downloadlazily.md)
-- [NSFileProviderContentPolicy.downloadLazilyAndEvictOnRemoteUpdate](nsfileprovidercontentpolicy/downloadlazilyandevictonremoteupdate.md)
-- [NSFileProviderContentPolicy.inherited](nsfileprovidercontentpolicy/inherited.md)
+- [NSFileProviderContentPolicy.downloadEagerlyAndKeepDownloaded](./nsfileprovidercontentpolicy/downloadeagerlyandkeepdownloaded.md)
+- [NSFileProviderContentPolicy.downloadLazily](./nsfileprovidercontentpolicy/downloadlazily.md)
+- [NSFileProviderContentPolicy.downloadLazilyAndEvictOnRemoteUpdate](./nsfileprovidercontentpolicy/downloadlazilyandevictonremoteupdate.md)
+- [NSFileProviderContentPolicy.inherited](./nsfileprovidercontentpolicy/inherited.md)
 ### Initializers
-- [init?(rawValue: Int)](nsfileprovidercontentpolicy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsfileprovidercontentpolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var childItemCount: NSNumber?](nsfileprovideritemprotocol/childitemcount.md)
+### Managing Content
+- [var childItemCount: NSNumber?](./nsfileprovideritemprotocol/childitemcount.md)
   The number of items contained by this item.
-- [var documentSize: NSNumber?](nsfileprovideritemprotocol/documentsize.md)
+- [var documentSize: NSNumber?](./nsfileprovideritemprotocol/documentsize.md)
   The document’s size, in bytes.
-- [var contentPolicy: NSFileProviderContentPolicy](nsfileprovideritemprotocol/contentpolicy.md)
+- [var contentPolicy: NSFileProviderContentPolicy](./nsfileprovideritemprotocol/contentpolicy.md)
 
 
 ---

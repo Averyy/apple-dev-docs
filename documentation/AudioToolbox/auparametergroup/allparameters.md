@@ -1,7 +1,8 @@
 # allParameters
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a flat array of all parameters in the group, including those in child groups.
 
@@ -19,9 +20,22 @@ Returns a flat array of all parameters in the group, including those in child gr
 var allParameters: [AUParameter] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) NSArray<AUParameter *> * allParameters;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSArray<AUParameter *> * allParameters;
+```
+
 ## See Also
 
-- [var children: [AUParameterNode]](auparametergroup/children.md)
+### Obtaining Group Parameters
+- [var children: [AUParameterNode]](./children.md)
   The group’s child nodes.
 
 

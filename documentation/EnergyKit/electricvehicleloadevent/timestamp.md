@@ -1,14 +1,15 @@
 # timestamp
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp for when the event occurred.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,11 +19,12 @@ let timestamp: Date
 
 ## See Also
 
-- [let id: UUID](electricvehicleloadevent/id.md)
+### Getting load event information
+- [let id: UUID](./id.md)
   The unique identifier of the electrical load event.
-- [let session: ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.property.md)
+- [let session: ElectricVehicleLoadEvent.Session](./session-swift.property.md)
   The session information.
-- [ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.struct.md)
+- [ElectricVehicleLoadEvent.Session](./session-swift.struct.md)
   A session that tracks the event.
 
 

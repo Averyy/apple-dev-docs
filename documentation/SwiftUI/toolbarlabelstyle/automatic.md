@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic label style. The toolbar will use a labelStyle that best fits the `Scene` it is applied to.
 

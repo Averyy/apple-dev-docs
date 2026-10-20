@@ -1,7 +1,8 @@
 # removeAllActions()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the undo and redo stacks and reenables the manager.
 
@@ -20,11 +21,17 @@ Clears the undo and redo stacks and reenables the manager.
 func removeAllActions()
 ```
 
+```objc
+- (void) removeAllActions;
+```
+
 ## See Also
 
-- [func enableUndoRegistration()](undomanager/enableundoregistration.md)
+### Related Documentation
+- [func enableUndoRegistration()](./enableundoregistration%28%29.md)
   Enables the recording of undo operations.
-- [func removeAllActions(withTarget: Any)](undomanager/removeallactions(withtarget:).md)
+### Clearing undo operations
+- [func removeAllActions(withTarget: Any)](./removeallactions%28withtarget%29.md)
   Clears the undo and redo stacks of all operations involving the specified target as the recipient of the undo message.
 
 

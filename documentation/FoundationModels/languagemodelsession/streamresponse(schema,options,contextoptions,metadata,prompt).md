@@ -1,7 +1,8 @@
 # streamResponse(schema:options:contextOptions:metadata:prompt:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Produces a response stream to a prompt and schema.
 
@@ -21,13 +22,13 @@ final func streamResponse(schema: GenerationSchema, options: GenerationOptions =
 
 #### Return Value
 
-A response stream that produces [`GeneratedContent`](generatedcontent.md) containing the fields and values defined in the schema.
+A response stream that produces [`GeneratedContent`](../generatedcontent.md) containing the fields and values defined in the schema.
 
 #### Discussion
 
 Consider using the default value of `true` for `includeSchemaInPrompt`. The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
 
-> ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](languagemodelsession/respond(to:options:)-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](languagemodelerror/ratelimited(_:).md) errors.
+> ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](./respond%28to,options%29-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](../languagemodelerror/ratelimited%28_%29.md) errors.
 
 ## Parameters
 
@@ -39,15 +40,16 @@ Consider using the default value of `true` for `includeSchemaInPrompt`. The exce
 
 ## See Also
 
-- [func streamResponse(options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](languagemodelsession/streamresponse(options:contextoptions:metadata:prompt:).md)
+### Streaming a response with metadata
+- [func streamResponse(options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](./streamresponse%28options,contextoptions,metadata,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse<Content>(generating: Content.Type, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](languagemodelsession/streamresponse(generating:options:contextoptions:metadata:prompt:).md)
+- [func streamResponse<Content>(generating: Content.Type, options: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent], prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](./streamresponse%28generating,options,contextoptions,metadata,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:options:contextOptions:metadata:)](languagemodelsession/streamresponse(to:options:contextoptions:metadata:).md)
+- [func streamResponse(to:options:contextOptions:metadata:)](./streamresponse%28to,options,contextoptions,metadata%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:generating:options:contextOptions:metadata:)](languagemodelsession/streamresponse(to:generating:options:contextoptions:metadata:).md)
+- [func streamResponse(to:generating:options:contextOptions:metadata:)](./streamresponse%28to,generating,options,contextoptions,metadata%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:schema:options:contextOptions:metadata:)](languagemodelsession/streamresponse(to:schema:options:contextoptions:metadata:).md)
+- [func streamResponse(to:schema:options:contextOptions:metadata:)](./streamresponse%28to,schema,options,contextoptions,metadata%29.md)
   Produces a response stream to a prompt and schema.
 
 

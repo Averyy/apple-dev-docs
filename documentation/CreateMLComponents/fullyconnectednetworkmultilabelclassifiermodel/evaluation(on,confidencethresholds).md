@@ -1,7 +1,8 @@
 # evaluation(on:confidenceThresholds:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes evaluation metrics on annotated examples.
 
@@ -18,6 +19,8 @@ Computes evaluation metrics on annotated examples.
 ```swift
 func evaluation(on input: some Collection<AnnotatedFeature<MLShapedArray<Scalar>, Set<Label>>>, confidenceThresholds: [Label : Float]) throws -> MultiLabelClassificationMetrics<Label>
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
 
 #### Return Value
 

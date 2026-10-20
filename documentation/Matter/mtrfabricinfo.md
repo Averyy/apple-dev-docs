@@ -1,7 +1,8 @@
 # MTRFabricInfo
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.5+
@@ -18,33 +19,37 @@
 class MTRFabricInfo
 ```
 
+```objc
+@interface MTRFabricInfo : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var fabricID: NSNumber](mtrfabricinfo/fabricid.md)
-- [var fabricIndex: NSNumber](mtrfabricinfo/fabricindex.md)
-- [var intermediateCertificate: Data?](mtrfabricinfo/intermediatecertificate.md)
-- [var intermediateCertificateTLV: Data?](mtrfabricinfo/intermediatecertificatetlv.md)
-- [var label: String](mtrfabricinfo/label.md)
-- [var nodeID: NSNumber](mtrfabricinfo/nodeid.md)
-- [var operationalCertificate: Data?](mtrfabricinfo/operationalcertificate.md)
-- [var operationalCertificateTLV: Data?](mtrfabricinfo/operationalcertificatetlv.md)
-- [var rootCertificate: Data?](mtrfabricinfo/rootcertificate.md)
-- [var rootCertificateTLV: Data?](mtrfabricinfo/rootcertificatetlv.md)
-- [var rootPublicKey: Data](mtrfabricinfo/rootpublickey.md)
-- [var vendorID: NSNumber](mtrfabricinfo/vendorid.md)
+- [var fabricID: NSNumber](./mtrfabricinfo/fabricid.md)
+- [var fabricIndex: NSNumber](./mtrfabricinfo/fabricindex.md)
+- [var intermediateCertificate: Data?](./mtrfabricinfo/intermediatecertificate.md)
+- [var intermediateCertificateTLV: Data?](./mtrfabricinfo/intermediatecertificatetlv.md)
+- [var label: String](./mtrfabricinfo/label.md)
+- [var nodeID: NSNumber](./mtrfabricinfo/nodeid.md)
+- [var operationalCertificate: Data?](./mtrfabricinfo/operationalcertificate.md)
+- [var operationalCertificateTLV: Data?](./mtrfabricinfo/operationalcertificatetlv.md)
+- [var rootCertificate: Data?](./mtrfabricinfo/rootcertificate.md)
+- [var rootCertificateTLV: Data?](./mtrfabricinfo/rootcertificatetlv.md)
+- [var rootPublicKey: Data](./mtrfabricinfo/rootpublickey.md)
+- [var vendorID: NSNumber](./mtrfabricinfo/vendorid.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

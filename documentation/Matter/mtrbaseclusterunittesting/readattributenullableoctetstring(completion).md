@@ -1,7 +1,8 @@
 # readAttributeNullableOctetString(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNullableOctetString(completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNullableOctetString() async throws -> Data
+```
+
+```objc
+- (void) readAttributeNullableOctetStringWithCompletion:(void (^)(NSData *value, NSError *error)) completion;
 ```
 
 

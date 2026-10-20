@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures this encoder with a depth stencil state that applies to your subsequent draw commands.
@@ -20,21 +21,26 @@ Configures this encoder with a depth stencil state that applies to your subseque
 func setDepthStencilState(_ depthStencilState: (any MTLDepthStencilState)?)
 ```
 
+```objc
+- (void) setDepthStencilState:(id<MTLDepthStencilState>) depthStencilState;
+```
+
 ## Parameters
 
-- `depthStencilState`: The [`MTLDepthStencilState`](mtldepthstencilstate.md) instance to set.
+- `depthStencilState`: The [`MTLDepthStencilState`](../mtldepthstencilstate.md) instance to set.
 
 ## See Also
 
-- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](mtl4rendercommandencoder/setdepthbias(_:slopescale:clamp:).md)
+### Configuring depth and stencil behavior
+- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](./setdepthbias%28_,slopescale,clamp%29.md)
   Configures the adjustments a render pass applies to depth values from fragment shader functions by a scaling factor and bias.
-- [func setDepthClipMode(MTLDepthClipMode)](mtl4rendercommandencoder/setdepthclipmode(_:).md)
+- [func setDepthClipMode(MTLDepthClipMode)](./setdepthclipmode%28_%29.md)
   Controls the behavior for fragments outside of the near or far planes.
-- [func setDepthTestBounds(ClosedRange<Float>)](mtl4rendercommandencoder/setdepthtestbounds(_:).md)
+- [func setDepthTestBounds(ClosedRange<Float>)](./setdepthtestbounds%28_%29.md)
   Configures the range for depth bounds testing.
-- [func setStencilReferenceValue(UInt32)](mtl4rendercommandencoder/setstencilreferencevalue(_:).md)
+- [func setStencilReferenceValue(UInt32)](./setstencilreferencevalue%28_%29.md)
   Configures this encoder with a reference value for stencil testing.
-- [func setStencilReferenceValue(front: UInt32, back: UInt32)](mtl4rendercommandencoder/setstencilreferencevalue(front:back:).md)
+- [func setStencilReferenceValue(front: UInt32, back: UInt32)](./setstencilreferencevalue%28front,back%29.md)
   Configures the encoder with different stencil test reference values for front-facing and back-facing primitives.
 
 

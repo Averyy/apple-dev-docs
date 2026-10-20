@@ -1,7 +1,8 @@
 # GNT_RegisteredID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var GNT_RegisteredID: __CE_GeneralNameType { get }
+```
+
+```c
+GNT_RegisteredID
 ```
 
 

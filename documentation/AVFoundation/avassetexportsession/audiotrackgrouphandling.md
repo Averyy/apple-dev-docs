@@ -1,7 +1,8 @@
 # audioTrackGroupHandling
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A policy that defines how the session exports alternate audio tracks.
 
@@ -19,17 +20,22 @@ A policy that defines how the session exports alternate audio tracks.
 var audioTrackGroupHandling: AVAssetTrackGroupOutputHandling { get set }
 ```
 
+```objc
+@property (nonatomic) AVAssetTrackGroupOutputHandling audioTrackGroupHandling;
+```
+
 #### Discussion
 
-By default, a session exports only the enabled audio tracks within an alternate track group from the source asset. You can specify that the session preserve all audio tracks within an alternate track group by setting this value to [`preserveAlternateTracks`](avassettrackgroupoutputhandling/preservealternatetracks.md).
+By default, a session exports only the enabled audio tracks within an alternate track group from the source asset. You can specify that the session preserve all audio tracks within an alternate track group by setting this value to [`preserveAlternateTracks`](../avassettrackgroupoutputhandling/preservealternatetracks.md).
 
-If no audio alternate track group is present, the value of this property has no effect. You can query the [`trackGroups`](avpartialasyncproperty/trackgroups.md) property of [`AVAsset`](avasset.md) to determine whether it contains audio track groups.
+If no audio alternate track group is present, the value of this property has no effect. You can query the [`trackGroups`](../avpartialasyncproperty/trackgroups.md) property of [`AVAsset`](../avasset.md) to determine whether it contains audio track groups.
 
-> ❗ **Important**:  You can’t specify alternate track output handling while also setting a value for the export session’s [`audioMix`](avassetexportsession/audiomix.md) property. The system throws an exception if you specify both.
+> ❗ **Important**:  You can’t specify alternate track output handling while also setting a value for the export session’s [`audioMix`](./audiomix.md) property. The system throws an exception if you specify both.
 
 ## See Also
 
-- [struct AVAssetTrackGroupOutputHandling](avassettrackgroupoutputhandling.md)
+### Configuring track groups
+- [struct AVAssetTrackGroupOutputHandling](../avassettrackgroupoutputhandling.md)
   A type that specifies policies for how an export session processes alternate tracks in a track group.
 
 

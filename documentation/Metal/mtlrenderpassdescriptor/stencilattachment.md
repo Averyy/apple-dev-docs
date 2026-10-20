@@ -1,7 +1,8 @@
 # stencilAttachment
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 State information for an attachment that stores stencil data.
 
@@ -10,7 +11,7 @@ State information for an attachment that stores stencil data.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ State information for an attachment that stores stencil data.
 var stencilAttachment: MTLRenderPassStencilAttachmentDescriptor! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) MTLRenderPassStencilAttachmentDescriptor * stencilAttachment;
+```
+
 ## See Also
 
-- [var colorAttachments: MTLRenderPassColorAttachmentDescriptorArray](mtlrenderpassdescriptor/colorattachments.md)
+### Specifying the attachments for a rendering pass
+- [var colorAttachments: MTLRenderPassColorAttachmentDescriptorArray](./colorattachments.md)
   An array of state information for attachments that store color data.
-- [var depthAttachment: MTLRenderPassDepthAttachmentDescriptor!](mtlrenderpassdescriptor/depthattachment.md)
+- [var depthAttachment: MTLRenderPassDepthAttachmentDescriptor!](./depthattachment.md)
   State information for an attachment that stores depth data.
 
 

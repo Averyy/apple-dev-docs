@@ -1,7 +1,8 @@
 # init(xStart:xEnd:y:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a horizontal rule mark that plots a value on y.
 
@@ -38,9 +39,9 @@ Chart {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A horizontal rule mark at 9000 shows the break even threshold.](/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark@2x.png)
+![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A horizontal rule mark at 9000 shows the break even threshold.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark@2x.png)
 
-See the first code example in [`RuleMark`](rulemark.md) for the setup of the structure that contains the `department` and `profit` properties.
+See the first code example in [`RuleMark`](../rulemark.md) for the setup of the structure that contains the `department` and `profit` properties.
 
 ## Parameters
 

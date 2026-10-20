@@ -1,7 +1,8 @@
 # stateHash
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains state hash data for the available biometry type. Returns `nil` if no biometry entities are enrolled.
 
@@ -18,11 +19,15 @@ Contains state hash data for the available biometry type. Returns `nil` if no bi
 var stateHash: Data? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSData * stateHash;
+```
+
 #### Discussion
 
 If biometric database was modified (fingers, faces were removed or added), `stateHash` data will change. Nature of such database changes cannot be determined but comparing data of `stateHash` after different evaluatePolicy calls will reveal the fact database was changed between the calls.
 
-```None
+```
      the state of biometry has not changed.
 ```
 

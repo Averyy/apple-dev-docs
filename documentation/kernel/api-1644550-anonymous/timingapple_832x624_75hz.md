@@ -1,14 +1,15 @@
 # timingApple_832x624_75hz
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 timingApple_832x624_75hz = 170
 ```
 

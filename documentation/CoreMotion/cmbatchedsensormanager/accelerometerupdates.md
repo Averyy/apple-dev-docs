@@ -1,7 +1,8 @@
 # CMBatchedSensorManager.AccelerometerUpdates
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - watchOS 10.0+
@@ -15,21 +16,22 @@ struct AccelerometerUpdates
 ## Topics
 
 ### Structures
-- [CMBatchedSensorManager.AccelerometerUpdates.Iterator](cmbatchedsensormanager/accelerometerupdates/iterator.md)
+- [CMBatchedSensorManager.AccelerometerUpdates.Iterator](./accelerometerupdates/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func startAccelerometerUpdates()](cmbatchedsensormanager/startaccelerometerupdates.md)
-- [func startAccelerometerUpdates(handler: ([CMAccelerometerData]?, (any Error)?) -> Void)](cmbatchedsensormanager/startaccelerometerupdates(handler:).md)
-- [func stopAccelerometerUpdates()](cmbatchedsensormanager/stopaccelerometerupdates.md)
-- [var accelerometerBatch: [CMAccelerometerData]?](cmbatchedsensormanager/accelerometerbatch.md)
-- [func accelerometerUpdates() -> CMBatchedSensorManager.AccelerometerUpdates](cmbatchedsensormanager/accelerometerupdates.md)
-- [var isAccelerometerActive: Bool](cmbatchedsensormanager/isaccelerometeractive.md)
+### Collecting accelerometer data
+- [func startAccelerometerUpdates()](./startaccelerometerupdates%28%29.md)
+- [func startAccelerometerUpdates(handler: ([CMAccelerometerData]?, (any Error)?) -> Void)](./startaccelerometerupdates%28handler%29.md)
+- [func stopAccelerometerUpdates()](./stopaccelerometerupdates%28%29.md)
+- [var accelerometerBatch: [CMAccelerometerData]?](./accelerometerbatch.md)
+- [func accelerometerUpdates() -> CMBatchedSensorManager.AccelerometerUpdates](./accelerometerupdates%28%29.md)
+- [var isAccelerometerActive: Bool](./isaccelerometeractive.md)
 
 
 ---

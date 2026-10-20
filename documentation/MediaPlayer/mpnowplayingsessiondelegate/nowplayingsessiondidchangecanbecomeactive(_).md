@@ -1,7 +1,8 @@
 # nowPlayingSessionDidChangeCanBecomeActive(_:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session is eligible to become active.
 
@@ -18,15 +19,21 @@ Tells the delegate that the session is eligible to become active.
 optional func nowPlayingSessionDidChangeCanBecomeActive(_ nowPlayingSession: MPNowPlayingSession)
 ```
 
+```objc
+- (void) nowPlayingSessionDidChangeCanBecomeActive:(MPNowPlayingSession *) nowPlayingSession;
+```
+
 ## Parameters
 
 - `nowPlayingSession`: The Now Playing session that changed.
 
 ## See Also
 
-- [var canBecomeActive: Bool](mpnowplayingsession/canbecomeactive.md)
+### Related Documentation
+- [var canBecomeActive: Bool](../mpnowplayingsession/canbecomeactive.md)
   A Boolean value that indicates whether the session can become the app’s active Now Playing session.
-- [func nowPlayingSessionDidChangeActive(MPNowPlayingSession)](mpnowplayingsessiondelegate/nowplayingsessiondidchangeactive(_:).md)
+### Responding to state changes
+- [func nowPlayingSessionDidChangeActive(MPNowPlayingSession)](./nowplayingsessiondidchangeactive%28_%29.md)
   Tells the delegate that the session changed its active status.
 
 

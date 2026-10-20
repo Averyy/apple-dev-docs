@@ -1,7 +1,8 @@
 # associate(sourceInstance:withDestinationInstance:for:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates a given source managed object instance with an array of destination instances for a given property mapping.
 
@@ -10,7 +11,7 @@ Associates a given source managed object instance with an array of destination i
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,15 @@ Associates a given source managed object instance with an array of destination i
 func associate(sourceInstance: NSManagedObject, withDestinationInstance destinationInstance: NSManagedObject, for entityMapping: NSEntityMapping)
 ```
 
+```objc
+- (void) associateSourceInstance:(NSManagedObject *) sourceInstance withDestinationInstance:(NSManagedObject *) destinationInstance forEntityMapping:(NSEntityMapping *) entityMapping;
+```
+
 #### Discussion
 
 Data migration is performed as a three-stage process (first create the data, then relate the data, then validate the data). You use this method to associate data between the source and destination stores, in order to allow for relationship creation or fix-up after the creation stage.
 
-This method is called in the default implementation of `NSEntityMigrationPolicy`’s [`createDestinationInstances(forSource:in:manager:)`](nsentitymigrationpolicy/createdestinationinstances(forsource:in:manager:).md) method.
+This method is called in the default implementation of `NSEntityMigrationPolicy`’s [`createDestinationInstances(forSource:in:manager:)`](../nsentitymigrationpolicy/createdestinationinstances%28forsource,in,manager%29.md) method.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ This method is called in the default implementation of `NSEntityMigrationPolicy`
 
 ## See Also
 
-- [func destinationInstances(forEntityMappingName: String, sourceInstances: [NSManagedObject]?) -> [NSManagedObject]](nsmigrationmanager/destinationinstances(forentitymappingname:sourceinstances:).md)
+### Managing Sources and Destinations
+- [func destinationInstances(forEntityMappingName: String, sourceInstances: [NSManagedObject]?) -> [NSManagedObject]](./destinationinstances%28forentitymappingname,sourceinstances%29.md)
   Returns the managed object instances created in the destination store for the named entity mapping for the given array of source instances.
-- [func sourceInstances(forEntityMappingName: String, destinationInstances: [NSManagedObject]?) -> [NSManagedObject]](nsmigrationmanager/sourceinstances(forentitymappingname:destinationinstances:).md)
+- [func sourceInstances(forEntityMappingName: String, destinationInstances: [NSManagedObject]?) -> [NSManagedObject]](./sourceinstances%28forentitymappingname,destinationinstances%29.md)
   Returns the managed object instances in the source store used to create the given destination instances for the passed in property mapping.
 
 

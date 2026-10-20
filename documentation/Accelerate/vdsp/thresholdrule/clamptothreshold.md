@@ -1,7 +1,8 @@
 # vDSP.ThresholdRule.clampToThreshold
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns the threshold if the input value is less than threshold; otherwise returns the input value.
 
@@ -11,7 +12,7 @@ Returns the threshold if the input value is less than threshold; otherwise retur
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ case clampToThreshold
 
 #### Discussion
 
-Use [`vDSP.ThresholdRule.clampToThreshold`](vdsp/thresholdrule/clamptothreshold.md) to calculate a new vector where the threshold operation sets all source values below the threshold to the threshold.
+Use [`vDSP.ThresholdRule.clampToThreshold`](./clamptothreshold.md) to calculate a new vector where the threshold operation sets all source values below the threshold to the threshold.
 
 ```swift
 let source: [Float] = [12, 13, 14, 15, 16, 17, 18]
@@ -37,9 +38,10 @@ print(destination)
 
 ## See Also
 
-- [vDSP.ThresholdRule.signedConstant(_:)](vdsp/thresholdrule/signedconstant(_:).md)
+### Threshold rules
+- [vDSP.ThresholdRule.signedConstant(_:)](./signedconstant%28_%29.md)
   Returns the negated constant if the input value is less than the threshold; otherwise returns the constant.
-- [vDSP.ThresholdRule.zeroFill](vdsp/thresholdrule/zerofill.md)
+- [vDSP.ThresholdRule.zeroFill](./zerofill.md)
   Returns `0` if the input value is less than the threshold; otherwise returns the input value.
 
 

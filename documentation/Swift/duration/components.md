@@ -1,7 +1,8 @@
 # components
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The composite components of the `Duration`.
 

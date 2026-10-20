@@ -1,18 +1,23 @@
 # SCScreenshotConfiguration.DisplayIntent.canonical
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the screenshot renders with canonical display attributes optimizing output for presentation on a high dynamic range display.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case canonical
+```
+
+```c
+SCScreenshotDisplayIntentCanonical
 ```
 
 

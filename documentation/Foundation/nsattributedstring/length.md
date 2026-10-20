@@ -1,7 +1,8 @@
 # length
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the attributed string.
 
@@ -20,15 +21,21 @@ The length of the attributed string.
 var length: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger length;
+```
+
 ## See Also
 
-- [func size() -> CGSize](nsattributedstring/size.md)
+### Related Documentation
+- [func size() -> CGSize](./size%28%29.md)
   Returns the size necessary to draw the string.
-- [var length: Int](nsstring/length.md)
+- [var length: Int](../nsstring/length.md)
   The number of UTF-16 code units in the receiver.
-- [var string: String](nsattributedstring/string.md)
+### Getting the characters
+- [var string: String](./string.md)
   The character contents of the attributed string as a string.
-- [func attributedSubstring(from: NSRange) -> NSAttributedString](nsattributedstring/attributedsubstring(from:).md)
+- [func attributedSubstring(from: NSRange) -> NSAttributedString](./attributedsubstring%28from%29.md)
   Returns an attributed string consisting of the characters and attributes within the specified range in the attributed string.
 
 

@@ -1,7 +1,8 @@
 # init(forID:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an MTRDeviceType for the given ID, if the ID is known.  Returns nil for unknown IDs.
 
@@ -18,6 +19,10 @@ Returns an MTRDeviceType for the given ID, if the ID is known.  Returns nil for 
 
 ```swift
 init?(forID deviceTypeID: NSNumber)
+```
+
+```objc
++ (MTRDeviceType *) deviceTypeForID:(NSNumber *) deviceTypeID;
 ```
 
 

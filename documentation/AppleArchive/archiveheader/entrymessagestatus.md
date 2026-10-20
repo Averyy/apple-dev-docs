@@ -1,7 +1,8 @@
 # ArchiveHeader.EntryMessageStatus
 
 **Framework**: Apple Archive  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Statuses that you return from an archive stream operation’s entry selection and status closure.
 
@@ -11,7 +12,7 @@ Statuses that you return from an archive stream operation’s entry selection an
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,42 +24,43 @@ struct EntryMessageStatus
 ## Topics
 
 ### Entry Message Statuses
-- [static let cancel: ArchiveHeader.EntryMessageStatus](archiveheader/entrymessagestatus/cancel.md)
+- [static let cancel: ArchiveHeader.EntryMessageStatus](./entrymessagestatus/cancel.md)
   An entry message status that indicates the operation cancels processing as soon as possible.
-- [static let ok: ArchiveHeader.EntryMessageStatus](archiveheader/entrymessagestatus/ok.md)
+- [static let ok: ArchiveHeader.EntryMessageStatus](./entrymessagestatus/ok.md)
   An entry message status that indicates the operation keeps the entry.
-- [static let skip: ArchiveHeader.EntryMessageStatus](archiveheader/entrymessagestatus/skip.md)
+- [static let skip: ArchiveHeader.EntryMessageStatus](./entrymessagestatus/skip.md)
   An entry message status that indicates the operation skips the entry.
 ### Instance Properties
-- [var description: String](archiveheader/entrymessagestatus/description.md)
+- [var description: String](./entrymessagestatus/description.md)
   A textual representation of this instance.
 ### Raw Values
-- [var rawValue: Int32](archiveheader/entrymessagestatus/rawvalue.md)
-- [init(rawValue: Int32)](archiveheader/entrymessagestatus/init(rawvalue:).md)
+- [var rawValue: Int32](./entrymessagestatus/rawvalue.md)
+- [init(rawValue: Int32)](./entrymessagestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [ArchiveHeader.EntryAttributes](archiveheader/entryattributes.md)
+### Manipulating Entries
+- [ArchiveHeader.EntryAttributes](./entryattributes.md)
   An object that describes archive entry attributes.
-- [ArchiveHeader.EntryXATBlob](archiveheader/entryxatblob.md)
+- [ArchiveHeader.EntryXATBlob](./entryxatblob.md)
   An object that describes the extended attributes of an archive entry.
-- [var entryType: ArchiveHeader.EntryType?](archiveheader/entrytype-swift.property.md)
+- [var entryType: ArchiveHeader.EntryType?](./entrytype-swift.property.md)
   The entry type from `TYP` field, or `nil` if missing or invalid.
-- [ArchiveHeader.EntryType](archiveheader/entrytype-swift.struct.md)
+- [ArchiveHeader.EntryType](./entrytype-swift.struct.md)
   Constants that specify the filesystem entry types.
-- [ArchiveHeader.EntryFilter](archiveheader/entryfilter.md)
+- [ArchiveHeader.EntryFilter](./entryfilter.md)
   A type alias for the parameters passed to an archive stream operation’s entry selection and status closure.
-- [ArchiveHeader.EntryMessage](archiveheader/entrymessage.md)
+- [ArchiveHeader.EntryMessage](./entrymessage.md)
   Constants that represent message values for the entry message filters.
-- [ArchiveHeader.EntryFilterData](archiveheader/entryfilterdata.md)
+- [ArchiveHeader.EntryFilterData](./entryfilterdata.md)
   Enumerations that represent entry filter data.
 
 

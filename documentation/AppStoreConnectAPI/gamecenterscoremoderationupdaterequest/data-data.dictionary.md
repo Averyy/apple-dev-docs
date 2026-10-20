@@ -1,7 +1,8 @@
 # GameCenterScoreModerationUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource data for the Game Center score moderation you update.
 
@@ -10,21 +11,25 @@ The resource data for the Game Center score moderation you update.
 
 ## Declaration
 
-```swift
+```
 object GameCenterScoreModerationUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterScoreModerationUpdateRequest.Data.Attributes](gamecenterscoremoderationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterScoreModerationUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes that describe a Game Center score moderation you update.
 
 ## Properties
 
 - `attributes` (GameCenterScoreModerationUpdateRequest.Data.Attributes): The attributes that describe the Game Center score moderation.
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
-- `type` (string) *(required)*: The resource type. - gameCenterScoreModerations:
+- `type` (string) *(required)*: The resource type.
+
+  - gameCenterScoreModerations:
+
+  **Allowed Values**: `gameCenterScoreModerations`
 
 
 ---

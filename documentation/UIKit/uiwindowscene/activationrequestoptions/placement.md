@@ -1,7 +1,8 @@
 # placement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The placement you prefer when the system activates the window scene.
 
@@ -10,7 +11,7 @@ The placement you prefer when the system activates the window scene.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,15 +26,16 @@ Provide a scene placement to influence how the system positions the scene on act
 
 ## See Also
 
-- [protocol UIWindowScenePlacement](uiwindowsceneplacement-swift.protocol.md)
+### Positioning windows
+- [protocol UIWindowScenePlacement](../../uiwindowsceneplacement-swift.protocol.md)
   The placement of a window scene in the workspace.
-- [struct UIWindowSceneProminentPlacement](uiwindowsceneprominentplacement-swift.struct.md)
+- [struct UIWindowSceneProminentPlacement](../../uiwindowsceneprominentplacement-swift.struct.md)
   A placement that indicates the system should present the window more prominently than others in the space.
-- [struct UIWindowSceneStandardPlacement](uiwindowscenestandardplacement-swift.struct.md)
+- [struct UIWindowSceneStandardPlacement](../../uiwindowscenestandardplacement-swift.struct.md)
   A placement that indicates the system should present the window using the default style of the system in the space.
-- [struct UIWindowScenePushPlacement](uiwindowscenepushplacement-swift.struct.md)
+- [struct UIWindowScenePushPlacement](../../uiwindowscenepushplacement-swift.struct.md)
   A placement that indicates the system needs to present the window by pushing it onto another window.
-- [var preferredPresentationStyle: UIWindowScene.PresentationStyle](uiwindowscene/activationrequestoptions/preferredpresentationstyle.md)
+- [var preferredPresentationStyle: UIWindowScene.PresentationStyle](./preferredpresentationstyle.md)
   The presentation style of the window scene.
 
 

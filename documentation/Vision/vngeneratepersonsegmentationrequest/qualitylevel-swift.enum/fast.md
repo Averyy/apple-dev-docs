@@ -1,7 +1,8 @@
 # VNGeneratePersonSegmentationRequest.QualityLevel.fast
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prefers performance over image quality.
 
@@ -11,11 +12,16 @@ Prefers performance over image quality.
 case fast
 ```
 
+```c
+VNGeneratePersonSegmentationRequestQualityLevelFast
+```
+
 ## See Also
 
-- [VNGeneratePersonSegmentationRequest.QualityLevel.accurate](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum/accurate.md)
+### Quality Levels
+- [VNGeneratePersonSegmentationRequest.QualityLevel.accurate](./accurate.md)
   Prefers image quality over performance.
-- [VNGeneratePersonSegmentationRequest.QualityLevel.balanced](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum/balanced.md)
+- [VNGeneratePersonSegmentationRequest.QualityLevel.balanced](./balanced.md)
   Prefers processing that balances image quality and performance.
 
 

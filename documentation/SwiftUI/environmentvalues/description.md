@@ -1,7 +1,8 @@
 # description
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the contents of the environment values instance.
 
@@ -22,9 +23,10 @@ var description: String { get }
 
 ## See Also
 
-- [init()](environmentvalues/init.md)
+### Creating and accessing values
+- [init()](./init%28%29.md)
   Creates an environment values instance.
-- [subscript(_:)](environmentvalues/subscript(_:).md)
+- [subscript(_:)](./subscript%28_%29.md)
   Accesses the environment value associated with a custom key.
 
 

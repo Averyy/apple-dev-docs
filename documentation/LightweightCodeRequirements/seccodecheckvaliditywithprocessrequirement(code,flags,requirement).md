@@ -1,7 +1,8 @@
 # SecCodeCheckValidityWithProcessRequirement(code:flags:requirement:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Checks whether the code associated with a running process satisfies a lightweight code requirement.
 
@@ -21,16 +22,17 @@ Returns a validation result which indicates whether the code signature is valid,
 
 ## See Also
 
-- [var launchRequirement: LaunchCodeRequirement?](../foundation/process/launchrequirement.md)
-- [struct LaunchCodeRequirement](launchcoderequirement.md)
+### Checking code requirements for launching processes
+- [var launchRequirement: LaunchCodeRequirement?](../Foundation/process/launchrequirement.md)
+- [struct LaunchCodeRequirement](./launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
-- [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)
+- [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](./allof%28requirement%29-4gf5f.md)
   Creates a constraint that requires a launching process’s executable to satisfy all of the provided constraints.
-- [func anyOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](anyof(requirement:)-6nicx.md)
+- [func anyOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](./anyof%28requirement%29-6nicx.md)
   Creates a constraint that requires a launching process’s executable to satisfy any of the provided constraints.
-- [protocol LaunchConstraint](launchconstraint.md)
+- [protocol LaunchConstraint](./launchconstraint.md)
   A protocol to which a lightweight code requirement constraint conforms if you can use it in launch code requirements.
-- [struct LaunchConstraintBuilder](launchconstraintbuilder.md)
+- [struct LaunchConstraintBuilder](./launchconstraintbuilder.md)
   A custom parameter attribute that constructs launch constraints from closures.
 
 

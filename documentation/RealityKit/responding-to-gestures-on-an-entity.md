@@ -1,6 +1,8 @@
 # Responding to gestures on an entity
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [RespondingToGesturesOnAnEntity.zip](https://docs-assets.developer.apple.com/published/feabe405000a/RespondingToGesturesOnAnEntity.zip)
 
 Respond to gestures performed on RealityKit entities using input target and collision components.
 
@@ -10,9 +12,9 @@ Respond to gestures performed on RealityKit entities using input target and coll
 
 #### Overview
 
-Your app responds to [`RealityView`](realityview.md) gesture events received from SwiftUI by adding an [`InputTargetComponent`](inputtargetcomponent.md) and a [`CollisionComponent`](collisioncomponent.md) to your entities. Add a [`HoverEffectComponent`](hovereffectcomponent.md) to the entity so it highlights as the gaze intersects the collision shape. The input target component marks the entity as participating in the event system. The system uses the collision component to test if the gaze vector intersects the entity. With both components attached, entities receive events. With the hover effect attached the entity visually appears ready to receive events.
+Your app responds to [`RealityView`](./realityview.md) gesture events received from SwiftUI by adding an [`InputTargetComponent`](./inputtargetcomponent.md) and a [`CollisionComponent`](./collisioncomponent.md) to your entities. Add a [`HoverEffectComponent`](./hovereffectcomponent.md) to the entity so it highlights as the gaze intersects the collision shape. The input target component marks the entity as participating in the event system. The system uses the collision component to test if the gaze vector intersects the entity. With both components attached, entities receive events. With the hover effect attached the entity visually appears ready to receive events.
 
-##### Attach Components to an Entity to Process Events
+##### Attach components to an entity to process events
 
 The sample defines the `ActiveComponent`, which keeps track of the `active` state of the entity.
 
@@ -34,7 +36,7 @@ cube.components.set(HoverEffectComponent())
 cube.components.set(ActiveComponent())
 ```
 
-The sample has a [`SpatialEventGesture`](https://developer.apple.com/documentation/swiftui/spatialeventgesture) attached to the `RealityView`. As the person interacting with the app looks around and pinches, the system uses the input target component and the collision component to determine intent. The system considers all entities in the scene because the sample calls [`targetedToAnyEntity()`](https://developer.apple.com/documentation/swiftui/gesture/targetedtoanyentity()). When the person pinches on the cube the system invokes the gesture’s `onEnded` block, which toggles the `active` flag.
+The sample has a [`SpatialEventGesture`](../SwiftUI/spatialeventgesture.md) attached to the `RealityView`. As the person interacting with the app looks around and pinches, the system uses the input target component and the collision component to determine intent. The system considers all entities in the scene because the sample calls [targetedToAnyEntity](../SwiftUI/gesture/targetedtoanyentity%28%29.md). When the person pinches on the cube the system invokes the gesture’s `onEnded` block, which toggles the `active` flag.
 
 ```swift
 .gesture(SpatialEventGesture()
@@ -57,7 +59,7 @@ attachments: {
 }
 ```
 
-The attachment’s `id` is set to the ID of the `cube` so that it’s easy to find in the `update:` block of `RealityView`. In the `update:` block, the sample finds the `ActiveComponent` from the cube and then finds the attachment using the ID of the cube. If the active value is `true` the code adds a [`BillboardComponent`](billboardcomponent.md) to the attachment. The system ensures entities with a `BillboardComponent` always face the person. The `RealityView` `update` block adds the attachment entity as a subentity of the cube and sets the position to `[0.0, 0.1, 0.0]`.
+The attachment’s `id` is set to the ID of the `cube` so that it’s easy to find in the `update:` block of `RealityView`. In the `update:` block, the sample finds the `ActiveComponent` from the cube and then finds the attachment using the ID of the cube. If the active value is `true` the code adds a [`BillboardComponent`](./billboardcomponent.md) to the attachment. The system ensures entities with a `BillboardComponent` always face the person. The `RealityView` `update` block adds the attachment entity as a subentity of the cube and sets the position to `[0.0, 0.1, 0.0]`.
 
 ```swift
 update: { content, attachments in
@@ -76,35 +78,36 @@ update: { content, attachments in
 
 ## See Also
 
-- [Hello World](../visionos/world.md)
+### Scene content
+- [Hello World](../visionOS/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
+- [Creating a spatial drawing app with RealityKit](./creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
-- [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
+- [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md)
   Create an interactive mesh with low-level mesh and low-level texture.
-- [Combining 2D and 3D views in an immersive app](combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](./combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
-- [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
+- [Transforming RealityKit entities using gestures](./transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [Models and meshes](scene-content-models-and-meshes.md)
+- [Models and meshes](./scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
-- [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
+- [Materials, textures, and shaders](./scene-content-materials-and-shaders.md)
   Apply textures to the surface of your scene’s 3D objects to give each object a unique appearance.
-- [Anchors](scene-content-anchors.md)
+- [Anchors](./scene-content-anchors.md)
   Lock virtual content to the real world.
-- [Lights and cameras](scene-content-lights-and-cameras.md)
+- [Lights and cameras](./scene-content-lights-and-cameras.md)
   Control the lighting and point of view for a scene.
-- [Content synchronization](scene-content-content-synchronization.md)
+- [Content synchronization](./scene-content-content-synchronization.md)
   Synchronize the contents of entities locally or across the network.
-- [Audio](scene-content-audio.md)
+- [Audio](./scene-content-audio.md)
   Create personalized and realistic spatial audio experiences.
-- [Videos](scene-content-videos.md)
+- [Videos](./scene-content-videos.md)
   Present videos in your RealityKit experiences.
-- [Images](scene-content-images.md)
+- [Images](./scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
-- [Mesh deformation](scene-content-mesh-deformation.md)
+- [Mesh deformation](./scene-content-mesh-deformation.md)
   Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 

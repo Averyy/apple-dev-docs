@@ -1,7 +1,8 @@
 # containsColumn(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the data frame contains a column.
 

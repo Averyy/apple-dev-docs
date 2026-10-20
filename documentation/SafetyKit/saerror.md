@@ -1,7 +1,8 @@
 # SAError
 
 **Framework**: SafetyKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error reported by SafetyKit.
 
@@ -21,36 +22,37 @@ struct SAError
 ## Topics
 
 ### Inspecting error information
-- [static var errorDomain: String](saerror/errordomain.md)
+- [static var errorDomain: String](./saerror/errordomain.md)
 ### Identifying an error cause
-- [SAError.Code](saerror/code.md)
+- [SAError.Code](./saerror/code.md)
   Codes for identifying errors in SafetyKit.
-- [let SAErrorDomain: String](saerrordomain.md)
+- [let SAErrorDomain: String](./saerrordomain.md)
   The domain for error objects that SafetyKit produces.
-- [static var invalidArgument: SAError.Code](saerror/invalidargument.md)
+- [static var invalidArgument: SAError.Code](./saerror/invalidargument.md)
   The method received an argument that it can’t validate.
-- [static var notAllowed: SAError.Code](saerror/notallowed.md)
+- [static var notAllowed: SAError.Code](./saerror/notallowed.md)
   The system currently restricts the feature on this device.
-- [static var notAuthorized: SAError.Code](saerror/notauthorized.md)
+- [static var notAuthorized: SAError.Code](./saerror/notauthorized.md)
   The system denies the app from performing the requested operation.
-- [static var operationFailed: SAError.Code](saerror/operationfailed.md)
+- [static var operationFailed: SAError.Code](./saerror/operationfailed.md)
   The requested operation failed; retrying may succeed.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SAErrorDomain: String](saerrordomain.md)
+### Handling errors
+- [let SAErrorDomain: String](./saerrordomain.md)
   The domain for error objects that SafetyKit produces.
-- [SAError.Code](saerror/code.md)
+- [SAError.Code](./saerror/code.md)
   Codes for identifying errors in SafetyKit.
 
 

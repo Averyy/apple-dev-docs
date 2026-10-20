@@ -1,7 +1,8 @@
 # name
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique name of the gesture recognizer.
 
@@ -18,11 +19,15 @@ The unique name of the gesture recognizer.
 var name: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * name;
+```
+
 #### Discussion
 
 Assign a string to this property that uniquely identifies the gesture recognizer. Use this name to distinguish one gesture recognizer from another during debugging, or to specify a relationship between gestures in SwiftUI and UIKit.
 
-For example, you can assign a SwiftUI gesture a name when you create it using [`gesture(_:name:isEnabled:)`](https://developer.apple.com/documentation/swiftui/view/gesture(_:name:isenabled:)), as the following code shows:
+For example, you can assign a SwiftUI gesture a name when you create it using [`gesture(_:name:isEnabled:)`](../../SwiftUI/view/gesture%28_,name,isenabled%29.md), as the following code shows:
 
 ```swift
 // SwiftUI code
@@ -45,7 +50,7 @@ struct TapGestureView: View {
 }
 ```
 
-Then, you can use this [`name`](uigesturerecognizer/name.md) property to refer to the gesture from UIKit. For example, you might do this in your implementation of [`gestureRecognizer(_:shouldRequireFailureOf:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldrequirefailureof:).md), as the following code shows:
+Then, you can use this [`name`](./name.md) property to refer to the gesture from UIKit. For example, you might do this in your implementation of [`gestureRecognizer(_:shouldRequireFailureOf:)`](../uigesturerecognizerdelegate/gesturerecognizer%28_,shouldrequirefailureof%29.md), as the following code shows:
 
 ```swift
 // UIKit code

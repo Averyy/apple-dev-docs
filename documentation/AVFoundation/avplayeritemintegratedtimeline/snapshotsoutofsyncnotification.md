@@ -1,7 +1,8 @@
 # snapshotsOutOfSyncNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the snapshot objects provided by this timeline become out of sync with the current timeline state.
 
@@ -20,19 +21,24 @@ A notification the system posts when the snapshot objects provided by this timel
 class let snapshotsOutOfSyncNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVPlayerIntegratedTimelineSnapshotsOutOfSyncNotification;
+```
+
 ## Topics
 
 ### User-information keys
-- [class let snapshotsOutOfSyncReasonKey: String](avplayeritemintegratedtimeline/snapshotsoutofsyncreasonkey.md)
+- [class let snapshotsOutOfSyncReasonKey: String](./snapshotsoutofsyncreasonkey.md)
   A key to retrieve the reason for an out-of-sync state notification.
-- [struct AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](avplayerintegratedtimelinesnapshotsoutofsyncreason.md)
+- [struct AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](../avplayerintegratedtimelinesnapshotsoutofsyncreason.md)
   Constants that represent the reason for an out-of-sync state.
 
 ## See Also
 
-- [var currentSnapshot: AVPlayerItemIntegratedTimelineSnapshot](avplayeritemintegratedtimeline/currentsnapshot.md)
+### Inspecting snapshots
+- [var currentSnapshot: AVPlayerItemIntegratedTimelineSnapshot](./currentsnapshot.md)
   An immutable representation of the timeline state at time of request.
-- [class AVPlayerItemIntegratedTimelineSnapshot](avplayeritemintegratedtimelinesnapshot.md)
+- [class AVPlayerItemIntegratedTimelineSnapshot](../avplayeritemintegratedtimelinesnapshot.md)
   An immutable representation of inspectable details of an integrated timeline object.
 
 

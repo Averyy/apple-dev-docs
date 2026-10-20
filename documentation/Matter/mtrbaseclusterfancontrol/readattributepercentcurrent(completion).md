@@ -1,7 +1,8 @@
 # readAttributePercentCurrent(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePercentCurrent(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePercentCurrent() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePercentCurrentWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of change that occurred.
 
@@ -19,11 +20,16 @@ The type of change that occurred.
 var type: CMPedometerEventType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMPedometerEventType type;
+```
+
 ## See Also
 
-- [var date: Date](cmpedometerevent/date.md)
+### Pedometer Data
+- [var date: Date](./date.md)
   The date on which the pedometer event was recorded.
-- [enum CMPedometerEventType](cmpedometereventtype.md)
+- [enum CMPedometerEventType](../cmpedometereventtype.md)
   Constants indicating the change that occurred to the user’s pedestrian activity.
 
 

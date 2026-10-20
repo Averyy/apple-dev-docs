@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instantaneous velocity of the device, measured in meters per second.
 
@@ -19,11 +20,16 @@ The instantaneous velocity of the device, measured in meters per second.
 var speed: CLLocationSpeed { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationSpeed speed;
+```
+
 ## See Also
 
-- [var slope: Double?](cmodometerdata/slope-9h3m4.md)
+### Getting speed and slope
+- [var slope: Double?](./slope-9h3m4.md)
   The slope at the location toward the direction of travel, measured in degrees.
-- [var maxAbsSlope: Double?](cmodometerdata/maxabsslope-9mnfd.md)
+- [var maxAbsSlope: Double?](./maxabsslope-9mnfd.md)
   The maximum absolute slope at the location toward all directions, measured in degrees.
 
 

@@ -1,7 +1,8 @@
 # init(keyType:privateKey:keyComment:creationDate:expiryDate:keyGenerationSource:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct trust_cache_entry1 {
     ...
 };
@@ -17,9 +17,9 @@ struct trust_cache_entry1 {
 ## Topics
 
 ### Instance Properties
-- [cdhash](trust_cache_entry1/3000798-cdhash.md)
-- [flags](trust_cache_entry1/3000799-flags.md)
-- [hash_type](trust_cache_entry1/3000800-hash_type.md)
+- [cdhash](./trust_cache_entry1/api-3000798-cdhash.md)
+- [flags](./trust_cache_entry1/api-3000799-flags.md)
+- [hash_type](./trust_cache_entry1/api-3000800-hash_type.md)
 
 
 ---

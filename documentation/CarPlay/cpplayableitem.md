@@ -1,7 +1,8 @@
 # CPPlayableItem
 
 **Framework**: CarPlay  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.4+
@@ -14,24 +15,28 @@
 protocol CPPlayableItem : NSObjectProtocol
 ```
 
+```objc
+@protocol CPPlayableItem <NSObject>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var playbackConfiguration: CPPlaybackConfiguration?](cpplayableitem/playbackconfiguration.md)
+- [var playbackConfiguration: CPPlaybackConfiguration?](./cpplayableitem/playbackconfiguration.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [CPListImageRowItemCardElement](cplistimagerowitemcardelement.md)
-- [CPListImageRowItemCondensedElement](cplistimagerowitemcondensedelement.md)
-- [CPListImageRowItemElement](cplistimagerowitemelement.md)
-- [CPListImageRowItemGridElement](cplistimagerowitemgridelement.md)
-- [CPListImageRowItemImageGridElement](cplistimagerowitemimagegridelement.md)
-- [CPListImageRowItemRowElement](cplistimagerowitemrowelement.md)
-- [CPListItem](cplistitem.md)
-- [CPListTemplateDetailsHeader](cplisttemplatedetailsheader.md)
+- [CPListImageRowItemCardElement](./cplistimagerowitemcardelement.md)
+- [CPListImageRowItemCondensedElement](./cplistimagerowitemcondensedelement.md)
+- [CPListImageRowItemElement](./cplistimagerowitemelement.md)
+- [CPListImageRowItemGridElement](./cplistimagerowitemgridelement.md)
+- [CPListImageRowItemImageGridElement](./cplistimagerowitemimagegridelement.md)
+- [CPListImageRowItemRowElement](./cplistimagerowitemrowelement.md)
+- [CPListItem](./cplistitem.md)
+- [CPListTemplateDetailsHeader](./cplisttemplatedetailsheader.md)
 
 
 ---

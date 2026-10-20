@@ -1,7 +1,8 @@
 # tabViewBorderType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,15 +13,20 @@
 var tabViewBorderType: NSTabView.TabViewBorderType { get set }
 ```
 
+```objc
+@property NSTabViewBorderType tabViewBorderType;
+```
+
 ## See Also
 
-- [var tabViewType: NSTabView.TabType](nstabview/tabviewtype.md)
+### Configuring the Tab Attributes
+- [var tabViewType: NSTabView.TabType](./tabviewtype.md)
   The tab type to display the tabs.
-- [NSTabView.TabType](nstabview/tabtype.md)
-  These constants specify the tab view’s type as used by the [`tabViewType`](nstabview/tabviewtype.md) property.
-- [var tabPosition: NSTabView.TabPosition](nstabview/tabposition-swift.property.md)
-- [NSTabView.TabPosition](nstabview/tabposition-swift.enum.md)
-- [NSTabView.TabViewBorderType](nstabview/tabviewbordertype-swift.enum.md)
+- [NSTabView.TabType](./tabtype.md)
+  These constants specify the tab view’s type as used by the [`tabViewType`](./tabviewtype.md) property.
+- [var tabPosition: NSTabView.TabPosition](./tabposition-swift.property.md)
+- [NSTabView.TabPosition](./tabposition-swift.enum.md)
+- [NSTabView.TabViewBorderType](./tabviewbordertype-swift.enum.md)
 
 
 ---

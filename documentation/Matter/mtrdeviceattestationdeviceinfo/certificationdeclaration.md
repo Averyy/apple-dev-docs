@@ -1,7 +1,8 @@
 # certificationDeclaration
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The certification declaration of the device, if available.  This is a DER-encoded string representing a CMS-formatted certification declaration.  May be nil only if attestation verification failed.
 
@@ -18,6 +19,10 @@ The certification declaration of the device, if available.  This is a DER-encode
 
 ```swift
 var certificationDeclaration: Data? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * certificationDeclaration;
 ```
 
 

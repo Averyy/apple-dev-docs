@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a SHA256 hash function.
 
@@ -22,15 +23,16 @@ init()
 
 #### Discussion
 
-Initialize a new hash function by calling this method if you want to hash data iteratively, such as when you don’t have a buffer large enough to hold all the data at once. Provide data blocks to the hash function using the `update(data:)` or [`update(bufferPointer:)`](sha256/update(bufferpointer:).md) method. After providing all the data, call [`finalize()`](sha256/finalize().md) to get the digest.
+Initialize a new hash function by calling this method if you want to hash data iteratively, such as when you don’t have a buffer large enough to hold all the data at once. Provide data blocks to the hash function using the `update(data:)` or [`update(bufferPointer:)`](./update%28bufferpointer%29.md) method. After providing all the data, call [`finalize()`](./finalize%28%29.md) to get the digest.
 
 If your data fits into a single buffer, you can use the `hash(data:)` method instead, to compute the digest in a single call.
 
 ## See Also
 
-- [func update(bufferPointer: UnsafeRawBufferPointer)](sha256/update(bufferpointer:).md)
+### Computing a hash iteratively
+- [func update(bufferPointer: UnsafeRawBufferPointer)](./update%28bufferpointer%29.md)
   Incrementally updates the hash function with the contents of the buffer.
-- [func finalize() -> SHA256.Digest](sha256/finalize.md)
+- [func finalize() -> SHA256.Digest](./finalize%28%29.md)
   Finalizes the hash function and returns the computed digest.
 
 

@@ -1,7 +1,8 @@
 # pathForImageResource(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of the specified image resource file.
 
@@ -12,6 +13,10 @@ Returns the location of the specified image resource file.
 
 ```swift
 func pathForImageResource(_ name: NSImage.Name) -> String?
+```
+
+```objc
+- (NSString *) pathForImageResource:(NSImageName) name;
 ```
 
 #### Return Value
@@ -28,11 +33,13 @@ Image resources are those files in the bundle that are recognized by the `NSImag
 
 ## See Also
 
-- [func path(forResource: String?, ofType: String?) -> String?](bundle/path(forresource:oftype:).md)
+### Related Documentation
+- [func path(forResource: String?, ofType: String?) -> String?](./path%28forresource,oftype%29.md)
   Returns the full pathname for the resource identified by the specified name and file extension.
-- [func urlForImageResource(NSImage.Name) -> URL?](bundle/urlforimageresource(_:).md)
+### Finding image resources
+- [func urlForImageResource(NSImage.Name) -> URL?](./urlforimageresource%28_%29.md)
   Returns the location of the specified image resource as an NSURL.
-- [func image(forResource: NSImage.Name) -> NSImage?](bundle/image(forresource:).md)
+- [func image(forResource: NSImage.Name) -> NSImage?](./image%28forresource%29.md)
   Returns an `NSImage` instance associated with the specified name, which can be backed by multiple files representing different resolution versions of the image.
 
 

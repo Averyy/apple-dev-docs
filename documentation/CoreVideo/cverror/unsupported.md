@@ -1,7 +1,8 @@
 # unsupported
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This operation is unsupported on this data type.
 

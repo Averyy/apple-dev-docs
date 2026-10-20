@@ -1,7 +1,8 @@
 # value
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current value of the stepper.
 
@@ -17,13 +18,18 @@ The current value of the stepper.
 var value: Double { get set }
 ```
 
+```objc
+@property double value;
+```
+
 ## See Also
 
-- [var maxValue: Double](nssteppertouchbaritem/maxvalue.md)
+### Managing the stepper’s value
+- [var maxValue: Double](./maxvalue.md)
   The stepper’s maximum value.
-- [var minValue: Double](nssteppertouchbaritem/minvalue.md)
+- [var minValue: Double](./minvalue.md)
   The stepper’s minimum value.
-- [var increment: Double](nssteppertouchbaritem/increment.md)
+- [var increment: Double](./increment.md)
   The stepper’s increment value.
 
 

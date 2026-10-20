@@ -1,7 +1,8 @@
 # condensed
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,11 +18,16 @@
 static let condensed: UIFont.Width
 ```
 
+```c
+extern const UIFontWidth UIFontWidthCondensed;
+```
+
 ## See Also
 
-- [static let compressed: UIFont.Width](uifont/width/compressed.md)
-- [static let expanded: UIFont.Width](uifont/width/expanded.md)
-- [static let standard: UIFont.Width](uifont/width/standard.md)
+### Font widths
+- [static let compressed: UIFont.Width](./compressed.md)
+- [static let expanded: UIFont.Width](./expanded.md)
+- [static let standard: UIFont.Width](./standard.md)
 
 
 ---

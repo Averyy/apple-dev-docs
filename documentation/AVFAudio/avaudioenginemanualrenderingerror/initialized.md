@@ -1,7 +1,8 @@
 # AVAudioEngineManualRenderingError.initialized
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that the system can’t perform because the engine is still running.
 
@@ -20,11 +21,16 @@ An operation that the system can’t perform because the engine is still running
 case initialized
 ```
 
+```c
+AVAudioEngineManualRenderingErrorInitialized
+```
+
 ## See Also
 
-- [AVAudioEngineManualRenderingError.invalidMode](avaudioenginemanualrenderingerror/invalidmode.md)
+### Identifying rendering errors
+- [AVAudioEngineManualRenderingError.invalidMode](./invalidmode.md)
   An operation the system can’t perform because the engine isn’t in manual rendering mode or the right variant of it.
-- [AVAudioEngineManualRenderingError.notRunning](avaudioenginemanualrenderingerror/notrunning.md)
+- [AVAudioEngineManualRenderingError.notRunning](./notrunning.md)
   An operation the system can’t perform because the engine isn’t running.
 
 

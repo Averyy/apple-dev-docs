@@ -1,7 +1,8 @@
 # controller
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying controller object that you use to access input elements.
 
@@ -14,6 +15,10 @@ The underlying controller object that you use to access input elements.
 
 ```swift
 var controller: GCController? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) GCController * controller;
 ```
 
 #### Discussion

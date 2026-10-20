@@ -1,7 +1,8 @@
 # SecProtocolType.SMTP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates SMTP.
 
@@ -13,6 +14,10 @@ Indicates SMTP.
 
 ```swift
 case SMTP
+```
+
+```c
+kSecProtocolTypeSMTP
 ```
 
 

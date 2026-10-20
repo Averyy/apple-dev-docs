@@ -1,7 +1,8 @@
 # threadAttributed
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether this call stack is attributed to a specific thread.
 
@@ -24,7 +25,8 @@ This field is only present when `CallStackTree.callStackPerThread` is `true`.
 
 ## See Also
 
-- [let rootFrames: ContiguousArray<CallStackFrame>](callstackthread/rootframes.md)
+### Frames
+- [let rootFrames: ContiguousArray<CallStackFrame>](./rootframes.md)
   Root frames for this call stack thread
 
 

@@ -1,7 +1,8 @@
 # kMDItemNamedLocation
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The name of the location or point of interest associated with the item. The name may be user provided. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemNamedLocation: CFString!
+```
+
+```c
+const CFStringRef kMDItemNamedLocation;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new counter heap configured from a counter heap descriptor.
@@ -20,13 +21,17 @@ Creates a new counter heap configured from a counter heap descriptor.
 func makeCounterHeap(descriptor: MTL4CounterHeapDescriptor) throws -> any MTL4CounterHeap
 ```
 
+```objc
+- (id<MTL4CounterHeap>) newCounterHeapWithDescriptor:(MTL4CounterHeapDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
-A [`MTL4CounterHeap`](mtl4counterheap.md) instance, or `nil` if the function failed.
+A [`MTL4CounterHeap`](../mtl4counterheap.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `descriptor`: [`MTL4CounterHeapDescriptor`](mtl4counterheapdescriptor.md) instance that configures the [`MTL4CounterHeap`](mtl4counterheap.md) instance.
+- `descriptor`: [`MTL4CounterHeapDescriptor`](../mtl4counterheapdescriptor.md) instance that configures the [`MTL4CounterHeap`](../mtl4counterheap.md) instance.
 
 
 ---

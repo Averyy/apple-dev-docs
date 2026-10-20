@@ -1,16 +1,17 @@
 # UIKeyboardType.asciiCapable
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a keyboard that displays standard ASCII characters.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,31 +19,36 @@ Specifies a keyboard that displays standard ASCII characters.
 case asciiCapable
 ```
 
+```c
+UIKeyboardTypeASCIICapable
+```
+
 ## See Also
 
-- [UIKeyboardType.default](uikeyboardtype/default.md)
+### Constants
+- [UIKeyboardType.default](./default.md)
   Specifies the default keyboard for the current input method.
-- [UIKeyboardType.numbersAndPunctuation](uikeyboardtype/numbersandpunctuation.md)
+- [UIKeyboardType.numbersAndPunctuation](./numbersandpunctuation.md)
   Specifies the numbers and punctuation keyboard.
-- [UIKeyboardType.URL](uikeyboardtype/url.md)
+- [UIKeyboardType.URL](./url.md)
   Specifies a keyboard for URL entry.
-- [UIKeyboardType.numberPad](uikeyboardtype/numberpad.md)
+- [UIKeyboardType.numberPad](./numberpad.md)
   Specifies a numeric keypad for PIN entry.
-- [UIKeyboardType.phonePad](uikeyboardtype/phonepad.md)
+- [UIKeyboardType.phonePad](./phonepad.md)
   Specifies a keypad for entering telephone numbers.
-- [UIKeyboardType.namePhonePad](uikeyboardtype/namephonepad.md)
+- [UIKeyboardType.namePhonePad](./namephonepad.md)
   Specifies a keypad for entering a person’s name or phone number.
-- [UIKeyboardType.emailAddress](uikeyboardtype/emailaddress.md)
+- [UIKeyboardType.emailAddress](./emailaddress.md)
   Specifies a keyboard for entering email addresses.
-- [UIKeyboardType.decimalPad](uikeyboardtype/decimalpad.md)
+- [UIKeyboardType.decimalPad](./decimalpad.md)
   Specifies a keyboard with numbers and a decimal point.
-- [UIKeyboardType.twitter](uikeyboardtype/twitter.md)
+- [UIKeyboardType.twitter](./twitter.md)
   Specifies a keyboard for Twitter text entry, with easy access to the at (”`@`”) and hash (”`#`”) characters.
-- [UIKeyboardType.webSearch](uikeyboardtype/websearch.md)
+- [UIKeyboardType.webSearch](./websearch.md)
   Specifies a keyboard for web search terms and URL entry.
-- [UIKeyboardType.asciiCapableNumberPad](uikeyboardtype/asciicapablenumberpad.md)
+- [UIKeyboardType.asciiCapableNumberPad](./asciicapablenumberpad.md)
   Specifies a number pad that outputs only ASCII digits.
-- [static var alphabet: UIKeyboardType](uikeyboardtype/alphabet.md)
+- [static var alphabet: UIKeyboardType](./alphabet.md)
   Specifies a keyboard for alphabetic entry.
 
 

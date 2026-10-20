@@ -1,18 +1,19 @@
 # density
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The density of the object, in kilograms per square meter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ The density of the object, in kilograms per square meter.
 var density: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat density;
+```
+
 ## Mentions
 
-- [Configuring a Physics Body](configuring-a-physics-body.md)
+- [Configuring a Physics Body](../configuring-a-physics-body.md)
 
 #### Discussion
 
 The actual unit is arbitrary as long as relative masses of objects are consistent throughout the game.
 
-The [`mass`](skphysicsbody/mass.md) and [`density`](skphysicsbody/density.md) properties are interrelated. When you change the value of either property, the other property’s value is automatically recalculated to be consistent.
+The [`mass`](./mass.md) and [`density`](./density.md) properties are interrelated. When you change the value of either property, the other property’s value is automatically recalculated to be consistent.
 
 The default value is `1.0`.
 
 ## See Also
 
-- [Configuring a Physics Body](configuring-a-physics-body.md)
+### Defining a Physics Body’s Physical Properties
+- [Configuring a Physics Body](../configuring-a-physics-body.md)
   Move a physics body, and make it collide with other objects, by setting its physical properties once or changing them dynamically.
-- [var mass: CGFloat](skphysicsbody/mass.md)
+- [var mass: CGFloat](./mass.md)
   The mass of the body, in kilograms.
-- [var area: CGFloat](skphysicsbody/area.md)
+- [var area: CGFloat](./area.md)
   The area covered by the body.
-- [var friction: CGFloat](skphysicsbody/friction.md)
+- [var friction: CGFloat](./friction.md)
   The roughness of the surface of the physics body.
-- [var restitution: CGFloat](skphysicsbody/restitution.md)
+- [var restitution: CGFloat](./restitution.md)
   The bounciness of the physics body.
-- [var linearDamping: CGFloat](skphysicsbody/lineardamping.md)
+- [var linearDamping: CGFloat](./lineardamping.md)
   A property that reduces the body’s linear velocity.
-- [var angularDamping: CGFloat](skphysicsbody/angulardamping.md)
+- [var angularDamping: CGFloat](./angulardamping.md)
   A property that reduces the body’s rotational velocity.
 
 

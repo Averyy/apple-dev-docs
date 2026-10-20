@@ -1,7 +1,8 @@
 # CiArtifact
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A file output produced by an Xcode Cloud build action, such as an app archive, test result bundle, or build log.
 
@@ -10,14 +11,14 @@ A file output produced by an Xcode Cloud build action, such as an app archive, t
 
 ## Declaration
 
-```swift
+```
 object CiArtifact
 ```
 
 ## Topics
 
 ### Objects
-- [object CiArtifact.Attributes](ciartifact/attributes-data.dictionary.md)
+- [object CiArtifact.Attributes](./ciartifact/attributes-data.dictionary.md)
   The attributes that describe the output of an artifact resource.
 
 ## Properties
@@ -27,9 +28,12 @@ object CiArtifact
 - `links` (ResourceLinks): The navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ciArtifacts`
+
 ## See Also
 
-- [object CiArtifactResponse](ciartifactresponse.md)
+### Objects
+- [object CiArtifactResponse](./ciartifactresponse.md)
   The response body for endpoints that read a single artifact produced by an Xcode Cloud build action.
 
 

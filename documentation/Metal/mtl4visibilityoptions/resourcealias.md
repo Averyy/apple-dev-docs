@@ -1,7 +1,8 @@
 # resourceAlias
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flushes caches to ensure that aliased virtual addresses are memory consistent.
 
@@ -17,6 +18,10 @@ Flushes caches to ensure that aliased virtual addresses are memory consistent.
 
 ```swift
 static var resourceAlias: MTL4VisibilityOptions { get }
+```
+
+```c
+MTL4VisibilityOptionResourceAlias
 ```
 
 #### Discussion

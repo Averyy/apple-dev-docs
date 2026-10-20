@@ -1,7 +1,8 @@
 # kCGImagePropertyGPSVersion
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The GPS version information.
 
@@ -18,6 +19,10 @@ The GPS version information.
 
 ```swift
 let kCGImagePropertyGPSVersion: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyGPSVersion;
 ```
 
 

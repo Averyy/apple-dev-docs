@@ -1,7 +1,8 @@
 # debugOptions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current debugging options.
 
@@ -21,7 +22,8 @@ The current debugging options.
 
 ## See Also
 
-- [Improving the Performance of a RealityKit App](improving-the-performance-of-a-realitykit-app.md)
+### Debugging the session
+- [Improving the Performance of a RealityKit App](../improving-the-performance-of-a-realitykit-app.md)
   Measure CPU and GPU utilization to find ways to improve your app’s performance.
 
 

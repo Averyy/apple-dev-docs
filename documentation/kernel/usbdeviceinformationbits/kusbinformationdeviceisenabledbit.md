@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsEnabledBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system has enabled the hub port that the USB device attaches to.
 
@@ -10,7 +11,7 @@ The system has enabled the hub port that the USB device attaches to.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsEnabledBit = 4
 ```
 

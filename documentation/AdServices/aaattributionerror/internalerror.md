@@ -1,7 +1,8 @@
 # internalError
 
 **Framework**: AdServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The server is unable to provide a token because of an internal error.
 
@@ -20,11 +21,12 @@ static var internalError: AAAttributionError.Code { get }
 
 ## See Also
 
-- [static var networkError: AAAttributionError.Code](aaattributionerror/networkerror.md)
+### Error codes
+- [static var networkError: AAAttributionError.Code](./networkerror.md)
   The server is unable to provide a token because the internet isn’t available.
-- [static var platformNotSupported: AAAttributionError.Code](aaattributionerror/platformnotsupported.md)
+- [static var platformNotSupported: AAAttributionError.Code](./platformnotsupported.md)
   The server is unable to provide a token because of an unsupported operating system.
-- [AAAttributionError.Code](aaattributionerror/code.md)
+- [AAAttributionError.Code](./code.md)
   The error code that the parent class issues.
 
 

@@ -1,7 +1,8 @@
 # updateEquipment(_:rawValue:seatControl:pose:boundingBox:context:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - visionOS 2.0+
@@ -12,15 +13,18 @@
 static func updateEquipment<E>(_ equipment: E, rawValue: UInt64? = nil, seatControl: ControllingSeats? = nil, pose: TableVisualState.Pose2D? = nil, boundingBox: Rect3D? = nil, context: UInt64 = 0) -> Self where E : Equipment, E.State == RawValueState
 ```
 
+Available when `Self` is `UpdateEquipmentAction<RawValueState>`.
+
 ## See Also
 
-- [static func updateEquipment<E>(E, faceUp: Bool?, seatControl: ControllingSeats?, pose: TableVisualState.Pose2D?, boundingBox: Rect3D?, context: UInt64) -> Self](tabletopaction/updateequipment(_:faceup:seatcontrol:pose:boundingbox:context:).md)
-- [static func updateEquipment<E>(E, seatControl: ControllingSeats?, pose: TableVisualState.Pose2D?, boundingBox: Rect3D?, context: UInt64) -> Self](tabletopaction/updateequipment(_:seatcontrol:pose:boundingbox:context:).md)
-- [static func updateEquipment<E>(E, state: E.State, context: UInt64) -> Self](tabletopaction/updateequipment(_:state:context:)-6kawf.md)
-- [static func updateEquipment<E>(E, state: E.State, context: UInt64) -> Self](tabletopaction/updateequipment(_:state:context:)-88v3m.md)
-- [static func updateEquipment<E>(E, state: E.State, context: UInt64) -> Self](tabletopaction/updateequipment(_:state:context:)-8tmnn.md)
-- [static func updateEquipment<E>(E, state: E.State, context: UInt64) -> Self](tabletopaction/updateequipment(_:state:context:)-j62v.md)
-- [static func updateEquipment<E>(E, value: Int?, seatControl: ControllingSeats?, pose: TableVisualState.Pose2D?, boundingBox: Rect3D?, context: UInt64) -> Self](tabletopaction/updateequipment(_:value:seatcontrol:pose:boundingbox:context:).md)
+### Changing equipment state properties
+- [static func updateEquipment<E>(E, faceUp: Bool?, seatControl: ControllingSeats?, pose: TableVisualState.Pose2D?, boundingBox: Rect3D?, context: UInt64) -> Self](./updateequipment%28_,faceup,seatcontrol,pose,boundingbox,context%29.md)
+- [static func updateEquipment<E>(E, seatControl: ControllingSeats?, pose: TableVisualState.Pose2D?, boundingBox: Rect3D?, context: UInt64) -> Self](./updateequipment%28_,seatcontrol,pose,boundingbox,context%29.md)
+- [static func updateEquipment<E>(E, state: E.State, context: UInt64) -> Self](./updateequipment%28_,state,context%29-6kawf.md)
+- [static func updateEquipment<E>(E, state: E.State, context: UInt64) -> Self](./updateequipment%28_,state,context%29-88v3m.md)
+- [static func updateEquipment<E>(E, state: E.State, context: UInt64) -> Self](./updateequipment%28_,state,context%29-8tmnn.md)
+- [static func updateEquipment<E>(E, state: E.State, context: UInt64) -> Self](./updateequipment%28_,state,context%29-j62v.md)
+- [static func updateEquipment<E>(E, value: Int?, seatControl: ControllingSeats?, pose: TableVisualState.Pose2D?, boundingBox: Rect3D?, context: UInt64) -> Self](./updateequipment%28_,value,seatcontrol,pose,boundingbox,context%29.md)
 
 
 ---

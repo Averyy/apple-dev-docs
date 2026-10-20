@@ -1,7 +1,8 @@
 # rank
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indicator that enables you to prioritze credential identities relative to each other.
 
@@ -16,6 +17,10 @@ An indicator that enables you to prioritze credential identities relative to eac
 
 ```swift
 var rank: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSInteger rank;
 ```
 
 

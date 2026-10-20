@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Draws the cell’s image using the specified layout manager.
@@ -16,6 +17,10 @@ Draws the cell’s image using the specified layout manager.
 func draw(withFrame cellFrame: NSRect, in controlView: NSView?, characterIndex charIndex: Int, layoutManager: NSLayoutManager)
 ```
 
+```objc
+- (void) drawWithFrame:(NSRect) cellFrame inView:(NSView *) controlView characterIndex:(NSUInteger) charIndex layoutManager:(NSLayoutManager *) layoutManager;
+```
+
 ## Parameters
 
 - `cellFrame`: The frame rectangle in which to draw.
@@ -25,11 +30,12 @@ func draw(withFrame cellFrame: NSRect, in controlView: NSView?, characterIndex c
 
 ## See Also
 
-- [func draw(withFrame: NSRect, in: NSView?)](nstextattachmentcellprotocol/draw(withframe:in:).md)
+### Drawing the cell contents
+- [func draw(withFrame: NSRect, in: NSView?)](./draw%28withframe,in%29.md)
   Draws the cell’s image in the specified rectangle of the currently focused view.
-- [func draw(withFrame: NSRect, in: NSView?, characterIndex: Int)](nstextattachmentcellprotocol/draw(withframe:in:characterindex:).md)
+- [func draw(withFrame: NSRect, in: NSView?, characterIndex: Int)](./draw%28withframe,in,characterindex%29.md)
   Draws the cell’s image at the specified index point in the view.
-- [func highlight(Bool, withFrame: NSRect, in: NSView?)](nstextattachmentcellprotocol/highlight(_:withframe:in:).md)
+- [func highlight(Bool, withFrame: NSRect, in: NSView?)](./highlight%28_,withframe,in%29.md)
   Draws the receiver’s image with optional highlighting.
 
 

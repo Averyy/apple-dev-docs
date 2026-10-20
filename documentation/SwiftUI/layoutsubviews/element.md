@@ -1,7 +1,8 @@
 # LayoutSubviews.Element
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that contains a proxy value.
 
@@ -22,15 +23,16 @@ typealias Element = LayoutSubview
 
 ## See Also
 
-- [subscript(_:)](layoutsubviews/subscript(_:).md)
+### Accessing subviews
+- [subscript(_:)](./subscript%28_%29.md)
   Gets the subview proxies in the specified range.
-- [var startIndex: Int](layoutsubviews/startindex.md)
+- [var startIndex: Int](./startindex.md)
   The index of the first subview.
-- [var endIndex: Int](layoutsubviews/endindex.md)
+- [var endIndex: Int](./endindex.md)
   An index that’s one higher than the last subview.
-- [LayoutSubviews.Index](layoutsubviews/index.md)
+- [LayoutSubviews.Index](./index.md)
   A type that you can use to index proxy values.
-- [LayoutSubviews.SubSequence](layoutsubviews/subsequence.md)
+- [LayoutSubviews.SubSequence](./subsequence.md)
   A type that contains a subsequence of proxy values.
 
 

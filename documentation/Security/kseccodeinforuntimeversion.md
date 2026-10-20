@@ -1,7 +1,8 @@
 # kSecCodeInfoRuntimeVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value represents the runtime version.
 
@@ -13,6 +14,10 @@ A key whose value represents the runtime version.
 
 ```swift
 let kSecCodeInfoRuntimeVersion: CFString
+```
+
+```c
+extern CFStringRef const kSecCodeInfoRuntimeVersion;
 ```
 
 

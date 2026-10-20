@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The serialization requirement that the value passed to `onReturn` is required to conform to.
@@ -12,7 +13,7 @@ The serialization requirement that the value passed to `onReturn` is required to
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

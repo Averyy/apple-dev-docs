@@ -1,7 +1,8 @@
 # guideDescription
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rubric guidance that the model judge references for this option.
 

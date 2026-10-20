@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The revision of the word embedding.
 
@@ -16,7 +17,8 @@ var revision: Int
 
 ## See Also
 
-- [var language: NLLanguage?](mlwordembedding/modelparameters-swift.struct/language.md)
+### Accessing parameters
+- [var language: NLLanguage?](./language.md)
   The language of the word embedding.
 
 

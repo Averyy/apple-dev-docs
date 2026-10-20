@@ -1,7 +1,8 @@
 # init(wrappedValue:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the published instance with an initial wrapped value.
 
@@ -34,7 +35,8 @@ Don’t use this initializer directly. Instead, create a property with the `@Pub
 
 ## See Also
 
-- [init(initialValue: Value)](published/init(initialvalue:).md)
+### Creating a published instance
+- [init(initialValue: Value)](./init%28initialvalue%29.md)
   Creates the published instance with an initial value.
 
 

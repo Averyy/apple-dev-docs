@@ -1,12 +1,13 @@
 # selectorItemName(fromID:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Translates the given item ID into a human readable name.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

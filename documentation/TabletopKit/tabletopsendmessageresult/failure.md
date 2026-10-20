@@ -1,7 +1,8 @@
 # TabletopSendMessageResult.failure
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Message sending failed, and network condition is effectively disconnected
 
@@ -16,7 +17,8 @@ case failure
 
 ## See Also
 
-- [TabletopSendMessageResult.success](tabletopsendmessageresult/success.md)
+### Message results
+- [TabletopSendMessageResult.success](./success.md)
   Message was sent successfully
 
 

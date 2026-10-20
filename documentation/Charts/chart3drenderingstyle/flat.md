@@ -1,7 +1,8 @@
 # flat
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Renders the chart onto a plane.
 

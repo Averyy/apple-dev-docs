@@ -1,7 +1,8 @@
 # FinanceStore.BackgroundDataType.accountBalances
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Receive updates for changes to `AccountBalance`.
 
@@ -18,9 +19,10 @@ case accountBalances
 
 ## See Also
 
-- [FinanceStore.BackgroundDataType.accounts](financestore/backgrounddatatype/accounts.md)
+### Enumeration Cases
+- [FinanceStore.BackgroundDataType.accounts](./accounts.md)
   Receive updates for changes to `Account`.
-- [FinanceStore.BackgroundDataType.transactions](financestore/backgrounddatatype/transactions.md)
+- [FinanceStore.BackgroundDataType.transactions](./transactions.md)
   Receive updates for changes to `Transaction`.
 
 

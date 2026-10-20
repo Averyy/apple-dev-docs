@@ -1,7 +1,8 @@
 # mapViewDidStopLocatingUser(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the map view stops tracking the user’s location.
 
@@ -19,9 +20,13 @@ Tells the delegate when the map view stops tracking the user’s location.
 optional func mapViewDidStopLocatingUser(_ mapView: MKMapView)
 ```
 
+```objc
+- (void) mapViewDidStopLocatingUser:(MKMapView *) mapView;
+```
+
 #### Discussion
 
-The map view calls this method when the value of the [`showsUserLocation`](mkmapview/showsuserlocation.md) property changes to [`false`](https://developer.apple.com/documentation/swift/false).
+The map view calls this method when the value of the [`showsUserLocation`](../mkmapview/showsuserlocation.md) property changes to [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -29,13 +34,14 @@ The map view calls this method when the value of the [`showsUserLocation`](mkmap
 
 ## See Also
 
-- [func mapViewWillStartLocatingUser(MKMapView)](mkmapviewdelegate/mapviewwillstartlocatinguser(_:).md)
+### Tracking the user’s location
+- [func mapViewWillStartLocatingUser(MKMapView)](./mapviewwillstartlocatinguser%28_%29.md)
   Tells the delegate that the map view is about to start tracking the user’s location.
-- [func mapView(MKMapView, didUpdate: MKUserLocation)](mkmapviewdelegate/mapview(_:didupdate:).md)
+- [func mapView(MKMapView, didUpdate: MKUserLocation)](./mapview%28_,didupdate%29.md)
   Tells the delegate when the map view updates the user’s location.
-- [func mapView(MKMapView, didFailToLocateUserWithError: any Error)](mkmapviewdelegate/mapview(_:didfailtolocateuserwitherror:).md)
+- [func mapView(MKMapView, didFailToLocateUserWithError: any Error)](./mapview%28_,didfailtolocateuserwitherror%29.md)
   Tells the delegate when an attempt to locate the user’s location fails.
-- [func mapView(MKMapView, didChange: MKUserTrackingMode, animated: Bool)](mkmapviewdelegate/mapview(_:didchange:animated:).md)
+- [func mapView(MKMapView, didChange: MKUserTrackingMode, animated: Bool)](./mapview%28_,didchange,animated%29.md)
   Tells the delegate when the user-tracking mode changes.
 
 

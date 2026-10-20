@@ -1,7 +1,8 @@
 # LanguageModelSession.DynamicProfileModifier
 
 **Framework**: Foundation Models  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for creating reusable wrappers around dynamic profile content.
 
@@ -21,35 +22,36 @@ protocol DynamicProfileModifier
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
 ## Topics
 
 ### Implementing a profile modifier
-- [func body(content: Self.Content) -> Self.Body](languagemodelsession/dynamicprofilemodifier/body(content:).md)
+- [func body(content: Self.Content) -> Self.Body](./dynamicprofilemodifier/body%28content%29.md)
   The content of the dynamic profile modifier.
-- [LanguageModelSession.DynamicProfileModifier.Content](languagemodelsession/dynamicprofilemodifier/content.md)
+- [LanguageModelSession.DynamicProfileModifier.Content](./dynamicprofilemodifier/content.md)
   The type of dynamic profile content that this modifier wraps.
-- [associatedtype Body : LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofilemodifier/body.md)
+- [associatedtype Body : LanguageModelSession.DynamicProfile](./dynamicprofilemodifier/body.md)
   The type of dynamic profile modifier that represents this modifier.
-- [LanguageModelSession.DynamicProfileModifier.SessionProperty](languagemodelsession/dynamicprofilemodifier/sessionproperty.md)
+- [LanguageModelSession.DynamicProfileModifier.SessionProperty](./dynamicprofilemodifier/sessionproperty.md)
   A property wrapper that provides access to a session property from within a dynamic profile modifier.
-- [LanguageModelSession.DynamicProfileModifier.DynamicProfile](languagemodelsession/dynamicprofilemodifier/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfileModifier.DynamicProfile](./dynamicprofilemodifier/dynamicprofile.md)
   The dynamic profile type that a modifier’s body returns.
 
 ## See Also
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+### Dynamic profiles
+- [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
   Adapt sessions dynamically at runtime by loading instructions and tools based on the state of your app.
-- [Origami: Crafting a dynamic tutorial for Apple Intelligence](origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
+- [Origami: Crafting a dynamic tutorial for Apple Intelligence](../origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
-- [protocol DynamicInstructions](dynamicinstructions.md)
+- [protocol DynamicInstructions](../dynamicinstructions.md)
   A type that represents dynamic instructions.
-- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
+- [struct DynamicInstructionsForEach](../dynamicinstructionsforeach.md)
   Dynamic instructions that produce content for each element of a collection.
-- [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile](./dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
-- [LanguageModelSession.Profile](languagemodelsession/profile.md)
+- [LanguageModelSession.Profile](./profile.md)
   A profile that contains dynamic instructions.
 
 

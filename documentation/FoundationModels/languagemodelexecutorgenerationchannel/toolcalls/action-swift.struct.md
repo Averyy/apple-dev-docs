@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.ToolCalls.Action
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An operation that can be performed on a tool-calls entry.
 
@@ -21,33 +22,34 @@ struct Action
 
 #### Overview
 
-`Action` is an enum-like struct; construct one with a leading-dot factory such as [`toolCall(id:name:action:)`](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/toolcall(id:name:action:).md).
+`Action` is an enum-like struct; construct one with a leading-dot factory such as [`toolCall(id:name:action:)`](./action-swift.struct/toolcall%28id,name,action%29.md).
 
 ## Topics
 
 ### Tool calling actions
-- [static func toolCall(id: String, name: String, action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/toolcall(id:name:action:).md)
+- [static func toolCall(id: String, name: String, action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](./action-swift.struct/toolcall%28id,name,action%29.md)
   Creates an action that routes an event to a specific tool call within the entry.
-- [static func removeToolCall(id: String) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/removetoolcall(id:).md)
+- [static func removeToolCall(id: String) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](./action-swift.struct/removetoolcall%28id%29.md)
   Creates an action that removes a tool call.
-- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/updatemetadata(_:).md)
+- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](./action-swift.struct/updatemetadata%28_%29.md)
   Creates an action that replaces the tool call’s metadata.
-- [static func updateUsage(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/updateusage(input:output:metadata:).md)
+- [static func updateUsage(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.Action](./action-swift.struct/updateusage%28input,output,metadata%29.md)
   Creates an action that replaces the entry’s token-usage totals.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.property.md)
+### Handling tool calls
+- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.Action](./action-swift.property.md)
   The action to perform.
-- [var entryID: String?](languagemodelexecutorgenerationchannel/toolcalls/entryid.md)
+- [var entryID: String?](./entryid.md)
   The identifier for the entry.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](languagemodelexecutorgenerationchannel/toolcalls/toolcall.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](./toolcall.md)
   A per-tool-call event payload.
 
 

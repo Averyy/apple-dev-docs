@@ -1,7 +1,8 @@
 # Delete a Thumbnail
 
 **Framework**: ClassKit Catalog API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove one of the images for your app’s assignable activities.
 
@@ -14,14 +15,26 @@ Remove one of the images for your app’s assignable activities.
 
 ## Parameters
 
-- `environment` (string) *(required)*: The development or production environment to use for this access. For details, see [`Testing Your ClassKit Catalog Implementation`](testing-your-classkit-catalog-implementation.md).
+### Query Parameters
+
+- `environment` (string) *(required)*: The development or production environment to use for this access. For details, see [Testing Your ClassKit Catalog Implementation](./testing-your-classkit-catalog-implementation.md).
+
+  **Allowed Values**: `development`, `production`
 - `thumbnailId` (string) *(required)*: The thumbnail identifier for the thumbnail to delete. Format this value as a URL-encoded string.
+
+## Responses
+
+- `202` Accepted: The API accepted but hasn’t completed the request. To ask for a status update later, see [`Get Status`](./get-status.md).
+- `204` No Content: The request succeeded.
+- `400` Bad Request: The request contained an error.
+- `403` Forbidden: The request wasn’t authorized.
 
 ## See Also
 
-- [Create or Replace a Thumbnail](create-or-replace-a-thumbnail.md)
+### Uploading Thumbnails
+- [Create or Replace a Thumbnail](./create-or-replace-a-thumbnail.md)
   Store an image that represents one of your app’s assignable activities.
-- [Get a Thumbnail](get-a-thumbnail.md)
+- [Get a Thumbnail](./get-a-thumbnail.md)
   Fetch the image for one of your app’s assignable activities.
 
 

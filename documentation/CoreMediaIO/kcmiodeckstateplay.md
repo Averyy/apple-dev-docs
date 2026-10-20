@@ -1,7 +1,8 @@
 # kCMIODeckStatePlay
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,15 +14,20 @@
 var kCMIODeckStatePlay: Int { get }
 ```
 
+```c
+kCMIODeckStatePlay
+```
+
 ## See Also
 
-- [var kCMIODeckStateFastForward: Int](kcmiodeckstatefastforward.md)
-- [var kCMIODeckStateFastRewind: Int](kcmiodeckstatefastrewind.md)
-- [var kCMIODeckStatePause: Int](kcmiodeckstatepause.md)
-- [var kCMIODeckStatePlayReverse: Int](kcmiodeckstateplayreverse.md)
-- [var kCMIODeckStatePlaySlow: Int](kcmiodeckstateplayslow.md)
-- [var kCMIODeckStateReverseSlow: Int](kcmiodeckstatereverseslow.md)
-- [var kCMIODeckStateStop: Int](kcmiodeckstatestop.md)
+### Constants
+- [var kCMIODeckStateFastForward: Int](./kcmiodeckstatefastforward.md)
+- [var kCMIODeckStateFastRewind: Int](./kcmiodeckstatefastrewind.md)
+- [var kCMIODeckStatePause: Int](./kcmiodeckstatepause.md)
+- [var kCMIODeckStatePlayReverse: Int](./kcmiodeckstateplayreverse.md)
+- [var kCMIODeckStatePlaySlow: Int](./kcmiodeckstateplayslow.md)
+- [var kCMIODeckStateReverseSlow: Int](./kcmiodeckstatereverseslow.md)
+- [var kCMIODeckStateStop: Int](./kcmiodeckstatestop.md)
 
 
 ---

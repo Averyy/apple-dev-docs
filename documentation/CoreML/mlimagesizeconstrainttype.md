@@ -1,7 +1,8 @@
 # MLImageSizeConstraintType
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The modes that determine how the model defines a feature’s image size constraint.
 
@@ -20,31 +21,36 @@ The modes that determine how the model defines a feature’s image size constrai
 enum MLImageSizeConstraintType
 ```
 
+```c
+enum MLImageSizeConstraintType : NSInteger;
+```
+
 ## Topics
 
 ### Constraint types
-- [MLImageSizeConstraintType.range](mlimagesizeconstrainttype/range.md)
+- [MLImageSizeConstraintType.range](./mlimagesizeconstrainttype/range.md)
   The image feature accepts image sizes defined by a range of widths and a range of heights.
-- [MLImageSizeConstraintType.enumerated](mlimagesizeconstrainttype/enumerated.md)
+- [MLImageSizeConstraintType.enumerated](./mlimagesizeconstrainttype/enumerated.md)
   The image feature accepts image sizes listed in an array.
-- [MLImageSizeConstraintType.unspecified](mlimagesizeconstrainttype/unspecified.md)
+- [MLImageSizeConstraintType.unspecified](./mlimagesizeconstrainttype/unspecified.md)
   The image size constraint is not configured and should be ignored.
 ### Creating a constraint type
-- [init?(rawValue: Int)](mlimagesizeconstrainttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mlimagesizeconstrainttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: MLImageSizeConstraintType](mlimagesizeconstraint/type.md)
+### Determining relevant constraints
+- [var type: MLImageSizeConstraintType](./mlimagesizeconstraint/type.md)
   Indicator of which properties to inspect for this image size constraint.
 
 

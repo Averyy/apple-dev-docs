@@ -1,22 +1,24 @@
 # strtoq
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 quad_t strtoq(const char *, char **, int);
 ```
 
 ## See Also
 
-- [strtol](1441045-strtol.md)
-- [strtoul](1441100-strtoul.md)
-- [strtouq](1441084-strtouq.md)
+### Conversion
+- [strtol](./api-1441045-strtol.md)
+- [strtoul](./api-1441100-strtoul.md)
+- [strtouq](./api-1441084-strtouq.md)
 
 
 ---

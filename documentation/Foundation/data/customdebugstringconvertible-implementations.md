@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](data/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A human-readable debug description for the data.
 
 

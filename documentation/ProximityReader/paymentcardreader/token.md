@@ -1,7 +1,8 @@
 # PaymentCardReader.Token
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A secure token that you receive from your participating payment service provider.
 
@@ -18,37 +19,38 @@ struct Token
 
 ## Mentions
 
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+- [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
 #### Overview
 
-You must create a secure token to use Tap to Pay on iPhone. Your payment service provider supplies the string you use to create this token. Create your token and pass it to the [`prepare(using:)`](paymentcardreader/prepare(using:).md) method to configure the current device to read cards.
+You must create a secure token to use Tap to Pay on iPhone. Your payment service provider supplies the string you use to create this token. Create your token and pass it to the [`prepare(using:)`](./prepare%28using%29.md) method to configure the current device to read cards.
 
 ## Topics
 
 ### Creating a token
-- [init(rawValue: String)](paymentcardreader/token/init(rawvalue:).md)
+- [init(rawValue: String)](./token/init%28rawvalue%29.md)
   Creates a token with the string your payment service provider gave you.
 ### Getting the token value
-- [let rawValue: String](paymentcardreader/token/rawvalue.md)
+- [let rawValue: String](./token/rawvalue.md)
   The raw token string from your payment service provider.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func isAccountLinked(using: PaymentCardReader.Token) async throws -> Bool](paymentcardreader/isaccountlinked(using:).md)
+### Displaying the Tap to Pay on iPhone’s terms and conditions
+- [func isAccountLinked(using: PaymentCardReader.Token) async throws -> Bool](./isaccountlinked%28using%29.md)
   A Boolean value that indicates whether the account is already linked.
-- [func linkAccount(using: PaymentCardReader.Token) async throws](paymentcardreader/linkaccount(using:).md)
+- [func linkAccount(using: PaymentCardReader.Token) async throws](./linkaccount%28using%29.md)
   Presents a sheet for the merchant to accept Tap to Pay on iPhone’s Terms and Conditions on a device.
-- [func relinkAccount(using: PaymentCardReader.Token) async throws](paymentcardreader/relinkaccount(using:).md)
+- [func relinkAccount(using: PaymentCardReader.Token) async throws](./relinkaccount%28using%29.md)
   Presents a sheet for the merchant to re-accept Tap to Pay on iPhone’s Terms and Conditions on a device using a different Apple Account.
 
 

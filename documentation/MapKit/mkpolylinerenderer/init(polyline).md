@@ -1,7 +1,8 @@
 # init(polyline:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new overlay view using the specified polyline overlay object.
 
@@ -17,6 +18,10 @@ Creates a new overlay view using the specified polyline overlay object.
 
 ```swift
 init(polyline: MKPolyline)
+```
+
+```objc
+- (instancetype) initWithPolyline:(MKPolyline *) polyline;
 ```
 
 #### Return Value

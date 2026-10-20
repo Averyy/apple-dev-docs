@@ -1,7 +1,8 @@
 # isBackgroundReplacementSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format supports background replacement.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether the format supports background replacemen
 var isBackgroundReplacementSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isBackgroundReplacementSupported) BOOL backgroundReplacementSupported;
+```
+
 ## See Also
 
-- [var videoFrameRateRangeForBackgroundReplacement: AVFrameRateRange?](avcapturedevice/format/videoframeraterangeforbackgroundreplacement.md)
+### Determining background replacement support
+- [var videoFrameRateRangeForBackgroundReplacement: AVFrameRateRange?](./videoframeraterangeforbackgroundreplacement.md)
   The minimum and maximum frame rates available when Background Replacement is active.
 
 

@@ -1,16 +1,17 @@
 # reductionType
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reduction type that applies to all values in the source tensor.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.4
+- iPadOS 14.5+ - Deprecated in 17.4
+- Mac Catalyst 14.5+ - Deprecated in 17.4
+- macOS 11.3+ - Deprecated in 14.3
+- tvOS 14.5+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,9 +19,14 @@ The reduction type that applies to all values in the source tensor.
 var reductionType: MLCReductionType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLCReductionType reductionType;
+```
+
 ## See Also
 
-- [var dimension: Int](mlcscatterlayer/dimension.md)
+### Inspecting Scatter Layers
+- [var dimension: Int](./dimension.md)
   The dimension to index.
 
 

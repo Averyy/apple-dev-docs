@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the context object.
 
@@ -17,9 +18,13 @@ The unique identifier of the context object.
 var identifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSUUID * identifier;
+```
+
 #### Discussion
 
-The [`UIWritingToolsCoordinator.Context`](uiwritingtoolscoordinator/context.md) object initializes the value of this property at creation time. Use this value to identify the context object within your app.
+The [`UIWritingToolsCoordinator.Context`](../context.md) object initializes the value of this property at creation time. Use this value to identify the context object within your app.
 
 
 ---

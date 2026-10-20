@@ -1,7 +1,8 @@
 # TCControlImage
 
 **Framework**: Touch Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents an image to be rendered using Metal.
 
@@ -16,50 +17,55 @@ Represents an image to be rendered using Metal.
 class TCControlImage
 ```
 
+```objc
+@interface TCControlImage : NSObject
+```
+
 ## Topics
 
 ### Creating a control image
-- [convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(cgimage:size:device:)-22z05.md)
+- [convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)](./tccontrolimage/init%28cgimage,size,device%29-22z05.md)
   Creates a new image from a CGImage.
-- [convenience init(texture: any MTLTexture, size: CGSize)](tccontrolimage/init(texture:size:).md)
+- [convenience init(texture: any MTLTexture, size: CGSize)](./tccontrolimage/init%28texture,size%29.md)
   Creates a new image with the specified texture and size.
-- [init(texture: any MTLTexture, size: CGSize, highlight: (any MTLTexture)?, offset: CGPoint, tintColor: CGColor)](tccontrolimage/init(texture:size:highlight:offset:tintcolor:).md)
+- [init(texture: any MTLTexture, size: CGSize, highlight: (any MTLTexture)?, offset: CGPoint, tintColor: CGColor)](./tccontrolimage/init%28texture,size,highlight,offset,tintcolor%29.md)
   Creates a new image with the specified texture, size, highlight texture, offset, and color tint.
-- [convenience init?(uiImage: UIImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(uiimage:size:device:)-3hqf.md)
+- [convenience init?(uiImage: UIImage, size: CGSize, device: any MTLDevice)](./tccontrolimage/init%28uiimage,size,device%29-3hqf.md)
   Creates a new image from a UIImage.
 ### Inspecting the control image
-- [var highlightTexture: (any MTLTexture)?](tccontrolimage/highlighttexture.md)
+- [var highlightTexture: (any MTLTexture)?](./tccontrolimage/highlighttexture.md)
   The Metal texture to use for the image when highlighted. May be `nil`.
-- [var offset: CGPoint](tccontrolimage/offset.md)
+- [var offset: CGPoint](./tccontrolimage/offset.md)
   The offset from the center of the parent control in points.
-- [var size: CGSize](tccontrolimage/size.md)
+- [var size: CGSize](./tccontrolimage/size.md)
   The size of the image in points.
-- [var texture: any MTLTexture](tccontrolimage/texture.md)
+- [var texture: any MTLTexture](./tccontrolimage/texture.md)
   The Metal texture to use for the image.
-- [var tintColor: CGColor](tccontrolimage/tintcolor.md)
+- [var tintColor: CGColor](./tccontrolimage/tintcolor.md)
   The color tint to apply to the texture. The color ref is retained.
 ### Initializers
-- [convenience init?(CGImage: CGImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(cgimage:size:device:)-6wxv8.md)
-- [convenience init?(UIImage: UIImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(uiimage:size:device:)-9csn2.md)
-- [init(texture: any MTLTexture, size: CGSize, highlightTexture: (any MTLTexture)?, offset: CGPoint, tintColor: CGColor)](tccontrolimage/init(texture:size:highlighttexture:offset:tintcolor:).md)
+- [convenience init?(CGImage: CGImage, size: CGSize, device: any MTLDevice)](./tccontrolimage/init%28cgimage,size,device%29-6wxv8.md)
+- [convenience init?(UIImage: UIImage, size: CGSize, device: any MTLDevice)](./tccontrolimage/init%28uiimage,size,device%29-9csn2.md)
+- [init(texture: any MTLTexture, size: CGSize, highlightTexture: (any MTLTexture)?, offset: CGPoint, tintColor: CGColor)](./tccontrolimage/init%28texture,size,highlighttexture,offset,tintcolor%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TCControlContents](tccontrolcontents.md)
+### Visuals
+- [class TCControlContents](./tccontrolcontents.md)
   Represents the visual contents of a touch control.
-- [protocol TCControlLayout](tccontrollayout.md)
+- [protocol TCControlLayout](./tccontrollayout.md)
   A protocol defining the controlLayout properties for a control.
 
 

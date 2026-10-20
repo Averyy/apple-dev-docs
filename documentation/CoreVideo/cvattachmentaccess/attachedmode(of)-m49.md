@@ -1,7 +1,8 @@
 # attachedMode(of:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the propagation mode of an attachment you identify by its raw key string, without retrieving the value.
 
@@ -28,7 +29,7 @@ The propagation mode of the attachment, or `nil` if the key isn’t attached.
 
 Use this method to check for the presence of a specific key without converting its value.
 
-This overload takes the key as a string, which is how you reach an attachment whose key isn’t declared as a property of the key definitions type, such as a custom key your app attaches. To pass a declared key, use its [`rawValue`](cvattachmentkeydefinition/rawvalue.md).
+This overload takes the key as a string, which is how you reach an attachment whose key isn’t declared as a property of the key definitions type, such as a custom key your app attaches. To pass a declared key, use its [`rawValue`](../cvattachmentkeydefinition/rawvalue.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(value:role:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tab with a label inferred from the role.
 
@@ -21,6 +22,15 @@ nonisolated
 init(value: Value, role: TabRole?, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
 ```
 
+Available when `Value` conforms to `Hashable`, `Content` conforms to `View`, and `Label` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<V>(value: V, role: TabRole?, @ContentBuilder content: () -> Content) where Value == V?, Label == DefaultTabLabel, V : Hashable
+```
+
 ## Parameters
 
 - `value`: The `selection` value which selects this tab.
@@ -29,11 +39,12 @@ init(value: Value, role: TabRole?, @ContentBuilder content: () -> Content) where
 
 ## See Also
 
-- [init(content: () -> Content)](tab/init(content:).md)
+### Creating a tab
+- [init(content: () -> Content)](./init%28content%29.md)
   Creates a new tab that you can use in a tab view, with an empty label.
-- [init(value:content:)](tab/init(value:content:).md)
+- [init(value:content:)](./init%28value,content%29.md)
   Creates a new tab that you can use in a tab view, with an empty label.
-- [init(role: TabRole?, content: () -> Content)](tab/init(role:content:).md)
+- [init(role: TabRole?, content: () -> Content)](./init%28role,content%29.md)
   Creates a new tab that you can use in a tab view, with an empty label.
 
 

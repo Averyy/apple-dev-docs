@@ -1,7 +1,8 @@
 # AudioContext.WorkoutIntensityLevel
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The intensity level of a workout session.
 
@@ -26,26 +27,26 @@ Use this type to specify a workout intensity level when donating entities for wo
 ## Topics
 
 ### Initializers
-- [init(HKWorkoutActivityType)](audiocontext/workoutintensitylevel/init(_:).md)
+- [init(HKWorkoutActivityType)](./workoutintensitylevel/init%28_%29.md)
   Creates an intensity level from an `HKWorkoutActivityType`.
-- [init(rawValue: UInt)](audiocontext/workoutintensitylevel/init(rawvalue:).md)
+- [init(rawValue: UInt)](./workoutintensitylevel/init%28rawvalue%29.md)
 ### Instance Properties
-- [let rawValue: UInt](audiocontext/workoutintensitylevel/rawvalue.md)
+- [let rawValue: UInt](./workoutintensitylevel/rawvalue.md)
 ### Type Properties
-- [static let high: AudioContext.WorkoutIntensityLevel](audiocontext/workoutintensitylevel/high.md)
+- [static let high: AudioContext.WorkoutIntensityLevel](./workoutintensitylevel/high.md)
   A high-intensity workout such as running, HIIT, or cross-training.
-- [static let low: AudioContext.WorkoutIntensityLevel](audiocontext/workoutintensitylevel/low.md)
+- [static let low: AudioContext.WorkoutIntensityLevel](./workoutintensitylevel/low.md)
   A low-intensity workout such as yoga, stretching, or walking.
-- [static let medium: AudioContext.WorkoutIntensityLevel](audiocontext/workoutintensitylevel/medium.md)
+- [static let medium: AudioContext.WorkoutIntensityLevel](./workoutintensitylevel/medium.md)
   A medium-intensity workout such as cycling, hiking, or swimming.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

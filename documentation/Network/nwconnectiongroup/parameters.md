@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameters with which you initialize the connection group.
 
@@ -22,9 +23,10 @@ final let parameters: NWParameters
 
 ## See Also
 
-- [let descriptor: any NWGroupDescriptor](nwconnectiongroup/descriptor.md)
+### Inspecting Groups
+- [let descriptor: any NWGroupDescriptor](./descriptor.md)
   The descriptor of the group you use to initialize the connection group.
-- [var queue: DispatchQueue?](nwconnectiongroup/queue.md)
+- [var queue: DispatchQueue?](./queue.md)
   The queue on which you handle group events.
 
 

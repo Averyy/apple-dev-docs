@@ -1,7 +1,8 @@
 # integerGreaterThanOrEqualTo(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an integer contained in `self` which is greater than or equal to `integer`, or `nil` if a result could not be found.
 
@@ -22,11 +23,12 @@ func integerGreaterThanOrEqualTo(_ integer: IndexSet.Element) -> IndexSet.Elemen
 
 ## See Also
 
-- [func integerLessThanOrEqualTo(IndexSet.Element) -> IndexSet.Element?](indexset/integerlessthanorequalto(_:).md)
+### Finding Elements
+- [func integerLessThanOrEqualTo(IndexSet.Element) -> IndexSet.Element?](./integerlessthanorequalto%28_%29.md)
   Returns an integer contained in `self` which is less than or equal to `integer`, or `nil` if a result could not be found.
-- [func integerGreaterThan(IndexSet.Element) -> IndexSet.Element?](indexset/integergreaterthan(_:).md)
+- [func integerGreaterThan(IndexSet.Element) -> IndexSet.Element?](./integergreaterthan%28_%29.md)
   Returns an integer contained in `self` which is greater than `integer`, or `nil` if a result could not be found.
-- [func integerLessThan(IndexSet.Element) -> IndexSet.Element?](indexset/integerlessthan(_:).md)
+- [func integerLessThan(IndexSet.Element) -> IndexSet.Element?](./integerlessthan%28_%29.md)
   Returns an integer contained in `self` which is less than `integer`, or `nil` if a result could not be found.
 
 

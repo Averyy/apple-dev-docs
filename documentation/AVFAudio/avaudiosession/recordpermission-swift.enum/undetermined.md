@@ -1,16 +1,17 @@
 # AVAudioSession.RecordPermission.undetermined
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that the user hasn’t granted or denied recording permission.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 8.0+ - Deprecated in 17.0 (renamed: AVAudioApplication.recordPermission.undetermined)
+- iPadOS 8.0+ - Deprecated in 17.0 (renamed: AVAudioApplication.recordPermission.undetermined)
+- Mac Catalyst 13.1+ - Deprecated in 17.0 (renamed: AVAudioApplication.recordPermission.undetermined)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: AVAudioApplication.recordPermission.undetermined)
+- watchOS 4.0+ - Deprecated in 10.0 (renamed: AVAudioApplication.recordPermission.undetermined)
 
 ## Declaration
 
@@ -18,15 +19,20 @@ A value that indicates that the user hasn’t granted or denied recording permis
 case undetermined
 ```
 
+```c
+AVAudioSessionRecordPermissionUndetermined
+```
+
 #### Discussion
 
-A permission of [`AVAudioSession.RecordPermission.undetermined`](avaudiosession/recordpermission-swift.enum/undetermined.md) typically means that your app hasn’t requested, or is in the process of requesting, recording permission.
+A permission of [`AVAudioSession.RecordPermission.undetermined`](./undetermined.md) typically means that your app hasn’t requested, or is in the process of requesting, recording permission.
 
 ## See Also
 
-- [AVAudioSession.RecordPermission.denied](avaudiosession/recordpermission-swift.enum/denied.md)
+### Checking record permissions
+- [AVAudioSession.RecordPermission.denied](./denied.md)
   A value that indicates that the user has denied recording permission.
-- [AVAudioSession.RecordPermission.granted](avaudiosession/recordpermission-swift.enum/granted.md)
+- [AVAudioSession.RecordPermission.granted](./granted.md)
   A value that indicates that the user has granted recording permission.
 
 

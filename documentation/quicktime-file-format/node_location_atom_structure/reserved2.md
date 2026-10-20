@@ -1,7 +1,8 @@
 # reserved2
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 Reserved.
 
@@ -11,17 +12,18 @@ This field must be `0`.
 
 ## See Also
 
-- [majorVersion](node_location_atom_structure/majorversion.md)
+### Data fields
+- [majorVersion](./majorversion.md)
   The major version number of the file format.
-- [minorVersion](node_location_atom_structure/minorversion.md)
+- [minorVersion](./minorversion.md)
   The minor version number of the file format.
-- [nodeType](node_location_atom_structure/nodetype.md)
+- [nodeType](./nodetype.md)
   The node type.
-- [locationFlags](node_location_atom_structure/locationflags.md)
+- [locationFlags](./locationflags.md)
   The location flags.
-- [locationData](node_location_atom_structure/locationdata.md)
+- [locationData](./locationdata.md)
   The location of the node data.
-- [reserved1](node_location_atom_structure/reserved1.md)
+- [reserved1](./reserved1.md)
   Reserved.
 
 

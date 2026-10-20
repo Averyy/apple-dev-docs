@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Record an argument of `Argument` type. This will be invoked for every argument of the target, in declaration order.

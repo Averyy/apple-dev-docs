@@ -1,6 +1,7 @@
 # Executing Anchored Object Queries
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Create and run an anchored object query.
 
@@ -10,7 +11,7 @@ Anchored object queries return changes that occurred since the previous query. T
 
 ##### Create an Anchored Object Query
 
-You create an anchored object query by calling the [`init(type:predicate:anchor:limit:resultsHandler:)`](hkanchoredobjectquery/init(type:predicate:anchor:limit:resultshandler:).md) initializer. Start by creating the type object for the desired samples. The following example creates a type object for step counts.
+You create an anchored object query by calling the [`init(type:predicate:anchor:limit:resultsHandler:)`](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md) initializer. Start by creating the type object for the desired samples. The following example creates a type object for step counts.
 
 ```swift
 guard let stepCountType = HKObjectType.quantityType(forIdentifier: .stepCount) else {
@@ -52,7 +53,7 @@ let query = HKAnchoredObjectQuery(type: stepCountType,
 }
 ```
 
-After the query is instantiated, call the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method. This runs the query on an anonymous background queue. When the query is complete, it executes the results handler on the same background queue (but not necessarily the same thread).
+After the query is instantiated, call the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method. This runs the query on an anonymous background queue. When the query is complete, it executes the results handler on the same background queue (but not necessarily the same thread).
 
 ```swift
 store.execute(query)
@@ -60,7 +61,7 @@ store.execute(query)
 
 When you run the query, the system passes the current results to the results handler. If the `myAnchor` property is `nil`, the query returns all the step count data currently available in the HealthKit store. On subsequent runs, the code uses the anchor returned by the previous query. These queries return only the changes since the previous run.
 
-##### Create a Long Running Query
+##### Create a Long-Running Query
 
 Optionally, add an update handler to create a long-running query.
 
@@ -87,13 +88,14 @@ Now, when you run the query, it continues to monitor the HealthKit store after r
 
 ## See Also
 
-- [init(type: HKSampleType, predicate: NSPredicate?, anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](hkanchoredobjectquery/init(type:predicate:anchor:limit:resultshandler:).md)
+### Creating Anchored Object Queries
+- [init(type: HKSampleType, predicate: NSPredicate?, anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md)
   Initializes a new anchored object query.
-- [init(queryDescriptors: [HKQueryDescriptor], anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](hkanchoredobjectquery/init(querydescriptors:anchor:limit:resultshandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](./hkanchoredobjectquery/init%28querydescriptors,anchor,limit,resultshandler%29.md)
   Creates an anchored object query that matches any of the query descriptors you provided.
-- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](./hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
-- [init(type: HKSampleType, predicate: NSPredicate?, anchor: Int, limit: Int, completionHandler: (HKAnchoredObjectQuery, [HKSample]?, Int, (any Error)?) -> Void)](hkanchoredobjectquery/init(type:predicate:anchor:limit:completionhandler:).md)
+- [init(type: HKSampleType, predicate: NSPredicate?, anchor: Int, limit: Int, completionHandler: (HKAnchoredObjectQuery, [HKSample]?, Int, (any Error)?) -> Void)](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,completionhandler%29.md)
   Initializes a new anchored object query.
 
 

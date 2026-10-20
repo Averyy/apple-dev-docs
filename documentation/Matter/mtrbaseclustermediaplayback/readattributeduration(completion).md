@@ -1,7 +1,8 @@
 # readAttributeDuration(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeDuration(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeDuration() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeDurationWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

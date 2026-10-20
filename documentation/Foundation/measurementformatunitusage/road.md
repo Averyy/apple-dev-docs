@@ -1,7 +1,8 @@
 # road
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A usage of a length measurement related to a road.
 
@@ -20,11 +21,14 @@ A usage of a length measurement related to a road.
 static var road: MeasurementFormatUnitUsage<UnitLength> { get }
 ```
 
+Available when `UnitType` is `UnitLength`.
+
 ## See Also
 
-- [static var person: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/person-8bfxd.md)
+### Selecting a Format for a Length Measurement
+- [static var person: MeasurementFormatUnitUsage<UnitLength>](./person-8bfxd.md)
   A format usage of a length measurement for displaying a distance as it relates to people.
-- [static var personHeight: MeasurementFormatUnitUsage<UnitLength>](measurementformatunitusage/personheight.md)
+- [static var personHeight: MeasurementFormatUnitUsage<UnitLength>](./personheight.md)
   A usage of a length measurement related to a person’s height.
 
 

@@ -1,7 +1,8 @@
 # kSecPolicyKU_CRLSign
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 If true, the certificate’s key usage must allow it to be used for signing certificate revocation lists (CRLs).
 
@@ -12,6 +13,10 @@ If true, the certificate’s key usage must allow it to be used for signing cert
 
 ```swift
 let kSecPolicyKU_CRLSign: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyKU_CRLSign;
 ```
 
 

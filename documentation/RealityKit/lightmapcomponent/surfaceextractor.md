@@ -1,7 +1,8 @@
 # LightmapComponent.SurfaceExtractor
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This is a helper for extracting certain surface properties from entities within a lightmapped scene and rendering them out into the atlas defined by the light map.
 
@@ -18,17 +19,17 @@ class SurfaceExtractor
 ## Topics
 
 ### Creating a surface extractor
-- [init(lightmapRootEntity: Entity) throws](lightmapcomponent/surfaceextractor/init(lightmaprootentity:).md)
+- [init(lightmapRootEntity: Entity) throws](./surfaceextractor/init%28lightmaprootentity%29.md)
 ### Extracting surfaces
-- [func extractSurfacesForAtlasSlice(mode: LightmapComponent.SurfaceExtractor.ExtractionMode, atlasTextureIndex: Int, textureSliceIndex: Int, cameraOutput: RealityRenderer.CameraOutput, cameraTransform: Transform, cameraFOVDegrees: Float, onComplete: (() -> Void)?) throws](lightmapcomponent/surfaceextractor/extractsurfacesforatlasslice(mode:atlastextureindex:texturesliceindex:cameraoutput:cameratransform:camerafovdegrees:oncomplete:).md)
-- [LightmapComponent.SurfaceExtractor.ExtractionMode](lightmapcomponent/surfaceextractor/extractionmode.md)
+- [func extractSurfacesForAtlasSlice(mode: LightmapComponent.SurfaceExtractor.ExtractionMode, atlasTextureIndex: Int, textureSliceIndex: Int, cameraOutput: RealityRenderer.CameraOutput, cameraTransform: Transform, cameraFOVDegrees: Float, onComplete: (() -> Void)?) throws](./surfaceextractor/extractsurfacesforatlasslice%28mode,atlastextureindex,texturesliceindex,cameraoutput,cameratransform,camerafovdegrees,oncomplete%29.md)
+- [LightmapComponent.SurfaceExtractor.ExtractionMode](./surfaceextractor/extractionmode.md)
   Specifies what surface property to extract.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

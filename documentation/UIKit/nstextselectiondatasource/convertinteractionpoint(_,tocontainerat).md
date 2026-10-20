@@ -1,7 +1,8 @@
 # convertInteractionPoint(_:toContainerAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts an interaction point from display space into the text container’s coordinate system.
 
@@ -16,6 +17,10 @@ Converts an interaction point from display space into the text container’s coo
 
 ```swift
 optional func convertInteractionPoint(_ point: CGPoint, toContainerAt containerLocation: any NSTextLocation) -> CGPoint
+```
+
+```objc
+- (CGPoint) convertInteractionPoint:(CGPoint) point toContainerAtLocation:(id<NSTextLocation>) containerLocation;
 ```
 
 #### Return Value

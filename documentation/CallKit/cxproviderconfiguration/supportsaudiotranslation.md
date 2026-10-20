@@ -1,7 +1,8 @@
 # supportsAudioTranslation
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var supportsAudioTranslation: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL supportsAudioTranslation;
 ```
 
 

@@ -1,7 +1,8 @@
 # JSONEncoder.NonConformingFloatEncodingStrategy.throw
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that throws an error upon encoding an exceptional floating-point value.
 
@@ -22,7 +23,8 @@ case `throw`
 
 ## See Also
 
-- [JSONEncoder.NonConformingFloatEncodingStrategy.convertToString(positiveInfinity:negativeInfinity:nan:)](jsonencoder/nonconformingfloatencodingstrategy-swift.enum/converttostring(positiveinfinity:negativeinfinity:nan:).md)
+### Exceptional Values
+- [JSONEncoder.NonConformingFloatEncodingStrategy.convertToString(positiveInfinity:negativeInfinity:nan:)](./converttostring%28positiveinfinity,negativeinfinity,nan%29.md)
   The strategy that encodes exceptional floating-point values from a specified string representation.
 
 

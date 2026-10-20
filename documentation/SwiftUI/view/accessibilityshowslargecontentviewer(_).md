@@ -1,7 +1,8 @@
 # accessibilityShowsLargeContentViewer(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a custom large content view to be shown by the large content viewer.
 
@@ -40,13 +41,14 @@ var body: some View {
 
 Don’t use the large content viewer as a replacement for proper Dynamic Type support. For example, Dynamic Type allows items in a list to grow or shrink vertically to accommodate the user’s preferred font size. Rely on the large content viewer only in situations where items must remain small due to unavoidable design constraints.
 
-For example, views that have their Dynamic Type size constrained with [`dynamicTypeSize(_:)`](view/dynamictypesize(_:).md) may require a large content view.
+For example, views that have their Dynamic Type size constrained with [`dynamicTypeSize(_:)`](./dynamictypesize%28_%29.md) may require a large content view.
 
 ## See Also
 
-- [func accessibilityShowsLargeContentViewer() -> some View](view/accessibilityshowslargecontentviewer.md)
+### Enlarging content
+- [func accessibilityShowsLargeContentViewer() -> some View](./accessibilityshowslargecontentviewer%28%29.md)
   Adds a default large content view to be shown by the large content viewer.
-- [var accessibilityLargeContentViewerEnabled: Bool](environmentvalues/accessibilitylargecontentviewerenabled.md)
+- [var accessibilityLargeContentViewerEnabled: Bool](../environmentvalues/accessibilitylargecontentviewerenabled.md)
   Whether the Large Content Viewer is enabled.
 
 

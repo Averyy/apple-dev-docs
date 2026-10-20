@@ -1,7 +1,8 @@
 # automaticallyLoadedAssetKeys
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of asset keys to be automatically loaded before the player item is ready to play.
 
@@ -21,13 +22,18 @@ nonisolated
 var automaticallyLoadedAssetKeys: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * automaticallyLoadedAssetKeys;
+```
+
 #### Discussion
 
-The value of each key in `automaticallyLoadedAssetKeys` will automatically be loaded by the [`asset`](avplayeritem/asset.md) prior to the player item reaching a status of [`AVPlayerItem.Status.readyToPlay`](avplayeritem/status-swift.enum/readytoplay.md). When this status is reached, the asset’s [`statusOfValue(forKey:error:)`](avasynchronouskeyvalueloading/statusofvalue(forkey:error:).md) method returns [`AVKeyValueStatus.loaded`](avkeyvaluestatus/loaded.md) for the status of all keys in the array. If loading of any of the asset’s key values fails, the player item’s [`status`](avplayeritem/status-swift.property.md) will change to [`AVPlayerItem.Status.failed`](avplayeritem/status-swift.enum/failed.md).
+The value of each key in `automaticallyLoadedAssetKeys` will automatically be loaded by the [`asset`](./asset.md) prior to the player item reaching a status of [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md). When this status is reached, the asset’s [`statusOfValue(forKey:error:)`](../avasynchronouskeyvalueloading/statusofvalue%28forkey,error%29.md) method returns [`AVKeyValueStatus.loaded`](../avkeyvaluestatus/loaded.md) for the status of all keys in the array. If loading of any of the asset’s key values fails, the player item’s [`status`](./status-swift.property.md) will change to [`AVPlayerItem.Status.failed`](./status-swift.enum/failed.md).
 
 ## See Also
 
-- [var asset: AVAsset](avplayeritem/asset.md)
+### Accessing initialization parameters
+- [var asset: AVAsset](./asset.md)
   The asset provided during initialization.
 
 

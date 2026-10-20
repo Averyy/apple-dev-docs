@@ -1,7 +1,8 @@
 # closeReason
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block of data that provides further information about why a connection closed.
 
@@ -20,19 +21,24 @@ A block of data that provides further information about why a connection closed.
 var closeReason: Data? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSData * closeReason;
+```
+
 #### Discussion
 
-The close reason provides further information about why a connection closed, beyond that provided by the [`closeCode`](urlsessionwebsockettask/closecode-swift.property.md). The value of this property isn’t defined by [`RFC 6455`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6455); the endpoints define how it’s used.
+The close reason provides further information about why a connection closed, beyond that provided by the [`closeCode`](./closecode-swift.property.md). The value of this property isn’t defined by [RFC 6455](https://tools.ietf.org/html/rfc6455); the endpoints define how it’s used.
 
-You can retrieve the close reason at any time. When the task is not yet closed, this value is [`URLSessionWebSocketTask.CloseCode.invalid`](urlsessionwebsockettask/closecode-swift.enum/invalid.md).
+You can retrieve the close reason at any time. When the task is not yet closed, this value is [`URLSessionWebSocketTask.CloseCode.invalid`](./closecode-swift.enum/invalid.md).
 
 ## See Also
 
-- [func cancel(with: URLSessionWebSocketTask.CloseCode, reason: Data?)](urlsessionwebsockettask/cancel(with:reason:).md)
+### Closing the connection
+- [func cancel(with: URLSessionWebSocketTask.CloseCode, reason: Data?)](./cancel%28with,reason%29.md)
   Sends a close frame with the given close code and optional close reason.
-- [var closeCode: URLSessionWebSocketTask.CloseCode](urlsessionwebsockettask/closecode-swift.property.md)
+- [var closeCode: URLSessionWebSocketTask.CloseCode](./closecode-swift.property.md)
   A code that indicates the reason a connection closed.
-- [URLSessionWebSocketTask.CloseCode](urlsessionwebsockettask/closecode-swift.enum.md)
+- [URLSessionWebSocketTask.CloseCode](./closecode-swift.enum.md)
   A code that indicates why a WebSocket connection closed.
 
 

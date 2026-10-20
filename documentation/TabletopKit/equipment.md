@@ -1,7 +1,8 @@
 # Equipment
 
 **Framework**: TabletopKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for equipment that players directly interact with in a game.
 
@@ -19,57 +20,58 @@ protocol Equipment : Identifiable where Self.ID == EquipmentIdentifier
 To represent equipment in your game, such as cards, pieces, and dice, following these steps:
 
 - Create a structure that conforms to this protocol.
-- Declare the [`initialState`](equipment/initialstate.md) property as either [`BaseEquipmentState`](baseequipmentstate.md), [`DieState`](diestate.md), or [`CardState`](cardstate.md), depending on the type of data you want TabletopKit to sync between players. For more complex data, use [`RawValueState`](rawvaluestate.md).
-- Declare the `id` property as a [`EquipmentIdentifier`](equipmentidentifier.md) structure.
-- Implement an initializer that sets the `id` and [`initialState`](equipment/initialstate.md) properties.
+- Declare the [`initialState`](./equipment/initialstate.md) property as either [`BaseEquipmentState`](./baseequipmentstate.md), [`DieState`](./diestate.md), or [`CardState`](./cardstate.md), depending on the type of data you want TabletopKit to sync between players. For more complex data, use [`RawValueState`](./rawvaluestate.md).
+- Declare the `id` property as a [`EquipmentIdentifier`](./equipmentidentifier.md) structure.
+- Implement an initializer that sets the `id` and [`initialState`](./equipment/initialstate.md) properties.
 
-Optionally, implement the [`layoutChildren(for:visualState:)`](equipment/layoutchildren(for:visualstate:).md) method for equipment that represents groups, and the [`restingOrientation(state:)`](equipment/restingorientation(state:).md) method to provide a custom resting orientation.
+Optionally, implement the [`layoutChildren(for:visualState:)`](./equipment/layoutchildren%28for,visualstate%29.md) method for equipment that represents groups, and the [`restingOrientation(state:)`](./equipment/restingorientation%28state%29.md) method to provide a custom resting orientation.
 
 ## Topics
 
 ### Gettting the initial state of the equipment
-- [var initialState: Self.State](equipment/initialstate.md)
-- [associatedtype State : EquipmentState](equipment/state.md)
+- [var initialState: Self.State](./equipment/initialstate.md)
+- [associatedtype State : EquipmentState](./equipment/state.md)
 ### Displaying the equipment
-- [func layoutChildren(for: TableSnapshot, visualState: TableVisualState) -> any EquipmentLayout](equipment/layoutchildren(for:visualstate:).md)
+- [func layoutChildren(for: TableSnapshot, visualState: TableVisualState) -> any EquipmentLayout](./equipment/layoutchildren%28for,visualstate%29.md)
   This function provides the layout of the direct children of this equipment and is called whenever the snapshot changes. Override it to provide a custom layout. The output of this function is considered to be only a function of its inputs. Reaching out to data outside what is provided might result in undefined behavior.
-- [func restingOrientation(state: Self.State) -> Rotation3D](equipment/restingorientation(state:).md)
+- [func restingOrientation(state: Self.State) -> Rotation3D](./equipment/restingorientation%28state%29.md)
   The resting orientation of the equipment given the current State.
 
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 ### Inherited By
-- [EntityEquipment](entityequipment.md)
+- [EntityEquipment](./entityequipment.md)
 
 ## See Also
 
-- [Implementing playing card overlap and physical characteristics](implementing-playing-card-overlap-and-physical-characteristics.md)
+### Equipment
+- [Implementing playing card overlap and physical characteristics](./implementing-playing-card-overlap-and-physical-characteristics.md)
   Add interactive card game behavior for a pile of playing cards with physically realistic stacking and overlapping.
-- [struct EquipmentCollection](equipmentcollection.md)
+- [struct EquipmentCollection](./equipmentcollection.md)
   A collection of equipment whose state can be inspected and modified.
-- [protocol EntityEquipment](entityequipment.md)
+- [protocol EntityEquipment](./entityequipment.md)
   A protocol for equipment in a game that you render using RealityKit.
-- [struct EquipmentIdentifier](equipmentidentifier.md)
+- [struct EquipmentIdentifier](./equipmentidentifier.md)
   A unique identifier for equipment.
-- [protocol EquipmentState](equipmentstate.md)
+- [protocol EquipmentState](./equipmentstate.md)
   A protocol for the equipment data that TabletopKit syncs between players.
-- [struct EquipmentStateCollection](equipmentstatecollection.md)
+- [struct EquipmentStateCollection](./equipmentstatecollection.md)
   A collection of equipment states that can be inspected and modified.
-- [struct BaseEquipmentState](baseequipmentstate.md)
+- [struct BaseEquipmentState](./baseequipmentstate.md)
   A state for equipment that contains no equipment-specific data.
-- [protocol CustomEquipmentState](customequipmentstate.md)
+- [protocol CustomEquipmentState](./customequipmentstate.md)
   A specialized protocol for the equipment state that allows to accommodate custom data that TabletopKit syncs between players.
-- [protocol MutableEquipmentState](mutableequipmentstate.md)
+- [protocol MutableEquipmentState](./mutableequipmentstate.md)
   A protocol for equipment data that TabletopKit syncs between players, and that can be mutated.
-- [struct CardState](cardstate.md)
+- [struct CardState](./cardstate.md)
   A state for cards that contains face up and down information.
-- [struct DieState](diestate.md)
+- [struct DieState](./diestate.md)
   A state for dice that contains the current value.
-- [struct RawValueState](rawvaluestate.md)
+- [struct RawValueState](./rawvaluestate.md)
   A state for equipment that contains a game-specific value.
-- [enum ControllingSeats](controllingseats.md)
+- [enum ControllingSeats](./controllingseats.md)
   The seats that can manipulate or interact with the equipment.
 
 

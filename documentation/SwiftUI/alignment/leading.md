@@ -1,7 +1,8 @@
 # leading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the leading edge of the view.
 
@@ -22,15 +23,16 @@ static let leading: Alignment
 
 #### Discussion
 
-This alignment combines the [`leading`](horizontalalignment/leading.md) horizontal guide and the [`center`](verticalalignment/center.md) vertical guide:
+This alignment combines the [`leading`](../horizontalalignment/leading.md) horizontal guide and the [`center`](../verticalalignment/center.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-leading-1-iOS@2x.png)
+![A square that’s divided into four equal quadrants. The upper-](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Alignment-leading-1-iOS@2x.png)
 
 ## See Also
 
-- [static let center: Alignment](alignment/center.md)
+### Getting middle guides
+- [static let center: Alignment](./center.md)
   A guide that marks the center of the view.
-- [static let trailing: Alignment](alignment/trailing.md)
+- [static let trailing: Alignment](./trailing.md)
   A guide that marks the trailing edge of the view.
 
 

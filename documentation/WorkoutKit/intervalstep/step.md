@@ -1,7 +1,8 @@
 # step
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout step to perform.
 
@@ -20,7 +21,8 @@ var step: WorkoutStep
 
 ## See Also
 
-- [var purpose: IntervalStep.Purpose](intervalstep/purpose-swift.property.md)
+### Accessing step data
+- [var purpose: IntervalStep.Purpose](./purpose-swift.property.md)
   The purpose of the interval step.
 
 

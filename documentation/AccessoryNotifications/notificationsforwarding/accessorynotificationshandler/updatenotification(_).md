@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Notifications  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates a notification with new content.

@@ -1,7 +1,8 @@
 # AVCaptureTimecode.Source
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Describes a timecode source that a timecode generator can synchronize to.
 
@@ -18,6 +19,10 @@ Describes a timecode source that a timecode generator can synchronize to.
 class Source
 ```
 
+```objc
+@interface AVCaptureTimecodeSource : NSObject
+```
+
 #### Overview
 
 `AVCaptureTimecodeSource` provides information about a specific timecode source available for synchronization in `AVCaptureTimecodeGenerator`. It includes metadata such as the source’s name, type, and unique identifier.
@@ -25,43 +30,44 @@ class Source
 ## Topics
 
 ### Inspecting the source
-- [var displayName: String](avcapturetimecode/source/displayname.md)
+- [var displayName: String](./source/displayname.md)
   The name of the timecode source.
-- [var type: AVCaptureTimecode.SourceType](avcapturetimecode/source/type.md)
+- [var type: AVCaptureTimecode.SourceType](./source/type.md)
   The type of timecode source.
-- [var uuid: UUID](avcapturetimecode/source/uuid.md)
+- [var uuid: UUID](./source/uuid.md)
   A unique identifier for the timecode source.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureTimecodeGenerator](avcapturetimecodegenerator.md)
+### Timecode generation
+- [class AVCaptureTimecodeGenerator](../avcapturetimecodegenerator.md)
   Generates and synchronizes timecode data from various sources for precise video and audio synchronization.
-- [protocol AVCaptureTimecodeGeneratorDelegate](avcapturetimecodegeneratordelegate.md)
+- [protocol AVCaptureTimecodeGeneratorDelegate](../avcapturetimecodegeneratordelegate.md)
   A protocol for receiving real-time timecode updates and error notifications from a timecode generator.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus](avcapturetimecodegenerator/synchronizationstatus.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus](../avcapturetimecodegenerator/synchronizationstatus.md)
   Constants defining the synchronization status of a timecode generator .
-- [AVCaptureTimecode.SourceType](avcapturetimecode/sourcetype-swift.enum.md)
+- [AVCaptureTimecode.SourceType](./sourcetype-swift.enum.md)
   Defines possible sources for generating timecode in using a timecode generator.
-- [struct AVCaptureTimecode](avcapturetimecode.md)
+- [struct AVCaptureTimecode](../avcapturetimecode.md)
   This structure represents a timecode, adhering to SMPTE standards, which define precise time information and associated timestamps for video or audio synchronization.
-- [static func advanced(AVCaptureTimecode, by: Int64) -> AVCaptureTimecode](avcapturetimecode/advanced(_:by:).md)
+- [static func advanced(AVCaptureTimecode, by: Int64) -> AVCaptureTimecode](./advanced%28_,by%29.md)
   Generates a new timecode by adding a specified number of frames to the given timecode, handling overflow for seconds, minutes, and hours.
-- [static func createMetadataSampleBuffer(from: AVCaptureTimecode, associatedWithPresentationTimeStamp: CMTime) -> Unmanaged<CMSampleBuffer>?](avcapturetimecode/createmetadatasamplebuffer(from:associatedwithpresentationtimestamp:).md)
+- [static func createMetadataSampleBuffer(from: AVCaptureTimecode, associatedWithPresentationTimeStamp: CMTime) -> Unmanaged<CMSampleBuffer>?](./createmetadatasamplebuffer%28from,associatedwithpresentationtimestamp%29.md)
   Creates a sample buffer containing Timecode Media Description metadata for integration with a video track.
-- [static func createMetadataSampleBuffer(from: AVCaptureTimecode, forDuration: CMTime) -> Unmanaged<CMSampleBuffer>?](avcapturetimecode/createmetadatasamplebuffer(from:forduration:).md)
+- [static func createMetadataSampleBuffer(from: AVCaptureTimecode, forDuration: CMTime) -> Unmanaged<CMSampleBuffer>?](./createmetadatasamplebuffer%28from,forduration%29.md)
   Creates a sample buffer containing Timecode Media Description metadata for a specified duration.
 
 

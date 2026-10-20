@@ -1,7 +1,8 @@
 # replacementString(for:in:offset:template:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Used to perform template substitution for a single result for clients implementing their own replace functionality.
 
@@ -20,6 +21,10 @@ Used to perform template substitution for a single result for clients implementi
 func replacementString(for result: NSTextCheckingResult, in string: String, offset: Int, template templ: String) -> String
 ```
 
+```objc
+- (NSString *) replacementStringForResult:(NSTextCheckingResult *) result inString:(NSString *) string offset:(NSInteger) offset template:(NSString *) templ;
+```
+
 #### Return Value
 
 A replacement string.
@@ -35,7 +40,7 @@ This is an advanced method that is used only if you wanted to iterate through a 
 - `result`: The result of the single match.
 - `string`: The string from which the result was matched.
 - `offset`: The offset to be added to the location of the result in the string.
-- `templ`: See [`Flag Options`](nsregularexpression#Flag-Options.md) for the format of `template`.
+- `templ`: See [Flag Options](../nsregularexpression.md#Flag-Options) for the format of `template`.
 
 
 ---

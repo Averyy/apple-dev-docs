@@ -1,9 +1,10 @@
 # supportsSecureCoding
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A Boolean value indicating whether the [`NSURLRequest`](nsurlrequest.md) implements the [`NSSecureCoding`](nssecurecoding.md) protocol.
+A Boolean value indicating whether the [`NSURLRequest`](../nsurlrequest.md) implements the [`NSSecureCoding`](../nssecurecoding.md) protocol.
 
 **Availability**:
 - iOS 2.0+
@@ -20,9 +21,13 @@ A Boolean value indicating whether the [`NSURLRequest`](nsurlrequest.md) impleme
 class var supportsSecureCoding: Bool { get }
 ```
 
+```objc
+@property (class, readonly) BOOL supportsSecureCoding;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to indicate that `NSURLRequest` implements the [`NSSecureCoding`](nssecurecoding.md) protocol.
+[`true`](../../Swift/true.md) to indicate that `NSURLRequest` implements the [`NSSecureCoding`](../nssecurecoding.md) protocol.
 
 
 ---

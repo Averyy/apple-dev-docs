@@ -1,7 +1,8 @@
 # setTableLayout(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setTableLayout(_ tableLayout: String!)
+```
+
+```objc
+- (void) setTableLayout:(NSString *) tableLayout;
 ```
 
 

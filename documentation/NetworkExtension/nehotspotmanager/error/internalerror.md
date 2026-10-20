@@ -1,7 +1,8 @@
 # NEHotspotManager.Error.internalError
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The hotspot manager encountered an internal error.
 

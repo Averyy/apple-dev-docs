@@ -1,7 +1,8 @@
 # MFComposeAssistantViewControllerDelegate
 
 **Framework**: Message UI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 3.0+
@@ -15,15 +16,19 @@
 protocol MFComposeAssistantViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MFComposeAssistantViewControllerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func composeAssistantViewController(MFComposeAssistantViewController, didComposeDraft: MFMailDraft)](mfcomposeassistantviewcontrollerdelegate/composeassistantviewcontroller(_:didcomposedraft:).md)
+- [func composeAssistantViewController(MFComposeAssistantViewController, didComposeDraft: MFMailDraft)](./mfcomposeassistantviewcontrollerdelegate/composeassistantviewcontroller%28_,didcomposedraft%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

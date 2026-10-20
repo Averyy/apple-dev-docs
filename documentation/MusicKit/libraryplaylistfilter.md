@@ -1,7 +1,8 @@
 # LibraryPlaylistFilter
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Playlist properties your app uses as a filter for a library request.
 
@@ -23,9 +24,9 @@ protocol LibraryPlaylistFilter
 ## Topics
 
 ### Instance Properties
-- [var id: MusicItemID](libraryplaylistfilter/id.md)
+- [var id: MusicItemID](./libraryplaylistfilter/id.md)
   The unique identifier for the playlist.
-- [var name: String](libraryplaylistfilter/name.md)
+- [var name: String](./libraryplaylistfilter/name.md)
   The name of the playlist.
 
 

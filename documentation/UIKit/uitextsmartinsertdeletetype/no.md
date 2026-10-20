@@ -1,7 +1,8 @@
 # UITextSmartInsertDeleteType.no
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disable the insertion or deletion of extra spaces.
 
@@ -18,11 +19,16 @@ Disable the insertion or deletion of extra spaces.
 case no
 ```
 
+```c
+UITextSmartInsertDeleteTypeNo
+```
+
 ## See Also
 
-- [UITextSmartInsertDeleteType.default](uitextsmartinsertdeletetype/default.md)
+### Constants
+- [UITextSmartInsertDeleteType.default](./default.md)
   Use the default behavior for inserting and deleting space characters.
-- [UITextSmartInsertDeleteType.yes](uitextsmartinsertdeletetype/yes.md)
+- [UITextSmartInsertDeleteType.yes](./yes.md)
   Enable the insertion or deletion of extra spaces.
 
 

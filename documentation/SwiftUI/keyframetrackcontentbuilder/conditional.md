@@ -1,7 +1,8 @@
 # KeyframeTrackContentBuilder.Conditional
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A conditional result from the result builder.
 
@@ -20,23 +21,26 @@ A conditional result from the result builder.
 struct Conditional<ConditionalValue, First, Second> where ConditionalValue == First.Value, First : KeyframeTrackContent, Second : KeyframeTrackContent, First.Value == Second.Value
 ```
 
+Available when `Value` conforms to `Animatable`.
+
 ## Relationships
 
 ### Conforms To
-- [KeyframeTrackContent](keyframetrackcontent.md)
+- [KeyframeTrackContent](../keyframetrackcontent.md)
 
 ## See Also
 
+### Building keyframe track content
 - [static func buildArray([some KeyframeTrackContent<Value>]) -> some KeyframeTrackContent<Value>
-](keyframetrackcontentbuilder/buildarray(_:).md)
+](./buildarray%28_%29.md)
 - [static func buildBlock() -> some KeyframeTrackContent<Value>
-](keyframetrackcontentbuilder/buildblock.md)
-- [static func buildEither<First, Second>(first: First) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](keyframetrackcontentbuilder/buildeither(first:).md)
-- [static func buildEither<First, Second>(second: Second) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](keyframetrackcontentbuilder/buildeither(second:).md)
-- [static func buildExpression<K>(K) -> K](keyframetrackcontentbuilder/buildexpression(_:).md)
+](./buildblock%28%29.md)
+- [static func buildEither<First, Second>(first: First) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](./buildeither%28first%29.md)
+- [static func buildEither<First, Second>(second: Second) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](./buildeither%28second%29.md)
+- [static func buildExpression<K>(K) -> K](./buildexpression%28_%29.md)
 - [static func buildPartialBlock(accumulated: some KeyframeTrackContent<Value>, next: some KeyframeTrackContent<Value>) -> some KeyframeTrackContent<Value>
-](keyframetrackcontentbuilder/buildpartialblock(accumulated:next:).md)
-- [static func buildPartialBlock<K>(first: K) -> K](keyframetrackcontentbuilder/buildpartialblock(first:).md)
+](./buildpartialblock%28accumulated,next%29.md)
+- [static func buildPartialBlock<K>(first: K) -> K](./buildpartialblock%28first%29.md)
 
 
 ---

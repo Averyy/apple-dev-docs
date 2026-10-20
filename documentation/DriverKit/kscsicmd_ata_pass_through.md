@@ -1,17 +1,18 @@
 # kSCSICmd_ATA_PASS_THROUGH
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_ATA_PASS_THROUGH
 ```
 

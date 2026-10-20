@@ -1,17 +1,22 @@
 # shared
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared workspace object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var shared: NSWorkspace { get }
+```
+
+```objc
+@property (class, strong, readonly) NSWorkspace * sharedWorkspace;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ You can access this object safely from any thread in your app.
 
 ## See Also
 
-- [Workspace Services Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Workspace/introduction.html#//apple_ref/doc/uid/10000100i)
+### Related Documentation
+- [Workspace Services Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Workspace/introduction.html#//apple_ref/doc/uid/10000100i)
 
 
 ---

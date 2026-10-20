@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the texture parameter as declared in the Metal shader.
 

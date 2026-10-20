@@ -1,14 +1,15 @@
 # mps_seqno
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 mach_port_seqno_t mps_seqno;
 ```
 

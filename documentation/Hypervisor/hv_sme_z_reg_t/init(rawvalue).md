@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.2+
@@ -14,7 +15,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [init(UInt32)](hv_sme_z_reg_t/init(_:).md)
+### Constants
+- [init(UInt32)](./init%28_%29.md)
 
 
 ---

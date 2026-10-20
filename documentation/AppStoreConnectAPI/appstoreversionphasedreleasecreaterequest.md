@@ -1,7 +1,8 @@
 # AppStoreVersionPhasedReleaseCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an App Store Version Phased Release.
 
@@ -10,14 +11,14 @@ The request body you use to create an App Store Version Phased Release.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPhasedReleaseCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionPhasedReleaseCreateRequest.Data](appstoreversionphasedreleasecreaterequest/data-data.dictionary.md)
+- [object AppStoreVersionPhasedReleaseCreateRequest.Data](./appstoreversionphasedreleasecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,15 +27,16 @@ object AppStoreVersionPhasedReleaseCreateRequest
 
 ## See Also
 
-- [object AppStoreVersionPhasedRelease](appstoreversionphasedrelease.md)
+### Objects and Data Types
+- [object AppStoreVersionPhasedRelease](./appstoreversionphasedrelease.md)
   The data structure that represent an App Store Version Phased Releases resource.
-- [object AppStoreVersionPhasedReleaseResponse](appstoreversionphasedreleaseresponse.md)
+- [object AppStoreVersionPhasedReleaseResponse](./appstoreversionphasedreleaseresponse.md)
   The response body for endpoints that create, read, or modify the phased release schedule for an App Store version.
-- [object AppStoreVersionPhasedReleaseWithoutIncludesResponse](appstoreversionphasedreleasewithoutincludesresponse.md)
+- [object AppStoreVersionPhasedReleaseWithoutIncludesResponse](./appstoreversionphasedreleasewithoutincludesresponse.md)
   A response containing a single phased release configuration, without related resources.
-- [object AppStoreVersionPhasedReleaseUpdateRequest](appstoreversionphasedreleaseupdaterequest.md)
+- [object AppStoreVersionPhasedReleaseUpdateRequest](./appstoreversionphasedreleaseupdaterequest.md)
   The request body you use to update an App Store Version Phased Release.
-- [type PhasedReleaseState](phasedreleasestate.md)
+- [type PhasedReleaseState](./phasedreleasestate.md)
   String that represents the progress of a phased release for an app version.
 
 

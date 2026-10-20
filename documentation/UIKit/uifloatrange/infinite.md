@@ -1,7 +1,8 @@
 # infinite
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A range whose range is minus infinity to infinity.
 
@@ -18,12 +19,17 @@ A range whose range is minus infinity to infinity.
 static let infinite: UIFloatRange
 ```
 
+```c
+extern const UIFloatRange UIFloatRangeInfinite;
+```
+
 ## See Also
 
-- [init()](uifloatrange/init.md)
-- [init(minimum: CGFloat, maximum: CGFloat)](uifloatrange/init(minimum:maximum:)-8dzgq.md)
+### Creating a float range
+- [init()](./init%28%29.md)
+- [init(minimum: CGFloat, maximum: CGFloat)](./init%28minimum,maximum%29-8dzgq.md)
   Returns a new float range structure from the given components.
-- [static let zero: UIFloatRange](uifloatrange/zero.md)
+- [static let zero: UIFloatRange](./zero.md)
   A range whose minimum and maximum are both `0.0`.
 
 

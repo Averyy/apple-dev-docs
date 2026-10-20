@@ -1,7 +1,8 @@
 # adhoc
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Must be used without a signing identity.
 
@@ -13,6 +14,10 @@ Must be used without a signing identity.
 
 ```swift
 static var adhoc: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureAdhoc
 ```
 
 #### Discussion

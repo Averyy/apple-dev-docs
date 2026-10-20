@@ -1,7 +1,8 @@
 # MPSCNNArithmeticGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that stores the clamp mask used by gradient arithmetic operators.
 
@@ -19,37 +20,42 @@ An object that stores the clamp mask used by gradient arithmetic operators.
 class MPSCNNArithmeticGradientState
 ```
 
+```objc
+@interface MPSCNNArithmeticGradientState : MPSNNBinaryGradientState
+```
+
 ## Relationships
 
 ### Inherits From
-- [MPSNNBinaryGradientState](mpsnnbinarygradientstate.md)
+- [MPSNNBinaryGradientState](./mpsnnbinarygradientstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNAdd](mpscnnadd.md)
+### Arithmetic Layers
+- [class MPSCNNAdd](./mpscnnadd.md)
   An addition operator.
-- [class MPSCNNAddGradient](mpscnnaddgradient.md)
+- [class MPSCNNAddGradient](./mpscnnaddgradient.md)
   A gradient addition operator.
-- [class MPSCNNSubtract](mpscnnsubtract.md)
+- [class MPSCNNSubtract](./mpscnnsubtract.md)
   A subtraction operator.
-- [class MPSCNNSubtractGradient](mpscnnsubtractgradient.md)
+- [class MPSCNNSubtractGradient](./mpscnnsubtractgradient.md)
   A gradient subtraction operator.
-- [class MPSCNNMultiply](mpscnnmultiply.md)
+- [class MPSCNNMultiply](./mpscnnmultiply.md)
   A multiply operator.
-- [class MPSCNNMultiplyGradient](mpscnnmultiplygradient.md)
+- [class MPSCNNMultiplyGradient](./mpscnnmultiplygradient.md)
   A gradient multiply operator.
-- [class MPSCNNDivide](mpscnndivide.md)
+- [class MPSCNNDivide](./mpscnndivide.md)
   A division operator.
-- [class MPSCNNArithmetic](mpscnnarithmetic.md)
+- [class MPSCNNArithmetic](./mpscnnarithmetic.md)
   The base class for arithmetic operators.
-- [class MPSCNNArithmeticGradient](mpscnnarithmeticgradient.md)
+- [class MPSCNNArithmeticGradient](./mpscnnarithmeticgradient.md)
   The base class for gradient arithmetic operators.
 
 

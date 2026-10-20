@@ -1,7 +1,8 @@
 # displayedPropertyKeys
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact property keys to display.
 
@@ -17,17 +18,22 @@ The contact property keys to display.
 var displayedPropertyKeys: [Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray * displayedPropertyKeys;
+```
+
 #### Discussion
 
 If this property is not set, the view controller displays all properties.
 
 ## See Also
 
-- [var contact: CNContact](cncontactviewcontroller/contact.md)
+### Displaying Contact Properties
+- [var contact: CNContact](./contact.md)
   The contact being displayed.
-- [var alternateName: String?](cncontactviewcontroller/alternatename.md)
+- [var alternateName: String?](./alternatename.md)
   The name to use if the contact has no display name.
-- [var message: String?](cncontactviewcontroller/message.md)
+- [var message: String?](./message.md)
   The message displayed under the name of the contact.
 
 

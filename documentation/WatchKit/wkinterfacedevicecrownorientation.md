@@ -1,7 +1,8 @@
 # WKInterfaceDeviceCrownOrientation
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the crown orientation from the user’s perspective.
 
@@ -14,41 +15,46 @@ Constants indicating the crown orientation from the user’s perspective.
 enum WKInterfaceDeviceCrownOrientation
 ```
 
+```c
+enum WKInterfaceDeviceCrownOrientation : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKInterfaceDeviceCrownOrientation.left](wkinterfacedevicecrownorientation/left.md)
+- [WKInterfaceDeviceCrownOrientation.left](./wkinterfacedevicecrownorientation/left.md)
   The left side of the device.
-- [WKInterfaceDeviceCrownOrientation.right](wkinterfacedevicecrownorientation/right.md)
+- [WKInterfaceDeviceCrownOrientation.right](./wkinterfacedevicecrownorientation/right.md)
   The right side of the device.
 ### Initializers
-- [init?(rawValue: Int)](wkinterfacedevicecrownorientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkinterfacedevicecrownorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var name: String](wkinterfacedevice/name.md)
+### Reading the Device Settings
+- [var name: String](./wkinterfacedevice/name.md)
   The name of the device.
-- [var model: String](wkinterfacedevice/model.md)
+- [var model: String](./wkinterfacedevice/model.md)
   The model information for the device.
-- [var localizedModel: String](wkinterfacedevice/localizedmodel.md)
+- [var localizedModel: String](./wkinterfacedevice/localizedmodel.md)
   The localized version of the model information.
-- [var wristLocation: WKInterfaceDeviceWristLocation](wkinterfacedevice/wristlocation.md)
+- [var wristLocation: WKInterfaceDeviceWristLocation](./wkinterfacedevice/wristlocation.md)
   The wrist on which the user wears the Apple Watch.
-- [enum WKInterfaceDeviceWristLocation](wkinterfacedevicewristlocation.md)
+- [enum WKInterfaceDeviceWristLocation](./wkinterfacedevicewristlocation.md)
   Constants indicating the wrist on which the user wears the Apple Watch.
-- [var crownOrientation: WKInterfaceDeviceCrownOrientation](wkinterfacedevice/crownorientation.md)
+- [var crownOrientation: WKInterfaceDeviceCrownOrientation](./wkinterfacedevice/crownorientation.md)
   The side on which the crown is positioned.
-- [var preferredContentSizeCategory: String](wkinterfacedevice/preferredcontentsizecategory.md)
+- [var preferredContentSizeCategory: String](./wkinterfacedevice/preferredcontentsizecategory.md)
   The preferred font-sizing option.
 
 

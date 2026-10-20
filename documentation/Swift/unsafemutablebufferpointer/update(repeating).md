@@ -1,7 +1,8 @@
 # update(repeating:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates every element of this buffer’s initialized memory.
 

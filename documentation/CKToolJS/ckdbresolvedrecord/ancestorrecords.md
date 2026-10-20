@@ -1,7 +1,8 @@
 # ancestorRecords
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of record objects that represent the ancestor records.
 
@@ -10,7 +11,7 @@ The array of record objects that represent the ancestor records.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBRecord[]? ancestorRecords;
 ```
 

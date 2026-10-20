@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Apple Pay version supported on your website.
 
@@ -11,19 +12,20 @@ The Apple Pay version supported on your website.
 
 ## Declaration
 
-```swift
+```
 required long version;
 ```
 
 #### Discussion
 
-The version number you provide here represents the minimum Apple Pay version that the user’s browser must support. You can check which API version the browser supports by calling [`supportsVersion`](applepaysession/supportsversion.md).
+The version number you provide here represents the minimum Apple Pay version that the user’s browser must support. You can check which API version the browser supports by calling [`supportsVersion`](../applepaysession/supportsversion.md).
 
-Always check [`supportsVersion`](applepaysession/supportsversion.md) before using an Apple Pay feature that isn’t available in all versions. See [`Apple Pay on the Web version history`](apple-pay-on-the-web-version-history.md) for information about the features available in each version.
+Always check [`supportsVersion`](../applepaysession/supportsversion.md) before using an Apple Pay feature that isn’t available in all versions. See [Apple Pay on the Web version history](../apple-pay-on-the-web-version-history.md) for information about the features available in each version.
 
 ## See Also
 
-- [merchantIdentifier](applepayrequest/merchantidentifier.md)
+### Identifier and version information
+- [merchantIdentifier](./merchantidentifier.md)
   The merchant identifier you registered with Apple for use with Apple Pay.
 
 

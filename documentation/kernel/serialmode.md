@@ -1,14 +1,15 @@
 # serialmode
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 uint32_t serialmode;
 ```
 

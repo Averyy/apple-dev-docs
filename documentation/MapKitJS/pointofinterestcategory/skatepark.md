@@ -1,7 +1,8 @@
 # SkatePark
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for skate parks.
 
@@ -10,7 +11,7 @@ The point-of-interest category for skate parks.
 
 ## Declaration
 
-```swift
+```
 readonly SkatePark: "SkatePark";
 ```
 

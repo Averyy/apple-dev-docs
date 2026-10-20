@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes export metadata from a decoder.
 
@@ -21,7 +22,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(supportForExportToFiles: Bool, bookmarksCount: Int, readingListCount: Int, historyCount: Int, extensionsCount: Int)](beexportmetadata/init(supportforexporttofiles:bookmarkscount:readinglistcount:historycount:extensionscount:).md)
+### Creating export metadata
+- [init(supportForExportToFiles: Bool, bookmarksCount: Int, readingListCount: Int, historyCount: Int, extensionsCount: Int)](./init%28supportforexporttofiles,bookmarkscount,readinglistcount,historycount,extensionscount%29.md)
   Initializes export metadata with file support information and data counts.
 
 

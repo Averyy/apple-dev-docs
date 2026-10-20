@@ -1,7 +1,8 @@
 # AVCaption.TextAlignment.right
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An alignment of the text to the right in horizontal writing mode, and bottom in vertical writing mode.
 
@@ -17,15 +18,20 @@ An alignment of the text to the right in horizontal writing mode, and bottom in 
 case right
 ```
 
+```c
+AVCaptionTextAlignmentRight
+```
+
 ## See Also
 
-- [AVCaption.TextAlignment.start](avcaption/textalignment-swift.enum/start.md)
+### Text alignments
+- [AVCaption.TextAlignment.start](./start.md)
   An alignment of the text to the start of the inline progression direction.
-- [AVCaption.TextAlignment.end](avcaption/textalignment-swift.enum/end.md)
+- [AVCaption.TextAlignment.end](./end.md)
   An alignment of the text to the end of the inline progression direction.
-- [AVCaption.TextAlignment.center](avcaption/textalignment-swift.enum/center.md)
+- [AVCaption.TextAlignment.center](./center.md)
   An alignment of the text to the center of the display.
-- [AVCaption.TextAlignment.left](avcaption/textalignment-swift.enum/left.md)
+- [AVCaption.TextAlignment.left](./left.md)
   An alignment of the text to the left in horizontal writing mode, and top in vertical writing mode.
 
 

@@ -1,7 +1,8 @@
 # upper
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates that the data source is located near the top end of the device.
 
@@ -9,7 +10,7 @@ A value that indicates that the data source is located near the top end of the d
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -20,9 +21,14 @@ A value that indicates that the data source is located near the top end of the d
 static let upper: AVAudioSession.Location
 ```
 
+```c
+extern AVAudioSessionLocation const AVAudioSessionLocationUpper;
+```
+
 ## See Also
 
-- [static let lower: AVAudioSession.Location](avaudiosession/location/lower.md)
+### Getting standard locations
+- [static let lower: AVAudioSession.Location](./lower.md)
   A value that indicates that the data source is located near the bottom end of the device.
 
 

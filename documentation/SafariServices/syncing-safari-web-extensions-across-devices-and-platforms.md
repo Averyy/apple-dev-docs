@@ -1,6 +1,7 @@
 # Syncing Safari web extensions across devices and platforms
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Let users install your extension on one device and then use and manage the extension on all their other iOS and macOS devices.
 
@@ -17,55 +18,56 @@ In the following circumstances, extensions automatically sync with no configurat
 
 If your extension has different bundle identifiers in macOS and iOS, turn on syncing by configuring your Xcode project for both macOS and iOS.
 
-> **Note**:  If you provide your extension in both iOS and macOS, consider selling them together as one product to improve the purchasing experience for your users. For more information, see [`Offering Universal Purchase`](https://developer.apple.comhttps://developer.apple.com/support/universal-purchase/).
+> **Note**:  If you provide your extension in both iOS and macOS, consider selling them together as one product to improve the purchasing experience for your users. For more information, see [Offering Universal Purchase](https://developer.apple.com/support/universal-purchase/).
 
-##### Configure Your Macos App and Extension
+##### Configure your macOS app and extension
 
 In your Xcode project, configure your macOS app to refer to your iOS app to support extension syncing:
 
 1. Select the top project item in the Project navigator pane.
 2. Select the target for your macOS app.
 3. Click the Info tab.
-4. Add the [`SFSafariCorrespondingIOSAppBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/sfsafaricorrespondingiosappbundleidentifier) key to the Custom macOS Application Target Properties section.
+4. Add the [`SFSafariCorrespondingIOSAppBundleIdentifier`](../BundleResources/information-property-list/sfsafaricorrespondingiosappbundleidentifier.md) key to the Custom macOS Application Target Properties section.
 5. Specify the bundle identifier of your corresponding iOS app as the value.
 
 Next, configure your macOS extension for syncing:
 
 1. Select the target for your macOS extension.
 2. Click the Info tab.
-3. Add the [`SFSafariCorrespondingIOSExtensionBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/sfsafaricorrespondingiosextensionbundleidentifier) key to the Custom macOS Bundle Target Properties section.
+3. Add the [`SFSafariCorrespondingIOSExtensionBundleIdentifier`](../BundleResources/information-property-list/sfsafaricorrespondingiosextensionbundleidentifier.md) key to the Custom macOS Bundle Target Properties section.
 4. Specify the bundle identifier of your corresponding iOS extension as the value.
 
 > **Note**:  The bundle identifiers for the iOS app and extension you specify must be from the same developer account as your macOS app and extension.
 
-##### Configure Your Ios App and Extension
+##### Configure your iOS app and extension
 
 In your Xcode project, configure your iOS app to refer to your macOS app to support extension syncing:
 
 1. Select the top project item in the Project navigator pane.
 2. Select the target for your iOS app.
 3. Click the Info tab.
-4. Add the [`SFSafariCorrespondingMacOSAppBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/sfsafaricorrespondingmacosappbundleidentifier) key to the Custom iOS Target Properties section.
+4. Add the [`SFSafariCorrespondingMacOSAppBundleIdentifier`](../BundleResources/information-property-list/sfsafaricorrespondingmacosappbundleidentifier.md) key to the Custom iOS Target Properties section.
 5. Specify the bundle identifier of your corresponding macOS app as the value.
 
 Next, configure your iOS extension for syncing:
 
 1. Select the target for your iOS extension.
 2. Click the Info tab.
-3. Add the [`SFSafariCorrespondingMacOSExtensionBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/sfsafaricorrespondingmacosextensionbundleidentifier) key to the iOS Target Properties section.
+3. Add the [`SFSafariCorrespondingMacOSExtensionBundleIdentifier`](../BundleResources/information-property-list/sfsafaricorrespondingmacosextensionbundleidentifier.md) key to the iOS Target Properties section.
 4. Specify the bundle identifier of your corresponding macOS extension.
 
 > **Note**:  The bundle identifiers for the macOS app and extension you specify must be from the same developer account as your iOS app and extension.
 
 ## See Also
 
-- [Optimizing your web extension for Safari](optimizing-your-web-extension-for-safari.md)
+### Extension improvements
+- [Optimizing your web extension for Safari](./optimizing-your-web-extension-for-safari.md)
   Support Dark Mode, reduce memory and power usage, and ensure feature compatibility to improve your web extension experience in Safari and web apps.
-- [Adopting New Safari Web Extension APIs](adopting-new-safari-web-extension-apis.md)
+- [Adopting New Safari Web Extension APIs](./adopting-new-safari-web-extension-apis.md)
   Improve your web extension in Safari with a non-persistent background page and new tab-override customization.
-- [Assessing your Safari web extension’s browser compatibility](assessing-your-safari-web-extension-s-browser-compatibility.md)
+- [Assessing your Safari web extension’s browser compatibility](./assessing-your-safari-web-extension-s-browser-compatibility.md)
   Review your Safari web extension implementation plan, manifest keys, and JavaScript API usage for compatibility with other browsers.
-- [Troubleshooting your Safari web extension](troubleshooting-your-safari-web-extension.md)
+- [Troubleshooting your Safari web extension](./troubleshooting-your-safari-web-extension.md)
   Use developer resources to investigate and resolve common problems with Safari web extensions.
 
 

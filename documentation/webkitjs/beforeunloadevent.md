@@ -1,7 +1,8 @@
 # BeforeUnloadEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface BeforeUnloadEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [returnValue](beforeunloadevent/1629842-returnvalue.md)
+- [returnValue](./beforeunloadevent/api-1629842-returnvalue.md)
 
 ## Relationships
 

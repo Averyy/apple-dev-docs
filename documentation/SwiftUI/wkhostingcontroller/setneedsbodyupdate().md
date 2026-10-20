@@ -1,7 +1,8 @@
 # setNeedsBodyUpdate()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the current SwiftUI views and triggers an update during the next cycle.
 
@@ -17,11 +18,12 @@ Invalidates the current SwiftUI views and triggers an update during the next cyc
 
 #### Discussion
 
-Call this method to mark the views of the hosting controller as needing an update. During the next update cycle, the hosting controller fetches an updated set of views from its [`body`](wkhostingcontroller/body.md) property.
+Call this method to mark the views of the hosting controller as needing an update. During the next update cycle, the hosting controller fetches an updated set of views from its [`body`](./body.md) property.
 
 ## See Also
 
-- [func updateBodyIfNeeded()](wkhostingcontroller/updatebodyifneeded.md)
+### Updating the root view
+- [func updateBodyIfNeeded()](./updatebodyifneeded%28%29.md)
   Updates the interface controller’s set of views immediately, if updates are pending.
 
 

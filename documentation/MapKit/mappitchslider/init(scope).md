@@ -1,7 +1,8 @@
 # init(scope:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new map pitch slider with the scope you specify.
 
@@ -18,7 +19,7 @@ Creates a new map pitch slider with the scope you specify.
 
 ## Parameters
 
-- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id) value that identifies this namespace and that you use to associate this control with a map instance.
+- `scope`: A [`Namespace.ID`](../../SwiftUI/namespace/id.md) value that identifies this namespace and that you use to associate this control with a map instance.
 
 
 ---

@@ -1,29 +1,31 @@
 # OSActionAbortedHandler
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block to call before aborting an action object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef void (^)(void) OSActionAbortedHandler;
 ```
 
 ## See Also
 
-- [Cancel](osaction/cancel.md)
+### Ending the Action Early
+- [Cancel](./osaction/cancel.md)
   Cancels the execution of the action’s callbacks.
-- [Aborted](osaction/aborted.md)
+- [Aborted](./osaction/aborted.md)
   Calls the abort handler of the action object.
-- [OSActionCancelHandler](osactioncancelhandler.md)
+- [OSActionCancelHandler](./osactioncancelhandler.md)
   The block to call after the successful cancellation of the action.
 
 

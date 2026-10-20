@@ -1,7 +1,8 @@
 # AnnotationOverflowResolution.Boundary
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes a boundary of a chart for overflow resolution.
 
@@ -23,11 +24,11 @@ struct Boundary
 ## Topics
 
 ### Type Properties
-- [static let automatic: AnnotationOverflowResolution.Boundary](annotationoverflowresolution/boundary/automatic.md)
+- [static let automatic: AnnotationOverflowResolution.Boundary](./boundary/automatic.md)
   Automatically determines the boundary to use.
-- [static let chart: AnnotationOverflowResolution.Boundary](annotationoverflowresolution/boundary/chart.md)
+- [static let chart: AnnotationOverflowResolution.Boundary](./boundary/chart.md)
   The entire chart.
-- [static let plot: AnnotationOverflowResolution.Boundary](annotationoverflowresolution/boundary/plot.md)
+- [static let plot: AnnotationOverflowResolution.Boundary](./boundary/plot.md)
   The plot area.
 
 

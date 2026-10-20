@@ -1,14 +1,15 @@
 # id
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the session.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,9 +19,10 @@ let id: UUID
 
 ## See Also
 
-- [let state: ElectricHVACLoadEvent.Session.State](electrichvacloadevent/session-swift.struct/state-swift.property.md)
+### Getting the session information
+- [let state: ElectricHVACLoadEvent.Session.State](./state-swift.property.md)
   The state of the session.
-- [ElectricHVACLoadEvent.Session.State](electrichvacloadevent/session-swift.struct/state-swift.enum.md)
+- [ElectricHVACLoadEvent.Session.State](./state-swift.enum.md)
   The state of the session.
 
 

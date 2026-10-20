@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unmodified sum of the durations of all samples in the sample buffer.
 
@@ -24,7 +25,7 @@ var duration: CMTime { get }
 
 If the buffer contains out-of-presentation-order samples, any gaps in the presentation timeline are not represented in the returned duration. The calculated duration is simply the sum of all the individual sample durations.
 
-Returns [`invalid`](cmtime/invalid.md) if `sampleTimings` is empty or contains invalid [`duration`](cmsampletiminginfo/duration.md).
+Returns [`invalid`](../cmtime/invalid.md) if `sampleTimings` is empty or contains invalid [`duration`](../cmsampletiminginfo/duration.md).
 
 
 ---

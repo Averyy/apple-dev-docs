@@ -1,7 +1,8 @@
 # init(start:duration:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a date interval with a given start date and duration.
 
@@ -20,6 +21,10 @@ Initializes a date interval with a given start date and duration.
 init(start startDate: Date, duration: TimeInterval)
 ```
 
+```objc
+- (instancetype) initWithStartDate:(NSDate *) startDate duration:(NSTimeInterval) duration;
+```
+
 #### Discussion
 
 This is the designated initializer.
@@ -27,15 +32,18 @@ This is the designated initializer.
 ## Parameters
 
 - `startDate`: The start date of the date interval.
-- `duration`: The duration from the start date for the date interval. > ❗ **Important**:  This method raises an `NSArgumentException` if [`duration`](nsdateinterval/duration.md) is less than `0`.
+- `duration`: The duration from the start date for the date interval.
+
+  > ❗ **Important**:  This method raises an `NSArgumentException` if [`duration`](./duration.md) is less than `0`.
 
 ## See Also
 
-- [convenience init()](nsdateinterval/init.md)
+### Creating Date Intervals
+- [convenience init()](./init%28%29.md)
   Initializes a date interval by setting the start and end date to the current date.
-- [convenience init(start: Date, end: Date)](nsdateinterval/init(start:end:).md)
+- [convenience init(start: Date, end: Date)](./init%28start,end%29.md)
   Initializes a date interval from a given start date and end date.
-- [init(coder: NSCoder)](nsdateinterval/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Returns a date interval initialized from data in the given unarchiver.
 
 

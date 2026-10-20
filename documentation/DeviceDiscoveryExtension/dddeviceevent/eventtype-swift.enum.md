@@ -1,21 +1,26 @@
 # DDDeviceEvent.EventType
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifiers for the types of events that occur in the device discovery life cycle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum EventType
+```
+
+```c
+enum DDEventType : NSInteger;
 ```
 
 #### Overview
@@ -25,34 +30,35 @@ An event (`DDEvent`) `eventType` is of this type.
 ## Topics
 
 ### Distinguishing event types
-- [DDDeviceEvent.EventType.unknown](dddeviceevent/eventtype-swift.enum/unknown.md)
+- [DDDeviceEvent.EventType.unknown](./eventtype-swift.enum/unknown.md)
   A value for uninitialized event types.
-- [DDDeviceEvent.EventType.deviceFound](dddeviceevent/eventtype-swift.enum/devicefound.md)
+- [DDDeviceEvent.EventType.deviceFound](./eventtype-swift.enum/devicefound.md)
   A status that indicates when the extension finds the device of interest.
-- [DDDeviceEvent.EventType.deviceLost](dddeviceevent/eventtype-swift.enum/devicelost.md)
+- [DDDeviceEvent.EventType.deviceLost](./eventtype-swift.enum/devicelost.md)
   A status that indicates when the extension loses a connection to the device of interest.
-- [DDDeviceEvent.EventType.deviceChanged](dddeviceevent/eventtype-swift.enum/devicechanged.md)
+- [DDDeviceEvent.EventType.deviceChanged](./eventtype-swift.enum/devicechanged.md)
   A status that indicates when the device of interest changes configuration.
 ### Initializers
-- [init?(rawValue: Int)](dddeviceevent/eventtype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./eventtype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class DDDeviceEvent](dddeviceevent.md)
+### Life cycle
+- [class DDDeviceEvent](../dddeviceevent.md)
   An object that provides a device or communicates its change in status.
-- [func DDEventTypeToString(DDDeviceEvent.EventType) -> String](ddeventtypetostring(_:).md)
+- [func DDEventTypeToString(DDDeviceEvent.EventType) -> String](../ddeventtypetostring%28_%29.md)
   Returns human-readable text for the specified event identifier.
-- [typealias DDEventHandler](ddeventhandler.md)
+- [typealias DDEventHandler](../ddeventhandler.md)
   A function that the extension invokes to signal an event.
 
 

@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Graphics point for this point.
 
@@ -19,11 +20,16 @@ The Core Graphics point for this point.
 var location: CGPoint { get }
 ```
 
+```objc
+@property (readonly) CGPoint location;
+```
+
 ## See Also
 
-- [var x: Double](vnpoint/x.md)
+### Inspecting a Point
+- [var x: Double](./x.md)
   The x-coordinate.
-- [var y: Double](vnpoint/y.md)
+- [var y: Double](./y.md)
   The y-coordinate.
 
 

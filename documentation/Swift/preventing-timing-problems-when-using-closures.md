@@ -1,6 +1,7 @@
 # Preventing Timing Problems When Using Closures
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Understand how different API calls to your closures can affect your app.
 
@@ -56,13 +57,13 @@ Running the code in the example above usually prints the letters in the order `B
 
 You’ll need to consider this kind of time-based execution problem frequently when using APIs that take closures. In many cases, only one sequence of calls is correct for your app, so it’s important to think through what the state of your app will be, given the APIs you’re using. Use API names and parameter names along with documentation to determine whether an API is synchronous or asynchronous.
 
-A common timing mistake is expecting the results of an asynchronous call to be available within the calling synchronous code. For example, the `later(_:)` method above is comparable to the [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) class’s [`dataTask(with:completionHandler:)`](https://developer.apple.com/documentation/foundation/urlsession/datatask(with:completionhandler:)-52wk8) method, which is also asynchronous. A timing scenario you should avoid is calling the [`dataTask(with:completionHandler:)`](https://developer.apple.com/documentation/foundation/urlsession/datatask(with:completionhandler:)-52wk8) method within your app’s [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()) method and attempting to use the results outside of the closure you pass as the completion handler.
+A common timing mistake is expecting the results of an asynchronous call to be available within the calling synchronous code. For example, the `later(_:)` method above is comparable to the [`URLSession`](../Foundation/urlsession.md) class’s [`dataTask(with:completionHandler:)`](../Foundation/urlsession/datatask%28with,completionhandler%29-52wk8.md) method, which is also asynchronous. A timing scenario you should avoid is calling the [`dataTask(with:completionHandler:)`](../Foundation/urlsession/datatask%28with,completionhandler%29-52wk8.md) method within your app’s [`viewDidLoad()`](../UIKit/uiviewcontroller/viewdidload%28%29.md) method and attempting to use the results outside of the closure you pass as the completion handler.
 
-##### Dont Write Code That Makes a One Time Change in a Closure Thats Called Multiple Times
+##### Don’t Write Code That Makes a One-Time Change in a Closure That’s Called Multiple Times
 
 If you’re going to pass a closure to an API that might call it multiple times, omit code that’s intended to make a one-time change to external state.
 
-The example below creates a [`FileHandle`](https://developer.apple.com/documentation/foundation/filehandle) and an array of data lines to write to the file that the handle refers to:
+The example below creates a [`FileHandle`](../Foundation/filehandle.md) and an array of data lines to write to the file that the handle refers to:
 
 ```swift
 import Foundation
@@ -71,7 +72,7 @@ let file = FileHandle(forWritingAtPath: "/dev/null")!
 let lines = ["x,y", "1,1", "2,4", "3,9", "4,16"]
 ```
 
-To write each line to the file, pass a closure to the [`forEach(_:)`](array/foreach(_:).md) method:
+To write each line to the file, pass a closure to the [`forEach(_:)`](./array/foreach%28_%29.md) method:
 
 ```swift
 lines.forEach { line in
@@ -79,7 +80,7 @@ lines.forEach { line in
 }
 ```
 
-When you’re finished using a [`FileHandle`](https://developer.apple.com/documentation/foundation/filehandle), close it using [`closeFile()`](https://developer.apple.com/documentation/foundation/filehandle/closefile()). The correct placement of the call to [`closeFile()`](https://developer.apple.com/documentation/foundation/filehandle/closefile()) is outside of the closure:
+When you’re finished using a [`FileHandle`](../Foundation/filehandle.md), close it using [`closeFile()`](../Foundation/filehandle/closefile%28%29.md). The correct placement of the call to [`closeFile()`](../Foundation/filehandle/closefile%28%29.md) is outside of the closure:
 
 ```swift
 lines.forEach { line in
@@ -89,7 +90,7 @@ lines.forEach { line in
 file.closeFile()
 ```
 
-If you misunderstand the requirements of [`closeFile()`](https://developer.apple.com/documentation/foundation/filehandle/closefile()), you might place the call inside the closure. Doing so crashes your app:
+If you misunderstand the requirements of [`closeFile()`](../Foundation/filehandle/closefile%28%29.md), you might place the call inside the closure. Doing so crashes your app:
 
 ```swift
 lines.forEach { line in
@@ -98,7 +99,7 @@ lines.forEach { line in
 }
 ```
 
-##### Dont Put Critical Code in a Closure That Might Not Be Called
+##### Don’t Put Critical Code in a Closure That Might Not Be Called
 
 If there’s a chance that a closure you pass to an API won’t be called, don’t put code that’s critical to continuing your app in the closure.
 
@@ -149,7 +150,8 @@ if amountOwed > 0 {
 
 ## See Also
 
-- [Maintaining State in Your Apps](maintaining-state-in-your-apps.md)
+### Data Flow and Control Flow
+- [Maintaining State in Your Apps](./maintaining-state-in-your-apps.md)
   Use enumerations to capture and track the state of your app.
 
 

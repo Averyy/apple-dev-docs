@@ -1,7 +1,8 @@
 # kMDItemLyricist
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The lyricist, or text writer, of the music contained in the audio file. A CFString.
 
@@ -12,6 +13,10 @@ The lyricist, or text writer, of the music contained in the audio file. A CFStri
 
 ```swift
 let kMDItemLyricist: CFString!
+```
+
+```c
+const CFStringRef kMDItemLyricist;
 ```
 
 

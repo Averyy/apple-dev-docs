@@ -1,7 +1,8 @@
 # StationsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a stations request.
 
@@ -10,21 +11,22 @@ The response to a stations request.
 
 ## Declaration
 
-```swift
+```
 object StationsResponse
 ```
 
 ## Properties
 
-- `data` ([Stations]) *(required)*: The [`Stations`](stations.md) included in the response for the request.
+- `data` ([Stations]) *(required)*: The [`Stations`](./stations.md) included in the response for the request.
 
 ## See Also
 
-- [object Stations](stations.md)
+### Handling the Response
+- [object Stations](./stations.md)
   A resource object that represents a station.
-- [object StationGenres](stationgenres.md)
+- [object StationGenres](./stationgenres.md)
   A resource object that represents a station genre.
-- [object StationGenresResponse](stationgenresresponse.md)
+- [object StationGenresResponse](./stationgenresresponse.md)
   The response to a specific station genres resource request.
 
 

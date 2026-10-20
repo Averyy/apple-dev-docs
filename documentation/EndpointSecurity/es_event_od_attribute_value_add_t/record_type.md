@@ -1,16 +1,21 @@
 # record_type
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var record_type: es_od_record_type_t
+```
+
+```c
+es_od_record_type_t record_type;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(sampleCount:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the layer map with an empty grid.
 
@@ -19,6 +20,10 @@ Initializes the layer map with an empty grid.
 init(sampleCount: MTLSize)
 ```
 
+```objc
+- (instancetype) initWithSampleCount:(MTLSize) sampleCount;
+```
+
 #### Return Value
 
 A layer descriptor with a grid of the specified size. All of the rasterization rates are set to `0.0`.
@@ -29,7 +34,8 @@ A layer descriptor with a grid of the specified size. All of the rasterization r
 
 ## See Also
 
-- [convenience init(horizontal: [Float], vertical: [Float])](mtlrasterizationratelayerdescriptor/init(horizontal:vertical:).md)
+### Creating a layer rasterization rate descriptor
+- [convenience init(horizontal: [Float], vertical: [Float])](./init%28horizontal,vertical%29.md)
   Initializes a layer rate map with a set of horizontal and vertical rasterization rates.
 
 

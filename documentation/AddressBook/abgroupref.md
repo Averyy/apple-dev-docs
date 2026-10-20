@@ -1,12 +1,13 @@
 # ABGroupRef
 
 **Framework**: Address Book  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to an ABGroup object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A reference to an ABGroup object.
 class ABGroupRef
 ```
 
+```c
+typedef struct __ABGroup * ABGroupRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class ABPersonRef](abpersonref.md)
+### Data Types
+- [class ABPersonRef](./abpersonref.md)
   A reference to an ABPerson object.
-- [typealias ABMultiValue](abmultivalue-swift.typealias.md)
+- [typealias ABMultiValue](./abmultivalue-swift.typealias.md)
   A reference to an `ABMultiValue` or `ABMutableMultiValueobject`.
-- [typealias ABMutableMultiValue](abmutablemultivalue-swift.typealias.md)
+- [typealias ABMutableMultiValue](./abmutablemultivalue-swift.typealias.md)
   A reference to an ABMutableMultiValue object.
 
 

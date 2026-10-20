@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Distributed  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The “argument label” of the argument. The label is the name visible name used in external calls made to this target, e.g. for `func hello(label name: String)` it is `label`.
 
@@ -11,7 +12,7 @@ The “argument label” of the argument. The label is the name visible name use
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

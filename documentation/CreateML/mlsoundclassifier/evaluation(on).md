@@ -1,7 +1,8 @@
 # evaluation(on:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates metrics by evaluating the sound classifier’s performance on a dataset represented by a data source.
 
@@ -18,19 +19,26 @@ Generates metrics by evaluating the sound classifier’s performance on a datase
 func evaluation(on testingData: MLSoundClassifier.DataSource) -> MLClassifierMetrics
 ```
 
+**Other overloads**:
+
+```swift
+func evaluation(on testingData: [String : [URL]]) -> MLClassifierMetrics
+```
+
 #### Return Value
 
-An [`MLClassifierMetrics`](mlclassifiermetrics.md) instance that contains the evaluation results.
+An [`MLClassifierMetrics`](../mlclassifiermetrics.md) instance that contains the evaluation results.
 
 ## Parameters
 
-- `testingData`: A collection of labeled audio files represented by an [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md).
+- `testingData`: A collection of labeled audio files represented by an [`MLSoundClassifier.DataSource`](./datasource.md).
 
 ## See Also
 
-- [var trainingMetrics: MLClassifierMetrics](mlsoundclassifier/trainingmetrics.md)
+### Evaluating a sound classifier
+- [var trainingMetrics: MLClassifierMetrics](./trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [var validationMetrics: MLClassifierMetrics](mlsoundclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the image classifier’s performance on the validation dataset.
 
 

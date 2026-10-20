@@ -1,14 +1,15 @@
 # EMBEDDED_RADIO_TRANSMITTER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_RADIO_TRANSMITTER = 0x0711
 ```
 

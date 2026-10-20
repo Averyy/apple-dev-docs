@@ -1,7 +1,8 @@
 # valueType
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value type for this key path.
 

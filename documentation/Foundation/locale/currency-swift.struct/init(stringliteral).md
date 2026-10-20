@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a currency instance from a BCP 47 identifier as a string literal.
 
@@ -26,7 +27,8 @@ init(stringLiteral value: String)
 
 ## See Also
 
-- [init(String)](locale/currency-swift.struct/init(_:).md)
+### Creating a currency instance
+- [init(String)](./init%28_%29.md)
   Creates a currency instance from a BCP 47 identifier.
 
 

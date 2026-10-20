@@ -1,7 +1,8 @@
 # heightBased
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Height (Y) based style.
 
@@ -17,6 +18,8 @@ Height (Y) based style.
 ```swift
 static var heightBased: BasicChart3DSurfaceStyle { get }
 ```
+
+Available when `Self` is `BasicChart3DSurfaceStyle`.
 
 
 ---

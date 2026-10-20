@@ -2,6 +2,7 @@
 
 **Framework**: Core Media I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Retrieves the state of device properties.
@@ -16,6 +17,10 @@ Retrieves the state of device properties.
 func deviceProperties(forProperties properties: Set<CMIOExtensionProperty>) throws -> CMIOExtensionDeviceProperties
 ```
 
+```objc
+- (CMIOExtensionDeviceProperties *) devicePropertiesForProperties:(NSSet<NSString *> *) properties error:(NSError **) outError;
+```
+
 #### Return Value
 
 A properties object that contains the current device state.
@@ -26,9 +31,10 @@ A properties object that contains the current device state.
 
 ## See Also
 
-- [var availableProperties: Set<CMIOExtensionProperty>](cmioextensiondevicesource/availableproperties.md)
+### Managing Properties
+- [var availableProperties: Set<CMIOExtensionProperty>](./availableproperties.md)
   A set of available properties that a device provides.
-- [func setDeviceProperties(CMIOExtensionDeviceProperties) throws](cmioextensiondevicesource/setdeviceproperties(_:).md)
+- [func setDeviceProperties(CMIOExtensionDeviceProperties) throws](./setdeviceproperties%28_%29.md)
   Sets the state of device properties.
 
 

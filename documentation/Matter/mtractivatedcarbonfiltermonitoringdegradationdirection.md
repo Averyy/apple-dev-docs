@@ -1,7 +1,8 @@
 # MTRActivatedCarbonFilterMonitoringDegradationDirection
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,23 +19,27 @@
 enum MTRActivatedCarbonFilterMonitoringDegradationDirection
 ```
 
+```c
+enum MTRActivatedCarbonFilterMonitoringDegradationDirection : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRActivatedCarbonFilterMonitoringDegradationDirection.down](mtractivatedcarbonfiltermonitoringdegradationdirection/down.md)
-- [MTRActivatedCarbonFilterMonitoringDegradationDirection.up](mtractivatedcarbonfiltermonitoringdegradationdirection/up.md)
+- [MTRActivatedCarbonFilterMonitoringDegradationDirection.down](./mtractivatedcarbonfiltermonitoringdegradationdirection/down.md)
+- [MTRActivatedCarbonFilterMonitoringDegradationDirection.up](./mtractivatedcarbonfiltermonitoringdegradationdirection/up.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtractivatedcarbonfiltermonitoringdegradationdirection/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtractivatedcarbonfiltermonitoringdegradationdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

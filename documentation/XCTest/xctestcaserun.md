@@ -1,7 +1,8 @@
 # XCTestCaseRun
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that collects information about a specific execution of a test case.
 
@@ -11,33 +12,38 @@ An object that collects information about a specific execution of a test case.
 class XCTestCaseRun
 ```
 
+```objc
+@interface XCTestCaseRun : XCTestRun
+```
+
 #### Overview
 
-The test runner manages the creation and tracking of `XCTestCaseRun` for each [`XCTestCase`](xctestcase.md) in an [`XCTestSuite`](xctestsuite.md).
+The test runner manages the creation and tracking of `XCTestCaseRun` for each [`XCTestCase`](./xctestcase.md) in an [`XCTestSuite`](./xctestsuite.md).
 
 ## Topics
 
 ### Deprecated
-- [func recordFailure(inTest: XCTestCase, withDescription: String, inFile: String, atLine: Int, expected: Bool)](xctestcaserun/recordfailure(intest:withdescription:infile:atline:expected:).md)
+- [func recordFailure(inTest: XCTestCase, withDescription: String, inFile: String, atLine: Int, expected: Bool)](./xctestcaserun/recordfailure%28intest,withdescription,infile,atline,expected%29.md)
   Records a test failure during test execution for this test run.
 
 ## Relationships
 
 ### Inherits From
-- [XCTestRun](xctestrun.md)
+- [XCTestRun](./xctestrun.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class XCTestSuiteRun](xctestsuiterun.md)
+### Test Runs
+- [class XCTestSuiteRun](./xctestsuiterun.md)
   An object that collects information about a specific execution of a test suite.
-- [class XCTestRun](xctestrun.md)
+- [class XCTestRun](./xctestrun.md)
   A base class for collecting information about a specific execution of a test.
 
 

@@ -1,7 +1,8 @@
 # MusicPlayer.PlaybackStatus.interrupted
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player is in an interrupted state, such as from an incoming phone call.
 

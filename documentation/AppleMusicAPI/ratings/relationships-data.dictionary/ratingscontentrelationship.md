@@ -1,7 +1,8 @@
 # Ratings.Relationships.RatingsContentRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship between the rating and the assocaited content.
 
@@ -10,13 +11,15 @@ A relationship between the rating and the assocaited content.
 
 ## Declaration
 
-```swift
+```
 object Ratings.Relationships.RatingsContentRelationship
 ```
 
 ## Properties
 
 - `data` ([*]) *(required)*: The content associated with the rating.
+
+  **Allowed Types**: `Albums`, `LibraryMusicVideos`, `LibraryPlaylists`, `LibrarySongs`, `MusicVideos`, `Playlists`, `Songs`, `Stations`
 - `href` (string): A relative location for the relationship.
 - `next` (string): A relative cursor to fetch the next paginated collection of resources in the relationship if more exist.
 

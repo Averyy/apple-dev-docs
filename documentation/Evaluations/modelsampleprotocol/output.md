@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The expected output value and evaluation expectations.

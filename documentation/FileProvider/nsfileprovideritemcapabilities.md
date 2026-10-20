@@ -1,7 +1,8 @@
 # NSFileProviderItemCapabilities
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An item’s capabilities, which define the actions that the user can perform in the document browser.
 
@@ -18,60 +19,65 @@ An item’s capabilities, which define the actions that the user can perform in 
 struct NSFileProviderItemCapabilities
 ```
 
+```c
+enum NSFileProviderItemCapabilities : NSUInteger;
+```
+
 ## Mentions
 
-- [Exporting file provider metrics data](exporting-file-provider-metrics-data.md)
+- [Exporting file provider metrics data](./exporting-file-provider-metrics-data.md)
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](nsfileprovideritemcapabilities/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsfileprovideritemcapabilities/init%28rawvalue%29.md)
   Returns a newly created item capabilities value.
 ### Constants
-- [static var allowsAddingSubItems: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowsaddingsubitems.md)
+- [static var allowsAddingSubItems: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowsaddingsubitems.md)
   A value indicating that the user can add subitems.
-- [static var allowsContentEnumerating: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowscontentenumerating.md)
+- [static var allowsContentEnumerating: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowscontentenumerating.md)
   A value indicating that the item’s contents can be enumerated.
-- [static var allowsDeleting: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowsdeleting.md)
+- [static var allowsDeleting: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowsdeleting.md)
   A value indicating that the item can be deleted.
-- [static var allowsEvicting: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowsevicting.md)
+- [static var allowsEvicting: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowsevicting.md)
   A value indicating that the system can delete the local copy of the item.
-- [static var allowsReading: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowsreading.md)
+- [static var allowsReading: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowsreading.md)
   A value indicating that the value can be read from.
-- [static var allowsRenaming: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowsrenaming.md)
+- [static var allowsRenaming: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowsrenaming.md)
   A value indicating that the item can be renamed.
-- [static var allowsReparenting: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowsreparenting.md)
+- [static var allowsReparenting: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowsreparenting.md)
   A value indicating that the item can be moved.
-- [static var allowsTrashing: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowstrashing.md)
+- [static var allowsTrashing: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowstrashing.md)
   A value indicating that the item can be moved to the trash.
-- [static var allowsWriting: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowswriting.md)
+- [static var allowsWriting: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowswriting.md)
   A value indicating that the item can be written to.
-- [static var allowsExcludingFromSync: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowsexcludingfromsync.md)
+- [static var allowsExcludingFromSync: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowsexcludingfromsync.md)
   A value indicating that the user can exclude the item from sync operations.
-- [static var allowsAll: NSFileProviderItemCapabilities](nsfileprovideritemcapabilities/allowsall.md)
+- [static var allowsAll: NSFileProviderItemCapabilities](./nsfileprovideritemcapabilities/allowsall.md)
   A convenience value for enabling all capabilities.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [typealias NSFileProviderItem](nsfileprovideritem-swift.typealias.md)
+### Provided items
+- [typealias NSFileProviderItem](./nsfileprovideritem-swift.typealias.md)
   An item the File Provider extension manages.
-- [protocol NSFileProviderItemProtocol](nsfileprovideritemprotocol.md)
+- [protocol NSFileProviderItemProtocol](./nsfileprovideritemprotocol.md)
   A protocol that defines the properties of an item managed by the File Provider extension.
-- [struct NSFileProviderItemIdentifier](nsfileprovideritemidentifier.md)
+- [struct NSFileProviderItemIdentifier](./nsfileprovideritemidentifier.md)
   A unique identifier for an item managed by the File Provider extension.
-- [struct NSFileProviderTypeAndCreator](nsfileprovidertypeandcreator.md)
+- [struct NSFileProviderTypeAndCreator](./nsfileprovidertypeandcreator.md)
   A structure that contains the file type and file creator codes for an item.
 
 

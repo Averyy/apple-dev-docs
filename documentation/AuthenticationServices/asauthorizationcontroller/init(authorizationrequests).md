@@ -1,7 +1,8 @@
 # init(authorizationRequests:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a controller from a collection of authorization requests.
 
@@ -18,6 +19,10 @@ Creates a controller from a collection of authorization requests.
 
 ```swift
 init(authorizationRequests: [ASAuthorizationRequest])
+```
+
+```objc
+- (instancetype) initWithAuthorizationRequests:(NSArray<ASAuthorizationRequest *> *) authorizationRequests;
 ```
 
 ## Parameters

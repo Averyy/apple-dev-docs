@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,12 +21,17 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var point0: CGPoint](ciglasslozenge/point0.md)
-- [var point1: CGPoint](ciglasslozenge/point1.md)
-- [var radius: Float](ciglasslozenge/radius.md)
-- [var refraction: Float](ciglasslozenge/refraction.md)
+### Instance Properties
+- [var point0: CGPoint](./point0.md)
+- [var point1: CGPoint](./point1.md)
+- [var radius: Float](./radius.md)
+- [var refraction: Float](./refraction.md)
 
 
 ---

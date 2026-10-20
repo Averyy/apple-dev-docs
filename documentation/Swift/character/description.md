@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance.
 
@@ -43,13 +44,14 @@ The conversion of `p` to a string in the assignment to `s` uses the `Point` type
 
 ## See Also
 
-- [var debugDescription: String](character/debugdescription.md)
+### Describing a Character
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the character, suitable for debugging.
-- [var customMirror: Mirror](character/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Character` instance.
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](character/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for the `Character` instance.
-- [func hash(into: inout Hasher)](character/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

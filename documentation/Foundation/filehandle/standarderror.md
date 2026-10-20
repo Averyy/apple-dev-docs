@@ -1,7 +1,8 @@
 # standardError
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file handle associated with the standard error file.
 
@@ -20,6 +21,10 @@ The file handle associated with the standard error file.
 class var standardError: FileHandle { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSFileHandle * fileHandleWithStandardError;
+```
+
 #### Return Value
 
 The shared file handle associated with the standard error file.
@@ -32,13 +37,15 @@ When using this method to create a file handle object, the file handle owns its 
 
 ## See Also
 
-- [convenience init(fileDescriptor: Int32)](filehandle/init(filedescriptor:).md)
+### Related Documentation
+- [convenience init(fileDescriptor: Int32)](./init%28filedescriptor%29.md)
   Creates and returns a file handle object associated with the specified file descriptor.
-- [class var standardInput: FileHandle](filehandle/standardinput.md)
+### Getting a file handle
+- [class var standardInput: FileHandle](./standardinput.md)
   The file handle associated with the standard input file.
-- [class var standardOutput: FileHandle](filehandle/standardoutput.md)
+- [class var standardOutput: FileHandle](./standardoutput.md)
   The file handle associated with the standard output file.
-- [class var nullDevice: FileHandle](filehandle/nulldevice.md)
+- [class var nullDevice: FileHandle](./nulldevice.md)
   The file handle associated with a null device.
 
 

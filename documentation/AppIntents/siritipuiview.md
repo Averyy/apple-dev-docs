@@ -1,14 +1,15 @@
 # SiriTipUIView
 
 **Framework**: App Intents  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that displays the phrase a person uses to invoke an App Shortcut.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,69 +20,70 @@ A view that displays the phrase a person uses to invoke an App Shortcut.
 
 #### Overview
 
-You must call [`setIntent(intent:)`](siritipuiview/setintent(intent:).md) before displaying the view.
+You must call [`setIntent(intent:)`](./siritipuiview/setintent%28intent%29.md) before displaying the view.
 
 ## Topics
 
 ### Creating a tip view
-- [init(style: SiriTipViewStyle)](siritipuiview/init(style:).md)
+- [init(style: SiriTipViewStyle)](./siritipuiview/init%28style%29.md)
   A view that displays the phrase for an App Shortcut.
 ### Getting the view style
-- [var style: SiriTipViewStyle](siritipuiview/style.md)
+- [var style: SiriTipViewStyle](./siritipuiview/style.md)
   The style to use for the view.
-- [struct SiriTipViewStyle](siritipviewstyle.md)
+- [struct SiriTipViewStyle](./siritipviewstyle.md)
   The styles to apply to the tip views you use to display spoken phrases.
 ### Getting the view’s configuration
-- [var allowsDismissal: Bool](siritipuiview/allowsdismissal.md)
+- [var allowsDismissal: Bool](./siritipuiview/allowsdismissal.md)
   Indicates if the tip view should display a dismissal button
-- [var isPresented: Bool](siritipuiview/ispresented.md)
+- [var isPresented: Bool](./siritipuiview/ispresented.md)
   Determines if the view should be presented to the user.
 ### Instance Properties
-- [var intrinsicContentSize: CGSize](siritipuiview/intrinsiccontentsize.md)
+- [var intrinsicContentSize: CGSize](./siritipuiview/intrinsiccontentsize.md)
 ### Instance Methods
-- [func didMoveToWindow()](siritipuiview/didmovetowindow.md)
-- [func setIntent<Intent>(intent: Intent)](siritipuiview/setintent(intent:).md)
+- [func didMoveToWindow()](./siritipuiview/didmovetowindow%28%29.md)
+- [func setIntent<Intent>(intent: Intent)](./siritipuiview/setintent%28intent%29.md)
   Sets an `AppIntent` for this view. This must be called before presenting the view.
-- [func sizeThatFits(CGSize) -> CGSize](siritipuiview/sizethatfits(_:).md)
+- [func sizeThatFits(CGSize) -> CGSize](./siritipuiview/sizethatfits%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIView](../uikit/uiview.md)
+- [UIView](../UIKit/uiview.md)
 ### Conforms To
-- [AppEntityAnnotatable](appentityannotatable.md)
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [AppEntityAnnotatable](./appentityannotatable.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [struct SiriTipView](siritipview.md)
+### Tip views
+- [struct SiriTipView](./siritipview.md)
   A SwiftUI view that displays the phrase someone uses to invoke an App Shortcut.
-- [struct SiriTipViewStyle](siritipviewstyle.md)
+- [struct SiriTipViewStyle](./siritipviewstyle.md)
   The styles to apply to the tip views you use to display spoken phrases.
 
 

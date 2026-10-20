@@ -1,7 +1,8 @@
 # TvShow.CastAndCrew
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a cast or crew member, including translations of their name.
 
@@ -10,14 +11,14 @@ Information about a cast or crew member, including translations of their name.
 
 ## Declaration
 
-```swift
+```
 object TvShow.CastAndCrew
 ```
 
 ## Topics
 
 ### Related objects
-- [object TvShow.CastAndCrew.Name](tvshow/castandcrew-data.dictionary/name-data.dictionary.md)
+- [object TvShow.CastAndCrew.Name](./castandcrew-data.dictionary/name-data.dictionary.md)
   A mapping of locale to localized names for the cast or crew member.
 
 ## Properties
@@ -29,21 +30,22 @@ object TvShow.CastAndCrew
 
 ## See Also
 
-- [object TvShow.Artworks](tvshow/artworks-data.dictionary.md)
+### Related objects
+- [object TvShow.Artworks](./artworks-data.dictionary.md)
   A mapping of locale to localized artwork.
-- [object TvShow.Description](tvshow/description-data.dictionary.md)
+- [object TvShow.Description](./description-data.dictionary.md)
   A mapping of locale to localized descriptions of the TV show.
-- [object TvShow.ExternalContentId](tvshow/externalcontentid.md)
+- [object TvShow.ExternalContentId](./externalcontentid.md)
   Information about an external content ID.
-- [object TvShow.Genre](tvshow/genre.md)
+- [object TvShow.Genre](./genre.md)
   A genre name and its structure.
-- [object TvShow.Name](tvshow/name-data.dictionary.md)
+- [object TvShow.Name](./name-data.dictionary.md)
   A mapping of locale to localized names for the TV show.
-- [object TvShow.Prices](tvshow/prices-data.dictionary.md)
+- [object TvShow.Prices](./prices-data.dictionary.md)
   A mapping of storefront to pricing information and availability.
-- [object TvShow.Rating](tvshow/rating-data.dictionary.md)
+- [object TvShow.Rating](./rating-data.dictionary.md)
   Information about a content rating.
-- [object TvShow.Url](tvshow/url-data.dictionary.md)
+- [object TvShow.Url](./url-data.dictionary.md)
   A mapping of locale to localized URLs for the content.
 
 

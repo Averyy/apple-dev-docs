@@ -1,7 +1,8 @@
 # ColorPicker
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control used to select a color from the system color picker UI.
 
@@ -25,7 +26,7 @@ The color picker shows the currently selected color and displays the larger syst
 
 By default color picker supports colors with opacity; to disable opacity support, set the `supportsOpacity` parameter to `false`. In this mode the color picker won’t show controls for adjusting the opacity of the selected color, and strips out opacity from any color set programmatically or selected from the user’s system favorites.
 
-You use `ColorPicker` by embedding it inside a view hierarchy and initializing it with a title string and a [`Binding`](binding.md) to a [`Color`](color.md):
+You use `ColorPicker` by embedding it inside a view hierarchy and initializing it with a title string and a [`Binding`](./binding.md) to a [`Color`](./color.md):
 
 ```swift
 struct FormattingControls: View {
@@ -43,15 +44,15 @@ struct FormattingControls: View {
 ## Topics
 
 ### Creating a color picker
-- [init(_:selection:supportsOpacity:)](colorpicker/init(_:selection:supportsopacity:).md)
+- [init(_:selection:supportsOpacity:)](./colorpicker/init%28_,selection,supportsopacity%29.md)
   Creates a color picker with a text label generated from a title string resource.
-- [init(selection:supportsOpacity:label:)](colorpicker/init(selection:supportsopacity:label:).md)
+- [init(selection:supportsOpacity:label:)](./colorpicker/init%28selection,supportsopacity,label%29.md)
   Creates an instance that selects a color.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

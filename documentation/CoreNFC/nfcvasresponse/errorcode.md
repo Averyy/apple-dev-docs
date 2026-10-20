@@ -1,7 +1,8 @@
 # NFCVASResponse.ErrorCode
 
 **Framework**: Core NFC  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 13.0+
@@ -14,55 +15,60 @@
 enum ErrorCode
 ```
 
+```c
+enum NFCVASErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NFCVASResponse.ErrorCode.dataNotActivated](nfcvasresponse/errorcode/datanotactivated.md)
-- [NFCVASResponse.ErrorCode.dataNotFound](nfcvasresponse/errorcode/datanotfound.md)
-- [NFCVASResponse.ErrorCode.incorrectData](nfcvasresponse/errorcode/incorrectdata.md)
-- [NFCVASResponse.ErrorCode.success](nfcvasresponse/errorcode/success.md)
-- [NFCVASResponse.ErrorCode.unsupportedApplicationVersion](nfcvasresponse/errorcode/unsupportedapplicationversion.md)
-- [NFCVASResponse.ErrorCode.userIntervention](nfcvasresponse/errorcode/userintervention.md)
-- [NFCVASResponse.ErrorCode.wrongLCField](nfcvasresponse/errorcode/wronglcfield.md)
-- [NFCVASResponse.ErrorCode.wrongParameters](nfcvasresponse/errorcode/wrongparameters.md)
+- [NFCVASResponse.ErrorCode.dataNotActivated](./errorcode/datanotactivated.md)
+- [NFCVASResponse.ErrorCode.dataNotFound](./errorcode/datanotfound.md)
+- [NFCVASResponse.ErrorCode.incorrectData](./errorcode/incorrectdata.md)
+- [NFCVASResponse.ErrorCode.success](./errorcode/success.md)
+- [NFCVASResponse.ErrorCode.unsupportedApplicationVersion](./errorcode/unsupportedapplicationversion.md)
+- [NFCVASResponse.ErrorCode.userIntervention](./errorcode/userintervention.md)
+- [NFCVASResponse.ErrorCode.wrongLCField](./errorcode/wronglcfield.md)
+- [NFCVASResponse.ErrorCode.wrongParameters](./errorcode/wrongparameters.md)
 ### Initializers
-- [init?(rawValue: Int)](nfcvasresponse/errorcode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./errorcode/init%28rawvalue%29.md)
 ### Type Properties
-- [static var VASErrorCodeDataNotActivated: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodedatanotactivated.md)
+- [static var VASErrorCodeDataNotActivated: NFCVASResponse.ErrorCode](./errorcode/vaserrorcodedatanotactivated.md)
   A constant indicating that the data isn’t activated.
-- [static var VASErrorCodeDataNotFound: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodedatanotfound.md)
+- [static var VASErrorCodeDataNotFound: NFCVASResponse.ErrorCode](./errorcode/vaserrorcodedatanotfound.md)
   A constant indicating that data wasn’t found.
-- [static var VASErrorCodeIncorrectData: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodeincorrectdata.md)
+- [static var VASErrorCodeIncorrectData: NFCVASResponse.ErrorCode](./errorcode/vaserrorcodeincorrectdata.md)
   A constant indicating that the data is incorrect.
-- [static var VASErrorCodeSuccess: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodesuccess.md)
+- [static var VASErrorCodeSuccess: NFCVASResponse.ErrorCode](./errorcode/vaserrorcodesuccess.md)
   A constant indicating that the `GET VAS DATA` command was successful.
-- [static var VASErrorCodeUnsupportedApplicationVersion: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodeunsupportedapplicationversion.md)
+- [static var VASErrorCodeUnsupportedApplicationVersion: NFCVASResponse.ErrorCode](./errorcode/vaserrorcodeunsupportedapplicationversion.md)
   A constant indicating an unsupported application version.
-- [static var VASErrorCodeUserIntervention: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodeuserintervention.md)
+- [static var VASErrorCodeUserIntervention: NFCVASResponse.ErrorCode](./errorcode/vaserrorcodeuserintervention.md)
   A constant indicating that the tag requires user intervention.
-- [static var VASErrorCodeWrongLCField: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodewronglcfield.md)
+- [static var VASErrorCodeWrongLCField: NFCVASResponse.ErrorCode](./errorcode/vaserrorcodewronglcfield.md)
   A constant indicating that the value in the Length Count field is wrong.
-- [static var VASErrorCodeWrongParameters: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodewrongparameters.md)
+- [static var VASErrorCodeWrongParameters: NFCVASResponse.ErrorCode](./errorcode/vaserrorcodewrongparameters.md)
   A constant indicating that VAS command parameters are wrong.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NFCFeliCaEncryptionId](nfcfelicaencryptionid.md)
-- [enum NFCFeliCaPollingRequestCode](nfcfelicapollingrequestcode.md)
-- [enum NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot.md)
-- [struct NFCISO15693RequestFlag](nfciso15693requestflag.md)
-- [struct NFCISO15693ResponseFlag](nfciso15693responseflag.md)
-- [NFCVASCommandConfiguration.Mode](nfcvascommandconfiguration/mode-swift.enum.md)
+### Enumerations
+- [enum NFCFeliCaEncryptionId](../nfcfelicaencryptionid.md)
+- [enum NFCFeliCaPollingRequestCode](../nfcfelicapollingrequestcode.md)
+- [enum NFCFeliCaPollingTimeSlot](../nfcfelicapollingtimeslot.md)
+- [struct NFCISO15693RequestFlag](../nfciso15693requestflag.md)
+- [struct NFCISO15693ResponseFlag](../nfciso15693responseflag.md)
+- [NFCVASCommandConfiguration.Mode](../nfcvascommandconfiguration/mode-swift.enum.md)
 
 
 ---

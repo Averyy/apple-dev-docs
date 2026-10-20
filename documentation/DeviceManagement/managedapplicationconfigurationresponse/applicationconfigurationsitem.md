@@ -1,7 +1,8 @@
 # ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains a managed app’s configurations item.
 
@@ -16,24 +17,27 @@ A dictionary that contains a managed app’s configurations item.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem
 ```
 
 ## Topics
 
 ### Objects
-- [object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration](managedapplicationconfigurationresponse/applicationconfigurationsitem/configuration-data.dictionary.md)
+- [object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration](./applicationconfigurationsitem/configuration-data.dictionary.md)
   A dictionary that contains a managed app’s configuration items.
 
 ## Properties
 
 - `Configuration` (ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration): The app’s configurations.
-- `Identifier` (string) *(required)*: The app’s bundle identifier. > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with.
+- `Identifier` (string) *(required)*: The app’s bundle identifier.
+
+  > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with.
 
 ## See Also
 
-- [object ManagedApplicationConfigurationResponse.ErrorChainItem](managedapplicationconfigurationresponse/errorchainitem.md)
+### Objects
+- [object ManagedApplicationConfigurationResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
 
 

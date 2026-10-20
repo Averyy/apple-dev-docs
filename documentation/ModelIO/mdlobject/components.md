@@ -1,7 +1,8 @@
 # components
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 9.0+
@@ -17,13 +18,18 @@
 var components: [any MDLComponent] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<id<MDLComponent>> * components;
+```
+
 ## See Also
 
-- [var hidden: Bool](mdlobject/hidden.md)
+### Managing Rendering Intent
+- [var hidden: Bool](./hidden.md)
   A Boolean value indicating whether this object should be used in rendering.
-- [var instance: MDLObject?](mdlobject/instance.md)
+- [var instance: MDLObject?](./instance.md)
   The primary object, if applicable, of which this object is an instance.
-- [var path: String](mdlobject/path.md)
+- [var path: String](./path.md)
   A path that identifies the object in an asset’s object hierarchy using object names.
 
 

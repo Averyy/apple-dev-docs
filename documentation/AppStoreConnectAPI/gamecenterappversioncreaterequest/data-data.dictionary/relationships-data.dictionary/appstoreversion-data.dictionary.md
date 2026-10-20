@@ -1,21 +1,22 @@
 # GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion.Data](gamecenterappversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion.Data](./appstoreversion-data.dictionary/data-data.dictionary.md)
   The request body you use to create a Game Center app version.
 
 ## Properties

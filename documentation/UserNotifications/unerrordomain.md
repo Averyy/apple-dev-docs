@@ -1,7 +1,8 @@
 # UNErrorDomain
 
 **Framework**: User Notifications  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for notifications.
 
@@ -20,11 +21,16 @@ The error domain for notifications.
 let UNErrorDomain: String
 ```
 
+```c
+extern NSString * const UNErrorDomain;
+```
+
 ## See Also
 
-- [struct UNError](unerror.md)
+### Handling errors
+- [struct UNError](./unerror.md)
   An object that represents a notification error.
-- [UNError.Code](unerror/code.md)
+- [UNError.Code](./unerror/code.md)
   Constants that identify notification errors.
 
 

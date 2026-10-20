@@ -1,6 +1,7 @@
 # Writing code with intelligence in Xcode
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Start conversations with an agent or model in Xcode to generate code, navigate unfamiliar codebases, and fix or refactor existing code.
 
@@ -8,22 +9,22 @@ Start conversations with an agent or model in Xcode to generate code, navigate u
 
 Open the coding assistant, enter your prompts, and see the results in the transcript and artifacts panes. Undo changes or roll them back using the conversation history. Then organize your conversations with an agent or chat model by feature or approach using the conversation sidebar.
 
-To set up an agent or chat provider in Intelligence settings before you begin, see [`Setting up coding intelligence`](setting-up-coding-intelligence.md).
+To set up an agent or chat provider in Intelligence settings before you begin, see [Setting up coding intelligence](./setting-up-coding-intelligence.md).
 
-#### Start Conversations with an Agent or Model
+#### Start conversations with an agent or model
 
 After you enable one or more agents and chat models, you can start conversations in different places in your project where it’s most convenient for you.
 
 - To start a conversation with a specific agent or model, click the Coding Assistant button or press Command-0. Then click New Conversation in the conversation sidebar, and choose an agent under Agents or a model under Chat in the pop-up menu.
 - To start a conversation from anywhere in your project using the current agent or model, click the New Conversation button in the project window toolbar.
 
-![A screenshot that shows the Coding Assistant button selected, the conversation list in the sidebar, an agent chosen from the New Conversation pop-up menu in the toolbar, and a file open in the source editor on the right.](/images/com.apple.Xcode/coding-assistant-start-conversation@2x.png)
+![A screenshot that shows the Coding Assistant button selected, the conversation list in the sidebar, an agent chosen from the New Conversation pop-up menu in the toolbar, and a file open in the source editor on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/coding-assistant-start-conversation@2x.png)
 
 Xcode adds a New Conversation to the list in the conversation sidebar and shows the transcript on the right with a message text field at the bottom. The placeholder text shows the current agent or model that Xcode is using. To switch the agent or model, press Command-0 and choose another from the New Conversation pop-up menu.
 
-To show or hide the conversation sidebar from anywhere in your project, click the Coding Assistant button. To start conversations in the source editor, see [`Using coding intelligence in the source editor`](using-coding-intelligence-in-the-source-editor.md).
+To show or hide the conversation sidebar from anywhere in your project, click the Coding Assistant button. To start conversations in the source editor, see [Using coding intelligence in the source editor](./using-coding-intelligence-in-the-source-editor.md).
 
-#### Enter Prompts in the Message Text Field
+#### Enter prompts in the message text field
 
 Enter your prompts in the message text field at the bottom of the transcript or click one of the suggested prompts. If you start a new conversation, Xcode changes the name of the conversation to the first prompt that you enter.
 
@@ -34,7 +35,7 @@ Although Xcode automatically gathers relevant context based on your prompt and t
 - To reference specific symbols and files in your project, type the `@` character and choose a symbol or file.
 - To add files for context, inside and outside your project, choose “Add context from project” or “Upload files” from the Attachments pop-up menu in the lower-left corner.
 
-![A screenshot that shows the Project navigator in the sidebar, a New Conversation transcript in the editor area. There’s an at-character in the message text field, and a completion menu shows suggested symbols and filenames the person can use.](/images/com.apple.Xcode/coding-assistant-enter-symbols@2x.png)
+![A screenshot that shows the Project navigator in the sidebar, a New Conversation transcript in the editor area. There’s an at-character in the message text field, and a completion menu shows suggested symbols and filenames the person can use.](https://developer.apple.com/tutorials/images/com.apple.Xcode/coding-assistant-enter-symbols@2x.png)
 
 Use other buttons in the message text field to manage a request:
 
@@ -44,13 +45,13 @@ Use other buttons in the message text field to manage a request:
 
 If you use a chat product, a Project Context button appears in the lower-left corner of the message text field and is on by default. This allows Xcode to share relevant code and other context from your project with the model. To narrow the scope of the project files, you can turn off the automatic search feature and add explicit references to files and symbols in your prompt instead.
 
-#### Review Responses in the Transcript
+#### Review responses in the transcript
 
 When you submit a prompt, Xcode appends it to the transcript above the message text field and the Assistant Activity button in the project window toolbar starts spinning. You can watch the progress in the transcript or do other tasks in the project window while you wait. When a response finishes, the Assistant Activity button stops spinning and Xcode stops updating the transcript. To quickly jump to the transcript from anywhere in your project, click the Assistant Activity button.
 
 Review the response in the transcript, because it may contain content that you can interact with. For example, if a response references a filename, click the arrow button next to the filename to open it in the source editor where Xcode uses multicolor change bars to highlight any changes to your code.
 
-![A screenshot that shows the conversation sidebar on the left, a transcript showing a response in the middle, and a changes to a file in the artifacts pane on the right.](/images/com.apple.Xcode/coding-assistant-write-code@2x.png)
+![A screenshot that shows the conversation sidebar on the left, a transcript showing a response in the middle, and a changes to a file in the artifacts pane on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/coding-assistant-write-code@2x.png)
 
 At the end of the transcript, Xcode may ask you follow-up questions or suggest next steps. You can either answer the questions or enter a new prompt in the same thread. Xcode appends all your prompts, dialogs, and responses to the transcript so that you have a complete record of your conversation. To start a new conversation with a fresh transcript, click the New Conversation button in the toolbar.
 
@@ -58,9 +59,9 @@ If you use an agent, Xcode may iterate on a response, build your app to verify t
 
 To navigate quickly between conversations, use the jump bar in the toolbar or select the conversation in the sidebar. To show or hide the transcript, choose Show Transcript from the filter button pop-up menu.
 
-For more information on giving agents more tools, including managing permissions you grant in the transcript, see [`Extending and customizing agents`](extending-and-customizing-agents.md).
+For more information on giving agents more tools, including managing permissions you grant in the transcript, see [Extending and customizing agents](./extending-and-customizing-agents.md).
 
-#### View Project Changes in the Artifacts Pane
+#### View project changes in the artifacts pane
 
 Any changes that Xcode makes to your project files using intelligence appear in the artifacts pane on the right or below the transcript.
 
@@ -70,17 +71,17 @@ To add annotations to the code where you want to make edits, hover the pointer o
 
 To jump to a file in the source editor from the artifacts pane, double-click the filename, or to show or hide the artifacts pane, choose Show Artifacts from the filter button pop-up menu.
 
-#### Apply Changes to Your Code When You Are Ready
+#### Apply changes to your code when you are ready
 
 If you use an agent, you can enter plan mode to iterate on a software design and approve it before Xcode modifies any code.
 
 If you use a chat product, you control whether Xcode modifies your project in the message text field before you submit a prompt. If you turn the “Automatically apply code changes” button off, Xcode proposes changes to your code instead of applying them and labels them as “Proposal” in the transcript. The response may contain proposed code that you can selectively apply or paste into your files.
 
-![A screenshot that shows the conversation sidebar on the left and a transcript on the right containing a proposed change in a response.](/images/com.apple.Xcode/coding-assistant-propose-code@2x.png)
+![A screenshot that shows the conversation sidebar on the left and a transcript on the right containing a proposed change in a response.](https://developer.apple.com/tutorials/images/com.apple.Xcode/coding-assistant-propose-code@2x.png)
 
 To apply a proposed change, click the code snippet in the response and click Apply in the dialog that appears. If the change adds a new file, click Create New File in the dialog.
 
-#### Roll Back Changes Using the Conversation History
+#### Roll back changes using the conversation history
 
 Use the conversation history that Xcode maintains to rollback changes to a known state of your project, or to review changes across multiple files in your project.
 
@@ -88,7 +89,7 @@ To roll back changes in a conversation by prompt, choose the conversation in the
 
 Move the slider from the bottom to the top to unwind changes in the order that you made them. Move the slider up to remove changes and move the slider down to add changes in the next prompt. To update your project files to the current state of the slider, click the Restore button; otherwise, click Cancel.
 
-![A screenshot that shows the conversation sidebar on the left, the History view in the middle with the slider on the right, and the Cancel and Restore buttons below. The changes for the current state are in the artifacts pane on the right.](/images/com.apple.Xcode/coding-assistant-history-view@2x.png)
+![A screenshot that shows the conversation sidebar on the left, the History view in the middle with the slider on the right, and the Cancel and Restore buttons below. The changes for the current state are in the artifacts pane on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/coding-assistant-history-view@2x.png)
 
 Xcode keeps all the edits in the conversation history in case you decide to reapply changes from subsequent prompts later.
 
@@ -96,7 +97,7 @@ To hide the conversation history, choose Dismiss History from the More button in
 
 > **Note**: To use the History feature, your project must have a Git repository. If you don’t have a repository, click the Create Repository button that appears when you click the History button.
 
-#### Organize Conversations Into Groups
+#### Organize conversations into groups
 
 To find the conversations that you have with agents and chat models more easily, rename them appropriately and organize them into groups. For example, you can create a new conversation for each part of a feature you’re working on and create a group for each feature of your app.
 
@@ -118,11 +119,13 @@ To explore more conversation and group actions, Control-click a conversation or 
 
 ## See Also
 
-- [Localizing your app using agents](localizing-your-app-using-agents.md)
+### Related Documentation
+- [Localizing your app using agents](./localizing-your-app-using-agents.md)
   Use agentic coding tools to translate the strings in your app into multiple languages and regions.
-- [Setting up coding intelligence](setting-up-coding-intelligence.md)
+### Essentials
+- [Setting up coding intelligence](./setting-up-coding-intelligence.md)
   Enable intelligence tools that you want to use in Xcode.
-- [Using coding intelligence in the source editor](using-coding-intelligence-in-the-source-editor.md)
+- [Using coding intelligence in the source editor](./using-coding-intelligence-in-the-source-editor.md)
   Submit prompts in the same place you want to make changes to your code.
 
 

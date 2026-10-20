@@ -1,6 +1,7 @@
 # Default Literal Types
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 Type aliases representing the concrete type that a literal takes when no other type information is provided.
 
@@ -18,18 +19,18 @@ When a literal expression is written with no type information, Swift uses these 
 ## Topics
 
 ### Basic Values
-- [typealias BooleanLiteralType](booleanliteraltype.md)
+- [typealias BooleanLiteralType](./booleanliteraltype.md)
   The default type for an otherwise-unconstrained Boolean literal.
-- [typealias IntegerLiteralType](integerliteraltype.md)
+- [typealias IntegerLiteralType](./integerliteraltype.md)
   The default type for an otherwise-unconstrained integer literal.
-- [typealias FloatLiteralType](floatliteraltype.md)
+- [typealias FloatLiteralType](./floatliteraltype.md)
   The default type for an otherwise-unconstrained floating-point literal.
 ### Strings and Text
-- [typealias StringLiteralType](stringliteraltype.md)
+- [typealias StringLiteralType](./stringliteraltype.md)
   The default type for an otherwise-unconstrained string literal.
-- [typealias ExtendedGraphemeClusterType](extendedgraphemeclustertype.md)
+- [typealias ExtendedGraphemeClusterType](./extendedgraphemeclustertype.md)
   The default type for an otherwise-unconstrained Unicode extended grapheme cluster literal.
-- [typealias UnicodeScalarType](unicodescalartype.md)
+- [typealias UnicodeScalarType](./unicodescalartype.md)
   The default type for an otherwise-unconstrained unicode scalar literal.
 
 

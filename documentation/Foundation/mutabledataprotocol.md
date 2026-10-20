@@ -1,7 +1,8 @@
 # MutableDataProtocol
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous mutable data buffers.
 
@@ -23,29 +24,30 @@ protocol MutableDataProtocol : DataProtocol, MutableCollection, RangeReplaceable
 ## Topics
 
 ### Resetting Backing Storage
-- [func resetBytes<R>(in: R)](mutabledataprotocol/resetbytes(in:).md)
+- [func resetBytes<R>(in: R)](./mutabledataprotocol/resetbytes%28in%29.md)
   Replaces the contents of the data buffer with zeros for the provided range.
 
 ## Relationships
 
 ### Inherits From
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [DataProtocol](dataprotocol.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [RangeReplaceableCollection](../swift/rangereplaceablecollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [DataProtocol](./dataprotocol.md)
+- [MutableCollection](../Swift/mutablecollection.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [RangeReplaceableCollection](../Swift/rangereplaceablecollection.md)
+- [Sequence](../Swift/sequence.md)
 ### Conforming Types
-- [Data](data.md)
+- [Data](./data.md)
 
 ## See Also
 
-- [struct Data](data.md)
+### Binary Data
+- [struct Data](./data.md)
   A byte buffer in memory.
-- [protocol DataProtocol](dataprotocol.md)
+- [protocol DataProtocol](./dataprotocol.md)
   A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous data buffers.
-- [protocol ContiguousBytes](contiguousbytes.md)
+- [protocol ContiguousBytes](./contiguousbytes.md)
   A protocol that declares the type offers direct access to the underlying raw bytes in a contiguous manner.
 
 

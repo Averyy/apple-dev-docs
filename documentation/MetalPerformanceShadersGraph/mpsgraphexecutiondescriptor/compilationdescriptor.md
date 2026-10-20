@@ -1,7 +1,8 @@
 # compilationDescriptor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compilation descriptor for the graph.
 
@@ -18,6 +19,10 @@ The compilation descriptor for the graph.
 ```swift
 @NSCopying
 var compilationDescriptor: MPSGraphCompilationDescriptor? { get set }
+```
+
+```objc
+@property (atomic, copy, readwrite, nullable) MPSGraphCompilationDescriptor * compilationDescriptor;
 ```
 
 #### Discussion

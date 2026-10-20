@@ -1,7 +1,8 @@
 # setTexture(_:at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds a Metal texture to a parameter at the given index.
 

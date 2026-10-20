@@ -1,7 +1,8 @@
 # WordPair
 
 **Framework**: Synchronization  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A pair of two word sized `UInt`s.
 
@@ -50,44 +51,45 @@ extension GridPoint: AtomicRepresentable {
 ## Topics
 
 ### Initializers
-- [init(first: UInt, second: UInt)](wordpair/init(first:second:).md)
+- [init(first: UInt, second: UInt)](./wordpair/init%28first,second%29.md)
   Initialize a new `WordPair` value given both individual words.
 ### Instance Properties
-- [var first: UInt](wordpair/first.md)
+- [var first: UInt](./wordpair/first.md)
   The first element in this word pair.
-- [var second: UInt](wordpair/second.md)
+- [var second: UInt](./wordpair/second.md)
   The second element in this word pair.
 ### Default Implementations
-- [AtomicRepresentable Implementations](wordpair/atomicrepresentable-implementations.md)
-- [CustomDebugStringConvertible Implementations](wordpair/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](wordpair/customstringconvertible-implementations.md)
-- [Equatable Implementations](wordpair/equatable-implementations.md)
-- [Hashable Implementations](wordpair/hashable-implementations.md)
+- [AtomicRepresentable Implementations](./wordpair/atomicrepresentable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./wordpair/customdebugstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./wordpair/customstringconvertible-implementations.md)
+- [Equatable Implementations](./wordpair/equatable-implementations.md)
+- [Hashable Implementations](./wordpair/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AtomicRepresentable](atomicrepresentable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AtomicRepresentable](./atomicrepresentable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Comparable](../Swift/comparable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Atomic](atomic.md)
+### Atomic Values
+- [struct Atomic](./atomic.md)
   An atomic value.
-- [struct AtomicLazyReference](atomiclazyreference.md)
+- [struct AtomicLazyReference](./atomiclazyreference.md)
   A lazily initializable atomic strong reference.
-- [protocol AtomicRepresentable](atomicrepresentable.md)
+- [protocol AtomicRepresentable](./atomicrepresentable.md)
   A type that supports atomic operations through a separate atomic storage representation.
-- [protocol AtomicOptionalRepresentable](atomicoptionalrepresentable.md)
+- [protocol AtomicOptionalRepresentable](./atomicoptionalrepresentable.md)
   An atomic value that also supports atomic operations when wrapped in an `Optional`. Atomic optional representable types come with a standalone atomic representation for their optional-wrapped variants.
 
 

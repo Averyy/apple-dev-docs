@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOCatalogModuleTerminate](1646396-anonymous/kiocatalogmoduleterminate.md)
-- [kIOCatalogModuleUnload](1646396-anonymous/kiocatalogmoduleunload.md)
-- [kIOCatalogServiceTerminate](1646396-anonymous/kiocatalogserviceterminate.md)
+- [kIOCatalogModuleTerminate](./api-1646396-anonymous/kiocatalogmoduleterminate.md)
+- [kIOCatalogModuleUnload](./api-1646396-anonymous/kiocatalogmoduleunload.md)
+- [kIOCatalogServiceTerminate](./api-1646396-anonymous/kiocatalogserviceterminate.md)
 
 
 ---

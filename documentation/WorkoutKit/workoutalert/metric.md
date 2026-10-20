@@ -2,6 +2,7 @@
 
 **Framework**: WorkoutKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The metric used to measure performance for the alert.
@@ -21,7 +22,8 @@ var metric: WorkoutAlertMetric { get }
 
 ## See Also
 
-- [enum WorkoutAlertMetric](workoutalertmetric.md)
+### Setting the alert metric
+- [enum WorkoutAlertMetric](../workoutalertmetric.md)
   A value that specifies the type of metric used to measure performance.
 
 

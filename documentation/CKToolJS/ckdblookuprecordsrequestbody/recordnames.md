@@ -1,7 +1,8 @@
 # recordNames
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of record names
 
@@ -10,7 +11,7 @@ The array of record names
 
 ## Declaration
 
-```swift
+```
 attribute string[] recordNames;
 ```
 

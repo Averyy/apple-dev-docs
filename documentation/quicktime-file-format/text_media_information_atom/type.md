@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
@@ -11,9 +12,10 @@ This field must be set to `'text'`.
 
 ## See Also
 
-- [Size](text_media_information_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this text media information atom.
-- [Matrix structure](text_media_information_atom/matrix_structure.md)
+- [Matrix structure](./matrix_structure.md)
   A matrix structure associated with this text media.
 
 

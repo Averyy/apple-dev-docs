@@ -1,7 +1,8 @@
 # ReviewSubmissionItemsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing the resource identifiers of items included in a review submission.
 
@@ -10,14 +11,14 @@ A response containing the resource identifiers of items included in a review sub
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItemsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object ReviewSubmissionItemsLinkagesResponse.Data](reviewsubmissionitemslinkagesresponse/data-data.dictionary.md)
+- [object ReviewSubmissionItemsLinkagesResponse.Data](./reviewsubmissionitemslinkagesresponse/data-data.dictionary.md)
   The data element of the response body.
 
 ## Properties
@@ -28,33 +29,35 @@ object ReviewSubmissionItemsLinkagesResponse
 
 ## See Also
 
-- [object ReviewSubmission](reviewsubmission.md)
+### Related Documentation
+- [object ReviewSubmission](./reviewsubmission.md)
   A formal submission to App Store review grouping one or more items — app versions, In-App Purchases, or events — for simultaneous review.
-- [object ReviewSubmissionItem](reviewsubmissionitem.md)
+- [object ReviewSubmissionItem](./reviewsubmissionitem.md)
   An individual reviewable item — such as an app version, In-App Purchase, or App Clip — included in a review submission.
-- [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
+- [object ReviewSubmissionUpdateRequest](./reviewsubmissionupdaterequest.md)
   The request body you use to update a review submission update request.
-- [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
+- [object ReviewSubmissionCreateRequest](./reviewsubmissioncreaterequest.md)
   The request body for creating a review submission for an App Store version or associated items.
-- [object ReviewSubmissionResponse](reviewsubmissionresponse.md)
+- [object ReviewSubmissionResponse](./reviewsubmissionresponse.md)
   The response body for endpoints that create, read, or modify a single review submission.
-- [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
+- [object ReviewSubmissionsResponse](./reviewsubmissionsresponse.md)
   The response body for endpoints that list review submissions for an app.
-- [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
+- [object AppReviewSubmissionsLinkagesResponse](./appreviewsubmissionslinkagesresponse.md)
   A response containing the resource identifiers of review submissions associated with an app.
-- [object ReviewSubmission](reviewsubmission.md)
+### Objects
+- [object ReviewSubmission](./reviewsubmission.md)
   A formal submission to App Store review grouping one or more items — app versions, In-App Purchases, or events — for simultaneous review.
-- [object ReviewSubmissionItem](reviewsubmissionitem.md)
+- [object ReviewSubmissionItem](./reviewsubmissionitem.md)
   An individual reviewable item — such as an app version, In-App Purchase, or App Clip — included in a review submission.
-- [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
+- [object ReviewSubmissionUpdateRequest](./reviewsubmissionupdaterequest.md)
   The request body you use to update a review submission update request.
-- [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
+- [object ReviewSubmissionCreateRequest](./reviewsubmissioncreaterequest.md)
   The request body for creating a review submission for an App Store version or associated items.
-- [object ReviewSubmissionResponse](reviewsubmissionresponse.md)
+- [object ReviewSubmissionResponse](./reviewsubmissionresponse.md)
   The response body for endpoints that create, read, or modify a single review submission.
-- [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
+- [object ReviewSubmissionsResponse](./reviewsubmissionsresponse.md)
   The response body for endpoints that list review submissions for an app.
-- [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
+- [object AppReviewSubmissionsLinkagesResponse](./appreviewsubmissionslinkagesresponse.md)
   A response containing the resource identifiers of review submissions associated with an app.
 
 

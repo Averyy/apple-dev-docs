@@ -1,7 +1,8 @@
 # EnableRemoteDesktopCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to enable Remote Desktop on a device.
 
@@ -10,14 +11,14 @@ The command to enable Remote Desktop on a device.
 
 ## Declaration
 
-```swift
+```
 object EnableRemoteDesktopCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object EnableRemoteDesktopCommand.Command](enableremotedesktopcommand/command-data.dictionary.md)
+- [object EnableRemoteDesktopCommand.Command](./enableremotedesktopcommand/command-data.dictionary.md)
   The command to enable Remote Desktop on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object EnableRemoteDesktopCommand
 
 ## See Also
 
-- [object EnableRemoteDesktopResponse](enableremotedesktopresponse.md)
+### Commands and responses
+- [object EnableRemoteDesktopResponse](./enableremotedesktopresponse.md)
   A response from the device after it processes the command to enable Remote Desktop on a device.
 
 

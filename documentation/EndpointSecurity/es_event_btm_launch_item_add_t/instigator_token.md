@@ -1,16 +1,21 @@
 # instigator_token
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var instigator_token: UnsafeMutablePointer<audit_token_t>?
+```
+
+```c
+audit_token_t * instigator_token;
 ```
 
 

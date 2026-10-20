@@ -1,7 +1,8 @@
 # IOUSBHostCIPortStatusPowered
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,18 +14,23 @@
 var IOUSBHostCIPortStatusPowered: Int { get }
 ```
 
+```c
+IOUSBHostCIPortStatusPowered
+```
+
 ## See Also
 
-- [var IOUSBHostCIPortStatusChangeMask: Int](iousbhostciportstatuschangemask.md)
-- [var IOUSBHostCIPortStatusConnectChange: Int](iousbhostciportstatusconnectchange.md)
-- [var IOUSBHostCIPortStatusConnected: Int](iousbhostciportstatusconnected.md)
-- [var IOUSBHostCIPortStatusLinkState: Int](iousbhostciportstatuslinkstate.md)
-- [var IOUSBHostCIPortStatusLinkStateChange: Int](iousbhostciportstatuslinkstatechange.md)
-- [var IOUSBHostCIPortStatusLinkStatePhase: Int](iousbhostciportstatuslinkstatephase.md)
-- [var IOUSBHostCIPortStatusOvercurrent: Int](iousbhostciportstatusovercurrent.md)
-- [var IOUSBHostCIPortStatusOvercurrentChange: Int](iousbhostciportstatusovercurrentchange.md)
-- [var IOUSBHostCIPortStatusSpeed: Int](iousbhostciportstatusspeed.md)
-- [var IOUSBHostCIPortStatusSpeedPhase: Int](iousbhostciportstatusspeedphase.md)
+### Constants
+- [var IOUSBHostCIPortStatusChangeMask: Int](./iousbhostciportstatuschangemask.md)
+- [var IOUSBHostCIPortStatusConnectChange: Int](./iousbhostciportstatusconnectchange.md)
+- [var IOUSBHostCIPortStatusConnected: Int](./iousbhostciportstatusconnected.md)
+- [var IOUSBHostCIPortStatusLinkState: Int](./iousbhostciportstatuslinkstate.md)
+- [var IOUSBHostCIPortStatusLinkStateChange: Int](./iousbhostciportstatuslinkstatechange.md)
+- [var IOUSBHostCIPortStatusLinkStatePhase: Int](./iousbhostciportstatuslinkstatephase.md)
+- [var IOUSBHostCIPortStatusOvercurrent: Int](./iousbhostciportstatusovercurrent.md)
+- [var IOUSBHostCIPortStatusOvercurrentChange: Int](./iousbhostciportstatusovercurrentchange.md)
+- [var IOUSBHostCIPortStatusSpeed: Int](./iousbhostciportstatusspeed.md)
+- [var IOUSBHostCIPortStatusSpeedPhase: Int](./iousbhostciportstatusspeedphase.md)
 
 
 ---

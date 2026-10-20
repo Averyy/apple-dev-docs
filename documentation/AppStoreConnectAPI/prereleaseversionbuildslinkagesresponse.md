@@ -1,21 +1,22 @@
 # PrereleaseVersionBuildsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object PrereleaseVersionBuildsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object PrereleaseVersionBuildsLinkagesResponse.Data](prereleaseversionbuildslinkagesresponse/data-data.dictionary.md)
+- [object PrereleaseVersionBuildsLinkagesResponse.Data](./prereleaseversionbuildslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,18 +26,19 @@ object PrereleaseVersionBuildsLinkagesResponse
 
 ## See Also
 
-- [object PrereleaseVersion](prereleaseversion.md)
+### Objects
+- [object PrereleaseVersion](./prereleaseversion.md)
   A pre-release version associated with a build, representing a development or beta software version before App Store submission.
-- [object PrereleaseVersionResponse](prereleaseversionresponse.md)
+- [object PrereleaseVersionResponse](./prereleaseversionresponse.md)
   The response body for endpoints that read a single prerelease version of an app.
-- [object PreReleaseVersionsResponse](prereleaseversionsresponse.md)
+- [object PreReleaseVersionsResponse](./prereleaseversionsresponse.md)
   A response containing a list of pre-release versions for an app.
-- [object PrereleaseVersionWithoutIncludesResponse](prereleaseversionwithoutincludesresponse.md)
+- [object PrereleaseVersionWithoutIncludesResponse](./prereleaseversionwithoutincludesresponse.md)
   A response containing a single pre-release version, without related resources.
-- [object PreReleaseVersionsWithoutIncludesResponse](prereleaseversionswithoutincludesresponse.md)
+- [object PreReleaseVersionsWithoutIncludesResponse](./prereleaseversionswithoutincludesresponse.md)
   A response containing a list of pre-release versions, without related resources.
-- [object AppPreReleaseVersionsLinkagesResponse](appprereleaseversionslinkagesresponse.md)
-- [object PrereleaseVersionAppLinkageResponse](prereleaseversionapplinkageresponse.md)
+- [object AppPreReleaseVersionsLinkagesResponse](./appprereleaseversionslinkagesresponse.md)
+- [object PrereleaseVersionAppLinkageResponse](./prereleaseversionapplinkageresponse.md)
 
 
 ---

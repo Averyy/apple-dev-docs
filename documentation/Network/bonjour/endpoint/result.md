@@ -1,7 +1,8 @@
 # result
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A snapshot of the endpoint at some point in time on the network.
 

@@ -1,7 +1,8 @@
 # RectangleObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the four vertices of a detected rectangle.
 
@@ -23,29 +24,29 @@ struct RectangleObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNRectangleObservation)](rectangleobservation/init(_:).md)
+- [init(VNRectangleObservation)](./rectangleobservation/init%28_%29.md)
   Creates a rectangle observation.
-- [init(topLeft: NormalizedPoint, topRight: NormalizedPoint, bottomRight: NormalizedPoint, bottomLeft: NormalizedPoint)](rectangleobservation/init(topleft:topright:bottomright:bottomleft:).md)
+- [init(topLeft: NormalizedPoint, topRight: NormalizedPoint, bottomRight: NormalizedPoint, bottomLeft: NormalizedPoint)](./rectangleobservation/init%28topleft,topright,bottomright,bottomleft%29.md)
   Creates a rectangle observation from its corner points.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [QuadrilateralProviding](quadrilateralproviding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [QuadrilateralProviding](./quadrilateralproviding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

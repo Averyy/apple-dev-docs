@@ -1,17 +1,22 @@
 # tile()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Lays out the components of the receiver: the content view, the scrollers, and the ruler views.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func tile()
+```
+
+```objc
+- (void) tile;
 ```
 
 #### Discussion

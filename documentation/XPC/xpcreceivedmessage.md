@@ -1,7 +1,8 @@
 # XPCReceivedMessage
 
 **Framework**: XPC  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a message sent between a session and a listener.
 
@@ -11,7 +12,7 @@ A type that represents a message sent between a session and a listener.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,37 +23,38 @@ struct XPCReceivedMessage
 
 ## Mentions
 
-- [Creating XPC services](creating-xpc-services.md)
+- [Creating XPC services](./creating-xpc-services.md)
 
 ## Topics
 
 ### Accessing message content
-- [func decode<T>(as: T.Type) throws -> T](xpcreceivedmessage/decode(as:).md)
+- [func decode<T>(as: T.Type) throws -> T](./xpcreceivedmessage/decode%28as%29.md)
   Decodes a message as the given type.
-- [var isSync: Bool](xpcreceivedmessage/issync.md)
+- [var isSync: Bool](./xpcreceivedmessage/issync.md)
   A Boolean value that indicates if this message is from a synchronous request.
 ### Replying to messages
-- [var expectsReply: Bool](xpcreceivedmessage/expectsreply.md)
+- [var expectsReply: Bool](./xpcreceivedmessage/expectsreply.md)
   A Boolean value that indicates if the client that sent the message expects a reply.
-- [func reply<Message>(Message)](xpcreceivedmessage/reply(_:).md)
+- [func reply<Message>(Message)](./xpcreceivedmessage/reply%28_%29.md)
   Sends a reply to the originator of the message.
-- [func handoffReply(to: DispatchQueue, () -> Void) -> (any Encodable)?](xpcreceivedmessage/handoffreply(to:_:).md)
+- [func handoffReply(to: DispatchQueue, () -> Void) -> (any Encodable)?](./xpcreceivedmessage/handoffreply%28to,_%29.md)
   Informs the system when message processing and response continues in a separate dispatch queue.
 ### Instance Methods
-- [func senderSatisfies(XPCPeerRequirement) -> Bool](xpcreceivedmessage/sendersatisfies(_:).md)
+- [func senderSatisfies(XPCPeerRequirement) -> Bool](./xpcreceivedmessage/sendersatisfies%28_%29.md)
   Check whether the sender of the received message satisfies the specified requirement.
 
 ## See Also
 
-- [Creating XPC services](creating-xpc-services.md)
+### Interprocess communication
+- [Creating XPC services](./creating-xpc-services.md)
   Configure a listener, establish a client session, and exchange messages between processes.
-- [class XPCListener](xpclistener.md)
+- [class XPCListener](./xpclistener.md)
   A type that performs tasks for clients across process boundaries.
-- [class XPCSession](xpcsession.md)
+- [class XPCSession](./xpcsession.md)
   A type that sends messages to a server process.
-- [typealias xpc_listener_t](xpc_listener_t.md)
+- [typealias xpc_listener_t](./xpc_listener_t.md)
   A C type that performs tasks for clients across process boundaries.
-- [typealias xpc_session_t](xpc_session_t-10if0.md)
+- [typealias xpc_session_t](./xpc_session_t-10if0.md)
   A C type that sends messages to a server process.
 
 

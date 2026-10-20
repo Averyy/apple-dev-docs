@@ -1,14 +1,15 @@
 # nfstype
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum nfstype : unsigned int {
     ...
 } nfstype;
@@ -17,16 +18,16 @@ typedef enum nfstype : unsigned int {
 ## Topics
 
 ### Constants
-- [NFATTRDIR](nfstype/nfattrdir.md)
-- [NFBLK](nfstype/nfblk.md)
-- [NFCHR](nfstype/nfchr.md)
-- [NFDIR](nfstype/nfdir.md)
-- [NFFIFO](nfstype/nffifo.md)
-- [NFLNK](nfstype/nflnk.md)
-- [NFNAMEDATTR](nfstype/nfnamedattr.md)
-- [NFNON](nfstype/nfnon.md)
-- [NFREG](nfstype/nfreg.md)
-- [NFSOCK](nfstype/nfsock.md)
+- [NFATTRDIR](./nfstype/nfattrdir.md)
+- [NFBLK](./nfstype/nfblk.md)
+- [NFCHR](./nfstype/nfchr.md)
+- [NFDIR](./nfstype/nfdir.md)
+- [NFFIFO](./nfstype/nffifo.md)
+- [NFLNK](./nfstype/nflnk.md)
+- [NFNAMEDATTR](./nfstype/nfnamedattr.md)
+- [NFNON](./nfstype/nfnon.md)
+- [NFREG](./nfstype/nfreg.md)
+- [NFSOCK](./nfstype/nfsock.md)
 
 
 ---

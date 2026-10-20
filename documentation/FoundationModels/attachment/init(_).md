@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment from data content.
 
@@ -18,6 +19,8 @@ Creates an attachment from data content.
 ```swift
 init(_ content: Content)
 ```
+
+Available when `Content` conforms to `DataAttachmentRepresentable`.
 
 ## Parameters
 

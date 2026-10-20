@@ -1,7 +1,8 @@
 # ManagedAppDistributionError.licenseNotFound
 
 **Framework**: ManagedAppDistribution  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that a license wasn’t found for requested app.
 

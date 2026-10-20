@@ -1,7 +1,8 @@
 # startFrame
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size and location of the overlay before the transition.
 
@@ -16,11 +17,16 @@ The size and location of the overlay before the transition.
 var startFrame: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect startFrame;
+```
+
 ## See Also
 
-- [func addAnimation(() -> Void)](skoverlay/transitioncontext/addanimation(_:).md)
+### Adding an Animation
+- [func addAnimation(() -> Void)](./addanimation%28_%29.md)
   Adds a closure you can use to animate view properties.
-- [var endFrame: CGRect](skoverlay/transitioncontext/endframe.md)
+- [var endFrame: CGRect](./endframe.md)
   The size and location of the overlay at the end of the transition.
 
 

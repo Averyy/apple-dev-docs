@@ -7,7 +7,7 @@ A notification that the interface will close the network controller.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void controllerWillClose(
  IONetworkController *controller);
 ```
@@ -22,19 +22,20 @@ This method will simply call super to propagate the method call. This method is 
 
 ## See Also
 
-- [controllerDidChangePowerState](ioethernetinterface/1810626-controllerdidchangepowerstate.md)
+### Miscellaneous
+- [controllerDidChangePowerState](./api-1810626-controllerdidchangepowerstate.md)
   Handles a notification that the network controller servicing this interface object has transitioned to a new power state.
-- [controllerDidOpen](ioethernetinterface/1810636-controllerdidopen.md)
+- [controllerDidOpen](./api-1810636-controllerdidopen.md)
   A notification that the interface has opened the network controller.
-- [controllerWillChangePowerState](ioethernetinterface/1810670-controllerwillchangepowerstate.md)
+- [controllerWillChangePowerState](./api-1810670-controllerwillchangepowerstate.md)
   Handles a notification that the network controller servicing this interface object is about to transition to a new power state.
-- [free](ioethernetinterface/1810696-free.md)
+- [free](./api-1810696-free.md)
   Frees the IOEthernetInterface instance.
-- [getNamePrefix](ioethernetinterface/1810711-getnameprefix.md)
+- [getNamePrefix](./api-1810711-getnameprefix.md)
   Returns a string containing the prefix to use when creating a BSD name for this interface.
-- [init](ioethernetinterface/1810722-init.md)
+- [init](./api-1810722-init.md)
   Initializes an IOEthernetInterface instance.
-- [performCommand](ioethernetinterface/1810736-performcommand.md)
+- [performCommand](./api-1810736-performcommand.md)
   Handles an ioctl command sent to the Ethernet interface.
 
 

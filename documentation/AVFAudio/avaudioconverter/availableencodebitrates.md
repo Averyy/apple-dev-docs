@@ -1,23 +1,28 @@
 # availableEncodeBitRates
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of all bit rates the codec provides when encoding.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var availableEncodeBitRates: [NSNumber]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<NSNumber *> * availableEncodeBitRates;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ This property returns `nil` if you’re not encoding.
 
 ## See Also
 
-- [var applicableEncodeBitRates: [NSNumber]?](avaudioconverter/applicableencodebitrates.md)
+### Getting bit rate properties
+- [var applicableEncodeBitRates: [NSNumber]?](./applicableencodebitrates.md)
   An array of bit rates the framework applies during encoding according to the current formats and settings.
-- [var availableEncodeChannelLayoutTags: [NSNumber]?](avaudioconverter/availableencodechannellayouttags.md)
+- [var availableEncodeChannelLayoutTags: [NSNumber]?](./availableencodechannellayouttags.md)
   An array of all output channel layout tags the codec provides when encoding.
-- [var bitRate: Int](avaudioconverter/bitrate.md)
+- [var bitRate: Int](./bitrate.md)
   The bit rate, in bits per second.
-- [var bitRateStrategy: String?](avaudioconverter/bitratestrategy.md)
+- [var bitRateStrategy: String?](./bitratestrategy.md)
   A key value constant the framework uses during encoding.
 
 

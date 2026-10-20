@@ -1,12 +1,15 @@
 # highlightLine2
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating which line should be drawn with a highlight.
 
 **Availability**:
-- watchOS 3.0+
+- watchOS 3.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,15 +17,20 @@ A Boolean value indicating which line should be drawn with a highlight.
 var highlightLine2: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL highlightLine2;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the text in row two is rendered with a highlight. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the text in line one is rendered with a highlight. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](../../Swift/true.md), the text in row two is rendered with a highlight. When the value is [`false`](../../Swift/false.md), the text in line one is rendered with a highlight. The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var line1TextProvider: CLKTextProvider](clkcomplicationtemplateextralargestacktext/line1textprovider.md)
+### Setting the Complication Data
+- [var line1TextProvider: CLKTextProvider](./line1textprovider.md)
   The text to display on the top line of the complication.
-- [var line2TextProvider: CLKTextProvider](clkcomplicationtemplateextralargestacktext/line2textprovider.md)
+- [var line2TextProvider: CLKTextProvider](./line2textprovider.md)
   The text to display on the bottom line of the complication.
 
 

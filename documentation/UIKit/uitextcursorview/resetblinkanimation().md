@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Resets the blink animation to avoid glitches while someone is typing.
@@ -19,13 +20,18 @@ Resets the blink animation to avoid glitches while someone is typing.
 func resetBlinkAnimation()
 ```
 
+```objc
+- (void) resetBlinkAnimation;
+```
+
 #### Discussion
 
 When the cursor is moving in your text view, call this method to prevent the insertion point from blinking.
 
 ## See Also
 
-- [var isBlinking: Bool](uitextcursorview/isblinking.md)
+### Determining the animation state
+- [var isBlinking: Bool](./isblinking.md)
   A Boolean value that determines whether the blink animation is running.
 
 

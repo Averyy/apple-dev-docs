@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom transform for highlight rects. This transform is assumed to be in the `textInputView` coordinate space. Default is CGAffineTransformIdentity (no transform applied).
 
@@ -16,6 +17,10 @@ Custom transform for highlight rects. This transform is assumed to be in the `te
 
 ```swift
 var transform: CGAffineTransform { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGAffineTransform transform;
 ```
 
 

@@ -1,7 +1,8 @@
 # ScmGitReference.Relationships.Repository
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the Git References and the Repositories resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the Git References and
 
 ## Declaration
 
-```swift
+```
 object ScmGitReference.Relationships.Repository
 ```
 
 ## Topics
 
 ### Objects
-- [object ScmGitReference.Relationships.Repository.Data](scmgitreference/relationships-data.dictionary/repository-data.dictionary/data-data.dictionary.md)
+- [object ScmGitReference.Relationships.Repository.Data](./repository-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Repositories resource.
 
 ## Properties

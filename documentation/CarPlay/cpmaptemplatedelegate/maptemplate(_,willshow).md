@@ -1,7 +1,8 @@
 # mapTemplate(_:willShow:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system will show the navigation alert.
 
@@ -16,6 +17,10 @@ Tells the delegate that the system will show the navigation alert.
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, willShow navigationAlert: CPNavigationAlert)
 ```
 
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate willShowNavigationAlert:(CPNavigationAlert *) navigationAlert;
+```
+
 ## Parameters
 
 - `mapTemplate`: The current map template.
@@ -23,13 +28,14 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, willShow navigationAlert
 
 ## See Also
 
-- [func mapTemplate(CPMapTemplate, didShow: CPNavigationAlert)](cpmaptemplatedelegate/maptemplate(_:didshow:).md)
+### Handling Navigation Alerts
+- [func mapTemplate(CPMapTemplate, didShow: CPNavigationAlert)](./maptemplate%28_,didshow%29.md)
   Tells the delegate that the system showed the navigation alert.
-- [func mapTemplate(CPMapTemplate, willDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](cpmaptemplatedelegate/maptemplate(_:willdismiss:dismissalcontext:).md)
+- [func mapTemplate(CPMapTemplate, willDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](./maptemplate%28_,willdismiss,dismissalcontext%29.md)
   Tells the delegate that the system is preparing to dismiss the navigation alert.
-- [func mapTemplate(CPMapTemplate, didDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](cpmaptemplatedelegate/maptemplate(_:diddismiss:dismissalcontext:).md)
+- [func mapTemplate(CPMapTemplate, didDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](./maptemplate%28_,diddismiss,dismissalcontext%29.md)
   Tells the delegate that the system dismissed the navigation alert.
-- [CPNavigationAlert.DismissalContext](cpnavigationalert/dismissalcontext.md)
+- [CPNavigationAlert.DismissalContext](../cpnavigationalert/dismissalcontext.md)
   A set of reasons for dismissing a navigation alert.
 
 

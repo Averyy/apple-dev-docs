@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 void setPSProperty(
  const OSSymbol *,
  OSObject *);
@@ -17,9 +17,10 @@ All of these methods funnel through the generic accessor method setPSProperty. C
 
 ## See Also
 
-- [powerSource](iopmpowersource/1809904-powersource.md)
+### Miscellaneous
+- [powerSource](./api-1809904-powersource.md)
   Creates a new IOPMPowerSource nub. Must be attached to IORegistry, and registered by provider.
-- [updateStatus](iopmpowersource/1809926-updatestatus.md)
+- [updateStatus](./api-1809926-updatestatus.md)
   Must be called by physical battery controller when battery state has changed significantly.
 
 

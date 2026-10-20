@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new argument encoder for a nested argument buffer.
@@ -20,17 +21,21 @@ Creates a new argument encoder for a nested argument buffer.
 func makeArgumentEncoderForBuffer(atIndex index: Int) -> (any MTLArgumentEncoder)?
 ```
 
+```objc
+- (id<MTLArgumentEncoder>) newArgumentEncoderForBufferAtIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
 An argument encoder targeting the nested argument buffer.
 
 #### Discussion
 
-If an argument buffer contains nested argument buffers in its structure, then each nested argument buffer needs to use its own [`MTLArgumentEncoder`](mtlargumentencoder.md) object to encode its individual resources.
+If an argument buffer contains nested argument buffers in its structure, then each nested argument buffer needs to use its own [`MTLArgumentEncoder`](../mtlargumentencoder.md) object to encode its individual resources.
 
 ## Parameters
 
-- `index`: The index of a nested argument-buffer within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
+- `index`: The index of a nested argument-buffer within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instance.
 
 
 ---

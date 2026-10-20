@@ -1,7 +1,8 @@
 # group
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Clear the (POSIX) group ID.
 
@@ -20,17 +21,22 @@ Clear the (POSIX) group ID.
 static var group: CFFileSecurityClearOptions { get }
 ```
 
+```c
+kCFFileSecurityClearGroup
+```
+
 ## See Also
 
-- [static var accessControlList: CFFileSecurityClearOptions](cffilesecurityclearoptions/accesscontrollist.md)
+### Constants
+- [static var accessControlList: CFFileSecurityClearOptions](./accesscontrollist.md)
   Clear the access control list.
-- [static var groupUUID: CFFileSecurityClearOptions](cffilesecurityclearoptions/groupuuid.md)
+- [static var groupUUID: CFFileSecurityClearOptions](./groupuuid.md)
   Clear the group UUID (for the access control list).
-- [static var mode: CFFileSecurityClearOptions](cffilesecurityclearoptions/mode.md)
+- [static var mode: CFFileSecurityClearOptions](./mode.md)
   Clear the file’s mode (POSIX permissions).
-- [static var owner: CFFileSecurityClearOptions](cffilesecurityclearoptions/owner.md)
+- [static var owner: CFFileSecurityClearOptions](./owner.md)
   Clear the (POSIX) owner ID.
-- [static var ownerUUID: CFFileSecurityClearOptions](cffilesecurityclearoptions/owneruuid.md)
+- [static var ownerUUID: CFFileSecurityClearOptions](./owneruuid.md)
   Clear the owner UUID (for the access control list).
 
 

@@ -1,7 +1,8 @@
 # WKInterfaceMovie
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface element that lets you play video and audio content in your watchOS app.
 
@@ -12,6 +13,10 @@ An interface element that lets you play video and audio content in your watchOS 
 
 ```swift
 class WKInterfaceMovie
+```
+
+```objc
+@interface WKInterfaceMovie : WKInterfaceObject
 ```
 
 #### Overview
@@ -42,7 +47,7 @@ The following table lists the encoding information to use when creating media fi
 
 | Media type | Recommended encoding |
 | --- | --- |
-| Video assets | Video codec: H.264 High Profile ![None](/images/com.apple.watchkit/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![None](/images/com.apple.watchkit/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![None](/images/com.apple.watchkit/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![None](/images/com.apple.watchkit/spacer.png) Audio bit rate: 32 kpbs stereo |
+| Video assets | Video codec: H.264 High Profile ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Audio bit rate: 32 kpbs stereo |
 | Audio-only assets | Bit rate: 32 kbps stereo |
 
 ##### Interface Builder Configuration Options
@@ -51,49 +56,50 @@ Xcode lets you configure information about your movie interface object in your s
 
 | Attribute | Description |
 | --- | --- |
-| Video Gravity | The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the [`setVideoGravity(_:)`](wkinterfacemovie/setvideogravity(_:).md) method. |
-| Poster Image | The placeholder image to display for your movie. When the user taps the poser image, the movie interface object presents a modal sheet with the actual movie contents. You can also configure this value programmatically using the [`setPosterImage(_:)`](wkinterfacemovie/setposterimage(_:).md) method. |
+| Video Gravity | The sizing behavior for the movie. Use this attribute to determine whether the movie maintains its aspect ratio and how it fills the available space. You can also configure this value programmatically using the [`setVideoGravity(_:)`](./wkinterfacemovie/setvideogravity%28_%29.md) method. |
+| Poster Image | The placeholder image to display for your movie. When the user taps the poser image, the movie interface object presents a modal sheet with the actual movie contents. You can also configure this value programmatically using the [`setPosterImage(_:)`](./wkinterfacemovie/setposterimage%28_%29.md) method. |
 
 ## Topics
 
 ### Setting the Movie Attributes
-- [func setMovieURL(URL)](wkinterfacemovie/setmovieurl(_:).md)
+- [func setMovieURL(URL)](./wkinterfacemovie/setmovieurl%28_%29.md)
   Sets the URL of the movie to play.
-- [func setVideoGravity(WKVideoGravity)](wkinterfacemovie/setvideogravity(_:).md)
+- [func setVideoGravity(WKVideoGravity)](./wkinterfacemovie/setvideogravity%28_%29.md)
   Sets the resizing behavior for the movie content.
-- [func setPosterImage(WKImage?)](wkinterfacemovie/setposterimage(_:).md)
+- [func setPosterImage(WKImage?)](./wkinterfacemovie/setposterimage%28_%29.md)
   Sets the poster image to display for the movie.
-- [func setLoops(Bool)](wkinterfacemovie/setloops(_:).md)
+- [func setLoops(Bool)](./wkinterfacemovie/setloops%28_%29.md)
   Sets a Boolean value indicating whether the movie plays in a continuous loop.
 ### Initializing for SwiftUI
-- [init()](wkinterfacemovie/init.md)
+- [init()](./wkinterfacemovie/init%28%29.md)
   Creates a movie object for use in SwiftUI.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKInterfaceImage](wkinterfaceimage.md)
+### Images and movies
+- [class WKInterfaceImage](./wkinterfaceimage.md)
   An image that can be displayed in the interface of your watchOS app.
-- [class WKImage](wkimage.md)
+- [class WKImage](./wkimage.md)
   A wrapper for images you use with a picker interface.
-- [protocol WKImageAnimatable](wkimageanimatable.md)
+- [protocol WKImageAnimatable](./wkimageanimatable.md)
   A collection of methods you can use to control the playback of animated images.
-- [class WKInterfaceInlineMovie](wkinterfaceinlinemovie.md)
+- [class WKInterfaceInlineMovie](./wkinterfaceinlinemovie.md)
   An interface element that displays a video’s poster image and supports inline playing of the video.
-- [class WKInterfaceHMCamera](wkinterfacehmcamera.md)
+- [class WKInterfaceHMCamera](./wkinterfacehmcamera.md)
   An interface element that displays either a video stream or a single snapshot from an IP camera connected to HomeKit.
-- [enum WKVideoGravity](wkvideogravity.md)
+- [enum WKVideoGravity](./wkvideogravity.md)
   Constants indicating the appearance of video content.
 
 

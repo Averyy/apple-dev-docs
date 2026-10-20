@@ -1,7 +1,8 @@
 # ends(with:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether `other` is a suffix of `self`, only considering whole path components.
 

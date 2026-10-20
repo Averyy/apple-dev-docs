@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of a track.
 
@@ -19,21 +20,26 @@ The duration of a track.
 var duration: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime duration;
+```
+
 #### Discussion
 
-The value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) if there’s no information available.
+The value is [`invalid`](../../CoreMedia/cmtime/invalid.md) if there’s no information available.
 
 ## See Also
 
-- [var trackID: CMPersistentTrackID](avassetsegmenttrackreport/trackid.md)
+### Inspecting a report
+- [var trackID: CMPersistentTrackID](./trackid.md)
   A persistent unique identifier for a track.
-- [var mediaType: AVMediaType](avassetsegmenttrackreport/mediatype.md)
+- [var mediaType: AVMediaType](./mediatype.md)
   The type of media a track contains.
-- [var earliestPresentationTimeStamp: CMTime](avassetsegmenttrackreport/earliestpresentationtimestamp.md)
+- [var earliestPresentationTimeStamp: CMTime](./earliestpresentationtimestamp.md)
   The earliest presentation timestamp (PTS) for this track.
-- [var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation?](avassetsegmenttrackreport/firstvideosampleinformation.md)
+- [var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation?](./firstvideosampleinformation.md)
   Information about the first video sample in a track.
-- [class AVAssetSegmentReportSampleInformation](avassetsegmentreportsampleinformation.md)
+- [class AVAssetSegmentReportSampleInformation](../avassetsegmentreportsampleinformation.md)
   An object that provides information about sample data in a track.
 
 

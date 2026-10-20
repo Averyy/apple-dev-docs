@@ -1,7 +1,8 @@
 # defaults
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enables all default traits of the dependency.
 

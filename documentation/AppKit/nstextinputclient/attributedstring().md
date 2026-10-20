@@ -1,7 +1,8 @@
 # attributedString()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an attributed string representing the receiver’s text storage.
 
@@ -14,6 +15,10 @@ Returns an attributed string representing the receiver’s text storage.
 optional func attributedString() -> NSAttributedString
 ```
 
+```objc
+- (NSAttributedString *) attributedString;
+```
+
 #### Return Value
 
 The attributed string of the receiver’s text storage.
@@ -24,9 +29,10 @@ Implementation of this method is optional. A class adopting the `NSTextInputClie
 
 ## See Also
 
-- [func attributedSubstring(forProposedRange: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?](nstextinputclient/attributedsubstring(forproposedrange:actualrange:).md)
+### Storing text
+- [func attributedSubstring(forProposedRange: NSRange, actualRange: NSRangePointer?) -> NSAttributedString?](./attributedsubstring%28forproposedrange,actualrange%29.md)
   Returns an attributed string derived from the given range in the receiver’s text storage.
-- [func insertText(Any, replacementRange: NSRange)](nstextinputclient/inserttext(_:replacementrange:).md)
+- [func insertText(Any, replacementRange: NSRange)](./inserttext%28_,replacementrange%29.md)
   Inserts the given string into the receiver, replacing the specified content.
 
 

@@ -1,7 +1,8 @@
 # isInBillingRetryPeriod
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A Boolean value that indicates whether the App Store is attempting to automatically renew a subscription that expired due to a billing issue.
 
@@ -10,13 +11,14 @@ A Boolean value that indicates whether the App Store is attempting to automatica
 
 ## Declaration
 
-```swift
+```
 boolean isInBillingRetryPeriod
 ```
 
 ## See Also
 
-- [type gracePeriodExpiresDate](graceperiodexpiresdate.md)
+### Billing status
+- [type gracePeriodExpiresDate](./graceperiodexpiresdate.md)
   The time when the billing grace period for a subscription renewal expires.
 
 

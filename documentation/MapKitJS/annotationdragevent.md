@@ -1,7 +1,8 @@
 # AnnotationDragEvent
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event that occurs when someone drags an annotation.
 
@@ -10,20 +11,20 @@ An event that occurs when someone drags an annotation.
 
 ## Declaration
 
-```swift
+```
 class AnnotationDragEvent extends Event
 ```
 
 ## Topics
 
 ### Instance Properties
-- [coordinate](annotationdragevent/coordinate.md)
+- [coordinate](./annotationdragevent/coordinate.md)
   The coordinate of the annotation while someone drags it.
 
 ## Relationships
 
 ### Inherits From
-- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
+- Event
 
 
 ---

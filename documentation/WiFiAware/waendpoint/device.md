@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remote device that is, or can be, connected.
 

@@ -1,6 +1,7 @@
 # Creating a workout route
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Record the user’s route during a workout.
 
@@ -16,17 +17,17 @@ To create a workout route:
 4. **End the workout.** Stop tracking the user’s location. Save the workout to the HealthKit store.
 5. **Finish the route.** Tell the  route builder to save the route and associates it with the workout.
 
-![An illustration showing the steps required to create a workout route: Request the required permissions, start the workout, process location updates as they arrive, end the workout, and finish the route.](/images/com.apple.healthkit/media-2955571@2x.png)
+![An illustration showing the steps required to create a workout route: Request the required permissions, start the workout, process location updates as they arrive, end the workout, and finish the route.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-2955571@2x.png)
 
 ##### Request Permissions
 
-As noted in [`Setting up HealthKit`](setting-up-healthkit.md), you must request permission from the user before using any data in HealthKit. Specifically for route data, you must request permission to read and share both [`HKWorkout`](hkworkout.md) and [`HKWorkoutRoute`](hkworkoutroute.md) samples.
+As noted in [Setting up HealthKit](./setting-up-healthkit.md), you must request permission from the user before using any data in HealthKit. Specifically for route data, you must request permission to read and share both [`HKWorkout`](./hkworkout.md) and [`HKWorkoutRoute`](./hkworkoutroute.md) samples.
 
-You must also request permission to use location services before your app receives location updates from [`Core Location`](https://developer.apple.com/documentation/corelocation). For more information on requesting permission to use location services, see [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager).
+You must also request permission to use location services before your app receives location updates from [Core Location](../CoreLocation/CoreLocation.md). For more information on requesting permission to use location services, see [`CLLocationManager`](../CoreLocation/cllocationmanager.md).
 
 ##### Start the Workout
 
-When the user starts a new workout, begin tracking the user’s location using a [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager) object from the Core Location framework. After you call the location manager’s [`startUpdatingLocation()`](https://developer.apple.com/documentation/corelocation/cllocationmanager/startupdatinglocation()) method, the location manager’s delegate begins receiving updates containing the user’s current location.
+When the user starts a new workout, begin tracking the user’s location using a [`CLLocationManager`](../CoreLocation/cllocationmanager.md) object from the Core Location framework. After you call the location manager’s [`startUpdatingLocation()`](../CoreLocation/cllocationmanager/startupdatinglocation%28%29.md) method, the location manager’s delegate begins receiving updates containing the user’s current location.
 
 ```swift
 // Start tracking the user.
@@ -34,7 +35,7 @@ locationManager.desiredAccuracy = kCLLocationAccuracyBest
 locationManager.startUpdatingLocation()
 ```
 
-Next, use [`seriesBuilder(for:)`](hkworkoutbuilder/seriesbuilder(for:).md) to create and store a route builder for the workout. During the workout, you incrementally add locations from the Core Location updates to the route builder, which then creates the route from the accumulated data.
+Next, use [`seriesBuilder(for:)`](./hkworkoutbuilder/seriesbuilder%28for%29.md) to create and store a route builder for the workout. During the workout, you incrementally add locations from the Core Location updates to the route builder, which then creates the route from the accumulated data.
 
 ```swift
 // Create the route builder using a HKWorkoutBuilder
@@ -45,7 +46,7 @@ guard let routeBuilder = workoutBuilder.seriesBuilder(for: HKSeriesType.workoutR
 
 ##### Add Locations to the Builder
 
-As your app receives location updates from Core Location, filter and smooth the locations, and then call [`insertRouteData(_:completion:)`](hkworkoutroutebuilder/insertroutedata(_:completion:).md) to add the locations to the route builder.
+As your app receives location updates from Core Location, filter and smooth the locations, and then call [`insertRouteData(_:completion:)`](./hkworkoutroutebuilder/insertroutedata%28_,completion%29.md) to add the locations to the route builder.
 
 ```swift
 // MARK: - CLLocationManagerDelegate Methods.
@@ -71,11 +72,11 @@ Because raw Core Location data can contain a significant amount of noise, your a
 
 ##### End the Workout
 
-When the user ends the workout, stop tracking the user and save the workout to the HealthKit store. For more information on saving workouts, see [`Saving data to HealthKit`](saving-data-to-healthkit.md).
+When the user ends the workout, stop tracking the user and save the workout to the HealthKit store. For more information on saving workouts, see [Saving data to HealthKit](./saving-data-to-healthkit.md).
 
 ##### Finish the Route
 
-After saving the workout, add any remaining locations to the route builder and call [`finishRoute(with:metadata:completion:)`](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md).
+After saving the workout, add any remaining locations to the route builder and call [`finishRoute(with:metadata:completion:)`](./hkworkoutroutebuilder/finishroute%28with,metadata,completion%29.md).
 
 ```swift
 // Create, save, and associate the route with the provided workout.
@@ -98,21 +99,22 @@ You can only associate a route with a single workout. After creating a route, yo
 
 ## See Also
 
-- [Reading route data](reading-route-data.md)
+### Route data
+- [Reading route data](./reading-route-data.md)
   Access the user’s route for a workout.
-- [class HKWorkoutRouteBuilder](hkworkoutroutebuilder.md)
+- [class HKWorkoutRouteBuilder](./hkworkoutroutebuilder.md)
   A builder object that incrementally constructs a workout route.
-- [class HKWorkoutRoute](hkworkoutroute.md)
+- [class HKWorkoutRoute](./hkworkoutroute.md)
   A sample that contains a workout’s route data.
-- [struct HKWorkoutRouteQueryDescriptor](hkworkoutroutequerydescriptor.md)
+- [struct HKWorkoutRouteQueryDescriptor](./hkworkoutroutequerydescriptor.md)
   A query interface that reads the location data stored in a workout route using Swift concurrency.
-- [class HKWorkoutRouteQuery](hkworkoutroutequery.md)
+- [class HKWorkoutRouteQuery](./hkworkoutroutequery.md)
   A query to access the location data stored in a workout route.
-- [let HKWorkoutRouteTypeIdentifier: String](hkworkoutroutetypeidentifier.md)
+- [let HKWorkoutRouteTypeIdentifier: String](./hkworkoutroutetypeidentifier.md)
   A series sample containing location data that defines the route the user took during a workout.
-- [class HKSeriesBuilder](hkseriesbuilder.md)
+- [class HKSeriesBuilder](./hkseriesbuilder.md)
   An abstract base class for building series samples.
-- [class HKSeriesSample](hkseriessample.md)
+- [class HKSeriesSample](./hkseriessample.md)
   An abstract base class that defines samples that contain a series of items.
 
 

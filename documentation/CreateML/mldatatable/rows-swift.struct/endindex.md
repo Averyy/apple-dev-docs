@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The DataTable’s “past the end” position—that is, the position one greater than the last valid subscript argument.
 
@@ -21,7 +22,8 @@ var endIndex: Int { get }
 
 ## See Also
 
-- [var startIndex: Int](mldatatable/rows-swift.struct/startindex.md)
+### Manipulating indices
+- [var startIndex: Int](./startindex.md)
   The position of the first row in a nonempty DataTable. If the DataTable is empty, `startIndex` is equal to `endIndex`.
 
 

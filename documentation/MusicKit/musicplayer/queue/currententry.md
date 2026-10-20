@@ -1,7 +1,8 @@
 # currentEntry
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently active entry in the playback queue.
 

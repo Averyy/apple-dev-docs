@@ -1,7 +1,8 @@
 # NSCompoundPredicate.LogicalType
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the possible types of a compound predicate.
 
@@ -20,33 +21,38 @@ Constants that describe the possible types of a compound predicate.
 enum LogicalType
 ```
 
+```c
+enum NSCompoundPredicateType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSCompoundPredicate.LogicalType.not](nscompoundpredicate/logicaltype/not.md)
+- [NSCompoundPredicate.LogicalType.not](./logicaltype/not.md)
   A logical NOT predicate.
-- [NSCompoundPredicate.LogicalType.and](nscompoundpredicate/logicaltype/and.md)
+- [NSCompoundPredicate.LogicalType.and](./logicaltype/and.md)
   A logical AND predicate.
-- [NSCompoundPredicate.LogicalType.or](nscompoundpredicate/logicaltype/or.md)
+- [NSCompoundPredicate.LogicalType.or](./logicaltype/or.md)
   A logical OR predicate.
 ### Initializers
-- [init?(rawValue: UInt)](nscompoundpredicate/logicaltype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./logicaltype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var compoundPredicateType: NSCompoundPredicate.LogicalType](nscompoundpredicate/compoundpredicatetype.md)
+### Getting Information About a Compound Predicate
+- [var compoundPredicateType: NSCompoundPredicate.LogicalType](./compoundpredicatetype.md)
   The predicate type for the receiver.
-- [var subpredicates: [Any]](nscompoundpredicate/subpredicates.md)
+- [var subpredicates: [Any]](./subpredicates.md)
   The receiver’s subpredicates.
 
 

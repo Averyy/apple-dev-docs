@@ -1,7 +1,8 @@
 # assetListResponseStatusDidChangeEventKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key to retrieve the interstitial event that has an asset list response status change.
 
@@ -20,15 +21,20 @@ A key to retrieve the interstitial event that has an asset list response status 
 class let assetListResponseStatusDidChangeEventKey: String
 ```
 
+```c
+extern NSString * const AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChangeEventKey;
+```
+
 #### Discussion
 
-Use this key to retrieve the [`AVPlayerInterstitialEvent`](avplayerinterstitialevent.md) object that has an updates asset list response.
+Use this key to retrieve the [`AVPlayerInterstitialEvent`](../avplayerinterstitialevent.md) object that has an updates asset list response.
 
 ## See Also
 
-- [class let assetListResponseStatusDidChangeStatusKey: String](avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangestatuskey.md)
+### User information keys
+- [class let assetListResponseStatusDidChangeStatusKey: String](./assetlistresponsestatusdidchangestatuskey.md)
   A key to retrieve the asset list response status.
-- [class let assetListResponseStatusDidChangeErrorKey: String](avplayerinterstitialeventmonitor/assetlistresponsestatusdidchangeerrorkey.md)
+- [class let assetListResponseStatusDidChangeErrorKey: String](./assetlistresponsestatusdidchangeerrorkey.md)
   A key to retrieve the error related to a change in an interstitial event’s asset list response.
 
 

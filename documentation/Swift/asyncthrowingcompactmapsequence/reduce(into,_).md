@@ -1,7 +1,8 @@
 # reduce(into:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of combining the elements of the asynchronous sequence using the given closure, given a mutable initial value.
 

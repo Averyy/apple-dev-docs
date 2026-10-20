@@ -1,7 +1,8 @@
 # padding
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The padding options for the Look Around view.
 
@@ -10,24 +11,25 @@ The padding options for the Look Around view.
 
 ## Declaration
 
-```swift
+```
 get padding(): Padding;
 set padding(value: PaddingData);
 ```
 
 #### Discussion
 
-For information on how to specify padding around a Look Around view, see [`Padding`](padding.md).
+For information on how to specify padding around a Look Around view, see [`Padding`](../padding.md).
 
 ## See Also
 
-- [element](abstractlookaround/element.md)
+### Getting information about the Look Around object and its state
+- [element](./element.md)
   A property that represents the Look Around view’s containing Document Object Model (DOM) element.
-- [scene](abstractlookaround/scene.md)
+- [scene](./scene.md)
   The Look Around scene the framework is displaying.
-- [readyState](abstractlookaround/readystate.md)
+- [readyState](./readystate.md)
   A value that represents the loading state of the Look Around object.
-- [const LookAroundReadyState](lookaroundreadystate.md)
+- [const LookAroundReadyState](../lookaroundreadystate.md)
   Values that indicate the state of the Look Around object in the browser.
 
 

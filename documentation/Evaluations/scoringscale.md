@@ -1,7 +1,8 @@
 # ScoringScale
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scoring scale that defines the set of options a judge can assign.
 
@@ -22,11 +23,11 @@ struct ScoringScale
 
 ## Mentions
 
-- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
+- [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
 
 #### Overview
 
-Use the factory methods to create scales from numeric dictionaries, pass or fail pairs, or typed [`ScoreLevel`](scorelevel.md) enums:
+Use the factory methods to create scales from numeric dictionaries, pass or fail pairs, or typed [`ScoreLevel`](./scorelevel.md) enums:
 
 ```swift
 // Numeric scale
@@ -47,29 +48,30 @@ let _ = ScoringScale.custom(SafetyLevel.self)
 ## Topics
 
 ### Creating a scale
-- [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](scoringscale/passfail(passdescription:faildescription:).md)
+- [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](./scoringscale/passfail%28passdescription,faildescription%29.md)
   Creates a binary pass or fail scoring scale.
-- [static func numeric([Double : String]) -> ScoringScale](scoringscale/numeric(_:).md)
+- [static func numeric([Double : String]) -> ScoringScale](./scoringscale/numeric%28_%29.md)
   Creates a scoring scale from a numeric dictionary.
-- [static func custom<Level>(Level.Type) -> ScoringScale](scoringscale/custom(_:).md)
+- [static func custom<Level>(Level.Type) -> ScoringScale](./scoringscale/custom%28_%29.md)
   Creates a scoring scale from a typed score level enum.
-- [init(options: [ScaleOption])](scoringscale/init(options:).md)
+- [init(options: [ScaleOption])](./scoringscale/init%28options%29.md)
   Creates a scoring scale with explicit options.
 ### Inspecting a scale
-- [let options: [ScaleOption]](scoringscale/options.md)
+- [let options: [ScaleOption]](./scoringscale/options.md)
   The scale options, ordered from highest to lowest value.
-- [struct ScaleOption](scaleoption.md)
+- [struct ScaleOption](./scaleoption.md)
   A single option in a scoring scale.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ScoreLevel](scorelevel.md)
+### Defining scales
+- [protocol ScoreLevel](./scorelevel.md)
   A type that defines individual levels within a scoring scale.
 
 

@@ -1,7 +1,8 @@
 # paragraphRange(for:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of characters representing the paragraph or paragraphs containing a given range.
 

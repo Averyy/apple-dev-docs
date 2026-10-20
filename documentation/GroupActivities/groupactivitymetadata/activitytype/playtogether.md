@@ -1,7 +1,8 @@
 # playTogether
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared gaming activity, such as playing a Game Center game together.
 

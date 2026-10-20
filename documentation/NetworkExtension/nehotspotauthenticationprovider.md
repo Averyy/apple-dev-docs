@@ -1,7 +1,8 @@
 # NEHotspotAuthenticationProvider
 
 **Framework**: Network Extension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines methods that your extension adopts to start and stop the extension, and to handle commands to authenticate with the hotspot network.
 
@@ -19,37 +20,38 @@ protocol NEHotspotAuthenticationProvider : AppExtension
 
 #### Overview
 
-Conform to this protocol in your hotspot helper app extension to handle the hotspot commands [`NEHotspotHelperCommandType.authenticate`](nehotspothelpercommandtype/authenticate.md), [`NEHotspotHelperCommandType.maintain`](nehotspothelpercommandtype/maintain.md), [`NEHotspotHelperCommandType.presentUI`](nehotspothelpercommandtype/presentui.md), and [`NEHotspotHelperCommandType.logoff`](nehotspothelpercommandtype/logoff.md).
+Conform to this protocol in your hotspot helper app extension to handle the hotspot commands [`NEHotspotHelperCommandType.authenticate`](./nehotspothelpercommandtype/authenticate.md), [`NEHotspotHelperCommandType.maintain`](./nehotspothelpercommandtype/maintain.md), [`NEHotspotHelperCommandType.presentUI`](./nehotspothelpercommandtype/presentui.md), and [`NEHotspotHelperCommandType.logoff`](./nehotspothelpercommandtype/logoff.md).
 
 ## Topics
 
 ### Managing provider life cycle
-- [func start() async -> Bool](nehotspotauthenticationprovider/start.md)
+- [func start() async -> Bool](./nehotspotauthenticationprovider/start%28%29.md)
   Tells the extension to start the authentication provider, in response to a request from the framework.
-- [func stop(reason: NEProviderStopReason) async](nehotspotauthenticationprovider/stop(reason:).md)
+- [func stop(reason: NEProviderStopReason) async](./nehotspotauthenticationprovider/stop%28reason%29.md)
   Tells the exension to stop the authentication provider, in response to a request from the framework.
-- [enum NEProviderStopReason](neproviderstopreason.md)
+- [enum NEProviderStopReason](./neproviderstopreason.md)
   Reasons why the provider extension was stopped.
 ### Sending commands to the provider
-- [func handleCommand(NEHotspotHelperCommand) async -> NEHotspotHelperResponse](nehotspotauthenticationprovider/handlecommand(_:).md)
+- [func handleCommand(NEHotspotHelperCommand) async -> NEHotspotHelperResponse](./nehotspotauthenticationprovider/handlecommand%28_%29.md)
   Handles a given hotspot command, in response to a request from the framework.
-- [class NEHotspotHelperCommand](nehotspothelpercommand.md)
+- [class NEHotspotHelperCommand](./nehotspothelpercommand.md)
   A command for the hotspot helper to handle.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 ## See Also
 
-- [class NEHotspotManager](nehotspotmanager.md)
+### Hotspot helper extension
+- [class NEHotspotManager](./nehotspotmanager.md)
   A class that you use to enable or disable the hotspot evaluation and authentication provider extensions.
-- [protocol NEHotspotEvaluationProvider](nehotspotevaluationprovider.md)
+- [protocol NEHotspotEvaluationProvider](./nehotspotevaluationprovider.md)
   A protocol that defines methods and properties your extension implements to handle evaluate and filter scan list commands.
-- [class NEHotspotEvaluationProviderConfiguration](nehotspotevaluationproviderconfiguration.md)
+- [class NEHotspotEvaluationProviderConfiguration](./nehotspotevaluationproviderconfiguration.md)
   A class that defines configuration options for use in NetworkExtension evaluation providers.
-- [class NEHotspotAuthenticationProviderConfiguration](nehotspotauthenticationproviderconfiguration.md)
+- [class NEHotspotAuthenticationProviderConfiguration](./nehotspotauthenticationproviderconfiguration.md)
   A class that defines configuration options for use in NetworkExtension authentication providers.
 
 

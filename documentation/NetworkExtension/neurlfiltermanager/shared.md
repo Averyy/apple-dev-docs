@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared filter manager instance your app uses to manage URL filters.
 

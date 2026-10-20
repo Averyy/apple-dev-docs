@@ -1,7 +1,8 @@
 # invalidSize
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The requested size (most likely too big) is not supported for the CVBuffer type.
 

@@ -1,7 +1,8 @@
 # DADiskCopyDescription(_:)
 
 **Framework**: Disk Arbitration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the Disk Arbitration description of the specified disk.
 
@@ -13,6 +14,10 @@ Obtains the Disk Arbitration description of the specified disk.
 
 ```swift
 func DADiskCopyDescription(_ disk: DADisk) -> CFDictionary?
+```
+
+```c
+extern CFDictionaryRefDADiskCopyDescription(DADiskRef disk);
 ```
 
 #### Return Value
@@ -31,19 +36,20 @@ The caller of this function receives a reference to the returned object. The cal
 
 ## See Also
 
-- [func DADiskCopyIOMedia(DADisk) -> io_service_t](dadiskcopyiomedia(_:).md)
+### Miscellaneous
+- [func DADiskCopyIOMedia(DADisk) -> io_service_t](./dadiskcopyiomedia%28_%29.md)
   Obtains the I/O Kit media object for the specified disk.
-- [func DADiskCopyWholeDisk(DADisk) -> DADisk?](dadiskcopywholedisk(_:).md)
+- [func DADiskCopyWholeDisk(DADisk) -> DADisk?](./dadiskcopywholedisk%28_%29.md)
   Obtain the associated whole disk object for the specified disk.
-- [func DADiskCreateFromBSDName(CFAllocator?, DASession, UnsafePointer<CChar>) -> DADisk?](dadiskcreatefrombsdname(_:_:_:).md)
+- [func DADiskCreateFromBSDName(CFAllocator?, DASession, UnsafePointer<CChar>) -> DADisk?](./dadiskcreatefrombsdname%28_,_,_%29.md)
   Creates a new disk object.
-- [func DADiskCreateFromIOMedia(CFAllocator?, DASession, io_service_t) -> DADisk?](dadiskcreatefromiomedia(_:_:_:).md)
+- [func DADiskCreateFromIOMedia(CFAllocator?, DASession, io_service_t) -> DADisk?](./dadiskcreatefromiomedia%28_,_,_%29.md)
   Creates a new disk object.
-- [func DADiskCreateFromVolumePath(CFAllocator?, DASession, CFURL) -> DADisk?](dadiskcreatefromvolumepath(_:_:_:).md)
+- [func DADiskCreateFromVolumePath(CFAllocator?, DASession, CFURL) -> DADisk?](./dadiskcreatefromvolumepath%28_,_,_%29.md)
   Creates a new disk object.
-- [func DADiskGetBSDName(DADisk) -> UnsafePointer<CChar>?](dadiskgetbsdname(_:).md)
+- [func DADiskGetBSDName(DADisk) -> UnsafePointer<CChar>?](./dadiskgetbsdname%28_%29.md)
   Obtains the BSD device name for the specified disk.
-- [func DADiskGetTypeID() -> CFTypeID](dadiskgettypeid().md)
+- [func DADiskGetTypeID() -> CFTypeID](./dadiskgettypeid%28%29.md)
   Returns the type identifier of all DADisk instances.
 
 

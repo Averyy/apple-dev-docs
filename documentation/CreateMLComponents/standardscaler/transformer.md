@@ -1,7 +1,8 @@
 # StandardScaler.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that standardizes the input by removing the mean and scaling to unit variance.
 
@@ -20,33 +21,35 @@ A transformer that standardizes the input by removing the mean and scaling to un
 struct Transformer
 ```
 
+Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
+
 ## Topics
 
 ### Creating a transformer
-- [init(mean: Element, standardDeviation: Element)](standardscaler/transformer/init(mean:standarddeviation:).md)
+- [init(mean: Element, standardDeviation: Element)](./transformer/init%28mean,standarddeviation%29.md)
   Creates a standard scaling transformer.
 ### Getting the properties
-- [var mean: Element](standardscaler/transformer/mean.md)
+- [var mean: Element](./transformer/mean.md)
   The mean used for offsetting.
-- [var standardDeviation: Element](standardscaler/transformer/standarddeviation.md)
+- [var standardDeviation: Element](./transformer/standarddeviation.md)
   The standard deviation used for scaling.
 ### Performing the transformation
-- [func applied(to: Element, eventHandler: EventHandler?) -> Element](standardscaler/transformer/applied(to:eventhandler:).md)
+- [func applied(to: Element, eventHandler: EventHandler?) -> Element](./transformer/applied%28to,eventhandler%29.md)
   Scales the input values using the calculation `(input - mean) / standardDeviation`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Transformer](../transformer.md)
 
 
 ---

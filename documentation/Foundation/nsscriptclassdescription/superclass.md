@@ -1,7 +1,8 @@
 # superclass
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the class description instance for the superclass of the receiver’s class.
 
@@ -15,6 +16,10 @@ Returns the class description instance for the superclass of the receiver’s cl
 var superclass: NSScriptClassDescription? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSScriptClassDescription * superclassDescription;
+```
+
 #### Return Value
 
 A class description instance that describes the superclass of the receiver’s class. Returns `nil` if the class has no superclass.
@@ -25,9 +30,10 @@ The instance of `NSScriptClassDescription` that describes the superclass can be 
 
 ## See Also
 
-- [init?(for: AnyClass)](nsscriptclassdescription/init(for:).md)
+### Getting a Script Class Description
+- [init?(for: AnyClass)](./init%28for%29.md)
   Returns the class description for the specified class or, if it is not scriptable, for the first superclass that is.
-- [func forKey(String) -> NSScriptClassDescription?](nsscriptclassdescription/forkey(_:).md)
+- [func forKey(String) -> NSScriptClassDescription?](./forkey%28_%29.md)
   Returns the class description instance for the class type of the specified attribute or relationship.
 
 

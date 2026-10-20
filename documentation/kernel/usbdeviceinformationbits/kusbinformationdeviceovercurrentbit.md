@@ -1,7 +1,8 @@
 # kUSBInformationDeviceOvercurrentBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The USB device generated an overcurrent.
 
@@ -10,7 +11,7 @@ The USB device generated an overcurrent.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceOvercurrentBit = 7
 ```
 

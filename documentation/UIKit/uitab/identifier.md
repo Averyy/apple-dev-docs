@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string identifier for a tab.
 
@@ -18,21 +19,26 @@ A string identifier for a tab.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * identifier;
+```
+
 #### Discussion
 
-Each identifier must be unique across all the tabs managed by a [`UITabBarController`](uitabbarcontroller.md).
+Each identifier must be unique across all the tabs managed by a [`UITabBarController`](../uitabbarcontroller.md).
 
 ## See Also
 
-- [var title: String](uitab/title.md)
+### Accessing a tab’s appearance
+- [var title: String](./title.md)
   A tab’s title.
-- [var subtitle: String?](uitab/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A tab’s subtitle.
-- [var image: UIImage?](uitab/image.md)
+- [var image: UIImage?](./image.md)
   A tab’s image.
-- [var badgeValue: String?](uitab/badgevalue.md)
+- [var badgeValue: String?](./badgevalue.md)
   A tab’s badge value.
-- [var viewController: UIViewController?](uitab/viewcontroller.md)
+- [var viewController: UIViewController?](./viewcontroller.md)
   The view controller that the system presents when someone selects a tab.
 
 

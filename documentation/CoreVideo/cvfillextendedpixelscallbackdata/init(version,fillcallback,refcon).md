@@ -1,7 +1,8 @@
 # init(version:fillCallBack:refCon:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +21,8 @@ init(version: CFIndex, fillCallBack: CVFillExtendedPixelsCallBack?, refCon: Unsa
 
 ## See Also
 
-- [init()](cvfillextendedpixelscallbackdata/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

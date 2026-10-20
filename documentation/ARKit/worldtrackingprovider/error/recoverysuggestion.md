@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message that describes how someone might recover from the error.
 
@@ -16,7 +17,8 @@ var recoverySuggestion: String? { get }
 
 ## See Also
 
-- [var failureReason: String?](worldtrackingprovider/error/failurereason.md)
+### Providing recovery suggestions
+- [var failureReason: String?](./failurereason.md)
   A localized message that describes why the error occurred.
 
 

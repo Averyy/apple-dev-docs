@@ -1,7 +1,8 @@
 # UpdateMerchantMetadataRequest
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Update the merchant token’s notification metadata.
 
@@ -10,7 +11,7 @@ Update the merchant token’s notification metadata.
 
 ## Declaration
 
-```swift
+```
 object UpdateMerchantMetadataRequest
 ```
 
@@ -18,6 +19,8 @@ object UpdateMerchantMetadataRequest
 
 - `merchantMetadata` (MerchantMetadata) *(required)*: The metadata of the merchant.
 - `merchantTokenIdentifier` (string) *(required)*: The unique identifier of the merchant token.
+
+  **Maximum Length**: `64`
 
 
 ---

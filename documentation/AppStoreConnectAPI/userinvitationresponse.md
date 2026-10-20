@@ -1,7 +1,8 @@
 # UserInvitationResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read or modify a pending App Store Connect team invitation.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read or modify a pending App Store Connect 
 
 ## Declaration
 
-```swift
+```
 object UserInvitationResponse
 ```
 
@@ -22,15 +23,17 @@ object UserInvitationResponse
 
 ## See Also
 
-- [Invite a user](post-v1-userinvitations.md)
+### Related Documentation
+- [Invite a user](./post-v1-userinvitations.md)
   Invite a user with assigned user roles to join your team.
-- [object UserInvitation](userinvitation.md)
+### Objects
+- [object UserInvitation](./userinvitation.md)
   A pending invitation for a person to join your App Store Connect team with a specified role and app access.
-- [object UserInvitationCreateRequest](userinvitationcreaterequest.md)
+- [object UserInvitationCreateRequest](./userinvitationcreaterequest.md)
   The request body you use to create a User Invitation.
-- [object UserInvitationsResponse](userinvitationsresponse.md)
+- [object UserInvitationsResponse](./userinvitationsresponse.md)
   The response body for endpoints that list pending App Store Connect team invitations.
-- [object UserInvitationVisibleAppsLinkagesResponse](userinvitationvisibleappslinkagesresponse.md)
+- [object UserInvitationVisibleAppsLinkagesResponse](./userinvitationvisibleappslinkagesresponse.md)
 
 
 ---

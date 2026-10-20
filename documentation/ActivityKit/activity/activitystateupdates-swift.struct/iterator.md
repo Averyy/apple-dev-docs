@@ -1,7 +1,8 @@
 # Activity.ActivityStateUpdates.Iterator
 
 **Framework**: ActivityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator for accessing individual data entries from the series.
 
@@ -18,15 +19,16 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> Activity<Attributes>.ActivityStateUpdates.Iterator](activity/activitystateupdates-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> Activity<Attributes>.ActivityStateUpdates.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
-- [Activity.ActivityStateUpdates.Element](activity/activitystateupdates-swift.struct/element.md)
+- [Activity.ActivityStateUpdates.Element](./element.md)
   The type of element this asynchronous sequence produces.
 
 

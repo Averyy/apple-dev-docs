@@ -1,6 +1,7 @@
 # Starting and updating Live Activities with ActivityKit push notifications
 
-**Framework**: ActivityKit
+**Framework**: ActivityKit  
+**Role**: Article
 
 Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
 
@@ -12,15 +13,15 @@ ActivityKit offers functionality to start, update, and end Live Activities from 
 - Start Live Activities
 - Update or end Live Activities for a large audience with channels and broadcast push notifications
 
-> **Note**: [`Session 10185: Update Live Activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10185)
+> **Related session from WWDC23**: [Session 10185: Update Live Activities with push notifications](https://developer.apple.com/videos/play/wwdc2023/10185)
 
-##### Start and Update Live Activities
+##### Start and update Live Activities
 
 To start and update your Live Activities by sending ActivityKit push notifications to a device:
 
 1. Use ActivityKit functionality to obtain push tokens.
-2. Set up a remote notification server or make changes to your existing server to support ActivityKit push notifications. If you’re new to using push notifications, plan to spend time implementing your remote notification server. For more information, refer to [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns).
-3. Send the push tokens you receive from ActivityKit to your server and use them establish a token-based connection to APNs, as described in [`Establishing a token-based connection to APNs`](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns).
+2. Set up a remote notification server or make changes to your existing server to support ActivityKit push notifications. If you’re new to using push notifications, plan to spend time implementing your remote notification server. For more information, refer to [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md).
+3. Send the push tokens you receive from ActivityKit to your server and use them establish a token-based connection to APNs, as described in [Establishing a token-based connection to APNs](../UserNotifications/establishing-a-token-based-connection-to-apns.md).
 4. Handle updates to the push tokens and update or invalidate them on your server as needed.
 5. Send ActivityKit push notifications from your server with APNs using the push tokens, HTTP header fields, and JSON payloads described in this article to start, update, and end Live Activities.
 6. Test ActivityKit push notifications locally and verify that your Live Activity behaves as expected.
@@ -28,31 +29,31 @@ To start and update your Live Activities by sending ActivityKit push notificatio
 
 To start and update your Live Activities with ActivityKit push notifications on a channel:
 
-1. Enable broadcast capabilities for your app as described in [`Setting up broadcast push notifications`](https://developer.apple.com/documentation/usernotifications/setting-up-broadcast-push-notifications).
+1. Enable broadcast capabilities for your app as described in [Setting up broadcast push notifications](../UserNotifications/setting-up-broadcast-push-notifications.md).
 2. Set up a remote notification server or make changes to your existing server to support ActivityKit push notifications. If you’re new to using push notifications, plan to spend time implementing your remote notification server.
-3. Use channel creation request to create a channel for each Live Activity event. For more information, refer to [`Sending channel management requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-channel-management-requests-to-apns).
+3. Use channel creation request to create a channel for each Live Activity event. For more information, refer to [Sending channel management requests to APNs](../UserNotifications/sending-channel-management-requests-to-apns.md).
 4. Send the channel ID for the Live Activity event to your app.
 5. When you request a new activity with ActivityKit to subscribe for updates on the channel, use the channel push type with the channel ID.
 6. Send ActivityKit push notifications from your server to APNs using the channel ID, HTTP header fields, and JSON payloads described in this article to update and end Live Activities.
 7. Test ActivityKit push notifications locally and verify that your Live Activity behaves as expected.
 
-##### Add the Push Notifications Capability
+##### Add the Push Notifications capability
 
-In your Xcode project, start by adding the Push Notifications capability to your app in Xcode as described in [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns). Note that you can’t use the User Notifications framework to register your Live Activity for push notifications. Instead, you use ActivityKit to obtain a push token as described below. If you choose to use broadcast push notifications for your app, refer to [`Setting up broadcast push notifications`](https://developer.apple.com/documentation/usernotifications/setting-up-broadcast-push-notifications) for more details on enabling broadcast capability for your app.
+In your Xcode project, start by adding the Push Notifications capability to your app in Xcode as described in [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md). Note that you can’t use the User Notifications framework to register your Live Activity for push notifications. Instead, you use ActivityKit to obtain a push token as described below. If you choose to use broadcast push notifications for your app, refer to [Setting up broadcast push notifications](../UserNotifications/setting-up-broadcast-push-notifications.md) for more details on enabling broadcast capability for your app.
 
-> **Note**: You can’t enable broadcast capability through Xcode. You can only enable broadcast capabilities using [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com).
+> **Note**: You can’t enable broadcast capability through Xcode. You can only enable broadcast capabilities using [developer.apple.com](https://developer.apple.com).
 
-##### Create a Push Notification Server
+##### Create a push notification server
 
-Additionally, set up a remote notification server or make changes to your existing server and send JSON payloads to APNs as described below. If you’re new to using push notifications, plan to spend time implementing the remote notification server. For more information, refer to [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns). To use device push notifications, you use the push tokens that you receive from ActivityKit to send push notifications in your remote notification server. For more information about sending push notifications using push tokens, refer to [`Sending notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns).
+Additionally, set up a remote notification server or make changes to your existing server and send JSON payloads to APNs as described below. If you’re new to using push notifications, plan to spend time implementing the remote notification server. For more information, refer to [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md). To use device push notifications, you use the push tokens that you receive from ActivityKit to send push notifications in your remote notification server. For more information about sending push notifications using push tokens, refer to [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
-For broadcast push notifications, use the channel you created for the Live Activity and shared with the app to send push notifications in your remote notifications server. For more information on creating channels, refer to [`Sending channel management requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-channel-management-requests-to-apns). For information on how to send a push notification on a channel, refer to [`Sending broadcast push notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-broadcast-push-notification-requests-to-apns).
+For broadcast push notifications, use the channel you created for the Live Activity and shared with the app to send push notifications in your remote notifications server. For more information on creating channels, refer to [Sending channel management requests to APNs](../UserNotifications/sending-channel-management-requests-to-apns.md). For information on how to send a push notification on a channel, refer to [Sending broadcast push notification requests to APNs](../UserNotifications/sending-broadcast-push-notification-requests-to-apns.md).
 
-##### Start a Live Activity That Receives Push Token Updates
+##### Start a Live Activity that receives push token updates
 
-On devices that run iOS or iPadOS 17.1 and earlier, you can’t start Live Activities with ActivityKit push notifications. However, you can update and end them with ActivityKit push notifications. In your app, start a Live Activity with the [`request(attributes:content:pushType:)`](activity/request(attributes:content:pushtype:).md) function and pass [`token`](pushtype/token.md) to its `pushType` parameter. As a result, you receive a push token that’s unique to your Live Activity when you successfully start the Live Activity.
+On devices that run iOS or iPadOS 17.1 and earlier, you can’t start Live Activities with ActivityKit push notifications. However, you can update and end them with ActivityKit push notifications. In your app, start a Live Activity with the [`request(attributes:content:pushType:)`](./activity/request%28attributes,content,pushtype%29.md) function and pass [`token`](./pushtype/token.md) to its `pushType` parameter. As a result, you receive a push token that’s unique to your Live Activity when you successfully start the Live Activity.
 
-The following code snippet from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project starts a Live Activity and requests a push token:
+The following code snippet from the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project starts a Live Activity and requests a push token:
 
 ```swift
 func startActivity(hero: EmojiRanger) throws {
@@ -72,9 +73,9 @@ func startActivity(hero: EmojiRanger) throws {
 }
 ```
 
-Every time you start a new Live Activity, you need to send the push token to your server. However, the [`pushToken`](activity/pushtoken.md) isn’t available immediately after calling [`request(attributes:content:pushType:)`](activity/request(attributes:content:pushtype:).md), because push token creation happens asynchronously and may take some time. Take this into account before accessing the [`pushToken`](activity/pushtoken.md) synchronously. Instead, observe push token updates using the [`pushTokenUpdates`](activity/pushtokenupdates-swift.property.md) asynchronous sequence. This makes sure you receive the first push token, and any updates to it.
+Every time you start a new Live Activity, you need to send the push token to your server. However, the [`pushToken`](./activity/pushtoken.md) isn’t available immediately after calling [`request(attributes:content:pushType:)`](./activity/request%28attributes,content,pushtype%29.md), because push token creation happens asynchronously and may take some time. Take this into account before accessing the [`pushToken`](./activity/pushtoken.md) synchronously. Instead, observe push token updates using the [`pushTokenUpdates`](./activity/pushtokenupdates-swift.property.md) asynchronous sequence. This makes sure you receive the first push token, and any updates to it.
 
-For example, the following code snippet from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project uses an asynchronous [`Task`](https://developer.apple.com/documentation/swift/task) to receive push token updates. In the asynchronous for loop, it logs the updated token to the console for debugging and local testing, and sends it to the server:
+For example, the following code snippet from the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project uses an asynchronous [`Task`](../Swift/task.md) to receive push token updates. In the asynchronous for loop, it logs the updated token to the console for debugging and local testing, and sends it to the server:
 
 ```swift
 Task {
@@ -93,9 +94,9 @@ Task {
 
 The push token for a Live Activity may change throughout its duration. When your app receives a new token, it receives background runtime to process the updated token. Keep track of the push token for each Live Activity. Additionally, invalidate the previous, now-outdated token on your server when you receive an updated token to successfully send subsequent updates.
 
-##### Start a Live Activity That Supports Push Updates on a Channel
+##### Start a Live Activity that supports push updates on a channel
 
-You can update or end Live Activities by sending an ActivityKit push notification on a channel. To create a channel for your Live Activity event, refer to [`Sending channel management requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-channel-management-requests-to-apns). The channel you create has a unique identifier, called a channel ID, that devices use to subscribe to Live Activity updates. Your remote server provides the channel ID to your app before the Live Activity starts. In your app, start a Live Activity with the [`request(attributes:content:pushType:)`](activity/request(attributes:content:pushtype:).md) function and pass a channel to its `pushType` parameter with the channel ID. If the channel ID isn’t a valid channel, the Live Activity fails to start.
+You can update or end Live Activities by sending an ActivityKit push notification on a channel. To create a channel for your Live Activity event, refer to [Sending channel management requests to APNs](../UserNotifications/sending-channel-management-requests-to-apns.md). The channel you create has a unique identifier, called a channel ID, that devices use to subscribe to Live Activity updates. Your remote server provides the channel ID to your app before the Live Activity starts. In your app, start a Live Activity with the [`request(attributes:content:pushType:)`](./activity/request%28attributes,content,pushtype%29.md) function and pass a channel to its `pushType` parameter with the channel ID. If the channel ID isn’t a valid channel, the Live Activity fails to start.
 
 The following code snippet starts a Live Activity and subscribes to receive push notifications on channel ID:
 
@@ -118,14 +119,14 @@ func startLiveActivityWithChannel(hero: EmojiRanger) throws {
 }
 ```
 
-##### Start New Live Activities with Activitykit Push Notifications
+##### Start new Live Activities with ActivityKit push notifications
 
 You can start new Live Activities with ActivityKit push notifications. This option is especially useful for tracking events with Live Activities that occur more than once. For example, if someone starts a Live Activity to track their favorite sports team, the sports app might offer to automatically start a Live Activity for each of the team’s games. In the future, the person doesn’t have to remember to start the Live Activity from the app. Instead, a Live Activity for tracking the game might automatically start from an ActivityKit push notification you sent with your remote notification server and APNs.
 
 To start Live Activities from ActivityKit push notifications, configure your app to support push notifications. Then obtain the token for starting a Live Activity:
 
-- Use the [`pushToStartTokenUpdates`](activity/pushtostarttokenupdates.md) asynchronous sequence to retrieve a push-to-start token that allows you to start new Live Activities. You don’t have to start a Live Activity from your app to receive the push-to-start token.
-- Send the push-to-start token to your server and use the [`pushToStartTokenUpdates`](activity/pushtostarttokenupdates.md) sequence to receive token updates. Similar to the update token, update it on your server when needed and invalidate the old token.
+- Use the [`pushToStartTokenUpdates`](./activity/pushtostarttokenupdates.md) asynchronous sequence to retrieve a push-to-start token that allows you to start new Live Activities. You don’t have to start a Live Activity from your app to receive the push-to-start token.
+- Send the push-to-start token to your server and use the [`pushToStartTokenUpdates`](./activity/pushtostarttokenupdates.md) sequence to receive token updates. Similar to the update token, update it on your server when needed and invalidate the old token.
 - On your push notification server, use the push-to-start token to send JSON payloads to APNs that start a new Live Activity.
 - When the system receives the ActivityKit push notification on a device, it starts a new Live Activity, wakes up your app, and grants it background runtime to allow you to download assets that the Live Activity needs.
 - While the system starts the new Live Activity and wakes up your app, you receive the push token you use for updates. To update and end the Live Activity on devices that aren’t running iOS 18 or iPadOS 18, use this update push token as if you obtained it by starting a Live Activity from within your app.
@@ -133,7 +134,7 @@ To start Live Activities from ActivityKit push notifications, configure your app
 
 > **Note**: You can’t use broadcast push notifications to start a Live Activity.
 
-##### Construct the Activitykit Remote Push Notification Payload
+##### Construct the ActivityKit remote push notification payload
 
 To successfully start, update, or end a Live Activity with an ActivityKit push notification, send an HTTP request to APNs that conforms to the following requirements:
 
@@ -141,7 +142,7 @@ To successfully start, update, or end a Live Activity with an ActivityKit push n
 - Set the `apns-topic` header field using the following format: `<your bundleID>.push-type.liveactivity`.
 - Set the value for the `apns-priority` header field to `5` or `10`. For more information, refer to “Determine the update frequency” below.
 
-For more information about request headers, refer to [`Sending notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns).
+For more information about request headers, refer to [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
 To successfully update or end a Live Activity with an ActivityKit push notification to a channel, send an HTTP request to APNs that conforms to the following requirements:
 
@@ -149,7 +150,7 @@ To successfully update or end a Live Activity with an ActivityKit push notificat
 - Set the `apns-channel-id` header field to the channel you’re using.
 - Set the value for the `apns-priority` header field to `5` or `10`. For more information, refer to the “Determine the update frequency” section of this article, below.
 
-For more information about request headers, refer to [`Sending broadcast push notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-broadcast-push-notification-requests-to-apns).
+For more information about request headers, refer to [Sending broadcast push notification requests to APNs](../UserNotifications/sending-broadcast-push-notification-requests-to-apns.md).
 
 In your request’s  `aps` dictionary:
 
@@ -157,12 +158,12 @@ In your request’s  `aps` dictionary:
 - To start a Live Activity, refer to “Construct the payload that starts a Live Activity” below.
 - To update a Live Activity, set the value for the `event` key to `update`.
 - To end a Live Activity, set the value for the `event` key to `end`. If you end a Live Activity, include the final content state to make sure the Live Activity displays the latest data after it ends.
-- Set the fields for the `content-state` key to match your custom [`Activity.ContentState`](activity/contentstate-swift.typealias.md) type to ensure the system can decode the JSON payload and update or end the Live Activity. Additionally, don’t use any custom JSON encoding strategies to encode your data, because the system always decodes JSON payloads for Live Activity updates using its default encoding strategies. Custom encoding strategies will result in update failures.
+- Set the fields for the `content-state` key to match your custom [`Activity.ContentState`](./activity/contentstate-swift.typealias.md) type to ensure the system can decode the JSON payload and update or end the Live Activity. Additionally, don’t use any custom JSON encoding strategies to encode your data, because the system always decodes JSON payloads for Live Activity updates using its default encoding strategies. Custom encoding strategies will result in update failures.
 - To mark a Live Activity as outdated with an update, optionally set the `stale-date`. For more information, refer to the “Mark a Live Activity as outdated by setting a stale date” section below.
 - To set a custom dismissal date that tells the system to remove an ended Live Activity from the Lock Screen, refer to the “End the Live Activity with a custom dismissal date” section below.
 - To alert a person about a critical Live Activity update, optionally provide an `alert` to light up their device and display the expanded presentation on devices that support the Dynamic Island or a banner on devices that don’t support it.
 
-The following payload updates the Live Activity of the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) example with the latest information. The content of `content-state` must match the properties of the custom [`Activity.ContentState`](activity/contentstate-swift.typealias.md) type you declare in your [`ActivityAttributes`](activityattributes.md) implementation. In the example, `content-state` matches the properties of the custom `AdventureAttributes.ContentState` type of the sample code project. Additionally, the example payload includes an alert with a custom sound to let the player know that the hero has been knocked down and requires a healing potion.
+The following payload updates the Live Activity of the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) example with the latest information. The content of `content-state` must match the properties of the custom [`Activity.ContentState`](./activity/contentstate-swift.typealias.md) type you declare in your [`ActivityAttributes`](./activityattributes.md) implementation. In the example, `content-state` matches the properties of the custom `AdventureAttributes.ContentState` type of the sample code project. Additionally, the example payload includes an alert with a custom sound to let the player know that the hero has been knocked down and requires a healing potion.
 
 ```json
 {
@@ -188,13 +189,13 @@ The following payload updates the Live Activity of the [`Emoji Rangers: Supporti
 }
 ```
 
-In your alert implementation, consider localizing both strings. For more information on displaying alerts for a remote notification, including localized alert messages and a reference of available keys, refer to [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification).
+In your alert implementation, consider localizing both strings. For more information on displaying alerts for a remote notification, including localized alert messages and a reference of available keys, refer to [Generating a remote notification](../UserNotifications/generating-a-remote-notification.md).
 
 Remember that a person’s device may not receive a push notification — for example, if they’re in an area without a network connection. Similarly, the system ignores an ActivityKit push notification if it arrives after the Live Activity ends. Both cases can cause a Live Activity to display outdated information. To help reduce the chance of showing outdated information, update your Live Activity from your app in addition to push notifications.
 
 > **Note**: When you send ActivityKit push notifications to a device, the system wakes the widget extension to render the UI of your Live Activity.
 
-##### Construct the Payload That Starts a Live Activity
+##### Construct the payload that starts a Live Activity
 
 The JSON payload for starting a Live Activity with an ActivityKit push notification is similar to the payload you use for updates. However, it comes with the following requirements:
 
@@ -271,21 +272,21 @@ For devices running iOS 18 and later and iPadOS 18 or later, you can add `input-
         }
 ```
 
-##### Test Live Activity Updates Locally
+##### Test Live Activity updates locally
 
 During development, verify your JSON payloads and Live Activity updates locally. Using command-line tools and Simulator or a test device, you can send a JSON payload from the command line to APNs and receive Live Activity updates to verify that your payload updates the Live Activity and the Live Activity behaves as expected.
 
 To locally test Live Activity updates during development:
 
-1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/usernotifications/sending-push-notifications-using-command-line-tools).
+1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [Sending push notifications using command-line tools](../UserNotifications/sending-push-notifications-using-command-line-tools.md).
 2. Add code that logs the push token to the console when you start a new Live Activity in your app.
 3. Run your app in Simulator or on a test device and start a Live Activity.
 4. Copy the logged push token from the console and set it as the `$ACTIVITY_PUSH_TOKEN` environment variable in Terminal.
 5. Use a `curl` command to send a Live Activity update using APNs. Set the value of the `apns-priority` header field to `10` to deliver the update quickly with high priority.
 
-The following example shows a curl command that the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project could use to test a Live Activity update.
+The following example shows a curl command that the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project could use to test a Live Activity update.
 
-```None
+```
 curl \
  --header "apns-topic: com.example.apple-samplecode.Emoji-Rangers.push-type.liveactivity" \
  --header "apns-push-type: liveactivity" \
@@ -304,53 +305,53 @@ curl \
  --http2 https://api.sandbox.push.apple.com/3/device/$ACTIVITY_PUSH_TOKEN
 ```
 
-> **Note**: To test ActivityKit push notifications in Simulator, use a [`Mac with the Apple T2 Security Chip`](https://developer.apple.comhttps://support.apple.com/en-us/HT208862) or a [`Mac with Apple silicon`](https://developer.apple.comhttps://support.apple.com/en-us/HT211814) that runs macOS 13 or later.
+> **Note**: To test ActivityKit push notifications in Simulator, use a [Mac with the Apple T2 Security Chip](https://support.apple.com/en-us/HT208862) or a [Mac with Apple silicon](https://support.apple.com/en-us/HT211814) that runs macOS 13 or later.
 
 To locally test Live Activity updates to a channel during development:
 
-1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/usernotifications/sending-push-notifications-using-command-line-tools).
+1. Set up your command line as described in the “Send a Push Notification Using a Token” section of [Sending push notifications using command-line tools](../UserNotifications/sending-push-notifications-using-command-line-tools.md).
 2. Create a new channel, and set it as `$CHANNEL_ID` variable in your terminal.
 3. Use the newly created channel with ActivityKit when you request a Live Activity.
 4. Run your app in Simulator or on a test device and start a Live Activity.
 5. Use a `curl` command to send a Live Activity update using APNs. Set the value of the `apns-priority` header field to `10` to deliver the update quickly with high priority.
 
-> **Note**: You can also use Push Notifications Console to send ActivityKit push notifications instead of using Terminal. For more information, refer to [`Testing notifications using the Push Notification Console`](https://developer.apple.com/documentation/usernotifications/testing-notifications-using-the-push-notification-console).
+> **Note**: You can also use Push Notifications Console to send ActivityKit push notifications instead of using Terminal. For more information, refer to [Testing notifications using the Push Notification Console](../UserNotifications/testing-notifications-using-the-push-notification-console.md).
 
 If you encounter failures while sending an ActivityKit push notification:
 
 - Ensure the `curl` command succeeded. An error might indicate an incorrect field for the request, or errors setting up the command-line environment.
 - Use the Console app to view device logs and look for errors that could help you understand the issue. Processes in Console that may contain relevant information are `liveactivitiesd`, `apsd`, and `chronod`.
 
-##### Determine the Update Frequency
+##### Determine the update frequency
 
 The system allows for a certain budget of ActivityKit push notifications per hour. As with other push notifications you send with APNs, you can set the HTTP header field `apns-priority` for your requests to specify the priority of an ActivityKit push notification:
 
 - If you don’t specify the `apns-priority` value, APNs delivers the ActivityKit push notification immediately with the default priority of `10` and counts it toward the notification budget that the system imposes.
 - If you exceed the budget, the system may throttle your ActivityKit push notifications.
 
-To avoid throttling, you can send a low-priority ActivityKit push notification that doesn’t count toward the budget by setting the HTTP header field `apns-priority` to `5`. Consider this lower priority first before using the priority of `10`. In many cases, choosing a mix of priority `5` and `10` for updates prevents the system from throttling your Live Activity updates. For example, the Live Activity of the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project could use priority `5` for updates that don’t require a person’s immediate attention, like when the hero heals by a few points. When the hero requires a healing potion, the example would use a priority of `10` to immediately update the Live Activity and let the person know about the important change.
+To avoid throttling, you can send a low-priority ActivityKit push notification that doesn’t count toward the budget by setting the HTTP header field `apns-priority` to `5`. Consider this lower priority first before using the priority of `10`. In many cases, choosing a mix of priority `5` and `10` for updates prevents the system from throttling your Live Activity updates. For example, the Live Activity of the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project could use priority `5` for updates that don’t require a person’s immediate attention, like when the hero heals by a few points. When the hero requires a healing potion, the example would use a priority of `10` to immediately update the Live Activity and let the person know about the important change.
 
 However, your app may need to update its Live Activity more frequently, causing you to hit the budget limit for ActivityKit push notifications. For example, if your app allows people to track a sports event like a basketball match that requires many updates per minute, you may not be able to update your Live Activity often enough.
 
 To allow for use cases like this, you can enable your Live Activities to receive frequent ActivityKit push notifications:
 
-- In Xcode, open your target’s Info pane and add the [`NSSupportsLiveActivitiesFrequentUpdates`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates) entry to your app’s custom iOS target properties, then set its Boolean value to `YES`.
+- In Xcode, open your target’s Info pane and add the [`NSSupportsLiveActivitiesFrequentUpdates`](../BundleResources/information-property-list/nssupportsliveactivitiesfrequentupdates.md) entry to your app’s custom iOS target properties, then set its Boolean value to `YES`.
 
-People can deactivate frequent ActivityKit push notifications for your app in the Settings app. In your code, use [`frequentPushesEnabled`](activityauthorizationinfo/frequentpushesenabled.md) to detect whether a person has deactivated frequent push notifications, and display information in your app that asks them to reactivate frequent ActivityKit push notifications. Additionally, send the value of this setting to your server and adjust the update frequency accordingly.
+People can deactivate frequent ActivityKit push notifications for your app in the Settings app. In your code, use [`frequentPushesEnabled`](./activityauthorizationinfo/frequentpushesenabled.md) to detect whether a person has deactivated frequent push notifications, and display information in your app that asks them to reactivate frequent ActivityKit push notifications. Additionally, send the value of this setting to your server and adjust the update frequency accordingly.
 
-Similar to other asynchronous sequences ActivityKit provides to receive configuration updates, you can subscribe to changes to the frequent Live Activity push notification setting with the [`frequentPushEnablementUpdates`](activityauthorizationinfo/frequentpushenablementupdates-swift.property.md) stream.
+Similar to other asynchronous sequences ActivityKit provides to receive configuration updates, you can subscribe to changes to the frequent Live Activity push notification setting with the [`frequentPushEnablementUpdates`](./activityauthorizationinfo/frequentpushenablementupdates-swift.property.md) stream.
 
-For more information on available HTTP headers and sending requests to APNs, refer to [`Sending notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns).
+For more information on available HTTP headers and sending requests to APNs, refer to [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
-##### End the Live Activity with a Custom Dismissal Date
+##### End the Live Activity with a custom dismissal date
 
 When you end a Live Activity, by default the Live Activity appears on the Lock Screen for up to four hours after it ends to allow people to glance at their phone to refer to the latest information. To change the time until the system removes a Live Activity from the Lock Screen after it ends, include the `"dismissal-date"` entry in the `"aps"` dictionary of your JSON payload. If you don’t include the `"dismissal-date"`, your Live Activity uses the system’s default dismissal behavior. To dismiss the Live Activity from the Lock Screen immediately after it ends, provide a date for `"dismissal-date"` that’s in the past — for example, `"dismissal-date": 1663177260`. Alternatively, provide a date within a four-hour window to set a custom dismissal date.
 
-##### Mark a Live Activity As Outdated By Setting a Stale Date
+##### Mark a Live Activity as outdated by setting a stale date
 
-In some scenarios — for example, if a person enters an area without network connectivity — you might not be able to update the Live Activity with new information, causing it to display outdated data. To provide the best possible user experience and let the person know that the Live Activity displays outdated information, add a timestamp in the optional `stale-date` field to provide the time when the system considers the Live Activity to be stale. With each update, you can advance this `stale-date`. When you can’t update the Live Activity for some time until it becomes stale, the [`activityState`](activity/activitystate.md) changes to [`ActivityState.stale`](activitystate/stale.md) at the specified date. Use the [`activityStateUpdates`](activity/activitystateupdates-swift.property.md) stream in your app to monitor the activity state and respond to outdated Live Activities that haven’t received updates. For example, while a person has network connectivity, a sports app could update the Live Activity with the latest game information and advance the stale date. When it becomes stale, it displays text to indicate that the displayed information is outdated.
+In some scenarios — for example, if a person enters an area without network connectivity — you might not be able to update the Live Activity with new information, causing it to display outdated data. To provide the best possible user experience and let the person know that the Live Activity displays outdated information, add a timestamp in the optional `stale-date` field to provide the time when the system considers the Live Activity to be stale. With each update, you can advance this `stale-date`. When you can’t update the Live Activity for some time until it becomes stale, the [`activityState`](./activity/activitystate.md) changes to [`ActivityState.stale`](./activitystate/stale.md) at the specified date. Use the [`activityStateUpdates`](./activity/activitystateupdates-swift.property.md) stream in your app to monitor the activity state and respond to outdated Live Activities that haven’t received updates. For example, while a person has network connectivity, a sports app could update the Live Activity with the latest game information and advance the stale date. When it becomes stale, it displays text to indicate that the displayed information is outdated.
 
-##### Display the Most Important Live Activity in the Dynamic Island
+##### Display the most important Live Activity in the Dynamic Island
 
 If your app starts more than one Live Activity, provide a `relevance-score` in your JSON payload to determine the order of your Live Activities on the Lock Screen and which of your Live Activities appears in the Dynamic Island:
 
@@ -379,15 +380,16 @@ The following example payload provides a relevance score of `100` to make sure t
 
 ## See Also
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+### Starting a Live Activity
+- [Displaying live data with Live Activities](./displaying-live-data-with-live-activities.md)
   Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
-- [class Activity](activity.md)
+- [class Activity](./activity.md)
   The object you use to start, update, and end a Live Activity.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [NSSupportsLiveActivities](../bundleresources/information-property-list/nssupportsliveactivities.md)
+- [NSSupportsLiveActivities](../BundleResources/information-property-list/nssupportsliveactivities.md)
   A Boolean value that indicates whether an app supports Live Activities.
-- [NSSupportsLiveActivitiesFrequentUpdates](../bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates.md)
+- [NSSupportsLiveActivitiesFrequentUpdates](../BundleResources/information-property-list/nssupportsliveactivitiesfrequentupdates.md)
   A Boolean value that indicates whether an app can update its Live Activities frequently.
 
 

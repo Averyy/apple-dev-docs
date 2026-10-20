@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error-throwing closure to evaluate whether two elements are equivalent, for purposes of filtering.
 
@@ -22,7 +23,8 @@ let predicate: (Publishers.TryRemoveDuplicates<Upstream>.Output, Publishers.TryR
 
 ## See Also
 
-- [let upstream: Upstream](publishers/tryremoveduplicates/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

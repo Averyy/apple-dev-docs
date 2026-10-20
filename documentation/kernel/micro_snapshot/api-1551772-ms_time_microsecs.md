@@ -1,14 +1,15 @@
 # ms_time_microsecs
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 uint64_t ms_time_microsecs;
 ```
 

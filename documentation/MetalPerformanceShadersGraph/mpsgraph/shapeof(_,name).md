@@ -1,7 +1,8 @@
 # shapeOf(_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a shape-of operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a shape-of operation and returns the result tensor.
 
 ```swift
 func shapeOf(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) shapeOfTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

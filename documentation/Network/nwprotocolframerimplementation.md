@@ -1,7 +1,8 @@
 # NWProtocolFramerImplementation
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol to which your classes can conform in order to implement a custom framing protocol.
 
@@ -23,29 +24,30 @@ protocol NWProtocolFramerImplementation : AnyObject
 ## Topics
 
 ### Handling Instance Lifetime
-- [init(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/init(framer:).md)
+- [init(framer: NWProtocolFramer.Instance)](./nwprotocolframerimplementation/init%28framer%29.md)
   Initializes your custom framing protocol for use in one connection attempt.
-- [func start(framer: NWProtocolFramer.Instance) -> NWProtocolFramer.StartResult](nwprotocolframerimplementation/start(framer:).md)
+- [func start(framer: NWProtocolFramer.Instance) -> NWProtocolFramer.StartResult](./nwprotocolframerimplementation/start%28framer%29.md)
   Requests that your protocol set up its state and begin a handshake, if necessary.
-- [NWProtocolFramer.StartResult](nwprotocolframer/startresult.md)
+- [NWProtocolFramer.StartResult](./nwprotocolframer/startresult.md)
   Results that you send to indicate the disposition of your protocol after receiving the call to start.
-- [func wakeup(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/wakeup(framer:).md)
+- [func wakeup(framer: NWProtocolFramer.Instance)](./nwprotocolframerimplementation/wakeup%28framer%29.md)
   Delivers a scheduled wakeup event.
-- [func stop(framer: NWProtocolFramer.Instance) -> Bool](nwprotocolframerimplementation/stop(framer:).md)
+- [func stop(framer: NWProtocolFramer.Instance) -> Bool](./nwprotocolframerimplementation/stop%28framer%29.md)
   Requests that your protocol send any final messages to close the connection.
-- [func cleanup(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/cleanup(framer:).md)
+- [func cleanup(framer: NWProtocolFramer.Instance)](./nwprotocolframerimplementation/cleanup%28framer%29.md)
   Indicates that your protocol should clean up all allocations before being deallocated.
-- [static var label: String](nwprotocolframerimplementation/label.md)
+- [static var label: String](./nwprotocolframerimplementation/label.md)
   A label defined by your custom protocol for use in debugging.
 ### Handling Data
-- [func handleOutput(framer: NWProtocolFramer.Instance, message: NWProtocolFramer.Message, messageLength: Int, isComplete: Bool)](nwprotocolframerimplementation/handleoutput(framer:message:messagelength:iscomplete:).md)
+- [func handleOutput(framer: NWProtocolFramer.Instance, message: NWProtocolFramer.Message, messageLength: Int, isComplete: Bool)](./nwprotocolframerimplementation/handleoutput%28framer,message,messagelength,iscomplete%29.md)
   Notifies your protocol about a new outbound message.
-- [func handleInput(framer: NWProtocolFramer.Instance) -> Int](nwprotocolframerimplementation/handleinput(framer:).md)
+- [func handleInput(framer: NWProtocolFramer.Instance) -> Int](./nwprotocolframerimplementation/handleinput%28framer%29.md)
   Notifies your protocol that new inbound data is available to parse.
 
 ## See Also
 
-- [NWProtocolFramer.Instance](nwprotocolframer/instance.md)
+### Implementing Framer Protocols
+- [NWProtocolFramer.Instance](./nwprotocolframer/instance.md)
   An object that represents a single instance of your custom protocol running in a connection.
 
 

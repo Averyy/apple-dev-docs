@@ -1,7 +1,8 @@
 # CKSyncEngineZoneDeletionReason.purged
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The owner of the iCloud account purged your app’s data using the Settings app.
 
@@ -20,15 +21,20 @@ The owner of the iCloud account purged your app’s data using the Settings app.
 case purged
 ```
 
+```c
+CKSyncEngineZoneDeletionReasonPurged
+```
+
 #### Discussion
 
 > ❗ **Important**: Upon receipt of deletions with this reason, you must delete any locally cached data and not resend it to iCloud.
 
 ## See Also
 
-- [CKSyncEngineZoneDeletionReason.deleted](cksyncenginezonedeletionreason/deleted.md)
+### Deletion reasons
+- [CKSyncEngineZoneDeletionReason.deleted](./deleted.md)
   Your app deleted the record zone.
-- [CKSyncEngineZoneDeletionReason.encryptedDataReset](cksyncenginezonedeletionreason/encrypteddatareset.md)
+- [CKSyncEngineZoneDeletionReason.encryptedDataReset](./encrypteddatareset.md)
   The owner of the iCloud account reset their encrypted data.
 
 

@@ -1,14 +1,15 @@
 # dk_provision_extent_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef struct dk_provision_extent_t {
     ...
 } dk_provision_extent_t;
@@ -17,10 +18,10 @@ typedef struct dk_provision_extent_t {
 ## Topics
 
 ### Instance Properties
-- [length](dk_provision_extent_t/1644149-length.md)
-- [offset](dk_provision_extent_t/1644144-offset.md)
-- [provisionType](dk_provision_extent_t/1644147-provisiontype.md)
-- [reserved](dk_provision_extent_t/1644143-reserved.md)
+- [length](./dk_provision_extent_t/api-1644149-length.md)
+- [offset](./dk_provision_extent_t/api-1644144-offset.md)
+- [provisionType](./dk_provision_extent_t/api-1644147-provisiontype.md)
+- [reserved](./dk_provision_extent_t/api-1644143-reserved.md)
 
 
 ---

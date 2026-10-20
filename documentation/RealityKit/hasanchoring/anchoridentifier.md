@@ -1,7 +1,8 @@
 # anchorIdentifier
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the AR anchor with which the anchor entity is associated, or `nil` if it isn’t currently anchored.
 
@@ -11,7 +12,9 @@ The identifier of the AR anchor with which the anchor entity is associated, or `
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+ - Deprecated
+- visionOS - Deprecated
+
+> **Deprecated**: Anchoring with ARAnchor is not available on visionOS.
 
 ## Declaration
 

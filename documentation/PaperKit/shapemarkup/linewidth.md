@@ -1,7 +1,8 @@
 # lineWidth
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The line width of the shape’s path.
 
@@ -20,11 +21,12 @@ var lineWidth: CGFloat { get set }
 
 ## See Also
 
-- [var fillColor: CGColor?](shapemarkup/fillcolor.md)
+### Configuring fill and stroke
+- [var fillColor: CGColor?](./fillcolor.md)
   The color used to fill the shape’s path.
-- [var strokeColor: CGColor?](shapemarkup/strokecolor.md)
+- [var strokeColor: CGColor?](./strokecolor.md)
   The color used to stroke the shape’s path.
-- [var opacity: CGFloat](shapemarkup/opacity.md)
+- [var opacity: CGFloat](./opacity.md)
   The opacity of the shape.
 
 

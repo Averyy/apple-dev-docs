@@ -1,14 +1,15 @@
 # PE_write_socd_client_buffer
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void PE_write_socd_client_buffer(vm_offset_t offset, const void *in_buff, vm_size_t size);
 ```
 

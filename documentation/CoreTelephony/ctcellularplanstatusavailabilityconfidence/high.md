@@ -1,7 +1,8 @@
 # CTCellularPlanStatusAvailabilityConfidence.high
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A high level of confidence about the availability of a cellular plan.
 
@@ -16,9 +17,14 @@ A high level of confidence about the availability of a cellular plan.
 case high
 ```
 
+```c
+CTCellularPlanStatusAvailabilityConfidenceHigh
+```
+
 ## See Also
 
-- [CTCellularPlanStatusAvailabilityConfidence.low](ctcellularplanstatusavailabilityconfidence/low.md)
+### Determining a confidence level
+- [CTCellularPlanStatusAvailabilityConfidence.low](./low.md)
   A low level of confidence about the availability of a cellular plan.
 
 

@@ -1,7 +1,8 @@
 # showsWidgetLabel
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether an accessory family widget can display an accessory label.
 
@@ -45,19 +46,20 @@ var body: some View {
 
 ```
 
-This environment value is most useful when defining the appearance for the [`WidgetFamily.accessoryCircular`](https://developer.apple.com/documentation/widgetkit/widgetfamily/accessorycircular) widget family, because it’s value can change depending on where the widget appears. For example, if the widget is the top circular complication on the Infograph watch face, the value is `true`. Otherwise it is `false`. The environment variable is always `false` in iOS.
+This environment value is most useful when defining the appearance for the [`WidgetFamily.accessoryCircular`](../../WidgetKit/widgetfamily/accessorycircular.md) widget family, because it’s value can change depending on where the widget appears. For example, if the widget is the top circular complication on the Infograph watch face, the value is `true`. Otherwise it is `false`. The environment variable is always `false` in iOS.
 
-Other families always have the same value, regardless of where the widget appears. For the [`WidgetFamily.accessoryCorner`](https://developer.apple.com/documentation/widgetkit/widgetfamily/accessorycorner) widget family, the value is always `true`. For other families, it is `false`.
+Other families always have the same value, regardless of where the widget appears. For the [`WidgetFamily.accessoryCorner`](../../WidgetKit/widgetfamily/accessorycorner.md) widget family, the value is always `true`. For other families, it is `false`.
 
 ## See Also
 
-- [var showsWidgetContainerBackground: Bool](environmentvalues/showswidgetcontainerbackground.md)
+### Widgets
+- [var showsWidgetContainerBackground: Bool](./showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
-- [var widgetFamily: WidgetFamily](environmentvalues/widgetfamily.md)
+- [var widgetFamily: WidgetFamily](./widgetfamily.md)
   The template of the widget — small, medium, or large.
-- [var widgetRenderingMode: WidgetRenderingMode](environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](./widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
-- [var widgetContentMargins: EdgeInsets](environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](./widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
 
 

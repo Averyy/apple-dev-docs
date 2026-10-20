@@ -1,7 +1,8 @@
 # label
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized label that assistive apps use to describe the custom rotor.
 
@@ -12,6 +13,10 @@ The localized label that assistive apps use to describe the custom rotor.
 
 ```swift
 var label: String { get set }
+```
+
+```objc
+@property (copy) NSString * label;
 ```
 
 

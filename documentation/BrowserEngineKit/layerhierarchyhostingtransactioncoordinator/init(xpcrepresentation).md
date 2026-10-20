@@ -1,7 +1,8 @@
 # init(xpcRepresentation:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transaction coordinator from an XPC object.
 
@@ -15,6 +16,10 @@ Creates a transaction coordinator from an XPC object.
 init(xpcRepresentation: xpc_object_t?) throws
 ```
 
+```objc
++ (BELayerHierarchyHostingTransactionCoordinator *) coordinatorWithXPCRepresentation:(xpc_object_t) xpcRepresentation error:(NSError **) error;
+```
+
 #### Discussion
 
 This initializer can fail and throw an error if the `xpcRepresentation` doesn’t represent a transaction coordinator.
@@ -25,7 +30,8 @@ This initializer can fail and throw an error if the `xpcRepresentation` doesn’
 
 ## See Also
 
-- [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhostingtransactioncoordinator/createxpcrepresentation.md)
+### Sharing a transaction coordinator using XPC
+- [func createXPCRepresentation() -> xpc_object_t](./createxpcrepresentation%28%29.md)
   Creates a representation of the transaction coordinator that you send to another process.
 
 

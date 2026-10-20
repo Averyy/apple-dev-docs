@@ -1,7 +1,8 @@
 # categories
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the categorized device activity during the activity segment.
 

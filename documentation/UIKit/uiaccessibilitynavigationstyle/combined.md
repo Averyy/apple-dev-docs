@@ -1,7 +1,8 @@
 # UIAccessibilityNavigationStyle.combined
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The receiver’s elements should be combined and navigated as a single item.
 
@@ -9,7 +10,7 @@ The receiver’s elements should be combined and navigated as a single item.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,11 +20,16 @@ The receiver’s elements should be combined and navigated as a single item.
 case combined
 ```
 
+```c
+UIAccessibilityNavigationStyleCombined
+```
+
 ## See Also
 
-- [UIAccessibilityNavigationStyle.automatic](uiaccessibilitynavigationstyle/automatic.md)
+### Constants
+- [UIAccessibilityNavigationStyle.automatic](./automatic.md)
   The assistive technology automatically determines how the receiver’s elements should be navigated.
-- [UIAccessibilityNavigationStyle.separate](uiaccessibilitynavigationstyle/separate.md)
+- [UIAccessibilityNavigationStyle.separate](./separate.md)
   The receiver’s elements should be navigated as separate elements.
 
 

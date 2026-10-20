@@ -1,7 +1,8 @@
 # NSHostingSceneBridgingOptions
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for how hosting views and controllers manage aspects of the associated window.
 
@@ -17,42 +18,43 @@ struct NSHostingSceneBridgingOptions
 ## Topics
 
 ### Geting bridging options
-- [static let all: NSHostingSceneBridgingOptions](nshostingscenebridgingoptions/all.md)
+- [static let all: NSHostingSceneBridgingOptions](./nshostingscenebridgingoptions/all.md)
   The hosting view’s associated window will have both its title bars and toolbars populated with values from their respective modifiers.
-- [static let title: NSHostingSceneBridgingOptions](nshostingscenebridgingoptions/title.md)
+- [static let title: NSHostingSceneBridgingOptions](./nshostingscenebridgingoptions/title.md)
   The hosting view’s associated window will have its title and subtitle populated with the values provided to the `navigationTitle(_:)` and `navigationSubtitle(_:)` modifiers, respectively.
-- [static let toolbars: NSHostingSceneBridgingOptions](nshostingscenebridgingoptions/toolbars.md)
+- [static let toolbars: NSHostingSceneBridgingOptions](./nshostingscenebridgingoptions/toolbars.md)
   The hosting view’s associated window will have its toolbar populated with any items provided to the `toolbar(content:)` modifier.
 ### Creating a bridging options
-- [init(rawValue: Int)](nshostingscenebridgingoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./nshostingscenebridgingoptions/init%28rawvalue%29.md)
   Creates a new set from a raw value.
-- [let rawValue: Int](nshostingscenebridgingoptions/rawvalue.md)
+- [let rawValue: Int](./nshostingscenebridgingoptions/rawvalue.md)
   The raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Unifying your app’s animations](unifying-your-app-s-animations.md)
+### Displaying SwiftUI views in AppKit
+- [Unifying your app’s animations](./unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [class NSHostingController](nshostingcontroller.md)
+- [class NSHostingController](./nshostingcontroller.md)
   An AppKit view controller that hosts SwiftUI view hierarchy.
-- [class NSHostingView](nshostingview.md)
+- [class NSHostingView](./nshostingview.md)
   An AppKit view that hosts a SwiftUI view hierarchy.
-- [class NSHostingMenu](nshostingmenu.md)
+- [class NSHostingMenu](./nshostingmenu.md)
   An AppKit menu with menu items that are defined by a SwiftUI View.
-- [struct NSHostingSizingOptions](nshostingsizingoptions.md)
+- [struct NSHostingSizingOptions](./nshostingsizingoptions.md)
   Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
-- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+- [class NSHostingSceneRepresentation](./nshostingscenerepresentation.md)
   An AppKit type that hosts and can present SwiftUI scenes
 
 

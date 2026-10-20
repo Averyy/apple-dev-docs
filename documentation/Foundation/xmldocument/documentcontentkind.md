@@ -1,7 +1,8 @@
 # documentContentKind
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the kind of output content for the receiver.
 
@@ -15,6 +16,10 @@ Sets the kind of output content for the receiver.
 var documentContentKind: XMLDocument.ContentKind { get set }
 ```
 
+```objc
+@property NSXMLDocumentContentKind documentContentKind;
+```
+
 #### Discussion
 
 Most of the differences among document-content kind have to do with the handling of content-less tags such as `<br>`.
@@ -25,15 +30,16 @@ Most of the differences among document-content kind have to do with the handling
 
 ## See Also
 
-- [var characterEncoding: String?](xmldocument/characterencoding.md)
+### Managing Document Attributes
+- [var characterEncoding: String?](./characterencoding.md)
   Sets the character encoding of the receiver to `encoding`,
-- [var dtd: XMLDTD?](xmldocument/dtd.md)
-  Returns an [`XMLDTD`](xmldtd.md) object representing the internal DTD associated with the receiver.
-- [var isStandalone: Bool](xmldocument/isstandalone.md)
+- [var dtd: XMLDTD?](./dtd.md)
+  Returns an [`XMLDTD`](../xmldtd.md) object representing the internal DTD associated with the receiver.
+- [var isStandalone: Bool](./isstandalone.md)
   Sets a Boolean value that specifies whether the receiver represents a standalone XML document.
-- [var mimeType: String?](xmldocument/mimetype.md)
+- [var mimeType: String?](./mimetype.md)
   Returns the MIME type for the receiver.
-- [var version: String?](xmldocument/version.md)
+- [var version: String?](./version.md)
   Sets the version of the receiver’s XML.
 
 

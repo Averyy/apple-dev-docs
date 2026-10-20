@@ -1,30 +1,31 @@
 # Saving captured photos
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Add an image and other data from a photo capture to the photo library.
 
 #### Overview
 
-When you complete a photo capture with [`AVCapturePhotoOutput`](avcapturephotooutput.md), you receive an [`AVCapturePhoto`](avcapturephoto.md) object that contains the image data, camera metadata, and any auxiliary images you requested, such as thumbnails or depth maps. You can retrieve this data individually from the [`AVCapturePhoto`](avcapturephoto.md) object. Or you can call its [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md) method to get a [`Data`](https://developer.apple.com/documentation/foundation/data) object that’s ready to save using the codec and file format you requested for that photo in [`AVCapturePhotoSettings`](avcapturephotosettings.md).
+When you complete a photo capture with [`AVCapturePhotoOutput`](./avcapturephotooutput.md), you receive an [`AVCapturePhoto`](./avcapturephoto.md) object that contains the image data, camera metadata, and any auxiliary images you requested, such as thumbnails or depth maps. You can retrieve this data individually from the [`AVCapturePhoto`](./avcapturephoto.md) object. Or you can call its [`fileDataRepresentation()`](./avcapturephoto/filedatarepresentation%28%29.md) method to get a [`Data`](../Foundation/data.md) object that’s ready to save using the codec and file format you requested for that photo in [`AVCapturePhotoSettings`](./avcapturephotosettings.md).
 
-After capturing a photo, use [`PhotoKit`](https://developer.apple.com/documentation/photokit) to add that data to the user’s photo library.
+After capturing a photo, use [PhotoKit](../PhotoKit/PhotoKit.md) to add that data to the user’s photo library.
 
-> **Note**:  If your app only needs to access content in the photo library, you can use the [`PhotoKit`](https://developer.apple.com/documentation/photokit) Photos picker instead, which doesn’t require you to request access from the user. To learn more, see [`Selecting Photos and Videos in iOS`](https://developer.apple.com/documentation/photokit/selecting-photos-and-videos-in-ios).
+> **Note**:  If your app only needs to access content in the photo library, you can use the [PhotoKit](../PhotoKit/PhotoKit.md) Photos picker instead, which doesn’t require you to request access from the user. To learn more, see [Selecting Photos and Videos in iOS](../PhotoKit/selecting-photos-and-videos-in-ios.md).
 
-##### Configure Properties and Capabilities for Your App Targets
+##### Configure properties and capabilities for your app targets
 
-You can use [`PhotoKit`](https://developer.apple.com/documentation/photokit) to enable read/write access to the user’s photo library. To do so, provide a static message for the [`NSPhotoLibraryUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryusagedescription) key in the `Info.plist` file to display to the user when your app requests access.
+You can use [PhotoKit](../PhotoKit/PhotoKit.md) to enable read/write access to the user’s photo library. To do so, provide a static message for the [`NSPhotoLibraryUsageDescription`](../BundleResources/information-property-list/nsphotolibraryusagedescription.md) key in the `Info.plist` file to display to the user when your app requests access.
 
-![A screenshot showing the photo library usage description in the Info tab of the app target. The highlighted string for Privacy Photo Library Usage Description reads This app accesses and saves media in your photo library. ](/images/com.apple.avfoundation/media-4132909@2x.png)
+![A screenshot showing the photo library usage description in the Info tab of the app target. The highlighted string for Privacy Photo Library Usage Description reads This app accesses and saves media in your photo library. ](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-4132909@2x.png)
 
-In macOS, you also need to enable the [`Photos Library Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.personal-information.photos-library) in the Signing & Capabilities tab for your app targets.
+In macOS, you also need to enable the [`Photos Library Entitlement`](../BundleResources/entitlements/com.apple.security.personal-information.photos-library.md) in the Signing & Capabilities tab for your app targets.
 
-![A screenshot showing the macOS Photos Library entitlement enabled in the Signing & Capabilities tab of the app target.](/images/com.apple.avfoundation/media-4132908@2x.png)
+![A screenshot showing the macOS Photos Library entitlement enabled in the Signing & Capabilities tab of the app target.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-4132908@2x.png)
 
 > ❗ **Important**:  Your app needs to contain the appropriate key in its `Info.plist` file, and the appropriate entitlement enabled in macOS, before it requests authorization or attempts to use a device. Otherwise, the system terminates your app.
 
-##### Request Permission to Access the Users Photo Library
+##### Request permission to access the user’s photo library
 
 Use the [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) [`requestAuthorization(for:handler:)`](https://developer.apple.com/documentation/photos/phphotolibrary/requestauthorization(for:handler:)) to request access to the photo library at an appropriate time, such as when the user first opens your app’s camera feature. Here’s an example:
 
@@ -49,12 +50,12 @@ var isPhotoLibraryReadWriteAccessGranted: Bool {
 
 > **Note**:  Don’t wait to request access to the photo library until after the user takes their first photo because the permission alert prevents their ability to take multiple photos.
 
-##### Use a Creation Request to Add a Photo Asset
+##### Use a creation request to add a photo asset
 
 Perform these steps to receive a captured photo and save it to the photo library:
 
-1. Adopt the [`AVCapturePhotoCaptureDelegate`](avcapturephotocapturedelegate.md) protocol and implement its [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method to receive a callback for each photo delivered in a capture request.
-2. Call [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md) on the [`AVCapturePhoto`](avcapturephoto.md) object provided by the protocol method to receive a data object containing the photo image data and its attachments, such as camera metadata and auxilliary images.
+1. Adopt the [`AVCapturePhotoCaptureDelegate`](./avcapturephotocapturedelegate.md) protocol and implement its [`photoOutput(_:didFinishProcessingPhoto:error:)`](./avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method to receive a callback for each photo delivered in a capture request.
+2. Call [`fileDataRepresentation()`](./avcapturephoto/filedatarepresentation%28%29.md) on the [`AVCapturePhoto`](./avcapturephoto.md) object provided by the protocol method to receive a data object containing the photo image data and its attachments, such as camera metadata and auxilliary images.
 3. Create a [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) to add the photo resource.
 
 The following code provides an example of this workflow:
@@ -93,9 +94,10 @@ func save(photo: AVCapturePhoto) async {
 
 ## See Also
 
-- [Tracking photo capture progress](tracking-photo-capture-progress.md)
+### Next steps
+- [Tracking photo capture progress](./tracking-photo-capture-progress.md)
   Monitor key events during capture to provide feedback in your camera UI.
-- [Capturing and saving Live Photos](capturing-and-saving-live-photos.md)
+- [Capturing and saving Live Photos](./capturing-and-saving-live-photos.md)
   Capture Live Photos like those created in the system Camera app and save them to the Photos library.
 
 

@@ -1,7 +1,8 @@
 # UIScene.WillEnterForegroundMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct WillEnterForegroundMessage
 ## Topics
 
 ### Initializers
-- [init(scene: UIScene)](uiscene/willenterforegroundmessage/init(scene:).md)
+- [init(scene: UIScene)](./willenterforegroundmessage/init%28scene%29.md)
 ### Instance Properties
-- [var scene: UIScene](uiscene/willenterforegroundmessage/scene.md)
+- [var scene: UIScene](./willenterforegroundmessage/scene.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

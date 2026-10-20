@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a size class from the specified SwiftUI size class.
 
@@ -9,7 +10,7 @@ Creates a size class from the specified SwiftUI size class.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

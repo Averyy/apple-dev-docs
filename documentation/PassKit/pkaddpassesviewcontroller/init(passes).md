@@ -1,7 +1,8 @@
 # init(passes:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly created add-passes view controller with an array of passes.
 
@@ -17,6 +18,10 @@ Initializes and returns a newly created add-passes view controller with an array
 init?(passes: [PKPass])
 ```
 
+```objc
+- (instancetype) initWithPasses:(NSArray<PKPass *> *) passes;
+```
+
 #### Return Value
 
 The initialized add-passes view controller object or `nil` if there was a problem initializing the object.
@@ -27,9 +32,10 @@ The initialized add-passes view controller object or `nil` if there was a proble
 
 ## See Also
 
-- [init?(pass: PKPass)](pkaddpassesviewcontroller/init(pass:).md)
+### Creating an add-passes view controller
+- [init?(pass: PKPass)](./init%28pass%29.md)
   Initializes and returns a newly created add-passes view controller with a single pass.
-- [init(issuerData: Data, signature: Data) throws](pkaddpassesviewcontroller/init(issuerdata:signature:).md)
+- [init(issuerData: Data, signature: Data) throws](./init%28issuerdata,signature%29.md)
   Initializes and returns a new add-passes view controller with the issuer data, and signature you provide.
 
 

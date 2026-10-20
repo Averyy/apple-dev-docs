@@ -1,7 +1,8 @@
 # CVMetalBufferCacheCreate(_:_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func CVMetalBufferCacheCreate(_ allocator: CFAllocator?, _ cacheAttributes: CFDictionary?, _ metalDevice: any MTLDevice, _ cacheOut: UnsafeMutablePointer<CVMetalBufferCache?>) -> CVReturn
+```
+
+```c
+extern CVReturn CVMetalBufferCacheCreate(CFAllocatorRef allocator, CFDictionaryRef cacheAttributes, id<MTLDevice>metalDevice, CVMetalBufferCacheRef*cacheOut);
 ```
 
 #### Return Value
@@ -34,11 +39,12 @@ Creates a new Buffer Cache.
 
 ## See Also
 
-- [func CVMetalBufferCacheCreateBufferFromImage(CFAllocator?, CVMetalBufferCache, CVImageBuffer, UnsafeMutablePointer<CVMetalBuffer?>) -> CVReturn](cvmetalbuffercachecreatebufferfromimage(_:_:_:_:).md)
-- [func CVMetalBufferCacheFlush(CVMetalBufferCache, CVOptionFlags)](cvmetalbuffercacheflush(_:_:).md)
-- [func CVMetalBufferCacheGetTypeID() -> CFTypeID](cvmetalbuffercachegettypeid().md)
-- [func CVMetalBufferGetBuffer(CVMetalBuffer) -> (any MTLBuffer)?](cvmetalbuffergetbuffer(_:).md)
-- [func CVMetalBufferGetTypeID() -> CFTypeID](cvmetalbuffergettypeid().md)
+### Functions
+- [func CVMetalBufferCacheCreateBufferFromImage(CFAllocator?, CVMetalBufferCache, CVImageBuffer, UnsafeMutablePointer<CVMetalBuffer?>) -> CVReturn](./cvmetalbuffercachecreatebufferfromimage%28_,_,_,_%29.md)
+- [func CVMetalBufferCacheFlush(CVMetalBufferCache, CVOptionFlags)](./cvmetalbuffercacheflush%28_,_%29.md)
+- [func CVMetalBufferCacheGetTypeID() -> CFTypeID](./cvmetalbuffercachegettypeid%28%29.md)
+- [func CVMetalBufferGetBuffer(CVMetalBuffer) -> (any MTLBuffer)?](./cvmetalbuffergetbuffer%28_%29.md)
+- [func CVMetalBufferGetTypeID() -> CFTypeID](./cvmetalbuffergettypeid%28%29.md)
 
 
 ---

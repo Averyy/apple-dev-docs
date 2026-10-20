@@ -1,12 +1,15 @@
 # SecACLUpdateAuthorizations(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the authorization tags for a given ACL.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Sets the authorization tags for a given ACL.
 func SecACLUpdateAuthorizations(_ acl: SecACL, _ authorizations: CFArray) -> OSStatus
 ```
 
+```c
+OSStatus SecACLUpdateAuthorizations(SecACLRef acl, CFArrayRef authorizations);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-An ACL entry includes a list of trusted apps, the name of the keychain item as it appears in user prompts, the prompt selector flag, and a list of one or more operations to which this ACL entry applies. Use this method to set a list of operations for an ACL entry, or set the [`kSecACLAuthorizationAny`](ksecaclauthorizationany.md) tag to allow all operations. Use the [`SecACLSetContents(_:_:_:_:)`](secaclsetcontents(_:_:_:_:).md) method to set the other information.
+An ACL entry includes a list of trusted apps, the name of the keychain item as it appears in user prompts, the prompt selector flag, and a list of one or more operations to which this ACL entry applies. Use this method to set a list of operations for an ACL entry, or set the [`kSecACLAuthorizationAny`](./ksecaclauthorizationany.md) tag to allow all operations. Use the [`SecACLSetContents(_:_:_:_:)`](./secaclsetcontents%28_,_,_,_%29.md) method to set the other information.
 
 Because an ACL entry is always associated with an access instance, when you modify an entry, you are modifying the access instance as well.
 

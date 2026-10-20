@@ -1,7 +1,8 @@
 # order
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort order that the comparator uses to compare.
 

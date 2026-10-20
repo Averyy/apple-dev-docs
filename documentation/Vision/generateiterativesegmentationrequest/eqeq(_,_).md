@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Vision  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two instances are equal.
 

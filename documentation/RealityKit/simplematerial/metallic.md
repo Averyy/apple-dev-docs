@@ -1,7 +1,8 @@
 # metallic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that you set to control whether the material has a metallic look.
 
@@ -11,7 +12,7 @@ A value that you set to control whether the material has a metallic look.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,17 +29,18 @@ This property defines whether a material is dielectric (`0.0`) or a metallic (`1
 
 ## See Also
 
-- [var color: SimpleMaterial.BaseColor](simplematerial/color.md)
+### Characterizing a material
+- [var color: SimpleMaterial.BaseColor](./color.md)
   The material’s color.
-- [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
+- [var baseColor: MaterialColorParameter](./basecolor-swift.property.md)
   The base color of the material.
-- [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
+- [SimpleMaterial.BaseColor](./basecolor-swift.typealias.md)
   The type used to represent base color.
-- [var tintColor: NSColor](simplematerial/tintcolor-6v03h.md)
+- [var tintColor: NSColor](./tintcolor-6v03h.md)
   A tint color applied to the base color in macOS.
-- [SimpleMaterial.Texture](simplematerial/texture.md)
+- [SimpleMaterial.Texture](./texture.md)
   The type used to represent textures.
-- [var roughness: MaterialScalarParameter](simplematerial/roughness.md)
+- [var roughness: MaterialScalarParameter](./roughness.md)
   The roughness of the material.
 
 

@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The action that executes when the input/output request completes.
 
@@ -10,15 +11,16 @@ The action that executes when the input/output request completes.
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostBundledCompletionAction action;
 ```
 
 ## See Also
 
-- [owner](iousbhostbundledcompletion/3230705-owner.md)
+### Getting the Properties
+- [owner](./api-3230705-owner.md)
   A pointer to an object that owns the transfer.
-- [parameter](iousbhostbundledcompletion/3230706-parameter.md)
+- [parameter](./api-3230706-parameter.md)
   A context pointer within the completion action.
 
 

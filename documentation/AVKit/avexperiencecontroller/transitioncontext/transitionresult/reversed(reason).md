@@ -1,7 +1,8 @@
 # AVExperienceController.TransitionContext.TransitionResult.reversed(reason:)
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 2.0+
@@ -14,7 +15,8 @@ case reversed(reason: AVExperienceController.TransitionContext.ReversedReason)
 
 ## See Also
 
-- [AVExperienceController.TransitionContext.TransitionResult.completed](avexperiencecontroller/transitioncontext/transitionresult/completed.md)
+### Results
+- [AVExperienceController.TransitionContext.TransitionResult.completed](./completed.md)
 
 
 ---

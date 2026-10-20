@@ -1,7 +1,8 @@
 # RAWCreationConfiguration
 
 **Framework**: DiskImageKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration to use to create RAW disk images.
 
@@ -17,17 +18,18 @@ struct RAWCreationConfiguration
 ## Relationships
 
 ### Conforms To
-- [DiskImage.CreationConfiguration](diskimage/creationconfiguration.md)
+- [DiskImage.CreationConfiguration](./diskimage/creationconfiguration.md)
 
 ## See Also
 
-- [convenience init(creating: some DiskImage.CreationConfiguration) throws](diskimage/init(creating:).md)
+### Creating disk images
+- [convenience init(creating: some DiskImage.CreationConfiguration) throws](./diskimage/init%28creating%29.md)
   Creates a new, empty disk image.
-- [struct ASIFCreationConfiguration](asifcreationconfiguration.md)
+- [struct ASIFCreationConfiguration](./asifcreationconfiguration.md)
   The configuration to use to create Apple sparse image format (ASIF) disk images.
-- [struct ASIFLayerCreationConfiguration](asiflayercreationconfiguration.md)
+- [struct ASIFLayerCreationConfiguration](./asiflayercreationconfiguration.md)
   The configuration to use to create Apple sparse image format (ASIF) disk image layers in stacked images.
-- [DiskImage.CreationConfiguration](diskimage/creationconfiguration.md)
+- [DiskImage.CreationConfiguration](./diskimage/creationconfiguration.md)
   A marker protocol for disk image creation configurations.
 
 

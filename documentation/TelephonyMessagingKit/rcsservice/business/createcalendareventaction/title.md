@@ -1,7 +1,8 @@
 # title
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Title to use for event.
 
@@ -16,13 +17,14 @@ let title: String
 
 ## See Also
 
-- [let startTime: Date](rcsservice/business/createcalendareventaction/starttime.md)
+### Accessing action properties
+- [let startTime: Date](./starttime.md)
   Start time of event.
-- [let endTime: Date](rcsservice/business/createcalendareventaction/endtime.md)
+- [let endTime: Date](./endtime.md)
   End time of event.
-- [let description: String?](rcsservice/business/createcalendareventaction/description.md)
+- [let description: String?](./description.md)
   Description of event.
-- [let fallbackURL: URL?](rcsservice/business/createcalendareventaction/fallbackurl.md)
+- [let fallbackURL: URL?](./fallbackurl.md)
   Fallback URL to use when unable to perform operation.
 
 

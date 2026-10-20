@@ -1,7 +1,8 @@
 # ignoreCache
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates the token provider needs to discard any cached token and generate a new token.
 

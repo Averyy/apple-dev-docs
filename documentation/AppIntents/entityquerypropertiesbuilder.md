@@ -1,7 +1,8 @@
 # EntityQueryPropertiesBuilder
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A result builder that allows you to declaratively describe the properties to include in a property-matched query.
 
@@ -11,7 +12,7 @@ A result builder that allows you to declaratively describe the properties to inc
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,15 +25,16 @@ enum EntityQueryPropertiesBuilder<Entity, ComparatorMappingType> where Entity : 
 ## Topics
 
 ### Building queryable properties
-- [static func buildBlock(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>...) -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>]](entityquerypropertiesbuilder/buildblock(_:).md)
-- [class EntityQueryPropertyDeclaration](entityquerypropertydeclaration.md)
+- [static func buildBlock(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>...) -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>]](./entityquerypropertiesbuilder/buildblock%28_%29.md)
+- [class EntityQueryPropertyDeclaration](./entityquerypropertydeclaration.md)
   An object that identifies a specific entity property and the query comparators it supports.
 ### Type Methods
-- [static func buildExpression(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>) -> EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>](entityquerypropertiesbuilder/buildexpression(_:).md)
+- [static func buildExpression(EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>) -> EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>](./entityquerypropertiesbuilder/buildexpression%28_%29.md)
 
 ## See Also
 
-- [init(properties: () -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>])](entityqueryproperties/init(properties:).md)
+### Creating the query properties
+- [init(properties: () -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>])](./entityqueryproperties/init%28properties%29.md)
 
 
 ---

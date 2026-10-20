@@ -1,7 +1,8 @@
 # formatterBehavior
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The formatter behavior of the receiver.
 
@@ -20,17 +21,23 @@ The formatter behavior of the receiver.
 var formatterBehavior: NumberFormatter.Behavior { get set }
 ```
 
+```objc
+@property NSNumberFormatterBehavior formatterBehavior;
+```
+
 ## See Also
 
-- [Data Formatting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)
-- [class func setDefaultFormatterBehavior(NumberFormatter.Behavior)](numberformatter/setdefaultformatterbehavior(_:).md)
+### Related Documentation
+- [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)
+### Configuring Formatter Behavior and Style
+- [class func setDefaultFormatterBehavior(NumberFormatter.Behavior)](./setdefaultformatterbehavior%28_%29.md)
   Sets the default formatter behavior for new instances of `NSNumberFormatter` .
-- [class func defaultFormatterBehavior() -> NumberFormatter.Behavior](numberformatter/defaultformatterbehavior.md)
+- [class func defaultFormatterBehavior() -> NumberFormatter.Behavior](./defaultformatterbehavior%28%29.md)
   Returns an `NSNumberFormatterBehavior` constant that indicates default formatter behavior for new instances of `NSNumberFormatter`.
-- [var numberStyle: NumberFormatter.Style](numberformatter/numberstyle.md)
+- [var numberStyle: NumberFormatter.Style](./numberstyle.md)
   The number style used by the receiver.
-- [var generatesDecimalNumbers: Bool](numberformatter/generatesdecimalnumbers.md)
-  Determines whether the receiver creates instances of [`NSDecimalNumber`](nsdecimalnumber.md) when it converts strings to number objects.
+- [var generatesDecimalNumbers: Bool](./generatesdecimalnumbers.md)
+  Determines whether the receiver creates instances of [`NSDecimalNumber`](../nsdecimalnumber.md) when it converts strings to number objects.
 
 
 ---

@@ -1,7 +1,8 @@
 # initialPageSortedByDate
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The initial batch of items when sorted by date.
 
@@ -18,9 +19,14 @@ The initial batch of items when sorted by date.
 static let initialPageSortedByDate: NSData
 ```
 
+```c
+extern NSFileProviderPage const NSFileProviderInitialPageSortedByDate;
+```
+
 ## See Also
 
-- [static let initialPageSortedByName: NSData](nsfileproviderpage/initialpagesortedbyname.md)
+### Page Constants
+- [static let initialPageSortedByName: NSData](./initialpagesortedbyname.md)
   The initial batch of items when sorted by name.
 
 

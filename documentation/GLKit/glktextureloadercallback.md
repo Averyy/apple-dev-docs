@@ -1,7 +1,8 @@
 # GLKTextureLoaderCallback
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Signature for the block executed after an asynchronous texture loading operation completes.
 
@@ -17,6 +18,10 @@ Signature for the block executed after an asynchronous texture loading operation
 typealias GLKTextureLoaderCallback = (GLKTextureInfo?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(GLKTextureInfo *, NSError *) GLKTextureLoaderCallback;
+```
+
 #### Discussion
 
 The block parameters are defined as follows:
@@ -26,11 +31,12 @@ The block parameters are defined as follows:
 
 ## See Also
 
-- [Texture Loading Options](texture-loading-options.md)
+### Constants
+- [Texture Loading Options](./texture-loading-options.md)
   Keys to specify in a `textureOperations` dictionary.
-- [Texture Error Handling](texture-error-handling.md)
+- [Texture Error Handling](./texture-error-handling.md)
   Strings used when handling error messages returned from a texture loading method.
-- [GLKTextureLoaderError.Code](glktextureloadererror-swift.struct/code.md)
+- [GLKTextureLoaderError.Code](./glktextureloadererror-swift.struct/code.md)
   Values to be returned when a texture loader encounters an error.
 
 

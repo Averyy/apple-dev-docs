@@ -1,7 +1,8 @@
 # id
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the node within the compiled graph.
 

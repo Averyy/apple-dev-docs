@@ -1,14 +1,15 @@
 # upl_page_list_ptr_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef upl_page_info_array_t upl_page_list_ptr_t;
 ```
 

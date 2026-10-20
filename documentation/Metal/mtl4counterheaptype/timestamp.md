@@ -1,9 +1,10 @@
 # MTL4CounterHeapType.timestamp
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Specifies that [`MTL4CounterHeap`](mtl4counterheap.md) entries contain GPU timestamp data.
+Specifies that [`MTL4CounterHeap`](../mtl4counterheap.md) entries contain GPU timestamp data.
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@ Specifies that [`MTL4CounterHeap`](mtl4counterheap.md) entries contain GPU times
 
 ```swift
 case timestamp
+```
+
+```c
+MTL4CounterHeapTypeTimestamp
 ```
 
 

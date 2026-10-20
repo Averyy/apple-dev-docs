@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.StatusResponse.ParentsItem.Alert
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes a parent content cache alert.
 
@@ -10,7 +11,7 @@ A dictionary that describes a parent content cache alert.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.StatusResponse.ParentsItem.Alert
 ```
 
@@ -18,11 +19,14 @@ object ContentCachingInformationResponse.StatusResponse.ParentsItem.Alert
 
 - `addresses` ([string]) *(required)*: An array of local IP addresses of parent content caches.
 - `className` (string) *(required)*: The type of the alert.
+
+  **Allowed Values**: `AssetCacheParentCycleAlert`, `AssetCacheParentDepthAlert`
 - `postDate` (date) *(required)*: The date of the alert.
 
 ## See Also
 
-- [object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details](contentcachinginformationresponse/statusresponse-data.dictionary/parentsitem/details-data.dictionary.md)
+### Objects
+- [object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details](./details-data.dictionary.md)
   A dictionary that contains additional details about the parent content cache.
 
 

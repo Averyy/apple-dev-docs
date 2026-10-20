@@ -1,7 +1,8 @@
 # init(anchor:content:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an annotation that displays the person’s current location of the user using a custom view.
 
@@ -11,7 +12,7 @@ Create an annotation that displays the person’s current location of the user u
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,16 +24,17 @@ Create an annotation that displays the person’s current location of the user u
 
 ## Parameters
 
-- `anchor`: How to anchor the user location indicator around the person’s location. The default is [`center`](https://developer.apple.com/documentation/swiftui/unitpoint/center).
+- `anchor`: How to anchor the user location indicator around the person’s location. The default is [`center`](../../SwiftUI/unitpoint/center.md).
 - `content`: The custom view used to indicate the person’s location.
 
 ## See Also
 
-- [init()](userannotation/init.md)
+### Creating a user annotation
+- [init()](./init%28%29.md)
   Creates an annotation that displays the person’s current location.
-- [init(anchor: UnitPoint)](userannotation/init(anchor:).md)
+- [init(anchor: UnitPoint)](./init%28anchor%29.md)
   Creates an annotation that displays the person’s current location using the system styled user location indicator with the specified anchor point.
-- [init(anchor: UnitPoint, content: (UserLocation) -> Content)](userannotation/init(anchor:content:)-8u3r4.md)
+- [init(anchor: UnitPoint, content: (UserLocation) -> Content)](./init%28anchor,content%29-8u3r4.md)
   Creates an annotation that displays a person’s current location using the system styled user location indicator with the specified anchor point using a custom view.
 
 

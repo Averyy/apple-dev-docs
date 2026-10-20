@@ -1,7 +1,8 @@
 # forKey(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the class description instance for the class type of the specified attribute or relationship.
 
@@ -15,6 +16,10 @@ Returns the class description instance for the class type of the specified attri
 func forKey(_ key: String) -> NSScriptClassDescription?
 ```
 
+```objc
+- (NSScriptClassDescription *) classDescriptionForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The instance of `NSScriptClassDescription` for the type of the attribute or relationship specified by `key`. Returns `nil` if no scriptable property corresponds to `key`.
@@ -25,9 +30,10 @@ The instance of `NSScriptClassDescription` for the type of the attribute or rela
 
 ## See Also
 
-- [init?(for: AnyClass)](nsscriptclassdescription/init(for:).md)
+### Getting a Script Class Description
+- [init?(for: AnyClass)](./init%28for%29.md)
   Returns the class description for the specified class or, if it is not scriptable, for the first superclass that is.
-- [var superclass: NSScriptClassDescription?](nsscriptclassdescription/superclass.md)
+- [var superclass: NSScriptClassDescription?](./superclass.md)
   Returns the class description instance for the superclass of the receiver’s class.
 
 

@@ -1,7 +1,8 @@
 # didCloseTab(_:windowIsClosing:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Should be called by the app when a tab is closed to fire appropriate events with all loaded web extensions.
 
@@ -32,7 +33,8 @@ If the intention is to inform only a specific extension, you should use the resp
 
 ## See Also
 
-- [func didOpenTab(any WKWebExtensionTab)](wkwebextensioncontroller/didopentab(_:).md)
+### Related Documentation
+- [func didOpenTab(any WKWebExtensionTab)](./didopentab%28_%29.md)
   Should be called by the app when a new tab is opened to fire appropriate events with all loaded web extensions.
 
 

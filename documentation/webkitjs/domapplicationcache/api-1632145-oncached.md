@@ -1,7 +1,8 @@
 # oncached
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 Sent when the update process finishes for the first time—that is, the first time an application cache is saved.
 
@@ -11,23 +12,24 @@ Sent when the update process finishes for the first time—that is, the first ti
 
 ## Declaration
 
-```swift
+```
 attribute EventHandler oncached;
 ```
 
 ## See Also
 
-- [onchecking](domapplicationcache/1634093-onchecking.md)
+### Handling Events
+- [onchecking](./api-1634093-onchecking.md)
   Sent when the cache update process begins.
-- [onerror](domapplicationcache/1629048-onerror.md)
+- [onerror](./api-1629048-onerror.md)
   Sent when an error occurs.
-- [onnoupdate](domapplicationcache/1631877-onnoupdate.md)
+- [onnoupdate](./api-1631877-onnoupdate.md)
   Sent when the update process finishes but the manifest file does not change.
-- [ondownloading](domapplicationcache/1632146-ondownloading.md)
+- [ondownloading](./api-1632146-ondownloading.md)
   Sent when the update process begins downloading resources in the manifest file.
-- [onprogress](domapplicationcache/1631599-onprogress.md)
+- [onprogress](./api-1631599-onprogress.md)
   Sent when each resource in the manifest file begins to download.
-- [onupdateready](domapplicationcache/1629348-onupdateready.md)
+- [onupdateready](./api-1629348-onupdateready.md)
   Sent when there is an existing application cache, the update process finishes, and there is a new application cache ready for use.
 
 

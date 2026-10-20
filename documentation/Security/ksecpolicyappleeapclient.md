@@ -1,7 +1,8 @@
 # kSecPolicyAppleEAPClient
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 let kSecPolicyAppleEAPClient: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyAppleEAPClient;
 ```
 
 

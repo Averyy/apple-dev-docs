@@ -1,7 +1,8 @@
 # index(of:inSortedRange:options:usingComparator:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index, within a specified range, of an object compared with elements in the array using a given `NSComparator` block.
 
@@ -20,20 +21,24 @@ Returns the index, within a specified range, of an object compared with elements
 func index(of obj: Any, inSortedRange r: NSRange, options opts: NSBinarySearchingOptions = [], usingComparator cmp: (Any, Any) -> ComparisonResult) -> Int
 ```
 
+```objc
+- (NSUInteger) indexOfObject:(ObjectType) obj inSortedRange:(NSRange) r options:(NSBinarySearchingOptions) opts usingComparator:(NSComparator) cmp;
+```
+
 #### Return Value
 
-If the [`insertionIndex`](nsbinarysearchingoptions/insertionindex.md) option is not specified:
+If the [`insertionIndex`](../nsbinarysearchingoptions/insertionindex.md) option is not specified:
 
-- If the `obj` is found and neither [`firstEqual`](nsbinarysearchingoptions/firstequal.md) nor [`lastEqual`](nsbinarysearchingoptions/lastequal.md) is specified, returns an arbitrary matching object’s index.
-- If the [`firstEqual`](nsbinarysearchingoptions/firstequal.md) option is also specified, returns the lowest index of equal objects.
-- If the [`lastEqual`](nsbinarysearchingoptions/lastequal.md) option is also specified, returns the highest index of equal objects.
+- If the `obj` is found and neither [`firstEqual`](../nsbinarysearchingoptions/firstequal.md) nor [`lastEqual`](../nsbinarysearchingoptions/lastequal.md) is specified, returns an arbitrary matching object’s index.
+- If the [`firstEqual`](../nsbinarysearchingoptions/firstequal.md) option is also specified, returns the lowest index of equal objects.
+- If the [`lastEqual`](../nsbinarysearchingoptions/lastequal.md) option is also specified, returns the highest index of equal objects.
 - If the object is not found, returns `NSNotFound`.
 
-If the [`insertionIndex`](nsbinarysearchingoptions/insertionindex.md) option is specified, returns the index at which you should insert `obj` in order to maintain a sorted array:
+If the [`insertionIndex`](../nsbinarysearchingoptions/insertionindex.md) option is specified, returns the index at which you should insert `obj` in order to maintain a sorted array:
 
-- If the `obj` is found and neither [`firstEqual`](nsbinarysearchingoptions/firstequal.md) nor [`lastEqual`](nsbinarysearchingoptions/lastequal.md) is specified, returns any equal or one larger index than any matching object’s index.
-- If the [`firstEqual`](nsbinarysearchingoptions/firstequal.md) option is also specified, returns the lowest index of equal objects.
-- If the [`lastEqual`](nsbinarysearchingoptions/lastequal.md) option is also specified, returns the highest index of equal objects.
+- If the `obj` is found and neither [`firstEqual`](../nsbinarysearchingoptions/firstequal.md) nor [`lastEqual`](../nsbinarysearchingoptions/lastequal.md) is specified, returns any equal or one larger index than any matching object’s index.
+- If the [`firstEqual`](../nsbinarysearchingoptions/firstequal.md) option is also specified, returns the lowest index of equal objects.
+- If the [`lastEqual`](../nsbinarysearchingoptions/lastequal.md) option is also specified, returns the highest index of equal objects.
 - If the object is not found, returns the index of the least greater object, or the index at the end of the array if the object is larger than all other elements.
 
 #### Discussion
@@ -42,32 +47,41 @@ The elements in the array must have already been sorted using the comparator `cm
 
 ## Parameters
 
-- `obj`: An object for which to search in the array. If this value is `nil`, throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md).
-- `r`: The range within the array to search for `obj`. If `r` exceeds the bounds of the array (if the location plus length of the range is greater than the count of the array), throws an [`rangeException`](nsexceptionname/rangeexception.md).
-- `opts`: Options for the search. For possible values, see [`NSBinarySearchingOptions`](nsbinarysearchingoptions.md). If you specify both [`firstEqual`](nsbinarysearchingoptions/firstequal.md) and [`lastEqual`](nsbinarysearchingoptions/lastequal.md), throws an `NSInvalidArgumentException`.
-- `cmp`: A comparator block used to compare the object `obj` with elements in the array. If this value is `NULL`, throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md).
+- `obj`: An object for which to search in the array.
+
+  If this value is `nil`, throws an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md).
+- `r`: The range within the array to search for `obj`.
+
+  If `r` exceeds the bounds of the array (if the location plus length of the range is greater than the count of the array), throws an [`rangeException`](../nsexceptionname/rangeexception.md).
+- `opts`: Options for the search. For possible values, see [`NSBinarySearchingOptions`](../nsbinarysearchingoptions.md).
+
+  If you specify both [`firstEqual`](../nsbinarysearchingoptions/firstequal.md) and [`lastEqual`](../nsbinarysearchingoptions/lastequal.md), throws an `NSInvalidArgumentException`.
+- `cmp`: A comparator block used to compare the object `obj` with elements in the array.
+
+  If this value is `NULL`, throws an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md).
 
 ## See Also
 
-- [func index(of: Any) -> Int](nsarray/index(of:).md)
+### Finding Objects in an Array
+- [func index(of: Any) -> Int](./index%28of%29.md)
   Returns the lowest index whose corresponding array value is equal to a given object.
-- [func index(of: Any, in: NSRange) -> Int](nsarray/index(of:in:).md)
+- [func index(of: Any, in: NSRange) -> Int](./index%28of,in%29.md)
   Returns the lowest index within a specified range whose corresponding array value is equal to a given object .
-- [func indexOfObjectIdentical(to: Any) -> Int](nsarray/indexofobjectidentical(to:).md)
+- [func indexOfObjectIdentical(to: Any) -> Int](./indexofobjectidentical%28to%29.md)
   Returns the lowest index whose corresponding array value is identical to a given object.
-- [func indexOfObjectIdentical(to: Any, in: NSRange) -> Int](nsarray/indexofobjectidentical(to:in:).md)
+- [func indexOfObjectIdentical(to: Any, in: NSRange) -> Int](./indexofobjectidentical%28to,in%29.md)
   Returns the lowest index within a specified range whose corresponding array value is equal to a given object .
-- [func indexOfObject(passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsarray/indexofobject(passingtest:).md)
+- [func indexOfObject(passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./indexofobject%28passingtest%29.md)
   Returns the index of the first object in the array that passes a test in a given block.
-- [func indexOfObject(options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsarray/indexofobject(options:passingtest:).md)
+- [func indexOfObject(options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./indexofobject%28options,passingtest%29.md)
   Returns the index of an object in the array that passes a test in a given block for a given set of enumeration options.
-- [func indexOfObject(at: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsarray/indexofobject(at:options:passingtest:).md)
+- [func indexOfObject(at: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./indexofobject%28at,options,passingtest%29.md)
   Returns the index, from a given set of indexes, of the first object in the array that passes a test in a given block for a given set of enumeration options.
-- [func indexesOfObjects(passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsarray/indexesofobjects(passingtest:).md)
+- [func indexesOfObjects(passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./indexesofobjects%28passingtest%29.md)
   Returns the indexes of objects in the array that pass a test in a given block.
-- [func indexesOfObjects(options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsarray/indexesofobjects(options:passingtest:).md)
+- [func indexesOfObjects(options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./indexesofobjects%28options,passingtest%29.md)
   Returns the indexes of objects in the array that pass a test in a given block for a given set of enumeration options.
-- [func indexesOfObjects(at: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsarray/indexesofobjects(at:options:passingtest:).md)
+- [func indexesOfObjects(at: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./indexesofobjects%28at,options,passingtest%29.md)
   Returns the indexes, from a given set of indexes, of objects in the array that pass a test in a given block for a given set of enumeration options.
 
 

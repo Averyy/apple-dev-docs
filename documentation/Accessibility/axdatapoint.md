@@ -1,7 +1,8 @@
 # AXDataPoint
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a single data point in a chart.
 
@@ -20,44 +21,49 @@ An object that represents a single data point in a chart.
 class AXDataPoint
 ```
 
+```objc
+@interface AXDataPoint : NSObject
+```
+
 ## Topics
 
 ### Creating a data point
-- [convenience init(x: String, y: Double?, additionalValues: [AXDataPoint.Value], label: String?)](axdatapoint/init(x:y:additionalvalues:label:)-83xvg.md)
+- [convenience init(x: String, y: Double?, additionalValues: [AXDataPoint.Value], label: String?)](./axdatapoint/init%28x,y,additionalvalues,label%29-83xvg.md)
   Creates a data point with the specified x-value, y-value, additional values, and label.
-- [convenience init(x: Double, y: Double?, additionalValues: [AXDataPoint.Value], label: String?)](axdatapoint/init(x:y:additionalvalues:label:)-4v3sb.md)
+- [convenience init(x: Double, y: Double?, additionalValues: [AXDataPoint.Value], label: String?)](./axdatapoint/init%28x,y,additionalvalues,label%29-4v3sb.md)
   Creates a data point with the specified x-value, y-value, additional values, and label.
 ### Specifying the data value
-- [var xValue: AXDataPointValue](axdatapoint/xvalue.md)
+- [var xValue: AXDataPointValue](./axdatapoint/xvalue.md)
   The value of the x-axis for the data point.
-- [var yValue: AXDataPointValue?](axdatapoint/yvalue.md)
+- [var yValue: AXDataPointValue?](./axdatapoint/yvalue.md)
   The value of the y-axis for the data point.
-- [class AXDataPointValue](axdatapointvalue.md)
+- [class AXDataPointValue](./axdatapointvalue.md)
   A single data value.
-- [AXDataPoint.Value](axdatapoint/value.md)
+- [AXDataPoint.Value](./axdatapoint/value.md)
   Constants that describe types of data values.
 ### Specifying the label
-- [var label: String?](axdatapoint/label.md)
+- [var label: String?](./axdatapoint/label.md)
   The label for the data point.
-- [var attributedLabel: NSAttributedString?](axdatapoint/attributedlabel.md)
+- [var attributedLabel: NSAttributedString?](./axdatapoint/attributedlabel.md)
   An attributed version of the label for the data point.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AXDataSeriesDescriptor](axdataseriesdescriptor.md)
+### Data representation
+- [class AXDataSeriesDescriptor](./axdataseriesdescriptor.md)
   An object that represents a series of data points.
 
 

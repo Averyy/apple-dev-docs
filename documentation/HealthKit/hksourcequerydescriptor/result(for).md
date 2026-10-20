@@ -1,7 +1,8 @@
 # result(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs a one-shot query that asynchronously returns a snapshot of all the sources that saved matching data.
 
@@ -10,7 +11,7 @@ Runs a one-shot query that asynchronously returns a snapshot of all the sources 
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -18,6 +19,8 @@ Runs a one-shot query that asynchronously returns a snapshot of all the sources 
 ```swift
 func result(for healthStore: HKHealthStore) async throws -> [HKSource]
 ```
+
+Available when `Sample` inherits `HKSample`.
 
 ## Parameters
 

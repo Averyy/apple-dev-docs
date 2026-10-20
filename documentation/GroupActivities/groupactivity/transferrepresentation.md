@@ -1,7 +1,8 @@
 # transferRepresentation
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A default type that lets the system share your activity.
 
@@ -18,9 +19,11 @@ A default type that lets the system share your activity.
 static var transferRepresentation: some TransferRepresentation { get }
 ```
 
+Available when `Self` conforms to `Transferable`.
+
 #### Discussion
 
-This property contains a default [`GroupActivityTransferRepresentation`](groupactivitytransferrepresentation.md) for your activity. The system uses this type to offer your activity via SharePlay.
+This property contains a default [`GroupActivityTransferRepresentation`](../groupactivitytransferrepresentation.md) for your activity. The system uses this type to offer your activity via SharePlay.
 
 
 ---

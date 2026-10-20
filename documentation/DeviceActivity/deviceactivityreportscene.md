@@ -1,7 +1,8 @@
 # DeviceActivityReportScene
 
 **Framework**: Device Activity  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Defines a custom device activity report scene.
 
@@ -18,36 +19,37 @@ protocol DeviceActivityReportScene : AppExtensionScene
 
 #### Overview
 
-This protocol refines `AppExtensionScene` and restricts the types that can be passed to a [`DeviceActivityReportBuilder`](deviceactivityreportbuilder.md). Your extension should provide a scene for each context that your app supports.
+This protocol refines `AppExtensionScene` and restricts the types that can be passed to a [`DeviceActivityReportBuilder`](./deviceactivityreportbuilder.md). Your extension should provide a scene for each context that your app supports.
 
 ## Topics
 
 ### Associated Types
-- [associatedtype Configuration](deviceactivityreportscene/configuration.md)
-  A type used to configure your scene’s [`content`](deviceactivityreportscene/content-swift.property.md).
-- [associatedtype Content : View](deviceactivityreportscene/content-swift.associatedtype.md)
+- [associatedtype Configuration](./deviceactivityreportscene/configuration.md)
+  A type used to configure your scene’s [`content`](./deviceactivityreportscene/content-swift.property.md).
+- [associatedtype Content : View](./deviceactivityreportscene/content-swift.associatedtype.md)
   The type of view that represents the scene’s content.
 ### Instance Properties
-- [var content: (Self.Configuration) -> Self.Content](deviceactivityreportscene/content-swift.property.md)
+- [var content: (Self.Configuration) -> Self.Content](./deviceactivityreportscene/content-swift.property.md)
   A closure that builds your report’s content with the provided configuration.
-- [var context: DeviceActivityReport.Context](deviceactivityreportscene/context.md)
+- [var context: DeviceActivityReport.Context](./deviceactivityreportscene/context.md)
   The context of the scene.
 ### Instance Methods
-- [func makeConfiguration(representing: DeviceActivityResults<DeviceActivityData>) async -> Self.Configuration](deviceactivityreportscene/makeconfiguration(representing:).md)
+- [func makeConfiguration(representing: DeviceActivityResults<DeviceActivityData>) async -> Self.Configuration](./deviceactivityreportscene/makeconfiguration%28representing%29.md)
   Creates a new configuration that represents the provided data.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
 
 ## See Also
 
-- [struct DeviceActivityReport](deviceactivityreport.md)
+### Report activity
+- [struct DeviceActivityReport](./deviceactivityreport.md)
   A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.
-- [protocol DeviceActivityReportExtension](deviceactivityreportextension.md)
+- [protocol DeviceActivityReportExtension](./deviceactivityreportextension.md)
   An app extension that reports device activity data.
-- [struct DeviceActivityReportBuilder](deviceactivityreportbuilder.md)
+- [struct DeviceActivityReportBuilder](./deviceactivityreportbuilder.md)
   A result builder that combines one or more `DeviceActivityReportScene`s into a single scene.
 
 

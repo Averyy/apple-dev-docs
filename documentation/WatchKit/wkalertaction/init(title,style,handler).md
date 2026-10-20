@@ -1,7 +1,8 @@
 # init(title:style:handler:)
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an action object with the specified button information.
 
@@ -14,19 +15,23 @@ Creates and returns an action object with the specified button information.
 convenience init(title: String, style: WKAlertActionStyle, handler: @escaping WKAlertActionHandler)
 ```
 
+```objc
++ (instancetype) actionWithTitle:(NSString *) title style:(WKAlertActionStyle) style handler:(WKAlertActionHandler) handler;
+```
+
 #### Return Value
 
 An initialized action object that you can display in an alert.
 
 #### Discussion
 
-Use this method to create a button to display in an action sheet. In an action sheet, specifying an action with the [`WKAlertActionStyle.cancel`](wkalertactionstyle/cancel.md) style replaces the standard Cancel button provided by the system.
+Use this method to create a button to display in an action sheet. In an action sheet, specifying an action with the [`WKAlertActionStyle.cancel`](../wkalertactionstyle/cancel.md) style replaces the standard Cancel button provided by the system.
 
 ## Parameters
 
 - `title`: The localized string to use as the button title for the action.
-- `style`: The style to apply to the action button. For a list of possible styles and their meanings, see [`WKAlertActionStyle`](wkalertactionstyle.md).
-- `handler`: A block containing the code to execute when the user taps the action button. Use this block to perform whatever action is required to perform the associated task. For information about the format of this block, see [`WKAlertActionHandler`](wkalertactionhandler.md).
+- `style`: The style to apply to the action button. For a list of possible styles and their meanings, see [`WKAlertActionStyle`](../wkalertactionstyle.md).
+- `handler`: A block containing the code to execute when the user taps the action button. Use this block to perform whatever action is required to perform the associated task. For information about the format of this block, see [`WKAlertActionHandler`](../wkalertactionhandler.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Automator  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a workflow.
 
@@ -15,9 +16,14 @@ Creates and initializes a workflow.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(contentsOf: URL) throws](amworkflow/init(contentsof:).md)
+### Creating a Workflow
+- [convenience init(contentsOf: URL) throws](./init%28contentsof%29.md)
   Creates and initializes a workflow based on the contents of the specified file.
 
 

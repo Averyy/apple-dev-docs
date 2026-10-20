@@ -1,7 +1,8 @@
 # ImmersiveCameraLensDefinition.Eye
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents a camera lens eye.
 
@@ -21,20 +22,21 @@ enum Eye
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveCameraLensDefinition.Eye.left](immersivecameralensdefinition/eye/left.md)
+- [ImmersiveCameraLensDefinition.Eye.left](./eye/left.md)
   A value that represents the left eye.
-- [ImmersiveCameraLensDefinition.Eye.right](immersivecameralensdefinition/eye/right.md)
+- [ImmersiveCameraLensDefinition.Eye.right](./eye/right.md)
   A value that represents the right eye.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [ImmersiveCameraLensDefinition.STMapType](immersivecameralensdefinition/stmaptype.md)
+### Enumerations
+- [ImmersiveCameraLensDefinition.STMapType](./stmaptype.md)
   A value that represents a camera lens projection type.
 
 

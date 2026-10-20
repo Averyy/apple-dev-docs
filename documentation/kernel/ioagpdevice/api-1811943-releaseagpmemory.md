@@ -7,14 +7,14 @@ Releases memory addressable by AGP transactions.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn releaseAGPMemory(
  IOMemoryDescriptor *memory, 
  IOByteCount agpOffset, 
  IOOptionBits options = 0 );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns an IOReturn code indicating success or failure.
 
@@ -30,17 +30,18 @@ Makes the memory described by the IOMemoryDescriptor object unaddressable by AGP
 
 ## See Also
 
-- [commitAGPMemory](ioagpdevice/1811820-commitagpmemory.md)
+### Miscellaneous
+- [commitAGPMemory](./api-1811820-commitagpmemory.md)
   Makes memory addressable by AGP transactions.
-- [createAGPSpace](ioagpdevice/1811842-createagpspace.md)
+- [createAGPSpace](./api-1811842-createagpspace.md)
   Allocates the AGP space, and enables AGP transactions on the primary and secondary.
-- [destroyAGPSpace](ioagpdevice/1811870-destroyagpspace.md)
+- [destroyAGPSpace](./api-1811870-destroyagpspace.md)
   Destroys the AGP space, and disables AGP transactions on the primary and secondary.
-- [getAGPRangeAllocator](ioagpdevice/1811894-getagprangeallocator.md)
+- [getAGPRangeAllocator](./api-1811894-getagprangeallocator.md)
   Accessor to obtain the AGP range allocator.
-- [getAGPSpace](ioagpdevice/1811914-getagpspace.md)
+- [getAGPSpace](./api-1811914-getagpspace.md)
   Returns the allocated AGP space.
-- [getAGPStatus](ioagpdevice/1811928-getagpstatus.md)
+- [getAGPStatus](./api-1811928-getagpstatus.md)
   Returns the current state of the AGP bus.
 
 

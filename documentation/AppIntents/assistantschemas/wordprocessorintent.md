@@ -1,7 +1,8 @@
 # AssistantSchemas.WordProcessorIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that offer word processing functionality.
 
@@ -23,32 +24,32 @@ protocol WordProcessorIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var addAudioToPage: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/addaudiotopage.md)
+- [var addAudioToPage: some AssistantSchemas.Intent](./wordprocessorintent/addaudiotopage.md)
   The app intent conforms to the schema for adding audio to a page in a text document.
-- [var addImageToPage: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/addimagetopage.md)
+- [var addImageToPage: some AssistantSchemas.Intent](./wordprocessorintent/addimagetopage.md)
   The app intent conforms to the schema for adding an image to a page in a text document.
-- [var addTextBoxToPage: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/addtextboxtopage.md)
+- [var addTextBoxToPage: some AssistantSchemas.Intent](./wordprocessorintent/addtextboxtopage.md)
   The app intent conforms to the schema for adding a text box to a page in a text document.
-- [var addVideoToPage: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/addvideotopage.md)
+- [var addVideoToPage: some AssistantSchemas.Intent](./wordprocessorintent/addvideotopage.md)
   The app intent conforms to the schema for adding a video to a page in a text document.
-- [var addWebVideoToPage: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/addwebvideotopage.md)
+- [var addWebVideoToPage: some AssistantSchemas.Intent](./wordprocessorintent/addwebvideotopage.md)
   The app intent conforms to the schema for adding a web video to a page in a text document.
-- [var create: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/create.md)
+- [var create: some AssistantSchemas.Intent](./wordprocessorintent/create.md)
   The app intent conforms to the schema for creating a text document.
-- [var createPage: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/createpage.md)
+- [var createPage: some AssistantSchemas.Intent](./wordprocessorintent/createpage.md)
   The app intent conforms to the schema for creating a page in a text document.
-- [var open: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/open.md)
+- [var open: some AssistantSchemas.Intent](./wordprocessorintent/open.md)
   The app intent conforms to the schema for opening a text document.
-- [var openPage: some AssistantSchemas.Intent](assistantschemas/wordprocessorintent/openpage.md)
+- [var openPage: some AssistantSchemas.Intent](./wordprocessorintent/openpage.md)
   The app intent conforms to the schema for opening a page in a text document.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

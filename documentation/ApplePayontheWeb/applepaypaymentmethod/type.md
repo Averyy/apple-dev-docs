@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string value representing the card’s type of payment.
 
@@ -11,29 +12,30 @@ A string value representing the card’s type of payment.
 
 ## Declaration
 
-```swift
+```
 ApplePayPaymentMethodType type;
 ```
 
 #### Discussion
 
-See [`ApplePayPaymentMethodType`](applepaypaymentmethodtype.md) for the list of types.
+See [`ApplePayPaymentMethodType`](../applepaypaymentmethodtype.md) for the list of types.
 
 ## Topics
 
 ### Payment Method Types
-- [ApplePayPaymentMethodType](applepaypaymentmethodtype.md)
+- [ApplePayPaymentMethodType](../applepaypaymentmethodtype.md)
   A string that represents the type of the payment method.
 
 ## See Also
 
-- [displayName](applepaypaymentmethod/displayname.md)
+### Accessing payment method data
+- [displayName](./displayname.md)
   A string, suitable for display, that describes the card.
-- [network](applepaypaymentmethod/network.md)
+- [network](./network.md)
   A string, suitable for display, that is the name of the payment network backing the card.
-- [paymentPass](applepaypaymentmethod/paymentpass.md)
+- [paymentPass](./paymentpass.md)
   The payment pass object currently selected to complete the payment.
-- [billingContact](applepaypaymentmethod/billingcontact.md)
+- [billingContact](./billingcontact.md)
   The billing contact associated with the card.
 
 

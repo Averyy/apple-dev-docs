@@ -2,6 +2,7 @@
 
 **Framework**: Core Transferable  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A builder expression that describes the process of importing and exporting an item.
@@ -37,9 +38,10 @@ struct CombinedRepresentation: TransferRepresentation {
 
 ## See Also
 
-- [associatedtype Body : TransferRepresentation](transferrepresentation/body-swift.associatedtype.md)
+### Implementing a transfer representation
+- [associatedtype Body : TransferRepresentation](./body-swift.associatedtype.md)
   The transfer representation for the item.
-- [associatedtype Item : Transferable](transferrepresentation/item.md)
+- [associatedtype Item : Transferable](./item.md)
   The type of the item that’s being transferred.
 
 

@@ -1,7 +1,8 @@
 # scaledBy(x:y:z:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the transform scaled by the specified values.
 

@@ -1,13 +1,14 @@
 # init(isPresented:onSelect:)
 
 **Framework**: Spatial Preview  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a device picker.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

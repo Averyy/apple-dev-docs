@@ -1,7 +1,8 @@
 # maximumFileTransferSize
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size of a file that the RCS file transfer service can send.
 
@@ -16,11 +17,12 @@ var maximumFileTransferSize: Measurement<UnitInformationStorage>? { get }
 
 #### Discussion
 
-This value is represented as a Foundation [`Measurement`](https://developer.apple.com/documentation/foundation/measurement) that uses the [`UnitInformationStorage`](https://developer.apple.com/documentation/foundation/unitinformationstorage) unit type. If the messaging service doesn’t limit the file size, the value is `nil`.
+This value is represented as a Foundation [`Measurement`](../../../Foundation/measurement.md) that uses the [`UnitInformationStorage`](../../../Foundation/unitinformationstorage.md) unit type. If the messaging service doesn’t limit the file size, the value is `nil`.
 
 ## See Also
 
-- [let fileTransferWarningSize: Measurement<UnitInformationStorage>?](rcsservice/configuration/filetransferwarningsize.md)
+### Inspecting file transfer configuration
+- [let fileTransferWarningSize: Measurement<UnitInformationStorage>?](./filetransferwarningsize.md)
   The size for issuing a warning about file transfers and Rich Card media objects.
 
 

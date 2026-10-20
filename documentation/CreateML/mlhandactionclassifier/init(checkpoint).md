@@ -1,7 +1,8 @@
 # init(checkpoint:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hand action classifier from a training session checkpoint.
 
@@ -20,7 +21,7 @@ init(checkpoint: MLCheckpoint) throws
 
 ## Parameters
 
-- `checkpoint`: An [`MLCheckpoint`](mlcheckpoint.md) instance from a hand action training session.
+- `checkpoint`: An [`MLCheckpoint`](../mlcheckpoint.md) instance from a hand action training session.
 
 
 ---

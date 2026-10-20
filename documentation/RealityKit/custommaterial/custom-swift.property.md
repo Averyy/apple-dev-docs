@@ -1,7 +1,8 @@
 # custom
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 User-defined properties for the material’s shader functions.
 
@@ -20,9 +21,9 @@ var custom: CustomMaterial.Custom { get set }
 
 #### Discussion
 
-Use a [`CustomMaterial.Custom`](custommaterial/custom-swift.struct.md) object to send custom data to your shader functions. A custom object can hold a texture or a vector value, or both. Both the texture and vector value are available in your shader functions.
+Use a [`CustomMaterial.Custom`](./custom-swift.struct.md) object to send custom data to your shader functions. A custom object can hold a texture or a vector value, or both. Both the texture and vector value are available in your shader functions.
 
-> **Note**: Unlike other [`CustomMaterial`](custommaterial.md) properties, you don’t need to create a [`CustomMaterial.Custom`](custommaterial/custom-swift.struct.md) object for your material. All [`CustomMaterial`](custommaterial.md) objects have one by default; you just need to set the [`value`](custommaterial/custom-swift.struct/value.md) property, [`texture`](custommaterial/custom-swift.struct/texture.md) property, or both.
+> **Note**: Unlike other [`CustomMaterial`](../custommaterial.md) properties, you don’t need to create a [`CustomMaterial.Custom`](./custom-swift.struct.md) object for your material. All [`CustomMaterial`](../custommaterial.md) objects have one by default; you just need to set the [`value`](./custom-swift.struct/value.md) property, [`texture`](./custom-swift.struct/texture.md) property, or both.
 
 The following code demonstrates how to use the custom property to pass a vector to your shader functions:
 
@@ -71,12 +72,13 @@ float voronoiColor = params.textures()
 
 ## See Also
 
-- [var program: CustomMaterial.Program](custommaterial/program-swift.property.md)
-- [var lightingModel: CustomMaterial.LightingModel](custommaterial/lightingmodel-swift.property.md)
+### Setting shader properties
+- [var program: CustomMaterial.Program](./program-swift.property.md)
+- [var lightingModel: CustomMaterial.LightingModel](./lightingmodel-swift.property.md)
   The lighting model that the material uses.
-- [func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)](custommaterial/withmutableuniforms(oftype:_:).md)
+- [func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)](./withmutableuniforms%28oftype,_%29.md)
   Calls the given closure with an inout reference to the underlying storage bound to the custom uniforms argument of a surface shader and geometry modifier.
-- [func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, stage: CustomShaderStage, (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)](custommaterial/withmutableuniforms(oftype:stage:_:).md)
+- [func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, stage: CustomShaderStage, (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)](./withmutableuniforms%28oftype,stage,_%29.md)
   Calls the given closure with an inout reference to the underlying storage bound to the custom uniforms argument of a surface shader or geometry modifier.
 
 

@@ -1,7 +1,8 @@
 # pressureChange(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates a pressure change as the result of a user input event on a system that supports pressure sensitivity.
 
@@ -14,6 +15,10 @@ Indicates a pressure change as the result of a user input event on a system that
 func pressureChange(with event: NSEvent)
 ```
 
+```objc
+- (void) pressureChangeWithEvent:(NSEvent *) event;
+```
+
 #### Discussion
 
 This method is invoked automatically in response to user actions. `event` is the event that initiated the change in pressure.
@@ -24,7 +29,8 @@ This method is invoked automatically in response to user actions. `event` is the
 
 ## See Also
 
-- [class NSEvent](nsevent.md)
+### Related Documentation
+- [class NSEvent](../nsevent.md)
   An object that contains information about an input action, such as a mouse click or a key press.
 
 

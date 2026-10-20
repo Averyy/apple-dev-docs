@@ -1,17 +1,22 @@
 # init(gaugeProvider:outerTextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a template that has a gauge and an outer text element.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(gaugeProvider: CLKGaugeProvider, outerTextProvider: CLKTextProvider)
+```
+
+```objc
+- (instancetype) initWithGaugeProvider:(CLKGaugeProvider *) gaugeProvider outerTextProvider:(CLKTextProvider *) outerTextProvider;
 ```
 
 ## Parameters
@@ -21,7 +26,8 @@ init(gaugeProvider: CLKGaugeProvider, outerTextProvider: CLKTextProvider)
 
 ## See Also
 
-- [init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider?, trailingTextProvider: CLKTextProvider?, outerTextProvider: CLKTextProvider)](clkcomplicationtemplategraphiccornergaugetext/init(gaugeprovider:leadingtextprovider:trailingtextprovider:outertextprovider:).md)
+### Creating the Template
+- [init(gaugeProvider: CLKGaugeProvider, leadingTextProvider: CLKTextProvider?, trailingTextProvider: CLKTextProvider?, outerTextProvider: CLKTextProvider)](./init%28gaugeprovider,leadingtextprovider,trailingtextprovider,outertextprovider%29.md)
   Creates a template that has a gauge with leading and trailing text, and an outer text element.
 
 

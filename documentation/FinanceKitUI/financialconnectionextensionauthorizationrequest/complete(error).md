@@ -1,7 +1,8 @@
 # complete(error:)
 
 **Framework**: FinanceKitUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -16,7 +17,8 @@ func complete(error: any Error)
 
 ## See Also
 
-- [func complete(authorizationResult: FinancialConnectionExtensionAuthorizationResult)](financialconnectionextensionauthorizationrequest/complete(authorizationresult:).md)
+### Instance Methods -
+- [func complete(authorizationResult: FinancialConnectionExtensionAuthorizationResult)](./complete%28authorizationresult%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Tool
 
 **Framework**: Foundation Models  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A tool that a model can call to gather information at runtime or perform side effects.
 
@@ -21,18 +22,18 @@ protocol Tool<Arguments, Output> : Sendable
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+- [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
+- [Categorizing and organizing data with content tags](./categorizing-and-organizing-data-with-content-tags.md)
+- [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md)
+- [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
+- [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
 
 #### Overview
 
 Tool calling gives the model the ability to call your code to incorporate up-to-date information like recent events and data from your app. A tool includes a name and a description that the framework puts in the prompt to let the model decide when and how often to call your tool.
 
-A `Tool` defines a [`call(arguments:)`](tool/call(arguments:).md) method that takes arguments that conforms to [`ConvertibleFromGeneratedContent`](convertiblefromgeneratedcontent.md), and returns an output of any type that conforms to [`PromptRepresentable`](promptrepresentable.md), allowing the model to understand and reason about in subsequent interactions. Typically, [`Output`](tool/output.md) is a `String` or any [`Generable`](generable.md) types.
+A `Tool` defines a [`call(arguments:)`](./tool/call%28arguments%29.md) method that takes arguments that conforms to [`ConvertibleFromGeneratedContent`](./convertiblefromgeneratedcontent.md), and returns an output of any type that conforms to [`PromptRepresentable`](./promptrepresentable.md), allowing the model to understand and reason about in subsequent interactions. Typically, [`Output`](./tool/output.md) is a `String` or any [`Generable`](./generable.md) types.
 
 ```swift
 struct FindContacts: Tool {
@@ -56,44 +57,45 @@ struct FindContacts: Tool {
 }
 ```
 
-Tools must conform to [`Sendable`](https://developer.apple.com/documentation/swift/sendable) so the framework can run them concurrently. If the model needs to pass the output of one tool as the input to another, it executes back-to-back tool calls.
+Tools must conform to [`Sendable`](../Swift/sendable.md) so the framework can run them concurrently. If the model needs to pass the output of one tool as the input to another, it executes back-to-back tool calls.
 
 You control the life cycle of your tool, so you can track the state of it between calls to the model. For example, you might store a list of database records that you don’t want to reuse between tool calls.
 
-Prompting the model with tools contributes to the available context window size. When you provide a tool in your generation request, the framework puts the tool definitions — name, description, parameter information — in the prompt so the model can decide when and how often to call the tool. After calling your tool, the framework returns the tool’s output back to the model for further processing. For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
+Prompting the model with tools contributes to the available context window size. When you provide a tool in your generation request, the framework puts the tool definitions — name, description, parameter information — in the prompt so the model can decide when and how often to call the tool. After calling your tool, the framework returns the tool’s output back to the model for further processing. For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 
 ## Topics
 
 ### Calling a tool
-- [func call(arguments: Self.Arguments) async throws -> Self.Output](tool/call(arguments:).md)
+- [func call(arguments: Self.Arguments) async throws -> Self.Output](./tool/call%28arguments%29.md)
   Performs the tool’s action when a language model wants to use this tool.
-- [associatedtype Arguments : ConvertibleFromGeneratedContent](tool/arguments.md)
+- [associatedtype Arguments : ConvertibleFromGeneratedContent](./tool/arguments.md)
   The arguments that this tool should accept.
-- [associatedtype Output : PromptRepresentable](tool/output.md)
+- [associatedtype Output : PromptRepresentable](./tool/output.md)
   The output that this tool produces for the language model to reason about in subsequent interactions.
 ### Inspecting a tool
-- [var name: String](tool/name.md)
+- [var name: String](./tool/name.md)
   A unique name for the tool.
-- [var description: String](tool/description.md)
+- [var description: String](./tool/description.md)
   A natural language description of when and how to use the tool.
-- [var parameters: GenerationSchema](tool/parameters.md)
+- [var parameters: GenerationSchema](./tool/parameters.md)
   A schema for the parameters this tool accepts.
-- [var includesSchemaInInstructions: Bool](tool/includesschemaininstructions.md)
+- [var includesSchemaInInstructions: Bool](./tool/includesschemaininstructions.md)
   A Boolean value that indicates whether the framework includes this tool’s definition in the session’s instructions.
-- [typealias SessionProperty](tool/sessionproperty.md)
+- [typealias SessionProperty](./tool/sessionproperty.md)
   A property wrapper that provides access to a session property from within a tool.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+### Tools
+- [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md)
   Build tools that enable the model to perform tasks that are specific to your use case.
-- [Generate dynamic game content with guided generation and tools](generate-dynamic-game-content-with-guided-generation-and-tools.md)
+- [Generate dynamic game content with guided generation and tools](./generate-dynamic-game-content-with-guided-generation-and-tools.md)
   Make gameplay more lively with AI generated dialog and encounters personalized to the player.
 
 

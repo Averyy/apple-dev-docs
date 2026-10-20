@@ -1,7 +1,8 @@
 # cornerStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A shape for the button among a predetermined set of templates.
 
@@ -9,7 +10,7 @@ A shape for the button among a predetermined set of templates.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ A shape for the button among a predetermined set of templates.
 
 ## See Also
 
-- [var cornerRadius: CGFloat](uipastecontrol/configuration-swift.class/cornerradius.md)
+### Shaping button corners
+- [var cornerRadius: CGFloat](./cornerradius.md)
   A value that rounds the edges of a paste button.
 
 

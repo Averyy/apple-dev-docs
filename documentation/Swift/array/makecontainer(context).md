@@ -1,7 +1,8 @@
 # makeContainer(context:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a container that represents this array of intent values.
 
@@ -19,6 +20,8 @@ Creates a container that represents this array of intent values.
 ```swift
 func makeContainer(context: IntentValueContainer.ConversionContext) -> IntentValueContainer
 ```
+
+Available when `Element` conforms to `IntentValueConvertible`.
 
 #### Return Value
 

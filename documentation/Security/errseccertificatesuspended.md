@@ -1,7 +1,8 @@
 # errSecCertificateSuspended
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate was suspended.
 
@@ -18,6 +19,10 @@ The certificate was suspended.
 
 ```swift
 var errSecCertificateSuspended: OSStatus { get }
+```
+
+```c
+errSecCertificateSuspended
 ```
 
 

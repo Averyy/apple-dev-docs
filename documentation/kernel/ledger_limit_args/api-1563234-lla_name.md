@@ -1,14 +1,15 @@
 # lla_name
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 char lla_name[32];
 ```
 

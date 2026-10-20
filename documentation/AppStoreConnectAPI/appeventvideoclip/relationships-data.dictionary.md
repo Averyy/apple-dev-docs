@@ -1,7 +1,8 @@
 # AppEventVideoClip.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppEventVideoClip.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventVideoClip.Relationships.AppEventLocalization](appeventvideoclip/relationships-data.dictionary/appeventlocalization-data.dictionary.md)
+- [object AppEventVideoClip.Relationships.AppEventLocalization](./relationships-data.dictionary/appeventlocalization-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object AppEventVideoClip.Relationships
 
 ## See Also
 
-- [object AppEventVideoClip.Attributes](appeventvideoclip/attributes-data.dictionary.md)
+### Objects
+- [object AppEventVideoClip.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app event video clip resource.
 
 

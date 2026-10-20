@@ -1,6 +1,8 @@
 # Sharing Wi-Fi network credentials
 
-**Framework**: Wi-Fi Infrastructure
+**Framework**: Wi-Fi Infrastructure  
+**Role**: Sample Code  
+**Download**: [SharingWiFiNetworkCredentials.zip](https://docs-assets.developer.apple.com/published/506776157302/SharingWiFiNetworkCredentials.zip)
 
 Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after establishing a Bluetooth connection.
 
@@ -12,13 +14,13 @@ Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after 
 
 #### Overview
 
-This sample project uses two app targets to demonstrate using [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) with [`Wi-Fi Infrastructure`](WiFiInfrastructure.md) to share Wi-Fi credentials with a Bluetooth accessory. The `ASKSampleWiFiAccessory` app target simulates a Bluetooth accessory that can receive Wi-Fi credentials, while the `WiFiNetworkSharingSample` app target demonstrates how to pair with the accessory and share network information.
+This sample project uses two app targets to demonstrate using [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) with [Wi-Fi Infrastructure](./WiFiInfrastructure.md) to share Wi-Fi credentials with a Bluetooth accessory. The `ASKSampleWiFiAccessory` app target simulates a Bluetooth accessory that can receive Wi-Fi credentials, while the `WiFiNetworkSharingSample` app target demonstrates how to pair with the accessory and share network information.
 
 The `ASKSampleWiFiAccessory` target simulates a Bluetooth dice accessory that advertises itself for pairing, receives Wi-Fi network credentials from the paired device, and sends dice roll results back over Bluetooth.
 
 The `WiFiNetworkSharingSample` target uses AccessorySetupKit to discover and set up a Bluetooth dice accessory. After establishing the Bluetooth connection, Wi-Fi Infrastructure automatically requests authorization to share the device’s Wi-Fi network credentials with the Bluetooth accessory over the secure Bluetooth connection. After the Bluetooth accessory is connected to the Wi-Fi network, you can receive dice roll results from the accessory until you disconnect or remove authorization.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Because this sample app relies on using Bluetooth to connect with the accessory functionality, you can’t run this sample in Simulator — you’ll need to run it on a device. To run this sample, you’ll need the following:
 
@@ -34,7 +36,8 @@ Because this sample has two targets, use the following steps to run this sample:
 
 ## See Also
 
-- [com.apple.developer.wifi-infrastructure](../bundleresources/entitlements/com.apple.developer.wifi-infrastructure.md)
+### Essentials
+- [com.apple.developer.wifi-infrastructure](../BundleResources/entitlements/com.apple.developer.wifi-infrastructure.md)
   The entitlement the system requires for an app to use the Wi-Fi Infrastructure framework.
 
 

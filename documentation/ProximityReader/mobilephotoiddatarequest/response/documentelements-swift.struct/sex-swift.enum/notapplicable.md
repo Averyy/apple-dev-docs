@@ -1,7 +1,8 @@
 # MobilePhotoIDDataRequest.Response.DocumentElements.Sex.notApplicable
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the photo ID holder’s sex was categorized as not applicable as defined in ISO/IEC 5218.
 

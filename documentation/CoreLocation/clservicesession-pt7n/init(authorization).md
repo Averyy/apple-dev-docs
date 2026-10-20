@@ -1,7 +1,8 @@
 # init(authorization:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a services session by using the authorization mode you specify.
 
@@ -27,9 +28,10 @@ Passing an authorization requirement other than `.none` causes Location Services
 
 ## See Also
 
-- [init(authorization: CLServiceSession.AuthorizationRequirement, fullAccuracyPurposeKey: String)](clservicesession-pt7n/init(authorization:fullaccuracypurposekey:).md)
+### Creating a session
+- [init(authorization: CLServiceSession.AuthorizationRequirement, fullAccuracyPurposeKey: String)](./init%28authorization,fullaccuracypurposekey%29.md)
   Creates a services session by using the authorization mode and purpose key you specify.
-- [CLServiceSession.AuthorizationRequirement](clservicesession-pt7n/authorizationrequirement.md)
+- [CLServiceSession.AuthorizationRequirement](./authorizationrequirement.md)
   Values that describe when the service session needs to request authorization.
 
 

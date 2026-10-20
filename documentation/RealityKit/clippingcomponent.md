@@ -1,7 +1,8 @@
 # ClippingComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that clips entities and their children to a customizable bounding box volume with feathered edges.
 
@@ -45,34 +46,35 @@ windowEntity.components.set(clipping)
 ## Topics
 
 ### Creating a clipping component
-- [init(bounds: BoundingBox)](clippingcomponent/init(bounds:).md)
+- [init(bounds: BoundingBox)](./clippingcomponent/init%28bounds%29.md)
 ### Configuring clipping behavior
-- [var shouldClipChildren: Bool](clippingcomponent/shouldclipchildren.md)
+- [var shouldClipChildren: Bool](./clippingcomponent/shouldclipchildren.md)
   Controls whether child entities are clipped by this component’s bounds.
-- [var shouldClipSelf: Bool](clippingcomponent/shouldclipself.md)
+- [var shouldClipSelf: Bool](./clippingcomponent/shouldclipself.md)
   Controls whether the entity itself is clipped by this component’s bounds.
 ### Feathering clipped edges
-- [var featheredEdge: ClippingComponent.FeatheredEdge](clippingcomponent/featherededge-swift.property.md)
+- [var featheredEdge: ClippingComponent.FeatheredEdge](./clippingcomponent/featherededge-swift.property.md)
   The feathering configuration for the clipping boundaries.
-- [ClippingComponent.FeatheredEdge](clippingcomponent/featherededge-swift.struct.md)
+- [ClippingComponent.FeatheredEdge](./clippingcomponent/featherededge-swift.struct.md)
   Configuration for feathering the clipping boundaries.
 ### Instance Properties
-- [var bounds: BoundingBox](clippingcomponent/bounds.md)
+- [var bounds: BoundingBox](./clippingcomponent/bounds.md)
   The bounding box that defines the clipping region in the entity’s local coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct RenderLayerComponent](renderlayercomponent.md)
+### Portals, clipping, and occlusion
+- [struct RenderLayerComponent](./renderlayercomponent.md)
   A component that defines which layers an entity participates in.
-- [struct RenderLayer](renderlayer.md)
+- [struct RenderLayer](./renderlayer.md)
   A named identifier for a group of meshes and lights.
-- [struct OcclusionCullingComponent](occlusioncullingcomponent.md)
+- [struct OcclusionCullingComponent](./occlusioncullingcomponent.md)
   A component that controls whether the system performs occlusion culling on the owning Entity and its descendants.
 
 

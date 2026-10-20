@@ -1,6 +1,7 @@
 # Assigning memory to sparse textures
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
 
@@ -14,9 +15,9 @@ A sparse texture has storage only when you explicitly provide it. Every mipmap i
 
 Initially, all of the texture’s regions are unmapped. To provide data for a region, you ask the GPU to map regions in the texture to sparse tiles on the texture’s heap, and then copy or render data into those regions. When a region no longer needs memory, you unmap the region to free up its memory for future requests.
 
-##### Map or Unmap Sparse Tiles
+##### Map or unmap sparse tiles
 
-To map or unmap sparse tiles, you issue commands to the GPU using a resource state command encoder ([`MTLResourceStateCommandEncoder`](mtlresourcestatecommandencoder.md)). Encode a command for each update, specifying the texture, a slice and mipmap within that texture, and a region inside that mipmap. Specify the region in tile coordinates.
+To map or unmap sparse tiles, you issue commands to the GPU using a resource state command encoder ([`MTLResourceStateCommandEncoder`](./mtlresourcestatecommandencoder.md)). Encode a command for each update, specifying the texture, a slice and mipmap within that texture, and a region inside that mipmap. Specify the region in tile coordinates.
 
 **Swift**:
 
@@ -45,11 +46,11 @@ The GPU looks for free sparse tiles on the texture’s heap and assigns them to 
 
 The GPU fulfills mapping requests in the order that you encoded the commands. Within each command, the GPU maps the tiles in a row-major order on a first-come, first-served basis. If the heap runs out of memory, Metal skips any remaining tiles in the request.
 
-To free tiles and make additional memory available to satisfy other requests, encode commands using the [`MTLSparseTextureMappingMode.unmap`](mtlsparsetexturemappingmode/unmap.md) mode instead.
+To free tiles and make additional memory available to satisfy other requests, encode commands using the [`MTLSparseTextureMappingMode.unmap`](./mtlsparsetexturemappingmode/unmap.md) mode instead.
 
 > ❗ **Important**:  Before you release a sparse texture, unmap all of its sparse tiles. Otherwise, the sparse heap continues to mark those tiles as mapped. However, Metal frees all mapped tile memory when you release the heap.
 
-##### Map the Tail Mipmaps After You Create the Texture
+##### Map the tail mipmaps after you create the texture
 
 If you create a complete mipmap chain for your texture, many of the lower-level mipmaps are smaller than the sparse tile size. To save memory, Metal packs all of these smaller mipmaps into one memory allocation, typically one sparse tile. To guarantee that a texture always has some data to sample, you usually want to map the tail mipmaps after you create the texture and keep the tail mapped until you’re ready to release the texture.
 
@@ -77,35 +78,36 @@ MTLRegion tailRegion = MTLRegionMake2D(0, 0, 1, 1);
 
 Similarly, if you unmap the first mipmap in the tail, all of the tail mipmaps are unmapped.
 
-##### Synchronize Access to Tile Mapping and Unmapping
+##### Synchronize access to tile mapping and unmapping
 
 Tile mapping is performed by the GPU, which means that it happens asynchronously at a future point after you commit the command buffer. Don’t change the memory assigned to a texture while the texture’s contents are being read or written. Use fences or events to ensure that these actions don’t overlap.
 
 > ❗ **Important**:  If you use more than one resource state encoder to encode commands that access the same sparse heap, you need to execute them sequentially, or your app may crash. For example, if you’ve two different command queues in your app, and both encode resource state commands for the same heap, synchronize access using shared events so that the updates happen sequentially.
 
-For more information about synchronizing Metal commands, see [`Resource synchronization`](resource-synchronization.md).
+For more information about synchronizing Metal commands, see [Resource synchronization](./resource-synchronization.md).
 
 ## See Also
 
-- [Managing sparse texture memory](managing-sparse-texture-memory.md)
+### Sparse textures
+- [Managing sparse texture memory](./managing-sparse-texture-memory.md)
   Take direct control of memory allocation for texture data by using sparse textures.
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](./converting-between-pixel-regions-and-sparse-tile-regions.md)
   Learn how a sparse texture’s contents are organized in memory.
-- [Reading and writing to sparse textures](reading-and-writing-to-sparse-textures.md)
+- [Reading and writing to sparse textures](./reading-and-writing-to-sparse-textures.md)
   Decide how to handle access to unmapped texture regions.
-- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Estimating how often a texture region is accessed](./estimating-how-often-a-texture-region-is-accessed.md)
   Use texture access patterns to determine when you need to map a texture region.
-- [class MTLResourceStatePassDescriptor](mtlresourcestatepassdescriptor.md)
+- [class MTLResourceStatePassDescriptor](./mtlresourcestatepassdescriptor.md)
   A configuration for a resource state pass, used to create a resource state command encoder.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](mtlresourcestatepasssamplebufferattachmentdescriptor.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](./mtlresourcestatepasssamplebufferattachmentdescriptor.md)
   A description of where to store GPU counter information at the start and end of a resource state pass.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](./mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
   An array of sample buffer attachments for a resource state pass.
-- [protocol MTLResourceStateCommandEncoder](mtlresourcestatecommandencoder.md)
+- [protocol MTLResourceStateCommandEncoder](./mtlresourcestatecommandencoder.md)
   An encoder that encodes commands that modify resource configurations.
-- [struct MTLMapIndirectArguments](mtlmapindirectarguments.md)
+- [struct MTLMapIndirectArguments](./mtlmapindirectarguments.md)
   The data layout for mapping sparse texture regions when using indirect commands.
 
 

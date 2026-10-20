@@ -1,7 +1,8 @@
 # Get power and performance metrics for an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the performance and power metrics data for the most recent version of an app.
 
@@ -10,18 +11,18 @@ Get the performance and power metrics data for the most recent version of an app
 
 ## Mentions
 
-- [App Store Connect API 1.4 release notes](app-store-connect-api-1-4-release-notes.md)
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 1.4 release notes](./app-store-connect-api-1-4-release-notes.md)
+- [App Store Connect API 4.0 release notes](./app-store-connect-api-4-0-release-notes.md)
 
 #### Discussion
 
-The example below requests iOS app launch metrics on all iPhones for the most-recent app versions. To get metrics for a specific app version instead, use the [`Get power and performance metrics for a build`](get-v1-builds-_id_-perfpowermetrics.md) endpoint.
+The example below requests iOS app launch metrics on all iPhones for the most-recent app versions. To get metrics for a specific app version instead, use the [`Get power and performance metrics for a build`](./get-v1-builds-_id_-perfpowermetrics.md) endpoint.
 
 ##### Example Request and Response
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/161309721/perfPowerMetrics?filter[deviceType]=all_iphones&filter[metricType]=LAUNCH&filter[platform]=iOS
 ```
 
@@ -149,19 +150,39 @@ https://api.appstoreconnect.apple.com/v1/apps/161309721/perfPowerMetrics?filter[
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The resource ID that uniquely identifies the app to return metrics data for. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
 - `filter[deviceType]` ([string]): The device types by which to filter. Use `all_iphones` for all iPhone models. Use `all_ipads` for all iPad models.
-- `filter[metricType]` ([string]): Types of metrics by which to filter. For more information about metric types, see [`MetricCategory`](metriccategory.md).
+- `filter[metricType]` ([string]): Types of metrics by which to filter. For more information about metric types, see [`MetricCategory`](./metriccategory.md).
+
+  **Allowed Values**: `DISK`, `HANG`, `BATTERY`, `LAUNCH`, `MEMORY`, `ANIMATION`, `TERMINATION`, `STORAGE`
 - `filter[platform]` ([string]): Platforms by which to filter.
+
+  **Allowed Values**: `IOS`
+
+## Responses
+
+- `200` OK (`xcodeMetrics`, `application/vnd.apple.xcode-metrics+json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Retrieve Power and Performance Metrics and Log Insights](retrieve-power-and-performance-metrics-and-log-insights.md)
+### Getting Metrics and Diagnostic Logs
+- [Retrieve Power and Performance Metrics and Log Insights](./retrieve-power-and-performance-metrics-and-log-insights.md)
   Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
-- [Get power and performance metrics for a build](get-v1-builds-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for a build](./get-v1-builds-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for a specific build.
-- [List all diagnostic signatures for a build](get-v1-builds-_id_-diagnosticsignatures.md)
+- [List all diagnostic signatures for a build](./get-v1-builds-_id_-diagnosticsignatures.md)
   List the aggregate backtrace signatures captured for a specific build.
-- [Download logs for a diagnostic signature](get-v1-diagnosticsignatures-_id_-logs.md)
+- [Download logs for a diagnostic signature](./get-v1-diagnosticsignatures-_id_-logs.md)
   Get the anonymized backtrace logs associated with a specific diagnostic signature.
 
 

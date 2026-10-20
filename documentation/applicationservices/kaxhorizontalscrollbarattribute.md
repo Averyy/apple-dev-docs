@@ -1,7 +1,8 @@
 # kAXHorizontalScrollBarAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXHorizontalScrollBarAttribute: String { get }
+```
+
+```c
+#define kAXHorizontalScrollBarAttribute
 ```
 
 #### Discussion

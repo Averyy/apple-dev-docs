@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride between array elements, in bytes.
 
@@ -10,7 +11,7 @@ The stride between array elements, in bytes.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ The stride between array elements, in bytes.
 var stride: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger stride;
+```
+
 ## See Also
 
-- [var arrayLength: Int](mtlarraytype/arraylength.md)
+### Describing the array elements
+- [var arrayLength: Int](./arraylength.md)
   The number of elements in the array.
-- [var elementType: MTLDataType](mtlarraytype/elementtype.md)
+- [var elementType: MTLDataType](./elementtype.md)
   The data type of the array’s elements.
-- [var argumentIndexStride: Int](mtlarraytype/argumentindexstride.md)
+- [var argumentIndexStride: Int](./argumentindexstride.md)
   The stride, in bytes, between argument indices.
 
 

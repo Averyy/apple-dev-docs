@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs regression on a shaped array.
 
@@ -31,7 +32,8 @@ A regression.
 
 ## See Also
 
-- [FullyConnectedNetworkRegressorModel.Target](fullyconnectednetworkregressormodel/target.md)
+### Performing a regression
+- [FullyConnectedNetworkRegressorModel.Target](./target.md)
 
 
 ---

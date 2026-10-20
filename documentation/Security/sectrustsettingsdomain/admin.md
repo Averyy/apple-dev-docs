@@ -1,7 +1,8 @@
 # SecTrustSettingsDomain.admin
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Locally administered, system-wide trust settings.
 
@@ -13,6 +14,10 @@ Locally administered, system-wide trust settings.
 
 ```swift
 case admin
+```
+
+```c
+kSecTrustSettingsDomainAdmin
 ```
 
 #### Discussion

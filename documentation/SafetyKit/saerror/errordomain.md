@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+

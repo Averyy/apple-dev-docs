@@ -1,7 +1,8 @@
 # kMIDIPropertyTransmitsProgramChanges
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the device or entity transmits MIDI Program Change messages.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether the device or entity transmits MIDI Progr
 let kMIDIPropertyTransmitsProgramChanges: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyTransmitsProgramChanges;
+```
+
 ## See Also
 
-- [let kMIDIPropertyReceivesProgramChanges: CFString](kmidipropertyreceivesprogramchanges.md)
+### Program Changes
+- [let kMIDIPropertyReceivesProgramChanges: CFString](./kmidipropertyreceivesprogramchanges.md)
   A Boolean value that indicates whether the device or entity responds to MIDI Program Change messages.
 
 

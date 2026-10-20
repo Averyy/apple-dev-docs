@@ -1,7 +1,8 @@
 # episodeNumber
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The episode number of the station.
 

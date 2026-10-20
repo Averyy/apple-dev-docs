@@ -1,6 +1,7 @@
 # Captions
 
-**Framework**: Media Accessibility
+**Framework**: Media Accessibility  
+**Role**: API Collection
 
 Coordinate the presentation of closed-captioned data for your app’s media files.
 
@@ -10,98 +11,99 @@ People can create custom styles for caption appearance in Accessibility settings
 
 In macOS, choose System Settings > Accessibility > Captions to access these options.
 
-![Screenshot of the Accessibility settings in macOS with Captions selected.](/images/com.apple.mediaaccessibility/media-3709928@2x.png)
+![Screenshot of the Accessibility settings in macOS with Captions selected.](https://developer.apple.com/tutorials/images/com.apple.mediaaccessibility/media-3709928@2x.png)
 
 When a person creates a custom caption style, the settings affect attributes, such as caption color, font, and language.
 
-![Screenshot of the Captions settings for a custom style in macOS.](/images/com.apple.mediaaccessibility/media-3709929@2x.png)
+![Screenshot of the Captions settings for a custom style in macOS.](https://developer.apple.com/tutorials/images/com.apple.mediaaccessibility/media-3709929@2x.png)
 
 By choosing custom styles for media text, people are requesting improved legibility. The Media Accessibility functions let you to tailor the user experience of your media content. You must be able to influence the caption-rendering process at time of delivery for the following functions to be useful. Retrieving a person’s preferences and dynamically rendering the captions for maximum readability provides the best user experience.
 
 ## Topics
 
 ### General settings
-- [let kMACaptionAppearanceSettingsChangedNotification: CFString](kmacaptionappearancesettingschangednotification.md)
+- [let kMACaptionAppearanceSettingsChangedNotification: CFString](./kmacaptionappearancesettingschangednotification.md)
   A notification that occurs when any user-defined caption settings change.
-- [func MACaptionAppearanceDidDisplayCaptions(CFArray)](macaptionappearancediddisplaycaptions(_:).md)
+- [func MACaptionAppearanceDidDisplayCaptions(CFArray)](./macaptionappearancediddisplaycaptions%28_%29.md)
   Informs accessibility clients when captions display onscreen.
-- [func MACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics(MACaptionAppearanceDomain) -> Unmanaged<CFArray>](macaptionappearancecopypreferredcaptioningmediacharacteristics(_:).md)
+- [func MACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics(MACaptionAppearanceDomain) -> Unmanaged<CFArray>](./macaptionappearancecopypreferredcaptioningmediacharacteristics%28_%29.md)
   Returns the preferences for captioning sounds.
-- [func MACaptionAppearanceGetDisplayType(MACaptionAppearanceDomain) -> MACaptionAppearanceDisplayType](macaptionappearancegetdisplaytype(_:).md)
+- [func MACaptionAppearanceGetDisplayType(MACaptionAppearanceDomain) -> MACaptionAppearanceDisplayType](./macaptionappearancegetdisplaytype%28_%29.md)
   Returns the preferred type of captions to display.
-- [func MACaptionAppearanceSetDisplayType(MACaptionAppearanceDomain, MACaptionAppearanceDisplayType)](macaptionappearancesetdisplaytype(_:_:).md)
+- [func MACaptionAppearanceSetDisplayType(MACaptionAppearanceDomain, MACaptionAppearanceDisplayType)](./macaptionappearancesetdisplaytype%28_,_%29.md)
   Sets the preference for the type of caption.
 ### Language settings
-- [func MACaptionAppearanceAddSelectedLanguage(MACaptionAppearanceDomain, CFString) -> Bool](macaptionappearanceaddselectedlanguage(_:_:).md)
+- [func MACaptionAppearanceAddSelectedLanguage(MACaptionAppearanceDomain, CFString) -> Bool](./macaptionappearanceaddselectedlanguage%28_,_%29.md)
   Adds a preference for caption language to the stack of languages.
-- [func MACaptionAppearanceCopySelectedLanguages(MACaptionAppearanceDomain) -> Unmanaged<CFArray>](macaptionappearancecopyselectedlanguages(_:).md)
+- [func MACaptionAppearanceCopySelectedLanguages(MACaptionAppearanceDomain) -> Unmanaged<CFArray>](./macaptionappearancecopyselectedlanguages%28_%29.md)
   Returns the preferred caption languages.
 ### Text settings
-- [func MACaptionAppearanceCopyFontDescriptorForStyle(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?, MACaptionAppearanceFontStyle) -> Unmanaged<CTFontDescriptor>](macaptionappearancecopyfontdescriptorforstyle(_:_:_:).md)
+- [func MACaptionAppearanceCopyFontDescriptorForStyle(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?, MACaptionAppearanceFontStyle) -> Unmanaged<CTFontDescriptor>](./macaptionappearancecopyfontdescriptorforstyle%28_,_,_%29.md)
   Returns the preferred font for the specified style of type.
-- [func MACaptionAppearanceCopyForegroundColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](macaptionappearancecopyforegroundcolor(_:_:).md)
+- [func MACaptionAppearanceCopyForegroundColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](./macaptionappearancecopyforegroundcolor%28_,_%29.md)
   Returns the preference for text color.
-- [func MACaptionAppearanceGetForegroundOpacity(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](macaptionappearancegetforegroundopacity(_:_:).md)
+- [func MACaptionAppearanceGetForegroundOpacity(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](./macaptionappearancegetforegroundopacity%28_,_%29.md)
   Returns the preference for text opacity.
-- [func MACaptionAppearanceGetRelativeCharacterSize(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](macaptionappearancegetrelativecharactersize(_:_:).md)
+- [func MACaptionAppearanceGetRelativeCharacterSize(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](./macaptionappearancegetrelativecharactersize%28_,_%29.md)
   Returns the preference for font scaling.
-- [func MACaptionAppearanceGetTextEdgeStyle(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> MACaptionAppearanceTextEdgeStyle](macaptionappearancegettextedgestyle(_:_:).md)
+- [func MACaptionAppearanceGetTextEdgeStyle(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> MACaptionAppearanceTextEdgeStyle](./macaptionappearancegettextedgestyle%28_,_%29.md)
   Returns the preference for text edge style.
 ### Text highlight settings
-- [func MACaptionAppearanceCopyBackgroundColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](macaptionappearancecopybackgroundcolor(_:_:).md)
+- [func MACaptionAppearanceCopyBackgroundColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](./macaptionappearancecopybackgroundcolor%28_,_%29.md)
   Returns the preference for the text highlight color.
-- [func MACaptionAppearanceGetBackgroundOpacity(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](macaptionappearancegetbackgroundopacity(_:_:).md)
+- [func MACaptionAppearanceGetBackgroundOpacity(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](./macaptionappearancegetbackgroundopacity%28_,_%29.md)
   Returns the preference for the text highlight opacity.
 ### Caption window settings
-- [func MACaptionAppearanceCopyWindowColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](macaptionappearancecopywindowcolor(_:_:).md)
+- [func MACaptionAppearanceCopyWindowColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](./macaptionappearancecopywindowcolor%28_,_%29.md)
   Returns the preference for the caption window’s color.
-- [func MACaptionAppearanceGetWindowOpacity(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](macaptionappearancegetwindowopacity(_:_:).md)
+- [func MACaptionAppearanceGetWindowOpacity(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](./macaptionappearancegetwindowopacity%28_,_%29.md)
   Returns the preference for the overlay’s opacity.
-- [func MACaptionAppearanceGetWindowRoundedCornerRadius(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](macaptionappearancegetwindowroundedcornerradius(_:_:).md)
+- [func MACaptionAppearanceGetWindowRoundedCornerRadius(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](./macaptionappearancegetwindowroundedcornerradius%28_,_%29.md)
   Returns the radius of the caption window’s corners.
 ### Image captioning settings
-- [func MAImageCaptioningCopyCaption(CFURL, UnsafeMutablePointer<CFError?>?) -> CFString?](maimagecaptioningcopycaption(_:_:).md)
+- [func MAImageCaptioningCopyCaption(CFURL, UnsafeMutablePointer<CFError?>?) -> CFString?](./maimagecaptioningcopycaption%28_,_%29.md)
   Returns an accessibility caption from an image’s metadata.
-- [func MAImageCaptioningSetCaption(CFURL, CFString?, UnsafeMutablePointer<CFError?>?) -> Bool](maimagecaptioningsetcaption(_:_:_:).md)
+- [func MAImageCaptioningSetCaption(CFURL, CFString?, UnsafeMutablePointer<CFError?>?) -> Bool](./maimagecaptioningsetcaption%28_,_,_%29.md)
   Sets the accessibility caption for an image’s metadata.
-- [func MAImageCaptioningCopyMetadataTagPath() -> CFString](maimagecaptioningcopymetadatatagpath().md)
+- [func MAImageCaptioningCopyMetadataTagPath() -> CFString](./maimagecaptioningcopymetadatatagpath%28%29.md)
   Returns the metadata tag path.
 ### Audible media selection settings
-- [let kMAAudibleMediaSettingsChangedNotification: CFString](kmaaudiblemediasettingschangednotification.md)
+- [let kMAAudibleMediaSettingsChangedNotification: CFString](./kmaaudiblemediasettingschangednotification.md)
   A notification that occurs when any user-defined audible media settings change.
-- [func MAAudibleMediaCopyPreferredCharacteristics() -> Unmanaged<CFArray>](maaudiblemediacopypreferredcharacteristics().md)
+- [func MAAudibleMediaCopyPreferredCharacteristics() -> Unmanaged<CFArray>](./maaudiblemediacopypreferredcharacteristics%28%29.md)
   Returns the preference for audible media characteristics.
-- [let MAMediaCharacteristicDescribesVideoForAccessibility: CFString](mamediacharacteristicdescribesvideoforaccessibility.md)
+- [let MAMediaCharacteristicDescribesVideoForAccessibility: CFString](./mamediacharacteristicdescribesvideoforaccessibility.md)
   A media characteristic that indicates that a track or media selection option includes audible content that describes a video for accessibility.
-- [let MAMediaCharacteristicDescribesMusicAndSoundForAccessibility: CFString](mamediacharacteristicdescribesmusicandsoundforaccessibility.md)
+- [let MAMediaCharacteristicDescribesMusicAndSoundForAccessibility: CFString](./mamediacharacteristicdescribesmusicandsoundforaccessibility.md)
   A media characteristic that indicates that a track includes legible content in the language of its specified locale that describes music and sound other than spoken dialog.
-- [let MAMediaCharacteristicTranscribesSpokenDialogForAccessibility: CFString](mamediacharacteristictranscribesspokendialogforaccessibility.md)
+- [let MAMediaCharacteristicTranscribesSpokenDialogForAccessibility: CFString](./mamediacharacteristictranscribesspokendialogforaccessibility.md)
   A media characteristic that indicates that a track includes legible content in the language of its specified locale that transcribes spoken dialog and identifies the speakers.
 ### Profile settings
-- [func MACaptionAppearanceCopyProfileIDs() -> CFArray](macaptionappearancecopyprofileids().md)
-- [func MACaptionAppearanceSetActiveProfileID(CFString)](macaptionappearancesetactiveprofileid(_:).md)
-- [func MACaptionAppearanceCopyActiveProfileID() -> CFString](macaptionappearancecopyactiveprofileid().md)
-- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](macaptionappearancecopyprofilename(_:).md)
-- [func MACaptionAppearanceExecuteBlockForProfileID(CFString, () -> Void)](macaptionappearanceexecuteblockforprofileid(_:_:).md)
+- [func MACaptionAppearanceCopyProfileIDs() -> CFArray](./macaptionappearancecopyprofileids%28%29.md)
+- [func MACaptionAppearanceSetActiveProfileID(CFString)](./macaptionappearancesetactiveprofileid%28_%29.md)
+- [func MACaptionAppearanceCopyActiveProfileID() -> CFString](./macaptionappearancecopyactiveprofileid%28%29.md)
+- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](./macaptionappearancecopyprofilename%28_%29.md)
+- [func MACaptionAppearanceExecuteBlockForProfileID(CFString, () -> Void)](./macaptionappearanceexecuteblockforprofileid%28_,_%29.md)
 ### Customization status
-- [func MACaptionAppearanceIsCustomized(MACaptionAppearanceDomain) -> Bool](macaptionappearanceiscustomized(_:).md)
+- [func MACaptionAppearanceIsCustomized(MACaptionAppearanceDomain) -> Bool](./macaptionappearanceiscustomized%28_%29.md)
 ### Constants
-- [enum MACaptionAppearanceDomain](macaptionappearancedomain.md)
+- [enum MACaptionAppearanceDomain](./macaptionappearancedomain.md)
   A value that specifies which domain to retrieve a preference setting from.
-- [enum MACaptionAppearanceDisplayType](macaptionappearancedisplaytype.md)
+- [enum MACaptionAppearanceDisplayType](./macaptionappearancedisplaytype.md)
   A value that specifies the type of captions to display.
-- [enum MACaptionAppearanceBehavior](macaptionappearancebehavior.md)
+- [enum MACaptionAppearanceBehavior](./macaptionappearancebehavior.md)
   A value that indicates the preferred behavior for a preference setting.
-- [enum MACaptionAppearanceFontStyle](macaptionappearancefontstyle.md)
+- [enum MACaptionAppearanceFontStyle](./macaptionappearancefontstyle.md)
   A value that specifies a font style.
-- [enum MACaptionAppearanceTextEdgeStyle](macaptionappearancetextedgestyle.md)
+- [enum MACaptionAppearanceTextEdgeStyle](./macaptionappearancetextedgestyle.md)
   A value that specifies a style for the outside of the text.
 
 ## See Also
 
-- [Flashing lights](flashing-lights.md)
+### Features
+- [Flashing lights](./flashing-lights.md)
   Detect, mitigate, and inform people about flashing lights in media content.
-- [Music Haptics](music-haptics.md)
+- [Music Haptics](./music-haptics.md)
   Play haptic tracks along with known music tracks.
 
 

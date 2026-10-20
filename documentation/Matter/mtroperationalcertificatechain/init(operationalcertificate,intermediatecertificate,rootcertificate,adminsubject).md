@@ -1,7 +1,8 @@
 # init(operationalCertificate:intermediateCertificate:rootCertificate:adminSubject:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init(operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data, adminSubject: NSNumber?)
+```
+
+```objc
+- (instancetype) initWithOperationalCertificate:(MTRCertificateDERBytes) operationalCertificate intermediateCertificate:(MTRCertificateDERBytes) intermediateCertificate rootCertificate:(MTRCertificateDERBytes) rootCertificate adminSubject:(NSNumber *) adminSubject;
 ```
 
 

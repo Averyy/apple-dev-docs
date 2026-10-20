@@ -1,7 +1,8 @@
 # kMDItemFSIsExtensionHidden
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the file extension of the file is hidden. A CFBoolean.
 
@@ -12,6 +13,10 @@ Indicates whether the file extension of the file is hidden. A CFBoolean.
 
 ```swift
 let kMDItemFSIsExtensionHidden: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSIsExtensionHidden;
 ```
 
 

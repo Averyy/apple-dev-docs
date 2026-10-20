@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts the provided text and marks it to indicate that it is part of an active input session.
@@ -16,6 +17,10 @@ Inserts the provided text and marks it to indicate that it is part of an active 
 
 ```swift
 func setMarkedText(_ markedText: String?, selectedRange: NSRange)
+```
+
+```objc
+- (void) setMarkedText:(NSString *) markedText selectedRange:(NSRange) selectedRange;
 ```
 
 

@@ -1,7 +1,8 @@
 # ContactProviderError.itemsLimitReached
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Limit of items has been reached.
 

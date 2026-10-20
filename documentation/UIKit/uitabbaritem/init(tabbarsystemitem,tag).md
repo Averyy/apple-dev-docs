@@ -1,7 +1,8 @@
 # init(tabBarSystemItem:tag:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tab bar item using a system-provided configuration.
 
@@ -9,7 +10,7 @@ Creates a tab bar item using a system-provided configuration.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,26 +19,31 @@ Creates a tab bar item using a system-provided configuration.
 convenience init(tabBarSystemItem systemItem: UITabBarItem.SystemItem, tag: Int)
 ```
 
+```objc
+- (instancetype) initWithTabBarSystemItem:(UITabBarSystemItem) systemItem tag:(NSInteger) tag;
+```
+
 #### Discussion
 
-You can’t change the [`title`](uibaritem/title.md) and [`image`](uibaritem/image.md) properties of an item this method creates.
+You can’t change the [`title`](../uibaritem/title.md) and [`image`](../uibaritem/image.md) properties of an item this method creates.
 
 ## Parameters
 
-- `systemItem`: The preferred system item. For possible values, see [`UITabBarItem.SystemItem`](uitabbaritem/systemitem.md).
+- `systemItem`: The preferred system item. For possible values, see [`UITabBarItem.SystemItem`](./systemitem.md).
 - `tag`: An integer you use to identify the object.
 
 ## See Also
 
-- [convenience init(title: String?, image: UIImage?, tag: Int)](uitabbaritem/init(title:image:tag:).md)
+### Creating a tab bar item
+- [convenience init(title: String?, image: UIImage?, tag: Int)](./init%28title,image,tag%29.md)
   Creates a tab bar item that displays a title and an image.
-- [convenience init(title: String?, image: UIImage?, selectedImage: UIImage?)](uitabbaritem/init(title:image:selectedimage:).md)
+- [convenience init(title: String?, image: UIImage?, selectedImage: UIImage?)](./init%28title,image,selectedimage%29.md)
   Creates a tab bar item that toggles the image it displays when its selected state changes.
-- [init()](uitabbaritem/init.md)
+- [init()](./init%28%29.md)
   Creates a tab bar item with a default configuration.
-- [init?(coder: NSCoder)](uitabbaritem/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a tab bar item from a serialized instance.
-- [UITabBarItem.SystemItem](uitabbaritem/systemitem.md)
+- [UITabBarItem.SystemItem](./systemitem.md)
   Constants that represent the system tab bar items.
 
 

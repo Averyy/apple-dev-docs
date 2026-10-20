@@ -1,7 +1,8 @@
 # IMKCandidatePanelType
 
 **Framework**: InputMethodKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Types of candidates windows provide by the Input Method Kit.
 
@@ -14,16 +15,21 @@ Types of candidates windows provide by the Input Method Kit.
 typealias IMKCandidatePanelType = Int
 ```
 
+```c
+typedef NSUInteger IMKCandidatePanelType;
+```
+
 ## Topics
 
 ### Constants
-- [var kIMKSingleColumnScrollingCandidatePanel: Int](kimksinglecolumnscrollingcandidatepanel.md)
-- [var kIMKScrollingGridCandidatePanel: Int](kimkscrollinggridcandidatepanel.md)
-- [var kIMKSingleRowSteppingCandidatePanel: Int](kimksinglerowsteppingcandidatepanel.md)
+- [var kIMKSingleColumnScrollingCandidatePanel: Int](./kimksinglecolumnscrollingcandidatepanel.md)
+- [var kIMKScrollingGridCandidatePanel: Int](./kimkscrollinggridcandidatepanel.md)
+- [var kIMKSingleRowSteppingCandidatePanel: Int](./kimksinglerowsteppingcandidatepanel.md)
 
 ## See Also
 
-- [typealias IMKCandidatesLocationHint](imkcandidateslocationhint.md)
+### Constants
+- [typealias IMKCandidatesLocationHint](./imkcandidateslocationhint.md)
   Hints that suggest where to place the candidates window.
 
 

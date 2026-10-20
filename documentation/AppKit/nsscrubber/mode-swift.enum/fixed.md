@@ -1,7 +1,8 @@
 # NSScrubber.Mode.fixed
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scrolling mode in which scrubber items remain fixed in place, and the item under the user’s finger is highlighted.
 
@@ -14,15 +15,20 @@ A scrolling mode in which scrubber items remain fixed in place, and the item und
 case fixed
 ```
 
+```c
+NSScrubberModeFixed
+```
+
 #### Discussion
 
 When a user swipes horizontally across the scrubber, the scrubber items remain fixed in place and the item under the user’s finger highlights. At the conclusion of the touch interaction, the last-highlighted item is selected.
 
-For details on how to choose the correct mode for your app, see [`Choose a scrubber touch-interaction model`](nsscrubber#Choose-a-scrubber-touch-interaction-model.md).
+For details on how to choose the correct mode for your app, see [Choose a scrubber touch-interaction model](../../nsscrubber.md#Choose-a-scrubber-touch-interaction-model).
 
 ## See Also
 
-- [NSScrubber.Mode.free](nsscrubber/mode-swift.enum/free.md)
+### Constants
+- [NSScrubber.Mode.free](./free.md)
   A scrolling mode in which the scrubber scrolls as the user swipes horizontally across the scrubber.
 
 

@@ -1,16 +1,17 @@
 # textField(_:shouldChangeCharactersIn:replacementString:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to change the specified text.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 27.0
+- iPadOS 2.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- tvOS - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Asks the delegate whether to change the specified text.
 optional func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
 ```
 
+```objc
+- (BOOL) textField:(UITextField *) textField shouldChangeCharactersInRange:(NSRange) range replacementString:(NSString *) string;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified text range should be replaced; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to keep the old text.
+[`true`](../../Swift/true.md) if the specified text range should be replaced; otherwise, [`false`](../../Swift/false.md) to keep the old text.
 
 #### Discussion
 
@@ -34,9 +39,10 @@ The text field calls this method whenever user actions cause its text to change.
 
 ## See Also
 
-- [func textFieldShouldClear(UITextField) -> Bool](uitextfielddelegate/textfieldshouldclear(_:).md)
+### Editing the text field’s text
+- [func textFieldShouldClear(UITextField) -> Bool](./textfieldshouldclear%28_%29.md)
   Asks the delegate whether to remove the text field’s current contents.
-- [func textFieldShouldReturn(UITextField) -> Bool](uitextfielddelegate/textfieldshouldreturn(_:).md)
+- [func textFieldShouldReturn(UITextField) -> Bool](./textfieldshouldreturn%28_%29.md)
   Asks the delegate whether to process the pressing of the Return button for the text field.
 
 

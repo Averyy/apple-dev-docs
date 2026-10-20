@@ -1,7 +1,8 @@
 # GetTokenRequest
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The get token request details.
 
@@ -14,31 +15,48 @@ The get token request details.
 
 ## Declaration
 
-```swift
+```
 object GetTokenRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object GetTokenRequest.TokenParameters](gettokenrequest/tokenparameters-data.dictionary.md)
+- [object GetTokenRequest.TokenParameters](./gettokenrequest/tokenparameters-data.dictionary.md)
   Parameters that the system uses to generate the token.
 
 ## Properties
 
 - `EnrollmentID` (string) *(required)*: The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
-- `EnrollmentUserID` (string) *(required)*: The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel. Available: macOS 14+
+- `EnrollmentUserID` (string) *(required)*: The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
+
+  Available: macOS 14+
 - `MessageType` (string) *(required)*: The message type, which requires a value of `GetToken`.
+
+  **Allowed Values**: `GetToken`
 - `TokenParameters` (GetTokenRequest.TokenParameters): Parameters that the system uses to generate the token.
 - `TokenServiceType` (string) *(required)*: A string that specifies the service for the requested token.
+
+  **Allowed Values**: `com.apple.maid`, `com.apple.watch.pairing`
 - `UDID` (string) *(required)*: The device’s UDID (unique device identifier). The system requires this value if the enrollment type is a device enrollment.
-- `UserID` (string): For macOS, this value is the ID of the user. For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur. Available: iOS 17+ | iPadOS 17+ | macOS 14+
-- `UserLongName` (string) *(required)*: The full name of the user. Available: macOS 14+
-- `UserShortName` (string): For macOS, this value is the short name of the user. For Shared iPad, this value is the Managed Apple Account identifier of the user. When present, it indicates that the token is for the user channel. Available: iOS 17+ | iPadOS 17+ | macOS 14+
+- `UserID` (string): For macOS, this value is the ID of the user.
+
+  For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
+
+  Available: iOS 17+ | iPadOS 17+ | macOS 14+
+- `UserLongName` (string) *(required)*: The full name of the user.
+
+  Available: macOS 14+
+- `UserShortName` (string): For macOS, this value is the short name of the user.
+
+  For Shared iPad, this value is the Managed Apple Account identifier of the user. When present, it indicates that the token is for the user channel.
+
+  Available: iOS 17+ | iPadOS 17+ | macOS 14+
 
 ## See Also
 
-- [object GetTokenResponse](gettokenresponse.md)
+### Requests and responses
+- [object GetTokenResponse](./gettokenresponse.md)
   The get token response details.
 
 

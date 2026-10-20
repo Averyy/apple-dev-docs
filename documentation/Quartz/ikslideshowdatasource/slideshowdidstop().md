@@ -1,7 +1,8 @@
 # slideshowDidStop()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom tasks when the slideshow stops.
 
@@ -14,17 +15,23 @@ Performs custom tasks when the slideshow stops.
 optional func slideshowDidStop()
 ```
 
+```objc
+- (void) slideshowDidStop;
+```
+
 #### Discussion
 
 TImage Kit invokes this method when the slideshow stops. Implement this method to perform custom tasks at that time.
 
 ## See Also
 
-- [protocol IKSlideshowDataSource](ikslideshowdatasource.md)
-  The `IKSlideshowDataSource` protocol describes the methods that an [`IKSlideshow`](ikslideshow.md) object uses to access the contents of its data source object.
-- [func slideshowWillStart()](ikslideshowdatasource/slideshowwillstart.md)
+### Related Documentation
+- [protocol IKSlideshowDataSource](../ikslideshowdatasource.md)
+  The `IKSlideshowDataSource` protocol describes the methods that an [`IKSlideshow`](../ikslideshow.md) object uses to access the contents of its data source object.
+### Performing Custom Tasks
+- [func slideshowWillStart()](./slideshowwillstart%28%29.md)
   Performs custom tasks when the slideshow is about to start.
-- [func slideshowDidChangeCurrentIndex(Int)](ikslideshowdatasource/slideshowdidchangecurrentindex(_:).md)
+- [func slideshowDidChangeCurrentIndex(Int)](./slideshowdidchangecurrentindex%28_%29.md)
   Performs custom tasks when the slideshow changes to the item at the specified index.
 
 

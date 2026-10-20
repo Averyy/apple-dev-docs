@@ -1,7 +1,8 @@
 # audioTimePitchAlgorithm
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The processing algorithm used to manage audio pitch for scaled audio edits.
 
@@ -21,21 +22,26 @@ nonisolated
 var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm { get set }
 ```
 
+```objc
+@property (copy) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
+```
+
 #### Discussion
 
 The supported constants are defined in Time Pitch Algorithm Settings.
 
-An [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) will be raised if this property is set to a value other than the defined constants.
+An [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) will be raised if this property is set to a value other than the defined constants.
 
 ## See Also
 
-- [var audioMix: AVAudioMix?](avplayeritem/audiomix.md)
+### Configuring audio
+- [var audioMix: AVAudioMix?](./audiomix.md)
   The audio mix parameters to be applied during playback.
-- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avplayeritem/allowedaudiospatializationformats.md)
+- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](./allowedaudiospatializationformats.md)
   The source audio channel layouts the player item supports for spatialization.
-- [struct AVAudioSpatializationFormats](avaudiospatializationformats.md)
+- [struct AVAudioSpatializationFormats](../avaudiospatializationformats.md)
   A structure that defines the spatialization formats that a player item supports.
-- [var isAudioSpatializationAllowed: Bool](avplayeritem/isaudiospatializationallowed.md)
+- [var isAudioSpatializationAllowed: Bool](./isaudiospatializationallowed.md)
   A Boolean value that indicates whether the player item allows spatialized audio playback.
 
 

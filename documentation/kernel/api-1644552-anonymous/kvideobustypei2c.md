@@ -1,14 +1,15 @@
 # kVideoBusTypeI2C
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kVideoBusTypeI2C = 1
 ```
 

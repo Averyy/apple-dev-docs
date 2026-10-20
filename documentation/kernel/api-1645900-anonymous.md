@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWAVCProducerMode_SEND](1645900-anonymous/kfwavcproducermode_send.md)
-- [kFWAVCProducerMode_TOSS](1645900-anonymous/kfwavcproducermode_toss.md)
+- [kFWAVCProducerMode_SEND](./api-1645900-anonymous/kfwavcproducermode_send.md)
+- [kFWAVCProducerMode_TOSS](./api-1645900-anonymous/kfwavcproducermode_toss.md)
 
 
 ---

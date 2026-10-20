@@ -1,7 +1,8 @@
 # CLLocationButtonIcon.arrowOutline
 
 **Framework**: CoreLocationUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that displays an unfilled, outline arrow icon.
 
@@ -16,11 +17,16 @@ A style that displays an unfilled, outline arrow icon.
 case arrowOutline
 ```
 
+```c
+CLLocationButtonIconArrowOutline
+```
+
 ## See Also
 
-- [CLLocationButtonIcon.none](cllocationbuttonicon/none.md)
+### Customizing icon styles
+- [CLLocationButtonIcon.none](./none.md)
   A style that doesn’t display an icon.
-- [CLLocationButtonIcon.arrowFilled](cllocationbuttonicon/arrowfilled.md)
+- [CLLocationButtonIcon.arrowFilled](./arrowfilled.md)
   A style that displays a filled arrow icon.
 
 

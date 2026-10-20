@@ -1,7 +1,8 @@
 # kTextToSpeechVoiceBundleType
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The type of a voice bundle file. Typically, files containing multiple voices are of type `kTextToSpeechVoiceBundleType`.
 

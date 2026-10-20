@@ -1,7 +1,8 @@
 # stickSize
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size (width, height) of the thumbstick stick itself in points.
 
@@ -16,15 +17,20 @@ The size (width, height) of the thumbstick stick itself in points.
 var stickSize: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGSize stickSize;
+```
+
 ## See Also
 
-- [var backgroundContents: TCControlContents?](tcthumbstick/backgroundcontents.md)
+### Inspecting a thumbstick
+- [var backgroundContents: TCControlContents?](./backgroundcontents.md)
   The contents for the background of the thumbstick.
-- [var hidesWhenNotPressed: Bool](tcthumbstick/hideswhennotpressed.md)
+- [var hidesWhenNotPressed: Bool](./hideswhennotpressed.md)
   A Boolean value that indicates whether to hide the thumbstick when it is not being pressed.
-- [var highlightDuration: TimeInterval](tcthumbstick/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var stickContents: TCControlContents?](tcthumbstick/stickcontents.md)
+- [var stickContents: TCControlContents?](./stickcontents.md)
   The contents for the thumbstick itself.
 
 

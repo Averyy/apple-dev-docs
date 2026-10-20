@@ -1,7 +1,8 @@
 # init(_:including:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference-type attributed string from the specified value-type attributed string, including an attribute scope.
 
@@ -27,9 +28,10 @@ convenience init<S>(_ attrStr: AttributedString, including scope: S.Type) throws
 
 ## See Also
 
-- [convenience init(AttributedString)](nsattributedstring/init(_:).md)
+### Creating a formatted string
+- [convenience init(AttributedString)](./init%28_%29.md)
   Creates a reference-type attributed string from the specified value-type attributed string.
-- [convenience init<S>(AttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](nsattributedstring/init(_:including:)-8iy4i.md)
+- [convenience init<S>(AttributedString, including: KeyPath<AttributeScopes, S.Type>) throws](./init%28_,including%29-8iy4i.md)
   Creates a reference-type attributed string from the specified value-type attributed string, including an attribute scope that a key path identifies.
 
 

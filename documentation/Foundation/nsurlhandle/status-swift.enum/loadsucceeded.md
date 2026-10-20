@@ -1,7 +1,8 @@
 # NSURLHandle.Status.loadSucceeded
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The resource data was successfully loaded.
 
@@ -9,19 +10,26 @@ The resource data was successfully loaded.
 - Mac Catalyst 13.0+
 - macOS 10.0+
 
+> **Deprecated**: Use [`NSURLConnection`](../../nsurlconnection.md) or [`NSURLDownload`](../../nsurldownload.md) instead; see [URL Loading System](../../url-loading-system.md).
+
 ## Declaration
 
 ```swift
 case loadSucceeded
 ```
 
+```c
+NSURLHandleLoadSucceeded
+```
+
 ## See Also
 
-- [NSURLHandle.Status.notLoaded](nsurlhandle/status-swift.enum/notloaded.md)
+### Constants
+- [NSURLHandle.Status.notLoaded](./notloaded.md)
   The resource data has not been loaded.
-- [NSURLHandle.Status.loadInProgress](nsurlhandle/status-swift.enum/loadinprogress.md)
+- [NSURLHandle.Status.loadInProgress](./loadinprogress.md)
   The resource data is in the process of loading.
-- [NSURLHandle.Status.loadFailed](nsurlhandle/status-swift.enum/loadfailed.md)
+- [NSURLHandle.Status.loadFailed](./loadfailed.md)
   The resource data failed to load.
 
 

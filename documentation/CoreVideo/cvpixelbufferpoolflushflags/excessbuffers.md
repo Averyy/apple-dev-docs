@@ -1,7 +1,8 @@
 # excessBuffers
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value to pass to flush all unused buffers regardless of age.
 
@@ -18,6 +19,10 @@ The value to pass to flush all unused buffers regardless of age.
 
 ```swift
 static var excessBuffers: CVPixelBufferPoolFlushFlags { get }
+```
+
+```c
+kCVPixelBufferPoolFlushExcessBuffers
 ```
 
 

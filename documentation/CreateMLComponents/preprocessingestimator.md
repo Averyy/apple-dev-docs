@@ -1,7 +1,8 @@
 # PreprocessingEstimator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An estimator that composes a preprocessing transformer and an estimator.
 
@@ -23,51 +24,52 @@ struct PreprocessingEstimator<Preprocessor, Estimator> where Preprocessor : Tran
 ## Topics
 
 ### Creating an estimator
-- [init(Preprocessor, Estimator)](preprocessingestimator/init(_:_:).md)
+- [init(Preprocessor, Estimator)](./preprocessingestimator/init%28_,_%29.md)
   Creates a composed estimator from a preprocessing transformer and an estimator.
 ### Getting the properties
-- [var estimator: Estimator](preprocessingestimator/estimator.md)
+- [var estimator: Estimator](./preprocessingestimator/estimator.md)
   The estimator.
-- [var preprocessor: Preprocessor](preprocessingestimator/preprocessor.md)
+- [var preprocessor: Preprocessor](./preprocessingestimator/preprocessor.md)
   The preprocessing transformer.
 ### Preprocesing and fitting
-- [func preprocessed<S>(from: S, eventHandler: EventHandler?) async throws -> [Preprocessor.Output]](preprocessingestimator/preprocessed(from:eventhandler:).md)
+- [func preprocessed<S>(from: S, eventHandler: EventHandler?) async throws -> [Preprocessor.Output]](./preprocessingestimator/preprocessed%28from,eventhandler%29.md)
   Preprocesses a sequence of examples.
-- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](preprocessingestimator/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](./preprocessingestimator/fitted%28to,eventhandler%29.md)
   Fits a composed transformer to a sequence of examples.
-- [func fitted<S>(toPreprocessed: S, eventHandler: EventHandler?) async throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](preprocessingestimator/fitted(topreprocessed:eventhandler:).md)
+- [func fitted<S>(toPreprocessed: S, eventHandler: EventHandler?) async throws -> PreprocessingEstimator<Preprocessor, Estimator>.Transformer](./preprocessingestimator/fitted%28topreprocessed,eventhandler%29.md)
   Fits a transformer to a sequence of preprocessed features.
-- [PreprocessingEstimator.Input](preprocessingestimator/input.md)
+- [PreprocessingEstimator.Input](./preprocessingestimator/input.md)
   The input type.
-- [PreprocessingEstimator.Intermediate](preprocessingestimator/intermediate.md)
+- [PreprocessingEstimator.Intermediate](./preprocessingestimator/intermediate.md)
   The intermediate type.
-- [PreprocessingEstimator.Output](preprocessingestimator/output.md)
+- [PreprocessingEstimator.Output](./preprocessingestimator/output.md)
   The output type.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
 
 ## Relationships
 
 ### Conforms To
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PreprocessingTemporalEstimator](preprocessingtemporalestimator.md)
+### Composition with preprocessing
+- [struct PreprocessingTemporalEstimator](./preprocessingtemporalestimator.md)
   A temporal estimator that composes a preprocessing transformer and a temporal estimator.
-- [struct PreprocessingSupervisedEstimator](preprocessingsupervisedestimator.md)
+- [struct PreprocessingSupervisedEstimator](./preprocessingsupervisedestimator.md)
   A supervised estimator that composes a preprocessing transformer and a supervised estimator.
-- [struct PreprocessingSupervisedTemporalEstimator](preprocessingsupervisedtemporalestimator.md)
+- [struct PreprocessingSupervisedTemporalEstimator](./preprocessingsupervisedtemporalestimator.md)
   A supervised temporal estimator that composes a preprocessing transformer and a supervised temporal estimator.
-- [struct PreprocessingUpdatableEstimator](preprocessingupdatableestimator.md)
+- [struct PreprocessingUpdatableEstimator](./preprocessingupdatableestimator.md)
   An updatable estimator that composes a preprocessing transformer and an updatable estimator.
-- [struct PreprocessingUpdatableTemporalEstimator](preprocessingupdatabletemporalestimator.md)
+- [struct PreprocessingUpdatableTemporalEstimator](./preprocessingupdatabletemporalestimator.md)
   An updatable temporal estimator that composes a preprocessing transformer and an updatable temporal estimator.
-- [struct PreprocessingUpdatableSupervisedEstimator](preprocessingupdatablesupervisedestimator.md)
+- [struct PreprocessingUpdatableSupervisedEstimator](./preprocessingupdatablesupervisedestimator.md)
   An updatable supervised estimator that composes a preprocessing transformer and an updatable supervised estimator.
-- [struct PreprocessingUpdatableSupervisedTemporalEstimator](preprocessingupdatablesupervisedtemporalestimator.md)
+- [struct PreprocessingUpdatableSupervisedTemporalEstimator](./preprocessingupdatablesupervisedtemporalestimator.md)
   An updatable supervised temporal estimator that composes a preprocessing transformer and an updatable supervised temporal estimator.
 
 

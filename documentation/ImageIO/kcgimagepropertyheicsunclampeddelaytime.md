@@ -1,7 +1,8 @@
 # kCGImagePropertyHEICSUnclampedDelayTime
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unclamped number of seconds to wait before displaying the next image in the sequence.
 
@@ -20,17 +21,22 @@ The unclamped number of seconds to wait before displaying the next image in the 
 let kCGImagePropertyHEICSUnclampedDelayTime: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyHEICSUnclampedDelayTime;
+```
+
 #### Discussion
 
-The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) with a floating-point value.
+The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) with a floating-point value.
 
 ## See Also
 
-- [let kCGImagePropertyHEICSFrameInfoArray: CFString](kcgimagepropertyheicsframeinfoarray.md)
+### Sequence Timing
+- [let kCGImagePropertyHEICSFrameInfoArray: CFString](./kcgimagepropertyheicsframeinfoarray.md)
   An array of dictionaries that contain timing information for the image sequence.
-- [let kCGImagePropertyHEICSDelayTime: CFString](kcgimagepropertyheicsdelaytime.md)
+- [let kCGImagePropertyHEICSDelayTime: CFString](./kcgimagepropertyheicsdelaytime.md)
   The number of seconds to wait before displaying the next image in the sequence, clamped to a minimum of `0.1` seconds.
-- [let kCGImagePropertyHEICSLoopCount: CFString](kcgimagepropertyheicsloopcount.md)
+- [let kCGImagePropertyHEICSLoopCount: CFString](./kcgimagepropertyheicsloopcount.md)
   The number of times to play the sequence.
 
 

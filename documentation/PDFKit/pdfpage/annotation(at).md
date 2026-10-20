@@ -1,7 +1,8 @@
 # annotation(at:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the annotation, if there is one, at the specified point.
 
@@ -15,8 +16,28 @@ Returns the annotation, if there is one, at the specified point.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func annotation(at point: CGPoint) -> PDFAnnotation?
+```
+
+*macOS*
+
 ```swift
 func annotation(at point: NSPoint) -> PDFAnnotation?
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (PDFAnnotation *) annotationAtPoint:(CGPoint) point;
+```
+
+*macOS*
+
+```objc
+- (PDFAnnotation *) annotationAtPoint:(NSPoint) point;
 ```
 
 #### Discussion
@@ -27,13 +48,14 @@ Specify the point in page space. Page space is a 72 dpi coordinate system with t
 
 ## See Also
 
-- [var annotations: [PDFAnnotation]](pdfpage/annotations.md)
+### Working with Annotations
+- [var annotations: [PDFAnnotation]](./annotations.md)
   Returns an array containing the page’s annotations.
-- [var displaysAnnotations: Bool](pdfpage/displaysannotations.md)
+- [var displaysAnnotations: Bool](./displaysannotations.md)
   Returns a Boolean value indicating whether annotations are displayed for the page.
-- [func addAnnotation(PDFAnnotation)](pdfpage/addannotation(_:).md)
+- [func addAnnotation(PDFAnnotation)](./addannotation%28_%29.md)
   Adds the specified annotation object to the page.
-- [func removeAnnotation(PDFAnnotation)](pdfpage/removeannotation(_:).md)
+- [func removeAnnotation(PDFAnnotation)](./removeannotation%28_%29.md)
   Removes the specified annotation from the page.
 
 

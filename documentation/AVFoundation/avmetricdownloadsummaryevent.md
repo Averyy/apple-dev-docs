@@ -1,7 +1,8 @@
 # AVMetricDownloadSummaryEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents a summary metric event with aggregated metrics for the entire download task.
 
@@ -20,6 +21,10 @@ Represents a summary metric event with aggregated metrics for the entire downloa
 class AVMetricDownloadSummaryEvent
 ```
 
+```objc
+@interface AVMetricDownloadSummaryEvent : AVMetricEvent
+```
+
 #### Overview
 
 Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
@@ -27,38 +32,39 @@ Subclasses of this type that are used from Swift must fulfill the requirements o
 ## Topics
 
 ### Inspecting the download summary
-- [var downloadDuration: TimeInterval](avmetricdownloadsummaryevent/downloadduration.md)
+- [var downloadDuration: TimeInterval](./avmetricdownloadsummaryevent/downloadduration.md)
   Returns the total duration of the download in seconds.
-- [var bytesDownloadedCount: Int](avmetricdownloadsummaryevent/bytesdownloadedcount.md)
+- [var bytesDownloadedCount: Int](./avmetricdownloadsummaryevent/bytesdownloadedcount.md)
   Returns the total number of bytes downloaded by the download task.
-- [var mediaResourceRequestCount: Int](avmetricdownloadsummaryevent/mediaresourcerequestcount.md)
+- [var mediaResourceRequestCount: Int](./avmetricdownloadsummaryevent/mediaresourcerequestcount.md)
   Returns the total number of media requests performed by the download task. This includes playlist requests, media segment requests, and content key requests.
-- [var recoverableErrorCount: Int](avmetricdownloadsummaryevent/recoverableerrorcount.md)
+- [var recoverableErrorCount: Int](./avmetricdownloadsummaryevent/recoverableerrorcount.md)
   Returns the total count of recoverable errors encountered during the download. If no errors were encountered, returns 0.
-- [var variants: [AVAssetVariant]](avmetricdownloadsummaryevent/variants.md)
+- [var variants: [AVAssetVariant]](./avmetricdownloadsummaryevent/variants.md)
   Returns the variants that were downloaded.
-- [var errorEvent: AVMetricErrorEvent?](avmetricdownloadsummaryevent/errorevent.md)
+- [var errorEvent: AVMetricErrorEvent?](./avmetricdownloadsummaryevent/errorevent.md)
   Returns the error event if any. If no value is available, returns nil.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricEvent](avmetricevent.md)
+- [AVMetricEvent](./avmetricevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
+### Summary
+- [class AVMetricPlayerItemPlaybackSummaryEvent](./avmetricplayeritemplaybacksummaryevent.md)
   An event that represents the combined metrics for the entire playback session.
 
 

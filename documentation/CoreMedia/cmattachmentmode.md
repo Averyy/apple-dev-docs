@@ -1,7 +1,8 @@
 # CMAttachmentMode
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The mode to use when propagating attachments.
 
@@ -20,23 +21,28 @@ The mode to use when propagating attachments.
 typealias CMAttachmentMode = UInt32
 ```
 
+```c
+typedef uint32_t CMAttachmentMode;
+```
+
 #### Discussion
 
-Set these attributes when adding attachments to a [`CMAttachmentBearer`](cmattachmentbearer.md) object.
+Set these attributes when adding attachments to a [`CMAttachmentBearer`](./cmattachmentbearer.md) object.
 
 ## Topics
 
 ### Modes
-- [var kCMAttachmentMode_ShouldNotPropagate: CMAttachmentMode](kcmattachmentmode_shouldnotpropagate.md)
+- [var kCMAttachmentMode_ShouldNotPropagate: CMAttachmentMode](./kcmattachmentmode_shouldnotpropagate.md)
   A mode that doesn’t propagate attachments to another object.
-- [var kCMAttachmentMode_ShouldPropagate: CMAttachmentMode](kcmattachmentmode_shouldpropagate.md)
+- [var kCMAttachmentMode_ShouldPropagate: CMAttachmentMode](./kcmattachmentmode_shouldpropagate.md)
   A mode that propagates attachments to another object.
 
 ## See Also
 
-- [protocol CMAttachmentBearerProtocol](cmattachmentbearerprotocol.md)
+### Data Types
+- [protocol CMAttachmentBearerProtocol](./cmattachmentbearerprotocol.md)
   A protocol for objects that can carry attachments.
-- [typealias CMAttachmentBearer](cmattachmentbearer.md)
+- [typealias CMAttachmentBearer](./cmattachmentbearer.md)
   An object that can carry attachments.
 
 

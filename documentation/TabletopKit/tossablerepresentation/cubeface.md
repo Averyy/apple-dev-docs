@@ -1,7 +1,8 @@
 # TossableRepresentation.CubeFace
 
 **Framework**: TabletopKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 One of the faces of a cube
 
@@ -17,46 +18,47 @@ enum CubeFace
 ## Topics
 
 ### Faces
-- [TossableRepresentation.CubeFace.a](tossablerepresentation/cubeface/a.md)
-- [TossableRepresentation.CubeFace.b](tossablerepresentation/cubeface/b.md)
-- [TossableRepresentation.CubeFace.c](tossablerepresentation/cubeface/c.md)
-- [TossableRepresentation.CubeFace.d](tossablerepresentation/cubeface/d.md)
-- [TossableRepresentation.CubeFace.e](tossablerepresentation/cubeface/e.md)
-- [TossableRepresentation.CubeFace.f](tossablerepresentation/cubeface/f.md)
+- [TossableRepresentation.CubeFace.a](./cubeface/a.md)
+- [TossableRepresentation.CubeFace.b](./cubeface/b.md)
+- [TossableRepresentation.CubeFace.c](./cubeface/c.md)
+- [TossableRepresentation.CubeFace.d](./cubeface/d.md)
+- [TossableRepresentation.CubeFace.e](./cubeface/e.md)
+- [TossableRepresentation.CubeFace.f](./cubeface/f.md)
 ### Creating a face
-- [init(restingOrientation: Rotation3D)](tossablerepresentation/cubeface/init(restingorientation:).md)
+- [init(restingOrientation: Rotation3D)](./cubeface/init%28restingorientation%29.md)
   Constructs the face in contact with the table when the equipment has the given resting orientation. If the resting orientation is an unexpected rotation, constructs the face corresponding to the closest expected orientation.
 ### Getting the resting orientation
-- [var restingOrientation: Rotation3D](tossablerepresentation/cubeface/restingorientation.md)
+- [var restingOrientation: Rotation3D](./cubeface/restingorientation.md)
   Provides the resting orientation for when this face is in contact with the table.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [TossableRepresentation.TossableFace](./tossableface.md)
 
 ## See Also
 
-- [func face(for: Rotation3D) -> any TossableRepresentation.TossableFace](tossablerepresentation/face(for:).md)
+### Getting the face
+- [func face(for: Rotation3D) -> any TossableRepresentation.TossableFace](./face%28for%29.md)
   For the shape corresponding to this tossable representation, constructs the face in contact with the table when the equipment has the given resting orientation.
-- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
+- [TossableRepresentation.TossableFace](./tossableface.md)
   A protocol that represents a face of a tossable shape.
-- [TossableRepresentation.SphereFace](tossablerepresentation/sphereface.md)
+- [TossableRepresentation.SphereFace](./sphereface.md)
   An object that represents an infinitely small area on the surface of a sphere (effectively a point).
-- [TossableRepresentation.DecahedronFace](tossablerepresentation/decahedronface.md)
+- [TossableRepresentation.DecahedronFace](./decahedronface.md)
   One of the faces of an decahedron
-- [TossableRepresentation.DodecahedronFace](tossablerepresentation/dodecahedronface.md)
+- [TossableRepresentation.DodecahedronFace](./dodecahedronface.md)
   One of the faces of an dodecahedron
-- [TossableRepresentation.IcosahedronFace](tossablerepresentation/icosahedronface.md)
+- [TossableRepresentation.IcosahedronFace](./icosahedronface.md)
   One of the faces of an icosahedron
-- [TossableRepresentation.OctahedronFace](tossablerepresentation/octahedronface.md)
+- [TossableRepresentation.OctahedronFace](./octahedronface.md)
   One of the faces of an octahedron
-- [TossableRepresentation.TetrahedronFace](tossablerepresentation/tetrahedronface.md)
+- [TossableRepresentation.TetrahedronFace](./tetrahedronface.md)
   One of the faces of a tetrahedron
 
 

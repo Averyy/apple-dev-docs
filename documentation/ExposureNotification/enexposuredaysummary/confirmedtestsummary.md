@@ -1,19 +1,26 @@
 # confirmedTestSummary
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The summary of exposures with a confirmed diagnosis.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var confirmedTestSummary: ENExposureSummaryItem? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) ENExposureSummaryItem * confirmedTestSummary;
 ```
 
 #### Discussion
@@ -22,15 +29,16 @@ var confirmedTestSummary: ENExposureSummaryItem? { get }
 
 ## See Also
 
-- [var date: Date](enexposuredaysummary/date.md)
+### Getting Exposure Summary Information
+- [var date: Date](./date.md)
   The date that the exposure occurred.
-- [var confirmedClinicalDiagnosisSummary: ENExposureSummaryItem?](enexposuredaysummary/confirmedclinicaldiagnosissummary.md)
+- [var confirmedClinicalDiagnosisSummary: ENExposureSummaryItem?](./confirmedclinicaldiagnosissummary.md)
   The summary of exposures from a clinically-originated diagnosis.
-- [var recursiveSummary: ENExposureSummaryItem?](enexposuredaysummary/recursivesummary.md)
+- [var recursiveSummary: ENExposureSummaryItem?](./recursivesummary.md)
   The summary of exposures that came from someone else who was exposed.
-- [var selfReportedSummary: ENExposureSummaryItem?](enexposuredaysummary/selfreportedsummary.md)
+- [var selfReportedSummary: ENExposureSummaryItem?](./selfreportedsummary.md)
   The summary of self-reported exposures.
-- [var daySummary: ENExposureSummaryItem](enexposuredaysummary/daysummary.md)
+- [var daySummary: ENExposureSummaryItem](./daysummary.md)
   The summary of all exposures for the day.
 
 

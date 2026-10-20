@@ -1,7 +1,8 @@
 # CMMInitializeLinkProfileProc
 
 **Framework**: ColorSync  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A function a CMM provider implements to initialize a device-link profile.
 
@@ -15,15 +16,20 @@ A function a CMM provider implements to initialize a device-link profile.
 typealias CMMInitializeLinkProfileProc = (ColorSyncMutableProfile?, CFArray?, CFDictionary?) -> Bool
 ```
 
+```c
+typedef _Bool (*)(struct ColorSyncProfile *, const struct __CFArray *, const struct __CFDictionary *) CMMInitializeLinkProfileProc;
+```
+
 ## See Also
 
-- [typealias ColorSyncCMMIterateCallback](colorsynccmmiteratecallback.md)
+### Implementing CMM callbacks
+- [typealias ColorSyncCMMIterateCallback](./colorsynccmmiteratecallback.md)
   A callback that the framework invokes for each installed CMM during iteration.
-- [typealias CMMApplyTransformProc](cmmapplytransformproc.md)
+- [typealias CMMApplyTransformProc](./cmmapplytransformproc.md)
   A function a CMM provider implements to apply a color transform to image data.
-- [typealias CMMCreateTransformPropertyProc](cmmcreatetransformpropertyproc.md)
+- [typealias CMMCreateTransformPropertyProc](./cmmcreatetransformpropertyproc.md)
   A function a CMM provider implements to create a transform property for a given key.
-- [typealias CMMInitializeTransformProc](cmminitializetransformproc.md)
+- [typealias CMMInitializeTransformProc](./cmminitializetransformproc.md)
   A function a CMM provider implements to initialize a color transform.
 
 

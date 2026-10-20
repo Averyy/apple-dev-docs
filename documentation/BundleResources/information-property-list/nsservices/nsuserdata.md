@@ -1,22 +1,29 @@
 # NSUserData
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A service-specific string value.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
+
+- **Name**: `NSUserData` (User Data)
+- **Type**: _conditional
 
 
-**Type**: _conditional
+
+**Allowed Types**: `string`, `number`, `[*]`, `dictionary`
 
 ## See Also
 
-- [NSReturnTypes](information-property-list/nsservices/nsreturntypes.md)
+### Data
+- [NSReturnTypes](./nsreturntypes.md)
   The data types that the service returns.
-- [NSSendTypes](information-property-list/nsservices/nssendtypes.md)
+- [NSSendTypes](./nssendtypes.md)
   The data types that the service can read.
 
 

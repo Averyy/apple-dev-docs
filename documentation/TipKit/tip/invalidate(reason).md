@@ -1,7 +1,8 @@
 # invalidate(reason:)
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Permanently invalidates a tip and prevents it from displaying.
 
@@ -22,11 +23,12 @@ func invalidate(reason: Self.InvalidationReason)
 
 ## Parameters
 
-- `reason`: The reason for the tip’s invalidation. After invalidation the tip’s [`status`](tip/status-swift.property.md) becomes `invalidated`, carrying this value.
+- `reason`: The reason for the tip’s invalidation. After invalidation the tip’s [`status`](./status-swift.property.md) becomes `invalidated`, carrying this value.
 
 ## See Also
 
-- [func resetEligibility() async](tip/reseteligibility.md)
+### Invalidating a tip
+- [func resetEligibility() async](./reseteligibility%28%29.md)
   Reset a previously invalidated tip.
 
 

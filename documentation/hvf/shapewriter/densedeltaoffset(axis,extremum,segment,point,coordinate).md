@@ -1,7 +1,8 @@
 # denseDeltaOffset(axis:extremum:segment:point:coordinate:)
 
 **Framework**: hvf  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The offset of a coordinate in the denseDeltaMatrix This function uses totalSegmentCount, which must be set correctly before calling
 

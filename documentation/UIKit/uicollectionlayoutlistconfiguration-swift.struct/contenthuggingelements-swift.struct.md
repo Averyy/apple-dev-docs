@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration.ContentHuggingElements
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that determine which types of items in a collection view tightly hug their content.
 
@@ -21,21 +22,22 @@ struct ContentHuggingElements
 ## Topics
 
 ### Specifying content-hugging elements
-- [static let supplementaryHeader: UICollectionLayoutListConfiguration.ContentHuggingElements](uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.struct/supplementaryheader.md)
+- [static let supplementaryHeader: UICollectionLayoutListConfiguration.ContentHuggingElements](./contenthuggingelements-swift.struct/supplementaryheader.md)
   A mode where supplementary headers in the collection view tightly hug their content.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var contentHuggingElements: UICollectionLayoutListConfiguration.ContentHuggingElements](uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.property.md)
+### Managing content-hugging behavior
+- [var contentHuggingElements: UICollectionLayoutListConfiguration.ContentHuggingElements](./contenthuggingelements-swift.property.md)
   A setting that determines which type of items tightly hug their content.
 
 

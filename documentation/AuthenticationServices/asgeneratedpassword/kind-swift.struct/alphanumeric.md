@@ -1,7 +1,8 @@
 # alphanumeric
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A password that only contains alphanumeric characters.
 
@@ -15,6 +16,10 @@ A password that only contains alphanumeric characters.
 
 ```swift
 static let alphanumeric: ASGeneratedPassword.Kind
+```
+
+```c
+extern ASGeneratedPasswordKind const ASGeneratedPasswordKindAlphanumeric;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # inputPrimitiveTopology
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of primitive topology the pipeline renders.
 
@@ -19,9 +20,13 @@ The type of primitive topology the pipeline renders.
 var inputPrimitiveTopology: MTLPrimitiveTopologyClass { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLPrimitiveTopologyClass inputPrimitiveTopology;
+```
+
 ## Mentions
 
-- [Rendering to multiple texture slices in a draw command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
+- [Rendering to multiple texture slices in a draw command](../rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
 #### Discussion
 
@@ -31,19 +36,21 @@ The default value is `MTLPrimitiveTopologyClassUnspecified`.
 
 ## See Also
 
-- [var renderTargetArrayLength: Int](mtlrenderpassdescriptor/rendertargetarraylength.md)
+### Related Documentation
+- [var renderTargetArrayLength: Int](../mtlrenderpassdescriptor/rendertargetarraylength.md)
   The number of active layers that all attachments need to have for layered rendering.
-- [var isAlphaToCoverageEnabled: Bool](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md)
+### Specifying rasterization and visibility state
+- [var isAlphaToCoverageEnabled: Bool](./isalphatocoverageenabled.md)
   A Boolean value that indicates whether to read and use the alpha channel fragment output for color attachments to compute a sample coverage mask.
-- [var isAlphaToOneEnabled: Bool](mtlrenderpipelinedescriptor/isalphatooneenabled.md)
+- [var isAlphaToOneEnabled: Bool](./isalphatooneenabled.md)
   A Boolean value that indicates whether to force alpha channel values for color attachments to the largest representable value.
-- [var isRasterizationEnabled: Bool](mtlrenderpipelinedescriptor/israsterizationenabled.md)
+- [var isRasterizationEnabled: Bool](./israsterizationenabled.md)
   A Boolean value that determines whether the pipeline rasterizes primitives.
-- [var rasterSampleCount: Int](mtlrenderpipelinedescriptor/rastersamplecount.md)
+- [var rasterSampleCount: Int](./rastersamplecount.md)
   The number of samples the pipeline applies for each fragment.
-- [enum MTLPrimitiveTopologyClass](mtlprimitivetopologyclass.md)
+- [enum MTLPrimitiveTopologyClass](../mtlprimitivetopologyclass.md)
   The primitive topologies available for rendering.
-- [var sampleCount: Int](mtlrenderpipelinedescriptor/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of samples the pipeline applies for each fragment.
 
 

@@ -1,7 +1,8 @@
 # download(_:decidePlaceholderPolicy:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.2+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+optional func download(_ download: WKDownload, decidePlaceholderPolicy completionHandler: @escaping @MainActor @Sendable (WKDownload.PlaceholderPolicy, URL?) -> Void)
+```
+
+```swift
 optional func placeholderPolicy(forDownload download: WKDownload) async -> (WKDownload.PlaceholderPolicy, URL?)
+```
+
+```objc
+- (void) download:(WKDownload *) download decidePlaceholderPolicy:(void (^)(enum WKDownloadPlaceholderPolicy, NSURL *)) completionHandler;
 ```
 
 

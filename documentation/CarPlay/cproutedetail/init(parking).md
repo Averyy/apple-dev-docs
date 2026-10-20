@@ -1,7 +1,8 @@
 # init(parking:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information describing parking at the destination.
 
@@ -14,6 +15,10 @@ Creates additional route information describing parking at the destination.
 
 ```swift
 convenience init(parking: String)
+```
+
+```objc
++ (instancetype) routeDetailWithParking:(NSString *) parking;
 ```
 
 #### Return Value

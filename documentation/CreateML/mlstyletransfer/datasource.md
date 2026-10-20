@@ -1,7 +1,8 @@
 # MLStyleTransfer.DataSource
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A data source for a style transfer model.
 
@@ -21,21 +22,22 @@ enum DataSource
 ## Topics
 
 ### Creating a data source
-- [case images(styleImage: URL, contentDirectory: URL, processingOption: VNImageCropAndScaleOption?)](mlstyletransfer/datasource/images(styleimage:contentdirectory:processingoption:).md)
+- [case images(styleImage: URL, contentDirectory: URL, processingOption: VNImageCropAndScaleOption?)](./datasource/images%28styleimage,contentdirectory,processingoption%29.md)
   The locations of a style-image file and content-image directory in the file system.
 ### Stylizing images
-- [func processImages(textelDensity: Int, styleImageDestination: URL?, contentImagesDestination: URL?) throws -> (processedStyleImage: URL, processedContentImages: URL)](mlstyletransfer/datasource/processimages(texteldensity:styleimagedestination:contentimagesdestination:).md)
+- [func processImages(textelDensity: Int, styleImageDestination: URL?, contentImagesDestination: URL?) throws -> (processedStyleImage: URL, processedContentImages: URL)](./datasource/processimages%28texteldensity,styleimagedestination,contentimagesdestination%29.md)
   Converts the content images to square images and saves them to a destination directory.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLStyleTransfer.ModelParameters](mlstyletransfer/modelparameters.md)
+### Supporting types
+- [MLStyleTransfer.ModelParameters](./modelparameters.md)
   Parameters that affect the training process of a style transfer model.
 
 

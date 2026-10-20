@@ -1,14 +1,15 @@
 # StandardUSB::kDeviceFeatureSelectorU2Enable
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB::kDeviceFeatureSelectorU2Enable = kIOUSBDeviceFeatureSelectorU2Enable
 ```
 

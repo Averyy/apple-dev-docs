@@ -1,7 +1,8 @@
 # stepFunction
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines how the vertex shader steps through the data in this layout.
 
@@ -25,7 +26,8 @@ Corresponds to `MTLVertexBufferLayoutDescriptor.stepFunction`.
 
 ## See Also
 
-- [var stepRate: Int](lowlevelmeshresource/layout/steprate.md)
+### Configuring vertex stepping
+- [var stepRate: Int](./steprate.md)
   The number of instances that share the same per-instance vertex data.
 
 

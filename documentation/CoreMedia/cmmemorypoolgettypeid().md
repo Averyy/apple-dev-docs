@@ -1,7 +1,8 @@
 # CMMemoryPoolGetTypeID()
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier of memory pool objects.
 
@@ -18,6 +19,10 @@ Returns the type identifier of memory pool objects.
 
 ```swift
 func CMMemoryPoolGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CMMemoryPoolGetTypeID();
 ```
 
 #### Return Value

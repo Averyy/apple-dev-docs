@@ -1,45 +1,47 @@
 # IOSimpleReportValues
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef struct { ... } IOSimpleReportValues;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [reserved1](iosimplereportvalues/reserved1.md)
-- [reserved2](iosimplereportvalues/reserved2.md)
-- [reserved3](iosimplereportvalues/reserved3.md)
-- [simple_value](iosimplereportvalues/simple_value.md)
+- [reserved1](./iosimplereportvalues/reserved1.md)
+- [reserved2](./iosimplereportvalues/reserved2.md)
+- [reserved3](./iosimplereportvalues/reserved3.md)
+- [simple_value](./iosimplereportvalues/simple_value.md)
 
 ## See Also
 
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IORPCMessageErrorReturnContent](iorpcmessageerrorreturncontent.md)
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOStateReportValues](iostatereportvalues.md)
-- [OSSharedPtr](ossharedptr.md)
+### Structures
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IORPCMessageErrorReturnContent](./iorpcmessageerrorreturncontent.md)
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOStateReportValues](./iostatereportvalues.md)
+- [OSSharedPtr](./ossharedptr.md)
 
 
 ---

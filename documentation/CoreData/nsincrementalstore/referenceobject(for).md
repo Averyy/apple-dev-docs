@@ -1,7 +1,8 @@
 # referenceObject(for:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the reference data used to construct a given object ID.
 
@@ -10,7 +11,7 @@ Returns the reference data used to construct a given object ID.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Returns the reference data used to construct a given object ID.
 func referenceObject(for objectID: NSManagedObjectID) -> Any
 ```
 
+```objc
+- (id) referenceObjectForObjectID:(NSManagedObjectID *) objectID;
+```
+
 #### Return Value
 
 The reference data used to construct objectID.
 
 #### Discussion
 
-This method raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if the object ID was not created by the receiving store.
+This method raises an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) if the object ID was not created by the receiving store.
 
 You should not override this method.
 
@@ -36,15 +41,16 @@ You should not override this method.
 
 ## See Also
 
-- [func execute(NSPersistentStoreRequest, with: NSManagedObjectContext?) throws -> Any](nsincrementalstore/execute(_:with:).md)
+### Manipulating Managed Objects
+- [func execute(NSPersistentStoreRequest, with: NSManagedObjectContext?) throws -> Any](./execute%28_,with%29.md)
   Returns a value as appropriate for the given request, or nil if the request cannot be completed.
-- [func newValuesForObject(with: NSManagedObjectID, with: NSManagedObjectContext) throws -> NSIncrementalStoreNode](nsincrementalstore/newvaluesforobject(with:with:).md)
+- [func newValuesForObject(with: NSManagedObjectID, with: NSManagedObjectContext) throws -> NSIncrementalStoreNode](./newvaluesforobject%28with,with%29.md)
   Returns an incremental store node encapsulating the persistent external values of the object with a given object ID.
-- [func newValue(forRelationship: NSRelationshipDescription, forObjectWith: NSManagedObjectID, with: NSManagedObjectContext?) throws -> Any](nsincrementalstore/newvalue(forrelationship:forobjectwith:with:).md)
+- [func newValue(forRelationship: NSRelationshipDescription, forObjectWith: NSManagedObjectID, with: NSManagedObjectContext?) throws -> Any](./newvalue%28forrelationship,forobjectwith,with%29.md)
   Returns the relationship for the given relationship of the object with a given object ID.
-- [func obtainPermanentIDs(for: [NSManagedObject]) throws -> [NSManagedObjectID]](nsincrementalstore/obtainpermanentids(for:).md)
+- [func obtainPermanentIDs(for: [NSManagedObject]) throws -> [NSManagedObjectID]](./obtainpermanentids%28for%29.md)
   Returns an array containing the object IDs for a given array of newly-inserted objects.
-- [func newObjectID(for: NSEntityDescription, referenceObject: Any) -> NSManagedObjectID](nsincrementalstore/newobjectid(for:referenceobject:).md)
+- [func newObjectID(for: NSEntityDescription, referenceObject: Any) -> NSManagedObjectID](./newobjectid%28for,referenceobject%29.md)
   Returns a new object ID that uses given data as the key.
 
 

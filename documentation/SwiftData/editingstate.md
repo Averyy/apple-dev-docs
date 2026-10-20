@@ -1,7 +1,8 @@
 # EditingState
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,20 +23,21 @@ struct EditingState
 ## Topics
 
 ### Instance Properties
-- [var author: String?](editingstate/author.md)
+- [var author: String?](./editingstate/author.md)
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func initializeState(for: EditingState)](datastore/initializestate(for:).md)
-- [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](datastore/cachedsnapshots(for:editingstate:).md)
-- [func invalidateState(for: EditingState)](datastore/invalidatestate(for:).md)
+### Sharing cached data between model contexts
+- [func initializeState(for: EditingState)](./datastore/initializestate%28for%29.md)
+- [func cachedSnapshots(for: [PersistentIdentifier], editingState: EditingState) throws -> [PersistentIdentifier : Self.Snapshot]](./datastore/cachedsnapshots%28for,editingstate%29.md)
+- [func invalidateState(for: EditingState)](./datastore/invalidatestate%28for%29.md)
 
 
 ---

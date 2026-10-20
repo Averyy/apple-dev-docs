@@ -1,7 +1,8 @@
 # CMAuthorizationStatus.authorized
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Access was granted by the user.
 
@@ -19,13 +20,18 @@ Access was granted by the user.
 case authorized
 ```
 
+```c
+CMAuthorizationStatusAuthorized
+```
+
 ## See Also
 
-- [CMAuthorizationStatus.notDetermined](cmauthorizationstatus/notdetermined.md)
+### Enumeration Cases
+- [CMAuthorizationStatus.notDetermined](./notdetermined.md)
   The status has not yet been determined.
-- [CMAuthorizationStatus.restricted](cmauthorizationstatus/restricted.md)
+- [CMAuthorizationStatus.restricted](./restricted.md)
   Access is denied due to system-wide restrictions.
-- [CMAuthorizationStatus.denied](cmauthorizationstatus/denied.md)
+- [CMAuthorizationStatus.denied](./denied.md)
   Access was denied by the user.
 
 

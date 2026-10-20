@@ -1,7 +1,8 @@
 # -=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Subtracts the second value from the first and stores the difference in the left-hand-side variable.
 

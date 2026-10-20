@@ -1,7 +1,8 @@
 # kCMMetadataDataType_QuickTimeMetadataLocation_ISO6709
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string supplying location information in ISO-6709 format.
 
@@ -20,13 +21,18 @@ A string supplying location information in ISO-6709 format.
 let kCMMetadataDataType_QuickTimeMetadataLocation_ISO6709: CFString
 ```
 
+```c
+extern CFStringRef const kCMMetadataDataType_QuickTimeMetadataLocation_ISO6709;
+```
+
 #### Discussion
 
-Conforms to [`kCMMetadataBaseDataType_UTF8`](kcmmetadatabasedatatype_utf8.md).
+Conforms to [`kCMMetadataBaseDataType_UTF8`](./kcmmetadatabasedatatype_utf8.md).
 
 ## See Also
 
-- [let kCMMetadataDataType_QuickTimeMetadataDirection: CFString](kcmmetadatadatatype_quicktimemetadatadirection.md)
+### Constants
+- [let kCMMetadataDataType_QuickTimeMetadataDirection: CFString](./kcmmetadatadatatype_quicktimemetadatadirection.md)
   A string supplying degrees offset from magnetic North.
 
 

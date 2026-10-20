@@ -1,7 +1,8 @@
 # NSTextSuggestionsDelegate.ItemResponse
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A suggestion item response with the same generic type as the delegate.
 

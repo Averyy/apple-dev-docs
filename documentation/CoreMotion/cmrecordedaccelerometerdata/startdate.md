@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wall clock time when the sensor sample was recorded.
 
@@ -18,9 +19,14 @@ The wall clock time when the sensor sample was recorded.
 var startDate: Date { get }
 ```
 
+```objc
+@property (readonly) NSDate * startDate;
+```
+
 ## See Also
 
-- [var identifier: UInt64](cmrecordedaccelerometerdata/identifier.md)
+### Getting the Accelerometer Data
+- [var identifier: UInt64](./identifier.md)
   The unique identifier for the accelerometer data.
 
 

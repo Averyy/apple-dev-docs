@@ -1,6 +1,7 @@
 # Reading route data
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Access the user’s route for a workout.
 
@@ -51,16 +52,16 @@ store.execute(routeQuery)
 
 The query’s update handler receives any additions or changes to the route data. This lets your app process the most up-to-date version of the route, as soon as it becomes available.
 
-##### Access a Route Samples Location Data
+##### Access a Route Sample’s Location Data
 
-After receiving an [`HKWorkoutRoute`](hkworkoutroute.md) sample, you can access its location data using an [`HKWorkoutRouteQuery`](hkworkoutroutequery.md). Because a route sample can contain thousands of locations, you may not receive all of the location data at once. Instead, the system returns the location data in small batches.
+After receiving an [`HKWorkoutRoute`](./hkworkoutroute.md) sample, you can access its location data using an [`HKWorkoutRouteQuery`](./hkworkoutroutequery.md). Because a route sample can contain thousands of locations, you may not receive all of the location data at once. Instead, the system returns the location data in small batches.
 
 To process the locations associated with a route:
 
 1. **Create a query object.** Provide a block to receive the locations.
-2. **Run the query.** Call the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method to run the query.
-3. **Receive the route data.** Your block receives one or more batches of location data. When the block’s done parameter is [`true`](https://developer.apple.com/documentation/swift/true), you have received all the data.
-4. **Optionally:** Call the HealthKit store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method to stop the query from receiving additional data.
+2. **Run the query.** Call the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method to run the query.
+3. **Receive the route data.** Your block receives one or more batches of location data. When the block’s done parameter is [`true`](../Swift/true.md), you have received all the data.
+4. **Optionally:** Call the HealthKit store’s [`stop(_:)`](./hkhealthstore/stop%28_%29.md) method to stop the query from receiving additional data.
 
 ```swift
 // Create the route query.
@@ -91,37 +92,38 @@ let query = HKWorkoutRouteQuery(route: myRoute) { (query, locationsOrNil, done, 
 store.execute(query)
 ```
 
-[`HKWorkoutRoute`](hkworkoutroute.md) saves a subset of [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) properties including:
+[`HKWorkoutRoute`](./hkworkoutroute.md) saves a subset of [`CLLocation`](../CoreLocation/cllocation.md) properties including:
 
-- [`timestamp`](https://developer.apple.com/documentation/corelocation/cllocation/timestamp)
-- [`coordinate`](https://developer.apple.com/documentation/corelocation/cllocation/coordinate)
-- [`altitude`](https://developer.apple.com/documentation/corelocation/cllocation/altitude)
-- [`speed`](https://developer.apple.com/documentation/corelocation/cllocation/speed)
-- [`course`](https://developer.apple.com/documentation/corelocation/cllocation/course)
-- [`horizontalAccuracy`](https://developer.apple.com/documentation/corelocation/cllocation/horizontalaccuracy)
-- [`verticalAccuracy`](https://developer.apple.com/documentation/corelocation/cllocation/verticalaccuracy)
-- [`speedAccuracy`](https://developer.apple.com/documentation/corelocation/cllocation/speedaccuracy)
-- [`courseAccuracy`](https://developer.apple.com/documentation/corelocation/cllocation/courseaccuracy)
+- [`timestamp`](../CoreLocation/cllocation/timestamp.md)
+- [`coordinate`](../CoreLocation/cllocation/coordinate.md)
+- [`altitude`](../CoreLocation/cllocation/altitude.md)
+- [`speed`](../CoreLocation/cllocation/speed.md)
+- [`course`](../CoreLocation/cllocation/course.md)
+- [`horizontalAccuracy`](../CoreLocation/cllocation/horizontalaccuracy.md)
+- [`verticalAccuracy`](../CoreLocation/cllocation/verticalaccuracy.md)
+- [`speedAccuracy`](../CoreLocation/cllocation/speedaccuracy.md)
+- [`courseAccuracy`](../CoreLocation/cllocation/courseaccuracy.md)
 
 > **Note**:  Locations from the HealthKit store are accurate within 50 meters, but they may need additional smoothing before you can use them. For example, to produce clean lines when it’s plotting the route on a map.
 
 ## See Also
 
-- [Creating a workout route](creating-a-workout-route.md)
+### Route data
+- [Creating a workout route](./creating-a-workout-route.md)
   Record the user’s route during a workout.
-- [class HKWorkoutRouteBuilder](hkworkoutroutebuilder.md)
+- [class HKWorkoutRouteBuilder](./hkworkoutroutebuilder.md)
   A builder object that incrementally constructs a workout route.
-- [class HKWorkoutRoute](hkworkoutroute.md)
+- [class HKWorkoutRoute](./hkworkoutroute.md)
   A sample that contains a workout’s route data.
-- [struct HKWorkoutRouteQueryDescriptor](hkworkoutroutequerydescriptor.md)
+- [struct HKWorkoutRouteQueryDescriptor](./hkworkoutroutequerydescriptor.md)
   A query interface that reads the location data stored in a workout route using Swift concurrency.
-- [class HKWorkoutRouteQuery](hkworkoutroutequery.md)
+- [class HKWorkoutRouteQuery](./hkworkoutroutequery.md)
   A query to access the location data stored in a workout route.
-- [let HKWorkoutRouteTypeIdentifier: String](hkworkoutroutetypeidentifier.md)
+- [let HKWorkoutRouteTypeIdentifier: String](./hkworkoutroutetypeidentifier.md)
   A series sample containing location data that defines the route the user took during a workout.
-- [class HKSeriesBuilder](hkseriesbuilder.md)
+- [class HKSeriesBuilder](./hkseriesbuilder.md)
   An abstract base class for building series samples.
-- [class HKSeriesSample](hkseriessample.md)
+- [class HKSeriesSample](./hkseriessample.md)
   An abstract base class that defines samples that contain a series of items.
 
 

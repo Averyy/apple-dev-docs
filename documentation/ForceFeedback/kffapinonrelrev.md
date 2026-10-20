@@ -1,7 +1,8 @@
 # kFFAPINonRelRev
 
 **Framework**: Force Feedback  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kFFAPINonRelRev: Int { get }
+```
+
+```c
+kFFAPINonRelRev
 ```
 
 

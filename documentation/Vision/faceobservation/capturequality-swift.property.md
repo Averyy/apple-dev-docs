@@ -1,7 +1,8 @@
 # captureQuality
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quality of the face capture.
 
@@ -22,11 +23,12 @@ var captureQuality: FaceObservation.CaptureQuality?
 
 #### Discussion
 
-This value is nil for face observations produced by a `DetectFaceRectanglesRequest` analysis. Use [`DetectFaceCaptureQualityRequest`](detectfacecapturequalityrequest.md) to detect capture quality.
+This value is nil for face observations produced by a `DetectFaceRectanglesRequest` analysis. Use [`DetectFaceCaptureQualityRequest`](../detectfacecapturequalityrequest.md) to detect capture quality.
 
 ## See Also
 
-- [FaceObservation.CaptureQuality](faceobservation/capturequality-swift.struct.md)
+### Getting the capture quality
+- [FaceObservation.CaptureQuality](./capturequality-swift.struct.md)
   An indicator of the quality of a face capture.
 
 

@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the receiving array to another array.
 
@@ -20,13 +21,17 @@ Compares the receiving array to another array.
 func isEqual(to otherArray: [Any]) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToArray:(NSArray<id> *) otherArray;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the contents of `otherArray` are equal to the contents of the receiving array, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the contents of `otherArray` are equal to the contents of the receiving array, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Two arrays have equal contents if they each hold the same number of objects and objects at a given index in each array satisfy the [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) test.
+Two arrays have equal contents if they each hold the same number of objects and objects at a given index in each array satisfy the [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) test.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Two arrays have equal contents if they each hold the same number of objects and 
 
 ## See Also
 
-- [func firstObjectCommon(with: [Any]) -> Any?](nsarray/firstobjectcommon(with:).md)
+### Comparing Arrays
+- [func firstObjectCommon(with: [Any]) -> Any?](./firstobjectcommon%28with%29.md)
   Returns the first object contained in the receiving array that’s equal to an object in another given array.
 
 

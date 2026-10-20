@@ -1,10 +1,13 @@
 # cancelled
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- tvOS 13.0+
+- tvOS 13.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,8 +17,9 @@ static var cancelled: TVDocumentError.Code { get }
 
 ## See Also
 
-- [static var failed: TVDocumentError.Code](tvdocumenterror-swift.struct/failed.md)
-- [TVDocumentError.Code](tvdocumenterror-swift.struct/code.md)
+### Error Types
+- [static var failed: TVDocumentError.Code](./failed.md)
+- [TVDocumentError.Code](./code.md)
 
 
 ---

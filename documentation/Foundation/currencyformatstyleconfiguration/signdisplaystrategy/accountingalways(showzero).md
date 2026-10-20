@@ -1,7 +1,8 @@
 # accountingAlways(showZero:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A sign display strategy to use accounting principles, with a configurable behavior for handling zero values.
 
@@ -30,13 +31,14 @@ A strategy that uses accounting principles, and the specified handling of zero v
 
 ## See Also
 
-- [static var never: CurrencyFormatStyleConfiguration.SignDisplayStrategy](currencyformatstyleconfiguration/signdisplaystrategy/never.md)
+### Specifying sign display strategy
+- [static var never: CurrencyFormatStyleConfiguration.SignDisplayStrategy](./never.md)
   A strategy to never show the sign.
-- [static var automatic: CurrencyFormatStyleConfiguration.SignDisplayStrategy](currencyformatstyleconfiguration/signdisplaystrategy/automatic.md)
+- [static var automatic: CurrencyFormatStyleConfiguration.SignDisplayStrategy](./automatic.md)
   A strategy to automatically configure sign display.
-- [static var accounting: CurrencyFormatStyleConfiguration.SignDisplayStrategy](currencyformatstyleconfiguration/signdisplaystrategy/accounting.md)
+- [static var accounting: CurrencyFormatStyleConfiguration.SignDisplayStrategy](./accounting.md)
   A sign display strategy to use accounting principles.
-- [static func always(showZero: Bool) -> CurrencyFormatStyleConfiguration.SignDisplayStrategy](currencyformatstyleconfiguration/signdisplaystrategy/always(showzero:).md)
+- [static func always(showZero: Bool) -> CurrencyFormatStyleConfiguration.SignDisplayStrategy](./always%28showzero%29.md)
   A sign display strategy to always show the sign, with a configurable behavior for handling zero values.
 
 

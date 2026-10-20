@@ -1,11 +1,12 @@
 # dX
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 var dX: Int32
 ```
 
+```c
+int32_t dX;
+```
+
 ## See Also
 
-- [var dY: Int32](cgscreenupdatemovedelta/dy.md)
+### Instance Properties
+- [var dY: Int32](./dy.md)
 
 
 ---

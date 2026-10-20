@@ -1,7 +1,8 @@
 # init(markerFormat:options:startingItemNumber:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new text list with the format, options, and starting item number you provide.
 
@@ -14,17 +15,22 @@ Returns a new text list with the format, options, and starting item number you p
 init(markerFormat: NSTextList.MarkerFormat, options: NSTextList.Options = [], startingItemNumber: Int)
 ```
 
+```objc
+- (instancetype) initWithMarkerFormat:(NSTextListMarkerFormat) markerFormat options:(NSTextListOptions) options startingItemNumber:(NSInteger) startingItemNumber;
+```
+
 ## Parameters
 
-- `markerFormat`: One of the possible [`NSTextList.MarkerFormat`](nstextlist/markerformat-swift.struct.md) formats.
-- `options`: One or more of the possible [`NSTextList.Options`](nstextlist/options.md) options.
+- `markerFormat`: One of the possible [`NSTextList.MarkerFormat`](./markerformat-swift.struct.md) formats.
+- `options`: One or more of the possible [`NSTextList.Options`](./options.md) options.
 - `startingItemNumber`: An integer that represents the stating item number.
 
 ## See Also
 
-- [init?(coder: NSCoder)](nstextlist/init(coder:).md)
+### Creating a text list
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes and returns a newly allocated text list item.
-- [convenience init(markerFormat: NSTextList.MarkerFormat, options: Int)](nstextlist/init(markerformat:options:).md)
+- [convenience init(markerFormat: NSTextList.MarkerFormat, options: Int)](./init%28markerformat,options%29.md)
   Returns an initialized text list.
 
 

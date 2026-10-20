@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Properties of this behavior
@@ -20,6 +21,12 @@ Properties of this behavior
 ```swift
 func properties(context: Self.PropertiesContext) -> Self.Properties
 ```
+
+## Default Implementations
+
+### ScrollTargetBehavior Implementations
+- [func properties(context: Self.PropertiesContext) -> Self.Properties](./properties%28context%29-9ahhx.md)
+  Properties of this behavior
 
 
 ---

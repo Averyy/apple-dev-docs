@@ -1,7 +1,8 @@
 # activity
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 ```swift
 @NSCopying
 var activity: HKWorkoutActivity? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) HKWorkoutActivity * activity;
 ```
 
 

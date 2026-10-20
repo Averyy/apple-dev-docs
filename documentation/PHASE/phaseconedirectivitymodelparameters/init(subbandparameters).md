@@ -1,7 +1,8 @@
 # init(subbandParameters:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that directs sound in a cone-shaped curve that extends from a sound source.
 
@@ -17,6 +18,10 @@ Creates an object that directs sound in a cone-shaped curve that extends from a 
 
 ```swift
 init(subbandParameters: [PHASEConeDirectivityModelSubbandParameters])
+```
+
+```objc
+- (instancetype) initWithSubbandParameters:(NSArray<PHASEConeDirectivityModelSubbandParameters *> *) subbandParameters;
 ```
 
 ## Parameters

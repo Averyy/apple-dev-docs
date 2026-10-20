@@ -1,7 +1,8 @@
 # AppClipAppStoreReviewDetailCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,16 +11,16 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppClipAppStoreReviewDetailCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAppStoreReviewDetailCreateRequest.Data.Attributes](appclipappstorereviewdetailcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppClipAppStoreReviewDetailCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new App Clip App Store Review Details resource.
-- [object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships](appclipappstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -27,6 +28,8 @@ object AppClipAppStoreReviewDetailCreateRequest.Data
 - `attributes` (AppClipAppStoreReviewDetailCreateRequest.Data.Attributes): The attributes that describe the request that creates an App Clip App Store Review Details resource.
 - `relationships` (AppClipAppStoreReviewDetailCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipAppStoreReviewDetails`
 
 
 ---

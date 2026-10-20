@@ -1,7 +1,8 @@
 # recordZone(for:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches a specific record zone.
 
@@ -11,7 +12,7 @@ Fetches a specific record zone.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -28,7 +29,7 @@ The fetched record zone.
 
 This method throws an error if the request fails, such as when the zone does not exist, the network is unavailable or the device doesn’t have an active iCloud account.
 
-For information on a more convenient way to fetch specific record zones, see [`recordZones(for:)`](ckdatabase/recordzones(for:).md).
+For information on a more convenient way to fetch specific record zones, see [`recordZones(for:)`](./recordzones%28for%29.md).
 
 ## Parameters
 

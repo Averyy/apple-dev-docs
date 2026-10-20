@@ -1,7 +1,8 @@
 # materialize()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new column by immediately evaluating any lazily applied data processing operations stored in the column.
 

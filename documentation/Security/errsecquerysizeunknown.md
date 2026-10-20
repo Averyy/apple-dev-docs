@@ -1,7 +1,8 @@
 # errSecQuerySizeUnknown
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The query size is unknown.
 
@@ -18,6 +19,10 @@ The query size is unknown.
 
 ```swift
 var errSecQuerySizeUnknown: OSStatus { get }
+```
+
+```c
+errSecQuerySizeUnknown
 ```
 
 

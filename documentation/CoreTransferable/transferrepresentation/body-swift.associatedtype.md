@@ -2,6 +2,7 @@
 
 **Framework**: Core Transferable  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The transfer representation for the item.
@@ -23,9 +24,10 @@ associatedtype Body : TransferRepresentation
 
 ## See Also
 
-- [var body: Self.Body](transferrepresentation/body-swift.property.md)
+### Implementing a transfer representation
+- [var body: Self.Body](./body-swift.property.md)
   A builder expression that describes the process of importing and exporting an item.
-- [associatedtype Item : Transferable](transferrepresentation/item.md)
+- [associatedtype Item : Transferable](./item.md)
   The type of the item that’s being transferred.
 
 

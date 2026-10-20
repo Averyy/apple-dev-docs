@@ -1,17 +1,18 @@
 # size
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the region.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The size of the region.
 var size: MPSSize
 ```
 
+```c
+MPSSize size;
+```
+
 ## See Also
 
-- [var origin: MPSOrigin](mpsregion/origin.md)
+### Fields
+- [var origin: MPSOrigin](./origin.md)
   The top-left corner of the region.
 
 

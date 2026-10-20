@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Submits the command buffer to the queue for execution on the GPU.
@@ -20,15 +21,20 @@ Submits the command buffer to the queue for execution on the GPU.
 func commit()
 ```
 
+```objc
+- (void) commit;
+```
+
 #### Discussion
 
-If you haven’t already called [`enqueue()`](mtliocommandbuffer/enqueue().md) for the command buffer, the [`commit()`](mtliocommandbuffer/commit().md) method enqueues it at the next position in the input/output command queue.
+If you haven’t already called [`enqueue()`](./enqueue%28%29.md) for the command buffer, the [`commit()`](./commit%28%29.md) method enqueues it at the next position in the input/output command queue.
 
 You can only commit an input/output command buffer once, after which you can’t encode any additional commands or add more completion handlers to it.
 
 ## See Also
 
-- [func enqueue()](mtliocommandbuffer/enqueue.md)
+### Submitting a command buffer
+- [func enqueue()](./enqueue%28%29.md)
   Reserves a place for the input/output command buffer in the input/output command queue without committing the command buffer.
 
 

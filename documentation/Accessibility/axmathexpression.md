@@ -1,7 +1,8 @@
 # AXMathExpression
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.2+
@@ -18,52 +19,57 @@
 class AXMathExpression
 ```
 
+```objc
+@interface AXMathExpression : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AXMathExpressionFenced](axmathexpressionfenced.md)
-- [AXMathExpressionFraction](axmathexpressionfraction.md)
-- [AXMathExpressionIdentifier](axmathexpressionidentifier.md)
-- [AXMathExpressionMultiscript](axmathexpressionmultiscript.md)
-- [AXMathExpressionNumber](axmathexpressionnumber.md)
-- [AXMathExpressionOperator](axmathexpressionoperator.md)
-- [AXMathExpressionRoot](axmathexpressionroot.md)
-- [AXMathExpressionRow](axmathexpressionrow.md)
-- [AXMathExpressionSubSuperscript](axmathexpressionsubsuperscript.md)
-- [AXMathExpressionTable](axmathexpressiontable.md)
-- [AXMathExpressionTableCell](axmathexpressiontablecell.md)
-- [AXMathExpressionTableRow](axmathexpressiontablerow.md)
-- [AXMathExpressionText](axmathexpressiontext.md)
-- [AXMathExpressionUnderOver](axmathexpressionunderover.md)
+- [AXMathExpressionFenced](./axmathexpressionfenced.md)
+- [AXMathExpressionFraction](./axmathexpressionfraction.md)
+- [AXMathExpressionIdentifier](./axmathexpressionidentifier.md)
+- [AXMathExpressionMultiscript](./axmathexpressionmultiscript.md)
+- [AXMathExpressionNumber](./axmathexpressionnumber.md)
+- [AXMathExpressionOperator](./axmathexpressionoperator.md)
+- [AXMathExpressionRoot](./axmathexpressionroot.md)
+- [AXMathExpressionRow](./axmathexpressionrow.md)
+- [AXMathExpressionSubSuperscript](./axmathexpressionsubsuperscript.md)
+- [AXMathExpressionTable](./axmathexpressiontable.md)
+- [AXMathExpressionTableCell](./axmathexpressiontablecell.md)
+- [AXMathExpressionTableRow](./axmathexpressiontablerow.md)
+- [AXMathExpressionText](./axmathexpressiontext.md)
+- [AXMathExpressionUnderOver](./axmathexpressionunderover.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AXMathExpressionNumber](axmathexpressionnumber.md)
-- [class AXMathExpressionIdentifier](axmathexpressionidentifier.md)
-- [class AXMathExpressionOperator](axmathexpressionoperator.md)
-- [class AXMathExpressionText](axmathexpressiontext.md)
-- [class AXMathExpressionFenced](axmathexpressionfenced.md)
-- [class AXMathExpressionRow](axmathexpressionrow.md)
-- [class AXMathExpressionTable](axmathexpressiontable.md)
-- [class AXMathExpressionTableCell](axmathexpressiontablecell.md)
-- [class AXMathExpressionTableRow](axmathexpressiontablerow.md)
-- [class AXMathExpressionUnderOver](axmathexpressionunderover.md)
-- [class AXMathExpressionSubSuperscript](axmathexpressionsubsuperscript.md)
-- [class AXMathExpressionFraction](axmathexpressionfraction.md)
-- [class AXMathExpressionMultiscript](axmathexpressionmultiscript.md)
-- [class AXMathExpressionRoot](axmathexpressionroot.md)
-- [protocol AXMathExpressionProvider](axmathexpressionprovider.md)
+### Math expressions
+- [class AXMathExpressionNumber](./axmathexpressionnumber.md)
+- [class AXMathExpressionIdentifier](./axmathexpressionidentifier.md)
+- [class AXMathExpressionOperator](./axmathexpressionoperator.md)
+- [class AXMathExpressionText](./axmathexpressiontext.md)
+- [class AXMathExpressionFenced](./axmathexpressionfenced.md)
+- [class AXMathExpressionRow](./axmathexpressionrow.md)
+- [class AXMathExpressionTable](./axmathexpressiontable.md)
+- [class AXMathExpressionTableCell](./axmathexpressiontablecell.md)
+- [class AXMathExpressionTableRow](./axmathexpressiontablerow.md)
+- [class AXMathExpressionUnderOver](./axmathexpressionunderover.md)
+- [class AXMathExpressionSubSuperscript](./axmathexpressionsubsuperscript.md)
+- [class AXMathExpressionFraction](./axmathexpressionfraction.md)
+- [class AXMathExpressionMultiscript](./axmathexpressionmultiscript.md)
+- [class AXMathExpressionRoot](./axmathexpressionroot.md)
+- [protocol AXMathExpressionProvider](./axmathexpressionprovider.md)
 
 
 ---

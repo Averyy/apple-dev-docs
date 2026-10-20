@@ -1,7 +1,8 @@
 # speechAnnouncementsQueued(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls whether to queue pending announcements behind existing speech rather than interrupting speech in progress.
 
@@ -31,11 +32,12 @@ Use this modifier when you want affect the order in which the accessibility syst
 
 ## See Also
 
-- [func speechAdjustedPitch(Double) -> some View](view/speechadjustedpitch(_:).md)
+### Configuring VoiceOver
+- [func speechAdjustedPitch(Double) -> some View](./speechadjustedpitch%28_%29.md)
   Raises or lowers the pitch of spoken text.
-- [func speechAlwaysIncludesPunctuation(Bool) -> some View](view/speechalwaysincludespunctuation(_:).md)
+- [func speechAlwaysIncludesPunctuation(Bool) -> some View](./speechalwaysincludespunctuation%28_%29.md)
   Sets whether VoiceOver should always speak all punctuation in the text view.
-- [func speechSpellsOutCharacters(Bool) -> some View](view/speechspellsoutcharacters(_:).md)
+- [func speechSpellsOutCharacters(Bool) -> some View](./speechspellsoutcharacters%28_%29.md)
   Sets whether VoiceOver should speak the contents of the text view character by character.
 
 

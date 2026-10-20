@@ -1,7 +1,8 @@
 # ActionButton.Action
 
 **Framework**: MarketplaceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.4+
@@ -16,10 +17,10 @@ enum Action
 ## Topics
 
 ### Enumeration Cases
-- [case batchInstall(BatchInstallConfiguration)](actionbutton/action-swift.enum/batchinstall(_:).md)
-- [ActionButton.Action.delete(_:)](actionbutton/action-swift.enum/delete(_:).md)
-- [case install(InstallConfiguration)](actionbutton/action-swift.enum/install(_:).md)
-- [ActionButton.Action.launch(_:)](actionbutton/action-swift.enum/launch(_:).md)
+- [case batchInstall(BatchInstallConfiguration)](./action-swift.enum/batchinstall%28_%29.md)
+- [ActionButton.Action.delete(_:)](./action-swift.enum/delete%28_%29.md)
+- [case install(InstallConfiguration)](./action-swift.enum/install%28_%29.md)
+- [ActionButton.Action.launch(_:)](./action-swift.enum/launch%28_%29.md)
 
 
 ---

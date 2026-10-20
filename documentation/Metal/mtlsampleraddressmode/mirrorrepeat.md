@@ -1,7 +1,8 @@
 # MTLSamplerAddressMode.mirrorRepeat
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Between `-1.0` and `1.0`, the texture coordinates are mirrored across the axis; outside `-1.0` and `1.0`, the image is repeated.
 
@@ -10,7 +11,7 @@ Between `-1.0` and `1.0`, the texture coordinates are mirrored across the axis; 
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ Between `-1.0` and `1.0`, the texture coordinates are mirrored across the axis; 
 case mirrorRepeat
 ```
 
+```c
+MTLSamplerAddressModeMirrorRepeat
+```
+
 ## See Also
 
-- [MTLSamplerAddressMode.clampToEdge](mtlsampleraddressmode/clamptoedge.md)
+### Address mode options
+- [MTLSamplerAddressMode.clampToEdge](./clamptoedge.md)
   Texture coordinates are clamped between `0.0` and `1.0`, inclusive.
-- [MTLSamplerAddressMode.mirrorClampToEdge](mtlsampleraddressmode/mirrorclamptoedge.md)
+- [MTLSamplerAddressMode.mirrorClampToEdge](./mirrorclamptoedge.md)
   Between `-1.0` and `1.0`, the texture coordinates are mirrored across the axis; outside `-1.0` and `1.0`, texture coordinates are clamped.
-- [MTLSamplerAddressMode.repeat](mtlsampleraddressmode/repeat.md)
+- [MTLSamplerAddressMode.repeat](./repeat.md)
   Texture coordinates wrap to the other side of the texture, effectively keeping only the fractional part of the texture coordinate.
-- [MTLSamplerAddressMode.clampToZero](mtlsampleraddressmode/clamptozero.md)
+- [MTLSamplerAddressMode.clampToZero](./clamptozero.md)
   Out-of-range texture coordinates return transparent zero `(0,0,0,0)` for images with an alpha channel and return opaque zero `(0,0,0,1)` for images without an alpha channel.
-- [MTLSamplerAddressMode.clampToBorderColor](mtlsampleraddressmode/clamptobordercolor.md)
+- [MTLSamplerAddressMode.clampToBorderColor](./clamptobordercolor.md)
   An address mode that returns the sampler’s border color.
 
 

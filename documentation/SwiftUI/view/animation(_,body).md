@@ -1,7 +1,8 @@
 # animation(_:body:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given animation to all animatable values within the `body` closure.
 
@@ -36,9 +37,10 @@ MyView(isActive: isActive)
 
 ## See Also
 
-- [func animation<V>(Animation?, value: V) -> some View](view/animation(_:value:).md)
+### Adding state-based animation to a view
+- [func animation<V>(Animation?, value: V) -> some View](./animation%28_,value%29.md)
   Applies the given animation to this view when the specified value changes.
-- [func animation(_:)](view/animation(_:).md)
+- [func animation(_:)](./animation%28_%29.md)
   Applies the given animation to this view when this view changes.
 
 

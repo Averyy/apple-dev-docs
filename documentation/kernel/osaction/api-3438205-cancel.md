@@ -1,7 +1,8 @@
 # Cancel
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Cancels the execution of the action's callbacks. 
 
@@ -11,13 +12,13 @@ Cancels the execution of the action's callbacks.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Cancel(OSActionCancelHandler handler);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md). 
 
 #### Discussion
 
@@ -29,11 +30,12 @@ After cancellation, you can only free the action object. You cannot reactivate i
 
 ## See Also
 
-- [- Aborted](../driverkit/osaction/aborted.md)
+### Ending the Action Early
+- [- Aborted](../../DriverKit/osaction/aborted.md)
   Calls the abort handler of the action object. 
-- [OSActionAbortedHandler](../driverkit/osactionabortedhandler.md)
+- [OSActionAbortedHandler](../../DriverKit/osactionabortedhandler.md)
   The block to call before aborting an action object.
-- [OSActionCancelHandler](../driverkit/osactioncancelhandler.md)
+- [OSActionCancelHandler](../../DriverKit/osactioncancelhandler.md)
   The block to call after the successful cancellation of the action.
 
 

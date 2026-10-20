@@ -1,7 +1,8 @@
 # UIApplicationShortcutWidget
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The bundle ID of the widget that’s available as a Home screen quick action in apps that have more than one widget.
 
@@ -11,17 +12,19 @@ The bundle ID of the widget that’s available as a Home screen quick action in 
 - tvOS 9.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UIApplicationShortcutWidget` (Home Screen Widget)
+- **Type**: string
 
 ## See Also
 
-- [NSExtension](information-property-list/nsextension.md)
+### Extensions and services
+- [NSExtension](./nsextension.md)
   The properties of an app extension.
-- [NSServices](information-property-list/nsservices.md)
+- [NSServices](./nsservices.md)
   The services provided by an app.
-- [WKExtensionDelegateClassName](information-property-list/wkextensiondelegateclassname.md)
+- [WKExtensionDelegateClassName](./wkextensiondelegateclassname.md)
   The name of your watchOS app’s extension delegate.
 
 

@@ -1,7 +1,8 @@
 # kMDItemVersion
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The version number of this file. A CFString
 
@@ -12,6 +13,10 @@ The version number of this file. A CFString
 
 ```swift
 let kMDItemVersion: CFString!
+```
+
+```c
+const CFStringRef kMDItemVersion;
 ```
 
 

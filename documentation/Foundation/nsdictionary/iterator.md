@@ -1,7 +1,8 @@
 # NSDictionary.Iterator
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that you use to provide members of a dictionary, one-by-one.
 
@@ -23,13 +24,13 @@ final class Iterator
 ## Topics
 
 ### Iterating over Dictionary Contents
-- [func next() -> (key: Any, value: Any)?](nsdictionary/iterator/next.md)
+- [func next() -> (key: Any, value: Any)?](./iterator/next%28%29.md)
   Returns the next key-value pair of a dictionary object as a tuple.
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
 
 
 ---

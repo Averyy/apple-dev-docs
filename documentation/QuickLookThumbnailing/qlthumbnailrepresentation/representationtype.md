@@ -1,7 +1,8 @@
 # QLThumbnailRepresentation.RepresentationType
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The different types of thumbnails that you can create.
 
@@ -18,43 +19,48 @@ The different types of thumbnails that you can create.
 enum RepresentationType
 ```
 
+```c
+enum QLThumbnailRepresentationType : NSInteger;
+```
+
 ## Mentions
 
-- [Providing Thumbnails of Your Custom File Types](providing-thumbnails-of-your-custom-file-types.md)
+- [Providing Thumbnails of Your Custom File Types](../providing-thumbnails-of-your-custom-file-types.md)
 
 ## Topics
 
 ### Enumeration Cases
-- [QLThumbnailRepresentation.RepresentationType.icon](qlthumbnailrepresentation/representationtype/icon.md)
+- [QLThumbnailRepresentation.RepresentationType.icon](./representationtype/icon.md)
   A file icon representation of an image.
-- [QLThumbnailRepresentation.RepresentationType.lowQualityThumbnail](qlthumbnailrepresentation/representationtype/lowqualitythumbnail.md)
+- [QLThumbnailRepresentation.RepresentationType.lowQualityThumbnail](./representationtype/lowqualitythumbnail.md)
   A cached thumbnail representation of an image.
-- [QLThumbnailRepresentation.RepresentationType.thumbnail](qlthumbnailrepresentation/representationtype/thumbnail.md)
+- [QLThumbnailRepresentation.RepresentationType.thumbnail](./representationtype/thumbnail.md)
   A thumbnail representation of an image.
 ### Initializers
-- [init?(rawValue: Int)](qlthumbnailrepresentation/representationtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./representationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cgImage: CGImage](qlthumbnailrepresentation/cgimage.md)
+### Thumbnail Images
+- [var cgImage: CGImage](./cgimage.md)
   A thumbnail in the form of a Core Graphics image object.
-- [var nsImage: NSImage](qlthumbnailrepresentation/nsimage.md)
+- [var nsImage: NSImage](./nsimage.md)
   A thumbnail in the form of an AppKit image object.
-- [var uiImage: UIImage](qlthumbnailrepresentation/uiimage.md)
+- [var uiImage: UIImage](./uiimage.md)
   A thumbnail in the form of a UIKit image object.
-- [var type: QLThumbnailRepresentation.RepresentationType](qlthumbnailrepresentation/type.md)
+- [var type: QLThumbnailRepresentation.RepresentationType](./type.md)
   The type of thumbnail.
-- [var contentRect: CGRect](qlthumbnailrepresentation/contentrect.md)
+- [var contentRect: CGRect](./contentrect.md)
   The rectangle within the thumbnail image of the document that represents its contents.
 
 

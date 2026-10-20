@@ -1,7 +1,8 @@
 # CTFontCopySupportedLanguages(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of languages supported by the font.
 
@@ -20,6 +21,10 @@ Returns an array of languages supported by the font.
 func CTFontCopySupportedLanguages(_ font: CTFont) -> CFArray
 ```
 
+```c
+extern CFArrayRefCTFontCopySupportedLanguages(CTFontRef font);
+```
+
 #### Return Value
 
 A retained reference to an array of languages supported by the font. The array contains language identifier strings as `CFStringRef` objects. The format of the language identifier conforms to the RFC 3066bis standard.
@@ -30,9 +35,10 @@ A retained reference to an array of languages supported by the font. The array c
 
 ## See Also
 
-- [func CTFontCopyCharacterSet(CTFont) -> CFCharacterSet](ctfontcopycharacterset(_:).md)
+### Working With Encoding
+- [func CTFontCopyCharacterSet(CTFont) -> CFCharacterSet](./ctfontcopycharacterset%28_%29.md)
   Returns the Unicode character set of the font.
-- [func CTFontGetStringEncoding(CTFont) -> CFStringEncoding](ctfontgetstringencoding(_:).md)
+- [func CTFontGetStringEncoding(CTFont) -> CFStringEncoding](./ctfontgetstringencoding%28_%29.md)
   Returns the best string encoding for legacy format support.
 
 

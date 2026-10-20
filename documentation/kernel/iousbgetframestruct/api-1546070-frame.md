@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The frame indicator.
 
@@ -10,13 +11,14 @@ The frame indicator.
 
 ## Declaration
 
-```swift
+```c
 UInt64 frame;
 ```
 
 ## See Also
 
-- [timeStamp](iousbgetframestruct/1546083-timestamp.md)
+### Getting the Properties
+- [timeStamp](./api-1546083-timestamp.md)
   The timestamp of the frame.
 
 

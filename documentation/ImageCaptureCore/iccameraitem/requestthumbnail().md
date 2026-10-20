@@ -1,7 +1,8 @@
 # requestThumbnail()
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a thumbnail for the item.
 
@@ -18,21 +19,26 @@ Requests a thumbnail for the item.
 func requestThumbnail()
 ```
 
+```objc
+- (void) requestThumbnail;
+```
+
 #### Discussion
 
-If a thumbnail is not readily available, accessing this property will send a message to the device requesting a thumbnail for the file. The delegate of the device will be notified via method [`cameraDevice(_:didReceiveThumbnail:for:error:)`](iccameradevicedelegate/cameradevice(_:didreceivethumbnail:for:error:).md), if this method is implemented by the delegate. Execution of the delegate callback will occur on the main thread.
+If a thumbnail is not readily available, accessing this property will send a message to the device requesting a thumbnail for the file. The delegate of the device will be notified via method [`cameraDevice(_:didReceiveThumbnail:for:error:)`](../iccameradevicedelegate/cameradevice%28_,didreceivethumbnail,for,error%29.md), if this method is implemented by the delegate. Execution of the delegate callback will occur on the main thread.
 
 ## See Also
 
-- [var thumbnail: CGImage?](iccameraitem/thumbnail.md)
+### Requesting Thumbnails
+- [var thumbnail: CGImage?](./thumbnail.md)
   The item’s thumbnail.
-- [var thumbnailIfAvailable: CGImage?](iccameraitem/thumbnailifavailable.md)
+- [var thumbnailIfAvailable: CGImage?](./thumbnailifavailable.md)
   The item’s thumbnail if it is readily available.
-- [var largeThumbnailIfAvailable: CGImage?](iccameraitem/largethumbnailifavailable.md)
+- [var largeThumbnailIfAvailable: CGImage?](./largethumbnailifavailable.md)
   A large thumbnail for the item if one is readily available.
-- [func flushThumbnailCache()](iccameraitem/flushthumbnailcache.md)
+- [func flushThumbnailCache()](./flushthumbnailcache%28%29.md)
   Deletes the item’s cached thumbnail.
-- [struct ICCameraItemThumbnailOption](iccameraitemthumbnailoption.md)
+- [struct ICCameraItemThumbnailOption](../iccameraitemthumbnailoption.md)
   An option for the item’s thumbnail.
 
 

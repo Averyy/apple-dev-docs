@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](column/description.md)
+- [var description: String](./description.md)
   A text representation of the column.
 
 

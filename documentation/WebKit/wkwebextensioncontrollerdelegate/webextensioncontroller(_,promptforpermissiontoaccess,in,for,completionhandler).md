@@ -1,7 +1,8 @@
 # webExtensionController(_:promptForPermissionToAccess:in:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context requests access to a set of URLs.
 
@@ -15,7 +16,15 @@ Called when an extension context requests access to a set of URLs.
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, promptForPermissionToAccess urls: Set<URL>, in tab: (any WKWebExtensionTab)?, for extensionContext: WKWebExtensionContext, completionHandler: @escaping (Set<URL>, Date?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, promptForPermissionToAccess urls: Set<URL>, in tab: (any WKWebExtensionTab)?, for extensionContext: WKWebExtensionContext) async -> (Set<URL>, Date?)
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller promptForPermissionToAccessURLs:(NSSet<NSURL *> *) urls inTab:(id<WKWebExtensionTab>) tab forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(NSSet<NSURL *> *allowedURLs, NSDate *expirationDate)) completionHandler;
 ```
 
 #### Discussion

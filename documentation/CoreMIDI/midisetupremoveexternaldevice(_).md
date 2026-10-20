@@ -1,7 +1,8 @@
 # MIDISetupRemoveExternalDevice(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes an external MIDI device from the current MIDI setup.
 
@@ -18,6 +19,10 @@ Removes an external MIDI device from the current MIDI setup.
 func MIDISetupRemoveExternalDevice(_ device: MIDIDeviceRef) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDISetupRemoveExternalDevice(MIDIDeviceRef device);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
@@ -28,9 +33,10 @@ An `OSStatus` result code.
 
 ## See Also
 
-- [func MIDIExternalDeviceCreate(CFString, CFString, CFString, UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus](midiexternaldevicecreate(_:_:_:_:).md)
+### Managing External Devices
+- [func MIDIExternalDeviceCreate(CFString, CFString, CFString, UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus](./midiexternaldevicecreate%28_,_,_,_%29.md)
   Creates an external MIDI device.
-- [func MIDISetupAddExternalDevice(MIDIDeviceRef) -> OSStatus](midisetupaddexternaldevice(_:).md)
+- [func MIDISetupAddExternalDevice(MIDIDeviceRef) -> OSStatus](./midisetupaddexternaldevice%28_%29.md)
   Adds an external MIDI device to the current MIDI setup.
 
 

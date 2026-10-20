@@ -1,7 +1,8 @@
 # skipDescendents()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the receiver to skip recursion into the most recently obtained subdirectory.
 
@@ -20,9 +21,14 @@ Causes the receiver to skip recursion into the most recently obtained subdirecto
 func skipDescendents()
 ```
 
+```objc
+- (void) skipDescendents;
+```
+
 ## See Also
 
-- [func skipDescendants()](filemanager/directoryenumerator/skipdescendants.md)
+### Skipping Subdirectories
+- [func skipDescendants()](./skipdescendants%28%29.md)
   Causes the receiver to skip recursion into the most recently obtained subdirectory.
 
 

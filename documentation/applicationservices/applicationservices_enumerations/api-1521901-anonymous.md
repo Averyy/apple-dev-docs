@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kATSUFlattenOptionNoOptionsMask: Int](katsuflattenoptionnooptionsmask.md)
+- [var kATSUFlattenOptionNoOptionsMask: Int](../katsuflattenoptionnooptionsmask.md)
 
 
 ---

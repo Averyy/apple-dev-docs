@@ -1,7 +1,8 @@
 # caseSensitive
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to consider case when matching the search string.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether to consider case when matching the search
 var caseSensitive: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL caseSensitive;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the web view takes case into account when matching the search string. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](../../Swift/true.md), the web view takes case into account when matching the search string. The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var backwards: Bool](wkfindconfiguration/backwards.md)
+### Configuring the Search Parameters
+- [var backwards: Bool](./backwards.md)
   A Boolean value that indicates the search direction, relative to the current selection.
-- [var wraps: Bool](wkfindconfiguration/wraps.md)
+- [var wraps: Bool](./wraps.md)
   A Boolean value that indicates whether the search wraps around to the other side of the page.
 
 

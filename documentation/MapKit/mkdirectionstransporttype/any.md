@@ -1,7 +1,8 @@
 # any
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Directions suitable for any transportation option.
 
@@ -20,15 +21,20 @@ Directions suitable for any transportation option.
 static var any: MKDirectionsTransportType { get }
 ```
 
+```c
+MKDirectionsTransportTypeAny
+```
+
 ## See Also
 
-- [static var automobile: MKDirectionsTransportType](mkdirectionstransporttype/automobile.md)
+### Transport types
+- [static var automobile: MKDirectionsTransportType](./automobile.md)
   Directions suitable for use while driving.
-- [static var cycling: MKDirectionsTransportType](mkdirectionstransporttype/cycling.md)
+- [static var cycling: MKDirectionsTransportType](./cycling.md)
   Directions suitable for use while cycling.
-- [static var transit: MKDirectionsTransportType](mkdirectionstransporttype/transit.md)
+- [static var transit: MKDirectionsTransportType](./transit.md)
   Directions suitable for public transportation.
-- [static var walking: MKDirectionsTransportType](mkdirectionstransporttype/walking.md)
+- [static var walking: MKDirectionsTransportType](./walking.md)
   Directions suitable for a pedestrian.
 
 

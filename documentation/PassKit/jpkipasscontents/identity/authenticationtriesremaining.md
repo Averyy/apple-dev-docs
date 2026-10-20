@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The tries remaining before the underlying credential locks itself

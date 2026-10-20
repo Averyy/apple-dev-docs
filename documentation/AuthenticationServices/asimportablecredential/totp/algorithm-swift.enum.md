@@ -1,7 +1,8 @@
 # ASImportableCredential.TOTP.Algorithm
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of algorithm types that all importers are expected to support.
 
@@ -21,37 +22,38 @@ enum Algorithm
 ## Topics
 
 ### Algorithms
-- [ASImportableCredential.TOTP.Algorithm.sha1](asimportablecredential/totp/algorithm-swift.enum/sha1.md)
+- [ASImportableCredential.TOTP.Algorithm.sha1](./algorithm-swift.enum/sha1.md)
   The SHA-1 algorithm.
-- [ASImportableCredential.TOTP.Algorithm.sha256](asimportablecredential/totp/algorithm-swift.enum/sha256.md)
+- [ASImportableCredential.TOTP.Algorithm.sha256](./algorithm-swift.enum/sha256.md)
   The SHA-256 algorithm.
-- [ASImportableCredential.TOTP.Algorithm.sha512](asimportablecredential/totp/algorithm-swift.enum/sha512.md)
+- [ASImportableCredential.TOTP.Algorithm.sha512](./algorithm-swift.enum/sha512.md)
   The SHA-512 algorithm.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var secret: Data](asimportablecredential/totp/secret.md)
+### Accessing TOTP properties
+- [var secret: Data](./secret.md)
   The secret associated with this generator.
-- [var period: UInt16](asimportablecredential/totp/period.md)
+- [var period: UInt16](./period.md)
   The period, in seconds, used by the generator to refresh codes.
-- [var digits: UInt16](asimportablecredential/totp/digits.md)
+- [var digits: UInt16](./digits.md)
   The number of digits in the code used by the generator.
-- [var algorithm: ASImportableCredential.TOTP.Algorithm](asimportablecredential/totp/algorithm-swift.property.md)
+- [var algorithm: ASImportableCredential.TOTP.Algorithm](./algorithm-swift.property.md)
   The algorithm used by the generator.
-- [var issuer: String?](asimportablecredential/totp/issuer.md)
+- [var issuer: String?](./issuer.md)
   The issuer of the generator, if any.
 
 

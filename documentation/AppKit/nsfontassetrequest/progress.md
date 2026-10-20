@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
@@ -10,6 +11,10 @@
 
 ```swift
 var progress: Progress { get }
+```
+
+```objc
+@property (strong, readonly) NSProgress * progress;
 ```
 
 

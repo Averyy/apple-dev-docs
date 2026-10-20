@@ -1,7 +1,8 @@
 # trailingAccessoryView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view at the trailing edge of a tab bar on tvOS.
 
@@ -14,21 +15,26 @@ The view at the trailing edge of a tab bar on tvOS.
 var trailingAccessoryView: UIView { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIView * trailingAccessoryView;
+```
+
 #### Discussion
 
 Use this property to integrate a custom view at the trailing edge of your tab bar interface. Use this view to display a custom logo or give access to custom accessories in your app.
 
 ## See Also
 
-- [var standardAppearance: UITabBarAppearance](uitabbar/standardappearance.md)
+### Customizing tab bar appearance
+- [var standardAppearance: UITabBarAppearance](./standardappearance.md)
   The appearance settings for a standard-height tab bar.
-- [var scrollEdgeAppearance: UITabBarAppearance?](uitabbar/scrolledgeappearance.md)
+- [var scrollEdgeAppearance: UITabBarAppearance?](./scrolledgeappearance.md)
   The appearance settings for the tab bar when the edge of scrollable content aligns with the edge of the tab bar.
-- [var leadingAccessoryView: UIView](uitabbar/leadingaccessoryview.md)
+- [var leadingAccessoryView: UIView](./leadingaccessoryview.md)
   The view at the leading edge of a tab bar on tvOS.
-- [var isTranslucent: Bool](uitabbar/istranslucent.md)
+- [var isTranslucent: Bool](./istranslucent.md)
   A Boolean value that indicates whether the tab bar is translucent.
-- [Legacy customizations](uitabbar-legacy-customizations.md)
+- [Legacy customizations](../uitabbar-legacy-customizations.md)
   Customize appearance information directly on the tab bar object.
 
 

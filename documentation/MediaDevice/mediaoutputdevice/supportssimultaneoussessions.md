@@ -1,9 +1,10 @@
 # supportsSimultaneousSessions
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Indicates whether the device supports receiving simultaneous media sessions via [`MediaOutputSession`](mediaoutputsession.md).
+Indicates whether the device supports receiving simultaneous media sessions via [`MediaOutputSession`](../mediaoutputsession.md).
 
 **Availability**:
 - iOS 27.0+

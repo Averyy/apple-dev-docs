@@ -1,7 +1,8 @@
 # subFrames
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sub-frames (children in the call tree)
 
@@ -20,11 +21,12 @@ let subFrames: ContiguousArray<CallStackFrame>
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [func binaryName(from: CallStackTree) -> String?](callstackframe/binaryname(from:).md)
+### Tree navigation
+- [func binaryName(from: CallStackTree) -> String?](./binaryname%28from%29.md)
   Binary name - look up from tree
 
 

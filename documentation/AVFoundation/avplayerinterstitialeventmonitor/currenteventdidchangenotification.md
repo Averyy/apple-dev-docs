@@ -1,7 +1,8 @@
 # currentEventDidChangeNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the monitor’s current interstitial event changes.
 
@@ -20,9 +21,14 @@ A notification the system posts when the monitor’s current interstitial event 
 class let currentEventDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVPlayerInterstitialEventMonitorCurrentEventDidChangeNotification;
+```
+
 ## See Also
 
-- [var currentEvent: AVPlayerInterstitialEvent?](avplayerinterstitialeventmonitor/currentevent.md)
+### Monitoring the current event
+- [var currentEvent: AVPlayerInterstitialEvent?](./currentevent.md)
   The current interstitial event.
 
 

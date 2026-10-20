@@ -1,7 +1,8 @@
 # monthSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of month symbols for this calendar.
 
@@ -20,17 +21,22 @@ A list of month symbols for this calendar.
 var monthSymbols: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * monthSymbols;
+```
+
 ## See Also
 
-- [var shortMonthSymbols: [String]](nscalendar/shortmonthsymbols.md)
+### Getting Month Symbols
+- [var shortMonthSymbols: [String]](./shortmonthsymbols.md)
   A list of short month symbols for this calendar.
-- [var veryShortMonthSymbols: [String]](nscalendar/veryshortmonthsymbols.md)
+- [var veryShortMonthSymbols: [String]](./veryshortmonthsymbols.md)
   A list of very short month symbols for this calendar.
-- [var standaloneMonthSymbols: [String]](nscalendar/standalonemonthsymbols.md)
+- [var standaloneMonthSymbols: [String]](./standalonemonthsymbols.md)
   A list of standalone month symbols for this calendar.
-- [var shortStandaloneMonthSymbols: [String]](nscalendar/shortstandalonemonthsymbols.md)
+- [var shortStandaloneMonthSymbols: [String]](./shortstandalonemonthsymbols.md)
   A list of short standalone month symbols for this calendar.
-- [var veryShortStandaloneMonthSymbols: [String]](nscalendar/veryshortstandalonemonthsymbols.md)
+- [var veryShortStandaloneMonthSymbols: [String]](./veryshortstandalonemonthsymbols.md)
   A list of very short month symbols for this calendar.
 
 

@@ -1,7 +1,8 @@
 # width
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The inter-glyph spacing of the font.
 
@@ -9,7 +10,7 @@ The inter-glyph spacing of the font.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,17 +20,22 @@ The inter-glyph spacing of the font.
 static let width: UIFontDescriptor.TraitKey
 ```
 
+```c
+extern UIFontDescriptorTraitKey const UIFontWidthTrait;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. The valid value range is from `-1.0` to `1.0`. The value of `0.0` corresponds to the regular glyph spacing.
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object. The valid value range is from `-1.0` to `1.0`. The value of `0.0` corresponds to the regular glyph spacing.
 
 ## See Also
 
-- [static let slant: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/slant.md)
+### Font traits
+- [static let slant: UIFontDescriptor.TraitKey](./slant.md)
   The relative slant angle of the font.
-- [static let symbolic: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/symbolic.md)
+- [static let symbolic: UIFontDescriptor.TraitKey](./symbolic.md)
   The symbolic font traits.
-- [static let weight: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/weight.md)
+- [static let weight: UIFontDescriptor.TraitKey](./weight.md)
   The numerical value that corresponds to a font face.
 
 

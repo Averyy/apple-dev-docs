@@ -1,7 +1,8 @@
 # CTSlicingManager.AppCategory.missionCritical
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An application category for mission-critical applications requiring guaranteed reliability.
 

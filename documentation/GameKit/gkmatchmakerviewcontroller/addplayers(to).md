@@ -1,7 +1,8 @@
 # addPlayers(to:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invites additional players to join an existing match.
 
@@ -17,6 +18,10 @@ Invites additional players to join an existing match.
 
 ```swift
 func addPlayers(to match: GKMatch)
+```
+
+```objc
+- (void) addPlayersToMatch:(GKMatch *) match;
 ```
 
 #### Discussion

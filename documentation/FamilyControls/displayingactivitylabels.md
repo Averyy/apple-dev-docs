@@ -1,14 +1,15 @@
 # Displaying Activity Labels
 
-**Framework**: Family Controls
+**Framework**: Family Controls  
+**Role**: API Collection
 
 Provide users with a read-only, visual representation of an application, category, or web domain.
 
 #### Overview
 
-To display an application, category, or web domain, choose an [`ApplicationToken`](https://developer.apple.com/documentation/managedsettings/applicationtoken), [`ActivityCategoryToken`](https://developer.apple.com/documentation/managedsettings/activitycategorytoken), or [`WebDomainToken`](https://developer.apple.com/documentation/managedsettings/webdomaintoken) that represents an item selected by the user. For example, you can access these tokens from the [`FamilyActivitySelection`](familyactivityselection.md) bound to a [`FamilyActivityPicker`](familyactivitypicker.md) view.
+To display an application, category, or web domain, choose an [`ApplicationToken`](../ManagedSettings/applicationtoken.md), [`ActivityCategoryToken`](../ManagedSettings/activitycategorytoken.md), or [`WebDomainToken`](../ManagedSettings/webdomaintoken.md) that represents an item selected by the user. For example, you can access these tokens from the [`FamilyActivitySelection`](./familyactivityselection.md) bound to a [`FamilyActivityPicker`](./familyactivitypicker.md) view.
 
-Use one of these tokens to create a [`Label`](https://developer.apple.com/documentation/swiftui/label) instance by passing the token to its initializer. Display the activity item like any SwiftUI view.
+Use one of these tokens to create a [`Label`](../SwiftUI/label.md) instance by passing the token to its initializer. Display the activity item like any SwiftUI view.
 
 ```swift
 struct ExampleView: View {
@@ -28,9 +29,9 @@ struct ExampleView: View {
 ## Topics
 
 ### Label constraints
-- [struct FamilyActivityTitleView](familyactivitytitleview.md)
+- [struct FamilyActivityTitleView](./familyactivitytitleview.md)
   A type-erased view representing the title of the family activity.
-- [struct FamilyActivityIconView](familyactivityiconview.md)
+- [struct FamilyActivityIconView](./familyactivityiconview.md)
   A type-erased view representing the icon of the family activity.
 
 

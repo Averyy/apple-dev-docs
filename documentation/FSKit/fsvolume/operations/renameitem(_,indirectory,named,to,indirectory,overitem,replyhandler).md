@@ -2,17 +2,26 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Renames an item from one path in the file system to another.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+func renameItem(_ item: FSItem, inDirectory sourceDirectory: FSItem, named sourceName: FSFileName, to destinationName: FSFileName, inDirectory destinationDirectory: FSItem, overItem: FSItem?, replyHandler reply: @escaping @Sendable (FSFileName?, (any Error)?) -> Void)
+```
+
+```swift
 func renameItem(_ item: FSItem, inDirectory sourceDirectory: FSItem, named sourceName: FSFileName, to destinationName: FSFileName, inDirectory destinationDirectory: FSItem, overItem: FSItem?) async throws -> FSFileName
+```
+
+```objc
+- (void) renameItem:(FSItem *) item inDirectory:(FSItem *) sourceDirectory named:(FSFileName *) sourceName toNewName:(FSFileName *) destinationName inDirectory:(FSItem *) destinationDirectory overItem:(FSItem *) overItem replyHandler:(void (^)(FSFileName *newName, NSError *error)) reply;
 ```
 
 #### Discussion
@@ -21,17 +30,41 @@ func renameItem(_ item: FSItem, inDirectory sourceDirectory: FSItem, named sourc
 
 Implement renaming along the lines of this algorithm:
 
-- If `item` is a file: - If the destination file exists: - Remove the destination file.
-- If the source and destination directories are the same: - Rewrite the name in the existing directory.
-- Else: - Write the new entry in the destination directory.
-- Clear the old directory entry.
-- If `item` is a directory: - If the destination directory exists: - If the destination directory isn’t empty: - Fail the operation with an error of [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and a code of `ENOTEMPTY`.
-- Else: - Remove the destination directory.
-- If the source and destination directories are the same: - Rewrite the name in the existing directory.
-- Else: - If the destination is a child of the source directory: - Fail the operation with an error.
-- Else: - Write the new entry in the destination directory.
-- Update `"."` and `".."` in the moved directory.
-- Clear the old directory entry.
+- If `item` is a file:
+
+  - If the destination file exists:
+
+    - Remove the destination file.
+  - If the source and destination directories are the same:
+
+    - Rewrite the name in the existing directory.
+  - Else:
+
+    - Write the new entry in the destination directory.
+    - Clear the old directory entry.
+- If `item` is a directory:
+
+  - If the destination directory exists:
+
+    - If the destination directory isn’t empty:
+
+      - Fail the operation with an error of [`NSPOSIXErrorDomain`](../../../Foundation/nsposixerrordomain.md) and a code of `ENOTEMPTY`.
+    - Else:
+
+      - Remove the destination directory.
+    - If the source and destination directories are the same:
+
+      - Rewrite the name in the existing directory.
+    - Else:
+
+      - If the destination is a child of the source directory:
+
+        - Fail the operation with an error.
+      - Else:
+
+        - Write the new entry in the destination directory.
+        - Update `"."` and `".."` in the moved directory.
+        - Clear the old directory entry.
 
 ## Parameters
 
@@ -41,21 +74,22 @@ Implement renaming along the lines of this algorithm:
 - `destinationName`: The new name of the item as it appears in `destinationDirectory`.
 - `destinationDirectory`: The directory to contain the renamed object, which may be the same as `sourceDirectory`.
 - `overItem`: The file system object if the destination exists, as discovered in a prior lookup. If this parameter is non-`nil`, mark `overItem` as deleted, so the file system can free its allocated space on the next call to `reclaimItem(_:)`. After doing so, ensure the operation finishes without errors.
-- `reply`: A block or closure to indicate success or failure. If renaming succeeds, pass the [`FSFileName`](fsfilename.md) as it exists within `destinationDirectory` and a `nil` error. If renaming fails, pass the relevant error as the second parameter; FSKit ignores any [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSFileName`](fsfilename.md) or throw an error.
+- `reply`: A block or closure to indicate success or failure. If renaming succeeds, pass the [`FSFileName`](../../fsfilename.md) as it exists within `destinationDirectory` and a `nil` error. If renaming fails, pass the relevant error as the second parameter; FSKit ignores any [`FSFileName`](../../fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSFileName`](../../fsfilename.md) or throw an error.
 
 ## See Also
 
-- [func createItem(named: FSFileName, type: FSItem.ItemType, inDirectory: FSItem, attributes: FSItem.SetAttributesRequest, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/createitem(named:type:indirectory:attributes:replyhandler:).md)
+### Working with items
+- [func createItem(named: FSFileName, type: FSItem.ItemType, inDirectory: FSItem, attributes: FSItem.SetAttributesRequest, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](./createitem%28named,type,indirectory,attributes,replyhandler%29.md)
   Creates a new file or directory item.
-- [class FSFileName](fsfilename.md)
+- [class FSFileName](../../fsfilename.md)
   The name of a file, expressed as a data buffer.
-- [FSItem.ItemType](fsitem/itemtype.md)
+- [FSItem.ItemType](../../fsitem/itemtype.md)
   An enumeration of item types, such as file, directory, or symbolic link.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+- [FSItem.SetAttributesRequest](../../fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [func lookupItem(named: FSFileName, inDirectory: FSItem, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/lookupitem(named:indirectory:replyhandler:).md)
+- [func lookupItem(named: FSFileName, inDirectory: FSItem, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](./lookupitem%28named,indirectory,replyhandler%29.md)
   Looks up an item within a directory.
-- [func removeItem(FSItem, named: FSFileName, fromDirectory: FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/removeitem(_:named:fromdirectory:replyhandler:).md)
+- [func removeItem(FSItem, named: FSFileName, fromDirectory: FSItem, replyHandler: ((any Error)?) -> Void)](./removeitem%28_,named,fromdirectory,replyhandler%29.md)
   Removes an existing item from a given directory.
 
 

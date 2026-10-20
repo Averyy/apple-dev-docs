@@ -1,7 +1,8 @@
 # ManipulationComponent.Dynamics.ScalingBehavior
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Definition of the two-handed scaling behavior.
 
@@ -17,18 +18,18 @@ struct ScalingBehavior
 ## Topics
 
 ### Type Properties
-- [static var none: ManipulationComponent.Dynamics.ScalingBehavior](manipulationcomponent/dynamics-swift.struct/scalingbehavior-swift.struct/none.md)
+- [static var none: ManipulationComponent.Dynamics.ScalingBehavior](./scalingbehavior-swift.struct/none.md)
   No active scaling behavior.
-- [static var unconstrained: ManipulationComponent.Dynamics.ScalingBehavior](manipulationcomponent/dynamics-swift.struct/scalingbehavior-swift.struct/unconstrained.md)
+- [static var unconstrained: ManipulationComponent.Dynamics.ScalingBehavior](./scalingbehavior-swift.struct/unconstrained.md)
   Scale is unconstrained.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

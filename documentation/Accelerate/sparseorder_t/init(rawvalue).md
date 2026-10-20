@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ init(rawValue: UInt8)
 
 ## See Also
 
-- [init(UInt8)](sparseorder_t/init(_:).md)
-- [var rawValue: UInt8](sparseorder_t/rawvalue.md)
+### Raw Values
+- [init(UInt8)](./init%28_%29.md)
+- [var rawValue: UInt8](./rawvalue.md)
 
 
 ---

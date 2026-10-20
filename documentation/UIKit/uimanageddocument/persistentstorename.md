@@ -1,7 +1,8 @@
 # persistentStoreName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the name for the persistent store file inside the document’s file package.
 
@@ -17,13 +18,17 @@ Returns the name for the persistent store file inside the document’s file pack
 class var persistentStoreName: String { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSString * persistentStoreName;
+```
+
 #### Return Value
 
 The name for the persistent store file inside the document’s file package.
 
 #### Discussion
 
-This path component is appended to the document URL provided by [`UIDocument`](uidocument.md). The default name is `persistentStore`.
+This path component is appended to the document URL provided by [`UIDocument`](../uidocument.md). The default name is `persistentStore`.
 
 
 ---

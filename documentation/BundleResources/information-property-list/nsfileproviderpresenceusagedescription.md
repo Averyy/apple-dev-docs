@@ -1,29 +1,32 @@
 # NSFileProviderPresenceUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app’s file provider needs to determine which files the person is currently accessing.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSFileProviderPresenceUsageDescription` (Privacy - File Provider Presence Usage Description)
+- **Type**: string
 
 ## See Also
 
-- [NSDesktopFolderUsageDescription](information-property-list/nsdesktopfolderusagedescription.md)
+### Files and folders
+- [NSDesktopFolderUsageDescription](./nsdesktopfolderusagedescription.md)
   A message that tells people why the app needs access to their Desktop folder.
-- [NSDocumentsFolderUsageDescription](information-property-list/nsdocumentsfolderusagedescription.md)
-- [NSDownloadsFolderUsageDescription](information-property-list/nsdownloadsfolderusagedescription.md)
+- [NSDocumentsFolderUsageDescription](./nsdocumentsfolderusagedescription.md)
+- [NSDownloadsFolderUsageDescription](./nsdownloadsfolderusagedescription.md)
   A message that tells people why the app needs access to the user’s Downloads folder.
-- [NSNetworkVolumesUsageDescription](information-property-list/nsnetworkvolumesusagedescription.md)
+- [NSNetworkVolumesUsageDescription](./nsnetworkvolumesusagedescription.md)
   A message that tells people why the app needs access to files on a network volume.
-- [NSRemovableVolumesUsageDescription](information-property-list/nsremovablevolumesusagedescription.md)
+- [NSRemovableVolumesUsageDescription](./nsremovablevolumesusagedescription.md)
   A message that tells people why the app needs access to files on a removable volume.
-- [NSFileProviderDomainUsageDescription](information-property-list/nsfileproviderdomainusagedescription.md)
+- [NSFileProviderDomainUsageDescription](./nsfileproviderdomainusagedescription.md)
   A message that tells people why the app needs access to files managed by a file provider.
 
 

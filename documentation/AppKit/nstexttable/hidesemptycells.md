@@ -1,7 +1,8 @@
 # hidesEmptyCells
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the text table hides empty cells.
 
@@ -14,9 +15,13 @@ A Boolean value indicating whether the text table hides empty cells.
 var hidesEmptyCells: Bool { get set }
 ```
 
+```objc
+@property BOOL hidesEmptyCells;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the text table hides empty cells. If empty cells are hidden, locations with empty cells allow the background of the enclosing block or text container to show through.
+The value of this property is [`true`](../../Swift/true.md) when the text table hides empty cells. If empty cells are hidden, locations with empty cells allow the background of the enclosing block or text container to show through.
 
 
 ---

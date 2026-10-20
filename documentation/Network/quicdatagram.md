@@ -1,7 +1,8 @@
 # QUICDatagram
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Send and receive unreliable datagrams over QUIC via RFC 9221
 
@@ -23,10 +24,10 @@ struct QUICDatagram
 ## Relationships
 
 ### Conforms To
-- [DatagramProtocol](datagramprotocol.md)
-- [MessageProtocol](messageprotocol.md)
-- [NetworkProtocolOptions](networkprotocoloptions.md)
-- [OneToOneProtocol](onetooneprotocol.md)
+- [DatagramProtocol](./datagramprotocol.md)
+- [MessageProtocol](./messageprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
 
 
 ---

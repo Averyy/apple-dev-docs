@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the call.
 
@@ -18,15 +19,20 @@ The unique identifier for the call.
 var uuid: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * UUID;
+```
+
 ## See Also
 
-- [var isOutgoing: Bool](cxcall/isoutgoing.md)
+### Accessing Call Attributes
+- [var isOutgoing: Bool](./isoutgoing.md)
   A Boolean value that indicates whether the call is outgoing.
-- [var hasConnected: Bool](cxcall/hasconnected.md)
+- [var hasConnected: Bool](./hasconnected.md)
   A Boolean value that indicates whether the call has connected.
-- [var hasEnded: Bool](cxcall/hasended.md)
+- [var hasEnded: Bool](./hasended.md)
   A Boolean value that indicates whether the call has ended.
-- [var isOnHold: Bool](cxcall/isonhold.md)
+- [var isOnHold: Bool](./isonhold.md)
   A Boolean value that indicates whether the call is on hold.
 
 

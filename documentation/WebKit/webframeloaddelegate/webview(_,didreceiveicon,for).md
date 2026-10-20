@@ -1,17 +1,22 @@
 # webView(_:didReceiveIcon:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a page icon changes.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, didReceiveIcon image: NSImage!, for frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) sender didReceiveIcon:(NSImage *) image forFrame:(WebFrame *) frame;
 ```
 
 #### Discussion

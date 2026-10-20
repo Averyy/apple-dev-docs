@@ -1,7 +1,8 @@
 # CGAffineTransformMakeScale(_:_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an affine transformation matrix constructed from scaling values you provide.
 
@@ -10,7 +11,7 @@ Returns an affine transformation matrix constructed from scaling values you prov
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns an affine transformation matrix constructed from scaling values you prov
 
 ```swift
 func CGAffineTransformMakeScale(_ sx: CGFloat, _ sy: CGFloat) -> CGAffineTransform
+```
+
+```c
+extern CGAffineTransform CGAffineTransformMakeScale(CGFloat sx, CGFloat sy);
 ```
 
 #### Return Value
@@ -28,15 +33,15 @@ A new affine transformation matrix.
 
 This function creates a `CGAffineTransform` structure, which you can use (and reuse, if you want) to scale a coordinate system. The matrix takes the following form:
 
-![A 3 by 3 matrix used to scale.](/images/com.apple.coregraphics/media-1966736@2x.png)
+![A 3 by 3 matrix used to scale.](https://developer.apple.com/tutorials/images/com.apple.coregraphics/media-1966736@2x.png)
 
 Because the third column is always `(0,0,1)`, the `CGAffineTransform` data structure returned by this function contains values for only the first two columns.
 
 These are the resulting equations used to scale the coordinates of a point (x,y):
 
-![Scaling equations.](/images/com.apple.coregraphics/media-1966741@2x.png)
+![Scaling equations.](https://developer.apple.com/tutorials/images/com.apple.coregraphics/media-1966741@2x.png)
 
-If you want only to scale an object to be drawn, it is not necessary to construct an affine transform to do so. The most direct way to scale your drawing is by calling the function [`scaleBy(x:y:)`](cgcontext/scaleby(x:y:).md).
+If you want only to scale an object to be drawn, it is not necessary to construct an affine transform to do so. The most direct way to scale your drawing is by calling the function [`scaleBy(x:y:)`](./cgcontext/scaleby%28x,y%29.md).
 
 ## Parameters
 
@@ -45,11 +50,12 @@ If you want only to scale an object to be drawn, it is not necessary to construc
 
 ## See Also
 
-- [func CGAffineTransformMake(CGFloat, CGFloat, CGFloat, CGFloat, CGFloat, CGFloat) -> CGAffineTransform](cgaffinetransformmake(_:_:_:_:_:_:).md)
+### Creating an Affine Transformation Matrix
+- [func CGAffineTransformMake(CGFloat, CGFloat, CGFloat, CGFloat, CGFloat, CGFloat) -> CGAffineTransform](./cgaffinetransformmake%28_,_,_,_,_,_%29.md)
   Returns an affine transformation matrix constructed from values you provide.
-- [func CGAffineTransformMakeRotation(CGFloat) -> CGAffineTransform](cgaffinetransformmakerotation(_:).md)
+- [func CGAffineTransformMakeRotation(CGFloat) -> CGAffineTransform](./cgaffinetransformmakerotation%28_%29.md)
   Returns an affine transformation matrix constructed from a rotation value you provide.
-- [func CGAffineTransformMakeTranslation(CGFloat, CGFloat) -> CGAffineTransform](cgaffinetransformmaketranslation(_:_:).md)
+- [func CGAffineTransformMakeTranslation(CGFloat, CGFloat) -> CGAffineTransform](./cgaffinetransformmaketranslation%28_,_%29.md)
   Returns an affine transformation matrix constructed from translation values you provide.
 
 

@@ -1,10 +1,11 @@
 # NSColorChanging
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,27 +13,32 @@
 protocol NSColorChanging : NSObjectProtocol
 ```
 
+```objc
+@protocol NSColorChanging <NSObject>
+```
+
 #### Overview
 
-When the user selects a color in an [`NSColorPanel`](nscolorpanel.md) object, the panel tries to call this method on the first responder. You can override this method in any responder that needs to respond to a color change.
+When the user selects a color in an [`NSColorPanel`](./nscolorpanel.md) object, the panel tries to call this method on the first responder. You can override this method in any responder that needs to respond to a color change.
 
 ## Topics
 
 ### Responding to a Color Change
-- [func changeColor(NSColorPanel?)](nscolorchanging/changecolor(_:).md)
+- [func changeColor(NSColorPanel?)](./nscolorchanging/changecolor%28_%29.md)
   Sent to the first responder when the user selects a color in an NSColorPanel object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSTextView](nstextview.md)
+- [NSTextView](./nstextview.md)
 
 ## See Also
 
-- [class let colorDidChangeNotification: NSNotification.Name](nscolorpanel/colordidchangenotification.md)
-  Posted when the color of the `NSColorPanel` is set, as when [`NSColorPanel`](nscolorpanel.md) is invoked.
+### Responding to a color change
+- [class let colorDidChangeNotification: NSNotification.Name](./nscolorpanel/colordidchangenotification.md)
+  Posted when the color of the `NSColorPanel` is set, as when [`NSColorPanel`](./nscolorpanel.md) is invoked.
 
 
 ---

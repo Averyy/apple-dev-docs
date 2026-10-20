@@ -1,7 +1,8 @@
 # MIDIGetDevice(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a device from the system.
 
@@ -18,6 +19,10 @@ Returns a device from the system.
 func MIDIGetDevice(_ deviceIndex0: Int) -> MIDIDeviceRef
 ```
 
+```c
+extern MIDIDeviceRef MIDIGetDevice(ItemCount deviceIndex0);
+```
+
 #### Return Value
 
 A reference to a device, or `NULL` if an error occurred.
@@ -26,7 +31,7 @@ A reference to a device, or `NULL` if an error occurred.
 
 Call this function to enumerate the devices in the system. To enumerate the entities in the system, walk through the devices and then walk through the device’s entities. When you iterate through the devices and entities in the system, you don’t visit virtual sources and destinations created by other clients.
 
-A device iteration returns devices that are *offline* (they were present in the past but aren’t currently available), while iterations through the system’s sources and destinations don’t include the endpoints of offline devices. Instead, clients typically use [`MIDIGetNumberOfSources()`](midigetnumberofsources().md), [`MIDIGetSource(_:)`](midigetsource(_:).md), [`MIDIGetNumberOfDestinations()`](midigetnumberofdestinations().md) and [`MIDIGetDestination(_:)`](midigetdestination(_:).md).
+A device iteration returns devices that are *offline* (they were present in the past but aren’t currently available), while iterations through the system’s sources and destinations don’t include the endpoints of offline devices. Instead, clients typically use [`MIDIGetNumberOfSources()`](./midigetnumberofsources%28%29.md), [`MIDIGetSource(_:)`](./midigetsource%28_%29.md), [`MIDIGetNumberOfDestinations()`](./midigetnumberofdestinations%28%29.md) and [`MIDIGetDestination(_:)`](./midigetdestination%28_%29.md).
 
 ## Parameters
 
@@ -34,17 +39,18 @@ A device iteration returns devices that are *offline* (they were present in the 
 
 ## See Also
 
-- [func MIDIGetNumberOfDevices() -> Int](midigetnumberofdevices().md)
+### Device lookup
+- [func MIDIGetNumberOfDevices() -> Int](./midigetnumberofdevices%28%29.md)
   Returns the number of devices in the system.
-- [func MIDIGetNumberOfExternalDevices() -> Int](midigetnumberofexternaldevices().md)
+- [func MIDIGetNumberOfExternalDevices() -> Int](./midigetnumberofexternaldevices%28%29.md)
   Returns the number of external MIDI devices in the system.
-- [func MIDIGetExternalDevice(Int) -> MIDIDeviceRef](midigetexternaldevice(_:).md)
+- [func MIDIGetExternalDevice(Int) -> MIDIDeviceRef](./midigetexternaldevice%28_%29.md)
   Returns one of the external devices in the system.
-- [func MIDIDeviceGetNumberOfEntities(MIDIDeviceRef) -> Int](mididevicegetnumberofentities(_:).md)
+- [func MIDIDeviceGetNumberOfEntities(MIDIDeviceRef) -> Int](./mididevicegetnumberofentities%28_%29.md)
   Returns the number of entities in a device.
-- [func MIDIDeviceGetEntity(MIDIDeviceRef, Int) -> MIDIEntityRef](mididevicegetentity(_:_:).md)
+- [func MIDIDeviceGetEntity(MIDIDeviceRef, Int) -> MIDIEntityRef](./mididevicegetentity%28_,_%29.md)
   Returns the device’s entity at a specific index.
-- [typealias MIDIDeviceRef](midideviceref.md)
+- [typealias MIDIDeviceRef](./midideviceref.md)
   A MIDI device that contains entities.
 
 

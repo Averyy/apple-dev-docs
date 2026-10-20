@@ -1,7 +1,8 @@
 # init(alignment:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stack with the specified alignment.
 

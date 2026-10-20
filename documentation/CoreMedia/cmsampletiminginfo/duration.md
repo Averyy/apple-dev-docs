@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the sample.
 
@@ -20,15 +21,20 @@ The duration of the sample.
 var duration: CMTime
 ```
 
+```c
+CMTime duration;
+```
+
 #### Discussion
 
 If a single struct applies to each of the samples, they all have this duration.
 
 ## See Also
 
-- [var decodeTimeStamp: CMTime](cmsampletiminginfo/decodetimestamp.md)
+### Properties
+- [var decodeTimeStamp: CMTime](./decodetimestamp.md)
   The time at which the sample will be decoded.
-- [var presentationTimeStamp: CMTime](cmsampletiminginfo/presentationtimestamp.md)
+- [var presentationTimeStamp: CMTime](./presentationtimestamp.md)
   The time at which the sample will be presented.
 
 

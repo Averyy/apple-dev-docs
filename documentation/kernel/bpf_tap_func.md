@@ -1,14 +1,15 @@
 # bpf_tap_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*bpf_tap_func)(ifnet_t interface, u_int32_t data_link_type, bpf_tap_mode direction);
 ```
 

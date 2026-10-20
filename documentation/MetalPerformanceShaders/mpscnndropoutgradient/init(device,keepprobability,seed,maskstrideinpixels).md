@@ -1,7 +1,8 @@
 # init(device:keepProbability:seed:maskStrideInPixels:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device keepProbability:(float) keepProbability seed:(NSUInteger) seed maskStrideInPixels:(MTLSize) maskStrideInPixels;
 ```
 
 

@@ -1,7 +1,8 @@
 # HMMutableSignificantTimeEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable event that fires at the specified temporal offset to a significant event.
 
@@ -19,35 +20,40 @@ A mutable event that fires at the specified temporal offset to a significant eve
 class HMMutableSignificantTimeEvent
 ```
 
+```objc
+@interface HMMutableSignificantTimeEvent : HMSignificantTimeEvent
+```
+
 ## Topics
 
 ### Configuring a significant time event
-- [var significantEvent: HMSignificantEvent](hmmutablesignificanttimeevent/significantevent.md)
+- [var significantEvent: HMSignificantEvent](./hmmutablesignificanttimeevent/significantevent.md)
   The significant time-based event that is used to calculate when the event fires.
-- [var offset: DateComponents](hmmutablesignificanttimeevent/offset.md)
+- [var offset: DateComponents](./hmmutablesignificanttimeevent/offset.md)
   The offset from the significant event that this event fires at.
 
 ## Relationships
 
 ### Inherits From
-- [HMSignificantTimeEvent](hmsignificanttimeevent.md)
+- [HMSignificantTimeEvent](./hmsignificanttimeevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HMSignificantEvent](hmsignificantevent.md)
+### Significant events
+- [struct HMSignificantEvent](./hmsignificantevent.md)
   An event that represents significant time-based events, including sunrise and sunset.
-- [class HMSignificantTimeEvent](hmsignificanttimeevent.md)
+- [class HMSignificantTimeEvent](./hmsignificanttimeevent.md)
   An event that fires at a time offset from a significant time-based event.
 
 

@@ -1,16 +1,17 @@
 # Protocol
 
 **Framework**: Objective-C Runtime  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ class Protocol
 
 ## See Also
 
-- [class NSObject](nsobject-swift.class.md)
+### Classes
+- [class NSObject](./nsobject-swift.class.md)
   The root class of most Objective-C class hierarchies, from which subclasses inherit a basic interface to the runtime system and the ability to behave as Objective-C objects.
 
 

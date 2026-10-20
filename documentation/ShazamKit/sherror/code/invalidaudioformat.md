@@ -1,7 +1,8 @@
 # SHError.Code.invalidAudioFormat
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code to indicate an unsupported audio format.
 
@@ -20,13 +21,18 @@ The error code to indicate an unsupported audio format.
 case invalidAudioFormat
 ```
 
+```c
+SHErrorCodeInvalidAudioFormat
+```
+
 #### Discussion
 
-For the list of the supported audio formats, see [`append(_:at:)`](shsignaturegenerator/append(_:at:).md).
+For the list of the supported audio formats, see [`append(_:at:)`](../../shsignaturegenerator/append%28_,at%29.md).
 
 ## See Also
 
-- [SHError.Code.audioDiscontinuity](sherror/code/audiodiscontinuity.md)
+### Audio format errors
+- [SHError.Code.audioDiscontinuity](./audiodiscontinuity.md)
   The error code to indicate the use of noncontiguous audio to request a match.
 
 

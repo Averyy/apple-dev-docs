@@ -1,28 +1,30 @@
 # JSClassAttribute
 
-**Framework**: JavaScriptCore
+**Framework**: JavaScriptCore  
+**Role**: API Collection
 
 A JavaScript class attribute.
 
 ## Topics
 
 ### Constants
-- [var kJSClassAttributeNone: Int](kjsclassattributenone.md)
+- [var kJSClassAttributeNone: Int](./kjsclassattributenone.md)
   An attribute that specifies that a class has no special attributes.
-- [var kJSClassAttributeNoAutomaticPrototype: Int](kjsclassattributenoautomaticprototype.md)
+- [var kJSClassAttributeNoAutomaticPrototype: Int](./kjsclassattributenoautomaticprototype.md)
   An attribute that specifies that a class doesn’t automatically generate a shared prototype for its instance objects.
 
 ## See Also
 
-- [func JSClassCreate(UnsafePointer<JSClassDefinition>!) -> JSClassRef!](jsclasscreate(_:).md)
+### Working with Classes
+- [func JSClassCreate(UnsafePointer<JSClassDefinition>!) -> JSClassRef!](./jsclasscreate%28_%29.md)
   Creates a JavaScript class.
-- [func JSClassRelease(JSClassRef!)](jsclassrelease(_:).md)
+- [func JSClassRelease(JSClassRef!)](./jsclassrelease%28_%29.md)
   Releases a JavaScript class.
-- [func JSClassRetain(JSClassRef!) -> JSClassRef!](jsclassretain(_:).md)
+- [func JSClassRetain(JSClassRef!) -> JSClassRef!](./jsclassretain%28_%29.md)
   Retains a JavaScript class.
-- [let kJSClassDefinitionEmpty: JSClassDefinition](kjsclassdefinitionempty.md)
+- [let kJSClassDefinitionEmpty: JSClassDefinition](./kjsclassdefinitionempty.md)
   A class definition structure of the current version that contains null pointers and has no attributes.
-- [struct JSClassDefinition](jsclassdefinition.md)
+- [struct JSClassDefinition](./jsclassdefinition.md)
   A structure that contains properties and callbacks that define a type of object.
 
 

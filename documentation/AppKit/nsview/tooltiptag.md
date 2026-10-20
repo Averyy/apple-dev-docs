@@ -1,12 +1,13 @@
 # NSView.ToolTipTag
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 This type describes the rectangle used to identify a tooltip rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ This type describes the rectangle used to identify a tooltip rectangle.
 typealias ToolTipTag = Int
 ```
 
+```c
+typedef NSInteger NSToolTipTag;
+```
+
 #### Discussion
 
-If the value of this type is 0, it is invalid. See the methods [`addToolTip(_:owner:userData:)`](nsview/addtooltip(_:owner:userdata:).md) and[`removeToolTip(_:)`](nsview/removetooltip(_:).md).
+If the value of this type is 0, it is invalid. See the methods [`addToolTip(_:owner:userData:)`](./addtooltip%28_,owner,userdata%29.md) and[`removeToolTip(_:)`](./removetooltip%28_%29.md).
 
 ## See Also
 
-- [var toolTip: String?](nsview/tooltip.md)
+### Providing a Tool Tip
+- [var toolTip: String?](./tooltip.md)
   The text for the view’s tooltip.
-- [func addToolTip(NSRect, owner: Any, userData: UnsafeMutableRawPointer?) -> NSView.ToolTipTag](nsview/addtooltip(_:owner:userdata:).md)
+- [func addToolTip(NSRect, owner: Any, userData: UnsafeMutableRawPointer?) -> NSView.ToolTipTag](./addtooltip%28_,owner,userdata%29.md)
   Creates a tooltip for a defined area in the view and returns a tag that identifies the tooltip rectangle.
-- [func removeAllToolTips()](nsview/removealltooltips.md)
+- [func removeAllToolTips()](./removealltooltips%28%29.md)
   Removes all tooltips assigned to the view.
-- [func removeToolTip(NSView.ToolTipTag)](nsview/removetooltip(_:).md)
+- [func removeToolTip(NSView.ToolTipTag)](./removetooltip%28_%29.md)
   Removes the tooltip identified by specified tag.
 
 

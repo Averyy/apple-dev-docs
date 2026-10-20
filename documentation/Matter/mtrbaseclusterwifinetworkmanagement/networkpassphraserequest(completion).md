@@ -1,7 +1,8 @@
 # networkPassphraseRequest(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func networkPassphraseRequest(completion: @escaping @Sendable (MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func networkPassphraseRequest() async throws -> MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams
+```
+
+```objc
+- (void) networkPassphraseRequestWithCompletion:(void (^)(MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams *data, NSError *error)) completion;
 ```
 
 

@@ -1,18 +1,19 @@
 # Yp_bias
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encoding for `Y' = 0.0` for this video format (varies by bit depth).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ The encoding for `Y' = 0.0` for this video format (varies by bit depth).
 var Yp_bias: Int32
 ```
 
+```c
+int32_t Yp_bias;
+```
+
 ## See Also
 
-- [var CbCr_bias: Int32](vimage_ypcbcrpixelrange/cbcr_bias.md)
+### Pixel Range Properties
+- [var CbCr_bias: Int32](./cbcr_bias.md)
   The encoding for `{Cb, Cr} = 0.0` for this video format.
-- [var YpRangeMax: Int32](vimage_ypcbcrpixelrange/yprangemax.md)
+- [var YpRangeMax: Int32](./yprangemax.md)
   The encoding for `Y' = 1.0` for this video format.
-- [var CbCrRangeMax: Int32](vimage_ypcbcrpixelrange/cbcrrangemax.md)
+- [var CbCrRangeMax: Int32](./cbcrrangemax.md)
   The encoding for `{Cb, Cr} = 0.5` for this video format.
-- [var YpMax: Int32](vimage_ypcbcrpixelrange/ypmax.md)
+- [var YpMax: Int32](./ypmax.md)
   The encoding for the maximum allowed Y’ value.
-- [var YpMin: Int32](vimage_ypcbcrpixelrange/ypmin.md)
+- [var YpMin: Int32](./ypmin.md)
   The encoding of the minimum allowed Y’ value.
-- [var CbCrMax: Int32](vimage_ypcbcrpixelrange/cbcrmax.md)
+- [var CbCrMax: Int32](./cbcrmax.md)
   The encoding of the maximum allowed `{Cb, Cr}` value.
-- [var CbCrMin: Int32](vimage_ypcbcrpixelrange/cbcrmin.md)
+- [var CbCrMin: Int32](./cbcrmin.md)
   The encoding of the minimum allowed `{Cb, Cr}` value.
 
 

@@ -1,7 +1,8 @@
 # lineWidth
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the line width (in points) for the border.
 
@@ -19,17 +20,22 @@ Sets the line width (in points) for the border.
 var lineWidth: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat lineWidth;
+```
+
 ## See Also
 
-- [var style: PDFBorderStyle](pdfborder/style.md)
+### Working with Border Styles and Characteristics
+- [var style: PDFBorderStyle](./style.md)
   Sets the border style.
-- [enum PDFBorderStyle](pdfborderstyle.md)
+- [enum PDFBorderStyle](../pdfborderstyle.md)
   PDF Kit annotation borders may have the following styles.
-- [var dashPattern: [Any]?](pdfborder/dashpattern.md)
+- [var dashPattern: [Any]?](./dashpattern.md)
   Gets the dash pattern for the border as an array of NSNumber objects.
-- [var borderKeyValues: [AnyHashable : Any]](pdfborder/borderkeyvalues.md)
+- [var borderKeyValues: [AnyHashable : Any]](./borderkeyvalues.md)
   A dictionary that contains a deep copy of all border properties.
-- [struct PDFBorderKey](pdfborderkey.md)
+- [struct PDFBorderKey](../pdfborderkey.md)
 
 
 ---

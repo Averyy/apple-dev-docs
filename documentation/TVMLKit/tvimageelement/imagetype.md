@@ -1,12 +1,15 @@
 # imageType
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of image.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,17 +17,22 @@ The type of image.
 var imageType: TVImageType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) TVImageType imageType;
+```
+
 #### Discussion
 
-For possible values, see [`TVImageType`](tvimagetype.md).
+For possible values, see [`TVImageType`](../tvimagetype.md).
 
 ## See Also
 
-- [var url: URL?](tvimageelement/url.md)
+### Identifying an Image
+- [var url: URL?](./url.md)
   A URL that points to the location of the image.
-- [enum TVImageType](tvimagetype.md)
+- [enum TVImageType](../tvimagetype.md)
   The type of image.
-- [var srcset: [String : URL]?](tvimageelement/srcset.md)
+- [var srcset: [String : URL]?](./srcset.md)
   A dictionary specifying versions of the same image for different resolutions.
 
 

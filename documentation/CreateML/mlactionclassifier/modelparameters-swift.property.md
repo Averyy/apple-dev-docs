@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model configuration parameters the action classifier used during its training session.
 
@@ -17,7 +18,8 @@ nonisolated
 
 ## See Also
 
-- [var model: MLModel](mlactionclassifier/model.md)
+### Inspecting an action classifier model
+- [var model: MLModel](./model.md)
   The underlying Core ML model of the action classifier stored in memory.
 
 

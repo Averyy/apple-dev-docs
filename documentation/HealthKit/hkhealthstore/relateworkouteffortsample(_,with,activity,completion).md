@@ -1,7 +1,8 @@
 # relateWorkoutEffortSample(_:with:activity:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -14,7 +15,15 @@
 ## Declaration
 
 ```swift
+func relateWorkoutEffortSample(_ sample: HKSample, with workout: HKWorkout, activity: HKWorkoutActivity?, completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func relateWorkoutEffortSample(_ sample: HKSample, with workout: HKWorkout, activity: HKWorkoutActivity?) async throws -> Bool
+```
+
+```objc
+- (void) relateWorkoutEffortSample:(HKSample *) sample withWorkout:(HKWorkout *) workout activity:(HKWorkoutActivity *) activity completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 

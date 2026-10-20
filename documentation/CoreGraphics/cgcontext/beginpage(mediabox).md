@@ -1,7 +1,8 @@
 # beginPage(mediaBox:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts a new page in a page-based graphics context.
 
@@ -10,7 +11,7 @@ Starts a new page in a page-based graphics context.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Starts a new page in a page-based graphics context.
 func beginPage(mediaBox: UnsafePointer<CGRect>?)
 ```
 
+```c
+extern void CGContextBeginPage(CGContextRef c, const CGRect *mediaBox);
+```
+
 #### Discussion
 
-When using a graphics context that supports multiple pages, you should call this function together with [`endPage()`](cgcontext/endpage().md) to delineate the page boundaries in the output. In other words, each page should be bracketed by calls to `CGContextBeginPage` and `CGContextEndPage`. Core Graphics ignores all drawing operations performed outside a page boundary in a page-based context.
+When using a graphics context that supports multiple pages, you should call this function together with [`endPage()`](./endpage%28%29.md) to delineate the page boundaries in the output. In other words, each page should be bracketed by calls to `CGContextBeginPage` and `CGContextEndPage`. Core Graphics ignores all drawing operations performed outside a page boundary in a page-based context.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ When using a graphics context that supports multiple pages, you should call this
 
 ## See Also
 
-- [func endPage()](cgcontext/endpage.md)
+### Managing a Page-Based Graphics Context
+- [func endPage()](./endpage%28%29.md)
   Ends the current page in a page-based graphics context.
 
 

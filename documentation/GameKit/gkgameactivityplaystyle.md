@@ -1,7 +1,8 @@
 # GKGameActivityPlayStyle
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Play Style of the game activity. It can be either Asynchronous or Synchronous.
 
@@ -19,34 +20,39 @@ Play Style of the game activity. It can be either Asynchronous or Synchronous.
 enum GKGameActivityPlayStyle
 ```
 
+```c
+enum GKGameActivityPlayStyle : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [GKGameActivityPlayStyle.asynchronous](gkgameactivityplaystyle/asynchronous.md)
-- [GKGameActivityPlayStyle.synchronous](gkgameactivityplaystyle/synchronous.md)
-- [GKGameActivityPlayStyle.unspecified](gkgameactivityplaystyle/unspecified.md)
+- [GKGameActivityPlayStyle.asynchronous](./gkgameactivityplaystyle/asynchronous.md)
+- [GKGameActivityPlayStyle.synchronous](./gkgameactivityplaystyle/synchronous.md)
+- [GKGameActivityPlayStyle.unspecified](./gkgameactivityplaystyle/unspecified.md)
 ### Initializers
-- [init?(rawValue: Int)](gkgameactivityplaystyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./gkgameactivityplaystyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var supportsPartyCode: Bool](gkgameactivitydefinition/supportspartycode.md)
+### Getting the activity capabilities
+- [var supportsPartyCode: Bool](./gkgameactivitydefinition/supportspartycode.md)
   Whether the activity can be joined by others via a party code.
-- [var supportsUnlimitedPlayers: Bool](gkgameactivitydefinition/supportsunlimitedplayers.md)
+- [var supportsUnlimitedPlayers: Bool](./gkgameactivitydefinition/supportsunlimitedplayers.md)
   True if the activity supports an unlimited number of players. False if maxPlayers is set to a defined limit or if no player range is provided.
-- [var playerRange: (any RangeExpression)?](gkgameactivitydefinition/playerrange.md)
+- [var playerRange: (any RangeExpression)?](./gkgameactivitydefinition/playerrange.md)
   The range of players supported by this type of game activity.
-- [var playStyle: GKGameActivityPlayStyle](gkgameactivitydefinition/playstyle.md)
+- [var playStyle: GKGameActivityPlayStyle](./gkgameactivitydefinition/playstyle.md)
   The play style of the game activity.
 
 

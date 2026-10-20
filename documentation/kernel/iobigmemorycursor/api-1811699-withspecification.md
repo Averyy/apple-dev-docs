@@ -7,14 +7,14 @@ Creates and initializes an IOBigMemoryCursor in one operation.
 
 ## Declaration
 
-```swift
+```c
 static IOBigMemoryCursor * withSpecification(
  IOPhysicalLength maxSegmentSize, 
  IOPhysicalLength maxTransferSize, 
  IOPhysicalLength alignment = 1);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a new memory cursor if successfully created and initialized, 0 otherwise.
 
@@ -30,11 +30,12 @@ Factory function to create and initialize an IOBigMemoryCursor in one operation.
 
 ## See Also
 
-- [getPhysicalSegments](iobigmemorycursor/1811632-getphysicalsegments.md)
+### Miscellaneous
+- [getPhysicalSegments](./api-1811632-getphysicalsegments.md)
   Generates a big endian physical scatter/gather list given a memory descriptor.
-- [initWithSpecification](iobigmemorycursor/1811657-initwithspecification.md)
+- [initWithSpecification](./api-1811657-initwithspecification.md)
   Primary initializer for the IOBigMemoryCursor class.
-- [outputSegment](iobigmemorycursor/1811675-outputsegment.md)
+- [outputSegment](./api-1811675-outputsegment.md)
   Outputs the given segment into the output segments array in big endian byte order.
 
 

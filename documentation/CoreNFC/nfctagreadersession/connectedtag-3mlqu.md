@@ -1,7 +1,8 @@
 # connectedTag
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tag connected to the reader session.
 
@@ -18,7 +19,8 @@ var connectedTag: NFCTag? { get }
 
 ## See Also
 
-- [func connect(to: NFCTag, completionHandler: ((any Error)?) -> Void)](nfctagreadersession/connect(to:completionhandler:).md)
+### Connecting to a Tag
+- [func connect(to: NFCTag, completionHandler: ((any Error)?) -> Void)](./connect%28to,completionhandler%29.md)
   Connects the reader session to a tag and activates that tag.
 
 

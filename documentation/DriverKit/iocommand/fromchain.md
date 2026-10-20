@@ -1,17 +1,18 @@
 # FromChain
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static IOCommand * FromChain(queue_chain_t *link);
 ```
 

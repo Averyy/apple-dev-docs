@@ -1,7 +1,8 @@
 # outputHeight
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height, in pixels, of the output color texture for the frame interpolator.
 
@@ -16,6 +17,10 @@ The height, in pixels, of the output color texture for the frame interpolator.
 
 ```swift
 var outputHeight: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger outputHeight;
 ```
 
 

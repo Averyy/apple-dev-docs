@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsLatestReleaseView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The latest release for the artist determined to still be recent by the Apple Music Catalog.
 
@@ -10,7 +11,7 @@ The latest release for the artist determined to still be recent by the Apple Mus
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsLatestReleaseView.Attributes
 ```
 

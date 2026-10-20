@@ -1,14 +1,15 @@
 # ElectricVehicleStatusEvent
 
 **Framework**: EnergyKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event that represents the status of an electric vehicle while connected to a charger.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,69 +19,70 @@ struct ElectricVehicleStatusEvent
 
 ## Mentions
 
-- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+- [Providing charging history for electric vehicles](./providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Overview
 
-Status events can provide additional information in connection with a [`ElectricVehicleLoadEvent`](electricvehicleloadevent.md) by explaining why a vehicle isn’t charging when connected, when charging will begin, and why charging started or stopped. Unlike load events, which track session-based energy flow with information about continuity included, status events are point-in-time observations without session context. For example, when a vehicle waits for cleaner energy before charging begins, a status event captures this idle state and explains the delay, even though no load event session exists.
+Status events can provide additional information in connection with a [`ElectricVehicleLoadEvent`](./electricvehicleloadevent.md) by explaining why a vehicle isn’t charging when connected, when charging will begin, and why charging started or stopped. Unlike load events, which track session-based energy flow with information about continuity included, status events are point-in-time observations without session context. For example, when a vehicle waits for cleaner energy before charging begins, a status event captures this idle state and explains the delay, even though no load event session exists.
 
 Submit status events to provide visibility into vehicle behavior and enable the Home app to display an informative activity log.
 
-For an example that uses status events, see [`Optimizing home electricity usage`](optimizing-home-electricity-usage.md).
+For an example that uses status events, see [Optimizing home electricity usage](./optimizing-home-electricity-usage.md).
 
 ## Topics
 
 ### Creating a status event
-- [init(timestamp: Date, device: ElectricalLoadDevice, venueID: UUID, status: ElectricVehicleStatusEvent.Status, stateOfCharge: Int, energy: Measurement<UnitEnergy>, estimatedRange: Measurement<UnitLength>?, chargingTarget: ElectricVehicleStatusEvent.ChargingTarget?, sessionIdentifier: UUID?)](electricvehiclestatusevent/init(timestamp:device:venueid:status:stateofcharge:energy:estimatedrange:chargingtarget:sessionidentifier:).md)
+- [init(timestamp: Date, device: ElectricalLoadDevice, venueID: UUID, status: ElectricVehicleStatusEvent.Status, stateOfCharge: Int, energy: Measurement<UnitEnergy>, estimatedRange: Measurement<UnitLength>?, chargingTarget: ElectricVehicleStatusEvent.ChargingTarget?, sessionIdentifier: UUID?)](./electricvehiclestatusevent/init%28timestamp,device,venueid,status,stateofcharge,energy,estimatedrange,chargingtarget,sessionidentifier%29.md)
   Creates an electric vehicle status event.
 ### Getting status information
-- [let status: ElectricVehicleStatusEvent.Status](electricvehiclestatusevent/status-swift.property.md)
+- [let status: ElectricVehicleStatusEvent.Status](./electricvehiclestatusevent/status-swift.property.md)
   The current status of the vehicle relative to charger connection.
-- [ElectricVehicleStatusEvent.Status](electricvehiclestatusevent/status-swift.enum.md)
+- [ElectricVehicleStatusEvent.Status](./electricvehiclestatusevent/status-swift.enum.md)
   The status of an electric vehicle’s charger connection.
-- [let stateOfCharge: Int](electricvehiclestatusevent/stateofcharge.md)
+- [let stateOfCharge: Int](./electricvehiclestatusevent/stateofcharge.md)
   A state of charge as a percentage at the time of the status event.
-- [let energy: Measurement<UnitEnergy>](electricvehiclestatusevent/energy.md)
+- [let energy: Measurement<UnitEnergy>](./electricvehiclestatusevent/energy.md)
   A state of charge in milliwatt-hours at the time of the status event.
-- [let estimatedRange: Measurement<UnitLength>?](electricvehiclestatusevent/estimatedrange.md)
+- [let estimatedRange: Measurement<UnitLength>?](./electricvehiclestatusevent/estimatedrange.md)
   An estimated range of driving distance based on the current energy state.
 ### Getting charging targets
-- [let chargingTarget: ElectricVehicleStatusEvent.ChargingTarget?](electricvehiclestatusevent/chargingtarget-swift.property.md)
+- [let chargingTarget: ElectricVehicleStatusEvent.ChargingTarget?](./electricvehiclestatusevent/chargingtarget-swift.property.md)
   The desired target when charging an electric vehicle.
-- [ElectricVehicleStatusEvent.ChargingTarget](electricvehiclestatusevent/chargingtarget-swift.struct.md)
+- [ElectricVehicleStatusEvent.ChargingTarget](./electricvehiclestatusevent/chargingtarget-swift.struct.md)
   The desired target when charging an electric vehicle.
 ### Identifying the event
-- [let id: UUID](electricvehiclestatusevent/id.md)
+- [let id: UUID](./electricvehiclestatusevent/id.md)
   A unique identifier for the status event.
-- [let timestamp: Date](electricvehiclestatusevent/timestamp.md)
+- [let timestamp: Date](./electricvehiclestatusevent/timestamp.md)
   The time when the status event occurs.
-- [let sessionIdentifier: UUID?](electricvehiclestatusevent/sessionidentifier.md)
+- [let sessionIdentifier: UUID?](./electricvehiclestatusevent/sessionidentifier.md)
   A unique identifier for the session.
 ### Identifying the device and venue
-- [let deviceID: String](electricvehiclestatusevent/deviceid.md)
+- [let deviceID: String](./electricvehiclestatusevent/deviceid.md)
   A unique, stable identifier for the device.
-- [let deviceName: String](electricvehiclestatusevent/devicename.md)
+- [let deviceName: String](./electricvehiclestatusevent/devicename.md)
   A human-readable name for the device.
-- [let venueID: UUID](electricvehiclestatusevent/venueid.md)
+- [let venueID: UUID](./electricvehiclestatusevent/venueid.md)
   An identifier for the venue in which the event occurs.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [ElectricalLoadEventProtocol](electricalloadeventprotocol.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [ElectricalLoadEventProtocol](./electricalloadeventprotocol.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ElectricVehicleLoadEvent](electricvehicleloadevent.md)
+### Electric vehicle events
+- [struct ElectricVehicleLoadEvent](./electricvehicleloadevent.md)
   A measurement of the electricity consumed or generated by an electric vehicle while connected to a charger.
-- [enum ElectricVehicleChargingReason](electricvehiclechargingreason.md)
+- [enum ElectricVehicleChargingReason](./electricvehiclechargingreason.md)
   Information about a charging-state transition in an electric vehicle status event.
 
 

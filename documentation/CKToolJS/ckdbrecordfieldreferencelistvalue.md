@@ -1,7 +1,8 @@
 # CKDBRecordFieldReferenceListValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of the field of type reference list.
 
@@ -10,7 +11,7 @@ The value of the field of type reference list.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldReferenceListValue {
 	string type;
 	CKDBRecordReference[]? value;
@@ -30,14 +31,15 @@ import type { CKDBRecordFieldReferenceListValue } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldreferencelistvalue/type.md)
+- [type](./ckdbrecordfieldreferencelistvalue/type.md)
   A string used to identify the field type.
-- [value](ckdbrecordfieldreferencelistvalue/value.md)
+- [value](./ckdbrecordfieldreferencelistvalue/value.md)
   The array of values, each containing a reference to a CloudKit record
 
 ## See Also
 
-- [CKDBRecordFieldReferenceValue](ckdbrecordfieldreferencevalue.md)
+### References
+- [CKDBRecordFieldReferenceValue](./ckdbrecordfieldreferencevalue.md)
   The value of the field of type reference.
 
 

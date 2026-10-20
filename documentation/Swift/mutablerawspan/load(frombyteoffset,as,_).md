@@ -1,7 +1,8 @@
 # load(fromByteOffset:as:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value constructed from the raw memory at the specified offset.
 

@@ -1,7 +1,8 @@
 # standardized
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A version of the URL with any instances of “..” or “.” resolved in its path.
 
@@ -22,17 +23,18 @@ var standardized: URL { get }
 
 ## See Also
 
-- [var baseURL: URL?](url/baseurl.md)
+### Accessing URL representations
+- [var baseURL: URL?](./baseurl.md)
   The base URL.
-- [var absoluteString: String](url/absolutestring.md)
+- [var absoluteString: String](./absolutestring.md)
   The absolute string for the URL.
-- [var absoluteURL: URL](url/absoluteurl.md)
+- [var absoluteURL: URL](./absoluteurl.md)
   The absolute URL.
-- [var relativePath: String](url/relativepath.md)
+- [var relativePath: String](./relativepath.md)
   The relative path of the URL if the URL conforms to RFC 3986, otherwise nil.
-- [var relativeString: String](url/relativestring.md)
+- [var relativeString: String](./relativestring.md)
   The relative portion of a URL.
-- [var standardizedFileURL: URL](url/standardizedfileurl.md)
+- [var standardizedFileURL: URL](./standardizedfileurl.md)
   A standardized version of the path of a file URL.
 
 

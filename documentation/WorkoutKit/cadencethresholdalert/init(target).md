@@ -1,7 +1,8 @@
 # init(target:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new cadence threshold alert for the target measurement.
 

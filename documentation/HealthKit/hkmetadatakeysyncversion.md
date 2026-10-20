@@ -1,7 +1,8 @@
 # HKMetadataKeySyncVersion
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version number for a piece of data, used when updating or syncing.
 
@@ -19,15 +20,20 @@ The version number for a piece of data, used when updating or syncing.
 let HKMetadataKeySyncVersion: String
 ```
 
+```c
+extern NSString * const HKMetadataKeySyncVersion;
+```
+
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) as its value. When you save an object to the HealthKit store, the new object replaces any matching objects (existing objects with a matching [`HKMetadataKeySyncIdentifier`](hkmetadatakeysyncidentifier.md) value) with a lower sync version.
+This key takes an [`NSNumber`](../Foundation/nsnumber.md) as its value. When you save an object to the HealthKit store, the new object replaces any matching objects (existing objects with a matching [`HKMetadataKeySyncIdentifier`](./hkmetadatakeysyncidentifier.md) value) with a lower sync version.
 
-For more information, see [`HKMetadataKeySyncIdentifier`](hkmetadatakeysyncidentifier.md).
+For more information, see [`HKMetadataKeySyncIdentifier`](./hkmetadatakeysyncidentifier.md).
 
 ## See Also
 
-- [let HKMetadataKeySyncIdentifier: String](hkmetadatakeysyncidentifier.md)
+### Sync Keys
+- [let HKMetadataKeySyncIdentifier: String](./hkmetadatakeysyncidentifier.md)
   A unique string that identifies a piece of data so it can be updated and synced.
 
 

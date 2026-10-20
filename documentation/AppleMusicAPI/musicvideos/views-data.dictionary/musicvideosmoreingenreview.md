@@ -1,7 +1,8 @@
 # MusicVideos.Views.MusicVideosMoreInGenreView
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship view from this music video to more music videos in a specific music video genre.
 
@@ -10,14 +11,14 @@ A relationship view from this music video to more music videos in a specific mus
 
 ## Declaration
 
-```swift
+```
 object MusicVideos.Views.MusicVideosMoreInGenreView
 ```
 
 ## Topics
 
 ### Related Objects
-- [object MusicVideos.Views.MusicVideosMoreInGenreView.Attributes](musicvideos/views-data.dictionary/musicvideosmoreingenreview/attributes-data.dictionary.md)
+- [object MusicVideos.Views.MusicVideosMoreInGenreView.Attributes](./musicvideosmoreingenreview/attributes-data.dictionary.md)
   More music videos in a specific music video genre.
 
 ## Properties
@@ -29,7 +30,8 @@ object MusicVideos.Views.MusicVideosMoreInGenreView
 
 ## See Also
 
-- [object MusicVideos.Views.MusicVideosMoreByArtistView](musicvideos/views-data.dictionary/musicvideosmorebyartistview.md)
+### Related Objects
+- [object MusicVideos.Views.MusicVideosMoreByArtistView](./musicvideosmorebyartistview.md)
   A relationship view from this music video to more music videos of various types by the artist.
 
 

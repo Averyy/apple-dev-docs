@@ -1,7 +1,8 @@
 # vertexFunctionDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the shader function that this pipeline executes for each vertex.
 
@@ -18,6 +19,10 @@ Assigns the shader function that this pipeline executes for each vertex.
 ```swift
 @NSCopying
 var vertexFunctionDescriptor: MTL4FunctionDescriptor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * vertexFunctionDescriptor;
 ```
 
 

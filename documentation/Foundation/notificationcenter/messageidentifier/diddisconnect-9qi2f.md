@@ -1,7 +1,8 @@
 # didDisconnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a spatial accessory disconnects from the device.
 
@@ -13,6 +14,8 @@ The identifier of the message that posts after a spatial accessory disconnects f
 ```swift
 static var didDisconnect: NotificationCenter.BaseMessageIdentifier<GCSpatialAccessory.DidDisconnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCSpatialAccessory.DidDisconnectMessage>`.
 
 
 ---

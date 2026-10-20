@@ -1,7 +1,8 @@
 # RangeSet.Ranges.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing the sequence’s elements.
 
@@ -19,6 +20,8 @@ A type representing the sequence’s elements.
 ```swift
 typealias Element = Range<Bound>
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 
 ---

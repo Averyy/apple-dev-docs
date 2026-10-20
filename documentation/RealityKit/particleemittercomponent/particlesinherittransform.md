@@ -1,7 +1,8 @@
 # particlesInheritTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the entity’s transformation also affects the particles.
 

@@ -1,7 +1,8 @@
 # NSAccessibilitySortDirection
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the sort direction of a column.
 
@@ -14,63 +15,68 @@ Values that indicate the sort direction of a column.
 enum NSAccessibilitySortDirection
 ```
 
+```c
+enum NSAccessibilitySortDirection : NSInteger;
+```
+
 #### Overview
 
-This constant is used with the [`accessibilitySortDirection`](nsaccessibility-c.protocol/accessibilitysortdirection.md) property.
+This constant is used with the [`accessibilitySortDirection`](./nsaccessibility-c.protocol/accessibilitysortdirection.md) property.
 
 ## Topics
 
 ### Constants
-- [NSAccessibilitySortDirection.unknown](nsaccessibilitysortdirection/unknown.md)
+- [NSAccessibilitySortDirection.unknown](./nsaccessibilitysortdirection/unknown.md)
   The sort direction is unknown.
-- [NSAccessibilitySortDirection.ascending](nsaccessibilitysortdirection/ascending.md)
+- [NSAccessibilitySortDirection.ascending](./nsaccessibilitysortdirection/ascending.md)
   The column is sorted in ascending values.
-- [NSAccessibilitySortDirection.descending](nsaccessibilitysortdirection/descending.md)
+- [NSAccessibilitySortDirection.descending](./nsaccessibilitysortdirection/descending.md)
   The column is sorted in descending values.
 ### Initializers
-- [init?(rawValue: Int)](nsaccessibilitysortdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsaccessibilitysortdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSAccessibility.Action](nsaccessibility-swift.struct/action.md)
+### Accessibility Types
+- [NSAccessibility.Action](./nsaccessibility-swift.struct/action.md)
   Constants that describe types of actions.
-- [NSAccessibility.AnnotationAttributeKey](nsaccessibility-swift.struct/annotationattributekey.md)
+- [NSAccessibility.AnnotationAttributeKey](./nsaccessibility-swift.struct/annotationattributekey.md)
   Keys for annotation attributes.
-- [enum NSAccessibilityAnnotationPosition](nsaccessibilityannotationposition.md)
+- [enum NSAccessibilityAnnotationPosition](./nsaccessibilityannotationposition.md)
   Constants that specify the position where the annotation applies.
-- [NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute.md)
+- [NSAccessibility.Attribute](./nsaccessibility-swift.struct/attribute.md)
   Constants that describe attributes.
-- [NSAccessibility.FontAttributeKey](nsaccessibility-swift.struct/fontattributekey.md)
+- [NSAccessibility.FontAttributeKey](./nsaccessibility-swift.struct/fontattributekey.md)
   Keys for font attributes.
-- [enum NSAccessibilityOrientation](nsaccessibilityorientation.md)
+- [enum NSAccessibilityOrientation](./nsaccessibilityorientation.md)
   Values that indicate the orientation of accessibility elements, such as scroll bars and split views.
-- [NSAccessibility.OrientationValue](nsaccessibility-swift.struct/orientationvalue.md)
+- [NSAccessibility.OrientationValue](./nsaccessibility-swift.struct/orientationvalue.md)
   Values that indicate the orientation of user interface elements, such as scroll bars and split views.
-- [NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute.md)
+- [NSAccessibility.ParameterizedAttribute](./nsaccessibility-swift.struct/parameterizedattribute.md)
   Values that describe parameterized attributes.
-- [NSAccessibility.Role](nsaccessibility-swift.struct/role.md)
+- [NSAccessibility.Role](./nsaccessibility-swift.struct/role.md)
   Values that describe types of objects that accessibility elements represent.
-- [enum NSAccessibilityRulerMarkerType](nsaccessibilityrulermarkertype.md)
+- [enum NSAccessibilityRulerMarkerType](./nsaccessibilityrulermarkertype.md)
   Values that indicate the marker type of an accessibility element.
-- [NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue.md)
+- [NSAccessibility.RulerMarkerTypeValue](./nsaccessibility-swift.struct/rulermarkertypevalue.md)
   Values that describe ruler marker types.
-- [NSAccessibility.RulerUnitValue](nsaccessibility-swift.struct/rulerunitvalue.md)
+- [NSAccessibility.RulerUnitValue](./nsaccessibility-swift.struct/rulerunitvalue.md)
   Values that indicate the unit values of a ruler or layout area.
-- [NSAccessibility.SortDirectionValue](nsaccessibility-swift.struct/sortdirectionvalue.md)
+- [NSAccessibility.SortDirectionValue](./nsaccessibility-swift.struct/sortdirectionvalue.md)
   Values that indicate the sort direction of a column.
-- [NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole.md)
+- [NSAccessibility.Subrole](./nsaccessibility-swift.struct/subrole.md)
   Values that describe specialized object subtypes that accessibility elements represent.
-- [enum NSAccessibilityUnits](nsaccessibilityunits.md)
+- [enum NSAccessibilityUnits](./nsaccessibilityunits.md)
   Values that indicate the unit values of a ruler or layout area.
 
 

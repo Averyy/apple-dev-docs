@@ -1,7 +1,8 @@
 # Unicode.UTF16.ForwardParser
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that can be used to parse `CodeUnits` into `EncodedScalar`s.
 
@@ -24,20 +25,20 @@ struct ForwardParser
 ## Topics
 
 ### Initializers
-- [init()](unicode/utf16/forwardparser/init.md)
+- [init()](./forwardparser/init%28%29.md)
   Constructs an instance that can be used to begin parsing `CodeUnit`s at any Unicode scalar boundary.
 ### Type Aliases
-- [Unicode.UTF16.ForwardParser.Encoding](unicode/utf16/forwardparser/encoding.md)
+- [Unicode.UTF16.ForwardParser.Encoding](./forwardparser/encoding.md)
   The encoding with which this parser is associated
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../../bitwisecopyable.md)
+- [Copyable](../../copyable.md)
+- [Escapable](../../escapable.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 
 ---

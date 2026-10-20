@@ -1,7 +1,8 @@
 # AEAssessmentErrorDomain
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant representing the error domain that the framework uses when issuing errors.
 
@@ -17,11 +18,16 @@ A constant representing the error domain that the framework uses when issuing er
 let AEAssessmentErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const AEAssessmentErrorDomain;
+```
+
 ## See Also
 
-- [struct AEAssessmentError](aeassessmenterror.md)
+### Errors
+- [struct AEAssessmentError](./aeassessmenterror.md)
   Errors issued by an assessment session to its delegate.
-- [AEAssessmentError.Code](aeassessmenterror/code.md)
+- [AEAssessmentError.Code](./aeassessmenterror/code.md)
   Error codes that the framework returns if a session fails.
 
 

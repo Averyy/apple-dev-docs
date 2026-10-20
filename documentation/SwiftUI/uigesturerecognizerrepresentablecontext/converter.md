@@ -1,7 +1,8 @@
 # converter
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A structure used to convert locations to/from coordinate spaces in the hierarchy of the associated SwiftUI view.
 

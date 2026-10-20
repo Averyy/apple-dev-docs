@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text attachment object to contain the specified image.
 
@@ -18,6 +19,10 @@ Creates a text attachment object to contain the specified image.
 init(image: UIImage)
 ```
 
+```objc
++ (NSTextAttachment *) textAttachmentWithImage:(UIImage *) image;
+```
+
 #### Return Value
 
 A new text attachment object initialized with the image.
@@ -26,7 +31,7 @@ A new text attachment object initialized with the image.
 
 Attachments created with this method automatically adapt to the surrounding font and color attributes in attributed strings.
 
-For example, the following code creates a text attachment from the [`UIImage`](uiimage.md) class using an SF symbol in a blue headline style and embeds it at the end of the [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring) class:
+For example, the following code creates a text attachment from the [`UIImage`](../uiimage.md) class using an SF symbol in a blue headline style and embeds it at the end of the [`NSMutableAttributedString`](../../Foundation/nsmutableattributedstring.md) class:
 
 ```swift
 let content = NSMutableAttributedString(string: "Open ")
@@ -52,9 +57,10 @@ content.insert(lockSymbol, at: 5)
 
 ## See Also
 
-- [convenience init(fileWrapper: FileWrapper?)](../appkit/nstextattachment/init(filewrapper:).md)
+### Initializing a text attachment
+- [convenience init(fileWrapper: FileWrapper?)](../../AppKit/nstextattachment/init%28filewrapper%29.md)
   Creates a text attachment object to contain the specified file wrapper.
-- [init(data: Data?, ofType: String?)](nstextattachment/init(data:oftype:).md)
+- [init(data: Data?, ofType: String?)](./init%28data,oftype%29.md)
   Creates a text attachment object with the specified data.
 
 

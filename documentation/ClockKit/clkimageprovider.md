@@ -1,12 +1,15 @@
 # CLKImageProvider
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image displayed by a complication.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,61 +17,66 @@ An image displayed by a complication.
 class CLKImageProvider
 ```
 
+```objc
+@interface CLKImageProvider : NSObject
+```
+
 ## Mentions
 
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
 
 #### Overview
 
 You create an image provider with at least one image, and you may specify two additional images to use under certain conditions. The specified images are *template images*, with a color applied to them prior to display. The clock face displaying the complication determines how the images are composited together and which tint color is applied.
 
-Every image provider must contain a *one-piece image*, composed of a single template image. In multicolor classic complications, ClockKit applies the color in the [`tintColor`](clkimageprovider/tintcolor.md) property to your template image and displays the results in your complication. If you don’t specify a value for the [`tintColor`](clkimageprovider/tintcolor.md) property, the image provider applies the tint color associated with the underlying template or white if the template doesn’t specify a color. In tinted graphic complications, ClockKit ignores the [`tintColor`](clkimageprovider/tintcolor.md) property, and applies the color associated with the watch face.
+Every image provider must contain a *one-piece image*, composed of a single template image. In multicolor classic complications, ClockKit applies the color in the [`tintColor`](./clkimageprovider/tintcolor.md) property to your template image and displays the results in your complication. If you don’t specify a value for the [`tintColor`](./clkimageprovider/tintcolor.md) property, the image provider applies the tint color associated with the underlying template or white if the template doesn’t specify a color. In tinted graphic complications, ClockKit ignores the [`tintColor`](./clkimageprovider/tintcolor.md) property, and applies the color associated with the watch face.
 
-In addition to the one-piece image, you may optionally specify two additional images to composite together in order to create a single final image. A two-piece image consists of a foreground image layered on top of a background image. Both images are template images. For classic complications, ClockKit applies the color in the [`tintColor`](clkimageprovider/tintcolor.md) property to the background image, falling back to the color in the underlying template or white if the template doesn’t specify a color. For tinted graphic complications, the system determines the color according to the user’s color selection. In classic complications, two-piece images take priority over one-piece images. In tinted graphic complications, the system can choose either the one-piece or two-piece image, based on the complication and watch face.
+In addition to the one-piece image, you may optionally specify two additional images to composite together in order to create a single final image. A two-piece image consists of a foreground image layered on top of a background image. Both images are template images. For classic complications, ClockKit applies the color in the [`tintColor`](./clkimageprovider/tintcolor.md) property to the background image, falling back to the color in the underlying template or white if the template doesn’t specify a color. For tinted graphic complications, the system determines the color according to the user’s color selection. In classic complications, two-piece images take priority over one-piece images. In tinted graphic complications, the system can choose either the one-piece or two-piece image, based on the complication and watch face.
 
-For information about image sizes to use in different templates, see [`Apple Watch Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/watch/human-interface-guidelines/).
+For information about image sizes to use in different templates, see [Apple Watch Human Interface Guidelines](https://developer.apple.com/watch/human-interface-guidelines/).
 
 ## Topics
 
 ### Creating an Image Provider
-- [convenience init(onePieceImage: UIImage)](clkimageprovider/init(onepieceimage:).md)
+- [convenience init(onePieceImage: UIImage)](./clkimageprovider/init%28onepieceimage%29.md)
   Creates and returns an image provider with the specified one-piece image.
-- [convenience init(onePieceImage: UIImage, twoPieceImageBackground: UIImage?, twoPieceImageForeground: UIImage?)](clkimageprovider/init(onepieceimage:twopieceimagebackground:twopieceimageforeground:).md)
+- [convenience init(onePieceImage: UIImage, twoPieceImageBackground: UIImage?, twoPieceImageForeground: UIImage?)](./clkimageprovider/init%28onepieceimage,twopieceimagebackground,twopieceimageforeground%29.md)
   Creates and returns an image provider with both one-piece and two-piece images.
 ### Getting the Image Data
-- [var onePieceImage: UIImage](clkimageprovider/onepieceimage.md)
+- [var onePieceImage: UIImage](./clkimageprovider/onepieceimage.md)
   The template image to use as a one-piece image.
-- [var tintColor: UIColor?](clkimageprovider/tintcolor.md)
+- [var tintColor: UIColor?](./clkimageprovider/tintcolor.md)
   The tint color to apply to the image in a multicolor clock face.
-- [var twoPieceImageBackground: UIImage?](clkimageprovider/twopieceimagebackground.md)
+- [var twoPieceImageBackground: UIImage?](./clkimageprovider/twopieceimagebackground.md)
   The background image in a two-piece image.
-- [var twoPieceImageForeground: UIImage?](clkimageprovider/twopieceimageforeground.md)
+- [var twoPieceImageForeground: UIImage?](./clkimageprovider/twopieceimageforeground.md)
   The foreground image in a two-piece image.
 ### Setting the Accessibility Label
-- [var accessibilityLabel: String?](clkimageprovider/accessibilitylabel.md)
+- [var accessibilityLabel: String?](./clkimageprovider/accessibilitylabel.md)
   A succinct label that succinctly identifies the purpose of the image.
 ### Creating Empty Image Providers
-- [class func new() -> Self](clkimageprovider/new.md)
+- [class func new() -> Self](./clkimageprovider/new%28%29.md)
   Creates an empty image provider.
-- [init()](clkimageprovider/init.md)
+- [init()](./clkimageprovider/init%28%29.md)
   Creates an empty image provider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKFullColorImageProvider](clkfullcolorimageprovider.md)
+### Image providers
+- [class CLKFullColorImageProvider](./clkfullcolorimageprovider.md)
   A full-color image displayed by a complication.
 
 

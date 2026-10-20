@@ -1,7 +1,8 @@
 # CSSearchQueryError.Code.unknown
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unknown error occurred.
 
@@ -18,13 +19,18 @@ An unknown error occurred.
 case unknown
 ```
 
+```c
+CSSearchQueryErrorCodeUnknown
+```
+
 ## See Also
 
-- [CSSearchQueryError.Code.cancelled](cssearchqueryerror/code/cancelled.md)
+### Getting the error codes
+- [CSSearchQueryError.Code.cancelled](./cancelled.md)
   The query stopped because someone canceled it.
-- [CSSearchQueryError.Code.indexUnreachable](cssearchqueryerror/code/indexunreachable.md)
+- [CSSearchQueryError.Code.indexUnreachable](./indexunreachable.md)
   The index is unreachable.
-- [CSSearchQueryError.Code.invalidQuery](cssearchqueryerror/code/invalidquery.md)
+- [CSSearchQueryError.Code.invalidQuery](./invalidquery.md)
   The query is syntactically invalid or specifies items that your app doesn’t have access to.
 
 

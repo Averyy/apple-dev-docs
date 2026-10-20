@@ -1,7 +1,8 @@
 # find(identifier:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an already-loaded layer with this identifier, or `nil` if none is loaded. Does no I/O.
 
@@ -29,11 +30,12 @@ The matching layer, or `nil` if none is loaded.
 
 ## See Also
 
-- [static func open(String, options: USDLayer.OpenOptions) throws -> USDLayer](usdlayer/open(_:options:).md)
+### Opening and finding layers
+- [static func open(String, options: USDLayer.OpenOptions) throws -> USDLayer](./open%28_,options%29.md)
   Returns an already-loaded layer at the identifier, or opens it from the resolved asset path.
-- [USDLayer.OpenOptions](usdlayer/openoptions.md)
+- [USDLayer.OpenOptions](./openoptions.md)
   Options for opening a layer.
-- [USDLayer.Permission](usdlayer/permission.md)
+- [USDLayer.Permission](./permission.md)
   Access permission for a spec.
 
 

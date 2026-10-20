@@ -1,7 +1,8 @@
 # primaryUsage
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HID specification compliant usage for the device.
 
@@ -18,7 +19,7 @@ var primaryUsage: HIDUsage?
 
 This is the main usage for the device, pulled from the top level collection of the report descriptor, specifying the general device type.
 
-For more details, see [`HIDUsage`](hidusage.md).
+For more details, see [`HIDUsage`](../../hidusage.md).
 
 
 ---

@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/faqs.html
 
 # Core ML Tools FAQs
 
-**
-
-- [.md](../_sources/source/faqs.md)
-- **
-
-.pdf
-
-**
-
-# Core ML Tools FAQs
-
- Table of contents 
-
-## Contents
-
-# Core ML Tools FAQs
-
 This page offers frequently asked questions (FAQs):
 
 - [What are some major changes between versions of Core ML Tools?](#core-ml-tools-versions)
@@ -94,7 +77,7 @@ If you have an older [Keras.io](http://keras.io/) model that uses TensorFlow 1 (
 
 ## Fixing High Numerical Error
 
-For a neural network, set the compute unit to CPU as described in [Set the Compute Units](load-and-convert-model.html#set-the-compute-units). For example:
+For a neural network, set the compute unit to CPU as described in [Set the Compute Units](load-and-convert-model.md#set-the-compute-units). For example:
 
 ```
 # neural networks
@@ -111,7 +94,7 @@ model = ct.models.MLModel("model.mlmodel", compute_units=ct.ComputeUnit.CPU_ONLY
 model.compute_unit
 ```
 
-For an ML program, set `compute_precision` to Float 32 as described in [Set the ML Program Precision](convert-to-ml-program.html#set-the-ml-program-precision). For example:
+For an ML program, set `compute_precision` to Float 32 as described in [Set the ML Program Precision](convert-to-ml-program.md#set-the-ml-program-precision). For example:
 
 ```
 # ml programs
@@ -126,7 +109,7 @@ You can also refer to the [Debugging And Performance Utilities](mlmodel-debuggin
 
 ## Image Preprocessing for Converting torchvision
 
-Preprocessing parameters differ between [torchvision](https://pytorch.org/vision/stable/index.md) and Core ML Tools but can be easily translated, as described in [Add Image Preprocessing Options](image-inputs.html#add-image-preprocessing-options). For example, you can set the scale and bias for an [ImageType](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#coremltools.converters.mil.input_types.ImageType), which corresponds to the torchvision parameters:
+Preprocessing parameters differ between [torchvision](https://pytorch.org/vision/stable/index.html) and Core ML Tools but can be easily translated, as described in [Add Image Preprocessing Options](image-inputs.md#add-image-preprocessing-options). For example, you can set the scale and bias for an [ImageType](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#coremltools.converters.mil.input_types.ImageType), which corresponds to the torchvision parameters:
 
 ```
 scale = 1/(0.226*255.0)
@@ -138,7 +121,7 @@ image_input = ct.ImageType(shape=example_input.shape,
 
 ## Error in Declaring Network or Computing NN Outputs
 
-File an issue at the [coremltoolsGithub repository](https://github.com/apple/coremltools) by following the instructions in [Issues and Queries](how-to-contribute.html#issues-and-queries). As a workaround, try using `CPUOnly` compute units during conversion, as described in [Set the Compute Units](load-and-convert-model.html#set-the-compute-units). For example:
+File an issue at the [coremltoolsGithub repository](https://github.com/apple/coremltools) by following the instructions in [Issues and Queries](how-to-contribute.md#issues-and-queries). As a workaround, try using `CPUOnly` compute units during conversion, as described in [Set the Compute Units](load-and-convert-model.md#set-the-compute-units). For example:
 
 ```
 import coremltools as ct
@@ -150,11 +133,11 @@ model = ct.models.MLModel("model.mlmodel", compute_units=ct.ComputeUnit.CPU_ONLY
 
 ## Starting a Deep Learning Core ML Model
 
-You can define a Core ML model directly by building it with the MIL builder API. This API is similar to the `torch.nn` or the `tf.keras` API for model construction. For an example, see [Create a MIL Program](model-intermediate-language.html#create-a-mil-program).
+You can define a Core ML model directly by building it with the MIL builder API. This API is similar to the `torch.nn` or the `tf.keras` API for model construction. For an example, see [Create a MIL Program](model-intermediate-language.md#create-a-mil-program).
 
 ## Handling an Unsupported Op
 
-Be sure that you are using the newest version of Core ML Tools. If you still get this error, please file an issue in the [coremltoolsGithub repo](https://github.com/apple/coremltools) by following the instructions in [Issues and Queries](how-to-contribute.html#issues-and-queries).
+Be sure that you are using the newest version of Core ML Tools. If you still get this error, please file an issue in the [coremltoolsGithub repo](https://github.com/apple/coremltools) by following the instructions in [Issues and Queries](how-to-contribute.md#issues-and-queries).
 
 As a workaround, you may want to write a translation function from the missing op to the existing MIL ops. For examples, see [Composite Operators](composite-operators.md).
 
@@ -162,7 +145,7 @@ As a workaround, you may want to write a translation function from the missing o
 
 When using [ct.convert()](https://apple.github.io/coremltools/source/coremltools.converters.mil.html#coremltools.converters._converters_entry.convert), the input names and output names are automatically picked up by the converter from the source model. After conversion you can see these names by doing one of the following:
 
-- Saving the model and using it with Xcode, as described in [Save and Load the Model](introductory-quickstart.html#save-and-load-the-model) and [Use the Model with Xcode](introductory-quickstart.html#use-the-model-with-xcode).
+- Saving the model and using it with Xcode, as described in [Save and Load the Model](introductory-quickstart.md#save-and-load-the-model) and [Use the Model with Xcode](introductory-quickstart.md#use-the-model-with-xcode).
 - Getting the model spec object and printing the names, as shown in the following example:
 
 ```
@@ -176,7 +159,7 @@ input_names = [inp.name for inp in spec.description.input]
 output_names = [out.name for out in spec.description.output]
 ```
 
-You can update these names by using the [rename_feature](mlmodel-utilities.html#rename-a-feature) API.
+You can update these names by using the [rename_feature](mlmodel-utilities.md#rename-a-feature) API.
 
 ## Neural Engine With Flexible Input Shapes
 
@@ -198,6 +181,4 @@ the correct default settings are applied automatically.
 
 ## Use a compiled model for faster initialization
 
-If your model initialization in Python takes a long time, use a *compiled* Core ML model ([CompiledMLModel](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.CompiledMLModel)) rather than  [MLModel](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.model.MLModel) for making predictions. For large models, using a compiled model can save considerable time in initializing the model. For details, see [Using Compiled Python Models for Prediction](model-prediction.html#using-compiled-python-models-for-prediction).
-
-** Contents
+If your model initialization in Python takes a long time, use a *compiled* Core ML model ([CompiledMLModel](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.CompiledMLModel)) rather than  [MLModel](https://apple.github.io/coremltools/source/coremltools.models.html#coremltools.models.model.MLModel) for making predictions. For large models, using a compiled model can save considerable time in initializing the model. For details, see [Using Compiled Python Models for Prediction](model-prediction.md#using-compiled-python-models-for-prediction).

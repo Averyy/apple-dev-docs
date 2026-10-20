@@ -1,7 +1,8 @@
 # askSignificantChangePermission(for:permissionFlow:in:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that a child send the significant app update permission question to their parent or guardian using the specified permission flow.
 

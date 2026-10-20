@@ -1,17 +1,22 @@
 # markers
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s ruler markers to `markers`, removing any existing ruler markers and not consulting with the client view about the new markers.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var markers: [NSRulerMarker]? { get set }
+```
+
+```objc
+@property (copy, nullable) NSArray<NSRulerMarker *> * markers;
 ```
 
 #### Discussion
@@ -20,13 +25,15 @@ var markers: [NSRulerMarker]? { get set }
 
 ## See Also
 
-- [var markerLocation: CGFloat](nsrulermarker/markerlocation.md)
+### Related Documentation
+- [var markerLocation: CGFloat](../nsrulermarker/markerlocation.md)
   The location of the receiver in the coordinate system of the ruler view’s client view.
-- [func addMarker(NSRulerMarker)](nsrulerview/addmarker(_:).md)
+### Adding and removing markers
+- [func addMarker(NSRulerMarker)](./addmarker%28_%29.md)
   Adds `aMarker` to the receiver, without consulting the client view for approval.
-- [func removeMarker(NSRulerMarker)](nsrulerview/removemarker(_:).md)
+- [func removeMarker(NSRulerMarker)](./removemarker%28_%29.md)
   Removes `aMarker` from the receiver, without consulting the client view for approval.
-- [func trackMarker(NSRulerMarker, withMouseEvent: NSEvent) -> Bool](nsrulerview/trackmarker(_:withmouseevent:).md)
+- [func trackMarker(NSRulerMarker, withMouseEvent: NSEvent) -> Bool](./trackmarker%28_,withmouseevent%29.md)
   Tracks the mouse to add `aMarker` based on the initial mouse-down or mouse-dragged event `theEvent`.
 
 

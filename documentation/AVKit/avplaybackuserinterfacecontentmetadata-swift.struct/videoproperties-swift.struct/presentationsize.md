@@ -1,7 +1,8 @@
 # presentationSize
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The natural pixel dimensions of the video content, used for aspect ratio calculations and layout.
 

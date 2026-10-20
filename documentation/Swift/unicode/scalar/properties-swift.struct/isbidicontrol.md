@@ -1,7 +1,8 @@
 # isBidiControl
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a format control character that has a specific function in the Unicode Bidirectional Algorithm.
 
@@ -22,7 +23,7 @@ var isBidiControl: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Bidi_Control” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Bidi_Control” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

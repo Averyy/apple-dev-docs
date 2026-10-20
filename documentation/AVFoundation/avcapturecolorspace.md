@@ -1,7 +1,8 @@
 # AVCaptureColorSpace
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of color spaces a device can support.
 
@@ -18,6 +19,10 @@ An enumeration of color spaces a device can support.
 enum AVCaptureColorSpace
 ```
 
+```c
+enum AVCaptureColorSpace : NSInteger;
+```
+
 #### Overview
 
 By default, a capture session automatically enables wide-gamut capture for supported devices and capture workflows.
@@ -25,32 +30,33 @@ By default, a capture session automatically enables wide-gamut capture for suppo
 ## Topics
 
 ### Color spaces
-- [AVCaptureColorSpace.sRGB](avcapturecolorspace/srgb.md)
+- [AVCaptureColorSpace.sRGB](./avcapturecolorspace/srgb.md)
   The standard RGB color space.
-- [AVCaptureColorSpace.P3_D65](avcapturecolorspace/p3_d65.md)
+- [AVCaptureColorSpace.P3_D65](./avcapturecolorspace/p3_d65.md)
   The P3 D65 wide color space that uses Illuminant D65 as the white point.
-- [AVCaptureColorSpace.HLG_BT2020](avcapturecolorspace/hlg_bt2020.md)
+- [AVCaptureColorSpace.HLG_BT2020](./avcapturecolorspace/hlg_bt2020.md)
   The BT.2020 wide color space that uses Illuminant D65 as the white point and Hybrid Log-Gamma (HLG) as the transfer function.
-- [AVCaptureColorSpace.appleLog](avcapturecolorspace/applelog.md)
+- [AVCaptureColorSpace.appleLog](./avcapturecolorspace/applelog.md)
   The Apple Log Color space, which uses BT2020 as the color primaries, and an Apple-defined Log curve as a transfer function.
-- [AVCaptureColorSpace.appleLog2](avcapturecolorspace/applelog2.md)
-  The Apple Log 2 Color space, which uses Apple Gamut as the color primaries, and an Apple defined Log curve as a transfer function. When you set this as the active color space on an [`AVCaptureDevice`](avcapturedevice.md), any [`AVCapturePhotoOutput`](avcapturephotooutput.md) or [`AVCaptureStillImageOutput`](avcapturestillimageoutput.md) connected to the same [`AVCaptureDevice`](avcapturedevice.md) is made inactive (its [`isActive`](avcaptureconnection/isactive.md) property returns `false`).
+- [AVCaptureColorSpace.appleLog2](./avcapturecolorspace/applelog2.md)
+  The Apple Log 2 Color space, which uses Apple Gamut as the color primaries, and an Apple defined Log curve as a transfer function. When you set this as the active color space on an [`AVCaptureDevice`](./avcapturedevice.md), any [`AVCapturePhotoOutput`](./avcapturephotooutput.md) or [`AVCaptureStillImageOutput`](./avcapturestillimageoutput.md) connected to the same [`AVCaptureDevice`](./avcapturedevice.md) is made inactive (its [`isActive`](./avcaptureconnection/isactive.md) property returns `false`).
 ### Initializers
-- [init?(rawValue: Int)](avcapturecolorspace/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avcapturecolorspace/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var activeColorSpace: AVCaptureColorSpace](avcapturedevice/activecolorspace.md)
+### Configuring color space settings
+- [var activeColorSpace: AVCaptureColorSpace](./avcapturedevice/activecolorspace.md)
   The currently active color space for capture.
 
 

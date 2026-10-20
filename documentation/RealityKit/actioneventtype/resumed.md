@@ -1,7 +1,8 @@
 # resumed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event that takes place when the animation resumes after a pause.
 
@@ -21,17 +22,18 @@ static var resumed: ActionEventType { get }
 
 ## See Also
 
-- [static var started: ActionEventType](actioneventtype/started.md)
+### Event types
+- [static var started: ActionEventType](./started.md)
   An event that takes place when a new action event begins.
-- [static var ended: ActionEventType](actioneventtype/ended.md)
+- [static var ended: ActionEventType](./ended.md)
   An event that takes place when the action event exits its time interval.
-- [static var paused: ActionEventType](actioneventtype/paused.md)
+- [static var paused: ActionEventType](./paused.md)
   An event that takes place when the animation pauses.
-- [static var updated: ActionEventType](actioneventtype/updated.md)
+- [static var updated: ActionEventType](./updated.md)
   An event that takes place after an action event starts and is within its time interval.
-- [static var skipped: ActionEventType](actioneventtype/skipped.md)
+- [static var skipped: ActionEventType](./skipped.md)
   An event that takes place when the system misses an action event’s time interval.
-- [static var terminated: ActionEventType](actioneventtype/terminated.md)
+- [static var terminated: ActionEventType](./terminated.md)
   An event that takes place when the animation ends.
 
 

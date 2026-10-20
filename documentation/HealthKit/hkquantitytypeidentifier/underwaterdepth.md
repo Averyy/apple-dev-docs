@@ -1,7 +1,8 @@
 # underwaterDepth
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample that records a person’s depth underwater.
 
@@ -19,15 +20,20 @@ A quantity sample that records a person’s depth underwater.
 static let underwaterDepth: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierUnderwaterDepth;
+```
+
 #### Discussion
 
 Apple Watch Ultra automatically records these samples during dive sessions.
 
-Underwater depth samples use length units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). Sample data may be condensed and/or coalesced by HealthKit. For more information, see [`Accessing condensed workout samples`](accessing-condensed-workout-samples.md).
+Underwater depth samples use length units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). Sample data may be condensed and/or coalesced by HealthKit. For more information, see [Accessing condensed workout samples](../accessing-condensed-workout-samples.md).
 
 ## See Also
 
-- [static let waterTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/watertemperature.md)
+### Diving
+- [static let waterTemperature: HKQuantityTypeIdentifier](./watertemperature.md)
   A quantity sample that records the water temperature.
 
 

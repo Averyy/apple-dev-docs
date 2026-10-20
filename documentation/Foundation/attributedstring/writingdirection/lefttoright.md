@@ -1,7 +1,8 @@
 # AttributedString.WritingDirection.leftToRight
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A left-to-right writing direction in horizontal script.
 

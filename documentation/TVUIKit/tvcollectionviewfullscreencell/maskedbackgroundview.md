@@ -1,7 +1,8 @@
 # maskedBackgroundView
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background view that performs the parallax effect.
 
@@ -14,13 +15,18 @@ The background view that performs the parallax effect.
 var maskedBackgroundView: UIView { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIView * maskedBackgroundView;
+```
+
 #### Discussion
 
 The `maskedBackgroundView` property returns the current cell’s background view. Modify properties of this view to customize the parallax effect. Generally, you should add an opaque image to the view.
 
 ## See Also
 
-- [var maskedContentView: UIView](tvcollectionviewfullscreencell/maskedcontentview.md)
+### Accessing Cell Views
+- [var maskedContentView: UIView](./maskedcontentview.md)
   The content view in focus.
 
 

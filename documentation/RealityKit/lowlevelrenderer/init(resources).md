@@ -1,7 +1,8 @@
 # init(resources:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a renderer using pre-compiled GPU resources.
 
@@ -19,7 +20,7 @@ init(resources: LowLevelRenderer.Resources) throws(LowLevelRendererError)
 
 #### Discussion
 
-> **Note**: An error if GPU buffer allocation fails.
+> **Throws**: An error if GPU buffer allocation fails.
 
 ## Parameters
 

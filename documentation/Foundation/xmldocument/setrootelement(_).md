@@ -1,7 +1,8 @@
 # setRootElement(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the root element of the receiver.
 
@@ -15,17 +16,22 @@ Set the root element of the receiver.
 func setRootElement(_ root: XMLElement)
 ```
 
+```objc
+- (void) setRootElement:(NSXMLElement *) root;
+```
+
 #### Discussion
 
 As a side effect, this method removes all other children, including `NSXMLNode` objects representing comments and processing-instructions.
 
 ## Parameters
 
-- `root`: An [`XMLNode`](xmlnode.md) object that is to be the root element.
+- `root`: An [`XMLNode`](../xmlnode.md) object that is to be the root element.
 
 ## See Also
 
-- [func rootElement() -> XMLElement?](xmldocument/rootelement.md)
+### Managing the Root Element
+- [func rootElement() -> XMLElement?](./rootelement%28%29.md)
   Returns the root element of the receiver.
 
 

@@ -1,17 +1,22 @@
 # objectClass
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object class to use when creating new objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var objectClass: AnyClass! { get set }
+```
+
+```objc
+@property (assign, null_resettable) Class objectClass;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ var objectClass: AnyClass! { get set }
 
 ## See Also
 
-- [var managedObjectContext: NSManagedObjectContext?](nsobjectcontroller/managedobjectcontext.md)
+### Related Documentation
+- [var managedObjectContext: NSManagedObjectContext?](./managedobjectcontext.md)
   The receiver’s managed object context.
-- [var entityName: String?](nsobjectcontroller/entityname.md)
+- [var entityName: String?](./entityname.md)
   The entity name used by the receiver to create new objects.
 
 

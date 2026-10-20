@@ -1,7 +1,8 @@
 # blockStart
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The starting block number of the operation.
 
@@ -10,13 +11,14 @@ The starting block number of the operation.
 
 ## Declaration
 
-```swift
+```c
 UInt64 blockStart;
 ```
 
 ## See Also
 
-- [blockCount](ioblockstoragedeviceextent/1568453-blockcount.md)
+### Fields
+- [blockCount](./api-1568453-blockcount.md)
   The integral number of blocks to be deleted.
 
 

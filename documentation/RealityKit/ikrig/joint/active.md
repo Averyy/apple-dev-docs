@@ -1,7 +1,8 @@
 # active
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value that sets whether the solver rotates the joint.
 

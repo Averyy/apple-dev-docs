@@ -1,7 +1,8 @@
 # GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.fade
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A grounding shadow behavior that fades when an entity is near physical objects.
 
@@ -19,7 +20,7 @@ case fade
 
 #### Discussion
 
-On iOS devices without LiDAR, the option is equivalent to [`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant`](groundingshadowcomponent/fadebehaviornearphysicalobjects-swift.enum/constant.md).
+On iOS devices without LiDAR, the option is equivalent to [`GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant`](./constant.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # replacingPortraitEffectsMatte(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a portrait effects matte by wrapping the replacement pixel buffer.
 
@@ -20,17 +21,22 @@ Returns a portrait effects matte by wrapping the replacement pixel buffer.
 func replacingPortraitEffectsMatte(with pixelBuffer: CVPixelBuffer) throws -> Self
 ```
 
+```objc
+- (instancetype) portraitEffectsMatteByReplacingPortraitEffectsMatteWithPixelBuffer:(CVPixelBufferRef) pixelBuffer error:(NSError **) outError;
+```
+
 ## Parameters
 
-- `pixelBuffer`: A pixel buffer containing a portrait effects matte image, represented as [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8) with [`kCVImageBufferColorPrimaries_ITU_R_709_2`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercolorprimaries_itu_r_709_2) color primaries and a [`kCVImageBufferTransferFunction_Linear`](https://developer.apple.com/documentation/corevideo/kcvimagebuffertransferfunction_linear) transfer function.
+- `pixelBuffer`: A pixel buffer containing a portrait effects matte image, represented as [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md) with [`kCVImageBufferColorPrimaries_ITU_R_709_2`](../../CoreVideo/kcvimagebuffercolorprimaries_itu_r_709_2.md) color primaries and a [`kCVImageBufferTransferFunction_Linear`](../../CoreVideo/kcvimagebuffertransferfunction_linear.md) transfer function.
 
 ## See Also
 
-- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+### Creating a Portrait Effects matte
+- [Configuring camera capture to collect a Portrait Effects matte](../configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
-- [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](avportraiteffectsmatte/init(fromdictionaryrepresentation:).md)
+- [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](./init%28fromdictionaryrepresentation%29.md)
   Initializes a portrait effects matte instance from auxiliary image information in an image file.
-- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avportraiteffectsmatte/applyingexiforientation(_:).md)
+- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](./applyingexiforientation%28_%29.md)
   Returns a derivative portrait effects matte after applying the specified Exif orientation.
 
 

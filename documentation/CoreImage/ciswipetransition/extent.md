@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The extent of the effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The extent of the effect.
 var extent: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect extent;
+```
+
 ## See Also
 
-- [var angle: Float](ciswipetransition/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the swipe.
-- [var color: CIColor](ciswipetransition/color.md)
+- [var color: CIColor](./color.md)
   The color of the swipe.
-- [var opacity: Float](ciswipetransition/opacity.md)
+- [var opacity: Float](./opacity.md)
   The opacity of the swipe.
-- [var width: Float](ciswipetransition/width.md)
+- [var width: Float](./width.md)
   The width of the swipe.
 
 

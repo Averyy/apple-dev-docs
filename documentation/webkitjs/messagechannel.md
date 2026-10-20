@@ -1,7 +1,8 @@
 # MessageChannel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface MessageChannel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [port1](messagechannel/1629318-port1.md)
-- [port2](messagechannel/1633280-port2.md)
+- [port1](./messagechannel/api-1629318-port1.md)
+- [port2](./messagechannel/api-1633280-port2.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CInterop
 
 **Framework**: System  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A namespace for C and platform types
 
@@ -23,22 +24,22 @@ enum CInterop
 ## Topics
 
 ### Type Aliases
-- [typealias Char](cinterop/char.md)
+- [typealias Char](./cinterop/char.md)
   The C `char` type
-- [typealias DeviceID](cinterop/deviceid.md)
-- [typealias FileFlags](cinterop/fileflags.md)
-- [typealias GroupID](cinterop/groupid.md)
-- [typealias Inode](cinterop/inode.md)
-- [typealias Mode](cinterop/mode.md)
-- [typealias PlatformChar](cinterop/platformchar.md)
+- [typealias DeviceID](./cinterop/deviceid.md)
+- [typealias FileFlags](./cinterop/fileflags.md)
+- [typealias GroupID](./cinterop/groupid.md)
+- [typealias Inode](./cinterop/inode.md)
+- [typealias Mode](./cinterop/mode.md)
+- [typealias PlatformChar](./cinterop/platformchar.md)
   The platform’s preferred character type. On Unix, this is an 8-bit C `char` (which may be signed or unsigned, depending on platform). On Windows, this is `UInt16` (a “wide” character).
-- [typealias PlatformUnicodeEncoding](cinterop/platformunicodeencoding.md)
+- [typealias PlatformUnicodeEncoding](./cinterop/platformunicodeencoding.md)
   The platform’s preferred Unicode encoding. On Unix this is UTF-8 and on Windows it is UTF-16. Native strings may contain invalid Unicode, which will be handled by either error-correction or failing, depending on API.
-- [typealias Stat](cinterop/stat.md)
+- [typealias Stat](./cinterop/stat.md)
   The C `stat` struct.
-- [typealias UserID](cinterop/userid.md)
+- [typealias UserID](./cinterop/userid.md)
 ### Type Methods
-- [static func stat(UnsafePointer<CChar>, inout CInterop.Stat) -> Int32](cinterop/stat(_:_:).md)
+- [static func stat(UnsafePointer<CChar>, inout CInterop.Stat) -> Int32](./cinterop/stat%28_,_%29.md)
   Calls the C `stat()` function.
 
 

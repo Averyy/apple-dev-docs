@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the `UInt` instance.
 

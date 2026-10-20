@@ -1,7 +1,8 @@
 # AccessoryControlDevice.Error.invalidRequest
 
 **Framework**: AudioAccessoryKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating an invalid request.
 
@@ -16,11 +17,12 @@ case invalidRequest
 
 ## See Also
 
-- [AccessoryControlDevice.Error.accessoryNotCapable](accessorycontroldevice/error/accessorynotcapable.md)
+### Error cases
+- [AccessoryControlDevice.Error.accessoryNotCapable](./accessorynotcapable.md)
   An error indicating the accessory doesn’t support the requested capability.
-- [AccessoryControlDevice.Error.invalidated](accessorycontroldevice/error/invalidated.md)
+- [AccessoryControlDevice.Error.invalidated](./invalidated.md)
   An error indicating a configuration that the system has invalidated.
-- [AccessoryControlDevice.Error.unknown](accessorycontroldevice/error/unknown.md)
+- [AccessoryControlDevice.Error.unknown](./unknown.md)
   An error indicating an unknown error.
 
 

@@ -1,7 +1,8 @@
 # MLStyleTransfer.DataSource.images(styleImage:contentDirectory:processingOption:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The locations of a style-image file and content-image directory in the file system.
 

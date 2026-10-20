@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory’s name, suitable for displaying to someone using your app.
 
@@ -15,9 +16,13 @@ The accessory’s name, suitable for displaying to someone using your app.
 var displayName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * displayName;
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 
 ---

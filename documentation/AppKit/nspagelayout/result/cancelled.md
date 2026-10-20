@@ -1,7 +1,8 @@
 # NSPageLayout.Result.cancelled
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 14.0+
@@ -12,10 +13,15 @@
 case cancelled
 ```
 
+```c
+NSPageLayoutResultCancelled
+```
+
 ## See Also
 
-- [NSPageLayout.Result.changed](nspagelayout/result/changed.md)
-- [NSPageLayout.Result.changed](nspagelayout/result/changed.md)
+### Constants
+- [NSPageLayout.Result.changed](./changed.md)
+- [NSPageLayout.Result.changed](./changed.md)
 
 
 ---

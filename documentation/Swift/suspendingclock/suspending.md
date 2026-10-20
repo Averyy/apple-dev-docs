@@ -1,7 +1,8 @@
 # suspending
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A clock that measures time that always increments but stops incrementing while the system is asleep.
 
@@ -19,6 +20,8 @@ A clock that measures time that always increments but stops incrementing while t
 ```swift
 static var suspending: SuspendingClock { get }
 ```
+
+Available when `Self` is `SuspendingClock`.
 
 #### Discussion
 

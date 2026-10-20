@@ -1,7 +1,8 @@
 # value(_:_:unit:calendar:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 static func value(_ labelKey: LocalizedStringKey, _ date: KeyPath<DataElement, DataValue>, unit: Calendar.Component, calendar: Calendar? = nil) -> PlottableProjection<DataElement, DataValue>
 ```
+
+Available when `DataValue` conforms to `Plottable` and `DataValue.PrimitivePlottable` is `Date`.
 
 
 ---

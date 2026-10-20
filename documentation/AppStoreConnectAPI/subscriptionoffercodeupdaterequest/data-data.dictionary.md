@@ -1,7 +1,8 @@
 # SubscriptionOfferCodeUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription offer code update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a subscription offer code update request.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodeUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCodeUpdateRequest.Data.Attributes](subscriptionoffercodeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionOfferCodeUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription offer code update request resource.
 
 ## Properties
 
 - `attributes` (SubscriptionOfferCodeUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionOfferCodes`
 
 
 ---

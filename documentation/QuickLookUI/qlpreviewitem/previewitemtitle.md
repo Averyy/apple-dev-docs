@@ -1,7 +1,8 @@
 # previewItemTitle
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title to display for the preview item.
 
@@ -14,15 +15,20 @@ The title to display for the preview item.
 optional var previewItemTitle: String! { get }
 ```
 
+```objc
+@property (readonly) NSString * previewItemTitle;
+```
+
 #### Discussion
 
 If you don’t implement a getter method for this property, or if your method returns `nil`, Quick Look examines the URL or content of the previewed item to determine an appropriate title. Return a `non-nil` value for this property to provide a custom title.
 
 ## See Also
 
-- [var previewItemDisplayState: Any!](qlpreviewitem/previewitemdisplaystate.md)
+### Instance Properties
+- [var previewItemDisplayState: Any!](./previewitemdisplaystate.md)
   The display state for the preview item.
-- [var previewItemURL: URL!](qlpreviewitem/previewitemurl.md)
+- [var previewItemURL: URL!](./previewitemurl.md)
   The URL of the item to preview.
 
 

@@ -1,7 +1,8 @@
 # init(attributedTitle:categoryOrder:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a categorical data axis with the specified attributed title and an array of categories in the specified order.
 
@@ -20,9 +21,14 @@ Creates a categorical data axis with the specified attributed title and an array
 init(attributedTitle: NSAttributedString, categoryOrder: [String])
 ```
 
+```objc
+- (instancetype) initWithAttributedTitle:(NSAttributedString *) attributedTitle categoryOrder:(NSArray<NSString *> *) categoryOrder;
+```
+
 ## See Also
 
-- [init(title: String, categoryOrder: [String])](axcategoricaldataaxisdescriptor/init(title:categoryorder:).md)
+### Creating a categorical data axis
+- [init(title: String, categoryOrder: [String])](./init%28title,categoryorder%29.md)
   Creates a categorical data axis with the specified title and an array of categories in the specified order.
 
 

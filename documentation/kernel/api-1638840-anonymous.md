@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kState_Disabled_Flag](1638840-anonymous/kstate_disabled_flag.md)
-- [kState_Mask](1638840-anonymous/kstate_mask.md)
-- [kState_On](1638840-anonymous/kstate_on.md)
-- [kState_On_ModifiersDown](1638840-anonymous/kstate_on_modifiersdown.md)
-- [kState_ShiftActivates_Flag](1638840-anonymous/kstate_shiftactivates_flag.md)
+- [kState_Disabled_Flag](./api-1638840-anonymous/kstate_disabled_flag.md)
+- [kState_Mask](./api-1638840-anonymous/kstate_mask.md)
+- [kState_On](./api-1638840-anonymous/kstate_on.md)
+- [kState_On_ModifiersDown](./api-1638840-anonymous/kstate_on_modifiersdown.md)
+- [kState_ShiftActivates_Flag](./api-1638840-anonymous/kstate_shiftactivates_flag.md)
 
 
 ---

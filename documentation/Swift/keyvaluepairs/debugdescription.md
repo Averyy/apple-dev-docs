@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the contents of the dictionary, suitable for debugging.
 

@@ -1,18 +1,19 @@
 # colorGrading
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A texture for applying color grading effects to the entire rendered scene.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,31 +21,36 @@ A texture for applying color grading effects to the entire rendered scene.
 var colorGrading: SCNMaterialProperty { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SCNMaterialProperty * colorGrading;
+```
+
 #### Discussion
 
-The [`contents`](scnmaterialproperty/contents.md) value for this material property must be a 3D color lookup table, or a 2D texture image that represents such a table arranged in a horizontal strip.
+The [`contents`](../scnmaterialproperty/contents.md) value for this material property must be a 3D color lookup table, or a 2D texture image that represents such a table arranged in a horizontal strip.
 
-A lookup table is a cube of color values: the red, green, and blue components of an input color map to the x, y, and z coordinates of a location in that cube, and at that location in the cube is a corresponding output color. You can provide data in this cubic format as a Metal texture with the [`MTLTextureType.type3D`](https://developer.apple.com/documentation/metal/mtltexturetype/type3d) texture type.
+A lookup table is a cube of color values: the red, green, and blue components of an input color map to the x, y, and z coordinates of a location in that cube, and at that location in the cube is a corresponding output color. You can provide data in this cubic format as a Metal texture with the [`MTLTextureType.type3D`](../../Metal/mtltexturetype/type3d.md) texture type.
 
-The 2D representation of a 3D color cube is an arrangement of slices: for example, a 16 x 16 x 16 color cube becomes a horizontal strip of 16 squares, each 16 x 16 pixels (that is, a 256 x 16 image). Each square contains a gradation of red and green components, and together the 16 squares form a gradation for the blue component. To provide a 2D representation of a color cube, set this material property’s [`contents`](scnmaterialproperty/contents.md) value to an image.
+The 2D representation of a 3D color cube is an arrangement of slices: for example, a 16 x 16 x 16 color cube becomes a horizontal strip of 16 squares, each 16 x 16 pixels (that is, a 256 x 16 image). Each square contains a gradation of red and green components, and together the 16 squares form a gradation for the blue component. To provide a 2D representation of a color cube, set this material property’s [`contents`](../scnmaterialproperty/contents.md) value to an image.
 
 By using a color table, you can easily create custom color effects that apply to an entire rendered scene:
 
-1. Create a basic color table image such as [`Figure 1`](scncamera/1644114-colorgrading#1965935.md), where the color value for each R, G, and B coordinate in the cube is the corresponding RGB color.
+1. Create a basic color table image such as [Figure 1](./api-1644114-colorgrading.md#1965935), where the color value for each R, G, and B coordinate in the cube is the corresponding RGB color.
 
-![None](/images/com.apple.scenekit/media-1965935.png) 2. Use an image editor to create the color effect you want using some other image—such as a screenshot of your game. Apply only effects that affect pixel colors without modifying pixel positions. (For example, you can use hue/saturation, color curves, or color matrix filters, but not blur or distort filters.)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965935.png) 2. Use an image editor to create the color effect you want using some other image—such as a screenshot of your game. Apply only effects that affect pixel colors without modifying pixel positions. (For example, you can use hue/saturation, color curves, or color matrix filters, but not blur or distort filters.)
 
-![None](/images/com.apple.scenekit/media-1965936@2x.png) 3. Apply the same color effect you created in step 2 to your basic color table image. You can even perform these steps together: paste the basic color table into your game screenshot, apply an effect to the combined picture, then crop the picture to just the modified color table. [`Figure 2`](scncamera/1644114-colorgrading#1965936.md) shows an example effect. 4. Assign your customized color table image (such as the example in [`Figure 3`](scncamera/1644114-colorgrading#1965937.md)) to this property. When rendering, SceneKit looks up the RGB values for each pixel in the rendered scene, and displays the corresponding color values from the color table.
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965936@2x.png) 3. Apply the same color effect you created in step 2 to your basic color table image. You can even perform these steps together: paste the basic color table into your game screenshot, apply an effect to the combined picture, then crop the picture to just the modified color table. [Figure 2](./api-1644114-colorgrading.md#1965936) shows an example effect. 4. Assign your customized color table image (such as the example in [Figure 3](./api-1644114-colorgrading.md#1965937)) to this property. When rendering, SceneKit looks up the RGB values for each pixel in the rendered scene, and displays the corresponding color values from the color table.
 
-![None](/images/com.apple.scenekit/media-1965937.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965937.png)
 
-To enable this behavior, you must first enable the [`wantsHDR`](scncamera/wantshdr.md) setting.
+To enable this behavior, you must first enable the [`wantsHDR`](./wantshdr.md) setting.
 
 ## See Also
 
-- [var contrast: CGFloat](scncamera/contrast.md)
+### Adjusting Rendered Colors
+- [var contrast: CGFloat](./contrast.md)
   An adjustment factor to apply to the overall visual contrast of the rendered scene.
-- [var saturation: CGFloat](scncamera/saturation.md)
+- [var saturation: CGFloat](./saturation.md)
   An adjustment factor to apply to the overall color saturation of the rendered scene.
 
 

@@ -1,7 +1,8 @@
 # init(horizontal:vertical:depth:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an `EdgeInsets3D` value with values provided for each axis.
 
@@ -23,7 +24,8 @@ init(horizontal: CGFloat = 0, vertical: CGFloat = 0, depth: CGFloat = 0)
 
 ## See Also
 
-- [init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat, front: CGFloat, back: CGFloat)](edgeinsets3d/init(top:leading:bottom:trailing:front:back:).md)
+### Creating an edge inset
+- [init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat, front: CGFloat, back: CGFloat)](./init%28top,leading,bottom,trailing,front,back%29.md)
   Creates an `EdgeInsets3D` value with values provided for each face.
 
 

@@ -1,7 +1,8 @@
 # NSStringFromCPJunctionType(_:)
 
 **Framework**: CarPlay  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.4+
@@ -12,6 +13,10 @@
 
 ```swift
 func NSStringFromCPJunctionType(_ junctionType: CPJunctionType) -> String!
+```
+
+```c
+NSString *NSStringFromCPJunctionType(CPJunctionType junctionType);
 ```
 
 

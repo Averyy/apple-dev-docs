@@ -1,7 +1,8 @@
 # placeholderAttributedString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the value of the placeholder attributed string.
 
@@ -15,6 +16,10 @@ Sets the value of the placeholder attributed string.
 var placeholderAttributedString: NSAttributedString? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSAttributedString * placeholderAttributedString;
+```
+
 #### Discussion
 
 If the `NSPathCell` object contains no `NSPathComponentCell` objects, the placeholder attributed string is drawn in their place, if it is not `nil`. If the placeholder attributed string is `nil`, the (non-attributed) placeholder string is drawn with default attributes, if it is not `nil`.
@@ -25,9 +30,10 @@ If the `NSPathCell` object contains no `NSPathComponentCell` objects, the placeh
 
 ## See Also
 
-- [var placeholderString: String?](nspathcell/placeholderstring.md)
+### Setting Cell Appearance
+- [var placeholderString: String?](./placeholderstring.md)
   Returns the placeholder string.
-- [var backgroundColor: NSColor?](nspathcell/backgroundcolor.md)
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   Returns the current background color of the receiver.
 
 

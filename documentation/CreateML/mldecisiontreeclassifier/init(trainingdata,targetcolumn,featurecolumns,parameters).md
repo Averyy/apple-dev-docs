@@ -1,7 +1,8 @@
 # init(trainingData:targetColumn:featureColumns:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a decision tree classifier.
 
@@ -19,20 +20,27 @@ Creates a decision tree classifier.
 init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil, parameters: MLDecisionTreeClassifier.ModelParameters = ModelParameters(validation: .split(strategy: .automatic))) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLDecisionTreeClassifier.ModelParameters = ModelParameters(validationData: nil)) throws
+```
+
 ## Parameters
 
 - `trainingData`: The training data
 - `targetColumn`: Name of the column containing the class labels
 - `featureColumns`: Names of the columns containing feature values. If `nil` all columns, other than the target column, will be used as feature values.
-- `parameters`: Model training parameters. See [`MLDecisionTreeClassifier.ModelParameters`](mldecisiontreeclassifier/modelparameters-swift.struct.md) for the defaults.
+- `parameters`: Model training parameters. See [`MLDecisionTreeClassifier.ModelParameters`](./modelparameters-swift.struct.md) for the defaults.
 
 ## See Also
 
-- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mldecisiontreeclassifier/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+### Training a decision tree classifier asynchronously
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./maketrainingsession%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Creates or restores a training session.
-- [static func resume(MLTrainingSession<MLDecisionTreeClassifier>) throws -> MLJob<MLDecisionTreeClassifier>](mldecisiontreeclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLDecisionTreeClassifier>) throws -> MLJob<MLDecisionTreeClassifier>](./resume%28_%29.md)
   Resumes a training session from the last checkpoint if available.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLDecisionTreeClassifier>](mldecisiontreeclassifier/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLDecisionTreeClassifier>](./restoretrainingsession%28sessionparameters%29.md)
   Restores an existing training session.
 
 

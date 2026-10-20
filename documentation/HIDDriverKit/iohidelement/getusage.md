@@ -1,25 +1,27 @@
 # getUsage
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getUsage();
 ```
 
 #### Return Value
 
-Returns the element’s usage. Usages are defined in [`HID Usage Tables`](hid-usage-tables.md).
+Returns the element’s usage. Usages are defined in [HID Usage Tables](../hid-usage-tables.md).
 
 ## See Also
 
-- [getUsagePage](iohidelement/getusagepage.md)
+### Getting an Element’s Usage Information
+- [getUsagePage](./getusagepage.md)
 
 
 ---

@@ -1,18 +1,21 @@
 # compositeTrait
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The font is in Composite Font Reference format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
+
+> **Deprecated**: Use [`traitComposite`](./traitcomposite.md).
 
 ## Declaration
 
@@ -20,25 +23,30 @@ The font is in Composite Font Reference format.
 static var compositeTrait: CTFontSymbolicTraits { get }
 ```
 
+```c
+kCTFontCompositeTrait
+```
+
 ## See Also
 
-- [static var italicTrait: CTFontSymbolicTraits](ctfontsymbolictraits/italictrait.md)
+### Deprecated Constants
+- [static var italicTrait: CTFontSymbolicTraits](./italictrait.md)
   The font typestyle is italic.
-- [static var boldTrait: CTFontSymbolicTraits](ctfontsymbolictraits/boldtrait.md)
+- [static var boldTrait: CTFontSymbolicTraits](./boldtrait.md)
   The font typestyle is boldface.
-- [static var expandedTrait: CTFontSymbolicTraits](ctfontsymbolictraits/expandedtrait.md)
+- [static var expandedTrait: CTFontSymbolicTraits](./expandedtrait.md)
   The font typestyle is expanded.
-- [static var condensedTrait: CTFontSymbolicTraits](ctfontsymbolictraits/condensedtrait.md)
+- [static var condensedTrait: CTFontSymbolicTraits](./condensedtrait.md)
   The font typestyle is condensed.
-- [static var monoSpaceTrait: CTFontSymbolicTraits](ctfontsymbolictraits/monospacetrait.md)
+- [static var monoSpaceTrait: CTFontSymbolicTraits](./monospacetrait.md)
   The font uses fixed-pitch glyphs if available.
-- [static var verticalTrait: CTFontSymbolicTraits](ctfontsymbolictraits/verticaltrait.md)
+- [static var verticalTrait: CTFontSymbolicTraits](./verticaltrait.md)
   The font uses vertical glyph variants and metrics.
-- [static var uiOptimizedTrait: CTFontSymbolicTraits](ctfontsymbolictraits/uioptimizedtrait.md)
+- [static var uiOptimizedTrait: CTFontSymbolicTraits](./uioptimizedtrait.md)
   The font synthesizes appropriate attributes for user interface rendering, such as control titles, if necessary.
-- [static var colorGlyphsTrait: CTFontSymbolicTraits](ctfontsymbolictraits/colorglyphstrait.md)
+- [static var colorGlyphsTrait: CTFontSymbolicTraits](./colorglyphstrait.md)
   The font contains color glyphs.
-- [static var classMaskTrait: CTFontSymbolicTraits](ctfontsymbolictraits/classmasktrait.md)
+- [static var classMaskTrait: CTFontSymbolicTraits](./classmasktrait.md)
   Mask for the font class.
 
 

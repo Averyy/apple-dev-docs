@@ -1,7 +1,8 @@
 # iconOnly
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The icon only label style. The toolbar contents will only display the control
 

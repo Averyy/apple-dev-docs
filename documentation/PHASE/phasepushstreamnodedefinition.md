@@ -1,7 +1,8 @@
 # PHASEPushStreamNodeDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A node that plays a sequence of audio buffers.
 
@@ -19,51 +20,56 @@ A node that plays a sequence of audio buffers.
 class PHASEPushStreamNodeDefinition
 ```
 
+```objc
+@interface PHASEPushStreamNodeDefinition : PHASEGeneratorNodeDefinition
+```
+
 #### Overview
 
 Use this node to create sound events for a piecemeal audio source, for example, an audio stream that your app accesses over the network or loads from a memory-mapped file on disk.
 
-> **Note**:  To create a sound event for fully-loaded audio data instead, use [`PHASESamplerNodeDefinition`](phasesamplernodedefinition.md).
+> **Note**:  To create a sound event for fully-loaded audio data instead, use [`PHASESamplerNodeDefinition`](./phasesamplernodedefinition.md).
 
 ## Topics
 
 ### Creating a Node
-- [init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)](phasepushstreamnodedefinition/init(mixerdefinition:format:).md)
+- [init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)](./phasepushstreamnodedefinition/init%28mixerdefinition,format%29.md)
   Creates a node definition for audio streams.
-- [convenience init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat, identifier: String)](phasepushstreamnodedefinition/init(mixerdefinition:format:identifier:).md)
+- [convenience init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat, identifier: String)](./phasepushstreamnodedefinition/init%28mixerdefinition,format,identifier%29.md)
   Creates a named node definition for audio streams.
 ### Observing the Format
-- [var format: AVAudioFormat](phasepushstreamnodedefinition/format.md)
+- [var format: AVAudioFormat](./phasepushstreamnodedefinition/format.md)
   The format of the audio stream data.
 ### Shaping Loudness
-- [var normalize: Bool](phasepushstreamnodedefinition/normalize.md)
+- [var normalize: Bool](./phasepushstreamnodedefinition/normalize.md)
   An option that resizes loudness of the audio stream for consistency.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEGeneratorNodeDefinition](phasegeneratornodedefinition.md)
+- [PHASEGeneratorNodeDefinition](./phasegeneratornodedefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESamplerNodeDefinition](phasesamplernodedefinition.md)
+### Audio-Providing Nodes
+- [class PHASESamplerNodeDefinition](./phasesamplernodedefinition.md)
   A node that plays complete audio data.
-- [enum PHASEPlaybackMode](phaseplaybackmode.md)
+- [enum PHASEPlaybackMode](./phaseplaybackmode.md)
   Loop options for audio playback.
-- [class PHASEPushStreamNode](phasepushstreamnode.md)
+- [class PHASEPushStreamNode](./phasepushstreamnode.md)
   An audio stream you manage to provide a sound buffer data.
-- [struct PHASEPushStreamBufferOptions](phasepushstreambufferoptions.md)
+- [struct PHASEPushStreamBufferOptions](./phasepushstreambufferoptions.md)
   Options that inform PHASE of an audio-stream buffer’s playback priority.
-- [enum PHASECalibrationMode](phasecalibrationmode.md)
+- [enum PHASECalibrationMode](./phasecalibrationmode.md)
   Calibration options for sound pressure level.
-- [class PHASEGeneratorNodeDefinition](phasegeneratornodedefinition.md)
+- [class PHASEGeneratorNodeDefinition](./phasegeneratornodedefinition.md)
   A base class for nodes that provide audio data to generate sound.
 
 

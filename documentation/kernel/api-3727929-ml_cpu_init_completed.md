@@ -1,14 +1,15 @@
 # ml_cpu_init_completed
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 void ml_cpu_init_completed(void);
 ```
 

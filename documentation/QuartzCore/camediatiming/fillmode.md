@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Determines if the receiver’s presentation is frozen or removed once its active duration has completed.
@@ -20,13 +21,18 @@ Determines if the receiver’s presentation is frozen or removed once its active
 var fillMode: CAMediaTimingFillMode { get set }
 ```
 
+```objc
+@property (copy) CAMediaTimingFillMode fillMode;
+```
+
 #### Discussion
 
-The possible values are described in [`Fill Modes`](fill-modes.md). The default is [`removed`](camediatimingfillmode/removed.md).
+The possible values are described in [Fill Modes](../fill-modes.md). The default is [`removed`](../camediatimingfillmode/removed.md).
 
 ## See Also
 
-- [var autoreverses: Bool](camediatiming/autoreverses.md)
+### Playback Modes
+- [var autoreverses: Bool](./autoreverses.md)
   Determines if the receiver plays in the reverse upon completion.
 
 

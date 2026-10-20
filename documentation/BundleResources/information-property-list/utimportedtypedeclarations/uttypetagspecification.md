@@ -1,7 +1,8 @@
 # UTTypeTagSpecification
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A dictionary defining one or more equivalent type identifiers.
 
@@ -11,25 +12,27 @@ A dictionary defining one or more equivalent type identifiers.
 - macOS 10.5+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `UTTypeTagSpecification` (Equivalent Types)
+- **Type**: dictionary
 
 ## See Also
 
-- [UTTypeConformsTo](information-property-list/utimportedtypedeclarations/uttypeconformsto.md)
+### Property List Keys
+- [UTTypeConformsTo](./uttypeconformsto.md)
   The Uniform Type Identifier types that this type conforms to.
-- [UTTypeDescription](information-property-list/utimportedtypedeclarations/uttypedescription.md)
+- [UTTypeDescription](./uttypedescription.md)
   A description for this type.
-- [UTTypeIconFile](information-property-list/utimportedtypedeclarations/uttypeiconfile.md)
+- [UTTypeIconFile](./uttypeiconfile.md)
   The bundle icon resource to associate with this type.
-- [UTTypeIconFiles](information-property-list/utimportedtypedeclarations/uttypeiconfiles.md)
+- [UTTypeIconFiles](./uttypeiconfiles.md)
   One or more bundle icon resources to associate with this type.
-- [UTTypeIcons](information-property-list/utimportedtypedeclarations/uttypeicons.md)
+- [UTTypeIcons](./uttypeicons.md)
   A dictionary that describes how the system represents this type as an icon or symbol.
-- [UTTypeIdentifier](information-property-list/utimportedtypedeclarations/uttypeidentifier.md)
+- [UTTypeIdentifier](./uttypeidentifier.md)
   The Uniform Type Identifier to assign to this type.
-- [UTTypeReferenceURL](information-property-list/utimportedtypedeclarations/uttypereferenceurl.md)
+- [UTTypeReferenceURL](./uttypereferenceurl.md)
   The webpage for a reference document that describes this type.
 
 

@@ -1,7 +1,8 @@
 # deviceDescriptorData
 
 **Framework**: Accessory Access  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the device descriptor data.
 
@@ -14,15 +15,20 @@ Returns the device descriptor data.
 var deviceDescriptorData: Data { get }
 ```
 
+```objc
+@property (readonly) NSData * deviceDescriptorData;
+```
+
 #### Discussion
 
-The underlying bytes can be cast to [`IOUSBDeviceDescriptor`](https://developer.apple.com/documentation/iokit/iousbdevicedescriptor).
+The underlying bytes can be cast to [`IOUSBDeviceDescriptor`](../../iokit/iousbdevicedescriptor.md).
 
 ## See Also
 
-- [var configurationDescriptorData: Data?](aausbaccessory/configurationdescriptordata.md)
+### Getting information about a USB accessory
+- [var configurationDescriptorData: Data?](./configurationdescriptordata.md)
   Returns the currently selected configuration descriptor data.
-- [var registryID: UInt64](aausbaccessory/registryid.md)
+- [var registryID: UInt64](./registryid.md)
   Returns the IORegistry ID for the USB accessory.
 
 

@@ -1,6 +1,7 @@
 # Choosing a Network Debugging Tool
 
-**Framework**: Network
+**Framework**: Network  
+**Role**: Article
 
 Decide which tool works best for your network debugging problem.
 
@@ -12,23 +13,24 @@ A key goal of these tools is to divide the problem in two. For example, if you�
 
 The best tool to use depends on the APIs you’re using and the type of problems you’ve encountered:
 
-- If you’re working at the HTTP level, you may find that your request makes it to the server and then the server sends you a response indicating that it failed in some way (for example, you get an HTTP response with a status code of *500 Internal Server Error*). See [`Debugging HTTP Server-Side Errors`](debugging-http-server-side-errors.md) and [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/foundation/analyzing-http-traffic-with-instruments).
-- If you’re using [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession), or one of the subsystems that uses [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) internally, you can enable CFNetwork diagnostic logging to get a detailed view of how your requests were processed. See [`Debugging HTTPS Problems with CFNetwork Diagnostic Logging`](debugging-https-problems-with-cfnetwork-diagnostic-logging.md).
-- If you want a low-level view of the traffic exchanged over the network, you need a packet trace. See [`Recording a Packet Trace`](recording-a-packet-trace.md).
-- If you’re working in Safari or one of the various web views (like [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview)), you can use the Web Inspector to view the network requests issued by the page. See [`Web Development Tools`](https://developer.apple.comhttps://developer.apple.com/safari/tools/).
-- Some of the most popular network debugging tools, like HTTP debugging proxies, are third-party products. See [`Taking Advantage of Third-Party Network Debugging Tools`](taking-advantage-of-third-party-network-debugging-tools.md).
+- If you’re working at the HTTP level, you may find that your request makes it to the server and then the server sends you a response indicating that it failed in some way (for example, you get an HTTP response with a status code of *500 Internal Server Error*). See [Debugging HTTP Server-Side Errors](./debugging-http-server-side-errors.md) and [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md).
+- If you’re using [`URLSession`](../Foundation/urlsession.md), or one of the subsystems that uses [`URLSession`](../Foundation/urlsession.md) internally, you can enable CFNetwork diagnostic logging to get a detailed view of how your requests were processed. See [Debugging HTTPS Problems with CFNetwork Diagnostic Logging](./debugging-https-problems-with-cfnetwork-diagnostic-logging.md).
+- If you want a low-level view of the traffic exchanged over the network, you need a packet trace. See [Recording a Packet Trace](./recording-a-packet-trace.md).
+- If you’re working in Safari or one of the various web views (like [`WKWebView`](../WebKit/wkwebview.md)), you can use the Web Inspector to view the network requests issued by the page. See [Web Development Tools](https://developer.apple.com/safari/tools/).
+- Some of the most popular network debugging tools, like HTTP debugging proxies, are third-party products. See [Taking Advantage of Third-Party Network Debugging Tools](./taking-advantage-of-third-party-network-debugging-tools.md).
 
 ## See Also
 
-- [Debugging HTTP Server-Side Errors](debugging-http-server-side-errors.md)
+### Network Debugging
+- [Debugging HTTP Server-Side Errors](./debugging-http-server-side-errors.md)
   Understand HTTP server-side errors and how to debug them.
-- [Debugging HTTPS Problems with CFNetwork Diagnostic Logging](debugging-https-problems-with-cfnetwork-diagnostic-logging.md)
+- [Debugging HTTPS Problems with CFNetwork Diagnostic Logging](./debugging-https-problems-with-cfnetwork-diagnostic-logging.md)
   Use CFNetwork diagnostic logging to investigate HTTP and HTTPS problems.
-- [Recording a Packet Trace](recording-a-packet-trace.md)
+- [Recording a Packet Trace](./recording-a-packet-trace.md)
   Learn how to record a low-level trace of network traffic.
-- [Taking Advantage of Third-Party Network Debugging Tools](taking-advantage-of-third-party-network-debugging-tools.md)
+- [Taking Advantage of Third-Party Network Debugging Tools](./taking-advantage-of-third-party-network-debugging-tools.md)
   Learn about the available third-party network debugging tools.
-- [Testing and Debugging L4S in Your App](testing-and-debugging-l4s-in-your-app.md)
+- [Testing and Debugging L4S in Your App](./testing-and-debugging-l4s-in-your-app.md)
   Learn how to verify your app on an L4S-capable host and network to improve your app’s responsiveness.
 
 

@@ -1,7 +1,8 @@
 # JSValueIsInstanceOfConstructor(_:_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tests whether a JavaScript value is an object that the specified constructor creates.
 
@@ -19,22 +20,27 @@ Tests whether a JavaScript value is an object that the specified constructor cre
 func JSValueIsInstanceOfConstructor(_ ctx: JSContextRef!, _ value: JSValueRef!, _ constructor: JSObjectRef!, _ exception: UnsafeMutablePointer<JSValueRef?>!) -> Bool
 ```
 
+```c
+bool JSValueIsInstanceOfConstructor(JSContextRef ctx, JSValueRef value, JSObjectRef constructor, JSValueRef*exception);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value is an object that `constructor` creates, according to the JavaScript `instanceof` operator; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the value is an object that `constructor` creates, according to the JavaScript `instanceof` operator; otherwise, [`false`](../Swift/false.md).
 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The [`JSValueRef`](jsvalueref.md) to test.
+- `value`: The [`JSValueRef`](./jsvalueref.md) to test.
 - `constructor`: The constructor to test against.
-- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
+- `exception`: A pointer to a [`JSValueRef`](./jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 
-- [func JSValueIsEqual(JSContextRef!, JSValueRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> Bool](jsvalueisequal(_:_:_:_:).md)
+### Comparing Values
+- [func JSValueIsEqual(JSContextRef!, JSValueRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> Bool](./jsvalueisequal%28_,_,_,_%29.md)
   Tests whether two JavaScript values are equal.
-- [func JSValueIsStrictEqual(JSContextRef!, JSValueRef!, JSValueRef!) -> Bool](jsvalueisstrictequal(_:_:_:).md)
+- [func JSValueIsStrictEqual(JSContextRef!, JSValueRef!, JSValueRef!) -> Bool](./jsvalueisstrictequal%28_,_,_%29.md)
   Tests whether two JavaScript values are strict equal.
 
 

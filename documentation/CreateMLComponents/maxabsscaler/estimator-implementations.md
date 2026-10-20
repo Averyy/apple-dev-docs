@@ -1,11 +1,12 @@
 # Estimator Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [MaxAbsScaler.Transformer](maxabsscaler/transformer.md)
+- [MaxAbsScaler.Transformer](./transformer.md)
   An transformer that scales the input values so that the maximum absolute value is 1.0.
 
 

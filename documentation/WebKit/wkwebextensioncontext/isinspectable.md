@@ -1,9 +1,10 @@
 # isInspectable
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Determines whether Web Inspector can inspect the [`WKWebView`](wkwebview.md) instances for this context.
+Determines whether Web Inspector can inspect the [`WKWebView`](../wkwebview.md) instances for this context.
 
 **Availability**:
 - iOS 18.4+
@@ -18,9 +19,13 @@ Determines whether Web Inspector can inspect the [`WKWebView`](wkwebview.md) ins
 var isInspectable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isInspectable) BOOL inspectable;
+```
+
 #### Discussion
 
-A context can control multiple [`WKWebView`](wkwebview.md) instances, from the background content, to the popover.
+A context can control multiple [`WKWebView`](../wkwebview.md) instances, from the background content, to the popover.
 
 You should set this to `YES` when needed for debugging purposes. The default value is `NO`.
 

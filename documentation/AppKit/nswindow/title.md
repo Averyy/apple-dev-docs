@@ -1,12 +1,13 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that appears in the title bar of the window or the path to the represented file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,31 @@ The string that appears in the title bar of the window or the path to the repres
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 #### Discussion
 
-If the title has been set using [`setTitleWithRepresentedFilename(_:)`](nswindow/settitlewithrepresentedfilename(_:).md), this property contains the file’s path. Setting this property also sets the title of the window’s miniaturized window.
+If the title has been set using [`setTitleWithRepresentedFilename(_:)`](./settitlewithrepresentedfilename%28_%29.md), this property contains the file’s path. Setting this property also sets the title of the window’s miniaturized window.
 
 > **Note**:  When you present a window as a sheet, the window never displays this title, regardless of its value.
 
 ## See Also
 
-- [var miniwindowTitle: String!](nswindow/miniwindowtitle.md)
+### Related Documentation
+- [var miniwindowTitle: String!](./miniwindowtitle.md)
   The title displayed in the window’s minimized window.
-- [var subtitle: String](nswindow/subtitle.md)
+### Managing Titles
+- [var subtitle: String](./subtitle.md)
   A secondary line of text that appears in the title bar of the window.
-- [var titleVisibility: NSWindow.TitleVisibility](nswindow/titlevisibility-swift.property.md)
+- [var titleVisibility: NSWindow.TitleVisibility](./titlevisibility-swift.property.md)
   A value that indicates the visibility of the window’s title and title bar buttons.
-- [func setTitleWithRepresentedFilename(String)](nswindow/settitlewithrepresentedfilename(_:).md)
+- [func setTitleWithRepresentedFilename(String)](./settitlewithrepresentedfilename%28_%29.md)
   Sets a given path as the window’s title, formatting it as a file-system path, and records this path as the window’s associated file.
-- [var representedFilename: String](nswindow/representedfilename.md)
+- [var representedFilename: String](./representedfilename.md)
   The path to the file of the window’s represented file.
-- [var representedURL: URL?](nswindow/representedurl.md)
+- [var representedURL: URL?](./representedurl.md)
   The URL of the file the window represents.
 
 

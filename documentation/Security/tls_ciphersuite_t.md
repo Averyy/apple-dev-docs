@@ -1,7 +1,8 @@
 # tls_ciphersuite_t
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The collection of valid ciphersuites.
 
@@ -20,50 +21,54 @@ The collection of valid ciphersuites.
 enum tls_ciphersuite_t
 ```
 
+```c
+enum tls_ciphersuite_t : uint16_t;
+```
+
 ## Topics
 
 ### AES
-- [tls_ciphersuite_t.AES_128_GCM_SHA256](tls_ciphersuite_t/aes_128_gcm_sha256.md)
-- [tls_ciphersuite_t.AES_256_GCM_SHA384](tls_ciphersuite_t/aes_256_gcm_sha384.md)
+- [tls_ciphersuite_t.AES_128_GCM_SHA256](./tls_ciphersuite_t/aes_128_gcm_sha256.md)
+- [tls_ciphersuite_t.AES_256_GCM_SHA384](./tls_ciphersuite_t/aes_256_gcm_sha384.md)
 ### Cha Cha Poly
-- [tls_ciphersuite_t.CHACHA20_POLY1305_SHA256](tls_ciphersuite_t/chacha20_poly1305_sha256.md)
+- [tls_ciphersuite_t.CHACHA20_POLY1305_SHA256](./tls_ciphersuite_t/chacha20_poly1305_sha256.md)
 ### Elliptic Curve
-- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA](tls_ciphersuite_t/ecdhe_ecdsa_with_3des_ede_cbc_sha.md)
-- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_128_CBC_SHA](tls_ciphersuite_t/ecdhe_ecdsa_with_aes_128_cbc_sha.md)
-- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_128_CBC_SHA256](tls_ciphersuite_t/ecdhe_ecdsa_with_aes_128_cbc_sha256.md)
-- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_128_GCM_SHA256](tls_ciphersuite_t/ecdhe_ecdsa_with_aes_128_gcm_sha256.md)
-- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_256_CBC_SHA](tls_ciphersuite_t/ecdhe_ecdsa_with_aes_256_cbc_sha.md)
-- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_256_CBC_SHA384](tls_ciphersuite_t/ecdhe_ecdsa_with_aes_256_cbc_sha384.md)
-- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_256_GCM_SHA384](tls_ciphersuite_t/ecdhe_ecdsa_with_aes_256_gcm_sha384.md)
-- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256](tls_ciphersuite_t/ecdhe_ecdsa_with_chacha20_poly1305_sha256.md)
-- [tls_ciphersuite_t.ECDHE_RSA_WITH_3DES_EDE_CBC_SHA](tls_ciphersuite_t/ecdhe_rsa_with_3des_ede_cbc_sha.md)
-- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_128_CBC_SHA](tls_ciphersuite_t/ecdhe_rsa_with_aes_128_cbc_sha.md)
-- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_128_CBC_SHA256](tls_ciphersuite_t/ecdhe_rsa_with_aes_128_cbc_sha256.md)
-- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_128_GCM_SHA256](tls_ciphersuite_t/ecdhe_rsa_with_aes_128_gcm_sha256.md)
-- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_256_CBC_SHA](tls_ciphersuite_t/ecdhe_rsa_with_aes_256_cbc_sha.md)
-- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_256_CBC_SHA384](tls_ciphersuite_t/ecdhe_rsa_with_aes_256_cbc_sha384.md)
-- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_256_GCM_SHA384](tls_ciphersuite_t/ecdhe_rsa_with_aes_256_gcm_sha384.md)
-- [tls_ciphersuite_t.ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256](tls_ciphersuite_t/ecdhe_rsa_with_chacha20_poly1305_sha256.md)
+- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA](./tls_ciphersuite_t/ecdhe_ecdsa_with_3des_ede_cbc_sha.md)
+- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_128_CBC_SHA](./tls_ciphersuite_t/ecdhe_ecdsa_with_aes_128_cbc_sha.md)
+- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_128_CBC_SHA256](./tls_ciphersuite_t/ecdhe_ecdsa_with_aes_128_cbc_sha256.md)
+- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_128_GCM_SHA256](./tls_ciphersuite_t/ecdhe_ecdsa_with_aes_128_gcm_sha256.md)
+- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_256_CBC_SHA](./tls_ciphersuite_t/ecdhe_ecdsa_with_aes_256_cbc_sha.md)
+- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_256_CBC_SHA384](./tls_ciphersuite_t/ecdhe_ecdsa_with_aes_256_cbc_sha384.md)
+- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_AES_256_GCM_SHA384](./tls_ciphersuite_t/ecdhe_ecdsa_with_aes_256_gcm_sha384.md)
+- [tls_ciphersuite_t.ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256](./tls_ciphersuite_t/ecdhe_ecdsa_with_chacha20_poly1305_sha256.md)
+- [tls_ciphersuite_t.ECDHE_RSA_WITH_3DES_EDE_CBC_SHA](./tls_ciphersuite_t/ecdhe_rsa_with_3des_ede_cbc_sha.md)
+- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_128_CBC_SHA](./tls_ciphersuite_t/ecdhe_rsa_with_aes_128_cbc_sha.md)
+- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_128_CBC_SHA256](./tls_ciphersuite_t/ecdhe_rsa_with_aes_128_cbc_sha256.md)
+- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_128_GCM_SHA256](./tls_ciphersuite_t/ecdhe_rsa_with_aes_128_gcm_sha256.md)
+- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_256_CBC_SHA](./tls_ciphersuite_t/ecdhe_rsa_with_aes_256_cbc_sha.md)
+- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_256_CBC_SHA384](./tls_ciphersuite_t/ecdhe_rsa_with_aes_256_cbc_sha384.md)
+- [tls_ciphersuite_t.ECDHE_RSA_WITH_AES_256_GCM_SHA384](./tls_ciphersuite_t/ecdhe_rsa_with_aes_256_gcm_sha384.md)
+- [tls_ciphersuite_t.ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256](./tls_ciphersuite_t/ecdhe_rsa_with_chacha20_poly1305_sha256.md)
 ### RSA
-- [tls_ciphersuite_t.RSA_WITH_3DES_EDE_CBC_SHA](tls_ciphersuite_t/rsa_with_3des_ede_cbc_sha.md)
-- [tls_ciphersuite_t.RSA_WITH_AES_128_CBC_SHA](tls_ciphersuite_t/rsa_with_aes_128_cbc_sha.md)
-- [tls_ciphersuite_t.RSA_WITH_AES_128_CBC_SHA256](tls_ciphersuite_t/rsa_with_aes_128_cbc_sha256.md)
-- [tls_ciphersuite_t.RSA_WITH_AES_128_GCM_SHA256](tls_ciphersuite_t/rsa_with_aes_128_gcm_sha256.md)
-- [tls_ciphersuite_t.RSA_WITH_AES_256_CBC_SHA](tls_ciphersuite_t/rsa_with_aes_256_cbc_sha.md)
-- [tls_ciphersuite_t.RSA_WITH_AES_256_CBC_SHA256](tls_ciphersuite_t/rsa_with_aes_256_cbc_sha256.md)
-- [tls_ciphersuite_t.RSA_WITH_AES_256_GCM_SHA384](tls_ciphersuite_t/rsa_with_aes_256_gcm_sha384.md)
+- [tls_ciphersuite_t.RSA_WITH_3DES_EDE_CBC_SHA](./tls_ciphersuite_t/rsa_with_3des_ede_cbc_sha.md)
+- [tls_ciphersuite_t.RSA_WITH_AES_128_CBC_SHA](./tls_ciphersuite_t/rsa_with_aes_128_cbc_sha.md)
+- [tls_ciphersuite_t.RSA_WITH_AES_128_CBC_SHA256](./tls_ciphersuite_t/rsa_with_aes_128_cbc_sha256.md)
+- [tls_ciphersuite_t.RSA_WITH_AES_128_GCM_SHA256](./tls_ciphersuite_t/rsa_with_aes_128_gcm_sha256.md)
+- [tls_ciphersuite_t.RSA_WITH_AES_256_CBC_SHA](./tls_ciphersuite_t/rsa_with_aes_256_cbc_sha.md)
+- [tls_ciphersuite_t.RSA_WITH_AES_256_CBC_SHA256](./tls_ciphersuite_t/rsa_with_aes_256_cbc_sha256.md)
+- [tls_ciphersuite_t.RSA_WITH_AES_256_GCM_SHA384](./tls_ciphersuite_t/rsa_with_aes_256_gcm_sha384.md)
 ### Initializers
-- [init?(rawValue: UInt16)](tls_ciphersuite_t/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./tls_ciphersuite_t/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

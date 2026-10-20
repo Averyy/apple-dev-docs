@@ -1,7 +1,8 @@
 # ToggleStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The appearance and behavior of a toggle.
 
@@ -23,7 +24,7 @@ The appearance and behavior of a toggle.
 
 #### Overview
 
-To configure the style for a single [`Toggle`](toggle.md) or for all toggle instances in a view hierarchy, use the [`toggleStyle(_:)`](view/togglestyle(_:).md) modifier. You can specify one of the built-in toggle styles, like [`switch`](togglestyle/switch.md) or [`button`](togglestyle/button.md):
+To configure the style for a single [`Toggle`](./toggle.md) or for all toggle instances in a view hierarchy, use the [`toggleStyle(_:)`](./view/togglestyle%28_%29.md) modifier. You can specify one of the built-in toggle styles, like [`switch`](./togglestyle/switch.md) or [`button`](./togglestyle/button.md):
 
 ```swift
 Toggle(isOn: $isFlagged) {
@@ -34,9 +35,9 @@ Toggle(isOn: $isFlagged) {
 
 Alternatively, you can create and apply a custom style.
 
-##### Custom Styles
+##### Custom styles
 
-To create a custom style, declare a type that conforms to the `ToggleStyle` protocol and implement the required [`makeBody(configuration:)`](togglestyle/makebody(configuration:).md) method. For example, you can define a checklist toggle style:
+To create a custom style, declare a type that conforms to the `ToggleStyle` protocol and implement the required [`makeBody(configuration:)`](./togglestyle/makebody%28configuration%29.md) method. For example, you can define a checklist toggle style:
 
 ```swift
 struct ChecklistToggleStyle: ToggleStyle {
@@ -46,7 +47,7 @@ struct ChecklistToggleStyle: ToggleStyle {
 }
 ```
 
-Inside the method, use the `configuration` parameter, which is an instance of the [`ToggleStyleConfiguration`](togglestyleconfiguration.md) structure, to get the label and a binding to the toggle state. To see examples of how to use these items to construct a view that has the appearance and behavior of a toggle, see [`makeBody(configuration:)`](togglestyle/makebody(configuration:).md).
+Inside the method, use the `configuration` parameter, which is an instance of the [`ToggleStyleConfiguration`](./togglestyleconfiguration.md) structure, to get the label and a binding to the toggle state. To see examples of how to use these items to construct a view that has the appearance and behavior of a toggle, see [`makeBody(configuration:)`](./togglestyle/makebody%28configuration%29.md).
 
 To provide easy access to the new style, declare a corresponding static variable in an extension to `ToggleStyle`:
 
@@ -82,46 +83,47 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting built-in toggle styles
-- [static var automatic: DefaultToggleStyle](togglestyle/automatic.md)
+- [static var automatic: DefaultToggleStyle](./togglestyle/automatic.md)
   The default toggle style.
-- [static var button: ButtonToggleStyle](togglestyle/button.md)
+- [static var button: ButtonToggleStyle](./togglestyle/button.md)
   A toggle style that displays as a button with its label as the title.
-- [static var checkbox: CheckboxToggleStyle](togglestyle/checkbox.md)
+- [static var checkbox: CheckboxToggleStyle](./togglestyle/checkbox.md)
   A toggle style that displays a checkbox followed by its label.
-- [static var `switch`: SwitchToggleStyle](togglestyle/switch.md)
+- [static var `switch`: SwitchToggleStyle](./togglestyle/switch.md)
   A toggle style that displays a leading label and a trailing switch.
 ### Creating custom toggle styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](togglestyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./togglestyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a toggle.
-- [struct ToggleStyleConfiguration](togglestyleconfiguration.md)
+- [struct ToggleStyleConfiguration](./togglestyleconfiguration.md)
   The properties of a toggle instance.
-- [ToggleStyle.Configuration](togglestyle/configuration.md)
+- [ToggleStyle.Configuration](./togglestyle/configuration.md)
   The properties of a toggle instance.
-- [associatedtype Body : View](togglestyle/body.md)
+- [associatedtype Body : View](./togglestyle/body.md)
   A view that represents the appearance and interaction of a toggle.
 ### Supporting types
-- [struct DefaultToggleStyle](defaulttogglestyle.md)
+- [struct DefaultToggleStyle](./defaulttogglestyle.md)
   The default toggle style.
-- [struct ButtonToggleStyle](buttontogglestyle.md)
+- [struct ButtonToggleStyle](./buttontogglestyle.md)
   A toggle style that displays as a button with its label as the title.
-- [struct CheckboxToggleStyle](checkboxtogglestyle.md)
+- [struct CheckboxToggleStyle](./checkboxtogglestyle.md)
   A toggle style that displays a checkbox followed by its label.
-- [struct SwitchToggleStyle](switchtogglestyle.md)
+- [struct SwitchToggleStyle](./switchtogglestyle.md)
   A toggle style that displays a leading label and a trailing switch.
 
 ## Relationships
 
 ### Conforming Types
-- [ButtonToggleStyle](buttontogglestyle.md)
-- [CheckboxToggleStyle](checkboxtogglestyle.md)
-- [DefaultToggleStyle](defaulttogglestyle.md)
-- [SwitchToggleStyle](switchtogglestyle.md)
+- [ButtonToggleStyle](./buttontogglestyle.md)
+- [CheckboxToggleStyle](./checkboxtogglestyle.md)
+- [DefaultToggleStyle](./defaulttogglestyle.md)
+- [SwitchToggleStyle](./switchtogglestyle.md)
 
 ## See Also
 
-- [func toggleStyle<S>(S) -> some View](view/togglestyle(_:).md)
+### Styling toggles
+- [func toggleStyle<S>(S) -> some View](./view/togglestyle%28_%29.md)
   Sets the style for toggles in a view hierarchy.
-- [struct ToggleStyleConfiguration](togglestyleconfiguration.md)
+- [struct ToggleStyleConfiguration](./togglestyleconfiguration.md)
   The properties of a toggle instance.
 
 

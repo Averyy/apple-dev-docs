@@ -1,7 +1,8 @@
 # xpc_connection_send_message_with_reply(_:_:_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sends a message over the connection to the destination service and associates a handler to invoke when the remote service sends a reply message.
 
@@ -10,7 +11,7 @@ Sends a message over the connection to the destination service and associates a 
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Sends a message over the connection to the destination service and associates a 
 
 ```swift
 func xpc_connection_send_message_with_reply(_ connection: xpc_connection_t, _ message: xpc_object_t, _ replyq: dispatch_queue_t?, _ handler: @escaping @Sendable (xpc_object_t) -> Void)
+```
+
+```c
+extern void xpc_connection_send_message_with_reply(xpc_connection_t connection, xpc_object_t message, dispatch_queue_t replyq, xpc_handler_t handler);
 ```
 
 #### Discussion
@@ -29,17 +34,18 @@ If the given GCD queue is a concurrent queue, XPC cannot guarantee that there wi
 - `connection`: The connection over which the message shall be sent.
 - `message`: The message to send. This must be a dictionary object.
 - `replyq`: The GCD queue to which the reply handler will be submitted. This may be a concurrent queue.
-- `handler`: The handler block to invoke when a reply to the message is received from the connection. If the remote service exits prematurely before the reply was received, the [`XPC_ERROR_CONNECTION_INTERRUPTED`](xpc_error_connection_interrupted-swift.var.md) error will be returned. If the connection went invalid before the message could be sent, the [`XPC_ERROR_CONNECTION_INVALID`](xpc_error_connection_invalid-swift.var.md) error will be returned.
+- `handler`: The handler block to invoke when a reply to the message is received from the connection. If the remote service exits prematurely before the reply was received, the [`XPC_ERROR_CONNECTION_INTERRUPTED`](./xpc_error_connection_interrupted-swift.var.md) error will be returned. If the connection went invalid before the message could be sent, the [`XPC_ERROR_CONNECTION_INVALID`](./xpc_error_connection_invalid-swift.var.md) error will be returned.
 
 ## See Also
 
-- [func xpc_connection_send_message(xpc_connection_t, xpc_object_t)](xpc_connection_send_message(_:_:).md)
+### Messages
+- [func xpc_connection_send_message(xpc_connection_t, xpc_object_t)](./xpc_connection_send_message%28_,_%29.md)
   Sends a message over the connection to the destination service.
-- [func xpc_connection_send_barrier(xpc_connection_t, () -> Void)](xpc_connection_send_barrier(_:_:).md)
+- [func xpc_connection_send_barrier(xpc_connection_t, () -> Void)](./xpc_connection_send_barrier%28_,_%29.md)
   Issues a barrier against the connection’s message-send activity.
-- [func xpc_connection_send_message_with_reply_sync(xpc_connection_t, xpc_object_t) -> xpc_object_t](xpc_connection_send_message_with_reply_sync(_:_:).md)
+- [func xpc_connection_send_message_with_reply_sync(xpc_connection_t, xpc_object_t) -> xpc_object_t](./xpc_connection_send_message_with_reply_sync%28_,_%29.md)
   Sends a message over the connection and blocks the caller until it receives a reply.
-- [func xpc_main(xpc_connection_handler_t) -> Never](xpc_main(_:).md)
+- [func xpc_main(xpc_connection_handler_t) -> Never](./xpc_main%28_%29.md)
   Starts listening for incoming connections and processes them with the specified event handler.
 
 

@@ -1,7 +1,8 @@
 # nameComponents
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains the user’s name. Use the `familyName` key to get the last name, and the `givenName` key to get the first name.
 
@@ -10,7 +11,7 @@ An object that contains the user’s name. Use the `familyName` key to get the l
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.NameComponents nameComponents;
 ```
 

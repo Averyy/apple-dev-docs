@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a push handler.

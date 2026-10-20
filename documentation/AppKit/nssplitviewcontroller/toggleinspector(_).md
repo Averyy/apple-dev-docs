@@ -1,7 +1,8 @@
 # toggleInspector(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Collapses or expands the first inspector in the split view controller using an animation.
 
@@ -13,6 +14,10 @@ Collapses or expands the first inspector in the split view controller using an a
 ```swift
 @IBAction
 func toggleInspector(_ sender: Any?)
+```
+
+```objc
+- (void) toggleInspector:(id) sender;
 ```
 
 #### Discussion

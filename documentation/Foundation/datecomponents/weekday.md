@@ -1,7 +1,8 @@
 # weekday
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A weekday or count of weekdays.
 
@@ -26,13 +27,14 @@ var weekday: Int? { get set }
 
 ## See Also
 
-- [var weekOfMonth: Int?](datecomponents/weekofmonth.md)
+### Accessing Weeks and Days
+- [var weekOfMonth: Int?](./weekofmonth.md)
   A week of the month or a count of weeks of the month.
-- [var weekOfYear: Int?](datecomponents/weekofyear.md)
+- [var weekOfYear: Int?](./weekofyear.md)
   A week of the year or count of the weeks of the year.
-- [var weekdayOrdinal: Int?](datecomponents/weekdayordinal.md)
+- [var weekdayOrdinal: Int?](./weekdayordinal.md)
   A weekday ordinal or count of weekday ordinals.
-- [var day: Int?](datecomponents/day.md)
+- [var day: Int?](./day.md)
   A day or count of days.
 
 

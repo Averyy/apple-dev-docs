@@ -1,7 +1,8 @@
 # NEHotspotConfigurationError
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error values returned by hotspot configuration manager methods.
 
@@ -18,60 +19,65 @@ Error values returned by hotspot configuration manager methods.
 enum NEHotspotConfigurationError
 ```
 
+```c
+enum NEHotspotConfigurationError : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [NEHotspotConfigurationError.invalid](nehotspotconfigurationerror/invalid.md)
+- [NEHotspotConfigurationError.invalid](./nehotspotconfigurationerror/invalid.md)
   The configuration is not valid.
-- [NEHotspotConfigurationError.invalidSSID](nehotspotconfigurationerror/invalidssid.md)
+- [NEHotspotConfigurationError.invalidSSID](./nehotspotconfigurationerror/invalidssid.md)
   The SSID value is not valid.
-- [NEHotspotConfigurationError.invalidWPAPassphrase](nehotspotconfigurationerror/invalidwpapassphrase.md)
+- [NEHotspotConfigurationError.invalidWPAPassphrase](./nehotspotconfigurationerror/invalidwpapassphrase.md)
   The WPA passphrase is not valid.
-- [NEHotspotConfigurationError.invalidWEPPassphrase](nehotspotconfigurationerror/invalidweppassphrase.md)
+- [NEHotspotConfigurationError.invalidWEPPassphrase](./nehotspotconfigurationerror/invalidweppassphrase.md)
   The WEP passphrase is not valid.
-- [NEHotspotConfigurationError.invalidEAPSettings](nehotspotconfigurationerror/invalideapsettings.md)
+- [NEHotspotConfigurationError.invalidEAPSettings](./nehotspotconfigurationerror/invalideapsettings.md)
   EAP settings are not valid.
-- [NEHotspotConfigurationError.invalidHS20Settings](nehotspotconfigurationerror/invalidhs20settings.md)
+- [NEHotspotConfigurationError.invalidHS20Settings](./nehotspotconfigurationerror/invalidhs20settings.md)
   The HS 2.0 settings are not valid.
-- [NEHotspotConfigurationError.invalidHS20DomainName](nehotspotconfigurationerror/invalidhs20domainname.md)
+- [NEHotspotConfigurationError.invalidHS20DomainName](./nehotspotconfigurationerror/invalidhs20domainname.md)
   The HS 2.0 domain name is not valid.
-- [NEHotspotConfigurationError.invalidSSIDPrefix](nehotspotconfigurationerror/invalidssidprefix.md)
+- [NEHotspotConfigurationError.invalidSSIDPrefix](./nehotspotconfigurationerror/invalidssidprefix.md)
   The SSID prefix used to create the hotspot configuration is invalid.
-- [NEHotspotConfigurationError.userDenied](nehotspotconfigurationerror/userdenied.md)
+- [NEHotspotConfigurationError.userDenied](./nehotspotconfigurationerror/userdenied.md)
   The user has refused the network configuration.
-- [NEHotspotConfigurationError.internal](nehotspotconfigurationerror/internal.md)
+- [NEHotspotConfigurationError.internal](./nehotspotconfigurationerror/internal.md)
   Internal error, otherwise undefined.
-- [NEHotspotConfigurationError.pending](nehotspotconfigurationerror/pending.md)
+- [NEHotspotConfigurationError.pending](./nehotspotconfigurationerror/pending.md)
   The network configuration action has not completed.
-- [NEHotspotConfigurationError.systemConfiguration](nehotspotconfigurationerror/systemconfiguration.md)
+- [NEHotspotConfigurationError.systemConfiguration](./nehotspotconfigurationerror/systemconfiguration.md)
   The system configuration is not valid.
-- [NEHotspotConfigurationError.unknown](nehotspotconfigurationerror/unknown.md)
+- [NEHotspotConfigurationError.unknown](./nehotspotconfigurationerror/unknown.md)
   An unknown error has occurred.
-- [NEHotspotConfigurationError.joinOnceNotSupported](nehotspotconfigurationerror/joinoncenotsupported.md)
+- [NEHotspotConfigurationError.joinOnceNotSupported](./nehotspotconfigurationerror/joinoncenotsupported.md)
   The join-once option isn’t support for EAP configuration.
-- [NEHotspotConfigurationError.alreadyAssociated](nehotspotconfigurationerror/alreadyassociated.md)
+- [NEHotspotConfigurationError.alreadyAssociated](./nehotspotconfigurationerror/alreadyassociated.md)
   The configuration is already associated with the hotspot.
-- [NEHotspotConfigurationError.applicationIsNotInForeground](nehotspotconfigurationerror/applicationisnotinforeground.md)
+- [NEHotspotConfigurationError.applicationIsNotInForeground](./nehotspotconfigurationerror/applicationisnotinforeground.md)
   The application is not running in the foreground.
 ### Enumeration Cases
-- [NEHotspotConfigurationError.systemDenied](nehotspotconfigurationerror/systemdenied.md)
-- [NEHotspotConfigurationError.userUnauthorized](nehotspotconfigurationerror/userunauthorized.md)
+- [NEHotspotConfigurationError.systemDenied](./nehotspotconfigurationerror/systemdenied.md)
+- [NEHotspotConfigurationError.userUnauthorized](./nehotspotconfigurationerror/userunauthorized.md)
 ### Initializers
-- [init?(rawValue: Int)](nehotspotconfigurationerror/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nehotspotconfigurationerror/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let NEHotspotConfigurationErrorDomain: String](nehotspotconfigurationerrordomain.md)
+### Errors
+- [let NEHotspotConfigurationErrorDomain: String](./nehotspotconfigurationerrordomain.md)
   The domain string for errors involving hotspot configuration.
 
 

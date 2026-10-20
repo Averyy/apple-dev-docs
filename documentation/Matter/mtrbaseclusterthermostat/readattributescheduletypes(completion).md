@@ -1,7 +1,8 @@
 # readAttributeScheduleTypes(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeScheduleTypes(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeScheduleTypes() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeScheduleTypesWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

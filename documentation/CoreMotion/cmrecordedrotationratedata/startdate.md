@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time when the gyroscope measured the rotation data.
 
@@ -17,6 +18,10 @@ The time when the gyroscope measured the rotation data.
 
 ```swift
 var startDate: Date { get }
+```
+
+```objc
+@property (readonly) NSDate * startDate;
 ```
 
 

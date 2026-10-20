@@ -1,17 +1,22 @@
 # minimumTrackingAdjustment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The smallest amount of space, in points, to maintain between characters.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
 ```swift
 var minimumTrackingAdjustment: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat minimumTrackingAdjustment;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Changing the value of this property tells the renderer that it can change the tr
 
 ## See Also
 
-- [var minimumScaleFactor: CGFloat](nsstringdrawingcontext/minimumscalefactor.md)
+### Accessing the scale factors
+- [var minimumScaleFactor: CGFloat](./minimumscalefactor.md)
   The scale factor that determines the smallest font size to use during drawing.
-- [var actualScaleFactor: CGFloat](nsstringdrawingcontext/actualscalefactor.md)
+- [var actualScaleFactor: CGFloat](./actualscalefactor.md)
   The actual scale factor that the system applied to the font during drawing.
-- [var actualTrackingAdjustment: CGFloat](nsstringdrawingcontext/actualtrackingadjustment.md)
+- [var actualTrackingAdjustment: CGFloat](./actualtrackingadjustment.md)
   The actual tracking value that the system applied during drawing.
 
 

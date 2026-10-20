@@ -1,17 +1,22 @@
 # numberOfGlyphs
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of glyphs in the font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var numberOfGlyphs: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger numberOfGlyphs;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Glyphs are numbered starting at 0.
 
 ## See Also
 
-- [typealias NSGlyph](nsglyph.md)
+### Getting Information About Glyphs
+- [typealias NSGlyph](../nsglyph.md)
   The type used to specify glyphs.
-- [var NSControlGlyph: Int](nscontrolglyph.md)
+- [var NSControlGlyph: Int](../nscontrolglyph.md)
   The reserved code for a control glyph.
-- [var NSNullGlyph: Int](nsnullglyph.md)
+- [var NSNullGlyph: Int](../nsnullglyph.md)
   The reserved code for a null glyph.
 
 

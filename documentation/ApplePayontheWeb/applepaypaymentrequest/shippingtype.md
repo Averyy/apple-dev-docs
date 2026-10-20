@@ -1,7 +1,8 @@
 # shippingType
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional value that indicates how to ship purchased items.
 
@@ -11,7 +12,7 @@ An optional value that indicates how to ship purchased items.
 
 ## Declaration
 
-```swift
+```
 ApplePayShippingType shippingType;
 ```
 
@@ -28,23 +29,24 @@ The default value is `shipping`.
 
 ## See Also
 
-- [countryCode](applepaypaymentrequest/countrycode.md)
+### Working with transaction information
+- [countryCode](./countrycode.md)
   The merchant’s two-letter ISO 3166 country code.
-- [currencyCode](applepaypaymentrequest/currencycode.md)
+- [currencyCode](./currencycode.md)
   The three-letter ISO 4217 currency code for the payment.
-- [merchantCapabilities](applepaypaymentrequest/merchantcapabilities.md)
+- [merchantCapabilities](./merchantcapabilities.md)
   An array of the payment capabilities that the merchant supports, such as credit or debit.
-- [shippingMethods](applepaypaymentrequest/shippingmethods.md)
+- [shippingMethods](./shippingmethods.md)
   The list of shipping methods available for a payment request.
-- [supportedCountries](applepaypaymentrequest/supportedcountries.md)
+- [supportedCountries](./supportedcountries.md)
   A list of two-letter country codes for limiting payment to cards from specific countries or regions.
-- [supportedNetworks](applepaypaymentrequest/supportednetworks.md)
+- [supportedNetworks](./supportednetworks.md)
   The payment networks the merchant supports.
-- [ApplePayMerchantCapability](applepaymerchantcapability.md)
+- [ApplePayMerchantCapability](../applepaymerchantcapability.md)
   The payment capabilities the merchant supports.
-- [ApplePayShippingMethod](applepayshippingmethod.md)
+- [ApplePayShippingMethod](../applepayshippingmethod.md)
   A dictionary that describes the shipping method for delivering physical goods.
-- [ApplePayShippingType](applepayshippingtype.md)
+- [ApplePayShippingType](../applepayshippingtype.md)
   A type that indicates how to ship purchased items.
 
 

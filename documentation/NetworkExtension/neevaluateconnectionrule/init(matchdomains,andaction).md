@@ -1,7 +1,8 @@
 # init(matchDomains:andAction:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an `NEEvaluateConnectionRule` instance with a list of destination host domains and an action.
 
@@ -17,6 +18,10 @@ Initialize an `NEEvaluateConnectionRule` instance with a list of destination hos
 
 ```swift
 init(matchDomains domains: [String], andAction action: NEEvaluateConnectionRuleAction)
+```
+
+```objc
+- (instancetype) initWithMatchDomains:(NSArray<NSString *> *) domains andAction:(NEEvaluateConnectionRuleAction) action;
 ```
 
 ## Parameters

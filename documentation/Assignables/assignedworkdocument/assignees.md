@@ -1,7 +1,8 @@
 # assignees
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identities of takers of this document. Treated as a set.
 
@@ -9,7 +10,7 @@ The identities of takers of this document. Treated as a set.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

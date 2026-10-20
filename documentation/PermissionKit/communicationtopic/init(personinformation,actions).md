@@ -1,7 +1,8 @@
 # init(personInformation:actions:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a communication topic with person information and specific actions.
 
@@ -25,7 +26,8 @@ init(personInformation: [CommunicationTopic.PersonInformation], actions: Set<Com
 
 ## See Also
 
-- [init(personInformation: [CommunicationTopic.PersonInformation])](communicationtopic/init(personinformation:).md)
+### Creating topics
+- [init(personInformation: [CommunicationTopic.PersonInformation])](./init%28personinformation%29.md)
   Creates a communication topic with person information for general communication.
 
 

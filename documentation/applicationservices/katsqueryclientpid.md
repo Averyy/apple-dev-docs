@@ -1,7 +1,8 @@
 # kATSQueryClientPID
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kATSQueryClientPID: String { get }
+```
+
+```c
+#define kATSQueryClientPID
 ```
 
 

@@ -1,7 +1,8 @@
 # router
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address of the next-hop gateway router represented as a dotted decimal string.
 
@@ -14,15 +15,20 @@ The address of the next-hop gateway router represented as a dotted decimal strin
 var router: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * router;
+```
+
 #### Discussion
 
 The system ignores this property for TUN interfaces.
 
 ## See Also
 
-- [var addresses: [String]](neipv4settings/addresses.md)
+### Accessing IPv4 properties
+- [var addresses: [String]](./addresses.md)
   The IPv4 addresses to assign to the TUN interface.
-- [var subnetMasks: [String]](neipv4settings/subnetmasks.md)
+- [var subnetMasks: [String]](./subnetmasks.md)
   The IPv4 network masks to assign to the TUN interface.
 
 

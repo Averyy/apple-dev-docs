@@ -1,7 +1,8 @@
 # vectorBytes(forLength:dataType:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func vectorBytes(forLength length: Int, dataType: MPSDataType) -> Int
+```
+
+```objc
++ (size_t) vectorBytesForLength:(NSUInteger) length dataType:(MPSDataType) dataType;
 ```
 
 

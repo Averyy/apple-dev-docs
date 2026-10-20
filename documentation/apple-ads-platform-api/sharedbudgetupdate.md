@@ -1,7 +1,8 @@
 # SharedBudgetUpdate
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Request body for updating an existing budget order.
 
@@ -10,7 +11,7 @@ Request body for updating an existing budget order.
 
 ## Declaration
 
-```swift
+```
 object SharedBudgetUpdate
 ```
 
@@ -43,37 +44,39 @@ The example below shows every updatable field for reference. In a real request, 
 ## Topics
 
 ### Dictionaries
-- [object SharedBudgetUpdate.InvoiceDetail](sharedbudgetupdate/invoicedetail-data.dictionary.md)
+- [object SharedBudgetUpdate.InvoiceDetail](./sharedbudgetupdate/invoicedetail-data.dictionary.md)
   Invoice billing contact details supplied when updating a budget order.
 
 ## Properties
 
 - `name` (string): New display name for the budget order.
+
+  **Minimum Length**: `1`
 - `startTime` (date-time): Updated budget start date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-07-01T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected.
 - `endTime` (date-time): Updated budget end date and time. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Set to `null` to remove an expiration date, making the budget open-ended.
-- `value` (Money): Updated budget amount. Specify `amount` and `currency`. See [`Money`](money.md).
+- `value` (Money): Updated budget amount. Specify `amount` and `currency`. See [`Money`](./money.md).
 - `adAccountIds` ([int64]): The ad account IDs this budget order applies to. At least one ID is required. Mutable.
-- `invoiceDetail` (SharedBudgetUpdate.InvoiceDetail): Updated billing contact details. See [`InvoiceDetail`](invoicedetail.md).
+- `invoiceDetail` (SharedBudgetUpdate.InvoiceDetail): Updated billing contact details. See [`InvoiceDetail`](./invoicedetail.md).
 
 ## See Also
 
-- [object SharedBudget](sharedbudget.md)
+- [object SharedBudget](./sharedbudget.md)
   A budget order.
-- [object SharedBudgetCreate](sharedbudgetcreate.md)
+- [object SharedBudgetCreate](./sharedbudgetcreate.md)
   The request body for creating a new budget order.
-- [object SharedBudgetResponse](sharedbudgetresponse.md)
+- [object SharedBudgetResponse](./sharedbudgetresponse.md)
   The response object for a single budget order operation.
-- [object SharedBudgetQueryResponse](sharedbudgetqueryresponse.md)
+- [object SharedBudgetQueryResponse](./sharedbudgetqueryresponse.md)
   The response object for a budget order query.
-- [object SharedBudgetAssignment](sharedbudgetassignment.md)
+- [object SharedBudgetAssignment](./sharedbudgetassignment.md)
   Represents a single budget order assignment within a campaign’s `sharedBudgets` array.
-- [object SharedBudgetAssignmentCreate](sharedbudgetassignmentcreate.md)
+- [object SharedBudgetAssignmentCreate](./sharedbudgetassignmentcreate.md)
   Request payload for assigning a campaign to a budget order at campaign creation time.
-- [object SharedBudgetAssignmentUpdate](sharedbudgetassignmentupdate.md)
+- [object SharedBudgetAssignmentUpdate](./sharedbudgetassignmentupdate.md)
   Request payload for changing or removing a campaign’s budget order assignment.
-- [object InvoiceDetail](invoicedetail.md)
+- [object InvoiceDetail](./invoicedetail.md)
   Invoice billing details for accounts on the Line of Credit (LOC) payment model.
-- [object InvoiceDetailUpdate](invoicedetailupdate.md)
+- [object InvoiceDetailUpdate](./invoicedetailupdate.md)
   The request body for updating the invoice details of a budget order.
 
 

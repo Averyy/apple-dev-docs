@@ -1,7 +1,8 @@
 # canAddNode(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether a node can be added to the graph.
 

@@ -1,7 +1,8 @@
 # ARSession.CollaborationData.Priority.critical
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A priority that indicates that collaboration depends on this data.
 
@@ -15,9 +16,13 @@ A priority that indicates that collaboration depends on this data.
 case critical
 ```
 
+```c
+ARCollaborationDataPriorityCritical
+```
+
 #### Discussion
 
-ARKit sets the data [`priority`](arsession/collaborationdata/priority-swift.property.md) to  [`ARSession.CollaborationData.Priority.critical`](arsession/collaborationdata/priority-swift.enum/critical.md)  when it’s needed to establish or continue a collaborative session.
+ARKit sets the data [`priority`](../priority-swift.property.md) to  [`ARSession.CollaborationData.Priority.critical`](./critical.md)  when it’s needed to establish or continue a collaborative session.
 
 
 ---

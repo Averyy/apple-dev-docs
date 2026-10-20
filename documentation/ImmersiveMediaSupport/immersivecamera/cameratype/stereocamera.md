@@ -1,7 +1,8 @@
 # ImmersiveCamera.CameraType.stereoCamera
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a camera rig made up of two cameras.
 

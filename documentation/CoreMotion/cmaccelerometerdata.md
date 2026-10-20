@@ -1,7 +1,8 @@
 # CMAccelerometerData
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data sample from the device’s three accelerometers.
 
@@ -19,44 +20,49 @@ A data sample from the device’s three accelerometers.
 class CMAccelerometerData
 ```
 
+```objc
+@interface CMAccelerometerData : CMLogItem
+```
+
 #### Overview
 
-An application accesses `CMAccelerometerData` objects through the block handler specified as the last parameter of the [`startAccelerometerUpdates(to:withHandler:)`](cmmotionmanager/startaccelerometerupdates(to:withhandler:).md) method and through the [`accelerometerData`](cmmotionmanager/accelerometerdata.md) property, both declared by the `CMMotionManager` class. The superclass of `CMAccelerometerData`, [`CMLogItem`](cmlogitem.md), defines a [`timestamp`](cmlogitem/timestamp.md) property that records when the acceleration measurement was taken.
+An application accesses `CMAccelerometerData` objects through the block handler specified as the last parameter of the [`startAccelerometerUpdates(to:withHandler:)`](./cmmotionmanager/startaccelerometerupdates%28to,withhandler%29.md) method and through the [`accelerometerData`](./cmmotionmanager/accelerometerdata.md) property, both declared by the `CMMotionManager` class. The superclass of `CMAccelerometerData`, [`CMLogItem`](./cmlogitem.md), defines a [`timestamp`](./cmlogitem/timestamp.md) property that records when the acceleration measurement was taken.
 
 ## Topics
 
 ### Accessing Accelerometer Data
-- [var acceleration: CMAcceleration](cmaccelerometerdata/acceleration.md)
+- [var acceleration: CMAcceleration](./cmaccelerometerdata/acceleration.md)
   The acceleration measured by the accelerometer.
-- [struct CMAcceleration](cmacceleration.md)
+- [struct CMAcceleration](./cmacceleration.md)
   The type of a structure containing 3-axis acceleration values.
 
 ## Relationships
 
 ### Inherits From
-- [CMLogItem](cmlogitem.md)
+- [CMLogItem](./cmlogitem.md)
 ### Inherited By
-- [CMRecordedAccelerometerData](cmrecordedaccelerometerdata.md)
+- [CMRecordedAccelerometerData](./cmrecordedaccelerometerdata.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting raw accelerometer events](getting-raw-accelerometer-events.md)
+### Accelerometers
+- [Getting raw accelerometer events](./getting-raw-accelerometer-events.md)
   Retrieve data from the onboard accelerometers.
-- [class CMRecordedAccelerometerData](cmrecordedaccelerometerdata.md)
+- [class CMRecordedAccelerometerData](./cmrecordedaccelerometerdata.md)
   A single piece of accelerometer data that was recorded by the device.
-- [class CMSensorRecorder](cmsensorrecorder.md)
+- [class CMSensorRecorder](./cmsensorrecorder.md)
   An object that gathers and retrieves accelerometer data from a device.
-- [class CMSensorDataList](cmsensordatalist.md)
+- [class CMSensorDataList](./cmsensordatalist.md)
   A list of the accelerometer data recorded by the system.
 
 

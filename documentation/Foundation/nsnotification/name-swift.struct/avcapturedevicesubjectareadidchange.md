@@ -1,13 +1,14 @@
 # AVCaptureDeviceSubjectAreaDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-- tvOS 17.0+
+- iOS 4.0+ - Deprecated in 18.0 (renamed: AVCaptureDevice.subjectAreaDidChangeNotification)
+- iPadOS 4.0+ - Deprecated in 18.0 (renamed: AVCaptureDevice.subjectAreaDidChangeNotification)
+- Mac Catalyst 14.0+ - Deprecated in 18.0 (renamed: AVCaptureDevice.subjectAreaDidChangeNotification)
+- tvOS 17.0+ - Deprecated in 18.0 (renamed: AVCaptureDevice.subjectAreaDidChangeNotification)
 
 ## Declaration
 

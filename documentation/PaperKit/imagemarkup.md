@@ -1,7 +1,8 @@
 # ImageMarkup
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A markup element that represents an image.
 
@@ -21,51 +22,52 @@ struct ImageMarkup
 ## Topics
 
 ### Creating an image markup
-- [init(image: CGImage, frame: CGRect, rotation: CGFloat, orientation: CGImagePropertyOrientation, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:orientation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:).md)
+- [init(image: CGImage, frame: CGRect, rotation: CGFloat, orientation: CGImagePropertyOrientation, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](./imagemarkup/init%28image,frame,rotation,orientation,opacity,contentsbounds,accessibilitydescription,allowedinteractions,id%29.md)
   Initializes and returns a new image markup from the specified parameters.
-- [init?(image: NSImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:)-1ggjv.md)
+- [init?(image: NSImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](./imagemarkup/init%28image,frame,rotation,opacity,contentsbounds,accessibilitydescription,allowedinteractions,id%29-1ggjv.md)
   Initializes and returns a new image markup from the specified parameters.
-- [init?(image: UIImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:)-8y6o9.md)
+- [init?(image: UIImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](./imagemarkup/init%28image,frame,rotation,opacity,contentsbounds,accessibilitydescription,allowedinteractions,id%29-8y6o9.md)
   Initializes and returns a new image markup from the specified parameters.
 ### Accessing image content
-- [var image: CGImage?](imagemarkup/image.md)
+- [var image: CGImage?](./imagemarkup/image.md)
   The image content displayed by this markup.
-- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
+- [func replaceImage(with: URL) throws](./imagemarkup/replaceimage%28with%29-10qzi.md)
   Replaces the contents of this image markup with an image file.
-- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
+- [func replaceImage(with: CGImage)](./imagemarkup/replaceimage%28with%29-6eb53.md)
   Replaces the contents of this image markup with a `CGImage`.
-- [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
+- [var orientation: CGImagePropertyOrientation](./imagemarkup/orientation.md)
   The orientation of the image content.
-- [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)
+- [var contentsBounds: CGRect](./imagemarkup/contentsbounds.md)
   The portion of the image to display, in normalized coordinates.
 ### Configuring appearance
-- [var opacity: CGFloat](imagemarkup/opacity.md)
+- [var opacity: CGFloat](./imagemarkup/opacity.md)
   The opacity of the image.
-- [var accessibilityDescription: String?](imagemarkup/accessibilitydescription.md)
+- [var accessibilityDescription: String?](./imagemarkup/accessibilitydescription.md)
   The accessibility description of the image for assistive technologies.
 ### Identifying markup
-- [var id: MarkupID<ImageMarkup>](imagemarkup/id.md)
+- [var id: MarkupID<ImageMarkup>](./imagemarkup/id.md)
   Stable unique identity of the markup.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Markup](markup.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Markup](./markup.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Markup](markup.md)
+### Markup elements
+- [protocol Markup](./markup.md)
   A markup component.
-- [struct ShapeMarkup](shapemarkup.md)
+- [struct ShapeMarkup](./shapemarkup.md)
   A markup element that represents a shape or text box with customizable appearance and behavior.
-- [struct LinkMarkup](linkmarkup.md)
+- [struct LinkMarkup](./linkmarkup.md)
   A URL link that a person can tap on in the canvas.
-- [struct LoupeMarkup](loupemarkup.md)
+- [struct LoupeMarkup](./loupemarkup.md)
   A loupe magnifier that magnifies the content below the loupe.
-- [struct MarkupInteractions](markupinteractions.md)
+- [struct MarkupInteractions](./markupinteractions.md)
   Interactions that people can perform on markup elements.
 
 

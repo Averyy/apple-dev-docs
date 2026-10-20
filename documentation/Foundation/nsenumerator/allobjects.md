@@ -1,7 +1,8 @@
 # allObjects
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of unenumerated objects.
 
@@ -20,16 +21,22 @@ The array of unenumerated objects.
 var allObjects: [Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<id> * allObjects;
+```
+
 #### Discussion
 
-This array contains all the remaining objects of the enumerator in enumerated order. It does not contain objects that have already been enumerated with previous [`nextObject()`](nsenumerator/nextobject().md) messages.
+This array contains all the remaining objects of the enumerator in enumerated order. It does not contain objects that have already been enumerated with previous [`nextObject()`](./nextobject%28%29.md) messages.
 
-Accessing this property exhausts the enumerator’s collection so that subsequent invocations of [`nextObject()`](nsenumerator/nextobject().md) return `nil`.
+Accessing this property exhausts the enumerator’s collection so that subsequent invocations of [`nextObject()`](./nextobject%28%29.md) return `nil`.
 
 ## See Also
 
-- [Collections Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
-- [func nextObject() -> Any?](nsenumerator/nextobject.md)
+### Related Documentation
+- [Collections Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
+### Getting the Enumerated Objects
+- [func nextObject() -> Any?](./nextobject%28%29.md)
   Returns the next object from the collection being enumerated.
 
 

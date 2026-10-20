@@ -1,7 +1,8 @@
 # UITextItem.MenuConfiguration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes what type of menu and preview to show for a text item.
 
@@ -18,36 +19,41 @@ An object that describes what type of menu and preview to show for a text item.
 class MenuConfiguration
 ```
 
+```objc
+@interface UITextItemMenuConfiguration : NSObject
+```
+
 #### Overview
 
-Create and return a menu configuration for a text item in [`textView(_:menuConfigurationFor:defaultMenu:)`](uitextviewdelegate/textview(_:menuconfigurationfor:defaultmenu:).md) to provide a custom menu that the system shows when someone interacts with the text item. Provide a custom view for the item’s preview, or specify that the system displays a default preview.
+Create and return a menu configuration for a text item in [`textView(_:menuConfigurationFor:defaultMenu:)`](../uitextviewdelegate/textview%28_,menuconfigurationfor,defaultmenu%29.md) to provide a custom menu that the system shows when someone interacts with the text item. Provide a custom view for the item’s preview, or specify that the system displays a default preview.
 
 ## Topics
 
 ### Creating a menu configuration
-- [convenience init(preview: UITextItem.MenuConfiguration.Preview?, menu: UIMenu)](uitextitem/menuconfiguration/init(preview:menu:).md)
+- [convenience init(preview: UITextItem.MenuConfiguration.Preview?, menu: UIMenu)](./menuconfiguration/init%28preview,menu%29.md)
   Creates a text item menu configuration with the specified menu and preview.
-- [UITextItem.MenuConfiguration.Preview](uitextitem/menuconfiguration/preview.md)
+- [UITextItem.MenuConfiguration.Preview](./menuconfiguration/preview.md)
   Constants that indicate what type of preview to display alongside the text item’s menu.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [class UITextItem](uitextitem.md)
+### Text actions and menus
+- [class UITextItem](../uitextitem.md)
   An object for attaching custom actions and menus to links, text attachments, or other specific text in a text view.
-- [protocol UITextViewDelegate](uitextviewdelegate.md)
+- [protocol UITextViewDelegate](../uitextviewdelegate.md)
   The methods for receiving editing-related messages for text view objects.
 
 

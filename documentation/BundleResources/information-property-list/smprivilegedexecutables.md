@@ -1,20 +1,23 @@
 # SMPrivilegedExecutables
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The Service Management tools owned by the app.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `SMPrivilegedExecutables` (Tools owned after installation)
+- **Type**: dictionary
 
 ## See Also
 
-- [SMAuthorizedClients](information-property-list/smauthorizedclients.md)
+### Service management
+- [SMAuthorizedClients](./smauthorizedclients.md)
   The Service Management clients authorized to add and remove tools.
 
 

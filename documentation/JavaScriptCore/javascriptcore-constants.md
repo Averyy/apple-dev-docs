@@ -1,12 +1,13 @@
 # JavaScriptCore Constants
 
-**Framework**: JavaScriptCore
+**Framework**: JavaScriptCore  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kJSTypedArrayTypeBigInt64Array: JSTypedArrayType](kjstypedarraytypebigint64array.md)
-- [var kJSTypedArrayTypeBigUint64Array: JSTypedArrayType](kjstypedarraytypebiguint64array.md)
+- [var kJSTypedArrayTypeBigInt64Array: JSTypedArrayType](./kjstypedarraytypebigint64array.md)
+- [var kJSTypedArrayTypeBigUint64Array: JSTypedArrayType](./kjstypedarraytypebiguint64array.md)
 
 
 ---

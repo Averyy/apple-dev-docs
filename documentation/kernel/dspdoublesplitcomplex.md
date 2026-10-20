@@ -1,7 +1,8 @@
 # DSPDoubleSplitComplex
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Used to represent a double-precision complex number when the real and imaginary parts are stored in separate arrays.
 
@@ -10,19 +11,19 @@ Used to represent a double-precision complex number when the real and imaginary 
 
 ## Declaration
 
-```swift
+```c
 typedef struct DSPDoubleSplitComplex DSPDoubleSplitComplex;
 ```
 
 ## Topics
 
 ### Fields
-- [realp](../accelerate/dspdoublesplitcomplex/realp.md)
+- [realp](../Accelerate/dspdoublesplitcomplex/realp.md)
   An array of real parts of the complex numbers.
-- [imagp](dspdoublesplitcomplex/1579987-imagp.md)
+- [imagp](./dspdoublesplitcomplex/api-1579987-imagp.md)
   An array of imaginary parts.
 ### Instance Properties
-- [realp](dspdoublesplitcomplex/1579977-realp.md)
+- [realp](./dspdoublesplitcomplex/api-1579977-realp.md)
 
 
 ---

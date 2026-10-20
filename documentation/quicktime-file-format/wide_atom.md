@@ -1,7 +1,8 @@
 # Wide atom ('wide')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that designates reserved space in the movie data file.
 
@@ -12,16 +13,17 @@ A `wide` atom typically precedes a movie data atom. The `wide` atom consists onl
 ## Topics
 
 ### Data fields
-- [Size](wide_atom/size.md)
+- [Size](./wide_atom/size.md)
   A 32-bit integer that specifies the number of bytes in the atom.
-- [Type](wide_atom/type.md)
+- [Type](./wide_atom/type.md)
   A 32-bit integer that identifies the atom type.
 
 ## See Also
 
-- [Free space atom ('free')](free_space_atom.md)
+### Setting free space
+- [Free space atom ('free')](./free_space_atom.md)
   An atom that designates unused space in the movie data file.
-- [Skip atom ('skip')](skip_atom.md)
+- [Skip atom ('skip')](./skip_atom.md)
   An atom that designates unused space in the movie data file.
 
 

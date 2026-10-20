@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kATASupports48BitAddressingBit](1646147-anonymous/katasupports48bitaddressingbit.md)
-- [kATASupportsAdvancedPowerManagementBit](1646147-anonymous/katasupportsadvancedpowermanagementbit.md)
-- [kATASupportsCompactFlashBit](1646147-anonymous/katasupportscompactflashbit.md)
-- [kATASupportsFlushCacheBit](1646147-anonymous/katasupportsflushcachebit.md)
-- [kATASupportsFlushCacheExtendedBit](1646147-anonymous/katasupportsflushcacheextendedbit.md)
+- [kATASupports48BitAddressingBit](./api-1646147-anonymous/katasupports48bitaddressingbit.md)
+- [kATASupportsAdvancedPowerManagementBit](./api-1646147-anonymous/katasupportsadvancedpowermanagementbit.md)
+- [kATASupportsCompactFlashBit](./api-1646147-anonymous/katasupportscompactflashbit.md)
+- [kATASupportsFlushCacheBit](./api-1646147-anonymous/katasupportsflushcachebit.md)
+- [kATASupportsFlushCacheExtendedBit](./api-1646147-anonymous/katasupportsflushcacheextendedbit.md)
 
 
 ---

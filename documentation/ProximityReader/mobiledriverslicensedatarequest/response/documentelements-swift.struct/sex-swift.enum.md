@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.Sex
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents the mobile driver’s license holder’s sex.
 
@@ -19,27 +20,27 @@ enum Sex
 ## Topics
 
 ### Enumeration Cases
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.female](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/female.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.female](./sex-swift.enum/female.md)
   A constant that indicates the mobile driver’s license holder is female as defined in ISO/IEC 5218.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.male](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/male.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.male](./sex-swift.enum/male.md)
   A constant that indicates the mobile driver’s license holder is male as defined in ISO/IEC 5218.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.notApplicable](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/notapplicable.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.notApplicable](./sex-swift.enum/notapplicable.md)
   A constant that indicates the mobile driver’s license holder’s sex was categorized as not applicable as defined in ISO/IEC 5218.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.notSpecified](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/notspecified.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.notSpecified](./sex-swift.enum/notspecified.md)
   A constant that indicates the mobile driver’s license holder’s sex was categorized as not specified or non-binary.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.unknown](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/unknown.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.unknown](./sex-swift.enum/unknown.md)
   A constant that indicates the mobile driver’s license holder’s sex is not known as defined in ISO/IEC 5218.
 ### Instance Properties
-- [var localizedName: String](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/localizedname.md)
+- [var localizedName: String](./sex-swift.enum/localizedname.md)
   A string containing the the localized name of the sex category.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

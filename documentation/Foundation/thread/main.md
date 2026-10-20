@@ -1,7 +1,8 @@
 # main
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the `NSThread` object representing the main thread.
 
@@ -20,15 +21,20 @@ Returns the `NSThread` object representing the main thread.
 class var main: Thread { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSThread * mainThread;
+```
+
 #### Return Value
 
 The `NSThread` object representing the main thread.
 
 ## See Also
 
-- [class var isMainThread: Bool](thread/ismainthread-swift.type.property.md)
+### Working with the Main Thread
+- [class var isMainThread: Bool](./ismainthread-swift.type.property.md)
   Returns a Boolean value that indicates whether the current thread is the main thread.
-- [var isMainThread: Bool](thread/ismainthread-swift.property.md)
+- [var isMainThread: Bool](./ismainthread-swift.property.md)
   A Boolean value that indicates whether the receiver is the main thread.
 
 

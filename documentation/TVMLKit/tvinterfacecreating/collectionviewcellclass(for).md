@@ -1,17 +1,24 @@
 # collectionViewCellClass(for:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a collection view cell for the specified element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
 ```swift
 optional func collectionViewCellClass(for element: TVViewElement) -> AnyClass?
+```
+
+```objc
+- (Class) collectionViewCellClassForElement:(TVViewElement *) element;
 ```
 
 #### Return Value
@@ -28,11 +35,12 @@ The collection view cell must be in a list, shelf, or grid. This method is calle
 
 ## See Also
 
-- [func makeViewController(element: TVViewElement, existingViewController: UIViewController?) -> UIViewController?](tvinterfacecreating/makeviewcontroller(element:existingviewcontroller:).md)
+### Updating View Information
+- [func makeViewController(element: TVViewElement, existingViewController: UIViewController?) -> UIViewController?](./makeviewcontroller%28element,existingviewcontroller%29.md)
   Returns a view controller for a view element.
-- [func makeView(element: TVViewElement, existingView: UIView?) -> UIView?](tvinterfacecreating/makeview(element:existingview:).md)
+- [func makeView(element: TVViewElement, existingView: UIView?) -> UIView?](./makeview%28element,existingview%29.md)
   Returns a view for a view element.
-- [func playerViewController(for: TVPlayer) -> UIViewController?](tvinterfacecreating/playerviewcontroller(for:).md)
+- [func playerViewController(for: TVPlayer) -> UIViewController?](./playerviewcontroller%28for%29.md)
   Returns the custom player user interface for a custom player.
 
 

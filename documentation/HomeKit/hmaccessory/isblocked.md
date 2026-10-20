@@ -1,7 +1,8 @@
 # isBlocked
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the accessory is blocked.
 
@@ -19,9 +20,14 @@ A Boolean value indicating whether the accessory is blocked.
 var isBlocked: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isBlocked) BOOL blocked;
+```
+
 ## See Also
 
-- [var isReachable: Bool](hmaccessory/isreachable.md)
+### Getting accessory state
+- [var isReachable: Bool](./isreachable.md)
   A Boolean value indicating whether the accessory can be communicated with in the current network environment.
 
 

@@ -1,7 +1,8 @@
 # matching(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Align to calendar components.
 

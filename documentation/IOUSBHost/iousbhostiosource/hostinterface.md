@@ -1,7 +1,8 @@
 # hostInterface
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interface for the input/output source.
 
@@ -15,11 +16,16 @@ The interface for the input/output source.
 var hostInterface: IOUSBHostInterface { get }
 ```
 
+```objc
+@property (readonly) IOUSBHostInterface * hostInterface;
+```
+
 ## See Also
 
-- [var deviceAddress: Int](iousbhostiosource/deviceaddress.md)
+### Obtaining Device Information
+- [var deviceAddress: Int](./deviceaddress.md)
   The device’s bus address.
-- [var endpointAddress: Int](iousbhostiosource/endpointaddress.md)
+- [var endpointAddress: Int](./endpointaddress.md)
   The pipe or stream’s endpoint address.
 
 

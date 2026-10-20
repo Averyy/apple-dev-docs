@@ -1,15 +1,16 @@
 # AudioUnitRemoteControlEvent.toggleRecord
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 case toggleRecord
 ```
 
+```c
+kAudioUnitRemoteControlEvent_ToggleRecord
+```
+
 ## See Also
 
-- [AudioUnitRemoteControlEvent.rewind](audiounitremotecontrolevent/rewind.md)
-- [AudioUnitRemoteControlEvent.togglePlayPause](audiounitremotecontrolevent/toggleplaypause.md)
+### Constants
+- [AudioUnitRemoteControlEvent.rewind](./rewind.md)
+- [AudioUnitRemoteControlEvent.togglePlayPause](./toggleplaypause.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MAXIMUM_UNMAP_BLOCK_DESCRIPTOR_COUNT
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt32 MAXIMUM_UNMAP_BLOCK_DESCRIPTOR_COUNT;
 ```
 

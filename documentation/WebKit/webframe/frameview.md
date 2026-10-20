@@ -1,12 +1,13 @@
 # frameView
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web frame’s view object.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The web frame’s view object.
 var frameView: WebFrameView! { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) WebFrameView * frameView;
+```
+
 ## See Also
 
-- [var parent: WebFrame!](webframe/parent.md)
+### Getting Related Frames and Views
+- [var parent: WebFrame!](./parent.md)
   The web frame’s parent web frame.
-- [var childFrames: [Any]!](webframe/childframes.md)
+- [var childFrames: [Any]!](./childframes.md)
   The frames of the web frame’s immediate children.
-- [var webView: WebView!](webframe/webview.md)
+- [var webView: WebView!](./webview.md)
   The view object that manages the web frame.
 
 

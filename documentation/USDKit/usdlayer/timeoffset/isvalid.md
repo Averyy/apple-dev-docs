@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether both `offset` and `scale` are finite (not NaN or infinite).
 

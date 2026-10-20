@@ -1,7 +1,8 @@
 # remoteVideo
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A remote URL corresponding to a representative video for the URL
 

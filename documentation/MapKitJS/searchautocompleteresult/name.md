@@ -1,7 +1,8 @@
 # name
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the place.
 
@@ -10,7 +11,7 @@ The name of the place.
 
 ## Declaration
 
-```swift
+```
 name: string | null;
 ```
 

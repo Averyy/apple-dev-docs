@@ -1,7 +1,8 @@
 # PHASEConeDirectivityModelParameters
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that directs sound in a cone-shaped curve that extends from a sound source.
 
@@ -17,6 +18,10 @@ An object that directs sound in a cone-shaped curve that extends from a sound so
 
 ```swift
 class PHASEConeDirectivityModelParameters
+```
+
+```objc
+@interface PHASEConeDirectivityModelParameters : PHASEDirectivityModelParameters
 ```
 
 #### Overview
@@ -76,38 +81,39 @@ coneSegment2.outerGain = .5f;
 spatialMixer.listenerDirectivityModelParameters = simpleCone;
 ```
 
-![An illustration of two different cone directivity configurations. On the left, a narrow cone contains a slightly narrower cone. A callout extends from the outer cone’s point that indicates its angle is 40 degrees. A callout extends from the inner cone’s point that indicates its angle is 30 degrees. On the right, a wide cone rests inside a slightly wider cone. A callout extends from the outer cone’s point that indicates its angle is 80 degrees. A callout extends from the inner cone’s point that indicates its angle is 60 degrees. In both configurations, a sphere rests on the cone’s point to indicate the user’s position in relation to the cone. ](/images/com.apple.phase/media-3887365@2x.png)
+![An illustration of two different cone directivity configurations. On the left, a narrow cone contains a slightly narrower cone. A callout extends from the outer cone’s point that indicates its angle is 40 degrees. A callout extends from the inner cone’s point that indicates its angle is 30 degrees. On the right, a wide cone rests inside a slightly wider cone. A callout extends from the outer cone’s point that indicates its angle is 80 degrees. A callout extends from the inner cone’s point that indicates its angle is 60 degrees. In both configurations, a sphere rests on the cone’s point to indicate the user’s position in relation to the cone. ](https://developer.apple.com/tutorials/images/com.apple.phase/media-3887365@2x.png)
 
 ## Topics
 
 ### Creating the Cone Directivity Model Parameters
-- [init(subbandParameters: [PHASEConeDirectivityModelSubbandParameters])](phaseconedirectivitymodelparameters/init(subbandparameters:).md)
+- [init(subbandParameters: [PHASEConeDirectivityModelSubbandParameters])](./phaseconedirectivitymodelparameters/init%28subbandparameters%29.md)
   Creates an object that directs sound in a cone-shaped curve that extends from a sound source.
 ### Defining Subbands
-- [var subbandParameters: [PHASEConeDirectivityModelSubbandParameters]](phaseconedirectivitymodelparameters/subbandparameters.md)
+- [var subbandParameters: [PHASEConeDirectivityModelSubbandParameters]](./phaseconedirectivitymodelparameters/subbandparameters.md)
   An array of frequencies that describe varying sound emission across the spectrum.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEDirectivityModelParameters](phasedirectivitymodelparameters.md)
+- [PHASEDirectivityModelParameters](./phasedirectivitymodelparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASECardioidDirectivityModelParameters](phasecardioiddirectivitymodelparameters.md)
+### Sound Directivity
+- [class PHASECardioidDirectivityModelParameters](./phasecardioiddirectivitymodelparameters.md)
   An object that directs sound in a heart-shaped curve surrounding a sound source.
-- [class PHASECardioidDirectivityModelSubbandParameters](phasecardioiddirectivitymodelsubbandparameters.md)
+- [class PHASECardioidDirectivityModelSubbandParameters](./phasecardioiddirectivitymodelsubbandparameters.md)
   A data set that projects sound of a certain frequency outward in the shape of a heart.
-- [class PHASEConeDirectivityModelSubbandParameters](phaseconedirectivitymodelsubbandparameters.md)
+- [class PHASEConeDirectivityModelSubbandParameters](./phaseconedirectivitymodelsubbandparameters.md)
   A data set that projects sound of a certain frequency outward in the shape of a cone.
-- [class PHASEDirectivityModelParameters](phasedirectivitymodelparameters.md)
+- [class PHASEDirectivityModelParameters](./phasedirectivitymodelparameters.md)
   A base class for objects that direct sound.
 
 

@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance to the connection that counts as being close enough to use it.
 

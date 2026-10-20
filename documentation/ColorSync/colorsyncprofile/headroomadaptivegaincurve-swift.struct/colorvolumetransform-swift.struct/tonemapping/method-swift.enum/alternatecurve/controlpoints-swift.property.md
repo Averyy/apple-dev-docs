@@ -1,7 +1,8 @@
 # controlPoints
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Spline control points defining a gain curve.
 

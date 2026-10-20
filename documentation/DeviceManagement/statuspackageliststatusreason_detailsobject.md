@@ -1,7 +1,8 @@
 # StatusPackageListStatusReason_DetailsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains additional details about the state.
 
@@ -10,7 +11,7 @@ A dictionary that contains additional details about the state.
 
 ## Declaration
 
-```swift
+```
 object StatusPackageListStatusReason_DetailsObject
 ```
 

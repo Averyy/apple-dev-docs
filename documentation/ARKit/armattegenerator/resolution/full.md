@@ -1,7 +1,8 @@
 # ARMatteGenerator.Resolution.full
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that specifies the full camera image resolution.
 
@@ -15,9 +16,14 @@ An option that specifies the full camera image resolution.
 case full
 ```
 
+```c
+ARMatteResolutionFull
+```
+
 ## See Also
 
-- [ARMatteGenerator.Resolution.half](armattegenerator/resolution/half.md)
+### Choosing a Resolution Option
+- [ARMatteGenerator.Resolution.half](./half.md)
   An option that specifies half of the camera image resolution.
 
 

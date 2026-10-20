@@ -1,7 +1,8 @@
 # HMCharacteristicValueFilterChange
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the filter change indication.
 
@@ -19,25 +20,29 @@ Possible values for the filter change indication.
 enum HMCharacteristicValueFilterChange
 ```
 
+```c
+enum HMCharacteristicValueFilterChange : NSInteger;
+```
+
 ## Topics
 
 ### Filter Change Indicator
-- [HMCharacteristicValueFilterChange.notNeeded](hmcharacteristicvaluefilterchange/notneeded.md)
+- [HMCharacteristicValueFilterChange.notNeeded](./hmcharacteristicvaluefilterchange/notneeded.md)
   The filter doesn’t need to be changed.
-- [HMCharacteristicValueFilterChange.needed](hmcharacteristicvaluefilterchange/needed.md)
+- [HMCharacteristicValueFilterChange.needed](./hmcharacteristicvaluefilterchange/needed.md)
   The filter needs to be changed.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluefilterchange/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluefilterchange/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

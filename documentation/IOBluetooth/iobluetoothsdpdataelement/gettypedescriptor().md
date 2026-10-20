@@ -1,17 +1,22 @@
 # getTypeDescriptor()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the SDP spec defined data element type descriptor for the target data element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getTypeDescriptor() -> BluetoothSDPDataElementTypeDescriptor
+```
+
+```objc
+- (BluetoothSDPDataElementTypeDescriptor) getTypeDescriptor;
 ```
 
 #### Return Value

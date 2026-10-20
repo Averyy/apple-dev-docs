@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view’s background, lighting, and acoustic properties.
 
@@ -21,9 +22,10 @@ The view’s background, lighting, and acoustic properties.
 
 ## See Also
 
-- [var physicsOrigin: Entity?](arview/physicsorigin.md)
+### Providing environmental context
+- [var physicsOrigin: Entity?](./physicsorigin.md)
   The entity that defines the origin of the scene’s physics simulation.
-- [var audioListener: Entity?](arview/audiolistener.md)
+- [var audioListener: Entity?](./audiolistener.md)
   The entity that defines the listener position and orientation for spatial audio.
 
 

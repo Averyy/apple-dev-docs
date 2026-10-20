@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request to fetch items grouped by sections from the library.
 

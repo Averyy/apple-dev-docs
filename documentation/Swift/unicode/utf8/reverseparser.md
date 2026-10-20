@@ -1,7 +1,8 @@
 # Unicode.UTF8.ReverseParser
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that can be used to parse a reversed sequence of `CodeUnits` into `EncodedScalar`s.
 
@@ -24,20 +25,20 @@ struct ReverseParser
 ## Topics
 
 ### Initializers
-- [init()](unicode/utf8/reverseparser/init.md)
+- [init()](./reverseparser/init%28%29.md)
   Constructs an instance that can be used to begin parsing `CodeUnit`s at any Unicode scalar boundary.
 ### Type Aliases
-- [Unicode.UTF8.ReverseParser.Encoding](unicode/utf8/reverseparser/encoding.md)
+- [Unicode.UTF8.ReverseParser.Encoding](./reverseparser/encoding.md)
   The encoding with which this parser is associated
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../../bitwisecopyable.md)
+- [Copyable](../../copyable.md)
+- [Escapable](../../escapable.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The index path of the item in the collection view, if any.
@@ -18,13 +19,18 @@ The index path of the item in the collection view, if any.
 var sourceIndexPath: IndexPath? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSIndexPath * sourceIndexPath;
+```
+
 #### Discussion
 
 If the item originated from the collection view, this property contains the item’s original index path.
 
 ## See Also
 
-- [var previewSize: CGSize](uicollectionviewdropitem/previewsize.md)
+### Getting the Item Information
+- [var previewSize: CGSize](./previewsize.md)
   The size of the drag item’s preview.
 
 

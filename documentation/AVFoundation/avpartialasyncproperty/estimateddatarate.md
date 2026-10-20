@@ -1,7 +1,8 @@
 # estimatedDataRate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The estimated data rate, in bits per second, of the media that the track references.
 
@@ -20,15 +21,18 @@ The estimated data rate, in bits per second, of the media that the track referen
 static var estimatedDataRate: AVAsyncProperty<Root, Float> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [static var timeRange: AVAsyncProperty<Root, CMTimeRange>](avpartialasyncproperty/timerange.md)
+### Loading temporal information
+- [static var timeRange: AVAsyncProperty<Root, CMTimeRange>](./timerange.md)
   The time range of the track within the overall timeline of the asset.
-- [static var naturalTimeScale: AVAsyncProperty<Root, CMTimeScale>](avpartialasyncproperty/naturaltimescale.md)
+- [static var naturalTimeScale: AVAsyncProperty<Root, CMTimeScale>](./naturaltimescale.md)
   The natural time scale of the media that a track references.
 
 

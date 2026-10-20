@@ -1,7 +1,8 @@
 # roughness
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The surface roughness map.
 

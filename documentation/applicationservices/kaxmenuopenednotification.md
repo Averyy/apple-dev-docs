@@ -1,7 +1,8 @@
 # kAXMenuOpenedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A menu was opened.
 
@@ -12,6 +13,10 @@ A menu was opened.
 
 ```swift
 var kAXMenuOpenedNotification: String { get }
+```
+
+```c
+#define kAXMenuOpenedNotification
 ```
 
 

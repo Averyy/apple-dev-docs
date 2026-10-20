@@ -1,14 +1,15 @@
 # staticExecuteLogout
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOReturn staticExecuteLogout(OSObject *self, void *, void *, void *, void *);
 ```
 

@@ -1,7 +1,8 @@
 # Create a Keyword
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a new keyword in an ad group, setting the match type and optional bid amount.
 
@@ -10,11 +11,11 @@ Create a new keyword in an ad group, setting the match type and optional bid amo
 
 #### Discussion
 
-This endpoint creates one keyword per request. To create many keywords in a single call, use [`Bulk Create Keywords`](post-keywords-bulk-create.md).
+This endpoint creates one keyword per request. To create many keywords in a single call, use [`Bulk Create Keywords`](./post-keywords-bulk-create.md).
 
 Creates a keyword in an ad group. Each keyword belongs to an ad group via `adGroupId`, which is required at creation and immutable afterward. The `text` field is the search term itself and is also immutable after creation. To change a keyword’s text, delete it and create a new one.
 
-Omitting `bid` or passing `null` on create defaults the keyword to the ad group’s bid strategy. This differs from [`Update a Keyword`](put-keywords-_id_.md), where `null` isn’t accepted for `bid`. See [`Managing Keywords and Negative Keywords`](keywords-and-negative-keywords.md) for the full explanation.
+Omitting `bid` or passing `null` on create defaults the keyword to the ad group’s bid strategy. This differs from [`Update a Keyword`](./put-keywords-_id_.md), where `null` isn’t accepted for `bid`. See [Managing Keywords and Negative Keywords](./keywords-and-negative-keywords.md) for the full explanation.
 
 #### Payload Examples
 
@@ -151,7 +152,7 @@ POST /v1/keywords
 
 **Apple Maps - Category Match**:
 
-Create a category match keyword for an Apple Maps ad group. The `text` must be a Maps business category identifier from the [`Query Business Categories`](query-categories.md) endpoint.
+Create a category match keyword for an Apple Maps ad group. The `text` must be a Maps business category identifier from the [`Query Business Categories`](./query-categories.md) endpoint.
 
 ##### Request
 
@@ -200,17 +201,34 @@ POST /v1/keywords
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `KeywordCreate`
+
+## Responses
+
+- `200` OK (`KeywordResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Query Keywords](post-keywords-query.md)
+- [Query Keywords](./post-keywords-query.md)
   Query keywords using structured filters, sorting, and pagination.
-- [Get a Keyword](get-keywords-_id_.md)
+- [Get a Keyword](./get-keywords-_id_.md)
   Retrieve a single keyword by its unique identifier.
-- [Update a Keyword](put-keywords-_id_.md)
+- [Update a Keyword](./put-keywords-_id_.md)
   Update a keyword’s bid amount or status to optimize spend and control delivery for that term.
-- [Delete a Keyword](delete-keywords-_id_.md)
+- [Delete a Keyword](./delete-keywords-_id_.md)
   Soft-delete a keyword by ID, setting its deleted field to true and stopping bids on that term.
 
 

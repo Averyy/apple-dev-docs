@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct thread_exclaves_info {
     ...
 };
@@ -17,9 +17,9 @@ struct thread_exclaves_info {
 ## Topics
 
 ### Instance Properties
-- [tei_flags](thread_exclaves_info/4316373-tei_flags.md)
-- [tei_scid](thread_exclaves_info/4316374-tei_scid.md)
-- [tei_thread_offset](thread_exclaves_info/4316375-tei_thread_offset.md)
+- [tei_flags](./thread_exclaves_info/api-4316373-tei_flags.md)
+- [tei_scid](./thread_exclaves_info/api-4316374-tei_scid.md)
+- [tei_thread_offset](./thread_exclaves_info/api-4316375-tei_thread_offset.md)
 
 
 ---

@@ -1,14 +1,17 @@
 # UITextInputTextBackgroundColorKey
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The background color of the text.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 8.0 (renamed: NSAttributedString.Key.backgroundColor)
+- iPadOS 3.2+ - Deprecated in 8.0 (renamed: NSAttributedString.Key.backgroundColor)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: NSAttributedString.Key.backgroundColor)
+
+> **Deprecated**: Use [`NSBackgroundColorAttributeName`](./nsbackgroundcolorattributename.md) instead.
 
 ## Declaration
 
@@ -16,15 +19,20 @@ The background color of the text.
 let UITextInputTextBackgroundColorKey: String
 ```
 
+```c
+extern NSString * const UITextInputTextBackgroundColorKey;
+```
+
 #### Discussion
 
-The value of this key is a [`UIColor`](uicolor.md) object.
+The value of this key is a [`UIColor`](./uicolor.md) object.
 
 ## See Also
 
-- [let UITextInputTextColorKey: String](uitextinputtextcolorkey.md)
+### Deprecated
+- [let UITextInputTextColorKey: String](./uitextinputtextcolorkey.md)
   The color of the text.
-- [let UITextInputTextFontKey: String](uitextinputtextfontkey.md)
+- [let UITextInputTextFontKey: String](./uitextinputtextfontkey.md)
   The font of the text.
 
 

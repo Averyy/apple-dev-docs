@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A textual name that identifies the particular property that animates.
@@ -12,7 +13,7 @@ A textual name that identifies the particular property that animates.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ var bindTarget: BindTarget { get set }
 
 ## See Also
 
-- [var name: String](animationdefinition/name.md)
+### Configuring the animation
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var blendLayer: Int32](animationdefinition/blendlayer.md)
+- [var blendLayer: Int32](./blendlayer.md)
   The order in which the framework composites the animation.
 
 

@@ -1,7 +1,8 @@
 # buttonNumber
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of the mouse button that caused the navigation request.
 
@@ -14,13 +15,34 @@ The number of the mouse button that caused the navigation request.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+var buttonNumber: UIEvent.ButtonMask { get }
+```
+
+*macOS*
+
 ```swift
 var buttonNumber: Int { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, readonly) UIEventButtonMask buttonNumber;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly) NSInteger buttonNumber;
+```
+
 ## See Also
 
-- [var modifierFlags: UIKeyModifierFlags](wknavigationaction/modifierflags.md)
+### Inspecting user actions
+- [var modifierFlags: UIKeyModifierFlags](./modifierflags.md)
   The modifier keys that were pressed at the time of the navigation request.
 
 

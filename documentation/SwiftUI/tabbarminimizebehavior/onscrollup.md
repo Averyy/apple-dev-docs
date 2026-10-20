@@ -1,7 +1,8 @@
 # onScrollUp
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Minimize the tab bar when upwards scrolling starts. Minimizing is supported for tab bars on only iPhone.
 

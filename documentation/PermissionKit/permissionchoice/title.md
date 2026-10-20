@@ -1,7 +1,8 @@
 # title
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the choice that’s displayed to the person by the system.
 
@@ -20,7 +21,8 @@ var title: String { get set }
 
 ## See Also
 
-- [var id: String](permissionchoice/id.md)
+### Identifying permissions
+- [var id: String](./id.md)
   A unique identifier for this choice.
 
 

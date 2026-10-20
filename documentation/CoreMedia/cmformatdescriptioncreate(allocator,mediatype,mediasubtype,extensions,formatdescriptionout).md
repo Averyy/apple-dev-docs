@@ -1,7 +1,8 @@
 # CMFormatDescriptionCreate(allocator:mediaType:mediaSubType:extensions:formatDescriptionOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a format description for general use.
 
@@ -20,6 +21,10 @@ Creates a format description for general use.
 func CMFormatDescriptionCreate(allocator: CFAllocator?, mediaType: CMMediaType, mediaSubType: FourCharCode, extensions: CFDictionary?, formatDescriptionOut: UnsafeMutablePointer<CMFormatDescription?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CMFormatDescriptionCreate(CFAllocatorRef allocator, CMMediaType mediaType, FourCharCode mediaSubType, CFDictionaryRef extensions, CMFormatDescriptionRef*formatDescriptionOut);
+```
+
 #### Return Value
 
 A result code.
@@ -28,7 +33,7 @@ A result code.
 
 The system uses the default allocator if you don’t specify one. Use this to create any `CMFormatDescription` that is composed solely of extensions, and for which `CFEqual`() of the extensions dictionaries is a valid test for Format Description equality.
 
-Don’t call this method for media types that have specific create functions, such as [`CMAudioFormatDescriptionCreate(allocator:asbd:layoutSize:layout:magicCookieSize:magicCookie:extensions:formatDescriptionOut:)`](cmaudioformatdescriptioncreate(allocator:asbd:layoutsize:layout:magiccookiesize:magiccookie:extensions:formatdescriptionout:).md) and [`CMVideoFormatDescriptionCreate(allocator:codecType:width:height:extensions:formatDescriptionOut:)`](cmvideoformatdescriptioncreate(allocator:codectype:width:height:extensions:formatdescriptionout:).md).
+Don’t call this method for media types that have specific create functions, such as [`CMAudioFormatDescriptionCreate(allocator:asbd:layoutSize:layout:magicCookieSize:magicCookie:extensions:formatDescriptionOut:)`](./cmaudioformatdescriptioncreate%28allocator,asbd,layoutsize,layout,magiccookiesize,magiccookie,extensions,formatdescriptionout%29.md) and [`CMVideoFormatDescriptionCreate(allocator:codecType:width:height:extensions:formatDescriptionOut:)`](./cmvideoformatdescriptioncreate%28allocator,codectype,width,height,extensions,formatdescriptionout%29.md).
 
 ## Parameters
 

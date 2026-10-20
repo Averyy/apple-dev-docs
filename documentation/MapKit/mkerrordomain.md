@@ -1,18 +1,19 @@
 # MKErrorDomain
 
 **Framework**: MapKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for MapKit.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 - tvOS 9.2+
-- visionOS ?+
-- watchOS ?+
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The error domain for MapKit.
 let MKErrorDomain: String
 ```
 
+```c
+extern NSString * MKErrorDomain;
+```
+
 ## See Also
 
-- [struct MKError](mkerror.md)
+### Errors
+- [struct MKError](./mkerror.md)
   Error constants for the MapKit framework.
-- [MKError.Code](mkerror/code.md)
+- [MKError.Code](./mkerror/code.md)
   Error constants for the MapKit framework.
 
 

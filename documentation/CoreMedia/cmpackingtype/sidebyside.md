@@ -1,7 +1,8 @@
 # CMPackingType.sideBySide
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The video contains packed frames that have a left eye image on the left and right eye image on the right.
 
@@ -20,15 +21,20 @@ The video contains packed frames that have a left eye image on the left and righ
 case sideBySide
 ```
 
+```c
+kCMPackingType_SideBySide
+```
+
 #### Discussion
 
 For side-by-side packed frames, the width of a frame in video data is twice as wide as the video displayed.
 
 ## See Also
 
-- [CMPackingType.none](cmpackingtype/none.md)
+### Frame Arrangement
+- [CMPackingType.none](./none.md)
   Each frame contains only a single image, and isn’t frame-packed.
-- [CMPackingType.overUnder](cmpackingtype/overunder.md)
+- [CMPackingType.overUnder](./overunder.md)
   The video contains packed frames that have a left eye image on the top and right eye image on the bottom.
 
 

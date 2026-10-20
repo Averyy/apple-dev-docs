@@ -1,6 +1,7 @@
 # Tween sample data
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 #### Overview
 
@@ -44,10 +45,11 @@ Tweening can also be used outside of movies by applications or other software th
 
 ## See Also
 
-- [Tween sample description](tween_sample_description.md)
+### Storing tween media
+- [Tween sample description](./tween_sample_description.md)
   An atom that contains information for converting from media time to sample number to sample location for tweens.
-- [Tween type categories](tween_type_categories.md)
-- [Tween QT atom container](tween_qt_atom_container.md)
+- [Tween type categories](./tween_type_categories.md)
+- [Tween QT atom container](./tween_qt_atom_container.md)
   Specify the characteristics of a tween with atoms in a tween QT atom container.
 
 

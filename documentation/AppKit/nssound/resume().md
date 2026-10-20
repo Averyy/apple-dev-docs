@@ -1,12 +1,13 @@
 # resume()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes audio playback.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ Resumes audio playback.
 func resume() -> Bool
 ```
 
+```objc
+- (BOOL) resume;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when playback is resumed, [`false`](https://developer.apple.com/documentation/swift/false) when playback is in progress or when an error occurred.
+[`true`](../../Swift/true.md) when playback is resumed, [`false`](../../Swift/false.md) when playback is in progress or when an error occurred.
 
 #### Discussion
 
-Assumes the receiver has been previously paused by sending it [`NSSound`](nssound.md).
+Assumes the receiver has been previously paused by sending it [`NSSound`](../nssound.md).
 
 ## See Also
 
-- [static func beep()](nssound/beep.md)
+### Playing Sounds
+- [static func beep()](./beep%28%29.md)
   Plays the system beep.
-- [var isPlaying: Bool](nssound/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean that indicates whether the sound is playing its audio data.
-- [func pause() -> Bool](nssound/pause.md)
+- [func pause() -> Bool](./pause%28%29.md)
   Pauses audio playback.
-- [func play() -> Bool](nssound/play.md)
+- [func play() -> Bool](./play%28%29.md)
   Initiates audio playback.
-- [func stop() -> Bool](nssound/stop.md)
+- [func stop() -> Bool](./stop%28%29.md)
   Concludes audio playback.
 
 

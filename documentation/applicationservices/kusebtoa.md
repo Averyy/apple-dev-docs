@@ -1,7 +1,8 @@
 # kUseBtoA
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Use 'B2A*' tag from this profile or equivalent
 

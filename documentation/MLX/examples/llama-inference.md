@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/examples/llama-inference.html
 
 # LLM inference
 
-**
-
-- [.rst](../_sources/examples/llama-inference.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# LLM inference
-
- Table of contents 
-
-## Contents
-
-# LLM inference
-
 MLX enables efficient inference of large-ish transformers on Apple silicon
 without compromising on ease of use. In this example we will create an
 inference script for the Llama family of transformer models in which the model
@@ -50,8 +23,8 @@ positional encoding. [[1]](#id4) In addition, our attention layer will optionall
 key/value cache that will be concatenated with the provided keys and values to
 support efficient inference.
 
-Our implementation uses [mlx.nn.Linear](../python/nn/_autosummary/mlx.nn.Linear.html#mlx.nn.Linear) for all the projections and
-[mlx.nn.RoPE](../python/nn/_autosummary/mlx.nn.RoPE.html#mlx.nn.RoPE) for the positional encoding.
+Our implementation uses [mlx.nn.Linear](../python/nn/_autosummary/mlx.nn.Linear.md#mlx.nn.Linear) for all the projections and
+[mlx.nn.RoPE](../python/nn/_autosummary/mlx.nn.RoPE.md#mlx.nn.RoPE) for the positional encoding.
 
 ```
 import mlx.core as mx
@@ -110,7 +83,7 @@ class LlamaAttention(nn.Module):
 
 The other component of the Llama model is the encoder layer which uses RMS
 normalization [[2]](#id5) and SwiGLU. [[3]](#id6) For RMS normalization we will use
-[mlx.nn.RMSNorm](../python/nn/_autosummary/mlx.nn.RMSNorm.html#mlx.nn.RMSNorm) that is already provided in `mlx.nn`.
+[mlx.nn.RMSNorm](../python/nn/_autosummary/mlx.nn.RMSNorm.md#mlx.nn.RMSNorm) that is already provided in `mlx.nn`.
 
 ```
 class LlamaEncoderLayer(nn.Module):
@@ -144,7 +117,7 @@ class LlamaEncoderLayer(nn.Module):
 ### Full model
 
 To implement any Llama model we simply have to combine `LlamaEncoderLayer`
-instances with an [mlx.nn.Embedding](../python/nn/_autosummary/mlx.nn.Embedding.html#mlx.nn.Embedding) to embed the input tokens.
+instances with an [mlx.nn.Embedding](../python/nn/_autosummary/mlx.nn.Embedding.md#mlx.nn.Embedding) to embed the input tokens.
 
 ```
 class Llama(nn.Module):
@@ -321,10 +294,10 @@ if __name__ == "__main__":
 
 After converting the weights to be compatible to our implementation, all that is
 left is to load them from disk and we can finally use the LLM to generate text.
-We can load numpy format files using the [mlx.core.load()](../python/_autosummary/mlx.core.load.html#mlx.core.load) operation.
+We can load numpy format files using the [mlx.core.load()](../python/_autosummary/mlx.core.load.md#mlx.core.load) operation.
 
 To create a parameter dictionary from the key/value representation of NPZ files
-we will use the [mlx.utils.tree_unflatten()](../python/_autosummary/mlx.utils.tree_unflatten.html#mlx.utils.tree_unflatten) helper method as follows:
+we will use the [mlx.utils.tree_unflatten()](../python/_autosummary/mlx.utils.tree_unflatten.md#mlx.utils.tree_unflatten) helper method as follows:
 
 ```
 from mlx.utils import tree_unflatten
@@ -332,7 +305,7 @@ from mlx.utils import tree_unflatten
 model.update(tree_unflatten(list(mx.load(weight_file).items())))
 ```
 
-[mlx.utils.tree_unflatten()](../python/_autosummary/mlx.utils.tree_unflatten.html#mlx.utils.tree_unflatten) will take keys from the NPZ file that look
+[mlx.utils.tree_unflatten()](../python/_autosummary/mlx.utils.tree_unflatten.md#mlx.utils.tree_unflatten) will take keys from the NPZ file that look
 like `layers.2.attention.query_proj.weight` and will transform them to
 
 ```
@@ -407,5 +380,3 @@ Advances in Neural Information Processing Systems, 32.
 
 Shazeer, N., 2020. Glu variants improve transformer. arXiv preprint
 arXiv:2002.05202.
-
-** Contents

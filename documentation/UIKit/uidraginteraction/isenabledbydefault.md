@@ -1,7 +1,8 @@
 # isEnabledByDefault
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A device-dependent Boolean value that indicates whether a newly-instantiated drag interaction is allowed to participate in a drag activity.
 
@@ -17,9 +18,14 @@ A device-dependent Boolean value that indicates whether a newly-instantiated dra
 class var isEnabledByDefault: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, getter=isEnabledByDefault) BOOL enabledByDefault;
+```
+
 ## See Also
 
-- [var isEnabled: Bool](uidraginteraction/isenabled.md)
+### Enabling the interactions
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that specifies whether the drag interaction responds to touches and is allowed to participate in a drag activity.
 
 

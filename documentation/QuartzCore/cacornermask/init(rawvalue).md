@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -19,10 +20,11 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [static var layerMaxXMaxYCorner: CACornerMask](cacornermask/layermaxxmaxycorner.md)
-- [static var layerMaxXMinYCorner: CACornerMask](cacornermask/layermaxxminycorner.md)
-- [static var layerMinXMaxYCorner: CACornerMask](cacornermask/layerminxmaxycorner.md)
-- [static var layerMinXMinYCorner: CACornerMask](cacornermask/layerminxminycorner.md)
+### Constants
+- [static var layerMaxXMaxYCorner: CACornerMask](./layermaxxmaxycorner.md)
+- [static var layerMaxXMinYCorner: CACornerMask](./layermaxxminycorner.md)
+- [static var layerMinXMaxYCorner: CACornerMask](./layerminxmaxycorner.md)
+- [static var layerMinXMinYCorner: CACornerMask](./layerminxminycorner.md)
 
 
 ---

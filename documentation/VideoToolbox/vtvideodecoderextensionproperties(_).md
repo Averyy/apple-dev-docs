@@ -1,7 +1,8 @@
 # VTVideoDecoderExtensionProperties(_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
@@ -14,7 +15,8 @@ func VTVideoDecoderExtensionProperties(_ formatDesc: CMFormatDescription) throws
 
 ## See Also
 
-- [Decompression Properties](decompression-properties.md)
+### Configuring a Session
+- [Decompression Properties](./decompression-properties.md)
   Properties used to configure a VideoToolbox decompression session.
 
 

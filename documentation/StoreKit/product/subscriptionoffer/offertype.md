@@ -1,7 +1,8 @@
 # Product.SubscriptionOffer.OfferType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The types of offers for auto-renewable subscriptions.
 
@@ -23,34 +24,35 @@ struct OfferType
 ## Topics
 
 ### Getting offer types
-- [static let introductory: Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype/introductory.md)
+- [static let introductory: Product.SubscriptionOffer.OfferType](./offertype/introductory.md)
   An introductory offer for an auto-renewable subscription.
-- [static let promotional: Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype/promotional.md)
+- [static let promotional: Product.SubscriptionOffer.OfferType](./offertype/promotional.md)
   A promotional offer for an auto-renewable subscription.
-- [static let winBack: Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype/winback.md)
+- [static let winBack: Product.SubscriptionOffer.OfferType](./offertype/winback.md)
   A win-back offer for an auto-renewable subscription.
 ### Getting a localized description
-- [var localizedDescription: String](product/subscriptionoffer/offertype/localizeddescription.md)
+- [var localizedDescription: String](./offertype/localizeddescription.md)
   A string that contains the localized description of the offer type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+### Offers
+- [Supporting offer codes in your app](../../supporting-offer-codes-in-your-app.md)
   Enable customers to redeem offer codes through the App Store or within your app.
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Supporting win-back offers in your app](../../supporting-win-back-offers-in-your-app.md)
   Re-engage previous subscribers with a free or discounted offer for an auto-renewable subscription, for a specific duration.
-- [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Merchandising win-back offers in your app](../../merchandising-win-back-offers-in-your-app.md)
   Present win-back offers to eligible customers in your app with the win-back offer sheet or by implementing custom merchandising.
-- [Product.SubscriptionOffer](product/subscriptionoffer.md)
+- [Product.SubscriptionOffer](../subscriptionoffer.md)
   Information about a subscription offer that you configure in App Store Connect.
 
 

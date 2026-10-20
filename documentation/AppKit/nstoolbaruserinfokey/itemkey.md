@@ -1,7 +1,8 @@
 # itemKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that specifies the toolbar item associated with the notification.
 
@@ -15,9 +16,13 @@ A key that specifies the toolbar item associated with the notification.
 static let itemKey: NSToolbarUserInfoKey
 ```
 
+```c
+extern NSToolbarUserInfoKey const NSToolbarItemKey;
+```
+
 #### Discussion
 
-The value of this key is an [`NSToolbarItem`](nstoolbaritem.md) object.
+The value of this key is an [`NSToolbarItem`](../nstoolbaritem.md) object.
 
 
 ---

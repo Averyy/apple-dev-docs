@@ -1,18 +1,21 @@
 # token(for:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an external purchase token of the specified type.
 
 **Availability**:
-- iOS 18.1+
-- iPadOS 18.1+
-- Mac Catalyst 18.1+
-- macOS 15.1+
-- tvOS 18.1+
-- visionOS 2.1+
-- watchOS 11.1+
+- iOS 18.1+ - Deprecated in 27.2
+- iPadOS 18.1+ - Deprecated in 27.2
+- Mac Catalyst 18.1+ - Deprecated in 27.2
+- macOS 15.1+ - Deprecated in 27.2
+- tvOS 18.1+ - Deprecated in 27.2
+- visionOS 2.1+ - Deprecated in 27.2
+- watchOS 11.1+ - Deprecated in 27.2
+
+> **Deprecated**: Use `token(for:)` with a `TokenType` instead.
 
 ## Declaration
 
@@ -24,7 +27,7 @@ static func token(for tokenType: String) async throws -> ExternalPurchaseCustomL
 
 If `isEligible` is `false`, this method will always fail.
 
-> **Note**: A `StoreKitError`.
+> **Throws**: A `StoreKitError`.
 
 ## Parameters
 
@@ -32,9 +35,10 @@ If `isEligible` is `false`, this method will always fail.
 
 ## See Also
 
-- [static func showNotice(type: ExternalPurchaseCustomLink.NoticeType) async throws -> ExternalPurchaseCustomLink.NoticeResult](externalpurchasecustomlink/shownotice(type:).md)
+### Deprecated methods and values
+- [static func showNotice(type: ExternalPurchaseCustomLink.NoticeType) async throws -> ExternalPurchaseCustomLink.NoticeResult](./shownotice%28type%29.md)
   Displays the system disclosure notice sheet and asks the customer whether to continue.
-- [ExternalPurchaseCustomLink.NoticeType](externalpurchasecustomlink/noticetype.md)
+- [ExternalPurchaseCustomLink.NoticeType](./noticetype.md)
   The custom link out style that informs the type of disclosure notice to display.
 
 

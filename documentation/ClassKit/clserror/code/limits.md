@@ -1,7 +1,8 @@
 # CLSError.Code.limits
 
 **Framework**: ClassKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A limit has been exceeded.
 
@@ -18,26 +19,31 @@ A limit has been exceeded.
 case limits
 ```
 
+```c
+CLSErrorCodeLimits
+```
+
 ## See Also
 
-- [CLSError.Code.none](clserror/code/none.md)
+### Error codes
+- [CLSError.Code.none](./none.md)
   No error.
-- [CLSError.Code.authorizationDenied](clserror/code/authorizationdenied.md)
+- [CLSError.Code.authorizationDenied](./authorizationdenied.md)
   The app isn’t authorized to perform the requested operation.
-- [CLSError.Code.classKitUnavailable](clserror/code/classkitunavailable.md)
+- [CLSError.Code.classKitUnavailable](./classkitunavailable.md)
   ClassKit isn’t available on this device.
-- [CLSError.Code.databaseInaccessible](clserror/code/databaseinaccessible.md)
+- [CLSError.Code.databaseInaccessible](./databaseinaccessible.md)
   ClassKit isn’t accessible because the device is locked.
-- [CLSError.Code.invalidAccountCredentials](clserror/code/invalidaccountcredentials.md)
-- [CLSError.Code.invalidArgument](clserror/code/invalidargument.md)
+- [CLSError.Code.invalidAccountCredentials](./invalidaccountcredentials.md)
+- [CLSError.Code.invalidArgument](./invalidargument.md)
   An invalid argument was provided to the API.
-- [CLSError.Code.invalidCreate](clserror/code/invalidcreate.md)
+- [CLSError.Code.invalidCreate](./invalidcreate.md)
   An attempt to save a new object that already exists in the data store failed.
-- [CLSError.Code.invalidModification](clserror/code/invalidmodification.md)
+- [CLSError.Code.invalidModification](./invalidmodification.md)
   An attempt to modify a read-only object failed.
-- [CLSError.Code.invalidUpdate](clserror/code/invalidupdate.md)
+- [CLSError.Code.invalidUpdate](./invalidupdate.md)
   ClassKit failed to save an updated object in the data store.
-- [CLSError.Code.partialFailure](clserror/code/partialfailure.md)
+- [CLSError.Code.partialFailure](./partialfailure.md)
   ClassKit encountered more than one error.
 
 

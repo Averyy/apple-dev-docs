@@ -1,7 +1,8 @@
 # UIMenu.ElementSize.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Automatically determine the appropriate element size for the current context.
 
@@ -16,6 +17,10 @@ Automatically determine the appropriate element size for the current context.
 
 ```swift
 case automatic
+```
+
+```c
+UIMenuElementSizeAutomatic
 ```
 
 

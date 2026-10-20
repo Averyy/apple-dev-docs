@@ -1,17 +1,18 @@
 # dispatchEvent
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dispatches a HID event to the system.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchEvent(IOHIDEvent *event);
 ```
 
@@ -25,7 +26,8 @@ This method is a funnel point for dispatching events to the system’s registere
 
 ## See Also
 
-- [createReportPool](iouserhideventservice/createreportpool.md)
+### Performing Private Tasks
+- [createReportPool](./createreportpool.md)
 
 
 ---

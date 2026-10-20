@@ -1,12 +1,13 @@
 # NSSlider.TickMarkPosition.above
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating that tick marks are displayed above the slider.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A constant indicating that tick marks are displayed above the slider.
 case above
 ```
 
+```c
+NSTickMarkPositionAbove
+```
+
 ## See Also
 
-- [NSSlider.TickMarkPosition.below](nsslider/tickmarkposition-swift.enum/below.md)
+### Configuring Horizontal Sliders
+- [NSSlider.TickMarkPosition.below](./below.md)
   A constant indicating that tick marks are displayed below the slider.
 
 

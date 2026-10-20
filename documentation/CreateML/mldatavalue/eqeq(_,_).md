@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two data values wrap the same underlying value.
 

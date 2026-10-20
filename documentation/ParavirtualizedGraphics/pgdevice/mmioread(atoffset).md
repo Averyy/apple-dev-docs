@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reads data from the virtual graphics device’s memory-mapped I/O region.
@@ -14,6 +15,10 @@ Reads data from the virtual graphics device’s memory-mapped I/O region.
 
 ```swift
 func mmioRead(atOffset offset: Int) -> UInt32
+```
+
+```objc
+- (uint32_t) mmioReadAtOffset:(size_t) offset;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ Call this method whenever the guest virtual machine reads from the graphics devi
 
 ## See Also
 
-- [func mmioWrite(atOffset: Int, value: UInt32)](pgdevice/mmiowrite(atoffset:value:).md)
+### Handling Memory-Mapped I/O
+- [func mmioWrite(atOffset: Int, value: UInt32)](./mmiowrite%28atoffset,value%29.md)
   Writes data to the virtual graphics device’s memory-mapped I/O region.
 
 

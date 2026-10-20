@@ -1,7 +1,8 @@
 # multipliedFullWidth(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tuple containing the high and low parts of the result of multiplying this value by the given value.
 

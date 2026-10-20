@@ -1,7 +1,8 @@
 # VideoPlayerComponent.SpatialVideoMode.screen
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Video Screen mode - spatial video rending of video as mono/stereo on screen without portal rendering or treatment.
 

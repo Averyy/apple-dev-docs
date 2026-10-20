@@ -1,7 +1,8 @@
 # interruptedPurchasesEnabled
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the test environment simulates an interrupted purchase.
 
@@ -20,17 +21,22 @@ A Boolean value that determines whether the test environment simulates an interr
 var interruptedPurchasesEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL interruptedPurchasesEnabled;
+```
+
 #### Discussion
 
 The default value is `false`. Enabling this property causes all purchases to fail until you disable it.
 
-During testing, resolve the interrupted purchase by calling [`resolveIssueForTransaction(identifier:)`](sktestsession/resolveissuefortransaction(identifier:).md) for the affected transaction.
+During testing, resolve the interrupted purchase by calling [`resolveIssueForTransaction(identifier:)`](./resolveissuefortransaction%28identifier%29.md) for the affected transaction.
 
-Changing this property overrides its setting in the StoreKit configuration file for this test session. Call [`resetToDefaultState()`](sktestsession/resettodefaultstate().md) to revert all settings to those in the configuration file.
+Changing this property overrides its setting in the StoreKit configuration file for this test session. Call [`resetToDefaultState()`](./resettodefaultstate%28%29.md) to revert all settings to those in the configuration file.
 
 ## See Also
 
-- [func resolveIssueForTransaction(identifier: Int) throws](sktestsession/resolveissuefortransaction(identifier:).md)
+### Testing interrupted purchases
+- [func resolveIssueForTransaction(identifier: Int) throws](./resolveissuefortransaction%28identifier%29.md)
   Simulates resolving an issue when you test interrupted purchases or billing retry scenarios.
 
 

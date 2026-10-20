@@ -1,7 +1,8 @@
 # skipCommissioningComplete
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var skipCommissioningComplete: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL skipCommissioningComplete;
 ```
 
 

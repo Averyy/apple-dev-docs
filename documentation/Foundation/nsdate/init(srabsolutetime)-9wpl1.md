@@ -1,7 +1,8 @@
 # init(SRAbsoluteTime:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -12,6 +13,10 @@
 
 ```swift
 convenience init(SRAbsoluteTime time: SRAbsoluteTime)
+```
+
+```objc
++ (instancetype) dateWithSRAbsoluteTime:(SRAbsoluteTime) time;
 ```
 
 

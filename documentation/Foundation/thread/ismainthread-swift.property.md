@@ -1,7 +1,8 @@
 # isMainThread
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is the main thread.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the receiver is the main thread.
 var isMainThread: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isMainThread;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is the main thread, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver is the main thread, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class var isMainThread: Bool](thread/ismainthread-swift.type.property.md)
+### Working with the Main Thread
+- [class var isMainThread: Bool](./ismainthread-swift.type.property.md)
   Returns a Boolean value that indicates whether the current thread is the main thread.
-- [class var main: Thread](thread/main.md)
+- [class var main: Thread](./main.md)
   Returns the `NSThread` object representing the main thread.
 
 

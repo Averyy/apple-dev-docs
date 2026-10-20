@@ -1,7 +1,8 @@
 # ALaw
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The aLaw 2:1 format.
 
@@ -10,7 +11,7 @@ The aLaw 2:1 format.
 
 ## Declaration
 
-```swift
+```c
 ALaw
 ```
 
@@ -20,9 +21,10 @@ This format uses no flags.
 
 ## See Also
 
-- [ULaw](audiodriverkit/iouseraudioformatid/ulaw.md)
+### Narrowband Formats
+- [ULaw](./ulaw.md)
   The µLaw 2:1 format.
-- [MicrosoftGSM](audiodriverkit/iouseraudioformatid/microsoftgsm.md)
+- [MicrosoftGSM](./microsoftgsm.md)
   The Microsoft GSM 6.10 format.
 
 

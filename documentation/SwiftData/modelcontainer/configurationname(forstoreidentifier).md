@@ -1,7 +1,8 @@
 # configurationName(forStoreIdentifier:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the configuration name associated with the given on-disk store identifier.
 

@@ -1,7 +1,8 @@
 # DebugDescription()
 
 **Framework**: Swift  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Converts description definitions to a debugger Type Summary.
 
@@ -51,13 +52,14 @@ The description implementation has the following requirements:
 
 ## See Also
 
-- [protocol CustomReflectable](customreflectable.md)
+### Customizing Your Type’s Reflection
+- [protocol CustomReflectable](./customreflectable.md)
   A type that explicitly supplies its own mirror.
-- [protocol CustomLeafReflectable](customleafreflectable.md)
+- [protocol CustomLeafReflectable](./customleafreflectable.md)
   A type that explicitly supplies its own mirror, but whose descendant classes are not represented in the mirror unless they also override `customMirror`.
-- [protocol CustomPlaygroundDisplayConvertible](customplaygrounddisplayconvertible.md)
+- [protocol CustomPlaygroundDisplayConvertible](./customplaygrounddisplayconvertible.md)
   A type that supplies a custom description for playground logging.
-- [typealias PlaygroundQuickLook](playgroundquicklook.md)
+- [typealias PlaygroundQuickLook](./playgroundquicklook.md)
   The sum of types that can be used as a Quick Look representation.
 
 

@@ -1,7 +1,8 @@
 # allCases
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A collection of all values for Apple Sleeping Breathing Disturbances classification
 

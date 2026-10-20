@@ -1,7 +1,8 @@
 # memoryFailure
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 During a page fault, the target address refers to a memory object that has been destroyed.  This failure is permanent.
 

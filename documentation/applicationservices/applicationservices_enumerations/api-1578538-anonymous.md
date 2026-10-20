@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kICCreator: Int](kiccreator.md)
-- [var kICFileType: Int](kicfiletype.md)
+- [var kICCreator: Int](../kiccreator.md)
+- [var kICFileType: Int](../kicfiletype.md)
 
 
 ---

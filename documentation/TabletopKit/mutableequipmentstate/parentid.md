@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The identifier for the parent equipment that holds or contains this equipment.
@@ -14,6 +15,11 @@ The identifier for the parent equipment that holds or contains this equipment.
 ```swift
 override var parentID: EquipmentIdentifier { get set }
 ```
+
+## Default Implementations
+
+### EquipmentState Implementations
+- [var parentID: EquipmentIdentifier](../equipmentstate/parentid-5pq98.md)
 
 
 ---

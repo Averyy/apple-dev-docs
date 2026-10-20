@@ -1,7 +1,8 @@
 # UIConfigurationStateCustomKey
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A key that defines a custom state for a view.
 
@@ -16,6 +17,10 @@ A key that defines a custom state for a view.
 
 ```swift
 struct UIConfigurationStateCustomKey
+```
+
+```c
+typedef NSString * UIConfigurationStateCustomKey;
 ```
 
 #### Overview
@@ -142,27 +147,28 @@ NSString* const UICONFIGURATIONSTATECUSTOMKEY_IS_ARCHIVED = @"com.my-app.MyCell.
 ## Topics
 
 ### Creating a custom state key
-- [init(String)](uiconfigurationstatecustomkey/init(_:).md)
+- [init(String)](./uiconfigurationstatecustomkey/init%28_%29.md)
   Creates a custom state key.
-- [init(rawValue: String)](uiconfigurationstatecustomkey/init(rawvalue:).md)
+- [init(rawValue: String)](./uiconfigurationstatecustomkey/init%28rawvalue%29.md)
   Creates a custom state key with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct UIViewConfigurationState](uiviewconfigurationstate-swift.struct.md)
+### Configuration states
+- [struct UIViewConfigurationState](./uiviewconfigurationstate-swift.struct.md)
   A structure that encapsulates a view’s state.
-- [struct UICellConfigurationState](uicellconfigurationstate-swift.struct.md)
+- [struct UICellConfigurationState](./uicellconfigurationstate-swift.struct.md)
   A structure that encapsulates a cell’s state.
-- [protocol UIConfigurationState](uiconfigurationstate-8d7pd.md)
+- [protocol UIConfigurationState](./uiconfigurationstate-8d7pd.md)
   The requirements for an object that encapsulates a view’s state.
 
 

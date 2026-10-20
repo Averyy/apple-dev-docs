@@ -1,7 +1,8 @@
 # MKMapFeatureAnnotation.FeatureType.pointOfInterest
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A point of interest, such as a museum, cafe, park, or school.
 
@@ -17,15 +18,20 @@ A point of interest, such as a museum, cafe, park, or school.
 case pointOfInterest
 ```
 
+```c
+MKMapFeatureTypePointOfInterest
+```
+
 ## See Also
 
-- [MKMapFeatureAnnotation.FeatureType.physicalFeature](mkmapfeatureannotation/featuretype-swift.enum/physicalfeature.md)
+### Kinds of annotations
+- [MKMapFeatureAnnotation.FeatureType.physicalFeature](./physicalfeature.md)
   A physical feature on the Earth such as a mountain range, river, or ocean basin.
-- [MKMapFeatureAnnotation.FeatureType.territory](mkmapfeatureannotation/featuretype-swift.enum/territory.md)
+- [MKMapFeatureAnnotation.FeatureType.territory](./territory.md)
   A territorial or regional boundary, such as a national border, a state boundary, or a neighborhood.
-- [MKMapFeatureAnnotation.FeatureType.physicalFeature](mkmapfeatureannotation/featuretype-swift.enum/physicalfeature.md)
+- [MKMapFeatureAnnotation.FeatureType.physicalFeature](./physicalfeature.md)
   A physical feature on the Earth such as a mountain range, river, or ocean basin.
-- [MKMapFeatureAnnotation.FeatureType.territory](mkmapfeatureannotation/featuretype-swift.enum/territory.md)
+- [MKMapFeatureAnnotation.FeatureType.territory](./territory.md)
   A territorial or regional boundary, such as a national border, a state boundary, or a neighborhood.
 
 

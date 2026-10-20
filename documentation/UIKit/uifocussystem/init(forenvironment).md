@@ -1,14 +1,17 @@
 # init(forEnvironment:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
-- tvOS 12.0+
-- visionOS 1.0+
+- iOS 12.0+ - Deprecated in 15.0
+- iPadOS 12.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS 12.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use UIFocusSystem.focusSystem(for:) instead.
 
 ## Declaration
 

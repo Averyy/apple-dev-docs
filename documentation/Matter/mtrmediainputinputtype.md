@@ -1,7 +1,8 @@
 # MTRMediaInputInputType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,37 +19,41 @@
 enum MTRMediaInputInputType
 ```
 
+```c
+enum MTRMediaInputInputType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRMediaInputInputType.HDMI](mtrmediainputinputtype/hdmi-swift.enum.case.md)
-- [MTRMediaInputInputType.SCART](mtrmediainputinputtype/scart-swift.enum.case.md)
-- [MTRMediaInputInputType.USB](mtrmediainputinputtype/usb-swift.enum.case.md)
-- [MTRMediaInputInputType.aux](mtrmediainputinputtype/aux.md)
-- [MTRMediaInputInputType.coax](mtrmediainputinputtype/coax.md)
-- [MTRMediaInputInputType.composite](mtrmediainputinputtype/composite.md)
-- [MTRMediaInputInputType.input](mtrmediainputinputtype/input.md)
-- [MTRMediaInputInputType.internal](mtrmediainputinputtype/internal.md)
-- [MTRMediaInputInputType.line](mtrmediainputinputtype/line.md)
-- [MTRMediaInputInputType.optical](mtrmediainputinputtype/optical.md)
-- [MTRMediaInputInputType.other](mtrmediainputinputtype/other.md)
-- [MTRMediaInputInputType.video](mtrmediainputinputtype/video.md)
+- [MTRMediaInputInputType.HDMI](./mtrmediainputinputtype/hdmi-swift.enum.case.md)
+- [MTRMediaInputInputType.SCART](./mtrmediainputinputtype/scart-swift.enum.case.md)
+- [MTRMediaInputInputType.USB](./mtrmediainputinputtype/usb-swift.enum.case.md)
+- [MTRMediaInputInputType.aux](./mtrmediainputinputtype/aux.md)
+- [MTRMediaInputInputType.coax](./mtrmediainputinputtype/coax.md)
+- [MTRMediaInputInputType.composite](./mtrmediainputinputtype/composite.md)
+- [MTRMediaInputInputType.input](./mtrmediainputinputtype/input.md)
+- [MTRMediaInputInputType.internal](./mtrmediainputinputtype/internal.md)
+- [MTRMediaInputInputType.line](./mtrmediainputinputtype/line.md)
+- [MTRMediaInputInputType.optical](./mtrmediainputinputtype/optical.md)
+- [MTRMediaInputInputType.other](./mtrmediainputinputtype/other.md)
+- [MTRMediaInputInputType.video](./mtrmediainputinputtype/video.md)
 ### Type Properties
-- [static var hdmi: MTRMediaInputInputType](mtrmediainputinputtype/hdmi-swift.type.property.md)
-- [static var scart: MTRMediaInputInputType](mtrmediainputinputtype/scart-swift.type.property.md)
-- [static var usb: MTRMediaInputInputType](mtrmediainputinputtype/usb-swift.type.property.md)
+- [static var hdmi: MTRMediaInputInputType](./mtrmediainputinputtype/hdmi-swift.type.property.md)
+- [static var scart: MTRMediaInputInputType](./mtrmediainputinputtype/scart-swift.type.property.md)
+- [static var usb: MTRMediaInputInputType](./mtrmediainputinputtype/usb-swift.type.property.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrmediainputinputtype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrmediainputinputtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

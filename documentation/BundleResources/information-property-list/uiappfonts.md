@@ -1,7 +1,8 @@
 # UIAppFonts
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 App-specific font files located in the bundle and that the system loads at runtime.
 
@@ -12,9 +13,10 @@ App-specific font files located in the bundle and that the system loads at runti
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `UIAppFonts` (Fonts provided by application)
+- **Type**: array of string 
 
 #### Discussion
 
@@ -22,7 +24,8 @@ Set this key to an array of font filenames, including the filename extension, th
 
 ## See Also
 
-- [ATSApplicationFontsPath](information-property-list/atsapplicationfontspath.md)
+### Fonts
+- [ATSApplicationFontsPath](./atsapplicationfontspath.md)
   The location of a font file or folder of fonts in the bundle’s Resources folder.
 
 

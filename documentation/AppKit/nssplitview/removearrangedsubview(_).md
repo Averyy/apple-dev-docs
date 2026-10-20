@@ -1,7 +1,8 @@
 # removeArrangedSubview(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a view as an arranged split pane.
 
@@ -14,21 +15,26 @@ Removes a view as an arranged split pane.
 func removeArrangedSubview(_ view: NSView)
 ```
 
+```objc
+- (void) removeArrangedSubview:(NSView *) view;
+```
+
 #### Discussion
 
-If the value of [`arrangesAllSubviews`](nssplitview/arrangesallsubviews.md) is [`false`](https://developer.apple.com/documentation/swift/false), calling this method doesn’t remove the view as a subview; it remains in the split view’s [`subviews`](nsview/subviews.md) array.
+If the value of [`arrangesAllSubviews`](./arrangesallsubviews.md) is [`false`](../../Swift/false.md), calling this method doesn’t remove the view as a subview; it remains in the split view’s [`subviews`](../nsview/subviews.md) array.
 
-If you remove a view as a subview (either by calling [`removeFromSuperview()`](nsview/removefromsuperview().md) or removing it from the split view’s [`subviews`](nsview/subviews.md) array), the system automatically removes the view as an arranged subview.
+If you remove a view as a subview (either by calling [`removeFromSuperview()`](../nsview/removefromsuperview%28%29.md) or removing it from the split view’s [`subviews`](../nsview/subviews.md) array), the system automatically removes the view as an arranged subview.
 
 ## See Also
 
-- [var arrangesAllSubviews: Bool](nssplitview/arrangesallsubviews.md)
+### Arranging Subviews
+- [var arrangesAllSubviews: Bool](./arrangesallsubviews.md)
   A Boolean value that determines whether the split view arranges all of its subviews as split panes.
-- [var arrangedSubviews: [NSView]](nssplitview/arrangedsubviews.md)
+- [var arrangedSubviews: [NSView]](./arrangedsubviews.md)
   The array of views that the split view arranges as its split panes.
-- [func addArrangedSubview(NSView)](nssplitview/addarrangedsubview(_:).md)
+- [func addArrangedSubview(NSView)](./addarrangedsubview%28_%29.md)
   Adds a view as an arranged split pane.
-- [func insertArrangedSubview(NSView, at: Int)](nssplitview/insertarrangedsubview(_:at:).md)
+- [func insertArrangedSubview(NSView, at: Int)](./insertarrangedsubview%28_,at%29.md)
   Adds a view as an arranged split pane at the specified index.
 
 

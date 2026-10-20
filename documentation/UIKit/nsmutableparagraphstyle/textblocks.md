@@ -1,7 +1,8 @@
 # textBlocks
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text blocks that contain the paragraph.
 
@@ -19,9 +20,14 @@ The text blocks that contain the paragraph.
 var textBlocks: [NSTextBlock] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<__kindof NSTextBlock *> * textBlocks;
+```
+
 ## See Also
 
-- [var textLists: [NSTextList]](nsmutableparagraphstyle/textlists.md)
+### Setting text blocks and lists
+- [var textLists: [NSTextList]](./textlists.md)
   The text lists that contain the paragraph.
 
 

@@ -1,7 +1,8 @@
 # NSDataAssetName
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The name of a data asset.
 
@@ -19,11 +20,16 @@ The name of a data asset.
 typealias NSDataAssetName = String
 ```
 
+```c
+typedef NSString * NSDataAssetName;
+```
+
 ## See Also
 
-- [var name: NSDataAssetName](nsdataasset/name.md)
+### Getting data asset information
+- [var name: NSDataAssetName](./nsdataasset/name.md)
   The name of the data set in the asset catalog.
-- [var typeIdentifier: String](nsdataasset/typeidentifier.md)
+- [var typeIdentifier: String](./nsdataasset/typeidentifier.md)
   The uniform type identifier for the data asset.
 
 

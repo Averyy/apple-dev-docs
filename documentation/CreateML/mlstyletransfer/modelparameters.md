@@ -1,7 +1,8 @@
 # MLStyleTransfer.ModelParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters that affect the training process of a style transfer model.
 
@@ -21,49 +22,50 @@ struct ModelParameters
 ## Topics
 
 ### Creating parameters
-- [init(algorithm: MLStyleTransfer.ModelParameters.ModelAlgorithmType, validation: MLStyleTransfer.ModelParameters.ValidationData, maxIterations: Int, textelDensity: Int, styleStrength: Int)](mlstyletransfer/modelparameters/init(algorithm:validation:maxiterations:texteldensity:stylestrength:).md)
+- [init(algorithm: MLStyleTransfer.ModelParameters.ModelAlgorithmType, validation: MLStyleTransfer.ModelParameters.ValidationData, maxIterations: Int, textelDensity: Int, styleStrength: Int)](./modelparameters/init%28algorithm,validation,maxiterations,texteldensity,stylestrength%29.md)
   Creates a new set of training parameters for a style transfer model.
 ### Setting style transfer parameters
-- [var algorithm: MLStyleTransfer.ModelParameters.ModelAlgorithmType](mlstyletransfer/modelparameters/algorithm.md)
+- [var algorithm: MLStyleTransfer.ModelParameters.ModelAlgorithmType](./modelparameters/algorithm.md)
   The style transfer task’s training algorithm that prioritizes either speed or quality.
-- [var debugDescription: String](mlstyletransfer/modelparameters/debugdescription.md)
+- [var debugDescription: String](./modelparameters/debugdescription.md)
   A text representation of the style transfer model parameters that’s suitable for output during debugging.
-- [var description: String](mlstyletransfer/modelparameters/description.md)
+- [var description: String](./modelparameters/description.md)
   A text representation of the style transfer model parameters.
-- [var maxIterations: Int](mlstyletransfer/modelparameters/maxiterations.md)
+- [var maxIterations: Int](./modelparameters/maxiterations.md)
   The largest number of iterations the style transfer model can use during training.
-- [var playgroundDescription: Any](mlstyletransfer/modelparameters/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelparameters/playgrounddescription.md)
   A description of the style transfer model parameters shown in a playground.
-- [var styleStrength: Int](mlstyletransfer/modelparameters/stylestrength.md)
+- [var styleStrength: Int](./modelparameters/stylestrength.md)
   The amount of influence the input style image has in the stylized image output.
-- [var textelDensity: Int](mlstyletransfer/modelparameters/texteldensity.md)
+- [var textelDensity: Int](./modelparameters/texteldensity.md)
   The amount of detail the task applies from the input style image to the stylized image output.
-- [var validation: MLStyleTransfer.ModelParameters.ValidationData](mlstyletransfer/modelparameters/validation.md)
+- [var validation: MLStyleTransfer.ModelParameters.ValidationData](./modelparameters/validation.md)
   The style transfer model’s validation dataset.
 ### Describing parameters
-- [MLStyleTransfer.ModelParameters.ModelAlgorithmType](mlstyletransfer/modelparameters/modelalgorithmtype.md)
+- [MLStyleTransfer.ModelParameters.ModelAlgorithmType](./modelparameters/modelalgorithmtype.md)
   The style transfer training algorithm options.
-- [MLStyleTransfer.ModelParameters.ValidationData](mlstyletransfer/modelparameters/validationdata.md)
+- [MLStyleTransfer.ModelParameters.ValidationData](./modelparameters/validationdata.md)
   The source of a validation dataset for a style transfer model.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlstyletransfer/modelparameters/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlstyletransfer/modelparameters/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlstyletransfer/modelparameters/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelparameters/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelparameters/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelparameters/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLStyleTransfer.DataSource](mlstyletransfer/datasource.md)
+### Supporting types
+- [MLStyleTransfer.DataSource](./datasource.md)
   A data source for a style transfer model.
 
 

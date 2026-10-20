@@ -1,7 +1,8 @@
 # VerticalHeightCenter
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A synonym for the top-center–front channel.
 
@@ -10,19 +11,20 @@ A synonym for the top-center–front channel.
 
 ## Declaration
 
-```swift
+```c
 VerticalHeightCenter
 ```
 
 ## See Also
 
-- [Center](audiodriverkit/iouseraudiochannellabel/center.md)
+### Center Channels
+- [Center](./center.md)
   The center channel.
-- [CenterTopFront](audiodriverkit/iouseraudiochannellabel/centertopfront.md)
+- [CenterTopFront](./centertopfront.md)
   The center top front channel.
-- [CenterTopMiddle](audiodriverkit/iouseraudiochannellabel/centertopmiddle.md)
+- [CenterTopMiddle](./centertopmiddle.md)
   The center top middle channel.
-- [CenterTopRear](audiodriverkit/iouseraudiochannellabel/centertoprear.md)
+- [CenterTopRear](./centertoprear.md)
   The center top rear channel.
 
 

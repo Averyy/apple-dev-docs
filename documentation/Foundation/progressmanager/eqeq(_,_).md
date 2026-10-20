@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Foundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns `true` if pointer of `lhs` is equal to pointer of `rhs`.
 

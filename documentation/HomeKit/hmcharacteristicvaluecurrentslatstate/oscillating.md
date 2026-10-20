@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentSlatState.oscillating
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The slats are oscillating.
 
@@ -19,11 +20,16 @@ The slats are oscillating.
 case oscillating
 ```
 
+```c
+HMCharacteristicValueCurrentSlatStateOscillating
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentSlatState.stationary](hmcharacteristicvaluecurrentslatstate/stationary.md)
+### Slat States
+- [HMCharacteristicValueCurrentSlatState.stationary](./stationary.md)
   The slats are stationary.
-- [HMCharacteristicValueCurrentSlatState.jammed](hmcharacteristicvaluecurrentslatstate/jammed.md)
+- [HMCharacteristicValueCurrentSlatState.jammed](./jammed.md)
   The slats are jammed.
 
 

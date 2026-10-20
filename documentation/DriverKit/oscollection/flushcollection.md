@@ -1,24 +1,26 @@
 # flushCollection
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void flushCollection();
 ```
 
 ## See Also
 
-- [iterateObjects](oscollection/iterateobjects.md)
-- [OSCollectionIterateObjectsBlock](oscollectioniterateobjectsblock.md)
+### Accessing Collection Elements
+- [iterateObjects](./iterateobjects.md)
+- [OSCollectionIterateObjectsBlock](../oscollectioniterateobjectsblock.md)
 
 
 ---

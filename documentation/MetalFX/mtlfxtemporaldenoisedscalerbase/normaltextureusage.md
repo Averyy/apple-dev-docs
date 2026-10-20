@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The minimal texture usage options that your app’s input normal texture needs in order to support this denoiser scaler.
@@ -17,6 +18,10 @@ The minimal texture usage options that your app’s input normal texture needs i
 
 ```swift
 var normalTextureUsage: MTLTextureUsage { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLTextureUsage normalTextureUsage;
 ```
 
 

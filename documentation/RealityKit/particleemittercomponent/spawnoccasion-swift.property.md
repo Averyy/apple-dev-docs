@@ -1,7 +1,8 @@
 # spawnOccasion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines when main particles emit spawn particles. Defaults to `onDeath`.
 

@@ -1,7 +1,8 @@
 # multiselect(displayed:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a multiselect system accessory with the specified display state and configuration options.
 
@@ -10,7 +11,7 @@ Creates a multiselect system accessory with the specified display state and conf
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,12 +25,13 @@ A configured multiselect cell accessory that changes apperance according to the 
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the multiselect accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](uicellaccessory-swift.struct/displayedstate/whenediting.md).
-- `options`: Configuration options for the multiselect accessory. See [`UICellAccessory.MultiselectOptions`](uicellaccessory-swift.struct/multiselectoptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the multiselect accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](./displayedstate/whenediting.md).
+- `options`: Configuration options for the multiselect accessory. See [`UICellAccessory.MultiselectOptions`](./multiselectoptions.md) for possible configuration options.
 
 ## See Also
 
-- [UICellAccessory.MultiselectOptions](uicellaccessory-swift.struct/multiselectoptions.md)
+### Creating a multiselect accessory
+- [UICellAccessory.MultiselectOptions](./multiselectoptions.md)
   Configuration options for a multiselect accessory.
 
 

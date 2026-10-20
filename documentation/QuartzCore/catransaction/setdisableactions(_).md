@@ -1,7 +1,8 @@
 # setDisableActions(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets whether actions triggered as a result of property changes made within this transaction group are suppressed.
 
@@ -19,17 +20,22 @@ Sets whether actions triggered as a result of property changes made within this 
 class func setDisableActions(_ flag: Bool)
 ```
 
+```objc
++ (void) setDisableActions:(BOOL) flag;
+```
+
 #### Discussion
 
-This is a convenience method that invokes [`setValue(_:forKey:)`](catransaction/setvalue(_:forkey:).md) with an `NSNumber` containing a [`true`](https://developer.apple.com/documentation/swift/true) for the  [`kCATransactionDisableActions`](kcatransactiondisableactions.md) key.
+This is a convenience method that invokes [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) with an `NSNumber` containing a [`true`](../../Swift/true.md) for the  [`kCATransactionDisableActions`](../kcatransactiondisableactions.md) key.
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/swift/true), if actions should be disabled.
+- `flag`: [`true`](../../Swift/true.md), if actions should be disabled.
 
 ## See Also
 
-- [class func disableActions() -> Bool](catransaction/disableactions.md)
+### Temporarily Disabling Property Animations
+- [class func disableActions() -> Bool](./disableactions%28%29.md)
   Returns whether actions triggered as a result of property changes made within this transaction group are suppressed.
 
 

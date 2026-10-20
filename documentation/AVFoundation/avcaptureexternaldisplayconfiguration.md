@@ -1,7 +1,8 @@
 # AVCaptureExternalDisplayConfiguration
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class you use to specify a configuration to your external display configurator.
 
@@ -18,35 +19,40 @@ A class you use to specify a configuration to your external display configurator
 class AVCaptureExternalDisplayConfiguration
 ```
 
+```objc
+@interface AVCaptureExternalDisplayConfiguration : NSObject
+```
+
 #### Overview
 
-Using an [`AVCaptureExternalDisplayConfiguration`](avcaptureexternaldisplayconfiguration.md), you direct your [`AVCaptureExternalDisplayConfigurator`](avcaptureexternaldisplayconfigurator.md) how to configure an external display to match your device’s active video format.
+Using an [`AVCaptureExternalDisplayConfiguration`](./avcaptureexternaldisplayconfiguration.md), you direct your [`AVCaptureExternalDisplayConfigurator`](./avcaptureexternaldisplayconfigurator.md) how to configure an external display to match your device’s active video format.
 
 ## Topics
 
 ### Modifying the configuration
-- [var bypassColorSpaceConversion: Bool](avcaptureexternaldisplayconfiguration/bypasscolorspaceconversion.md)
+- [var bypassColorSpaceConversion: Bool](./avcaptureexternaldisplayconfiguration/bypasscolorspaceconversion.md)
   A property indicating whether the color space of the configurator’s preview layer should be preserved on the output display by avoiding color space conversions.
-- [var preferredResolution: CMVideoDimensions](avcaptureexternaldisplayconfiguration/preferredresolution.md)
+- [var preferredResolution: CMVideoDimensions](./avcaptureexternaldisplayconfiguration/preferredresolution.md)
   Your preferred external display resolution.
-- [var shouldMatchFrameRate: Bool](avcaptureexternaldisplayconfiguration/shouldmatchframerate.md)
+- [var shouldMatchFrameRate: Bool](./avcaptureexternaldisplayconfiguration/shouldmatchframerate.md)
   A property indicating whether the frame rate of the external display should be configured to match the camera’s frame rate.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureExternalDisplayConfigurator](avcaptureexternaldisplayconfigurator.md)
+### External display output
+- [class AVCaptureExternalDisplayConfigurator](./avcaptureexternaldisplayconfigurator.md)
   A configurator class allowing you to configure properties of an external display to match the camera’s active video format.
 
 

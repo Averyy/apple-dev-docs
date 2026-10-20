@@ -1,7 +1,8 @@
 # provideScope(for:testCase:performing:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the evaluation and makes its result available to the test body through an evaluation context.
 
@@ -23,7 +24,7 @@ nonisolated
 
 #### Discussion
 
-The Swift Testing framework calls this method automatically when you attach the trait to a test. The evaluation runs first, the framework stores its result in [`EvaluationContext`](evaluationcontext.md), and then the test body executes inside that context.
+The Swift Testing framework calls this method automatically when you attach the trait to a test. The evaluation runs first, the framework stores its result in [`EvaluationContext`](../evaluationcontext.md), and then the test body executes inside that context.
 
 ## Parameters
 

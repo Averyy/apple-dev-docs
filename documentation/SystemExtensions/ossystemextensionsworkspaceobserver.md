@@ -1,7 +1,8 @@
 # OSSystemExtensionsWorkspaceObserver
 
 **Framework**: System Extensions  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - macOS 15.1+
@@ -12,17 +13,21 @@
 protocol OSSystemExtensionsWorkspaceObserver : NSObjectProtocol
 ```
 
+```objc
+@protocol OSSystemExtensionsWorkspaceObserver <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func systemExtensionWillBecomeDisabled(OSSystemExtensionInfo)](ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled(_:).md)
-- [func systemExtensionWillBecomeEnabled(OSSystemExtensionInfo)](ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled(_:).md)
-- [func systemExtensionWillBecomeInactive(OSSystemExtensionInfo)](ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive(_:).md)
+- [func systemExtensionWillBecomeDisabled(OSSystemExtensionInfo)](./ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled%28_%29.md)
+- [func systemExtensionWillBecomeEnabled(OSSystemExtensionInfo)](./ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled%28_%29.md)
+- [func systemExtensionWillBecomeInactive(OSSystemExtensionInfo)](./ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

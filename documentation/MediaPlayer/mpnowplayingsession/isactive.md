@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the session is the app’s active Now Playing session.
 
@@ -18,11 +19,16 @@ A Boolean value that indicates whether the session is the app’s active Now Pla
 var isActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isActive) BOOL active;
+```
+
 ## See Also
 
-- [var canBecomeActive: Bool](mpnowplayingsession/canbecomeactive.md)
+### Managing the active state
+- [var canBecomeActive: Bool](./canbecomeactive.md)
   A Boolean value that indicates whether the session can become the app’s active Now Playing session.
-- [func becomeActiveIfPossible(completion: ((Bool) -> Void)?)](mpnowplayingsession/becomeactiveifpossible(completion:).md)
+- [func becomeActiveIfPossible(completion: ((Bool) -> Void)?)](./becomeactiveifpossible%28completion%29.md)
   Tells the system to make the session the active Now Playing session if possible.
 
 

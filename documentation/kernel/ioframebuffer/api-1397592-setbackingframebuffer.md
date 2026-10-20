@@ -1,14 +1,15 @@
 # setBackingFramebuffer
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn setBackingFramebuffer(const IOPixelInformation *info, uint32_t bufferCount, void *mappedAddress[]);
 ```
 

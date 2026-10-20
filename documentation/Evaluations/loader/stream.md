@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The async sequence for iteration during an evaluation run.

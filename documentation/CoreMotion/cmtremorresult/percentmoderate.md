@@ -1,7 +1,8 @@
 # percentModerate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of time when a tremor was likely, and the displacement amplitude was moderate.
 
@@ -18,17 +19,22 @@ The percentage of time when a tremor was likely, and the displacement amplitude 
 var percentModerate: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float percentModerate;
+```
+
 ## See Also
 
-- [var percentUnknown: Float](cmtremorresult/percentunknown.md)
+### Accessing Tremor Data
+- [var percentUnknown: Float](./percentunknown.md)
   The percentage of time when the algorithm couldn’t make a determination.
-- [var percentNone: Float](cmtremorresult/percentnone.md)
+- [var percentNone: Float](./percentnone.md)
   The percentage of time when no tremor was detected.
-- [var percentSlight: Float](cmtremorresult/percentslight.md)
+- [var percentSlight: Float](./percentslight.md)
   The percentage of time when a tremor was likely, and the displacement amplitude was slight.
-- [var percentMild: Float](cmtremorresult/percentmild.md)
+- [var percentMild: Float](./percentmild.md)
   The percentage of time when a tremor was likely, and the displacement amplitude was mild.
-- [var percentStrong: Float](cmtremorresult/percentstrong.md)
+- [var percentStrong: Float](./percentstrong.md)
   The percentage of time when a tremor was likely, and the displacement amplitude was strong.
 
 

@@ -1,7 +1,8 @@
 # ignoresResourceLimits
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this analyzer ignores predefined system resource limits.
 
@@ -21,9 +22,10 @@ let ignoresResourceLimits: Bool
 
 ## See Also
 
-- [let modelRetention: SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.property.md)
+### Inspecting options
+- [let modelRetention: SpeechAnalyzer.Options.ModelRetention](./modelretention-swift.property.md)
   The analyzer’s model caching strategy.
-- [let priority: TaskPriority](speechanalyzer/options/priority.md)
+- [let priority: TaskPriority](./priority.md)
   The priority of analysis processing work.
 
 

@@ -1,7 +1,8 @@
 # ApplePayPaymentPassActivationState
 
 **Framework**: Apple Pay on the Web  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Payment pass activation states.
 
@@ -11,7 +12,7 @@ Payment pass activation states.
 
 ## Declaration
 
-```swift
+```
 enum ApplePayPaymentPassActivationState
 ```
 
@@ -28,15 +29,16 @@ Use one of the following values for the activation state:
 ## Topics
 
 ### Enumeration Cases
-- [activated](applepaypaymentpassactivationstate/activated.md)
-- [activating](applepaypaymentpassactivationstate/activating.md)
-- [deactivated](applepaypaymentpassactivationstate/deactivated.md)
-- [requiresActivation](applepaypaymentpassactivationstate/requiresactivation.md)
-- [suspended](applepaypaymentpassactivationstate/suspended.md)
+- [activated](./applepaypaymentpassactivationstate/activated.md)
+- [activating](./applepaypaymentpassactivationstate/activating.md)
+- [deactivated](./applepaypaymentpassactivationstate/deactivated.md)
+- [requiresActivation](./applepaypaymentpassactivationstate/requiresactivation.md)
+- [suspended](./applepaypaymentpassactivationstate/suspended.md)
 
 ## See Also
 
-- [activationState](applepaypaymentpass/activationstate.md)
+### Activation State
+- [activationState](./applepaypaymentpass/activationstate.md)
   The activation state of the pass.
 
 

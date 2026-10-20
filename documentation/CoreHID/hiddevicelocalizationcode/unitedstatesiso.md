@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.unitedStatesISO
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to International (ISO) in the HID specification.
 

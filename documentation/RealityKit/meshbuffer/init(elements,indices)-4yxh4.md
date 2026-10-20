@@ -1,7 +1,8 @@
 # init(elements:indices:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create buffer from an array of element values and an array of indices into that value array.
 
@@ -11,7 +12,7 @@ Create buffer from an array of element values and an array of indices into that 
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,37 +20,86 @@ Create buffer from an array of element values and an array of indices into that 
 init(elements: [Element], indices: [UInt32])
 ```
 
+Available when `Element` is `SIMD4<Float>`.
+
+**Other overloads**:
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
 ## See Also
 
-- [init<S>(S)](meshbuffer/init(_:)-13uzl.md)
+### Creating a mesh buffer
+- [init<S>(S)](./init%28_%29-13uzl.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-1f0ai.md)
+- [init([Element])](./init%28_%29-1f0ai.md)
   Create buffer from an array of elements.
-- [init([Element])](meshbuffer/init(_:)-1hyiz.md)
+- [init([Element])](./init%28_%29-1hyiz.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-2okpc.md)
+- [init<S>(S)](./init%28_%29-2okpc.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-3bqai.md)
+- [init([Element])](./init%28_%29-3bqai.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-3pbx9.md)
+- [init<S>(S)](./init%28_%29-3pbx9.md)
   Create a buffer from any sequence of elements.
-- [init<S>(S)](meshbuffer/init(_:)-4ahf1.md)
+- [init<S>(S)](./init%28_%29-4ahf1.md)
   Create a buffer from any sequence of elements.
-- [init<S>(S)](meshbuffer/init(_:)-5a11h.md)
+- [init<S>(S)](./init%28_%29-5a11h.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-5sh0b.md)
+- [init([Element])](./init%28_%29-5sh0b.md)
   Create buffer from an array of elements.
-- [init([Element])](meshbuffer/init(_:)-650mf.md)
+- [init([Element])](./init%28_%29-650mf.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-6hldv.md)
+- [init<S>(S)](./init%28_%29-6hldv.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-77mou.md)
+- [init([Element])](./init%28_%29-77mou.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-7d6t8.md)
+- [init<S>(S)](./init%28_%29-7d6t8.md)
   Create a buffer from any sequence of elements.
-- [init([Element])](meshbuffer/init(_:)-8m4zg.md)
+- [init([Element])](./init%28_%29-8m4zg.md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-8p5ux.md)
+- [init<S>(S)](./init%28_%29-8p5ux.md)
   Create a buffer from any sequence of elements.
 
 

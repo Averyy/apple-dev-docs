@@ -1,7 +1,8 @@
 # NSPersistentCloudKitContainerEventResult.ResultType
 
 **Framework**: Core Data  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of results from a persistent CloudKit container event fetch request.
 
@@ -20,31 +21,36 @@ The types of results from a persistent CloudKit container event fetch request.
 enum ResultType
 ```
 
+```c
+enum NSPersistentCloudKitContainerEventResultType : NSInteger;
+```
+
 ## Topics
 
 ### Result Types
-- [NSPersistentCloudKitContainerEventResult.ResultType.events](nspersistentcloudkitcontainereventresult/resulttype-swift.enum/events.md)
+- [NSPersistentCloudKitContainerEventResult.ResultType.events](./resulttype-swift.enum/events.md)
   The persistent CloudKit container events that match the event request.
-- [NSPersistentCloudKitContainerEventResult.ResultType.countEvents](nspersistentcloudkitcontainereventresult/resulttype-swift.enum/countevents.md)
+- [NSPersistentCloudKitContainerEventResult.ResultType.countEvents](./resulttype-swift.enum/countevents.md)
   The number of CloudKit container events that match the event request.
 ### Initializers
-- [init?(rawValue: Int)](nspersistentcloudkitcontainereventresult/resulttype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./resulttype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var result: Any?](nspersistentcloudkitcontainereventresult/result.md)
+### Handling Event Results
+- [var result: Any?](./result.md)
   The result of the persistent CloudKit container event request, which the result type determines.
-- [var resultType: NSPersistentCloudKitContainerEventResult.ResultType](nspersistentcloudkitcontainereventresult/resulttype-swift.property.md)
+- [var resultType: NSPersistentCloudKitContainerEventResult.ResultType](./resulttype-swift.property.md)
   The type of result that the CloudKit container event fetch request returns.
 
 

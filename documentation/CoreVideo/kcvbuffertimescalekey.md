@@ -1,7 +1,8 @@
 # kCVBufferTimeScaleKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The time scale associated with the movie.
 
@@ -20,11 +21,16 @@ The time scale associated with the movie.
 let kCVBufferTimeScaleKey: CFString
 ```
 
+```c
+extern CFStringRef const kCVBufferTimeScaleKey;
+```
+
 ## See Also
 
-- [let kCVBufferMovieTimeKey: CFString](kcvbuffermovietimekey.md)
-  The movie time associated with the buffer. Generally only available for frames emitted by QuickTime (type `CFDictionary` containing the [`kCVBufferTimeValueKey`](kcvbuffertimevaluekey.md) and [`kCVBufferTimeScaleKey`](kcvbuffertimescalekey.md) keys).
-- [let kCVBufferTimeValueKey: CFString](kcvbuffertimevaluekey.md)
+### Constants
+- [let kCVBufferMovieTimeKey: CFString](./kcvbuffermovietimekey.md)
+  The movie time associated with the buffer. Generally only available for frames emitted by QuickTime (type `CFDictionary` containing the [`kCVBufferTimeValueKey`](./kcvbuffertimevaluekey.md) and [`kCVBufferTimeScaleKey`](./kcvbuffertimescalekey.md) keys).
+- [let kCVBufferTimeValueKey: CFString](./kcvbuffertimevaluekey.md)
   The time value associated with the movie.
 
 

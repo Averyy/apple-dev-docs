@@ -1,7 +1,8 @@
 # send()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the changed value to the downstream subscriber.
 

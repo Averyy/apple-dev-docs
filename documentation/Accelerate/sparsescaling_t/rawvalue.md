@@ -1,16 +1,17 @@
 # rawValue
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ var rawValue: UInt8
 
 ## See Also
 
-- [init(UInt8)](sparsescaling_t/init(_:).md)
-- [init(rawValue: UInt8)](sparsescaling_t/init(rawvalue:).md)
+### Raw Values
+- [init(UInt8)](./init%28_%29.md)
+- [init(rawValue: UInt8)](./init%28rawvalue%29.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func deviceConfigurationChanged(_ nodeID: NSNumber)
+```
+
+```objc
+- (void) deviceConfigurationChanged:(NSNumber *) nodeID;
 ```
 
 

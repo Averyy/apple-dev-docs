@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsCompilationAlbumsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Albums associated with the artist categorized as compilations.
 
@@ -10,7 +11,7 @@ Albums associated with the artist categorized as compilations.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsCompilationAlbumsView.Attributes
 ```
 

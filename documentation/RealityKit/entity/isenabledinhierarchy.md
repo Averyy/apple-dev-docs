@@ -1,7 +1,8 @@
 # isEnabledInHierarchy
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the entity and all of its ancestors are enabled.
 
@@ -11,7 +12,7 @@ A Boolean that indicates whether the entity and all of its ancestors are enabled
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,11 +27,12 @@ The value of this property is `true` if the entity and all of its ancestors are 
 
 ## See Also
 
-- [var isEnabled: Bool](entity/isenabled.md)
+### Managing the entity’s state
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean that you set to enable or disable the entity and its descendants.
-- [var isActive: Bool](entity/isactive.md)
+- [var isActive: Bool](./isactive.md)
   A Boolean that indicates whether the entity is active.
-- [var isAnchored: Bool](entity/isanchored.md)
+- [var isAnchored: Bool](./isanchored.md)
   A Boolean that indicates whether the entity is anchored.
 
 

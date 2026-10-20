@@ -1,7 +1,8 @@
 # HKInsulinDeliveryReason.basal
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insulin administered to meet the user’s basic metabolic needs.
 
@@ -19,13 +20,18 @@ Insulin administered to meet the user’s basic metabolic needs.
 case basal
 ```
 
+```c
+HKInsulinDeliveryReasonBasal
+```
+
 #### Discussion
 
 Users typically administer basal insulin at a continuous rate from an insulin pump, or as a periodic injection of slow-acting insulin.
 
 ## See Also
 
-- [HKInsulinDeliveryReason.bolus](hkinsulindeliveryreason/bolus.md)
+### Delivery Reasons
+- [HKInsulinDeliveryReason.bolus](./bolus.md)
   Insulin administered to meet the user’s episodic requirements.
 
 

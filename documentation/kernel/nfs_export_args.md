@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfs_export_args {
     ...
 };
@@ -17,13 +17,13 @@ struct nfs_export_args {
 ## Topics
 
 ### Instance Properties
-- [nxa_expid](nfs_export_args/3944802-nxa_expid.md)
-- [nxa_exppath](nfs_export_args/3944803-nxa_exppath.md)
-- [nxa_flags](nfs_export_args/3944804-nxa_flags.md)
-- [nxa_fsid](nfs_export_args/3944805-nxa_fsid.md)
-- [nxa_fspath](nfs_export_args/3944806-nxa_fspath.md)
-- [nxa_netcount](nfs_export_args/3944807-nxa_netcount.md)
-- [nxa_nets](nfs_export_args/3944808-nxa_nets.md)
+- [nxa_expid](./nfs_export_args/api-3944802-nxa_expid.md)
+- [nxa_exppath](./nfs_export_args/api-3944803-nxa_exppath.md)
+- [nxa_flags](./nfs_export_args/api-3944804-nxa_flags.md)
+- [nxa_fsid](./nfs_export_args/api-3944805-nxa_fsid.md)
+- [nxa_fspath](./nfs_export_args/api-3944806-nxa_fspath.md)
+- [nxa_netcount](./nfs_export_args/api-3944807-nxa_netcount.md)
+- [nxa_nets](./nfs_export_args/api-3944808-nxa_nets.md)
 
 
 ---

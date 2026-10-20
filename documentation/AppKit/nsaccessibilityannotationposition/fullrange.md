@@ -1,7 +1,8 @@
 # NSAccessibilityAnnotationPosition.fullRange
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.13+
@@ -12,10 +13,15 @@
 case fullRange
 ```
 
+```c
+NSAccessibilityAnnotationPositionFullRange
+```
+
 ## See Also
 
-- [NSAccessibilityAnnotationPosition.start](nsaccessibilityannotationposition/start.md)
-- [NSAccessibilityAnnotationPosition.end](nsaccessibilityannotationposition/end.md)
+### Constants
+- [NSAccessibilityAnnotationPosition.start](./start.md)
+- [NSAccessibilityAnnotationPosition.end](./end.md)
 
 
 ---

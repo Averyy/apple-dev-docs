@@ -1,7 +1,8 @@
 # reserveCapacity(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the collection to store the specified number of elements, when doing so is appropriate for the underlying type.
 

@@ -1,7 +1,8 @@
 # pointPixelScale
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaling factor used to translate screen points into pixels.
 
@@ -19,15 +20,20 @@ The scaling factor used to translate screen points into pixels.
 var pointPixelScale: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float pointPixelScale;
+```
+
 ## See Also
 
-- [var contentRect: CGRect](sccontentfilter/contentrect.md)
+### Filter properties
+- [var contentRect: CGRect](./contentrect.md)
   The size and location of the content to filter, in screen points.
-- [var streamType: SCStreamType](sccontentfilter/streamtype.md)
+- [var streamType: SCStreamType](./streamtype.md)
   The type of the streaming content.
-- [enum SCStreamType](scstreamtype.md)
+- [enum SCStreamType](../scstreamtype.md)
   The display type of the presented stream.
-- [var style: SCShareableContentStyle](sccontentfilter/style.md)
+- [var style: SCShareableContentStyle](./style.md)
   The display style of the sharable content.
 
 

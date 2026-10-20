@@ -1,7 +1,8 @@
 # MTLDataType.bfloat
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit, brain floating-point value.
 
@@ -19,17 +20,22 @@ A 16-bit, brain floating-point value.
 case bfloat
 ```
 
+```c
+MTLDataTypeBFloat
+```
+
 #### Discussion
 
 The 16-bit value stores one sign bit, eight exponent bits, and seven mantissa bits.
 
 ## See Also
 
-- [MTLDataType.bfloat2](mtldatatype/bfloat2.md)
+### 16-bit brain floating-point types
+- [MTLDataType.bfloat2](./bfloat2.md)
   A two-component vector with 16-bit, brain floating-point values.
-- [MTLDataType.bfloat3](mtldatatype/bfloat3.md)
+- [MTLDataType.bfloat3](./bfloat3.md)
   A three-component vector with 16-bit, brain floating-point values.
-- [MTLDataType.bfloat4](mtldatatype/bfloat4.md)
+- [MTLDataType.bfloat4](./bfloat4.md)
   A four-component vector with 16-bit, brain floating-point values.
 
 

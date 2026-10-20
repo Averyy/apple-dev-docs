@@ -1,7 +1,8 @@
 # init(disbursementRequest:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new payment authorization controller with the disbursement request you provide.
 
@@ -18,13 +19,18 @@ Creates a new payment authorization controller with the disbursement request you
 convenience init(disbursementRequest request: PKDisbursementRequest)
 ```
 
+```objc
+- (instancetype) initWithDisbursementRequest:(PKDisbursementRequest *) request;
+```
+
 ## Parameters
 
-- `request`: A [`PKDisbursementRequest`](pkdisbursementrequest.md) that contains the details of the request.
+- `request`: A [`PKDisbursementRequest`](../pkdisbursementrequest.md) that contains the details of the request.
 
 ## See Also
 
-- [init(paymentRequest: PKPaymentRequest)](pkpaymentauthorizationcontroller/init(paymentrequest:).md)
+### Creating a payment authorization controller
+- [init(paymentRequest: PKPaymentRequest)](./init%28paymentrequest%29.md)
   Initializes and returns a payment authorization controller.
 
 

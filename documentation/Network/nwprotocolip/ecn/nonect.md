@@ -1,7 +1,8 @@
 # NWProtocolIP.ECN.nonECT
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Non-ECN Capable Transport.
 
@@ -22,11 +23,12 @@ case nonECT
 
 ## See Also
 
-- [NWProtocolIP.ECN.ect0](nwprotocolip/ecn/ect0.md)
+### ECN Flags
+- [NWProtocolIP.ECN.ect0](./ect0.md)
   ECN Capable Transport (flag 0).
-- [NWProtocolIP.ECN.ect1](nwprotocolip/ecn/ect1.md)
+- [NWProtocolIP.ECN.ect1](./ect1.md)
   ECN Capable Transport (flag 1).
-- [NWProtocolIP.ECN.ce](nwprotocolip/ecn/ce.md)
+- [NWProtocolIP.ECN.ce](./ce.md)
   Congestion Experienced.
 
 

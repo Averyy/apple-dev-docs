@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the recommender algorithm.
 
@@ -16,9 +17,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlrecommender/modelalgorithmtype/debugdescription.md)
+### Algorithm descriptions
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the recommender algorithm that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlrecommender/modelalgorithmtype/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the recommender algorithm shown in a playground.
 
 

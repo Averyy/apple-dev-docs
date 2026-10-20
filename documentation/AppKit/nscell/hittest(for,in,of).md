@@ -1,7 +1,8 @@
 # hitTest(for:in:of:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns hit testing information for the receiver.
 
@@ -14,13 +15,17 @@ Returns hit testing information for the receiver.
 func hitTest(for event: NSEvent, in cellFrame: NSRect, of controlView: NSView) -> NSCell.HitResult
 ```
 
+```objc
+- (NSCellHitResult) hitTestForEvent:(NSEvent *) event inRect:(NSRect) cellFrame ofView:(NSView *) controlView;
+```
+
 #### Return Value
 
-A constant that specifies the type of area in which the event occurred—see [`NSCell.HitResult`](nscell/hitresult.md) for values.
+A constant that specifies the type of area in which the event occurred—see [`NSCell.HitResult`](./hitresult.md) for values.
 
 #### Discussion
 
-You can use a bit-wise mask to look for a specific value when calling this method—see [`NSCell.HitResult`](nscell/hitresult.md) for values.
+You can use a bit-wise mask to look for a specific value when calling this method—see [`NSCell.HitResult`](./hitresult.md) for values.
 
 Generally, this method should be overridden by custom `NSCell` subclasses to return the correct result. Currently, it is called by some multi-cell views, such as `NSTableView`.
 
@@ -33,7 +38,7 @@ If there is text: If the event point hits in the text, return `NSCellHitContentA
 
 If there is not text: return `NSCellHitNone`.
 
-- `NSNullCellType` (this is the default that applies to non text or image cells who don’t override [`hitTest(for:in:of:)`](nscell/hittest(for:in:of:).md)):
+- `NSNullCellType` (this is the default that applies to non text or image cells who don’t override [`hitTest(for:in:of:)`](./hittest%28for,in,of%29.md)):
 
 Return `NSCellHitContentArea` by default;
 

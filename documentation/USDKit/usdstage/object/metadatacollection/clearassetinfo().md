@@ -1,7 +1,8 @@
 # clearAssetInfo()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all authored asset information on this object.
 

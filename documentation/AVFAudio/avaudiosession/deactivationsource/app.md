@@ -1,7 +1,8 @@
 # AVAudioSession.DeactivationSource.app
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,9 +18,14 @@
 case app
 ```
 
+```c
+AVAudioSessionDeactivationSourceApp
+```
+
 ## See Also
 
-- [AVAudioSession.DeactivationSource.system](avaudiosession/deactivationsource/system.md)
+### Getting the source
+- [AVAudioSession.DeactivationSource.system](./system.md)
 
 
 ---

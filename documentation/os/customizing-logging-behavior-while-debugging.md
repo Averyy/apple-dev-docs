@@ -1,6 +1,7 @@
 # Customizing Logging Behavior While Debugging
 
-**Framework**: os
+**Framework**: os  
+**Role**: Article
 
 Control which log events are recorded.
 
@@ -93,9 +94,10 @@ The example below shows a complete logging profile, which configures a subsystem
 
 ## See Also
 
-- [Generating Log Messages from Your Code](generating-log-messages-from-your-code.md)
+### Essentials
+- [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
   Record useful debugging and analysis information, and include dynamic content in your messages.
-- [Viewing Log Messages](viewing-log-messages.md)
+- [Viewing Log Messages](./viewing-log-messages.md)
   Use various tools to retrieve log information.
 
 

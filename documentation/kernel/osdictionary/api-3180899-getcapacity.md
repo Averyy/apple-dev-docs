@@ -1,7 +1,8 @@
 # getCapacity
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns count of currently allocated capacity for members in dictionary.
 
@@ -11,19 +12,28 @@ Returns count of currently allocated capacity for members in dictionary.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual uint32_t getCapacity(void);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned int getCapacity(void);
 ```
 
-#### Return_value
+#### Return Value
 
 Capacity for members in dictionary.
 
 ## See Also
 
-- [- ensureCapacity](osdictionary/3180896-ensurecapacity.md)
+### Inspecting a Dictionary
+- [- ensureCapacity](./api-3180896-ensurecapacity.md)
   Allocates capacity for members in dictionary.
-- [- getCount](osdictionary/3180900-getcount.md)
+- [- getCount](./api-3180900-getcount.md)
   Returns count of members in dictionary.
 
 

@@ -1,7 +1,8 @@
 # preparePreviewOfSearchableItem(identifier:queryString:completionHandler:)
 
 **Framework**: Quick Look  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 4.0+
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+optional func preparePreviewOfSearchableItem(identifier: String, queryString: String?, completionHandler handler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 optional func preparePreviewOfSearchableItem(identifier: String, queryString: String?) async throws
+```
+
+```objc
+- (void) preparePreviewOfSearchableItemWithIdentifier:(NSString *) identifier queryString:(NSString *) queryString completionHandler:(void (^)(NSError *)) handler;
 ```
 
 #### Discussion

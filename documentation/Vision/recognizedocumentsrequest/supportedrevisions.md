@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The revisions supported by `ClassifyImageRequest`.
 
@@ -21,9 +22,10 @@ static let supportedRevisions: [RecognizeDocumentsRequest.Revision]
 
 ## See Also
 
-- [let revision: RecognizeDocumentsRequest.Revision](recognizedocumentsrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: RecognizeDocumentsRequest.Revision](./revision-swift.property.md)
   The request’s configured revision.
-- [RecognizeDocumentsRequest.Revision](recognizedocumentsrequest/revision-swift.enum.md)
+- [RecognizeDocumentsRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

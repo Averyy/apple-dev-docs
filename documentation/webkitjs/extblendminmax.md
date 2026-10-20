@@ -1,7 +1,8 @@
 # EXTBlendMinMax
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface EXTBlendMinMax
 ```
 
 ## Topics
 
 ### Miscellaneous
-- [MAX_EXT](extblendminmax/1634499-max_ext.md)
-- [MIN_EXT](extblendminmax/1631717-min_ext.md)
+- [MAX_EXT](./extblendminmax/api-1634499-max_ext.md)
+- [MIN_EXT](./extblendminmax/api-1631717-min_ext.md)
 
 
 ---

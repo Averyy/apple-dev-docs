@@ -1,7 +1,8 @@
 # CLActivityType.maritime
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that indicates positioning for activities in vessels on water, including while anchored.
 
@@ -20,21 +21,26 @@ The value that indicates positioning for activities in vessels on water, includi
 case maritime
 ```
 
+```c
+CLActivityTypeMaritime
+```
+
 #### Discussion
 
 Use this activity type for activities such as sailing, motor-boating, traveling by ship, or other activities on the water.
 
 ## See Also
 
-- [CLActivityType.airborne](clactivitytype/airborne.md)
+### Activity types
+- [CLActivityType.airborne](./airborne.md)
   The value that indicates activities in the air.
-- [CLActivityType.automotiveNavigation](clactivitytype/automotivenavigation.md)
+- [CLActivityType.automotiveNavigation](./automotivenavigation.md)
   The value that indicates positioning in an automobile following a road network.
-- [CLActivityType.fitness](clactivitytype/fitness.md)
+- [CLActivityType.fitness](./fitness.md)
   The value that indicates positioning during dedicated fitness sessions, such as walking workouts, running workouts, cycling workouts, and so on.
-- [CLActivityType.other](clactivitytype/other.md)
+- [CLActivityType.other](./other.md)
   The value that indicates the app is using location manager for an unspecified activity.
-- [CLActivityType.otherNavigation](clactivitytype/othernavigation.md)
+- [CLActivityType.otherNavigation](./othernavigation.md)
   The value that indicates positioning for activities that don’t or may not adhere to roads such as cycling, scooters, trains, boats and off-road vehicles.
 
 

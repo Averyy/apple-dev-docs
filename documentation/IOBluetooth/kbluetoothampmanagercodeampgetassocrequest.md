@@ -1,10 +1,11 @@
 # kBluetoothAMPManagerCodeAMPGetAssocRequest
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,21 +13,26 @@
 var kBluetoothAMPManagerCodeAMPGetAssocRequest: BluetoothAMPManagerCode { get }
 ```
 
+```c
+kBluetoothAMPManagerCodeAMPGetAssocRequest
+```
+
 ## See Also
 
-- [var kBluetoothAMPManagerCodeAMPChangeNotify: BluetoothAMPManagerCode](kbluetoothampmanagercodeampchangenotify.md)
-- [var kBluetoothAMPManagerCodeAMPChangeResponse: BluetoothAMPManagerCode](kbluetoothampmanagercodeampchangeresponse.md)
-- [var kBluetoothAMPManagerCodeAMPCommandReject: BluetoothAMPManagerCode](kbluetoothampmanagercodeampcommandreject.md)
-- [var kBluetoothAMPManagerCodeAMPCreatePhysicalLinkRequest: BluetoothAMPManagerCode](kbluetoothampmanagercodeampcreatephysicallinkrequest.md)
-- [var kBluetoothAMPManagerCodeAMPCreatePhysicalLinkResponse: BluetoothAMPManagerCode](kbluetoothampmanagercodeampcreatephysicallinkresponse.md)
-- [var kBluetoothAMPManagerCodeAMPDisconnectPhysicalLinkRequest: BluetoothAMPManagerCode](kbluetoothampmanagercodeampdisconnectphysicallinkrequest.md)
-- [var kBluetoothAMPManagerCodeAMPDisconnectPhysicalLinkResponse: BluetoothAMPManagerCode](kbluetoothampmanagercodeampdisconnectphysicallinkresponse.md)
-- [var kBluetoothAMPManagerCodeAMPDiscoverRequest: BluetoothAMPManagerCode](kbluetoothampmanagercodeampdiscoverrequest.md)
-- [var kBluetoothAMPManagerCodeAMPDiscoverResponse: BluetoothAMPManagerCode](kbluetoothampmanagercodeampdiscoverresponse.md)
-- [var kBluetoothAMPManagerCodeAMPGetAssocResponse: BluetoothAMPManagerCode](kbluetoothampmanagercodeampgetassocresponse.md)
-- [var kBluetoothAMPManagerCodeAMPGetInfoRequest: BluetoothAMPManagerCode](kbluetoothampmanagercodeampgetinforequest.md)
-- [var kBluetoothAMPManagerCodeAMPGetInfoResponse: BluetoothAMPManagerCode](kbluetoothampmanagercodeampgetinforesponse.md)
-- [var kBluetoothAMPManagerCodeReserved: BluetoothAMPManagerCode](kbluetoothampmanagercodereserved.md)
+### Constants
+- [var kBluetoothAMPManagerCodeAMPChangeNotify: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampchangenotify.md)
+- [var kBluetoothAMPManagerCodeAMPChangeResponse: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampchangeresponse.md)
+- [var kBluetoothAMPManagerCodeAMPCommandReject: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampcommandreject.md)
+- [var kBluetoothAMPManagerCodeAMPCreatePhysicalLinkRequest: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampcreatephysicallinkrequest.md)
+- [var kBluetoothAMPManagerCodeAMPCreatePhysicalLinkResponse: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampcreatephysicallinkresponse.md)
+- [var kBluetoothAMPManagerCodeAMPDisconnectPhysicalLinkRequest: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampdisconnectphysicallinkrequest.md)
+- [var kBluetoothAMPManagerCodeAMPDisconnectPhysicalLinkResponse: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampdisconnectphysicallinkresponse.md)
+- [var kBluetoothAMPManagerCodeAMPDiscoverRequest: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampdiscoverrequest.md)
+- [var kBluetoothAMPManagerCodeAMPDiscoverResponse: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampdiscoverresponse.md)
+- [var kBluetoothAMPManagerCodeAMPGetAssocResponse: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampgetassocresponse.md)
+- [var kBluetoothAMPManagerCodeAMPGetInfoRequest: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampgetinforequest.md)
+- [var kBluetoothAMPManagerCodeAMPGetInfoResponse: BluetoothAMPManagerCode](./kbluetoothampmanagercodeampgetinforesponse.md)
+- [var kBluetoothAMPManagerCodeReserved: BluetoothAMPManagerCode](./kbluetoothampmanagercodereserved.md)
 
 
 ---

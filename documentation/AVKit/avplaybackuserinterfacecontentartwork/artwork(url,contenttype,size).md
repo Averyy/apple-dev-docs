@@ -1,7 +1,8 @@
 # artwork(url:contentType:size:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an artwork instance that references an image at the given URL.
 
@@ -14,6 +15,10 @@ Creates an artwork instance that references an image at the given URL.
 
 ```swift
 class func artwork(url: URL, contentType type: UTType, size: CGSize) -> AVPlaybackUserInterfaceContentURLArtwork
+```
+
+```objc
++ (AVPlaybackUserInterfaceContentURLArtwork *) artworkWithURL:(NSURL *) url contentType:(UTType *) type size:(CGSize) size;
 ```
 
 ## Parameters

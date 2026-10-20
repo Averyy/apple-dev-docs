@@ -1,7 +1,8 @@
 # ECHILD
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No child processes.
 

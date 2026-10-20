@@ -1,7 +1,8 @@
 # dataTypes
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of data types to include in the export.
 
@@ -15,9 +16,13 @@ The set of data types to include in the export.
 var dataTypes: BEExportOptions.DataTypes { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BEExportDataTypes dataTypes;
+```
+
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
 #### Discussion
 
@@ -25,9 +30,10 @@ This property identifies the person’s choice of data to include in the export,
 
 ## See Also
 
-- [BEExportOptions.DataTypes](beexportoptions/datatypes-swift.struct.md)
+### Configuring export preferences
+- [BEExportOptions.DataTypes](./datatypes-swift.struct.md)
   Types of exported browser data.
-- [var exportToFiles: Bool](beexportoptions/exporttofiles.md)
+- [var exportToFiles: Bool](./exporttofiles.md)
   A Boolean value that indicates whether to export to files.
 
 

@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kCSIdentityQueryGenerateUpdateEvents: Int](kcsidentityquerygenerateupdateevents.md)
-- [var kCSIdentityQueryIncludeHiddenIdentities: Int](kcsidentityqueryincludehiddenidentities.md)
+- [var kCSIdentityQueryGenerateUpdateEvents: Int](../../kcsidentityquerygenerateupdateevents.md)
+- [var kCSIdentityQueryIncludeHiddenIdentities: Int](../../kcsidentityqueryincludehiddenidentities.md)
 
 
 ---

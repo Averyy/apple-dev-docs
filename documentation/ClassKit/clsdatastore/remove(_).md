@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks a context for removal.
 
@@ -18,9 +19,13 @@ Marks a context for removal.
 func remove(_ context: CLSContext)
 ```
 
+```objc
+- (void) removeContext:(CLSContext *) context;
+```
+
 #### Discussion
 
-If your context hierarchy changes, either because your app’s content is dynamic, or as a result of an app update, you might need to remove old contexts from the data store. Call this method to mark a context for removal. Call the [`save(completion:)`](clsdatastore/save(completion:).md) method to commit the change.
+If your context hierarchy changes, either because your app’s content is dynamic, or as a result of an app update, you might need to remove old contexts from the data store. Call this method to mark a context for removal. Call the [`save(completion:)`](./save%28completion%29.md) method to commit the change.
 
 When you remove a context, the framework removes all of its decendants as well.
 

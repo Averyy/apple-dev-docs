@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options that influence the image-generation process.
 

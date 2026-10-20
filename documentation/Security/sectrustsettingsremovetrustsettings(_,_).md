@@ -1,7 +1,8 @@
 # SecTrustSettingsRemoveTrustSettings(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deletes the trust settings for a certificate.
 
@@ -15,9 +16,13 @@ Deletes the trust settings for a certificate.
 func SecTrustSettingsRemoveTrustSettings(_ certRef: SecCertificate, _ domain: SecTrustSettingsDomain) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustSettingsRemoveTrustSettings(SecCertificateRef certRef, SecTrustSettingsDomain domain);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md). Returns [`errSecItemNotFound`](errsecitemnotfound.md) if no trust settings exist for the certificate.
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecItemNotFound`](./errsecitemnotfound.md) if no trust settings exist for the certificate.
 
 #### Discussion
 
@@ -25,8 +30,8 @@ If a certificate has no trust settings, the certificate must be verified to a kn
 
 ## Parameters
 
-- `certRef`: The certificate whose trust settings you wish to remove. Pass the value [`kSecTrustSettingsDefaultRootCertSetting`](ksectrustsettingsdefaultrootcertsetting.md) to remove the default root certificate trust settings for the domain.
-- `domain`: The trust settings domain for which you wish to remove the trust settings. For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
+- `certRef`: The certificate whose trust settings you wish to remove. Pass the value [`kSecTrustSettingsDefaultRootCertSetting`](./ksectrustsettingsdefaultrootcertsetting.md) to remove the default root certificate trust settings for the domain.
+- `domain`: The trust settings domain for which you wish to remove the trust settings. For possible values, see [`SecTrustSettingsDomain`](./sectrustsettingsdomain.md).
 
 
 ---

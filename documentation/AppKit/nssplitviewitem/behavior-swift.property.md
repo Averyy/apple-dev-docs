@@ -1,7 +1,8 @@
 # behavior
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The standard behavior type of the split view item.
 
@@ -14,9 +15,14 @@ The standard behavior type of the split view item.
 var behavior: NSSplitViewItem.Behavior { get }
 ```
 
+```objc
+@property (readonly) NSSplitViewItemBehavior behavior;
+```
+
 ## See Also
 
-- [NSSplitViewItem.Behavior](nssplitviewitem/behavior-swift.enum.md)
+### Getting the item behavior
+- [NSSplitViewItem.Behavior](./behavior-swift.enum.md)
   Constants that describe the behavior of the split view item.
 
 

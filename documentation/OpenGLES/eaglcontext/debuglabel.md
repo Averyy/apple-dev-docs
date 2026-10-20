@@ -1,20 +1,27 @@
 # debugLabel
 
 **Framework**: OpenGL ES  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A label describing the context for use in debugging.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 6.0+
-- tvOS 9.0+
+- iOS 6.0+ - Deprecated in 12.0
+- iPadOS 6.0+ - Deprecated in 12.0
+- Mac Catalyst 6.0+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 var debugLabel: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * debugLabel;
 ```
 
 #### Discussion

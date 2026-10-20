@@ -1,17 +1,22 @@
 # orderFrontCharacterPalette(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the character palette.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func orderFrontCharacterPalette(_ sender: Any?)
+```
+
+```objc
+- (void) orderFrontCharacterPalette:(id) sender;
 ```
 
 ## Parameters
@@ -20,15 +25,16 @@ func orderFrontCharacterPalette(_ sender: Any?)
 
 ## See Also
 
-- [func orderFrontColorPanel(Any?)](nsapplication/orderfrontcolorpanel(_:).md)
+### Managing Panels
+- [func orderFrontColorPanel(Any?)](./orderfrontcolorpanel%28_%29.md)
   Brings up the color panel, an instance of `NSColorPanel`.
-- [func orderFrontStandardAboutPanel(Any?)](nsapplication/orderfrontstandardaboutpanel(_:).md)
+- [func orderFrontStandardAboutPanel(Any?)](./orderfrontstandardaboutpanel%28_%29.md)
   Displays a standard About window.
-- [func orderFrontStandardAboutPanel(options: [NSApplication.AboutPanelOptionKey : Any])](nsapplication/orderfrontstandardaboutpanel(options:).md)
+- [func orderFrontStandardAboutPanel(options: [NSApplication.AboutPanelOptionKey : Any])](./orderfrontstandardaboutpanel%28options%29.md)
   Displays a standard About window with information from a given options dictionary.
-- [func runPageLayout(Any?)](nsapplication/runpagelayout(_:).md)
+- [func runPageLayout(Any?)](./runpagelayout%28_%29.md)
   Displays the receiver’s page layout panel, an instance of `NSPageLayout`.
-- [NSApplication.AboutPanelOptionKey](nsapplication/aboutpaneloptionkey.md)
+- [NSApplication.AboutPanelOptionKey](./aboutpaneloptionkey.md)
   Keys to include in the options dictionary when displaying an About panel.
 
 

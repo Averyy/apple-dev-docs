@@ -1,14 +1,15 @@
 # init(mobileDocumentType:supportedIssuerKeyIdentifiers:supportedAuthorityKeyIdentifiers:documentIdentifier:invalidationDate:)
 
 **Framework**: IdentityDocumentServices  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a mobile document registration with issuer key identifiers.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

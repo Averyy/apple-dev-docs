@@ -1,7 +1,8 @@
 # didChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 26.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didChange: NotificationCenter.BaseMessageIdentifier<DidChangeLibraryMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<DidChangeLibraryMessage>`.
 
 
 ---

@@ -1,7 +1,8 @@
 # CameraRegionAnchor.CameraEnhancement.contrastAndVibrancy
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Contrast and vibrancy enhancement in addition to simple crop/zoom.
 

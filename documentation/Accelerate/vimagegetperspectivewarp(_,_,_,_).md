@@ -1,7 +1,8 @@
 # vImageGetPerspectiveWarp(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a projective-transformation structure that defines the mapping between a source quadrilateral and a destination quadrilateral.
 
@@ -20,26 +21,31 @@ Returns a projective-transformation structure that defines the mapping between a
 func vImageGetPerspectiveWarp(_ srcPoints: UnsafePointer<(Float, Float)>, _ destPoints: UnsafePointer<(Float, Float)>, _ transform: UnsafeMutablePointer<vImage_PerpsectiveTransform>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageGetPerspectiveWarp(const float srcPoints[4][2], const float destPoints[4][2], vImage_PerpsectiveTransform *transform, vImage_Flags flags);
+```
+
 ## Mentions
 
-- [Transforming an image in three dimensions](transforming-an-image-in-three-dimensions.md)
+- [Transforming an image in three dimensions](./transforming-an-image-in-three-dimensions.md)
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 ## Parameters
 
 - `srcPoints`: The four source points.
 - `destPoints`: The four destination points.
-- `transform`: On output, a [`vImage_PerpsectiveTransform`](vimage_perpsectivetransform.md) structure that describes the transformation from the source points to the destination points.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `transform`: On output, a [`vImage_PerpsectiveTransform`](./vimage_perpsectivetransform.md) structure that describes the transformation from the source points to the destination points.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Transforming an image in three dimensions](transforming-an-image-in-three-dimensions.md)
+### Computing a projective transformation from source and destination quadrilaterals
+- [Transforming an image in three dimensions](./transforming-an-image-in-three-dimensions.md)
   Create and use a projective transformation to apply a perspective warp to an image.
-- [struct vImage_PerpsectiveTransform](vimage_perpsectivetransform.md)
+- [struct vImage_PerpsectiveTransform](./vimage_perpsectivetransform.md)
   A projective-transformation matrix.
 
 

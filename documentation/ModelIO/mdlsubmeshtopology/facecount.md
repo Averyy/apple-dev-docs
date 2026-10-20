@@ -1,7 +1,8 @@
 # faceCount
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of faces in the submesh’s face topology buffer.
 
@@ -19,9 +20,14 @@ The number of faces in the submesh’s face topology buffer.
 var faceCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger faceCount;
+```
+
 ## See Also
 
-- [var faceTopology: (any MDLMeshBuffer)?](mdlsubmeshtopology/facetopology.md)
+### Identifying Faces
+- [var faceTopology: (any MDLMeshBuffer)?](./facetopology.md)
   A buffer identifying the faces in the submesh and the number of vertices in each.
 
 

@@ -1,7 +1,8 @@
 # Clamp
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Clamps the input per-channel to a specified range.
 
@@ -15,7 +16,223 @@ Clamps the input per-channel to a specified range.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Clamp (float)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Float |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Clamp (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector3f |
+| `Low` | Vector3f |
+| `High` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Clamp (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector2f |
+| `Low` | Vector2f |
+| `High` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Clamp (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector4f |
+| `Low` | Vector4f |
+| `High` | Vector4f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Clamp (color4f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color4 |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Clamp (vector3h)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector3h |
+| `Low` | Vector3h |
+| `High` | Vector3h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3h |
+
+**Clamp (half)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Half |
+| `Low` | Half |
+| `High` | Half |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+**Clamp (vector2h)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector2h |
+| `Low` | Vector2h |
+| `High` | Vector2h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2h |
+
+**Clamp (color3f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color3 |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Clamp (vector3f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector3f |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Clamp (vector2h FA)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector2h |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2h |
+
+**Clamp (vector4h)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector4h |
+| `Low` | Vector4h |
+| `High` | Vector4h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4h |
+
+**Clamp (vector3h FA)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector3h |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3h |
+
+**Clamp (vector4h FA)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector4h |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4h |
+
+**Clamp (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color3 |
+| `Low` | Color3 |
+| `High` | Color3 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Clamp (vector2f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector2f |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Clamp (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color4 |
+| `Low` | Color4 |
+| `High` | Color4 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Clamp (vector4f FA)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector4f |
+| `Low` | Float |
+| `High` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+#### Parameter descriptions
 
 - **`In`**: The input to clamp.
 - **`Low`**: The low end of the clamp range.
@@ -27,35 +244,36 @@ The `Clamp` node restricts the range of values of an input as defined by the `Lo
 
 ## See Also
 
-- [Add](math/add.md)
+### Nodes
+- [Add](./add.md)
   Adds two values.
-- [Subtract](math/subtract.md)
+- [Subtract](./subtract.md)
   Subtracts two values.
-- [Multiply](math/multiply.md)
+- [Multiply](./multiply.md)
   Multiplies two values.
-- [Divide](math/divide.md)
+- [Divide](./divide.md)
   Divides two values.
-- [Modulo](math/modulo.md)
+- [Modulo](./modulo.md)
   Outputs the remaining fraction after dividing the input by a value and subtracting the integer portion.
-- [Abs](math/abs.md)
+- [Abs](./abs.md)
   Outputs the per-channel absolute value of the input.
-- [Floor](math/floor.md)
+- [Floor](./floor.md)
   Outputs the nearest integer value, per-channel, less than or equal to the incoming values.
-- [Ceiling](math/ceiling.md)
+- [Ceiling](./ceiling.md)
   Outputs the nearest integer value, per-channel, greater than or equal to the incoming values.
-- [Power](math/power.md)
+- [Power](./power.md)
   Raises the incoming value to an exponent.
-- [Sin](math/sin.md)
+- [Sin](./sin.md)
   The sine of the incoming value in radians.
-- [Cos](math/cos.md)
+- [Cos](./cos.md)
   The cosine of the incoming value in radians.
-- [Tan](math/tan.md)
+- [Tan](./tan.md)
   The tangent of the incoming value in radians.
-- [Asin](math/asin.md)
+- [Asin](./asin.md)
   The arcsine of the incoming value in radians.
-- [Acos](math/acos.md)
+- [Acos](./acos.md)
   The arccosine of the incoming value in radians.
-- [Atan2](math/atan2.md)
+- [Atan2](./atan2.md)
   The arctangent of the expression (iny/inx) in radians.
 
 

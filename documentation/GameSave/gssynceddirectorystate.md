@@ -1,7 +1,8 @@
 # GSSyncedDirectoryState
 
 **Framework**: GameSave  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents the state and its associated properties of the directory
 
@@ -18,40 +19,45 @@ Represents the state and its associated properties of the directory
 class GSSyncedDirectoryState
 ```
 
+```objc
+@interface GSSyncedDirectoryState : NSObject
+```
+
 #### Overview
 
-Use the [`state`](gssynceddirectorystate/state.md) property to determine the validity of the other properties
+Use the [`state`](./gssynceddirectorystate/state.md) property to determine the validity of the other properties
 
 ## Topics
 
 ### Directory state information
-- [enum GSSyncState](gssyncstate.md)
-- [var state: GSSyncState](gssynceddirectorystate/state.md)
+- [enum GSSyncState](./gssyncstate.md)
+- [var state: GSSyncState](./gssynceddirectorystate/state.md)
   Specifies the current state of the directory
-- [var conflictedVersions: [GSSyncedDirectoryVersion]?](gssynceddirectorystate/conflictedversions.md)
+- [var conflictedVersions: [GSSyncedDirectoryVersion]?](./gssynceddirectorystate/conflictedversions.md)
   The conflicting versions.
-- [var error: (any Error)?](gssynceddirectorystate/error.md)
+- [var error: (any Error)?](./gssynceddirectorystate/error.md)
   The error preventing you from using the directory.
-- [var url: URL?](gssynceddirectorystate/url.md)
+- [var url: URL?](./gssynceddirectorystate/url.md)
   The URL of a directory to read and write game-save data in.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class func open(forContainerIdentifier: String?) -> GSSyncedDirectory](gssynceddirectory/open(forcontaineridentifier:).md)
+### Accessing a directory
+- [class func open(forContainerIdentifier: String?) -> GSSyncedDirectory](./gssynceddirectory/open%28forcontaineridentifier%29.md)
   Requests an instance of the game-save directory.
-- [var directoryState: GSSyncedDirectoryState](gssynceddirectory/directorystate.md)
+- [var directoryState: GSSyncedDirectoryState](./gssynceddirectory/directorystate.md)
   The state of the directory.
 
 

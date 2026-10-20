@@ -1,13 +1,14 @@
 # deadline
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The deadline by which your app must respond to the event.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,19 +16,24 @@ The deadline by which your app must respond to the event.
 var deadline: UInt64
 ```
 
+```c
+uint64_t deadline;
+```
+
 #### Discussion
 
-If you fail to respond to an event before this deadline, Endpoint Security may terminate the client process, or restart the process if it’s a system extension. If your client repeatedly misses deadlines, Endpoint Security may refuse new connections from [`es_new_client(_:_:)`](es_new_client(_:_:).md) altogether.
+If you fail to respond to an event before this deadline, Endpoint Security may terminate the client process, or restart the process if it’s a system extension. If your client repeatedly misses deadlines, Endpoint Security may refuse new connections from [`es_new_client(_:_:)`](../es_new_client%28_,_%29.md) altogether.
 
 ## See Also
 
-- [var time: timespec](es_message_t/time.md)
+### Inspecting Timing Properties
+- [var time: timespec](./time.md)
   The time the event occurred, expressed as a Darwin time value.
-- [var mach_time: UInt64](es_message_t/mach_time.md)
+- [var mach_time: UInt64](./mach_time.md)
   The time the event occurred, as a Mach time value.
-- [var seq_num: UInt64](es_message_t/seq_num.md)
+- [var seq_num: UInt64](./seq_num.md)
   The sequence number of the message.
-- [var global_seq_num: UInt64](es_message_t/global_seq_num.md)
+- [var global_seq_num: UInt64](./global_seq_num.md)
   The global sequence number of the message.
 
 

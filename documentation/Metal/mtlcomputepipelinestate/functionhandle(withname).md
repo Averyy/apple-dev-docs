@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the function handle for a function this pipeline links at the Metal IR level by name.
@@ -18,6 +19,10 @@ Gets the function handle for a function this pipeline links at the Metal IR leve
 
 ```swift
 func functionHandle(withName name: String) -> (any MTLFunctionHandle)?
+```
+
+```objc
+- (id<MTLFunctionHandle>) functionHandleWithName:(NSString *) name;
 ```
 
 #### Return Value

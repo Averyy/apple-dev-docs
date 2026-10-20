@@ -1,17 +1,24 @@
 # launchedProcess(launchPath:arguments:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and launches a task with a specified executable and arguments.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`run(_:arguments:terminationHandler:)`](./run%28_,arguments,terminationhandler%29.md) instead.
 
 ## Declaration
 
 ```swift
 class func launchedProcess(launchPath path: String, arguments: [String]) -> Process
+```
+
+```objc
++ (NSTask *) launchedTaskWithLaunchPath:(NSString *) path arguments:(NSArray<NSString *> *) arguments;
 ```
 
 #### Return Value
@@ -22,7 +29,7 @@ An initialized `NSTask` object with the supplied `arguments`.
 
 The task inherits its environment from the process that invokes this method.
 
-The `NSTask` object converts both `path` and the strings in `arguments` to appropriate C-style strings (using [`fileSystemRepresentation`](nsstring/filesystemrepresentation.md)) before passing them to the task via `argv[])` . The strings in `arguments` don’t undergo shell expansion, so you don’t need to do special quoting, and shell variables, such as `$PWD`, aren’t resolved.
+The `NSTask` object converts both `path` and the strings in `arguments` to appropriate C-style strings (using [`fileSystemRepresentation`](../nsstring/filesystemrepresentation.md)) before passing them to the task via `argv[])` . The strings in `arguments` don’t undergo shell expansion, so you don’t need to do special quoting, and shell variables, such as `$PWD`, aren’t resolved.
 
 ## Parameters
 
@@ -31,13 +38,15 @@ The `NSTask` object converts both `path` and the strings in `arguments` to appro
 
 ## See Also
 
-- [init()](process/init.md)
+### Related Documentation
+- [init()](./init%28%29.md)
   Returns an initialized process object with the environment of the current process.
-- [var currentDirectoryPath: String](process/currentdirectorypath.md)
+### Deprecated
+- [var currentDirectoryPath: String](./currentdirectorypath.md)
   Sets the current directory for the receiver.
-- [var launchPath: String?](process/launchpath.md)
+- [var launchPath: String?](./launchpath.md)
   Sets the receiver’s executable.
-- [func launch()](process/launch.md)
+- [func launch()](./launch%28%29.md)
   Launches the task represented by the receiver.
 
 

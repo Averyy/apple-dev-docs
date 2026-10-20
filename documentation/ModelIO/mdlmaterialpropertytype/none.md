@@ -1,7 +1,8 @@
 # MDLMaterialPropertyType.none
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The material property’s value has not been initialized.
 
@@ -19,29 +20,34 @@ The material property’s value has not been initialized.
 case none
 ```
 
+```c
+MDLMaterialPropertyTypeNone
+```
+
 #### Discussion
 
-Set one of the properties listed in Working with a Material Property’s Value to provide a value for the material property. After setting a value, the [`type`](mdlmaterialproperty/type.md) property reflects the data type of that value.
+Set one of the properties listed in Working with a Material Property’s Value to provide a value for the material property. After setting a value, the [`type`](../mdlmaterialproperty/type.md) property reflects the data type of that value.
 
 ## See Also
 
-- [MDLMaterialPropertyType.string](mdlmaterialpropertytype/string.md)
+### Constants
+- [MDLMaterialPropertyType.string](./string.md)
   The material’s value is a string.
-- [MDLMaterialPropertyType.URL](mdlmaterialpropertytype/url.md)
+- [MDLMaterialPropertyType.URL](./url.md)
   The material property’s value is a URL—typically, a URL referencing a texture image.
-- [MDLMaterialPropertyType.texture](mdlmaterialpropertytype/texture.md)
-  The material property’s value is a [`MDLTextureSampler`](mdltexturesampler.md) object that provides both a texture image and texture rendering parameters.
-- [MDLMaterialPropertyType.color](mdlmaterialpropertytype/color.md)
+- [MDLMaterialPropertyType.texture](./texture.md)
+  The material property’s value is a [`MDLTextureSampler`](../mdltexturesampler.md) object that provides both a texture image and texture rendering parameters.
+- [MDLMaterialPropertyType.color](./color.md)
   The material property’s value is a uniform color.
-- [MDLMaterialPropertyType.float](mdlmaterialpropertytype/float.md)
+- [MDLMaterialPropertyType.float](./float.md)
   The material property’s value is a floating-point scalar.
-- [MDLMaterialPropertyType.float2](mdlmaterialpropertytype/float2.md)
+- [MDLMaterialPropertyType.float2](./float2.md)
   The material property’s value is a 2-component floating-point vector.
-- [MDLMaterialPropertyType.float3](mdlmaterialpropertytype/float3.md)
+- [MDLMaterialPropertyType.float3](./float3.md)
   The material property’s value is a 3-component floating-point vector.
-- [MDLMaterialPropertyType.float4](mdlmaterialpropertytype/float4.md)
+- [MDLMaterialPropertyType.float4](./float4.md)
   The material property’s value is a 4-component floating-point vector.
-- [MDLMaterialPropertyType.matrix44](mdlmaterialpropertytype/matrix44.md)
+- [MDLMaterialPropertyType.matrix44](./matrix44.md)
   The material property’s value is a 4 x 4 floating-point matrix.
 
 

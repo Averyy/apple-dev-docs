@@ -1,7 +1,8 @@
 # slice(data:bytesPerRow:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies a single mipmap level slice of a texture resource with pixel data that RealityKit copies from a byte buffer.
 
@@ -26,7 +27,8 @@ static func slice(data: Data, bytesPerRow: Int) -> TextureResource.Contents.Slic
 
 ## See Also
 
-- [static func slice(unsafeBuffer: any MTLBuffer, offset: Int, size: Int, bytesPerRow: Int) -> TextureResource.Contents.Slice](textureresource/contents/slice/slice(unsafebuffer:offset:size:bytesperrow:).md)
+### Creating a texture slice
+- [static func slice(unsafeBuffer: any MTLBuffer, offset: Int, size: Int, bytesPerRow: Int) -> TextureResource.Contents.Slice](./slice%28unsafebuffer,offset,size,bytesperrow%29.md)
   Specifies a single mipmap level slice of a texture resource with pixel data that RealityKit copies from a Metal buffer.
 
 

@@ -1,17 +1,22 @@
 # selectedItem
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item that was last selected by the user.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var selectedItem: NSMenuItem? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSMenuItem * selectedItem;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The last selected menu item is the one that was highlighted when the user releas
 
 ## See Also
 
-- [var titleOfSelectedItem: String?](nspopupbutton/titleofselecteditem.md)
+### Getting the user’s selection
+- [var titleOfSelectedItem: String?](./titleofselecteditem.md)
   The title of the item that was last selected by the user.
-- [var indexOfSelectedItem: Int](nspopupbutton/indexofselecteditem.md)
+- [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the item that was last selected by the user.
 
 

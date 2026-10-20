@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDValueScaleTypeCalibrated](1644492-anonymous/kiohidvaluescaletypecalibrated.md)
-- [kIOHIDValueScaleTypePhysical](1644492-anonymous/kiohidvaluescaletypephysical.md)
-- [kIOHIDValueScaleTypeExponent](1644492-anonymous/kiohidvaluescaletypeexponent.md)
+- [kIOHIDValueScaleTypeCalibrated](./api-1644492-anonymous/kiohidvaluescaletypecalibrated.md)
+- [kIOHIDValueScaleTypePhysical](./api-1644492-anonymous/kiohidvaluescaletypephysical.md)
+- [kIOHIDValueScaleTypeExponent](./api-1644492-anonymous/kiohidvaluescaletypeexponent.md)
 
 
 ---

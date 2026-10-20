@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Retrieves the sample value at the specified index.
 
@@ -11,7 +12,7 @@ Retrieves the sample value at the specified index.
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

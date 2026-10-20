@@ -1,7 +1,8 @@
 # originatingRequestDescriptor
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor of the request that produced the capture quality.
 

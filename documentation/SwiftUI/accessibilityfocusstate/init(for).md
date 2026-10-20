@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new accessibility focus state for a Boolean value, using the accessibility technologies you specify.
 
@@ -20,13 +21,20 @@ Creates a new accessibility focus state for a Boolean value, using the accessibi
 init(for technologies: AccessibilityTechnologies) where Value == Bool
 ```
 
+**Other overloads**:
+
+```swift
+init<T>(for technologies: AccessibilityTechnologies) where Value == T?, T : Hashable
+```
+
 ## Parameters
 
-- `technologies`: One of the available [`AccessibilityTechnologies`](accessibilitytechnologies.md).
+- `technologies`: One of the available [`AccessibilityTechnologies`](../accessibilitytechnologies.md).
 
 ## See Also
 
-- [init()](accessibilityfocusstate/init.md)
+### Creating a focus state
+- [init()](./init%28%29.md)
   Creates a new accessibility focus state for a Boolean value.
 
 

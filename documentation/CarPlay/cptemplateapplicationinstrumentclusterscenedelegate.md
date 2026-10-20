@@ -1,7 +1,8 @@
 # CPTemplateApplicationInstrumentClusterSceneDelegate
 
 **Framework**: CarPlay  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 15.4+
@@ -15,24 +16,29 @@
 protocol CPTemplateApplicationInstrumentClusterSceneDelegate : UISceneDelegate
 ```
 
+```objc
+@protocol CPTemplateApplicationInstrumentClusterSceneDelegate <UISceneDelegate>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func contentStyleDidChange(UIUserInterfaceStyle)](cptemplateapplicationinstrumentclusterscenedelegate/contentstyledidchange(_:).md)
-- [func templateApplicationInstrumentClusterScene(CPTemplateApplicationInstrumentClusterScene, didConnect: CPInstrumentClusterController)](cptemplateapplicationinstrumentclusterscenedelegate/templateapplicationinstrumentclusterscene(_:didconnect:).md)
-- [func templateApplicationInstrumentClusterScene(CPTemplateApplicationInstrumentClusterScene, didDisconnectInstrumentClusterController: CPInstrumentClusterController)](cptemplateapplicationinstrumentclusterscenedelegate/templateapplicationinstrumentclusterscene(_:diddisconnectinstrumentclustercontroller:).md)
+- [func contentStyleDidChange(UIUserInterfaceStyle)](./cptemplateapplicationinstrumentclusterscenedelegate/contentstyledidchange%28_%29.md)
+- [func templateApplicationInstrumentClusterScene(CPTemplateApplicationInstrumentClusterScene, didConnect: CPInstrumentClusterController)](./cptemplateapplicationinstrumentclusterscenedelegate/templateapplicationinstrumentclusterscene%28_,didconnect%29.md)
+- [func templateApplicationInstrumentClusterScene(CPTemplateApplicationInstrumentClusterScene, didDisconnectInstrumentClusterController: CPInstrumentClusterController)](./cptemplateapplicationinstrumentclusterscenedelegate/templateapplicationinstrumentclusterscene%28_,diddisconnectinstrumentclustercontroller%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UISceneDelegate](../uikit/uiscenedelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UISceneDelegate](../UIKit/uiscenedelegate.md)
 
 ## See Also
 
-- [class CPInstrumentClusterController](cpinstrumentclustercontroller.md)
-- [protocol CPInstrumentClusterControllerDelegate](cpinstrumentclustercontrollerdelegate.md)
-- [class CPTemplateApplicationInstrumentClusterScene](cptemplateapplicationinstrumentclusterscene.md)
+### Instrument cluster
+- [class CPInstrumentClusterController](./cpinstrumentclustercontroller.md)
+- [protocol CPInstrumentClusterControllerDelegate](./cpinstrumentclustercontrollerdelegate.md)
+- [class CPTemplateApplicationInstrumentClusterScene](./cptemplateapplicationinstrumentclusterscene.md)
 
 
 ---

@@ -1,6 +1,8 @@
 # Finding answers to questions in a text document
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: Sample Code  
+**Download**: [FindingAnswersToQuestionsInATextDocument.zip](https://docs-assets.developer.apple.com/published/4fc35d4949df/FindingAnswersToQuestionsInATextDocument.zip)
 
 Locate relevant passages in a document by asking the Bidirectional Encoder Representations from Transformers (BERT) model a question.
 
@@ -16,7 +18,7 @@ This sample app leverages the BERT model to find the answer to a user’s questi
 
 The BERT model does not generate new sentences to answer a given question. It finds the passage in a document that’s most likely to answer the question.
 
-![Flow diagram showing the information being processed through the BERT model.](/images/com.apple.coreml/bert-overview@2x.png)
+![Flow diagram showing the information being processed through the BERT model.](https://developer.apple.com/tutorials/images/com.apple.coreml/bert-overview@2x.png)
 
 The sample leverages the BERT model by:
 
@@ -24,28 +26,28 @@ The sample leverages the BERT model by:
 2. Breaking up the document and question texts into tokens
 3. Converting the tokens to ID numbers using the vocabulary dictionary
 4. Packing the converted token IDs into the model’s input format
-5. Calling the BERT model’s [`prediction(from:)`](mlmodel/prediction(from:).md) method
+5. Calling the BERT model’s [`prediction(from:)`](./mlmodel/prediction%28from%29.md) method
 6. Locating the answer by analyzing the BERT model’s output
 7. Extracting that answer from the original document text
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project in Xcode, use a device with either:
 
 - iOS 13 or later
 - macOS 10.15 or later
 
-##### Build the Vocabulary
+##### Build the vocabulary
 
 The first step to using the BERT model is to import its vocabulary. The sample creates a vocabulary dictionary by splitting the vocabulary file into lines, each of which has one token. The function assigns each token’s (zero-based) line number as its value. For example, the first token,  `"[PAD]"`, has an ID of `0`, and the 5,001st token, `"knight"`, has an ID of `5000`.
 
-##### Split the Text Into Word Tokens
+##### Split the text into word tokens
 
 The BERT model requires you to convert each word into one or more token IDs. Before you can use the vocabulary dictionary to find those IDs, you must divide the document’s text and the question’s text into word tokens.
 
-![Flow diagram showing the conversion of raw strings into tokens.](/images/com.apple.coreml/bert-word-tokens@2x.png)
+![Flow diagram showing the conversion of raw strings into tokens.](https://developer.apple.com/tutorials/images/com.apple.coreml/bert-word-tokens@2x.png)
 
-The sample does this by using an [`NLTagger`](https://developer.apple.com/documentation/naturallanguage/nltagger), which breaks up a string into word tokens, each of which is a substring of the original.
+The sample does this by using an [NLTagger](../NaturalLanguage/nltagger.md), which breaks up a string into word tokens, each of which is a substring of the original.
 
 ```swift
 // Store the tokenized substrings into an array.
@@ -67,9 +69,9 @@ tagger.enumerateTags(in: rawString.startIndex..<rawString.endIndex,
 return wordTokens
 ```
 
-The sample app leverages the tagger to split each string into tokens by using its [`enumerateTags(in:unit:scheme:options:using:)`](https://developer.apple.com/documentation/naturallanguage/nltagger/enumeratetags(in:unit:scheme:options:using:)) method with the [`tokenType`](https://developer.apple.com/documentation/naturallanguage/nltagscheme/tokentype) tagging scheme and the [`NLTokenUnit.word`](https://developer.apple.com/documentation/naturallanguage/nltokenunit/word) token unit.
+The sample app leverages the tagger to split each string into tokens by using its [enumerateTags(in:unit:scheme:options:using:)](../NaturalLanguage/nltagger/enumeratetags%28in,unit,scheme,options,using%29.md) method with the [.tokenType](../NaturalLanguage/nltagscheme/tokentype.md) tagging scheme and the [.word](../NaturalLanguage/nltokenunit/word.md) token unit.
 
-##### Convert Word or Wordpiece Tokens Into Their Ids
+##### Convert word or wordpiece tokens into their IDs
 
 For speed and efficiency, the BERT model operates on token IDs, which are numbers that represent tokens, rather than operating on the text tokens themselves.
 
@@ -83,9 +85,9 @@ Secondary wordpieces, such as *har* and *gic*, each appear in the vocabulary wit
 
 Continuing the example, the method converts document text into the word and wordpiece token IDs shown in the following figure.
 
-![Flow diagram showing the conversion of tokens to token IDs.](/images/com.apple.coreml/bert-word-token-ids@2x.png)
+![Flow diagram showing the conversion of tokens to token IDs.](https://developer.apple.com/tutorials/images/com.apple.coreml/bert-word-token-ids@2x.png)
 
-##### Prepare the Model Input
+##### Prepare the model input
 
 The BERT model has two inputs:
 
@@ -134,11 +136,11 @@ wordTypes += Array(repeating: 0, count: tokenTypePadding)
 
 Continuing the example, the sample arranges the two input arrays with the values shown in the figure below.
 
-![Layout diagram showing the arrangement of the two input arrays for the BERT model, as vertical columns, alongside a third reference column.](/images/com.apple.coreml/bert-inputs@2x.png)
+![Layout diagram showing the arrangement of the two input arrays for the BERT model, as vertical columns, alongside a third reference column.](https://developer.apple.com/tutorials/images/com.apple.coreml/bert-inputs@2x.png)
 
-Next, the sample creates an [`MLMultiArray`](mlmultiarray.md) for each input and copies the contents from the arrays, which it uses to create a `BERTQAFP16Input` feature provider.
+Next, the sample creates an [`MLMultiArray`](./mlmultiarray.md) for each input and copies the contents from the arrays, which it uses to create a `BERTQAFP16Input` feature provider.
 
-> **Note**: The BERT model in this sample requires a one-dimensional [`MLMultiArray`](mlmultiarray.md) input with 384 elements. Models from other sources may have different inputs or shapes.
+> **Note**: The BERT model in this sample requires a one-dimensional [`MLMultiArray`](./mlmultiarray.md) input with 384 elements. Models from other sources may have different inputs or shapes.
 
 ```swift
 // Create the MLMultiArray instances.
@@ -159,9 +161,9 @@ let modelInput = BERTQAFP16Input(wordIDs: tokenIDInput,
                                  wordTypes: tokenTypeInput)
 ```
 
-##### Make a Prediction
+##### Make a prediction
 
-You use the BERT model to predict where to find an answer to the question in the document text, by giving the model your input feature provider with the input [`MLMultiArray`](mlmultiarray.md) instances.
+You use the BERT model to predict where to find an answer to the question in the document text, by giving the model your input feature provider with the input [`MLMultiArray`](./mlmultiarray.md) instances.
 
 ```swift
 guard let prediction = try? bertModel.prediction(input: modelInput) else {
@@ -169,15 +171,15 @@ guard let prediction = try? bertModel.prediction(input: modelInput) else {
 }
 ```
 
-##### Find the Answer
+##### Find the answer
 
 You locate the answer to the question by analyzing the output from the BERT model. The model produces two outputs, `startLogits` and `endLogits`. Each *logit* is a raw confidence score of where the BERT model predicts the beginning and the end of an answer is.
 
-![Layout diagram showing the arrangement of the two output arrays from the BERT model shown as vertical columns.](/images/com.apple.coreml/bert-logits@2x.png)
+![Layout diagram showing the arrangement of the two output arrays from the BERT model shown as vertical columns.](https://developer.apple.com/tutorials/images/com.apple.coreml/bert-logits@2x.png)
 
 In this example, the best start and end logits are `6.08` and `7.53` for the tokens `"the"` and `"fox"`, respectively. The sample finds the indices of the highest-value starting and ending logits by:
 
-1. Converting each output logit [`MLMultiArray`](mlmultiarray.md) into a `Double` array.
+1. Converting each output logit [`MLMultiArray`](./mlmultiarray.md) into a `Double` array.
 2. Isolating the logits relevant to the document.
 3. Finding the indices, in each array, to the 20 logits with the highest values.
 4. Searching through the 20 x 20 or fewer combinations of logits for the best combination.
@@ -204,7 +206,7 @@ let bestPair = findBestLogitPair(startLogits: startLogitsOfDoc,
 
 In this example, the indices of the best start and end logits are `8` and `11`, respectively. The answer substring, located between indices `8` and `11` of the original text, is `“the quick brown fox”`.
 
-##### Scale for Larger Documents
+##### Scale for larger documents
 
 The BERT model included in this sample can process up to 384 tokens, including the three overhead tokens—one “classification start” token and two separator tokens—leaving 381 tokens for your text and question, combined. For larger texts that exceed this limitation, consider using one of these techniques:
 

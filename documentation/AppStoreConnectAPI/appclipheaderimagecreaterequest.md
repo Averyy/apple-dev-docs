@@ -1,7 +1,8 @@
 # AppClipHeaderImageCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to reserve an image asset that appears on the App Clip card of a default App Clip experience.
 
@@ -10,14 +11,14 @@ The request body you use to reserve an image asset that appears on the App Clip 
 
 ## Declaration
 
-```swift
+```
 object AppClipHeaderImageCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipHeaderImageCreateRequest.Data](appclipheaderimagecreaterequest/data-data.dictionary.md)
+- [object AppClipHeaderImageCreateRequest.Data](./appclipheaderimagecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -26,11 +27,12 @@ object AppClipHeaderImageCreateRequest
 
 ## See Also
 
-- [object AppClipHeaderImage](appclipheaderimage.md)
+### Objects
+- [object AppClipHeaderImage](./appclipheaderimage.md)
   The image displayed on the App Clip card for a default App Clip experience, uploaded as part of App Clip configuration.
-- [object AppClipHeaderImageResponse](appclipheaderimageresponse.md)
+- [object AppClipHeaderImageResponse](./appclipheaderimageresponse.md)
   A response containing a single header image for a default App Clip experience.
-- [object AppClipHeaderImageUpdateRequest](appclipheaderimageupdaterequest.md)
+- [object AppClipHeaderImageUpdateRequest](./appclipheaderimageupdaterequest.md)
   The request body you use to commit the image asset for a default App Clip experience.
 
 

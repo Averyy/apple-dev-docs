@@ -1,7 +1,8 @@
 # highlightCollectionTitle
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A localized title to display with a collection of highlights.
 
@@ -19,13 +20,18 @@ A localized title to display with a collection of highlights.
 class var highlightCollectionTitle: String { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSString * highlightCollectionTitle;
+```
+
 #### Discussion
 
 The system displays this title for the collection of shared highlight links to the user.
 
 ## See Also
 
-- [var highlights: [SWHighlight]](swhighlightcenter/highlights.md)
+### Accessing highlights
+- [var highlights: [SWHighlight]](./highlights.md)
   An array of shared highlights.
 
 

@@ -1,7 +1,8 @@
 # isLessThanOrEqualTo(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether this decimal is less than or equal to the specified one.
 
@@ -22,17 +23,18 @@ func isLessThanOrEqualTo(_ other: Decimal) -> Bool
 
 ## See Also
 
-- [func isEqual(to: Decimal) -> Bool](decimal/isequal(to:).md)
+### Comparing decimals
+- [func isEqual(to: Decimal) -> Bool](./isequal%28to%29.md)
   Indicates whether this decimal is equal to the specified one.
-- [func isLess(than: Decimal) -> Bool](decimal/isless(than:).md)
+- [func isLess(than: Decimal) -> Bool](./isless%28than%29.md)
   Indicates whether this decimal is less than the specified one.
-- [func isTotallyOrdered(belowOrEqualTo: Decimal) -> Bool](decimal/istotallyordered(beloworequalto:).md)
+- [func isTotallyOrdered(belowOrEqualTo: Decimal) -> Bool](./istotallyordered%28beloworequalto%29.md)
   Returns a Boolean value indicating whether this instance should precede the given value in an ascending sort.
-- [func distance(to: Decimal) -> Decimal](decimal/distance(to:).md)
+- [func distance(to: Decimal) -> Decimal](./distance%28to%29.md)
   Returns the distance from this value to the specified value.
-- [func advanced(by: Decimal) -> Decimal](decimal/advanced(by:).md)
+- [func advanced(by: Decimal) -> Decimal](./advanced%28by%29.md)
   Returns a new value advanced by the given distance.
-- [func NSDecimalCompare(UnsafePointer<Decimal>, UnsafePointer<Decimal>) -> ComparisonResult](nsdecimalcompare(_:_:).md)
+- [func NSDecimalCompare(UnsafePointer<Decimal>, UnsafePointer<Decimal>) -> ComparisonResult](../nsdecimalcompare%28_,_%29.md)
   Compares two decimal values.
 
 

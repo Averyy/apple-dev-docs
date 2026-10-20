@@ -1,7 +1,8 @@
 # version
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the algorithm that analyzes the temperature.
 
@@ -16,11 +17,16 @@ The version of the algorithm that analyzes the temperature.
 var version: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * version;
+```
+
 ## See Also
 
-- [var startDate: Date](srwristtemperaturesession/startdate.md)
+### Getting session information
+- [var startDate: Date](./startdate.md)
   The time that the device records the wrist temperature.
-- [var duration: TimeInterval](srwristtemperaturesession/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The number of seconds that the device records the temperature.
 
 

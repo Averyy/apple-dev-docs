@@ -1,7 +1,8 @@
 # fileManager(_:shouldProceedAfterError:linkingItemAt:to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the operation should continue after an error occurs while linking to the item at the specified URL.
 
@@ -20,15 +21,19 @@ Asks the delegate if the operation should continue after an error occurs while l
 optional func fileManager(_ fileManager: FileManager, shouldProceedAfterError error: any Error, linkingItemAt srcURL: URL, to dstURL: URL) -> Bool
 ```
 
+```objc
+- (BOOL) fileManager:(NSFileManager *) fileManager shouldProceedAfterError:(NSError *) error linkingItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed or [`false`](https://developer.apple.com/documentation/swift/false) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation should proceed or [`false`](../../Swift/false.md) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The file manager calls this method when there is a problem creating a hard link to the item at the specified location. If you return [`true`](https://developer.apple.com/documentation/swift/true), the file manager continues creating any other links associated with the current operation and ignores the error.
+The file manager calls this method when there is a problem creating a hard link to the item at the specified location. If you return [`true`](../../Swift/true.md), the file manager continues creating any other links associated with the current operation and ignores the error.
 
-This method performs the same task as the [`fileManager(_:shouldProceedAfterError:linkingItemAtPath:toPath:)`](filemanagerdelegate/filemanager(_:shouldproceedaftererror:linkingitematpath:topath:).md) method and is preferred over that method in macOS 10.6 and later.
+This method performs the same task as the [`fileManager(_:shouldProceedAfterError:linkingItemAtPath:toPath:)`](./filemanager%28_,shouldproceedaftererror,linkingitematpath,topath%29.md) method and is preferred over that method in macOS 10.6 and later.
 
 ## Parameters
 
@@ -39,15 +44,17 @@ This method performs the same task as the [`fileManager(_:shouldProceedAfterErro
 
 ## See Also
 
-- [func linkItem(at: URL, to: URL) throws](filemanager/linkitem(at:to:).md)
+### Related Documentation
+- [func linkItem(at: URL, to: URL) throws](../filemanager/linkitem%28at,to%29.md)
   Creates a hard link between the items at the specified URLs.
-- [func linkItem(atPath: String, toPath: String) throws](filemanager/linkitem(atpath:topath:).md)
+- [func linkItem(atPath: String, toPath: String) throws](../filemanager/linkitem%28atpath,topath%29.md)
   Creates a hard link between the items at the specified paths.
-- [func fileManager(FileManager, shouldLinkItemAt: URL, to: URL) -> Bool](filemanagerdelegate/filemanager(_:shouldlinkitemat:to:).md)
+### Linking an Item
+- [func fileManager(FileManager, shouldLinkItemAt: URL, to: URL) -> Bool](./filemanager%28_,shouldlinkitemat,to%29.md)
   Asks the delegate if a hard link should be created between the items at the two URLs.
-- [func fileManager(FileManager, shouldLinkItemAtPath: String, toPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldlinkitematpath:topath:).md)
+- [func fileManager(FileManager, shouldLinkItemAtPath: String, toPath: String) -> Bool](./filemanager%28_,shouldlinkitematpath,topath%29.md)
   Asks the delegate if a hard link should be created between the items at the two paths.
-- [func fileManager(FileManager, shouldProceedAfterError: any Error, linkingItemAtPath: String, toPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldproceedaftererror:linkingitematpath:topath:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: any Error, linkingItemAtPath: String, toPath: String) -> Bool](./filemanager%28_,shouldproceedaftererror,linkingitematpath,topath%29.md)
   Asks the delegate if the operation should continue after an error occurs while linking to the item at the specified path.
 
 

@@ -1,14 +1,15 @@
 # vDSP_biquad_SetupD
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef struct vDSP_biquad_SetupStructD *vDSP_biquad_SetupD;
 ```
 

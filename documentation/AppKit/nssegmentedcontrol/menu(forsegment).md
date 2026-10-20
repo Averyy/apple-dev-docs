@@ -1,17 +1,22 @@
 # menu(forSegment:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the menu for the specified segment.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func menu(forSegment segment: Int) -> NSMenu?
+```
+
+```objc
+- (NSMenu *) menuForSegment:(NSInteger) segment;
 ```
 
 #### Return Value
@@ -20,15 +25,16 @@ The menu associated with the segment; otherwise, `nil`.
 
 ## Parameters
 
-- `segment`: The index of the segment whose menu you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
+- `segment`: The index of the segment whose menu you want to get. This method raises an exception ([`rangeException`](../../Foundation/nsexceptionname/rangeexception.md)) if the index is out of bounds.
 
 ## See Also
 
-- [func setMenu(NSMenu?, forSegment: Int)](nssegmentedcontrol/setmenu(_:forsegment:).md)
+### Configuring a segment menu
+- [func setMenu(NSMenu?, forSegment: Int)](./setmenu%28_,forsegment%29.md)
   Sets the menu for the specified segment.
-- [func setShowsMenuIndicator(Bool, forSegment: Int)](nssegmentedcontrol/setshowsmenuindicator(_:forsegment:).md)
-- [func showsMenuIndicator(forSegment: Int) -> Bool](nssegmentedcontrol/showsmenuindicator(forsegment:).md)
-- [var isSpringLoaded: Bool](nssegmentedcontrol/isspringloaded.md)
+- [func setShowsMenuIndicator(Bool, forSegment: Int)](./setshowsmenuindicator%28_,forsegment%29.md)
+- [func showsMenuIndicator(forSegment: Int) -> Bool](./showsmenuindicator%28forsegment%29.md)
+- [var isSpringLoaded: Bool](./isspringloaded.md)
   A Boolean value that indicates whether spring loading is enabled for the control.
 
 

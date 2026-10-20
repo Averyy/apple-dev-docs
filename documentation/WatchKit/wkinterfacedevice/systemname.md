@@ -1,7 +1,8 @@
 # systemName
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the operating system.
 
@@ -14,13 +15,18 @@ The name of the operating system.
 var systemName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * systemName;
+```
+
 #### Discussion
 
 The value of this property is “watchOS”.
 
 ## See Also
 
-- [var systemVersion: String](wkinterfacedevice/systemversion.md)
+### Reading System Information
+- [var systemVersion: String](./systemversion.md)
   The version of the operating system.
 
 

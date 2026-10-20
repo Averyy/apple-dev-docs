@@ -1,7 +1,8 @@
 # XCTWaiter.Result.completed
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 All of the waiter’s expectations were fulfilled successfully.
 
@@ -11,15 +12,20 @@ All of the waiter’s expectations were fulfilled successfully.
 case completed
 ```
 
+```c
+XCTWaiterResultCompleted
+```
+
 ## See Also
 
-- [XCTWaiter.Result.timedOut](xctwaiter/result/timedout.md)
+### Result States
+- [XCTWaiter.Result.timedOut](./timedout.md)
   The waiter timed out before all of its expectations were fulfilled.
-- [XCTWaiter.Result.incorrectOrder](xctwaiter/result/incorrectorder.md)
+- [XCTWaiter.Result.incorrectOrder](./incorrectorder.md)
   The waiter’s expectations were not fulfilled in the required order.
-- [XCTWaiter.Result.invertedFulfillment](xctwaiter/result/invertedfulfillment.md)
+- [XCTWaiter.Result.invertedFulfillment](./invertedfulfillment.md)
   An inverted expectation was fulfilled.
-- [XCTWaiter.Result.interrupted](xctwaiter/result/interrupted.md)
+- [XCTWaiter.Result.interrupted](./interrupted.md)
   The waiter was interrupted prior to its expectations being fulfilled or timing out.
 
 

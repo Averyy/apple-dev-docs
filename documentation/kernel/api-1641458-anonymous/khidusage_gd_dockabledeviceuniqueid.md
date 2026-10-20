@@ -1,14 +1,15 @@
 # kHIDUsage_GD_DockableDeviceUniqueID
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_GD_DockableDeviceUniqueID = 0xD0
 ```
 

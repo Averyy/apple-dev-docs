@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short HORIZONTAL;
 ```
 
 ## See Also
 
-- [BOTH](overflowevent/1631384-both.md)
-- [VERTICAL](overflowevent/1628861-vertical.md)
+### Miscellaneous
+- [BOTH](./api-1631384-both.md)
+- [VERTICAL](./api-1628861-vertical.md)
 
 
 ---

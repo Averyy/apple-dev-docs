@@ -1,7 +1,8 @@
 # checkAuthorizationStatus(for:)
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Confirms the current authorization status for sending critical messages from this app.
 
@@ -17,7 +18,7 @@ func checkAuthorizationStatus(for recipients: [MSRecipient]) async throws -> [MS
 
 ## Mentions
 
-- [Sending SMS messages from an app](critical-messaging-api.md)
+- [Sending SMS messages from an app](../critical-messaging-api.md)
 
 #### Return Value
 

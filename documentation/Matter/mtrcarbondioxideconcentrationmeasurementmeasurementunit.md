@@ -1,7 +1,8 @@
 # MTRCarbonDioxideConcentrationMeasurementMeasurementUnit
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,29 +19,33 @@
 enum MTRCarbonDioxideConcentrationMeasurementMeasurementUnit
 ```
 
+```c
+enum MTRCarbonDioxideConcentrationMeasurementMeasurementUnit : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.BQM3](mtrcarbondioxideconcentrationmeasurementmeasurementunit/bqm3.md)
-- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.MGM3](mtrcarbondioxideconcentrationmeasurementmeasurementunit/mgm3.md)
-- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.NGM3](mtrcarbondioxideconcentrationmeasurementmeasurementunit/ngm3.md)
-- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.PM3](mtrcarbondioxideconcentrationmeasurementmeasurementunit/pm3.md)
-- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.PPB](mtrcarbondioxideconcentrationmeasurementmeasurementunit/ppb.md)
-- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.PPM](mtrcarbondioxideconcentrationmeasurementmeasurementunit/ppm.md)
-- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.PPT](mtrcarbondioxideconcentrationmeasurementmeasurementunit/ppt.md)
-- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.UGM3](mtrcarbondioxideconcentrationmeasurementmeasurementunit/ugm3.md)
+- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.BQM3](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/bqm3.md)
+- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.MGM3](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/mgm3.md)
+- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.NGM3](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/ngm3.md)
+- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.PM3](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/pm3.md)
+- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.PPB](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/ppb.md)
+- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.PPM](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/ppm.md)
+- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.PPT](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/ppt.md)
+- [MTRCarbonDioxideConcentrationMeasurementMeasurementUnit.UGM3](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/ugm3.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcarbondioxideconcentrationmeasurementmeasurementunit/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcarbondioxideconcentrationmeasurementmeasurementunit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

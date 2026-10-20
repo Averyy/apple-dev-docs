@@ -1,7 +1,8 @@
 # raycast(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks once for intersections between a ray and real-world surfaces.
 
@@ -13,6 +14,10 @@ Checks once for intersections between a ray and real-world surfaces.
 
 ```swift
 func raycast(_ query: ARRaycastQuery) -> [ARRaycastResult]
+```
+
+```objc
+- (NSArray<ARRaycastResult *> *) raycast:(ARRaycastQuery *) query;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ Ray casting provides a 3D location in physical space that corresponds to a given
 
 ## See Also
 
-- [func trackedRaycast(ARRaycastQuery, updateHandler: ([ARRaycastResult]) -> Void) -> ARTrackedRaycast?](arsession/trackedraycast(_:updatehandler:).md)
+### Finding real-world surfaces
+- [func trackedRaycast(ARRaycastQuery, updateHandler: ([ARRaycastResult]) -> Void) -> ARTrackedRaycast?](./trackedraycast%28_,updatehandler%29.md)
   Repeats a ray-cast query over time to notify you of updated surfaces in the physical environment.
 
 

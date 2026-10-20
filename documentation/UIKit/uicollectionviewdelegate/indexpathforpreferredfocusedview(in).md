@@ -1,7 +1,8 @@
 # indexPathForPreferredFocusedView(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the index path of the cell that should be focused.
 
@@ -18,17 +19,21 @@ Asks the delegate for the index path of the cell that should be focused.
 optional func indexPathForPreferredFocusedView(in collectionView: UICollectionView) -> IndexPath?
 ```
 
+```objc
+- (NSIndexPath *) indexPathForPreferredFocusedViewInCollectionView:(UICollectionView *) collectionView;
+```
+
 #### Return Value
 
 The index path of the preferred cell. The index path you specify must correspond to a valid cell in the collection view.
 
 #### Discussion
 
-When focus is about to change to a collection view, the collection view must pick which of its subviews should receive that focus. If the collection view’s [`remembersLastFocusedIndexPath`](uitableview/rememberslastfocusedindexpath.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), the collection view returns the index path of the cell that was last focused. If the [`remembersLastFocusedIndexPath`](uitableview/rememberslastfocusedindexpath.md) property is [`false`](https://developer.apple.com/documentation/swift/false), or if there is no saved index path because no cell was previously focused, the collection view calls this method so that you can specify which cell should receive focus. If you do not implement this method, the collection view returns an appropriate cell.
+When focus is about to change to a collection view, the collection view must pick which of its subviews should receive that focus. If the collection view’s [`remembersLastFocusedIndexPath`](../uitableview/rememberslastfocusedindexpath.md) property is set to [`true`](../../Swift/true.md), the collection view returns the index path of the cell that was last focused. If the [`remembersLastFocusedIndexPath`](../uitableview/rememberslastfocusedindexpath.md) property is [`false`](../../Swift/false.md), or if there is no saved index path because no cell was previously focused, the collection view calls this method so that you can specify which cell should receive focus. If you do not implement this method, the collection view returns an appropriate cell.
 
-The effects of this method may be ignored during or immediately after a view controller transition, such as a presentation dismissal or navigation stack pop. In such cases, the view controller attempts to restore focus to the item that was focused prior to the transition (for example, prior to the view controller being presented or pushed), which can take precedence over the effects of this method. To learn how to control or disable this behavior in the view controller, see [`restoresFocusAfterTransition`](uiviewcontroller/restoresfocusaftertransition.md).
+The effects of this method may be ignored during or immediately after a view controller transition, such as a presentation dismissal or navigation stack pop. In such cases, the view controller attempts to restore focus to the item that was focused prior to the transition (for example, prior to the view controller being presented or pushed), which can take precedence over the effects of this method. To learn how to control or disable this behavior in the view controller, see [`restoresFocusAfterTransition`](../uiviewcontroller/restoresfocusaftertransition.md).
 
-If you subclass [`UICollectionView`](uicollectionview.md), you can also implement the same behavior by overriding the [`preferredFocusEnvironments`](uifocusenvironment/preferredfocusenvironments.md) property, which is defined by the [`UIFocusEnvironment`](uifocusenvironment.md) protocol and adopted by all views.
+If you subclass [`UICollectionView`](../uicollectionview.md), you can also implement the same behavior by overriding the [`preferredFocusEnvironments`](../uifocusenvironment/preferredfocusenvironments.md) property, which is defined by the [`UIFocusEnvironment`](../uifocusenvironment.md) protocol and adopted by all views.
 
 ## Parameters
 
@@ -36,15 +41,17 @@ If you subclass [`UICollectionView`](uicollectionview.md), you can also implemen
 
 ## See Also
 
-- [var preferredFocusedView: UIView?](uifocusenvironment/preferredfocusedview.md)
+### Related Documentation
+- [var preferredFocusedView: UIView?](../uifocusenvironment/preferredfocusedview.md)
   Specifies the view that should be focused if this environment is focused.
-- [func collectionView(UICollectionView, canFocusItemAt: IndexPath) -> Bool](uicollectionviewdelegate/collectionview(_:canfocusitemat:).md)
+### Working with focus
+- [func collectionView(UICollectionView, canFocusItemAt: IndexPath) -> Bool](./collectionview%28_,canfocusitemat%29.md)
   Asks the delegate whether the item at the specified index path can be focused.
-- [func collectionView(UICollectionView, shouldUpdateFocusIn: UICollectionViewFocusUpdateContext) -> Bool](uicollectionviewdelegate/collectionview(_:shouldupdatefocusin:).md)
+- [func collectionView(UICollectionView, shouldUpdateFocusIn: UICollectionViewFocusUpdateContext) -> Bool](./collectionview%28_,shouldupdatefocusin%29.md)
   Asks the delegate whether a change in focus should occur.
-- [func collectionView(UICollectionView, didUpdateFocusIn: UICollectionViewFocusUpdateContext, with: UIFocusAnimationCoordinator)](uicollectionviewdelegate/collectionview(_:didupdatefocusin:with:).md)
+- [func collectionView(UICollectionView, didUpdateFocusIn: UICollectionViewFocusUpdateContext, with: UIFocusAnimationCoordinator)](./collectionview%28_,didupdatefocusin,with%29.md)
   Tells the delegate that a focus update occurred.
-- [func collectionView(UICollectionView, selectionFollowsFocusForItemAt: IndexPath) -> Bool](uicollectionviewdelegate/collectionview(_:selectionfollowsfocusforitemat:).md)
+- [func collectionView(UICollectionView, selectionFollowsFocusForItemAt: IndexPath) -> Bool](./collectionview%28_,selectionfollowsfocusforitemat%29.md)
   Asks the delegate whether to relate selection and focus behavior for the cell at the corresponding index path.
 
 

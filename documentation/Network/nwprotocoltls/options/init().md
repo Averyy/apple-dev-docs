@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a default set of TLS connection options.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [var securityProtocolOptions: sec_protocol_options_t](nwprotocoltls/options/securityprotocoloptions.md)
+### Customizing TLS Connections
+- [var securityProtocolOptions: sec_protocol_options_t](./securityprotocoloptions.md)
   The handshake security options TLS uses.
 
 

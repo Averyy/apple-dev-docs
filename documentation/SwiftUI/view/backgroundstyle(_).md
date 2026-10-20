@@ -1,7 +1,8 @@
 # backgroundStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the specified style to render backgrounds within the view.
 
@@ -23,7 +24,7 @@ func backgroundStyle<S>(_ style: S) -> some View where S : ShapeStyle
 
 #### Discussion
 
-The following example uses this modifier to set the [`backgroundStyle`](environmentvalues/backgroundstyle.md) environment value to a [`blue`](shapestyle/blue.md) color that includes a subtle [`gradient`](color/gradient.md). SwiftUI fills the [`Circle`](circle.md) shape that acts as a background element with this style:
+The following example uses this modifier to set the [`backgroundStyle`](../environmentvalues/backgroundstyle.md) environment value to a [`blue`](../shapestyle/blue.md) color that includes a subtle [`gradient`](../color/gradient.md). SwiftUI fills the [`Circle`](../circle.md) shape that acts as a background element with this style:
 
 ```swift
 Image(systemName: "swift")
@@ -32,9 +33,9 @@ Image(systemName: "swift")
     .backgroundStyle(.blue.gradient)
 ```
 
-![An image of the Swift logo inside a circle that’s blue with a slight](/images/com.apple.SwiftUI/View-backgroundStyle-1-iOS@2x.png)
+![An image of the Swift logo inside a circle that’s blue with a slight](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-backgroundStyle-1-iOS@2x.png)
 
-To restore the default background style, set the [`backgroundStyle`](environmentvalues/backgroundstyle.md) environment value to `nil` using the [`environment(_:_:)`](view/environment(_:_:).md) modifer:
+To restore the default background style, set the [`backgroundStyle`](../environmentvalues/backgroundstyle.md) environment value to `nil` using the [`environment(_:_:)`](./environment%28_,_%29.md) modifer:
 
 ```swift
 .environment(\.backgroundStyle, nil)
@@ -42,29 +43,30 @@ To restore the default background style, set the [`backgroundStyle`](environment
 
 ## See Also
 
-- [func border<S>(S, width: CGFloat) -> some View](view/border(_:width:).md)
+### Styling content
+- [func border<S>(S, width: CGFloat) -> some View](./border%28_,width%29.md)
   Adds a border to this view with the specified style and width.
-- [func foregroundStyle<S>(S) -> some View](view/foregroundstyle(_:).md)
+- [func foregroundStyle<S>(S) -> some View](./foregroundstyle%28_%29.md)
   Sets a view’s foreground elements to use a given style.
-- [func foregroundStyle<S1, S2>(S1, S2) -> some View](view/foregroundstyle(_:_:).md)
+- [func foregroundStyle<S1, S2>(S1, S2) -> some View](./foregroundstyle%28_,_%29.md)
   Sets the primary and secondary levels of the foreground style in the child view.
-- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](view/foregroundstyle(_:_:_:).md)
+- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](./foregroundstyle%28_,_,_%29.md)
   Sets the primary, secondary, and tertiary levels of the foreground style.
-- [var backgroundStyle: AnyShapeStyle?](environmentvalues/backgroundstyle.md)
+- [var backgroundStyle: AnyShapeStyle?](../environmentvalues/backgroundstyle.md)
   An optional style that overrides the default system background style when set.
-- [protocol ShapeStyle](shapestyle.md)
+- [protocol ShapeStyle](../shapestyle.md)
   A color or pattern to use when rendering a shape.
-- [struct AnyShapeStyle](anyshapestyle.md)
+- [struct AnyShapeStyle](../anyshapestyle.md)
   A type-erased ShapeStyle value.
-- [struct Gradient](gradient.md)
+- [struct Gradient](../gradient.md)
   A color gradient represented as an array of color stops, each having a parametric location value.
-- [struct MeshGradient](meshgradient.md)
+- [struct MeshGradient](../meshgradient.md)
   A two-dimensional gradient defined by a 2D grid of positioned colors.
-- [struct AnyGradient](anygradient.md)
+- [struct AnyGradient](../anygradient.md)
   A color gradient.
-- [struct ShadowStyle](shadowstyle.md)
+- [struct ShadowStyle](../shadowstyle.md)
   A style to use when rendering shadows.
-- [struct Glass](glass.md)
+- [struct Glass](../glass.md)
   A structure that defines the configuration of the Liquid Glass material.
 
 

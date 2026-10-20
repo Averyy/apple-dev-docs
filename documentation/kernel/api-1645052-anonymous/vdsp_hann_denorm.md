@@ -1,7 +1,8 @@
 # vDSP_HANN_DENORM
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 Specifies a denormalized Hann window.
 
@@ -10,7 +11,7 @@ Specifies a denormalized Hann window.
 
 ## Declaration
 
-```swift
+```c
 vDSP_HANN_DENORM = 0
 ```
 

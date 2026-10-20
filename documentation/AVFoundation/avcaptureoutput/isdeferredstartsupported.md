@@ -1,7 +1,8 @@
 # isDeferredStartSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A `BOOL` value that indicates whether the output supports deferred start.
 
@@ -18,13 +19,18 @@ A `BOOL` value that indicates whether the output supports deferred start.
 var isDeferredStartSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isDeferredStartSupported) BOOL deferredStartSupported;
+```
+
 #### Discussion
 
-You can only set the [`isDeferredStartEnabled`](avcaptureoutput/isdeferredstartenabled.md) property value to `true` if the output supports deferred start.
+You can only set the [`isDeferredStartEnabled`](./isdeferredstartenabled.md) property value to `true` if the output supports deferred start.
 
 ## See Also
 
-- [var isDeferredStartEnabled: Bool](avcaptureoutput/isdeferredstartenabled.md)
+### Managing deferred start
+- [var isDeferredStartEnabled: Bool](./isdeferredstartenabled.md)
   A Boolean value that indicates whether to defer starting this capture output.
 
 

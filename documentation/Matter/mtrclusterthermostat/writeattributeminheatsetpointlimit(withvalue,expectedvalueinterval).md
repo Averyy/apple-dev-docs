@@ -1,7 +1,8 @@
 # writeAttributeMinHeatSetpointLimit(withValue:expectedValueInterval:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func writeAttributeMinHeatSetpointLimit(withValue dataValueDictionary: [String : Any], expectedValueInterval expectedValueIntervalMs: NSNumber)
+```
+
+```objc
+- (void) writeAttributeMinHeatSetpointLimitWithValue:(NSDictionary<NSString *,id> *) dataValueDictionary expectedValueInterval:(NSNumber *) expectedValueIntervalMs;
 ```
 
 

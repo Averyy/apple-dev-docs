@@ -1,7 +1,8 @@
 # ScmGitReference.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Git Reference resource.
 
@@ -10,7 +11,7 @@ The attributes that describe a Git Reference resource.
 
 ## Declaration
 
-```swift
+```
 object ScmGitReference.Attributes
 ```
 
@@ -23,9 +24,10 @@ object ScmGitReference.Attributes
 
 ## See Also
 
-- [object ScmGitReference.Relationships](scmgitreference/relationships-data.dictionary.md)
+### Objects and types
+- [object ScmGitReference.Relationships](./relationships-data.dictionary.md)
   The relationships of the Git References resource you included in the request and those on which you can operate.
-- [type CiGitRefKind](cigitrefkind.md)
+- [type CiGitRefKind](../cigitrefkind.md)
   A string that represents the kind of a Git References resource.
 
 

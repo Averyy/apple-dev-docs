@@ -1,95 +1,97 @@
 # Subscription Offer Codes
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Create and manage subscription offers for auto-renewable subscriptions, including one-time use offer codes, and custom offer codes.
 
 ## Topics
 
 ### Creating and Managing Subscription Offers
-- [Create a subscription offer](post-v1-subscriptionoffercodes.md)
+- [Create a subscription offer](./post-v1-subscriptionoffercodes.md)
   Create a subscription offer that provides offer codes for an auto-renewable subscription.
-- [Read subscription offer code information](get-v1-subscriptionoffercodes-_id_.md)
+- [Read subscription offer code information](./get-v1-subscriptionoffercodes-_id_.md)
   Get details about a specific subscription offer that has offer codes for an auto-renewable subscription.
-- [Deactivate a subscription offer with offer codes](patch-v1-subscriptionoffercodes-_id_.md)
+- [Deactivate a subscription offer with offer codes](./patch-v1-subscriptionoffercodes-_id_.md)
   Deactivate a subscription offer that has offer codes for an auto-renewable subscription.
-- [List all subscription offer code prices](get-v1-subscriptionoffercodes-_id_-prices.md)
+- [List all subscription offer code prices](./get-v1-subscriptionoffercodes-_id_-prices.md)
   Get a list of price tiers for a subscription offer code.
-- [List price IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
+- [List price IDs for a subscription offer code](./get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
   Get a list of price resource IDs for a specific subscription offer code.
 ### Managing One-Time Use Offer Codes
-- [Create one-time use offer codes](post-v1-subscriptionoffercodeonetimeusecodes.md)
+- [Create one-time use offer codes](./post-v1-subscriptionoffercodeonetimeusecodes.md)
   Create one-time use codes for an auto-renewable subscription offer.
-- [Read one-time use offer code information](get-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
+- [Read one-time use offer code information](./get-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
   Get details about a specific one-time use offer code for an auto-renewable subscription.
-- [Deactivate one-time use offer codes](patch-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
+- [Deactivate one-time use offer codes](./patch-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
   Deactivate a batch of one-time use offer codes for an auto-renewable subscription.
-- [List all one-time use offer codes for an auto-renewable subscription](get-v1-subscriptionoffercodes-_id_-onetimeusecodes.md)
+- [List all one-time use offer codes for an auto-renewable subscription](./get-v1-subscriptionoffercodes-_id_-onetimeusecodes.md)
   Get details about a one-time use code for a specific subscription offer for an auto-renewable subscription.
-- [List one-time use offer code values](get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
+- [List one-time use offer code values](./get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
   Get a list of one-time use offer codes for an auto-renewable subscription in CSV format.
-- [List one-time use code IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
+- [List one-time use code IDs for a subscription offer code](./get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
   Get a list of one-time use code resource IDs for a specific subscription offer code.
 ### Managing Custom Offer Codes
-- [Create custom offer codes](post-v1-subscriptionoffercodecustomcodes.md)
+- [Create custom offer codes](./post-v1-subscriptionoffercodecustomcodes.md)
   Create custom offer codes for an auto-renewable subscription offer.
-- [List all custom offer codes for an auto-renewable subscription](get-v1-subscriptionoffercodes-_id_-customcodes.md)
+- [List all custom offer codes for an auto-renewable subscription](./get-v1-subscriptionoffercodes-_id_-customcodes.md)
   Get details about a custom code for a specific subscription offer for an auto-renewable subscription.
-- [List custom code IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-customcodes.md)
-- [Read custom offer code information](get-v1-subscriptionoffercodecustomcodes-_id_.md)
+- [List custom code IDs for a subscription offer code](./get-v1-subscriptionoffercodes-_id_-relationships-customcodes.md)
+- [Read custom offer code information](./get-v1-subscriptionoffercodecustomcodes-_id_.md)
   Get details about a specific offer code for an auto-renewable subscription.
-- [Deactivate custom offer codes](patch-v1-subscriptionoffercodecustomcodes-_id_.md)
+- [Deactivate custom offer codes](./patch-v1-subscriptionoffercodecustomcodes-_id_.md)
   Deactivate a batch of custom offer codes for an auto-renewable subscription.
 ### Objects and types
-- [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
+- [object SubscriptionOfferCodeResponse](./subscriptionoffercoderesponse.md)
   The response body for endpoints that create, read, or modify a single subscription offer code.
-- [object SubscriptionOfferCode](subscriptionoffercode.md)
+- [object SubscriptionOfferCode](./subscriptionoffercode.md)
   A promotional code that gives customers a discounted or free subscription for a specified duration and eligibility group.
-- [object SubscriptionOfferCodeCustomCodesResponse](subscriptionoffercodecustomcodesresponse.md)
+- [object SubscriptionOfferCodeCustomCodesResponse](./subscriptionoffercodecustomcodesresponse.md)
   A response containing a list of custom promotional codes for a subscription offer.
-- [object SubscriptionOfferCodeCustomCode](subscriptionoffercodecustomcode.md)
+- [object SubscriptionOfferCodeCustomCode](./subscriptionoffercodecustomcode.md)
   A merchant-defined alphanumeric promotional code granting a discounted or free subscription to the customer who redeems it.
-- [object SubscriptionOfferCodeOneTimeUseCodeValue](subscriptionoffercodeonetimeusecodevalue.md)
+- [object SubscriptionOfferCodeOneTimeUseCodeValue](./subscriptionoffercodeonetimeusecodevalue.md)
   The alphanumeric code string and associated metadata for a one-time-use subscription offer code.
-- [object SubscriptionOfferCodeOneTimeUseCodesResponse](subscriptionoffercodeonetimeusecodesresponse.md)
+- [object SubscriptionOfferCodeOneTimeUseCodesResponse](./subscriptionoffercodeonetimeusecodesresponse.md)
   A response containing a list of Apple-generated one-time-use promotional codes for a subscription offer.
-- [object SubscriptionOfferCodeOneTimeUseCode](subscriptionoffercodeonetimeusecode.md)
+- [object SubscriptionOfferCodeOneTimeUseCode](./subscriptionoffercodeonetimeusecode.md)
   A single-use promotional code generated by Apple that grants a discounted or free subscription to the recipient.
-- [type csv](csv.md)
+- [type csv](./csv.md)
   A string that represents a CSV-formatted report.
-- [object SubscriptionOfferCodePricesResponse](subscriptionoffercodepricesresponse.md)
+- [object SubscriptionOfferCodePricesResponse](./subscriptionoffercodepricesresponse.md)
   A response containing a list of territory-specific prices for a subscription offer code.
-- [object SubscriptionOfferCodePrice](subscriptionoffercodeprice.md)
+- [object SubscriptionOfferCodePrice](./subscriptionoffercodeprice.md)
   The territory-specific customer price and duration for a subscription promotional offer code.
-- [object SubscriptionOfferCodeCreateRequest](subscriptionoffercodecreaterequest.md)
+- [object SubscriptionOfferCodeCreateRequest](./subscriptionoffercodecreaterequest.md)
   The request body you use to create a subscription offer code.
-- [object SubscriptionOfferCodeCustomCodeCreateRequest](subscriptionoffercodecustomcodecreaterequest.md)
+- [object SubscriptionOfferCodeCustomCodeCreateRequest](./subscriptionoffercodecustomcodecreaterequest.md)
   The request body you use to create a subscription offer code custom code.
-- [object SubscriptionOfferCodeCustomCodeResponse](subscriptionoffercodecustomcoderesponse.md)
+- [object SubscriptionOfferCodeCustomCodeResponse](./subscriptionoffercodecustomcoderesponse.md)
   A response containing a single custom promotional code for a subscription offer.
-- [object SubscriptionOfferCodeCustomCodeUpdateRequest](subscriptionoffercodecustomcodeupdaterequest.md)
+- [object SubscriptionOfferCodeCustomCodeUpdateRequest](./subscriptionoffercodecustomcodeupdaterequest.md)
   The request body you use to update a subscription offer code custom code update request.
-- [object SubscriptionOfferCodeOneTimeUseCodeCreateRequest](subscriptionoffercodeonetimeusecodecreaterequest.md)
+- [object SubscriptionOfferCodeOneTimeUseCodeCreateRequest](./subscriptionoffercodeonetimeusecodecreaterequest.md)
   The request body you use to create a subscription offer code one-time-use code.
-- [object SubscriptionOfferCodeOneTimeUseCodeResponse](subscriptionoffercodeonetimeusecoderesponse.md)
+- [object SubscriptionOfferCodeOneTimeUseCodeResponse](./subscriptionoffercodeonetimeusecoderesponse.md)
   A response containing a single Apple-generated one-time-use promotional code.
-- [object SubscriptionOfferCodeOneTimeUseCodeUpdateRequest](subscriptionoffercodeonetimeusecodeupdaterequest.md)
+- [object SubscriptionOfferCodeOneTimeUseCodeUpdateRequest](./subscriptionoffercodeonetimeusecodeupdaterequest.md)
   The request body you use to update a subscription offer code one time use code update request.
-- [object SubscriptionOfferCodePriceInlineCreate](subscriptionoffercodepriceinlinecreate.md)
+- [object SubscriptionOfferCodePriceInlineCreate](./subscriptionoffercodepriceinlinecreate.md)
   An inline object for specifying territory-specific pricing when creating a subscription offer code.
-- [object SubscriptionOfferCodeUpdateRequest](subscriptionoffercodeupdaterequest.md)
+- [object SubscriptionOfferCodeUpdateRequest](./subscriptionoffercodeupdaterequest.md)
   The request body you use to update a subscription offer code update request.
-- [object SubscriptionOfferCodeCustomCodesLinkagesResponse](subscriptionoffercodecustomcodeslinkagesresponse.md)
-- [object SubscriptionOfferCodeOneTimeUseCodeValuesLinkageResponse](subscriptionoffercodeonetimeusecodevalueslinkageresponse.md)
-- [object SubscriptionOfferCodeOneTimeUseCodesLinkagesResponse](subscriptionoffercodeonetimeusecodeslinkagesresponse.md)
-- [object SubscriptionOfferCodePricesLinkagesResponse](subscriptionoffercodepriceslinkagesresponse.md)
-- [object SubscriptionOfferCodesLinkagesResponse](subscriptionoffercodeslinkagesresponse.md)
+- [object SubscriptionOfferCodeCustomCodesLinkagesResponse](./subscriptionoffercodecustomcodeslinkagesresponse.md)
+- [object SubscriptionOfferCodeOneTimeUseCodeValuesLinkageResponse](./subscriptionoffercodeonetimeusecodevalueslinkageresponse.md)
+- [object SubscriptionOfferCodeOneTimeUseCodesLinkagesResponse](./subscriptionoffercodeonetimeusecodeslinkagesresponse.md)
+- [object SubscriptionOfferCodePricesLinkagesResponse](./subscriptionoffercodepriceslinkagesresponse.md)
+- [object SubscriptionOfferCodesLinkagesResponse](./subscriptionoffercodeslinkagesresponse.md)
 
 ## See Also
 
-- [Subscription Introductory Offers](subscription-introductory-offers.md)
+### Managing Subscription Offers
+- [Subscription Introductory Offers](./subscription-introductory-offers.md)
   Create, modify, and delete introductory offers for auto-renewable subscriptions.
-- [Subscription Promotional Offers](subscription-promotional-offers.md)
+- [Subscription Promotional Offers](./subscription-promotional-offers.md)
   Create, modify, and delete promotional offers for auto-renewable subscriptions.
 
 

@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the haptic pattern, in seconds.
 
@@ -17,6 +18,10 @@ The duration of the haptic pattern, in seconds.
 
 ```swift
 var duration: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval duration;
 ```
 
 

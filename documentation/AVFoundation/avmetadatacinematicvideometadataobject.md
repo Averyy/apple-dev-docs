@@ -1,7 +1,8 @@
 # AVMetadataCinematicVideoMetadataObject
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A metadata object containing opaque Cinematic video metadata for Cinematic video editing.
 
@@ -18,31 +19,35 @@ A metadata object containing opaque Cinematic video metadata for Cinematic video
 class AVMetadataCinematicVideoMetadataObject
 ```
 
+```objc
+@interface AVMetadataCinematicVideoMetadataObject : AVMetadataObject
+```
+
 #### Overview
 
-This object represents Cinematic video metadata captured during a recording session using [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md).
+This object represents Cinematic video metadata captured during a recording session using [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md).
 
 ## Topics
 
 ### Instance Properties
-- [var timedMetadataGroup: AVTimedMetadataGroup?](avmetadatacinematicvideometadataobject/timedmetadatagroup.md)
+- [var timedMetadataGroup: AVTimedMetadataGroup?](./avmetadatacinematicvideometadataobject/timedmetadatagroup.md)
   A timed metadata group containing the Cinematic video metadata.
 ### Type Properties
-- [class var cinematicVideoMetadataFormatDescription: CMFormatDescription?](avmetadatacinematicvideometadataobject/cinematicvideometadataformatdescription.md)
+- [class var cinematicVideoMetadataFormatDescription: CMFormatDescription?](./avmetadatacinematicvideometadataobject/cinematicvideometadataformatdescription.md)
   The format description for Cinematic video timed metadata sample buffers.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataObject](avmetadataobject.md)
+- [AVMetadataObject](./avmetadataobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # createController(onExistingFabric:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -18,9 +19,13 @@
 func createController(onExistingFabric startupParams: MTRDeviceControllerStartupParams) throws -> MTRDeviceController
 ```
 
+```objc
+- (MTRDeviceController *) createControllerOnExistingFabric:(MTRDeviceControllerStartupParams *) startupParams error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](../onboarding-a-matter-device.md)
 
 
 ---

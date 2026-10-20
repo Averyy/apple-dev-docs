@@ -1,7 +1,8 @@
 # bandPart(_:numLowerTensor:numUpperTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the band part operation and returns the result.
 
@@ -17,6 +18,10 @@ Creates the band part operation and returns the result.
 
 ```swift
 func bandPart(_ inputTensor: MPSGraphTensor, numLowerTensor: MPSGraphTensor, numUpperTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) bandPartWithTensor:(MPSGraphTensor *) inputTensor numLowerTensor:(MPSGraphTensor *) numLowerTensor numUpperTensor:(MPSGraphTensor *) numUpperTensor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Media Player time range that indicates where an ad break exists in the current player.
 
@@ -16,6 +17,10 @@ A Media Player time range that indicates where an ad break exists in the current
 
 ```swift
 var timeRange: CMTimeRange { get set }
+```
+
+```objc
+@property (nonatomic, assign) CMTimeRange timeRange;
 ```
 
 

@@ -1,7 +1,8 @@
 # ShaderGraph.NodeLibrary
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A catalog of node definitions supported by RealityKit.
 
@@ -19,7 +20,7 @@ final class NodeLibrary
 
 #### Overview
 
-Use a library to discover available [`ShaderGraph.NodeDefinition`](shadergraph/nodedefinition.md) values and add instances of them to a [`ShaderGraph`](shadergraph.md).
+Use a library to discover available [`ShaderGraph.NodeDefinition`](./nodedefinition.md) values and add instances of them to a [`ShaderGraph`](../shadergraph.md).
 
 ```swift
 let library = ShaderGraph.NodeLibrary(version: .materialX138)
@@ -31,24 +32,24 @@ let pbr = graph.addNode(pbrNode)
 ## Topics
 
 ### Structures
-- [ShaderGraph.NodeLibrary.Version](shadergraph/nodelibrary/version-swift.struct.md)
+- [ShaderGraph.NodeLibrary.Version](./nodelibrary/version-swift.struct.md)
 ### Initializers
-- [init(version: ShaderGraph.NodeLibrary.Version)](shadergraph/nodelibrary/init(version:).md)
+- [init(version: ShaderGraph.NodeLibrary.Version)](./nodelibrary/init%28version%29.md)
   Creates a library containing all node definitions supported by RealityKit for the given library version.
 ### Instance Properties
-- [var definitions: some Collection<ShaderGraph.NodeDefinition>](shadergraph/nodelibrary/definitions.md)
+- [var definitions: some Collection<ShaderGraph.NodeDefinition>](./nodelibrary/definitions.md)
   All node definitions in this library.
-- [let version: ShaderGraph.NodeLibrary.Version](shadergraph/nodelibrary/version-swift.property.md)
+- [let version: ShaderGraph.NodeLibrary.Version](./nodelibrary/version-swift.property.md)
 ### Instance Methods
-- [func definition(named: String) -> ShaderGraph.NodeDefinition?](shadergraph/nodelibrary/definition(named:).md)
+- [func definition(named: String) -> ShaderGraph.NodeDefinition?](./nodelibrary/definition%28named%29.md)
   Returns the definition with the given name, or `nil` if no such definition exists in this library.
-- [func definitions(function: String, input: ShaderGraph.DataType) -> [ShaderGraph.NodeDefinition]](shadergraph/nodelibrary/definitions(function:input:).md)
+- [func definitions(function: String, input: ShaderGraph.DataType) -> [ShaderGraph.NodeDefinition]](./nodelibrary/definitions%28function,input%29.md)
   Returns all definitions that implement the given function with the specified input type.
-- [func definitions(function:inputs:)](shadergraph/nodelibrary/definitions(function:inputs:).md)
+- [func definitions(function:inputs:)](./nodelibrary/definitions%28function,inputs%29.md)
   Returns all definitions that implement the given function with the specified input types, in order.
-- [func definitions(function: String, output: ShaderGraph.DataType) -> [ShaderGraph.NodeDefinition]](shadergraph/nodelibrary/definitions(function:output:).md)
+- [func definitions(function: String, output: ShaderGraph.DataType) -> [ShaderGraph.NodeDefinition]](./nodelibrary/definitions%28function,output%29.md)
   Returns all definitions that implement the given function with the specified output type.
-- [func makeNode(from: ShaderGraph.NodeDefinition) throws -> ShaderGraph.Node](shadergraph/nodelibrary/makenode(from:).md)
+- [func makeNode(from: ShaderGraph.NodeDefinition) throws -> ShaderGraph.Node](./nodelibrary/makenode%28from%29.md)
   Creates a node instance of the given definition.
 
 

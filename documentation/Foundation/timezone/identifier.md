@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geopolitical region identifier that identifies the time zone.
 
@@ -22,11 +23,12 @@ var identifier: String { get }
 
 ## See Also
 
-- [func abbreviation(for: Date) -> String?](timezone/abbreviation(for:).md)
+### Getting Time Zone Information
+- [func abbreviation(for: Date) -> String?](./abbreviation%28for%29.md)
   Returns the abbreviation for the time zone at a given date.
-- [func secondsFromGMT(for: Date) -> Int](timezone/secondsfromgmt(for:).md)
+- [func secondsFromGMT(for: Date) -> Int](./secondsfromgmt%28for%29.md)
   The current difference in seconds between the time zone and Greenwich Mean Time.
-- [static var timeZoneDataVersion: String](timezone/timezonedataversion.md)
+- [static var timeZoneDataVersion: String](./timezonedataversion.md)
   Returns the time zone data version.
 
 

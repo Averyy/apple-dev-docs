@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Game Controller  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the element that the key specifies.
 
@@ -19,13 +20,17 @@ Returns the element that the key specifies.
 subscript(key: String) -> GCControllerElement? { get }
 ```
 
+```objc
+- (GCControllerElement *) objectForKeyedSubscript:(NSString *) key;
+```
+
 #### Return Value
 
 The element that matches the key.
 
 #### Discussion
 
-You can access elements of a profile using a subscript notation. For example, get the button with the X label from an instance of [`GCMicroGamepad`](gcmicrogamepad.md) using `microGamepad[”Button X”]`.
+You can access elements of a profile using a subscript notation. For example, get the button with the X label from an instance of [`GCMicroGamepad`](../gcmicrogamepad.md) using `microGamepad[”Button X”]`.
 
 ## Parameters
 
@@ -33,15 +38,16 @@ You can access elements of a profile using a subscript notation. For example, ge
 
 ## See Also
 
-- [var elements: [String : GCControllerElement]](gcphysicalinputprofile/elements.md)
+### Accessing elements by name or key
+- [var elements: [String : GCControllerElement]](./elements.md)
   The elements in the profile as key-value pairs for lookup by name.
-- [var buttons: [String : GCControllerButtonInput]](gcphysicalinputprofile/buttons.md)
+- [var buttons: [String : GCControllerButtonInput]](./buttons.md)
   The buttons in the profile as key-value pairs for lookup by name.
-- [var axes: [String : GCControllerAxisInput]](gcphysicalinputprofile/axes.md)
+- [var axes: [String : GCControllerAxisInput]](./axes.md)
   The axes in the profile as key-value pairs for lookup by name.
-- [var dpads: [String : GCControllerDirectionPad]](gcphysicalinputprofile/dpads.md)
+- [var dpads: [String : GCControllerDirectionPad]](./dpads.md)
   The directional pads in the profile as key-value pairs for lookup by name.
-- [var touchpads: [String : GCControllerTouchpad]](gcphysicalinputprofile/touchpads.md)
+- [var touchpads: [String : GCControllerTouchpad]](./touchpads.md)
   The touchpads in the profile as key-value pairs for lookup by name.
 
 

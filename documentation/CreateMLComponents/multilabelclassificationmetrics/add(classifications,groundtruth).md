@@ -1,7 +1,8 @@
 # add(classifications:groundTruth:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the metrics with more classifications and ground truth labels.
 
@@ -20,6 +21,8 @@ Updates the metrics with more classifications and ground truth labels.
 mutating func add(classifications: some Sequence<ClassificationDistribution<Label>>, groundTruth: some Sequence<Set<Label>>)
 ```
 
+Available when `Label` conforms to `Hashable`.
+
 #### Discussion
 
 The classifications and ground truth sequences are matched element by element in the order they are provided. Both sequences must have the same number of elements.
@@ -31,7 +34,8 @@ The classifications and ground truth sequences are matched element by element in
 
 ## See Also
 
-- [func add(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>)](multilabelclassificationmetrics/add(_:).md)
+### Updating the metrics
+- [func add(some Sequence<(classification: ClassificationDistribution<Label>, labels: Set<Label>)>)](./add%28_%29.md)
   Updates the metrics with more pairs of classifications and ground truth labels.
 
 

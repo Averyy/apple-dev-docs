@@ -1,7 +1,8 @@
 # drawingGestureRecognizer
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gesture recognizer that the canvas uses to track touch events.
 
@@ -15,6 +16,10 @@ The gesture recognizer that the canvas uses to track touch events.
 
 ```swift
 var drawingGestureRecognizer: UIGestureRecognizer { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIGestureRecognizer * drawingGestureRecognizer;
 ```
 
 

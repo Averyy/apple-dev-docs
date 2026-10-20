@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount to adjust the saturation by.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The amount to adjust the saturation by.
 var amount: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float amount;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](civibrance/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

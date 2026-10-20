@@ -1,7 +1,8 @@
 # group(columnsNamed:aggregators:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new data table with the given columns and adds a new column for each of the given aggregators.
 
@@ -30,7 +31,8 @@ A new data table.
 
 ## See Also
 
-- [MLDataTable.Aggregator](mldatatable/aggregator.md)
+### Aggregating rows
+- [MLDataTable.Aggregator](./aggregator.md)
   A collection of column operations you can use with a data table’s `group` method.
 
 

@@ -1,7 +1,8 @@
 # attributedSecondaryTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional second attributed string to display for a suggestion menu item. This value should be localized. This value is an attributed string representation of `secondaryTitle`.
 

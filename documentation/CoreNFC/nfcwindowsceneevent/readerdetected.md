@@ -1,7 +1,8 @@
 # NFCWindowSceneEvent.readerDetected
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The eligible device detected the RF field of an NFC reader.
 
@@ -18,7 +19,8 @@ case readerDetected
 
 ## See Also
 
-- [NFCWindowSceneEvent.presentation](nfcwindowsceneevent/presentation.md)
+### Events
+- [NFCWindowSceneEvent.presentation](./presentation.md)
   The user performed a gesture to present an NFC display.
 
 

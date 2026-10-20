@@ -1,7 +1,8 @@
 # lockOnSleep
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the keychain locks when the system sleeps.
 
@@ -13,6 +14,10 @@ A Boolean value indicating whether the keychain locks when the system sleeps.
 
 ```swift
 var lockOnSleep: DarwinBoolean
+```
+
+```c
+Boolean lockOnSleep;
 ```
 
 

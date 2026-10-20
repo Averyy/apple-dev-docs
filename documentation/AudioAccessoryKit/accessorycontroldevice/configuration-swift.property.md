@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current configuration of the device.
 
@@ -16,7 +17,8 @@ final var configuration: AccessoryControlDevice.Configuration { get }
 
 ## See Also
 
-- [let accessory: ASAccessory](accessorycontroldevice/accessory.md)
+### Inspecting the accessory
+- [let accessory: ASAccessory](./accessory.md)
   An AccessorySetupKit accessory that represents the audio device.
 
 

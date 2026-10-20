@@ -1,7 +1,8 @@
 # otherMouseDown(with:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -15,18 +16,19 @@
 
 ## See Also
 
-- [func mouseDown(with: NSEvent)](nshostingview/mousedown(with:).md)
-- [func mouseUp(with: NSEvent)](nshostingview/mouseup(with:).md)
-- [func otherMouseUp(with: NSEvent)](nshostingview/othermouseup(with:).md)
-- [func rightMouseDown(with: NSEvent)](nshostingview/rightmousedown(with:).md)
-- [func rightMouseUp(with: NSEvent)](nshostingview/rightmouseup(with:).md)
-- [func mouseEntered(with: NSEvent)](nshostingview/mouseentered(with:).md)
-- [func mouseExited(with: NSEvent)](nshostingview/mouseexited(with:).md)
-- [func mouseDragged(with: NSEvent)](nshostingview/mousedragged(with:).md)
-- [func mouseMoved(with: NSEvent)](nshostingview/mousemoved(with:).md)
-- [func otherMouseDragged(with: NSEvent)](nshostingview/othermousedragged(with:).md)
-- [func rightMouseDragged(with: NSEvent)](nshostingview/rightmousedragged(with:).md)
-- [func cursorUpdate(with: NSEvent)](nshostingview/cursorupdate(with:).md)
+### Responding to mouse events
+- [func mouseDown(with: NSEvent)](./mousedown%28with%29.md)
+- [func mouseUp(with: NSEvent)](./mouseup%28with%29.md)
+- [func otherMouseUp(with: NSEvent)](./othermouseup%28with%29.md)
+- [func rightMouseDown(with: NSEvent)](./rightmousedown%28with%29.md)
+- [func rightMouseUp(with: NSEvent)](./rightmouseup%28with%29.md)
+- [func mouseEntered(with: NSEvent)](./mouseentered%28with%29.md)
+- [func mouseExited(with: NSEvent)](./mouseexited%28with%29.md)
+- [func mouseDragged(with: NSEvent)](./mousedragged%28with%29.md)
+- [func mouseMoved(with: NSEvent)](./mousemoved%28with%29.md)
+- [func otherMouseDragged(with: NSEvent)](./othermousedragged%28with%29.md)
+- [func rightMouseDragged(with: NSEvent)](./rightmousedragged%28with%29.md)
+- [func cursorUpdate(with: NSEvent)](./cursorupdate%28with%29.md)
 
 
 ---

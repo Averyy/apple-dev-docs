@@ -1,7 +1,8 @@
 # headroomAdaptiveGainCurve
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Headroom Adaptive Gain Curve embedded in this profile, or `nil` if it carries no HAGC tag.
 
@@ -22,11 +23,12 @@ var headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve? { get
 
 #### Discussion
 
-This decodes the HAGC tag into its structured form. For the unparsed bytes, use [`headroomAdaptiveGainCurveMetadata`](colorsyncprofile/headroomadaptivegaincurvemetadata.md).
+This decodes the HAGC tag into its structured form. For the unparsed bytes, use [`headroomAdaptiveGainCurveMetadata`](./headroomadaptivegaincurvemetadata.md).
 
 ## See Also
 
-- [var headroomAdaptiveGainCurveMetadata: Data?](colorsyncprofile/headroomadaptivegaincurvemetadata.md)
+### Reading a curve in Swift
+- [var headroomAdaptiveGainCurveMetadata: Data?](./headroomadaptivegaincurvemetadata.md)
   The raw Headroom Adaptive Gain Curve data embedded in this profile, or `nil` if it carries no HAGC tag.
 
 

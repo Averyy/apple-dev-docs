@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: ManagedAppDistribution  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces results from this asynchronous sequence.
 

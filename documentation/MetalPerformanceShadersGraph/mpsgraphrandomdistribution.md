@@ -1,7 +1,8 @@
 # MPSGraphRandomDistribution
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The distributions supported by random operations.
 
@@ -19,27 +20,31 @@ The distributions supported by random operations.
 enum MPSGraphRandomDistribution
 ```
 
+```c
+enum MPSGraphRandomDistribution : uint64_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphRandomDistribution.normal](mpsgraphrandomdistribution/normal.md)
+- [MPSGraphRandomDistribution.normal](./mpsgraphrandomdistribution/normal.md)
   The normal distribution defined by mean and standard deviation.
-- [MPSGraphRandomDistribution.truncatedNormal](mpsgraphrandomdistribution/truncatednormal.md)
+- [MPSGraphRandomDistribution.truncatedNormal](./mpsgraphrandomdistribution/truncatednormal.md)
   The normal distribution defined by mean and standard deviation, truncated to the range [min, max)
-- [MPSGraphRandomDistribution.uniform](mpsgraphrandomdistribution/uniform.md)
+- [MPSGraphRandomDistribution.uniform](./mpsgraphrandomdistribution/uniform.md)
   The uniform distribution, with samples drawn uniformly from [min, max) for float types, and [min, max] for integer types.
 ### Initializers
-- [init?(rawValue: UInt64)](mpsgraphrandomdistribution/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./mpsgraphrandomdistribution/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

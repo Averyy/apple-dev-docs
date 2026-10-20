@@ -1,7 +1,8 @@
 # calendarEvents
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of calendar events that the data detection system identifies.
 

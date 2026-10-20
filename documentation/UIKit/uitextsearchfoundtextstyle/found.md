@@ -1,7 +1,8 @@
 # UITextSearchFoundTextStyle.found
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that indicates the text is a match, but not highlighted.
 
@@ -17,11 +18,16 @@ A style that indicates the text is a match, but not highlighted.
 case found
 ```
 
+```c
+UITextSearchFoundTextStyleFound
+```
+
 ## See Also
 
-- [UITextSearchFoundTextStyle.normal](uitextsearchfoundtextstyle/normal.md)
+### Constants
+- [UITextSearchFoundTextStyle.normal](./normal.md)
   A style that indicates the text isn’t a match.
-- [UITextSearchFoundTextStyle.highlighted](uitextsearchfoundtextstyle/highlighted.md)
+- [UITextSearchFoundTextStyle.highlighted](./highlighted.md)
   A style that indicates the text is a highlighted match.
 
 

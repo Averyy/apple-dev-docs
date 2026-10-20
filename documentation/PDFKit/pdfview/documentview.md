@@ -1,7 +1,8 @@
 # documentView
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The innermost view used by `PDFView` or by your `PDFView` subclass.
 
@@ -15,8 +16,28 @@ The innermost view used by `PDFView` or by your `PDFView` subclass.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var documentView: UIView? { get }
+```
+
+*macOS*
+
 ```swift
 var documentView: NSView? { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly, nullable) UIView * documentView;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSView * documentView;
 ```
 
 #### Discussion
@@ -25,9 +46,10 @@ The innermost view is the one displaying the visible document pages. This method
 
 ## See Also
 
-- [func layoutDocumentView()](pdfview/layoutdocumentview.md)
+### Specializing the View
+- [func layoutDocumentView()](./layoutdocumentview%28%29.md)
   Performs layout of the inner views.
-- [Draw Operations](draw-operations.md)
+- [Draw Operations](../draw-operations.md)
   Draw in a PDF page.
 
 

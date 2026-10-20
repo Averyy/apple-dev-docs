@@ -1,7 +1,8 @@
 # badgeProminence(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the prominence of badges created by this view.
 
@@ -25,7 +26,7 @@ Badges can be used for different kinds of information, from the passive number o
 
 Badges will default to `standard` prominence unless specified.
 
-The following example shows a [`List`](list.md) displaying a list of folders with an informational badge with lower prominence, showing the number of items in the folder.
+The following example shows a [`List`](../list.md) displaying a list of folders with an informational badge with lower prominence, showing the number of items in the folder.
 
 ```swift
 List(folders) { folder in
@@ -41,11 +42,12 @@ List(folders) { folder in
 
 ## See Also
 
-- [func badge(_:)](view/badge(_:).md)
+### Displaying a badge on a list item
+- [func badge(_:)](./badge%28_%29.md)
   Generates a badge for the view from a localized string resource.
-- [var badgeProminence: BadgeProminence](environmentvalues/badgeprominence.md)
+- [var badgeProminence: BadgeProminence](../environmentvalues/badgeprominence.md)
   The prominence to apply to badges associated with this environment.
-- [struct BadgeProminence](badgeprominence.md)
+- [struct BadgeProminence](../badgeprominence.md)
   The visual prominence of a badge.
 
 

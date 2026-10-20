@@ -1,7 +1,8 @@
 # splitViewDidResizeSubviews(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the split view resizes its subviews.
 
@@ -15,6 +16,10 @@ Notifies the delegate when the split view resizes its subviews.
 optional func splitViewDidResizeSubviews(_ notification: Notification)
 ```
 
+```objc
+- (void) splitViewDidResizeSubviews:(NSNotification *) notification;
+```
+
 #### Discussion
 
 If the delegate implements this method, the system automatically registers it to receive this notification.
@@ -23,15 +28,16 @@ The default notification center invokes this method after the split view resizes
 
 ## Parameters
 
-- `notification`: A notification named [`didResizeSubviewsNotification`](nssplitview/didresizesubviewsnotification.md), which posts after a change to the size of some or all subviews of a split view.
+- `notification`: A notification named [`didResizeSubviewsNotification`](../nssplitview/didresizesubviewsnotification.md), which posts after a change to the size of some or all subviews of a split view.
 
 ## See Also
 
-- [func splitViewWillResizeSubviews(Notification)](nssplitviewdelegate/splitviewwillresizesubviews(_:).md)
+### Managing Subviews
+- [func splitViewWillResizeSubviews(Notification)](./splitviewwillresizesubviews%28_%29.md)
   Notifies the delegate when the split view is about to resize its subviews.
-- [func splitView(NSSplitView, canCollapseSubview: NSView) -> Bool](nssplitviewdelegate/splitview(_:cancollapsesubview:).md)
+- [func splitView(NSSplitView, canCollapseSubview: NSView) -> Bool](./splitview%28_,cancollapsesubview%29.md)
   Allows the delegate to determine whether the user can collapse and expand the specified subview.
-- [func splitView(NSSplitView, shouldCollapseSubview: NSView, forDoubleClickOnDividerAt: Int) -> Bool](nssplitviewdelegate/splitview(_:shouldcollapsesubview:fordoubleclickondividerat:).md)
+- [func splitView(NSSplitView, shouldCollapseSubview: NSView, forDoubleClickOnDividerAt: Int) -> Bool](./splitview%28_,shouldcollapsesubview,fordoubleclickondividerat%29.md)
   Allows a delegate to determine if a subview collapses in response to a double click.
 
 

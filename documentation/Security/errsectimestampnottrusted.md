@@ -1,7 +1,8 @@
 # errSecTimestampNotTrusted
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The timestamp is not trusted.
 
@@ -18,6 +19,10 @@ The timestamp is not trusted.
 
 ```swift
 var errSecTimestampNotTrusted: OSStatus { get }
+```
+
+```c
+errSecTimestampNotTrusted
 ```
 
 

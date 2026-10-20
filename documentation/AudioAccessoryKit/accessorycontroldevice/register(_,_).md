@@ -1,7 +1,8 @@
 # register(_:_:)
 
 **Framework**: AudioAccessoryKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers the audio accessory with the system and activates its configured capabilities.
 

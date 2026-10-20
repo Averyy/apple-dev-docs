@@ -1,7 +1,8 @@
 # app
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The position of the app’s content in the shared coordinate space.
 

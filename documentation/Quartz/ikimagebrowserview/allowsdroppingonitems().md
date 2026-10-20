@@ -1,7 +1,8 @@
 # allowsDroppingOnItems()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the user can drop on items.
 
@@ -14,27 +15,32 @@ Returns whether the user can drop on items.
 func allowsDroppingOnItems() -> Bool
 ```
 
+```objc
+- (BOOL) allowsDroppingOnItems;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user is able to drop on items, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the user is able to drop on items, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The default is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func setDraggingDestinationDelegate(Any!)](ikimagebrowserview/setdraggingdestinationdelegate(_:).md)
+### Supporting Drag and Drop
+- [func setDraggingDestinationDelegate(Any!)](./setdraggingdestinationdelegate%28_%29.md)
   Sets the dragging destination delegate of the receiver.
-- [func draggingDestinationDelegate() -> Any!](ikimagebrowserview/draggingdestinationdelegate.md)
+- [func draggingDestinationDelegate() -> Any!](./draggingdestinationdelegate%28%29.md)
   Returns the dragging destination delegate of the receiver.
-- [func setDrop(Int, dropOperation: IKImageBrowserDropOperation)](ikimagebrowserview/setdrop(_:dropoperation:).md)
+- [func setDrop(Int, dropOperation: IKImageBrowserDropOperation)](./setdrop%28_,dropoperation%29.md)
   Allows the class to retarget the drop action.
-- [func indexAtLocationOfDroppedItem() -> Int](ikimagebrowserview/indexatlocationofdroppeditem.md)
+- [func indexAtLocationOfDroppedItem() -> Int](./indexatlocationofdroppeditem%28%29.md)
   Returns the index of the cell where the drop operation occurred.
-- [func setAllowsDroppingOnItems(Bool)](ikimagebrowserview/setallowsdroppingonitems(_:).md)
+- [func setAllowsDroppingOnItems(Bool)](./setallowsdroppingonitems%28_%29.md)
   Specifies whether the user can drop on items.
-- [func dropOperation() -> IKImageBrowserDropOperation](ikimagebrowserview/dropoperation.md)
+- [func dropOperation() -> IKImageBrowserDropOperation](./dropoperation%28%29.md)
   Returns the current drop operation.
 
 

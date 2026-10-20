@@ -1,7 +1,8 @@
 # configurationState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current configuration state of the view.
 
@@ -10,7 +11,7 @@ The current configuration state of the view.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,18 @@ The current configuration state of the view.
 
 #### Discussion
 
-To add your own custom state, see [`UIConfigurationStateCustomKey`](uiconfigurationstatecustomkey.md).
+To add your own custom state, see [`UIConfigurationStateCustomKey`](../uiconfigurationstatecustomkey.md).
 
 ## See Also
 
-- [func setNeedsUpdateConfiguration()](uitableviewheaderfooterview/setneedsupdateconfiguration.md)
+### Managing the state
+- [func setNeedsUpdateConfiguration()](./setneedsupdateconfiguration%28%29.md)
   Informs the view to update its configuration for its current state.
-- [func updateConfiguration(using: UIViewConfigurationState)](uitableviewheaderfooterview/updateconfiguration(using:).md)
+- [func updateConfiguration(using: UIViewConfigurationState)](./updateconfiguration%28using%29.md)
   Updates the view’s configuration using the current state.
-- [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](uitableviewheaderfooterview/configurationupdatehandler-49slo.md)
+- [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](./configurationupdatehandler-49slo.md)
   A block for handling updates to the view’s configuration using the current state.
-- [UITableViewHeaderFooterView.ConfigurationUpdateHandler](uitableviewheaderfooterview/configurationupdatehandler-swift.typealias.md)
+- [UITableViewHeaderFooterView.ConfigurationUpdateHandler](./configurationupdatehandler-swift.typealias.md)
   The type of block for handling updates to the view’s configuration using the current state.
 
 

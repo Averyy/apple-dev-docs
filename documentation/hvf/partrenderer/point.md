@@ -1,7 +1,8 @@
 # PartRenderer.Point
 
 **Framework**: hvf  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A point returned from the scaler
 
@@ -23,16 +24,16 @@ struct Point
 ## Topics
 
 ### Initializers
-- [init(x: Double, y: Double)](partrenderer/point/init(x:y:).md)
+- [init(x: Double, y: Double)](./point/init%28x,y%29.md)
 ### Instance Properties
-- [var x: Double](partrenderer/point/x.md)
-- [var y: Double](partrenderer/point/y.md)
+- [var x: Double](./point/x.md)
+- [var y: Double](./point/y.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

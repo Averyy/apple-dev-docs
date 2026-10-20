@@ -1,7 +1,8 @@
 # relinquishPresentedItem(toWriter:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies your object that another object or process wants to write to the presented file or directory.
 
@@ -20,13 +21,17 @@ Notifies your object that another object or process wants to write to the presen
 optional func relinquishPresentedItem(toWriter writer: @escaping @Sendable ((@Sendable () -> Void)?) -> Void)
 ```
 
+```objc
+- (void) relinquishPresentedItemToWriter:(void (^)(void (^reacquirer)())) writer;
+```
+
 #### Discussion
 
 You use this method to provide an appropriate response when another object wants to write to your presented URL. For example, when this method is called, you would likely stop making changes to the file or directory. After taking any appropriate steps, you must execute the block in the `writer` parameter to let the waiting object know that it may now proceed with its task. If you want to be notified when the writer has completed its task, pass your own block to the writer and use that block to reacquire the file or URL for your own uses.
 
 > ❗ **Important**:  If you implement this method, you must execute the block in the `writer` parameter at the end of your implementation. The system waits for you to execute that block before allowing the `writer` to operate on the file. Therefore, failure to execute the block could stall threads in your application or other processes.
 
-If the writer changes the file or directory, you do not need to incorporate those changes in your reacquirer block. Instead, implement the [`presentedItemDidChange()`](nsfilepresenter/presenteditemdidchange().md) method and use it to detect when a writer actually wrote its changes to disk.
+If the writer changes the file or directory, you do not need to incorporate those changes in your reacquirer block. Instead, implement the [`presentedItemDidChange()`](./presenteditemdidchange%28%29.md) method and use it to detect when a writer actually wrote its changes to disk.
 
 The following listing shows a simple implementation of this method that sets a Boolean flag that the file being monitored is not writable at the moment. After setting the flag, it executes the writer block and passes in yet another block for the writer to execute when it is done.
 
@@ -45,17 +50,19 @@ The following listing shows a simple implementation of this method that sets a B
 }
 ```
 
-Your implementation of this method is executed using the queue in the [`presentedItemOperationQueue`](nsfilepresenter/presenteditemoperationqueue.md) property. Your reacquirer block is executed on the queue associated with the writer.
+Your implementation of this method is executed using the queue in the [`presentedItemOperationQueue`](./presenteditemoperationqueue.md) property. Your reacquirer block is executed on the queue associated with the writer.
 
 ## Parameters
 
-- `writer`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) that takes another block as a parameter and returns no value. The `reacquirer` block is one you pass to the `writer` block so that your object can be notified when the `writer` is done. If your object does not need to be notified, it can pass `nil` for the `reacquirer` block.
+- `writer`: A [Block object](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) that takes another block as a parameter and returns no value. The `reacquirer` block is one you pass to the `writer` block so that your object can be notified when the `writer` is done. If your object does not need to be notified, it can pass `nil` for the `reacquirer` block.
 
 ## See Also
 
-- [func presentedItemDidChange()](nsfilepresenter/presenteditemdidchange.md)
+### Related Documentation
+- [func presentedItemDidChange()](./presenteditemdidchange%28%29.md)
   Tells your object that the presented item’s contents or attributes changed.
-- [func relinquishPresentedItem(toReader: ((() -> Void)?) -> Void)](nsfilepresenter/relinquishpresenteditem(toreader:).md)
+### Relinquishing Managed Files
+- [func relinquishPresentedItem(toReader: ((() -> Void)?) -> Void)](./relinquishpresenteditem%28toreader%29.md)
   Notifies your object that another object or process wants to read the presented file or directory.
 
 

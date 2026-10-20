@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 String description of the pixel format - IO32BitDirectPixels, IO16BitDirectPixels etc.
 
@@ -10,7 +11,7 @@ String description of the pixel format - IO32BitDirectPixels, IO16BitDirectPixel
 
 ## Declaration
 
-```swift
+```c
 IOPixelEncoding pixelFormat;
 ```
 

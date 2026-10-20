@@ -1,23 +1,28 @@
 # CFAllocatorGetContext(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the context of the specified allocator or of the default allocator.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFAllocatorGetContext(_ allocator: CFAllocator!, _ context: UnsafeMutablePointer<CFAllocatorContext>!)
+```
+
+```c
+extern void CFAllocatorGetContext(CFAllocatorRef allocator, CFAllocatorContext *context);
 ```
 
 #### Discussion

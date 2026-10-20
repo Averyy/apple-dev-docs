@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of what went wrong, for debugging purposes.
 

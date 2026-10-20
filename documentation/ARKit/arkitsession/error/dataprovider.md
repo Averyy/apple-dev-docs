@@ -1,7 +1,8 @@
 # dataProvider
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data provider that causes an error in a session, if any.
 
@@ -17,11 +18,12 @@ let dataProvider: (any DataProvider)?
 
 ## See Also
 
-- [let code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
+### Inspecting ARKit errors
+- [let code: ARKitSession.Error.Code](./code-swift.property.md)
   The error code for an ARKit session error.
-- [ARKitSession.Error.Code](arkitsession/error/code-swift.enum.md)
+- [ARKitSession.Error.Code](./code-swift.enum.md)
   The error codes for ARKit sessions.
-- [let errorDescription: String?](arkitsession/error/errordescription.md)
+- [let errorDescription: String?](./errordescription.md)
   A localized message that describes the error that occurred.
 
 

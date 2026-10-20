@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A new property wrapper for the given key path.
 
@@ -18,6 +19,12 @@ A new property wrapper for the given key path.
 
 ```swift
 init(_ keyPath: KeyPath<FocusedValues, Value?>)
+```
+
+**Other overloads**:
+
+```swift
+init(_ objectType: Value.Type) where Value : AnyObject, Value : Observable
 ```
 
 #### Discussion

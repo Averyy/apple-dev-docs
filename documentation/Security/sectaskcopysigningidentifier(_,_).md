@@ -1,7 +1,8 @@
 # SecTaskCopySigningIdentifier(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the value of the code signing identifier.
 
@@ -15,9 +16,13 @@ Returns the value of the code signing identifier.
 func SecTaskCopySigningIdentifier(_ task: SecTask, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFString?
 ```
 
+```c
+CFStringRefSecTaskCopySigningIdentifier(SecTaskRef task, CFErrorRef*error);
+```
+
 #### Return Value
 
-A string representing the code signing identifier for the task, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this string’s memory when you are done with it.
+A string representing the code signing identifier for the task, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this string’s memory when you are done with it.
 
 ## Parameters
 

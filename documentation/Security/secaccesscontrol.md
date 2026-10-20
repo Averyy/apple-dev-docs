@@ -1,7 +1,8 @@
 # SecAccessControl
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque type that contains information about how a keychain item may be used.
 
@@ -20,15 +21,19 @@ An opaque type that contains information about how a keychain item may be used.
 class SecAccessControl
 ```
 
+```c
+typedef struct __SecAccessControl * SecAccessControlRef;
+```
+
 ## Mentions
 
-- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
+- [Restricting keychain item accessibility](./restricting-keychain-item-accessibility.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

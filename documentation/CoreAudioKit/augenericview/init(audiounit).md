@@ -1,7 +1,8 @@
 # init(audioUnit:)
 
 **Framework**: CoreAudioKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a generic view for an audio unit, setting all display flags.
 
@@ -14,6 +15,10 @@ Creates a generic view for an audio unit, setting all display flags.
 init(audioUnit au: AudioUnit)
 ```
 
+```objc
+- (AUGenericView *) initWithAudioUnit:(AudioUnit) au;
+```
+
 #### Return Value
 
 The initialized generic view. On error, returns `nil`.
@@ -24,7 +29,8 @@ The initialized generic view. On error, returns `nil`.
 
 ## See Also
 
-- [init(audioUnit: AudioUnit, displayFlags: AUGenericViewDisplayFlags)](augenericview/init(audiounit:displayflags:).md)
+### Creating a Generic View
+- [init(audioUnit: AudioUnit, displayFlags: AUGenericViewDisplayFlags)](./init%28audiounit,displayflags%29.md)
   Initializes a generic view for an audio unit, setting specific display flags.
 
 

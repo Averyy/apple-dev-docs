@@ -1,12 +1,13 @@
 # transportType
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UInt32 whose value indicates how the box is connected to the system. Constants for some of the values for this property can be found in the enum in the AudioDevice Constants section of AudioHardwareBase.h
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

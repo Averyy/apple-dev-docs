@@ -1,7 +1,8 @@
 # AccessoryFeatureSession
 
 **Framework**: Accessory Transport Extension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.5+
@@ -15,19 +16,19 @@ protocol AccessoryFeatureSession : Sendable
 ## Topics
 
 ### Instance Properties
-- [var accessory: ASAccessory](accessoryfeaturesession/accessory.md)
+- [var accessory: ASAccessory](./accessoryfeaturesession/accessory.md)
   The accessory associated with this feature session.
-- [var sessionID: UUID](accessoryfeaturesession/sessionid.md)
+- [var sessionID: UUID](./accessoryfeaturesession/sessionid.md)
   The session identifier for this capability session.
 ### Instance Methods
-- [func send(message: AccessoryMessage) async throws](accessoryfeaturesession/send(message:).md)
+- [func send(message: AccessoryMessage) async throws](./accessoryfeaturesession/send%28message%29.md)
   Send a message to the Transport Extension.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

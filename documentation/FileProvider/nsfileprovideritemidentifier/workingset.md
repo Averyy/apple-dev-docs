@@ -1,7 +1,8 @@
 # workingSet
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The persistent identifier representing the working set of documents and directories.
 
@@ -18,20 +19,25 @@ The persistent identifier representing the working set of documents and director
 static let workingSet: NSFileProviderItemIdentifier
 ```
 
+```c
+extern NSFileProviderItemIdentifier const NSFileProviderWorkingSetContainerItemIdentifier;
+```
+
 ## Mentions
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
-- [Defining Your File Provider’s Content](defining-your-file-provider-s-content.md)
+- [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
+- [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md)
 
 #### Discussion
 
-For more information about the working set, see  [`Create the Working Set and Enumerate its Content`](defining-your-file-provider-s-content#Create-the-Working-Set-and-Enumerate-its-Content.md).
+For more information about the working set, see  [Create the Working Set and Enumerate its Content](../defining-your-file-provider-s-content.md#Create-the-Working-Set-and-Enumerate-its-Content).
 
 ## See Also
 
-- [static let rootContainer: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/rootcontainer.md)
+### Constants
+- [static let rootContainer: NSFileProviderItemIdentifier](./rootcontainer.md)
   The persistent identifier for the root directory of the file provider’s shared file hierarchy.
-- [static let trashContainer: NSFileProviderItemIdentifier](nsfileprovideritemidentifier/trashcontainer.md)
+- [static let trashContainer: NSFileProviderItemIdentifier](./trashcontainer.md)
   The persistent identifier for the parent of all trashed items.
 
 

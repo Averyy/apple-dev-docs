@@ -1,7 +1,8 @@
 # destinationSubnetMask
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination network mask of the route.
 
@@ -19,15 +20,20 @@ The destination network mask of the route.
 var destinationSubnetMask: String { get }
 ```
 
+```objc
+@property (readonly) NSString * destinationSubnetMask;
+```
+
 #### Discussion
 
 This string is combined with `destinationAddress` to specify the destination network of the route.
 
 ## See Also
 
-- [var destinationAddress: String](neipv4route/destinationaddress.md)
+### Accessing IPv4 Route Properties
+- [var destinationAddress: String](./destinationaddress.md)
   The destination network address of the route.
-- [var gatewayAddress: String?](neipv4route/gatewayaddress.md)
+- [var gatewayAddress: String?](./gatewayaddress.md)
   The address of the next-hop gateway of the route.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the full completion text for a particular item to use when the item is highlighted or selected.
@@ -26,7 +27,7 @@ This function may be used by the control to display a preview of the text that w
 
 For example, given a user interface with a text field and suggestions menu that looks like:
 
-```None
+```
         ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 Recipe: ┃ apple│                       ┃
         ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -41,7 +42,7 @@ where “│” denotes the text insertion point.
 
 If this function returns `"Applesauce"` for the first suggestion item, when the first suggestion item is highlighted, the user interface will look like:
 
-```None
+```
         ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 Recipe: ┃ apple│sauce|                 ┃
         ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -56,7 +57,7 @@ where the text between “|” is shown as a preview in the field
 
 Upon selection of that first suggestion item:
 
-```None
+```
         ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 Recipe: ┃ Applesauce                   ┃
         ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -68,6 +69,12 @@ Recipe: ┃ Applesauce                   ┃
 
 - `textField`: The text field whose suggestions item may be highlighted or selected.
 - `item`: The item that may be highlighted or selected.
+
+## Default Implementations
+
+### NSTextSuggestionsDelegate Implementations
+- [func textField(NSTextField, textCompletionFor: Self.Item) -> String?](./textfield%28_,textcompletionfor%29-4utmm.md)
+  Returns the full completion text for a particular item to use when the item is highlighted or selected.
 
 
 ---

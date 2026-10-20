@@ -1,7 +1,8 @@
 # NSPersonNameComponentMiddleName
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -18,17 +19,22 @@
 let NSPersonNameComponentMiddleName: String
 ```
 
+```c
+extern NSString * const NSPersonNameComponentMiddleName;
+```
+
 #### Discussion
 
 Identifies a middle name component.
 
 ## See Also
 
-- [let NSPersonNameComponentGivenName: String](nspersonnamecomponentgivenname.md)
-- [let NSPersonNameComponentFamilyName: String](nspersonnamecomponentfamilyname.md)
-- [let NSPersonNameComponentPrefix: String](nspersonnamecomponentprefix.md)
-- [let NSPersonNameComponentSuffix: String](nspersonnamecomponentsuffix.md)
-- [let NSPersonNameComponentNickname: String](nspersonnamecomponentnickname.md)
+### Constants
+- [let NSPersonNameComponentGivenName: String](./nspersonnamecomponentgivenname.md)
+- [let NSPersonNameComponentFamilyName: String](./nspersonnamecomponentfamilyname.md)
+- [let NSPersonNameComponentPrefix: String](./nspersonnamecomponentprefix.md)
+- [let NSPersonNameComponentSuffix: String](./nspersonnamecomponentsuffix.md)
+- [let NSPersonNameComponentNickname: String](./nspersonnamecomponentnickname.md)
 
 
 ---

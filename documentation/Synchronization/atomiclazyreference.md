@@ -1,7 +1,8 @@
 # AtomicLazyReference
 
 **Framework**: Synchronization  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A lazily initializable atomic strong reference.
 
@@ -28,28 +29,29 @@ These values can be set (initialized) exactly once, but read many times.
 ## Topics
 
 ### Initializers
-- [init()](atomiclazyreference/init.md)
+- [init()](./atomiclazyreference/init%28%29.md)
 ### Instance Methods
-- [func load() -> Instance?](atomiclazyreference/load.md)
+- [func load() -> Instance?](./atomiclazyreference/load%28%29.md)
   Atomically loads and returns the current value of this reference.
-- [func storeIfNil(consuming Instance) -> Instance](atomiclazyreference/storeifnil(_:).md)
+- [func storeIfNil(consuming Instance) -> Instance](./atomiclazyreference/storeifnil%28_%29.md)
   Atomically initializes this reference if its current value is nil, then returns the initialized value. If this reference is already initialized, then `storeIfNil(_:)` discards its supplied argument and returns the current value without updating it.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Atomic](atomic.md)
+### Atomic Values
+- [struct Atomic](./atomic.md)
   An atomic value.
-- [struct WordPair](wordpair.md)
+- [struct WordPair](./wordpair.md)
   A pair of two word sized `UInt`s.
-- [protocol AtomicRepresentable](atomicrepresentable.md)
+- [protocol AtomicRepresentable](./atomicrepresentable.md)
   A type that supports atomic operations through a separate atomic storage representation.
-- [protocol AtomicOptionalRepresentable](atomicoptionalrepresentable.md)
+- [protocol AtomicOptionalRepresentable](./atomicoptionalrepresentable.md)
   An atomic value that also supports atomic operations when wrapped in an `Optional`. Atomic optional representable types come with a standalone atomic representation for their optional-wrapped variants.
 
 

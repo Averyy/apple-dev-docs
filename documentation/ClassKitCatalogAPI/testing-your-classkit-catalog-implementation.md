@@ -1,6 +1,7 @@
 # Testing Your ClassKit Catalog Implementation
 
-**Framework**: ClassKit Catalog API
+**Framework**: ClassKit Catalog API  
+**Role**: Article
 
 Verify your server interaction before deployment by operating in a development environment.
 
@@ -30,17 +31,18 @@ You can read and write the development environment just like the production envi
 
 After uploading content to the development environment, you can inspect the changes. On an iOS device that you use for development, with the Schoolwork app installed, go to Settings > Developer, and choose ClassKit API.
 
-![Screenshot of the Developer settings on an iPad with ClassKit API shown at the top.](/images/com.apple.classkitcatalogapi/media-3671033@2x.png)
+![Screenshot of the Developer settings on an iPad with ClassKit API shown at the top.](https://developer.apple.com/tutorials/images/com.apple.classkitcatalogapi/media-3671033@2x.png)
 
 Then use the ClassKit Catalog Environment section to choose either the Production or Development environment.
 
-![Screenshot of the ClassKit API developer settings on an iPad.](/images/com.apple.classkitcatalogapi/media-3671032@2x.png)
+![Screenshot of the ClassKit API developer settings on an iPad.](https://developer.apple.com/tutorials/images/com.apple.classkitcatalogapi/media-3671032@2x.png)
 
 When you choose Development, the Schoolwork app on that device shows you data you uploaded to the development environment instead of the production environment data.
 
 ## See Also
 
-- [Authenticating Calls to the ClassKit Catalog API](authenticating-calls-to-the-classkit-catalog-api.md)
+### Essentials
+- [Authenticating Calls to the ClassKit Catalog API](./authenticating-calls-to-the-classkit-catalog-api.md)
   Establish your identity to the ClassKit Catalog server by providing a cryptographically signed token for each call.
 
 

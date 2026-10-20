@@ -1,14 +1,15 @@
 # init(detections:smooth:)
 
 **Framework**: Cinematic  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a custom detection track object with an array of detections and optionally applying smoothing.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

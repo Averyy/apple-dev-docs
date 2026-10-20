@@ -1,14 +1,15 @@
 # network_port_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct network_port_t {
     ...
 } network_port_t;
@@ -17,10 +18,10 @@ typedef struct network_port_t {
 ## Topics
 
 ### Instance Properties
-- [np_owner](network_port_t/1524700-np_owner.md)
-- [np_puid](network_port_t/1524705-np_puid.md)
-- [np_receiver](network_port_t/1524707-np_receiver.md)
-- [np_sid](network_port_t/1524697-np_sid.md)
+- [np_owner](./network_port_t/api-1524700-np_owner.md)
+- [np_puid](./network_port_t/api-1524705-np_puid.md)
+- [np_receiver](./network_port_t/api-1524707-np_receiver.md)
+- [np_sid](./network_port_t/api-1524697-np_sid.md)
 
 
 ---

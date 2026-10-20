@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Close the file descriptor associated with the socket.
 
@@ -12,6 +13,10 @@ Close the file descriptor associated with the socket.
 
 ```swift
 func close()
+```
+
+```objc
+- (void) close;
 ```
 
 

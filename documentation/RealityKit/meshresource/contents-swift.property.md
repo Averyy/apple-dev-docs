@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the contents of the mesh asset.
 
@@ -11,7 +12,7 @@ Get the contents of the mesh asset.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

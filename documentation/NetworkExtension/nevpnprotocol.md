@@ -1,7 +1,8 @@
 # NEVPNProtocol
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Settings common to both IKEv2 and IPsec VPN configurations.
 
@@ -19,79 +20,84 @@ Settings common to both IKEv2 and IPsec VPN configurations.
 class NEVPNProtocol
 ```
 
+```objc
+@interface NEVPNProtocol : NSObject
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
 #### Overview
 
-The [`NEVPNProtocol`](nevpnprotocol.md) class is an abstract base class with one subclass for each type of supported VPN configuration. This class provides properties for configuring the VPN, authenticating network connections, and routing network traffic. You can include all network traffic, with some exceptions, and selectively exclude types of network traffic.
+The [`NEVPNProtocol`](./nevpnprotocol.md) class is an abstract base class with one subclass for each type of supported VPN configuration. This class provides properties for configuring the VPN, authenticating network connections, and routing network traffic. You can include all network traffic, with some exceptions, and selectively exclude types of network traffic.
 
 Instances of this class are thread-safe.
 
 ## Topics
 
 ### Configuring the VPN
-- [var serverAddress: String?](nevpnprotocol/serveraddress.md)
+- [var serverAddress: String?](./nevpnprotocol/serveraddress.md)
   The address of the VPN server.
-- [var disconnectOnSleep: Bool](nevpnprotocol/disconnectonsleep.md)
+- [var disconnectOnSleep: Bool](./nevpnprotocol/disconnectonsleep.md)
   A Boolean value that indicates whether the VPN disconnects when the device sleeps.
-- [var proxySettings: NEProxySettings?](nevpnprotocol/proxysettings.md)
+- [var proxySettings: NEProxySettings?](./nevpnprotocol/proxysettings.md)
   The proxy settings to use for HTTP and HTTPS connections that route through the VPN.
 ### Authenticating the user
-- [var username: String?](nevpnprotocol/username.md)
+- [var username: String?](./nevpnprotocol/username.md)
   The user name component of the tunneling protocol authentication credential.
-- [var passwordReference: Data?](nevpnprotocol/passwordreference.md)
+- [var passwordReference: Data?](./nevpnprotocol/passwordreference.md)
   A persistent keychain reference to a keychain item containing the password component of the tunneling protocol authentication credential.
-- [var identityReference: Data?](nevpnprotocol/identityreference.md)
+- [var identityReference: Data?](./nevpnprotocol/identityreference.md)
   A persistent keychain reference to a keychain item containing the certificate and private key components of the tunneling protocol authentication credential.
-- [var identityData: Data?](nevpnprotocol/identitydata.md)
+- [var identityData: Data?](./nevpnprotocol/identitydata.md)
   The certificate and private key components of the tunneling protocol authentication credential, in PKCS12 format.
-- [var identityDataPassword: String?](nevpnprotocol/identitydatapassword.md)
+- [var identityDataPassword: String?](./nevpnprotocol/identitydatapassword.md)
   The password for the PKCS12 tunneling protocol authentication credentials.
 ### Routing network traffic
-- [var includeAllNetworks: Bool](nevpnprotocol/includeallnetworks.md)
+- [var includeAllNetworks: Bool](./nevpnprotocol/includeallnetworks.md)
   A Boolean value that indicates whether the system sends most network traffic over the tunnel.
-- [var excludeAPNs: Bool](nevpnprotocol/excludeapns.md)
+- [var excludeAPNs: Bool](./nevpnprotocol/excludeapns.md)
   A Boolean value that indicates whether the system excludes all APNs network traffic from the tunnel.
-- [var excludeCellularServices: Bool](nevpnprotocol/excludecellularservices.md)
+- [var excludeCellularServices: Bool](./nevpnprotocol/excludecellularservices.md)
   A Boolean value that indicates whether the system excludes all cellular services network traffic from the tunnel.
-- [var excludeLocalNetworks: Bool](nevpnprotocol/excludelocalnetworks.md)
+- [var excludeLocalNetworks: Bool](./nevpnprotocol/excludelocalnetworks.md)
   A Boolean value that indicates whether the system excludes all traffic destined for local networks from the tunnel.
-- [var enforceRoutes: Bool](nevpnprotocol/enforceroutes.md)
+- [var enforceRoutes: Bool](./nevpnprotocol/enforceroutes.md)
   A Boolean value that indicates whether route rules for the tunnel take precedence over any locally defined routes.
 ### Instance Properties
-- [var excludeDeviceCommunication: Bool](nevpnprotocol/excludedevicecommunication.md)
-- [var sliceUUID: String?](nevpnprotocol/sliceuuid.md)
+- [var excludeDeviceCommunication: Bool](./nevpnprotocol/excludedevicecommunication.md)
+- [var sliceUUID: String?](./nevpnprotocol/sliceuuid.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NEDNSProxyProviderProtocol](nednsproxyproviderprotocol.md)
-- [NETunnelProviderProtocol](netunnelproviderprotocol.md)
-- [NEVPNProtocolIPSec](nevpnprotocolipsec.md)
+- [NEDNSProxyProviderProtocol](./nednsproxyproviderprotocol.md)
+- [NETunnelProviderProtocol](./netunnelproviderprotocol.md)
+- [NEVPNProtocolIPSec](./nevpnprotocolipsec.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEVPNManager](nevpnmanager.md)
+### VPN configuration
+- [class NEVPNManager](./nevpnmanager.md)
   An object to create and manage a Personal VPN configuration.
-- [class NEVPNProtocolIKEv2](nevpnprotocolikev2.md)
+- [class NEVPNProtocolIKEv2](./nevpnprotocolikev2.md)
   Settings for an IKEv2 VPN configuration.
-- [class NEVPNProtocolIPSec](nevpnprotocolipsec.md)
+- [class NEVPNProtocolIPSec](./nevpnprotocolipsec.md)
   Settings for an IPsec VPN configuration.
-- [VPN On Demand Rules](vpn-on-demand-rules.md)
+- [VPN On Demand Rules](./vpn-on-demand-rules.md)
   Set up VPN On Demand.
 
 

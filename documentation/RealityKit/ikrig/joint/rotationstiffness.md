@@ -1,7 +1,8 @@
 # rotationStiffness
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-axis rotational stiffness of the joint.
 

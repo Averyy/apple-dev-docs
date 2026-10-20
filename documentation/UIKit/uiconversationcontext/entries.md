@@ -1,7 +1,8 @@
 # entries
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of messages in the conversation.
 
@@ -14,6 +15,10 @@ An array of messages in the conversation.
 
 ```swift
 var entries: [UIConversationContext.Entry] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSArray<UIConversationEntry *> * entries;
 ```
 
 

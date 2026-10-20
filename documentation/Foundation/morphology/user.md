@@ -1,7 +1,8 @@
 # user
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The addressing preferences of the current user.
 
@@ -22,7 +23,7 @@ static let user: Morphology
 
 #### Discussion
 
-If the user hasn’t specified preferences, or chose not to share them with this app, the [`isUnspecified`](morphology/isunspecified.md) property is `true`.
+If the user hasn’t specified preferences, or chose not to share them with this app, the [`isUnspecified`](./isunspecified.md) property is `true`.
 
 This value doesn’t change throughout the lifetime of the process.
 

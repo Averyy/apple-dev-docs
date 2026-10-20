@@ -1,7 +1,8 @@
 # kMDItemAltitude
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The altitude of the item in meters above sea level, expressed using the WGS84 datum.  Negative values lie below sea level. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemAltitude: CFString!
+```
+
+```c
+const CFStringRef kMDItemAltitude;
 ```
 
 

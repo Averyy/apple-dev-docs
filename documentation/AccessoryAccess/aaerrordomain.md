@@ -1,7 +1,8 @@
 # AAErrorDomain
 
 **Framework**: Accessory Access  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The string that represents the framework’s error domain.
 
@@ -14,9 +15,14 @@ The string that represents the framework’s error domain.
 let AAErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const AAErrorDomain;
+```
+
 ## See Also
 
-- [struct AAError](aaerror.md)
+### Errors
+- [struct AAError](./aaerror.md)
   Values that describe errors the AccessoryAccess framework returns.
 
 

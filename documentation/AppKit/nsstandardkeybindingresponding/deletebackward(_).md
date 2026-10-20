@@ -1,12 +1,13 @@
 # deleteBackward(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes content moving backward from the current insertion point.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,22 +15,27 @@ Deletes content moving backward from the current insertion point.
 optional func deleteBackward(_ sender: Any?)
 ```
 
+```objc
+- (void) deleteBackward:(id) sender;
+```
+
 ## See Also
 
-- [func deleteBackwardByDecomposingPreviousCharacter(Any?)](nsstandardkeybindingresponding/deletebackwardbydecomposingpreviouscharacter(_:).md)
-- [func deleteForward(Any?)](nsstandardkeybindingresponding/deleteforward(_:).md)
-- [func deleteToBeginningOfLine(Any?)](nsstandardkeybindingresponding/deletetobeginningofline(_:).md)
+### Deleting Content
+- [func deleteBackwardByDecomposingPreviousCharacter(Any?)](./deletebackwardbydecomposingpreviouscharacter%28_%29.md)
+- [func deleteForward(Any?)](./deleteforward%28_%29.md)
+- [func deleteToBeginningOfLine(Any?)](./deletetobeginningofline%28_%29.md)
   Deletes content from the insertion point to the beginning of the current line.
-- [func deleteToBeginningOfParagraph(Any?)](nsstandardkeybindingresponding/deletetobeginningofparagraph(_:).md)
+- [func deleteToBeginningOfParagraph(Any?)](./deletetobeginningofparagraph%28_%29.md)
   Deletes content from the insertion point to the beginning of the current paragraph.
-- [func deleteToEndOfLine(Any?)](nsstandardkeybindingresponding/deletetoendofline(_:).md)
+- [func deleteToEndOfLine(Any?)](./deletetoendofline%28_%29.md)
   Deletes content from the insertion point to the end of the current line.
-- [func deleteToEndOfParagraph(Any?)](nsstandardkeybindingresponding/deletetoendofparagraph(_:).md)
+- [func deleteToEndOfParagraph(Any?)](./deletetoendofparagraph%28_%29.md)
   Deletes content from the insertion point to the end of the current paragraph.
-- [func deleteWordBackward(Any?)](nsstandardkeybindingresponding/deletewordbackward(_:).md)
+- [func deleteWordBackward(Any?)](./deletewordbackward%28_%29.md)
   Deletes the word preceding the current insertion point.
-- [func deleteWordForward(Any?)](nsstandardkeybindingresponding/deletewordforward(_:).md)
-- [func yank(Any?)](nsstandardkeybindingresponding/yank(_:).md)
+- [func deleteWordForward(Any?)](./deletewordforward%28_%29.md)
+- [func yank(Any?)](./yank%28_%29.md)
   Deletes the current selection, placing it in a temporary buffer, such as the Clipboard.
 
 

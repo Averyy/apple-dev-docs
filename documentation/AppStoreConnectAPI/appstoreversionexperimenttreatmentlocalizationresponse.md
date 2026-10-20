@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatmentLocalizationResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify a localized treatment for an App Store experiment.
 
@@ -10,25 +11,26 @@ The response body for endpoints that create, read, or modify a localized treatme
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentLocalizationResponse
 ```
 
 ## Properties
 
 - `data` (AppStoreVersionExperimentTreatmentLocalization) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `AppAssetLibraryPlacement`, `AppPreviewSet`, `AppScreenshotSet`, `AppStoreVersionExperimentTreatment`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatmentLocalization](appstoreversionexperimenttreatmentlocalization.md)
+### Objects
+- [object AppStoreVersionExperimentTreatmentLocalization](./appstoreversionexperimenttreatmentlocalization.md)
   The localized screenshots, previews, and text for one treatment variant in an App Store product page A/B experiment.
-- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest](appstoreversionexperimenttreatmentlocalizationcreaterequest.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest](./appstoreversionexperimenttreatmentlocalizationcreaterequest.md)
   The request body you use to create an App Store version experiment treatment localization.
-- [object AppStoreVersionExperimentTreatmentLocalizationsResponse](appstoreversionexperimenttreatmentlocalizationsresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationsResponse](./appstoreversionexperimenttreatmentlocalizationsresponse.md)
   The response body for endpoints that list localized treatments for an App Store version experiment.
-- [object AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationplacementslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponse](./appstoreversionexperimenttreatmentlocalizationplacementslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 
 

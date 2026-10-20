@@ -1,7 +1,8 @@
 # groups
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of collision groups, stored as a bit mask, to which the entity belongs.
 
@@ -18,7 +19,8 @@ var groups: ClothCollisionGroupSet
 
 ## See Also
 
-- [var mask: ClothCollisionGroupSet](clothcollisionfilter/mask.md)
+### Configuring collision groups
+- [var mask: ClothCollisionGroupSet](./mask.md)
   The set of collision groups, stored as a bit mask, towards which the entity introduces one-way collisions.
 
 

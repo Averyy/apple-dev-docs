@@ -1,7 +1,8 @@
 # filterItems(text:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters items by a specific string.
 

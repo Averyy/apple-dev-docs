@@ -1,7 +1,8 @@
 # TransitionPhase.didDisappear
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The transition is being applied to a view that has been requested to be removed from the view hierarchy.
 
@@ -26,9 +27,10 @@ In this phase, a transition should show the appearance that will be animated to 
 
 ## See Also
 
-- [TransitionPhase.identity](transitionphase/identity.md)
+### Getting the phase
+- [TransitionPhase.identity](./identity.md)
   The transition is being applied to a view that is in the view hierarchy.
-- [TransitionPhase.willAppear](transitionphase/willappear.md)
+- [TransitionPhase.willAppear](./willappear.md)
   The transition is being applied to a view that is about to be inserted into the view hierarchy.
 
 

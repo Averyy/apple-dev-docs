@@ -1,7 +1,8 @@
 # allHostsAndSchemes()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a pattern object that has `*` for scheme, host, and path.
 
@@ -16,6 +17,10 @@ Returns a pattern object that has `*` for scheme, host, and path.
 
 ```swift
 class func allHostsAndSchemes() -> Self
+```
+
+```objc
++ (instancetype) allHostsAndSchemesMatchPattern;
 ```
 
 

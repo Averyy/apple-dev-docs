@@ -1,7 +1,8 @@
 # renderingStatus
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of rendering the framework now applies to the entity’s splats.
 

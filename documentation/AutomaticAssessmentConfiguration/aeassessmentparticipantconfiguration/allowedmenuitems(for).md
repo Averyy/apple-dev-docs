@@ -1,7 +1,8 @@
 # allowedMenuItems(for:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the set of allowed menu item titles for the given language, or `nil` if no items have been configured for that language.
 

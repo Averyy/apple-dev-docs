@@ -1,13 +1,14 @@
 # RecurringPaymentDetails.ScheduledPayments
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Future occurrences of the recurring payment.
 
 ## Declaration
 
-```swift
+```
 object RecurringPaymentDetails.ScheduledPayments
 ```
 

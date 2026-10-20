@@ -1,14 +1,15 @@
 # PE_get_kc_vp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void * PE_get_kc_vp(kc_kind_t type);
 ```
 

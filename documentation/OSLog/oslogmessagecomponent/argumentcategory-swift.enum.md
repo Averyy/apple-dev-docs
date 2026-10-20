@@ -1,7 +1,8 @@
 # OSLogMessageComponent.ArgumentCategory
 
 **Framework**: OSLog  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The data type corresponding to the argument provided in a message payload.
 
@@ -20,6 +21,10 @@ The data type corresponding to the argument provided in a message payload.
 enum ArgumentCategory
 ```
 
+```c
+enum OSLogMessageComponentArgumentCategory : NSInteger;
+```
+
 #### Overview
 
 For example, `OSLogMessageComponent` can represent the number associated with a `%d` placeholder. This value can be undefined if the argument data cann’t be decoded, for example if it were redacted.
@@ -27,38 +32,39 @@ For example, `OSLogMessageComponent` can represent the number associated with a 
 ## Topics
 
 ### Constants
-- [OSLogMessageComponent.ArgumentCategory.data](oslogmessagecomponent/argumentcategory-swift.enum/data.md)
-  The argument is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
-- [OSLogMessageComponent.ArgumentCategory.double](oslogmessagecomponent/argumentcategory-swift.enum/double.md)
+- [OSLogMessageComponent.ArgumentCategory.data](./argumentcategory-swift.enum/data.md)
+  The argument is an [`NSData`](../../Foundation/nsdata.md) object.
+- [OSLogMessageComponent.ArgumentCategory.double](./argumentcategory-swift.enum/double.md)
   The argument is a double.
-- [OSLogMessageComponent.ArgumentCategory.int64](oslogmessagecomponent/argumentcategory-swift.enum/int64.md)
+- [OSLogMessageComponent.ArgumentCategory.int64](./argumentcategory-swift.enum/int64.md)
   The argument is a 64-bit signed integer.
-- [OSLogMessageComponent.ArgumentCategory.string](oslogmessagecomponent/argumentcategory-swift.enum/string.md)
+- [OSLogMessageComponent.ArgumentCategory.string](./argumentcategory-swift.enum/string.md)
   The argument is a string.
-- [OSLogMessageComponent.ArgumentCategory.uInt64](oslogmessagecomponent/argumentcategory-swift.enum/uint64.md)
+- [OSLogMessageComponent.ArgumentCategory.uInt64](./argumentcategory-swift.enum/uint64.md)
   The argument is a 64-bit unsigned integer.
-- [OSLogMessageComponent.ArgumentCategory.undefined](oslogmessagecomponent/argumentcategory-swift.enum/undefined.md)
+- [OSLogMessageComponent.ArgumentCategory.undefined](./argumentcategory-swift.enum/undefined.md)
   The argument’s type is not defined.
 ### Initializers
-- [init?(rawValue: Int)](oslogmessagecomponent/argumentcategory-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./argumentcategory-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var argument: OSLogMessageComponent.Argument](oslogmessagecomponent/argument-swift.property.md)
+### Reading the Argument
+- [var argument: OSLogMessageComponent.Argument](./argument-swift.property.md)
   The argument passed into the message component.
-- [OSLogMessageComponent.Argument](oslogmessagecomponent/argument-swift.enum.md)
+- [OSLogMessageComponent.Argument](./argument-swift.enum.md)
   An object representing data that corresponds to an argument in a message payload.
-- [var argumentCategory: OSLogMessageComponent.ArgumentCategory](oslogmessagecomponent/argumentcategory-swift.property.md)
+- [var argumentCategory: OSLogMessageComponent.ArgumentCategory](./argumentcategory-swift.property.md)
   The type of argument that corresponds to the placeholder.
 
 

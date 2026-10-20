@@ -1,7 +1,8 @@
 # childContours
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of contours that this contour encloses.
 
@@ -19,11 +20,16 @@ An array of contours that this contour encloses.
 var childContours: [VNContour] { get }
 ```
 
+```objc
+@property (readonly) NSArray<VNContour *> * childContours;
+```
+
 ## See Also
 
-- [var childContourCount: Int](vncontour/childcontourcount.md)
+### Accessing Child Contours
+- [var childContourCount: Int](./childcontourcount.md)
   The total number of detected child contours.
-- [func childContour(at: Int) throws -> VNContour](vncontour/childcontour(at:).md)
+- [func childContour(at: Int) throws -> VNContour](./childcontour%28at%29.md)
   Retrieves the child contour object at the specified index.
 
 

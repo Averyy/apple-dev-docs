@@ -1,12 +1,13 @@
 # NSSlider.SliderType.linear
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A bar representing a range, and a knob indicating the currently selected value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A bar representing a range, and a knob indicating the currently selected value.
 case linear
 ```
 
+```c
+NSSliderTypeLinear
+```
+
 ## See Also
 
-- [NSSlider.SliderType.circular](nsslider/slidertype-swift.enum/circular.md)
+### Enumeration Cases
+- [NSSlider.SliderType.circular](./circular.md)
   A dial representing an angular range.
 
 

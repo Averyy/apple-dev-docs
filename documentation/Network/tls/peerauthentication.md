@@ -1,7 +1,8 @@
 # TLS.PeerAuthentication
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 PeerAuthentication specifies how to authenticate the peer end of the connection.
 
@@ -27,18 +28,18 @@ For clients, the default is `none`. For servers, the default is `required`.
 ## Topics
 
 ### Enumeration Cases
-- [TLS.PeerAuthentication.none](tls/peerauthentication/none.md)
+- [TLS.PeerAuthentication.none](./peerauthentication/none.md)
   Do not authenticate the peer.
-- [TLS.PeerAuthentication.optional](tls/peerauthentication/optional.md)
+- [TLS.PeerAuthentication.optional](./peerauthentication/optional.md)
   Requests the peer certificate, but if none is provided, proceed with the connection.
-- [TLS.PeerAuthentication.required](tls/peerauthentication/required.md)
+- [TLS.PeerAuthentication.required](./peerauthentication/required.md)
   Always authenticate the peer.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

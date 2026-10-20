@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default merge policy for all managed object contexts.
 
@@ -20,21 +21,26 @@ The default merge policy for all managed object contexts.
 class var error: NSMergePolicy { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSMergePolicy * errorMergePolicy;
+```
+
 #### Discussion
 
-If a save fails because of conflicting objects, you can find the IDs of those objects in error’s `userInfo` dictionary. Use the [`NSInsertedObjectsKey`](nsinsertedobjectskey.md) and [`NSUpdatedObjectsKey`](nsupdatedobjectskey.md) keys to extract the object IDs.
+If a save fails because of conflicting objects, you can find the IDs of those objects in error’s `userInfo` dictionary. Use the [`NSInsertedObjectsKey`](../nsinsertedobjectskey.md) and [`NSUpdatedObjectsKey`](../nsupdatedobjectskey.md) keys to extract the object IDs.
 
 ## See Also
 
-- [class var mergeByPropertyStoreTrump: NSMergePolicy](nsmergepolicy/mergebypropertystoretrump.md)
+### Defining Merge Policies
+- [class var mergeByPropertyStoreTrump: NSMergePolicy](./mergebypropertystoretrump.md)
   A property-based merge policy that applies external changes.
-- [class var mergeByPropertyObjectTrump: NSMergePolicy](nsmergepolicy/mergebypropertyobjecttrump.md)
+- [class var mergeByPropertyObjectTrump: NSMergePolicy](./mergebypropertyobjecttrump.md)
   A property-based merge policy that applies in-memory changes.
-- [class var overwrite: NSMergePolicy](nsmergepolicy/overwrite.md)
+- [class var overwrite: NSMergePolicy](./overwrite.md)
   A merge policy that overwrites the entire stored object.
-- [class var rollback: NSMergePolicy](nsmergepolicy/rollback.md)
+- [class var rollback: NSMergePolicy](./rollback.md)
   A merge policy that discards unsaved changes.
-- [Merge Policies](merge-policies.md)
+- [Merge Policies](../merge-policies.md)
   Define standard ways to handle conflicts during a save operation.
 
 

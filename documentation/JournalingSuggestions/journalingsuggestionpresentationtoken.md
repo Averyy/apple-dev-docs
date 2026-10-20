@@ -1,7 +1,8 @@
 # JournalingSuggestionPresentationToken
 
 **Framework**: Journaling Suggestions  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for a Journaling Suggestion identifier.
 
@@ -16,30 +17,31 @@ struct JournalingSuggestionPresentationToken
 
 ## Mentions
 
-- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+- [Receiving journaling suggestions system notifications](./receiving-journaling-suggestions-from-system-notifications.md)
 
 #### Overview
 
 When your app receives a Journaling Suggestion notification, the system launches your app and provides an ID that refers to a specific suggestion from the notification.
 
-Create an instance of this class and display a [`JournalingSuggestionsPicker`](journalingsuggestionspicker.md) by passing the token to the `JournalingSuggestionsPicker/journalingSuggestionsPicker(isPresented:onCompletion:)` view modifier, which enables the picker to preload its contents with the notified suggestion.
+Create an instance of this class and display a [`JournalingSuggestionsPicker`](./journalingsuggestionspicker.md) by passing the token to the `JournalingSuggestionsPicker/journalingSuggestionsPicker(isPresented:onCompletion:)` view modifier, which enables the picker to preload its contents with the notified suggestion.
 
 ## Topics
 
 ### Initializing a presentation token
-- [init(suggestionIdentifier: UUID?)](journalingsuggestionpresentationtoken/init(suggestionidentifier:).md)
+- [init(suggestionIdentifier: UUID?)](./journalingsuggestionpresentationtoken/init%28suggestionidentifier%29.md)
   Creates a token used to modify the content of JournalingSuggestionsPicker presentation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+### Notifications
+- [Receiving journaling suggestions system notifications](./receiving-journaling-suggestions-from-system-notifications.md)
   Register your app to receive journaling suggestions when a person taps a system notification.
-- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
+- [class JournalingSuggestionsConfiguration](./journalingsuggestionsconfiguration.md)
   The configuration for Journaling Suggestion notifications.
 
 

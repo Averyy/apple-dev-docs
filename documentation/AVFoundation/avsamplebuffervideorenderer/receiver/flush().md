@@ -1,7 +1,8 @@
 # flush()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the receiver to discard pending enqueued sample buffers.
 
@@ -27,7 +28,8 @@ Additional sample buffers can be appended after `flush()`.
 
 ## See Also
 
-- [func flush(removingDisplayedImage: Bool) async](avsamplebuffervideorenderer/receiver/flush(removingdisplayedimage:).md)
+### Flushing the receiver
+- [func flush(removingDisplayedImage: Bool) async](./flush%28removingdisplayedimage%29.md)
   Instructs the receiver to discard pending enqueued sample buffers and call the provided block when complete. This method suspends until the flush is complete.
 
 

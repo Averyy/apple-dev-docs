@@ -1,7 +1,8 @@
 # kMDItemEXIFVersion
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The version of the EXIF header used to generate the metadata. A CFString.
 
@@ -12,6 +13,10 @@ The version of the EXIF header used to generate the metadata. A CFString.
 
 ```swift
 let kMDItemEXIFVersion: CFString!
+```
+
+```c
+const CFStringRef kMDItemEXIFVersion;
 ```
 
 

@@ -1,7 +1,8 @@
 # none
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier for disabling sound during a focus update.
 
@@ -14,9 +15,14 @@ The identifier for disabling sound during a focus update.
 static let none: UIFocusSoundIdentifier
 ```
 
+```c
+extern UIFocusSoundIdentifier const UIFocusSoundIdentifierNone;
+```
+
 ## See Also
 
-- [static let `default`: UIFocusSoundIdentifier](uifocussoundidentifier/default.md)
+### Constants
+- [static let `default`: UIFocusSoundIdentifier](./default.md)
   The identifier for the default system sound to play during focus updates.
 
 

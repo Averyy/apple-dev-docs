@@ -1,7 +1,8 @@
 # UIIndirectScribbleInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction for using Scribble to enter text by writing on a view that isn’t formally a text input.
 
@@ -9,7 +10,7 @@ An interaction for using Scribble to enter text by writing on a view that isn’
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,35 +22,36 @@ An interaction for using Scribble to enter text by writing on a view that isn’
 ## Topics
 
 ### Creating an indirect Scribble interaction
-- [init(delegate: Delegate)](uiindirectscribbleinteraction-1nfjm/init(delegate:).md)
+- [init(delegate: Delegate)](./uiindirectscribbleinteraction-1nfjm/init%28delegate%29.md)
   Creates an indirect Scribble interaction item with the specified delegate.
 ### Managing indirect Scribble interactions
-- [var delegate: Delegate?](uiindirectscribbleinteraction-1nfjm/delegate.md)
+- [var delegate: Delegate?](./uiindirectscribbleinteraction-1nfjm/delegate.md)
   The delegate for the interaction, to supply and customize writable elements in the interaction’s view.
 ### Detecting writing
-- [var isHandlingWriting: Bool](uiindirectscribbleinteraction-1nfjm/ishandlingwriting.md)
+- [var isHandlingWriting: Bool](./uiindirectscribbleinteraction-1nfjm/ishandlingwriting.md)
   A Boolean value that indicates whether the user is actively writing.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [protocol UIIndirectScribbleInteractionDelegate](uiindirectscribbleinteractiondelegate-hdh.md)
+### Custom views
+- [protocol UIIndirectScribbleInteractionDelegate](./uiindirectscribbleinteractiondelegate-hdh.md)
   Methods that customize behavior on views that aren’t formally text input views.
-- [associatedtype ElementIdentifier : Hashable = String](uiindirectscribbleinteractiondelegate-hdh/elementidentifier.md)
+- [associatedtype ElementIdentifier : Hashable = String](./uiindirectscribbleinteractiondelegate-hdh/elementidentifier.md)
   A unique identifier for a control that isn’t a text field in a Scribble interaction.
 
 

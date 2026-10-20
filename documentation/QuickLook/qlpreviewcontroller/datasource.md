@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preview controller’s data source.
 
@@ -17,17 +18,22 @@ The preview controller’s data source.
 weak var dataSource: (any QLPreviewControllerDataSource)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<QLPreviewControllerDataSource> dataSource;
+```
+
 #### Discussion
 
-To use a Quick Look preview controller, you need to implement a data source. The data source is responsible for providing items for display by the controller, and for telling it how many items to include in the preview navigation list. To learn more about implementing a data source, see [`QLPreviewControllerDataSource`](qlpreviewcontrollerdatasource.md).
+To use a Quick Look preview controller, you need to implement a data source. The data source is responsible for providing items for display by the controller, and for telling it how many items to include in the preview navigation list. To learn more about implementing a data source, see [`QLPreviewControllerDataSource`](../qlpreviewcontrollerdatasource.md).
 
 ## See Also
 
-- [protocol QLPreviewControllerDataSource](qlpreviewcontrollerdatasource.md)
+### Configuring a preview controller
+- [protocol QLPreviewControllerDataSource](../qlpreviewcontrollerdatasource.md)
   The protocol that a data source for a preview controller needs to adopt to provide preview items to the controller.
-- [var delegate: (any QLPreviewControllerDelegate)?](qlpreviewcontroller/delegate.md)
+- [var delegate: (any QLPreviewControllerDelegate)?](./delegate.md)
   The preview controller’s delegate object.
-- [protocol QLPreviewControllerDelegate](qlpreviewcontrollerdelegate.md)
+- [protocol QLPreviewControllerDelegate](../qlpreviewcontrollerdelegate.md)
   The protocol that a delegate of a preview controller needs to adopt to handle Quick Look previews.
 
 

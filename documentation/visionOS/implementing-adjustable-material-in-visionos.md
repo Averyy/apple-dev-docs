@@ -1,6 +1,8 @@
 # Implementing adjustable material
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [CreatingGlassMaterialFor3DShapesInVisionOS.zip](https://docs-assets.developer.apple.com/published/93452ff38109/CreatingGlassMaterialFor3DShapesInVisionOS.zip)
 
 Update the adjustable parameters of a 3D model in visionOS.
 
@@ -17,19 +19,19 @@ The app splits into two parts in its main view:
 - A 3D shape with a glass material
 - Two sliders to adjust modifiables
 
-![A screenshot of a visionOS app in Simulator with a translucent window displaying a 3D shape with a glass material, and two sliders on the side to adjust modifiables of the 3D shape.](/images/com.apple.visionOS/sample-glass-1-main-view.png)
+![A screenshot of a visionOS app in Simulator with a translucent window displaying a 3D shape with a glass material, and two sliders on the side to adjust modifiables of the 3D shape.](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-glass-1-main-view.png)
 
-##### Set Up the Shader Graph
+##### Set up the shader graph
 
 The shader graph for the dragon model includes two modifiable parameters: `roughness` and `eta`. These control the model’s surface roughness and refraction, respectively, as the following image shows:
 
-![A screenshot of a model's shader graph in Reality Composer Pro, showcasing how the model accepts two modifiables, roughness and eta.](/images/com.apple.visionOS/sample-glass-2-shader-graph.png)
+![A screenshot of a model's shader graph in Reality Composer Pro, showcasing how the model accepts two modifiables, roughness and eta.](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-glass-2-shader-graph.png)
 
 These parameters connect through various nodes, ultimately feeding into a `RealitykitEnvironmentRadiance` node. This setup allows dynamic adjustment of the dragon’s appearance.
 
-> **Note**: The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see [`Refract (RealityKit)`](https://developer.apple.com/documentation/shadergraph/geometric/refract-(realitykit)).
+> **Note**: The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see [`Refract (RealityKit)`](../ShaderGraph/geometric/refract-%28realitykit%29.md).
 
-##### Update the Component Material
+##### Update the component material
 
 To handle updates to the dragon model, the app creates the `updateMaterials(_:)` method, which employs a recursive approach to update all child entities that the parent entity manages. Then the app applies the `update` closure to each material within the component, to update those materials:
 
@@ -56,7 +58,7 @@ extension Entity {
 }
 ```
 
-##### Set Up the Main View
+##### Set up the main view
 
 To control the material properties of the 3D glass model, the app initializes variables for the default roughness value, eta parameter for refraction, and entity instance of the dragon model in the `GlassView` structure:
 
@@ -143,9 +145,9 @@ var body: some View {
 }
 ```
 
-Within the closure that the app passes into the method, the app tries to set the `roughness` and `eta` parameter into the [`ShaderGraphMaterial`](https://developer.apple.com/documentation/realitykit/shadergraphmaterial) to update the dragon model.
+Within the closure that the app passes into the method, the app tries to set the `roughness` and `eta` parameter into the [`ShaderGraphMaterial`](../RealityKit/shadergraphmaterial.md) to update the dragon model.
 
-The view incorporates a [`Divider`](https://developer.apple.com/documentation/swiftui/divider) structure to separate the reality view, which houses the dragon model, from the `VStack`, which houses sliders that enable interactive adjustment of the `roughness` and `eta` values, to modify the model’s visual appearance:
+The view incorporates a [`Divider`](../SwiftUI/divider.md) structure to separate the reality view, which houses the dragon model, from the `VStack`, which houses sliders that enable interactive adjustment of the `roughness` and `eta` values, to modify the model’s visual appearance:
 
 ```swift
 var body: some View {
@@ -175,9 +177,10 @@ var body: some View {
 
 ## See Also
 
-- [Generating procedural textures](generating-procedural-textures-in-visionos.md)
+### Building materials
+- [Generating procedural textures](./generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
-- [Displaying a stereoscopic image](displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](./displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 
 

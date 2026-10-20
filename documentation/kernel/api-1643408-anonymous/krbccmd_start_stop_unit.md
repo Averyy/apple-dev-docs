@@ -1,7 +1,8 @@
 # kRBCCmd_START_STOP_UNIT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kRBCCmd_START_STOP_UNIT = 0x1B
 ```
 

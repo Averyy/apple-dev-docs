@@ -1,23 +1,30 @@
 # BNNSFilterCreateLayerTransposedConvolution(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new transposed convolution layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSFilterCreateLayerTransposedConvolution(_ layer_params: UnsafePointer<BNNSLayerParametersConvolution>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
+```
+
+```c
+BNNSFilterBNNSFilterCreateLayerTransposedConvolution(const BNNSLayerParametersConvolution *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -26,7 +33,7 @@ Use transposed convolution to upsample a tensor by performing an operation thatâ
 
 The following figure illustrates the process of transposed convolution. The operation multiplies each element in the input by the kernel to produce the corresponding values in the output. The final output, pictured at the bottom of the figure, is the sum of the products:
 
-![Figure that describes a transposed convolution operation over a two times two source matrix using a three times three kernel. Each step is illustrated as a row, showing scalar multiplication of the source element multiplied by the kernel, and the transposed convolution result is the sum of each scalar multiplication.](/images/com.apple.accelerate/media-3633105@2x.png)
+![Figure that describes a transposed convolution operation over a two times two source matrix using a three times three kernel. Each step is illustrated as a row, showing scalar multiplication of the source element multiplied by the kernel, and the transposed convolution result is the sum of each scalar multiplication.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3633105@2x.png)
 
 Use the following code to perform the illustrated transposed convolution:
 
@@ -111,15 +118,16 @@ On return, `output` contains the following values:
 
 ## See Also
 
-- [struct BNNSConvolutionLayerParameters](bnnsconvolutionlayerparameters.md)
+### Convolution layers
+- [struct BNNSConvolutionLayerParameters](./bnnsconvolutionlayerparameters.md)
   A structure containing convolution parameters.
-- [func BNNSFilterCreateConvolutionLayer(UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSConvolutionLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreateconvolutionlayer(_:_:_:_:).md)
+- [func BNNSFilterCreateConvolutionLayer(UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSConvolutionLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreateconvolutionlayer%28_,_,_,_%29.md)
   Returns a convolution filter, initialized with input, output, layer, and filter parameters.
-- [class ConvolutionLayer](bnns/convolutionlayer.md)
+- [class ConvolutionLayer](./bnns/convolutionlayer.md)
   A layer object that wraps a convolution filter and manages its deinitialization.
-- [struct BNNSLayerParametersConvolution](bnnslayerparametersconvolution.md)
+- [struct BNNSLayerParametersConvolution](./bnnslayerparametersconvolution.md)
   A structure that contains the parameters of a convolution layer.
-- [func BNNSFilterCreateLayerConvolution(UnsafePointer<BNNSLayerParametersConvolution>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerconvolution(_:_:).md)
+- [func BNNSFilterCreateLayerConvolution(UnsafePointer<BNNSLayerParametersConvolution>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayerconvolution%28_,_%29.md)
   Returns a new convolution layer.
 
 

@@ -1,7 +1,8 @@
 # containerShape(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the container shape to use for any container relative shape or concentric rectangle within this view.
 
@@ -21,9 +22,16 @@ nonisolated
 func containerShape(_ shape: some RoundedRectangularShape) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func containerShape<T>(_ shape: T) -> some View where T : InsettableShape
+```
+
 #### Discussion
 
-The example below defines a view that shows its content with a rounded rectangle background and the same container shape. Any [`ContainerRelativeShape`](containerrelativeshape.md) within the `content` matches the rounded rectangle shape from this container inset as appropriate. Any [`ConcentricRectangle`](concentricrectangle.md) within the `content` will match the corners to be concentric to the container corners.
+The example below defines a view that shows its content with a rounded rectangle background and the same container shape. Any [`ContainerRelativeShape`](../containerrelativeshape.md) within the `content` matches the rounded rectangle shape from this container inset as appropriate. Any [`ConcentricRectangle`](../concentricrectangle.md) within the `content` will match the corners to be concentric to the container corners.
 
 ```swift
 struct PlatterContainer<Content: View> : View {
@@ -38,13 +46,14 @@ struct PlatterContainer<Content: View> : View {
 }
 ```
 
-> **Note**: [`containerShape(_:)`](view/containershape(_:)-qn9q.md)
+> **See Also**: [`containerShape(_:)`](./containershape%28_%29-qn9q.md)
 
 ## See Also
 
-- [protocol InsettableShape](insettableshape.md)
+### Setting a container shape
+- [protocol InsettableShape](../insettableshape.md)
   A shape type that is able to inset itself to produce another shape.
-- [struct ContainerRelativeShape](containerrelativeshape.md)
+- [struct ContainerRelativeShape](../containerrelativeshape.md)
   A shape whose dimensions the system calculates from an inset version of the current container shape.
 
 

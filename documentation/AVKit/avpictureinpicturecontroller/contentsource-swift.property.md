@@ -1,7 +1,8 @@
 # contentSource
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source of the controller’s content.
 
@@ -19,15 +20,20 @@ The source of the controller’s content.
 var contentSource: AVPictureInPictureController.ContentSource? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) AVPictureInPictureControllerContentSource * contentSource;
+```
+
 #### Discussion
 
 You can change a content source while a Picture in Picture session is active, but only if the new content source is ready for display. If it isn’t ready, the session ends immediately.
 
-If your app uses [`AVPlayerLayer`](https://developer.apple.com/documentation/avfoundation/avplayerlayer), verify that the value of its [`isReadyForDisplay`](https://developer.apple.com/documentation/avfoundation/avplayerlayer/isreadyfordisplay) property is `true` before setting it as a content source.
+If your app uses [`AVPlayerLayer`](../../AVFoundation/avplayerlayer.md), verify that the value of its [`isReadyForDisplay`](../../AVFoundation/avplayerlayer/isreadyfordisplay.md) property is `true` before setting it as a content source.
 
 ## See Also
 
-- [AVPictureInPictureController.ContentSource](avpictureinpicturecontroller/contentsource-swift.class.md)
+### Configuring the content source
+- [AVPictureInPictureController.ContentSource](./contentsource-swift.class.md)
   An object that represents the source of the content to present in Picture in Picture.
 
 

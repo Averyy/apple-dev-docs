@@ -1,6 +1,7 @@
 # Adding Audio Unit Auxiliary Real-Time Threads to Audio Workgroups
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: Article
 
 If your Audio Unit plug-in creates auxiliary real-time rendering threads, add them to the host app’s audio workgroup so the system can schedule them appropriately.
 
@@ -10,7 +11,7 @@ Most Audio Unit plug-ins don’t need to create their own real-time threads, but
 
 ##### Provide a Render Context Observer
 
-An [`AURenderContextObserver`](aurendercontextobserver.md) is a block the Audio Unit plug-in holds that the system calls before each render request. With each request, the system passes the block an [`AudioUnitRenderContext`](audiounitrendercontext.md) object that provides the audio workgroup of the calling context. When the context’s audio workgroup changes, join your auxiliary real-time threads to the new audio workgroup.
+An [`AURenderContextObserver`](./aurendercontextobserver.md) is a block the Audio Unit plug-in holds that the system calls before each render request. With each request, the system passes the block an [`AudioUnitRenderContext`](./audiounitrendercontext.md) object that provides the audio workgroup of the calling context. When the context’s audio workgroup changes, join your auxiliary real-time threads to the new audio workgroup.
 
 ```objc
 #import <AudioToolbox/AudioToolbox.h>
@@ -42,11 +43,12 @@ An [`AURenderContextObserver`](aurendercontextobserver.md) is a block the Audio 
 
 ## See Also
 
-- [Understanding Audio Workgroups](understanding-audio-workgroups.md)
+### Essentials
+- [Understanding Audio Workgroups](./understanding-audio-workgroups.md)
   Learn how to optimize real-time rendering performance with the Audio Workgroups API.
-- [Adding Parallel Real-Time Threads to Audio Workgroups](adding-parallel-real-time-threads-to-audio-workgroups.md)
+- [Adding Parallel Real-Time Threads to Audio Workgroups](./adding-parallel-real-time-threads-to-audio-workgroups.md)
   Optimize the performance of real-time audio threads that run in sync with the I/O thread by adding them to the audio device workgroup.
-- [Adding Asynchronous Real-Time Threads to Audio Workgroups](adding-asynchronous-real-time-threads-to-audio-workgroups.md)
+- [Adding Asynchronous Real-Time Threads to Audio Workgroups](./adding-asynchronous-real-time-threads-to-audio-workgroups.md)
   Optimize system performance by adding real-time audio threads that run asynchronously to the I/O thread to custom audio workgroups.
 
 

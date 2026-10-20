@@ -1,7 +1,8 @@
 # SecTrustCopyKey(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 14.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func SecTrustCopyKey(_ trust: SecTrust) -> SecKey?
+```
+
+```c
+SecKeyRefSecTrustCopyKey(SecTrustRef trust);
 ```
 
 

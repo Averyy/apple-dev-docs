@@ -1,6 +1,7 @@
 # Creating a time-series forecaster
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: Article
 
 Forecast future data points by training a machine learning model using historical data.
 
@@ -16,7 +17,7 @@ Even though there are patterns to the data, these patterns aren’t trivial to f
 
 Training a time-series forecaster with the Create ML Components framework shares common training behavior with other model types.
 
-##### Prepare Your Training Data
+##### Prepare your training data
 
 The first step to begin forecasting the energy consumption is to prepare the data. Gather the data as a CSV file, using the following structure:
 
@@ -101,7 +102,7 @@ let validation = zip(features[validationPortion], annotations[validationPortion]
 let testing = zip(features[testingPotion], annotations[testingPotion]).map(AnnotatedFeature.init)
 ```
 
-##### Build and Train a Time Series Forecaster
+##### Build and train a time-series forecaster
 
 After preparing your training data, you can create a forecaster. The forecaster configuration takes the input window size and forecast window size. Depending on your task you may want to adjust these values. A larger input window provides more context to the model, but results in a larger model. For this example, set the input window size to 14 days (336 samples) and the forecast window size to 4 days (96 samples).
 
@@ -120,7 +121,7 @@ let model = try await estimator.fitted(to: training, validateOn: validation) { e
 }
 ```
 
-##### Evaluate the Model
+##### Evaluate the model
 
 Use your testing set to evaluate your model. Two useful metrics you use to check a forecaster model are the mean-squared error (MSE) and the mean-absolute error (MAE).
 
@@ -145,7 +146,7 @@ let mae = maeSum / Double(maeValues.count)
 print("MAE: \(mae)")
 ```
 
-##### Export the Model
+##### Export the model
 
 When you’re satisfied with the model’s accuracy, export it as a Core ML package:
 
@@ -176,35 +177,36 @@ print(temperatures)
 
 ## See Also
 
-- [Creating a time-series classifier](creating-a-time-series-classifier.md)
+### Time-based components
+- [Creating a time-series classifier](./creating-a-time-series-classifier.md)
   Train a machine learning model to predict the class label of time-series signals.
-- [struct DateFeatures](datefeatures.md)
+- [struct DateFeatures](./datefeatures.md)
   A set of date and time features.
-- [struct DateFeatureExtractor](datefeatureextractor.md)
+- [struct DateFeatureExtractor](./datefeatureextractor.md)
   A time and date feature extractor.
-- [struct LinearTimeSeriesForecaster](lineartimeseriesforecaster.md)
+- [struct LinearTimeSeriesForecaster](./lineartimeseriesforecaster.md)
   A time-series forecasting estimator.
-- [struct LinearTimeSeriesForecasterConfiguration](lineartimeseriesforecasterconfiguration.md)
+- [struct LinearTimeSeriesForecasterConfiguration](./lineartimeseriesforecasterconfiguration.md)
   The configuration for a linear time-series forecaster.
-- [struct TimeSeriesForecasterBatches](timeseriesforecasterbatches.md)
+- [struct TimeSeriesForecasterBatches](./timeseriesforecasterbatches.md)
   A sequence of forecaster batches on a time series shaped array.
-- [struct TimeSeriesForecasterAnnotatedWindows](timeseriesforecasterannotatedwindows.md)
+- [struct TimeSeriesForecasterAnnotatedWindows](./timeseriesforecasterannotatedwindows.md)
   A sequence of forecasting windows on a time series shaped array.
-- [struct TemporalFeature](temporalfeature.md)
+- [struct TemporalFeature](./temporalfeature.md)
   A temporal feature contains a segment identifier and a feature value.
-- [protocol TemporalSequence](temporalsequence.md)
+- [protocol TemporalSequence](./temporalsequence.md)
   Async sequence for temporal features.
-- [struct TemporalSegmentIdentifier](temporalsegmentidentifier.md)
+- [struct TemporalSegmentIdentifier](./temporalsegmentidentifier.md)
   Uniquely identifiers a segment of a temporal sequence.
-- [struct SlidingWindows](slidingwindows.md)
+- [struct SlidingWindows](./slidingwindows.md)
   A sequence of windows on a time series shaped array.
-- [struct SlidingWindowTransformer](slidingwindowtransformer.md)
+- [struct SlidingWindowTransformer](./slidingwindowtransformer.md)
   A temporal transformer that groups input elements.
-- [struct Downsampler](downsampler.md)
+- [struct Downsampler](./downsampler.md)
   A temporal transformer that down samples the input stream.
-- [struct VideoReader](videoreader.md)
+- [struct VideoReader](./videoreader.md)
   A video file reader.
-- [struct TemporalFileSegment](temporalfilesegment.md)
+- [struct TemporalFileSegment](./temporalfilesegment.md)
   A URL and a time range identifying a specific segment of a time-based (temporal) file.
 
 

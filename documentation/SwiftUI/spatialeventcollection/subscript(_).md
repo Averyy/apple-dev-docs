@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Retrieves an event using its unique identifier.
 
@@ -25,7 +26,8 @@ Returns `nil` if the `Event` no longer exists in the collection.
 
 ## See Also
 
-- [SpatialEventCollection.Event](spatialeventcollection/event.md)
+### Accessing the collection’s events
+- [SpatialEventCollection.Event](./event.md)
   A spatial event generated from an input like a touch or click that can drive gestures in the system.
 
 

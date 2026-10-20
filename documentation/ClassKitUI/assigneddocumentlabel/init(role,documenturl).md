@@ -1,7 +1,8 @@
 # init(role:documentURL:)
 
 **Framework**: ClassKit UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a label that displays information about the assigned document.
 

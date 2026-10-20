@@ -1,21 +1,26 @@
 # momentum
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value you use for the running mean and variance computation.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 var momentum: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float momentum;
 ```
 
 #### Discussion
@@ -24,21 +29,22 @@ The default is `0.99`.
 
 ## See Also
 
-- [var featureChannelCount: Int](mlcbatchnormalizationlayer/featurechannelcount.md)
+### Inspecting Batch Normalization Layers
+- [var featureChannelCount: Int](./featurechannelcount.md)
   The number of feature channels.
-- [var mean: MLCTensor](mlcbatchnormalizationlayer/mean.md)
+- [var mean: MLCTensor](./mean.md)
   The mean tensor.
-- [var variance: MLCTensor](mlcbatchnormalizationlayer/variance.md)
+- [var variance: MLCTensor](./variance.md)
   The variance tensor.
-- [var beta: MLCTensor?](mlcbatchnormalizationlayer/beta.md)
+- [var beta: MLCTensor?](./beta.md)
   The beta tensor.
-- [var gamma: MLCTensor?](mlcbatchnormalizationlayer/gamma.md)
+- [var gamma: MLCTensor?](./gamma.md)
   The gamma tensor.
-- [var varianceEpsilon: Float](mlcbatchnormalizationlayer/varianceepsilon.md)
+- [var varianceEpsilon: Float](./varianceepsilon.md)
   The variance epsilon you use for numerical stability.
-- [var betaParameter: MLCTensorParameter?](mlcbatchnormalizationlayer/betaparameter.md)
+- [var betaParameter: MLCTensorParameter?](./betaparameter.md)
   The beta tensor parameter you use for optimizer updates.
-- [var gammaParameter: MLCTensorParameter?](mlcbatchnormalizationlayer/gammaparameter.md)
+- [var gammaParameter: MLCTensorParameter?](./gammaparameter.md)
   The gamma tensor parameter you use for optimizer updates.
 
 

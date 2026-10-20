@@ -1,7 +1,8 @@
 # EAWiFiUnconfiguredAccessoryBrowserState
 
 **Framework**: External Accessory  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of an accessory browser.
 
@@ -19,33 +20,38 @@ The possible states of an accessory browser.
 enum EAWiFiUnconfiguredAccessoryBrowserState
 ```
 
+```c
+enum EAWiFiUnconfiguredAccessoryBrowserState : NSInteger;
+```
+
 ## Topics
 
 ### States
-- [EAWiFiUnconfiguredAccessoryBrowserState.wiFiUnavailable](eawifiunconfiguredaccessorybrowserstate/wifiunavailable.md)
+- [EAWiFiUnconfiguredAccessoryBrowserState.wiFiUnavailable](./eawifiunconfiguredaccessorybrowserstate/wifiunavailable.md)
   Wi-Fi is unavailable, typically because the user has placed the device in Airplane Mode or explicitly turned off Wi-Fi.
-- [EAWiFiUnconfiguredAccessoryBrowserState.stopped](eawifiunconfiguredaccessorybrowserstate/stopped.md)
+- [EAWiFiUnconfiguredAccessoryBrowserState.stopped](./eawifiunconfiguredaccessorybrowserstate/stopped.md)
   The browser is not actively searching for unconfigured accessories.
-- [EAWiFiUnconfiguredAccessoryBrowserState.searching](eawifiunconfiguredaccessorybrowserstate/searching.md)
+- [EAWiFiUnconfiguredAccessoryBrowserState.searching](./eawifiunconfiguredaccessorybrowserstate/searching.md)
   The browser is actively searching for unconfigured accessory.
-- [EAWiFiUnconfiguredAccessoryBrowserState.configuring](eawifiunconfiguredaccessorybrowserstate/configuring.md)
+- [EAWiFiUnconfiguredAccessoryBrowserState.configuring](./eawifiunconfiguredaccessorybrowserstate/configuring.md)
   The browser is actively configuring an accessory.
 ### Initializers
-- [init?(rawValue: Int)](eawifiunconfiguredaccessorybrowserstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./eawifiunconfiguredaccessorybrowserstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accessoryBrowser(EAWiFiUnconfiguredAccessoryBrowser, didUpdate: EAWiFiUnconfiguredAccessoryBrowserState)](eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser(_:didupdate:).md)
+### Getting Updates About Browser State
+- [func accessoryBrowser(EAWiFiUnconfiguredAccessoryBrowser, didUpdate: EAWiFiUnconfiguredAccessoryBrowserState)](./eawifiunconfiguredaccessorybrowserdelegate/accessorybrowser%28_,didupdate%29.md)
   Indicates that the browser’s state has changed.
 
 

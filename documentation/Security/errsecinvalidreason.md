@@ -1,7 +1,8 @@
 # errSecInvalidReason
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The trust policy reason is not valid.
 
@@ -18,6 +19,10 @@ The trust policy reason is not valid.
 
 ```swift
 var errSecInvalidReason: OSStatus { get }
+```
+
+```c
+errSecInvalidReason
 ```
 
 

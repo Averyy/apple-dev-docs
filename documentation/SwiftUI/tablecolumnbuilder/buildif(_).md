@@ -1,7 +1,8 @@
 # buildIf(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,6 +16,15 @@
 ```swift
 @export(implementation)
 static func buildIf<C>(_ content: C?) -> C? where RowValue == C.TableRowValue, C : TableColumnContent, C.TableColumnSortComparator == Never
+```
+
+Available when `RowValue` conforms to `Identifiable` and `Sort` conforms to `SortComparator`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildIf<C>(_ content: C?) -> C? where RowValue == C.TableRowValue, Sort == C.TableColumnSortComparator, C : TableColumnContent
 ```
 
 

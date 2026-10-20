@@ -1,7 +1,8 @@
 # system(_:design:weight:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets a system font that uses the specified style, design, and weight.
 
@@ -22,27 +23,28 @@ static func system(_ style: Font.TextStyle, design: Font.Design? = nil, weight: 
 
 #### Discussion
 
-Use this method to create a system font that has the specified properties. The following example creates a system font with the [`Font.TextStyle.body`](font/textstyle/body.md) text style, a [`Font.Design.serif`](font/design/serif.md) design, and a [`bold`](font/weight/bold.md) weight, and applies the font to a [`Text`](text.md) view using the [`font(_:)`](view/font(_:).md) view modifier:
+Use this method to create a system font that has the specified properties. The following example creates a system font with the [`Font.TextStyle.body`](./textstyle/body.md) text style, a [`Font.Design.serif`](./design/serif.md) design, and a [`bold`](./weight/bold.md) weight, and applies the font to a [`Text`](../text.md) view using the [`font(_:)`](../view/font%28_%29.md) view modifier:
 
 ```swift
 Text("Hello").font(.system(.body, design: .serif, weight: .bold))
 ```
 
-The `design` and `weight` parameters are both optional. If you omit either, the system uses a default value for that parameter. The default values are typically [`Font.Design.default`](font/design/default.md) and [`regular`](font/weight/regular.md), respectively, but might vary depending on the context.
+The `design` and `weight` parameters are both optional. If you omit either, the system uses a default value for that parameter. The default values are typically [`Font.Design.default`](./design/default.md) and [`regular`](./weight/regular.md), respectively, but might vary depending on the context.
 
 ## See Also
 
-- [Font.Design](font/design.md)
+### Getting system fonts
+- [Font.Design](./design.md)
   A design to use for fonts.
-- [Font.TextStyle](font/textstyle.md)
+- [Font.TextStyle](./textstyle.md)
   A dynamic text style to use for fonts.
-- [struct Weight](font/weight.md)
+- [struct Weight](./weight.md)
   A weight to use for fonts.
-- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](font/system(size:weight:design:)-697b2.md)
+- [static func system(size: CGFloat, weight: Font.Weight?, design: Font.Design?) -> Font](./system%28size,weight,design%29-697b2.md)
   Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
-- [static func system(Font.TextStyle, design: Font.Design) -> Font](font/system(_:design:).md)
+- [static func system(Font.TextStyle, design: Font.Design) -> Font](./system%28_,design%29.md)
   Gets a system font with the given text style and design.
-- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](font/system(size:weight:design:)-73a88.md)
+- [static func system(size: CGFloat, weight: Font.Weight, design: Font.Design) -> Font](./system%28size,weight,design%29-73a88.md)
   Specifies a system font to use, along with the style, weight, and any design parameters you want applied to the text.
 
 

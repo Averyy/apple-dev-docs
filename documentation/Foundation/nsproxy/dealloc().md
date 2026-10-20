@@ -1,7 +1,8 @@
 # dealloc()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deallocates the memory occupied by the receiver.
 
@@ -20,13 +21,18 @@ Deallocates the memory occupied by the receiver.
 func dealloc()
 ```
 
+```objc
+- (void) dealloc;
+```
+
 #### Discussion
 
-This method behaves as described in the `NSObject` class specification under the [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc) instance method.
+This method behaves as described in the `NSObject` class specification under the [`dealloc`](../../ObjectiveC/nsobject-swift.class/dealloc.md) instance method.
 
 ## See Also
 
-- [func finalize()](nsproxy/finalize.md)
+### Related Documentation
+- [func finalize()](./finalize%28%29.md)
   The garbage collector invokes this method on the receiver before disposing of the memory it uses.
 
 

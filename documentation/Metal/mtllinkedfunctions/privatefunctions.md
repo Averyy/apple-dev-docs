@@ -1,7 +1,8 @@
 # privateFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of function objects to link to the new function, without exporting the functions publicly.
 
@@ -19,17 +20,22 @@ An array of function objects to link to the new function, without exporting the 
 var privateFunctions: [any MTLFunction]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<id<MTLFunction>> * privateFunctions;
+```
+
 #### Discussion
 
-The pipeline doesn’t export these functions as [`MTLFunctionHandle`](mtlfunctionhandle.md) instances because the Metal device doesn’t need to support function pointers to link private functions.
+The pipeline doesn’t export these functions as [`MTLFunctionHandle`](../mtlfunctionhandle.md) instances because the Metal device doesn’t need to support function pointers to link private functions.
 
 ## See Also
 
-- [var functions: [any MTLFunction]?](mtllinkedfunctions/functions.md)
+### Specifying related functions
+- [var functions: [any MTLFunction]?](./functions.md)
   An array of function objects to link to the new function.
-- [var binaryFunctions: [any MTLFunction]?](mtllinkedfunctions/binaryfunctions.md)
+- [var binaryFunctions: [any MTLFunction]?](./binaryfunctions.md)
   An array of function objects already compiled to a binary representation to link.
-- [var groups: [String : [any MTLFunction]]?](mtllinkedfunctions/groups.md)
+- [var groups: [String : [any MTLFunction]]?](./groups.md)
   An optional list of groups specifying which functions your shader can call at each call site.
 
 

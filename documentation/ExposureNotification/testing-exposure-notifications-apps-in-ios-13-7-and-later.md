@@ -1,6 +1,7 @@
 # Testing Exposure Notifications Apps in iOS 13.7 and Later
 
-**Framework**: Exposure Notification
+**Framework**: Exposure Notification  
+**Role**: Article
 
 Perform end-to-end validation of Exposure Notifications apps on a device by manually loading configuration files.
 
@@ -95,7 +96,7 @@ If your app’s region includes both a country and subdivision code, such as “
 
 After you’ve made your changes, save the file somewhere on your Mac with the name `Test_Config.json`. If you’re testing in iOS 14.1 or later, copy `Test_Config.json` to the Files app on your iPhone by using AirDrop, or by adding it to the iCloud Drive folder on your Mac and then waiting for it to sync to your iPhone. If you’re testing in iOS 14.0 or iOS 13.7, you’ll need to convert the JSON file you created into a property list before copying it to your iPhone.
 
-##### Convert the Json File to a Property List Ios 14 and Ios 137
+##### Convert the JSON File to a Property List (iOS 14 and iOS 13.7)
 
 To convert the JSON file you created into a property list in iOS 14.0 or iOS 13.7, open the Terminal app on your Mac, use `cd` to navigate to the directory where you saved T`est_Config.json`, then type the following command to generate the configuration property list to load onto your iPhone:
 
@@ -109,27 +110,28 @@ The `plutil` command converts your JSON file into a new `.plist` file called `Te
 
 Once the configuration file is available in the Files app on your iPhone, open the Settings app, scroll down, and tap Developer. Select Exposure Notifications, then tap Developer Server Configuration to enable it, and choose Override Configuration File. Your phone will prompt you for the location of the configuration file. Select `Test_Config.json` if you’re testing in iOS 14.1 or later, or `Test_Config.plist` if testing in iOS 14.0 or iOS 13.7. After you select the configuration file, you’ll receive a notification that says, “Successfully set override configuration file”.
 
-> **Note**:  if you don’t see an Exposure Notifications option under the Develop menu in the Settings app, you may need to install the Exposure Notifications profile provided by Apple, which enables that option. If you have installed the profile and still don’t see the option, [`contact Apple Developer Technical Support`](https://developer.apple.comhttps://developer.apple.com/membercenter/index.action#requestTechSupport).
+> **Note**:  if you don’t see an Exposure Notifications option under the Develop menu in the Settings app, you may need to install the Exposure Notifications profile provided by Apple, which enables that option. If you have installed the profile and still don’t see the option, [contact Apple Developer Technical Support](https://developer.apple.com/membercenter/index.action#requestTechSupport).
 
 Navigate back to the top level of the Settings app and tap Exposure Notifications. Select Turn on Exposure Notifications and then select your app’s region. Once you do this, your phone will use the information from the custom configuration file. When you want to stop using your custom configuration file, disable Developer Server Configuration under Exposure Notifications in the Developer section of the Settings app.
 
 ## See Also
 
-- [Supporting Exposure Notifications Express](supporting-exposure-notifications-express.md)
+### Essentials
+- [Supporting Exposure Notifications Express](./supporting-exposure-notifications-express.md)
   Configure servers to notify users of potential exposures to COVID-19 without an app.
-- [Building an App to Notify Users of COVID-19 Exposure](building-an-app-to-notify-users-of-covid-19-exposure.md)
+- [Building an App to Notify Users of COVID-19 Exposure](./building-an-app-to-notify-users-of-covid-19-exposure.md)
   Inform people when they may have been exposed to COVID-19.
-- [Setting Up a Key Server](setting-up-a-key-server.md)
+- [Setting Up a Key Server](./setting-up-a-key-server.md)
   Ensure that your server meets the requirements for supporting Exposure Notifications.
-- [class ENManager](enmanager.md)
+- [class ENManager](./enmanager.md)
   A class that manages exposure notifications.
-- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
+- [ENDeveloperRegion](../BundleResources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
+- [ENAPIVersion](../BundleResources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
-- [Changing Configuration Values Using the Server‑to‑Server API](changing-configuration-values-using-the-server-to-server-api.md)
+- [Changing Configuration Values Using the Server‑to‑Server API](./changing-configuration-values-using-the-server-to-server-api.md)
   Update Exposure Notifications configuration values from a Public Health Authority’s server.
-- [Supporting Exposure Notifications in iOS 12.5](supporting-exposure-notifications-in-ios-12-5.md)
+- [Supporting Exposure Notifications in iOS 12.5](./supporting-exposure-notifications-in-ios-12-5.md)
   Prepare your Exposure Notifications app to run on a previous version of iOS.
 
 

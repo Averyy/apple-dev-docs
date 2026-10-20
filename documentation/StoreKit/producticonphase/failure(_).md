@@ -1,7 +1,8 @@
 # ProductIconPhase.failure(_:)
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The promotional image failed to load, with an error.
 
@@ -26,11 +27,12 @@ case failure(any Error)
 
 ## See Also
 
-- [ProductIconPhase.loading](producticonphase/loading.md)
+### Getting the promotional image’s load phases
+- [ProductIconPhase.loading](./loading.md)
   The promotional image is in the process of loading.
-- [ProductIconPhase.success(_:)](producticonphase/success(_:).md)
+- [ProductIconPhase.success(_:)](./success%28_%29.md)
   The promotional image successfully loaded.
-- [ProductIconPhase.unavailable](producticonphase/unavailable.md)
+- [ProductIconPhase.unavailable](./unavailable.md)
   The promotional image isn’t available for download.
 
 

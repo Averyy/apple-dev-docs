@@ -1,7 +1,8 @@
 # commissioning(_:needsWiFiCredentialsWithScanResults:error:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Callback that gets called for a commissionee that supports Wi-Fi if Wi-Fi network commissioning is required and Wi-Fi credentials were not provided in MTRCommissioningParameters.
 
@@ -17,7 +18,15 @@ Callback that gets called for a commissionee that supports Wi-Fi if Wi-Fi networ
 ## Declaration
 
 ```swift
+optional func commissioning(_ commissioning: MTRCommissioningOperation, needsWiFiCredentialsWithScanResults networks: [MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct]?, error: (any Error)?, completion: @escaping @Sendable (Data, Data?) -> Void)
+```
+
+```swift
 optional func commissioning(_ commissioning: MTRCommissioningOperation, needsWiFiCredentialsWithScanResults networks: [MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct]?, error: (any Error)?) async -> (Data, Data?)
+```
+
+```objc
+- (void) commissioning:(MTRCommissioningOperation *) commissioning needsWiFiCredentialsWithScanResults:(NSArray<MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct *> *) networks error:(NSError *) error completion:(void (^)(NSData *ssid, NSData *credentials)) completion;
 ```
 
 #### Discussion

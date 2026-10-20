@@ -1,7 +1,8 @@
 # didConnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a keyboard accessory connects to the device.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a keyboard accessory connects to 
 ```swift
 static var didConnect: NotificationCenter.BaseMessageIdentifier<GCKeyboard.DidConnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCKeyboard.DidConnectMessage>`.
 
 
 ---

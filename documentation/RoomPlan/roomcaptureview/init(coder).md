@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view by deserializing from the specified coder.
 
@@ -19,7 +20,7 @@ Creates a view by deserializing from the specified coder.
 
 #### Overview
 
-This property inherits from [`UIView`](https://developer.apple.com/documentation/uikit/uiview).
+This property inherits from [`UIView`](../../UIKit/uiview.md).
 
 ## Parameters
 
@@ -27,9 +28,10 @@ This property inherits from [`UIView`](https://developer.apple.com/documentation
 
 ## See Also
 
-- [init(frame: CGRect, arSession: ARSession)](roomcaptureview/init(frame:arsession:).md)
+### Creating a room-capture view
+- [init(frame: CGRect, arSession: ARSession)](./init%28frame,arsession%29.md)
   Creates a room-capture view with the given AR session.
-- [init(frame: CGRect)](roomcaptureview/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a view that sizes to the specified frame.
 
 

@@ -1,7 +1,8 @@
 # vDSP.RoundingMode
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Floating point to integer conversion rounding modes.
 
@@ -11,7 +12,7 @@ Floating point to integer conversion rounding modes.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,34 +24,35 @@ enum RoundingMode
 ## Topics
 
 ### Rounding modes
-- [vDSP.RoundingMode.towardNearestInteger](vdsp/roundingmode/towardnearestinteger.md)
-- [vDSP.RoundingMode.towardZero](vdsp/roundingmode/towardzero.md)
+- [vDSP.RoundingMode.towardNearestInteger](./roundingmode/towardnearestinteger.md)
+- [vDSP.RoundingMode.towardZero](./roundingmode/towardzero.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [vDSP.DCTTransformType](vdsp/dcttransformtype.md)
+### Enumerations
+- [vDSP.DCTTransformType](./dcttransformtype.md)
   An enumeration that describes the discrete cosine transform types.
-- [vDSP.DFTTransformType](vdsp/dfttransformtype.md)
+- [vDSP.DFTTransformType](./dfttransformtype.md)
   Discrete Fourier transform types.
-- [vDSP.FourierTransformDirection](vdsp/fouriertransformdirection.md)
+- [vDSP.FourierTransformDirection](./fouriertransformdirection.md)
   Fast Fourier transform directions.
-- [vDSP.IntegrationRule](vdsp/integrationrule.md)
+- [vDSP.IntegrationRule](./integrationrule.md)
   Integration rules.
-- [vDSP.Radix](vdsp/radix.md)
+- [vDSP.Radix](./radix.md)
   Fast Fourier transform radices.
-- [vDSP.SortOrder](vdsp/sortorder.md)
+- [vDSP.SortOrder](./sortorder.md)
   Constants that specify the sorting order.
-- [vDSP.ThresholdRule](vdsp/thresholdrule.md)
+- [vDSP.ThresholdRule](./thresholdrule.md)
   Constants that specify vector threshold rules.
-- [vDSP.WindowSequence](vdsp/windowsequence.md)
+- [vDSP.WindowSequence](./windowsequence.md)
   Constants that specify window sequence functions.
-- [vDSP.DFTError](vdsp/dfterror.md)
+- [vDSP.DFTError](./dfterror.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # quantityType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quantity type for the series.
 
@@ -20,13 +21,18 @@ The quantity type for the series.
 var quantityType: HKQuantityType { get }
 ```
 
+```objc
+@property (copy, readonly) HKQuantityType * quantityType;
+```
+
 ## See Also
 
-- [init(healthStore: HKHealthStore, quantityType: HKQuantityType, startDate: Date, device: HKDevice?)](hkquantityseriessamplebuilder/init(healthstore:quantitytype:startdate:device:).md)
+### Creating a Quantity Series Builder
+- [init(healthStore: HKHealthStore, quantityType: HKQuantityType, startDate: Date, device: HKDevice?)](./init%28healthstore,quantitytype,startdate,device%29.md)
   Creates a new quantity series builder.
-- [var startDate: Date](hkquantityseriessamplebuilder/startdate.md)
+- [var startDate: Date](./startdate.md)
   The starting date and time for the sample.
-- [var device: HKDevice?](hkquantityseriessamplebuilder/device.md)
+- [var device: HKDevice?](./device.md)
   The device providing the data.
 
 

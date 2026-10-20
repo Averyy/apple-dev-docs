@@ -1,14 +1,15 @@
 # kABRealPropertyType
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Real property.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,32 +17,37 @@ Real property.
 var kABRealPropertyType: Int { get }
 ```
 
+```c
+kABRealPropertyType
+```
+
 #### Discussion
 
-Returned as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
+Returned as a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
 
 ## See Also
 
-- [var kABInvalidPropertyType: Int](kabinvalidpropertytype.md)
+### Constants
+- [var kABInvalidPropertyType: Int](./kabinvalidpropertytype.md)
   Invalid property.
-- [var kABStringPropertyType: Int](kabstringpropertytype.md)
-  String property. Returned as a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
-- [var kABIntegerPropertyType: Int](kabintegerpropertytype.md)
-  Integer property. Returned as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
-- [var kABDateTimePropertyType: Int](kabdatetimepropertytype.md)
+- [var kABStringPropertyType: Int](./kabstringpropertytype.md)
+  String property. Returned as a [`CFString`](../CoreFoundation/cfstring.md) object.
+- [var kABIntegerPropertyType: Int](./kabintegerpropertytype.md)
+  Integer property. Returned as a [`CFNumber`](../CoreFoundation/cfnumber.md) object.
+- [var kABDateTimePropertyType: Int](./kabdatetimepropertytype.md)
   Date-time property.
-- [var kABDictionaryPropertyType: Int](kabdictionarypropertytype.md)
-  Dictionary property. Returned as a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object.
-- [var kABMultiStringPropertyType: Int](kabmultistringpropertytype.md)
+- [var kABDictionaryPropertyType: Int](./kabdictionarypropertytype.md)
+  Dictionary property. Returned as a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object.
+- [var kABMultiStringPropertyType: Int](./kabmultistringpropertytype.md)
   Multistring property.
-- [var kABMultiIntegerPropertyType: Int](kabmultiintegerpropertytype.md)
-  Multiinteger property. Returned as an [`ABMultiValue`](abmultivalue-swift.typealias.md) of [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) objects.
-- [var kABMultiRealPropertyType: Int](kabmultirealpropertytype.md)
+- [var kABMultiIntegerPropertyType: Int](./kabmultiintegerpropertytype.md)
+  Multiinteger property. Returned as an [`ABMultiValue`](./abmultivalue-swift.typealias.md) of [`CFNumber`](../CoreFoundation/cfnumber.md) objects.
+- [var kABMultiRealPropertyType: Int](./kabmultirealpropertytype.md)
   Multireal property.
-- [var kABMultiDateTimePropertyType: Int](kabmultidatetimepropertytype.md)
-  Multi–date-time property. Returned as an [`ABMultiValue`](abmultivalue-swift.typealias.md) of [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) objects.
-- [var kABMultiDictionaryPropertyType: Int](kabmultidictionarypropertytype.md)
-  Multidictionary property. Returned as an [`ABMultiValue`](abmultivalue-swift.typealias.md) of [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) objects.
+- [var kABMultiDateTimePropertyType: Int](./kabmultidatetimepropertytype.md)
+  Multi–date-time property. Returned as an [`ABMultiValue`](./abmultivalue-swift.typealias.md) of [`CFDate`](../CoreFoundation/cfdate.md) objects.
+- [var kABMultiDictionaryPropertyType: Int](./kabmultidictionarypropertytype.md)
+  Multidictionary property. Returned as an [`ABMultiValue`](./abmultivalue-swift.typealias.md) of [`CFDictionary`](../CoreFoundation/cfdictionary.md) objects.
 
 
 ---

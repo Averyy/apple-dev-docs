@@ -1,7 +1,8 @@
 # CTCellularPlanProvisioningAddPlanResult.cancel
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -15,13 +16,18 @@
 case cancel
 ```
 
+```c
+CTCellularPlanProvisioningAddPlanResultCancel
+```
+
 ## See Also
 
-- [CTCellularPlanProvisioningAddPlanResult.fail](ctcellularplanprovisioningaddplanresult/fail.md)
+### Results
+- [CTCellularPlanProvisioningAddPlanResult.fail](./fail.md)
   The requested eSIM provisioning failed.
-- [CTCellularPlanProvisioningAddPlanResult.success](ctcellularplanprovisioningaddplanresult/success.md)
+- [CTCellularPlanProvisioningAddPlanResult.success](./success.md)
   The requested eSIM provisioning succeeded.
-- [CTCellularPlanProvisioningAddPlanResult.unknown](ctcellularplanprovisioningaddplanresult/unknown.md)
+- [CTCellularPlanProvisioningAddPlanResult.unknown](./unknown.md)
   The result of the requested eSIM provisioning is unknown.
 
 

@@ -1,7 +1,8 @@
 # AccessibilityDeclarationCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body you use to create an accessibility declaration.
 
@@ -10,23 +11,23 @@ The data structure of the request body you use to create an accessibility declar
 
 ## Declaration
 
-```swift
+```
 object AccessibilityDeclarationCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AccessibilityDeclarationCreateRequest.Data.Attributes](accessibilitydeclarationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AccessibilityDeclarationCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes you set that describe the new accessibility declaration resource.
-- [object AccessibilityDeclarationCreateRequest.Data.Relationships](accessibilitydeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AccessibilityDeclarationCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (AccessibilityDeclarationCreateRequest.Data.Attributes) *(required)*
 - `relationships` (AccessibilityDeclarationCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `accessibilityDeclarations`
 
 
 ---

@@ -1,7 +1,8 @@
 # PerformanceOverview.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a performance overview resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a performance overview resource.
 
 ## Declaration
 
-```swift
+```
 object PerformanceOverview.Attributes
 ```
 

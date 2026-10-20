@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when the distributed target execution of a target has thrown an error.
@@ -12,7 +13,7 @@ Invoked when the distributed target execution of a target has thrown an error.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ func onThrow<Err>(error: Err) async throws where Err : Error
 
 #### Discussion
 
-It is not guaranteed that the error conform to the [`SerializationRequirement`](distributedtargetinvocationresulthandler/serializationrequirement.md); This guarantee is only given to return values (and offered by `onReturn`).
+It is not guaranteed that the error conform to the [`SerializationRequirement`](./serializationrequirement.md); This guarantee is only given to return values (and offered by `onReturn`).
 
 
 ---

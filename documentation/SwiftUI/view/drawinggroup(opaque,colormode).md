@@ -1,7 +1,8 @@
 # drawingGroup(opaque:colorMode:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Composites this view’s contents into an offscreen image before final display.
 
@@ -51,28 +52,29 @@ VStack {
 
 > ❗ **Important**: The visual result of a drawing group only includes views that SwiftUI rasterizes directly using its own drawing primitives, such as text, images, shapes, and composite views of these types. It will not include views whose contents are composited by Core Animation layers, such as more complex controls and containers, web views, media players, and most types of UIKit and AppKit views. In those cases, the output displays a placeholder image instead. Whether a particular view is rendered using SwiftUI’s own drawing primitives or composited by Core Animation may change in future releases. However, any view that is currently supported is guaranteed to remain supported.
 
-![A screenshot showing the effects on several stacks configured as a](/images/com.apple.SwiftUI/SwiftUI-View-drawingGroup@2x.png)
+![A screenshot showing the effects on several stacks configured as a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-drawingGroup@2x.png)
 
 ## Parameters
 
 - `opaque`: A Boolean value that indicates whether the image is opaque. The default is `false`; if set to `true`, the alpha channel of the image must be `1`.
-- `colorMode`: One of the working color space and storage formats defined in [`ColorRenderingMode`](colorrenderingmode.md). The default is [`ColorRenderingMode.nonLinear`](colorrenderingmode/nonlinear.md).
+- `colorMode`: One of the working color space and storage formats defined in [`ColorRenderingMode`](../colorrenderingmode.md). The default is [`ColorRenderingMode.nonLinear`](../colorrenderingmode/nonlinear.md).
 
 ## See Also
 
-- [func blendMode(BlendMode) -> some View](view/blendmode(_:).md)
+### Compositing views
+- [func blendMode(BlendMode) -> some View](./blendmode%28_%29.md)
   Sets the blend mode for compositing this view with overlapping views.
-- [func compositingGroup() -> some View](view/compositinggroup.md)
+- [func compositingGroup() -> some View](./compositinggroup%28%29.md)
   Wraps this view in a compositing group.
-- [enum BlendMode](blendmode.md)
+- [enum BlendMode](../blendmode.md)
   Modes for compositing a view with overlapping content.
-- [enum ColorRenderingMode](colorrenderingmode.md)
+- [enum ColorRenderingMode](../colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
-- [protocol CompositorContent](compositorcontent.md)
+- [protocol CompositorContent](../compositorcontent.md)
   A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
-- [struct CompositorContentBuilder](compositorcontentbuilder.md)
-  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
-- [struct AnyCompositorContent](anycompositorcontent.md)
+- [struct CompositorContentBuilder](../compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](../compositorcontent.md) elements.
+- [struct AnyCompositorContent](../anycompositorcontent.md)
   Type erased compositor content.
 
 

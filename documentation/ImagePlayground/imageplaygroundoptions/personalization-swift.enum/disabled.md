@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.Personalization.disabled
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to disable personalization features during image generation.
 

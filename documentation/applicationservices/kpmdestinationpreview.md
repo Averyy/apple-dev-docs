@@ -1,7 +1,8 @@
 # kPMDestinationPreview
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies output to print preview.
 

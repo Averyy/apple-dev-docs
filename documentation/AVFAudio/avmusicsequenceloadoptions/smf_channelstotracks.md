@@ -1,23 +1,28 @@
 # smf_ChannelsToTracks
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that represents data on different MIDI channels mapped to multiple tracks.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static var smf_ChannelsToTracks: AVMusicSequenceLoadOptions { get }
+```
+
+```c
+AVMusicSequenceLoadSMF_ChannelsToTracks
 ```
 
 #### Discussion

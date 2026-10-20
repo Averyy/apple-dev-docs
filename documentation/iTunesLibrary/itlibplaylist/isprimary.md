@@ -1,7 +1,8 @@
 # isPrimary
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the playlist is the primary playlist.
 
@@ -15,23 +16,28 @@ A Boolean value that indicates whether the playlist is the primary playlist.
 var isPrimary: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isPrimary) BOOL primary;
+```
+
 ## See Also
 
-- [var name: String](itlibplaylist/name.md)
+### Getting Playlist Info
+- [var name: String](./name.md)
   The name or title of the playlist.
-- [var items: [ITLibMediaItem]](itlibplaylist/items.md)
+- [var items: [ITLibMediaItem]](./items.md)
   The media items (tracks) in the playlist.
-- [var parentID: NSNumber?](itlibplaylist/parentid.md)
+- [var parentID: NSNumber?](./parentid.md)
   The unique persistent identifier of the playlist’s parent playlist.
-- [var isVisible: Bool](itlibplaylist/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the playlist is visible to the user in iTunes.
-- [var distinguishedKind: ITLibDistinguishedPlaylistKind](itlibplaylist/distinguishedkind.md)
+- [var distinguishedKind: ITLibDistinguishedPlaylistKind](./distinguishedkind.md)
   An indication of whether the playlist has a special distinction.
-- [var kind: ITLibPlaylistKind](itlibplaylist/kind.md)
+- [var kind: ITLibPlaylistKind](./kind.md)
   An indication of the type of playlist.
-- [enum ITLibPlaylistKind](itlibplaylistkind.md)
+- [enum ITLibPlaylistKind](../itlibplaylistkind.md)
   These constants specify the possible kinds of playlists.
-- [enum ITLibDistinguishedPlaylistKind](itlibdistinguishedplaylistkind.md)
+- [enum ITLibDistinguishedPlaylistKind](../itlibdistinguishedplaylistkind.md)
   These constants specify the possible kinds of distinguished playlists.
 
 

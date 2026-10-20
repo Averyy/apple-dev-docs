@@ -1,7 +1,8 @@
 # CGPDFScannerScan(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Parses the content stream of a PDF scanner object.
 
@@ -10,7 +11,7 @@ Parses the content stream of a PDF scanner object.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Parses the content stream of a PDF scanner object.
 func CGPDFScannerScan(_ scanner: CGPDFScannerRef) -> Bool
 ```
 
+```c
+extern bool CGPDFScannerScan(CGPDFScannerRef scanner);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the entire stream is parsed successfully; [`false`](https://developer.apple.com/documentation/swift/false) if parsing fails (for example, if the stream data is corrupted).
+[`true`](../Swift/true.md) if the entire stream is parsed successfully; [`false`](../Swift/false.md) if parsing fails (for example, if the stream data is corrupted).
 
 #### Discussion
 
-The function [`CGPDFScannerScan(_:)`](cgpdfscannerscan(_:).md) parses the PDF content stream associated with the scanner. Each time Core Graphics parses a PDF operator for which you register a callback, Core Graphics invokes your callback.
+The function [`CGPDFScannerScan(_:)`](./cgpdfscannerscan%28_%29.md) parses the PDF content stream associated with the scanner. Each time Core Graphics parses a PDF operator for which you register a callback, Core Graphics invokes your callback.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ The function [`CGPDFScannerScan(_:)`](cgpdfscannerscan(_:).md) parses the PDF co
 
 ## See Also
 
-- [func CGPDFScannerGetContentStream(CGPDFScannerRef) -> CGPDFContentStreamRef](cgpdfscannergetcontentstream(_:).md)
+### Parsing Content
+- [func CGPDFScannerGetContentStream(CGPDFScannerRef) -> CGPDFContentStreamRef](./cgpdfscannergetcontentstream%28_%29.md)
   Returns the content stream associated with a PDF scanner object.
 
 

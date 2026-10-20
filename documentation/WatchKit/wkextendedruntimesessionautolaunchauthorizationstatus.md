@@ -1,7 +1,8 @@
 # WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - watchOS 9.0+
@@ -12,40 +13,45 @@
 enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus
 ```
 
+```c
+enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus.active](wkextendedruntimesessionautolaunchauthorizationstatus/active.md)
-- [WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus.inactive](wkextendedruntimesessionautolaunchauthorizationstatus/inactive.md)
-- [WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus.unknown](wkextendedruntimesessionautolaunchauthorizationstatus/unknown.md)
+- [WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus.active](./wkextendedruntimesessionautolaunchauthorizationstatus/active.md)
+- [WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus.inactive](./wkextendedruntimesessionautolaunchauthorizationstatus/inactive.md)
+- [WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus.unknown](./wkextendedruntimesessionautolaunchauthorizationstatus/unknown.md)
 ### Initializers
-- [init?(rawValue: Int)](wkextendedruntimesessionautolaunchauthorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkextendedruntimesessionautolaunchauthorizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func start()](wkextendedruntimesession/start.md)
+### Managing the Session State
+- [func start()](./wkextendedruntimesession/start%28%29.md)
   Starts running the session.
-- [func start(at: Date)](wkextendedruntimesession/start(at:).md)
+- [func start(at: Date)](./wkextendedruntimesession/start%28at%29.md)
   Schedules a session to start running at a future date.
-- [func invalidate()](wkextendedruntimesession/invalidate.md)
+- [func invalidate()](./wkextendedruntimesession/invalidate%28%29.md)
   Stops the session.
-- [var state: WKExtendedRuntimeSessionState](wkextendedruntimesession/state.md)
+- [var state: WKExtendedRuntimeSessionState](./wkextendedruntimesession/state.md)
   The session’s current state.
-- [enum WKExtendedRuntimeSessionState](wkextendedruntimesessionstate.md)
+- [enum WKExtendedRuntimeSessionState](./wkextendedruntimesessionstate.md)
   The activation states for an extended runtime session.
-- [var expirationDate: Date?](wkextendedruntimesession/expirationdate.md)
+- [var expirationDate: Date?](./wkextendedruntimesession/expirationdate.md)
   The time and date when the session expires.
-- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](wkextendedruntimesession/requestautolaunchauthorizationstatus(completion:).md)
+- [class func requestAutoLaunchAuthorizationStatus(completion: (WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus, (any Error)?) -> Void)](./wkextendedruntimesession/requestautolaunchauthorizationstatus%28completion%29.md)
 
 
 ---

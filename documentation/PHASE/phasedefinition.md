@@ -1,7 +1,8 @@
 # PHASEDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class that adds a name to framework definitions.
 
@@ -19,45 +20,50 @@ A base class that adds a name to framework definitions.
 class PHASEDefinition
 ```
 
+```objc
+@interface PHASEDefinition : NSObject
+```
+
 #### Overview
 
-Various PHASE classes derive from this class, for example, [`PHASEMixerDefinition`](phasemixerdefinition.md), [`PHASEMetaParameterDefinition`](phasemetaparameterdefinition.md), and [`PHASESoundEventNodeDefinition`](phasesoundeventnodedefinition.md).
+Various PHASE classes derive from this class, for example, [`PHASEMixerDefinition`](./phasemixerdefinition.md), [`PHASEMetaParameterDefinition`](./phasemetaparameterdefinition.md), and [`PHASESoundEventNodeDefinition`](./phasesoundeventnodedefinition.md).
 
-This class represents a template from which PHASE creates concrete [`PHASEAsset`](phaseasset.md) subclasses at runtime. For example, when you register a global metaparameter definition using [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md), PHASE returns a [`PHASEAsset`](phaseasset.md) subclass, [`PHASEGlobalMetaParameterAsset`](phaseglobalmetaparameterasset.md), that identifies a usable metaparameter by name. To access the usable metaparameter, pass the [`PHASEGlobalMetaParameterAsset`](phaseglobalmetaparameterasset.md) [`identifier`](phaseasset/identifier.md) into the [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary.
+This class represents a template from which PHASE creates concrete [`PHASEAsset`](./phaseasset.md) subclasses at runtime. For example, when you register a global metaparameter definition using [`registerGlobalMetaParameter(metaParameterDefinition:)`](./phaseassetregistry/registerglobalmetaparameter%28metaparameterdefinition%29.md), PHASE returns a [`PHASEAsset`](./phaseasset.md) subclass, [`PHASEGlobalMetaParameterAsset`](./phaseglobalmetaparameterasset.md), that identifies a usable metaparameter by name. To access the usable metaparameter, pass the [`PHASEGlobalMetaParameterAsset`](./phaseglobalmetaparameterasset.md) [`identifier`](./phaseasset/identifier.md) into the [`globalMetaParameters`](./phaseassetregistry/globalmetaparameters.md) dictionary.
 
 ## Topics
 
 ### Identifying a Definition
-- [var identifier: String](phasedefinition/identifier.md)
+- [var identifier: String](./phasedefinition/identifier.md)
   A unique name for the definition.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PHASEMetaParameterDefinition](phasemetaparameterdefinition.md)
-- [PHASEMixerDefinition](phasemixerdefinition.md)
-- [PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
+- [PHASEMetaParameterDefinition](./phasemetaparameterdefinition.md)
+- [PHASEMixerDefinition](./phasemixerdefinition.md)
+- [PHASESoundEventNodeDefinition](./phasesoundeventnodedefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEChannelMixerDefinition](phasechannelmixerdefinition.md)
+### Audio Layering and Effects
+- [class PHASEChannelMixerDefinition](./phasechannelmixerdefinition.md)
   An audio-layering object that routes sound directly to the device’s output.
-- [class PHASEAmbientMixerDefinition](phaseambientmixerdefinition.md)
+- [class PHASEAmbientMixerDefinition](./phaseambientmixerdefinition.md)
   An audio-layering object that outputs sound in a particular direction in 3D space.
-- [class PHASEMixerDefinition](phasemixerdefinition.md)
+- [class PHASEMixerDefinition](./phasemixerdefinition.md)
   An object to initialize a mixer with a given configuration.
-- [class PHASEMixer](phasemixer.md)
+- [class PHASEMixer](./phasemixer.md)
   An object that combines multiple audio signals into a single signal.
-- [Spatial Mixing](spatial-mixing.md)
+- [Spatial Mixing](./spatial-mixing.md)
   Define environmental characteristics that determine how sound plays in your app’s 3D soundscape.
 
 

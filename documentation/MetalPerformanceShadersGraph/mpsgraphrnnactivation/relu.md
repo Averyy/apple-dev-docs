@@ -1,7 +1,8 @@
 # MPSGraphRNNActivation.relu
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines a ReLU activation.
 
@@ -17,6 +18,10 @@ Defines a ReLU activation.
 
 ```swift
 case relu
+```
+
+```c
+MPSGraphRNNActivationRelu
 ```
 
 

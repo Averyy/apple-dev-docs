@@ -1,21 +1,22 @@
 # AppStoreVersionLocalizationCreateRequest.Data.Relationships.Placements
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionLocalizationCreateRequest.Data.Relationships.Placements
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.Placements.Data](appstoreversionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships.Placements.Data](./placements-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

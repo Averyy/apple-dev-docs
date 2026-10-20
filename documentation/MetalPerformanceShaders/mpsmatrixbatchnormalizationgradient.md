@@ -1,7 +1,8 @@
 # MPSMatrixBatchNormalizationGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A batch normalization gradient kernel that operates on matrices.
 
@@ -19,42 +20,47 @@ A batch normalization gradient kernel that operates on matrices.
 class MPSMatrixBatchNormalizationGradient
 ```
 
+```objc
+@interface MPSMatrixBatchNormalizationGradient : MPSMatrixBinaryKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixbatchnormalizationgradient/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsmatrixbatchnormalizationgradient/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsmatrixbatchnormalizationgradient/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsmatrixbatchnormalizationgradient/init%28device%29.md)
 ### Instance Properties
-- [var epsilon: Float](mpsmatrixbatchnormalizationgradient/epsilon.md)
-- [var sourceInputFeatureChannels: Int](mpsmatrixbatchnormalizationgradient/sourceinputfeaturechannels.md)
-- [var sourceNumberOfFeatureVectors: Int](mpsmatrixbatchnormalizationgradient/sourcenumberoffeaturevectors.md)
+- [var epsilon: Float](./mpsmatrixbatchnormalizationgradient/epsilon.md)
+- [var sourceInputFeatureChannels: Int](./mpsmatrixbatchnormalizationgradient/sourceinputfeaturechannels.md)
+- [var sourceNumberOfFeatureVectors: Int](./mpsmatrixbatchnormalizationgradient/sourcenumberoffeaturevectors.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixbatchnormalizationgradient/copy(with:device:).md)
-- [func encode(to: any MTLCommandBuffer, gradientMatrix: MPSMatrix, inputMatrix: MPSMatrix, mean: MPSVector, varianceVector: MPSVector, gammaVector: MPSVector?, betaVector: MPSVector?, resultGradientForDataMatrix: MPSMatrix, resultGradientForGammaVector: MPSVector?, resultGradientForBetaVector: MPSVector?)](mpsmatrixbatchnormalizationgradient/encode(to:gradientmatrix:inputmatrix:mean:variancevector:gammavector:betavector:resultgradientfordatamatrix:resultgradientforgammavector:resultgradientforbetavector:).md)
-- [func neuronParameterA() -> Float](mpsmatrixbatchnormalizationgradient/neuronparametera.md)
-- [func neuronParameterB() -> Float](mpsmatrixbatchnormalizationgradient/neuronparameterb.md)
-- [func neuronParameterC() -> Float](mpsmatrixbatchnormalizationgradient/neuronparameterc.md)
-- [func neuronType() -> MPSCNNNeuronType](mpsmatrixbatchnormalizationgradient/neurontype.md)
-- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixbatchnormalizationgradient/setneurontype(_:parametera:parameterb:parameterc:).md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./mpsmatrixbatchnormalizationgradient/copy%28with,device%29.md)
+- [func encode(to: any MTLCommandBuffer, gradientMatrix: MPSMatrix, inputMatrix: MPSMatrix, mean: MPSVector, varianceVector: MPSVector, gammaVector: MPSVector?, betaVector: MPSVector?, resultGradientForDataMatrix: MPSMatrix, resultGradientForGammaVector: MPSVector?, resultGradientForBetaVector: MPSVector?)](./mpsmatrixbatchnormalizationgradient/encode%28to,gradientmatrix,inputmatrix,mean,variancevector,gammavector,betavector,resultgradientfordatamatrix,resultgradientforgammavector,resultgradientforbetavector%29.md)
+- [func neuronParameterA() -> Float](./mpsmatrixbatchnormalizationgradient/neuronparametera%28%29.md)
+- [func neuronParameterB() -> Float](./mpsmatrixbatchnormalizationgradient/neuronparameterb%28%29.md)
+- [func neuronParameterC() -> Float](./mpsmatrixbatchnormalizationgradient/neuronparameterc%28%29.md)
+- [func neuronType() -> MPSCNNNeuronType](./mpsmatrixbatchnormalizationgradient/neurontype%28%29.md)
+- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](./mpsmatrixbatchnormalizationgradient/setneurontype%28_,parametera,parameterb,parameterc%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+- [MPSMatrixBinaryKernel](./mpsmatrixbinarykernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSMatrixBatchNormalization](mpsmatrixbatchnormalization.md)
+### Matrix Normalization Operations
+- [class MPSMatrixBatchNormalization](./mpsmatrixbatchnormalization.md)
   A batch normalization kernel that operates on matrices.
 
 

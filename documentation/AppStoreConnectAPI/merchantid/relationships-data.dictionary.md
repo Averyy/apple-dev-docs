@@ -1,7 +1,8 @@
 # MerchantId.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationship you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object MerchantId.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object MerchantId.Relationships.Certificates](merchantid/relationships-data.dictionary/certificates-data.dictionary.md)
+- [object MerchantId.Relationships.Certificates](./relationships-data.dictionary/certificates-data.dictionary.md)
   The data and links that describe the relationship between the merchant ID and the certificates resources.
 
 ## Properties

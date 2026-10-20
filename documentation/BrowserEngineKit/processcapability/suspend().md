@@ -1,7 +1,8 @@
 # suspend()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspends the capability.
 
@@ -17,7 +18,7 @@ func suspend() throws
 
 #### Discussion
 
-> **Note**: An error if the capability cannot be suspended.
+> **Throws**: An error if the capability cannot be suspended.
 
 
 ---

@@ -1,7 +1,8 @@
 # audioStreamPacketDescriptions
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,8 @@
 ```swift
 var audioStreamPacketDescriptions: [AudioStreamPacketDescription]? { get }
 ```
+
+Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
 
 ---

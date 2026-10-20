@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.ActiveReason.userInitiated
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates a person manually starts charging.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ case userInitiated
 
 ## See Also
 
-- [ElectricVehicleChargingReason.ActiveReason.userResumed](electricvehiclechargingreason/activereason/userresumed.md)
+### User actions
+- [ElectricVehicleChargingReason.ActiveReason.userResumed](./userresumed.md)
   A reason that indicates a person manually resumes charging after pausing.
 
 

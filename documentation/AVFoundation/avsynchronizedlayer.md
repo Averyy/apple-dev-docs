@@ -1,7 +1,8 @@
 # AVSynchronizedLayer
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A Core Animation layer that derives its timing from a player item so that you can synchronize layer animations with media playback.
 
@@ -19,13 +20,17 @@ A Core Animation layer that derives its timing from a player item so that you ca
 class AVSynchronizedLayer
 ```
 
+```objc
+@interface AVSynchronizedLayer : CALayer
+```
+
 #### Overview
 
 You can create an arbitrary number of synchronized layers from the same `AVPlayerItem` object.
 
-A synchronized layer is similar to a [`CATransformLayer`](https://developer.apple.com/documentation/quartzcore/catransformlayer) object in that it doesn’t display anything itself, it just confers state upon its layer subtree. `AVSynchronizedLayer` confers its timing state, synchronizing the timing of layers in its subtree with that of a player item.
+A synchronized layer is similar to a [`CATransformLayer`](../QuartzCore/catransformlayer.md) object in that it doesn’t display anything itself, it just confers state upon its layer subtree. `AVSynchronizedLayer` confers its timing state, synchronizing the timing of layers in its subtree with that of a player item.
 
-Any `CoreAnimation` layer with animation property set that is added as a sublayer of `AVSynchronizedLayer` should set the animation’s [`beginTime`](https://developer.apple.com/documentation/quartzcore/camediatiming/begintime) property to a non-zero positive value so animations will be interpreted on the player item’s timeline. `CoreAnimation` replaces the default `beginTime` of 0.0 with [`CACurrentMediaTime()`](https://developer.apple.com/documentation/quartzcore/cacurrentmediatime()). To start the animation from time 0, use a small positive value like [`AVCoreAnimationBeginTimeAtZero`](avcoreanimationbegintimeatzero.md).
+Any `CoreAnimation` layer with animation property set that is added as a sublayer of `AVSynchronizedLayer` should set the animation’s [`beginTime`](../QuartzCore/camediatiming/begintime.md) property to a non-zero positive value so animations will be interpreted on the player item’s timeline. `CoreAnimation` replaces the default `beginTime` of 0.0 with [`CACurrentMediaTime()`](../QuartzCore/cacurrentmediatime%28%29.md). To start the animation from time 0, use a small positive value like [`AVCoreAnimationBeginTimeAtZero`](./avcoreanimationbegintimeatzero.md).
 
 You might use a layer as shown in the following example:
 
@@ -42,39 +47,40 @@ AVSynchronizedLayer *syncLayer = [AVSynchronizedLayer synchronizedLayerWithPlaye
 ## Topics
 
 ### Creating a synchronized layer
-- [init(playerItem: AVPlayerItem)](avsynchronizedlayer/init(playeritem:).md)
+- [init(playerItem: AVPlayerItem)](./avsynchronizedlayer/init%28playeritem%29.md)
   Creates a new synchronized layer with timing synchronized with a given player item.
 ### Managing the player item
-- [var playerItem: AVPlayerItem?](avsynchronizedlayer/playeritem.md)
+- [var playerItem: AVPlayerItem?](./avsynchronizedlayer/playeritem.md)
   The player item to which the timing of the layer is synchronized.
 ### Supporting types
-- [let AVCoreAnimationBeginTimeAtZero: CFTimeInterval](avcoreanimationbegintimeatzero.md)
+- [let AVCoreAnimationBeginTimeAtZero: CFTimeInterval](./avcoreanimationbegintimeatzero.md)
   A value that sets an animation begin time to `0`.
 
 ## Relationships
 
 ### Inherits From
-- [CALayer](../quartzcore/calayer.md)
+- [CALayer](../QuartzCore/calayer.md)
 ### Conforms To
-- [CAMediaTiming](../quartzcore/camediatiming.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CAMediaTiming](../QuartzCore/camediatiming.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
+### Presentation
+- [Monitoring playback progress in your app](./monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
-- [Using HEVC video with alpha](using-hevc-video-with-alpha.md)
+- [Using HEVC video with alpha](./using-hevc-video-with-alpha.md)
   Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
-- [class AVPlayerLayer](avplayerlayer.md)
+- [class AVPlayerLayer](./avplayerlayer.md)
   An object that presents the visual contents of a player object.
 
 

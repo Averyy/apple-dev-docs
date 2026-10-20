@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateU0RecoveryTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The U0 recovery timeout.
 
@@ -10,7 +11,7 @@ The U0 recovery timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateU0RecoveryTimeout = 1
 ```
 

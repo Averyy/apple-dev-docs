@@ -1,7 +1,8 @@
 # UIImage.SymbolVariableValueMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -17,53 +18,58 @@
 enum SymbolVariableValueMode
 ```
 
+```c
+enum UIImageSymbolVariableValueMode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UIImage.SymbolVariableValueMode.automatic](uiimage/symbolvariablevaluemode/automatic.md)
+- [UIImage.SymbolVariableValueMode.automatic](./symbolvariablevaluemode/automatic.md)
   Automatically selects an appropriate variable value mode for the symbol.
-- [UIImage.SymbolVariableValueMode.color](uiimage/symbolvariablevaluemode/color.md)
+- [UIImage.SymbolVariableValueMode.color](./symbolvariablevaluemode/color.md)
   The “color” variable value mode. Sets the opacity of each variable layer to either on or off depending on how its threshold compared to the current value.
-- [UIImage.SymbolVariableValueMode.draw](uiimage/symbolvariablevaluemode/draw.md)
+- [UIImage.SymbolVariableValueMode.draw](./symbolvariablevaluemode/draw.md)
   The “draw” variable value mode. Changes the drawn length of each variable layer to either based on how its range relates to the current value.
 ### Initializers
-- [init?(rawValue: Int)](uiimage/symbolvariablevaluemode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./symbolvariablevaluemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(pointSize: CGFloat)](uiimage/symbolconfiguration-swift.class/init(pointsize:).md)
+### Creating a symbol configuration
+- [convenience init(pointSize: CGFloat)](./symbolconfiguration-swift.class/init%28pointsize%29.md)
   Creates a configuration object with the specified point-size information.
-- [convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight)](uiimage/symbolconfiguration-swift.class/init(pointsize:weight:).md)
+- [convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight)](./symbolconfiguration-swift.class/init%28pointsize,weight%29.md)
   Creates a configuration object with the specified point-size and weight information.
-- [convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight, scale: UIImage.SymbolScale)](uiimage/symbolconfiguration-swift.class/init(pointsize:weight:scale:).md)
+- [convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight, scale: UIImage.SymbolScale)](./symbolconfiguration-swift.class/init%28pointsize,weight,scale%29.md)
   Creates a configuration object with the specified point-size, weight, and scale information.
-- [convenience init(scale: UIImage.SymbolScale)](uiimage/symbolconfiguration-swift.class/init(scale:).md)
+- [convenience init(scale: UIImage.SymbolScale)](./symbolconfiguration-swift.class/init%28scale%29.md)
   Creates a configuration object with the specified scale information.
-- [convenience init(textStyle: UIFont.TextStyle)](uiimage/symbolconfiguration-swift.class/init(textstyle:).md)
+- [convenience init(textStyle: UIFont.TextStyle)](./symbolconfiguration-swift.class/init%28textstyle%29.md)
   Creates a configuration object with the specified font text style information.
-- [convenience init(textStyle: UIFont.TextStyle, scale: UIImage.SymbolScale)](uiimage/symbolconfiguration-swift.class/init(textstyle:scale:).md)
+- [convenience init(textStyle: UIFont.TextStyle, scale: UIImage.SymbolScale)](./symbolconfiguration-swift.class/init%28textstyle,scale%29.md)
   Creates a configuration object with the specified font text style and scale information.
-- [convenience init(weight: UIImage.SymbolWeight)](uiimage/symbolconfiguration-swift.class/init(weight:).md)
+- [convenience init(weight: UIImage.SymbolWeight)](./symbolconfiguration-swift.class/init%28weight%29.md)
   Creates a configuration object with the specified weight information.
-- [convenience init(font: UIFont)](uiimage/symbolconfiguration-swift.class/init(font:).md)
+- [convenience init(font: UIFont)](./symbolconfiguration-swift.class/init%28font%29.md)
   Creates a configuration object with the specified font information.
-- [convenience init(font: UIFont, scale: UIImage.SymbolScale)](uiimage/symbolconfiguration-swift.class/init(font:scale:).md)
+- [convenience init(font: UIFont, scale: UIImage.SymbolScale)](./symbolconfiguration-swift.class/init%28font,scale%29.md)
   Creates a configuration object with the specified font and scale information.
-- [UIImage.SymbolScale](uiimage/symbolscale.md)
+- [UIImage.SymbolScale](./symbolscale.md)
   Constants that indicate which scale variant of a symbol image to use.
-- [UIImage.SymbolWeight](uiimage/symbolweight.md)
+- [UIImage.SymbolWeight](./symbolweight.md)
   Constants that indicate which weight variant of a symbol image to use.
-- [UIImage.SymbolColorRenderingMode](uiimage/symbolcolorrenderingmode.md)
+- [UIImage.SymbolColorRenderingMode](./symbolcolorrenderingmode.md)
 
 
 ---

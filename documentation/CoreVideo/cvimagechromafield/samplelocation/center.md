@@ -1,7 +1,8 @@
 # CVImageChromaField.SampleLocation.center
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Chroma sample is fully centered.
 

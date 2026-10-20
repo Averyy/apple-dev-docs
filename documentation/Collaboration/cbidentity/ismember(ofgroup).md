@@ -1,7 +1,8 @@
 # isMember(ofGroup:)
 
 **Framework**: Collaboration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the identity is a member of the specified group.
 
@@ -14,9 +15,13 @@ Returns a Boolean value indicating whether the identity is a member of the speci
 func isMember(ofGroup group: CBGroupIdentity) -> Bool
 ```
 
+```objc
+- (BOOL) isMemberOfGroup:(CBGroupIdentity *) group;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the identity is a member of the group; [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../../Swift/true.md) if the identity is a member of the group; [`false`](../../Swift/false.md) if it is not.
 
 ## Parameters
 
@@ -24,21 +29,22 @@ func isMember(ofGroup group: CBGroupIdentity) -> Bool
 
 ## See Also
 
-- [var aliases: [String]](cbidentity/aliases.md)
+### Getting Identity Attributes
+- [var aliases: [String]](./aliases.md)
   Returns an array of aliases (alternate names) for the identity.
-- [var authority: CBIdentityAuthority](cbidentity/authority.md)
+- [var authority: CBIdentityAuthority](./authority.md)
   Returns the identity authority where the identity is stored.
-- [var emailAddress: String?](cbidentity/emailaddress.md)
+- [var emailAddress: String?](./emailaddress.md)
   Returns the email address of an identity.
-- [var fullName: String](cbidentity/fullname.md)
+- [var fullName: String](./fullname.md)
   Returns the full name of the identity.
-- [var image: NSImage?](cbidentity/image.md)
+- [var image: NSImage?](./image.md)
   Returns the image associated with an identity.
-- [var isHidden: Bool](cbidentity/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   Returns a Boolean value indicating the state of the identity’s hidden property.
-- [var posixName: String](cbidentity/posixname.md)
+- [var posixName: String](./posixname.md)
   Returns the POSIX name of the identity.
-- [var uuidString: String](cbidentity/uuidstring.md)
+- [var uuidString: String](./uuidstring.md)
   Returns the UUID of the identity as a string.
 
 

@@ -1,7 +1,8 @@
 # validateUserInterfaceItem(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether to enable the specified item.
 
@@ -15,9 +16,13 @@ Returns a Boolean value that indicates whether to enable the specified item.
 func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 ```
 
+```objc
+- (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified item responds to [`toggleSidebar(_:)`](nssplitviewcontroller/togglesidebar(_:).md), [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](../../Swift/true.md) if the specified item responds to [`toggleSidebar(_:)`](./togglesidebar%28_%29.md), [`false`](../../Swift/false.md) if it doesn’t.
 
 ## Parameters
 

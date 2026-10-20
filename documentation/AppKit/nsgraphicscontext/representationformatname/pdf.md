@@ -1,12 +1,13 @@
 # pdf
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Destination file format is PDF.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Destination file format is PDF.
 static let pdf: NSGraphicsContext.RepresentationFormatName
 ```
 
+```c
+extern NSGraphicsContextRepresentationFormatName NSGraphicsContextPDFFormat;
+```
+
 ## See Also
 
-- [static let postScript: NSGraphicsContext.RepresentationFormatName](nsgraphicscontext/representationformatname/postscript.md)
+### Format Names
+- [static let postScript: NSGraphicsContext.RepresentationFormatName](./postscript.md)
   Destination file format is PostScript.
 
 

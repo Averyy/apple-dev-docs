@@ -1,7 +1,8 @@
 # GetCurrentZeroTimestamp
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current zero timestamp value.
 
@@ -10,7 +11,7 @@ Gets the current zero timestamp value.
 
 ## Declaration
 
-```swift
+```c
 void GetCurrentZeroTimestamp(uint64_t *out_sample_time, uint64_t *out_host_time);
 ```
 
@@ -21,7 +22,8 @@ void GetCurrentZeroTimestamp(uint64_t *out_sample_time, uint64_t *out_host_time)
 
 ## See Also
 
-- [UpdateCurrentZeroTimestamp](iouseraudioclockdevice/updatecurrentzerotimestamp.md)
+### Accessing Timestamps
+- [UpdateCurrentZeroTimestamp](./updatecurrentzerotimestamp.md)
   Updates the current timestamp value.
 
 

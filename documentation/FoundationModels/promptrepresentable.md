@@ -1,7 +1,8 @@
 # PromptRepresentable
 
 **Framework**: Foundation Models  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type whose value can represent a prompt.
 
@@ -23,7 +24,7 @@ protocol PromptRepresentable
 
 > ❗ **Important**: Conformance to this protocol is provided automatically by the `@Generable` macro, you should **not** override its implementations. Overriding may negatively impact runtime performance and cause bugs.
 
-For types that are not [`Generable`](generable.md), you may provide your own implementation.
+For types that are not [`Generable`](./generable.md), you may provide your own implementation.
 
 Experiment with different representations to find one that works well for your type. Generally, any format that is easily understandable to humans will work well for the model as well.
 
@@ -53,25 +54,26 @@ let response = try await LanguageModelSession().respond {
 ## Topics
 
 ### Getting the representation
-- [var promptRepresentation: Prompt](promptrepresentable/promptrepresentation.md)
+- [var promptRepresentation: Prompt](./promptrepresentable/promptrepresentation.md)
   An instance that represents a prompt.
 
 ## Relationships
 
 ### Inherited By
-- [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
-- [Generable](generable.md)
+- [ConvertibleToGeneratedContent](./convertibletogeneratedcontent.md)
+- [Generable](./generable.md)
 ### Conforming Types
-- [Attachment](attachment.md)
-- [GeneratedContent](generatedcontent.md)
-- [ImageReference](imagereference.md)
-- [Prompt](prompt.md)
+- [Attachment](./attachment.md)
+- [GeneratedContent](./generatedcontent.md)
+- [ImageReference](./imagereference.md)
+- [Prompt](./prompt.md)
 
 ## See Also
 
-- [init(_:)](prompt/init(_:).md)
+### Creating a prompt
+- [init(_:)](./prompt/init%28_%29.md)
   Creates a prompt from the content of a builder closure.
-- [struct PromptBuilder](promptbuilder.md)
+- [struct PromptBuilder](./promptbuilder.md)
   A type that represents a prompt builder.
 
 

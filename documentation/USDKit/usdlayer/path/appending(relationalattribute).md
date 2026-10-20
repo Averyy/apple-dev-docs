@@ -1,7 +1,8 @@
 # appending(relationalAttribute:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new path with a relational attribute appended.
 

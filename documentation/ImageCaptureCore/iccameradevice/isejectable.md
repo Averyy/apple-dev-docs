@@ -1,7 +1,8 @@
 # isEjectable
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the device can be ‘soft’ removed or disconnected.
 
@@ -16,6 +17,10 @@ A Boolean value indicating whether the device can be ‘soft’ removed or disco
 
 ```swift
 var isEjectable: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isEjectable) BOOL ejectable;
 ```
 
 #### Discussion

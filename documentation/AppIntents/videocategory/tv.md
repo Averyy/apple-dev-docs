@@ -1,7 +1,8 @@
 # VideoCategory.tv
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app supports searching for structured tv content including shows, seasons, or episodes.
 
@@ -11,7 +12,7 @@ The app supports searching for structured tv content including shows, seasons, o
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of the extension by feeding them into the given hash function.
 
@@ -26,7 +27,8 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [static func == (AppExtensionIdentity, AppExtensionIdentity) -> Bool](appextensionidentity/==(_:_:).md)
+### Comparing app extensions
+- [static func == (AppExtensionIdentity, AppExtensionIdentity) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two identities are equal.
 
 

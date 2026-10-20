@@ -1,6 +1,7 @@
 # Capturing screenshots and videos from devices
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Record interactions and capture screenshots of your app for sharing, review, or App Store submission.
 
@@ -13,27 +14,28 @@ Use Device Hub to capture screenshots and record videos of your app in action to
 - Verify translations and interface adjustments for different languages.
 - Prepare and update your App Store page to show your app’s best features.
 
-> **Note**: Screenshots and videos you capture from a visionOS simulator might have a different size and ratio than those you capture from a physical device. To match App Store requirements, you can resize and crop them. For more information, see [`Screenshot Specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/screenshot-specifications) and [`App Preview Specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-preview-specifications).
+> **Note**: Screenshots and videos you capture from a visionOS simulator might have a different size and ratio than those you capture from a physical device. To match App Store requirements, you can resize and crop them. For more information, see [Screenshot Specifications](https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications) and [App Preview Specifications](https://developer.apple.com/help/app-store-connect/reference/app-preview-specifications).
 
-#### Capture Screenshots on Simulated and Physical Devices
+#### Capture screenshots on simulated and physical devices
 
 To take a screenshot, run your app on a simulated or physical device in Device Hub. Navigate to the place in your app where you want to capture a screenshot. Then click the Screenshot button below the device in the canvas. Device Hub captures the screenshot at the full resolution of the simulated or physical device, regardless of the display resolution of your Mac. Device Hub saves the screenshot to the Desktop folder on your Mac.
 
-![A screenshot of Device Hub showing a compact window of an iPhone simulator running the Landmarks sample code app with the Screenshot and Record button below the device.](/images/com.apple.Xcode/capture-device-screenshot-and-video@2x.png)
+![A screenshot of Device Hub showing a compact window of an iPhone simulator running the Landmarks sample code app with the Screenshot and Record button below the device.](https://developer.apple.com/tutorials/images/com.apple.Xcode/capture-device-screenshot-and-video@2x.png)
 
-#### Record Videos on Simulated Devices
+#### Record videos on simulated devices
 
 To record a video of your app, run your app on a simulated device in Device Hub and navigate to where you want to the video to start. Click the Record button below the device in the canvas or choose Controls > Record Screen. Then begin interacting with your app while recording. To stop the recording, click the Stop button below the device or choose Controls > Stop Recording. Device Hub saves the video file to your Desktop folder. The filename begins with `Screen Recording` followed by the device name and timestamp.
 
 ## See Also
 
-- [Configuring the environment of a simulated device](configuring-the-environment-of-a-simulated-device.md)
+### Device interactions
+- [Configuring the environment of a simulated device](./configuring-the-environment-of-a-simulated-device.md)
   Modify the settings of a simulated device.
-- [Interacting with your app in Device Hub](interacting-with-your-app-in-device-hub.md)
+- [Interacting with your app in Device Hub](./interacting-with-your-app-in-device-hub.md)
   Use Device Hub to control interactions with your apps on simulated and physical devices.
-- [Interacting with your visionOS app in Device Hub](interacting-with-your-visionos-app-in-device-hub.md)
+- [Interacting with your visionOS app in Device Hub](./interacting-with-your-visionos-app-in-device-hub.md)
   Use Device Hub to navigate spaces and control interactions with your visionOS apps running on simulated visionOS devices.
-- [Interacting with devices using the command line](interacting-with-devices-using-the-command-line.md)
+- [Interacting with devices using the command line](./interacting-with-devices-using-the-command-line.md)
   Manage simulated and physical devices from the command line.
 
 

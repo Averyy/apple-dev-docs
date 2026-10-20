@@ -1,13 +1,14 @@
 # NSToolbarUserInfoKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants for specifying toolbar-related information in notifications.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,28 +16,33 @@ Constants for specifying toolbar-related information in notifications.
 struct NSToolbarUserInfoKey
 ```
 
+```c
+typedef NSString * NSToolbarUserInfoKey;
+```
+
 ## Topics
 
 ### Getting the Item Key
-- [static let itemKey: NSToolbarUserInfoKey](nstoolbaruserinfokey/itemkey.md)
+- [static let itemKey: NSToolbarUserInfoKey](./nstoolbaruserinfokey/itemkey.md)
   A key that specifies the toolbar item associated with the notification.
 ### Creating a Key
-- [init(rawValue: String)](nstoolbaruserinfokey/init(rawvalue:).md)
+- [init(rawValue: String)](./nstoolbaruserinfokey/init%28rawvalue%29.md)
 ### Type Properties
-- [static let newIndexKey: NSToolbarUserInfoKey](nstoolbaruserinfokey/newindexkey.md)
+- [static let newIndexKey: NSToolbarUserInfoKey](./nstoolbaruserinfokey/newindexkey.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSFont.Width](nsfont/width.md)
+### Data Types
+- [NSFont.Width](./nsfont/width.md)
 
 
 ---

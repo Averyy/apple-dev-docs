@@ -1,7 +1,8 @@
 # source
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional source pin with an offset relative to the current entity
 

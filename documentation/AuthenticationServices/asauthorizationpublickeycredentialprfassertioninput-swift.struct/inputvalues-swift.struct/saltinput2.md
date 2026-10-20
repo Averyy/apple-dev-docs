@@ -1,7 +1,8 @@
 # saltInput2
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional second salt for the hashing function.
 

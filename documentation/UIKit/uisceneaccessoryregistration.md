@@ -1,7 +1,8 @@
 # UISceneAccessoryRegistration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type which represents the registration for a given scene accessory.
 
@@ -17,9 +18,13 @@ A type which represents the registration for a given scene accessory.
 class UISceneAccessoryRegistration
 ```
 
+```objc
+@interface UISceneAccessoryRegistration : NSObject
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
 
 #### Overview
 
@@ -28,29 +33,30 @@ Instances of this type allow for observing availability of a given scene accesso
 ## Topics
 
 ### Observing availability and controlling display
-- [var isAvailable: Bool](uisceneaccessoryregistration/isavailable.md)
+- [var isAvailable: Bool](./uisceneaccessoryregistration/isavailable.md)
   Whether the associated scene accessory is available for display by the system or not.
-- [var isEnabled: Bool](uisceneaccessoryregistration/isenabled.md)
+- [var isEnabled: Bool](./uisceneaccessoryregistration/isenabled.md)
   Whether the content defined by this scene accessory should be displayed or not.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+### Scene accessories
+- [Presenting content on a connected display](./presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
-- [class UISceneAccessory](uisceneaccessory.md)
+- [class UISceneAccessory](./uisceneaccessory.md)
   A type which can be used to register for a specific type of scene accessory presentation.
 
 

@@ -1,7 +1,8 @@
 # hasAmbiguousLayout
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -10,6 +11,10 @@
 
 ```swift
 var hasAmbiguousLayout: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL hasAmbiguousLayout;
 ```
 
 

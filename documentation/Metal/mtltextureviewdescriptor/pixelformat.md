@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var pixelFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat pixelFormat;
 ```
 
 #### Discussion

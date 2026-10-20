@@ -1,7 +1,8 @@
 # &+(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 The wrapping sum of two vectors.
 
@@ -19,6 +20,8 @@ The wrapping sum of two vectors.
 ```swift
 static func &+ (a: SIMD4<Scalar>, b: SIMD4<Scalar>) -> SIMD4<Scalar>
 ```
+
+Available when `Scalar` is `Int32`.
 
 
 ---

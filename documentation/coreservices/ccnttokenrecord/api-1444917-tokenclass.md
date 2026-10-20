@@ -1,9 +1,10 @@
 # tokenClass
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-The class ID of the container represented by the `token` parameter.See [`DescType`](desctype.md).
+The class ID of the container represented by the `token` parameter.See [`DescType`](../desctype.md).
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ The class ID of the container represented by the `token` parameter.See [`DescTyp
 
 ```swift
 var tokenClass: DescType
+```
+
+```c
+DescType tokenClass;
 ```
 
 

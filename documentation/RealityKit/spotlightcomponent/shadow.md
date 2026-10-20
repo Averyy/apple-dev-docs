@@ -1,7 +1,8 @@
 # SpotLightComponent.Shadow
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A spotlight component that adds shadows to entities that it illuminates.
 
@@ -22,47 +23,48 @@ struct Shadow
 ## Topics
 
 ### Creating a shadow
-- [init()](spotlightcomponent/shadow/init.md)
+- [init()](./shadow/init%28%29.md)
   Creates a new spot light shadow object.
-- [init(layers: RenderLayer.Set?)](spotlightcomponent/shadow/init(layers:).md)
+- [init(layers: RenderLayer.Set?)](./shadow/init%28layers%29.md)
   Creates a spot light shadow that accepts shadow casters from the specified layers.
-- [var layers: RenderLayer.Set?](spotlightcomponent/shadow/layers.md)
+- [var layers: RenderLayer.Set?](./shadow/layers.md)
   The layers of entities that cast shadows from this light.
 ### Configuring the shadow
-- [var depthBias: Float](spotlightcomponent/shadow/depthbias.md)
+- [var depthBias: Float](./shadow/depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
-- [var zNear: SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/znear.md)
+- [var zNear: SpotLightComponent.Shadow.ShadowClippingPlane](./shadow/znear.md)
   The near-plane of a shadow frustum.
-- [var zFar: SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/zfar.md)
+- [var zFar: SpotLightComponent.Shadow.ShadowClippingPlane](./shadow/zfar.md)
   The orthogonal plane of the shadow frustum that’s furthest from the spotlight.
-- [var cullModeOverride: SpotLightComponent.Shadow.ShadowMapCullMode?](spotlightcomponent/shadow/cullmodeoverride.md)
+- [var cullModeOverride: SpotLightComponent.Shadow.ShadowMapCullMode?](./shadow/cullmodeoverride.md)
   The light’s culling mode for shadow map rendering.
 ### Configuring shadow quality
-- [var quality: SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/quality.md)
+- [var quality: SpotLightComponent.Shadow.QualityMode](./shadow/quality.md)
   The shadow-filtering algorithm this light uses.
-- [SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/qualitymode.md)
+- [SpotLightComponent.Shadow.QualityMode](./shadow/qualitymode.md)
   Constants that select the shadow-filtering algorithm a spotlight uses.
-- [var lightSize: Float](spotlightcomponent/shadow/lightsize.md)
+- [var lightSize: Float](./shadow/lightsize.md)
   The radius of the spotlight’s emitting surface, in meters.
 ### Type Aliases
-- [SpotLightComponent.Shadow.ShadowMapCullMode](spotlightcomponent/shadow/shadowmapcullmode.md)
+- [SpotLightComponent.Shadow.ShadowMapCullMode](./shadow/shadowmapcullmode.md)
 ### Enumerations
-- [SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/shadowclippingplane.md)
+- [SpotLightComponent.Shadow.ShadowClippingPlane](./shadow/shadowclippingplane.md)
   An object that specifies the mode of a shadow clipping plane.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](../component.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [struct SpotLightComponent](spotlightcomponent.md)
+### Spotlights and their shadows
+- [struct SpotLightComponent](../spotlightcomponent.md)
   A component that defines a spotlight source.
-- [SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/shadowclippingplane.md)
+- [SpotLightComponent.Shadow.ShadowClippingPlane](./shadow/shadowclippingplane.md)
   An object that specifies the mode of a shadow clipping plane.
-- [SpotLightComponent.Shadow.ShadowMapCullMode](spotlightcomponent/shadow/shadowmapcullmode.md)
+- [SpotLightComponent.Shadow.ShadowMapCullMode](./shadow/shadowmapcullmode.md)
 
 
 ---

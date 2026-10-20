@@ -1,7 +1,8 @@
 # applySnapshot(_:animatingDifferences:completion:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
 
@@ -11,7 +12,15 @@ Updates the UI to reflect the state of the data in the specified snapshot, optio
 ## Declaration
 
 ```swift
+func applySnapshot(_ snapshot: NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func applySnapshot(_ snapshot: NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool) async
+```
+
+```objc
+- (void) applySnapshot:(NSDiffableDataSourceSnapshot<id,id> *) snapshot animatingDifferences:(BOOL) animatingDifferences completion:(void (^)()) completion;
 ```
 
 #### Discussion
@@ -24,11 +33,12 @@ func applySnapshot(_ snapshot: NSDiffableDataSourceSnapshotReference, animatingD
 
 ## See Also
 
-- [func snapshot() -> NSDiffableDataSourceSnapshotReference](nstableviewdiffabledatasourcereference/snapshot.md)
+### Updating Data
+- [func snapshot() -> NSDiffableDataSourceSnapshotReference](./snapshot%28%29.md)
   Returns a representation of the current state of the data in the table view.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](nstableviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](./applysnapshot%28_,animatingdifferences%29.md)
   Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes.
-- [var defaultRowAnimation: NSTableView.AnimationOptions](nstableviewdiffabledatasourcereference/defaultrowanimation.md)
+- [var defaultRowAnimation: NSTableView.AnimationOptions](./defaultrowanimation.md)
   The default animation the UI uses to show differences between rows.
 
 

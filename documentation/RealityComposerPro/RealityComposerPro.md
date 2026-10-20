@@ -8,17 +8,17 @@ Build, design, and orchestrate 3D content for your RealityKit apps.
 
 Reality Composer Pro 3 makes it easy to rapidly iterate, preview, and prepare 3D content for your visionOS apps, iOS apps, and more — right on your Mac. Build stunning scenes and animate characters with cinematic precision. And you can preview your changes live on Apple Vision Pro.
 
-![A screenshot of Reality Composer Pro.](/images/RealityComposerPro/Overview@2x.png)
+![A screenshot of Reality Composer Pro.](https://developer.apple.com/tutorials/images/RealityComposerPro/Overview@2x.png)
 
 Reality Composer Pro includes editors and workflows for designing materials with Shader Graph, building visual scripts with Script Graph, authoring GPU-driven simulations with Compute Graph, defining character behaviors with Animation Graphs, and editing skeletons.
 
-> **Note**: Download the latest version of Reality Composer Pro from the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=Reality%20Composer%20Pro).
+> **Note**: Download the latest version of Reality Composer Pro from the [Apple Developer website](https://developer.apple.com/download/all/?q=Reality%20Composer%20Pro).
 
-##### System Requirements
+##### System requirements
 
 - macOS Tahoe 26.5 or later
 
-##### Entities Components and Systems
+##### Entities, components, and systems
 
 Reality Composer Pro is a 3D content creation platform backed by an **Entity Component System (ECS)**. Reality Composer Pro is built around the ECS pattern, so a basic understanding of ECS provides helpful context.
 
@@ -30,9 +30,9 @@ The ECS model has three building blocks: entities, components, and systems.
 
 Systems change an entity’s behavior at runtime by adding, removing, or modifying components.
 
-> **Note**: To learn more about RealityKit components, see [`Understanding the modular architecture of RealityKit`](https://developer.apple.com/documentation/visionos/understanding-the-realitykit-modular-architecture).
+> **Note**: To learn more about RealityKit components, see [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md).
 
-##### Whats New in Reality Composer Pro
+##### What’s new in Reality Composer Pro
 
 This release of Reality Composer Pro is a complete 3D development platform. The previous version focused on authoring spatial content for Apple Vision Pro; this release adds new features and functionality, such as:
 
@@ -51,78 +51,78 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 ## Topics
 
 ### Essentials
-- [Linking an Xcode project](realitycomposerpro-essentials-linkingxcodeproject.md)
+- [Linking an Xcode project](./realitycomposerpro-essentials-linkingxcodeproject.md)
   Iterate on a scene and run it as an app without leaving the editor.
-- [Migrating older projects to Reality Composer Pro 3](realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
+- [Migrating older projects to Reality Composer Pro 3](./realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
   Bring existing Reality Composer Pro 2 projects into the Reality Composer Pro 3 workspace.
-- [Updating migrated assets to Reality Composer Pro 3](realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
+- [Updating migrated assets to Reality Composer Pro 3](./realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
   Fix common problems that appear after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
-- [Configuring the project workspace](realitycomposerpro-essentials-configuringprojectworkspace.md)
+- [Configuring the project workspace](./realitycomposerpro-essentials-configuringprojectworkspace.md)
   Open a project and arrange the workspace’s tabs and panes to fit your task.
-- [Navigating the Reality Composer Pro workspace](realitycomposerpro-essentials-workspaceoverview.md)
+- [Navigating the Reality Composer Pro workspace](./realitycomposerpro-essentials-workspaceoverview.md)
   Explore the panes and toolbars that make up the Reality Composer Pro editing environment.
-- [Adding entities and assets to a scene](realitycomposerpro-essentials-addingentitiestoscene.md)
+- [Adding entities and assets to a scene](./realitycomposerpro-essentials-addingentitiestoscene.md)
   Import assets to design Reality Composer Pro scenes for your app.
-- [Working with the Graph Editor](realitycomposerpro-essentials-grapheditoroverview.md)
+- [Working with the Graph Editor](./realitycomposerpro-essentials-grapheditoroverview.md)
   Use Reality Composer Pro’s node-based editor to build materials, animations, audio effects, and scripts without writing code.
-- [Reusing assets with prototypes and instances](realitycomposerpro-essentials-understandingprototypes.md)
+- [Reusing assets with prototypes and instances](./realitycomposerpro-essentials-understandingprototypes.md)
   Edit a prototype once and propagate the change to every placement of that asset in a scene.
-- [Previewing content and running simulations](realitycomposerpro-essentials-previewcontentrunsimulations.md)
+- [Previewing content and running simulations](./realitycomposerpro-essentials-previewcontentrunsimulations.md)
   Test and iterate on your scenes directly in Reality Composer Pro, with or without a linked Xcode project.
 ### Materials
-- [Building materials in Reality Composer Pro](building-materials-in-reality-composer-pro.md)
+- [Building materials in Reality Composer Pro](./building-materials-in-reality-composer-pro.md)
   Apply surface properties to 3D entities to control how they look in your scene.
-- [Applying materials to an asset](applying-materials-to-an-asset.md)
+- [Applying materials to an asset](./applying-materials-to-an-asset.md)
   Assign and configure surface materials on 3D model assets in Reality Composer Pro.
-- [Designing materials with Shader Graph](designing-materials-with-shader-graph.md)
+- [Designing materials with Shader Graph](./designing-materials-with-shader-graph.md)
   Create realistic materials with Reality Composer Pro’s Shader Graph.
-- [Creating a procedural Shader Graph material](creating-a-procedural-shader-graph-material.md)
+- [Creating a procedural Shader Graph material](./creating-a-procedural-shader-graph-material.md)
   Learn how to build an organic, pulsing, color-shifting material in the Reality Composer Pro 3 Shader Graph.
 ### Particle Emitter
-- [Creating particle systems in Reality Composer Pro](creating-particle-systems-in-reality-composer-pro.md)
+- [Creating particle systems in Reality Composer Pro](./creating-particle-systems-in-reality-composer-pro.md)
   Add Particle Emitters and Particles to scenes to create nearly any type of visual effect.
 ### Script Graph
-- [Getting started with Script Graphs](getting-started-with-script-graphs.md)
+- [Getting started with Script Graphs](./getting-started-with-script-graphs.md)
   Build interactive, code-free 3D experiences using a visual, node-based editor in Reality Composer Pro.
-- [Building custom interactive behavior with Script Graph](building-custom-interactive-behavior-with-script-graph.md)
+- [Building custom interactive behavior with Script Graph](./building-custom-interactive-behavior-with-script-graph.md)
   Build event-driven behavior with Script Graph with nodes, events, and components.
-- [Registering a Reality Composer Pro custom component](registering-a-reality-composer-pro-custom-component.md)
+- [Registering a Reality Composer Pro custom component](./registering-a-reality-composer-pro-custom-component.md)
   Expose a custom component to the Reality Composer Pro editor and RealityKit Scripting.
 ### Compute Graph
-- [Introducing Compute Graph](introducing-compute-graph.md)
+- [Introducing Compute Graph](./introducing-compute-graph.md)
   Use Reality Composer Pro Compute Graph to build custom particle simulations with a node-based graph.
-- [Building a working Compute Graph example](building-a-working-compute-graph-example.md)
+- [Building a working Compute Graph example](./building-a-working-compute-graph-example.md)
   Combine emission, initialization, simulation, and output nodes into a swirling ring of particles colored from a gradient texture.
 ### Animation
-- [Creating animation sequences](creating-animation-sequences.md)
+- [Creating animation sequences](./creating-animation-sequences.md)
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
-- [Creating animation sequences for auto-play](creating-animation-sequences-for-autoplay.md)
+- [Creating animation sequences for auto-play](./creating-animation-sequences-for-autoplay.md)
   Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
-- [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
+- [Building multi-track animation sequences](./building-multi-track-animation-sequences.md)
   Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
-- [Working with the Animation Graph](working-with-the-animation-graph.md)
+- [Working with the Animation Graph](./working-with-the-animation-graph.md)
   Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
-- [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)
+- [Building an advanced Animation Graph](./building-an-advanced-animation-graph.md)
   Drive a character’s locomotion state machine from a Script Graph at runtime.
-- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
+- [Building a navmesh in Reality Composer Pro](./building-a-navmesh-in-reality-composer-pro.md)
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
-- [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
+- [Defining a behavior with Behavior Trees](./defining-a-behavior-with-behavior-trees.md)
   Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 ### Lighting
-- [Lighting a scene with lights and light layers](lighting-a-scene-with-lights-and-light-layers.md)
+- [Lighting a scene with lights and light layers](./lighting-a-scene-with-lights-and-light-layers.md)
   Configure lights and light layers to control a scene’s illumination.
-- [Configuring how materials respond to light](configuring-how-materials-respond-to-light.md)
+- [Configuring how materials respond to light](./configuring-how-materials-respond-to-light.md)
   Match how a material reacts to the lights in a scene.
 ### Assistant
-- [Working with the Reality Composer Pro Assistant](working-with-the-reality-composer-pro-assistant.md)
+- [Working with the Reality Composer Pro Assistant](./working-with-the-reality-composer-pro-assistant.md)
   Connect an AI model to Reality Composer Pro to generate assets and get contextual help building scenes.
 ### Audio
-- [Adding audio components in Reality Composer Pro](introduction-to-reality-composer-pro-audio.md)
+- [Adding audio components in Reality Composer Pro](./introduction-to-reality-composer-pro-audio.md)
   Configure audio components in a Reality Composer Pro scene.
-- [Optimizing audio playback in Reality Composer Pro](optimizing-audio-playback.md)
+- [Optimizing audio playback in Reality Composer Pro](./optimizing-audio-playback.md)
   Balance audio quality against CPU, memory, and power cost when configuring playback.
 ### Release notes
-- [Reality Composer Pro Release Notes](reality-composer-pro-release-notes.md)
+- [Reality Composer Pro Release Notes](./reality-composer-pro-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
 
 

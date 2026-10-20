@@ -1,7 +1,8 @@
 # isCalculating
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a request is in process.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates whether a request is in process.
 var isCalculating: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCalculating) BOOL calculating;
+```
+
 ## See Also
 
-- [func cancel()](mkdirections/cancel.md)
+### Managing the request
+- [func cancel()](./cancel%28%29.md)
   Cancels a pending request.
 
 

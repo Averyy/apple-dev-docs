@@ -1,7 +1,8 @@
 # NSCollectionLayoutSupplementaryItem
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to add an extra visual decoration to an item in a collection view.
 
@@ -12,6 +13,10 @@ An object used to add an extra visual decoration to an item in a collection view
 
 ```swift
 class NSCollectionLayoutSupplementaryItem
+```
+
+```objc
+@interface NSCollectionLayoutSupplementaryItem : NSCollectionLayoutItem
 ```
 
 #### Overview
@@ -86,44 +91,45 @@ NSCollectionLayoutItem *item = [NSCollectionLayoutItem itemWithLayoutSize:itemSi
 ## Topics
 
 ### Creating a supplementary item
-- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, containerAnchor: NSCollectionLayoutAnchor)](nscollectionlayoutsupplementaryitem/init(layoutsize:elementkind:containeranchor:).md)
+- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, containerAnchor: NSCollectionLayoutAnchor)](./nscollectionlayoutsupplementaryitem/init%28layoutsize,elementkind,containeranchor%29.md)
   Creates a supplementary item of the specified size and element kind, with an anchor relative to a container.
-- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, containerAnchor: NSCollectionLayoutAnchor, itemAnchor: NSCollectionLayoutAnchor)](nscollectionlayoutsupplementaryitem/init(layoutsize:elementkind:containeranchor:itemanchor:).md)
+- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, containerAnchor: NSCollectionLayoutAnchor, itemAnchor: NSCollectionLayoutAnchor)](./nscollectionlayoutsupplementaryitem/init%28layoutsize,elementkind,containeranchor,itemanchor%29.md)
   Creates a supplementary item of the specified size and element kind, an anchor relative to a container, and an anchor relative to an item.
 ### Getting the anchors
-- [var itemAnchor: NSCollectionLayoutAnchor?](nscollectionlayoutsupplementaryitem/itemanchor.md)
+- [var itemAnchor: NSCollectionLayoutAnchor?](./nscollectionlayoutsupplementaryitem/itemanchor.md)
   The anchor between the supplementary item and the item it’s attached to.
-- [var containerAnchor: NSCollectionLayoutAnchor](nscollectionlayoutsupplementaryitem/containeranchor.md)
+- [var containerAnchor: NSCollectionLayoutAnchor](./nscollectionlayoutsupplementaryitem/containeranchor.md)
   The anchor between the supplementary item and the container it’s attached to.
 ### Getting the element kind
-- [var elementKind: String](nscollectionlayoutsupplementaryitem/elementkind.md)
+- [var elementKind: String](./nscollectionlayoutsupplementaryitem/elementkind.md)
   A string that identifies the type of supplementary item.
 ### Specifying stacking order
-- [var zIndex: Int](nscollectionlayoutsupplementaryitem/zindex.md)
+- [var zIndex: Int](./nscollectionlayoutsupplementaryitem/zindex.md)
   The vertical stacking order of the supplementary item in relation to other items in the section.
 
 ## Relationships
 
 ### Inherits From
-- [NSCollectionLayoutItem](nscollectionlayoutitem.md)
+- [NSCollectionLayoutItem](./nscollectionlayoutitem.md)
 ### Inherited By
-- [NSCollectionLayoutBoundarySupplementaryItem](nscollectionlayoutboundarysupplementaryitem.md)
+- [NSCollectionLayoutBoundarySupplementaryItem](./nscollectionlayoutboundarysupplementaryitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSCollectionLayoutBoundarySupplementaryItem](nscollectionlayoutboundarysupplementaryitem.md)
+### Appearance
+- [class NSCollectionLayoutBoundarySupplementaryItem](./nscollectionlayoutboundarysupplementaryitem.md)
   An object used to add headers or footers to a collection view.
-- [class NSCollectionLayoutDecorationItem](nscollectionlayoutdecorationitem.md)
+- [class NSCollectionLayoutDecorationItem](./nscollectionlayoutdecorationitem.md)
   An object used to add a background to a section of a collection view.
-- [class NSCollectionLayoutAnchor](nscollectionlayoutanchor.md)
+- [class NSCollectionLayoutAnchor](./nscollectionlayoutanchor.md)
   An object that defines how to attach a supplementary item to an item in a collection view.
 
 

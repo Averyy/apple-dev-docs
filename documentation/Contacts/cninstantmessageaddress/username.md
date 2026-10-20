@@ -1,7 +1,8 @@
 # username
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user name for instant message service address.
 
@@ -19,9 +20,22 @@ The user name for instant message service address.
 var username: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * username;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * username;
+```
+
 ## See Also
 
-- [var service: String](cninstantmessageaddress/service.md)
+### Getting the Address Information
+- [var service: String](./service.md)
   The name of the instant message address service.
 
 

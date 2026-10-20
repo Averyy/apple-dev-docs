@@ -1,7 +1,8 @@
 # previousOriginalTransactionId
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The original transaction identifier of a subscription before migration.
 
@@ -10,7 +11,7 @@ The original transaction identifier of a subscription before migration.
 
 ## Declaration
 
-```swift
+```
 string previousOriginalTransactionId
 ```
 

@@ -1,7 +1,8 @@
 # first
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first value in the pair.
 
@@ -19,9 +20,14 @@ The first value in the pair.
 var first: Double { get set }
 ```
 
+```objc
+@property (nonatomic, assign) double first;
+```
+
 ## See Also
 
-- [var second: Double](phasenumericpair/second.md)
+### Defining the Values
+- [var second: Double](./second.md)
   The second value in the pair.
 
 

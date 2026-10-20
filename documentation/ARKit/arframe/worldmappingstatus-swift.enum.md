@@ -1,7 +1,8 @@
 # ARFrame.WorldMappingStatus
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value describing the world mapping status for the area visible in a given frame.
 
@@ -15,33 +16,38 @@ A value describing the world mapping status for the area visible in a given fram
 enum WorldMappingStatus
 ```
 
+```c
+enum ARWorldMappingStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [ARFrame.WorldMappingStatus.extending](arframe/worldmappingstatus-swift.enum/extending.md)
+- [ARFrame.WorldMappingStatus.extending](./worldmappingstatus-swift.enum/extending.md)
   World tracking has mapped recently visited areas, but is still mapping around the current device position.
-- [ARFrame.WorldMappingStatus.limited](arframe/worldmappingstatus-swift.enum/limited.md)
+- [ARFrame.WorldMappingStatus.limited](./worldmappingstatus-swift.enum/limited.md)
   World tracking has not yet sufficiently mapped the area around the current device position.
-- [ARFrame.WorldMappingStatus.mapped](arframe/worldmappingstatus-swift.enum/mapped.md)
+- [ARFrame.WorldMappingStatus.mapped](./worldmappingstatus-swift.enum/mapped.md)
   World tracking has adequately mapped the visible area.
-- [ARFrame.WorldMappingStatus.notAvailable](arframe/worldmappingstatus-swift.enum/notavailable.md)
+- [ARFrame.WorldMappingStatus.notAvailable](./worldmappingstatus-swift.enum/notavailable.md)
   No world map is available.
 ### Initializers
-- [init?(rawValue: Int)](arframe/worldmappingstatus-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./worldmappingstatus-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var worldMappingStatus: ARFrame.WorldMappingStatus](arframe/worldmappingstatus-swift.property.md)
+### Checking world-mapping status
+- [var worldMappingStatus: ARFrame.WorldMappingStatus](./worldmappingstatus-swift.property.md)
   The feasibility of generating or relocalizing a world map for this frame.
 
 

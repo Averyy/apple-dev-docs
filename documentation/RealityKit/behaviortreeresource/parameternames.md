@@ -1,7 +1,8 @@
 # parameterNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the names of all parameters in the behavior tree resource.
 

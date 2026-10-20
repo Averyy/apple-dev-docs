@@ -1,68 +1,70 @@
 # Nikon Camera Dictionary Keys
 
-**Framework**: Image I/O
+**Framework**: Image I/O  
+**Role**: API Collection
 
 Metadata keys for an image from a Nikon camera.
 
 ## Topics
 
 ### Dictionary
-- [let kCGImagePropertyMakerNikonDictionary: CFString](kcgimagepropertymakernikondictionary.md)
+- [let kCGImagePropertyMakerNikonDictionary: CFString](./kcgimagepropertymakernikondictionary.md)
   A dictionary of key-value pairs for an image from a Nikon camera.
 ### Program Settings
-- [let kCGImagePropertyMakerNikonISOSetting: CFString](kcgimagepropertymakernikonisosetting.md)
+- [let kCGImagePropertyMakerNikonISOSetting: CFString](./kcgimagepropertymakernikonisosetting.md)
   The ISO setting.
-- [let kCGImagePropertyMakerNikonISOSelection: CFString](kcgimagepropertymakernikonisoselection.md)
+- [let kCGImagePropertyMakerNikonISOSelection: CFString](./kcgimagepropertymakernikonisoselection.md)
   The ISO selection.
-- [let kCGImagePropertyMakerNikonColorMode: CFString](kcgimagepropertymakernikoncolormode.md)
+- [let kCGImagePropertyMakerNikonColorMode: CFString](./kcgimagepropertymakernikoncolormode.md)
   The color mode.
-- [let kCGImagePropertyMakerNikonQuality: CFString](kcgimagepropertymakernikonquality.md)
+- [let kCGImagePropertyMakerNikonQuality: CFString](./kcgimagepropertymakernikonquality.md)
   The quality setting.
-- [let kCGImagePropertyMakerNikonWhiteBalanceMode: CFString](kcgimagepropertymakernikonwhitebalancemode.md)
+- [let kCGImagePropertyMakerNikonWhiteBalanceMode: CFString](./kcgimagepropertymakernikonwhitebalancemode.md)
   The white balance mode.
-- [let kCGImagePropertyMakerNikonSharpenMode: CFString](kcgimagepropertymakernikonsharpenmode.md)
+- [let kCGImagePropertyMakerNikonSharpenMode: CFString](./kcgimagepropertymakernikonsharpenmode.md)
   The sharpening mode.
-- [let kCGImagePropertyMakerNikonFocusMode: CFString](kcgimagepropertymakernikonfocusmode.md)
+- [let kCGImagePropertyMakerNikonFocusMode: CFString](./kcgimagepropertymakernikonfocusmode.md)
   The focus mode.
-- [let kCGImagePropertyMakerNikonFlashSetting: CFString](kcgimagepropertymakernikonflashsetting.md)
+- [let kCGImagePropertyMakerNikonFlashSetting: CFString](./kcgimagepropertymakernikonflashsetting.md)
   The flash setting.
-- [let kCGImagePropertyMakerNikonImageAdjustment: CFString](kcgimagepropertymakernikonimageadjustment.md)
+- [let kCGImagePropertyMakerNikonImageAdjustment: CFString](./kcgimagepropertymakernikonimageadjustment.md)
   The image adjustment setting.
-- [let kCGImagePropertyMakerNikonShootingMode: CFString](kcgimagepropertymakernikonshootingmode.md)
+- [let kCGImagePropertyMakerNikonShootingMode: CFString](./kcgimagepropertymakernikonshootingmode.md)
   The shooting mode.
-- [let kCGImagePropertyMakerNikonDigitalZoom: CFString](kcgimagepropertymakernikondigitalzoom.md)
+- [let kCGImagePropertyMakerNikonDigitalZoom: CFString](./kcgimagepropertymakernikondigitalzoom.md)
   The digital zoom setting.
-- [let kCGImagePropertyMakerNikonShutterCount: CFString](kcgimagepropertymakernikonshuttercount.md)
+- [let kCGImagePropertyMakerNikonShutterCount: CFString](./kcgimagepropertymakernikonshuttercount.md)
   The number of times the shutter has been actuated.
-- [let kCGImagePropertyMakerNikonFlashExposureComp: CFString](kcgimagepropertymakernikonflashexposurecomp.md)
+- [let kCGImagePropertyMakerNikonFlashExposureComp: CFString](./kcgimagepropertymakernikonflashexposurecomp.md)
   The flash exposure compensation.
-- [let kCGImagePropertyMakerNikonFocusDistance: CFString](kcgimagepropertymakernikonfocusdistance.md)
+- [let kCGImagePropertyMakerNikonFocusDistance: CFString](./kcgimagepropertymakernikonfocusdistance.md)
   The focus distance.
 ### Camera Details
-- [let kCGImagePropertyMakerNikonLensAdapter: CFString](kcgimagepropertymakernikonlensadapter.md)
+- [let kCGImagePropertyMakerNikonLensAdapter: CFString](./kcgimagepropertymakernikonlensadapter.md)
   The lens adapter.
-- [let kCGImagePropertyMakerNikonLensType: CFString](kcgimagepropertymakernikonlenstype.md)
+- [let kCGImagePropertyMakerNikonLensType: CFString](./kcgimagepropertymakernikonlenstype.md)
   The lens type.
-- [let kCGImagePropertyMakerNikonLensInfo: CFString](kcgimagepropertymakernikonlensinfo.md)
+- [let kCGImagePropertyMakerNikonLensInfo: CFString](./kcgimagepropertymakernikonlensinfo.md)
   Lens information.
-- [let kCGImagePropertyMakerNikonCameraSerialNumber: CFString](kcgimagepropertymakernikoncameraserialnumber.md)
+- [let kCGImagePropertyMakerNikonCameraSerialNumber: CFString](./kcgimagepropertymakernikoncameraserialnumber.md)
   The camera serial number.
 
 ## See Also
 
-- [Canon Camera Dictionary Keys](canon-camera-dictionary-keys.md)
+### Manufacturer-Specific Properties
+- [Canon Camera Dictionary Keys](./canon-camera-dictionary-keys.md)
   Metadata keys for an image from a Canon camera.
-- [let kCGImagePropertyMakerAppleDictionary: CFString](kcgimagepropertymakerappledictionary.md)
+- [let kCGImagePropertyMakerAppleDictionary: CFString](./kcgimagepropertymakerappledictionary.md)
   A dictionary of key-value pairs for an image from an Apple camera.
-- [let kCGImagePropertyMakerMinoltaDictionary: CFString](kcgimagepropertymakerminoltadictionary.md)
+- [let kCGImagePropertyMakerMinoltaDictionary: CFString](./kcgimagepropertymakerminoltadictionary.md)
   A dictionary of key-value pairs for an image from a Minolta camera.
-- [let kCGImagePropertyMakerFujiDictionary: CFString](kcgimagepropertymakerfujidictionary.md)
+- [let kCGImagePropertyMakerFujiDictionary: CFString](./kcgimagepropertymakerfujidictionary.md)
   A dictionary of key-value pairs for an image from a Fuji camera.
-- [let kCGImagePropertyMakerOlympusDictionary: CFString](kcgimagepropertymakerolympusdictionary.md)
+- [let kCGImagePropertyMakerOlympusDictionary: CFString](./kcgimagepropertymakerolympusdictionary.md)
   A dictionary of key-value pairs for an image from a Olympus camera.
-- [let kCGImagePropertyMakerPentaxDictionary: CFString](kcgimagepropertymakerpentaxdictionary.md)
+- [let kCGImagePropertyMakerPentaxDictionary: CFString](./kcgimagepropertymakerpentaxdictionary.md)
   A dictionary of key-value pairs for an image from a Pentax camera.
-- [let kCGImagePropertyRawDictionary: CFString](kcgimagepropertyrawdictionary.md)
+- [let kCGImagePropertyRawDictionary: CFString](./kcgimagepropertyrawdictionary.md)
   A dictionary of key-value pairs for an image that contains minimally processed, or raw, data.
 
 

@@ -1,7 +1,8 @@
 # VTRAWProcessingSession.Parameter.list(_:)
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 15.0+
@@ -14,10 +15,11 @@ case list(VTRAWProcessingSession.Parameter.ListParameter)
 
 ## See Also
 
-- [case bool(VTRAWProcessingSession.Parameter.BooleanParameter)](vtrawprocessingsession/parameter/bool(_:).md)
-- [case float(VTRAWProcessingSession.Parameter.FloatParameter)](vtrawprocessingsession/parameter/float(_:).md)
-- [case int(VTRAWProcessingSession.Parameter.IntegerParameter)](vtrawprocessingsession/parameter/int(_:).md)
-- [case subgroup(details: VTRAWProcessingSession.Parameter.Details, elements: [VTRAWProcessingSession.Parameter])](vtrawprocessingsession/parameter/subgroup(details:elements:).md)
+### Enumeration Cases
+- [case bool(VTRAWProcessingSession.Parameter.BooleanParameter)](./bool%28_%29.md)
+- [case float(VTRAWProcessingSession.Parameter.FloatParameter)](./float%28_%29.md)
+- [case int(VTRAWProcessingSession.Parameter.IntegerParameter)](./int%28_%29.md)
+- [case subgroup(details: VTRAWProcessingSession.Parameter.Details, elements: [VTRAWProcessingSession.Parameter])](./subgroup%28details,elements%29.md)
 
 
 ---

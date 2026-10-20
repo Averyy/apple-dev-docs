@@ -1,17 +1,22 @@
 # publishedServiceRecord(with:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds a service to the local SDP server.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func publishedServiceRecord(with serviceDict: [AnyHashable : Any]!) -> Self!
+```
+
+```objc
++ (instancetype) publishedServiceRecordWithDictionary:(NSDictionary *) serviceDict;
 ```
 
 #### Return Value

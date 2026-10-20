@@ -1,7 +1,8 @@
 # HIDDeviceClient.Notification
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Notifications for a HID device.
 
@@ -16,31 +17,32 @@ enum Notification
 
 #### Overview
 
-You can receive these notifications using [`monitorNotifications(reportIDsToMonitor:elementsToMonitor:)`](hiddeviceclient/monitornotifications(reportidstomonitor:elementstomonitor:).md).
+You can receive these notifications using [`monitorNotifications(reportIDsToMonitor:elementsToMonitor:)`](./monitornotifications%28reportidstomonitor,elementstomonitor%29.md).
 
 ## Topics
 
 ### Enumeration Cases
-- [HIDDeviceClient.Notification.deviceRemoved](hiddeviceclient/notification/deviceremoved.md)
+- [HIDDeviceClient.Notification.deviceRemoved](./notification/deviceremoved.md)
   A notification that the device is no longer connected to the system.
-- [HIDDeviceClient.Notification.deviceSeized](hiddeviceclient/notification/deviceseized.md)
+- [HIDDeviceClient.Notification.deviceSeized](./notification/deviceseized.md)
   A notification that the device was seized by another client.
-- [HIDDeviceClient.Notification.deviceUnseized](hiddeviceclient/notification/deviceunseized.md)
+- [HIDDeviceClient.Notification.deviceUnseized](./notification/deviceunseized.md)
   A notification that the device is no longer seized.
-- [HIDDeviceClient.Notification.elementUpdates(values:)](hiddeviceclient/notification/elementupdates(values:).md)
+- [HIDDeviceClient.Notification.elementUpdates(values:)](./notification/elementupdates%28values%29.md)
   A notification that elements of the device were updated.
-- [case inputReport(id: HIDReportID?, data: Data, timestamp: SuspendingClock.Instant)](hiddeviceclient/notification/inputreport(id:data:timestamp:).md)
+- [case inputReport(id: HIDReportID?, data: Data, timestamp: SuspendingClock.Instant)](./notification/inputreport%28id,data,timestamp%29.md)
   A notification that an input report was received from the device.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func monitorNotifications(reportIDsToMonitor: [ClosedRange<HIDReportID>], elementsToMonitor: [HIDElement]) -> AsyncThrowingStream<HIDDeviceClient.Notification, any Error>](hiddeviceclient/monitornotifications(reportidstomonitor:elementstomonitor:).md)
+### Monitor device notifications
+- [func monitorNotifications(reportIDsToMonitor: [ClosedRange<HIDReportID>], elementsToMonitor: [HIDElement]) -> AsyncThrowingStream<HIDDeviceClient.Notification, any Error>](./monitornotifications%28reportidstomonitor,elementstomonitor%29.md)
   Creates an asynchronous that receives notifications about the associated device.
 
 

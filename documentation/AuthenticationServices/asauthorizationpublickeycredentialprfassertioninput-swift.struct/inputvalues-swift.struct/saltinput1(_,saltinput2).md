@@ -1,7 +1,8 @@
 # saltInput1(_:saltInput2:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The inputs for generating the PRF output secrets.
 

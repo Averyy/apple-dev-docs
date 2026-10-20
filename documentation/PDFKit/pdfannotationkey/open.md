@@ -1,7 +1,8 @@
 # open
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that specifies whether the pop-up is in an opened state, showing its text content, or in a closed state and showing an icon.
 
@@ -19,9 +20,14 @@ A Boolean value that specifies whether the pop-up is in an opened state, showing
 static let open: PDFAnnotationKey
 ```
 
+```c
+extern PDFAnnotationKey PDFAnnotationKeyOpen;
+```
+
 ## See Also
 
-- [static let popup: PDFAnnotationKey](pdfannotationkey/popup.md)
+### Configuring Pop-Up Annotations
+- [static let popup: PDFAnnotationKey](./popup.md)
   A dictionary or annotation object that specifies the annotation to pop up for text entry or editing.
 
 

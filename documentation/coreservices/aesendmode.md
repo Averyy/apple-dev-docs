@@ -1,7 +1,8 @@
 # AESendMode
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Specify send preferences to the `AESend` function.
 
@@ -13,6 +14,10 @@ Specify send preferences to the `AESend` function.
 
 ```swift
 typealias AESendMode = Int32
+```
+
+```c
+typedef SInt32 AESendMode;
 ```
 
 #### Discussion
@@ -41,29 +46,29 @@ Specify the `kAEDontRecord` flag if your application is sending an Apple event t
 
 Specify the `kAEDontExecute` flag if your application is sending an Apple event to itself for recording purposes only—that is, if you want the Apple Event Manager to send a copy of the event to the recording process but you do not want your application actually to receive the event.
 
-See also [`Apple Event Manager`](https://developer.apple.com/documentation/applicationservices/apple_event_manager).
+See also [Apple Event Manager](../applicationservices/apple_event_manager.md).
 
-##### 1770279
+##### Version-Notes
 
 The `kAEDontReconnect` and `kAEWantReceipt` constants are deprecated and unsupported in macOS.
 
 ## Topics
 
 ### Constants
-- [var kAENoReply: Int](kaenoreply.md)
+- [var kAENoReply: Int](./kaenoreply.md)
   The reply preference—your application does not want a reply Apple event. If you set the bit specified by this constant, the server processes the Apple event as soon as it has the opportunity.
-- [var kAEQueueReply: Int](kaequeuereply.md)
+- [var kAEQueueReply: Int](./kaequeuereply.md)
   The reply preference—your application wants a reply Apple event. If you set the bit specified by this constant, the reply appears in your event queue as soon as the server has the opportunity to process and respond to your Apple event.
-- [var kAEWaitReply: Int](kaewaitreply.md)
-- [var kAEDontReconnect: Int](kaedontreconnect.md)
-- [var kAEWantReceipt: Int](kaewantreceipt.md)
-- [var kAENeverInteract: Int](kaeneverinteract.md)
-- [var kAECanInteract: Int](kaecaninteract.md)
-- [var kAEAlwaysInteract: Int](kaealwaysinteract.md)
-- [var kAECanSwitchLayer: Int](kaecanswitchlayer.md)
-- [var kAEDontRecord: Int](kaedontrecord.md)
-- [var kAEDontExecute: Int](kaedontexecute.md)
-- [var kAEProcessNonReplyEvents: Int](kaeprocessnonreplyevents.md)
+- [var kAEWaitReply: Int](./kaewaitreply.md)
+- [var kAEDontReconnect: Int](./kaedontreconnect.md)
+- [var kAEWantReceipt: Int](./kaewantreceipt.md)
+- [var kAENeverInteract: Int](./kaeneverinteract.md)
+- [var kAECanInteract: Int](./kaecaninteract.md)
+- [var kAEAlwaysInteract: Int](./kaealwaysinteract.md)
+- [var kAECanSwitchLayer: Int](./kaecanswitchlayer.md)
+- [var kAEDontRecord: Int](./kaedontrecord.md)
+- [var kAEDontExecute: Int](./kaedontexecute.md)
+- [var kAEProcessNonReplyEvents: Int](./kaeprocessnonreplyevents.md)
   Allow processing of non-reply Apple events while awaiting a synchronous Apple event reply (you specified `kAEWaitReply` for the reply preference).
 
 

@@ -1,7 +1,8 @@
 # groups
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of named groups that contain sounds the app operates on collectively.
 
@@ -19,11 +20,16 @@ A list of named groups that contain sounds the app operates on collectively.
 var groups: [String : PHASEGroup] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,PHASEGroup *> * groups;
+```
+
 ## See Also
 
-- [var activeGroupPreset: PHASEGroupPreset?](phaseengine/activegrouppreset.md)
+### Managing Groups of Sounds
+- [var activeGroupPreset: PHASEGroupPreset?](./activegrouppreset.md)
   The settings that define playback for a group of sounds.
-- [var duckers: [PHASEDucker]](phaseengine/duckers.md)
+- [var duckers: [PHASEDucker]](./duckers.md)
   An array of objects that reduce the volume of simultaneously playing sounds.
 
 

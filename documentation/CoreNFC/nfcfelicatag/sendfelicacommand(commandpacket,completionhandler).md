@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends the FeliCa command packet data to the tag.
@@ -14,7 +15,15 @@ Sends the FeliCa command packet data to the tag.
 ## Declaration
 
 ```swift
+func sendFeliCaCommand(commandPacket: Data, completionHandler: @escaping @Sendable (Data, (any Error)?) -> Void)
+```
+
+```swift
 func sendFeliCaCommand(commandPacket: Data) async throws -> Data
+```
+
+```objc
+- (void) sendFeliCaCommandPacket:(NSData *) commandPacket completionHandler:(void (^)(NSData *responsePacket, NSError *error)) completionHandler;
 ```
 
 

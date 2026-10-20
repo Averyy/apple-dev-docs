@@ -1,7 +1,8 @@
 # JSONEncoder.OutputFormatting
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The output formatting options that determine the readability, size, and element order of an encoded JSON object.
 
@@ -23,40 +24,41 @@ struct OutputFormatting
 ## Topics
 
 ### Formatting Output
-- [static let prettyPrinted: JSONEncoder.OutputFormatting](jsonencoder/outputformatting-swift.struct/prettyprinted.md)
+- [static let prettyPrinted: JSONEncoder.OutputFormatting](./outputformatting-swift.struct/prettyprinted.md)
   The output formatting option that uses ample white space and indentation to make output easy to read.
-- [static let sortedKeys: JSONEncoder.OutputFormatting](jsonencoder/outputformatting-swift.struct/sortedkeys.md)
+- [static let sortedKeys: JSONEncoder.OutputFormatting](./outputformatting-swift.struct/sortedkeys.md)
   The output formatting option that sorts keys in lexicographic order.
-- [static let withoutEscapingSlashes: JSONEncoder.OutputFormatting](jsonencoder/outputformatting-swift.struct/withoutescapingslashes.md)
+- [static let withoutEscapingSlashes: JSONEncoder.OutputFormatting](./outputformatting-swift.struct/withoutescapingslashes.md)
   The output formatting option specifies that the output doesn’t prefix slash characters with escape characters.
 ### Creating Options
-- [init(rawValue: UInt)](jsonencoder/outputformatting-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./outputformatting-swift.struct/init%28rawvalue%29.md)
   Creates an OutputFormatting value with the given raw value.
-- [let rawValue: UInt](jsonencoder/outputformatting-swift.struct/rawvalue.md)
+- [let rawValue: UInt](./outputformatting-swift.struct/rawvalue.md)
   The format’s default value.
-- [init()](jsonencoder/init.md)
+- [init()](./init%28%29.md)
   Creates a new, reusable JSON encoder with the default formatting settings and encoding strategies.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var outputFormatting: JSONEncoder.OutputFormatting](jsonencoder/outputformatting-swift.property.md)
+### Customizing Encoding
+- [var outputFormatting: JSONEncoder.OutputFormatting](./outputformatting-swift.property.md)
   A value that determines the readability, size, and element order of the encoded JSON object.
-- [var keyEncodingStrategy: JSONEncoder.KeyEncodingStrategy](jsonencoder/keyencodingstrategy-swift.property.md)
+- [var keyEncodingStrategy: JSONEncoder.KeyEncodingStrategy](./keyencodingstrategy-swift.property.md)
   A value that determines how to encode a  type’s coding keys as JSON keys.
-- [JSONEncoder.KeyEncodingStrategy](jsonencoder/keyencodingstrategy-swift.enum.md)
+- [JSONEncoder.KeyEncodingStrategy](./keyencodingstrategy-swift.enum.md)
   The values that determine how to encode a type’s coding keys as JSON keys.
-- [var userInfo: [CodingUserInfoKey : any Sendable]](jsonencoder/userinfo.md)
+- [var userInfo: [CodingUserInfoKey : any Sendable]](./userinfo.md)
   A dictionary you use to customize the encoding process by providing contextual information.
 
 

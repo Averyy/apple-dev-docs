@@ -1,7 +1,8 @@
 # isListChoice
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the choice widget annotation is a list or a pop-up menu.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the choice widget annotation is a list or
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ A Boolean value that indicates whether the choice widget annotation is a list or
 var isListChoice: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isListChoice) BOOL listChoice;
+```
+
 ## See Also
 
-- [var choices: [String]?](pdfannotation/choices.md)
+### Configuring Choice Widget Annotations
+- [var choices: [String]?](./choices.md)
   An array of strings that specifies the options in either a list or a pop-up menu.
-- [var values: [String]?](pdfannotation/values.md)
+- [var values: [String]?](./values.md)
   An array of strings that specifies the export values for items in a list or a pop-up menu.
 
 

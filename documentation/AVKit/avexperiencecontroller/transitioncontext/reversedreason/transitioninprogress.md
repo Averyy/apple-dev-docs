@@ -1,7 +1,8 @@
 # AVExperienceController.TransitionContext.ReversedReason.transitionInProgress
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transition was attempted while another transition was in progress.
 
@@ -20,13 +21,14 @@ Possible response is to try again after the transition completes.
 
 ## See Also
 
-- [AVExperienceController.TransitionContext.ReversedReason.invalidConfiguration](avexperiencecontroller/transitioncontext/reversedreason/invalidconfiguration.md)
+### Reasons
+- [AVExperienceController.TransitionContext.ReversedReason.invalidConfiguration](./invalidconfiguration.md)
   A transition could not be completed because some required configuration was unavailable.
-- [AVExperienceController.TransitionContext.ReversedReason.invalidExperience](avexperiencecontroller/transitioncontext/reversedreason/invalidexperience.md)
+- [AVExperienceController.TransitionContext.ReversedReason.invalidExperience](./invalidexperience.md)
   A transition was attempted with an experience that cannot be transitioned to.
-- [AVExperienceController.TransitionContext.ReversedReason.transitionCancelled](avexperiencecontroller/transitioncontext/reversedreason/transitioncancelled.md)
+- [AVExperienceController.TransitionContext.ReversedReason.transitionCancelled](./transitioncancelled.md)
   A transition in progress has been cancelled.
-- [AVExperienceController.TransitionContext.ReversedReason.transitionFailed](avexperiencecontroller/transitioncontext/reversedreason/transitionfailed.md)
+- [AVExperienceController.TransitionContext.ReversedReason.transitionFailed](./transitionfailed.md)
   A transition has failed.
 
 

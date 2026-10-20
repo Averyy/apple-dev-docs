@@ -1,7 +1,8 @@
 # Int.Magnitude
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that can represent the absolute value of any possible value of this type.
 
@@ -22,11 +23,12 @@ typealias Magnitude = UInt
 
 ## See Also
 
-- [var magnitude: UInt](int/magnitude-swift.property.md)
+### Finding the Sign and Magnitude
+- [var magnitude: UInt](./magnitude-swift.property.md)
   The magnitude of this value.
-- [func abs<T>(T) -> T](abs(_:).md)
+- [func abs<T>(T) -> T](../abs%28_%29.md)
   Returns the absolute value of the given number.
-- [func signum() -> Int](int/signum.md)
+- [func signum() -> Int](./signum%28%29.md)
   Returns `-1` if this value is negative and `1` if it’s positive; otherwise, `0`.
 
 

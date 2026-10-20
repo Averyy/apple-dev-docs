@@ -1,7 +1,8 @@
 # additionalSafeAreaInsets
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom insets that you specify to modify your view’s safe area
 
@@ -14,6 +15,10 @@ Custom insets that you specify to modify your view’s safe area
 var additionalSafeAreaInsets: NSEdgeInsets { get set }
 ```
 
+```objc
+@property NSEdgeInsets additionalSafeAreaInsets;
+```
+
 #### Discussion
 
 Use this property to adjust the safe area insets of your view by the specified amount. The safe area defines the portion of your view’s visible area that is guaranteed to be unobscured by the bars or other ancestor-provided views.
@@ -22,11 +27,12 @@ You might use this property if your view contains content that obscures its subv
 
 ## See Also
 
-- [var safeAreaRect: NSRect](nsview/safearearect.md)
+### Respecting the View’s Safe Area
+- [var safeAreaRect: NSRect](./safearearect.md)
   A rectangle in the view’s coordinate system that contains the unobscured portion of the view.
-- [var safeAreaInsets: NSEdgeInsets](nsview/safeareainsets.md)
+- [var safeAreaInsets: NSEdgeInsets](./safeareainsets.md)
   The distances from the edges of your view that define the safe area.
-- [var safeAreaLayoutGuide: NSLayoutGuide](nsview/safearealayoutguide.md)
+- [var safeAreaLayoutGuide: NSLayoutGuide](./safearealayoutguide.md)
   The layout guide you use to position content inside your view’s safe area.
 
 

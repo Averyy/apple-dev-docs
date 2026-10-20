@@ -1,7 +1,8 @@
 # stop(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops rendering a composition in a view.
 
@@ -15,9 +16,13 @@ Stops rendering a composition in a view.
 func stop(_ sender: Any!)
 ```
 
+```objc
+- (void) stop:(id) sender;
+```
+
 #### Discussion
 
-The method is invoked when the user clicks a button or issues a command from some other user interface element, such as a menu. It is equivalent to the [`stopRendering()`](qcview/stoprendering().md) method.
+The method is invoked when the user clicks a button or issues a command from some other user interface element, such as a menu. It is equivalent to the [`stopRendering()`](./stoprendering%28%29.md) method.
 
 ## Parameters
 
@@ -25,9 +30,10 @@ The method is invoked when the user clicks a button or issues a command from som
 
 ## See Also
 
-- [func play(Any!)](qcview/play(_:).md)
+### Using Interface Builder
+- [func play(Any!)](./play%28_%29.md)
   Plays or pauses a composition in a view.
-- [func start(Any!)](qcview/start(_:).md)
+- [func start(Any!)](./start%28_%29.md)
   Starts rendering a composition in a view.
 
 

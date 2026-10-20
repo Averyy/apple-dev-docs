@@ -1,14 +1,15 @@
 # inp_ip_ttl
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 u_char inp_ip_ttl;
 ```
 

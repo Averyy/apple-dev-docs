@@ -1,7 +1,8 @@
 # NSTextSelectionNavigation.Modifier
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that describe how the framework handles different kinds of selection modifiers.
 
@@ -18,42 +19,47 @@ Values that describe how the framework handles different kinds of selection modi
 struct Modifier
 ```
 
+```c
+enum NSTextSelectionNavigationModifier : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a navigation modifier
-- [init(rawValue: UInt)](nstextselectionnavigation/modifier/init(rawvalue:).md)
+- [init(rawValue: UInt)](./modifier/init%28rawvalue%29.md)
   Creates a new navigation modifier using a raw value.
 ### Navigation modifier characteristics
-- [static var extend: NSTextSelectionNavigation.Modifier](nstextselectionnavigation/modifier/extend.md)
+- [static var extend: NSTextSelectionNavigation.Modifier](./modifier/extend.md)
   The value that indicates the framework extends the selection by not moving the initial location while in a drag selection.
-- [static var multiple: NSTextSelectionNavigation.Modifier](nstextselectionnavigation/modifier/multiple.md)
+- [static var multiple: NSTextSelectionNavigation.Modifier](./modifier/multiple.md)
   The value that indicates the framework extends the selection visually inside the rectangular area defined by the anchor and dragged positions.
-- [static var visual: NSTextSelectionNavigation.Modifier](nstextselectionnavigation/modifier/visual.md)
+- [static var visual: NSTextSelectionNavigation.Modifier](./modifier/visual.md)
   The value that indicates the framework extends the selection visually inside the rectangular area defined by the anchor and drag positions.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var allowsNonContiguousRanges: Bool](nstextselectionnavigation/allowsnoncontiguousranges.md)
+### Selection characteristics
+- [var allowsNonContiguousRanges: Bool](./allowsnoncontiguousranges.md)
   Determines if the instance could produce selections with multiple noncontiguous selections.
-- [var rotatesCoordinateSystemForLayoutOrientation: Bool](nstextselectionnavigation/rotatescoordinatesystemforlayoutorientation.md)
+- [var rotatesCoordinateSystemForLayoutOrientation: Bool](./rotatescoordinatesystemforlayoutorientation.md)
   Determines if the framework rotates the coordinate system to match the layout orientation.
-- [NSTextSelectionNavigation.Destination](nstextselectionnavigation/destination.md)
+- [NSTextSelectionNavigation.Destination](./destination.md)
   Values that affect how the framework handles navigation across different textual boundaries during a selection.
-- [NSTextSelectionNavigation.Direction](nstextselectionnavigation/direction.md)
+- [NSTextSelectionNavigation.Direction](./direction.md)
   Values that describe the direction of a selection.
-- [func textSelection(for: NSTextSelection.Granularity, enclosing: CGPoint, inContainerAt: any NSTextLocation) -> NSTextSelection?](nstextselectionnavigation/textselection(for:enclosing:incontainerat:).md)
+- [func textSelection(for: NSTextSelection.Granularity, enclosing: CGPoint, inContainerAt: any NSTextLocation) -> NSTextSelection?](./textselection%28for,enclosing,incontainerat%29.md)
   Returns a text selection that expands to the nearest boundaries for selection granularity and an enclosing point you specify.
 
 

@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.AccessPointConnectionEvent.ID
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of value that uniquely identifies this event.
 

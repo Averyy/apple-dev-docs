@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct telemetry_notification_subsystem {
     ...
 };
@@ -17,12 +17,12 @@ struct telemetry_notification_subsystem {
 ## Topics
 
 ### Instance Properties
-- [end](telemetry_notification_subsystem/1543675-end.md)
-- [maxsize](telemetry_notification_subsystem/1543687-maxsize.md)
-- [reserved](telemetry_notification_subsystem/1543699-reserved.md)
-- [routine](telemetry_notification_subsystem/1543690-routine.md)
-- [server](telemetry_notification_subsystem/1543695-server.md)
-- [start](telemetry_notification_subsystem/1543682-start.md)
+- [end](./telemetry_notification_subsystem/api-1543675-end.md)
+- [maxsize](./telemetry_notification_subsystem/api-1543687-maxsize.md)
+- [reserved](./telemetry_notification_subsystem/api-1543699-reserved.md)
+- [routine](./telemetry_notification_subsystem/api-1543690-routine.md)
+- [server](./telemetry_notification_subsystem/api-1543695-server.md)
+- [start](./telemetry_notification_subsystem/api-1543682-start.md)
 
 
 ---

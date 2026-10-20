@@ -1,18 +1,19 @@
 # init(destination:words:wordsToSend:complete:completionProc:completionRefCon:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new single universal MIDI packet (UMP) system-exclusive (SysEx) event request.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

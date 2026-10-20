@@ -1,7 +1,8 @@
 # uncompressedSize
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The claimed uncompressed size of stored data.
 

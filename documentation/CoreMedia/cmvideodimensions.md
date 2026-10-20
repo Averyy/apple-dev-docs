@@ -1,7 +1,8 @@
 # CMVideoDimensions
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents video dimensions.
 
@@ -20,6 +21,10 @@ A structure that represents video dimensions.
 struct CMVideoDimensions
 ```
 
+```c
+typedef struct { ... } CMVideoDimensions;
+```
+
 #### Overview
 
 The units are pixels.
@@ -27,39 +32,40 @@ The units are pixels.
 ## Topics
 
 ### Creating Video Dimensions
-- [init()](cmvideodimensions/init.md)
-- [init(width: Int32, height: Int32)](cmvideodimensions/init(width:height:).md)
+- [init()](./cmvideodimensions/init%28%29.md)
+- [init(width: Int32, height: Int32)](./cmvideodimensions/init%28width,height%29.md)
 ### Inspecting Video Dimensions
-- [var height: Int32](cmvideodimensions/height.md)
+- [var height: Int32](./cmvideodimensions/height.md)
   The height of the video.
-- [var width: Int32](cmvideodimensions/width.md)
+- [var width: Int32](./cmvideodimensions/width.md)
   The width of the video.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias CMAudioFormatDescriptionMask](cmaudioformatdescriptionmask.md)
+### Data Types
+- [typealias CMAudioFormatDescriptionMask](./cmaudioformatdescriptionmask.md)
   A type for mask bits that represent parts of an audio format description.
-- [typealias CMMediaType](cmmediatype.md)
+- [typealias CMMediaType](./cmmediatype.md)
   Constants that represent media types.
-- [typealias CMAudioCodecType](cmaudiocodectype.md)
+- [typealias CMAudioCodecType](./cmaudiocodectype.md)
   An audio codec type.
-- [typealias CMVideoCodecType](cmvideocodectype.md)
+- [typealias CMVideoCodecType](./cmvideocodectype.md)
   A video codec type.
-- [typealias CMTextDisplayFlags](cmtextdisplayflags.md)
+- [typealias CMTextDisplayFlags](./cmtextdisplayflags.md)
   An integer value that describes the display mode flags for text media.
-- [typealias CMTextJustificationValue](cmtextjustificationvalue.md)
+- [typealias CMTextJustificationValue](./cmtextjustificationvalue.md)
   An integer value that describes the justification modes for text media.
-- [Media Type Constants](media-type-constants.md)
+- [Media Type Constants](./media-type-constants.md)
   Constants that represent media types.
-- [Muxed Stream Types](muxed-stream-types.md)
+- [Muxed Stream Types](./muxed-stream-types.md)
   Constants that represent muxed stream types.
-- [Audio Codec Types](audio-codec-types.md)
+- [Audio Codec Types](./audio-codec-types.md)
   Constants that represent audio codec types.
 
 

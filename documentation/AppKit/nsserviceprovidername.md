@@ -1,10 +1,11 @@
 # NSServiceProviderName
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 typealias NSServiceProviderName = String
 ```
 
+```c
+typedef NSString * NSServiceProviderName;
+```
+
 ## See Also
 
-- [func NSRegisterServicesProvider(Any?, NSServiceProviderName)](nsregisterservicesprovider(_:_:).md)
+### Registering Services
+- [func NSRegisterServicesProvider(Any?, NSServiceProviderName)](./nsregisterservicesprovider%28_,_%29.md)
   Registers a service provider.
-- [func NSUnregisterServicesProvider(NSServiceProviderName)](nsunregisterservicesprovider(_:).md)
+- [func NSUnregisterServicesProvider(NSServiceProviderName)](./nsunregisterservicesprovider%28_%29.md)
   Unregisters a service provider.
-- [func NSUpdateDynamicServices()](nsupdatedynamicservices().md)
+- [func NSUpdateDynamicServices()](./nsupdatedynamicservices%28%29.md)
   Causes the services information for the system to be updated.
 
 

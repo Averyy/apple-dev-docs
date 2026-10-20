@@ -1,7 +1,8 @@
 # CPChargingStationConnection.Connector.ccs2
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 12.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case ccs2
+```
+
+```c
+CPChargingStationConnectionConnectorCCS2
 ```
 
 

@@ -1,7 +1,8 @@
 # NSTextCheckingAllTypes
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 All possible checking types, both system- and user-supported.
 
@@ -20,11 +21,16 @@ All possible checking types, both system- and user-supported.
 var NSTextCheckingAllTypes: NSTextCheckingTypes { get }
 ```
 
+```c
+NSTextCheckingAllTypes
+```
+
 ## See Also
 
-- [var NSTextCheckingAllCustomTypes: NSTextCheckingTypes](nstextcheckingallcustomtypes.md)
+### Constants
+- [var NSTextCheckingAllCustomTypes: NSTextCheckingTypes](./nstextcheckingallcustomtypes.md)
   Checking types that can be used by clients.
-- [var NSTextCheckingAllSystemTypes: NSTextCheckingTypes](nstextcheckingallsystemtypes.md)
+- [var NSTextCheckingAllSystemTypes: NSTextCheckingTypes](./nstextcheckingallsystemtypes.md)
   Checking types supported by the system. The first 32 types are reserved.
 
 

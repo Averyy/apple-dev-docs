@@ -1,7 +1,8 @@
 # topBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Top bar of a tab view.
 
@@ -22,7 +23,7 @@ static let topBar: TabBarPlacement
 
 #### Discussion
 
-A tab bar can display as the top bar in [`tabBarOnly`](tabviewstyle/tabbaronly.md) on iPad and macOS, or [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) on iPad.
+A tab bar can display as the top bar in [`tabBarOnly`](../tabviewstyle/tabbaronly.md) on iPad and macOS, or [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) on iPad.
 
 
 ---

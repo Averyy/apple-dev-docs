@@ -1,14 +1,15 @@
 # kIOUSBSuperSpeedPlusDeviceCapabilityReserved
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBSuperSpeedPlusDeviceCapabilityReserved = IOUSBBitRange(4, 7)
 ```
 

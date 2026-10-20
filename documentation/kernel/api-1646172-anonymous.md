@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDVDRegionalPlaybackControlSchemePhase1](1646172-anonymous/kdvdregionalplaybackcontrolschemephase1.md)
-- [kDVDRegionalPlaybackControlSchemePhase2](1646172-anonymous/kdvdregionalplaybackcontrolschemephase2.md)
+- [kDVDRegionalPlaybackControlSchemePhase1](./api-1646172-anonymous/kdvdregionalplaybackcontrolschemephase1.md)
+- [kDVDRegionalPlaybackControlSchemePhase2](./api-1646172-anonymous/kdvdregionalplaybackcontrolschemephase2.md)
 
 
 ---

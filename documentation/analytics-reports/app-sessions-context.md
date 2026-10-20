@@ -1,20 +1,25 @@
 # App Sessions Context
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze how many people use your app and for how long.
 
 #### Overview
 
-The data in this report details how frequently people use your application. This report is similar to [`App Sessions`](app-sessions.md), but includes data for iOS across all distribution methods. Use App Sessions to understand usage of your App Store distributed App, and use App Sessions Context to provide more context to most of the Framework Usage and Performance reports.
+The data in this report details how frequently people use your application. This report is similar to [App Sessions](./app-sessions.md), but includes data for iOS across all distribution methods. Use App Sessions to understand usage of your App Store distributed App, and use App Sessions Context to provide more context to most of the Framework Usage and Performance reports.
 
 - Territories: Worldwide
-- Platforms: iOS, iPadOS.  For more information about iOS and iPadOS, see the Platforms section in [`Data Completeness and Corrections`](data-completeness-corrections.md).
-- Availability: - Daily: Every day.
+- Platforms: iOS, iPadOS.  For more information about iOS and iPadOS, see the Platforms section in [Data Completeness and Corrections](./data-completeness-corrections.md).
+- Availability:
+
+  - Daily: Every day.
 - History: On request, data is available beginning with iOS 17.4 and iPadOS 17.4.
 - Completeness: Data from devices that contribute to this report can arrive as late as 8 days after the date it generates on device. You can download recent data daily, but it might be incomplete, and data updates incrementally daily, until all late-arriving events are available.
-- Privacy: - Includes data from users who have opted to share their data with Apple and developers.
-- Individual rows will only appear if they have a value of 5 or more.
+- Privacy:
+
+  - Includes data from users who have opted to share their data with Apple and developers.
+  - Individual rows will only appear if they have a value of 5 or more.
 
 #### Report Fields
 
@@ -34,35 +39,36 @@ The data in this report details how frequently people use your application. This
 
 ## See Also
 
-- [AccessorySetupKit Accessory Picker Sessions](accessorysetupkit-accessory-picker-sessions.md)
+### Framework Usage
+- [AccessorySetupKit Accessory Picker Sessions](./accessorysetupkit-accessory-picker-sessions.md)
   Analyze how many people use your app to set up accessories by using AccessorySetupKit.
-- [AccessorySetupKit Usage](accessorysetupkit-usage.md)
+- [AccessorySetupKit Usage](./accessorysetupkit-usage.md)
   Analyze how often your app uses AccessorySetupKit.
-- [AirPlay Discovery Sessions](airplay-discovery-sessions.md)
+- [AirPlay Discovery Sessions](./airplay-discovery-sessions.md)
   Review information about AirPlay discovery sessions.
-- [Animoji Stickers Sent](animoji-stickers-sent.md)
+- [Animoji Stickers Sent](./animoji-stickers-sent.md)
   Analyze how many times people use Memoji stickers in your app.
-- [App Added to Focus](app-added-to-focus.md)
+- [App Added to Focus](./app-added-to-focus.md)
   Review information about your app’s relationship to Focus modes.
-- [App Disk Space Usage](app-disk-space-usage.md)
+- [App Disk Space Usage](./app-disk-space-usage.md)
   Analyze your app’s disk space use.
-- [App Extended Launch Usage](app-extended-launch-usage.md)
+- [App Extended Launch Usage](./app-extended-launch-usage.md)
   Understand your app’s use of extended launch.
-- [App HangTracer Usage](app-hangtracer-usage.md)
+- [App HangTracer Usage](./app-hangtracer-usage.md)
   Analyze how much time your app spends monitoring foreground UI responsiveness through the HangTracer Framework.
-- [App Runtime Usage](app-runtime-usage.md)
+- [App Runtime Usage](./app-runtime-usage.md)
   Analyze how often your app executes specific symbols of different dynamic libraries.
-- [Application Preferred Language Settings](application-preferred-language-settings.md)
+- [Application Preferred Language Settings](./application-preferred-language-settings.md)
   Review how people use language preference settings in your app.
-- [ARKit ARSession Duration](arkit-arsession-duration.md)
+- [ARKit ARSession Duration](./arkit-arsession-duration.md)
   Review information  about ARKit ARSession duration.
-- [ARKit ARSession Failures](arkit-arsession-failures.md)
+- [ARKit ARSession Failures](./arkit-arsession-failures.md)
   Analyze details about ARKit ARSession failures.
-- [ARKit Capture Frame Rate Throttling](arkit-capture-frame-rate-throttling.md)
+- [ARKit Capture Frame Rate Throttling](./arkit-capture-frame-rate-throttling.md)
   Analyze how long it takes for ARKit to throttle the camera frame rate.
-- [ARKit Collaborative Session Features](arkit-collaborative-session-features.md)
+- [ARKit Collaborative Session Features](./arkit-collaborative-session-features.md)
   Review how your app uses ARKit collaborative session features.
-- [ARKit Face Tracking](arkit-face-tracking.md)
+- [ARKit Face Tracking](./arkit-face-tracking.md)
   Analyze how often your app uses ARKit face tracking.
 
 

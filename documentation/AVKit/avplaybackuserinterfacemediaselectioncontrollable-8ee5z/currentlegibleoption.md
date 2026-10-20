@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The currently selected subtitle or caption track.
@@ -20,7 +21,7 @@ var currentLegibleOption: AVPlaybackUserInterfaceMediaSelectionOption? { get set
 
 #### Discussion
 
-Should be one of the options in [`legibleOptions`](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/legibleoptions.md).
+Should be one of the options in [`legibleOptions`](./legibleoptions.md).
 
 
 ---

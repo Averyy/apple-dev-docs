@@ -1,7 +1,8 @@
 # kCMIODevicePropertyScopePlayThrough
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,12 +14,17 @@
 var kCMIODevicePropertyScopePlayThrough: Int { get }
 ```
 
+```c
+kCMIODevicePropertyScopePlayThrough
+```
+
 ## See Also
 
-- [var kCMIODeviceClassID: Int](kcmiodeviceclassid.md)
-- [var kCMIODevicePropertyScopeInput: Int](kcmiodevicepropertyscopeinput.md)
-- [var kCMIODevicePropertyScopeOutput: Int](kcmiodevicepropertyscopeoutput.md)
-- [var kCMIODeviceUnknown: Int](kcmiodeviceunknown.md)
+### Constants
+- [var kCMIODeviceClassID: Int](./kcmiodeviceclassid.md)
+- [var kCMIODevicePropertyScopeInput: Int](./kcmiodevicepropertyscopeinput.md)
+- [var kCMIODevicePropertyScopeOutput: Int](./kcmiodevicepropertyscopeoutput.md)
+- [var kCMIODeviceUnknown: Int](./kcmiodeviceunknown.md)
 
 
 ---

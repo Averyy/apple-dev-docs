@@ -1,7 +1,8 @@
 # inlinePredictionType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var inlinePredictionType: NSTextInputTraitType { get set }
+```
+
+```objc
+@property NSTextInputTraitType inlinePredictionType;
 ```
 
 

@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp at which this focus region sample was captured, in the format returned by `CACurrentMediaTime()`.
 

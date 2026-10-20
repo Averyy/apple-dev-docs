@@ -1,7 +1,8 @@
 # saveToPreferences(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Save the VPN configuration in the Network Extension preferences.
 
@@ -16,27 +17,37 @@ Save the VPN configuration in the Network Extension preferences.
 ## Declaration
 
 ```swift
+func saveToPreferences(completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func saveToPreferences() async throws
+```
+
+```objc
+- (void) saveToPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-You must call [`loadFromPreferences(completionHandler:)`](nevpnmanager/loadfrompreferences(completionhandler:).md): at least once before calling this method the first time after your app launches.
+You must call [`loadFromPreferences(completionHandler:)`](./loadfrompreferences%28completionhandler%29.md): at least once before calling this method the first time after your app launches.
 
 ## Parameters
 
-- `completionHandler`: An optional block that takes an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object. If specified, this block will be executed on the caller’s main thread after the save operation is complete. If the configuration could not be saved to the preferences, the error parameter will be set to an `NSError` object containing details about the error. See `NEVPN Errors` for a list of possible errors. If the configuration is saved successfully then the error parameter will be set to nil.
+- `completionHandler`: An optional block that takes an [`NSError`](../../Foundation/nserror.md) object. If specified, this block will be executed on the caller’s main thread after the save operation is complete. If the configuration could not be saved to the preferences, the error parameter will be set to an `NSError` object containing details about the error. See `NEVPN Errors` for a list of possible errors. If the configuration is saved successfully then the error parameter will be set to nil.
 
 ## See Also
 
-- [class NEVPNManager](nevpnmanager.md)
+### Related Documentation
+- [class NEVPNManager](../nevpnmanager.md)
   An object to create and manage a Personal VPN configuration.
-- [class func shared() -> NEVPNManager](nevpnmanager/shared.md)
+### Managing VPN configurations
+- [class func shared() -> NEVPNManager](./shared%28%29.md)
   Access the single instance of `NEVPNManager`.
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nevpnmanager/loadfrompreferences(completionhandler:).md)
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./loadfrompreferences%28completionhandler%29.md)
   Load the VPN configuration from the Network Extension preferences.
-- [func setAuthorization(AuthorizationRef)](nevpnmanager/setauthorization(_:).md)
-- [func removeFromPreferences(completionHandler: (((any Error)?) -> Void)?)](nevpnmanager/removefrompreferences(completionhandler:).md)
+- [func setAuthorization(AuthorizationRef)](./setauthorization%28_%29.md)
+- [func removeFromPreferences(completionHandler: (((any Error)?) -> Void)?)](./removefrompreferences%28completionhandler%29.md)
   Remove the VPN configuration from the Network Extension preferences.
 
 

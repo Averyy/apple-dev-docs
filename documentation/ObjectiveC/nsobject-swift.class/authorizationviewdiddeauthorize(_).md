@@ -1,7 +1,8 @@
 # authorizationViewDidDeauthorize(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to indicate the user was deauthorized and the authorization view was changed to locked.
 
@@ -12,6 +13,10 @@ Sent to the delegate to indicate the user was deauthorized and the authorization
 
 ```swift
 func authorizationViewDidDeauthorize(_ view: SFAuthorizationView!)
+```
+
+```objc
+- (void) authorizationViewDidDeauthorize:(SFAuthorizationView *) view;
 ```
 
 

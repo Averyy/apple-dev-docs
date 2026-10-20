@@ -1,7 +1,8 @@
 # completeUntilFirstUserAuthentication
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file is stored in an encrypted format on disk and cannot be accessed until after the device has booted.
 
@@ -20,17 +21,22 @@ The file is stored in an encrypted format on disk and cannot be accessed until a
 static let completeUntilFirstUserAuthentication: FileProtectionType
 ```
 
+```c
+extern NSFileProtectionType const NSFileProtectionCompleteUntilFirstUserAuthentication;
+```
+
 #### Discussion
 
 After the user unlocks the device for the first time, your app can access the file and continue to access it even if the user subsequently locks the device.
 
 ## See Also
 
-- [static let complete: FileProtectionType](fileprotectiontype/complete.md)
+### Working with Protection Levels
+- [static let complete: FileProtectionType](./complete.md)
   The file is stored in an encrypted format on disk and cannot be read from or written to while the device is locked or booting.
-- [static let completeUnlessOpen: FileProtectionType](fileprotectiontype/completeunlessopen.md)
+- [static let completeUnlessOpen: FileProtectionType](./completeunlessopen.md)
   The file is stored in an encrypted format on disk after it is closed.
-- [static let none: FileProtectionType](fileprotectiontype/none.md)
+- [static let none: FileProtectionType](./none.md)
   The file has no special protections associated with it.
 
 

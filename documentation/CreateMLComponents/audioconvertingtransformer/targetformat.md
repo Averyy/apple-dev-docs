@@ -1,7 +1,8 @@
 # targetFormat
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target audio format for the output buffers. It must have an AVAudioPCMFormat as its common format type.
 

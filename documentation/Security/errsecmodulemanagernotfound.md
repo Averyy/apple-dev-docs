@@ -1,7 +1,8 @@
 # errSecModuleManagerNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A module was not found.
 
@@ -18,6 +19,10 @@ A module was not found.
 
 ```swift
 var errSecModuleManagerNotFound: OSStatus { get }
+```
+
+```c
+errSecModuleManagerNotFound
 ```
 
 

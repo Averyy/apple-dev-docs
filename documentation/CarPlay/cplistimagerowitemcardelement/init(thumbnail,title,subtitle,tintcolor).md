@@ -1,7 +1,8 @@
 # init(thumbnail:title:subtitle:tintColor:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an element with a thumbnail, title, subtitle, and tint color.
 
@@ -14,6 +15,10 @@ Initialize an element with a thumbnail, title, subtitle, and tint color.
 
 ```swift
 init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, tintColor: UIColor?)
+```
+
+```objc
+- (instancetype) initWithThumbnail:(CPThumbnailImage *) thumbnail title:(NSString *) title subtitle:(NSString *) subtitle tintColor:(UIColor *) tintColor;
 ```
 
 #### Discussion

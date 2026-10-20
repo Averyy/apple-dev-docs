@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The secret data that is derived by both this device and the remote device for this connection.
 

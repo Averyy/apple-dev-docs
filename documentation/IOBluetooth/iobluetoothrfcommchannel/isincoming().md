@@ -1,17 +1,22 @@
 # isIncoming()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the direction of the channel. An incoming channel is one that was opened by the remote device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isIncoming() -> Bool
+```
+
+```objc
+- (BOOL) isIncoming;
 ```
 
 #### Return Value

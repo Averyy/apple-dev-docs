@@ -1,7 +1,8 @@
 # name
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized human-readable name for the parameter, suitable for displaying in application UI.
 
@@ -14,13 +15,18 @@ A localized human-readable name for the parameter, suitable for displaying in ap
 var name: String { get }
 ```
 
+```objc
+@property (readonly) NSString * name;
+```
+
 ## See Also
 
-- [var enabled: Bool](merawprocessingparameter/enabled.md)
+### Inspecting a processing parameter
+- [var enabled: Bool](./enabled.md)
   A Boolean value that indicates whether the extension enables the parameter.
-- [var key: String](merawprocessingparameter/key.md)
+- [var key: String](./key.md)
   A unique key string identifying the parameter.
-- [var longDescription: String](merawprocessingparameter/longdescription.md)
+- [var longDescription: String](./longdescription.md)
   A localized description of the parameter, suitable for displaying in a tool tip or similar explanatory UI.
 
 

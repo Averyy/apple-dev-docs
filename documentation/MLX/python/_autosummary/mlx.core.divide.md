@@ -6,47 +6,18 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.divide
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.divide.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.divide
-
- Table of contents 
-
-## Contents
-
-# mlx.core.divide
-
-**divide(*a: scalar | array*, *b: scalar | array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**divide(*a: scalar | array*, *b: scalar | array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Element-wise division.
 Divide two arrays with numpy-style broadcasting semantics. Either or both
 input arrays can also be scalars.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
-**b** ([array](mlx.core.array.html#mlx.core.array)) – Input array or scalar.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
 
 Returns:
 The quotient `a / b`.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

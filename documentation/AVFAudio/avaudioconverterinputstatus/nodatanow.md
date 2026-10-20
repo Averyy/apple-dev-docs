@@ -1,7 +1,8 @@
 # AVAudioConverterInputStatus.noDataNow
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates you’re out of data.
 
@@ -20,11 +21,16 @@ A status that indicates you’re out of data.
 case noDataNow
 ```
 
+```c
+AVAudioConverterInputStatus_NoDataNow
+```
+
 ## See Also
 
-- [AVAudioConverterInputStatus.endOfStream](avaudioconverterinputstatus/endofstream.md)
+### Reporting input status
+- [AVAudioConverterInputStatus.endOfStream](./endofstream.md)
   A status that indicates you’re at the end of an audio stream.
-- [AVAudioConverterInputStatus.haveData](avaudioconverterinputstatus/havedata.md)
+- [AVAudioConverterInputStatus.haveData](./havedata.md)
   A status that indicates the normal case where you supply data to the converter.
 
 

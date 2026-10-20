@@ -1,7 +1,8 @@
 # session(_:didRemove:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that one or more anchors have been removed from the session.
 
@@ -15,14 +16,18 @@ Tells the delegate that one or more anchors have been removed from the session.
 optional func session(_ session: ARSession, didRemove anchors: [ARAnchor])
 ```
 
+```objc
+- (void) session:(ARSession *) session didRemoveAnchors:(NSArray<__kindof ARAnchor *> *) anchors;
+```
+
 #### Discussion
 
 Depending on the session configuration, ARKit may automatically remove anchors from a session.
 
 If you display an AR experience using SceneKit or SpriteKit, you can instead implement one of the following methods instead to track not only the anchors in the session but also any corresponding SceneKit or SpriteKit content:
 
-- [`ARSCNView`](arscnview.md): [`renderer(_:didRemove:for:)`](arscnviewdelegate/renderer(_:didremove:for:).md)
-- [`ARSKView`](arskview.md): [`view(_:didRemove:for:)`](arskviewdelegate/view(_:didremove:for:).md)
+- [`ARSCNView`](../arscnview.md): [`renderer(_:didRemove:for:)`](../arscnviewdelegate/renderer%28_,didremove,for%29.md)
+- [`ARSKView`](../arskview.md): [`view(_:didRemove:for:)`](../arskviewdelegate/view%28_,didremove,for%29.md)
 
 ## Parameters
 
@@ -31,9 +36,10 @@ If you display an AR experience using SceneKit or SpriteKit, you can instead imp
 
 ## See Also
 
-- [func session(ARSession, didAdd: [ARAnchor])](arsessiondelegate/session(_:didadd:).md)
+### Handling Content Updates
+- [func session(ARSession, didAdd: [ARAnchor])](./session%28_,didadd%29.md)
   Tells the delegate that one or more anchors have been added to the session.
-- [func session(ARSession, didUpdate: [ARAnchor])](arsessiondelegate/session(_:didupdate:)-3qtt8.md)
+- [func session(ARSession, didUpdate: [ARAnchor])](./session%28_,didupdate%29-3qtt8.md)
   Tells the delegate that the session has adjusted the properties of one or more anchors.
 
 

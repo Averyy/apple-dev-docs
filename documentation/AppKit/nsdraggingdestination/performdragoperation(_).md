@@ -1,12 +1,13 @@
 # performDragOperation(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked after the released image has been removed from the screen, signaling the receiver to import the pasteboard data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,19 @@ Invoked after the released image has been removed from the screen, signaling the
 optional func performDragOperation(_ sender: any NSDraggingInfo) -> Bool
 ```
 
+```objc
+- (BOOL) performDragOperation:(id<NSDraggingInfo>) sender;
+```
+
 #### Return Value
 
-If the destination accepts the data, it returns [`true`](https://developer.apple.com/documentation/swift/true); otherwise it returns [`false`](https://developer.apple.com/documentation/swift/false). The default is to return [`false`](https://developer.apple.com/documentation/swift/false).
+If the destination accepts the data, it returns [`true`](../../Swift/true.md); otherwise it returns [`false`](../../Swift/false.md). The default is to return [`false`](../../Swift/false.md).
 
 #### Discussion
 
-For this method to be invoked, the previous [`prepareForDragOperation(_:)`](nsdraggingdestination/preparefordragoperation(_:).md) message must have returned [`true`](https://developer.apple.com/documentation/swift/true). The destination should implement this method to do the real work of importing the pasteboard data represented by the image.
+For this method to be invoked, the previous [`prepareForDragOperation(_:)`](./preparefordragoperation%28_%29.md) message must have returned [`true`](../../Swift/true.md). The destination should implement this method to do the real work of importing the pasteboard data represented by the image.
 
-If the sender object’s [`animatesToDestination`](nsdragginginfo/animatestodestination.md) was set to [`true`](https://developer.apple.com/documentation/swift/true) in [`prepareForDragOperation(_:)`](nsdraggingdestination/preparefordragoperation(_:).md), then setup any animation to arrange space for the drag items to animate to. Also at this time, enumerate through the dragging items to set their destination frames and destination images.
+If the sender object’s [`animatesToDestination`](../nsdragginginfo/animatestodestination.md) was set to [`true`](../../Swift/true.md) in [`prepareForDragOperation(_:)`](./preparefordragoperation%28_%29.md), then setup any animation to arrange space for the drag items to animate to. Also at this time, enumerate through the dragging items to set their destination frames and destination images.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ If the sender object’s [`animatesToDestination`](nsdragginginfo/animatestodest
 
 ## See Also
 
-- [func prepareForDragOperation(any NSDraggingInfo) -> Bool](nsdraggingdestination/preparefordragoperation(_:).md)
+### Managing a Dragging Session After an Image Is Released
+- [func prepareForDragOperation(any NSDraggingInfo) -> Bool](./preparefordragoperation%28_%29.md)
   Invoked when the image is released, allowing the receiver to agree to or refuse drag operation.
-- [func concludeDragOperation((any NSDraggingInfo)?)](nsdraggingdestination/concludedragoperation(_:).md)
+- [func concludeDragOperation((any NSDraggingInfo)?)](./concludedragoperation%28_%29.md)
   Invoked when the dragging operation is complete, signaling the receiver to perform any necessary clean-up.
 
 

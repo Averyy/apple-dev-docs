@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the state of the specified buffer layout.
 
@@ -17,6 +18,10 @@ Returns the state of the specified buffer layout.
 
 ```swift
 subscript(index: Int) -> MTLBufferLayoutDescriptor! { get set }
+```
+
+```objc
+- (MTLBufferLayoutDescriptor *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
 #### Return Value

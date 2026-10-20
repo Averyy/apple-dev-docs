@@ -1,7 +1,8 @@
 # dateSeparator(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the ISO 8601 date format style to use the specified date separator.
 
@@ -26,9 +27,9 @@ An ISO 8601 date format style modified to include the specified date separator s
 
 #### Discussion
 
-Possible values of [`Date.ISO8601FormatStyle.DateSeparator`](date/iso8601formatstyle/dateseparator-swift.enum.md) are [`Date.ISO8601FormatStyle.DateSeparator.dash`](date/iso8601formatstyle/dateseparator-swift.enum/dash.md) and [`Date.ISO8601FormatStyle.DateSeparator.omitted`](date/iso8601formatstyle/dateseparator-swift.enum/omitted.md).
+Possible values of [`Date.ISO8601FormatStyle.DateSeparator`](./dateseparator-swift.enum.md) are [`Date.ISO8601FormatStyle.DateSeparator.dash`](./dateseparator-swift.enum/dash.md) and [`Date.ISO8601FormatStyle.DateSeparator.omitted`](./dateseparator-swift.enum/omitted.md).
 
-The following example shows a variety of [`Date.ISO8601FormatStyle.DateSeparator`](date/iso8601formatstyle/dateseparator-swift.enum.md) formats applied to an ISO 8601 date format.
+The following example shows a variety of [`Date.ISO8601FormatStyle.DateSeparator`](./dateseparator-swift.enum.md) formats applied to an ISO 8601 date format.
 
 ```swift
 let meetingDate = Date() // Jun 23, 2021 at 6:13 AM
@@ -37,9 +38,9 @@ meetingDate.formatted(.iso8601.dateSeparator(.dash)) // 2021-06-23T111325Z
 meetingDate.formatted(.iso8601) // 20210623T111325Z
 ```
 
-If no format is specified as a parameter, the [`Date.ISO8601FormatStyle.DateSeparator.omitted`](date/iso8601formatstyle/dateseparator-swift.enum/omitted.md) case is the default format.
+If no format is specified as a parameter, the [`Date.ISO8601FormatStyle.DateSeparator.omitted`](./dateseparator-swift.enum/omitted.md) case is the default format.
 
-For more information about ISO 8601 formatted dates, see the [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md).
+For more information about ISO 8601 formatted dates, see the [`Date.ISO8601FormatStyle`](../iso8601formatstyle.md).
 
 ## Parameters
 
@@ -47,13 +48,14 @@ For more information about ISO 8601 formatted dates, see the [`Date.ISO8601Forma
 
 ## See Also
 
-- [func year() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/year.md)
+### Modifying Dates in an ISO 8601 Format Style
+- [func year() -> Date.ISO8601FormatStyle](./year%28%29.md)
   Modifies the ISO 8601 date format style to include the year in the formatted output.
-- [func month() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/month.md)
+- [func month() -> Date.ISO8601FormatStyle](./month%28%29.md)
   Modifies the ISO 8601 date format style to include the month in the formatted output.
-- [func weekOfYear() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/weekofyear.md)
+- [func weekOfYear() -> Date.ISO8601FormatStyle](./weekofyear%28%29.md)
   Modifies the ISO 8601 date format style to include the week of the year in the formatted output.
-- [func day() -> Date.ISO8601FormatStyle](date/iso8601formatstyle/day.md)
+- [func day() -> Date.ISO8601FormatStyle](./day%28%29.md)
   Modifies the ISO 8601 date format style to include the day in the formatted output.
 
 

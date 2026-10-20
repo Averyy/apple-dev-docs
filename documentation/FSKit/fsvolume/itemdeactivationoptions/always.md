@@ -1,7 +1,8 @@
 # always
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to always perform deactivation calls.
 
@@ -14,15 +15,20 @@ An option to always perform deactivation calls.
 static var always: FSVolume.ItemDeactivationOptions { get }
 ```
 
+```c
+FSItemDeactivationAlways
+```
+
 #### Discussion
 
-Use this option if the file system needs `deactivateItem` calls in circumstances beyond those covered by [`forRemovedItems`](fsvolume/itemdeactivationoptions/forremoveditems.md) and [`forPreallocatedItems`](fsvolume/itemdeactivationoptions/forpreallocateditems.md).
+Use this option if the file system needs `deactivateItem` calls in circumstances beyond those covered by [`forRemovedItems`](./forremoveditems.md) and [`forPreallocatedItems`](./forpreallocateditems.md).
 
 ## See Also
 
-- [static var forRemovedItems: FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivationoptions/forremoveditems.md)
+### Declaring deactivation options
+- [static var forRemovedItems: FSVolume.ItemDeactivationOptions](./forremoveditems.md)
   An option to process deactivation for open-unlinked items at the moment of last close.
-- [static var forPreallocatedItems: FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivationoptions/forpreallocateditems.md)
+- [static var forPreallocatedItems: FSVolume.ItemDeactivationOptions](./forpreallocateditems.md)
   An option to process deactivation for for files with preallocated space.
 
 

@@ -2,18 +2,19 @@
 
 **Framework**: XCUIAutomation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A hierarchical dictionary representation of an element’s attributes, and all of an element’s user interface descendants.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,9 +23,14 @@ A hierarchical dictionary representation of an element’s attributes, and all o
 var dictionaryRepresentation: [XCUIElement.AttributeName : Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,id> * dictionaryRepresentation;
+```
+
 ## See Also
 
-- [var children: [any XCUIElementSnapshot]](xcuielementsnapshot/children.md)
+### Inspecting attributes
+- [var children: [any XCUIElementSnapshot]](./children.md)
   An array of descendant user interface element snapshots.
 
 

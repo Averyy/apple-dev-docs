@@ -1,18 +1,19 @@
 # TestTrait
 
 **Framework**: Swift Testing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol describing a trait that you can add to a test function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,36 +25,37 @@ protocol TestTrait : Trait
 
 #### Overview
 
-The testing library defines a number of traits that you can add to test functions. You can also define your own traits by creating types that conform to this protocol, or to the [`SuiteTrait`](suitetrait.md) protocol.
+The testing library defines a number of traits that you can add to test functions. You can also define your own traits by creating types that conform to this protocol, or to the [`SuiteTrait`](./suitetrait.md) protocol.
 
 ## Topics
 
 ### Type Methods
-- [static func evaluates(any Evaluation, info: [String : String], recordTranscripts: Bool) -> Self](testtrait/evaluates(_:info:recordtranscripts:).md)
+- [static func evaluates(any Evaluation, info: [String : String], recordTranscripts: Bool) -> Self](./testtrait/evaluates%28_,info,recordtranscripts%29.md)
   Creates a trait that runs a single evaluation and makes its result available through the current evaluation context.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Trait](trait.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Trait](./trait.md)
 ### Conforming Types
-- [Bug](bug.md)
-- [Comment](comment.md)
-- [ConditionTrait](conditiontrait.md)
-- [IssueHandlingTrait](issuehandlingtrait.md)
-- [ParallelizationTrait](parallelizationtrait.md)
-- [Tag.List](tag/list.md)
-- [TimeLimitTrait](timelimittrait.md)
+- [Bug](./bug.md)
+- [Comment](./comment.md)
+- [ConditionTrait](./conditiontrait.md)
+- [IssueHandlingTrait](./issuehandlingtrait.md)
+- [ParallelizationTrait](./parallelizationtrait.md)
+- [Tag.List](./tag/list.md)
+- [TimeLimitTrait](./timelimittrait.md)
 
 ## See Also
 
-- [protocol Trait](trait.md)
+### Creating custom traits
+- [protocol Trait](./trait.md)
   A protocol describing traits that can be added to a test function or to a test suite.
-- [protocol SuiteTrait](suitetrait.md)
+- [protocol SuiteTrait](./suitetrait.md)
   A protocol describing a trait that you can add to a test suite.
-- [protocol TestScoping](testscoping.md)
+- [protocol TestScoping](./testscoping.md)
   A protocol that tells the test runner to run custom code before or after it runs a test suite or test function.
 
 

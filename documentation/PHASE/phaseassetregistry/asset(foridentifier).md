@@ -1,7 +1,8 @@
 # asset(forIdentifier:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the asset named with the designated identifier.
 
@@ -19,6 +20,10 @@ Provides the asset named with the designated identifier.
 func asset(forIdentifier identifier: String) -> PHASEAsset?
 ```
 
+```objc
+- (PHASEAsset *) assetForIdentifier:(NSString *) identifier;
+```
+
 #### Return Value
 
 A framework asset by the destignated name, if the app registers the asset prior. Otherwise, returns `nil`.
@@ -29,7 +34,8 @@ A framework asset by the destignated name, if the app registers the asset prior.
 
 ## See Also
 
-- [func registerSoundEventAsset(rootNode: PHASESoundEventNodeDefinition, identifier: String?) throws -> PHASESoundEventNodeAsset](phaseassetregistry/registersoundeventasset(rootnode:identifier:).md)
+### Registering Sound Event Assets
+- [func registerSoundEventAsset(rootNode: PHASESoundEventNodeDefinition, identifier: String?) throws -> PHASESoundEventNodeAsset](./registersoundeventasset%28rootnode,identifier%29.md)
   Registers the root node of the sound event asset.
 
 

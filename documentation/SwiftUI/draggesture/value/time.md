@@ -1,7 +1,8 @@
 # time
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time associated with the drag gesture’s current event.
 
@@ -21,7 +22,8 @@ var time: Date
 
 ## See Also
 
-- [var velocity: CGSize](draggesture/value/velocity.md)
+### Handling changes over time
+- [var velocity: CGSize](./velocity.md)
   The current drag velocity.
 
 

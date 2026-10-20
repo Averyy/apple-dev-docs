@@ -1,7 +1,8 @@
 # PortalMaterial.TriangleFillMode
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the triangle fill mode object that’s appropriate for this material class.
 
@@ -21,15 +22,16 @@ typealias TriangleFillMode = MaterialParameterTypes.TriangleFillMode
 
 ## See Also
 
-- [struct PortalMaterial](portalmaterial.md)
+### Portals
+- [struct PortalMaterial](../portalmaterial.md)
   A material that makes the mesh part a portal to a different world.
-- [PortalMaterial.FaceCulling](portalmaterial/faceculling-swift.typealias.md)
+- [PortalMaterial.FaceCulling](./faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [struct PortalComponent](portalcomponent.md)
+- [struct PortalComponent](../portalcomponent.md)
   A component that turns mesh surfaces into portals to a different world.
-- [struct WorldComponent](worldcomponent.md)
+- [struct WorldComponent](../worldcomponent.md)
   A component that defines a portal world.
-- [struct PortalCrossingComponent](portalcrossingcomponent.md)
+- [struct PortalCrossingComponent](../portalcrossingcomponent.md)
   A component that allows entities to cross portal boundaries.
 
 

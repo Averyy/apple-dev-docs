@@ -1,7 +1,8 @@
 # xPlacement
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,14 +13,19 @@
 var xPlacement: NSGridCell.Placement { get set }
 ```
 
+```objc
+@property NSGridCellPlacement xPlacement;
+```
+
 ## See Also
 
-- [var gridView: NSGridView?](nsgridcolumn/gridview.md)
-- [var isHidden: Bool](nsgridcolumn/ishidden.md)
-- [var leadingPadding: CGFloat](nsgridcolumn/leadingpadding.md)
-- [var numberOfCells: Int](nsgridcolumn/numberofcells.md)
-- [var trailingPadding: CGFloat](nsgridcolumn/trailingpadding.md)
-- [var width: CGFloat](nsgridcolumn/width.md)
+### Instance Properties
+- [var gridView: NSGridView?](./gridview.md)
+- [var isHidden: Bool](./ishidden.md)
+- [var leadingPadding: CGFloat](./leadingpadding.md)
+- [var numberOfCells: Int](./numberofcells.md)
+- [var trailingPadding: CGFloat](./trailingpadding.md)
+- [var width: CGFloat](./width.md)
 
 
 ---

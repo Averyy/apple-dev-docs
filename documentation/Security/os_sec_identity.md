@@ -1,7 +1,8 @@
 # OS_sec_identity
 
 **Framework**: Security  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 2.0+
@@ -18,10 +19,14 @@
 protocol OS_sec_identity : NSObjectProtocol
 ```
 
+```objc
+@protocol OS_sec_identity <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

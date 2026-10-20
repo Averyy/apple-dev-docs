@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the feature.
 
@@ -10,7 +11,7 @@ The title of the feature.
 
 ## Declaration
 
-```swift
+```
 get title(): string | null;
 ```
 
@@ -20,15 +21,16 @@ You can’t set the title property of the map feature annotation.
 
 ## See Also
 
-- [featureType](mapfeatureannotation/featuretype.md)
+### Annotation properties
+- [featureType](./featuretype.md)
   A value that describes the type of place the feature represents.
-- [pointOfInterestCategory](mapfeatureannotation/pointofinterestcategory.md)
+- [pointOfInterestCategory](./pointofinterestcategory.md)
   The point-of-interest category of the feature.
-- [color](placeannotation/color.md)
+- [color](../placeannotation/color.md)
   The color of the place.
-- [glyphImage](placeannotation/glyphimage.md)
+- [glyphImage](../placeannotation/glyphimage.md)
   The glyph image for the place.
-- [selectedGlyphImage](placeannotation/selectedglyphimage.md)
+- [selectedGlyphImage](../placeannotation/selectedglyphimage.md)
   The selected glyph image for the place.
 
 

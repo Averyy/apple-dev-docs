@@ -1,7 +1,8 @@
 # kAXMonthFieldAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The month field of a time field represented by this accessibility object. This attribute is required for accessibility objects that represent time fields that display months.
 
@@ -12,6 +13,10 @@ The month field of a time field represented by this accessibility object. This a
 
 ```swift
 var kAXMonthFieldAttribute: String { get }
+```
+
+```c
+#define kAXMonthFieldAttribute
 ```
 
 

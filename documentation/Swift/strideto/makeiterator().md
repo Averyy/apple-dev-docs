@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of this sequence.
 
@@ -20,9 +21,11 @@ Returns an iterator over the elements of this sequence.
 func makeIterator() -> StrideToIterator<Element>
 ```
 
+Available when `Element` conforms to `Strideable`.
+
 #### Discussion
 
-> **Note**: O(1).
+> **Complexity**: O(1).
 
 
 ---

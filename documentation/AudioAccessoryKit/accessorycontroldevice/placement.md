@@ -1,7 +1,8 @@
 # AccessoryControlDevice.Placement
 
 **Framework**: AudioAccessoryKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The physical placement of an audio accessory.
 
@@ -17,29 +18,30 @@ enum Placement
 ## Topics
 
 ### Placement positions
-- [AccessoryControlDevice.Placement.inEar](accessorycontroldevice/placement/inear.md)
+- [AccessoryControlDevice.Placement.inEar](./placement/inear.md)
   The device is in someone’s ear.
-- [AccessoryControlDevice.Placement.offHead](accessorycontroldevice/placement/offhead.md)
+- [AccessoryControlDevice.Placement.offHead](./placement/offhead.md)
   The device isn’t on someone’s head.
-- [AccessoryControlDevice.Placement.onHead](accessorycontroldevice/placement/onhead.md)
+- [AccessoryControlDevice.Placement.onHead](./placement/onhead.md)
   The device is on someone’s head.
-- [AccessoryControlDevice.Placement.overTheEar](accessorycontroldevice/placement/overtheear.md)
+- [AccessoryControlDevice.Placement.overTheEar](./placement/overtheear.md)
   The device is over someone’s ear.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities.md)
+### Device characteristics
+- [AccessoryControlDevice.Capabilities](./capabilities.md)
   A set of capabilities that an audio accessory supports.
-- [AccessoryControlDevice.Configuration](accessorycontroldevice/configuration-swift.struct.md)
+- [AccessoryControlDevice.Configuration](./configuration-swift.struct.md)
   The configuration for an accessory.
 
 

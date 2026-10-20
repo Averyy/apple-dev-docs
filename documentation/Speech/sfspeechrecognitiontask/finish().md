@@ -1,7 +1,8 @@
 # finish()
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops accepting new audio and finishes processing on the audio input that has already been accepted.
 
@@ -18,13 +19,18 @@ Stops accepting new audio and finishes processing on the audio input that has al
 func finish()
 ```
 
+```objc
+- (void) finish;
+```
+
 #### Discussion
 
 For audio buffer–based recognition, recognition does not finish until this method is called, so be sure to call it when the audio source is exhausted.
 
 ## See Also
 
-- [var isFinishing: Bool](sfspeechrecognitiontask/isfinishing.md)
+### Finishing a speech recognition task
+- [var isFinishing: Bool](./isfinishing.md)
   A Boolean value that indicates whether audio input has stopped.
 
 

@@ -1,7 +1,8 @@
 # flip(along:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flips a projective transform along the specified axis.
 
@@ -11,7 +12,7 @@ Flips a projective transform along the specified axis.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,13 +27,14 @@ mutating func flip(along axis: Axis3D)
 
 ## See Also
 
-- [func sheared(AxisWithFactors) -> ProjectiveTransform3D](projectivetransform3d/sheared(_:).md)
+### Transforming a 3D projective transform structure
+- [func sheared(AxisWithFactors) -> ProjectiveTransform3D](./sheared%28_%29.md)
   Returns a projective transform that results from shearing over an axis by shear factors for the other two axes.
-- [enum AxisWithFactors](axiswithfactors.md)
+- [enum AxisWithFactors](../axiswithfactors.md)
   Constants that describe the axis of a shear transform.
-- [struct Axis3D](axis3d.md)
+- [struct Axis3D](../axis3d.md)
   Constants that describe an axis.
-- [func flipped(along: Axis3D) -> ProjectiveTransform3D](projectivetransform3d/flipped(along:).md)
+- [func flipped(along: Axis3D) -> ProjectiveTransform3D](./flipped%28along%29.md)
   Returns a projective transform that results from flipping it along the specified axis.
 
 

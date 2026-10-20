@@ -1,7 +1,8 @@
 # planetarium
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for planetariums.
 
@@ -20,13 +21,18 @@ The point of interest category for planetariums.
 static let planetarium: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryPlanetarium;
+```
+
 ## See Also
 
-- [static let library: MKPointOfInterestCategory](mkpointofinterestcategory/library.md)
+### Education
+- [static let library: MKPointOfInterestCategory](./library.md)
   The point of interest category for libraries.
-- [static let school: MKPointOfInterestCategory](mkpointofinterestcategory/school.md)
+- [static let school: MKPointOfInterestCategory](./school.md)
   The point of interest category for schools.
-- [static let university: MKPointOfInterestCategory](mkpointofinterestcategory/university.md)
+- [static let university: MKPointOfInterestCategory](./university.md)
   The point of interest category for universities.
 
 

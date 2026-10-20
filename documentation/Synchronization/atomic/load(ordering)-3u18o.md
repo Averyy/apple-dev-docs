@@ -1,7 +1,8 @@
 # load(ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Atomically loads and returns the current value, applying the specified memory ordering.
 
@@ -19,6 +20,8 @@ Atomically loads and returns the current value, applying the specified memory or
 ```swift
 func load(ordering: AtomicLoadOrdering) -> Value
 ```
+
+Available when `Value` conforms to `AtomicRepresentable` and `Value.AtomicRepresentation` is `_Atomic16BitStorage`.
 
 #### Return Value
 

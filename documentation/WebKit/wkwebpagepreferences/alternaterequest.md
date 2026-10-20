@@ -1,7 +1,8 @@
 # alternateRequest
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var alternateRequest: URLRequest? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSURLRequest * alternateRequest;
 ```
 
 

@@ -1,7 +1,8 @@
 # OSLogPrivacy.Mask
 
 **Framework**: os  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mask that establishes how the system displays a redacted value in a log message.
 
@@ -11,7 +12,7 @@ A mask that establishes how the system displays a redacted value in a log messag
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,24 +24,25 @@ enum Mask
 ## Topics
 
 ### Privacy Mask Options
-- [OSLogPrivacy.Mask.hash](oslogprivacy/mask/hash.md)
+- [OSLogPrivacy.Mask.hash](./mask/hash.md)
   An option to replace a redacted value with a string that contains a hashed version of the original value.
-- [OSLogPrivacy.Mask.none](oslogprivacy/mask/none.md)
+- [OSLogPrivacy.Mask.none](./mask/none.md)
   An option to replace a redacted value with a generic string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [static func auto(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](oslogprivacy/auto(mask:).md)
+### Creating a Custom Privacy Mask
+- [static func auto(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](./auto%28mask%29.md)
   Returns a privacy structure that determines whether to redact or show values according to their type, and customizes the display of redacted values.
-- [static func `private`(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](oslogprivacy/private(mask:).md)
+- [static func `private`(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](./private%28mask%29.md)
   Returns a privacy structure that marks an interpolated value as private, and customizes the display of redacted values.
-- [static func sensitive(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](oslogprivacy/sensitive(mask:).md)
+- [static func sensitive(mask: OSLogPrivacy.Mask) -> OSLogPrivacy](./sensitive%28mask%29.md)
   Returns a privacy structure that marks an interpolated value as sensitive, and customizes the display of redacted values.
 
 

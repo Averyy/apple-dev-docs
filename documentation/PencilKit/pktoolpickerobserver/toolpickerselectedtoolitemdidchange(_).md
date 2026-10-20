@@ -1,7 +1,8 @@
 # toolPickerSelectedToolItemDidChange(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the observer when a person selects a new tool item.
 
@@ -17,9 +18,14 @@ Tells the observer when a person selects a new tool item.
 optional func toolPickerSelectedToolItemDidChange(_ toolPicker: PKToolPicker)
 ```
 
+```objc
+- (void) toolPickerSelectedToolItemDidChange:(PKToolPicker *) toolPicker;
+```
+
 ## See Also
 
-- [func toolPickerIsRulerActiveDidChange(PKToolPicker)](pktoolpickerobserver/toolpickerisruleractivedidchange(_:).md)
+### Detecting tool configuration changes
+- [func toolPickerIsRulerActiveDidChange(PKToolPicker)](./toolpickerisruleractivedidchange%28_%29.md)
   Tells the observer when a person shows or hides the ruler.
 
 

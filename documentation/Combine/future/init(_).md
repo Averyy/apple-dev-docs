@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that invokes a promise closure when the publisher emits an element.
 
@@ -22,11 +23,12 @@ init(_ attemptToFulfill: @escaping (@escaping Future<Output, Failure>.Promise) -
 
 ## Parameters
 
-- `attemptToFulfill`: A [`Future.Promise`](future/promise.md) that the publisher invokes when the publisher emits an element or terminates with an error.
+- `attemptToFulfill`: A [`Future.Promise`](./promise.md) that the publisher invokes when the publisher emits an element or terminates with an error.
 
 ## See Also
 
-- [typealias Promise](future/promise.md)
+### Creating a future
+- [typealias Promise](./promise.md)
   A type that represents a closure to invoke in the future, when an element or error is available.
 
 

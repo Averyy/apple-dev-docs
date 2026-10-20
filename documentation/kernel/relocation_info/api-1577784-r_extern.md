@@ -1,7 +1,8 @@
 # r_extern
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Indicates whether the `r_symbolnum` field is an index into the symbol table (1) or a section number (0).
 
@@ -10,7 +11,7 @@ Indicates whether the `r_symbolnum` field is an index into the symbol table (1) 
 
 ## Declaration
 
-```swift
+```c
 uint32_t r_extern:1;
 ```
 

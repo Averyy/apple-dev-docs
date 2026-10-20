@@ -1,10 +1,11 @@
 # IOBluetoothHandsFreeCodecID.iDmSBC
 
 **Framework**: IOBluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 case iDmSBC
 ```
 
+```c
+IOBluetoothHandsFreeCodecIDmSBC
+```
+
 ## See Also
 
-- [IOBluetoothHandsFreeCodecID.IDAACELD](iobluetoothhandsfreecodecid/idaaceld.md)
-- [IOBluetoothHandsFreeCodecID.IDCVSD](iobluetoothhandsfreecodecid/idcvsd.md)
+### Enumeration Cases
+- [IOBluetoothHandsFreeCodecID.IDAACELD](./idaaceld.md)
+- [IOBluetoothHandsFreeCodecID.IDCVSD](./idcvsd.md)
 
 
 ---

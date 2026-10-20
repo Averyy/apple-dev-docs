@@ -1,7 +1,8 @@
 # rawContent
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw response content.
 
@@ -25,7 +26,8 @@ When `Content` is `GeneratedContent`, this is the same as `content`.
 
 ## See Also
 
-- [let content: Content](languagemodelsession/response/content.md)
+### Getting the response content
+- [let content: Content](./content.md)
   The response content.
 
 

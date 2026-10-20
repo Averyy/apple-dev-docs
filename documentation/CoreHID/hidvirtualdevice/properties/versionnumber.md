@@ -1,7 +1,8 @@
 # versionNumber
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the device.
 

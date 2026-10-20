@@ -1,7 +1,8 @@
 # awakeFromBundle()
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the action object to perform setup tasks requiring the presence of all bundle objects.
 
@@ -13,6 +14,10 @@ Allows the action object to perform setup tasks requiring the presence of all bu
 
 ```swift
 func awakeFromBundle()
+```
+
+```objc
+- (void) awakeFromBundle;
 ```
 
 #### Discussion

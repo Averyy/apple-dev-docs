@@ -1,7 +1,8 @@
 # WAError.DeviceInvalidDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing the device that’s invalid.
 
@@ -19,14 +20,15 @@ struct DeviceInvalidDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case deviceInvalid(WAError.DeviceInvalidDetails)](waerror/deviceinvalid(_:).md)
+### Checking for invalid device
+- [case deviceInvalid(WAError.DeviceInvalidDetails)](./deviceinvalid%28_%29.md)
   An error that occurs if your app specifies a paired device it doesn’t have access to.
 
 

@@ -1,7 +1,8 @@
 # column
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The column (offset of the extremum of the composite)
 

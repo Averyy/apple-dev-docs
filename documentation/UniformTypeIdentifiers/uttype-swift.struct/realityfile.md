@@ -1,7 +1,8 @@
 # realityFile
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a Reality Composer file.
 
@@ -24,13 +25,14 @@ static var realityFile: UTType { get }
 
 The identifier for this type is `com.apple.reality`.
 
-This type conforms to [`UTTypeData`](uttypedata.md).
+This type conforms to [`UTTypeData`](../uttypedata.md).
 
 ## See Also
 
-- [static var sceneKitScene: UTType](uttype-swift.struct/scenekitscene.md)
+### Apple 3D content
+- [static var sceneKitScene: UTType](./scenekitscene.md)
   A type that represents a SceneKit serialized scene.
-- [static var arReferenceObject: UTType](uttype-swift.struct/arreferenceobject.md)
+- [static var arReferenceObject: UTType](./arreferenceobject.md)
   A type that represents an augmented reality reference object.
 
 

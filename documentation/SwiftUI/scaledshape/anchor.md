@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ var anchor: UnitPoint
 
 ## See Also
 
-- [var scale: CGSize](scaledshape/scale.md)
-- [var shape: Content](scaledshape/shape.md)
+### Getting the shape’s characteristics
+- [var scale: CGSize](./scale.md)
+- [var shape: Content](./shape.md)
 
 
 ---

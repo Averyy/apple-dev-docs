@@ -1,7 +1,8 @@
 # resume(with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the task awaiting the continuation by having it either return or throw an error based on the state of the given `Result` value
 

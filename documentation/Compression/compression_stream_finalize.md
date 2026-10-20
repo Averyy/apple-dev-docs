@@ -1,23 +1,28 @@
 # COMPRESSION_STREAM_FINALIZE
 
 **Framework**: Compression  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the operation will add no further input blocks to the stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var COMPRESSION_STREAM_FINALIZE: compression_stream_flags { get }
+```
+
+```c
+COMPRESSION_STREAM_FINALIZE
 ```
 
 

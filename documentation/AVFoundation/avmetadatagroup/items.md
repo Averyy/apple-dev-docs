@@ -1,7 +1,8 @@
 # items
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of metadata items associated with the metadata group.
 
@@ -20,15 +21,20 @@ The array of metadata items associated with the metadata group.
 var items: [AVMetadataItem] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<AVMetadataItem *> * items;
+```
+
 #### Discussion
 
 The `items` array may be empty if no metadata items are associated with this group.
 
 ## See Also
 
-- [var uniqueID: String?](avmetadatagroup/uniqueid.md)
+### Inspecting the metadata group
+- [var uniqueID: String?](./uniqueid.md)
   The unique identifier for the metadata group.
-- [var classifyingLabel: String?](avmetadatagroup/classifyinglabel.md)
+- [var classifyingLabel: String?](./classifyinglabel.md)
   The classifying label associated with the metadata group.
 
 

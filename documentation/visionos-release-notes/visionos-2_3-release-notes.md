@@ -1,12 +1,13 @@
 # visionOS 2.3 Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 2.3. The SDK comes bundled with Xcode 16.2. For information on the compatibility requirements for Xcode 16.2, see [`Xcode 16.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_2-release-notes).
+The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 2.3. The SDK comes bundled with Xcode 16.2. For information on the compatibility requirements for Xcode 16.2, see [Xcode 16.2 Release Notes](../Xcode-Release-Notes/xcode-16_2-release-notes.md).
 
 ##### Compatible Apps
 
@@ -14,7 +15,7 @@ The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro d
 
 - Fixed: In the visionOS Simulator, iOS apps running against the “Apple Vision Pro (Designed for iPad)” target will crash upon launch if they link `ImagePlayground.framework`.  (141228566) (FB16079366)
 
-##### Healthkit
+##### HealthKit
 
 ###### Resolved Issues
 
@@ -22,17 +23,18 @@ The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro d
 
 ## See Also
 
-- [visionOS 2.6 Release Notes](visionos-2_6-release-notes.md)
+### visionOS 2
+- [visionOS 2.6 Release Notes](./visionos-2_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.5 Release Notes](visionos-2_5-release-notes.md)
+- [visionOS 2.5 Release Notes](./visionos-2_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.4 Release Notes](visionos-2_4-release-notes.md)
+- [visionOS 2.4 Release Notes](./visionos-2_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.2 Release Notes](visionos-2_2-release-notes.md)
+- [visionOS 2.2 Release Notes](./visionos-2_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2.1 Release Notes](visionos-2_1-release-notes.md)
+- [visionOS 2.1 Release Notes](./visionos-2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 2 Release Notes](visionos-2-release-notes.md)
+- [visionOS 2 Release Notes](./visionos-2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

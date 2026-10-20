@@ -1,7 +1,8 @@
 # x
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first element of the vector.
 

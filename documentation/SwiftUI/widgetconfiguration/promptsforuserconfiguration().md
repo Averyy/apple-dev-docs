@@ -1,7 +1,8 @@
 # promptsForUserConfiguration()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies that a widget’s configuration UI should be automatically presented after the widget is added.
 

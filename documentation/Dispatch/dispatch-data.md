@@ -1,6 +1,7 @@
 # Dispatch Data
 
-**Framework**: Dispatch
+**Framework**: Dispatch  
+**Role**: API Collection
 
 An object that manages a memory-based data buffer and exposes it as a contiguous block of memory.
 
@@ -11,24 +12,25 @@ The memory buffer managed by this object may be a single contiguous block of mem
 ## Topics
 
 ### Creating a Dispatch Data Object
-- [typealias dispatch_data_t](dispatch_data_t.md)
+- [typealias dispatch_data_t](./dispatch_data_t.md)
   An immutable object representing a contiguous or sparse region of memory.
 
 ## See Also
 
-- [class DispatchSource](dispatchsource.md)
+### System Event Monitoring
+- [class DispatchSource](./dispatchsource.md)
   An object that coordinates the processing of specific low-level system events, such as file-system events, timers, and UNIX signals.
-- [Dispatch Source](dispatch-source.md)
+- [Dispatch Source](./dispatch-source.md)
   An object that coordinates the processing of specific low-level system events, such as file-system events, timers, and UNIX signals.
-- [class DispatchIO](dispatchio.md)
+- [class DispatchIO](./dispatchio.md)
   An object that manages operations on a file descriptor using either stream-based or random-access semantics.
-- [struct DispatchData](dispatchdata.md)
+- [struct DispatchData](./dispatchdata.md)
   An object that manages a memory-based data buffer and exposes it as a contiguous block of memory.
-- [struct DispatchDataIterator](dispatchdataiterator.md)
+- [struct DispatchDataIterator](./dispatchdataiterator.md)
   A byte-by-byte iterator over the contents of a dispatch data object.
-- [Dispatch I/O](dispatch-i-o.md)
+- [Dispatch I/O](./dispatch-i-o.md)
   An object that manages operations on a file descriptor using either stream-based or random-access semantics.
-- [protocol DispatchSourceProtocol](dispatchsourceprotocol.md)
+- [protocol DispatchSourceProtocol](./dispatchsourceprotocol.md)
   Defines a common set of properties and methods that are shared with all dispatch source types.
 
 

@@ -1,7 +1,8 @@
 # getEntries(with:at:matching:)
 
 **Framework**: OSLog  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence of log entries filtered by the parameters passed in.
 

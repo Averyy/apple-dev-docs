@@ -1,7 +1,8 @@
 # minimumItemSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The smallest allowable size for an item’s view.
 
@@ -14,17 +15,22 @@ The smallest allowable size for an item’s view.
 var minimumItemSize: NSSize { get set }
 ```
 
+```objc
+@property NSSize minimumItemSize;
+```
+
 #### Discussion
 
 Use this property to ensure that items have a minimum size when displayed in the grid. The default value of this property is (`0.0`, `0.0`), which imposes no minimum size for items.
 
 ## See Also
 
-- [var maximumNumberOfRows: Int](nscollectionviewgridlayout/maximumnumberofrows.md)
+### Specifying the Grid Parameters
+- [var maximumNumberOfRows: Int](./maximumnumberofrows.md)
   The maximum number of rows to display in the collection view’s visible area.
-- [var maximumNumberOfColumns: Int](nscollectionviewgridlayout/maximumnumberofcolumns.md)
+- [var maximumNumberOfColumns: Int](./maximumnumberofcolumns.md)
   The maximum number of columns to display in the collection view’s visible area.
-- [var maximumItemSize: NSSize](nscollectionviewgridlayout/maximumitemsize.md)
+- [var maximumItemSize: NSSize](./maximumitemsize.md)
   The largest allowable size for an item’s view.
 
 

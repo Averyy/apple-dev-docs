@@ -1,7 +1,8 @@
 # willSaveObjectsNotification
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts before a context writes pending changes to disk.
 
@@ -11,7 +12,7 @@ A notification that posts before a context writes pending changes to disk.
 - Mac Catalyst 3.0+
 - macOS 10.5+
 - tvOS 3.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration
@@ -22,39 +23,40 @@ static let willSaveObjectsNotification: Notification.Name
 
 #### Discussion
 
-This notification’s `object` is the context that’s about to save. Only use the notification to operate on the in-process save operation. For example, to insert additional managed objects. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](nsmanagedobjectcontext.md) posts notifications to the same thread that creates it.
+This notification’s `object` is the context that’s about to save. Only use the notification to operate on the in-process save operation. For example, to insert additional managed objects. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) posts notifications to the same thread that creates it.
 
 There is no `userInfo` dictionary.
 
 ## See Also
 
-- [static let didChangeObjectsNotification: Notification.Name](nsmanagedobjectcontext/didchangeobjectsnotification.md)
+### Managing notifications
+- [static let didChangeObjectsNotification: Notification.Name](./didchangeobjectsnotification.md)
   A notification that posts when a context makes changes to its registered objects.
-- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md)
+- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md)
   A notification that posts when there are changes to context’s registered managed objects.
-- [static let didSaveObjectsNotification: Notification.Name](nsmanagedobjectcontext/didsaveobjectsnotification.md)
+- [static let didSaveObjectsNotification: Notification.Name](./didsaveobjectsnotification.md)
   A notification that posts after a context completes a save.
-- [static let NSManagedObjectContextDidSave: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md)
+- [static let NSManagedObjectContextDidSave: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md)
   A notification that posts after a context finishes writing unsaved changes.
-- [static let NSManagedObjectContextWillSave: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextwillsave.md)
+- [static let NSManagedObjectContextWillSave: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextwillsave.md)
   A notification that posts before a context writes unsaved changes.
-- [let NSInsertedObjectsKey: String](nsinsertedobjectskey.md)
+- [let NSInsertedObjectsKey: String](../nsinsertedobjectskey.md)
   A key for the set of objects that were inserted into the context.
-- [let NSUpdatedObjectsKey: String](nsupdatedobjectskey.md)
+- [let NSUpdatedObjectsKey: String](../nsupdatedobjectskey.md)
   A key for the set of objects that were updated.
-- [let NSDeletedObjectsKey: String](nsdeletedobjectskey.md)
+- [let NSDeletedObjectsKey: String](../nsdeletedobjectskey.md)
   A key for the set of objects that were marked for deletion during the previous event.
-- [let NSRefreshedObjectsKey: String](nsrefreshedobjectskey.md)
+- [let NSRefreshedObjectsKey: String](../nsrefreshedobjectskey.md)
   A key for the set of objects that were refreshed but were not dirtied in the scope of this context.
-- [let NSInvalidatedObjectsKey: String](nsinvalidatedobjectskey.md)
+- [let NSInvalidatedObjectsKey: String](../nsinvalidatedobjectskey.md)
   A key for the set of objects that were invalidated.
-- [let NSInvalidatedAllObjectsKey: String](nsinvalidatedallobjectskey.md)
+- [let NSInvalidatedAllObjectsKey: String](../nsinvalidatedallobjectskey.md)
   A key that specifies that all objects in the context have been invalidated.
-- [static let didMergeChangesObjectIDsNotification: Notification.Name](nsmanagedobjectcontext/didmergechangesobjectidsnotification.md)
+- [static let didMergeChangesObjectIDsNotification: Notification.Name](./didmergechangesobjectidsnotification.md)
   A notification that posts after a context finishes merging changes from another notification.
-- [static let didSaveObjectIDsNotification: Notification.Name](nsmanagedobjectcontext/didsaveobjectidsnotification.md)
+- [static let didSaveObjectIDsNotification: Notification.Name](./didsaveobjectidsnotification.md)
   A notification that posts after a context finishes saving changes to its managed objects.
-- [NSManagedObjectContext.NotificationKey](nsmanagedobjectcontext/notificationkey.md)
+- [NSManagedObjectContext.NotificationKey](./notificationkey.md)
   Keys to access details in user info dictionaries of managed object context notifications.
 
 

@@ -1,7 +1,8 @@
 # inspectorColumnWidth(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a fixed, preferred width for the inspector containing this view when presented as a trailing column.
 
@@ -20,9 +21,9 @@ func inspectorColumnWidth(_ width: CGFloat) -> some View
 
 #### Discussion
 
-Apply this modifier on the content of a [`inspector(isPresented:content:)`](view/inspector(ispresented:content:).md) to specify a fixed preferred width for the trailing column. Use [`inspectorColumnWidth(min:ideal:max:)`](view/inspectorcolumnwidth(min:ideal:max:).md) if you need to specify a flexible width.
+Apply this modifier on the content of a [`inspector(isPresented:content:)`](./inspector%28ispresented,content%29.md) to specify a fixed preferred width for the trailing column. Use [`inspectorColumnWidth(min:ideal:max:)`](./inspectorcolumnwidth%28min,ideal,max%29.md) if you need to specify a flexible width.
 
-The following example shows an editor interface with an inspector, which when presented as a trailing-column, has a fixed width of 225 points. The example also uses [`interactiveDismissDisabled(_:)`](view/interactivedismissdisabled(_:).md) to prevent the inspector from being collapsed by user action like dragging a divider.
+The following example shows an editor interface with an inspector, which when presented as a trailing-column, has a fixed width of 225 points. The example also uses [`interactiveDismissDisabled(_:)`](./interactivedismissdisabled%28_%29.md) to prevent the inspector from being collapsed by user action like dragging a divider.
 
 ```swift
 MyEditorView()
@@ -33,7 +34,7 @@ MyEditorView()
     }
 ```
 
-> **Note**: A fixed width does not prevent the user collapsing the inspector on macOS. See [`interactiveDismissDisabled(_:)`](view/interactivedismissdisabled(_:).md).
+> **Note**: A fixed width does not prevent the user collapsing the inspector on macOS. See [`interactiveDismissDisabled(_:)`](./interactivedismissdisabled%28_%29.md).
 
 ## Parameters
 
@@ -41,9 +42,10 @@ MyEditorView()
 
 ## See Also
 
-- [func inspector<V>(isPresented: Binding<Bool>, content: () -> V) -> some View](view/inspector(ispresented:content:).md)
+### Presenting an inspector
+- [func inspector<V>(isPresented: Binding<Bool>, content: () -> V) -> some View](./inspector%28ispresented,content%29.md)
   Inserts an inspector at the applied position in the view hierarchy.
-- [func inspectorColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](view/inspectorcolumnwidth(min:ideal:max:).md)
+- [func inspectorColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](./inspectorcolumnwidth%28min,ideal,max%29.md)
   Sets a flexible, preferred width for the inspector in a trailing-column presentation.
 
 

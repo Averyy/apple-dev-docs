@@ -1,23 +1,30 @@
 # userIdentityDiscoveredBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute for each user identity.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 17.0
+- iPadOS 10.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- macOS 10.12+ - Deprecated in 14.0
+- tvOS 10.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 10.0
+
+> **Deprecated**: No longer supported. Please see Sharing CloudKit Data with Other iCloud Users.
 
 ## Declaration
 
 ```swift
 var userIdentityDiscoveredBlock: ((CKUserIdentity, CKUserIdentity.LookupInfo) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^userIdentityDiscoveredBlock)(CKUserIdentity *identity, CKUserIdentityLookupInfo *lookupInfo);
 ```
 
 #### Discussion
@@ -33,7 +40,8 @@ If you intend to use this closure to process results, set it before you execute 
 
 ## See Also
 
-- [var discoverUserIdentitiesCompletionBlock: (((any Error)?) -> Void)?](ckdiscoveruseridentitiesoperation/discoveruseridentitiescompletionblock.md)
+### Processing the Results
+- [var discoverUserIdentitiesCompletionBlock: (((any Error)?) -> Void)?](./discoveruseridentitiescompletionblock.md)
   The closure to execute when the operation finishes.
 
 

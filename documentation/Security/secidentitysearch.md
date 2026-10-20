@@ -1,7 +1,8 @@
 # SecIdentitySearch
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Contains information about an identity search.
 
@@ -15,11 +16,15 @@ Contains information about an identity search.
 class SecIdentitySearch
 ```
 
+```c
+typedef struct OpaqueSecIdentitySearchRef * SecIdentitySearchRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

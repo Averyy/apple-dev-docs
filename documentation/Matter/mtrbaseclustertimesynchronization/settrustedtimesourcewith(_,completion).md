@@ -1,7 +1,8 @@
 # setTrustedTimeSourceWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetTrustedTimeSource
 
@@ -17,7 +18,15 @@ Command SetTrustedTimeSource
 ## Declaration
 
 ```swift
+func setTrustedTimeSourceWith(_ params: MTRTimeSynchronizationClusterSetTrustedTimeSourceParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setTrustedTimeSourceWith(_ params: MTRTimeSynchronizationClusterSetTrustedTimeSourceParams) async throws
+```
+
+```objc
+- (void) setTrustedTimeSourceWithParams:(MTRTimeSynchronizationClusterSetTrustedTimeSourceParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

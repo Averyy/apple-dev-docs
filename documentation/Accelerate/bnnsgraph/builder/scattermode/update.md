@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ScatterMode.update
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation overwrites existing values with scattered values.
 

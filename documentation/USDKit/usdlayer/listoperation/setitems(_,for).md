@@ -1,7 +1,8 @@
 # setItems(_:for:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the items in the given operation’s slot.
 
@@ -21,7 +22,7 @@ mutating func setItems(_ items: [T], for operation: USDLayer.ListOperationType) 
 
 #### Discussion
 
-> **Note**: An error if any item fails validation.
+> **Throws**: An error if any item fails validation.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # CapturedStructure.USDExportOptions
 
 **Framework**: RoomPlan  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type a captured structure uses to configure exports.
 
@@ -18,9 +19,10 @@ typealias USDExportOptions = CapturedRoom.USDExportOptions
 
 ## See Also
 
-- [func export(to: URL, metadataURL: URL?, modelProvider: CapturedStructure.ModelProvider?, exportOptions: CapturedStructure.USDExportOptions) throws](capturedstructure/export(to:metadataurl:modelprovider:exportoptions:).md)
+### Generating a USDZ file
+- [func export(to: URL, metadataURL: URL?, modelProvider: CapturedStructure.ModelProvider?, exportOptions: CapturedStructure.USDExportOptions) throws](./export%28to,metadataurl,modelprovider,exportoptions%29.md)
   Produces a 3D asset from the captured structure.
-- [CapturedStructure.ModelProvider](capturedstructure/modelprovider.md)
+- [CapturedStructure.ModelProvider](./modelprovider.md)
   The type a captured structure uses to output sophisticated 3D models.
 
 

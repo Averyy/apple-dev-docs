@@ -1,7 +1,8 @@
 # extracted(from:title:)
 
 **Framework**: Image Playground  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a concept structure from a long-form string and a title that guides the extraction of concepts from that string.
 
@@ -33,13 +34,14 @@ Call this method when you want to use long-form text to generate an image. The m
 
 ## See Also
 
-- [static func text(String) -> ImagePlaygroundConcept](imageplaygroundconcept/text(_:).md)
+### Describing the image
+- [static func text(String) -> ImagePlaygroundConcept](./text%28_%29.md)
   Creates a concept structure that includes a short text description.
-- [static func drawing(PKDrawing) -> ImagePlaygroundConcept](imageplaygroundconcept/drawing(_:).md)
+- [static func drawing(PKDrawing) -> ImagePlaygroundConcept](./drawing%28_%29.md)
   Creates a concept structure from a PencilKit drawing.
-- [static func image(CGImage) -> ImagePlaygroundConcept](imageplaygroundconcept/image(_:)-29ora.md)
+- [static func image(CGImage) -> ImagePlaygroundConcept](./image%28_%29-29ora.md)
   Creates a concept structure from the specified image object.
-- [static func image(URL) -> ImagePlaygroundConcept?](imageplaygroundconcept/image(_:)-2s44c.md)
+- [static func image(URL) -> ImagePlaygroundConcept?](./image%28_%29-2s44c.md)
   Creates a concept structure from the image at the specified URL.
 
 

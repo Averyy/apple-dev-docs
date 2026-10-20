@@ -1,22 +1,27 @@
 # MTLMathFloatingPointFunctions.fast
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that Metal uses the fast version of the 32b floating-point math functions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case fast
+```
+
+```c
+MTLMathFloatingPointFunctionsFast
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ This is the default behavior.
 
 ## See Also
 
-- [MTLMathFloatingPointFunctions.precise](mtlmathfloatingpointfunctions/precise.md)
+### Function sets
+- [MTLMathFloatingPointFunctions.precise](./precise.md)
   An indication that Metal uses the precise version of the 32b floating-point math functions.
 
 

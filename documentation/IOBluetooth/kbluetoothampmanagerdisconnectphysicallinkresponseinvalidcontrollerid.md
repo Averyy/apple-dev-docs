@@ -1,10 +1,11 @@
 # kBluetoothAMPManagerDisconnectPhysicalLinkResponseInvalidControllerID
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothAMPManagerDisconnectPhysicalLinkResponseInvalidControllerID: BluetoothAMPDisconnectPhysicalLinkResponseStatus { get }
 ```
 
+```c
+kBluetoothAMPManagerDisconnectPhysicalLinkResponseInvalidControllerID
+```
+
 ## See Also
 
-- [var kBluetoothAMPManagerDisconnectPhysicalLinkResponseNoPhysicalLink: BluetoothAMPDisconnectPhysicalLinkResponseStatus](kbluetoothampmanagerdisconnectphysicallinkresponsenophysicallink.md)
-- [var kBluetoothAMPManagerDisconnectPhysicalLinkResponseSuccess: BluetoothAMPDisconnectPhysicalLinkResponseStatus](kbluetoothampmanagerdisconnectphysicallinkresponsesuccess.md)
+### Constants
+- [var kBluetoothAMPManagerDisconnectPhysicalLinkResponseNoPhysicalLink: BluetoothAMPDisconnectPhysicalLinkResponseStatus](./kbluetoothampmanagerdisconnectphysicallinkresponsenophysicallink.md)
+- [var kBluetoothAMPManagerDisconnectPhysicalLinkResponseSuccess: BluetoothAMPDisconnectPhysicalLinkResponseStatus](./kbluetoothampmanagerdisconnectphysicallinkresponsesuccess.md)
 
 
 ---

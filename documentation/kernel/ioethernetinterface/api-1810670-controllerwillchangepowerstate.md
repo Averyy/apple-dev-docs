@@ -7,7 +7,7 @@ Handles a notification that the network controller servicing this interface obje
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn controllerWillChangePowerState( 
  IONetworkController *controller, 
  IOPMPowerFlagsflags, 
@@ -15,7 +15,7 @@ virtual IOReturn controllerWillChangePowerState(
  IOService *policyMaker);
 ```
 
-#### Return_value
+#### Return Value
 
 Always returns kIOReturnSuccess.
 
@@ -32,19 +32,20 @@ If the controller is about to transition to an unusable state, and it is current
 
 ## See Also
 
-- [controllerDidChangePowerState](ioethernetinterface/1810626-controllerdidchangepowerstate.md)
+### Miscellaneous
+- [controllerDidChangePowerState](./api-1810626-controllerdidchangepowerstate.md)
   Handles a notification that the network controller servicing this interface object has transitioned to a new power state.
-- [controllerDidOpen](ioethernetinterface/1810636-controllerdidopen.md)
+- [controllerDidOpen](./api-1810636-controllerdidopen.md)
   A notification that the interface has opened the network controller.
-- [controllerWillClose](ioethernetinterface/1810684-controllerwillclose.md)
+- [controllerWillClose](./api-1810684-controllerwillclose.md)
   A notification that the interface will close the network controller.
-- [free](ioethernetinterface/1810696-free.md)
+- [free](./api-1810696-free.md)
   Frees the IOEthernetInterface instance.
-- [getNamePrefix](ioethernetinterface/1810711-getnameprefix.md)
+- [getNamePrefix](./api-1810711-getnameprefix.md)
   Returns a string containing the prefix to use when creating a BSD name for this interface.
-- [init](ioethernetinterface/1810722-init.md)
+- [init](./api-1810722-init.md)
   Initializes an IOEthernetInterface instance.
-- [performCommand](ioethernetinterface/1810736-performcommand.md)
+- [performCommand](./api-1810736-performcommand.md)
   Handles an ioctl command sent to the Ethernet interface.
 
 

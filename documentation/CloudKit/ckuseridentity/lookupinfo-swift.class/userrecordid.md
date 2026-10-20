@@ -1,7 +1,8 @@
 # userRecordID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the user record.
 
@@ -21,15 +22,20 @@ The ID of the user record.
 var userRecordID: CKRecord.ID? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) CKRecordID * userRecordID;
+```
+
 #### Discussion
 
 Use this value to retrieve the user record for the user identity. The user record doesn’t contain any personal information about the user, by default. You can add data to the user record, but you shouldn’t add anything sensitive.
 
 ## See Also
 
-- [var emailAddress: String?](ckuseridentity/lookupinfo-swift.class/emailaddress.md)
+### Accessing the Criteria
+- [var emailAddress: String?](./emailaddress.md)
   The user’s email address.
-- [var phoneNumber: String?](ckuseridentity/lookupinfo-swift.class/phonenumber.md)
+- [var phoneNumber: String?](./phonenumber.md)
   The user’s phone number.
 
 

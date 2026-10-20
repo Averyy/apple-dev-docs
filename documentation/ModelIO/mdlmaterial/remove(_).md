@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified material property from the material.
 
@@ -19,6 +20,10 @@ Removes the specified material property from the material.
 func remove(_ property: MDLMaterialProperty)
 ```
 
+```objc
+- (void) removeProperty:(MDLMaterialProperty *) property;
+```
+
 #### Discussion
 
 This method has no effect if the specified material property is not contained in the material.
@@ -29,15 +34,16 @@ This method has no effect if the specified material property is not contained in
 
 ## See Also
 
-- [func propertyNamed(String) -> MDLMaterialProperty?](mdlmaterial/propertynamed(_:).md)
+### Working with individual material properties
+- [func propertyNamed(String) -> MDLMaterialProperty?](./propertynamed%28_%29.md)
   Returns the material property with the specified name.
-- [func property(with: MDLMaterialSemantic) -> MDLMaterialProperty?](mdlmaterial/property(with:).md)
+- [func property(with: MDLMaterialSemantic) -> MDLMaterialProperty?](./property%28with%29.md)
   Returns the material property for the specified material semantic.
-- [func properties(with: MDLMaterialSemantic) -> [MDLMaterialProperty]](mdlmaterial/properties(with:).md)
+- [func properties(with: MDLMaterialSemantic) -> [MDLMaterialProperty]](./properties%28with%29.md)
   Returns the complete list of material properties that match the specified material semantic.
-- [func setProperty(MDLMaterialProperty)](mdlmaterial/setproperty(_:).md)
+- [func setProperty(MDLMaterialProperty)](./setproperty%28_%29.md)
   Adds a new material property to or replaces an existing material property in the material.
-- [func removeAllProperties()](mdlmaterial/removeallproperties.md)
+- [func removeAllProperties()](./removeallproperties%28%29.md)
   Removes all material properties from the material.
 
 

@@ -1,6 +1,7 @@
 # About Containers
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Learn the basic Apple News Format container concepts required for the three advanced tutorials.
 
@@ -30,17 +31,19 @@ In the example above, the `container` component has two child components. Notice
 
 ## See Also
 
-- [Nesting Components in an Article](nesting-components-in-an-article.md)
+### Related Documentation
+- [Nesting Components in an Article](./nesting-components-in-an-article.md)
   Use container components to create the component hierarchies you need for special article designs.
-- [object Container](../applenewsformat/container.md)
+- [object Container](https://developer.apple.com/documentation/applenewsformat/container)
   Properties shared by all container types.
-- [Setting Up the Advanced Tutorials](setting-up-the-advanced-tutorials.md)
+### Advanced Design Tutorial 1: Headers and Parallax Behavior
+- [Setting Up the Advanced Tutorials](./setting-up-the-advanced-tutorials.md)
   Download the tutorial files, and learn about what you’ll create in the three advanced tutorials.
-- [Creating a Layered Header](creating-a-layered-header.md)
+- [Creating a Layered Header](./creating-a-layered-header.md)
   Create a header with a caption that’s layered in front of an image.
-- [Adding Parallax Behavior](adding-parallax-behavior.md)
+- [Adding Parallax Behavior](./adding-parallax-behavior.md)
   Create an illusion of multiple flat layers by causing the article body to overlap the header as the user scrolls.
-- [Viewing the Finished Article for Advanced Design Tutorial 1](viewing-the-finished-article-for-advanced-design-tutorial-1.md)
+- [Viewing the Finished Article for Advanced Design Tutorial 1](./viewing-the-finished-article-for-advanced-design-tutorial-1.md)
   See the full JSON code from this tutorial.
 
 

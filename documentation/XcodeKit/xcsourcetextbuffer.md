@@ -1,7 +1,8 @@
 # XCSourceTextBuffer
 
 **Framework**: XcodeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A buffer you use to access and modify the text contents and text selections in a source editor.
 
@@ -14,6 +15,10 @@ A buffer you use to access and modify the text contents and text selections in a
 class XCSourceTextBuffer
 ```
 
+```objc
+@interface XCSourceTextBuffer : NSObject
+```
+
 #### Overview
 
 Mutations to the buffer are tracked and committed when a command completes successfully and has not been canceled by the user.
@@ -21,40 +26,41 @@ Mutations to the buffer are tracked and committed when a command completes succe
 ## Topics
 
 ### Accessing Source Text
-- [var completeBuffer: String](xcsourcetextbuffer/completebuffer.md)
+- [var completeBuffer: String](./xcsourcetextbuffer/completebuffer.md)
   The complete buffer’s string representation.
-- [var contentUTI: String](xcsourcetextbuffer/contentuti.md)
+- [var contentUTI: String](./xcsourcetextbuffer/contentuti.md)
   The Uniform Type Identifier (UTI) of the content in the buffer.
 ### Editing Source Text
-- [var lines: NSMutableArray](xcsourcetextbuffer/lines.md)
+- [var lines: NSMutableArray](./xcsourcetextbuffer/lines.md)
   The lines of text in the buffer, including line endings.
-- [var selections: NSMutableArray](xcsourcetextbuffer/selections.md)
+- [var selections: NSMutableArray](./xcsourcetextbuffer/selections.md)
   The text selections in the buffer.
 ### Configuring Source Editor Indentation
-- [var indentationWidth: Int](xcsourcetextbuffer/indentationwidth.md)
+- [var indentationWidth: Int](./xcsourcetextbuffer/indentationwidth.md)
   The number of space characters used for indentation of the text in the buffer.
-- [var usesTabsForIndentation: Bool](xcsourcetextbuffer/usestabsforindentation.md)
+- [var usesTabsForIndentation: Bool](./xcsourcetextbuffer/usestabsforindentation.md)
   A Boolean value that indicates whether tabs are used for indentation.
-- [var tabWidth: Int](xcsourcetextbuffer/tabwidth.md)
+- [var tabWidth: Int](./xcsourcetextbuffer/tabwidth.md)
   The number of space characters represented by a tab character in the buffer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct XCSourceTextPosition](xcsourcetextposition.md)
+### Source Text
+- [struct XCSourceTextPosition](./xcsourcetextposition.md)
   A zero-based position in a source editor, defined by a line number and column number.
-- [class XCSourceTextRange](xcsourcetextrange.md)
+- [class XCSourceTextRange](./xcsourcetextrange.md)
   A half-open range of text in a buffer you use to select text or specify the insertion point for new text.
 
 

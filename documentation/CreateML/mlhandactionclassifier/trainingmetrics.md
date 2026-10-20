@@ -1,7 +1,8 @@
 # trainingMetrics
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Measurements of the hand action classifier’s performance on the training dataset.
 
@@ -20,9 +21,10 @@ var trainingMetrics: MLClassifierMetrics
 
 ## See Also
 
-- [func evaluation(on: MLHandActionClassifier.DataSource) throws -> MLClassifierMetrics](mlhandactionclassifier/evaluation(on:).md)
+### Evaluating a hand action classifier
+- [func evaluation(on: MLHandActionClassifier.DataSource) throws -> MLClassifierMetrics](./evaluation%28on%29.md)
   Generates metrics describing the hand action classifier’s performance on labeled videos.
-- [var validationMetrics: MLClassifierMetrics](mlhandactionclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the hand action classifier’s performance on the validation dataset.
 
 

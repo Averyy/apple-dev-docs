@@ -1,9 +1,10 @@
 # init(url:mimeType:expectedContentLength:textEncodingName:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates an initialized [`URLResponse`](urlresponse.md) object with the URL, MIME type, length, and text encoding set to given values.
+Creates an initialized [`URLResponse`](../urlresponse.md) object with the URL, MIME type, length, and text encoding set to given values.
 
 **Availability**:
 - iOS 2.0+
@@ -20,13 +21,17 @@ Creates an initialized [`URLResponse`](urlresponse.md) object with the URL, MIME
 init(url URL: URL, mimeType MIMEType: String?, expectedContentLength length: Int, textEncodingName name: String?)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL MIMEType:(NSString *) MIMEType expectedContentLength:(NSInteger) length textEncodingName:(NSString *) name;
+```
+
 #### Return Value
 
 The initialized URL response.
 
 #### Discussion
 
-This is the designated initializer for [`URLResponse`](urlresponse.md).
+This is the designated initializer for [`URLResponse`](../urlresponse.md).
 
 ## Parameters
 
@@ -37,7 +42,8 @@ This is the designated initializer for [`URLResponse`](urlresponse.md).
 
 ## See Also
 
-- [init?(url: URL, statusCode: Int, httpVersion: String?, headerFields: [String : String]?)](httpurlresponse/init(url:statuscode:httpversion:headerfields:)-21j4x.md)
+### Related Documentation
+- [init?(url: URL, statusCode: Int, httpVersion: String?, headerFields: [String : String]?)](../httpurlresponse/init%28url,statuscode,httpversion,headerfields%29-21j4x.md)
   Initializes an HTTP URL response object with a status code, protocol version, and response headers.
 
 

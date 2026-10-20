@@ -1,7 +1,8 @@
 # connectionDropTime
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timeout, in seconds, for TCP retransmission attempts.
 
@@ -22,9 +23,10 @@ var connectionDropTime: Int { get set }
 
 ## See Also
 
-- [var connectionTimeout: Int](nwprotocoltcp/options/connectiontimeout.md)
+### Setting Timeouts
+- [var connectionTimeout: Int](./connectiontimeout.md)
   The number of seconds that TCP waits before timing out its handshake.
-- [var persistTimeout: Int](nwprotocoltcp/options/persisttimeout.md)
+- [var persistTimeout: Int](./persisttimeout.md)
   The TCP persist timeout, in seconds, as defined by RFC 6429.
 
 

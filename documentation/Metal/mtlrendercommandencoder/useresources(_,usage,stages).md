@@ -1,7 +1,8 @@
 # useResources(_:usage:stages:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
 
@@ -11,7 +12,7 @@ Ensures the shaders in the render pass’s subsequent draw commands have access 
 - Mac Catalyst 13.1+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ func useResources(_ resources: [any MTLResource], usage: MTLResourceUsage, stage
 
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Discussion
 
@@ -29,23 +30,26 @@ You can make multiple resources *resident* (available in GPU memory) for the rem
 
 > **Note**:  You don’t need to call this method if you bind a resource to a shader stage.
 
-For example, you can explicitly bind resources for the vertex stage with the methods in the [`Vertex shader resource preparation commands`](vertex-shader-resource-preparation-commands.md) collection.
+For example, you can explicitly bind resources for the vertex stage with the methods in the [Vertex shader resource preparation commands](../vertex-shader-resource-preparation-commands.md) collection.
 
-The method also informs Metal when to apply hazard tracking for the resources you create with [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md). For resources you create with [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md), you need to apply an [`MTLFence`](mtlfence.md) or an [`MTLEvent`](mtlevent.md) to account for potential reading and writing hazards.
+The method also informs Metal when to apply hazard tracking for the resources you create with [`MTLHazardTrackingMode.tracked`](../mtlhazardtrackingmode/tracked.md). For resources you create with [`MTLHazardTrackingMode.untracked`](../mtlhazardtrackingmode/untracked.md), you need to apply an [`MTLFence`](../mtlfence.md) or an [`MTLEvent`](../mtlevent.md) to account for potential reading and writing hazards.
 
 You can reconfigure an individual resource’s `usage` options for subsequent draw calls in the same render pass by calling this method again.
 
-Apps typically call the method for resources in an argument buffer as a part of their *bindless* implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
+Apps typically call the method for resources in an argument buffer as a part of their *bindless* implementation. For more information about argument buffers and bindless implementations, see [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md) and [Go bindless with Metal 3](https://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
 
 ## Parameters
 
-- `resources`: An array of [`MTLResource`](mtlresource.md) instances that subsequent draw commands depend on.
-- `usage`: All the applicable access types the render pass’s shaders use for the resource, including [`read`](mtlresourceusage/read.md) and [`write`](mtlresourceusage/write.md). For applicable resources, you may be able to prevent the GPU from unnecessarily decompressing color attachments on some devices by setting `usage` to [`read`](mtlresourceusage/read.md).
-- `stages`: All the render stages that depend on the elements in `resources`, including [`object`](mtlrenderstages/object.md), [`mesh`](mtlrenderstages/mesh.md), [`vertex`](mtlrenderstages/vertex.md), [`fragment`](mtlrenderstages/fragment.md), and [`tile`](mtlrenderstages/tile.md).
+- `resources`: An array of [`MTLResource`](../mtlresource.md) instances that subsequent draw commands depend on.
+- `usage`: All the applicable access types the render pass’s shaders use for the resource, including [`read`](../mtlresourceusage/read.md) and [`write`](../mtlresourceusage/write.md).
+
+  For applicable resources, you may be able to prevent the GPU from unnecessarily decompressing color attachments on some devices by setting `usage` to [`read`](../mtlresourceusage/read.md).
+- `stages`: All the render stages that depend on the elements in `resources`, including [`object`](../mtlrenderstages/object.md), [`mesh`](../mtlrenderstages/mesh.md), [`vertex`](../mtlrenderstages/vertex.md), [`fragment`](../mtlrenderstages/fragment.md), and [`tile`](../mtlrenderstages/tile.md).
 
 ## See Also
 
-- [func useResource(any MTLResource, usage: MTLResourceUsage, stages: MTLRenderStages)](mtlrendercommandencoder/useresource(_:usage:stages:).md)
+### Loading individual resources for argument buffers
+- [func useResource(any MTLResource, usage: MTLResourceUsage, stages: MTLRenderStages)](./useresource%28_,usage,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to a resource.
 
 

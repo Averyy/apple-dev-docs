@@ -1,7 +1,8 @@
 # MTLFunctionType.vertex
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A vertex function you can use in a render pipeline state object.
 
@@ -10,7 +11,7 @@ A vertex function you can use in a render pipeline state object.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,15 +20,20 @@ A vertex function you can use in a render pipeline state object.
 case vertex
 ```
 
+```c
+MTLFunctionTypeVertex
+```
+
 ## See Also
 
-- [MTLFunctionType.fragment](mtlfunctiontype/fragment.md)
+### Function types
+- [MTLFunctionType.fragment](./fragment.md)
   A fragment function you can use in a render pipeline state object.
-- [MTLFunctionType.kernel](mtlfunctiontype/kernel.md)
+- [MTLFunctionType.kernel](./kernel.md)
   A kernel you can use in a compute pipeline state object.
-- [MTLFunctionType.intersection](mtlfunctiontype/intersection.md)
+- [MTLFunctionType.intersection](./intersection.md)
   A function you can use in an intersection function table.
-- [MTLFunctionType.visible](mtlfunctiontype/visible.md)
+- [MTLFunctionType.visible](./visible.md)
   A function you can use in a visible function table.
 
 

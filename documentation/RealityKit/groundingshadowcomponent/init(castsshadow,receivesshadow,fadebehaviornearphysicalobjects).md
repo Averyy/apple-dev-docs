@@ -1,7 +1,8 @@
 # init(castsShadow:receivesShadow:fadeBehaviorNearPhysicalObjects:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a grounding shadow component by configuring whether its entity receives shadows and its fade behavior near physical objects.
 

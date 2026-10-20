@@ -1,14 +1,15 @@
 # ASAccessoryEventType.accessoryAdded
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session added an accessory.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,15 +17,20 @@ The session added an accessory.
 case accessoryAdded
 ```
 
+```c
+ASAccessoryEventTypeAccessoryAdded
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 ## See Also
 
-- [ASAccessoryEventType.accessoryChanged](asaccessoryeventtype/accessorychanged.md)
+### Accessory events
+- [ASAccessoryEventType.accessoryChanged](./accessorychanged.md)
   The properties of an accessory changed.
-- [ASAccessoryEventType.accessoryRemoved](asaccessoryeventtype/accessoryremoved.md)
+- [ASAccessoryEventType.accessoryRemoved](./accessoryremoved.md)
   The session removed an accessory.
 
 

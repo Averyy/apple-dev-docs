@@ -1,7 +1,8 @@
 # MetricResult.hangTime(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,7 +18,8 @@ case hangTime(HangTimeMetric)
 
 ## See Also
 
-- [case hitchTime(HitchTimeMetric)](metricresult/hitchtime(_:).md)
+### Responsiveness and animation
+- [case hitchTime(HitchTimeMetric)](./hitchtime%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # quinary
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shape style that maps to the fifth level of the current content style.
 

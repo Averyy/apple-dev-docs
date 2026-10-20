@@ -1,7 +1,8 @@
 # ClothColliderShape.plane(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A plane collider shape.
 
@@ -18,15 +19,16 @@ case plane(ClothPlaneShape)
 
 ## See Also
 
-- [ClothColliderShape.box(_:)](clothcollidershape/box(_:).md)
+### Specifying the collider shape
+- [ClothColliderShape.box(_:)](./box%28_%29.md)
   A box collider shape.
-- [case roundedBox(ClothRoundedBoxShape)](clothcollidershape/roundedbox(_:).md)
+- [case roundedBox(ClothRoundedBoxShape)](./roundedbox%28_%29.md)
   A rounded box collider shape.
-- [ClothColliderShape.sphere(_:)](clothcollidershape/sphere(_:).md)
+- [ClothColliderShape.sphere(_:)](./sphere%28_%29.md)
   A sphere collider shape.
-- [case capsule(ClothCapsuleShape)](clothcollidershape/capsule(_:).md)
+- [case capsule(ClothCapsuleShape)](./capsule%28_%29.md)
   A capsule collider shape.
-- [ClothColliderShape.mesh(_:)](clothcollidershape/mesh(_:).md)
+- [ClothColliderShape.mesh(_:)](./mesh%28_%29.md)
   A mesh collider shape.
 
 

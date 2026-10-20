@@ -1,7 +1,8 @@
 # SparseScalingUser
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 User scaling.
 
@@ -20,19 +21,24 @@ User scaling.
 var SparseScalingUser: SparseScaling_t { get }
 ```
 
+```c
+SparseScalingUser
+```
+
 #### Discussion
 
 If scaling is `nil`, the operation doesn’t apply scaling.
 
 ## See Also
 
-- [var SparseScalingDefault: SparseScaling_t](sparsescalingdefault.md)
+### Constants
+- [var SparseScalingDefault: SparseScaling_t](./sparsescalingdefault.md)
   Default scaling.
-- [var SparseScalingEquilibriationInf: SparseScaling_t](sparsescalingequilibriationinf.md)
+- [var SparseScalingEquilibriationInf: SparseScaling_t](./sparsescalingequilibriationinf.md)
   The norm equilibration scaling using infinity norm.
-- [var SparseScalingHungarianScalingOnly: SparseScaling_t](sparsescalinghungarianscalingonly.md)
+- [var SparseScalingHungarianScalingOnly: SparseScaling_t](./sparsescalinghungarianscalingonly.md)
   Scaling using the Hungarian algorithm.
-- [var SparseScalingHungarianScalingAndOrdering: SparseScaling_t](sparsescalinghungarianscalingandordering.md)
+- [var SparseScalingHungarianScalingAndOrdering: SparseScaling_t](./sparsescalinghungarianscalingandordering.md)
   Scaling and ordering using the Hungarian algorithm.
 
 

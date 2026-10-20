@@ -1,7 +1,8 @@
 # UIUserInterfaceStyle.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified interface style.
 
@@ -18,15 +19,20 @@ An unspecified interface style.
 case unspecified
 ```
 
+```c
+UIUserInterfaceStyleUnspecified
+```
+
 #### Discussion
 
 Choose this option when you want to follow the system’s interface style.
 
 ## See Also
 
-- [UIUserInterfaceStyle.light](uiuserinterfacestyle/light.md)
+### Interface styles
+- [UIUserInterfaceStyle.light](./light.md)
   The light interface style.
-- [UIUserInterfaceStyle.dark](uiuserinterfacestyle/dark.md)
+- [UIUserInterfaceStyle.dark](./dark.md)
   The dark interface style.
 
 

@@ -1,7 +1,8 @@
 # AppSchema.AudioEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the audio domain.
 
@@ -21,39 +22,40 @@ protocol AudioEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var activity: some AppSchemaEnum](appschema/audioenum/activity.md)
+- [var activity: some AppSchemaEnum](./audioenum/activity.md)
   An enum schema for an activity parameter.
-- [var affinityState: some AppSchemaEnum](appschema/audioenum/affinitystate.md)
+- [var affinityState: some AppSchemaEnum](./audioenum/affinitystate.md)
   An enum schema for an affinity state parameter.
-- [var appViewIdentifier: some AppSchemaEnum](appschema/audioenum/appviewidentifier.md)
+- [var appViewIdentifier: some AppSchemaEnum](./audioenum/appviewidentifier.md)
   An enum schema for an app view identifier parameter.
-- [var invocationSource: some AppSchemaEnum](appschema/audioenum/invocationsource.md)
+- [var invocationSource: some AppSchemaEnum](./audioenum/invocationsource.md)
   An enum schema for an invocation source parameter.
-- [var playbackAttributes: some AppSchemaEnum](appschema/audioenum/playbackattributes.md)
+- [var playbackAttributes: some AppSchemaEnum](./audioenum/playbackattributes.md)
   An enum schema for a playback attributes parameter.
-- [var queueInsertionLocation: some AppSchemaEnum](appschema/audioenum/queueinsertionlocation.md)
+- [var queueInsertionLocation: some AppSchemaEnum](./audioenum/queueinsertionlocation.md)
   An enum schema for a queue insertion location parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var activity: some AppSchemaEnum](appschema/audioenum/activity.md)
+### Types for static parameters
+- [var activity: some AppSchemaEnum](./audioenum/activity.md)
   An enum schema for an activity parameter.
-- [var affinityState: some AppSchemaEnum](appschema/audioenum/affinitystate.md)
+- [var affinityState: some AppSchemaEnum](./audioenum/affinitystate.md)
   An enum schema for an affinity state parameter.
-- [var appViewIdentifier: some AppSchemaEnum](appschema/audioenum/appviewidentifier.md)
+- [var appViewIdentifier: some AppSchemaEnum](./audioenum/appviewidentifier.md)
   An enum schema for an app view identifier parameter.
-- [var invocationSource: some AppSchemaEnum](appschema/audioenum/invocationsource.md)
+- [var invocationSource: some AppSchemaEnum](./audioenum/invocationsource.md)
   An enum schema for an invocation source parameter.
-- [var playbackAttributes: some AppSchemaEnum](appschema/audioenum/playbackattributes.md)
+- [var playbackAttributes: some AppSchemaEnum](./audioenum/playbackattributes.md)
   An enum schema for a playback attributes parameter.
-- [var queueInsertionLocation: some AppSchemaEnum](appschema/audioenum/queueinsertionlocation.md)
+- [var queueInsertionLocation: some AppSchemaEnum](./audioenum/queueinsertionlocation.md)
   An enum schema for a queue insertion location parameter.
 
 

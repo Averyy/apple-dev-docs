@@ -1,7 +1,8 @@
 # attrSigningTime
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Include the signing time.
 
@@ -13,6 +14,10 @@ Include the signing time.
 
 ```swift
 static var attrSigningTime: CMSSignedAttributes { get }
+```
+
+```c
+kCMSAttrSigningTime
 ```
 
 

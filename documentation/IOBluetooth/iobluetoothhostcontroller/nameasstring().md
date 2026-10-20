@@ -1,17 +1,22 @@
 # nameAsString()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the “friendly” name of HCI controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func nameAsString() -> String!
+```
+
+```objc
+- (NSString *) nameAsString;
 ```
 
 #### Return Value

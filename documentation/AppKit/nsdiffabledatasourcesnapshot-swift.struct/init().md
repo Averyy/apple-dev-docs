@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty snapshot.
 
@@ -16,9 +17,10 @@ init()
 
 ## See Also
 
-- [func appendSections([SectionIdentifierType])](nsdiffabledatasourcesnapshot-swift.struct/appendsections(_:).md)
+### Creating a Snapshot
+- [func appendSections([SectionIdentifierType])](./appendsections%28_%29.md)
   Adds the sections with the specified identifiers to the snapshot.
-- [func appendItems([ItemIdentifierType], toSection: SectionIdentifierType?)](nsdiffabledatasourcesnapshot-swift.struct/appenditems(_:tosection:).md)
+- [func appendItems([ItemIdentifierType], toSection: SectionIdentifierType?)](./appenditems%28_,tosection%29.md)
   Adds the items with the specified identifiers to the specified section of the snapshot.
 
 

@@ -1,7 +1,8 @@
 # newConnectionHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that receives inbound connections.
 
@@ -27,9 +28,10 @@ Upon receiving a new connection, you should set update handlers on the connectio
 
 ## See Also
 
-- [var newConnectionLimit: Int](nwlistener/newconnectionlimit.md)
+### Receiving Connections
+- [var newConnectionLimit: Int](./newconnectionlimit.md)
   The remaining number of inbound connections to deliver before rejecting connections.
-- [static let InfiniteConnectionLimit: Int](nwlistener/infiniteconnectionlimit.md)
+- [static let InfiniteConnectionLimit: Int](./infiniteconnectionlimit.md)
   A static value to indicate that inbound connections should not be limited.
 
 

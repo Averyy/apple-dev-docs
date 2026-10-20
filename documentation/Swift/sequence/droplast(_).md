@@ -1,7 +1,8 @@
 # dropLast(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence containing all but the given number of final elements.
 
@@ -36,7 +37,7 @@ print(numbers.dropLast(10))
 // Prints "[]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
@@ -44,9 +45,10 @@ print(numbers.dropLast(10))
 
 ## See Also
 
-- [func dropFirst(Int) -> DropFirstSequence<Self>](sequence/dropfirst(_:).md)
+### Excluding Elements
+- [func dropFirst(Int) -> DropFirstSequence<Self>](./dropfirst%28_%29.md)
   Returns a sequence containing all but the given number of initial elements.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>](sequence/drop(while:).md)
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>](./drop%28while%29.md)
   Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.
 
 

@@ -1,7 +1,8 @@
 # compositionAttributes(at:)
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary of text attributes.
 
@@ -14,6 +15,10 @@ Returns a dictionary of text attributes.
 func compositionAttributes(at range: NSRange) -> NSMutableDictionary!
 ```
 
+```objc
+- (NSMutableDictionary *) compositionAttributesAtRange:(NSRange) range;
+```
+
 #### Return Value
 
 The dictionary of text attributes. The default implementation returns an empty dictionary.
@@ -24,11 +29,12 @@ The dictionary of text attributes. The default implementation returns an empty d
 
 ## See Also
 
-- [func selectionRange() -> NSRange](imkinputcontroller/selectionrange.md)
+### Working with Ranges
+- [func selectionRange() -> NSRange](./selectionrange%28%29.md)
   Returns where the range of the selection that should be placed inside marked text.
-- [func replacementRange() -> NSRange](imkinputcontroller/replacementrange.md)
+- [func replacementRange() -> NSRange](./replacementrange%28%29.md)
   Returns the range in the client document that the text should replace.
-- [func mark(forStyle: Int, at: NSRange) -> [AnyHashable : Any]!](imkinputcontroller/mark(forstyle:at:).md)
+- [func mark(forStyle: Int, at: NSRange) -> [AnyHashable : Any]!](./mark%28forstyle,at%29.md)
   Returns a dictionary of text attributes that can mark a range of an attributed string to send to a client.
 
 

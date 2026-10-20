@@ -1,7 +1,8 @@
 # IOUserVideoIOOperationWriteEnd
 
 **Framework**: VideoDriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 This operation is called just after writing data to the device’s stream buffers.
 
@@ -10,7 +11,7 @@ This operation is called just after writing data to the device’s stream buffer
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const IOUserVideoIOOperation IOUserVideoIOOperationWriteEnd;
 ```
 
@@ -20,13 +21,14 @@ It is required that this operation be handled if the device has output streams.
 
 ## See Also
 
-- [IOUserVideoIOOperation](videodriverkit/iouservideoiooperation.md)
+### Working with I/O operations
+- [IOUserVideoIOOperation](./iouservideoiooperation.md)
   The IO operation being called on the operation handler block.
-- [IOUserVideoIOOperationBeginRead](videodriverkit/iouservideoiooperationbeginread.md)
+- [IOUserVideoIOOperationBeginRead](./iouservideoiooperationbeginread.md)
   This operation is called just prior to reading data from the device’s stream buffers.
-- [IOOperationHandler](videodriverkit/iooperationhandler.md)
+- [IOOperationHandler](./iooperationhandler.md)
   A block that tells the device to perform a video IO operation.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](./iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
 
 

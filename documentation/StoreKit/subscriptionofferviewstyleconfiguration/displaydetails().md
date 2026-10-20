@@ -1,7 +1,8 @@
 # displayDetails()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,7 +17,8 @@ func displayDetails()
 
 ## See Also
 
-- [func subscribe()](subscriptionofferviewstyleconfiguration/subscribe.md)
+### Instance Methods
+- [func subscribe()](./subscribe%28%29.md)
 
 
 ---

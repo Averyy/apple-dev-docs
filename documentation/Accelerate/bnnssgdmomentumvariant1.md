@@ -1,7 +1,8 @@
 # BNNSSGDMomentumVariant1
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that indicates SGD momentum variant 1.
 
@@ -20,16 +21,21 @@ A constant that indicates SGD momentum variant 1.
 var BNNSSGDMomentumVariant1: BNNSOptimizerSGDMomentumVariant { get }
 ```
 
+```c
+BNNSSGDMomentumVariant1
+```
+
 #### Discussion
 
 ## See Also
 
-- [init(UInt32)](bnnsoptimizersgdmomentumvariant/init(_:).md)
-- [init(rawValue: UInt32)](bnnsoptimizersgdmomentumvariant/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsoptimizersgdmomentumvariant/rawvalue.md)
-- [var BNNSSGDMomentumVariant0: BNNSOptimizerSGDMomentumVariant](bnnssgdmomentumvariant0.md)
+### Momentum Variants
+- [init(UInt32)](./bnnsoptimizersgdmomentumvariant/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsoptimizersgdmomentumvariant/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnsoptimizersgdmomentumvariant/rawvalue.md)
+- [var BNNSSGDMomentumVariant0: BNNSOptimizerSGDMomentumVariant](./bnnssgdmomentumvariant0.md)
   A constant that indicates SGD momentum variant 0.
-- [var BNNSSGDMomentumVariant2: BNNSOptimizerSGDMomentumVariant](bnnssgdmomentumvariant2.md)
+- [var BNNSSGDMomentumVariant2: BNNSOptimizerSGDMomentumVariant](./bnnssgdmomentumvariant2.md)
   A constant that indicates SGD momentum variant 2.
 
 

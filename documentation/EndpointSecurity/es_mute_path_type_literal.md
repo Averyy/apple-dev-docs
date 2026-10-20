@@ -1,13 +1,14 @@
 # ES_MUTE_PATH_TYPE_LITERAL
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A type for a path string used as a path literal.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ A type for a path string used as a path literal.
 var ES_MUTE_PATH_TYPE_LITERAL: es_mute_path_type_t { get }
 ```
 
+```c
+ES_MUTE_PATH_TYPE_LITERAL
+```
+
 ## See Also
 
-- [var ES_MUTE_PATH_TYPE_PREFIX: es_mute_path_type_t](es_mute_path_type_prefix.md)
+### Path Types
+- [var ES_MUTE_PATH_TYPE_PREFIX: es_mute_path_type_t](./es_mute_path_type_prefix.md)
   A type for a path string used as a prefix.
 
 

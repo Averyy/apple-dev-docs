@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the system is preparing for a transition.
@@ -18,7 +19,7 @@ func experienceController(_ controller: AVExperienceController, prepareForTransi
 
 #### Discussion
 
-Implement this method to prepare the app’s state for the [`toExperience`](avexperiencecontroller/transitioncontext/toexperience.md). This may include showing or hiding view controllers, putting the player view controller in the view hierarchy, or any other asynchronous work required for the transition. This is the last chance to update [`configuration`](avexperiencecontroller/configuration-swift.property.md) before the transition begins.
+Implement this method to prepare the app’s state for the [`toExperience`](../transitioncontext/toexperience.md). This may include showing or hiding view controllers, putting the player view controller in the view hierarchy, or any other asynchronous work required for the transition. This is the last chance to update [`configuration`](../configuration-swift.property.md) before the transition begins.
 
 ## Parameters
 
@@ -27,11 +28,12 @@ Implement this method to prepare the app’s state for the [`toExperience`](avex
 
 ## See Also
 
-- [func experienceController(AVExperienceController, didChangeAvailableExperiences: AVExperienceController.Experiences)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangeavailableexperiences:).md)
+### Responding to experience changes
+- [func experienceController(AVExperienceController, didChangeAvailableExperiences: AVExperienceController.Experiences)](./experiencecontroller%28_,didchangeavailableexperiences%29.md)
   Tells the delegate when the available experiences change.
-- [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangetransitioncontext:).md)
+- [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](./experiencecontroller%28_,didchangetransitioncontext%29.md)
   Tells the delegate when the transition context changes during a transition.
-- [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
+- [AVExperienceController.TransitionContext](../transitioncontext.md)
   The state of the transition that the system provides to the delegate object.
 
 

@@ -1,7 +1,8 @@
 # IOUserVideoObjectPropertyAddress
 
 **Framework**: VideoDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A data structure that contains all the three parts to identify a specific property, for easy transmission.
 
@@ -10,25 +11,26 @@ A data structure that contains all the three parts to identify a specific proper
 
 ## Declaration
 
-```swift
+```c
 struct IOUserVideoObjectPropertyAddress;
 ```
 
 ## Topics
 
 ### Address members
-- [mSelector](videodriverkit/iouservideoobjectpropertyaddress/mselector.md)
+- [mSelector](./iouservideoobjectpropertyaddress/mselector.md)
   The selector for the property.
-- [mScope](videodriverkit/iouservideoobjectpropertyaddress/mscope.md)
+- [mScope](./iouservideoobjectpropertyaddress/mscope.md)
   The scope for the property.
-- [mElement](videodriverkit/iouservideoobjectpropertyaddress/melement.md)
+- [mElement](./iouservideoobjectpropertyaddress/melement.md)
   The element for the property.
 
 ## See Also
 
-- [IOUserVideoCustomPropertyInfo](videodriverkit/iouservideocustompropertyinfo.md)
+### Working with custom properties
+- [IOUserVideoCustomPropertyInfo](./iouservideocustompropertyinfo.md)
   A description of a a custom property that allow the Host to marshal the data between the Host and its clients.
-- [IOUserVideoCustomPropertyDataType](videodriverkit/iouservideocustompropertydatatype.md)
+- [IOUserVideoCustomPropertyDataType](./iouservideocustompropertydatatype.md)
   Data qualifier types used for custom properties.
 
 

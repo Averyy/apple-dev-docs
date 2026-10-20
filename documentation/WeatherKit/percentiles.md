@@ -1,7 +1,8 @@
 # Percentiles
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes probability distributions for a measurable weather condition.
 
@@ -23,21 +24,21 @@ struct Percentiles<Dimension> where Dimension : Dimension
 ## Topics
 
 ### Instance Properties
-- [var p10: Measurement<Dimension>](percentiles/p10.md)
+- [var p10: Measurement<Dimension>](./percentiles/p10.md)
   10% of the distribution is less than this value.
-- [var p50: Measurement<Dimension>](percentiles/p50.md)
+- [var p50: Measurement<Dimension>](./percentiles/p50.md)
   50% of the distribution is less than this value.
-- [var p90: Measurement<Dimension>](percentiles/p90.md)
+- [var p90: Measurement<Dimension>](./percentiles/p90.md)
   90% of the distribution is less than this value.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

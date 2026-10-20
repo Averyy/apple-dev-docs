@@ -1,7 +1,8 @@
 # typeSInt16
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 16-bit signed integer.
 

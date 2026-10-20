@@ -1,7 +1,8 @@
 # excludingAll
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of categories to exclude from a search.
 
@@ -20,15 +21,20 @@ A list of categories to exclude from a search.
 class var excludingAll: MKAddressFilter { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MKAddressFilter * filterExcludingAll;
+```
+
 ## See Also
 
-- [MKAddressFilter.Options](mkaddressfilter/options.md)
+### Filtering results
+- [MKAddressFilter.Options](./options.md)
   A structure that contains options for filtering results in a search.
-- [class var includingAll: MKAddressFilter](mkaddressfilter/includingall.md)
+- [class var includingAll: MKAddressFilter](./includingall.md)
   A list of categories to include in a search.
-- [func excludes(MKAddressFilter.Options) -> Bool](mkaddressfilter/excludes(_:).md)
+- [func excludes(MKAddressFilter.Options) -> Bool](./excludes%28_%29.md)
   Indicates whether options are excluded from filtering.
-- [func includes(MKAddressFilter.Options) -> Bool](mkaddressfilter/includes(_:).md)
+- [func includes(MKAddressFilter.Options) -> Bool](./includes%28_%29.md)
   Indicates whether options are included for filtering.
 
 

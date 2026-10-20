@@ -1,23 +1,28 @@
 # joint(withBodyA:bodyB:anchor:axis:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new sliding joint.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func joint(withBodyA bodyA: SKPhysicsBody, bodyB: SKPhysicsBody, anchor: CGPoint, axis: CGVector) -> SKPhysicsJointSliding
+```
+
+```objc
++ (SKPhysicsJointSliding *) jointWithBodyA:(SKPhysicsBody *) bodyA bodyB:(SKPhysicsBody *) bodyB anchor:(CGPoint) anchor axis:(CGVector) axis;
 ```
 
 #### Return Value

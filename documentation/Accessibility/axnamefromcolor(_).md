@@ -1,7 +1,8 @@
 # AXNameFromColor(_:)
 
 **Framework**: Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a localized description of the color to use in accessibility attributes.
 
@@ -20,6 +21,10 @@ Returns a localized description of the color to use in accessibility attributes.
 func AXNameFromColor(_ color: CGColor) -> String
 ```
 
+```c
+extern NSString *AXNameFromColor(CGColorRef color);
+```
+
 #### Return Value
 
 The name associated with the color.
@@ -30,11 +35,12 @@ The name associated with the color.
 
 ## See Also
 
-- [Customized accessibility content](customized-accessibility-content.md)
+### Features
+- [Customized accessibility content](./customized-accessibility-content.md)
   Customize your apps to deliver accessibility information to your users in measured portions as they need it.
-- [Audio graphs](audio-graphs.md)
+- [Audio graphs](./audio-graphs.md)
   Define an accessible representation of your chart for VoiceOver to generate an audio graph.
-- [Hearing device support](hearing-device-support.md)
+- [Hearing device support](./hearing-device-support.md)
   Access information about paired hearing aid devices and streaming status.
 
 

@@ -1,7 +1,8 @@
 # metalDevice
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If device type is Metal then returns the corresponding MTLDevice else nil.
 
@@ -17,6 +18,10 @@ If device type is Metal then returns the corresponding MTLDevice else nil.
 
 ```swift
 var metalDevice: (any MTLDevice)? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) id<MTLDevice> metalDevice;
 ```
 
 

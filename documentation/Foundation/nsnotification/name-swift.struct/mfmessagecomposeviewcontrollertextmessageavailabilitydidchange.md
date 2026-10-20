@@ -1,7 +1,8 @@
 # MFMessageComposeViewControllerTextMessageAvailabilityDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the current device’s ability to send text messages changes.
 
@@ -19,13 +20,14 @@ static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNot
 
 #### Discussion
 
-The system posts this notification when the value [`canSendText()`](https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller/cansendtext()) returns has changed.
+The system posts this notification when the value [`canSendText()`](../../../MessageUI/mfmessagecomposeviewcontroller/cansendtext%28%29.md) returns has changed.
 
-Upon receiving this notification, query its `userInfo` dictionary with the [`MFMessageComposeViewControllerTextMessageAvailabilityKey`](https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontrollertextmessageavailabilitykey) key. If the availability of text message sending has changed, your app should invalidate caches and update its user interface as appropriate.
+Upon receiving this notification, query its `userInfo` dictionary with the [`MFMessageComposeViewControllerTextMessageAvailabilityKey`](../../../MessageUI/mfmessagecomposeviewcontrollertextmessageavailabilitykey.md) key. If the availability of text message sending has changed, your app should invalidate caches and update its user interface as appropriate.
 
 ## See Also
 
-- [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](nsnotification/name-swift.struct/mfmessagecomposeviewcontrollertextmessageavailabilitydidchange.md)
+### MessageUI
+- [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](./mfmessagecomposeviewcontrollertextmessageavailabilitydidchange.md)
   Posted when the current device’s ability to send text messages changes.
 
 

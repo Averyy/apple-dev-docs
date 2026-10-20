@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The domain’s version when the change occurred.
@@ -19,17 +20,22 @@ The domain’s version when the change occurred.
 var domainVersion: NSFileProviderDomainVersion? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSFileProviderDomainVersion * domainVersion;
+```
+
 ## See Also
 
-- [var sourceItem: NSFileProviderItem](nsfileprovidertestingmodification/sourceitem.md)
+### Accessing the Operation’s Data
+- [var sourceItem: NSFileProviderItem](./sourceitem.md)
   A description of the source item.
-- [var changedFields: NSFileProviderItemFields](nsfileprovidertestingmodification/changedfields.md)
+- [var changedFields: NSFileProviderItemFields](./changedfields.md)
   A list of the fields that changed.
-- [var targetSide: NSFileProviderTestingOperationSide](nsfileprovidertestingmodification/targetside.md)
+- [var targetSide: NSFileProviderTestingOperationSide](./targetside.md)
   The target location for the modification operation.
-- [var targetItemIdentifier: NSFileProviderItemIdentifier](nsfileprovidertestingmodification/targetitemidentifier.md)
+- [var targetItemIdentifier: NSFileProviderItemIdentifier](./targetitemidentifier.md)
   The unique identifier for the target item.
-- [var targetItemBaseVersion: NSFileProviderItemVersion](nsfileprovidertestingmodification/targetitembaseversion.md)
+- [var targetItemBaseVersion: NSFileProviderItemVersion](./targetitembaseversion.md)
   The version of the changed item.
 
 

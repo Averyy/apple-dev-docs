@@ -1,7 +1,8 @@
 # PlayToneAction.Tone.hardPause
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person entered a hard pause.
 
@@ -24,9 +25,10 @@ A semicolon (;) indicates a hard pause. When a person enters a hard pause, the s
 
 ## See Also
 
-- [PlayToneAction.Tone.single](playtoneaction/tone-swift.enum/single.md)
+### Keypad tones
+- [PlayToneAction.Tone.single](./single.md)
   A person entered a digit.
-- [PlayToneAction.Tone.softPause](playtoneaction/tone-swift.enum/softpause.md)
+- [PlayToneAction.Tone.softPause](./softpause.md)
   A person entered a soft pause.
 
 

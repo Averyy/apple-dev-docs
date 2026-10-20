@@ -1,7 +1,8 @@
 # init(owner:name:variability:isCustom:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new relationship spec under the given prim spec.
 

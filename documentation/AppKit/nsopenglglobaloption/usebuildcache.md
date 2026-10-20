@@ -1,12 +1,15 @@
 # NSOpenGLGlobalOption.useBuildCache
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Whether to enable the function compilation block cache. This is off by default. It must be enabled at startup.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.)
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Whether to enable the function compilation block cache. This is off by default. 
 case useBuildCache
 ```
 
+```c
+NSOpenGLGOUseBuildCache
+```
+
 ## See Also
 
-- [NSOpenGLGlobalOption.formatCacheSize](nsopenglglobaloption/formatcachesize.md)
+### Constants
+- [NSOpenGLGlobalOption.formatCacheSize](./formatcachesize.md)
   Sets the size of the pixel format cache.
-- [NSOpenGLGlobalOption.clearFormatCache](nsopenglglobaloption/clearformatcache.md)
+- [NSOpenGLGlobalOption.clearFormatCache](./clearformatcache.md)
   Resets the pixel format cache if true.
-- [NSOpenGLGlobalOption.retainRenderers](nsopenglglobaloption/retainrenderers.md)
+- [NSOpenGLGlobalOption.retainRenderers](./retainrenderers.md)
   Whether to retain loaded renderers in memory.
 
 

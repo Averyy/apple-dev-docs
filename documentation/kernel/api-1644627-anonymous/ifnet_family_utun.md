@@ -1,14 +1,15 @@
 # IFNET_FAMILY_UTUN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 IFNET_FAMILY_UTUN = 17
 ```
 

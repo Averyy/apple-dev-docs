@@ -1,7 +1,8 @@
 # count
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in each of the specified buffers.
 
@@ -21,7 +22,8 @@ let count: Int
 
 ## See Also
 
-- [MeshDeformParameter.VertexBuffers.Data](meshdeformparameter/vertexbuffers/data.md)
+### Inspecting buffer storage
+- [MeshDeformParameter.VertexBuffers.Data](./data.md)
   Provides low-level information about the memory allocation of the buffers.
 
 

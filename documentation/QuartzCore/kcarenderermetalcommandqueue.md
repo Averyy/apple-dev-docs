@@ -1,7 +1,8 @@
 # kCARendererMetalCommandQueue
 
 **Framework**: Core Animation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 12.0+
@@ -17,9 +18,14 @@
 let kCARendererMetalCommandQueue: String
 ```
 
+```c
+extern NSString * const kCARendererMetalCommandQueue;
+```
+
 ## See Also
 
-- [let kCARendererColorSpace: String](kcarenderercolorspace.md)
+### Constants
+- [let kCARendererColorSpace: String](./kcarenderercolorspace.md)
 
 
 ---

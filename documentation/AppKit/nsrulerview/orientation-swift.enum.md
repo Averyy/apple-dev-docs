@@ -1,12 +1,13 @@
 # NSRulerView.Orientation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants are defined to specify a ruler’s orientation and are used by [`orientation`](nsrulerview/orientation-swift.property.md).
+These constants are defined to specify a ruler’s orientation and are used by [`orientation`](./orientation-swift.property.md).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,43 +15,48 @@ These constants are defined to specify a ruler’s orientation and are used by [
 enum Orientation
 ```
 
+```c
+enum NSRulerOrientation : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSRulerView.Orientation.horizontalRuler](nsrulerview/orientation-swift.enum/horizontalruler.md)
+- [NSRulerView.Orientation.horizontalRuler](./orientation-swift.enum/horizontalruler.md)
   Ruler is oriented horizontally.
-- [NSRulerView.Orientation.verticalRuler](nsrulerview/orientation-swift.enum/verticalruler.md)
+- [NSRulerView.Orientation.verticalRuler](./orientation-swift.enum/verticalruler.md)
   Ruler is oriented vertically.
 ### Initializers
-- [init?(rawValue: UInt)](nsrulerview/orientation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./orientation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var scrollView: NSScrollView?](nsrulerview/scrollview.md)
+### Ruler layout
+- [var scrollView: NSScrollView?](./scrollview.md)
   The NSScrollView that owns the receiver to `scrollView`, without retaining it.
-- [var orientation: NSRulerView.Orientation](nsrulerview/orientation-swift.property.md)
+- [var orientation: NSRulerView.Orientation](./orientation-swift.property.md)
   The orientation of the receiver to `orientation`.
-- [var reservedThicknessForAccessoryView: CGFloat](nsrulerview/reservedthicknessforaccessoryview.md)
+- [var reservedThicknessForAccessoryView: CGFloat](./reservedthicknessforaccessoryview.md)
   The room available for the receiver’s accessory view to `thickness`.
-- [var reservedThicknessForMarkers: CGFloat](nsrulerview/reservedthicknessformarkers.md)
+- [var reservedThicknessForMarkers: CGFloat](./reservedthicknessformarkers.md)
   The room available for ruler markers to `thickness`.
-- [var ruleThickness: CGFloat](nsrulerview/rulethickness.md)
+- [var ruleThickness: CGFloat](./rulethickness.md)
   The thickness of the area where ruler hash marks and labels are drawn.
-- [var requiredThickness: CGFloat](nsrulerview/requiredthickness.md)
+- [var requiredThickness: CGFloat](./requiredthickness.md)
   The thickness needed for proper tiling of the receiver within an NSScrollView.
-- [var baselineLocation: CGFloat](nsrulerview/baselinelocation.md)
+- [var baselineLocation: CGFloat](./baselinelocation.md)
   The location of the receiver’s baseline, in its own coordinate system.
-- [var isFlipped: Bool](nsrulerview/isflipped.md)
+- [var isFlipped: Bool](./isflipped.md)
   A Boolean that indicates if the ruler view’s coordinate system is flipped.
 
 

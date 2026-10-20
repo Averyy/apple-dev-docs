@@ -1,7 +1,8 @@
 # waitForRenderCompletion(on:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Waits for automatic rendering to complete.
 

@@ -1,7 +1,8 @@
 # Status
 
 **Framework**: TipKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that describes the current display eligibility status for a tip.
 
@@ -22,15 +23,16 @@ typealias Status = Tips.Status
 
 ## See Also
 
-- [var status: Self.Status](tip/status-swift.property.md)
-  The current status of a tip based on its rules and the configured [`displayFrequency(_:)`](tips/configurationoption/displayfrequency(_:).md).
-- [var statusUpdates: AsyncStream<Self.Status>](tip/statusupdates.md)
+### Monitoring tip status
+- [var status: Self.Status](./status-swift.property.md)
+  The current status of a tip based on its rules and the configured [`displayFrequency(_:)`](../tips/configurationoption/displayfrequency%28_%29.md).
+- [var statusUpdates: AsyncStream<Self.Status>](./statusupdates.md)
   An asynchronous sequence for monitoring a tip’s status changes.
-- [var shouldDisplay: Bool](tip/shoulddisplay.md)
+- [var shouldDisplay: Bool](./shoulddisplay.md)
   A Boolean value that determines whether to display a tip.
-- [var shouldDisplayUpdates: AsyncMapSequence<AsyncStream<Self.Status>, Bool>](tip/shoulddisplayupdates.md)
+- [var shouldDisplayUpdates: AsyncMapSequence<AsyncStream<Self.Status>, Bool>](./shoulddisplayupdates.md)
   An asynchronous sequence for monitoring a tip’s display eligibility.
-- [typealias InvalidationReason](tip/invalidationreason.md)
+- [typealias InvalidationReason](./invalidationreason.md)
   A type that describes why the system permanently invalidated a tip.
 
 

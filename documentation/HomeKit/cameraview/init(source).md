@@ -1,7 +1,8 @@
 # init(source:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new camera view using the given source.
 
@@ -26,7 +27,8 @@ init(source: HMCameraSource)
 
 ## See Also
 
-- [class HMCameraSource](hmcamerasource.md)
+### Creating a camera view
+- [class HMCameraSource](../hmcamerasource.md)
   An abstract class for a camera’s data source.
 
 

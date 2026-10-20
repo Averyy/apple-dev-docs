@@ -1,7 +1,8 @@
 # DecodingError.dataCorrupted(_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that the data is corrupted or otherwise invalid.
 

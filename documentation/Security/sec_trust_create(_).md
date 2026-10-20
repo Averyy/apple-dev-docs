@@ -1,7 +1,8 @@
 # sec_trust_create(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_trust_create(_ trust: SecTrust) -> sec_trust_t?
+```
+
+```c
+sec_trust_tsec_trust_create(SecTrustRef trust);
 ```
 
 #### Return Value

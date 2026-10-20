@@ -1,7 +1,8 @@
 # ExtensibleSingleSignOn.ExtensionData
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The additional data to pass to the app extension.
 
@@ -14,7 +15,7 @@ The additional data to pass to the app extension.
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSingleSignOn.ExtensionData
 ```
 
@@ -24,7 +25,8 @@ object ExtensibleSingleSignOn.ExtensionData
 
 ## See Also
 
-- [object ExtensibleSingleSignOn.PlatformSSO](extensiblesinglesignon/platformsso-data.dictionary.md)
+### Objects
+- [object ExtensibleSingleSignOn.PlatformSSO](./platformsso-data.dictionary.md)
   The dictionary to configure Platform SSO. Requires setting `Type` to `Redirect`.
 
 

@@ -1,7 +1,8 @@
 # objc_setAssociatedObject(_:_:_:_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets an associated value for a given object using a given key and association policy.
 
@@ -20,18 +21,23 @@ Sets an associated value for a given object using a given key and association po
 func objc_setAssociatedObject(_ object: Any, _ key: UnsafeRawPointer, _ value: Any?, _ policy: objc_AssociationPolicy)
 ```
 
+```c
+extern void objc_setAssociatedObject(id object, const void *key, id value, objc_AssociationPolicy policy);
+```
+
 ## Parameters
 
 - `object`: The source object for the association.
 - `key`: The key for the association.
 - `value`: The value to associate with the key `key` for `object`. Pass `nil` to clear an existing association.
-- `policy`: The policy for the association. For possible values, see [`objc_AssociationPolicy`](objc_associationpolicy.md).
+- `policy`: The policy for the association. For possible values, see [`objc_AssociationPolicy`](./objc_associationpolicy.md).
 
 ## See Also
 
-- [func objc_getAssociatedObject(Any, UnsafeRawPointer) -> Any?](objc_getassociatedobject(_:_:).md)
+### Associative References
+- [func objc_getAssociatedObject(Any, UnsafeRawPointer) -> Any?](./objc_getassociatedobject%28_,_%29.md)
   Returns the value associated with a given object for a given key.
-- [func objc_removeAssociatedObjects(Any)](objc_removeassociatedobjects(_:).md)
+- [func objc_removeAssociatedObjects(Any)](./objc_removeassociatedobjects%28_%29.md)
   Removes all associations for a given object.
 
 

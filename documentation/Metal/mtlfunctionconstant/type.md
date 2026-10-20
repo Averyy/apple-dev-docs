@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the function constant.
 
@@ -19,13 +20,18 @@ The data type of the function constant.
 var type: MTLDataType { get }
 ```
 
+```objc
+@property (readonly) MTLDataType type;
+```
+
 ## See Also
 
-- [var name: String](mtlfunctionconstant/name.md)
+### Reading the function constant’s properties
+- [var name: String](./name.md)
   The name of the function constant.
-- [var index: Int](mtlfunctionconstant/index.md)
+- [var index: Int](./index.md)
   The index of the function constant.
-- [var required: Bool](mtlfunctionconstant/required.md)
+- [var required: Bool](./required.md)
   A Boolean value indicating whether the function constant needs to be provided to specialize the function.
 
 

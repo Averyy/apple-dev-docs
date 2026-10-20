@@ -1,7 +1,8 @@
 # PixelBufferObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents an image that an image-analysis request produces.
 
@@ -22,47 +23,48 @@ struct PixelBufferObservation
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
 
 ## Topics
 
 ### Creating an observation
-- [init?(VNPixelBufferObservation)](pixelbufferobservation/init(_:).md)
+- [init?(VNPixelBufferObservation)](./pixelbufferobservation/init%28_%29.md)
   Creates a pixel buffer observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [var cgImage: CGImage](pixelbufferobservation/cgimage.md)
+- [var cgImage: CGImage](./pixelbufferobservation/cgimage.md)
   A Core Graphics image created from the pixel buffer observation.
-- [var pixelFormat: OSType](pixelbufferobservation/pixelformat.md)
+- [var pixelFormat: OSType](./pixelbufferobservation/pixelformat.md)
   The four-character code that identifies the pixel format.
-- [var pixelBuffer: CVReadOnlyPixelBuffer](pixelbufferobservation/pixelbuffer.md)
-- [var size: CGSize](pixelbufferobservation/size.md)
+- [var pixelBuffer: CVReadOnlyPixelBuffer](./pixelbufferobservation/pixelbuffer.md)
+- [var size: CGSize](./pixelbufferobservation/size.md)
   The size of the image.
 ### Getting pixel data
-- [func pixel(at: NormalizedPoint) -> Float](pixelbufferobservation/pixel(at:).md)
+- [func pixel(at: NormalizedPoint) -> Float](./pixelbufferobservation/pixel%28at%29.md)
   Returns the pixel data for the specified location in the image.
 ### Accessing the memory
-- [func withUnsafePointer<R>((UnsafeRawPointer) -> R) -> R](pixelbufferobservation/withunsafepointer(_:).md)
+- [func withUnsafePointer<R>((UnsafeRawPointer) -> R) -> R](./pixelbufferobservation/withunsafepointer%28_%29.md)
   Invokes the given closure with a pointer to the given argument.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 ## See Also
 
-- [struct ClassificationObservation](classificationobservation.md)
+### Understanding the result
+- [struct ClassificationObservation](./classificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
-- [struct CoreMLFeatureValueObservation](coremlfeaturevalueobservation.md)
+- [struct CoreMLFeatureValueObservation](./coremlfeaturevalueobservation.md)
   An object that represents a collection of key-value information that a Core ML image-analysis request produces.
 
 

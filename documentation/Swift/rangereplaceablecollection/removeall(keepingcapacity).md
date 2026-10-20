@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes all elements from the collection.
@@ -25,11 +26,17 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
 - `keepCapacity`: Pass `true` to request that the collection avoid releasing its storage. Retaining the collection’s storage can be a useful optimization when you’re planning to grow the collection again. The default value is `false`.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [func removeAll(keepingCapacity: Bool)](./removeall%28keepingcapacity%29-9axpj.md)
+  Removes all elements from the collection.
 
 
 ---

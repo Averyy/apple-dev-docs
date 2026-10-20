@@ -1,7 +1,8 @@
 # runningActivity
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently running activity within the currently active context.
 
@@ -18,25 +19,30 @@ The currently running activity within the currently active context.
 var runningActivity: CLSActivity? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) CLSActivity * runningActivity;
+```
+
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](../recording-student-progress.md)
 
 #### Discussion
 
 This value is `nil` if there is no currently running activity.
 
-If your deployment target is iOS 11.4 or later, you can have more than one activity running concurrently. When you do this, the [`runningActivity`](clsdatastore/runningactivity.md) property holds the most recently started activity.
+If your deployment target is iOS 11.4 or later, you can have more than one activity running concurrently. When you do this, the [`runningActivity`](./runningactivity.md) property holds the most recently started activity.
 
 ## See Also
 
-- [var mainAppContext: CLSContext](clsdatastore/mainappcontext.md)
+### Accessing specific contexts and activities
+- [var mainAppContext: CLSContext](./mainappcontext.md)
   The app’s top-level context.
-- [var activeContext: CLSContext?](clsdatastore/activecontext.md)
+- [var activeContext: CLSContext?](./activecontext.md)
   The currently active context.
-- [func fetchActivity(for: URL, completion: (CLSActivity?, (any Error)?) -> Void)](clsdatastore/fetchactivity(for:completion:).md)
+- [func fetchActivity(for: URL, completion: (CLSActivity?, (any Error)?) -> Void)](./fetchactivity%28for,completion%29.md)
   Fetches an activity for a given document so you can record progress on the associated task.
-- [func completeAllAssignedActivities(matching: [String])](clsdatastore/completeallassignedactivities(matching:).md)
+- [func completeAllAssignedActivities(matching: [String])](./completeallassignedactivities%28matching%29.md)
   Marks all of the assigned and active activities for the given context path as complete.
 
 

@@ -1,7 +1,8 @@
 # handler
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that CarPlay invokes after the user taps the action button.
 
@@ -16,9 +17,14 @@ The closure that CarPlay invokes after the user taps the action button.
 var handler: CPAlertActionHandler { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) CPAlertActionHandler handler;
+```
+
 ## See Also
 
-- [typealias CPAlertActionHandler](cpalertactionhandler.md)
+### Getting the Action Handler
+- [typealias CPAlertActionHandler](../cpalertactionhandler.md)
   The declaration for an alert action handler.
 
 

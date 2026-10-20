@@ -1,7 +1,8 @@
 # cChannels
 
 **Framework**: Force Feedback  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of channels (axes) affected by this force.
 
@@ -15,6 +16,10 @@ Number of channels (axes) affected by this force.
 var cChannels: DWORD
 ```
 
+```c
+DWORD cChannels;
+```
+
 #### Discussion
 
 The first channel is applied to the first axis associated with the effect, the second to the second, and so on. If there are fewer channels than axes, nothing is associated with the extra axes.
@@ -25,11 +30,12 @@ Not all devices support rotation of custom effects.
 
 ## See Also
 
-- [var cSamples: DWORD](ffcustomforce/csamples.md)
+### Instance Properties
+- [var cSamples: DWORD](./csamples.md)
   Total number of samples in the **rglForceData**. It must be an integral multiple of the **cChannels**.
-- [var dwSamplePeriod: DWORD](ffcustomforce/dwsampleperiod.md)
+- [var dwSamplePeriod: DWORD](./dwsampleperiod.md)
   Sample period, in microseconds.
-- [var rglForceData: LPLONG!](ffcustomforce/rglforcedata.md)
+- [var rglForceData: LPLONG!](./rglforcedata.md)
   Pointer to an array of force values representing the custom force. If multiple channels are provided, the values are interleaved. For example, if **cChannels** is 3, the first element of the array belongs to the first channel, the second to the second, and the third to the third.
 
 

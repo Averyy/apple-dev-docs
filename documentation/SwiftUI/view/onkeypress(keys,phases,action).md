@@ -1,7 +1,8 @@
 # onKeyPress(keys:phases:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an action if the user presses one or more keys on a hardware keyboard while the view has focus.
 
@@ -32,15 +33,16 @@ A modified view that binds keyboard input when focused.
 
 ## See Also
 
-- [func onKeyPress(KeyEquivalent, action: () -> KeyPress.Result) -> some View](view/onkeypress(_:action:).md)
+### Responding to keyboard input
+- [func onKeyPress(KeyEquivalent, action: () -> KeyPress.Result) -> some View](./onkeypress%28_,action%29.md)
   Performs an action if the user presses a key on a hardware keyboard while the view has focus.
-- [func onKeyPress(phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](view/onkeypress(phases:action:).md)
+- [func onKeyPress(phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](./onkeypress%28phases,action%29.md)
   Performs an action if the user presses any key on a hardware keyboard while the view has focus.
-- [func onKeyPress(KeyEquivalent, phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](view/onkeypress(_:phases:action:).md)
+- [func onKeyPress(KeyEquivalent, phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](./onkeypress%28_,phases,action%29.md)
   Performs an action if the user presses a key on a hardware keyboard while the view has focus.
-- [func onKeyPress(characters: CharacterSet, phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](view/onkeypress(characters:phases:action:).md)
+- [func onKeyPress(characters: CharacterSet, phases: KeyPress.Phases, action: (KeyPress) -> KeyPress.Result) -> some View](./onkeypress%28characters,phases,action%29.md)
   Performs an action if the user presses one or more keys on a hardware keyboard while the view has focus.
-- [struct KeyPress](keypress.md)
+- [struct KeyPress](../keypress.md)
   A hardware keyboard event that a focused view receives.
 
 

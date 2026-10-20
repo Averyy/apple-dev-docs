@@ -1,7 +1,8 @@
 # CMSCertificateChainMode.none
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Don’t include any certificates.
 
@@ -13,6 +14,10 @@ Don’t include any certificates.
 
 ```swift
 case none
+```
+
+```c
+kCMSCertificateNone
 ```
 
 

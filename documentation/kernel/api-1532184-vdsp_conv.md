@@ -1,7 +1,8 @@
 # vDSP_conv
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs either correlation or convolution on two real single-precision vectors.
 
@@ -10,7 +11,7 @@ Performs either correlation or convolution on two real single-precision vectors.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_conv(const float *__A, vDSP_Stride __IA, const float *__F, vDSP_Stride __IF, float *__C, vDSP_Stride __IC, vDSP_Length __N, vDSP_Length __P);
 ```
 

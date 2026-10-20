@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a default view mapping.
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(viewportArrayIndexOffset: UInt32, renderTargetArrayIndexOffset: UInt32)](mtlvertexamplificationviewmapping/init(viewportarrayindexoffset:rendertargetarrayindexoffset:).md)
+### Creating a view mapping
+- [init(viewportArrayIndexOffset: UInt32, renderTargetArrayIndexOffset: UInt32)](./init%28viewportarrayindexoffset,rendertargetarrayindexoffset%29.md)
   Initializes a new view mapping.
 
 

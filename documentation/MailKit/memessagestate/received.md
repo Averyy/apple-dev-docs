@@ -1,7 +1,8 @@
 # MEMessageState.received
 
 **Framework**: MailKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the system has received and stored the message.
 
@@ -14,11 +15,16 @@ A state that indicates the system has received and stored the message.
 case received
 ```
 
+```c
+MEMessageStateReceived
+```
+
 ## See Also
 
-- [MEMessageState.draft](memessagestate/draft.md)
+### Determining Message State
+- [MEMessageState.draft](./draft.md)
   A state that indicates the user is composing the message, and hasn’t sent it yet.
-- [MEMessageState.sending](memessagestate/sending.md)
+- [MEMessageState.sending](./sending.md)
   A state that indicates the system is in the process of sending the message.
 
 

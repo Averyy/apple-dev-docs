@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Automatic language behavior.
 
@@ -26,7 +27,8 @@ When determining the language to use for typesetting the current UI language and
 
 ## See Also
 
-- [static func explicit(Locale.Language) -> TypesettingLanguage](typesettinglanguage/explicit(_:).md)
+### Getting language behavior
+- [static func explicit(Locale.Language) -> TypesettingLanguage](./explicit%28_%29.md)
   Use explicit language.
 
 

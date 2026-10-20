@@ -1,7 +1,8 @@
 # FSVolume.SetXattrPolicy.alwaysSet
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Set the value, regardless of previous state.
 
@@ -14,13 +15,18 @@ Set the value, regardless of previous state.
 case alwaysSet
 ```
 
+```c
+FSSetXattrPolicyAlwaysSet
+```
+
 ## See Also
 
-- [FSVolume.SetXattrPolicy.mustCreate](fsvolume/setxattrpolicy/mustcreate.md)
+### Declaring a policy
+- [FSVolume.SetXattrPolicy.mustCreate](./mustcreate.md)
   Set the value, but fail if the extended attribute already exists.
-- [FSVolume.SetXattrPolicy.mustReplace](fsvolume/setxattrpolicy/mustreplace.md)
+- [FSVolume.SetXattrPolicy.mustReplace](./mustreplace.md)
   Set the value, but fail if the extended attribute doesn’t already exist.
-- [FSVolume.SetXattrPolicy.delete](fsvolume/setxattrpolicy/delete.md)
+- [FSVolume.SetXattrPolicy.delete](./delete.md)
   Delete the value, failing if the extended attribute doesn’t exist.
 
 

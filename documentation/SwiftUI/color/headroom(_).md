@@ -1,7 +1,8 @@
 # headroom(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new color with specified HDR content headroom.
 
@@ -43,13 +44,14 @@ note that headroom is a linear quantity, and as such any color adjustments shoul
 
 ## See Also
 
-- [func opacity(Double) -> Color](color/opacity(_:).md)
+### Modifying a color
+- [func opacity(Double) -> Color](./opacity%28_%29.md)
   Multiplies the opacity of the color by the given amount.
-- [var gradient: AnyGradient](color/gradient.md)
+- [var gradient: AnyGradient](./gradient.md)
   Returns the standard gradient for the color `self`.
-- [func mix(with: Color, by: Double, in: Gradient.ColorSpace) -> Color](color/mix(with:by:in:).md)
+- [func mix(with: Color, by: Double, in: Gradient.ColorSpace) -> Color](./mix%28with,by,in%29.md)
   Returns a version of self mixed with `rhs` by the amount specified by `fraction`.
-- [func exposureAdjust(Double) -> Color](color/exposureadjust(_:).md)
+- [func exposureAdjust(Double) -> Color](./exposureadjust%28_%29.md)
   Returns a new color with an exposure adjustment applied.
 
 

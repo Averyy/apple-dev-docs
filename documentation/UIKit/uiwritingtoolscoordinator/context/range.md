@@ -1,7 +1,8 @@
 # range
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the context object.
 
@@ -17,17 +18,22 @@ The unique identifier of the context object.
 var range: NSRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSRange range;
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
-The [`UIWritingToolsCoordinator.Context`](uiwritingtoolscoordinator/context.md) object initializes the value of this property at creation time. Use this value to identify the context object within your app.
+The [`UIWritingToolsCoordinator.Context`](../context.md) object initializes the value of this property at creation time. Use this value to identify the context object within your app.
 
 ## See Also
 
-- [var attributedString: NSAttributedString](uiwritingtoolscoordinator/context/attributedstring.md)
+### Getting the source text details
+- [var attributedString: NSAttributedString](./attributedstring.md)
   The portion of your view’s text to evaluate.
 
 

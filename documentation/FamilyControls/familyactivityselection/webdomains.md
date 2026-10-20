@@ -1,7 +1,8 @@
 # webDomains
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of web domain instances selected by the user.
 
@@ -17,7 +18,8 @@ var webDomains: Set<WebDomain> { get }
 
 ## See Also
 
-- [var webDomainTokens: Set<WebDomainToken>](familyactivityselection/webdomaintokens.md)
+### Accessing selected web domains
+- [var webDomainTokens: Set<WebDomainToken>](./webdomaintokens.md)
   Tokens that represent web domains selected by the user.
 
 

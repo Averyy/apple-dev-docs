@@ -1,7 +1,8 @@
 # preferredDynamicRange
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,10 +18,15 @@
 var preferredDynamicRange: CALayer.DynamicRange { get set }
 ```
 
+```objc
+@property (copy) CADynamicRange preferredDynamicRange;
+```
+
 ## See Also
 
-- [var contentsHeadroom: CGFloat](calayer/contentsheadroom.md)
-- [var wantsExtendedDynamicRangeContent: Bool](calayer/wantsextendeddynamicrangecontent.md)
+### High dynamic range
+- [var contentsHeadroom: CGFloat](./contentsheadroom.md)
+- [var wantsExtendedDynamicRangeContent: Bool](./wantsextendeddynamicrangecontent.md)
 
 
 ---

@@ -2,22 +2,29 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Specifies known store action options for a given stencil attachment.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.13+ - Deprecated in 27.0
+- tvOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Store action options have no effect on Apple Silicon
 
 ## Declaration
 
 ```swift
 func setStencilStoreActionOptions(_ storeActionOptions: MTLStoreActionOptions)
+```
+
+```objc
+- (void) setStencilStoreActionOptions:(MTLStoreActionOptions) storeActionOptions;
 ```
 
 ## Parameters
@@ -26,16 +33,17 @@ func setStencilStoreActionOptions(_ storeActionOptions: MTLStoreActionOptions)
 
 ## See Also
 
-- [func setColorStoreAction(MTLStoreAction, index: Int)](mtlparallelrendercommandencoder/setcolorstoreaction(_:index:).md)
-  Specifies a known store action to replace the initial [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md) value specified for a given color attachment.
-- [func setColorStoreActionOptions(MTLStoreActionOptions, index: Int)](mtlparallelrendercommandencoder/setcolorstoreactionoptions(_:index:).md)
+### Setting render pass state
+- [func setColorStoreAction(MTLStoreAction, index: Int)](./setcolorstoreaction%28_,index%29.md)
+  Specifies a known store action to replace the initial [`MTLStoreAction.unknown`](../mtlstoreaction/unknown.md) value specified for a given color attachment.
+- [func setColorStoreActionOptions(MTLStoreActionOptions, index: Int)](./setcolorstoreactionoptions%28_,index%29.md)
   Specifies known store action options for a given color attachment.
-- [func setDepthStoreAction(MTLStoreAction)](mtlparallelrendercommandencoder/setdepthstoreaction(_:).md)
-  Specifies a known store action to replace the initial [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md) value specified for a given depth attachment.
-- [func setDepthStoreActionOptions(MTLStoreActionOptions)](mtlparallelrendercommandencoder/setdepthstoreactionoptions(_:).md)
+- [func setDepthStoreAction(MTLStoreAction)](./setdepthstoreaction%28_%29.md)
+  Specifies a known store action to replace the initial [`MTLStoreAction.unknown`](../mtlstoreaction/unknown.md) value specified for a given depth attachment.
+- [func setDepthStoreActionOptions(MTLStoreActionOptions)](./setdepthstoreactionoptions%28_%29.md)
   Specifies known store action options for a given depth attachment.
-- [func setStencilStoreAction(MTLStoreAction)](mtlparallelrendercommandencoder/setstencilstoreaction(_:).md)
-  Specifies a known store action to replace the initial [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md) value specified for a given stencil attachment.
+- [func setStencilStoreAction(MTLStoreAction)](./setstencilstoreaction%28_%29.md)
+  Specifies a known store action to replace the initial [`MTLStoreAction.unknown`](../mtlstoreaction/unknown.md) value specified for a given stencil attachment.
 
 
 ---

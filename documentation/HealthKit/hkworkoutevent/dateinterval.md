@@ -1,7 +1,8 @@
 # dateInterval
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time and duration of the event.
 
@@ -19,15 +20,20 @@ The time and duration of the event.
 var dateInterval: DateInterval { get }
 ```
 
+```objc
+@property (copy, readonly) NSDateInterval * dateInterval;
+```
+
 #### Discussion
 
-Most event types support only date intervals with a zero-length duration. These intervals indicate a single point in time, represented by the interval’s [`startDate`](https://developer.apple.com/documentation/foundation/nsdateinterval/startdate) property. Only [`HKWorkoutEventType.lap`](hkworkouteventtype/lap.md) and [`HKWorkoutEventType.segment`](hkworkouteventtype/segment.md) event types support intervals with nonzero durations.
+Most event types support only date intervals with a zero-length duration. These intervals indicate a single point in time, represented by the interval’s [`startDate`](../../Foundation/nsdateinterval/startdate.md) property. Only [`HKWorkoutEventType.lap`](../hkworkouteventtype/lap.md) and [`HKWorkoutEventType.segment`](../hkworkouteventtype/segment.md) event types support intervals with nonzero durations.
 
 ## See Also
 
-- [var type: HKWorkoutEventType](hkworkoutevent/type.md)
+### Getting property data
+- [var type: HKWorkoutEventType](./type.md)
   The type of workout event.
-- [var metadata: [String : Any]?](hkworkoutevent/metadata.md)
+- [var metadata: [String : Any]?](./metadata.md)
   The metadata associated with the workout event.
 
 

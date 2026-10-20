@@ -1,12 +1,15 @@
 # timeRange
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time range that determines when a highlight begins and its duration.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,13 +17,18 @@ A time range that determines when a highlight begins and its duration.
 var timeRange: TVMediaItem.TimeRange { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) TVTimeRange * timeRange;
+```
+
 ## See Also
 
-- [var highlightDescription: String?](tvmediaitem/highlight/highlightdescription.md)
+### Accessing a Highlight
+- [var highlightDescription: String?](./highlightdescription.md)
   A description for an individual highlight.
-- [var imageURL: URL?](tvmediaitem/highlight/imageurl.md)
+- [var imageURL: URL?](./imageurl.md)
   The URL for an image associated with a highlight.
-- [var localizedName: String?](tvmediaitem/highlight/localizedname.md)
+- [var localizedName: String?](./localizedname.md)
   The name associated with a highlight.
 
 

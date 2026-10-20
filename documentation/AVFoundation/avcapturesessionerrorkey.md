@@ -1,9 +1,10 @@
 # AVCaptureSessionErrorKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Key to retrieve the error object from a [`runtimeErrorNotification`](avcapturesession/runtimeerrornotification.md) user info dictionary.
+Key to retrieve the error object from a [`runtimeErrorNotification`](./avcapturesession/runtimeerrornotification.md) user info dictionary.
 
 **Availability**:
 - iOS 4.0+
@@ -17,6 +18,10 @@ Key to retrieve the error object from a [`runtimeErrorNotification`](avcapturese
 
 ```swift
 let AVCaptureSessionErrorKey: String
+```
+
+```c
+extern NSString * const AVCaptureSessionErrorKey;
 ```
 
 

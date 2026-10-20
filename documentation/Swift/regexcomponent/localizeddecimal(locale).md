@@ -1,7 +1,8 @@
 # localizedDecimal(locale:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a regex component that matches a localized decimal string, capturing it as a Foundation decimal.
 
@@ -20,15 +21,17 @@ Creates a regex component that matches a localized decimal string, capturing it 
 static func localizedDecimal(locale: Locale) -> Self
 ```
 
+Available when `Self` is `Decimal.FormatStyle`.
+
 #### Return Value
 
-A `RegexComponent` that matches localized decimal substrings as Foundation [`Decimal`](https://developer.apple.com/documentation/foundation/decimal) instances.
+A `RegexComponent` that matches localized decimal substrings as Foundation [`Decimal`](../../Foundation/decimal.md) instances.
 
 #### Discussion
 
 This method matches decimal substrings in accordance with the provided locale. For example, the value `1234567890.1234` formats as `1,234,567,890.1234` in the `en_US` locale, as `1 234 567 890,1234` in the `FR` locale, and as `1234567890.1234` in the `JP` locale. Because of this, the regex needs to know what locale convention to match against.
 
-The following example creates a [`Regex`](regex.md) that matches a date and time followed by whitespace and a decimal formatted in the `en_US` locale. It then matches this regex against a source string containing a date with this format, some whitespace, and a decimal value.
+The following example creates a [`Regex`](../regex.md) that matches a date and time followed by whitespace and a decimal formatted in the `en_US` locale. It then matches this regex against a source string containing a date with this format, some whitespace, and a decimal value.
 
 ```swift
 let enUSLocale = Locale(languageCode: .english, languageRegion: .unitedStates)
@@ -53,17 +56,18 @@ let decimal = match.1 // decimal == 1234567890.1234
 
 ## See Also
 
-- [static func localizedInteger(locale: Locale) -> Self](regexcomponent/localizedinteger(locale:).md)
+### Matching numeric formats
+- [static func localizedInteger(locale: Locale) -> Self](./localizedinteger%28locale%29.md)
   Creates a regex component that matches a localized numeric string, capturing it as an integer value.
-- [static func localizedDouble(locale: Locale) -> Self](regexcomponent/localizeddouble(locale:).md)
+- [static func localizedDouble(locale: Locale) -> Self](./localizeddouble%28locale%29.md)
   Creates a regex component that matches a localized numeric string, capturing it as a double-precision floating-point value.
-- [static func localizedCurrency(code: Locale.Currency, locale: Locale) -> Self](regexcomponent/localizedcurrency(code:locale:).md)
+- [static func localizedCurrency(code: Locale.Currency, locale: Locale) -> Self](./localizedcurrency%28code,locale%29.md)
   Creates a regex component that matches a localized currency string, capturing it as a decimal value.
-- [static func localizedIntegerCurrency(code: Locale.Currency, locale: Locale) -> Self](regexcomponent/localizedintegercurrency(code:locale:).md)
+- [static func localizedIntegerCurrency(code: Locale.Currency, locale: Locale) -> Self](./localizedintegercurrency%28code,locale%29.md)
   Creates a regex component that matches a localized currency string, capturing it as an integer value.
-- [static func localizedIntegerPercentage(locale: Locale) -> Self](regexcomponent/localizedintegerpercentage(locale:).md)
+- [static func localizedIntegerPercentage(locale: Locale) -> Self](./localizedintegerpercentage%28locale%29.md)
   Creates a regex component that matches a localized percentage string, capturing it as a double-precision floating-point value.
-- [static func localizedDoublePercentage(locale: Locale) -> Self](regexcomponent/localizeddoublepercentage(locale:).md)
+- [static func localizedDoublePercentage(locale: Locale) -> Self](./localizeddoublepercentage%28locale%29.md)
   Creates a regex component that matches a localized percentage string, capturing it as a double-precision floating-point value.
 
 

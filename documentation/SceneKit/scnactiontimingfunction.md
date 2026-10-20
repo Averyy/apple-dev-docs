@@ -1,18 +1,19 @@
 # SCNActionTimingFunction
 
 **Framework**: SceneKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The signature for a block that manages animation timing, used by the [`timingFunction`](scnaction/timingfunction.md) property.
+The signature for a block that manages animation timing, used by the [`timingFunction`](./scnaction/timingfunction.md) property.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,18 +21,23 @@ The signature for a block that manages animation timing, used by the [`timingFun
 typealias SCNActionTimingFunction = (Float) -> Float
 ```
 
+```c
+typedef float (^)(float) SCNActionTimingFunction;
+```
+
 #### Discussion
 
 The block takes a single parameter:
 
-- **time**: A fraction of the action’s The input value for the timing function, as determined by the [`timingMode`](scnaction/timingmode.md) property and the action’s current progress.
+- **time**: A fraction of the action’s The input value for the timing function, as determined by the [`timingMode`](./scnaction/timingmode.md) property and the action’s current progress.
 
 Your block must return a floating-point value between `0.0` and `1.0`, where `0.0` represents the starting state of the action’s animation and `1.0` represents the end state.
 
 ## See Also
 
-- [enum SCNActionTimingMode](scnactiontimingmode.md)
-  Constants affecting the animation curve of an action, used by the [`timingMode`](scnaction/timingmode.md) property.
+### Constants
+- [enum SCNActionTimingMode](./scnactiontimingmode.md)
+  Constants affecting the animation curve of an action, used by the [`timingMode`](./scnaction/timingmode.md) property.
 
 
 ---

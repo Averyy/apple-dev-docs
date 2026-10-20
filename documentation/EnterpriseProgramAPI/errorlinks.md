@@ -1,27 +1,29 @@
 # ErrorLinks
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object ErrorLinks
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object ErrorLinks.Associated](errorlinks/associated-data.dictionary.md)
+- [object ErrorLinks.Associated](./errorlinks/associated-data.dictionary.md)
 
 ## Properties
 
 - `about` (uri-reference)
-- `associated` (*)
+- `associated` (*): **Allowed Types**: `uri-reference`, `ErrorLinks.Associated`
 
 ## See Also
 
-- [object ErrorResponse](errorresponse.md)
+### Objects
+- [object ErrorResponse](./errorresponse.md)
   The error details that an API returns in the response body whenever the API request isn’t successful.
 
 

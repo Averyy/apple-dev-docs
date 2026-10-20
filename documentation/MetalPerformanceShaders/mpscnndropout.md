@@ -1,7 +1,8 @@
 # MPSCNNDropout
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A dropout filter.
 
@@ -19,41 +20,46 @@ A dropout filter.
 class MPSCNNDropout
 ```
 
+```objc
+@interface MPSCNNDropout : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnndropout/init(coder:device:).md)
-- [init(device: any MTLDevice, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](mpscnndropout/init(device:keepprobability:seed:maskstrideinpixels:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnndropout/init%28coder,device%29.md)
+- [init(device: any MTLDevice, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](./mpscnndropout/init%28device,keepprobability,seed,maskstrideinpixels%29.md)
 ### Instance Properties
-- [var keepProbability: Float](mpscnndropout/keepprobability.md)
-- [var maskStrideInPixels: MTLSize](mpscnndropout/maskstrideinpixels.md)
-- [var seed: Int](mpscnndropout/seed.md)
+- [var keepProbability: Float](./mpscnndropout/keepprobability.md)
+- [var maskStrideInPixels: MTLSize](./mpscnndropout/maskstrideinpixels.md)
+- [var seed: Int](./mpscnndropout/seed.md)
 ### Instance Methods
-- [func resultState(sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNDropoutGradientState?](mpscnndropout/resultstate(sourceimage:sourcestates:destinationimage:).md)
-- [func resultStateBatch(sourceImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> MPSCNNDropoutGradientState?](mpscnndropout/resultstatebatch(sourceimage:sourcestates:destinationimage:).md)
-- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNDropoutGradientState?](mpscnndropout/temporaryresultstate(commandbuffer:sourceimage:sourcestates:destinationimage:).md)
-- [func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, sourceImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSCNNDropoutGradientState]?](mpscnndropout/temporaryresultstatebatch(commandbuffer:sourceimage:sourcestates:destinationimage:).md)
+- [func resultState(sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNDropoutGradientState?](./mpscnndropout/resultstate%28sourceimage,sourcestates,destinationimage%29.md)
+- [func resultStateBatch(sourceImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> MPSCNNDropoutGradientState?](./mpscnndropout/resultstatebatch%28sourceimage,sourcestates,destinationimage%29.md)
+- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSCNNDropoutGradientState?](./mpscnndropout/temporaryresultstate%28commandbuffer,sourceimage,sourcestates,destinationimage%29.md)
+- [func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, sourceImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSCNNDropoutGradientState]?](./mpscnndropout/temporaryresultstatebatch%28commandbuffer,sourceimage,sourcestates,destinationimage%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNDropoutGradient](mpscnndropoutgradient.md)
+### Dropout Layers
+- [class MPSCNNDropoutGradient](./mpscnndropoutgradient.md)
   A gradient dropout filter.
-- [class MPSCNNDropoutGradientState](mpscnndropoutgradientstate.md)
+- [class MPSCNNDropoutGradientState](./mpscnndropoutgradientstate.md)
   A class that stores the mask used by dropout and gradient dropout filters.
 
 

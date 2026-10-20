@@ -1,7 +1,8 @@
 # hasAuthoredSpecializes
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the prim has authored specializes arcs.
 

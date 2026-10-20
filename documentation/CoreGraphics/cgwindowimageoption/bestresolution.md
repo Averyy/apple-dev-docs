@@ -1,13 +1,14 @@
 # bestResolution
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 When capturing the window, return the best image resolution. The returned image size may be different than the screen size.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ When capturing the window, return the best image resolution. The returned image 
 static var bestResolution: CGWindowImageOption { get }
 ```
 
+```c
+kCGWindowImageBestResolution
+```
+
 ## See Also
 
-- [static var boundsIgnoreFraming: CGWindowImageOption](cgwindowimageoption/boundsignoreframing.md)
-- [static var nominalResolution: CGWindowImageOption](cgwindowimageoption/nominalresolution.md)
+### Type Properties
+- [static var boundsIgnoreFraming: CGWindowImageOption](./boundsignoreframing.md)
+- [static var nominalResolution: CGWindowImageOption](./nominalresolution.md)
   When capturing the window, return the nominal image resolution. The returned image size is the same as the screen size.
-- [static var onlyShadows: CGWindowImageOption](cgwindowimageoption/onlyshadows.md)
-- [static var shouldBeOpaque: CGWindowImageOption](cgwindowimageoption/shouldbeopaque.md)
+- [static var onlyShadows: CGWindowImageOption](./onlyshadows.md)
+- [static var shouldBeOpaque: CGWindowImageOption](./shouldbeopaque.md)
 
 
 ---

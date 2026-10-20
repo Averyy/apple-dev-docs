@@ -1,7 +1,8 @@
 # spline(leftEndpoint:from:to:rightEndpoint:t:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an interpolated value between two rotations along a spherical cubic spline.
 

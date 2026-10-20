@@ -1,7 +1,8 @@
 # kSecKeyWrap
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. This key can wrap other keys.
 
@@ -12,6 +13,10 @@ Type uint32; value is nonzero. This key can wrap other keys.
 
 ```swift
 var kSecKeyWrap: Int32 { get }
+```
+
+```c
+kSecKeyWrap
 ```
 
 

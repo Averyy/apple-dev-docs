@@ -1,7 +1,8 @@
 # Package.Dependency.Kind.fileSystem(name:path:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A dependency located at the given path.
 

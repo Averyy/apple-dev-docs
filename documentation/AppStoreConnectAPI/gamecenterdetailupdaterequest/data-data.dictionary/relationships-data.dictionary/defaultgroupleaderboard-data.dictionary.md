@@ -1,21 +1,22 @@
 # GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard.Data](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultgroupleaderboard-data.dictionary/data-data.dictionary.md)
+- [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard.Data](./defaultgroupleaderboard-data.dictionary/data-data.dictionary.md)
   The request body you use to update a detail.
 
 ## Properties
@@ -24,8 +25,9 @@ object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard
 
 ## See Also
 
-- [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboard](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultleaderboard-data.dictionary.md)
-- [object GameCenterDetailUpdateRequest.Data.Relationships.GameCenterGroup](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+### Objects
+- [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboard](./defaultleaderboard-data.dictionary.md)
+- [object GameCenterDetailUpdateRequest.Data.Relationships.GameCenterGroup](./gamecentergroup-data.dictionary.md)
 
 
 ---

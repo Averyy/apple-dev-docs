@@ -1,7 +1,8 @@
 # SystemMigration.CustomBehaviorItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The custom behavior dictionary.
 
@@ -10,14 +11,14 @@ The custom behavior dictionary.
 
 ## Declaration
 
-```swift
+```
 object SystemMigration.CustomBehaviorItem
 ```
 
 ## Topics
 
 ### Objects
-- [object SystemMigration.CustomBehaviorItem.PathsItem](systemmigration/custombehavioritem/pathsitem.md)
+- [object SystemMigration.CustomBehaviorItem.PathsItem](./custombehavioritem/pathsitem.md)
   The custom behavior path dictionary.
 
 ## Properties

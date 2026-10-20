@@ -1,7 +1,8 @@
 # NSFetchIndexElementType.binary
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A binary index type.
 
@@ -20,9 +21,14 @@ A binary index type.
 case binary
 ```
 
+```c
+NSFetchIndexElementTypeBinary
+```
+
 ## See Also
 
-- [NSFetchIndexElementType.rTree](nsfetchindexelementtype/rtree.md)
+### Index Types
+- [NSFetchIndexElementType.rTree](./rtree.md)
   An R-tree index type.
 
 

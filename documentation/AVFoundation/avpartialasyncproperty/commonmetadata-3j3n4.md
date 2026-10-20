@@ -1,7 +1,8 @@
 # commonMetadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata items that an asset contains for common metadata identifiers.
 
@@ -20,29 +21,32 @@ The metadata items that an asset contains for common metadata identifiers.
 static var commonMetadata: AVAsyncProperty<Root, [AVMetadataItem]> { get }
 ```
 
+Available when `Root` inherits `AVAsset`.
+
 ## Mentions
 
-- [Retrieving media metadata](retrieving-media-metadata.md)
+- [Retrieving media metadata](../retrieving-media-metadata.md)
 
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-The value contains an array of metadata items that contain an [`identifier`](avmetadataitem/identifier.md) value from the set of Common Metadata Identifiers.
+The value contains an array of metadata items that contain an [`identifier`](../avmetadataitem/identifier.md) value from the set of Common Metadata Identifiers.
 
-You can filter items in this array according to language by calling [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](avmetadataitem/metadataitems(from:filteredandsortedaccordingtopreferredlanguages:).md), or by identifier by calling [`metadataItems(from:filteredByIdentifier:)`](avmetadataitem/metadataitems(from:filteredbyidentifier:).md).
+You can filter items in this array according to language by calling [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md), or by identifier by calling [`metadataItems(from:filteredByIdentifier:)`](../avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md).
 
 ## See Also
 
-- [static var metadata: AVAsyncProperty<Root, [AVMetadataItem]>](avpartialasyncproperty/metadata-16qej.md)
+### Loading metadata
+- [static var metadata: AVAsyncProperty<Root, [AVMetadataItem]>](./metadata-16qej.md)
   The metadata items that an asset contains for all metadata identifiers.
-- [static var availableMetadataFormats: AVAsyncProperty<Root, [AVMetadataFormat]>](avpartialasyncproperty/availablemetadataformats-4yiq8.md)
+- [static var availableMetadataFormats: AVAsyncProperty<Root, [AVMetadataFormat]>](./availablemetadataformats-4yiq8.md)
   The formats of metadata that an asset contains.
-- [func loadMetadata(for: AVMetadataFormat, completionHandler: ([AVMetadataItem]?, (any Error)?) -> Void)](avasset/loadmetadata(for:completionhandler:).md)
+- [func loadMetadata(for: AVMetadataFormat, completionHandler: ([AVMetadataItem]?, (any Error)?) -> Void)](../avasset/loadmetadata%28for,completionhandler%29.md)
   Loads an array of metadata items that the asset contains for the specified format.
-- [static var creationDate: AVAsyncProperty<Root, AVMetadataItem?>](avpartialasyncproperty/creationdate.md)
+- [static var creationDate: AVAsyncProperty<Root, AVMetadataItem?>](./creationdate.md)
   A metadata item that indicates the creation date of an asset.
-- [static var lyrics: AVAsyncProperty<Root, String?>](avpartialasyncproperty/lyrics.md)
+- [static var lyrics: AVAsyncProperty<Root, String?>](./lyrics.md)
   The lyrics of the asset in a language suitable for the current locale.
 
 

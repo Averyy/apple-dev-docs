@@ -1,7 +1,8 @@
 # ObjectTrackingProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A source of real-time position of reference objects in a person’s environment.
 
@@ -16,50 +17,51 @@ final class ObjectTrackingProvider
 
 #### Overview
 
-Use this class to configure ARKIt to track reference objects in a person’s environment and receive a stream of updates that contains [`ObjectAnchor`](objectanchor.md) structures that describe them.
+Use this class to configure ARKIt to track reference objects in a person’s environment and receive a stream of updates that contains [`ObjectAnchor`](./objectanchor.md) structures that describe them.
 
 ## Topics
 
 ### Creating an object-tracking provider
-- [init(referenceObjects: [ReferenceObject], trackingConfiguration: ObjectTrackingProvider.TrackingConfiguration?)](objecttrackingprovider/init(referenceobjects:trackingconfiguration:).md)
+- [init(referenceObjects: [ReferenceObject], trackingConfiguration: ObjectTrackingProvider.TrackingConfiguration?)](./objecttrackingprovider/init%28referenceobjects,trackingconfiguration%29.md)
   Creates an object-tracking provider.
 ### Checking availability
-- [static var isSupported: Bool](objecttrackingprovider/issupported.md)
+- [static var isSupported: Bool](./objecttrackingprovider/issupported.md)
   A Boolean value that indicates whether a device supports the object-tracking provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](objecttrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./objecttrackingprovider/requiredauthorizations.md)
   An array of authorization types the object-tracking provider requires.
 ### Configuring object-tracking
-- [var trackingConfiguration: ObjectTrackingProvider.TrackingConfiguration](objecttrackingprovider/trackingconfiguration-swift.property.md)
+- [var trackingConfiguration: ObjectTrackingProvider.TrackingConfiguration](./objecttrackingprovider/trackingconfiguration-swift.property.md)
   Returns the current parameters that are being used to configure object tracking.
-- [ObjectTrackingProvider.TrackingConfiguration](objecttrackingprovider/trackingconfiguration-swift.struct.md)
+- [ObjectTrackingProvider.TrackingConfiguration](./objecttrackingprovider/trackingconfiguration-swift.struct.md)
   Parameters for changing object-tracking behavior.
 ### Inspecting an object-tracking provider
-- [var state: DataProviderState](objecttrackingprovider/state.md)
+- [var state: DataProviderState](./objecttrackingprovider/state.md)
   The state of an object-tracking provider.
-- [var allAnchors: [ObjectAnchor]](objecttrackingprovider/allanchors.md)
+- [var allAnchors: [ObjectAnchor]](./objecttrackingprovider/allanchors.md)
   An array of all the object anchors the object-tracking provider is tracking.
-- [var anchorUpdates: AnchorUpdateSequence<ObjectAnchor>](objecttrackingprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<ObjectAnchor>](./objecttrackingprovider/anchorupdates.md)
   An asynchronous sequence of anchors the framework updates.
-- [ObjectTrackingProvider.Error](objecttrackingprovider/error.md)
+- [ObjectTrackingProvider.Error](./objecttrackingprovider/error.md)
   Values that represent an object-tracking error.
-- [var description: String](objecttrackingprovider/description.md)
+- [var description: String](./objecttrackingprovider/description.md)
   A textual representation of this object tracking provider.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ObjectAnchor](objectanchor.md)
+### Object tracking
+- [struct ObjectAnchor](./objectanchor.md)
   A reference object ARKit is tracking.
-- [Exploring object tracking with ARKit](../visionos/exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects you train with Create ML.
-- [Implementing object tracking in your app](../visionos/implementing-object-tracking-in-your-app.md)
+- [Implementing object tracking in your app](../visionOS/implementing-object-tracking-in-your-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 
 

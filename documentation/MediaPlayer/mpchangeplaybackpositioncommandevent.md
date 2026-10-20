@@ -1,7 +1,8 @@
 # MPChangePlaybackPositionCommandEvent
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event requesting a change in the playback position.
 
@@ -20,33 +21,38 @@ An event requesting a change in the playback position.
 class MPChangePlaybackPositionCommandEvent
 ```
 
+```objc
+@interface MPChangePlaybackPositionCommandEvent : MPRemoteCommandEvent
+```
+
 ## Topics
 
 ### Retrieving the position time
-- [var positionTime: TimeInterval](mpchangeplaybackpositioncommandevent/positiontime.md)
+- [var positionTime: TimeInterval](./mpchangeplaybackpositioncommandevent/positiontime.md)
   The playback position used when setting the current time of the player.
 
 ## Relationships
 
 ### Inherits From
-- [MPRemoteCommandEvent](mpremotecommandevent.md)
+- [MPRemoteCommandEvent](./mpremotecommandevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPChangePlaybackPositionCommand](mpchangeplaybackpositioncommand.md)
+### Responding to track navigation events
+- [class MPChangePlaybackPositionCommand](./mpchangeplaybackpositioncommand.md)
   An object that responds to requests to change the current playback position of the playing item.
-- [class MPSeekCommandEvent](mpseekcommandevent.md)
+- [class MPSeekCommandEvent](./mpseekcommandevent.md)
   An event requesting that the player seek to a new position.
-- [class MPSkipIntervalCommand](mpskipintervalcommand.md)
+- [class MPSkipIntervalCommand](./mpskipintervalcommand.md)
   An object that defines the skip intervals for the player.
-- [class MPSkipIntervalCommandEvent](mpskipintervalcommandevent.md)
+- [class MPSkipIntervalCommandEvent](./mpskipintervalcommandevent.md)
   An event requesting a change in the current skip interval.
 
 

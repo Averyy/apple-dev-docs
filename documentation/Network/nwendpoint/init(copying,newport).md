@@ -1,7 +1,8 @@
 # init(copying:newPort:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `NWEndpoint` by copying an existing endpoint and specifying a new port.
 

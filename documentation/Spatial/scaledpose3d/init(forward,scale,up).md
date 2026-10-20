@@ -1,7 +1,8 @@
 # init(forward:scale:up:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scaled pose with the specified forward and up vectors.
 
@@ -11,7 +12,7 @@ Creates a scaled pose with the specified forward and up vectors.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,25 +23,26 @@ init(forward: Vector3D, scale: Double = 1, up: Vector3D = Vector3D(x: 0, y: 1, z
 
 ## See Also
 
-- [init()](scaledpose3d/init.md)
+### Creating a 3D scaled-pose structure
+- [init()](./init%28%29.md)
   Creates a scaled pose structure.
-- [init?(simd_float4x4)](scaledpose3d/init(_:)-v6ox.md)
+- [init?(simd_float4x4)](./init%28_%29-v6ox.md)
   Creates a scaled pose from the specified 4 x 4 single-precision matrix.
-- [init?(simd_double4x4)](scaledpose3d/init(_:)-4izkj.md)
+- [init?(simd_double4x4)](./init%28_%29-4izkj.md)
   Creates a scaled pose from the specified 4 x 4 double-precision matrix.
-- [init(position: simd_float3, rotation: simd_quatf, scale: Float)](scaledpose3d/init(position:rotation:scale:)-8ndo4.md)
+- [init(position: simd_float3, rotation: simd_quatf, scale: Float)](./init%28position,rotation,scale%29-8ndo4.md)
   Creates a scaled pose with the specified single-precision position vector and quaternion.
-- [init(position: simd_double3, rotation: simd_quatd, scale: Double)](scaledpose3d/init(position:rotation:scale:)-6fom1.md)
+- [init(position: simd_double3, rotation: simd_quatd, scale: Double)](./init%28position,rotation,scale%29-6fom1.md)
   Creates a scaled pose with the specified double-precision position vector and quaternion.
-- [init(position: Point3D, target: Point3D, scale: Double, up: Vector3D)](scaledpose3d/init(position:target:scale:up:).md)
+- [init(position: Point3D, target: Point3D, scale: Double, up: Vector3D)](./init%28position,target,scale,up%29.md)
   Returns a scaled pose at the specified position with the rotation toward the target.
-- [init(position: Point3D, rotation: Rotation3D, scale: Double)](scaledpose3d/init(position:rotation:scale:)-7ya6f.md)
+- [init(position: Point3D, rotation: Rotation3D, scale: Double)](./init%28position,rotation,scale%29-7ya6f.md)
   Creates a pose with the specified Spatial position, rotation, and scale structures.
-- [init(position: Point3D, rotation: Rotation3D, scale: Double)](scaledpose3d/init(position:rotation:scale:)-8fyu0.md)
+- [init(position: Point3D, rotation: Rotation3D, scale: Double)](./init%28position,rotation,scale%29-8fyu0.md)
   Creates a scaled pose with the specified double-precision position vector and quaternion.
-- [init?(transform: AffineTransform3D)](scaledpose3d/init(transform:)-oogv.md)
+- [init?(transform: AffineTransform3D)](./init%28transform%29-oogv.md)
   Returns a scaled pose with a position, rotation, and scale defined by an affine transform.
-- [init?(transform: ProjectiveTransform3D)](scaledpose3d/init(transform:)-9s08k.md)
+- [init?(transform: ProjectiveTransform3D)](./init%28transform%29-9s08k.md)
   Returns a scaled pose with a position, rotation, and scale defined by a projective transform.
 
 

@@ -1,7 +1,8 @@
 # AVCaptionRegion.DisplayAlignment.before
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An alignment that positions lines at the top of the block progression direction.
 
@@ -17,15 +18,20 @@ An alignment that positions lines at the top of the block progression direction.
 case before
 ```
 
+```c
+AVCaptionRegionDisplayAlignmentBefore
+```
+
 #### Discussion
 
 Aligns lines to the top for English captions, for example.
 
 ## See Also
 
-- [AVCaptionRegion.DisplayAlignment.center](avcaptionregion/displayalignment-swift.enum/center.md)
+### Display alignments
+- [AVCaptionRegion.DisplayAlignment.center](./center.md)
   An alignment that positions lines in the middle of the block progression direction.
-- [AVCaptionRegion.DisplayAlignment.after](avcaptionregion/displayalignment-swift.enum/after.md)
+- [AVCaptionRegion.DisplayAlignment.after](./after.md)
   An alignment that positions lines at the bottom of the block progression direction.
 
 

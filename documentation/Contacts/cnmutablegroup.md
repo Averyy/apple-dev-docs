@@ -1,7 +1,8 @@
 # CNMutableGroup
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable object that represents a group of contacts.
 
@@ -19,6 +20,10 @@ A mutable object that represents a group of contacts.
 class CNMutableGroup
 ```
 
+```objc
+@interface CNMutableGroup : CNGroup
+```
+
 #### Overview
 
 Contacts may be members of one or more groups, depending upon the accounts they come from. The `CNMutableGroup` class is not a thread-safe class.
@@ -26,30 +31,31 @@ Contacts may be members of one or more groups, depending upon the accounts they 
 ## Topics
 
 ### Modifying the Group Name
-- [var name: String](cnmutablegroup/name.md)
+- [var name: String](./cnmutablegroup/name.md)
   The name of the group.
 
 ## Relationships
 
 ### Inherits From
-- [CNGroup](cngroup.md)
+- [CNGroup](./cngroup.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CNGroup](cngroup.md)
+### Groups and Containers
+- [class CNGroup](./cngroup.md)
   An immutable object that represents a group of contacts.
-- [class CNContainer](cncontainer.md)
+- [class CNContainer](./cncontainer.md)
   An immutable object that represents a collection of contacts.
 
 

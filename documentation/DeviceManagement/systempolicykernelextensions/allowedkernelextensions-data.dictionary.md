@@ -1,7 +1,8 @@
 # SystemPolicyKernelExtensions.AllowedKernelExtensions
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary that represents a set of kernel extensions.
 
@@ -10,7 +11,7 @@ The dictionary that represents a set of kernel extensions.
 
 ## Declaration
 
-```swift
+```
 object SystemPolicyKernelExtensions.AllowedKernelExtensions
 ```
 

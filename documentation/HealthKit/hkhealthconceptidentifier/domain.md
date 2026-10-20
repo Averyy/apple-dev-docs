@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The domain this identifier belongs to.
 
@@ -17,6 +18,10 @@ The domain this identifier belongs to.
 
 ```swift
 var domain: HKHealthConceptDomain { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) HKHealthConceptDomain domain;
 ```
 
 #### Discussion

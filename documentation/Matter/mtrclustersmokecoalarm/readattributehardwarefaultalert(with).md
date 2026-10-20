@@ -1,7 +1,8 @@
 # readAttributeHardwareFaultAlert(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeHardwareFaultAlert(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeHardwareFaultAlertWithParams:(MTRReadParams *) params;
 ```
 
 

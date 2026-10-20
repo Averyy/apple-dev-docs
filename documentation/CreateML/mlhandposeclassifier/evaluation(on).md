@@ -1,7 +1,8 @@
 # evaluation(on:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates metrics that describe the hand pose classifier’s performance with a dataset of labeled images.
 
@@ -20,13 +21,14 @@ func evaluation(on annotatedImages: MLHandPoseClassifier.DataSource) throws -> M
 
 ## Parameters
 
-- `annotatedImages`: An [`MLHandPoseClassifier.DataSource`](mlhandposeclassifier/datasource.md) instance.
+- `annotatedImages`: An [`MLHandPoseClassifier.DataSource`](./datasource.md) instance.
 
 ## See Also
 
-- [var trainingMetrics: MLClassifierMetrics](mlhandposeclassifier/trainingmetrics.md)
+### Evaluating a hand pose classifier
+- [var trainingMetrics: MLClassifierMetrics](./trainingmetrics.md)
   Measurements of the hand pose classifier’s performance on the training dataset.
-- [var validationMetrics: MLClassifierMetrics](mlhandposeclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the hand pose classifier’s performance on the validation dataset.
 
 

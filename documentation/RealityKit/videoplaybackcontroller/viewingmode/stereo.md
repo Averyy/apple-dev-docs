@@ -1,7 +1,8 @@
 # VideoPlaybackController.ViewingMode.stereo
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A viewing mode that presents video in stereoscopic mode, if it’s available.
 

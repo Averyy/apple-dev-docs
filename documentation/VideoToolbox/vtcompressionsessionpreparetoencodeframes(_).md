@@ -1,7 +1,8 @@
 # VTCompressionSessionPrepareToEncodeFrames(_:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Enables the encoder to perform any necessary resource allocation before the encoder begins encoding frames (optional).
 
@@ -19,9 +20,13 @@ Enables the encoder to perform any necessary resource allocation before the enco
 func VTCompressionSessionPrepareToEncodeFrames(_ session: VTCompressionSession) -> OSStatus
 ```
 
+```c
+extern OSStatus VTCompressionSessionPrepareToEncodeFrames(VTCompressionSessionRef session);
+```
+
 #### Discussion
 
-If this function isn’t called, any necessary resources are allocated on the first [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:sourceframerefcon:infoflagsout:).md) call.
+If this function isn’t called, any necessary resources are allocated on the first [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md) call.
 
 Subsequent calls to this function have no effect.
 
@@ -31,13 +36,14 @@ Subsequent calls to this function have no effect.
 
 ## See Also
 
-- [func VTCompressionSessionGetPixelBufferPool(VTCompressionSession) -> CVPixelBufferPool?](vtcompressionsessiongetpixelbufferpool(_:).md)
+### Encoding Frames
+- [func VTCompressionSessionGetPixelBufferPool(VTCompressionSession) -> CVPixelBufferPool?](./vtcompressionsessiongetpixelbufferpool%28_%29.md)
   Returns a pool that provides ideal source pixel buffers for a compression session.
-- [func VTCompressionSessionEncodeFrame(VTCompressionSession, imageBuffer: CVImageBuffer, presentationTimeStamp: CMTime, duration: CMTime, frameProperties: CFDictionary?, sourceFrameRefcon: UnsafeMutableRawPointer?, infoFlagsOut: UnsafeMutablePointer<VTEncodeInfoFlags>?) -> OSStatus](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:sourceframerefcon:infoflagsout:).md)
+- [func VTCompressionSessionEncodeFrame(VTCompressionSession, imageBuffer: CVImageBuffer, presentationTimeStamp: CMTime, duration: CMTime, frameProperties: CFDictionary?, sourceFrameRefcon: UnsafeMutableRawPointer?, infoFlagsOut: UnsafeMutablePointer<VTEncodeInfoFlags>?) -> OSStatus](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md)
   Presents frames to the compression session.
-- [func VTCompressionSessionEncodeFrame(VTCompressionSession, imageBuffer: CVImageBuffer, presentationTimeStamp: CMTime, duration: CMTime, frameProperties: CFDictionary?, infoFlagsOut: UnsafeMutablePointer<VTEncodeInfoFlags>?, outputHandler: VTCompressionOutputHandler) -> OSStatus](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:infoflagsout:outputhandler:).md)
+- [func VTCompressionSessionEncodeFrame(VTCompressionSession, imageBuffer: CVImageBuffer, presentationTimeStamp: CMTime, duration: CMTime, frameProperties: CFDictionary?, infoFlagsOut: UnsafeMutablePointer<VTEncodeInfoFlags>?, outputHandler: VTCompressionOutputHandler) -> OSStatus](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,infoflagsout,outputhandler%29.md)
   Presents frames to the compression session and invokes the output callback when compression is complete.
-- [func VTCompressionSessionCompleteFrames(VTCompressionSession, untilPresentationTimeStamp: CMTime) -> OSStatus](vtcompressionsessioncompleteframes(_:untilpresentationtimestamp:).md)
+- [func VTCompressionSessionCompleteFrames(VTCompressionSession, untilPresentationTimeStamp: CMTime) -> OSStatus](./vtcompressionsessioncompleteframes%28_,untilpresentationtimestamp%29.md)
   Forces the compression session to complete the encoding of frames.
 
 

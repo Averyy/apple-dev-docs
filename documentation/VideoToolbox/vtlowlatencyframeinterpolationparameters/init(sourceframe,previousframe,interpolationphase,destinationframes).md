@@ -1,7 +1,8 @@
 # init(sourceFrame:previousFrame:interpolationPhase:destinationFrames:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

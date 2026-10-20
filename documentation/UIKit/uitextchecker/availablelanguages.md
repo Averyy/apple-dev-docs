@@ -1,7 +1,8 @@
 # availableLanguages
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the languages that the text checker’s class can perform spell-checking for.
 
@@ -9,13 +10,17 @@ Returns the languages that the text checker’s class can perform spell-checking
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 class var availableLanguages: [String] { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) NSArray<NSString *> * availableLanguages;
 ```
 
 #### Return Value

@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](filledcolumn/description.md)
+- [var description: String](./description.md)
   A mirror that reflects the filled column.
 
 

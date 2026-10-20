@@ -1,7 +1,8 @@
 # Unicode.UTF32.Parser
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 8.0+
@@ -22,23 +23,23 @@ struct Parser
 ## Topics
 
 ### Initializers
-- [init()](unicode/utf32/parser/init.md)
+- [init()](./parser/init%28%29.md)
   Constructs an instance that can be used to begin parsing `CodeUnit`s at any Unicode scalar boundary.
 ### Instance Methods
-- [func parseScalar<I>(from: inout I) -> Unicode.ParseResult<Unicode.UTF32.Parser.Encoding.EncodedScalar>](unicode/utf32/parser/parsescalar(from:).md)
+- [func parseScalar<I>(from: inout I) -> Unicode.ParseResult<Unicode.UTF32.Parser.Encoding.EncodedScalar>](./parser/parsescalar%28from%29.md)
   Parses a single Unicode scalar value from `input`.
 ### Type Aliases
-- [Unicode.UTF32.Parser.Encoding](unicode/utf32/parser/encoding.md)
+- [Unicode.UTF32.Parser.Encoding](./parser/encoding.md)
   The encoding with which this parser is associated
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../../bitwisecopyable.md)
+- [Copyable](../../copyable.md)
+- [Escapable](../../escapable.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 
 ---

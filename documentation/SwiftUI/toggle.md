@@ -1,7 +1,8 @@
 # Toggle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control that toggles between on and off states.
 
@@ -23,10 +24,10 @@ struct Toggle<Label> where Label : View
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
-- [Declaring a custom view](declaring-a-custom-view.md)
-- [Laying out a simple view](laying-out-a-simple-view.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Declaring a custom view](./declaring-a-custom-view.md)
+- [Laying out a simple view](./laying-out-a-simple-view.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
@@ -42,7 +43,7 @@ var body: some View {
 }
 ```
 
-For the common case of [`Label`](label.md) based labels, you can use the convenience initializer that takes a title string (or localized string key) and the name of a system image:
+For the common case of [`Label`](./label.md) based labels, you can use the convenience initializer that takes a title string (or localized string key) and the name of a system image:
 
 ```swift
 @State private var vibrateOnRing = true
@@ -79,13 +80,13 @@ var body: some View {
 }
 ```
 
-> **Note**: This behavior does not apply to [`button`](togglestyle/button.md).
+> **Note**: This behavior does not apply to [`button`](./togglestyle/button.md).
 
-##### Styling Toggles
+##### Styling toggles
 
-Toggles use a default style that varies based on both the platform and the context. For more information, read about the [`automatic`](togglestyle/automatic.md) toggle style.
+Toggles use a default style that varies based on both the platform and the context. For more information, read about the [`automatic`](./togglestyle/automatic.md) toggle style.
 
-You can customize the appearance and interaction of toggles by applying styles using the [`toggleStyle(_:)`](view/togglestyle(_:).md) modifier. You can apply built-in styles, like [`switch`](togglestyle/switch.md), to either a toggle, or to a view hierarchy that contains toggles:
+You can customize the appearance and interaction of toggles by applying styles using the [`toggleStyle(_:)`](./view/togglestyle%28_%29.md) modifier. You can apply built-in styles, like [`switch`](./togglestyle/switch.md), to either a toggle, or to a view hierarchy that contains toggles:
 
 ```swift
 VStack {
@@ -95,49 +96,50 @@ VStack {
 .toggleStyle(.switch)
 ```
 
-You can also define custom styles by creating a type that conforms to the [`ToggleStyle`](togglestyle.md) protocol.
+You can also define custom styles by creating a type that conforms to the [`ToggleStyle`](./togglestyle.md) protocol.
 
 ## Topics
 
 ### Creating a toggle
-- [init(_:isOn:)](toggle/init(_:ison:).md)
+- [init(_:isOn:)](./toggle/init%28_,ison%29.md)
   Creates a toggle that generates its label from a localized string resource.
-- [init(isOn: Binding<Bool>, label: () -> Label)](toggle/init(ison:label:).md)
+- [init(isOn: Binding<Bool>, label: () -> Label)](./toggle/init%28ison,label%29.md)
   Creates a toggle that displays a custom label.
-- [init(_:image:isOn:)](toggle/init(_:image:ison:).md)
+- [init(_:image:isOn:)](./toggle/init%28_,image,ison%29.md)
   Creates a toggle that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:isOn:)](toggle/init(_:systemimage:ison:).md)
+- [init(_:systemImage:isOn:)](./toggle/init%28_,systemimage,ison%29.md)
   Creates a toggle that generates its label from a localized string key and system image.
 ### Creating a toggle for a collection
-- [init(_:sources:isOn:)](toggle/init(_:sources:ison:).md)
+- [init(_:sources:isOn:)](./toggle/init%28_,sources,ison%29.md)
   Creates a toggle representing a collection of values that generates its label from a localized string resource.
-- [init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, label: () -> Label)](toggle/init(sources:ison:label:).md)
+- [init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, label: () -> Label)](./toggle/init%28sources,ison,label%29.md)
   Creates a toggle representing a collection of values with a custom label.
-- [init(_:image:sources:isOn:)](toggle/init(_:image:sources:ison:).md)
+- [init(_:image:sources:isOn:)](./toggle/init%28_,image,sources,ison%29.md)
   Creates a toggle representing a collection of values that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:sources:isOn:)](toggle/init(_:systemimage:sources:ison:).md)
+- [init(_:systemImage:sources:isOn:)](./toggle/init%28_,systemimage,sources,ison%29.md)
   Creates a toggle representing a collection of values that generates its label from a localized string key and system image.
 ### Creating a toggle from a configuration
-- [init(ToggleStyleConfiguration)](toggle/init(_:).md)
+- [init(ToggleStyleConfiguration)](./toggle/init%28_%29.md)
   Creates a toggle based on a toggle style configuration.
 ### Creating a toggle for an App Intent
-- [init<I>(isOn: Bool, intent: I, label: () -> Label)](toggle/init(ison:intent:label:).md)
+- [init<I>(isOn: Bool, intent: I, label: () -> Label)](./toggle/init%28ison,intent,label%29.md)
   Creates a toggle performing an `AppIntent`.
-- [init(_:isOn:intent:)](toggle/init(_:ison:intent:).md)
+- [init(_:isOn:intent:)](./toggle/init%28_,ison,intent%29.md)
   Creates a toggle performing an `AppIntent` and generates its label from a localized string key.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Slider](slider.md)
+### Getting numeric inputs
+- [struct Slider](./slider.md)
   A control for selecting a value from a bounded linear range of values.
-- [struct Stepper](stepper.md)
+- [struct Stepper](./stepper.md)
   A control that performs increment and decrement actions.
-- [func toggleStyle<S>(S) -> some View](view/togglestyle(_:).md)
+- [func toggleStyle<S>(S) -> some View](./view/togglestyle%28_%29.md)
   Sets the style for toggles in a view hierarchy.
 
 

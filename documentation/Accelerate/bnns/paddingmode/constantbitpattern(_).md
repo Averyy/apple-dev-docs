@@ -1,7 +1,8 @@
 # BNNS.PaddingMode.constantBitPattern(_:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates that a padding operation fills the padded area with a specified bit pattern.
 
@@ -11,8 +12,10 @@ A constant that indicates that a padding operation fills the padded area with a 
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,11 +25,12 @@ case constantBitPattern(UInt32)
 
 ## See Also
 
-- [BNNS.PaddingMode.constantScalar(_:)](bnns/paddingmode/constantscalar(_:).md)
+### Enumeration Cases
+- [BNNS.PaddingMode.constantScalar(_:)](./constantscalar%28_%29.md)
   A constant that indicates that a padding operation fills the padded area with a specified scalar value.
-- [BNNS.PaddingMode.reflect](bnns/paddingmode/reflect.md)
+- [BNNS.PaddingMode.reflect](./reflect.md)
   A constant that indicates that a padding operation fills the padded area to form an odd-symmetric pattern.
-- [BNNS.PaddingMode.symmetric](bnns/paddingmode/symmetric.md)
+- [BNNS.PaddingMode.symmetric](./symmetric.md)
   A constant that indicates that a padding operation fills the padded area to form an even-symmetric pattern.
 
 

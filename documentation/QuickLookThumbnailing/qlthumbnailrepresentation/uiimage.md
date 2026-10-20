@@ -1,7 +1,8 @@
 # uiImage
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A thumbnail in the form of a UIKit image object.
 
@@ -17,17 +18,22 @@ A thumbnail in the form of a UIKit image object.
 var uiImage: UIImage { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIImage * UIImage;
+```
+
 ## See Also
 
-- [var cgImage: CGImage](qlthumbnailrepresentation/cgimage.md)
+### Thumbnail Images
+- [var cgImage: CGImage](./cgimage.md)
   A thumbnail in the form of a Core Graphics image object.
-- [var nsImage: NSImage](qlthumbnailrepresentation/nsimage.md)
+- [var nsImage: NSImage](./nsimage.md)
   A thumbnail in the form of an AppKit image object.
-- [var type: QLThumbnailRepresentation.RepresentationType](qlthumbnailrepresentation/type.md)
+- [var type: QLThumbnailRepresentation.RepresentationType](./type.md)
   The type of thumbnail.
-- [var contentRect: CGRect](qlthumbnailrepresentation/contentrect.md)
+- [var contentRect: CGRect](./contentrect.md)
   The rectangle within the thumbnail image of the document that represents its contents.
-- [QLThumbnailRepresentation.RepresentationType](qlthumbnailrepresentation/representationtype.md)
+- [QLThumbnailRepresentation.RepresentationType](./representationtype.md)
   The different types of thumbnails that you can create.
 
 

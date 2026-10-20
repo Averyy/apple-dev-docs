@@ -1,7 +1,8 @@
 # relu()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Rectified Linear Unit (ReLU) activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Rectified Linear Unit (ReLU) activation operation to the current graph.
 ```swift
 func relu() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

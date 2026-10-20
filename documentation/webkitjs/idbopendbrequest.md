@@ -1,7 +1,8 @@
 # IDBOpenDBRequest
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface IDBOpenDBRequest
 ```
 
 ## Topics
 
 ### Instance Properties
-- [onblocked](idbopendbrequest/1633935-onblocked.md)
-- [onupgradeneeded](idbopendbrequest/1632252-onupgradeneeded.md)
+- [onblocked](./idbopendbrequest/api-1633935-onblocked.md)
+- [onupgradeneeded](./idbopendbrequest/api-1632252-onupgradeneeded.md)
 
 ## Relationships
 
 ### Inherits From
-- [IDBRequest](idbrequest.md)
+- [IDBRequest](./idbrequest.md)
 
 
 ---

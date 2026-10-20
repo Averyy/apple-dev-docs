@@ -1,7 +1,8 @@
 # kVTDecompressionResolutionKey_Width
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to specify the resolution width.
 
@@ -19,13 +20,18 @@ A key to specify the resolution width.
 let kVTDecompressionResolutionKey_Width: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionResolutionKey_Width;
+```
+
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
+The value is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 
 ## See Also
 
-- [let kVTDecompressionResolutionKey_Height: CFString](kvtdecompressionresolutionkey_height.md)
+### Resolutions
+- [let kVTDecompressionResolutionKey_Height: CFString](./kvtdecompressionresolutionkey_height.md)
   A key to specify the resolution height.
 
 

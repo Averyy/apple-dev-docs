@@ -1,12 +1,15 @@
 # SecTransformMetaAttributeType.externalize
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The attribute is exportable.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ The attribute is exportable.
 case externalize
 ```
 
+```c
+kSecTransformMetaAttributeExternalize
+```
+
 #### Discussion
 
-Specifies if this attribute should be written out when creating the external representation of this transform. This metadata has a default value of [`true`](https://developer.apple.com/documentation/swift/true).
+Specifies if this attribute should be written out when creating the external representation of this transform. This metadata has a default value of [`true`](../../Swift/true.md).
 
 
 ---

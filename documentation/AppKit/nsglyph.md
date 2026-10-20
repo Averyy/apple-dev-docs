@@ -1,12 +1,13 @@
 # NSGlyph
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type used to specify glyphs.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The type used to specify glyphs.
 typealias NSGlyph = UInt32
 ```
 
+```c
+typedef unsigned int NSGlyph;
+```
+
 ## See Also
 
-- [protocol NSGlyphStorage](nsglyphstorage.md)
-  A set of methods that a glyph storage object must implement to interact properly with [`NSGlyphGenerator`](nsglyphgenerator.md).
-- [class NSGlyphGenerator](nsglyphgenerator.md)
+### Glyphs
+- [protocol NSGlyphStorage](./nsglyphstorage.md)
+  A set of methods that a glyph storage object must implement to interact properly with [`NSGlyphGenerator`](./nsglyphgenerator.md).
+- [class NSGlyphGenerator](./nsglyphgenerator.md)
   An object that performs the initial, nominal glyph generation phase in the layout process.
-- [class NSGlyphInfo](nsglyphinfo.md)
+- [class NSGlyphInfo](./nsglyphinfo.md)
   A glyph attribute in an attributed string.
-- [Reserved Glyph Codes](reserved-glyph-codes.md)
+- [Reserved Glyph Codes](./reserved-glyph-codes.md)
   These constants define reserved glyph codes.
-- [enum NSFontRenderingMode](nsfontrenderingmode.md)
+- [enum NSFontRenderingMode](./nsfontrenderingmode.md)
   The font rendering mode.
 
 

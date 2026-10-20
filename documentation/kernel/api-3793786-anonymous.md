@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB::kInterfaceSuspendLowPower](3793786-anonymous/standardusb_kinterfacesuspendlowpower.md)
-- [StandardUSB::kInterfaceSuspendRemoteWakeEnable](3793786-anonymous/standardusb_kinterfacesuspendremotewakeenable.md)
+- [StandardUSB::kInterfaceSuspendLowPower](./api-3793786-anonymous/standardusb_kinterfacesuspendlowpower.md)
+- [StandardUSB::kInterfaceSuspendRemoteWakeEnable](./api-3793786-anonymous/standardusb_kinterfacesuspendremotewakeenable.md)
 
 
 ---

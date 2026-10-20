@@ -1,7 +1,8 @@
 # insertOrUpdateAssets(_:)
 
 **Framework**: Media Intelligence  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds or replaces image assets in the analyzer.
 
@@ -21,7 +22,7 @@ final nonisolated(nonsending) func insertOrUpdateAssets(_ assets: [MediaIntellig
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
 #### Return Value
 
@@ -31,7 +32,7 @@ An async sequence of `(assetID, faces)` pairs — one per asset — reporting th
 
 For each asset, the method detects faces and extracts facial data, then persists the results to the working directory. If an asset with the same identifier already exists, the method replaces its face data.
 
-After this call, [`state`](facegroupanalyzer/state-swift.property.md) becomes [`FaceGroupAnalyzer.State.stale`](facegroupanalyzer/state-swift.enum/stale.md) until you call [`update(subprogress:)`](facegroupanalyzer/update(subprogress:).md). Faces detected in this call have a `nil` [`entityID`](facegroupanalyzer/face/entityid.md) until clustering runs.
+After this call, [`state`](./state-swift.property.md) becomes [`FaceGroupAnalyzer.State.stale`](./state-swift.enum/stale.md) until you call [`update(subprogress:)`](./update%28subprogress%29.md). Faces detected in this call have a `nil` [`entityID`](./face/entityid.md) until clustering runs.
 
 ## Parameters
 
@@ -39,13 +40,14 @@ After this call, [`state`](facegroupanalyzer/state-swift.property.md) becomes [`
 
 ## See Also
 
-- [let workingDirectory: URL](facegroupanalyzer/workingdirectory.md)
+### Managing assets
+- [let workingDirectory: URL](./workingdirectory.md)
   A directory where the analyzer stores its face data and metadata.
-- [func deleteAssets([MediaIntelligenceImageAsset.ID]) async throws](facegroupanalyzer/deleteassets(_:).md)
+- [func deleteAssets([MediaIntelligenceImageAsset.ID]) async throws](./deleteassets%28_%29.md)
   Removes the specified assets and their associated face data.
-- [func deleteAllAssets() async throws](facegroupanalyzer/deleteallassets.md)
+- [func deleteAllAssets() async throws](./deleteallassets%28%29.md)
   Removes all assets and their associated face data from the analyzer.
-- [static func purge(workingDirectory: URL) async throws](facegroupanalyzer/purge(workingdirectory:).md)
+- [static func purge(workingDirectory: URL) async throws](./purge%28workingdirectory%29.md)
   Removes all analyzer data from the specified directory.
 
 

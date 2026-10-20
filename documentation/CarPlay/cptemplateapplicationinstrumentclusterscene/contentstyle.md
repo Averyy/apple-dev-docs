@@ -1,7 +1,8 @@
 # contentStyle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -14,10 +15,15 @@
 var contentStyle: UIUserInterfaceStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIUserInterfaceStyle contentStyle;
+```
+
 ## See Also
 
-- [var delegate: (any CPTemplateApplicationInstrumentClusterSceneDelegate)?](cptemplateapplicationinstrumentclusterscene/delegate.md)
-- [var instrumentClusterController: CPInstrumentClusterController](cptemplateapplicationinstrumentclusterscene/instrumentclustercontroller.md)
+### Instance Properties
+- [var delegate: (any CPTemplateApplicationInstrumentClusterSceneDelegate)?](./delegate.md)
+- [var instrumentClusterController: CPInstrumentClusterController](./instrumentclustercontroller.md)
 
 
 ---

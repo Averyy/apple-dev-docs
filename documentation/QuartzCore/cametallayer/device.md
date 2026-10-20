@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal device responsible for the layer’s drawable resources.
 
@@ -19,17 +20,23 @@ The Metal device responsible for the layer’s drawable resources.
 var device: (any MTLDevice)? { get set }
 ```
 
+```objc
+@property (retain, nullable) id<MTLDevice> device;
+```
+
 #### Discussion
 
-This property determines which device object Metal uses to create its [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) objects. When you retrieve a drawable object and its associated texture, you must render to the texture using the same device object.
+This property determines which device object Metal uses to create its [`MTLTexture`](../../Metal/mtltexture.md) objects. When you retrieve a drawable object and its associated texture, you must render to the texture using the same device object.
 
 The default value is `nil`—you must set the device for a layer before rendering.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
-- [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
-- [var preferredDevice: (any MTLDevice)?](cametallayer/preferreddevice.md)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+- [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
+### Configuring the Metal Device
+- [var preferredDevice: (any MTLDevice)?](./preferreddevice.md)
   The device object that the system recommends using for this layer.
 
 

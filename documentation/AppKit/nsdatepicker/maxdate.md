@@ -1,17 +1,22 @@
 # maxDate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date picker’s maximum date value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var maxDate: Date? { get set }
+```
+
+```objc
+@property (copy, nullable) NSDate * maxDate;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This property represents the maximum value that the date picker allows as input.
 
 ## See Also
 
-- [var minDate: Date?](nsdatepicker/mindate.md)
+### Constraining the Displayable/Selectable Range
+- [var minDate: Date?](./mindate.md)
   The date picker’s minimum date value.
 
 

@@ -1,7 +1,8 @@
 # background
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image that represents the background appearance of the text field when it is in an enabled state.
 
@@ -9,7 +10,7 @@ The image that represents the background appearance of the text field when it is
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The image that represents the background appearance of the text field when it is
 var background: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * background;
+```
+
 #### Discussion
 
-When set, the image referred to by this property replaces the standard appearance controlled by the [`borderStyle`](uitextfield/borderstyle-swift.property.md) property. Background images are drawn in the border rectangle portion of the text field. Images you use for the text field’s background should be able to stretch to fit.
+When set, the image referred to by this property replaces the standard appearance controlled by the [`borderStyle`](./borderstyle-swift.property.md) property. Background images are drawn in the border rectangle portion of the text field. Images you use for the text field’s background should be able to stretch to fit.
 
 This property is set to `nil` by default.
 
 ## See Also
 
-- [var borderStyle: UITextField.BorderStyle](uitextfield/borderstyle-swift.property.md)
+### Setting the view’s background appearance
+- [var borderStyle: UITextField.BorderStyle](./borderstyle-swift.property.md)
   The border style for the text field.
-- [var disabledBackground: UIImage?](uitextfield/disabledbackground.md)
+- [var disabledBackground: UIImage?](./disabledbackground.md)
   The image that represents the background appearance of the text field when it is in a disabled state.
 
 

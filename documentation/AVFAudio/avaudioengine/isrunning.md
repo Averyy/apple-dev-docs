@@ -1,7 +1,8 @@
 # isRunning
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the audio engine is running.
 
@@ -20,25 +21,30 @@ A Boolean value that indicates whether the audio engine is running.
 var isRunning: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRunning) BOOL running;
+```
+
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) if the audio engine is in a running state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value is [`true`](../../Swift/true.md) if the audio engine is in a running state; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func prepare()](avaudioengine/prepare.md)
+### Playing audio
+- [func prepare()](./prepare%28%29.md)
   Prepares the audio engine for starting.
-- [func start() throws](avaudioengine/start.md)
+- [func start() throws](./start%28%29.md)
   Starts the audio engine.
-- [func pause()](avaudioengine/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses the audio engine.
-- [func stop()](avaudioengine/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the audio engine and releases any previously prepared resources.
-- [func reset()](avaudioengine/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets all audio nodes in the audio engine.
-- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
+- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](./withmusicsequence%28_%29.md)
   Provides scoped access to the AVAudioEngine’s MusicSequence
-- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
+- [var musicSequence: MusicSequence?](./musicsequence-1z47z.md)
 
 
 ---

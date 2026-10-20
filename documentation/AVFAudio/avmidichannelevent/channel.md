@@ -1,7 +1,8 @@
 # channel
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI channel.
 
@@ -17,6 +18,10 @@ The MIDI channel.
 
 ```swift
 var channel: UInt32 { get set }
+```
+
+```objc
+@property (readwrite) UInt32 channel;
 ```
 
 #### Discussion

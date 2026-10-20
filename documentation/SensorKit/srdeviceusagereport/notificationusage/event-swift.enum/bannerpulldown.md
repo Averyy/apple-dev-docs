@@ -1,7 +1,8 @@
 # SRDeviceUsageReport.NotificationUsage.Event.bannerPulldown
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification of a banner pull down.
 
@@ -16,37 +17,42 @@ A notification of a banner pull down.
 case bannerPulldown
 ```
 
+```c
+SRNotificationEventBannerPulldown
+```
+
 ## See Also
 
-- [SRDeviceUsageReport.NotificationUsage.Event.appLaunch](srdeviceusagereport/notificationusage/event-swift.enum/applaunch.md)
+### Events
+- [SRDeviceUsageReport.NotificationUsage.Event.appLaunch](./applaunch.md)
   A notification of an app launch.
-- [SRDeviceUsageReport.NotificationUsage.Event.clear](srdeviceusagereport/notificationusage/event-swift.enum/clear.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.clear](./clear.md)
   A notification of a clear event.
-- [SRDeviceUsageReport.NotificationUsage.Event.deduped](srdeviceusagereport/notificationusage/event-swift.enum/deduped.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.deduped](./deduped.md)
   A notification of a deduped event.
-- [SRDeviceUsageReport.NotificationUsage.Event.defaultAction](srdeviceusagereport/notificationusage/event-swift.enum/defaultaction.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.defaultAction](./defaultaction.md)
   A notification of a default action.
-- [SRDeviceUsageReport.NotificationUsage.Event.deviceActivated](srdeviceusagereport/notificationusage/event-swift.enum/deviceactivated.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.deviceActivated](./deviceactivated.md)
   A notification of device activation.
-- [SRDeviceUsageReport.NotificationUsage.Event.deviceUnlocked](srdeviceusagereport/notificationusage/event-swift.enum/deviceunlocked.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.deviceUnlocked](./deviceunlocked.md)
   A notification of a device unlock.
-- [SRDeviceUsageReport.NotificationUsage.Event.expired](srdeviceusagereport/notificationusage/event-swift.enum/expired.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.expired](./expired.md)
   A notification of an expiration event.
-- [SRDeviceUsageReport.NotificationUsage.Event.hide](srdeviceusagereport/notificationusage/event-swift.enum/hide.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.hide](./hide.md)
   A notification of a hide event.
-- [SRDeviceUsageReport.NotificationUsage.Event.longLook](srdeviceusagereport/notificationusage/event-swift.enum/longlook.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.longLook](./longlook.md)
   A notification of a long look.
-- [SRDeviceUsageReport.NotificationUsage.Event.notificationCenterClearAll](srdeviceusagereport/notificationusage/event-swift.enum/notificationcenterclearall.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.notificationCenterClearAll](./notificationcenterclearall.md)
   A notification of clear-all event.
-- [SRDeviceUsageReport.NotificationUsage.Event.received](srdeviceusagereport/notificationusage/event-swift.enum/received.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.received](./received.md)
   A notification of a received event.
-- [SRDeviceUsageReport.NotificationUsage.Event.removed](srdeviceusagereport/notificationusage/event-swift.enum/removed.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.removed](./removed.md)
   A notification of a removed event.
-- [SRDeviceUsageReport.NotificationUsage.Event.silence](srdeviceusagereport/notificationusage/event-swift.enum/silence.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.silence](./silence.md)
   A notification of a silence event.
-- [SRDeviceUsageReport.NotificationUsage.Event.supplementaryAction](srdeviceusagereport/notificationusage/event-swift.enum/supplementaryaction.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.supplementaryAction](./supplementaryaction.md)
   A notification of a supplementary action.
-- [SRDeviceUsageReport.NotificationUsage.Event.tapCoalesce](srdeviceusagereport/notificationusage/event-swift.enum/tapcoalesce.md)
+- [SRDeviceUsageReport.NotificationUsage.Event.tapCoalesce](./tapcoalesce.md)
   A notification of a tap-coalesce event.
 
 

@@ -1,14 +1,15 @@
 # atm_guard_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t atm_guard_t;
 ```
 

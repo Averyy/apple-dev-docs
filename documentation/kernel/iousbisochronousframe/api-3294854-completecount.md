@@ -1,7 +1,8 @@
 # completeCount
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of bytes that the system actually transferred for this frame.
 
@@ -10,7 +11,7 @@ The number of bytes that the system actually transferred for this frame.
 
 ## Declaration
 
-```swift
+```c
 uint32_t completeCount;
 ```
 
@@ -20,13 +21,14 @@ The system updates this field upon completion of the frame.
 
 ## See Also
 
-- [status](iousbisochronousframe/3294856-status.md)
+### Getting the Frame Properties
+- [status](./api-3294856-status.md)
   The completion status for this individual frame.
-- [requestCount](iousbisochronousframe/3294855-requestcount.md)
+- [requestCount](./api-3294855-requestcount.md)
   The number of bytes to transfer for this frame.
-- [reserved](iousbisochronousframe/3377598-reserved.md)
+- [reserved](./api-3377598-reserved.md)
   Reserved for future use.
-- [timeStamp](iousbisochronousframe/3294857-timestamp.md)
+- [timeStamp](./api-3294857-timestamp.md)
   The frame’s observed completion time.
 
 

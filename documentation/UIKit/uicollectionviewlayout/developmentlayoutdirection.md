@@ -1,21 +1,26 @@
 # developmentLayoutDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of the language you used when designing your custom layout.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var developmentLayoutDirection: UIUserInterfaceLayoutDirection { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIUserInterfaceLayoutDirection developmentLayoutDirection;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ The default value of this property is the layout direction used by the language 
 
 ## See Also
 
-- [var flipsHorizontallyInOppositeLayoutDirection: Bool](uicollectionviewlayout/flipshorizontallyinoppositelayoutdirection.md)
+### Supporting right-to-left layouts
+- [var flipsHorizontallyInOppositeLayoutDirection: Bool](./flipshorizontallyinoppositelayoutdirection.md)
   A Boolean value that indicates whether the horizontal coordinate system is automatically flipped at appropriate times.
 
 

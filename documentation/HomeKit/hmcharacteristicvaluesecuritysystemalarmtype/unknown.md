@@ -1,7 +1,8 @@
 # HMCharacteristicValueSecuritySystemAlarmType.unknown
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An alarm has been triggered with an unknown cause.
 
@@ -19,9 +20,14 @@ An alarm has been triggered with an unknown cause.
 case unknown
 ```
 
+```c
+HMCharacteristicValueSecuritySystemAlarmTypeUnknown
+```
+
 ## See Also
 
-- [HMCharacteristicValueSecuritySystemAlarmType.noAlarm](hmcharacteristicvaluesecuritysystemalarmtype/noalarm.md)
+### Alarm Types
+- [HMCharacteristicValueSecuritySystemAlarmType.noAlarm](./noalarm.md)
   The alarm isn’t triggered.
 
 

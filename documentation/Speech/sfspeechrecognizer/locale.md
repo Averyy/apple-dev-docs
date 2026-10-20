@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale of the speech recognizer.
 
@@ -18,13 +19,18 @@ The locale of the speech recognizer.
 var locale: Locale { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSLocale * locale;
+```
+
 #### Discussion
 
 The locale of the speech recognizer is an `NSLocale` object. The default value of this property is the system locale (that is, `+[NSLocale systemLocale]`).
 
 ## See Also
 
-- [class func supportedLocales() -> Set<Locale>](sfspeechrecognizer/supportedlocales.md)
+### Getting the current language
+- [class func supportedLocales() -> Set<Locale>](./supportedlocales%28%29.md)
   Returns the set of locales that are supported by the speech recognizer.
 
 

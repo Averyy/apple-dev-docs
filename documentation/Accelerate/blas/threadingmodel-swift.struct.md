@@ -1,18 +1,19 @@
 # BLAS.ThreadingModel
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the BLAS and LAPACK threading model.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - macOS 15.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,20 +28,21 @@ Use the threading model constants to specify whether BLAS and LAPACK operations 
 ## Topics
 
 ### Specifying a threading model
-- [static let multiThreaded: BLAS.ThreadingModel](blas/threadingmodel-swift.struct/multithreaded.md)
+- [static let multiThreaded: BLAS.ThreadingModel](./threadingmodel-swift.struct/multithreaded.md)
   A constant that specifies that the Accelerate framework decides whether BLAS and LAPACK execute on single or multiple threads.
-- [static let singleThreaded: BLAS.ThreadingModel](blas/threadingmodel-swift.struct/singlethreaded.md)
+- [static let singleThreaded: BLAS.ThreadingModel](./threadingmodel-swift.struct/singlethreaded.md)
   A constant that specifies BLAS and LAPACK execute on a single thread only.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../../Swift/equatable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [static var threadingModel: BLAS.ThreadingModel](blas/threadingmodel-swift.type.property.md)
+### Setting the BLAS and LAPACK threading model
+- [static var threadingModel: BLAS.ThreadingModel](./threadingmodel-swift.type.property.md)
   The BLAS and LAPACK threading model.
 
 

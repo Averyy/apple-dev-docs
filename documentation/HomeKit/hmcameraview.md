@@ -1,7 +1,8 @@
 # HMCameraView
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The view into which a video stream or an image snapshot is rendered.
 
@@ -18,55 +19,60 @@ The view into which a video stream or an image snapshot is rendered.
 class HMCameraView
 ```
 
+```objc
+@interface HMCameraView : UIView
+```
+
 ## Topics
 
 ### Getting the Camera Source
-- [var cameraSource: HMCameraSource?](hmcameraview/camerasource.md)
-- [class HMCameraSource](hmcamerasource.md)
+- [var cameraSource: HMCameraSource?](./hmcameraview/camerasource.md)
+- [class HMCameraSource](./hmcamerasource.md)
   An abstract class for a camera’s data source.
 ### Initializers
-- [init()](hmcameraview/init.md)
+- [init()](./hmcameraview/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIView](../uikit/uiview.md)
+- [UIView](../UIKit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [struct CameraView](cameraview.md)
+### Managing camera profiles
+- [struct CameraView](./cameraview.md)
   A SwiftUI view into which a video stream or an image snapshot is rendered.
-- [var cameraProfiles: [HMCameraProfile]?](hmaccessory/cameraprofiles.md)
+- [var cameraProfiles: [HMCameraProfile]?](./hmaccessory/cameraprofiles.md)
   An array of camera profiles implemented by the accessory.
-- [class HMCameraProfile](hmcameraprofile.md)
+- [class HMCameraProfile](./hmcameraprofile.md)
   A camera profile that interacts with an accessory’s camera.
 
 

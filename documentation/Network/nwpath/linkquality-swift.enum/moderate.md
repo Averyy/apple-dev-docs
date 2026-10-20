@@ -1,7 +1,8 @@
 # NWPath.LinkQuality.moderate
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Link quality is moderate
 

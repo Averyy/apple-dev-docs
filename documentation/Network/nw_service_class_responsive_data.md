@@ -1,7 +1,8 @@
 # nw_service_class_responsive_data
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Responsive user-data traffic.
 
@@ -20,17 +21,22 @@ Responsive user-data traffic.
 var nw_service_class_responsive_data: nw_service_class_t { get }
 ```
 
+```c
+nw_service_class_responsive_data
+```
+
 ## See Also
 
-- [var nw_service_class_best_effort: nw_service_class_t](nw_service_class_best_effort.md)
+### Service classes
+- [var nw_service_class_best_effort: nw_service_class_t](./nw_service_class_best_effort.md)
   Default priority traffic.
-- [var nw_service_class_background: nw_service_class_t](nw_service_class_background.md)
+- [var nw_service_class_background: nw_service_class_t](./nw_service_class_background.md)
   Bulk traffic, or traffic that can be deprioritized behind foreground traffic.
-- [var nw_service_class_interactive_video: nw_service_class_t](nw_service_class_interactive_video.md)
+- [var nw_service_class_interactive_video: nw_service_class_t](./nw_service_class_interactive_video.md)
   Interactive video traffic.
-- [var nw_service_class_interactive_voice: nw_service_class_t](nw_service_class_interactive_voice.md)
+- [var nw_service_class_interactive_voice: nw_service_class_t](./nw_service_class_interactive_voice.md)
   Interactive voice traffic.
-- [var nw_service_class_signaling: nw_service_class_t](nw_service_class_signaling.md)
+- [var nw_service_class_signaling: nw_service_class_t](./nw_service_class_signaling.md)
   Signaling control traffic.
 
 

@@ -1,7 +1,8 @@
 # VTLowLatencyFrameInterpolationParameters
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains both input and output parameters that the low-latency frame interpolation processor needs.
 
@@ -19,6 +20,10 @@ An object that contains both input and output parameters that the low-latency fr
 class VTLowLatencyFrameInterpolationParameters
 ```
 
+```objc
+@interface VTLowLatencyFrameInterpolationParameters : NSObject
+```
+
 #### Overview
 
 Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
@@ -28,30 +33,31 @@ Use this object in the `processWithParameters` call of `VTFrameProcessor` class.
 ## Topics
 
 ### Creating a parameters object
-- [convenience init?(sourceFrame: VTFrameProcessorFrame, previousFrame: VTFrameProcessorFrame, interpolationPhase: [Float], destinationFrames: [VTFrameProcessorFrame])](vtlowlatencyframeinterpolationparameters/init(sourceframe:previousframe:interpolationphase:destinationframes:).md)
+- [convenience init?(sourceFrame: VTFrameProcessorFrame, previousFrame: VTFrameProcessorFrame, interpolationPhase: [Float], destinationFrames: [VTFrameProcessorFrame])](./vtlowlatencyframeinterpolationparameters/init%28sourceframe,previousframe,interpolationphase,destinationframes%29.md)
 ### Inspecting the parameters
-- [var sourceFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/sourceframe.md)
+- [var sourceFrame: VTFrameProcessorFrame](./vtlowlatencyframeinterpolationparameters/sourceframe.md)
   Source frame that you provided when creating the low-latency frame interpolation parameters object.
-- [var previousFrame: VTFrameProcessorFrame](vtlowlatencyframeinterpolationparameters/previousframe.md)
+- [var previousFrame: VTFrameProcessorFrame](./vtlowlatencyframeinterpolationparameters/previousframe.md)
   Previous frame that you provided when creating the low-latency frame interpolation parameters object.
-- [var interpolationPhase: [Float]](vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.md)
+- [var interpolationPhase: [Float]](./vtlowlatencyframeinterpolationparameters/interpolationphase-886vi.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VTFrameProcessorParameters](vtframeprocessorparameters.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VTFrameProcessorParameters](./vtframeprocessorparameters.md)
 
 ## See Also
 
-- [class VTLowLatencyFrameInterpolationConfiguration](vtlowlatencyframeinterpolationconfiguration.md)
+### Low-latency frame interpolation
+- [class VTLowLatencyFrameInterpolationConfiguration](./vtlowlatencyframeinterpolationconfiguration.md)
   Configuration that you use to program Video Toolbox frame processor for low-latency frame interpolation.
 
 

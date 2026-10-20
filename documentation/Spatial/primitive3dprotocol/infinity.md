@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A primitive with infinite values.

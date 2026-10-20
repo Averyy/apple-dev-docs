@@ -1,7 +1,8 @@
 # onViabilityUpdate(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set a closure to be called when the connection’s viability changes, which may be called multiple times until the connection is cancelled.
 
@@ -20,6 +21,8 @@ Set a closure to be called when the connection’s viability changes, which may 
 @discardableResult
 func onViabilityUpdate(_ handler: @escaping @isolated(any) @Sendable (Self, Bool) -> Void) -> Self
 ```
+
+Available when `ApplicationProtocol` is `QUICStream`.
 
 #### Discussion
 

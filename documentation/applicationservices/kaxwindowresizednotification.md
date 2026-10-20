@@ -1,7 +1,8 @@
 # kAXWindowResizedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The window was resized (this notification is sent at the end of the window-resize operation, not during it).
 
@@ -12,6 +13,10 @@ The window was resized (this notification is sent at the end of the window-resiz
 
 ```swift
 var kAXWindowResizedNotification: String { get }
+```
+
+```c
+#define kAXWindowResizedNotification
 ```
 
 

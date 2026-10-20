@@ -1,7 +1,8 @@
 # main()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the receiver’s non-concurrent task.
 
@@ -20,17 +21,22 @@ Performs the receiver’s non-concurrent task.
 func main()
 ```
 
+```objc
+- (void) main;
+```
+
 #### Discussion
 
 The default implementation of this method does nothing. You should override this method to perform the desired task. In your implementation, do not invoke `super`. This method will automatically execute within an autorelease pool provided by `NSOperation`, so you do not need to create your own autorelease pool block in your implementation.
 
-If you are implementing a concurrent operation, you are not required to override this method but may do so if you plan to call it from your custom [`start()`](operation/start().md) method.
+If you are implementing a concurrent operation, you are not required to override this method but may do so if you plan to call it from your custom [`start()`](./start%28%29.md) method.
 
 ## See Also
 
-- [func start()](operation/start.md)
+### Executing the Operation
+- [func start()](./start%28%29.md)
   Begins the execution of the operation.
-- [var completionBlock: (() -> Void)?](operation/completionblock.md)
+- [var completionBlock: (() -> Void)?](./completionblock.md)
   The block to execute after the operation’s main task is completed.
 
 

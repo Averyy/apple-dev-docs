@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current error domain for input/output command queues.
 
@@ -21,7 +22,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let MTLIOErrorDomain: String](mtlioerrordomain.md)
+### Error domain
+- [let MTLIOErrorDomain: String](../mtlioerrordomain.md)
   The domain for input/output command queue errors.
 
 

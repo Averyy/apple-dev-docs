@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataFormatUInt8
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the characteristic has unsigned 8-bit integer values.
 
@@ -19,17 +20,22 @@ Indicates that the characteristic has unsigned 8-bit integer values.
 let HMCharacteristicMetadataFormatUInt8: String
 ```
 
+```c
+extern NSString * const HMCharacteristicMetadataFormatUInt8;
+```
+
 #### Discussion
 
-The value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing an unsigned 16-bit integer with a range `[0, 255]`.
+The value is an [`NSNumber`](../Foundation/nsnumber.md) object containing an unsigned 16-bit integer with a range `[0, 255]`.
 
 ## See Also
 
-- [let HMCharacteristicMetadataFormatUInt16: String](hmcharacteristicmetadataformatuint16.md)
+### Unsigned Integers
+- [let HMCharacteristicMetadataFormatUInt16: String](./hmcharacteristicmetadataformatuint16.md)
   Indicates that the characteristic has unsigned 16-bit integer values.
-- [let HMCharacteristicMetadataFormatUInt32: String](hmcharacteristicmetadataformatuint32.md)
+- [let HMCharacteristicMetadataFormatUInt32: String](./hmcharacteristicmetadataformatuint32.md)
   Indicates that the characteristic has unsigned 32-bit integer values.
-- [let HMCharacteristicMetadataFormatUInt64: String](hmcharacteristicmetadataformatuint64.md)
+- [let HMCharacteristicMetadataFormatUInt64: String](./hmcharacteristicmetadataformatuint64.md)
   Indicates that the characteristic has unsigned 64-bit integer values.
 
 

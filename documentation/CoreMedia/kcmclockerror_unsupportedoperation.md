@@ -1,18 +1,19 @@
 # kCMClockError_UnsupportedOperation
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A clock error that indicates the operation isn’t supported.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A clock error that indicates the operation isn’t supported.
 var kCMClockError_UnsupportedOperation: OSStatus { get }
 ```
 
+```c
+kCMClockError_UnsupportedOperation
+```
+
 ## See Also
 
-- [var kCMClockError_MissingRequiredParameter: OSStatus](kcmclockerror_missingrequiredparameter.md)
+### Constants
+- [var kCMClockError_MissingRequiredParameter: OSStatus](./kcmclockerror_missingrequiredparameter.md)
   A clock error that indicates a parameter is missing.
-- [var kCMClockError_InvalidParameter: OSStatus](kcmclockerror_invalidparameter.md)
+- [var kCMClockError_InvalidParameter: OSStatus](./kcmclockerror_invalidparameter.md)
   A clock error that indicates a parameter isn’t valid.
-- [var kCMClockError_AllocationFailed: OSStatus](kcmclockerror_allocationfailed.md)
+- [var kCMClockError_AllocationFailed: OSStatus](./kcmclockerror_allocationfailed.md)
   A clock error that indicates the memory allocation fails.
 
 

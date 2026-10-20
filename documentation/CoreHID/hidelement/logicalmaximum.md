@@ -1,7 +1,8 @@
 # logicalMaximum
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The logical maximum for this element’s data.
 
@@ -18,7 +19,7 @@ var logicalMaximum: Int64?
 
 The logical maximum is specified in the report descriptor for an element. It determines the maximum raw value that should be considered valid, anything above this value is invalid.
 
-See the HID specification for more details: [`https://www.usb.org/hid`](https://developer.apple.comhttps://www.usb.org/hid).
+See the HID specification for more details: [https://www.usb.org/hid](https://www.usb.org/hid).
 
 
 ---

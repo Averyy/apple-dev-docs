@@ -1,7 +1,8 @@
 # availableLanguages
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The languages for which asset packs in this manifest are localized.
 
@@ -21,9 +22,10 @@ var availableLanguages: [Locale.Language] { get }
 
 ## See Also
 
-- [var primaryLanguage: Locale.Language?](assetpackmanifest/primarylanguage.md)
+### Inspecting asset pack localization
+- [var primaryLanguage: Locale.Language?](./primarylanguage.md)
   The app’s primary language as configured in App Store Connect.
-- [var resolvedLanguage: Locale.Language?](assetpackmanifest/resolvedlanguage.md)
+- [var resolvedLanguage: Locale.Language?](./resolvedlanguage.md)
   The language that best matches current preferences and for which a localized asset pack is available locally.
 
 

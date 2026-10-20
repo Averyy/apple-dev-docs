@@ -1,7 +1,8 @@
 # AddCustomProperty
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to add a custom property to the custom property.
 
@@ -10,25 +11,26 @@ Attempts to add a custom property to the custom property.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t AddCustomProperty(IOUserAudioCustomProperty *in_custom_property);
 ```
 
 #### Return Value
 
-[`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror)
+[`kIOReturnError`](../../DriverKit/kioreturnerror.md)
 
 #### Discussion
 
-This method always returns [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) since a custom property can’t have a custom property.
+This method always returns [`kIOReturnError`](../../DriverKit/kioreturnerror.md) since a custom property can’t have a custom property.
 
 ## Parameters
 
-- `in_custom_property`: An [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md) object to add to the [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md).
+- `in_custom_property`: An [`IOUserAudioCustomProperty`](../iouseraudiocustomproperty.md) object to add to the [`IOUserAudioCustomProperty`](../iouseraudiocustomproperty.md).
 
 ## See Also
 
-- [RemoveCustomProperty](iouseraudiocustomproperty/removecustomproperty.md)
+### Infrequently Used Functionality
+- [RemoveCustomProperty](./removecustomproperty.md)
   Attempts to remove a custom property from the custom property.
 
 

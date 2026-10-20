@@ -1,16 +1,19 @@
 # existingFile
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file wrapper containing the current document content. `nil` if the document is unsaved.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
 - visionOS 1.0+
+
+> **Deprecated**: Use the Document protocol and URLDocumentConfiguration.
 
 ## Declaration
 
@@ -20,7 +23,8 @@ let existingFile: FileWrapper?
 
 ## See Also
 
-- [let contentType: UTType](filedocumentwriteconfiguration/contenttype.md)
+### Writing the content
+- [let contentType: UTType](./contenttype.md)
   The expected uniform type of the file contents.
 
 

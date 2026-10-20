@@ -1,15 +1,16 @@
 # contentInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distances the edges of content are inset from the printing rectangle.
 
 **Availability**:
-- iOS 4.2+
-- iPadOS 4.2+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 4.2+ - Deprecated in 10.0
+- iPadOS 4.2+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -17,19 +18,24 @@ The distances the edges of content are inset from the printing rectangle.
 var contentInsets: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic) UIEdgeInsets contentInsets;
+```
+
 #### Discussion
 
-This property adjusts the margins for content printed by the formatter. The printing rectangle defines the area the printer is capable of printing in; each inset is an inward distance, in points, from a side of the printing area. The top inset is used only on the first page that the formatter draws. The bottom inset is not used. You can use the [`init(top:left:bottom:right:)`](uiedgeinsets/init(top:left:bottom:right:)-1s1t9.md) macro to create a [`UIEdgeInsets`](uiedgeinsets.md) structure.
+This property adjusts the margins for content printed by the formatter. The printing rectangle defines the area the printer is capable of printing in; each inset is an inward distance, in points, from a side of the printing area. The top inset is used only on the first page that the formatter draws. The bottom inset is not used. You can use the [`init(top:left:bottom:right:)`](../uiedgeinsets/init%28top,left,bottom,right%29-1s1t9.md) macro to create a [`UIEdgeInsets`](../uiedgeinsets.md) structure.
 
-The default value of this property is [`zero`](uiedgeinsets/zero.md).
+The default value of this property is [`zero`](../uiedgeinsets/zero.md).
 
 ## See Also
 
-- [var perPageContentInsets: UIEdgeInsets](uiprintformatter/perpagecontentinsets.md)
+### Laying out the content
+- [var perPageContentInsets: UIEdgeInsets](./perpagecontentinsets.md)
   The margins for each printed page.
-- [var maximumContentHeight: CGFloat](uiprintformatter/maximumcontentheight.md)
+- [var maximumContentHeight: CGFloat](./maximumcontentheight.md)
   The maximum height of the content area.
-- [var maximumContentWidth: CGFloat](uiprintformatter/maximumcontentwidth.md)
+- [var maximumContentWidth: CGFloat](./maximumcontentwidth.md)
   The maximum width of the content area.
 
 

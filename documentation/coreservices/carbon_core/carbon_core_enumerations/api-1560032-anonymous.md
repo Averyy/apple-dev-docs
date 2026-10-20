@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var errCoreEndianDataDoesNotMatchFormat: Int](errcoreendiandatadoesnotmatchformat.md)
-- [var errCoreEndianDataTooLongForFormat: Int](errcoreendiandatatoolongforformat.md)
-- [var errCoreEndianDataTooShortForFormat: Int](errcoreendiandatatooshortforformat.md)
+- [var errCoreEndianDataDoesNotMatchFormat: Int](../../errcoreendiandatadoesnotmatchformat.md)
+- [var errCoreEndianDataTooLongForFormat: Int](../../errcoreendiandatatoolongforformat.md)
+- [var errCoreEndianDataTooShortForFormat: Int](../../errcoreendiandatatooshortforformat.md)
 
 
 ---

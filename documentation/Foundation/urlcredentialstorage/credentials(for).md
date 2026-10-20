@@ -1,7 +1,8 @@
 # credentials(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary containing the credentials for the specified protection space.
 
@@ -20,13 +21,17 @@ Returns a dictionary containing the credentials for the specified protection spa
 func credentials(for space: URLProtectionSpace) -> [String : URLCredential]?
 ```
 
+```objc
+- (NSDictionary<NSString *,NSURLCredential *> *) credentialsForProtectionSpace:(NSURLProtectionSpace *) space;
+```
+
 #### Return Value
 
-A dictionary containing the credentials for the specified protection space. The dictionary’s keys are user name strings, and each value is the corresponding [`URLCredential`](urlcredential.md).
+A dictionary containing the credentials for the specified protection space. The dictionary’s keys are user name strings, and each value is the corresponding [`URLCredential`](../urlcredential.md).
 
 #### Discussion
 
-If you override this method, also override [`getCredentials(for:task:completionHandler:)`](urlcredentialstorage/getcredentials(for:task:completionhandler:).md).
+If you override this method, also override [`getCredentials(for:task:completionHandler:)`](./getcredentials%28for,task,completionhandler%29.md).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ If you override this method, also override [`getCredentials(for:task:completionH
 
 ## See Also
 
-- [var allCredentials: [URLProtectionSpace : [String : URLCredential]]](urlcredentialstorage/allcredentials.md)
+### Retrieving credentials
+- [var allCredentials: [URLProtectionSpace : [String : URLCredential]]](./allcredentials.md)
   The credentials for all available protection spaces.
-- [func getCredentials(for: URLProtectionSpace, task: URLSessionTask, completionHandler: ([String : URLCredential]?) -> Void)](urlcredentialstorage/getcredentials(for:task:completionhandler:).md)
+- [func getCredentials(for: URLProtectionSpace, task: URLSessionTask, completionHandler: ([String : URLCredential]?) -> Void)](./getcredentials%28for,task,completionhandler%29.md)
   Gets a dictionary containing the credentials for the specified protection space, on behalf of the given task, and passes the dictionary to the provided completion handler.
 
 

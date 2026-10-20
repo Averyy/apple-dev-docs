@@ -1,12 +1,15 @@
 # init(trainingData:imageColumn:annotationColumn:annotationType:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object detector with a data table.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 13.0
+
+> **Deprecated**: Use DataSource instead of MLDataTable when initializing.
 
 ## Declaration
 
@@ -16,19 +19,20 @@ init(trainingData: MLDataTable, imageColumn: String, annotationColumn: String, a
 
 #### Discussion
 
-Use this initializer to create an object detector with an [`MLDataTable`](mldatatable.md).
+Use this initializer to create an object detector with an [`MLDataTable`](../mldatatable.md).
 
 ## Parameters
 
-- `trainingData`: An [`MLDataTable`](mldatatable.md) that contains the annotated images the task uses to train the object detector.
+- `trainingData`: An [`MLDataTable`](../mldatatable.md) that contains the annotated images the task uses to train the object detector.
 - `imageColumn`: The name of the column in the data table that contains the image file URLs.
 - `annotationColumn`: The name of the column in the data table that contains the image annotations.
 - `annotationType`: The format your data table uses for its image annotations.
-- `parameters`: An [`MLObjectDetector.ModelParameters`](mlobjectdetector/modelparameters-swift.struct.md) instance you use to set the model configuration settings for the training session.
+- `parameters`: An [`MLObjectDetector.ModelParameters`](./modelparameters-swift.struct.md) instance you use to set the model configuration settings for the training session.
 
 ## See Also
 
-- [init(trainingData: MLObjectDetector.DataSource, parameters: MLObjectDetector.ModelParameters, annotationType: MLObjectDetector.AnnotationType) throws](mlobjectdetector/init(trainingdata:parameters:annotationtype:).md)
+### Training an object detector synchronously
+- [init(trainingData: MLObjectDetector.DataSource, parameters: MLObjectDetector.ModelParameters, annotationType: MLObjectDetector.AnnotationType) throws](./init%28trainingdata,parameters,annotationtype%29.md)
   Creates an object detector with a data source.
 
 

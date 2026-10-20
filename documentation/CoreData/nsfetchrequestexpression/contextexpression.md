@@ -1,7 +1,8 @@
 # contextExpression
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expression for the receiver’s managed object context.
 
@@ -10,7 +11,7 @@ The expression for the receiver’s managed object context.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ The expression for the receiver’s managed object context.
 var contextExpression: NSExpression { get }
 ```
 
+```objc
+@property (strong, readonly) NSExpression * contextExpression;
+```
+
 #### Discussion
 
-The expression must evaluate to an [`NSManagedObjectContext`](nsmanagedobjectcontext.md) object.
+The expression must evaluate to an [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) object.
 
 ## See Also
 
-- [var requestExpression: NSExpression](nsfetchrequestexpression/requestexpression.md)
+### Examining a Fetch Request Expression
+- [var requestExpression: NSExpression](./requestexpression.md)
   The expression for the receiver’s fetch request.
-- [var isCountOnlyRequest: Bool](nsfetchrequestexpression/iscountonlyrequest.md)
+- [var isCountOnlyRequest: Bool](./iscountonlyrequest.md)
   Returns a Boolean value that indicates whether the receiver represents a count-only fetch request.
 
 

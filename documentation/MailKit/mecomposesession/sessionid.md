@@ -1,7 +1,8 @@
 # sessionID
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the session.
 
@@ -14,13 +15,18 @@ A unique identifier for the session.
 var sessionID: UUID { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSUUID * sessionID;
+```
+
 #### Discussion
 
-A compose session’s identifier is only valid for the duration that Mail shows a compose window. If the user opens a compose window, saves it as a draft, and later reopens it, the compose session may have a different [`sessionID`](mecomposesession/sessionid.md).
+A compose session’s identifier is only valid for the duration that Mail shows a compose window. If the user opens a compose window, saves it as a draft, and later reopens it, the compose session may have a different [`sessionID`](./sessionid.md).
 
 ## See Also
 
-- [func reload()](mecomposesession/reload.md)
+### Managing Compose Sessions
+- [func reload()](./reload%28%29.md)
   Refreshes the compose session with the extension’s new information.
 
 

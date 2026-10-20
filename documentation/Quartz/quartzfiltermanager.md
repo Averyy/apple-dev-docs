@@ -1,7 +1,8 @@
 # QuartzFilterManager
 
 **Framework**: Quartz  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 10.4+
@@ -12,35 +13,40 @@
 class QuartzFilterManager
 ```
 
+```objc
+@interface QuartzFilterManager : NSObject
+```
+
 ## Topics
 
 ### Instance Methods
-- [func delegate() -> Any!](quartzfiltermanager/delegate.md)
-- [func filterPanel() -> NSPanel!](quartzfiltermanager/filterpanel.md)
-- [func filterView() -> QuartzFilterView!](quartzfiltermanager/filterview.md)
-- [func importFilter([AnyHashable : Any]!) -> QuartzFilter!](quartzfiltermanager/importfilter(_:).md)
-- [func select(QuartzFilter!) -> Bool](quartzfiltermanager/select(_:).md)
-- [func selectedFilter() -> QuartzFilter!](quartzfiltermanager/selectedfilter.md)
-- [func setDelegate(Any!)](quartzfiltermanager/setdelegate(_:).md)
+- [func delegate() -> Any!](./quartzfiltermanager/delegate%28%29.md)
+- [func filterPanel() -> NSPanel!](./quartzfiltermanager/filterpanel%28%29.md)
+- [func filterView() -> QuartzFilterView!](./quartzfiltermanager/filterview%28%29.md)
+- [func importFilter([AnyHashable : Any]!) -> QuartzFilter!](./quartzfiltermanager/importfilter%28_%29.md)
+- [func select(QuartzFilter!) -> Bool](./quartzfiltermanager/select%28_%29.md)
+- [func selectedFilter() -> QuartzFilter!](./quartzfiltermanager/selectedfilter%28%29.md)
+- [func setDelegate(Any!)](./quartzfiltermanager/setdelegate%28_%29.md)
 ### Type Methods
-- [class func filters(inDomains: [Any]!) -> [Any]!](quartzfiltermanager/filters(indomains:).md)
+- [class func filters(inDomains: [Any]!) -> [Any]!](./quartzfiltermanager/filters%28indomains%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class QuartzFilter](quartzfilter.md)
-- [class QuartzFilterView](quartzfilterview.md)
+### Classes
+- [class QuartzFilter](./quartzfilter.md)
+- [class QuartzFilterView](./quartzfilterview.md)
 
 
 ---

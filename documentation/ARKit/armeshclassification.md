@@ -1,7 +1,8 @@
 # ARMeshClassification
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration of different classes of real-world objects that ARKit can identify.
 
@@ -15,53 +16,58 @@ Enumeration of different classes of real-world objects that ARKit can identify.
 enum ARMeshClassification
 ```
 
+```c
+enum ARMeshClassification : NSInteger;
+```
+
 #### Overview
 
-When you enable [`sceneReconstruction`](arworldtrackingconfiguration/scenereconstruction.md) on a world-tracking configuration, ARKit provides several mesh anchors ([`ARMeshAnchor`](armeshanchor.md)) that collectively estimate the shape of the physical environment. Within that model of the real world, ARKit may identify specific objects, like seats, windows, tables, or walls. ARKit shares that information by exposing one or more [`ARMeshClassification`](armeshclassification.md) instances in a mesh’s [`geometry`](armeshanchor/geometry.md) property.
+When you enable [`sceneReconstruction`](./arworldtrackingconfiguration/scenereconstruction.md) on a world-tracking configuration, ARKit provides several mesh anchors ([`ARMeshAnchor`](./armeshanchor.md)) that collectively estimate the shape of the physical environment. Within that model of the real world, ARKit may identify specific objects, like seats, windows, tables, or walls. ARKit shares that information by exposing one or more [`ARMeshClassification`](./armeshclassification.md) instances in a mesh’s [`geometry`](./armeshanchor/geometry.md) property.
 
-For a sample app that demonstrates mesh classification, see [`Visualizing and interacting with a reconstructed scene`](visualizing-and-interacting-with-a-reconstructed-scene.md).
+For a sample app that demonstrates mesh classification, see [Visualizing and interacting with a reconstructed scene](./visualizing-and-interacting-with-a-reconstructed-scene.md).
 
 ## Topics
 
 ### Options
-- [ARMeshClassification.ceiling](armeshclassification/ceiling.md)
+- [ARMeshClassification.ceiling](./armeshclassification/ceiling.md)
   The face is a part of a real-world ceiling.
-- [ARMeshClassification.door](armeshclassification/door.md)
+- [ARMeshClassification.door](./armeshclassification/door.md)
   The face is a part of a real-world door.
-- [ARMeshClassification.floor](armeshclassification/floor.md)
+- [ARMeshClassification.floor](./armeshclassification/floor.md)
   The face is a part of a real-world floor.
-- [ARMeshClassification.none](armeshclassification/none.md)
+- [ARMeshClassification.none](./armeshclassification/none.md)
   A face ARKit can’t classify.
-- [ARMeshClassification.seat](armeshclassification/seat.md)
+- [ARMeshClassification.seat](./armeshclassification/seat.md)
   The face is a part of a real-world seat.
-- [ARMeshClassification.table](armeshclassification/table.md)
+- [ARMeshClassification.table](./armeshclassification/table.md)
   The face is a part of a real-world table.
-- [ARMeshClassification.wall](armeshclassification/wall.md)
+- [ARMeshClassification.wall](./armeshclassification/wall.md)
   The face is a part of a real-world wall.
-- [ARMeshClassification.window](armeshclassification/window.md)
+- [ARMeshClassification.window](./armeshclassification/window.md)
   The face is a part of a real-world window.
 ### Initializers
-- [init?(rawValue: Int)](armeshclassification/init(rawvalue:).md)
+- [init?(rawValue: Int)](./armeshclassification/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var classification: ARGeometrySource?](armeshgeometry/classification.md)
+### Getting Geometry Information
+- [var classification: ARGeometrySource?](./armeshgeometry/classification.md)
   Classification for each face in the mesh.
-- [var faces: ARGeometryElement](armeshgeometry/faces.md)
+- [var faces: ARGeometryElement](./armeshgeometry/faces.md)
   An object that contains a buffer of vertex indices of the geometry’s faces.
-- [class ARGeometryElement](argeometryelement.md)
+- [class ARGeometryElement](./argeometryelement.md)
   A container for index data, such as vertex indices of a face.
-- [var normals: ARGeometrySource](armeshgeometry/normals.md)
+- [var normals: ARGeometrySource](./armeshgeometry/normals.md)
   Rays that define which direction is outside for each face.
 
 

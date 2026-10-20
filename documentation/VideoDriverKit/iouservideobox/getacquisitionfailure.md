@@ -1,7 +1,8 @@
 # GetAcquisitionFailure
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the acquisition failure of the video box.
 
@@ -10,7 +11,7 @@ Gets the acquisition failure of the video box.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t GetAcquisitionFailure();
 ```
 
@@ -20,17 +21,18 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [HandleChangeAcquireBox](iouservideobox/handlechangeacquirebox.md)
+### Managing acquirability
+- [HandleChangeAcquireBox](./handlechangeacquirebox.md)
   Called when host is attempting to the change the box acquisition
-- [SetIsAcquired](iouservideobox/setisacquired.md)
+- [SetIsAcquired](./setisacquired.md)
   Sets the value indicating the box’s acquisition state.
-- [IsAcquired](iouservideobox/isacquired.md)
+- [IsAcquired](./isacquired.md)
   A Boolean value indicating if box is acquired.
-- [SetIsAcquirable](iouservideobox/setisacquirable.md)
+- [SetIsAcquirable](./setisacquirable.md)
   Sets the value for the box’s acquirability.
-- [IsAcquirable](iouservideobox/isacquirable.md)
+- [IsAcquirable](./isacquirable.md)
   A Boolean value indicating if box can be acquired.
-- [SetAcquisitionFailure](iouservideobox/setacquisitionfailure.md)
+- [SetAcquisitionFailure](./setacquisitionfailure.md)
   Sets the error for the box’s acquisition failure.
 
 

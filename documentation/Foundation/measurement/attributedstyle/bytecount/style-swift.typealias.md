@@ -1,7 +1,8 @@
 # Measurement.AttributedStyle.ByteCount.Style
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type used to represent the style of the formatted byte count.
 
@@ -22,21 +23,22 @@ typealias Style = ByteCountFormatStyle.Style
 
 #### Discussion
 
-This format style uses the [`ByteCountFormatStyle.Style`](bytecountformatstyle/style-swift.enum.md) type to represent the byte-count style.
+This format style uses the [`ByteCountFormatStyle.Style`](../../../bytecountformatstyle/style-swift.enum.md) type to represent the byte-count style.
 
 ## See Also
 
-- [var allowedUnits: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Units](measurement/attributedstyle/bytecount/allowedunits.md)
+### Accessing style properties
+- [var allowedUnits: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Units](./allowedunits.md)
   The units the format style can use to express the byte count.
-- [Measurement.AttributedStyle.ByteCount.Units](measurement/attributedstyle/bytecount/units.md)
+- [Measurement.AttributedStyle.ByteCount.Units](./units.md)
   The type the measurement format style uses to represent byte-counting units.
-- [var spellsOutZero: Bool](measurement/attributedstyle/bytecount/spellsoutzero.md)
+- [var spellsOutZero: Bool](./spellsoutzero.md)
   A Boolean value that indicates whether the format style should spell out zero-byte values as text.
-- [var includesActualByteCount: Bool](measurement/attributedstyle/bytecount/includesactualbytecount.md)
+- [var includesActualByteCount: Bool](./includesactualbytecount.md)
   A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
-- [var style: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Style](measurement/attributedstyle/bytecount/style-swift.property.md)
+- [var style: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Style](./style-swift.property.md)
   The style of byte count to express, such as memory or file system storage.
-- [var locale: Locale](measurement/attributedstyle/bytecount/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use to format the numeric part of the byte count.
 
 

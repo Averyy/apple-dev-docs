@@ -1,7 +1,8 @@
 # vImageNewResamplingFilter(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a resampling filter object that corresponds to the default kernel supplied by the vImage framework.
 
@@ -20,28 +21,39 @@ Creates a resampling filter object that corresponds to the default kernel suppli
 func vImageNewResamplingFilter(_ scale: Float, _ flags: vImage_Flags) -> ResamplingFilter!
 ```
 
+```c
+ResamplingFiltervImageNewResamplingFilter(float scale, vImage_Flags flags);
+```
+
 #### Return Value
 
 A pointer to a newly created resampling filter object; otherwise `NULL`.
 
 #### Discussion
 
-This function creates a reusable resampling filter object  that you can pass to a shear function. The resampling filter encapsulated by the object is the default kernel for vImage This function allocates the memory needed for the resampling filter object. To deallocate this memory, call the function [`vImageDestroyResamplingFilter(_:)`](vimagedestroyresamplingfilter(_:).md). Don’t attempt to deallocate the memory yourself.
+This function creates a reusable resampling filter object  that you can pass to a shear function. The resampling filter encapsulated by the object is the default kernel for vImage This function allocates the memory needed for the resampling filter object. To deallocate this memory, call the function [`vImageDestroyResamplingFilter(_:)`](./vimagedestroyresamplingfilter%28_%29.md). Don’t attempt to deallocate the memory yourself.
 
 ## Parameters
 
 - `scale`: A scale factor to associated with the resampling filter object. Shear functions to which you pass the resampling filter object use this factor when performing a shear operation. The shear function applies the scale factor  to the entire image, in a direction appropriate to the shear function, either horizontal or vertical.
-- `flags`: The options to use when creating the resampling filter object. You must set exactly one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image:  [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md) or [`kvImageEdgeExtend`](kvimageedgeextend.md). Set the [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) flag if you want vImage to use a higher quality, but slower, resampling filter. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). This function ignores the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
+- `flags`: The options to use when creating the resampling filter object. You must set exactly one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image:  [`kvImageBackgroundColorFill`](./kvimagebackgroundcolorfill.md) or [`kvImageEdgeExtend`](./kvimageedgeextend.md).
+
+  Set the [`kvImageHighQualityResampling`](./kvimagehighqualityresampling.md) flag if you want vImage to use a higher quality, but slower, resampling filter.
+
+  If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md).
+
+  This function ignores the [`kvImageLeaveAlphaUnchanged`](./kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 
-- [func vImageNewResamplingFilterForFunctionUsingBuffer(ResamplingFilter, Float, ((UnsafePointer<Float>?, UnsafeMutablePointer<Float>?, UInt, UnsafeMutableRawPointer?) -> Void)!, Float, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagenewresamplingfilterforfunctionusingbuffer(_:_:_:_:_:_:).md)
+### Resampling filters
+- [func vImageNewResamplingFilterForFunctionUsingBuffer(ResamplingFilter, Float, ((UnsafePointer<Float>?, UnsafeMutablePointer<Float>?, UInt, UnsafeMutableRawPointer?) -> Void)!, Float, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagenewresamplingfilterforfunctionusingbuffer%28_,_,_,_,_,_%29.md)
   Creates a resampling filter object that encapsulates a resampling kernel function that you provide.
-- [func vImageGetResamplingFilterExtent(ResamplingFilter, vImage_Flags) -> vImagePixelCount](vimagegetresamplingfilterextent(_:_:).md)
+- [func vImageGetResamplingFilterExtent(ResamplingFilter, vImage_Flags) -> vImagePixelCount](./vimagegetresamplingfilterextent%28_,_%29.md)
   Returns the maximum sampling radius for a resampling filter.
-- [func vImageGetResamplingFilterSize(Float, ((UnsafePointer<Float>?, UnsafeMutablePointer<Float>?, UInt, UnsafeMutableRawPointer?) -> Void)!, Float, vImage_Flags) -> Int](vimagegetresamplingfiltersize(_:_:_:_:).md)
+- [func vImageGetResamplingFilterSize(Float, ((UnsafePointer<Float>?, UnsafeMutablePointer<Float>?, UInt, UnsafeMutableRawPointer?) -> Void)!, Float, vImage_Flags) -> Int](./vimagegetresamplingfiltersize%28_,_,_,_%29.md)
   Returns the minimum size, in bytes, for the buffer needed by the new resampling filter function.
-- [func vImageDestroyResamplingFilter(ResamplingFilter!)](vimagedestroyresamplingfilter(_:).md)
+- [func vImageDestroyResamplingFilter(ResamplingFilter!)](./vimagedestroyresamplingfilter%28_%29.md)
   Disposes of a resampling filter object.
 
 

@@ -1,7 +1,8 @@
 # init(highlight:trigger:)
 
 **Framework**: Shared with You  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a persistence event.
 
@@ -16,6 +17,10 @@ Creates and initializes a persistence event.
 
 ```swift
 init(highlight: SWHighlight, trigger: SWHighlightPersistenceEventTrigger)
+```
+
+```objc
+- (instancetype) initWithHighlight:(SWHighlight *) highlight trigger:(SWHighlightPersistenceEventTrigger) trigger;
 ```
 
 ## Parameters

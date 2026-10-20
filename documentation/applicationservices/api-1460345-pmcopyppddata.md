@@ -1,7 +1,8 @@
 # PMCopyPPDData(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the uncompressed PPD data for a PostScript printer description (PPD) file.
 
@@ -14,20 +15,25 @@ Obtains the uncompressed PPD data for a PostScript printer description (PPD) fil
 func PMCopyPPDData(_ ppd: CFURL, _ data: UnsafeMutablePointer<Unmanaged<CFData>?>) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMCopyPPDData(CFURLRef ppd, CFDataRef  _Nullable *data);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 ## Parameters
 
-- `ppd`: A URL for a PPD or compressed PPD file. You can obtain a PPD URL using the function [`PMCopyAvailablePPDs(_:_:)`](1464170-pmcopyavailableppds.md) or [`PMCopyLocalizedPPD(_:_:)`](1459690-pmcopylocalizedppd.md).
-- `data`: A pointer to your [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) variable. On return, the variable refers to a Core Foundation data object containing the uncompressed PPD data from the specified PPD file. You are responsible for releasing the data object. If the `ppd` parameter does not reference a PPD file, the variable is set to `NULL`.
+- `ppd`: A URL for a PPD or compressed PPD file. You can obtain a PPD URL using the function [`PMCopyAvailablePPDs(_:_:)`](./api-1464170-pmcopyavailableppds.md) or [`PMCopyLocalizedPPD(_:_:)`](./api-1459690-pmcopylocalizedppd.md).
+- `data`: A pointer to your [`CFData`](../CoreFoundation/cfdata.md) variable. On return, the variable refers to a Core Foundation data object containing the uncompressed PPD data from the specified PPD file. You are responsible for releasing the data object. If the `ppd` parameter does not reference a PPD file, the variable is set to `NULL`.
 
 ## See Also
 
-- [func PMCopyAvailablePPDs(PMPPDDomain, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](1464170-pmcopyavailableppds.md)
+### Accessing PostScript Printer Description Files
+- [func PMCopyAvailablePPDs(PMPPDDomain, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./api-1464170-pmcopyavailableppds.md)
   Obtains the list of PostScript printer description (PPD) files in a PPD domain.
-- [func PMCopyLocalizedPPD(CFURL, UnsafeMutablePointer<Unmanaged<CFURL>?>) -> OSStatus](1459690-pmcopylocalizedppd.md)
+- [func PMCopyLocalizedPPD(CFURL, UnsafeMutablePointer<Unmanaged<CFURL>?>) -> OSStatus](./api-1459690-pmcopylocalizedppd.md)
   Obtains a localized PostScript printer description (PPD) file.
 
 

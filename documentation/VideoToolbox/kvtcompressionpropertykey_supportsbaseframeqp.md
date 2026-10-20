@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_SupportsBaseFrameQP
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that indicates whether the encoder supports base frame QP requests.
 
@@ -19,13 +20,18 @@ A value that indicates whether the encoder supports base frame QP requests.
 let kVTCompressionPropertyKey_SupportsBaseFrameQP: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_SupportsBaseFrameQP;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_MaxAllowedFrameQP: CFString](kvtcompressionpropertykey_maxallowedframeqp.md)
+### Quantization
+- [let kVTCompressionPropertyKey_MaxAllowedFrameQP: CFString](./kvtcompressionpropertykey_maxallowedframeqp.md)
   The maximum allowed encoded frame QP (Quantization Parameter).
-- [let kVTCompressionPropertyKey_MinAllowedFrameQP: CFString](kvtcompressionpropertykey_minallowedframeqp.md)
+- [let kVTCompressionPropertyKey_MinAllowedFrameQP: CFString](./kvtcompressionpropertykey_minallowedframeqp.md)
   The minimum allowed encoded frame QP (Quantization Parameter).
-- [let kVTCompressionPropertyKey_SpatialAdaptiveQPLevel: CFString](kvtcompressionpropertykey_spatialadaptiveqplevel.md)
+- [let kVTCompressionPropertyKey_SpatialAdaptiveQPLevel: CFString](./kvtcompressionpropertykey_spatialadaptiveqplevel.md)
   A value that controls spatial adaptation of the quantization parameter (QP) based on per-frame statistics.
 
 

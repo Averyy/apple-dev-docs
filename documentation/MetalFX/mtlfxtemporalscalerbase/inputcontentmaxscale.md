@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The largest scale factor the temporal scaler can use to generate output textures.
@@ -18,6 +19,10 @@ The largest scale factor the temporal scaler can use to generate output textures
 
 ```swift
 var inputContentMaxScale: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float inputContentMaxScale;
 ```
 
 

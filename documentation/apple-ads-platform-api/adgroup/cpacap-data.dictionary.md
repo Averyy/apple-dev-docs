@@ -1,7 +1,8 @@
 # AdGroup.CpaCap
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A deprecated cost-per-acquisition goal value. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
 
@@ -10,7 +11,7 @@ A deprecated cost-per-acquisition goal value. Use `bidStrategy` with `MAX_CONVER
 
 ## Declaration
 
-```swift
+```
 object AdGroup.CpaCap
 ```
 
@@ -31,7 +32,7 @@ Existing ad groups may still carry a `cpaCap` value, but new bid strategy config
 }
 ```
 
-See [`CPAGoal`](cpagoal.md) for the full field reference.
+See [`CPAGoal`](../cpagoal.md) for the full field reference.
 
 ## Properties
 

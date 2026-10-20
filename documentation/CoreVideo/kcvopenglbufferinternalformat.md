@@ -1,12 +1,15 @@
 # kCVOpenGLBufferInternalFormat
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The OpenGL internal format of this buffer.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL/OpenGLES is no longer supported. Use Metal APIs instead. (Define COREVIDEO_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,15 +17,20 @@ The OpenGL internal format of this buffer.
 let kCVOpenGLBufferInternalFormat: CFString
 ```
 
+```c
+extern CFStringRef const kCVOpenGLBufferInternalFormat;
+```
+
 ## See Also
 
-- [let kCVOpenGLBufferHeight: CFString](kcvopenglbufferheight.md)
+### Constants
+- [let kCVOpenGLBufferHeight: CFString](./kcvopenglbufferheight.md)
   The height of the buffer.
-- [let kCVOpenGLBufferMaximumMipmapLevel: CFString](kcvopenglbuffermaximummipmaplevel.md)
+- [let kCVOpenGLBufferMaximumMipmapLevel: CFString](./kcvopenglbuffermaximummipmaplevel.md)
   The maximum mipmap level for this buffer.
-- [let kCVOpenGLBufferTarget: CFString](kcvopenglbuffertarget.md)
+- [let kCVOpenGLBufferTarget: CFString](./kcvopenglbuffertarget.md)
   The OpenGL target for this buffer.
-- [let kCVOpenGLBufferWidth: CFString](kcvopenglbufferwidth.md)
+- [let kCVOpenGLBufferWidth: CFString](./kcvopenglbufferwidth.md)
   The width of the buffer.
 
 

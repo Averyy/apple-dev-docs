@@ -1,7 +1,8 @@
 # printItem
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Placement for commands related to printing app content.
 
@@ -27,11 +28,12 @@ By default, this group includes the following commands in macOS:
 
 ## See Also
 
-- [static let importExport: CommandGroupPlacement](commandgroupplacement/importexport.md)
+### File manipulation
+- [static let importExport: CommandGroupPlacement](./importexport.md)
   Placement for commands that relate to importing and exporting data using formats that the app doesn’t natively support.
-- [static let newItem: CommandGroupPlacement](commandgroupplacement/newitem.md)
+- [static let newItem: CommandGroupPlacement](./newitem.md)
   Placement for commands that create different kinds of documents.
-- [static let saveItem: CommandGroupPlacement](commandgroupplacement/saveitem.md)
+- [static let saveItem: CommandGroupPlacement](./saveitem.md)
   Placement for commands that save open documents and close windows.
 
 

@@ -1,14 +1,15 @@
 # ioWrite8
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void ioWrite8(UInt16 offset, UInt8 value, IOMemoryMap *map);
 ```
 

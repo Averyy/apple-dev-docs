@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Backward and forward navigation gestures are enabled.
 

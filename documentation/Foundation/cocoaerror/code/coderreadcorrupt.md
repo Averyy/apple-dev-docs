@@ -1,7 +1,8 @@
 # coderReadCorrupt
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+

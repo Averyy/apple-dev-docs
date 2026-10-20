@@ -1,7 +1,8 @@
 # EulerAngles
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A vector that represents three Euler angles and specifies the angle ordering.
 
@@ -20,63 +21,68 @@ A vector that represents three Euler angles and specifies the angle ordering.
 struct EulerAngles
 ```
 
+```c
+typedef struct { ... } SPEulerAngles;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](eulerangles/init.md)
+- [init()](./eulerangles/init%28%29.md)
   Creates a new Euler angles structure.
-- [init(angles: simd_float3, order: EulerAngles.Order)](eulerangles/init(angles:order:)-44rv1.md)
+- [init(angles: simd_float3, order: EulerAngles.Order)](./eulerangles/init%28angles,order%29-44rv1.md)
   Creates a new Euler angles structure from the specified single-precision angles and order.
-- [init(angles: simd_double3, order: __SPEulerAngleOrder)](eulerangles/init(angles:order:)-93mu1.md)
+- [init(angles: simd_double3, order: __SPEulerAngleOrder)](./eulerangles/init%28angles,order%29-93mu1.md)
   Creates a new Euler angles structure from the specified double-precision angles and order.
-- [init(x: Angle2D, y: Angle2D, z: Angle2D, order: EulerAngles.Order)](eulerangles/init(x:y:z:order:).md)
+- [init(x: Angle2D, y: Angle2D, z: Angle2D, order: EulerAngles.Order)](./eulerangles/init%28x,y,z,order%29.md)
   Creates a new Euler angles structure from the specified angle structures and order.
-- [init(Angle2D, Angle2D, Angle2D, order: EulerAngles.Order)](eulerangles/init(_:_:_:order:).md)
+- [init(Angle2D, Angle2D, Angle2D, order: EulerAngles.Order)](./eulerangles/init%28_,_,_,order%29.md)
   Creates a new Euler angles structure from the specified angle structures and order.
 ### Instance properties
-- [var angles: simd_double3](eulerangles/angles.md)
+- [var angles: simd_double3](./eulerangles/angles.md)
   A three-element vector that specifies the Euler angles.
-- [var order: __SPEulerAngleOrder](eulerangles/order-swift.property.md)
+- [var order: __SPEulerAngleOrder](./eulerangles/order-swift.property.md)
   The Euler angle order.
-- [var angles: simd_double3](eulerangles/angles.md)
+- [var angles: simd_double3](./eulerangles/angles.md)
   A three-element vector that specifies the Euler angles.
-- [var order: __SPEulerAngleOrder](eulerangles/order-swift.property.md)
+- [var order: __SPEulerAngleOrder](./eulerangles/order-swift.property.md)
   The Euler angle order.
 ### Supporting types
-- [EulerAngles.Order](eulerangles/order-swift.typealias.md)
+- [EulerAngles.Order](./eulerangles/order-swift.typealias.md)
   A type that specifies the order of the angles.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [init()](rotation3d/init-2uz53.md)
+### Creating a 3D rotation structure
+- [init()](./rotation3d/init%28%29-2uz53.md)
   Creates a rotation.
-- [init()](rotation3d/init-krpj.md)
+- [init()](./rotation3d/init%28%29-krpj.md)
   Creates a rotation structure.
-- [init(eulerAngles: EulerAngles)](rotation3d/init(eulerangles:).md)
+- [init(eulerAngles: EulerAngles)](./rotation3d/init%28eulerangles%29.md)
   Creates a rotation structure with the specified Euler angles.
-- [init(eulerAngles: EulerAngles)](rotation3d/init(eulerangles:).md)
+- [init(eulerAngles: EulerAngles)](./rotation3d/init%28eulerangles%29.md)
   Creates a rotation structure with the specified Euler angles.
-- [init(quaternion: simd_quatd)](rotation3d/init(quaternion:)-2c79y.md)
+- [init(quaternion: simd_quatd)](./rotation3d/init%28quaternion%29-2c79y.md)
   Creates a rotation axis from the specified double-precision quaternion.
-- [init(simd_quatd)](rotation3d/init(_:)-8z2bn.md)
+- [init(simd_quatd)](./rotation3d/init%28_%29-8z2bn.md)
   Creates a rotation from the specified double-precision quaternion.
-- [init(simd_quatf)](rotation3d/init(_:)-829qb.md)
+- [init(simd_quatf)](./rotation3d/init%28_%29-829qb.md)
   Creates a rotation axis from the specified single-precision quaternion.
-- [init(angle: Angle2D, axis: RotationAxis3D)](rotation3d/init(angle:axis:).md)
+- [init(angle: Angle2D, axis: RotationAxis3D)](./rotation3d/init%28angle,axis%29.md)
   Creates a rotation structure with the specified axis and the specified angle from Spatial structures.
-- [init(position: Point3D, target: Point3D, up: Vector3D)](rotation3d/init(position:target:up:).md)
+- [init(position: Point3D, target: Point3D, up: Vector3D)](./rotation3d/init%28position,target,up%29.md)
   Creates a rotation structure that represents the look-at direction from a position to a target.
-- [init(forward: Vector3D)](rotation3d/init(forward:).md)
+- [init(forward: Vector3D)](./rotation3d/init%28forward%29.md)
   Creates a rotation with the specified forward vector.
-- [init(forward: Vector3D, up: Vector3D)](rotation3d/init(forward:up:).md)
+- [init(forward: Vector3D, up: Vector3D)](./rotation3d/init%28forward,up%29.md)
   Creates a rotation with the specified forward and up vectors.
-- [init(forward: Vector3D, up: Vector3D)](rotation3d/init(forward:up:).md)
+- [init(forward: Vector3D, up: Vector3D)](./rotation3d/init%28forward,up%29.md)
   Creates a rotation with the specified forward and up vectors.
 
 

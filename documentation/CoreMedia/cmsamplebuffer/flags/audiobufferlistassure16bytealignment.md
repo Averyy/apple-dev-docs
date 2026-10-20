@@ -1,7 +1,8 @@
 # audioBufferListAssure16ByteAlignment
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Ensure memory involved in audio buffer lists is 16-byte aligned.
 

@@ -1,7 +1,8 @@
 # WidgetPreviewContext
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A specification for the context of a widget preview.
 
@@ -21,7 +22,7 @@ struct WidgetPreviewContext
 
 #### Overview
 
-To create a preview for a widget in Xcode, use [`previewContext(_:)`](https://developer.apple.com/documentation/swiftui/view/previewcontext(_:)) and pass `WidgetPreviewContext` initialized with the appropriate `WidgetFamily`.
+To create a preview for a widget in Xcode, use [`previewContext(_:)`](../SwiftUI/view/previewcontext%28_%29.md) and pass `WidgetPreviewContext` initialized with the appropriate `WidgetFamily`.
 
 ```swift
 struct Widget_Previews: PreviewProvider {
@@ -37,19 +38,20 @@ struct Widget_Previews: PreviewProvider {
 ## Topics
 
 ### Creating a Preview Context
-- [init(family: WidgetFamily)](widgetpreviewcontext/init(family:).md)
+- [init(family: WidgetFamily)](./widgetpreviewcontext/init%28family%29.md)
   Creates a context for previewing a widget or a widget’s view.
 
 ## Relationships
 
 ### Conforms To
-- [PreviewContext](../swiftui/previewcontext.md)
+- [PreviewContext](../SwiftUI/previewcontext.md)
 
 ## See Also
 
-- [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)
+### Previews and debugging
+- [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md)
   Use Xcode previews to iteratively develop, fine-tune, and troubleshoot widgets and Live Activities.
-- [Preview macros](preview-macros.md)
+- [Preview macros](./preview-macros.md)
   Use Swift macros to create widget previews in Xcode.
 
 

@@ -1,7 +1,8 @@
 # ShieldActionResponse.defer
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An instruction to defer a response to the action.
 
@@ -22,9 +23,10 @@ Use `defer` to delay an immediate response to a shield action; for example, if y
 
 ## See Also
 
-- [ShieldActionResponse.close](shieldactionresponse/close.md)
+### Responses
+- [ShieldActionResponse.close](./close.md)
   An instruction for the system to close the current application or web browser.
-- [ShieldActionResponse.none](shieldactionresponse/none.md)
+- [ShieldActionResponse.none](./none.md)
   An instruction that the system doesn’t need to take any additional action on behalf of the extension.
 
 

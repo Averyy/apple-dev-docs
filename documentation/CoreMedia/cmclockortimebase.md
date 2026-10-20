@@ -1,7 +1,8 @@
 # CMClockOrTimebase
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type you use in argument lists and function results to indicate that you can pass either a clock or timebase.
 
@@ -20,11 +21,16 @@ A type you use in argument lists and function results to indicate that you can p
 typealias CMClockOrTimebase = CFTypeRef
 ```
 
+```c
+typedef CFTypeRef CMClockOrTimebaseRef;
+```
+
 ## See Also
 
-- [class CMClock](cmclock.md)
+### Data Types
+- [class CMClock](./cmclock.md)
   An object that represents a source of time.
-- [func CMClockGetTypeID() -> CFTypeID](cmclockgettypeid().md)
+- [func CMClockGetTypeID() -> CFTypeID](./cmclockgettypeid%28%29.md)
   Returns the core foundation type identifier of a clock type.
 
 

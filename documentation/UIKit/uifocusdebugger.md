@@ -1,7 +1,8 @@
 # UIFocusDebugger
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A runtime object for debugging focus-related interactions.
 
@@ -19,9 +20,13 @@ A runtime object for debugging focus-related interactions.
 class UIFocusDebugger
 ```
 
+```objc
+@interface UIFocusDebugger : NSObject
+```
+
 ## Mentions
 
-- [Debugging focus issues in your app](debugging-focus-issues-in-your-app.md)
+- [Debugging focus issues in your app](./debugging-focus-issues-in-your-app.md)
 
 #### Overview
 
@@ -30,38 +35,39 @@ You do not use this class or its methods directly from your code. During a debug
 ## Topics
 
 ### Getting help
-- [class func help() -> any UIFocusDebuggerOutput](uifocusdebugger/help.md)
+- [class func help() -> any UIFocusDebuggerOutput](./uifocusdebugger/help%28%29.md)
   Returns information about how to use the commands of the debugger object.
 ### Getting focus information
-- [class func status() -> any UIFocusDebuggerOutput](uifocusdebugger/status.md)
+- [class func status() -> any UIFocusDebuggerOutput](./uifocusdebugger/status%28%29.md)
   Returns the state of the focus system, including information about the currently focused item.
-- [class func checkFocusability(for: any UIFocusItem) -> any UIFocusDebuggerOutput](uifocusdebugger/checkfocusability(for:).md)
+- [class func checkFocusability(for: any UIFocusItem) -> any UIFocusDebuggerOutput](./uifocusdebugger/checkfocusability%28for%29.md)
   Returns information about whether the item can become focused, including any known issues that would prevent the item from becoming focused.
-- [class func focusGroups(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](uifocusdebugger/focusgroups(for:).md)
+- [class func focusGroups(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](./uifocusdebugger/focusgroups%28for%29.md)
   Returns the focus group hierarchy for the specified environment object.
-- [class func preferredFocusEnvironments(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](uifocusdebugger/preferredfocusenvironments(for:).md)
+- [class func preferredFocusEnvironments(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](./uifocusdebugger/preferredfocusenvironments%28for%29.md)
   Returns the hierarchy of preferred focus environments for the specified environment object.
-- [class func simulateFocusUpdateRequest(from: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](uifocusdebugger/simulatefocusupdaterequest(from:).md)
+- [class func simulateFocusUpdateRequest(from: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](./uifocusdebugger/simulatefocusupdaterequest%28from%29.md)
   Simulates a focus update request from the specified environment.
-- [protocol UIFocusDebuggerOutput](uifocusdebuggeroutput.md)
+- [protocol UIFocusDebuggerOutput](./uifocusdebuggeroutput.md)
   An interface for specifying output from a focus debugger object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Debugging focus issues in your app](debugging-focus-issues-in-your-app.md)
+### Focus debugging
+- [Debugging focus issues in your app](./debugging-focus-issues-in-your-app.md)
   Find errors and determine why the next focused item isn’t what you expected.
 
 

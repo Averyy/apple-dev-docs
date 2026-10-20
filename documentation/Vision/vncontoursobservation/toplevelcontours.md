@@ -1,7 +1,8 @@
 # topLevelContours
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of contours that don’t have another contour enclosing them.
 
@@ -19,23 +20,28 @@ An array of contours that don’t have another contour enclosing them.
 var topLevelContours: [VNContour] { get }
 ```
 
+```objc
+@property (readonly) NSArray<VNContour *> * topLevelContours;
+```
+
 #### Discussion
 
-This array constitutes the top of the contour hierarchy. You can iterate over each [`VNContour`](vncontour.md) instance to determine its children.
+This array constitutes the top of the contour hierarchy. You can iterate over each [`VNContour`](../vncontour.md) instance to determine its children.
 
 ## See Also
 
-- [var contourCount: Int](vncontoursobservation/contourcount.md)
+### Inspecting the Observation
+- [var contourCount: Int](./contourcount.md)
   The total number of detected contours.
-- [var normalizedPath: CGPath](vncontoursobservation/normalizedpath.md)
+- [var normalizedPath: CGPath](./normalizedpath.md)
   The detected contours as a path object in normalized coordinates.
-- [var topLevelContourCount: Int](vncontoursobservation/toplevelcontourcount.md)
+- [var topLevelContourCount: Int](./toplevelcontourcount.md)
   The total number of detected top-level contours.
-- [func contour(at: Int) throws -> VNContour](vncontoursobservation/contour(at:)-9on0y.md)
+- [func contour(at: Int) throws -> VNContour](./contour%28at%29-9on0y.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
-- [func contour(at: IndexPath) throws -> VNContour](vncontoursobservation/contour(at:)-52odo.md)
+- [func contour(at: IndexPath) throws -> VNContour](./contour%28at%29-52odo.md)
   Retrieves the contour object at the specified index path.
-- [class VNContour](vncontour.md)
+- [class VNContour](../vncontour.md)
   A class that represents a detected contour in an image.
 
 

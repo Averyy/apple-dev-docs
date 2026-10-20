@@ -1,15 +1,16 @@
 # UIPopoverPresentationControllerDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for a popover presentation delegate, which lets you customize the behavior of a popover-based presentation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -18,34 +19,39 @@ The interface for a popover presentation delegate, which lets you customize the 
 protocol UIPopoverPresentationControllerDelegate : UIAdaptivePresentationControllerDelegate
 ```
 
+```objc
+@protocol UIPopoverPresentationControllerDelegate <UIAdaptivePresentationControllerDelegate>
+```
+
 #### Overview
 
 A popover presentation controller notifies your delegate at appropriate points during the presentation process. You can use the delegate methods to customize this process and respond to changes dynamically.
 
-After defining an object that adopts this protocol, assign that object to the [`delegate`](uipopoverpresentationcontroller/delegate.md) property of a [`UIPopoverPresentationController`](uipopoverpresentationcontroller.md) object. You must present a view controller using the [`UIModalPresentationStyle.popover`](uimodalpresentationstyle/popover.md) style before you can obtain such an object. For more information about popover presentation controllers, see [`UIPopoverPresentationController`](uipopoverpresentationcontroller.md).
+After defining an object that adopts this protocol, assign that object to the [`delegate`](./uipopoverpresentationcontroller/delegate.md) property of a [`UIPopoverPresentationController`](./uipopoverpresentationcontroller.md) object. You must present a view controller using the [`UIModalPresentationStyle.popover`](./uimodalpresentationstyle/popover.md) style before you can obtain such an object. For more information about popover presentation controllers, see [`UIPopoverPresentationController`](./uipopoverpresentationcontroller.md).
 
 ## Topics
 
 ### Presenting and dismissing the popover
-- [func prepareForPopoverPresentation(UIPopoverPresentationController)](uipopoverpresentationcontrollerdelegate/prepareforpopoverpresentation(_:).md)
+- [func prepareForPopoverPresentation(UIPopoverPresentationController)](./uipopoverpresentationcontrollerdelegate/prepareforpopoverpresentation%28_%29.md)
   Notifies the delegate that the popover is about to be presented.
-- [func popoverPresentationControllerShouldDismissPopover(UIPopoverPresentationController) -> Bool](uipopoverpresentationcontrollerdelegate/popoverpresentationcontrollershoulddismisspopover(_:).md)
+- [func popoverPresentationControllerShouldDismissPopover(UIPopoverPresentationController) -> Bool](./uipopoverpresentationcontrollerdelegate/popoverpresentationcontrollershoulddismisspopover%28_%29.md)
   Asks the delegate if the popover should be dismissed.
-- [func popoverPresentationControllerDidDismissPopover(UIPopoverPresentationController)](uipopoverpresentationcontrollerdelegate/popoverpresentationcontrollerdiddismisspopover(_:).md)
+- [func popoverPresentationControllerDidDismissPopover(UIPopoverPresentationController)](./uipopoverpresentationcontrollerdelegate/popoverpresentationcontrollerdiddismisspopover%28_%29.md)
   Tells the delegate that the popover was dismissed.
 ### Repositioning the popover
-- [func popoverPresentationController(UIPopoverPresentationController, willRepositionPopoverTo: UnsafeMutablePointer<CGRect>, in: AutoreleasingUnsafeMutablePointer<UIView>)](uipopoverpresentationcontrollerdelegate/popoverpresentationcontroller(_:willrepositionpopoverto:in:).md)
+- [func popoverPresentationController(UIPopoverPresentationController, willRepositionPopoverTo: UnsafeMutablePointer<CGRect>, in: AutoreleasingUnsafeMutablePointer<UIView>)](./uipopoverpresentationcontrollerdelegate/popoverpresentationcontroller%28_,willrepositionpopoverto,in%29.md)
   Tells the delegate that UIKit needs to reposition the popover’s location.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIAdaptivePresentationControllerDelegate](uiadaptivepresentationcontrollerdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIAdaptivePresentationControllerDelegate](./uiadaptivepresentationcontrollerdelegate.md)
 
 ## See Also
 
-- [var delegate: (any UIPopoverPresentationControllerDelegate)?](uipopoverpresentationcontroller/delegate.md)
+### Customizing the popover behavior
+- [var delegate: (any UIPopoverPresentationControllerDelegate)?](./uipopoverpresentationcontroller/delegate.md)
   The delegate that handles popover-related messages.
 
 

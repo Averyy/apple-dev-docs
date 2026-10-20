@@ -1,7 +1,8 @@
 # init(content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group box with the provided label and view content.
 
@@ -21,16 +22,17 @@ nonisolated init(@ContentBuilder content: () -> Content, @ContentBuilder label: 
 
 ## Parameters
 
-- `content`: A [`ContentBuilder`](contentbuilder.md) that produces the content for the group box.
-- `label`: A [`ContentBuilder`](contentbuilder.md) that produces a label for the group box.
+- `content`: A [`ContentBuilder`](../contentbuilder.md) that produces the content for the group box.
+- `label`: A [`ContentBuilder`](../contentbuilder.md) that produces a label for the group box.
 
 ## See Also
 
-- [init(content: () -> Content)](groupbox/init(content:).md)
+### Creating a group box
+- [init(content: () -> Content)](./init%28content%29.md)
   Creates an unlabeled group box with the provided view content.
-- [init(_:content:)](groupbox/init(_:content:).md)
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a group box with the provided view content and title.
-- [init(label: Label, content: () -> Content)](groupbox/init(label:content:).md)
+- [init(label: Label, content: () -> Content)](./init%28label,content%29.md)
 
 
 ---

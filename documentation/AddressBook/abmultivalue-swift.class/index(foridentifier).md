@@ -1,17 +1,22 @@
 # index(forIdentifier:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index for the given identifier.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func index(forIdentifier identifier: String!) -> Int
+```
+
+```objc
+- (NSUInteger) indexForIdentifier:(NSString *) identifier;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ If the identifier is not found, returns `NSNotFound`.
 
 ## See Also
 
-- [func identifier(at: Int) -> String!](abmultivalue-swift.class/identifier(at:).md)
+### Accessing identifiers
+- [func identifier(at: Int) -> String!](./identifier%28at%29.md)
   Returns the identifier for the given index.
 
 

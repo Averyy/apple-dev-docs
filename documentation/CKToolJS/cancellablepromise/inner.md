@@ -1,7 +1,8 @@
 # inner
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wrapped promise.
 
@@ -10,7 +11,7 @@ The wrapped promise.
 
 ## Declaration
 
-```swift
+```
 attribute Promise inner;
 ```
 

@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetMemberLocalizationUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a leaderboard localization.
 
@@ -10,14 +11,14 @@ The request body you use to update a leaderboard localization.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetMemberLocalizationUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterLeaderboardSetMemberLocalizationUpdateRequest.Data](gamecenterleaderboardsetmemberlocalizationupdaterequest/data-data.dictionary.md)
+- [object GameCenterLeaderboardSetMemberLocalizationUpdateRequest.Data](./gamecenterleaderboardsetmemberlocalizationupdaterequest/data-data.dictionary.md)
   The request body you use to update a leaderboard.
 
 ## Properties
@@ -26,16 +27,17 @@ object GameCenterLeaderboardSetMemberLocalizationUpdateRequest
 
 ## See Also
 
-- [object GameCenterLeaderboardSetMemberLocalization](gamecenterleaderboardsetmemberlocalization.md)
+### Objects
+- [object GameCenterLeaderboardSetMemberLocalization](./gamecenterleaderboardsetmemberlocalization.md)
   The data structure that represent a leaderboard set member localization.
-- [object GameCenterLeaderboardSetMemberLocalizationCreateRequest](gamecenterleaderboardsetmemberlocalizationcreaterequest.md)
+- [object GameCenterLeaderboardSetMemberLocalizationCreateRequest](./gamecenterleaderboardsetmemberlocalizationcreaterequest.md)
   The request body you use to create a leaderboard set localization.
-- [object GameCenterLeaderboardSetMemberLocalizationResponse](gamecenterleaderboardsetmemberlocalizationresponse.md)
+- [object GameCenterLeaderboardSetMemberLocalizationResponse](./gamecenterleaderboardsetmemberlocalizationresponse.md)
   A response containing a single localization for a leaderboard’s membership within a leaderboard set.
-- [object GameCenterLeaderboardSetMemberLocalizationsResponse](gamecenterleaderboardsetmemberlocalizationsresponse.md)
+- [object GameCenterLeaderboardSetMemberLocalizationsResponse](./gamecenterleaderboardsetmemberlocalizationsresponse.md)
   A response that contains multiple leaderboard localizations resources.
-- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardLinkageResponse](gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardlinkageresponse.md)
-- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardSetLinkageResponse](gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardsetlinkageresponse.md)
+- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardLinkageResponse](./gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardlinkageresponse.md)
+- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardSetLinkageResponse](./gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardsetlinkageresponse.md)
 
 
 ---

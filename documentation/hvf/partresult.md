@@ -1,7 +1,8 @@
 # PartResult
 
 **Framework**: hvf  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result returned from a part loader
 
@@ -23,11 +24,11 @@ enum PartResult
 ## Topics
 
 ### Enumeration Cases
-- [case composite(any CompositeWriter)](partresult/composite(_:).md)
+- [case composite(any CompositeWriter)](./partresult/composite%28_%29.md)
   The result is a Composite; data is in the CompositeWriter
-- [PartResult.notFound](partresult/notfound.md)
+- [PartResult.notFound](./partresult/notfound.md)
   The requested part number was not found
-- [case shape(any ShapeWriter)](partresult/shape(_:).md)
+- [case shape(any ShapeWriter)](./partresult/shape%28_%29.md)
   The result is a Shape; data is in the ShapeWriter
 
 

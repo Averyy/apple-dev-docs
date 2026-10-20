@@ -7,11 +7,12 @@ Unused.
 
 ## See Also
 
-- [fvp](vnop_revoke_args/1807765-fvp.md)
+### Fields
+- [fvp](./api-1807765-fvp.md)
   First vnode.
-- [tvp](vnop_revoke_args/1807769-tvp.md)
+- [tvp](./api-1807769-tvp.md)
   Second vnode.
-- [ctx](vnop_revoke_args/1807776-ctx.md)
+- [ctx](./api-1807776-ctx.md)
   Context to authenticate for exchangedata request.
 
 

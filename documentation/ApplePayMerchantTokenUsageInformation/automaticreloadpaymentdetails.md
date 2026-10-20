@@ -1,13 +1,14 @@
 # AutomaticReloadPaymentDetails
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Details about an automatic reload payment.
 
 ## Declaration
 
-```swift
+```
 object AutomaticReloadPaymentDetails
 ```
 
@@ -18,15 +19,16 @@ object AutomaticReloadPaymentDetails
 
 ## See Also
 
-- [object DeferredPaymentDetails](deferredpaymentdetails.md)
+### Getting payment details
+- [object DeferredPaymentDetails](./deferredpaymentdetails.md)
   Details about a deferred payment, such as a hotel booking or a preorder.
-- [object PastPayment](pastpayment.md)
+- [object PastPayment](./pastpayment.md)
   A past payment.
-- [object PaymentIssueDetails](paymentissuedetails.md)
+- [object PaymentIssueDetails](./paymentissuedetails.md)
   Details about a payment issue, such as a declined payment.
-- [object RecurringPaymentDetails](recurringpaymentdetails.md)
+- [object RecurringPaymentDetails](./recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
-- [object UpcomingPayment](upcomingpayment.md)
+- [object UpcomingPayment](./upcomingpayment.md)
   An upcoming payment.
 
 

@@ -1,7 +1,8 @@
 # streamID
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID for the stream.
 
@@ -13,6 +14,10 @@ The ID for the stream.
 
 ```swift
 var streamID: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger streamID;
 ```
 
 

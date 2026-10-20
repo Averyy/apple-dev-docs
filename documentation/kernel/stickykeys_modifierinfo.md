@@ -1,14 +1,15 @@
 # StickyKeys_ModifierInfo
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _stickyKeys_ModifierInfo {
     ...
 } StickyKeys_ModifierInfo;
@@ -17,9 +18,9 @@ typedef struct _stickyKeys_ModifierInfo {
 ## Topics
 
 ### Instance Properties
-- [key](stickykeys_modifierinfo/1415091-key.md)
-- [leftModBit](stickykeys_modifierinfo/1415082-leftmodbit.md)
-- [state](stickykeys_modifierinfo/1415037-state.md)
+- [key](./stickykeys_modifierinfo/api-1415091-key.md)
+- [leftModBit](./stickykeys_modifierinfo/api-1415082-leftmodbit.md)
+- [state](./stickykeys_modifierinfo/api-1415037-state.md)
 
 
 ---

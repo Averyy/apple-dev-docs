@@ -1,7 +1,8 @@
 # internalError
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Error with an undetermined cause.
 

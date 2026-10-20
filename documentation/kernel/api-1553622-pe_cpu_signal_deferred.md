@@ -1,25 +1,27 @@
 # PE_cpu_signal_deferred
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 void PE_cpu_signal_deferred(cpu_id_t source, cpu_id_t target);
 ```
 
 ## See Also
 
-- [PE_cpu_halt](1553664-pe_cpu_halt.md)
-- [PE_cpu_machine_init](1553675-pe_cpu_machine_init.md)
-- [PE_cpu_machine_quiesce](1553608-pe_cpu_machine_quiesce.md)
-- [PE_cpu_signal](1553636-pe_cpu_signal.md)
-- [PE_cpu_signal_cancel](1553700-pe_cpu_signal_cancel.md)
-- [PE_cpu_start](1553604-pe_cpu_start.md)
+### CPU
+- [PE_cpu_halt](./api-1553664-pe_cpu_halt.md)
+- [PE_cpu_machine_init](./api-1553675-pe_cpu_machine_init.md)
+- [PE_cpu_machine_quiesce](./api-1553608-pe_cpu_machine_quiesce.md)
+- [PE_cpu_signal](./api-1553636-pe_cpu_signal.md)
+- [PE_cpu_signal_cancel](./api-1553700-pe_cpu_signal_cancel.md)
+- [PE_cpu_start](./api-1553604-pe_cpu_start.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HKPrescriptionType
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that identifies samples that store a prescription.
 
@@ -19,9 +20,13 @@ A type that identifies samples that store a prescription.
 class HKPrescriptionType
 ```
 
+```objc
+@interface HKPrescriptionType : HKSampleType
+```
+
 #### Overview
 
-The [`HKPrescriptionType`](hkprescriptiontype.md) class is a concrete subclass of the [`HKSampleType`](hksampletype.md) class. To create a vision prescription type instances, use the [`visionPrescriptionType()`](hkobjecttype/visionprescriptiontype().md) convenience method.
+The [`HKPrescriptionType`](./hkprescriptiontype.md) class is a concrete subclass of the [`HKSampleType`](./hksampletype.md) class. To create a vision prescription type instances, use the [`visionPrescriptionType()`](./hkobjecttype/visionprescriptiontype%28%29.md) convenience method.
 
 Use this data type to request permission to save vision prescriptions to the HealthKit store.
 
@@ -40,40 +45,41 @@ store.requestAuthorization(toShare: [visionPrescriptionType],
 }
 ```
 
-> **Note**: Important Vision prescription samples require per-object authorization. Requesting authorization to read these samples using [`requestAuthorization(toShare:read:)`](hkhealthstore/requestauthorization(toshare:read:).md) fails with an error. Instead, use [`requestPerObjectReadAuthorization(for:predicate:completion:)`](hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:).md) to request authorization before querying for samples.
+> **Note**: Important Vision prescription samples require per-object authorization. Requesting authorization to read these samples using [`requestAuthorization(toShare:read:)`](./hkhealthstore/requestauthorization%28toshare,read%29.md) fails with an error. Instead, use [`requestPerObjectReadAuthorization(for:predicate:completion:)`](./hkhealthstore/requestperobjectreadauthorization%28for,predicate,completion%29.md) to request authorization before querying for samples.
 
 ## Relationships
 
 ### Inherits From
-- [HKSampleType](hksampletype.md)
+- [HKSampleType](./hksampletype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKVisionPrescription](hkvisionprescription.md)
+### Vision prescriptions
+- [class HKVisionPrescription](./hkvisionprescription.md)
   A sample that stores a vision prescription.
-- [class HKGlassesPrescription](hkglassesprescription.md)
+- [class HKGlassesPrescription](./hkglassesprescription.md)
   A sample that stores a prescription for glasses.
-- [class HKContactsPrescription](hkcontactsprescription.md)
+- [class HKContactsPrescription](./hkcontactsprescription.md)
   A sample that store a prescription for contacts.
-- [class HKGlassesLensSpecification](hkglasseslensspecification.md)
+- [class HKGlassesLensSpecification](./hkglasseslensspecification.md)
   An object that contains the glasses prescription data for one eye.
-- [class HKContactsLensSpecification](hkcontactslensspecification.md)
+- [class HKContactsLensSpecification](./hkcontactslensspecification.md)
   An object that contains the contacts prescription data for one eye.
-- [class HKLensSpecification](hklensspecification.md)
+- [class HKLensSpecification](./hklensspecification.md)
   An abstract superclass for lens specifications.
-- [class HKVisionPrism](hkvisionprism.md)
+- [class HKVisionPrism](./hkvisionprism.md)
   Prescription data for eye alignment.
 
 

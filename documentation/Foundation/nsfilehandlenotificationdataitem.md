@@ -1,9 +1,10 @@
 # NSFileHandleNotificationDataItem
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A key in the userinfo dictionary in a [`readCompletionNotification`](filehandle/readcompletionnotification.md) and [`NSFileHandleReadToEndOfFileCompletion`](nsnotification/name-swift.struct/nsfilehandlereadtoendoffilecompletion.md).
+A key in the userinfo dictionary in a [`readCompletionNotification`](./filehandle/readcompletionnotification.md) and [`NSFileHandleReadToEndOfFileCompletion`](./nsnotification/name-swift.struct/nsfilehandlereadtoendoffilecompletion.md).
 
 **Availability**:
 - iOS 2.0+
@@ -20,15 +21,20 @@ A key in the userinfo dictionary in a [`readCompletionNotification`](filehandle/
 let NSFileHandleNotificationDataItem: String
 ```
 
+```c
+extern NSString * const NSFileHandleNotificationDataItem;
+```
+
 #### Discussion
 
 The corresponding value is an `NSData` object containing the available data read from a socket connection.
 
 ## See Also
 
-- [let NSFileHandleNotificationFileHandleItem: String](nsfilehandlenotificationfilehandleitem.md)
-  A key in the userinfo dictionary in a [`NSFileHandleConnectionAccepted`](nsnotification/name-swift.struct/nsfilehandleconnectionaccepted.md) notification.
-- [let NSFileHandleNotificationMonitorModes: String](nsfilehandlenotificationmonitormodes.md)
+### Constants
+- [let NSFileHandleNotificationFileHandleItem: String](./nsfilehandlenotificationfilehandleitem.md)
+  A key in the userinfo dictionary in a [`NSFileHandleConnectionAccepted`](./nsnotification/name-swift.struct/nsfilehandleconnectionaccepted.md) notification.
+- [let NSFileHandleNotificationMonitorModes: String](./nsfilehandlenotificationmonitormodes.md)
   Currently unused.
 
 

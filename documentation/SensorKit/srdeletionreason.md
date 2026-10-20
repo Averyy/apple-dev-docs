@@ -1,7 +1,8 @@
 # SRDeletionReason
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Reasons that the framework deletes samples.
 
@@ -16,35 +17,40 @@ Reasons that the framework deletes samples.
 enum SRDeletionReason
 ```
 
+```c
+enum SRDeletionReason : NSInteger;
+```
+
 ## Topics
 
 ### Reasons
-- [SRDeletionReason.ageLimit](srdeletionreason/agelimit.md)
+- [SRDeletionReason.ageLimit](./srdeletionreason/agelimit.md)
   Indicates that the sample outlived the framework’s retention limit.
-- [SRDeletionReason.lowDiskSpace](srdeletionreason/lowdiskspace.md)
+- [SRDeletionReason.lowDiskSpace](./srdeletionreason/lowdiskspace.md)
   Indicates that the system’s disk space is low.
-- [SRDeletionReason.noInterestedClients](srdeletionreason/nointerestedclients.md)
+- [SRDeletionReason.noInterestedClients](./srdeletionreason/nointerestedclients.md)
   Indicates that the sensor has no active stakeholders.
-- [SRDeletionReason.systemInitiated](srdeletionreason/systeminitiated.md)
+- [SRDeletionReason.systemInitiated](./srdeletionreason/systeminitiated.md)
   Indicates that the system requests deletion.
-- [SRDeletionReason.userInitiated](srdeletionreason/userinitiated.md)
+- [SRDeletionReason.userInitiated](./srdeletionreason/userinitiated.md)
   Indicates that the user requests deletion.
 ### Initializers
-- [init?(rawValue: Int)](srdeletionreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./srdeletionreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var reason: SRDeletionReason](srdeletionrecord/reason.md)
+### Accessing the Deletion Reason
+- [var reason: SRDeletionReason](./srdeletionrecord/reason.md)
   The reason the framework deletes samples.
 
 

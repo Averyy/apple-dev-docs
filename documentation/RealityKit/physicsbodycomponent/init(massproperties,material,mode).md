@@ -1,7 +1,8 @@
 # init(massProperties:material:mode:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a physics body component with the given mass properties, material, and mode.
 
@@ -11,7 +12,7 @@ Creates a physics body component with the given mass properties, material, and m
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,11 +28,12 @@ init(massProperties: PhysicsMassProperties = .default, material: PhysicsMaterial
 
 ## See Also
 
-- [init()](physicsbodycomponent/init.md)
+### Creating a physics body component
+- [init()](./init%28%29.md)
   Creates a physics body component with default settings.
-- [init(shapes: [ShapeResource], density: Float, material: PhysicsMaterialResource?, mode: PhysicsBodyMode)](physicsbodycomponent/init(shapes:density:material:mode:).md)
+- [init(shapes: [ShapeResource], density: Float, material: PhysicsMaterialResource?, mode: PhysicsBodyMode)](./init%28shapes,density,material,mode%29.md)
   Creates a physics body component deriving mass properties from shape and density.
-- [init(shapes: [ShapeResource], mass: Float, material: PhysicsMaterialResource?, mode: PhysicsBodyMode)](physicsbodycomponent/init(shapes:mass:material:mode:).md)
+- [init(shapes: [ShapeResource], mass: Float, material: PhysicsMaterialResource?, mode: PhysicsBodyMode)](./init%28shapes,mass,material,mode%29.md)
   Creates a physics body component deriving mass properties from shape and mass.
 
 

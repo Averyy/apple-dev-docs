@@ -1,7 +1,8 @@
 # convert(rectangularCoordinates:toPolarCoordinates:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts single-precision rectangular coordinates to polar coordinates.
 
@@ -11,7 +12,7 @@ Converts single-precision rectangular coordinates to polar coordinates.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates polarCoo
 
 #### Discussion
 
-The function calls the underlying [`vDSP_polarD`](vdsp_polard.md) function to convert the input angle-radius pairs to Cartesian x-y pairs.
+The function calls the underlying [`vDSP_polarD`](../vdsp_polard.md) function to convert the input angle-radius pairs to Cartesian x-y pairs.
 
 The following code shows how to convert a set of Cartesian coordinates to its angle-radius pair (with the angle specified in degress) equivalent:
 
@@ -57,11 +58,12 @@ The following code shows how to convert a set of Cartesian coordinates to its an
 
 ## See Also
 
-- [static func rectangularToPolar<U>(U) -> [Float]](vdsp/rectangulartopolar(_:)-5p4kg.md)
+### Converting rectangular coordinates to polar coordinates
+- [static func rectangularToPolar<U>(U) -> [Float]](./rectangulartopolar%28_%29-5p4kg.md)
   Returns single-precision polar coordinates converted from rectangular coordinates.
-- [static func rectangularToPolar<U>(U) -> [Double]](vdsp/rectangulartopolar(_:)-3txg1.md)
+- [static func rectangularToPolar<U>(U) -> [Double]](./rectangulartopolar%28_%29-3txg1.md)
   Returns double-precision polar coordinates converted from rectangular coordinates.
-- [static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates: inout V)](vdsp/convert(rectangularcoordinates:topolarcoordinates:)-84131.md)
+- [static func convert<U, V>(rectangularCoordinates: U, toPolarCoordinates: inout V)](./convert%28rectangularcoordinates,topolarcoordinates%29-84131.md)
   Converts double-precision rectangular coordinates to polar coordinates.
 
 

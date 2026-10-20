@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the composed transformation on a single input.
 
@@ -31,11 +32,12 @@ An output produced by applying the transformer to the input.
 
 ## See Also
 
-- [ComposedTransformer.Input](composedtransformer/input.md)
+### Performing the transformation
+- [ComposedTransformer.Input](./input.md)
   The input type.
-- [ComposedTransformer.Intermediate](composedtransformer/intermediate.md)
+- [ComposedTransformer.Intermediate](./intermediate.md)
   The intermediate type.
-- [ComposedTransformer.Output](composedtransformer/output.md)
+- [ComposedTransformer.Output](./output.md)
   The output type.
 
 

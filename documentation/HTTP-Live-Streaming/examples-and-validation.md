@@ -1,6 +1,7 @@
 # Reviewing sample playlists and validating streams
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Reference sample multivariant and video-on-demand (VOD) media playlists, and validate your HTTP Live Streaming (HLS) streams with Media Stream Validator.
 
@@ -8,7 +9,7 @@ Reference sample multivariant and video-on-demand (VOD) media playlists, and val
 
 Use the following playlist examples as a reference when authoring your own HLS streams for Apple Podcasts, and validate your streams with Apple’s command-line tools before publishing.
 
-#### Multivariant Playlist Example
+#### Multivariant playlist example
 
 The following multivariant playlist offers an audio rendition group, a subtitle rendition group, and three video variant streams that are paired with audio and subtitles.
 
@@ -35,7 +36,7 @@ audio/audio_only.m3u8
 #EXT-X-I-FRAME-STREAM-INF:BANDWIDTH=300000,RESOLUTION=854x480,CODECS="avc1.4d401f",URI="iframe/media.m3u8"
 ```
 
-#### Vod Media Playlist Example
+#### VOD media playlist example
 
 The following is an example of a VOD media playlist with a 10-second target duration for segments. An `#EXT-X-DATERANGE` tag with a `START` time offset describes a pre-roll advertisement and a mid-roll advertisement.
 
@@ -73,13 +74,13 @@ main.mp4
 #EXT-X-DATERANGE:ID=“midroll-ad-1”,CLASS=“com.apple.hls.interstitial",START-DATE="2025-01-01T01:23:45.000Z",DURATION=15.0,X-ASSET-URI="https://ad-server.example.com/midroll/campaign-456/ad.m3u8",X-SNAP="OUT,IN",X-RESUME-OFFSET=0,X-TIMELINE-OCCUPIES="RANGE",X-TIMELINE-STYLE="PRIMARY"
 ```
 
-#### Validate a Stream with Media Stream Validator
+#### Validate a stream with Media Stream Validator
 
 Media Stream Validator (`mediastreamvalidator`) simulates an HLS session and verifies that the index file and media segments conform to the HLS specification. It checks for several best practices to ensure reliable streaming. If it finds errors or problems, it displays a detailed diagnostic report. To write validation data to a JSON file, pass the `--validation-data-path` argument.
 
-You can use [`this Apple Podcasts sample manifest`](https://developer.apple.comhttps://devstreaming-cdn.apple.com/videos/streaming/examples/podcast-sample/mvp_podcast_sample.m3u8) as a reference for development and troubleshooting.
+You can use [this Apple Podcasts sample manifest](https://devstreaming-cdn.apple.com/videos/streaming/examples/podcast-sample/mvp_podcast_sample.m3u8) as a reference for development and troubleshooting.
 
-Download Media Stream Validator from [`HLS downloads`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=hls).
+Download Media Stream Validator from [HLS downloads](https://developer.apple.com/download/all/?q=hls).
 
 Use the `--include-settings` option to specify a file containing configuration settings for Media Stream Validator to use:
 
@@ -162,17 +163,17 @@ For the `podcasts.json` file, copy and paste the following code block:
 
 ## See Also
 
-- [Authoring multivariant and media playlists](multivariant-and-media-playlists.md)
+- [Authoring multivariant and media playlists](./multivariant-and-media-playlists.md)
   Author the HTTP Live Streaming (HLS) multivariant and media playlists that Apple Podcasts requires, with the tags and attributes each playlist uses.
-- [Encoding media for HLS](encoding-media.md)
+- [Encoding media for HLS](./encoding-media.md)
   Encode audio and video for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
-- [Configuring delivery for HLS](configuring-delivery.md)
+- [Configuring delivery for HLS](./configuring-delivery.md)
   Format media URLs and origin domain access for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
-- [Delivering ad interstitials in podcast streams](delivering-ad-interstitials.md)
+- [Delivering ad interstitials in podcast streams](./delivering-ad-interstitials.md)
   Insert ad interstitials into HTTP Live Streaming (HLS) media playlists.
-- [Delivering WebVTT subtitles and captions in HLS](delivering-subtitles-and-captions.md)
+- [Delivering WebVTT subtitles and captions in HLS](./delivering-subtitles-and-captions.md)
   Add WebVTT subtitle and caption tracks to your HTTP Live Streaming (HLS) streams, and declare their absence when a stream doesn’t carry captions.
-- [Handling downloads and playback](downloads-and-playback.md)
+- [Handling downloads and playback](./downloads-and-playback.md)
   Handle Apple Podcasts’ download and playback behavior, including hybrid audio/video streaming, non-video modes, and user-agent identification.
 
 

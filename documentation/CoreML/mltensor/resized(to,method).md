@@ -1,7 +1,8 @@
 # resized(to:method:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resize the tensor’s spatial dimensions to size using the specified method.
 
@@ -45,7 +46,8 @@ The tensor must be either a 4-dimensional float tensor of shape `[batch, channel
 
 ## See Also
 
-- [MLTensor.ResizeMethod](mltensor/resizemethod.md)
+### Resizing the tensor
+- [MLTensor.ResizeMethod](./resizemethod.md)
   A resize algorithm.
 
 

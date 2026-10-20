@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new physics joints component.
 
@@ -21,7 +22,7 @@ init()
 
 #### Discussion
 
-The initializer sets the component’s [`joints`](physicsjointscomponent/joints.md) property to an empty set.
+The initializer sets the component’s [`joints`](./joints.md) property to an empty set.
 
 
 ---

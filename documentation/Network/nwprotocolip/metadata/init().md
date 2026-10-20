@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an IP packet configuration with default settings.
 
@@ -22,11 +23,12 @@ init()
 
 ## See Also
 
-- [var ecn: NWProtocolIP.ECN](nwprotocolip/metadata/ecn.md)
+### Sending IP Options
+- [var ecn: NWProtocolIP.ECN](./ecn.md)
   A specific Explicit Congestion Notification flag value to set on an IP packet.
-- [NWProtocolIP.ECN](nwprotocolip/ecn.md)
+- [NWProtocolIP.ECN](../ecn.md)
   Flag values for Explicit Congestion Notifications in IP packets.
-- [var serviceClass: NWParameters.ServiceClass](nwprotocolip/metadata/serviceclass.md)
+- [var serviceClass: NWParameters.ServiceClass](./serviceclass.md)
   A specific service class to mark on an IP packet.
 
 

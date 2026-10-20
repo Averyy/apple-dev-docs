@@ -1,7 +1,8 @@
 # sexualActivity
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category sample type that records sexual activity.
 
@@ -19,55 +20,61 @@ A category sample type that records sexual activity.
 static let sexualActivity: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierSexualActivity;
+```
+
 #### Discussion
 
-Use a [`HKCategoryValue.notApplicable`](hkcategoryvalue/notapplicable.md) value with these samples. These samples can include [`HKMetadataKeySexualActivityProtectionUsed`](hkmetadatakeysexualactivityprotectionused.md) metadata.
+Use a [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md) value with these samples. These samples can include [`HKMetadataKeySexualActivityProtectionUsed`](../hkmetadatakeysexualactivityprotectionused.md) metadata.
 
 ## Topics
 
 ### Metadata Keys
-- [let HKMetadataKeySexualActivityProtectionUsed: String](hkmetadatakeysexualactivityprotectionused.md)
-  A key that indicates whether protection was used during sexual activity. This metadata key can be used with [`sexualActivity`](hkcategorytypeidentifier/sexualactivity.md) category samples.
+- [let HKMetadataKeySexualActivityProtectionUsed: String](../hkmetadatakeysexualactivityprotectionused.md)
+  A key that indicates whether protection was used during sexual activity. This metadata key can be used with [`sexualActivity`](./sexualactivity.md) category samples.
 
 ## See Also
 
-- [enum HKCategoryValue](hkcategoryvalue.md)
+### Related Documentation
+- [enum HKCategoryValue](../hkcategoryvalue.md)
   Categories that are undefined.
-- [struct HKCategoryTypeIdentifier](hkcategorytypeidentifier.md)
+- [struct HKCategoryTypeIdentifier](../hkcategorytypeidentifier.md)
   Identifiers for creating category types.
-- [class HKCategoryType](hkcategorytype.md)
+- [class HKCategoryType](../hkcategorytype.md)
   A type that identifies samples that contain a value from a small set of possible values.
-- [class HKCategorySample](hkcategorysample.md)
+- [class HKCategorySample](../hkcategorysample.md)
   A sample with values from a short list of possible values.
-- [static let menstrualFlow: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menstrualflow.md)
+### Reproductive health
+- [static let menstrualFlow: HKCategoryTypeIdentifier](./menstrualflow.md)
   A category sample type that records menstrual cycles.
-- [static let intermenstrualBleeding: HKCategoryTypeIdentifier](hkcategorytypeidentifier/intermenstrualbleeding.md)
+- [static let intermenstrualBleeding: HKCategoryTypeIdentifier](./intermenstrualbleeding.md)
   A category sample type that records spotting outside the normal menstruation period.
-- [static let infrequentMenstrualCycles: HKCategoryTypeIdentifier](hkcategorytypeidentifier/infrequentmenstrualcycles.md)
+- [static let infrequentMenstrualCycles: HKCategoryTypeIdentifier](./infrequentmenstrualcycles.md)
   A category sample that indicates an infrequent menstrual cycle.
-- [static let irregularMenstrualCycles: HKCategoryTypeIdentifier](hkcategorytypeidentifier/irregularmenstrualcycles.md)
+- [static let irregularMenstrualCycles: HKCategoryTypeIdentifier](./irregularmenstrualcycles.md)
   A category sample that indicates an irregular menstrual cycle.
-- [static let persistentIntermenstrualBleeding: HKCategoryTypeIdentifier](hkcategorytypeidentifier/persistentintermenstrualbleeding.md)
+- [static let persistentIntermenstrualBleeding: HKCategoryTypeIdentifier](./persistentintermenstrualbleeding.md)
   A category sample that indicates persistent intermenstrual bleeding.
-- [static let prolongedMenstrualPeriods: HKCategoryTypeIdentifier](hkcategorytypeidentifier/prolongedmenstrualperiods.md)
+- [static let prolongedMenstrualPeriods: HKCategoryTypeIdentifier](./prolongedmenstrualperiods.md)
   A category sample that indicates a prolonged menstrual cycle.
-- [static let basalBodyTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/basalbodytemperature.md)
+- [static let basalBodyTemperature: HKQuantityTypeIdentifier](../hkquantitytypeidentifier/basalbodytemperature.md)
   A quantity sample type that records the user’s basal body temperature.
-- [static let cervicalMucusQuality: HKCategoryTypeIdentifier](hkcategorytypeidentifier/cervicalmucusquality.md)
+- [static let cervicalMucusQuality: HKCategoryTypeIdentifier](./cervicalmucusquality.md)
   A category sample type that records the quality of the user’s cervical mucus.
-- [static let ovulationTestResult: HKCategoryTypeIdentifier](hkcategorytypeidentifier/ovulationtestresult.md)
+- [static let ovulationTestResult: HKCategoryTypeIdentifier](./ovulationtestresult.md)
   A category sample type that records the result of an ovulation home test.
-- [static let progesteroneTestResult: HKCategoryTypeIdentifier](hkcategorytypeidentifier/progesteronetestresult.md)
+- [static let progesteroneTestResult: HKCategoryTypeIdentifier](./progesteronetestresult.md)
   A category type that represents the results from a home progesterone test.
-- [static let contraceptive: HKCategoryTypeIdentifier](hkcategorytypeidentifier/contraceptive.md)
+- [static let contraceptive: HKCategoryTypeIdentifier](./contraceptive.md)
   A category sample type that records the use of contraceptives.
-- [static let pregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/pregnancy.md)
+- [static let pregnancy: HKCategoryTypeIdentifier](./pregnancy.md)
   A category type that records pregnancy.
-- [static let pregnancyTestResult: HKCategoryTypeIdentifier](hkcategorytypeidentifier/pregnancytestresult.md)
+- [static let pregnancyTestResult: HKCategoryTypeIdentifier](./pregnancytestresult.md)
   A category type that represents the results from a home pregnancy test.
-- [static let lactation: HKCategoryTypeIdentifier](hkcategorytypeidentifier/lactation.md)
+- [static let lactation: HKCategoryTypeIdentifier](./lactation.md)
   A category type that records lactation.
-- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+- [enum HKCategoryValueVaginalBleeding](../hkcategoryvaluevaginalbleeding.md)
   A value that indicates the intensity of vaginal bleeding.
 
 

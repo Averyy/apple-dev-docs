@@ -1,7 +1,8 @@
 # AssignedDocumentMenuItem
 
 **Framework**: ClassKit UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A menu item that provides assigned document submission functionality.
 
@@ -44,32 +45,33 @@ menu.addItem(menuItem)
 ## Topics
 
 ### Initializers
-- [init(documentURL: URL, willSubmit: (URL) async -> Bool, didSubmit: (URL) -> Void, willWithdraw: (URL) async -> Bool, didWithdraw: (URL) -> Void)](assigneddocumentmenuitem/init(documenturl:willsubmit:didsubmit:willwithdraw:didwithdraw:).md)
+- [init(documentURL: URL, willSubmit: (URL) async -> Bool, didSubmit: (URL) -> Void, willWithdraw: (URL) async -> Bool, didWithdraw: (URL) -> Void)](./assigneddocumentmenuitem/init%28documenturl,willsubmit,didsubmit,willwithdraw,didwithdraw%29.md)
   Creates a menu item for assigned document submission.
 
 ## Relationships
 
 ### Inherits From
-- [NSMenuItem](../appkit/nsmenuitem.md)
+- [NSMenuItem](../AppKit/nsmenuitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [NSValidatedUserInterfaceItem](../appkit/nsvalidateduserinterfaceitem.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [NSValidatedUserInterfaceItem](../AppKit/nsvalidateduserinterfaceitem.md)
 
 ## See Also
 
-- [struct AssignedDocumentSubmissionButton](assigneddocumentsubmissionbutton.md)
+### Submitting assigned documents
+- [struct AssignedDocumentSubmissionButton](./assigneddocumentsubmissionbutton.md)
   A button that provides submission functionality for the assigned document.
-- [class AssignedDocumentDeferredMenuElement](assigneddocumentdeferredmenuelement.md)
+- [class AssignedDocumentDeferredMenuElement](./assigneddocumentdeferredmenuelement.md)
   A deferred menu element that provides assigned document submission functionality.
 
 

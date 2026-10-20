@@ -1,15 +1,20 @@
 # delegate
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 unowned(unsafe) var delegate: AnyObject? { get set }
+```
+
+```objc
+@property (assign, nullable) id delegate;
 ```
 
 

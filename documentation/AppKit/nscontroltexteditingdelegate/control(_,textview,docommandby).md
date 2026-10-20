@@ -1,7 +1,8 @@
 # control(_:textView:doCommandBy:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when users press keys with predefined bindings in a cell of the specified control.
 
@@ -15,9 +16,13 @@ Invoked when users press keys with predefined bindings in a cell of the specifie
 optional func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool
 ```
 
+```objc
+- (BOOL) control:(NSControl *) control textView:(NSTextView *) textView doCommandBySelector:(SEL) commandSelector;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delegate object handles the key binding; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the delegate object handles the key binding; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 

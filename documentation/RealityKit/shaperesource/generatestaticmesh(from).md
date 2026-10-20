@@ -1,7 +1,8 @@
 # generateStaticMesh(from:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a static collision mesh from a mesh resource.
 
@@ -20,9 +21,21 @@ Creates a static collision mesh from a mesh resource.
 @preconcurrency static func generateStaticMesh(from mesh: MeshResource) async throws -> ShapeResource
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+static func generateStaticMesh(from meshAnchor: ARMeshAnchor) async throws -> ShapeResource
+```
+
+```swift
+nonisolated
+static func generateStaticMesh(from meshAnchor: MeshAnchor) async throws -> ShapeResource
+```
+
 #### Discussion
 
-You can use only the physics body mode [`PhysicsBodyMode.static`](physicsbodymode/static.md) and the collision component mode [`CollisionComponent.Mode.default`](collisioncomponent/mode-swift.enum/default.md) with this shape.
+You can use only the physics body mode [`PhysicsBodyMode.static`](../physicsbodymode/static.md) and the collision component mode [`CollisionComponent.Mode.default`](../collisioncomponent/mode-swift.enum/default.md) with this shape.
 
 The code example below assumes calling this method from a synchronous block:
 

@@ -1,7 +1,8 @@
 # VZDiskSynchronizationMode.none
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Don’t synchronize the data with the permanent storage.
 
@@ -14,6 +15,10 @@ Don’t synchronize the data with the permanent storage.
 case none
 ```
 
+```c
+VZDiskSynchronizationModeNone
+```
+
 #### Discussion
 
 This option doesn’t guarantee data integrity if any error condition occurs such as disk full on the host, panic, power loss, and so on.
@@ -24,7 +29,8 @@ Using this mode may result in improved performance since no synchronization with
 
 ## See Also
 
-- [VZDiskSynchronizationMode.full](vzdisksynchronizationmode/full.md)
+### Synchronization modes
+- [VZDiskSynchronizationMode.full](./full.md)
   Perform all synchronization operations as requested by the guest OS.
 
 

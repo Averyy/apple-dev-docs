@@ -1,18 +1,19 @@
 # kCTRunDelegateCurrentVersion
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current version of the run delegate.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The current version of the run delegate.
 var kCTRunDelegateCurrentVersion: Int { get }
 ```
 
+```c
+kCTRunDelegateCurrentVersion
+```
+
 ## See Also
 
-- [var kCTRunDelegateVersion1: Int](kctrundelegateversion1.md)
+### Constants
+- [var kCTRunDelegateVersion1: Int](./kctrundelegateversion1.md)
   Version 1 of the run delegate.
 
 

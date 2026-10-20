@@ -1,7 +1,8 @@
 # IOUserSCSIPeripheralDeviceType05
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A DriverKit provider object that works with Type05 devices, those that use SCSI Multimedia Commands (SMC).
 
@@ -10,7 +11,7 @@ A DriverKit provider object that works with Type05 devices, those that use SCSI 
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserSCSIPeripheralDeviceType05;
 ```
 
@@ -18,45 +19,46 @@ class IOUserSCSIPeripheralDeviceType05;
 
 Subclass this class to create a driver for multimedia devices, such as CD-ROM and DVD-ROM peripherals. In your subclass, override all pure virtual methods.
 
-Use the functions in [`SCSI commands`](scsi-commands.md) to populate Command Descriptor Blocks (CDBs) that you send to the device with [`UserSendCDB`](iouserscsiperipheraldevicetype05/usersendcdb.md).
+Use the functions in [SCSI commands](./scsi-commands.md) to populate Command Descriptor Blocks (CDBs) that you send to the device with [`UserSendCDB`](./iouserscsiperipheraldevicetype05/usersendcdb.md).
 
 ## Topics
 
 ### Managing the device
-- [UserInitializeDeviceSupport](iouserscsiperipheraldevicetype05/userinitializedevicesupport.md)
+- [UserInitializeDeviceSupport](./iouserscsiperipheraldevicetype05/userinitializedevicesupport.md)
   Performs enumeration-time initializations in response to a call from the framework.
-- [UserResetDevice](iouserscsiperipheraldevicetype05/userresetdevice.md)
+- [UserResetDevice](./iouserscsiperipheraldevicetype05/userresetdevice.md)
   Performs a bus reset of the external drive.
 ### Sending commands to the device
-- [UserSendCDB](iouserscsiperipheraldevicetype05/usersendcdb.md)
+- [UserSendCDB](./iouserscsiperipheraldevicetype05/usersendcdb.md)
   Sends a vendor-specific Command Descriptor Block (CDB) to the device.
-- [SCSIType05OutParameters](scsitype05outparameters.md)
+- [SCSIType05OutParameters](./scsitype05outparameters.md)
   Parameters for commands to send to the external SCSI device.
-- [SCSIType05OutVersion](scsitype05outversion.md)
+- [SCSIType05OutVersion](./scsitype05outversion.md)
   Constants that represent versions of the Type05 outbound interface.
-- [SCSIType05InParameters](scsitype05inparameters.md)
+- [SCSIType05InParameters](./scsitype05inparameters.md)
   Parameters for responses from the external SCSI device.
-- [SCSIType05InVersion](scsitype05inversion.md)
+- [SCSIType05InVersion](./scsitype05inversion.md)
   Constants that represent versions of the Type05 inbound interface.
 ### Suspending and resuming services
-- [UserSuspendServices](iouserscsiperipheraldevicetype05/usersuspendservices.md)
+- [UserSuspendServices](./iouserscsiperipheraldevicetype05/usersuspendservices.md)
   Suspends services and allows the dext to communicate with the external drive.
-- [UserResumeServices](iouserscsiperipheraldevicetype05/userresumeservices.md)
+- [UserResumeServices](./iouserscsiperipheraldevicetype05/userresumeservices.md)
   Resumes normal services after a suspension.
 ### Providing device metadata
-- [UserReportMediumBlockSize](iouserscsiperipheraldevicetype05/userreportmediumblocksize.md)
+- [UserReportMediumBlockSize](./iouserscsiperipheraldevicetype05/userreportmediumblocksize.md)
   Provides a report on the external device’s block size.
 
 ## Relationships
 
 ### Inherits From
-- [IOService](../driverkit/ioservice.md)
+- [IOService](../DriverKit/ioservice.md)
 
 ## See Also
 
-- [IOUserSCSIPeripheralDeviceType00](iouserscsiperipheraldevicetype00.md)
+### Driver interfaces
+- [IOUserSCSIPeripheralDeviceType00](./iouserscsiperipheraldevicetype00.md)
   A DriverKit provider object that works with Type00 devices, those that use SCSI Block Commands (SBC).
-- [IOUserSCSIPeripheralDeviceType07](iouserscsiperipheraldevicetype07.md)
+- [IOUserSCSIPeripheralDeviceType07](./iouserscsiperipheraldevicetype07.md)
   A DriverKit provider object that works with Type07 devices, those that use extended SCSI Block Commands (SBC) for optical memory devices.
 
 

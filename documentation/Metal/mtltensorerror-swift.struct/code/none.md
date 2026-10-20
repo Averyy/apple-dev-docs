@@ -1,7 +1,8 @@
 # MTLTensorError.Code.none
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No error occurred.
 
@@ -17,6 +18,10 @@ No error occurred.
 
 ```swift
 case none
+```
+
+```c
+MTLTensorErrorNone
 ```
 
 

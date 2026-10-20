@@ -1,22 +1,27 @@
 # CIAreaAverageMaximumRed
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol for the Area Average and Maximum Red filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 protocol CIAreaAverageMaximumRed : CIAreaReductionFilter
+```
+
+```objc
+@protocol CIAreaAverageMaximumRed <CIAreaReductionFilter>
 ```
 
 #### Overview
@@ -26,8 +31,8 @@ Calculates the average and maximum red component value for the specified area in
 ## Relationships
 
 ### Inherits From
-- [CIAreaReductionFilter](ciareareductionfilter.md)
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIAreaReductionFilter](./ciareareductionfilter.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 
 ---

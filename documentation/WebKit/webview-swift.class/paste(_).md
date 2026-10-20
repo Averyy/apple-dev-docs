@@ -1,17 +1,22 @@
 # paste(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method that pastes content from the pasteboard at the insertion point or over the selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func paste(_ sender: Any?)
+```
+
+```objc
+- (void) paste:(id) sender;
 ```
 
 ## Parameters
@@ -20,19 +25,20 @@ func paste(_ sender: Any?)
 
 ## See Also
 
-- [func copy(Any?)](webview-swift.class/copy(_:).md)
+### Cut, Copy and Paste Action Methods
+- [func copy(Any?)](./copy%28_%29.md)
   Action method that copies the selected content to the general pasteboard.
-- [func copyFont(Any?)](webview-swift.class/copyfont(_:).md)
+- [func copyFont(Any?)](./copyfont%28_%29.md)
   An action method that copies font information onto the font pasteboard.
-- [func cut(Any?)](webview-swift.class/cut(_:).md)
+- [func cut(Any?)](./cut%28_%29.md)
   An action method that deletes selected content and puts it on the general pasteboard.
-- [func delete(Any?)](webview-swift.class/delete(_:).md)
+- [func delete(Any?)](./delete%28_%29.md)
   An action method that deletes the selected content.
-- [func pasteFont(Any?)](webview-swift.class/pastefont(_:).md)
+- [func pasteFont(Any?)](./pastefont%28_%29.md)
   An action method that pastes font information from the font pasteboard.
-- [func pasteAsPlainText(Any?)](webview-swift.class/pasteasplaintext(_:).md)
+- [func pasteAsPlainText(Any?)](./pasteasplaintext%28_%29.md)
   An action method that pastes pasteboard content as plain text.
-- [func pasteAsRichText(Any?)](webview-swift.class/pasteasrichtext(_:).md)
+- [func pasteAsRichText(Any?)](./pasteasrichtext%28_%29.md)
   An action method that pastes pasteboard content into the receiver as rich text, maintaining its attributes.
 
 

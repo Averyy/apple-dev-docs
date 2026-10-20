@@ -1,23 +1,28 @@
 # MouseParams
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters describing mouse interaction in 3D space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- Reality Composer Pro ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- Reality Composer Pro
 
 ## Declaration
 
 ```swift
 struct MouseParams
+```
+
+```c
+struct MouseParams;
 ```
 
 #### Overview
@@ -27,32 +32,33 @@ This structure captures both the position and direction of a mouse cursor projec
 ## Topics
 
 ### Initializers
-- [init()](mouseparams/init.md)
-- [init(position: simd_float3, direction: simd_float3, has_value: Bool)](mouseparams/init(position:direction:has_value:).md)
+- [init()](./mouseparams/init%28%29.md)
+- [init(position: simd_float3, direction: simd_float3, has_value: Bool)](./mouseparams/init%28position,direction,has_value%29.md)
 ### Instance Properties
-- [var direction: simd_float3](mouseparams/direction.md)
+- [var direction: simd_float3](./mouseparams/direction.md)
   The normalized direction vector of the mouse ray, converted to the simulation’s coordinate system.
-- [var has_value: Bool](mouseparams/has_value.md)
+- [var has_value: Bool](./mouseparams/has_value.md)
   Indicates whether valid mouse parameters are available.
-- [var position: simd_float3](mouseparams/position.md)
+- [var position: simd_float3](./mouseparams/position.md)
   The 3D position of the mouse cursor in local space, converted to the simulation’s coordinate system.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [ComputeNodeGraph.Topology](computenodegraph/topology.md)
+### Geometry and simulation inputs
+- [ComputeNodeGraph.Topology](./computenodegraph/topology.md)
   The primitive topology used to assemble output geometry for an output stage.
-- [enum CoordinateSpace](coordinatespace.md)
+- [enum CoordinateSpace](./coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
-- [ComputeNodeGraph.StructureLayout](computenodegraph/structurelayout.md)
-- [enum StripOrientation](striporientation.md)
+- [ComputeNodeGraph.StructureLayout](./computenodegraph/structurelayout.md)
+- [enum StripOrientation](./striporientation.md)
   An enumeration that specifies how a strip should be oriented.
-- [struct Viewpoint](viewpoint-swift.struct.md)
+- [struct Viewpoint](./viewpoint-swift.struct.md)
   Camera viewpoint parameters in 3D space.
 
 

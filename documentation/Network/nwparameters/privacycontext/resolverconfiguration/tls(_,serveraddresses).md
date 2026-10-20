@@ -1,7 +1,8 @@
 # NWParameters.PrivacyContext.ResolverConfiguration.tls(_:serverAddresses:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A DNS-over-TLS resolver configuration.
 
@@ -22,11 +23,12 @@ case tls(NWEndpoint, serverAddresses: [NWEndpoint])
 
 #### Discussion
 
-The hostname of the provided endpoint will be used to validate the TLS certificate of the server. See [`RFC 7858`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7858) for more details. The associated server addresses you provide are hints for which well-known DNS server addresses to use.
+The hostname of the provided endpoint will be used to validate the TLS certificate of the server. See [RFC 7858](https://tools.ietf.org/html/rfc7858) for more details. The associated server addresses you provide are hints for which well-known DNS server addresses to use.
 
 ## See Also
 
-- [NWParameters.PrivacyContext.ResolverConfiguration.https(_:serverAddresses:)](nwparameters/privacycontext/resolverconfiguration/https(_:serveraddresses:).md)
+### Resolver Types
+- [NWParameters.PrivacyContext.ResolverConfiguration.https(_:serverAddresses:)](./https%28_,serveraddresses%29.md)
   A DNS-over-HTTPS resolver configuration.
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicTypePositionState
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The position of an accessory like a door, window, awning, or window covering.
 
@@ -19,33 +20,38 @@ The position of an accessory like a door, window, awning, or window covering.
 let HMCharacteristicTypePositionState: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypePositionState;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValuePositionState`](hmcharacteristicvaluepositionstate.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValuePositionState`](./hmcharacteristicvaluepositionstate.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValuePositionState](hmcharacteristicvaluepositionstate.md)
+- [enum HMCharacteristicValuePositionState](./hmcharacteristicvaluepositionstate.md)
   Possible values for the position states of an accessory like a door, window, awning, or window covering.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentDoorState: String](hmcharacteristictypecurrentdoorstate.md)
+### Doors and windows
+- [let HMCharacteristicTypeCurrentDoorState: String](./hmcharacteristictypecurrentdoorstate.md)
   The current door state.
-- [let HMCharacteristicTypeTargetDoorState: String](hmcharacteristictypetargetdoorstate.md)
+- [let HMCharacteristicTypeTargetDoorState: String](./hmcharacteristictypetargetdoorstate.md)
   The target door state.
-- [let HMCharacteristicTypeCurrentPosition: String](hmcharacteristictypecurrentposition.md)
+- [let HMCharacteristicTypeCurrentPosition: String](./hmcharacteristictypecurrentposition.md)
   The current position of a door, window, awning, or window covering.
-- [let HMCharacteristicTypeTargetPosition: String](hmcharacteristictypetargetposition.md)
+- [let HMCharacteristicTypeTargetPosition: String](./hmcharacteristictypetargetposition.md)
   The target position of a door, window, awning, or window covering.
-- [let HMCharacteristicTypeStatusJammed: String](hmcharacteristictypestatusjammed.md)
+- [let HMCharacteristicTypeStatusJammed: String](./hmcharacteristictypestatusjammed.md)
   An indicator of whether an accessory is jammed.
-- [let HMCharacteristicTypeHoldPosition: String](hmcharacteristictypeholdposition.md)
+- [let HMCharacteristicTypeHoldPosition: String](./hmcharacteristictypeholdposition.md)
   A control for holding the position of an accessory like a door or window.
-- [let HMCharacteristicTypeSlatType: String](hmcharacteristictypeslattype.md)
+- [let HMCharacteristicTypeSlatType: String](./hmcharacteristictypeslattype.md)
   The type of slat on an accessory like a window or a fan.
-- [let HMCharacteristicTypeCurrentSlatState: String](hmcharacteristictypecurrentslatstate.md)
+- [let HMCharacteristicTypeCurrentSlatState: String](./hmcharacteristictypecurrentslatstate.md)
   The current state of slats on an accessory like a window or a fan.
 
 

@@ -1,7 +1,8 @@
 # SparseGetInertia(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the inertia of an LDLT factorization in complex double.
 
@@ -18,6 +19,10 @@ Returns the inertia of an LDLT factorization in complex double.
 
 ```swift
 func SparseGetInertia(_ Factored: SparseOpaqueFactorization_Complex_Double, _ num_positive: UnsafeMutablePointer<Int32>, _ num_zero: UnsafeMutablePointer<Int32>, _ num_negative: UnsafeMutablePointer<Int32>) -> Int32
+```
+
+```c
+int SparseGetInertia(SparseOpaqueFactorization_Complex_Double Factored, int *num_positive, int *num_zero, int *num_negative);
 ```
 
 #### Return Value
@@ -39,15 +44,16 @@ This call is only supported for factorizations of type `SparseFactorizationLDLTT
 
 ## See Also
 
-- [func SparseGetInertia(SparseOpaqueFactorization_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-6r90r.md)
+### Factorization inertia functions
+- [func SparseGetInertia(SparseOpaqueFactorization_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](./sparsegetinertia%28_,_,_,_%29-6r90r.md)
   Returns the inertia of a single-precision *LDLᵀ* factorization.
-- [func SparseGetInertia(SparseOpaqueFactorization_Double, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-2ykzq.md)
+- [func SparseGetInertia(SparseOpaqueFactorization_Double, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](./sparsegetinertia%28_,_,_,_%29-2ykzq.md)
   Returns the inertia of a double-precision *LDLᵀ* factorization.
-- [func SparseGetInertia(SparseOpaqueFactorization_Complex_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-6ca5h.md)
+- [func SparseGetInertia(SparseOpaqueFactorization_Complex_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](./sparsegetinertia%28_,_,_,_%29-6ca5h.md)
   Returns the inertia of an LDLT factorization in complex float.
-- [struct SparseUpdate_t](sparseupdate_t.md)
+- [struct SparseUpdate_t](./sparseupdate_t.md)
   Low-rank update algorithm selector
-- [var SparseUpdatePartialRefactor: SparseUpdate_t](sparseupdatepartialrefactor.md)
+- [var SparseUpdatePartialRefactor: SparseUpdate_t](./sparseupdatepartialrefactor.md)
   Low-rank update algorithm selector
 
 

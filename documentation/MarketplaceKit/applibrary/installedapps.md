@@ -1,7 +1,8 @@
 # installedApps
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of apps installed by the alternative app marketplace.
 
@@ -18,7 +19,8 @@ final var installedApps: Set<AppLibrary.App> { get set }
 
 ## See Also
 
-- [func app(forAppleItemID: AppleItemID) -> AppLibrary.App](applibrary/app(forappleitemid:).md)
+### Accessing installed apps
+- [func app(forAppleItemID: AppleItemID) -> AppLibrary.App](./app%28forappleitemid%29.md)
   Provides the app for the given app identifier.
 
 

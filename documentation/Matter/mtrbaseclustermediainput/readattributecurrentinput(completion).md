@@ -1,7 +1,8 @@
 # readAttributeCurrentInput(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCurrentInput(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCurrentInput() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeCurrentInputWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

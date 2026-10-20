@@ -1,7 +1,8 @@
 # TipUIPopoverViewController
 
 **Framework**: TipKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that displays a popover tip in UIKit applications.
 
@@ -20,9 +21,9 @@ A view controller that displays a popover tip in UIKit applications.
 
 #### Overview
 
-Use this view controller to present a tip you want to display using [`UIPopoverPresentationController`](https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller).
+Use this view controller to present a tip you want to display using [`UIPopoverPresentationController`](../UIKit/uipopoverpresentationcontroller.md).
 
-Presenting or dismissing TipUIPopoverViewController is done by listening to a tip’s [`shouldDisplayUpdates`](tip/shoulddisplayupdates.md) or [`statusUpdates`](tip/statusupdates.md).
+Presenting or dismissing TipUIPopoverViewController is done by listening to a tip’s [`shouldDisplayUpdates`](./tip/shoulddisplayupdates.md) or [`statusUpdates`](./tip/statusupdates.md).
 
 ```swift
 import TipKit
@@ -81,58 +82,59 @@ class CatTracksViewController: UIViewController {
 ## Topics
 
 ### Initializers
-- [convenience init(any Tip, sourceItem: any UIPopoverPresentationControllerSourceItem, actionHandler: (Tips.Action) -> Void)](tipuipopoverviewcontroller/init(_:sourceitem:actionhandler:).md)
+- [convenience init(any Tip, sourceItem: any UIPopoverPresentationControllerSourceItem, actionHandler: (Tips.Action) -> Void)](./tipuipopoverviewcontroller/init%28_,sourceitem,actionhandler%29.md)
   Initializes a popover controller with the specified tip.
-- [init?(coder: NSCoder)](tipuipopoverviewcontroller/init(coder:).md)
-- [init(nibName: String?, bundle: Bundle?)](tipuipopoverviewcontroller/init(nibname:bundle:).md)
+- [init?(coder: NSCoder)](./tipuipopoverviewcontroller/init%28coder%29.md)
+- [init(nibName: String?, bundle: Bundle?)](./tipuipopoverviewcontroller/init%28nibname,bundle%29.md)
 ### Instance Properties
-- [var backgroundColor: UIColor?](tipuipopoverviewcontroller/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./tipuipopoverviewcontroller/backgroundcolor.md)
   The background color to use for the tip view.
-- [var backgroundStyle: any ShapeStyle](tipuipopoverviewcontroller/backgroundstyle.md)
+- [var backgroundStyle: any ShapeStyle](./tipuipopoverviewcontroller/backgroundstyle.md)
   The background style to use for the tip view.
-- [var imageSize: CGSize](tipuipopoverviewcontroller/imagesize.md)
+- [var imageSize: CGSize](./tipuipopoverviewcontroller/imagesize.md)
   Size of the image displayed in the tip view.
-- [var imageStyle: (any ShapeStyle)?](tipuipopoverviewcontroller/imagestyle.md)
+- [var imageStyle: (any ShapeStyle)?](./tipuipopoverviewcontroller/imagestyle.md)
   Foreground style for the tip’s image.
-- [var presentationDelegate: (any UIPopoverPresentationControllerDelegate)?](tipuipopoverviewcontroller/presentationdelegate.md)
+- [var presentationDelegate: (any UIPopoverPresentationControllerDelegate)?](./tipuipopoverviewcontroller/presentationdelegate.md)
   The popover presentation delegate, which lets you customize the behavior of a popover-based presentation.
-- [var sourceItem: (any UIPopoverPresentationControllerSourceItem)?](tipuipopoverviewcontroller/sourceitem.md)
+- [var sourceItem: (any UIPopoverPresentationControllerSourceItem)?](./tipuipopoverviewcontroller/sourceitem.md)
   The item on which to anchor the tip popover.
-- [var viewStyle: any TipViewStyle](tipuipopoverviewcontroller/viewstyle.md)
+- [var viewStyle: any TipViewStyle](./tipuipopoverviewcontroller/viewstyle.md)
   The given style for TipView within the view hierarchy.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class TipUIView](tipuiview.md)
+### UIKit Views
+- [class TipUIView](./tipuiview.md)
   A user interface element that represents a tip in UIKit applications.
-- [class TipUICollectionViewCell](tipuicollectionviewcell.md)
+- [class TipUICollectionViewCell](./tipuicollectionviewcell.md)
   A collection view cell that embeds a tip.
-- [class TipUICollectionReusableView](tipuicollectionreusableview.md)
+- [class TipUICollectionReusableView](./tipuicollectionreusableview.md)
   A UICollectionReusableView subclass that represents a tip.
 
 

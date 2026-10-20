@@ -1,7 +1,8 @@
 # LDAP
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a Lightweight Directory Access Protocol (LDAP) account.
 
@@ -14,7 +15,7 @@ The payload that configures a Lightweight Directory Access Protocol (LDAP) accou
 
 ## Declaration
 
-```swift
+```
 object LDAP
 ```
 
@@ -22,7 +23,7 @@ object LDAP
 
 Specify `com.apple.ldap.account` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.ldap.account` as the payload type.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +91,7 @@ Specify `com.apple.ldap.account` as the payload type.
 ## Topics
 
 ### Objects
-- [object LDAP.LDAPSearchSettingsItem](ldap/ldapsearchsettingsitem.md)
+- [object LDAP.LDAPSearchSettingsItem](./ldap/ldapsearchsettingsitem.md)
   An array of search settings dictionaries.
 
 ## Properties
@@ -100,22 +101,27 @@ Specify `com.apple.ldap.account` as the payload type.
 - `LDAPAccountPassword` (string): The user’s password. Only use this in encrypted profiles.
 - `LDAPAccountUserName` (string): The user’s user name.
 - `LDAPAccountUseSSL` (boolean): If `true`, the system enables SSL.
+
+  **Default**: `true`
 - `LDAPSearchSettings` ([LDAP.LDAPSearchSettingsItem]): An array of search settings dictionaries.
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication.
+
+  Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 
-- [object Accounts](accounts.md)
+### Accounts
+- [object Accounts](./accounts.md)
   The payload that configures guest accounts.
-- [object CalDAV](caldav.md)
+- [object CalDAV](./caldav.md)
   The payload that configures a Calendar account.
-- [object CardDAV](carddav.md)
+- [object CardDAV](./carddav.md)
   The payload that configures a Contacts account.
-- [object GoogleAccount](googleaccount.md)
+- [object GoogleAccount](./googleaccount.md)
   The payload that configures a Google account.
-- [object MobileAccounts](mobileaccounts.md)
+- [object MobileAccounts](./mobileaccounts.md)
   The payload that configures mobile accounts on the device.
-- [object SubscribedCalendars](subscribedcalendars.md)
+- [object SubscribedCalendars](./subscribedcalendars.md)
   The payload that configures subscribed calendars.
 
 

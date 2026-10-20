@@ -1,7 +1,8 @@
 # init(supportedFeatureSet:additionalActions:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a markup edit view controller.
 

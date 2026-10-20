@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](array/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (Array<Element>, Array<Element>) -> Bool](array/==(_:_:).md)
+- [static func == (Array<Element>, Array<Element>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two arrays contain the same elements in the same order.
 
 

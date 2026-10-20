@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameters of the connection in which your protocol is running.
 
@@ -22,9 +23,10 @@ final var parameters: NWParameters? { get }
 
 ## See Also
 
-- [var remote: NWEndpoint?](nwprotocolframer/instance/remote.md)
+### Inspecting Instance Properties
+- [var remote: NWEndpoint?](./remote.md)
   The remote endpoint of the connection in which your protocol is running.
-- [var local: NWEndpoint?](nwprotocolframer/instance/local.md)
+- [var local: NWEndpoint?](./local.md)
   The local endpoint of the connection in which your protocol is running.
 
 

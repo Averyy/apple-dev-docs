@@ -1,7 +1,8 @@
 # Query Budget Orders
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Returns a filtered, sorted, and paginated list of budget orders.
 
@@ -12,9 +13,9 @@ Returns a filtered, sorted, and paginated list of budget orders.
 
 This endpoint finds budget orders by name, status, or date range, or retrieves them across an ad account. Narrow and order the result set with `filters`, `sorting`, and `pagination`.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-Users with organization-level permissions don’t need the `X-AP-Context` header. Users limited to specific ad accounts must send it. See [`Budget Orders Endpoints`](budget-orders-endpoints.md).
+Users with organization-level permissions don’t need the `X-AP-Context` header. Users limited to specific ad accounts must send it. See [Budget Orders Endpoints](./budget-orders-endpoints.md).
 
 ##### Filterable Fields
 
@@ -25,14 +26,14 @@ Users with organization-level permissions don’t need the `X-AP-Context` header
 | `name` | string | `EQUALS`, `IN`, `LIKE`, `STARTS_WITH`, `ENDS_WITH` | Yes | The budget order’s display name. |
 | `orgId` | integer | `EQUALS` |  | The organization that owns the budget order. |
 | `adAccountIds` | array of integers | `EQUALS`, `IN` |  | The ad accounts the budget order is assigned to. |
-| `systemStatus` | string (enum) | `EQUALS`, `IN` |  | The budget order’s current status. See [`BudgetSystemStatus`](budgetsystemstatus.md). |
-| `systemStatusReasons` | array of strings (enum) | `CONTAINS_ANY`, `CONTAINS_ALL`, `NOT_CONTAINS_ANY`, `NOT_CONTAINS_ALL`, `IS_NULL`, `IS_NOT_NULL` |  | Reasons contributing to the current `systemStatus`. See [`BudgetSystemStatusReason`](budgetsystemstatusreason.md). |
+| `systemStatus` | string (enum) | `EQUALS`, `IN` |  | The budget order’s current status. See [`BudgetSystemStatus`](./budgetsystemstatus.md). |
+| `systemStatusReasons` | array of strings (enum) | `CONTAINS_ANY`, `CONTAINS_ALL`, `NOT_CONTAINS_ANY`, `NOT_CONTAINS_ALL`, `IS_NULL`, `IS_NOT_NULL` |  | Reasons contributing to the current `systemStatus`. See [`BudgetSystemStatusReason`](./budgetsystemstatusreason.md). |
 | `startTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` |  | The budget order’s scheduled start date and time. |
 | `endTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` |  | The budget order’s scheduled end date and time. |
 | `creationTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` |  | Timestamp when the budget order was created. |
 | `modificationTime` | string (date-time) | `EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO` |  | Timestamp of the last modification to the budget order. |
 
-The `value` and `invoiceDetail` fields aren’t filterable. The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The `value` and `invoiceDetail` fields aren’t filterable. The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Payload Examples
 
@@ -133,17 +134,34 @@ Query all active budget orders for an ad account, sorted by name.
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string)
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`SharedBudgetQueryResponse`, `application/json`): Successful operation. Returns [`SharedBudgetQueryResponse`](./sharedbudgetqueryresponse.md) (`result`: array of [`SharedBudget`](./sharedbudget.md)).
+- `400` Bad Request (`ErrorResponse`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`ErrorResponse`, `application/json`): Unauthorized.
+- `403` Forbidden (`ErrorResponse`, `application/json`): Forbidden. See [Budget Orders Endpoints](./budget-orders-endpoints.md) for `X-AP-Context` requirements.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`ErrorResponse`, `application/json`): Rate Limit Exceeded. See [Applying Rate Limits](./rate-limits.md).
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Get a Budget Order by ID](get-shared-budgets-_id_.md)
+- [Get a Budget Order by ID](./get-shared-budgets-_id_.md)
   Retrieves a single budget order by its ID.
-- [Create a Budget Order](post-shared-budgets.md)
+- [Create a Budget Order](./post-shared-budgets.md)
   Creates a budget order that can be assigned to campaigns within an ad account.
-- [Update a Budget Order](put-shared-budgets-_id_.md)
+- [Update a Budget Order](./put-shared-budgets-_id_.md)
   Updates mutable fields of an existing budget order by its unique identifier.
-- [Delete a Budget Order](delete-shared-budgets-_id_.md)
+- [Delete a Budget Order](./delete-shared-budgets-_id_.md)
   Soft-deletes a budget order by its unique identifier.
 
 

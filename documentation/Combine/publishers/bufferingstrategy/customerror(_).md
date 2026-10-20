@@ -1,7 +1,8 @@
 # Publishers.BufferingStrategy.customError(_:)
 
 **Framework**: Combine  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 When the buffer is full, execute the closure to provide a custom error.
 
@@ -22,9 +23,10 @@ case customError(() -> Failure)
 
 ## See Also
 
-- [Publishers.BufferingStrategy.dropNewest](publishers/bufferingstrategy/dropnewest.md)
+### Buffering strategies
+- [Publishers.BufferingStrategy.dropNewest](./dropnewest.md)
   When the buffer is full, discard the newly received element.
-- [Publishers.BufferingStrategy.dropOldest](publishers/bufferingstrategy/dropoldest.md)
+- [Publishers.BufferingStrategy.dropOldest](./dropoldest.md)
   When the buffer is full, discard the oldest element in the buffer.
 
 

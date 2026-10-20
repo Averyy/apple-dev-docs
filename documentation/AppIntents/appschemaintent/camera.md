@@ -1,7 +1,8 @@
 # camera
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the camera domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the camera domain.
 ```swift
 static var camera: some AppSchema.CameraIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

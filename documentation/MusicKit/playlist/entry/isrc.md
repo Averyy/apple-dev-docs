@@ -1,7 +1,8 @@
 # isrc
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The International Standard Recording Code (ISRC) for the playlist entry.
 

@@ -1,7 +1,8 @@
 # kMEFormatReaderFileNameExtensionArrayKey
 
 **Framework**: MediaExtension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to the array of file extensions that the format reader plug-in supports.
 
@@ -15,15 +16,20 @@ A key to the array of file extensions that the format reader plug-in supports.
 var kMEFormatReaderFileNameExtensionArrayKey: String { get }
 ```
 
+```c
+#define kMEFormatReaderFileNameExtensionArrayKey
+```
+
 ## See Also
 
-- [var kMEFormatReaderClassImplementationIDKey: String](kmeformatreaderclassimplementationidkey.md)
+### Property list keys
+- [var kMEFormatReaderClassImplementationIDKey: String](./kmeformatreaderclassimplementationidkey.md)
   The unique identifier for the format reader.
-- [var kMEFormatReaderExtensionPointName: String](kmeformatreaderextensionpointname.md)
+- [var kMEFormatReaderExtensionPointName: String](./kmeformatreaderextensionpointname.md)
   A key to the extension point name for format readers.
-- [var kMEFormatReaderUTTypeArrayKey: String](kmeformatreaderuttypearraykey.md)
+- [var kMEFormatReaderUTTypeArrayKey: String](./kmeformatreaderuttypearraykey.md)
   A key to the array of Uniform Type Identifiers that the format reader supports.
-- [var kMEFormatReaderObjectNameKey: String](kmeformatreaderobjectnamekey.md)
+- [var kMEFormatReaderObjectNameKey: String](./kmeformatreaderobjectnamekey.md)
   A user-readable string describing the format reader.
 
 

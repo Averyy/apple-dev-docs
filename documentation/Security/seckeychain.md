@@ -1,7 +1,8 @@
 # SecKeychain
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque type that represents a keychain.
 
@@ -14,11 +15,15 @@ An opaque type that represents a keychain.
 class SecKeychain
 ```
 
+```c
+typedef struct __SecKeychain * SecKeychainRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

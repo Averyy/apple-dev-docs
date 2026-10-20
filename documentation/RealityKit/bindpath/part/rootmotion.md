@@ -1,7 +1,8 @@
 # BindPath.Part.rootMotion
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies a sampled transform animation as root motion for its target entity.
 

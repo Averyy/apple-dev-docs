@@ -1,7 +1,8 @@
 # init(cString:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string from the null-terminated, UTF-8 encoded sequence of bytes at the given pointer.
 

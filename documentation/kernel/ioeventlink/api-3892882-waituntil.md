@@ -1,14 +1,15 @@
 # WaitUntil
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.1+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t WaitUntil(uint64_t clockOptions, uint64_t timeout, uint64_t *signalsConsumed);
 ```
 

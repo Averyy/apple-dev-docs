@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct xinpcb {
     ...
 };
@@ -17,10 +17,10 @@ struct xinpcb {
 ## Topics
 
 ### Instance Properties
-- [xi_alignment_hack](xinpcb/3754381-xi_alignment_hack.md)
-- [xi_inp](xinpcb/3754382-xi_inp.md)
-- [xi_len](xinpcb/3754383-xi_len.md)
-- [xi_socket](xinpcb/3754384-xi_socket.md)
+- [xi_alignment_hack](./xinpcb/api-3754381-xi_alignment_hack.md)
+- [xi_inp](./xinpcb/api-3754382-xi_inp.md)
+- [xi_len](./xinpcb/api-3754383-xi_len.md)
+- [xi_socket](./xinpcb/api-3754384-xi_socket.md)
 
 
 ---

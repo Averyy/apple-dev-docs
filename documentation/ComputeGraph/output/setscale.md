@@ -1,13 +1,14 @@
 # output::setScale
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the scale factor of the rendered output.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::setScale(float2 scale)
 
 This function applies a scale transformation to the rendered particle output, allowing independent control of horizontal and vertical scaling. This affects only the rendered appearance and does not modify the particle itself.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__setScale.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__setScale.svg)
 
 ## Parameters
 

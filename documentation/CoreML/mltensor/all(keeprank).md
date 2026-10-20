@@ -1,7 +1,8 @@
 # all(keepRank:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes logical AND on elements across all axes of a tensor where the scalar type of the tensor is expected to be Boolean.
 
@@ -30,7 +31,8 @@ The reduced Boolean tensor.
 
 ## See Also
 
-- [func all(alongAxes:keepRank:)](mltensor/all(alongaxes:keeprank:).md)
+### Performing a logical AND operation
+- [func all(alongAxes:keepRank:)](./all%28alongaxes,keeprank%29.md)
   Computes logical AND on elements across the specified axes of a tensor where the scalar type of the tensor is expected to be Boolean.
 
 

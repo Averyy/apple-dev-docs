@@ -1,7 +1,8 @@
 # makePayload(ownershipToken:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Builds an accessory setup payload with the given ownership token.
 
@@ -17,9 +18,13 @@ Builds an accessory setup payload with the given ownership token.
 func makePayload(ownershipToken: HMAccessoryOwnershipToken) -> HMAccessorySetupPayload?
 ```
 
+```objc
+- (HMAccessorySetupPayload *) payloadWithOwnershipToken:(HMAccessoryOwnershipToken *) ownershipToken;
+```
+
 #### Return Value
 
-An accessory setup payload that you use to add the accessory. The method fails and returns `nil` if the request’s [`requiresSetupPayloadURL`](hmaddaccessoryrequest/requiressetuppayloadurl.md) property is `true`. In that case, use [`makePayload(url:ownershipToken:)`](hmaddaccessoryrequest/makepayload(url:ownershiptoken:).md) instead.
+An accessory setup payload that you use to add the accessory. The method fails and returns `nil` if the request’s [`requiresSetupPayloadURL`](./requiressetuppayloadurl.md) property is `true`. In that case, use [`makePayload(url:ownershipToken:)`](./makepayload%28url,ownershiptoken%29.md) instead.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ An accessory setup payload that you use to add the accessory. The method fails a
 
 ## See Also
 
-- [func makePayload(url: URL, ownershipToken: HMAccessoryOwnershipToken) -> HMAccessorySetupPayload?](hmaddaccessoryrequest/makepayload(url:ownershiptoken:).md)
+### Creating a Payload
+- [func makePayload(url: URL, ownershipToken: HMAccessoryOwnershipToken) -> HMAccessorySetupPayload?](./makepayload%28url,ownershiptoken%29.md)
   Builds an accessory setup payload with the given setup payload URL and ownership token.
 
 

@@ -1,7 +1,8 @@
 # cm32_16ColorPacking
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The color values for two 16-bit color channels are stored in a 32-bit word.
 

@@ -1,7 +1,8 @@
 # PKIssuerProvisioningExtensionAuthorizationProviding
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for a UI app extension to authorize a user to add a payment card to Wallet.
 
@@ -17,6 +18,10 @@ A protocol for a UI app extension to authorize a user to add a payment card to W
 protocol PKIssuerProvisioningExtensionAuthorizationProviding : NSObjectProtocol
 ```
 
+```objc
+@protocol PKIssuerProvisioningExtensionAuthorizationProviding <NSObject>
+```
+
 #### Overview
 
 The principal class of your app’s authorization user interface extension target must conform to the `PKIssuerProvisioningExtensionAuthorizationProviding` protocol.
@@ -26,21 +31,22 @@ The principal class of your app’s authorization user interface extension targe
 ## Topics
 
 ### Providing the result of authorization
-- [var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Void)?](pkissuerprovisioningextensionauthorizationproviding/completionhandler.md)
+- [var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Void)?](./pkissuerprovisioningextensionauthorizationproviding/completionhandler.md)
   A completion handler the system calls to find the result of authorizing the addition of the payment card.
-- [enum PKIssuerProvisioningExtensionAuthorizationResult](pkissuerprovisioningextensionauthorizationresult.md)
+- [enum PKIssuerProvisioningExtensionAuthorizationResult](./pkissuerprovisioningextensionauthorizationresult.md)
   A value that indicates the result of authorizing the addition of a payment card.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Implementing Wallet Extensions](implementing-wallet-extensions.md)
+### Issuer cards
+- [Implementing Wallet Extensions](./implementing-wallet-extensions.md)
   Support adding an issued card to Apple Pay from directly within Apple Wallet using Wallet Extensions.
-- [class PKIssuerProvisioningExtensionHandler](pkissuerprovisioningextensionhandler.md)
+- [class PKIssuerProvisioningExtensionHandler](./pkissuerprovisioningextensionhandler.md)
   An abstract superclass for an app extension to add a payment card to Wallet.
 
 

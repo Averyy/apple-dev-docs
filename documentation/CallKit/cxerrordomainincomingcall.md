@@ -1,7 +1,8 @@
 # CXErrorDomainIncomingCall
 
 **Framework**: CallKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for errors that occur during incoming calls.
 
@@ -18,25 +19,30 @@ The domain for errors that occur during incoming calls.
 let CXErrorDomainIncomingCall: String
 ```
 
+```c
+extern NSErrorDomain const CXErrorDomainIncomingCall;
+```
+
 #### Discussion
 
-See [`CXProvider`](cxprovider.md) for possible error codes.
+See [`CXProvider`](./cxprovider.md) for possible error codes.
 
 ## See Also
 
-- [enum CXCallEndedReason](cxcallendedreason.md)
+### Handling Errors
+- [enum CXCallEndedReason](./cxcallendedreason.md)
   The reason that a call ended.
-- [struct CXError](cxerror.md)
+- [struct CXError](./cxerror.md)
   Error codes for the CallKit errors.
-- [CXError.Code](cxerror/code.md)
+- [CXError.Code](./cxerror/code.md)
   Error codes for the CallKit errors.
-- [struct CXErrorCodeIncomingCallError](cxerrorcodeincomingcallerror-swift.struct.md)
+- [struct CXErrorCodeIncomingCallError](./cxerrorcodeincomingcallerror-swift.struct.md)
   Codes for errors that occur during incoming calls.
-- [CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/code.md)
+- [CXErrorCodeIncomingCallError.Code](./cxerrorcodeincomingcallerror-swift.struct/code.md)
   Codes for errors that occur during incoming calls.
-- [struct CXErrorCodeNotificationServiceExtensionError](cxerrorcodenotificationserviceextensionerror-swift.struct.md)
+- [struct CXErrorCodeNotificationServiceExtensionError](./cxerrorcodenotificationserviceextensionerror-swift.struct.md)
   Errors that can occur when reporting new, incoming VoIP calls.
-- [let CXErrorDomain: String](cxerrordomain.md)
+- [let CXErrorDomain: String](./cxerrordomain.md)
   The domain for CallKit errors.
 
 

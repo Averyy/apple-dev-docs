@@ -2,16 +2,17 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Called when a dynamic animator needs the bounds of the dynamic item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ Called when a dynamic animator needs the bounds of the dynamic item.
 var bounds: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect bounds;
+```
+
 ## See Also
 
-- [var center: CGPoint](uidynamicitem/center.md)
+### Participating in dynamic animation
+- [var center: CGPoint](./center.md)
   The center point of the dynamic item.
-- [var transform: CGAffineTransform](uidynamicitem/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The rotation of the dynamic item.
-- [var collisionBoundsType: UIDynamicItemCollisionBoundsType](uidynamicitem/collisionboundstype.md)
+- [var collisionBoundsType: UIDynamicItemCollisionBoundsType](./collisionboundstype.md)
   The type of collision bounds associated with the item.
-- [var collisionBoundingPath: UIBezierPath](uidynamicitem/collisionboundingpath.md)
+- [var collisionBoundingPath: UIBezierPath](./collisionboundingpath.md)
   The path-based shape to use for the collision bounds.
 
 

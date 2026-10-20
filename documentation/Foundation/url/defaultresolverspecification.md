@@ -1,7 +1,8 @@
 # defaultResolverSpecification
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default resolver specification that the App Intents framework uses.
 
@@ -26,11 +27,12 @@ Don’t use this property directly. The App Intents framework uses it.
 
 ## See Also
 
-- [typealias Specification](url/specification.md)
+### App Intents support
+- [typealias Specification](./specification.md)
   The specification type for conforming with App Intents.
-- [typealias UnwrappedType](url/unwrappedtype.md)
+- [typealias UnwrappedType](./unwrappedtype.md)
   The core type for conforming with App Intents.
-- [typealias ValueType](url/valuetype.md)
+- [typealias ValueType](./valuetype.md)
   The value type for conforming with App Intents.
 
 

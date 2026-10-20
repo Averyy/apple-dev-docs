@@ -1,7 +1,8 @@
 # OSString
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 OSString wraps a C string in a C++ object for use in Libkern collections.
 
@@ -10,7 +11,7 @@ OSString wraps a C string in a C++ object for use in Libkern collections.
 
 ## Declaration
 
-```swift
+```cpp
 class OSString : OSObject
 ```
 
@@ -35,81 +36,82 @@ OSString provides no concurrency protection; it's up to the usage context to pro
 ## Topics
 
 ### Miscellaneous
-- [free](osstring/1808271-free.md)
+- [free](./osstring/api-1808271-free.md)
   Deallocates or releases any resources used by the OSString instance.
-- [getChar](osstring/1808273-getchar.md)
+- [getChar](./osstring/api-1808273-getchar.md)
   Returns the character at a given index in the string object.
-- [getCStringNoCopy](osstring/1808275-getcstringnocopy.md)
+- [getCStringNoCopy](./osstring/api-1808275-getcstringnocopy.md)
   Returns a pointer to the internal C string buffer.
-- [getLength](osstring/1808278-getlength.md)
+- [getLength](./osstring/api-1808278-getlength.md)
   Returns the number of characters in the OSString object.
-- [initWithCString](osstring/1808281-initwithcstring.md)
+- [initWithCString](./osstring/api-1808281-initwithcstring.md)
   Initializes an OSString from a C string.
-- [initWithCStringNoCopy](osstring/1808284-initwithcstringnocopy.md)
+- [initWithCStringNoCopy](./osstring/api-1808284-initwithcstringnocopy.md)
   Initializes an immutable OSString to share the provided C string buffer.
-- [initWithString](osstring/1808286-initwithstring.md)
+- [initWithString](./osstring/api-1808286-initwithstring.md)
   Initializes an OSString from another OSString.
-- [isEqualTo(const char *)](osstring/1808288-isequalto.md)
+- [isEqualTo(const char *)](./osstring/api-1808288-isequalto.md)
   Tests the equality of an OSString object with a C string.
-- [isEqualTo(const OSData *)](osstring/1808292-isequalto.md)
+- [isEqualTo(const OSData *)](./osstring/api-1808292-isequalto.md)
   Tests the equality of an OSData object and the OSString instance.
-- [isEqualTo(const OSMetaClassBase *)](osstring/1808295-isequalto.md)
+- [isEqualTo(const OSMetaClassBase *)](./osstring/api-1808295-isequalto.md)
   Tests the equality of an OSString object to an arbitrary object.
-- [isEqualTo(const OSString *)](osstring/1808297-isequalto.md)
+- [isEqualTo(const OSString *)](./osstring/api-1808297-isequalto.md)
   Tests the equality of two OSString objects.
-- [serialize](osstring/1808298-serialize.md)
+- [serialize](./osstring/api-1808298-serialize.md)
   Archives the receiver into the provided OSSerialize object.
-- [setChar](osstring/1808300-setchar.md)
+- [setChar](./osstring/api-1808300-setchar.md)
   Replaces a character at a given index in the string object.
-- [withCString](osstring/1808301-withcstring.md)
+- [withCString](./osstring/api-1808301-withcstring.md)
   Creates and initializes an OSString from a C string.
-- [withCStringNoCopy](osstring/1808304-withcstringnocopy.md)
+- [withCStringNoCopy](./osstring/api-1808304-withcstringnocopy.md)
   Creates and initializes an immutable OSString that shares the provided C string buffer.
-- [withString](osstring/1808306-withstring.md)
+- [withString](./osstring/api-1808306-withstring.md)
   Creates and initializes an OSString from another OSString.
 ### Instance Methods
-- [- free](osstring/3180973-free.md)
-- [- getCStringNoCopy](osstring/3180974-getcstringnocopy.md)
+- [- free](./osstring/api-3180973-free.md)
+- [- getCStringNoCopy](./osstring/api-3180974-getcstringnocopy.md)
   Returns a pointer to the OSString object's internal data buffer.
-- [- getChar](osstring/1490409-getchar.md)
-- [- getLength](osstring/3180975-getlength.md)
+- [- getChar](./osstring/api-1490409-getchar.md)
+- [- getLength](./osstring/api-3180975-getlength.md)
   Returns length of string not including null terminator.
-- [- getMetaClass](osstring/1490433-getmetaclass.md)
-- [- initWithCString](osstring/1490404-initwithcstring.md)
-- [- initWithCStringNoCopy](osstring/1490434-initwithcstringnocopy.md)
-- [- initWithString](osstring/1490425-initwithstring.md)
-- [- isEqualTo](osstring/3180976-isequalto.md)
+- [- getMetaClass](./osstring/api-1490433-getmetaclass.md)
+- [- initWithCString](./osstring/api-1490404-initwithcstring.md)
+- [- initWithCStringNoCopy](./osstring/api-1490434-initwithcstringnocopy.md)
+- [- initWithString](./osstring/api-1490425-initwithstring.md)
+- [- isEqualTo](./osstring/api-3180976-isequalto.md)
   Compares the string with an OSString.
-- [- isEqualTo](osstring/3433852-isequalto.md)
+- [- isEqualTo](./osstring/api-3433852-isequalto.md)
   Compares the string with an OSData.
-- [- isEqualTo](osstring/3433853-isequalto.md)
+- [- isEqualTo](./osstring/api-3433853-isequalto.md)
   Compares the string with a c-string.
-- [- isEqualTo](osstring/3434577-isequalto.md)
+- [- isEqualTo](./osstring/api-3434577-isequalto.md)
   Compares the string with an OSObject
-- [- serialize](osstring/1490429-serialize.md)
-- [- setChar](osstring/1490414-setchar.md)
+- [- serialize](./osstring/api-1490429-serialize.md)
+- [- setChar](./osstring/api-1490414-setchar.md)
 ### Type Methods
-- [+ withCString](osstring/3180977-withcstring.md)
+- [+ withCString](./osstring/api-3180977-withcstring.md)
   Allocates an OSString object with a copy of a c-string.
-- [+ withCString](osstring/3433854-withcstring.md)
+- [+ withCString](./osstring/api-3433854-withcstring.md)
   Allocates an OSString object with a copy of a c-string, up to a given length.
-- [+ withCStringNoCopy](osstring/3180978-withcstringnocopy.md)
+- [+ withCStringNoCopy](./osstring/api-3180978-withcstringnocopy.md)
   Allocates an OSString object with a copy of a c-string.
-- [+ withString](osstring/3180979-withstring.md)
+- [+ withString](./osstring/api-3180979-withstring.md)
   Allocates an OSString object with a copy of an OString object.
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [OSBoolean](osboolean.md)
+### Simple Types
+- [OSBoolean](./osboolean.md)
   OSBoolean wraps a boolean value in a C++ object for use in Libkern collections.
-- [OSNumber](osnumber.md)
+- [OSNumber](./osnumber.md)
   OSNumber wraps an integer value in a C++ object for use in Libkern collections.
-- [OSData](osdata.md)
+- [OSData](./osdata.md)
   OSData wraps an array of bytes in a C++ object for use in Libkern collections.
 
 

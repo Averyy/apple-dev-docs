@@ -1,7 +1,8 @@
 # Keyword.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable serving state for this keyword.
 
@@ -10,13 +11,18 @@ Advertiser-configurable serving state for this keyword.
 
 ## Declaration
 
-```swift
+```
 string Keyword.Status
 ```
 
+## Possible Values
+
+- `ENABLED`: Keyword is active and eligible to serve.
+- `PAUSED`: Keyword is paused and will not serve.
+
 #### Discussion
 
-This field controls auction eligibility directly, separate from the system-computed factors reflected in [`Keyword.DisplayStatus`](keyword/displaystatus-data.typealias.md).
+This field controls auction eligibility directly, separate from the system-computed factors reflected in [`Keyword.DisplayStatus`](./displaystatus-data.typealias.md).
 
 ##### Example
 
@@ -26,7 +32,7 @@ This field controls auction eligibility directly, separate from the system-compu
 }
 ```
 
-See [`KeywordStatus`](keywordstatus.md) for additional context.
+See [`KeywordStatus`](../keywordstatus.md) for additional context.
 
 
 ---

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total amount of data uploaded over the cellular connection.
 

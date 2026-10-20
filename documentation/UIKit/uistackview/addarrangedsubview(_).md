@@ -1,7 +1,8 @@
 # addArrangedSubview(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a view to the end of the arranged subviews array.
 
@@ -18,9 +19,13 @@ Adds a view to the end of the arranged subviews array.
 func addArrangedSubview(_ view: UIView)
 ```
 
+```objc
+- (void) addArrangedSubview:(UIView *) view;
+```
+
 #### Discussion
 
-The stack view ensures that the [`arrangedSubviews`](uistackview/arrangedsubviews.md) array is always a subset of its [`subviews`](uiview/subviews.md) array. This method automatically adds the provided view as a subview of the stack view, if it isn’t already. If the view is already a subview, this operation doesn’t alter the subview ordering.
+The stack view ensures that the [`arrangedSubviews`](./arrangedsubviews.md) array is always a subset of its [`subviews`](../uiview/subviews.md) array. This method automatically adds the provided view as a subview of the stack view, if it isn’t already. If the view is already a subview, this operation doesn’t alter the subview ordering.
 
 ## Parameters
 
@@ -28,15 +33,17 @@ The stack view ensures that the [`arrangedSubviews`](uistackview/arrangedsubview
 
 ## See Also
 
-- [func removeFromSuperview()](uiview/removefromsuperview.md)
+### Related Documentation
+- [func removeFromSuperview()](../uiview/removefromsuperview%28%29.md)
   Unlinks the view from its superview and its window, and removes it from the responder chain.
-- [convenience init(arrangedSubviews: [UIView])](uistackview/init(arrangedsubviews:).md)
+- [convenience init(arrangedSubviews: [UIView])](./init%28arrangedsubviews%29.md)
   Returns a new stack view object that manages the provided views.
-- [var arrangedSubviews: [UIView]](uistackview/arrangedsubviews.md)
+### Managing arranged subviews
+- [var arrangedSubviews: [UIView]](./arrangedsubviews.md)
   The list of views arranged by the stack view.
-- [func insertArrangedSubview(UIView, at: Int)](uistackview/insertarrangedsubview(_:at:).md)
+- [func insertArrangedSubview(UIView, at: Int)](./insertarrangedsubview%28_,at%29.md)
   Adds the provided view to the array of arranged subviews at the specified index.
-- [func removeArrangedSubview(UIView)](uistackview/removearrangedsubview(_:).md)
+- [func removeArrangedSubview(UIView)](./removearrangedsubview%28_%29.md)
   Removes the provided view from the stack’s array of arranged subviews.
 
 

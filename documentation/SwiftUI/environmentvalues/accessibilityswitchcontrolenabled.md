@@ -1,7 +1,8 @@
 # accessibilitySwitchControlEnabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the Switch Control motor accessibility feature is in use.
 
@@ -26,33 +27,34 @@ The state changes as the user turns on or off the Switch Control feature.
 
 ## See Also
 
-- [var accessibilityAssistiveAccessEnabled: Bool](environmentvalues/accessibilityassistiveaccessenabled.md)
+### Accessibility
+- [var accessibilityAssistiveAccessEnabled: Bool](./accessibilityassistiveaccessenabled.md)
   A Boolean value that indicates whether Assistive Access is in use.
-- [var accessibilityDimFlashingLights: Bool](environmentvalues/accessibilitydimflashinglights.md)
+- [var accessibilityDimFlashingLights: Bool](./accessibilitydimflashinglights.md)
   Whether the setting to reduce flashing or strobing lights in video content is on. This setting can also be used to determine if UI in playback controls should be shown to indicate upcoming content that includes flashing or strobing lights.
-- [var accessibilityDifferentiateWithoutColor: Bool](environmentvalues/accessibilitydifferentiatewithoutcolor.md)
+- [var accessibilityDifferentiateWithoutColor: Bool](./accessibilitydifferentiatewithoutcolor.md)
   Whether the system preference for Differentiate without Color is enabled.
-- [var accessibilityEnabled: Bool](environmentvalues/accessibilityenabled.md)
+- [var accessibilityEnabled: Bool](./accessibilityenabled.md)
   A Boolean value that indicates whether the user has enabled an assistive technology.
-- [var accessibilityInvertColors: Bool](environmentvalues/accessibilityinvertcolors.md)
+- [var accessibilityInvertColors: Bool](./accessibilityinvertcolors.md)
   Whether the system preference for Invert Colors is enabled.
-- [var accessibilityLargeContentViewerEnabled: Bool](environmentvalues/accessibilitylargecontentviewerenabled.md)
+- [var accessibilityLargeContentViewerEnabled: Bool](./accessibilitylargecontentviewerenabled.md)
   Whether the Large Content Viewer is enabled.
-- [var accessibilityPlayAnimatedImages: Bool](environmentvalues/accessibilityplayanimatedimages.md)
+- [var accessibilityPlayAnimatedImages: Bool](./accessibilityplayanimatedimages.md)
   Whether the setting for playing animations in an animated image is on. When this value is false, any presented image that contains animation should not play automatically.
-- [var accessibilityPrefersHeadAnchorAlternative: Bool](environmentvalues/accessibilityprefersheadanchoralternative.md)
+- [var accessibilityPrefersHeadAnchorAlternative: Bool](./accessibilityprefersheadanchoralternative.md)
   Whether the system setting to prefer alternatives to head-anchored content is on.
-- [var accessibilityPrefersCrossFadeTransitions: Bool](environmentvalues/accessibilitypreferscrossfadetransitions.md)
+- [var accessibilityPrefersCrossFadeTransitions: Bool](./accessibilitypreferscrossfadetransitions.md)
   A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state.
-- [var accessibilityQuickActionsEnabled: Bool](environmentvalues/accessibilityquickactionsenabled.md)
+- [var accessibilityQuickActionsEnabled: Bool](./accessibilityquickactionsenabled.md)
   A Boolean that indicates whether the quick actions feature is enabled.
-- [var accessibilityReduceMotion: Bool](environmentvalues/accessibilityreducemotion.md)
+- [var accessibilityReduceMotion: Bool](./accessibilityreducemotion.md)
   Whether the system preference for Reduce Motion is enabled.
-- [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)
+- [var accessibilityReduceTransparency: Bool](./accessibilityreducetransparency.md)
   Whether the system preference for Reduce Transparency is enabled.
-- [var accessibilityVoiceOverEnabled: Bool](environmentvalues/accessibilityvoiceoverenabled.md)
+- [var accessibilityVoiceOverEnabled: Bool](./accessibilityvoiceoverenabled.md)
   A Boolean value that indicates whether the VoiceOver screen reader is in use.
-- [var legibilityWeight: LegibilityWeight?](environmentvalues/legibilityweight.md)
+- [var legibilityWeight: LegibilityWeight?](./legibilityweight.md)
   The font weight to apply to text.
 
 

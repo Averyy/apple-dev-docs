@@ -1,17 +1,18 @@
 # subtitleLocalizationKey
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key that identifies the localized string for the notification’s subtitle.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 11.0+ - Deprecated in 17.0
+- iPadOS 11.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- macOS 10.13+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 4.0+ - Deprecated in 10.0
 
 ## Declaration
 
@@ -19,41 +20,46 @@ The key that identifies the localized string for the notification’s subtitle.
 var subtitleLocalizationKey: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * subtitleLocalizationKey;
+```
+
 #### Discussion
 
-This property takes precedence over [`subtitle`](cknotification/subtitle.md).
+This property takes precedence over [`subtitle`](./subtitle.md).
 
 ## See Also
 
-- [var alertBody: String?](cknotification/alertbody.md)
+### Accessing the Notification Info
+- [var alertBody: String?](./alertbody.md)
   The notification’s alert body.
-- [var alertLocalizationKey: String?](cknotification/alertlocalizationkey.md)
+- [var alertLocalizationKey: String?](./alertlocalizationkey.md)
   The key that identifies the localized text for the alert body.
-- [var alertLocalizationArgs: [String]?](cknotification/alertlocalizationargs.md)
+- [var alertLocalizationArgs: [String]?](./alertlocalizationargs.md)
   The fields for building a notification’s alert.
-- [var alertActionLocalizationKey: String?](cknotification/alertactionlocalizationkey.md)
+- [var alertActionLocalizationKey: String?](./alertactionlocalizationkey.md)
   The key that identifies the localized string for the notification’s action.
-- [var alertLaunchImage: String?](cknotification/alertlaunchimage.md)
+- [var alertLaunchImage: String?](./alertlaunchimage.md)
   The filename of an image to use as a launch image.
-- [var soundName: String?](cknotification/soundname.md)
+- [var soundName: String?](./soundname.md)
   The name of the sound file to play when a notification arrives.
-- [var badge: NSNumber?](cknotification/badge.md)
+- [var badge: NSNumber?](./badge.md)
   The value that the app icon’s badge displays.
-- [var category: String?](cknotification/category.md)
+- [var category: String?](./category.md)
   The name of the action group that corresponds to this notification.
-- [var subscriptionID: CKSubscription.ID?](cknotification/subscriptionid-16ygj.md)
+- [var subscriptionID: CKSubscription.ID?](./subscriptionid-16ygj.md)
   The ID of the subscription that triggers the notification.
-- [var subscriptionOwnerUserRecordID: CKRecord.ID?](cknotification/subscriptionowneruserrecordid.md)
+- [var subscriptionOwnerUserRecordID: CKRecord.ID?](./subscriptionowneruserrecordid.md)
   The ID of the user record that creates the subscription that generates the push notification.
-- [var title: String?](cknotification/title.md)
+- [var title: String?](./title.md)
   The notification’s title.
-- [var titleLocalizationKey: String?](cknotification/titlelocalizationkey.md)
+- [var titleLocalizationKey: String?](./titlelocalizationkey.md)
   The key that identifies the localized string for the notification’s title.
-- [var titleLocalizationArgs: [String]?](cknotification/titlelocalizationargs.md)
+- [var titleLocalizationArgs: [String]?](./titlelocalizationargs.md)
   The fields for building a notification’s title.
-- [var subtitle: String?](cknotification/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The notification’s subtitle.
-- [var subtitleLocalizationArgs: [String]?](cknotification/subtitlelocalizationargs.md)
+- [var subtitleLocalizationArgs: [String]?](./subtitlelocalizationargs.md)
   The fields for building a notification’s subtitle.
 
 

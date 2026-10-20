@@ -1,7 +1,8 @@
 # computeNorm(input:output:axes:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Computes the Euclidean norm and writes the result to the output tensor.
 
@@ -11,8 +12,10 @@ Computes the Euclidean norm and writes the result to the output tensor.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -44,7 +47,7 @@ let input = BNNSNDArrayDescriptor.allocate(
     shape: .imageCHW(3, 2, 4))
 ```
 
-Define the `axes` parameter as either `[0, 1, 2]` or `nil` to specify that the operation computes the norm of the entire tensor. In this case, the norm is a scalar value, and the destination’s data layout must be a [`BNNS.DataLayout.vector`](bnns/datalayout/vector.md) with a size of `1`.
+Define the `axes` parameter as either `[0, 1, 2]` or `nil` to specify that the operation computes the norm of the entire tensor. In this case, the norm is a scalar value, and the destination’s data layout must be a [`BNNS.DataLayout.vector`](./datalayout/vector.md) with a size of `1`.
 
 ```swift
 let output = BNNSNDArrayDescriptor.allocateUninitialized(
@@ -61,7 +64,7 @@ print(output.makeArray(of: Float.self)!)
 
 On return, the output descriptor contains a single value that is the square root of the sum of squares of each element in the tensor:
 
-![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates a single value for the norm of the entire tensor.](/images/com.apple.accelerate/media-3786765@2x.png)
+![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates a single value for the norm of the entire tensor.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3786765@2x.png)
 
 Specify an `axes` of `[2]` to compute the norms along the second axis. In this case, the destination must be a matrix with a size that matches the zeroth and first dimensions of the source tensor:
 
@@ -82,7 +85,7 @@ print(output.makeArray(of: Float.self)!)
 
 On return, the output descriptor contains six values that are the norms of the slices along the second axis of the input tensor:
 
-![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates separate norms for the six 4-element vectors along the channel axis.](/images/com.apple.accelerate/media-3786768@2x.png)
+![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates separate norms for the six 4-element vectors along the channel axis.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3786768@2x.png)
 
 To compute the norm along more that one dimension, define the destination tensor with a size of the dimensions you’re not calculating over. For example, the following code defines an `axes` with a value of `[0, 2]` to compute the norm of dimensions zero and two:
 
@@ -101,7 +104,7 @@ print(output.makeArray(of: Float.self)!)
 
 On return, the output descriptor contains two values that are the norms of the top and bottom slices of the input tensor:
 
-![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates separate norms for the pair of three-by-four matrices defined by the channel axis and the width axis.](/images/com.apple.accelerate/media-3786762@2x.png)
+![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates separate norms for the pair of three-by-four matrices defined by the channel axis and the width axis.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3786762@2x.png)
 
 ## Parameters
 
@@ -111,13 +114,14 @@ On return, the output descriptor contains two values that are the norms of the t
 
 ## See Also
 
-- [static func computeNormBackward(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axes: [Int]?, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor) throws](bnns/computenormbackward(input:output:axes:outputgradient:generatinginputgradient:).md)
+### Compute norm functions
+- [static func computeNormBackward(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axes: [Int]?, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor) throws](./computenormbackward%28input,output,axes,outputgradient,generatinginputgradient%29.md)
   Backpropogates gradients for the compute norm function.
-- [func BNNSComputeNorm(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, BNNSNormType, UInt32) -> Int32](bnnscomputenorm(_:_:_:_:).md)
+- [func BNNSComputeNorm(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, BNNSNormType, UInt32) -> Int32](../bnnscomputenorm%28_,_,_,_%29.md)
   Computes the specified norm over an entire tensor or the specified axes.
-- [func BNNSComputeNormBackward(UnsafeRawPointer, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafeRawPointer, UnsafePointer<BNNSNDArrayDescriptor>, BNNSNormType, UInt32) -> Int32](bnnscomputenormbackward(_:_:_:_:_:_:).md)
+- [func BNNSComputeNormBackward(UnsafeRawPointer, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafeRawPointer, UnsafePointer<BNNSNDArrayDescriptor>, BNNSNormType, UInt32) -> Int32](../bnnscomputenormbackward%28_,_,_,_,_,_%29.md)
   Backpropogates gradients for the compute norm function.
-- [struct BNNSNormType](bnnsnormtype.md)
+- [struct BNNSNormType](../bnnsnormtype.md)
   Constants that describe norm types.
 
 

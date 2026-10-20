@@ -1,7 +1,8 @@
 # CMDroppedFrameReason.outOfBuffers
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The frame was dropped because the module providing frames is out of buffers.
 

@@ -1,7 +1,8 @@
 # data
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional data sent from the vehicle along with this continuation request. Max 64 bytes
 

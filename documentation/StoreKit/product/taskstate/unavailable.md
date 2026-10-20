@@ -1,7 +1,8 @@
 # Product.TaskState.unavailable
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The product is unavailable in the current storefront.
 
@@ -22,11 +23,12 @@ case unavailable
 
 ## See Also
 
-- [Product.TaskState.loading](product/taskstate/loading.md)
+### Task states
+- [Product.TaskState.loading](./loading.md)
   The task is loading the product in the background.
-- [Product.TaskState.success(_:)](product/taskstate/success(_:).md)
+- [Product.TaskState.success(_:)](./success%28_%29.md)
   The task successfully loaded the product.
-- [Product.TaskState.failure(_:)](product/taskstate/failure(_:).md)
+- [Product.TaskState.failure(_:)](./failure%28_%29.md)
   The task failed with an error.
 
 

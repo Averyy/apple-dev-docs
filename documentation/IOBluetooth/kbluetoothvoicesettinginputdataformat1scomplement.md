@@ -1,10 +1,11 @@
 # kBluetoothVoiceSettingInputDataFormat1sComplement
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,12 +13,17 @@
 var kBluetoothVoiceSettingInputDataFormat1sComplement: Int { get }
 ```
 
+```c
+kBluetoothVoiceSettingInputDataFormat1sComplement
+```
+
 ## See Also
 
-- [var kBluetoothVoiceSettingInputDataFormat2sComplement: Int](kbluetoothvoicesettinginputdataformat2scomplement.md)
-- [var kBluetoothVoiceSettingInputDataFormatMask: Int](kbluetoothvoicesettinginputdataformatmask.md)
-- [var kBluetoothVoiceSettingInputDataFormatSignMagnitude: Int](kbluetoothvoicesettinginputdataformatsignmagnitude.md)
-- [var kBluetoothVoiceSettingInputDataFormatUnsigned: Int](kbluetoothvoicesettinginputdataformatunsigned.md)
+### Constants
+- [var kBluetoothVoiceSettingInputDataFormat2sComplement: Int](./kbluetoothvoicesettinginputdataformat2scomplement.md)
+- [var kBluetoothVoiceSettingInputDataFormatMask: Int](./kbluetoothvoicesettinginputdataformatmask.md)
+- [var kBluetoothVoiceSettingInputDataFormatSignMagnitude: Int](./kbluetoothvoicesettinginputdataformatsignmagnitude.md)
+- [var kBluetoothVoiceSettingInputDataFormatUnsigned: Int](./kbluetoothvoicesettinginputdataformatunsigned.md)
 
 
 ---

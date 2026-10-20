@@ -1,7 +1,8 @@
 # VZNetworkBlockDeviceStorageDeviceAttachmentDelegate
 
 **Framework**: Virtualization  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods you implement to respond to changes to a network block device attachment.
 
@@ -14,22 +15,27 @@ Methods you implement to respond to changes to a network block device attachment
 protocol VZNetworkBlockDeviceStorageDeviceAttachmentDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol VZNetworkBlockDeviceStorageDeviceAttachmentDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to connectivity changes
-- [func attachment(VZNetworkBlockDeviceStorageDeviceAttachment, didEncounterError: any Error)](vznetworkblockdevicestoragedeviceattachmentdelegate/attachment(_:didencountererror:).md)
+- [func attachment(VZNetworkBlockDeviceStorageDeviceAttachment, didEncounterError: any Error)](./vznetworkblockdevicestoragedeviceattachmentdelegate/attachment%28_,didencountererror%29.md)
   The method the attachment object calls when the NBD client encounters a nonrecoverable error.
-- [func attachmentWasConnected(VZNetworkBlockDeviceStorageDeviceAttachment)](vznetworkblockdevicestoragedeviceattachmentdelegate/attachmentwasconnected(_:).md)
+- [func attachmentWasConnected(VZNetworkBlockDeviceStorageDeviceAttachment)](./vznetworkblockdevicestoragedeviceattachmentdelegate/attachmentwasconnected%28_%29.md)
   The method the attachment object calls when the NBD client successfully connects or reconnects with the server.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any VZNetworkBlockDeviceStorageDeviceAttachmentDelegate)?](vznetworkblockdevicestoragedeviceattachment/delegate.md)
+### Observing changes to the network block device
+- [var delegate: (any VZNetworkBlockDeviceStorageDeviceAttachmentDelegate)?](./vznetworkblockdevicestoragedeviceattachment/delegate.md)
   The object that receives messages about changes to the network block device attachment.
 
 

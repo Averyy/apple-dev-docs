@@ -1,6 +1,7 @@
 # Search Apps Data Objects
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Browse the response objects returned by the search apps and app details endpoints.
 
@@ -9,22 +10,23 @@ Browse the response objects returned by the search apps and app details endpoint
 
 ## Topics
 
-- [object AppInfo](appinfo.md)
+- [object AppInfo](./appinfo.md)
   A single app search result.
-- [object AppLocaleDetails](applocaledetails.md)
+- [object AppLocaleDetails](./applocaledetails.md)
   Localized content for an app’s Default Product Page.
-- [object AppsSearchResponse](appssearchresponse.md)
+- [object AppsSearchResponse](./appssearchresponse.md)
   Apps search response envelope.
-- [object AppLocaleDetailsQueryResponse](applocaledetailsqueryresponse.md)
+- [object AppLocaleDetailsQueryResponse](./applocaledetailsqueryresponse.md)
   Paginated response object for app locale detail queries.
-- [object AppSupportedLanguages](appsupportedlanguages.md)
+- [object AppSupportedLanguages](./appsupportedlanguages.md)
   App supported and default languages for an App Store country or region.
-- [object AppSupportedLanguagesQueryResponse](appsupportedlanguagesqueryresponse.md)
+- [object AppSupportedLanguagesQueryResponse](./appsupportedlanguagesqueryresponse.md)
   Paginated response object for the supported app languages query.
 
 ## See Also
 
-- [Search Apps Endpoints](search-apps-endpoints.md)
+### Search Apps
+- [Search Apps Endpoints](./search-apps-endpoints.md)
   Browse the endpoints for searching apps and retrieving app details.
 
 

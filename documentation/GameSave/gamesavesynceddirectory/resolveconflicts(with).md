@@ -1,7 +1,8 @@
 # resolveConflicts(with:)
 
 **Framework**: GameSave  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that you resolved a conflict.
 
@@ -22,7 +23,7 @@ func resolveConflicts(with version: GameSaveSyncedDirectory.Version)
 
 If you’re implementing your own conflict resolution, read all of the conflicting versions, and modify one of them to incorporate the state and changes from the others. Then call this method, passing that version.
 
-Call this method only when the directory is in the [`GameSaveSyncedDirectory.State.conflicted(versions:)`](gamesavesynceddirectory/state-swift.enum/conflicted(versions:).md) state.
+Call this method only when the directory is in the [`GameSaveSyncedDirectory.State.conflicted(versions:)`](./state-swift.enum/conflicted%28versions%29.md) state.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Call this method only when the directory is in the [`GameSaveSyncedDirectory.Sta
 
 ## See Also
 
-- [GameSaveSyncedDirectory.Version](gamesavesynceddirectory/version.md)
+### Resolving conflicts
+- [GameSaveSyncedDirectory.Version](./version.md)
   A representation of a version of the directory.
 
 

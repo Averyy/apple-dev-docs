@@ -1,7 +1,8 @@
 # escapedPattern(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a string by adding backslash escapes as necessary to protect any characters that would match as pattern metacharacters.
 
@@ -20,6 +21,10 @@ Returns a string by adding backslash escapes as necessary to protect any charact
 class func escapedPattern(for string: String) -> String
 ```
 
+```objc
++ (NSString *) escapedPatternForString:(NSString *) string;
+```
+
 #### Return Value
 
 The escaped string.
@@ -36,7 +41,8 @@ For example, the string `"(N/A)"` contains the pattern metacharacters `(`, `/`, 
 
 ## See Also
 
-- [class func escapedTemplate(for: String) -> String](nsregularexpression/escapedtemplate(for:).md)
+### Escaping Characters in a String
+- [class func escapedTemplate(for: String) -> String](./escapedtemplate%28for%29.md)
   Returns a template string by adding backslash escapes as necessary to protect any characters that would match as pattern metacharacters
 
 

@@ -1,39 +1,41 @@
 # CDTrackInfoAddressType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 typedef UInt8 CDTrackInfoAddressType;
 ```
 
 ## See Also
 
-- [CDATIP](cdatip.md)
-- [CDAudioStatus](cdaudiostatus.md)
-- [CDDiscInfo](cddiscinfo.md)
-- [CDFeatures](cdfeatures.md)
-- [CDISRC](cdisrc.md)
-- [CDMCN](cdmcn.md)
-- [CDMSF](cdmsf.md)
-- [CDMediaType](cdmediatype.md)
-- [CDPMA](cdpma.md)
-- [CDPMADescriptor](cdpmadescriptor.md)
-- [CDSectorArea](cdsectorarea.md)
-- [CDSectorSize](cdsectorsize.md)
-- [CDSectorType](cdsectortype.md)
-- [CDTEXT](cdtext.md)
-- [CDTEXTDescriptor](cdtextdescriptor.md)
-- [CDTOC](cdtoc.md)
-- [CDTOCDescriptor](cdtocdescriptor.md)
-- [CDTOCFormat](cdtocformat.md)
-- [CDTrackInfo](cdtrackinfo.md)
-- [CDTOCGetDescriptorCount](1424132-cdtocgetdescriptorcount.md)
+### CD Types
+- [CDATIP](./cdatip.md)
+- [CDAudioStatus](./cdaudiostatus.md)
+- [CDDiscInfo](./cddiscinfo.md)
+- [CDFeatures](./cdfeatures.md)
+- [CDISRC](./cdisrc.md)
+- [CDMCN](./cdmcn.md)
+- [CDMSF](./cdmsf.md)
+- [CDMediaType](./cdmediatype.md)
+- [CDPMA](./cdpma.md)
+- [CDPMADescriptor](./cdpmadescriptor.md)
+- [CDSectorArea](./cdsectorarea.md)
+- [CDSectorSize](./cdsectorsize.md)
+- [CDSectorType](./cdsectortype.md)
+- [CDTEXT](./cdtext.md)
+- [CDTEXTDescriptor](./cdtextdescriptor.md)
+- [CDTOC](./cdtoc.md)
+- [CDTOCDescriptor](./cdtocdescriptor.md)
+- [CDTOCFormat](./cdtocformat.md)
+- [CDTrackInfo](./cdtrackinfo.md)
+- [CDTOCGetDescriptorCount](./api-1424132-cdtocgetdescriptorcount.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # fetchRequest
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying fetch request that was executed.
 
@@ -10,7 +11,7 @@ The underlying fetch request that was executed.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ The underlying fetch request that was executed.
 var fetchRequest: NSAsynchronousFetchRequest<ResultType> { get }
 ```
 
+```objc
+@property (strong, readonly) NSAsynchronousFetchRequest<id<NSFetchRequestResult>> * fetchRequest;
+```
+
 ## See Also
 
-- [var finalResult: [ResultType]?](nsasynchronousfetchresult/finalresult.md)
+### Getting Information About a Result
+- [var finalResult: [ResultType]?](./finalresult.md)
   The results that were received from the fetch request.
 
 

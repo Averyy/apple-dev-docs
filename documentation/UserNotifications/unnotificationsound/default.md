@@ -1,7 +1,8 @@
 # default
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an object representing the default sound for notifications.
 
@@ -20,13 +21,26 @@ Returns an object representing the default sound for notifications.
 class var `default`: UNNotificationSound { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (class, nonatomic, copy, readonly) UNNotificationSound * defaultSound;
+```
+
+*macOS*
+
+```objc
+@property (class, atomic, copy, readonly) UNNotificationSound * defaultSound;
+```
+
 #### Return Value
 
 A sound object that represents the default notification sound.
 
 ## See Also
 
-- [convenience init(named: UNNotificationSoundName)](unnotificationsound/init(named:).md)
+### Creating Notification Sounds
+- [convenience init(named: UNNotificationSoundName)](./init%28named%29.md)
   Creates a sound object that represents a custom sound file.
 
 

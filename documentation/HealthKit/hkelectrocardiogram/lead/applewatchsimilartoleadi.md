@@ -1,7 +1,8 @@
 # HKElectrocardiogram.Lead.appleWatchSimilarToLeadI
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apple Watch Series 4 or later.
 
@@ -17,6 +18,10 @@ Apple Watch Series 4 or later.
 
 ```swift
 case appleWatchSimilarToLeadI
+```
+
+```c
+HKElectrocardiogramLeadAppleWatchSimilarToLeadI
 ```
 
 #### Discussion

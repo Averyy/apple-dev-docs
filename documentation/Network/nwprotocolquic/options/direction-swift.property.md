@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of the QUIC stream.
 
@@ -22,9 +23,10 @@ var direction: NWProtocolQUIC.Options.Direction { get set }
 
 ## See Also
 
-- [NWProtocolQUIC.Options.Direction](nwprotocolquic/options/direction-swift.enum.md)
+### Customizing Stream Options
+- [NWProtocolQUIC.Options.Direction](./direction-swift.enum.md)
   A directionality of a QUIC stream.
-- [var isDatagram: Bool](nwprotocolquic/options/isdatagram.md)
+- [var isDatagram: Bool](./isdatagram.md)
   A Boolean that indicates that this is a QUIC datagram flow, not a stream of bytes.
 
 

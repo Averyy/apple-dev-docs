@@ -1,7 +1,8 @@
 # PaymentCardReadResult.CardEffectiveState.unknown
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The card effective state is not available.
 

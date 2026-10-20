@@ -1,7 +1,8 @@
 # MLSoundClassifier.DataSource.labeledFiles(at:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Creates a data source from a folder that contains audio files, each named after the sound they represent.
 
@@ -33,15 +34,16 @@ In this example, these audio file names give a sound classifier at least two cla
 
 ## See Also
 
-- [MLSoundClassifier.DataSource.labeledDirectories(at:)](mlsoundclassifier/datasource/labeleddirectories(at:).md)
+### Creating a data source
+- [MLSoundClassifier.DataSource.labeledDirectories(at:)](./labeleddirectories%28at%29.md)
   Creates a data source from a folder with subfolders that each contain audio files.
-- [MLSoundClassifier.DataSource.filesByLabel(_:)](mlsoundclassifier/datasource/filesbylabel(_:).md)
+- [MLSoundClassifier.DataSource.filesByLabel(_:)](./filesbylabel%28_%29.md)
   Creates a data source from a dictionary.
-- [case features(table: MLDataTable, featureColumn: String, labelColumn: String, parameters: MLSoundClassifier.FeatureExtractionParameters)](mlsoundclassifier/datasource/features(table:featurecolumn:labelcolumn:parameters:).md)
+- [case features(table: MLDataTable, featureColumn: String, labelColumn: String, parameters: MLSoundClassifier.FeatureExtractionParameters)](./features%28table,featurecolumn,labelcolumn,parameters%29.md)
   Creates a data source from a data table of audio features.
-- [case featuresDataFrame(DataFrame, featureColumn: String, labelColumn: String, parameters: MLSoundClassifier.FeatureExtractionParameters)](mlsoundclassifier/datasource/featuresdataframe(_:featurecolumn:labelcolumn:parameters:).md)
+- [case featuresDataFrame(DataFrame, featureColumn: String, labelColumn: String, parameters: MLSoundClassifier.FeatureExtractionParameters)](./featuresdataframe%28_,featurecolumn,labelcolumn,parameters%29.md)
   Creates a data source from a data frame of audio features.
-- [MLSoundClassifier.FeatureExtractionParameters](mlsoundclassifier/featureextractionparameters.md)
+- [MLSoundClassifier.FeatureExtractionParameters](../featureextractionparameters.md)
   Parameters that affect the process of extracting sound features from audio files.
 
 

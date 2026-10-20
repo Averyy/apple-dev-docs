@@ -1,7 +1,8 @@
 # qualityLevel
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates how the request balances accuracy and performance.
 
@@ -22,15 +23,16 @@ final var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel { get set
 
 #### Discussion
 
-The default is [`GeneratePersonSegmentationRequest.QualityLevel.accurate`](generatepersonsegmentationrequest/qualitylevel-swift.enum/accurate.md).
+The default is [`GeneratePersonSegmentationRequest.QualityLevel.accurate`](./qualitylevel-swift.enum/accurate.md).
 
 ## See Also
 
-- [GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.enum.md)
+### Configuring a request
+- [GeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.enum.md)
   Constants that define the levels of quality for a person-segmentation request.
-- [var outputPixelFormatType: OSType](generatepersonsegmentationrequest/outputpixelformattype.md)
+- [var outputPixelFormatType: OSType](./outputpixelformattype.md)
   The desired pixel format of the observation.
-- [var supportedOutputPixelFormats: [OSType]](generatepersonsegmentationrequest/supportedoutputpixelformats.md)
+- [var supportedOutputPixelFormats: [OSType]](./supportedoutputpixelformats.md)
   The collection of supported pixel format types.
 
 

@@ -1,14 +1,15 @@
 # rdmsr_carefully
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int rdmsr_carefully(uint32_t msr, uint32_t *lo, uint32_t *hi);
 ```
 

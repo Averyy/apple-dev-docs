@@ -1,7 +1,8 @@
 # ByteCountFormatStyle.Style.decimal
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style for representing byte counts as decimal values.
 
@@ -22,11 +23,12 @@ case decimal
 
 ## See Also
 
-- [ByteCountFormatStyle.Style.binary](bytecountformatstyle/style-swift.enum/binary.md)
+### Byte count styles
+- [ByteCountFormatStyle.Style.binary](./binary.md)
   A style for representing byte counts as binary values.
-- [ByteCountFormatStyle.Style.file](bytecountformatstyle/style-swift.enum/file.md)
+- [ByteCountFormatStyle.Style.file](./file.md)
   A style for representing file system storage.
-- [ByteCountFormatStyle.Style.memory](bytecountformatstyle/style-swift.enum/memory.md)
+- [ByteCountFormatStyle.Style.memory](./memory.md)
   The style for representing memory usage.
 
 

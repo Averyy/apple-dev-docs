@@ -1,7 +1,8 @@
 # SecPublicKeyHash
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A container for a 20-byte public key hash.
 
@@ -15,9 +16,13 @@ A container for a 20-byte public key hash.
 typealias SecPublicKeyHash = (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)
 ```
 
+```c
+typedef UInt8[20] SecPublicKeyHash;
+```
+
 #### Discussion
 
-The `SecPublicKeyHash` type represents a hash of a public key. You can use the constant `kSecPublicKeyHashItemAttr` as input to functions in the Keychain Services API to set or retrieve a certificate attribute value of this type. See [`Keychain services`](keychain-services.md) for information about getting and setting attribute values.
+The `SecPublicKeyHash` type represents a hash of a public key. You can use the constant `kSecPublicKeyHashItemAttr` as input to functions in the Keychain Services API to set or retrieve a certificate attribute value of this type. See [Keychain services](./keychain-services.md) for information about getting and setting attribute values.
 
 
 ---

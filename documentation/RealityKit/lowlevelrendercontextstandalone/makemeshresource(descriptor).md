@@ -1,7 +1,8 @@
 # makeMeshResource(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a mesh resource from the given descriptor.
 
@@ -19,11 +20,11 @@ final func makeMeshResource(descriptor: LowLevelMeshResource.Descriptor) throws 
 
 #### Return Value
 
-A newly created [`LowLevelMeshResource`](lowlevelmeshresource.md).
+A newly created [`LowLevelMeshResource`](../lowlevelmeshresource.md).
 
 #### Discussion
 
-> **Note**: An error if the descriptor is invalid or if the underlying GPU allocation fails.
+> **Throws**: An error if the descriptor is invalid or if the underlying GPU allocation fails.
 
 ## Parameters
 

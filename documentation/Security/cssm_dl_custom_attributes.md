@@ -1,7 +1,8 @@
 # CSSM_DL_CUSTOM_ATTRIBUTES
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_DL_CUSTOM_ATTRIBUTES = UnsafeMutableRawPointer
+```
+
+```c
+typedef void * CSSM_DL_CUSTOM_ATTRIBUTES;
 ```
 
 

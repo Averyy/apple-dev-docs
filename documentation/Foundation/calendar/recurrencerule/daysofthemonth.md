@@ -1,7 +1,8 @@
 # daysOfTheMonth
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On which days in the month the event should occur
 

@@ -1,6 +1,7 @@
 # Search Apps Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Browse the endpoints for searching apps and retrieving app details.
 
@@ -11,9 +12,9 @@ Browse the endpoints for searching apps and retrieving app details.
 
 Use the Search Apps API to query localized app metadata, find the `adamId` that becomes the `promotedObjectId` on your campaign, and verify `availableStorefronts` before setting campaign target App Store countries or regions.
 
-You can only create campaigns for apps that you own in your ad account. Searching the App Store catalog returns metadata for any public app, but the `adamId` you use as `promotedObjectId` must belong to an app you own. To search only the apps your organization owns, use the `returnOwnedApps` parameter on [`Search for Apps`](searches-for-a-list-of-apps.md).
+You can only create campaigns for apps that you own in your ad account. Searching the App Store catalog returns metadata for any public app, but the `adamId` you use as `promotedObjectId` must belong to an app you own. To search only the apps your organization owns, use the `returnOwnedApps` parameter on [`Search for Apps`](./searches-for-a-list-of-apps.md).
 
-Confirm an app is eligible to advertise with [`App Eligibility Endpoints`](app-eligibility-endpoints.md) before building a campaign around it, and use [`Product Pages Endpoints`](product-pages-endpoints.md) to discover its product pages for a creative once it’s eligible.
+Confirm an app is eligible to advertise with [App Eligibility Endpoints](./app-eligibility-endpoints.md) before building a campaign around it, and use [Product Pages Endpoints](./product-pages-endpoints.md) to discover its product pages for a creative once it’s eligible.
 
 #### Explore the Available Endpoints
 
@@ -21,11 +22,11 @@ The Search Apps API provides three endpoints for finding, validating, and descri
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `GET` | `/v1/search/apps` | Searches the App Store for apps by name, content provider, or returns apps owned by your organization. See [`Search for Apps`](searches-for-a-list-of-apps.md). |
-| `GET` | `/v1/apps/{adamId}` | Retrieves details for a single app by its Adam ID. See [`Get App Details by Adam ID`](get-app-details-by-adam-id.md). |
-| `POST` | `/v1/metadata/apps/supported-languages/query` | Returns the languages supported for app advertising in each country or region. See [`Query Supported App Languages`](query-supported-app-languages.md). |
+| `GET` | `/v1/search/apps` | Searches the App Store for apps by name, content provider, or returns apps owned by your organization. See [`Search for Apps`](./searches-for-a-list-of-apps.md). |
+| `GET` | `/v1/apps/{adamId}` | Retrieves details for a single app by its Adam ID. See [`Get App Details by Adam ID`](./get-app-details-by-adam-id.md). |
+| `POST` | `/v1/metadata/apps/supported-languages/query` | Returns the languages supported for app advertising in each country or region. See [`Query Supported App Languages`](./query-supported-app-languages.md). |
 
-To retrieve the default product page’s localized metadata for an Adam ID, see [`Query App Locale Details`](query-default-product-page-locale-details-by-adam-id.md) under [`Product Pages Endpoints`](product-pages-endpoints.md).
+To retrieve the default product page’s localized metadata for an Adam ID, see [`Query App Locale Details`](./query-default-product-page-locale-details-by-adam-id.md) under [Product Pages Endpoints](./product-pages-endpoints.md).
 
 #### Review the Fields for App Search Results
 
@@ -38,7 +39,7 @@ Each app returned by the search endpoint includes an `AppInfo` object with the f
 | `developerName` | string | The developer or company name. |
 | `countryOrRegionCodes` | array[string] | Country or region codes where the app is available. |
 
-#### Review the Fields for a Single Apps Details
+#### Review the Fields for a Single App’s Details
 
 Retrieving a single app by Adam ID returns an `AppDetails` object with the following fields:
 
@@ -57,20 +58,22 @@ Retrieving a single app by Adam ID returns an `AppDetails` object with the follo
 
 ## Topics
 
-- [Search for Apps](searches-for-a-list-of-apps.md)
+- [Search for Apps](./searches-for-a-list-of-apps.md)
   Search the App Store for apps matching the supplied criteria and return app details.
-- [Get App Details by Adam ID](get-app-details-by-adam-id.md)
+- [Get App Details by Adam ID](./get-app-details-by-adam-id.md)
   Retrieve application details for a specific Adam ID.
-- [Query Supported App Languages](query-supported-app-languages.md)
+- [Query Supported App Languages](./query-supported-app-languages.md)
   Query countries and regions to discover the ad-supported languages available in each market.
 
 ## See Also
 
-- [App Eligibility Endpoints](app-eligibility-endpoints.md)
+### Related Documentation
+- [App Eligibility Endpoints](./app-eligibility-endpoints.md)
   Check whether apps qualify to run ads and look up rejection reasons for creatives.
-- [Product Pages Endpoints](product-pages-endpoints.md)
+- [Product Pages Endpoints](./product-pages-endpoints.md)
   Retrieve product pages and their localized details.
-- [Search Apps Data Objects](search-apps-data-objects.md)
+### Search Apps
+- [Search Apps Data Objects](./search-apps-data-objects.md)
   Browse the response objects returned by the search apps and app details endpoints.
 
 

@@ -1,7 +1,8 @@
 # isShotFlipped
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to vertically flip the video frame for the PTS specified in the last call to the update method.
 

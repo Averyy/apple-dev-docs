@@ -1,7 +1,8 @@
 # pixelsHighRange
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of heights a model’s image feature accepts as input or produces as output.
 
@@ -20,9 +21,14 @@ The range of heights a model’s image feature accepts as input or produces as o
 var pixelsHighRange: NSRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSRange pixelsHighRange;
+```
+
 ## See Also
 
-- [var pixelsWideRange: NSRange](mlimagesizeconstraint/pixelswiderange.md)
+### Accessing the image size ranges
+- [var pixelsWideRange: NSRange](./pixelswiderange.md)
   The range of widths a model’s image feature accepts as input or produces as output.
 
 

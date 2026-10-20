@@ -1,7 +1,8 @@
 # paymentInvalid
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Error code indicating that one of the payment parameters was not recognized by the App Store.
 
@@ -21,35 +22,36 @@ static var paymentInvalid: SKError.Code { get }
 
 ## See Also
 
-- [SKError.Code](skerror/code.md)
+### Error codes
+- [SKError.Code](./code.md)
   Error codes for StoreKit errors.
-- [static var unknown: SKError.Code](skerror/unknown.md)
+- [static var unknown: SKError.Code](./unknown.md)
   Error code indicating that an unknown or unexpected error occurred.
-- [static var clientInvalid: SKError.Code](skerror/clientinvalid.md)
+- [static var clientInvalid: SKError.Code](./clientinvalid.md)
   Error code indicating that the client is not allowed to perform the attempted action.
-- [static var paymentCancelled: SKError.Code](skerror/paymentcancelled.md)
+- [static var paymentCancelled: SKError.Code](./paymentcancelled.md)
   Error code indicating that the user canceled a payment request.
-- [static var paymentNotAllowed: SKError.Code](skerror/paymentnotallowed.md)
+- [static var paymentNotAllowed: SKError.Code](./paymentnotallowed.md)
   Error code indicating that the user is not allowed to authorize payments.
-- [static var storeProductNotAvailable: SKError.Code](skerror/storeproductnotavailable.md)
+- [static var storeProductNotAvailable: SKError.Code](./storeproductnotavailable.md)
   Error code indicating that the requested product is not available in the store.
-- [static var cloudServicePermissionDenied: SKError.Code](skerror/cloudservicepermissiondenied.md)
+- [static var cloudServicePermissionDenied: SKError.Code](./cloudservicepermissiondenied.md)
   Error code indicating that the user has not allowed access to Cloud service information.
-- [static var cloudServiceNetworkConnectionFailed: SKError.Code](skerror/cloudservicenetworkconnectionfailed.md)
+- [static var cloudServiceNetworkConnectionFailed: SKError.Code](./cloudservicenetworkconnectionfailed.md)
   Error code indicating that the device could not connect to the network.
-- [static var cloudServiceRevoked: SKError.Code](skerror/cloudservicerevoked.md)
+- [static var cloudServiceRevoked: SKError.Code](./cloudservicerevoked.md)
   Error code indicating that the user has revoked permission to use this cloud service.
-- [static var privacyAcknowledgementRequired: SKError.Code](skerror/privacyacknowledgementrequired.md)
+- [static var privacyAcknowledgementRequired: SKError.Code](./privacyacknowledgementrequired.md)
   Error code indicating that the user has not yet acknowledged Apple’s privacy policy for Apple Music.
-- [static var unauthorizedRequestData: SKError.Code](skerror/unauthorizedrequestdata.md)
+- [static var unauthorizedRequestData: SKError.Code](./unauthorizedrequestdata.md)
   Error code indicating that the app is attempting to use a property for which it does not have the required entitlement.
-- [static var invalidOfferIdentifier: SKError.Code](skerror/invalidofferidentifier.md)
+- [static var invalidOfferIdentifier: SKError.Code](./invalidofferidentifier.md)
   Error code indicating that the offer identifier cannot be found or is not active.
-- [static var invalidOfferPrice: SKError.Code](skerror/invalidofferprice.md)
+- [static var invalidOfferPrice: SKError.Code](./invalidofferprice.md)
   Error code indicating that the price you specified in App Store Connect is no longer valid.
-- [static var invalidSignature: SKError.Code](skerror/invalidsignature.md)
+- [static var invalidSignature: SKError.Code](./invalidsignature.md)
   Error code indicating that the signature in a payment discount is not valid.
-- [static var missingOfferParams: SKError.Code](skerror/missingofferparams.md)
+- [static var missingOfferParams: SKError.Code](./missingofferparams.md)
   Error code indicating that parameters are missing in a payment discount.
 
 

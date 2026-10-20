@@ -1,7 +1,8 @@
 # name
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the shader function in the library.
 
@@ -21,9 +22,10 @@ var name: String
 
 ## See Also
 
-- [var library: ShaderLibrary](shaderfunction/library.md)
+### Configuring a function
+- [var library: ShaderLibrary](./library.md)
   The shader library storing the function.
-- [func dynamicallyCall(withArguments: [Shader.Argument]) -> Shader](shaderfunction/dynamicallycall(witharguments:).md)
+- [func dynamicallyCall(withArguments: [Shader.Argument]) -> Shader](./dynamicallycall%28witharguments%29.md)
   Returns a new shader by applying the provided argument values to the referenced function.
 
 

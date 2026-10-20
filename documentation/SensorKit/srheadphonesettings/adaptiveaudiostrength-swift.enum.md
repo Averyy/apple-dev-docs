@@ -1,7 +1,8 @@
 # SRHeadphoneSettings.AdaptiveAudioStrength
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -14,24 +15,28 @@
 enum AdaptiveAudioStrength
 ```
 
+```c
+enum SRHeadphoneSettingsAdaptiveAudioStrength : uint32_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SRHeadphoneSettings.AdaptiveAudioStrength.high](srheadphonesettings/adaptiveaudiostrength-swift.enum/high.md)
-- [SRHeadphoneSettings.AdaptiveAudioStrength.low](srheadphonesettings/adaptiveaudiostrength-swift.enum/low.md)
-- [SRHeadphoneSettings.AdaptiveAudioStrength.medium](srheadphonesettings/adaptiveaudiostrength-swift.enum/medium.md)
+- [SRHeadphoneSettings.AdaptiveAudioStrength.high](./adaptiveaudiostrength-swift.enum/high.md)
+- [SRHeadphoneSettings.AdaptiveAudioStrength.low](./adaptiveaudiostrength-swift.enum/low.md)
+- [SRHeadphoneSettings.AdaptiveAudioStrength.medium](./adaptiveaudiostrength-swift.enum/medium.md)
 ### Initializers
-- [init?(rawValue: UInt32)](srheadphonesettings/adaptiveaudiostrength-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./adaptiveaudiostrength-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # preloadedLibraries
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides an array of dynamic libraries the compiler loads when it builds the pipeline.
 
@@ -17,6 +18,10 @@ Provides an array of dynamic libraries the compiler loads when it builds the pip
 
 ```swift
 var preloadedLibraries: [any MTLDynamicLibrary] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<id<MTLDynamicLibrary>> * preloadedLibraries;
 ```
 
 

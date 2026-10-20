@@ -1,7 +1,8 @@
 # AREnvironmentProbeAnchor
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides environmental lighting information for a specific area of space in a world-tracking AR session.
 
@@ -15,58 +16,63 @@ An object that provides environmental lighting information for a specific area o
 class AREnvironmentProbeAnchor
 ```
 
+```objc
+@interface AREnvironmentProbeAnchor : ARAnchor
+```
+
 #### Overview
 
 Environment textures depict the view in all directions from a specific point in a scene. In 3D asset rendering, environment textures are the basis for image-based lighting algorithms where surfaces can realistically reflect light from their surroundings. ARKit can generate environment textures during an AR session using camera imagery, allowing SceneKit or a custom-rendering engine to provide realistic image-based lighting for virtual objects in your AR experience.
 
-To enable texture map generation for an AR session, set the [`environmentTexturing`](arworldtrackingconfiguration/environmenttexturing-swift.property.md) property:
+To enable texture map generation for an AR session, set the [`environmentTexturing`](./arworldtrackingconfiguration/environmenttexturing-swift.property.md) property:
 
-- With [`ARWorldTrackingConfiguration.EnvironmentTexturing.manual`](arworldtrackingconfiguration/environmenttexturing-swift.enum/manual.md) environment texturing, you identify points in the scene for which you want light probe texture maps by creating [`AREnvironmentProbeAnchor`](arenvironmentprobeanchor.md) objects and adding them to the session.
-- With [`ARWorldTrackingConfiguration.EnvironmentTexturing.automatic`](arworldtrackingconfiguration/environmenttexturing-swift.enum/automatic.md) environment texturing, ARKit automatically creates, positions, and adds [`AREnvironmentProbeAnchor`](arenvironmentprobeanchor.md) objects to the session.
+- With [`ARWorldTrackingConfiguration.EnvironmentTexturing.manual`](./arworldtrackingconfiguration/environmenttexturing-swift.enum/manual.md) environment texturing, you identify points in the scene for which you want light probe texture maps by creating [`AREnvironmentProbeAnchor`](./arenvironmentprobeanchor.md) objects and adding them to the session.
+- With [`ARWorldTrackingConfiguration.EnvironmentTexturing.automatic`](./arworldtrackingconfiguration/environmenttexturing-swift.enum/automatic.md) environment texturing, ARKit automatically creates, positions, and adds [`AREnvironmentProbeAnchor`](./arenvironmentprobeanchor.md) objects to the session.
 
-In both cases, ARKit automatically generates environment textures as the session collects camera imagery. Use a delegate method such as [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-3qtt8.md) to find out when a texture is available, and access it from the anchor’s [`environmentTexture`](arenvironmentprobeanchor/environmenttexture.md) property.
+In both cases, ARKit automatically generates environment textures as the session collects camera imagery. Use a delegate method such as [`session(_:didUpdate:)`](./arsessiondelegate/session%28_,didupdate%29-3qtt8.md) to find out when a texture is available, and access it from the anchor’s [`environmentTexture`](./arenvironmentprobeanchor/environmenttexture.md) property.
 
-If you display AR content using [`ARSCNView`](arscnview.md) and the [`automaticallyUpdatesLighting`](arscnview/automaticallyupdateslighting.md) option, SceneKit automatically retrieves [`AREnvironmentProbeAnchor`](arenvironmentprobeanchor.md) texture maps and uses them to light the scene.
+If you display AR content using [`ARSCNView`](./arscnview.md) and the [`automaticallyUpdatesLighting`](./arscnview/automaticallyupdateslighting.md) option, SceneKit automatically retrieves [`AREnvironmentProbeAnchor`](./arenvironmentprobeanchor.md) texture maps and uses them to light the scene.
 
 ## Topics
 
 ### Creating Probe Anchors
-- [init(transform: simd_float4x4, extent: simd_float3)](arenvironmentprobeanchor/init(transform:extent:).md)
+- [init(transform: simd_float4x4, extent: simd_float3)](./arenvironmentprobeanchor/init%28transform,extent%29.md)
   Creates a new environment probe anchor.
-- [init(name: String, transform: simd_float4x4, extent: simd_float3)](arenvironmentprobeanchor/init(name:transform:extent:).md)
+- [init(name: String, transform: simd_float4x4, extent: simd_float3)](./arenvironmentprobeanchor/init%28name,transform,extent%29.md)
   Creates a new anchor object with a descriptive name.
 ### Accessing Texture Maps
-- [var environmentTexture: (any MTLTexture)?](arenvironmentprobeanchor/environmenttexture.md)
+- [var environmentTexture: (any MTLTexture)?](./arenvironmentprobeanchor/environmenttexture.md)
   A cube-map texture that represents the view in all directions from the probe anchor’s position.
 ### Examining a Probe Anchor
-- [var extent: simd_float3](arenvironmentprobeanchor/extent.md)
+- [var extent: simd_float3](./arenvironmentprobeanchor/extent.md)
   The area around the anchor’s position that contains the texture.
 
 ## Relationships
 
 ### Inherits From
-- [ARAnchor](aranchor.md)
+- [ARAnchor](./aranchor.md)
 ### Conforms To
-- [ARAnchorCopying](aranchorcopying.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ARAnchorCopying](./aranchorcopying.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding realistic reflections to an AR experience](adding-realistic-reflections-to-an-ar-experience.md)
+### Lighting Effects
+- [Adding realistic reflections to an AR experience](./adding-realistic-reflections-to-an-ar-experience.md)
   Use ARKit to generate environment probe textures from camera imagery and render reflective virtual objects.
-- [class ARLightEstimate](arlightestimate.md)
+- [class ARLightEstimate](./arlightestimate.md)
   Estimated scene lighting information associated with a captured video frame in an AR session.
-- [class ARDirectionalLightEstimate](ardirectionallightestimate.md)
+- [class ARDirectionalLightEstimate](./ardirectionallightestimate.md)
   Estimated environmental lighting information associated with a captured video frame in a face-tracking AR session.
 
 

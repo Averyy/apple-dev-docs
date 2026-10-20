@@ -1,14 +1,15 @@
 # gpu_energy_data
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef struct gpu_energy_data {
     ...
 } gpu_energy_data;
@@ -17,10 +18,10 @@ typedef struct gpu_energy_data {
 ## Topics
 
 ### Instance Properties
-- [task_gpu_stat_reserved0](gpu_energy_data/1553327-task_gpu_stat_reserved0.md)
-- [task_gpu_stat_reserved1](gpu_energy_data/1553172-task_gpu_stat_reserved1.md)
-- [task_gpu_stat_reserved2](gpu_energy_data/1553332-task_gpu_stat_reserved2.md)
-- [task_gpu_utilisation](gpu_energy_data/1553253-task_gpu_utilisation.md)
+- [task_gpu_stat_reserved0](./gpu_energy_data/api-1553327-task_gpu_stat_reserved0.md)
+- [task_gpu_stat_reserved1](./gpu_energy_data/api-1553172-task_gpu_stat_reserved1.md)
+- [task_gpu_stat_reserved2](./gpu_energy_data/api-1553332-task_gpu_stat_reserved2.md)
+- [task_gpu_utilisation](./gpu_energy_data/api-1553253-task_gpu_utilisation.md)
 
 
 ---

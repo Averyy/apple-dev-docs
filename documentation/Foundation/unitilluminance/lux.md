@@ -1,7 +1,8 @@
 # lux
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The lux unit of illuminance.
 
@@ -19,6 +20,10 @@ The lux unit of illuminance.
 ```swift
 @NSCopying
 class var lux: UnitIlluminance { get }
+```
+
+```objc
+@property (class, copy, readonly) NSUnitIlluminance * lux;
 ```
 
 

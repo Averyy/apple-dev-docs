@@ -1,7 +1,8 @@
 # SecItemClass.genericPasswordItemClass
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the item is a generic password.
 
@@ -13,6 +14,10 @@ Indicates that the item is a generic password.
 
 ```swift
 case genericPasswordItemClass
+```
+
+```c
+kSecGenericPasswordItemClass
 ```
 
 

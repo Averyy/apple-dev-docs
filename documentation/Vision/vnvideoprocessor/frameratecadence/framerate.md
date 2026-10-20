@@ -1,7 +1,8 @@
 # frameRate
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame rate at which to process video.
 
@@ -17,6 +18,10 @@ The frame rate at which to process video.
 
 ```swift
 var frameRate: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger frameRate;
 ```
 
 

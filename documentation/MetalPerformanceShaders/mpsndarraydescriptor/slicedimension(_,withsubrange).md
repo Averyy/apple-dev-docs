@@ -1,7 +1,8 @@
 # sliceDimension(_:withSubrange:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func sliceDimension(_ dimensionIndex: Int, withSubrange subRange: MPSDimensionSlice)
+```
+
+```objc
+- (void) sliceDimension:(NSUInteger) dimensionIndex withSubrange:(MPSDimensionSlice) subRange;
 ```
 
 

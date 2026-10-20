@@ -1,7 +1,8 @@
 # type
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the product.
 
@@ -22,9 +23,10 @@ let type: AdvancedCommerceProduct.ProductType
 
 ## See Also
 
-- [let id: AdvancedCommerceProduct.ID](advancedcommerceproduct/id.md)
+### Getting the product ID and type
+- [let id: AdvancedCommerceProduct.ID](./id.md)
   The generic product ID.
-- [AdvancedCommerceProduct.ProductType](advancedcommerceproduct/producttype.md)
+- [AdvancedCommerceProduct.ProductType](./producttype.md)
 
 
 ---

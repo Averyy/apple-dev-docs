@@ -1,14 +1,15 @@
 # range_tag
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 mach_vm_range_tag_t range_tag:8;
 ```
 

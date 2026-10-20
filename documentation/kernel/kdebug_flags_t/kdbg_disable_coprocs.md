@@ -1,14 +1,15 @@
 # KDBG_DISABLE_COPROCS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 KDBG_DISABLE_COPROCS
 ```
 

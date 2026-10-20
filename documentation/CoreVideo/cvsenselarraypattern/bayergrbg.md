@@ -1,7 +1,8 @@
 # CVSenselArrayPattern.bayerGRBG
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Top-left sensel of the frame is green-filtered, with the top row alternating between green and red-filtered sensels.
 

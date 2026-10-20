@@ -1,17 +1,22 @@
 # rulerView(_:willSetClientView:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the client view that `aRulerView` is about to be appropriated by `newClient`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func rulerView(_ ruler: NSRulerView, willSetClientView newClient: NSView)
+```
+
+```objc
+- (void) rulerView:(NSRulerView *) ruler willSetClientView:(NSView *) newClient;
 ```
 
 #### Discussion
@@ -20,25 +25,26 @@ The client view can use this opportunity to clear any cached information related
 
 ## See Also
 
-- [func rulerView(NSRulerView, didAdd: NSRulerMarker)](nsview/rulerview(_:didadd:).md)
+### Synchronizing with Ruler Views
+- [func rulerView(NSRulerView, didAdd: NSRulerMarker)](./rulerview%28_,didadd%29.md)
   Informs the client that `aRulerView` allowed the user to add `aMarker`.
-- [func rulerView(NSRulerView, didMove: NSRulerMarker)](nsview/rulerview(_:didmove:).md)
+- [func rulerView(NSRulerView, didMove: NSRulerMarker)](./rulerview%28_,didmove%29.md)
   Informs the client that `aRulerView` allowed the user to move `aMarker`.
-- [func rulerView(NSRulerView, didRemove: NSRulerMarker)](nsview/rulerview(_:didremove:).md)
+- [func rulerView(NSRulerView, didRemove: NSRulerMarker)](./rulerview%28_,didremove%29.md)
   Informs the client that `aRulerView` allowed the user to remove `aMarker`.
-- [func rulerView(NSRulerView, handleMouseDownWith: NSEvent)](nsview/rulerview(_:handlemousedownwith:).md)
+- [func rulerView(NSRulerView, handleMouseDownWith: NSEvent)](./rulerview%28_,handlemousedownwith%29.md)
   Informs the client that the user has pressed the mouse button while the cursor is in the ruler area of `aRulerView`.
-- [func rulerView(NSRulerView, locationFor: NSPoint) -> CGFloat](nsview/rulerview(_:locationfor:).md)
-- [func rulerView(NSRulerView, pointForLocation: CGFloat) -> NSPoint](nsview/rulerview(_:pointforlocation:).md)
-- [func rulerView(NSRulerView, shouldAdd: NSRulerMarker) -> Bool](nsview/rulerview(_:shouldadd:).md)
+- [func rulerView(NSRulerView, locationFor: NSPoint) -> CGFloat](./rulerview%28_,locationfor%29.md)
+- [func rulerView(NSRulerView, pointForLocation: CGFloat) -> NSPoint](./rulerview%28_,pointforlocation%29.md)
+- [func rulerView(NSRulerView, shouldAdd: NSRulerMarker) -> Bool](./rulerview%28_,shouldadd%29.md)
   Requests permission for `aRulerView` to add `aMarker`, an NSRulerMarker being dragged onto the ruler by the user.
-- [func rulerView(NSRulerView, shouldMove: NSRulerMarker) -> Bool](nsview/rulerview(_:shouldmove:).md)
+- [func rulerView(NSRulerView, shouldMove: NSRulerMarker) -> Bool](./rulerview%28_,shouldmove%29.md)
   Requests permission for `aRulerView` to move `aMarker`.
-- [func rulerView(NSRulerView, shouldRemove: NSRulerMarker) -> Bool](nsview/rulerview(_:shouldremove:).md)
+- [func rulerView(NSRulerView, shouldRemove: NSRulerMarker) -> Bool](./rulerview%28_,shouldremove%29.md)
   Requests permission for `aRulerView` to remove `aMarker`.
-- [func rulerView(NSRulerView, willAdd: NSRulerMarker, atLocation: CGFloat) -> CGFloat](nsview/rulerview(_:willadd:atlocation:).md)
+- [func rulerView(NSRulerView, willAdd: NSRulerMarker, atLocation: CGFloat) -> CGFloat](./rulerview%28_,willadd,atlocation%29.md)
   Informs the client that `aRulerView` will add the new NSRulerMarker, `aMarker`.
-- [func rulerView(NSRulerView, willMove: NSRulerMarker, toLocation: CGFloat) -> CGFloat](nsview/rulerview(_:willmove:tolocation:).md)
+- [func rulerView(NSRulerView, willMove: NSRulerMarker, toLocation: CGFloat) -> CGFloat](./rulerview%28_,willmove,tolocation%29.md)
   Informs the client that `aRulerView` will move `aMarker`, an NSRulerMarker already on the ruler view.
 
 

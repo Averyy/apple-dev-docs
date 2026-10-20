@@ -1,7 +1,8 @@
 # MeshResource.GenerateTextOptions
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that determines the configuration for rendering text in 2D, before it is extruded.
 
@@ -22,20 +23,21 @@ struct GenerateTextOptions
 ## Topics
 
 ### Initializers
-- [init()](meshresource/generatetextoptions/init.md)
+- [init()](./generatetextoptions/init%28%29.md)
 ### Instance Properties
-- [var containerFrame: CGRect?](meshresource/generatetextoptions/containerframe.md)
+- [var containerFrame: CGRect?](./generatetextoptions/containerframe.md)
   The size in points of the frame where the text is laid out.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MeshResource.Font](meshresource/font.md)
+### Text generation options
+- [MeshResource.Font](./font.md)
   A platform-specific type that represents a font for use in generating a text mesh.
 
 

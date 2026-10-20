@@ -1,14 +1,15 @@
 # kFirstOrderRanking
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFirstOrderRanking = 10000
 ```
 

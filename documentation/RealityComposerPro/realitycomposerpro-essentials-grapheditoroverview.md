@@ -1,6 +1,7 @@
 # Working with the Graph Editor
 
-**Framework**: Reality Composer Pro
+**Framework**: Reality Composer Pro  
+**Role**: Article
 
 Use Reality Composer Pro’s node-based editor to build materials, animations, audio effects, and scripts without writing code.
 
@@ -12,9 +13,9 @@ Reality Composer Pro tailors each type of Graph Editor — Script Graph, Shader 
 
 For example, a Script Graph uses different nodes and options than a Shader Graph. The following screenshots compare the two:
 
-![A screenshot of a Shader Material Graph in the Reality Composer Pro Graph Editor.](/images/RealityComposerPro/ShaderGraph@2x.png)
+![A screenshot of a Shader Material Graph in the Reality Composer Pro Graph Editor.](https://developer.apple.com/tutorials/images/RealityComposerPro/ShaderGraph@2x.png)
 
-![A screenshot of a Script Graph in the Reality Composer Pro Graph Editor.](/images/RealityComposerPro/ScriptGraph@2x.png)
+![A screenshot of a Script Graph in the Reality Composer Pro Graph Editor.](https://developer.apple.com/tutorials/images/RealityComposerPro/ScriptGraph@2x.png)
 
 #### Open the Graph Editor
 
@@ -22,9 +23,9 @@ You can open the Graph Editor in two ways. To open a graph file directly, double
 
 To open a graph file from a new tab, from the main menu choose **Tab** > **New Tab** to open a blank graph tab in your workspace. Then drag a graph file — such as a Script Graph, Shader Graph Material, or Animation Graph — from the project browser into the Graph tab.
 
-![A screenshot showing how to open a graph file in the Reality Composer Pro Graph Editor from a new tab.](/images/RealityComposerPro/GraphEditor-NewTab@2x.png)
+![A screenshot showing how to open a graph file in the Reality Composer Pro Graph Editor from a new tab.](https://developer.apple.com/tutorials/images/RealityComposerPro/GraphEditor-NewTab@2x.png)
 
-#### Navigate the Graph Editor Workspace
+#### Navigate the Graph Editor workspace
 
 As your graphs grow more complex, these controls help you view, organize, and navigate the workspace.
 
@@ -42,7 +43,7 @@ With one or more nodes selected, you can also apply these layout operations to j
 - **Align** — Aligns the selected nodes left, right, top, or bottom. Requires more than one node to be selected.
 - **Distribute** — Distributes and spaces the selected nodes equally, either horizontally or vertically.
 
-#### Add Nodes to a Graph
+#### Add nodes to a graph
 
 The Graph Editor offers three ways to add a node.
 
@@ -54,19 +55,19 @@ You can also click and drag a node’s input or output connector and release in 
 
 > 💡 **Tip**: You can click the name of any node in a graph to rename it to something more descriptive of its function — for example, Wait at Door, Pick Up Key, or Open Door A.
 
-![A screenshot showing how to rename a node in the Reality Composer Pro Graph Editor by clicking its name.](/images/RealityComposerPro/Rename@2x.png)
+![A screenshot showing how to rename a node in the Reality Composer Pro Graph Editor by clicking its name.](https://developer.apple.com/tutorials/images/RealityComposerPro/Rename@2x.png)
 
-#### Connect Input Output and Subgraph Nodes
+#### Connect input, output, and subgraph nodes
 
 To connect two nodes, drag from an output port on one node to a compatible input port on another. The Graph Editor prevents you from attaching a connector to an incompatible port and highlights valid connections as you drag.
 
 When you create an **Input**, **Output**, or **Subgraph** node, notice that they all have a **+** connector. When you drag a connection from the **+**, the Graph Editor determines the name and type of the new input or output automatically based on the connection.
 
-![A screenshot of Input, Output, and Subgraph nodes in the Reality Composer Pro Graph Editor, each showing a + connector.](/images/RealityComposerPro/InputOutputSubgraph@2x.png)
+![A screenshot of Input, Output, and Subgraph nodes in the Reality Composer Pro Graph Editor, each showing a + connector.](https://developer.apple.com/tutorials/images/RealityComposerPro/InputOutputSubgraph@2x.png)
 
 The graph type determines whether you can create additional inputs and outputs. For example, a Shader Graph doesn’t allow you to create additional outputs.
 
-#### Create a Subgraph
+#### Create a subgraph
 
 You can select a collection of nodes and turn them into a Subgraph to help organize a large, complex graph. You can also convert Subgraphs into reusable prototypes to share across other graphs.
 
@@ -74,15 +75,15 @@ To create a Subgraph, Control-click a single node and then click **Compose Subgr
 
 To expand a subgraph back into the parent graph, Control-click the subgraph node and click **Decompose Subgraph**. Reality Composer Pro moves the internal nodes and connections into the parent graph, rewires external connections directly to the surrounding graph, and then removes the subgraph node itself.
 
-> **Note**: For information about prototypes and Prototype Subgraph commands (Convert to Prototype Subgraph, Open Subgraph Prototype, Open Subgraph Instance, and Remove Node Override), see [`Reusing assets with prototypes and instances`](realitycomposerpro-essentials-understandingprototypes.md).
+> **Note**: For information about prototypes and Prototype Subgraph commands (Convert to Prototype Subgraph, Open Subgraph Prototype, Open Subgraph Instance, and Remove Node Override), see [Reusing assets with prototypes and instances](./realitycomposerpro-essentials-understandingprototypes.md).
 
-#### Add Comments to Graphs
+#### Add comments to graphs
 
 Use comments to help organize, describe, and annotate complex graphs and subgraphs. To add a comment to a single node, Control-click the node and choose **Add Comment Box**. To add a comment to multiple nodes, click and drag a selection box around the nodes and press **C** on the keyboard. Alternatively, Control-click any of the selected nodes and choose **Add Comment Box**.
 
-![A screenshot showing a comment box added around multiple selected nodes in the Reality Composer Pro Graph Editor.](/images/RealityComposerPro/CommentBox@2x.png)
+![A screenshot showing a comment box added around multiple selected nodes in the Reality Composer Pro Graph Editor.](https://developer.apple.com/tutorials/images/RealityComposerPro/CommentBox@2x.png)
 
-#### Edit Copy or Color Code Comments
+#### Edit, copy, or color-code comments
 
 These commands apply to comment boxes. Control-click any comment to open its context menu, and then do any of the following:
 
@@ -91,7 +92,7 @@ These commands apply to comment boxes. Control-click any comment to open its con
 - **Duplicate** — Makes a duplicate of the comment and its contents (nodes). The duplicate includes the nodes from the original comment, but none of the nodes have connections.
 - **Change Color** — Opens a color selector where you can change the color, opacity, and other visual characteristics for the comment. To access it, click the ellipsis (three dots) in the context menu.
 
-#### Use Clipboard Commands to Copy Paste or Delete Nodes
+#### Use clipboard commands to copy, paste, or delete nodes
 
 These commands apply to selected nodes. With one or more nodes selected, Control-click and then use any of the following commands:
 
@@ -100,25 +101,26 @@ These commands apply to selected nodes. With one or more nodes selected, Control
 - **Duplicate** — Duplicates the selected nodes.
 - **Delete** — Deletes the selected nodes.
 
-![A screenshot of the complete graph node context menu in the Reality Composer Pro Graph Editor, showing all available options.](/images/RealityComposerPro/NodeContextMenu@2x.png)
+![A screenshot of the complete graph node context menu in the Reality Composer Pro Graph Editor, showing all available options.](https://developer.apple.com/tutorials/images/RealityComposerPro/NodeContextMenu@2x.png)
 
 ## See Also
 
-- [Linking an Xcode project](realitycomposerpro-essentials-linkingxcodeproject.md)
+### Essentials
+- [Linking an Xcode project](./realitycomposerpro-essentials-linkingxcodeproject.md)
   Iterate on a scene and run it as an app without leaving the editor.
-- [Migrating older projects to Reality Composer Pro 3](realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
+- [Migrating older projects to Reality Composer Pro 3](./realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md)
   Bring existing Reality Composer Pro 2 projects into the Reality Composer Pro 3 workspace.
-- [Updating migrated assets to Reality Composer Pro 3](realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
+- [Updating migrated assets to Reality Composer Pro 3](./realitycomposerpro-essentials-updating-migrated-assets-to-reality-composer-pro-3.md)
   Fix common problems that appear after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
-- [Configuring the project workspace](realitycomposerpro-essentials-configuringprojectworkspace.md)
+- [Configuring the project workspace](./realitycomposerpro-essentials-configuringprojectworkspace.md)
   Open a project and arrange the workspace’s tabs and panes to fit your task.
-- [Navigating the Reality Composer Pro workspace](realitycomposerpro-essentials-workspaceoverview.md)
+- [Navigating the Reality Composer Pro workspace](./realitycomposerpro-essentials-workspaceoverview.md)
   Explore the panes and toolbars that make up the Reality Composer Pro editing environment.
-- [Adding entities and assets to a scene](realitycomposerpro-essentials-addingentitiestoscene.md)
+- [Adding entities and assets to a scene](./realitycomposerpro-essentials-addingentitiestoscene.md)
   Import assets to design Reality Composer Pro scenes for your app.
-- [Reusing assets with prototypes and instances](realitycomposerpro-essentials-understandingprototypes.md)
+- [Reusing assets with prototypes and instances](./realitycomposerpro-essentials-understandingprototypes.md)
   Edit a prototype once and propagate the change to every placement of that asset in a scene.
-- [Previewing content and running simulations](realitycomposerpro-essentials-previewcontentrunsimulations.md)
+- [Previewing content and running simulations](./realitycomposerpro-essentials-previewcontentrunsimulations.md)
   Test and iterate on your scenes directly in Reality Composer Pro, with or without a linked Xcode project.
 
 

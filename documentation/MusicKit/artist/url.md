@@ -1,7 +1,8 @@
 # url
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL for the artist.
 

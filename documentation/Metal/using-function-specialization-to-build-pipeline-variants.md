@@ -1,6 +1,8 @@
 # Using function specialization to build pipeline variants
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [UsingFunctionSpecializationToBuildPipelineVariants.zip](https://docs-assets.developer.apple.com/published/014f9e1b1a25/UsingFunctionSpecializationToBuildPipelineVariants.zip)
 
 Create pipelines for different levels of detail from a common shader source.
 
@@ -16,19 +18,19 @@ Create pipelines for different levels of detail from a common shader source.
 
 A high-quality gaming experience has to manage trade-offs between great graphics and great performance. High-quality models look great, but their complexity requires a significant amount of processing power. By increasing or decreasing the level of detail (LOD) of a model, games can selectively manage both graphics and performance.
 
-![LOD with Function Specialization](/images/com.apple.metal/lod-with-function-constants-1-LODWithFunctionSpecialization@2x.png)
+![LOD with Function Specialization](https://developer.apple.com/tutorials/images/com.apple.metal/lod-with-function-constants-1-LODWithFunctionSpecialization@2x.png)
 
 Instead of selecting a fixed LOD at build time, games can dynamically select between a range of LODs at runtime based on certain model-view conditions. For example, a focal-point foreground model could have a high LOD, whereas a fast-moving background model could have a low LOD.
 
 This sample demonstrates dynamic LOD selection for a fire truck model, based on its distance from the scene’s camera. When the model is closer to the camera, the renderer uses a higher LOD; when the model is further from the camera, the renderer uses a lower LOD.
 
-![Levels of Detail](/images/com.apple.metal/lod-with-function-constants-2-LevelsOfDetail@2x.png)
+![Levels of Detail](https://developer.apple.com/tutorials/images/com.apple.metal/lod-with-function-constants-2-LevelsOfDetail@2x.png)
 
-##### Getting Started
+##### Getting started
 
 The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS.
 
-##### Gpu Branch Statements
+##### GPU branch statements
 
 Unlike CPU code, graphics processing unit (GPU) branch statements like `if` and `else` are very expensive. The massively parallel architecture of GPUs isn’t particularly well suited to handling GPU functions that have many branches. More branches result in more register allocations and thus decrease the number of GPU threads that can execute concurrently. Nevertheless, branch statements are useful programming constructs, particularly for functions that share a lot of code. In fact, a common problem for graphics functions that share code is how to handle a branch condition that differs only between draw calls, not between individual threads executing within a single draw call.
 
@@ -39,7 +41,7 @@ Traditionally, branches that differ between draw calls are mitigated in one of t
 
 The Metal *function specialization* feature reduces branch performance costs, avoids code duplication, and leverages build time compilation. Function specialization allows you to create multiple executable versions of a single source function. You create specialized functions by declaring *function constants* in your Metal shading language code and setting their values at runtime. Doing so allows the front-end compiler to precompile your source function at build time and the back-end compiler to compile the specialized function at runtime, when the pipeline is created.
 
-##### Define Your Lod Selection Criteria
+##### Define your LOD selection criteria
 
 This sample demonstrates function specialization by creating different render pipelines for different LODs. All of the pipelines share the same source function, but function constants determine LOD-specific paths and inputs for each pipeline. Specifically, the sample demonstrates dynamic LOD selection for a fire truck model, based on its distance from the scene’s camera. When the fire truck is close to the camera, it occupies more pixels on the screen; therefore, the sample uses a high-quality render pipeline. When the fire truck is far from the camera, it occupies fewer pixels on the screen; therefore, the sample uses a low-quality render pipeline.
 
@@ -66,7 +68,7 @@ The `isTexturedProperty:atQualityLevel:` method controls whether a material prop
 }
 ```
 
-##### Implement Specialized Functions
+##### Implement specialized functions
 
 The sample uses six function constants to control the various inputs available to the `fragmentLighting` fragment function.
 
@@ -128,7 +130,7 @@ fragmentLighting(                 ColorInOut in           [[ stage_in ]],
                  texturecube<float> irradianceMap         [[ texture(AAPLTextureIndexIrradianceMap),    function_constant(has_irradiance_map)]])
 ```
 
-##### Create Different Pipelines
+##### Create different pipelines
 
 This sample uses three different `MTLRenderPipelineState` objects, each representing a different LOD. Specializing functions and building pipelines is expensive, so the sample performs these tasks asynchronously before starting the render loop. When the `AAPLRenderer` object is initialized, each LOD pipeline is created asynchronously by using dispatch groups, completion handlers, and notification blocks.
 
@@ -201,7 +203,7 @@ void (^notifyBlock)(void) = ^void()
 dispatch_group_notify(specializationGroup, pipelineQueue, notifyBlock);
 ```
 
-##### Render with a Specific Lod
+##### Render with a specific LOD
 
 At the beginning of the render loop, for each frame, the sample calls the `_calculateQualityAtDistance:` method to update the `_currentQualityLevel` value. This value defines the LOD for the frame based on the distance between the model and the camera. The `_calculateQualityAtDistance:` method also sets a `_globalMapWeight` value that creates a smooth transition between LOD boundaries.
 
@@ -276,11 +278,12 @@ Finally, the render loop draws each submesh in the model with the specific LOD p
 
 ## See Also
 
-- [Writing reusable GPU functions with generic pointers](writing-reusable-gpu-functions-with-generic-pointers.md)
+### Shader compilation and libraries
+- [Writing reusable GPU functions with generic pointers](./writing-reusable-gpu-functions-with-generic-pointers.md)
   Define utility functions once for multiple address spaces, and share types with your app’s main code.
-- [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
+- [Using the Metal 4 compilation API](./using-the-metal-4-compilation-api.md)
   Control when and how you compile an app’s shaders.
-- [Shader libraries](shader-libraries.md)
+- [Shader libraries](./shader-libraries.md)
   Manage and load your app’s Metal shaders.
 
 

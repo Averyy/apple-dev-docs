@@ -1,7 +1,8 @@
 # SecExternalItemType.itemTypePrivateKey
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a private key.
 
@@ -12,6 +13,10 @@ Indicates a private key.
 
 ```swift
 case itemTypePrivateKey
+```
+
+```c
+kSecItemTypePrivateKey
 ```
 
 

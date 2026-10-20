@@ -1,7 +1,8 @@
 # readAttributeMaxLevel(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMaxLevel(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMaxLevel() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMaxLevelWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

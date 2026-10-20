@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL from which to load texture data.
 
@@ -17,6 +18,10 @@ The URL from which to load texture data.
 
 ```swift
 var url: URL { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSURL * URL;
 ```
 
 #### Discussion

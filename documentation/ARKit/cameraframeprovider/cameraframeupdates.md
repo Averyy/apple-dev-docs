@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraFrameUpdates
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence of camera frames.
 
@@ -17,28 +18,29 @@ struct CameraFrameUpdates
 ## Topics
 
 ### Instance properties
-- [static var isSupported: Bool](cameraframeprovider/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether this device supports the camera frame provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](cameraframeprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The authorization types you need to use the camera frame provider.
 ### Instance methods
-- [func makeAsyncIterator() -> CameraFrameProvider.CameraFrameUpdates.Iterator](cameraframeprovider/cameraframeupdates/makeasynciterator.md)
+- [func makeAsyncIterator() -> CameraFrameProvider.CameraFrameUpdates.Iterator](./cameraframeupdates/makeasynciterator%28%29.md)
   Creates an asynchronous iterator that produces `CameraFrame` elements on this asynchronous sequence.
 ### Iterating over camera updates
-- [CameraFrameProvider.CameraFrameUpdates.Iterator](cameraframeprovider/cameraframeupdates/iterator.md)
+- [CameraFrameProvider.CameraFrameUpdates.Iterator](./cameraframeupdates/iterator.md)
   An asynchronous iterator that produces camera frame elements on an asynchronous sequence.
 ### Type aliases
-- [CameraFrameProvider.CameraFrameUpdates.Element](cameraframeprovider/cameraframeupdates/element.md)
+- [CameraFrameProvider.CameraFrameUpdates.Element](./cameraframeupdates/element.md)
   The type of element produced by this asynchronous sequence of camera frame structures.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func cameraFrameUpdates(for: CameraVideoFormat) -> CameraFrameProvider.CameraFrameUpdates?](cameraframeprovider/cameraframeupdates(for:).md)
+### Getting camera frame updates
+- [func cameraFrameUpdates(for: CameraVideoFormat) -> CameraFrameProvider.CameraFrameUpdates?](./cameraframeupdates%28for%29.md)
   Gets a sequence of camera frame updates for a given video format.
 
 

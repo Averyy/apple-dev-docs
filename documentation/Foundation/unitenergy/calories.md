@@ -1,7 +1,8 @@
 # calories
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The calories unit of energy.
 
@@ -21,15 +22,20 @@ The calories unit of energy.
 class var calories: UnitEnergy { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitEnergy * calories;
+```
+
 ## See Also
 
-- [class var kilojoules: UnitEnergy](unitenergy/kilojoules.md)
+### Accessing Predefined Units
+- [class var kilojoules: UnitEnergy](./kilojoules.md)
   The kilojoules unit of energy.
-- [class var joules: UnitEnergy](unitenergy/joules.md)
+- [class var joules: UnitEnergy](./joules.md)
   The joules unit of energy.
-- [class var kilocalories: UnitEnergy](unitenergy/kilocalories.md)
+- [class var kilocalories: UnitEnergy](./kilocalories.md)
   The kilocalories unit of energy.
-- [class var kilowattHours: UnitEnergy](unitenergy/kilowatthours.md)
+- [class var kilowattHours: UnitEnergy](./kilowatthours.md)
   The kilowatt hours unit of energy.
 
 

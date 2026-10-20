@@ -1,7 +1,8 @@
 # parentContainer
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container in which to add a new contact.
 
@@ -17,13 +18,18 @@ The container in which to add a new contact.
 var parentContainer: CNContainer? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CNContainer * parentContainer;
+```
+
 #### Discussion
 
 If you do not set this property, the view controller adds a new contact to the default container.
 
 ## See Also
 
-- [var parentGroup: CNGroup?](cncontactviewcontroller/parentgroup.md)
+### Configuring the Contact’s Relationships
+- [var parentGroup: CNGroup?](./parentgroup.md)
   The group in which to add a new contact.
 
 

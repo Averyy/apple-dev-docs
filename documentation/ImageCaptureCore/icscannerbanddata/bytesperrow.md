@@ -1,7 +1,8 @@
 # bytesPerRow
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var bytesPerRow: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger bytesPerRow;
 ```
 
 

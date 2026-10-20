@@ -1,7 +1,8 @@
 # bundle
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action’s bundle object.
 
@@ -15,13 +16,18 @@ The action’s bundle object.
 var bundle: Bundle { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSBundle * bundle;
+```
+
 ## See Also
 
-- [var hasView: Bool](ambundleaction/hasview.md)
+### Managing Action Properties
+- [var hasView: Bool](./hasview.md)
   A Boolean value that indicates whether the action has a view associated with it.
-- [var view: NSView?](ambundleaction/view.md)
+- [var view: NSView?](./view.md)
   The action’s view object.
-- [var parameters: NSMutableDictionary?](ambundleaction/parameters.md)
+- [var parameters: NSMutableDictionary?](./parameters.md)
   The action’s parameters.
 
 

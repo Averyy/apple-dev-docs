@@ -1,7 +1,8 @@
 # WKPanGestureRecognizer
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A gesture recognizer that interprets a touch event that moves around the screen.
 
@@ -14,60 +15,65 @@ A gesture recognizer that interprets a touch event that moves around the screen.
 class WKPanGestureRecognizer
 ```
 
+```objc
+@interface WKPanGestureRecognizer : WKGestureRecognizer
+```
+
 #### Overview
 
 In watchOS, a pan gesture must track exactly one touch event, but that touch event may move freely. Pan gestures are often used to drag content around a given area.
 
-You do not create instances of this class programmatically. Instead, add a pan gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
+You do not create instances of this class programmatically. Instead, add a pan gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
 ##### State Changes for a Pan Gesture
 
-![None](/images/com.apple.watchkit/media-2557623@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-2557623@2x.png)
 
 A pan gesture recognizer tracks touch events continuously, and therefore has many potential state changes. A pan gesture does not transition to the Began state until after the touch event starts moving. After that, it may transition to the Changed state, to the Ended, state, to the Failed state, or to the Cancelled state. The two most common state transition sequences are as follows:
 
 - Possible —> Began —> [Changed…] —> Ended
 - Possible —> Began —> [Changed…] —> Failed
 
-The Changed state is optional and may occur multiple times before the Ended, Failed, or Cancelled state is reached. The gesture recognizer calls its action method at each state transition. For more information on implementing continuous gesture recognizers, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
+The Changed state is optional and may occur multiple times before the Ended, Failed, or Cancelled state is reached. The gesture recognizer calls its action method at each state transition. For more information on implementing continuous gesture recognizers, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
 ##### Interface Builder Attributes
 
-Xcode lets you configure information about your gesture recognizer in your storyboard file. A pan gesture recognizer defines no attributes of its own, but you can configure attributes of the [`WKGestureRecognizer`](wkgesturerecognizer.md) parent class. For information about those attributes, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
+Xcode lets you configure information about your gesture recognizer in your storyboard file. A pan gesture recognizer defines no attributes of its own, but you can configure attributes of the [`WKGestureRecognizer`](./wkgesturerecognizer.md) parent class. For information about those attributes, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
 ## Topics
 
 ### Tracking the Location and Velocity of the Gesture
-- [func translationInObject() -> CGPoint](wkpangesturerecognizer/translationinobject.md)
+- [func translationInObject() -> CGPoint](./wkpangesturerecognizer/translationinobject%28%29.md)
   The amount of translation for the pan gesture in the current object.
-- [func velocityInObject() -> CGPoint](wkpangesturerecognizer/velocityinobject.md)
+- [func velocityInObject() -> CGPoint](./wkpangesturerecognizer/velocityinobject%28%29.md)
   The velocity of the pan gesture in the current object.
 
 ## Relationships
 
 ### Inherits From
-- [WKGestureRecognizer](wkgesturerecognizer.md)
+- [WKGestureRecognizer](./wkgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKCrownSequencer](wkcrownsequencer.md)
+### Event handling
+- [class WKCrownSequencer](./wkcrownsequencer.md)
   An object that reports the current state of the digital crown, including its rotational speed when it is in motion.
-- [protocol WKCrownDelegate](wkcrowndelegate.md)
+- [protocol WKCrownDelegate](./wkcrowndelegate.md)
   A collection of methods you can implement to track the user’s interaction with the digital crown, receiving notifications when the user rotates the crown or when rotation stops.
-- [class WKGestureRecognizer](wkgesturerecognizer.md)
+- [class WKGestureRecognizer](./wkgesturerecognizer.md)
   The base class for all other gesture recognizer classes.
-- [class WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md)
+- [class WKLongPressGestureRecognizer](./wklongpressgesturerecognizer.md)
   A gesture recognizer that interprets a touch event that occurs in the same relative area for an extended period of time.
-- [class WKSwipeGestureRecognizer](wkswipegesturerecognizer.md)
+- [class WKSwipeGestureRecognizer](./wkswipegesturerecognizer.md)
   A gesture recognizer that interprets swiping gestures in one or more directions.
-- [class WKTapGestureRecognizer](wktapgesturerecognizer.md)
+- [class WKTapGestureRecognizer](./wktapgesturerecognizer.md)
   A gesture recognizer that interprets a touch event occurring and ending in approximately the same area on the screen.
 
 

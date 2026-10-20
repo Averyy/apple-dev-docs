@@ -1,7 +1,8 @@
 # UIMenuElement.State.off
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating the menu element is in the “off” state.
 
@@ -18,11 +19,16 @@ A constant indicating the menu element is in the “off” state.
 case off
 ```
 
+```c
+UIMenuElementStateOff
+```
+
 ## See Also
 
-- [UIMenuElement.State.on](uimenuelement/state/on.md)
+### States
+- [UIMenuElement.State.on](./on.md)
   A constant indicating the menu element is in the “on” state.
-- [UIMenuElement.State.mixed](uimenuelement/state/mixed.md)
+- [UIMenuElement.State.mixed](./mixed.md)
   A constant indicating the menu element is in the “mixed” state.
 
 

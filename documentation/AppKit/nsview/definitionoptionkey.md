@@ -1,12 +1,13 @@
 # NSView.DefinitionOptionKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Keys to include in your definition.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,30 +15,35 @@ Keys to include in your definition.
 struct DefinitionOptionKey
 ```
 
+```c
+typedef NSString * NSDefinitionOptionKey;
+```
+
 ## Topics
 
 ### Option Key
-- [static let presentationType: NSView.DefinitionOptionKey](nsview/definitionoptionkey/presentationtype.md)
+- [static let presentationType: NSView.DefinitionOptionKey](./definitionoptionkey/presentationtype.md)
   An optional key in the options dictionary that specifies the presentation type of the definition display.
 ### Initializers
-- [init(rawValue: String)](nsview/definitionoptionkey/init(rawvalue:).md)
+- [init(rawValue: String)](./definitionoptionkey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func showDefinition(for: NSAttributedString?, at: NSPoint)](nsview/showdefinition(for:at:).md)
+### Displaying Definition Windows
+- [func showDefinition(for: NSAttributedString?, at: NSPoint)](./showdefinition%28for,at%29.md)
   Shows a window displaying the definition of the attributed string at the specified point.
-- [func showDefinition(for: NSAttributedString?, range: NSRange, options: [NSView.DefinitionOptionKey : Any]?, baselineOriginProvider: ((NSRange) -> NSPoint)?)](nsview/showdefinition(for:range:options:baselineoriginprovider:).md)
+- [func showDefinition(for: NSAttributedString?, range: NSRange, options: [NSView.DefinitionOptionKey : Any]?, baselineOriginProvider: ((NSRange) -> NSPoint)?)](./showdefinition%28for,range,options,baselineoriginprovider%29.md)
   Shows a window displaying the definition of the specified range of the attributed string.
-- [NSView.DefinitionPresentationType](nsview/definitionpresentationtype.md)
+- [NSView.DefinitionPresentationType](./definitionpresentationtype.md)
   Presentation options for the window.
 
 

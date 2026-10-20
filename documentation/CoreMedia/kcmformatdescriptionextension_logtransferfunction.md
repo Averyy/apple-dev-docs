@@ -1,7 +1,8 @@
 # kCMFormatDescriptionExtension_LogTransferFunction
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.2+
@@ -18,17 +19,22 @@
 let kCMFormatDescriptionExtension_LogTransferFunction: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionExtension_LogTransferFunction;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionExtension_ContentColorVolume: CFString](kcmformatdescriptionextension_contentcolorvolume.md)
-- [let kCMFormatDescriptionExtension_HasAdditionalViews: CFString](kcmformatdescriptionextension_hasadditionalviews.md)
-- [let kCMFormatDescriptionExtension_HasLeftStereoEyeView: CFString](kcmformatdescriptionextension_hasleftstereoeyeview.md)
-- [let kCMFormatDescriptionExtension_HasRightStereoEyeView: CFString](kcmformatdescriptionextension_hasrightstereoeyeview.md)
-- [let kCMFormatDescriptionExtension_HeroEye: CFString](kcmformatdescriptionextension_heroeye.md)
-- [let kCMFormatDescriptionExtension_HorizontalDisparityAdjustment: CFString](kcmformatdescriptionextension_horizontaldisparityadjustment.md)
-- [let kCMFormatDescriptionExtension_StereoCameraBaseline: CFString](kcmformatdescriptionextension_stereocamerabaseline.md)
-- [let kCMFormatDescriptionHeroEye_Left: CFString](kcmformatdescriptionheroeye_left.md)
-- [let kCMFormatDescriptionHeroEye_Right: CFString](kcmformatdescriptionheroeye_right.md)
+### Format Description Extension Keys
+- [let kCMFormatDescriptionExtension_ContentColorVolume: CFString](./kcmformatdescriptionextension_contentcolorvolume.md)
+- [let kCMFormatDescriptionExtension_HasAdditionalViews: CFString](./kcmformatdescriptionextension_hasadditionalviews.md)
+- [let kCMFormatDescriptionExtension_HasLeftStereoEyeView: CFString](./kcmformatdescriptionextension_hasleftstereoeyeview.md)
+- [let kCMFormatDescriptionExtension_HasRightStereoEyeView: CFString](./kcmformatdescriptionextension_hasrightstereoeyeview.md)
+- [let kCMFormatDescriptionExtension_HeroEye: CFString](./kcmformatdescriptionextension_heroeye.md)
+- [let kCMFormatDescriptionExtension_HorizontalDisparityAdjustment: CFString](./kcmformatdescriptionextension_horizontaldisparityadjustment.md)
+- [let kCMFormatDescriptionExtension_StereoCameraBaseline: CFString](./kcmformatdescriptionextension_stereocamerabaseline.md)
+- [let kCMFormatDescriptionHeroEye_Left: CFString](./kcmformatdescriptionheroeye_left.md)
+- [let kCMFormatDescriptionHeroEye_Right: CFString](./kcmformatdescriptionheroeye_right.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # errSecDecode
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unable to decode the provided data.
 
@@ -18,6 +19,10 @@ Unable to decode the provided data.
 
 ```swift
 var errSecDecode: OSStatus { get }
+```
+
+```c
+errSecDecode
 ```
 
 

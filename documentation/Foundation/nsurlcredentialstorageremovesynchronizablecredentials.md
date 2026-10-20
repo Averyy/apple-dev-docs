@@ -1,9 +1,10 @@
 # NSURLCredentialStorageRemoveSynchronizableCredentials
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-The corresponding value is an `NSNumber` object representing a Boolean value that indicates whether credentials which contain the [`URLCredential.Persistence.synchronizable`](urlcredential/persistence-swift.enum/synchronizable.md) attribute should be removed.
+The corresponding value is an `NSNumber` object representing a Boolean value that indicates whether credentials which contain the [`URLCredential.Persistence.synchronizable`](./urlcredential/persistence-swift.enum/synchronizable.md) attribute should be removed.
 
 **Availability**:
 - iOS 7.0+
@@ -18,6 +19,10 @@ The corresponding value is an `NSNumber` object representing a Boolean value tha
 
 ```swift
 let NSURLCredentialStorageRemoveSynchronizableCredentials: String
+```
+
+```c
+extern NSString * const NSURLCredentialStorageRemoveSynchronizableCredentials;
 ```
 
 #### Discussion

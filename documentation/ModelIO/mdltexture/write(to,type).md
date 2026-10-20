@@ -1,7 +1,8 @@
 # write(to:type:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the texture data to an image file at the specified URL, of the specified type.
 
@@ -19,13 +20,17 @@ Exports the texture data to an image file at the specified URL, of the specified
 func write(to nsurl: URL, type: CFString) -> Bool
 ```
 
+```objc
+- (BOOL) writeToURL:(NSURL *) nsurl type:(CFStringRef) type;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if export succeeded; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if export succeeded; [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-For the `type` parameter, pass the Uniform Type Identifier for any output format supported by the Image I/O framework, such as the JPEG, TIFF, PNG, or (in macOS only) OpenEXR format. For details, see [`Uniform Type Identifiers Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257).
+For the `type` parameter, pass the Uniform Type Identifier for any output format supported by the Image I/O framework, such as the JPEG, TIFF, PNG, or (in macOS only) OpenEXR format. For details, see [Uniform Type Identifiers Reference](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ For the `type` parameter, pass the Uniform Type Identifier for any output format
 
 ## See Also
 
-- [func write(to: URL) -> Bool](mdltexture/write(to:).md)
+### Exporting Textures
+- [func write(to: URL) -> Bool](./write%28to%29.md)
   Exports the texture data to an image file at the specified URL.
-- [func imageFromTexture() -> Unmanaged<CGImage>?](mdltexture/imagefromtexture.md)
+- [func imageFromTexture() -> Unmanaged<CGImage>?](./imagefromtexture%28%29.md)
   Exports the texture data as a CoreGraphics image.
 
 

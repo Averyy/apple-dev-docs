@@ -1,7 +1,8 @@
 # openExtensionsSettings(forIdentifiers:completionHandler:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Presents the extensions pane from Safari Settings.
 
@@ -14,7 +15,15 @@ Presents the extensions pane from Safari Settings.
 ## Declaration
 
 ```swift
+class func openExtensionsSettings(forIdentifiers extensionIdentifiers: [String], completionHandler: (@MainActor @Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func openExtensionsSettings(forIdentifiers extensionIdentifiers: [String]) async throws
+```
+
+```objc
++ (void) openExtensionsSettingsForIdentifiers:(NSArray<NSString *> *) extensionIdentifiers completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -24,7 +33,9 @@ The method returns an error unless you call it while your app is in the foregrou
 ## Parameters
 
 - `extensionIdentifiers`: An array of extension identifiers. If the value is a single identifier, Settings opens to that extension’s detail view. If you specify multiple identifiers, Settings opens to the Safari Extensions pane with the specified extensions selected.
-- `completionHandler`: A block the system calls after the operation completes, with an optional error parameter. - **error**: `nil` if Safari Extensions Settings opens successfully; otherwise, an error that indicates the reason for the failure.
+- `completionHandler`: A block the system calls after the operation completes, with an optional error parameter.
+
+  - **error**: `nil` if Safari Extensions Settings opens successfully; otherwise, an error that indicates the reason for the failure.
 
 
 ---

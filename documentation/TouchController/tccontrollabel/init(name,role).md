@@ -1,7 +1,8 @@
 # init(name:role:)
 
 **Framework**: Touch Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the provided name and type.
 
@@ -14,6 +15,10 @@ Creates a new instance with the provided name and type.
 
 ```swift
 init(name: String, role: TCControlLabel.Role)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name role:(TCControlLabelRole) role;
 ```
 
 #### Return Value

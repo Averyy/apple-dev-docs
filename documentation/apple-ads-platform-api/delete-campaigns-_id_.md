@@ -1,7 +1,8 @@
 # Delete a Campaign
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Soft-delete a campaign by its unique identifier, cascading to its ad groups, keywords, and ads.
 
@@ -12,7 +13,7 @@ Soft-delete a campaign by its unique identifier, cascading to its ad groups, key
 
 This endpoint deletes a campaign by its ID. The campaign is soft-deleted: it’s marked with `deleted: true` and excluded from query results by default, but the record and all its fields are preserved.
 
-After deletion, the query API will no longer include the deleted campaign by default. To retrieve deleted campaigns via the query API, pass an explicit filter with `deleted IN [true, false]`. To confirm deletion, use `GET /v1/campaigns/{id}` ([`Get a Campaign`](get-campaigns-_id_.md)) and verify that `Campaign.deleted` is `true`. You can also check that `systemStatus` is `NOT_RUNNING` and that `systemStatusReasons` contains `DELETED_BY_USER`.
+After deletion, the query API will no longer include the deleted campaign by default. To retrieve deleted campaigns via the query API, pass an explicit filter with `deleted IN [true, false]`. To confirm deletion, use `GET /v1/campaigns/{id}` ([`Get a Campaign`](./get-campaigns-_id_.md)) and verify that `Campaign.deleted` is `true`. You can also check that `systemStatus` is `NOT_RUNNING` and that `systemStatusReasons` contains `DELETED_BY_USER`.
 
 Keep the following in mind when relying on this endpoint’s soft-delete behavior:
 
@@ -30,7 +31,7 @@ Keep the following in mind when relying on this endpoint’s soft-delete behavio
 
 Deletes a campaign by its unique identifier. A successful delete returns HTTP 200 with an empty result.
 
-```None
+```
 DELETE https://api.ads.apple.com/v1/campaigns/111222333
 ```
 
@@ -46,7 +47,7 @@ DELETE https://api.ads.apple.com/v1/campaigns/111222333
 
 After deletion, confirm the campaign is marked deleted by retrieving it directly by ID.
 
-```None
+```
 GET https://api.ads.apple.com/v1/campaigns/111222333
 ```
 
@@ -72,19 +73,35 @@ GET https://api.ads.apple.com/v1/campaigns/111222333
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Campaign](post-campaigns.md)
+- [Create a Campaign](./post-campaigns.md)
   Create a new advertising campaign with a promoted object, budget, targeting, and bid strategy configuration.
-- [Query Campaigns](post-campaigns-query.md)
+- [Query Campaigns](./post-campaigns-query.md)
   Query campaigns using filters, sorting, and pagination.
-- [Get a Campaign](get-campaigns-_id_.md)
+- [Get a Campaign](./get-campaigns-_id_.md)
   Retrieve a single campaign by its unique identifier.
-- [Update a Campaign](put-campaigns-_id_.md)
+- [Update a Campaign](./put-campaigns-_id_.md)
   Update a campaign’s name, status, budget, targeting, or bid strategy.
-- [Get Legacy App Limited Status Reason Details](get-campaigns-_id_-legacy-app-limited-status-reason-details.md)
+- [Get Legacy App Limited Status Reason Details](./get-campaigns-_id_-legacy-app-limited-status-reason-details.md)
   Return a map of country or region codes to their associated limited-status reason for legacy app campaigns.
 
 

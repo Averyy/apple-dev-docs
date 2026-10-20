@@ -1,7 +1,8 @@
 # SHSession.Result.error(_:_:)
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that indicates a session error.
 
@@ -22,9 +23,10 @@ case error(any Error, SHSignature)
 
 ## See Also
 
-- [SHSession.Result.match(_:)](shsession/result/match(_:).md)
+### Constants
+- [SHSession.Result.match(_:)](./match%28_%29.md)
   A type that indicates a session match.
-- [SHSession.Result.noMatch(_:)](shsession/result/nomatch(_:).md)
+- [SHSession.Result.noMatch(_:)](./nomatch%28_%29.md)
   A type that indicates there’s no match for the signature.
 
 

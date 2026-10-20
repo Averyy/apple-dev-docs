@@ -1,7 +1,8 @@
 # inputPorts
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the connection’s input ports.
 
@@ -19,17 +20,22 @@ An array of the connection’s input ports.
 var inputPorts: [AVCaptureInput.Port] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureInputPort *> * inputPorts;
+```
+
 #### Discussion
 
-Input ports are instances of [`AVCaptureInput.Port`](avcaptureinput/port.md).
+Input ports are instances of [`AVCaptureInput.Port`](../avcaptureinput/port.md).
 
 ## See Also
 
-- [var output: AVCaptureOutput?](avcaptureconnection/output.md)
+### Inspecting a connection
+- [var output: AVCaptureOutput?](./output.md)
   The connection’s output port, if applicable.
-- [var videoPreviewLayer: AVCaptureVideoPreviewLayer?](avcaptureconnection/videopreviewlayer.md)
+- [var videoPreviewLayer: AVCaptureVideoPreviewLayer?](./videopreviewlayer.md)
   The video preview layer associated with the connection.
-- [var audioChannels: [AVCaptureAudioChannel]](avcaptureconnection/audiochannels.md)
+- [var audioChannels: [AVCaptureAudioChannel]](./audiochannels.md)
   An array of audio channels that the connection provides.
 
 

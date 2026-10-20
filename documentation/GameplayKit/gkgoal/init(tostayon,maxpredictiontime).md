@@ -1,7 +1,8 @@
 # init(toStayOn:maxPredictionTime:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a goal whose effect is to maintain an agent’s position within the specified path.
 
@@ -19,13 +20,17 @@ Creates a goal whose effect is to maintain an agent’s position within the spec
 convenience init(toStayOn path: GKPath, maxPredictionTime: TimeInterval)
 ```
 
+```objc
++ (instancetype) goalToStayOnPath:(GKPath *) path maxPredictionTime:(NSTimeInterval) maxPredictionTime;
+```
+
 #### Return Value
 
 A new goal object.
 
 #### Discussion
 
-This goal uses the shape and the [`radius`](gkpath/radius.md) property of the specified path to define the boundaries of an area for the agent to stay in. If an affected agent is outside that area, the agent will move into that area; if the agent is already in that area, this goal will not motivate the agent to move further.
+This goal uses the shape and the [`radius`](../gkpath/radius.md) property of the specified path to define the boundaries of an area for the agent to stay in. If an affected agent is outside that area, the agent will move into that area; if the agent is already in that area, this goal will not motivate the agent to move further.
 
 The `maxPredictionTime` parameter determines how far ahead of time the agent will predict its own movement to fulfill this goal. For example, with a larger value, an agent moving toward the path will begin to slow gradually so as to stop gently within the path’s radius. With a smaller value, the agent will attempt to stop more abruptly as it reaches the path (and depending on its properties, it might not be able to stop quickly enough to avoid overshooting).
 
@@ -36,7 +41,8 @@ The `maxPredictionTime` parameter determines how far ahead of time the agent wil
 
 ## See Also
 
-- [convenience init(toFollow: GKPath, maxPredictionTime: TimeInterval, forward: Bool)](gkgoal/init(tofollow:maxpredictiontime:forward:).md)
+### Creating Goals for Path-Following Behavior
+- [convenience init(toFollow: GKPath, maxPredictionTime: TimeInterval, forward: Bool)](./init%28tofollow,maxpredictiontime,forward%29.md)
   Creates a goal whose effect is to both maintain position on and traverse the specified path.
 
 

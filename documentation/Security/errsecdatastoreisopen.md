@@ -1,7 +1,8 @@
 # errSecDatastoreIsOpen
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data store is open.
 
@@ -18,6 +19,10 @@ The data store is open.
 
 ```swift
 var errSecDatastoreIsOpen: OSStatus { get }
+```
+
+```c
+errSecDatastoreIsOpen
 ```
 
 

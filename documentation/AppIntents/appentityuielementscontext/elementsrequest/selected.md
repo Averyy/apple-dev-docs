@@ -1,7 +1,8 @@
 # AppEntityUIElementsContext.ElementsRequest.selected
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Any elements that are currently selected should be provided.
 

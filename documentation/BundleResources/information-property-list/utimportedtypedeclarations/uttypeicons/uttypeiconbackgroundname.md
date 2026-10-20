@@ -1,7 +1,8 @@
 # UTTypeIconBackgroundName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of an icon set in your app’s asset catalog to use as the background fill of the document icon.
 
@@ -11,9 +12,10 @@ The name of an icon set in your app’s asset catalog to use as the background f
 - macOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UTTypeIconBackgroundName` (Background)
+- **Type**: string
 
 #### Discussion
 
@@ -23,9 +25,10 @@ If you set this key, the system scales the icon set to fit the document icon can
 
 ## See Also
 
-- [UTTypeIconBadgeName](information-property-list/utimportedtypedeclarations/uttypeicons/uttypeiconbadgename.md)
+### Composited icon resources
+- [UTTypeIconBadgeName](./uttypeiconbadgename.md)
   The name of an iconset in your app’s asset catalog to use as the center badge image of the document icon.
-- [UTTypeIconText](information-property-list/utimportedtypedeclarations/uttypeicons/uttypeicontext.md)
+- [UTTypeIconText](./uttypeicontext.md)
   A short string the system renders at the bottom edge of the document icon.
 
 

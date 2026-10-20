@@ -1,7 +1,8 @@
 # MPSNNReshape
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for reshape operations.
 
@@ -19,31 +20,35 @@ The base class for reshape operations.
 class MPSNNReshape
 ```
 
+```objc
+@interface MPSNNReshape : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreshape/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsnnreshape/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnnreshape/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsnnreshape/init%28device%29.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationState: AutoreleasingUnsafeMutablePointer<MPSState?>, destinationStateIsTemporary: Bool, reshapedWidth: Int, reshapedHeight: Int, reshapedFeatureChannels: Int) -> MPSImage](mpsnnreshape/encode(commandbuffer:sourceimage:destinationstate:destinationstateistemporary:reshapedwidth:reshapedheight:reshapedfeaturechannels:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, reshapedWidth: Int, reshapedHeight: Int, reshapedFeatureChannels: Int) -> MPSImage](mpsnnreshape/encode(commandbuffer:sourceimage:reshapedwidth:reshapedheight:reshapedfeaturechannels:).md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationStates: AutoreleasingUnsafeMutablePointer<NSArray?>, destinationStateIsTemporary: Bool, reshapedWidth: Int, reshapedHeight: Int, reshapedFeatureChannels: Int) -> [MPSImage]](mpsnnreshape/encodebatch(commandbuffer:sourceimages:destinationstates:destinationstateistemporary:reshapedwidth:reshapedheight:reshapedfeaturechannels:).md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], reshapedWidth: Int, reshapedHeight: Int, reshapedFeatureChannels: Int) -> [MPSImage]](mpsnnreshape/encodebatch(commandbuffer:sourceimages:reshapedwidth:reshapedheight:reshapedfeaturechannels:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationState: AutoreleasingUnsafeMutablePointer<MPSState?>, destinationStateIsTemporary: Bool, reshapedWidth: Int, reshapedHeight: Int, reshapedFeatureChannels: Int) -> MPSImage](./mpsnnreshape/encode%28commandbuffer,sourceimage,destinationstate,destinationstateistemporary,reshapedwidth,reshapedheight,reshapedfeaturechannels%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, reshapedWidth: Int, reshapedHeight: Int, reshapedFeatureChannels: Int) -> MPSImage](./mpsnnreshape/encode%28commandbuffer,sourceimage,reshapedwidth,reshapedheight,reshapedfeaturechannels%29.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationStates: AutoreleasingUnsafeMutablePointer<NSArray?>, destinationStateIsTemporary: Bool, reshapedWidth: Int, reshapedHeight: Int, reshapedFeatureChannels: Int) -> [MPSImage]](./mpsnnreshape/encodebatch%28commandbuffer,sourceimages,destinationstates,destinationstateistemporary,reshapedwidth,reshapedheight,reshapedfeaturechannels%29.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], reshapedWidth: Int, reshapedHeight: Int, reshapedFeatureChannels: Int) -> [MPSImage]](./mpsnnreshape/encodebatch%28commandbuffer,sourceimages,reshapedwidth,reshapedheight,reshapedfeaturechannels%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

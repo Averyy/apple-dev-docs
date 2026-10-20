@@ -1,18 +1,19 @@
 # particleColorBlendFactorSequence
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sequence used to specify the color blend factor of a particle over its lifetime.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,22 +21,27 @@ The sequence used to specify the color blend factor of a particle over its lifet
 var particleColorBlendFactorSequence: SKKeyframeSequence? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SKKeyframeSequence * particleColorBlendFactorSequence;
+```
+
 ## Mentions
 
-- [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
+- [Animating Particle Properties Across Disparate Values](../animating-particle-properties-across-disparate-values.md)
+- [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
 #### Discussion
 
-The default value is `nil`. If a non-`nil` value is specified, then the [`particleColorBlendFactor`](skemitternode/particlecolorblendfactor.md), [`particleColorBlendFactorRange`](skemitternode/particlecolorblendfactorrange.md), and [`particleColorBlendFactorSpeed`](skemitternode/particlecolorblendfactorspeed.md) properties are ignored. Instead, the sequence is used to specify the color blend factor.
+The default value is `nil`. If a non-`nil` value is specified, then the [`particleColorBlendFactor`](./particlecolorblendfactor.md), [`particleColorBlendFactorRange`](./particlecolorblendfactorrange.md), and [`particleColorBlendFactorSpeed`](./particlecolorblendfactorspeed.md) properties are ignored. Instead, the sequence is used to specify the color blend factor.
 
 ## See Also
 
-- [var particleColorBlendFactor: CGFloat](skemitternode/particlecolorblendfactor.md)
+### Controlling How the Texture is Blended with Particle Color
+- [var particleColorBlendFactor: CGFloat](./particlecolorblendfactor.md)
   The average starting value for the color blend factor.
-- [var particleColorBlendFactorRange: CGFloat](skemitternode/particlecolorblendfactorrange.md)
+- [var particleColorBlendFactorRange: CGFloat](./particlecolorblendfactorrange.md)
   The range of allowed random values for a particle’s starting color blend factor.
-- [var particleColorBlendFactorSpeed: CGFloat](skemitternode/particlecolorblendfactorspeed.md)
+- [var particleColorBlendFactorSpeed: CGFloat](./particlecolorblendfactorspeed.md)
   The rate at which the color blend factor changes per second.
 
 

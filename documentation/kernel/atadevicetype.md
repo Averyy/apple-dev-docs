@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum ataDeviceType : unsigned int {
     ...
 };
@@ -17,19 +17,20 @@ enum ataDeviceType : unsigned int {
 ## Topics
 
 ### Constants
-- [kATADeviceType](atadevicetype/katadevicetype.md)
-- [kATAPIDeviceType](atadevicetype/katapidevicetype.md)
-- [kUnknownATADeviceType](atadevicetype/kunknownatadevicetype.md)
+- [kATADeviceType](./atadevicetype/katadevicetype.md)
+- [kATAPIDeviceType](./atadevicetype/katapidevicetype.md)
+- [kUnknownATADeviceType](./atadevicetype/kunknownatadevicetype.md)
 
 ## See Also
 
-- [ataEventCode](ataeventcode.md)
-- [ataFlags](ataflags.md)
-- [ataOpcode](ataopcode.md)
-- [ataRegMask](ataregmask.md)
-- [ataSocketType](atasockettype.md)
-- [ataUnitID](ataunitid.md)
-- [atapiConfig](atapiconfig.md)
+### Additional Types
+- [ataEventCode](./ataeventcode.md)
+- [ataFlags](./ataflags.md)
+- [ataOpcode](./ataopcode.md)
+- [ataRegMask](./ataregmask.md)
+- [ataSocketType](./atasockettype.md)
+- [ataUnitID](./ataunitid.md)
+- [atapiConfig](./atapiconfig.md)
 
 
 ---

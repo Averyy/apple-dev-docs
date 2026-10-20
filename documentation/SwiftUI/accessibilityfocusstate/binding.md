@@ -1,7 +1,8 @@
 # AccessibilityFocusState.Binding
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -22,16 +23,17 @@
 ## Topics
 
 ### Getting the state
-- [var projectedValue: AccessibilityFocusState<Value>.Binding](accessibilityfocusstate/binding/projectedvalue.md)
+- [var projectedValue: AccessibilityFocusState<Value>.Binding](./binding/projectedvalue.md)
   The currently focused element.
-- [var wrappedValue: Value](accessibilityfocusstate/binding/wrappedvalue.md)
+- [var wrappedValue: Value](./binding/wrappedvalue.md)
   The underlying value referenced by the bound property.
 
 ## See Also
 
-- [var projectedValue: AccessibilityFocusState<Value>.Binding](accessibilityfocusstate/projectedvalue.md)
+### Getting the state
+- [var projectedValue: AccessibilityFocusState<Value>.Binding](./projectedvalue.md)
   A projection of the state value that can be used to establish bindings between view content and accessibility focus placement.
-- [var wrappedValue: Value](accessibilityfocusstate/wrappedvalue.md)
+- [var wrappedValue: Value](./wrappedvalue.md)
   The current state value, taking into account whatever bindings might be in effect due to the current location of focus.
 
 

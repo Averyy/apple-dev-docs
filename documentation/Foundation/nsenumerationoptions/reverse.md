@@ -1,7 +1,8 @@
 # reverse
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the enumeration should be performed in reverse.
 
@@ -20,13 +21,18 @@ Specifies that the enumeration should be performed in reverse.
 static var reverse: NSEnumerationOptions { get }
 ```
 
+```c
+NSEnumerationReverse
+```
+
 #### Discussion
 
 This option is available for `NSArray` and `NSIndexSet` classes; its behavior is undefined for `NSDictionary` and `NSSet` classes, or when combined with the `NSEnumerationConcurrent` flag.
 
 ## See Also
 
-- [static var concurrent: NSEnumerationOptions](nsenumerationoptions/concurrent.md)
+### Constants
+- [static var concurrent: NSEnumerationOptions](./concurrent.md)
   Specifies that the Block enumeration should be concurrent.
 
 

@@ -1,12 +1,13 @@
 # NSMatrix.Mode.highlightModeMatrix
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-An [`NSCell`](nscell.md) is highlighted before it’s asked to track the mouse, then unhighlighted when it’s done tracking.
+An [`NSCell`](../../nscell.md) is highlighted before it’s asked to track the mouse, then unhighlighted when it’s done tracking.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,14 +15,19 @@ An [`NSCell`](nscell.md) is highlighted before it’s asked to track the mouse, 
 case highlightModeMatrix
 ```
 
+```c
+NSHighlightModeMatrix
+```
+
 ## See Also
 
-- [NSMatrix.Mode.trackModeMatrix](nsmatrix/mode-swift.enum/trackmodematrix.md)
-  The [`NSCell`](nscell.md) objects are asked to track the mouse with [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackmouse(with:in:of:untilmouseup:).md) whenever the cursor is inside their bounds. No highlighting is performed.
-- [NSMatrix.Mode.radioModeMatrix](nsmatrix/mode-swift.enum/radiomodematrix.md)
-  Selects no more than one [`NSCell`](nscell.md) at a time.
-- [NSMatrix.Mode.listModeMatrix](nsmatrix/mode-swift.enum/listmodematrix.md)
-  [`NSCell`](nscell.md) objects are highlighted, but don’t track the mouse.
+### Constants
+- [NSMatrix.Mode.trackModeMatrix](./trackmodematrix.md)
+  The [`NSCell`](../../nscell.md) objects are asked to track the mouse with [`trackMouse(with:in:of:untilMouseUp:)`](../../nscell/trackmouse%28with,in,of,untilmouseup%29.md) whenever the cursor is inside their bounds. No highlighting is performed.
+- [NSMatrix.Mode.radioModeMatrix](./radiomodematrix.md)
+  Selects no more than one [`NSCell`](../../nscell.md) at a time.
+- [NSMatrix.Mode.listModeMatrix](./listmodematrix.md)
+  [`NSCell`](../../nscell.md) objects are highlighted, but don’t track the mouse.
 
 
 ---

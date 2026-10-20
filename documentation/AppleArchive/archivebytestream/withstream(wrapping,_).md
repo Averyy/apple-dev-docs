@@ -1,7 +1,8 @@
 # withStream(wrapping:_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calls the given closure with an archive byte stream instance mapped to an object that conforms to the archive byte stream protocol.
 
@@ -11,7 +12,7 @@ Calls the given closure with an archive byte stream instance mapped to an object
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -31,9 +32,10 @@ The result of the closure.
 
 ## See Also
 
-- [static func customStream<C>(instance: C) -> ArchiveByteStream?](archivebytestream/customstream(instance:).md)
+### Streaming with Custom Streams
+- [static func customStream<C>(instance: C) -> ArchiveByteStream?](./customstream%28instance%29.md)
   Returns a new archive byte stream instance mapped to an object that conforms to the archive byte stream protocol.
-- [static func sharedBufferPipe(capacity: Int) -> (output: ArchiveByteStream, input: ArchiveByteStream)?](archivebytestream/sharedbufferpipe(capacity:).md)
+- [static func sharedBufferPipe(capacity: Int) -> (output: ArchiveByteStream, input: ArchiveByteStream)?](./sharedbufferpipe%28capacity%29.md)
   Creates a pair of streams and links them by a shared buffer.
 
 

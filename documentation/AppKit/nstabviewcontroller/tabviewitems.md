@@ -1,7 +1,8 @@
 # tabViewItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of tab view items used to manage each of the child view controllers.
 
@@ -14,23 +15,28 @@ The array of tab view items used to manage each of the child view controllers.
 var tabViewItems: [NSTabViewItem] { get set }
 ```
 
+```objc
+@property (copy) NSArray<__kindof NSTabViewItem *> * tabViewItems;
+```
+
 #### Discussion
 
-This property contains an array of [`NSTabViewItem`](nstabviewitem.md) objects. Each tab view item contains information about a tab in the tab view interface, including the child view controller that manages the tab’s contents.
+This property contains an array of [`NSTabViewItem`](../nstabviewitem.md) objects. Each tab view item contains information about a tab in the tab view interface, including the child view controller that manages the tab’s contents.
 
 Assigning a new array to this property updates the set of tabs displayed by the tab view controller.
 
 ## See Also
 
-- [func tabViewItem(for: NSViewController) -> NSTabViewItem?](nstabviewcontroller/tabviewitem(for:).md)
+### Managing Tab View Items
+- [func tabViewItem(for: NSViewController) -> NSTabViewItem?](./tabviewitem%28for%29.md)
   Returns the tab view item for the specified child view controller.
-- [func addTabViewItem(NSTabViewItem)](nstabviewcontroller/addtabviewitem(_:).md)
+- [func addTabViewItem(NSTabViewItem)](./addtabviewitem%28_%29.md)
   Adds the specified tab to the end of the tab view controller’s list of tabs.
-- [func insertTabViewItem(NSTabViewItem, at: Int)](nstabviewcontroller/inserttabviewitem(_:at:).md)
+- [func insertTabViewItem(NSTabViewItem, at: Int)](./inserttabviewitem%28_,at%29.md)
   Inserts a tab view into the tab view controller’s list of tabs.
-- [func removeTabViewItem(NSTabViewItem)](nstabviewcontroller/removetabviewitem(_:).md)
+- [func removeTabViewItem(NSTabViewItem)](./removetabviewitem%28_%29.md)
   Removes the specified tab view item from the tab view controller.
-- [var selectedTabViewItemIndex: Int](nstabviewcontroller/selectedtabviewitemindex.md)
+- [var selectedTabViewItemIndex: Int](./selectedtabviewitemindex.md)
   The index of the selected tab.
 
 

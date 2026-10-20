@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the system reports double taps or squeezes on Apple Pencil to your app.
 
@@ -17,9 +18,13 @@ A Boolean value that specifies whether the system reports double taps or squeeze
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 
 ---

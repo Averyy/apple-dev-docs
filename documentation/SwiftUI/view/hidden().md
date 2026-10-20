@@ -1,7 +1,8 @@
 # hidden()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides this view unconditionally.
 
@@ -41,7 +42,7 @@ HStack {
 
 The third circle takes up space, because it’s still present, but SwiftUI doesn’t draw it onscreen.
 
-![A row of circles with the letters A, B, and D, with a gap where](/images/com.apple.SwiftUI/SwiftUI-View-hidden-1@2x.png)
+![A row of circles with the letters A, B, and D, with a gap where](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-hidden-1@2x.png)
 
 If you want to conditionally include a view in the view hierarchy, use an `if` statement instead:
 
@@ -59,13 +60,14 @@ VStack {
 }
 ```
 
-Depending on the current value of the `isHidden` state variable in the example above, controlled by the [`Toggle`](toggle.md) instance, SwiftUI draws the circle or completely omits it from the layout.
+Depending on the current value of the `isHidden` state variable in the example above, controlled by the [`Toggle`](../toggle.md) instance, SwiftUI draws the circle or completely omits it from the layout.
 
-![Two side by side groups of items, each composed of a toggle beneath](/images/com.apple.SwiftUI/SwiftUI-View-hidden-2@2x.png)
+![Two side by side groups of items, each composed of a toggle beneath](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-hidden-2@2x.png)
 
 ## See Also
 
-- [func opacity(Double) -> some View](view/opacity(_:).md)
+### Hiding views
+- [func opacity(Double) -> some View](./opacity%28_%29.md)
   Sets the transparency of this view.
 
 

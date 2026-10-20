@@ -1,23 +1,28 @@
 # getPort
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback to retrieve the native Mach port represented by the source. This callback is called when the source is either added to or removed from a run loop mode.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var getPort: ((UnsafeMutableRawPointer?) -> mach_port_t)!
+```
+
+```c
+unsigned int (*)(void *) getPort;
 ```
 
 #### Return Value
@@ -32,7 +37,7 @@ A version 1 run loop source must have a one-to-one relationship between itself a
 
 ## Parameters
 
-- `info`: The `info` member of the [`CFRunLoopSourceContext1`](cfrunloopsourcecontext1.md) structure that was used when creating the run loop source.
+- `info`: The `info` member of the [`CFRunLoopSourceContext1`](../cfrunloopsourcecontext1.md) structure that was used when creating the run loop source.
 
 
 ---

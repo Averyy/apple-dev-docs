@@ -1,23 +1,28 @@
 # init(node:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a wheel object.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 convenience init(node: SCNNode)
+```
+
+```objc
++ (instancetype) wheelWithNode:(SCNNode *) node;
 ```
 
 #### Return Value
@@ -26,9 +31,9 @@ A new wheel object.
 
 #### Discussion
 
-The node representing a wheel must be a child of the node whose physics body serves as the chassis of the [`SCNPhysicsVehicle`](scnphysicsvehicle.md) behavior the wheel is attached to. Each wheel object must reference a unique node. To use the wheel, add it to the vehicle behavior using the addWheel: method.
+The node representing a wheel must be a child of the node whose physics body serves as the chassis of the [`SCNPhysicsVehicle`](../scnphysicsvehicle.md) behavior the wheel is attached to. Each wheel object must reference a unique node. To use the wheel, add it to the vehicle behavior using the addWheel: method.
 
-SceneKit uses the node’s bounding box to determine the wheel’s initial size, and it uses the node’s position to determine the where the wheel connects to the vehicle’s chassis. You can change attributes using the [`radius`](scnphysicsvehiclewheel/radius.md) and [`connectionPosition`](scnphysicsvehiclewheel/connectionposition.md) properties.
+SceneKit uses the node’s bounding box to determine the wheel’s initial size, and it uses the node’s position to determine the where the wheel connects to the vehicle’s chassis. You can change attributes using the [`radius`](./radius.md) and [`connectionPosition`](./connectionposition.md) properties.
 
 ## Parameters
 

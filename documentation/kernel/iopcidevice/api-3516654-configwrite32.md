@@ -1,14 +1,15 @@
 # configWrite32
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 void configWrite32(IOByteCount offset, UInt32 data);
 ```
 

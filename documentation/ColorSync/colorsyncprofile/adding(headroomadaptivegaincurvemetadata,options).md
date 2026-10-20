@@ -1,7 +1,8 @@
 # adding(headroomAdaptiveGainCurveMetadata:options:)
 
 **Framework**: ColorSync  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of this profile with raw Headroom Adaptive Gain Curve data embedded as an HAGC tag.
 
@@ -22,7 +23,7 @@ func adding(headroomAdaptiveGainCurveMetadata: Data, options: ColorSyncProfile.H
 
 ## Mentions
 
-- [Authoring Headroom Adaptive Gain Curve metadata](authoring-headroom-adaptive-gain-curve-metadata.md)
+- [Authoring Headroom Adaptive Gain Curve metadata](../authoring-headroom-adaptive-gain-curve-metadata.md)
 
 #### Return Value
 
@@ -39,9 +40,10 @@ Use this to move an HAGC between profiles without interpreting it — for exampl
 
 ## See Also
 
-- [func adding(headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve) -> ColorSyncProfile?](colorsyncprofile/adding(headroomadaptivegaincurve:).md)
+### Attaching a curve in Swift
+- [func adding(headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve) -> ColorSyncProfile?](./adding%28headroomadaptivegaincurve%29.md)
   Returns a copy of this profile with raw Headroom Adaptive Gain Curve data embedded as an HAGC tag.
-- [ColorSyncProfile.HeadroomAdaptiveGainCurveOptions](colorsyncprofile/headroomadaptivegaincurveoptions.md)
+- [ColorSyncProfile.HeadroomAdaptiveGainCurveOptions](./headroomadaptivegaincurveoptions.md)
   Options that configure how a Headroom Adaptive Gain Curve is read from or embedded in a profile.
 
 

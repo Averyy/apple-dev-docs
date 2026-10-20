@@ -1,14 +1,15 @@
 # method
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Mobile 5.0+
 
 ## Declaration
 
-```swift
+```
 void method(
     MediaQueryListListener listener
 );

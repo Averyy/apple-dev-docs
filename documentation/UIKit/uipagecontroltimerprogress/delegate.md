@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that defines the delegate of the page control progress.
 
@@ -16,6 +17,10 @@ An object that defines the delegate of the page control progress.
 
 ```swift
 weak var delegate: (any UIPageControlTimerProgressDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<UIPageControlTimerProgressDelegate> delegate;
 ```
 
 

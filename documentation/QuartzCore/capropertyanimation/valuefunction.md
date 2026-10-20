@@ -1,7 +1,8 @@
 # valueFunction
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional value function that is applied to interpolated values.
 
@@ -19,15 +20,20 @@ An optional value function that is applied to interpolated values.
 var valueFunction: CAValueFunction? { get set }
 ```
 
+```objc
+@property (strong, nullable) CAValueFunction * valueFunction;
+```
+
 #### Discussion
 
 If the `valueFunction` property is not `nil`, the function is applied to the values interpolated by the animation as they are applied to the presentation layer. Defaults to `nil`.
 
 ## See Also
 
-- [var isCumulative: Bool](capropertyanimation/iscumulative.md)
+### Property Value Calculation Behavior
+- [var isCumulative: Bool](./iscumulative.md)
   Determines if the value of the property is the value at the end of the previous repeat cycle, plus the value of the current repeat cycle.
-- [var isAdditive: Bool](capropertyanimation/isadditive.md)
+- [var isAdditive: Bool](./isadditive.md)
   Determines if the value specified by the animation is added to the current render tree value to produce the new render tree value.
 
 

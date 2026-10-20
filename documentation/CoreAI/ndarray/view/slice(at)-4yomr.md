@@ -1,7 +1,8 @@
 # slice(at:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
@@ -18,6 +19,8 @@ Returns a sub-view with the same rank as this view by slicing the dimensions at 
 @export(implementation)
 func slice<let indexRank : Int>(at ranges: [indexRank of any NDArray.RangeExpression]) -> NDArray.View<Element>
 ```
+
+Available when `Element` conforms to `BitwiseCopyable`.
 
 #### Discussion
 
@@ -46,7 +49,8 @@ func sumOfRow(
 
 ## See Also
 
-- [func slice(at: [any NDArray.RangeExpression]) -> NDArray.View<Element>](ndarray/view/slice(at:)-32gsh.md)
+### Slicing the view
+- [func slice(at: [any NDArray.RangeExpression]) -> NDArray.View<Element>](./slice%28at%29-32gsh.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
 

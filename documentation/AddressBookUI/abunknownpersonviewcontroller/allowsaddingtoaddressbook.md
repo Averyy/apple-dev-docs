@@ -1,14 +1,17 @@
 # allowsAddingToAddressBook
 
 **Framework**: Address Book UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether the user can add the properties displayed by the unknown-person view controller to the address book database, either as a new contact or by adding them to an existing contact.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`CNContactViewController`](../../ContactsUI/cncontactviewcontroller.md) instead.
 
 ## Declaration
 
@@ -16,15 +19,20 @@ Specifies whether the user can add the properties displayed by the unknown-perso
 var allowsAddingToAddressBook: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsAddingToAddressBook;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var addressBook: ABAddressBook?](abunknownpersonviewcontroller/addressbook.md)
+### Configuring the Interface Details
+- [var addressBook: ABAddressBook?](./addressbook.md)
   Optional. The address book database that the person record is added to.
-- [var allowsActions: Bool](abunknownpersonviewcontroller/allowsactions.md)
+- [var allowsActions: Bool](./allowsactions.md)
   Specifies whether buttons appear to let the user perform actions such as sharing the contact, initiating a FaceTime call, or sending a text message.
 
 

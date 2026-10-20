@@ -1,7 +1,8 @@
 # vfs_isunmount
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if an unmount is in progress.
 
@@ -10,11 +11,11 @@ Determine if an unmount is in progress.
 
 ## Declaration
 
-```swift
+```c
 int vfs_isunmount(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if an unmount is in progress, else zero.
 

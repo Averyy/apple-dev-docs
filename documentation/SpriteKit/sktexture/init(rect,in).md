@@ -1,18 +1,19 @@
 # init(rect:in:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new texture from a sub-rectangle of an existing texture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a new texture from a sub-rectangle of an existing texture.
 convenience init(rect: CGRect, in texture: SKTexture)
 ```
 
+```objc
++ (instancetype) textureWithRect:(CGRect) rect inTexture:(SKTexture *) texture;
+```
+
 ## Mentions
 
-- [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
+- [Maximizing Node Drawing Performance](../maximizing-node-drawing-performance.md)
 
 #### Return Value
 
@@ -32,9 +37,9 @@ A new texture object.
 
 The returned texture object shares the same texture data as the original texture object, meaning that only one copy of the texture data is kept in memory.
 
-If you call this method on a texture that itself was created using this method, the original texture is used as the source instead. That is, the rectangle is considered to be in the source texture’s coordinate system. To do this, you should use the source texture’s [`textureRect()`](sktexture/texturerect().md) rather than relying on hard coded `{(0,0) (1,1)}` as the coordinates.
+If you call this method on a texture that itself was created using this method, the original texture is used as the source instead. That is, the rectangle is considered to be in the source texture’s coordinate system. To do this, you should use the source texture’s [`textureRect()`](./texturerect%28%29.md) rather than relying on hard coded `{(0,0) (1,1)}` as the coordinates.
 
-Listing 1 shows, in Swift, how you can use the source texture’s [`textureRect()`](sktexture/texturerect().md) to calculate the portion of the texture to use.
+Listing 1 shows, in Swift, how you can use the source texture’s [`textureRect()`](./texturerect%28%29.md) to calculate the portion of the texture to use.
 
 Listing 1. Creating a texture from a portion of another texture.
 
@@ -49,7 +54,7 @@ let croppedTexture = SKTexture(rect: rect,
                                in: originalTexture)
 ```
 
-In the above example, if `originalTexture` had a size of `(348.0, 282.0)` and a [`textureRect()`](sktexture/texturerect().md) of `{(0,0) (1,1)}`, `croppedTexture` will have a size of `(174.0, 141.0)` and a [`textureRect()`](sktexture/texturerect().md) of `{(0,0) (1,1)}`. `croppedTexture` will be a copy of the bottom left quadrant of `originalTexture`.
+In the above example, if `originalTexture` had a size of `(348.0, 282.0)` and a [`textureRect()`](./texturerect%28%29.md) of `{(0,0) (1,1)}`, `croppedTexture` will have a size of `(174.0, 141.0)` and a [`textureRect()`](./texturerect%28%29.md) of `{(0,0) (1,1)}`. `croppedTexture` will be a copy of the bottom left quadrant of `originalTexture`.
 
 ## Parameters
 

@@ -1,15 +1,16 @@
 # XCTAttachment Implementations
 
-**Framework**: XCTest
+**Framework**: XCTest  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(compressedContentsOfDirectoryAtURL: URL)](xctattachment/init(compressedcontentsofdirectoryaturl:).md)
+- [convenience init(compressedContentsOfDirectoryAtURL: URL)](./init%28compressedcontentsofdirectoryaturl%29.md)
   Creates an attachment containing a zipped archive of an existing directory on disk.
-- [convenience init(contentsOfFileAtURL: URL)](xctattachment/init(contentsoffileaturl:).md)
+- [convenience init(contentsOfFileAtURL: URL)](./init%28contentsoffileaturl%29.md)
   Creates an attachment from the contents of an existing file on disk.
-- [convenience init(contentsOfFileAtURL: URL, uniformTypeIdentifier: String)](xctattachment/init(contentsoffileaturl:uniformtypeidentifier:).md)
+- [convenience init(contentsOfFileAtURL: URL, uniformTypeIdentifier: String)](./init%28contentsoffileaturl,uniformtypeidentifier%29.md)
   Creates an attachment from the contents of an existing file on disk, with a custom UTI.
 
 

@@ -1,14 +1,15 @@
 # kcdata_item_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef struct kcdata_item *kcdata_item_t;
 ```
 

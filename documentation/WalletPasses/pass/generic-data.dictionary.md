@@ -1,7 +1,8 @@
 # Pass.Generic
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the groups of fields that display the information for a generic pass.
 
@@ -12,13 +13,13 @@ An object that represents the groups of fields that display the information for 
 
 ## Declaration
 
-```swift
+```
 object Pass.Generic
 ```
 
 ## Mentions
 
-- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](../creating-a-poster-generic-pass.md)
 
 #### Discussion
 
@@ -27,11 +28,12 @@ Use the generic pass type for passes that don’t fit into other pass categories
 ## Relationships
 
 ### Inherits From
-- [PassFields](passfields.md)
+- [PassFields](../passfields.md)
 
 ## See Also
 
-- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
+### Generic passes
+- [Creating a Poster Generic Pass](../creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
 
 

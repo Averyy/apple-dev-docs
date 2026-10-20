@@ -1,7 +1,8 @@
 # resignFocus()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes focus from the volume control, causing it to stop receiving input from the Digital Crown.
 
@@ -14,13 +15,18 @@ Removes focus from the volume control, causing it to stop receiving input from t
 func resignFocus()
 ```
 
+```objc
+- (void) resignFocus;
+```
+
 #### Discussion
 
 If the volume control is inside a scrollable view, resigning the focus enables scrolling with the Digital Crown.
 
 ## See Also
 
-- [func focus()](wkinterfacevolumecontrol/focus.md)
+### Managing Input from the Digital Crown
+- [func focus()](./focus%28%29.md)
   Sets the volume control as the focus for input from the Digital Crown.
 
 

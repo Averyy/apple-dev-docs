@@ -1,14 +1,15 @@
 # cfg_state_mask
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t cfg_state_mask;
 ```
 

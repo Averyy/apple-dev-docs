@@ -1,7 +1,8 @@
 # CMSampleBufferMakeDataReadyHandler
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block the system calls to make the sample buffer ready for use.
 
@@ -18,6 +19,10 @@ A block the system calls to make the sample buffer ready for use.
 
 ```swift
 typealias CMSampleBufferMakeDataReadyHandler = (CMSampleBuffer) -> OSStatus
+```
+
+```c
+typedef int (^)(struct opaqueCMSampleBuffer *) CMSampleBufferMakeDataReadyHandler;
 ```
 
 ## Parameters

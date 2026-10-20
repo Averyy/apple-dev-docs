@@ -1,25 +1,27 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the memory map object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [init](iomemorymap/init.md)
+### Configuring the Memory Map
+- [init](./init.md)
   Initializes the memory map object.
 
 

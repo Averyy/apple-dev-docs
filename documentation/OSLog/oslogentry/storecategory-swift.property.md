@@ -1,7 +1,8 @@
 # storeCategory
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current log entry’s storage tag.
 
@@ -20,9 +21,14 @@ The current log entry’s storage tag.
 var storeCategory: OSLogEntry.StoreCategory { get }
 ```
 
+```objc
+@property (nonatomic, readonly) OSLogEntryStoreCategory storeCategory;
+```
+
 ## See Also
 
-- [OSLogEntry.StoreCategory](oslogentry/storecategory-swift.enum.md)
+### Accessing Store Categories
+- [OSLogEntry.StoreCategory](./storecategory-swift.enum.md)
   A classification of how the entry was to be stored and rotated at the point when it was created.
 
 

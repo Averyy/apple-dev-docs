@@ -1,7 +1,8 @@
 # GaussianSplatResource.SortingMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available ways to order splats so the framework blends their opacity correctly.
 
@@ -21,16 +22,16 @@ enum SortingMode
 ## Topics
 
 ### Enumeration Cases
-- [GaussianSplatResource.SortingMode.depth](gaussiansplatresource/sortingmode-swift.enum/depth.md)
+- [GaussianSplatResource.SortingMode.depth](./sortingmode-swift.enum/depth.md)
   Sorts splats by their z-coordinate relative to the camera.
-- [GaussianSplatResource.SortingMode.distance](gaussiansplatresource/sortingmode-swift.enum/distance.md)
+- [GaussianSplatResource.SortingMode.distance](./sortingmode-swift.enum/distance.md)
   Sorts splats by their Euclidean distance from the camera.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # hasNonContiguousLayout
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the layout manager currently has any areas of noncontiguous layout.
 
@@ -14,27 +15,32 @@ A Boolean value that indicates whether the layout manager currently has any area
 var hasNonContiguousLayout: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasNonContiguousLayout;
+```
+
 #### Discussion
 
 There may be times at which there is no noncontiguous layout, such as when layout is complete; this method enables the layout manager to report that to clients.
 
-For more information about noncontiguous layout, see [`Noncontiguous Layout`](nslayoutmanager#Noncontiguous-Layout.md).
+For more information about noncontiguous layout, see [Noncontiguous Layout](../nslayoutmanager.md#Noncontiguous-Layout).
 
 ## See Also
 
-- [var allowsNonContiguousLayout: Bool](nslayoutmanager/allowsnoncontiguouslayout.md)
+### Configuring the global layout manager options
+- [var allowsNonContiguousLayout: Bool](./allowsnoncontiguouslayout.md)
   A Boolean value that indicates whether the layout manager allows noncontiguous layout.
-- [var showsInvisibleCharacters: Bool](nslayoutmanager/showsinvisiblecharacters.md)
+- [var showsInvisibleCharacters: Bool](./showsinvisiblecharacters.md)
   A Boolean value that indicates whether to substitute visible glyphs for whitespace and other typically invisible characters.
-- [var showsControlCharacters: Bool](nslayoutmanager/showscontrolcharacters.md)
+- [var showsControlCharacters: Bool](./showscontrolcharacters.md)
   A Boolean value that indicates whether the layout manager substitutes visible glyphs for control characters in the layout.
-- [var usesFontLeading: Bool](nslayoutmanager/usesfontleading.md)
+- [var usesFontLeading: Bool](./usesfontleading.md)
   A Boolean value that indicates whether the layout manager uses the leading of the font.
-- [var backgroundLayoutEnabled: Bool](nslayoutmanager/backgroundlayoutenabled.md)
+- [var backgroundLayoutEnabled: Bool](./backgroundlayoutenabled.md)
   A Boolean value that indicates whether the layout manager generates glyphs and lays them out when the app’s run loop is idle.
-- [var limitsLayoutForSuspiciousContents: Bool](nslayoutmanager/limitslayoutforsuspiciouscontents.md)
+- [var limitsLayoutForSuspiciousContents: Bool](./limitslayoutforsuspiciouscontents.md)
   A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input.
-- [var usesDefaultHyphenation: Bool](nslayoutmanager/usesdefaulthyphenation.md)
+- [var usesDefaultHyphenation: Bool](./usesdefaulthyphenation.md)
   A Boolean value that indicates whether the layout manager uses the default hyphenation rules to wrap lines.
 
 

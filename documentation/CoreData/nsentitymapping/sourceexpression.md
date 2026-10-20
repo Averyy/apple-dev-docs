@@ -1,7 +1,8 @@
 # sourceExpression
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source expression for the entity mapping.
 
@@ -10,7 +11,7 @@ The source expression for the entity mapping.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ The source expression for the entity mapping.
 var sourceExpression: NSExpression? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSExpression * sourceExpression;
+```
+
 #### Discussion
 
 The source expression is used to obtain the collection of managed objects to process through the mapping. The expression can be a fetch request expression, or any other expression that evaluates to a collection.
 
 ## See Also
 
-- [var sourceEntityName: String?](nsentitymapping/sourceentityname.md)
+### Managing Source Information
+- [var sourceEntityName: String?](./sourceentityname.md)
   The source entity name for the entity mapping.
-- [var sourceEntityVersionHash: Data?](nsentitymapping/sourceentityversionhash.md)
+- [var sourceEntityVersionHash: Data?](./sourceentityversionhash.md)
   The version hash of the source entity for the entity mapping.
 
 

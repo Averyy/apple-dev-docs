@@ -1,7 +1,8 @@
 # CMProjectionType.halfEquirectangular
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Video content displays as a 180 degree equirectangular projection.
 
@@ -20,17 +21,22 @@ Video content displays as a 180 degree equirectangular projection.
 case halfEquirectangular
 ```
 
+```c
+kCMProjectionType_HalfEquirectangular
+```
+
 #### Discussion
 
 The video frames map onto the interior of a 3D half-sphere projection.
 
 ## See Also
 
-- [CMProjectionType.rectangular](cmprojectiontype/rectangular.md)
+### Projection Surfaces
+- [CMProjectionType.rectangular](./rectangular.md)
   Video content displays on a flat, rectangular 2D surface.
-- [CMProjectionType.equirectangular](cmprojectiontype/equirectangular.md)
+- [CMProjectionType.equirectangular](./equirectangular.md)
   Video content displays as a 360 degree equirectangular projection.
-- [CMProjectionType.fisheye](cmprojectiontype/fisheye.md)
+- [CMProjectionType.fisheye](./fisheye.md)
   Video content displays as a fisheye projection.
 
 

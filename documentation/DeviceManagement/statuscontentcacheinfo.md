@@ -1,7 +1,8 @@
 # StatusContentCacheInfo
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports information about the Content Cache service.
 
@@ -10,13 +11,13 @@ The status item that reports information about the Content Cache service.
 
 ## Declaration
 
-```swift
+```
 object StatusContentCacheInfo
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +28,7 @@ object StatusContentCacheInfo
 | Allowed in system scope | macOS |
 | Allowed in user scope | N/A |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -49,7 +50,7 @@ object StatusContentCacheInfo
 ## Topics
 
 ### Objects
-- [object StatusContentCacheInfoContentCacheInfoObject](statuscontentcacheinfocontentcacheinfoobject.md)
+- [object StatusContentCacheInfoContentCacheInfoObject](./statuscontentcacheinfocontentcacheinfoobject.md)
   A dictionary that contains info about the usage of the Content Cache on the device
 
 ## Properties
@@ -58,11 +59,12 @@ object StatusContentCacheInfo
 
 ## See Also
 
-- [object StatusContentCacheParents](statuscontentcacheparents.md)
+### Content cache items
+- [object StatusContentCacheParents](./statuscontentcacheparents.md)
   The status item that reports information about the Content Cache service parent caches.
-- [object StatusContentCachePeers](statuscontentcachepeers.md)
+- [object StatusContentCachePeers](./statuscontentcachepeers.md)
   The status item that reports information about the Content Cache service peer caches.
-- [object StatusContentCacheStatus](statuscontentcachestatus.md)
+- [object StatusContentCacheStatus](./statuscontentcachestatus.md)
   The status item that reports the status of the Content Cache service.
 
 

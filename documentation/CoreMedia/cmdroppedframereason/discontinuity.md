@@ -1,7 +1,8 @@
 # CMDroppedFrameReason.discontinuity
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unknown number of frames were dropped.
 

@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current progress of the AVAssetWritingPlanner.
 
@@ -17,6 +18,10 @@ The current progress of the AVAssetWritingPlanner.
 
 ```swift
 var progress: AVAssetWritingPlannerProgress { get }
+```
+
+```objc
+@property (readonly) AVAssetWritingPlannerProgress * progress;
 ```
 
 #### Discussion

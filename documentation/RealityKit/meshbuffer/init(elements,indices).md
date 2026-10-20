@@ -1,7 +1,8 @@
 # init(elements:indices:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create buffer from an array of element values and an array of indices into that value array.
 
@@ -14,6 +15,54 @@ Create buffer from an array of element values and an array of indices into that 
 - visionOS 1.0+
 
 ## Declaration
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+Available when `Element` is `MeshJointInfluence`.
+
+**Other overloads**:
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
+
+```swift
+init(elements: [Element], indices: [UInt32])
+```
 
 ```swift
 init(elements: [Element], indices: [UInt32])

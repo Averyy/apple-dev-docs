@@ -1,7 +1,8 @@
 # CXPlayDTMFCallAction.ActionType
 
 **Framework**: CallKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of events that generate dial tones.
 
@@ -18,27 +19,31 @@ The types of events that generate dial tones.
 enum ActionType
 ```
 
+```c
+enum CXPlayDTMFCallActionType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CXPlayDTMFCallAction.ActionType.singleTone](cxplaydtmfcallaction/actiontype/singletone.md)
+- [CXPlayDTMFCallAction.ActionType.singleTone](./actiontype/singletone.md)
   Indicates that the user tapped a digit on the in-call keypad.
-- [CXPlayDTMFCallAction.ActionType.softPause](cxplaydtmfcallaction/actiontype/softpause.md)
+- [CXPlayDTMFCallAction.ActionType.softPause](./actiontype/softpause.md)
   Indicates that the user included digits after a soft pause in their dial string. A soft pause is indicated by a comma (`,`) and waits a few seconds before dialing the additional digits.
-- [CXPlayDTMFCallAction.ActionType.hardPause](cxplaydtmfcallaction/actiontype/hardpause.md)
+- [CXPlayDTMFCallAction.ActionType.hardPause](./actiontype/hardpause.md)
   Indicates that the user included digits after a hard pause in their dial string. A hard pause is indicated by a semicolon (`;`) and waits for further user interaction before dialing the additional digits.
 ### Initializers
-- [init?(rawValue: Int)](cxplaydtmfcallaction/actiontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./actiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

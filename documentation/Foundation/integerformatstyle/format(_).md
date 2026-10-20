@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats an integer, using this style.
 
@@ -20,13 +21,15 @@ Formats an integer, using this style.
 func format(_ value: Value) -> String
 ```
 
+Available when `Value` conforms to `BinaryInteger`.
+
 #### Return Value
 
 A string representation of `value`, formatted according to the style’s configuration.
 
 #### Discussion
 
-Use this method when you want to create a single style instance and use it to format multiple integers. The following example creates a style that uses the `en_US` locale, and adds the [`compactName`](numberformatstyleconfiguration/notation/compactname.md) modifier. It applies this style to all the integers in an array.
+Use this method when you want to create a single style instance and use it to format multiple integers. The following example creates a style that uses the `en_US` locale, and adds the [`compactName`](../numberformatstyleconfiguration/notation/compactname.md) modifier. It applies this style to all the integers in an array.
 
 ```swift
 let compactNameStyle = IntegerFormatStyle<Int>(
@@ -37,7 +40,7 @@ let formattedNums = nums.map { compactNameStyle.format($0) } // ["100", "1K", "1
 
 ```
 
-To format a single integer, use the [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) instance method [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73), passing in an instance of [`IntegerFormatStyle`](integerformatstyle.md), or [`formatted()`](https://developer.apple.com/documentation/swift/binaryinteger/formatted()) to use a default style.
+To format a single integer, use the [`BinaryInteger`](../../Swift/binaryinteger.md) instance method [`formatted(_:)`](../../Swift/binaryinteger/formatted%28_%29-4qd73.md), passing in an instance of [`IntegerFormatStyle`](../integerformatstyle.md), or [`formatted()`](../../Swift/binaryinteger/formatted%28%29.md) to use a default style.
 
 ## Parameters
 

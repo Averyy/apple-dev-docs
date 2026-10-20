@@ -1,7 +1,8 @@
 # maximumDatagramSize
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieve the maximum datagram size that can be sent on the channel. Any datagrams sent should be less than or equal to this size.
 

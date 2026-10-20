@@ -1,7 +1,8 @@
 # init(modules:options:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an analyzer.
 
@@ -26,11 +27,12 @@ convenience init(modules: [any SpeechModule], options: SpeechAnalyzer.Options? =
 
 ## See Also
 
-- [convenience init<InputSequence>(inputSequence: InputSequence, modules: [any SpeechModule], options: SpeechAnalyzer.Options?, analysisContext: AnalysisContext, volatileRangeChangedHandler: sending ((CMTimeRange, Bool, Bool) -> Void)?)](speechanalyzer/init(inputsequence:modules:options:analysiscontext:volatilerangechangedhandler:).md)
+### Creating an analyzer
+- [convenience init<InputSequence>(inputSequence: InputSequence, modules: [any SpeechModule], options: SpeechAnalyzer.Options?, analysisContext: AnalysisContext, volatileRangeChangedHandler: sending ((CMTimeRange, Bool, Bool) -> Void)?)](./init%28inputsequence,modules,options,analysiscontext,volatilerangechangedhandler%29.md)
   Creates an analyzer and begins analysis.
-- [convenience init(inputAudioFile: AVAudioFile, modules: [any SpeechModule], options: SpeechAnalyzer.Options?, analysisContext: AnalysisContext, finishAfterFile: Bool, volatileRangeChangedHandler: sending ((CMTimeRange, Bool, Bool) -> Void)?) async throws](speechanalyzer/init(inputaudiofile:modules:options:analysiscontext:finishafterfile:volatilerangechangedhandler:).md)
+- [convenience init(inputAudioFile: AVAudioFile, modules: [any SpeechModule], options: SpeechAnalyzer.Options?, analysisContext: AnalysisContext, finishAfterFile: Bool, volatileRangeChangedHandler: sending ((CMTimeRange, Bool, Bool) -> Void)?) async throws](./init%28inputaudiofile,modules,options,analysiscontext,finishafterfile,volatilerangechangedhandler%29.md)
   Creates an analyzer and begins analysis on an audio file.
-- [SpeechAnalyzer.Options](speechanalyzer/options.md)
+- [SpeechAnalyzer.Options](./options.md)
   Analysis processing options.
 
 

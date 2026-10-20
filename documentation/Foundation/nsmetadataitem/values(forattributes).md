@@ -1,7 +1,8 @@
 # values(forAttributes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary containing the key-value pairs for the attribute names specified by a given array of keys.
 
@@ -20,6 +21,10 @@ Returns a dictionary containing the key-value pairs for the attribute names spec
 func values(forAttributes keys: [String]) -> [String : Any]?
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) valuesForAttributes:(NSArray<NSString *> *) keys;
+```
+
 #### Return Value
 
 A dictionary containing the key-value pairs for the attribute names specified by `keys`.
@@ -30,9 +35,10 @@ A dictionary containing the key-value pairs for the attribute names specified by
 
 ## See Also
 
-- [var attributes: [String]](nsmetadataitem/attributes.md)
+### Getting Item Attributes
+- [var attributes: [String]](./attributes.md)
   An array containing the attribute keys for the metadata item’s values.
-- [func value(forAttribute: String) -> Any?](nsmetadataitem/value(forattribute:).md)
+- [func value(forAttribute: String) -> Any?](./value%28forattribute%29.md)
   Returns the receiver’s metadata attribute name specified by a given key.
 
 

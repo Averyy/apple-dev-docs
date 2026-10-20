@@ -1,7 +1,8 @@
 # cellularServiceID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cellular service identifier associated with the notification.
 
@@ -16,7 +17,8 @@ let cellularServiceID: CellularServiceID
 
 ## See Also
 
-- [let isViable: Bool](smsservice/viabilitynotification/isviable.md)
+### Accessing notification properties
+- [let isViable: Bool](./isviable.md)
   A Boolean value that indicates whether the device can peform SMS operations at this time.
 
 

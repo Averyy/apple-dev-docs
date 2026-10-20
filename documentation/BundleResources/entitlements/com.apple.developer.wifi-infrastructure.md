@@ -1,7 +1,8 @@
 # com.apple.developer.wifi-infrastructure
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The entitlement the system requires for an app to use the Wi-Fi Infrastructure framework.
 
@@ -9,15 +10,20 @@ The entitlement the system requires for an app to use the Wi-Fi Infrastructure f
 - iOS 26.2+
 - iPadOS 26.2+
 
+## Details
 
+- **Name**: `com.apple.developer.wifi-infrastructure`
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `WiFiNetworkSharing`: A string that states your app’s intent to share Wi-Fi network data to an accessory.
 
 #### Discussion
 
 This entitlement works with the Wi-Fi Infrastructure framework, which enables your app and accessory to share Wi-Fi networks from the host device.
 
-To use Wi-Fi Infrastructure, add this entitlement to your app by enabling the Wi-Fi Infrastructure capability on your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+To use Wi-Fi Infrastructure, add this entitlement to your app by enabling the Wi-Fi Infrastructure capability on your target in Xcode. For more information, see [Adding capabilities to your app](../../Xcode/adding-capabilities-to-your-app.md).
 
 ##### Transport Security
 
@@ -26,7 +32,7 @@ To use Wi-Fi network sharing, an accessory must be paired and use Bluetooth Secu
 - Secure Simple Pairing
 - Encryption of all data with AES-128
 
-For information on Bluetooth security modes, see [`NIST Special Publication 800-121: Guide to Bluetooth Security`](https://developer.apple.comhttps://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-121r2-upd1.pdf).
+For information on Bluetooth security modes, see [NIST Special Publication 800-121: Guide to Bluetooth Security](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-121r2-upd1.pdf).
 
 
 ---

@@ -1,7 +1,8 @@
 # PaymentCardReadResult.CardExpirationState
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the expiration state of the card that the system read.
 
@@ -19,22 +20,22 @@ enum CardExpirationState
 ## Topics
 
 ### Enumeration Cases
-- [PaymentCardReadResult.CardExpirationState.expired](paymentcardreadresult/cardexpirationstate-swift.enum/expired.md)
+- [PaymentCardReadResult.CardExpirationState.expired](./cardexpirationstate-swift.enum/expired.md)
   The card is expired.
-- [PaymentCardReadResult.CardExpirationState.invalid](paymentcardreadresult/cardexpirationstate-swift.enum/invalid.md)
+- [PaymentCardReadResult.CardExpirationState.invalid](./cardexpirationstate-swift.enum/invalid.md)
   The card expiration date is invalid.
-- [PaymentCardReadResult.CardExpirationState.notExpired](paymentcardreadresult/cardexpirationstate-swift.enum/notexpired.md)
+- [PaymentCardReadResult.CardExpirationState.notExpired](./cardexpirationstate-swift.enum/notexpired.md)
   The card is valid.
-- [PaymentCardReadResult.CardExpirationState.unknown](paymentcardreadresult/cardexpirationstate-swift.enum/unknown.md)
+- [PaymentCardReadResult.CardExpirationState.unknown](./cardexpirationstate-swift.enum/unknown.md)
   The card expiration date is not available.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

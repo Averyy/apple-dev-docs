@@ -1,22 +1,29 @@
 # screenRecorderDidChangeAvailability(_:)
 
 **Framework**: ReplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the recorder has changed states between disabled and enabled.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 27.0
+- iPadOS 9.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use ScreenCaptureKit instead
 
 ## Declaration
 
 ```swift
 optional func screenRecorderDidChangeAvailability(_ screenRecorder: RPScreenRecorder)
+```
+
+```objc
+- (void) screenRecorderDidChangeAvailability:(RPScreenRecorder *) screenRecorder;
 ```
 
 #### Discussion
@@ -25,13 +32,14 @@ Screen recording can be unavailable due to unsupported hardware, the user’s de
 
 ## Parameters
 
-- `screenRecorder`: The [`RPScreenRecorder`](rpscreenrecorder.md) instance that has changed state.
+- `screenRecorder`: The [`RPScreenRecorder`](../rpscreenrecorder.md) instance that has changed state.
 
 ## See Also
 
-- [func screenRecorder(RPScreenRecorder, didStopRecordingWith: RPPreviewViewController?, error: (any Error)?)](rpscreenrecorderdelegate/screenrecorder(_:didstoprecordingwith:error:).md)
+### Responding to Recording Changes
+- [func screenRecorder(RPScreenRecorder, didStopRecordingWith: RPPreviewViewController?, error: (any Error)?)](./screenrecorder%28_,didstoprecordingwith,error%29.md)
   Indicates that the screen recording has stopped.
-- [func screenRecorder(RPScreenRecorder, didStopRecordingWithError: any Error, previewViewController: RPPreviewViewController?)](rpscreenrecorderdelegate/screenrecorder(_:didstoprecordingwitherror:previewviewcontroller:).md)
+- [func screenRecorder(RPScreenRecorder, didStopRecordingWithError: any Error, previewViewController: RPPreviewViewController?)](./screenrecorder%28_,didstoprecordingwitherror,previewviewcontroller%29.md)
   Indicates that the screen recording has stopped.
 
 

@@ -1,13 +1,14 @@
 # init(metadata:action:content:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,7 +19,8 @@ init(metadata: [PKShareablePassMetadata], action: PKAddShareablePassConfiguratio
 
 ## See Also
 
-- [AsyncShareablePassConfiguration.Result](asyncshareablepassconfiguration/result.md)
+### Creating the configuration
+- [AsyncShareablePassConfiguration.Result](./result.md)
 
 
 ---

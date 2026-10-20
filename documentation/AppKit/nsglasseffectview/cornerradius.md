@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of curvature for all corners of the glass.
 
@@ -12,6 +13,10 @@ The amount of curvature for all corners of the glass.
 
 ```swift
 var cornerRadius: CGFloat { get set }
+```
+
+```objc
+@property CGFloat cornerRadius;
 ```
 
 

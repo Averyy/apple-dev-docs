@@ -1,12 +1,15 @@
 # sideBySideButtons(title:message:primaryButton:secondaryButton:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a side by side button alert.
 
 **Availability**:
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use a [`View`](../view.md) modifier like [`alert(_:isPresented:presenting:actions:message:)`](../view/alert%28_,ispresented,presenting,actions,message%29-8584l.md) instead.
 
 ## Declaration
 
@@ -27,9 +30,10 @@ The system determines the visual ordering of the buttons.
 
 ## See Also
 
-- [init(title: Text, message: Text?, dismissButton: Alert.Button?)](alert/init(title:message:dismissbutton:).md)
+### Creating an alert
+- [init(title: Text, message: Text?, dismissButton: Alert.Button?)](./init%28title,message,dismissbutton%29.md)
   Creates an alert with one button.
-- [init(title: Text, message: Text?, primaryButton: Alert.Button, secondaryButton: Alert.Button)](alert/init(title:message:primarybutton:secondarybutton:).md)
+- [init(title: Text, message: Text?, primaryButton: Alert.Button, secondaryButton: Alert.Button)](./init%28title,message,primarybutton,secondarybutton%29.md)
   Creates an alert with two buttons.
 
 

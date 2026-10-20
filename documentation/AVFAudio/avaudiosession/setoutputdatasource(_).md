@@ -1,7 +1,8 @@
 # setOutputDataSource(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the output data source for an audio session.
 
@@ -18,9 +19,13 @@ Sets the output data source for an audio session.
 func setOutputDataSource(_ dataSource: AVAudioSessionDataSourceDescription?) throws
 ```
 
+```objc
+- (BOOL) setOutputDataSource:(AVAudioSessionDataSourceDescription *) dataSource error:(NSError **) outError;
+```
+
 #### Discussion
 
-You can change the output source to one of the [`AVAudioSessionDataSourceDescription`](avaudiosessiondatasourcedescription.md) objects in the [`outputDataSources`](avaudiosession/outputdatasources.md) array. Only certain USB accessories support this feature.
+You can change the output source to one of the [`AVAudioSessionDataSourceDescription`](../avaudiosessiondatasourcedescription.md) objects in the [`outputDataSources`](./outputdatasources.md) array. Only certain USB accessories support this feature.
 
 ## Parameters
 
@@ -28,13 +33,14 @@ You can change the output source to one of the [`AVAudioSessionDataSourceDescrip
 
 ## See Also
 
-- [var outputDataSources: [AVAudioSessionDataSourceDescription]?](avaudiosession/outputdatasources.md)
+### Configuring outputs
+- [var outputDataSources: [AVAudioSessionDataSourceDescription]?](./outputdatasources.md)
   An array of available output data sources for the current audio route.
-- [var outputDataSource: AVAudioSessionDataSourceDescription?](avaudiosession/outputdatasource.md)
+- [var outputDataSource: AVAudioSessionDataSourceDescription?](./outputdatasource.md)
   The currently selected output data source.
-- [class AVAudioSessionDataSourceDescription](avaudiosessiondatasourcedescription.md)
+- [class AVAudioSessionDataSourceDescription](../avaudiosessiondatasourcedescription.md)
   An object that defines a data source for an audio input or output, giving information such as the source’s name, location, and orientation.
-- [func overrideOutputAudioPort(AVAudioSession.PortOverride) throws](avaudiosession/overrideoutputaudioport(_:).md)
+- [func overrideOutputAudioPort(AVAudioSession.PortOverride) throws](./overrideoutputaudioport%28_%29.md)
   Temporarily changes the current audio route.
 
 

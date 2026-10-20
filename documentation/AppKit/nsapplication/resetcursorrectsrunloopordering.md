@@ -1,12 +1,13 @@
 # resetCursorRectsRunLoopOrdering
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The priority at which cursor rects are reset.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The priority at which cursor rects are reset.
 class var resetCursorRectsRunLoopOrdering: Int { get }
 ```
 
+```c
+NSResetCursorRectsRunLoopOrdering
+```
+
 ## See Also
 
-- [class var displayWindowRunLoopOrdering: Int](nsapplication/displaywindowrunloopordering.md)
+### Managing Run Loops
+- [class var displayWindowRunLoopOrdering: Int](./displaywindowrunloopordering.md)
   The priority at which windows are displayed.
-- [class var updateWindowsRunLoopOrdering: Int](nsapplication/updatewindowsrunloopordering.md)
+- [class var updateWindowsRunLoopOrdering: Int](./updatewindowsrunloopordering.md)
   Run-loop message priority for handling window updates.
 
 

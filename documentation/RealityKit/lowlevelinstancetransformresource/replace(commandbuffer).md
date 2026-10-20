@@ -1,7 +1,8 @@
 # replace(commandBuffer:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Metal buffer you populate on the GPU with the new transform data.
 
@@ -31,7 +32,8 @@ Upon return the transform data is undefined; the caller is responsible for popul
 
 ## See Also
 
-- [func replace<R, E>((inout MutableSpan<float4x4>) throws(E) -> R) throws(E) -> R](lowlevelinstancetransformresource/replace(_:).md)
+### Replacing transform data
+- [func replace<R, E>((inout MutableSpan<float4x4>) throws(E) -> R) throws(E) -> R](./replace%28_%29.md)
   Replaces all transform data synchronously on the CPU.
 
 

@@ -1,24 +1,26 @@
 # Center
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 Center
 ```
 
 ## See Also
 
-- [CenterTopFront](videodriverkit/iouservideochannellabel/centertopfront.md)
-- [VerticalHeightCenter](videodriverkit/iouservideochannellabel/verticalheightcenter.md)
+### Center channels
+- [CenterTopFront](./centertopfront.md)
+- [VerticalHeightCenter](./verticalheightcenter.md)
   WAVE: “Top Front Center”
-- [CenterTopMiddle](videodriverkit/iouservideochannellabel/centertopmiddle.md)
-- [CenterTopRear](videodriverkit/iouservideochannellabel/centertoprear.md)
+- [CenterTopMiddle](./centertopmiddle.md)
+- [CenterTopRear](./centertoprear.md)
 
 
 ---

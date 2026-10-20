@@ -1,7 +1,8 @@
 # CKSyncEngine.PendingRecordZoneChange
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes an unsent record modification.
 
@@ -11,7 +12,7 @@ Describes an unsent record modification.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,41 +24,42 @@ enum PendingRecordZoneChange
 ## Topics
 
 ### Record change types
-- [enum CKSyncEnginePendingRecordZoneChangeType](cksyncenginependingrecordzonechangetype.md)
+- [enum CKSyncEnginePendingRecordZoneChangeType](../cksyncenginependingrecordzonechangetype.md)
   A type of change in a record zone that needs to be sent to the server.
 ### Debugging the change
-- [var description: String](cksyncengine-5sie5/pendingrecordzonechange/description.md)
+- [var description: String](./pendingrecordzonechange/description.md)
   A textual description of the change that’s suitable for logging.
 ### Enumeration Cases
-- [CKSyncEngine.PendingRecordZoneChange.deleteRecord(_:)](cksyncengine-5sie5/pendingrecordzonechange/deleterecord(_:).md)
+- [CKSyncEngine.PendingRecordZoneChange.deleteRecord(_:)](./pendingrecordzonechange/deleterecord%28_%29.md)
   A pending deletion of a record from the server.
-- [CKSyncEngine.PendingRecordZoneChange.saveRecord(_:)](cksyncengine-5sie5/pendingrecordzonechange/saverecord(_:).md)
+- [CKSyncEngine.PendingRecordZoneChange.saveRecord(_:)](./pendingrecordzonechange/saverecord%28_%29.md)
   A pending save of a record to the server.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/pendingrecordzonechange/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./pendingrecordzonechange/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](cksyncengine-5sie5/state-swift.class/add(pendingdatabasechanges:).md)
+### Manipulating pending changes
+- [func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](./state-swift.class/add%28pendingdatabasechanges%29.md)
   Adds the specified database changes to the state.
-- [func remove(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](cksyncengine-5sie5/state-swift.class/remove(pendingdatabasechanges:).md)
+- [func remove(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])](./state-swift.class/remove%28pendingdatabasechanges%29.md)
   Removes the specified database changes from the state.
-- [CKSyncEngine.PendingDatabaseChange](cksyncengine-5sie5/pendingdatabasechange.md)
+- [CKSyncEngine.PendingDatabaseChange](./pendingdatabasechange.md)
   Describes an unsent database modification.
-- [func add(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](cksyncengine-5sie5/state-swift.class/add(pendingrecordzonechanges:).md)
+- [func add(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](./state-swift.class/add%28pendingrecordzonechanges%29.md)
   Adds the specified record zone changes to the state.
-- [func remove(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](cksyncengine-5sie5/state-swift.class/remove(pendingrecordzonechanges:).md)
+- [func remove(pendingRecordZoneChanges: [CKSyncEngine.PendingRecordZoneChange])](./state-swift.class/remove%28pendingrecordzonechanges%29.md)
   Removes the specified record zone changes from the state.
 
 

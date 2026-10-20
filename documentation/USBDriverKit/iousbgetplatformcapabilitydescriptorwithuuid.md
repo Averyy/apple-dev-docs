@@ -1,21 +1,23 @@
 # IOUSBGetPlatformCapabilityDescriptorWithUUID
 
 **Framework**: USBDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 const IOUSBPlatformCapabilityDescriptor *IOUSBGetPlatformCapabilityDescriptorWithUUID(const IOUSBBOSDescriptor *bosDescriptor, uuid_t uuid);
 ```
 
 ## See Also
 
-- [IOUSBGetEndpointSynchronizationType](iousbgetendpointsynchronizationtype.md)
-- [IOUSBGetEndpointUsageType](iousbgetendpointusagetype.md)
+### Functions
+- [IOUSBGetEndpointSynchronizationType](./iousbgetendpointsynchronizationtype.md)
+- [IOUSBGetEndpointUsageType](./iousbgetendpointusagetype.md)
 
 
 ---

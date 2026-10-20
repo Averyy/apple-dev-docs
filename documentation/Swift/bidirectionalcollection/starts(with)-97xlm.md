@@ -1,7 +1,8 @@
 # starts(with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the initial elements of this collection are a match for the regex created by the given closure.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether the initial elements of this collecti
 ```swift
 func starts(@RegexComponentBuilder with content: () -> some RegexComponent) -> Bool
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

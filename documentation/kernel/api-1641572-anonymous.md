@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,41 +18,41 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDUsage_Sprt_10Iron](1641572-anonymous/khidusage_sprt_10iron.md)
-- [kHIDUsage_Sprt_11Iron](1641572-anonymous/khidusage_sprt_11iron.md)
-- [kHIDUsage_Sprt_1Iron](1641572-anonymous/khidusage_sprt_1iron.md)
-- [kHIDUsage_Sprt_1Wood](1641572-anonymous/khidusage_sprt_1wood.md)
-- [kHIDUsage_Sprt_2Iron](1641572-anonymous/khidusage_sprt_2iron.md)
-- [kHIDUsage_Sprt_3Iron](1641572-anonymous/khidusage_sprt_3iron.md)
-- [kHIDUsage_Sprt_3Wood](1641572-anonymous/khidusage_sprt_3wood.md)
-- [kHIDUsage_Sprt_4Iron](1641572-anonymous/khidusage_sprt_4iron.md)
-- [kHIDUsage_Sprt_5Iron](1641572-anonymous/khidusage_sprt_5iron.md)
-- [kHIDUsage_Sprt_5Wood](1641572-anonymous/khidusage_sprt_5wood.md)
-- [kHIDUsage_Sprt_6Iron](1641572-anonymous/khidusage_sprt_6iron.md)
-- [kHIDUsage_Sprt_7Iron](1641572-anonymous/khidusage_sprt_7iron.md)
-- [kHIDUsage_Sprt_7Wood](1641572-anonymous/khidusage_sprt_7wood.md)
-- [kHIDUsage_Sprt_8Iron](1641572-anonymous/khidusage_sprt_8iron.md)
-- [kHIDUsage_Sprt_9Iron](1641572-anonymous/khidusage_sprt_9iron.md)
-- [kHIDUsage_Sprt_9Wood](1641572-anonymous/khidusage_sprt_9wood.md)
-- [kHIDUsage_Sprt_BaseballBat](1641572-anonymous/khidusage_sprt_baseballbat.md)
-- [kHIDUsage_Sprt_GolfClub](1641572-anonymous/khidusage_sprt_golfclub.md)
-- [kHIDUsage_Sprt_LoftWedge](1641572-anonymous/khidusage_sprt_loftwedge.md)
-- [kHIDUsage_Sprt_Oar](1641572-anonymous/khidusage_sprt_oar.md)
-- [kHIDUsage_Sprt_PowerWedge](1641572-anonymous/khidusage_sprt_powerwedge.md)
-- [kHIDUsage_Sprt_Putter](1641572-anonymous/khidusage_sprt_putter.md)
-- [kHIDUsage_Sprt_Rate](1641572-anonymous/khidusage_sprt_rate.md)
-- [kHIDUsage_Sprt_Reserved](1641572-anonymous/khidusage_sprt_reserved.md)
-- [kHIDUsage_Sprt_RowingMachine](1641572-anonymous/khidusage_sprt_rowingmachine.md)
-- [kHIDUsage_Sprt_SandWedge](1641572-anonymous/khidusage_sprt_sandwedge.md)
-- [kHIDUsage_Sprt_Slope](1641572-anonymous/khidusage_sprt_slope.md)
-- [kHIDUsage_Sprt_StickFaceAngle](1641572-anonymous/khidusage_sprt_stickfaceangle.md)
-- [kHIDUsage_Sprt_StickFollowThrough](1641572-anonymous/khidusage_sprt_stickfollowthrough.md)
-- [kHIDUsage_Sprt_StickHeelOrToe](1641572-anonymous/khidusage_sprt_stickheelortoe.md)
-- [kHIDUsage_Sprt_StickHeight](1641572-anonymous/khidusage_sprt_stickheight.md)
-- [kHIDUsage_Sprt_StickSpeed](1641572-anonymous/khidusage_sprt_stickspeed.md)
-- [kHIDUsage_Sprt_StickTempo](1641572-anonymous/khidusage_sprt_sticktempo.md)
-- [kHIDUsage_Sprt_StickType](1641572-anonymous/khidusage_sprt_sticktype.md)
-- [kHIDUsage_Sprt_Treadmill](1641572-anonymous/khidusage_sprt_treadmill.md)
+- [kHIDUsage_Sprt_10Iron](./api-1641572-anonymous/khidusage_sprt_10iron.md)
+- [kHIDUsage_Sprt_11Iron](./api-1641572-anonymous/khidusage_sprt_11iron.md)
+- [kHIDUsage_Sprt_1Iron](./api-1641572-anonymous/khidusage_sprt_1iron.md)
+- [kHIDUsage_Sprt_1Wood](./api-1641572-anonymous/khidusage_sprt_1wood.md)
+- [kHIDUsage_Sprt_2Iron](./api-1641572-anonymous/khidusage_sprt_2iron.md)
+- [kHIDUsage_Sprt_3Iron](./api-1641572-anonymous/khidusage_sprt_3iron.md)
+- [kHIDUsage_Sprt_3Wood](./api-1641572-anonymous/khidusage_sprt_3wood.md)
+- [kHIDUsage_Sprt_4Iron](./api-1641572-anonymous/khidusage_sprt_4iron.md)
+- [kHIDUsage_Sprt_5Iron](./api-1641572-anonymous/khidusage_sprt_5iron.md)
+- [kHIDUsage_Sprt_5Wood](./api-1641572-anonymous/khidusage_sprt_5wood.md)
+- [kHIDUsage_Sprt_6Iron](./api-1641572-anonymous/khidusage_sprt_6iron.md)
+- [kHIDUsage_Sprt_7Iron](./api-1641572-anonymous/khidusage_sprt_7iron.md)
+- [kHIDUsage_Sprt_7Wood](./api-1641572-anonymous/khidusage_sprt_7wood.md)
+- [kHIDUsage_Sprt_8Iron](./api-1641572-anonymous/khidusage_sprt_8iron.md)
+- [kHIDUsage_Sprt_9Iron](./api-1641572-anonymous/khidusage_sprt_9iron.md)
+- [kHIDUsage_Sprt_9Wood](./api-1641572-anonymous/khidusage_sprt_9wood.md)
+- [kHIDUsage_Sprt_BaseballBat](./api-1641572-anonymous/khidusage_sprt_baseballbat.md)
+- [kHIDUsage_Sprt_GolfClub](./api-1641572-anonymous/khidusage_sprt_golfclub.md)
+- [kHIDUsage_Sprt_LoftWedge](./api-1641572-anonymous/khidusage_sprt_loftwedge.md)
+- [kHIDUsage_Sprt_Oar](./api-1641572-anonymous/khidusage_sprt_oar.md)
+- [kHIDUsage_Sprt_PowerWedge](./api-1641572-anonymous/khidusage_sprt_powerwedge.md)
+- [kHIDUsage_Sprt_Putter](./api-1641572-anonymous/khidusage_sprt_putter.md)
+- [kHIDUsage_Sprt_Rate](./api-1641572-anonymous/khidusage_sprt_rate.md)
+- [kHIDUsage_Sprt_Reserved](./api-1641572-anonymous/khidusage_sprt_reserved.md)
+- [kHIDUsage_Sprt_RowingMachine](./api-1641572-anonymous/khidusage_sprt_rowingmachine.md)
+- [kHIDUsage_Sprt_SandWedge](./api-1641572-anonymous/khidusage_sprt_sandwedge.md)
+- [kHIDUsage_Sprt_Slope](./api-1641572-anonymous/khidusage_sprt_slope.md)
+- [kHIDUsage_Sprt_StickFaceAngle](./api-1641572-anonymous/khidusage_sprt_stickfaceangle.md)
+- [kHIDUsage_Sprt_StickFollowThrough](./api-1641572-anonymous/khidusage_sprt_stickfollowthrough.md)
+- [kHIDUsage_Sprt_StickHeelOrToe](./api-1641572-anonymous/khidusage_sprt_stickheelortoe.md)
+- [kHIDUsage_Sprt_StickHeight](./api-1641572-anonymous/khidusage_sprt_stickheight.md)
+- [kHIDUsage_Sprt_StickSpeed](./api-1641572-anonymous/khidusage_sprt_stickspeed.md)
+- [kHIDUsage_Sprt_StickTempo](./api-1641572-anonymous/khidusage_sprt_sticktempo.md)
+- [kHIDUsage_Sprt_StickType](./api-1641572-anonymous/khidusage_sprt_sticktype.md)
+- [kHIDUsage_Sprt_Treadmill](./api-1641572-anonymous/khidusage_sprt_treadmill.md)
 
 
 ---

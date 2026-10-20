@@ -1,7 +1,8 @@
 # .|=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Replaces `a` with the pointwise logical disjunction of `a` and `b`.
 
@@ -19,6 +20,8 @@ Replaces `a` with the pointwise logical disjunction of `a` and `b`.
 ```swift
 static func .|= (a: inout SIMDMask<Storage>, b: Bool)
 ```
+
+Available when `Storage` conforms to `SIMD`, `Storage.Scalar` conforms to `FixedWidthInteger`, and `Storage.Scalar` conforms to `SignedInteger`.
 
 #### Discussion
 

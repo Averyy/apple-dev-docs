@@ -1,7 +1,8 @@
 # remove(atOffsets:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all the elements at the specified offsets from the collection.
 
@@ -20,9 +21,11 @@ Removes all the elements at the specified offsets from the collection.
 mutating func remove(atOffsets offsets: IndexSet)
 ```
 
+Available when `Self` conforms to `MutableCollection`.
+
 #### Discussion
 
-> **Note**: O(*n*) where *n* is the length of the collection.
+> **Complexity**: O(*n*) where *n* is the length of the collection.
 
 
 ---

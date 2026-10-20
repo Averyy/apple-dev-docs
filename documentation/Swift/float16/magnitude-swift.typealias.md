@@ -1,7 +1,8 @@
 # Float16.Magnitude
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that can represent the absolute value of any possible value of the conforming type.
 

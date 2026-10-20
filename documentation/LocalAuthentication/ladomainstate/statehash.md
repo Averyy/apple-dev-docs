@@ -1,7 +1,8 @@
 # stateHash
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains combined state hash data for biometry and companion state hashes.
 
@@ -18,9 +19,13 @@ Contains combined state hash data for biometry and companion state hashes.
 var stateHash: Data? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSData * stateHash;
+```
+
 #### Discussion
 
-```None
+```
      the list of paired companions has not changed.
 ```
 

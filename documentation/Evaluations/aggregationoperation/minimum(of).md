@@ -1,7 +1,8 @@
 # AggregationOperation.minimum(of:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The minimum of the metric’s values.
 

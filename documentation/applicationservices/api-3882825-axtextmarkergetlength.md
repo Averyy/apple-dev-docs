@@ -1,7 +1,8 @@
 # AXTextMarkerGetLength(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func AXTextMarkerGetLength(_ marker: AXTextMarker) -> CFIndex
+```
+
+```c
+CFIndex AXTextMarkerGetLength(AXTextMarkerRef marker);
 ```
 
 

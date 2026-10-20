@@ -1,7 +1,8 @@
 # startMonitoringEvent(with:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register for specific Wi-Fi event notifications.
 
@@ -14,23 +15,28 @@ Register for specific Wi-Fi event notifications.
 func startMonitoringEvent(with type: CWEventType) throws
 ```
 
+```objc
+- (BOOL) startMonitoringEventWithType:(CWEventType) type error:(NSError **) error;
+```
+
 #### Discussion
 
-After registering for notifications, when an event of the given type happens, the client sends an appropriate message to its delegate. See the [`CWEventDelegate`](cweventdelegate.md) protocol for the complete list of possible messages.
+After registering for notifications, when an event of the given type happens, the client sends an appropriate message to its delegate. See the [`CWEventDelegate`](../cweventdelegate.md) protocol for the complete list of possible messages.
 
-Use the [`stopMonitoringEvent(with:)`](cwwificlient/stopmonitoringevent(with:).md) method when you want to stop receiving notifications of the given event type. Use [`stopMonitoringAllEvents()`](cwwificlient/stopmonitoringallevents().md) to stop receiving all notifications from a client.
+Use the [`stopMonitoringEvent(with:)`](./stopmonitoringevent%28with%29.md) method when you want to stop receiving notifications of the given event type. Use [`stopMonitoringAllEvents()`](./stopmonitoringallevents%28%29.md) to stop receiving all notifications from a client.
 
 > **Note**:  In order to monitor Wi-Fi events, you must specify the `com.apple.wifi.events` entitlement for your app.
 
 ## Parameters
 
-- `type`: The type of event notifications to register for. See [`CWEventType`](cweventtype.md) for a list of possible values.
+- `type`: The type of event notifications to register for. See [`CWEventType`](../cweventtype.md) for a list of possible values.
 
 ## See Also
 
-- [func stopMonitoringAllEvents() throws](cwwificlient/stopmonitoringallevents.md)
+### Monitoring Events
+- [func stopMonitoringAllEvents() throws](./stopmonitoringallevents%28%29.md)
   Unregister for all Wi-Fi event notifications.
-- [func stopMonitoringEvent(with: CWEventType) throws](cwwificlient/stopmonitoringevent(with:).md)
+- [func stopMonitoringEvent(with: CWEventType) throws](./stopmonitoringevent%28with%29.md)
   Unregister for specific Wi-Fi event notifications.
 
 

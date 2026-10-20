@@ -1,7 +1,8 @@
 # pathCell(_:willDisplay:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implement this method to customize the Open panel shown by a pop-up–style path.
 
@@ -13,6 +14,10 @@ Implement this method to customize the Open panel shown by a pop-up–style path
 ```swift
 @MainActor
 optional func pathCell(_ pathCell: NSPathCell, willDisplay openPanel: NSOpenPanel)
+```
+
+```objc
+- (void) pathCell:(NSPathCell *) pathCell willDisplayOpenPanel:(NSOpenPanel *) openPanel;
 ```
 
 #### Discussion

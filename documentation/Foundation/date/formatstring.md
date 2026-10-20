@@ -1,7 +1,8 @@
 # Date.FormatString
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a fixed date format string using string interpolation.
 
@@ -22,7 +23,7 @@ struct FormatString
 
 #### Overview
 
-Use `Date.FormatString` with [`Date.VerbatimFormatStyle`](date/verbatimformatstyle.md) or [`Date.ParseStrategy`](date/parsestrategy.md) to create fixed-pattern format strings for dates. You build format strings using string interpolation with date field symbols:
+Use `Date.FormatString` with [`Date.VerbatimFormatStyle`](./verbatimformatstyle.md) or [`Date.ParseStrategy`](./parsestrategy.md) to create fixed-pattern format strings for dates. You build format strings using string interpolation with date field symbols:
 
 ```swift
 let format: Date.FormatString = "\(year: .defaultDigits)-\(month: .twoDigits)-\(day: .twoDigits)"
@@ -31,21 +32,21 @@ let format: Date.FormatString = "\(year: .defaultDigits)-\(month: .twoDigits)-\(
 ## Topics
 
 ### Default Implementations
-- [ExpressibleByStringInterpolation Implementations](date/formatstring/expressiblebystringinterpolation-implementations.md)
+- [ExpressibleByStringInterpolation Implementations](./formatstring/expressiblebystringinterpolation-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../../Swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # shouldShowLinkedContacts
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether to display data from contacts that are linked to the contact being displayed.
 
@@ -17,15 +18,20 @@ Determines whether to display data from contacts that are linked to the contact 
 var shouldShowLinkedContacts: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL shouldShowLinkedContacts;
+```
+
 #### Discussion
 
-By default, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+By default, the value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var allowsEditing: Bool](cncontactviewcontroller/allowsediting.md)
+### Customizing Contact Card
+- [var allowsEditing: Bool](./allowsediting.md)
   Determines whether the user can edit the contact’s information.
-- [var allowsActions: Bool](cncontactviewcontroller/allowsactions.md)
+- [var allowsActions: Bool](./allowsactions.md)
   Determines whether to display buttons for actions such as sending a text message or initiating a FaceTime call.
 
 

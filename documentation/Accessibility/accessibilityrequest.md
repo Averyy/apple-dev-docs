@@ -1,7 +1,8 @@
 # AccessibilityRequest
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -18,41 +19,46 @@
 class AccessibilityRequest
 ```
 
+```objc
+@interface AXRequest : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](accessibilityrequest/init(coder:).md)
+- [init?(coder: NSCoder)](./accessibilityrequest/init%28coder%29.md)
 ### Instance Properties
-- [var technology: AccessibilityTechnology](accessibilityrequest/technology.md)
+- [var technology: AccessibilityTechnology](./accessibilityrequest/technology.md)
 ### Type Properties
-- [class var current: AccessibilityRequest?](accessibilityrequest/current.md)
+- [class var current: AccessibilityRequest?](./accessibilityrequest/current.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [struct AccessibilityTechnology](accessibilitytechnology.md)
-- [static let automation: AccessibilityTechnology](accessibilitytechnology/automation.md)
-- [static let fullKeyboardAccess: AccessibilityTechnology](accessibilitytechnology/fullkeyboardaccess.md)
-- [static let hoverText: AccessibilityTechnology](accessibilitytechnology/hovertext.md)
-- [static let speakScreen: AccessibilityTechnology](accessibilitytechnology/speakscreen.md)
-- [static let switchControl: AccessibilityTechnology](accessibilitytechnology/switchcontrol.md)
-- [static let voiceControl: AccessibilityTechnology](accessibilitytechnology/voicecontrol.md)
-- [static let voiceOver: AccessibilityTechnology](accessibilitytechnology/voiceover.md)
-- [static let zoom: AccessibilityTechnology](accessibilitytechnology/zoom.md)
+### Assistive technologies
+- [struct AccessibilityTechnology](./accessibilitytechnology.md)
+- [static let automation: AccessibilityTechnology](./accessibilitytechnology/automation.md)
+- [static let fullKeyboardAccess: AccessibilityTechnology](./accessibilitytechnology/fullkeyboardaccess.md)
+- [static let hoverText: AccessibilityTechnology](./accessibilitytechnology/hovertext.md)
+- [static let speakScreen: AccessibilityTechnology](./accessibilitytechnology/speakscreen.md)
+- [static let switchControl: AccessibilityTechnology](./accessibilitytechnology/switchcontrol.md)
+- [static let voiceControl: AccessibilityTechnology](./accessibilitytechnology/voicecontrol.md)
+- [static let voiceOver: AccessibilityTechnology](./accessibilitytechnology/voiceover.md)
+- [static let zoom: AccessibilityTechnology](./accessibilitytechnology/zoom.md)
 
 
 ---

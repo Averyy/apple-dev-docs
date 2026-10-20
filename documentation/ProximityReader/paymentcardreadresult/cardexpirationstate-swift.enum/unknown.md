@@ -1,7 +1,8 @@
 # PaymentCardReadResult.CardExpirationState.unknown
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The card expiration date is not available.
 

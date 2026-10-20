@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/flexible-inputs.html
 
 # Flexible Input Shapes
 
-**
-
-- [.md](../_sources/source/flexible-inputs.md)
-- **
-
-.pdf
-
-**
-
-# Flexible Input Shapes
-
- Table of contents 
-
-## Contents
-
-# Flexible Input Shapes
-
 While some neural network models accept only fixed-size input, such as an image with a resolution of 224 x 224 pixels, other models require flexible input shapes that are determined at runtime. Examples are language models that work on arbitrary input lengths, and style transfer models that work on multiple resolutions.
 
 When converting a model to Core ML using Core ML Tools, you can specify a fixed input shape or a flexible input shape. With a flexible input shape you can specify the input as follows:
@@ -41,7 +24,7 @@ Use [EnumeratedShapes](https://apple.github.io/coremltools/source/coremltools.co
 
 The following example performs these steps:
 
-1. Defines the model `TestConvModule` using [torch.nn.Module](https://pytorch.org/docs/stable/generated/torch.nn.Module.md), the base class for neural network modules, and traces the model with random input.
+1. Defines the model `TestConvModule` using [torch.nn.Module](https://pytorch.org/docs/stable/generated/torch.nn.Module.html), the base class for neural network modules, and traces the model with random input.
 2. Defines the `input_shape` with [EnumeratedShapes](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#enumeratedshapes). You can optionally specify a `default` shape, or set `default` to `None` (or omit `default`) to use the first element in `shapes` as the default. The default shape loads when initiating the model.
 3. Converts the model using `input_shape` to an ML program and saves it as an ML package.
 4. Tests the model with predictions.
@@ -90,6 +73,8 @@ print("output shape {} for input shape {}".format(output_2.shape, input_2.shape)
 ```
 
 You can open the saved ML package in Xcode and click the **Predictions** tab to display the input and output, as shown in the following figure.
+
+![Enumerated shape](https://apple.github.io/coremltools/docs-guides/_images/enumerated_shape.png)
 
 Core ML Preallocates the Default Shape
 
@@ -172,6 +157,8 @@ print("output shape {} for input shape {}".format(output_2.shape, input_2.shape)
 
 You can open the saved ML package in Xcode and click the **Predictions** tab to display the input and output, as shown in the following figure.
 
+![Range shape](https://apple.github.io/coremltools/docs-guides/_images/range_shape.png)
+
 Torch.Export Dynamism
 
 If the source PyTorch model is exported by [torch.export.export](https://pytorch.org/docs/stable/export.html#torch.export.export), then user will need to [express dynamism in torch.export](https://pytorch.org/docs/stable/export.html#expressing-dynamism), which will then be automatically converted to Core ML [RangeDim](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#rangedim). In this case, user no longer has to specify [RangeDim](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#rangedim) in `ct.convert`, see [Model Exporting](model-exporting.md).
@@ -239,5 +226,3 @@ For details, see the following API documentation:
 - [EnumeratedShapes](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#enumeratedshapes)
 - [RangeDim](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#rangedim)
 - [neural_network.flexible_shape_utils](https://apple.github.io/coremltools/source/coremltools.models.neural_network.html#module-coremltools.models.neural_network.flexible_shape_utils)
-
-** Contents

@@ -1,7 +1,8 @@
 # lexicographicallyPrecedes(_:by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the given predicate to compare elements.
 
@@ -34,7 +35,7 @@ The predicate must be a *strict weak ordering* over the elements. That is, for a
 
 > **Note**: This method implements the mathematical notion of lexicographical ordering, which has no connection to Unicode.  If you are sorting strings to present to the end user, use `String` APIs that perform localized comparison instead.
 
-> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `other`.
+> **Complexity**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 

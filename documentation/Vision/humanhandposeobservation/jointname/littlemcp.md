@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.JointName.littleMCP
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A joint name that represents the little finger’s metacarpophalangeal joint.
 
@@ -21,11 +22,12 @@ case littleMCP
 
 ## See Also
 
-- [HumanHandPoseObservation.JointName.littleDIP](humanhandposeobservation/jointname/littledip.md)
+### Getting the little finger joint name
+- [HumanHandPoseObservation.JointName.littleDIP](./littledip.md)
   A joint name that represents the little finger’s distal interphalangeal joint.
-- [HumanHandPoseObservation.JointName.littlePIP](humanhandposeobservation/jointname/littlepip.md)
+- [HumanHandPoseObservation.JointName.littlePIP](./littlepip.md)
   A joint name that represents the little finger’s proximal interphalangeal joint.
-- [HumanHandPoseObservation.JointName.littleTip](humanhandposeobservation/jointname/littletip.md)
+- [HumanHandPoseObservation.JointName.littleTip](./littletip.md)
   A joint name that represents the tip of the little finger.
 
 

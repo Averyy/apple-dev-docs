@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The next input value after the given input.
@@ -23,11 +24,11 @@ func input(after input: Self.FormatInput) -> Self.FormatInput?
 
 #### Return Value
 
-The next “greater” input value that can be represented by [`FormatInput`](formatstyle/formatinput.md) or an underlying representation the format style uses internally.
+The next “greater” input value that can be represented by [`FormatInput`](../formatstyle/formatinput.md) or an underlying representation the format style uses internally.
 
 #### Discussion
 
-Use this function to determine if the return value provided by [`discreteInput(before:)`](discreteformatstyle/discreteinput(before:).md) is precise enough for your use case for any input `y`:
+Use this function to determine if the return value provided by [`discreteInput(before:)`](./discreteinput%28before%29.md) is precise enough for your use case for any input `y`:
 
 ```swift
 guard let x = style.discreteInput(before: y) else {
@@ -37,7 +38,19 @@ guard let x = style.discreteInput(before: y) else {
 let z = style.input(after: x) ?? y
 ```
 
-If the distance between `x` and `z` is too large for the precision you require, you may want to manually probe [`format(_:)`](formatstyle/format(_:).md) at a higher rate in that interval, as there is no guarantee for what the output will be in that interval.
+If the distance between `x` and `z` is too large for the precision you require, you may want to manually probe [`format(_:)`](../formatstyle/format%28_%29.md) at a higher rate in that interval, as there is no guarantee for what the output will be in that interval.
+
+## Default Implementations
+
+### DiscreteFormatStyle Implementations
+- [func input(after: Self.FormatInput) -> Self.FormatInput?](./input%28after%29-3nkyz.md)
+  The next input value after the given input.
+- [func input(after: Self.FormatInput) -> Self.FormatInput?](./input%28after%29-4op7c.md)
+  The next input value after the given input.
+- [func input(after: Self.FormatInput) -> Self.FormatInput?](./input%28after%29-8exd1.md)
+  The next input value after the given input.
+- [func input(after: Self.FormatInput) -> Self.FormatInput?](./input%28after%29-9h7f8.md)
+  The next input value after the given input.
 
 
 ---

@@ -1,7 +1,8 @@
 # MMSService.Error.invalidMessageParts
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message conteined one or more unknown or malformed parts.
 
@@ -20,19 +21,20 @@ This error indicates that one or more parts failed to encode.
 
 ## See Also
 
-- [MMSService.Error.unknown](mmsservice/error/unknown.md)
+### Identifying errors
+- [MMSService.Error.unknown](./unknown.md)
   An unknown problem caused the error.
-- [MMSService.Error.notSupported](mmsservice/error/notsupported.md)
+- [MMSService.Error.notSupported](./notsupported.md)
   The operation isn’t supported.
-- [MMSService.Error.invalidRecipient](mmsservice/error/invalidrecipient.md)
+- [MMSService.Error.invalidRecipient](./invalidrecipient.md)
   The message contained one or more unknown or malformed recipients.
-- [MMSService.Error.internalError](mmsservice/error/internalerror.md)
+- [MMSService.Error.internalError](./internalerror.md)
   The framework encountered an unknown internal error.
-- [MMSService.Error.mmsNotReady](mmsservice/error/mmsnotready.md)
+- [MMSService.Error.mmsNotReady](./mmsnotready.md)
   The framework isn’t ready to send MMS messages.
-- [MMSService.Error.mmsNotConfiguredForCarrier](mmsservice/error/mmsnotconfiguredforcarrier.md)
+- [MMSService.Error.mmsNotConfiguredForCarrier](./mmsnotconfiguredforcarrier.md)
   The carrier isn’t currently configured to handle MMS.
-- [MMSService.Error.maximumSizeExceeded](mmsservice/error/maximumsizeexceeded.md)
+- [MMSService.Error.maximumSizeExceeded](./maximumsizeexceeded.md)
   The MMS message exceeded the maximum allowed size.
 
 

@@ -1,7 +1,8 @@
 # partition(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.
 
@@ -19,6 +20,8 @@ Reorders the elements of the collection such that all the elements that match th
 ```swift
 mutating func partition(by belongsInSecondPartition: (Self.Element) throws -> Bool) rethrows -> Self.Index
 ```
+
+Available when `Self` conforms to `BidirectionalCollection`.
 
 #### Return Value
 
@@ -48,7 +51,7 @@ let second = numbers[p...]
 
 Note that the order of elements in both partitions changed. That is, `40` appears before `60` in the original collection, but, after calling `partition(by:)`, `60` appears before `40`.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # anchorUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sequence of updates to anchors a provider tracks.
 
@@ -18,23 +19,24 @@ final var anchorUpdates: AnchorUpdateSequence<WorldAnchor> { get }
 
 An async sequence providing all anchor updates. The provider vends new or updated world anchors via the sequence as they become available.
 
-Identify the anchors you want to react to by calling [`id`](anchor/id.md).
+Identify the anchors you want to react to by calling [`id`](../anchor/id.md).
 
 > **Note**: The provider also vends updates for persisted world anchors from previous runs of the app onto the sequence as soon as the world tracking provider is running. World anchors persist across device restarts until you explicitly remove them.
 
 ## See Also
 
-- [init()](worldtrackingprovider/init.md)
+### Tracking objects
+- [init()](./init%28%29.md)
   Creates a world-tracking provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](worldtrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for tracking world anchors.
-- [static var isSupported: Bool](worldtrackingprovider/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports world-tracking providers.
-- [var allAnchors: [WorldAnchor]?](worldtrackingprovider/allanchors.md)
+- [var allAnchors: [WorldAnchor]?](./allanchors.md)
   An array of all known world anchors from the world-tracking provider.
-- [func addAnchor(WorldAnchor) async throws](worldtrackingprovider/addanchor(_:).md)
+- [func addAnchor(WorldAnchor) async throws](./addanchor%28_%29.md)
   Adds a world anchor you supply to the set of currently tracked anchors.
-- [WorldTrackingProvider.Error](worldtrackingprovider/error.md)
+- [WorldTrackingProvider.Error](./error.md)
   An error that can occur during a world-tracking session.
 
 

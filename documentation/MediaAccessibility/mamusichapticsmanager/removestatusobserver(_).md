@@ -1,7 +1,8 @@
 # removeStatusObserver(_:)
 
 **Framework**: Media Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the observer monitoring the status of haptic playback for the Now Playing song.
 
@@ -19,9 +20,14 @@ Removes the observer monitoring the status of haptic playback for the Now Playin
 func removeStatusObserver(_ registrationToken: any NSCopying)
 ```
 
+```objc
+- (void) removeStatusObserver:(id<NSCopying>) registrationToken;
+```
+
 ## See Also
 
-- [func addStatusObserver((String, Bool) -> Void) -> (any NSCopying)?](mamusichapticsmanager/addstatusobserver(_:).md)
+### Observing haptic playback
+- [func addStatusObserver((String, Bool) -> Void) -> (any NSCopying)?](./addstatusobserver%28_%29.md)
   Adds an observer to monitor the status of haptic playback for the Now Playing song.
 
 

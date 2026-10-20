@@ -11,9 +11,10 @@ A Boolean that indicates whether the choice is visible.
 
 ## See Also
 
-- [selected](choice/1812159-selected.md)
+### Accessing a Choice’s State
+- [selected](./api-1812159-selected.md)
   A Boolean value that indicates whether the choice is selected.
-- [enabled](choice/1812168-enabled.md)
+- [enabled](./api-1812168-enabled.md)
   A Boolean value that indicates whether the choice is enabled.
 
 

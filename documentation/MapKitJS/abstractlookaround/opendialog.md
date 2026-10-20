@@ -1,7 +1,8 @@
 # openDialog
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Opens the Look Around view in a dialog.
 
@@ -10,7 +11,7 @@ Opens the Look Around view in a dialog.
 
 ## Declaration
 
-```swift
+```
 get openDialog(): boolean;
 set openDialog(value: boolean);
 ```

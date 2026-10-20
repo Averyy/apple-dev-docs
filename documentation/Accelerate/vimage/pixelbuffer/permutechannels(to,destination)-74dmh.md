@@ -1,7 +1,8 @@
 # permuteChannels(to:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Permutes the channels of a floating-point 16-bit-per-channel, 4-channel interleaved pixel buffer.
 
@@ -11,7 +12,7 @@ Permutes the channels of a floating-point 16-bit-per-channel, 4-channel interlea
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Permutes the channels of a floating-point 16-bit-per-channel, 4-channel interlea
 ```swift
 func permuteChannels(to permuteMap: (UInt8, UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` is `vImage.Interleaved16Fx4`.
 
 #### Discussion
 
@@ -44,13 +47,14 @@ print(buffer.array)
 
 ## See Also
 
-- [func permuteChannels(to: (UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/permutechannels(to:destination:)-4y4rh.md)
+### Permuting Channels
+- [func permuteChannels(to: (UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)](./permutechannels%28to,destination%29-4y4rh.md)
   Permutes the channels of an 8-bit-per-channel, 3-channel interleaved pixel buffer.
-- [func permuteChannels(to: (UInt8, UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/permutechannels(to:destination:)-tr2h.md)
+- [func permuteChannels(to: (UInt8, UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)](./permutechannels%28to,destination%29-tr2h.md)
   Permutes the channels of an 8-bit-per-channel, 4-channel interleaved pixel buffer.
-- [func permuteChannels(to: (UInt8, UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/permutechannels(to:destination:)-8y213.md)
+- [func permuteChannels(to: (UInt8, UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)](./permutechannels%28to,destination%29-8y213.md)
   Permutes the channels of an unsigned 16-bit-per-channel, 4-channel interleaved pixel buffer.
-- [func permuteChannels(to: (UInt8, UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/permutechannels(to:destination:)-6n6yi.md)
+- [func permuteChannels(to: (UInt8, UInt8, UInt8, UInt8), destination: vImage.PixelBuffer<Format>)](./permutechannels%28to,destination%29-6n6yi.md)
   Permutes the channels of an 32-bit-per-channel, 4-channel interleaved pixel buffer.
 
 

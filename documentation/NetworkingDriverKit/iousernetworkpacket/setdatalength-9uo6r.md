@@ -1,14 +1,15 @@
 # setDataLength
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setDataLength(uint32_t length);
 ```
 

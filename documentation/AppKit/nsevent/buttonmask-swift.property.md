@@ -1,17 +1,22 @@
 # buttonMask
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bit mask identifying the buttons pressed for a tablet event.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var buttonMask: NSEvent.ButtonMask { get }
+```
+
+```objc
+@property (readonly) NSEventButtonMask buttonMask;
 ```
 
 #### Discussion
@@ -20,21 +25,22 @@ Use one or more of the button-mask constants described in `Getting Unicode Value
 
 ## See Also
 
-- [var absoluteX: Int](nsevent/absolutex.md)
+### Getting tablet pointing information
+- [var absoluteX: Int](./absolutex.md)
   The absolute x coordinate of a pointing device on its tablet at full tablet resolution.
-- [var absoluteY: Int](nsevent/absolutey.md)
+- [var absoluteY: Int](./absolutey.md)
   The absolute y coordinate of a pointing device on its tablet at full tablet resolution.
-- [var absoluteZ: Int](nsevent/absolutez.md)
+- [var absoluteZ: Int](./absolutez.md)
   The absolute z coordinate of pointing device on its tablet at full tablet resolution.
-- [NSEvent.ButtonMask](nsevent/buttonmask-swift.struct.md)
+- [NSEvent.ButtonMask](./buttonmask-swift.struct.md)
   Constants you use to identify the activated tablet buttons in an event.
-- [var rotation: Float](nsevent/rotation.md)
+- [var rotation: Float](./rotation.md)
   The rotation in degrees of the tablet pointing device associated with this event.
-- [var tangentialPressure: Float](nsevent/tangentialpressure.md)
+- [var tangentialPressure: Float](./tangentialpressure.md)
   The tangential pressure on the device that generated this event.
-- [var tilt: NSPoint](nsevent/tilt.md)
+- [var tilt: NSPoint](./tilt.md)
   The scaled tilt values of the pointing device that generated this event.
-- [var vendorDefined: Any](nsevent/vendordefined.md)
+- [var vendorDefined: Any](./vendordefined.md)
   An array of three vendor-defined number objects associated with a pointing-type event.
 
 

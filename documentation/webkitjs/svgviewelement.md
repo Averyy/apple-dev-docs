@@ -1,7 +1,8 @@
 # SVGViewElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGViewElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [viewTarget](svgviewelement/1631210-viewtarget.md)
+- [viewTarget](./svgviewelement/api-1631210-viewtarget.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isNotificationEnabled
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the characteristic has been set to send notifications.
 
@@ -19,13 +20,18 @@ A Boolean indicating whether the characteristic has been set to send notificatio
 var isNotificationEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isNotificationEnabled) BOOL notificationEnabled;
+```
+
 #### Discussion
 
-HomeKit delivers notifications to the accessory delegate using the [`accessory(_:service:didUpdateValueFor:)`](hmaccessorydelegate/accessory(_:service:didupdatevaluefor:).md) method.
+HomeKit delivers notifications to the accessory delegate using the [`accessory(_:service:didUpdateValueFor:)`](../hmaccessorydelegate/accessory%28_,service,didupdatevaluefor%29.md) method.
 
 ## See Also
 
-- [func enableNotification(Bool, completionHandler: ((any Error)?) -> Void)](hmcharacteristic/enablenotification(_:completionhandler:).md)
+### Receiving change notifications
+- [func enableNotification(Bool, completionHandler: ((any Error)?) -> Void)](./enablenotification%28_,completionhandler%29.md)
   Enables or disables notifications for changes in the value of the characteristic.
 
 

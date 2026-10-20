@@ -1,7 +1,8 @@
 # completeExtensionConfigurationRequest()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Completes the request to configure the extension.
 
@@ -16,6 +17,10 @@ Completes the request to configure the extension.
 
 ```swift
 func completeExtensionConfigurationRequest()
+```
+
+```objc
+- (void) completeExtensionConfigurationRequest;
 ```
 
 #### Discussion

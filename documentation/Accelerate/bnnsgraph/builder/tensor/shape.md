@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the tensor.
 

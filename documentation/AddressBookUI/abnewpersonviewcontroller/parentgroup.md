@@ -1,14 +1,17 @@
 # parentGroup
 
 **Framework**: Address Book UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional. Specifies the group to which to add the new contact on save.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`parentGroup`](../../ContactsUI/cncontactviewcontroller/parentgroup.md) instead.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ Optional. Specifies the group to which to add the new contact on save.
 var parentGroup: ABRecord? { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, nullable) ABRecordRef parentGroup;
+```
+
 #### Discussion
 
-You must set [`addressBook`](abnewpersonviewcontroller/addressbook.md) before you can set this property.
+You must set [`addressBook`](./addressbook.md) before you can set this property.
 
 ## See Also
 
-- [var addressBook: ABAddressBook?](abnewpersonviewcontroller/addressbook.md)
+### Configuring New Person Views
+- [var addressBook: ABAddressBook?](./addressbook.md)
   Optional. The address book to which the new contact is added.
 
 

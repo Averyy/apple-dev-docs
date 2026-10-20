@@ -1,7 +1,8 @@
 # NSWorkspace.AuthorizationType.replaceFile
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authorization for the app to perform an atomic file write without changing the target file’s permissions.
 
@@ -14,15 +15,20 @@ Authorization for the app to perform an atomic file write without changing the t
 case replaceFile
 ```
 
+```c
+NSWorkspaceAuthorizationTypeReplaceFile
+```
+
 #### Discussion
 
-Signifies that the user has granted authorization for [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](https://developer.apple.com/documentation/foundation/filemanager/replaceitem(at:withitemat:backupitemname:options:resultingitemurl:)). When you use a [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) with this authorization, the file manager ignores the `backupItemName` and `options` parameters.
+Signifies that the user has granted authorization for [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](../../../Foundation/filemanager/replaceitem%28at,withitemat,backupitemname,options,resultingitemurl%29.md). When you use a [`FileManager`](../../../Foundation/filemanager.md) with this authorization, the file manager ignores the `backupItemName` and `options` parameters.
 
 ## See Also
 
-- [NSWorkspace.AuthorizationType.createSymbolicLink](nsworkspace/authorizationtype/createsymboliclink.md)
+### Types of Authorization
+- [NSWorkspace.AuthorizationType.createSymbolicLink](./createsymboliclink.md)
   Authorization for the app to create a symbolic link.
-- [NSWorkspace.AuthorizationType.setAttributes](nsworkspace/authorizationtype/setattributes.md)
+- [NSWorkspace.AuthorizationType.setAttributes](./setattributes.md)
   Authorization for the app to change specific file attributes.
 
 

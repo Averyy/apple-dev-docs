@@ -1,17 +1,22 @@
 # pairedDevices()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets an array of all of the paired devices on the system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func pairedDevices() -> [Any]!
+```
+
+```objc
++ (NSArray *) pairedDevices;
 ```
 
 #### Return Value

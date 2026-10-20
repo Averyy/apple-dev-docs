@@ -1,7 +1,8 @@
 # CTSlicingManager.AppCategory.gaming
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An application category for gaming traffic requiring low latency.
 
@@ -22,9 +23,10 @@ Gaming slices provide low latency and consistent network performance for interac
 
 ## See Also
 
-- [CTSlicingManager.AppCategory.communication](ctslicingmanager/appcategory/communication.md)
+### App categories
+- [CTSlicingManager.AppCategory.communication](./communication.md)
   An application category for voice, video calling, and messaging services.
-- [CTSlicingManager.AppCategory.streaming](ctslicingmanager/appcategory/streaming.md)
+- [CTSlicingManager.AppCategory.streaming](./streaming.md)
   An application category for audio and video streaming services.
 
 

@@ -1,7 +1,8 @@
 # index
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the value along the axis.
 

@@ -1,17 +1,22 @@
 # update()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables the menu items of the menu based on the NSMenuValidation informal protocol and sizes the menu to fit its current menu items if necessary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func update()
+```
+
+```objc
+- (void) update;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ For more information, see `NSMenuValidation`.
 
 ## See Also
 
-- [var autoenablesItems: Bool](nsmenu/autoenablesitems.md)
+### Enabling and Disabling Menu Items
+- [var autoenablesItems: Bool](./autoenablesitems.md)
   Indicates whether the menu automatically enables and disables its menu items.
 
 

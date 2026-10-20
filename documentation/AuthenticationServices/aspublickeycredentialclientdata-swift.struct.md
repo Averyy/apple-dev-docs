@@ -1,7 +1,8 @@
 # ASPublicKeyCredentialClientData
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.4+
@@ -18,20 +19,20 @@ struct ASPublicKeyCredentialClientData
 ## Topics
 
 ### Initializers
-- [init(challenge: Data, origin: String, topOrigin: String?, crossOrigin: ASPublicKeyCredentialClientData.CrossOriginValue?)](aspublickeycredentialclientdata-swift.struct/init(challenge:origin:toporigin:crossorigin:).md)
+- [init(challenge: Data, origin: String, topOrigin: String?, crossOrigin: ASPublicKeyCredentialClientData.CrossOriginValue?)](./aspublickeycredentialclientdata-swift.struct/init%28challenge,origin,toporigin,crossorigin%29.md)
 ### Instance Properties
-- [var challenge: Data](aspublickeycredentialclientdata-swift.struct/challenge.md)
-- [var crossOrigin: ASPublicKeyCredentialClientData.CrossOriginValue?](aspublickeycredentialclientdata-swift.struct/crossorigin.md)
-- [var origin: String](aspublickeycredentialclientdata-swift.struct/origin.md)
-- [var topOrigin: String?](aspublickeycredentialclientdata-swift.struct/toporigin.md)
+- [var challenge: Data](./aspublickeycredentialclientdata-swift.struct/challenge.md)
+- [var crossOrigin: ASPublicKeyCredentialClientData.CrossOriginValue?](./aspublickeycredentialclientdata-swift.struct/crossorigin.md)
+- [var origin: String](./aspublickeycredentialclientdata-swift.struct/origin.md)
+- [var topOrigin: String?](./aspublickeycredentialclientdata-swift.struct/toporigin.md)
 ### Enumerations
-- [ASPublicKeyCredentialClientData.CrossOriginValue](aspublickeycredentialclientdata-swift.struct/crossoriginvalue.md)
+- [ASPublicKeyCredentialClientData.CrossOriginValue](./aspublickeycredentialclientdata-swift.struct/crossoriginvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

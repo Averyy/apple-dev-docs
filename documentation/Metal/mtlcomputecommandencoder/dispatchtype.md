@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The dispatch type to use when submitting compute work to the GPU.
@@ -20,15 +21,20 @@ The dispatch type to use when submitting compute work to the GPU.
 var dispatchType: MTLDispatchType { get }
 ```
 
+```objc
+@property (readonly) MTLDispatchType dispatchType;
+```
+
 #### Discussion
 
 You set this property when you create the command encoder, and it doesn’t change for the remainder of the encoding.
 
-See [`makeComputeCommandEncoder(dispatchType:)`](mtlcommandbuffer/makecomputecommandencoder(dispatchtype:).md) for more information.
+See [`makeComputeCommandEncoder(dispatchType:)`](../mtlcommandbuffer/makecomputecommandencoder%28dispatchtype%29.md) for more information.
 
 ## See Also
 
-- [func setComputePipelineState(any MTLComputePipelineState)](mtlcomputecommandencoder/setcomputepipelinestate(_:).md)
+### Configuring the pipeline state
+- [func setComputePipelineState(any MTLComputePipelineState)](./setcomputepipelinestate%28_%29.md)
   Configures the compute encoder with a pipeline state for subsequent kernel calls.
 
 

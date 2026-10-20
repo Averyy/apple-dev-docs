@@ -1,7 +1,8 @@
 # isResting
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The indicator for a resting touch.
 
@@ -14,19 +15,24 @@ The indicator for a resting touch.
 var isResting: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isResting) BOOL resting;
+```
+
 #### Discussion
 
 Resting touches occur when a user simply rests their thumb on the trackpad device.
 
 ## See Also
 
-- [var identity: any NSCopying & NSObjectProtocol](nstouch/identity.md)
+### Using Touch Properties
+- [var identity: any NSCopying & NSObjectProtocol](./identity.md)
   The changes to a particular touch during its lifetime.
-- [var phase: NSTouch.Phase](nstouch/phase-swift.property.md)
+- [var phase: NSTouch.Phase](./phase-swift.property.md)
   The current phase of the touch.
-- [NSTouch.Phase](nstouch/phase-swift.struct.md)
+- [NSTouch.Phase](./phase-swift.struct.md)
   The possible phases of a touch.
-- [var normalizedPosition: NSPoint](nstouch/normalizedposition.md)
+- [var normalizedPosition: NSPoint](./normalizedposition.md)
   The normalized position of the touch.
 
 

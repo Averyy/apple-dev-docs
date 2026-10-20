@@ -1,6 +1,7 @@
 # Implementing the OAuth 2 authentication account-driven enrollment flow
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Examine the steps between the user, client, device management service, and Apple services in the OAuth 2 flow.
 
@@ -8,11 +9,11 @@ Examine the steps between the user, client, device management service, and Apple
 
 To implement account-driven enrollment, you need to support a series of interactions between the user’s device and your device management service. The following diagrams illustrate the interactions, and the sections below detail each of the interaction steps.
 
-![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for OAuth 2 authentication.](/images/com.apple.devicemanagement/implementing-the-oauth2-authentication-account-driven-enrollment-flow01@2x.png)
+![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for OAuth 2 authentication.](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/implementing-the-oauth2-authentication-account-driven-enrollment-flow01@2x.png)
 
-To implement the OAuth 2 flow, steps 1–4 are identical to the simple flow explained in [`Implementing the simple authentication account-driven enrollment flow`](implementing-the-simple-authentication-account-driven-enrollment-flow.md).
+To implement the OAuth 2 flow, steps 1–4 are identical to the simple flow explained in [Implementing the simple authentication account-driven enrollment flow](./implementing-the-simple-authentication-account-driven-enrollment-flow.md).
 
-#### Return the 401 Response Step 5
+#### Return the 401 response (Step 5)
 
 The device managmeent service returns an `HTTP 401` response status to the client and includes a `WWW-Authenticate` response header. This response header needs to use the `Bearer` scheme and include the following parameters:
 
@@ -21,25 +22,25 @@ The device managmeent service returns an `HTTP 401` response status to the clien
 | `method` | (Required) A string that needs to be `apple-oauth2`, defining the authentication protocol. |
 | `authorization-url` | (Required) The OAuth 2 protocol authorization endpoint URL for the initial `ASWebAuthenticationSession` HTTP request. The URL scheme needs to be `https`. |
 | `token-url` | (Required) The OAuth 2 protocol token endpoint URL for the token request. The URL scheme needs to be `https`. |
-| `redirect-url` | (Required) The OAuth 2 protocol redirection endpoint URL where the OAuth 2 authorization request redirects to on success. Because the authorization request uses the [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) protocol, you need to set this URL scheme to `apple-remotemanagement-user-login` and set a path component to your redirection endpoint. |
+| `redirect-url` | (Required) The OAuth 2 protocol redirection endpoint URL where the OAuth 2 authorization request redirects to on success. Because the authorization request uses the [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) protocol, you need to set this URL scheme to `apple-remotemanagement-user-login` and set a path component to your redirection endpoint. |
 | `client-id` | (Required) The OAuth 2 protocol client identifier that the client needs to use in the OAuth 2 authorization request. |
 | `scope` | (Required) The OAuth 2 protocol access token scope the client needs to use in the OAuth 2 authorization request. |
 
 If the client’s enrollment request is invalid, you return a standard HTTP error response code (for example, 400 or 403) to halt the enrollment flow on the device. If the response of your device management service is invalid (for example, missing the `WWW-Authenticate` response header), the system cancels the enrollment.
 
-#### Send the Authorization Request Step 6 10
+#### Send the authorization request (Step 6-10)
 
 The client starts the OAuth 2 authorization grant flow with a public client type by constructing the authorization request URL from the parameters that return in the `401 response. It then adds a query item with the name `login_hint` and its value as the user account identifier that the user enters.
 
-![A sequence diagram showing interactions 6-11 between the user, client, device management service, and Apple servers for OAuth 2 authentication.](/images/com.apple.devicemanagement/implementing-the-oauth2-authentication-account-driven-enrollment-flow02@2x.png)
+![A sequence diagram showing interactions 6-11 between the user, client, device management service, and Apple servers for OAuth 2 authentication.](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/implementing-the-oauth2-authentication-account-driven-enrollment-flow02@2x.png)
 
-The client creates an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) using the authorization request URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
+The client creates an [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) using the authorization request URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
 
 The authentication session performs an HTTPS GET` request for the OAuth 2 authorization request URL, and includes the appropriate query parameters needed for the authorization code grant request. The device presents any resulting HTML data to the user in a web view.
 
 The OAuth 2 authorization service responding to the request can prepopulate any user ID form field by extracting the relevant items from the request’s `login_hint` query item. The service can also use that query item to customize the form based on the user name or domain portions of the user account identifier.
 
-[`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the authorization service to complete authentication.
+[`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the authorization service to complete authentication.
 
 The user has the option of canceling out of the web view at any time, which terminates the authentication flow and the enrollment.
 
@@ -63,7 +64,7 @@ Content-Length: 17643
 </html>
 ```
 
-#### Return the Authorization Response Step 11
+#### Return the authorization response (Step 11)
 
 The authentication session web flow completes when the service returns an HTTP 308 permanent redirect response to the client, with a `Location` header that it sets to the `redirect-url` parameter value in step 5. The URL also needs to include the OAuth 2 protocol `code` and `state` query items (note that the client sets a `state` parameter in its authorization request, so you need to set it in the authorization response).
 
@@ -90,11 +91,11 @@ Location: apple-remotemanagement-user-login:/oauth2/redirection
     ?code=Dek1jUOEcaIPGhbDrCTm9GDV5qT1sb&state=340B948D-A84A-45A3-AC45-C93195124B00
 ```
 
-#### Send the Token Request Steps 12 and 13
+#### Send the token request (Steps 12 and 13)
 
 The client makes a token access request to fetch the OAuth 2 access and (optional) refresh tokens, using the authorization grant code from step 11, along with other required OAuth 2 parameters. The client securely stores the tokens that your device management service returns and uses them when authorizing subsequent requests to the service.
 
-![A sequence diagram showing interactions 12 and 13 between the user, client, device management service, and Apple servers for OAuth 2 authentication.](/images/com.apple.devicemanagement/implementing-the-oauth2-authentication-account-driven-enrollment-flow03@2x.png)
+![A sequence diagram showing interactions 12 and 13 between the user, client, device management service, and Apple servers for OAuth 2 authentication.](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/implementing-the-oauth2-authentication-account-driven-enrollment-flow03@2x.png)
 
 If authentication fails, you need to return an appropriate HTTP error response code that terminates the enrollment on the device.
 
@@ -123,11 +124,11 @@ Content-Type: application/json
 }
 ```
 
-#### Attempt the Second Enrollment Steps 14 21
+#### Attempt the second enrollment (Steps 14-21)
 
-The behavior is identical to the second enrollment attempt from the [`Implementing the simple authentication account-driven enrollment flow`](implementing-the-simple-authentication-account-driven-enrollment-flow.md), with the client using the OAuth 2 access token value in the `Authorization` HTTP request header.
+The behavior is identical to the second enrollment attempt from the [simple authentication protocol](./implementing-the-simple-authentication-account-driven-enrollment-flow.md), with the client using the OAuth 2 access token value in the `Authorization` HTTP request header.
 
-![A sequence diagram showing interactions 14–20 between the user, client, device management service, and Apple servers for OAuth 2 authentication.](/images/com.apple.devicemanagement/implementing-the-oauth2-authentication-account-driven-enrollment-flow04@2x.png)
+![A sequence diagram showing interactions 14–20 between the user, client, device management service, and Apple servers for OAuth 2 authentication.](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/implementing-the-oauth2-authentication-account-driven-enrollment-flow04@2x.png)
 
 ```other
 Authorization: Bearer dXNlcm9hdXRo.MjZkNTkzZmMtNzk4MC00OWFkLTllZTAtZTA2NzhmNmVhNzg5
@@ -135,9 +136,10 @@ Authorization: Bearer dXNlcm9hdXRo.MjZkNTkzZmMtNzk4MC00OWFkLTllZTAtZTA2NzhmNmVhN
 
 ## See Also
 
-- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-account-driven-enrollment-flow.md)
+### Detailed flow instructions
+- [Implementing the simple authentication account-driven enrollment flow](./implementing-the-simple-authentication-account-driven-enrollment-flow.md)
   Examine the steps between the user, client, device management service, and Apple services in the simple authentication flow.
-- [Implementing the Enrollment SSO flow](implementing-the-enrollment-sso-flow.md)
+- [Implementing the Enrollment SSO flow](./implementing-the-enrollment-sso-flow.md)
   Examine the steps between the user, client, and device management service in the Enrollment SSO flow.
 
 

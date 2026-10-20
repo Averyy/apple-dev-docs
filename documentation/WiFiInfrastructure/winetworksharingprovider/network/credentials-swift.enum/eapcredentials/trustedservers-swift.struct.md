@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes trusted authentication servers.
 
@@ -19,20 +20,20 @@ struct TrustedServers
 ## Topics
 
 ### Instance Properties
-- [let certificates: [Data]](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/trustedservers-swift.struct/certificates.md)
+- [let certificates: [Data]](./trustedservers-swift.struct/certificates.md)
   The list of trusted server certificates.
-- [let names: [String]](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/trustedservers-swift.struct/names.md)
+- [let names: [String]](./trustedservers-swift.struct/names.md)
   The list of trusted server names the framework uses to verify a server’s certificates.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../../Swift/decodable.md)
+- [Encodable](../../../../../Swift/encodable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

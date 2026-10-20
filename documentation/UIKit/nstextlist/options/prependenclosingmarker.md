@@ -1,7 +1,8 @@
 # prependEnclosingMarker
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that a nested list should include the marker for its enclosing superlist before its own marker.
 
@@ -17,6 +18,10 @@ Specifies that a nested list should include the marker for its enclosing superli
 
 ```swift
 static var prependEnclosingMarker: NSTextList.Options { get }
+```
+
+```c
+NSTextListPrependEnclosingMarker
 ```
 
 

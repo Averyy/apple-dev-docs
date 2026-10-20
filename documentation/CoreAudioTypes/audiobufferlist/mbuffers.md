@@ -1,7 +1,8 @@
 # mBuffers
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A variable-length array of audio buffers.
 
@@ -20,9 +21,14 @@ A variable-length array of audio buffers.
 var mBuffers: AudioBuffer
 ```
 
+```c
+AudioBuffer mBuffers[1];
+```
+
 ## See Also
 
-- [var mNumberBuffers: UInt32](audiobufferlist/mnumberbuffers.md)
+### Accessing the Data
+- [var mNumberBuffers: UInt32](./mnumberbuffers.md)
   The number of audio buffers in the list.
 
 

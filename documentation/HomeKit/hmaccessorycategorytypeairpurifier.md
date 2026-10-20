@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeAirPurifier
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An air purifier accessory.
 
@@ -19,9 +20,14 @@ An air purifier accessory.
 let HMAccessoryCategoryTypeAirPurifier: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeAirPurifier;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeFan: String](hmaccessorycategorytypefan.md)
+### Air quality and smoke detection
+- [let HMAccessoryCategoryTypeFan: String](./hmaccessorycategorytypefan.md)
   A fan accessory.
 
 

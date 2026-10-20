@@ -1,23 +1,25 @@
 # CopyClientEntitlements
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CopyClientEntitlements(OSDictionary **entitlements);
 ```
 
 ## See Also
 
-- [CreateMemoryDescriptorFromClient](iouserclient/creatememorydescriptorfromclient.md)
+### Instance Methods
+- [CreateMemoryDescriptorFromClient](./creatememorydescriptorfromclient.md)
 
 
 ---

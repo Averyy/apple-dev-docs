@@ -1,7 +1,8 @@
 # setTaskCompleted(success:)
 
 **Framework**: Background Tasks  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the background task scheduler that the task is complete.
 
@@ -18,13 +19,17 @@ Informs the background task scheduler that the task is complete.
 func setTaskCompleted(success: Bool)
 ```
 
+```objc
+- (void) setTaskCompletedWithSuccess:(BOOL) success;
+```
+
 ## Mentions
 
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+- [Choosing Background Strategies for Your App](../choosing-background-strategies-for-your-app.md)
 
 #### Discussion
 
-Not calling [`setTaskCompleted(success:)`](bgtask/settaskcompleted(success:).md) before the time for the task expires may result in the system killing your app.
+Not calling [`setTaskCompleted(success:)`](./settaskcompleted%28success%29.md) before the time for the task expires may result in the system killing your app.
 
 You can reschedule an unsuccessful required task.
 
@@ -36,7 +41,8 @@ You can reschedule an unsuccessful required task.
 
 ## See Also
 
-- [var expirationHandler: (() -> Void)?](bgtask/expirationhandler.md)
+### Configuring a Task
+- [var expirationHandler: (() -> Void)?](./expirationhandler.md)
   A handler called shortly before the task’s background time expires.
 
 

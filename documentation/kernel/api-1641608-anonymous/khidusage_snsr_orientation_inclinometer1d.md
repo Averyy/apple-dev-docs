@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Orientation_Inclinometer1D
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Orientation_Inclinometer1D = 0x84
 ```
 

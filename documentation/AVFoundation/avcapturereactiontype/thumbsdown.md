@@ -1,7 +1,8 @@
 # thumbsDown
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A reaction that displays a thumbs-down symbol.
 
@@ -18,21 +19,26 @@ A reaction that displays a thumbs-down symbol.
 static let thumbsDown: AVCaptureReactionType
 ```
 
+```c
+extern AVCaptureReactionType AVCaptureReactionTypeThumbsDown;
+```
+
 ## See Also
 
-- [static let balloons: AVCaptureReactionType](avcapturereactiontype/balloons.md)
+### Reaction types
+- [static let balloons: AVCaptureReactionType](./balloons.md)
   A reaction that displays balloons rising through the scene.
-- [static let confetti: AVCaptureReactionType](avcapturereactiontype/confetti.md)
+- [static let confetti: AVCaptureReactionType](./confetti.md)
   A reaction that displays festive spots of color falling through the scene.
-- [static let fireworks: AVCaptureReactionType](avcapturereactiontype/fireworks.md)
+- [static let fireworks: AVCaptureReactionType](./fireworks.md)
   A reaction that displays fireworks bursting in the background.
-- [static let heart: AVCaptureReactionType](avcapturereactiontype/heart.md)
+- [static let heart: AVCaptureReactionType](./heart.md)
   A reaction that displays one or more heart symbols.
-- [static let lasers: AVCaptureReactionType](avcapturereactiontype/lasers.md)
+- [static let lasers: AVCaptureReactionType](./lasers.md)
   A reaction that displays a bright laser show projecting into the scene.
-- [static let rain: AVCaptureReactionType](avcapturereactiontype/rain.md)
+- [static let rain: AVCaptureReactionType](./rain.md)
   A reaction that displays a dark and stormy night.
-- [static let thumbsUp: AVCaptureReactionType](avcapturereactiontype/thumbsup.md)
+- [static let thumbsUp: AVCaptureReactionType](./thumbsup.md)
   A reaction that displays a thumbs-up symbol.
 
 

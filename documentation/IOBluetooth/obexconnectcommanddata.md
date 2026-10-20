@@ -1,17 +1,22 @@
 # OBEXConnectCommandData
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Part of the OBEXSessionEvent structure.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 struct OBEXConnectCommandData
+```
+
+```c
+struct OBEXConnectCommandData;
 ```
 
 #### Overview
@@ -21,46 +26,47 @@ Is readable when the event is of type kOBEXSessionEventTypeConnectCommandReceive
 ## Topics
 
 ### Initializers
-- [init()](obexconnectcommanddata/init.md)
-- [init(headerDataPtr: UnsafeMutableRawPointer!, headerDataLength: Int, maxPacketSize: OBEXMaxPacketLength, version: OBEXVersion, flags: OBEXFlags)](obexconnectcommanddata/init(headerdataptr:headerdatalength:maxpacketsize:version:flags:).md)
+- [init()](./obexconnectcommanddata/init%28%29.md)
+- [init(headerDataPtr: UnsafeMutableRawPointer!, headerDataLength: Int, maxPacketSize: OBEXMaxPacketLength, version: OBEXVersion, flags: OBEXFlags)](./obexconnectcommanddata/init%28headerdataptr,headerdatalength,maxpacketsize,version,flags%29.md)
 ### Instance Properties
-- [var flags: OBEXFlags](obexconnectcommanddata/flags.md)
-- [var headerDataLength: Int](obexconnectcommanddata/headerdatalength.md)
-- [var headerDataPtr: UnsafeMutableRawPointer!](obexconnectcommanddata/headerdataptr.md)
-- [var maxPacketSize: OBEXMaxPacketLength](obexconnectcommanddata/maxpacketsize.md)
-- [var version: OBEXVersion](obexconnectcommanddata/version.md)
+- [var flags: OBEXFlags](./obexconnectcommanddata/flags.md)
+- [var headerDataLength: Int](./obexconnectcommanddata/headerdatalength.md)
+- [var headerDataPtr: UnsafeMutableRawPointer!](./obexconnectcommanddata/headerdataptr.md)
+- [var maxPacketSize: OBEXMaxPacketLength](./obexconnectcommanddata/maxpacketsize.md)
+- [var version: OBEXVersion](./obexconnectcommanddata/version.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct OBEXSessionEvent](obexsessionevent.md)
-- [struct OBEXAbortCommandData](obexabortcommanddata.md)
+### Data Types
+- [struct OBEXSessionEvent](./obexsessionevent.md)
+- [struct OBEXAbortCommandData](./obexabortcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXAbortCommandResponseData](obexabortcommandresponsedata.md)
+- [struct OBEXAbortCommandResponseData](./obexabortcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXConnectCommandResponseData](obexconnectcommandresponsedata.md)
+- [struct OBEXConnectCommandResponseData](./obexconnectcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXDisconnectCommandData](obexdisconnectcommanddata.md)
+- [struct OBEXDisconnectCommandData](./obexdisconnectcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXDisconnectCommandResponseData](obexdisconnectcommandresponsedata.md)
+- [struct OBEXDisconnectCommandResponseData](./obexdisconnectcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXErrorData](obexerrordata.md)
+- [struct OBEXErrorData](./obexerrordata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXGetCommandData](obexgetcommanddata.md)
+- [struct OBEXGetCommandData](./obexgetcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXGetCommandResponseData](obexgetcommandresponsedata.md)
+- [struct OBEXGetCommandResponseData](./obexgetcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXPutCommandData](obexputcommanddata.md)
+- [struct OBEXPutCommandData](./obexputcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXPutCommandResponseData](obexputcommandresponsedata.md)
+- [struct OBEXPutCommandResponseData](./obexputcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXSetPathCommandData](obexsetpathcommanddata.md)
+- [struct OBEXSetPathCommandData](./obexsetpathcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXSetPathCommandResponseData](obexsetpathcommandresponsedata.md)
+- [struct OBEXSetPathCommandResponseData](./obexsetpathcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
 
 

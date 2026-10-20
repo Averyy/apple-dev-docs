@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the sequence contains the given element.
 
@@ -20,6 +21,8 @@ Returns a Boolean value indicating whether the sequence contains the given eleme
 func contains(_ element: Self.Element) -> Bool
 ```
 
+Available when `Element` conforms to `Equatable`.
+
 #### Return Value
 
 `true` if the element was found in the sequence; otherwise, `false`.
@@ -36,7 +39,7 @@ print(cast.contains("James"))
 // Prints "false"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

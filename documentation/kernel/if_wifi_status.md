@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_wifi_status {
     ...
 };
@@ -17,7 +17,7 @@ struct if_wifi_status {
 ## Topics
 
 ### Instance Properties
-- [if_wifi_u](if_wifi_status/3944197-if_wifi_u.md)
+- [if_wifi_u](./if_wifi_status/api-3944197-if_wifi_u.md)
 
 
 ---

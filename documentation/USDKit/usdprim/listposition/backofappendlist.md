@@ -1,7 +1,8 @@
 # USDPrim.ListPosition.backOfAppendList
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insert at the back of the append list, making this the weakest arc.
 

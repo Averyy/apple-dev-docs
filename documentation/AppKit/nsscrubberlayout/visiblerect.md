@@ -1,7 +1,8 @@
 # visibleRect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently visible rectangle, in the coordinate space of the scrubber content.
 
@@ -14,17 +15,22 @@ The currently visible rectangle, in the coordinate space of the scrubber content
 var visibleRect: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect visibleRect;
+```
+
 #### Discussion
 
-The value of this property is [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect) if the layout is not currently assigned to a scrubber control.
+The value of this property is [`NSZeroRect`](../../Foundation/nszerorect.md) if the layout is not currently assigned to a scrubber control.
 
 ## See Also
 
-- [class var layoutAttributesClass: AnyClass](nsscrubberlayout/layoutattributesclass.md)
+### Configuring a scrubber layout
+- [class var layoutAttributesClass: AnyClass](./layoutattributesclass.md)
   A property containing a class that describes layout attributes.
-- [var scrubber: NSScrubber?](nsscrubberlayout/scrubber.md)
+- [var scrubber: NSScrubber?](./scrubber.md)
   The scrubber control that this layout is assigned to.
-- [func invalidateLayout()](nsscrubberlayout/invalidatelayout.md)
+- [func invalidateLayout()](./invalidatelayout%28%29.md)
   Signals that the layout has been invalidated, and that the scrubber control should perform a new layout pass.
 
 

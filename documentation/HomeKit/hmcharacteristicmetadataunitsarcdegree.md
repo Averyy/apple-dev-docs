@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataUnitsArcDegree
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unit of the characteristic is the degrees of an arc.
 
@@ -17,6 +18,10 @@ The unit of the characteristic is the degrees of an arc.
 
 ```swift
 let HMCharacteristicMetadataUnitsArcDegree: String
+```
+
+```c
+extern NSString * const HMCharacteristicMetadataUnitsArcDegree;
 ```
 
 

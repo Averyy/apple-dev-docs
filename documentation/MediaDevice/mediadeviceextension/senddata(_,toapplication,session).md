@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when an app sends data to a remote application.

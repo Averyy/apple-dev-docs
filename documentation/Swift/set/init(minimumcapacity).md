@@ -1,7 +1,8 @@
 # init(minimumCapacity:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty set with preallocated space for at least the specified number of elements.
 
@@ -30,11 +31,12 @@ Use this initializer to avoid intermediate reallocations of a set’s storage bu
 
 ## See Also
 
-- [init()](set/init.md)
+### Creating a Set
+- [init()](./init%28%29.md)
   Creates an empty set.
-- [init<S>(S)](set/init(_:)-9cgks.md)
+- [init<S>(S)](./init%28_%29-9cgks.md)
   Creates a new set from a finite sequence of items.
-- [init<Source>(Source)](set/init(_:).md)
+- [init<Source>(Source)](./init%28_%29.md)
   Creates a new set from a finite sequence of items.
 
 

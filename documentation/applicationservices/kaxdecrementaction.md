@@ -1,7 +1,8 @@
 # kAXDecrementAction
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Decrements the value of the accessibility object. The amount the value is decremented by is determined by the value of the `kAXValueIncrementAttribute` attribute.
 
@@ -12,6 +13,10 @@ Decrements the value of the accessibility object. The amount the value is decrem
 
 ```swift
 var kAXDecrementAction: String { get }
+```
+
+```c
+#define kAXDecrementAction
 ```
 
 

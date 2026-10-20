@@ -1,14 +1,15 @@
 # setMonotonicClockOffset
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setMonotonicClockOffset(int64_t usecs);
 ```
 

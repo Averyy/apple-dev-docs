@@ -1,20 +1,27 @@
 # peerPickerControllerDidCancel(_:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user canceled the connection attempt.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use MCBrowserViewController along with MCBrowserViewControllerDelegate from the MultipeerConnectivity framework.
 
 ## Declaration
 
 ```swift
 optional func peerPickerControllerDidCancel(_ picker: GKPeerPickerController)
+```
+
+```objc
+- (void) peerPickerControllerDidCancel:(GKPeerPickerController *) picker;
 ```
 
 #### Discussion

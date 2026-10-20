@@ -1,7 +1,8 @@
 # MPSNDArrayMultiaryGradientKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,33 +18,37 @@
 class MPSNDArrayMultiaryGradientKernel
 ```
 
+```objc
+@interface MPSNDArrayMultiaryGradientKernel : MPSNDArrayMultiaryBase
+```
+
 ## Topics
 
 ### Initializers
-- [init(coder: NSCoder, device: any MTLDevice)](mpsndarraymultiarygradientkernel/init(coder:device:).md)
-- [init(device: any MTLDevice, sourceCount: Int, sourceGradientIndex: Int)](mpsndarraymultiarygradientkernel/init(device:sourcecount:sourcegradientindex:).md)
+- [init(coder: NSCoder, device: any MTLDevice)](./mpsndarraymultiarygradientkernel/init%28coder,device%29.md)
+- [init(device: any MTLDevice, sourceCount: Int, sourceGradientIndex: Int)](./mpsndarraymultiarygradientkernel/init%28device,sourcecount,sourcegradientindex%29.md)
 ### Instance Methods
-- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](mpsndarraymultiarygradientkernel/encode(to:sourcearrays:sourcegradient:gradientstate:).md)
-- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](mpsndarraymultiarygradientkernel/encode(to:sourcearrays:sourcegradient:gradientstate:destinationarray:).md)
+- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], sourceGradient: MPSNDArray, gradientState: MPSState) -> MPSNDArray](./mpsndarraymultiarygradientkernel/encode%28to,sourcearrays,sourcegradient,gradientstate%29.md)
+- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], sourceGradient: MPSNDArray, gradientState: MPSState, destinationArray: MPSNDArray)](./mpsndarraymultiarygradientkernel/encode%28to,sourcearrays,sourcegradient,gradientstate,destinationarray%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNDArrayMultiaryBase](mpsndarraymultiarybase.md)
+- [MPSNDArrayMultiaryBase](./mpsndarraymultiarybase.md)
 ### Inherited By
-- [MPSNDArrayBinaryPrimaryGradientKernel](mpsndarraybinaryprimarygradientkernel.md)
-- [MPSNDArrayBinarySecondaryGradientKernel](mpsndarraybinarysecondarygradientkernel.md)
-- [MPSNDArrayUnaryGradientKernel](mpsndarrayunarygradientkernel.md)
+- [MPSNDArrayBinaryPrimaryGradientKernel](./mpsndarraybinaryprimarygradientkernel.md)
+- [MPSNDArrayBinarySecondaryGradientKernel](./mpsndarraybinarysecondarygradientkernel.md)
+- [MPSNDArrayUnaryGradientKernel](./mpsndarrayunarygradientkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # maximumRetries
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of retries.
 
@@ -16,13 +17,18 @@ The maximum number of retries.
 var maximumRetries: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger maximumRetries;
+```
+
 #### Discussion
 
 You can specify up to 256 retries. By default, the value of this parameter is `0`.
 
 ## See Also
 
-- [var retryInterval: TimeInterval](nfctagcommandconfiguration/retryinterval.md)
+### Configuring a Tag Command
+- [var retryInterval: TimeInterval](./retryinterval.md)
   The time between retries, in seconds.
 
 

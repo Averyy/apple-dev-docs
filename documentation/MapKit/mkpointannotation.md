@@ -1,7 +1,8 @@
 # MKPointAnnotation
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A string-based piece of location-specific data that you apply to a specific point on a map.
 
@@ -20,6 +21,10 @@ A string-based piece of location-specific data that you apply to a specific poin
 class MKPointAnnotation
 ```
 
+```objc
+@interface MKPointAnnotation : MKShape
+```
+
 #### Overview
 
 You use this class, rather than define a custom annotation object, in situations where all you want to do is display a title string at the specified point on the map.
@@ -27,41 +32,42 @@ You use this class, rather than define a custom annotation object, in situations
 ## Topics
 
 ### Creating a Point Annotation
-- [init()](mkpointannotation/init.md)
+- [init()](./mkpointannotation/init%28%29.md)
   Creates a map annotation that shows a title string at a point on a map.
-- [convenience init(coordinate: CLLocationCoordinate2D)](mkpointannotation/init(coordinate:).md)
+- [convenience init(coordinate: CLLocationCoordinate2D)](./mkpointannotation/init%28coordinate%29.md)
   Creates a point annotation at the specified coordinate on the map.
-- [convenience init(coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?)](mkpointannotation/init(coordinate:title:subtitle:).md)
+- [convenience init(coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?)](./mkpointannotation/init%28coordinate,title,subtitle%29.md)
   Creates a point annotation displaying a title and subtitle string at the specified coordinate on the map.
 ### Accessing the Annotation’s Location
-- [var coordinate: CLLocationCoordinate2D](mkpointannotation/coordinate.md)
+- [var coordinate: CLLocationCoordinate2D](./mkpointannotation/coordinate.md)
   The coordinate point of the annotation.
 
 ## Relationships
 
 ### Inherits From
-- [MKShape](mkshape.md)
+- [MKShape](./mkshape.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [MKAnnotation](mkannotation.md)
-- [MKGeoJSONObject](mkgeojsonobject.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [MKAnnotation](./mkannotation.md)
+- [MKGeoJSONObject](./mkgeojsonobject.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Annotating a Map with Custom Data](annotating-a-map-with-custom-data.md)
+### Location annotations
+- [Annotating a Map with Custom Data](./annotating-a-map-with-custom-data.md)
   Annotate a map with location-specific data using default and customized annotation views and callouts.
-- [class MKMapItemAnnotation](mkmapitemannotation.md)
+- [class MKMapItemAnnotation](./mkmapitemannotation.md)
   An annotation that represents a map item
-- [class MKMarkerAnnotationView](mkmarkerannotationview.md)
+- [class MKMarkerAnnotationView](./mkmarkerannotationview.md)
   An annotation view that displays a balloon-shaped marker at the designated location.
-- [class MKPinAnnotationView](mkpinannotationview.md)
+- [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
 
 

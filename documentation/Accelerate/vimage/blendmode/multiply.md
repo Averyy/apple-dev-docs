@@ -1,7 +1,8 @@
 # vImage.BlendMode.multiply
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sets the destination pixel as the product of the corresponding source pixels.
 
@@ -11,7 +12,7 @@ Sets the destination pixel as the product of the corresponding source pixels.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ case multiply
 
 The following image shows the result of compositing using the multiply blend mode:
 
-![Graphic showing the multiply blend mode composite operation.](/images/com.apple.accelerate/media-3958278@2x.png)
+![Graphic showing the multiply blend mode composite operation.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3958278@2x.png)
 
 The bottom-right quadrant in the result is black because the operation multiplies each bottom-layer pixel value by `0.0` from the top layer.
 
@@ -38,13 +39,15 @@ dest = 0.5 * 0.5 // dest = 0.25
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](../../compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [vImage.BlendMode.darken](vimage/blendmode/darken.md)
+### Enumeration Cases
+- [vImage.BlendMode.darken](./darken.md)
   Sets each channel of the destination pixel as the darkest value for the corresponding channel of the two source layers.
-- [vImage.BlendMode.lighten](vimage/blendmode/lighten.md)
+- [vImage.BlendMode.lighten](./lighten.md)
   Sets each channel of the destination pixel as the lightest value for the corresponding channel of the two source layers
-- [vImage.BlendMode.screen](vimage/blendmode/screen.md)
+- [vImage.BlendMode.screen](./screen.md)
   Sets the destination pixel as the inverted product of the inverted corresponding source pixels.
 
 

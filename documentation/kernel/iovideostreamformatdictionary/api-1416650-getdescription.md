@@ -1,14 +1,15 @@
 # getDescription
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static void getDescription(const OSDictionary *dictionary, IOVideoStreamDescription & format);
 ```
 

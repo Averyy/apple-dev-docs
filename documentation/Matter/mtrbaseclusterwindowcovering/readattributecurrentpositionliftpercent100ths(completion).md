@@ -1,7 +1,8 @@
 # readAttributeCurrentPositionLiftPercent100ths(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCurrentPositionLiftPercent100ths(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCurrentPositionLiftPercent100ths() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeCurrentPositionLiftPercent100thsWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

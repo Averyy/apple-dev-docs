@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the characteristic.
 
@@ -19,9 +20,14 @@ A unique identifier for the characteristic.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var localizedDescription: String](hmcharacteristic/localizeddescription.md)
+### Identifying a characteristic
+- [var localizedDescription: String](./localizeddescription.md)
   The localized description of the characteristic.
 
 

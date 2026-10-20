@@ -1,14 +1,15 @@
 # copyPropertyWithGUIDAndName
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSObject> copyPropertyWithGUIDAndName(const uuid_t guid, const char *name);
 ```
 

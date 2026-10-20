@@ -1,7 +1,8 @@
 # pulse
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a copy of the effect requesting an animation that pulses layers as they breathe.
 

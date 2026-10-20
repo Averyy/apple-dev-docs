@@ -1,7 +1,8 @@
 # MIDINetworkSession
 
 **Framework**: Core MIDI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a pairing of a source and destination.
 
@@ -18,6 +19,10 @@ An object that represents a pairing of a source and destination.
 class MIDINetworkSession
 ```
 
+```objc
+@interface MIDINetworkSession : NSObject
+```
+
 #### Overview
 
 A session can have any number of connections. The system broadcasts output to all connections, and merges input from multiple connections.
@@ -25,60 +30,61 @@ A session can have any number of connections. The system broadcasts output to al
 ## Topics
 
 ### Configuring a Session
-- [class func `default`() -> MIDINetworkSession](midinetworksession/default.md)
+- [class func `default`() -> MIDINetworkSession](./midinetworksession/default%28%29.md)
   Returns the default singleton session.
-- [var isEnabled: Bool](midinetworksession/isenabled.md)
+- [var isEnabled: Bool](./midinetworksession/isenabled.md)
   A Boolean value that determines whether the session is enabled.
-- [var connectionPolicy: MIDINetworkConnectionPolicy](midinetworksession/connectionpolicy.md)
+- [var connectionPolicy: MIDINetworkConnectionPolicy](./midinetworksession/connectionpolicy.md)
   The policy that determines who can connect to this session.
 ### Inspecting a Sessions
-- [var localName: String](midinetworksession/localname.md)
+- [var localName: String](./midinetworksession/localname.md)
   The name of this session’s entity.
-- [var networkName: String](midinetworksession/networkname.md)
+- [var networkName: String](./midinetworksession/networkname.md)
   The name with which this session advertises itself over Bonjour.
-- [var networkPort: Int](midinetworksession/networkport.md)
+- [var networkPort: Int](./midinetworksession/networkport.md)
   The session’s UDP port.
-- [func sourceEndpoint() -> MIDIEndpointRef](midinetworksession/sourceendpoint.md)
+- [func sourceEndpoint() -> MIDIEndpointRef](./midinetworksession/sourceendpoint%28%29.md)
   Returns the session’s source endpoint.
-- [func destinationEndpoint() -> MIDIEndpointRef](midinetworksession/destinationendpoint.md)
+- [func destinationEndpoint() -> MIDIEndpointRef](./midinetworksession/destinationendpoint%28%29.md)
   Returns the session’s destination endpoint.
 ### Managing Connections
-- [func connections() -> Set<MIDINetworkConnection>](midinetworksession/connections.md)
+- [func connections() -> Set<MIDINetworkConnection>](./midinetworksession/connections%28%29.md)
   Returns the session’s set of MIDI network connections.
-- [func addConnection(MIDINetworkConnection) -> Bool](midinetworksession/addconnection(_:).md)
+- [func addConnection(MIDINetworkConnection) -> Bool](./midinetworksession/addconnection%28_%29.md)
   Adds a new connection to this session.
-- [func removeConnection(MIDINetworkConnection) -> Bool](midinetworksession/removeconnection(_:).md)
+- [func removeConnection(MIDINetworkConnection) -> Bool](./midinetworksession/removeconnection%28_%29.md)
   Removes a connection from this session.
 ### Managing Contacts
-- [func contacts() -> Set<MIDINetworkHost>](midinetworksession/contacts.md)
+- [func contacts() -> Set<MIDINetworkHost>](./midinetworksession/contacts%28%29.md)
   Returns the array of network hosts.
-- [func addContact(MIDINetworkHost) -> Bool](midinetworksession/addcontact(_:).md)
+- [func addContact(MIDINetworkHost) -> Bool](./midinetworksession/addcontact%28_%29.md)
   Adds a host as a contact.
-- [func removeContact(MIDINetworkHost) -> Bool](midinetworksession/removecontact(_:).md)
+- [func removeContact(MIDINetworkHost) -> Bool](./midinetworksession/removecontact%28_%29.md)
   Removes a host as a contact.
-- [let MIDINetworkNotificationContactsDidChange: String](midinetworknotificationcontactsdidchange.md)
+- [let MIDINetworkNotificationContactsDidChange: String](./midinetworknotificationcontactsdidchange.md)
   Indicates that the list of contacts changed.
 ### Observing State Changes
-- [let MIDINetworkNotificationSessionDidChange: String](midinetworknotificationsessiondidchange.md)
+- [let MIDINetworkNotificationSessionDidChange: String](./midinetworknotificationsessiondidchange.md)
   Indicates that other aspects of the session changed, such as the connection list, connection policy, and so on.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MIDINetworkHost](midinetworkhost.md)
+### Networking
+- [class MIDINetworkHost](./midinetworkhost.md)
   An object that represents the host’s network address.
-- [class MIDINetworkConnection](midinetworkconnection.md)
+- [class MIDINetworkConnection](./midinetworkconnection.md)
   An object that connects a session to a host.
 
 

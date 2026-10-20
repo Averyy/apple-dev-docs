@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout’s configuration, such as its scroll direction and section spacing.
 
@@ -17,6 +18,10 @@ The layout’s configuration, such as its scroll direction and section spacing.
 ```swift
 @NSCopying
 var configuration: UICollectionViewCompositionalLayoutConfiguration { get set }
+```
+
+```objc
+@property (nonatomic, copy) UICollectionViewCompositionalLayoutConfiguration * configuration;
 ```
 
 

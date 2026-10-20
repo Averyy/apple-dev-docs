@@ -1,7 +1,8 @@
 # kCGImagePropertyDNGActiveArea
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The rectangle that defines the non-masked pixels of the sensor.
 
@@ -20,15 +21,20 @@ The rectangle that defines the non-masked pixels of the sensor.
 let kCGImagePropertyDNGActiveArea: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyDNGActiveArea;
+```
+
 ## See Also
 
-- [let kCGImagePropertyDNGMaskedAreas: CFString](kcgimagepropertydngmaskedareas.md)
+### Crop Data
+- [let kCGImagePropertyDNGMaskedAreas: CFString](./kcgimagepropertydngmaskedareas.md)
   A list of non-overlapping rectangles that contain fully masked pixels in the image.
-- [let kCGImagePropertyDNGDefaultCropOrigin: CFString](kcgimagepropertydngdefaultcroporigin.md)
+- [let kCGImagePropertyDNGDefaultCropOrigin: CFString](./kcgimagepropertydngdefaultcroporigin.md)
   The origin of the final image area, relative to the top-left corner of the active area rectangle.
-- [let kCGImagePropertyDNGDefaultCropSize: CFString](kcgimagepropertydngdefaultcropsize.md)
+- [let kCGImagePropertyDNGDefaultCropSize: CFString](./kcgimagepropertydngdefaultcropsize.md)
   The size of the final image area, in raw image coordinates.
-- [let kCGImagePropertyDNGDefaultUserCrop: CFString](kcgimagepropertydngdefaultusercrop.md)
+- [let kCGImagePropertyDNGDefaultUserCrop: CFString](./kcgimagepropertydngdefaultusercrop.md)
   A default user-crop rectangle in relative coordinates.
 
 

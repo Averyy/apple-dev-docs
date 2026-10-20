@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor used to create this deformation.
 
@@ -19,8 +20,9 @@ final let descriptor: LowLevelDeformation.Descriptor
 
 ## See Also
 
-- [LowLevelDeformation.Descriptor](lowleveldeformation/descriptor-swift.struct.md)
-  An object that describes the per-frame data requirements for a [`LowLevelDeformation`](lowleveldeformation.md).
+### Creating a deformation
+- [LowLevelDeformation.Descriptor](./descriptor-swift.struct.md)
+  An object that describes the per-frame data requirements for a [`LowLevelDeformation`](../lowleveldeformation.md).
 
 
 ---

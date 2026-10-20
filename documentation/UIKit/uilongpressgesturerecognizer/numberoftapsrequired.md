@@ -1,7 +1,8 @@
 # numberOfTapsRequired
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of taps on the view necessary for gesture recognition.
 
@@ -9,7 +10,7 @@ The number of taps on the view necessary for gesture recognition.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The number of taps on the view necessary for gesture recognition.
 var numberOfTapsRequired: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger numberOfTapsRequired;
+```
+
 ## Mentions
 
-- [Handling long-press gestures](handling-long-press-gestures.md)
+- [Handling long-press gestures](../handling-long-press-gestures.md)
 
 #### Discussion
 
@@ -28,11 +33,12 @@ The default number of taps is `0`.
 
 ## See Also
 
-- [var minimumPressDuration: TimeInterval](uilongpressgesturerecognizer/minimumpressduration.md)
+### Configuring the gesture recognizer
+- [var minimumPressDuration: TimeInterval](./minimumpressduration.md)
   The minimum time that the user must press on the view for the gesture to be recognized.
-- [var numberOfTouchesRequired: Int](uilongpressgesturerecognizer/numberoftouchesrequired.md)
+- [var numberOfTouchesRequired: Int](./numberoftouchesrequired.md)
   The number of fingers that must touch the view for gesture recognition.
-- [var allowableMovement: CGFloat](uilongpressgesturerecognizer/allowablemovement.md)
+- [var allowableMovement: CGFloat](./allowablemovement.md)
   The maximum movement of the fingers on the view before the gesture fails.
 
 

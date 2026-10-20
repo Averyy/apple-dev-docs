@@ -1,17 +1,22 @@
 # orderFrontRegardless()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the window to the front of its level, even if its application isn’t active, without changing either the key window or the main window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func orderFrontRegardless()
+```
+
+```objc
+- (void) orderFrontRegardless;
 ```
 
 #### Discussion
@@ -20,17 +25,18 @@ Normally an `NSWindow` object can’t be moved in front of the key window unless
 
 ## See Also
 
-- [func orderOut(Any?)](nswindow/orderout(_:).md)
+### Managing Window Layers
+- [func orderOut(Any?)](./orderout%28_%29.md)
   Removes the window from the screen list, which hides the window.
-- [func orderBack(Any?)](nswindow/orderback(_:).md)
+- [func orderBack(Any?)](./orderback%28_%29.md)
   Moves the window to the back of its level in the screen list, without changing either the key window or the main window.
-- [func orderFront(Any?)](nswindow/orderfront(_:).md)
+- [func orderFront(Any?)](./orderfront%28_%29.md)
   Moves the window to the front of its level in the screen list, without changing either the key window or the main window.
-- [func order(NSWindow.OrderingMode, relativeTo: Int)](nswindow/order(_:relativeto:).md)
+- [func order(NSWindow.OrderingMode, relativeTo: Int)](./order%28_,relativeto%29.md)
   Repositions the window’s window device in the window server’s screen list.
-- [var level: NSWindow.Level](nswindow/level-swift.property.md)
+- [var level: NSWindow.Level](./level-swift.property.md)
   The window level of the window.
-- [NSWindow.Level](nswindow/level-swift.struct.md)
+- [NSWindow.Level](./level-swift.struct.md)
   The standard window levels in macOS.
 
 

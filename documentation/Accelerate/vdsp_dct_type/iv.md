@@ -1,18 +1,19 @@
 # vDSP_DCT_Type.IV
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that specifies a type IV discrete cosine transform.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,15 @@ A constant that specifies a type IV discrete cosine transform.
 case IV
 ```
 
+```c
+vDSP_DCT_IV
+```
+
 #### Discussion
 
 The type-IV DCT uses the following operation for a discrete cosine transform:
 
-```None
+```
 // _N_ is the length given in the setup.
 // _h_ is the input array that contains real numbers.
 // _H_ is the output array that contains real numbers.
@@ -35,9 +40,10 @@ For 0 <= k < N
 
 ## See Also
 
-- [vDSP_DCT_Type.II](vdsp_dct_type/ii.md)
+### Discrete Cosine Transform Types
+- [vDSP_DCT_Type.II](./ii.md)
   A constant that specifies a type II discrete cosine transform.
-- [vDSP_DCT_Type.III](vdsp_dct_type/iii.md)
+- [vDSP_DCT_Type.III](./iii.md)
   A constant that specifies a type III discrete cosine transform.
 
 

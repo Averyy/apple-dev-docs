@@ -1,7 +1,8 @@
 # dewPoint
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of moisture in the air.
 
@@ -26,11 +27,12 @@ Dew point is the temperature at which air is saturated with water vapor.
 
 ## See Also
 
-- [var apparentTemperature: Measurement<UnitTemperature>](hourweather/apparenttemperature.md)
+### Getting temperature and humidity
+- [var apparentTemperature: Measurement<UnitTemperature>](./apparenttemperature.md)
   The apparent, or “feels like” temperature during the hour.
-- [var humidity: Double](hourweather/humidity.md)
+- [var humidity: Double](./humidity.md)
   The humidity for the hour.
-- [var temperature: Measurement<UnitTemperature>](hourweather/temperature.md)
+- [var temperature: Measurement<UnitTemperature>](./temperature.md)
   The temperature during the hour.
 
 

@@ -1,7 +1,8 @@
 # startService(provider:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Starts the system extension.
 
@@ -13,6 +14,10 @@ Starts the system extension.
 
 ```swift
 class func startService(provider: CMIOExtensionProvider)
+```
+
+```objc
++ (void) startServiceWithProvider:(CMIOExtensionProvider *) provider;
 ```
 
 ## Parameters

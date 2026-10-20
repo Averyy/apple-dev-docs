@@ -1,7 +1,8 @@
 # attestationRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func attestationRequest(with params: MTROperationalCredentialsClusterAttestationRequestParams, completion: @escaping @Sendable (MTROperationalCredentialsClusterAttestationResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func attestationRequest(with params: MTROperationalCredentialsClusterAttestationRequestParams) async throws -> MTROperationalCredentialsClusterAttestationResponseParams
+```
+
+```objc
+- (void) attestationRequestWithParams:(MTROperationalCredentialsClusterAttestationRequestParams *) params completion:(void (^)(MTROperationalCredentialsClusterAttestationResponseParams *data, NSError *error)) completion;
 ```
 
 

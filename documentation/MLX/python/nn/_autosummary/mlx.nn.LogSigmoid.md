@@ -6,36 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.L
 
 # mlx.nn.LogSigmoid
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.LogSigmoid.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.LogSigmoid
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.LogSigmoid
-
 **class LogSigmoid**
 : Applies the Log Sigmoid function.
-See [log_sigmoid()](../_autosummary_functions/mlx.nn.log_sigmoid.html#mlx.nn.log_sigmoid) for the functional equivalent.
+See [log_sigmoid()](../_autosummary_functions/mlx.nn.log_sigmoid.md#mlx.nn.log_sigmoid) for the functional equivalent.
 Methods
-
-** Contents

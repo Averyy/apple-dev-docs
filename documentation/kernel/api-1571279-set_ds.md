@@ -1,14 +1,15 @@
 # set_ds
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 void set_ds(uint16_t ds);
 ```
 

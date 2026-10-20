@@ -1,7 +1,8 @@
 # UIContextMenuInteractionAnimating
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods adopted by system-supplied animator objects when interacting with context menus.
 
@@ -19,29 +20,34 @@ Methods adopted by system-supplied animator objects when interacting with contex
 protocol UIContextMenuInteractionAnimating : NSObjectProtocol
 ```
 
+```objc
+@protocol UIContextMenuInteractionAnimating <NSObject>
+```
+
 ## Topics
 
 ### Adding Custom Animations
-- [func addAnimations(() -> Void)](uicontextmenuinteractionanimating/addanimations(_:).md)
+- [func addAnimations(() -> Void)](./uicontextmenuinteractionanimating/addanimations%28_%29.md)
   Adds the specified animation block to the animator.
-- [func addCompletion(() -> Void)](uicontextmenuinteractionanimating/addcompletion(_:).md)
+- [func addCompletion(() -> Void)](./uicontextmenuinteractionanimating/addcompletion%28_%29.md)
   Adds the specified completion block to the animator.
 ### Previewing the Content
-- [var previewViewController: UIViewController?](uicontextmenuinteractionanimating/previewviewcontroller.md)
+- [var previewViewController: UIViewController?](./uicontextmenuinteractionanimating/previewviewcontroller.md)
   The current preview view controller.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [UIContextMenuInteractionCommitAnimating](uicontextmenuinteractioncommitanimating.md)
+- [UIContextMenuInteractionCommitAnimating](./uicontextmenuinteractioncommitanimating.md)
 
 ## See Also
 
-- [func contextMenuInteraction(UIContextMenuInteraction, willDisplayMenuFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](uicontextmenuinteractiondelegate/contextmenuinteraction(_:willdisplaymenufor:animator:).md)
+### Handling animations
+- [func contextMenuInteraction(UIContextMenuInteraction, willDisplayMenuFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](./uicontextmenuinteractiondelegate/contextmenuinteraction%28_,willdisplaymenufor,animator%29.md)
   Informs the delegate when a menu display begins.
-- [func contextMenuInteraction(UIContextMenuInteraction, willEndFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](uicontextmenuinteractiondelegate/contextmenuinteraction(_:willendfor:animator:).md)
+- [func contextMenuInteraction(UIContextMenuInteraction, willEndFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](./uicontextmenuinteractiondelegate/contextmenuinteraction%28_,willendfor,animator%29.md)
   Informs the delegate when a menu display ends.
 
 

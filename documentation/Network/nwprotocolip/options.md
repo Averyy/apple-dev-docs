@@ -1,7 +1,8 @@
 # NWProtocolIP.Options
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container of options for configuring how IP is used on a connection.
 
@@ -23,36 +24,37 @@ class Options
 ## Topics
 
 ### Selecting an IP Version
-- [var version: NWProtocolIP.Options.Version](nwprotocolip/options/version-swift.property.md)
+- [var version: NWProtocolIP.Options.Version](./options/version-swift.property.md)
   A required IP version that disables all other versions for a connection.
-- [NWProtocolIP.Options.Version](nwprotocolip/options/version-swift.enum.md)
+- [NWProtocolIP.Options.Version](./options/version-swift.enum.md)
   IP versions to require on connections and listeners.
 ### Customizing IP Behavior
-- [var shouldCalculateReceiveTime: Bool](nwprotocolip/options/shouldcalculatereceivetime.md)
+- [var shouldCalculateReceiveTime: Bool](./options/shouldcalculatereceivetime.md)
   A Boolean that indicates whether a connection delivers receive timestamps for IP packets.
-- [var hopLimit: UInt8](nwprotocolip/options/hoplimit.md)
+- [var hopLimit: UInt8](./options/hoplimit.md)
   The default hop limit for packets a connection generates.
-- [var useMinimumMTU: Bool](nwprotocolip/options/useminimummtu.md)
+- [var useMinimumMTU: Bool](./options/useminimummtu.md)
   A Boolean indicating that the connection uses the  minimum MTU value, which is 1280 bytes for IPv6.
-- [var disableFragmentation: Bool](nwprotocolip/options/disablefragmentation.md)
+- [var disableFragmentation: Bool](./options/disablefragmentation.md)
   A Boolean that indicates whether fragmentation is disabled on outbound packets.
 ### Instance Properties
-- [var disableMulticastLoopback: Bool](nwprotocolip/options/disablemulticastloopback.md)
-- [var localAddressPreference: NWProtocolIP.Options.AddressPreference](nwprotocolip/options/localaddresspreference.md)
+- [var disableMulticastLoopback: Bool](./options/disablemulticastloopback.md)
+- [var localAddressPreference: NWProtocolIP.Options.AddressPreference](./options/localaddresspreference.md)
 ### Enumerations
-- [NWProtocolIP.Options.AddressPreference](nwprotocolip/options/addresspreference.md)
+- [NWProtocolIP.Options.AddressPreference](./options/addresspreference.md)
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolOptions](nwprotocoloptions.md)
+- [NWProtocolOptions](../nwprotocoloptions.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let definition: NWProtocolDefinition](nwprotocolip/definition.md)
+### Configuring IP Connections
+- [static let definition: NWProtocolDefinition](./definition.md)
   The system definition of the Internet Protocol.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an authorization options constant using the specified raw value.
 

@@ -1,7 +1,8 @@
 # MTRDoorLockDlRFIDOperationEventMask
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,30 +19,34 @@
 struct MTRDoorLockDlRFIDOperationEventMask
 ```
 
+```c
+enum MTRDoorLockDlRFIDOperationEventMask : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrdoorlockdlrfidoperationeventmask/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrdoorlockdlrfidoperationeventmask/init%28rawvalue%29.md)
 ### Type Properties
-- [static var lock: MTRDoorLockDlRFIDOperationEventMask](mtrdoorlockdlrfidoperationeventmask/lock.md)
-- [static var lockInvalidRFID: MTRDoorLockDlRFIDOperationEventMask](mtrdoorlockdlrfidoperationeventmask/lockinvalidrfid.md)
-- [static var lockInvalidSchedule: MTRDoorLockDlRFIDOperationEventMask](mtrdoorlockdlrfidoperationeventmask/lockinvalidschedule.md)
-- [static var unknown: MTRDoorLockDlRFIDOperationEventMask](mtrdoorlockdlrfidoperationeventmask/unknown.md)
-- [static var unlock: MTRDoorLockDlRFIDOperationEventMask](mtrdoorlockdlrfidoperationeventmask/unlock.md)
-- [static var unlockInvalidRFID: MTRDoorLockDlRFIDOperationEventMask](mtrdoorlockdlrfidoperationeventmask/unlockinvalidrfid.md)
-- [static var unlockInvalidSchedule: MTRDoorLockDlRFIDOperationEventMask](mtrdoorlockdlrfidoperationeventmask/unlockinvalidschedule.md)
+- [static var lock: MTRDoorLockDlRFIDOperationEventMask](./mtrdoorlockdlrfidoperationeventmask/lock.md)
+- [static var lockInvalidRFID: MTRDoorLockDlRFIDOperationEventMask](./mtrdoorlockdlrfidoperationeventmask/lockinvalidrfid.md)
+- [static var lockInvalidSchedule: MTRDoorLockDlRFIDOperationEventMask](./mtrdoorlockdlrfidoperationeventmask/lockinvalidschedule.md)
+- [static var unknown: MTRDoorLockDlRFIDOperationEventMask](./mtrdoorlockdlrfidoperationeventmask/unknown.md)
+- [static var unlock: MTRDoorLockDlRFIDOperationEventMask](./mtrdoorlockdlrfidoperationeventmask/unlock.md)
+- [static var unlockInvalidRFID: MTRDoorLockDlRFIDOperationEventMask](./mtrdoorlockdlrfidoperationeventmask/unlockinvalidrfid.md)
+- [static var unlockInvalidSchedule: MTRDoorLockDlRFIDOperationEventMask](./mtrdoorlockdlrfidoperationeventmask/unlockinvalidschedule.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

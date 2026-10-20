@@ -1,7 +1,8 @@
 # sendMessage(_:to:using:messageID:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a custom reaction message to a specified destination.
 
@@ -16,7 +17,7 @@ final func sendMessage(_ content: RCSMessage.CustomReaction, to destination: RCS
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of [`RCSMessage.CustomReaction`](rcsmessage/customreaction.md).
+- `content`: The content of the message to send, as an instance of [`RCSMessage.CustomReaction`](../rcsmessage/customreaction.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.

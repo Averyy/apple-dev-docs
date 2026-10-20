@@ -1,7 +1,8 @@
 # UseSpeechDictionary(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers a speech dictionary with a speech channel.
 
@@ -14,13 +15,17 @@ Registers a speech dictionary with a speech channel.
 func UseSpeechDictionary(_ chan: SpeechChannel, _ speechDictionary: CFDictionary) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr UseSpeechDictionary(SpeechChannel chan, CFDictionaryRef speechDictionary);
+```
 
-A result code. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
-The UseSpeechDictionary function is the Core Foundation-based equivalent of the [`UseDictionary`](1552255-usedictionary.md) function.
+The UseSpeechDictionary function is the Core Foundation-based equivalent of the [`UseDictionary`](./api-1552255-usedictionary.md) function.
 
 The `UseSpeechDictionary` function registers the `CFDictionary` object referenced by the `speechDictionary` parameter with the speech channel referenced by the `chan` parameter. Speech dictionaries allow your application to override a synthesizer's default pronunciations of individual words, such as names with unusual spellings. A synthesizer will use whatever elements of the dictionary it considers useful in the speech conversion process. Some speech synthesizers might ignore certain types of dictionary entries.
 
@@ -64,7 +69,7 @@ After the `UseSpeechDictionary` function returns, your application is free to re
 ## Parameters
 
 - `chan`: The speech channel with which the specified speech dictionary is to be registered.
-- `speechDictionary`: A speech dictionary to be registered with the specified speech channel, represented as a `CFDictionary` object. See [`Speech Dictionary Keys`](speech_synthesis_manager/speech_dictionary_keys.md) for the keys you can use in the dictionary.
+- `speechDictionary`: A speech dictionary to be registered with the specified speech channel, represented as a `CFDictionary` object. See [Speech Dictionary Keys](./speech_synthesis_manager/speech_dictionary_keys.md) for the keys you can use in the dictionary.
 
 
 ---

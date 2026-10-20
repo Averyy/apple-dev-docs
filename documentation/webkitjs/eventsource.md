@@ -1,7 +1,8 @@
 # EventSource
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,26 +10,26 @@
 
 ## Declaration
 
-```swift
+```
 interface EventSource
 ```
 
 ## Topics
 
 ### Instance Properties
-- [URL](eventsource/1629667-url.md)
-- [onerror](eventsource/1633840-onerror.md)
-- [onmessage](eventsource/1629192-onmessage.md)
-- [onopen](eventsource/1633269-onopen.md)
-- [readyState](eventsource/1629335-readystate.md)
-- [url](eventsource/1630792-url.md)
-- [withCredentials](eventsource/1630541-withcredentials.md)
+- [URL](./eventsource/api-1629667-url.md)
+- [onerror](./eventsource/api-1633840-onerror.md)
+- [onmessage](./eventsource/api-1629192-onmessage.md)
+- [onopen](./eventsource/api-1633269-onopen.md)
+- [readyState](./eventsource/api-1629335-readystate.md)
+- [url](./eventsource/api-1630792-url.md)
+- [withCredentials](./eventsource/api-1630541-withcredentials.md)
 ### Instance Methods
-- [close](eventsource/1633862-close.md)
+- [close](./eventsource/api-1633862-close.md)
 ### Miscellaneous
-- [CLOSED](eventsource/1633548-closed.md)
-- [CONNECTING](eventsource/1629157-connecting.md)
-- [OPEN](eventsource/1630491-open.md)
+- [CLOSED](./eventsource/api-1633548-closed.md)
+- [CONNECTING](./eventsource/api-1629157-connecting.md)
+- [OPEN](./eventsource/api-1630491-open.md)
 
 ## Relationships
 

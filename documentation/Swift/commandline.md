@@ -1,7 +1,8 @@
 # CommandLine
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Command-line arguments for the current process.
 
@@ -24,23 +25,24 @@ enum CommandLine
 ## Topics
 
 ### Accessing Arguments
-- [static var arguments: [String]](commandline/arguments.md)
+- [static var arguments: [String]](./commandline/arguments.md)
   An array that provides access to this program’s command line arguments.
 ### Accessing Raw Argument Data
-- [static var argc: Int32](commandline/argc.md)
+- [static var argc: Int32](./commandline/argc.md)
   Access to the raw argc value from C.
-- [static var unsafeArgv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>](commandline/unsafeargv.md)
+- [static var unsafeArgv: UnsafeMutablePointer<UnsafeMutablePointer<Int8>?>](./commandline/unsafeargv.md)
   Access to the raw argv value from C.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [func readLine(strippingNewline: Bool) -> String?](readline(strippingnewline:).md)
+### Command Line Input
+- [func readLine(strippingNewline: Bool) -> String?](./readline%28strippingnewline%29.md)
   Returns a string read from standard input through the end of the current line or until EOF is reached.
 
 

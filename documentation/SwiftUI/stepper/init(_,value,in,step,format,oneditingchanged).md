@@ -1,7 +1,8 @@
 # init(_:value:in:step:format:onEditingChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stepper instance that increments and decrements a binding to a value, by a step size and within a closed range that you provide, displaying its value with an applied format style.
 
@@ -18,6 +19,20 @@ Creates a stepper instance that increments and decrements a binding to a value, 
 ```swift
 @export(implementation)
 nonisolated init<F>(_ titleResource: LocalizedStringResource, value: Binding<F.FormatInput>, in bounds: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
+```
+
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<F>(_ titleKey: LocalizedStringKey, value: Binding<F.FormatInput>, in bounds: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
+```
+
+```swift
+nonisolated
+init<S, F>(_ title: S, value: Binding<F.FormatInput>, in bounds: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where S : StringProtocol, F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
 ```
 
 #### Discussion
@@ -45,7 +60,7 @@ struct StepperView: View {
 ## Parameters
 
 - `titleResource`: Text resource for the stepper’s localized title describing the purpose of the stepper.
-- `value`: A [`Binding`](binding.md) to a value that your provide.
+- `value`: A [`Binding`](../binding.md) to a value that your provide.
 - `bounds`: A closed range that describes the upper and lower bounds permitted by the stepper.
 - `step`: The amount to increment or decrement `value` each time the user clicks or taps the stepper’s increment or decrement button, respectively. Defaults to `1`.
 - `format`: A format style of type `F` to use when converting between the string the user edits and the underlying value of type `F.FormatInput`. If `format` can’t perform the conversion, the stepper leaves `value` unchanged. If the user stops editing the text in an invalid state, the stepper updates the text to the last known valid value.
@@ -53,11 +68,12 @@ struct StepperView: View {
 
 ## See Also
 
-- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:in:step:label:oneditingchanged:).md)
+### Creating a stepper over a range
+- [init<V>(value: Binding<V>, in: ClosedRange<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](./init%28value,in,step,label,oneditingchanged%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide.
-- [init<F>(value: Binding<F.FormatInput>, in: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride, format: F, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:in:step:format:label:oneditingchanged:).md)
+- [init<F>(value: Binding<F.FormatInput>, in: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride, format: F, label: () -> Label, onEditingChanged: (Bool) -> Void)](./init%28value,in,step,format,label,oneditingchanged%29.md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value and within a range of values you provide, displaying its value with an applied format style.
-- [init(_:value:in:step:onEditingChanged:)](stepper/init(_:value:in:step:oneditingchanged:).md)
+- [init(_:value:in:step:onEditingChanged:)](./init%28_,value,in,step,oneditingchanged%29.md)
   Creates a stepper instance that increments and decrements a binding to a value, by a step size and within a closed range that you provide.
 
 

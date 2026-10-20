@@ -1,7 +1,8 @@
 # TableShapeType.circularElliptic
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A table shape that resembles an ellipse.
 
@@ -18,11 +19,12 @@ case circularElliptic
 
 ## See Also
 
-- [TableShapeType.rectangular](tableshapetype/rectangular.md)
+### Choosing a chair type
+- [TableShapeType.rectangular](./rectangular.md)
   A table shape that resembles a rectangle.
-- [TableShapeType.lShaped](tableshapetype/lshaped.md)
+- [TableShapeType.lShaped](./lshaped.md)
   A table shape that resembles the letter L.
-- [TableShapeType.unidentified](tableshapetype/unidentified.md)
+- [TableShapeType.unidentified](./unidentified.md)
   An uncategorized table shape.
 
 

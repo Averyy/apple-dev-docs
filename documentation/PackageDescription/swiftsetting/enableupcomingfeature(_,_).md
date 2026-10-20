@@ -1,7 +1,8 @@
 # enableUpcomingFeature(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enable an upcoming feature with the given name.
 
@@ -20,7 +21,7 @@ An upcoming feature is one that is available in Swift as of a certain language v
 
 You can add and use multiple upcoming features in a given target without affecting its dependencies. Targets will ignore any unknown upcoming features.
 
-> **Note**: First available in PackageDescription 5.8.
+> **Since**: First available in PackageDescription 5.8.
 
 ## Parameters
 
@@ -29,23 +30,24 @@ You can add and use multiple upcoming features in a given target without affecti
 
 ## See Also
 
-- [static func define(String, BuildSettingCondition?) -> SwiftSetting](swiftsetting/define(_:_:).md)
+### Configuring Swift Settings
+- [static func define(String, BuildSettingCondition?) -> SwiftSetting](./define%28_,_%29.md)
   Defines a compilation condition.
-- [static func unsafeFlags([String], BuildSettingCondition?) -> SwiftSetting](swiftsetting/unsafeflags(_:_:).md)
+- [static func unsafeFlags([String], BuildSettingCondition?) -> SwiftSetting](./unsafeflags%28_,_%29.md)
   Set unsafe flags to pass arbitrary command-line flags to the corresponding build tool.
-- [static func strictMemorySafety(BuildSettingCondition?) -> SwiftSetting](swiftsetting/strictmemorysafety(_:).md)
+- [static func strictMemorySafety(BuildSettingCondition?) -> SwiftSetting](./strictmemorysafety%28_%29.md)
   Enable strict memory safety checking.
-- [static func swiftLanguageMode(SwiftLanguageMode, BuildSettingCondition?) -> SwiftSetting](swiftsetting/swiftlanguagemode(_:_:).md)
+- [static func swiftLanguageMode(SwiftLanguageMode, BuildSettingCondition?) -> SwiftSetting](./swiftlanguagemode%28_,_%29.md)
   Defines a `-language-mode` to pass  to the corresponding build tool.
-- [static func defaultIsolation(MainActor.Type?, BuildSettingCondition?) -> SwiftSetting](swiftsetting/defaultisolation(_:_:).md)
+- [static func defaultIsolation(MainActor.Type?, BuildSettingCondition?) -> SwiftSetting](./defaultisolation%28_,_%29.md)
   Set the default isolation to the given global actor type.
-- [static func enableExperimentalFeature(String, BuildSettingCondition?) -> SwiftSetting](swiftsetting/enableexperimentalfeature(_:_:).md)
+- [static func enableExperimentalFeature(String, BuildSettingCondition?) -> SwiftSetting](./enableexperimentalfeature%28_,_%29.md)
   Enable an experimental feature with the given name.
-- [static func interoperabilityMode(SwiftSetting.InteroperabilityMode, BuildSettingCondition?) -> SwiftSetting](swiftsetting/interoperabilitymode(_:_:).md)
+- [static func interoperabilityMode(SwiftSetting.InteroperabilityMode, BuildSettingCondition?) -> SwiftSetting](./interoperabilitymode%28_,_%29.md)
   Enables Swift interoperability with a given language.
-- [SwiftSetting.InteroperabilityMode](swiftsetting/interoperabilitymode.md)
+- [SwiftSetting.InteroperabilityMode](./interoperabilitymode.md)
   The interoperability mode
-- [static func swiftLanguageVersion(SwiftVersion, BuildSettingCondition?) -> SwiftSetting](swiftsetting/swiftlanguageversion(_:_:).md)
+- [static func swiftLanguageVersion(SwiftVersion, BuildSettingCondition?) -> SwiftSetting](./swiftlanguageversion%28_,_%29.md)
   Defines a `-swift-version` to pass  to the corresponding build tool.
 
 

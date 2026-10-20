@@ -1,7 +1,8 @@
 # handler
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler block to execute when the user selects the action.
 
@@ -17,13 +18,18 @@ The handler block to execute when the user selects the action.
 var handler: UIContextualAction.Handler { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UIContextualActionHandler handler;
+```
+
 ## See Also
 
-- [UIContextualAction.Handler](uicontextualaction/handler-swift.typealias.md)
+### Getting the configuration details
+- [UIContextualAction.Handler](./handler-swift.typealias.md)
   The handler block to call in response to the selection of an action.
-- [var style: UIContextualAction.Style](uicontextualaction/style-swift.property.md)
+- [var style: UIContextualAction.Style](./style-swift.property.md)
   The style that applies to the action button.
-- [UIContextualAction.Style](uicontextualaction/style-swift.enum.md)
+- [UIContextualAction.Style](./style-swift.enum.md)
   Constants indicating the style information that applies to the action button.
 
 

@@ -1,7 +1,8 @@
 # navigationMeshes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of NavigationMeshResources.
 

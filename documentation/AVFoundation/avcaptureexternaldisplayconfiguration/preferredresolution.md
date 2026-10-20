@@ -1,7 +1,8 @@
 # preferredResolution
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Your preferred external display resolution.
 
@@ -18,15 +19,20 @@ Your preferred external display resolution.
 var preferredResolution: CMVideoDimensions { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CMVideoDimensions preferredResolution;
+```
+
 #### Discussion
 
-Use [`preferredResolution`](avcaptureexternaldisplayconfiguration/preferredresolution.md) to set your desired resolution of the external display. When left at the default value of { 0, 0 },  the native resolution of the external display is used.
+Use [`preferredResolution`](./preferredresolution.md) to set your desired resolution of the external display. When left at the default value of { 0, 0 },  the native resolution of the external display is used.
 
 ## See Also
 
-- [var bypassColorSpaceConversion: Bool](avcaptureexternaldisplayconfiguration/bypasscolorspaceconversion.md)
+### Modifying the configuration
+- [var bypassColorSpaceConversion: Bool](./bypasscolorspaceconversion.md)
   A property indicating whether the color space of the configurator’s preview layer should be preserved on the output display by avoiding color space conversions.
-- [var shouldMatchFrameRate: Bool](avcaptureexternaldisplayconfiguration/shouldmatchframerate.md)
+- [var shouldMatchFrameRate: Bool](./shouldmatchframerate.md)
   A property indicating whether the frame rate of the external display should be configured to match the camera’s frame rate.
 
 

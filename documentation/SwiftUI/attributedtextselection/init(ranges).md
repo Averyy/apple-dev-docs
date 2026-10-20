@@ -1,7 +1,8 @@
 # init(ranges:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a selection to character ranges.
 

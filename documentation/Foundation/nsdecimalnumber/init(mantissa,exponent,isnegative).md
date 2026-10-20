@@ -1,7 +1,8 @@
 # init(mantissa:exponent:isNegative:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a decimal number using the given mantissa, exponent, and sign.
 
@@ -20,13 +21,17 @@ Initializes a decimal number using the given mantissa, exponent, and sign.
 convenience init(mantissa: UInt64, exponent: Int16, isNegative flag: Bool)
 ```
 
+```objc
+- (instancetype) initWithMantissa:(unsigned long long) mantissa exponent:(short) exponent isNegative:(BOOL) flag;
+```
+
 #### Return Value
 
 An `NSDecimalNumber` object initialized using the given mantissa, exponent, and sign.
 
 #### Discussion
 
-The arguments express a number in a type of scientific notation that requires the mantissa to be an integer. So, for example, if the number to be represented is 1.23, it is expressed as 123x10^–2—`mantissa` is 123; `exponent` is –2; and `isNegative`, which refers to the sign of the mantissa, is [`false`](https://developer.apple.com/documentation/swift/false).
+The arguments express a number in a type of scientific notation that requires the mantissa to be an integer. So, for example, if the number to be represented is 1.23, it is expressed as 123x10^–2—`mantissa` is 123; `exponent` is –2; and `isNegative`, which refers to the sign of the mantissa, is [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -36,11 +41,12 @@ The arguments express a number in a type of scientific notation that requires th
 
 ## See Also
 
-- [init(decimal: Decimal)](nsdecimalnumber/init(decimal:).md)
+### Initializing a Decimal Number
+- [init(decimal: Decimal)](./init%28decimal%29.md)
   Initializes a decimal number to represent a given decimal.
-- [convenience init(string: String?)](nsdecimalnumber/init(string:).md)
+- [convenience init(string: String?)](./init%28string%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string.
-- [convenience init(string: String?, locale: Any?)](nsdecimalnumber/init(string:locale:).md)
+- [convenience init(string: String?, locale: Any?)](./init%28string,locale%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string, interpreted using a given locale.
 
 

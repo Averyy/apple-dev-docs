@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: MediaExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new information status flag for parsing additional fragments.
 

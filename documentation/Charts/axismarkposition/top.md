@@ -1,7 +1,8 @@
 # top
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A markers at the top of the chart
 

@@ -1,7 +1,8 @@
 # UIHinge
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object encapsulating the state of a single hinge.
 
@@ -19,11 +20,15 @@ An object encapsulating the state of a single hinge.
 class UIHinge
 ```
 
+```objc
+@interface UIHinge : NSObject
+```
+
 #### Overview
 
 You observe hinge state by adding a `UIHingeInteraction` to a view and reading it from the update delivered to its handler.
 
-```None
+```
 override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -49,34 +54,35 @@ In the example above, the current angle and status of the hinge are displayed as
 ## Topics
 
 ### Getting the hinge state
-- [var angle: CGFloat](uihinge/angle.md)
+- [var angle: CGFloat](./uihinge/angle.md)
   The current angle of the hinge, in radians.
-- [var status: UIHinge.Status](uihinge/status-swift.property.md)
+- [var status: UIHinge.Status](./uihinge/status-swift.property.md)
   The current status of the hinge
-- [UIHinge.Status](uihinge/status-swift.enum.md)
+- [UIHinge.Status](./uihinge/status-swift.enum.md)
   The status of an individual hinge
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIDevice](uidevice.md)
+### Device environment
+- [class UIDevice](./uidevice.md)
   A representation of the current device.
-- [class UIStatusBarManager](uistatusbarmanager.md)
+- [class UIStatusBarManager](./uistatusbarmanager.md)
   An object that describes the configuration of the status bar.
-- [class UIHingeInteraction](uihingeinteraction.md)
+- [class UIHingeInteraction](./uihingeinteraction.md)
   An interaction for observing the hinge state associated with the view’s hierarchy.
 
 

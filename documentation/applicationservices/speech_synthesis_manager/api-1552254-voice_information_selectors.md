@@ -7,9 +7,9 @@ The types of voice data that can be requested by the `GetVoiceInfo` function.
 ## Topics
 
 ### Constants
-- [var soVoiceDescription: OSType](sovoicedescription.md)
+- [var soVoiceDescription: OSType](../sovoicedescription.md)
   Get basic voice information.
-- [var soVoiceFile: OSType](sovoicefile.md)
+- [var soVoiceFile: OSType](../sovoicefile.md)
   Get voice file reference information.
 
 

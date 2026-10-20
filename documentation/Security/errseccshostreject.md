@@ -1,7 +1,8 @@
 # errSecCSHostReject
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code rejected its host.
 
@@ -13,6 +14,10 @@ Code rejected its host.
 
 ```swift
 var errSecCSHostReject: OSStatus { get }
+```
+
+```c
+errSecCSHostReject
 ```
 
 #### Discussion

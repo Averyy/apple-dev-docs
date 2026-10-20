@@ -1,18 +1,19 @@
 # CFURLPathStyle
 
 **Framework**: Core Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options you can use to determine how CFURL functions parse a file system path name.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,31 +21,36 @@ Options you can use to determine how CFURL functions parse a file system path na
 enum CFURLPathStyle
 ```
 
+```c
+enum CFURLPathStyle : CFIndex;
+```
+
 ## Topics
 
 ### Constants
-- [CFURLPathStyle.cfurlposixPathStyle](cfurlpathstyle/cfurlposixpathstyle.md)
+- [CFURLPathStyle.cfurlposixPathStyle](./cfurlpathstyle/cfurlposixpathstyle.md)
   Indicates a POSIX style path name. Components are slash delimited. A leading slash indicates an absolute path; a trailing slash is not significant.
-- [CFURLPathStyle.cfurlhfsPathStyle](cfurlpathstyle/cfurlhfspathstyle.md)
+- [CFURLPathStyle.cfurlhfsPathStyle](./cfurlpathstyle/cfurlhfspathstyle.md)
   Indicates a HFS style path name. Components are colon delimited. A leading colon indicates a relative path, otherwise the first path component denotes the volume.
-- [CFURLPathStyle.cfurlWindowsPathStyle](cfurlpathstyle/cfurlwindowspathstyle.md)
+- [CFURLPathStyle.cfurlWindowsPathStyle](./cfurlpathstyle/cfurlwindowspathstyle.md)
   Indicates a Windows style path name.
 ### Initializers
-- [init?(rawValue: CFIndex)](cfurlpathstyle/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./cfurlpathstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CFURLComponentType](cfurlcomponenttype.md)
+### Miscellaneous
+- [enum CFURLComponentType](./cfurlcomponenttype.md)
   The types of components in a URL.
 
 

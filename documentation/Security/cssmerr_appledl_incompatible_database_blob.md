@@ -1,7 +1,8 @@
 # CSSMERR_APPLEDL_INCOMPATIBLE_DATABASE_BLOB
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLEDL_INCOMPATIBLE_DATABASE_BLOB: Int { get }
+```
+
+```c
+CSSMERR_APPLEDL_INCOMPATIBLE_DATABASE_BLOB
 ```
 
 

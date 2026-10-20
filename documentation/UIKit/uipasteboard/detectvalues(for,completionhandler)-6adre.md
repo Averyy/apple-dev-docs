@@ -1,7 +1,8 @@
 # detectValues(for:completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the data detection system identify the types of data that you specify for the pasteboard, and provide the values that it matches to your closure.
 
@@ -9,7 +10,7 @@ Requests that the data detection system identify the types of data that you spec
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,11 +29,12 @@ Because this method gives the app access to the values it detects in the pastebo
 
 ## See Also
 
-- [Deprecated symbols](uipasteboard-deprecated-symbols.md)
+### Deprecated
+- [Deprecated symbols](../uipasteboard-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
-- [func detectPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, completionHandler: (Result<Set<PartialKeyPath<UIPasteboard.DetectedValues>>, any Error>) -> ())](uipasteboard/detectpatterns(for:completionhandler:)-23vwn.md)
+- [func detectPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, completionHandler: (Result<Set<PartialKeyPath<UIPasteboard.DetectedValues>>, any Error>) -> ())](./detectpatterns%28for,completionhandler%29-23vwn.md)
   Requests that the data detection system identify the patterns that you specify for the pasteboard, and provide the patterns that it matches to your closure.
-- [func detectPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?, completionHandler: (Result<[Set<PartialKeyPath<UIPasteboard.DetectedValues>>], any Error>) -> ())](uipasteboard/detectpatterns(for:initemset:completionhandler:)-7ubl1.md)
+- [func detectPatterns(for: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet: IndexSet?, completionHandler: (Result<[Set<PartialKeyPath<UIPasteboard.DetectedValues>>], any Error>) -> ())](./detectpatterns%28for,initemset,completionhandler%29-7ubl1.md)
   Requests that the data detection system identify the patterns that you specify for the pasteboard items, and provide the patterns that it matches to your closure.
 
 

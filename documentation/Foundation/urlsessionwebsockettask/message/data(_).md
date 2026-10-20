@@ -1,7 +1,8 @@
 # URLSessionWebSocketTask.Message.data(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A WebSocket message that contains a block of data.
 
@@ -22,7 +23,8 @@ case data(Data)
 
 ## See Also
 
-- [URLSessionWebSocketTask.Message.string(_:)](urlsessionwebsockettask/message/string(_:).md)
+### Message types
+- [URLSessionWebSocketTask.Message.string(_:)](./string%28_%29.md)
   A WebSocket message that contains a string.
 
 

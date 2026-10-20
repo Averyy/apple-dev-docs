@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDRqGetIdle](1643521-anonymous/khidrqgetidle.md)
-- [kHIDRqGetProtocol](1643521-anonymous/khidrqgetprotocol.md)
-- [kHIDRqGetReport](1643521-anonymous/khidrqgetreport.md)
-- [kHIDRqSetIdle](1643521-anonymous/khidrqsetidle.md)
-- [kHIDRqSetProtocol](1643521-anonymous/khidrqsetprotocol.md)
-- [kHIDRqSetReport](1643521-anonymous/khidrqsetreport.md)
+- [kHIDRqGetIdle](./api-1643521-anonymous/khidrqgetidle.md)
+- [kHIDRqGetProtocol](./api-1643521-anonymous/khidrqgetprotocol.md)
+- [kHIDRqGetReport](./api-1643521-anonymous/khidrqgetreport.md)
+- [kHIDRqSetIdle](./api-1643521-anonymous/khidrqsetidle.md)
+- [kHIDRqSetProtocol](./api-1643521-anonymous/khidrqsetprotocol.md)
+- [kHIDRqSetReport](./api-1643521-anonymous/khidrqsetreport.md)
 
 
 ---

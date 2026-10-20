@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object the calendar view calls for decoration views.
 
@@ -17,19 +18,24 @@ A delegate object the calendar view calls for decoration views.
 weak var delegate: (any UICalendarViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UICalendarViewDelegate> delegate;
+```
+
 ## See Also
 
-- [var fontDesign: UIFontDescriptor.SystemDesign](uicalendarview/fontdesign.md)
+### Customizing the calendar display
+- [var fontDesign: UIFontDescriptor.SystemDesign](./fontdesign.md)
   A font design that the calendar view uses for displaying calendar text.
-- [protocol UICalendarViewDelegate](uicalendarviewdelegate.md)
+- [protocol UICalendarViewDelegate](../uicalendarviewdelegate.md)
   An object that a calendar view uses to display decorations for dates.
-- [UICalendarView.Decoration](uicalendarview/decoration.md)
+- [UICalendarView.Decoration](./decoration.md)
   A view that a calendar view displays for a specific date.
-- [UICalendarView.DecorationSize](uicalendarview/decorationsize.md)
+- [UICalendarView.DecorationSize](./decorationsize.md)
   Constants that indicate the relative size of a decoration in a calendar view.
-- [var wantsDateDecorations: Bool](uicalendarview/wantsdatedecorations.md)
+- [var wantsDateDecorations: Bool](./wantsdatedecorations.md)
   A Boolean value that indicates whether the calendar view displays date decorations.
-- [func reloadDecorations(forDateComponents: [DateComponents], animated: Bool)](uicalendarview/reloaddecorations(fordatecomponents:animated:).md)
+- [func reloadDecorations(forDateComponents: [DateComponents], animated: Bool)](./reloaddecorations%28fordatecomponents,animated%29.md)
   Reloads the decorations for the dates you provide, with an option to animate the decoration reload.
 
 

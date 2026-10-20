@@ -1,18 +1,19 @@
 # mbuf_alloccluster
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_alloccluster(mbuf_how_t how, size_t *size, char **addr);
 ```
 
-#### Return_value
+#### Return Value
 
 0 on success or ENOMEM if failure. If the caller requests greater than 4096 bytes and the system is unable to fulfill the request due to the lack of jumbo clusters support based on the configuration, this routine will return ENOTSUP. In this case, the caller is advised to use 4096 bytes or smaller during subseqent requests.
 

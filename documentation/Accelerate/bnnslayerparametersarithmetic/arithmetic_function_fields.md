@@ -1,18 +1,21 @@
 # arithmetic_function_fields
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to an arithmetic function field structure.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,11 +23,16 @@ A pointer to an arithmetic function field structure.
 var arithmetic_function_fields: UnsafeMutableRawPointer
 ```
 
+```c
+void * arithmetic_function_fields;
+```
+
 ## See Also
 
-- [var arithmetic_function: BNNSArithmeticFunction](bnnslayerparametersarithmetic/arithmetic_function.md)
+### Instance Properties
+- [var arithmetic_function: BNNSArithmeticFunction](./arithmetic_function.md)
   The arithmetic operation of the layer.
-- [var activation: BNNSActivation](bnnslayerparametersarithmetic/activation.md)
+- [var activation: BNNSActivation](./activation.md)
   The activation function that the layer applies to the output.
 
 

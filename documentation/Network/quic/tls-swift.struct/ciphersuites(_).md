@@ -1,7 +1,8 @@
 # cipherSuites(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set TLS cipher suites to the set of enabled ciphersuites.
 

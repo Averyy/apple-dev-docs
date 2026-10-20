@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string representation of the email address.
 

@@ -1,7 +1,8 @@
 # init(unsafeRetaining:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a read-only buffer by retaining the existing PCM buffer without copying.
 
@@ -30,9 +31,10 @@ init(unsafeRetaining buffer: sending AVAudioPCMBuffer)
 
 ## See Also
 
-- [init(copying: AVAudioPCMBuffer)](avreadonlyaudiopcmbuffer/init(copying:).md)
+### Creating a read-only buffer
+- [init(copying: AVAudioPCMBuffer)](./init%28copying%29.md)
   Creates a read-only buffer by copying audio data from an existing PCM buffer.
-- [init(format: AVAudioFormat, frameCapacity: Int, initializingWith: (UnsafeMutablePointer<AudioBufferList>) throws -> Void) throws](avreadonlyaudiopcmbuffer/init(format:framecapacity:initializingwith:).md)
+- [init(format: AVAudioFormat, frameCapacity: Int, initializingWith: (UnsafeMutablePointer<AudioBufferList>) throws -> Void) throws](./init%28format,framecapacity,initializingwith%29.md)
   Creates a read-only buffer by allocating and initializing audio data via closure.
 
 

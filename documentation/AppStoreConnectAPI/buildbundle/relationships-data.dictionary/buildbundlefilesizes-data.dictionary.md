@@ -1,7 +1,8 @@
 # BuildBundle.Relationships.BuildBundleFileSizes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data, links, and paging information that describe the relationship between the Build Bundles and the Build Bundle File Sizes resources.
 
@@ -10,18 +11,18 @@ The data, links, and paging information that describe the relationship between t
 
 ## Declaration
 
-```swift
+```
 object BuildBundle.Relationships.BuildBundleFileSizes
 ```
 
 ## Mentions
 
-- [App Store Connect API 1.6 release notes](app-store-connect-api-1-6-release-notes.md)
+- [App Store Connect API 1.6 release notes](../../app-store-connect-api-1-6-release-notes.md)
 
 ## Topics
 
 ### Objects
-- [object BuildBundle.Relationships.BuildBundleFileSizes.Data](buildbundle/relationships-data.dictionary/buildbundlefilesizes-data.dictionary/data-data.dictionary.md)
+- [object BuildBundle.Relationships.BuildBundleFileSizes.Data](./buildbundlefilesizes-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Build Bundle File Sizes resource.
 
 ## Properties
@@ -32,11 +33,12 @@ object BuildBundle.Relationships.BuildBundleFileSizes
 
 ## See Also
 
-- [object BuildBundle.Relationships.AppClipDomainCacheStatus](buildbundle/relationships-data.dictionary/appclipdomaincachestatus-data.dictionary.md)
+### Objects
+- [object BuildBundle.Relationships.AppClipDomainCacheStatus](./appclipdomaincachestatus-data.dictionary.md)
   The data and links that describe the relationship between the Build Bundles and the App Clip Domain Cache Statuses resources.
-- [object BuildBundle.Relationships.AppClipDomainDebugStatus](buildbundle/relationships-data.dictionary/appclipdomaindebugstatus-data.dictionary.md)
+- [object BuildBundle.Relationships.AppClipDomainDebugStatus](./appclipdomaindebugstatus-data.dictionary.md)
   The data and links that describe the relationship between the Build Bundles and the App Clip Domain Debug Statuses resources.
-- [object BuildBundle.Relationships.BetaAppClipInvocations](buildbundle/relationships-data.dictionary/betaappclipinvocations-data.dictionary.md)
+- [object BuildBundle.Relationships.BetaAppClipInvocations](./betaappclipinvocations-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Build Bundles and the Beta App Clip Invocations resources.
 
 

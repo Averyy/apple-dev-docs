@@ -1,7 +1,8 @@
 # default
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that represents the system’s default alert sound.
 
@@ -17,7 +18,8 @@ static var `default`: AlertConfiguration.AlertSound { get }
 
 ## See Also
 
-- [static func named(String) -> AlertConfiguration.AlertSound](alertconfiguration/alertsound/named(_:).md)
+### Configuring the alert sound
+- [static func named(String) -> AlertConfiguration.AlertSound](./named%28_%29.md)
   A function you use to configure a custom sound for a Live Activity update alert.
 
 

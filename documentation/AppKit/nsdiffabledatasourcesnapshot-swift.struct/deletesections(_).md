@@ -1,7 +1,8 @@
 # deleteSections(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the sections with the specified identifiers from the snapshot.
 
@@ -20,9 +21,10 @@ mutating func deleteSections(_ identifiers: [SectionIdentifierType])
 
 ## See Also
 
-- [func deleteAllItems()](nsdiffabledatasourcesnapshot-swift.struct/deleteallitems.md)
+### Removing Items and Sections
+- [func deleteAllItems()](./deleteallitems%28%29.md)
   Deletes all of the items from the snapshot.
-- [func deleteItems([ItemIdentifierType])](nsdiffabledatasourcesnapshot-swift.struct/deleteitems(_:).md)
+- [func deleteItems([ItemIdentifierType])](./deleteitems%28_%29.md)
   Deletes the items with the specified identifiers from the snapshot.
 
 

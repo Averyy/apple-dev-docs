@@ -1,23 +1,28 @@
 # particleScaleRange
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of allowed random values for a particle’s initial scale.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var particleScaleRange: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat particleScaleRange;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The default value is `0.0`. If non-zero, the initial scale of each particle is r
 
 ## See Also
 
-- [var particleScale: CGFloat](skemitternode/particlescale.md)
+### Scaling Particles by a Factor
+- [var particleScale: CGFloat](./particlescale.md)
   The average initial scale factor of a particle.
-- [var particleScaleSpeed: CGFloat](skemitternode/particlescalespeed.md)
+- [var particleScaleSpeed: CGFloat](./particlescalespeed.md)
   The rate at which a particle’s scale factor changes per second.
-- [var particleScaleSequence: SKKeyframeSequence?](skemitternode/particlescalesequence.md)
+- [var particleScaleSequence: SKKeyframeSequence?](./particlescalesequence.md)
   The sequence used to specify the scale factor of a particle over its lifetime.
 
 

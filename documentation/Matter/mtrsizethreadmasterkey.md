@@ -1,7 +1,8 @@
 # MTRSizeThreadMasterKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRSizeThreadMasterKey: Int
+```
+
+```c
+extern const size_t MTRSizeThreadMasterKey;
 ```
 
 

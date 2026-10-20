@@ -1,7 +1,8 @@
 # pseudoElement
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An abstract element representing the portion of the CSS render tree on which the transition occurs.
 
@@ -11,7 +12,7 @@ An abstract element representing the portion of the CSS render tree on which the
 
 ## Declaration
 
-```swift
+```
 readonly attribute DOMString pseudoElement;
 ```
 

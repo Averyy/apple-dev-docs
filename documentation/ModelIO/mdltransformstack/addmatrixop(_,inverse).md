@@ -1,7 +1,8 @@
 # addMatrixOp(_:inverse:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addMatrixOp(_ animatedValueName: String, inverse: Bool) -> MDLTransformMatrixOp
+```
+
+```objc
+- (MDLTransformMatrixOp *) addMatrixOp:(NSString *) animatedValueName inverse:(bool) inverse;
 ```
 
 

@@ -1,7 +1,8 @@
 # showsCursor
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the pointer appears in the screenshot.
 
@@ -13,6 +14,10 @@ A Boolean value that specifies whether the pointer appears in the screenshot.
 
 ```swift
 var showsCursor: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL showsCursor;
 ```
 
 #### Discussion

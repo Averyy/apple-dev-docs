@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The server environment that generates and signs the transaction.
 
@@ -22,7 +23,8 @@ let environment: AppStore.Environment
 
 ## See Also
 
-- [let storefront: Storefront](transaction/storefront.md)
+### Getting the environment and storefront
+- [let storefront: Storefront](./storefront.md)
   The App Store storefront associated with the transaction.
 
 

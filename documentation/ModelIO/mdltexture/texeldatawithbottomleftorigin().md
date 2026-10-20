@@ -1,7 +1,8 @@
 # texelDataWithBottomLeftOrigin()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the texture’s image data, organized such that its first pixel represents the bottom-left corner of the image.
 
@@ -19,6 +20,10 @@ Returns the texture’s image data, organized such that its first pixel represen
 func texelDataWithBottomLeftOrigin() -> Data?
 ```
 
+```objc
+- (NSData *) texelDataWithBottomLeftOrigin;
+```
+
 #### Return Value
 
 The texture’s image data, or `nil` if data is not available.
@@ -27,15 +32,16 @@ The texture’s image data, or `nil` if data is not available.
 
 If the texture was initialized with image data in top-left-origin format, the first call to this method creates and caches image data in bottom-left-origin format.
 
-This method returns `nil` if the texture was not initialized with image data and is not a [`MDLTexture`](mdltexture.md) subclass capable of loading or generating its own data.
+This method returns `nil` if the texture was not initialized with image data and is not a [`MDLTexture`](../mdltexture.md) subclass capable of loading or generating its own data.
 
 ## See Also
 
-- [func texelDataWithTopLeftOrigin() -> Data?](mdltexture/texeldatawithtopleftorigin.md)
+### Accessing Texture Data
+- [func texelDataWithTopLeftOrigin() -> Data?](./texeldatawithtopleftorigin%28%29.md)
   Returns the texture’s image data, organized such that its first pixel represents the top-left corner of the image.
-- [func texelDataWithTopLeftOrigin(atMipLevel: Int, create: Bool) -> Data?](mdltexture/texeldatawithtopleftorigin(atmiplevel:create:).md)
+- [func texelDataWithTopLeftOrigin(atMipLevel: Int, create: Bool) -> Data?](./texeldatawithtopleftorigin%28atmiplevel,create%29.md)
   Returns the texture’s image data for the specified mipmap level, organized such that its first pixel represents the top-left corner of the image.
-- [func texelDataWithBottomLeftOrigin(atMipLevel: Int, create: Bool) -> Data?](mdltexture/texeldatawithbottomleftorigin(atmiplevel:create:).md)
+- [func texelDataWithBottomLeftOrigin(atMipLevel: Int, create: Bool) -> Data?](./texeldatawithbottomleftorigin%28atmiplevel,create%29.md)
   Returns the texture’s image data for the specified mipmap level, organized such that its first pixel represents the bottom-left corner of the image.
 
 

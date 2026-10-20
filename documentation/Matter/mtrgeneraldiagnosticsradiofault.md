@@ -1,7 +1,8 @@
 # MTRGeneralDiagnosticsRadioFault
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.4+
@@ -18,28 +19,32 @@
 enum MTRGeneralDiagnosticsRadioFault
 ```
 
+```c
+enum MTRGeneralDiagnosticsRadioFault : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRGeneralDiagnosticsRadioFault.bleFault](mtrgeneraldiagnosticsradiofault/blefault.md)
-- [MTRGeneralDiagnosticsRadioFault.cellularFault](mtrgeneraldiagnosticsradiofault/cellularfault.md)
-- [MTRGeneralDiagnosticsRadioFault.ethernetFault](mtrgeneraldiagnosticsradiofault/ethernetfault.md)
-- [MTRGeneralDiagnosticsRadioFault.nfcFault](mtrgeneraldiagnosticsradiofault/nfcfault.md)
-- [MTRGeneralDiagnosticsRadioFault.threadFault](mtrgeneraldiagnosticsradiofault/threadfault.md)
-- [MTRGeneralDiagnosticsRadioFault.unspecified](mtrgeneraldiagnosticsradiofault/unspecified.md)
-- [MTRGeneralDiagnosticsRadioFault.wiFiFault](mtrgeneraldiagnosticsradiofault/wififault.md)
+- [MTRGeneralDiagnosticsRadioFault.bleFault](./mtrgeneraldiagnosticsradiofault/blefault.md)
+- [MTRGeneralDiagnosticsRadioFault.cellularFault](./mtrgeneraldiagnosticsradiofault/cellularfault.md)
+- [MTRGeneralDiagnosticsRadioFault.ethernetFault](./mtrgeneraldiagnosticsradiofault/ethernetfault.md)
+- [MTRGeneralDiagnosticsRadioFault.nfcFault](./mtrgeneraldiagnosticsradiofault/nfcfault.md)
+- [MTRGeneralDiagnosticsRadioFault.threadFault](./mtrgeneraldiagnosticsradiofault/threadfault.md)
+- [MTRGeneralDiagnosticsRadioFault.unspecified](./mtrgeneraldiagnosticsradiofault/unspecified.md)
+- [MTRGeneralDiagnosticsRadioFault.wiFiFault](./mtrgeneraldiagnosticsradiofault/wififault.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrgeneraldiagnosticsradiofault/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrgeneraldiagnosticsradiofault/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

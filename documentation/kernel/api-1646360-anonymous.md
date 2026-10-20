@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,23 +18,23 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kClearDeviceFeature](1646360-anonymous/kcleardevicefeature.md)
-- [kClearEndpointFeature](1646360-anonymous/kclearendpointfeature.md)
-- [kClearInterfaceFeature](1646360-anonymous/kclearinterfacefeature.md)
-- [kGetConfiguration](1646360-anonymous/kgetconfiguration.md)
-- [kGetDescriptor](1646360-anonymous/kgetdescriptor.md)
-- [kGetDeviceStatus](1646360-anonymous/kgetdevicestatus.md)
-- [kGetEndpointStatus](1646360-anonymous/kgetendpointstatus.md)
-- [kGetInterface](1646360-anonymous/kgetinterface.md)
-- [kGetInterfaceStatus](1646360-anonymous/kgetinterfacestatus.md)
-- [kSetAddress](1646360-anonymous/ksetaddress.md)
-- [kSetConfiguration](1646360-anonymous/ksetconfiguration.md)
-- [kSetDescriptor](1646360-anonymous/ksetdescriptor.md)
-- [kSetDeviceFeature](1646360-anonymous/ksetdevicefeature.md)
-- [kSetEndpointFeature](1646360-anonymous/ksetendpointfeature.md)
-- [kSetInterface](1646360-anonymous/ksetinterface.md)
-- [kSetInterfaceFeature](1646360-anonymous/ksetinterfacefeature.md)
-- [kSyncFrame](1646360-anonymous/ksyncframe.md)
+- [kClearDeviceFeature](./api-1646360-anonymous/kcleardevicefeature.md)
+- [kClearEndpointFeature](./api-1646360-anonymous/kclearendpointfeature.md)
+- [kClearInterfaceFeature](./api-1646360-anonymous/kclearinterfacefeature.md)
+- [kGetConfiguration](./api-1646360-anonymous/kgetconfiguration.md)
+- [kGetDescriptor](./api-1646360-anonymous/kgetdescriptor.md)
+- [kGetDeviceStatus](./api-1646360-anonymous/kgetdevicestatus.md)
+- [kGetEndpointStatus](./api-1646360-anonymous/kgetendpointstatus.md)
+- [kGetInterface](./api-1646360-anonymous/kgetinterface.md)
+- [kGetInterfaceStatus](./api-1646360-anonymous/kgetinterfacestatus.md)
+- [kSetAddress](./api-1646360-anonymous/ksetaddress.md)
+- [kSetConfiguration](./api-1646360-anonymous/ksetconfiguration.md)
+- [kSetDescriptor](./api-1646360-anonymous/ksetdescriptor.md)
+- [kSetDeviceFeature](./api-1646360-anonymous/ksetdevicefeature.md)
+- [kSetEndpointFeature](./api-1646360-anonymous/ksetendpointfeature.md)
+- [kSetInterface](./api-1646360-anonymous/ksetinterface.md)
+- [kSetInterfaceFeature](./api-1646360-anonymous/ksetinterfacefeature.md)
+- [kSyncFrame](./api-1646360-anonymous/ksyncframe.md)
 
 
 ---

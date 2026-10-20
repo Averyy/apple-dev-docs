@@ -1,7 +1,8 @@
 # AUSpatialMixerPersonalizedHRTFMode.on
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case on
+```
+
+```c
+kSpatialMixerPersonalizedHRTFMode_On
 ```
 
 

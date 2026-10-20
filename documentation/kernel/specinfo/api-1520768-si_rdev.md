@@ -1,14 +1,15 @@
 # si_rdev
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 dev_t si_rdev;
 ```
 

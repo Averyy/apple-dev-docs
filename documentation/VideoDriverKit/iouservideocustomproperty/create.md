@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 A static factory method that allocates and initializes a custom property.
 
@@ -10,7 +11,7 @@ A static factory method that allocates and initializes a custom property.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserVideoCustomProperty> Create(IOUserVideoDriver *in_video_driver, IOUserVideoObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserVideoCustomPropertyDataType in_qualifier_data_type, IOUserVideoCustomPropertyDataType in_data_type);
 ```
 
@@ -32,11 +33,12 @@ If IOUserVideoCustomProperty is subclassed to override behavior, don’t use thi
 
 ## See Also
 
-- [init](iouservideocustomproperty/init.md)
+### Creating a custom property
+- [init](./init.md)
   Initializes a custom property.
-- [IOUserVideoObjectPropertyAddress](videodriverkit/iouservideoobjectpropertyaddress.md)
+- [IOUserVideoObjectPropertyAddress](../videodriverkit-page/iouservideoobjectpropertyaddress.md)
   A data structure that contains all the three parts to identify a specific property, for easy transmission.
-- [IOUserVideoCustomPropertyDataType](videodriverkit/iouservideocustompropertydatatype.md)
+- [IOUserVideoCustomPropertyDataType](../videodriverkit-page/iouservideocustompropertydatatype.md)
   Data qualifier types used for custom properties.
 
 

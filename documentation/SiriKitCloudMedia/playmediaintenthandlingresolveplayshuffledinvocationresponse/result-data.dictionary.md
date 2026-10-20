@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The result of resolving whether a play media intent shuffles the playback queue.
 
@@ -10,13 +11,13 @@ The result of resolving whether a play media intent shuffles the playback queue.
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse.Result
 ```
 
 ## Properties
 
-- `resolutionResult` (BooleanResolutionResult) *(required)*: [`true`](https://developer.apple.com/documentation/swift/true) to shuffle the playback queue, or [`false`](https://developer.apple.com/documentation/swift/false) to preserve the default order.
+- `resolutionResult` (BooleanResolutionResult) *(required)*: [`true`](../../Swift/true.md) to shuffle the playback queue, or [`false`](../../Swift/false.md) to preserve the default order.
 
 
 ---

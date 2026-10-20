@@ -1,22 +1,24 @@
 # Ambisonic_W
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 Ambisonic_W
 ```
 
 ## See Also
 
-- [Ambisonic_X](videodriverkit/iouservideochannellabel/ambisonic_x.md)
-- [Ambisonic_Y](videodriverkit/iouservideochannellabel/ambisonic_y.md)
-- [Ambisonic_Z](videodriverkit/iouservideochannellabel/ambisonic_z.md)
+### First-order ambisonic channels
+- [Ambisonic_X](./ambisonic_x.md)
+- [Ambisonic_Y](./ambisonic_y.md)
+- [Ambisonic_Z](./ambisonic_z.md)
 
 
 ---

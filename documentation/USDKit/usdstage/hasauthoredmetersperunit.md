@@ -1,9 +1,10 @@
 # hasAuthoredMetersPerUnit
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A Boolean value that indicates whether this stage has an authored [`metersPerUnit`](usdstage/metersperunit.md) opinion.
+A Boolean value that indicates whether this stage has an authored [`metersPerUnit`](./metersperunit.md) opinion.
 
 **Availability**:
 - iOS 27.0+
@@ -21,11 +22,12 @@ var hasAuthoredMetersPerUnit: Bool { get }
 
 ## See Also
 
-- [var metersPerUnit: Double](usdstage/metersperunit.md)
+### Reading stage metrics
+- [var metersPerUnit: Double](./metersperunit.md)
   The number of meters represented by one unit in this stage’s coordinate system.
-- [var upAxis: USDToken](usdstage/upaxis.md)
+- [var upAxis: USDToken](./upaxis.md)
   The axis that points upward in this stage’s coordinate system.
-- [static var fallbackUpAxis: USDToken](usdstage/fallbackupaxis.md)
+- [static var fallbackUpAxis: USDToken](./fallbackupaxis.md)
   The up axis used when a stage has no authored opinion.
 
 

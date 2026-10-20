@@ -1,7 +1,8 @@
 # arSession
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that manages an ARKit session.
 
@@ -20,7 +21,7 @@ var arSession: ARSession
 
 You may use this object to display your own AR experience.
 
-[`RoomCaptureSession`](roomcapturesession.md) sets this property at initialization and throws an error if your app attempts to set a value.
+[`RoomCaptureSession`](../roomcapturesession.md) sets this property at initialization and throws an error if your app attempts to set a value.
 
 
 ---

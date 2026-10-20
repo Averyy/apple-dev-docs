@@ -1,7 +1,8 @@
 # sorted()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements of the sequence, sorted.
 
@@ -19,6 +20,8 @@ Returns the elements of the sequence, sorted.
 ```swift
 func sorted() -> [Self.Element]
 ```
+
+Available when `Element` conforms to `Comparable`.
 
 #### Return Value
 
@@ -47,7 +50,7 @@ print(descendingStudents)
 
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements that compare as equal.
 
-> **Note**: O(*n* log *n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n* log *n*), where *n* is the length of the sequence.
 
 
 ---

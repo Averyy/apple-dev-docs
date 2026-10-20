@@ -1,7 +1,8 @@
 # XCTIssue.Severity
 
 **Framework**: XCTest  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 ## Declaration
 

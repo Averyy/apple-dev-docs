@@ -1,7 +1,8 @@
 # metrics
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding font metrics object for the text style.
 
@@ -10,7 +11,7 @@ The corresponding font metrics object for the text style.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - tvOS 11.0+
-- visionOS ?+
+- visionOS
 - watchOS 4.0+
 
 ## Declaration

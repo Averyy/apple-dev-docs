@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The Metal texture usage flags necessary for any texture that can be a destination for frame data.
@@ -16,13 +17,18 @@ The Metal texture usage flags necessary for any texture that can be a destinatio
 var minimumTextureUsage: MTLTextureUsage { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLTextureUsage minimumTextureUsage;
+```
+
 ## See Also
 
-- [var guestPresentCount: Int](pgdisplay/guestpresentcount.md)
+### Handling Frame Updates
+- [var guestPresentCount: Int](./guestpresentcount.md)
   The number of frame presents that the guest has generated since object creation.
-- [var hostPresentCount: Int](pgdisplay/hostpresentcount.md)
+- [var hostPresentCount: Int](./hostpresentcount.md)
   The number of unique frames that the host has encoded since object creation.
-- [func encodeCurrentFrame(to: any MTLCommandBuffer, texture: any MTLTexture, region: MTLRegion) -> Bool](pgdisplay/encodecurrentframe(to:texture:region:).md)
+- [func encodeCurrentFrame(to: any MTLCommandBuffer, texture: any MTLTexture, region: MTLRegion) -> Bool](./encodecurrentframe%28to,texture,region%29.md)
   Encodes Metal commands to process the current frame and write it to a texture.
 
 

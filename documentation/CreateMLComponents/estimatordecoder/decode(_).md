@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decodes a value.
@@ -23,7 +24,8 @@ mutating func decode<T>(_ type: T.Type) throws -> T where T : Decodable
 
 ## See Also
 
-- [func decodeOptimizer<T>(T.Type) throws -> T](estimatordecoder/decodeoptimizer(_:).md)
+### Decoding values
+- [func decodeOptimizer<T>(T.Type) throws -> T](./decodeoptimizer%28_%29.md)
   Decodes an optimizer value.
 
 

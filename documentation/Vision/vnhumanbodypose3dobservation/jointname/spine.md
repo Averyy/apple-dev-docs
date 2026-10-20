@@ -1,7 +1,8 @@
 # spine
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A joint name that represents the spine.
 
@@ -17,6 +18,10 @@ A joint name that represents the spine.
 
 ```swift
 static let spine: VNHumanBodyPose3DObservation.JointName
+```
+
+```c
+extern VNHumanBodyPose3DObservationJointName const VNHumanBodyPose3DObservationJointNameSpine;
 ```
 
 

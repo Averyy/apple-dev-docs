@@ -1,7 +1,8 @@
 # nonConsumable
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A non-consumable Apple In-App Purchase.
 
@@ -22,11 +23,12 @@ static let nonConsumable: Product.ProductType
 
 ## See Also
 
-- [static let consumable: Product.ProductType](product/producttype/consumable.md)
+### Getting the Product Type
+- [static let consumable: Product.ProductType](./consumable.md)
   A consumable Apple In-App Purchase.
-- [static let nonRenewable: Product.ProductType](product/producttype/nonrenewable.md)
+- [static let nonRenewable: Product.ProductType](./nonrenewable.md)
   A non-renewing subscription.
-- [static let autoRenewable: Product.ProductType](product/producttype/autorenewable.md)
+- [static let autoRenewable: Product.ProductType](./autorenewable.md)
   An auto-renewable subscription.
 
 

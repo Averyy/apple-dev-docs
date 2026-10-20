@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Assigns a label for later inspection or visualization.
@@ -18,6 +19,10 @@ Assigns a label for later inspection or visualization.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * label;
 ```
 
 

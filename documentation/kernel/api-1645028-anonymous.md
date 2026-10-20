@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMSystemCapabilityDidChange](1645028-anonymous/kiopmsystemcapabilitydidchange.md)
-- [kIOPMSystemCapabilityWillChange](1645028-anonymous/kiopmsystemcapabilitywillchange.md)
+- [kIOPMSystemCapabilityDidChange](./api-1645028-anonymous/kiopmsystemcapabilitydidchange.md)
+- [kIOPMSystemCapabilityWillChange](./api-1645028-anonymous/kiopmsystemcapabilitywillchange.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # LSSharedFileListGetSeedValue(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+ - Deprecated in 10.11
@@ -10,6 +11,10 @@
 
 ```swift
 func LSSharedFileListGetSeedValue(_ inList: LSSharedFileList) -> UInt32
+```
+
+```c
+UInt32 LSSharedFileListGetSeedValue(LSSharedFileListRef inList);
 ```
 
 

@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Tracking.Reason
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reason that tracking quality has degraded.
 
@@ -18,20 +19,20 @@ enum Reason
 ## Topics
 
 ### Enumeration Cases
-- [ObjectCaptureSession.Tracking.Reason.excessiveMotion](objectcapturesession/tracking/reason/excessivemotion.md)
+- [ObjectCaptureSession.Tracking.Reason.excessiveMotion](./reason/excessivemotion.md)
   The device is moving too fast for accurate tracking.
-- [ObjectCaptureSession.Tracking.Reason.initializing](objectcapturesession/tracking/reason/initializing.md)
+- [ObjectCaptureSession.Tracking.Reason.initializing](./reason/initializing.md)
   Tracking is still initializing, usually at the start of a new session.
-- [ObjectCaptureSession.Tracking.Reason.insufficientFeatures](objectcapturesession/tracking/reason/insufficientfeatures.md)
+- [ObjectCaptureSession.Tracking.Reason.insufficientFeatures](./reason/insufficientfeatures.md)
   The scene does not contain enough distinguishable features for accurate camera tracking.
-- [ObjectCaptureSession.Tracking.Reason.relocalizing](objectcapturesession/tracking/reason/relocalizing.md)
+- [ObjectCaptureSession.Tracking.Reason.relocalizing](./reason/relocalizing.md)
   The session is attempting to resume tracking after an interruption, such as the app being paused.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

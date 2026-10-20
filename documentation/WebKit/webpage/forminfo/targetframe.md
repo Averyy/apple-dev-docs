@@ -1,7 +1,8 @@
 # targetFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame where the form is being submitted will cause a navigation.
 

@@ -1,7 +1,8 @@
 # UIFocusSystem
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Queries and reevaluates the currently focused item.
 
@@ -19,78 +20,83 @@ Queries and reevaluates the currently focused item.
 class UIFocusSystem
 ```
 
+```objc
+@interface UIFocusSystem : NSObject
+```
+
 #### Overview
 
-Use a [`UIFocusSystem`](uifocussystem.md) object to obtain the focus-related state for the objects of your app. You can get state information for your app’s views, view controllers, windows, and other objects that adopt the [`UIFocusEnvironment`](uifocusenvironment.md) protocol. The [`UIFocusSystem`](uifocussystem.md) object lists the currently focused item, if any, for a window or view hierarchy. You can use it to force the system to update the focus state, and you can register custom sounds to be played during focus changes.
+Use a [`UIFocusSystem`](./uifocussystem.md) object to obtain the focus-related state for the objects of your app. You can get state information for your app’s views, view controllers, windows, and other objects that adopt the [`UIFocusEnvironment`](./uifocusenvironment.md) protocol. The [`UIFocusSystem`](./uifocussystem.md) object lists the currently focused item, if any, for a window or view hierarchy. You can use it to force the system to update the focus state, and you can register custom sounds to be played during focus changes.
 
 ## Topics
 
 ### Getting a focus system object
-- [init?(for: any UIFocusEnvironment)](uifocussystem/init(for:).md)
+- [init?(for: any UIFocusEnvironment)](./uifocussystem/init%28for%29.md)
   Retrieves a focus system object that contains the state information for the specified object.
 ### Getting the currently focused item
-- [var focusedItem: (any UIFocusItem)?](uifocussystem/focuseditem.md)
+- [var focusedItem: (any UIFocusItem)?](./uifocussystem/focuseditem.md)
   The item that’s currently focused.
 ### Managing focus updates
-- [func requestFocusUpdate(to: any UIFocusEnvironment)](uifocussystem/requestfocusupdate(to:).md)
+- [func requestFocusUpdate(to: any UIFocusEnvironment)](./uifocussystem/requestfocusupdate%28to%29.md)
   Submits a request to update the focus state of the specified object.
-- [func updateFocusIfNeeded()](uifocussystem/updatefocusifneeded.md)
+- [func updateFocusIfNeeded()](./uifocussystem/updatefocusifneeded%28%29.md)
   Forces the system to act on a pending focus update for the current environment.
 ### Registering custom sounds
-- [class func register(URL, forSoundIdentifier: UIFocusSoundIdentifier)](uifocussystem/register(_:forsoundidentifier:).md)
+- [class func register(URL, forSoundIdentifier: UIFocusSoundIdentifier)](./uifocussystem/register%28_,forsoundidentifier%29.md)
   Registers the specified sound file with the focus engine.
 ### Responding to focus-related keys and notifications
-- [class let animationCoordinatorUserInfoKey: String](uifocussystem/animationcoordinatoruserinfokey.md)
+- [class let animationCoordinatorUserInfoKey: String](./uifocussystem/animationcoordinatoruserinfokey.md)
   Updates the animation coordinator.
-- [class let didUpdateNotification: NSNotification.Name](uifocussystem/didupdatenotification.md)
+- [class let didUpdateNotification: NSNotification.Name](./uifocussystem/didupdatenotification.md)
   The focus for the UI has been updated.
-- [class let focusUpdateContextUserInfoKey: String](uifocussystem/focusupdatecontextuserinfokey.md)
+- [class let focusUpdateContextUserInfoKey: String](./uifocussystem/focusupdatecontextuserinfokey.md)
   Updates the context key.
-- [class let movementDidFailNotification: NSNotification.Name](uifocussystem/movementdidfailnotification.md)
+- [class let movementDidFailNotification: NSNotification.Name](./uifocussystem/movementdidfailnotification.md)
   The focus failed to move to another item.
 ### Structures
-- [UIFocusSystem.DidUpdateMessage](uifocussystem/didupdatemessage.md)
-- [UIFocusSystem.MovementDidFailMessage](uifocussystem/movementdidfailmessage.md)
+- [UIFocusSystem.DidUpdateMessage](./uifocussystem/didupdatemessage.md)
+- [UIFocusSystem.MovementDidFailMessage](./uifocussystem/movementdidfailmessage.md)
 ### Initializers
-- [init?(forEnvironment: any UIFocusEnvironment)](uifocussystem/init(forenvironment:).md)
+- [init?(forEnvironment: any UIFocusEnvironment)](./uifocussystem/init%28forenvironment%29.md)
 ### Type Methods
-- [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](uifocussystem/focussystem(for:)-5htbd.md)
-- [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](uifocussystem/focussystem(for:)-7tm2f.md)
+- [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](./uifocussystem/focussystem%28for%29-5htbd.md)
+- [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](./uifocussystem/focussystem%28for%29-7tm2f.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Navigating an app’s user interface using a keyboard](navigating-an-app-s-user-interface-using-a-keyboard.md)
+### Focus interactions
+- [Navigating an app’s user interface using a keyboard](./navigating-an-app-s-user-interface-using-a-keyboard.md)
   Navigate between user interface elements using a keyboard and focusable UI elements in iPad apps and apps built with Mac Catalyst.
-- [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
+- [About focus interactions for Apple TV](./about-focus-interactions-for-apple-tv.md)
   Design and implement intuitive control schemes for menus and interactive user interface layouts.
-- [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
+- [Adding user-focusable elements to a tvOS app](./adding-user-focusable-elements-to-a-tvos-app.md)
   Create intuitive and easily manipulated user-interactive controls for your tvOS app.
-- [protocol UIFocusEnvironment](uifocusenvironment.md)
+- [protocol UIFocusEnvironment](./uifocusenvironment.md)
   A set of methods that define the focus behavior for a branch of the view hierarchy.
-- [class UIFocusUpdateContext](uifocusupdatecontext.md)
+- [class UIFocusUpdateContext](./uifocusupdatecontext.md)
   An object that provides information relevant to a specific focus update from one view to another.
-- [protocol UIFocusItem](uifocusitem.md)
+- [protocol UIFocusItem](./uifocusitem.md)
   An object that can become focused.
-- [class UIFocusMovementHint](uifocusmovementhint.md)
+- [class UIFocusMovementHint](./uifocusmovementhint.md)
   Provides movement hint information for the focused item.
-- [protocol UIFocusItemContainer](uifocusitemcontainer.md)
+- [protocol UIFocusItemContainer](./uifocusitemcontainer.md)
   The container responsible for providing geometric context to focus items within a given focus environment.
-- [protocol UIFocusItemScrollableContainer](uifocusitemscrollablecontainer.md)
+- [protocol UIFocusItemScrollableContainer](./uifocusitemscrollablecontainer.md)
   A type of focus item container that supports automatic scrolling of focusable content.
-- [struct UIFocusGroupPriority](uifocusgrouppriority.md)
+- [struct UIFocusGroupPriority](./uifocusgrouppriority.md)
   The importance of an item within a focus group, used by the focus system to determine the group’s primary item.
 
 

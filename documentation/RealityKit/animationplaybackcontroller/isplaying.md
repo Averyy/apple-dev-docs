@@ -1,7 +1,8 @@
 # isPlaying
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the animation plays.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the animation plays.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,17 +23,18 @@ A Boolean value that indicates whether the animation plays.
 
 ## See Also
 
-- [func pause()](animationplaybackcontroller/pause.md)
+### Inspecting and controlling playback
+- [func pause()](./pause%28%29.md)
   Pauses the animation.
-- [func resume()](animationplaybackcontroller/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes a paused animation.
-- [func stop()](animationplaybackcontroller/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops an animation.
-- [var isStopped: Bool](animationplaybackcontroller/isstopped.md)
+- [var isStopped: Bool](./isstopped.md)
   A Boolean value that indicates whether the animation stopped.
-- [var isValid: Bool](animationplaybackcontroller/isvalid.md)
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the animation controller is functional.
-- [var blendFactor: Float](animationplaybackcontroller/blendfactor.md)
+- [var blendFactor: Float](./blendfactor.md)
   The level of influence the controller gives to its animation.
 
 

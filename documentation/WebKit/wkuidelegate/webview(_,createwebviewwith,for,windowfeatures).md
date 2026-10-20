@@ -1,7 +1,8 @@
 # webView(_:createWebViewWith:for:windowFeatures:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new web view.
 
@@ -16,6 +17,10 @@ Creates a new web view.
 
 ```swift
 optional func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView?
+```
+
+```objc
+- (WKWebView *) webView:(WKWebView *) webView createWebViewWithConfiguration:(WKWebViewConfiguration *) configuration forNavigationAction:(WKNavigationAction *) navigationAction windowFeatures:(WKWindowFeatures *) windowFeatures;
 ```
 
 #### Return Value
@@ -35,7 +40,8 @@ The web view returned must be created with the specified configuration. WebKit l
 
 ## See Also
 
-- [func webViewDidClose(WKWebView)](wkuidelegate/webviewdidclose(_:).md)
+### Creating and closing the web view
+- [func webViewDidClose(WKWebView)](./webviewdidclose%28_%29.md)
   Notifies your app that the DOM window closed successfully.
 
 

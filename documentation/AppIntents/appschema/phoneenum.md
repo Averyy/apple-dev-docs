@@ -1,7 +1,8 @@
 # AppSchema.PhoneEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the phone domain.
 
@@ -21,19 +22,20 @@ protocol PhoneEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var audioVisualMode: some AppSchemaEnum](appschema/phoneenum/audiovisualmode.md)
+- [var audioVisualMode: some AppSchemaEnum](./phoneenum/audiovisualmode.md)
   An enum schema for an audio visual mode parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var audioVisualMode: some AppSchemaEnum](appschema/phoneenum/audiovisualmode.md)
+### Types for static parameters
+- [var audioVisualMode: some AppSchemaEnum](./phoneenum/audiovisualmode.md)
   An enum schema for an audio visual mode parameter.
 
 

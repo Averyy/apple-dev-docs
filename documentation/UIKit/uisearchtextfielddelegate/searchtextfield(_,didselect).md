@@ -1,7 +1,8 @@
 # searchTextField(_:didSelect:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when a person selects a search suggestion in the search text field.
 
@@ -15,6 +16,10 @@ Tells the delegate when a person selects a search suggestion in the search text 
 
 ```swift
 optional func searchTextField(_ searchTextField: UISearchTextField, didSelect suggestion: any UISearchSuggestion)
+```
+
+```objc
+- (void) searchTextField:(UISearchTextField *) searchTextField didSelectSuggestion:(id<UISearchSuggestion>) suggestion;
 ```
 
 #### Discussion

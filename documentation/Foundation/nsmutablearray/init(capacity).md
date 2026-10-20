@@ -1,7 +1,8 @@
 # init(capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an array, initialized with enough memory to initially hold a given number of objects.
 
@@ -20,6 +21,10 @@ Returns an array, initialized with enough memory to initially hold a given numbe
 init(capacity numItems: Int)
 ```
 
+```objc
+- (instancetype) initWithCapacity:(NSUInteger) numItems;
+```
+
 #### Return Value
 
 An array initialized with enough memory to hold `numItems` objects. The returned object might be different than the original receiver.
@@ -36,9 +41,10 @@ This method is a designated initializer.
 
 ## See Also
 
-- [init?(contentsOfURL: URL)](nsmutablearray/init(contentsofurl:).md)
+### Creating and Initializing a Mutable Array
+- [init?(contentsOfURL: URL)](./init%28contentsofurl%29.md)
   Creates and returns a mutable array containing the contents specified by a given URL.
-- [init()](nsmutablearray/init.md)
+- [init()](./init%28%29.md)
   Initializes a newly allocated array.
 
 

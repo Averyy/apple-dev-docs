@@ -1,23 +1,28 @@
 # particleAlphaRange
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of allowed random values for a particle’s starting alpha value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var particleAlphaRange: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat particleAlphaRange;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ The default value is `0.0`. If non-zero, the initial alpha value of each particl
 
 ## See Also
 
-- [var particleBlendMode: SKBlendMode](skemitternode/particleblendmode.md)
+### Blending Particles with the Framebuffer
+- [var particleBlendMode: SKBlendMode](./particleblendmode.md)
   The blending mode used to blend particles into the framebuffer.
-- [var particleAlphaSequence: SKKeyframeSequence?](skemitternode/particlealphasequence.md)
+- [var particleAlphaSequence: SKKeyframeSequence?](./particlealphasequence.md)
   The sequence used to specify the alpha value of a particle over its lifetime.
-- [var particleAlpha: CGFloat](skemitternode/particlealpha.md)
+- [var particleAlpha: CGFloat](./particlealpha.md)
   The average starting alpha value for a particle.
-- [var particleAlphaSpeed: CGFloat](skemitternode/particlealphaspeed.md)
+- [var particleAlphaSpeed: CGFloat](./particlealphaspeed.md)
   The rate at which the alpha value of a particle changes per second.
 
 

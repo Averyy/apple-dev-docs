@@ -1,7 +1,8 @@
 # ReorderDifference.Destination.Position.before(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The position of the item with the associated identifier in its collection. Move source items to the index of this item.
 
@@ -22,11 +23,12 @@ case before(ItemID)
 
 ## Mentions
 
-- [Reordering items in lists, stacks, grids, and custom layouts](reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
+- [Reordering items in lists, stacks, grids, and custom layouts](../../../reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 
 ## See Also
 
-- [ReorderDifference.Destination.Position.end](reorderdifference/destination-swift.struct/position-swift.enum/end.md)
+### Destination positions
+- [ReorderDifference.Destination.Position.end](./end.md)
   The end of the collection. Append source items to the end of the collection.
 
 

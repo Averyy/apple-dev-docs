@@ -1,7 +1,8 @@
 # MIDIUMPEndpointManager
 
 **Framework**: Core MIDI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -16,30 +17,34 @@
 class MIDIUMPEndpointManager
 ```
 
+```objc
+@interface MIDIUMPEndpointManager : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var umpEndpoints: [MIDIUMPEndpoint]](midiumpendpointmanager/umpendpoints.md)
+- [var umpEndpoints: [MIDIUMPEndpoint]](./midiumpendpointmanager/umpendpoints.md)
 ### Type Properties
-- [class var shared: MIDIUMPEndpointManager](midiumpendpointmanager/shared.md)
+- [class var shared: MIDIUMPEndpointManager](./midiumpendpointmanager/shared.md)
 ### Constants
-- [MIDIUMPEndpointManager.DictionaryKey](midiumpendpointmanager/dictionarykey.md)
-- [class let endpointWasAddedNotification: NSNotification.Name](midiumpendpointmanager/endpointwasaddednotification.md)
-- [class let endpointWasRemovedNotification: NSNotification.Name](midiumpendpointmanager/endpointwasremovednotification.md)
-- [class let endpointWasUpdatedNotification: NSNotification.Name](midiumpendpointmanager/endpointwasupdatednotification.md)
-- [class let functionBlockWasUpdatedNotification: NSNotification.Name](midiumpendpointmanager/functionblockwasupdatednotification.md)
+- [MIDIUMPEndpointManager.DictionaryKey](./midiumpendpointmanager/dictionarykey.md)
+- [class let endpointWasAddedNotification: NSNotification.Name](./midiumpendpointmanager/endpointwasaddednotification.md)
+- [class let endpointWasRemovedNotification: NSNotification.Name](./midiumpendpointmanager/endpointwasremovednotification.md)
+- [class let endpointWasUpdatedNotification: NSNotification.Name](./midiumpendpointmanager/endpointwasupdatednotification.md)
+- [class let functionBlockWasUpdatedNotification: NSNotification.Name](./midiumpendpointmanager/functionblockwasupdatednotification.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # departureDateInterval
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A range of time within which the user departs from a location of interest.
 
@@ -16,15 +17,20 @@ A range of time within which the user departs from a location of interest.
 var departureDateInterval: DateInterval { get }
 ```
 
+```objc
+@property (strong, readonly) NSDateInterval * departureDateInterval;
+```
+
 ## See Also
 
-- [var arrivalDateInterval: DateInterval](srvisit/arrivaldateinterval.md)
+### Accessing Visit Information
+- [var arrivalDateInterval: DateInterval](./arrivaldateinterval.md)
   A range of time within which the user arrives at a location of interest.
-- [var distanceFromHome: CLLocationDistance](srvisit/distancefromhome.md)
+- [var distanceFromHome: CLLocationDistance](./distancefromhome.md)
   The location’s distance from the home-category location.
-- [var locationCategory: SRVisit.LocationCategory](srvisit/locationcategory-swift.property.md)
+- [var locationCategory: SRVisit.LocationCategory](./locationcategory-swift.property.md)
   The location’s type.
-- [SRVisit.LocationCategory](srvisit/locationcategory-swift.enum.md)
+- [SRVisit.LocationCategory](./locationcategory-swift.enum.md)
   Types of locations.
 
 

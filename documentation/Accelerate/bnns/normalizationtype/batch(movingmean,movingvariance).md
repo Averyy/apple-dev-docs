@@ -1,7 +1,8 @@
 # BNNS.NormalizationType.batch(movingMean:movingVariance:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Batch normalization with optional moving averages.
 
@@ -11,8 +12,10 @@ Batch normalization with optional moving averages.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,11 +25,12 @@ case batch(movingMean: BNNSNDArrayDescriptor?, movingVariance: BNNSNDArrayDescri
 
 ## See Also
 
-- [BNNS.NormalizationType.group(groupCount:)](bnns/normalizationtype/group(groupcount:).md)
+### Normalization Types
+- [BNNS.NormalizationType.group(groupCount:)](./group%28groupcount%29.md)
   Group normalization.
-- [case instance(movingMean: BNNSNDArrayDescriptor?, movingVariance: BNNSNDArrayDescriptor?)](bnns/normalizationtype/instance(movingmean:movingvariance:).md)
+- [case instance(movingMean: BNNSNDArrayDescriptor?, movingVariance: BNNSNDArrayDescriptor?)](./instance%28movingmean,movingvariance%29.md)
   Instance normalization with optional moving averages.
-- [BNNS.NormalizationType.layer(normalizationAxis:)](bnns/normalizationtype/layer(normalizationaxis:).md)
+- [BNNS.NormalizationType.layer(normalizationAxis:)](./layer%28normalizationaxis%29.md)
   Layer normalization.
 
 

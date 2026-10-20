@@ -1,17 +1,24 @@
 # documentViewController(_:handleEvent:with:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles events natively from document view controllers.
 
 **Availability**:
-- tvOS 13.0+
+- tvOS 13.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
 ```swift
 optional func documentViewController(_ documentViewController: TVDocumentViewController, handleEvent event: TVDocumentViewController.Event, with element: TVViewElement) -> Bool
+```
+
+```objc
+- (BOOL) documentViewController:(TVDocumentViewController *) documentViewController handleEvent:(TVDocumentEvent) event withElement:(TVViewElement *) element;
 ```
 
 #### Discussion

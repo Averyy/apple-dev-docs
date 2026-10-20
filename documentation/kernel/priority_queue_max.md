@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct priority_queue_max {
     ...
 };
@@ -17,8 +17,8 @@ struct priority_queue_max {
 ## Topics
 
 ### Instance Properties
-- [pq_cmp_fn](priority_queue_max/3553529-pq_cmp_fn.md)
-- [pq_root](priority_queue_max/3553530-pq_root.md)
+- [pq_cmp_fn](./priority_queue_max/api-3553529-pq_cmp_fn.md)
+- [pq_root](./priority_queue_max/api-3553530-pq_root.md)
 
 
 ---

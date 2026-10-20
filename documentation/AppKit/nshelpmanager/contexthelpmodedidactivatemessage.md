@@ -1,7 +1,8 @@
 # NSHelpManager.ContextHelpModeDidActivateMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,13 +16,13 @@ struct ContextHelpModeDidActivateMessage
 ## Topics
 
 ### Initializers
-- [init()](nshelpmanager/contexthelpmodedidactivatemessage/init.md)
+- [init()](./contexthelpmodedidactivatemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

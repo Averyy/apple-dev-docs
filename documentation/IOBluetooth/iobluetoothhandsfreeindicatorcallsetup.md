@@ -1,17 +1,22 @@
 # IOBluetoothHandsFreeIndicatorCallSetup
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The command string you use to show a call setup status indicator on a phone.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 let IOBluetoothHandsFreeIndicatorCallSetup: String
+```
+
+```c
+extern NSString * const IOBluetoothHandsFreeIndicatorCallSetup;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ The possible values for the call setup indicator are:
 
 ## See Also
 
-- [let IOBluetoothHandsFreeIndicatorCall: String](iobluetoothhandsfreeindicatorcall.md)
+### Call Status
+- [let IOBluetoothHandsFreeIndicatorCall: String](./iobluetoothhandsfreeindicatorcall.md)
   The command string you use to show an active call indicator on a phone.
-- [let IOBluetoothHandsFreeIndicatorCallHeld: String](iobluetoothhandsfreeindicatorcallheld.md)
+- [let IOBluetoothHandsFreeIndicatorCallHeld: String](./iobluetoothhandsfreeindicatorcallheld.md)
   The command string you use to show a call hold status indicator on a phone.
 
 

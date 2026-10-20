@@ -1,14 +1,15 @@
 # kBluetoothLESecurityManagerOOBDataReservedStart
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLESecurityManagerOOBDataReservedStart = 0x02
 ```
 

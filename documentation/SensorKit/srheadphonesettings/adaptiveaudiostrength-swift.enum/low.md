@@ -1,7 +1,8 @@
 # SRHeadphoneSettings.AdaptiveAudioStrength.low
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case low
+```
+
+```c
+SRHeadphoneSettingsAdaptiveAudioStrengthLow
 ```
 
 

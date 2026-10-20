@@ -1,7 +1,8 @@
 # errSecUnsupportedNumRecordTypes
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of record types is not supported.
 
@@ -18,6 +19,10 @@ The number of record types is not supported.
 
 ```swift
 var errSecUnsupportedNumRecordTypes: OSStatus { get }
+```
+
+```c
+errSecUnsupportedNumRecordTypes
 ```
 
 

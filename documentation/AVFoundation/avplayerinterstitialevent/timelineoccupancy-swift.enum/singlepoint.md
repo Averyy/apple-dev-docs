@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEvent.TimelineOccupancy.singlePoint
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The event occupies a single point on the integrated timeline.
 
@@ -20,9 +21,14 @@ The event occupies a single point on the integrated timeline.
 case singlePoint
 ```
 
+```c
+AVPlayerInterstitialEventTimelineOccupancySinglePoint
+```
+
 ## See Also
 
-- [AVPlayerInterstitialEvent.TimelineOccupancy.fill](avplayerinterstitialevent/timelineoccupancy-swift.enum/fill.md)
+### Values
+- [AVPlayerInterstitialEvent.TimelineOccupancy.fill](./fill.md)
   The event fills the integrated timeline with the duration of this event.
 
 

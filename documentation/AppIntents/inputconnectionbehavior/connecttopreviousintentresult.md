@@ -1,7 +1,8 @@
 # InputConnectionBehavior.connectToPreviousIntentResult
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A behavior that permits the parameter to accept the output.
 
@@ -11,7 +12,7 @@ A behavior that permits the parameter to accept the output.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ case connectToPreviousIntentResult
 
 ## See Also
 
-- [InputConnectionBehavior.default](inputconnectionbehavior/default.md)
+### Getting the connection behaviors
+- [InputConnectionBehavior.default](./default.md)
   A behavior that allows the system to determine if the parameter accepts the output.
-- [InputConnectionBehavior.never](inputconnectionbehavior/never.md)
+- [InputConnectionBehavior.never](./never.md)
   A behavior that prohibits the parameter from accepting the output.
 
 

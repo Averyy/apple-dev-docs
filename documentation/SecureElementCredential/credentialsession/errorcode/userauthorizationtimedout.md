@@ -1,13 +1,16 @@
 # CredentialSession.ErrorCode.userAuthorizationTimedOut
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authorization timed out while waiting for the person using the app.
 
 **Availability**:
-- iOS 18.1+
-- iPadOS 18.1+
+- iOS 18.1+ - Deprecated in 27.0
+- iPadOS 18.1+ - Deprecated in 27.0
+
+> **Deprecated**: This error is no longer thrown by the framework.
 
 ## Declaration
 
@@ -17,19 +20,20 @@ case userAuthorizationTimedOut
 
 ## See Also
 
-- [CredentialSession.ErrorCode.userNotAuthorized](credentialsession/errorcode/usernotauthorized.md)
+### Authorization and permission error codes
+- [CredentialSession.ErrorCode.userNotAuthorized](./usernotauthorized.md)
   The person using the app isn’t authorized to perform the operation.
-- [CredentialSession.ErrorCode.accessDenied](credentialsession/errorcode/accessdenied.md)
+- [CredentialSession.ErrorCode.accessDenied](./accessdenied.md)
   The person using the app declined to grant permission for the operation.
-- [CredentialSession.ErrorCode.clientNotInForeground](credentialsession/errorcode/clientnotinforeground.md)
+- [CredentialSession.ErrorCode.clientNotInForeground](./clientnotinforeground.md)
   Your app isn’t in the foreground, which is required to use the credential session.
-- [CredentialSession.ErrorCode.userCanceledAuthorization](credentialsession/errorcode/usercanceledauthorization.md)
+- [CredentialSession.ErrorCode.userCanceledAuthorization](./usercanceledauthorization.md)
   The person using the app dismissed the authorization sheet.
-- [CredentialSession.ErrorCode.featureUnavailable](credentialsession/errorcode/featureunavailable.md)
+- [CredentialSession.ErrorCode.featureUnavailable](./featureunavailable.md)
   The feature is unavailable.
-- [CredentialSession.ErrorCode.ineligible](credentialsession/errorcode/ineligible.md)
+- [CredentialSession.ErrorCode.ineligible](./ineligible.md)
   The current device and user configuation are ineligible to use this service.
-- [CredentialSession.ErrorCode.conditionsNotSatisfied](credentialsession/errorcode/conditionsnotsatisfied.md)
+- [CredentialSession.ErrorCode.conditionsNotSatisfied](./conditionsnotsatisfied.md)
   The iCloud account or passcode of the person using the app don’t satisfy the conditions to use this service.
 
 

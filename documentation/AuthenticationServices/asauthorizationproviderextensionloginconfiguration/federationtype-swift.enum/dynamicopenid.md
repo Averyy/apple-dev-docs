@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicOpenID
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 27.0+
@@ -12,9 +13,13 @@
 case dynamicOpenID
 ```
 
+```c
+ASAuthorizationProviderExtensionFederationTypeDynamicOpenID
+```
+
 ## Mentions
 
-- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+- [Implementing web-based authentication with Platform Single Sign-on](../../implementing-web-based-authentication.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # canDownloadSelectedItems
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the selected items can be downloaded
 
@@ -14,19 +15,24 @@ Returns whether the selected items can be downloaded
 var canDownloadSelectedItems: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canDownloadSelectedItems;
+```
+
 ## See Also
 
-- [var downloadsDirectory: URL!](ikcameradeviceview/downloadsdirectory.md)
+### Configuring Download Interface and Downloading Files
+- [var downloadsDirectory: URL!](./downloadsdirectory.md)
   Specifies the directory where files are downloaded
-- [func downloadSelectedItems(Any!)](ikcameradeviceview/downloadselecteditems(_:).md)
+- [func downloadSelectedItems(Any!)](./downloadselecteditems%28_%29.md)
   Deletes the selected items from the camera.
-- [func downloadAllItems(Any!)](ikcameradeviceview/downloadallitems(_:).md)
+- [func downloadAllItems(Any!)](./downloadallitems%28_%29.md)
   Downloads all the items.
-- [var downloadSelectedControlLabel: String!](ikcameradeviceview/downloadselectedcontrollabel.md)
+- [var downloadSelectedControlLabel: String!](./downloadselectedcontrollabel.md)
   Allows the “Download Selected” control to be renamed.
-- [var downloadAllControlLabel: String!](ikcameradeviceview/downloadallcontrollabel.md)
+- [var downloadAllControlLabel: String!](./downloadallcontrollabel.md)
   Allows the “Download All” control to be renamed.
-- [var displaysDownloadsDirectoryControl: Bool](ikcameradeviceview/displaysdownloadsdirectorycontrol.md)
+- [var displaysDownloadsDirectoryControl: Bool](./displaysdownloadsdirectorycontrol.md)
   Specifies whether the downloads directory control should be displayed.
 
 

@@ -1,7 +1,8 @@
 # image(forResource:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an `NSImage` instance associated with the specified name, which can be backed by multiple files representing different resolution versions of the image.
 
@@ -14,6 +15,10 @@ Returns an `NSImage` instance associated with the specified name, which can be b
 func image(forResource name: NSImage.Name) -> NSImage?
 ```
 
+```objc
+- (NSImage *) imageForResource:(NSImageName) name;
+```
+
 #### Return Value
 
 The `NSImage` object associated with the specified name, or `nil` if no file is found.
@@ -24,7 +29,7 @@ This method accommodates Apple’s naming conventions for high-resolution versio
 
 Images requested using this method whose name ends in the word `Template` are automatically marked as template images.
 
-This method does not look up images based on [`setName(_:)`](https://developer.apple.com/documentation/appkit/nsimage/setname(_:)) or get named system images. Use [`init(named:)`](https://developer.apple.com/documentation/appkit/nsimage/init(named:)) for that purpose.
+This method does not look up images based on [`setName(_:)`](../../AppKit/nsimage/setname%28_%29.md) or get named system images. Use [`init(named:)`](../../AppKit/nsimage/init%28named%29.md) for that purpose.
 
 This method does not cache its search results.
 
@@ -34,11 +39,13 @@ This method does not cache its search results.
 
 ## See Also
 
-- [init?(named: NSImage.Name)](../appkit/nsimage/init(named:).md)
+### Related Documentation
+- [init?(named: NSImage.Name)](../../AppKit/nsimage/init%28named%29.md)
   Returns the image object associated with the specified name.
-- [func urlForImageResource(NSImage.Name) -> URL?](bundle/urlforimageresource(_:).md)
+### Finding image resources
+- [func urlForImageResource(NSImage.Name) -> URL?](./urlforimageresource%28_%29.md)
   Returns the location of the specified image resource as an NSURL.
-- [func pathForImageResource(NSImage.Name) -> String?](bundle/pathforimageresource(_:).md)
+- [func pathForImageResource(NSImage.Name) -> String?](./pathforimageresource%28_%29.md)
   Returns the location of the specified image resource file.
 
 

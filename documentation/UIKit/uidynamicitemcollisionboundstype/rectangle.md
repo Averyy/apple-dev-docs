@@ -1,7 +1,8 @@
 # UIDynamicItemCollisionBoundsType.rectangle
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rectangular collision bounds.
 
@@ -18,12 +19,17 @@ Rectangular collision bounds.
 case rectangle
 ```
 
+```c
+UIDynamicItemCollisionBoundsTypeRectangle
+```
+
 ## See Also
 
-- [UIDynamicItemCollisionBoundsType.ellipse](uidynamicitemcollisionboundstype/ellipse.md)
-  Elliptical collision bounds. The shape of the ellipse is determined by the width and height of the item’s [`bounds`](uidynamicitem/bounds.md) property.
-- [UIDynamicItemCollisionBoundsType.path](uidynamicitemcollisionboundstype/path.md)
-  Path-based collision bounds. For this type, the shape is a [`UIBezierPath`](uibezierpath.md) object stored in the item’s [`collisionBoundingPath`](uidynamicitem/collisionboundingpath.md) property. See the description of that property for information about how to configure the path itself.
+### Constants
+- [UIDynamicItemCollisionBoundsType.ellipse](./ellipse.md)
+  Elliptical collision bounds. The shape of the ellipse is determined by the width and height of the item’s [`bounds`](../uidynamicitem/bounds.md) property.
+- [UIDynamicItemCollisionBoundsType.path](./path.md)
+  Path-based collision bounds. For this type, the shape is a [`UIBezierPath`](../uibezierpath.md) object stored in the item’s [`collisionBoundingPath`](../uidynamicitem/collisionboundingpath.md) property. See the description of that property for information about how to configure the path itself.
 
 
 ---

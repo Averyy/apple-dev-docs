@@ -1,7 +1,8 @@
 # renormalization
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The renormalization configuration, or `nil` if renormalization is not used.
 

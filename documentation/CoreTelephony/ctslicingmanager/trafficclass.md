@@ -1,7 +1,8 @@
 # CTSlicingManager.TrafficClass
 
 **Framework**: Core Telephony  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Quality-of-service classes for routing network traffic.
 
@@ -25,34 +26,34 @@ The system automatically assigns traffic classes based on the active network sli
 ## Topics
 
 ### Traffic classes
-- [CTSlicingManager.TrafficClass.any](ctslicingmanager/trafficclass/any.md)
+- [CTSlicingManager.TrafficClass.any](./trafficclass/any.md)
   A traffic class for general-purpose network traffic without specific QoS requirements.
-- [CTSlicingManager.TrafficClass.background](ctslicingmanager/trafficclass/background.md)
+- [CTSlicingManager.TrafficClass.background](./trafficclass/background.md)
   A traffic class for non-urgent background data transfers.
-- [CTSlicingManager.TrafficClass.responsiveData](ctslicingmanager/trafficclass/responsivedata.md)
+- [CTSlicingManager.TrafficClass.responsiveData](./trafficclass/responsivedata.md)
   A traffic class for interactive data that requires quick response times.
-- [CTSlicingManager.TrafficClass.avStreaming](ctslicingmanager/trafficclass/avstreaming.md)
+- [CTSlicingManager.TrafficClass.avStreaming](./trafficclass/avstreaming.md)
   A traffic class for audio and video streaming.
-- [CTSlicingManager.TrafficClass.responsiveAV](ctslicingmanager/trafficclass/responsiveav.md)
+- [CTSlicingManager.TrafficClass.responsiveAV](./trafficclass/responsiveav.md)
   A traffic class for real-time audio and video communication.
-- [CTSlicingManager.TrafficClass.video](ctslicingmanager/trafficclass/video.md)
+- [CTSlicingManager.TrafficClass.video](./trafficclass/video.md)
   A traffic class for video data transmission.
-- [CTSlicingManager.TrafficClass.voice](ctslicingmanager/trafficclass/voice.md)
+- [CTSlicingManager.TrafficClass.voice](./trafficclass/voice.md)
   A traffic class for voice communication with highest priority and lowest latency.
-- [CTSlicingManager.TrafficClass.signaling](ctslicingmanager/trafficclass/signaling.md)
+- [CTSlicingManager.TrafficClass.signaling](./trafficclass/signaling.md)
   A traffic class for network signaling and control messages.
 ### Traffic class information
-- [var description: String](ctslicingmanager/trafficclass/description.md)
+- [var description: String](./trafficclass/description.md)
   A string representation of the traffic class.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kAXListRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A list view.
 
@@ -12,6 +13,10 @@ A list view.
 
 ```swift
 var kAXListRole: String { get }
+```
+
+```c
+#define kAXListRole
 ```
 
 

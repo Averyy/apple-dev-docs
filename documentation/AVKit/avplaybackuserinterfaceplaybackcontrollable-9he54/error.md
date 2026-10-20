@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Error information when the source encounters a playback failure.

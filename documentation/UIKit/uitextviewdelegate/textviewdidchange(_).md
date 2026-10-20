@@ -1,7 +1,8 @@
 # textViewDidChange(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user changes the text or attributes in the specified text view.
 
@@ -9,13 +10,17 @@ Tells the delegate when the user changes the text or attributes in the specified
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func textViewDidChange(_ textView: UITextView)
+```
+
+```objc
+- (void) textViewDidChange:(UITextView *) textView;
 ```
 
 #### Discussion

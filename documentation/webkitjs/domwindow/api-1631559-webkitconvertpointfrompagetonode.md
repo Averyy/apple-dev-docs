@@ -1,7 +1,8 @@
 # webkitConvertPointFromPageToNode
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Converts a point from page coordinates to node coordinates.
 
@@ -11,14 +12,14 @@ Converts a point from page coordinates to node coordinates.
 
 ## Declaration
 
-```swift
+```
 WebKitPoint webkitConvertPointFromPageToNode(
     optional Node? node, 
     optional WebKitPoint? p
 );
 ```
 
-#### Return_value
+#### Return Value
 
 A point that is at the same location as `p` but in node coordinates.
 
@@ -29,7 +30,8 @@ A point that is at the same location as `p` but in node coordinates.
 
 ## See Also
 
-- [webkitConvertPointFromNodeToPage](domwindow/1631271-webkitconvertpointfromnodetopage.md)
+### Converting Points
+- [webkitConvertPointFromNodeToPage](./api-1631271-webkitconvertpointfromnodetopage.md)
   Converts a point from node coordinates of a block element to page coordinates.
 
 

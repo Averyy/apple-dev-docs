@@ -8,13 +8,14 @@
 
 ## Declaration
 
-```swift
+```c
 void *sival_ptr;
 ```
 
 ## See Also
 
-- [sival_int](sigval/1591434-sival_int.md)
+### Miscellaneous
+- [sival_int](./api-1591434-sival_int.md)
 
 
 ---

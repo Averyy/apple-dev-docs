@@ -1,7 +1,8 @@
 # BlendWeight
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A numerical representation of the impact an animation has on a scene or entity.
 
@@ -11,7 +12,7 @@ A numerical representation of the impact an animation has on a scene or entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ enum BlendWeight
 
 #### Overview
 
-The [`BlendTreeSourceNode`](blendtreesourcenode.md) structure accepts this enumeration as an initializer argument.
+The [`BlendTreeSourceNode`](./blendtreesourcenode.md) structure accepts this enumeration as an initializer argument.
 
 To specify a custom weight, use the value case:
 
@@ -35,32 +36,33 @@ let node = BlendTreeSourceNode(
 ## Topics
 
 ### Choosing the blend weight
-- [case bindTarget(BindTarget, defaultWeight: Float)](blendweight/bindtarget(_:defaultweight:).md)
+- [case bindTarget(BindTarget, defaultWeight: Float)](./blendweight/bindtarget%28_,defaultweight%29.md)
   The amount of impact  an animation has on the bind target of an entity.
-- [case parameter(String, defaultWeight: Float)](blendweight/parameter(_:defaultweight:).md)
+- [case parameter(String, defaultWeight: Float)](./blendweight/parameter%28_,defaultweight%29.md)
   The amount of impact an animation has on a named parameter of an entity.
-- [BlendWeight.value(_:)](blendweight/value(_:).md)
+- [BlendWeight.value(_:)](./blendweight/value%28_%29.md)
   The numerical representation of the impact an animation has on an entity.
 ### Operators
-- [static func == (BlendWeight, BlendWeight) -> Bool](blendweight/==(_:_:).md)
+- [static func == (BlendWeight, BlendWeight) -> Bool](./blendweight/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two blend weights are equal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct BlendTreeAnimation](blendtreeanimation.md)
+### Blend trees
+- [struct BlendTreeAnimation](./blendtreeanimation.md)
   A collection of animations on the same property that the framework blends to a single animation.
-- [protocol BlendTreeNode](blendtreenode.md)
+- [protocol BlendTreeNode](./blendtreenode.md)
   An interface for a node that’s a member of a blend tree.
-- [struct BlendTreeBlendNode](blendtreeblendnode.md)
+- [struct BlendTreeBlendNode](./blendtreeblendnode.md)
   A source node for an animation that mixes several animations to form a single animation.
-- [struct BlendTreeSourceNode](blendtreesourcenode.md)
+- [struct BlendTreeSourceNode](./blendtreesourcenode.md)
   A blend node that contains an animation.
-- [struct BlendTreeInvalidNode](blendtreeinvalidnode.md)
+- [struct BlendTreeInvalidNode](./blendtreeinvalidnode.md)
   A blend tree node that’s internal only or sources from an invalid definition.
 
 

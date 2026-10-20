@@ -1,7 +1,8 @@
 # currentDistributor
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The library provider for managed apps on this device.
 

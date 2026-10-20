@@ -1,7 +1,8 @@
 # init(range:_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Random Parameter transformer.
 
@@ -18,6 +19,12 @@ Creates a Random Parameter transformer.
 
 ```swift
 init<Input>(range: ClosedRange<Parameter>, @AugmentationBuilder<Input> _ augmentation: @escaping (Parameter) -> RandomTransformer) where Input == RandomTransformer.Input
+```
+
+**Other overloads**:
+
+```swift
+init<Input>(range: Range<Parameter>, @AugmentationBuilder<Input> _ augmentation: @escaping (Parameter) -> RandomTransformer) where Input == RandomTransformer.Input
 ```
 
 ## Parameters

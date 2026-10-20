@@ -1,13 +1,14 @@
 # ConvertibleFromGeneratedContent Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(_:)](generatedcontent/init(_:).md)
+- [init(_:)](./init%28_%29.md)
   Creates generated content from another value.
-- [init(GeneratedContent) throws](generatedcontent/init(_:)-456z9.md)
+- [init(GeneratedContent) throws](./init%28_%29-456z9.md)
   Creates generated content from another value.
 
 

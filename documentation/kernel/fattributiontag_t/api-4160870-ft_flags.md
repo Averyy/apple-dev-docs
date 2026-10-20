@@ -1,14 +1,15 @@
 # ft_flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ft_flags;
 ```
 

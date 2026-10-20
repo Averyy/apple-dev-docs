@@ -1,7 +1,8 @@
 # InstalledApplicationListCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of the installed apps on a device.
 
@@ -16,17 +17,37 @@ The command to get a list of the installed apps on a device.
 
 ## Declaration
 
-```swift
+```
 object InstalledApplicationListCommand.Command
 ```
 
 ## Properties
 
-- `Identifiers` ([string]): An array of app identifiers. Provide this value to limit the response to only include these apps. > ❗ **Important**:  For a watchOS app, the identifier needs to be the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with. Obtain the watch’s bundle identifier for an app with a watch bundle, in the `watchBundleId` key that’s part of the Content Metadata query. For more information on this query, see [`Getting app and book information (Legacy)`](getting-app-and-book-information-legacy.md). Available: iOS 7+ | iPadOS 7+ | macOS 10.15+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
-- `Items` ([string]): An array of strings that represent keys in [`InstalledApplicationListResponse.InstalledApplicationListItem`](installedapplicationlistresponse/installedapplicationlistitem.md). If present, the response only contains the keys listed here, except `Identifier` is always included. If not present, the response contains all keys. Starting in iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26, if this key isn’t present, the response omits values that are expensive to calculate. > 💡 **Tip**:  Only request the keys that you need, because some key values can take significant time and power to calculate on the device. Available: iOS 14+ | iPadOS 14+ | tvOS 14+ | visionOS 1.1+ | watchOS 10+
-- `ManagedAppsOnly` (boolean): If `true`, only get a list of managed apps, excluding ones that Declarative Device Management is managing. > **Note**:  If the enrollment type is a user enrollment, the system always considers this key as set to `true` and only returns managed apps, excluding ones that Declarative Device Management is managing. Available: iOS 7+ | iPadOS 7+ | macOS 10.15+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+- `Identifiers` ([string]): An array of app identifiers. Provide this value to limit the response to only include these apps.
+
+  > ❗ **Important**:  For a watchOS app, the identifier needs to be the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with. Obtain the watch’s bundle identifier for an app with a watch bundle, in the `watchBundleId` key that’s part of the Content Metadata query. For more information on this query, see [Getting app and book information (Legacy)](../getting-app-and-book-information-legacy.md).
+
+  Available: iOS 7+ | iPadOS 7+ | macOS 10.15+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+- `Items` ([string]): An array of strings that represent keys in [`InstalledApplicationListResponse.InstalledApplicationListItem`](../installedapplicationlistresponse/installedapplicationlistitem.md). If present, the response only contains the keys listed here, except `Identifier` is always included. If not present, the response contains all keys. Starting in iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26, if this key isn’t present, the response omits values that are expensive to calculate.
+
+  > 💡 **Tip**:  Only request the keys that you need, because some key values can take significant time and power to calculate on the device.
+
+  Available: iOS 14+ | iPadOS 14+ | tvOS 14+ | visionOS 1.1+ | watchOS 10+
+
+  **Allowed Values**: `AdHocCodeSigned`, `AppStoreVendable`, `BetaApp`, `BundleSize`, `DeviceBasedVPP`, `DistributorIdentifier`, `DynamicSize`, `ExternalVersionIdentifier`, `HasUpdateAvailable`, `Identifier`, `Installing`, `IsAppClip`, `IsValidated`, `Name`, `ShortVersion`, `Version`
+- `ManagedAppsOnly` (boolean): If `true`, only get a list of managed apps, excluding ones that Declarative Device Management is managing.
+
+  > **Note**:  If the enrollment type is a user enrollment, the system always considers this key as set to `true` and only returns managed apps, excluding ones that Declarative Device Management is managing.
+
+  Available: iOS 7+ | iPadOS 7+ | macOS 10.15+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+
+  **Default**: `false`
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `InstalledApplicationList`
 
 
 ---

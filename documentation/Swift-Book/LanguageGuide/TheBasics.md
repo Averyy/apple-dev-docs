@@ -145,7 +145,7 @@ initialize `maximumNumberOfLoginAttempts` with some value,
 guaranteeing that the constant always gets a value.
 For information about how Swift checks your code
 when you set an initial value this way,
-see [Constant Declaration](Declarations.md#Constant-Declaration).
+see [Constant Declaration](../ReferenceManual/Declarations.md#Constant-Declaration).
 
 You can declare multiple constants or multiple variables on a single line,
 separated by commas:
@@ -1324,7 +1324,7 @@ For more information, see [Functions with Multiple Return Values](Functions.md#F
 > They're not suited to the creation of complex data structures.
 > If your data structure is likely to be more complex,
 > model it as a class or structure, rather than as a tuple.
-> For more information, see [Classes And Structures](ClassesAndStructures.md).
+> For more information, see [Structures and Classes](ClassesAndStructures.md).
 
 ## Optionals
 
@@ -1698,7 +1698,7 @@ print(greeting)
 -->
 
 For more information about using `??` to provide a fallback value,
-see [Nil Coalescing Operator](BasicOperators.md#Nil-Coalescing-Operator).
+see [Nil-Coalescing Operator](BasicOperators.md#Nil-Coalescing-Operator).
 
 ### Force Unwrapping
 

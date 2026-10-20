@@ -1,7 +1,8 @@
 # setMarks(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setMarks(_ marks: String!)
+```
+
+```objc
+- (void) setMarks:(NSString *) marks;
 ```
 
 

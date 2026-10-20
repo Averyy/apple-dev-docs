@@ -1,15 +1,16 @@
 # value
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the coordinate or length.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@ The value of the coordinate or length.
 var value: CGFloat
 ```
 
+```c
+CGFloat value;
+```
+
 ## See Also
 
-- [var units: AVCaptionUnitsType](avcaptiondimension/units.md)
+### Inspecting the dimensions
+- [var units: AVCaptionUnitsType](./units.md)
   The units of the coordinate, such as cells or points.
-- [enum AVCaptionUnitsType](avcaptionunitstype.md)
+- [enum AVCaptionUnitsType](../avcaptionunitstype.md)
   A structure that defines a units for caption formats.
 
 

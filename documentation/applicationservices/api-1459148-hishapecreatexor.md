@@ -1,7 +1,8 @@
 # HIShapeCreateXor(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateXor(_ inShape1: HIShape!, _ inShape2: HIShape!) -> Unmanaged<HIShape>!
+```
+
+```c
+HIShapeRef HIShapeCreateXor(HIShapeRef inShape1, HIShapeRef inShape2);
 ```
 
 

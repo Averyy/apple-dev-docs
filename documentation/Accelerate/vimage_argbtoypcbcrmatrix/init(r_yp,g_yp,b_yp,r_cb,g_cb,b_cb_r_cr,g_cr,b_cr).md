@@ -1,18 +1,19 @@
 # init(R_Yp:G_Yp:B_Yp:R_Cb:G_Cb:B_Cb_R_Cr:G_Cr:B_Cr:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3 x 3 matrix for converting RGB to Y’CbCr.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -24,7 +25,7 @@ init(R_Yp: Float, G_Yp: Float, B_Yp: Float, R_Cb: Float, G_Cb: Float, B_Cb_R_Cr:
 
 The 3 x 3 matrix is given by:
 
-![None](/images/com.apple.accelerate/media-2941901@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2941901@2x.png)
 
 ## Parameters
 
@@ -39,7 +40,8 @@ The 3 x 3 matrix is given by:
 
 ## See Also
 
-- [init()](vimage_argbtoypcbcrmatrix/init.md)
+### Creating a conversion matrix
+- [init()](./init%28%29.md)
   Creates a 3 x 3 zero matrix for converting RGB to Y’CbCr.
 
 

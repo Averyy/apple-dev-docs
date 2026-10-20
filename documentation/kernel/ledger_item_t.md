@@ -1,14 +1,15 @@
 # ledger_item_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef natural_t ledger_item_t;
 ```
 

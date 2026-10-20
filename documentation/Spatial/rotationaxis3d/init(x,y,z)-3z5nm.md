@@ -1,7 +1,8 @@
 # init(x:y:z:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rotation axis from the specified double-precision values.
 
@@ -11,7 +12,7 @@ Creates a rotation axis from the specified double-precision values.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -28,17 +29,18 @@ init(x: Double = 0, y: Double = 0, z: Double = 0)
 
 ## See Also
 
-- [init()](rotationaxis3d/init.md)
+### Creating a 3D rotation axis structure
+- [init()](./init%28%29.md)
   Creates a rotation axis.
-- [init(simd_float3)](rotationaxis3d/init(_:)-96si4.md)
+- [init(simd_float3)](./init%28_%29-96si4.md)
   Creates a rotation axis from the specified single-precision vector.
-- [init(simd_double3)](rotationaxis3d/init(_:)-804sx.md)
+- [init(simd_double3)](./init%28_%29-804sx.md)
   Creates a rotation axis from the specified double-precision vector.
-- [init(vector: simd_double3)](rotationaxis3d/init(vector:).md)
+- [init(vector: simd_double3)](./init%28vector%29.md)
   Creates a rotation axis from a three-element double-precision vector.
-- [init(Vector3D)](rotationaxis3d/init(_:)-2zdal.md)
+- [init(Vector3D)](./init%28_%29-2zdal.md)
   Creates a rotation axis from a Spatial vector.
-- [init<T>(x: T, y: T, z: T)](rotationaxis3d/init(x:y:z:)-1x93q.md)
+- [init<T>(x: T, y: T, z: T)](./init%28x,y,z%29-1x93q.md)
   Creates a rotation axis from the specified floating-point values.
 
 

@@ -1,13 +1,14 @@
 # flavor
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indication of the representation of the machine-specific thread state.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ An indication of the representation of the machine-specific thread state.
 var flavor: Int32
 ```
 
+```c
+int flavor;
+```
+
 ## See Also
 
-- [var state: es_token_t](es_thread_state_t/state.md)
+### Inspecting Thread State
+- [var state: es_token_t](./state.md)
   The machine-specific thread state.
-- [struct es_token_t](es_token_t.md)
+- [struct es_token_t](../es_token_t.md)
   An arbitrary buffer of data with its size.
 
 

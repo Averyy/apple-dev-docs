@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabletopKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Queries or modifies the value of the score counter with given identifier.
 

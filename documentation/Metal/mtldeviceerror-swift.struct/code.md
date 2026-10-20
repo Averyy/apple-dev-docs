@@ -1,7 +1,8 @@
 # MTLDeviceError.Code
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration of kinds of errors that methods on MTLDevice can produce.
 
@@ -19,25 +20,29 @@ Enumeration of kinds of errors that methods on MTLDevice can produce.
 enum Code
 ```
 
+```c
+enum MTLDeviceError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLDeviceError.Code.none](mtldeviceerror-swift.struct/code/none.md)
+- [MTLDeviceError.Code.none](./code/none.md)
   Indicates the absence of any problems.
-- [MTLDeviceError.Code.notSupported](mtldeviceerror-swift.struct/code/notsupported.md)
+- [MTLDeviceError.Code.notSupported](./code/notsupported.md)
   Indicates the requested feature is not supported by the current device.
 ### Initializers
-- [init?(rawValue: Int)](mtldeviceerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

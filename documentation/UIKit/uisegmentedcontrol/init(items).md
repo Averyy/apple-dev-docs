@@ -1,7 +1,8 @@
 # init(items:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a segmented control with segments having the given titles or images.
 
@@ -9,13 +10,17 @@ Creates a segmented control with segments having the given titles or images.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(items: [Any]?)
+```
+
+```objc
+- (instancetype) initWithItems:(NSArray *) items;
 ```
 
 #### Return Value
@@ -28,15 +33,16 @@ The system automatically sizes the returned segmented control to fit its content
 
 ## Parameters
 
-- `items`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects (for segment titles), [`UIImage`](uiimage.md) objects (for segment images), or in iOS 14.0 and later [`UIAction`](uiaction.md) objects.
+- `items`: An array of [`NSString`](../../Foundation/nsstring.md) objects (for segment titles), [`UIImage`](../uiimage.md) objects (for segment images), or in iOS 14.0 and later [`UIAction`](../uiaction.md) objects.
 
 ## See Also
 
-- [convenience init(frame: CGRect, actions: [UIAction])](uisegmentedcontrol/init(frame:actions:).md)
+### Creating a segmented control
+- [convenience init(frame: CGRect, actions: [UIAction])](./init%28frame,actions%29.md)
   Creates a segmented control with the given frame and adds segments for the actions you specify.
-- [init(frame: CGRect)](uisegmentedcontrol/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates an empty segmented control with the frame you specify.
-- [init?(coder: NSCoder)](uisegmentedcontrol/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a segmented control with data from an unarchiver.
 
 

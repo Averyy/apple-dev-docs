@@ -1,7 +1,8 @@
 # named(_:)
 
 **Framework**: ActivityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A function you use to configure a custom sound for a Live Activity update alert.
 
@@ -21,7 +22,8 @@ static func named(_ name: String) -> AlertConfiguration.AlertSound
 
 ## See Also
 
-- [static var `default`: AlertConfiguration.AlertSound](alertconfiguration/alertsound/default.md)
+### Configuring the alert sound
+- [static var `default`: AlertConfiguration.AlertSound](./default.md)
   A value that represents the system’s default alert sound.
 
 

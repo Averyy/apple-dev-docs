@@ -1,7 +1,8 @@
 # automaticReloadPaymentRequest
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional request to set up an automatic reload payment, such as a store card top-up.
 
@@ -18,25 +19,30 @@ An optional request to set up an automatic reload payment, such as a store card 
 var automaticReloadPaymentRequest: PKAutomaticReloadPaymentRequest? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PKAutomaticReloadPaymentRequest * automaticReloadPaymentRequest;
+```
+
 #### Discussion
 
-Set this property by assigning it to an instance of [`PKAutomaticReloadPaymentRequest`](pkautomaticreloadpaymentrequest.md) to indicate that the payment request is for an automatic reload payment.
+Set this property by assigning it to an instance of [`PKAutomaticReloadPaymentRequest`](../pkautomaticreloadpaymentrequest.md) to indicate that the payment request is for an automatic reload payment.
 
 Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens. Otherwise, Apple Pay issues a device token for the payment request.
 
-> ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/multitokencontexts) or [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) or [`deferredPaymentRequest`](pkpaymentrequest/deferredpaymentrequest.md) properties. Simultaneous use of these properties results in a runtime error and cancels the payment request.
+> ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](../../ApplePayontheWeb/applepaypaymentrequest/multitokencontexts.md) or [`recurringPaymentRequest`](./recurringpaymentrequest.md) or [`deferredPaymentRequest`](./deferredpaymentrequest.md) properties. Simultaneous use of these properties results in a runtime error and cancels the payment request.
 
 ## See Also
 
-- [var recurringPaymentRequest: PKRecurringPaymentRequest?](pkpaymentrequest/recurringpaymentrequest.md)
+### Requesting recurring, automatic, and deferred payments
+- [var recurringPaymentRequest: PKRecurringPaymentRequest?](./recurringpaymentrequest.md)
   An optional request to set up a recurring payment, typically a subscription.
-- [class PKRecurringPaymentRequest](pkrecurringpaymentrequest.md)
+- [class PKRecurringPaymentRequest](../pkrecurringpaymentrequest.md)
   A class that represents a request to set up a recurring payment, typically a subscription.
-- [class PKAutomaticReloadPaymentRequest](pkautomaticreloadpaymentrequest.md)
+- [class PKAutomaticReloadPaymentRequest](../pkautomaticreloadpaymentrequest.md)
   A class that represents a request to set up an automatic reload payment, such as a store card top-up or a prepaid account.
-- [var deferredPaymentRequest: PKDeferredPaymentRequest?](pkpaymentrequest/deferredpaymentrequest.md)
+- [var deferredPaymentRequest: PKDeferredPaymentRequest?](./deferredpaymentrequest.md)
   A request to set up a deferred payment, such as a hotel booking or a pre-order.
-- [class PKDeferredPaymentRequest](pkdeferredpaymentrequest.md)
+- [class PKDeferredPaymentRequest](../pkdeferredpaymentrequest.md)
   An object that represents a request to set up a deferred payment, such as a hotel booking or a pre-order.
 
 

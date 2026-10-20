@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type representing the document’s content to write.
@@ -21,13 +22,14 @@ associatedtype Snapshot
 
 #### Discussion
 
-This is the same type returned by [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md). It crosses an actor boundary (from main actor to background), so use `sending` annotations or make it `Sendable`.
+This is the same type returned by [`snapshot(contentType:)`](../writabledocument/snapshot%28contenttype%29.md). It crosses an actor boundary (from main actor to background), so use `sending` annotations or make it `Sendable`.
 
 ## See Also
 
-- [func write(snapshot: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](documentwriter/write(snapshot:to:previous:progress:).md)
+### Writing a document
+- [func write(snapshot: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](./write%28snapshot,to,previous,progress%29.md)
   Writes the document content to disk.
-- [associatedtype Destination = URL](documentwriter/destination.md)
+- [associatedtype Destination = URL](./destination.md)
   The type of the destination location to write to.
 
 

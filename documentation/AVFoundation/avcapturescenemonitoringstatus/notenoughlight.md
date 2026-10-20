@@ -1,7 +1,8 @@
 # notEnoughLight
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The light level of the current scene is insufficient for the current set of features to function optimally.
 
@@ -18,19 +19,24 @@ The light level of the current scene is insufficient for the current set of feat
 static let notEnoughLight: AVCaptureSceneMonitoringStatus
 ```
 
+```c
+extern AVCaptureSceneMonitoringStatus const AVCaptureSceneMonitoringStatusNotEnoughLight;
+```
+
 ## See Also
 
-- [func setCinematicVideoFixedFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideofixedfocus(at:focusmode:).md)
+### Configuring Cinematic video
+- [func setCinematicVideoFixedFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](../avcapturedevice/setcinematicvideofixedfocus%28at,focusmode%29.md)
   Fix focus at a distance.
-- [func setCinematicVideoTrackingFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(at:focusmode:).md)
+- [func setCinematicVideoTrackingFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](../avcapturedevice/setcinematicvideotrackingfocus%28at,focusmode%29.md)
   Focus on and start tracking an object if it can be detected at the region specified by the point.
-- [func setCinematicVideoTrackingFocus(detectedObjectID: Int, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(detectedobjectid:focusmode:).md)
+- [func setCinematicVideoTrackingFocus(detectedObjectID: Int, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](../avcapturedevice/setcinematicvideotrackingfocus%28detectedobjectid,focusmode%29.md)
   Focus on and start tracking a detected object.
-- [AVCaptureDevice.CinematicVideoFocusMode](avcapturedevice/cinematicvideofocusmode.md)
+- [AVCaptureDevice.CinematicVideoFocusMode](../avcapturedevice/cinematicvideofocusmode.md)
   Constants indicating the focus behavior when recording a Cinematic Video.
-- [struct AVCaptureSceneMonitoringStatus](avcapturescenemonitoringstatus.md)
+- [struct AVCaptureSceneMonitoringStatus](../avcapturescenemonitoringstatus.md)
   An informative status about the scene observed by the device.
-- [var cinematicVideoCaptureSceneMonitoringStatuses: Set<AVCaptureSceneMonitoringStatus>](avcapturedevice/cinematicvideocapturescenemonitoringstatuses.md)
+- [var cinematicVideoCaptureSceneMonitoringStatuses: Set<AVCaptureSceneMonitoringStatus>](../avcapturedevice/cinematicvideocapturescenemonitoringstatuses.md)
   The current scene monitoring statuses related to Cinematic Video capture.
 
 

@@ -1,7 +1,8 @@
 # lineHeight
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The line height definition of a paragraph.
 

@@ -1,7 +1,8 @@
 # remove
 
 **Framework**: CFNetwork  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies whether the client should remove the result instead of adding it.
 
@@ -19,20 +20,25 @@ Specifies whether the client should remove the result instead of adding it.
 static var remove: CFNetServiceBrowserFlags { get }
 ```
 
+```c
+kCFNetServiceFlagRemove
+```
+
 #### Discussion
 
 If set, the client should remove the result item instead of adding it.
 
 ## See Also
 
-- [static var isDefault: CFNetServiceBrowserFlags](cfnetservicebrowserflags/isdefault.md)
+### Type Properties
+- [static var isDefault: CFNetServiceBrowserFlags](./isdefault.md)
   Specifies whether the resulting domain is the default registration or browse domain.
-- [static var isDomain: CFNetServiceBrowserFlags](cfnetservicebrowserflags/isdomain.md)
+- [static var isDomain: CFNetServiceBrowserFlags](./isdomain.md)
   Specifies whether the result pertains to a search for domains or services.
-- [static var isRegistrationDomain: CFNetServiceBrowserFlags](cfnetservicebrowserflags/isregistrationdomain.md)
-- [static var moreComing: CFNetServiceBrowserFlags](cfnetservicebrowserflags/morecoming.md)
+- [static var isRegistrationDomain: CFNetServiceBrowserFlags](./isregistrationdomain.md)
+- [static var moreComing: CFNetServiceBrowserFlags](./morecoming.md)
   A hint that the system will call the client’s callback function again soon.
-- [static var isRegistrationDomain: CFNetServiceBrowserFlags](cfnetservicebrowserflags/isregistrationdomain.md)
+- [static var isRegistrationDomain: CFNetServiceBrowserFlags](./isregistrationdomain.md)
 
 
 ---

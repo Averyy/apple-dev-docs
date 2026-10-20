@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the store action for a color attachment.
@@ -20,28 +21,33 @@ Configures the store action for a color attachment.
 func setColorStoreAction(_ storeAction: MTLStoreAction, index colorAttachmentIndex: Int)
 ```
 
+```objc
+- (void) setColorStoreAction:(MTLStoreAction) storeAction atIndex:(NSUInteger) colorAttachmentIndex;
+```
+
 #### Discussion
 
-This method changes the render command encoder’s store action for a color attachment. You can assign the default store action for a color attachment by configuring the [`storeAction`](mtlrenderpassattachmentdescriptor/storeaction.md) property of its [`MTLRenderPassColorAttachmentDescriptor`](mtlrenderpasscolorattachmentdescriptor.md) (see [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) and its [`colorAttachments`](mtlrenderpassdescriptor/colorattachments.md) property).
+This method changes the render command encoder’s store action for a color attachment. You can assign the default store action for a color attachment by configuring the [`storeAction`](../mtlrenderpassattachmentdescriptor/storeaction.md) property of its [`MTLRenderPassColorAttachmentDescriptor`](../mtlrenderpasscolorattachmentdescriptor.md) (see [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) and its [`colorAttachments`](../mtlrenderpassdescriptor/colorattachments.md) property).
 
-> ❗ **Important**:  You need to call this method before calling the encoder’s [`endEncoding()`](mtlcommandencoder/endencoding().md) method, but only for color attachments with a [`storeAction`](mtlrenderpassattachmentdescriptor/storeaction.md) property equal to [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
+> ❗ **Important**:  You need to call this method before calling the encoder’s [`endEncoding()`](../mtlcommandencoder/endencoding%28%29.md) method, but only for color attachments with a [`storeAction`](../mtlrenderpassattachmentdescriptor/storeaction.md) property equal to [`MTLStoreAction.unknown`](../mtlstoreaction/unknown.md).
 
 ## Parameters
 
-- `storeAction`: A store action for the color attachment that can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
+- `storeAction`: A store action for the color attachment that can’t be [`MTLStoreAction.unknown`](../mtlstoreaction/unknown.md).
 - `colorAttachmentIndex`: The index of a color attachment.
 
 ## See Also
 
-- [func setColorStoreActionOptions(MTLStoreActionOptions, index: Int)](mtlrendercommandencoder/setcolorstoreactionoptions(_:index:).md)
+### Configuring the actions for attachments
+- [func setColorStoreActionOptions(MTLStoreActionOptions, index: Int)](./setcolorstoreactionoptions%28_,index%29.md)
   Configures the store action options for a color attachment.
-- [func setDepthStoreAction(MTLStoreAction)](mtlrendercommandencoder/setdepthstoreaction(_:).md)
+- [func setDepthStoreAction(MTLStoreAction)](./setdepthstoreaction%28_%29.md)
   Configures the store action for the depth attachment.
-- [func setDepthStoreActionOptions(MTLStoreActionOptions)](mtlrendercommandencoder/setdepthstoreactionoptions(_:).md)
+- [func setDepthStoreActionOptions(MTLStoreActionOptions)](./setdepthstoreactionoptions%28_%29.md)
   Configures the store action options for the depth attachment.
-- [func setStencilStoreAction(MTLStoreAction)](mtlrendercommandencoder/setstencilstoreaction(_:).md)
+- [func setStencilStoreAction(MTLStoreAction)](./setstencilstoreaction%28_%29.md)
   Configures the store action for the stencil attachment.
-- [func setStencilStoreActionOptions(MTLStoreActionOptions)](mtlrendercommandencoder/setstencilstoreactionoptions(_:).md)
+- [func setStencilStoreActionOptions(MTLStoreActionOptions)](./setstencilstoreactionoptions%28_%29.md)
   Configures the store action options for the stencil attachment.
 
 

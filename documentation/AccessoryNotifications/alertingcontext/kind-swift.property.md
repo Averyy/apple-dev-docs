@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A classification for the notification type.
 
@@ -20,7 +21,8 @@ Use this property to apply specialized handling for different notification types
 
 ## See Also
 
-- [AlertingContext.Kind](alertingcontext/kind-swift.enum.md)
+### Classifying the notification type
+- [AlertingContext.Kind](./kind-swift.enum.md)
   Notification types for specialized handling.
 
 

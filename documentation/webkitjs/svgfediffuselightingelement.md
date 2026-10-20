@@ -1,7 +1,8 @@
 # SVGFEDiffuseLightingElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFEDiffuseLightingElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [diffuseConstant](svgfediffuselightingelement/1630332-diffuseconstant.md)
-- [in1](svgfediffuselightingelement/1633332-in1.md)
-- [kernelUnitLengthX](svgfediffuselightingelement/1632173-kernelunitlengthx.md)
-- [kernelUnitLengthY](svgfediffuselightingelement/1631897-kernelunitlengthy.md)
-- [surfaceScale](svgfediffuselightingelement/1632459-surfacescale.md)
+- [diffuseConstant](./svgfediffuselightingelement/api-1630332-diffuseconstant.md)
+- [in1](./svgfediffuselightingelement/api-1633332-in1.md)
+- [kernelUnitLengthX](./svgfediffuselightingelement/api-1632173-kernelunitlengthx.md)
+- [kernelUnitLengthY](./svgfediffuselightingelement/api-1631897-kernelunitlengthy.md)
+- [surfaceScale](./svgfediffuselightingelement/api-1632459-surfacescale.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

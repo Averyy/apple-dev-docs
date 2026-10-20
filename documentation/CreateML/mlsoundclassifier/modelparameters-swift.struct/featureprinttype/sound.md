@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters.FeaturePrintType.sound
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Creates a feature print type for a sound classifier.
 

@@ -1,10 +1,11 @@
 # kBluetoothKeyTypeChangedCombination
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,16 +13,21 @@
 var kBluetoothKeyTypeChangedCombination: Int { get }
 ```
 
+```c
+kBluetoothKeyTypeChangedCombination
+```
+
 ## See Also
 
-- [var kBluetoothKeyTypeAuthenticatedCombination: Int](kbluetoothkeytypeauthenticatedcombination.md)
-- [var kBluetoothKeyTypeCombination: Int](kbluetoothkeytypecombination.md)
-- [var kBluetoothKeyTypeDebugCombination: Int](kbluetoothkeytypedebugcombination.md)
-- [var kBluetoothKeyTypeLocalUnit: Int](kbluetoothkeytypelocalunit.md)
-- [var kBluetoothKeyTypeRemoteUnit: Int](kbluetoothkeytyperemoteunit.md)
-- [var kBluetoothKeyTypeUnauthenticatedCombination: Int](kbluetoothkeytypeunauthenticatedcombination.md)
-- [var kBluetoothKeyTypeAuthenticatedCombinationP256: Int](kbluetoothkeytypeauthenticatedcombinationp256.md)
-- [var kBluetoothKeyTypeUnauthenticatedCombinationP256: Int](kbluetoothkeytypeunauthenticatedcombinationp256.md)
+### Constants
+- [var kBluetoothKeyTypeAuthenticatedCombination: Int](./kbluetoothkeytypeauthenticatedcombination.md)
+- [var kBluetoothKeyTypeCombination: Int](./kbluetoothkeytypecombination.md)
+- [var kBluetoothKeyTypeDebugCombination: Int](./kbluetoothkeytypedebugcombination.md)
+- [var kBluetoothKeyTypeLocalUnit: Int](./kbluetoothkeytypelocalunit.md)
+- [var kBluetoothKeyTypeRemoteUnit: Int](./kbluetoothkeytyperemoteunit.md)
+- [var kBluetoothKeyTypeUnauthenticatedCombination: Int](./kbluetoothkeytypeunauthenticatedcombination.md)
+- [var kBluetoothKeyTypeAuthenticatedCombinationP256: Int](./kbluetoothkeytypeauthenticatedcombinationp256.md)
+- [var kBluetoothKeyTypeUnauthenticatedCombinationP256: Int](./kbluetoothkeytypeunauthenticatedcombinationp256.md)
 
 
 ---

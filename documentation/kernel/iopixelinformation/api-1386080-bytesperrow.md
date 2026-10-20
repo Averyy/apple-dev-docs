@@ -1,7 +1,8 @@
 # bytesPerRow
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of bytes per row.
 
@@ -10,7 +11,7 @@ The number of bytes per row.
 
 ## Declaration
 
-```swift
+```c
 UInt32 bytesPerRow;
 ```
 

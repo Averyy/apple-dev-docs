@@ -1,14 +1,15 @@
 # getScaledFixedValue
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+ - Deprecated in 10.15.2
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOFixed getScaledFixedValue(IOHIDValueScaleType type, IOOptionBits options);
 ```
 

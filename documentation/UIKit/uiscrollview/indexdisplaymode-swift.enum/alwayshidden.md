@@ -1,16 +1,17 @@
 # UIScrollView.IndexDisplayMode.alwaysHidden
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The index is never displayed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - tvOS 10.2+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ The index is never displayed.
 case alwaysHidden
 ```
 
+```c
+UIScrollViewIndexDisplayModeAlwaysHidden
+```
+
 ## See Also
 
-- [UIScrollView.IndexDisplayMode.automatic](uiscrollview/indexdisplaymode-swift.enum/automatic.md)
+### Constants
+- [UIScrollView.IndexDisplayMode.automatic](./automatic.md)
   The index is displayed or hidden automatically.
 
 

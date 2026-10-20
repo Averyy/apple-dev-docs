@@ -1,23 +1,28 @@
 # rootNode
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root node of the scene graph.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var rootNode: SCNNode { get }
+```
+
+```objc
+@property (nonatomic, readonly) SCNNode * rootNode;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ All scene content—nodes, geometries and their materials, lights, cameras, and 
 
 Some scene files created using external tools may describe node hierarchies containing multiple root nodes. When SceneKit imports such files, their separate root nodes will be made children of a new, unique root node.
 
-Each child node’s coordinate system is defined relative to the transformation of its parent node. You should not modify the [`transform`](scnnode/transform.md) property of the root node.
+Each child node’s coordinate system is defined relative to the transformation of its parent node. You should not modify the [`transform`](../scnnode/transform.md) property of the root node.
 
 ## See Also
 
-- [var background: SCNMaterialProperty](scnscene/background.md)
+### Accessing Scene Contents
+- [var background: SCNMaterialProperty](./background.md)
   A background to be rendered before the rest of the scene.
-- [var lightingEnvironment: SCNMaterialProperty](scnscene/lightingenvironment.md)
+- [var lightingEnvironment: SCNMaterialProperty](./lightingenvironment.md)
   A cube map texture that depicts the environment surrounding the scene’s contents, used for advanced lighting effects.
 
 

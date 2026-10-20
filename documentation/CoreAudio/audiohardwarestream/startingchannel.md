@@ -1,12 +1,13 @@
 # startingChannel
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An Int that specifies the first element in the owning device that corresponds to element one of this stream.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

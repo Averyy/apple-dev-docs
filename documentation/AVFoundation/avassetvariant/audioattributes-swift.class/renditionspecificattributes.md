@@ -1,7 +1,8 @@
 # AVAssetVariant.AudioAttributes.RenditionSpecificAttributes
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents attributes specific to a particular rendition.
 
@@ -20,37 +21,42 @@ An object that represents attributes specific to a particular rendition.
 class RenditionSpecificAttributes
 ```
 
+```objc
+@interface AVAssetVariantAudioRenditionSpecificAttributes : NSObject
+```
+
 ## Topics
 
 ### Accessing attributes
-- [var channelCount: Int?](avassetvariant/audioattributes-swift.class/renditionspecificattributes/channelcount.md)
+- [var channelCount: Int?](./renditionspecificattributes/channelcount.md)
   The count of audio channels in the rendition.
-- [var isBinaural: Bool](avassetvariant/audioattributes-swift.class/renditionspecificattributes/isbinaural.md)
+- [var isBinaural: Bool](./renditionspecificattributes/isbinaural.md)
   A Boolean value that indicates the variant is best suited for delivery to headphones.
-- [var isImmersive: Bool](avassetvariant/audioattributes-swift.class/renditionspecificattributes/isimmersive.md)
+- [var isImmersive: Bool](./renditionspecificattributes/isimmersive.md)
   A Boolean value that indicates whether this variant contains virtualized or otherwise preprocessed audio content suitable for various purposes.
-- [var isDownmix: Bool](avassetvariant/audioattributes-swift.class/renditionspecificattributes/isdownmix.md)
+- [var isDownmix: Bool](./renditionspecificattributes/isdownmix.md)
   A Boolean value that indicates whether the variant is a downmix derivative of other media of greater channel count.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [NSObjectProtocol](../../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var formatIDs: [AudioFormatID]](avassetvariant/audioattributes-swift.class/formatids.md)
+### Inspecting audio attributes
+- [var formatIDs: [AudioFormatID]](./formatids.md)
   The audio formats of the renditions present in the variant.
-- [func renditionSpecificAttributes(for: AVMediaSelectionOption) -> AVAssetVariant.AudioAttributes.RenditionSpecificAttributes?](avassetvariant/audioattributes-swift.class/renditionspecificattributes(for:).md)
+- [func renditionSpecificAttributes(for: AVMediaSelectionOption) -> AVAssetVariant.AudioAttributes.RenditionSpecificAttributes?](./renditionspecificattributes%28for%29.md)
   Returns specific attributes for the media option.
 
 

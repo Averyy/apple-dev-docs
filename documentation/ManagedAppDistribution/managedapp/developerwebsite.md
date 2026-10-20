@@ -1,7 +1,8 @@
 # developerWebsite
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s developer website URL.
 
@@ -20,7 +21,8 @@ let developerWebsite: URL?
 
 ## See Also
 
-- [let seller: String?](managedapp/seller.md)
+### Obtaining seller information
+- [let seller: String?](./seller.md)
   The app’s localized seller.
 
 

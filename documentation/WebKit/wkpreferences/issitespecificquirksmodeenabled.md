@@ -1,7 +1,8 @@
 # isSiteSpecificQuirksModeEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether to apply site-specific compatibility workarounds.
 
@@ -18,13 +19,18 @@ A Boolean that indicates whether to apply site-specific compatibility workaround
 var isSiteSpecificQuirksModeEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isSiteSpecificQuirksModeEnabled) BOOL siteSpecificQuirksModeEnabled;
+```
+
 #### Discussion
 
-The default value for this preference is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this preference is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var javaScriptCanOpenWindowsAutomatically: Bool](wkpreferences/javascriptcanopenwindowsautomatically.md)
+### Setting Java and JavaScript Preferences
+- [var javaScriptCanOpenWindowsAutomatically: Bool](./javascriptcanopenwindowsautomatically.md)
   A Boolean value that indicates whether JavaScript can open windows without user interaction.
 
 

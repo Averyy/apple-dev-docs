@@ -1,6 +1,7 @@
 # Verifying a mobile document from a passport
 
-**Framework**: IdentityDocumentServices
+**Framework**: IdentityDocumentServices  
+**Role**: Article
 
 Validate a response from mobile document information derived from a passport.
 
@@ -10,14 +11,14 @@ Beginning in iOS 26.1 and watchOS 26.1, people can add passports in the form of 
 
 A Digital ID is a way for people to securely create an ID in Wallet using information from their U.S. passport and present their ID with an iPhone or Apple Watch. You can verify the authenticity, integrity, and validity of a Digital ID response in following scenarios:
 
-- Your iOS app accepts mdocs using the Verify with Wallet API. For more information, see [`Requesting identity data from a Wallet pass`](https://developer.apple.com/documentation/passkit/requesting-identity-data-from-a-wallet-pass).
-- Your website accepts Verify with Wallet on the Web. For more information, see [`Requesting a mobile document on the web`](requesting-a-mobile-document-on-the-web.md) and [`Implementing as an identity document provider`](implenting-as-an-identity-document-provider.md).
-- Your iOS app reads the mdoc’s response using [`ProximityReader`](https://developer.apple.com/documentation/proximityreader)’s  [`MobilePhotoIDRawDataRequest`](https://developer.apple.com/documentation/proximityreader/mobilephotoidrawdatarequest).
+- Your iOS app accepts mdocs using the Verify with Wallet API. For more information, see [Requesting identity data from a Wallet pass](../PassKit/requesting-identity-data-from-a-wallet-pass.md).
+- Your website accepts Verify with Wallet on the Web. For more information, see [Requesting a mobile document on the web](./requesting-a-mobile-document-on-the-web.md) and [Implementing as an identity document provider](./implenting-as-an-identity-document-provider.md).
+- Your iOS app reads the mdoc’s response using [ProximityReader](../ProximityReader/ProximityReader.md)’s  [`MobilePhotoIDRawDataRequest`](../ProximityReader/mobilephotoidrawdatarequest.md).
 - Your ISO 18013-5 capable terminal wants to accept mdoc responses.
 
-> **Note**: Using the [`MobileDocumentDisplayRequest`](https://developer.apple.com/documentation/proximityreader/mobiledocumentdisplayrequest) or [`MobilePhotoIDDataRequest`](https://developer.apple.com/documentation/proximityreader/mobilephotoiddatarequest) API in the [`ProximityReader`](https://developer.apple.com/documentation/proximityreader) framework automatically verifies Digital IDs.
+> **Note**: Using the [`MobileDocumentDisplayRequest`](../ProximityReader/mobiledocumentdisplayrequest.md) or [`MobilePhotoIDDataRequest`](../ProximityReader/mobilephotoiddatarequest.md) API in the [ProximityReader](../ProximityReader/ProximityReader.md) framework automatically verifies Digital IDs.
 
-#### Verify the Passport Mobile Document Response
+#### Verify the passport mobile document response
 
 You can validate a Digital ID response by verifying the issuer and device signatures.
 
@@ -74,9 +75,9 @@ The following table is a list of elements in the ISO/IEC 23220 issuer namespace:
 | `document_number` | String | The number assigned or calculated by the issuing authority. |
 | `issuing_authority_latin1` | String | The Digital ID-issuing authority name in Latin-1 characters. |
 
-#### Decode the Device Response
+#### Decode the device response
 
-The device response is a [`CBOR (RFC 8949 Concise Binary Object Representation)`](https://developer.apple.comhttps://cbor.io) encoded byte array. You can check the validity of the response by using a CBOR library or parser in your chosen programming language.
+The device response is a [CBOR (RFC 8949 Concise Binary Object Representation)](https://cbor.io) encoded byte array. You can check the validity of the response by using a CBOR library or parser in your chosen programming language.
 
 A valid Digital ID device response has:
 
@@ -86,7 +87,7 @@ A valid Digital ID device response has:
 
 If this step fails, you can choose to allow users to retry or fall back to a different verification method.
 
-#### Validate the Device Response and Mobile Security Object
+#### Validate the device response and Mobile Security Object
 
 You can validate the `deviceResponse` by verifying the issuer and device signatures. Section 9.1.2 of ISO/IEC 18013-5 defines a procedure for validating the issuer data in the device response. This procedure helps your app authenticate data to ensure it comes from a source you trust.
 
@@ -103,7 +104,7 @@ You can see a complete list for validating the device response and MSO in Sectio
 
 Next, validate the document signer certificate, which signs the MSO. You can validate the document signer certificate by doing the following:
 
-- Ensure that you’ve validated the [`Apple Issuing Authority root CA (IACA)`](https://developer.apple.comhttps://www.apple.com/certificateauthority/apki202505/) and added it to your trust store. The IACA root CA certificates and associated policy documents and agreements are available in ISO/IEC 18013-5 section 9.1.2.
+- Ensure that you’ve validated the [Apple Issuing Authority root CA (IACA)](https://www.apple.com/certificateauthority/apki202505/) and added it to your trust store. The IACA root CA certificates and associated policy documents and agreements are available in ISO/IEC 18013-5 section 9.1.2.
 - Ensure that there’s a valid X.509 chain of trust to the Apple Issuing Authority Certificate Authority (IACA).
 - Verify that the issuer is the same as the subject of the Apple IACA certificate.
 - Verify that the certificate chain matches the certificate profile requirements described in Table B.3 of ISO/IEC 18013-5.
@@ -116,7 +117,7 @@ Because the MSO revocation list is signed daily, each partition consists of a `C
 
 > **Note**: Apple systems generate the revocation list when a Digital ID is removed from Wallet, becomes inactive for more than 60 days, or is deleted by the user in Find My or via Apple Care. The list doesn’t contain government-sourced data. For offline use cases, download and cache all partitions with a maximum cache duration of one day.
 
-#### Validate the Data Elements
+#### Validate the data elements
 
 Verify that the user information in the response matches the data from the issuing authority. The MSO includes an array of digests or hashes, covering every element in the mdoc.
 
@@ -129,7 +130,7 @@ To validate the date elements, ensure that each data element in the response mat
 
 There can be more digests than you see in the `issuerSigned` items structure because you only receive signed items for each element you request.
 
-#### Verify the Device Signatures
+#### Verify the device signatures
 
 Section 9.1.3 of ISO/IEC 18013-5 defines a procedure for authenticating mdocs. This procedure helps your app verify that the response came from the issued device. Using this procedure helps prevent mdoc cloning to an unauthorized device and intermediary attacks. Digital ID credentials use Elliptic Curve Digital Signature Algorithm (ECDSA) for mdoc authentication.
 
@@ -143,9 +144,10 @@ You can see a complete list for verifying the device signature in Section 9.1.2 
 
 ## See Also
 
-- [Requesting a mobile document on the web](requesting-a-mobile-document-on-the-web.md)
+### Essentials
+- [Requesting a mobile document on the web](./requesting-a-mobile-document-on-the-web.md)
   Send a request for mobile document information for apps installed on a device.
-- [Implementing as an identity document provider](implenting-as-an-identity-document-provider.md)
+- [Implementing as an identity document provider](./implenting-as-an-identity-document-provider.md)
   Add your app as an option for mobile document web presentment.
 
 

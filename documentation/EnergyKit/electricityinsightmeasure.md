@@ -1,14 +1,15 @@
 # ElectricityInsightMeasure
 
 **Framework**: EnergyKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for types that can measure electricity usage data.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,18 +19,19 @@ protocol ElectricityInsightMeasure
 
 #### Overview
 
-The [`ElectricityInsightRecord`](electricityinsightrecord.md) structure uses this protocol as its generic type parameter, and supports the types:
+The [`ElectricityInsightRecord`](./electricityinsightrecord.md) structure uses this protocol as its generic type parameter, and supports the types:
 
-- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Measurement`](https://developer.apple.com/documentation/foundation/measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/foundation/unitenergy)>>
-- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Duration`](https://developer.apple.com/documentation/swift/duration)>
+- [`ElectricityInsightRecord`](./electricityinsightrecord.md)<[`Measurement`](../Foundation/measurement.md)<[`UnitEnergy`](../Foundation/unitenergy.md)>>
+- [`ElectricityInsightRecord`](./electricityinsightrecord.md)<[`Duration`](../Swift/duration.md)>
 
 ## See Also
 
-- [actor ElectricityInsightService](electricityinsightservice.md)
+### Electricity insights
+- [actor ElectricityInsightService](./electricityinsightservice.md)
   A service for retrieving insights about electricity consumption.
-- [struct ElectricityInsightQuery](electricityinsightquery.md)
+- [struct ElectricityInsightQuery](./electricityinsightquery.md)
   A structure describing a query that you use to obtain environmental impact information in the form of electricity insight records.
-- [struct ElectricityInsightRecord](electricityinsightrecord.md)
+- [struct ElectricityInsightRecord](./electricityinsightrecord.md)
   A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 
 

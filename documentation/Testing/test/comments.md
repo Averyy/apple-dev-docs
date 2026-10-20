@@ -1,18 +1,19 @@
 # comments
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complete set of comments about this test from all of its traits.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 

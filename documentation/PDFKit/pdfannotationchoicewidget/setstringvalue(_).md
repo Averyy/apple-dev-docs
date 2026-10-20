@@ -1,17 +1,22 @@
 # setStringValue(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the selection in the widget annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setStringValue(_ value: String!)
+```
+
+```objc
+- (void) setStringValue:(NSString *) value;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ If the widget annotation object is backed by PDF form data, this method updates 
 
 ## See Also
 
-- [func stringValue() -> String!](pdfannotationchoicewidget/stringvalue.md)
+### Getting and Setting the String Value
+- [func stringValue() -> String!](./stringvalue%28%29.md)
   Returns the selection in the widget annotation.
 
 

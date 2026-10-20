@@ -1,7 +1,8 @@
 # pixel(at:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the pixel data for the specified location in the image.
 

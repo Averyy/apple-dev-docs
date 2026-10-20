@@ -1,7 +1,8 @@
 # landscape
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The portal will be wide.
 

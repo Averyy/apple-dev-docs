@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The view’s default controls style.
 
@@ -14,19 +15,24 @@ The view’s default controls style.
 static var `default`: AVPlayerViewControlsStyle { get }
 ```
 
+```c
+AVPlayerViewControlsStyleDefault
+```
+
 #### Discussion
 
-The default controls style is [`AVPlayerViewControlsStyle.inline`](avplayerviewcontrolsstyle/inline.md).
+The default controls style is [`AVPlayerViewControlsStyle.inline`](./inline.md).
 
 ## See Also
 
-- [AVPlayerViewControlsStyle.none](avplayerviewcontrolsstyle/none.md)
+### Controls styles
+- [AVPlayerViewControlsStyle.none](./none.md)
   The view displays no playback controls.
-- [AVPlayerViewControlsStyle.inline](avplayerviewcontrolsstyle/inline.md)
+- [AVPlayerViewControlsStyle.inline](./inline.md)
   The view displays playback controls in a bar along the view’s bottom edge.
-- [AVPlayerViewControlsStyle.floating](avplayerviewcontrolsstyle/floating.md)
+- [AVPlayerViewControlsStyle.floating](./floating.md)
   The view displays playback controls in a floating window over the video content.
-- [AVPlayerViewControlsStyle.minimal](avplayerviewcontrolsstyle/minimal.md)
+- [AVPlayerViewControlsStyle.minimal](./minimal.md)
   The view presents basic controls to play and pause playback.
 
 

@@ -1,7 +1,8 @@
 # GLKVector3
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A representation of a 3-component vector.
 
@@ -15,6 +16,10 @@ A representation of a 3-component vector.
 
 ```swift
 typealias GLKVector3 = _GLKVector3
+```
+
+```c
+typedef union _GLKVector3 GLKVector3;
 ```
 
 ##### Fields

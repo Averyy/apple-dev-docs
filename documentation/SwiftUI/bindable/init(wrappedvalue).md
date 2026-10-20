@@ -1,7 +1,8 @@
 # init(wrappedValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bindable object from an observable object.
 
@@ -20,15 +21,18 @@ Creates a bindable object from an observable object.
 init(wrappedValue: Value)
 ```
 
+Available when `Value` conforms to `Observable`.
+
 #### Discussion
 
 You should not call this initializer directly. Instead, declare a property with the `@Bindable` attribute, and provide an initial value.
 
 ## See Also
 
-- [init(Value)](bindable/init(_:).md)
+### Creating a bindable value
+- [init(Value)](./init%28_%29.md)
   Creates a bindable object from an observable object.
-- [init(projectedValue: Bindable<Value>)](bindable/init(projectedvalue:).md)
+- [init(projectedValue: Bindable<Value>)](./init%28projectedvalue%29.md)
   Creates a bindable from the value of another bindable.
 
 

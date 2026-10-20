@@ -1,7 +1,8 @@
 # source(withIdentifier:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Locates an event source with the specified identifier.
 
@@ -19,6 +20,10 @@ Locates an event source with the specified identifier.
 func source(withIdentifier identifier: String) -> EKSource?
 ```
 
+```objc
+- (EKSource *) sourceWithIdentifier:(NSString *) identifier;
+```
+
 #### Return Value
 
 The source with the specified identifier, or `nil` if the source isn’t found.
@@ -29,9 +34,10 @@ The source with the specified identifier, or `nil` if the source isn’t found.
 
 ## See Also
 
-- [var sources: [EKSource]](ekeventstore/sources.md)
+### Accessing account sources
+- [var sources: [EKSource]](./sources.md)
   An unordered array of objects that represent accounts that contain calendars.
-- [var delegateSources: [EKSource]](ekeventstore/delegatesources.md)
+- [var delegateSources: [EKSource]](./delegatesources.md)
   The event sources delegated to the person using your app.
 
 

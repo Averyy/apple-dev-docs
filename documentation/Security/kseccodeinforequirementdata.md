@@ -1,7 +1,8 @@
 # kSecCodeInfoRequirementData
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the internal requirements of the code as a binary blob.
 
@@ -15,11 +16,15 @@ A key whose value is the internal requirements of the code as a binary blob.
 let kSecCodeInfoRequirementData: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoRequirementData;
+```
+
 #### Discussion
 
-The value is a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object. If there is an explicit designated requirement, then it’s included in this data blob.
+The value is a [`CFData`](../CoreFoundation/cfdata.md) object. If there is an explicit designated requirement, then it’s included in this data blob.
 
-Specify the [`kSecCSRequirementInformation`](kseccsrequirementinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
+Specify the [`kSecCSRequirementInformation`](./kseccsrequirementinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to get this information.
 
 
 ---

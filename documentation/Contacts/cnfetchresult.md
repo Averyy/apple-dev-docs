@@ -1,7 +1,8 @@
 # CNFetchResult
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the result of a change-history fetch request.
 
@@ -19,33 +20,38 @@ An object that represents the result of a change-history fetch request.
 class CNFetchResult<ValueType> where ValueType : AnyObject
 ```
 
+```objc
+@interface CNFetchResult : NSObject
+```
+
 ## Topics
 
 ### Accessing results
-- [var currentHistoryToken: Data](cnfetchresult/currenthistorytoken.md)
+- [var currentHistoryToken: Data](./cnfetchresult/currenthistorytoken.md)
   An opaque token that indicates a point in history in the user’s Contacts database.
-- [var value: ValueType](cnfetchresult/value.md)
+- [var value: ValueType](./cnfetchresult/value.md)
   The result of the fetch request, expressed as the value type you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CNContactFetchRequest](cncontactfetchrequest.md)
+### Fetch and save requests
+- [class CNContactFetchRequest](./cncontactfetchrequest.md)
   An object that defines the options to use when fetching contacts.
-- [class CNFetchRequest](cnfetchrequest.md)
+- [class CNFetchRequest](./cnfetchrequest.md)
   The base class for contact fetch requests.
-- [class CNSaveRequest](cnsaverequest.md)
+- [class CNSaveRequest](./cnsaverequest.md)
   An object that collects the changes you want to save to the user’s contacts database.
 
 

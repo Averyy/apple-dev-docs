@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name that the system uses when displaying the workout.
 
@@ -20,15 +21,16 @@ var displayName: String?
 
 ## See Also
 
-- [var activity: HKWorkoutActivityType](customworkout/activity.md)
+### Accessing workout data
+- [var activity: HKWorkoutActivityType](./activity.md)
   The type of activity performed during the workout.
-- [var location: HKWorkoutSessionLocationType](customworkout/location.md)
+- [var location: HKWorkoutSessionLocationType](./location.md)
   The workout session location for the workout.
-- [var warmup: WorkoutStep?](customworkout/warmup.md)
+- [var warmup: WorkoutStep?](./warmup.md)
   The warmup step (if any).
-- [var blocks: [IntervalBlock]](customworkout/blocks.md)
+- [var blocks: [IntervalBlock]](./blocks.md)
   A block of repeating work and recovery steps.
-- [var cooldown: WorkoutStep?](customworkout/cooldown.md)
+- [var cooldown: WorkoutStep?](./cooldown.md)
   The cooldown step (if any).
 
 

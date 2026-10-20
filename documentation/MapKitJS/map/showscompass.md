@@ -1,7 +1,8 @@
 # showsCompass
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A feature visibility setting that determines when the compass is visible.
 
@@ -10,24 +11,25 @@ A feature visibility setting that determines when the compass is visible.
 
 ## Declaration
 
-```swift
+```
 get showsCompass(): FeatureVisibility;
 set showsCompass(value: FeatureVisibility);
 ```
 
 #### Discussion
 
-By default, the compass is adaptive ([`Adaptive`](featurevisibility/adaptive.md)), meaning that it isn’t visible when [`rotation`](map/rotation.md) is `0` on touch devices. Otherwise, the compass is visible.
+By default, the compass is adaptive ([`Adaptive`](../featurevisibility/adaptive.md)), meaning that it isn’t visible when [`rotation`](./rotation.md) is `0` on touch devices. Otherwise, the compass is visible.
 
 ## See Also
 
-- [showsMapTypeControl](map/showsmaptypecontrol.md)
+### Showing the map’s controls
+- [showsMapTypeControl](./showsmaptypecontrol.md)
   A Boolean value that determines whether to display a control that lets users choose the map type.
-- [showsScale](map/showsscale.md)
+- [showsScale](./showsscale.md)
   A feature visibility setting that determines when the map displays the map’s scale indicator.
-- [showsUserLocationControl](map/showsuserlocationcontrol.md)
+- [showsUserLocationControl](./showsuserlocationcontrol.md)
   A Boolean value that determines whether the user location control is visible.
-- [showsZoomControl](map/showszoomcontrol.md)
+- [showsZoomControl](./showszoomcontrol.md)
   A Boolean value that determines whether to display a control for zooming in and zooming out on a map.
 
 

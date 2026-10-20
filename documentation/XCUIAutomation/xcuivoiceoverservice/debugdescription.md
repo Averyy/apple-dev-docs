@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides debugging information about the service.
 
@@ -19,6 +20,10 @@ Provides debugging information about the service.
 
 ```swift
 var debugDescription: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * debugDescription;
 ```
 
 

@@ -1,7 +1,8 @@
 # prepareToAnalyze(in:withProgressReadyHandler:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the analyzer to begin work with minimal startup delay, reporting the progress of that preparation.
 
@@ -22,11 +23,14 @@ final func prepareToAnalyze(in audioFormat: AVAudioFormat?, withProgressReadyHan
 ## Parameters
 
 - `audioFormat`: An audio format describing the expected input. The analyzer will load assets appropriate for the given format. If `nil` or if the input is not in this format, the analyzer will reconfigure itself when it processes the actual audio.
-- `progressReadyHandler`: A closure that this method calls when progress reporting becomes available. The closure takes the following parameter: - **progress**: A `Progress` object that reports the progress of the preparation work.
+- `progressReadyHandler`: A closure that this method calls when progress reporting becomes available. The closure takes the following parameter:
+
+  - **progress**: A `Progress` object that reports the progress of the preparation work.
 
 ## See Also
 
-- [func prepareToAnalyze(in: AVAudioFormat?) async throws](speechanalyzer/preparetoanalyze(in:).md)
+### Improving responsiveness
+- [func prepareToAnalyze(in: AVAudioFormat?) async throws](./preparetoanalyze%28in%29.md)
   Prepares the analyzer to begin work with minimal startup delay.
 
 

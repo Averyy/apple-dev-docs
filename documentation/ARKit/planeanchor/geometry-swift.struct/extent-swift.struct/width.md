@@ -1,7 +1,8 @@
 # width
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of a plane.
 
@@ -16,9 +17,10 @@ var width: Float { get }
 
 ## See Also
 
-- [var height: Float](planeanchor/geometry-swift.struct/extent-swift.struct/height.md)
+### Inspecting a plane extent
+- [var height: Float](./height.md)
   The height of a plane.
-- [var anchorFromExtentTransform: simd_float4x4](planeanchor/geometry-swift.struct/extent-swift.struct/anchorfromextenttransform.md)
+- [var anchorFromExtentTransform: simd_float4x4](./anchorfromextenttransform.md)
   The transform from the plane extent to the plane anchor’s coordinate system.
 
 

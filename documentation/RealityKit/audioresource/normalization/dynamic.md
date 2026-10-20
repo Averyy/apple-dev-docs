@@ -1,7 +1,8 @@
 # dynamic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Performs dynamic compression to normalize the audio source material to a level of -12dBLUFS in real-time.
 

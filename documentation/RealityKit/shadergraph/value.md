@@ -1,7 +1,8 @@
 # ShaderGraph.Value
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -18,40 +19,40 @@ enum Value
 ## Topics
 
 ### Enumeration Cases
-- [ShaderGraph.Value.bool(_:)](shadergraph/value/bool(_:).md)
-- [ShaderGraph.Value.cgColor3(_:)](shadergraph/value/cgcolor3(_:).md)
-- [ShaderGraph.Value.cgColor4(_:)](shadergraph/value/cgcolor4(_:).md)
-- [ShaderGraph.Value.float(_:)](shadergraph/value/float(_:).md)
-- [ShaderGraph.Value.float2(_:)](shadergraph/value/float2(_:).md)
-- [ShaderGraph.Value.float2x2(_:)](shadergraph/value/float2x2(_:).md)
-- [ShaderGraph.Value.float3(_:)](shadergraph/value/float3(_:).md)
-- [ShaderGraph.Value.float3x3(_:)](shadergraph/value/float3x3(_:).md)
-- [ShaderGraph.Value.float4(_:)](shadergraph/value/float4(_:).md)
-- [ShaderGraph.Value.float4x4(_:)](shadergraph/value/float4x4(_:).md)
-- [ShaderGraph.Value.half(_:)](shadergraph/value/half(_:).md)
-- [ShaderGraph.Value.half2(_:)](shadergraph/value/half2(_:).md)
-- [ShaderGraph.Value.half2x2(_:)](shadergraph/value/half2x2(_:).md)
-- [ShaderGraph.Value.half3(_:)](shadergraph/value/half3(_:).md)
-- [ShaderGraph.Value.half3x3(_:)](shadergraph/value/half3x3(_:).md)
-- [ShaderGraph.Value.half4(_:)](shadergraph/value/half4(_:).md)
-- [ShaderGraph.Value.half4x4(_:)](shadergraph/value/half4x4(_:).md)
-- [ShaderGraph.Value.int(_:)](shadergraph/value/int(_:).md)
-- [ShaderGraph.Value.int2(_:)](shadergraph/value/int2(_:).md)
-- [ShaderGraph.Value.int3(_:)](shadergraph/value/int3(_:).md)
-- [ShaderGraph.Value.int4(_:)](shadergraph/value/int4(_:).md)
-- [ShaderGraph.Value.string(_:)](shadergraph/value/string(_:).md)
-- [ShaderGraph.Value.uchar(_:)](shadergraph/value/uchar(_:).md)
-- [ShaderGraph.Value.uint(_:)](shadergraph/value/uint(_:).md)
+- [ShaderGraph.Value.bool(_:)](./value/bool%28_%29.md)
+- [ShaderGraph.Value.cgColor3(_:)](./value/cgcolor3%28_%29.md)
+- [ShaderGraph.Value.cgColor4(_:)](./value/cgcolor4%28_%29.md)
+- [ShaderGraph.Value.float(_:)](./value/float%28_%29.md)
+- [ShaderGraph.Value.float2(_:)](./value/float2%28_%29.md)
+- [ShaderGraph.Value.float2x2(_:)](./value/float2x2%28_%29.md)
+- [ShaderGraph.Value.float3(_:)](./value/float3%28_%29.md)
+- [ShaderGraph.Value.float3x3(_:)](./value/float3x3%28_%29.md)
+- [ShaderGraph.Value.float4(_:)](./value/float4%28_%29.md)
+- [ShaderGraph.Value.float4x4(_:)](./value/float4x4%28_%29.md)
+- [ShaderGraph.Value.half(_:)](./value/half%28_%29.md)
+- [ShaderGraph.Value.half2(_:)](./value/half2%28_%29.md)
+- [ShaderGraph.Value.half2x2(_:)](./value/half2x2%28_%29.md)
+- [ShaderGraph.Value.half3(_:)](./value/half3%28_%29.md)
+- [ShaderGraph.Value.half3x3(_:)](./value/half3x3%28_%29.md)
+- [ShaderGraph.Value.half4(_:)](./value/half4%28_%29.md)
+- [ShaderGraph.Value.half4x4(_:)](./value/half4x4%28_%29.md)
+- [ShaderGraph.Value.int(_:)](./value/int%28_%29.md)
+- [ShaderGraph.Value.int2(_:)](./value/int2%28_%29.md)
+- [ShaderGraph.Value.int3(_:)](./value/int3%28_%29.md)
+- [ShaderGraph.Value.int4(_:)](./value/int4%28_%29.md)
+- [ShaderGraph.Value.string(_:)](./value/string%28_%29.md)
+- [ShaderGraph.Value.uchar(_:)](./value/uchar%28_%29.md)
+- [ShaderGraph.Value.uint(_:)](./value/uint%28_%29.md)
 ### Instance Properties
-- [var dataType: ShaderGraph.DataType](shadergraph/value/datatype.md)
+- [var dataType: ShaderGraph.DataType](./value/datatype.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

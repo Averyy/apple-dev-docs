@@ -1,17 +1,18 @@
 # init(mEnableAdvancedDucking:mDuckingLevel:)
 
 **Framework**: Audio Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new ducking configuration in which you specify whether to enable advanced ducking and the ducking level of other non-voice audio.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 

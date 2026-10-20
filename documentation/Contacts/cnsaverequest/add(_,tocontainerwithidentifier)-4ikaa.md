@@ -1,7 +1,8 @@
 # add(_:toContainerWithIdentifier:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a group to the contact store.
 
@@ -18,6 +19,10 @@ Adds a group to the contact store.
 func add(_ group: CNMutableGroup, toContainerWithIdentifier identifier: String?)
 ```
 
+```objc
+- (void) addGroup:(CNMutableGroup *) group toContainerWithIdentifier:(NSString *) identifier;
+```
+
 #### Discussion
 
 This method overrides any previously made delete request for the group.
@@ -29,13 +34,14 @@ This method overrides any previously made delete request for the group.
 
 ## See Also
 
-- [func update(CNMutableGroup)](cnsaverequest/update(_:)-8h6f6.md)
+### Saving group changes
+- [func update(CNMutableGroup)](./update%28_%29-8h6f6.md)
   Updates an existing group in the contact store.
-- [func delete(CNMutableGroup)](cnsaverequest/delete(_:)-29lsm.md)
+- [func delete(CNMutableGroup)](./delete%28_%29-29lsm.md)
   Deletes a group from the contact store.
-- [func addMember(CNContact, to: CNGroup)](cnsaverequest/addmember(_:to:).md)
+- [func addMember(CNContact, to: CNGroup)](./addmember%28_,to%29.md)
   Adds a contact as a member of a group.
-- [func removeMember(CNContact, from: CNGroup)](cnsaverequest/removemember(_:from:).md)
+- [func removeMember(CNContact, from: CNGroup)](./removemember%28_,from%29.md)
   Removes a contact as a member of a group.
 
 

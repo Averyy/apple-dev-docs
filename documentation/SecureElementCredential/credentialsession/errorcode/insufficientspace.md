@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.insufficientSpace
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The hardware storage has insufficient space for the attempted provisioning.
 

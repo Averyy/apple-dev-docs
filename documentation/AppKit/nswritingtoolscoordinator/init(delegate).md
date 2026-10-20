@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a writing tools coordinator and assigns the specified delegate object to it.
 
@@ -14,9 +15,13 @@ Creates a writing tools coordinator and assigns the specified delegate object to
 init(delegate: (any NSWritingToolsCoordinator.Delegate)?)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<NSWritingToolsCoordinatorDelegate>) delegate;
+```
+
 #### Discussion
 
-Create the coordinator object during your view’s initialization, and assign the object to your view. Assign the coordinator to the [`writingToolsCoordinator`](nsview/writingtoolscoordinator.md) property of your view.
+Create the coordinator object during your view’s initialization, and assign the object to your view. Assign the coordinator to the [`writingToolsCoordinator`](../nsview/writingtoolscoordinator.md) property of your view.
 
 ## Parameters
 

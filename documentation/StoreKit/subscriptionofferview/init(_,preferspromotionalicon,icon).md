@@ -1,7 +1,8 @@
 # init(_:prefersPromotionalIcon:icon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

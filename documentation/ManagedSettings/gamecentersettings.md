@@ -1,7 +1,8 @@
 # GameCenterSettings
 
 **Framework**: Managed Settings  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constraints on the user’s Game Center settings.
 
@@ -23,40 +24,41 @@ Use `GameCenterSettings` to prevent the user from changing Game Center’s setti
 ## Topics
 
 ### Denying the ability to join multiplayer games
-- [var denyMultiplayerGaming: Bool?](gamecentersettings/denymultiplayergaming-swift.property.md)
+- [var denyMultiplayerGaming: Bool?](./gamecentersettings/denymultiplayergaming-swift.property.md)
   A Boolean value that indicates whether your app prevents the user joining multiplayer games.
-- [static let denyMultiplayerGaming: SettingMetadata<Bool>](gamecentersettings/denymultiplayergaming-swift.type.property.md)
+- [static let denyMultiplayerGaming: SettingMetadata<Bool>](./gamecentersettings/denymultiplayergaming-swift.type.property.md)
   The metadata associated with the setting that prevents users from joining multiplayer games.
 ### Denying the ability to add friends
-- [var denyAddingFriends: Bool?](gamecentersettings/denyaddingfriends-swift.property.md)
+- [var denyAddingFriends: Bool?](./gamecentersettings/denyaddingfriends-swift.property.md)
   A Boolean value that indicates whether to prevent the user from adding Game Center friends.
-- [static let denyAddingFriends: SettingMetadata<Bool>](gamecentersettings/denyaddingfriends-swift.type.property.md)
+- [static let denyAddingFriends: SettingMetadata<Bool>](./gamecentersettings/denyaddingfriends-swift.type.property.md)
   The metadata for the setting that prevents the user from adding friends in Game Center.
 
 ## Relationships
 
 ### Conforms To
-- [ManagedSettingsGroup](managedsettingsgroup.md)
+- [ManagedSettingsGroup](./managedsettingsgroup.md)
 
 ## See Also
 
-- [var appStore: AppStoreSettings](managedsettingsstore/appstore.md)
+### Filtering media content
+- [var appStore: AppStoreSettings](./managedsettingsstore/appstore.md)
   Settings that affect the App Store.
-- [struct AppStoreSettings](appstoresettings.md)
+- [struct AppStoreSettings](./appstoresettings.md)
   Constraints on a user’s App Store settings.
-- [var application: ApplicationSettings](managedsettingsstore/application.md)
+- [var application: ApplicationSettings](./managedsettingsstore/application.md)
   Settings that affect applications.
-- [struct ApplicationSettings](applicationsettings.md)
+- [struct ApplicationSettings](./applicationsettings.md)
   Constraints on the apps and categories of apps a user can run on their device.
-- [var effectiveMaximumMovieRating: Int](managedsettingsstore/effectivemaximummovierating.md)
+- [var effectiveMaximumMovieRating: Int](./managedsettingsstore/effectivemaximummovierating.md)
   The movie rating constraint that is active on this device.
-- [var effectiveMaximumTVShowRating: Int](managedsettingsstore/effectivemaximumtvshowrating.md)
+- [var effectiveMaximumTVShowRating: Int](./managedsettingsstore/effectivemaximumtvshowrating.md)
   The TV rating constraint that is active on this device.
-- [var gameCenter: GameCenterSettings](managedsettingsstore/gamecenter.md)
+- [var gameCenter: GameCenterSettings](./managedsettingsstore/gamecenter.md)
   Settings that affect Game Center.
-- [var media: MediaSettings](managedsettingsstore/media.md)
+- [var media: MediaSettings](./managedsettingsstore/media.md)
   Settings that affect media.
-- [struct MediaSettings](mediasettings.md)
+- [struct MediaSettings](./mediasettings.md)
   Constraints on the media content the user can access.
 
 

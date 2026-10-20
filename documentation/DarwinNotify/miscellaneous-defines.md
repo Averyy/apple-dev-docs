@@ -1,15 +1,17 @@
 # Miscellaneous Defines
 
-**Framework**: Darwin Notify
+**Framework**: Darwin Notify  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var NOTIFY_REUSE: Int32](notify_reuse.md)
+- [var NOTIFY_REUSE: Int32](./notify_reuse.md)
 
 ## See Also
 
-- [Status Codes](status-codes.md)
+### Constants
+- [Status Codes](./status-codes.md)
 
 
 ---

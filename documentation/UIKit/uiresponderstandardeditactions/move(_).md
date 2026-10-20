@@ -1,7 +1,8 @@
 # move(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prompts a person to specify a new location and moves data to that location.
 
@@ -18,13 +19,18 @@ Prompts a person to specify a new location and moves data to that location.
 optional func move(_ sender: Any?)
 ```
 
+```objc
+- (void) move:(id) sender;
+```
+
 ## See Also
 
-- [func duplicate(Any?)](uiresponderstandardeditactions/duplicate(_:).md)
+### Handling data commands
+- [func duplicate(Any?)](./duplicate%28_%29.md)
   Duplicates data.
-- [func export(Any?)](uiresponderstandardeditactions/export(_:).md)
+- [func export(Any?)](./export%28_%29.md)
   Exports data in different file formats or to other apps.
-- [func rename(Any?)](uiresponderstandardeditactions/rename(_:).md)
+- [func rename(Any?)](./rename%28_%29.md)
   Changes a title.
 
 

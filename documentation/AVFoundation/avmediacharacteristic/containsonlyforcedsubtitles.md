@@ -1,7 +1,8 @@
 # containsOnlyForcedSubtitles
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates that a track or media selection option presents only forced subtitles.
 
@@ -20,6 +21,10 @@ A media characteristic that indicates that a track or media selection option pre
 static let containsOnlyForcedSubtitles: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicContainsOnlyForcedSubtitles;
+```
+
 #### Discussion
 
 The value of this characteristic is `public.subtitles.forced-only`.
@@ -28,15 +33,16 @@ The system infers this characteristic from the format description of the associa
 
 ## See Also
 
-- [static let legible: AVMediaCharacteristic](avmediacharacteristic/legible.md)
+### Legible
+- [static let legible: AVMediaCharacteristic](./legible.md)
   A media characteristic that indicates that a track or media selection option includes legible content.
-- [static let easyToRead: AVMediaCharacteristic](avmediacharacteristic/easytoread.md)
+- [static let easyToRead: AVMediaCharacteristic](./easytoread.md)
   A media characteristic that indicates a track or media selection option provides legible content that’s edited for easy reading.
-- [static let describesVideoForAccessibility: AVMediaCharacteristic](avmediacharacteristic/describesvideoforaccessibility.md)
+- [static let describesVideoForAccessibility: AVMediaCharacteristic](./describesvideoforaccessibility.md)
   A media characteristic that indicates the media includes audible content that describes the visual portion of the presentation.
-- [static let languageTranslation: AVMediaCharacteristic](avmediacharacteristic/languagetranslation.md)
+- [static let languageTranslation: AVMediaCharacteristic](./languagetranslation.md)
   A media characteristic that indicates that a track or media selection option contains a language or dialect translation of the original content.
-- [static let transcribesSpokenDialogForAccessibility: AVMediaCharacteristic](avmediacharacteristic/transcribesspokendialogforaccessibility.md)
+- [static let transcribesSpokenDialogForAccessibility: AVMediaCharacteristic](./transcribesspokendialogforaccessibility.md)
   A media characteristic that indicates that a media selection option includes legible content that transcribes spoken dialog.
 
 

@@ -1,17 +1,24 @@
 # es_muted_processes(_:_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates a list of muted processes.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 12.0
+
+> **Deprecated**: Use [`es_muted_processes_events(_:_:)`](./es_muted_processes_events%28_,_%29.md) instead.
 
 ## Declaration
 
 ```swift
 func es_muted_processes(_ client: OpaquePointer, _ count: UnsafeMutablePointer<Int>, _ audit_tokens: UnsafeMutablePointer<UnsafeMutablePointer<audit_token_t>>?) -> es_return_t
+```
+
+```c
+extern es_return_t es_muted_processes(es_client_t *client, size_t *count, audit_token_t **audit_tokens);
 ```
 
 #### Return Value
@@ -30,9 +37,10 @@ The caller handles freeing the memory pointed to by `audit_token`.
 
 ## See Also
 
-- [func es_mute_path_literal(OpaquePointer, UnsafePointer<CChar>) -> es_return_t](es_mute_path_literal(_:_:).md)
+### Deprecated Functions
+- [func es_mute_path_literal(OpaquePointer, UnsafePointer<CChar>) -> es_return_t](./es_mute_path_literal%28_,_%29.md)
   Suppresses events from executables matching a path literal.
-- [func es_mute_path_prefix(OpaquePointer, UnsafePointer<CChar>) -> es_return_t](es_mute_path_prefix(_:_:).md)
+- [func es_mute_path_prefix(OpaquePointer, UnsafePointer<CChar>) -> es_return_t](./es_mute_path_prefix%28_,_%29.md)
   Suppresses events from executables matching a path prefix.
 
 

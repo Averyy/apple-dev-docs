@@ -1,7 +1,8 @@
 # UITextPasteConfigurationSupporting
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for text-oriented responder objects to participate in the unified paste and drop system in iOS.
 
@@ -18,31 +19,36 @@ The interface for text-oriented responder objects to participate in the unified 
 protocol UITextPasteConfigurationSupporting : UIPasteConfigurationSupporting
 ```
 
+```objc
+@protocol UITextPasteConfigurationSupporting <UIPasteConfigurationSupporting>
+```
+
 ## Topics
 
 ### Setting the text paste delegate
-- [var pasteDelegate: (any UITextPasteDelegate)?](uitextpasteconfigurationsupporting/pastedelegate.md)
+- [var pasteDelegate: (any UITextPasteDelegate)?](./uitextpasteconfigurationsupporting/pastedelegate.md)
   The text paste delegate that handles pasting and dropping of text, using item providers.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
 ### Inherited By
-- [UITextDroppable](uitextdroppable.md)
+- [UITextDroppable](./uitextdroppable.md)
 ### Conforming Types
-- [UISearchTextField](uisearchtextfield.md)
-- [UITextField](uitextfield.md)
-- [UITextView](uitextview.md)
+- [UISearchTextField](./uisearchtextfield.md)
+- [UITextField](./uitextfield.md)
+- [UITextView](./uitextview.md)
 
 ## See Also
 
-- [protocol UITextPasteItem](uitextpasteitem.md)
+### Pasteboard support
+- [protocol UITextPasteItem](./uitextpasteitem.md)
   The interface for obtaining information about, and interacting with, a text item for pasting or dropping.
-- [protocol UISearchTextFieldPasteItem](uisearchtextfieldpasteitem.md)
+- [protocol UISearchTextFieldPasteItem](./uisearchtextfieldpasteitem.md)
   A protocol that supports pasting tokens.
-- [protocol UITextPasteDelegate](uitextpastedelegate.md)
+- [protocol UITextPasteDelegate](./uitextpastedelegate.md)
   The interface for handling pasting and dropping of text, using item providers.
 
 

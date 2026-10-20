@@ -1,7 +1,8 @@
 # count
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of groups in the row grouping.
 
@@ -20,9 +21,12 @@ The number of groups in the row grouping.
 var count: Int { get }
 ```
 
+Available when `GroupingKey` conforms to `Hashable`.
+
 ## See Also
 
-- [subscript(Int) -> (key: GroupingKey?, group: DataFrame.Slice)](rowgrouping/subscript(_:)-5z2eg.md)
+### Inspecting a Row Grouping
+- [subscript(Int) -> (key: GroupingKey?, group: DataFrame.Slice)](./subscript%28_%29-5z2eg.md)
   Retrieves a group at an index.
 
 

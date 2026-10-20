@@ -1,14 +1,15 @@
 # OUTPUT_NULL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 OUTPUT_NULL = 0x0100
 ```
 

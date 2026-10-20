@@ -1,12 +1,13 @@
 # bitmapFormat
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the bitmap image representation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ The format of the bitmap image representation.
 var bitmapFormat: NSBitmapImageRep.Format { get }
 ```
 
+```objc
+@property (readonly) NSBitmapFormat bitmapFormat;
+```
+
 #### Discussion
 
-Returns 0 by default. The return value can indicate several different attributes, which are described in [`NSBitmapImageRep.Format`](nsbitmapimagerep/format.md).
+Returns 0 by default. The return value can indicate several different attributes, which are described in [`NSBitmapImageRep.Format`](./format.md).
 
 ## See Also
 
-- [NSBitmapImageRep.Format](nsbitmapimagerep/format.md)
+### Getting Information About Images
+- [NSBitmapImageRep.Format](./format.md)
   Constants that represent bitmap component formats.
-- [var bitsPerPixel: Int](nsbitmapimagerep/bitsperpixel.md)
+- [var bitsPerPixel: Int](./bitsperpixel.md)
   The number of bits allocated for each pixel in each plane of data.
-- [var bytesPerPlane: Int](nsbitmapimagerep/bytesperplane.md)
+- [var bytesPerPlane: Int](./bytesperplane.md)
   The number of bytes in each plane or channel of data.
-- [var bytesPerRow: Int](nsbitmapimagerep/bytesperrow.md)
+- [var bytesPerRow: Int](./bytesperrow.md)
   The minimum number of bytes required to specify a scan line in each data plane.
-- [var isPlanar: Bool](nsbitmapimagerep/isplanar.md)
+- [var isPlanar: Bool](./isplanar.md)
   A Boolean value that indicates whether the image data is in a planar configuration.
-- [var numberOfPlanes: Int](nsbitmapimagerep/numberofplanes.md)
+- [var numberOfPlanes: Int](./numberofplanes.md)
   The number of separate planes into which the image data is organized.
-- [var samplesPerPixel: Int](nsbitmapimagerep/samplesperpixel.md)
+- [var samplesPerPixel: Int](./samplesperpixel.md)
   The number of components for each pixel.
 
 

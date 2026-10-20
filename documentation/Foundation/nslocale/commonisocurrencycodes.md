@@ -1,7 +1,8 @@
 # commonISOCurrencyCodes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of commonly encountered currency codes.
 
@@ -20,19 +21,24 @@ A list of commonly encountered currency codes.
 class var commonISOCurrencyCodes: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * commonISOCurrencyCodes;
+```
+
 #### Discussion
 
 Common codes may include, for example, `"AED"`, `"AUD"`, `"BZD"`, `"DKK"`, `"EUR"`, `"GBP"`, `"JPY"`, `"KES"`, `"MXN"`, `"OMR"`, `"STD"`, `"USD"`, `"XCD"`, and `"ZWD"`.
 
 ## See Also
 
-- [class var availableLocaleIdentifiers: [String]](nslocale/availablelocaleidentifiers.md)
+### Getting Known Identifiers and Codes
+- [class var availableLocaleIdentifiers: [String]](./availablelocaleidentifiers.md)
   The list of locale identifiers available on the system.
-- [class var isoCountryCodes: [String]](nslocale/isocountrycodes.md)
+- [class var isoCountryCodes: [String]](./isocountrycodes.md)
   The list of known country or region codes.
-- [class var isoLanguageCodes: [String]](nslocale/isolanguagecodes.md)
+- [class var isoLanguageCodes: [String]](./isolanguagecodes.md)
   The list of known language codes.
-- [class var isoCurrencyCodes: [String]](nslocale/isocurrencycodes.md)
+- [class var isoCurrencyCodes: [String]](./isocurrencycodes.md)
   The list of known currency codes.
 
 

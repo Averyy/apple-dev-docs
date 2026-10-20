@@ -1,16 +1,25 @@
 # AUGenericViewInternalBase
 
 **Framework**: CoreAudioKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+typealias AUGenericViewInternalBase = UIView
+```
+
+*macOS*
 
 ```swift
 typealias AUGenericViewInternalBase = NSView
@@ -22,7 +31,8 @@ Apple discourages the use of this symbol.
 
 ## See Also
 
-- [class AUGenericViewInternal](augenericviewinternal.md)
+### Deprecations
+- [class AUGenericViewInternal](./augenericviewinternal.md)
 
 
 ---

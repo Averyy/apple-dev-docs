@@ -1,7 +1,8 @@
 # SecKeyCreateEncryptedData(_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Encrypts a block of data using a public key and specified algorithm.
 
@@ -20,25 +21,29 @@ Encrypts a block of data using a public key and specified algorithm.
 func SecKeyCreateEncryptedData(_ key: SecKey, _ algorithm: SecKeyAlgorithm, _ plaintext: CFData, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFData?
 ```
 
+```c
+CFDataRefSecKeyCreateEncryptedData(SecKeyRef key, SecKeyAlgorithm algorithm, CFDataRef plaintext, CFErrorRef*error);
+```
+
 ## Mentions
 
-- [Using Keys for Encryption](using-keys-for-encryption.md)
-- [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Using Keys for Encryption](./using-keys-for-encryption.md)
+- [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
 #### Return Value
 
-The encrypted data or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the data’s memory when you are done with it.
+The encrypted data or `NULL` on failure. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the data’s memory when you are done with it.
 
 #### Discussion
 
-You can decrypt this data with the corresponding private key and a call to [`SecKeyCreateDecryptedData(_:_:_:_:)`](seckeycreatedecrypteddata(_:_:_:_:).md).
+You can decrypt this data with the corresponding private key and a call to [`SecKeyCreateDecryptedData(_:_:_:_:)`](./seckeycreatedecrypteddata%28_,_,_,_%29.md).
 
 ## Parameters
 
 - `key`: The public key to use to perform the encryption.
-- `algorithm`: The encryption algorithm to use. Use one of the encryption algorithms listed in [`SecKeyAlgorithm`](seckeyalgorithm.md). You can use the [`SecKeyIsAlgorithmSupported(_:_:_:)`](seckeyisalgorithmsupported(_:_:_:).md) function to test that the key is suitable for the algorithm.
+- `algorithm`: The encryption algorithm to use. Use one of the encryption algorithms listed in [`SecKeyAlgorithm`](./seckeyalgorithm.md). You can use the [`SecKeyIsAlgorithmSupported(_:_:_:)`](./seckeyisalgorithmsupported%28_,_,_%29.md) function to test that the key is suitable for the algorithm.
 - `plaintext`: The data to be encrypted.
-- `error`: The address of a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a [`CFError`](../CoreFoundation/cferror.md) object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

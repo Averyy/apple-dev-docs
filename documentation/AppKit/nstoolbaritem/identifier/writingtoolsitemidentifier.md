@@ -1,7 +1,8 @@
 # writingToolsItemIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A standard item that is configured to send -showWritingTools: to the firstResponder when invoked.
 
@@ -13,6 +14,10 @@ A standard item that is configured to send -showWritingTools: to the firstRespon
 
 ```swift
 static let writingToolsItemIdentifier: NSToolbarItem.Identifier
+```
+
+```c
+extern NSToolbarItemIdentifier NSToolbarWritingToolsItemIdentifier;
 ```
 
 

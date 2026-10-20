@@ -1,11 +1,12 @@
 # NSDictionary Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Subscripts
-- [subscript(Any) -> Any?](nsmutabledictionary/subscript(_:).md)
+- [subscript(Any) -> Any?](./subscript%28_%29.md)
   Accesses the value associated with a given key.
 
 

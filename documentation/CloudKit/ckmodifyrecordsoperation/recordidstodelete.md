@@ -1,7 +1,8 @@
 # recordIDsToDelete
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IDs of the records to delete permanently from the database.
 
@@ -10,7 +11,7 @@ The IDs of the records to delete permanently from the database.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,25 +21,30 @@ The IDs of the records to delete permanently from the database.
 var recordIDsToDelete: [CKRecord.ID]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<CKRecordID *> * recordIDsToDelete;
+```
+
 #### Discussion
 
-An array of [`CKRecord.ID`](ckrecord/id.md) objects that identifies the records to delete. The initial value of the property is the array of record IDs that you provide to the [`init(recordsToSave:recordIDsToDelete:)`](ckmodifyrecordsoperation/init(recordstosave:recordidstodelete:).md) method.
+An array of [`CKRecord.ID`](../ckrecord/id.md) objects that identifies the records to delete. The initial value of the property is the array of record IDs that you provide to the [`init(recordsToSave:recordIDsToDelete:)`](./init%28recordstosave,recordidstodelete%29.md) method.
 
-When deleting records, the operation reports progress only on the records with the IDs that you specify in this property. Deleting records can trigger the deletion of related records if there is an owner-owned relationship between the records involving a [`CKRecord.Reference`](ckrecord/reference.md) object. When additional deletions occur, CloudKit doesn’t pass them to the progress handler of the operation. For that reason, it’s important to understand the implications of the ownership model you use when you relate records to each other through a [`CKRecord.Reference`](ckrecord/reference.md) object. For more information about owner-owned relationships, see [`CKRecord.Reference`](ckrecord/reference.md).
+When deleting records, the operation reports progress only on the records with the IDs that you specify in this property. Deleting records can trigger the deletion of related records if there is an owner-owned relationship between the records involving a [`CKRecord.Reference`](../ckrecord/reference.md) object. When additional deletions occur, CloudKit doesn’t pass them to the progress handler of the operation. For that reason, it’s important to understand the implications of the ownership model you use when you relate records to each other through a [`CKRecord.Reference`](../ckrecord/reference.md) object. For more information about owner-owned relationships, see [`CKRecord.Reference`](../ckrecord/reference.md).
 
 If you intend to change the value of this property, do so before you execute the operation or submit the operation to a queue.
 
 ## See Also
 
-- [var recordsToSave: [CKRecord]?](ckmodifyrecordsoperation/recordstosave.md)
+### Configuring the Modify Record Operation
+- [var recordsToSave: [CKRecord]?](./recordstosave.md)
   The records to save to the database.
-- [var clientChangeTokenData: Data?](ckmodifyrecordsoperation/clientchangetokendata.md)
+- [var clientChangeTokenData: Data?](./clientchangetokendata.md)
   A token that tracks local changes to records.
-- [var isAtomic: Bool](ckmodifyrecordsoperation/isatomic.md)
+- [var isAtomic: Bool](./isatomic.md)
   A Boolean value that indicates whether the entire operation fails when CloudKit can’t update one or more records in a record zone.
-- [var savePolicy: CKModifyRecordsOperation.RecordSavePolicy](ckmodifyrecordsoperation/savepolicy.md)
+- [var savePolicy: CKModifyRecordsOperation.RecordSavePolicy](./savepolicy.md)
   The policy to use when saving changes to records.
-- [CKModifyRecordsOperation.RecordSavePolicy](ckmodifyrecordsoperation/recordsavepolicy.md)
+- [CKModifyRecordsOperation.RecordSavePolicy](./recordsavepolicy.md)
   Constants that indicate which policy to apply when saving records.
 
 

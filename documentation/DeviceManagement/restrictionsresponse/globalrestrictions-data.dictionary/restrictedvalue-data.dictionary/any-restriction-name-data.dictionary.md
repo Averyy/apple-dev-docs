@@ -1,7 +1,8 @@
 # RestrictionsResponse.GlobalRestrictions.RestrictedValue.ANY restriction name
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains numeric restriction parameters.
 
@@ -15,7 +16,7 @@ A dictionary that contains numeric restriction parameters.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsResponse.GlobalRestrictions.RestrictedValue.ANY restriction name
 ```
 

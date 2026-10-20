@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The second color to use in the gradient.
@@ -11,7 +12,7 @@ The second color to use in the gradient.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ The second color to use in the gradient.
 var color1: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color1;
+```
+
 ## See Also
 
-- [var center: CGPoint](cigaussiangradient/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The center of the effect as x and y coordinates.
-- [var color0: CIColor](cigaussiangradient/color0.md)
+- [var color0: CIColor](./color0.md)
   The first color to use in the gradient.
-- [var radius: Float](cigaussiangradient/radius.md)
+- [var radius: Float](./radius.md)
   The radius of the Gaussian distribution.
 
 

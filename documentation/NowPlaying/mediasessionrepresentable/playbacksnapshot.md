@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current playback state of this session.
@@ -24,7 +25,7 @@ var playbackSnapshot: MediaPlaybackSnapshot? { get }
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](../publishing-media-sessions.md)
 
 
 ---

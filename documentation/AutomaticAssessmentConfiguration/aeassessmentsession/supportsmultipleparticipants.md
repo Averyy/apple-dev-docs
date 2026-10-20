@@ -1,7 +1,8 @@
 # supportsMultipleParticipants
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean that indicates whether the current device or platform supports a configuration with one or more participant applications.
 
@@ -17,13 +18,18 @@ A Boolean that indicates whether the current device or platform supports a confi
 class var supportsMultipleParticipants: Bool { get }
 ```
 
+```objc
+@property (class, assign, readonly) BOOL supportsMultipleParticipants;
+```
+
 ## See Also
 
-- [func update(to: AEAssessmentConfiguration)](aeassessmentsession/update(to:).md)
+### Managing session configuration
+- [func update(to: AEAssessmentConfiguration)](./update%28to%29.md)
   Changes the session to use the specified configuration.
-- [var configuration: AEAssessmentConfiguration](aeassessmentsession/configuration.md)
+- [var configuration: AEAssessmentConfiguration](./configuration.md)
   The current configuration of the session.
-- [class var supportsConfigurationUpdates: Bool](aeassessmentsession/supportsconfigurationupdates.md)
+- [class var supportsConfigurationUpdates: Bool](./supportsconfigurationupdates.md)
   A Boolean that indicates whether the current device or platform supports updating a session’s configuration after the session has begun.
 
 

@@ -1,7 +1,8 @@
 # kMDItemKeywords
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Keywords associated with this file. For example, “Birthday”, “Important”, etc. An CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Keywords associated with this file. For example, “Birthday”, “Important”
 
 ```swift
 let kMDItemKeywords: CFString!
+```
+
+```c
+const CFStringRef kMDItemKeywords;
 ```
 
 

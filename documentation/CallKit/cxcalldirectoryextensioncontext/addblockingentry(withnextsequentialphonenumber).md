@@ -1,7 +1,8 @@
 # addBlockingEntry(withNextSequentialPhoneNumber:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a blocking entry with the specified phone number.
 
@@ -17,15 +18,19 @@ Adds a blocking entry with the specified phone number.
 func addBlockingEntry(withNextSequentialPhoneNumber phoneNumber: CXCallDirectoryPhoneNumber)
 ```
 
+```objc
+- (void) addBlockingEntryWithNextSequentialPhoneNumber:(CXCallDirectoryPhoneNumber) phoneNumber;
+```
+
 ## Mentions
 
-- [Identifying and blocking calls](identifying-and-blocking-calls.md)
+- [Identifying and blocking calls](../identifying-and-blocking-calls.md)
 
 #### Discussion
 
 When a phone number is blocked, the system telephony provider will disallow incoming calls from that phone number without displaying them to the user.
 
-Call this method on the instance of [`CXCallDirectoryExtensionContext`](cxcalldirectoryextensioncontext.md) passed as an argument to the block parameter of the  [`CXCallDirectoryProvider`](cxcalldirectoryprovider.md) instance method [`beginRequest(with:)`](cxcalldirectoryprovider/beginrequest(with:).md).
+Call this method on the instance of [`CXCallDirectoryExtensionContext`](../cxcalldirectoryextensioncontext.md) passed as an argument to the block parameter of the  [`CXCallDirectoryProvider`](../cxcalldirectoryprovider.md) instance method [`beginRequest(with:)`](../cxcalldirectoryprovider/beginrequest%28with%29.md).
 
 ## Parameters
 
@@ -33,7 +38,8 @@ Call this method on the instance of [`CXCallDirectoryExtensionContext`](cxcalldi
 
 ## See Also
 
-- [func addIdentificationEntry(withNextSequentialPhoneNumber: CXCallDirectoryPhoneNumber, label: String)](cxcalldirectoryextensioncontext/addidentificationentry(withnextsequentialphonenumber:label:).md)
+### Adding Entries
+- [func addIdentificationEntry(withNextSequentialPhoneNumber: CXCallDirectoryPhoneNumber, label: String)](./addidentificationentry%28withnextsequentialphonenumber,label%29.md)
   Adds an identification entry with the specified phone number and label.
 
 

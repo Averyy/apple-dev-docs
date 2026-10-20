@@ -1,7 +1,8 @@
 # kIOUSBHostConnectionSpeedFull
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The connected device runs at 12 megabits per second.
 
@@ -10,25 +11,26 @@ The connected device runs at 12 megabits per second.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostConnectionSpeedFull
 ```
 
 ## See Also
 
-- [kIOUSBHostConnectionSpeedNone](tiousbhostconnectionspeed/kiousbhostconnectionspeednone.md)
+### Getting the Connection Speeds
+- [kIOUSBHostConnectionSpeedNone](./kiousbhostconnectionspeednone.md)
   No device is connected.
-- [kIOUSBHostConnectionSpeedLow](tiousbhostconnectionspeed/kiousbhostconnectionspeedlow.md)
+- [kIOUSBHostConnectionSpeedLow](./kiousbhostconnectionspeedlow.md)
   The connected device runs at 1.5 megabits per second.
-- [kIOUSBHostConnectionSpeedHigh](tiousbhostconnectionspeed/kiousbhostconnectionspeedhigh.md)
+- [kIOUSBHostConnectionSpeedHigh](./kiousbhostconnectionspeedhigh.md)
   The connected device runs at 480 megabits per second.
-- [kIOUSBHostConnectionSpeedSuper](tiousbhostconnectionspeed/kiousbhostconnectionspeedsuper.md)
+- [kIOUSBHostConnectionSpeedSuper](./kiousbhostconnectionspeedsuper.md)
   The connected device runs at 5 gigabits per second.
-- [kIOUSBHostConnectionSpeedSuperPlus](tiousbhostconnectionspeed/kiousbhostconnectionspeedsuperplus.md)
+- [kIOUSBHostConnectionSpeedSuperPlus](./kiousbhostconnectionspeedsuperplus.md)
   The connected device runs at 10 gigabits per second.
-- [kIOUSBHostConnectionSpeedSuperPlusBy2](tiousbhostconnectionspeed/kiousbhostconnectionspeedsuperplusby2.md)
+- [kIOUSBHostConnectionSpeedSuperPlusBy2](./kiousbhostconnectionspeedsuperplusby2.md)
   The connected device runs at 20 gigabits per second.
-- [kIOUSBHostConnectionSpeedCount](tiousbhostconnectionspeed/kiousbhostconnectionspeedcount.md)
+- [kIOUSBHostConnectionSpeedCount](./kiousbhostconnectionspeedcount.md)
   The number of available connection speed values.
 
 

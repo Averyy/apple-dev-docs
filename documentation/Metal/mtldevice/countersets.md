@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The counter sets supported by the device object.
@@ -20,17 +21,22 @@ The counter sets supported by the device object.
 var counterSets: [any MTLCounterSet]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSArray<id<MTLCounterSet>> * counterSets;
+```
+
 ## Mentions
 
-- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
 ## See Also
 
-- [func supportsCounterSampling(MTLCounterSamplingPoint) -> Bool](mtldevice/supportscountersampling(_:).md)
+### Sampling a GPU device’s counters
+- [func supportsCounterSampling(MTLCounterSamplingPoint) -> Bool](./supportscountersampling%28_%29.md)
   Returns a Boolean value that indicates whether you can read GPU counters at the specified command boundary.
-- [enum MTLCounterSamplingPoint](mtlcountersamplingpoint.md)
+- [enum MTLCounterSamplingPoint](../mtlcountersamplingpoint.md)
   Options for different times when you can sample GPU counters.
-- [func makeCounterSampleBuffer(descriptor: MTLCounterSampleBufferDescriptor) throws -> any MTLCounterSampleBuffer](mtldevice/makecountersamplebuffer(descriptor:).md)
+- [func makeCounterSampleBuffer(descriptor: MTLCounterSampleBufferDescriptor) throws -> any MTLCounterSampleBuffer](./makecountersamplebuffer%28descriptor%29.md)
   Creates a counter sample buffer.
 
 

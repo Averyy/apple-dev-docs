@@ -1,7 +1,8 @@
 # sourceItemView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
@@ -13,17 +14,22 @@
 var sourceItemView: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * sourceItemView;
+```
+
 ## See Also
 
-- [var extensionContext: NSExtensionContext?](nsviewcontroller/extensioncontext.md)
+### Configuring an App Extension View Controller
+- [var extensionContext: NSExtensionContext?](./extensioncontext.md)
   For a view controller that is part of an app extension, the app extension context.
-- [var preferredScreenOrigin: NSPoint](nsviewcontroller/preferredscreenorigin.md)
+- [var preferredScreenOrigin: NSPoint](./preferredscreenorigin.md)
   For a view controller that is part of an app extension, the preferred screen origin.
-- [var preferredMaximumSize: NSSize](nsviewcontroller/preferredmaximumsize.md)
+- [var preferredMaximumSize: NSSize](./preferredmaximumsize.md)
   For a view controller that is part of an app extension, the largest allowable size for the app extension’s primary view, in screen units.
-- [var preferredMinimumSize: NSSize](nsviewcontroller/preferredminimumsize.md)
+- [var preferredMinimumSize: NSSize](./preferredminimumsize.md)
   For a view controller that is part of an app extension, the smallest allowable size for the app extension’s primary view, in screen units.
-- [func viewWillTransition(to: NSSize)](nsviewcontroller/viewwilltransition(to:).md)
+- [func viewWillTransition(to: NSSize)](./viewwilltransition%28to%29.md)
   For a view controller that is part of an app extension, called when its view is about to be resized.
 
 

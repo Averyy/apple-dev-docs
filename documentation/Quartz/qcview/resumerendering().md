@@ -1,17 +1,24 @@
 # resumeRendering()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes rendering a paused composition.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func resumeRendering()
+```
+
+```objc
+- (void) resumeRendering;
 ```
 
 #### Discussion
@@ -20,19 +27,20 @@ You can nest calls to this method.
 
 ## See Also
 
-- [func startRendering() -> Bool](qcview/startrendering.md)
+### Managing Rendering
+- [func startRendering() -> Bool](./startrendering%28%29.md)
   Starts rendering the composition that is in the view.
-- [func isRendering() -> Bool](qcview/isrendering.md)
+- [func isRendering() -> Bool](./isrendering%28%29.md)
   Checks whether a composition is rendering in the view.
-- [func autostartsRendering() -> Bool](qcview/autostartsrendering.md)
+- [func autostartsRendering() -> Bool](./autostartsrendering%28%29.md)
   Checks whether the view is set to start rendering automatically.
-- [func setAutostartsRendering(Bool)](qcview/setautostartsrendering(_:).md)
+- [func setAutostartsRendering(Bool)](./setautostartsrendering%28_%29.md)
   Sets whether the composition that is in the view starts rendering automatically when the view is put on the screen.
-- [func stopRendering()](qcview/stoprendering.md)
+- [func stopRendering()](./stoprendering%28%29.md)
   Stops rendering the composition that is in the view.
-- [func pauseRendering()](qcview/pauserendering.md)
+- [func pauseRendering()](./pauserendering%28%29.md)
   Pauses rendering in the view.
-- [func isPausedRendering() -> Bool](qcview/ispausedrendering.md)
+- [func isPausedRendering() -> Bool](./ispausedrendering%28%29.md)
   Returns whether or not the rendering in the view is paused.
 
 

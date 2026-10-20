@@ -1,7 +1,8 @@
 # cornerSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width and height of the rounded rectangle’s corners.
 
@@ -22,7 +23,8 @@ var cornerSize: CGSize
 
 ## See Also
 
-- [var style: RoundedCornerStyle](roundedrectangle/style.md)
+### Getting the shape’s characteristics
+- [var style: RoundedCornerStyle](./style.md)
   The style of corners drawn by the rounded rectangle.
 
 

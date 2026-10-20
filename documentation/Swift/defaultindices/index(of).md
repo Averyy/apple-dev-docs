@@ -1,7 +1,8 @@
 # index(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first index where the specified value appears in the collection.
 
@@ -13,13 +14,15 @@ Returns the first index where the specified value appears in the collection.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 5.0 (renamed: firstIndex(of:))
 
 ## Declaration
 
 ```swift
 func index(of element: Self.Element) -> Self.Index?
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 
 ---

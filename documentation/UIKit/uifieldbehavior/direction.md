@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of motion for a linear field.
 
@@ -18,25 +19,30 @@ The direction of motion for a linear field.
 var direction: CGVector { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGVector direction;
+```
+
 #### Discussion
 
 Use this property to specify the direction of motion for velocity and linear gravity fields. For nondirectional fields, the default value of this property is a zero vector.
 
 ## See Also
 
-- [var position: CGPoint](uifieldbehavior/position.md)
+### Configuring the field attributes
+- [var position: CGPoint](./position.md)
   The position of the field in the reference coordinate system.
-- [var region: UIRegion](uifieldbehavior/region.md)
+- [var region: UIRegion](./region.md)
   The shape of the field.
-- [var strength: CGFloat](uifieldbehavior/strength.md)
+- [var strength: CGFloat](./strength.md)
   The strength of the field.
-- [var falloff: CGFloat](uifieldbehavior/falloff.md)
+- [var falloff: CGFloat](./falloff.md)
   The rate of decay for the field strength.
-- [var minimumRadius: CGFloat](uifieldbehavior/minimumradius.md)
+- [var minimumRadius: CGFloat](./minimumradius.md)
   The minimum distance at which to start calculating new values for the field.
-- [var smoothness: CGFloat](uifieldbehavior/smoothness.md)
+- [var smoothness: CGFloat](./smoothness.md)
   The smoothness of the noise used to generate the field.
-- [var animationSpeed: CGFloat](uifieldbehavior/animationspeed.md)
+- [var animationSpeed: CGFloat](./animationspeed.md)
   The rate at which the animation should proceed.
 
 

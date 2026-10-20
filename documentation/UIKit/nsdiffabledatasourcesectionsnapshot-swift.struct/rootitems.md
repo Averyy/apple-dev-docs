@@ -1,7 +1,8 @@
 # rootItems
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of the items at the top level of the section snapshot’s hierarchy.
 
@@ -10,7 +11,7 @@ The identifiers of the items at the top level of the section snapshot’s hierar
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ var rootItems: [ItemIdentifierType] { get }
 
 ## See Also
 
-- [var items: [ItemIdentifierType]](nsdiffabledatasourcesectionsnapshot-swift.struct/items.md)
+### Accessing items
+- [var items: [ItemIdentifierType]](./items.md)
   The identifiers of all items in the section snapshot.
-- [var visibleItems: [ItemIdentifierType]](nsdiffabledatasourcesectionsnapshot-swift.struct/visibleitems.md)
+- [var visibleItems: [ItemIdentifierType]](./visibleitems.md)
   The identifiers of the currently visible items in the section snapshot.
 
 

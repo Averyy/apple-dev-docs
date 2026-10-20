@@ -1,7 +1,8 @@
 # salientObjects
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of objects describing the distinct areas of the saliency heat map.
 
@@ -26,13 +27,14 @@ The objects in this array don’t follow any specific ordering. It’s up to you
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let heatMap: PixelBufferObservation](saliencyimageobservation/heatmap.md)
+- [let heatMap: PixelBufferObservation](./heatmap.md)
   A grayscale heat map of important areas across the image.
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+- [struct PixelBufferObservation](../pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
-- [struct RectangleObservation](rectangleobservation.md)
+- [struct RectangleObservation](../rectangleobservation.md)
   An object that represents the four vertices of a detected rectangle.
 
 

@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRequests.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource object for a match request.
 
@@ -10,14 +11,16 @@ The resource object for a match request.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSetTestCreateRequest.Data.Relationships.MatchmakingRequests.Data
 ```
 
 ## Properties
 
-- `id` (string) *(required)*: The identifier for a [`GameCenterMatchmakingTestRequestInlineCreate`](gamecentermatchmakingtestrequestinlinecreate.md) resource object that you add to the `included` field of the request body.
+- `id` (string) *(required)*: The identifier for a [`GameCenterMatchmakingTestRequestInlineCreate`](../../../../gamecentermatchmakingtestrequestinlinecreate.md) resource object that you add to the `included` field of the request body.
 - `type` (string) *(required)*: The type of resource object.
+
+  **Allowed Values**: `gameCenterMatchmakingTestRequests`
 
 
 ---

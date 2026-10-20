@@ -1,7 +1,8 @@
 # init(spatialPipeline:identifier:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named mixer with the designated spatial pipeline.
 
@@ -19,6 +20,10 @@ Creates a named mixer with the designated spatial pipeline.
 convenience init(spatialPipeline: PHASESpatialPipeline, identifier: String)
 ```
 
+```objc
+- (instancetype) initWithSpatialPipeline:(PHASESpatialPipeline *) spatialPipeline identifier:(NSString *) identifier;
+```
+
 ## Parameters
 
 - `spatialPipeline`: An object that features optional sound resonance effects.
@@ -26,7 +31,8 @@ convenience init(spatialPipeline: PHASESpatialPipeline, identifier: String)
 
 ## See Also
 
-- [init(spatialPipeline: PHASESpatialPipeline)](phasespatialmixerdefinition/init(spatialpipeline:).md)
+### Creating a Spatial Mixer
+- [init(spatialPipeline: PHASESpatialPipeline)](./init%28spatialpipeline%29.md)
   Creates a mixer with the designated spatial pipeline.
 
 

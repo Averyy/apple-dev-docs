@@ -1,7 +1,8 @@
 # Container
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Details about a CloudKit container.
 
@@ -10,7 +11,7 @@ Details about a CloudKit container.
 
 ## Declaration
 
-```swift
+```
 dictionary Container {
 	string id;
 	string teamId;
@@ -35,26 +36,27 @@ import type { Container } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [id](container/id.md)
+- [id](./container/id.md)
   The unique identifier of the container.
-- [imageUrl](container/imageurl.md)
+- [imageUrl](./container/imageurl.md)
   The container’s image URL.
-- [isHidden](container/ishidden.md)
+- [isHidden](./container/ishidden.md)
   Whether the container is hidden.
-- [name](container/name.md)
+- [name](./container/name.md)
   The container name.
-- [teamId](container/teamid.md)
+- [teamId](./container/teamid.md)
   The identifier of the developer team who owns the container.
 
 ## See Also
 
-- [ContainersResponse](containersresponse.md)
+### Global Structures and Enumerations
+- [ContainersResponse](./containersresponse.md)
   An object that represents results of fetching multiple CloudKit containers.
-- [CKEnvironment](ckenvironment.md)
+- [CKEnvironment](./ckenvironment.md)
   An enumeration of container environments.
-- [ContainersSortByField](containerssortbyfield.md)
+- [ContainersSortByField](./containerssortbyfield.md)
   An enumeration that indicates sorting options for retrieved containers.
-- [SortDirection](sortdirection.md)
+- [SortDirection](./sortdirection.md)
   An enumeration that indicates sorting direction when applying a custom sort.
 
 

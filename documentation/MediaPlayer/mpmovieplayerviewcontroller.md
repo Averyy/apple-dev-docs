@@ -1,14 +1,17 @@
 # MPMoviePlayerViewController
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A simple view controller for displaying full-screen movies.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit.
 
 ## Declaration
 
@@ -16,80 +19,85 @@ A simple view controller for displaying full-screen movies.
 class MPMoviePlayerViewController
 ```
 
+```objc
+@interface MPMoviePlayerViewController : UIViewController
+```
+
 #### Overview
 
-> ❗ **Important**:  The [`MPMoviePlayerViewController`](mpmovieplayerviewcontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerController`](mpmovieplayercontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](https://developer.apple.com/documentation/avkit/avpictureinpicturecontroller) or [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) class from the AVKit framework, or the [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) class from WebKit.
+> ❗ **Important**:  The [`MPMoviePlayerViewController`](./mpmovieplayerviewcontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerController`](./mpmovieplayercontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](../AVKit/avpictureinpicturecontroller.md) or [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) class from the AVKit framework, or the [`WKWebView`](../WebKit/wkwebview.md) class from WebKit.
 
-Unlike using an [`MPMoviePlayerController`](mpmovieplayercontroller.md) object on its own to present a movie immediately, you can incorporate a movie player view controller wherever you would normally use a view controller. For example, you can present it using a tab bar or navigation bar-based interface, taking advantage of the transitions offered by those interfaces.
+Unlike using an [`MPMoviePlayerController`](./mpmovieplayercontroller.md) object on its own to present a movie immediately, you can incorporate a movie player view controller wherever you would normally use a view controller. For example, you can present it using a tab bar or navigation bar-based interface, taking advantage of the transitions offered by those interfaces.
 
-To present a movie player view controller modally, you typically use the [`presentMoviePlayerViewControllerAnimated(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/presentmovieplayerviewcontrolleranimated(_:)) method. This method is part of a category on the [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) class and is implemented by the Media Player framework. The [`presentMoviePlayerViewControllerAnimated(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/presentmovieplayerviewcontrolleranimated(_:)) method presents a movie player view controller using the standard transition animations for presenting video content. To dismiss a modally presented movie player view controller, call the [`dismissMoviePlayerViewControllerAnimated()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/dismissmovieplayerviewcontrolleranimated()) method.
+To present a movie player view controller modally, you typically use the [`presentMoviePlayerViewControllerAnimated(_:)`](../UIKit/uiviewcontroller/presentmovieplayerviewcontrolleranimated%28_%29.md) method. This method is part of a category on the [`UIViewController`](../UIKit/uiviewcontroller.md) class and is implemented by the Media Player framework. The [`presentMoviePlayerViewControllerAnimated(_:)`](../UIKit/uiviewcontroller/presentmovieplayerviewcontrolleranimated%28_%29.md) method presents a movie player view controller using the standard transition animations for presenting video content. To dismiss a modally presented movie player view controller, call the [`dismissMoviePlayerViewControllerAnimated()`](../UIKit/uiviewcontroller/dismissmovieplayerviewcontrolleranimated%28%29.md) method.
 
 ## Topics
 
 ### New methods
-- [init!(contentURL: URL!)](mpmovieplayerviewcontroller/init(contenturl:).md)
+- [init!(contentURL: URL!)](./mpmovieplayerviewcontroller/init%28contenturl%29.md)
   Returns a movie player view controller initialized with the specified movie.
-- [var moviePlayer: MPMoviePlayerController!](mpmovieplayerviewcontroller/movieplayer.md)
+- [var moviePlayer: MPMoviePlayerController!](./mpmovieplayerviewcontroller/movieplayer.md)
   The movie player controller object used to present the movie.
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class MPMovieAccessLog](mpmovieaccesslog.md)
+### Deprecated symbols
+- [class MPMovieAccessLog](./mpmovieaccesslog.md)
   Key metrics about network playback for an associated movie player that’s playing streamed content.
-- [class MPMovieAccessLogEvent](mpmovieaccesslogevent.md)
+- [class MPMovieAccessLogEvent](./mpmovieaccesslogevent.md)
   A single piece of information for a movie access log.
-- [class MPMovieErrorLog](mpmovieerrorlog.md)
+- [class MPMovieErrorLog](./mpmovieerrorlog.md)
   Data describing network resource playback failures for the associated movie player, including timestamps indicating when each failure occurred.
-- [class MPMovieErrorLogEvent](mpmovieerrorlogevent.md)
+- [class MPMovieErrorLogEvent](./mpmovieerrorlogevent.md)
   A single piece of information for a movie error log.
-- [struct MPMovieLoadState](mpmovieloadstate.md)
+- [struct MPMovieLoadState](./mpmovieloadstate.md)
   Constants describing the network load state of the movie player.
-- [struct MPMovieMediaTypeMask](mpmoviemediatypemask.md)
+- [struct MPMovieMediaTypeMask](./mpmoviemediatypemask.md)
   The types of content available in the movie file.
-- [class MPMoviePlayerController](mpmovieplayercontroller.md)
+- [class MPMoviePlayerController](./mpmovieplayercontroller.md)
   A type of movie player that manages the playback of a movie from a file or a network stream.
-- [class MPTimedMetadata](mptimedmetadata.md)
+- [class MPTimedMetadata](./mptimedmetadata.md)
   A *timed metadata object that* carries time-based information within HTTP streamed media.
-- [class MPPlayableContentManager](mpplayablecontentmanager.md)
+- [class MPPlayableContentManager](./mpplayablecontentmanager.md)
   A shared content manager for controlling interactions between your media app and system-provided or external media player interfaces.
-- [class MPPlayableContentManagerContext](mpplayablecontentmanagercontext.md)
+- [class MPPlayableContentManagerContext](./mpplayablecontentmanagercontext.md)
   An object representing the current state of the playable endpoint.
-- [class var iPodMusicPlayer: MPMusicPlayerController](mpmusicplayercontroller/ipodmusicplayer.md)
+- [class var iPodMusicPlayer: MPMusicPlayerController](./mpmusicplayercontroller/ipodmusicplayer.md)
   Returns the iPod music player, which controls the iPod app’s state.
-- [convenience init(image: UIImage)](mpmediaitemartwork/init(image:).md)
+- [convenience init(image: UIImage)](./mpmediaitemartwork/init%28image%29.md)
   Initializes a media item artwork instance with a full-size image.
-- [var imageCropRect: CGRect](mpmediaitemartwork/imagecroprect.md)
+- [var imageCropRect: CGRect](./mpmediaitemartwork/imagecroprect.md)
   The bounds, in points, of the content area for the full size image associated with the media item artwork.
-- [var showsRouteButton: Bool](mpvolumeview/showsroutebutton.md)
+- [var showsRouteButton: Bool](./mpvolumeview/showsroutebutton.md)
   A Boolean value that indicates whether the route button is visible in the volume view.
-- [func routeButtonImage(for: UIControl.State) -> UIImage?](mpvolumeview/routebuttonimage(for:).md)
+- [func routeButtonImage(for: UIControl.State) -> UIImage?](./mpvolumeview/routebuttonimage%28for%29.md)
   Returns the button image associated with the specified control state.
 
 

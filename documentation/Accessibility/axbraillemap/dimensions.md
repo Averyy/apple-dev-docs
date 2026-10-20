@@ -1,7 +1,8 @@
 # dimensions
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of pins in each dimension of the braille display.
 
@@ -18,6 +19,10 @@ The number of pins in each dimension of the braille display.
 
 ```swift
 var dimensions: CGSize { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGSize dimensions;
 ```
 
 #### Discussion

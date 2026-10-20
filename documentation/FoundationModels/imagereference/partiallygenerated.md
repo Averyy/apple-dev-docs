@@ -1,7 +1,8 @@
 # ImageReference.PartiallyGenerated
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of an image reference that the model has only partially generated.
 
@@ -23,16 +24,16 @@ struct PartiallyGenerated
 ## Topics
 
 ### Instance Properties
-- [var attachmentLabel: String.PartiallyGenerated?](imagereference/partiallygenerated/attachmentlabel.md)
+- [var attachmentLabel: String.PartiallyGenerated?](./partiallygenerated/attachmentlabel.md)
   The label of the referenced image as the model generates it.
 
 ## Relationships
 
 ### Conforms To
-- [ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ConvertibleFromGeneratedContent](../convertiblefromgeneratedcontent.md)
+- [Equatable](../../Swift/equatable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

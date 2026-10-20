@@ -1,7 +1,8 @@
 # transcriptionOptions
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options relating to the text of the transcription appropriate for this preset.
 
@@ -21,9 +22,10 @@ var transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>
 
 ## See Also
 
-- [var attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>](speechtranscriber/preset/attributeoptions.md)
+### Getting preset properties
+- [var attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>](./attributeoptions.md)
   Options relating to the attributes of the transcription appropriate for this preset.
-- [var reportingOptions: Set<SpeechTranscriber.ReportingOption>](speechtranscriber/preset/reportingoptions.md)
+- [var reportingOptions: Set<SpeechTranscriber.ReportingOption>](./reportingoptions.md)
   Options relating to the transcriber’s result delivery appropriate for this preset.
 
 

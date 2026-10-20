@@ -1,7 +1,8 @@
 # selectAreas(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SelectAreas
 
@@ -17,7 +18,15 @@ Command SelectAreas
 ## Declaration
 
 ```swift
+func selectAreas(with params: MTRServiceAreaClusterSelectAreasParams, completion: @escaping @Sendable (MTRServiceAreaClusterSelectAreasResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func selectAreas(with params: MTRServiceAreaClusterSelectAreasParams) async throws -> MTRServiceAreaClusterSelectAreasResponseParams
+```
+
+```objc
+- (void) selectAreasWithParams:(MTRServiceAreaClusterSelectAreasParams *) params completion:(void (^)(MTRServiceAreaClusterSelectAreasResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

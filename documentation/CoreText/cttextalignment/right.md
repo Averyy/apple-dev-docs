@@ -1,18 +1,19 @@
 # CTTextAlignment.right
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text is visually right-aligned.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ Text is visually right-aligned.
 case right
 ```
 
+```c
+kCTTextAlignmentRight
+```
+
 ## See Also
 
-- [CTTextAlignment.left](cttextalignment/left.md)
+### Constants
+- [CTTextAlignment.left](./left.md)
   Text is visually left-aligned.
-- [CTTextAlignment.center](cttextalignment/center.md)
+- [CTTextAlignment.center](./center.md)
   Text is visually center-aligned.
-- [CTTextAlignment.justified](cttextalignment/justified.md)
+- [CTTextAlignment.justified](./justified.md)
   Text is fully justified.
-- [CTTextAlignment.natural](cttextalignment/natural.md)
+- [CTTextAlignment.natural](./natural.md)
   Text uses the natural alignment of the text’s script.
 
 

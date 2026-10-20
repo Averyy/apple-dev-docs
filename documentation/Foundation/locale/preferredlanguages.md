@@ -1,7 +1,8 @@
 # preferredLanguages
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of the user’s preferred languages.
 
@@ -22,7 +23,7 @@ static var preferredLanguages: [String] { get }
 
 #### Discussion
 
-> **Note**:  [`Bundle`](bundle.md) is responsible for determining the language that your application will run in, based on the result of this API and combined with the languages your application supports.
+> **Note**:  [`Bundle`](../bundle.md) is responsible for determining the language that your application will run in, based on the result of this API and combined with the languages your application supports.
 
 
 ---

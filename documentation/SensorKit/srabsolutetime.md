@@ -1,7 +1,8 @@
 # SRAbsoluteTime
 
 **Framework**: SensorKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that describes when the system records the data.
 
@@ -16,45 +17,50 @@ A value that describes when the system records the data.
 struct SRAbsoluteTime
 ```
 
+```c
+typedef CFTimeInterval SRAbsoluteTime;
+```
+
 #### Discussion
 
-This value tracks monotonically increasing device-specific time, unlike [`mach_continuous_time`](https://developer.apple.com/documentation/kernel/1646199-mach_continuous_time), which keeps tracking across reboots.
+This value tracks monotonically increasing device-specific time, unlike [`mach_continuous_time`](../kernel/api-1646199-mach_continuous_time.md), which keeps tracking across reboots.
 
-Although a fetch can query a [`device`](srfetchrequest/device.md) other than a phone (such as a paired watch), the framework consistently describes time according to the phone. Any fetch results from a paired watch are in the phone’s version of [`SRAbsoluteTime`](srabsolutetime.md).
+Although a fetch can query a [`device`](./srfetchrequest/device.md) other than a phone (such as a paired watch), the framework consistently describes time according to the phone. Any fetch results from a paired watch are in the phone’s version of [`SRAbsoluteTime`](./srabsolutetime.md).
 
 ## Topics
 
 ### Creating an Absolute Time
-- [init(CFTimeInterval)](srabsolutetime/init(_:).md)
+- [init(CFTimeInterval)](./srabsolutetime/init%28_%29.md)
   Creates an absolute time from a raw value.
-- [init(rawValue: CFTimeInterval)](srabsolutetime/init(rawvalue:).md)
+- [init(rawValue: CFTimeInterval)](./srabsolutetime/init%28rawvalue%29.md)
   Creates an absolute time from a raw value.
 ### Accessing the Current Absolute Time
-- [static func current() -> SRAbsoluteTime](srabsolutetime/current.md)
+- [static func current() -> SRAbsoluteTime](./srabsolutetime/current%28%29.md)
   Provides the current absolute time.
 ### Converting Absolute Times
-- [func toCFAbsoluteTime() -> CFAbsoluteTime](srabsolutetime/tocfabsolutetime.md)
+- [func toCFAbsoluteTime() -> CFAbsoluteTime](./srabsolutetime/tocfabsolutetime%28%29.md)
   Converts an absolute time to a core-foundation absolute time.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var from: SRAbsoluteTime](srfetchrequest/from.md)
+### Defining the Time Range
+- [var from: SRAbsoluteTime](./srfetchrequest/from.md)
   Fetches sample information that occurs after this time.
-- [var to: SRAbsoluteTime](srfetchrequest/to.md)
+- [var to: SRAbsoluteTime](./srfetchrequest/to.md)
   Fetches sample information that occurs before this time.
-- [static func current() -> SRAbsoluteTime](srabsolutetime/current.md)
+- [static func current() -> SRAbsoluteTime](./srabsolutetime/current%28%29.md)
   Provides the current absolute time.
-- [func toCFAbsoluteTime() -> CFAbsoluteTime](srabsolutetime/tocfabsolutetime.md)
+- [func toCFAbsoluteTime() -> CFAbsoluteTime](./srabsolutetime/tocfabsolutetime%28%29.md)
   Converts an absolute time to a core-foundation absolute time.
 
 

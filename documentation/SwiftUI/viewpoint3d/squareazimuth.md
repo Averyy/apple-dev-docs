@@ -1,7 +1,8 @@
 # squareAzimuth
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value describing what direction something is being viewed from along the horizontal plane.
 

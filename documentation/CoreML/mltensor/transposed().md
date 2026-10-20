@@ -1,7 +1,8 @@
 # transposed()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Permutes the tensor with dimensions permuted in reverse order.
 
@@ -36,7 +37,8 @@ y.shape // is [3, 2, 1]
 
 ## See Also
 
-- [func transposed(permutation:)](mltensor/transposed(permutation:).md)
+### Transposing the tensor
+- [func transposed(permutation:)](./transposed%28permutation%29.md)
   Permutes the dimensions of the tensor in the specified order.
 
 

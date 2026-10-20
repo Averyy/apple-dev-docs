@@ -1,7 +1,8 @@
 # selectedCalendars
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendars selected by the user.
 
@@ -17,13 +18,18 @@ The calendars selected by the user.
 var selectedCalendars: Set<EKCalendar> { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSSet<EKCalendar *> * selectedCalendars;
+```
+
 ## See Also
 
-- [var selectionStyle: EKCalendarChooserSelectionStyle](ekcalendarchooser/selectionstyle.md)
+### Selecting a Calendar Type
+- [var selectionStyle: EKCalendarChooserSelectionStyle](./selectionstyle.md)
   Determines whether to allow selection of multiple calendars.
-- [enum EKCalendarChooserSelectionStyle](ekcalendarchooserselectionstyle.md)
+- [enum EKCalendarChooserSelectionStyle](../ekcalendarchooserselectionstyle.md)
   Indicates whether users may select a single calendar, or multiple calendars.
-- [enum EKCalendarChooserDisplayStyle](ekcalendarchooserdisplaystyle.md)
+- [enum EKCalendarChooserDisplayStyle](../ekcalendarchooserdisplaystyle.md)
   Indicates whether to display all calendars or writable calendars only.
 
 

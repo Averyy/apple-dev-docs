@@ -1,7 +1,8 @@
 # fields
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All authored field names on this spec.
 

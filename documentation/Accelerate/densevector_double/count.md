@@ -1,18 +1,19 @@
 # count
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items in the vector.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The number of items in the vector.
 var count: Int32
 ```
 
+```c
+int count;
+```
+
 ## See Also
 
-- [var data: UnsafeMutablePointer<Double>](densevector_double/data.md)
+### Inspecting a Vector’s Structure and Data
+- [var data: UnsafeMutablePointer<Double>](./data.md)
   The array of double-precision, floating-point values.
 
 

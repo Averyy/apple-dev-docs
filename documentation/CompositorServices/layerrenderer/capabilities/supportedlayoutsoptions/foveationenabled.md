@@ -1,7 +1,8 @@
 # foveationEnabled
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to request a layout that supports foveated rendering.
 

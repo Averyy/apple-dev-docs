@@ -1,14 +1,15 @@
 # uuid_unparse_lower
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void uuid_unparse_lower(const uuid_t uu, uuid_string_t out);
 ```
 

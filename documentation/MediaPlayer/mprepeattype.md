@@ -1,7 +1,8 @@
 # MPRepeatType
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates which items to play repeatedly.
 
@@ -10,7 +11,7 @@ Indicates which items to play repeatedly.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,45 +21,50 @@ Indicates which items to play repeatedly.
 enum MPRepeatType
 ```
 
+```c
+enum MPRepeatType : NSInteger;
+```
+
 ## Topics
 
 ### Repeat types
-- [MPRepeatType.off](mprepeattype/off.md)
+- [MPRepeatType.off](./mprepeattype/off.md)
   Nothing is repeated during playback.
-- [MPRepeatType.one](mprepeattype/one.md)
+- [MPRepeatType.one](./mprepeattype/one.md)
   A single item is repeated indefinitely.
-- [MPRepeatType.all](mprepeattype/all.md)
+- [MPRepeatType.all](./mprepeattype/all.md)
   The current container or playlist is repeated indefinitely.
 ### Initializers
-- [init?(rawValue: Int)](mprepeattype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mprepeattype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MPChangePlaybackRateCommand](mpchangeplaybackratecommand.md)
+### Responding to changes to media playback mode events
+- [class MPChangePlaybackRateCommand](./mpchangeplaybackratecommand.md)
   An object that responds to requests to change the playback rate of the playing item.
-- [class MPChangePlaybackRateCommandEvent](mpchangeplaybackratecommandevent.md)
+- [class MPChangePlaybackRateCommandEvent](./mpchangeplaybackratecommandevent.md)
   An event requesting a change in the playback rate.
-- [class MPChangeLanguageOptionCommandEvent](mpchangelanguageoptioncommandevent.md)
+- [class MPChangeLanguageOptionCommandEvent](./mpchangelanguageoptioncommandevent.md)
   An event requesting a change in the language option.
-- [class MPChangeRepeatModeCommand](mpchangerepeatmodecommand.md)
+- [class MPChangeRepeatModeCommand](./mpchangerepeatmodecommand.md)
   An object that responds to requests to change the current repeat mode used during playback.
-- [class MPChangeRepeatModeCommandEvent](mpchangerepeatmodecommandevent.md)
+- [class MPChangeRepeatModeCommandEvent](./mpchangerepeatmodecommandevent.md)
   An event requesting a change in the repeat mode.
-- [class MPChangeShuffleModeCommand](mpchangeshufflemodecommand.md)
+- [class MPChangeShuffleModeCommand](./mpchangeshufflemodecommand.md)
   An object that responds to requests to change the current shuffle mode used during playback.
-- [class MPChangeShuffleModeCommandEvent](mpchangeshufflemodecommandevent.md)
+- [class MPChangeShuffleModeCommandEvent](./mpchangeshufflemodecommandevent.md)
   An event requesting a change in the shuffle mode.
-- [enum MPShuffleType](mpshuffletype.md)
+- [enum MPShuffleType](./mpshuffletype.md)
   Indicates which item types to shuffle.
 
 

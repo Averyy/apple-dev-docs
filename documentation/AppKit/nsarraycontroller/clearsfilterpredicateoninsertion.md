@@ -1,12 +1,13 @@
 # clearsFilterPredicateOnInsertion
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver automatically clears an existing filter predicate when new items are inserted or added to the content
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether the receiver automatically clears an exis
 var clearsFilterPredicateOnInsertion: Bool { get set }
 ```
 
+```objc
+@property BOOL clearsFilterPredicateOnInsertion;
+```
+
 #### Discussion
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true). This property is observable using key-value observing.
+The default is [`true`](../../Swift/true.md). This property is observable using key-value observing.
 
 ## See Also
 
-- [var filterPredicate: NSPredicate?](nsarraycontroller/filterpredicate.md)
+### Filtering Content
+- [var filterPredicate: NSPredicate?](./filterpredicate.md)
   A predicate used by the receiver to filter the array controller contents
 
 

@@ -1,7 +1,8 @@
 # charactersEqual(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Whether this span has the same `Character`s as `other`.
 
@@ -22,7 +23,7 @@ func charactersEqual(to other: some Sequence<Character>) -> Bool
 
 #### Discussion
 
-> **Note**: O(n)
+> **Complexity**: O(n)
 
 
 ---

@@ -1,7 +1,8 @@
 # clearTransformOperations()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all transform operations from the prim’s transform stack.
 

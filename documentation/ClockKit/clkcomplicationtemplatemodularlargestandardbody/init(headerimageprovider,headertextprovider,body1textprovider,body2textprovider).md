@@ -1,12 +1,13 @@
 # init(headerImageProvider:headerTextProvider:body1TextProvider:body2TextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template that has a header row with an image and text, and two rows of body text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -14,20 +15,25 @@ Creates a new template that has a header row with an image and text, and two row
 init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, body2TextProvider: CLKTextProvider?)
 ```
 
+```objc
+- (instancetype) initWithHeaderImageProvider:(CLKImageProvider *) headerImageProvider headerTextProvider:(CLKTextProvider *) headerTextProvider body1TextProvider:(CLKTextProvider *) body1TextProvider body2TextProvider:(CLKTextProvider *) body2TextProvider;
+```
+
 ## Parameters
 
-- `headerImageProvider`: An image provider for the header. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see [`Providing images for different appearances`](https://developer.apple.com/documentation/uikit/providing-images-for-different-appearances).
+- `headerImageProvider`: An image provider for the header. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see [Providing images for different appearances](../../UIKit/providing-images-for-different-appearances.md).
 - `headerTextProvider`: The text provider for the header. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 - `body1TextProvider`: The text provider for the first row of body text. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 - `body2TextProvider`: The text provider for the second row of body text. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 
 ## See Also
 
-- [init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider)](clkcomplicationtemplatemodularlargestandardbody/init(headertextprovider:body1textprovider:).md)
+### Creating the Template
+- [init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider)](./init%28headertextprovider,body1textprovider%29.md)
   Creates a new template that has a row of header text and a row of body text.
-- [init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, body2TextProvider: CLKTextProvider?)](clkcomplicationtemplatemodularlargestandardbody/init(headertextprovider:body1textprovider:body2textprovider:).md)
+- [init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, body2TextProvider: CLKTextProvider?)](./init%28headertextprovider,body1textprovider,body2textprovider%29.md)
   Creates a new template that has a row of header text and two rows of body text.
-- [init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider)](clkcomplicationtemplatemodularlargestandardbody/init(headerimageprovider:headertextprovider:body1textprovider:).md)
+- [init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider)](./init%28headerimageprovider,headertextprovider,body1textprovider%29.md)
   Creates a new template that has a header row with an image and text, and a row of body text.
 
 

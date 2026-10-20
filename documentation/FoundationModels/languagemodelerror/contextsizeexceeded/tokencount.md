@@ -1,7 +1,8 @@
 # tokenCount
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of tokens in the transcript that exceeded the model’s context size.
 
@@ -21,11 +22,12 @@ var tokenCount: Int
 
 ## See Also
 
-- [var metadata: [String : any Sendable]](languagemodelerror/contextsizeexceeded/metadata.md)
+### Inspecting context size errors
+- [var metadata: [String : any Sendable]](./metadata.md)
   Additional information about the failure, keyed by name.
-- [var contextSize: Int](languagemodelerror/contextsizeexceeded/contextsize.md)
+- [var contextSize: Int](./contextsize.md)
   The model’s maximum context size, in tokens.
-- [var debugDescription: String](languagemodelerror/contextsizeexceeded/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

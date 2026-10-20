@@ -1,18 +1,19 @@
 # sf_getsockname_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef int (*sf_getsockname_func)(void *cookie, socket_t so, struct sockaddr **sa);
 ```
 
-#### Return_value
+#### Return Value
 
 If you return a non-zero value, processing will stop. If you return EJUSTRETURN, no further filters will be called but a result of zero will be returned to the caller of getsockname.
 

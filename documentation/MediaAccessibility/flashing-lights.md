@@ -1,6 +1,7 @@
 # Flashing lights
 
-**Framework**: Media Accessibility
+**Framework**: Media Accessibility  
+**Role**: API Collection
 
 Detect, mitigate, and inform people about flashing lights in media content.
 
@@ -8,7 +9,7 @@ Detect, mitigate, and inform people about flashing lights in media content.
 
 People might want to avoid bright, frequent flashes of light in the media they consume. The Dim Flashing Lights setting allows the system to calculate, mitigate, and inform people about flashing lights in a piece of media.
 
-In your app, respond to changes in the Dim Flashing Lights setting to create an enjoyable media-viewing experience for people who choose to reduce flashing lights on their devices. To respond to changes in this setting, register for the notification [`kMADimFlashingLightsChangedNotification`](kmadimflashinglightschangednotification.md).
+In your app, respond to changes in the Dim Flashing Lights setting to create an enjoyable media-viewing experience for people who choose to reduce flashing lights on their devices. To respond to changes in this setting, register for the notification [`kMADimFlashingLightsChangedNotification`](./kmadimflashinglightschangednotification.md).
 
 ```swift
 import MediaAccessibility
@@ -25,7 +26,7 @@ When the Dim Flashing Lights setting changes, update your UI accordingly. For ex
 - If you have separate media assets for content without flashing lights, play the content without flashing lights and inform the viewer when the content starts.
 - If you have an animation sequence with flashing lights in a game or app that you can control programmatically, adjust the animation accordingly.
 
-Check the value of the Dim Flashing Lights setting at any time by using [`MADimFlashingLightsEnabled()`](madimflashinglightsenabled().md).
+Check the value of the Dim Flashing Lights setting at any time by using [`MADimFlashingLightsEnabled()`](./madimflashinglightsenabled%28%29.md).
 
 ```swift
 @objc 
@@ -41,20 +42,21 @@ func dimFlashingLightsChanged(_ notification: Notification) {
 ## Topics
 
 ### Dim flashing lights
-- [Responding to changes in the flashing lights setting](responding-to-changes-in-the-flashing-lights-setting.md)
+- [Responding to changes in the flashing lights setting](./responding-to-changes-in-the-flashing-lights-setting.md)
   Adjust your UI when a person chooses to dim flashing lights on their Apple device.
-- [func MADimFlashingLightsEnabled() -> Bool](madimflashinglightsenabled().md)
+- [func MADimFlashingLightsEnabled() -> Bool](./madimflashinglightsenabled%28%29.md)
   Returns a Boolean value that indicates whether the flashing lights setting is enabled on the device.
-- [let kMADimFlashingLightsChangedNotification: CFString](kmadimflashinglightschangednotification.md)
+- [let kMADimFlashingLightsChangedNotification: CFString](./kmadimflashinglightschangednotification.md)
   A notification that posts when a person changes the flashing lights setting on the device.
-- [class MAFlashingLightsProcessor](maflashinglightsprocessor.md)
+- [class MAFlashingLightsProcessor](./maflashinglightsprocessor.md)
   A class that processes a framebuffer object to detect and dim sequences of flashing lights.
 
 ## See Also
 
-- [Captions](captions.md)
+### Features
+- [Captions](./captions.md)
   Coordinate the presentation of closed-captioned data for your app’s media files.
-- [Music Haptics](music-haptics.md)
+- [Music Haptics](./music-haptics.md)
   Play haptic tracks along with known music tracks.
 
 

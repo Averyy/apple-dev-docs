@@ -1,14 +1,15 @@
 # STACKSHOT_GET_KERNEL_MICROSTACKSHOT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_GET_KERNEL_MICROSTACKSHOT
 ```
 

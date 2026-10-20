@@ -1,18 +1,19 @@
 # CFMessagePortContext
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains program-defined data and callbacks with which you can configure a CFMessagePort object’s behavior.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,27 +21,31 @@ A structure that contains program-defined data and callbacks with which you can 
 struct CFMessagePortContext
 ```
 
+```c
+typedef struct { ... } CFMessagePortContext;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cfmessageportcontext/init.md)
-- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!, release: ((UnsafeRawPointer?) -> Void)!, copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!)](cfmessageportcontext/init(version:info:retain:release:copydescription:).md)
+- [init()](./cfmessageportcontext/init%28%29.md)
+- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!, release: ((UnsafeRawPointer?) -> Void)!, copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!)](./cfmessageportcontext/init%28version,info,retain,release,copydescription%29.md)
 ### Instance Properties
-- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](cfmessageportcontext/copydescription.md)
+- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](./cfmessageportcontext/copydescription.md)
   A copy description callback for your program-defined `info` pointer. Can be `NULL`.
-- [var info: UnsafeMutableRawPointer!](cfmessageportcontext/info.md)
+- [var info: UnsafeMutableRawPointer!](./cfmessageportcontext/info.md)
   An arbitrary pointer to program-defined data, which can be associated with the message port at creation time. This pointer is passed to all the callbacks defined in the context.
-- [var release: ((UnsafeRawPointer?) -> Void)!](cfmessageportcontext/release.md)
+- [var release: ((UnsafeRawPointer?) -> Void)!](./cfmessageportcontext/release.md)
   A release callback for your program-defined `info` pointer. Can be `NULL`.
-- [var retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!](cfmessageportcontext/retain.md)
+- [var retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!](./cfmessageportcontext/retain.md)
   A retain callback for your program-defined `info` pointer. Can be `NULL`.
-- [var version: CFIndex](cfmessageportcontext/version.md)
+- [var version: CFIndex](./cfmessageportcontext/version.md)
   Version number of the structure. Must be `0`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

@@ -1,23 +1,28 @@
 # retain
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Callback function used to retain a value being added to a binary heap.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var retain: ((CFAllocator?, UnsafeRawPointer?) -> UnsafeRawPointer?)!
+```
+
+```c
+const void *(*)(const struct __CFAllocator *, const void *) retain;
 ```
 
 #### Return Value
@@ -35,15 +40,16 @@ The callback used to add a retain for the binary heap on values as they are put 
 
 ## See Also
 
-- [typealias CFBinaryHeapApplierFunction](cfbinaryheapapplierfunction.md)
+### Callbacks
+- [typealias CFBinaryHeapApplierFunction](../cfbinaryheapapplierfunction.md)
   Callback function used to apply a function to all members of a binary heap.
-- [var compare: ((UnsafeRawPointer?, UnsafeRawPointer?, UnsafeMutableRawPointer?) -> CFComparisonResult)!](cfbinaryheapcallbacks/compare.md)
+- [var compare: ((UnsafeRawPointer?, UnsafeRawPointer?, UnsafeMutableRawPointer?) -> CFComparisonResult)!](./compare.md)
   The callback used to compare values in the binary heap in some operations. This field cannot be `NULL`.
-- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](cfbinaryheapcallbacks/copydescription.md)
+- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](./copydescription.md)
   Callback function used to get a description of a value in a binary heap.
-- [var release: ((CFAllocator?, UnsafeRawPointer?) -> Void)!](cfbinaryheapcallbacks/release.md)
+- [var release: ((CFAllocator?, UnsafeRawPointer?) -> Void)!](./release.md)
   Callback function used to release a value before it is removed from a binary heap.
-- [var version: CFIndex](cfbinaryheapcallbacks/version.md)
+- [var version: CFIndex](./version.md)
   The version number of the structure type being passed in as a parameter to the `CFBinaryHeap` creation functions. This structure is version `0`.
 
 

@@ -1,7 +1,8 @@
 # size
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The logical size of the disk image in bytes.
 
@@ -16,7 +17,7 @@ var size: Int { get }
 
 #### Discussion
 
-This is equivalent to [`blockCount`](diskimage/blockcount.md) × [`blockSize`](diskimage/blocksize-swift.property.md).
+This is equivalent to [`blockCount`](./blockcount.md) × [`blockSize`](./blocksize-swift.property.md).
 
 
 ---

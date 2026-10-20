@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var uuid: UUID { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUUID * UUID;
 ```
 
 

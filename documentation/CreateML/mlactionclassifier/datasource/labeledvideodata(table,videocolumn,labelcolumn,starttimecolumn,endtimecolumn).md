@@ -1,12 +1,13 @@
 # MLActionClassifier.DataSource.labeledVideoData(table:videoColumn:labelColumn:startTimeColumn:endTimeColumn:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A data table that contains the locations of the video files and the action annotations.
 
 **Availability**:
-- macOS 11.0+
+- macOS 11.0+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -24,11 +25,12 @@ case labeledVideoData(table: MLDataTable, videoColumn: String = __Defaults.video
 
 ## See Also
 
-- [MLActionClassifier.DataSource.labeledDirectories(at:)](mlactionclassifier/datasource/labeleddirectories(at:).md)
+### Creating a data source
+- [MLActionClassifier.DataSource.labeledDirectories(at:)](./labeleddirectories%28at%29.md)
   The location of a folder with subfolders each of which contain sample videos of an action.
-- [MLActionClassifier.DataSource.labeledFiles(at:)](mlactionclassifier/datasource/labeledfiles(at:).md)
+- [MLActionClassifier.DataSource.labeledFiles(at:)](./labeledfiles%28at%29.md)
   The location of a folder that contains video files whose names you use to label corresponding actions.
-- [case directoryWithVideosAndAnnotation(at: URL, annotationFile: URL, videoColumn: String, labelColumn: String, startTimeColumn: String?, endTimeColumn: String?)](mlactionclassifier/datasource/directorywithvideosandannotation(at:annotationfile:videocolumn:labelcolumn:starttimecolumn:endtimecolumn:).md)
+- [case directoryWithVideosAndAnnotation(at: URL, annotationFile: URL, videoColumn: String, labelColumn: String, startTimeColumn: String?, endTimeColumn: String?)](./directorywithvideosandannotation%28at,annotationfile,videocolumn,labelcolumn,starttimecolumn,endtimecolumn%29.md)
   The location of a directory of video files, and the location of an action annotation file.
 
 

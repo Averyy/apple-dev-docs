@@ -1,7 +1,8 @@
 # preferringHierarchical()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a configuration that specifies that the symbol should prefer its hierarchical variant, if one exists.
 
@@ -14,13 +15,18 @@ Creates a configuration that specifies that the symbol should prefer its hierarc
 class func preferringHierarchical() -> Self
 ```
 
+```objc
++ (instancetype) configurationPreferringHierarchical;
+```
+
 #### Discussion
 
 If the symbol doesn’t support hierarchical, the result will be a monochrome (templated) symbol.
 
 ## See Also
 
-- [class func preferringMonochrome() -> Self](nsimage/symbolconfiguration-swift.class/preferringmonochrome.md)
+### Type Methods
+- [class func preferringMonochrome() -> Self](./preferringmonochrome%28%29.md)
   Creates a configuration that specifies that the symbol should prefer its monochrome variant.
 
 

@@ -1,7 +1,8 @@
 # entrySpelling
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The spelling of an entry. An `NSString`.
 
@@ -14,17 +15,22 @@ The spelling of an entry. An `NSString`.
 static let entrySpelling: NSSpeechSynthesizer.DictionaryKey
 ```
 
+```c
+extern NSSpeechDictionaryKey const NSSpeechDictionaryEntrySpelling;
+```
+
 ## See Also
 
-- [static let abbreviations: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/abbreviations.md)
+### Type Properties
+- [static let abbreviations: NSSpeechSynthesizer.DictionaryKey](./abbreviations.md)
   An array of dictionary objects containing the keys `NSSpeechDictionaryEntrySpelling` and `NSSpeechDictionaryEntryPhonemes`.
-- [static let entryPhonemes: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/entryphonemes.md)
+- [static let entryPhonemes: NSSpeechSynthesizer.DictionaryKey](./entryphonemes.md)
   The phonemic representation of an entry. An `NSString`.
-- [static let localeIdentifier: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/localeidentifier.md)
+- [static let localeIdentifier: NSSpeechSynthesizer.DictionaryKey](./localeidentifier.md)
   The canonical locale identifier string describing the dictionary’s locale.
-- [static let modificationDate: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/modificationdate.md)
+- [static let modificationDate: NSSpeechSynthesizer.DictionaryKey](./modificationdate.md)
   A string representation of the dictionary’s last modification date in the international format (YYYY-MM-DD HH:MM:SS ±HHMM). If the same word appears across multiple dictionaries, the one from the dictionary with the most recent date will be used.
-- [static let pronunciations: NSSpeechSynthesizer.DictionaryKey](nsspeechsynthesizer/dictionarykey/pronunciations.md)
+- [static let pronunciations: NSSpeechSynthesizer.DictionaryKey](./pronunciations.md)
   An array of dictionary objects containing the keys `NSSpeechDictionaryEntrySpelling` and `NSSpeechDictionaryEntryPhonemes`.
 
 

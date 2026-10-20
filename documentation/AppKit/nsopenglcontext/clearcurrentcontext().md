@@ -1,12 +1,15 @@
 # clearCurrentContext()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Clears the current context.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use Metal or MetalKit.
 
 ## Declaration
 
@@ -14,15 +17,20 @@ Clears the current context.
 class func clearCurrentContext()
 ```
 
+```objc
++ (void) clearCurrentContext;
+```
+
 #### Discussion
 
-Until you issue a subsequent call to the [`makeCurrentContext()`](nsopenglcontext/makecurrentcontext().md) method, OpenGL calls do nothing.
+Until you issue a subsequent call to the [`makeCurrentContext()`](./makecurrentcontext%28%29.md) method, OpenGL calls do nothing.
 
 ## See Also
 
-- [class var current: NSOpenGLContext?](nsopenglcontext/current.md)
+### Managing the Current Context
+- [class var current: NSOpenGLContext?](./current.md)
   Returns the current OpenGL graphics context.
-- [func makeCurrentContext()](nsopenglcontext/makecurrentcontext.md)
+- [func makeCurrentContext()](./makecurrentcontext%28%29.md)
   Sets the context as the current OpenGL context object.
 
 

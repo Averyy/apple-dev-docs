@@ -1,6 +1,8 @@
 # Organize Your User Interface with a Stack View
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Sample Code  
+**Download**: [OrganizeYourUserInterfaceWithAStackView.zip](https://docs-assets.developer.apple.com/published/43c5be08bfb5/OrganizeYourUserInterfaceWithAStackView.zip)
 
 Group individual views in your app’s user interface into a scrollable stack view.
 
@@ -10,7 +12,7 @@ Group individual views in your app’s user interface into a scrollable stack vi
 
 #### Overview
 
-[`NSStackView`](nsstackview.md) simplifies the process of stacking arbitrary views together in one place. You embed a stack view inside an `NSScrollView` object, making the stack’s content scrollable when the user resizes the window. This sample shows how to use `NSStackView` with each individual view either disclosed (expanded) or hidden (collapsed).
+[`NSStackView`](./nsstackview.md) simplifies the process of stacking arbitrary views together in one place. You embed a stack view inside an `NSScrollView` object, making the stack’s content scrollable when the user resizes the window. This sample shows how to use `NSStackView` with each individual view either disclosed (expanded) or hidden (collapsed).
 
 The sample’s architecture uses the following protocols:
 
@@ -40,7 +42,7 @@ This design simplifies adding stack items as view controllers. When you adopt th
 
 The following illustration shows an example stack view:
 
-![Illustration showing a stack view with four stack item containers. The one on top is expanded and shows the stack item header and stack item body. The bottom three stack item containers are collapsed.](/images/com.apple.appkit/infobarstackview-diagram@2x.png)
+![Illustration showing a stack view with four stack item containers. The one on top is expanded and shows the stack item header and stack item body. The bottom three stack item containers are collapsed.](https://developer.apple.com/tutorials/images/com.apple.appkit/infobarstackview-diagram@2x.png)
 
 ##### Configure the Sample Code Project
 
@@ -56,7 +58,7 @@ Each stack item’s header and body view controllers are loaded from a storyboar
 
 ##### Restore the User Interface
 
-To restore the stack view’s window on relaunch, use the [`NSWindowRestoration`](nswindowrestoration.md) protocol. The disclosure states of all stack view containers are also restored. Each body view controller saves and restores various parts of its user interface.
+To restore the stack view’s window on relaunch, use the [`NSWindowRestoration`](./nswindowrestoration.md) protocol. The disclosure states of all stack view containers are also restored. Each body view controller saves and restores various parts of its user interface.
 
 To restore the states of stack view items, add the `NSRestorableState` to each item’s view controller:
 
@@ -91,23 +93,24 @@ This sample provides two disclosure options:
 - A triangle
 - A rounded button
 
-The sample project conditionally decides which type of header disclosure control to use by referencing the `DisclosureTriangleAppearance` compilation flag. This flag is predefined in the “Active Compilation Conditions” build settings for passing conditional compilation flags to the Swift compiler. For more about configuring Xcode build settings, see [`Xcode Help`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev04b3a04ba).
+The sample project conditionally decides which type of header disclosure control to use by referencing the `DisclosureTriangleAppearance` compilation flag. This flag is predefined in the “Active Compilation Conditions” build settings for passing conditional compilation flags to the Swift compiler. For more about configuring Xcode build settings, see [Xcode Help](https://help.apple.com/xcode/mac/current/#/dev04b3a04ba).
 
 If a disclosure appearance is defined, each section in the stack view gets the `NSButton` disclosure style (a triangle). If you prefer the `roundedDisclosure` style (a rounded button with up and down arrows), remove the compilation flag from the Xcode target’s build settings.
 
 ## See Also
 
-- [Localization-friendly layouts in macOS](../xcode/localization-friendly-layouts-in-macos.md)
+### Container views
+- [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
   This project demonstrates localization-friendly auto layout constraints.
-- [Grid View](grid-view.md)
+- [Grid View](./grid-view.md)
   Arrange views in a flexible grid, and handle the layout associated with those views.
-- [class NSSplitView](nssplitview.md)
+- [class NSSplitView](./nssplitview.md)
   A view that arranges two or more views in a linear stack running horizontally or vertically.
-- [class NSStackView](nsstackview.md)
+- [class NSStackView](./nsstackview.md)
   A view that arranges an array of views horizontally or vertically and updates their placement and sizing when the window size changes.
-- [class NSTabView](nstabview.md)
+- [class NSTabView](./nstabview.md)
   A multipage interface that displays one page at a time.
-- [Scroll View](scroll-view.md)
+- [Scroll View](./scroll-view.md)
   Provide an interface for navigating content that is too large to fit in the available space.
 
 

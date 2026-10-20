@@ -1,7 +1,8 @@
 # distance(from:to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance between two indices.
 
@@ -20,6 +21,8 @@ Returns the distance between two indices.
 func distance(from start: DefaultIndices<Elements>.Index, to end: DefaultIndices<Elements>.Index) -> Int
 ```
 
+Available when `Elements` conforms to `Collection`.
+
 #### Return Value
 
 The distance between `start` and `end`. The result can be negative only if the collection conforms to the `BidirectionalCollection` protocol.
@@ -28,7 +31,7 @@ The distance between `start` and `end`. The result can be negative only if the c
 
 Unless the collection conforms to the `BidirectionalCollection` protocol, `start` must be less than or equal to `end`.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the resulting distance.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the resulting distance.
 
 ## Parameters
 

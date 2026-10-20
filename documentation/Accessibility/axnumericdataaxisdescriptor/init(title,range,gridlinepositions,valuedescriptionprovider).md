@@ -1,7 +1,8 @@
 # init(title:range:gridlinePositions:valueDescriptionProvider:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a numeric data axis with the specified title, range, gridline positions, and value description provider closure.
 
@@ -22,7 +23,8 @@ convenience init(title: String, range: ClosedRange<Double>, gridlinePositions: [
 
 ## See Also
 
-- [convenience init(attributedTitle: NSAttributedString, range: ClosedRange<Double>, gridlinePositions: [Double], valueDescriptionProvider: (Double) -> String)](axnumericdataaxisdescriptor/init(attributedtitle:range:gridlinepositions:valuedescriptionprovider:).md)
+### Creating a numeric data axis
+- [convenience init(attributedTitle: NSAttributedString, range: ClosedRange<Double>, gridlinePositions: [Double], valueDescriptionProvider: (Double) -> String)](./init%28attributedtitle,range,gridlinepositions,valuedescriptionprovider%29.md)
   Creates a numeric data axis with the specified attributed title, range, gridline positions, and value description provider closure.
 
 

@@ -1,17 +1,22 @@
 # OBEXPutCommandData
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Part of the OBEXSessionEvent structure.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 struct OBEXPutCommandData
+```
+
+```c
+struct OBEXPutCommandData;
 ```
 
 #### Overview
@@ -21,44 +26,45 @@ Is readable when the event is of type kOBEXSessionEventTypePutCommandReceived (s
 ## Topics
 
 ### Initializers
-- [init()](obexputcommanddata/init.md)
-- [init(headerDataPtr: UnsafeMutableRawPointer!, headerDataLength: Int, bodyDataLeftToSend: Int)](obexputcommanddata/init(headerdataptr:headerdatalength:bodydatalefttosend:).md)
+- [init()](./obexputcommanddata/init%28%29.md)
+- [init(headerDataPtr: UnsafeMutableRawPointer!, headerDataLength: Int, bodyDataLeftToSend: Int)](./obexputcommanddata/init%28headerdataptr,headerdatalength,bodydatalefttosend%29.md)
 ### Instance Properties
-- [var bodyDataLeftToSend: Int](obexputcommanddata/bodydatalefttosend.md)
-- [var headerDataLength: Int](obexputcommanddata/headerdatalength.md)
-- [var headerDataPtr: UnsafeMutableRawPointer!](obexputcommanddata/headerdataptr.md)
+- [var bodyDataLeftToSend: Int](./obexputcommanddata/bodydatalefttosend.md)
+- [var headerDataLength: Int](./obexputcommanddata/headerdatalength.md)
+- [var headerDataPtr: UnsafeMutableRawPointer!](./obexputcommanddata/headerdataptr.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct OBEXSessionEvent](obexsessionevent.md)
-- [struct OBEXAbortCommandData](obexabortcommanddata.md)
+### Data Types
+- [struct OBEXSessionEvent](./obexsessionevent.md)
+- [struct OBEXAbortCommandData](./obexabortcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXAbortCommandResponseData](obexabortcommandresponsedata.md)
+- [struct OBEXAbortCommandResponseData](./obexabortcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXConnectCommandData](obexconnectcommanddata.md)
+- [struct OBEXConnectCommandData](./obexconnectcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXConnectCommandResponseData](obexconnectcommandresponsedata.md)
+- [struct OBEXConnectCommandResponseData](./obexconnectcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXDisconnectCommandData](obexdisconnectcommanddata.md)
+- [struct OBEXDisconnectCommandData](./obexdisconnectcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXDisconnectCommandResponseData](obexdisconnectcommandresponsedata.md)
+- [struct OBEXDisconnectCommandResponseData](./obexdisconnectcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXErrorData](obexerrordata.md)
+- [struct OBEXErrorData](./obexerrordata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXGetCommandData](obexgetcommanddata.md)
+- [struct OBEXGetCommandData](./obexgetcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXGetCommandResponseData](obexgetcommandresponsedata.md)
+- [struct OBEXGetCommandResponseData](./obexgetcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXPutCommandResponseData](obexputcommandresponsedata.md)
+- [struct OBEXPutCommandResponseData](./obexputcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXSetPathCommandData](obexsetpathcommanddata.md)
+- [struct OBEXSetPathCommandData](./obexsetpathcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXSetPathCommandResponseData](obexsetpathcommandresponsedata.md)
+- [struct OBEXSetPathCommandResponseData](./obexsetpathcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
 
 

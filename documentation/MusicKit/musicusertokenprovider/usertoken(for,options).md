@@ -1,7 +1,8 @@
 # userToken(for:options:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches and returns a user token for Apple Music API.
 

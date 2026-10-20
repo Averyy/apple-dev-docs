@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a URL action with the specified URL.
 
@@ -17,6 +18,10 @@ Initializes a URL action with the specified URL.
 
 ```swift
 init(url: URL)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # /=(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Modifies an integer column by dividing each element by a value.
 
@@ -27,13 +28,14 @@ static func /= (lhs: inout Column<WrappedElement>, rhs: WrappedElement) where Wr
 
 ## See Also
 
-- [static func += (inout Column<WrappedElement>, WrappedElement)](column/+=(_:_:)-94q8g.md)
+### Modifying a Column with a Value
+- [static func += (inout Column<WrappedElement>, WrappedElement)](./pluseq%28_,_%29-94q8g.md)
   Modifies a column by adding a value to each element.
-- [static func -= (inout Column<WrappedElement>, WrappedElement)](column/-=(_:_:)-8arlr.md)
+- [static func -= (inout Column<WrappedElement>, WrappedElement)](./minuseq%28_,_%29-8arlr.md)
   Modifies a column by subtracting a value from each element.
-- [static func *= (inout Column<WrappedElement>, WrappedElement)](column/*=(_:_:)-4rraw.md)
+- [static func *= (inout Column<WrappedElement>, WrappedElement)](./stareq%28_,_%29-4rraw.md)
   Modifies a column by multiplying each element by a value.
-- [static func /= (inout Column<WrappedElement>, WrappedElement)](column/_=(_:_:)-3hfr5.md)
+- [static func /= (inout Column<WrappedElement>, WrappedElement)](./opeq%28_,_%29-3hfr5.md)
   Modifies a floating-point column by dividing each element by a value.
 
 

@@ -1,7 +1,8 @@
 # dateCheckingResult(range:date:timeZone:duration:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified date, time zone, and duration.
 
@@ -20,9 +21,13 @@ Creates and returns a text checking result with the specified date, time zone, a
 class func dateCheckingResult(range: NSRange, date: Date, timeZone: TimeZone, duration: TimeInterval) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) dateCheckingResultWithRange:(NSRange) range date:(NSDate *) date timeZone:(NSTimeZone *) timeZone duration:(NSTimeInterval) duration;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`date`](nstextcheckingresult/checkingtype/date.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`date`](./checkingtype/date.md).
 
 ## Parameters
 
@@ -33,13 +38,14 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [class func dateCheckingResult(range: NSRange, date: Date) -> NSTextCheckingResult](nstextcheckingresult/datecheckingresult(range:date:).md)
+### Text Checking Results for Dates and Times
+- [class func dateCheckingResult(range: NSRange, date: Date) -> NSTextCheckingResult](./datecheckingresult%28range,date%29.md)
   Creates and returns a text checking result with the specified date.
-- [var date: Date?](nstextcheckingresult/date.md)
+- [var date: Date?](./date.md)
   The date component of a type checking result.
-- [var duration: TimeInterval](nstextcheckingresult/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration component of a type checking result.
-- [var timeZone: TimeZone?](nstextcheckingresult/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone component of a type checking result.
 
 

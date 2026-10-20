@@ -1,7 +1,8 @@
 # replace(withDrawables:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dynamically replaces the texture with a drawable queue.
 
@@ -11,7 +12,7 @@ Dynamically replaces the texture with a drawable queue.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ Dynamically replaces the texture with a drawable queue.
 
 ## See Also
 
-- [func replace(withImage: CGImage, options: TextureResource.CreateOptions) throws](textureresource/replace(withimage:options:).md)
+### Modifying the texture
+- [func replace(withImage: CGImage, options: TextureResource.CreateOptions) throws](./replace%28withimage,options%29.md)
   Dynamically replaces the texture with a Core Graphics image.
-- [func replace(using: CGImage, options: TextureResource.CreateOptions) async throws](textureresource/replace(using:options:).md)
+- [func replace(using: CGImage, options: TextureResource.CreateOptions) async throws](./replace%28using,options%29.md)
   Asynchronously replaces the texture with a Core Graphics image.
-- [func replace(with: LowLevelTexture)](textureresource/replace(with:).md)
+- [func replace(with: LowLevelTexture)](./replace%28with%29.md)
   Replaces a texture resource with a low-level texture.
 
 

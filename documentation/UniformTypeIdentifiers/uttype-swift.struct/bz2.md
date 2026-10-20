@@ -1,7 +1,8 @@
 # bz2
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a bzip2 archive.
 
@@ -24,17 +25,18 @@ static var bz2: UTType { get }
 
 The identifier for this type is `public.bzip2-archive`.
 
-This type conforms to [`UTTypeData`](uttypedata.md) and [`UTTypeArchive`](uttypearchive.md).
+This type conforms to [`UTTypeData`](../uttypedata.md) and [`UTTypeArchive`](../uttypearchive.md).
 
 ## See Also
 
-- [static var archive: UTType](uttype-swift.struct/archive.md)
+### Compressed archives
+- [static var archive: UTType](./archive.md)
   A base type that represents an archive of files and directories.
-- [static var zip: UTType](uttype-swift.struct/zip.md)
+- [static var zip: UTType](./zip.md)
   A type that represents a zip archive.
-- [static var gzip: UTType](uttype-swift.struct/gzip.md)
+- [static var gzip: UTType](./gzip.md)
   A type that represents a GNU zip archive.
-- [static var appleArchive: UTType](uttype-swift.struct/applearchive.md)
+- [static var appleArchive: UTType](./applearchive.md)
   A type that represents an Apple archive of files and directories.
 
 

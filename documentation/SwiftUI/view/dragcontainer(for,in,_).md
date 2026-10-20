@@ -1,7 +1,8 @@
 # dragContainer(for:in:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A container with draggable views where the drag payload is based on multiple identifiers of dragged items.
 
@@ -19,9 +20,16 @@ nonisolated
 func dragContainer<Item, Data>(for itemType: Item.Type = Item.self, in namespace: Namespace.ID? = nil, _ payload: @escaping (Array<Item.ID>) -> Data) -> some View where Item : Transferable, Item : Identifiable, Item == Data.Element, Data : Collection, Item.ID : Sendable
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func dragContainer<Item, Data>(for itemType: Item.Type = Item.self, in namespace: Namespace.ID? = nil, _ payload: @escaping (Item.ID) -> Data) -> some View where Item : Transferable, Item : Identifiable, Item == Data.Element, Data : Collection, Item.ID : Sendable
+```
+
 ## Mentions
 
-- [Reordering items in lists, stacks, grids, and custom layouts](reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
+- [Reordering items in lists, stacks, grids, and custom layouts](../reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 
 #### Return Value
 
@@ -55,7 +63,7 @@ func fruits(with ids: [UUID]) -> [Fruit] { ... }
 struct Fruit: Transferable, Identifiable { ... }
 ```
 
-To enable multi-item drag, apply this modifier to a container view and mark each draggable child with [`draggable(_:)`](view/draggable(_:).md) or [`draggable(containerItemID:containerNamespace:)`](view/draggable(containeritemid:containernamespace:).md).
+To enable multi-item drag, apply this modifier to a container view and mark each draggable child with [`draggable(_:)`](./draggable%28_%29.md) or [`draggable(containerItemID:containerNamespace:)`](./draggable%28containeritemid,containernamespace%29.md).
 
 ## Parameters
 
@@ -65,17 +73,18 @@ To enable multi-item drag, apply this modifier to a container view and mark each
 
 ## See Also
 
-- [func dragConfiguration(DragConfiguration) -> some View](view/dragconfiguration(_:).md)
+### Configuring drag-and-drop behavior
+- [func dragConfiguration(DragConfiguration) -> some View](./dragconfiguration%28_%29.md)
   Configures a drag session.
-- [struct DragConfiguration](dragconfiguration.md)
+- [struct DragConfiguration](../dragconfiguration.md)
   The behavior of the drag, proposed by the dragging source. A value that describes the drag operations a drag source supports.
-- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](view/dropconfiguration(_:).md)
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](./dropconfiguration%28_%29.md)
   Configures a drop session.
-- [struct DropConfiguration](dropconfiguration.md)
+- [struct DropConfiguration](../dropconfiguration.md)
   Describes the behavior of the drop.
-- [func dragContainer(for:itemID:in:_:)](view/dragcontainer(for:itemid:in:_:).md)
+- [func dragContainer(for:itemID:in:_:)](./dragcontainer%28for,itemid,in,_%29.md)
   A container with draggable views.
-- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](view/dragcontainerselection(_:containernamespace:).md)
+- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](./dragcontainerselection%28_,containernamespace%29.md)
   Provides multiple item selection support for drag containers.
 
 

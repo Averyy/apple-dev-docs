@@ -1,7 +1,8 @@
 # init(eulerAngles:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(eulerAngles: EulerAnglesFloat)
+```
+
+```c
+static SPRotation3DFloat SPRotation3DFloatMakeWithEulerAngles(SPEulerAnglesFloat eulerAngles);
 ```
 
 #### Return Value

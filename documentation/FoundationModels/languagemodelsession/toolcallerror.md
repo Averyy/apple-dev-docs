@@ -1,7 +1,8 @@
 # LanguageModelSession.ToolCallError
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that occurs while a language model is calling a tool.
 
@@ -20,38 +21,39 @@ struct ToolCallError
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+- [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
 
 ## Topics
 
 ### Creating a tool call error
-- [init(tool: any Tool, underlyingError: any Error)](languagemodelsession/toolcallerror/init(tool:underlyingerror:).md)
+- [init(tool: any Tool, underlyingError: any Error)](./toolcallerror/init%28tool,underlyingerror%29.md)
   Creates a tool call error.
 ### Getting the tool
-- [var tool: any Tool](languagemodelsession/toolcallerror/tool.md)
+- [var tool: any Tool](./toolcallerror/tool.md)
   The tool that produced the error.
 ### Getting the error description
-- [var errorDescription: String?](languagemodelsession/toolcallerror/errordescription.md)
+- [var errorDescription: String?](./toolcallerror/errordescription.md)
   A string representation of the error description.
 ### Getting the underlying error
-- [var underlyingError: any Error](languagemodelsession/toolcallerror/underlyingerror.md)
+- [var underlyingError: any Error](./toolcallerror/underlyingerror.md)
   The underlying error that was thrown during a tool call.
 ### Default Implementations
-- [LocalizedError Implementations](languagemodelsession/toolcallerror/localizederror-implementations.md)
+- [LocalizedError Implementations](./toolcallerror/localizederror-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LanguageModelSession.Error](languagemodelsession/error.md)
+### Errors
+- [LanguageModelSession.Error](./error.md)
   A failure caused by incorrect use of a language model session.
-- [LanguageModelSession.GenerationError](languagemodelsession/generationerror.md)
+- [LanguageModelSession.GenerationError](./generationerror.md)
   An error that may occur while generating a response.
 
 

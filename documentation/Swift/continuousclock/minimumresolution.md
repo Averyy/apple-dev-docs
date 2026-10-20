@@ -1,7 +1,8 @@
 # minimumResolution
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum non-zero resolution between any two calls to `now`.
 

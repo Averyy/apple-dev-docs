@@ -1,7 +1,8 @@
 # photoplethysmogram
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sensor that streams sample PPG sensor data.
 
@@ -16,11 +17,15 @@ A sensor that streams sample PPG sensor data.
 static let photoplethysmogram: SRSensor
 ```
 
+```c
+extern SRSensor const SRSensorPhotoplethysmogram;
+```
+
 #### Discussion
 
-The sample for this sensor is an array of [`SRPhotoplethysmogramSample`](srphotoplethysmogramsample.md) objects.
+The sample for this sensor is an array of [`SRPhotoplethysmogramSample`](../srphotoplethysmogramsample.md) objects.
 
-You need to provide a reason to record photoplethysmogram (PPG) data by adding the `SRSensorUsagePPG` dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
+You need to provide a reason to record photoplethysmogram (PPG) data by adding the `SRSensorUsagePPG` dictionary to the [`NSSensorKitUsageDetail`](../../BundleResources/information-property-list/nssensorkitusagedetail.md) key in the information property list.
 
 You also need the `ppg` key added to the `com.apple.developer.sensorkit.reader.allow` entitlement, as in:
 
@@ -37,29 +42,30 @@ You also need the `ppg` key added to the `com.apple.developer.sensorkit.reader.a
 
 ## See Also
 
-- [static let accelerometer: SRSensor](srsensor/accelerometer.md)
+### Reading user activity sensors
+- [static let accelerometer: SRSensor](./accelerometer.md)
   A sensor that provides acceleration motion data.
-- [static let faceMetrics: SRSensor](srsensor/facemetrics.md)
+- [static let faceMetrics: SRSensor](./facemetrics.md)
   A sensor that provides data describing a user’s face.
-- [static let heartRate: SRSensor](srsensor/heartrate.md)
+- [static let heartRate: SRSensor](./heartrate.md)
   A sensor that provides the user’s heart rate data.
-- [static let mediaEvents: SRSensor](srsensor/mediaevents.md)
+- [static let mediaEvents: SRSensor](./mediaevents.md)
   A sensor that provides information about interactions with media, such as images and videos, in messaging apps.
-- [static let odometer: SRSensor](srsensor/odometer.md)
+- [static let odometer: SRSensor](./odometer.md)
   A sensor that provides information about speed and slope.
-- [static let pedometerData: SRSensor](srsensor/pedometerdata.md)
+- [static let pedometerData: SRSensor](./pedometerdata.md)
   A sensor that provides information about the user’s steps.
-- [static let rotationRate: SRSensor](srsensor/rotationrate.md)
+- [static let rotationRate: SRSensor](./rotationrate.md)
   A sensor that provides rotation motion data.
-- [static let siriSpeechMetrics: SRSensor](srsensor/sirispeechmetrics.md)
+- [static let siriSpeechMetrics: SRSensor](./sirispeechmetrics.md)
   A sensor that provides data describing a user’s speech to Siri.
-- [static let telephonySpeechMetrics: SRSensor](srsensor/telephonyspeechmetrics.md)
+- [static let telephonySpeechMetrics: SRSensor](./telephonyspeechmetrics.md)
   A sensor that provides data describing speech during phone calls.
-- [static let visits: SRSensor](srsensor/visits.md)
+- [static let visits: SRSensor](./visits.md)
   A sensor that provides information about frequently visited locations.
-- [static let wristTemperature: SRSensor](srsensor/wristtemperature.md)
+- [static let wristTemperature: SRSensor](./wristtemperature.md)
   A sensor that provides wrist temperature while the user sleeps.
-- [static let electrocardiogram: SRSensor](srsensor/electrocardiogram.md)
+- [static let electrocardiogram: SRSensor](./electrocardiogram.md)
   A sensor that streams sample ECG sensor data.
 
 

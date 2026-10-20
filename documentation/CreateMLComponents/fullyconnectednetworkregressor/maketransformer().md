@@ -1,7 +1,8 @@
 # makeTransformer()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a default-initialized fully connected network regressor model suitable for incremental fitting.
 
@@ -19,6 +20,8 @@ Creates a default-initialized fully connected network regressor model suitable f
 ```swift
 func makeTransformer() -> FullyConnectedNetworkRegressorModel<Scalar>
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 
 ---

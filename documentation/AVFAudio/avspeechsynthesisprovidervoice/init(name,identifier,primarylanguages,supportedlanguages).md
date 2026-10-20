@@ -1,7 +1,8 @@
 # init(name:identifier:primaryLanguages:supportedLanguages:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a voice with a name, an identifier, and language information.
 
@@ -18,6 +19,10 @@ Creates a voice with a name, an identifier, and language information.
 
 ```swift
 init(name: String, identifier: String, primaryLanguages: [String], supportedLanguages: [String])
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name identifier:(NSString *) identifier primaryLanguages:(NSArray<NSString *> *) primaryLanguages supportedLanguages:(NSArray<NSString *> *) supportedLanguages;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Accessory Access  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that represents the Accessory Access framework’s error domain.
 

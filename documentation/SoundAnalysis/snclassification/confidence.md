@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The confidence value the model has in its prediction.
 
@@ -20,13 +21,18 @@ The confidence value the model has in its prediction.
 var confidence: Double { get }
 ```
 
+```objc
+@property (assign, readonly) double confidence;
+```
+
 #### Discussion
 
 The model assigns confidence values in the range `[0, 1.0]`, where `1.0` represents 100% confidence.
 
 ## See Also
 
-- [var identifier: String](snclassification/identifier.md)
+### Inspecting a Classification
+- [var identifier: String](./identifier.md)
   A prediction label that’s one of the classifications a sound classifier’s underlying model defines.
 
 

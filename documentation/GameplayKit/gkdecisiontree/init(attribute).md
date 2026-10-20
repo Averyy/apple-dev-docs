@@ -1,7 +1,8 @@
 # init(attribute:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a decision tree starting with the specified initial attribute to test.
 
@@ -19,13 +20,17 @@ Creates a decision tree starting with the specified initial attribute to test.
 init(attribute: any NSObjectProtocol)
 ```
 
+```objc
+- (instancetype) initWithAttribute:(id<NSObject>) attribute;
+```
+
 #### Return Value
 
 A new decision tree.
 
 #### Discussion
 
-The decision tree returned by this initializer is incomplete. To build a manually defined tree, use the [`rootNode`](gkdecisiontree/rootnode.md) property to access the node corresponding to the initial attribute, and use [`GKDecisionNode`](gkdecisionnode.md) methods on that object to create branches leading to child nodes that represent additional attributes to test or final actions.
+The decision tree returned by this initializer is incomplete. To build a manually defined tree, use the [`rootNode`](./rootnode.md) property to access the node corresponding to the initial attribute, and use [`GKDecisionNode`](../gkdecisionnode.md) methods on that object to create branches leading to child nodes that represent additional attributes to test or final actions.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ The decision tree returned by this initializer is incomplete. To build a manuall
 
 ## See Also
 
-- [var rootNode: GKDecisionNode?](gkdecisiontree/rootnode.md)
+### Creating a Manually Defined Decision Tree
+- [var rootNode: GKDecisionNode?](./rootnode.md)
   The decision node at the root of the decision tree, representing the first attribute to test.
 
 

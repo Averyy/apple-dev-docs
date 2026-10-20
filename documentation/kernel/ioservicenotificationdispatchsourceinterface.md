@@ -1,21 +1,23 @@
 # IOServiceNotificationDispatchSourceInterface
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```cpp
 class IOServiceNotificationDispatchSourceInterface : OSInterface
 ```
 
 ## See Also
 
-- [IOServiceNotificationDispatchSource](ioservicenotificationdispatchsource.md)
-- [IONotifier](ionotifier.md)
+### Notifications
+- [IOServiceNotificationDispatchSource](./ioservicenotificationdispatchsource.md)
+- [IONotifier](./ionotifier.md)
   An abstract base class defining common methods for controlling a notification request.
 
 

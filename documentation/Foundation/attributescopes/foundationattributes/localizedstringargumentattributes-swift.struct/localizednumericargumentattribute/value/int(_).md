@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.int(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A signed integer value.
 
@@ -22,15 +23,16 @@ case int(Int64)
 
 ## Parameters
 
-- `int`: The attribute value, as an [`Int64`](https://developer.apple.com/documentation/swift/int64).
+- `int`: The attribute value, as an [`Int64`](../../../../../../Swift/int64.md).
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.uint(_:)](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/value/uint(_:).md)
+### Value cases
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.uint(_:)](./uint%28_%29.md)
   An unsigned integer value.
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.double(_:)](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/value/double(_:).md)
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.double(_:)](./double%28_%29.md)
   A double-precision floating point value.
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.decimal(_:)](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/value/decimal(_:).md)
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.decimal(_:)](./decimal%28_%29.md)
   A decimal value.
 
 

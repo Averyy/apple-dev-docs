@@ -1,7 +1,8 @@
 # MusicCatalogSearchSuggestionsResponse.TopResult
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias for an item that represents one of the top results in a catalog search suggestions response.
 

@@ -1,7 +1,8 @@
 # UIDocumentBrowserViewController.BrowserUserInterfaceStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Styles that define the document browser’s appearance.
 
@@ -16,41 +17,46 @@ Styles that define the document browser’s appearance.
 enum BrowserUserInterfaceStyle
 ```
 
+```c
+enum UIDocumentBrowserUserInterfaceStyle : NSUInteger;
+```
+
 ## Topics
 
 ### User interface styles
-- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.dark](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.enum/dark.md)
+- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.dark](./browseruserinterfacestyle-swift.enum/dark.md)
   A dark background.
-- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.light](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.enum/light.md)
+- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.light](./browseruserinterfacestyle-swift.enum/light.md)
   A light background.
-- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.white](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.enum/white.md)
+- [UIDocumentBrowserViewController.BrowserUserInterfaceStyle.white](./browseruserinterfacestyle-swift.enum/white.md)
   A white background.
 ### Initializers
-- [init?(rawValue: UInt)](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./browseruserinterfacestyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var browserUserInterfaceStyle: UIDocumentBrowserViewController.BrowserUserInterfaceStyle](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.property.md)
+### Modifying the browser’s appearance
+- [var browserUserInterfaceStyle: UIDocumentBrowserViewController.BrowserUserInterfaceStyle](./browseruserinterfacestyle-swift.property.md)
   The visual style for the document browser.
-- [var additionalLeadingNavigationBarButtonItems: [UIBarButtonItem]](uidocumentbrowserviewcontroller/additionalleadingnavigationbarbuttonitems.md)
+- [var additionalLeadingNavigationBarButtonItems: [UIBarButtonItem]](./additionalleadingnavigationbarbuttonitems.md)
   Additional bar button items that the document browser displays on the leading side of its navigation bar.
-- [var additionalTrailingNavigationBarButtonItems: [UIBarButtonItem]](uidocumentbrowserviewcontroller/additionaltrailingnavigationbarbuttonitems.md)
+- [var additionalTrailingNavigationBarButtonItems: [UIBarButtonItem]](./additionaltrailingnavigationbarbuttonitems.md)
   Additional bar button items that the document browser displays on the trailing side of its navigation bar.
-- [var shouldShowFileExtensions: Bool](uidocumentbrowserviewcontroller/shouldshowfileextensions.md)
+- [var shouldShowFileExtensions: Bool](./shouldshowfileextensions.md)
   A Boolean value that determines whether the browser always shows file extensions.
-- [var localizedCreateDocumentActionTitle: String](uidocumentbrowserviewcontroller/localizedcreatedocumentactiontitle.md)
+- [var localizedCreateDocumentActionTitle: String](./localizedcreatedocumentactiontitle.md)
   The title for the Create Document button.
-- [var defaultDocumentAspectRatio: CGFloat](uidocumentbrowserviewcontroller/defaultdocumentaspectratio.md)
+- [var defaultDocumentAspectRatio: CGFloat](./defaultdocumentaspectratio.md)
   The aspect ratio for the Create Document button.
 
 

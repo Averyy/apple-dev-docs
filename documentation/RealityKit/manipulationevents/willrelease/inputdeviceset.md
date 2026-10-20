@@ -1,7 +1,8 @@
 # inputDeviceSet
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input devices that ended the interaction.
 

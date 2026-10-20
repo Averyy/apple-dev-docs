@@ -1,7 +1,8 @@
 # init(sourceAppIdentifier:sourceVersion:)
 
 **Framework**: AppMigrationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a resources import request instance for use in a unit test.
 
@@ -17,7 +18,7 @@ init(sourceAppIdentifier: MigrationAppIdentifier, sourceVersion: String)
 
 #### Discussion
 
-You only use this initializer when creating unit tests that call [`importResources(from:importRequest:progress:)`](appmigrationtester/appimportcontroller/importresources(from:importrequest:progress:).md). Don’t use it in your app migration extension.
+You only use this initializer when creating unit tests that call [`importResources(from:importRequest:progress:)`](../appmigrationtester/appimportcontroller/importresources%28from,importrequest,progress%29.md). Don’t use it in your app migration extension.
 
 ## Parameters
 

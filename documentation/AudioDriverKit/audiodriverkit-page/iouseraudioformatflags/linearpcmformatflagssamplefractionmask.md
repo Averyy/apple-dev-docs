@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagsSampleFractionMask
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A constant that indicates the bit position of a bit field within the flags, for use with fixed-point values.
 
@@ -10,7 +11,7 @@ A constant that indicates the bit position of a bit field within the flags, for 
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagsSampleFractionMask
 ```
 
@@ -20,7 +21,8 @@ The linear PCM flags contain a 6-bit bitfield indicating that the framework shou
 
 ## See Also
 
-- [LinearPCMFormatFlagsSampleFractionShift](audiodriverkit/iouseraudioformatflags/linearpcmformatflagssamplefractionshift.md)
+### Sample Fraction Flags
+- [LinearPCMFormatFlagsSampleFractionShift](./linearpcmformatflagssamplefractionshift.md)
   A mask used to calculate the number of fractional bits in the flags field.
 
 

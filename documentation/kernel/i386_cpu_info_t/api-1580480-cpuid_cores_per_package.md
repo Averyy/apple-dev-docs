@@ -1,14 +1,15 @@
 # cpuid_cores_per_package
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 uint32_t cpuid_cores_per_package;
 ```
 

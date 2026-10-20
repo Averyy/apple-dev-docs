@@ -1,28 +1,29 @@
 # TN3155: Debugging universal links
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Investigate why your universal links are opening in a web browser instead of your app.
 
 #### Overview
 
-[`Universal links`](https://developer.apple.comhttps://developer.apple.com/ios/universal-links/) use [`applinks`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/applinks), an associated domains service, to link directly to content within your app without routing through a web browser or your website. When a user clicks on a universal link, the following occurs:
+[Universal links](https://developer.apple.com/ios/universal-links/) use [applinks](../BundleResources/applinks.md), an associated domains service, to link directly to content within your app without routing through a web browser or your website. When a user clicks on a universal link, the following occurs:
 
 - The universal link opens directly within the app when the app is installed on the user’s device.
 - Otherwise, the the link will open in the user’s default web browser.
 
-If unfamiliar with universal links and how to support them in your code, see [`Supporting Associated Domains`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/supporting-associated-domains) and [`Allowing apps and websites to link to your content`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content). Please note that web browsers, and apps [`registered as browsers`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.web-browser), are not allowed to register universal links by using the `applinks` service.
+If unfamiliar with universal links and how to support them in your code, see [Supporting Associated Domains](../Xcode/supporting-associated-domains.md) and [Allowing apps and websites to link to your content](../Xcode/allowing-apps-and-websites-to-link-to-your-content.md). Please note that web browsers, and apps [registered as browsers](../BundleResources/entitlements/com.apple.developer.web-browser.md), are not allowed to register universal links by using the `applinks` service.
 
 This document outlines how to:
 
-- [`Test universal links behavior`](tn3155-debugging-universal-links#Test-universal-links-behavior.md)
-- [`Understand applinks configuration and rules`](tn3155-debugging-universal-links#Understand-applinks-configuration-and-rules.md)
-- [`Use universal links on your site`](tn3155-debugging-universal-links#Use-universal-links-on-your-site.md)
-- [`Host and verify your AASA`](tn3155-debugging-universal-links#Host-and-verify-your-AASA.md)
-- [`Debug through sysdiagnose`](tn3155-debugging-universal-links#Debug-through-sysdiagnose.md)
-- [`Understand Apple’s CDN`](tn3155-debugging-universal-links#Understand-Apples-CDN.md)
+- [Test your universal links](./tn3155-debugging-universal-links.md#Test-universal-links-behavior)
+- [Choose the correct `applinks` domains](./tn3155-debugging-universal-links.md#Understand-applinks-configuration-and-rules)
+- [Use universal links on your site](./tn3155-debugging-universal-links.md#Use-universal-links-on-your-site)
+- [Verify your `apple-app-site-association` (AASA) file](./tn3155-debugging-universal-links.md#Host-and-verify-your-AASA)
+- [Debug using a sysdiagnose](./tn3155-debugging-universal-links.md#Debug-through-sysdiagnose)
+- [Understand Apple’s content delivery network (CDN)](./tn3155-debugging-universal-links.md#Understand-Apples-CDN)
 
-#### Test Universal Links Behavior
+#### Test universal links behavior
 
 To test your universal links behavior, paste a link into your Notes app and long-press  it (iOS) or control-click it (macOS) to see your options for following the link. If universal links have been configured correctly, the option to open in your app and in the web browser will both show up. The option you choose will set the default behavior for your device when following universal links from this domain in the future. To change this default choice, repeat the same steps and choose a different option.
 
@@ -30,13 +31,13 @@ To test your universal links behavior, paste a link into your Notes app and long
 
 On iOS, you can additionally test your universal links with the associated domains diagnostic tests in Developer settings through these steps:
 
-1. Turn on Developer Mode in Settings. Read [`Enabling Developer Mode on a device`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device) for more help.
+1. Turn on Developer Mode in Settings. Read [Enabling Developer Mode on a device](../Xcode/enabling-developer-mode-on-a-device.md) for more help.
 2. In Settings > Developer, scroll to the section labeled Universal Links and turn on Associated Domains Development.
 3. Open Diagnostics and type in your full URL. You will receive feedback on whether this link is valid for an installed app.
 
 If your universal links are invalid, your `applinks` may be configured incorrectly.
 
-#### Understand Applinks Configuration and Rules
+#### Understand applinks configuration and rules
 
 Using the Signing and Capabilities tab in Xcode, verify the app has the Associated Domains capability which contains `applinks` in the form of:
 
@@ -64,9 +65,9 @@ This will only work with `applinks:www.example.com`. Each specific subdomain in 
 
 > **Note**: Domains in your `applinks` can’t contain a port number. For example, `applinks:example.com:8080` will not open your app.
 
-#### Use Universal Links on Your Site
+#### Use universal links on your site
 
-To use a universal link to open your app while already browsing in the web browser, use a different subdomain. Reasons for this could be completing a questionnaire or choosing to sign in. If a universal link has the same domain as the previous navigation, the web browser will expect the user wants to continue navigating within the browser. Review [`Allowing apps and websites to link your content`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content#Support-universal-links) for more information.
+To use a universal link to open your app while already browsing in the web browser, use a different subdomain. Reasons for this could be completing a questionnaire or choosing to sign in. If a universal link has the same domain as the previous navigation, the web browser will expect the user wants to continue navigating within the browser. Review [Allowing apps and websites to link your content](../Xcode/allowing-apps-and-websites-to-link-to-your-content.md#Support-universal-links) for more information.
 
 For an example of when to use subdomains, consider an app with the root domain `applinks:example.com` and an AASA containing:
 
@@ -99,7 +100,7 @@ Using a different subdomain prevents the web browser from treating the link as n
 
 > ❗ **Important**: It is up to third-party web browsers to enable universal links functionality. Universal links may not be enabled in every web browser. For information about other browsers, developers should check with the browser’s vendor. Safari implements all of the function described in this technote.
 
-#### Host and Verify Your Aasa
+#### Host and verify your AASA
 
 If your universal links are still not opening in your app, inspect your HTTP response headers and AASA content. For example, log the HTTP response headers and AASA JSON contents in Terminal using the following command:
 
@@ -129,7 +130,7 @@ If you see a 403 or 404 HTTP error, your site denied access. Generally, this hap
 curl -A "MyAgent-Bot/*" https://example.com/.well-known/apple-app-site-association
 ```
 
-Verify the format of your AASA file. It should contain either an `Array` of `appIDs` and an `Array` of `components`, as shown in [`Supporting Associated Domains`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/supporting-associated-domains), or fields `appID` of type `String` and `paths` of type `Array` (matching the legacy format). Please avoid mixing formats. Doing so may result in unexpected behavior for universal links. An example of the recommended format is below:
+Verify the format of your AASA file. It should contain either an `Array` of `appIDs` and an `Array` of `components`, as shown in [Supporting associated domains](../Xcode/supporting-associated-domains.md), or fields `appID` of type `String` and `paths` of type `Array` (matching the legacy format). Please avoid mixing formats. Doing so may result in unexpected behavior for universal links. An example of the recommended format is below:
 
 ```other
  "appIDs": [ "ABCDE12345.com.example.app", "ABCDE12345.com.example.app2" ], 
@@ -168,15 +169,15 @@ Pattern "https://example.com/test" matched.
 
 Since the pattern `/test` is included in the AASA, the JSON has successfully pattern matched and is verified. For the path  `/path/1`, since it is set to be excluded in the AASA, you would see a message confirming the exclusion:
 
-```None
+```
 Pattern "https://example.com/path/1" blocked match.
 ```
 
-If you see this message for a URL path that is not excluded, your AASA has not been matched. Take a look at the [`Debug through sysdiagnose`](tn3155-debugging-universal-links#Debug-through-sysdiagnose.md) section for more information.
+If you see this message for a URL path that is not excluded, your AASA has not been matched. Take a look at the [Debug through sysdiagnose](./tn3155-debugging-universal-links.md#Debug-through-sysdiagnose) section for more information.
 
-#### Debug Through Sysdiagnose
+#### Debug through sysdiagnose
 
-If the output from `swcutil` in the section [`Host and verify your AASA`](tn3155-debugging-universal-links#Host-and-verify-your-AASA.md) is showing invalid universal links, take a sysdiagnose on a device with the app installed by following the linked instructions for each platform in [`Profiles and Logs`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose). After you have opened the sysdiagnose, open the `swcutil_show.txt` file. Search for your `App ID` to see the information for your `applinks` as shown in the following example.
+If the output from `swcutil` in the section [Host and verify your AASA](./tn3155-debugging-universal-links.md#Host-and-verify-your-AASA) is showing invalid universal links, take a sysdiagnose on a device with the app installed by following the linked instructions for each platform in [Profiles and Logs](https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose). After you have opened the sysdiagnose, open the `swcutil_show.txt` file. Search for your `App ID` to see the information for your `applinks` as shown in the following example.
 
 ```other
 Service:              applinks
@@ -188,19 +189,19 @@ Last Checked:         2023-08-24 10:09:00 +0000
 Next Check:           2023-08-18 21:00:19 +0000
 ```
 
-`User Approval`: Shows the user’s decision to open links in your app or in the web browser. Review [`Test universal links behavior`](tn3155-debugging-universal-links#Test-universal-links-behavior.md) for more information.
+`User Approval`: Shows the user’s decision to open links in your app or in the web browser. Review [Test universal links behavior](./tn3155-debugging-universal-links.md#Test-universal-links-behavior) for more information.
 
 `Site/Fmwk Approval`: Specifies if the Apple-managed content delivery network (CDN) has approved your universal links and pattern matched successfully. If it is `approved`, your universal links are working correctly.
 
-If it is `unspecified` or `denied`, please ensure you are allowing full access to all IP addresses and the domain is included in your associated domains. For more information, review [`Understand Apple’s CDN`](tn3155-debugging-universal-links#Understand-Apples-CDN.md).
+If it is `unspecified` or `denied`, please ensure you are allowing full access to all IP addresses and the domain is included in your associated domains. For more information, review [Understand Apple’s CDN](./tn3155-debugging-universal-links.md#Understand-Apples-CDN).
 
 `Last Check/Next Check`: Specifies the last time Apple’s CDN requested your site for your AASA and when it will check again.
 
-#### Understand Apples Cdn
+#### Understand Apple’s CDN
 
 When your app is installed on a device, Apple’s CDN requests your AASA file. For the CDN to successfully cache the file, it must be hosted on a domain that is available to all IP addresses and ranges, does not redirect, and is not blocked by access policies.
 
-When testing, if you’re running your app from Xcode, using a server that is unreachable from the public internet, or testing changes faster than Apple’s CDN can cache them, use an alternate `developer` mode as described in [`Associated Domains Entitlement`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_associated-domains). This allows you to bypass Apple’s CDN and pulls your AASA directly from your domain.
+When testing, if you’re running your app from Xcode, using a server that is unreachable from the public internet, or testing changes faster than Apple’s CDN can cache them, use an alternate `developer` mode as described in [Associated Domains Entitlement](../BundleResources/entitlements/com_apple_developer_associated-domains.md). This allows you to bypass Apple’s CDN and pulls your AASA directly from your domain.
 
 > ❗ **Important**: On iOS 14 and later, Apple’s CDN retrieves and caches the AASA file. When your app is installed, devices download the file from the CDN immediately. Devices check for updates approximately once per week after app installation. To download a newer version of the AASA file, reinstall the app. There is no direct CDN invalidation option.
 

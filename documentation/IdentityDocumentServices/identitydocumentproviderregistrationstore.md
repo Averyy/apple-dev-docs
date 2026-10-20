@@ -1,14 +1,15 @@
 # IdentityDocumentProviderRegistrationStore
 
 **Framework**: IdentityDocumentServices  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A store that notifies the system which documents an app has available for presentment.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,46 +19,47 @@ actor IdentityDocumentProviderRegistrationStore
 
 ## Mentions
 
-- [Implementing as an identity document provider](implenting-as-an-identity-document-provider.md)
+- [Implementing as an identity document provider](./implenting-as-an-identity-document-provider.md)
 
 #### Discussion
 
 The system uses the information you register with this store to appropriately surface your app as an option during a presentment. When a person registers a document, the authorization UI you provide through the app’s `IdentityDocumentProvider` extension needs to handle incoming requests for that specific document. The app needs to only register documents that are active and that it can successfully present. If a document becomes inactive, you need to unregister it from the store.
 
-> **Note**:  This API requires the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement for online web presentment.
+> **Note**:  This API requires the [`Digital Credentials API - Mobile Document Provider`](../BundleResources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types.md) entitlement for online web presentment.
 
 ## Topics
 
 ### Registering and removing mobile documents
-- [init()](identitydocumentproviderregistrationstore/init.md)
+- [init()](./identitydocumentproviderregistrationstore/init%28%29.md)
   Initializes an identity document provider registration store.
-- [func addRegistration(some IdentityDocumentRegistration) async throws](identitydocumentproviderregistrationstore/addregistration(_:).md)
+- [func addRegistration(some IdentityDocumentRegistration) async throws](./identitydocumentproviderregistrationstore/addregistration%28_%29.md)
   Register a document with the system.
-- [var registrations: [any IdentityDocumentRegistration]](identitydocumentproviderregistrationstore/registrations.md)
+- [var registrations: [any IdentityDocumentRegistration]](./identitydocumentproviderregistrationstore/registrations.md)
   A list of all documents registered with the system.
-- [func removeRegistration(forDocumentIdentifier: String) async throws](identitydocumentproviderregistrationstore/removeregistration(fordocumentidentifier:).md)
+- [func removeRegistration(forDocumentIdentifier: String) async throws](./identitydocumentproviderregistrationstore/removeregistration%28fordocumentidentifier%29.md)
   Unregister a specific document with the system.
 ### Defining and getting the status of the mobile document
-- [var status: IdentityDocumentProviderRegistrationStore.Status](identitydocumentproviderregistrationstore/status-swift.property.md)
+- [var status: IdentityDocumentProviderRegistrationStore.Status](./identitydocumentproviderregistrationstore/status-swift.property.md)
   The status of the registration store.
-- [IdentityDocumentProviderRegistrationStore.Status](identitydocumentproviderregistrationstore/status-swift.enum.md)
+- [IdentityDocumentProviderRegistrationStore.Status](./identitydocumentproviderregistrationstore/status-swift.enum.md)
   Defines a status for the registration store.
 ### Errors
-- [IdentityDocumentProviderRegistrationStore.RegistrationError](identitydocumentproviderregistrationstore/registrationerror.md)
+- [IdentityDocumentProviderRegistrationStore.RegistrationError](./identitydocumentproviderregistrationstore/registrationerror.md)
   An error type that the identity document registration store and associated types throw.
 
 ## Relationships
 
 ### Conforms To
-- [Actor](../swift/actor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Actor](../Swift/actor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol IdentityDocumentRegistration](identitydocumentregistration.md)
+### Registering as an identity document provider
+- [protocol IdentityDocumentRegistration](./identitydocumentregistration.md)
   A protocol that defines an identity document registration.
-- [struct MobileDocumentRegistration](mobiledocumentregistration.md)
+- [struct MobileDocumentRegistration](./mobiledocumentregistration.md)
   A type you use to register mobile documents.
 
 

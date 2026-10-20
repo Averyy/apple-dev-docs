@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends an array of haptic parameters, starting at the specified time.
@@ -20,9 +21,13 @@ Sends an array of haptic parameters, starting at the specified time.
 func sendParameters(_ parameters: [CHHapticDynamicParameter], atTime time: TimeInterval) throws
 ```
 
+```objc
+- (BOOL) sendParameters:(NSArray<CHHapticDynamicParameter *> *) parameters atTime:(NSTimeInterval) time error:(NSError **) outError;
+```
+
 #### Discussion
 
-If `time` is `0` or any value less than the haptic engine’s [`currentTime`](chhapticengine/currenttime.md), this method sends parameters immediately.
+If `time` is `0` or any value less than the haptic engine’s [`currentTime`](../chhapticengine/currenttime.md), this method sends parameters immediately.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ If `time` is `0` or any value less than the haptic engine’s [`currentTime`](ch
 
 ## See Also
 
-- [func scheduleParameterCurve(CHHapticParameterCurve, atTime: TimeInterval) throws](chhapticpatternplayer/scheduleparametercurve(_:attime:).md)
+### Sending Parameters to a Haptic
+- [func scheduleParameterCurve(CHHapticParameterCurve, atTime: TimeInterval) throws](./scheduleparametercurve%28_,attime%29.md)
   Schedules a parameter curve to begin transitioning a parameter at a certain time.
 
 

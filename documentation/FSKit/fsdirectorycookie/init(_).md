@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.4+
@@ -14,7 +15,8 @@ init(_ rawValue: UInt64)
 
 ## See Also
 
-- [init(rawValue: UInt64)](fsdirectorycookie/init(rawvalue:).md)
+### Initializing a cookie
+- [init(rawValue: UInt64)](./init%28rawvalue%29.md)
 
 
 ---

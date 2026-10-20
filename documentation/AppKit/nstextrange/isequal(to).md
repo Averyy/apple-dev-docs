@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares two text ranges.
 
@@ -14,6 +15,10 @@ Compares two text ranges.
 func isEqual(to textRange: NSTextRange) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToTextRange:(NSTextRange *) textRange;
+```
+
 #### Return Value
 
 Returns `true` if the ranges are equal.
@@ -24,11 +29,12 @@ Returns `true` if the ranges are equal.
 
 ## See Also
 
-- [func intersection(NSTextRange) -> Self?](nstextrange/intersection(_:).md)
+### Comparing text ranges
+- [func intersection(NSTextRange) -> Self?](./intersection%28_%29.md)
   Returns the range, if any, where two text ranges intersect.
-- [func intersects(NSTextRange) -> Bool](nstextrange/intersects(_:).md)
+- [func intersects(NSTextRange) -> Bool](./intersects%28_%29.md)
   Determines if two ranges intersect.
-- [func union(NSTextRange) -> Self](nstextrange/union(_:).md)
+- [func union(NSTextRange) -> Self](./union%28_%29.md)
   Returns a new text range by forming the union with the text range you provide.
 
 

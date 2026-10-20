@@ -1,14 +1,15 @@
 # status
 
 **Framework**: IdentityDocumentServices  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the registration store.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,7 +23,8 @@ Check this value before you make any attempts to interact with the store.
 
 ## See Also
 
-- [IdentityDocumentProviderRegistrationStore.Status](identitydocumentproviderregistrationstore/status-swift.enum.md)
+### Defining and getting the status of the mobile document
+- [IdentityDocumentProviderRegistrationStore.Status](./status-swift.enum.md)
   Defines a status for the registration store.
 
 

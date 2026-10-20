@@ -1,7 +1,8 @@
 # init(keyboardType:capitalizationType:multiline:autocorrect:smartQuotes:smartDashes:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+

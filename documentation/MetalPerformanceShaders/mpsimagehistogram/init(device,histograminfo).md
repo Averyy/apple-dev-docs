@@ -1,7 +1,8 @@
 # init(device:histogramInfo:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a histogram with specific information.
 
@@ -19,6 +20,10 @@ Initializes a histogram with specific information.
 init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device histogramInfo:(const MPSImageHistogramInfo *) histogramInfo;
+```
+
 #### Return Value
 
 An initialized histogram object.
@@ -30,11 +35,12 @@ An initialized histogram object.
 
 ## See Also
 
-- [struct MPSImageHistogramInfo](mpsimagehistograminfo.md)
+### Methods
+- [struct MPSImageHistogramInfo](../mpsimagehistograminfo.md)
   The information used to compute the histogram channels of an image.
-- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, histogram: any MTLBuffer, histogramOffset: Int)](mpsimagehistogram/encode(to:sourcetexture:histogram:histogramoffset:).md)
+- [func encode(to: any MTLCommandBuffer, sourceTexture: any MTLTexture, histogram: any MTLBuffer, histogramOffset: Int)](./encode%28to,sourcetexture,histogram,histogramoffset%29.md)
   Encodes the filter to a command buffer using a compute command encoder.
-- [func histogramSize(forSourceFormat: MTLPixelFormat) -> Int](mpsimagehistogram/histogramsize(forsourceformat:).md)
+- [func histogramSize(forSourceFormat: MTLPixelFormat) -> Int](./histogramsize%28forsourceformat%29.md)
   The amount of space the histogram will take up in the output buffer.
 
 

@@ -1,7 +1,8 @@
 # processIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process ID (PID) of the connecting process.
 
@@ -20,17 +21,22 @@ The process ID (PID) of the connecting process.
 var processIdentifier: pid_t { get }
 ```
 
+```objc
+@property (readonly) pid_t processIdentifier;
+```
+
 #### Discussion
 
 This attribute may be used by the listener delegate to accept or reject connections.
 
 ## See Also
 
-- [var auditSessionIdentifier: au_asid_t](nsxpcconnection/auditsessionidentifier.md)
+### Working with security attributes
+- [var auditSessionIdentifier: au_asid_t](./auditsessionidentifier.md)
   The BSM audit session identifier for the connecting process.
-- [var effectiveGroupIdentifier: gid_t](nsxpcconnection/effectivegroupidentifier.md)
+- [var effectiveGroupIdentifier: gid_t](./effectivegroupidentifier.md)
   The effective group ID (EGID) of the connecting process.
-- [var effectiveUserIdentifier: uid_t](nsxpcconnection/effectiveuseridentifier.md)
+- [var effectiveUserIdentifier: uid_t](./effectiveuseridentifier.md)
   The effective user ID (EUID) of the connecting process.
 
 

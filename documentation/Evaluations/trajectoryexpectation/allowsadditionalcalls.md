@@ -1,7 +1,8 @@
 # allowsAdditionalCalls
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow tool calls that don’t match any expectation.
 
@@ -22,7 +23,7 @@ var allowsAdditionalCalls: Bool
 
 ## Mentions
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
 #### Discussion
 
@@ -30,11 +31,12 @@ When `false`, any unmatched tool call causes evaluation to fail. When `true` (th
 
 ## See Also
 
-- [var ordered: [ToolExpectation]](trajectoryexpectation/ordered.md)
+### Combining expectations
+- [var ordered: [ToolExpectation]](./ordered.md)
   Tool call steps that must be satisfied in sequential order.
-- [var unordered: [ToolExpectation]](trajectoryexpectation/unordered.md)
+- [var unordered: [ToolExpectation]](./unordered.md)
   Tool calls that must occur at some point, regardless of position.
-- [var disallowed: [ToolExpectation]](trajectoryexpectation/disallowed.md)
+- [var disallowed: [ToolExpectation]](./disallowed.md)
   Tools that the model must NOT call.
 
 

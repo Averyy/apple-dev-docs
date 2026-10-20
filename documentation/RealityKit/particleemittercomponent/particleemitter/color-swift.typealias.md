@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.Color
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -12,6 +13,14 @@
 - visionOS 1.0+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+typealias Color = UIColor
+```
+
+*macOS*
 
 ```swift
 typealias Color = NSColor

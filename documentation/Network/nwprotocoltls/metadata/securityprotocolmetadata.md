@@ -1,7 +1,8 @@
 # securityProtocolMetadata
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of the TLS handshake.
 
@@ -22,7 +23,8 @@ var securityProtocolMetadata: sec_protocol_metadata_t { get }
 
 ## See Also
 
-- [Security Options](security-options.md)
+### Related Documentation
+- [Security Options](../../security-options.md)
   Configure security options for TLS handshakes.
 
 

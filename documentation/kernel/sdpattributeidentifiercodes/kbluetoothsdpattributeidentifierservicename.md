@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierServiceName
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierServiceName = 0x0000
 ```
 

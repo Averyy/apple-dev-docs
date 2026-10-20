@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The observed hand poses.
 
@@ -17,6 +18,10 @@ The observed hand poses.
 
 ```swift
 var results: [VNHumanHandPoseObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNHumanHandPoseObservation *> * results;
 ```
 
 

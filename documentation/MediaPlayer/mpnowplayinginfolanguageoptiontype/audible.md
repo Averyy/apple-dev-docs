@@ -1,7 +1,8 @@
 # MPNowPlayingInfoLanguageOptionType.audible
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates an audible language option is used.
 
@@ -20,9 +21,14 @@ Indicates an audible language option is used.
 case audible
 ```
 
+```c
+MPNowPlayingInfoLanguageOptionTypeAudible
+```
+
 ## See Also
 
-- [MPNowPlayingInfoLanguageOptionType.legible](mpnowplayinginfolanguageoptiontype/legible.md)
+### Enumeration Cases
+- [MPNowPlayingInfoLanguageOptionType.legible](./legible.md)
   Indicates a written language option is used.
 
 

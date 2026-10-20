@@ -1,7 +1,8 @@
 # MPSGraphSparseStorageType.COO
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 COO Storage
 
@@ -17,6 +18,10 @@ COO Storage
 
 ```swift
 case COO
+```
+
+```c
+MPSGraphSparseStorageCOO
 ```
 
 

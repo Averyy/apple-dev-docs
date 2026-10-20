@@ -1,7 +1,8 @@
 # minimumSize
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum accepted size of a thumbnail.
 
@@ -18,13 +19,18 @@ The minimum accepted size of a thumbnail.
 var minimumSize: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize minimumSize;
+```
+
 ## See Also
 
-- [var maximumSize: CGSize](qlfilethumbnailrequest/maximumsize.md)
+### Describing the Requested Thumbnail
+- [var maximumSize: CGSize](./maximumsize.md)
   The maximum accepted size of a thumbnail.
-- [var scale: CGFloat](qlfilethumbnailrequest/scale.md)
+- [var scale: CGFloat](./scale.md)
   The scale of the requested thumbnail.
-- [var fileURL: URL](qlfilethumbnailrequest/fileurl.md)
+- [var fileURL: URL](./fileurl.md)
   The URL of the image file to use for the thumbnail.
 
 

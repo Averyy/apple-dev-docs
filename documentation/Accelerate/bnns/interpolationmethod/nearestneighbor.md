@@ -1,7 +1,8 @@
 # BNNS.InterpolationMethod.nearestNeighbor
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Nearest-neighbor interpolation.
 
@@ -11,8 +12,10 @@ Nearest-neighbor interpolation.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ case nearestNeighbor
 
 ## See Also
 
-- [BNNS.InterpolationMethod.linear](bnns/interpolationmethod/linear.md)
+### Interpolation Methods
+- [BNNS.InterpolationMethod.linear](./linear.md)
   Interpolation that is linear or bilinear depending on the number of resized dimensions.
 
 

@@ -1,7 +1,8 @@
 # SCDynamicStoreCopyNotifiedKeys(_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the keys that have changed since the last call to this function.
 
@@ -12,6 +13,10 @@ Returns the keys that have changed since the last call to this function.
 
 ```swift
 func SCDynamicStoreCopyNotifiedKeys(_ store: SCDynamicStore) -> CFArray?
+```
+
+```c
+CFArrayRefSCDynamicStoreCopyNotifiedKeys(SCDynamicStoreRef store);
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ If possible, your application should use the notification functions instead of p
 
 ## See Also
 
-- [func SCDynamicStoreCopyKeyList(SCDynamicStore?, CFString) -> CFArray?](scdynamicstorecopykeylist(_:_:).md)
+### Getting Keys and Values
+- [func SCDynamicStoreCopyKeyList(SCDynamicStore?, CFString) -> CFArray?](./scdynamicstorecopykeylist%28_,_%29.md)
   Returns the keys that represent the current dynamic store entries that match the specified pattern.
-- [func SCDynamicStoreCopyMultiple(SCDynamicStore?, CFArray?, CFArray?) -> CFDictionary?](scdynamicstorecopymultiple(_:_:_:).md)
+- [func SCDynamicStoreCopyMultiple(SCDynamicStore?, CFArray?, CFArray?) -> CFDictionary?](./scdynamicstorecopymultiple%28_,_,_%29.md)
   Returns the key-value pairs that match the specified keys and key patterns.
-- [func SCDynamicStoreCopyValue(SCDynamicStore?, CFString) -> CFPropertyList?](scdynamicstorecopyvalue(_:_:).md)
+- [func SCDynamicStoreCopyValue(SCDynamicStore?, CFString) -> CFPropertyList?](./scdynamicstorecopyvalue%28_,_%29.md)
   Returns the value associated with the specified key.
 
 

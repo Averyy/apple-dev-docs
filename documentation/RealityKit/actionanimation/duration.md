@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elapsed time for one complete rotation.
 

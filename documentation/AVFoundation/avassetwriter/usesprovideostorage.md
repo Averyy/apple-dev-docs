@@ -1,7 +1,8 @@
 # usesProVideoStorage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether to use pre-allocated storage.
 
@@ -16,6 +17,10 @@ Indicates whether to use pre-allocated storage.
 
 ```swift
 var usesProVideoStorage: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL usesProVideoStorage;
 ```
 
 #### Discussion

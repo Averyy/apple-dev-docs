@@ -1,17 +1,22 @@
 # powerOff
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event that indicates a system shutdown or restart operation is in progress.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static var powerOff: NSEvent.EventSubtype { get }
+```
+
+```c
+NSEventSubtypePowerOff
 ```
 
 

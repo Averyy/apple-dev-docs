@@ -2,6 +2,7 @@
 
 **Framework**: FinanceKitUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:

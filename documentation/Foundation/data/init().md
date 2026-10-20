@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty data buffer.
 
@@ -22,11 +23,12 @@ init()
 
 ## See Also
 
-- [init(capacity: Int)](data/init(capacity:).md)
+### Creating Empty Data
+- [init(capacity: Int)](./init%28capacity%29.md)
   Creates an empty data buffer of a specified size.
-- [init(count: Int)](data/init(count:).md)
+- [init(count: Int)](./init%28count%29.md)
   Creates a new data buffer with the specified count of zeroed bytes.
-- [func resetBytes(in: Range<Data.Index>)](data/resetbytes(in:).md)
+- [func resetBytes(in: Range<Data.Index>)](./resetbytes%28in%29.md)
   Sets a region of the data buffer to `0`.
 
 

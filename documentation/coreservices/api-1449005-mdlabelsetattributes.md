@@ -1,7 +1,8 @@
 # MDLabelSetAttributes(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDLabelSetAttributes(_ label: MDLabel!, _ attrs: CFDictionary!) -> Bool
+```
+
+```c
+Boolean MDLabelSetAttributes(MDLabelRef label, CFDictionaryRef attrs);
 ```
 
 

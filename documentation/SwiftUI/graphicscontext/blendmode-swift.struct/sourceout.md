@@ -1,7 +1,8 @@
 # sourceOut
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that you use to paint the source image onto the transparent parts of the background, while erasing the background.
 
@@ -30,23 +31,24 @@ This mode implements the equation `R = S*(1 - Da)` where
 
 ## See Also
 
-- [static var clear: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/clear.md)
+### Accessing Porter-Duff modes
+- [static var clear: GraphicsContext.BlendMode](./clear.md)
   A mode that clears any pixels that the source image overwrites.
-- [static var copy: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/copy.md)
+- [static var copy: GraphicsContext.BlendMode](./copy.md)
   A mode that replaces background image samples with source image samples.
-- [static var sourceIn: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/sourcein.md)
+- [static var sourceIn: GraphicsContext.BlendMode](./sourcein.md)
   A mode that you use to paint the source image, including its transparency, onto the opaque parts of the background.
-- [static var sourceAtop: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/sourceatop.md)
+- [static var sourceAtop: GraphicsContext.BlendMode](./sourceatop.md)
   A mode that you use to paint the opaque parts of the source image onto the opaque parts of the background.
-- [static var destinationOver: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/destinationover.md)
+- [static var destinationOver: GraphicsContext.BlendMode](./destinationover.md)
   A mode that you use to paint the source image under the background.
-- [static var destinationIn: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/destinationin.md)
+- [static var destinationIn: GraphicsContext.BlendMode](./destinationin.md)
   A mode that you use to erase any of the background that isn’t covered by opaque source pixels.
-- [static var destinationOut: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/destinationout.md)
+- [static var destinationOut: GraphicsContext.BlendMode](./destinationout.md)
   A mode that you use to erase any of the background that is covered by opaque source pixels.
-- [static var destinationAtop: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/destinationatop.md)
+- [static var destinationAtop: GraphicsContext.BlendMode](./destinationatop.md)
   A mode that you use to paint the source image under the background, while erasing any of the background not matched by opaque pixels from the source image.
-- [static var xor: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/xor.md)
+- [static var xor: GraphicsContext.BlendMode](./xor.md)
   A mode that you use to clear pixels where both the source and background images are opaque.
 
 

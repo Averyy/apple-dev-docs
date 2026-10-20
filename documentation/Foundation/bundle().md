@@ -1,7 +1,8 @@
 # bundle()
 
 **Framework**: Foundation  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Expands to a bundle instance that’s most likely to contain resources for the calling code.
 
@@ -45,7 +46,8 @@ The `#bundle` macro back-deploys to earlier versions of the OS, as indicated by 
 
 ## See Also
 
-- [class Bundle](bundle.md)
+### Bundle Resources
+- [class Bundle](./bundle.md)
   A representation of the code and resources stored in a bundle directory on disk.
 
 

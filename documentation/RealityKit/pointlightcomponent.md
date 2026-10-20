@@ -1,7 +1,8 @@
 # PointLightComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that defines a point light source.
 
@@ -21,11 +22,11 @@ struct PointLightComponent
 
 ## Mentions
 
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+- [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 
 #### Overview
 
-The strength of a point light depends on a combination of its [`intensity`](pointlightcomponent/intensity.md) and [`attenuationRadius`](pointlightcomponent/attenuationradius.md). The default values for these properties make this light comparable to high-power streetlights, or outdoor floodlights.
+The strength of a point light depends on a combination of its [`intensity`](./pointlightcomponent/intensity.md) and [`attenuationRadius`](./pointlightcomponent/attenuationradius.md). The default values for these properties make this light comparable to high-power streetlights, or outdoor floodlights.
 
 This table shows a few examples of common scenarios similar to a point light source:
 
@@ -42,7 +43,7 @@ This table shows a few examples of common scenarios similar to a point light sou
 | LED streetlight | 8,000-10,000 lumens | 20-30 meters | Illuminates large outdoor areas |
 | Stadium lighting | ~100,000 lumens | 100-200 meters | Lights-up large outdoor areas |
 
-Use this component by applying it to an entity’s [`components`](entity/components.md) set. In this example, the light’s color is red:
+Use this component by applying it to an entity’s [`components`](./entity/components.md) set. In this example, the light’s color is red:
 
 ```swift
 let lightEntity = Entity()
@@ -53,58 +54,58 @@ lightEntity.components.set(redLightComponent)
 
 The point light illuminates entities based on its distance from them. Here is a visual example of how a red `PointLightComponent` illuminates elements based on distance:
 
-| ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which slightly illuminates the close side of the cube and the floor below.](/images/com.apple.RealityKit/pointlight-cube-far.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which strongly illuminates the close side of the cube and the floor below.](/images/com.apple.RealityKit/pointlight-cube-closer.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which intensely illuminates the close side of the cube and the floor below.](/images/com.apple.RealityKit/pointlight-cube-closest.jpg) |
+| ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which slightly illuminates the close side of the cube and the floor below.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/pointlight-cube-far.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which strongly illuminates the close side of the cube and the floor below.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/pointlight-cube-closer.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which intensely illuminates the close side of the cube and the floor below.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/pointlight-cube-closest.jpg) |
 | --- | --- | --- |
 
 > **Note**: The green dot in the above illustrations is only a visual representation of the light’s position.
 
-#### Dynamic Light Capacity
+#### Dynamic light capacity
 
 On older hardware, only a limited number of dynamic lights can affect each object. Devices that support `MTLGPUFamily.apple6` or later lift this limit.
 
-Excessive use of dynamic lights may contribute to user-noticeable frame drops and can cause the device to heat up in graphically demanding situations. Both the number of lights and each light’s coverage affect performance, so use properties like [`attenuationRadius`](pointlightcomponent/attenuationradius.md) to keep a light’s influence no larger than your scene needs. Monitor the thermal state and reduce usage as a mitigation, if necessary.
+Excessive use of dynamic lights may contribute to user-noticeable frame drops and can cause the device to heat up in graphically demanding situations. Both the number of lights and each light’s coverage affect performance, so use properties like [`attenuationRadius`](./pointlightcomponent/attenuationradius.md) to keep a light’s influence no larger than your scene needs. Monitor the thermal state and reduce usage as a mitigation, if necessary.
 
 Because this behavior varies by device, verify your scene’s lighting on the oldest hardware you support. You can check for this support at runtime with `MTLDevice.supportsFamily(.apple6)`.
 
 ## Topics
 
 ### Creating a point light component
-- [init(cgColor: CGColor, intensity: Float, attenuationRadius: Float)](pointlightcomponent/init(cgcolor:intensity:attenuationradius:).md)
+- [init(cgColor: CGColor, intensity: Float, attenuationRadius: Float)](./pointlightcomponent/init%28cgcolor,intensity,attenuationradius%29.md)
   Creates a new instance with the specified color, intensity and attenuation.
 ### Configuring the light
-- [var attenuationRadius: Float](pointlightcomponent/attenuationradius.md)
+- [var attenuationRadius: Float](./pointlightcomponent/attenuationradius.md)
   The distance from the light source where its intensity reaches zero.
-- [var intensity: Float](pointlightcomponent/intensity.md)
+- [var intensity: Float](./pointlightcomponent/intensity.md)
   The intensity of the point light, measured in lumen.
-- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent.md)
+- [var attenuationFalloffExponent: Float](./pointlightcomponent/attenuationfalloffexponent.md)
   The exponent value for the light’s intensity falloff-transition curve.
 ### Supporting types
-- [PointLightComponent.Color](pointlightcomponent/color-swift.typealias.md)
+- [PointLightComponent.Color](./pointlightcomponent/color-swift.typealias.md)
   A platform-specific type used to define color for a point light.
 ### Assigning render layers
-- [var layers: RenderLayer.Set](pointlightcomponent/layers.md)
+- [var layers: RenderLayer.Set](./pointlightcomponent/layers.md)
   The layers this light illuminates.
 ### Lighting the surroundings
-- [PointLightComponent.SurroundingsLight](pointlightcomponent/surroundingslight.md)
+- [PointLightComponent.SurroundingsLight](./pointlightcomponent/surroundingslight.md)
   A component that specifies that the point light illuminates the physical and immersive environment.
 ### Initializers
-- [init(color:intensity:attenuationRadius:)](pointlightcomponent/init(color:intensity:attenuationradius:).md)
+- [init(color:intensity:attenuationRadius:)](./pointlightcomponent/init%28color,intensity,attenuationradius%29.md)
   Creates a point light component with a configuration.
-- [init(color:intensity:attenuationRadius:attenuationFalloffExponent:)](pointlightcomponent/init(color:intensity:attenuationradius:attenuationfalloffexponent:).md)
+- [init(color:intensity:attenuationRadius:attenuationFalloffExponent:)](./pointlightcomponent/init%28color,intensity,attenuationradius,attenuationfalloffexponent%29.md)
   Creates a point light component with a configuration.
 ### Instance Properties
-- [var color: PointLightComponent.Color](pointlightcomponent/color-4ksx7.md)
+- [var color: PointLightComponent.Color](./pointlightcomponent/color-4ksx7.md)
   A color for the point light.
-- [var color: PointLightComponent.Color](pointlightcomponent/color-8gecu.md)
+- [var color: PointLightComponent.Color](./pointlightcomponent/color-8gecu.md)
   A color for the point light.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
+- [Component](./component.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
 
 
 ---

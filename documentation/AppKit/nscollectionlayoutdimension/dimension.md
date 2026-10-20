@@ -1,7 +1,8 @@
 # dimension
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The floating-point value of the dimension.
 
@@ -12,6 +13,10 @@ The floating-point value of the dimension.
 
 ```swift
 var dimension: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat dimension;
 ```
 
 

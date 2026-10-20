@@ -1,14 +1,15 @@
 # mNextExtended64
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 struct IOAudioClientBufferExtendedInfo64 *mNextExtended64;
 ```
 

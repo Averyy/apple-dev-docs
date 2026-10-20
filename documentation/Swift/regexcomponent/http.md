@@ -1,7 +1,8 @@
 # http
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a regex component to match an HTTP date and time, such as “2015-11-14’T’15:05:03’Z’”, and capture the string as a `Date` using the time zone as specified in the string.
 
@@ -19,6 +20,8 @@ Creates a regex component to match an HTTP date and time, such as “2015-11-14�
 ```swift
 static var http: Date.HTTPFormatStyle { get }
 ```
+
+Available when `Self` is `Date.HTTPFormatStyle`.
 
 
 ---

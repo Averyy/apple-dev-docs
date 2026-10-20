@@ -1,7 +1,8 @@
 # vDSP_zvmov
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Complex vector copy; single precision.
 
@@ -10,7 +11,7 @@ Complex vector copy; single precision.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_zvmov(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 

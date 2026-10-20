@@ -1,7 +1,8 @@
 # unexpectedAudioFormat
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The audio input is in unexpected format.
 
@@ -21,7 +22,8 @@ static var unexpectedAudioFormat: SFSpeechError.Code { get }
 
 ## See Also
 
-- [static var incompatibleAudioFormats: SFSpeechError.Code](sfspeecherror/code/incompatibleaudioformats.md)
+### Audio format errors
+- [static var incompatibleAudioFormats: SFSpeechError.Code](./incompatibleaudioformats.md)
   The selected modules do not have an audio format in common or do not support an audio format.
 
 

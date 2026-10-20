@@ -1,7 +1,8 @@
 # Text.TruncationMode.head
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Truncate at the beginning of the line.
 
@@ -26,9 +27,10 @@ Use this kind of truncation to omit characters from the beginning of the string.
 
 ## See Also
 
-- [Text.TruncationMode.middle](text/truncationmode/middle.md)
+### Getting text truncation modes
+- [Text.TruncationMode.middle](./middle.md)
   Truncate in the middle of the line.
-- [Text.TruncationMode.tail](text/truncationmode/tail.md)
+- [Text.TruncationMode.tail](./tail.md)
   Truncate at the end of the line.
 
 

@@ -1,7 +1,8 @@
 # drawingHandler
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination rectangle of the drawing handler block.
 
@@ -12,6 +13,10 @@ The destination rectangle of the drawing handler block.
 
 ```swift
 var drawingHandler: ((NSRect) -> Bool)? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) _Bool (^)(struct CGRect) drawingHandler;
 ```
 
 

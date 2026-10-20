@@ -1,7 +1,8 @@
 # errAuthorizationInvalidRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The authorization parameter is invalid.
 
@@ -13,6 +14,10 @@ The authorization parameter is invalid.
 
 ```swift
 var errAuthorizationInvalidRef: OSStatus { get }
+```
+
+```c
+errAuthorizationInvalidRef
 ```
 
 

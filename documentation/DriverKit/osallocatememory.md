@@ -1,26 +1,28 @@
 # OSAllocateMemory
 
 **Framework**: DriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const auto OSAllocateMemory;
 ```
 
 ## See Also
 
-- [OSAdoptMemory](osadoptmemory.md)
-- [OSAllocateMemoryZero](osallocatememoryzero.md)
-- [OSNoRetain](osnoretain.md)
-- [OSRetain](osretain.md)
+### Constants
+- [OSAdoptMemory](./osadoptmemory.md)
+- [OSAllocateMemoryZero](./osallocatememoryzero.md)
+- [OSNoRetain](./osnoretain.md)
+- [OSRetain](./osretain.md)
 
 
 ---

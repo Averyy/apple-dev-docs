@@ -1,7 +1,8 @@
 # clearcoat
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transparent highlights that simulate a clear, shiny coating on an entity.
 
@@ -22,7 +23,7 @@ var clearcoat: CustomMaterial.Clearcoat { get set }
 
 An entity in RealityKit can display a clearcoat, which is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects.
 
-This property allows you to specify [`clearcoat`](physicallybasedmaterial/clearcoat-swift.property.md) using a single `Float` that applies to the entire material, or a UV-mapped grayscale image to provide different values for different parts of an entity.
+This property allows you to specify [`clearcoat`](../physicallybasedmaterial/clearcoat-swift.property.md) using a single `Float` that applies to the entire material, or a UV-mapped grayscale image to provide different values for different parts of an entity.
 
 The following example specifies `clearcoat` using a single value:
 
@@ -40,7 +41,7 @@ if let clearcoatResource = try? TextureResource.load(named:
 }
 ```
 
-With custom materials, RealityKit doesn’t automatically use the values you set for this property to render your entity. The values from this property are available to the custom material’s surface shader, but it doesn’t render a clearcoat unless the custom material’s [`lightingModel`](custommaterial/lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md) and the surface shader calls `params.surface().set_clearcoat()`.
+With custom materials, RealityKit doesn’t automatically use the values you set for this property to render your entity. The values from this property are available to the custom material’s surface shader, but it doesn’t render a clearcoat unless the custom material’s [`lightingModel`](./lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.clearcoat`](./lightingmodel-swift.enum/clearcoat.md) and the surface shader calls `params.surface().set_clearcoat()`.
 
 The following Metal code demonstrates how to retrieve the scale and texture from this property, and use them to enable clearcoat rendering.
 
@@ -67,23 +68,24 @@ params.surface().set_clearcoat(clearcoat);
 
 ## See Also
 
-- [var baseColor: CustomMaterial.BaseColor](custommaterial/basecolor-swift.property.md)
+### Setting the core properties
+- [var baseColor: CustomMaterial.BaseColor](./basecolor-swift.property.md)
   The color of an entity unmodified by lighting.
-- [var roughness: CustomMaterial.Roughness](custommaterial/roughness-swift.property.md)
+- [var roughness: CustomMaterial.Roughness](./roughness-swift.property.md)
   The amount the surface of the 3D object scatters reflected light.
-- [var metallic: CustomMaterial.Metallic](custommaterial/metallic-swift.property.md)
+- [var metallic: CustomMaterial.Metallic](./metallic-swift.property.md)
   The reflectiveness of an entity.
-- [var normal: CustomMaterial.Normal](custommaterial/normal-swift.property.md)
+- [var normal: CustomMaterial.Normal](./normal-swift.property.md)
   A texture map that stores fine surface details for the entity.
-- [var emissiveColor: CustomMaterial.EmissiveColor](custommaterial/emissivecolor-swift.property.md)
+- [var emissiveColor: CustomMaterial.EmissiveColor](./emissivecolor-swift.property.md)
   The color of light this material emits.
-- [var ambientOcclusion: CustomMaterial.AmbientOcclusion](custommaterial/ambientocclusion-swift.property.md)
+- [var ambientOcclusion: CustomMaterial.AmbientOcclusion](./ambientocclusion-swift.property.md)
   The ambient light exposure for a material.
-- [var specular: CustomMaterial.Specular](custommaterial/specular-swift.property.md)
+- [var specular: CustomMaterial.Specular](./specular-swift.property.md)
   The bright highlights to apply to the entity.
-- [var clearcoatRoughness: CustomMaterial.ClearcoatRoughness](custommaterial/clearcoatroughness-swift.property.md)
+- [var clearcoatRoughness: CustomMaterial.ClearcoatRoughness](./clearcoatroughness-swift.property.md)
   The degree to which an entity’s clear, shiny coating scatters light to create soft highlights.
-- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](custommaterial/clearcoatnormal-swift.property.md)
+- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](./clearcoatnormal-swift.property.md)
   Waviness and imperfections for the top clearcoat.
 
 

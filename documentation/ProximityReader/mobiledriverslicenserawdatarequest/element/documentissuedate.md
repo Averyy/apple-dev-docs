@@ -1,7 +1,8 @@
 # documentIssueDate
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The document’s issue date.
 

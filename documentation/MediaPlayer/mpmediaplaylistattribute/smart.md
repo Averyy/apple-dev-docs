@@ -1,7 +1,8 @@
 # smart
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A smart playlist includes items that match one or more user-specified rules.
 
@@ -17,11 +18,16 @@ A smart playlist includes items that match one or more user-specified rules.
 static var smart: MPMediaPlaylistAttribute { get }
 ```
 
+```c
+MPMediaPlaylistAttributeSmart
+```
+
 ## See Also
 
-- [static var onTheGo: MPMediaPlaylistAttribute](mpmediaplaylistattribute/onthego.md)
+### Constants
+- [static var onTheGo: MPMediaPlaylistAttribute](./onthego.md)
   A playlist created on a device rather than synced from the Music app.
-- [static var genius: MPMediaPlaylistAttribute](mpmediaplaylistattribute/genius.md)
+- [static var genius: MPMediaPlaylistAttribute](./genius.md)
   A Genius playlist includes items related to other items in your Music library.
 
 

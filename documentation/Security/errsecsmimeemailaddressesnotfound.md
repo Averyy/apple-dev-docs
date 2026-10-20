@@ -1,7 +1,8 @@
 # errSecSMIMEEmailAddressesNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An email address mismatch was detected.
 
@@ -18,6 +19,10 @@ An email address mismatch was detected.
 
 ```swift
 var errSecSMIMEEmailAddressesNotFound: OSStatus { get }
+```
+
+```c
+errSecSMIMEEmailAddressesNotFound
 ```
 
 

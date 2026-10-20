@@ -1,7 +1,8 @@
 # init(contentSource:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Picture in Picture controller with a content source.
 
@@ -19,11 +20,15 @@ Creates a Picture in Picture controller with a content source.
 init(contentSource: AVPictureInPictureController.ContentSource)
 ```
 
+```objc
+- (instancetype) initWithContentSource:(AVPictureInPictureControllerContentSource *) contentSource;
+```
+
 #### Discussion
 
 Use this initializer to create a controller that displays its content in a player layer or a sample buffer display layer.
 
-> ❗ **Important**:  Before attempting to create a controller, verify that the current device supports Picture in Picture by calling the [`isPictureInPictureSupported()`](avpictureinpicturecontroller/ispictureinpicturesupported().md) class method. Attempting to create a Picture in Picture controller on an unsupported device returns `nil`.
+> ❗ **Important**:  Before attempting to create a controller, verify that the current device supports Picture in Picture by calling the [`isPictureInPictureSupported()`](./ispictureinpicturesupported%28%29.md) class method. Attempting to create a Picture in Picture controller on an unsupported device returns `nil`.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Use this initializer to create a controller that displays its content in a playe
 
 ## See Also
 
-- [convenience init?(playerLayer: AVPlayerLayer)](avpictureinpicturecontroller/init(playerlayer:).md)
+### Creating a controller
+- [convenience init?(playerLayer: AVPlayerLayer)](./init%28playerlayer%29.md)
   Creates a Picture in Picture controller with a player layer.
 
 

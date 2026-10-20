@@ -1,18 +1,19 @@
 # wait(for:toEqual:timeout:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits a specified amount of time for a property value to equal a specified value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -24,25 +25,26 @@ Waits a specified amount of time for a property value to equal a specified value
 
 #### Discussion
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) if the timeout expires before the observed property equals the expected value.
+This method returns [`false`](../../Swift/false.md) if the timeout expires before the observed property equals the expected value.
 
 ## Parameters
 
-- `keyPath`: The observed property on an [`XCUIElement`](xcuielement.md).
+- `keyPath`: The observed property on an [`XCUIElement`](../xcuielement.md).
 - `expectedValue`: The desired value, which must conform to `Equatable`.
 - `timeout`: The length of time in seconds to wait for the observed property to equal the expected value.
 
 ## See Also
 
-- [func waitForExistence(timeout: TimeInterval) -> Bool](xcuielement/waitforexistence(timeout:).md)
+### Querying element state
+- [func waitForExistence(timeout: TimeInterval) -> Bool](./waitforexistence%28timeout%29.md)
   Waits the specified amount of time for an element to exist.
-- [func waitForNonExistence(timeout: TimeInterval) -> Bool](xcuielement/waitfornonexistence(timeout:).md)
+- [func waitForNonExistence(timeout: TimeInterval) -> Bool](./waitfornonexistence%28timeout%29.md)
   Waits the specified amount of time for an element to no longer exist.
-- [var exists: Bool](xcuielement/exists.md)
+- [var exists: Bool](./exists.md)
   Determines if the element exists.
-- [var isHittable: Bool](xcuielement/ishittable.md)
+- [var isHittable: Bool](./ishittable.md)
   Determines if the system can compute a hit point for the element.
-- [var debugDescription: String](xcuielement/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   Provides debugging information about the element.
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueInputSourceType.application
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A virtual input source type for any preinstalled or downloaded applications on the television.
 
@@ -19,27 +20,32 @@ A virtual input source type for any preinstalled or downloaded applications on t
 case application
 ```
 
+```c
+HMCharacteristicValueInputSourceTypeApplication
+```
+
 ## See Also
 
-- [HMCharacteristicValueInputSourceType.airPlay](hmcharacteristicvalueinputsourcetype/airplay.md)
+### Accessory source types
+- [HMCharacteristicValueInputSourceType.airPlay](./airplay.md)
   The input source is an AirPlay device.
-- [HMCharacteristicValueInputSourceType.componentVideo](hmcharacteristicvalueinputsourcetype/componentvideo.md)
+- [HMCharacteristicValueInputSourceType.componentVideo](./componentvideo.md)
   The input source is a Component Video input.
-- [HMCharacteristicValueInputSourceType.compositeVideo](hmcharacteristicvalueinputsourcetype/compositevideo.md)
+- [HMCharacteristicValueInputSourceType.compositeVideo](./compositevideo.md)
   The input source is a Composite Video input.
-- [HMCharacteristicValueInputSourceType.dvi](hmcharacteristicvalueinputsourcetype/dvi.md)
+- [HMCharacteristicValueInputSourceType.dvi](./dvi.md)
   The input source is a DVI input.
-- [HMCharacteristicValueInputSourceType.hdmi](hmcharacteristicvalueinputsourcetype/hdmi.md)
+- [HMCharacteristicValueInputSourceType.hdmi](./hdmi.md)
   The input source is an HDMI input.
-- [HMCharacteristicValueInputSourceType.homeScreen](hmcharacteristicvalueinputsourcetype/homescreen.md)
+- [HMCharacteristicValueInputSourceType.homeScreen](./homescreen.md)
   A virtual input source type that represents the television’s default home screen, if there is one.
-- [HMCharacteristicValueInputSourceType.other](hmcharacteristicvalueinputsourcetype/other.md)
+- [HMCharacteristicValueInputSourceType.other](./other.md)
   The input source is another input category.
-- [HMCharacteristicValueInputSourceType.sVideo](hmcharacteristicvalueinputsourcetype/svideo.md)
+- [HMCharacteristicValueInputSourceType.sVideo](./svideo.md)
   The input source is a S-Video input.
-- [HMCharacteristicValueInputSourceType.tuner](hmcharacteristicvalueinputsourcetype/tuner.md)
+- [HMCharacteristicValueInputSourceType.tuner](./tuner.md)
   The input source is the television’s tuner.
-- [HMCharacteristicValueInputSourceType.usb](hmcharacteristicvalueinputsourcetype/usb.md)
+- [HMCharacteristicValueInputSourceType.usb](./usb.md)
   The input source is a USB device.
 
 

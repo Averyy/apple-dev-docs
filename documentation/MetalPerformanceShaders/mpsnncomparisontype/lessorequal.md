@@ -1,7 +1,8 @@
 # lessOrEqual
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 12.1+
@@ -15,6 +16,10 @@
 
 ```swift
 static var lessOrEqual: MPSNNComparisonType { get }
+```
+
+```c
+MPSNNComparisonTypeLessOrEqual
 ```
 
 

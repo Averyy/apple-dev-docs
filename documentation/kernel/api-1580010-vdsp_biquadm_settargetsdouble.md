@@ -1,7 +1,8 @@
 # vDSP_biquadm_SetTargetsDouble
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets target values for selected double-precision coefficients within a valid single-precision multichannel biquad IIR filter object.
 
@@ -10,7 +11,7 @@ Sets target values for selected double-precision coefficients within a valid sin
 
 ## Declaration
 
-```swift
+```c
 void vDSP_biquadm_SetTargetsDouble(vDSP_biquadm_Setup __setup, const double *__targets, float __interp_rate, float __interp_threshold, vDSP_Length __start_sec, vDSP_Length __start_chn, vDSP_Length __nsec, vDSP_Length __nchn);
 ```
 

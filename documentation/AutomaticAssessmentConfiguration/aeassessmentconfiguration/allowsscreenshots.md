@@ -1,7 +1,8 @@
 # allowsScreenshots
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow screenshots copied to the clipboard during an assessment.
 
@@ -13,6 +14,10 @@ A Boolean value that indicates whether to allow screenshots copied to the clipbo
 
 ```swift
 var allowsScreenshots: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsScreenshots;
 ```
 
 #### Discussion

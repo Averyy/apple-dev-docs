@@ -1,7 +1,8 @@
 # UIPrintError.Code
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the print error code.
 
@@ -17,38 +18,43 @@ Constants that specify the print error code.
 enum Code
 ```
 
+```c
+enum UIPrintErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [UIPrintError.Code.notAvailable](uiprinterror/code/notavailable.md)
+- [UIPrintError.Code.notAvailable](./code/notavailable.md)
   The device doesn’t support printing.
-- [UIPrintError.Code.noContent](uiprinterror/code/nocontent.md)
+- [UIPrintError.Code.noContent](./code/nocontent.md)
   UIKit hasn’t assigned a print formatter, page renderer, or printing item to print.
-- [UIPrintError.Code.unknownImageFormat](uiprinterror/code/unknownimageformat.md)
+- [UIPrintError.Code.unknownImageFormat](./code/unknownimageformat.md)
   An image is in a format that UIKit doesn’t recognize for printing.
-- [UIPrintError.Code.jobFailed](uiprinterror/code/jobfailed.md)
+- [UIPrintError.Code.jobFailed](./code/jobfailed.md)
   An internal error occurred with the print job.
 ### Global variables
-- [Print error global variables](print-error-global-variables.md)
+- [Print error global variables](../print-error-global-variables.md)
   Global variables associated with print errors.
 ### Initializers
-- [init?(rawValue: Int)](uiprinterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let UIPrintErrorDomain: String](uiprinterrordomain.md)
+### Handling printing errors
+- [let UIPrintErrorDomain: String](../uiprinterrordomain.md)
   The string constant that defines the UIKit printing error domain.
-- [struct UIPrintError](uiprinterror.md)
+- [struct UIPrintError](../uiprinterror.md)
   A structure that contains information about a printing error.
 
 

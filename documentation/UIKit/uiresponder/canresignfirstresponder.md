@@ -1,7 +1,8 @@
 # canResignFirstResponder
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether the responder is willing to relinquish first-responder status.
 
@@ -9,7 +10,7 @@ Returns a Boolean value indicating whether the responder is willing to relinquis
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,25 +19,30 @@ Returns a Boolean value indicating whether the responder is willing to relinquis
 var canResignFirstResponder: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canResignFirstResponder;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the responder can resign first-responder status; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the responder can resign first-responder status; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) by default. You can override this method in your custom responders and return a different value if needed. For example, a text field containing invalid content might want to return [`false`](https://developer.apple.com/documentation/swift/false) to ensure that the user corrects that content first.
+This method returns [`true`](../../Swift/true.md) by default. You can override this method in your custom responders and return a different value if needed. For example, a text field containing invalid content might want to return [`false`](../../Swift/false.md) to ensure that the user corrects that content first.
 
 ## See Also
 
-- [var next: UIResponder?](uiresponder/next.md)
+### Managing the responder chain
+- [var next: UIResponder?](./next.md)
   Returns the next responder in the responder chain, or `nil` if there’s no next responder.
-- [var isFirstResponder: Bool](uiresponder/isfirstresponder.md)
+- [var isFirstResponder: Bool](./isfirstresponder.md)
   Returns a Boolean value indicating whether this object is the first responder.
-- [var canBecomeFirstResponder: Bool](uiresponder/canbecomefirstresponder.md)
+- [var canBecomeFirstResponder: Bool](./canbecomefirstresponder.md)
   Returns a Boolean value indicating whether this object can become the first responder.
-- [func becomeFirstResponder() -> Bool](uiresponder/becomefirstresponder.md)
+- [func becomeFirstResponder() -> Bool](./becomefirstresponder%28%29.md)
   Asks UIKit to make this object the first responder in its window.
-- [func resignFirstResponder() -> Bool](uiresponder/resignfirstresponder.md)
+- [func resignFirstResponder() -> Bool](./resignfirstresponder%28%29.md)
   Notifies this object that it has been asked to relinquish its status as first responder in its window.
 
 

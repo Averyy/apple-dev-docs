@@ -1,7 +1,8 @@
 # clearTargets(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ClearTargets
 
@@ -17,7 +18,15 @@ Command ClearTargets
 ## Declaration
 
 ```swift
+func clearTargets(with params: MTREnergyEVSEClusterClearTargetsParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func clearTargets(with params: MTREnergyEVSEClusterClearTargetsParams?) async throws
+```
+
+```objc
+- (void) clearTargetsWithParams:(MTREnergyEVSEClusterClearTargetsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

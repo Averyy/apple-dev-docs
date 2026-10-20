@@ -1,7 +1,8 @@
 # protocolString
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protocol being used for communication with the accessory.
 
@@ -19,9 +20,14 @@ The protocol being used for communication with the accessory.
 var protocolString: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * protocolString;
+```
+
 ## See Also
 
-- [var accessory: EAAccessory?](easession/accessory.md)
+### Getting Session Information
+- [var accessory: EAAccessory?](./accessory.md)
   The accessory attached to the session.
 
 

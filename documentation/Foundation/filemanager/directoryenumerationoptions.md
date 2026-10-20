@@ -1,7 +1,8 @@
 # FileManager.DirectoryEnumerationOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for enumerating the contents of directories.
 
@@ -20,53 +21,58 @@ Options for enumerating the contents of directories.
 struct DirectoryEnumerationOptions
 ```
 
+```c
+enum NSDirectoryEnumerationOptions : NSUInteger;
+```
+
 #### Overview
 
-These options are used with the [`contentsOfDirectory(at:includingPropertiesForKeys:options:)`](filemanager/contentsofdirectory(at:includingpropertiesforkeys:options:).md) method.
+These options are used with the [`contentsOfDirectory(at:includingPropertiesForKeys:options:)`](./contentsofdirectory%28at,includingpropertiesforkeys,options%29.md) method.
 
 ## Topics
 
 ### Creating a Directory Enumeration Options Value
-- [init(rawValue: UInt)](filemanager/directoryenumerationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./directoryenumerationoptions/init%28rawvalue%29.md)
   Creates a directory enumeration options value.
 ### Directory Enumeration Options
-- [static var skipsSubdirectoryDescendants: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/skipssubdirectorydescendants.md)
+- [static var skipsSubdirectoryDescendants: FileManager.DirectoryEnumerationOptions](./directoryenumerationoptions/skipssubdirectorydescendants.md)
   An option to perform a shallow enumeration that doesn’t descend into directories.
-- [static var skipsPackageDescendants: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/skipspackagedescendants.md)
+- [static var skipsPackageDescendants: FileManager.DirectoryEnumerationOptions](./directoryenumerationoptions/skipspackagedescendants.md)
   An option to treat packages like files and not descend into their contents.
-- [static var skipsHiddenFiles: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/skipshiddenfiles.md)
+- [static var skipsHiddenFiles: FileManager.DirectoryEnumerationOptions](./directoryenumerationoptions/skipshiddenfiles.md)
   An option to skip hidden files.
 ### Type Properties
-- [static var includesDirectoriesPostOrder: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/includesdirectoriespostorder.md)
+- [static var includesDirectoriesPostOrder: FileManager.DirectoryEnumerationOptions](./directoryenumerationoptions/includesdirectoriespostorder.md)
   An option to skip hidden files.
-- [static var producesRelativePathURLs: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/producesrelativepathurls.md)
+- [static var producesRelativePathURLs: FileManager.DirectoryEnumerationOptions](./directoryenumerationoptions/producesrelativepathurls.md)
   An option to skip hidden files.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [FileManager.SearchPathDirectory](filemanager/searchpathdirectory.md)
+### Supporting Types
+- [FileManager.SearchPathDirectory](./searchpathdirectory.md)
   The location of significant directories.
-- [FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask.md)
+- [FileManager.SearchPathDomainMask](./searchpathdomainmask.md)
   Domain constants specifying base locations to use when you search for significant directories.
-- [struct FileAttributeKey](fileattributekey.md)
+- [struct FileAttributeKey](../fileattributekey.md)
   Keys in dictionaries used to get and set file attributes.
-- [struct FileAttributeType](fileattributetype.md)
+- [struct FileAttributeType](../fileattributetype.md)
   Values representing a file’s type attribute.
-- [struct FileProtectionType](fileprotectiontype.md)
+- [struct FileProtectionType](../fileprotectiontype.md)
   Protection level values that can be associated with a file attribute key.
-- [struct URLFileProtection](urlfileprotection.md)
+- [struct URLFileProtection](../urlfileprotection.md)
   Protection-level values for a URL resource key.
 
 

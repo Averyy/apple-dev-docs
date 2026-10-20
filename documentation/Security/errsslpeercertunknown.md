@@ -1,7 +1,8 @@
 # errSSLPeerCertUnknown
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate is unknown.
 
@@ -18,6 +19,10 @@ The certificate is unknown.
 
 ```swift
 var errSSLPeerCertUnknown: OSStatus { get }
+```
+
+```c
+errSSLPeerCertUnknown
 ```
 
 

@@ -1,16 +1,19 @@
 # request
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The request object associated with the estimated time of arrival response.
 
 **Availability**:
-- MapKit JS 5.46+
+- MapKit JS 5.46+ - Deprecated in 6.0
+
+> **Deprecated**: Removed in MapKit JS 6.0.0.
 
 ## Declaration
 
-```swift
+```
 request: object;
 ```
 

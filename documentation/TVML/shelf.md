@@ -26,7 +26,7 @@ The `shelf` element is a horizontal row consisting of one or more elements. The 
 
 There are several standard shelf configurations that are used to display related content.
 
-##### Also Watched Shelf
+##### Also-Watched Shelf
 
 The `shelf` element can display information about other products that have been watched by people who have also watched the selected product. The shelf displays the image you associate with the also-watched product, and the title is only displayed when the also-watched product is in focus. Here’s an example of a `shelf` element that contains three other products.
 
@@ -52,7 +52,7 @@ The `shelf` element can display information about other products that have been 
 </shelf>
 ```
 
-##### Cast and Crew Shelf
+##### Cast-and-Crew Shelf
 
 The `shelf` element can display information about the cast and crew associated with the product. Each person is represented by a large circle that contains the individual’s initials. Below the circle is the individual’s name and the name of the character they play. Here’s an example of a `shelf` element that contains three cast members.
 
@@ -114,7 +114,7 @@ The extras shelf typically contains two sections. The first section contains an 
 </shelf>
 ```
 
-##### Review and Ratings Shelf
+##### Review-and-Ratings Shelf
 
 The `shelf` element can display a list of ratings and reviews of the item it is associated with. Typically, a `lockup` element is displayed, followed by one or more `buttonLockup` elements. Common rating lockups contain information from iTunes or Rotten Tomatoes.
 
@@ -163,65 +163,66 @@ The `shelf` element can display a list of ratings and reviews of the item it is 
 </shelf>
 ```
 
-##### Subelements of Shelf
+##### Subelements of shelf
 
-- [`header`](header.md)
-- [`section`](section.md)
-- [`text`](text.md)
+- [header](./header.md)
+- [section](./section.md)
+- [text](./text.md)
 
-##### Elements That Use Shelf
+##### Elements that Use shelf
 
-- [`alertTemplate`](alerttemplate.md)
-- [`descriptiveAlertTemplate`](descriptivealerttemplate.md)
-- [`footer`](footer.md)
-- [`productBundleTemplate`](productbundletemplate.md)
-- [`productTemplate`](producttemplate.md)
-- [`separator`](separator.md)
+- [alertTemplate](./alerttemplate.md)
+- [descriptiveAlertTemplate](./descriptivealerttemplate.md)
+- [footer](./footer.md)
+- [productBundleTemplate](./productbundletemplate.md)
+- [productTemplate](./producttemplate.md)
+- [separator](./separator.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [tv-interitem-spacing](tv-interitem-spacing.md)
+- [tv-interitem-spacing](./tv-interitem-spacing.md)
   Specifies the spacing between child elements.
 ### Valid TVML Attributes
-- [autoHighlight](autohighlight.md)
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [centered](centered.md)
+- [centered](./centered.md)
   Centers media items in a shelf.
-- [itemID](itemid.md)
+- [itemID](./itemid.md)
   Mark elements for reuse during DOM updates.
-- [needsMoreThreshold](needsmorethreshold.md)
+- [needsMoreThreshold](./needsmorethreshold.md)
   Sets the amount of remaining screen lengths before firing the needs more event.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [rowCount](rowcount.md)
+- [rowCount](./rowcount.md)
   Specifies the number of rows in a shelf.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [carousel](carousel.md)
+### Container Elements
+- [carousel](./carousel.md)
   Arranges images in a row.
-- [grid](grid.md)
+- [grid](./grid.md)
   Arranges elements in a grid pattern.
-- [imgDeck](imgdeck.md)
+- [imgDeck](./imgdeck.md)
   Contains several images to be displayed at a later time.
-- [infoTable](infotable.md)
+- [infoTable](./infotable.md)
   Displays contained element information in a vertical format, with each successive element directly below the previous element.
-- [organizer](organizer.md)
+- [organizer](./organizer.md)
   Creates a generic element with its contained elements arranged through TVML styles.
-- [row](row.md)
+- [row](./row.md)
   Displays elements horizontally.
-- [section](section.md)
+- [section](./section.md)
   Combines elements and acts as a single element.
-- [stack](stack.md)
+- [stack](./stack.md)
   Groups and lays out elements vertically.
 
 

@@ -1,7 +1,8 @@
 # documentTargetView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document target view.
 
@@ -17,13 +18,18 @@ The document target view.
 var documentTargetView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIView * documentTargetView;
+```
+
 ## See Also
 
-- [var title: String](uidocumentviewcontroller/launchoptions-swift.class/title.md)
+### Configuring the appearance
+- [var title: String](./title.md)
   The title that appears in the title view.
-- [var background: UIBackgroundConfiguration](uidocumentviewcontroller/launchoptions-swift.class/background.md)
+- [var background: UIBackgroundConfiguration](./background.md)
   A configuration that describes the launch scene’s background.
-- [var browserViewController: UIDocumentBrowserViewController](uidocumentviewcontroller/launchoptions-swift.class/browserviewcontroller.md)
+- [var browserViewController: UIDocumentBrowserViewController](./browserviewcontroller.md)
   The document browser view controller.
 
 

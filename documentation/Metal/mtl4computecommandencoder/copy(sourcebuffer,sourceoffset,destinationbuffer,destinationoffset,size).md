@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that copies data from a buffer instance into another.
@@ -20,11 +21,15 @@ Encodes a command that copies data from a buffer instance into another.
 func copy(sourceBuffer: any MTLBuffer, sourceOffset: Int, destinationBuffer: any MTLBuffer, destinationOffset: Int, size: Int)
 ```
 
+```objc
+- (void) copyFromBuffer:(id<MTLBuffer>) sourceBuffer sourceOffset:(NSUInteger) sourceOffset toBuffer:(id<MTLBuffer>) destinationBuffer destinationOffset:(NSUInteger) destinationOffset size:(NSUInteger) size;
+```
+
 ## Parameters
 
-- `sourceBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance the command copies data from.
+- `sourceBuffer`: An [`MTLBuffer`](../mtlbuffer.md) instance the command copies data from.
 - `sourceOffset`: A byte offset within `sourceBuffer` the command copies from.
-- `destinationBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance the command copies data to.
+- `destinationBuffer`: An [`MTLBuffer`](../mtlbuffer.md) instance the command copies data to.
 - `destinationOffset`: A byte offset within `destinationBuffer` the command copies to.
 - `size`: The number of bytes the command copies from `sourceBuffer` to `destinationBuffer`.
 

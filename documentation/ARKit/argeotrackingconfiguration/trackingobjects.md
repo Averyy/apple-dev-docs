@@ -1,7 +1,8 @@
 # trackingObjects
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Objects to track in the scene.
 
@@ -15,6 +16,10 @@ Objects to track in the scene.
 var trackingObjects: Set<ARReferenceObject> { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSSet<ARReferenceObject *> * trackingObjects;
+```
+
 #### Discussion
 
 The system tracks the object at the full frame rate of the selected `videoFormat`. When an object is tracked, an `ARObjectAnchor` is added to the session.
@@ -25,7 +30,8 @@ Use this property for moving or handheld objects that require precise, per-frame
 
 ## See Also
 
-- [var detectionObjects: Set<ARReferenceObject>](argeotrackingconfiguration/detectionobjects.md)
+### Detecting and tracking real-world objects
+- [var detectionObjects: Set<ARReferenceObject>](./detectionobjects.md)
   A set of 3D objects that the framework attempts to detect in the user’s environment.
 
 

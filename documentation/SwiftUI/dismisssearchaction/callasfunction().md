@@ -1,7 +1,8 @@
 # callAsFunction()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the current search operation, if any.
 
@@ -23,7 +24,7 @@ Dismisses the current search operation, if any.
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it for you when you call the [`DismissSearchAction`](dismisssearchaction.md) structure that you get from the [`Environment`](environment.md):
+Don’t call this method directly. SwiftUI calls it for you when you call the [`DismissSearchAction`](../dismisssearchaction.md) structure that you get from the [`Environment`](../environment.md):
 
 ```swift
 struct SearchedView: View {
@@ -37,7 +38,7 @@ struct SearchedView: View {
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 
 ---

@@ -1,7 +1,8 @@
 # style
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display style for the action button.
 
@@ -16,13 +17,18 @@ The display style for the action button.
 var style: CPAlertAction.Style { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CPAlertActionStyle style;
+```
+
 #### Discussion
 
-The combination of [`style`](cpalertaction/style-swift.property.md) and the template type, [`CPActionSheetTemplate`](cpactionsheettemplate.md) or [`CPAlertTemplate`](cpalerttemplate.md), determines the appearance of the action button.
+The combination of [`style`](./style-swift.property.md) and the template type, [`CPActionSheetTemplate`](../cpactionsheettemplate.md) or [`CPAlertTemplate`](../cpalerttemplate.md), determines the appearance of the action button.
 
 ## See Also
 
-- [CPAlertAction.Style](cpalertaction/style-swift.enum.md)
+### Getting the Action Style
+- [CPAlertAction.Style](./style-swift.enum.md)
   Display styles for an alert’s action button.
 
 

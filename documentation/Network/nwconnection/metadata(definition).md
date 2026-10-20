@@ -1,7 +1,8 @@
 # metadata(definition:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the connection-wide metadata for a specific protocol.
 
@@ -22,13 +23,14 @@ final func metadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?
 
 ## See Also
 
-- [class NWProtocolMetadata](nwprotocolmetadata.md)
+### Inspecting Connections
+- [class NWProtocolMetadata](../nwprotocolmetadata.md)
   The abstract superclass for specifying metadata about a network protocol.
-- [let endpoint: NWEndpoint](nwconnection/endpoint.md)
+- [let endpoint: NWEndpoint](./endpoint.md)
   The remote endpoint with which the connection was initialized.
-- [let parameters: NWParameters](nwconnection/parameters.md)
+- [let parameters: NWParameters](./parameters.md)
   The parameters with which the connection was initialized.
-- [var queue: DispatchQueue?](nwconnection/queue.md)
+- [var queue: DispatchQueue?](./queue.md)
   The queue on which connection events are delivered.
 
 

@@ -1,7 +1,8 @@
 # Identifiable
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A class of types whose instances hold the value of an entity with stable identity.
 
@@ -41,24 +42,25 @@ It’s up to both the conformer and the receiver of the protocol to document the
 ## Topics
 
 ### Specifying the Associated Type
-- [associatedtype ID : Hashable](identifiable/id-swift.associatedtype.md)
+- [associatedtype ID : Hashable](./identifiable/id-swift.associatedtype.md)
   A type representing the stable identity of the entity associated with an instance.
 ### Specifying the Identified Item
-- [var id: Self.ID](identifiable/id-8t2ws.md)
+- [var id: Self.ID](./identifiable/id-8t2ws.md)
   The stable identity of the entity associated with this instance.
 
 ## Relationships
 
 ### Inherited By
-- [DistributedActor](../distributed/distributedactor.md)
+- [DistributedActor](../Distributed/distributedactor.md)
 ### Conforming Types
-- [Never](never.md)
+- [Never](./never.md)
 
 ## See Also
 
-- [protocol Equatable](equatable.md)
+### Equality and Ordering
+- [protocol Equatable](./equatable.md)
   A type that can be compared for value equality.
-- [protocol Comparable](comparable.md)
+- [protocol Comparable](./comparable.md)
   A type that can be compared using the relational operators `<`, `<=`, `>=`, and `>`.
 
 

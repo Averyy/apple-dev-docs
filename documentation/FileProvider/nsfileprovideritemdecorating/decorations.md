@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Asks the item for an array of decorations.
@@ -19,9 +20,13 @@ Asks the item for an array of decorations.
 var decorations: [NSFileProviderItemDecorationIdentifier]? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSArray<NSString *> * decorations;
+```
+
 #### Discussion
 
-The system calls this method to request the item’s decorations. Your implementation should return an array of [`NSFileProviderItemDecorationIdentifier`](nsfileprovideritemdecorationidentifier.md) instances.
+The system calls this method to request the item’s decorations. Your implementation should return an array of [`NSFileProviderItemDecorationIdentifier`](../nsfileprovideritemdecorationidentifier.md) instances.
 
 
 ---

@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value string.
 

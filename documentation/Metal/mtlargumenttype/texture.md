@@ -1,17 +1,18 @@
 # MTLArgumentType.texture
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The argument is a texture.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 16.0 (renamed: MTLBindingType)
+- iPadOS 8.0+ - Deprecated in 16.0 (renamed: MTLBindingType)
+- Mac Catalyst 13.1+ - Deprecated in 16.0 (renamed: MTLBindingType)
+- macOS 10.11+ - Deprecated in 13.0 (renamed: MTLBindingType)
+- tvOS - Deprecated in 16.0 (renamed: MTLBindingType)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: MTLBindingType)
 
 ## Declaration
 
@@ -19,25 +20,30 @@ The argument is a texture.
 case texture
 ```
 
+```c
+MTLArgumentTypeTexture
+```
+
 ## See Also
 
-- [MTLArgumentType.buffer](mtlargumenttype/buffer.md)
+### Argument types
+- [MTLArgumentType.buffer](./buffer.md)
   The argument is a buffer.
-- [MTLArgumentType.threadgroupMemory](mtlargumenttype/threadgroupmemory.md)
+- [MTLArgumentType.threadgroupMemory](./threadgroupmemory.md)
   The argument is a pointer to threadgroup memory.
-- [MTLArgumentType.sampler](mtlargumenttype/sampler.md)
+- [MTLArgumentType.sampler](./sampler.md)
   The argument is a texture sampler.
-- [MTLArgumentType.imageblock](mtlargumenttype/imageblock.md)
+- [MTLArgumentType.imageblock](./imageblock.md)
   The argument is an imageblock.
-- [MTLArgumentType.imageblockData](mtlargumenttype/imageblockdata.md)
+- [MTLArgumentType.imageblockData](./imageblockdata.md)
   The argument is imageblock data.
-- [MTLArgumentType.visibleFunctionTable](mtlargumenttype/visiblefunctiontable.md)
+- [MTLArgumentType.visibleFunctionTable](./visiblefunctiontable.md)
   The argument is a visible function table.
-- [MTLArgumentType.intersectionFunctionTable](mtlargumenttype/intersectionfunctiontable.md)
+- [MTLArgumentType.intersectionFunctionTable](./intersectionfunctiontable.md)
   The argument is an intersection function table.
-- [MTLArgumentType.primitiveAccelerationStructure](mtlargumenttype/primitiveaccelerationstructure.md)
+- [MTLArgumentType.primitiveAccelerationStructure](./primitiveaccelerationstructure.md)
   The argument is a bottom-level ray tracing acceleraton structure for a set of primitives.
-- [MTLArgumentType.instanceAccelerationStructure](mtlargumenttype/instanceaccelerationstructure.md)
+- [MTLArgumentType.instanceAccelerationStructure](./instanceaccelerationstructure.md)
   The argument is a top-level ray tracing acceleration structure for a set of instances.
 
 

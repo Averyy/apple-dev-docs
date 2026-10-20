@@ -1,7 +1,8 @@
 # init(contentsOf:contentType:openInPlace:coordinated:visibility:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Provides data-backed content from an existing file with the specified parameters.
 
@@ -22,25 +23,26 @@ convenience init(contentsOf fileURL: URL, contentType: UTType?, openInPlace: Boo
 
 #### Discussion
 
-If [`openInPlace`](nsitemproviderfileoptions/openinplace.md) is set to `false`, the system copies the file provided before the load handler returns.
+If [`openInPlace`](../nsitemproviderfileoptions/openinplace.md) is set to `false`, the system copies the file provided before the load handler returns.
 
 ## Parameters
 
 - `fileURL`: The URL of the file to use for the item provider’s data.
 - `contentType`: The content type of the specified file.
 - `openInPlace`: `true` if the system opens the file in place.
-- `coordinated`: `true` if the returned file must be accessed using [`NSFileCoordinator`](nsfilecoordinator.md).
-- `visibility`: The [`NSItemProviderRepresentationVisibility`](nsitemproviderrepresentationvisibility.md) setting the system uses to identify which processes can see this content.
+- `coordinated`: `true` if the returned file must be accessed using [`NSFileCoordinator`](../nsfilecoordinator.md).
+- `visibility`: The [`NSItemProviderRepresentationVisibility`](../nsitemproviderrepresentationvisibility.md) setting the system uses to identify which processes can see this content.
 
 ## See Also
 
-- [convenience init?(contentsOf: URL!)](nsitemprovider/init(contentsof:).md)
+### Creating an item provider
+- [convenience init?(contentsOf: URL!)](./init%28contentsof%29.md)
   Provides data-backed content from an existing file.
-- [init(item: (any NSSecureCoding)?, typeIdentifier: String?)](nsitemprovider/init(item:typeidentifier:).md)
+- [init(item: (any NSSecureCoding)?, typeIdentifier: String?)](./init%28item,typeidentifier%29.md)
   Creates an item provider with an object, according to the item provider type coercion policy.
-- [init()](nsitemprovider/init.md)
+- [init()](./init%28%29.md)
   Creates an empty item provider to which you can later register a data or file representation.
-- [convenience init(object: any NSItemProviderWriting)](nsitemprovider/init(object:).md)
+- [convenience init(object: any NSItemProviderWriting)](./init%28object%29.md)
   Creates a new item provider, employing a specified object’s type identifiers to specify the data representations eligible for the provider to load.
 
 

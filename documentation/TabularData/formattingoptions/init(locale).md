@@ -1,7 +1,8 @@
 # init(locale:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a formatting options instance with a locale.
 
@@ -22,9 +23,10 @@ init(locale: Locale)
 
 ## See Also
 
-- [init()](formattingoptions/init.md)
+### Creating the Options Object
+- [init()](./init%28%29.md)
   Creates a formatting options instance with default parameters.
-- [init(maximumLineWidth: Int, maximumCellWidth: Int, maximumRowCount: Int, includesColumnTypes: Bool)](formattingoptions/init(maximumlinewidth:maximumcellwidth:maximumrowcount:includescolumntypes:).md)
+- [init(maximumLineWidth: Int, maximumCellWidth: Int, maximumRowCount: Int, includesColumnTypes: Bool)](./init%28maximumlinewidth,maximumcellwidth,maximumrowcount,includescolumntypes%29.md)
   Creates a formatting options instance.
 
 

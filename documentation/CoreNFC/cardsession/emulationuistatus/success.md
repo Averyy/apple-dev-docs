@@ -1,7 +1,8 @@
 # CardSession.EmulationUIStatus.success
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status display to indicate a successful operation, such as a checkmark.
 
@@ -18,7 +19,8 @@ case success
 
 ## See Also
 
-- [CardSession.EmulationUIStatus.failure](cardsession/emulationuistatus/failure.md)
+### Emulation statuses
+- [CardSession.EmulationUIStatus.failure](./failure.md)
   A status display to indicate an error, such as an exclamation mark.
 
 

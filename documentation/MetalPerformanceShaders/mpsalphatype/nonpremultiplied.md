@@ -1,7 +1,8 @@
 # MPSAlphaType.nonPremultiplied
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image is not premultiplied by alpha.
 
@@ -19,15 +20,20 @@ The image is not premultiplied by alpha.
 case nonPremultiplied
 ```
 
+```c
+MPSAlphaTypeNonPremultiplied
+```
+
 #### Discussion
 
 The image uses non-premultiplied alpha. Alpha is not guaranteed to be 1.
 
 ## See Also
 
-- [MPSAlphaType.alphaIsOne](mpsalphatype/alphaisone.md)
+### Constants
+- [MPSAlphaType.alphaIsOne](./alphaisone.md)
   Alpha is guaranteed to be 1.
-- [MPSAlphaType.premultiplied](mpsalphatype/premultiplied.md)
+- [MPSAlphaType.premultiplied](./premultiplied.md)
   The image is premultiplied by alpha.
 
 

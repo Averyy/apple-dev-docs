@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create buffer from an array of elements.
 
@@ -17,6 +18,102 @@ Create buffer from an array of elements.
 
 ```swift
 init(_ array: [Element])
+```
+
+Available when `Element` is `MeshJointInfluence`.
+
+**Other overloads**:
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init(_ array: [Element])
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == Double
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == Float
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == Int16
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == Int32
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == Int8
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == MeshJointInfluence
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == SIMD2<Float>
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == SIMD3<Float>
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == SIMD4<Float>
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == UInt16
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == UInt32
+```
+
+```swift
+init<S>(_ sequence: S) where S : Sequence, S.Element == UInt8
 ```
 
 

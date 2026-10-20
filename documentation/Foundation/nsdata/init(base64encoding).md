@@ -1,22 +1,29 @@
 # init(base64Encoding:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a data object initialized with the given Base64 encoded string.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 4.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 4.0+ - Deprecated in 7.0
+- iPadOS 4.0+ - Deprecated in 7.0
+- Mac Catalyst 4.0+ - Deprecated in 7.0
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: You should transition to either [`init(base64EncodedString:options:)`](./init%28base64encodedstring,options%29.md) or [`init(base64EncodedData:options:)`](./init%28base64encodeddata,options%29.md).
 
 ## Declaration
 
 ```swift
 init?(base64Encoding base64String: String)
+```
+
+```objc
+- (id) initWithBase64Encoding:(NSString *) base64String;
 ```
 
 #### Return Value
@@ -25,7 +32,7 @@ A data object built by Base-64 decoding the provided string. Returns `nil` if th
 
 #### Discussion
 
-Although this method was only introduced publicly for iOS 7, it has existed since iOS 4; you can use it if your application needs to target an operating system prior to iOS 7. This method behaves like [`init(base64EncodedString:options:)`](nsdata/init(base64encodedstring:options:).md), but ignores all unknown characters.
+Although this method was only introduced publicly for iOS 7, it has existed since iOS 4; you can use it if your application needs to target an operating system prior to iOS 7. This method behaves like [`init(base64EncodedString:options:)`](./init%28base64encodedstring,options%29.md), but ignores all unknown characters.
 
 ## Parameters
 
@@ -33,19 +40,20 @@ Although this method was only introduced publicly for iOS 7, it has existed sinc
 
 ## See Also
 
-- [init?(base64EncodedData: Data, options: NSData.Base64DecodingOptions)](nsdata/init(base64encodeddata:options:).md)
+### Encoding and Decoding Base64 Representations
+- [init?(base64EncodedData: Data, options: NSData.Base64DecodingOptions)](./init%28base64encodeddata,options%29.md)
   Initializes a data object with the given Base64 encoded data.
-- [init?(base64EncodedString: String, options: NSData.Base64DecodingOptions)](nsdata/init(base64encodedstring:options:).md)
+- [init?(base64EncodedString: String, options: NSData.Base64DecodingOptions)](./init%28base64encodedstring,options%29.md)
   Initializes a data object with the given Base64 encoded string.
-- [func base64EncodedData(options: NSData.Base64EncodingOptions) -> Data](nsdata/base64encodeddata(options:).md)
+- [func base64EncodedData(options: NSData.Base64EncodingOptions) -> Data](./base64encodeddata%28options%29.md)
   Creates a Base64, UTF-8 encoded data object from the string using the given options.
-- [func base64EncodedString(options: NSData.Base64EncodingOptions) -> String](nsdata/base64encodedstring(options:).md)
+- [func base64EncodedString(options: NSData.Base64EncodingOptions) -> String](./base64encodedstring%28options%29.md)
   Creates a Base64 encoded string from the string using the given options.
-- [func base64Encoding() -> String](nsdata/base64encoding.md)
+- [func base64Encoding() -> String](./base64encoding%28%29.md)
   Initializes a Base64 encoded string from the string.
-- [NSData.Base64EncodingOptions](nsdata/base64encodingoptions.md)
+- [NSData.Base64EncodingOptions](./base64encodingoptions.md)
   Options for methods used to Base64 encode data.
-- [NSData.Base64DecodingOptions](nsdata/base64decodingoptions.md)
+- [NSData.Base64DecodingOptions](./base64decodingoptions.md)
   Options to modify the decoding algorithm used to decode Base64 encoded data.
 
 

@@ -1,17 +1,18 @@
 # mPanningMode
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode to use for panning.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ The mode to use for panning.
 var mPanningMode: AudioPanningMode
 ```
 
+```c
+AudioPanningMode mPanningMode;
+```
+
 #### Discussion
 
-See [`AudioPanningMode`](audiopanningmode.md).
+See [`AudioPanningMode`](../audiopanningmode.md).
 
 
 ---

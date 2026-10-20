@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style that automatically chooses the appropriate presentation transition for the current context.
 
@@ -20,17 +21,20 @@ A style that automatically chooses the appropriate presentation transition for t
 static var automatic: AutomaticNavigationTransition { get }
 ```
 
+Available when `Self` is `AutomaticNavigationTransition`.
+
 ## See Also
 
-- [struct AutomaticNavigationTransition](automaticnavigationtransition.md)
+### Getting built-in transitions
+- [struct AutomaticNavigationTransition](../automaticnavigationtransition.md)
   A style that automatically chooses the appropriate presentation transition for the current context.
-- [static var crossFade: CrossFadeNavigationTransition](navigationtransition/crossfade.md)
+- [static var crossFade: CrossFadeNavigationTransition](./crossfade.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
-- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+- [struct CrossFadeNavigationTransition](../crossfadenavigationtransition.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
-- [static func zoom(sourceID: some Hashable, in: Namespace.ID) -> ZoomNavigationTransition](navigationtransition/zoom(sourceid:in:).md)
+- [static func zoom(sourceID: some Hashable, in: Namespace.ID) -> ZoomNavigationTransition](./zoom%28sourceid,in%29.md)
   A navigation transition that zooms the appearing view from a given source view.
-- [struct ZoomNavigationTransition](zoomnavigationtransition.md)
+- [struct ZoomNavigationTransition](../zoomnavigationtransition.md)
   A navigation transition that zooms the appearing view from a given source view.
 
 

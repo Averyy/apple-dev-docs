@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress event for the given integer.
 
@@ -22,7 +23,7 @@ init(rawValue: Int)
 
 #### Discussion
 
-You do not use this initializer directly. Get update event types from the type properties, such as [`trainingBegin`](mlupdateprogressevent/trainingbegin.md), [`miniBatchEnd`](mlupdateprogressevent/minibatchend.md), or [`epochEnd`](mlupdateprogressevent/epochend.md).
+You do not use this initializer directly. Get update event types from the type properties, such as [`trainingBegin`](./trainingbegin.md), [`miniBatchEnd`](./minibatchend.md), or [`epochEnd`](./epochend.md).
 
 
 ---

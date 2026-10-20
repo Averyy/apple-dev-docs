@@ -1,7 +1,8 @@
 # kCFURLVolumeSupportsExtendedSecurityKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Key for determining whether the volume supports extended security (access control lists), returned as a `CFBoolean` object.
 
@@ -20,37 +21,42 @@ Key for determining whether the volume supports extended security (access contro
 let kCFURLVolumeSupportsExtendedSecurityKey: CFString!
 ```
 
+```c
+extern CFStringRef const kCFURLVolumeSupportsExtendedSecurityKey;
+```
+
 ## See Also
 
-- [let kCFURLVolumeNameKey: CFString!](kcfurlvolumenamekey.md)
+### Constants
+- [let kCFURLVolumeNameKey: CFString!](./kcfurlvolumenamekey.md)
   The name of the volume, returned as a `CFString` object.
-- [let kCFURLVolumeLocalizedNameKey: CFString!](kcfurlvolumelocalizednamekey.md)
+- [let kCFURLVolumeLocalizedNameKey: CFString!](./kcfurlvolumelocalizednamekey.md)
   The user-presentable name of the volume, returned as a `CFString` object.
-- [let kCFURLVolumeLocalizedFormatDescriptionKey: CFString!](kcfurlvolumelocalizedformatdescriptionkey.md)
+- [let kCFURLVolumeLocalizedFormatDescriptionKey: CFString!](./kcfurlvolumelocalizedformatdescriptionkey.md)
   Key for the volume’s descriptive format name, returned as a `CFString` object.
-- [let kCFURLVolumeTotalCapacityKey: CFString!](kcfurlvolumetotalcapacitykey.md)
+- [let kCFURLVolumeTotalCapacityKey: CFString!](./kcfurlvolumetotalcapacitykey.md)
   Key for the volume’s capacity in bytes, returned as a `CFNumber` object.
-- [let kCFURLVolumeAvailableCapacityKey: CFString!](kcfurlvolumeavailablecapacitykey.md)
+- [let kCFURLVolumeAvailableCapacityKey: CFString!](./kcfurlvolumeavailablecapacitykey.md)
   Key for the volume’s available capacity in bytes, returned as a `CFNumber` object.
-- [let kCFURLVolumeResourceCountKey: CFString!](kcfurlvolumeresourcecountkey.md)
+- [let kCFURLVolumeResourceCountKey: CFString!](./kcfurlvolumeresourcecountkey.md)
   Key for the total number of resources on the volume, returned as a `CFNumber` object.
-- [let kCFURLVolumeSupportsPersistentIDsKey: CFString!](kcfurlvolumesupportspersistentidskey.md)
+- [let kCFURLVolumeSupportsPersistentIDsKey: CFString!](./kcfurlvolumesupportspersistentidskey.md)
   Key for determining whether the volume supports persistent IDs, returned as a `CFBoolean` object.
-- [let kCFURLVolumeSupportsSymbolicLinksKey: CFString!](kcfurlvolumesupportssymboliclinkskey.md)
+- [let kCFURLVolumeSupportsSymbolicLinksKey: CFString!](./kcfurlvolumesupportssymboliclinkskey.md)
   Key for determining whether the volume supports symbolic links, returned as a `CFBoolean` object.
-- [let kCFURLVolumeSupportsHardLinksKey: CFString!](kcfurlvolumesupportshardlinkskey.md)
+- [let kCFURLVolumeSupportsHardLinksKey: CFString!](./kcfurlvolumesupportshardlinkskey.md)
   Key for determining whether the volume supports hard links, returned as a `CFBoolean` object.
-- [let kCFURLVolumeSupportsJournalingKey: CFString!](kcfurlvolumesupportsjournalingkey.md)
+- [let kCFURLVolumeSupportsJournalingKey: CFString!](./kcfurlvolumesupportsjournalingkey.md)
   Key for determining whether the volume supports journaling, returned as a `CFBoolean` object.
-- [let kCFURLVolumeIsJournalingKey: CFString!](kcfurlvolumeisjournalingkey.md)
+- [let kCFURLVolumeIsJournalingKey: CFString!](./kcfurlvolumeisjournalingkey.md)
   Key for determining whether the volume is currently journaling, returned as a `CFBoolean` object.
-- [let kCFURLVolumeSupportsSparseFilesKey: CFString!](kcfurlvolumesupportssparsefileskey.md)
+- [let kCFURLVolumeSupportsSparseFilesKey: CFString!](./kcfurlvolumesupportssparsefileskey.md)
   Key for determining whether the volume supports sparse files, returned as a `CFBoolean` object.
-- [let kCFURLVolumeSupportsZeroRunsKey: CFString!](kcfurlvolumesupportszerorunskey.md)
+- [let kCFURLVolumeSupportsZeroRunsKey: CFString!](./kcfurlvolumesupportszerorunskey.md)
   Key for determining whether the volume supports zero runs, returned as a `CFBoolean` object.
-- [let kCFURLVolumeSupportsCaseSensitiveNamesKey: CFString!](kcfurlvolumesupportscasesensitivenameskey.md)
+- [let kCFURLVolumeSupportsCaseSensitiveNamesKey: CFString!](./kcfurlvolumesupportscasesensitivenameskey.md)
   Key for determining whether the volume supports case-sensitive names, returned as a `CFBoolean` object.
-- [let kCFURLVolumeSupportsCasePreservedNamesKey: CFString!](kcfurlvolumesupportscasepreservednameskey.md)
+- [let kCFURLVolumeSupportsCasePreservedNamesKey: CFString!](./kcfurlvolumesupportscasepreservednameskey.md)
   Key for determining whether the volume supports case-preserved names, returned as a `CFBoolean` object.
 
 

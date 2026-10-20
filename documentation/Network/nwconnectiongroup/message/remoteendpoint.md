@@ -1,7 +1,8 @@
 # remoteEndpoint
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The endpoint that originates the message you receive.
 
@@ -22,9 +23,10 @@ var remoteEndpoint: NWEndpoint? { get }
 
 ## See Also
 
-- [var localEndpoint: NWEndpoint?](nwconnectiongroup/message/localendpoint.md)
+### Inspecting Received Messages
+- [var localEndpoint: NWEndpoint?](./localendpoint.md)
   The local address and port you use to receive the message.
-- [var path: NWPath?](nwconnectiongroup/message/path.md)
+- [var path: NWPath?](./path.md)
   The network path on which you receive the message.
 
 

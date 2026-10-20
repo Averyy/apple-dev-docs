@@ -1,7 +1,8 @@
 # UITabBarController.Mode.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system sets the display mode based on the tab’s content.
 
@@ -18,22 +19,27 @@ The system sets the display mode based on the tab’s content.
 case automatic
 ```
 
+```c
+UITabBarControllerModeAutomatic
+```
+
 #### Discussion
 
 Different platforms handle the mode differently:
 
-- On iPad, If the [`tabs`](uitabbarcontroller/tabs.md) array contains one or more [`UITabGroup`](uitabgroup.md) items, the system displays the content as either a tab bar or a sidebar, depending on the context. Otherwise, it only displays the content only as a tab bar.
-- On Mac Catalyst, the system displays a sidebar if the [`tabs`](uitabbarcontroller/tabs.md) array contains one or more [`UITabGroup`](uitabgroup.md) items. Otherwise, it displays a tab bar.
+- On iPad, If the [`tabs`](../tabs.md) array contains one or more [`UITabGroup`](../../uitabgroup.md) items, the system displays the content as either a tab bar or a sidebar, depending on the context. Otherwise, it only displays the content only as a tab bar.
+- On Mac Catalyst, the system displays a sidebar if the [`tabs`](../tabs.md) array contains one or more [`UITabGroup`](../../uitabgroup.md) items. Otherwise, it displays a tab bar.
 - On iPhone and Apple TV, the system displays the platform’s regular tab bar.
-- In visionOS, the system displays the platform’s regular tabs, but a [`UITabGroup`](uitabgroup.md) can display a sidebar when it displays the group’s view controller.
+- In visionOS, the system displays the platform’s regular tabs, but a [`UITabGroup`](../../uitabgroup.md) can display a sidebar when it displays the group’s view controller.
 
-For more information, see [`Elevating your iPad app with a tab bar and sidebar`](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
+For more information, see [Elevating your iPad app with a tab bar and sidebar](../../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
 
 ## See Also
 
-- [UITabBarController.Mode.tabBar](uitabbarcontroller/mode-swift.enum/tabbar.md)
+### Setting modes
+- [UITabBarController.Mode.tabBar](./tabbar.md)
   The system displays the content only as a tab bar.
-- [UITabBarController.Mode.tabSidebar](uitabbarcontroller/mode-swift.enum/tabsidebar.md)
+- [UITabBarController.Mode.tabSidebar](./tabsidebar.md)
   The system displays the content as either a tab bar or a sidebar, depending on the context.
 
 

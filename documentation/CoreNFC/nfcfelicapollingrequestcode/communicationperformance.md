@@ -1,7 +1,8 @@
 # NFCFeliCaPollingRequestCode.communicationPerformance
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case communicationPerformance
+```
+
+```c
+NFCFeliCaPollingRequestCodeCommunicationPerformance
 ```
 
 

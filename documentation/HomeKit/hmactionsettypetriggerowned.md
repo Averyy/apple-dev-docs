@@ -1,7 +1,8 @@
 # HMActionSetTypeTriggerOwned
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a trigger-owned action set.
 
@@ -17,6 +18,10 @@ Specifies a trigger-owned action set.
 
 ```swift
 let HMActionSetTypeTriggerOwned: String
+```
+
+```c
+extern NSString * const HMActionSetTypeTriggerOwned;
 ```
 
 #### Discussion

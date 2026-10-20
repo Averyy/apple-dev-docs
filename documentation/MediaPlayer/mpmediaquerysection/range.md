@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range in the media query’s items or collections array that the media query section represents.
 
@@ -17,9 +18,14 @@ The range in the media query’s items or collections array that the media query
 var range: NSRange { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSRange range;
+```
+
 ## See Also
 
-- [var title: String](mpmediaquerysection/title.md)
+### Working with media query sections
+- [var title: String](./title.md)
   The localized title of the media query section.
 
 

@@ -1,12 +1,15 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying delegate.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 9.2
+
+> **Deprecated**: Use WKApplicationDelegateAdaptor with a WKApplicationDelegate instead.
 
 ## Declaration
 
@@ -17,7 +20,8 @@ The underlying delegate.
 
 ## See Also
 
-- [var projectedValue: ObservedObject<DelegateType>.Wrapper](wkextensiondelegateadaptor/projectedvalue.md)
+### Getting the delegate adaptor
+- [var projectedValue: ObservedObject<DelegateType>.Wrapper](./projectedvalue.md)
   A projection of the observed object that provides bindings to its properties.
 
 

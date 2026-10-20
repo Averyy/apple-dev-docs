@@ -1,7 +1,8 @@
 # beginSheet(for:withDelegate:didEnd:contextInfo:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a picture taker as a sheet whose parent is the specified window.
 
@@ -12,6 +13,10 @@ Opens a picture taker as a sheet whose parent is the specified window.
 
 ```swift
 func beginSheet(for aWindow: NSWindow!, withDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!)
+```
+
+```objc
+- (void) beginPictureTakerSheetForWindow:(NSWindow *) aWindow withDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion
@@ -31,13 +36,14 @@ The `returnCode` value is set to `NSOKButton` if the user validates, or to `NSCa
 
 ## See Also
 
-- [class func pictureTaker() -> IKPictureTaker!](ikpicturetaker/picturetaker.md)
+### Creating And Displaying The Picture Taker
+- [class func pictureTaker() -> IKPictureTaker!](./picturetaker%28%29.md)
   Returns a shared `IKPictureTaker` instance, creating it if necessary.
-- [func begin(withDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!)](ikpicturetaker/begin(withdelegate:didend:contextinfo:).md)
+- [func begin(withDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!)](./begin%28withdelegate,didend,contextinfo%29.md)
   Opens a picture taker pane.
-- [func popUpRecentsMenu(for: NSView!, withDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!)](ikpicturetaker/popuprecentsmenu(for:withdelegate:didend:contextinfo:).md)
+- [func popUpRecentsMenu(for: NSView!, withDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!)](./popuprecentsmenu%28for,withdelegate,didend,contextinfo%29.md)
   Displays the Open Recent popup menu associated with the  picture taker.
-- [func runModal() -> Int](ikpicturetaker/runmodal.md)
+- [func runModal() -> Int](./runmodal%28%29.md)
   Opens a modal picture taker dialog.
 
 

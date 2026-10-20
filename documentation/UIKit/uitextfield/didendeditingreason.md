@@ -1,7 +1,8 @@
 # UITextField.DidEndEditingReason
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the reason for ending editing in a text field.
 
@@ -18,43 +19,48 @@ Constants that indicate the reason for ending editing in a text field.
 enum DidEndEditingReason
 ```
 
+```c
+enum UITextFieldDidEndEditingReason : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UITextField.DidEndEditingReason.committed](uitextfield/didendeditingreason/committed.md)
+- [UITextField.DidEndEditingReason.committed](./didendeditingreason/committed.md)
   The text field changes were accepted by the user.
-- [UITextField.DidEndEditingReason.cancelled](uitextfield/didendeditingreason/cancelled.md)
+- [UITextField.DidEndEditingReason.cancelled](./didendeditingreason/cancelled.md)
   The text field changes were aborted.
 ### Initializers
-- [init?(rawValue: Int)](uitextfield/didendeditingreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./didendeditingreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isEditing: Bool](uitextfield/isediting.md)
+### Managing the editing behavior
+- [var isEditing: Bool](./isediting.md)
   A Boolean value that indicates whether the text field is currently in edit mode.
-- [var clearsOnBeginEditing: Bool](uitextfield/clearsonbeginediting.md)
+- [var clearsOnBeginEditing: Bool](./clearsonbeginediting.md)
   A Boolean value that determines whether the text field removes old text when editing begins.
-- [var clearsOnInsertion: Bool](uitextfield/clearsoninsertion.md)
+- [var clearsOnInsertion: Bool](./clearsoninsertion.md)
   A Boolean value that determines whether inserting text replaces the previous contents.
-- [var allowsEditingTextAttributes: Bool](uitextfield/allowseditingtextattributes.md)
+- [var allowsEditingTextAttributes: Bool](./allowseditingtextattributes.md)
   A Boolean value that determines whether the user can edit the attributes of the text in the text field.
-- [class let didEndEditingReasonUserInfoKey: String](uitextfield/didendeditingreasonuserinfokey.md)
+- [class let didEndEditingReasonUserInfoKey: String](./didendeditingreasonuserinfokey.md)
   A key that indicates the reason for ending editing in a text field.
-- [class let textDidBeginEditingNotification: NSNotification.Name](uitextfield/textdidbegineditingnotification.md)
+- [class let textDidBeginEditingNotification: NSNotification.Name](./textdidbegineditingnotification.md)
   A notification that alerts observers when an editing session begins in a text field.
-- [class let textDidChangeNotification: NSNotification.Name](uitextfield/textdidchangenotification.md)
+- [class let textDidChangeNotification: NSNotification.Name](./textdidchangenotification.md)
   A notification that alerts observers when the text in a text field changes.
-- [class let textDidEndEditingNotification: NSNotification.Name](uitextfield/textdidendeditingnotification.md)
+- [class let textDidEndEditingNotification: NSNotification.Name](./textdidendeditingnotification.md)
   A notification that alerts observers when the editing session ends for a text field.
 
 

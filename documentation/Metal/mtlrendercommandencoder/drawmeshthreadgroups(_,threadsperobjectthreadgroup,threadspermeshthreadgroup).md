@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a draw command that invokes a mesh shader and, optionally, an object shader with a grid of threadgroups.
@@ -20,17 +21,22 @@ Encodes a draw command that invokes a mesh shader and, optionally, an object sha
 func drawMeshThreadgroups(_ threadgroupsPerGrid: MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)
 ```
 
+```objc
+- (void) drawMeshThreadgroups:(MTLSize) threadgroupsPerGrid threadsPerObjectThreadgroup:(MTLSize) threadsPerObjectThreadgroup threadsPerMeshThreadgroup:(MTLSize) threadsPerMeshThreadgroup;
+```
+
 ## Parameters
 
-- `threadgroupsPerGrid`: An [`MTLSize`](mtlsize.md) instance that represents the number of threadgroups for each grid dimension.
-- `threadsPerObjectThreadgroup`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads in an object shader threadgroup, if applicable.
-- `threadsPerMeshThreadgroup`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads in a mesh shader threadgroup.
+- `threadgroupsPerGrid`: An [`MTLSize`](../mtlsize.md) instance that represents the number of threadgroups for each grid dimension.
+- `threadsPerObjectThreadgroup`: An [`MTLSize`](../mtlsize.md) instance that represents the number of threads in an object shader threadgroup, if applicable.
+- `threadsPerMeshThreadgroup`: An [`MTLSize`](../mtlsize.md) instance that represents the number of threads in a mesh shader threadgroup.
 
 ## See Also
 
-- [func drawMeshThreads(MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](mtlrendercommandencoder/drawmeshthreads(_:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md)
+### Drawing with meshes
+- [func drawMeshThreads(MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](./drawmeshthreads%28_,threadsperobjectthreadgroup,threadspermeshthreadgroup%29.md)
   Encodes a draw command that invokes a mesh shader and, optionally, an object shader with a grid of threads.
-- [func drawMeshThreadgroups(indirectBuffer: any MTLBuffer, indirectBufferOffset: Int, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](mtlrendercommandencoder/drawmeshthreadgroups(indirectbuffer:indirectbufferoffset:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md)
+- [func drawMeshThreadgroups(indirectBuffer: any MTLBuffer, indirectBufferOffset: Int, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](./drawmeshthreadgroups%28indirectbuffer,indirectbufferoffset,threadsperobjectthreadgroup,threadspermeshthreadgroup%29.md)
   Encodes a draw command that invokes a mesh shader and, optionally, an object shader with indirect arguments.
 
 

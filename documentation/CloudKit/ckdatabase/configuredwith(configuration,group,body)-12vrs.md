@@ -1,7 +1,8 @@
 # configuredWith(configuration:group:body:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a temporary configuration to the database within the scope of a closure.
 
@@ -11,7 +12,7 @@ Applies a temporary configuration to the database within the scope of a closure.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -50,12 +51,13 @@ func fetchRecords(
 ## Parameters
 
 - `configuration`: An interim configuration to apply to the current database.
-- `group`: The group to associate with the methods you execute in the closure. Specifying a group helps the system prioritize those method calls, and helps you identify the calls in the server logs in CloudKit Console. For more information, see [`CKOperationGroup`](ckoperationgroup.md).
+- `group`: The group to associate with the methods you execute in the closure. Specifying a group helps the system prioritize those method calls, and helps you identify the calls in the server logs in CloudKit Console. For more information, see [`CKOperationGroup`](../ckoperationgroup.md).
 - `body`: The closure to execute with the temporarily configured database.
 
 ## See Also
 
-- [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKDatabase) async throws -> R) async rethrows -> R](ckdatabase/configuredwith(configuration:group:body:)-637p1.md)
+### Configuring Database Requests
+- [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKDatabase) async throws -> R) async rethrows -> R](./configuredwith%28configuration,group,body%29-637p1.md)
   Applies a temporary configuration to the database within the scope of a closure that supports concurrency.
 
 

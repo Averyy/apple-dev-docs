@@ -1,7 +1,8 @@
 # KeywordResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for a Keyword operation.
 
@@ -10,7 +11,7 @@ The response object for a Keyword operation.
 
 ## Declaration
 
-```swift
+```
 object KeywordResponse
 ```
 
@@ -46,18 +47,18 @@ Check the `error` field to detect per-item failures, especially in bulk contexts
 
 ## Properties
 
-- `result` (Keyword): The affected `Keyword` object reflecting its post-operation state. Absent if the operation failed. See [`Keyword`](keyword.md). Read-only.
-- `error` (Error): Structured error details if the operation failed. See [`Error`](error.md). Read-only.
+- `result` (Keyword): The affected `Keyword` object reflecting its post-operation state. Absent if the operation failed. See [`Keyword`](./keyword.md). Read-only.
+- `error` (Error): Structured error details if the operation failed. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object Keyword](keyword.md)
+- [object Keyword](./keyword.md)
   The targeting unit that connects a user’s search query to the ad group’s ads.
-- [object KeywordCreate](keywordcreate.md)
+- [object KeywordCreate](./keywordcreate.md)
   The request body for creating a new Keyword object.
-- [object KeywordUpdate](keywordupdate.md)
+- [object KeywordUpdate](./keywordupdate.md)
   The request body for updating an existing Keyword object.
-- [object KeywordQueryResponse](keywordqueryresponse.md)
+- [object KeywordQueryResponse](./keywordqueryresponse.md)
   The response object for a Keyword query, containing matched results and pagination metadata.
 
 

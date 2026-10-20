@@ -1,7 +1,8 @@
 # passUnretained(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an unmanaged reference without performing an unbalanced retain.
 

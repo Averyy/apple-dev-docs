@@ -1,7 +1,8 @@
 # preferNonTemporaryMemory
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var preferNonTemporaryMemory: MPSAliasingStrategy { get }
+```
+
+```c
+MPSAliasingStrategyPreferNonTemporaryMemory
 ```
 
 

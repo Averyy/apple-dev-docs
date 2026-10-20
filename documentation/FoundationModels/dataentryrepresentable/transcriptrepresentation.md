@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 How this type appears when recorded in a session transcript.

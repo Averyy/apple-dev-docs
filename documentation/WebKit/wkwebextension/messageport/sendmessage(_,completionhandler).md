@@ -1,7 +1,8 @@
 # sendMessage(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a message to the connected web extension.
 
@@ -15,12 +16,20 @@ Sends a message to the connected web extension.
 ## Declaration
 
 ```swift
+func sendMessage(_ message: Any?, completionHandler: (((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func sendMessage(_ message: Any?) async throws
+```
+
+```objc
+- (void) sendMessage:(id) message completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> **Note**: The message must be JSON-serializable according to [`JSONSerialization`](https://developer.apple.com/documentation/foundation/jsonserialization).
+> **Note**: The message must be JSON-serializable according to [`JSONSerialization`](../../../Foundation/jsonserialization.md).
 
 ## Parameters
 

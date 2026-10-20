@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: Compositor Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of properties using the specified configuration values.
 
@@ -17,7 +18,7 @@ init(configuration: LayerRenderer.Configuration) throws
 
 #### Discussion
 
-Prior to receiving the layer you use for drawing, you can create a [`LayerRenderer.Properties`](layerrenderer/properties-swift.struct.md) structure and use it to start the configuration of your Metal code.
+Prior to receiving the layer you use for drawing, you can create a [`LayerRenderer.Properties`](../properties-swift.struct.md) structure and use it to start the configuration of your Metal code.
 
 ## Parameters
 

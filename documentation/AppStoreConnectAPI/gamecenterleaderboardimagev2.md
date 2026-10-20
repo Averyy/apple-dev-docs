@@ -1,7 +1,8 @@
 # GameCenterLeaderboardImageV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center leaderboard image v2 resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center leaderboard image v2 resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardImageV2
 ```
 
@@ -25,9 +26,9 @@ object GameCenterLeaderboardImageV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardImageV2.Attributes](gamecenterleaderboardimagev2/attributes-data.dictionary.md)
+- [object GameCenterLeaderboardImageV2.Attributes](./gamecenterleaderboardimagev2/attributes-data.dictionary.md)
   Attributes that describe a Game Center leaderboard image v2 resource.
-- [object GameCenterLeaderboardImageV2.Relationships](gamecenterleaderboardimagev2/relationships-data.dictionary.md)
+- [object GameCenterLeaderboardImageV2.Relationships](./gamecenterleaderboardimagev2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 ## Properties
@@ -36,23 +37,24 @@ object GameCenterLeaderboardImageV2
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (GameCenterLeaderboardImageV2.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardImages`
 
 ## See Also
 
-- [object GameCenterLeaderboardImageV2CreateRequest](gamecenterleaderboardimagev2createrequest.md)
+### Objects
+- [object GameCenterLeaderboardImageV2CreateRequest](./gamecenterleaderboardimagev2createrequest.md)
   The request body you use to create a Game Center leaderboard image v2.
-- [object GameCenterLeaderboardImageV2Response](gamecenterleaderboardimagev2response.md)
+- [object GameCenterLeaderboardImageV2Response](./gamecenterleaderboardimagev2response.md)
   A response that contains a single Game Center leaderboard image v2 resource.
-- [object GameCenterLeaderboardImageV2UpdateRequest](gamecenterleaderboardimagev2updaterequest.md)
+- [object GameCenterLeaderboardImageV2UpdateRequest](./gamecenterleaderboardimagev2updaterequest.md)
   The request body you use to update a Game Center leaderboard image v2.
-- [object GameCenterLeaderboardImage](gamecenterleaderboardimage.md)
+- [object GameCenterLeaderboardImage](./gamecenterleaderboardimage.md)
   The data structure that represent a leaderboard image resource.
-- [object GameCenterLeaderboardImageCreateRequest](gamecenterleaderboardimagecreaterequest.md)
+- [object GameCenterLeaderboardImageCreateRequest](./gamecenterleaderboardimagecreaterequest.md)
   The request body you use to create a leaderboard image.
-- [object GameCenterLeaderboardImageResponse](gamecenterleaderboardimageresponse.md)
+- [object GameCenterLeaderboardImageResponse](./gamecenterleaderboardimageresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center leaderboard image.
-- [object GameCenterLeaderboardImageUpdateRequest](gamecenterleaderboardimageupdaterequest.md)
+- [object GameCenterLeaderboardImageUpdateRequest](./gamecenterleaderboardimageupdaterequest.md)
   The request body you use to update a leaderboard image.
 
 

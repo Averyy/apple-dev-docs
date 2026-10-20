@@ -1,7 +1,8 @@
 # stencilFromDepthStencil
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A blit option that copies the stencil portion of a combined depth and stencil texture to or from a buffer.
 
@@ -19,16 +20,21 @@ A blit option that copies the stencil portion of a combined depth and stencil te
 static var stencilFromDepthStencil: MTLBlitOption { get }
 ```
 
+```c
+MTLBlitOptionStencilFromDepthStencil
+```
+
 #### Discussion
 
 You can pass this option to some methods that copy data between a buffer and a texture, including the following:
 
-- [`copy(from:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:to:destinationSlice:destinationLevel:destinationOrigin:options:)`](mtlblitcommandencoder/copy(from:sourceoffset:sourcebytesperrow:sourcebytesperimage:sourcesize:to:destinationslice:destinationlevel:destinationorigin:options:).md)
-- [`copy(from:sourceSlice:sourceLevel:sourceOrigin:sourceSize:to:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:options:)`](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:sourceorigin:sourcesize:to:destinationoffset:destinationbytesperrow:destinationbytesperimage:options:).md)
+- [`copy(from:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:to:destinationSlice:destinationLevel:destinationOrigin:options:)`](../mtlblitcommandencoder/copy%28from,sourceoffset,sourcebytesperrow,sourcebytesperimage,sourcesize,to,destinationslice,destinationlevel,destinationorigin,options%29.md)
+- [`copy(from:sourceSlice:sourceLevel:sourceOrigin:sourceSize:to:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:options:)`](../mtlblitcommandencoder/copy%28from,sourceslice,sourcelevel,sourceorigin,sourcesize,to,destinationoffset,destinationbytesperrow,destinationbytesperimage,options%29.md)
 
 ## See Also
 
-- [static var depthFromDepthStencil: MTLBlitOption](mtlblitoption/depthfromdepthstencil.md)
+### Depth and stencil buffer options
+- [static var depthFromDepthStencil: MTLBlitOption](./depthfromdepthstencil.md)
   A blit option that copies the depth portion of a combined depth and stencil texture to or from a buffer.
 
 

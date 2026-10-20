@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -12,6 +13,10 @@
 
 ```swift
 func invalidate()
+```
+
+```objc
+- (void) invalidate;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The drag interaction object added by UIKit to the text view.
@@ -18,9 +19,13 @@ The drag interaction object added by UIKit to the text view.
 var textDragInteraction: UIDragInteraction? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIDragInteraction * textDragInteraction;
+```
+
 #### Discussion
 
-You can set the text drag interaction’s [`isEnabled`](uidraginteraction/isenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false) if you need to explicitly turn off drag interactions for a UIKit-provided text view.
+You can set the text drag interaction’s [`isEnabled`](../uidraginteraction/isenabled.md) property to [`false`](../../Swift/false.md) if you need to explicitly turn off drag interactions for a UIKit-provided text view.
 
 
 ---

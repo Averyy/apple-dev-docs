@@ -1,7 +1,8 @@
 # hasActiveDrop
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the collection view is currently tracking a drop session.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether the collection view is currently tracking
 var hasActiveDrop: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasActiveDrop;
+```
+
 ## See Also
 
-- [var dropDelegate: (any UICollectionViewDropDelegate)?](uicollectionview/dropdelegate.md)
+### Managing drop interactions
+- [var dropDelegate: (any UICollectionViewDropDelegate)?](./dropdelegate.md)
   The delegate object that manages the dropping of items into the collection view.
-- [protocol UICollectionViewDropDelegate](uicollectionviewdropdelegate.md)
+- [protocol UICollectionViewDropDelegate](../uicollectionviewdropdelegate.md)
   The interface for handling drops in a collection view.
-- [var reorderingCadence: UICollectionView.ReorderingCadence](uicollectionview/reorderingcadence-swift.property.md)
+- [var reorderingCadence: UICollectionView.ReorderingCadence](./reorderingcadence-swift.property.md)
   The speed at which items in the collection view are reordered to show potential drop locations.
-- [UICollectionView.ReorderingCadence](uicollectionview/reorderingcadence-swift.enum.md)
+- [UICollectionView.ReorderingCadence](./reorderingcadence-swift.enum.md)
   Constants indicating the speed at which collection view items are reorganized during a drop.
 
 

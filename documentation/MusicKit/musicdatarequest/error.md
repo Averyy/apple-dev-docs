@@ -1,7 +1,8 @@
 # MusicDataRequest.Error
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that the Apple Music API returns.
 
@@ -23,33 +24,33 @@ struct Error
 ## Topics
 
 ### Instance Properties
-- [let code: Int](musicdatarequest/error/code.md)
+- [let code: Int](./error/code.md)
   The specific code for the underlying cause of the error.
-- [let detailText: String](musicdatarequest/error/detailtext.md)
+- [let detailText: String](./error/detailtext.md)
   Additional detailed information about the cause of the error.
-- [let id: String](musicdatarequest/error/id.md)
+- [let id: String](./error/id.md)
   The identifier for the error.
-- [let originalResponse: MusicDataResponse](musicdatarequest/error/originalresponse.md)
+- [let originalResponse: MusicDataResponse](./error/originalresponse.md)
   The original response that contains the error.
-- [let source: MusicDataRequest.Error.Source?](musicdatarequest/error/source-swift.property.md)
+- [let source: MusicDataRequest.Error.Source?](./error/source-swift.property.md)
   The source of the error.
-- [let status: Int](musicdatarequest/error/status.md)
+- [let status: Int](./error/status.md)
   The HTTP status code for the error.
-- [let title: String](musicdatarequest/error/title.md)
+- [let title: String](./error/title.md)
   A developer-friendly title for the error.
 ### Enumerations
-- [MusicDataRequest.Error.Source](musicdatarequest/error/source-swift.enum.md)
+- [MusicDataRequest.Error.Source](./error/source-swift.enum.md)
   A representation of the source of an error from Apple Music API.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

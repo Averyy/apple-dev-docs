@@ -1,21 +1,23 @@
 # sqrtl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double sqrtl(long double);
 ```
 
 ## See Also
 
-- [sqrt](1557357-sqrt.md)
-- [sqrtf](1532170-sqrtf.md)
+### Square Root
+- [sqrt](./api-1557357-sqrt.md)
+- [sqrtf](./api-1532170-sqrtf.md)
 
 
 ---

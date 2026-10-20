@@ -1,7 +1,8 @@
 # presentationLatency
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation or hardware latency, applicable when rendering to or from an audio device.
 
@@ -18,6 +19,10 @@ The presentation or hardware latency, applicable when rendering to or from an au
 
 ```swift
 var presentationLatency: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval presentationLatency;
 ```
 
 #### Discussion

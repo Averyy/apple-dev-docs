@@ -1,7 +1,8 @@
 # USDPrim.VariantSetCollection
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Manages variant sets on a prim.
 
@@ -26,15 +27,15 @@ Variants provide a way to package multiple variations of scene data within a sin
 ## Topics
 
 ### Instance Properties
-- [var names: [String]](usdprim/variantsetcollection/names.md)
+- [var names: [String]](./variantsetcollection/names.md)
   The names of all variant sets on this prim.
-- [var selections: [String : String]](usdprim/variantsetcollection/selections.md)
+- [var selections: [String : String]](./variantsetcollection/selections.md)
   The composed variant selections on this prim, keyed by variant set name.
 ### Instance Methods
-- [func add(String) throws -> USDPrim.VariantSet](usdprim/variantsetcollection/add(_:).md)
+- [func add(String) throws -> USDPrim.VariantSet](./variantsetcollection/add%28_%29.md)
   Adds a new variant set to the prim.
 ### Subscripts
-- [subscript(String) -> USDPrim.VariantSet?](usdprim/variantsetcollection/subscript(_:).md)
+- [subscript(String) -> USDPrim.VariantSet?](./variantsetcollection/subscript%28_%29.md)
   Returns the variant set with the specified name, or `nil` if no variant set with that name exists on the prim.
 
 

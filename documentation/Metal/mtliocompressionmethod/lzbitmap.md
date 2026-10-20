@@ -1,17 +1,18 @@
 # MTLIOCompressionMethod.lzBitmap
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that a file uses the LZBitmap compression algorithm codec.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,22 +20,27 @@ Indicates that a file uses the LZBitmap compression algorithm codec.
 case lzBitmap
 ```
 
+```c
+MTLIOCompressionMethodLZBitmap
+```
+
 #### Discussion
 
 For more information on the LZBitmap codec, see:
 
-- [`Algorithm.lzbitmap`](https://developer.apple.com/documentation/compression/algorithm/lzbitmap)
-- [`COMPRESSION_LZBITMAP`](https://developer.apple.com/documentation/compression/compression_lzbitmap)
+- [`Algorithm.lzbitmap`](../../Compression/algorithm/lzbitmap.md)
+- [`COMPRESSION_LZBITMAP`](../../Compression/compression_lzbitmap.md)
 
 ## See Also
 
-- [MTLIOCompressionMethod.zlib](mtliocompressionmethod/zlib.md)
+### Compression codecs
+- [MTLIOCompressionMethod.zlib](./zlib.md)
   Indicates that a file uses the zlib compression algorithm codec.
-- [MTLIOCompressionMethod.lzfse](mtliocompressionmethod/lzfse.md)
+- [MTLIOCompressionMethod.lzfse](./lzfse.md)
   Indicates that a file uses the LZFSE compression algorithm codec.
-- [MTLIOCompressionMethod.lz4](mtliocompressionmethod/lz4.md)
+- [MTLIOCompressionMethod.lz4](./lz4.md)
   Indicates that a file uses the LZ4 compression algorithm codec.
-- [MTLIOCompressionMethod.lzma](mtliocompressionmethod/lzma.md)
+- [MTLIOCompressionMethod.lzma](./lzma.md)
   Indicates that a file uses the LZMA compression algorithm codec.
 
 

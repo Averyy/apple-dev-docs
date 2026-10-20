@@ -1,7 +1,8 @@
 # kAXFilenameAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The filename associated with this accessibility object. This attribute is optional.
 
@@ -12,6 +13,10 @@ The filename associated with this accessibility object. This attribute is option
 
 ```swift
 var kAXFilenameAttribute: String { get }
+```
+
+```c
+#define kAXFilenameAttribute
 ```
 
 

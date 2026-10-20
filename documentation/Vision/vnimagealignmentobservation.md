@@ -1,7 +1,8 @@
 # VNImageAlignmentObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for image-analysis results that describe the relative alignment of two images.
 
@@ -19,48 +20,53 @@ The abstract superclass for image-analysis results that describe the relative al
 class VNImageAlignmentObservation
 ```
 
+```objc
+@interface VNImageAlignmentObservation : VNObservation
+```
+
 #### Overview
 
-This abstract superclass forms the basis of image alignment or registration output. You receive its subclasses, such as [`VNImageTranslationAlignmentObservation`](vnimagetranslationalignmentobservation.md) and [`VNImageHomographicAlignmentObservation`](vnimagehomographicalignmentobservation.md), by performing specific registration requests. Don’t create one of these classes yourself.
+This abstract superclass forms the basis of image alignment or registration output. You receive its subclasses, such as [`VNImageTranslationAlignmentObservation`](./vnimagetranslationalignmentobservation.md) and [`VNImageHomographicAlignmentObservation`](./vnimagehomographicalignmentobservation.md), by performing specific registration requests. Don’t create one of these classes yourself.
 
 ## Relationships
 
 ### Inherits From
-- [VNObservation](vnobservation.md)
+- [VNObservation](./vnobservation.md)
 ### Inherited By
-- [VNImageHomographicAlignmentObservation](vnimagehomographicalignmentobservation.md)
-- [VNImageTranslationAlignmentObservation](vnimagetranslationalignmentobservation.md)
+- [VNImageHomographicAlignmentObservation](./vnimagehomographicalignmentobservation.md)
+- [VNImageTranslationAlignmentObservation](./vnimagetranslationalignmentobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Aligning Similar Images](aligning-similar-images.md)
+### Image alignment
+- [Aligning Similar Images](./aligning-similar-images.md)
   Construct a composite image from images that capture the same scene.
-- [class VNTargetedImageRequest](vntargetedimagerequest.md)
+- [class VNTargetedImageRequest](./vntargetedimagerequest.md)
   The abstract superclass for image analysis requests that operate on both the processed image and a secondary image.
-- [class VNImageRegistrationRequest](vnimageregistrationrequest.md)
+- [class VNImageRegistrationRequest](./vnimageregistrationrequest.md)
   The abstract superclass for image-analysis requests that align images according to their content.
-- [class VNTranslationalImageRegistrationRequest](vntranslationalimageregistrationrequest.md)
+- [class VNTranslationalImageRegistrationRequest](./vntranslationalimageregistrationrequest.md)
   An image-analysis request that determines the affine transform necessary to align the content of two images.
-- [class VNTrackTranslationalImageRegistrationRequest](vntracktranslationalimageregistrationrequest.md)
+- [class VNTrackTranslationalImageRegistrationRequest](./vntracktranslationalimageregistrationrequest.md)
   An image-analysis request, as a stateful request you track over time, that determines the affine transform necessary to align the content of two images.
-- [class VNHomographicImageRegistrationRequest](vnhomographicimageregistrationrequest.md)
+- [class VNHomographicImageRegistrationRequest](./vnhomographicimageregistrationrequest.md)
   An image-analysis request that determines the perspective warp matrix necessary to align the content of two images.
-- [class VNTrackHomographicImageRegistrationRequest](vntrackhomographicimageregistrationrequest.md)
+- [class VNTrackHomographicImageRegistrationRequest](./vntrackhomographicimageregistrationrequest.md)
   An image-analysis request, as a stateful request you track over time, that determines the perspective warp matrix necessary to align the content of two images.
-- [class VNImageTranslationAlignmentObservation](vnimagetranslationalignmentobservation.md)
+- [class VNImageTranslationAlignmentObservation](./vnimagetranslationalignmentobservation.md)
   Affine transform information that an image-alignment request produces.
-- [class VNImageHomographicAlignmentObservation](vnimagehomographicalignmentobservation.md)
+- [class VNImageHomographicAlignmentObservation](./vnimagehomographicalignmentobservation.md)
   An object that represents a perspective warp transformation.
 
 

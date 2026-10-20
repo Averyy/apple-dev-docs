@@ -1,7 +1,8 @@
 # saturation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the color saturation of this view.
 
@@ -47,9 +48,9 @@ struct Saturation: View {
 }
 ```
 
-![Rendering showing the effects of saturation adjustments in 20%](/images/com.apple.SwiftUI/SwiftUI-View-saturation@2x.png)
+![Rendering showing the effects of saturation adjustments in 20%](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-saturation@2x.png)
 
-> **Note**: `contrast(_:)`
+> **See Also**: `contrast(_:)`
 
 ## Parameters
 
@@ -57,25 +58,26 @@ struct Saturation: View {
 
 ## See Also
 
-- [func brightness(Double) -> some View](view/brightness(_:).md)
+### Transforming colors
+- [func brightness(Double) -> some View](./brightness%28_%29.md)
   Brightens this view by the specified amount.
-- [func contrast(Double) -> some View](view/contrast(_:).md)
+- [func contrast(Double) -> some View](./contrast%28_%29.md)
   Sets the contrast and separation between similar colors in this view.
-- [func colorInvert() -> some View](view/colorinvert.md)
+- [func colorInvert() -> some View](./colorinvert%28%29.md)
   Inverts the colors in this view.
-- [func colorMultiply(Color) -> some View](view/colormultiply(_:).md)
+- [func colorMultiply(Color) -> some View](./colormultiply%28_%29.md)
   Adds a color multiplication effect to this view.
-- [func grayscale(Double) -> some View](view/grayscale(_:).md)
+- [func grayscale(Double) -> some View](./grayscale%28_%29.md)
   Adds a grayscale effect to this view.
-- [func hueRotation(Angle) -> some View](view/huerotation(_:).md)
+- [func hueRotation(Angle) -> some View](./huerotation%28_%29.md)
   Applies a hue rotation effect to this view.
-- [func luminanceToAlpha() -> some View](view/luminancetoalpha.md)
+- [func luminanceToAlpha() -> some View](./luminancetoalpha%28%29.md)
   Adds a luminance to alpha effect to this view.
-- [func materialActiveAppearance(MaterialActiveAppearance) -> some View](view/materialactiveappearance(_:).md)
+- [func materialActiveAppearance(MaterialActiveAppearance) -> some View](./materialactiveappearance%28_%29.md)
   Sets an explicit active appearance for materials in this view.
-- [var materialActiveAppearance: MaterialActiveAppearance](environmentvalues/materialactiveappearance.md)
+- [var materialActiveAppearance: MaterialActiveAppearance](../environmentvalues/materialactiveappearance.md)
   The behavior materials should use for their active state, defaulting to `automatic`.
-- [struct MaterialActiveAppearance](materialactiveappearance.md)
+- [struct MaterialActiveAppearance](../materialactiveappearance.md)
   The behavior for how materials appear active and inactive.
 
 

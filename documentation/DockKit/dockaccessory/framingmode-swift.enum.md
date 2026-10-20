@@ -1,7 +1,8 @@
 # DockAccessory.FramingMode
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The mode to control framing of the subject when tracking.
 
@@ -19,35 +20,36 @@ enum FramingMode
 
 #### Overview
 
-The default is [`DockAccessory.FramingMode.automatic`](dockaccessory/framingmode-swift.enum/automatic.md), which works well for most situations. [`DockAccessory.FramingMode.center`](dockaccessory/framingmode-swift.enum/center.md) keeps the subject close to the middle of frame. Similarly, [`DockAccessory.FramingMode.left`](dockaccessory/framingmode-swift.enum/left.md) and [`DockAccessory.FramingMode.right`](dockaccessory/framingmode-swift.enum/right.md) aligns the subject close to the left and right third of the frame (left, center, right).
+The default is [`DockAccessory.FramingMode.automatic`](./framingmode-swift.enum/automatic.md), which works well for most situations. [`DockAccessory.FramingMode.center`](./framingmode-swift.enum/center.md) keeps the subject close to the middle of frame. Similarly, [`DockAccessory.FramingMode.left`](./framingmode-swift.enum/left.md) and [`DockAccessory.FramingMode.right`](./framingmode-swift.enum/right.md) aligns the subject close to the left and right third of the frame (left, center, right).
 
 ## Topics
 
 ### Defining the framing mode
-- [DockAccessory.FramingMode.automatic](dockaccessory/framingmode-swift.enum/automatic.md)
+- [DockAccessory.FramingMode.automatic](./framingmode-swift.enum/automatic.md)
   Automatically frame the subject.
-- [DockAccessory.FramingMode.center](dockaccessory/framingmode-swift.enum/center.md)
+- [DockAccessory.FramingMode.center](./framingmode-swift.enum/center.md)
   Frame the subject in the center of the frame.
-- [DockAccessory.FramingMode.left](dockaccessory/framingmode-swift.enum/left.md)
+- [DockAccessory.FramingMode.left](./framingmode-swift.enum/left.md)
   Frame the subject in the left side of the frame.
-- [DockAccessory.FramingMode.right](dockaccessory/framingmode-swift.enum/right.md)
+- [DockAccessory.FramingMode.right](./framingmode-swift.enum/right.md)
   Frame the subject in the right side of the frame.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setFramingMode(DockAccessory.FramingMode) async throws](dockaccessory/setframingmode(_:).md)
+### Setting framing mode
+- [func setFramingMode(DockAccessory.FramingMode) async throws](./setframingmode%28_%29.md)
   Customize the dock accessory’s tracking behavior.
-- [var framingMode: DockAccessory.FramingMode](dockaccessory/framingmode-swift.property.md)
+- [var framingMode: DockAccessory.FramingMode](./framingmode-swift.property.md)
   The current framing mode.
 
 

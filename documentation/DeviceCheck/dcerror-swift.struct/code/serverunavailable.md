@@ -1,7 +1,8 @@
 # DCError.Code.serverUnavailable
 
 **Framework**: DeviceCheck  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failed attempt to contact the App Attest service during an attestation.
 
@@ -20,19 +21,24 @@ An error that indicates a failed attempt to contact the App Attest service durin
 case serverUnavailable
 ```
 
+```c
+DCErrorServerUnavailable
+```
+
 #### Discussion
 
-You receive this error when you call [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) and the framework isn’t able to complete the attestation. If you receive this error, try the attestation again later using the same key and the same value for the `clientDataHash` parameter. Retrying with the same inputs helps to preserve the risk metric for a given device.
+You receive this error when you call [`attestKey(_:clientDataHash:completionHandler:)`](../../dcappattestservice/attestkey%28_,clientdatahash,completionhandler%29.md) and the framework isn’t able to complete the attestation. If you receive this error, try the attestation again later using the same key and the same value for the `clientDataHash` parameter. Retrying with the same inputs helps to preserve the risk metric for a given device.
 
 ## See Also
 
-- [DCError.Code.featureUnsupported](dcerror-swift.struct/code/featureunsupported.md)
+### Error codes
+- [DCError.Code.featureUnsupported](./featureunsupported.md)
   DeviceCheck is unavailable on this device.
-- [DCError.Code.invalidInput](dcerror-swift.struct/code/invalidinput.md)
+- [DCError.Code.invalidInput](./invalidinput.md)
   An error code that indicates when your app provides data that isn’t formatted correctly.
-- [DCError.Code.invalidKey](dcerror-swift.struct/code/invalidkey.md)
+- [DCError.Code.invalidKey](./invalidkey.md)
   An error caused by a failed attempt to use the App Attest key.
-- [DCError.Code.unknownSystemFailure](dcerror-swift.struct/code/unknownsystemfailure.md)
+- [DCError.Code.unknownSystemFailure](./unknownsystemfailure.md)
   A failure has occurred, such as the failure to generate a token.
 
 

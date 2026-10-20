@@ -1,7 +1,8 @@
 # calculateArea(_:for:orientedArea:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the area for the specified contour.
 
@@ -19,6 +20,10 @@ Calculates the area for the specified contour.
 class func calculateArea(_ area: UnsafeMutablePointer<Double>, for contour: VNContour, orientedArea: Bool) throws
 ```
 
+```objc
++ (BOOL) calculateArea:(double *) area forContour:(VNContour *) contour orientedArea:(BOOL) orientedArea error:(NSError **) error;
+```
+
 #### Discussion
 
 Attempting to calculate the area for a contour containing random points, or with self-crossing edges, produces undefined results.
@@ -27,11 +32,12 @@ Attempting to calculate the area for a contour containing random points, or with
 
 - `area`: The output parameter to populate with the calculated contour area.
 - `contour`: The contour object for which to calculate the area.
-- `orientedArea`: A Boolean value that indicates whether to calculate the signed area (positive for counterclockwise-oriented contours and negative for clockwise-oriented contours). If you specify [`false`](https://developer.apple.com/documentation/swift/false), the returned area is always positive.
+- `orientedArea`: A Boolean value that indicates whether to calculate the signed area (positive for counterclockwise-oriented contours and negative for clockwise-oriented contours). If you specify [`false`](../../Swift/false.md), the returned area is always positive.
 
 ## See Also
 
-- [class func calculatePerimeter(UnsafeMutablePointer<Double>, for: VNContour) throws](vngeometryutils/calculateperimeter(_:for:).md)
+### Calculating Area and Perimeter
+- [class func calculatePerimeter(UnsafeMutablePointer<Double>, for: VNContour) throws](./calculateperimeter%28_,for%29.md)
   Calculates the perimeter of a closed contour.
 
 

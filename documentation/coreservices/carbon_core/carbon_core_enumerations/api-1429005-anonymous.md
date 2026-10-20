@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var kCSIdentityQueryEventErrorOccurred: Int](kcsidentityqueryeventerroroccurred.md)
-- [var kCSIdentityQueryEventResultsAdded: Int](kcsidentityqueryeventresultsadded.md)
-- [var kCSIdentityQueryEventResultsChanged: Int](kcsidentityqueryeventresultschanged.md)
-- [var kCSIdentityQueryEventResultsRemoved: Int](kcsidentityqueryeventresultsremoved.md)
-- [var kCSIdentityQueryEventSearchPhaseFinished: Int](kcsidentityqueryeventsearchphasefinished.md)
+- [var kCSIdentityQueryEventErrorOccurred: Int](../../kcsidentityqueryeventerroroccurred.md)
+- [var kCSIdentityQueryEventResultsAdded: Int](../../kcsidentityqueryeventresultsadded.md)
+- [var kCSIdentityQueryEventResultsChanged: Int](../../kcsidentityqueryeventresultschanged.md)
+- [var kCSIdentityQueryEventResultsRemoved: Int](../../kcsidentityqueryeventresultsremoved.md)
+- [var kCSIdentityQueryEventSearchPhaseFinished: Int](../../kcsidentityqueryeventsearchphasefinished.md)
 
 
 ---

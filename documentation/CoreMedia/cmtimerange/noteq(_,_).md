@@ -1,7 +1,8 @@
 # !=(_:_:)
 
 **Framework**: Core Media  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 4.0+

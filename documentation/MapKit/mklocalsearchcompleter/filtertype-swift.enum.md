@@ -1,16 +1,19 @@
 # MKLocalSearchCompleter.FilterType
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the types of search completions to return.
 
 **Availability**:
-- iOS 9.3+
-- iPadOS 9.3+
-- Mac Catalyst 13.1+
-- macOS 10.11.4+
-- tvOS 9.2+
+- iOS 9.3+ - Deprecated in 13.0
+- iPadOS 9.3+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.11.4+ - Deprecated in 10.15
+- tvOS 9.2+ - Deprecated in 13.0
+
+> **Deprecated**: Use [`MKLocalSearchCompleter.ResultType`](./resulttype.md) instead.
 
 ## Declaration
 
@@ -18,35 +21,40 @@ Constants indicating the types of search completions to return.
 enum FilterType
 ```
 
+```c
+enum MKSearchCompletionFilterType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MKLocalSearchCompleter.FilterType.locationsAndQueries](mklocalsearchcompleter/filtertype-swift.enum/locationsandqueries.md)
+- [MKLocalSearchCompleter.FilterType.locationsAndQueries](./filtertype-swift.enum/locationsandqueries.md)
   Points of interest and query suggestions. Specify this value when you want both map-based points of interest and common query terms used to find locations. For example, the search string `cof` yields a completion for *coffee*.
-- [MKLocalSearchCompleter.FilterType.locationsOnly](mklocalsearchcompleter/filtertype-swift.enum/locationsonly.md)
+- [MKLocalSearchCompleter.FilterType.locationsOnly](./filtertype-swift.enum/locationsonly.md)
   Points of interest only. Specify this value when you want the search string to yield completions that correspond to a specific point-of-interest on the map.
-- [MKLocalSearchCompleter.FilterType.locationsAndQueries](mklocalsearchcompleter/filtertype-swift.enum/locationsandqueries.md)
+- [MKLocalSearchCompleter.FilterType.locationsAndQueries](./filtertype-swift.enum/locationsandqueries.md)
   Points of interest and query suggestions. Specify this value when you want both map-based points of interest and common query terms used to find locations. For example, the search string `cof` yields a completion for *coffee*.
-- [MKLocalSearchCompleter.FilterType.locationsOnly](mklocalsearchcompleter/filtertype-swift.enum/locationsonly.md)
+- [MKLocalSearchCompleter.FilterType.locationsOnly](./filtertype-swift.enum/locationsonly.md)
   Points of interest only. Specify this value when you want the search string to yield completions that correspond to a specific point-of-interest on the map.
 ### Initializers
-- [init?(rawValue: Int)](mklocalsearchcompleter/filtertype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./filtertype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MKMapType](mkmaptype.md)
+### Enumerations
+- [enum MKMapType](../mkmaptype.md)
   The type of map to display.
-- [enum MKPinAnnotationColor](mkpinannotationcolor.md)
+- [enum MKPinAnnotationColor](../mkpinannotationcolor.md)
   The supported colors for pin annotations.
 
 

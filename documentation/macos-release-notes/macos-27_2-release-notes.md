@@ -1,12 +1,13 @@
 # macOS 27.2 Golden Gate RC Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27.2 SDK provides support to develop apps for Mac computers running macOS 27.2 Golden Gate RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [`Xcode 27.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27_2-release-notes).
+The macOS 27.2 SDK provides support to develop apps for Mac computers running macOS 27.2 Golden Gate RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
 
 ##### General
 
@@ -14,7 +15,7 @@ The macOS 27.2 SDK provides support to develop apps for Mac computers running ma
 
 - Fixed: Xcode might crash when using code completion on macOS 27.2 beta. (186939138)
 
-##### Appkit
+##### AppKit
 
 ###### Deprecations
 
@@ -30,7 +31,9 @@ The macOS 27.2 SDK provides support to develop apps for Mac computers running ma
 
 ###### Known Issues
 
-- Mac computers with a clean install of this build might not prompt you to allow notifications for some apps, such as Calendar, Maps, Find My, Home, and Weather. (187312007) **Workaround:** Go to System Settings > Notifications to manually turn on notifications for the affected apps.
+- Mac computers with a clean install of this build might not prompt you to allow notifications for some apps, such as Calendar, Maps, Find My, Home, and Weather. (187312007)
+
+  **Workaround:** Go to System Settings > Notifications to manually turn on notifications for the affected apps.
 
 ##### Shortcuts
 
@@ -38,7 +41,7 @@ The macOS 27.2 SDK provides support to develop apps for Mac computers running ma
 
 - Describe a Shortcut might fail with the error “Something went wrong. Try again later.” (187499433)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### Resolved Issues
 
@@ -52,7 +55,8 @@ The macOS 27.2 SDK provides support to develop apps for Mac computers running ma
 
 ## See Also
 
-- [macOS 27 Golden Gate Release Notes](macos-27-release-notes.md)
+### macOS 27
+- [macOS 27 Golden Gate Release Notes](./macos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

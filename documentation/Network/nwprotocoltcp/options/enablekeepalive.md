@@ -1,7 +1,8 @@
 # enableKeepalive
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that enables TCP keepalives.
 
@@ -22,11 +23,12 @@ var enableKeepalive: Bool { get set }
 
 ## See Also
 
-- [var keepaliveIdle: Int](nwprotocoltcp/options/keepaliveidle.md)
+### Configuring Keepalives
+- [var keepaliveIdle: Int](./keepaliveidle.md)
   The number of seconds of idleness that TCP waits before sending keepalive probes.
-- [var keepaliveCount: Int](nwprotocoltcp/options/keepalivecount.md)
+- [var keepaliveCount: Int](./keepalivecount.md)
   The number of keepalive probes that TCP sends before terminating the connection.
-- [var keepaliveInterval: Int](nwprotocoltcp/options/keepaliveinterval.md)
+- [var keepaliveInterval: Int](./keepaliveinterval.md)
   The number of seconds that TCP waits between sending keepalive probes.
 
 

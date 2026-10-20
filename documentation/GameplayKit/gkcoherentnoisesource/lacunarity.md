@@ -1,7 +1,8 @@
 # lacunarity
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which successive octaves of the noise function increase in frequency.
 
@@ -19,6 +20,10 @@ The rate at which successive octaves of the noise function increase in frequency
 var lacunarity: Double { get set }
 ```
 
+```objc
+@property (nonatomic) double lacunarity;
+```
+
 #### Discussion
 
 Coherent noise is composed from several applications of a pseudorandom function. Each successive application, or *octave*, increases in frequency and decreases in amplitude relative to the previous octave. This combination of many octaves produces the fractal appearance that makes coherent noise resemble natural phenomena like clouds, stone, and water.
@@ -27,11 +32,12 @@ Lacunarity determines the change in frequency between octaves. Smaller values re
 
 ## See Also
 
-- [var frequency: Double](gkcoherentnoisesource/frequency.md)
+### Managing Noise Generation Parameters
+- [var frequency: Double](./frequency.md)
   A value that determines the size and spacing of features in generated noise.
-- [var octaveCount: Int](gkcoherentnoisesource/octavecount.md)
+- [var octaveCount: Int](./octavecount.md)
   The number of octaves of the underlying noise function to use for generating noise.
-- [var seed: Int32](gkcoherentnoisesource/seed.md)
+- [var seed: Int32](./seed.md)
   The value that determines the specific configuration of noise produced by the noise source.
 
 

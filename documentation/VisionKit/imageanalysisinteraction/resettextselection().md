@@ -1,7 +1,8 @@
 # resetTextSelection()
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a person’s text selection from the interface.
 
@@ -20,7 +21,8 @@ final func resetTextSelection()
 
 ## See Also
 
-- [var selectedRanges: [Range<String.Index>]](imageanalysisinteraction/selectedranges.md)
+### Managing text selection
+- [var selectedRanges: [Range<String.Index>]](./selectedranges.md)
   Sets selected text ranges.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a detent identifier.
 
@@ -18,7 +19,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](uisheetpresentationcontroller/detent/identifier-swift.struct/init(rawvalue:).md)
+### Creating a detent identifier
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a detent identifier with the specified raw value.
 
 

@@ -1,7 +1,8 @@
 # preferredMicrophoneMode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The microphone mode that the user selects in Control Center.
 
@@ -18,15 +19,20 @@ The microphone mode that the user selects in Control Center.
 class var preferredMicrophoneMode: AVCaptureDevice.MicrophoneMode { get }
 ```
 
+```objc
+@property (class, readonly) AVCaptureMicrophoneMode preferredMicrophoneMode;
+```
+
 #### Discussion
 
 Use key-value observing to monitor the user’s microphone mode selection.
 
 ## See Also
 
-- [class var activeMicrophoneMode: AVCaptureDevice.MicrophoneMode](avcapturedevice/activemicrophonemode.md)
+### Inspecting the microphone mode
+- [class var activeMicrophoneMode: AVCaptureDevice.MicrophoneMode](./activemicrophonemode.md)
   The device’s active microphone mode.
-- [AVCaptureDevice.MicrophoneMode](avcapturedevice/microphonemode.md)
+- [AVCaptureDevice.MicrophoneMode](./microphonemode.md)
   Constants that define the available microphone modes.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that invokes a tile shader function from the encoder’s current tile render pipeline state.
@@ -20,15 +21,20 @@ Encodes a command that invokes a tile shader function from the encoder’s curre
 func dispatchThreadsPerTile(_ threadsPerTile: MTLSize)
 ```
 
+```objc
+- (void) dispatchThreadsPerTile:(MTLSize) threadsPerTile;
+```
+
 ## Parameters
 
-- `threadsPerTile`: A [`MTLSize`](mtlsize.md) instance that represents the number of threads the render pass uses per tile. Set the size’s [`width`](mtlsize/width.md) and [`height`](mtlsize/height.md) properties to values that are less than or equal to [`tileWidth`](mtl4rendercommandencoder/tilewidth.md) and [`tileHeight`](mtl4rendercommandencoder/tileheight.md), respectively. Some GPU families only support square tile dispatches and require the same value for width and height. Set [`depth`](mtlsize/depth.md) to `1`.
+- `threadsPerTile`: A [`MTLSize`](../mtlsize.md) instance that represents the number of threads the render pass uses per tile. Set the size’s [`width`](../mtlsize/width.md) and [`height`](../mtlsize/height.md) properties to values that are less than or equal to [`tileWidth`](./tilewidth.md) and [`tileHeight`](./tileheight.md), respectively. Some GPU families only support square tile dispatches and require the same value for width and height. Set [`depth`](../mtlsize/depth.md) to `1`.
 
 ## See Also
 
-- [var tileWidth: Int](mtl4rendercommandencoder/tilewidth.md)
+### Drawing with tile shaders
+- [var tileWidth: Int](./tilewidth.md)
   Sets the width of a tile for this render pass.
-- [var tileHeight: Int](mtl4rendercommandencoder/tileheight.md)
+- [var tileHeight: Int](./tileheight.md)
   Sets the height of a tile for this render pass.
 
 

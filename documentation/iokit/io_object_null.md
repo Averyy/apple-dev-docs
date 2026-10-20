@@ -1,7 +1,8 @@
 # IO_OBJECT_NULL
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var IO_OBJECT_NULL: io_object_t { get }
+```
+
+```c
+#define IO_OBJECT_NULL
 ```
 
 

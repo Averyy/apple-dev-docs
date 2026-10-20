@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.canadaFrench
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Canadian-French in the HID specification.
 

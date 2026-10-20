@@ -1,10 +1,11 @@
 # TKTokenObjectID
 
 **Framework**: CryptoTokenKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS 10.12+
+- macOS 10.12+ - Deprecated in 10.15 (renamed: TKToken.ObjectID)
 
 ## Declaration
 

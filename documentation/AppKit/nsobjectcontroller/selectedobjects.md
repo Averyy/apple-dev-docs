@@ -1,12 +1,13 @@
 # selectedObjects
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of all objects to be affected by editing.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ An array of all objects to be affected by editing.
 var selectedObjects: [Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray * selectedObjects;
+```
+
 ## See Also
 
-- [var selection: Any](nsobjectcontroller/selection.md)
+### Obtaining selections
+- [var selection: Any](./selection.md)
   A proxy object representing the receiver’s selection.
 
 

@@ -1,7 +1,8 @@
 # supportedMultiCamDeviceSets
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets of capture devices that you can use simultaneously in a multi-camera session.
 
@@ -18,13 +19,18 @@ Sets of capture devices that you can use simultaneously in a multi-camera sessio
 var supportedMultiCamDeviceSets: [Set<AVCaptureDevice>] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSSet<AVCaptureDevice *> *> * supportedMultiCamDeviceSets;
+```
+
 #### Discussion
 
-You may use multiple cameras as device inputs to an [`AVCaptureMultiCamSession`](avcapturemulticamsession.md), as long as one of the supported multi-camera device sets includes the device.
+You may use multiple cameras as device inputs to an [`AVCaptureMultiCamSession`](../../avcapturemulticamsession.md), as long as one of the supported multi-camera device sets includes the device.
 
 ## See Also
 
-- [var devices: [AVCaptureDevice]](avcapturedevice/discoverysession/devices.md)
+### Finding devices
+- [var devices: [AVCaptureDevice]](./devices.md)
   A list of devices that match the search criteria of the discovery session.
 
 

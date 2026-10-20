@@ -1,18 +1,19 @@
 # init(type:io:queue:cleanupHandler:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new I/O channel from an existing I/O channel.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,18 +23,21 @@ convenience init(type: DispatchIO.StreamType, io: DispatchIO, queue: DispatchQue
 
 ## Parameters
 
-- `type`: The access semantics for the channel. For a list of possible values, see [`DispatchIO.StreamType`](dispatchio/streamtype.md).
+- `type`: The access semantics for the channel. For a list of possible values, see [`DispatchIO.StreamType`](./streamtype.md).
 - `io`: An existing channel.
 - `queue`: The dispatch queue on which to perform work.
-- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter: - **error**: An `errno` condition if creating or opening the channel failed; otherwise, the value is `0`.
+- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter:
+
+  - **error**: An `errno` condition if creating or opening the channel failed; otherwise, the value is `0`.
 
 ## See Also
 
-- [convenience init(type: DispatchIO.StreamType, fileDescriptor: Int32, queue: DispatchQueue, cleanupHandler: (Int32) -> Void)](dispatchio/init(type:filedescriptor:queue:cleanuphandler:).md)
+### Creating a Dispatch I/O Object
+- [convenience init(type: DispatchIO.StreamType, fileDescriptor: Int32, queue: DispatchQueue, cleanupHandler: (Int32) -> Void)](./init%28type,filedescriptor,queue,cleanuphandler%29.md)
   Creates a new I/O channel that accesses the specified file descriptor.
-- [convenience init?(type: DispatchIO.StreamType, path: UnsafePointer<Int8>, oflag: Int32, mode: mode_t, queue: DispatchQueue, cleanupHandler: (Int32) -> Void)](dispatchio/init(type:path:oflag:mode:queue:cleanuphandler:)-50rb0.md)
+- [convenience init?(type: DispatchIO.StreamType, path: UnsafePointer<Int8>, oflag: Int32, mode: mode_t, queue: DispatchQueue, cleanupHandler: (Int32) -> Void)](./init%28type,path,oflag,mode,queue,cleanuphandler%29-50rb0.md)
   Creates a new I/O channel that accesses the file at the specified path, potentially creating that file in the process.
-- [DispatchIO.StreamType](dispatchio/streamtype.md)
+- [DispatchIO.StreamType](./streamtype.md)
   The semantics for accessing the contents of a file descriptor.
 
 

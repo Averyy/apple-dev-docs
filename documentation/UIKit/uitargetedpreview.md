@@ -1,7 +1,8 @@
 # UITargetedPreview
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object describing the view to use during preview-related animations.
 
@@ -19,65 +20,70 @@ An object describing the view to use during preview-related animations.
 class UITargetedPreview
 ```
 
+```objc
+@interface UITargetedPreview : NSObject
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](./adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Overview
 
-Use a [`UITargetedPreview`](uitargetedpreview.md) to specify the view to use during an animated transition.
+Use a [`UITargetedPreview`](./uitargetedpreview.md) to specify the view to use during an animated transition.
 
 ## Topics
 
 ### Creating a targeted preview object
-- [Adding context menus in your app](adding-context-menus-in-your-app.md)
+- [Adding context menus in your app](./adding-context-menus-in-your-app.md)
   Provide quick access to useful actions by adding context menus to your iOS app.
-- [init(view: UIView, parameters: UIPreviewParameters, target: UIPreviewTarget)](uitargetedpreview/init(view:parameters:target:).md)
+- [init(view: UIView, parameters: UIPreviewParameters, target: UIPreviewTarget)](./uitargetedpreview/init%28view,parameters,target%29.md)
   Creates a targeted preview with the specified view, parameters, and target container.
-- [convenience init(view: UIView, parameters: UIPreviewParameters)](uitargetedpreview/init(view:parameters:).md)
+- [convenience init(view: UIView, parameters: UIPreviewParameters)](./uitargetedpreview/init%28view,parameters%29.md)
   Creates a targeted preview for a view in the current window and including the specified parameters.
-- [convenience init(view: UIView)](uitargetedpreview/init(view:).md)
+- [convenience init(view: UIView)](./uitargetedpreview/init%28view%29.md)
   Creates a targeted preview for a view in the current window.
 ### Getting the preview attributes
-- [var view: UIView](uitargetedpreview/view.md)
+- [var view: UIView](./uitargetedpreview/view.md)
   The view that’s the target of the animation.
-- [var target: UIPreviewTarget](uitargetedpreview/target.md)
+- [var target: UIPreviewTarget](./uitargetedpreview/target.md)
   The container for the target view.
-- [var size: CGSize](uitargetedpreview/size.md)
+- [var size: CGSize](./uitargetedpreview/size.md)
   The size of the view.
-- [var parameters: UIPreviewParameters](uitargetedpreview/parameters.md)
+- [var parameters: UIPreviewParameters](./uitargetedpreview/parameters.md)
   Additional parameters to use when configuring the animations.
 ### Changing the target’s container
-- [func retargetedPreview(with: UIPreviewTarget) -> UITargetedPreview](uitargetedpreview/retargetedpreview(with:).md)
+- [func retargetedPreview(with: UIPreviewTarget) -> UITargetedPreview](./uitargetedpreview/retargetedpreview%28with%29.md)
   Returns a targeted preview object with the same view and parameters, but with a different target container.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UITargetedDragPreview](uitargeteddragpreview.md)
+- [UITargetedDragPreview](./uitargeteddragpreview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIContextMenuSystem](uicontextmenusystem.md)
+### Contextual menus
+- [class UIContextMenuSystem](./uicontextmenusystem.md)
   The context menu system.
-- [class UIContextMenuInteraction](uicontextmenuinteraction.md)
+- [class UIContextMenuInteraction](./uicontextmenuinteraction.md)
   An interaction object that you use to display relevant actions for your content.
-- [protocol UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)
+- [protocol UIContextMenuInteractionDelegate](./uicontextmenuinteractiondelegate.md)
   The methods for providing the set of actions to perform on your content, and for customizing the preview of that content.
-- [class UIPreviewTarget](uipreviewtarget.md)
+- [class UIPreviewTarget](./uipreviewtarget.md)
   An object that specifies the container view to use for animations.
-- [class UIPreviewParameters](uipreviewparameters.md)
+- [class UIPreviewParameters](./uipreviewparameters.md)
   Additional parameters to use when animating a preview interface.
 
 

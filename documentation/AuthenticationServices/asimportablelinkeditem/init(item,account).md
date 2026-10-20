@@ -1,7 +1,8 @@
 # init(item:account:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a linked item from the identifiers of an item and an account.
 
@@ -20,8 +21,8 @@ init(item: Data, account: Data? = nil)
 
 ## Parameters
 
-- `item`: The [`id`](asimportableitem/id.md) of the item linked by this `LinkedItem`.
-- `account`: The [`id`](asimportableaccount/id.md) of the Account to which this `LinkedItem` belongs, if any. Defaults to `nil`.
+- `item`: The [`id`](../asimportableitem/id.md) of the item linked by this `LinkedItem`.
+- `account`: The [`id`](../asimportableaccount/id.md) of the Account to which this `LinkedItem` belongs, if any. Defaults to `nil`.
 
 
 ---

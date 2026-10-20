@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent entity property.
 
@@ -19,6 +20,8 @@ Creates an app intent entity property.
 ```swift
 convenience init<Entity>() where Entity : AppEntity, Value.ValueType == EntityCollection<Entity>
 ```
+
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
 
 ---

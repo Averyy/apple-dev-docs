@@ -1,7 +1,8 @@
 # NEVPNIKEv2TLSVersion.version1_2
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value to use TLS version 1.2.
 
@@ -19,13 +20,18 @@ A value to use TLS version 1.2.
 case version1_2
 ```
 
+```c
+NEVPNIKEv2TLSVersion1_2
+```
+
 ## See Also
 
-- [NEVPNIKEv2TLSVersion.versionDefault](nevpnikev2tlsversion/versiondefault.md)
+### TLS versions
+- [NEVPNIKEv2TLSVersion.versionDefault](./versiondefault.md)
   A value to use the default TLS configuration.
-- [NEVPNIKEv2TLSVersion.version1_0](nevpnikev2tlsversion/version1_0.md)
+- [NEVPNIKEv2TLSVersion.version1_0](./version1_0.md)
   A value to use TLS version 1.0.
-- [NEVPNIKEv2TLSVersion.version1_1](nevpnikev2tlsversion/version1_1.md)
+- [NEVPNIKEv2TLSVersion.version1_1](./version1_1.md)
   A value to use TLS version 1.1.
 
 

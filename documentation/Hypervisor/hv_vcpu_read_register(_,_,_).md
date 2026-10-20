@@ -1,7 +1,8 @@
 # hv_vcpu_read_register(_:_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns, by reference, the current value of an architectural x86 register of a vCPU.
 
@@ -14,9 +15,13 @@ Returns, by reference, the current value of an architectural x86 register of a v
 func hv_vcpu_read_register(_ vcpu: hv_vcpuid_t, _ reg: hv_x86_reg_t, _ value: UnsafeMutablePointer<UInt64>) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vcpu_read_register(hv_vcpuid_t vcpu, hv_x86_reg_t reg, uint64_t *value);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 #### Discussion
 
@@ -25,14 +30,15 @@ func hv_vcpu_read_register(_ vcpu: hv_vcpuid_t, _ reg: hv_x86_reg_t, _ value: Un
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.
-- `reg`: The ID of the register. For possible values, see [`hv_x86_reg_t`](hv_x86_reg_t.md).
+- `reg`: The ID of the register. For possible values, see [`hv_x86_reg_t`](./hv_x86_reg_t.md).
 - `value`: The value of the register `reg`, on output.
 
 ## See Also
 
-- [func hv_vcpu_write_register(hv_vcpuid_t, hv_x86_reg_t, UInt64) -> hv_return_t](hv_vcpu_write_register(_:_:_:).md)
+### CPU Registers
+- [func hv_vcpu_write_register(hv_vcpuid_t, hv_x86_reg_t, UInt64) -> hv_return_t](./hv_vcpu_write_register%28_,_,_%29.md)
   Sets the value of an architectural x86 register of a vCPU.
-- [struct hv_x86_reg_t](hv_x86_reg_t.md)
+- [struct hv_x86_reg_t](./hv_x86_reg_t.md)
   The type that defines x86 architectural registers.
 
 

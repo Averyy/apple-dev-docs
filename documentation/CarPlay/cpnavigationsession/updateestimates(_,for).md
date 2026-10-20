@@ -1,7 +1,8 @@
 # updateEstimates(_:for:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the travel estimates for the specified maneuver.
 
@@ -16,6 +17,10 @@ Updates the travel estimates for the specified maneuver.
 func updateEstimates(_ estimates: CPTravelEstimates, for maneuver: CPManeuver)
 ```
 
+```objc
+- (void) updateTravelEstimates:(CPTravelEstimates *) estimates forManeuver:(CPManeuver *) maneuver;
+```
+
 ## Parameters
 
 - `estimates`: The updated travel estimates.
@@ -23,7 +28,8 @@ func updateEstimates(_ estimates: CPTravelEstimates, for maneuver: CPManeuver)
 
 ## See Also
 
-- [class CPTravelEstimates](cptravelestimates.md)
+### Updating Travel Estimates
+- [class CPTravelEstimates](../cptravelestimates.md)
   An object that describes the time and distance remaining for a maneuver in a navigation session.
 
 

@@ -1,7 +1,8 @@
 # lookup(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a dictionary definition for the selected content.
 
@@ -17,9 +18,13 @@ Presents a dictionary definition for the selected content.
 optional func lookup(_ sender: Any?)
 ```
 
+```objc
+- (void) lookup:(id) sender;
+```
+
 #### Discussion
 
-To present the standard system UI for showing a dictionary definition, call [`showDictionary(forTextInContext:definingTextInRange:from:)`](betextinteraction/showdictionary(fortextincontext:definingtextinrange:from:).md) in your implementation of this method.
+To present the standard system UI for showing a dictionary definition, call [`showDictionary(forTextInContext:definingTextInRange:from:)`](../betextinteraction/showdictionary%28fortextincontext,definingtextinrange,from%29.md) in your implementation of this method.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ To present the standard system UI for showing a dictionary definition, call [`sh
 
 ## See Also
 
-- [func share(Any?)](berespondereditactions/share(_:).md)
+### Defining and sharing text
+- [func share(Any?)](./share%28_%29.md)
   Presents UI for sharing the selected text.
 
 

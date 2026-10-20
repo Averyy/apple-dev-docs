@@ -1,7 +1,8 @@
 # requestImport(for:completionHandler:)
 
 **Framework**: BrowserKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the system display the sheet to import data from another browser.
 
@@ -12,12 +13,20 @@ Requests that the system display the sheet to import data from another browser.
 ## Declaration
 
 ```swift
+func requestImport(for metadata: BEImportMetadata, completionHandler: @escaping @Sendable (BEImportOptions?, (any Error)?) -> Void)
+```
+
+```swift
 func requestImport(for metadata: BEImportMetadata) async throws -> BEImportOptions
+```
+
+```objc
+- (void) requestImportForMetadata:(BEImportMetadata *) metadata completionHandler:(void (^)(BEImportOptions *, NSError *)) completionHandler;
 ```
 
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
 #### Discussion
 
@@ -32,7 +41,8 @@ This method provides your completion handler an option that indicates whether th
 
 ## See Also
 
-- [func importBrowserData(token: UUID) -> AsyncThrowingStream<BEBrowserData, any Error>](bebrowserdataimportmanager/importbrowserdata(token:).md)
+### Importing browser data
+- [func importBrowserData(token: UUID) -> AsyncThrowingStream<BEBrowserData, any Error>](./importbrowserdata%28token%29.md)
   Imports another app’s browsing data as a stream.
 
 

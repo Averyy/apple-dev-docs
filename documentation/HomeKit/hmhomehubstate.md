@@ -1,7 +1,8 @@
 # HMHomeHubState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of the home hub.
 
@@ -19,31 +20,36 @@ The possible states of the home hub.
 enum HMHomeHubState
 ```
 
+```c
+enum HMHomeHubState : NSUInteger;
+```
+
 ## Topics
 
 ### Specifying the State
-- [HMHomeHubState.connected](hmhomehubstate/connected.md)
+- [HMHomeHubState.connected](./hmhomehubstate/connected.md)
   The home hub is connected.
-- [HMHomeHubState.disconnected](hmhomehubstate/disconnected.md)
+- [HMHomeHubState.disconnected](./hmhomehubstate/disconnected.md)
   The home hub is disconnected.
-- [HMHomeHubState.notAvailable](hmhomehubstate/notavailable.md)
+- [HMHomeHubState.notAvailable](./hmhomehubstate/notavailable.md)
   No home hub is present.
 ### Initializers
-- [init?(rawValue: UInt)](hmhomehubstate/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./hmhomehubstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var homeHubState: HMHomeHubState](hmhome/homehubstate.md)
+### Querying the state of a home hub
+- [var homeHubState: HMHomeHubState](./hmhome/homehubstate.md)
   The state of the home hub.
 
 

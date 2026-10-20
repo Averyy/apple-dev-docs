@@ -1,7 +1,8 @@
 # init(device:count:rows:columns:transpose:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, count: Int, rows: Int, columns: Int, transpose: Bool)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device count:(NSUInteger) count rows:(NSUInteger) rows columns:(NSUInteger) columns transpose:(BOOL) transpose;
 ```
 
 

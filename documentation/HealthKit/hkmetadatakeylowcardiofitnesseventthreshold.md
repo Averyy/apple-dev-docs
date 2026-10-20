@@ -1,7 +1,8 @@
 # HKMetadataKeyLowCardioFitnessEventThreshold
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The VO2 max threshold used to categorize low-level cardio fitness events.
 
@@ -19,17 +20,22 @@ The VO2 max threshold used to categorize low-level cardio fitness events.
 let HKMetadataKeyLowCardioFitnessEventThreshold: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyLowCardioFitnessEventThreshold;
+```
+
 #### Discussion
 
-The system sets this key on [`lowCardioFitnessEvent`](hkcategorytypeidentifier/lowcardiofitnessevent.md) samples. It contains the threshold value for the user’s VO2 max measurements. The threshold value varies depending on certain parameters and physical characteristics, such as the user’s age.
+The system sets this key on [`lowCardioFitnessEvent`](./hkcategorytypeidentifier/lowcardiofitnessevent.md) samples. It contains the threshold value for the user’s VO2 max measurements. The threshold value varies depending on certain parameters and physical characteristics, such as the user’s age.
 
 A low-cardio fitness event indicates a period of time when the user’s VO2 max measurements consistently fall below the defined value. The system triggers this event approximately once every four months.
 
-The value of this key is an [`HKQuantity`](hkquantity.md) object with a unit of `ml/kg/min`. For more information on working with complex units, see [`unitMultiplied(by:)`](hkunit/unitmultiplied(by:).md), [`unitDivided(by:)`](hkunit/unitdivided(by:).md), and [`init(from:)`](hkunit/init(from:)-9qont.md).
+The value of this key is an [`HKQuantity`](./hkquantity.md) object with a unit of `ml/kg/min`. For more information on working with complex units, see [`unitMultiplied(by:)`](./hkunit/unitmultiplied%28by%29.md), [`unitDivided(by:)`](./hkunit/unitdivided%28by%29.md), and [`init(from:)`](./hkunit/init%28from%29-9qont.md).
 
 ## See Also
 
-- [let HKMetadataKeyVO2MaxValue: String](hkmetadatakeyvo2maxvalue.md)
+### Cardio Fitness Keys
+- [let HKMetadataKeyVO2MaxValue: String](./hkmetadatakeyvo2maxvalue.md)
   The maximum oxygen consumption rate during exercise of increasing intensity.
 
 

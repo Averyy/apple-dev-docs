@@ -1,7 +1,8 @@
 # setToolbarHidden(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the visibility of the navigation controller’s built-in toolbar.
 
@@ -17,24 +18,29 @@ Changes the visibility of the navigation controller’s built-in toolbar.
 func setToolbarHidden(_ hidden: Bool, animated: Bool)
 ```
 
+```objc
+- (void) setToolbarHidden:(BOOL) hidden animated:(BOOL) animated;
+```
+
 #### Discussion
 
 You can use this method to animate changes to the visibility of the built-in toolbar.
 
-Calling this method with the `animated` parameter set to [`false`](https://developer.apple.com/documentation/swift/false) is equivalent to setting the value of the [`isToolbarHidden`](uinavigationcontroller/istoolbarhidden.md) property directly. The toolbar simply appears or disappears depending on the value in the `hidden` parameter.
+Calling this method with the `animated` parameter set to [`false`](../../Swift/false.md) is equivalent to setting the value of the [`isToolbarHidden`](./istoolbarhidden.md) property directly. The toolbar simply appears or disappears depending on the value in the `hidden` parameter.
 
 ## Parameters
 
-- `hidden`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to hide the toolbar or [`false`](https://developer.apple.com/documentation/swift/false) to show it.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want the toolbar to be animated on or off the screen.
+- `hidden`: Specify [`true`](../../Swift/true.md) to hide the toolbar or [`false`](../../Swift/false.md) to show it.
+- `animated`: Specify [`true`](../../Swift/true.md) if you want the toolbar to be animated on or off the screen.
 
 ## See Also
 
-- [var toolbar: UIToolbar!](uinavigationcontroller/toolbar.md)
+### Configuring custom toolbars
+- [var toolbar: UIToolbar!](./toolbar.md)
   The custom toolbar associated with the navigation controller.
-- [var isToolbarHidden: Bool](uinavigationcontroller/istoolbarhidden.md)
+- [var isToolbarHidden: Bool](./istoolbarhidden.md)
   A Boolean indicating whether the navigation controller’s built-in toolbar is visible.
-- [class let hideShowBarDuration: CGFloat](uinavigationcontroller/hideshowbarduration.md)
+- [class let hideShowBarDuration: CGFloat](./hideshowbarduration.md)
   A variable that specifies the duration when animating the navigation bar.
 
 

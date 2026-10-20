@@ -1,7 +1,8 @@
 # init(componentNoises:selectionNoise:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a noise object by combining the specified noise objects, using another noise object to select which regions of the output correspond to which input noise.
 
@@ -19,17 +20,21 @@ Creates a noise object by combining the specified noise objects, using another n
 convenience init(componentNoises noises: [GKNoise], selectionNoise: GKNoise)
 ```
 
+```objc
++ (instancetype) noiseWithComponentNoises:(NSArray<GKNoise *> *) noises selectionNoise:(GKNoise *) selectionNoise;
+```
+
 #### Return Value
 
 A new noise object.
 
 #### Discussion
 
-This method is equivalent to the [`init(componentNoises:selectionNoise:componentBoundaries:boundaryBlendDistances:)`](gknoise/init(componentnoises:selectionnoise:componentboundaries:boundaryblenddistances:).md) method, but automatically determines uniformly spaced boundaries based on the number of noise objects in the `noises` array, and using a blend distance of zero for each boundary. Together with these boundaries, the `selectionNoise` parameter determines which of the input noise objects appears in which region of generated noise.
+This method is equivalent to the [`init(componentNoises:selectionNoise:componentBoundaries:boundaryBlendDistances:)`](./init%28componentnoises,selectionnoise,componentboundaries,boundaryblenddistances%29.md) method, but automatically determines uniformly spaced boundaries based on the number of noise objects in the `noises` array, and using a blend distance of zero for each boundary. Together with these boundaries, the `selectionNoise` parameter determines which of the input noise objects appears in which region of generated noise.
 
 For example, if the `noises` array contains two noise objects, the boundary value is zero: In regions where the `selectionNoise` field has negative values, the noise created by this method uses values from the first element of the `noises` array, and in regions where the `selectionNoise` field has positive values, the created noise uses values from the second element in the `noises` array.
 
-![None](/images/com.apple.gameplaykit/media-2556365@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.gameplaykit/media-2556365@2x.png)
 
 ## Parameters
 
@@ -38,7 +43,8 @@ For example, if the `noises` array contains two noise objects, the boundary valu
 
 ## See Also
 
-- [convenience init(componentNoises: [GKNoise], selectionNoise: GKNoise, componentBoundaries: [NSNumber], boundaryBlendDistances: [NSNumber])](gknoise/init(componentnoises:selectionnoise:componentboundaries:boundaryblenddistances:).md)
+### Creating Noise by Combining Noise
+- [convenience init(componentNoises: [GKNoise], selectionNoise: GKNoise, componentBoundaries: [NSNumber], boundaryBlendDistances: [NSNumber])](./init%28componentnoises,selectionnoise,componentboundaries,boundaryblenddistances%29.md)
   Creates a noise object by combining the specified noise objects, using another noise object and the specified boundaries to select which regions of the output correspond to which input noise.
 
 

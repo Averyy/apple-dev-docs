@@ -1,7 +1,8 @@
 # AppLocaleDetailsQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Paginated response object for app locale detail queries.
 
@@ -10,13 +11,13 @@ Paginated response object for app locale detail queries.
 
 ## Declaration
 
-```swift
+```
 object AppLocaleDetailsQueryResponse
 ```
 
 #### Discussion
 
-The [`Query App Locale Details`](query-default-product-page-locale-details-by-adam-id.md) endpoint returns `AppLocaleDetailsQueryResponse` as the top-level envelope.
+The [`Query App Locale Details`](./query-default-product-page-locale-details-by-adam-id.md) endpoint returns `AppLocaleDetailsQueryResponse` as the top-level envelope.
 
 ##### Example
 
@@ -71,19 +72,19 @@ The `pagination` object contains the following fields:
 
 - `result` ([AppLocaleDetails]): Array of `AppLocaleDetails` objects, one per supported locale. Read-only.
 - `pagination` (QueryPaginationResult): Pagination metadata for the result set. See fields below. Read-only.
-- `error` (Error): Error details if the request failed. Omitted entirely on success. See [`Error`](error.md). Read-only.
+- `error` (Error): Error details if the request failed. Omitted entirely on success. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object AppInfo](appinfo.md)
+- [object AppInfo](./appinfo.md)
   A single app search result.
-- [object AppLocaleDetails](applocaledetails.md)
+- [object AppLocaleDetails](./applocaledetails.md)
   Localized content for an app’s Default Product Page.
-- [object AppsSearchResponse](appssearchresponse.md)
+- [object AppsSearchResponse](./appssearchresponse.md)
   Apps search response envelope.
-- [object AppSupportedLanguages](appsupportedlanguages.md)
+- [object AppSupportedLanguages](./appsupportedlanguages.md)
   App supported and default languages for an App Store country or region.
-- [object AppSupportedLanguagesQueryResponse](appsupportedlanguagesqueryresponse.md)
+- [object AppSupportedLanguagesQueryResponse](./appsupportedlanguagesqueryresponse.md)
   Paginated response object for the supported app languages query.
 
 

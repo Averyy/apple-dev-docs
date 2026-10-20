@@ -1,22 +1,27 @@
 # eraseFile
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that an existing file should be erased when creating a new file.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 static var eraseFile: MusicSequenceFileFlags { get }
+```
+
+```c
+kMusicSequenceFileFlags_EraseFile
 ```
 
 

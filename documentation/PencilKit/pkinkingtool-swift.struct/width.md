@@ -1,7 +1,8 @@
 # width
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the ink.
 
@@ -24,11 +25,12 @@ The actual line width at any given point varies based on input from Apple Pencil
 
 ## See Also
 
-- [var color: UIColor](pkinkingtool-swift.struct/color-5xmlo.md)
+### Getting the inking tool attributes
+- [var color: UIColor](./color-5xmlo.md)
   The color of the ink.
-- [var color: NSColor](pkinkingtool-swift.struct/color-22zaw.md)
+- [var color: NSColor](./color-22zaw.md)
   The color of the ink.
-- [var ink: PKInk](pkinkingtool-swift.struct/ink.md)
+- [var ink: PKInk](./ink.md)
   The ink used by this inking tool.
 
 

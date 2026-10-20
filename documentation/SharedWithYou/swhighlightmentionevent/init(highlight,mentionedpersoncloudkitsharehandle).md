@@ -1,7 +1,8 @@
 # init(highlight:mentionedPersonCloudKitShareHandle:)
 
 **Framework**: Shared with You  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a mention event.
 
@@ -18,6 +19,10 @@ Creates and initializes a mention event.
 init(highlight: SWHighlight, mentionedPersonCloudKitShareHandle handle: String)
 ```
 
+```objc
+- (instancetype) initWithHighlight:(SWHighlight *) highlight mentionedPersonCloudKitShareHandle:(NSString *) handle;
+```
+
 ## Parameters
 
 - `highlight`: The related hightlight for the event.
@@ -25,7 +30,8 @@ init(highlight: SWHighlight, mentionedPersonCloudKitShareHandle handle: String)
 
 ## See Also
 
-- [init(highlight: SWHighlight, mentionedPersonIdentity: SWPerson.Identity)](swhighlightmentionevent/init(highlight:mentionedpersonidentity:).md)
+### Creating a mention event
+- [init(highlight: SWHighlight, mentionedPersonIdentity: SWPerson.Identity)](./init%28highlight,mentionedpersonidentity%29.md)
   Creates and initializes a mention event.
 
 

@@ -1,7 +1,8 @@
 # update(value:velocity:target:deltaTime:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the current  value and velocity of a spring.
 

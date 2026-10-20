@@ -1,7 +1,8 @@
 # init(data:options:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a movie object from a movie file’s data.
 
@@ -19,6 +20,10 @@ Creates a movie object from a movie file’s data.
 init(data: Data, options: [String : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) data options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Discussion
 
 Use this method to create movies from movie headers that aren’t stored in files, which can include movies that the pasteboard contains.
@@ -30,11 +35,12 @@ Use this method to create movies from movie headers that aren’t stored in file
 
 ## See Also
 
-- [convenience init(url: URL)](avmovie/init(url:).md)
+### Creating a movie
+- [convenience init(url: URL)](./init%28url%29.md)
   Creates a movie that models the media at the specified URL.
-- [init(url: URL, options: [String : Any]?)](avmovie/init(url:options:)-1wjrq.md)
+- [init(url: URL, options: [String : Any]?)](./init%28url,options%29-1wjrq.md)
   Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file.
-- [Initialization options](initialization-options.md)
+- [Initialization options](../initialization-options.md)
   Specify options to configure the initialization of a movie.
 
 

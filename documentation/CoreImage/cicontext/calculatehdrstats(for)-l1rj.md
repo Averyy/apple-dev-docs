@@ -1,7 +1,8 @@
 # calculateHDRStats(for:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Given a Core Image image, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then return a new Core Image image that has the calculated values.
 
@@ -19,9 +20,13 @@ Given a Core Image image, use the receiving Core Image context to calculate its 
 func calculateHDRStats(for image: CIImage) -> CIImage?
 ```
 
+```objc
+- (CIImage *) calculateHDRStatsForImage:(CIImage *) image;
+```
+
 #### Return Value
 
- Returns a new [`CIImage`](ciimage.md) instance that has the calculated statistics attached.
+ Returns a new [`CIImage`](../ciimage.md) instance that has the calculated statistics attached.
 
 #### Discussion
 
@@ -29,7 +34,7 @@ If the image extent is not finite, then nil will be returned.
 
 ## Parameters
 
-- `image`: An immutable [`CIImage`](ciimage.md) for which to calculate statistics.
+- `image`: An immutable [`CIImage`](../ciimage.md) for which to calculate statistics.
 
 
 ---

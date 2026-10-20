@@ -1,7 +1,8 @@
 # Destination.Parameters
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Destination-specific parameters for the post-tap experience.
 
@@ -10,13 +11,13 @@ Destination-specific parameters for the post-tap experience.
 
 ## Declaration
 
-```swift
+```
 object Destination.Parameters
 ```
 
 #### Discussion
 
-See [`DestinationParameter`](destinationparameter.md) for the full field reference.
+See [`DestinationParameter`](../destinationparameter.md) for the full field reference.
 
 ## Properties
 

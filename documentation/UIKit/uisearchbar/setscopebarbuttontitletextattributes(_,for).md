@@ -1,7 +1,8 @@
 # setScopeBarButtonTitleTextAttributes(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the text attributes for the search bar’ button’s title string for a given state.
 
@@ -9,7 +10,7 @@ Sets the text attributes for the search bar’ button’s title string for a giv
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,24 +19,31 @@ Sets the text attributes for the search bar’ button’s title string for a giv
 func setScopeBarButtonTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]?, for state: UIControl.State)
 ```
 
+```objc
+- (void) setScopeBarButtonTitleTextAttributes:(NSDictionary<NSString *,id> *) attributes forState:(UIControlState) state;
+```
+
 ## Parameters
 
-- `attributes`: A dictionary containing key-value pairs specifying the text attributes to use for `state`. You may specify the font, text color, text shadow color, and text shadow offset, using the keys found in NSString UIKit Additions Reference.
+- `attributes`: A dictionary containing key-value pairs specifying the text attributes to use for `state`.
+
+  You may specify the font, text color, text shadow color, and text shadow offset, using the keys found in NSString UIKit Additions Reference.
 - `state`: A control state.
 
 ## See Also
 
-- [var scopeBarBackgroundImage: UIImage?](uisearchbar/scopebarbackgroundimage.md)
+### Customizing the scope bar appearance
+- [var scopeBarBackgroundImage: UIImage?](./scopebarbackgroundimage.md)
   The background image for the scope bar.
-- [func scopeBarButtonBackgroundImage(for: UIControl.State) -> UIImage?](uisearchbar/scopebarbuttonbackgroundimage(for:).md)
+- [func scopeBarButtonBackgroundImage(for: UIControl.State) -> UIImage?](./scopebarbuttonbackgroundimage%28for%29.md)
   Returns the background image for the scope bar button in a given state.
-- [func setScopeBarButtonBackgroundImage(UIImage?, for: UIControl.State)](uisearchbar/setscopebarbuttonbackgroundimage(_:for:).md)
+- [func setScopeBarButtonBackgroundImage(UIImage?, for: UIControl.State)](./setscopebarbuttonbackgroundimage%28_,for%29.md)
   Sets the background image for the scope bar button in a given state.
-- [func scopeBarButtonDividerImage(forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State) -> UIImage?](uisearchbar/scopebarbuttondividerimage(forleftsegmentstate:rightsegmentstate:).md)
+- [func scopeBarButtonDividerImage(forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State) -> UIImage?](./scopebarbuttondividerimage%28forleftsegmentstate,rightsegmentstate%29.md)
   Returns the divider image to use for a given combination of left and right segment states.
-- [func setScopeBarButtonDividerImage(UIImage?, forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State)](uisearchbar/setscopebarbuttondividerimage(_:forleftsegmentstate:rightsegmentstate:).md)
+- [func setScopeBarButtonDividerImage(UIImage?, forLeftSegmentState: UIControl.State, rightSegmentState: UIControl.State)](./setscopebarbuttondividerimage%28_,forleftsegmentstate,rightsegmentstate%29.md)
   Sets the divider image to use for a given combination of left and right segment states.
-- [func scopeBarButtonTitleTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](uisearchbar/scopebarbuttontitletextattributes(for:).md)
+- [func scopeBarButtonTitleTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](./scopebarbuttontitletextattributes%28for%29.md)
   Returns the text attributes for the search bar’s button’s title string for a given state.
 
 

@@ -1,7 +1,8 @@
 # documentInteractionControllerDidDismissOptionsMenu(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a document interaction controller has dismissed its options menu.
 
@@ -17,9 +18,13 @@ Called when a document interaction controller has dismissed its options menu.
 optional func documentInteractionControllerDidDismissOptionsMenu(_ controller: UIDocumentInteractionController)
 ```
 
+```objc
+- (void) documentInteractionControllerDidDismissOptionsMenu:(UIDocumentInteractionController *) controller;
+```
+
 #### Discussion
 
-You can use this method to remove any additional views or content you placed underneath the options menu in your [`documentInteractionControllerWillPresentOptionsMenu(_:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillpresentoptionsmenu(_:).md) method.
+You can use this method to remove any additional views or content you placed underneath the options menu in your [`documentInteractionControllerWillPresentOptionsMenu(_:)`](./documentinteractioncontrollerwillpresentoptionsmenu%28_%29.md) method.
 
 ## Parameters
 
@@ -27,17 +32,18 @@ You can use this method to remove any additional views or content you placed und
 
 ## See Also
 
-- [func documentInteractionControllerWillBeginPreview(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillbeginpreview(_:).md)
+### Presenting the user interface
+- [func documentInteractionControllerWillBeginPreview(UIDocumentInteractionController)](./documentinteractioncontrollerwillbeginpreview%28_%29.md)
   Called when a document interaction controller is about to display a preview for its document.
-- [func documentInteractionControllerDidEndPreview(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdidendpreview(_:).md)
+- [func documentInteractionControllerDidEndPreview(UIDocumentInteractionController)](./documentinteractioncontrollerdidendpreview%28_%29.md)
   Called when a document interaction controller has dismissed its document preview.
-- [func documentInteractionControllerWillPresentOptionsMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillpresentoptionsmenu(_:).md)
+- [func documentInteractionControllerWillPresentOptionsMenu(UIDocumentInteractionController)](./documentinteractioncontrollerwillpresentoptionsmenu%28_%29.md)
   Called when a document interaction controller is about to display an options menu.
-- [func documentInteractionControllerWillPresentOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillpresentopeninmenu(_:).md)
+- [func documentInteractionControllerWillPresentOpenInMenu(UIDocumentInteractionController)](./documentinteractioncontrollerwillpresentopeninmenu%28_%29.md)
   Called when a document interaction controller is about to display an Open In menu.
-- [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissopeninmenu(_:).md)
+- [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](./documentinteractioncontrollerdiddismissopeninmenu%28_%29.md)
   Called when a document interaction controller has dismissed its Open In menu.
-- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:canperformaction:).md)
+- [func documentInteractionController(UIDocumentInteractionController, canPerformAction: Selector?) -> Bool](./documentinteractioncontroller%28_,canperformaction%29.md)
   Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
 
 

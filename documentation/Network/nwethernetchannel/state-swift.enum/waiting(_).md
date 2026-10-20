@@ -1,7 +1,8 @@
 # NWEthernetChannel.State.waiting(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The channel is waiting for its interface to become available.
 
@@ -16,15 +17,16 @@ case waiting(NWError)
 
 ## See Also
 
-- [NWEthernetChannel.State.setup](nwethernetchannel/state-swift.enum/setup.md)
+### States
+- [NWEthernetChannel.State.setup](./setup.md)
   The channel has been initialized but not started.
-- [NWEthernetChannel.State.preparing](nwethernetchannel/state-swift.enum/preparing.md)
+- [NWEthernetChannel.State.preparing](./preparing.md)
   The channel is registering with the interface.
-- [NWEthernetChannel.State.ready](nwethernetchannel/state-swift.enum/ready.md)
+- [NWEthernetChannel.State.ready](./ready.md)
   The channel is able to send and receive Ethernet frames.
-- [NWEthernetChannel.State.failed(_:)](nwethernetchannel/state-swift.enum/failed(_:).md)
+- [NWEthernetChannel.State.failed(_:)](./failed%28_%29.md)
   The channel has encountered a fatal error.
-- [NWEthernetChannel.State.cancelled](nwethernetchannel/state-swift.enum/cancelled.md)
+- [NWEthernetChannel.State.cancelled](./cancelled.md)
   The channel has been canceled.
 
 

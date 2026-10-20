@@ -1,15 +1,16 @@
 # kVarispeedParam_PlaybackCents
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kVarispeedParam_PlaybackCents: AudioUnitParameterID { get }
 ```
 
+```c
+kVarispeedParam_PlaybackCents
+```
+
 ## See Also
 
-- [var kVarispeedParam_PlaybackRate: AudioUnitParameterID](kvarispeedparam_playbackrate.md)
+### Constants
+- [var kVarispeedParam_PlaybackRate: AudioUnitParameterID](./kvarispeedparam_playbackrate.md)
 
 
 ---

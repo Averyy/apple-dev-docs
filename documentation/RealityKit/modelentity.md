@@ -1,7 +1,8 @@
 # ModelEntity
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a physical object that RealityKit renders and optionally simulates.
 
@@ -11,7 +12,7 @@ A representation of a physical object that RealityKit renders and optionally sim
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,75 +23,76 @@ A representation of a physical object that RealityKit renders and optionally sim
 
 ## Mentions
 
-- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
-- [Loading entities from a file](loading-entities-from-a-file.md)
+- [Reducing CPU Utilization in Your RealityKit App](./reducing-cpu-utilization-in-your-realitykit-app.md)
+- [Loading entities from a file](./loading-entities-from-a-file.md)
 
 #### Overview
 
-Use one or more model entities to place physical objects in a scene. In addition to the components they inherit from the [`Entity`](entity.md) class, model entities have geometry, described by their [`ModelComponent`](modelcomponent.md). Model entities acquire the model component by conforming to the [`HasModel`](hasmodel.md) protocol. You specify meshes and materials to control how a model entity appears.
+Use one or more model entities to place physical objects in a scene. In addition to the components they inherit from the [`Entity`](./entity.md) class, model entities have geometry, described by their [`ModelComponent`](./modelcomponent.md). Model entities acquire the model component by conforming to the [`HasModel`](./hasmodel.md) protocol. You specify meshes and materials to control how a model entity appears.
 
-![Diagram showing the components present in the model](/images/com.apple.RealityKit/ModelEntity-1@2x.png)
+![Diagram showing the components present in the model](https://developer.apple.com/tutorials/images/com.apple.RealityKit/ModelEntity-1@2x.png)
 
-Models respond to physics simulations because they conform to the [`HasPhysics`](hasphysics.md) protocol. You give them mass and other physical properties with a [`PhysicsBodyComponent`](physicsbodycomponent.md) instance, and then apply forces or impulses. The simulator uses a [`PhysicsMotionComponent`](physicsmotioncomponent.md) to manage the linear and angular velocity of the object. Alternatively, you can selectively circumvent the simulation to control position and velocity yourself. Do this for a given model by setting its physics body [`mode`](physicsbodycomponent/mode.md) to [`PhysicsBodyMode.kinematic`](physicsbodymode/kinematic.md).
+Models respond to physics simulations because they conform to the [`HasPhysics`](./hasphysics.md) protocol. You give them mass and other physical properties with a [`PhysicsBodyComponent`](./physicsbodycomponent.md) instance, and then apply forces or impulses. The simulator uses a [`PhysicsMotionComponent`](./physicsmotioncomponent.md) to manage the linear and angular velocity of the object. Alternatively, you can selectively circumvent the simulation to control position and velocity yourself. Do this for a given model by setting its physics body [`mode`](./physicsbodycomponent/mode.md) to [`PhysicsBodyMode.kinematic`](./physicsbodymode/kinematic.md).
 
-Models can also collide with one another, and with other entities that conform to the [`HasCollision`](hascollision.md) protocol. The [`CollisionComponent`](collisioncomponent.md) provides parameters that let you manage which models collide with each other. It also lets you control the collision shape, which for performance reasons, is typically simpler than the visual geometry.
+Models can also collide with one another, and with other entities that conform to the [`HasCollision`](./hascollision.md) protocol. The [`CollisionComponent`](./collisioncomponent.md) provides parameters that let you manage which models collide with each other. It also lets you control the collision shape, which for performance reasons, is typically simpler than the visual geometry.
 
 ## Topics
 
 ### Creating a model
-- [init()](modelentity/init.md)
+- [init()](./modelentity/init%28%29.md)
   Creates a model entity.
-- [init(mesh: MeshResource, materials: [any Material])](modelentity/init(mesh:materials:).md)
+- [init(mesh: MeshResource, materials: [any Material])](./modelentity/init%28mesh,materials%29.md)
   Creates a model entity with a particular mesh and set of materials.
-- [init(mesh: MeshResource, materials: [any Material], collisionShape: ShapeResource, mass: Float)](modelentity/init(mesh:materials:collisionshape:mass:).md)
+- [init(mesh: MeshResource, materials: [any Material], collisionShape: ShapeResource, mass: Float)](./modelentity/init%28mesh,materials,collisionshape,mass%29.md)
   Creates a model entity with a particular mesh, set of materials, collision shape, and mass.
-- [init(mesh: MeshResource, materials: [any Material], collisionShapes: [ShapeResource], mass: Float)](modelentity/init(mesh:materials:collisionshapes:mass:).md)
+- [init(mesh: MeshResource, materials: [any Material], collisionShapes: [ShapeResource], mass: Float)](./modelentity/init%28mesh,materials,collisionshapes,mass%29.md)
   Creates a model entity with a particular mesh, set of materials, a composite collision shape, and mass.
 
 ## Relationships
 
 ### Inherits From
-- [Entity](entity.md)
+- [Entity](./entity.md)
 ### Conforms To
-- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
-- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [EventSource](eventsource.md)
-- [HasCollision](hascollision.md)
-- [HasHierarchy](hashierarchy.md)
-- [HasModel](hasmodel.md)
-- [HasPhysics](hasphysics.md)
-- [HasPhysicsBody](hasphysicsbody.md)
-- [HasPhysicsMotion](hasphysicsmotion.md)
-- [HasSynchronization](hassynchronization.md)
-- [HasTransform](hastransform.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Observable](../observation/observable.md)
-- [RealityCoordinateSpace](realitycoordinatespace.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CoordinateSpace3D](../Spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../Spatial/coordinatespace3dfloat.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [EventSource](./eventsource.md)
+- [HasCollision](./hascollision.md)
+- [HasHierarchy](./hashierarchy.md)
+- [HasModel](./hasmodel.md)
+- [HasPhysics](./hasphysics.md)
+- [HasPhysicsBody](./hasphysicsbody.md)
+- [HasPhysicsMotion](./hasphysicsmotion.md)
+- [HasSynchronization](./hassynchronization.md)
+- [HasTransform](./hastransform.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Observable](../Observation/observable.md)
+- [RealityCoordinateSpace](./realitycoordinatespace.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating 3D entities with RealityKit](../visionos/creating-3d-entities-with-realitykit.md)
+### Model display
+- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
   Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
-- [Creating 3D models as movable windows](../visionos/creating-a-volumetric-window-in-visionos.md)
+- [Creating 3D models as movable windows](../visionOS/creating-a-volumetric-window-in-visionos.md)
   Display 3D content with a volumetric window that people can move.
-- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [Applying mesh to real-world surroundings](../visionos/applying-mesh-to-real-world-surroundings.md)
+- [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
-- [Obscuring virtual items in a scene behind real-world items](../visionos/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
-- [Manipulating models with RealityKit](manipulating-models-with-realitykit.md)
+- [Manipulating models with RealityKit](./manipulating-models-with-realitykit.md)
   Interact with detailed 3D models using manipulation and clipping controls.
-- [struct ModelComponent](modelcomponent.md)
+- [struct ModelComponent](./modelcomponent.md)
   A component that contains a mesh and materials for the visual appearance of an entity.
-- [class MeshResource](meshresource.md)
+- [class MeshResource](./meshresource.md)
   A high-level representation of a collection of vertices and edges that define a shape.
 
 

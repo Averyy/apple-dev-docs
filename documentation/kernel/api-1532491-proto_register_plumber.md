@@ -1,18 +1,19 @@
 # proto_register_plumber
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t proto_register_plumber(protocol_family_t proto_fam, ifnet_family_t if_fam, proto_plumb_handler plumb, proto_unplumb_handler unplumb);
 ```
 
-#### Return_value
+#### Return Value
 
 A non-zero value of the attach failed.
 

@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the data transfer report, from when it was started to when it was collected.
 

@@ -1,7 +1,8 @@
 # Comparable
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be compared using the relational operators `<`, `<=`, `>=`, and `>`.
 
@@ -123,142 +124,143 @@ Note that the `>` operator provided by the standard library is used in this exam
 ## Topics
 
 ### Range Expressions
-- [static func ... (Self, Self) -> ClosedRange<Self>](comparable/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./comparable/dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ... (Self) -> PartialRangeFrom<Self>](comparable/'...(_:)-6mvrh.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./comparable/dotdotdot%28_%29-6mvrh.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](comparable/'...(_:)-1quco.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./comparable/dotdotdot%28_%29-1quco.md)
   Returns a partial range up to, and including, its upper bound.
 ### Tuple Comparison
-- [func < ((), ()) -> Bool](_(_:_:)-1b1cu.md)
+- [func < ((), ()) -> Bool](./op%28_,_%29-1b1cu.md)
   Returns a Boolean value indicating whether the first tuple is ordered before the second in a lexicographical ordering.
-- [func < <A, B>((A, B), (A, B)) -> Bool](_(_:_:)-4ck5h.md)
+- [func < <A, B>((A, B), (A, B)) -> Bool](./op%28_,_%29-4ck5h.md)
   Returns a Boolean value indicating whether the first tuple is ordered before the second in a lexicographical ordering.
-- [func < <A, B, C>((A, B, C), (A, B, C)) -> Bool](_(_:_:)-23151.md)
+- [func < <A, B, C>((A, B, C), (A, B, C)) -> Bool](./op%28_,_%29-23151.md)
   Returns a Boolean value indicating whether the first tuple is ordered before the second in a lexicographical ordering.
-- [func < <A, B, C, D>((A, B, C, D), (A, B, C, D)) -> Bool](_(_:_:)-6p1tf.md)
+- [func < <A, B, C, D>((A, B, C, D), (A, B, C, D)) -> Bool](./op%28_,_%29-6p1tf.md)
   Returns a Boolean value indicating whether the first tuple is ordered before the second in a lexicographical ordering.
-- [func < <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](_(_:_:)-3hhjy.md)
+- [func < <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](./op%28_,_%29-3hhjy.md)
   Returns a Boolean value indicating whether the first tuple is ordered before the second in a lexicographical ordering.
-- [func < <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](_(_:_:)-8mgtp.md)
+- [func < <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](./op%28_,_%29-8mgtp.md)
   Returns a Boolean value indicating whether the first tuple is ordered before the second in a lexicographical ordering.
-- [func <= ((), ()) -> Bool](_=(_:_:)-16p1e.md)
+- [func <= ((), ()) -> Bool](./opeq%28_,_%29-16p1e.md)
   Returns a Boolean value indicating whether the first tuple is ordered before or the same as the second in a lexicographical ordering.
-- [func <= <A, B>((A, B), (A, B)) -> Bool](_=(_:_:)-3jpod.md)
+- [func <= <A, B>((A, B), (A, B)) -> Bool](./opeq%28_,_%29-3jpod.md)
   Returns a Boolean value indicating whether the first tuple is ordered before or the same as the second in a lexicographical ordering.
-- [func <= <A, B, C>((A, B, C), (A, B, C)) -> Bool](_=(_:_:)-8u5uu.md)
+- [func <= <A, B, C>((A, B, C), (A, B, C)) -> Bool](./opeq%28_,_%29-8u5uu.md)
   Returns a Boolean value indicating whether the first tuple is ordered before or the same as the second in a lexicographical ordering.
-- [func <= <A, B, C, D>((A, B, C, D), (A, B, C, D)) -> Bool](_=(_:_:)-6kea2.md)
+- [func <= <A, B, C, D>((A, B, C, D), (A, B, C, D)) -> Bool](./opeq%28_,_%29-6kea2.md)
   Returns a Boolean value indicating whether the first tuple is ordered before or the same as the second in a lexicographical ordering.
-- [func <= <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](_=(_:_:)-1hzxz.md)
+- [func <= <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](./opeq%28_,_%29-1hzxz.md)
   Returns a Boolean value indicating whether the first tuple is ordered before or the same as the second in a lexicographical ordering.
-- [func <= <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](_=(_:_:)-7n746.md)
+- [func <= <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](./opeq%28_,_%29-7n746.md)
   Returns a Boolean value indicating whether the first tuple is ordered before or the same as the second in a lexicographical ordering.
-- [func > ((), ()) -> Bool](_(_:_:)-yktb.md)
+- [func > ((), ()) -> Bool](./op%28_,_%29-yktb.md)
   Returns a Boolean value indicating whether the first tuple is ordered after the second in a lexicographical ordering.
-- [func > <A, B>((A, B), (A, B)) -> Bool](_(_:_:)-4xg09.md)
+- [func > <A, B>((A, B), (A, B)) -> Bool](./op%28_,_%29-4xg09.md)
   Returns a Boolean value indicating whether the first tuple is ordered after the second in a lexicographical ordering.
-- [func > <A, B, C>((A, B, C), (A, B, C)) -> Bool](_(_:_:)-7p512.md)
+- [func > <A, B, C>((A, B, C), (A, B, C)) -> Bool](./op%28_,_%29-7p512.md)
   Returns a Boolean value indicating whether the first tuple is ordered after the second in a lexicographical ordering.
-- [func > <A, B, C, D>((A, B, C, D), (A, B, C, D)) -> Bool](_(_:_:)-5gb41.md)
+- [func > <A, B, C, D>((A, B, C, D), (A, B, C, D)) -> Bool](./op%28_,_%29-5gb41.md)
   Returns a Boolean value indicating whether the first tuple is ordered after the second in a lexicographical ordering.
-- [func > <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](_(_:_:)-3ewuy.md)
+- [func > <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](./op%28_,_%29-3ewuy.md)
   Returns a Boolean value indicating whether the first tuple is ordered after the second in a lexicographical ordering.
-- [func > <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](_(_:_:)-kqsy.md)
+- [func > <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](./op%28_,_%29-kqsy.md)
   Returns a Boolean value indicating whether the first tuple is ordered after the second in a lexicographical ordering.
-- [func >= ((), ()) -> Bool](_=(_:_:)-1ak1k.md)
+- [func >= ((), ()) -> Bool](./opeq%28_,_%29-1ak1k.md)
   Returns a Boolean value indicating whether the first tuple is ordered after or the same as the second in a lexicographical ordering.
-- [func >= <A, B>((A, B), (A, B)) -> Bool](_=(_:_:)-6kwvw.md)
+- [func >= <A, B>((A, B), (A, B)) -> Bool](./opeq%28_,_%29-6kwvw.md)
   Returns a Boolean value indicating whether the first tuple is ordered after or the same as the second in a lexicographical ordering.
-- [func >= <A, B, C>((A, B, C), (A, B, C)) -> Bool](_=(_:_:)-7p28b.md)
+- [func >= <A, B, C>((A, B, C), (A, B, C)) -> Bool](./opeq%28_,_%29-7p28b.md)
   Returns a Boolean value indicating whether the first tuple is ordered after or the same as the second in a lexicographical ordering.
-- [func >= <A, B, C, D>((A, B, C, D), (A, B, C, D)) -> Bool](_=(_:_:)-43xgn.md)
+- [func >= <A, B, C, D>((A, B, C, D), (A, B, C, D)) -> Bool](./opeq%28_,_%29-43xgn.md)
   Returns a Boolean value indicating whether the first tuple is ordered after or the same as the second in a lexicographical ordering.
-- [func >= <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](_=(_:_:)-6i1ov.md)
+- [func >= <A, B, C, D, E>((A, B, C, D, E), (A, B, C, D, E)) -> Bool](./opeq%28_,_%29-6i1ov.md)
   Returns a Boolean value indicating whether the first tuple is ordered after or the same as the second in a lexicographical ordering.
-- [func >= <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](_=(_:_:)-1n7oc.md)
+- [func >= <A, B, C, D, E, F>((A, B, C, D, E, F), (A, B, C, D, E, F)) -> Bool](./opeq%28_,_%29-1n7oc.md)
   Returns a Boolean value indicating whether the first tuple is ordered after or the same as the second in a lexicographical ordering.
 ### Operators
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](comparable/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./comparable/dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](comparable/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./comparable/dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (borrowing Self, borrowing Self) -> Bool](comparable/_(_:_:)-8j02g.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./comparable/op%28_,_%29-8j02g.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func < (borrowing Self, borrowing Self) -> Bool](comparable/_(_:_:)-9jp4d.md)
+- [static func < (borrowing Self, borrowing Self) -> Bool](./comparable/op%28_,_%29-9jp4d.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](comparable/_=(_:_:)-4hu01.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./comparable/opeq%28_,_%29-4hu01.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](comparable/_=(_:_:)-buc5.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./comparable/opeq%28_,_%29-buc5.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](equatable.md)
+- [Equatable](./equatable.md)
 ### Inherited By
-- [BinaryFloatingPoint](binaryfloatingpoint.md)
-- [BinaryInteger](binaryinteger.md)
-- [DurationProtocol](durationprotocol.md)
-- [FixedWidthInteger](fixedwidthinteger.md)
-- [FloatingPoint](floatingpoint.md)
-- [InstantProtocol](instantprotocol.md)
-- [SignedInteger](signedinteger.md)
-- [Strideable](strideable.md)
-- [StringProtocol](stringprotocol.md)
-- [UnsignedInteger](unsignedinteger.md)
+- [BinaryFloatingPoint](./binaryfloatingpoint.md)
+- [BinaryInteger](./binaryinteger.md)
+- [DurationProtocol](./durationprotocol.md)
+- [FixedWidthInteger](./fixedwidthinteger.md)
+- [FloatingPoint](./floatingpoint.md)
+- [InstantProtocol](./instantprotocol.md)
+- [SignedInteger](./signedinteger.md)
+- [Strideable](./strideable.md)
+- [StringProtocol](./stringprotocol.md)
+- [UnsignedInteger](./unsignedinteger.md)
 ### Conforming Types
-- [AnyIndex](anyindex.md)
-- [AutoreleasingUnsafeMutablePointer](autoreleasingunsafemutablepointer.md)
-- [Character](character.md)
-- [ClosedRange.Index](closedrange/index.md)
-- [CollectionDifference.Index](collectiondifference/index.md)
-- [ContinuousClock.Instant](continuousclock/instant.md)
-- [Dictionary.Index](dictionary/index.md)
-- [DiscontiguousSlice.Index](discontiguousslice/index.md)
-- [Double](double.md)
-- [Duration](duration.md)
-- [EnumeratedSequence.Index](enumeratedsequence/index.md)
-- [FlattenSequence.Index](flattensequence/index.md)
-- [Float](float.md)
-- [Float16](float16.md)
-- [Float80](float80.md)
-- [Int](int.md)
-- [Int128](int128.md)
-- [Int16](int16.md)
-- [Int32](int32.md)
-- [Int64](int64.md)
-- [Int8](int8.md)
-- [JobPriority](jobpriority.md)
-- [LazyPrefixWhileSequence.Index](lazyprefixwhilesequence/index.md)
-- [Never](never.md)
-- [ObjectIdentifier](objectidentifier.md)
-- [ReversedCollection.Index](reversedcollection/index.md)
-- [Set.Index](set/index.md)
-- [String](string.md)
-- [String.Index](string/index.md)
-- [Substring](substring.md)
-- [SuspendingClock.Instant](suspendingclock/instant.md)
-- [TaskPriority](taskpriority.md)
-- [UInt](uint.md)
-- [UInt128](uint128.md)
-- [UInt16](uint16.md)
-- [UInt32](uint32.md)
-- [UInt64](uint64.md)
-- [UInt8](uint8.md)
-- [Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass.md)
-- [Unicode.Scalar](unicode/scalar.md)
-- [UnsafeMutablePointer](unsafemutablepointer.md)
-- [UnsafeMutableRawPointer](unsafemutablerawpointer.md)
-- [UnsafePointer](unsafepointer.md)
-- [UnsafeRawPointer](unsaferawpointer.md)
-- [WordPair](../synchronization/wordpair.md)
+- [AnyIndex](./anyindex.md)
+- [AutoreleasingUnsafeMutablePointer](./autoreleasingunsafemutablepointer.md)
+- [Character](./character.md)
+- [ClosedRange.Index](./closedrange/index.md)
+- [CollectionDifference.Index](./collectiondifference/index.md)
+- [ContinuousClock.Instant](./continuousclock/instant.md)
+- [Dictionary.Index](./dictionary/index.md)
+- [DiscontiguousSlice.Index](./discontiguousslice/index.md)
+- [Double](./double.md)
+- [Duration](./duration.md)
+- [EnumeratedSequence.Index](./enumeratedsequence/index.md)
+- [FlattenSequence.Index](./flattensequence/index.md)
+- [Float](./float.md)
+- [Float16](./float16.md)
+- [Float80](./float80.md)
+- [Int](./int.md)
+- [Int128](./int128.md)
+- [Int16](./int16.md)
+- [Int32](./int32.md)
+- [Int64](./int64.md)
+- [Int8](./int8.md)
+- [JobPriority](./jobpriority.md)
+- [LazyPrefixWhileSequence.Index](./lazyprefixwhilesequence/index.md)
+- [Never](./never.md)
+- [ObjectIdentifier](./objectidentifier.md)
+- [ReversedCollection.Index](./reversedcollection/index.md)
+- [Set.Index](./set/index.md)
+- [String](./string.md)
+- [String.Index](./string/index.md)
+- [Substring](./substring.md)
+- [SuspendingClock.Instant](./suspendingclock/instant.md)
+- [TaskPriority](./taskpriority.md)
+- [UInt](./uint.md)
+- [UInt128](./uint128.md)
+- [UInt16](./uint16.md)
+- [UInt32](./uint32.md)
+- [UInt64](./uint64.md)
+- [UInt8](./uint8.md)
+- [Unicode.CanonicalCombiningClass](./unicode/canonicalcombiningclass.md)
+- [Unicode.Scalar](./unicode/scalar.md)
+- [UnsafeMutablePointer](./unsafemutablepointer.md)
+- [UnsafeMutableRawPointer](./unsafemutablerawpointer.md)
+- [UnsafePointer](./unsafepointer.md)
+- [UnsafeRawPointer](./unsaferawpointer.md)
+- [WordPair](../Synchronization/wordpair.md)
 
 ## See Also
 
-- [protocol Equatable](equatable.md)
+### Equality and Ordering
+- [protocol Equatable](./equatable.md)
   A type that can be compared for value equality.
-- [protocol Identifiable](identifiable.md)
+- [protocol Identifiable](./identifiable.md)
   A class of types whose instances hold the value of an entity with stable identity.
 
 

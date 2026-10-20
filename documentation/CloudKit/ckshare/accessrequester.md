@@ -1,7 +1,8 @@
 # CKShare.AccessRequester
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -18,34 +19,38 @@
 class AccessRequester
 ```
 
+```objc
+@interface CKShareAccessRequester : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](ckshare/accessrequester/init(coder:).md)
+- [init?(coder: NSCoder)](./accessrequester/init%28coder%29.md)
 ### Instance Properties
-- [var contact: CNContact](ckshare/accessrequester/contact.md)
+- [var contact: CNContact](./accessrequester/contact.md)
   A displayable CNContact representing the requester.
-- [var participantLookupInfo: CKUserIdentity.LookupInfo](ckshare/accessrequester/participantlookupinfo.md)
+- [var participantLookupInfo: CKUserIdentity.LookupInfo](./accessrequester/participantlookupinfo.md)
   Lookup information for the requester.
-- [var userIdentity: CKUserIdentity](ckshare/accessrequester/useridentity.md)
+- [var userIdentity: CKUserIdentity](./accessrequester/useridentity.md)
   The identity of the user requesting access to the share.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

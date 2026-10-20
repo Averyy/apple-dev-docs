@@ -1696,9 +1696,8 @@
       "hash": "b9bfa592b03ea55a5c1328249015e3e271919e2a746ff70cd9c812e764b4e99d"
     },
     "https://developer.apple.com/documentation/realitykit/animationgroup/group_": {
-      "etag": "W/\"b94b7ad5544a7d1315db8aea90778820\"",
       "file_path": "documentation/RealityKit/animationgroup/group_.md",
-      "hash": "6cbb4c181d22310846e063bbc1820de60a76918268ba483722c1a8a2f0c22a6e"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/realitykit/animationgroup/init(group:name:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:)": {
       "etag": "\"4011-65d55e749e987-df\"",
@@ -7761,14 +7760,12 @@
       "hash": "4119745f6572ef1758570cd1ffa16be4cd15ffa47aeee16c880a3d2830a7745b"
     },
     "https://developer.apple.com/documentation/realitykit/creating_a_game_with_scene_understanding": {
-      "etag": "W/\"8feabbfc64c3b02cb0a49499fc3cc0d1\"",
       "file_path": "documentation/RealityKit/creating_a_game_with_scene_understanding.md",
-      "hash": "b209b42071299ae185d375becac5172d4d3ad3962f187927dae865f91bc0d530"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/realitykit/creating_a_photogrammetry_command-line_app": {
-      "etag": "W/\"eb1d20d56280d1808c9ba0616bd9d0ab\"",
       "file_path": "documentation/RealityKit/creating_a_photogrammetry_command-line_app.md",
-      "hash": "58a9cd6d41f56973af9d104ff2a9e4f72de3b5e987997ad5efe15ed5415522c2"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/realitykit/custommaterial": {
       "etag": "\"f906-65d55e76d5d2a-df\"",
@@ -12996,9 +12993,8 @@
       "hash": "397b4a8e4e452d95613a1cbe40e9f03ead5c83796803a7745f46dcf2656ab949"
     },
     "https://developer.apple.com/documentation/realitykit/implementing_special_rendering_effects_with_realitykit_postprocessing": {
-      "etag": "W/\"83cdb432ba46abf81eb657360115a4e3\"",
       "file_path": "documentation/RealityKit/implementing_special_rendering_effects_with_realitykit_postprocessing.md",
-      "hash": "5bdd774b838c97ceda92887577a8d2698ff628752b0630bd9cfc5d7961b2d6c2"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/realitykit/improving-the-accessibility-of-realitykit-apps": {
       "etag": "\"4526-65d55e6ebef0c-df\"",
@@ -27696,7 +27692,7 @@
       "hash": "4cd6df41604b6a8e466f2574785eebd31b8364640e713137ebfedf4966a0a12d"
     },
     "https://developer.apple.com/documentation/realitykit/shadergraph/value/string(_:)": {
-      "etag": "\"1266-65d55e6b07767-df\"",
+      "etag": "\"1266-65d55e6b07767\"",
       "file_path": "documentation/RealityKit/shadergraph/value/string(_).md",
       "hash": "aaf7074af069ab32e365e2c7ef91d88d5de34e131ea9f71725a2885601ba2459"
     },
@@ -30311,9 +30307,8 @@
       "hash": "4ab8d99489b8568e9beb8cdf6b841e5988e57a674412265ab1c8e780a643683e"
     },
     "https://developer.apple.com/documentation/realitykit/using_object_capture_assets_in_realitykit": {
-      "etag": "W/\"dfc44e4d854705ed79f4d2cc1e8e3616\"",
       "file_path": "documentation/RealityKit/using_object_capture_assets_in_realitykit.md",
-      "hash": "4dbd2170fef35debcbd2892c0412fbfab29280eb0657e52b9d5d743b178c3985"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/realitykit/videomaterial": {
       "etag": "\"527e-65d55e72b29f0-df\"",
@@ -32601,9 +32596,8 @@
       "hash": "b9bfa592b03ea55a5c1328249015e3e271919e2a746ff70cd9c812e764b4e99d"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/animationgroup/group_.json": {
-      "etag": "W/\"b94b7ad5544a7d1315db8aea90778820\"",
       "file_path": "documentation/RealityKit/animationgroup/group_.md",
-      "hash": "6cbb4c181d22310846e063bbc1820de60a76918268ba483722c1a8a2f0c22a6e"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/animationgroup/init(group:name:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).json": {
       "etag": "\"4011-65d55e749e987-df\"",
@@ -38674,14 +38668,12 @@
       "hash": "4119745f6572ef1758570cd1ffa16be4cd15ffa47aeee16c880a3d2830a7745b"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/creating_a_game_with_scene_understanding.json": {
-      "etag": "W/\"8feabbfc64c3b02cb0a49499fc3cc0d1\"",
       "file_path": "documentation/RealityKit/creating_a_game_with_scene_understanding.md",
-      "hash": "b209b42071299ae185d375becac5172d4d3ad3962f187927dae865f91bc0d530"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/creating_a_photogrammetry_command-line_app.json": {
-      "etag": "W/\"eb1d20d56280d1808c9ba0616bd9d0ab\"",
       "file_path": "documentation/RealityKit/creating_a_photogrammetry_command-line_app.md",
-      "hash": "58a9cd6d41f56973af9d104ff2a9e4f72de3b5e987997ad5efe15ed5415522c2"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/custommaterial.json": {
       "etag": "\"f906-65d55e76d5d2a-df\"",
@@ -43917,9 +43909,8 @@
       "hash": "397b4a8e4e452d95613a1cbe40e9f03ead5c83796803a7745f46dcf2656ab949"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/implementing_special_rendering_effects_with_realitykit_postprocessing.json": {
-      "etag": "W/\"83cdb432ba46abf81eb657360115a4e3\"",
       "file_path": "documentation/RealityKit/implementing_special_rendering_effects_with_realitykit_postprocessing.md",
-      "hash": "5bdd774b838c97ceda92887577a8d2698ff628752b0630bd9cfc5d7961b2d6c2"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/improving-the-accessibility-of-realitykit-apps.json": {
       "etag": "\"4526-65d55e6ebef0c-df\"",
@@ -58637,7 +58628,7 @@
       "hash": "4cd6df41604b6a8e466f2574785eebd31b8364640e713137ebfedf4966a0a12d"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/shadergraph/value/string(_:).json": {
-      "etag": "\"1266-65d55e6b07767-df\"",
+      "etag": "\"1266-65d55e6b07767\"",
       "file_path": "documentation/RealityKit/shadergraph/value/string(_).md",
       "hash": "aaf7074af069ab32e365e2c7ef91d88d5de34e131ea9f71725a2885601ba2459"
     },
@@ -61256,9 +61247,8 @@
       "hash": "4ab8d99489b8568e9beb8cdf6b841e5988e57a674412265ab1c8e780a643683e"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/using_object_capture_assets_in_realitykit.json": {
-      "etag": "W/\"dfc44e4d854705ed79f4d2cc1e8e3616\"",
       "file_path": "documentation/RealityKit/using_object_capture_assets_in_realitykit.md",
-      "hash": "4dbd2170fef35debcbd2892c0412fbfab29280eb0657e52b9d5d743b178c3985"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/realitykit/videomaterial.json": {
       "etag": "\"527e-65d55e72b29f0-df\"",
@@ -61852,6 +61842,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 12372
   }
 }

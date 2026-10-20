@@ -1,7 +1,8 @@
 # init(description:default:requestValueDialog:requestDisambiguationDialog:inputConnectionBehavior:query:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter with an entity search query.
 
@@ -19,6 +20,8 @@ Creates an app intent parameter with an entity search query.
 ```swift
 convenience init<Query>(description: LocalizedStringResource? = nil, default defaultValue: Value.UnwrappedType? = nil, requestValueDialog: IntentDialog? = nil, requestDisambiguationDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default, query: Query) where Query : EntityQuery, Value.ValueType == Query.Entity
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` conforms to `AppEntity`.
 
 ## Parameters
 

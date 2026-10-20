@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates and initializes a cache for a layout instance.
@@ -31,33 +32,40 @@ You can optionally use a cache to preserve calculated values across calls to a l
 
 However you might find a cache useful when:
 
-- The layout container repeats complex, intermediate calculations across calls like [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md), [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md), and [`explicitAlignment(of:in:proposal:subviews:cache:)`](layout/explicitalignment(of:in:proposal:subviews:cache:).md). You might be able to improve performance by calculating values once and storing them in a cache.
-- The layout container reads many [`LayoutValueKey`](layoutvaluekey.md) values from subviews. It might be more efficient to do that once and store the results in the cache, rather than rereading the subviews’ values before each layout call.
+- The layout container repeats complex, intermediate calculations across calls like [`sizeThatFits(proposal:subviews:cache:)`](./sizethatfits%28proposal,subviews,cache%29.md), [`placeSubviews(in:proposal:subviews:cache:)`](./placesubviews%28in,proposal,subviews,cache%29.md), and [`explicitAlignment(of:in:proposal:subviews:cache:)`](./explicitalignment%28of,in,proposal,subviews,cache%29.md). You might be able to improve performance by calculating values once and storing them in a cache.
+- The layout container reads many [`LayoutValueKey`](../layoutvaluekey.md) values from subviews. It might be more efficient to do that once and store the results in the cache, rather than rereading the subviews’ values before each layout call.
 - You want to maintain working storage, like temporary Swift arrays, across calls into the layout, to minimize the number of allocation events.
 
 Only implement a cache if profiling shows that it improves performance.
 
-##### Initialize a Cache
+##### Initialize a cache
 
-Implement the `makeCache(subviews:)` method to create a cache. You can add computed values to the cache right away, using information from the `subviews` input parameter, or you can do that later. The methods of the [`Layout`](layout.md) protocol that can access the cache take the cache as an in-out parameter, which enables you to modify the cache anywhere that you can read it.
+Implement the `makeCache(subviews:)` method to create a cache. You can add computed values to the cache right away, using information from the `subviews` input parameter, or you can do that later. The methods of the [`Layout`](../layout.md) protocol that can access the cache take the cache as an in-out parameter, which enables you to modify the cache anywhere that you can read it.
 
 You can use any storage type that makes sense for your layout algorithm, but be sure that you only store data that you derive from the layout and its subviews (lazily, if possible). For this to work correctly, SwiftUI needs to be able to call this method to recreate the cache without changing the layout result.
 
-When you return a cache from this method, you implicitly define a type for your cache. Be sure to either make the type of the `cache` parameters on your other [`Layout`](layout.md) protocol methods match, or use a type alias to define the [`Cache`](layout/cache.md) associated type.
+When you return a cache from this method, you implicitly define a type for your cache. Be sure to either make the type of the `cache` parameters on your other [`Layout`](../layout.md) protocol methods match, or use a type alias to define the [`Cache`](./cache.md) associated type.
 
-##### Update the Cache
+##### Update the cache
 
-If the layout container or any of its subviews change, SwiftUI calls the [`updateCache(_:subviews:)`](layout/updatecache(_:subviews:).md) method so you can modify or invalidate the contents of the cache. The default implementation of that method calls the `makeCache(subviews:)` method to recreate the cache, but you can provide your own implementation of the update method to take an incremental approach, if appropriate.
+If the layout container or any of its subviews change, SwiftUI calls the [`updateCache(_:subviews:)`](./updatecache%28_,subviews%29.md) method so you can modify or invalidate the contents of the cache. The default implementation of that method calls the `makeCache(subviews:)` method to recreate the cache, but you can provide your own implementation of the update method to take an incremental approach, if appropriate.
 
 ## Parameters
 
 - `subviews`: A collection of proxy instances that represent the views that the container arranges. You can use the proxies in the collection to get information about the subviews as you calculate values to store in the cache.
 
+## Default Implementations
+
+### Layout Implementations
+- [func makeCache(subviews: Self.Subviews) -> Self.Cache](./makecache%28subviews%29-4fu1k.md)
+  Returns the empty value when your layout doesn’t require a cache.
+
 ## See Also
 
-- [func updateCache(inout Self.Cache, subviews: Self.Subviews)](layout/updatecache(_:subviews:).md)
+### Managing a cache
+- [func updateCache(inout Self.Cache, subviews: Self.Subviews)](./updatecache%28_,subviews%29.md)
   Updates the layout’s cache when something changes.
-- [associatedtype Cache = Void](layout/cache.md)
+- [associatedtype Cache = Void](./cache.md)
   Cached values associated with the layout instance.
 
 

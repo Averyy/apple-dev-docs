@@ -1,7 +1,8 @@
 # supportedJointsGroupNames
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The joint group names the request supports.
 
@@ -21,7 +22,8 @@ var supportedJointsGroupNames: [AnimalBodyPoseObservation.JointsGroupName] { get
 
 ## See Also
 
-- [var supportedJointNames: [AnimalBodyPoseObservation.JointName]](detectanimalbodyposerequest/supportedjointnames.md)
+### Configuring a request
+- [var supportedJointNames: [AnimalBodyPoseObservation.JointName]](./supportedjointnames.md)
   The joint names the request supports.
 
 

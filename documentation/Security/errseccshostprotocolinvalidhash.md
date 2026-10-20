@@ -1,7 +1,8 @@
 # errSecCSHostProtocolInvalidHash
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Host protocol violation: invalid hash of guest code.
 
@@ -13,6 +14,10 @@ Host protocol violation: invalid hash of guest code.
 
 ```swift
 var errSecCSHostProtocolInvalidHash: OSStatus { get }
+```
+
+```c
+errSecCSHostProtocolInvalidHash
 ```
 
 

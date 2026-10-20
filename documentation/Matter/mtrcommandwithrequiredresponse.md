@@ -1,7 +1,8 @@
 # MTRCommandWithRequiredResponse
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing a single command to be invoked and the response required for the invoke to be considered successful.
 
@@ -20,33 +21,37 @@ An object representing a single command to be invoked and the response required 
 class MTRCommandWithRequiredResponse
 ```
 
+```objc
+@interface MTRCommandWithRequiredResponse : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mtrcommandwithrequiredresponse/init(coder:).md)
-- [init(path: MTRCommandPath, commandFields: [String : Any]?, requiredResponse: [NSNumber : [String : Any]]?)](mtrcommandwithrequiredresponse/init(path:commandfields:requiredresponse:).md)
+- [init?(coder: NSCoder)](./mtrcommandwithrequiredresponse/init%28coder%29.md)
+- [init(path: MTRCommandPath, commandFields: [String : Any]?, requiredResponse: [NSNumber : [String : Any]]?)](./mtrcommandwithrequiredresponse/init%28path,commandfields,requiredresponse%29.md)
 ### Instance Properties
-- [var commandFields: [String : Any]?](mtrcommandwithrequiredresponse/commandfields.md)
+- [var commandFields: [String : Any]?](./mtrcommandwithrequiredresponse/commandfields.md)
   The command fields to pass for the command invoke.  nil if this command does not have any fields.  If not nil, this should be a data-value dictionary of MTRStructureValueType.
-- [var path: MTRCommandPath](mtrcommandwithrequiredresponse/path.md)
+- [var path: MTRCommandPath](./mtrcommandwithrequiredresponse/path.md)
   The path of the command being invoked.
-- [var requiredResponse: [NSNumber : [String : Any]]?](mtrcommandwithrequiredresponse/requiredresponse.md)
+- [var requiredResponse: [NSNumber : [String : Any]]?](./mtrcommandwithrequiredresponse/requiredresponse.md)
   The response that represents this command succeeding.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

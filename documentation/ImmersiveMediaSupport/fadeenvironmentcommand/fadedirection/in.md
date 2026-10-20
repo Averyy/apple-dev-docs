@@ -1,7 +1,8 @@
 # FadeEnvironmentCommand.FadeDirection.in
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents fading in of the environment backdrops.
 
@@ -20,7 +21,8 @@ case `in`
 
 ## See Also
 
-- [FadeEnvironmentCommand.FadeDirection.out](fadeenvironmentcommand/fadedirection/out.md)
+### Enumeration Cases
+- [FadeEnvironmentCommand.FadeDirection.out](./out.md)
   A value that represents fading out of the environment backdrops.
 
 

@@ -1,13 +1,14 @@
 # scriptingIsLessThan(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if, in a scripting comparison, the compared object is less than `object`.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,21 +16,26 @@ Returns `true` if, in a scripting comparison, the compared object is less than `
 func scriptingIsLessThan(_ object: Any) -> Bool
 ```
 
+```objc
+- (BOOL) scriptingIsLessThan:(id) object;
+```
+
 ## See Also
 
-- [func scriptingBegins(with: Any) -> Bool](nsobject-swift.class/scriptingbegins(with:).md)
+### Performing comparisons
+- [func scriptingBegins(with: Any) -> Bool](./scriptingbegins%28with%29.md)
   Returns `true` if, in a scripting comparison, the compared object matches the beginning of `object`.
-- [func scriptingContains(Any) -> Bool](nsobject-swift.class/scriptingcontains(_:).md)
+- [func scriptingContains(Any) -> Bool](./scriptingcontains%28_%29.md)
   Returns `true` if, in a scripting comparison, the compared object contains `object`.
-- [func scriptingEnds(with: Any) -> Bool](nsobject-swift.class/scriptingends(with:).md)
+- [func scriptingEnds(with: Any) -> Bool](./scriptingends%28with%29.md)
   Returns `true` if, in a scripting comparison, the compared object matches the end of `object`.
-- [func scriptingIsEqual(to: Any) -> Bool](nsobject-swift.class/scriptingisequal(to:).md)
+- [func scriptingIsEqual(to: Any) -> Bool](./scriptingisequal%28to%29.md)
   Returns `true` if, in a scripting comparison, the compared object is equal to `object`.
-- [func scriptingIsGreaterThan(Any) -> Bool](nsobject-swift.class/scriptingisgreaterthan(_:).md)
+- [func scriptingIsGreaterThan(Any) -> Bool](./scriptingisgreaterthan%28_%29.md)
   Returns `true` if, in a scripting comparison, the compared object is greater than `object`.
-- [func scriptingIsGreaterThanOrEqual(to: Any) -> Bool](nsobject-swift.class/scriptingisgreaterthanorequal(to:).md)
+- [func scriptingIsGreaterThanOrEqual(to: Any) -> Bool](./scriptingisgreaterthanorequal%28to%29.md)
   Returns `true` if, in a scripting comparison, the compared object is greater than or equal to `object`.
-- [func scriptingIsLessThanOrEqual(to: Any) -> Bool](nsobject-swift.class/scriptingislessthanorequal(to:).md)
+- [func scriptingIsLessThanOrEqual(to: Any) -> Bool](./scriptingislessthanorequal%28to%29.md)
   Returns `true` if, in a scripting comparison, the compared object is less than or equal to `object`.
 
 

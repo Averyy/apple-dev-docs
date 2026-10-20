@@ -1,7 +1,8 @@
 # init(scope:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new zoom stepper with the scope you specify.
 
@@ -18,7 +19,7 @@ Creates a new zoom stepper with the scope you specify.
 
 ## Parameters
 
-- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id) value that identifies this namespace.
+- `scope`: A [`Namespace.ID`](../../SwiftUI/namespace/id.md) value that identifies this namespace.
 
 
 ---

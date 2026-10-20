@@ -1,14 +1,15 @@
 # vector_unit
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned long vector_unit;
 ```
 

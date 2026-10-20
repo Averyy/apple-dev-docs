@@ -1,7 +1,8 @@
 # AnimationGraphComponent.ActiveNode
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Common debug information for any node that was active during the most recent graph evaluation tick.
 
@@ -21,40 +22,41 @@ protocol ActiveNode : Identifiable, Sendable
 
 #### Overview
 
-`AnimationGraphComponent` reports active nodes through this protocol so that tools can iterate every node uniformly. To inspect node-kind-specific state, downcast to [`AnimationGraphComponent.ActiveStateMachineNode`](animationgraphcomponent/activestatemachinenode.md) or [`AnimationGraphComponent.ActiveClipNode`](animationgraphcomponent/activeclipnode.md), or iterate the typed accessors [`activeStateMachineNodes`](animationgraphcomponent/activestatemachinenodes.md) and [`activeClipNodes`](animationgraphcomponent/activeclipnodes.md) directly.
+`AnimationGraphComponent` reports active nodes through this protocol so that tools can iterate every node uniformly. To inspect node-kind-specific state, downcast to [`AnimationGraphComponent.ActiveStateMachineNode`](./activestatemachinenode.md) or [`AnimationGraphComponent.ActiveClipNode`](./activeclipnode.md), or iterate the typed accessors [`activeStateMachineNodes`](./activestatemachinenodes.md) and [`activeClipNodes`](./activeclipnodes.md) directly.
 
 ## Topics
 
 ### Inspecting the active node
-- [var id: Int](animationgraphcomponent/activenode/id.md)
+- [var id: Int](./activenode/id.md)
   The unique identifier of the node within the compiled graph.
-- [var wasReset: Bool](animationgraphcomponent/activenode/wasreset.md)
+- [var wasReset: Bool](./activenode/wasreset.md)
   A Boolean value that indicates whether the node was reset during the last evaluation tick.
 ### Instance Properties
-- [var name: String](animationgraphcomponent/activenode/name.md)
+- [var name: String](./activenode/name.md)
   The author-supplied name of the node from the graph definition.
 
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AnimationGraphComponent.ActiveClipNode](animationgraphcomponent/activeclipnode.md)
-- [AnimationGraphComponent.ActiveStateMachineNode](animationgraphcomponent/activestatemachinenode.md)
+- [AnimationGraphComponent.ActiveClipNode](./activeclipnode.md)
+- [AnimationGraphComponent.ActiveStateMachineNode](./activestatemachinenode.md)
 
 ## See Also
 
-- [var activeNodes: [any AnimationGraphComponent.ActiveNode]](animationgraphcomponent/activenodes.md)
+### Accessing active nodes
+- [var activeNodes: [any AnimationGraphComponent.ActiveNode]](./activenodes.md)
   Every node that contributed to the most recent graph evaluation tick.
-- [var activeClipNodes: [AnimationGraphComponent.ActiveClipNode]](animationgraphcomponent/activeclipnodes.md)
+- [var activeClipNodes: [AnimationGraphComponent.ActiveClipNode]](./activeclipnodes.md)
   The animation clip nodes that were active during the most recent graph evaluation tick.
-- [AnimationGraphComponent.ActiveClipNode](animationgraphcomponent/activeclipnode.md)
+- [AnimationGraphComponent.ActiveClipNode](./activeclipnode.md)
   Debug information for an active animation clip node within the graph.
-- [var activeStateMachineNodes: [AnimationGraphComponent.ActiveStateMachineNode]](animationgraphcomponent/activestatemachinenodes.md)
+- [var activeStateMachineNodes: [AnimationGraphComponent.ActiveStateMachineNode]](./activestatemachinenodes.md)
   The state machine nodes that were active during the most recent graph evaluation tick.
-- [AnimationGraphComponent.ActiveStateMachineNode](animationgraphcomponent/activestatemachinenode.md)
+- [AnimationGraphComponent.ActiveStateMachineNode](./activestatemachinenode.md)
   Debug information for an active state machine node within the graph.
 
 

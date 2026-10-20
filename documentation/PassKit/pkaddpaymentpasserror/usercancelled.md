@@ -1,7 +1,8 @@
 # PKAddPaymentPassError.userCancelled
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user canceled the request to add a card to Apple Pay.
 
@@ -19,11 +20,16 @@ The user canceled the request to add a card to Apple Pay.
 case userCancelled
 ```
 
+```c
+PKAddPaymentPassErrorUserCancelled
+```
+
 ## See Also
 
-- [PKAddPaymentPassError.unsupported](pkaddpaymentpasserror/unsupported.md)
+### Error codes
+- [PKAddPaymentPassError.unsupported](./unsupported.md)
   The app cannot add cards to Apple Pay.
-- [PKAddPaymentPassError.systemCancelled](pkaddpaymentpasserror/systemcancelled.md)
+- [PKAddPaymentPassError.systemCancelled](./systemcancelled.md)
   The system canceled the request to add a card to Apple Pay.
 
 

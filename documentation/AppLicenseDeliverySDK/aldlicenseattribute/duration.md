@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of time, in seconds, that iOS considers the license valid.
 
@@ -13,16 +14,16 @@ var duration: UInt64
 
 ## Mentions
 
-- [Licensing alternative distribution apps](licensing-alternative-distribution-apps.md)
-- [Renewing and revoking app licenses](renewing-and-revoking-app-licenses.md)
+- [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
+- [Renewing and revoking app licenses](../renewing-and-revoking-app-licenses.md)
 
 #### Discussion
 
 The alternative app marketplace determines a value for this property at its discretion. iOS doesn’t let an app launch if the duration of its license lapses.
 
-A value of `0` indicates that the license doesn’t expire. To revoke a license, see [`Renewing and revoking app licenses`](renewing-and-revoking-app-licenses.md).
+A value of `0` indicates that the license doesn’t expire. To revoke a license, see [Renewing and revoking app licenses](../renewing-and-revoking-app-licenses.md).
 
-For an example that sets this property, see [`Licensing alternative distribution apps`](licensing-alternative-distribution-apps.md).
+For an example that sets this property, see [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md).
 
 
 ---

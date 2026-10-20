@@ -1,7 +1,8 @@
 # routeSegmentsAvailableForRegion
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set to @NO to disable route sharing for this trip when route sharing is not supported in the current region.
 
@@ -14,6 +15,10 @@ Set to @NO to disable route sharing for this trip when route sharing is not supp
 
 ```swift
 var routeSegmentsAvailableForRegion: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL routeSegmentsAvailableForRegion;
 ```
 
 

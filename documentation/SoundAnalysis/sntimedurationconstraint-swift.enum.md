@@ -1,7 +1,8 @@
 # SNTimeDurationConstraint
 
 **Framework**: Sound Analysis  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the time duration windows the request’s underlying sound classifier accepts with a range, or an array, of durations.
 
@@ -23,14 +24,15 @@ enum SNTimeDurationConstraint
 ## Topics
 
 ### Inspecting a Constraint
-- [SNTimeDurationConstraint.durationRange(_:)](sntimedurationconstraint-swift.enum/durationrange(_:).md)
+- [SNTimeDurationConstraint.durationRange(_:)](./sntimedurationconstraint-swift.enum/durationrange%28_%29.md)
   A constraint that defines acceptable time window durations with a range.
-- [SNTimeDurationConstraint.enumeratedDurations(_:)](sntimedurationconstraint-swift.enum/enumerateddurations(_:).md)
+- [SNTimeDurationConstraint.enumeratedDurations(_:)](./sntimedurationconstraint-swift.enum/enumerateddurations%28_%29.md)
   A constraint that defines acceptable time window durations in a discrete list.
 
 ## See Also
 
-- [var knownClassifications: [String]](snclassifysoundrequest/knownclassifications.md)
+### Inspecting a Request
+- [var knownClassifications: [String]](./snclassifysoundrequest/knownclassifications.md)
   A string array that contains every prediction label in the request’s underlying sound classifier model.
 
 

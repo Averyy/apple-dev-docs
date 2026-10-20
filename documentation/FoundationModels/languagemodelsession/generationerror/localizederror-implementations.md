@@ -1,15 +1,16 @@
 # LocalizedError Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var errorDescription: String?](languagemodelsession/generationerror/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A string representation of the error description.
-- [var failureReason: String?](languagemodelsession/generationerror/failurereason.md)
+- [var failureReason: String?](./failurereason.md)
   A string representation of the failure reason.
-- [var recoverySuggestion: String?](languagemodelsession/generationerror/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./recoverysuggestion.md)
   A string representation of the recovery suggestion.
 
 

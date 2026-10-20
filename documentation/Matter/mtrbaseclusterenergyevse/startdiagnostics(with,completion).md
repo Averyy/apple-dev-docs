@@ -1,7 +1,8 @@
 # startDiagnostics(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command StartDiagnostics
 
@@ -17,7 +18,15 @@ Command StartDiagnostics
 ## Declaration
 
 ```swift
+func startDiagnostics(with params: MTREnergyEVSEClusterStartDiagnosticsParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func startDiagnostics(with params: MTREnergyEVSEClusterStartDiagnosticsParams?) async throws
+```
+
+```objc
+- (void) startDiagnosticsWithParams:(MTREnergyEVSEClusterStartDiagnosticsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

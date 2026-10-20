@@ -1,7 +1,8 @@
 # adjacency
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The adjacency requirement for this rule.
 
@@ -20,13 +21,18 @@ The adjacency requirement for this rule.
 var adjacency: SKTileAdjacencyMask { get set }
 ```
 
+```objc
+@property (nonatomic) SKTileAdjacencyMask adjacency;
+```
+
 ## See Also
 
-- [struct SKTileAdjacencyMask](sktileadjacencymask.md)
+### Accessing or Setting Tile Group Rule Properties
+- [struct SKTileAdjacencyMask](../sktileadjacencymask.md)
   An enumeration defining how neighboring tiles are automatically placed next to each other.
-- [var name: String?](sktilegrouprule/name.md)
+- [var name: String?](./name.md)
   A name associated with the tile group rule.
-- [var tileDefinitions: [SKTileDefinition]](sktilegrouprule/tiledefinitions.md)
+- [var tileDefinitions: [SKTileDefinition]](./tiledefinitions.md)
   The tile definitions used for this rule.
 
 

@@ -1,7 +1,8 @@
 # defaultResolverSpecification
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,6 +18,8 @@
 ```swift
 static var defaultResolverSpecification: some ResolverSpecification { get }
 ```
+
+Available when `UnitType` inherits `Unit`.
 
 
 ---

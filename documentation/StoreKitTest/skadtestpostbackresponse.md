@@ -1,7 +1,8 @@
 # SKAdTestPostbackResponse
 
 **Framework**: StoreKit Test  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The status and error information for a postback that the system sends in the testing environment.
 
@@ -16,37 +17,42 @@ The status and error information for a postback that the system sends in the tes
 class SKAdTestPostbackResponse
 ```
 
+```objc
+@interface SKAdTestPostbackResponse : NSObject
+```
+
 ## Topics
 
 ### Getting Postback Responses
-- [var didSucceed: Bool](skadtestpostbackresponse/didsucceed.md)
+- [var didSucceed: Bool](./skadtestpostbackresponse/didsucceed.md)
   A Boolean value that indicates whether the system successfully delivered the test postback.
-- [var httpResponse: HTTPURLResponse?](skadtestpostbackresponse/httpresponse.md)
+- [var httpResponse: HTTPURLResponse?](./skadtestpostbackresponse/httpresponse.md)
   The HTTP response from the server receiving the test postback.
-- [var error: (any Error)?](skadtestpostbackresponse/error.md)
+- [var error: (any Error)?](./skadtestpostbackresponse/error.md)
   An error the test session reports if sending a test postbacks fails.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
+### Ad impression and postback testing
+- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](./testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
   Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
-- [class SKAdTestSession](skadtestsession.md)
+- [class SKAdTestSession](./skadtestsession.md)
   The class you use to test ad impressions and postbacks in Xcode.
-- [class SKAdTestPostback](skadtestpostback.md)
+- [class SKAdTestPostback](./skadtestpostback.md)
   A test postback that contains ad conversion information in the testing environment.
-- [struct SKAdTestPostbackVersion](skadtestpostbackversion.md)
+- [struct SKAdTestPostbackVersion](./skadtestpostbackversion.md)
   A constant that indicates the postback version.
 
 

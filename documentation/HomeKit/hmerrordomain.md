@@ -1,7 +1,8 @@
 # HMErrorDomain
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that identifies the HomeKit error domain.
 
@@ -19,13 +20,18 @@ A string that identifies the HomeKit error domain.
 let HMErrorDomain: String
 ```
 
+```c
+extern NSString * const HMErrorDomain;
+```
+
 ## See Also
 
-- [struct HMError](hmerror.md)
+### Errors
+- [struct HMError](./hmerror.md)
   An error HomeKit returns.
-- [HMError.Code](hmerror/code.md)
+- [HMError.Code](./hmerror/code.md)
   Possible error values that can be returned from HomeKit APIs.
-- [typealias HMErrorBlock](hmerrorblock.md)
+- [typealias HMErrorBlock](./hmerrorblock.md)
   A completion block that provides an error.
 
 

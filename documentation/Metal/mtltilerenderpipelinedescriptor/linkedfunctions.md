@@ -1,7 +1,8 @@
 # linkedFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Functions that you can specify as function arguments for the tile shader when encoding commands that use the pipeline.
 
@@ -18,6 +19,10 @@ Functions that you can specify as function arguments for the tile shader when en
 ```swift
 @NSCopying
 var linkedFunctions: MTLLinkedFunctions! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) MTLLinkedFunctions * linkedFunctions;
 ```
 
 

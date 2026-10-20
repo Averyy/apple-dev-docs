@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a zone large enough to fit the specified group of allocation sizes.
@@ -20,32 +21,37 @@ Creates a zone large enough to fit the specified group of allocation sizes.
 func newZoneForBuffers(withSize sizes: [NSNumber], andType types: [NSNumber]) -> any MDLMeshBufferZone
 ```
 
+```objc
+- (id<MDLMeshBufferZone>) newZoneForBuffersWithSize:(NSArray<NSNumber *> *) sizes andType:(NSArray<NSNumber *> *) types;
+```
+
 #### Return Value
 
 A new memory zone.
 
 #### Discussion
 
-Objects implementing the [`MDLMeshBufferZone`](mdlmeshbufferzone.md) protocol describe a logical pool of memory for allocation of related buffers. The actual class of buffer zone objects vended by an allocator may be private.
+Objects implementing the [`MDLMeshBufferZone`](../mdlmeshbufferzone.md) protocol describe a logical pool of memory for allocation of related buffers. The actual class of buffer zone objects vended by an allocator may be private.
 
 This method creates a zone with enough capacity to allocate buffers with the sizes and types specified, taking into account any alignment restrictions necessary to use these buffers.
 
 ## Parameters
 
 - `sizes`: An array of integers, each the length in bytes of an allocation to be made later.
-- `types`: An array of integers, each the [`MDLMeshBufferType`](mdlmeshbuffertype.md) value corresponding to an allocation described in the `sizes` array.
+- `types`: An array of integers, each the [`MDLMeshBufferType`](../mdlmeshbuffertype.md) value corresponding to an allocation described in the `sizes` array.
 
 ## See Also
 
-- [func newZone(Int) -> any MDLMeshBufferZone](mdlmeshbufferallocator/newzone(_:).md)
+### Allocating Mesh Buffers
+- [func newZone(Int) -> any MDLMeshBufferZone](./newzone%28_%29.md)
   Creates a zone for related memory allocations.
-- [func newBuffer(Int, type: MDLMeshBufferType) -> any MDLMeshBuffer](mdlmeshbufferallocator/newbuffer(_:type:).md)
+- [func newBuffer(Int, type: MDLMeshBufferType) -> any MDLMeshBuffer](./newbuffer%28_,type%29.md)
   Creates a new buffer of the specified length.
-- [func newBuffer(from: (any MDLMeshBufferZone)?, length: Int, type: MDLMeshBufferType) -> (any MDLMeshBuffer)?](mdlmeshbufferallocator/newbuffer(from:length:type:).md)
+- [func newBuffer(from: (any MDLMeshBufferZone)?, length: Int, type: MDLMeshBufferType) -> (any MDLMeshBuffer)?](./newbuffer%28from,length,type%29.md)
   Creates a new buffer of the specified length in the specified zone.
-- [func newBuffer(with: Data, type: MDLMeshBufferType) -> any MDLMeshBuffer](mdlmeshbufferallocator/newbuffer(with:type:).md)
+- [func newBuffer(with: Data, type: MDLMeshBufferType) -> any MDLMeshBuffer](./newbuffer%28with,type%29.md)
   Creates a new buffer containing the specified data.
-- [func newBuffer(from: (any MDLMeshBufferZone)?, data: Data, type: MDLMeshBufferType) -> (any MDLMeshBuffer)?](mdlmeshbufferallocator/newbuffer(from:data:type:).md)
+- [func newBuffer(from: (any MDLMeshBufferZone)?, data: Data, type: MDLMeshBufferType) -> (any MDLMeshBuffer)?](./newbuffer%28from,data,type%29.md)
   Creates a new buffer containing the specified data in the specified zone.
 
 

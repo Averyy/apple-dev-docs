@@ -1,7 +1,8 @@
 # List all price points for a subscription
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of price points for an auto-renewable subscription by territory.
 
@@ -10,10 +11,10 @@ Get a list of price points for an auto-renewable subscription by territory.
 
 ## Mentions
 
-- [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
-- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
-- [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
+- [App Store Connect API 2.4 release notes](./app-store-connect-api-2-4-release-notes.md)
+- [App Store Connect API 3.6 release notes](./app-store-connect-api-3-6-release-notes.md)
+- [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
+- [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md)
 
 ##### Discussion
 
@@ -23,7 +24,7 @@ Get a list of price points for an auto-renewable subscription by territory.
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/subscriptions/6470878936/pricePoints?filter[territory]=USA&include=territory&limit=2
 ```
 
@@ -71,22 +72,38 @@ GET https://api.appstoreconnect.apple.com/v1/subscriptions/6470878936/pricePoint
 
 ## Parameters
 
-- `fields[subscriptionPricePoints]` ([string])
-- `fields[territories]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[subscriptionPricePoints]` ([string]): **Allowed Values**: `customerPrice`, `proceeds`, `proceedsYear2`, `territory`, `equalizations`, `adjustedEqualizations`
+- `fields[territories]` ([string]): **Allowed Values**: `currency`
 - `filter[territory]` ([string]): Use this filter with all requests.
-- `include` ([string])
-- `limit` (integer)
+- `include` ([string]): **Allowed Values**: `territory`
+- `limit` (integer): **Maximum**: `8000`
 - `filter[planType]` ([string])
 - `filter[upfrontPricePointId]` ([string])
 
+## Responses
+
+- `200` OK (`csv`, `text/csv`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [List price point IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-pricepoints.md)
-- [List all prices for a subscription](get-v1-subscriptions-_id_-prices.md)
+### Getting price points and prices
+- [List price point IDs for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-pricepoints.md)
+- [List all prices for a subscription](./get-v1-subscriptions-_id_-prices.md)
   Get a list of prices for an auto-renewable subscription, by territory.
-- [List all subscription price ids for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-prices.md)
+- [List all subscription price ids for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-prices.md)
   Get a list of resource IDs representing subscription prices for an auto-renewable subscription.
-- [Delete prices from a subscription](delete-v1-subscriptions-_id_-relationships-prices.md)
+- [Delete prices from a subscription](./delete-v1-subscriptions-_id_-relationships-prices.md)
   Delete a scheduled subscription price change for an auto-renewable subscription.
 
 

@@ -1,7 +1,8 @@
 # underestimatedCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value less than or equal to the number of elements in the sequence, calculated nondestructively.
 

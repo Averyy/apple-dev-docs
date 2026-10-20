@@ -1,22 +1,23 @@
 # kUSBConnectable
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef enum kUSBConnectable kUSBConnectable;
 ```
 
 ## Topics
 
 ### Constants
-- [kUSBPortConnectable](kusbconnectable/kusbportconnectable.md)
-- [kUSBPortNotConnectable](kusbconnectable/kusbportnotconnectable.md)
+- [kUSBPortConnectable](./kusbconnectable/kusbportconnectable.md)
+- [kUSBPortNotConnectable](./kusbconnectable/kusbportnotconnectable.md)
 
 
 ---

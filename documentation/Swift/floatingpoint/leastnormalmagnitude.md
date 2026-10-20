@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The least positive normal number.

@@ -1,7 +1,8 @@
 # ColumnConcatenator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that concatenates every numerical column in a dataframe into to a shaped array for each row.
 
@@ -24,7 +25,7 @@ struct ColumnConcatenator<Scalar> where Scalar : MLShapedArrayScalar, Scalar : B
 
 The resulting concatenated column contains `MLShapedArray<Scalar>` elements. For example
 
-```None
+```
 ┏━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓
 ┃   ┃ label    ┃ price   ┃ rooms ┃ A     ┃ B     ┃ C     ┃
 ┃   ┃ <String> ┃ <Int>   ┃ <Int> ┃ <Int> ┃ <Int> ┃ <Int> ┃
@@ -38,7 +39,7 @@ The resulting concatenated column contains `MLShapedArray<Scalar>` elements. For
 
 would be concatenated as:
 
-```None
+```
 ┏━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃   ┃ label    ┃ features               ┃
 ┃   ┃ <String> ┃ <MLShapedArray<Float>> ┃
@@ -55,49 +56,50 @@ Non-numerical columns are left in the data frame unchanged. Supported numeric ty
 ## Topics
 
 ### Creating the concatenator
-- [init(columnSelection: ColumnSelection, concatenatedColumnName: String)](columnconcatenator/init(columnselection:concatenatedcolumnname:).md)
+- [init(columnSelection: ColumnSelection, concatenatedColumnName: String)](./columnconcatenator/init%28columnselection,concatenatedcolumnname%29.md)
   Creates a concatenator that concatenates numeric columns into a new column of ML shaped array.
 ### Getting the properties
-- [var columnSelection: ColumnSelection](columnconcatenator/columnselection.md)
+- [var columnSelection: ColumnSelection](./columnconcatenator/columnselection.md)
   The selection of columns to concatenate.
-- [var concatenatedColumnName: String](columnconcatenator/concatenatedcolumnname.md)
+- [var concatenatedColumnName: String](./columnconcatenator/concatenatedcolumnname.md)
   The name of the concatenated column containing the shaped arrays.
 ### Applying
-- [func applied(to: DataFrame, eventHandler: EventHandler?) throws -> DataFrame](columnconcatenator/applied(to:eventhandler:).md)
+- [func applied(to: DataFrame, eventHandler: EventHandler?) throws -> DataFrame](./columnconcatenator/applied%28to,eventhandler%29.md)
   Combines every numerical column in a data frame into to a shaped array for each row.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TabularTransformer](tabulartransformer.md)
-- [Transformer](transformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TabularTransformer](./tabulartransformer.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [protocol TabularTransformer](tabulartransformer.md)
+### Tabular components
+- [protocol TabularTransformer](./tabulartransformer.md)
   A tabular transformer that transforms a data frame.
-- [protocol TabularEstimator](tabularestimator.md)
+- [protocol TabularEstimator](./tabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [protocol SupervisedTabularEstimator](supervisedtabularestimator.md)
+- [protocol SupervisedTabularEstimator](./supervisedtabularestimator.md)
   A tabular estimator that creates a transformer by fitting to a data set in a data frame.
-- [struct ColumnSelector](columnselector.md)
+- [struct ColumnSelector](./columnselector.md)
   An operation that applies an estimator to a selection of columns.
-- [struct ColumnSelectorTransformer](columnselectortransformer.md)
+- [struct ColumnSelectorTransformer](./columnselectortransformer.md)
   A transformer that applies a base transformer to specific columns in a data frame.
-- [enum ColumnSelection](columnselection.md)
+- [enum ColumnSelection](./columnselection.md)
   A selection of columns from a data frame.
-- [struct PreprocessingSupervisedTabularEstimator](preprocessingsupervisedtabularestimator.md)
+- [struct PreprocessingSupervisedTabularEstimator](./preprocessingsupervisedtabularestimator.md)
   A supervised tabular estimator that composes a preprocessing transformer and a supervised tabular estimator.
-- [struct PreprocessingTabularEstimator](preprocessingtabularestimator.md)
+- [struct PreprocessingTabularEstimator](./preprocessingtabularestimator.md)
   An estimator that composes a preprocessing transformer and an estimator.
-- [struct PreprocessingUpdatableSupervisedTabularEstimator](preprocessingupdatablesupervisedtabularestimator.md)
+- [struct PreprocessingUpdatableSupervisedTabularEstimator](./preprocessingupdatablesupervisedtabularestimator.md)
   An updatable supervised estimator that composes a preprocessing transformer and an updatable supervised estimator.
-- [struct PreprocessingUpdatableTabularEstimator](preprocessingupdatabletabularestimator.md)
+- [struct PreprocessingUpdatableTabularEstimator](./preprocessingupdatabletabularestimator.md)
   An updatable estimator that composes a preprocessing transformer and an updatable estimator.
 
 

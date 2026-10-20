@@ -1,7 +1,8 @@
 # postalAddresses
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of postal addresses that the data detection system identifies.
 
@@ -16,7 +17,8 @@ var postalAddresses: [DDMatchPostalAddress] { get }
 
 ## See Also
 
-- [var phoneNumbers: [DDMatchPhoneNumber]](nspasteboard/detectedvalues/phonenumbers.md)
+### Contact values
+- [var phoneNumbers: [DDMatchPhoneNumber]](./phonenumbers.md)
   An array of phone numbers that the data detection system identifies.
 
 

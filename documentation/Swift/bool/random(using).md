@@ -1,7 +1,8 @@
 # random(using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a random Boolean value, using the given generator as a source for randomness.
 
@@ -45,7 +46,8 @@ if flippedHeads {
 
 ## See Also
 
-- [static func random() -> Bool](bool/random.md)
+### Creating a Random Value
+- [static func random() -> Bool](./random%28%29.md)
   Returns a random Boolean value.
 
 

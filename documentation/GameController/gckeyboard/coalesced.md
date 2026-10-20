@@ -1,7 +1,8 @@
 # coalesced
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The keyboard currently connected to the device.
 
@@ -19,15 +20,20 @@ The keyboard currently connected to the device.
 class var coalesced: GCKeyboard? { get }
 ```
 
+```objc
+@property (class, atomic, strong, readonly, nullable) GCKeyboard * coalescedKeyboard;
+```
+
 #### Discussion
 
-Get the keyboard input values from the keyboard’s [`keyboardInput`](gckeyboard/keyboardinput.md) controller profile. If the user connects more than one keyboard, the framework represents the combined keyboards with one coalesced keyboard object.
+Get the keyboard input values from the keyboard’s [`keyboardInput`](./keyboardinput.md) controller profile. If the user connects more than one keyboard, the framework represents the combined keyboards with one coalesced keyboard object.
 
 ## See Also
 
-- [static let GCKeyboardDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gckeyboarddidconnect.md)
+### Discovering keyboards
+- [static let GCKeyboardDidConnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gckeyboarddidconnect.md)
   A notification that posts after a keyboard connects to the device.
-- [static let GCKeyboardDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gckeyboarddiddisconnect.md)
+- [static let GCKeyboardDidDisconnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gckeyboarddiddisconnect.md)
   A notification that posts after a single keyboard, or the last of multiple keyboards, disconnects from the device.
 
 

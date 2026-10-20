@@ -1,7 +1,8 @@
 # effectIsInteractive
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables interactive glass behavior, which adds a visual response to user interactions.
 
@@ -12,6 +13,10 @@ Enables interactive glass behavior, which adds a visual response to user interac
 
 ```swift
 var effectIsInteractive: Bool { get set }
+```
+
+```objc
+@property BOOL effectIsInteractive;
 ```
 
 #### Discussion

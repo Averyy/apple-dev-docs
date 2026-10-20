@@ -1,7 +1,8 @@
 # securityRestrictionMode
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -14,6 +15,10 @@
 
 ```swift
 var securityRestrictionMode: WKSecurityRestrictionMode { get set }
+```
+
+```objc
+@property (nonatomic) WKSecurityRestrictionMode securityRestrictionMode;
 ```
 
 #### Discussion

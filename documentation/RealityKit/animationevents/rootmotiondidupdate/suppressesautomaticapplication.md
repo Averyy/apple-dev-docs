@@ -1,7 +1,8 @@
 # suppressesAutomaticApplication
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether subscribing to the event suppresses automatic application of the root motion delta.
 
@@ -27,7 +28,8 @@ The default value is `true` — while the event has subscribers, the system does
 
 ## See Also
 
-- [let rootMotionTransform: Transform](animationevents/rootmotiondidupdate/rootmotiontransform.md)
+### Accessing root motion
+- [let rootMotionTransform: Transform](./rootmotiontransform.md)
   The change in position and orientation since the previous frame.
 
 

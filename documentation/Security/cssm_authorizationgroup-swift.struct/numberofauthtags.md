@@ -1,7 +1,8 @@
 # NumberOfAuthTags
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var NumberOfAuthTags: uint32
+```
+
+```c
+uint32 NumberOfAuthTags;
 ```
 
 

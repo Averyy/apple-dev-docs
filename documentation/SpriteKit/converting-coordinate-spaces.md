@@ -1,6 +1,7 @@
 # Converting Coordinate Spaces
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Convert positions across the various coordinate spaces in a scene.
 
@@ -8,7 +9,7 @@ Convert positions across the various coordinate spaces in a scene.
 
 When working with the node tree, sometimes you need to convert a position from one coordinate space to another. For example, when specifying joints in the physics system, the joint positions are specified in scene coordinates. So, if you have those points in a local coordinate system, you need to convert them to the scene’s coordinate space.
 
-The following code shows how to convert a node’s position into the scene coordinate system. The scene is asked to perform the conversion. Remember that a node’s position is specified in its parent’s coordinate system, so the code passes `node.parent` as the node to convert from. You could perform the same conversion in reverse by calling the [`convert(_:to:)`](sknode/convert(_:to:).md) method.
+The following code shows how to convert a node’s position into the scene coordinate system. The scene is asked to perform the conversion. Remember that a node’s position is specified in its parent’s coordinate system, so the code passes `node.parent` as the node to convert from. You could perform the same conversion in reverse by calling the [`convert(_:to:)`](./sknode/convert%28_,to%29.md) method.
 
 **Swift**:
 
@@ -32,14 +33,15 @@ CGPoint positionInScene = [node.scene convertPoint:node.position fromNode:node.p
 
 One situation where you need to perform coordinate conversions is when you perform event handling. Mouse and touch events need to be converted from window coordinates to view coordinates, and from there into the scene. To simplify the code you need to write, SpriteKit adds a few convenience methods:
 
-- In iOS, use the [`location(in:)`](https://developer.apple.com/documentation/uikit/uitouch/location(in:)-44h4k) and [`previousLocation(in:)`](https://developer.apple.com/documentation/uikit/uitouch/previouslocation(in:)-ea29) on [`UITouch`](https://developer.apple.com/documentation/uikit/uitouch) objects to convert a touch location into a node’s coordinate system.
-- In macOS, use the [`location(in:)`](https://developer.apple.com/documentation/appkit/nsevent/location(in:)) method on [`NSEvent`](https://developer.apple.com/documentation/appkit/nsevent) objects to convert a mouse event into a node’s coordinate system.
+- In iOS, use the [`location(in:)`](../UIKit/uitouch/location%28in%29-44h4k.md) and [`previousLocation(in:)`](../UIKit/uitouch/previouslocation%28in%29-ea29.md) on [`UITouch`](../UIKit/uitouch.md) objects to convert a touch location into a node’s coordinate system.
+- In macOS, use the [`location(in:)`](../AppKit/nsevent/location%28in%29.md) method on [`NSEvent`](../AppKit/nsevent.md) objects to convert a mouse event into a node’s coordinate system.
 
 ## See Also
 
-- [func convert(CGPoint, from: SKNode) -> CGPoint](sknode/convert(_:from:).md)
+### Converting Between Coordinate Systems of Different Nodes
+- [func convert(CGPoint, from: SKNode) -> CGPoint](./sknode/convert%28_,from%29.md)
   Converts a point from the coordinate system of another node in the node tree to the coordinate system of this node.
-- [func convert(CGPoint, to: SKNode) -> CGPoint](sknode/convert(_:to:).md)
+- [func convert(CGPoint, to: SKNode) -> CGPoint](./sknode/convert%28_,to%29.md)
   Converts a point in this node’s coordinate system to the coordinate system of another node in the node tree.
 
 

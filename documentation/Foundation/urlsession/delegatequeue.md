@@ -1,7 +1,8 @@
 # delegateQueue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operation queue provided when this object was created.
 
@@ -20,9 +21,13 @@ The operation queue provided when this object was created.
 var delegateQueue: OperationQueue { get }
 ```
 
+```objc
+@property (retain, readonly) NSOperationQueue * delegateQueue;
+```
+
 ## Mentions
 
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
+- [Processing URL session data task results with Combine](../processing-url-session-data-task-results-with-combine.md)
 
 #### Discussion
 
@@ -32,11 +37,12 @@ All delegate method calls and completion handlers related to the session are per
 
 ## See Also
 
-- [var delegate: (any URLSessionDelegate)?](urlsession/delegate.md)
+### Working with a delegate
+- [var delegate: (any URLSessionDelegate)?](./delegate.md)
   The delegate assigned when this object was created.
-- [protocol URLSessionDelegate](urlsessiondelegate.md)
+- [protocol URLSessionDelegate](../urlsessiondelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle session-level events, like session life cycle changes.
-- [protocol URLSessionTaskDelegate](urlsessiontaskdelegate.md)
+- [protocol URLSessionTaskDelegate](../urlsessiontaskdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events.
 
 

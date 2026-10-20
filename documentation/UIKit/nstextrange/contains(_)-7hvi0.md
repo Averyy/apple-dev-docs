@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if the text location you specify is in the current text range.
 
@@ -19,17 +20,22 @@ Determines if the text location you specify is in the current text range.
 func contains(_ location: any NSTextLocation) -> Bool
 ```
 
+```objc
+- (BOOL) containsLocation:(id<NSTextLocation>) location;
+```
+
 #### Return Value
 
 Returns `true` if the location is in the range otherwise `false` .
 
 ## Parameters
 
-- `location`: An [`NSTextLocation`](nstextlocation.md).
+- `location`: An [`NSTextLocation`](../nstextlocation.md).
 
 ## See Also
 
-- [func contains(NSTextRange) -> Bool](nstextrange/contains(_:)-5j4y2.md)
+### Finding text within the text range
+- [func contains(NSTextRange) -> Bool](./contains%28_%29-5j4y2.md)
   Determines if the text range you specify is in the current text range.
 
 

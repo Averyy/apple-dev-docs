@@ -1,7 +1,8 @@
 # parseStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parse strategy that this format style uses.
 
@@ -19,6 +20,8 @@ The parse strategy that this format style uses.
 ```swift
 var parseStrategy: IntegerParseStrategy<IntegerFormatStyle<Value>.Percent> { get }
 ```
+
+Available when `Value` conforms to `BinaryInteger`.
 
 
 ---

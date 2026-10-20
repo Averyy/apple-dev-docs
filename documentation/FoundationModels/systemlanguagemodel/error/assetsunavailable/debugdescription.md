@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of why the assets are unavailable.
 

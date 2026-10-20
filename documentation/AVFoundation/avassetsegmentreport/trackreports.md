@@ -1,7 +1,8 @@
 # trackReports
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reports for the segment’s track data.
 
@@ -19,13 +20,18 @@ The reports for the segment’s track data.
 var trackReports: [AVAssetSegmentTrackReport] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAssetSegmentTrackReport *> * trackReports;
+```
+
 ## See Also
 
-- [var segmentType: AVAssetSegmentType](avassetsegmentreport/segmenttype.md)
+### Inspecting a report
+- [var segmentType: AVAssetSegmentType](./segmenttype.md)
   The type of segment data.
-- [enum AVAssetSegmentType](avassetsegmenttype.md)
+- [enum AVAssetSegmentType](../avassetsegmenttype.md)
   Constants that define the type of a segment.
-- [class AVAssetSegmentTrackReport](avassetsegmenttrackreport.md)
+- [class AVAssetSegmentTrackReport](../avassetsegmenttrackreport.md)
   An object that provides information on a track in segment data.
 
 

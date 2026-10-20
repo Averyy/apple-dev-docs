@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value that is offset the specified distance from this value.
 
@@ -36,16 +37,17 @@ For a value `x`, a distance `n`, and a value `y = x.advanced(by: n)`, `x.distanc
 
 ## See Also
 
-- [init()](int/init.md)
+### Infrequently Used Functionality
+- [init()](./init%28%29.md)
   Creates a new value equal to zero.
-- [init(integerLiteral: Self)](int/init(integerliteral:).md)
-- [typealias IntegerLiteralType](int/integerliteraltype.md)
+- [init(integerLiteral: Self)](./init%28integerliteral%29.md)
+- [typealias IntegerLiteralType](./integerliteraltype.md)
   A type that represents an integer literal.
-- [func distance(to: Int) -> Int](int/distance(to:).md)
+- [func distance(to: Int) -> Int](./distance%28to%29.md)
   Returns the distance from this value to the given value, expressed as a stride.
-- [typealias Stride](int/stride.md)
+- [typealias Stride](./stride.md)
   A type that represents the distance between two values.
-- [var hashValue: Int](int/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

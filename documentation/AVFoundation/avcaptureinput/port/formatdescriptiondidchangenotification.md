@@ -1,7 +1,8 @@
 # formatDescriptionDidChangeNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the capture input port’s format description changes.
 
@@ -18,9 +19,13 @@ A notification the system posts when the capture input port’s format descripti
 class let formatDescriptionDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVCaptureInputPortFormatDescriptionDidChangeNotification;
+```
+
 #### Discussion
 
-The notification’s [`object`](https://developer.apple.com/documentation/foundation/notification/object) property contains the [`AVCaptureInput.Port`](avcaptureinput/port.md) object whose format changed.
+The notification’s [`object`](../../../Foundation/notification/object.md) property contains the [`AVCaptureInput.Port`](../port.md) object whose format changed.
 
 
 ---

@@ -1,7 +1,8 @@
 # extrusionMethod
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the extrusion type applied to the swept shape in 3D space.
 

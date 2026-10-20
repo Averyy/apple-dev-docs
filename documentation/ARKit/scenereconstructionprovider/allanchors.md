@@ -1,7 +1,8 @@
 # allAnchors
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the mesh anchors the scene reconstruction provider is tracking.
 
@@ -16,9 +17,10 @@ final var allAnchors: [MeshAnchor] { get }
 
 ## See Also
 
-- [var description: String](scenereconstructionprovider/description.md)
+### Inspecting a scene reconstruction provider
+- [var description: String](./description.md)
   A textual representation of this scene reconstruction provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](scenereconstructionprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for running scene reconstruction.
 
 

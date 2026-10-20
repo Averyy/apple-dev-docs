@@ -1,7 +1,8 @@
 # changeCount
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the pasteboard’s contents change.
 
@@ -17,13 +18,18 @@ The number of times the pasteboard’s contents change.
 var changeCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger changeCount;
+```
+
 #### Discussion
 
-Whenever the contents of a pasteboard changes—specifically, when pasteboard items are added, modified, or removed—`UIPasteboard` increments the value of this property. After it increments the change count, UIPasteboard posts the notifications named [`changedNotification`](uipasteboard/changednotification.md) (for additions and modifications) and [`removedNotification`](uipasteboard/removednotification.md) (for removals). These notifications include (in the `userInfo` dictionary) the types of the pasteboard items added or removed. Because `UIPasteboard` waits until the end of the current event loop before incrementing the change count, notifications can be batched. The class also updates the change count when an app reactivates and another app has changed the pasteboard contents. When users restart a device, the change count is reset to zero.
+Whenever the contents of a pasteboard changes—specifically, when pasteboard items are added, modified, or removed—`UIPasteboard` increments the value of this property. After it increments the change count, UIPasteboard posts the notifications named [`changedNotification`](./changednotification.md) (for additions and modifications) and [`removedNotification`](./removednotification.md) (for removals). These notifications include (in the `userInfo` dictionary) the types of the pasteboard items added or removed. Because `UIPasteboard` waits until the end of the current event loop before incrementing the change count, notifications can be batched. The class also updates the change count when an app reactivates and another app has changed the pasteboard contents. When users restart a device, the change count is reset to zero.
 
 ## See Also
 
-- [var name: UIPasteboard.Name](uipasteboard/name-swift.property.md)
+### Getting and setting pasteboard attributes
+- [var name: UIPasteboard.Name](./name-swift.property.md)
   The name of the pasteboard.
 
 

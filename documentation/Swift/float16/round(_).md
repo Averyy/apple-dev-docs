@@ -1,7 +1,8 @@
 # round(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rounds the value to an integral value using the specified rounding rule.
 

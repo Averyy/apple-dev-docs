@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.resourceUnavailable
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested resource is unavailable.
 
@@ -21,7 +22,8 @@ You can try again after receiving this error.
 
 ## See Also
 
-- [CredentialSession.ErrorCode.acquiredResourceRelinquished](credentialsession/errorcode/acquiredresourcerelinquished.md)
+### Temporary error codes
+- [CredentialSession.ErrorCode.acquiredResourceRelinquished](./acquiredresourcerelinquished.md)
   The system relinquished an underlying shared resource, preventing the operation from completing.
 
 

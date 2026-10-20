@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The composition of content that comprise the keyframe track.
@@ -24,8 +25,9 @@ The composition of content that comprise the keyframe track.
 
 ## See Also
 
-- [associatedtype Body : KeyframeTrackContent](keyframetrackcontent/body-swift.associatedtype.md)
-- [associatedtype Value : Animatable = Self.Body.Value](keyframetrackcontent/value.md)
+### Creating a keyframe
+- [associatedtype Body : KeyframeTrackContent](./body-swift.associatedtype.md)
+- [associatedtype Value : Animatable = Self.Body.Value](./value.md)
 
 
 ---

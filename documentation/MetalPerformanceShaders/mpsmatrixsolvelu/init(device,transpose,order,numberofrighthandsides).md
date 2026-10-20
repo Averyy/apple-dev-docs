@@ -1,7 +1,8 @@
 # init(device:transpose:order:numberOfRightHandSides:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, transpose: Bool, order: Int, numberOfRightHandSides: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device transpose:(BOOL) transpose order:(NSUInteger) order numberOfRightHandSides:(NSUInteger) numberOfRightHandSides;
 ```
 
 

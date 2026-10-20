@@ -1,7 +1,8 @@
 # WKInterfaceObjectHorizontalAlignment.center
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Center alignment. The object’s content is centered horizontally in the container and extends equally to the left and right.
 
@@ -14,11 +15,16 @@ Center alignment. The object’s content is centered horizontally in the contain
 case center
 ```
 
+```c
+WKInterfaceObjectHorizontalAlignmentCenter
+```
+
 ## See Also
 
-- [WKInterfaceObjectHorizontalAlignment.left](wkinterfaceobjecthorizontalalignment/left.md)
+### Constants
+- [WKInterfaceObjectHorizontalAlignment.left](./left.md)
   Left alignment. The object’s content aligns with the left edge of the container and extends to the right.
-- [WKInterfaceObjectHorizontalAlignment.right](wkinterfaceobjecthorizontalalignment/right.md)
+- [WKInterfaceObjectHorizontalAlignment.right](./right.md)
   Right alignment. The object’s content aligns with the right edge of the container and extends to the left.
 
 

@@ -1,7 +1,8 @@
 # MIDIDeviceRemoveEntity(_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes an entity from a device.
 
@@ -16,6 +17,10 @@ Removes an entity from a device.
 
 ```swift
 func MIDIDeviceRemoveEntity(_ device: MIDIDeviceRef, _ entity: MIDIEntityRef) -> OSStatus
+```
+
+```c
+extern OSStatus MIDIDeviceRemoveEntity(MIDIDeviceRef device, MIDIEntityRef entity);
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ Drivers call this function to remove one of a device’s entities.
 
 ## See Also
 
-- [func MIDIDeviceNewEntity(MIDIDeviceRef, CFString, MIDIProtocolID, Bool, Int, Int, UnsafeMutablePointer<MIDIEntityRef>) -> OSStatus](mididevicenewentity(_:_:_:_:_:_:_:).md)
+### Managing Entities
+- [func MIDIDeviceNewEntity(MIDIDeviceRef, CFString, MIDIProtocolID, Bool, Int, Int, UnsafeMutablePointer<MIDIEntityRef>) -> OSStatus](./mididevicenewentity%28_,_,_,_,_,_,_%29.md)
   Adds a new entity to a device.
-- [func MIDIEntityAddOrRemoveEndpoints(MIDIEntityRef, Int, Int) -> OSStatus](midientityaddorremoveendpoints(_:_:_:).md)
+- [func MIDIEntityAddOrRemoveEndpoints(MIDIEntityRef, Int, Int) -> OSStatus](./midientityaddorremoveendpoints%28_,_,_%29.md)
   Adds or removes an entity’s endpoints.
 
 

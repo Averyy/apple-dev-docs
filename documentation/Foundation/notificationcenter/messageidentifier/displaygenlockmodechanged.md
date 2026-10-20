@@ -1,7 +1,8 @@
 # displayGenlockModeChanged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifies `CMClock/DisplayGenlockModeChangedMessage`.
 
@@ -14,6 +15,8 @@ Identifies `CMClock/DisplayGenlockModeChangedMessage`.
 ```swift
 static var displayGenlockModeChanged: NotificationCenter.BaseMessageIdentifier<CMClock.DisplayGenlockModeChangedMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<CMClock.DisplayGenlockModeChangedMessage>`.
 
 
 ---

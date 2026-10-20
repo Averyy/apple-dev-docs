@@ -1,7 +1,8 @@
 # seconds
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representation of the time in seconds.
 
@@ -22,21 +23,22 @@ var seconds: Double { get }
 
 #### Discussion
 
-If the time is [`invalid`](cmsampletiminginfo/invalid.md) or [`indefinite`](cmtimeflags/indefinite.md), the value equals [`nan`](https://developer.apple.com/documentation/swift/double/nan).
+If the time is [`invalid`](../cmsampletiminginfo/invalid.md) or [`indefinite`](../cmtimeflags/indefinite.md), the value equals [`nan`](../../Swift/double/nan.md).
 
 ## See Also
 
-- [var hasBeenRounded: Bool](cmtime/hasbeenrounded.md)
+### Inspecting a Time
+- [var hasBeenRounded: Bool](./hasbeenrounded.md)
   A Boolean value that indicates whether the system rounded the time.
-- [var isValid: Bool](cmtime/isvalid.md)
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether a time is valid.
-- [var isNumeric: Bool](cmtime/isnumeric.md)
+- [var isNumeric: Bool](./isnumeric.md)
   A Boolean value that indicates whether a time is numeric.
-- [var isIndefinite: Bool](cmtime/isindefinite.md)
+- [var isIndefinite: Bool](./isindefinite.md)
   A Boolean value that indicates whether a time is indefinite.
-- [var isPositiveInfinity: Bool](cmtime/ispositiveinfinity.md)
+- [var isPositiveInfinity: Bool](./ispositiveinfinity.md)
   A Boolean value that indicates whether a time represents positive infinity.
-- [var isNegativeInfinity: Bool](cmtime/isnegativeinfinity.md)
+- [var isNegativeInfinity: Bool](./isnegativeinfinity.md)
   A Boolean value that indicates whether a time represents negative infinity.
 
 

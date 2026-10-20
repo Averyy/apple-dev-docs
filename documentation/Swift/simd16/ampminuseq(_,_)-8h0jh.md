@@ -1,7 +1,8 @@
 # &-=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Updates the left hand side with the wrapping difference of the two vectors.
 
@@ -19,6 +20,8 @@ Updates the left hand side with the wrapping difference of the two vectors.
 ```swift
 static func &-= (a: inout SIMD16<Scalar>, b: SIMD16<Scalar>)
 ```
+
+Available when `Scalar` is `Int16`.
 
 
 ---

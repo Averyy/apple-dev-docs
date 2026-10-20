@@ -1,7 +1,8 @@
 # untilFinished(_:)
 
 **Framework**: Observation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Constructs an asynchronous sequence for a given closure by tracking changes of `@Observable` types.
 

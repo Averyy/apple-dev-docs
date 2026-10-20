@@ -1,7 +1,8 @@
 # friction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The linear resistance for the behavior’s dynamic items when two slide against each other.
 
@@ -9,7 +10,7 @@ The linear resistance for the behavior’s dynamic items when two slide against 
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,33 +19,38 @@ The linear resistance for the behavior’s dynamic items when two slide against 
 var friction: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CGFloat friction;
+```
+
 #### Discussion
 
 Default value is `0.0`, which corresponds to no friction. Use a value of `1.0` to apply strong friction. To apply an even stronger friction, you can use higher numbers.
 
 ## See Also
 
-- [func addAngularVelocity(CGFloat, for: any UIDynamicItem)](uidynamicitembehavior/addangularvelocity(_:for:).md)
+### Configuring a dynamic item behavior
+- [func addAngularVelocity(CGFloat, for: any UIDynamicItem)](./addangularvelocity%28_,for%29.md)
   Adds a specified angular velocity to a dynamic item.
-- [func addLinearVelocity(CGPoint, for: any UIDynamicItem)](uidynamicitembehavior/addlinearvelocity(_:for:).md)
+- [func addLinearVelocity(CGPoint, for: any UIDynamicItem)](./addlinearvelocity%28_,for%29.md)
   Adds a specified linear velocity to a dynamic item.
-- [var allowsRotation: Bool](uidynamicitembehavior/allowsrotation.md)
+- [var allowsRotation: Bool](./allowsrotation.md)
   Specifies whether rotation is allowed for the behavior’s dynamic items.
-- [var angularResistance: CGFloat](uidynamicitembehavior/angularresistance.md)
+- [var angularResistance: CGFloat](./angularresistance.md)
   The angular resistance for the behavior’s dynamic items.
-- [func angularVelocity(for: any UIDynamicItem) -> CGFloat](uidynamicitembehavior/angularvelocity(for:).md)
+- [func angularVelocity(for: any UIDynamicItem) -> CGFloat](./angularvelocity%28for%29.md)
   Returns the angular velocity for a specified dynamic item.
-- [func linearVelocity(for: any UIDynamicItem) -> CGPoint](uidynamicitembehavior/linearvelocity(for:).md)
+- [func linearVelocity(for: any UIDynamicItem) -> CGPoint](./linearvelocity%28for%29.md)
   Returns the linear velocity for a specified dynamic item.
-- [var density: CGFloat](uidynamicitembehavior/density.md)
+- [var density: CGFloat](./density.md)
   The relative mass density of the behavior’s dynamic items.
-- [var elasticity: CGFloat](uidynamicitembehavior/elasticity.md)
+- [var elasticity: CGFloat](./elasticity.md)
   The amount of elasticity applied to collisions for the behavior’s dynamic items.
-- [var resistance: CGFloat](uidynamicitembehavior/resistance.md)
+- [var resistance: CGFloat](./resistance.md)
   The linear resistance for the behavior’s dynamic items, which reduces their linear velocity over time.
-- [var charge: CGFloat](uidynamicitembehavior/charge.md)
+- [var charge: CGFloat](./charge.md)
   The charge associated with the item.
-- [var isAnchored: Bool](uidynamicitembehavior/isanchored.md)
+- [var isAnchored: Bool](./isanchored.md)
   A Boolean value indicating whether the item is anchored to its current position.
 
 

@@ -1,7 +1,8 @@
 # mainEmitter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Particle attributes affecting the main particles of the base simulation.
 

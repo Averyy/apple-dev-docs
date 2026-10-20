@@ -1,7 +1,8 @@
 # convert(value:to:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a value from this coordinate space to another.
 

@@ -1,14 +1,15 @@
 # memset
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void * memset(void *s, int c, size_t n);
 ```
 

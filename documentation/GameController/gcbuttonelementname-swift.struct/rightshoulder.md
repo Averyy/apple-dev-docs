@@ -1,7 +1,8 @@
 # rightShoulder
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the right shoulder button.
 
@@ -11,7 +12,7 @@ The name of the right shoulder button.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ static let rightShoulder: GCButtonElementName
 
 ## See Also
 
-- [static let leftShoulder: GCButtonElementName](gcbuttonelementname-swift.struct/leftshoulder.md)
+### Getting extended gamepad shoulder button names
+- [static let leftShoulder: GCButtonElementName](./leftshoulder.md)
   The name of the left shoulder button.
-- [static let leftBumper: GCButtonElementName](gcbuttonelementname-swift.struct/leftbumper.md)
+- [static let leftBumper: GCButtonElementName](./leftbumper.md)
   The name of the additional left shoulder button.
-- [static let rightBumper: GCButtonElementName](gcbuttonelementname-swift.struct/rightbumper.md)
+- [static let rightBumper: GCButtonElementName](./rightbumper.md)
   The name of the additional right shoulder button.
 
 

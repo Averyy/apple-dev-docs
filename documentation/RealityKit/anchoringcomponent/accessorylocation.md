@@ -1,7 +1,8 @@
 # AnchoringComponent.AccessoryLocation
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reference to points of interest on a tracked accessory.
 
@@ -21,17 +22,17 @@ Accessories may include locations such as buttons, and thumb sticks, and grips.
 ## Topics
 
 ### Instance Properties
-- [var name: String?](anchoringcomponent/accessorylocation/name.md)
+- [var name: String?](./accessorylocation/name.md)
   The name of the accessory location.
 ### Type Properties
-- [static var origin: AnchoringComponent.AccessoryLocation](anchoringcomponent/accessorylocation/origin.md)
+- [static var origin: AnchoringComponent.AccessoryLocation](./accessorylocation/origin.md)
   A location situated at the accessory origin.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

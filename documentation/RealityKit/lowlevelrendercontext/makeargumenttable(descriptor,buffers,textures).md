@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an argument table that binds the provided buffer slices and textures.
@@ -20,13 +21,13 @@ func makeArgumentTable(descriptor: LowLevelArgumentTable.Descriptor, buffers: [L
 
 #### Return Value
 
-A newly created [`LowLevelArgumentTable`](lowlevelargumenttable.md).
+A newly created [`LowLevelArgumentTable`](../lowlevelargumenttable.md).
 
 #### Discussion
 
 The `descriptor` must match the `argumentTableDescriptor` of the corresponding material function. The counts and sizes of `buffers` and `textures` must match the slots declared in the descriptor.
 
-> **Note**: An error if the counts or sizes of `buffers` or `textures` do not match the descriptor, or if the underlying GPU allocation fails.
+> **Throws**: An error if the counts or sizes of `buffers` or `textures` do not match the descriptor, or if the underlying GPU allocation fails.
 
 ## Parameters
 
@@ -36,9 +37,10 @@ The `descriptor` must match the `argumentTableDescriptor` of the corresponding m
 
 ## See Also
 
-- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) throws -> sending LowLevelRenderPipelineState](lowlevelrendercontext/makerenderpipelinestate(descriptor:)-7j32p.md)
-  Synchronous variant of [`makeRenderPipelineState(descriptor:)`](lowlevelrendercontext/makerenderpipelinestate(descriptor:)-7j32p.md). Blocks the current thread until compilation completes.
-- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState](lowlevelrendercontext/makerenderpipelinestate(descriptor:)-55ty6.md)
+### Creating pipeline state
+- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) throws -> sending LowLevelRenderPipelineState](./makerenderpipelinestate%28descriptor%29-7j32p.md)
+  Synchronous variant of [`makeRenderPipelineState(descriptor:)`](./makerenderpipelinestate%28descriptor%29-7j32p.md). Blocks the current thread until compilation completes.
+- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState](./makerenderpipelinestate%28descriptor%29-55ty6.md)
   Asynchronously compiles a Metal render pipeline state from the given descriptor.
 
 

@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A response APDU status code.
 
@@ -16,9 +17,14 @@ A response APDU status code.
 var status: NFCVASResponse.ErrorCode { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NFCVASErrorCode status;
+```
+
 ## See Also
 
-- [typealias VASErrorCode](vaserrorcode.md)
+### Getting the Response Status
+- [typealias VASErrorCode](../vaserrorcode.md)
   Constants representing APDU status codes for a VAS response.
 
 

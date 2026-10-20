@@ -1,6 +1,7 @@
 # Attributing memory to a content extension
 
-**Framework**: BrowserEngineKit
+**Framework**: BrowserEngineKit  
+**Role**: Article
 
 Adhere to operating-system limits on GPU memory use.
 
@@ -10,7 +11,7 @@ A web browser’s GPU extension is limited to a small total memory allocation. T
 
 The GPU and the content extension both need specific memory transfer entitlements to participate in memory attribution. In the content extension, you create a token that identifies the extension to the kernel. Pass the token to the GPU using your interprocess communication (IPC) channel. Then, in the GPU extension, use the token to assign ownership of the memory region to the content process.
 
-#### Use the Correct Entitlements
+#### Use the correct entitlements
 
 To participate in memory attribution, your content extension needs both the web-browser content extension entitlement `com.apple.developer.web-browser-engine.webcontent` and the `com.apple.developer.memory.transfer_accept` entitlement.
 
@@ -18,11 +19,11 @@ Your GPU extension needs both the `com.apple.developer.web-browser-engine.render
 
 Set the value for each of these entitlements to a string that matches the bundle ID of your browser app.
 
-For more information about the entitlements web browser extensions use, see [`Designing your browser architecture`](designing-your-browser-architecture.md).
+For more information about the entitlements web browser extensions use, see [Designing your browser architecture](./designing-your-browser-architecture.md).
 
-#### Create a Task Identity Token
+#### Create a task identity token
 
-Your content extension creates a task identity token that you pass to the GPU extension using your IPC protocol, for example, with [`XPC`](https://developer.apple.com/documentation/xpc). The task identity token is an unforgeable value that the system uses to identify the process to which it attributes memory in the GPU extension.
+Your content extension creates a task identity token that you pass to the GPU extension using your IPC protocol, for example, with [XPC](../XPC/XPC.md). The task identity token is an unforgeable value that the system uses to identify the process to which it attributes memory in the GPU extension.
 
 To create a task identity token:
 
@@ -38,11 +39,11 @@ if (result == KERN_SUCCESS) {
 }
 ```
 
-#### Attribute Memory to the Content Extension
+#### Attribute memory to the content extension
 
 Receive the task identity token in the GPU extension and use it to attribute memory to the content extension.
 
-To attribute an [`IOSurfaceRef`](https://developer.apple.com/documentation/iosurface/iosurfaceref) to a content extension, call `IOSurfaceSetOwnershipIdentity`:
+To attribute an [`IOSurfaceRef`](../IOSurface/iosurfaceref.md) to a content extension, call `IOSurfaceSetOwnershipIdentity`:
 
 ```c
 IOSurfaceRef surface = /* Create an IOSurface. */;
@@ -69,7 +70,7 @@ if (result != KERN_SUCCESS) {
 }
 ```
 
-#### Free the Memory When the Content Extension Finishes
+#### Free the memory when the content extension finishes
 
 When the content extension exits, whether normally or due to an error, free the memory that’s attributed to it in your GPU extension.
 
@@ -77,13 +78,14 @@ If you use `libxpc` to implement your IPC protocol, use the connection’s inval
 
 ## See Also
 
-- [Limiting resource access in web content extensions](limiting-resource-access-in-content-extensions.md)
+### Access control
+- [Limiting resource access in web content extensions](./limiting-resource-access-in-content-extensions.md)
   Reduce the impact of vulnerabilities in web content extensions by limiting privileges.
-- [Accessing files in browser extensions](accessing-files-in-browser-extensions.md)
+- [Accessing files in browser extensions](./accessing-files-in-browser-extensions.md)
   Grant extensions access to files from within your browser app.
-- [protocol RestrictedSandboxAppliable](restrictedsandboxappliable.md)
+- [protocol RestrictedSandboxAppliable](./restrictedsandboxappliable.md)
   A protocol that browser extensions implement to opt into a more restricted sandbox.
-- [enum RestrictedSandboxRevision](restrictedsandboxrevision.md)
+- [enum RestrictedSandboxRevision](./restrictedsandboxrevision.md)
   Revisions to the restricted sandbox rules.
 
 

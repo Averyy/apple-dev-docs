@@ -1,14 +1,15 @@
 # renderingVersion
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rendering version used to render the original.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

@@ -1,21 +1,22 @@
 # InAppPurchaseV2.Relationships.InAppPurchaseAvailability
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.4+
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseV2.Relationships.InAppPurchaseAvailability
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseV2.Relationships.InAppPurchaseAvailability.Data](inapppurchasev2/relationships-data.dictionary/inapppurchaseavailability-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseV2.Relationships.InAppPurchaseAvailability.Data](./inapppurchaseavailability-data.dictionary/data-data.dictionary.md)
   The request body you use to update an In-App Purchase v2.
 
 ## Properties

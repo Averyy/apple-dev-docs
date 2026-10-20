@@ -1,18 +1,19 @@
 # DispatchTimeInterval.milliseconds(_:)
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A number of milliseconds.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,13 +23,14 @@ case milliseconds(Int)
 
 ## See Also
 
-- [DispatchTimeInterval.seconds(_:)](dispatchtimeinterval/seconds(_:).md)
+### Enumeration Cases
+- [DispatchTimeInterval.seconds(_:)](./seconds%28_%29.md)
   A number of seconds.
-- [DispatchTimeInterval.microseconds(_:)](dispatchtimeinterval/microseconds(_:).md)
+- [DispatchTimeInterval.microseconds(_:)](./microseconds%28_%29.md)
   A number of microseconds.
-- [DispatchTimeInterval.nanoseconds(_:)](dispatchtimeinterval/nanoseconds(_:).md)
+- [DispatchTimeInterval.nanoseconds(_:)](./nanoseconds%28_%29.md)
   A number of nanoseconds.
-- [DispatchTimeInterval.never](dispatchtimeinterval/never.md)
+- [DispatchTimeInterval.never](./never.md)
   No interval.
 
 

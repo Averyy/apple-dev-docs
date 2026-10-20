@@ -1,7 +1,8 @@
 # SpeechAnalyzer.Options.ModelRetention.processLifetime
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Keeps the models in memory until this process exits.
 
@@ -21,9 +22,10 @@ case processLifetime
 
 ## See Also
 
-- [SpeechAnalyzer.Options.ModelRetention.lingering](speechanalyzer/options/modelretention-swift.enum/lingering.md)
+### Retention options
+- [SpeechAnalyzer.Options.ModelRetention.lingering](./lingering.md)
   Keeps the models in memory for a time so that they can be reused by another compatible analyzer session.
-- [SpeechAnalyzer.Options.ModelRetention.whileInUse](speechanalyzer/options/modelretention-swift.enum/whileinuse.md)
+- [SpeechAnalyzer.Options.ModelRetention.whileInUse](./whileinuse.md)
   Releases the models when the analyzer is deallocated.
 
 

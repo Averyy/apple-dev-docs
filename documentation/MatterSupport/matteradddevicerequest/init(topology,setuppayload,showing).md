@@ -1,7 +1,8 @@
 # init(topology:setupPayload:showing:)
 
 **Framework**: MatterSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create the request.
 
@@ -10,7 +11,7 @@ Create the request.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,9 +26,10 @@ init(topology: MatterAddDeviceRequest.Topology, setupPayload: MTRSetupPayload? =
 
 ## See Also
 
-- [init(from: any Decoder) throws](matteradddevicerequest/init(from:).md)
+### Creating the request
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Create the request from a decoder.
-- [init(topology: MatterAddDeviceRequest.Topology, setupPayload: MTRSetupPayload?, showing: MatterAddDeviceRequest.DeviceCriteria, shouldScanNetworks: Bool)](matteradddevicerequest/init(topology:setuppayload:showing:shouldscannetworks:).md)
+- [init(topology: MatterAddDeviceRequest.Topology, setupPayload: MTRSetupPayload?, showing: MatterAddDeviceRequest.DeviceCriteria, shouldScanNetworks: Bool)](./init%28topology,setuppayload,showing,shouldscannetworks%29.md)
   Create the request with an optional network scan.
 
 

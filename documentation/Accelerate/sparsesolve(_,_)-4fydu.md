@@ -1,7 +1,8 @@
 # SparseSolve(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Solve the equation `Subfactor * x = b` for the vector `x` of complex float values, in place.
 
@@ -20,31 +21,36 @@ Solve the equation `Subfactor * x = b` for the vector `x` of complex float value
 func SparseSolve(_ Subfactor: SparseOpaqueSubfactor_Complex_Float, _ XB: DenseVector_Complex_Float)
 ```
 
+```c
+static void SparseSolve(SparseOpaqueSubfactor_Complex_Float Subfactor, DenseVector_Complex_Float xb);
+```
+
 ## Parameters
 
 - `Subfactor`: (Input) The subfactor to solve a system involving, as returned by `SparseCreateSubfactor()`.
 
 ## See Also
 
-- [func SparseSolve(SparseOpaqueFactorization_Complex_Double, DenseVector_Complex_Double)](sparsesolve(_:_:)-1psgz.md)
+### Complex direct solving functions
+- [func SparseSolve(SparseOpaqueFactorization_Complex_Double, DenseVector_Complex_Double)](./sparsesolve%28_,_%29-1psgz.md)
   Solves the system `Ax=b` for `x`, using the supplied `SparseOpaqueFactorization_Complex_Double` of `A`, in place.
-- [func SparseSolve(SparseOpaqueFactorization_Complex_Float, DenseVector_Complex_Float)](sparsesolve(_:_:)-5apxy.md)
+- [func SparseSolve(SparseOpaqueFactorization_Complex_Float, DenseVector_Complex_Float)](./sparsesolve%28_,_%29-5apxy.md)
   Solves the system `Ax=b` for `x`, using the supplied `SparseOpaqueFactorization_Complex_Float` of `A`, in place.
-- [func SparseSolve(SparseOpaqueFactorization_Complex_Float, DenseVector_Complex_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-3482l.md)
+- [func SparseSolve(SparseOpaqueFactorization_Complex_Float, DenseVector_Complex_Float, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_%29-3482l.md)
   Solves the system `Ax=b` for `x`, using the supplied `SparseOpaqueFactorization_Complex_Float` of `A`, in place.
-- [func SparseSolve(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float)](sparsesolve(_:_:_:)-3hev5.md)
+- [func SparseSolve(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float)](./sparsesolve%28_,_,_%29-3hev5.md)
   Solve the equation `Subfactor * x = b` for the vector `x` of complex float values.
-- [func SparseSolve(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-3qkkl.md)
+- [func SparseSolve(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_%29-3qkkl.md)
   Solve the equation `Subfactor * x = b` for the vector `x` of complex float values, in place.
-- [func SparseSolve(SparseOpaqueFactorization_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float)](sparsesolve(_:_:_:)-76ge0.md)
+- [func SparseSolve(SparseOpaqueFactorization_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float)](./sparsesolve%28_,_,_%29-76ge0.md)
   Solves the system `Ax=b` for `x`, using the supplied `SparseOpaqueFactorization_Complex_Float` of `A`.
-- [func SparseSolve(SparseOpaqueFactorization_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](sparsesolve(_:_:_:)-7day5.md)
+- [func SparseSolve(SparseOpaqueFactorization_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](./sparsesolve%28_,_,_%29-7day5.md)
   Solves the system `Ax=b` for `x`, using the supplied `SparseOpaqueFactorization_Complex_Double` of `A`.
-- [func SparseSolve(SparseOpaqueFactorization_Complex_Double, DenseVector_Complex_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-7ltk8.md)
+- [func SparseSolve(SparseOpaqueFactorization_Complex_Double, DenseVector_Complex_Double, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_%29-7ltk8.md)
   Solves the system `Ax=b` for `x`, using the supplied `SparseOpaqueFactorization_Complex_Double` of `A`, in place.
-- [func SparseSolve(SparseOpaqueSubfactor_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](sparsesolve(_:_:_:)-85y2u.md)
+- [func SparseSolve(SparseOpaqueSubfactor_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](./sparsesolve%28_,_,_%29-85y2u.md)
   Solve the equation `Subfactor * x = b` for the vector `x` of complex double values.
-- [func SparseSolve(SparseOpaqueSubfactor_Complex_Double, DenseVector_Complex_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-90ojf.md)
+- [func SparseSolve(SparseOpaqueSubfactor_Complex_Double, DenseVector_Complex_Double, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_%29-90ojf.md)
   Solve the equation `Subfactor * x = b` for the vector `x` of complex double values, in place.
 
 

@@ -1,7 +1,8 @@
 # records(for:desiredKeys:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the specified records and returns them to an awaiting caller.
 
@@ -11,7 +12,7 @@ Fetches the specified records and returns them to an awaiting caller.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func records(for ids: [CKRecord.ID], desiredKeys: [CKRecord.FieldKey]? = nil) as
 
 #### Return Value
 
-A dictionary that contains the fetched records. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched record, or an error that describes why CloudKit can’t provide that record.
+A dictionary that contains the fetched records. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding fetched record, or an error that describes why CloudKit can’t provide that record.
 
 #### Discussion
 
@@ -30,7 +31,7 @@ If you’re fetching records of different types, make sure that `desiredKeys` is
 
 This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned dictionary includes any individual record errors.
 
-For information on a more configurable way to fetch specific records, see [`CKFetchRecordsOperation`](ckfetchrecordsoperation.md).
+For information on a more configurable way to fetch specific records, see [`CKFetchRecordsOperation`](../ckfetchrecordsoperation.md).
 
 ## Parameters
 
@@ -39,9 +40,10 @@ For information on a more configurable way to fetch specific records, see [`CKFe
 
 ## See Also
 
-- [func fetch(withRecordIDs: [CKRecord.ID], desiredKeys: [CKRecord.FieldKey]?, completionHandler: (Result<[CKRecord.ID : Result<CKRecord, any Error>], any Error>) -> Void)](ckdatabase/fetch(withrecordids:desiredkeys:completionhandler:).md)
+### Fetching Records
+- [func fetch(withRecordIDs: [CKRecord.ID], desiredKeys: [CKRecord.FieldKey]?, completionHandler: (Result<[CKRecord.ID : Result<CKRecord, any Error>], any Error>) -> Void)](./fetch%28withrecordids,desiredkeys,completionhandler%29.md)
   Fetches the specified records and delivers them to a completion handler.
-- [func fetch(withRecordID: CKRecord.ID, completionHandler: (CKRecord?, (any Error)?) -> Void)](ckdatabase/fetch(withrecordid:completionhandler:).md)
+- [func fetch(withRecordID: CKRecord.ID, completionHandler: (CKRecord?, (any Error)?) -> Void)](./fetch%28withrecordid,completionhandler%29.md)
   Fetches a specific record.
 
 

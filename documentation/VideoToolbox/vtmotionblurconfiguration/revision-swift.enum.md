@@ -1,7 +1,8 @@
 # VTMotionBlurConfiguration.Revision
 
 **Framework**: Video Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The specific algorithm or configuration revision that is to be used to perform the request.
 
@@ -17,31 +18,36 @@ The specific algorithm or configuration revision that is to be used to perform t
 enum Revision
 ```
 
+```c
+enum VTMotionBlurConfigurationRevision : NSInteger;
+```
+
 ## Topics
 
 ### Revisions
-- [VTMotionBlurConfiguration.Revision.revision1](vtmotionblurconfiguration/revision-swift.enum/revision1.md)
+- [VTMotionBlurConfiguration.Revision.revision1](./revision-swift.enum/revision1.md)
   An algorithm or implementation that represents the first revision.
 ### Initializers
-- [init?(rawValue: Int)](vtmotionblurconfiguration/revision-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./revision-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var revision: VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/revision-swift.property.md)
+### Inspecting revision information
+- [var revision: VTMotionBlurConfiguration.Revision](./revision-swift.property.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
-- [class var defaultRevision: VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/defaultrevision.md)
+- [class var defaultRevision: VTMotionBlurConfiguration.Revision](./defaultrevision.md)
   The default revision of a particular algorithm or configuration.
-- [class var supportedRevisions: IndexSet](vtmotionblurconfiguration/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./supportedrevisions.md)
   The collection of currently-supported algorithms or configuration revisions for the class of configurations.
 
 

@@ -1,14 +1,15 @@
 # CopyDispatchQueue_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CopyDispatchQueue_Impl(const char *name, IODispatchQueue **queue);
 ```
 

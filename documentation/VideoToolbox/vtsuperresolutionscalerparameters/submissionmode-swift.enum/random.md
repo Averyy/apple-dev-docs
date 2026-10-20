@@ -1,7 +1,8 @@
 # VTSuperResolutionScalerParameters.SubmissionMode.random
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case random
+```
+
+```c
+VTSuperResolutionScalerParametersSubmissionModeRandom
 ```
 
 

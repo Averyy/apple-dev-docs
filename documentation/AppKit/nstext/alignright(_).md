@@ -1,12 +1,13 @@
 # alignRight(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This action method applies right alignment to selected paragraphs (or all text if the receiver is a plain text object).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ This action method applies right alignment to selected paragraphs (or all text i
 func alignRight(_ sender: Any?)
 ```
 
+```objc
+- (void) alignRight:(id) sender;
+```
+
 ## See Also
 
-- [var alignment: NSTextAlignment](nstext/alignment.md)
+### Setting text alignment
+- [var alignment: NSTextAlignment](./alignment.md)
   The alignment of all the receiver’s text.
-- [func alignCenter(Any?)](nstext/aligncenter(_:).md)
+- [func alignCenter(Any?)](./aligncenter%28_%29.md)
   This action method applies center alignment to selected paragraphs (or all text if the receiver is a plain text object).
-- [func alignLeft(Any?)](nstext/alignleft(_:).md)
+- [func alignLeft(Any?)](./alignleft%28_%29.md)
   This action method applies left alignment to selected paragraphs (or all text if the receiver is a plain text object).
 
 

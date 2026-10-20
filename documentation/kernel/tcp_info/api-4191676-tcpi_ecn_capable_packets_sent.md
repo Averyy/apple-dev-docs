@@ -1,14 +1,15 @@
 # tcpi_ecn_capable_packets_sent
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t tcpi_ecn_capable_packets_sent;
 ```
 

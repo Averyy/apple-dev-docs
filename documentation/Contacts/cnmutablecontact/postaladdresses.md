@@ -1,7 +1,8 @@
 # postalAddresses
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of labeled postal addresses for a contact.
 
@@ -19,15 +20,28 @@ An array of labeled postal addresses for a contact.
 var postalAddresses: [CNLabeledValue<CNPostalAddress>] { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSArray<CNLabeledValue<CNPostalAddress *> *> * postalAddresses;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSArray<CNLabeledValue<CNPostalAddress *> *> * postalAddresses;
+```
+
 #### Discussion
 
-This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and a [`CNPostalAddress`](cnpostaladdress.md) value.
+This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`CNPostalAddress`](../cnpostaladdress.md) value.
 
 ## See Also
 
-- [var emailAddresses: [CNLabeledValue<NSString>]](cnmutablecontact/emailaddresses.md)
+### Setting Addresses
+- [var emailAddresses: [CNLabeledValue<NSString>]](./emailaddresses.md)
   An array of labeled email addresses for the contact.
-- [var urlAddresses: [CNLabeledValue<NSString>]](cnmutablecontact/urladdresses.md)
+- [var urlAddresses: [CNLabeledValue<NSString>]](./urladdresses.md)
   An array of labeled URL addresses for a contact.
 
 

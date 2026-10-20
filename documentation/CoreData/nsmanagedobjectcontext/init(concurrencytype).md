@@ -1,7 +1,8 @@
 # init(concurrencyType:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a context that uses the specified concurrency type.
 
@@ -10,9 +11,11 @@ Creates a context that uses the specified concurrency type.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: Use [`init(_:)`](./init%28_%29.md) instead.
 
 ## Declaration
 
@@ -20,25 +23,30 @@ Creates a context that uses the specified concurrency type.
 init(concurrencyType ct: NSManagedObjectContextConcurrencyType)
 ```
 
+```objc
+- (instancetype) initWithConcurrencyType:(NSManagedObjectContextConcurrencyType) ct;
+```
+
 ## Mentions
 
-- [Using Core Data in the background](using-core-data-in-the-background.md)
+- [Using Core Data in the background](../using-core-data-in-the-background.md)
 
 #### Discussion
 
-For more information, see [`Concurrency`](nsmanagedobjectcontext#Concurrency.md).
+For more information, see [Concurrency](../nsmanagedobjectcontext.md#Concurrency).
 
 ## Parameters
 
-- `ct`: The context’s concurrency type. For possible values, see [`NSManagedObjectContextConcurrencyType`](nsmanagedobjectcontextconcurrencytype.md).
+- `ct`: The context’s concurrency type. For possible values, see [`NSManagedObjectContextConcurrencyType`](../nsmanagedobjectcontextconcurrencytype.md).
 
 ## See Also
 
-- [convenience init(NSManagedObjectContext.ConcurrencyType)](nsmanagedobjectcontext/init(_:).md)
+### Creating a context
+- [convenience init(NSManagedObjectContext.ConcurrencyType)](./init%28_%29.md)
   Creates a context that uses the specified concurrency type.
-- [NSManagedObjectContext.ConcurrencyType](nsmanagedobjectcontext/concurrencytype-swift.struct.md)
+- [NSManagedObjectContext.ConcurrencyType](./concurrencytype-swift.struct.md)
   The concurrency types to use with a managed object context.
-- [enum NSManagedObjectContextConcurrencyType](nsmanagedobjectcontextconcurrencytype.md)
+- [enum NSManagedObjectContextConcurrencyType](../nsmanagedobjectcontextconcurrencytype.md)
   The concurrency types you can use with a managed object context.
 
 

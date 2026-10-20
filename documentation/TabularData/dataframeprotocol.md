@@ -1,7 +1,8 @@
 # DataFrameProtocol
 
 **Framework**: TabularData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents a data frame.
 
@@ -23,111 +24,112 @@ protocol DataFrameProtocol
 ## Topics
 
 ### Inspecting a Data Frame Type
-- [var isEmpty: Bool](dataframeprotocol/isempty.md)
+- [var isEmpty: Bool](./dataframeprotocol/isempty.md)
   A Boolean that indicates whether the data frame type is empty.
-- [var shape: (rows: Int, columns: Int)](dataframeprotocol/shape.md)
+- [var shape: (rows: Int, columns: Int)](./dataframeprotocol/shape.md)
   The number or rows and columns of the data frame type.
-- [var columns: [Self.ColumnType]](dataframeprotocol/columns.md)
+- [var columns: [Self.ColumnType]](./dataframeprotocol/columns.md)
   The columns of the underlying data frame.
-- [associatedtype ColumnType : AnyColumnProtocol](dataframeprotocol/columntype.md)
+- [associatedtype ColumnType : AnyColumnProtocol](./dataframeprotocol/columntype.md)
   A type that conforms to the type-erased column protocol.
-- [var rows: DataFrame.Rows](dataframeprotocol/rows.md)
+- [var rows: DataFrame.Rows](./dataframeprotocol/rows.md)
   The rows of the underlying data frame.
-- [DataFrame.Rows](dataframe/rows-swift.struct.md)
+- [DataFrame.Rows](./dataframe/rows-swift.struct.md)
   A collection of rows in a data frame.
-- [var base: DataFrame](dataframeprotocol/base.md)
+- [var base: DataFrame](./dataframeprotocol/base.md)
   The underlying data frame.
 ### Accessing Rows
-- [subscript(Range<Int>) -> DataFrame.Slice](dataframeprotocol/subscript(_:).md)
+- [subscript(Range<Int>) -> DataFrame.Slice](./dataframeprotocol/subscript%28_%29.md)
   Accesses a slice of the data frame type with an index range.
-- [subscript<R>(R) -> DataFrame.Slice](dataframeprotocol/subscript(_:)-8hly3.md)
+- [subscript<R>(R) -> DataFrame.Slice](./dataframeprotocol/subscript%28_%29-8hly3.md)
   Accesses rows of a data frame type with an index range expression.
 ### Creating Two Slices by Splitting Rows
-- [func randomSplit(by: Double, seed: Int?) -> (DataFrame.Slice, DataFrame.Slice)](dataframeprotocol/randomsplit(by:seed:).md)
+- [func randomSplit(by: Double, seed: Int?) -> (DataFrame.Slice, DataFrame.Slice)](./dataframeprotocol/randomsplit%28by,seed%29.md)
   Generates two data frame slices by randomly splitting the rows of the data table.
-- [func randomSplit<G>(by: Double, using: inout G) -> (DataFrame.Slice, DataFrame.Slice)](dataframeprotocol/randomsplit(by:using:).md)
+- [func randomSplit<G>(by: Double, using: inout G) -> (DataFrame.Slice, DataFrame.Slice)](./dataframeprotocol/randomsplit%28by,using%29.md)
   Generates two data frame slices by randomly splitting the rows of the data table type with a random-number generator.
 ### Creating Two Data Frames by Splitting Rows
-- [func stratifiedSplit(on: String, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:by:randomseed:)-9iauf.md)
+- [func stratifiedSplit(on: String, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,by,randomseed%29-9iauf.md)
   Generates two data frames by randomly splitting the rows of a column, which you select by its name, into strata.
-- [func stratifiedSplit(on: String..., by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:by:randomseed:)-8szu1.md)
+- [func stratifiedSplit(on: String..., by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,by,randomseed%29-8szu1.md)
   Generates two data frames by randomly splitting the rows of multiple columns, which you select by their names, into strata.
-- [func stratifiedSplit<T>(on: ColumnID<T>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:by:randomseed:)-714jk.md)
+- [func stratifiedSplit<T>(on: ColumnID<T>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,by,randomseed%29-714jk.md)
   Generates two data frames by randomly splitting the rows of a column, which you select by column identifier, into strata.
-- [func stratifiedSplit<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:_:by:randomseed:).md)
+- [func stratifiedSplit<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,_,by,randomseed%29.md)
   Generates two data frames by randomly splitting the rows of two columns, which you select by column identifiers, into strata.
-- [func stratifiedSplit<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:_:_:by:randomseed:).md)
+- [func stratifiedSplit<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./dataframeprotocol/stratifiedsplit%28on,_,_,by,randomseed%29.md)
   Generates two data frames by randomly splitting the rows of three columns, which you select by column identifiers, into strata.
 ### Creating a Data Frame by Sorting a Column
-- [func sorted(on: String, order: Order) -> DataFrame](dataframeprotocol/sorted(on:order:)-818u5.md)
+- [func sorted(on: String, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,order%29-818u5.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name.
-- [func sorted<T>(on: String, T.Type, order: Order) -> DataFrame](dataframeprotocol/sorted(on:_:order:)-8d7rr.md)
+- [func sorted<T>(on: String, T.Type, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,_,order%29-8d7rr.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type.
-- [func sorted<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows -> DataFrame](dataframeprotocol/sorted(on:_:by:).md)
+- [func sorted<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows -> DataFrame](./dataframeprotocol/sorted%28on,_,by%29.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its name and type, with a predicate.
-- [func sorted<T>(on: ColumnID<T>, order: Order) -> DataFrame](dataframeprotocol/sorted(on:order:)-5nl5c.md)
+- [func sorted<T>(on: ColumnID<T>, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,order%29-5nl5c.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier.
-- [func sorted<T>(on: ColumnID<T>, by: (T, T) throws -> Bool) rethrows -> DataFrame](dataframeprotocol/sorted(on:by:).md)
+- [func sorted<T>(on: ColumnID<T>, by: (T, T) throws -> Bool) rethrows -> DataFrame](./dataframeprotocol/sorted%28on,by%29.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier, with a predicate.
 ### Creating a Data Frame by Sorting Multiple Columns
-- [func sorted<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, order: Order) -> DataFrame](dataframeprotocol/sorted(on:_:order:)-79los.md)
+- [func sorted<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,_,order%29-79los.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to two columns that you select by their column identifiers.
-- [func sorted<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order) -> DataFrame](dataframeprotocol/sorted(on:_:_:order:).md)
+- [func sorted<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order) -> DataFrame](./dataframeprotocol/sorted%28on,_,_,order%29.md)
   Generates a data frame by copying the data frame’s rows and then sorting the rows according to three columns that you select by their column identifiers.
 ### Creating a Data Frame by Joining Another Data Frame
-- [func joined<R>(R, on: String, kind: JoinKind) -> DataFrame](dataframeprotocol/joined(_:on:kind:)-1gp6k.md)
+- [func joined<R>(R, on: String, kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-1gp6k.md)
   Generates a data frame by joining with another data frame type with a common column you select by name.
-- [func joined<R>(R, on: (left: String, right: String), kind: JoinKind) -> DataFrame](dataframeprotocol/joined(_:on:kind:)-7u2tw.md)
+- [func joined<R>(R, on: (left: String, right: String), kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-7u2tw.md)
   Generates a data frame by joining with another data frame type along the columns that you select by name for both data frame types.
-- [func joined<R, T>(R, on: (left: ColumnID<T>, right: ColumnID<T>), kind: JoinKind) -> DataFrame](dataframeprotocol/joined(_:on:kind:)-9629e.md)
+- [func joined<R, T>(R, on: (left: ColumnID<T>, right: ColumnID<T>), kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-9629e.md)
   Generates a data frame by joining with another data frame type along the columns that you select by identifier for both data frame types.
-- [func joined<R, T>(R, on: ColumnID<T>, kind: JoinKind) -> DataFrame](dataframeprotocol/joined(_:on:kind:)-mvic.md)
+- [func joined<R, T>(R, on: ColumnID<T>, kind: JoinKind) -> DataFrame](./dataframeprotocol/joined%28_,on,kind%29-mvic.md)
   Generates a data frame by joining with another data frame type with a common column that you select by identifier.
-- [enum JoinKind](joinkind.md)
+- [enum JoinKind](./joinkind.md)
   An operation type that joins two data frame types.
 ### Creating a Row Grouping by a Column
-- [func grouped<GroupingKey>(by: ColumnID<GroupingKey>) -> RowGrouping<GroupingKey>](dataframeprotocol/grouped(by:)-77mq2.md)
+- [func grouped<GroupingKey>(by: ColumnID<GroupingKey>) -> RowGrouping<GroupingKey>](./dataframeprotocol/grouped%28by%29-77mq2.md)
   Creates a grouping of rows that the method selects by choosing unique values in a column.
-- [func grouped(by: String, timeUnit: Calendar.Component) -> RowGrouping<Int>](dataframeprotocol/grouped(by:timeunit:)-7s782.md)
+- [func grouped(by: String, timeUnit: Calendar.Component) -> RowGrouping<Int>](./dataframeprotocol/grouped%28by,timeunit%29-7s782.md)
   Creates a grouping of rows that the method selects by choosing unique units of time in a date column you select by name.
-- [func grouped(by: ColumnID<Date>, timeUnit: Calendar.Component) -> RowGrouping<Int>](dataframeprotocol/grouped(by:timeunit:)-78cy.md)
+- [func grouped(by: ColumnID<Date>, timeUnit: Calendar.Component) -> RowGrouping<Int>](./dataframeprotocol/grouped%28by,timeunit%29-78cy.md)
   Creates a grouping of rows that the method selects by choosing unique units of time in a date column you select by column identifier.
-- [func grouped<InputKey, GroupingKey>(by: String, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](dataframeprotocol/grouped(by:transform:)-3cr4p.md)
+- [func grouped<InputKey, GroupingKey>(by: String, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](./dataframeprotocol/grouped%28by,transform%29-3cr4p.md)
   Creates a grouping of rows that the method selects by choosing unique values the transform closure creates with elements of a column you select by name.
-- [func grouped<InputKey, GroupingKey>(by: ColumnID<InputKey>, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](dataframeprotocol/grouped(by:transform:)-3aade.md)
+- [func grouped<InputKey, GroupingKey>(by: ColumnID<InputKey>, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](./dataframeprotocol/grouped%28by,transform%29-3aade.md)
   Creates a grouping of rows that the method selects by choosing unique values the transform closure creates with elements of a column you select by column identifier.
 ### Creating a Row Grouping by Multiple Columns
-- [func grouped(by: String...) -> some RowGroupingProtocol](dataframeprotocol/grouped(by:)-4wcw6.md)
+- [func grouped(by: String...) -> some RowGroupingProtocol](./dataframeprotocol/grouped%28by%29-4wcw6.md)
   Creates a grouping from multiple columns you select by name.
-- [func grouped<T>(by: ColumnID<T>...) -> some RowGroupingProtocol](dataframeprotocol/grouped(by:)-6m6to.md)
+- [func grouped<T>(by: ColumnID<T>...) -> some RowGroupingProtocol](./dataframeprotocol/grouped%28by%29-6m6to.md)
   Creates a grouping from multiple columns that you select by column identifier.
-- [func grouped<T0, T1>(by: ColumnID<T0>, ColumnID<T1>) -> some RowGroupingProtocol](dataframeprotocol/grouped(by:_:).md)
+- [func grouped<T0, T1>(by: ColumnID<T0>, ColumnID<T1>) -> some RowGroupingProtocol](./dataframeprotocol/grouped%28by,_%29.md)
   Creates a grouping from two columns of different types.
-- [func grouped<T0, T1, T2>(by: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>) -> some RowGroupingProtocol](dataframeprotocol/grouped(by:_:_:).md)
+- [func grouped<T0, T1, T2>(by: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>) -> some RowGroupingProtocol](./dataframeprotocol/grouped%28by,_,_%29.md)
   Creates a grouping from three columns of different types.
 ### Saving a Data Frame Type to a CSV Format
-- [func writeCSV(to: URL, options: CSVWritingOptions) throws](dataframeprotocol/writecsv(to:options:).md)
+- [func writeCSV(to: URL, options: CSVWritingOptions) throws](./dataframeprotocol/writecsv%28to,options%29.md)
   Creates a CSV file with the contents of the data frame type.
-- [func csvRepresentation(options: CSVWritingOptions) throws -> Data](dataframeprotocol/csvrepresentation(options:).md)
+- [func csvRepresentation(options: CSVWritingOptions) throws -> Data](./dataframeprotocol/csvrepresentation%28options%29.md)
   Generates a CSV data instance of the data frame type.
 ### Describing a Data Frame Type
-- [func description(options: FormattingOptions) -> String](dataframeprotocol/description(options:).md)
+- [func description(options: FormattingOptions) -> String](./dataframeprotocol/description%28options%29.md)
   Generates a text representation of the data frame type.
 ### Instance Methods
-- [func jsonRepresentation(options: JSONWritingOptions) throws -> Data](dataframeprotocol/jsonrepresentation(options:).md)
+- [func jsonRepresentation(options: JSONWritingOptions) throws -> Data](./dataframeprotocol/jsonrepresentation%28options%29.md)
   Generates a JSON data instance of the data frame.
-- [func writeJSON(to: URL, options: JSONWritingOptions) throws](dataframeprotocol/writejson(to:options:).md)
+- [func writeJSON(to: URL, options: JSONWritingOptions) throws](./dataframeprotocol/writejson%28to,options%29.md)
   Creates a JSON file with the contents of the data frame.
 
 ## Relationships
 
 ### Conforming Types
-- [DataFrame](dataframe.md)
-- [DataFrame.Slice](dataframe/slice.md)
+- [DataFrame](./dataframe.md)
+- [DataFrame.Slice](./dataframe/slice.md)
 
 ## See Also
 
-- [struct DataFrame](dataframe.md)
+### Data Tables
+- [struct DataFrame](./dataframe.md)
   A collection that arranges data in rows and columns.
 
 

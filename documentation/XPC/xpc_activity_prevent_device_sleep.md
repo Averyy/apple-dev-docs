@@ -1,7 +1,8 @@
 # XPC_ACTIVITY_PREVENT_DEVICE_SLEEP
 
 **Framework**: XPC  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean that indicates whether the activity prevents the system from sleeping while on battery power.
 
@@ -14,15 +15,20 @@ A Boolean that indicates whether the activity prevents the system from sleeping 
 let XPC_ACTIVITY_PREVENT_DEVICE_SLEEP: UnsafePointer<CChar>
 ```
 
+```c
+extern const char * const XPC_ACTIVITY_PREVENT_DEVICE_SLEEP;
+```
+
 #### Discussion
 
 When set to `true`, the activity scheduler takes the necessary power assertions to keep the device awake, excluding the screen. Only set this property for activities that perform critical system functions, and that system sleep can’t interrupt. Note that setting this property can affect battery life.
 
 ## See Also
 
-- [let XPC_ACTIVITY_ALLOW_BATTERY: UnsafePointer<CChar>](xpc_activity_allow_battery.md)
+### Power consumption
+- [let XPC_ACTIVITY_ALLOW_BATTERY: UnsafePointer<CChar>](./xpc_activity_allow_battery.md)
   A Boolean value that indicates whether to allow the activity to run while the computer is on battery power.
-- [let XPC_ACTIVITY_REQUIRE_SCREEN_SLEEP: UnsafePointer<CChar>](xpc_activity_require_screen_sleep.md)
+- [let XPC_ACTIVITY_REQUIRE_SCREEN_SLEEP: UnsafePointer<CChar>](./xpc_activity_require_screen_sleep.md)
   A Boolean value that indicates whether the activity performs only while the primary screen is in sleep mode.
 
 

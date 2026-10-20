@@ -1,7 +1,8 @@
 # downloadSize
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the download file containing the asset pack in bytes.
 
@@ -25,7 +26,8 @@ This is different than the installation size, which could be larger.
 
 ## See Also
 
-- [func download(for: BAContentRequest?) -> BADownload](assetpack/download(for:).md)
+### Downloading assets
+- [func download(for: BAContentRequest?) -> BADownload](./download%28for%29.md)
   Creates a download object for the asset pack that you schedule using a download manager.
 
 

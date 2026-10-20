@@ -1,11 +1,12 @@
 # CGGesturePhase.changed
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,13 +14,18 @@
 case changed
 ```
 
+```c
+kCGGesturePhaseChanged
+```
+
 ## See Also
 
-- [CGGesturePhase.began](cggesturephase/began.md)
-- [CGGesturePhase.cancelled](cggesturephase/cancelled.md)
-- [CGGesturePhase.ended](cggesturephase/ended.md)
-- [CGGesturePhase.mayBegin](cggesturephase/maybegin.md)
-- [CGGesturePhase.none](cggesturephase/none.md)
+### Constants
+- [CGGesturePhase.began](./began.md)
+- [CGGesturePhase.cancelled](./cancelled.md)
+- [CGGesturePhase.ended](./ended.md)
+- [CGGesturePhase.mayBegin](./maybegin.md)
+- [CGGesturePhase.none](./none.md)
 
 
 ---

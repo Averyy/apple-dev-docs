@@ -1,7 +1,8 @@
 # ListFormatStyle.ListType.and
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies an *and* list type.
 
@@ -28,7 +29,8 @@ The rawValue of `and` is 0.
 
 ## See Also
 
-- [ListFormatStyle.ListType.or](listformatstyle/listtype-swift.enum/or.md)
+### List types
+- [ListFormatStyle.ListType.or](./or.md)
   Specifies an *or* list type.
 
 

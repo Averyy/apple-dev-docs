@@ -1,7 +1,8 @@
 # init(mixGroups:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an `AudioMixGroupsComponent`.
 

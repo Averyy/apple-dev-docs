@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_CalculateMeanSquaredError
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.4+
@@ -17,12 +18,17 @@
 let kVTCompressionPropertyKey_CalculateMeanSquaredError: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_CalculateMeanSquaredError;
+```
+
 ## See Also
 
-- [let kVTSampleAttachmentKey_QualityMetrics: CFString](kvtsampleattachmentkey_qualitymetrics.md)
-- [let kVTSampleAttachmentQualityMetricsKey_ChromaBlueMeanSquaredError: CFString](kvtsampleattachmentqualitymetricskey_chromabluemeansquarederror.md)
-- [let kVTSampleAttachmentQualityMetricsKey_ChromaRedMeanSquaredError: CFString](kvtsampleattachmentqualitymetricskey_chromaredmeansquarederror.md)
-- [let kVTSampleAttachmentQualityMetricsKey_LumaMeanSquaredError: CFString](kvtsampleattachmentqualitymetricskey_lumameansquarederror.md)
+### Quality Metrics
+- [let kVTSampleAttachmentKey_QualityMetrics: CFString](./kvtsampleattachmentkey_qualitymetrics.md)
+- [let kVTSampleAttachmentQualityMetricsKey_ChromaBlueMeanSquaredError: CFString](./kvtsampleattachmentqualitymetricskey_chromabluemeansquarederror.md)
+- [let kVTSampleAttachmentQualityMetricsKey_ChromaRedMeanSquaredError: CFString](./kvtsampleattachmentqualitymetricskey_chromaredmeansquarederror.md)
+- [let kVTSampleAttachmentQualityMetricsKey_LumaMeanSquaredError: CFString](./kvtsampleattachmentqualitymetricskey_lumameansquarederror.md)
 
 
 ---

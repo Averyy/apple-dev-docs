@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:

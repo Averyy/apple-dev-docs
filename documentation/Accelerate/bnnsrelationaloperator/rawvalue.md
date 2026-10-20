@@ -1,16 +1,17 @@
 # rawValue
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ var rawValue: UInt32
 
 ## See Also
 
-- [init(UInt32)](bnnsrelationaloperator/init(_:).md)
-- [init(rawValue: UInt32)](bnnsrelationaloperator/init(rawvalue:).md)
+### Raw Values
+- [init(UInt32)](./init%28_%29.md)
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
 
 
 ---

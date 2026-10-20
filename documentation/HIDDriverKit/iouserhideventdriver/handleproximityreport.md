@@ -1,15 +1,16 @@
 # handleProximityReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 20.3+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void handleProximityReport(uint64_t timestamp, uint32_t reportID);
 ```
 

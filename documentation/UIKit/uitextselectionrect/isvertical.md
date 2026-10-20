@@ -1,7 +1,8 @@
 # isVertical
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the text is vertical.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the text is vertical.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ A Boolean value that indicates whether the text is vertical.
 var isVertical: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isVertical;
+```
+
 ## See Also
 
-- [var writingDirection: NSWritingDirection](uitextselectionrect/writingdirection.md)
+### Accessing Text-Related Attributes
+- [var writingDirection: NSWritingDirection](./writingdirection.md)
   The writing direction of text in the text selection rectangle’s text range.
 
 

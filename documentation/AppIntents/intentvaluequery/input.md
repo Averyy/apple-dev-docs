@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:

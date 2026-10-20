@@ -1,7 +1,8 @@
 # CNErrorDomain
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for the Contacts framework.
 
@@ -17,6 +18,10 @@ The error domain for the Contacts framework.
 
 ```swift
 let CNErrorDomain: String
+```
+
+```c
+extern NSString * const CNErrorDomain;
 ```
 
 

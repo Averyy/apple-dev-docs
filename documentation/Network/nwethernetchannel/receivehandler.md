@@ -1,7 +1,8 @@
 # receiveHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that delivers inbound Ethernet frames.
 
@@ -21,9 +22,10 @@ The receive handler only needs to be set once, and will be invoked for each rece
 
 ## See Also
 
-- [func send(content: Data, to: NWEthernetChannel.EthernetAddress, vlanTag: UInt16, completion: (NWError?) -> Void)](nwethernetchannel/send(content:to:vlantag:completion:).md)
+### Sending and Receiving Ethernet Frames
+- [func send(content: Data, to: NWEthernetChannel.EthernetAddress, vlanTag: UInt16, completion: (NWError?) -> Void)](./send%28content,to,vlantag,completion%29.md)
   Sends a single Ethernet frame over a channel to a specific Ethernet address.
-- [NWEthernetChannel.EthernetAddress](nwethernetchannel/ethernetaddress.md)
+- [NWEthernetChannel.EthernetAddress](./ethernetaddress.md)
   A 48-bit Ethernet address.
 
 

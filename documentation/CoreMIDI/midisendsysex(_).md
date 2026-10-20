@@ -1,7 +1,8 @@
 # MIDISendSysex(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asynchronously sends a single system-exclusive (SysEx) event.
 
@@ -16,6 +17,10 @@ Asynchronously sends a single system-exclusive (SysEx) event.
 
 ```swift
 func MIDISendSysex(_ request: UnsafeMutablePointer<MIDISysexSendRequest>) -> OSStatus
+```
+
+```c
+extern OSStatus MIDISendSysex(MIDISysexSendRequest *request);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # characterIndex(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns character index for a point inside the line fragment coordinate system.
 
@@ -14,6 +15,10 @@ Returns character index for a point inside the line fragment coordinate system.
 func characterIndex(for point: CGPoint) -> Int
 ```
 
+```objc
+- (NSInteger) characterIndexForPoint:(CGPoint) point;
+```
+
 #### Return Value
 
 An integer that represents the character index at `point`.
@@ -24,9 +29,10 @@ An integer that represents the character index at `point`.
 
 ## See Also
 
-- [func fractionOfDistanceThroughGlyph(for: CGPoint) -> CGFloat](nstextlinefragment/fractionofdistancethroughglyph(for:).md)
+### Finding specific text
+- [func fractionOfDistanceThroughGlyph(for: CGPoint) -> CGFloat](./fractionofdistancethroughglyph%28for%29.md)
   Returns character index for a point inside the line fragment coordinate system.
-- [func locationForCharacter(at: Int) -> CGPoint](nstextlinefragment/locationforcharacter(at:).md)
+- [func locationForCharacter(at: Int) -> CGPoint](./locationforcharacter%28at%29.md)
   Returns the location of the character at the specified index.
 
 

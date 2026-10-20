@@ -1,7 +1,8 @@
 # +=(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Calculates the element-wise sum of a point’s `x`, `y`, and `z` and a size’s `width`, `height`, and `depth` and stores the result in the left-hand-side variable.
 

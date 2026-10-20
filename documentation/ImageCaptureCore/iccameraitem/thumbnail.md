@@ -1,7 +1,8 @@
 # thumbnail
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s thumbnail.
 
@@ -18,21 +19,26 @@ The item’s thumbnail.
 var thumbnail: CGImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CGImageRef thumbnail;
+```
+
 #### Discussion
 
-The value of this property is `nil` until you call [`requestThumbnail()`](iccameraitem/requestthumbnail().md).
+The value of this property is `nil` until you call [`requestThumbnail()`](./requestthumbnail%28%29.md).
 
 ## See Also
 
-- [func requestThumbnail()](iccameraitem/requestthumbnail.md)
+### Requesting Thumbnails
+- [func requestThumbnail()](./requestthumbnail%28%29.md)
   Requests a thumbnail for the item.
-- [var thumbnailIfAvailable: CGImage?](iccameraitem/thumbnailifavailable.md)
+- [var thumbnailIfAvailable: CGImage?](./thumbnailifavailable.md)
   The item’s thumbnail if it is readily available.
-- [var largeThumbnailIfAvailable: CGImage?](iccameraitem/largethumbnailifavailable.md)
+- [var largeThumbnailIfAvailable: CGImage?](./largethumbnailifavailable.md)
   A large thumbnail for the item if one is readily available.
-- [func flushThumbnailCache()](iccameraitem/flushthumbnailcache.md)
+- [func flushThumbnailCache()](./flushthumbnailcache%28%29.md)
   Deletes the item’s cached thumbnail.
-- [struct ICCameraItemThumbnailOption](iccameraitemthumbnailoption.md)
+- [struct ICCameraItemThumbnailOption](../iccameraitemthumbnailoption.md)
   An option for the item’s thumbnail.
 
 

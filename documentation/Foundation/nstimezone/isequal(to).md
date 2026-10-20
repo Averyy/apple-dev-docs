@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the receiver has the same name and data as the specified time zone.
 
@@ -20,9 +21,13 @@ Indicates whether the receiver has the same name and data as the specified time 
 func isEqual(to aTimeZone: TimeZone) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualToTimeZone:(NSTimeZone *) aTimeZone;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `aTimeZone` and the receiver have the same name and data, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `aTimeZone` and the receiver have the same name and data, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 

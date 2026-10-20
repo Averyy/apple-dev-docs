@@ -1,7 +1,8 @@
 # HKPredicateKeyPathECGSymptomsStatus
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for the sample’s symptom status.
 
@@ -19,17 +20,23 @@ The key path for the sample’s symptom status.
 let HKPredicateKeyPathECGSymptomsStatus: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathECGSymptomsStatus;
+```
+
 #### Discussion
 
 Use this constant whenever you want to include the ECG’s symptoms status in a predicate format string. Add a `%K` placeholder to the format string, and then pass this constant as an argument.
 
 ## See Also
 
-- [HKElectrocardiogram.SymptomsStatus](hkelectrocardiogram/symptomsstatus-swift.enum.md)
+### Related Documentation
+- [HKElectrocardiogram.SymptomsStatus](./hkelectrocardiogram/symptomsstatus-swift.enum.md)
   Values indicating whether the user entered a symptom when they recorded the ECG.
-- [let HKPredicateKeyPathECGClassification: String](hkpredicatekeypathecgclassification.md)
+### Specifying Predicate Key Paths
+- [let HKPredicateKeyPathECGClassification: String](./hkpredicatekeypathecgclassification.md)
   The key path for the sample’s classification.
-- [let HKPredicateKeyPathAverageHeartRate: String](hkpredicatekeypathaverageheartrate.md)
+- [let HKPredicateKeyPathAverageHeartRate: String](./hkpredicatekeypathaverageheartrate.md)
   The key path for the sample’s average heart rate.
 
 

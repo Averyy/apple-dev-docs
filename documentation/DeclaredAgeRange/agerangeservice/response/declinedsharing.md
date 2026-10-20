@@ -1,7 +1,8 @@
 # AgeRangeService.Response.declinedSharing
 
 **Framework**: Declared Age Range  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the person declined to share their age range with your app.
 
@@ -19,7 +20,8 @@ case declinedSharing
 
 ## See Also
 
-- [case sharing(range: AgeRangeService.AgeRange)](agerangeservice/response/sharing(range:).md)
+### Getting the age range response
+- [case sharing(range: AgeRangeService.AgeRange)](./sharing%28range%29.md)
   Contains the person’s shared age range information.
 
 

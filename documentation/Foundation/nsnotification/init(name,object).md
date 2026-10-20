@@ -1,7 +1,8 @@
 # init(name:object:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new notification object with a specified name and object.
 
@@ -20,6 +21,10 @@ Returns a new notification object with a specified name and object.
 convenience init(name aName: NSNotification.Name, object anObject: Any?)
 ```
 
+```objc
++ (instancetype) notificationWithName:(NSNotificationName) aName object:(id) anObject;
+```
+
 ## Parameters
 
 - `aName`: The name for the new notification. May not be `nil`.
@@ -27,14 +32,16 @@ convenience init(name aName: NSNotification.Name, object anObject: Any?)
 
 ## See Also
 
-- [func post(name: NSNotification.Name, object: Any?)](notificationcenter/post(name:object:).md)
+### Related Documentation
+- [func post(name: NSNotification.Name, object: Any?)](../notificationcenter/post%28name,object%29.md)
   Creates a notification with a given name and sender and posts it to the notification center.
-- [Notification Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html#//apple_ref/doc/uid/10000043i)
-- [init?(coder: NSCoder)](nsnotification/init(coder:).md)
+- [Notification Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html#//apple_ref/doc/uid/10000043i)
+### Creating Notifications
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes a notification with the data from an unarchiver.
-- [init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](nsnotification/init(name:object:userinfo:).md)
+- [init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./init%28name,object,userinfo%29.md)
   Initializes a notification with a specified name, object, and user information.
-- [NSNotification.Name](nsnotification/name-swift.struct.md)
+- [NSNotification.Name](./name-swift.struct.md)
   A structure that defines the name of a notification.
 
 

@@ -1,7 +1,8 @@
 # VZMacOSInstaller
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to install macOS on the specified virtual machine.
 
@@ -14,13 +15,17 @@ An object you use to install macOS on the specified virtual machine.
 class VZMacOSInstaller
 ```
 
+```objc
+@interface VZMacOSInstaller : NSObject
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
 #### Overview
 
-Initialize a [`VZMacOSInstaller`](vzmacosinstaller.md) object with a [`VZVirtualMachine`](vzvirtualmachine.md) and a file URL that refers to a macOS restore image.
+Initialize a [`VZMacOSInstaller`](./vzmacosinstaller.md) object with a [`VZVirtualMachine`](./vzvirtualmachine.md) and a file URL that refers to a macOS restore image.
 
 The following code example shows how to use a `VZMacOSInstaller:`
 
@@ -89,42 +94,44 @@ installer.install(completionHandler: { (result: Result) in
 ## Topics
 
 ### Creating a macOS Installer
-- [init(virtualMachine: VZVirtualMachine, restoringFromImageAt: URL)](vzmacosinstaller/init(virtualmachine:restoringfromimageat:).md)
+- [init(virtualMachine: VZVirtualMachine, restoringFromImageAt: URL)](./vzmacosinstaller/init%28virtualmachine,restoringfromimageat%29.md)
   Creates a macOS installer object.
 ### Getting Information About an Installation
-- [var progress: Progress](vzmacosinstaller/progress.md)
+- [var progress: Progress](./vzmacosinstaller/progress.md)
   A progress object that you can use to observe or cancel an installation.
-- [var restoreImageURL: URL](vzmacosinstaller/restoreimageurl.md)
+- [var restoreImageURL: URL](./vzmacosinstaller/restoreimageurl.md)
   The restore image URL used to initialize this installer.
-- [var virtualMachine: VZVirtualMachine](vzmacosinstaller/virtualmachine.md)
+- [var virtualMachine: VZVirtualMachine](./vzmacosinstaller/virtualmachine.md)
   The virtual machine used to initialize this installer.
 ### Installing macOS
-- [func install(completionHandler: (Result<Void, any Error>) -> Void)](vzmacosinstaller/install(completionhandler:).md)
+- [func install(completionHandler: (Result<Void, any Error>) -> Void)](./vzmacosinstaller/install%28completionhandler%29.md)
   Start installing macOS.
-- [func install() async throws](vzmacosinstaller/install.md)
+- [func install() async throws](./vzmacosinstaller/install%28%29.md)
   Start installing macOS.
 ### Initializers
-- [init(virtualMachine: VZVirtualMachine, restoreImageURL: URL)](vzmacosinstaller/init(virtualmachine:restoreimageurl:).md)
+- [init(virtualMachine: VZVirtualMachine, restoreImageURL: URL)](./vzmacosinstaller/init%28virtualmachine,restoreimageurl%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtualMachine](vzvirtualmachine.md)
+### Related Documentation
+- [class VZVirtualMachine](./vzvirtualmachine.md)
   An object that manages the overall state and configuration of your VM.
-- [class VZMacOSRestoreImage](vzmacosrestoreimage.md)
+### Installers
+- [class VZMacOSRestoreImage](./vzmacosrestoreimage.md)
   An object that describes a version of macOS to install on to a virtual machine.
-- [class VZMacOSConfigurationRequirements](vzmacosconfigurationrequirements.md)
+- [class VZMacOSConfigurationRequirements](./vzmacosconfigurationrequirements.md)
   An object that describes the parameter constraints required by a specific configuration of macOS.
 
 

@@ -1,7 +1,8 @@
 # init(propertiesOfMetadataItem:valueLoadingHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metadata item whose value loads on an on-demand basis only.
 
@@ -22,13 +23,13 @@ init(propertiesOfMetadataItem metadataItem: AVMetadataItem, valueLoadingHandler 
 
 #### Return Value
 
-A newly created instance of [`AVMetadataItem`](avmetadataitem.md).
+A newly created instance of [`AVMetadataItem`](../avmetadataitem.md).
 
 #### Discussion
 
 Use this method to create metadata items for optional display purposes. For example, a metadata item that provides a large image, should only load the image when the system requests it.
 
-When you load the [`value`](avpartialasyncproperty/value.md) of a metadata item you created with this initializer, the closure you provide as the value loading handler executes on an arbitrary dispatch queue, off the main thread. The handler can perform I/O and other necessary operations to obtain the value. If loading of the value succeeds, provide the value by calling [`respond(value:)`](avmetadataitemvaluerequest/respond(value:).md). If loading of the value fails, provide an instance an error object that describes the failure by calling [`respond(error:)`](avmetadataitemvaluerequest/respond(error:).md).
+When you load the [`value`](../avpartialasyncproperty/value.md) of a metadata item you created with this initializer, the closure you provide as the value loading handler executes on an arbitrary dispatch queue, off the main thread. The handler can perform I/O and other necessary operations to obtain the value. If loading of the value succeeds, provide the value by calling [`respond(value:)`](../avmetadataitemvaluerequest/respond%28value%29.md). If loading of the value fails, provide an instance an error object that describes the failure by calling [`respond(error:)`](../avmetadataitemvaluerequest/respond%28error%29.md).
 
 ```swift
 // A template metadata item that provides supporting data.
@@ -46,12 +47,13 @@ let artworkItem = AVMetadataItem(propertiesOf: templateItem) { request in
 
 ## Parameters
 
-- `metadataItem`: The metadata item that provides the [`identifier`](avmetadataitem/identifier.md), [`extendedLanguageTag`](avmetadataitem/extendedlanguagetag.md), and other property values that you want the newly created metadata item to share. The system ignores the value of this template metadata item.
+- `metadataItem`: The metadata item that provides the [`identifier`](./identifier.md), [`extendedLanguageTag`](./extendedlanguagetag.md), and other property values that you want the newly created metadata item to share. The system ignores the value of this template metadata item.
 - `handler`: A callback the system invokes to load the value for the metadata item.
 
 ## See Also
 
-- [class AVMetadataItemValueRequest](avmetadataitemvaluerequest.md)
+### Creating a metadata item
+- [class AVMetadataItemValueRequest](../avmetadataitemvaluerequest.md)
   An object that responds to a request to load the value of a metadata item.
 
 

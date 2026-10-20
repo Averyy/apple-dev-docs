@@ -1,40 +1,42 @@
 # Network
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 Implement a driver that interacts with network interfaces such as Ethernet adaptors. 
 
 #### Overview
 
-For most types of network interfaces, the use of kernel extensions is deprecated. Instead, create a DriverKit extension using [`NetworkingDriverKit`](https://developer.apple.com/documentation/networkingdriverkit).
+For most types of network interfaces, the use of kernel extensions is deprecated. Instead, create a DriverKit extension using [NetworkingDriverKit](../../NetworkingDriverKit/NetworkingDriverKit.md).
 
 ## Topics
 
 ### Interfaces
-- [IONetworkInterface](ionetworkinterface.md)
+- [IONetworkInterface](../ionetworkinterface.md)
   Abstract class that manages the connection between an IONetworkController and the data link interface layer.
-- [IONetworkController](ionetworkcontroller.md)
+- [IONetworkController](../ionetworkcontroller.md)
   Implements the framework for a generic network controller.
 ### Network Data
-- [IONetworkData](ionetworkdata.md)
+- [IONetworkData](../ionetworkdata.md)
   An object that manages a fixed-size named buffer.
-- [IONetworkMedium](ionetworkmedium.md)
+- [IONetworkMedium](../ionetworkmedium.md)
   An object that encapsulates information about a network medium (i.e. 10Base-T, or 100Base-T Full Duplex).
-- [IOPacketQueue](iopacketqueue.md)
+- [IOPacketQueue](../iopacketqueue.md)
   Implements a bounded FIFO queue of mbuf packets.
-- [IOPacketBufferConstraints](iopacketbufferconstraints.md)
+- [IOPacketBufferConstraints](../iopacketbufferconstraints.md)
 
 ## See Also
 
-- [Audio](hardware_families/audio.md)
+### Interfaces
+- [Audio](./audio.md)
   Implement a driver that interacts with audio hardware. 
-- [Graphics and Displays](hardware_families/graphics_and_displays.md)
+- [Graphics and Displays](./graphics_and_displays.md)
   Implement a driver that interacts with graphics and video hardware. 
-- [HID](hardware_families/hid.md)
+- [HID](./hid.md)
   Implement a driver that interacts with human interface devices, such as mice and keyboards.
-- [SCSI](hardware_families/scsi.md)
+- [SCSI](./scsi.md)
   Implement a driver that supports Small Computer System Interface (SCSI) protocols.
-- [Mass Storage](hardware_families/mass_storage.md)
+- [Mass Storage](./mass_storage.md)
   Implement a driver that communicates with CD, DVD, or other mass storage devices.
 
 

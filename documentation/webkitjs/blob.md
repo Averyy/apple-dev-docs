@@ -1,7 +1,8 @@
 # Blob
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Represents a binary large object of raw data.
 
@@ -12,7 +13,7 @@ Represents a binary large object of raw data.
 
 ## Declaration
 
-```swift
+```
 interface Blob
 ```
 
@@ -25,13 +26,13 @@ You can obtain data from `Blob` with the `arrayBuffer` or `text` methods.
 ## Topics
 
 ### Instance Properties
-- [size](blob/1630448-size.md)
-- [type](blob/1630898-type.md)
+- [size](./blob/api-1630448-size.md)
+- [type](./blob/api-1630898-type.md)
 ### Instance Methods
-- [arrayBuffer](../cktooljs/blob/arraybuffer.md)
+- [arrayBuffer](../CKToolJS/blob/arraybuffer.md)
   Returns a promise that may resolve with an `ArrayBuffer`.
-- [slice](blob/1634508-slice.md)
-- [text](../cktooljs/blob/text.md)
+- [slice](./blob/api-1634508-slice.md)
+- [text](../CKToolJS/blob/text.md)
   Returns a promise that may resolve with a string.
 
 

@@ -1,7 +1,8 @@
 # addAccessoryController(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified controller of an accessory view to be presented in the page setup panel.
 
@@ -14,15 +15,20 @@ Adds the specified controller of an accessory view to be presented in the page s
 func addAccessoryController(_ accessoryController: NSViewController)
 ```
 
+```objc
+- (void) addAccessoryController:(NSViewController *) accessoryController;
+```
+
 ## Parameters
 
 - `accessoryController`: The controller to add.
 
 ## See Also
 
-- [func removeAccessoryController(NSViewController)](nspagelayout/removeaccessorycontroller(_:).md)
+### Customizing the page setup dialog
+- [func removeAccessoryController(NSViewController)](./removeaccessorycontroller%28_%29.md)
   Removes the specified controller of an accessory view.
-- [var accessoryControllers: [NSViewController]](nspagelayout/accessorycontrollers.md)
+- [var accessoryControllers: [NSViewController]](./accessorycontrollers.md)
   An array of accessory view controllers belonging to the page layout panel.
 
 

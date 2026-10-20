@@ -1,7 +1,8 @@
 # count(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of elements in the sequence that satisfy the given predicate.
 

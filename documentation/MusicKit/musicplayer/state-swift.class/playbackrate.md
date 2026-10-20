@@ -1,7 +1,8 @@
 # playbackRate
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current playback rate for the player.
 

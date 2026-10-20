@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusConnectedSpeedSuperPlusBy2
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The SuperSpeedPlus By 2 connected value.
 
@@ -10,7 +11,7 @@ The SuperSpeedPlus By 2 connected value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusConnectedSpeedSuperPlusBy2 = (kIOUSBHostConnectionSpeedSuperPlusBy2 << IOUSBHostFamilyBitRangePhase(8, 10))
 ```
 

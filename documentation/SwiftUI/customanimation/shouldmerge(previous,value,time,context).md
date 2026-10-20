@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines whether an instance of the animation can merge with other running animations.
@@ -34,14 +35,20 @@ If `shouldMerge(previous:value:time:context:)` returns `true`, the system merges
 
 If this method returns `false`, the system doesn’t merge the animation with the previous one. Instead, both animations run together and the system combines their results.
 
-If your custom animation needs to maintain state between calls to the `shouldMerge(previous:value:time:context:)` method, store the state data in `context`. This makes the data available to the method next time the system calls it. To learn more, see [`AnimationContext`](animationcontext.md).
+If your custom animation needs to maintain state between calls to the `shouldMerge(previous:value:time:context:)` method, store the state data in `context`. This makes the data available to the method next time the system calls it. To learn more, see [`AnimationContext`](../animationcontext.md).
 
 ## Parameters
 
 - `previous`: The previous running animation.
 - `value`: The vector to animate towards.
 - `time`: The amount of time since the start of the previous animation.
-- `context`: An instance of [`AnimationContext`](animationcontext.md) that provides access to state and the animation environment.
+- `context`: An instance of [`AnimationContext`](../animationcontext.md) that provides access to state and the animation environment.
+
+## Default Implementations
+
+### CustomAnimation Implementations
+- [func shouldMerge<V>(previous: Animation, value: V, time: TimeInterval, context: inout AnimationContext<V>) -> Bool](./shouldmerge%28previous,value,time,context%29-9171c.md)
+  Determines whether an instance of the animation can merge with other running animations.
 
 
 ---

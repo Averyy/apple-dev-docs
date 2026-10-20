@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio engine instance for rendering in real time.
 
@@ -20,13 +21,17 @@ Creates an audio engine instance for rendering in real time.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new `AVAudioEngine` instance.
 
 #### Discussion
 
-To operate in manual rendering mode, which removes real-time running constraints, see [`enableManualRenderingMode(_:format:maximumFrameCount:)`](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md).
+To operate in manual rendering mode, which removes real-time running constraints, see [`enableManualRenderingMode(_:format:maximumFrameCount:)`](./enablemanualrenderingmode%28_,format,maximumframecount%29.md).
 
 
 ---

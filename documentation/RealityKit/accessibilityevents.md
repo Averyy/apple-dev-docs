@@ -1,7 +1,8 @@
 # AccessibilityEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,20 +21,21 @@ enum AccessibilityEvents
 ## Topics
 
 ### Structures
-- [AccessibilityEvents.Activate](accessibilityevents/activate.md)
+- [AccessibilityEvents.Activate](./accessibilityevents/activate.md)
   An accessibility event for activating an accessibility element.
-- [AccessibilityEvents.CustomAction](accessibilityevents/customaction.md)
+- [AccessibilityEvents.CustomAction](./accessibilityevents/customaction.md)
   An accessibility event for a custom action defined in your app.
-- [AccessibilityEvents.Decrement](accessibilityevents/decrement.md)
+- [AccessibilityEvents.Decrement](./accessibilityevents/decrement.md)
   An accessibility event for decrementing an accessibility element.
-- [AccessibilityEvents.Increment](accessibilityevents/increment.md)
+- [AccessibilityEvents.Increment](./accessibilityevents/increment.md)
   An accessibility event for incrementing an accessibility element.
-- [AccessibilityEvents.RotorNavigation](accessibilityevents/rotornavigation.md)
+- [AccessibilityEvents.RotorNavigation](./accessibilityevents/rotornavigation.md)
   An accessibility event associated with a rotor navigation.
 
 ## See Also
 
-- [enum ManipulationEvents](manipulationevents.md)
+### Input and interaction events
+- [enum ManipulationEvents](./manipulationevents.md)
   Events that occur while a person manipulates an entity.
 
 

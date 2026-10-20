@@ -1,7 +1,8 @@
 # addDateParseStrategy(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a date parsing strategy.
 

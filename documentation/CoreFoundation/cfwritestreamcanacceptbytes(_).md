@@ -1,23 +1,28 @@
 # CFWriteStreamCanAcceptBytes(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether a writable stream can accept new data without blocking.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFWriteStreamCanAcceptBytes(_ stream: CFWriteStream!) -> Bool
+```
+
+```c
+extern Boolean CFWriteStreamCanAcceptBytes(CFWriteStreamRef stream);
 ```
 
 #### Return Value
@@ -30,13 +35,14 @@ func CFWriteStreamCanAcceptBytes(_ stream: CFWriteStream!) -> Bool
 
 ## See Also
 
-- [func CFWriteStreamCopyProperty(CFWriteStream!, CFStreamPropertyKey!) -> CFTypeRef!](cfwritestreamcopyproperty(_:_:).md)
+### Examining Stream Properties
+- [func CFWriteStreamCopyProperty(CFWriteStream!, CFStreamPropertyKey!) -> CFTypeRef!](./cfwritestreamcopyproperty%28_,_%29.md)
   Returns the value of a property for a stream.
-- [func CFWriteStreamCopyError(CFWriteStream!) -> CFError!](cfwritestreamcopyerror(_:).md)
+- [func CFWriteStreamCopyError(CFWriteStream!) -> CFError!](./cfwritestreamcopyerror%28_%29.md)
   Returns the error associated with a stream.
-- [func CFWriteStreamGetError(CFWriteStream!) -> CFStreamError](cfwritestreamgeterror(_:).md)
+- [func CFWriteStreamGetError(CFWriteStream!) -> CFStreamError](./cfwritestreamgeterror%28_%29.md)
   Returns the error status of a stream.
-- [func CFWriteStreamGetStatus(CFWriteStream!) -> CFStreamStatus](cfwritestreamgetstatus(_:).md)
+- [func CFWriteStreamGetStatus(CFWriteStream!) -> CFStreamStatus](./cfwritestreamgetstatus%28_%29.md)
   Returns the current state of a stream.
 
 

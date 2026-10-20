@@ -1,7 +1,8 @@
 # init(trainingData:targetColumn:featureColumns:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a boosted tree regressor.
 
@@ -19,18 +20,25 @@ Creates a boosted tree regressor.
 init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil, parameters: MLBoostedTreeRegressor.ModelParameters = ModelParameters(validation: .split(strategy: .automatic))) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLBoostedTreeRegressor.ModelParameters = ModelParameters(validationData: nil)) throws
+```
+
 ## Parameters
 
 - `trainingData`: The training data
 - `targetColumn`: Name of the column containing the target values
 - `featureColumns`: Names of the columns containing feature values. If `nil` all columns, other than the target column, will be used as feature values.
-- `parameters`: Model training parameters. See [`MLBoostedTreeRegressor.ModelParameters`](mlboostedtreeregressor/modelparameters-swift.struct.md) for the defaults.
+- `parameters`: Model training parameters. See [`MLBoostedTreeRegressor.ModelParameters`](./modelparameters-swift.struct.md) for the defaults.
 
 ## See Also
 
-- [var targetColumn: String](mlboostedtreeregressor/targetcolumn.md)
+### Training a boosted tree regressor synchronously
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which feature the regressor predicts.
-- [var featureColumns: [String]](mlboostedtreeregressor/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the regressor.
 
 

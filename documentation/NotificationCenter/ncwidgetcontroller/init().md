@@ -1,10 +1,13 @@
 # init()
 
 **Framework**: Notification Center  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use WidgetKit instead. Today View extensions have been deprecated.
 
 ## Declaration
 

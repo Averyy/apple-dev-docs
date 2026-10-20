@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a new anchor at the end of the collection.
 
@@ -11,7 +12,7 @@ Adds a new anchor at the end of the collection.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,9 +27,10 @@ Adds a new anchor at the end of the collection.
 
 ## See Also
 
-- [func append(contentsOf: [any HasAnchoring])](scene/anchorcollection/append(contentsof:)-3bjib.md)
+### Adding anchors
+- [func append(contentsOf: [any HasAnchoring])](./append%28contentsof%29-3bjib.md)
   Adds anchors from an array to the end of this collection.
-- [func append<S>(contentsOf: S)](scene/anchorcollection/append(contentsof:)-4sf55.md)
+- [func append<S>(contentsOf: S)](./append%28contentsof%29-4sf55.md)
   Adds anchors from a sequence to the end of this collection.
 
 

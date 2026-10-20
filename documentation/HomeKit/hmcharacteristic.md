@@ -1,7 +1,8 @@
 # HMCharacteristic
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A specific characteristic of a service, like the brightness of a dimmable light or its color temperature.
 
@@ -19,87 +20,92 @@ A specific characteristic of a service, like the brightness of a dimmable light 
 class HMCharacteristic
 ```
 
+```objc
+@interface HMCharacteristic : NSObject
+```
+
 #### Overview
 
-An [`HMCharacteristic`](hmcharacteristic.md) instance represents an aspect of a service that provides data, or that your app can control.
+An [`HMCharacteristic`](./hmcharacteristic.md) instance represents an aspect of a service that provides data, or that your app can control.
 
-You don’t create characteristic instances. Instead, an accessory manufacturer incorporates them into a device, which publishes them to you through the [`characteristics`](hmservice/characteristics.md) array of an [`HMService`](hmservice.md) instance.
+You don’t create characteristic instances. Instead, an accessory manufacturer incorporates them into a device, which publishes them to you through the [`characteristics`](./hmservice/characteristics.md) array of an [`HMService`](./hmservice.md) instance.
 
-Characteristics have a [`properties`](hmcharacteristic/properties.md) array that indicates attributes like readability, writability, and user-visibility. They also have a [`characteristicType`](hmcharacteristic/characteristictype.md) property that tells your app what the characteristic controls or describes. Device manufacturers can use one of the standard types, given in [`Characteristic types`](characteristic-types.md), or they can create custom types.
+Characteristics have a [`properties`](./hmcharacteristic/properties.md) array that indicates attributes like readability, writability, and user-visibility. They also have a [`characteristicType`](./hmcharacteristic/characteristictype.md) property that tells your app what the characteristic controls or describes. Device manufacturers can use one of the standard types, given in [Characteristic types](./characteristic-types.md), or they can create custom types.
 
-Each characteristic has a [`value`](hmcharacteristic/value.md) that you can read or write. Some characteristics use plain numbers, Booleans, or strings. Others have application specific meanings declared in enumerations associated with the given characteristic type. The characteristic’s [`metadata`](hmcharacteristic/metadata.md) can help your app interpret the value.
+Each characteristic has a [`value`](./hmcharacteristic/value.md) that you can read or write. Some characteristics use plain numbers, Booleans, or strings. Others have application specific meanings declared in enumerations associated with the given characteristic type. The characteristic’s [`metadata`](./hmcharacteristic/metadata.md) can help your app interpret the value.
 
 ## Topics
 
 ### Identifying a characteristic
-- [var uniqueIdentifier: UUID](hmcharacteristic/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./hmcharacteristic/uniqueidentifier.md)
   A unique identifier for the characteristic.
-- [var localizedDescription: String](hmcharacteristic/localizeddescription.md)
+- [var localizedDescription: String](./hmcharacteristic/localizeddescription.md)
   The localized description of the characteristic.
 ### Reading characteristic properties
-- [var properties: [String]](hmcharacteristic/properties.md)
+- [var properties: [String]](./hmcharacteristic/properties.md)
   An array of properties that describe the characteristic.
-- [Characteristic Properties](characteristic-properties.md)
+- [Characteristic Properties](./characteristic-properties.md)
   The properties that characteristics can have.
 ### Determining what a characteristic controls
-- [var characteristicType: String](hmcharacteristic/characteristictype.md)
+- [var characteristicType: String](./hmcharacteristic/characteristictype.md)
   The type of the characteristic.
-- [Characteristic types](characteristic-types.md)
+- [Characteristic types](./characteristic-types.md)
   The characteristic types supported by HomeKit-based accessories.
 ### Controlling a characteristic
-- [var value: Any?](hmcharacteristic/value.md)
+- [var value: Any?](./hmcharacteristic/value.md)
   The current value of the characteristic.
-- [func readValue(completionHandler: ((any Error)?) -> Void)](hmcharacteristic/readvalue(completionhandler:).md)
+- [func readValue(completionHandler: ((any Error)?) -> Void)](./hmcharacteristic/readvalue%28completionhandler%29.md)
   Reads the value for the characteristic.
-- [func writeValue(Any?, completionHandler: ((any Error)?) -> Void)](hmcharacteristic/writevalue(_:completionhandler:).md)
+- [func writeValue(Any?, completionHandler: ((any Error)?) -> Void)](./hmcharacteristic/writevalue%28_,completionhandler%29.md)
   Modifies the value of the characteristic.
-- [func updateAuthorizationData(Data?, completionHandler: ((any Error)?) -> Void)](hmcharacteristic/updateauthorizationdata(_:completionhandler:).md)
+- [func updateAuthorizationData(Data?, completionHandler: ((any Error)?) -> Void)](./hmcharacteristic/updateauthorizationdata%28_,completionhandler%29.md)
   Sets or clears authorization data used when writing to the characteristic.
 ### Managing characteristic presentation
-- [var metadata: HMCharacteristicMetadata?](hmcharacteristic/metadata.md)
+- [var metadata: HMCharacteristicMetadata?](./hmcharacteristic/metadata.md)
   Metadata about the units and other properties of the characteristic.
-- [class HMCharacteristicMetadata](hmcharacteristicmetadata.md)
+- [class HMCharacteristicMetadata](./hmcharacteristicmetadata.md)
   Metadata that describes a characteristic’s value and that may be useful for presentation purposes.
 ### Receiving change notifications
-- [func enableNotification(Bool, completionHandler: ((any Error)?) -> Void)](hmcharacteristic/enablenotification(_:completionhandler:).md)
+- [func enableNotification(Bool, completionHandler: ((any Error)?) -> Void)](./hmcharacteristic/enablenotification%28_,completionhandler%29.md)
   Enables or disables notifications for changes in the value of the characteristic.
-- [var isNotificationEnabled: Bool](hmcharacteristic/isnotificationenabled.md)
+- [var isNotificationEnabled: Bool](./hmcharacteristic/isnotificationenabled.md)
   A Boolean indicating whether the characteristic has been set to send notifications.
 ### Getting the characterized service
-- [var service: HMService?](hmcharacteristic/service.md)
+- [var service: HMService?](./hmcharacteristic/service.md)
   The service that contains this characteristic.
 ### Initializers
-- [init()](hmcharacteristic/init.md)
+- [init()](./hmcharacteristic/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMAccessorySetupManager](hmaccessorysetupmanager.md)
+### Accessories
+- [class HMAccessorySetupManager](./hmaccessorysetupmanager.md)
   An object that setups up new accessories.
-- [class HMAccessorySetupResult](hmaccessorysetupresult.md)
+- [class HMAccessorySetupResult](./hmaccessorysetupresult.md)
   A result object describing information about a successful accessory setup request.
-- [class HMAccessorySetupRequest](hmaccessorysetuprequest.md)
+- [class HMAccessorySetupRequest](./hmaccessorysetuprequest.md)
   An object that describes how to add and setup up new accessories.
-- [Interacting with a home automation network](interacting-with-a-home-automation-network.md)
+- [Interacting with a home automation network](./interacting-with-a-home-automation-network.md)
   Find all the automation accessories in the primary home and control their state.
-- [class HMAccessory](hmaccessory.md)
+- [class HMAccessory](./hmaccessory.md)
   A home automation accessory, like a garage door opener or a thermostat.
-- [class HMService](hmservice.md)
+- [class HMService](./hmservice.md)
   A controllable feature of an accessory, like a light attached to a garage door opener.
-- [class HMMediaSourceDisplayOrderProfile](hmmediasourcedisplayorderprofile.md)
+- [class HMMediaSourceDisplayOrderProfile](./hmmediasourcedisplayorderprofile.md)
   An interface from which to read and, if allowed by the accessory, update the ordering of input sources.
 
 

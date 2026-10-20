@@ -1,7 +1,8 @@
 # requestTypeCreator
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests the item’s file type and creator signature.
 

@@ -1,7 +1,8 @@
 # imageDigestType
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 var imageDigestType: MTROTAImageDigestType { get set }
+```
+
+```objc
+@property (nonatomic, assign) MTROTAImageDigestType imageDigestType;
 ```
 
 

@@ -1,7 +1,8 @@
 # Screensaver
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the screen saver.
 
@@ -10,7 +11,7 @@ The payload that configures the screen saver.
 
 ## Declaration
 
-```swift
+```
 object Screensaver
 ```
 
@@ -18,7 +19,7 @@ object Screensaver
 
 Specify `com.apple.screensaver` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.screensaver` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -78,29 +79,36 @@ Specify `com.apple.screensaver` as the payload type.
 
 ## Properties
 
-- `askForPassword` (boolean): If `true`, the device prompts the user for a password when the screen saver is unlocked or stopped. When you use this prompt, you must also provide `askForPasswordDelay`. Available: macOS 10.13+
-- `askForPasswordDelay` (integer): The number of seconds to delay before the device requires a password to unlock or stop the screen saver (the grace period). A value of `2147483647` (hexadecimal equivalent of `0x7FFFFFFF`) disables this requirement, and a value of `0` immediately requires the password. To use this option, you must set `askForPassword` to `true`. Available: macOS 10.13+
+- `askForPassword` (boolean): If `true`, the device prompts the user for a password when the screen saver is unlocked or stopped. When you use this prompt, you must also provide `askForPasswordDelay`.
+
+  Available: macOS 10.13+
+
+  **Default**: `false`
+- `askForPasswordDelay` (integer): The number of seconds to delay before the device requires a password to unlock or stop the screen saver (the grace period). A value of `2147483647` (hexadecimal equivalent of `0x7FFFFFFF`) disables this requirement, and a value of `0` immediately requires the password. To use this option, you must set `askForPassword` to `true`.
+
+  Available: macOS 10.13+
 - `idleTime` (integer): The number of seconds of inactivity before the screen saver activates (0 = Never activate).
 - `loginWindowModulePath` (string): The full path to the screen-saver module to use.
 - `moduleName` (string) *(required)*: The name of the screen saver module.
 
 ## See Also
 
-- [object Declarations](declarations.md)
+### System configuration
+- [object Declarations](./declarations.md)
   The payload that applies a set of declarations to the device through the Settings app.
-- [object EnergySaver](energysaver.md)
+- [object EnergySaver](./energysaver.md)
   The payload that configures Energy Saver settings.
-- [object FileProvider](fileprovider.md)
+- [object FileProvider](./fileprovider.md)
   The payload that configures file provider settings.
-- [object Font](font.md)
+- [object Font](./font.md)
   The payload that configures fonts.
-- [object LockScreenMessage](lockscreenmessage.md)
+- [object LockScreenMessage](./lockscreenmessage.md)
   The payload that configures a Lock Screen message.
-- [object SystemExtensions](systemextensions.md)
+- [object SystemExtensions](./systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
+- [object SystemLogging](./systemlogging.md)
   The payload that configures system logging.
-- [object TimeServer](timeserver.md)
+- [object TimeServer](./timeserver.md)
   The payload that configures the time server.
 
 

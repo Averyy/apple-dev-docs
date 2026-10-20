@@ -1,7 +1,8 @@
 # preferredMaxLayoutWidth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred maximum width, in points, for a multiline label.
 
@@ -9,13 +10,17 @@ The preferred maximum width, in points, for a multiline label.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var preferredMaxLayoutWidth: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat preferredMaxLayoutWidth;
 ```
 
 #### Discussion

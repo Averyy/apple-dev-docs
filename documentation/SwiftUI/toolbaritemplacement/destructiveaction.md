@@ -1,7 +1,8 @@
 # destructiveAction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for destructive actions in a modal interface.
 
@@ -30,15 +31,16 @@ In iOS, tvOS, and watchOS, the system places `destructiveAction` items in the tr
 
 ## See Also
 
-- [static let primaryAction: ToolbarItemPlacement](toolbaritemplacement/primaryaction.md)
+### Getting placement for specific actions
+- [static let primaryAction: ToolbarItemPlacement](./primaryaction.md)
   A placement for the primary action.
-- [static let secondaryAction: ToolbarItemPlacement](toolbaritemplacement/secondaryaction.md)
+- [static let secondaryAction: ToolbarItemPlacement](./secondaryaction.md)
   A placement for secondary actions.
-- [static let confirmationAction: ToolbarItemPlacement](toolbaritemplacement/confirmationaction.md)
+- [static let confirmationAction: ToolbarItemPlacement](./confirmationaction.md)
   A placement for confirmation actions in a modal interface.
-- [static let cancellationAction: ToolbarItemPlacement](toolbaritemplacement/cancellationaction.md)
+- [static let cancellationAction: ToolbarItemPlacement](./cancellationaction.md)
   A placement for cancellation actions in a modal interface.
-- [static let navigation: ToolbarItemPlacement](toolbaritemplacement/navigation.md)
+- [static let navigation: ToolbarItemPlacement](./navigation.md)
   A placement for navigation actions.
 
 

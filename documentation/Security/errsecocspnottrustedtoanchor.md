@@ -1,7 +1,8 @@
 # errSecOCSPNotTrustedToAnchor
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) response is not trusted to a root or anchor certificate.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) response is not trusted to a root 
 
 ```swift
 var errSecOCSPNotTrustedToAnchor: OSStatus { get }
+```
+
+```c
+errSecOCSPNotTrustedToAnchor
 ```
 
 

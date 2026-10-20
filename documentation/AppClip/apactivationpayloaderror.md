@@ -1,7 +1,8 @@
 # APActivationPayloadError
 
 **Framework**: App Clips  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that an App Clip activation payload returns.
 
@@ -19,30 +20,31 @@ struct APActivationPayloadError
 ## Topics
 
 ### Getting information about the error
-- [static var errorDomain: String](apactivationpayloaderror/errordomain.md)
+- [static var errorDomain: String](./apactivationpayloaderror/errordomain.md)
 ### Interpreting errors
-- [static var doesNotMatch: APActivationPayloadError.Code](apactivationpayloaderror/doesnotmatch.md)
+- [static var doesNotMatch: APActivationPayloadError.Code](./apactivationpayloaderror/doesnotmatch.md)
   The provided URL doesn’t match the invocation URL you registered for the App Clip.
-- [static var disallowed: APActivationPayloadError.Code](apactivationpayloaderror/disallowed.md)
+- [static var disallowed: APActivationPayloadError.Code](./apactivationpayloaderror/disallowed.md)
   The user denied location access, or the source of the App Clip invocation wasn’t an NFC tag or visual code.
-- [APActivationPayloadError.Code](apactivationpayloaderror/code.md)
+- [APActivationPayloadError.Code](./apactivationpayloaderror/code.md)
   Error codes that an App Clip activation payload returns.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let APActivationPayloadErrorDomain: String](apactivationpayloaderrordomain.md)
+### Understanding errors
+- [let APActivationPayloadErrorDomain: String](./apactivationpayloaderrordomain.md)
   A string that identifies the activation payload’s error domain.
-- [APActivationPayloadError.Code](apactivationpayloaderror/code.md)
+- [APActivationPayloadError.Code](./apactivationpayloaderror/code.md)
   Error codes that an App Clip activation payload returns.
 
 

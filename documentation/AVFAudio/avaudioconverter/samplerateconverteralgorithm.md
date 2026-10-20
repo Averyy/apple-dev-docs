@@ -1,7 +1,8 @@
 # sampleRateConverterAlgorithm
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The priming method the sample rate converter or decoder uses.
 
@@ -20,23 +21,28 @@ The priming method the sample rate converter or decoder uses.
 var sampleRateConverterAlgorithm: String? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSString * sampleRateConverterAlgorithm;
+```
+
 ## Topics
 
 ### Sample rate algorithms
-- [let AVSampleRateConverterAlgorithm_Normal: String](avsamplerateconverteralgorithm_normal.md)
+- [let AVSampleRateConverterAlgorithm_Normal: String](../avsamplerateconverteralgorithm_normal.md)
   The usual encoder bit rate strategy.
-- [let AVSampleRateConverterAlgorithm_MinimumPhase: String](avsamplerateconverteralgorithm_minimumphase.md)
+- [let AVSampleRateConverterAlgorithm_MinimumPhase: String](../avsamplerateconverteralgorithm_minimumphase.md)
   The minimum phase encoder bit rate strategy.
-- [let AVSampleRateConverterAlgorithm_Mastering: String](avsamplerateconverteralgorithm_mastering.md)
+- [let AVSampleRateConverterAlgorithm_Mastering: String](../avsamplerateconverteralgorithm_mastering.md)
   The mastering encoder bit rate strategy.
 
 ## See Also
 
-- [var sampleRateConverterQuality: Int](avaudioconverter/samplerateconverterquality.md)
+### Getting sample rate properties
+- [var sampleRateConverterQuality: Int](./samplerateconverterquality.md)
   A sample rate converter algorithm key value.
-- [var applicableEncodeSampleRates: [NSNumber]?](avaudioconverter/applicableencodesamplerates.md)
+- [var applicableEncodeSampleRates: [NSNumber]?](./applicableencodesamplerates.md)
   An array of output sample rates that the converter applies according to the current formats and settings, when encoding.
-- [var availableEncodeSampleRates: [NSNumber]?](avaudioconverter/availableencodesamplerates.md)
+- [var availableEncodeSampleRates: [NSNumber]?](./availableencodesamplerates.md)
   An array of all output sample rates the codec provides when encoding.
 
 

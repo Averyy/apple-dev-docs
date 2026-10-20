@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new object capture session.
 
@@ -18,7 +19,7 @@ init()
 
 #### Discussion
 
-[`isSupported`](objectcapturesession/issupported.md) needs to be true on the device in order to create a session.
+[`isSupported`](./issupported.md) needs to be true on the device in order to create a session.
 
 
 ---

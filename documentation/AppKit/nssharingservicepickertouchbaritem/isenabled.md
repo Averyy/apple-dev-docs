@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the sharing service picker item is enabled.
 
@@ -14,11 +15,15 @@ A Boolean value that specifies whether the sharing service picker item is enable
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the sharing button is enabled.
+If [`true`](../../Swift/true.md), the sharing button is enabled.
 
-If the sharing popover is currently visible when this property is changed to [`false`](https://developer.apple.com/documentation/swift/false), the popover is dismissed.
+If the sharing popover is currently visible when this property is changed to [`false`](../../Swift/false.md), the popover is dismissed.
 
 
 ---

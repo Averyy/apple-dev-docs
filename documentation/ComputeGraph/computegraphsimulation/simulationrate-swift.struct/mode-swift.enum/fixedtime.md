@@ -1,7 +1,8 @@
 # ComputeGraphSimulation.SimulationRate.Mode.fixedTime
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Simulate using time delta.
 
@@ -12,7 +13,7 @@ Simulate using time delta.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

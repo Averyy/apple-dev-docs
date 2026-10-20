@@ -1,7 +1,8 @@
 # cloudSharingControllerDidSaveShare(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the CloudKit sharing controller saved the share record.
 
@@ -17,15 +18,20 @@ Tells the delegate that the CloudKit sharing controller saved the share record.
 optional func cloudSharingControllerDidSaveShare(_ csc: UICloudSharingController)
 ```
 
+```objc
+- (void) cloudSharingControllerDidSaveShare:(UICloudSharingController *) csc;
+```
+
 #### Discussion
 
-Implement this method to receive a notification from the [`UICloudSharingController`](uicloudsharingcontroller.md) instance after it saves changes to the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record.
+Implement this method to receive a notification from the [`UICloudSharingController`](../uicloudsharingcontroller.md) instance after it saves changes to the [`CKShare`](../../CloudKit/ckshare.md) record.
 
 ## See Also
 
-- [func cloudSharingController(UICloudSharingController, failedToSaveShareWithError: any Error)](uicloudsharingcontrollerdelegate/cloudsharingcontroller(_:failedtosavesharewitherror:).md)
+### Processing shared items
+- [func cloudSharingController(UICloudSharingController, failedToSaveShareWithError: any Error)](./cloudsharingcontroller%28_,failedtosavesharewitherror%29.md)
   Tells the delegate that the CloudKit sharing controller failed to save the share record.
-- [func cloudSharingControllerDidStopSharing(UICloudSharingController)](uicloudsharingcontrollerdelegate/cloudsharingcontrollerdidstopsharing(_:).md)
+- [func cloudSharingControllerDidStopSharing(UICloudSharingController)](./cloudsharingcontrollerdidstopsharing%28_%29.md)
   Tells the delegate that the user has stopped sharing the record.
 
 

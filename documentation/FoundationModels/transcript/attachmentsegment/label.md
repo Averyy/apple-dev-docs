@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional label that identifies the attachment.
 
@@ -21,7 +22,8 @@ var label: String?
 
 ## See Also
 
-- [var content: Transcript.Attachment](transcript/attachmentsegment/content.md)
+### Inspecting an attachment segment
+- [var content: Transcript.Attachment](./content.md)
   The attached file or image.
 
 

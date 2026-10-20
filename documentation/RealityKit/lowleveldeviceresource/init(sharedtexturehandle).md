@@ -1,9 +1,10 @@
 # init(sharedTextureHandle:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a new [`LowLevelDeviceResource`](lowleveldeviceresource.md) from the specified Metal shared texture handle. Throws if an MTLTexture cannot be created from the specified handle.
+Creates a new [`LowLevelDeviceResource`](../lowleveldeviceresource.md) from the specified Metal shared texture handle. Throws if an MTLTexture cannot be created from the specified handle.
 
 **Availability**:
 - iOS 27.0+
@@ -21,7 +22,7 @@ init(sharedTextureHandle: MTLSharedTextureHandle) throws
 
 #### Discussion
 
-> **Note**: If a MTLTexture couldn’t be created from the specified handle.
+> **Throws**: If a MTLTexture couldn’t be created from the specified handle.
 
 ## Parameters
 
@@ -29,8 +30,9 @@ init(sharedTextureHandle: MTLSharedTextureHandle) throws
 
 ## See Also
 
-- [init(textureDescriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plane: Int) throws](lowleveldeviceresource/init(texturedescriptor:iosurface:plane:).md)
-  Creates a new [`LowLevelDeviceResource`](lowleveldeviceresource.md) from the specified `IOSurface`.
+### Creating a device resource
+- [init(textureDescriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plane: Int) throws](./init%28texturedescriptor,iosurface,plane%29.md)
+  Creates a new [`LowLevelDeviceResource`](../lowleveldeviceresource.md) from the specified `IOSurface`.
 
 
 ---

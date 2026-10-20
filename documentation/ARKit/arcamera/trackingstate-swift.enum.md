@@ -1,7 +1,8 @@
 # ARCamera.TrackingState
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for position tracking quality, with possible causes when tracking quality is limited.
 
@@ -19,25 +20,26 @@ enum TrackingState
 ## Topics
 
 ### Determining the camera tracking status
-- [ARCamera.TrackingState.notAvailable](arcamera/trackingstate-swift.enum/notavailable.md)
+- [ARCamera.TrackingState.notAvailable](./trackingstate-swift.enum/notavailable.md)
   Camera position tracking is not available.
-- [case limited(ARCamera.TrackingState.Reason)](arcamera/trackingstate-swift.enum/limited(_:).md)
+- [case limited(ARCamera.TrackingState.Reason)](./trackingstate-swift.enum/limited%28_%29.md)
   Tracking is available, but the quality of results is questionable.
-- [ARCamera.TrackingState.Reason](arcamera/trackingstate-swift.enum/reason.md)
+- [ARCamera.TrackingState.Reason](./trackingstate-swift.enum/reason.md)
   Causes of limited position-tracking quality.
-- [ARCamera.TrackingState.normal](arcamera/trackingstate-swift.enum/normal.md)
+- [ARCamera.TrackingState.normal](./trackingstate-swift.enum/normal.md)
   Camera position tracking is providing optimal results.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var trackingState: ARCamera.TrackingState](arcamera/trackingstate-6i3pt.md)
+### Handling Tracking Status
+- [var trackingState: ARCamera.TrackingState](./trackingstate-6i3pt.md)
   The general quality of position tracking available when the camera captured a frame.
 
 

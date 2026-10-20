@@ -1,7 +1,8 @@
 # monospaced(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a font adding or removing fixed-width design from the same family as the base font.
 
@@ -28,7 +29,7 @@ A font with the fixed-width design added or removed, from the same family as the
 
 If there’s no suitable font face in the same family, SwiftUI returns a default font.
 
-The following example adds the `monospaced()` modifier to the default system font, then applies this font to a [`Text`](text.md) view:
+The following example adds the `monospaced()` modifier to the default system font, then applies this font to a [`Text`](../text.md) view:
 
 ```swift
 struct ContentView: View {
@@ -45,11 +46,11 @@ struct ContentView: View {
 }
 ```
 
-![A macOS window showing the text Hello, world in a 24-point](/images/com.apple.SwiftUI/Environment-Font-monospaced-1@2x.png)
+![A macOS window showing the text Hello, world in a 24-point](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Environment-Font-monospaced-1@2x.png)
 
-SwiftUI may provide different fixed-width replacements for standard user interface fonts (such as [`title`](font/title.md), or a system font created with [`system(_:design:)`](font/system(_:design:).md)) than for those same fonts when created by name with [`custom(_:size:)`](font/custom(_:size:).md).
+SwiftUI may provide different fixed-width replacements for standard user interface fonts (such as [`title`](./title.md), or a system font created with [`system(_:design:)`](./system%28_,design%29.md)) than for those same fonts when created by name with [`custom(_:size:)`](./custom%28_,size%29.md).
 
-The [`font(_:)`](view/font(_:).md) modifier applies the font to all text within the view. To mix fixed-width text with other styles in the same `Text` view, use the [`init(_:)`](text/init(_:)-1a4oh.md) initializer to use an appropriately-styled [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring) for the text view’s content. You can use the [`init(markdown:options:baseURL:)`](https://developer.apple.com/documentation/foundation/attributedstring/init(markdown:options:baseurl:)-52n3u) initializer to provide a Markdown-formatted string containing the backtick-syntax (`…`) to apply code voice to specific ranges of the attributed string.
+The [`font(_:)`](../view/font%28_%29.md) modifier applies the font to all text within the view. To mix fixed-width text with other styles in the same `Text` view, use the [`init(_:)`](../text/init%28_%29-1a4oh.md) initializer to use an appropriately-styled [`AttributedString`](../../Foundation/attributedstring.md) for the text view’s content. You can use the [`init(markdown:options:baseURL:)`](../../Foundation/attributedstring/init%28markdown,options,baseurl%29-52n3u.md) initializer to provide a Markdown-formatted string containing the backtick-syntax (`…`) to apply code voice to specific ranges of the attributed string.
 
 
 ---

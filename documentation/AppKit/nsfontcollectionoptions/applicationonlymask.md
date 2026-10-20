@@ -1,17 +1,22 @@
 # applicationOnlyMask
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Makes the collection available only to the application.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static var applicationOnlyMask: NSFontCollectionOptions { get }
+```
+
+```c
+NSFontCollectionApplicationOnlyMask
 ```
 
 

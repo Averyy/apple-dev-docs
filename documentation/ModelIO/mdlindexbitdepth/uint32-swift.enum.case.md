@@ -1,7 +1,8 @@
 # MDLIndexBitDepth.uInt32
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each index in the submesh’s index buffer is a 32-bit integer.
 
@@ -19,17 +20,22 @@ Each index in the submesh’s index buffer is a 32-bit integer.
 case uInt32
 ```
 
+```c
+MDLIndexBitDepthUInt32
+```
+
 #### Discussion
 
 An index buffer with this data type can contain a maximum of 4,294,967,296 indices.
 
 ## See Also
 
-- [MDLIndexBitDepth.invalid](mdlindexbitdepth/invalid.md)
+### Constants
+- [MDLIndexBitDepth.invalid](./invalid.md)
   The submesh has not been initialized or its data type is unknown.
-- [MDLIndexBitDepth.uInt8](mdlindexbitdepth/uint8-swift.enum.case.md)
+- [MDLIndexBitDepth.uInt8](./uint8-swift.enum.case.md)
   Each index in the submesh’s index buffer is an 8-bit integer.
-- [MDLIndexBitDepth.uInt16](mdlindexbitdepth/uint16-swift.enum.case.md)
+- [MDLIndexBitDepth.uInt16](./uint16-swift.enum.case.md)
   Each index in the submesh’s index buffer is a 16-bit integer.
 
 

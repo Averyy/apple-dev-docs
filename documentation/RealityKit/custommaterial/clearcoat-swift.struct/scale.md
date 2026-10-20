@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of the clearcoat.
 
@@ -20,11 +21,12 @@ var scale: Float
 
 #### Discussion
 
-Use the scale value either to hold a uniform clearcoat value that applies to the entire entity, or use it as a multiplier to scale the clearcoat intensity sampled from the [`texture`](custommaterial/clearcoat-swift.struct/texture.md) property.
+Use the scale value either to hold a uniform clearcoat value that applies to the entire entity, or use it as a multiplier to scale the clearcoat intensity sampled from the [`texture`](./texture.md) property.
 
 ## See Also
 
-- [var texture: CustomMaterial.Texture?](custommaterial/clearcoat-swift.struct/texture.md)
+### Accessing clearcoat values
+- [var texture: CustomMaterial.Texture?](./texture.md)
   The clearcoat intensity specified using a UV-mapped image.
 
 

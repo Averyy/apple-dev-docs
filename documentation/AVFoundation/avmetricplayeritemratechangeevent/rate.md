@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,10 +19,15 @@
 var rate: Double { get }
 ```
 
+```objc
+@property (readonly) double rate;
+```
+
 ## See Also
 
-- [var previousRate: Double](avmetricplayeritemratechangeevent/previousrate.md)
-- [var variant: AVAssetVariant?](avmetricplayeritemratechangeevent/variant.md)
+### Inspecting the event
+- [var previousRate: Double](./previousrate.md)
+- [var variant: AVAssetVariant?](./variant.md)
 
 
 ---

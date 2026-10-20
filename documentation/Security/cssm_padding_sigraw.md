@@ -1,7 +1,8 @@
 # CSSM_PADDING_SIGRAW
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var CSSM_PADDING_SIGRAW: UInt32 { get }
+```
+
+```c
+CSSM_PADDING_SIGRAW
 ```
 
 

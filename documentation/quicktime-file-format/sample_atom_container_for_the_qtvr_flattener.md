@@ -1,6 +1,7 @@
 # Sample atom container for the QTVR flattener
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Specify an import preview file for the flattener with atoms.
 
@@ -44,7 +45,8 @@ MovieExportSetSettingsFromAtomContainer (qtvrExport, compressorData);
 
 ## See Also
 
-- [The QTVR flattener](the_qtvr_flattener.md)
+### Optimizations
+- [The QTVR flattener](./the_qtvr_flattener.md)
   Optimize a movie for delivery over the web.
 
 

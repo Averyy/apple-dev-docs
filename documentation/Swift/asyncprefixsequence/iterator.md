@@ -1,7 +1,8 @@
 # AsyncPrefixSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces elements of the prefix sequence.
 
@@ -20,24 +21,26 @@ The iterator that produces elements of the prefix sequence.
 struct Iterator
 ```
 
+Available when `Base` conforms to `AsyncSequence`.
+
 ## Topics
 
 ### Instance Methods
-- [func next() async rethrows -> Base.Element?](asyncprefixsequence/iterator/next.md)
+- [func next() async rethrows -> Base.Element?](./iterator/next%28%29.md)
   Produces the next element in the prefix sequence.
-- [func next(isolation: isolated (any Actor)?) async throws(AsyncPrefixSequence<Base>.Failure) -> Base.Element?](asyncprefixsequence/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws(AsyncPrefixSequence<Base>.Failure) -> Base.Element?](./iterator/next%28isolation%29.md)
   Produces the next element in the prefix sequence.
 ### Type Aliases
-- [AsyncPrefixSequence.Iterator.Element](asyncprefixsequence/iterator/element.md)
+- [AsyncPrefixSequence.Iterator.Element](./iterator/element.md)
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncprefixsequence/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # effectiveUserID
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The caller’s effective user ID.
 
@@ -14,13 +15,18 @@ The caller’s effective user ID.
 var effectiveUserID: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger effectiveUserID;
+```
+
 ## See Also
 
-- [var realUserID: Int](fscontext/realuserid.md)
+### Accessing context properties
+- [var realUserID: Int](./realuserid.md)
   The caller’s real user ID.
-- [var realGroupID: Int](fscontext/realgroupid.md)
+- [var realGroupID: Int](./realgroupid.md)
   The caller’s real group ID.
-- [var effectiveGroupID: Int](fscontext/effectivegroupid.md)
+- [var effectiveGroupID: Int](./effectivegroupid.md)
   The caller’s effective group ID.
 
 

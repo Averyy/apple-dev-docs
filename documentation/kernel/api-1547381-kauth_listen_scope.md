@@ -1,14 +1,15 @@
 # kauth_listen_scope
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 kauth_listener_t kauth_listen_scope(const char *_identifier, kauth_scope_callback_t _callback, void *_idata);
 ```
 

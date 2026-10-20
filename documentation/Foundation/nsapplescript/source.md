@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The script source for the receiver.
 
@@ -15,13 +16,18 @@ The script source for the receiver.
 var source: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * source;
+```
+
 #### Discussion
 
-It is possible for an `NSAppleScript` that has been instantiated with [`init(contentsOf:error:)`](nsapplescript/init(contentsof:error:).md) to be a script for which the source code is not available but is nonetheless executable.
+It is possible for an `NSAppleScript` that has been instantiated with [`init(contentsOf:error:)`](./init%28contentsof,error%29.md) to be a script for which the source code is not available but is nonetheless executable.
 
 ## See Also
 
-- [var isCompiled: Bool](nsapplescript/iscompiled.md)
+### Getting Information About a Script
+- [var isCompiled: Bool](./iscompiled.md)
   A Boolean value that indicates whether the receiver’s script has been compiled.
 
 

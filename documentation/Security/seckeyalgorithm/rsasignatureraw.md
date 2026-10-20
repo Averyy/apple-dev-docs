@@ -1,7 +1,8 @@
 # rsaSignatureRaw
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let rsaSignatureRaw: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmRSASignatureRaw;
 ```
 
 

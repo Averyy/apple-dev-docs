@@ -1,7 +1,8 @@
 # VNHumanBodyPose3DObservation.HeightEstimation.measured
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A technique that uses LiDAR depth data to measure body height, in meters.
 
@@ -11,11 +12,16 @@ A technique that uses LiDAR depth data to measure body height, in meters.
 case measured
 ```
 
+```c
+VNHumanBodyPose3DObservationHeightEstimationMeasured
+```
+
 ## See Also
 
-- [VNHumanBodyPose3DObservation.HeightEstimation.reference](vnhumanbodypose3dobservation/heightestimation-swift.enum/reference.md)
+### Techniques
+- [VNHumanBodyPose3DObservation.HeightEstimation.reference](./reference.md)
   A technique that uses a reference height.
-- [VNHumanBodyPose3DObservation.HeightEstimation.reference](vnhumanbodypose3dobservation/heightestimation-swift.enum/reference.md)
+- [VNHumanBodyPose3DObservation.HeightEstimation.reference](./reference.md)
   A technique that uses a reference height.
 
 

@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of the attribute in the attributed string.
 

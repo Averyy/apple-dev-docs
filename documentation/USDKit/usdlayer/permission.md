@@ -1,7 +1,8 @@
 # USDLayer.Permission
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Access permission for a spec.
 
@@ -22,29 +23,30 @@ enum Permission
 ## Topics
 
 ### Enumeration Cases
-- [USDLayer.Permission.private](usdlayer/permission/private.md)
+- [USDLayer.Permission.private](./permission/private.md)
   Accessible only within the defining layer.
-- [USDLayer.Permission.public](usdlayer/permission/public.md)
+- [USDLayer.Permission.public](./permission/public.md)
   Accessible from any layer.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 ## See Also
 
-- [static func find(identifier: String) -> USDLayer?](usdlayer/find(identifier:).md)
+### Opening and finding layers
+- [static func find(identifier: String) -> USDLayer?](./find%28identifier%29.md)
   Returns an already-loaded layer with this identifier, or `nil` if none is loaded. Does no I/O.
-- [static func open(String, options: USDLayer.OpenOptions) throws -> USDLayer](usdlayer/open(_:options:).md)
+- [static func open(String, options: USDLayer.OpenOptions) throws -> USDLayer](./open%28_,options%29.md)
   Returns an already-loaded layer at the identifier, or opens it from the resolved asset path.
-- [USDLayer.OpenOptions](usdlayer/openoptions.md)
+- [USDLayer.OpenOptions](./openoptions.md)
   Options for opening a layer.
 
 

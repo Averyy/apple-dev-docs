@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothHCIErroneousDataReportingDisabled](1640104-anonymous/kbluetoothhcierroneousdatareportingdisabled.md)
-- [kBluetoothHCIErroneousDataReportingEnabled](1640104-anonymous/kbluetoothhcierroneousdatareportingenabled.md)
-- [kBluetoothHCIErroneousDataReportingReservedEnd](1640104-anonymous/kbluetoothhcierroneousdatareportingreservedend.md)
-- [kBluetoothHCIErroneousDataReportingReservedStart](1640104-anonymous/kbluetoothhcierroneousdatareportingreservedstart.md)
+- [kBluetoothHCIErroneousDataReportingDisabled](./api-1640104-anonymous/kbluetoothhcierroneousdatareportingdisabled.md)
+- [kBluetoothHCIErroneousDataReportingEnabled](./api-1640104-anonymous/kbluetoothhcierroneousdatareportingenabled.md)
+- [kBluetoothHCIErroneousDataReportingReservedEnd](./api-1640104-anonymous/kbluetoothhcierroneousdatareportingreservedend.md)
+- [kBluetoothHCIErroneousDataReportingReservedStart](./api-1640104-anonymous/kbluetoothhcierroneousdatareportingreservedstart.md)
 
 
 ---

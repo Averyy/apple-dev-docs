@@ -1,18 +1,19 @@
 # handle
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file descriptor of the file or socket.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

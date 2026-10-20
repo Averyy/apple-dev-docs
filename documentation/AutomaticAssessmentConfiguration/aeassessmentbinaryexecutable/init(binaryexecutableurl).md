@@ -1,7 +1,8 @@
 # init(binaryExecutableURL:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 27.0+
@@ -11,6 +12,10 @@
 
 ```swift
 init(binaryExecutableURL: URL)
+```
+
+```objc
+- (instancetype) initWithBinaryExecutableURL:(NSURL *) binaryExecutableURL;
 ```
 
 

@@ -1,6 +1,8 @@
 # Creating and updating a complication’s timeline
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: Sample Code  
+**Download**: [CreatingAndUpdatingAComplicationsTimeline.zip](https://docs-assets.developer.apple.com/published/15770ba891b4/CreatingAndUpdatingAComplicationsTimeline.zip)
 
 Create complications that batch-load a timeline of future entries and run periodic background sessions to update the timeline.
 
@@ -30,7 +32,7 @@ To add the complication to an active watch face, start by building and running t
 5. Tap the watch screen to exit the edit screen.
 6. Tap the Coffee Tracker complication to go back to the app.
 
-For more information on setting up watch faces, see [`Change the watch face on your Apple Watch`](https://developer.apple.comhttps://support.apple.com/en-us/HT205536).
+For more information on setting up watch faces, see [Change the watch face on your Apple Watch](https://support.apple.com/en-us/HT205536).
 
 After configuring and running the Coffee Tracker app, you can test the background updates. Make sure the Coffee Tracker complication appears on the active watch face. Then build and run the app in the simulator, and follow these steps:
 
@@ -42,11 +44,11 @@ After configuring and running the Coffee Tracker app, you can test the backgroun
 
 Coffee Tracker updates the complication within 1 minute; however, the system may delay updates based on it’s current state.
 
-##### Set Up Support for Complications
+##### Set up support for complications
 
 The app declares the `ComplicationController` class as the complication’s data source. Xcode saves this setting in the WatchKit Extension’s `Info.plist` file.
 
-Next, the Coffee Tracker app implements the [`CLKComplicationDataSource`](clkcomplicationdatasource.md) protocol’s methods to configure the app’s timeline. The app declares the supported complications by implementing the [`getComplicationDescriptors(handler:)`](clkcomplicationdatasource/getcomplicationdescriptors(handler:).md) method.
+Next, the Coffee Tracker app implements the [`CLKComplicationDataSource`](./clkcomplicationdatasource.md) protocol’s methods to configure the app’s timeline. The app declares the supported complications by implementing the [`getComplicationDescriptors(handler:)`](./clkcomplicationdatasource/getcomplicationdescriptors%28handler%29.md) method.
 
 ```swift
 func complicationDescriptors() async -> [CLKComplicationDescriptor] {
@@ -58,13 +60,13 @@ func complicationDescriptors() async -> [CLKComplicationDescriptor] {
 }
 ```
 
-ClockKit identifies complications based on their [`identifier`](clkcomplication/identifier.md) and their [`family`](clkcomplication/family.md). Apps can declare support for multiple complications by giving each complication a unique identifier. Coffee Tracker declares support for a single complication, returning a [`CLKComplicationDescriptor`](clkcomplicationdescriptor.md) object that declares support for the `Coffee_Tracker_Caffeine_Dose` identifier for all families.
+ClockKit identifies complications based on their [`identifier`](./clkcomplication/identifier.md) and their [`family`](./clkcomplication/family.md). Apps can declare support for multiple complications by giving each complication a unique identifier. Coffee Tracker declares support for a single complication, returning a [`CLKComplicationDescriptor`](./clkcomplicationdescriptor.md) object that declares support for the `Coffee_Tracker_Caffeine_Dose` identifier for all families.
 
-Because every copy of Coffee Tracker supports the same set of `CLKComplicationDescriptor` objects, the app doesn’t need to implement the data source’s [`handleSharedComplicationDescriptors(_:)`](clkcomplicationdatasource/handlesharedcomplicationdescriptors(_:).md) method. For more information on defining the supported families, see [`Declaring complications for your app`](declaring-complications-for-your-app.md).
+Because every copy of Coffee Tracker supports the same set of `CLKComplicationDescriptor` objects, the app doesn’t need to implement the data source’s [`handleSharedComplicationDescriptors(_:)`](./clkcomplicationdatasource/handlesharedcomplicationdescriptors%28_%29.md) method. For more information on defining the supported families, see [Declaring complications for your app](./declaring-complications-for-your-app.md).
 
 ##### Load Future Entries
 
-Because the app can easily calculate caffeine levels in the future, Coffee Tracker declares that it can batch-load future timeline entries by implementing the [`getTimelineEndDate(for:withHandler:)`](clkcomplicationdatasource/gettimelineenddate(for:withhandler:).md) method and setting the end date for the timeline to 24 hours in the future.
+Because the app can easily calculate caffeine levels in the future, Coffee Tracker declares that it can batch-load future timeline entries by implementing the [`getTimelineEndDate(for:withHandler:)`](./clkcomplicationdatasource/gettimelineenddate%28for,withhandler%29.md) method and setting the end date for the timeline to 24 hours in the future.
 
 ClockKit can request batches of timeline entries up to that deadline. After that point, the caffeine level drops to `0.0`. Because the data stops changing at that point, ClockKit won’t need any additional timeline entries until the user adds another drink.
 
@@ -77,7 +79,7 @@ func timelineEndDate(for complication: CLKComplication) async -> Date? {
 }
 ```
 
-Finally, the app sets the privacy behavior by implementing the [`getPrivacyBehavior(for:withHandler:)`](clkcomplicationdatasource/getprivacybehavior(for:withhandler:).md) method, hiding the complication data on the user’s caffeine intake when the watch is locked.
+Finally, the app sets the privacy behavior by implementing the [`getPrivacyBehavior(for:withHandler:)`](./clkcomplicationdatasource/getprivacybehavior%28for,withhandler%29.md) method, hiding the complication data on the user’s caffeine intake when the watch is locked.
 
 ```swift
 // Define whether the complication is visible when the watch is unlocked.
@@ -88,7 +90,7 @@ func privacyBehavior(for complication: CLKComplication) async -> CLKComplication
 }
 ```
 
-##### Display Current Data
+##### Display current data
 
 Coffee Tracker uses three techniques to keep the complications up to date.
 
@@ -96,11 +98,11 @@ Coffee Tracker uses three techniques to keep the complications up to date.
 - While the app is running, Coffee Tracker updates its complications whenever the user adds a drink. This updates not just the current complication, but also reloads the entire complication timeline.
 - Finally, the app uses a background observer query to monitor HealthKit for any updates to its caffeine samples. The app then updates its data based on any changes.
 
-For more information, see [`Keeping your complications up to date`](keeping-your-complications-up-to-date.md).
+For more information, see [Keeping your complications up to date](./keeping-your-complications-up-to-date.md).
 
-##### Create Timeline Entries
+##### Create timeline entries
 
-If there’s an active complication on the watch face, ClockKit calls the data source’s methods to keep the complication’s timeline filled. ClockKit calls the [`getCurrentTimelineEntry(for:withHandler:)`](clkcomplicationdatasource/getcurrenttimelineentry(for:withhandler:).md) method to get the current complication.
+If there’s an active complication on the watch face, ClockKit calls the data source’s methods to keep the complication’s timeline filled. ClockKit calls the [`getCurrentTimelineEntry(for:withHandler:)`](./clkcomplicationdatasource/getcurrenttimelineentry%28for,withhandler%29.md) method to get the current complication.
 
 ```swift
 // Return the current timeline entry.
@@ -110,7 +112,7 @@ func currentTimelineEntry(for complication: CLKComplication) async -> CLKComplic
 }
 ```
 
-Then it calls the [`getTimelineEntries(for:after:limit:withHandler:)`](clkcomplicationdatasource/gettimelineentries(for:after:limit:withhandler:).md) method to batch load future timeline entries.
+Then it calls the [`getTimelineEntries(for:after:limit:withHandler:)`](./clkcomplicationdatasource/gettimelineentries%28for,after,limit,withhandler%29.md) method to batch load future timeline entries.
 
 ```swift
 // Return future timeline entries.
@@ -140,11 +142,11 @@ func timelineEntries(for complication: CLKComplication,
 }
 ```
 
-ClockKit automatically calls these methods when it needs to refill the timeline. In Coffee Tracker, both of these methods call the `createTimelineEntry(forComplication:date:)` method to create the event. `createTimelineEntry(forComplication:date:)` then calls `createTemplate(forComplication:date:)`  to build the template, and wraps the template in a [`CLKComplicationTimelineEntry`](clkcomplicationtimelineentry.md) object.
+ClockKit automatically calls these methods when it needs to refill the timeline. In Coffee Tracker, both of these methods call the `createTimelineEntry(forComplication:date:)` method to create the event. `createTimelineEntry(forComplication:date:)` then calls `createTemplate(forComplication:date:)`  to build the template, and wraps the template in a [`CLKComplicationTimelineEntry`](./clkcomplicationtimelineentry.md) object.
 
-For more information, see [`Loading future timeline events`](loading-future-timeline-events.md).
+For more information, see [Loading future timeline events](./loading-future-timeline-events.md).
 
-##### Create and Fill a Complication Template
+##### Create and fill a complication template
 
 ClockKit uses a template-driven user interface. The system divides the complications into a number of families based on their size and capabilities, and each family then provides a number of templates that define its layout. When ClockKit asks the data source for a timeline entry, the app needs to instantiate a template for the specified identifier and family, and then fill the template with the required data, before wrapping it in a `CLKComplicationTimelineEntry` object and returning it.
 
@@ -217,7 +219,7 @@ private func createGraphicCornerTemplate(forDate date: Date) -> CLKComplicationT
 
 This example creates a curved gauge with text outside it. The gauge is a graphical element, like a thermometer or progress bar. To fill the template, the app supplies a gauge provider, which specifies the gauge’s start value, end value, current value, and the color gradient it uses. The app also provides two text providers for the labels at the start and end of the gauge. Finally, it adds another text provider for the main text. Depending on the watch face, the gauge and text may use the specified colors to provide additional information.
 
-##### Reload the Timeline
+##### Reload the timeline
 
 The `CoffeeData` model object declares `currentDrinks`  as a `@Published` property. The system alerts subscribers to any change to the `currentDrinks` array. For example, SwiftUI uses the publisher to trigger updates to the main view.
 
@@ -278,9 +280,9 @@ extension CLKComplicationServer {
 }
 ```
 
-This method starts by setting up an observer for the [`CLKComplicationServerActiveComplicationsDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/clkcomplicationserveractivecomplicationsdidchange) notification. Then it checks the value of the [`activeComplications`](clkcomplicationserver/activecomplications.md) property. If the property has a non-`nil` value, it cancels the observer and returns the value. Otherwise, it waits for the observer, and then returns the value.
+This method starts by setting up an observer for the [CLKComplicationServerActiveComplicationsDidChange](../Foundation/nsnotification/name-swift.struct/clkcomplicationserveractivecomplicationsdidchange.md) notification. Then it checks the value of the [`activeComplications`](./clkcomplicationserver/activecomplications.md) property. If the property has a non-`nil` value, it cancels the observer and returns the value. Otherwise, it waits for the observer, and then returns the value.
 
-##### Schedule Background Observer Queries
+##### Schedule background observer queries
 
 Before Coffee Tracker can communicate with HealthKit, it needs to authorize HealthKit and set up the background observer query.
 
@@ -318,7 +320,7 @@ public func setUpHealthKit() {
 }
 ```
 
-Coffee Tracker requests both read and write access to [`dietaryCaffeine`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/dietarycaffeine) samples. Then it enables the background delivery for observer queries. Finally, it creates and executes an observer query for the `.dietaryCaffeine` data type.
+Coffee Tracker requests both read and write access to [`.dietaryCaffeine`](../HealthKit/hkquantitytypeidentifier/dietarycaffeine.md) samples. Then it enables the background delivery for observer queries. Finally, it creates and executes an observer query for the `.dietaryCaffeine` data type.
 
 Coffee tracker creates the background observer query immediately after it launches. Setting up an observer query quickly after launch enables the observer to respond promptly when the system launches it in the background because of a change in HealthKit.
 
@@ -360,13 +362,14 @@ This method checks the update for errors. If there aren’t any errors, it async
 
 To preserve battery life and maintain performance, WatchKit carefully budgets each app’s time for background tasks. In general, if an app has a complication on the active watch face, it can safely use four updates per hour, shared between both the app’s background tasks and it’s background observer queries. However, HealthKit further limits the update on caffeine samples to a maximum of one per hour. And the system may further limit background activity as needed.
 
-This means, the first update from HealthKit should trigger within a minute. However, the system may delay additional updates for up to an hour or more. For more information, see [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:)).
+This means, the first update from HealthKit should trigger within a minute. However, the system may delay additional updates for up to an hour or more. For more information, see [`enableBackgroundDelivery(for:frequency:withCompletion:)`](../HealthKit/hkhealthstore/enablebackgrounddelivery%28for,frequency,withcompletion%29.md).
 
 The app also loads any new data from HealthKit whenever it enters the foreground.
 
 ## See Also
 
-- [Providing Multiple Complications](providing-multiple-complications.md)
+### Sample Code
+- [Providing Multiple Complications](./providing-multiple-complications.md)
   Present multiple complications for a single complication family using descriptors.
 
 

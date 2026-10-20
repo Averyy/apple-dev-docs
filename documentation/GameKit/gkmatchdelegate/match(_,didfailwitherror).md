@@ -1,7 +1,8 @@
 # match(_:didFailWithError:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the local player’s connection errors to a match.
 
@@ -17,6 +18,10 @@ Handles the local player’s connection errors to a match.
 
 ```swift
 optional func match(_ match: GKMatch, didFailWithError error: (any Error)?)
+```
+
+```objc
+- (void) match:(GKMatch *) match didFailWithError:(NSError *) error;
 ```
 
 #### Discussion

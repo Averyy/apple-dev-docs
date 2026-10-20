@@ -1,16 +1,17 @@
 # CGAffineTransform
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,57 +19,62 @@
 struct CGAffineTransform
 ```
 
+```c
+struct CGAffineTransform;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cgaffinetransform/init.md)
-- [init(CGAffineTransformComponents)](cgaffinetransform/init(_:).md)
-- [init(CGFloat, CGFloat, CGFloat, CGFloat, CGFloat, CGFloat)](cgaffinetransform/init(_:_:_:_:_:_:).md)
-- [init(a: Double, b: Double, c: Double, d: Double, tx: Double, ty: Double)](cgaffinetransform/init(a:b:c:d:tx:ty:).md)
-- [init(rotationAngle: CGFloat)](cgaffinetransform/init(rotationangle:).md)
-- [init(scaleX: CGFloat, y: CGFloat)](cgaffinetransform/init(scalex:y:).md)
-- [init(translationX: CGFloat, y: CGFloat)](cgaffinetransform/init(translationx:y:).md)
+- [init()](./cgaffinetransform/init%28%29.md)
+- [init(CGAffineTransformComponents)](./cgaffinetransform/init%28_%29.md)
+- [init(CGFloat, CGFloat, CGFloat, CGFloat, CGFloat, CGFloat)](./cgaffinetransform/init%28_,_,_,_,_,_%29.md)
+- [init(a: Double, b: Double, c: Double, d: Double, tx: Double, ty: Double)](./cgaffinetransform/init%28a,b,c,d,tx,ty%29.md)
+- [init(rotationAngle: CGFloat)](./cgaffinetransform/init%28rotationangle%29.md)
+- [init(scaleX: CGFloat, y: CGFloat)](./cgaffinetransform/init%28scalex,y%29.md)
+- [init(translationX: CGFloat, y: CGFloat)](./cgaffinetransform/init%28translationx,y%29.md)
 ### Instance Properties
-- [var a: Double](cgaffinetransform/a.md)
-- [var b: Double](cgaffinetransform/b.md)
-- [var c: Double](cgaffinetransform/c.md)
-- [var d: Double](cgaffinetransform/d.md)
-- [var isIdentity: Bool](cgaffinetransform/isidentity.md)
-- [var tx: Double](cgaffinetransform/tx.md)
-- [var ty: Double](cgaffinetransform/ty.md)
+- [var a: Double](./cgaffinetransform/a.md)
+- [var b: Double](./cgaffinetransform/b.md)
+- [var c: Double](./cgaffinetransform/c.md)
+- [var d: Double](./cgaffinetransform/d.md)
+- [var isIdentity: Bool](./cgaffinetransform/isidentity.md)
+- [var tx: Double](./cgaffinetransform/tx.md)
+- [var ty: Double](./cgaffinetransform/ty.md)
 ### Instance Methods
-- [func concatenating(CGAffineTransform) -> CGAffineTransform](cgaffinetransform/concatenating(_:).md)
-- [func decomposed() -> CGAffineTransformComponents](cgaffinetransform/decomposed.md)
-- [func inverted() -> CGAffineTransform](cgaffinetransform/inverted.md)
-- [func rotated(by: CGFloat) -> CGAffineTransform](cgaffinetransform/rotated(by:).md)
-- [func scaledBy(x: CGFloat, y: CGFloat) -> CGAffineTransform](cgaffinetransform/scaledby(x:y:).md)
-- [func translatedBy(x: CGFloat, y: CGFloat) -> CGAffineTransform](cgaffinetransform/translatedby(x:y:).md)
+- [func concatenating(CGAffineTransform) -> CGAffineTransform](./cgaffinetransform/concatenating%28_%29.md)
+- [func decomposed() -> CGAffineTransformComponents](./cgaffinetransform/decomposed%28%29.md)
+- [func inverted() -> CGAffineTransform](./cgaffinetransform/inverted%28%29.md)
+- [func rotated(by: CGFloat) -> CGAffineTransform](./cgaffinetransform/rotated%28by%29.md)
+- [func scaledBy(x: CGFloat, y: CGFloat) -> CGAffineTransform](./cgaffinetransform/scaledby%28x,y%29.md)
+- [func translatedBy(x: CGFloat, y: CGFloat) -> CGAffineTransform](./cgaffinetransform/translatedby%28x,y%29.md)
 ### Type Properties
-- [static var identity: CGAffineTransform](cgaffinetransform/identity.md)
+- [static var identity: CGAffineTransform](./cgaffinetransform/identity.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CGAffineTransformComponents](cgaffinetransformcomponents.md)
-- [struct CGFloat](cgfloat-swift.struct.md)
+### Structures
+- [struct CGAffineTransformComponents](./cgaffinetransformcomponents.md)
+- [struct CGFloat](./cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
-- [struct CGPoint](cgpoint.md)
-- [struct CGRect](cgrect.md)
-- [struct CGSize](cgsize.md)
+- [struct CGPoint](./cgpoint.md)
+- [struct CGRect](./cgrect.md)
+- [struct CGSize](./cgsize.md)
   A structure that contains width and height values.
-- [struct CGVector](cgvector.md)
+- [struct CGVector](./cgvector.md)
   A structure that contains a two-dimensional vector.
 
 

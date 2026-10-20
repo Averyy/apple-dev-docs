@@ -1,7 +1,8 @@
 # isAnyDisplaySynchronizedToLockedGenlockSignal
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 27.0+

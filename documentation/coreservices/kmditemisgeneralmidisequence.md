@@ -1,7 +1,8 @@
 # kMDItemIsGeneralMIDISequence
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the MIDI sequence contained in the file is setup for use with a General MIDI device. A CFBoolean.
 
@@ -12,6 +13,10 @@ Indicates whether the MIDI sequence contained in the file is setup for use with 
 
 ```swift
 let kMDItemIsGeneralMIDISequence: CFString!
+```
+
+```c
+const CFStringRef kMDItemIsGeneralMIDISequence;
 ```
 
 

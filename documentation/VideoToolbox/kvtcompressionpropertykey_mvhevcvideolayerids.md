@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_MVHEVCVideoLayerIDs
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identifiers of the video layers to encode in a multiview encoding operation.
 
@@ -18,19 +19,24 @@ The identifiers of the video layers to encode in a multiview encoding operation.
 let kVTCompressionPropertyKey_MVHEVCVideoLayerIDs: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_MVHEVCVideoLayerIDs;
+```
+
 #### Discussion
 
 This property is specific to MV-HEVC.
 
-Specifying layer ID values advises the encoder to expect [`CMTaggedBufferGroupRef`](https://developer.apple.com/documentation/coremedia/cmtaggedbuffergroupref) objects with specific [`CMTag`](https://developer.apple.com/documentation/coremedia/cmtag-swift.class) values that reference them.
+Specifying layer ID values advises the encoder to expect [`CMTaggedBufferGroupRef`](../CoreMedia/cmtaggedbuffergroupref.md) objects with specific [`CMTag`](../CoreMedia/cmtag-swift.class.md) values that reference them.
 
 The default value is `NULL`.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_MVHEVCLeftAndRightViewIDs: CFString](kvtcompressionpropertykey_mvhevcleftandrightviewids.md)
+### Multiview Compression
+- [let kVTCompressionPropertyKey_MVHEVCLeftAndRightViewIDs: CFString](./kvtcompressionpropertykey_mvhevcleftandrightviewids.md)
   Specifies which view identifier corresponds to the left eye and right eye.
-- [let kVTCompressionPropertyKey_MVHEVCViewIDs: CFString](kvtcompressionpropertykey_mvhevcviewids.md)
+- [let kVTCompressionPropertyKey_MVHEVCViewIDs: CFString](./kvtcompressionpropertykey_mvhevcviewids.md)
   The identifiers of the views corresponding to the video layers in a multiview encoding operation.
 
 

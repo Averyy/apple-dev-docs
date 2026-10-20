@@ -1,7 +1,8 @@
 # ObjectTrackingProvider.TrackingConfiguration
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters for changing object-tracking behavior.
 
@@ -16,36 +17,37 @@ struct TrackingConfiguration
 
 #### Overview
 
-Your app needs to include the [`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow) entitlement to modify the tracking configuration; otherwise, it has no effect.
+Your app needs to include the [`Object-tracking parameter adjustment`](../../BundleResources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow.md) entitlement to modify the tracking configuration; otherwise, it has no effect.
 
 ## Topics
 
 ### Creating a tracking configuration
-- [init()](objecttrackingprovider/trackingconfiguration-swift.struct/init.md)
+- [init()](./trackingconfiguration-swift.struct/init%28%29.md)
   Creates a tracking configuration.
 ### Inspecting a tracking configuration
-- [var detectionRate: Float](objecttrackingprovider/trackingconfiguration-swift.struct/detectionrate.md)
+- [var detectionRate: Float](./trackingconfiguration-swift.struct/detectionrate.md)
   The frequency at which object detection runs, in Hz.
-- [var maximumInstancesPerReferenceObject: Int](objecttrackingprovider/trackingconfiguration-swift.struct/maximuminstancesperreferenceobject.md)
+- [var maximumInstancesPerReferenceObject: Int](./trackingconfiguration-swift.struct/maximuminstancesperreferenceobject.md)
   The maximum number of instances of each reference object type to allow tracking at once.
-- [var maximumTrackableInstances: Int](objecttrackingprovider/trackingconfiguration-swift.struct/maximumtrackableinstances.md)
+- [var maximumTrackableInstances: Int](./trackingconfiguration-swift.struct/maximumtrackableinstances.md)
   The total number of object instances that you can track at the same time.
-- [var movingObjectTrackingRate: Float](objecttrackingprovider/trackingconfiguration-swift.struct/movingobjecttrackingrate.md)
+- [var movingObjectTrackingRate: Float](./trackingconfiguration-swift.struct/movingobjecttrackingrate.md)
   The frequency at which object tracking runs for moving objects, in Hz.
-- [var stationaryObjectTrackingRate: Float](objecttrackingprovider/trackingconfiguration-swift.struct/stationaryobjecttrackingrate.md)
+- [var stationaryObjectTrackingRate: Float](./trackingconfiguration-swift.struct/stationaryobjecttrackingrate.md)
   The frequency at which object tracking runs for stationary objects, in Hz.
 ### Instance Properties
-- [var description: String](objecttrackingprovider/trackingconfiguration-swift.struct/description.md)
+- [var description: String](./trackingconfiguration-swift.struct/description.md)
   A textual representation of this tracking configuration.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
 
 ## See Also
 
-- [var trackingConfiguration: ObjectTrackingProvider.TrackingConfiguration](objecttrackingprovider/trackingconfiguration-swift.property.md)
+### Configuring object-tracking
+- [var trackingConfiguration: ObjectTrackingProvider.TrackingConfiguration](./trackingconfiguration-swift.property.md)
   Returns the current parameters that are being used to configure object tracking.
 
 

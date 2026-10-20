@@ -1,14 +1,15 @@
 # xt_inpcb
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 struct xinpcb64 xt_inpcb;
 ```
 

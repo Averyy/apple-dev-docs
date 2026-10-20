@@ -1,12 +1,15 @@
 # ascending
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The column is sorted in ascending values.
 
 **Availability**:
-- macOS ?+
+- macOS
+
+> **Deprecated**: Use of these constants is discouraged. Use the new method-based API instead. For more information, see [Accessibility for AppKit](../../accessibility-for-appkit.md) or [`NSAccessibilityProtocol`](../../nsaccessibilityprotocol.md).
 
 ## Declaration
 
@@ -14,11 +17,16 @@ The column is sorted in ascending values.
 static let ascending: NSAccessibility.SortDirectionValue
 ```
 
+```c
+extern NSAccessibilitySortDirectionValue const NSAccessibilityAscendingSortDirectionValue;
+```
+
 ## See Also
 
-- [static let descending: NSAccessibility.SortDirectionValue](nsaccessibility-swift.struct/sortdirectionvalue/descending.md)
+### Sort Directions
+- [static let descending: NSAccessibility.SortDirectionValue](./descending.md)
   The column is sorted in descending values.
-- [static let unknown: NSAccessibility.SortDirectionValue](nsaccessibility-swift.struct/sortdirectionvalue/unknown.md)
+- [static let unknown: NSAccessibility.SortDirectionValue](./unknown.md)
   The sort direction is unknown.
 
 

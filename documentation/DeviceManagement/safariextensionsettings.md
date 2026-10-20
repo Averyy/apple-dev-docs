@@ -1,7 +1,8 @@
 # SafariExtensionSettings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure Safari Extensions.
 
@@ -14,7 +15,7 @@ The declaration to configure Safari Extensions.
 
 ## Declaration
 
-```swift
+```
 object SafariExtensionSettings
 ```
 
@@ -66,7 +67,7 @@ Give an extension access to “public.example.com”, but deny access to “exam
 "DeniedDomains": ["*example.com"]
 ```
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -78,7 +79,7 @@ Give an extension access to “public.example.com”, but deny access to “exam
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Examples
+##### Configuration examples
 
 **Disallow all**:
 
@@ -165,44 +166,47 @@ This configuration allows all Safari extensions, but one isn’t allowed for use
 ## Topics
 
 ### Objects
-- [object SafariExtensionSettingsManagedExtensionsObject](safariextensionsettingsmanagedextensionsobject.md)
+- [object SafariExtensionSettingsManagedExtensionsObject](./safariextensionsettingsmanagedextensionsobject.md)
   The dictionary of managed extensions settings. Each key in the dictionary represents a composed identifier for a specific managed extension, or you can specify a single “*” character to match any extension. The dictionary values represent the settings that Safari applies to each extension that matches the key. In order for the extension to be managed, its host app needs to be present on the device.
 
 ## Properties
 
-- `ManagedExtensions` (SafariExtensionSettingsManagedExtensionsObject): The dictionary of managed extensions settings. Each key in the dictionary represents a composed identifier for a specific managed extension, or you can specify a single “*” character to match any extension. The dictionary values represent the settings that Safari applies to each extension that matches the key. In order for the extension to be managed, its host app needs to be present on the device. The composed identifier of a managed extension uses the format “Identifier (TeamIdentifier)”, for example “com.example.app (ABCD1234)”. Use `codesign -dv <path_to_appex>` to show the information you need to generate this string on macOS, using the path to the extension bundle located in the “PlugIns” folder inside the app bundle. For other platforms, request this information from the app developer.
+- `ManagedExtensions` (SafariExtensionSettingsManagedExtensionsObject): The dictionary of managed extensions settings. Each key in the dictionary represents a composed identifier for a specific managed extension, or you can specify a single “*” character to match any extension. The dictionary values represent the settings that Safari applies to each extension that matches the key. In order for the extension to be managed, its host app needs to be present on the device.
+
+  The composed identifier of a managed extension uses the format “Identifier (TeamIdentifier)”, for example “com.example.app (ABCD1234)”. Use `codesign -dv <path_to_appex>` to show the information you need to generate this string on macOS, using the path to the extension bundle located in the “PlugIns” folder inside the app bundle. For other platforms, request this information from the app developer.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

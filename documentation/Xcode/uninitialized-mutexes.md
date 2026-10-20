@@ -1,6 +1,7 @@
 # Uninitialized mutexes
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Detects when you use an uninitialized mutex.
 
@@ -8,7 +9,7 @@ Detects when you use an uninitialized mutex.
 
 Use this check to detect when you call `pthread_mutex_lock(_:)` or `pthread_mutex_unlock(_:)` with an uninitialized `pthread_mutex_t` variable. Attempting to use an uninitialized mutex results in an error, and bypasses ordering conditions that exist on a locked mutex. Available in Xcode 8 and later.
 
-##### Use of Uninitialized Mutex in C
+##### Use of uninitialized mutex in C
 
 In the following example, the `pthread_mutex_lock(_:)` function executes with an uninitialized `pthread_mutex_t` variable:
 
@@ -41,13 +42,14 @@ void performWork() {
 
 ## See Also
 
-- [Data races](data-races.md)
+### Thread Sanitizer
+- [Data races](./data-races.md)
   Detects unsynchronized access to mutable state across multiple threads.
-- [Swift access races](swift-access-races.md)
+- [Swift access races](./swift-access-races.md)
   Detects unsynchronized access to mutable state across multiple threads in Swift.
-- [Races on collections and other APIs](races-on-collections-and-other-apis.md)
+- [Races on collections and other APIs](./races-on-collections-and-other-apis.md)
   Detects when one thread accesses a mutable object while another thread is writing to it.
-- [Thread leaks](thread-leaks.md)
+- [Thread leaks](./thread-leaks.md)
   Detects when you don’t close threads after use.
 
 

@@ -1,7 +1,8 @@
 # current
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A global accessor for the device’s app library instance.
 
@@ -18,7 +19,8 @@ static let current: AppLibrary
 
 ## See Also
 
-- [func didAuthenticate(account: String) async](applibrary/didauthenticate(account:).md)
+### Accessing app library and account authorization information
+- [func didAuthenticate(account: String) async](./didauthenticate%28account%29.md)
   Instructs the system to reinstall an app after a required reuthorization completes.
 
 

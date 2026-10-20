@@ -1,7 +1,8 @@
 # kIOUSB30ResetMinimumTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The minimum reset timeout.
 
@@ -10,7 +11,7 @@ The minimum reset timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30ResetMinimumTimeout = 80
 ```
 

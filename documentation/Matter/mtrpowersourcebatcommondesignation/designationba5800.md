@@ -1,7 +1,8 @@
 # MTRPowerSourceBatCommonDesignation.designationBA5800
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 case designationBA5800
+```
+
+```c
+MTRPowerSourceBatCommonDesignationBA5800
 ```
 
 

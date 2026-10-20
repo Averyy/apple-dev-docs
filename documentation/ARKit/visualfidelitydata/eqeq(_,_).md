@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: ARKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Compares two visual fidelity data instances for equality.
 

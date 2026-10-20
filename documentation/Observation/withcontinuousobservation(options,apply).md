@@ -1,7 +1,8 @@
 # withContinuousObservation(options:apply:)
 
 **Framework**: Observation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 27.0+

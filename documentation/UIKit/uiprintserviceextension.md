@@ -1,7 +1,8 @@
 # UIPrintServiceExtension
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An extension that locates and sets up a printer without a configuration profile.
 
@@ -18,36 +19,42 @@ An extension that locates and sets up a printer without a configuration profile.
 class UIPrintServiceExtension
 ```
 
+```objc
+@interface UIPrintServiceExtension : NSObject
+```
+
 #### Overview
 
-Support cloud printing by creating an extension instead of requiring users to install a managed configuration profile to set up an AirPrint printer. Create an extension by subclassing `UIPrintServiceExtension`. By creating your own extension, you can expose a cloud printer destination to a [`UIPrinterPickerController`](uiprinterpickercontroller.md). The extension matches printer destinations that fulfill the specified print-job attributes.
+Support cloud printing by creating an extension instead of requiring users to install a managed configuration profile to set up an AirPrint printer. Create an extension by subclassing `UIPrintServiceExtension`. By creating your own extension, you can expose a cloud printer destination to a [`UIPrinterPickerController`](./uiprinterpickercontroller.md). The extension matches printer destinations that fulfill the specified print-job attributes.
 
-Create an instance of `UIPrinterDestination` to describe a printer to the system. The extension can then search for the printer, or set of printers, using [`printerDestinations(for:)`](uiprintserviceextension/printerdestinations(for:).md). This method matches the requirements of a [`UIPrintInfo`](uiprintinfo.md) object and returns an array of [`UIPrinterDestination`](uiprinterdestination.md).
+Create an instance of `UIPrinterDestination` to describe a printer to the system. The extension can then search for the printer, or set of printers, using [`printerDestinations(for:)`](./uiprintserviceextension/printerdestinations%28for%29.md). This method matches the requirements of a [`UIPrintInfo`](./uiprintinfo.md) object and returns an array of [`UIPrinterDestination`](./uiprinterdestination.md).
 
 ## Topics
 
 ### Locating a printer
-- [func printerDestinations(for: UIPrintInfo) -> [UIPrinterDestination]](uiprintserviceextension/printerdestinations(for:).md)
+- [func printerDestinations(for: UIPrintInfo) -> [UIPrinterDestination]](./uiprintserviceextension/printerdestinations%28for%29.md)
   Searches for a printer destination that matches the print-job attributes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [App extensions](app-extensions.md)
+### Related Documentation
+- [App extensions](./app-extensions.md)
   Extend your app’s basic functionality to other parts of the system.
-- [class UIPrinterDestination](uiprinterdestination.md)
+### Printer service discovery
+- [class UIPrinterDestination](./uiprinterdestination.md)
   A description of a single printer.
 
 

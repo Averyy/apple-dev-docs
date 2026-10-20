@@ -1,7 +1,8 @@
 # MediaOutputDevice.VolumeControl.none
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Volume control is not available.
 
@@ -18,7 +19,7 @@ case none
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../creating-a-media-device-extension.md)
 
 #### Discussion
 

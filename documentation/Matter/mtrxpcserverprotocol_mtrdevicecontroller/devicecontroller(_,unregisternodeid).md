@@ -1,7 +1,8 @@
 # deviceController(_:unregisterNodeID:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.3+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func deviceController(_ controller: UUID, unregisterNodeID nodeID: NSNumber)
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller unregisterNodeID:(NSNumber *) nodeID;
 ```
 
 

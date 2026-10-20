@@ -1,7 +1,8 @@
 # InvokeIconActionUPP(_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func InvokeIconActionUPP(_ theType: ResType, _ theIcon: UnsafeMutablePointer<Handle?>!, _ yourDataPtr: UnsafeMutableRawPointer!, _ userUPP: IconActionUPP!) -> OSErr
+```
+
+```c
+OSErr InvokeIconActionUPP(ResType theType, Handle *theIcon, void *yourDataPtr, IconActionUPP userUPP);
 ```
 
 

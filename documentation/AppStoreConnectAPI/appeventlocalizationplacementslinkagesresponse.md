@@ -1,7 +1,8 @@
 # AppEventLocalizationPlacementsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response body that contains a list of related resource IDs.
 
@@ -10,14 +11,14 @@ A response body that contains a list of related resource IDs.
 
 ## Declaration
 
-```swift
+```
 object AppEventLocalizationPlacementsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppEventLocalizationPlacementsLinkagesResponse.Data](appeventlocalizationplacementslinkagesresponse/data-data.dictionary.md)
+- [object AppEventLocalizationPlacementsLinkagesResponse.Data](./appeventlocalizationplacementslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -27,19 +28,20 @@ object AppEventLocalizationPlacementsLinkagesResponse
 
 ## See Also
 
-- [object AppEventLocalization](appeventlocalization.md)
+### Objects
+- [object AppEventLocalization](./appeventlocalization.md)
   The localized name, short description, and long description for an App Store app event in a specific language.
-- [object AppEventLocalizationCreateRequest](appeventlocalizationcreaterequest.md)
+- [object AppEventLocalizationCreateRequest](./appeventlocalizationcreaterequest.md)
   The request body you use to create an app event localization.
-- [object AppEventLocalizationResponse](appeventlocalizationresponse.md)
+- [object AppEventLocalizationResponse](./appeventlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a localized in-app event entry.
-- [object AppEventLocalizationUpdateRequest](appeventlocalizationupdaterequest.md)
+- [object AppEventLocalizationUpdateRequest](./appeventlocalizationupdaterequest.md)
   The request body you use to update an app event localization update request.
-- [object AppEventLocalizationsResponse](appeventlocalizationsresponse.md)
+- [object AppEventLocalizationsResponse](./appeventlocalizationsresponse.md)
   The response body for endpoints that list localized entries for an in-app event.
-- [object AppEventLocalizationAppEventScreenshotsLinkagesResponse](appeventlocalizationappeventscreenshotslinkagesresponse.md)
-- [object AppEventLocalizationAppEventVideoClipsLinkagesResponse](appeventlocalizationappeventvideoclipslinkagesresponse.md)
-- [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
+- [object AppEventLocalizationAppEventScreenshotsLinkagesResponse](./appeventlocalizationappeventscreenshotslinkagesresponse.md)
+- [object AppEventLocalizationAppEventVideoClipsLinkagesResponse](./appeventlocalizationappeventvideoclipslinkagesresponse.md)
+- [object AppEventLocalizationsLinkagesResponse](./appeventlocalizationslinkagesresponse.md)
 
 
 ---

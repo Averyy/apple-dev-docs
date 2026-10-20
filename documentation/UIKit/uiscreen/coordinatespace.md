@@ -1,7 +1,8 @@
 # coordinateSpace
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current coordinate space of the screen.
 
@@ -9,7 +10,7 @@ The current coordinate space of the screen.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ The current coordinate space of the screen.
 var coordinateSpace: any UICoordinateSpace { get }
 ```
 
+```objc
+@property (readonly) id<UICoordinateSpace> coordinateSpace;
+```
+
 #### Discussion
 
-The screen’s current coordinate space always reflects any interface orientations applied to the device. Therefore, the bounds of this coordinate space match the [`bounds`](uiscreen/bounds.md) property of the screen itself.
+The screen’s current coordinate space always reflects any interface orientations applied to the device. Therefore, the bounds of this coordinate space match the [`bounds`](./bounds.md) property of the screen itself.
 
 ## See Also
 
-- [var fixedCoordinateSpace: any UICoordinateSpace](uiscreen/fixedcoordinatespace.md)
+### Getting the coordinate space
+- [var fixedCoordinateSpace: any UICoordinateSpace](./fixedcoordinatespace.md)
   The fixed coordinate space of the screen.
 
 

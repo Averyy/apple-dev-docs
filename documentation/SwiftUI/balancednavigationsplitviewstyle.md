@@ -1,7 +1,8 @@
 # BalancedNavigationSplitViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A navigation split style that reduces the size of the detail content to make room when showing the leading column or columns.
 
@@ -23,26 +24,27 @@ A navigation split style that reduces the size of the detail content to make roo
 
 #### Overview
 
-Use [`balanced`](navigationsplitviewstyle/balanced.md) to construct this style.
+Use [`balanced`](./navigationsplitviewstyle/balanced.md) to construct this style.
 
 ## Topics
 
 ### Creating the navigation split view style
-- [init()](balancednavigationsplitviewstyle/init.md)
-  Creates an instance of [`BalancedNavigationSplitViewStyle`](balancednavigationsplitviewstyle.md).
+- [init()](./balancednavigationsplitviewstyle/init%28%29.md)
+  Creates an instance of [`BalancedNavigationSplitViewStyle`](./balancednavigationsplitviewstyle.md).
 
 ## Relationships
 
 ### Conforms To
-- [NavigationSplitViewStyle](navigationsplitviewstyle.md)
+- [NavigationSplitViewStyle](./navigationsplitviewstyle.md)
 
 ## See Also
 
-- [struct AutomaticNavigationSplitViewStyle](automaticnavigationsplitviewstyle.md)
+### Supporting types
+- [struct AutomaticNavigationSplitViewStyle](./automaticnavigationsplitviewstyle.md)
   A navigation split style that resolves its appearance automatically based on the current context.
-- [struct ProminentDetailNavigationSplitViewStyle](prominentdetailnavigationsplitviewstyle.md)
+- [struct ProminentDetailNavigationSplitViewStyle](./prominentdetailnavigationsplitviewstyle.md)
   A navigation split style that attempts to maintain the size of the detail content when hiding or showing the leading columns.
-- [struct NavigationSplitViewStyleConfiguration](navigationsplitviewstyleconfiguration.md)
+- [struct NavigationSplitViewStyleConfiguration](./navigationsplitviewstyleconfiguration.md)
   The properties of a navigation split view instance.
 
 

@@ -1,7 +1,8 @@
 # removeFirst(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified number of elements from the beginning of the collection.
 
@@ -20,13 +21,15 @@ Removes the specified number of elements from the beginning of the collection.
 mutating func removeFirst(_ k: Int)
 ```
 
+Available when `Self` is `Self.SubSequence`.
+
 #### Discussion
 
 Attempting to remove more elements than exist in the collection triggers a runtime error.
 
 Calling this method may invalidate all saved indices of this collection. Do not rely on a previously stored index value after altering a collection with any operation that can change its length.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the specified number of elements.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the specified number of elements.
 
 ## Parameters
 

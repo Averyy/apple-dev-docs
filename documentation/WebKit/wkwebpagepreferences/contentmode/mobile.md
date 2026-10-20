@@ -1,7 +1,8 @@
 # WKWebpagePreferences.ContentMode.mobile
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The content mode that represents a mobile experience.
 
@@ -9,7 +10,7 @@ The content mode that represents a mobile experience.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ The content mode that represents a mobile experience.
 case mobile
 ```
 
+```c
+WKContentModeMobile
+```
+
 ## See Also
 
-- [WKWebpagePreferences.ContentMode.recommended](wkwebpagepreferences/contentmode/recommended.md)
+### Getting the Content Modes
+- [WKWebpagePreferences.ContentMode.recommended](./recommended.md)
   The content mode that is appropriate for the current device.
-- [WKWebpagePreferences.ContentMode.desktop](wkwebpagepreferences/contentmode/desktop.md)
+- [WKWebpagePreferences.ContentMode.desktop](./desktop.md)
   The content mode that represents a desktop experience.
 
 

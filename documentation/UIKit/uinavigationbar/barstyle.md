@@ -1,7 +1,8 @@
 # barStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The navigation bar style that specifies its appearance.
 
@@ -17,15 +18,20 @@ The navigation bar style that specifies its appearance.
 var barStyle: UIBarStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIBarStyle barStyle;
+```
+
 #### Discussion
 
-See [`UIBarStyle`](uibarstyle.md) for possible values. The default value is [`UIBarStyle.default`](uibarstyle/default.md).
+See [`UIBarStyle`](../uibarstyle.md) for possible values. The default value is [`UIBarStyle.default`](../uibarstyle/default.md).
 
 It is permissible to set the value of this property when the navigation bar is being managed by a navigation controller object.
 
 ## See Also
 
-- [enum UIBarStyle](uibarstyle.md)
+### Setting the bar’s style
+- [enum UIBarStyle](../uibarstyle.md)
   Defines the stylistic appearance of different types of views.
 
 

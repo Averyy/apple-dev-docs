@@ -1,7 +1,8 @@
 # filterSockets
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates that the system applies the filter to flows of network data originated from sockets.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates that the system applies the filter to flows of ne
 var filterSockets: Bool { get set }
 ```
 
+```objc
+@property BOOL filterSockets;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var filterBrowsers: Bool](nefilterproviderconfiguration/filterbrowsers.md)
+### Configuring filter behavior
+- [var filterBrowsers: Bool](./filterbrowsers.md)
   A Boolean value that indicates that the system applies the filter to flows of network data originated from WebKit browser objects.
-- [var filterPackets: Bool](nefilterproviderconfiguration/filterpackets.md)
+- [var filterPackets: Bool](./filterpackets.md)
   A Boolean value that indicates that the system applies the filter to packets of network data.
 
 

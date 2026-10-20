@@ -1,7 +1,8 @@
 # identifiers
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity identifiers in the collection.
 
@@ -22,7 +23,7 @@ var identifiers: [Entity.ID]
 
 #### Discussion
 
-Use this property to retrieve the entity identifiers from the collection. You might use an identifier to retrieve an individual [`AppEntity`](appentity.md) instance from your app.
+Use this property to retrieve the entity identifiers from the collection. You might use an identifier to retrieve an individual [`AppEntity`](../appentity.md) instance from your app.
 
 
 ---

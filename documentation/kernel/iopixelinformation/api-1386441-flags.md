@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 None defined - set to zero.
 
@@ -10,7 +11,7 @@ None defined - set to zero.
 
 ## Declaration
 
-```swift
+```c
 UInt32 flags;
 ```
 

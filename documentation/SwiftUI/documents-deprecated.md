@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,18 +12,18 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated structures
-- [struct FileDocumentConfiguration](filedocumentconfiguration.md)
+- [struct FileDocumentConfiguration](./filedocumentconfiguration.md)
   The properties of an open file document.
-- [struct FileDocumentReadConfiguration](filedocumentreadconfiguration.md)
+- [struct FileDocumentReadConfiguration](./filedocumentreadconfiguration.md)
   The configuration for reading file contents.
-- [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
+- [struct FileDocumentWriteConfiguration](./filedocumentwriteconfiguration.md)
   The configuration for serializing file contents.
-- [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
+- [struct ReferenceFileDocumentConfiguration](./referencefiledocumentconfiguration.md)
   The properties of an open reference file document.
 ### Deprecated protocols
-- [protocol FileDocument](filedocument.md)
+- [protocol FileDocument](./filedocument.md)
   A type that you use to serialize documents to and from file.
-- [protocol ReferenceFileDocument](referencefiledocument.md)
+- [protocol ReferenceFileDocument](./referencefiledocument.md)
   A type that you use to serialize reference type documents to and from file.
 
 

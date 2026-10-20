@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A layout anchor representing the guide’s bottom edge.
@@ -19,15 +20,20 @@ A layout anchor representing the guide’s bottom edge.
 var bottomAnchor: NSLayoutYAxisAnchor { get }
 ```
 
+```objc
+@property (strong, readonly) NSLayoutYAxisAnchor * bottomAnchor;
+```
+
 #### Discussion
 
-Use this anchor to create constraints with the guide’s bottom edge. You can only combine this anchor with other [`NSLayoutYAxisAnchor`](nslayoutyaxisanchor.md) anchors. For more information, see [`NSLayoutAnchor`](nslayoutanchor.md).
+Use this anchor to create constraints with the guide’s bottom edge. You can only combine this anchor with other [`NSLayoutYAxisAnchor`](../nslayoutyaxisanchor.md) anchors. For more information, see [`NSLayoutAnchor`](../nslayoutanchor.md).
 
 ## See Also
 
-- [var heightAnchor: NSLayoutDimension](uilayoutsupport/heightanchor.md)
+### Creating constraints using layout anchors
+- [var heightAnchor: NSLayoutDimension](./heightanchor.md)
   A layout anchor representing the guide’s height.
-- [var topAnchor: NSLayoutYAxisAnchor](uilayoutsupport/topanchor.md)
+- [var topAnchor: NSLayoutYAxisAnchor](./topanchor.md)
   A layout anchor representing the guide’s top edge.
 
 

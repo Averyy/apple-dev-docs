@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action button’s title.
 
@@ -14,6 +15,10 @@ The action button’s title.
 
 ```swift
 var title: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
 ```
 
 

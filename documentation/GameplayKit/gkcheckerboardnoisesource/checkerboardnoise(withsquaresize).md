@@ -1,7 +1,8 @@
 # checkerboardNoise(withSquareSize:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a checkerboard noise source with the specified square size.
 
@@ -19,21 +20,26 @@ Creates a checkerboard noise source with the specified square size.
 class func checkerboardNoise(withSquareSize squareSize: Double) -> Self
 ```
 
+```objc
++ (instancetype) checkerboardNoiseWithSquareSize:(double) squareSize;
+```
+
 #### Return Value
 
 A new noise source.
 
 #### Discussion
 
-To make use of this noise source, create a [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
+To make use of this noise source, create a [`GKNoise`](../gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](../gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](../../SpriteKit/sktexture.md) or `SKTileMap` class.
 
 ## Parameters
 
-- `squareSize`: The initial value for the [`squareSize`](gkcheckerboardnoisesource/squaresize.md) property, which determines the size of the checkerboard pattern.
+- `squareSize`: The initial value for the [`squareSize`](./squaresize.md) property, which determines the size of the checkerboard pattern.
 
 ## See Also
 
-- [init(squareSize: Double)](gkcheckerboardnoisesource/init(squaresize:).md)
+### Creating a Noise Source
+- [init(squareSize: Double)](./init%28squaresize%29.md)
   Initializes a checkerboard noise source with the specified square size.
 
 

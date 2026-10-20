@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The roughness value for the entire entity or a multiplier for its texture.
 
@@ -20,7 +21,8 @@ var scale: Float
 
 ## See Also
 
-- [var texture: CustomMaterial.Texture?](custommaterial/roughness-swift.struct/texture.md)
+### Accessing roughness values
+- [var texture: CustomMaterial.Texture?](./texture.md)
   The roughness values as a UV-mapped image texture.
 
 

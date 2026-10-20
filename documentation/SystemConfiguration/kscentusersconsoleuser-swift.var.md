@@ -1,7 +1,8 @@
 # kSCEntUsersConsoleUser
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The CompUsers key `ConsoleUser`.
 
@@ -12,6 +13,10 @@ The CompUsers key `ConsoleUser`.
 
 ```swift
 let kSCEntUsersConsoleUser: CFString
+```
+
+```c
+extern CFStringRef const kSCEntUsersConsoleUser;
 ```
 
 

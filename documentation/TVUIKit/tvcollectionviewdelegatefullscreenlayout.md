@@ -1,7 +1,8 @@
 # TVCollectionViewDelegateFullScreenLayout
 
 **Framework**: TVUIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods that send notifications of events during cell transitions.
 
@@ -14,6 +15,10 @@ Methods that send notifications of events during cell transitions.
 protocol TVCollectionViewDelegateFullScreenLayout : UICollectionViewDelegate
 ```
 
+```objc
+@protocol TVCollectionViewDelegateFullScreenLayout <UICollectionViewDelegate>
+```
+
 #### Overview
 
 The methods contained in this protocol help you manage and control cell transitions.
@@ -21,27 +26,28 @@ The methods contained in this protocol help you manage and control cell transiti
 ## Topics
 
 ### Managing Cell Transitions
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, willCenterCellAt: IndexPath)](tvcollectionviewdelegatefullscreenlayout/collectionview(_:layout:willcentercellat:).md)
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, willCenterCellAt: IndexPath)](./tvcollectionviewdelegatefullscreenlayout/collectionview%28_,layout,willcentercellat%29.md)
   Tells the delegate when a cell is to be the center cell.
-- [func collectionView(UICollectionView, layout: UICollectionViewLayout, didCenterCellAt: IndexPath)](tvcollectionviewdelegatefullscreenlayout/collectionview(_:layout:didcentercellat:).md)
+- [func collectionView(UICollectionView, layout: UICollectionViewLayout, didCenterCellAt: IndexPath)](./tvcollectionviewdelegatefullscreenlayout/collectionview%28_,layout,didcentercellat%29.md)
   Tells the delegate when a cell has completed the transition and has become the center cell.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UICollectionViewDelegate](../uikit/uicollectionviewdelegate.md)
-- [UIScrollViewDelegate](../uikit/uiscrollviewdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UICollectionViewDelegate](../UIKit/uicollectionviewdelegate.md)
+- [UIScrollViewDelegate](../UIKit/uiscrollviewdelegate.md)
 
 ## See Also
 
-- [Creating immersive experiences using a full-screen layout](creating-immersive-experiences-using-a-full-screen-layout.md)
+### Collections of content
+- [Creating immersive experiences using a full-screen layout](./creating-immersive-experiences-using-a-full-screen-layout.md)
   Display content with a collection view that maximizes the tvOS experience.
-- [class TVCollectionViewFullScreenLayout](tvcollectionviewfullscreenlayout.md)
+- [class TVCollectionViewFullScreenLayout](./tvcollectionviewfullscreenlayout.md)
   A collection view layout that organizes items into a browsable, full-screen display format.
-- [class TVCollectionViewFullScreenCell](tvcollectionviewfullscreencell.md)
+- [class TVCollectionViewFullScreenCell](./tvcollectionviewfullscreencell.md)
   A full-screen cell to use in full-screen display format.
-- [class TVCollectionViewFullScreenLayoutAttributes](tvcollectionviewfullscreenlayoutattributes.md)
+- [class TVCollectionViewFullScreenLayoutAttributes](./tvcollectionviewfullscreenlayoutattributes.md)
   Attributes to manage the appearance of the collection view’s layout.
 
 

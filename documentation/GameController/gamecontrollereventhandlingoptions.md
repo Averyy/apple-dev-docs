@@ -1,7 +1,8 @@
 # GameControllerEventHandlingOptions
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,14 +19,15 @@ struct GameControllerEventHandlingOptions
 ## Topics
 
 ### Initializers
-- [init()](gamecontrollereventhandlingoptions/init.md)
+- [init()](./gamecontrollereventhandlingoptions/init%28%29.md)
 ### Type Methods
-- [static func receivesEventsInView(Bool) -> GameControllerEventHandlingOptions](gamecontrollereventhandlingoptions/receiveseventsinview(_:).md)
+- [static func receivesEventsInView(Bool) -> GameControllerEventHandlingOptions](./gamecontrollereventhandlingoptions/receiveseventsinview%28_%29.md)
   A Boolean option that determines whether events are delivered exclusively through the GameController framework.
 
 ## See Also
 
-- [var receivesEventsInView: Bool](gceventinteraction/receiveseventsinview.md)
+### Receiving view events
+- [var receivesEventsInView: Bool](./gceventinteraction/receiveseventsinview.md)
   A Boolean value that determines whether events are delivered exclusively through the Game Controller framework.
 
 

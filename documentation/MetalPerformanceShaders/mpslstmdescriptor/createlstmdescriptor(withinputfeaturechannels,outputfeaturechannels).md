@@ -1,7 +1,8 @@
 # createLSTMDescriptor(withInputFeatureChannels:outputFeatureChannels:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func createLSTMDescriptor(withInputFeatureChannels inputFeatureChannels: Int, outputFeatureChannels: Int) -> Self
+```
+
+```objc
++ (instancetype) createLSTMDescriptorWithInputFeatureChannels:(NSUInteger) inputFeatureChannels outputFeatureChannels:(NSUInteger) outputFeatureChannels;
 ```
 
 

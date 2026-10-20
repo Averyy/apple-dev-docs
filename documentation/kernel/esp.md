@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct esp {
     ...
 };
@@ -17,7 +17,7 @@ struct esp {
 ## Topics
 
 ### Instance Properties
-- [esp_spi](esp/1426539-esp_spi.md)
+- [esp_spi](./esp/api-1426539-esp_spi.md)
 
 
 ---

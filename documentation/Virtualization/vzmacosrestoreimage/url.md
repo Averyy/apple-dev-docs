@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of this restore image.
 
@@ -14,25 +15,30 @@ The URL of this restore image.
 var url: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * URL;
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
 #### Discussion
 
-If the restore image loaded using [`image(from:)`](vzmacosrestoreimage/image(from:).md), the value of this property is a file URL.
+If the restore image loaded using [`image(from:)`](./image%28from%29.md), the value of this property is a file URL.
 
-If you obtain the restore image by fetching it from a server, use [`latestSupported`](vzmacosrestoreimage/latestsupported.md) and set the value of this property to a network URL for the installation media file.
+If you obtain the restore image by fetching it from a server, use [`latestSupported`](./latestsupported.md) and set the value of this property to a network URL for the installation media file.
 
 ## See Also
 
-- [var buildVersion: String](vzmacosrestoreimage/buildversion.md)
+### Getting Information About the Restore Image
+- [var buildVersion: String](./buildversion.md)
   The build version this restore image contains.
-- [var isSupported: Bool](vzmacosrestoreimage/issupported.md)
+- [var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current host supports this restore image.
-- [var mostFeaturefulSupportedConfiguration: VZMacOSConfigurationRequirements?](vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md)
+- [var mostFeaturefulSupportedConfiguration: VZMacOSConfigurationRequirements?](./mostfeaturefulsupportedconfiguration.md)
   This object represents the most fully featured configuration that’s supported by both the current host and by this restore image.
-- [var operatingSystemVersion: OperatingSystemVersion](vzmacosrestoreimage/operatingsystemversion.md)
+- [var operatingSystemVersion: OperatingSystemVersion](./operatingsystemversion.md)
   The operating system version this restore image contains.
 
 

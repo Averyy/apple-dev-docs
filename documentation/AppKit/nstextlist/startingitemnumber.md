@@ -1,7 +1,8 @@
 # startingItemNumber
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the starting item number for the text list.
 
@@ -12,6 +13,10 @@ Sets the starting item number for the text list.
 
 ```swift
 var startingItemNumber: Int { get set }
+```
+
+```objc
+@property NSInteger startingItemNumber;
 ```
 
 #### Discussion

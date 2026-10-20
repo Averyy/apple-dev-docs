@@ -1,7 +1,8 @@
 # customInfoViewControllers
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of view controllers to display as content tabs in the player user interface.
 
@@ -15,38 +16,43 @@ An array of view controllers to display as content tabs in the player user inter
 var customInfoViewControllers: [UIViewController] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<UIViewController *> * customInfoViewControllers;
+```
+
 ## Mentions
 
-- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
-- [Customizing the tvOS playback experience](customizing-the-tvos-playback-experience.md)
+- [Adopting the system player interface in visionOS](../adopting-the-system-player-interface-in-visionos.md)
+- [Customizing the tvOS playback experience](../customizing-the-tvos-playback-experience.md)
 
 #### Discussion
 
-The system uses a view controller’s [`title`](https://developer.apple.com/documentation/uikit/uiviewcontroller/title) property value as the content tab title. Set this property value before adding it to the array so that the title renders correctly in the player’s user interface.
+The system uses a view controller’s [`title`](../../UIKit/uiviewcontroller/title.md) property value as the content tab title. Set this property value before adding it to the array so that the title renders correctly in the player’s user interface.
 
-Similarly, set a [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) value on the custom view controllers, or define appropriate auto layout constraints on their views, so the system sizes them correctly in the player user interface.
+Similarly, set a [`preferredContentSize`](../../UIKit/uiviewcontroller/preferredcontentsize.md) value on the custom view controllers, or define appropriate auto layout constraints on their views, so the system sizes them correctly in the player user interface.
 
 > ❗ **Important**:  The view with the greatest height determines the height of all of the content views. Set the height of your content views consistently to simplify layout, or verify that your content renders as intended if the system resizes it.
 
 ## See Also
 
-- [var playbackControlsIncludeTransportBar: Bool](avplayerviewcontroller/playbackcontrolsincludetransportbar.md)
+### Customizing the tvOS player UI
+- [var playbackControlsIncludeTransportBar: Bool](./playbackcontrolsincludetransportbar.md)
   A Boolean value that indicates whether the player shows the transport bar and related controls.
-- [var playbackControlsIncludeInfoViews: Bool](avplayerviewcontroller/playbackcontrolsincludeinfoviews.md)
+- [var playbackControlsIncludeInfoViews: Bool](./playbackcontrolsincludeinfoviews.md)
   A Boolean value that indicates whether the player presents video metadata, navigation markers, and playback settings views when someone requests them.
-- [var transportBarIncludesTitleView: Bool](avplayerviewcontroller/transportbarincludestitleview.md)
+- [var transportBarIncludesTitleView: Bool](./transportbarincludestitleview.md)
   A Boolean value that indicates whether the player user interface shows the title view above the scrubber.
-- [var transportBarCustomMenuItems: [UIMenuElement]](avplayerviewcontroller/transportbarcustommenuitems.md)
+- [var transportBarCustomMenuItems: [UIMenuElement]](./transportbarcustommenuitems.md)
   An array of actions and menus to display with the default player controls.
-- [var infoViewActions: [UIAction]!](avplayerviewcontroller/infoviewactions.md)
+- [var infoViewActions: [UIAction]!](./infoviewactions.md)
   An array of actions to present in the Info content view.
-- [var contextualActions: [UIAction]](avplayerviewcontroller/contextualactions.md)
+- [var contextualActions: [UIAction]](./contextualactions.md)
   An array of action controls to present contextually during playback.
-- [var customOverlayViewController: UIViewController?](avplayerviewcontroller/customoverlayviewcontroller.md)
+- [var customOverlayViewController: UIViewController?](./customoverlayviewcontroller.md)
   A view controller that presents custom content over the player view.
-- [var unobscuredContentGuide: UILayoutGuide](avplayerviewcontroller/unobscuredcontentguide.md)
+- [var unobscuredContentGuide: UILayoutGuide](./unobscuredcontentguide.md)
   A layout guide that represents an area that fixed-position playback controls don’t obscure when visible.
-- [var customInfoViewController: UIViewController?](avplayerviewcontroller/custominfoviewcontroller.md)
+- [var customInfoViewController: UIViewController?](./custominfoviewcontroller.md)
   A view controller that provides client-specific content and controls alongside system-provided information and settings panels.
 
 

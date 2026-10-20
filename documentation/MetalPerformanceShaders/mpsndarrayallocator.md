@@ -1,15 +1,16 @@
 # MPSNDArrayAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,18 +18,22 @@
 protocol MPSNDArrayAllocator : NSCopying, NSSecureCoding, NSObjectProtocol
 ```
 
+```objc
+@protocol MPSNDArrayAllocator <NSObject, NSSecureCoding, NSCopying>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func array(for: any MTLCommandBuffer, arrayDescriptor: MPSNDArrayDescriptor, kernel: MPSKernel) -> MPSNDArray](mpsndarrayallocator/array(for:arraydescriptor:kernel:).md)
+- [func array(for: any MTLCommandBuffer, arrayDescriptor: MPSNDArrayDescriptor, kernel: MPSKernel) -> MPSNDArray](./mpsndarrayallocator/array%28for,arraydescriptor,kernel%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

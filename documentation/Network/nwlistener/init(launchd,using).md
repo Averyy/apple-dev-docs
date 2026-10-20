@@ -1,10 +1,13 @@
 # init(launchd:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 13.0+
+- macOS 13.0+ - Deprecated in 15.0
+
+> **Deprecated**: Use init(launchdSocketKey:parameters:)
 
 ## Declaration
 

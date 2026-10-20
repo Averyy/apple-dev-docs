@@ -1,7 +1,8 @@
 # cmBestMode
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Best mode indicates that the CMM should maximize resource usage to ensure the highest possible quality.
 

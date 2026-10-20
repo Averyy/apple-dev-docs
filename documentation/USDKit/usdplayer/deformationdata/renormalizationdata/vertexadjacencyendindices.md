@@ -1,7 +1,8 @@
 # vertexAdjacencyEndIndices
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Cumulative end indices into `vertexAdjacencies`, one per vertex.
 

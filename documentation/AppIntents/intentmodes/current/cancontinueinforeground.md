@@ -1,7 +1,8 @@
 # canContinueInForeground
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether running the app intent in the foreground is possible.
 

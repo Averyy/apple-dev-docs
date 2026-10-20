@@ -1,7 +1,8 @@
 # authorize(localizedReason:completion:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an authorization on the right.
 
@@ -15,29 +16,44 @@ Performs an authorization on the right.
 ## Declaration
 
 ```swift
+func authorize(localizedReason: String, completion handler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func authorize(localizedReason: String) async throws
+```
+
+```objc
+- (void) authorizeWithLocalizedReason:(NSString *) localizedReason completion:(void (^)(NSError *error)) handler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func authorize(localizedReason: String) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func authorize(localizedReason: String) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## Parameters
 
 - `localizedReason`: A reason for the authorization that the system displays to the user.
-- `handler`: A completion handler called at the end of the authorization process. - **`error`**: If `nil`, the authorization is successful. Otherwise, the error contains information about the failure reason.
+- `handler`: A completion handler called at the end of the authorization process.
+
+  - **`error`**: If `nil`, the authorization is successful. Otherwise, the error contains information about the failure reason.
 
 ## See Also
 
-- [init()](laright/init.md)
+### Authorizing a right
+- [init()](./init%28%29.md)
   Creates a right using the default authorization requirements.
-- [init(requirement: LAAuthenticationRequirement)](laright/init(requirement:).md)
+- [init(requirement: LAAuthenticationRequirement)](./init%28requirement%29.md)
   Creates a right with the authentication requirements you supply.
-- [var tag: Int](laright/tag.md)
+- [var tag: Int](./tag.md)
   An integer you use to identify a right.
-- [func authorize(localizedReason: String, in: LAPresentationContext, completion: ((any Error)?) -> Void)](laright/authorize(localizedreason:in:completion:).md)
+- [func authorize(localizedReason: String, in: LAPresentationContext, completion: ((any Error)?) -> Void)](./authorize%28localizedreason,in,completion%29.md)
   Performs an authorization on the right with a window context you supply.
 
 

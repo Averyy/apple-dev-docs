@@ -1,7 +1,8 @@
 # RecordLabel.FilterType
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The associated type that contains the set of properties for record labels your app uses as a filter for a catalog resource request.
 

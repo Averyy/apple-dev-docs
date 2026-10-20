@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool asyncPowerStateChangeInProgress;
 ```
 
@@ -15,19 +15,20 @@ Set to true while an asynchronous power change is pending and false all other ti
 
 ## See Also
 
-- [workLoop](ioaudiodevice/workloop.md)
-- [timerEventSource](ioaudiodevice/timereventsource.md)
-- [timerEvents](ioaudiodevice/timerevents.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [timerEventSource](./timereventsource.md)
+- [timerEvents](./timerevents.md)
   The set of timer events in use by the device.
-- [pendingPowerState](ioaudiodevice/pendingpowerstate.md)
-- [numRunningAudioEngines](ioaudiodevice/numrunningaudioengines.md)
-- [minimumInterval](ioaudiodevice/minimuminterval.md)
-- [familyManagePower](ioaudiodevice/familymanagepower.md)
-- [duringStartup](ioaudiodevice/duringstartup.md)
-- [currentPowerState](ioaudiodevice/currentpowerstate.md)
-- [commandGate](ioaudiodevice/commandgate.md)
-- [audioPorts](ioaudiodevice/audioports.md)
-- [audioEngines](ioaudiodevice/audioengines.md)
+- [pendingPowerState](./pendingpowerstate.md)
+- [numRunningAudioEngines](./numrunningaudioengines.md)
+- [minimumInterval](./minimuminterval.md)
+- [familyManagePower](./familymanagepower.md)
+- [duringStartup](./duringstartup.md)
+- [currentPowerState](./currentpowerstate.md)
+- [commandGate](./commandgate.md)
+- [audioPorts](./audioports.md)
+- [audioEngines](./audioengines.md)
 
 
 ---

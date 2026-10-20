@@ -1,7 +1,8 @@
 # frameInfo
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame that sent the message.
 
@@ -19,11 +20,16 @@ The frame that sent the message.
 var frameInfo: WKFrameInfo { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) WKFrameInfo * frameInfo;
+```
+
 ## See Also
 
-- [var webView: WKWebView?](wkscriptmessage/webview.md)
+### Getting Message-Related Information
+- [var webView: WKWebView?](./webview.md)
   The web view that sent the message.
-- [var world: WKContentWorld](wkscriptmessage/world.md)
+- [var world: WKContentWorld](./world.md)
   The namespace in which the JavaScript code executes.
 
 

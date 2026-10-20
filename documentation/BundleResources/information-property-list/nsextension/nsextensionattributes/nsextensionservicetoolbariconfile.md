@@ -1,22 +1,25 @@
 # NSExtensionServiceToolbarIconFile
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The image for an Action extension’s toolbar item.
 
 **Availability**:
 - macOS 10.10+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSExtensionServiceToolbarIconFile`
+- **Type**: string
 
 ## See Also
 
-- [NSExtensionServiceAllowsToolbarItem](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstoolbaritem.md)
+### Toolbar
+- [NSExtensionServiceAllowsToolbarItem](./nsextensionserviceallowstoolbaritem.md)
   A Boolean value indicating whether an Action extension displays an item in a window’s toolbar.
-- [NSExtensionServiceToolbarPaletteLabel](information-property-list/nsextension/nsextensionattributes/nsextensionservicetoolbarpalettelabel.md)
+- [NSExtensionServiceToolbarPaletteLabel](./nsextensionservicetoolbarpalettelabel.md)
   The label for an Action extension’s toolbar item.
 
 

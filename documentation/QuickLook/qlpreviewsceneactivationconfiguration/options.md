@@ -1,7 +1,8 @@
 # QLPreviewSceneActivationConfiguration.Options
 
 **Framework**: Quick Look  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents the configuration for a preview scene activation.
 
@@ -16,25 +17,29 @@ A class that represents the configuration for a preview scene activation.
 class Options
 ```
 
+```objc
+@interface QLPreviewSceneOptions : NSObject
+```
+
 ## Topics
 
 ### Identifying the initial item to preview
-- [var initialPreviewIndex: Int](qlpreviewsceneactivationconfiguration/options/initialpreviewindex.md)
+- [var initialPreviewIndex: Int](./options/initialpreviewindex.md)
   The index of the item to preview.
-- [var initialPreviewIndex: Int](qlpreviewsceneactivationconfiguration/options/initialpreviewindex.md)
+- [var initialPreviewIndex: Int](./options/initialpreviewindex.md)
   The index of the item to preview.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

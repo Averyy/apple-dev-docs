@@ -1,7 +1,8 @@
 # BrandsReportingAdGroup.PricingModel
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The unit of ad delivery the ad group is charged for, as captured at report time.
 
@@ -10,13 +11,19 @@ The unit of ad delivery the ad group is charged for, as captured at report time.
 
 ## Declaration
 
-```swift
+```
 string BrandsReportingAdGroup.PricingModel
 ```
 
+## Possible Values
+
+- `CPA`: Cost-per-acquisition.
+- `CPM`: Cost-per-thousand-impressions. Pairs with `billingEvent: IMPRESSIONS`.
+- `CPT`: Cost-per-tap. Pairs with `billingEvent: TAPS`.
+
 #### Discussion
 
-The `pricingModel` field reflects the ad group’s charge unit at the time the system generated the report row. See [`ReportingPricingModel`](reportingpricingmodel.md) for additional context.
+The `pricingModel` field reflects the ad group’s charge unit at the time the system generated the report row. See [`ReportingPricingModel`](../reportingpricingmodel.md) for additional context.
 
 
 ---

@@ -1,7 +1,8 @@
 # appendBuffer(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func appendBuffer(_ size: Int)
+```
+
+```objc
+- (void) appendBuffer:(NSUInteger) size;
 ```
 
 

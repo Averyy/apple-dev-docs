@@ -1,11 +1,12 @@
 # init(instigator:error_code:group_name:members:node_name:db_path:instigator_token:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: Core Haptics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously starts the haptic engine.
 
@@ -19,10 +20,14 @@ Synchronously starts the haptic engine.
 func start() throws
 ```
 
+```objc
+- (BOOL) startAndReturnError:(NSError **) outError;
+```
+
 ## Mentions
 
-- [Playing a single-tap haptic pattern](playing-a-single-tap-haptic-pattern.md)
-- [Preparing your app to play haptics](preparing-your-app-to-play-haptics.md)
+- [Playing a single-tap haptic pattern](../playing-a-single-tap-haptic-pattern.md)
+- [Preparing your app to play haptics](../preparing-your-app-to-play-haptics.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ This method blocks all subsequent event processing on the current thread until t
 
 ## See Also
 
-- [func start(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/start(completionhandler:).md)
+### Starting and Stopping the Haptic Engine
+- [func start(completionHandler: (((any Error)?) -> Void)?)](./start%28completionhandler%29.md)
   Asynchronously starts the haptic engine.
-- [func stop(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/stop(completionhandler:).md)
+- [func stop(completionHandler: (((any Error)?) -> Void)?)](./stop%28completionhandler%29.md)
   Asynchronously stops the haptic engine and executes the completion handler once the engine has stopped.
-- [CHHapticEngine.CompletionHandler](chhapticengine/completionhandler.md)
+- [CHHapticEngine.CompletionHandler](./completionhandler.md)
   A typealias for a completion handler that the engine calls after starting or stopping.
 
 

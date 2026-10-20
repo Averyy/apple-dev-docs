@@ -1,7 +1,8 @@
 # HMSignificantEvent
 
 **Framework**: HomeKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event that represents significant time-based events, including sunrise and sunset.
 
@@ -19,31 +20,36 @@ An event that represents significant time-based events, including sunrise and su
 struct HMSignificantEvent
 ```
 
+```c
+typedef NSString * HMSignificantEvent;
+```
+
 ## Topics
 
 ### Significant event properties
-- [static let sunrise: HMSignificantEvent](hmsignificantevent/sunrise.md)
+- [static let sunrise: HMSignificantEvent](./hmsignificantevent/sunrise.md)
   An event that fires at sunrise.
-- [static let sunset: HMSignificantEvent](hmsignificantevent/sunset.md)
+- [static let sunset: HMSignificantEvent](./hmsignificantevent/sunset.md)
   An event that fires at sunset.
 ### Creating a significant event
-- [init(String)](hmsignificantevent/init(_:).md)
-- [init(rawValue: String)](hmsignificantevent/init(rawvalue:).md)
+- [init(String)](./hmsignificantevent/init%28_%29.md)
+- [init(rawValue: String)](./hmsignificantevent/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMSignificantTimeEvent](hmsignificanttimeevent.md)
+### Significant events
+- [class HMSignificantTimeEvent](./hmsignificanttimeevent.md)
   An event that fires at a time offset from a significant time-based event.
-- [class HMMutableSignificantTimeEvent](hmmutablesignificanttimeevent.md)
+- [class HMMutableSignificantTimeEvent](./hmmutablesignificanttimeevent.md)
   A mutable event that fires at the specified temporal offset to a significant event.
 
 

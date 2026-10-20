@@ -1,7 +1,8 @@
 # becomeActiveIfPossible(completion:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system to make the session the active Now Playing session if possible.
 
@@ -15,7 +16,15 @@ Tells the system to make the session the active Now Playing session if possible.
 ## Declaration
 
 ```swift
+func becomeActiveIfPossible(completion: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func becomeActiveIfPossible() async -> Bool
+```
+
+```objc
+- (void) becomeActiveIfPossibleWithCompletion:(void (^)(BOOL isActive)) completion;
 ```
 
 ## Parameters
@@ -24,9 +33,10 @@ func becomeActiveIfPossible() async -> Bool
 
 ## See Also
 
-- [var isActive: Bool](mpnowplayingsession/isactive.md)
+### Managing the active state
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether the session is the app’s active Now Playing session.
-- [var canBecomeActive: Bool](mpnowplayingsession/canbecomeactive.md)
+- [var canBecomeActive: Bool](./canbecomeactive.md)
   A Boolean value that indicates whether the session can become the app’s active Now Playing session.
 
 

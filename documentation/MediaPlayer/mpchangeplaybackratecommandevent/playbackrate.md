@@ -1,7 +1,8 @@
 # playbackRate
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The chosen playback rate for the command event.
 
@@ -20,9 +21,13 @@ The chosen playback rate for the command event.
 var playbackRate: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float playbackRate;
+```
+
 #### Discussion
 
-The `playbackRate` property is equal to a value stored in the [`supportedPlaybackRates`](mpchangeplaybackratecommand/supportedplaybackrates.md) array.
+The `playbackRate` property is equal to a value stored in the [`supportedPlaybackRates`](../mpchangeplaybackratecommand/supportedplaybackrates.md) array.
 
 
 ---

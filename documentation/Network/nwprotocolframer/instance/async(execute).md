@@ -1,7 +1,8 @@
 # async(execute:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that a block be executed on the connection’s internal scheduling context.
 
@@ -26,9 +27,10 @@ You should call this if you need to call any framer functions but are in another
 
 ## See Also
 
-- [func scheduleWakeup(wakeupTime: NWProtocolFramer.Instance.WakeupTime)](nwprotocolframer/instance/schedulewakeup(wakeuptime:).md)
-  Requests that [`wakeup(framer:)`](nwprotocolframerimplementation/wakeup(framer:).md) be called on your protocol at a specific time in the future.
-- [NWProtocolFramer.Instance.WakeupTime](nwprotocolframer/instance/wakeuptime.md)
+### Handling Asynchronous Events
+- [func scheduleWakeup(wakeupTime: NWProtocolFramer.Instance.WakeupTime)](./schedulewakeup%28wakeuptime%29.md)
+  Requests that [`wakeup(framer:)`](../../nwprotocolframerimplementation/wakeup%28framer%29.md) be called on your protocol at a specific time in the future.
+- [NWProtocolFramer.Instance.WakeupTime](./wakeuptime.md)
   Times at which to schedule a protocol wakeup.
 
 

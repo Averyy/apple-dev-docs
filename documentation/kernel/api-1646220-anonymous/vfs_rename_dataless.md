@@ -1,14 +1,15 @@
 # VFS_RENAME_DATALESS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 VFS_RENAME_DATALESS = 0x00000008
 ```
 

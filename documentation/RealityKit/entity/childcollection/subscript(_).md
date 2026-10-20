@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified position. (See `Collection.subscript`.)
 
@@ -11,7 +12,7 @@ Accesses the element at the specified position. (See `Collection.subscript`.)
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

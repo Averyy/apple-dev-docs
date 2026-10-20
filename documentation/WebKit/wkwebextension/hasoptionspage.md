@@ -1,7 +1,8 @@
 # hasOptionsPage
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the extension has an options page.
 
@@ -18,9 +19,13 @@ A Boolean value indicating whether the extension has an options page.
 var hasOptionsPage: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasOptionsPage;
+```
+
 #### Discussion
 
-If this property is `YES`, the extension includes a dedicated options page where users can customize settings. The app should provide access to this page through a user interface element, which can be accessed via [`optionsPageURL`](wkwebextensioncontext/optionspageurl.md) on an extension context.
+If this property is `YES`, the extension includes a dedicated options page where users can customize settings. The app should provide access to this page through a user interface element, which can be accessed via [`optionsPageURL`](../wkwebextensioncontext/optionspageurl.md) on an extension context.
 
 
 ---

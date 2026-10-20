@@ -1,14 +1,15 @@
 # cpuid_arch_perf_leafp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 cpuid_arch_perf_leaf_t *cpuid_arch_perf_leafp;
 ```
 

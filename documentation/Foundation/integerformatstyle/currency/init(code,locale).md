@@ -1,7 +1,8 @@
 # init(code:locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer currency format style that uses the given currency code and locale.
 
@@ -23,7 +24,7 @@ init(code: String, locale: Locale = .autoupdatingCurrent)
 ## Parameters
 
 - `code`: The currency code to use, such as `EUR` or `JPY`.
-- `locale`: The locale to use when formatting or parsing integers. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
+- `locale`: The locale to use when formatting or parsing integers. Defaults to [`autoupdatingCurrent`](../../locale/autoupdatingcurrent.md).
 
 
 ---

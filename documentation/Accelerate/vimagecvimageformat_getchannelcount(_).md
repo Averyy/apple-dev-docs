@@ -1,7 +1,8 @@
 # vImageCVImageFormat_GetChannelCount(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of channels, including alpha, for the Core Video image format.
 
@@ -20,6 +21,10 @@ Returns the number of channels, including alpha, for the Core Video image format
 func vImageCVImageFormat_GetChannelCount(_ format: vImageConstCVImageFormat) -> UInt32
 ```
 
+```c
+uint32_t vImageCVImageFormat_GetChannelCount(vImageConstCVImageFormatRef format);
+```
+
 #### Return Value
 
 The number of channels.
@@ -28,7 +33,7 @@ The number of channels.
 
 This function returns the number of interleaved or planar channels.
 
-The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChannelCount(_:)`](vimagecvimageformat_getchannelcount(_:).md):
+The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChannelCount(_:)`](./vimagecvimageformat_getchannelcount%28_%29.md):
 
 **Swift**:
 
@@ -55,15 +60,17 @@ uint32_t channelCount = vImageCVImageFormat_GetChannelCount(constFormat);
 
 ## See Also
 
-- [var channelCount: UInt32](vimagecvimageformat/channelcount.md)
+### Related Documentation
+- [var channelCount: UInt32](./vimagecvimageformat/channelcount.md)
   The number of channels, including alpha, for the Core Video image format.
-- [func vImageCVImageFormat_GetChannelDescription(vImageConstCVImageFormat, vImageBufferTypeCode) -> UnsafePointer<vImageChannelDescription>!](vimagecvimageformat_getchanneldescription(_:_:).md)
+### Querying and setting channel information
+- [func vImageCVImageFormat_GetChannelDescription(vImageConstCVImageFormat, vImageBufferTypeCode) -> UnsafePointer<vImageChannelDescription>!](./vimagecvimageformat_getchanneldescription%28_,_%29.md)
   Returns the channel description for a particular channel type.
-- [func vImageCVImageFormat_CopyChannelDescription(vImageCVImageFormat, UnsafePointer<vImageChannelDescription>, vImageBufferTypeCode) -> vImage_Error](vimagecvimageformat_copychanneldescription(_:_:_:).md)
+- [func vImageCVImageFormat_CopyChannelDescription(vImageCVImageFormat, UnsafePointer<vImageChannelDescription>, vImageBufferTypeCode) -> vImage_Error](./vimagecvimageformat_copychanneldescription%28_,_,_%29.md)
   Copies the channel description for a particular channel type to an image format.
-- [func vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormat) -> UnsafePointer<vImageBufferTypeCode>!](vimagecvimageformat_getchannelnames(_:).md)
+- [func vImageCVImageFormat_GetChannelNames(vImageConstCVImageFormat) -> UnsafePointer<vImageBufferTypeCode>!](./vimagecvimageformat_getchannelnames%28_%29.md)
   Returns the names of the channels of a Core Video image format.
-- [struct vImageChannelDescription](vimagechanneldescription.md)
+- [struct vImageChannelDescription](./vimagechanneldescription.md)
   A description of the range and clamp limits for a pixel format.
 
 

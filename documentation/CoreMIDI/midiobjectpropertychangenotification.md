@@ -1,18 +1,19 @@
 # MIDIObjectPropertyChangeNotification
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that describes the change to an object property.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,30 +21,35 @@ A message that describes the change to an object property.
 struct MIDIObjectPropertyChangeNotification
 ```
 
+```c
+struct MIDIObjectPropertyChangeNotification;
+```
+
 ## Topics
 
 ### Inspecting the Notification
-- [var messageID: MIDINotificationMessageID](midiobjectpropertychangenotification/messageid.md)
+- [var messageID: MIDINotificationMessageID](./midiobjectpropertychangenotification/messageid.md)
   The message type.
-- [var messageSize: UInt32](midiobjectpropertychangenotification/messagesize.md)
+- [var messageSize: UInt32](./midiobjectpropertychangenotification/messagesize.md)
   The message size.
-- [var object: MIDIObjectRef](midiobjectpropertychangenotification/object.md)
+- [var object: MIDIObjectRef](./midiobjectpropertychangenotification/object.md)
   The object whose property changed.
-- [var objectType: MIDIObjectType](midiobjectpropertychangenotification/objecttype.md)
+- [var objectType: MIDIObjectType](./midiobjectpropertychangenotification/objecttype.md)
   The object type.
-- [var propertyName: Unmanaged<CFString>](midiobjectpropertychangenotification/propertyname.md)
+- [var propertyName: Unmanaged<CFString>](./midiobjectpropertychangenotification/propertyname.md)
   The name of the modified property.
 ### Initializers
-- [init(messageID: MIDINotificationMessageID, messageSize: UInt32, object: MIDIObjectRef, objectType: MIDIObjectType, propertyName: Unmanaged<CFString>)](midiobjectpropertychangenotification/init(messageid:messagesize:object:objecttype:propertyname:).md)
+- [init(messageID: MIDINotificationMessageID, messageSize: UInt32, object: MIDIObjectRef, objectType: MIDIObjectType, propertyName: Unmanaged<CFString>)](./midiobjectpropertychangenotification/init%28messageid,messagesize,object,objecttype,propertyname%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct MIDIObjectAddRemoveNotification](midiobjectaddremovenotification.md)
+### Notifications
+- [struct MIDIObjectAddRemoveNotification](./midiobjectaddremovenotification.md)
   A message that describes the addition or removal of an object.
 
 

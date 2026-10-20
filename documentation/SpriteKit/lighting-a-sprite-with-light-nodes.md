@@ -1,16 +1,17 @@
 # Lighting a Sprite with Light Nodes
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Add lighting and shadows to your scene with light nodes.
 
 #### Overview
 
-You can use a sprite’s lighting properties, [`lightingBitMask`](skspritenode/lightingbitmask.md), [`shadowCastBitMask`](skspritenode/shadowcastbitmask.md) and [`shadowedBitMask`](skspritenode/shadowedbitmask.md), to apply effects such as illumination and shadow casting and receiving. These can be used in conjunction with normal mapping to simulate 3D lighting.
+You can use a sprite’s lighting properties, [`lightingBitMask`](./skspritenode/lightingbitmask.md), [`shadowCastBitMask`](./skspritenode/shadowcastbitmask.md) and [`shadowedBitMask`](./skspritenode/shadowedbitmask.md), to apply effects such as illumination and shadow casting and receiving. These can be used in conjunction with normal mapping to simulate 3D lighting.
 
 The following figure shows a normal mapped sprite node acting as background and two shadow casting sprite nodes (each with a rabbit texture).
 
-The [`SKLightNode`](sklightnode.md) object’s [`categoryBitMask`](sklightnode/categorybitmask.md) matches the lighting bit mask of the background, and the lighting and shadow bit masks of the two rabbits:
+The [`SKLightNode`](./sklightnode.md) object’s [`categoryBitMask`](./sklightnode/categorybitmask.md) matches the lighting bit mask of the background, and the lighting and shadow bit masks of the two rabbits:
 
 ```swift
 // Create the background sprite node
@@ -42,7 +43,7 @@ for position in [CGPoint(x: x, y: y), CGPoint(x: y, y: y)] {
 
 The resulting scene shows the two rabbits casting shadows over the background (the light is rendered as a white circle). The noise texture gains a 3D look from the normal mapping:
 
-![Shadow casting and normal mapping](/images/com.apple.spritekit/media-2983060@2x.png)
+![Shadow casting and normal mapping](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2983060@2x.png)
 
 
 ---

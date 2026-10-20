@@ -1,14 +1,15 @@
 # fpu_fsw
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 struct fp_status fpu_fsw;
 ```
 

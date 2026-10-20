@@ -1,7 +1,8 @@
 # photoIDRawData(retaining:notRetaining:issuerIdentifiers:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request which retrieves photo ID elements from the holder and returns the raw response data for processing.
 
@@ -15,6 +16,8 @@ A request which retrieves photo ID elements from the holder and returns the raw 
 ```swift
 static func photoIDRawData(retaining retainedElements: [MobilePhotoIDRawDataRequest.Element] = [], notRetaining nonRetainedElements: [MobilePhotoIDRawDataRequest.Element] = [], issuerIdentifiers: [Data] = []) -> Self
 ```
+
+Available when `Self` is `MobilePhotoIDRawDataRequest`.
 
 
 ---

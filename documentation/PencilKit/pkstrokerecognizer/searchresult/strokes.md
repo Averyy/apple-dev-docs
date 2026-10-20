@@ -1,7 +1,8 @@
 # strokes
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of the strokes the result contains.
 
@@ -20,7 +21,8 @@ let strokes: Set<UUID>
 
 ## See Also
 
-- [let bounds: CGRect](pkstrokerecognizer/searchresult/bounds.md)
+### Getting the result data
+- [let bounds: CGRect](./bounds.md)
   The bounds of the matched strokes in the coordinate space of their drawing.
 
 

@@ -1,7 +1,8 @@
 # init(appExtensionPoint:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new monitor and configures it with the specified extension point.
 
@@ -30,7 +31,8 @@ Use this initializer to create a monitor and start looking for app extensions th
 
 ## See Also
 
-- [init()](appextensionpoint/monitor/init.md)
+### Creating a monitor
+- [init()](./init%28%29.md)
   Creates a new monitor without any extension points.
 
 

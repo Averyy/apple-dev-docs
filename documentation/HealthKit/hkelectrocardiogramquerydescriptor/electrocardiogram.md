@@ -1,7 +1,8 @@
 # electrocardiogram
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sample that contains the voltage measurements.
 
@@ -10,7 +11,7 @@ The sample that contains the voltage measurements.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration

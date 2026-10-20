@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the delegate of the receiver.
 
@@ -13,6 +14,10 @@ Returns the delegate of the receiver.
 ```swift
 @IBOutlet
 unowned(unsafe) var delegate: AnyObject! { get set }
+```
+
+```objc
+@property (assign) id delegate;
 ```
 
 #### Return Value

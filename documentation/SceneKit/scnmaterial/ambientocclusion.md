@@ -1,18 +1,19 @@
 # ambientOcclusion
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides color values to be multiplied with the ambient light affecting the material.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,20 +21,25 @@ An object that provides color values to be multiplied with the ambient light aff
 var ambientOcclusion: SCNMaterialProperty { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SCNMaterialProperty * ambientOcclusion;
+```
+
 #### Discussion
 
-Use this property to assign an ambient occlusion texture map to a surface. This property has no effect if there is no ambient light in the scene. If this property is not `nil`, SceneKit ignores the [`ambient`](scnmaterial/ambient.md) property.
+Use this property to assign an ambient occlusion texture map to a surface. This property has no effect if there is no ambient light in the scene. If this property is not `nil`, SceneKit ignores the [`ambient`](./ambient.md) property.
 
-When using physically-based shading (see [`physicallyBased`](scnmaterial/lightingmodel-swift.struct/physicallybased.md)), ambient occlusion approximates large-scale surface details that obscure global illumination.
+When using physically-based shading (see [`physicallyBased`](./lightingmodel-swift.struct/physicallybased.md)), ambient occlusion approximates large-scale surface details that obscure global illumination.
 
 ## See Also
 
-- [var normal: SCNMaterialProperty](scnmaterial/normal.md)
+### Visual Properties for Special Effects
+- [var normal: SCNMaterialProperty](./normal.md)
   An object that defines the nominal orientation of the surface at each point for use in lighting.
-- [var displacement: SCNMaterialProperty](scnmaterial/displacement.md)
-- [var emission: SCNMaterialProperty](scnmaterial/emission.md)
+- [var displacement: SCNMaterialProperty](./displacement.md)
+- [var emission: SCNMaterialProperty](./emission.md)
   An object that defines the color emitted by each point on a surface.
-- [var selfIllumination: SCNMaterialProperty](scnmaterial/selfillumination.md)
+- [var selfIllumination: SCNMaterialProperty](./selfillumination.md)
   An object that provides color values representing the global illumination of the surface.
 
 

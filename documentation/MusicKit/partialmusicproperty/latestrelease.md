@@ -1,7 +1,8 @@
 # latestRelease
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns the artist’s most recent album.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns the artist’s most rece
 ```swift
 static let latestRelease: MusicRelationshipProperty<Artist, Album>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

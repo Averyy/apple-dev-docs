@@ -1,7 +1,8 @@
 # LibraryArtists.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for a library artist resource.
 
@@ -10,26 +11,31 @@ The relationships for a library artist resource.
 
 ## Declaration
 
-```swift
+```
 object LibraryArtists.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibraryArtists.Relationships.LibraryArtistsAlbumsRelationship](libraryartists/relationships-data.dictionary/libraryartistsalbumsrelationship.md)
+- [object LibraryArtists.Relationships.LibraryArtistsAlbumsRelationship](./relationships-data.dictionary/libraryartistsalbumsrelationship.md)
   A relationship from the library artist to thier albums.
-- [object LibraryArtists.Relationships.LibraryArtistsCatalogRelationship](libraryartists/relationships-data.dictionary/libraryartistscatalogrelationship.md)
+- [object LibraryArtists.Relationships.LibraryArtistsCatalogRelationship](./relationships-data.dictionary/libraryartistscatalogrelationship.md)
   A relationship from the library artist to their associated catalog content.
 
 ## Properties
 
-- `albums` (LibraryArtists.Relationships.LibraryArtistsAlbumsRelationship): The library albums associated with the artist. By default, `albums` not included. It’s available only when fetching a single library artist resource by ID. Fetch limits: 25 default, 100 maximum
-- `catalog` (LibraryArtists.Relationships.LibraryArtistsCatalogRelationship): The artist in the Apple Music catalog the library artist is associated with, when known. Fetch limits: None (associated with, at most, one catalog artist).
+- `albums` (LibraryArtists.Relationships.LibraryArtistsAlbumsRelationship): The library albums associated with the artist. By default, `albums` not included. It’s available only when fetching a single library artist resource by ID.
+
+  Fetch limits: 25 default, 100 maximum
+- `catalog` (LibraryArtists.Relationships.LibraryArtistsCatalogRelationship): The artist in the Apple Music catalog the library artist is associated with, when known.
+
+  Fetch limits: None (associated with, at most, one catalog artist).
 
 ## See Also
 
-- [object LibraryArtists.Attributes](libraryartists/attributes-data.dictionary.md)
+### Related Objects
+- [object LibraryArtists.Attributes](./attributes-data.dictionary.md)
   The attributes for a library artist resource.
 
 

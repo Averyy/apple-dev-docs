@@ -1,7 +1,8 @@
 # writingToolsCoordinator(_:requestsPreviewFor:of:in:textDecoration:completion:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for preview images for the specified text.
 
@@ -11,7 +12,15 @@ Asks the delegate for preview images for the specified text.
 ## Declaration
 
 ```swift
+optional func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinator, requestsPreviewFor textAnimation: NSWritingToolsCoordinator.TextAnimation, of range: NSRange, in context: NSWritingToolsCoordinator.Context, textDecoration: NSWritingToolsCoordinator.TextDecoration, completion: @escaping @Sendable ([NSTextPreview]?) -> Void)
+```
+
+```swift
 optional func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinator, previewFor textAnimation: NSWritingToolsCoordinator.TextAnimation, range: NSRange, context: NSWritingToolsCoordinator.Context, textDecoration: NSWritingToolsCoordinator.TextDecoration) async -> [NSTextPreview]?
+```
+
+```objc
+- (void) writingToolsCoordinator:(NSWritingToolsCoordinator *) writingToolsCoordinator requestsPreviewForTextAnimation:(NSWritingToolsCoordinatorTextAnimation) textAnimation ofRange:(NSRange) range inContext:(NSWritingToolsCoordinatorContext *) context textDecoration:(NSWritingToolsCoordinatorTextDecoration) textDecoration completion:(void (^)(NSArray<NSTextPreview *> *textPreviews)) completion;
 ```
 
 #### Discussion

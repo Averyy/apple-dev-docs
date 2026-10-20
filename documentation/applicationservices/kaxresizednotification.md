@@ -1,7 +1,8 @@
 # kAXResizedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The window has changed size.
 
@@ -12,6 +13,10 @@ The window has changed size.
 
 ```swift
 var kAXResizedNotification: String { get }
+```
+
+```c
+#define kAXResizedNotification
 ```
 
 

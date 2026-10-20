@@ -4351,7 +4351,7 @@
       "hash": "07c3684e121fb987b5c840231df51bdb37d2c913bf83792c1bba90a859cbb85e"
     },
     "https://developer.apple.com/documentation/avfoundation/avcaptionregion/identifier": {
-      "etag": "\"22f8-65d55e1200ae1-df\"",
+      "etag": "\"22f8-65d55e1200ae1\"",
       "file_path": "documentation/AVFoundation/avcaptionregion/identifier.md",
       "hash": "90880811541d051e2c8944d7cbd1b2e125d109e435a41a1ce01b1433b807a700"
     },
@@ -11136,7 +11136,7 @@
       "hash": "c16e1dbb5f5e0c4e00bdfa8e992063766169a9ab28fabb00a0494ec943611608"
     },
     "https://developer.apple.com/documentation/avfoundation/avcontentkey/externalcontentprotectionstatus": {
-      "etag": "\"31f7-65d55e109d9a6-df\"",
+      "etag": "\"31f7-65d55e109d9a6\"",
       "file_path": "documentation/AVFoundation/avcontentkey/externalcontentprotectionstatus.md",
       "hash": "73cf267a80da2775abc46c072f74421b7e56fe4675ac9ed2c2400e628e765e50"
     },
@@ -30961,7 +30961,7 @@
       "hash": "07c3684e121fb987b5c840231df51bdb37d2c913bf83792c1bba90a859cbb85e"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcaptionregion/identifier.json": {
-      "etag": "\"22f8-65d55e1200ae1-df\"",
+      "etag": "\"22f8-65d55e1200ae1\"",
       "file_path": "documentation/AVFoundation/avcaptionregion/identifier.md",
       "hash": "90880811541d051e2c8944d7cbd1b2e125d109e435a41a1ce01b1433b807a700"
     },
@@ -37746,7 +37746,7 @@
       "hash": "c16e1dbb5f5e0c4e00bdfa8e992063766169a9ab28fabb00a0494ec943611608"
     },
     "https://developer.apple.com/tutorials/data/documentation/avfoundation/avcontentkey/externalcontentprotectionstatus.json": {
-      "etag": "\"31f7-65d55e109d9a6-df\"",
+      "etag": "\"31f7-65d55e109d9a6\"",
       "file_path": "documentation/AVFoundation/avcontentkey/externalcontentprotectionstatus.md",
       "hash": "73cf267a80da2775abc46c072f74421b7e56fe4675ac9ed2c2400e628e765e50"
     },
@@ -53234,6 +53234,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 10647
   }
 }

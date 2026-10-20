@@ -1,7 +1,8 @@
 # selectedMarkup
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selected contents in the UI.
 
@@ -21,9 +22,10 @@ The selected contents in the UI.
 
 ## See Also
 
-- [var selection: Set<MarkupOrderedSet.ElementID>](papermarkupviewcontroller/selection.md)
+### Selecting elements
+- [var selection: Set<MarkupOrderedSet.ElementID>](./selection.md)
   The current selected elements on the canvas.
-- [func suggestedFrameForInserting(contentInFrame: CGRect) -> CGRect](papermarkupviewcontroller/suggestedframeforinserting(contentinframe:).md)
+- [func suggestedFrameForInserting(contentInFrame: CGRect) -> CGRect](./suggestedframeforinserting%28contentinframe%29.md)
   Returns the suggested frame for inserting shapes and other content.
 
 

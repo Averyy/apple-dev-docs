@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](cksyncengine-5sie5/configuration/description.md)
+- [var description: String](./description.md)
   A textual description of the configuration that’s suitable for logging.
 
 

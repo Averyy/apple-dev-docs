@@ -1,7 +1,8 @@
 # TreeWalker
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,25 +10,25 @@
 
 ## Declaration
 
-```swift
+```
 interface TreeWalker
 ```
 
 ## Topics
 
 ### Instance Properties
-- [currentNode](treewalker/1630897-currentnode.md)
-- [filter](treewalker/1633653-filter.md)
-- [root](treewalker/1633800-root.md)
-- [whatToShow](treewalker/1629733-whattoshow.md)
+- [currentNode](./treewalker/api-1630897-currentnode.md)
+- [filter](./treewalker/api-1633653-filter.md)
+- [root](./treewalker/api-1633800-root.md)
+- [whatToShow](./treewalker/api-1629733-whattoshow.md)
 ### Instance Methods
-- [firstChild](treewalker/1629344-firstchild.md)
-- [lastChild](treewalker/1634347-lastchild.md)
-- [nextNode](treewalker/1631683-nextnode.md)
-- [nextSibling](treewalker/1630342-nextsibling.md)
-- [parentNode](treewalker/1629207-parentnode.md)
-- [previousNode](treewalker/1631960-previousnode.md)
-- [previousSibling](treewalker/1630368-previoussibling.md)
+- [firstChild](./treewalker/api-1629344-firstchild.md)
+- [lastChild](./treewalker/api-1634347-lastchild.md)
+- [nextNode](./treewalker/api-1631683-nextnode.md)
+- [nextSibling](./treewalker/api-1630342-nextsibling.md)
+- [parentNode](./treewalker/api-1629207-parentnode.md)
+- [previousNode](./treewalker/api-1631960-previousnode.md)
+- [previousSibling](./treewalker/api-1630368-previoussibling.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # controlSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the control.
 
@@ -14,13 +15,18 @@ The size of the control.
 var controlSize: NSControl.ControlSize { get set }
 ```
 
+```objc
+@property NSControlSize controlSize;
+```
+
 ## See Also
 
-- [NSControl.ControlSize](nscontrol/controlsize-swift.enum.md)
+### Resizing the Control
+- [NSControl.ControlSize](./controlsize-swift.enum.md)
   A constant for specifying a cell’s size.
-- [func sizeThatFits(NSSize) -> NSSize](nscontrol/sizethatfits(_:).md)
+- [func sizeThatFits(NSSize) -> NSSize](./sizethatfits%28_%29.md)
   Asks the control to calculate and return the size that best fits the specified size.
-- [func sizeToFit()](nscontrol/sizetofit.md)
+- [func sizeToFit()](./sizetofit%28%29.md)
   Resizes the receiver’s frame so that it’s the minimum size needed to contain its cell.
 
 

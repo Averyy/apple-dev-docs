@@ -1,7 +1,8 @@
 # IOUserAudioStreamTerminalType
 
 **Framework**: AudioDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the terminal type of an audio stream.
 
@@ -10,47 +11,48 @@ Constants that describe the terminal type of an audio stream.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserAudioStreamTerminalType : uint32_t;
 ```
 
 ## Topics
 
 ### Speakers
-- [Speaker](audiodriverkit/iouseraudiostreamterminaltype/speaker.md)
+- [Speaker](./iouseraudiostreamterminaltype/speaker.md)
   An audio speaker.
-- [ReceiverSpeaker](audiodriverkit/iouseraudiostreamterminaltype/receiverspeaker.md)
+- [ReceiverSpeaker](./iouseraudiostreamterminaltype/receiverspeaker.md)
   A speaker on a telephone handset receiver.
-- [LFESpeaker](audiodriverkit/iouseraudiostreamterminaltype/lfespeaker.md)
+- [LFESpeaker](./iouseraudiostreamterminaltype/lfespeaker.md)
   A speaker for low-frequency effects.
 ### Microphones
-- [Microphone](audiodriverkit/iouseraudiostreamterminaltype/microphone.md)
+- [Microphone](./iouseraudiostreamterminaltype/microphone.md)
   An audio microphone.
-- [HeadsetMicrophone](audiodriverkit/iouseraudiostreamterminaltype/headsetmicrophone.md)
+- [HeadsetMicrophone](./iouseraudiostreamterminaltype/headsetmicrophone.md)
   A microphone attached to a headset.
-- [ReceiverMicrophone](audiodriverkit/iouseraudiostreamterminaltype/receivermicrophone.md)
+- [ReceiverMicrophone](./iouseraudiostreamterminaltype/receivermicrophone.md)
   A microphone on a telephone receiver.
 ### Headphones and Headsets
-- [Headphones](audiodriverkit/iouseraudiostreamterminaltype/headphones.md)
+- [Headphones](./iouseraudiostreamterminaltype/headphones.md)
   An audio headphones device.
 ### Accessibility Devices
-- [TTY](audiodriverkit/iouseraudiostreamterminaltype/tty.md)
+- [TTY](./iouseraudiostreamterminaltype/tty.md)
   A device that serves as a teletypewriter (TTY) terminal.
 ### Audio Interfaces
-- [Line](audiodriverkit/iouseraudiostreamterminaltype/line.md)
+- [Line](./iouseraudiostreamterminaltype/line.md)
   A line-level stream.
-- [DigitalAudioInterface](audiodriverkit/iouseraudiostreamterminaltype/digitalaudiointerface.md)
+- [DigitalAudioInterface](./iouseraudiostreamterminaltype/digitalaudiointerface.md)
   A stream to or from a digital audio interface, defined by ISO 60958.
 ### Enumeration Cases
-- [DisplayPort](audiodriverkit/iouseraudiostreamterminaltype/displayport.md)
-- [HDMI](audiodriverkit/iouseraudiostreamterminaltype/hdmi.md)
-- [Unknown](audiodriverkit/iouseraudiostreamterminaltype/unknown.md)
+- [DisplayPort](./iouseraudiostreamterminaltype/displayport.md)
+- [HDMI](./iouseraudiostreamterminaltype/hdmi.md)
+- [Unknown](./iouseraudiostreamterminaltype/unknown.md)
 
 ## See Also
 
-- [SetTerminalType](iouseraudiostream/setterminaltype.md)
+### Working with Stream Terminals
+- [SetTerminalType](../iouseraudiostream/setterminaltype.md)
   Sets the terminal type of the stream.
-- [GetTerminalType](iouseraudiostream/getterminaltype.md)
+- [GetTerminalType](../iouseraudiostream/getterminaltype.md)
   Gets the terminal type of the stream.
 
 

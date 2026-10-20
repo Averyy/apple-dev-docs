@@ -1,9 +1,10 @@
 # ==(_:_:)
 
 **Framework**: SwiftData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
-Two sections are equal if they have the same [`title`](resultssection/title.md) and contain the same elements, in the same order.
+Two sections are equal if they have the same [`title`](./title.md) and contain the same elements, in the same order.
 
 **Availability**:
 - iOS 27.0+
@@ -19,6 +20,8 @@ Two sections are equal if they have the same [`title`](resultssection/title.md) 
 ```swift
 static func == (lhs: ResultsSection<Element, SectionTitle>, rhs: ResultsSection<Element, SectionTitle>) -> Bool
 ```
+
+Available when `Element` conforms to `PersistentModel` and `SectionTitle` conforms to `Hashable`.
 
 
 ---

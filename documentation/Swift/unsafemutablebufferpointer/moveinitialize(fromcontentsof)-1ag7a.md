@@ -1,7 +1,8 @@
 # moveInitialize(fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves every element of an initialized source buffer into the uninitialized memory referenced by this buffer, leaving the source memory uninitialized and this buffer’s memory initialized.
 
@@ -30,7 +31,7 @@ Prior to calling the `moveInitialize(fromContentsOf:)` method on a buffer, the m
 
 The returned index is the position of the next uninitialized element in the buffer, one past the index of the last element written. If `source` contains no elements, the returned index is equal to the buffer’s `startIndex`. If `source` contains as many elements as the buffer can hold, the returned index is equal to the buffer’s `endIndex`.
 
-> **Note**: `self.count` >= `source.count`
+> **Precondition**: `self.count` >= `source.count`
 
 > **Note**: The memory regions referenced by `source` and this buffer may overlap.
 

@@ -1,12 +1,13 @@
 # start(at:flags:IOProcID:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts IO for the given AudioDeviceIOProcID and aligns the IO cycle of the device with the given time.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

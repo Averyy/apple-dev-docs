@@ -1,17 +1,18 @@
 # SCNetworkInterface
 
 **Framework**: System Configuration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The reference to an object that represents a network interface.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,25 +20,30 @@ The reference to an object that represents a network interface.
 class SCNetworkInterface
 ```
 
+```c
+typedef const struct __SCNetworkInterface * SCNetworkInterfaceRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [typealias SCBondInterface](scbondinterface.md)
+### Data Types
+- [typealias SCBondInterface](./scbondinterface.md)
   The reference to an object that represents an Ethernet bond interface.
-- [class SCBondStatus](scbondstatus.md)
+- [class SCBondStatus](./scbondstatus.md)
   The reference to an object that represents the status of an Ethernet bond interface.
-- [typealias SCVLANInterface](scvlaninterface.md)
+- [typealias SCVLANInterface](./scvlaninterface.md)
   The reference to an object that represents a virtual LAN (VLAN) interface.
-- [class SCNetworkProtocol](scnetworkprotocol.md)
+- [class SCNetworkProtocol](./scnetworkprotocol.md)
   The reference to an object that represents a network protocol.
-- [class SCNetworkService](scnetworkservice.md)
+- [class SCNetworkService](./scnetworkservice.md)
   The reference to an object that represents a network service.
-- [class SCNetworkSet](scnetworkset.md)
+- [class SCNetworkSet](./scnetworkset.md)
   The reference to an object that represents a network set.
 
 

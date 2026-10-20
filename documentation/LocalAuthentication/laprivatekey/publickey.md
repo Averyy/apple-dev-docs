@@ -1,7 +1,8 @@
 # publicKey
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The public key that corresponds with the private key in a key pair.
 
@@ -16,6 +17,10 @@ The public key that corresponds with the private key in a key pair.
 
 ```swift
 var publicKey: LAPublicKey { get }
+```
+
+```objc
+@property (nonatomic, readonly) LAPublicKey * publicKey;
 ```
 
 

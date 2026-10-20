@@ -1,7 +1,8 @@
 # init(alignment:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a spatial container layout with the specified 3D alignment.
 

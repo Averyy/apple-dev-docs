@@ -1,7 +1,8 @@
 # kMDItemGenre
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Genre of the movie. A CFString.
 
@@ -12,6 +13,10 @@ Genre of the movie. A CFString.
 
 ```swift
 let kMDItemGenre: CFString!
+```
+
+```c
+const CFStringRef kMDItemGenre;
 ```
 
 

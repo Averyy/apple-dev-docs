@@ -1,6 +1,8 @@
 # Creating a Metal dynamic library
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [CreatingAMetalDynamicLibrary.zip](https://docs-assets.developer.apple.com/published/77f04547135f/CreatingAMetalDynamicLibrary.zip)
 
 Compile a library of shaders and write it to a file as a dynamically linked library.
 
@@ -13,9 +15,9 @@ Compile a library of shaders and write it to a file as a dynamically linked libr
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC20 session [`10615: Build GPU Binaries with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10615/).
+> **Note**: This sample code project is associated with WWDC20 session [10615: Build GPU Binaries with Metal](https://developer.apple.com/wwdc20/10615/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 This sample requires the following system and software configuration:
 
@@ -25,7 +27,8 @@ This sample requires the following system and software configuration:
 
 ## See Also
 
-- [Using function specialization to build pipeline variants](using-function-specialization-to-build-pipeline-variants.md)
+### Shaders
+- [Using function specialization to build pipeline variants](./using-function-specialization-to-build-pipeline-variants.md)
   Create pipelines for different levels of detail from a common shader source.
 
 

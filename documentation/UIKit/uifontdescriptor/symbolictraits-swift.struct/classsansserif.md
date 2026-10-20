@@ -1,7 +1,8 @@
 # classSansSerif
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The font’s characters don’t have serifs.
 
@@ -9,7 +10,7 @@ The font’s characters don’t have serifs.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,41 +20,46 @@ The font’s characters don’t have serifs.
 static var classSansSerif: UIFontDescriptor.SymbolicTraits { get }
 ```
 
+```c
+UIFontDescriptorClassSansSerif
+```
+
 #### Discussion
 
 The font, excluding Scripts and Ornamentals, includes most basic letter forms without serifs on the strokes.
 
 ## See Also
 
-- [static var traitItalic: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traititalic.md)
+### Font traits
+- [static var traitItalic: UIFontDescriptor.SymbolicTraits](./traititalic.md)
   The font’s style is italic.
-- [static var traitBold: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traitbold.md)
+- [static var traitBold: UIFontDescriptor.SymbolicTraits](./traitbold.md)
   The font’s style is boldface.
-- [static var traitExpanded: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traitexpanded.md)
+- [static var traitExpanded: UIFontDescriptor.SymbolicTraits](./traitexpanded.md)
   The font’s characters have an expanded width.
-- [static var traitCondensed: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traitcondensed.md)
+- [static var traitCondensed: UIFontDescriptor.SymbolicTraits](./traitcondensed.md)
   The font’s characters have a condensed width.
-- [static var traitMonoSpace: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traitmonospace.md)
+- [static var traitMonoSpace: UIFontDescriptor.SymbolicTraits](./traitmonospace.md)
   The font’s characters all have the same width.
-- [static var traitVertical: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traitvertical.md)
+- [static var traitVertical: UIFontDescriptor.SymbolicTraits](./traitvertical.md)
   The font uses vertical glyph variants and metrics.
-- [static var traitUIOptimized: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traituioptimized.md)
+- [static var traitUIOptimized: UIFontDescriptor.SymbolicTraits](./traituioptimized.md)
   The font synthesizes appropriate attributes for user interface rendering, such as in control titles, if necessary.
-- [static var traitTightLeading: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traittightleading.md)
+- [static var traitTightLeading: UIFontDescriptor.SymbolicTraits](./traittightleading.md)
   The font uses a leading value that’s less than the default.
-- [static var traitLooseLeading: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/traitlooseleading.md)
+- [static var traitLooseLeading: UIFontDescriptor.SymbolicTraits](./traitlooseleading.md)
   The font uses a leading value that’s greater than the default.
-- [static var classMask: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/classmask.md)
+- [static var classMask: UIFontDescriptor.SymbolicTraits](./classmask.md)
   The font family class mask that you use to access font descriptor values.
-- [static var classOldStyleSerifs: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/classoldstyleserifs.md)
+- [static var classOldStyleSerifs: UIFontDescriptor.SymbolicTraits](./classoldstyleserifs.md)
   The font’s characters include serifs, and reflect the Latin printing style of the 15th to 17th centuries.
-- [static var classTransitionalSerifs: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/classtransitionalserifs.md)
+- [static var classTransitionalSerifs: UIFontDescriptor.SymbolicTraits](./classtransitionalserifs.md)
   The font’s characters include serifs, and reflect the Latin printing style of the 18th to 19th centuries.
-- [static var classModernSerifs: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/classmodernserifs.md)
+- [static var classModernSerifs: UIFontDescriptor.SymbolicTraits](./classmodernserifs.md)
   The font’s characters include serifs, and reflect the Latin printing style of the 20th century.
-- [static var classClarendonSerifs: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/classclarendonserifs.md)
+- [static var classClarendonSerifs: UIFontDescriptor.SymbolicTraits](./classclarendonserifs.md)
   The font’s characters include variations of old style and transitional serifs.
-- [static var classSlabSerifs: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct/classslabserifs.md)
+- [static var classSlabSerifs: UIFontDescriptor.SymbolicTraits](./classslabserifs.md)
   The font’s characters use square transitions, without brackets, between strokes and serifs.
 
 

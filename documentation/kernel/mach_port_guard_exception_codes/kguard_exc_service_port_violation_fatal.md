@@ -1,14 +1,15 @@
 # kGUARD_EXC_SERVICE_PORT_VIOLATION_FATAL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_SERVICE_PORT_VIOLATION_FATAL = 7
 ```
 

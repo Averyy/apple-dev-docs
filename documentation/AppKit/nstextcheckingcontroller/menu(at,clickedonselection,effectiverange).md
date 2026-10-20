@@ -1,7 +1,8 @@
 # menu(at:clickedOnSelection:effectiveRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -12,23 +13,28 @@
 func menu(at location: Int, clickedOnSelection: Bool, effectiveRange: NSRangePointer) -> NSMenu?
 ```
 
+```objc
+- (NSMenu *) menuAtIndex:(NSUInteger) location clickedOnSelection:(BOOL) clickedOnSelection effectiveRange:(NSRangePointer) effectiveRange;
+```
+
 ## See Also
 
-- [func changeSpelling(Any?)](nstextcheckingcontroller/changespelling(_:).md)
-- [func checkSpelling(Any?)](nstextcheckingcontroller/checkspelling(_:).md)
-- [func checkText(in: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any])](nstextcheckingcontroller/checktext(in:types:options:).md)
-- [func checkTextInDocument(Any?)](nstextcheckingcontroller/checktextindocument(_:).md)
-- [func checkTextInSelection(Any?)](nstextcheckingcontroller/checktextinselection(_:).md)
-- [func considerTextChecking(for: NSRange)](nstextcheckingcontroller/considertextchecking(for:).md)
-- [func didChangeSelectedRange()](nstextcheckingcontroller/didchangeselectedrange.md)
-- [func didChangeText(in: NSRange)](nstextcheckingcontroller/didchangetext(in:).md)
-- [func ignoreSpelling(Any?)](nstextcheckingcontroller/ignorespelling(_:).md)
-- [func insertedText(in: NSRange)](nstextcheckingcontroller/insertedtext(in:).md)
-- [func invalidate()](nstextcheckingcontroller/invalidate.md)
-- [func orderFrontSubstitutionsPanel(Any?)](nstextcheckingcontroller/orderfrontsubstitutionspanel(_:).md)
-- [func showGuessPanel(Any?)](nstextcheckingcontroller/showguesspanel(_:).md)
-- [func updateCandidates()](nstextcheckingcontroller/updatecandidates.md)
-- [func validAnnotations() -> [NSAttributedString.Key]](nstextcheckingcontroller/validannotations.md)
+### Instance Methods
+- [func changeSpelling(Any?)](./changespelling%28_%29.md)
+- [func checkSpelling(Any?)](./checkspelling%28_%29.md)
+- [func checkText(in: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any])](./checktext%28in,types,options%29.md)
+- [func checkTextInDocument(Any?)](./checktextindocument%28_%29.md)
+- [func checkTextInSelection(Any?)](./checktextinselection%28_%29.md)
+- [func considerTextChecking(for: NSRange)](./considertextchecking%28for%29.md)
+- [func didChangeSelectedRange()](./didchangeselectedrange%28%29.md)
+- [func didChangeText(in: NSRange)](./didchangetext%28in%29.md)
+- [func ignoreSpelling(Any?)](./ignorespelling%28_%29.md)
+- [func insertedText(in: NSRange)](./insertedtext%28in%29.md)
+- [func invalidate()](./invalidate%28%29.md)
+- [func orderFrontSubstitutionsPanel(Any?)](./orderfrontsubstitutionspanel%28_%29.md)
+- [func showGuessPanel(Any?)](./showguesspanel%28_%29.md)
+- [func updateCandidates()](./updatecandidates%28%29.md)
+- [func validAnnotations() -> [NSAttributedString.Key]](./validannotations%28%29.md)
 
 
 ---

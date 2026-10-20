@@ -1,14 +1,15 @@
 # GSSD_STRING_NAME
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 GSSD_STRING_NAME = 0
 ```
 

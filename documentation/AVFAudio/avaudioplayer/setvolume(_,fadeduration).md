@@ -1,7 +1,8 @@
 # setVolume(_:fadeDuration:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the audio player’s volume over a duration of time.
 
@@ -20,6 +21,10 @@ Changes the audio player’s volume over a duration of time.
 func setVolume(_ volume: Float, fadeDuration duration: TimeInterval)
 ```
 
+```objc
+- (void) setVolume:(float) volume fadeDuration:(NSTimeInterval) duration;
+```
+
 ## Parameters
 
 - `volume`: The target volume.
@@ -27,15 +32,16 @@ func setVolume(_ volume: Float, fadeDuration duration: TimeInterval)
 
 ## See Also
 
-- [var volume: Float](avaudioplayer/volume.md)
+### Configuring playback settings
+- [var volume: Float](./volume.md)
   The audio player’s volume relative to other audio output.
-- [var pan: Float](avaudioplayer/pan.md)
+- [var pan: Float](./pan.md)
   The audio player’s stereo pan position.
-- [var enableRate: Bool](avaudioplayer/enablerate.md)
+- [var enableRate: Bool](./enablerate.md)
   A Boolean value that indicates whether you can adjust the playback rate of the audio player.
-- [var rate: Float](avaudioplayer/rate.md)
+- [var rate: Float](./rate.md)
   The audio player’s playback rate.
-- [var numberOfLoops: Int](avaudioplayer/numberofloops.md)
+- [var numberOfLoops: Int](./numberofloops.md)
   The number of times the audio repeats playback.
 
 

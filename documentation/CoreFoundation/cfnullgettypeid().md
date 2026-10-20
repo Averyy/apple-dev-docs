@@ -1,23 +1,28 @@
 # CFNullGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for the CFNull opaque type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFNullGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFNullGetTypeID();
 ```
 
 #### Return Value

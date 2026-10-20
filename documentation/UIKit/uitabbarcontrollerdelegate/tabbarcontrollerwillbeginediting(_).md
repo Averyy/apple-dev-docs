@@ -1,7 +1,8 @@
 # tabBarControllerWillBeginEditing(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the tab bar controller is about to begin editing.
 
@@ -15,6 +16,10 @@ Notifies the delegate when the tab bar controller is about to begin editing.
 
 ```swift
 optional func tabBarControllerWillBeginEditing(_ tabBarController: UITabBarController)
+```
+
+```objc
+- (void) tabBarControllerWillBeginEditing:(UITabBarController *) tabBarController;
 ```
 
 

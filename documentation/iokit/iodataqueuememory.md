@@ -1,7 +1,8 @@
 # IODataQueueMemory
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A struct mapping to the header region of a data queue.
 
@@ -16,6 +17,12 @@ A struct mapping to the header region of a data queue.
 
 ```swift
 typealias IODataQueueMemory = _IODataQueueMemory
+```
+
+```c
+typedef struct _IODataQueueMemory {
+    ...
+} IODataQueueMemory;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A locale that represents the user’s region settings at the time the property is read.
 
@@ -20,6 +21,10 @@ A locale that represents the user’s region settings at the time the property i
 class var current: Locale { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSLocale * currentLocale;
+```
+
 #### Discussion
 
 This value represents the locale currently used by the app, based on the following:
@@ -28,17 +33,18 @@ This value represents the locale currently used by the app, based on the followi
 - Any app-specific locale choice made in the Settings app.
 - The availability of the preferred locale in the app. For example, if the person using an app has set their device to use a Spanish-language locale, but the app only supports English, this value returns an English locale.
 
-Use this property when you need to rely on a consistent locale. A locale instance obtained this way does not change even when the person using the device changes region settings. If you want a locale instance that always reflects the current configuration, use the one provided by the [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md) property instead.
+Use this property when you need to rely on a consistent locale. A locale instance obtained this way does not change even when the person using the device changes region settings. If you want a locale instance that always reflects the current configuration, use the one provided by the [`autoupdatingCurrent`](./autoupdatingcurrent.md) property instead.
 
-To receive notification of locale changes, add your object as an observer of [`currentLocaleDidChangeNotification`](nslocale/currentlocaledidchangenotification.md).
+To receive notification of locale changes, add your object as an observer of [`currentLocaleDidChangeNotification`](./currentlocaledidchangenotification.md).
 
 ## See Also
 
-- [class var autoupdatingCurrent: Locale](nslocale/autoupdatingcurrent.md)
+### Getting the User’s Locale
+- [class var autoupdatingCurrent: Locale](./autoupdatingcurrent.md)
   A locale which tracks the user’s current preferences.
-- [class let currentLocaleDidChangeNotification: NSNotification.Name](nslocale/currentlocaledidchangenotification.md)
+- [class let currentLocaleDidChangeNotification: NSNotification.Name](./currentlocaledidchangenotification.md)
   A notification that indicates that the user’s locale changed.
-- [class var system: Locale](nslocale/system.md)
+- [class var system: Locale](./system.md)
   A locale representing the generic root values with little localization.
 
 

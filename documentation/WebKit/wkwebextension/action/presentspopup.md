@@ -1,7 +1,8 @@
 # presentsPopup
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the action has a pop-up.
 
@@ -16,6 +17,10 @@ A Boolean value indicating whether the action has a pop-up.
 
 ```swift
 var presentsPopup: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL presentsPopup;
 ```
 
 #### Discussion

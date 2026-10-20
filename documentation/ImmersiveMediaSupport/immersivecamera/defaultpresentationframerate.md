@@ -1,7 +1,8 @@
 # defaultPresentationFrameRate
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Default presentation frame rate for any immersive camera.
 

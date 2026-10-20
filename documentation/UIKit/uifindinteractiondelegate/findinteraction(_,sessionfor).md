@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides the object for managing the state, presentation, and behavior of the search.
@@ -18,13 +19,17 @@ Provides the object for managing the state, presentation, and behavior of the se
 func findInteraction(_ interaction: UIFindInteraction, sessionFor view: UIView) -> UIFindSession?
 ```
 
+```objc
+- (UIFindSession *) findInteraction:(UIFindInteraction *) interaction sessionForView:(UIView *) view;
+```
+
 #### Return Value
 
 Returns an object the find interaction uses to manage the state, presentation, and behavior of the search. To prevent the find panel from appearing, return `nil`.
 
 #### Discussion
 
-Implement the [`UITextSearching`](uitextsearching-53wjq.md) protocol on the class that encapsulates the searchable content for your view to use an instance of [`UITextSearchingFindSession`](uitextsearchingfindsession.md) as the session object. Alternatively, you can subclass [`UIFindSession`](uifindsession.md) to manage the details of the session using a custom class.
+Implement the [`UITextSearching`](../uitextsearching-53wjq.md) protocol on the class that encapsulates the searchable content for your view to use an instance of [`UITextSearchingFindSession`](../uitextsearchingfindsession.md) as the session object. Alternatively, you can subclass [`UIFindSession`](../uifindsession.md) to manage the details of the session using a custom class.
 
 ## Parameters
 

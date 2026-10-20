@@ -1,7 +1,8 @@
 # withObjects
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 Allocates an OSDictionary object with given members and preallocated capacity.
 
@@ -11,11 +12,19 @@ Allocates an OSDictionary object with given members and preallocated capacity.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+static OSDictionaryPtr withObjects(const OSObject **values, const OSObject **keys, uint32_t count, uint32_t capacity);
+```
+
+*macOS*
+
+```c
 static OSPtr<OSDictionary> withObjects(const OSObject *objects[], const OSString *keys[], unsigned int count, unsigned int capacity);
 ```
 
-#### Return_value
+#### Return Value
 
 NULL on failure, otherwise the allocated OSDictionary with reference count 1 to be released by the caller.
 
@@ -28,14 +37,15 @@ NULL on failure, otherwise the allocated OSDictionary with reference count 1 to 
 
 ## See Also
 
-- [+ withCapacity](osdictionary/3180907-withcapacity.md)
+### Creating a Dictionary
+- [+ withCapacity](./api-3180907-withcapacity.md)
   Allocates an OSDictionary object with preallocated capacity.
-- [+ withDictionary](osdictionary/3180908-withdictionary.md)
+- [+ withDictionary](./api-3180908-withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [- merge](osdictionary/3180904-merge.md)
+- [- merge](./api-3180904-merge.md)
   Adds all members of a dictionary to this dictionary.
-- [- free](osdictionary/3180898-free.md)
-- [- flushCollection](osdictionary/3180897-flushcollection.md)
+- [- free](./api-3180898-free.md)
+- [- flushCollection](./api-3180897-flushcollection.md)
   Removes and drops references to all members of dictionary.
 
 

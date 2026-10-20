@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_RealTime
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether it’s recommended that the video encoder perform compression in real time.
 
@@ -19,21 +20,26 @@ A Boolean value indicating whether it’s recommended that the video encoder per
 let kVTCompressionPropertyKey_RealTime: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_RealTime;
+```
+
 #### Discussion
 
-For offline compression, clients may set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), which indicates that it is OK for the video encoder to work slower than real time in order to produce a better result.
+For offline compression, clients may set this property to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), which indicates that it is OK for the video encoder to work slower than real time in order to produce a better result.
 
-For real-time compression, clients may set this property to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) to recommend that encoding stay timely.
+For real-time compression, clients may set this property to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) to recommend that encoding stay timely.
 
 By default, this property is `NULL`, indicating unknown.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_MaxFrameDelayCount: CFString](kvtcompressionpropertykey_maxframedelaycount.md)
+### Runtime Restrictions
+- [let kVTCompressionPropertyKey_MaxFrameDelayCount: CFString](./kvtcompressionpropertykey_maxframedelaycount.md)
   The maximum number of frames that a compressor is allowed to hold before it must output a compressed frame.
-- [let kVTCompressionPropertyKey_MaxH264SliceBytes: CFString](kvtcompressionpropertykey_maxh264slicebytes.md)
+- [let kVTCompressionPropertyKey_MaxH264SliceBytes: CFString](./kvtcompressionpropertykey_maxh264slicebytes.md)
   The maximum slice size for H.264 encoding.
-- [let kVTCompressionPropertyKey_MaximizePowerEfficiency: CFString](kvtcompressionpropertykey_maximizepowerefficiency.md)
+- [let kVTCompressionPropertyKey_MaximizePowerEfficiency: CFString](./kvtcompressionpropertykey_maximizepowerefficiency.md)
 
 
 ---

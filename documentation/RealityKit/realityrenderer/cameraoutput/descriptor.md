@@ -1,7 +1,8 @@
 # RealityRenderer.CameraOutput.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the output of rendering with a camera.
 
@@ -22,12 +23,12 @@ struct Descriptor
 ## Topics
 
 ### Instance Properties
-- [var colorTextures: [any MTLTexture]](realityrenderer/cameraoutput/descriptor/colortextures.md)
+- [var colorTextures: [any MTLTexture]](./descriptor/colortextures.md)
   Textures to store color output.
-- [var viewports: [RealityRenderer.CameraOutput.RelativeViewport]](realityrenderer/cameraoutput/descriptor/viewports.md)
+- [var viewports: [RealityRenderer.CameraOutput.RelativeViewport]](./descriptor/viewports.md)
   Viewports to use for rendering with a camera.
 ### Type Methods
-- [static func singleProjection(colorTexture: any MTLTexture) -> RealityRenderer.CameraOutput.Descriptor](realityrenderer/cameraoutput/descriptor/singleprojection(colortexture:).md)
+- [static func singleProjection(colorTexture: any MTLTexture) -> RealityRenderer.CameraOutput.Descriptor](./descriptor/singleprojection%28colortexture%29.md)
   Creates a descriptor for single projection output.
 
 

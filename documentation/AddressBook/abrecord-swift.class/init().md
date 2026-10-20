@@ -1,17 +1,22 @@
 # init()
 
 **Framework**: Address Book  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a record using the shared address book.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!()
+```
+
+```objc
+- (id) init;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ In macOS 10.5 and later, this is equivalent to `initWithAddressBook:[ABAddressBo
 
 ## See Also
 
-- [init!(addressBook: ABAddressBook!)](abrecord-swift.class/init(addressbook:).md)
+### Creating a Record
+- [init!(addressBook: ABAddressBook!)](./init%28addressbook%29.md)
   Initializes a record using the given address book.
 
 

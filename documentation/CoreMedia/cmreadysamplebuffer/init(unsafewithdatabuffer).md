@@ -1,7 +1,8 @@
 # init(unsafeWithDataBuffer:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a ready sample buffer with data buffer content from an existing sample buffer.
 
@@ -19,6 +20,8 @@ Creates a ready sample buffer with data buffer content from an existing sample b
 ```swift
 init(unsafeWithDataBuffer unsafeBuffer: sending CMSampleBuffer)
 ```
+
+Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
 
 ---

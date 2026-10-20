@@ -1,7 +1,8 @@
 # supportedScaleFactors(frameWidth:frameHeight:)
 
 **Framework**: Video Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+
@@ -19,7 +20,8 @@ class func supportedScaleFactors(frameWidth: Int, frameHeight: Int) -> [Float]
 
 ## See Also
 
-- [class var isSupported: Bool](vtlowlatencysuperresolutionscalerconfiguration/issupported.md)
+### Determining processor availability
+- [class var isSupported: Bool](./issupported.md)
   Reports whether the system supports this processor on the current configuration.
 
 

@@ -1,7 +1,8 @@
 # MTKTextureLoader.CubeLayout
 
 **Framework**: MetalKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for specifying how cube texture data is arranged in the source image.
 
@@ -19,27 +20,32 @@ Options for specifying how cube texture data is arranged in the source image.
 struct CubeLayout
 ```
 
+```c
+typedef NSString * MTKTextureLoaderCubeLayout;
+```
+
 ## Topics
 
 ### Creating Cube Texture Layout Options
-- [init(rawValue: String)](mtktextureloader/cubelayout/init(rawvalue:).md)
+- [init(rawValue: String)](./cubelayout/init%28rawvalue%29.md)
   Creates a cube layout option from a raw string value.
 ### Specifying Cube Texture Layout Options
-- [static let vertical: MTKTextureLoader.CubeLayout](mtktextureloader/cubelayout/vertical.md)
+- [static let vertical: MTKTextureLoader.CubeLayout](./cubelayout/vertical.md)
   Specifies that the source 2D image is a vertical arrangement of six cube faces.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let cubeLayout: MTKTextureLoader.Option](mtktextureloader/option/cubelayout.md)
+### Specifying Cube Layout
+- [static let cubeLayout: MTKTextureLoader.Option](./option/cubelayout.md)
   A key used to specify how cube texture data is arranged in the source image.
 
 

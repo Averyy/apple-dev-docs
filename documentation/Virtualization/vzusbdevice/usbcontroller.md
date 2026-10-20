@@ -2,6 +2,7 @@
 
 **Framework**: Virtualization  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The USB controller that has an attachment to the device.
@@ -15,13 +16,18 @@ The USB controller that has an attachment to the device.
 weak var usbController: VZUSBController? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) VZUSBController * usbController;
+```
+
 #### Discussion
 
 If a USB device object that conforms to this protocol has a current attachment to a USB controller, this property includes a pointer to the device’s USB controller object. Otherwise, it’s `nil`.
 
 ## See Also
 
-- [var uuid: UUID](vzusbdevice/uuid.md)
+### Properties
+- [var uuid: UUID](./uuid.md)
   The device’s unique identifier.
 
 

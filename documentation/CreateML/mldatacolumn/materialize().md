@@ -1,7 +1,8 @@
 # materialize()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new column by immediately evaluating any lazily applied data processing operations stored in the column.
 
@@ -18,6 +19,8 @@ Creates a new column by immediately evaluating any lazily applied data processin
 ```swift
 func materialize() throws -> MLDataColumn<Element>
 ```
+
+Available when `Element` conforms to `MLDataValueConvertible`.
 
 #### Return Value
 

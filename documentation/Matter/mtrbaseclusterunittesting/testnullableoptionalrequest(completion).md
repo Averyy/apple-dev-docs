@@ -1,7 +1,8 @@
 # testNullableOptionalRequest(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testNullableOptionalRequest(completion: @escaping @Sendable (MTRUnitTestingClusterTestNullableOptionalResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testNullableOptionalRequest() async throws -> MTRUnitTestingClusterTestNullableOptionalResponseParams
+```
+
+```objc
+- (void) testNullableOptionalRequestWithCompletion:(void (^)(MTRUnitTestingClusterTestNullableOptionalResponseParams *data, NSError *error)) completion;
 ```
 
 

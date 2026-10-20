@@ -1,7 +1,8 @@
 # AVMediaExtensionProperties
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a Media Extension.
 
@@ -14,37 +15,42 @@ An object that describes a Media Extension.
 class AVMediaExtensionProperties
 ```
 
+```objc
+@interface AVMediaExtensionProperties : NSObject
+```
+
 ## Topics
 
 ### Inspecting the extension
-- [var extensionName: String](avmediaextensionproperties/extensionname.md)
+- [var extensionName: String](./avmediaextensionproperties/extensionname.md)
   The name of the Media Extension.
-- [var containingBundleName: String](avmediaextensionproperties/containingbundlename.md)
+- [var containingBundleName: String](./avmediaextensionproperties/containingbundlename.md)
   The name of the containing app bundle.
-- [var extensionIdentifier: String](avmediaextensionproperties/extensionidentifier.md)
-- [var extensionURL: URL](avmediaextensionproperties/extensionurl.md)
+- [var extensionIdentifier: String](./avmediaextensionproperties/extensionidentifier.md)
+- [var extensionURL: URL](./avmediaextensionproperties/extensionurl.md)
   The file URL of the Media Extension bundle.
-- [var containingBundleURL: URL](avmediaextensionproperties/containingbundleurl.md)
+- [var containingBundleURL: URL](./avmediaextensionproperties/containingbundleurl.md)
   The file URL of the host application for the Media Extension.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mediaExtensionProperties: AVMediaExtensionProperties?](avurlasset/mediaextensionproperties.md)
+### Accessing Media Extension properties
+- [var mediaExtensionProperties: AVMediaExtensionProperties?](./avurlasset/mediaextensionproperties.md)
   The properties of the media extension format reader that decodes the asset.
 
 

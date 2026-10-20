@@ -1,7 +1,8 @@
 # init(range:chunkSize:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(range: NSRange, chunkSize: Int)
+```
+
+```objc
+- (instancetype) initWithRange:(NSRange) range chunkSize:(NSUInteger) chunkSize;
 ```
 
 #### Discussion

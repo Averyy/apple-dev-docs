@@ -1,7 +1,8 @@
 # openInPlace
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A data-access specification declaring that items should open in place, rather than being copied.
 
@@ -18,6 +19,10 @@ A data-access specification declaring that items should open in place, rather th
 
 ```swift
 static var openInPlace: NSItemProviderFileOptions { get }
+```
+
+```c
+NSItemProviderFileOptionOpenInPlace
 ```
 
 

@@ -1,7 +1,8 @@
 # residencySet
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var residencySet: any MTLResidencySet { get }
+```
+
+```objc
+@property (readonly) id<MTLResidencySet> residencySet;
 ```
 
 

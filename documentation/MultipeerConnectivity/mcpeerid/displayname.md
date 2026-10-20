@@ -1,22 +1,37 @@
 # displayName
 
 **Framework**: Multipeer Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name for this peer.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 27.0
+- iPadOS 7.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use Network Framework instead
 
 ## Declaration
 
 ```swift
 var displayName: String { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) NSString * displayName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSString * displayName;
 ```
 
 #### Discussion
@@ -27,7 +42,8 @@ For other peer objects provided to you by the framework, this property is provid
 
 ## See Also
 
-- [init(displayName: String)](mcpeerid/init(displayname:).md)
+### Peer Methods
+- [init(displayName: String)](./init%28displayname%29.md)
   Initializes a peer.
 
 

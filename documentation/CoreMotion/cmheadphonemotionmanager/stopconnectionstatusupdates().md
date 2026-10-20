@@ -1,7 +1,8 @@
 # stopConnectionStatusUpdates()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -16,14 +17,19 @@
 func stopConnectionStatusUpdates()
 ```
 
+```objc
+- (void) stopConnectionStatusUpdates;
+```
+
 ## See Also
 
-- [func startDeviceMotionUpdates()](cmheadphonemotionmanager/startdevicemotionupdates.md)
+### Starting and Stopping Updates
+- [func startDeviceMotionUpdates()](./startdevicemotionupdates%28%29.md)
   Starts device-motion updates.
-- [func startDeviceMotionUpdates(to: OperationQueue, withHandler: CMHeadphoneMotionManager.DeviceMotionHandler)](cmheadphonemotionmanager/startdevicemotionupdates(to:withhandler:).md)
+- [func startDeviceMotionUpdates(to: OperationQueue, withHandler: CMHeadphoneMotionManager.DeviceMotionHandler)](./startdevicemotionupdates%28to,withhandler%29.md)
   Starts device-motion updates with a handler.
-- [func startConnectionStatusUpdates()](cmheadphonemotionmanager/startconnectionstatusupdates.md)
-- [func stopDeviceMotionUpdates()](cmheadphonemotionmanager/stopdevicemotionupdates.md)
+- [func startConnectionStatusUpdates()](./startconnectionstatusupdates%28%29.md)
+- [func stopDeviceMotionUpdates()](./stopdevicemotionupdates%28%29.md)
   Stops device-motion updates.
 
 

@@ -1,7 +1,8 @@
 # unsupportedOrientation
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 5.0+

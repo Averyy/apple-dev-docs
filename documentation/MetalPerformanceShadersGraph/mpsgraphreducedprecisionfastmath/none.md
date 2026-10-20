@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Full precision math with maximum accuracy.
 
@@ -17,6 +18,10 @@ Full precision math with maximum accuracy.
 
 ```swift
 static var none: MPSGraphReducedPrecisionFastMath { get }
+```
+
+```c
+MPSGraphReducedPrecisionFastMathNone
 ```
 
 

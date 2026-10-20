@@ -1,7 +1,8 @@
 # AVCaption.Animation.characterReveal
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A character reveal animation.
 
@@ -17,9 +18,14 @@ A character reveal animation.
 case characterReveal
 ```
 
+```c
+AVCaptionAnimationCharacterReveal
+```
+
 ## See Also
 
-- [AVCaption.Animation.none](avcaption/animation-swift.enum/none.md)
+### Animations
+- [AVCaption.Animation.none](./none.md)
   No animation.
 
 

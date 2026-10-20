@@ -1,7 +1,8 @@
 # sectionCount
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of sections in the list.
 
@@ -16,19 +17,24 @@ The number of sections in the list.
 var sectionCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger sectionCount;
+```
+
 #### Discussion
 
-This value never exceeds [`maximumSectionCount`](cplisttemplate/maximumsectioncount.md). If you initialize a list, or call the [`updateSections(_:)`](cplisttemplate/updatesections(_:).md) method, with an array larger than `maximumSectionCount`, CarPlay trims the array to an appropriate size.
+This value never exceeds [`maximumSectionCount`](./maximumsectioncount.md). If you initialize a list, or call the [`updateSections(_:)`](./updatesections%28_%29.md) method, with an array larger than `maximumSectionCount`, CarPlay trims the array to an appropriate size.
 
 ## See Also
 
-- [class var maximumSectionCount: Int](cplisttemplate/maximumsectioncount.md)
+### Managing Sections
+- [class var maximumSectionCount: Int](./maximumsectioncount.md)
   The maximum number of sections that the template can display.
-- [var sections: [CPListSection]](cplisttemplate/sections.md)
+- [var sections: [CPListSection]](./sections.md)
   The sections that the list displays.
-- [func updateSections([CPListSection])](cplisttemplate/updatesections(_:).md)
+- [func updateSections([CPListSection])](./updatesections%28_%29.md)
   Adds, removes, reorders, or updates the list’s sections.
-- [class CPListSection](cplistsection.md)
+- [class CPListSection](../cplistsection.md)
   A container that groups your list items into sections.
 
 

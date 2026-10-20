@@ -1,7 +1,8 @@
 # kCMDefaultDeviceNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kCMDefaultDeviceNotification: String { get }
+```
+
+```c
+#define kCMDefaultDeviceNotification
 ```
 
 

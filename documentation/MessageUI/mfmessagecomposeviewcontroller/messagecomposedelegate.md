@@ -1,7 +1,8 @@
 # messageComposeDelegate
 
 **Framework**: Message UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate to which message-related notifications should be sent.
 
@@ -17,13 +18,18 @@ The delegate to which message-related notifications should be sent.
 weak var messageComposeDelegate: (any MFMessageComposeViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<MFMessageComposeViewControllerDelegate> messageComposeDelegate;
+```
+
 #### Discussion
 
-When the user taps a button to send or cancel the message, your delegate is notified and should respond by dismissing the message composition interface. For more information about implementing the methods of your delegate object, see [`MFMessageComposeViewControllerDelegate`](mfmessagecomposeviewcontrollerdelegate.md).
+When the user taps a button to send or cancel the message, your delegate is notified and should respond by dismissing the message composition interface. For more information about implementing the methods of your delegate object, see [`MFMessageComposeViewControllerDelegate`](../mfmessagecomposeviewcontrollerdelegate.md).
 
 ## See Also
 
-- [protocol MFMessageComposeViewControllerDelegate](mfmessagecomposeviewcontrollerdelegate.md)
+### Responding to the view controller dismissal
+- [protocol MFMessageComposeViewControllerDelegate](../mfmessagecomposeviewcontrollerdelegate.md)
   An interface for responding to user interactions with a message compose view controller.
 
 

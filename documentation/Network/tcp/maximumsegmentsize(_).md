@@ -1,7 +1,8 @@
 # maximumSegmentSize(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set maximum segment size.
 

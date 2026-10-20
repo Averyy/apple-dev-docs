@@ -1,7 +1,8 @@
 # EILSEQ
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Illegal byte sequence.
 

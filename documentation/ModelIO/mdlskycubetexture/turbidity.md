@@ -1,7 +1,8 @@
 # turbidity
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cloudiness or haziness of the simulated sky.
 
@@ -19,21 +20,26 @@ The cloudiness or haziness of the simulated sky.
 var turbidity: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float turbidity;
+```
+
 #### Discussion
 
 A value of `0.0` simulates a clear sky—that is, the sun has little effect on the color of the sky around it. Values closer to `1.0` simulate increasing amounts of dust and moisture in the sky, causing the sun’s color to spread across the atmosphere.
 
 ## See Also
 
-- [var sunElevation: Float](mdlskycubetexture/sunelevation.md)
+### Working with Sky Simulation Parameters
+- [var sunElevation: Float](./sunelevation.md)
   The sun’s position in the simulated sky.
-- [var upperAtmosphereScattering: Float](mdlskycubetexture/upperatmospherescattering.md)
+- [var upperAtmosphereScattering: Float](./upperatmospherescattering.md)
   A factor that influences the color of the simulated sky.
-- [var groundAlbedo: Float](mdlskycubetexture/groundalbedo.md)
+- [var groundAlbedo: Float](./groundalbedo.md)
   A factor that influences the clarity of the simulated sky.
-- [var groundColor: CGColor?](mdlskycubetexture/groundcolor.md)
+- [var groundColor: CGColor?](./groundcolor.md)
   The color of the simulated ground.
-- [var horizonElevation: Float](mdlskycubetexture/horizonelevation.md)
+- [var horizonElevation: Float](./horizonelevation.md)
   The angle, in radians relative to center, below which to render the ground color.
 
 

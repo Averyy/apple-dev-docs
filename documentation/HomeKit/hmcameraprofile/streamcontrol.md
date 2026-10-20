@@ -1,7 +1,8 @@
 # streamControl
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the camera stream.
 
@@ -19,9 +20,14 @@ Controls the camera stream.
 var streamControl: HMCameraStreamControl? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) HMCameraStreamControl * streamControl;
+```
+
 ## See Also
 
-- [class HMCameraStreamControl](hmcamerastreamcontrol.md)
+### Streaming
+- [class HMCameraStreamControl](../hmcamerastreamcontrol.md)
   An object that can start and stop the camera stream and contains the view into which the stream is rendered.
 
 

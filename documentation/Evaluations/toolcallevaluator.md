@@ -1,7 +1,8 @@
 # ToolCallEvaluator
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An evaluator that verifies agentic tool calls against an expected trajectory.
 
@@ -22,14 +23,14 @@ struct ToolCallEvaluator<Input> where Input : ModelSampleProtocol, Input.Expecta
 
 ## Mentions
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
 
 #### Overview
 
 This evaluator produces both a strict and partial result from a single evaluation pass. It also supports ordered sequences, unordered expectations, disallowed tool checks, and group steps.
 
-Use the [`toolsAllPass`](metric/toolsallpass.md) and [`toolsPercentagePass`](metric/toolspercentagepass.md) conveniences for the standard metrics:
+Use the [`toolsAllPass`](./metric/toolsallpass.md) and [`toolsPercentagePass`](./metric/toolspercentagepass.md) conveniences for the standard metrics:
 
 ```swift
 let evaluator = ToolCallEvaluator<ModelSample<String>>(
@@ -40,33 +41,34 @@ let evaluator = ToolCallEvaluator<ModelSample<String>>(
 ## Topics
 
 ### Initializers
-- [init(allPass: Metric, percentagePass: Metric)](toolcallevaluator/init(allpass:percentagepass:).md)
+- [init(allPass: Metric, percentagePass: Metric)](./toolcallevaluator/init%28allpass,percentagepass%29.md)
   Creates a new tool-call expectations evaluator.
-- [init(allPass: Metric, percentagePass: Metric, argumentMatchModel: any LanguageModel)](toolcallevaluator/init(allpass:percentagepass:argumentmatchmodel:).md)
+- [init(allPass: Metric, percentagePass: Metric, argumentMatchModel: any LanguageModel)](./toolcallevaluator/init%28allpass,percentagepass,argumentmatchmodel%29.md)
   Creates a new tool-call expectations evaluator with a custom language model for semantic matching of natural language argument matchers.
 ### Instance Properties
-- [let allPass: Metric](toolcallevaluator/allpass.md)
+- [let allPass: Metric](./toolcallevaluator/allpass.md)
   The metric for the strict pass or fail result.
-- [let percentagePass: Metric](toolcallevaluator/percentagepass.md)
+- [let percentagePass: Metric](./toolcallevaluator/percentagepass.md)
   The metric for the partial score result.
 ### Instance Methods
-- [func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]](toolcallevaluator/metrics(subject:input:).md)
+- [func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]](./toolcallevaluator/metrics%28subject,input%29.md)
   Evaluates tool-call expectations against the actual transcript and returns scored metrics.
 
 ## Relationships
 
 ### Conforms To
-- [EvaluatorProtocol](evaluatorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [EvaluatorProtocol](./evaluatorprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+### Tool-call evaluation
+- [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md)
   Analyze your model’s tool calls against expected trajectories, argument values, and call ordering.
-- [struct TrajectoryExpectation](trajectoryexpectation.md)
+- [struct TrajectoryExpectation](./trajectoryexpectation.md)
   The expected pattern of tool calls for an evaluation.
-- [enum ArgumentMatcher](argumentmatcher.md)
+- [enum ArgumentMatcher](./argumentmatcher.md)
   The values that define how to validate a tool-call argument.
 
 

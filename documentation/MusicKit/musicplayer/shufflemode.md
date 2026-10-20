@@ -1,7 +1,8 @@
 # MusicPlayer.ShuffleMode
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The shuffle modes for the music player.
 
@@ -22,18 +23,18 @@ enum ShuffleMode
 ## Topics
 
 ### Enumeration Cases
-- [MusicPlayer.ShuffleMode.off](musicplayer/shufflemode/off.md)
+- [MusicPlayer.ShuffleMode.off](./shufflemode/off.md)
   The shuffle mode is in a disabled state.
-- [MusicPlayer.ShuffleMode.songs](musicplayer/shufflemode/songs.md)
+- [MusicPlayer.ShuffleMode.songs](./shufflemode/songs.md)
   The music player’s shuffle songs mode.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

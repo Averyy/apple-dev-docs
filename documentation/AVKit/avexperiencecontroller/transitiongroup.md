@@ -1,7 +1,8 @@
 # AVExperienceController.TransitionGroup
 
 **Framework**: AVKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A group of experience transitions that prepare concurrently and run simultaneously as a single visual transition.
 
@@ -16,7 +17,7 @@ struct TransitionGroup<ChildTransitionResult> where ChildTransitionResult : Send
 
 #### Overview
 
-Use [`withTransitionGroup(body:)`](avexperiencecontroller/withtransitiongroup(body:).md) to create a transition group. Add transitions using [`addTransition(operation:)`](avexperiencecontroller/transitiongroup/addtransition(operation:).md), and they perform together once all have been added and prepared.
+Use [`withTransitionGroup(body:)`](./withtransitiongroup%28body%29.md) to create a transition group. Add transitions using [`addTransition(operation:)`](./transitiongroup/addtransition%28operation%29.md), and they perform together once all have been added and prepared.
 
 Transitions in a group prepare concurrently, then perform their animations simultaneously, creating a single cohesive visual transition. Each transition completes with its own result, allowing you to handle individual successes and failures.
 
@@ -27,14 +28,15 @@ Individual transitions may fail during preparation or execution without affectin
 ## Topics
 
 ### Adding transitions
-- [func addTransition(operation: sending () async -> ChildTransitionResult)](avexperiencecontroller/transitiongroup/addtransition(operation:).md)
+- [func addTransition(operation: sending () async -> ChildTransitionResult)](./transitiongroup/addtransition%28operation%29.md)
   Adds a transition to the group, suspending it until all transitions are ready to run together.
 
 ## See Also
 
-- [static func withTransitionGroup<ChildTransitionResult>(body: (inout AVExperienceController.TransitionGroup<ChildTransitionResult>) async -> Void) async -> [ChildTransitionResult]](avexperiencecontroller/withtransitiongroup(body:).md)
+### Transitioning experiences
+- [static func withTransitionGroup<ChildTransitionResult>(body: (inout AVExperienceController.TransitionGroup<ChildTransitionResult>) async -> Void) async -> [ChildTransitionResult]](./withtransitiongroup%28body%29.md)
   Coordinates multiple experience transitions to perform together as a single visual transition.
-- [func transition(to: AVExperienceController.Experience) async -> AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transition(to:).md)
+- [func transition(to: AVExperienceController.Experience) async -> AVExperienceController.TransitionContext.TransitionResult](./transition%28to%29.md)
   Transitions the video to a different experience.
 
 

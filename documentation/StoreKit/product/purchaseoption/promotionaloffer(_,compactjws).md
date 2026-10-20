@@ -1,7 +1,8 @@
 # promotionalOffer(_:compactJWS:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Apply a promotional offer to a purchase.
 

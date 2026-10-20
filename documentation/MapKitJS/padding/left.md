@@ -1,7 +1,8 @@
 # left
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of padding, in CSS pixels, to inset the map from the left edge.
 
@@ -10,17 +11,18 @@ The amount of padding, in CSS pixels, to inset the map from the left edge.
 
 ## Declaration
 
-```swift
+```
 left: number;
 ```
 
 ## See Also
 
-- [bottom](padding/bottom.md)
+### Controlling the map’s padding
+- [bottom](./bottom.md)
   The amount of padding, in CSS pixels, to inset the map from the bottom edge.
-- [right](padding/right.md)
+- [right](./right.md)
   The amount of padding, in CSS pixels, to inset the map from the right edge.
-- [top](padding/top.md)
+- [top](./top.md)
   The amount of padding, in CSS pixels, to inset the map from the top edge.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWExtendedTCodeBoundedAdd](1642813-anonymous/kfwextendedtcodeboundedadd.md)
-- [kFWExtendedTCodeCompareSwap](1642813-anonymous/kfwextendedtcodecompareswap.md)
-- [kFWExtendedTCodeFetchAdd](1642813-anonymous/kfwextendedtcodefetchadd.md)
-- [kFWExtendedTCodeLittleAdd](1642813-anonymous/kfwextendedtcodelittleadd.md)
-- [kFWExtendedTCodeMaskSwap](1642813-anonymous/kfwextendedtcodemaskswap.md)
-- [kFWExtendedTCodeVendorDependent](1642813-anonymous/kfwextendedtcodevendordependent.md)
-- [kFWExtendedTCodeWrapAdd](1642813-anonymous/kfwextendedtcodewrapadd.md)
+- [kFWExtendedTCodeBoundedAdd](./api-1642813-anonymous/kfwextendedtcodeboundedadd.md)
+- [kFWExtendedTCodeCompareSwap](./api-1642813-anonymous/kfwextendedtcodecompareswap.md)
+- [kFWExtendedTCodeFetchAdd](./api-1642813-anonymous/kfwextendedtcodefetchadd.md)
+- [kFWExtendedTCodeLittleAdd](./api-1642813-anonymous/kfwextendedtcodelittleadd.md)
+- [kFWExtendedTCodeMaskSwap](./api-1642813-anonymous/kfwextendedtcodemaskswap.md)
+- [kFWExtendedTCodeVendorDependent](./api-1642813-anonymous/kfwextendedtcodevendordependent.md)
+- [kFWExtendedTCodeWrapAdd](./api-1642813-anonymous/kfwextendedtcodewrapadd.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Retrieves all of the focus items within this container that intersect with the provided rectangle.
@@ -19,13 +20,17 @@ Retrieves all of the focus items within this container that intersect with the p
 func focusItems(in rect: CGRect) -> [any UIFocusItem]
 ```
 
+```objc
+- (NSArray<id<UIFocusItem>> *) focusItemsInRect:(CGRect) rect;
+```
+
 #### Return Value
 
 An array of focus items that intersect the provided rectangle. The focus items are expressed in the container’s coordinate space.
 
 #### Discussion
 
-The found focus items should report their frames in the [`coordinateSpace`](uifocusitemcontainer/coordinatespace.md).
+The found focus items should report their frames in the [`coordinateSpace`](./coordinatespace.md).
 
 ## Parameters
 
@@ -33,7 +38,8 @@ The found focus items should report their frames in the [`coordinateSpace`](uifo
 
 ## See Also
 
-- [var coordinateSpace: any UICoordinateSpace](uifocusitemcontainer/coordinatespace.md)
+### Retrieving focus items
+- [var coordinateSpace: any UICoordinateSpace](./coordinatespace.md)
   The coordinate space of the focus items contained in the focus item container.
 
 

@@ -1,7 +1,8 @@
 # LanguageModelSession.Usage.Output
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Token counts for the output produced by the model.
 
@@ -22,31 +23,32 @@ struct Output
 ## Topics
 
 ### Creating a token output instance
-- [init(totalTokenCount: Int, reasoningTokenCount: Int)](languagemodelsession/usage-swift.struct/output-swift.struct/init(totaltokencount:reasoningtokencount:).md)
+- [init(totalTokenCount: Int, reasoningTokenCount: Int)](./output-swift.struct/init%28totaltokencount,reasoningtokencount%29.md)
   Creates an output token count.
 ### Getting the token count
-- [var reasoningTokenCount: Int](languagemodelsession/usage-swift.struct/output-swift.struct/reasoningtokencount.md)
+- [var reasoningTokenCount: Int](./output-swift.struct/reasoningtokencount.md)
   The number of output tokens that were part of the model’s reasoning output.
-- [var totalTokenCount: Int](languagemodelsession/usage-swift.struct/output-swift.struct/totaltokencount.md)
+- [var totalTokenCount: Int](./output-swift.struct/totaltokencount.md)
   The total number of output tokens.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var input: LanguageModelSession.Usage.Input](languagemodelsession/usage-swift.struct/input-swift.property.md)
+### Updating the usage
+- [var input: LanguageModelSession.Usage.Input](./input-swift.property.md)
   The input token counts from the transcript.
-- [LanguageModelSession.Usage.Input](languagemodelsession/usage-swift.struct/input-swift.struct.md)
+- [LanguageModelSession.Usage.Input](./input-swift.struct.md)
   Token counts for the transcript submitted to the model.
-- [var output: LanguageModelSession.Usage.Output](languagemodelsession/usage-swift.struct/output-swift.property.md)
+- [var output: LanguageModelSession.Usage.Output](./output-swift.property.md)
   The output token counts from the response.
-- [var metadata: [String : GeneratedContent]](languagemodelsession/usage-swift.struct/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Additional usage statistics that the language model encodes for the response.
-- [var totalTokenCount: Int](languagemodelsession/usage-swift.struct/totaltokencount.md)
+- [var totalTokenCount: Int](./totaltokencount.md)
   The total number of tokens involved in this generation, combining input and output counts.
 
 

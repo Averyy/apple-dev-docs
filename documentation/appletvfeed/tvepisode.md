@@ -1,7 +1,8 @@
 # TvEpisode
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a TV episode resource.
 
@@ -10,30 +11,30 @@ The data structure that represents a TV episode resource.
 
 ## Declaration
 
-```swift
+```
 object TvEpisode
 ```
 
 ## Topics
 
 ### Related objects
-- [object TvEpisode.Artworks](tvepisode/artworks-data.dictionary.md)
+- [object TvEpisode.Artworks](./tvepisode/artworks-data.dictionary.md)
   A mapping of locale to localized artwork.
-- [object TvEpisode.CastAndCrew](tvepisode/castandcrew-data.dictionary.md)
+- [object TvEpisode.CastAndCrew](./tvepisode/castandcrew-data.dictionary.md)
   Information about a cast or crew member, including translations of their name.
-- [object TvEpisode.Description](tvepisode/description-data.dictionary.md)
+- [object TvEpisode.Description](./tvepisode/description-data.dictionary.md)
   A mapping of locale to localized descriptions of the TV episode.
-- [object TvEpisode.ExternalContentId](tvepisode/externalcontentid.md)
+- [object TvEpisode.ExternalContentId](./tvepisode/externalcontentid.md)
   Information about an external content ID.
-- [object TvEpisode.Genre](tvepisode/genre.md)
+- [object TvEpisode.Genre](./tvepisode/genre.md)
   A genre name and its structure.
-- [object TvEpisode.Name](tvepisode/name-data.dictionary.md)
+- [object TvEpisode.Name](./tvepisode/name-data.dictionary.md)
   A mapping of locale to localized names for the TV episode.
-- [object TvEpisode.Prices](tvepisode/prices-data.dictionary.md)
+- [object TvEpisode.Prices](./tvepisode/prices-data.dictionary.md)
   A mapping of storefront to pricing information and availability.
-- [object TvEpisode.Rating](tvepisode/rating-data.dictionary.md)
+- [object TvEpisode.Rating](./tvepisode/rating-data.dictionary.md)
   Information about a content rating.
-- [object TvEpisode.Url](tvepisode/url-data.dictionary.md)
+- [object TvEpisode.Url](./tvepisode/url-data.dictionary.md)
   A mapping of locale to localized URLs for the content.
 
 ## Properties
@@ -58,13 +59,14 @@ object TvEpisode
 
 ## See Also
 
-- [object Movie](movie.md)
+### Objects
+- [object Movie](./movie.md)
   The data structure that represents a movie resource.
-- [object TvSeason](tvseason.md)
+- [object TvSeason](./tvseason.md)
   The data structure that represents a TV season resource.
-- [object TvShow](tvshow.md)
+- [object TvShow](./tvshow.md)
   The data structure that represents a TV show resource.
-- [object SportingEvent](sportingevent.md)
+- [object SportingEvent](./sportingevent.md)
   The data structure that represents a sporting event resource.
 
 

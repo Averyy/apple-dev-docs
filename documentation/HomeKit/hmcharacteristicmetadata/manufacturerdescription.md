@@ -1,7 +1,8 @@
 # manufacturerDescription
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the characteristic provided by the accessory manufacturer.
 
@@ -17,6 +18,10 @@ A description of the characteristic provided by the accessory manufacturer.
 
 ```swift
 var manufacturerDescription: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * manufacturerDescription;
 ```
 
 #### Discussion

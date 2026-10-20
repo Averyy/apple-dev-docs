@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.AccessoryScanResponse.ID
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of value that uniquely identifies this scan response.
 
@@ -18,7 +19,8 @@ typealias ID = WINetworkSharingProvider.AccessoryScanRequest.ID
 
 ## See Also
 
-- [var id: WINetworkSharingProvider.AccessoryScanResponse.ID](winetworksharingprovider/accessoryscanresponse/id-swift.property.md)
+### Identifying a scan response
+- [var id: WINetworkSharingProvider.AccessoryScanResponse.ID](./id-swift.property.md)
   A stable identifier that uniquely identifies this scan response.
 
 

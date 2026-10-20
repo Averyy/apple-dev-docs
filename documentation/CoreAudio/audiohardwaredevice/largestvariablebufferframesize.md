@@ -1,12 +1,13 @@
 # largestVariableBufferFrameSize
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An Int that indicates the largest buffer that will be passed and bufferFrameSize if usesVariableBufferFrameSizes is true.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

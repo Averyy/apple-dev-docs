@@ -1,29 +1,30 @@
 # ProfileCreateRequest.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object ProfileCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object ProfileCreateRequest.Data.Attributes](profilecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object ProfileCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
-- [object ProfileCreateRequest.Data.Relationships](profilecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object ProfileCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `attributes` (ProfileCreateRequest.Data.Attributes) *(required)*
 - `relationships` (ProfileCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `profiles`
 
 
 ---

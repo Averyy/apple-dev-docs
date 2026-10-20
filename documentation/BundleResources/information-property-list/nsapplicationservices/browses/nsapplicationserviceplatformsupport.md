@@ -1,19 +1,28 @@
 # NSApplicationServicePlatformSupport
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - tvOS 16.0+
 
+## Details
 
+- **Name**: `NSApplicationServicePlatformSupport`
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `iOS`
+- `watchOS`
+- `iPadOS`
 
 ## See Also
 
-- [NSApplicationServiceIdentifier](information-property-list/nsapplicationservices/browses/nsapplicationserviceidentifier.md)
-- [NSApplicationServiceUsageDescription](information-property-list/nsapplicationservices/browses/nsapplicationserviceusagedescription.md)
+### Property List Keys
+- [NSApplicationServiceIdentifier](./nsapplicationserviceidentifier.md)
+- [NSApplicationServiceUsageDescription](./nsapplicationserviceusagedescription.md)
 
 
 ---

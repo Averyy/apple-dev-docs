@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A block of code executed periodically during a Vision request to report progress on long-running tasks.
@@ -20,13 +21,18 @@ A block of code executed periodically during a Vision request to report progress
 var progressHandler: VNRequestProgressHandler { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) VNRequestProgressHandler progressHandler;
+```
+
 #### Discussion
 
 The progress handler is an optional method that allows clients of the request to report progress to the user or to display partial results as they become available. The Vision framework may call this handler on a different dispatch queue from the thread on which you initiated the original request, so ensure that your handler can execute asynchronously, in a thread-safe manner.
 
 ## See Also
 
-- [var indeterminate: Bool](vnrequestprogressproviding/indeterminate.md)
+### Tracking Progress
+- [var indeterminate: Bool](./indeterminate.md)
   A Boolean set to true when a request can’t determine its progress in fractions completed.
 
 

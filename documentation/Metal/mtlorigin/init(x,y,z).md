@@ -1,17 +1,18 @@
 # init(x:y:z:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new origin with the specified coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ init(x: Int, y: Int, z: Int)
 
 ## See Also
 
-- [init()](mtlorigin/init.md)
+### Creating origin points
+- [init()](./init%28%29.md)
   Initializes a new origin.
-- [func MTLOriginMake(Int, Int, Int) -> MTLOrigin](mtloriginmake(_:_:_:).md)
+- [func MTLOriginMake(Int, Int, Int) -> MTLOrigin](../mtloriginmake%28_,_,_%29.md)
   Returns a new origin with the specified coordinates.
 
 

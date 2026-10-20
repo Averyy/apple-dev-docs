@@ -1,20 +1,27 @@
 # GLKEffectPropertyFog
 
 **Framework**: GLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Fog drawing information for use in GLKit rendering effects.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 class GLKEffectPropertyFog
+```
+
+```objc
+@interface GLKEffectPropertyFog : GLKEffectProperty
 ```
 
 #### Overview
@@ -26,49 +33,50 @@ When fog is enabled, the fog component is calculated and clamped to a range from
 ## Topics
 
 ### Enabling Fog
-- [var enabled: GLboolean](glkeffectpropertyfog/enabled.md)
+- [var enabled: GLboolean](./glkeffectpropertyfog/enabled.md)
   A Boolean value that indicates whether fog is applied to the fragment color.
 ### Choosing the Fog Mode
-- [var mode: GLint](glkeffectpropertyfog/mode.md)
+- [var mode: GLint](./glkeffectpropertyfog/mode.md)
   The algorithm used to compute the density of the fog applied to the fragment color.
 ### Fog Properties
-- [var color: GLKVector4](glkeffectpropertyfog/color.md)
+- [var color: GLKVector4](./glkeffectpropertyfog/color.md)
   The color of the fog at maximum density.
-- [var density: GLfloat](glkeffectpropertyfog/density.md)
+- [var density: GLfloat](./glkeffectpropertyfog/density.md)
   The rate at which the fog exponent increases.
-- [var start: GLfloat](glkeffectpropertyfog/start.md)
+- [var start: GLfloat](./glkeffectpropertyfog/start.md)
   The minimum distance in eye coordinates before fog is applied to the fragment color.
-- [var end: GLfloat](glkeffectpropertyfog/end.md)
+- [var end: GLfloat](./glkeffectpropertyfog/end.md)
   The distance in eye coordinates where fog completely covers the color fragment.
 ### Constants
-- [enum GLKFogMode](glkfogmode.md)
+- [enum GLKFogMode](./glkfogmode.md)
   A mode that describes how the fog component is calculated for the fragment.
 
 ## Relationships
 
 ### Inherits From
-- [GLKEffectProperty](glkeffectproperty.md)
+- [GLKEffectProperty](./glkeffectproperty.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GLKEffectProperty](glkeffectproperty.md)
+### Rendering Effect Parameters
+- [class GLKEffectProperty](./glkeffectproperty.md)
   The abstract superclass for configuration information used in GLKit rendering effects.
-- [class GLKEffectPropertyLight](glkeffectpropertylight.md)
+- [class GLKEffectPropertyLight](./glkeffectpropertylight.md)
   Lighting information for use in GLKit rendering effects.
-- [class GLKEffectPropertyTexture](glkeffectpropertytexture.md)
+- [class GLKEffectPropertyTexture](./glkeffectpropertytexture.md)
   Texture drawing parameters for use in GLKit rendering effects.
-- [class GLKEffectPropertyMaterial](glkeffectpropertymaterial.md)
+- [class GLKEffectPropertyMaterial](./glkeffectpropertymaterial.md)
   Surface appearance properties for use in GLKit rendering effects.
-- [class GLKEffectPropertyTransform](glkeffectpropertytransform.md)
+- [class GLKEffectPropertyTransform](./glkeffectpropertytransform.md)
   Coordinate transform information for use in GLKit rendering effects.
-- [GLKit Effects Constants](glkit-effects-constants.md)
+- [GLKit Effects Constants](./glkit-effects-constants.md)
 
 
 ---

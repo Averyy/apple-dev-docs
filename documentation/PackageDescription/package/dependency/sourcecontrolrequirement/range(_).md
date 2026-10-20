@@ -1,7 +1,8 @@
 # Package.Dependency.SourceControlRequirement.range(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A requirement based on a range of versions.
 

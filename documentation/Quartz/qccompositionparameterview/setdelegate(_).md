@@ -1,17 +1,24 @@
 # setDelegate(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the composition parameter view delegate.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func setDelegate(_ delegate: Any!)
+```
+
+```objc
+- (void) setDelegate:(id) delegate;
 ```
 
 ## Parameters
@@ -20,7 +27,8 @@ func setDelegate(_ delegate: Any!)
 
 ## See Also
 
-- [func delegate() -> Any!](qccompositionparameterview/delegate.md)
+### Setting and Retrieving the Delegate
+- [func delegate() -> Any!](./delegate%28%29.md)
   Returns the composition parameter view delegate.
 
 

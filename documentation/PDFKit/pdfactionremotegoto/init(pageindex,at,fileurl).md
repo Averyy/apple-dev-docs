@@ -1,7 +1,8 @@
 # init(pageIndex:at:fileURL:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the remote go-to action with the specified page index, point, and document URL.
 
@@ -15,8 +16,28 @@ Initializes the remote go-to action with the specified page index, point, and do
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+init(pageIndex: Int, at point: CGPoint, fileURL url: URL)
+```
+
+*macOS*
+
 ```swift
 init(pageIndex: Int, at point: NSPoint, fileURL url: URL)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (instancetype) initWithPageIndex:(NSUInteger) pageIndex atPoint:(CGPoint) point fileURL:(NSURL *) url;
+```
+
+*macOS*
+
+```objc
+- (instancetype) initWithPageIndex:(NSUInteger) pageIndex atPoint:(NSPoint) point fileURL:(NSURL *) url;
 ```
 
 #### Return Value

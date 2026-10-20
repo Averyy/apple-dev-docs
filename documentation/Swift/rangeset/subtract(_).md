@@ -1,7 +1,8 @@
 # subtract(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the contents of the given range set from this range set.
 
@@ -19,6 +20,8 @@ Removes the contents of the given range set from this range set.
 ```swift
 mutating func subtract(_ other: RangeSet<Bound>)
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 ## Parameters
 

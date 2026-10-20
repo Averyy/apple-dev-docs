@@ -1,7 +1,8 @@
 # HMCharacteristicTypeCurrentHeaterCoolerState
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current state for a device that heats or cools, like an oven or a refrigerator.
 
@@ -19,33 +20,38 @@ The current state for a device that heats or cools, like an oven or a refrigerat
 let HMCharacteristicTypeCurrentHeaterCoolerState: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeCurrentHeaterCoolerState;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueCurrentHeaterCoolerState`](hmcharacteristicvaluecurrentheatercoolerstate.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueCurrentHeaterCoolerState`](./hmcharacteristicvaluecurrentheatercoolerstate.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueCurrentHeaterCoolerState](hmcharacteristicvaluecurrentheatercoolerstate.md)
+- [enum HMCharacteristicValueCurrentHeaterCoolerState](./hmcharacteristicvaluecurrentheatercoolerstate.md)
   Possible values for the current state of a device that heats or cools.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentTemperature: String](hmcharacteristictypecurrenttemperature.md)
+### Temperature
+- [let HMCharacteristicTypeCurrentTemperature: String](./hmcharacteristictypecurrenttemperature.md)
   The current temperature measured by the accessory.
-- [let HMCharacteristicTypeTargetTemperature: String](hmcharacteristictypetargettemperature.md)
+- [let HMCharacteristicTypeTargetTemperature: String](./hmcharacteristictypetargettemperature.md)
   The target temperature for the accessory to achieve.
-- [let HMCharacteristicTypeTemperatureUnits: String](hmcharacteristictypetemperatureunits.md)
+- [let HMCharacteristicTypeTemperatureUnits: String](./hmcharacteristictypetemperatureunits.md)
   The units of temperature currently active on the accessory.
-- [let HMCharacteristicTypeTargetHeatingCooling: String](hmcharacteristictypetargetheatingcooling.md)
+- [let HMCharacteristicTypeTargetHeatingCooling: String](./hmcharacteristictypetargetheatingcooling.md)
   The target heating or cooling mode for a thermostat.
-- [let HMCharacteristicTypeCurrentHeatingCooling: String](hmcharacteristictypecurrentheatingcooling.md)
+- [let HMCharacteristicTypeCurrentHeatingCooling: String](./hmcharacteristictypecurrentheatingcooling.md)
   The current heating or cooling mode for a thermostat.
-- [let HMCharacteristicTypeTargetHeaterCoolerState: String](hmcharacteristictypetargetheatercoolerstate.md)
+- [let HMCharacteristicTypeTargetHeaterCoolerState: String](./hmcharacteristictypetargetheatercoolerstate.md)
   The target state for a device that heats or cools, like an oven or a refrigerator.
-- [let HMCharacteristicTypeCoolingThreshold: String](hmcharacteristictypecoolingthreshold.md)
+- [let HMCharacteristicTypeCoolingThreshold: String](./hmcharacteristictypecoolingthreshold.md)
   The temperature above which cooling will be active.
-- [let HMCharacteristicTypeHeatingThreshold: String](hmcharacteristictypeheatingthreshold.md)
+- [let HMCharacteristicTypeHeatingThreshold: String](./hmcharacteristictypeheatingthreshold.md)
   The temperature below which heating will be active.
 
 

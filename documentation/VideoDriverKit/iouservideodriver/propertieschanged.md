@@ -1,7 +1,8 @@
 # PropertiesChanged
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This method informs the host when the state of an driver’s object changes.
 
@@ -10,7 +11,7 @@ This method informs the host when the state of an driver’s object changes.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t PropertiesChanged(IOUserVideoObjectID in_object_id, IOUserVideoObjectPropertySelector *in_properties, uint32_t in_num_properties);
 ```
 
@@ -30,9 +31,10 @@ For device objects, this method is only used for state changes that don’t affe
 
 ## See Also
 
-- [IOUserVideoObjectID](videodriverkit/iouservideoobjectid.md)
+### Communicating with the host
+- [IOUserVideoObjectID](../videodriverkit-page/iouservideoobjectid.md)
   A handle for a a specific video object.
-- [IOUserVideoObjectPropertySelector](videodriverkit/iouservideoobjectpropertyselector.md)
+- [IOUserVideoObjectPropertySelector](../videodriverkit-page/iouservideoobjectpropertyselector.md)
   A four character code which, along with the scope and element, specifies a specific piece of information about a video object.
 
 

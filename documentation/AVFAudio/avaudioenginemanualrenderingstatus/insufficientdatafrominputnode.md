@@ -1,7 +1,8 @@
 # AVAudioEngineManualRenderingStatus.insufficientDataFromInputNode
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A condition that occurs when the input node doesn’t return enough input data to satisfy the render request at the time of the request.
 
@@ -20,17 +21,22 @@ A condition that occurs when the input node doesn’t return enough input data t
 case insufficientDataFromInputNode
 ```
 
+```c
+AVAudioEngineManualRenderingStatusInsufficientDataFromInputNode
+```
+
 #### Discussion
 
-This status only applies to the input node when it provides input data for rendering. The output buffer may contain rendered data from other active sources in the engine’s processing graph. See [`setManualRenderingInputPCMFormat(_:inputBlock:)`](avaudioinputnode/setmanualrenderinginputpcmformat(_:inputblock:).md).
+This status only applies to the input node when it provides input data for rendering. The output buffer may contain rendered data from other active sources in the engine’s processing graph. See [`setManualRenderingInputPCMFormat(_:inputBlock:)`](../avaudioinputnode/setmanualrenderinginputpcmformat%28_,inputblock%29.md).
 
 ## See Also
 
-- [AVAudioEngineManualRenderingStatus.error](avaudioenginemanualrenderingstatus/error.md)
+### Interpreting rendering results
+- [AVAudioEngineManualRenderingStatus.error](./error.md)
   A problem that occurs during rendering and results in no data returning.
-- [AVAudioEngineManualRenderingStatus.success](avaudioenginemanualrenderingstatus/success.md)
+- [AVAudioEngineManualRenderingStatus.success](./success.md)
   A status that indicates the successful return of the requested data.
-- [AVAudioEngineManualRenderingStatus.cannotDoInCurrentContext](avaudioenginemanualrenderingstatus/cannotdoincurrentcontext.md)
+- [AVAudioEngineManualRenderingStatus.cannotDoInCurrentContext](./cannotdoincurrentcontext.md)
   An operation that the system can’t perform under the current conditions.
 
 

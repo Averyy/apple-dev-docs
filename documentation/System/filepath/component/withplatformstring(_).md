@@ -1,7 +1,8 @@
 # withPlatformString(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the contents of the file path component, represented as a null-terminated platform string.
 

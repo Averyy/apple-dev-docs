@@ -1,22 +1,27 @@
 # MPSAlphaType
 
 **Framework**: Metal Performance Shaders  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Premultiplication description for the color channels of an image.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum MPSAlphaType
+```
+
+```c
+enum MPSAlphaType : NSUInteger;
 ```
 
 #### Overview
@@ -35,33 +40,34 @@ Some image data is premultiplied. That is to say that the color channels are sto
 | `Premultiplied` | `AlphaIsOne` | Composite with opaque background color. |
 | `Premultiplied` | `Premultiplied` | None. |
 
-Most [`MPSKernel`](mpskernel.md) objects require non-premultiplied or completely opaque colors to work correctly. They implictly assume that alpha is equal to 1 and do not provide functions for the user to specify alpha channel types. Currently, the only filters that can handle premultiplied data are the color conversion filters provided by [`MPSImageConversion`](mpsimageconversion.md) kernels and they insert extra operations to ensure a correct conversion. Fully opaque images should use `MPSAlphaTypeAlphaIsOne`
+Most [`MPSKernel`](./mpskernel.md) objects require non-premultiplied or completely opaque colors to work correctly. They implictly assume that alpha is equal to 1 and do not provide functions for the user to specify alpha channel types. Currently, the only filters that can handle premultiplied data are the color conversion filters provided by [`MPSImageConversion`](./mpsimageconversion.md) kernels and they insert extra operations to ensure a correct conversion. Fully opaque images should use `MPSAlphaTypeAlphaIsOne`
 
 ## Topics
 
 ### Constants
-- [MPSAlphaType.nonPremultiplied](mpsalphatype/nonpremultiplied.md)
+- [MPSAlphaType.nonPremultiplied](./mpsalphatype/nonpremultiplied.md)
   The image is not premultiplied by alpha.
-- [MPSAlphaType.alphaIsOne](mpsalphatype/alphaisone.md)
+- [MPSAlphaType.alphaIsOne](./mpsalphatype/alphaisone.md)
   Alpha is guaranteed to be 1.
-- [MPSAlphaType.premultiplied](mpsalphatype/premultiplied.md)
+- [MPSAlphaType.premultiplied](./mpsalphatype/premultiplied.md)
   The image is premultiplied by alpha.
 ### Initializers
-- [init?(rawValue: UInt)](mpsalphatype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsalphatype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, backgroundColor: UnsafeMutablePointer<CGFloat>?, conversionInfo: CGColorConversionInfo?)](mpsimageconversion/init(device:srcalpha:destalpha:backgroundcolor:conversioninfo:).md)
+### Methods
+- [init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, backgroundColor: UnsafeMutablePointer<CGFloat>?, conversionInfo: CGColorConversionInfo?)](./mpsimageconversion/init%28device,srcalpha,destalpha,backgroundcolor,conversioninfo%29.md)
   Initializes a filter that can convert texture color space, alpha, and pixel format.
 
 

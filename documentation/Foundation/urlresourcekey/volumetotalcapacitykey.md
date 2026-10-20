@@ -1,7 +1,8 @@
 # volumeTotalCapacityKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Key for the volume’s total capacity in bytes (read-only).
 
@@ -20,19 +21,24 @@ Key for the volume’s total capacity in bytes (read-only).
 static let volumeTotalCapacityKey: URLResourceKey
 ```
 
+```c
+extern NSURLResourceKey const NSURLVolumeTotalCapacityKey;
+```
+
 #### Discussion
 
-> ❗ **Important**:  This API has the potential of being misused to access device signals to try to identify the device or user, also known as fingerprinting. Regardless of whether a user gives your app permission to track, fingerprinting is not allowed. When you use this API in your app or third-party SDK (an SDK not provided by Apple), declare your usage and the reason for using the API in your app or third-party SDK’s `PrivacyInfo.xcprivacy` file. For more information, including the list of valid reasons for using the API, see [`Describing use of required reason API`](https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api).
+> ❗ **Important**:  This API has the potential of being misused to access device signals to try to identify the device or user, also known as fingerprinting. Regardless of whether a user gives your app permission to track, fingerprinting is not allowed. When you use this API in your app or third-party SDK (an SDK not provided by Apple), declare your usage and the reason for using the API in your app or third-party SDK’s `PrivacyInfo.xcprivacy` file. For more information, including the list of valid reasons for using the API, see [Describing use of required reason API](../../BundleResources/describing-use-of-required-reason-api.md).
 
 ## See Also
 
-- [Checking Volume Storage Capacity](checking-volume-storage-capacity.md)
+### Volume capacity keys
+- [Checking Volume Storage Capacity](../checking-volume-storage-capacity.md)
   Confirm that you have enough local storage space for a large amount of data.
-- [static let volumeAvailableCapacityKey: URLResourceKey](urlresourcekey/volumeavailablecapacitykey.md)
+- [static let volumeAvailableCapacityKey: URLResourceKey](./volumeavailablecapacitykey.md)
   Key for the volume’s available capacity in bytes (read-only).
-- [static let volumeAvailableCapacityForImportantUsageKey: URLResourceKey](urlresourcekey/volumeavailablecapacityforimportantusagekey.md)
+- [static let volumeAvailableCapacityForImportantUsageKey: URLResourceKey](./volumeavailablecapacityforimportantusagekey.md)
   Key for the volume’s available capacity in bytes for storing important resources (read-only).
-- [static let volumeAvailableCapacityForOpportunisticUsageKey: URLResourceKey](urlresourcekey/volumeavailablecapacityforopportunisticusagekey.md)
+- [static let volumeAvailableCapacityForOpportunisticUsageKey: URLResourceKey](./volumeavailablecapacityforopportunisticusagekey.md)
   Key for the volume’s available capacity in bytes for storing nonessential resources (read-only).
 
 

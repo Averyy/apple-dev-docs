@@ -1,7 +1,8 @@
 # Publishers.Concatenate
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that emits all of one publisher’s elements before those from another publisher.
 
@@ -23,45 +24,46 @@ struct Concatenate<Prefix, Suffix> where Prefix : Publisher, Suffix : Publisher,
 ## Topics
 
 ### Creating a concatenate publisher
-- [init(prefix: Prefix, suffix: Suffix)](publishers/concatenate/init(prefix:suffix:).md)
+- [init(prefix: Prefix, suffix: Suffix)](./concatenate/init%28prefix,suffix%29.md)
   Creates a publisher that emits all of one publisher’s elements before those from another publisher.
 ### Declaring supporting types
-- [Publishers.Concatenate.Output](publishers/concatenate/output.md)
+- [Publishers.Concatenate.Output](./concatenate/output.md)
   The kind of values published by this publisher.
-- [Publishers.Concatenate.Failure](publishers/concatenate/failure.md)
+- [Publishers.Concatenate.Failure](./concatenate/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let prefix: Prefix](publishers/concatenate/prefix.md)
+- [let prefix: Prefix](./concatenate/prefix.md)
   The publisher to republish, in its entirety, before republishing elements from `suffix`.
-- [let suffix: Suffix](publishers/concatenate/suffix.md)
+- [let suffix: Suffix](./concatenate/suffix.md)
   The publisher to republish only after `prefix` finishes.
 ### Comparing publishers
-- [static func == (Publishers.Concatenate<Prefix, Suffix>, Publishers.Concatenate<Prefix, Suffix>) -> Bool](publishers/concatenate/==(_:_:).md)
+- [static func == (Publishers.Concatenate<Prefix, Suffix>, Publishers.Concatenate<Prefix, Suffix>) -> Bool](./concatenate/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 ### Default Implementations
-- [Equatable Implementations](publishers/concatenate/equatable-implementations.md)
+- [Equatable Implementations](./concatenate/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../../Swift/equatable.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.DropUntilOutput](publishers/dropuntiloutput.md)
+### Applying sequence operations to elements
+- [Publishers.DropUntilOutput](./dropuntiloutput.md)
   A publisher that ignores elements from the upstream publisher until it receives an element from second publisher.
-- [Publishers.Drop](publishers/drop.md)
+- [Publishers.Drop](./drop.md)
   A publisher that omits a specified number of elements before republishing later elements.
-- [Publishers.DropWhile](publishers/dropwhile.md)
+- [Publishers.DropWhile](./dropwhile.md)
   A publisher that omits elements from an upstream publisher until a given closure returns false.
-- [Publishers.TryDropWhile](publishers/trydropwhile.md)
+- [Publishers.TryDropWhile](./trydropwhile.md)
   A publisher that omits elements from an upstream publisher until a given error-throwing closure returns false.
-- [Publishers.PrefixWhile](publishers/prefixwhile.md)
+- [Publishers.PrefixWhile](./prefixwhile.md)
   A publisher that republishes elements while a predicate closure indicates publishing should continue.
-- [Publishers.TryPrefixWhile](publishers/tryprefixwhile.md)
+- [Publishers.TryPrefixWhile](./tryprefixwhile.md)
   A publisher that republishes elements while an error-throwing predicate closure indicates publishing should continue.
-- [Publishers.PrefixUntilOutput](publishers/prefixuntiloutput.md)
+- [Publishers.PrefixUntilOutput](./prefixuntiloutput.md)
   A publisher that republishes elements until another publisher emits an element.
 
 

@@ -1,7 +1,8 @@
 # AddMediaMediaDestinationResolutionResult.Unsupported
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The reason your service can’t add media items to the specified library or playlist.
 
@@ -10,7 +11,7 @@ The reason your service can’t add media items to the specified library or play
 
 ## Declaration
 
-```swift
+```
 object AddMediaMediaDestinationResolutionResult.Unsupported
 ```
 
@@ -20,7 +21,8 @@ object AddMediaMediaDestinationResolutionResult.Unsupported
 
 ## See Also
 
-- [type AddMediaMediaDestinationUnsupportedReason](addmediamediadestinationunsupportedreason.md)
+### Reporting a Problem
+- [type AddMediaMediaDestinationUnsupportedReason](../addmediamediadestinationunsupportedreason.md)
   Reasons the media service can’t add media items to a specified playlist.
 
 

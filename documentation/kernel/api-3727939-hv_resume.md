@@ -1,14 +1,15 @@
 # hv_resume
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 void hv_resume(void);
 ```
 

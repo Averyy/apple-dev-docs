@@ -1,6 +1,7 @@
 # Executing Statistics Collection Queries
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Calculate statistical data for graphs and charts.
 
@@ -8,11 +9,11 @@ Calculate statistical data for graphs and charts.
 
 Produce data for graphs and charts using statistics collection queries. For example, you might create a statistics collection query that calculates the total number of steps for each day or the average heart rate for each hour.
 
-> **Note**:  HealthKit provides two types of queries for calculating statistics over sets of samples. [`HKStatisticsQuery`](hkstatisticsquery.md) calculates a single value over all matching samples, while [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md) partitions the samples into time intervals and calculates a value for each time interval.
+> **Note**:  HealthKit provides two types of queries for calculating statistics over sets of samples. [`HKStatisticsQuery`](./hkstatisticsquery.md) calculates a single value over all matching samples, while [`HKStatisticsCollectionQuery`](./hkstatisticscollectionquery.md) partitions the samples into time intervals and calculates a value for each time interval.
 
 Statistics collection queries use an anchor point and a time interval to partition the set of matching samples into collections. The anchor point defines an arbitrary starting point. The position of this point often doesn’t matter. It could be in the future or in the past. Time intervals extend away from this anchor point in both directions.
 
-![An illustration showing a value for each time interval around the specified anchor.](/images/com.apple.healthkit/media-3740870@2x.png)
+![An illustration showing a value for each time interval around the specified anchor.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-3740870@2x.png)
 
 For example, if you use a 1-day time interval, the anchor point defines the time when each collection begins. The exact date for the anchor point doesn’t matter. It could be 3:34 a.m., January 1, 1970 or 3:34 a.m., March 15, 2065. In both cases, the statistics collection query partitions the matching samples into days, starting each day at 3:34 a.m.
 
@@ -64,9 +65,9 @@ let query = HKStatisticsCollectionQuery(quantityType: quantityType,
 
 Unlike most other queries, you don’t set the callback block when you instantiate a statistics collection query. Instead, you can either set the initial result handler or the statistics update handler (or both) as needed for your app. In this case, the sample code just sets the initial results handler, letting it calculate statistics over the samples currently stored in HealthKit.
 
-In your results handler, first check for and handle errors. Many [`HKError.Code`](hkerror/code.md) values indicate that you haven’t properly set up HealthKit. Always check HealthKit’s availability and request permission to read the specified data type before creating a query. For more information, see [`Setting up HealthKit`](setting-up-healthkit.md) and [`Authorizing access to health data`](authorizing-access-to-health-data.md).
+In your results handler, first check for and handle errors. Many [`HKError.Code`](./hkerror/code.md) values indicate that you haven’t properly set up HealthKit. Always check HealthKit’s availability and request permission to read the specified data type before creating a query. For more information, see [Setting up HealthKit](./setting-up-healthkit.md) and [Authorizing access to health data](./authorizing-access-to-health-data.md).
 
-However, your app may need to explicitly check for some errors, depending on its needs. For example, if your app can run a query in the background, you need to check for and handle the [`HKError.Code.errorDatabaseInaccessible`](hkerror/code/errordatabaseinaccessible.md) error.
+However, your app may need to explicitly check for some errors, depending on its needs. For example, if your app can run a query in the background, you need to check for and handle the [`HKError.Code.errorDatabaseInaccessible`](./hkerror/code/errordatabaseinaccessible.md) error.
 
 ```swift
 // Set the results handler.
@@ -95,9 +96,9 @@ query.initialResultsHandler = {
 ...
 ```
 
-After you handle any errors, process the incoming statistics data, and then update your app. Be sure to dispatch code that updates the user interface to the [`main`](https://developer.apple.com/documentation/dispatch/dispatchqueue/main) queue.
+After you handle any errors, process the incoming statistics data, and then update your app. Be sure to dispatch code that updates the user interface to the [`main`](../Dispatch/dispatchqueue/main.md) queue.
 
-The following code calculates the start and end times for a 3-month window and then iterates over all the time intervals in that window. The statistics collection passes the enumeration block a statistics object for each time interval between the start and end dates. However, if the time interval doesn’t contain any samples, the provided statistics’s [`sumQuantity()`](hkstatistics/sumquantity().md) method returns `nil`. Therefore, the sample must check to see whether it has a valid quantity. If it does, it adds the data; otherwise, it skips the time interval.
+The following code calculates the start and end times for a 3-month window and then iterates over all the time intervals in that window. The statistics collection passes the enumeration block a statistics object for each time interval between the start and end dates. However, if the time interval doesn’t contain any samples, the provided statistics’s [`sumQuantity()`](./hkstatistics/sumquantity%28%29.md) method returns `nil`. Therefore, the sample must check to see whether it has a valid quantity. If it does, it adds the data; otherwise, it skips the time interval.
 
 ```swift
 ...
@@ -141,21 +142,22 @@ Since the sample doesn’t provide an update results handler, when the initial r
 
 ## See Also
 
-- [Executing Statistical Queries](executing-statistical-queries.md)
+### Statistics
+- [Executing Statistical Queries](./executing-statistical-queries.md)
   Create and run statistical queries.
-- [struct HKStatisticsQueryDescriptor](hkstatisticsquerydescriptor.md)
+- [struct HKStatisticsQueryDescriptor](./hkstatisticsquerydescriptor.md)
   A query descriptor that calculates the minimum, maximum, average, or sum over a set of samples from the HealthKit store.
-- [class HKStatisticsQuery](hkstatisticsquery.md)
+- [class HKStatisticsQuery](./hkstatisticsquery.md)
   A query that performs statistical calculations over a set of matching quantity samples, and returns the results.
-- [struct HKStatisticsCollectionQueryDescriptor](hkstatisticscollectionquerydescriptor.md)
+- [struct HKStatisticsCollectionQueryDescriptor](./hkstatisticscollectionquerydescriptor.md)
   A query descriptor that gathers a collection of statistics calculated over a series of fixed-length time intervals.
-- [class HKStatisticsCollectionQuery](hkstatisticscollectionquery.md)
+- [class HKStatisticsCollectionQuery](./hkstatisticscollectionquery.md)
   A query that performs multiple statistics queries over a series of fixed-length time intervals.
-- [class HKStatistics](hkstatistics.md)
+- [class HKStatistics](./hkstatistics.md)
   An object that represents the result of calculating the minimum, maximum, average, or sum over a set of samples from the HealthKit store.
-- [class HKStatisticsCollection](hkstatisticscollection.md)
+- [class HKStatisticsCollection](./hkstatisticscollection.md)
   An object that manages a collection of statistics, representing the results calculated over separate time intervals.
-- [struct HKStatisticsOptions](hkstatisticsoptions.md)
+- [struct HKStatisticsOptions](./hkstatisticsoptions.md)
   Options for specifying the statistic to calculate.
 
 

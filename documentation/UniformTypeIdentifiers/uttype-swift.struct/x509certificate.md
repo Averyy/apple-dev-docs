@@ -1,7 +1,8 @@
 # x509Certificate
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents an X.509 certificate.
 
@@ -24,11 +25,12 @@ static var x509Certificate: UTType { get }
 
 The identifier for this type is `public.x509-certificate`.
 
-This type conforms to [`UTTypeData`](uttypedata.md).
+This type conforms to [`UTTypeData`](../uttypedata.md).
 
 ## See Also
 
-- [static var pkcs12: UTType](uttype-swift.struct/pkcs12.md)
+### Cryptographic files
+- [static var pkcs12: UTType](./pkcs12.md)
   A type that represents Public Key Cryptography Standard (PKCS) 12 data.
 
 

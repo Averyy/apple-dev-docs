@@ -1,7 +1,8 @@
 # CSSMERR_CSPDL_APPLE_DL_CONVERSION_ERROR
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_CSPDL_APPLE_DL_CONVERSION_ERROR: Int { get }
+```
+
+```c
+CSSMERR_CSPDL_APPLE_DL_CONVERSION_ERROR
 ```
 
 

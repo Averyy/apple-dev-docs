@@ -1,7 +1,8 @@
 # GaussianSplatEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A namespace for events about Gaussian splat rendering.
 
@@ -21,7 +22,7 @@ enum GaussianSplatEvents
 ## Topics
 
 ### Structures
-- [GaussianSplatEvents.RenderingChanged](gaussiansplatevents/renderingchanged.md)
+- [GaussianSplatEvents.RenderingChanged](./gaussiansplatevents/renderingchanged.md)
   An event that signals the framework changed how it renders an entity’s splats to manage performance.
 
 

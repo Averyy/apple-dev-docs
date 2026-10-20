@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: PaperKit
+**Framework**: PaperKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: MarkupID<PaperMarkup>](papermarkup/id.md)
+- [var id: MarkupID<PaperMarkup>](./id.md)
   The unique identifier of the markup.
 
 

@@ -1,7 +1,8 @@
 # socketIsConnected
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Socket is already connected.
 
@@ -22,7 +23,7 @@ static var socketIsConnected: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,15 +33,16 @@ The corresponding C error is `EISCONN`.
 
 ## See Also
 
-- [static var notSocket: Errno](errno/notsocket.md)
+### Network Socket Errors
+- [static var notSocket: Errno](./notsocket.md)
   A socket operation was performed on something that isn’t a socket.
-- [static var notSupportedOnSocket: Errno](errno/notsupportedonsocket.md)
+- [static var notSupportedOnSocket: Errno](./notsupportedonsocket.md)
   Operation not supported on socket.
-- [static var socketNotConnected: Errno](errno/socketnotconnected.md)
+- [static var socketNotConnected: Errno](./socketnotconnected.md)
   Socket is not connected.
-- [static var socketShutdown: Errno](errno/socketshutdown.md)
+- [static var socketShutdown: Errno](./socketshutdown.md)
   Can’t send after socket shutdown.
-- [static var socketTypeNotSupported: Errno](errno/sockettypenotsupported.md)
+- [static var socketTypeNotSupported: Errno](./sockettypenotsupported.md)
   Socket type not supported.
 
 

@@ -1,17 +1,20 @@
 # MCPeerID
 
 **Framework**: Multipeer Connectivity  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An  `MCPeerID` object represents a peer in a multipeer session.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 27.0
+- iPadOS 7.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use Network Framework instead
 
 ## Declaration
 
@@ -19,13 +22,17 @@ An  `MCPeerID` object represents a peer in a multipeer session.
 class MCPeerID
 ```
 
+```objc
+@interface MCPeerID : NSObject
+```
+
 #### Overview
 
 You create a single peer ID object that represents the instance of your app running on the local device. The Multipeer Connectivity framework is responsible for creating peer ID objects that represent other devices.
 
-To create a new peer ID for the local app and associate a display name with that ID, call [`init(displayName:)`](mcpeerid/init(displayname:).md). The peer’s name must be no longer than 63 bytes in UTF-8 encoding.
+To create a new peer ID for the local app and associate a display name with that ID, call [`init(displayName:)`](./mcpeerid/init%28displayname%29.md). The peer’s name must be no longer than 63 bytes in UTF-8 encoding.
 
-Each peer ID your app creates with [`init(displayName:)`](mcpeerid/init(displayname:).md) is unique, even when supplying the same display name. If you want a device’s peer ID to be stable over time, don’t create a new peer ID every time your app begins advertising or browsing. Instead, archive the ID when you create it, and then unarchive it the next time you need it. If you need the peer ID to be tied to the display name, you can archive the name as well, and only create a new peer ID when the name changes, as illustrated in the following code fragment:
+Each peer ID your app creates with [`init(displayName:)`](./mcpeerid/init%28displayname%29.md) is unique, even when supplying the same display name. If you want a device’s peer ID to be stable over time, don’t create a new peer ID every time your app begins advertising or browsing. Instead, archive the ID when you create it, and then unarchive it the next time you need it. If you need the peer ID to be tied to the display name, you can archive the name as well, and only create a new peer ID when the name changes, as illustrated in the following code fragment:
 
 ```objc
 NSString *displayName = <#Get a name#>;
@@ -49,42 +56,43 @@ if ([oldDisplayName isEqualToString:displayName]) {
 ## Topics
 
 ### Peer Methods
-- [init(displayName: String)](mcpeerid/init(displayname:).md)
+- [init(displayName: String)](./mcpeerid/init%28displayname%29.md)
   Initializes a peer.
-- [var displayName: String](mcpeerid/displayname.md)
+- [var displayName: String](./mcpeerid/displayname.md)
   The display name for this peer.
 ### Initializers
-- [init?(coder: NSCoder)](mcpeerid/init(coder:).md)
+- [init?(coder: NSCoder)](./mcpeerid/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [SynchronizationPeerID](../realitykit/synchronizationpeerid.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [SynchronizationPeerID](../RealityKit/synchronizationpeerid.md)
 
 ## See Also
 
-- [class MCAdvertiserAssistant](mcadvertiserassistant.md)
+### Classes
+- [class MCAdvertiserAssistant](./mcadvertiserassistant.md)
   The `MCAdvertiserAssistant` is a convenience class that handles advertising, presents incoming invitations to the user, and handles users’ responses. Use this class to provide a user interface for handling invitations when your app does not require programmatic control over the invitation process.
-- [class MCBrowserViewController](mcbrowserviewcontroller.md)
-  The `MCBrowserViewController` class presents nearby devices to the user and enables the user to invite nearby devices to a session. To use this class in iOS or tvOS, call methods from the underlying `UIViewController` class ([`prepare(for:sender:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/prepare(for:sender:)) and [`performSegue(withIdentifier:sender:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/performsegue(withidentifier:sender:)) for storyboards or [`present(_:animated:completion:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/present(_:animated:completion:)) and [`dismiss(animated:completion:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/dismiss(animated:completion:)) for nib-based views) to present and dismiss the view controller. In macOS, use the comparable `NSViewController` methods [`presentAsSheet(_:)`](https://developer.apple.com/documentation/appkit/nsviewcontroller/presentassheet(_:)) and [`dismiss(_:)`](https://developer.apple.com/documentation/appkit/nsviewcontroller/dismiss(_:)-91my5) instead.
-- [class MCNearbyServiceAdvertiser](mcnearbyserviceadvertiser.md)
+- [class MCBrowserViewController](./mcbrowserviewcontroller.md)
+  The `MCBrowserViewController` class presents nearby devices to the user and enables the user to invite nearby devices to a session. To use this class in iOS or tvOS, call methods from the underlying `UIViewController` class ([`prepare(for:sender:)`](../UIKit/uiviewcontroller/prepare%28for,sender%29.md) and [`performSegue(withIdentifier:sender:)`](../UIKit/uiviewcontroller/performsegue%28withidentifier,sender%29.md) for storyboards or [`present(_:animated:completion:)`](../UIKit/uiviewcontroller/present%28_,animated,completion%29.md) and [`dismiss(animated:completion:)`](../UIKit/uiviewcontroller/dismiss%28animated,completion%29.md) for nib-based views) to present and dismiss the view controller. In macOS, use the comparable `NSViewController` methods [`presentAsSheet(_:)`](../AppKit/nsviewcontroller/presentassheet%28_%29.md) and [`dismiss(_:)`](../AppKit/nsviewcontroller/dismiss%28_%29-91my5.md) instead.
+- [class MCNearbyServiceAdvertiser](./mcnearbyserviceadvertiser.md)
   The `MCNearbyServiceAdvertiser` class publishes an advertisement for a specific service that your app provides through the Multipeer Connectivity framework and notifies its delegate about invitations from nearby peers.
-- [class MCNearbyServiceBrowser](mcnearbyservicebrowser.md)
+- [class MCNearbyServiceBrowser](./mcnearbyservicebrowser.md)
   Searches (by service type) for services offered by nearby devices using infrastructure Wi-Fi, peer-to-peer Wi-Fi, and Bluetooth (in iOS) or Ethernet (in macOS and tvOS), and provides the ability to easily invite those devices to a Multipeer Connectivity session (`MCSession`).
-- [class MCSession](mcsession.md)
+- [class MCSession](./mcsession.md)
   An `MCSession` object enables and manages communication among all peers in a Multipeer Connectivity session.
 
 

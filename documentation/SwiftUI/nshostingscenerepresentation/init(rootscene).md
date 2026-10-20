@@ -1,7 +1,8 @@
 # init(rootScene:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new hosting scene representation for the specified scene(s).
 

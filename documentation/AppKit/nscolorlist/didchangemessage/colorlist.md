@@ -1,7 +1,8 @@
 # colorList
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 27.0+

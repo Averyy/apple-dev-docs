@@ -1,7 +1,8 @@
 # ContentMode.fit
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that resizes the content so it’s all within the available space, both vertically and horizontally.
 
@@ -22,7 +23,7 @@ case fit
 
 ## Mentions
 
-- [Fitting images into available space](fitting-images-into-available-space.md)
+- [Fitting images into available space](../fitting-images-into-available-space.md)
 
 #### Discussion
 
@@ -30,7 +31,8 @@ This mode preserves the content’s aspect ratio. If the content doesn’t have 
 
 ## See Also
 
-- [ContentMode.fill](contentmode/fill.md)
+### Getting content modes
+- [ContentMode.fill](./fill.md)
   An option that resizes the content so it occupies all available space, both vertically and horizontally.
 
 

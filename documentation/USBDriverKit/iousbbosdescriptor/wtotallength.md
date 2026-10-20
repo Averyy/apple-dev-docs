@@ -1,7 +1,8 @@
 # wTotalLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length, in bytes, of the descriptor and all of its subdescriptors.
 
@@ -10,17 +11,18 @@ The length, in bytes, of the descriptor and all of its subdescriptors.
 
 ## Declaration
 
-```swift
+```c
 uint16_t wTotalLength;
 ```
 
 ## See Also
 
-- [bLength](iousbbosdescriptor/blength.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
   The size of the descriptor in bytes.
-- [bDescriptorType](iousbbosdescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [bNumDeviceCaps](iousbbosdescriptor/bnumdevicecaps.md)
+- [bNumDeviceCaps](./bnumdevicecaps.md)
   The number of separate device capability descriptors in the binary object store.
 
 

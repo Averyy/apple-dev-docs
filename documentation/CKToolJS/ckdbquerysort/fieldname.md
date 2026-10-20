@@ -1,7 +1,8 @@
 # fieldName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of a field belonging to the record type. Used to sort the fetched records.
 
@@ -10,7 +11,7 @@ The name of a field belonging to the record type. Used to sort the fetched recor
 
 ## Declaration
 
-```swift
+```
 attribute string? fieldName;
 ```
 

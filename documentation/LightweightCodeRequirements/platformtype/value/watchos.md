@@ -1,7 +1,8 @@
 # watchOS
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The platform type for native watchOS software.
 

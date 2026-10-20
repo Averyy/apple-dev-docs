@@ -1,7 +1,8 @@
 # NWProtocolDefinition
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for identifying a network protocol.
 
@@ -23,22 +24,23 @@ class NWProtocolDefinition
 ## Topics
 
 ### Inspecting Protocol Definitions
-- [let name: String](nwprotocoldefinition/name.md)
+- [let name: String](./nwprotocoldefinition/name.md)
   The name of the protocol.
 
 ## Relationships
 
 ### Inherited By
-- [NWProtocolFramer.Definition](nwprotocolframer/definition.md)
+- [NWProtocolFramer.Definition](./nwprotocolframer/definition.md)
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NWProtocolOptions](nwprotocoloptions.md)
+### Adding Protocols to Connections
+- [class NWProtocolOptions](./nwprotocoloptions.md)
   The abstract superclass for configuring the options of a network protocol.
 
 

@@ -1,7 +1,8 @@
 # jwsRepresentation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transaction signed by the App Store, in JWS Compact Serialization format.
 
@@ -20,38 +21,41 @@ The transaction signed by the App Store, in JWS Compact Serialization format.
 var jwsRepresentation: String { get }
 ```
 
+Available when `SignedType` is `Transaction`.
+
 ## Mentions
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
+- [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 
 #### Discussion
 
 Use this JSON Web Signature (JWS) value to perform your own JWS verification on your server or on the device.
 
-The [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) is the same as the [`JWSTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwstransaction) that the App Store Server API returns and the [`JWSTransaction`](https://developer.apple.com/documentation/appstoreservernotifications/jwstransaction) that you receive from App Store Server Notifications. The [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md)’s decoded payload contains two additional fields: `deviceVerification` and `deviceVerificationNonce`. Use these fields on the device to verify that the JWS information belongs to the device. For more information, see [`deviceVerificationID`](appstore/deviceverificationid.md).
+The [`jwsRepresentation`](./jwsrepresentation-21vgo.md) is the same as the [`JWSTransaction`](../../AppStoreServerAPI/jwstransaction.md) that the App Store Server API returns and the [`JWSTransaction`](../../AppStoreServerNotifications/jwstransaction.md) that you receive from App Store Server Notifications. The [`jwsRepresentation`](./jwsrepresentation-21vgo.md)’s decoded payload contains two additional fields: `deviceVerification` and `deviceVerificationNonce`. Use these fields on the device to verify that the JWS information belongs to the device. For more information, see [`deviceVerificationID`](../appstore/deviceverificationid.md).
 
-To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) on your server, consider using the App Store Server Library function `verifyAndDecodeTransaction`, available in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library).
+To verify the [`jwsRepresentation`](./jwsrepresentation-21vgo.md) on your server, consider using the App Store Server Library function `verifyAndDecodeTransaction`, available in each language the library supports. For more information, see [Simplifying your implementation by using the App Store Server Library](../../AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library.md).
 
-> ❗ **Important**:  The decoded payloads of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwstransaction) strings contain [`price`](https://developer.apple.com/documentation/appstoreserverapi/price) fields that are specified in *milliunits* of the currency;  StoreKit represents the `price`  in *units* of currency. Take care not to confuse these two representations when working with both APIs.
+> ❗ **Important**:  The decoded payloads of the [`jwsRepresentation`](./jwsrepresentation-21vgo.md) and [`JWSTransaction`](../../AppStoreServerAPI/jwstransaction.md) strings contain [`price`](../../AppStoreServerAPI/price.md) fields that are specified in *milliunits* of the currency;  StoreKit represents the `price`  in *units* of currency. Take care not to confuse these two representations when working with both APIs.
 
 ## See Also
 
-- [var deviceVerification: Data](verificationresult/deviceverification-69lvx.md)
+### Getting properties for transactions
+- [var deviceVerification: Data](./deviceverification-69lvx.md)
   The device verification value to use to verify whether the transaction belongs to the device.
-- [var deviceVerificationNonce: UUID](verificationresult/deviceverificationnonce-9dfrn.md)
+- [var deviceVerificationNonce: UUID](./deviceverificationnonce-9dfrn.md)
   The UUID for computing the device verification value.
-- [var signedDate: Date](verificationresult/signeddate-8x9bg.md)
+- [var signedDate: Date](./signeddate-8x9bg.md)
   The date that the App Store signed the JWS transaction.
-- [var headerData: Data](verificationresult/headerdata-9egfp.md)
+- [var headerData: Data](./headerdata-9egfp.md)
   The header component of the JWS transaction.
-- [var payloadData: Data](verificationresult/payloaddata-uyle.md)
+- [var payloadData: Data](./payloaddata-uyle.md)
   The payload component of the JWS transaction.
-- [var signedData: Data](verificationresult/signeddata-56usp.md)
+- [var signedData: Data](./signeddata-56usp.md)
   The transaction data that the signature applies to.
-- [var signatureData: Data](verificationresult/signaturedata-4pyv8.md)
+- [var signatureData: Data](./signaturedata-4pyv8.md)
   The signature component of the JWS transaction.
-- [var signature: P256.Signing.ECDSASignature](verificationresult/signature-7t1ne.md)
+- [var signature: P256.Signing.ECDSASignature](./signature-7t1ne.md)
   The signature component of the JSON web signature.
 
 

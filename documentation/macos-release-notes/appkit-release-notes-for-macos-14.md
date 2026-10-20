@@ -1,6 +1,7 @@
 # AppKit Release Notes for macOS Sonoma 14
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -8,14 +9,14 @@ Update your apps to use new features, and test your apps against API changes.
 
 AppKit in macOS14 includes new features, as well as API changes and deprecations.
 
-###### Nsepsimagerep
+###### NSEPSImageRep
 
 - Deprecated in macOS 14.0 as encapsulated PostScript (EPS) files are no longer supported by macOS. Learn more on Apple Support. (107052479)
 - Attempting to initialize an instance of `NSEPSImageRep` will always return `nil` on macOS 14.0 and later.
 - Attempting to initialize an instance of` NSImage` with an EPS file or data will always return `nil` on macOS 14.0 and later.
 - If a multi-rep image is initialized by name `(NSImage(named:)`, `Bundle.image(forResource:`), etc.), it will no longer include EPS reps. If no supports (non-EPS) reps could be produced, this will result in `nil` being returned from these functions.
 
-###### Nsimagedelegate
+###### NSImageDelegate
 
 - Deprecated four of the five NSImageDelegate methods as of Mac OS X 10.4 Tiger. (18422088)
 - `-image:willLoadRepresentation:`
@@ -26,53 +27,67 @@ AppKit in macOS14 includes new features, as well as API changes and deprecations
 - Using these symbols in Objective-C may produce warnings or errors, depending on the project’s build settings.
 - These symbols are no longer available in Swift in the macOS 14.0 SDK.
 
-###### Nssavepanel Nsopenpanel
+###### NSSavePanel, NSOpenPanel
 
 - Added the property identifier. (4228269)
 - Modeless and application modal open and save panels are now main windows. (14623155, 103038843) This fixes a problem where menu items that weren’t applicable to the open or save panel remained `enabled. Open` and save panels that are displayed as sheets are unchanged.
 - Removed the titlebar from modal and modeless `NSSavePanels`. (105212420) This changes `NSSavePanel` to have consistent behavior with `NSOpenPanel`.
 
-###### Nsprintpanel Nspagelayout
+###### NSPrintPanel, NSPageLayout
 
 - Applications linking against SDKs released for Fall 2023 may now release the `NSPrintInfo` instance and other related objects as soon as the `NSPrintPanel` / `NSPageLayout` panel is dismissed.
-- Added block based variants of the begin-sheet methods (6990600): ```None
- class NSPrintPanel {
- 	open func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow, completionHandler handler: ((NSPrintPanel.Result) -> Void)? = nil)
- 	open func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow) async -> NSPrintPanel.Result
- }
+- Added block based variants of the begin-sheet methods (6990600):
 
- class NSPageLayout {
- 	open func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow, completionHandler handler: ((NSPageLayout.Result) -> Void)? = nil)
- 	open func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow) async -> NSPageLayout.Result
- }
-```
+  ```
+   class NSPrintPanel {
+   	open func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow, completionHandler handler: ((NSPrintPanel.Result) -> Void)? = nil)
+   	open func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow) async -> NSPrintPanel.Result
+   }
 
-###### Nscolor
+   class NSPageLayout {
+   	open func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow, completionHandler handler: ((NSPageLayout.Result) -> Void)? = nil)
+   	open func beginSheet(using printInfo: NSPrintInfo, on parentWindow: NSWindow) async -> NSPageLayout.Result
+   }
+  ```
+
+###### NSColor
 
 - `NSColor.textInsertionPointColor` provides a robust way to get the current text insertion point color as defined by the system.
 - To be consistent with an `NSTextView`, use `NSTextView.insertionPointColor`.
 - Otherwise, if not using a text view, use `NSColor.textInsertionPointColor`.
 
-###### Nstextinsertionindicator
+###### NSTextInsertionIndicator
 
 - `NSTextInsertionIndicator` is a new `NSView` that encapsulates all the behavior for a text insertion indicator — such as blinking while waiting for typing and prompting during dictation. `NSTextView `uses the `NSTextInsertionIndicator`. But, if using a custom text implementation, instantiate and add an `NSTextInsertionIndicator` as a subview of the custom text view. Its text implementation only needs to set the indicator view’s display mode—automatic, visible, or hidden—and frame. Based on the display mode the indicator view will infer from the frame whether it needs to blink or not.
 
-###### Nsview
+###### NSView
 
-- In macOS 14, AppKit is exposing the `clipsToBounds` property of `NSView`. For applications linked against the macOS 14 SDK, the default value of this property is `false`. Apps linked against older SDKs default to `true`. Some classes, like `NSClipView`, continue to default to `true`. The change in defaults recognizes that it is vastly easier to reason about clipping a view’s descendants than it is to unclip a view’s ancestors. Users can turn clipping back on by using the `NSView.clipsToBounds` setter or using the attributes inspector of a view in the Xcode interface builder. This property is available back to macOS 10.9. This availability is intended to allow code targeting older OSes to set this property to `true` without guarding the setter in an availability check. Setting this property to `false` on previous OSes may not work reliably. Some patterns that have historically worked will require adjustment: - Showing or hiding UI by setting an ancestor’s frame to zero. When attempting to hide a view hierarchy by shrinking the size of an ancestor, or positioning a descendent view outside an ancestors view’s bounds, it is now necessary to set the ancestor’s view’s `.clipsToBounds` property to `true`. An alternative may be to set `NSView.isHidden`, instead.
-- Filling the dirty rect of a view inside of `-drawRect`. A fairly common pattern is to simply rect fill the dirty rect passed into an override of `NSView.draw()`. The dirty rect can now extend outside of your view’s bounds. This pattern can be adjusted by filling the bounds instead of the dirty rect, or by setting `clipsToBounds = true`.
-- Confusing a view’s bounds and its dirty rect. The dirty rect passed to `.drawRect()` should be used to determine what to draw, not where to draw it. Use `NSView.bounds` when determining the layout of what your view draws.  (10905750)
+- In macOS 14, AppKit is exposing the `clipsToBounds` property of `NSView`.
 
-###### Nsviewcontroller
+  For applications linked against the macOS 14 SDK, the default value of this property is `false`. Apps linked against older SDKs default to `true`. Some classes, like `NSClipView`, continue to default to `true`. The change in defaults recognizes that it is vastly easier to reason about clipping a view’s descendants than it is to unclip a view’s ancestors.
 
-- Added API: ```None
- open var viewIfLoaded: NSView? { get }
- open func loadViewIfNeeded()
- open func present(_ viewController: NSViewController, asPopoverRelativeTo positioningRect: NSRect, of positioningView: NSView, preferredEdge: NSRectEdge, behavior: NSPopover.Behavior, hasFullSizeContent: Bool)
-```
+  Users can turn clipping back on by using the `NSView.clipsToBounds` setter or using the attributes inspector of a view in the Xcode interface builder.
+
+  This property is available back to macOS 10.9. This availability is intended to allow code targeting older OSes to set this property to `true` without guarding the setter in an availability check. Setting this property to `false` on previous OSes may not work reliably.
+
+  Some patterns that have historically worked will require adjustment:
+
+  - Showing or hiding UI by setting an ancestor’s frame to zero. When attempting to hide a view hierarchy by shrinking the size of an ancestor, or positioning a descendent view outside an ancestors view’s bounds, it is now necessary to set the ancestor’s view’s `.clipsToBounds` property to `true`. An alternative may be to set `NSView.isHidden`, instead.
+  - Filling the dirty rect of a view inside of `-drawRect`. A fairly common pattern is to simply rect fill the dirty rect passed into an override of `NSView.draw()`. The dirty rect can now extend outside of your view’s bounds. This pattern can be adjusted by filling the bounds instead of the dirty rect, or by setting `clipsToBounds = true`.
+  - Confusing a view’s bounds and its dirty rect. The dirty rect passed to `.drawRect()` should be used to determine what to draw, not where to draw it. Use `NSView.bounds` when determining the layout of what your view draws.  (10905750)
+
+###### NSViewController
+
+- Added API:
+
+  ```
+   open var viewIfLoaded: NSView? { get }
+   open func loadViewIfNeeded()
+   open func present(_ viewController: NSViewController, asPopoverRelativeTo positioningRect: NSRect, of positioningView: NSView, preferredEdge: NSRectEdge, behavior: NSPopover.Behavior, hasFullSizeContent: Bool)
+  ```
 - `NSViewController.loadView()` no longer throws an exception when the view controller’s nibName is nil. (81775005)
 
-###### Textkit Api Coordinate System Changes
+###### TextKit API Coordinate System Changes
 
 - Applications linking against SDKs released for Fall 2023 have behavior changes from TextKit API.
 - `NSTextLineFragment.typographicBounds` is relative to `NSTextLayoutFragment.layoutFragmentFrame.origin` (instead of in the text container coordinate system as it was before)
@@ -87,7 +102,7 @@ AppKit in macOS14 includes new features, as well as API changes and deprecations
 
 - A `CADisplayLink` can be created via `NSView.displayLink(target:selector:)`. The `CADisplayLink` will automatically track the display the view is on, and will be automatically suspended if it isn’t on a display. A `CADisplayLink` instance can also be created from an `NSWindow` or `NSScreen`.
 
-###### Nstoolbar
+###### NSToolbar
 
 - Applications linked against the macOS 14.0 SDK will no longer show the `.toggleSidebar` toolbar item to the leading edge of the inline window title and will instead show relative to its order in the `defaultItemIdentifiers` delegate method. It is recommended to place this item above the sidebar section of the toolbar as the leading most item of that section so that toggling the sidebar does not move the toolbar item itself. As a reminder, items placed before the `.sidebarTrackingSeparator` in the `defaultItems` delegate method will appear above the sidebar in the toolbar. Similarly, the best place for the new `.toggleInspector` item is above the inspector section of the toolbar as the trailing most item following the `.inspectorTrackingSeparator`, but it may be placed elsewhere in the toolbar if appropriate.
 - `NSToolbar` now supports centering items in multiple sections of the toolbar. Use the `centeredItemIdentifiers` property to specify a set of items and they will be centered in the section they appear in. The set of centered items no longer applies to a single section of the toolbar, but may be used to center one item in the sidebar section and another item in the content section for instance.
@@ -112,13 +127,14 @@ AppKit in macOS14 includes new features, as well as API changes and deprecations
 
 ## See Also
 
-- [AppKit Release Notes for macOS Ventura 13](appkit-release-notes-for-macos-13.md)
+### AppKit
+- [AppKit Release Notes for macOS Ventura 13](./appkit-release-notes-for-macos-13.md)
   Update your apps to use new features, and test your apps against API changes.
-- [AppKit Release Notes for macOS Monterey 12](appkit-release-notes-for-macos-12.md)
+- [AppKit Release Notes for macOS Monterey 12](./appkit-release-notes-for-macos-12.md)
   Update your apps to use new features, and test your apps against API changes.
-- [AppKit Release Notes for macOS Big Sur 11](appkit-release-notes-for-macos-11.md)
+- [AppKit Release Notes for macOS Big Sur 11](./appkit-release-notes-for-macos-11.md)
   Update your apps to use new features, and test your apps against API changes.
-- [AppKit Release Notes for macOS 10.14](appkit-release-notes-for-macos-10_14.md)
+- [AppKit Release Notes for macOS 10.14](./appkit-release-notes-for-macos-10_14.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

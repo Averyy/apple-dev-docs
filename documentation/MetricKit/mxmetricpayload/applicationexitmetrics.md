@@ -1,16 +1,19 @@
 # applicationExitMetrics
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app foreground and background exit metrics for the reporting period.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricResult`](../metricresult.md), and read the [`ForegroundTerminationMetric`](../foregroundterminationmetric.md) or [`BackgroundTerminationMetric`](../backgroundterminationmetric.md) cases instead.
 
 ## Declaration
 
@@ -18,11 +21,16 @@ The app foreground and background exit metrics for the reporting period.
 var applicationExitMetrics: MXAppExitMetric? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) MXAppExitMetric * applicationExitMetrics;
+```
+
 ## See Also
 
-- [var applicationTimeMetrics: MXAppRunTimeMetric?](mxmetricpayload/applicationtimemetrics.md)
+### Reading performance metrics
+- [var applicationTimeMetrics: MXAppRunTimeMetric?](./applicationtimemetrics.md)
   The app foreground and background time metrics for the reporting period.
-- [var memoryMetrics: MXMemoryMetric?](mxmetricpayload/memorymetrics.md)
+- [var memoryMetrics: MXMemoryMetric?](./memorymetrics.md)
   The memory metrics for the reporting period.
 
 

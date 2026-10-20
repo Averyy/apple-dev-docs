@@ -1,7 +1,8 @@
 # SetAutoAdminPasswordCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to update the local administrator account password.
 
@@ -10,14 +11,14 @@ The command to update the local administrator account password.
 
 ## Declaration
 
-```swift
+```
 object SetAutoAdminPasswordCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object SetAutoAdminPasswordCommand.Command](setautoadminpasswordcommand/command-data.dictionary.md)
+- [object SetAutoAdminPasswordCommand.Command](./setautoadminpasswordcommand/command-data.dictionary.md)
   The command to update the local administrator account password.
 
 ## Properties
@@ -27,7 +28,8 @@ object SetAutoAdminPasswordCommand
 
 ## See Also
 
-- [object SetAutoAdminPasswordResponse](setautoadminpasswordresponse.md)
+### Commands and responses
+- [object SetAutoAdminPasswordResponse](./setautoadminpasswordresponse.md)
   A response from the device after it processes the command to update the local administrator account password.
 
 

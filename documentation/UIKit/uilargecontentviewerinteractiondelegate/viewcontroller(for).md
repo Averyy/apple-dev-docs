@@ -1,7 +1,8 @@
 # viewController(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies which view controller should display the large content viewer.
 
@@ -15,6 +16,10 @@ Specifies which view controller should display the large content viewer.
 
 ```swift
 optional func viewController(for interaction: UILargeContentViewerInteraction) -> UIViewController
+```
+
+```objc
+- (UIViewController *) viewControllerForLargeContentViewerInteraction:(UILargeContentViewerInteraction *) interaction;
 ```
 
 #### Return Value
@@ -31,9 +36,10 @@ By default, UIKit uses a view controller that contains the view you added the in
 
 ## See Also
 
-- [func largeContentViewerInteraction(UILargeContentViewerInteraction, didEndOn: (any UILargeContentViewerItem)?, at: CGPoint)](uilargecontentviewerinteractiondelegate/largecontentviewerinteraction(_:didendon:at:).md)
+### Customizing large content viewer interactions
+- [func largeContentViewerInteraction(UILargeContentViewerInteraction, didEndOn: (any UILargeContentViewerItem)?, at: CGPoint)](./largecontentviewerinteraction%28_,didendon,at%29.md)
   Performs an action when the large content viewer gesture ends at the location of the specified item.
-- [func largeContentViewerInteraction(UILargeContentViewerInteraction, itemAt: CGPoint) -> (any UILargeContentViewerItem)?](uilargecontentviewerinteractiondelegate/largecontentviewerinteraction(_:itemat:).md)
+- [func largeContentViewerInteraction(UILargeContentViewerInteraction, itemAt: CGPoint) -> (any UILargeContentViewerItem)?](./largecontentviewerinteraction%28_,itemat%29.md)
   Identifies the large content viewer item for the specified interaction and location.
 
 

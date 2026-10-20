@@ -1,7 +1,8 @@
 # NSTextLayoutManager
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The primary class that you use to manage text layout and presentation for custom text displays.
 
@@ -14,124 +15,129 @@ The primary class that you use to manage text layout and presentation for custom
 class NSTextLayoutManager
 ```
 
+```objc
+@interface NSTextLayoutManager : NSObject
+```
+
 #### Overview
 
-`NSTextLayoutManager` is the centerpiece of the TextKit object network that maintains the layout geometry through an array of [`NSTextContainer`](nstextcontainer.md) objects. It lays out results using [`NSTextLayoutFragment`](nstextlayoutfragment.md) and [`NSTextElement`](nstextelement.md) objects vended from a [`NSTextContentManager`](nstextcontentmanager.md) that participates in the content layout process.
+`NSTextLayoutManager` is the centerpiece of the TextKit object network that maintains the layout geometry through an array of [`NSTextContainer`](./nstextcontainer.md) objects. It lays out results using [`NSTextLayoutFragment`](./nstextlayoutfragment.md) and [`NSTextElement`](./nstextelement.md) objects vended from a [`NSTextContentManager`](./nstextcontentmanager.md) that participates in the content layout process.
 
 ## Topics
 
 ### Creating a layout manager
-- [init()](nstextlayoutmanager/init.md)
+- [init()](./nstextlayoutmanager/init%28%29.md)
   Creates a new text layout manager.
-- [init?(coder: NSCoder)](nstextlayoutmanager/init(coder:).md)
+- [init?(coder: NSCoder)](./nstextlayoutmanager/init%28coder%29.md)
   Creates a new text layout manager with the coder you provide.
 ### Configuring global layout manager options
-- [var layoutQueue: OperationQueue?](nstextlayoutmanager/layoutqueue.md)
+- [var layoutQueue: OperationQueue?](./nstextlayoutmanager/layoutqueue.md)
   The queue that the framework dispatches layout operations on.
-- [var renderingAttributesValidator: ((NSTextLayoutManager, NSTextLayoutFragment) -> Void)?](nstextlayoutmanager/renderingattributesvalidator.md)
+- [var renderingAttributesValidator: ((NSTextLayoutManager, NSTextLayoutFragment) -> Void)?](./nstextlayoutmanager/renderingattributesvalidator.md)
   A callback block that the framework invokes whenever the text layout manager needs to validate the rendering attributes for the range.
-- [var usesFontLeading: Bool](nstextlayoutmanager/usesfontleading.md)
+- [var usesFontLeading: Bool](./nstextlayoutmanager/usesfontleading.md)
   A Boolean value that controls whether the framework uses the leading information specified by the font when laying out text.
-- [var usesHyphenation: Bool](nstextlayoutmanager/useshyphenation.md)
+- [var usesHyphenation: Bool](./nstextlayoutmanager/useshyphenation.md)
   A Boolean values that controls whether the text layout manager attempts to hyphenate when wrapping lines.
-- [var limitsLayoutForSuspiciousContents: Bool](nstextlayoutmanager/limitslayoutforsuspiciouscontents.md)
+- [var limitsLayoutForSuspiciousContents: Bool](./nstextlayoutmanager/limitslayoutforsuspiciouscontents.md)
   A Boolean value that controls internal security analysis for malicious inputs and activates defensive behaviors.
 ### Managing the layout process
-- [var delegate: (any NSTextLayoutManagerDelegate)?](nstextlayoutmanager/delegate.md)
+- [var delegate: (any NSTextLayoutManagerDelegate)?](./nstextlayoutmanager/delegate.md)
   The delegate for the text layout manager object.
-- [protocol NSTextLayoutManagerDelegate](nstextlayoutmanagerdelegate.md)
+- [protocol NSTextLayoutManagerDelegate](./nstextlayoutmanagerdelegate.md)
   Optional methods that delegates implement to respond to layout changes.
 ### Accessing the text storage
-- [var textContentManager: NSTextContentManager?](nstextlayoutmanager/textcontentmanager.md)
+- [var textContentManager: NSTextContentManager?](./nstextlayoutmanager/textcontentmanager.md)
   Returns the text content manager associated with this text layout manager.
-- [var textContainer: NSTextContainer?](nstextlayoutmanager/textcontainer.md)
+- [var textContainer: NSTextContainer?](./nstextlayoutmanager/textcontainer.md)
   The text container object that provides geometric information for the layout destination.
-- [var textSelectionNavigation: NSTextSelectionNavigation](nstextlayoutmanager/textselectionnavigation.md)
+- [var textSelectionNavigation: NSTextSelectionNavigation](./nstextlayoutmanager/textselectionnavigation.md)
   Returns a text selection manager configured to have the text layout manager as its data source.
-- [var textSelections: [NSTextSelection]](nstextlayoutmanager/textselections.md)
+- [var textSelections: [NSTextSelection]](./nstextlayoutmanager/textselections.md)
   An array of text selections associated by the text layout manager.
-- [var usageBoundsForTextContainer: CGRect](nstextlayoutmanager/usageboundsfortextcontainer.md)
+- [var usageBoundsForTextContainer: CGRect](./nstextlayoutmanager/usageboundsfortextcontainer.md)
   Returns the usage bounds for the text container.
-- [func enumerateTextSegments(in: NSTextRange, type: NSTextLayoutManager.SegmentType, options: NSTextLayoutManager.SegmentOptions, using: (NSTextRange?, CGRect, CGFloat, NSTextContainer) -> Bool)](nstextlayoutmanager/enumeratetextsegments(in:type:options:using:).md)
+- [func enumerateTextSegments(in: NSTextRange, type: NSTextLayoutManager.SegmentType, options: NSTextLayoutManager.SegmentOptions, using: (NSTextRange?, CGRect, CGFloat, NSTextContainer) -> Bool)](./nstextlayoutmanager/enumeratetextsegments%28in,type,options,using%29.md)
   Enumerates text segments of a specific type and in the text range you provide.
-- [func replace(NSTextContentManager)](nstextlayoutmanager/replace(_:).md)
+- [func replace(NSTextContentManager)](./nstextlayoutmanager/replace%28_%29.md)
   Replaces the current text content manager with a new one you provide.
-- [func replaceContents(in: NSTextRange, with: NSAttributedString)](nstextlayoutmanager/replacecontents(in:with:)-2elb.md)
+- [func replaceContents(in: NSTextRange, with: NSAttributedString)](./nstextlayoutmanager/replacecontents%28in,with%29-2elb.md)
   Replaces content at the location you specify with an attributed string you provide.
-- [func replaceContents(in: NSTextRange, with: [NSTextElement])](nstextlayoutmanager/replacecontents(in:with:)-80j0b.md)
+- [func replaceContents(in: NSTextRange, with: [NSTextElement])](./nstextlayoutmanager/replacecontents%28in,with%29-80j0b.md)
   Replaces content at the location you specify with the text elements string you provide.
 ### Adjusting rendering
-- [class var linkRenderingAttributes: [NSAttributedString.Key : Any]](nstextlayoutmanager/linkrenderingattributes.md)
+- [class var linkRenderingAttributes: [NSAttributedString.Key : Any]](./nstextlayoutmanager/linkrenderingattributes.md)
   Returns the default set of attributes for rendering a link.
-- [func addRenderingAttribute(NSAttributedString.Key, value: Any?, for: NSTextRange)](nstextlayoutmanager/addrenderingattribute(_:value:for:).md)
+- [func addRenderingAttribute(NSAttributedString.Key, value: Any?, for: NSTextRange)](./nstextlayoutmanager/addrenderingattribute%28_,value,for%29.md)
   Sets the rendering attribute for the value and range you specify.
-- [func enumerateRenderingAttributes(from: any NSTextLocation, reverse: Bool, using: (NSTextLayoutManager, [NSAttributedString.Key : Any], NSTextRange) -> Bool)](nstextlayoutmanager/enumeraterenderingattributes(from:reverse:using:).md)
+- [func enumerateRenderingAttributes(from: any NSTextLocation, reverse: Bool, using: (NSTextLayoutManager, [NSAttributedString.Key : Any], NSTextRange) -> Bool)](./nstextlayoutmanager/enumeraterenderingattributes%28from,reverse,using%29.md)
   Enumerates the rendering attributes from a location you specify.
-- [func renderingAttributes(forLink: Any, at: any NSTextLocation) -> [NSAttributedString.Key : Any]](nstextlayoutmanager/renderingattributes(forlink:at:).md)
+- [func renderingAttributes(forLink: Any, at: any NSTextLocation) -> [NSAttributedString.Key : Any]](./nstextlayoutmanager/renderingattributes%28forlink,at%29.md)
   Returns a dictionary of rendering attributes for rendering a link.
-- [func invalidateRenderingAttributes(for: NSTextRange)](nstextlayoutmanager/invalidaterenderingattributes(for:).md)
+- [func invalidateRenderingAttributes(for: NSTextRange)](./nstextlayoutmanager/invalidaterenderingattributes%28for%29.md)
   Invalidates the rendering attributes of the specified text range.
-- [func removeRenderingAttribute(NSAttributedString.Key, for: NSTextRange)](nstextlayoutmanager/removerenderingattribute(_:for:).md)
+- [func removeRenderingAttribute(NSAttributedString.Key, for: NSTextRange)](./nstextlayoutmanager/removerenderingattribute%28_,for%29.md)
   Removes the rendering attribute from the specified text range.
-- [func setRenderingAttributes([NSAttributedString.Key : Any], for: NSTextRange)](nstextlayoutmanager/setrenderingattributes(_:for:).md)
+- [func setRenderingAttributes([NSAttributedString.Key : Any], for: NSTextRange)](./nstextlayoutmanager/setrenderingattributes%28_,for%29.md)
   Sets the rendering attributes for the range you specify.
 ### Causing layout generation
-- [var textViewportLayoutController: NSTextViewportLayoutController](nstextlayoutmanager/textviewportlayoutcontroller.md)
+- [var textViewportLayoutController: NSTextViewportLayoutController](./nstextlayoutmanager/textviewportlayoutcontroller.md)
   The text viewport layout controller associated with the layout manager’s text container.
-- [func invalidateLayout(for: NSTextRange)](nstextlayoutmanager/invalidatelayout(for:).md)
+- [func invalidateLayout(for: NSTextRange)](./nstextlayoutmanager/invalidatelayout%28for%29.md)
   Invalidates the layout information for specified text range.
-- [func textLayoutFragment(for: any NSTextLocation) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-68dez.md)
+- [func textLayoutFragment(for: any NSTextLocation) -> NSTextLayoutFragment?](./nstextlayoutmanager/textlayoutfragment%28for%29-68dez.md)
   Returns the text layout fragment from the document at the specified location.
-- [func textLayoutFragment(for: CGPoint) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-4dhrx.md)
+- [func textLayoutFragment(for: CGPoint) -> NSTextLayoutFragment?](./nstextlayoutmanager/textlayoutfragment%28for%29-4dhrx.md)
   Returns the text layout fragment at the position you specify in the text container.
-- [func ensureLayout(for: CGRect)](nstextlayoutmanager/ensurelayout(for:)-6ptsj.md)
+- [func ensureLayout(for: CGRect)](./nstextlayoutmanager/ensurelayout%28for%29-6ptsj.md)
   Performs the layout for filling the bounds you specify inside the last text container.
-- [func ensureLayout(for: NSTextRange)](nstextlayoutmanager/ensurelayout(for:)-3duae.md)
+- [func ensureLayout(for: NSTextRange)](./nstextlayoutmanager/ensurelayout%28for%29-3duae.md)
   Performs the layout for specified text range.
-- [func enumerateTextLayoutFragments(from: (any NSTextLocation)?, options: NSTextLayoutFragment.EnumerationOptions, using: (NSTextLayoutFragment) -> Bool) -> (any NSTextLocation)?](nstextlayoutmanager/enumeratetextlayoutfragments(from:options:using:).md)
+- [func enumerateTextLayoutFragments(from: (any NSTextLocation)?, options: NSTextLayoutFragment.EnumerationOptions, using: (NSTextLayoutFragment) -> Bool) -> (any NSTextLocation)?](./nstextlayoutmanager/enumeratetextlayoutfragments%28from,options,using%29.md)
   Enumerates the text layout fragments starting at the specified location.
-- [NSTextLayoutManager.SegmentType](nstextlayoutmanager/segmenttype.md)
+- [NSTextLayoutManager.SegmentType](./nstextlayoutmanager/segmenttype.md)
   Values that describe the rendering of selection boundaries.
-- [NSTextLayoutManager.SegmentOptions](nstextlayoutmanager/segmentoptions.md)
+- [NSTextLayoutManager.SegmentOptions](./nstextlayoutmanager/segmentoptions.md)
   Values that describe where and how the framework extends segments of a selection.
 ### Instance Properties
-- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](nstextlayoutmanager/resolvesnaturalalignmentwithbasewritingdirection.md)
-  Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment/natural.md) to the visual alignment.
+- [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](./nstextlayoutmanager/resolvesnaturalalignmentwithbasewritingdirection.md)
+  Specifies the behavior for resolving [`NSTextAlignment.natural`](./nstextalignment/natural.md) to the visual alignment.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [NSTextSelectionDataSource](nstextselectiondatasource.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NSTextSelectionDataSource](./nstextselectiondatasource.md)
 
 ## See Also
 
-- [Using TextKit 2 to interact with text](../uikit/using-textkit-2-to-interact-with-text.md)
+### Layout
+- [Using TextKit 2 to interact with text](../UIKit/using-textkit-2-to-interact-with-text.md)
   Interact with text by managing text selection and inserting custom text elements.
-- [Managing viewport layout and attachment reuse in text views](../uikit/managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+- [Managing viewport layout and attachment reuse in text views](../UIKit/managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
   Customize layout and preserve attachment views in your text view subclass.
-- [class NSTextContainer](nstextcontainer.md)
+- [class NSTextContainer](./nstextcontainer.md)
   A region where text layout occurs.
-- [class NSTextLayoutFragment](nstextlayoutfragment.md)
+- [class NSTextLayoutFragment](./nstextlayoutfragment.md)
   A class that represents the layout fragment typically corresponding to a rendering surface, such as a layer or view subclass.
-- [class NSTextLineFragment](nstextlinefragment.md)
+- [class NSTextLineFragment](./nstextlinefragment.md)
   A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment.
-- [class NSTextViewportLayoutController](nstextviewportlayoutcontroller.md)
+- [class NSTextViewportLayoutController](./nstextviewportlayoutcontroller.md)
   Manages the layout process inside the viewport interacting with its delegate.
-- [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
+- [protocol NSTextLayoutOrientationProvider](./nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
-- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+- [protocol NSTextViewportRenderingSurface](./nstextviewportrenderingsurface.md)
   A protocol that identifies a view or layer as a drawable element for a text layout fragment.
-- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+- [protocol NSTextViewportRenderingSurfaceKey](./nstextviewportrenderingsurfacekey.md)
   A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
 
 

@@ -1,7 +1,8 @@
 # CMIOExtensionProvider
 
 **Framework**: Core Media I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages device connections for a provider.
 
@@ -15,64 +16,69 @@ An object that manages device connections for a provider.
 class CMIOExtensionProvider
 ```
 
+```objc
+@interface CMIOExtensionProvider : NSObject
+```
+
 ## Mentions
 
-- [Creating a camera extension with Core Media I/O](creating-a-camera-extension-with-core-media-i-o.md)
+- [Creating a camera extension with Core Media I/O](./creating-a-camera-extension-with-core-media-i-o.md)
 
 #### Overview
 
-An extension provider manages device connections and provides the [`startService(provider:)`](cmioextensionprovider/startservice(provider:).md) class method that you call to bootstrap the service.
+An extension provider manages device connections and provides the [`startService(provider:)`](./cmioextensionprovider/startservice%28provider%29.md) class method that you call to bootstrap the service.
 
 ## Topics
 
 ### Creating a Provider
-- [init(source: any CMIOExtensionProviderSource, clientQueue: dispatch_queue_t?)](cmioextensionprovider/init(source:clientqueue:).md)
+- [init(source: any CMIOExtensionProviderSource, clientQueue: dispatch_queue_t?)](./cmioextensionprovider/init%28source,clientqueue%29.md)
   Creates an extension provider with the specified source and dispatch queue.
 ### Inspecting a Provider
-- [var clientQueue: dispatch_queue_t](cmioextensionprovider/clientqueue.md)
+- [var clientQueue: dispatch_queue_t](./cmioextensionprovider/clientqueue.md)
   The dispatch queue on which the system performs client operations.
-- [var source: (any CMIOExtensionProviderSource)?](cmioextensionprovider/source.md)
+- [var source: (any CMIOExtensionProviderSource)?](./cmioextensionprovider/source.md)
   The source for the provider.
 ### Starting a Provider
-- [class func startService(provider: CMIOExtensionProvider)](cmioextensionprovider/startservice(provider:).md)
+- [class func startService(provider: CMIOExtensionProvider)](./cmioextensionprovider/startservice%28provider%29.md)
   Starts the system extension.
 ### Managing Devices
-- [var devices: [CMIOExtensionDevice]](cmioextensionprovider/devices.md)
+- [var devices: [CMIOExtensionDevice]](./cmioextensionprovider/devices.md)
   An array of connected devices.
-- [func addDevice(CMIOExtensionDevice) throws](cmioextensionprovider/adddevice(_:).md)
+- [func addDevice(CMIOExtensionDevice) throws](./cmioextensionprovider/adddevice%28_%29.md)
   Adds a device to a provider.
-- [func removeDevice(CMIOExtensionDevice) throws](cmioextensionprovider/removedevice(_:).md)
+- [func removeDevice(CMIOExtensionDevice) throws](./cmioextensionprovider/removedevice%28_%29.md)
   Removes a device from a provider.
 ### Managing Clients
-- [var connectedClients: [CMIOExtensionClient]](cmioextensionprovider/connectedclients.md)
+- [var connectedClients: [CMIOExtensionClient]](./cmioextensionprovider/connectedclients.md)
   An array of connected clients.
-- [func notifyPropertiesChanged([CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](cmioextensionprovider/notifypropertieschanged(_:).md)
+- [func notifyPropertiesChanged([CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](./cmioextensionprovider/notifypropertieschanged%28_%29.md)
   Notifies connected clients of device property changes.
 ### Type Methods
-- [class func ignoreSIGTERM()](cmioextensionprovider/ignoresigterm.md)
-- [class func stopService(provider: CMIOExtensionProvider)](cmioextensionprovider/stopservice(provider:).md)
+- [class func ignoreSIGTERM()](./cmioextensionprovider/ignoresigterm%28%29.md)
+- [class func stopService(provider: CMIOExtensionProvider)](./cmioextensionprovider/stopservice%28provider%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating a camera extension with Core Media I/O](creating-a-camera-extension-with-core-media-i-o.md)
+### Providers
+- [Creating a camera extension with Core Media I/O](./creating-a-camera-extension-with-core-media-i-o.md)
   Build high-performance camera drivers that are secure and simple to deploy.
-- [Overriding the default USB video class extension](overriding-the-default-usb-video-class-extension.md)
+- [Overriding the default USB video class extension](./overriding-the-default-usb-video-class-extension.md)
   Create a simple DriverKit extension to override the default driver-matching behavior for USB devices.
-- [protocol CMIOExtensionProviderSource](cmioextensionprovidersource.md)
+- [protocol CMIOExtensionProviderSource](./cmioextensionprovidersource.md)
   A protocol for objects that act as provider sources.
-- [class CMIOExtensionProviderProperties](cmioextensionproviderproperties.md)
+- [class CMIOExtensionProviderProperties](./cmioextensionproviderproperties.md)
   An object that manages the properties of an extension provider.
 
 

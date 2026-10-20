@@ -1,14 +1,15 @@
 # UIImagePickerController.CameraCaptureMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the category of media for the camera to capture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,35 +17,40 @@ Constants that specify the category of media for the camera to capture.
 enum CameraCaptureMode
 ```
 
+```c
+enum UIImagePickerControllerCameraCaptureMode : NSInteger;
+```
+
 #### Overview
 
-The constants in this enumeration are for use as values of the [`cameraCaptureMode`](uiimagepickercontroller/cameracapturemode-swift.property.md) property.
+The constants in this enumeration are for use as values of the [`cameraCaptureMode`](./cameracapturemode-swift.property.md) property.
 
 ## Topics
 
 ### Constants
-- [UIImagePickerController.CameraCaptureMode.photo](uiimagepickercontroller/cameracapturemode-swift.enum/photo.md)
+- [UIImagePickerController.CameraCaptureMode.photo](./cameracapturemode-swift.enum/photo.md)
   Specifies that the camera captures still images.
-- [UIImagePickerController.CameraCaptureMode.video](uiimagepickercontroller/cameracapturemode-swift.enum/video.md)
+- [UIImagePickerController.CameraCaptureMode.video](./cameracapturemode-swift.enum/video.md)
   Specifies that the camera captures movies.
 ### Initializers
-- [init?(rawValue: Int)](uiimagepickercontroller/cameracapturemode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cameracapturemode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func availableCaptureModes(for: UIImagePickerController.CameraDevice) -> [NSNumber]?](uiimagepickercontroller/availablecapturemodes(for:).md)
+### Configuring the camera capture mode
+- [class func availableCaptureModes(for: UIImagePickerController.CameraDevice) -> [NSNumber]?](./availablecapturemodes%28for%29.md)
   Retrieves the capture modes supported by the specified camera device.
-- [var cameraCaptureMode: UIImagePickerController.CameraCaptureMode](uiimagepickercontroller/cameracapturemode-swift.property.md)
+- [var cameraCaptureMode: UIImagePickerController.CameraCaptureMode](./cameracapturemode-swift.property.md)
   The capture mode used by the camera.
 
 

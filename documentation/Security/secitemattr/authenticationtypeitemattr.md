@@ -1,7 +1,8 @@
 # SecItemAttr.authenticationTypeItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the authentication type attribute.
 
@@ -15,9 +16,13 @@ Identifies the authentication type attribute.
 case authenticationTypeItemAttr
 ```
 
+```c
+kSecAuthenticationTypeItemAttr
+```
+
 #### Discussion
 
-You use this tag to set or get a value of type `SecAuthenticationType` that represents the Internet authentication scheme. For possible authentication values, see [`SecAuthenticationType`](secauthenticationtype.md). This is unique to Internet password attributes.
+You use this tag to set or get a value of type `SecAuthenticationType` that represents the Internet authentication scheme. For possible authentication values, see [`SecAuthenticationType`](../secauthenticationtype.md). This is unique to Internet password attributes.
 
 
 ---

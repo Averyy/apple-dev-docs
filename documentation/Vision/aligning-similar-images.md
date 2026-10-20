@@ -1,6 +1,8 @@
 # Aligning Similar Images
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [AligningSimilarImages.zip](https://docs-assets.developer.apple.com/published/af283219b3d2/AligningSimilarImages.zip)
 
 Construct a composite image from images that capture the same scene.
 
@@ -21,31 +23,32 @@ Image registration requests require two images, a reference image and a floating
 
 ##### Select a Registration Mechanism
 
-The Vision framework provides a translational image registration mechanism, [`VNTranslationalImageRegistrationRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntranslationalimageregistrationrequest), and a homographic image registration mechanism, [`VNHomographicImageRegistrationRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnhomographicimageregistrationrequest). The sample app provides a toggle between these two image registration mechanisms to visually demonstrate the differences in their image alignment observations.
+The Vision framework provides a translational image registration mechanism, [VNTranslationalImageRegistrationRequest](./vntranslationalimageregistrationrequest.md), and a homographic image registration mechanism, [VNHomographicImageRegistrationRequest](./vnhomographicimageregistrationrequest.md). The sample app provides a toggle between these two image registration mechanisms to visually demonstrate the differences in their image alignment observations.
 
 ##### Apply the Alignment Observation
 
-This project applies the alignment observation for each image registration mechanism in the `register` function, and returns an image that contains the composited result. The `register` function uses the `makeAlignedImage` function to transform the floating image.  The sample uses the [`transformed(by:)`](https://developer.apple.comhttps://developer.apple.com/documentation/coreimage/ciimage/1438203-transformed) method to apply the translational transform for the translational image registration mechanism, and uses the [`CIPerspectiveTransform`](https://developer.apple.comhttps://developer.apple.com/documentation/coreimage/ciperspectivetransform) filter to apply the pespective transform for the homographic image registration mechanism.
+This project applies the alignment observation for each image registration mechanism in the `register` function, and returns an image that contains the composited result. The `register` function uses the `makeAlignedImage` function to transform the floating image.  The sample uses the [transformed(by:)](../CoreImage/ciimage/api-1438203-transformed.md) method to apply the translational transform for the translational image registration mechanism, and uses the [CIPerspectiveTransform](../CoreImage/ciperspectivetransform.md) filter to apply the pespective transform for the homographic image registration mechanism.
 
 ## See Also
 
-- [class VNTargetedImageRequest](vntargetedimagerequest.md)
+### Image alignment
+- [class VNTargetedImageRequest](./vntargetedimagerequest.md)
   The abstract superclass for image analysis requests that operate on both the processed image and a secondary image.
-- [class VNImageRegistrationRequest](vnimageregistrationrequest.md)
+- [class VNImageRegistrationRequest](./vnimageregistrationrequest.md)
   The abstract superclass for image-analysis requests that align images according to their content.
-- [class VNTranslationalImageRegistrationRequest](vntranslationalimageregistrationrequest.md)
+- [class VNTranslationalImageRegistrationRequest](./vntranslationalimageregistrationrequest.md)
   An image-analysis request that determines the affine transform necessary to align the content of two images.
-- [class VNTrackTranslationalImageRegistrationRequest](vntracktranslationalimageregistrationrequest.md)
+- [class VNTrackTranslationalImageRegistrationRequest](./vntracktranslationalimageregistrationrequest.md)
   An image-analysis request, as a stateful request you track over time, that determines the affine transform necessary to align the content of two images.
-- [class VNHomographicImageRegistrationRequest](vnhomographicimageregistrationrequest.md)
+- [class VNHomographicImageRegistrationRequest](./vnhomographicimageregistrationrequest.md)
   An image-analysis request that determines the perspective warp matrix necessary to align the content of two images.
-- [class VNTrackHomographicImageRegistrationRequest](vntrackhomographicimageregistrationrequest.md)
+- [class VNTrackHomographicImageRegistrationRequest](./vntrackhomographicimageregistrationrequest.md)
   An image-analysis request, as a stateful request you track over time, that determines the perspective warp matrix necessary to align the content of two images.
-- [class VNImageAlignmentObservation](vnimagealignmentobservation.md)
+- [class VNImageAlignmentObservation](./vnimagealignmentobservation.md)
   The abstract superclass for image-analysis results that describe the relative alignment of two images.
-- [class VNImageTranslationAlignmentObservation](vnimagetranslationalignmentobservation.md)
+- [class VNImageTranslationAlignmentObservation](./vnimagetranslationalignmentobservation.md)
   Affine transform information that an image-alignment request produces.
-- [class VNImageHomographicAlignmentObservation](vnimagehomographicalignmentobservation.md)
+- [class VNImageHomographicAlignmentObservation](./vnimagehomographicalignmentobservation.md)
   An object that represents a perspective warp transformation.
 
 

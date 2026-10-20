@@ -81,9 +81,8 @@
       "hash": "371f17558370cf64114bd93d612b44a0d027fd4ff84d39dcb9bf3ec4f5d698ce"
     },
     "https://developer.apple.com/documentation/visionos/building_local_experiences_with_room_tracking": {
-      "etag": "W/\"f0e5ffa40b7829caf6f88ef21509a10a\"",
       "file_path": "documentation/visionOS/building_local_experiences_with_room_tracking.md",
-      "hash": "2e176a26fc2911b2339573263d8e7a7feb2ff794c5ef5b8c5a1065ec6d5d9d8e"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/visionos/canyon-crosser-building-a-volumetric-hike-planning-app": {
       "etag": "\"b110-65d55acff7ffb-df\"",
@@ -526,9 +525,8 @@
       "hash": "371f17558370cf64114bd93d612b44a0d027fd4ff84d39dcb9bf3ec4f5d698ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/building_local_experiences_with_room_tracking.json": {
-      "etag": "W/\"f0e5ffa40b7829caf6f88ef21509a10a\"",
       "file_path": "documentation/visionOS/building_local_experiences_with_room_tracking.md",
-      "hash": "2e176a26fc2911b2339573263d8e7a7feb2ff794c5ef5b8c5a1065ec6d5d9d8e"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/canyon-crosser-building-a-volumetric-hike-planning-app.json": {
       "etag": "\"b110-65d55acff7ffb-df\"",
@@ -892,6 +890,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 178
   }
 }

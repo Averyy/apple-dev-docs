@@ -1,7 +1,8 @@
 # kCGImageMetadataPrefixTIFF
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The prefix string for tags in the TIFF image metadata.
 
@@ -20,23 +21,28 @@ The prefix string for tags in the TIFF image metadata.
 let kCGImageMetadataPrefixTIFF: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageMetadataPrefixTIFF;
+```
+
 ## See Also
 
-- [let kCGImageMetadataPrefixDublinCore: CFString](kcgimagemetadataprefixdublincore.md)
+### Public Prefixes
+- [let kCGImageMetadataPrefixDublinCore: CFString](./kcgimagemetadataprefixdublincore.md)
   The prefix string for tags in the Dublin Core Metadata Element Set.
-- [let kCGImageMetadataPrefixExif: CFString](kcgimagemetadataprefixexif.md)
+- [let kCGImageMetadataPrefixExif: CFString](./kcgimagemetadataprefixexif.md)
   The prefix string for tags in the Exchangeable Image File (EXIF) metadata.
-- [let kCGImageMetadataPrefixExifAux: CFString](kcgimagemetadataprefixexifaux.md)
+- [let kCGImageMetadataPrefixExifAux: CFString](./kcgimagemetadataprefixexifaux.md)
   The prefix string for tags in the EXIF auxiliary metadata collection.
-- [let kCGImageMetadataPrefixExifEX: CFString](kcgimagemetadataprefixexifex.md)
+- [let kCGImageMetadataPrefixExifEX: CFString](./kcgimagemetadataprefixexifex.md)
   The prefix string for tags in the exifEX metadata.
-- [let kCGImageMetadataPrefixIPTCCore: CFString](kcgimagemetadataprefixiptccore.md)
+- [let kCGImageMetadataPrefixIPTCCore: CFString](./kcgimagemetadataprefixiptccore.md)
   The prefix string for tags in the IPTC metadata.
-- [let kCGImageMetadataPrefixPhotoshop: CFString](kcgimagemetadataprefixphotoshop.md)
+- [let kCGImageMetadataPrefixPhotoshop: CFString](./kcgimagemetadataprefixphotoshop.md)
   The prefix string for tags in the Photoshop image metadata.
-- [let kCGImageMetadataPrefixXMPBasic: CFString](kcgimagemetadataprefixxmpbasic.md)
+- [let kCGImageMetadataPrefixXMPBasic: CFString](./kcgimagemetadataprefixxmpbasic.md)
   The prefix string for tags in the XMP metadata.
-- [let kCGImageMetadataPrefixXMPRights: CFString](kcgimagemetadataprefixxmprights.md)
+- [let kCGImageMetadataPrefixXMPRights: CFString](./kcgimagemetadataprefixxmprights.md)
   The prefix string for tags in the XMP metadata that convey legal restrictions for the resource.
 
 

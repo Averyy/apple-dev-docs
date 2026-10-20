@@ -1,17 +1,22 @@
 # noteNumberOfItemsChanged()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the receiver that the number of items in its data source has changed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func noteNumberOfItemsChanged()
+```
+
+```objc
+- (void) noteNumberOfItemsChanged;
 ```
 
 #### Discussion
@@ -22,15 +27,16 @@ See the NSComboBoxDataSource informal protocol specification for information on 
 
 ## See Also
 
-- [func indexOfItem(withObjectValue: Any) -> Int](nscombobox/indexofitem(withobjectvalue:).md)
+### Manipulating the Displayed List
+- [func indexOfItem(withObjectValue: Any) -> Int](./indexofitem%28withobjectvalue%29.md)
   Searches the receiver’s internal item list for the specified object and returns the lowest matching index.
-- [func itemObjectValue(at: Int) -> Any](nscombobox/itemobjectvalue(at:).md)
+- [func itemObjectValue(at: Int) -> Any](./itemobjectvalue%28at%29.md)
   Returns the object located at the given index within the receiver’s internal item list.
-- [func reloadData()](nscombobox/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Marks the receiver as needing redisplay, so that it will reload the data for visible pop-up items and draw the new values.
-- [func scrollItemAtIndexToTop(Int)](nscombobox/scrollitematindextotop(_:).md)
+- [func scrollItemAtIndexToTop(Int)](./scrollitematindextotop%28_%29.md)
   Scrolls the receiver’s pop-up list vertically so that the item at the specified index is as close to the top as possible.
-- [func scrollItemAtIndexToVisible(Int)](nscombobox/scrollitematindextovisible(_:).md)
+- [func scrollItemAtIndexToVisible(Int)](./scrollitematindextovisible%28_%29.md)
   Scrolls the receiver’s pop-up list vertically so that the item at the specified index is visible.
 
 

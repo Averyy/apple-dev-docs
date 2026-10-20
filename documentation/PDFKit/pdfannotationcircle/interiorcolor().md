@@ -1,12 +1,13 @@
 # interiorColor()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the fill color used for drawing the annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Returns the fill color used for drawing the annotation.
 func interiorColor() -> NSColor!
 ```
 
+```objc
+- (NSColor *) interiorColor;
+```
+
 ## See Also
 
-- [func setInteriorColor(NSColor!)](pdfannotationcircle/setinteriorcolor(_:).md)
+### Accessor methods
+- [func setInteriorColor(NSColor!)](./setinteriorcolor%28_%29.md)
   Sets the fill color used for drawing the annotation.
 
 

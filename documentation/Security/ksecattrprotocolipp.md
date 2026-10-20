@@ -1,7 +1,8 @@
 # kSecAttrProtocolIPP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 IPP protocol.
 
@@ -18,6 +19,10 @@ IPP protocol.
 
 ```swift
 let kSecAttrProtocolIPP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolIPP;
 ```
 
 

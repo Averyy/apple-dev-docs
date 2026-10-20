@@ -1,7 +1,8 @@
 # paddingBottom
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of zeros added at the bottom of the source tensor.
 
@@ -17,6 +18,10 @@ The number of zeros added at the bottom of the source tensor.
 
 ```swift
 var paddingBottom: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingBottom;
 ```
 
 

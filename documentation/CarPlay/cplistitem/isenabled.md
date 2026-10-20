@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the item is enabled.
 
@@ -16,15 +17,20 @@ A Boolean value that indicates if the item is enabled.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var handler: ((any CPSelectableListItem, () -> Void) -> Void)?](cplistitem/handler.md)
+### Managing Configuration
+- [var handler: ((any CPSelectableListItem, () -> Void) -> Void)?](./handler.md)
   An optional closure that CarPlay invokes when the user selects the list item.
-- [var userInfo: Any?](cplistitem/userinfo.md)
+- [var userInfo: Any?](./userinfo.md)
   An opaque value for the list item.
 
 

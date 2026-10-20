@@ -1,7 +1,8 @@
 # rasterizationScale
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale at which to rasterize content, relative to the coordinate space of the layer. Animatable
 
@@ -19,27 +20,32 @@ The scale at which to rasterize content, relative to the coordinate space of the
 var rasterizationScale: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat rasterizationScale;
+```
+
 #### Discussion
 
-When the value in the [`shouldRasterize`](calayer/shouldrasterize.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the layer uses this property to determine whether to scale the rasterized content (and by how much). The default value of this property is `1.0`, which indicates that the layer should be rasterized at its current size. Larger values magnify the content and smaller values shrink it.
+When the value in the [`shouldRasterize`](./shouldrasterize.md) property is [`true`](../../Swift/true.md), the layer uses this property to determine whether to scale the rasterized content (and by how much). The default value of this property is `1.0`, which indicates that the layer should be rasterized at its current size. Larger values magnify the content and smaller values shrink it.
 
 ## See Also
 
-- [var isOpaque: Bool](calayer/isopaque.md)
+### Configuring the layer’s rendering behavior
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value indicating whether the layer contains completely opaque content.
-- [var edgeAntialiasingMask: CAEdgeAntialiasingMask](calayer/edgeantialiasingmask.md)
+- [var edgeAntialiasingMask: CAEdgeAntialiasingMask](./edgeantialiasingmask.md)
   A bitmask defining how the edges of the receiver are rasterized.
-- [func contentsAreFlipped() -> Bool](calayer/contentsareflipped.md)
+- [func contentsAreFlipped() -> Bool](./contentsareflipped%28%29.md)
   Returns a Boolean indicating whether the layer content is implicitly flipped when rendered.
-- [var isGeometryFlipped: Bool](calayer/isgeometryflipped.md)
+- [var isGeometryFlipped: Bool](./isgeometryflipped.md)
   A Boolean that indicates whether the geometry of the layer and its sublayers is flipped vertically.
-- [var drawsAsynchronously: Bool](calayer/drawsasynchronously.md)
+- [var drawsAsynchronously: Bool](./drawsasynchronously.md)
   A Boolean indicating whether drawing commands are deferred and processed asynchronously in a background thread.
-- [var shouldRasterize: Bool](calayer/shouldrasterize.md)
+- [var shouldRasterize: Bool](./shouldrasterize.md)
   A Boolean that indicates whether the layer is rendered as a bitmap before compositing. Animatable
-- [var contentsFormat: CALayerContentsFormat](calayer/contentsformat.md)
+- [var contentsFormat: CALayerContentsFormat](./contentsformat.md)
   A hint for the desired storage format of the layer contents.
-- [func render(in: CGContext)](calayer/render(in:).md)
+- [func render(in: CGContext)](./render%28in%29.md)
   Renders the layer and its sublayers into the specified context.
 
 

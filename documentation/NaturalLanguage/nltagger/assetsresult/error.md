@@ -1,7 +1,8 @@
 # NLTagger.AssetsResult.error
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework couldn’t load the asset due to an error.
 
@@ -20,11 +21,16 @@ The framework couldn’t load the asset due to an error.
 case error
 ```
 
+```c
+NLTaggerAssetsResultError
+```
+
 ## See Also
 
-- [NLTagger.AssetsResult.available](nltagger/assetsresult/available.md)
+### Asset request responses
+- [NLTagger.AssetsResult.available](./available.md)
   The asset is now available and loaded onto the device.
-- [NLTagger.AssetsResult.notAvailable](nltagger/assetsresult/notavailable.md)
+- [NLTagger.AssetsResult.notAvailable](./notavailable.md)
   The asset is unavailable on the device.
 
 

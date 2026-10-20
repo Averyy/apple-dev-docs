@@ -1,7 +1,8 @@
 # bufferFormat
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio format of this input.
 
@@ -21,11 +22,12 @@ let bufferFormat: AVAudioFormat
 
 ## See Also
 
-- [let bufferStartTime: CMTime?](analyzerinput/bufferstarttime.md)
+### Inspecting an input element
+- [let bufferStartTime: CMTime?](./bufferstarttime.md)
   The time-code of this input.
-- [let bufferDuration: CMTime](analyzerinput/bufferduration.md)
+- [let bufferDuration: CMTime](./bufferduration.md)
   The length of this input.
-- [var buffer: AVAudioPCMBuffer](analyzerinput/buffer.md)
+- [var buffer: AVAudioPCMBuffer](./buffer.md)
   A new copy of the audio data for this input.
 
 

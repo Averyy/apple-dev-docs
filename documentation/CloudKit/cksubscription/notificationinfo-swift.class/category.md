@@ -1,7 +1,8 @@
 # category
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the action group that corresponds to this notification.
 
@@ -19,13 +20,18 @@ The name of the action group that corresponds to this notification.
 var category: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * category;
+```
+
 #### Discussion
 
-Categories allow you to present custom actions to the user on your push notifications. For more information, see [`UIMutableUserNotificationCategory`](https://developer.apple.com/documentation/uikit/uimutableusernotificationcategory).
+Categories allow you to present custom actions to the user on your push notifications. For more information, see [`UIMutableUserNotificationCategory`](../../../UIKit/uimutableusernotificationcategory.md).
 
 ## See Also
 
-- [var collapseIDKey: String?](cksubscription/notificationinfo-swift.class/collapseidkey.md)
+### Grouping Notifications
+- [var collapseIDKey: String?](./collapseidkey.md)
   A value that the system uses to coalesce unseen push notifications.
 
 

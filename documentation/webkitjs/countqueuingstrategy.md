@@ -1,7 +1,8 @@
 # CountQueuingStrategy
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface CountQueuingStrategy
 ```
 
 ## Topics
 
 ### Instance Methods
-- [size](countqueuingstrategy/1777987-size.md)
+- [size](./countqueuingstrategy/api-1777987-size.md)
 
 
 ---

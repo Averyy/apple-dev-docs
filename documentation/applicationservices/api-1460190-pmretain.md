@@ -1,7 +1,8 @@
 # PMRetain(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retains a printing object by incrementing its reference count.
 
@@ -14,9 +15,13 @@ Retains a printing object by incrementing its reference count.
 func PMRetain(_ object: PMObject?) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMRetain(PMObject object);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 #### Discussion
 
@@ -28,7 +33,8 @@ You should retain a printing object when you receive it from elsewhere (that is,
 
 ## See Also
 
-- [func PMRelease(PMObject?) -> OSStatus](1461402-pmrelease.md)
+### Releasing and Retaining Printing Objects
+- [func PMRelease(PMObject?) -> OSStatus](./api-1461402-pmrelease.md)
   Releases a printing object by decrementing its reference count.
 
 

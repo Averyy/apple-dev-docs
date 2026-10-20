@@ -1,7 +1,8 @@
 # suffix
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The command delimiter string that suffixes a command,by default, this is `]]`.
 
@@ -14,9 +15,14 @@ The command delimiter string that suffixes a command,by default, this is `]]`.
 static let suffix: NSSpeechSynthesizer.SpeechPropertyKey.CommandDelimiterKey
 ```
 
+```c
+extern NSSpeechCommandDelimiterKey const NSSpeechCommandSuffix;
+```
+
 ## See Also
 
-- [static let prefix: NSSpeechSynthesizer.SpeechPropertyKey.CommandDelimiterKey](nsspeechsynthesizer/speechpropertykey/commanddelimiterkey/prefix.md)
+### Delimiter Keys
+- [static let prefix: NSSpeechSynthesizer.SpeechPropertyKey.CommandDelimiterKey](./prefix.md)
   The command delimiter string that prefixes a command, by default, this is `[[`.
 
 

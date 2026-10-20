@@ -1,18 +1,19 @@
 # byteOrder32Big
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 32-bit, big endian format.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
+- iPadOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
+- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
+- macOS 10.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
+- tvOS - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
+- watchOS 2.0+ - Deprecated in 27.2 (renamed: CGImageByteOrderInfo.order32Big)
 
 ## Declaration
 
@@ -20,23 +21,28 @@
 static var byteOrder32Big: CGBitmapInfo { get }
 ```
 
+```c
+kCGBitmapByteOrder32Big
+```
+
 ## See Also
 
-- [static var alphaInfoMask: CGBitmapInfo](cgbitmapinfo/alphainfomask.md)
+### Constants
+- [static var alphaInfoMask: CGBitmapInfo](./alphainfomask.md)
   The alpha information mask. Use this to extract alpha information that specifies whether a bitmap contains an alpha channel and how the alpha channel is generated.
-- [static var floatComponents: CGBitmapInfo](cgbitmapinfo/floatcomponents.md)
+- [static var floatComponents: CGBitmapInfo](./floatcomponents.md)
   The components of a bitmap are floating-point values.
-- [static var byteOrderMask: CGBitmapInfo](cgbitmapinfo/byteordermask.md)
+- [static var byteOrderMask: CGBitmapInfo](./byteordermask.md)
   The byte ordering of pixel formats.
-- [static var byteOrderDefault: CGBitmapInfo](cgbitmapinfo/byteorderdefault.md)
+- [static var byteOrderDefault: CGBitmapInfo](./byteorderdefault.md)
   The default byte order.
-- [static var byteOrder16Little: CGBitmapInfo](cgbitmapinfo/byteorder16little.md)
+- [static var byteOrder16Little: CGBitmapInfo](./byteorder16little.md)
   16-bit, little endian format.
-- [static var byteOrder32Little: CGBitmapInfo](cgbitmapinfo/byteorder32little.md)
+- [static var byteOrder32Little: CGBitmapInfo](./byteorder32little.md)
   32-bit, little endian format.
-- [static var byteOrder16Big: CGBitmapInfo](cgbitmapinfo/byteorder16big.md)
+- [static var byteOrder16Big: CGBitmapInfo](./byteorder16big.md)
   16-bit, big endian format.
-- [static var floatInfoMask: CGBitmapInfo](cgbitmapinfo/floatinfomask.md)
+- [static var floatInfoMask: CGBitmapInfo](./floatinfomask.md)
 
 
 ---

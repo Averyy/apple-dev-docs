@@ -1,7 +1,8 @@
 # capitalizationContext
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capitalization context to use when formatting the relative dates.
 
@@ -22,21 +23,22 @@ var capitalizationContext: FormatStyleCapitalizationContext
 
 #### Discussion
 
-Setting the capitalization context to [`beginningOfSentence`](formatstylecapitalizationcontext/beginningofsentence.md) sets the first word of the relative date string to upper-case. A capitalization context set to [`middleOfSentence`](formatstylecapitalizationcontext/middleofsentence.md) keeps all words in the string lower-cased.
+Setting the capitalization context to [`beginningOfSentence`](../../formatstylecapitalizationcontext/beginningofsentence.md) sets the first word of the relative date string to upper-case. A capitalization context set to [`middleOfSentence`](../../formatstylecapitalizationcontext/middleofsentence.md) keeps all words in the string lower-cased.
 
 If you set this property to `nil`, the format style resets to using `unknown`.
 
 ## See Also
 
-- [var presentation: Date.RelativeFormatStyle.Presentation](date/relativeformatstyle/presentation-swift.property.md)
+### Modifying a Relative Date Format Style
+- [var presentation: Date.RelativeFormatStyle.Presentation](./presentation-swift.property.md)
   Specifies the style to use when describing a relative date, such as “1 day ago” or “yesterday”.
-- [var unitsStyle: Date.RelativeFormatStyle.UnitsStyle](date/relativeformatstyle/unitsstyle-swift.property.md)
+- [var unitsStyle: Date.RelativeFormatStyle.UnitsStyle](./unitsstyle-swift.property.md)
   The style to use when formatting the quantity or the name of the unit, such as “1 day ago” or “one day ago”.
-- [var calendar: Calendar](date/relativeformatstyle/calendar.md)
+- [var calendar: Calendar](./calendar.md)
   The calendar to use when formatting relative dates.
-- [var locale: Locale](date/relativeformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting the relative date.
-- [func locale(Locale) -> Date.RelativeFormatStyle](date/relativeformatstyle/locale(_:).md)
+- [func locale(Locale) -> Date.RelativeFormatStyle](./locale%28_%29.md)
   Modifies the relative date format style to use the specified locale.
 
 

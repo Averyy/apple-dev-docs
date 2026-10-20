@@ -1,18 +1,19 @@
 # CFRunLoopTimerCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback invoked when a CFRunLoopTimer object fires.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,16 +21,20 @@ Callback invoked when a CFRunLoopTimer object fires.
 typealias CFRunLoopTimerCallBack = (CFRunLoopTimer?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFRunLoopTimer *, void *) CFRunLoopTimerCallBack;
+```
+
 #### Discussion
 
-If `timer` repeats, the run loop automatically schedules the next firing time after calling this function, unless you manually update the firing time within this callback by calling [`CFRunLoopTimerSetNextFireDate(_:_:)`](cfrunlooptimersetnextfiredate(_:_:).md). If `timer` does not repeat, the run loop invalidates `timer`.
+If `timer` repeats, the run loop automatically schedules the next firing time after calling this function, unless you manually update the firing time within this callback by calling [`CFRunLoopTimerSetNextFireDate(_:_:)`](./cfrunlooptimersetnextfiredate%28_,_%29.md). If `timer` does not repeat, the run loop invalidates `timer`.
 
-You specify this callback when you create the timer with [`CFRunLoopTimerCreate(_:_:_:_:_:_:_:)`](cfrunlooptimercreate(_:_:_:_:_:_:_:).md).
+You specify this callback when you create the timer with [`CFRunLoopTimerCreate(_:_:_:_:_:_:_:)`](./cfrunlooptimercreate%28_,_,_,_,_,_,_%29.md).
 
 ## Parameters
 
 - `timer`: The run loop timer that is firing.
-- `info`: The `info` member of the [`CFRunLoopTimerContext`](cfrunlooptimercontext.md) structure that was used when creating the run loop timer.
+- `info`: The `info` member of the [`CFRunLoopTimerContext`](./cfrunlooptimercontext.md) structure that was used when creating the run loop timer.
 
 
 ---

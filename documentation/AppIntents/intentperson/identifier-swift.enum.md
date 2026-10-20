@@ -1,7 +1,8 @@
 # IntentPerson.Identifier
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that manages a unique identifier for a person.
 
@@ -11,7 +12,7 @@ A type that manages a unique identifier for a person.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,29 +24,30 @@ enum Identifier
 ## Topics
 
 ### Getting the identifier types
-- [IntentPerson.Identifier.contact(_:)](intentperson/identifier-swift.enum/contact(_:).md)
+- [IntentPerson.Identifier.contact(_:)](./identifier-swift.enum/contact%28_%29.md)
   An identifier from the Contacts framework (see `CNContact.identifier`)
-- [IntentPerson.Identifier.applicationDefined(_:)](intentperson/identifier-swift.enum/applicationdefined(_:).md)
+- [IntentPerson.Identifier.applicationDefined(_:)](./identifier-swift.enum/applicationdefined%28_%29.md)
   An identifier specific to your app
 ### Enumeration Cases
-- [IntentPerson.Identifier.unknown](intentperson/identifier-swift.enum/unknown.md)
+- [IntentPerson.Identifier.unknown](./identifier-swift.enum/unknown.md)
   Unknown identifier, as in the case where the `IntentPerson` simply wraps a `Handle`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var identifier: IntentPerson.Identifier](intentperson/identifier-swift.property.md)
+### Getting person-related identifiers
+- [var identifier: IntentPerson.Identifier](./identifier-swift.property.md)
 
 
 ---

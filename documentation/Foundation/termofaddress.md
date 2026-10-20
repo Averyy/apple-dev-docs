@@ -1,7 +1,8 @@
 # TermOfAddress
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type for representing grammatical gender in localized text.
 
@@ -43,7 +44,7 @@ let result = AttributedString(localized: resource, options: options)
 // result == "He liked your post."
 ```
 
-If the [`masculine`](termofaddress/masculine.md), [`feminine`](termofaddress/feminine.md), and [`neutral`](termofaddress/neutral.md) terms of address are insufficient, create your own term of address specifying the pronouns and language.
+If the [`masculine`](./termofaddress/masculine.md), [`feminine`](./termofaddress/feminine.md), and [`neutral`](./termofaddress/neutral.md) terms of address are insufficient, create your own term of address specifying the pronouns and language.
 
 ```swift
 // Define the various morphologies.
@@ -95,50 +96,51 @@ let results = [
 
 For examples of how to use terms of address, see:
 
-- [`AttributeScopes.FoundationAttributes.ReferentConceptAttribute`](attributescopes/foundationattributes/referentconceptattribute.md)
-- [`AttributeScopes.FoundationAttributes.AgreementConceptAttribute`](attributescopes/foundationattributes/agreementconceptattribute.md)
+- [`AttributeScopes.FoundationAttributes.ReferentConceptAttribute`](./attributescopes/foundationattributes/referentconceptattribute.md)
+- [`AttributeScopes.FoundationAttributes.AgreementConceptAttribute`](./attributescopes/foundationattributes/agreementconceptattribute.md)
 
 ## Topics
 
 ### Using predefined terms of address
-- [static let feminine: TermOfAddress](termofaddress/feminine.md)
+- [static let feminine: TermOfAddress](./termofaddress/feminine.md)
   The term of address for representing feminine pronouns and grammatical gender.
-- [static let masculine: TermOfAddress](termofaddress/masculine.md)
+- [static let masculine: TermOfAddress](./termofaddress/masculine.md)
   The term of address for representing masculine pronouns and grammatical gender.
-- [static let neutral: TermOfAddress](termofaddress/neutral.md)
+- [static let neutral: TermOfAddress](./termofaddress/neutral.md)
   The term of address for representing gender-neutral pronouns and grammatical gender.
 ### Defining your own terms of address
-- [static func localized(language: Locale.Language, pronouns: [Morphology.Pronoun]) -> TermOfAddress](termofaddress/localized(language:pronouns:).md)
+- [static func localized(language: Locale.Language, pronouns: [Morphology.Pronoun]) -> TermOfAddress](./termofaddress/localized%28language,pronouns%29.md)
   Returns a term of address restricted to a specific language for a group of pronouns.
-- [var language: Locale.Language?](termofaddress/language.md)
+- [var language: Locale.Language?](./termofaddress/language.md)
   The specific language associated with a term of address.
-- [var pronouns: [Morphology.Pronoun]](termofaddress/pronouns.md)
+- [var pronouns: [Morphology.Pronoun]](./termofaddress/pronouns.md)
   The pronouns associated with a term of address.
 ### Type Properties
-- [static let currentUser: TermOfAddress](termofaddress/currentuser.md)
+- [static let currentUser: TermOfAddress](./termofaddress/currentuser.md)
   The term of address that should be used for addressing the user
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum InflectionRule](inflectionrule.md)
+### Automatic grammar agreement
+- [enum InflectionRule](./inflectionrule.md)
   A rule that affects how an attributed string performs automatic grammatical agreement.
-- [struct Morphology](morphology.md)
+- [struct Morphology](./morphology.md)
   A description of the grammatical properties of a string.
-- [enum InflectionConcept](inflectionconcept.md)
+- [enum InflectionConcept](./inflectionconcept.md)
   An inflection method to use when localizing text.
-- [Morphology.Pronoun](morphology/pronoun.md)
+- [Morphology.Pronoun](./morphology/pronoun.md)
   A custom pronoun for referring to a third person.
 
 

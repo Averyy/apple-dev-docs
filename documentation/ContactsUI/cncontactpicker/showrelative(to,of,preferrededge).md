@@ -1,7 +1,8 @@
 # showRelative(to:of:preferredEdge:)
 
 **Framework**: Contacts UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shows the picker popover anchored to the specified view.
 
@@ -14,6 +15,10 @@ Shows the picker popover anchored to the specified view.
 func showRelative(to positioningRect: NSRect, of positioningView: NSView, preferredEdge: NSRectEdge)
 ```
 
+```objc
+- (void) showRelativeToRect:(NSRect) positioningRect ofView:(NSView *) positioningView preferredEdge:(NSRectEdge) preferredEdge;
+```
+
 ## Parameters
 
 - `positioningRect`: The content size of the popover.
@@ -22,7 +27,8 @@ func showRelative(to positioningRect: NSRect, of positioningView: NSView, prefer
 
 ## See Also
 
-- [class NSPopover](../appkit/nspopover.md)
+### Related Documentation
+- [class NSPopover](../../AppKit/nspopover.md)
   A means to display additional content related to existing content on the screen.
 
 

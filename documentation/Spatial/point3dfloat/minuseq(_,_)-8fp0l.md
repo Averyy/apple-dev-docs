@@ -1,7 +1,8 @@
 # -=(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Calculates the point that’s the element-wise difference of a point and a vector and stores the result in the left-hand-side variable.
 

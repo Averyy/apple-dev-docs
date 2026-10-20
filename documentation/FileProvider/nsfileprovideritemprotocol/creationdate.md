@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date the item was created.
 
@@ -18,11 +19,16 @@ The date the item was created.
 optional var creationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * creationDate;
+```
+
 ## See Also
 
-- [var contentModificationDate: Date?](nsfileprovideritemprotocol/contentmodificationdate.md)
+### Tracking Usage
+- [var contentModificationDate: Date?](./contentmodificationdate.md)
   The date the item was last modified.
-- [var lastUsedDate: Date?](nsfileprovideritemprotocol/lastuseddate.md)
+- [var lastUsedDate: Date?](./lastuseddate.md)
   The date the item was last used.
 
 

@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name for the web extension to which this data record belongs.
 
@@ -16,6 +17,10 @@ The display name for the web extension to which this data record belongs.
 
 ```swift
 var displayName: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * displayName;
 ```
 
 

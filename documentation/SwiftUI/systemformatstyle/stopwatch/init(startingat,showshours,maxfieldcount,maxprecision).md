@@ -1,7 +1,8 @@
 # init(startingAt:showsHours:maxFieldCount:maxPrecision:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stopwatch format style that starts counting up from zero from the date you provide.
 

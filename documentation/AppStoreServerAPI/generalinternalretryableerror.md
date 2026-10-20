@@ -1,7 +1,8 @@
 # GeneralInternalRetryableError
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error response that indicates an unknown error occurred, but you can try again.
 
@@ -10,22 +11,23 @@ An error response that indicates an unknown error occurred, but you can try agai
 
 ## Declaration
 
-```swift
+```
 object GeneralInternalRetryableError
 ```
 
 ## Properties
 
-- `errorCode` (int64)
-- `errorMessage` (string)
+- `errorCode` (int64): **Allowed Values**: `5000001`
+- `errorMessage` (string): **Allowed Values**: `An unknown error occurred. Please try again.`
 
 ## See Also
 
-- [object AccountNotFoundRetryableError](accountnotfoundretryableerror.md)
+### Errors to retry
+- [object AccountNotFoundRetryableError](./accountnotfoundretryableerror.md)
   An error response that indicates the App Store account wasn’t found, but you can try again.
-- [object AppNotFoundRetryableError](appnotfoundretryableerror.md)
+- [object AppNotFoundRetryableError](./appnotfoundretryableerror.md)
   An error response that indicates the app wasn’t found, but you can try again.
-- [object OriginalTransactionIdNotFoundRetryableError](originaltransactionidnotfoundretryableerror.md)
+- [object OriginalTransactionIdNotFoundRetryableError](./originaltransactionidnotfoundretryableerror.md)
   An error response that indicates the original transaction identifier wasn’t found, but you can try again.
 
 

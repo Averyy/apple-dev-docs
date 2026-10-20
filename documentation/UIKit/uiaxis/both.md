@@ -1,7 +1,8 @@
 # both
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that represents both axes.
 
@@ -18,11 +19,16 @@ A value that represents both axes.
 static var both: UIAxis { get }
 ```
 
+```c
+UIAxisBoth
+```
+
 ## See Also
 
-- [static var horizontal: UIAxis](uiaxis/horizontal.md)
+### Constants
+- [static var horizontal: UIAxis](./horizontal.md)
   A value that represents the horizontal axis.
-- [static var vertical: UIAxis](uiaxis/vertical.md)
+- [static var vertical: UIAxis](./vertical.md)
   A value that represents the vertical axis.
 
 

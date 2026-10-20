@@ -1,7 +1,8 @@
 # systemDNSSettings
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current system DNS settings.
 
@@ -16,6 +17,10 @@ The current system DNS settings.
 
 ```swift
 var systemDNSSettings: [NEDNSSettings]? { get }
+```
+
+```objc
+@property (readonly, nullable) NSArray<NEDNSSettings *> * systemDNSSettings;
 ```
 
 #### Discussion

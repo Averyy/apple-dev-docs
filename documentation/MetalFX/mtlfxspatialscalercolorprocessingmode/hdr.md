@@ -1,7 +1,8 @@
 # MTLFXSpatialScalerColorProcessingMode.hdr
 
 **Framework**: MetalFX  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates your input and output textures use a high dynamic range color space.
 
@@ -19,11 +20,16 @@ Indicates your input and output textures use a high dynamic range color space.
 case hdr
 ```
 
+```c
+MTLFXSpatialScalerColorProcessingModeHDR
+```
+
 ## See Also
 
-- [MTLFXSpatialScalerColorProcessingMode.linear](mtlfxspatialscalercolorprocessingmode/linear.md)
+### Color space modes
+- [MTLFXSpatialScalerColorProcessingMode.linear](./linear.md)
   Indicates your input and output textures use a linear color space.
-- [MTLFXSpatialScalerColorProcessingMode.perceptual](mtlfxspatialscalercolorprocessingmode/perceptual.md)
+- [MTLFXSpatialScalerColorProcessingMode.perceptual](./perceptual.md)
   Indicates your input and output textures use a perceptual color space.
 
 

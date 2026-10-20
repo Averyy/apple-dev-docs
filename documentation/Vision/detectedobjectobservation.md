@@ -1,7 +1,8 @@
 # DetectedObjectObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observation that provides the position and extent of an image feature that an image-analysis request detects.
 
@@ -22,33 +23,33 @@ struct DetectedObjectObservation
 
 #### Overview
 
-This class is the observation type that [`TrackObjectRequest`](trackobjectrequest.md) generates. It represents an object that the Vision request detects and tracks.
+This class is the observation type that [`TrackObjectRequest`](./trackobjectrequest.md) generates. It represents an object that the Vision request detects and tracks.
 
 ## Topics
 
 ### Creating an observation
-- [init(VNDetectedObjectObservation)](detectedobjectobservation/init(_:).md)
+- [init(VNDetectedObjectObservation)](./detectedobjectobservation/init%28_%29.md)
   Creates a detected object observation.
-- [init(boundingBox: NormalizedRect)](detectedobjectobservation/init(boundingbox:).md)
+- [init(boundingBox: NormalizedRect)](./detectedobjectobservation/init%28boundingbox%29.md)
   Creates a detected object observation with the bounding box you specify.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

@@ -1,10 +1,11 @@
 # kMusicDeviceProperty_SoundBankFSRef
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kMusicDeviceProperty_SoundBankFSRef: AudioUnitPropertyID { get }
 ```
 
+```c
+kMusicDeviceProperty_SoundBankFSRef
+```
+
 ## See Also
 
-- [var kMusicDeviceProperty_SoundBankData: AudioUnitPropertyID](kmusicdeviceproperty_soundbankdata.md)
-- [var kMusicDeviceProperty_StreamFromDisk: AudioUnitPropertyID](kmusicdeviceproperty_streamfromdisk.md)
-- [var kMusicDeviceProperty_UsesInternalReverb: AudioUnitPropertyID](kmusicdeviceproperty_usesinternalreverb.md)
+### Constants
+- [var kMusicDeviceProperty_SoundBankData: AudioUnitPropertyID](./kmusicdeviceproperty_soundbankdata.md)
+- [var kMusicDeviceProperty_StreamFromDisk: AudioUnitPropertyID](./kmusicdeviceproperty_streamfromdisk.md)
+- [var kMusicDeviceProperty_UsesInternalReverb: AudioUnitPropertyID](./kmusicdeviceproperty_usesinternalreverb.md)
 
 
 ---

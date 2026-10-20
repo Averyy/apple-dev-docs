@@ -1,17 +1,22 @@
 # getDataElement()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the data element for the target service attribute.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getDataElement() -> IOBluetoothSDPDataElement!
+```
+
+```objc
+- (IOBluetoothSDPDataElement *) getDataElement;
 ```
 
 #### Return Value

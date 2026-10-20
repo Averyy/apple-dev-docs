@@ -1,7 +1,8 @@
 # symbol(for:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the symbol for the given data value. Returns `nil` if the symbol scale is unavailable, or the value is invalid.
 

@@ -1,7 +1,8 @@
 # init(fireDate:interval:target:selector:userInfo:repeats:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+

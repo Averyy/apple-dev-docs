@@ -1,7 +1,8 @@
 # shouldShowHelp()
 
 **Framework**: Application Services  
-**Kind**: intfm
+**Kind**: intfm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func shouldShowHelp() -> Bool
+```
+
+```objc
+- (BOOL)shouldShowHelp;
 ```
 
 

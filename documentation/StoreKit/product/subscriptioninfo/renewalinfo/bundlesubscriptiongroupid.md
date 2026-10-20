@@ -1,7 +1,8 @@
 # bundleSubscriptionGroupID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identifies the subscription bundle group the next renewal is for.
 

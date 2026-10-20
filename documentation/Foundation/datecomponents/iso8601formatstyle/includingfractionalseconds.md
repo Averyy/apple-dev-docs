@@ -1,7 +1,8 @@
 # includingFractionalSeconds
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If set, fractional seconds will be present in formatted output. Fractional seconds may be present in parsing regardless of the setting of this property.
 

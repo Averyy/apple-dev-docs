@@ -1,7 +1,8 @@
 # post(_:subject:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Posts a given main actor message to the notification center.
 
@@ -28,11 +29,12 @@ func post<Message>(_ message: Message, subject: Message.Subject) where Message :
 
 ## See Also
 
-- [func post<Message>(Message)](notificationcenter/post(_:)-19s7b.md)
+### Posting notification messages
+- [func post<Message>(Message)](./post%28_%29-19s7b.md)
   Posts a given main actor message to the notification center.
-- [func post<Message>(Message, subject: Message.Subject)](notificationcenter/post(_:subject:)-5271w.md)
+- [func post<Message>(Message, subject: Message.Subject)](./post%28_,subject%29-5271w.md)
   Posts a given asynchronous message to the notification center.
-- [func post<Message>(Message)](notificationcenter/post(_:)-7ia4j.md)
+- [func post<Message>(Message)](./post%28_%29-7ia4j.md)
   Posts a given asynchronous message to the notification center.
 
 

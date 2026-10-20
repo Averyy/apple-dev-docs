@@ -1,7 +1,8 @@
 # CSSStyleRule
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSStyleRule
 ```
 
 ## Topics
 
 ### Instance Properties
-- [selectorText](cssstylerule/1634037-selectortext.md)
-- [style](cssstylerule/1629964-style.md)
+- [selectorText](./cssstylerule/api-1634037-selectortext.md)
+- [style](./cssstylerule/api-1629964-style.md)
 
 ## Relationships
 
 ### Inherits From
-- [CSSRule](cssrule.md)
+- [CSSRule](./cssrule.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GLKQuaternionAngle(_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the rotation angle of a quaternion.
 
@@ -17,6 +18,10 @@ Returns the rotation angle of a quaternion.
 func GLKQuaternionAngle(_ quaternion: GLKQuaternion) -> Float
 ```
 
+```c
+float GLKQuaternionAngle(GLKQuaternion quaternion);
+```
+
 #### Return Value
 
 The angle of the rotation in radians (a positive angle is counterclockwise).
@@ -27,9 +32,10 @@ The angle of the rotation in radians (a positive angle is counterclockwise).
 
 ## See Also
 
-- [func GLKQuaternionLength(GLKQuaternion) -> Float](glkquaternionlength(_:).md)
+### Retrieving Information About a Quaternion
+- [func GLKQuaternionLength(GLKQuaternion) -> Float](./glkquaternionlength%28_%29.md)
   Returns the length of a quaternion.
-- [func GLKQuaternionAxis(GLKQuaternion) -> GLKVector3](glkquaternionaxis(_:).md)
+- [func GLKQuaternionAxis(GLKQuaternion) -> GLKVector3](./glkquaternionaxis%28_%29.md)
   Returns the axis of rotation of a quaternion.
 
 

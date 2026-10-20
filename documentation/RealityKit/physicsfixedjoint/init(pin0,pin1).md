@@ -1,7 +1,8 @@
 # init(pin0:pin1:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new fixed joint.
 

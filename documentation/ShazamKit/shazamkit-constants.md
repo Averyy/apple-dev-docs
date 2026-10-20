@@ -1,16 +1,18 @@
 # ShazamKit Constants
 
-**Framework**: ShazamKit
+**Framework**: ShazamKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let SHErrorDomain: String](sherrordomain.md)
+- [let SHErrorDomain: String](./sherrordomain.md)
   The error domain for specific errors for ShazamKit.
 
 ## See Also
 
-- [ShazamKit Enumerations](shazamkit-enumerations.md)
+### Reference
+- [ShazamKit Enumerations](./shazamkit-enumerations.md)
 
 
 ---

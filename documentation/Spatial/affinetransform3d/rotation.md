@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The affine transform’s rotation.
 
@@ -11,7 +12,7 @@ The affine transform’s rotation.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var rotation: Rotation3D? { get }
 
 ## See Also
 
-- [var scale: Size3D](affinetransform3d/scale.md)
+### Decomposing a 3D affine transform
+- [var scale: Size3D](./scale.md)
   The affine transform’s scale.
-- [var translation: Vector3D](affinetransform3d/translation.md)
+- [var translation: Vector3D](./translation.md)
   The translation component of the affine transform.
 
 

@@ -1,7 +1,8 @@
 # ICScannerBitDepth.depth16Bits
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.4+
@@ -12,10 +13,15 @@
 case depth16Bits
 ```
 
+```c
+ICScannerBitDepth16Bits
+```
+
 ## See Also
 
-- [ICScannerBitDepth.depth1Bit](icscannerbitdepth/depth1bit.md)
-- [ICScannerBitDepth.depth8Bits](icscannerbitdepth/depth8bits.md)
+### Constants
+- [ICScannerBitDepth.depth1Bit](./depth1bit.md)
+- [ICScannerBitDepth.depth8Bits](./depth8bits.md)
 
 
 ---

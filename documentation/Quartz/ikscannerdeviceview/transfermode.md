@@ -1,7 +1,8 @@
 # transferMode
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines how the scanned content is provided to the delegate.
 
@@ -14,17 +15,22 @@ Determines how the scanned content is provided to the delegate.
 var transferMode: IKScannerDeviceViewTransferMode { get set }
 ```
 
+```objc
+@property IKScannerDeviceViewTransferMode transferMode;
+```
+
 #### Discussion
 
-The supported constants are defined in [`IKScannerDeviceViewTransferMode`](ikscannerdeviceviewtransfermode.md).
+The supported constants are defined in [`IKScannerDeviceViewTransferMode`](../ikscannerdeviceviewtransfermode.md).
 
 ## See Also
 
-- [var displaysDownloadsDirectoryControl: Bool](ikscannerdeviceview/displaysdownloadsdirectorycontrol.md)
+### Configuring Downloading
+- [var displaysDownloadsDirectoryControl: Bool](./displaysdownloadsdirectorycontrol.md)
   Determines whether the downloads directory control is displayed.
-- [var downloadsDirectory: URL!](ikscannerdeviceview/downloadsdirectory.md)
+- [var downloadsDirectory: URL!](./downloadsdirectory.md)
   The directory where scans are saved.
-- [var documentName: String!](ikscannerdeviceview/documentname.md)
+- [var documentName: String!](./documentname.md)
   Returns the document name.
 
 

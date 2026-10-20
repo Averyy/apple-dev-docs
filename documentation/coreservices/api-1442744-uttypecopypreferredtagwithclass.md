@@ -1,7 +1,8 @@
 # UTTypeCopyPreferredTagWithClass(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Translates a uniform type identifier to a list of tags in a different type classification method.
 
@@ -20,7 +21,11 @@ Translates a uniform type identifier to a list of tags in a different type class
 func UTTypeCopyPreferredTagWithClass(_ inUTI: CFString, _ inTagClass: CFString) -> Unmanaged<CFString>?
 ```
 
-#### Return_value
+```c
+CFStringRef UTTypeCopyPreferredTagWithClass(CFStringRef inUTI, CFStringRef inTagClass);
+```
+
+#### Return Value
 
 An array of tags (as CFStrings), or `NULL` if there was no translation available to convert the uniform type identifier to the specified class.
 

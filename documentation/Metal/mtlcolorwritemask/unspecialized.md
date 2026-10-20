@@ -1,7 +1,8 @@
 # unspecialized
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Defers assigning the color write mask.
 
@@ -17,6 +18,10 @@ Defers assigning the color write mask.
 
 ```swift
 static var unspecialized: MTLColorWriteMask { get }
+```
+
+```c
+MTLColorWriteMaskUnspecialized
 ```
 
 #### Discussion

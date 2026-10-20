@@ -1,7 +1,8 @@
 # physicsOrigin
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that defines the origin of the scene’s physics simulation.
 
@@ -21,11 +22,11 @@ The entity that defines the origin of the scene’s physics simulation.
 
 ## Mentions
 
-- [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
+- [Designing scene hierarchies for efficient physics simulation](../designing-scene-hierarchies-for-efficient-physics-simulation.md)
 
 #### Discussion
 
-By default, the scene’s origin acts as the origin for physics calculations. Set the [`physicsOrigin`](arview/physicsorigin.md) to choose a particular entity within the scene to act as the origin instead.
+By default, the scene’s origin acts as the origin for physics calculations. Set the [`physicsOrigin`](./physicsorigin.md) to choose a particular entity within the scene to act as the origin instead.
 
 Here are the steps to do that:
 
@@ -52,13 +53,14 @@ myAnchor.addChild(block1)
 
 Using this setup, RealityKit simulates all forces, velocities, etc. relative to `myAnchor`. Moving the anchor will not affect the simulation.
 
-For more information, see [`Handling different-sized objects in physics simulations`](handling-different-sized-objects-in-physics-simulations.md).
+For more information, see [Handling different-sized objects in physics simulations](../handling-different-sized-objects-in-physics-simulations.md).
 
 ## See Also
 
-- [var environment: ARView.Environment](arview/environment-swift.property.md)
+### Providing environmental context
+- [var environment: ARView.Environment](./environment-swift.property.md)
   The view’s background, lighting, and acoustic properties.
-- [var audioListener: Entity?](arview/audiolistener.md)
+- [var audioListener: Entity?](./audiolistener.md)
   The entity that defines the listener position and orientation for spatial audio.
 
 

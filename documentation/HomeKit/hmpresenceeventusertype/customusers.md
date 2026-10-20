@@ -1,7 +1,8 @@
 # HMPresenceEventUserType.customUsers
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A custom set of users is used to trigger a presence event.
 
@@ -19,11 +20,16 @@ A custom set of users is used to trigger a presence event.
 case customUsers
 ```
 
+```c
+HMPresenceEventUserTypeCustomUsers
+```
+
 ## See Also
 
-- [HMPresenceEventUserType.currentUser](hmpresenceeventusertype/currentuser.md)
+### Selecting users
+- [HMPresenceEventUserType.currentUser](./currentuser.md)
   The current user triggers the presence event.
-- [HMPresenceEventUserType.homeUsers](hmpresenceeventusertype/homeusers.md)
+- [HMPresenceEventUserType.homeUsers](./homeusers.md)
   All users associated with a home trigger a presence event.
 
 

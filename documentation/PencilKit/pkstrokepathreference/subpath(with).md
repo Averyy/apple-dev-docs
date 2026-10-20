@@ -1,7 +1,8 @@
 # subpath(with:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the path containing the control points in the specified parametric range.
 
@@ -16,6 +17,10 @@ Returns a copy of the path containing the control points in the specified parame
 
 ```swift
 func subpath(with range: __PKFloatRange) -> PKStrokePath
+```
+
+```objc
+- (PKStrokePath *) subpathWithRange:(PKFloatRange *) range;
 ```
 
 #### Return Value

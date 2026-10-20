@@ -1,13 +1,14 @@
 # ES_AUTH_RESULT_ALLOW
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The caller authorizes the event and allows it to continue.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The caller authorizes the event and allows it to continue.
 var ES_AUTH_RESULT_ALLOW: es_auth_result_t { get }
 ```
 
+```c
+ES_AUTH_RESULT_ALLOW
+```
+
 ## See Also
 
-- [var ES_AUTH_RESULT_DENY: es_auth_result_t](es_auth_result_deny.md)
+### Authorization Values
+- [var ES_AUTH_RESULT_DENY: es_auth_result_t](./es_auth_result_deny.md)
   The caller denies authorization to the event and prevents it from continuing.
 
 

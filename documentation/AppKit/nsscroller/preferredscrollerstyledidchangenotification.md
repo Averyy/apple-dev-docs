@@ -1,7 +1,8 @@
 # preferredScrollerStyleDidChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted if the preferred scroller style changes.
 
@@ -14,11 +15,15 @@ Posted if the preferred scroller style changes.
 class let preferredScrollerStyleDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSPreferredScrollerStyleDidChangeNotification;
+```
+
 #### Discussion
 
-For a full discussion, see [`preferredScrollerStyle`](nsscroller/preferredscrollerstyle.md).
+For a full discussion, see [`preferredScrollerStyle`](./preferredscrollerstyle.md).
 
-To observe this notification using Swift concurrency, use [`NSScroller.PreferredScrollerStyleDidChangeMessage`](nsscroller/preferredscrollerstyledidchangemessage.md).
+To observe this notification using Swift concurrency, use [`NSScroller.PreferredScrollerStyleDidChangeMessage`](./preferredscrollerstyledidchangemessage.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # MTRDoorLockDlRFIDProgrammingEventMask
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,26 +19,30 @@
 struct MTRDoorLockDlRFIDProgrammingEventMask
 ```
 
+```c
+enum MTRDoorLockDlRFIDProgrammingEventMask : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrdoorlockdlrfidprogrammingeventmask/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrdoorlockdlrfidprogrammingeventmask/init%28rawvalue%29.md)
 ### Type Properties
-- [static var rfidCodeAdded: MTRDoorLockDlRFIDProgrammingEventMask](mtrdoorlockdlrfidprogrammingeventmask/rfidcodeadded.md)
-- [static var rfidCodeCleared: MTRDoorLockDlRFIDProgrammingEventMask](mtrdoorlockdlrfidprogrammingeventmask/rfidcodecleared.md)
-- [static var unknown: MTRDoorLockDlRFIDProgrammingEventMask](mtrdoorlockdlrfidprogrammingeventmask/unknown.md)
+- [static var rfidCodeAdded: MTRDoorLockDlRFIDProgrammingEventMask](./mtrdoorlockdlrfidprogrammingeventmask/rfidcodeadded.md)
+- [static var rfidCodeCleared: MTRDoorLockDlRFIDProgrammingEventMask](./mtrdoorlockdlrfidprogrammingeventmask/rfidcodecleared.md)
+- [static var unknown: MTRDoorLockDlRFIDProgrammingEventMask](./mtrdoorlockdlrfidprogrammingeventmask/unknown.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

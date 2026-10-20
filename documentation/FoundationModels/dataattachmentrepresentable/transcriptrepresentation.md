@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The transcript representation of this content.

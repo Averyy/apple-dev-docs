@@ -1,18 +1,19 @@
 # backgroundColor
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the view.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -21,22 +22,27 @@ The background color of the view.
 var backgroundColor: NSColor { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSColor * backgroundColor;
+```
+
 #### Discussion
 
-SceneKit displays this color behind the contents of the rendered scene. If the scene contents fill the view or if the scene provides its own background using the [`background`](scnscene/background.md) property, the view’s background color may not be visible.
+SceneKit displays this color behind the contents of the rendered scene. If the scene contents fill the view or if the scene provides its own background using the [`background`](../scnscene/background.md) property, the view’s background color may not be visible.
 
 This property’s value must be a color that can be represented using RGBA components.
 
 ## See Also
 
-- [var preferredFramesPerSecond: Int](scnview/preferredframespersecond.md)
+### Configuring a View
+- [var preferredFramesPerSecond: Int](./preferredframespersecond.md)
   The animation frame rate that the view uses to render its scene.
-- [var rendersContinuously: Bool](scnview/renderscontinuously.md)
+- [var rendersContinuously: Bool](./renderscontinuously.md)
   A Boolean value that determines whether the view always renders at its preferred frame rate or only when its visible content changes.
-- [var antialiasingMode: SCNAntialiasingMode](scnview/antialiasingmode.md)
+- [var antialiasingMode: SCNAntialiasingMode](./antialiasingmode.md)
   The antialiasing mode used for rendering the view’s scene.
-- [enum SCNAntialiasingMode](scnantialiasingmode.md)
-  Modes for antialiased rendering of the view’s scene, used by the [`SCNView`](scnview.md) property.
+- [enum SCNAntialiasingMode](../scnantialiasingmode.md)
+  Modes for antialiased rendering of the view’s scene, used by the [`SCNView`](../scnview.md) property.
 
 
 ---

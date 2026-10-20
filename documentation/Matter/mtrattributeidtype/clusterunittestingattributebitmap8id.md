@@ -1,7 +1,8 @@
 # clusterUnitTestingAttributeBitmap8ID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterUnitTestingAttributeBitmap8ID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterUnitTestingAttributeBitmap8ID
 ```
 
 

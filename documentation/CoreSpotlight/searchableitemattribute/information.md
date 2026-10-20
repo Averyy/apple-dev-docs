@@ -1,7 +1,8 @@
 # information
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,21 +19,22 @@ static let information: SearchableItemAttribute
 
 ## See Also
 
-- [static let comment: SearchableItemAttribute](searchableitemattribute/comment.md)
-- [static let contentCreationDate: SearchableItemAttribute](searchableitemattribute/contentcreationdate.md)
-- [static let contentModificationDate: SearchableItemAttribute](searchableitemattribute/contentmodificationdate.md)
-- [static let contentSources: SearchableItemAttribute](searchableitemattribute/contentsources.md)
-- [static let copyright: SearchableItemAttribute](searchableitemattribute/copyright.md)
-- [static let downloadedDate: SearchableItemAttribute](searchableitemattribute/downloadeddate.md)
-- [static let editors: SearchableItemAttribute](searchableitemattribute/editors.md)
-- [static let lastUsedDate: SearchableItemAttribute](searchableitemattribute/lastuseddate.md)
-- [static let participants: SearchableItemAttribute](searchableitemattribute/participants.md)
-- [static let projects: SearchableItemAttribute](searchableitemattribute/projects.md)
-- [static let addedDate: SearchableItemAttribute](searchableitemattribute/addeddate.md)
-- [static let codecs: SearchableItemAttribute](searchableitemattribute/codecs.md)
-- [static let contactKeywords: SearchableItemAttribute](searchableitemattribute/contactkeywords.md)
-- [static let deliveryType: SearchableItemAttribute](searchableitemattribute/deliverytype.md)
-- [static let duration: SearchableItemAttribute](searchableitemattribute/duration.md)
+### Describing media
+- [static let comment: SearchableItemAttribute](./comment.md)
+- [static let contentCreationDate: SearchableItemAttribute](./contentcreationdate.md)
+- [static let contentModificationDate: SearchableItemAttribute](./contentmodificationdate.md)
+- [static let contentSources: SearchableItemAttribute](./contentsources.md)
+- [static let copyright: SearchableItemAttribute](./copyright.md)
+- [static let downloadedDate: SearchableItemAttribute](./downloadeddate.md)
+- [static let editors: SearchableItemAttribute](./editors.md)
+- [static let lastUsedDate: SearchableItemAttribute](./lastuseddate.md)
+- [static let participants: SearchableItemAttribute](./participants.md)
+- [static let projects: SearchableItemAttribute](./projects.md)
+- [static let addedDate: SearchableItemAttribute](./addeddate.md)
+- [static let codecs: SearchableItemAttribute](./codecs.md)
+- [static let contactKeywords: SearchableItemAttribute](./contactkeywords.md)
+- [static let deliveryType: SearchableItemAttribute](./deliverytype.md)
+- [static let duration: SearchableItemAttribute](./duration.md)
 
 
 ---

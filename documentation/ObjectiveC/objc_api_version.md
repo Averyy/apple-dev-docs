@@ -1,16 +1,17 @@
 # OBJC_API_VERSION
 
 **Framework**: Objective-C Runtime  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 var OBJC_API_VERSION: Int32 { get }
 ```
 
+```c
+#define OBJC_API_VERSION
+```
+
 ## See Also
 
-- [var OBJC_NO_GC: Int32](objc_no_gc.md)
+### Macros
+- [var OBJC_NO_GC: Int32](./objc_no_gc.md)
 
 
 ---

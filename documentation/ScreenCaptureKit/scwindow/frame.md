@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle the represents the frame of the window within a display.
 
@@ -13,6 +14,10 @@ A rectangle the represents the frame of the window within a display.
 
 ```swift
 var frame: CGRect { get }
+```
+
+```objc
+@property (readonly) CGRect frame;
 ```
 
 

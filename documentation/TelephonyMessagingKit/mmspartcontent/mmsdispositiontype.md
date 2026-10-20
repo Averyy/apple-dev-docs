@@ -1,7 +1,8 @@
 # MMSPartContent.MMSDispositionType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A structure that defines the disposition of the content part when rendered.
 
@@ -17,34 +18,35 @@ enum MMSDispositionType
 ## Topics
 
 ### Working with disposition types
-- [MMSPartContent.MMSDispositionType.attachment](mmspartcontent/mmsdispositiontype/attachment.md)
+- [MMSPartContent.MMSDispositionType.attachment](./mmsdispositiontype/attachment.md)
   A disposition to render the content part as an attachment to the message.
-- [MMSPartContent.MMSDispositionType.inline](mmspartcontent/mmsdispositiontype/inline.md)
+- [MMSPartContent.MMSDispositionType.inline](./mmsdispositiontype/inline.md)
   A disposition to render the content part in line with the rest of the message.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var data: Data](mmspartcontent/data.md)
+### Accessing part properties
+- [var data: Data](./data.md)
   The raw data used for the MMS content part.
-- [var disposition: MMSPartContent.MMSDispositionType](mmspartcontent/disposition.md)
+- [var disposition: MMSPartContent.MMSDispositionType](./disposition.md)
   The disposition of the MMS part, indicating whether the part renders inline or as an attachment.
-- [var filename: String](mmspartcontent/filename.md)
+- [var filename: String](./filename.md)
   The file name of the MMS part.
-- [var contentID: String](mmspartcontent/contentid.md)
+- [var contentID: String](./contentid.md)
   A unique identifier for the part.
-- [var contentType: UTType?](mmspartcontent/contenttype.md)
+- [var contentType: UTType?](./contenttype.md)
   The content type of the part, as a Uniform Type Identifier.
-- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
+- [struct UTType](../../UniformTypeIdentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 
 

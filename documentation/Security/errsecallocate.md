@@ -1,7 +1,8 @@
 # errSecAllocate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Failed to allocate memory.
 
@@ -18,6 +19,10 @@ Failed to allocate memory.
 
 ```swift
 var errSecAllocate: OSStatus { get }
+```
+
+```c
+errSecAllocate
 ```
 
 

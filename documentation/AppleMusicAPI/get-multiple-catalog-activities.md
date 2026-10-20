@@ -1,7 +1,8 @@
 # Get Multiple Catalog Activities
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch one or more activities by using their identifiers.
 
@@ -10,13 +11,13 @@ Fetch one or more activities by using their identifiers.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains an array of one or more `Activity` objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains an array of one or more `Activity` objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/activities?ids=976439514,976439503
 ```
 
@@ -192,20 +193,34 @@ https://api.music.apple.com/v1/catalog/us/activities?ids=976439514,976439503
 
 ## Parameters
 
+### Path Parameters
+
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `ids` ([string]) *(required)*: The unique identifiers for the activities. The maximum fetch limit is `100`.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 
+## Responses
+
+- `200` OK (`ActivitiesResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object Activities](activities.md)
+### Related Documentation
+- [object Activities](./activities.md)
   A resource object that represents an activity curator.
-- [object ActivitiesResponse](activitiesresponse.md)
+- [object ActivitiesResponse](./activitiesresponse.md)
   The response to a request for activities.
-- [Get a Catalog Activity](get-a-catalog-activity.md)
+### Requesting Catalog Activites
+- [Get a Catalog Activity](./get-a-catalog-activity.md)
   Fetch an activity by using its identifier.
-- [Get a Catalog Activity's Relationship Directly by Name](fetch-a-relationship-on-this-resource-by-name-1eqct.md)
+- [Get a Catalog Activity's Relationship Directly by Name](./fetch-a-relationship-on-this-resource-by-name-1eqct.md)
   Fetch an activity’s relationship by using its identifier.
 
 

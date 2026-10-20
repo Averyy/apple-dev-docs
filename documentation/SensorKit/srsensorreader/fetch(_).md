@@ -1,14 +1,17 @@
 # fetch(_:)
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the samples that a fetch request specifies.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+
+> **Deprecated**: Use SRReader<Sensor> class
 
 ## Declaration
 
@@ -16,13 +19,17 @@ Fetches the samples that a fetch request specifies.
 func fetch(_ request: SRFetchRequest)
 ```
 
+```objc
+- (void) fetch:(SRFetchRequest *) request;
+```
+
 #### Discussion
 
 An app calls this function to access data for the caller’s sensor.
 
-Upon success, the framework delivers results in the form of *samples* via the delegate’s [`sensorReader(_:fetching:didFetchResult:)`](srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:).md) callback. The framework invokes the delegate multiple times if this function results in multiple samples.
+Upon success, the framework delivers results in the form of *samples* via the delegate’s [`sensorReader(_:fetching:didFetchResult:)`](../srsensorreaderdelegate/sensorreader%28_,fetching,didfetchresult%29.md) callback. The framework invokes the delegate multiple times if this function results in multiple samples.
 
-The framework returns sensor data only for the argument fetch-object’s device, and that’s dated only within the argument fetch-object’s time window. Within that window, this function returns only the data that the framework recorded (see [`startRecording()`](srsensorreader/startrecording().md)), and that the framework hasn’t deleted (see [`SRDeletionRecord`](srdeletionrecord.md)).
+The framework returns sensor data only for the argument fetch-object’s device, and that’s dated only within the argument fetch-object’s time window. Within that window, this function returns only the data that the framework recorded (see [`startRecording()`](./startrecording%28%29.md)), and that the framework hasn’t deleted (see [`SRDeletionRecord`](../srdeletionrecord.md)).
 
 ## Parameters
 
@@ -30,9 +37,10 @@ The framework returns sensor data only for the argument fetch-object’s device,
 
 ## See Also
 
-- [func fetchDevices()](srsensorreader/fetchdevices.md)
+### Reading recorded data
+- [func fetchDevices()](./fetchdevices%28%29.md)
   Acquires device information for all devices that store data for this reader’s sensor.
-- [class SRDevice](srdevice.md)
+- [class SRDevice](../srdevice.md)
   A representation of a device that provides sample data.
 
 

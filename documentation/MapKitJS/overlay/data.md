@@ -1,7 +1,8 @@
 # data
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom data to associate with the overlay.
 
@@ -10,7 +11,7 @@ Custom data to associate with the overlay.
 
 ## Declaration
 
-```swift
+```
 get data(): {};
 set data(data: {});
 ```
@@ -21,15 +22,16 @@ You choose the data to assign to the overlay. It can be any JavaScript value.
 
 ## See Also
 
-- [visible](overlay/visible.md)
+### Setting overlay options
+- [visible](./visible.md)
   A Boolean value that determines whether an overlay is visible.
-- [enabled](overlay/enabled.md)
+- [enabled](./enabled.md)
   A Boolean value that determines whether the overlay responds to user interaction.
-- [selected](overlay/selected.md)
+- [selected](./selected.md)
   A Boolean value that indicates whether the user selects the overlay.
-- [style](overlay/style.md)
+- [style](./style.md)
   Style properties to apply to the overlay.
-- [map](overlay/map.md)
+- [map](./map.md)
   The map you add the overlay to.
 
 

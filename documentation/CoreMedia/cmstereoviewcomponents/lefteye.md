@@ -1,7 +1,8 @@
 # leftEye
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The stereo video track includes a left eye layer.
 
@@ -20,9 +21,14 @@ The stereo video track includes a left eye layer.
 static var leftEye: CMStereoViewComponents { get }
 ```
 
+```c
+kCMStereoView_LeftEye
+```
+
 ## See Also
 
-- [static var rightEye: CMStereoViewComponents](cmstereoviewcomponents/righteye.md)
+### Eye Layer
+- [static var rightEye: CMStereoViewComponents](./righteye.md)
   The stereo video track includes a right eye layer.
 
 

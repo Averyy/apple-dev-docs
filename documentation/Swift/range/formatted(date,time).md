@@ -1,7 +1,8 @@
 # formatted(date:time:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats the date range using the specified date and time format styles.
 
@@ -19,6 +20,8 @@ Formats the date range using the specified date and time format styles.
 ```swift
 func formatted(date: Date.IntervalFormatStyle.DateStyle, time: Date.IntervalFormatStyle.TimeStyle) -> String
 ```
+
+Available when `Bound` is `Date`.
 
 
 ---

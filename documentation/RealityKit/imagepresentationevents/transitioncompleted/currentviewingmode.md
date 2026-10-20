@@ -1,7 +1,8 @@
 # currentViewingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The viewing mode the image presentation component transitioned to.
 

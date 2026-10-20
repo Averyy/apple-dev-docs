@@ -1,7 +1,8 @@
 # rateMetaParameter
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var rateMetaParameter: PHASENumberMetaParameter? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) PHASENumberMetaParameter * rateMetaParameter;
 ```
 
 #### Discussion

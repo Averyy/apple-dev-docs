@@ -1,7 +1,8 @@
 # CSSM_PKCS_OAEP_MGF
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_PKCS_OAEP_MGF = uint32
+```
+
+```c
+typedef uint32 CSSM_PKCS_OAEP_MGF;
 ```
 
 

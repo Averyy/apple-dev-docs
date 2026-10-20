@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates labeled content based on a labeled content style configuration.
 
@@ -20,9 +21,11 @@ Creates labeled content based on a labeled content style configuration.
 init(_ configuration: LabeledContentStyleConfiguration)
 ```
 
+Available when `Label` is `LabeledContentStyleConfiguration.Label` and `Content` is `LabeledContentStyleConfiguration.Content`.
+
 #### Discussion
 
-You can use this initializer within the [`makeBody(configuration:)`](labeledcontentstyle/makebody(configuration:).md) method of a [`LabeledContentStyle`](labeledcontentstyle.md) to create a labeled content instance. This is useful for custom styles that only modify the current style, as opposed to implementing a brand new style.
+You can use this initializer within the [`makeBody(configuration:)`](../labeledcontentstyle/makebody%28configuration%29.md) method of a [`LabeledContentStyle`](../labeledcontentstyle.md) to create a labeled content instance. This is useful for custom styles that only modify the current style, as opposed to implementing a brand new style.
 
 For example, the following style adds a red border around the labeled content, but otherwise preserves the current style:
 
@@ -41,13 +44,14 @@ struct RedBorderLabeledContentStyle: LabeledContentStyle {
 
 ## See Also
 
-- [init(_:content:)](labeledcontent/init(_:content:).md)
+### Creating labeled content
+- [init(_:content:)](./init%28_,content%29.md)
   Creates a labeled view that generates its label from a localized string key.
-- [init(content: () -> Content, label: () -> Label)](labeledcontent/init(content:label:).md)
+- [init(content: () -> Content, label: () -> Label)](./init%28content,label%29.md)
   Creates a standard labeled element, with a view that conveys the value of the element and a label.
-- [init(_:value:)](labeledcontent/init(_:value:).md)
+- [init(_:value:)](./init%28_,value%29.md)
   Creates a labeled informational view.
-- [init(_:value:format:)](labeledcontent/init(_:value:format:).md)
+- [init(_:value:format:)](./init%28_,value,format%29.md)
   Creates a labeled informational view from a formatted value.
 
 

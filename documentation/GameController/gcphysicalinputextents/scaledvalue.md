@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The value of the input, scaled into physical units.
@@ -18,6 +19,10 @@ The value of the input, scaled into physical units.
 
 ```swift
 var scaledValue: Double { get }
+```
+
+```objc
+@property (readonly) double scaledValue;
 ```
 
 

@@ -1,7 +1,8 @@
 # AVCaptionFormatConformer
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that converts a canonical caption to a specific format.
 
@@ -17,34 +18,39 @@ An object that converts a canonical caption to a specific format.
 class AVCaptionFormatConformer
 ```
 
+```objc
+@interface AVCaptionFormatConformer : NSObject
+```
+
 ## Topics
 
 ### Creating a format conformer
-- [init(conversionSettings: [AVCaptionSettingsKey : Any])](avcaptionformatconformer/init(conversionsettings:).md)
+- [init(conversionSettings: [AVCaptionSettingsKey : Any])](./avcaptionformatconformer/init%28conversionsettings%29.md)
   Creates a new object with format conversion settings.
 ### Conforming captions
-- [var conformsCaptionsToTimeRange: Bool](avcaptionformatconformer/conformscaptionstotimerange.md)
+- [var conformsCaptionsToTimeRange: Bool](./avcaptionformatconformer/conformscaptionstotimerange.md)
   A Boolean value that indicates whether to conform the time range of a canonical caption.
-- [func conformedCaption(for: AVCaption) throws -> AVCaption](avcaptionformatconformer/conformedcaption(for:).md)
+- [func conformedCaption(for: AVCaption) throws -> AVCaption](./avcaptionformatconformer/conformedcaption%28for%29.md)
   Creates a caption that conforms to a specific format.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct AVCaptionSettingsKey](avcaptionsettingskey.md)
+### Conversion and validation
+- [struct AVCaptionSettingsKey](./avcaptionsettingskey.md)
   A structure that defines dictionary keys to configure the caption converter and validator.
-- [class AVCaptionConversionValidator](avcaptionconversionvalidator.md)
+- [class AVCaptionConversionValidator](./avcaptionconversionvalidator.md)
   An object that validates captions for a conversion operation.
 
 

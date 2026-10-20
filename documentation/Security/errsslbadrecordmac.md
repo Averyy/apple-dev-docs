@@ -1,7 +1,8 @@
 # errSSLBadRecordMac
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A record with a bad message authentication code (MAC) was encountered.
 
@@ -18,6 +19,10 @@ A record with a bad message authentication code (MAC) was encountered.
 
 ```swift
 var errSSLBadRecordMac: OSStatus { get }
+```
+
+```c
+errSSLBadRecordMac
 ```
 
 

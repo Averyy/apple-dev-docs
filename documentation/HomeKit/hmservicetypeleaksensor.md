@@ -1,7 +1,8 @@
 # HMServiceTypeLeakSensor
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A leak sensor service.
 
@@ -19,13 +20,18 @@ A leak sensor service.
 let HMServiceTypeLeakSensor: String
 ```
 
+```c
+extern NSString * const HMServiceTypeLeakSensor;
+```
+
 ## See Also
 
-- [let HMServiceTypeFaucet: String](hmservicetypefaucet.md)
+### Water
+- [let HMServiceTypeFaucet: String](./hmservicetypefaucet.md)
   A faucet service.
-- [let HMServiceTypeValve: String](hmservicetypevalve.md)
+- [let HMServiceTypeValve: String](./hmservicetypevalve.md)
   A valve service.
-- [let HMServiceTypeIrrigationSystem: String](hmservicetypeirrigationsystem.md)
+- [let HMServiceTypeIrrigationSystem: String](./hmservicetypeirrigationsystem.md)
   An irrigation system service.
 
 

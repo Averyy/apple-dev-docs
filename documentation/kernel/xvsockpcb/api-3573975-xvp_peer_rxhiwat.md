@@ -1,14 +1,15 @@
 # xvp_peer_rxhiwat
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t xvp_peer_rxhiwat;
 ```
 

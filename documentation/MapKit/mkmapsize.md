@@ -1,23 +1,28 @@
 # MKMapSize
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Width and height information on a two-dimensional map projection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct MKMapSize
+```
+
+```c
+typedef struct { ... } MKMapSize;
 ```
 
 #### Overview
@@ -27,42 +32,43 @@ If you project the curved surface of the globe onto a flat surface, what you get
 ## Topics
 
 ### Creating a map size
-- [init()](mkmapsize/init.md)
+- [init()](./mkmapsize/init%28%29.md)
   Creates a map size that represents an empty area on a two-dimensional projection of a map.
-- [init(width: Double, height: Double)](mkmapsize/init(width:height:).md)
+- [init(width: Double, height: Double)](./mkmapsize/init%28width,height%29.md)
   Creates a map size that represents an area on a two-dimensional projection of a map with the specified width and height.
 ### Getting standard map sizes
-- [static let world: MKMapSize](mkmapsize/world.md)
+- [static let world: MKMapSize](./mkmapsize/world.md)
   The width and height, in map points, of the world in a two-dimensional map projection.
 ### Getting the width and height
-- [var height: Double](mkmapsize/height.md)
+- [var height: Double](./mkmapsize/height.md)
   The height of the specified area, measured in map points.
-- [var width: Double](mkmapsize/width.md)
+- [var width: Double](./mkmapsize/width.md)
   The width of the specified area, measured in map points.
 ### Comparing map sizes
-- [func MKMapSizeEqualToSize(MKMapSize, MKMapSize) -> Bool](mkmapsizeequaltosize(_:_:).md)
+- [func MKMapSizeEqualToSize(MKMapSize, MKMapSize) -> Bool](./mkmapsizeequaltosize%28_,_%29.md)
   Returns a Boolean value that indicates whether two map sizes are equal.
 ### Getting a description of the size
-- [func MKStringFromMapSize(MKMapSize) -> String](mkstringfrommapsize(_:).md)
+- [func MKStringFromMapSize(MKMapSize) -> String](./mkstringfrommapsize%28_%29.md)
   Returns a formatted string for the specified map size.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MKCoordinateRegion](mkcoordinateregion.md)
+### Map coordinates
+- [struct MKCoordinateRegion](./mkcoordinateregion.md)
   A rectangular geographic region that centers around a specific latitude and longitude.
-- [struct MKCoordinateSpan](mkcoordinatespan.md)
+- [struct MKCoordinateSpan](./mkcoordinatespan.md)
   The width and height of a map region.
-- [struct MKMapRect](mkmaprect.md)
+- [struct MKMapRect](./mkmaprect.md)
   A rectangular area on a two-dimensional map projection.
-- [struct MKMapPoint](mkmappoint.md)
+- [struct MKMapPoint](./mkmappoint.md)
   A point on a two-dimensional map projection.
-- [class MKDistanceFormatter](mkdistanceformatter.md)
+- [class MKDistanceFormatter](./mkdistanceformatter.md)
   A utility object that converts between a geographic distance and a string-based expression of that distance.
 
 

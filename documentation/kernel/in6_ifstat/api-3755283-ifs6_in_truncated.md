@@ -1,14 +1,15 @@
 # ifs6_in_truncated
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 u_quad_t ifs6_in_truncated;
 ```
 

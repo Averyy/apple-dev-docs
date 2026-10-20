@@ -1,7 +1,8 @@
 # init(controller:category:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scene that appears in response to receiving a specific category of remote or local notifications.
 
@@ -40,11 +41,11 @@ struct PopQuizApp : App {
 }
 ```
 
-Each [`WKNotificationScene`](wknotificationscene.md) declaration references a [`WKUserNotificationHostingController`](wkusernotificationhostingcontroller.md) and a category string that you provide. The hosting controller displays your notification’s content view upon receipt of a local or a [`PushKit`](https://developer.apple.com/documentation/pushkit) notification. The category string you specify corresponds to the category name in the notification’s dictionary and describes a specific notification that contains the content displayed by the notification view.
+Each [`WKNotificationScene`](../wknotificationscene.md) declaration references a [`WKUserNotificationHostingController`](../wkusernotificationhostingcontroller.md) and a category string that you provide. The hosting controller displays your notification’s content view upon receipt of a local or a [PushKit](../../PushKit/PushKit.md) notification. The category string you specify corresponds to the category name in the notification’s dictionary and describes a specific notification that contains the content displayed by the notification view.
 
 ## Parameters
 
-- `controller`: The type of [`WKUserNotificationHostingController`](wkusernotificationhostingcontroller.md) to display upon receipt of the specified notification category.
+- `controller`: The type of [`WKUserNotificationHostingController`](../wkusernotificationhostingcontroller.md) to display upon receipt of the specified notification category.
 - `category`: The category of notifications to listen for.
 
 

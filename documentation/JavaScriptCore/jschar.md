@@ -1,7 +1,8 @@
 # JSChar
 
 **Framework**: JavaScriptCore  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A Unicode character.
 
@@ -19,15 +20,20 @@ A Unicode character.
 typealias JSChar = UInt16
 ```
 
+```c
+typedef unsigned short JSChar;
+```
+
 ## See Also
 
-- [func JSStringCreateWithCharacters(UnsafePointer<JSChar>!, Int) -> JSStringRef!](jsstringcreatewithcharacters(_:_:).md)
+### Creating a JavaScript String
+- [func JSStringCreateWithCharacters(UnsafePointer<JSChar>!, Int) -> JSStringRef!](./jsstringcreatewithcharacters%28_,_%29.md)
   Creates a JavaScript string from a buffer of Unicode characters.
-- [func JSStringCreateWithUTF8CString(UnsafePointer<CChar>!) -> JSStringRef!](jsstringcreatewithutf8cstring(_:).md)
+- [func JSStringCreateWithUTF8CString(UnsafePointer<CChar>!) -> JSStringRef!](./jsstringcreatewithutf8cstring%28_%29.md)
   Creates a JavaScript string from a null-terminated UTF-8 string.
-- [func JSStringRetain(JSStringRef!) -> JSStringRef!](jsstringretain(_:).md)
+- [func JSStringRetain(JSStringRef!) -> JSStringRef!](./jsstringretain%28_%29.md)
   Retains a JavaScript string.
-- [func JSStringRelease(JSStringRef!)](jsstringrelease(_:).md)
+- [func JSStringRelease(JSStringRef!)](./jsstringrelease%28_%29.md)
   Releases a JavaScript string.
 
 

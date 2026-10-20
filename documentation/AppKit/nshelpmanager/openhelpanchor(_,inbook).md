@@ -1,17 +1,22 @@
 # openHelpAnchor(_:inBook:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and displays the text at the given anchor location in the given book.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func openHelpAnchor(_ anchor: NSHelpManager.AnchorName, inBook book: NSHelpManager.BookName?)
+```
+
+```objc
+- (void) openHelpAnchor:(NSHelpAnchorName) anchor inBook:(NSHelpBookName) book;
 ```
 
 #### Discussion
@@ -32,10 +37,11 @@ This method is a wrapper for `AHRegisterHelpBook` (which is called only once to 
 
 ## See Also
 
-- [func find(String, inBook: NSHelpManager.BookName?)](nshelpmanager/find(_:inbook:).md)
+### Displaying Help
+- [func find(String, inBook: NSHelpManager.BookName?)](./find%28_,inbook%29.md)
   Performs a search for the specified string in the specified book.
-- [NSHelpManager.AnchorName](nshelpmanager/anchorname.md)
-- [NSHelpManager.BookName](nshelpmanager/bookname.md)
+- [NSHelpManager.AnchorName](./anchorname.md)
+- [NSHelpManager.BookName](./bookname.md)
 
 
 ---

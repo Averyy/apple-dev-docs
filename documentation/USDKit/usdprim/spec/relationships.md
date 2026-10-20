@@ -1,7 +1,8 @@
 # relationships
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All relationship specs on this prim.
 

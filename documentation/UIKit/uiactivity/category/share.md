@@ -1,7 +1,8 @@
 # UIActivity.Category.share
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Activities whose primary purpose is to share the selected item, like sending an image by email.
 
@@ -17,9 +18,14 @@ Activities whose primary purpose is to share the selected item, like sending an 
 case share
 ```
 
+```c
+UIActivityCategoryShare
+```
+
 ## See Also
 
-- [UIActivity.Category.action](uiactivity/category/action.md)
+### Constants
+- [UIActivity.Category.action](./action.md)
   Activities whose primary purpose is to take an action on the selected item, like copying an image or saving it to the camera roll.
 
 

@@ -1,7 +1,8 @@
 # cmCS1CustTag
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Private data for a custom CMM.
 

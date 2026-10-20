@@ -1,7 +1,8 @@
 # setValidationPredicates(_:withValidationWarnings:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the validation predicates and warnings of the receiver.
 
@@ -10,7 +11,7 @@ Sets the validation predicates and warnings of the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Sets the validation predicates and warnings of the receiver.
 
 ```swift
 func setValidationPredicates(_ validationPredicates: [NSPredicate]?, withValidationWarnings validationWarnings: [String]?)
+```
+
+```objc
+- (void) setValidationPredicates:(NSArray<NSPredicate *> *) validationPredicates withValidationWarnings:(NSArray<NSString *> *) validationWarnings;
 ```
 
 #### Discussion
@@ -37,9 +42,10 @@ This method raises an exception if the receiver’s model has been used by an ob
 
 ## See Also
 
-- [var validationPredicates: [NSPredicate]](nspropertydescription/validationpredicates.md)
+### Supporting Validation
+- [var validationPredicates: [NSPredicate]](./validationpredicates.md)
   The validation predicates of the receiver.
-- [var validationWarnings: [Any]](nspropertydescription/validationwarnings.md)
+- [var validationWarnings: [Any]](./validationwarnings.md)
   The error strings associated with the receiver’s validation predicates.
 
 

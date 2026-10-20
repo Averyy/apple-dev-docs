@@ -1,7 +1,8 @@
 # numericCode(length:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a numeric PIN entry authorization method.
 
@@ -18,7 +19,7 @@ static func numericCode(length: MediaOutputDevice.AuthorizationMethod.CodeLength
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../creating-a-media-device-extension.md)
 
 #### Discussion
 

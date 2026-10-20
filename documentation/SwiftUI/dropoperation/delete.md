@@ -1,7 +1,8 @@
 # DropOperation.delete
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Delete the data. The item was dragged to Trash or to another destination that semantically represents deletion.
 

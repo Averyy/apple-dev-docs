@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the audio engine.
 
@@ -20,29 +21,34 @@ Starts the audio engine.
 func start() throws
 ```
 
+```objc
+- (BOOL) startAndReturnError:(NSError **) outError;
+```
+
 #### Discussion
 
-This method calls the [`prepare()`](avaudioengine/prepare().md) method if you don’t call it after invoking [`stop()`](avaudioengine/stop().md). It then starts the audio hardware through the [`AVAudioInputNode`](avaudioinputnode.md) and [`AVAudioOutputNode`](avaudiooutputnode.md) instances in the audio engine. This method throws an error when:
+This method calls the [`prepare()`](./prepare%28%29.md) method if you don’t call it after invoking [`stop()`](./stop%28%29.md). It then starts the audio hardware through the [`AVAudioInputNode`](../avaudioinputnode.md) and [`AVAudioOutputNode`](../avaudiooutputnode.md) instances in the audio engine. This method throws an error when:
 
 - There’s a problem in the structure of the graph, such as the input can’t route to an output or to a recording tap through converter nodes.
-- An [`AVAudioSession`](avaudiosession.md) error occurs.
+- An [`AVAudioSession`](../avaudiosession.md) error occurs.
 - The driver fails to start the hardware.
 
 ## See Also
 
-- [func prepare()](avaudioengine/prepare.md)
+### Playing audio
+- [func prepare()](./prepare%28%29.md)
   Prepares the audio engine for starting.
-- [var isRunning: Bool](avaudioengine/isrunning.md)
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value that indicates whether the audio engine is running.
-- [func pause()](avaudioengine/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses the audio engine.
-- [func stop()](avaudioengine/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the audio engine and releases any previously prepared resources.
-- [func reset()](avaudioengine/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets all audio nodes in the audio engine.
-- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
+- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](./withmusicsequence%28_%29.md)
   Provides scoped access to the AVAudioEngine’s MusicSequence
-- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
+- [var musicSequence: MusicSequence?](./musicsequence-1z47z.md)
 
 
 ---

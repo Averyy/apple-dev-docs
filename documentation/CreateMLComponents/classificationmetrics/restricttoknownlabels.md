@@ -1,7 +1,8 @@
 # restrictToKnownLabels
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether to restrict metrics to labels in the labels set.
 
@@ -22,11 +23,12 @@ var restrictToKnownLabels: Bool
 
 ## See Also
 
-- [var accuracy: Double](classificationmetrics/accuracy.md)
+### Getting the properties
+- [var accuracy: Double](./accuracy.md)
   The number of correctly classified examples out of the total number of examples.
-- [var exampleCount: Int](classificationmetrics/examplecount.md)
+- [var exampleCount: Int](./examplecount.md)
   The number of examples used to compute the metrics.
-- [var labels: Set<Label>](classificationmetrics/labels.md)
+- [var labels: Set<Label>](./labels.md)
   The set of labels.
 
 

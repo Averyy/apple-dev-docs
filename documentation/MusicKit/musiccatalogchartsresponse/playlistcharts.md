@@ -1,7 +1,8 @@
 # playlistCharts
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of charts that contain playlists.
 

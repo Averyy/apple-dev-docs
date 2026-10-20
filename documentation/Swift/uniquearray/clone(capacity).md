@@ -1,7 +1,8 @@
 # clone(capacity:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copy the contents of this array into a newly allocated unique array instance with the specified capacity.
 
@@ -22,7 +23,7 @@ func clone(capacity: Int) -> UniqueArray<Element>
 
 #### Discussion
 
-> **Note**: O(`count`)
+> **Complexity**: O(`count`)
 
 ## Parameters
 

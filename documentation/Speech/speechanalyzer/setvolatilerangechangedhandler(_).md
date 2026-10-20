@@ -1,7 +1,8 @@
 # setVolatileRangeChangedHandler(_:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A closure that the analyzer calls when the volatile range changes.
 
@@ -23,19 +24,22 @@ final func setVolatileRangeChangedHandler(_ handler: sending ((CMTimeRange, Bool
 
 You can use this handler to manage audio input resources and monitor progress.
 
-You can also use this handler to respond to result finalization, but the better tool for that job is the [`resultsFinalizationTime`](speechmoduleresult/resultsfinalizationtime.md) property of a module’s results. When the analyzer calls this handler, the application may not have consumed the result from the stream yet; this handler may be called with a new volatile range while there are still results prior to the new volatile range waiting to be consumed.
+You can also use this handler to respond to result finalization, but the better tool for that job is the [`resultsFinalizationTime`](../speechmoduleresult/resultsfinalizationtime.md) property of a module’s results. When the analyzer calls this handler, the application may not have consumed the result from the stream yet; this handler may be called with a new volatile range while there are still results prior to the new volatile range waiting to be consumed.
 
 This closure replaces any handler you specified when creating the analyzer.
 
 ## Parameters
 
-- `handler`: A closure called to report the analysis’ progress. The closure takes the following parameters: - **range**: The current volatile range.
-- **changedStart**: If `true`, the volatile range contains an updated start time. This indicates that prior results have been finalized.
-- **changedEnd**: If `true`, the volatile range contains an update end time. This indicates that analysis of that time has started.
+- `handler`: A closure called to report the analysis’ progress. The closure takes the following parameters:
+
+  - **range**: The current volatile range.
+  - **changedStart**: If `true`, the volatile range contains an updated start time. This indicates that prior results have been finalized.
+  - **changedEnd**: If `true`, the volatile range contains an update end time. This indicates that analysis of that time has started.
 
 ## See Also
 
-- [var volatileRange: CMTimeRange?](speechanalyzer/volatilerange.md)
+### Monitoring analysis
+- [var volatileRange: CMTimeRange?](./volatilerange.md)
   The range of results that can change.
 
 

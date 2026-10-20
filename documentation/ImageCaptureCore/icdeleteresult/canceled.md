@@ -1,7 +1,8 @@
 # canceled
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The deletion was canceled.
 
@@ -18,11 +19,16 @@ The deletion was canceled.
 static let canceled: ICDeleteResult
 ```
 
+```c
+extern ICDeleteResult const ICDeleteCanceled;
+```
+
 ## See Also
 
-- [static let failed: ICDeleteResult](icdeleteresult/failed.md)
+### Reading a Deletion Result
+- [static let failed: ICDeleteResult](./failed.md)
   The deletion failed.
-- [static let successful: ICDeleteResult](icdeleteresult/successful.md)
+- [static let successful: ICDeleteResult](./successful.md)
   The deletion succeeded.
 
 

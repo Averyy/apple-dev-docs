@@ -1,7 +1,8 @@
 # swizzle
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Channel swizzle to use when RealityKit reads or samples from the texture.
 

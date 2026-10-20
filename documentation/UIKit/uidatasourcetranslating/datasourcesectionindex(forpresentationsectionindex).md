@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Translates a section index in your presented layout to the equivalent section index in your data source object.
@@ -19,6 +20,10 @@ Translates a section index in your presented layout to the equivalent section in
 func dataSourceSectionIndex(forPresentationSectionIndex presentationSectionIndex: Int) -> Int
 ```
 
+```objc
+- (NSInteger) dataSourceSectionIndexForPresentationSectionIndex:(NSInteger) presentationSectionIndex;
+```
+
 #### Return Value
 
 The index path of the same section in the data source object, or `nil` if the section is no longer in the data source.
@@ -29,7 +34,8 @@ The index path of the same section in the data source object, or `nil` if the se
 
 ## See Also
 
-- [func presentationSectionIndex(forDataSourceSectionIndex: Int) -> Int](uidatasourcetranslating/presentationsectionindex(fordatasourcesectionindex:).md)
+### Managing section positions
+- [func presentationSectionIndex(forDataSourceSectionIndex: Int) -> Int](./presentationsectionindex%28fordatasourcesectionindex%29.md)
   Translates a section index in your data source object to the equivalent section index in your presented layout.
 
 

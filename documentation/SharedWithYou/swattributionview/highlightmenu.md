@@ -1,7 +1,8 @@
 # highlightMenu
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A menu with a list of system actions specific to this hightlight.
 
@@ -15,29 +16,50 @@ A menu with a list of system actions specific to this hightlight.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var highlightMenu: UIMenu { get }
+```
+
+*macOS*
+
 ```swift
 var highlightMenu: NSMenu { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, strong, readonly) UIMenu * highlightMenu;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, strong, readonly) NSMenu * highlightMenu;
+```
+
 #### Discussion
 
-Use this menu to augment an existing menu that the system attaches to the content represented by this [`SWAttributionView`](swattributionview.md). This menu allows the user to reply to or hide the highlight. Your app needs to add this `hightlightMenu` inline with, and at the end of, the menu elements it augments.
+Use this menu to augment an existing menu that the system attaches to the content represented by this [`SWAttributionView`](../swattributionview.md). This menu allows the user to reply to or hide the highlight. Your app needs to add this `hightlightMenu` inline with, and at the end of, the menu elements it augments.
 
 ## See Also
 
-- [var backgroundStyle: SWAttributionView.BackgroundStyle](swattributionview/backgroundstyle-swift.property.md)
+### Customizing highlights
+- [var backgroundStyle: SWAttributionView.BackgroundStyle](./backgroundstyle-swift.property.md)
   The background style of the child view that contains names and avatars.
-- [var displayContext: SWAttributionView.DisplayContext](swattributionview/displaycontext-swift.property.md)
+- [var displayContext: SWAttributionView.DisplayContext](./displaycontext-swift.property.md)
   The context for the content the system displays with this view.
-- [var highlight: SWHighlight?](swattributionview/highlight.md)
+- [var highlight: SWHighlight?](./highlight.md)
   The highlight you use to display this attribution.
-- [var horizontalAlignment: SWAttributionView.HorizontalAlignment](swattributionview/horizontalalignment-swift.property.md)
+- [var horizontalAlignment: SWAttributionView.HorizontalAlignment](./horizontalalignment-swift.property.md)
   The horizontal alignment of the view.
-- [var menuTitleForHideAction: String?](swattributionview/menutitleforhideaction.md)
+- [var menuTitleForHideAction: String?](./menutitleforhideaction.md)
   A localized string the system uses as a custom title for the hide menu item.
-- [var preferredMaxLayoutWidth: CGFloat](swattributionview/preferredmaxlayoutwidth.md)
+- [var preferredMaxLayoutWidth: CGFloat](./preferredmaxlayoutwidth.md)
   A width the system uses to constrain the view contents.
-- [var supplementalMenu: UIMenu?](swattributionview/supplementalmenu.md)
+- [var supplementalMenu: UIMenu?](./supplementalmenu.md)
   A supplemental menu to augment the attribution view’s existing menu.
 
 

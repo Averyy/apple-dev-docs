@@ -1,7 +1,8 @@
 # blendParameterDefinition
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The meta parameter definition that caps the blend range.
 
@@ -19,13 +20,18 @@ The meta parameter definition that caps the blend range.
 var blendParameterDefinition: PHASENumberMetaParameterDefinition? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) PHASENumberMetaParameterDefinition * blendParameterDefinition;
+```
+
 #### Discussion
 
-The framework sets the value of this property to the [`init(blendMetaParameterDefinition:)`](phaseblendnodedefinition/init(blendmetaparameterdefinition:).md) argument.
+The framework sets the value of this property to the [`init(blendMetaParameterDefinition:)`](./init%28blendmetaparameterdefinition%29.md) argument.
 
 ## See Also
 
-- [var spatialMixerDefinitionForDistance: PHASESpatialMixerDefinition?](phaseblendnodedefinition/spatialmixerdefinitionfordistance.md)
+### Accessing Blend Properties
+- [var spatialMixerDefinitionForDistance: PHASESpatialMixerDefinition?](./spatialmixerdefinitionfordistance.md)
   An object that combines spatial audio layers.
 
 

@@ -1,7 +1,8 @@
 # MTL4PipelineDataSetSerializerDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Groups together properties to create a pipeline data set serializer.
 
@@ -19,34 +20,39 @@ Groups together properties to create a pipeline data set serializer.
 class MTL4PipelineDataSetSerializerDescriptor
 ```
 
+```objc
+@interface MTL4PipelineDataSetSerializerDescriptor : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var configuration: MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerdescriptor/configuration.md)
+- [var configuration: MTL4PipelineDataSetSerializerConfiguration](./mtl4pipelinedatasetserializerdescriptor/configuration.md)
   Specifies the configuration of the serialization process.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTL4PipelineDataSetSerializer](mtl4pipelinedatasetserializer.md)
+### Pipeline harvesting
+- [protocol MTL4PipelineDataSetSerializer](./mtl4pipelinedatasetserializer.md)
   A fast-addition container for collecting data during pipeline state creation.
-- [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
+- [struct MTL4PipelineDataSetSerializerConfiguration](./mtl4pipelinedatasetserializerconfiguration.md)
   Configuration options for pipeline dataset serializer objects.
-- [class MTL4PipelineDescriptor](mtl4pipelinedescriptor.md)
+- [class MTL4PipelineDescriptor](./mtl4pipelinedescriptor.md)
   Base type for descriptors you use for building pipeline state objects.
-- [class MTL4PipelineOptions](mtl4pipelineoptions.md)
+- [class MTL4PipelineOptions](./mtl4pipelineoptions.md)
   Provides options controlling how to compile a pipeline state.
 
 

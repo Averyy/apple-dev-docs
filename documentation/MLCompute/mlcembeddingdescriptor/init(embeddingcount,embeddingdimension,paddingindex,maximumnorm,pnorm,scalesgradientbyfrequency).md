@@ -1,16 +1,19 @@
 # init(embeddingCount:embeddingDimension:paddingIndex:maximumNorm:pNorm:scalesGradientByFrequency:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an embedding descriptor with the size and dimension of embedding vectors, padding index, and norm and scaling options that you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -29,7 +32,8 @@ convenience init?(embeddingCount: Int, embeddingDimension: Int, paddingIndex: In
 
 ## See Also
 
-- [convenience init?(embeddingCount: Int, embeddingDimension: Int)](mlcembeddingdescriptor/init(embeddingcount:embeddingdimension:).md)
+### Creating Embedding Descriptors
+- [convenience init?(embeddingCount: Int, embeddingDimension: Int)](./init%28embeddingcount,embeddingdimension%29.md)
   Creates an embedding descriptor with the size of the dictionary and dimension of embedding vectors you specify.
 
 

@@ -1,7 +1,8 @@
 # estimateOutputFileLength(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts estimating the output file length of the export while considering the asset, preset, and time range configuration of the export session.
 
@@ -16,13 +17,23 @@ Starts estimating the output file length of the export while considering the ass
 ## Declaration
 
 ```swift
+func estimateOutputFileLength(completionHandler handler: @escaping @Sendable (Int64, (any Error)?) -> Void)
+```
+
+```swift
 var estimatedOutputFileLengthInBytes: Int64 { get async throws }
+```
+
+```objc
+- (void) estimateOutputFileLengthWithCompletionHandler:(void (^)(int64_t estimatedOutputFileLength, NSError *error)) handler;
 ```
 
 ## Parameters
 
-- `handler`: A callback the system invokes when it finishes its estimation. It passes the callback the following parameters: - **`estimatedOutputFileLength`**: The system’s estimation of the output file length.
-- **`error`**: An error object if the request fails; otherwise, `nil`.
+- `handler`: A callback the system invokes when it finishes its estimation. It passes the callback the following parameters:
+
+  - **`estimatedOutputFileLength`**: The system’s estimation of the output file length.
+  - **`error`**: An error object if the request fails; otherwise, `nil`.
 
 
 ---

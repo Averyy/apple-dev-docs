@@ -1,7 +1,8 @@
 # endTime
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional end time for this entry of the playback queue.
 

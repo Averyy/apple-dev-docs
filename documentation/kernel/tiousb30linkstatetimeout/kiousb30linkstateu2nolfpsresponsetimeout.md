@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateU2NoLFPSResponseTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The U2 no LFPS response timeout.
 
@@ -10,7 +11,7 @@ The U2 no LFPS response timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateU2NoLFPSResponseTimeout = 2
 ```
 

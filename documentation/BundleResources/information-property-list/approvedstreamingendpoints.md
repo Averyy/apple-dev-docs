@@ -1,16 +1,18 @@
 # ApprovedStreamingEndpoints
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A dictionary of streaming endpoints in visionOS to which Foveated Streaming clients may connect.
 
 **Availability**:
 - visionOS 26.4+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `ApprovedStreamingEndpoints`
+- **Type**: dictionary
 
 ## Properties
 

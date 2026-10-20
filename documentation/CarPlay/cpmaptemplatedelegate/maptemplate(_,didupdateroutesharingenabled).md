@@ -1,7 +1,8 @@
 # mapTemplate(_:didUpdateRouteSharingEnabled:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the route sharing enabled status has been updated by the built-in system. Route sharing enabled is set to true when any vehicle features are enabled that rely on a route provided by the built‑in navigation system to func‑ tion.
 
@@ -14,6 +15,10 @@ Called when the route sharing enabled status has been updated by the built-in sy
 
 ```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didUpdateRouteSharingEnabled enabled: Bool)
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didUpdateRouteSharingEnabled:(BOOL) enabled;
 ```
 
 

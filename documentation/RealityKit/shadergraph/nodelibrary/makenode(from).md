@@ -1,7 +1,8 @@
 # makeNode(from:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a node instance of the given definition.
 
@@ -19,11 +20,11 @@ final func makeNode(from definition: ShaderGraph.NodeDefinition) throws -> Shade
 
 #### Return Value
 
-A [`ShaderGraph.Node`](shadergraph/node.md) that can be added to a [`ShaderGraph`](shadergraph.md).
+A [`ShaderGraph.Node`](../node.md) that can be added to a [`ShaderGraph`](../../shadergraph.md).
 
 #### Discussion
 
-> **Note**: If the definition does not belong to this library.
+> **Throws**: If the definition does not belong to this library.
 
 
 ---

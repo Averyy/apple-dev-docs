@@ -1,7 +1,8 @@
 # FormatFlagIsNonMixable
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Set to indicate when a format is non-mixable.
 
@@ -10,7 +11,7 @@ Set to indicate when a format is non-mixable.
 
 ## Declaration
 
-```swift
+```c
 FormatFlagIsNonMixable
 ```
 
@@ -20,7 +21,8 @@ This flag is used  only when interacting with the HAL’s stream format informat
 
 ## See Also
 
-- [LinearPCMFormatFlagIsNonMixable](videodriverkit/iouservideoformatflags/linearpcmformatflagisnonmixable.md)
+### Mixability flags
+- [LinearPCMFormatFlagIsNonMixable](./linearpcmformatflagisnonmixable.md)
   Synonym for `FormatFlagIsNonMixable`.
 
 

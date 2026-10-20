@@ -1,7 +1,8 @@
 # autoplayLooped
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the audio should play in a loop when the node is added to the scene.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the audio should play in a loop when the 
 var autoplayLooped: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL autoplayLooped;
+```
+
 #### Discussion
 
-If the property value is [`true`](https://developer.apple.com/documentation/swift/true), then the audio starts playing as soon as the node is added to the scene, and repeats after it completes. If [`false`](https://developer.apple.com/documentation/swift/false), then the audio node’s content never plays automatically. It must be explicitly scheduled using the scene’s audio engine. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+If the property value is [`true`](../../Swift/true.md), then the audio starts playing as soon as the node is added to the scene, and repeats after it completes. If [`false`](../../Swift/false.md), then the audio node’s content never plays automatically. It must be explicitly scheduled using the scene’s audio engine. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var avAudioNode: AVAudioNode?](skaudionode/avaudionode.md)
+### Configuring Audio Nodes
+- [var avAudioNode: AVAudioNode?](./avaudionode.md)
   The audio node’s current audio asset.
-- [var isPositional: Bool](skaudionode/ispositional.md)
+- [var isPositional: Bool](./ispositional.md)
   A Boolean property that indicates whether the node’s audio is altered based on the position of the node.
 
 

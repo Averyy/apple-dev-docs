@@ -1,12 +1,13 @@
 # tabViewType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tab type to display the tabs.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,18 +15,23 @@ The tab type to display the tabs.
 var tabViewType: NSTabView.TabType { get set }
 ```
 
+```objc
+@property NSTabViewType tabViewType;
+```
+
 #### Discussion
 
-The supported values for this property are listed in [`NSTabView.TabType`](nstabview/tabtype.md). The default value of this property is [`NSTabView.TabType.topTabsBezelBorder`](nstabview/tabtype/toptabsbezelborder.md).
+The supported values for this property are listed in [`NSTabView.TabType`](./tabtype.md). The default value of this property is [`NSTabView.TabType.topTabsBezelBorder`](./tabtype/toptabsbezelborder.md).
 
 ## See Also
 
-- [NSTabView.TabType](nstabview/tabtype.md)
-  These constants specify the tab view’s type as used by the [`tabViewType`](nstabview/tabviewtype.md) property.
-- [var tabPosition: NSTabView.TabPosition](nstabview/tabposition-swift.property.md)
-- [NSTabView.TabPosition](nstabview/tabposition-swift.enum.md)
-- [var tabViewBorderType: NSTabView.TabViewBorderType](nstabview/tabviewbordertype-swift.property.md)
-- [NSTabView.TabViewBorderType](nstabview/tabviewbordertype-swift.enum.md)
+### Configuring the Tab Attributes
+- [NSTabView.TabType](./tabtype.md)
+  These constants specify the tab view’s type as used by the [`tabViewType`](./tabviewtype.md) property.
+- [var tabPosition: NSTabView.TabPosition](./tabposition-swift.property.md)
+- [NSTabView.TabPosition](./tabposition-swift.enum.md)
+- [var tabViewBorderType: NSTabView.TabViewBorderType](./tabviewbordertype-swift.property.md)
+- [NSTabView.TabViewBorderType](./tabviewbordertype-swift.enum.md)
 
 
 ---

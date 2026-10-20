@@ -1,7 +1,8 @@
 # AVEncoderAudioQualityForVBRKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 7.0+
@@ -18,11 +19,16 @@
 let AVEncoderAudioQualityForVBRKey: String
 ```
 
+```c
+extern NSString * const AVEncoderAudioQualityForVBRKey;
+```
+
 ## See Also
 
-- [let AVSampleRateConverterAudioQualityKey: String](avsamplerateconverteraudioqualitykey.md)
+### Sample rate conversion keys
+- [let AVSampleRateConverterAudioQualityKey: String](./avsamplerateconverteraudioqualitykey.md)
   An integer value that represents the audio quality for conversion.
-- [let AVSampleRateConverterAlgorithmKey: String](avsamplerateconverteralgorithmkey.md)
+- [let AVSampleRateConverterAlgorithmKey: String](./avsamplerateconverteralgorithmkey.md)
   A string value that represents the sample rate converter algorithm to use.
 
 

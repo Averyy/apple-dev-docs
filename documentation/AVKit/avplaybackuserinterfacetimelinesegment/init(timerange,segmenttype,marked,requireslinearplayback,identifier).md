@@ -1,7 +1,8 @@
 # init(timeRange:segmentType:marked:requiresLinearPlayback:identifier:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new timeline segment with the specified characteristics.
 
@@ -14,6 +15,10 @@ Initializes a new timeline segment with the specified characteristics.
 
 ```swift
 init(timeRange: CMTimeRange, segmentType: AVPlaybackUserInterfaceTimelineSegmentType, marked: Bool, requiresLinearPlayback: Bool, identifier: String?)
+```
+
+```objc
+- (instancetype) initWithTimeRange:(CMTimeRange) timeRange segmentType:(AVPlaybackUserInterfaceTimelineSegmentType) segmentType marked:(BOOL) marked requiresLinearPlayback:(BOOL) requiresLinearPlayback identifier:(NSString *) identifier;
 ```
 
 ## Parameters

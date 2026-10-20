@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetImageCreateRequest.Data.Relationships.GameCenterLeaderboardSetLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center leaderboard set image.
 
@@ -10,14 +11,14 @@ The request body you use to create a Game Center leaderboard set image.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetImageCreateRequest.Data.Relationships.GameCenterLeaderboardSetLocalization.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardSetLocalizations`
 
 
 ---

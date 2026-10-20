@@ -1,7 +1,8 @@
 # systemVersion
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system version in effect for the archive.
 
@@ -20,6 +21,10 @@ The system version in effect for the archive.
 var systemVersion: UInt32 { get }
 ```
 
+```objc
+@property (readonly) unsigned int systemVersion;
+```
+
 #### Discussion
 
 During encoding, the current version. During decoding, the version that was in effect when the data was encoded.
@@ -28,7 +33,8 @@ Subclasses that implement decoding must override this property to return the sys
 
 ## See Also
 
-- [func version(forClassName: String) -> Int](nscoder/version(forclassname:).md)
+### Getting Version Information
+- [func version(forClassName: String) -> Int](./version%28forclassname%29.md)
   This method is present for historical reasons and is not used with keyed archivers.
 
 

@@ -1,7 +1,8 @@
 # OSKextRetainKextWithLoadTag
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retain a loaded kext based on its load tag, and enable autounload for that kext.
 
@@ -10,11 +11,11 @@ Retain a loaded kext based on its load tag, and enable autounload for that kext.
 
 ## Declaration
 
-```swift
+```c
 OSReturn OSKextRetainKextWithLoadTag(OSKextLoadTag loadTag);
 ```
 
-#### Return_value
+#### Return Value
 
 `kOSReturnSuccess` if the kext was retained. `kOSKextReturnNotFound` if the kext was not found. `kOSKextReturnInvalidArgument` if `loadTag` is `kOSKextInvalidLoadTag`.
 
@@ -24,39 +25,40 @@ Retaining a kext prevents it from being unloaded, either explicitly or automatic
 
 Kexts that define subclasses of IOService have autounload enabled automatically. Other kexts can use the reference count to manage automatic unload without having to define and create Libkern C++ objects. For example, a filesystem kext can retain itself whenever a new mount is created, and release itself when a mount is removed. When the last mount is removed, the kext will be unloaded after a brief delay.
 
-A kext can get its own load tag using the [`OSKextGetCurrentLoadTag`](1508336-oskextgetcurrentloadtag.md).
+A kext can get its own load tag using the [`OSKextGetCurrentLoadTag`](./api-1508336-oskextgetcurrentloadtag.md).
 
 Kexts should not retain and release other kexts; linkage references are accounted for internally.
 
 ## Parameters
 
-- `loadTag`: The load tag of the kext to be retained. See [`OSKextGetCurrentLoadTag`](1508336-oskextgetcurrentloadtag.md).
+- `loadTag`: The load tag of the kext to be retained. See [`OSKextGetCurrentLoadTag`](./api-1508336-oskextgetcurrentloadtag.md).
 
 ## See Also
 
-- [kext_alloc](1577598-kext_alloc.md)
-- [kext_alloc_init](1577599-kext_alloc_init.md)
-- [kext_free](1577600-kext_free.md)
-- [kext_request](1588829-kext_request.md)
-- [kextd_ping](1520989-kextd_ping.md)
-- [OSKextCancelRequest](1508350-oskextcancelrequest.md)
+### kext
+- [kext_alloc](./api-1577598-kext_alloc.md)
+- [kext_alloc_init](./api-1577599-kext_alloc_init.md)
+- [kext_free](./api-1577600-kext_free.md)
+- [kext_request](./api-1588829-kext_request.md)
+- [kextd_ping](./api-1520989-kextd_ping.md)
+- [OSKextCancelRequest](./api-1508350-oskextcancelrequest.md)
   Cancels a pending user-space kext request without invoking the callback.
-- [OSKextGetCurrentIdentifier](1508305-oskextgetcurrentidentifier.md)
+- [OSKextGetCurrentIdentifier](./api-1508305-oskextgetcurrentidentifier.md)
   Returns the CFBundleIdentifier for the calling kext as a C string.
-- [OSKextGetCurrentLoadTag](1508336-oskextgetcurrentloadtag.md)
+- [OSKextGetCurrentLoadTag](./api-1508336-oskextgetcurrentloadtag.md)
   Returns the run-time load tag for the calling kext as an `OSKextLoadTag`.
-- [OSKextGetCurrentVersionString](1508326-oskextgetcurrentversionstring.md)
+- [OSKextGetCurrentVersionString](./api-1508326-oskextgetcurrentversionstring.md)
   Returns the CFBundleVersion for the calling kext as a C string.
-- [OSKextGrabPgoData](1508333-oskextgrabpgodata.md)
-- [OSKextLoadKextWithIdentifier](1508323-oskextloadkextwithidentifier.md)
+- [OSKextGrabPgoData](./api-1508333-oskextgrabpgodata.md)
+- [OSKextLoadKextWithIdentifier](./api-1508323-oskextloadkextwithidentifier.md)
   Request that a kext be loaded.
-- [OSKextReleaseKextWithLoadTag](1508339-oskextreleasekextwithloadtag.md)
+- [OSKextReleaseKextWithLoadTag](./api-1508339-oskextreleasekextwithloadtag.md)
   Release a loaded kext based on its load tag.
-- [OSKextRequestResource](1508294-oskextrequestresource.md)
+- [OSKextRequestResource](./api-1508294-oskextrequestresource.md)
   Requests data from a nonlocalized resource file in a kext bundle on disk.
-- [OSKextResetPgoCounters](1646298-oskextresetpgocounters.md)
-- [OSKextResetPgoCountersLock](1646299-oskextresetpgocounterslock.md)
-- [OSKextResetPgoCountersUnlock](1646297-oskextresetpgocountersunlock.md)
+- [OSKextResetPgoCounters](./api-1646298-oskextresetpgocounters.md)
+- [OSKextResetPgoCountersLock](./api-1646299-oskextresetpgocounterslock.md)
+- [OSKextResetPgoCountersUnlock](./api-1646297-oskextresetpgocountersunlock.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # endLine
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The line where the text ends in the Markdown source.
 
@@ -26,11 +27,12 @@ This property uses `1`-based counting.
 
 ## See Also
 
-- [let startLine: Int](attributedstring/markdownsourceposition/startline.md)
+### Inspecting Markdown Source Position Properties
+- [let startLine: Int](./startline.md)
   The line where the text begins in the Markdown source.
-- [let startColumn: Int](attributedstring/markdownsourceposition/startcolumn.md)
+- [let startColumn: Int](./startcolumn.md)
   The column where the text begins in the Markdown source.
-- [let endColumn: Int](attributedstring/markdownsourceposition/endcolumn.md)
+- [let endColumn: Int](./endcolumn.md)
   The column where the text ends in the Markdown source.
 
 

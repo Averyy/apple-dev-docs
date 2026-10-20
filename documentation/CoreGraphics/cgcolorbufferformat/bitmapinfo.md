@@ -1,16 +1,17 @@
 # bitmapInfo
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var bitmapInfo: CGBitmapInfo
 ```
 
+```c
+CGBitmapInfo bitmapInfo;
+```
+
 ## See Also
 
-- [var bitsPerComponent: Int](cgcolorbufferformat/bitspercomponent.md)
-- [var bitsPerPixel: Int](cgcolorbufferformat/bitsperpixel.md)
-- [var bytesPerRow: Int](cgcolorbufferformat/bytesperrow.md)
-- [var version: UInt32](cgcolorbufferformat/version.md)
+### Instance Properties
+- [var bitsPerComponent: Int](./bitspercomponent.md)
+- [var bitsPerPixel: Int](./bitsperpixel.md)
+- [var bytesPerRow: Int](./bytesperrow.md)
+- [var version: UInt32](./version.md)
 
 
 ---

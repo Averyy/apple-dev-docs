@@ -1,22 +1,27 @@
 # numberOfLoops
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times to play the designated portion of the music track.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var numberOfLoops: Int32
+```
+
+```c
+SInt32 numberOfLoops;
 ```
 
 #### Discussion

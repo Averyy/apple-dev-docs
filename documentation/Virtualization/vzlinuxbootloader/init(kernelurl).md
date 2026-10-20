@@ -1,7 +1,8 @@
 # init(kernelURL:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a boot loader that launches the Linux kernel at the specified URL.
 
@@ -12,6 +13,10 @@ Creates a boot loader that launches the Linux kernel at the specified URL.
 
 ```swift
 init(kernelURL: URL)
+```
+
+```objc
+- (instancetype) initWithKernelURL:(NSURL *) kernelURL;
 ```
 
 #### Return Value

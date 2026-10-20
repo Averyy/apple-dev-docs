@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this object is valid.
 
@@ -21,7 +22,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-An object’s validity is connected to a [`USDStage`](usdstage.md). An object becomes invalid when the lifetime of its stage ends.
+An object’s validity is connected to a [`USDStage`](../../usdstage.md). An object becomes invalid when the lifetime of its stage ends.
 
 An object will also expire if its stage no longer defines a value for the object. `isValid` is false if this object has expired.
 

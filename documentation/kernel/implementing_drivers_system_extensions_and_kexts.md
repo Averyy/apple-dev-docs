@@ -1,6 +1,7 @@
 # Implementing drivers, system extensions, and kexts
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: Article
 
 Create drivers and system extensions to communicate with hardware and provide low-level services, and only use kernel extensions for a few tasks. 
 
@@ -12,19 +13,19 @@ Create drivers, system extensions, and kernel extensions for specific low-level 
 - A system extension implements features that require kernel-level cooperation, such as custom security and network behaviors. 
 - A kernel extension (kext) supports any low-level services that cannot be implemented using a dext or system extension.
 
-![An illustration of the relationship between drivers, system extensions, kernel extensions, and the kernel. Kernel extensions run inside the kernel. Drivers and system extensions run in user space and communicate with the kernel for critical needs.](/images/rendered2x-1591225361.png)
+![An illustration of the relationship between drivers, system extensions, kernel extensions, and the kernel. Kernel extensions run inside the kernel. Drivers and system extensions run in user space and communicate with the kernel for critical needs.](https://developer.apple.com/tutorials/images/rendered2x-1591225361.png)
 
-Use the DriverKit SDK and [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to implement low-level services whenever possible. Drivers and system extensions run in user space, instead of inside the kernel’s process space. Running in user space improves system stability and makes it easier to develop, debug, and install your code. 
+Use the DriverKit SDK and [System Extensions](../SystemExtensions/SystemExtensions.md) framework to implement low-level services whenever possible. Drivers and system extensions run in user space, instead of inside the kernel’s process space. Running in user space improves system stability and makes it easier to develop, debug, and install your code. 
 
-##### 3616857
+##### Implement low-level services using system extensions
 
 The System Extensions framework supports a class of kernel-level features that previously required kexts. System extensions run in user space and interact with the kernel to perform specific tasks. For example, an endpoint-security system extension monitors system events for potential security threats.
 
 > ❗ **Important**: In macOS 11 and later, the kernel doesn’t load a kext if an equivalent System Extension solution exists. You may continue to use kexts in macOS 10.15 and earlier. 
 
-For more information about the types of system extensions you can create, and how to install them, see [`System Extensions`](https://developer.apple.com/documentation/systemextensions). 
+For more information about the types of system extensions you can create, and how to install them, see [System Extensions](../SystemExtensions/SystemExtensions.md). 
 
-##### 3616853
+##### Communicate with custom hardware using a DriverKit extension
 
 A dext contains the drivers you need to communicate with your company’s custom hardware. A driver provides a layer of services for accessing the hardware. For example, a driver might configure the device, or it might implement a specific interface for communicating with the device. Because dexts are system extensions, they run in user space and you ship them inside your app bundle. 
 
@@ -34,9 +35,9 @@ Apple provides drivers for all standards-based hardware protocols that Mac compu
 
 > ❗ **Important**: In macOS 11 and later, the kernel doesn’t load a kext if an equivalent DriverKit solution exists. You may continue to use kexts in macOS 10.15 and earlier. 
 
-For information about how to create and install custom drivers, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/driverkit/creating-a-driver-using-the-driverkit-sdk).
+For information about how to create and install custom drivers, see [Creating a Driver Using the DriverKit SDK](../DriverKit/creating-a-driver-using-the-driverkit-sdk.md).
 
-##### 3616855
+##### Support custom hardware without writing driver code
 
 Not all drivers require actual code. If your hardware communicates entirely using standards-based protocols, you can ship a driver that matches your hardware to one of the built-in system drivers. Shipping a codeless driver requires less effort, and lets you select which driver the system uses for your hardware. 
 
@@ -49,24 +50,25 @@ Create a codeless dext when the system provides DriverKit support for your hardw
 
 In the few cases where your driver requires a kernel extension, use a codeless kext to match your hardware to the existing system driver. Unlike a DriverKit extension, a codeless kext doesn’t have an executable file. Instead, its `Info.plist` file provides all the information that the system needs to match your hardware to a system driver.
 
-For information about how to create and install a dext, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/driverkit/creating-a-driver-using-the-driverkit-sdk).
+For information about how to create and install a dext, see [Creating a Driver Using the DriverKit SDK](../DriverKit/creating-a-driver-using-the-driverkit-sdk.md).
 
-##### 3616858
+##### Build kernel extensions with well-known restrictions
 
 Kexts run inside the kernel and must support the same architecture and restrictions as other kernel code. 
 
-- Kexts on Apple silicon must support the `arm64e` architecture. The `arm64e` architecture includes pointer authentication codes (PACs) to detect and guard against malicious or accidental modifications to pointers in memory. The compiler transparently adds and removes PACs to your code at compile time, but the addition of PACs may require you to adjust how you handle pointers in your kexts. For information about supporting PACs, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication).
-- Kexts run under Kernel Integrity Protection (KIP). After the system initializes the kernel and kexts, KIP locks down the kernel memory pages to prevent modifications to kernel and driver code. For more information about KIP, see [`Kernel Integrity Protection`](https://developer.apple.comhttps://support.apple.com/guide/security/kernel-integrity-protection-secb1caeb4bc/1/web/1).
+- Kexts on Apple silicon must support the `arm64e` architecture. The `arm64e` architecture includes pointer authentication codes (PACs) to detect and guard against malicious or accidental modifications to pointers in memory. The compiler transparently adds and removes PACs to your code at compile time, but the addition of PACs may require you to adjust how you handle pointers in your kexts. For information about supporting PACs, see [Preparing your app to work with pointer authentication](../Security/preparing-your-app-to-work-with-pointer-authentication.md).
+- Kexts run under Kernel Integrity Protection (KIP). After the system initializes the kernel and kexts, KIP locks down the kernel memory pages to prevent modifications to kernel and driver code. For more information about KIP, see [Kernel Integrity Protection](https://support.apple.com/guide/security/kernel-integrity-protection-secb1caeb4bc/1/web/1).
 
-##### 3616856
+##### Install kernel extensions as the final step in an installer package
 
 If your custom installer package includes kexts, install them as the final installation step. The system manages kexts differently in macOS 11 and later, requiring a reboot to finish the installation process. As part of the reboot process, users must also explicitly change the security settings of their computer to allow the kext installation. 
 
-For information about the kext installation process, see [`Installing a Custom Kernel Extension`](https://developer.apple.com/documentation/apple-silicon/installing-a-custom-kernel-extension).
+For information about the kext installation process, see [Installing a Custom Kernel Extension](../apple-silicon/installing-a-custom-kernel-extension.md).
 
 ## See Also
 
-- [Creating drivers for iPadOS](../driverkit/creating-drivers-for-ipados.md)
+### Essentials
+- [Creating drivers for iPadOS](../DriverKit/creating-drivers-for-ipados.md)
   Bring your drivers to iPadOS by using the platform’s DriverKit support.
 
 

@@ -1,7 +1,8 @@
 # PhysicsSimulationEvents.WillSimulate
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The event raised before the simulation advances to the current frame.
 
@@ -22,19 +23,19 @@ struct WillSimulate
 ## Topics
 
 ### Instance Properties
-- [let deltaTime: TimeInterval](physicssimulationevents/willsimulate/deltatime.md)
+- [let deltaTime: TimeInterval](./willsimulate/deltatime.md)
   The time between the last fixed update event and this one.
-- [let simulationEntity: Entity](physicssimulationevents/willsimulate/simulationentity.md)
+- [let simulationEntity: Entity](./willsimulate/simulationentity.md)
   The root simulation entity associated with the simulation that raised the event.
-- [let simulationRootEntity: Entity?](physicssimulationevents/willsimulate/simulationrootentity.md)
+- [let simulationRootEntity: Entity?](./willsimulate/simulationrootentity.md)
   The root simulation entity associated with the simulation that raised the event.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

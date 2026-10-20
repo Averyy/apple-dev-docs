@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The text drop delegate for interacting with a drop activity in the text view.
@@ -16,6 +17,10 @@ The text drop delegate for interacting with a drop activity in the text view.
 
 ```swift
 weak var textDropDelegate: (any UITextDropDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<UITextDropDelegate> textDropDelegate;
 ```
 
 

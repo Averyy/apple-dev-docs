@@ -1,7 +1,8 @@
 # receivesEventsInView(_:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A Boolean option that determines whether events are delivered exclusively through the GameController framework.
 

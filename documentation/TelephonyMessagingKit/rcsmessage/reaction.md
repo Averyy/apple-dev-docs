@@ -1,7 +1,8 @@
 # RCSMessage.Reaction
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a reaction to an RCS message.
 
@@ -17,28 +18,28 @@ struct Reaction
 ## Topics
 
 ### Initializers
-- [init(targetMessageID: RCSMessageID, operation: RCSMessage.Reaction.Operation)](rcsmessage/reaction/init(targetmessageid:operation:).md)
+- [init(targetMessageID: RCSMessageID, operation: RCSMessage.Reaction.Operation)](./reaction/init%28targetmessageid,operation%29.md)
   Creates a reaction instance with the message identifier and content.
-- [init(targetMessageID: RCSMessageID, operation: RCSMessage.Reaction.Operation, isEndToEndEncrypted: Bool)](rcsmessage/reaction/init(targetmessageid:operation:isendtoendencrypted:).md)
+- [init(targetMessageID: RCSMessageID, operation: RCSMessage.Reaction.Operation, isEndToEndEncrypted: Bool)](./reaction/init%28targetmessageid,operation,isendtoendencrypted%29.md)
   Creates a reaction instance with the message identifier and content.
 ### Instance Properties
-- [var isEndToEndEncrypted: Bool](rcsmessage/reaction/isendtoendencrypted.md)
+- [var isEndToEndEncrypted: Bool](./reaction/isendtoendencrypted.md)
   A Boolean value indicating whether this message is end-to-end encrypted.
-- [var operation: RCSMessage.Reaction.Operation](rcsmessage/reaction/operation-swift.property.md)
+- [var operation: RCSMessage.Reaction.Operation](./reaction/operation-swift.property.md)
   The operation to perform for the reaction.
-- [var targetMessageID: RCSMessageID](rcsmessage/reaction/targetmessageid.md)
+- [var targetMessageID: RCSMessageID](./reaction/targetmessageid.md)
   The target message ID for the reaction.
 ### Enumerations
-- [RCSMessage.Reaction.Operation](rcsmessage/reaction/operation-swift.enum.md)
+- [RCSMessage.Reaction.Operation](./reaction/operation-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

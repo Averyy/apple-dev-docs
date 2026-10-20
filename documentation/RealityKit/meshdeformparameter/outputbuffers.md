@@ -1,7 +1,8 @@
 # outputBuffers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specified output vertex data for the deformer function.
 
@@ -21,9 +22,10 @@ var outputBuffers: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<
 
 ## See Also
 
-- [var inputBuffers: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<InputBuffer>](meshdeformparameter/inputbuffers.md)
+### Accessing deformation buffers
+- [var inputBuffers: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<InputBuffer>](./inputbuffers.md)
   The specified input vertex data for the deformer function.
-- [MeshDeformParameter.VertexBuffers](meshdeformparameter/vertexbuffers.md)
+- [MeshDeformParameter.VertexBuffers](./vertexbuffers.md)
   The vertices requested by the developer when they defined their custom deformations. These will be passed into their custom deformation functions.
 
 

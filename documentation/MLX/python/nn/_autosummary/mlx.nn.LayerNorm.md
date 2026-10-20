@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.L
 
 # mlx.nn.LayerNorm
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.LayerNorm.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.LayerNorm
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.LayerNorm
-
 **class LayerNorm(*dims: int*, *eps: float = 1e-05*, *affine: bool = True*, *bias: bool = True*)**
 : Applies layer normalization [1] on the inputs.
 Computes
@@ -54,5 +27,3 @@ transformation. If set to False the transformation is not really affine
 just scaling. Default: `True`.
 
 Methods
-
-** Contents

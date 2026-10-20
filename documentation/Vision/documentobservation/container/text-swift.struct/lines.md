@@ -1,7 +1,8 @@
 # lines
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text grouped by line.
 
@@ -21,11 +22,12 @@ var lines: [RecognizedTextObservation] { get }
 
 ## See Also
 
-- [var detectedData: [DocumentObservation.Container.DataDetectorMatch]](documentobservation/container/text-swift.struct/detecteddata.md)
+### Accessing the text
+- [var detectedData: [DocumentObservation.Container.DataDetectorMatch]](./detecteddata.md)
   Detected content in the document matched to a specific type of data, such as emails, phone numbers, addresses, and so on.
-- [var transcript: String](documentobservation/container/text-swift.struct/transcript.md)
+- [var transcript: String](./transcript.md)
   The complete text as a string.
-- [var words: [RecognizedTextObservation]?](documentobservation/container/text-swift.struct/words.md)
+- [var words: [RecognizedTextObservation]?](./words.md)
   An instance property that returns individual words in a text container.
 
 

@@ -1,7 +1,8 @@
 # sparse_insert_block_double(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Inserts a dense block of entries into a double-precision matrix.
 
@@ -20,9 +21,13 @@ Inserts a dense block of entries into a double-precision matrix.
 func sparse_insert_block_double(_ A: sparse_matrix_double!, _ val: UnsafePointer<Double>!, _ row_stride: sparse_dimension, _ col_stride: sparse_dimension, _ bi: sparse_index, _ bj: sparse_index) -> sparse_status
 ```
 
+```c
+sparse_status sparse_insert_block_double(sparse_matrix_double A, const double * restrictval, sparse_dimension row_stride, sparse_dimension col_stride, sparse_index bi, sparse_index bj);
+```
+
 #### Return Value
 
-On successful insertion, `A` has been updated with the value and [`SPARSE_SUCCESS`](sparse_success.md) is returned. If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned and `A` is unchanged.
+On successful insertion, `A` has been updated with the value and [`SPARSE_SUCCESS`](./sparse_success.md) is returned. If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `A` is unchanged.
 
 #### Discussion
 
@@ -34,7 +39,7 @@ Note that matrix properties cannot be modified after value insertion begins.This
 
 ## Parameters
 
-- `A`: The sparse matrix, *A*,_ _which must have been created with [`sparse_matrix_block_create_double(_:_:_:_:)`](sparse_matrix_block_create_double(_:_:_:_:).md) or [`sparse_matrix_variable_block_create_double(_:_:_:_:)`](sparse_matrix_variable_block_create_double(_:_:_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
+- `A`: The sparse matrix, *A*,_ _which must have been created with [`sparse_matrix_block_create_double(_:_:_:_:)`](./sparse_matrix_block_create_double%28_,_,_,_%29.md) or [`sparse_matrix_variable_block_create_double(_:_:_:_:)`](./sparse_matrix_variable_block_create_double%28_,_,_,_%29.md). [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
 - `val`: Pointer to block to be inserted at block index location `A[bi,bj]`. The block is of dimension `k * l` where `k` and `l` are set for `bi,bj` at object creation time. The strides between elements for rows and columns are provided in `row_stride` and `col_stride`.
 - `row_stride`: The row stride in number of elements to move from one row to the next for the block `val`.
 - `col_stride`: The column stride in number of elements to move from one column to the next for the block `val`.
@@ -43,18 +48,19 @@ Note that matrix properties cannot be modified after value insertion begins.This
 
 ## See Also
 
-- [func sparse_matrix_block_create_double(sparse_dimension, sparse_dimension, sparse_dimension, sparse_dimension) -> sparse_matrix_double!](sparse_matrix_block_create_double(_:_:_:_:).md)
+### Matrix creation and population
+- [func sparse_matrix_block_create_double(sparse_dimension, sparse_dimension, sparse_dimension, sparse_dimension) -> sparse_matrix_double!](./sparse_matrix_block_create_double%28_,_,_,_%29.md)
   Returns a double-precision sparse matrix object that is stored in block-entry format with a fixed block size.
-- [func sparse_matrix_block_create_float(sparse_dimension, sparse_dimension, sparse_dimension, sparse_dimension) -> sparse_matrix_float!](sparse_matrix_block_create_float(_:_:_:_:).md)
+- [func sparse_matrix_block_create_float(sparse_dimension, sparse_dimension, sparse_dimension, sparse_dimension) -> sparse_matrix_float!](./sparse_matrix_block_create_float%28_,_,_,_%29.md)
   Returns a single-precision sparse matrix object that is stored in block-entry format with a fixed block size.
-- [func sparse_matrix_variable_block_create_double(sparse_dimension, sparse_dimension, UnsafePointer<sparse_dimension>!, UnsafePointer<sparse_dimension>!) -> sparse_matrix_double!](sparse_matrix_variable_block_create_double(_:_:_:_:).md)
+- [func sparse_matrix_variable_block_create_double(sparse_dimension, sparse_dimension, UnsafePointer<sparse_dimension>!, UnsafePointer<sparse_dimension>!) -> sparse_matrix_double!](./sparse_matrix_variable_block_create_double%28_,_,_,_%29.md)
   Returns a double-precision sparse matrix object that is stored in block-entry format with a variable block size.
-- [func sparse_matrix_variable_block_create_float(sparse_dimension, sparse_dimension, UnsafePointer<sparse_dimension>!, UnsafePointer<sparse_dimension>!) -> sparse_matrix_float!](sparse_matrix_variable_block_create_float(_:_:_:_:).md)
+- [func sparse_matrix_variable_block_create_float(sparse_dimension, sparse_dimension, UnsafePointer<sparse_dimension>!, UnsafePointer<sparse_dimension>!) -> sparse_matrix_float!](./sparse_matrix_variable_block_create_float%28_,_,_,_%29.md)
   Returns a single-precision sparse matrix object that is stored in block-entry format with a variable block size.
-- [func sparse_insert_block_float(sparse_matrix_float!, UnsafePointer<Float>!, sparse_dimension, sparse_dimension, sparse_index, sparse_index) -> sparse_status](sparse_insert_block_float(_:_:_:_:_:_:).md)
+- [func sparse_insert_block_float(sparse_matrix_float!, UnsafePointer<Float>!, sparse_dimension, sparse_dimension, sparse_index, sparse_index) -> sparse_status](./sparse_insert_block_float%28_,_,_,_,_,_%29.md)
   Inserts a dense block of entries into a single-precision matrix.
-- [func sparse_matrix_block_create_double_complex(sparse_dimension, sparse_dimension, sparse_dimension, sparse_dimension) -> sparse_matrix_double_complex!](sparse_matrix_block_create_double_complex(_:_:_:_:).md)
-- [func sparse_matrix_block_create_float_complex(sparse_dimension, sparse_dimension, sparse_dimension, sparse_dimension) -> sparse_matrix_float_complex!](sparse_matrix_block_create_float_complex(_:_:_:_:).md)
+- [func sparse_matrix_block_create_double_complex(sparse_dimension, sparse_dimension, sparse_dimension, sparse_dimension) -> sparse_matrix_double_complex!](./sparse_matrix_block_create_double_complex%28_,_,_,_%29.md)
+- [func sparse_matrix_block_create_float_complex(sparse_dimension, sparse_dimension, sparse_dimension, sparse_dimension) -> sparse_matrix_float_complex!](./sparse_matrix_block_create_float_complex%28_,_,_,_%29.md)
 
 
 ---

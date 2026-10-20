@@ -1,14 +1,15 @@
 # filterInterruptEventSource
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 static OSPtr<IOFilterInterruptEventSource> filterInterruptEventSource(OSObject *owner, IOInterruptEventSource::Action action, Filter filter, IOService *provider, int intIndex);
 ```
 

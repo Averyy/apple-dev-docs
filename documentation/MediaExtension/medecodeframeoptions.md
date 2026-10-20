@@ -1,7 +1,8 @@
 # MEDecodeFrameOptions
 
 **Framework**: MediaExtension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that guides the video decoder operation on a per-frame basis.
 
@@ -14,39 +15,44 @@ An object that guides the video decoder operation on a per-frame basis.
 class MEDecodeFrameOptions
 ```
 
+```objc
+@interface MEDecodeFrameOptions : NSObject
+```
+
 ## Topics
 
 ### Inspecting frame decoding options
-- [var doNotOutputFrame: Bool](medecodeframeoptions/donotoutputframe.md)
+- [var doNotOutputFrame: Bool](./medecodeframeoptions/donotoutputframe.md)
   A Boolean value that hints to the decoder whether or not it should emit an image buffer for the frame.
-- [var realTimePlayback: Bool](medecodeframeoptions/realtimeplayback.md)
+- [var realTimePlayback: Bool](./medecodeframeoptions/realtimeplayback.md)
   A Boolean value that hints to the decoder to use a low-power mode that can’t decode faster than 1x real-time.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+### Video decoders
+- [Supporting custom media formats and decoders](./supporting-custom-media-formats-and-decoders.md)
   Extend the media formats the system can open by providing a format reader and a video decoder.
-- [protocol MEVideoDecoder](mevideodecoder.md)
+- [protocol MEVideoDecoder](./mevideodecoder.md)
   A protocol that defines the requirements for a video decoder.
-- [protocol MEVideoDecoderExtension](mevideodecoderextension.md)
+- [protocol MEVideoDecoderExtension](./mevideodecoderextension.md)
   A protocol that defines a factory to create new video decoders for a codec type that the extension implements.
-- [class MEVideoDecoderPixelBufferManager](mevideodecoderpixelbuffermanager.md)
+- [class MEVideoDecoderPixelBufferManager](./mevideodecoderpixelbuffermanager.md)
   Describes pixel buffer requirements and creates new pixel buffers.
-- [Video decoder property list dictionary](video-decoder-property-list-dictionary.md)
+- [Video decoder property list dictionary](./video-decoder-property-list-dictionary.md)
   Include a property list dictionary to describe a video decoder.
-- [Video decoder entitlement](video-decoder-entitlement.md)
+- [Video decoder entitlement](./video-decoder-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension video decoder.
 
 

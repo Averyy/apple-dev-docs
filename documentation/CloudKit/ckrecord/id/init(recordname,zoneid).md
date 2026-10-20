@@ -1,7 +1,8 @@
 # init(recordName:zoneID:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new record ID with the specified name and zone information.
 
@@ -11,7 +12,7 @@ Creates a new record ID with the specified name and zone information.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -23,7 +24,7 @@ convenience init(recordName: String = UUID().uuidString, zoneID: CKRecordZone.ID
 
 #### Discussion
 
-Use this method when you create or search for records in a zone other than the default zone. The value in the `zoneID` parameter must represent a zone that already exists in the database. If the record zone doesn’t exist, save the corresponding [`CKRecordZone`](ckrecordzone.md) object to the database before attempting to save any [`CKRecord`](ckrecord.md) objects in that zone.
+Use this method when you create or search for records in a zone other than the default zone. The value in the `zoneID` parameter must represent a zone that already exists in the database. If the record zone doesn’t exist, save the corresponding [`CKRecordZone`](../../ckrecordzone.md) object to the database before attempting to save any [`CKRecord`](../../ckrecord.md) objects in that zone.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ Use this method when you create or search for records in a zone other than the d
 
 ## See Also
 
-- [convenience init(recordName: String)](ckrecord/id/init(recordname:).md)
+### Creating a Record ID
+- [convenience init(recordName: String)](./init%28recordname%29.md)
   Creates a new record ID with the specified name in the default zone.
-- [let CKRecordNameZoneWideShare: String](ckrecordnamezonewideshare.md)
+- [let CKRecordNameZoneWideShare: String](../../ckrecordnamezonewideshare.md)
   The name of a share record that manages a shared record zone.
 
 

@@ -1,7 +1,8 @@
 # MenuActionDismissBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The set of menu dismissal behavior options.
 
@@ -22,26 +23,27 @@ struct MenuActionDismissBehavior
 
 #### Overview
 
-Configure the menu dismissal behavior for a view hierarchy using the [`menuActionDismissBehavior(_:)`](view/menuactiondismissbehavior(_:).md) view modifier.
+Configure the menu dismissal behavior for a view hierarchy using the [`menuActionDismissBehavior(_:)`](./view/menuactiondismissbehavior%28_%29.md) view modifier.
 
 ## Topics
 
 ### Getting dismiss behaviors
-- [static let automatic: MenuActionDismissBehavior](menuactiondismissbehavior/automatic.md)
+- [static let automatic: MenuActionDismissBehavior](./menuactiondismissbehavior/automatic.md)
   Use the a dismissal behavior that’s appropriate for the given context.
-- [static let disabled: MenuActionDismissBehavior](menuactiondismissbehavior/disabled.md)
+- [static let disabled: MenuActionDismissBehavior](./menuactiondismissbehavior/disabled.md)
   Never dismiss the presented menu after performing an action.
-- [static let enabled: MenuActionDismissBehavior](menuactiondismissbehavior/enabled.md)
+- [static let enabled: MenuActionDismissBehavior](./menuactiondismissbehavior/enabled.md)
   Always dismiss the presented menu after performing an action.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [func menuActionDismissBehavior(MenuActionDismissBehavior) -> some View](view/menuactiondismissbehavior(_:).md)
+### Configuring menu dismissal
+- [func menuActionDismissBehavior(MenuActionDismissBehavior) -> some View](./view/menuactiondismissbehavior%28_%29.md)
   Tells a menu whether to dismiss after performing an action.
 
 

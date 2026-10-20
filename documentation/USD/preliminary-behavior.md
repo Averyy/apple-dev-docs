@@ -6,9 +6,9 @@ A typed schema that combines one or more triggers with associated actions.
 
 #### Overview
 
-Because it inherits `Typed`, this schema declares a `Preliminary_Behavior` as a type of prim. For more information about typed schemas, see USD Specification > [`Typed`](https://developer.apple.comhttp://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-TypedSchema).
+Because it inherits `Typed`, this schema declares a `Preliminary_Behavior` as a type of prim. For more information about typed schemas, see USD Specification > [Typed](http://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-TypedSchema).
 
-To run actions based on a trigger, an asset defines a prim of this type and sets its [`triggers`](triggers.md) and [`actions`](actions.md).
+To run actions based on a trigger, an asset defines a prim of this type and sets its [triggers](./triggers.md) and [actions](./actions.md).
 
 ##### Declaration
 
@@ -18,7 +18,7 @@ class Preliminary_Behavior "Preliminary_Behavior" (
 )
 ```
 
-##### Trigger Animation for a Tapped Cube
+##### Trigger animation for a tapped cube
 
 The following example demonstrates a behavior that applies an `EmphasizeAction` to a cube to flip it. Because the cube defines a tap trigger, the runtime performs the flip when a user taps the cube in an AR experience.
 
@@ -54,11 +54,11 @@ def Cube "Cube" { }
 ## Topics
 
 ### Properties
-- [triggers](triggers.md)
+- [triggers](./triggers.md)
   A list of prims that execute a behavior’s actions.
-- [actions](actions.md)
+- [actions](./actions.md)
   A list of actions that make up the group.
-- [exclusive](exclusive.md)
+- [exclusive](./exclusive.md)
   A Boolean value that determines if a behavior executes exclusively.
 
 

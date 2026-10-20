@@ -1,7 +1,8 @@
 # spawnInheritsParentColor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not the spawnedEmitter’s color should be overriden by the mainEmitter’s color at the time of the spawning.
 

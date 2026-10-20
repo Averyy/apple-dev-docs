@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Set when the Block is called to report progress during a long-running match operation.
 
@@ -20,15 +21,20 @@ Set when the Block is called to report progress during a long-running match oper
 static var progress: NSRegularExpression.MatchingFlags { get }
 ```
 
+```c
+NSMatchingProgress
+```
+
 ## See Also
 
-- [static var completed: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/completed.md)
+### Constants
+- [static var completed: NSRegularExpression.MatchingFlags](./completed.md)
   Set when the Block is called after matching has completed.
-- [static var hitEnd: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/hitend.md)
+- [static var hitEnd: NSRegularExpression.MatchingFlags](./hitend.md)
   Set when the current match operation reached the end of the search range.
-- [static var requiredEnd: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/requiredend.md)
+- [static var requiredEnd: NSRegularExpression.MatchingFlags](./requiredend.md)
   Set when the current match depended on the location of the end of the search range.
-- [static var internalError: NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags/internalerror.md)
+- [static var internalError: NSRegularExpression.MatchingFlags](./internalerror.md)
   Set when matching failed due to an internal error.
 
 

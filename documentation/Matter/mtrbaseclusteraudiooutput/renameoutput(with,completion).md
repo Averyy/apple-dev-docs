@@ -1,7 +1,8 @@
 # renameOutput(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func renameOutput(with params: MTRAudioOutputClusterRenameOutputParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func renameOutput(with params: MTRAudioOutputClusterRenameOutputParams) async throws
+```
+
+```objc
+- (void) renameOutputWithParams:(MTRAudioOutputClusterRenameOutputParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

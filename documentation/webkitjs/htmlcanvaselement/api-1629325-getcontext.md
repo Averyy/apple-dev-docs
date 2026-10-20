@@ -1,7 +1,8 @@
 # getContext
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the drawing context for the canvas.
 
@@ -11,14 +12,14 @@ Returns the drawing context for the canvas.
 
 ## Declaration
 
-```swift
+```
 RenderingContext? getContext(
     DOMString contextId, 
     any ... arguments
 );
 ```
 
-#### Return_value
+#### Return Value
 
 The context object. Currently, always a `CanvasRenderingContext2D` object.
 

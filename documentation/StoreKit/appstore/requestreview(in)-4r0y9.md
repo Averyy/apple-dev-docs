@@ -1,7 +1,8 @@
 # requestReview(in:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells StoreKit to request an App Store rating or review from the user, if appropriate, using the specified view controller.
 
@@ -22,27 +23,28 @@ When you call this method in your shipping app and the system displays a rating 
 - If the person hasn’t rated or reviewed your app on this device, StoreKit displays the ratings and review request a maximum of three times within a 365-day period.
 - If the person has rated or reviewed your app on this device, StoreKit displays the ratings and review request if the app version is new, and if more than 365 days have passed since the person’s previous review.
 
-> **Note**:  Because this method may not present an alert, don’t call [`requestReview(in:)`](appstore/requestreview(in:)-4r0y9.md) in response to a button tap or other user action.
+> **Note**:  Because this method may not present an alert, don’t call [`requestReview(in:)`](./requestreview%28in%29-4r0y9.md) in response to a button tap or other user action.
 
-It’s up to your app to decide on the best timing for requesting reviews. For design guidance, see Human Interface Guidelines > [`Ratings and reviews`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews).
+It’s up to your app to decide on the best timing for requesting reviews. For design guidance, see Human Interface Guidelines > [Ratings and reviews](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews).
 
-##### Test Review Requests
+##### Test review requests
 
 When your app calls this method while it’s in development mode, StoreKit always displays the rating and review request view, so you can test the user interface and experience. However, this method has no effect in apps that you distribute for beta testing using TestFlight.
 
-##### Provide a Persistent Link to Your Product Page Optional
+##### Provide a persistent link to your product page (optional)
 
 Your customers can review your app at any time on the App Store. To make it easier for people to leave reviews, you may include a persistent link to your App Store product page in your app’s settings or configuration screens. Append the query parameter `action=write-review` to your product page URL to automatically open the App Store page where users can write a review.
 
 ## Parameters
 
-- `controller`: The [`NSViewController`](https://developer.apple.com/documentation/appkit/nsviewcontroller) that StoreKit uses to present the rating and review request interface.
+- `controller`: The [`NSViewController`](../../AppKit/nsviewcontroller.md) that StoreKit uses to present the rating and review request interface.
 
 ## See Also
 
-- [struct RequestReviewAction](requestreviewaction.md)
+### Requesting reviews
+- [struct RequestReviewAction](../requestreviewaction.md)
   An instance that tells StoreKit to request an App Store rating or review, if appropriate.
-- [static func requestReview(in: UIWindowScene)](appstore/requestreview(in:)-1q8qs.md)
+- [static func requestReview(in: UIWindowScene)](./requestreview%28in%29-1q8qs.md)
   Tells StoreKit to request an App Store rating or review from the user, if appropriate, using the specified scene.
 
 

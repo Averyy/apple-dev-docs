@@ -1,7 +1,8 @@
 # grouping
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Category representing a grouping, regions that has a well defined membership.
 

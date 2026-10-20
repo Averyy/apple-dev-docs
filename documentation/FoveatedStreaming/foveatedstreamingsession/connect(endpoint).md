@@ -1,7 +1,8 @@
 # connect(endpoint:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Establishes a streaming connection at the provided endpoint.
 
@@ -17,7 +18,7 @@ final func connect(endpoint: FoveatedStreamingSession.Endpoint = .systemDiscover
 
 #### Discussion
 
-> **Note**: A [`FoveatedStreamingSession.DisconnectReason`](foveatedstreamingsession/disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](https://developer.apple.com/documentation/swift/cancellationerror) if the task is cancelled.
+> **Throws**: A [`FoveatedStreamingSession.DisconnectReason`](./disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](../../Swift/cancellationerror.md) if the task is cancelled.
 
 You can establish a streaming connection in a variety of ways:
 
@@ -33,7 +34,7 @@ try await session.connect(endpoint: .local(ipAddress: "125.125.125.125", port: 5
 try await session.connect(endpoint: .remote(serverName: "My Remote Server", signalingHeaders: ["test-header": "my-test"])
 ```
 
-You can stop establishing a connection by cancelling the task or calling [`disconnect()`](foveatedstreamingsession/disconnect().md).
+You can stop establishing a connection by cancelling the task or calling [`disconnect()`](./disconnect%28%29.md).
 
 ## Parameters
 

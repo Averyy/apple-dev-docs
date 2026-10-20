@@ -1,7 +1,8 @@
 # SSLConnectionType
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The flags that indicate whether a context is to be used for streaming or datagram-based communication.
 
@@ -15,29 +16,33 @@ The flags that indicate whether a context is to be used for streaming or datagra
 enum SSLConnectionType
 ```
 
+```c
+enum SSLConnectionType : int;
+```
+
 #### Overview
 
-Use one of these flags with the [`SSLCreateContext(_:_:_:)`](sslcreatecontext(_:_:_:).md) function to indicate whether the context is intended for use in stream-based or datagram-based communication.
+Use one of these flags with the [`SSLCreateContext(_:_:_:)`](./sslcreatecontext%28_,_,_%29.md) function to indicate whether the context is intended for use in stream-based or datagram-based communication.
 
 ## Topics
 
 ### Constants
-- [SSLConnectionType.streamType](sslconnectiontype/streamtype.md)
+- [SSLConnectionType.streamType](./sslconnectiontype/streamtype.md)
   Stream-based communication (TCP).
-- [SSLConnectionType.datagramType](sslconnectiontype/datagramtype.md)
+- [SSLConnectionType.datagramType](./sslconnectiontype/datagramtype.md)
   Datagram-based communication (UDP).
 ### Initializers
-- [init?(rawValue: Int32)](sslconnectiontype/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./sslconnectiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NEFilterPacketProvider.Verdict.allow
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A verdict to allow a packet.
 
@@ -14,11 +15,16 @@ A verdict to allow a packet.
 case allow
 ```
 
+```c
+NEFilterPacketProviderVerdictAllow
+```
+
 ## See Also
 
-- [NEFilterPacketProvider.Verdict.drop](nefilterpacketprovider/verdict/drop.md)
+### Verdicts
+- [NEFilterPacketProvider.Verdict.drop](./drop.md)
   A verdict to drop a packet.
-- [NEFilterPacketProvider.Verdict.delay](nefilterpacketprovider/verdict/delay.md)
+- [NEFilterPacketProvider.Verdict.delay](./delay.md)
   A verdict to delay a packet until a future verdict.
 
 

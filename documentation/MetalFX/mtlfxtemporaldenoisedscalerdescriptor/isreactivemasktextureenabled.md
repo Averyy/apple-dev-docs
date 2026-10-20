@@ -1,7 +1,8 @@
 # isReactiveMaskTextureEnabled
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a scaler you create from this descriptor applies a reactive mask.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether a scaler you create from this descriptor 
 
 ```swift
 var isReactiveMaskTextureEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, getter=isReactiveMaskTextureEnabled) BOOL reactiveMaskTextureEnabled;
 ```
 
 

@@ -1,14 +1,15 @@
 # cbopcntv4
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 uint64_t cbopcntv4[5];
 ```
 

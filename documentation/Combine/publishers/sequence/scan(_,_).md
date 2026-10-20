@@ -1,7 +1,8 @@
 # scan(_:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,11 +19,14 @@
 func scan<T>(_ initialResult: T, _ nextPartialResult: @escaping (T, Publishers.Sequence<Elements, Failure>.Output) -> T) -> Publishers.Sequence<[T], Failure>
 ```
 
+Available when `Elements` conforms to `Sequence` and `Failure` conforms to `Error`.
+
 ## See Also
 
-- [func map<T>((Elements.Element) -> T) -> Publishers.Sequence<[T], Failure>](publishers/sequence/map(_:).md)
-- [func setFailureType<E>(to: E.Type) -> Publishers.Sequence<Elements, E>](publishers/sequence/setfailuretype(to:).md)
-- [func replaceNil<T>(with: T) -> Publishers.Sequence<[Publishers.Sequence<Elements, Failure>.Output], Failure>](publishers/sequence/replacenil(with:).md)
+### Mapping elements
+- [func map<T>((Elements.Element) -> T) -> Publishers.Sequence<[T], Failure>](./map%28_%29.md)
+- [func setFailureType<E>(to: E.Type) -> Publishers.Sequence<Elements, E>](./setfailuretype%28to%29.md)
+- [func replaceNil<T>(with: T) -> Publishers.Sequence<[Publishers.Sequence<Elements, Failure>.Output], Failure>](./replacenil%28with%29.md)
 
 
 ---

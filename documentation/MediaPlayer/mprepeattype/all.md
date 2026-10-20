@@ -1,7 +1,8 @@
 # MPRepeatType.all
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The current container or playlist is repeated indefinitely.
 
@@ -10,7 +11,7 @@ The current container or playlist is repeated indefinitely.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.12.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -20,11 +21,16 @@ The current container or playlist is repeated indefinitely.
 case all
 ```
 
+```c
+MPRepeatTypeAll
+```
+
 ## See Also
 
-- [MPRepeatType.off](mprepeattype/off.md)
+### Repeat types
+- [MPRepeatType.off](./off.md)
   Nothing is repeated during playback.
-- [MPRepeatType.one](mprepeattype/one.md)
+- [MPRepeatType.one](./one.md)
   A single item is repeated indefinitely.
 
 

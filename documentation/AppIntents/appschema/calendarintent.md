@@ -1,7 +1,8 @@
 # AppSchema.CalendarIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the calendar domain.
 
@@ -21,27 +22,28 @@ protocol CalendarIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var createEvent: some AppSchemaIntent](appschema/calendarintent/createevent.md)
+- [var createEvent: some AppSchemaIntent](./calendarintent/createevent.md)
   An intent schema that creates a calendar event.
-- [var deleteEvent: some AppSchemaIntent](appschema/calendarintent/deleteevent.md)
+- [var deleteEvent: some AppSchemaIntent](./calendarintent/deleteevent.md)
   An intent schema that deletes a calendar event.
-- [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
+- [var updateEvent: some AppSchemaIntent](./calendarintent/updateevent.md)
   An intent schema that updates a calendar event.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var createEvent: some AppSchemaIntent](appschema/calendarintent/createevent.md)
+### Actions
+- [var createEvent: some AppSchemaIntent](./calendarintent/createevent.md)
   An intent schema that creates a calendar event.
-- [var deleteEvent: some AppSchemaIntent](appschema/calendarintent/deleteevent.md)
+- [var deleteEvent: some AppSchemaIntent](./calendarintent/deleteevent.md)
   An intent schema that deletes a calendar event.
-- [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
+- [var updateEvent: some AppSchemaIntent](./calendarintent/updateevent.md)
   An intent schema that updates a calendar event.
 
 

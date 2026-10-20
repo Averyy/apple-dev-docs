@@ -1,7 +1,8 @@
 # Search for Apps
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Search the App Store for apps matching the supplied criteria and return app details.
 
@@ -26,7 +27,7 @@ Search for apps by name, filtered to a specific App Store country or region.
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/search/apps?query=AwayFinder&storeFronts=US&limit=20&offset=0
 ```
 
@@ -69,7 +70,7 @@ Return all apps owned by the caller’s organization, optionally filtered to a s
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/search/apps?returnOwnedApps=true&storeFronts=US&limit=50
 ```
 
@@ -104,7 +105,7 @@ Retrieve all apps for a specific content provider by CPID.
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/search/apps?cpids=987654&limit=20
 ```
 
@@ -139,7 +140,7 @@ Search across multiple App Store countries or regions. Repeat the `storeFronts` 
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/search/apps?query=AwayFinder&storeFronts=US&storeFronts=GB&storeFronts=CA&limit=20
 ```
 
@@ -174,13 +175,40 @@ GET https://api.ads.apple.com/v1/search/apps?query=AwayFinder&storeFronts=US&sto
 
 ## Parameters
 
+### Query Parameters
+
+- `query` (string): Free-text search matched against app name and developer name. Must contain at least one alphanumeric character and a minimum of 3 characters (2 for CJK languages).
+- `returnOwnedApps` (boolean): Flag that returns apps owned by the caller’s organization when set to `true`. Can be combined with `query` and `cpids`, or used on its own. Defaults to `false`.
+
+  **Default**: `false`
+- `cpids` (string): Comma-separated list of iTunes content provider identifiers. Scopes the search to apps owned by those providers.
+- `storeFronts` ([string]): One or more App Store country or region codes (ISO 3166-1 alpha-2). Repeat the parameter for multiple values. All values must be enabled App Store countries or regions, or the call returns `INVALID_COUNTRY_CODE`.
+- `offset` (int32): Pagination offset for results. Defaults to `0`.
+
+  **Default**: `0`
+- `limit` (int32): Maximum number of results to return. Defaults to `20`, capped at the service-side maximum (`MAXLIMIT`).
+
+  **Default**: `20`
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`AppsSearchResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Get App Details by Adam ID](get-app-details-by-adam-id.md)
+- [Get App Details by Adam ID](./get-app-details-by-adam-id.md)
   Retrieve application details for a specific Adam ID.
-- [Query Supported App Languages](query-supported-app-languages.md)
+- [Query Supported App Languages](./query-supported-app-languages.md)
   Query countries and regions to discover the ad-supported languages available in each market.
 
 

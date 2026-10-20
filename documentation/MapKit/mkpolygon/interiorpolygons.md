@@ -1,7 +1,8 @@
 # interiorPolygons
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of polygons that nest inside the enclosing polygon.
 
@@ -18,6 +19,10 @@ The array of polygons that nest inside the enclosing polygon.
 
 ```swift
 var interiorPolygons: [MKPolygon]? { get }
+```
+
+```objc
+@property (atomic, readonly, nullable) NSArray<MKPolygon *> * interiorPolygons;
 ```
 
 #### Discussion

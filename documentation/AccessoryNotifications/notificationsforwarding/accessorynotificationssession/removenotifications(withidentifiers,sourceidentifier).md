@@ -1,7 +1,8 @@
 # removeNotifications(withIdentifiers:sourceIdentifier:)
 
 **Framework**: Accessory Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes notifications using primitive identifier components.
 
@@ -16,7 +17,7 @@ func removeNotifications(withIdentifiers identifiers: [String], sourceIdentifier
 
 #### Discussion
 
-This method provides an alternative way to remove notifications using string identifiers rather than [`AccessoryNotification.Identifier`](accessorynotification/identifier-swift.struct.md) instances.
+This method provides an alternative way to remove notifications using string identifiers rather than [`AccessoryNotification.Identifier`](../../accessorynotification/identifier-swift.struct.md) instances.
 
 ## Parameters
 
@@ -25,7 +26,8 @@ This method provides an alternative way to remove notifications using string ide
 
 ## See Also
 
-- [func removeNotifications(identifiers: [AccessoryNotification.Identifier]) async throws](notificationsforwarding/accessorynotificationssession/removenotifications(identifiers:).md)
+### Removing notifications
+- [func removeNotifications(identifiers: [AccessoryNotification.Identifier]) async throws](./removenotifications%28identifiers%29.md)
   Removes the identified notifications.
 
 

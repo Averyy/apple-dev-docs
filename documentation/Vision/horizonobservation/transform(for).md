@@ -1,7 +1,8 @@
 # transform(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an affine transform for the specified image width and height.
 
@@ -22,7 +23,8 @@ func transform(for imageSize: CGSize) -> CGAffineTransform
 
 ## See Also
 
-- [let transform: CGAffineTransform](horizonobservation/transform.md)
+### Getting the transform
+- [let transform: CGAffineTransform](./transform.md)
   The transform to apply to the detected horizon.
 
 

@@ -1,7 +1,8 @@
 # protocol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the protocol object the receiver uses.
 
@@ -15,9 +16,14 @@ Returns the protocol object the receiver uses.
 var `protocol`: Protocol { get }
 ```
 
+```objc
+@property (readonly) Protocol * protocol;
+```
+
 ## See Also
 
-- [var target: NSObject?](nsprotocolchecker/target.md)
+### Getting information
+- [var target: NSObject?](./target.md)
   Returns the target of the receiver.
 
 

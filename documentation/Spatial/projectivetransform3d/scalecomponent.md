@@ -1,7 +1,8 @@
 # scaleComponent
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale component of the projective transform.
 
@@ -11,7 +12,7 @@ The scale component of the projective transform.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ var scaleComponent: Size3D { get }
 
 ## See Also
 
-- [var inverse: ProjectiveTransform3D?](projectivetransform3d/inverse.md)
+### Inspecting a 3D projective transform’s properties
+- [var inverse: ProjectiveTransform3D?](./inverse.md)
   The projective transform’s inverse.
-- [var translation: Vector3D](projectivetransform3d/translation.md)
+- [var translation: Vector3D](./translation.md)
   The translation component of the projective transform.
-- [var matrix: simd_double4x4](projectivetransform3d/matrix.md)
+- [var matrix: simd_double4x4](./matrix.md)
   The projective transform’s underlying matrix.
 
 

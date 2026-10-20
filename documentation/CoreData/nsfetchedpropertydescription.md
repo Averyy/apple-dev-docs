@@ -1,7 +1,8 @@
 # NSFetchedPropertyDescription
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description object used to define which properties are fetched from Core Data.
 
@@ -10,7 +11,7 @@ A description object used to define which properties are fetched from Core Data.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,15 @@ A description object used to define which properties are fetched from Core Data.
 class NSFetchedPropertyDescription
 ```
 
+```objc
+@interface NSFetchedPropertyDescription : NSPropertyDescription
+```
+
 #### Overview
 
 An example might be a iTunes playlist, if expressed as a property of a containing object. Songs don’t belong to a particular playlist, especially in the case that they’re on a remote server. The playlist may remain even after the songs have been deleted, or the remote server has become inaccessible. Note, however, that unlike a playlist a fetched property is static—it does not dynamically update itself as objects in the destination entity change.
 
-The effect of a fetched property is similar to executing a fetch request yourself and placing the results in a transient attribute, although with the framework managing the details. In particular, a fetched property is not fetched until it is requested, and the results are then cached until the object is turned into a fault. You use [`refresh(_:mergeChanges:)`](nsmanagedobjectcontext/refresh(_:mergechanges:).md) (`NSManagedObjectContext`) to manually refresh the properties—this causes the fetch request associated with this property to be executed again when the object fault is next fired.
+The effect of a fetched property is similar to executing a fetch request yourself and placing the results in a transient attribute, although with the framework managing the details. In particular, a fetched property is not fetched until it is requested, and the results are then cached until the object is turned into a fault. You use [`refresh(_:mergeChanges:)`](./nsmanagedobjectcontext/refresh%28_,mergechanges%29.md) (`NSManagedObjectContext`) to manually refresh the properties—this causes the fetch request associated with this property to be executed again when the object fault is next fired.
 
 Unlike other relationships, which are all sets, fetched properties are represented by an ordered `NSArray` object just as if you executed the fetch request yourself. The fetch request associated with the property can have a sort ordering. The value for a fetched property of a managed object does not support `mutableArrayValueForKey:`.
 
@@ -39,38 +44,39 @@ Fetched Property descriptions are editable until they are used by an object grap
 ## Topics
 
 ### Getting and setting the fetch request
-- [var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](nsfetchedpropertydescription/fetchrequest.md)
+- [var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](./nsfetchedpropertydescription/fetchrequest.md)
   The fetch request of the receiver.
 
 ## Relationships
 
 ### Inherits From
-- [NSPropertyDescription](nspropertydescription.md)
+- [NSPropertyDescription](./nspropertydescription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var predicate: NSPredicate?](nsfetchrequest/predicate.md)
+### Specifying Fetch Constraints
+- [var predicate: NSPredicate?](./nsfetchrequest/predicate.md)
   The predicate of the fetch request.
-- [var fetchLimit: Int](nsfetchrequest/fetchlimit.md)
+- [var fetchLimit: Int](./nsfetchrequest/fetchlimit.md)
   The fetch limit of the fetch request.
-- [var fetchOffset: Int](nsfetchrequest/fetchoffset.md)
+- [var fetchOffset: Int](./nsfetchrequest/fetchoffset.md)
   The fetch offset of the fetch request.
-- [var fetchBatchSize: Int](nsfetchrequest/fetchbatchsize.md)
+- [var fetchBatchSize: Int](./nsfetchrequest/fetchbatchsize.md)
   The batch size of the objects specified in the fetch request.
-- [var affectedStores: [NSPersistentStore]?](nsfetchrequest/affectedstores.md)
+- [var affectedStores: [NSPersistentStore]?](./nsfetchrequest/affectedstores.md)
   An array of persistent stores specified for the fetch request.
-- [class NSFetchRequestExpression](nsfetchrequestexpression.md)
+- [class NSFetchRequestExpression](./nsfetchrequestexpression.md)
   An expression that evaluates the result of a fetch request on a managed object context.
-- [class NSExpressionDescription](nsexpressiondescription.md)
+- [class NSExpressionDescription](./nsexpressiondescription.md)
   An object that describes an expression to include with a fetch request.
 
 

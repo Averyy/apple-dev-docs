@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacement.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app asset library placement resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app asset library placement resource.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacement.Attributes
 ```
 

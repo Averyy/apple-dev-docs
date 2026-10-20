@@ -1,7 +1,8 @@
 # startReceive(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receive partial data from a connection.
 
@@ -19,6 +20,8 @@ Receive partial data from a connection.
 ```swift
 func startReceive(_ handler: ((Int, Int) async throws -> ApplicationProtocol.Message<Data>) async throws -> Void) async throws
 ```
+
+Available when `ApplicationProtocol` is `WebSocket`.
 
 #### Discussion
 

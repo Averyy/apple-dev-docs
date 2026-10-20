@@ -1,7 +1,8 @@
 # preferredWindowingControlStyle(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the system to determine the windowing control style for the provided scene. `automaticStyle` will be used if this method is not implemented.
 
@@ -16,6 +17,10 @@ Called by the system to determine the windowing control style for the provided s
 
 ```swift
 optional func preferredWindowingControlStyle(for windowScene: UIWindowScene) -> UIWindowScene.WindowingControlStyle
+```
+
+```objc
+- (UISceneWindowingControlStyle *) preferredWindowingControlStyleForScene:(UIWindowScene *) windowScene;
 ```
 
 

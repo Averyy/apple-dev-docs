@@ -1,7 +1,8 @@
 # urlSession(_:betterRouteDiscoveredFor:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a better route to the host has been detected for the stream.
 
@@ -18,6 +19,10 @@ Tells the delegate that a better route to the host has been detected for the str
 
 ```swift
 optional func urlSession(_ session: URLSession, betterRouteDiscoveredFor streamTask: URLSessionStreamTask)
+```
+
+```objc
+- (void) URLSession:(NSURLSession *) session betterRouteDiscoveredForStreamTask:(NSURLSessionStreamTask *) streamTask;
 ```
 
 #### Discussion

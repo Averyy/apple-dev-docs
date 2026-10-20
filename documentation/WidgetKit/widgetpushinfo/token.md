@@ -1,7 +1,8 @@
 # token
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique push token that may be used to deliver updates for widgets and widget relevances.
 
@@ -21,7 +22,7 @@ let token: Data
 
 #### Discussion
 
-This token is valid until told otherwise through the [`pushTokenDidChange(_:widgets:)`](widgetpushhandler/pushtokendidchange(_:widgets:).md) method on your push handler.
+This token is valid until told otherwise through the [`pushTokenDidChange(_:widgets:)`](../widgetpushhandler/pushtokendidchange%28_,widgets%29.md) method on your push handler.
 
 
 ---

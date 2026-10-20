@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an inverse kinematics rig definition for the provided skeleton.
 

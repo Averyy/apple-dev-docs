@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of data plane elements that correspond to one element in this auxiliary plane.
@@ -18,6 +19,10 @@ The number of data plane elements that correspond to one element in this auxilia
 
 ```swift
 var blockFactors: MTLTensorExtents { get }
+```
+
+```objc
+@property (readonly) MTLTensorExtents * blockFactors;
 ```
 
 

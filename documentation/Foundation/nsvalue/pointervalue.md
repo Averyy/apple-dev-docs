@@ -1,7 +1,8 @@
 # pointerValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the value as an untyped pointer.
 
@@ -20,17 +21,22 @@ Returns the value as an untyped pointer.
 var pointerValue: UnsafeMutableRawPointer? { get }
 ```
 
+```objc
+@property (readonly, nullable) void * pointerValue;
+```
+
 #### Return Value
 
 The value as a pointer to void. If the value object was not created to hold a pointer-sized data item, the result is undefined.
 
 ## See Also
 
-- [init(pointer: UnsafeRawPointer?)](nsvalue/init(pointer:).md)
+### Working with Pointer and Object Values
+- [init(pointer: UnsafeRawPointer?)](./init%28pointer%29.md)
   Creates a value object containing the specified pointer.
-- [init(nonretainedObject: Any?)](nsvalue/init(nonretainedobject:).md)
+- [init(nonretainedObject: Any?)](./init%28nonretainedobject%29.md)
   Creates a value object containing the specified object.
-- [var nonretainedObjectValue: Any?](nsvalue/nonretainedobjectvalue.md)
+- [var nonretainedObjectValue: Any?](./nonretainedobjectvalue.md)
   The value as a non-retained pointer to an object.
 
 

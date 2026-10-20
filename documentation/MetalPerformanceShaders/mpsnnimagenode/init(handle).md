@@ -1,7 +1,8 @@
 # init(handle:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(handle: (any MPSHandle)?)
+```
+
+```objc
+- (instancetype) initWithHandle:(NSObject<MPSHandle> *) handle;
 ```
 
 

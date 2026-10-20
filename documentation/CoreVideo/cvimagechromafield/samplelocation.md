@@ -1,7 +1,8 @@
 # CVImageChromaField.SampleLocation
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates the locations of the chroma sample in the image buffer.
 
@@ -23,32 +24,32 @@ enum SampleLocation
 ## Topics
 
 ### Enumeration Cases
-- [CVImageChromaField.SampleLocation.bottom](cvimagechromafield/samplelocation/bottom.md)
+- [CVImageChromaField.SampleLocation.bottom](./samplelocation/bottom.md)
   Chroma sample is horizontally centered, but is co-sited with the bottom row of luma samples.
-- [CVImageChromaField.SampleLocation.bottomLeft](cvimagechromafield/samplelocation/bottomleft.md)
+- [CVImageChromaField.SampleLocation.bottomLeft](./samplelocation/bottomleft.md)
   Chroma sample is co-sited with the bottom-left luma sample.
-- [CVImageChromaField.SampleLocation.center](cvimagechromafield/samplelocation/center.md)
+- [CVImageChromaField.SampleLocation.center](./samplelocation/center.md)
   Chroma sample is fully centered.
-- [CVImageChromaField.SampleLocation.dv420](cvimagechromafield/samplelocation/dv420.md)
+- [CVImageChromaField.SampleLocation.dv420](./samplelocation/dv420.md)
   The Cr and Cb samples are alternatingly co-sited with the left luma samples of the same field.
-- [CVImageChromaField.SampleLocation.left](cvimagechromafield/samplelocation/left.md)
+- [CVImageChromaField.SampleLocation.left](./samplelocation/left.md)
   Chroma sample is horizontally co-sited with the left column of luma samples, but centered vertically.
-- [CVImageChromaField.SampleLocation.top](cvimagechromafield/samplelocation/top.md)
+- [CVImageChromaField.SampleLocation.top](./samplelocation/top.md)
   Chroma sample is horizontally centered, but is co-sited with the top row of luma samples.
-- [CVImageChromaField.SampleLocation.topLeft](cvimagechromafield/samplelocation/topleft.md)
+- [CVImageChromaField.SampleLocation.topLeft](./samplelocation/topleft.md)
   Chroma sample is co-sited with the top-left luma sample.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](../cvattachmentvaluerepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

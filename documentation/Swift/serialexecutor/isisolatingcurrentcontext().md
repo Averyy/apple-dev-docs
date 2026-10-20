@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Checks if the current execution context is isolated by this executor.
@@ -30,6 +31,12 @@ This method will be invoked *before* `checkIsolated` and may also be invoked whe
 Implementations should prefer to implement this method rather than `checkIsolated()` since it can often result in more tailored error messages. It is allowed, and useful for backwards compatibility with old runtimes which are not able to invoke `isIsolatingCurrentContext()` to implement `checkIsolated()`, even if an implementation is able to implement this method. Often times an implementation of `checkIsolated()`, would then invoke `isIsolatingCurrentContext()` and crash if the returned value was `false`.
 
 The default implementation returns `nil` is used to indicate that it is “unknown” if the current context is isolated by this serial executor. The runtime then *may* proceed to invoke `checkIsolated()` as a last-resort attempt to verify the isolation of the current context.
+
+## Default Implementations
+
+### SerialExecutor Implementations
+- [func isIsolatingCurrentContext() -> Bool?](./isisolatingcurrentcontext%28%29-65ht9.md)
+  Checks if the current execution context is isolated by this executor.
 
 
 ---

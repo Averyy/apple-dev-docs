@@ -1,14 +1,15 @@
 # kdebug_timestamp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t kdebug_timestamp(void);
 ```
 

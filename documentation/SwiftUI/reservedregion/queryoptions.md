@@ -1,7 +1,8 @@
 # ReservedRegion.QueryOptions
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for querying reserved regions.
 
@@ -23,35 +24,36 @@ struct QueryOptions
 
 #### Overview
 
-Pass query options to [`reservedRegions(kind:options:layoutDirectionBehavior:)`](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md) to change which regions you get.
+Pass query options to [`reservedRegions(kind:options:layoutDirectionBehavior:)`](../geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md) to change which regions you get.
 
 ## Topics
 
 ### Getting query options
-- [static var includeInactive: ReservedRegion.QueryOptions](reservedregion/queryoptions/includeinactive.md)
+- [static var includeInactive: ReservedRegion.QueryOptions](./queryoptions/includeinactive.md)
   An option that includes inactive reserved regions in the results.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+### Inspecting reserved regions
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](../geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md)
   Returns an array of reserved regions that match the selection options you specify.
-- [struct ReservedRegion](reservedregion.md)
+- [struct ReservedRegion](../reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
-- [ReservedRegion.Kind](reservedregion/kind-swift.struct.md)
+- [ReservedRegion.Kind](./kind-swift.struct.md)
   A kind of reserved region.
 
 

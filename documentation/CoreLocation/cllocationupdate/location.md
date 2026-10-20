@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s location, if available.
 
@@ -22,7 +23,8 @@ var location: CLLocation? { get }
 
 ## See Also
 
-- [var isStationary: Bool](cllocationupdate/isstationary.md)
+### Determining movement and location
+- [var isStationary: Bool](./isstationary.md)
   A Boolean value that indicates whether the user is stationary.
 
 

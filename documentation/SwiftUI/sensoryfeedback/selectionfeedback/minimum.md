@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a control’s minimum value has been reached, such as when a slider’s thumb is dragged to the slider’s minimum value.
 

@@ -1,23 +1,28 @@
 # init(contentsOfFile:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated array with the contents of the file specified by a given path.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 27.2
+- iPadOS 2.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.0+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 convenience init?(contentsOfFile path: String)
+```
+
+```objc
+- (NSArray<id> *) initWithContentsOfFile:(NSString *) path;
 ```
 
 #### Return Value
@@ -30,19 +35,21 @@ The array representation in the file identified by `aPath` must contain only pro
 
 ## Parameters
 
-- `path`: The path to a file containing a representation of an array produced by the [`write(toFile:atomically:)`](nsarray/write(tofile:atomically:).md) method.
+- `path`: The path to a file containing a representation of an array produced by the [`write(toFile:atomically:)`](./write%28tofile,atomically%29.md) method.
 
 ## See Also
 
-- [func write(toFile: String, atomically: Bool) -> Bool](nsarray/write(tofile:atomically:).md)
+### Related Documentation
+- [func write(toFile: String, atomically: Bool) -> Bool](./write%28tofile,atomically%29.md)
   Writes the contents of the array to a file at a given path.
-- [init()](nsarray/init.md)
+### Initializing an Array
+- [init()](./init%28%29.md)
   Initializes a newly allocated array.
-- [convenience init(array: [Any])](nsarray/init(array:)-o72h.md)
+- [convenience init(array: [Any])](./init%28array%29-o72h.md)
   Initializes a newly allocated array by placing in it the objects contained in a given array.
-- [convenience init(array: [Any], copyItems: Bool)](nsarray/init(array:copyitems:).md)
+- [convenience init(array: [Any], copyItems: Bool)](./init%28array,copyitems%29.md)
   Initializes a newly allocated array using `anArray` as the source of data objects for the array.
-- [init(objects: UnsafePointer<AnyObject>?, count: Int)](nsarray/init(objects:count:)-5odxv.md)
+- [init(objects: UnsafePointer<AnyObject>?, count: Int)](./init%28objects,count%29-5odxv.md)
   Initializes a newly allocated array to include a given number of objects from a given C array.
 
 

@@ -1,7 +1,8 @@
 # SRPhotoplethysmogramOpticalSample
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data sample from the photoplethysmogram (PPG) optical sensor.
 
@@ -16,15 +17,25 @@ A data sample from the photoplethysmogram (PPG) optical sensor.
 class SRPhotoplethysmogramOpticalSample
 ```
 
+```objc
+@interface SRPhotoplethysmogramOpticalSample : NSObject
+```
+
 #### Overview
 
-To get the PPG waveform, use the [`normalizedReflectance`](srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.md) property. Apple Watch uses an arrangement of emitters and photodiodes to measure the PPG waveform.
+To get the PPG waveform, use the [`normalizedReflectance`](./srphotoplethysmogramopticalsample/normalizedreflectance-9aidm.md) property. Apple Watch uses an arrangement of emitters and photodiodes to measure the PPG waveform.
 
-##### Interpret Second Generation Ppg Sensors Data
+##### Interpret second-generation PPG sensors data
 
 Second-generation optical heart sensors, in Apple Watch 4, 5, SE 3 and SE models, use green or infrared (IR) LED lights paired with light-sensitive photodiodes.
 
+![LED setup for Apple Watch 4, 5, SE 3, and SE models showing the location of the infrared LED lights.](https://developer.apple.com/tutorials/images/com.apple.sensorkit/ppg-sensros-2@2x.png)
+
 The active photodiode’s indices show which photodiode or combination of photodiodes the Apple Watch uses. The light-sensitive photodiodes have different arrangements between the Apple Watch models:
+
+![The photodiode layouts for the Apple Watch 4, 5, and SE models.](https://developer.apple.com/tutorials/images/com.apple.sensorkit/ppg-sensros-1b@2x.png)
+
+![The photodiode layout for the Apple Watch SE 3 Model](https://developer.apple.com/tutorials/images/com.apple.sensorkit/ppg-sensros-1a@2x.png)
 
 For the second-generation sensors, the mapping of the optical heart sensor (SE, Series 4 and 5) emitter is:
 
@@ -37,11 +48,11 @@ For the second-generation sensors, the mapping of the optical heart sensor (SE, 
 | 4 | 4, Green (525 nm) |
 | 5 | 5, Green (525 nm) |
 
-##### Interpret Third Generation Ppg Sensors
+##### Interpret third-generation PPG sensors
 
 Third-generation optical heart sensor, in Apple Watch Series 6 and later, plus Apple Watch Ultra and Ultra 2, use an additional red LED with a different arrangement of emitters and photodiodes than the second-generation PPG sensors. The active photodiodes indices show which photodiode or combination of photodiodes the Apple Watch uses.
 
-![Two diagrams of Apple Series 6 and later, plus Apple Watch Ultra and Ultra 2, that show the location of the emitters and photodiodes.](/images/com.apple.sensorkit/media-4403033@2x.png)
+![Two diagrams of Apple Series 6 and later, plus Apple Watch Ultra and Ultra 2, that show the location of the emitters and photodiodes.](https://developer.apple.com/tutorials/images/com.apple.sensorkit/media-4403033@2x.png)
 
 For the third-generation sensors, the mapping of the optical heart sensor (Series 6, 7, 8, 9, Ultra, and Ultra 2) emitter is:
 
@@ -64,64 +75,65 @@ For the third-generation sensors, the mapping of the optical heart sensor (Serie
 ## Topics
 
 ### Accessing optical data
-- [var emitter: Int](srphotoplethysmogramopticalsample/emitter.md)
+- [var emitter: Int](./srphotoplethysmogramopticalsample/emitter.md)
   The index of the LED in use during the sample.
-- [var activePhotodiodeIndexes: IndexSet](srphotoplethysmogramopticalsample/activephotodiodeindexes.md)
+- [var activePhotodiodeIndexes: IndexSet](./srphotoplethysmogramopticalsample/activephotodiodeindexes.md)
   The set of photodiodes in use during the sample.
-- [var signalIdentifier: Int](srphotoplethysmogramopticalsample/signalidentifier.md)
+- [var signalIdentifier: Int](./srphotoplethysmogramopticalsample/signalidentifier.md)
   The identifier for a signal that photodiodes and emitters produce.
-- [var nominalWavelength: Measurement<UnitLength>](srphotoplethysmogramopticalsample/nominalwavelength.md)
+- [var nominalWavelength: Measurement<UnitLength>](./srphotoplethysmogramopticalsample/nominalwavelength.md)
   The wavelength in nanometers that the emitter produces while operating at a specific temperature.
-- [var effectiveWavelength: Measurement<UnitLength>](srphotoplethysmogramopticalsample/effectivewavelength.md)
+- [var effectiveWavelength: Measurement<UnitLength>](./srphotoplethysmogramopticalsample/effectivewavelength.md)
   A temperature-compensated wavelength estimate in nanometers that the emitter produces.
-- [var samplingFrequency: Measurement<UnitFrequency>](srphotoplethysmogramopticalsample/samplingfrequency.md)
+- [var samplingFrequency: Measurement<UnitFrequency>](./srphotoplethysmogramopticalsample/samplingfrequency.md)
   The sampling frequency of the photoplethysmogram (PPG) data in hertz.
-- [var nanosecondsSinceStart: Int64](srphotoplethysmogramopticalsample/nanosecondssincestart.md)
+- [var nanosecondsSinceStart: Int64](./srphotoplethysmogramopticalsample/nanosecondssincestart.md)
   The time in nanoseconds since the system turns on the sensor.
-- [var conditions: [SRPhotoplethysmogramOpticalSample.Condition]](srphotoplethysmogramopticalsample/conditions.md)
+- [var conditions: [SRPhotoplethysmogramOpticalSample.Condition]](./srphotoplethysmogramopticalsample/conditions.md)
   The sensor context or conditions that may affect the sample.
-- [SRPhotoplethysmogramOpticalSample.Condition](srphotoplethysmogramopticalsample/condition.md)
+- [SRPhotoplethysmogramOpticalSample.Condition](./srphotoplethysmogramopticalsample/condition.md)
   The conditions that may occur when recording photoplethysmogram optical data.
-- [var noiseTerms: SRPhotoplethysmogramOpticalSample.NoiseTerms?](srphotoplethysmogramopticalsample/noiseterms-swift.property.md)
+- [var noiseTerms: SRPhotoplethysmogramOpticalSample.NoiseTerms?](./srphotoplethysmogramopticalsample/noiseterms-swift.property.md)
   The mathematical terms for computing the noise in this sample.
-- [SRPhotoplethysmogramOpticalSample.NoiseTerms](srphotoplethysmogramopticalsample/noiseterms-swift.struct.md)
+- [SRPhotoplethysmogramOpticalSample.NoiseTerms](./srphotoplethysmogramopticalsample/noiseterms-swift.struct.md)
   The mathematical terms that you use to compute the photoplethysmogram (PPG) noise.
-- [var normalizedReflectance: Double?](srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md)
+- [var normalizedReflectance: Double?](./srphotoplethysmogramopticalsample/normalizedreflectance-15f2k.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var startDate: Date](srphotoplethysmogramsample/startdate.md)
+### Accessing PPG data
+- [var startDate: Date](./srphotoplethysmogramsample/startdate.md)
   The start date of the photoplethysmogram (PPG) sensor data recording.
-- [var nanosecondsSinceStart: Int64](srphotoplethysmogramsample/nanosecondssincestart.md)
+- [var nanosecondsSinceStart: Int64](./srphotoplethysmogramsample/nanosecondssincestart.md)
   The time in nanoseconds since the start of the data recording.
-- [var usage: [SRPhotoplethysmogramSample.Usage]](srphotoplethysmogramsample/usage-swift.property.md)
+- [var usage: [SRPhotoplethysmogramSample.Usage]](./srphotoplethysmogramsample/usage-swift.property.md)
   The method that the person or system uses to take the reading.
-- [SRPhotoplethysmogramSample.Usage](srphotoplethysmogramsample/usage-swift.struct.md)
+- [SRPhotoplethysmogramSample.Usage](./srphotoplethysmogramsample/usage-swift.struct.md)
   The possible ways that a person or the system may take a photoplethysmogram (PPG) reading.
-- [var opticalSamples: [SRPhotoplethysmogramOpticalSample]](srphotoplethysmogramsample/opticalsamples.md)
+- [var opticalSamples: [SRPhotoplethysmogramOpticalSample]](./srphotoplethysmogramsample/opticalsamples.md)
   The samples recorded by the photoplethysmogram (PPG) optical sensor.
-- [var accelerometerSamples: [SRPhotoplethysmogramAccelerometerSample]](srphotoplethysmogramsample/accelerometersamples.md)
+- [var accelerometerSamples: [SRPhotoplethysmogramAccelerometerSample]](./srphotoplethysmogramsample/accelerometersamples.md)
   The samples recorded by the photoplethysmogram (PPG) accelerometer.
-- [class SRPhotoplethysmogramAccelerometerSample](srphotoplethysmogramaccelerometersample.md)
+- [class SRPhotoplethysmogramAccelerometerSample](./srphotoplethysmogramaccelerometersample.md)
   A data sample from the photoplethysmogram (PPG) accelerometer.
-- [var temperature: Measurement<UnitTemperature>?](srphotoplethysmogramsample/temperature.md)
+- [var temperature: Measurement<UnitTemperature>?](./srphotoplethysmogramsample/temperature.md)
   The samples recorded by the photoplethysmogram (PPG) thermometer.
 
 

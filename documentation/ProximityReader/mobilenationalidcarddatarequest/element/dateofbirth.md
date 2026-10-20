@@ -1,7 +1,8 @@
 # dateOfBirth
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The date of birth of the mobile national ID card holder.
 

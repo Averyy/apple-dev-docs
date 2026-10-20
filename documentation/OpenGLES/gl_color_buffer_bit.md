@@ -1,7 +1,8 @@
 # GL_COLOR_BUFFER_BIT
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_COLOR_BUFFER_BIT: Int32 { get }
+```
+
+```c
+#define GL_COLOR_BUFFER_BIT
 ```
 
 

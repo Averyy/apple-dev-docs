@@ -1,7 +1,8 @@
 # imageAsset
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image asset (if any) for the image.
 
@@ -9,7 +10,7 @@ The image asset (if any) for the image.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The image asset (if any) for the image.
 var imageAsset: UIImageAsset? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIImageAsset * imageAsset;
+```
+
 #### Discussion
 
-For images loaded from an image assets, this property contains an image asset object that you can use to fetch the other variants of the image. If you did not create the image object using an image asset, the value of this property is `nil`. This property is always `nil` for images created using a [`ciImage`](uiimage/ciimage.md) object.
+For images loaded from an image assets, this property contains an image asset object that you can use to fetch the other variants of the image. If you did not create the image object using an image asset, the value of this property is `nil`. This property is always `nil` for images created using a [`ciImage`](./ciimage.md) object.
 
 ## See Also
 
-- [var cgImage: CGImage?](uiimage/cgimage.md)
+### Getting the image data
+- [var cgImage: CGImage?](./cgimage.md)
   The underlying Quartz image data.
-- [var ciImage: CIImage?](uiimage/ciimage.md)
+- [var ciImage: CIImage?](./ciimage.md)
   The underlying Core Image data.
-- [var images: [UIImage]?](uiimage/images.md)
+- [var images: [UIImage]?](./images.md)
   The complete array of image objects that compose the animation of an animated object.
 
 

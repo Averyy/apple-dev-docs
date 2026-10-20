@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A menu that the button displays.
 
@@ -10,7 +11,7 @@ A menu that the button displays.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

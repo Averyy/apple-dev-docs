@@ -1,7 +1,8 @@
 # WinBackOfferCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a winback offer resource.
 
@@ -10,13 +11,13 @@ Attributes that describe a winback offer resource.
 
 ## Declaration
 
-```swift
+```
 object WinBackOfferCreateRequest.Data.Attributes
 ```
 
 ## Mentions
 
-- [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)
+- [Creating and configuring win-back offers](../../creating-and-configuring-win-back-offers.md)
 
 ## Properties
 
@@ -29,14 +30,19 @@ object WinBackOfferCreateRequest.Data.Attributes
 - `offerMode` (SubscriptionOfferMode) *(required)*: (Required) Describes how payment is configured for a win-back offer.
 - `periodCount` (integer) *(required)*: (Required) The number of subscription duration intervals.
 - `priority` (string) *(required)*: Select how this offer ranks among your other offers and in-app events. `HIGH` priority offers will appear above other offers and events on your appʼs product page.
+
+  **Allowed Values**: `HIGH`, `NORMAL`
 - `promotionIntent` (string): You can promote this offer on your App Store product page. Promoted offers can also display in search results and may be featured on the Today, Games, and Apps tabs. If your win-back offer is live and `promotionIntent` is set to `USE_AUTO_GENERATED_ASSETS` you need to delete the win-back offer in order to remove it from promotion.
+
+  **Allowed Values**: `NOT_PROMOTED`, `USE_AUTO_GENERATED_ASSETS`
 - `referenceName` (string) *(required)*: A string of alphanumeric characters, spaces, periods, and underscores, up to 65 characters. Use a unique value that you have not used for a promotional offer, offer code, or introductory offer, when you create your win-back offer.
 - `startDate` (date) *(required)*: First available date is today + 1 day.
 - `targetSubscriptionPlanType` (SubscriptionPlanType): The subscription plan type that this offer applies to.
 
 ## See Also
 
-- [object WinBackOfferCreateRequest.Data.Relationships](winbackoffercreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object WinBackOfferCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

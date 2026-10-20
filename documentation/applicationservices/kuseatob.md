@@ -1,7 +1,8 @@
 # kUseAtoB
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Use 'A2B*' tag from this profile or equivalent
 

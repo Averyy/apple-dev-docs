@@ -1,7 +1,8 @@
 # MPSCNNPoolingL2NormGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A gradient L2-norm pooling filter.
 
@@ -19,46 +20,51 @@ A gradient L2-norm pooling filter.
 class MPSCNNPoolingL2NormGradient
 ```
 
+```objc
+@interface MPSCNNPoolingL2NormGradient : MPSCNNPoolingGradient
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingl2normgradient/init(coder:device:).md)
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpoolingl2normgradient/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnnpoolingl2normgradient/init%28coder,device%29.md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](./mpscnnpoolingl2normgradient/init%28device,kernelwidth,kernelheight,strideinpixelsx,strideinpixelsy%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNPoolingGradient](mpscnnpoolinggradient.md)
+- [MPSCNNPoolingGradient](./mpscnnpoolinggradient.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNPoolingAverage](mpscnnpoolingaverage.md)
+### Pooling Layers
+- [class MPSCNNPoolingAverage](./mpscnnpoolingaverage.md)
   An average pooling filter.
-- [class MPSCNNPoolingAverageGradient](mpscnnpoolingaveragegradient.md)
+- [class MPSCNNPoolingAverageGradient](./mpscnnpoolingaveragegradient.md)
   A gradient average pooling filter.
-- [class MPSCNNPoolingL2Norm](mpscnnpoolingl2norm.md)
+- [class MPSCNNPoolingL2Norm](./mpscnnpoolingl2norm.md)
   An L2-norm pooling filter.
-- [class MPSCNNPoolingMax](mpscnnpoolingmax.md)
+- [class MPSCNNPoolingMax](./mpscnnpoolingmax.md)
   A max pooling filter.
-- [class MPSCNNDilatedPoolingMax](mpscnndilatedpoolingmax.md)
+- [class MPSCNNDilatedPoolingMax](./mpscnndilatedpoolingmax.md)
   A dilated max pooling filter.
-- [class MPSCNNPooling](mpscnnpooling.md)
+- [class MPSCNNPooling](./mpscnnpooling.md)
   A pooling kernel.
-- [class MPSCNNPoolingGradient](mpscnnpoolinggradient.md)
+- [class MPSCNNPoolingGradient](./mpscnnpoolinggradient.md)
   A gradient pooling kernel.
-- [class MPSCNNDilatedPoolingMaxGradient](mpscnndilatedpoolingmaxgradient.md)
+- [class MPSCNNDilatedPoolingMaxGradient](./mpscnndilatedpoolingmaxgradient.md)
   A gradient dilated max pooling filter.
-- [class MPSCNNPoolingMaxGradient](mpscnnpoolingmaxgradient.md)
+- [class MPSCNNPoolingMaxGradient](./mpscnnpoolingmaxgradient.md)
   A gradient max pooling filter.
 
 

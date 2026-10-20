@@ -1,7 +1,8 @@
 # valenceClassification
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var valenceClassification: HKStateOfMind.ValenceClassification { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) HKStateOfMindValenceClassification valenceClassification;
 ```
 
 

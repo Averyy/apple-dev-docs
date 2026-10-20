@@ -1,7 +1,8 @@
 # AVCaptionConversionValidator.Status.completed
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the system validation is complete.
 
@@ -17,13 +18,18 @@ A status that indicates the system validation is complete.
 case completed
 ```
 
+```c
+AVCaptionConversionValidatorStatusCompleted
+```
+
 ## See Also
 
-- [AVCaptionConversionValidator.Status.unknown](avcaptionconversionvalidator/status-swift.enum/unknown.md)
+### Validation statuses
+- [AVCaptionConversionValidator.Status.unknown](./unknown.md)
   A status that indicates the system didn’t initialize the validation operation.
-- [AVCaptionConversionValidator.Status.validating](avcaptionconversionvalidator/status-swift.enum/validating.md)
+- [AVCaptionConversionValidator.Status.validating](./validating.md)
   A status that indicates the system validation is in progress.
-- [AVCaptionConversionValidator.Status.stopped](avcaptionconversionvalidator/status-swift.enum/stopped.md)
+- [AVCaptionConversionValidator.Status.stopped](./stopped.md)
   A status that indicates the system validation stopped prior to completion.
 
 

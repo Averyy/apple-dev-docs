@@ -1,7 +1,8 @@
 # object(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value associated with a given key.
 
@@ -20,6 +21,10 @@ Returns the value associated with a given key.
 func object(forKey key: KeyType) -> ObjectType?
 ```
 
+```objc
+- (ObjectType) objectForKey:(KeyType) key;
+```
+
 #### Return Value
 
 The value associated with `key`, or `nil` if no value is associated with `key`.
@@ -30,11 +35,12 @@ The value associated with `key`, or `nil` if no value is associated with `key`.
 
 ## See Also
 
-- [func removeObject(forKey: KeyType)](nscache/removeobject(forkey:).md)
+### Related Documentation
+- [func removeObject(forKey: KeyType)](./removeobject%28forkey%29.md)
   Removes the value of the specified key in the cache.
-- [func setObject(ObjectType, forKey: KeyType, cost: Int)](nscache/setobject(_:forkey:cost:).md)
+- [func setObject(ObjectType, forKey: KeyType, cost: Int)](./setobject%28_,forkey,cost%29.md)
   Sets the value of the specified key in the cache, and associates the key-value pair with the specified cost.
-- [func setObject(ObjectType, forKey: KeyType)](nscache/setobject(_:forkey:).md)
+- [func setObject(ObjectType, forKey: KeyType)](./setobject%28_,forkey%29.md)
   Sets the value of the specified key in the cache.
 
 

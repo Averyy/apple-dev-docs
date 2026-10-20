@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data-value sequence from another sequence.
 
@@ -21,7 +22,7 @@ init?(from dataValue: MLDataValue)
 
 #### Discussion
 
-Use this initializer to create an [`MLDataValue.SequenceType`](mldatavalue/sequencetype.md) from another data-value sequence instance. You can confirm the data value’s underlying type by retrieving a non-`nil` value from [`sequenceValue`](mldatavalue/sequencevalue.md) or by inspecting the [`type`](mldatavalue/type.md) property.
+Use this initializer to create an [`MLDataValue.SequenceType`](../sequencetype.md) from another data-value sequence instance. You can confirm the data value’s underlying type by retrieving a non-`nil` value from [`sequenceValue`](../sequencevalue.md) or by inspecting the [`type`](../type.md) property.
 
 
 ---

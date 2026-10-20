@@ -1,7 +1,8 @@
 # VisionResult.trackObject(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a track object request.
 
@@ -22,7 +23,8 @@ case trackObject(TrackObjectRequest, DetectedObjectObservation?)
 
 ## See Also
 
-- [case trackRectangle(TrackRectangleRequest, RectangleObservation?)](visionresult/trackrectangle(_:_:).md)
+### Getting the object-tracking result
+- [case trackRectangle(TrackRectangleRequest, RectangleObservation?)](./trackrectangle%28_,_%29.md)
   A result from performing a track rectangle request.
 
 

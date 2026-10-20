@@ -1,7 +1,8 @@
 # Register a New Bundle ID
 
 **Framework**: Enterprise Program API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Register a new bundle ID for app development.
 
@@ -12,6 +13,20 @@ Register a new bundle ID for app development.
 ## Endpoint
 
 `POST https://api.enterprise.developer.apple.com/v1/bundleIds`
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `BundleIdCreateRequest`
+
+## Responses
+
+- `201` Created (`BundleIdResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
 
 
 ---

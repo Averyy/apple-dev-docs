@@ -1,10 +1,11 @@
 # kDeleteKeyForSpecifiedDeviceOnly
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kDeleteKeyForSpecifiedDeviceOnly: BluetoothHCIDeleteStoredLinkKeyFlags { get }
 ```
 
+```c
+kDeleteKeyForSpecifiedDeviceOnly
+```
+
 ## See Also
 
-- [var kDeleteAllStoredLinkKeys: BluetoothHCIDeleteStoredLinkKeyFlags](kdeleteallstoredlinkkeys.md)
+### Constants
+- [var kDeleteAllStoredLinkKeys: BluetoothHCIDeleteStoredLinkKeyFlags](./kdeleteallstoredlinkkeys.md)
 
 
 ---

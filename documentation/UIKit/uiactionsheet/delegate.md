@@ -1,14 +1,17 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s delegate or `nil` if it doesn’t have a delegate.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 8.3
+- iPadOS 2.0+ - Deprecated in 8.3
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIActionSheet`](../uiactionsheet.md).
 
 ## Declaration
 
@@ -16,17 +19,22 @@ The receiver’s delegate or `nil` if it doesn’t have a delegate.
 weak var delegate: (any UIActionSheetDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIActionSheetDelegate> delegate;
+```
+
 #### Discussion
 
-For a list of methods your delegate object can implement, see [`UIActionSheetDelegate`](uiactionsheetdelegate.md).
+For a list of methods your delegate object can implement, see [`UIActionSheetDelegate`](../uiactionsheetdelegate.md).
 
 ## See Also
 
-- [var title: String](uiactionsheet/title.md)
+### Setting properties
+- [var title: String](./title.md)
   The string that appears in the receiver’s title bar.
-- [var isVisible: Bool](uiactionsheet/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the receiver is displayed.
-- [var actionSheetStyle: UIActionSheetStyle](uiactionsheet/actionsheetstyle.md)
+- [var actionSheetStyle: UIActionSheetStyle](./actionsheetstyle.md)
   The receiver’s presentation style.
 
 

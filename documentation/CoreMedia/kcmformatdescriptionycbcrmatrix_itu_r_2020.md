@@ -1,7 +1,8 @@
 # kCMFormatDescriptionYCbCrMatrix_ITU_R_2020
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant describing the YCbCrMatrix ITU R 2020 format.
 
@@ -20,13 +21,18 @@ A constant describing the YCbCrMatrix ITU R 2020 format.
 let kCMFormatDescriptionYCbCrMatrix_ITU_R_2020: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionYCbCrMatrix_ITU_R_2020;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionYCbCrMatrix_ITU_R_601_4: CFString](kcmformatdescriptionycbcrmatrix_itu_r_601_4-swift.var.md)
+### Constants
+- [let kCMFormatDescriptionYCbCrMatrix_ITU_R_601_4: CFString](./kcmformatdescriptionycbcrmatrix_itu_r_601_4-swift.var.md)
   A constant describing the YCbCrMatrix ITU R 601 4 format.
-- [let kCMFormatDescriptionYCbCrMatrix_ITU_R_709_2: CFString](kcmformatdescriptionycbcrmatrix_itu_r_709_2-swift.var.md)
+- [let kCMFormatDescriptionYCbCrMatrix_ITU_R_709_2: CFString](./kcmformatdescriptionycbcrmatrix_itu_r_709_2-swift.var.md)
   A constant describing the YCbCrMatrix ITU R 709 2 format.
-- [let kCMFormatDescriptionYCbCrMatrix_SMPTE_240M_1995: CFString](kcmformatdescriptionycbcrmatrix_smpte_240m_1995-swift.var.md)
+- [let kCMFormatDescriptionYCbCrMatrix_SMPTE_240M_1995: CFString](./kcmformatdescriptionycbcrmatrix_smpte_240m_1995-swift.var.md)
   A constant describing the YCbCrMatrix SMPTE 240M 1995 format.
 
 

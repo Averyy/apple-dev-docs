@@ -1,7 +1,8 @@
 # compactDescription
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A concise description of the issue with no transient data, suitable for use in test run summaries and results aggregation across multiple test runs.
 
@@ -11,17 +12,22 @@ A concise description of the issue with no transient data, suitable for use in t
 var compactDescription: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * compactDescription;
+```
+
 ## See Also
 
-- [var type: XCTIssueReference.IssueType](xctissuereference/type.md)
+### Issue Details
+- [var type: XCTIssueReference.IssueType](./type.md)
   A value for classifying an issue that occurs during testing.
-- [var detailedDescription: String?](xctissuereference/detaileddescription.md)
+- [var detailedDescription: String?](./detaileddescription.md)
   A detailed description of the issue that may include transient data, such as numbers, object identifiers, and timestamps, to help diagnose the issue.
-- [var sourceCodeContext: XCTSourceCodeContext](xctissuereference/sourcecodecontext.md)
+- [var sourceCodeContext: XCTSourceCodeContext](./sourcecodecontext.md)
   The source code location for the issue, including the filename, line number, and call stack.
-- [var associatedError: (any Error)?](xctissuereference/associatederror.md)
+- [var associatedError: (any Error)?](./associatederror.md)
   An optional error to associate with a test issue.
-- [var attachments: [XCTAttachment]](xctissuereference/attachments.md)
+- [var attachments: [XCTAttachment]](./attachments.md)
   An array of data that augments a test issue, such as files, images, screenshots, data blobs, or ZIP files.
 
 

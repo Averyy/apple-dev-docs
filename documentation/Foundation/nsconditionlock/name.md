@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name associated with the receiver.
 
@@ -18,6 +19,10 @@ The name associated with the receiver.
 
 ```swift
 var name: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * name;
 ```
 
 #### Discussion

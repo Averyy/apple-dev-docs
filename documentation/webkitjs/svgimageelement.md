@@ -1,7 +1,8 @@
 # SVGImageElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGImageElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [height](svgimageelement/1629373-height.md)
-- [preserveAspectRatio](svgimageelement/1633661-preserveaspectratio.md)
-- [width](svgimageelement/1633883-width.md)
-- [x](svgimageelement/1632514-x.md)
-- [y](svgimageelement/1634461-y.md)
+- [height](./svgimageelement/api-1629373-height.md)
+- [preserveAspectRatio](./svgimageelement/api-1633661-preserveaspectratio.md)
+- [width](./svgimageelement/api-1633883-width.md)
+- [x](./svgimageelement/api-1632514-x.md)
+- [y](./svgimageelement/api-1634461-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

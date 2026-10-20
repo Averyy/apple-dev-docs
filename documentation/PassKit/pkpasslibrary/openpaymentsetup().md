@@ -1,7 +1,8 @@
 # openPaymentSetup()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the user interface to set up credit cards for Apple Pay.
 
@@ -16,6 +17,10 @@ Opens the user interface to set up credit cards for Apple Pay.
 
 ```swift
 func openPaymentSetup()
+```
+
+```objc
+- (void) openPaymentSetup;
 ```
 
 #### Discussion

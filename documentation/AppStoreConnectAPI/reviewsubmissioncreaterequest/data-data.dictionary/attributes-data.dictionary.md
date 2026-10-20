@@ -1,7 +1,8 @@
 # ReviewSubmissionCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a review submission create request resource.
 
@@ -10,13 +11,13 @@ Attributes that describe a review submission create request resource.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionCreateRequest.Data.Attributes
 ```
 
 #### Overview
 
-> **Note**: The attribute `platform` is no longer required when using [`Create a Review Submission`](post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a Review Submission`](patch-v1-reviewsubmissions-_id_.md).
+> **Note**: The attribute `platform` is no longer required when using [`Create a Review Submission`](../../post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a Review Submission`](../../patch-v1-reviewsubmissions-_id_.md).
 
 ## Properties
 
@@ -24,7 +25,8 @@ object ReviewSubmissionCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object ReviewSubmissionCreateRequest.Data.Relationships](reviewsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object ReviewSubmissionCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

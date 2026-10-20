@@ -1,7 +1,8 @@
 # PGDisplayNewFrameEventHandler
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block signature for a routine that handles frame updates from the guest.
 
@@ -15,9 +16,14 @@ The block signature for a routine that handles frame updates from the guest.
 typealias PGDisplayNewFrameEventHandler = () -> Void
 ```
 
+```c
+typedef void (^)(void) PGDisplayNewFrameEventHandler;
+```
+
 ## See Also
 
-- [var newFrameEventHandler: PGDisplayNewFrameEventHandler?](pgdisplaydescriptor/newframeeventhandler.md)
+### Handling Frame Events
+- [var newFrameEventHandler: PGDisplayNewFrameEventHandler?](./pgdisplaydescriptor/newframeeventhandler.md)
   A handler that the framework calls when the guest environment has a new frame to display.
 
 

@@ -1,7 +1,8 @@
 # isRestricted
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,11 +17,16 @@
 optional var isRestricted: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRestricted) BOOL restricted;
+```
+
 ## See Also
 
-- [var serviceName: NSFileProviderServiceName](nsfileproviderservicesource/servicename.md)
+### Accessing the Service
+- [var serviceName: NSFileProviderServiceName](./servicename.md)
   A name that uniquely identifies the service (reverse domain name notation is recommended).
-- [func makeListenerEndpoint() throws -> NSXPCListenerEndpoint](nsfileproviderservicesource/makelistenerendpoint.md)
+- [func makeListenerEndpoint() throws -> NSXPCListenerEndpoint](./makelistenerendpoint%28%29.md)
   Returns an endpoint object that lets the host app communicate with the File Provider extension.
 
 

@@ -1,7 +1,8 @@
 # MKMultiPolyline
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of multipolyline shapes, each consisting of one or more connected line segments.
 
@@ -20,49 +21,54 @@ A collection of multipolyline shapes, each consisting of one or more connected l
 class MKMultiPolyline
 ```
 
+```objc
+@interface MKMultiPolyline : MKShape
+```
+
 #### Overview
 
-Use a [`MKMultiPolyline`](mkmultipolyline.md) object when you have multiple distinct polyline shapes that you intend to render using the same style.
+Use a [`MKMultiPolyline`](./mkmultipolyline.md) object when you have multiple distinct polyline shapes that you intend to render using the same style.
 
 ## Topics
 
 ### Creating a multipolyline object
-- [init([MKPolyline])](mkmultipolyline/init(_:).md)
+- [init([MKPolyline])](./mkmultipolyline/init%28_%29.md)
   Creates a multipolyline object using the provided polylines.
 ### Accessing polyline objects
-- [var polylines: [MKPolyline]](mkmultipolyline/polylines.md)
+- [var polylines: [MKPolyline]](./mkmultipolyline/polylines.md)
   An array containing the polyline objects that make up the multipolyline object.
 ### Initializers
-- [init(polylines: [MKPolyline])](mkmultipolyline/init(polylines:).md)
+- [init(polylines: [MKPolyline])](./mkmultipolyline/init%28polylines%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MKShape](mkshape.md)
+- [MKShape](./mkshape.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [MKAnnotation](mkannotation.md)
-- [MKGeoJSONObject](mkgeojsonobject.md)
-- [MKOverlay](mkoverlay.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [MKAnnotation](./mkannotation.md)
+- [MKGeoJSONObject](./mkgeojsonobject.md)
+- [MKOverlay](./mkoverlay.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKPolyline](mkpolyline.md)
+### Multiple segment lines
+- [class MKPolyline](./mkpolyline.md)
   An open polygon overlay consisting of one or more connected line segments.
-- [class MKGeodesicPolyline](mkgeodesicpolyline.md)
+- [class MKGeodesicPolyline](./mkgeodesicpolyline.md)
   An open polygon overlay consisting of line segments that follow the contours of the Earth to create the shortest path between the specified points.
-- [class MKPolylineRenderer](mkpolylinerenderer.md)
+- [class MKPolylineRenderer](./mkpolylinerenderer.md)
   A visual representation of any polyline overlay object.
-- [class MKMultiPolylineRenderer](mkmultipolylinerenderer.md)
+- [class MKMultiPolylineRenderer](./mkmultipolylinerenderer.md)
   A visual representation of multiple polyline overlay objects.
-- [class MKGradientPolylineRenderer](mkgradientpolylinerenderer.md)
+- [class MKGradientPolylineRenderer](./mkgradientpolylinerenderer.md)
   A visual representation of any polyline overlay object with a gradient.
 
 

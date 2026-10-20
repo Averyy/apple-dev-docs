@@ -1,7 +1,8 @@
 # init(semantic:format:layoutIndex:offset:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attribute with the given semantic, format, layout index, and byte offset.
 

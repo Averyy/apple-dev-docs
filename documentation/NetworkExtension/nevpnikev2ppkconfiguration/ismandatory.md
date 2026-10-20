@@ -1,7 +1,8 @@
 # isMandatory
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether it’s mandatory for the VPN server to use this PPK.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether it’s mandatory for the VPN server to us
 var isMandatory: Bool { get set }
 ```
 
+```objc
+@property BOOL isMandatory;
+```
+
 #### Discussion
 
 The default value is `true`.
 
 ## See Also
 
-- [var identifier: String](nevpnikev2ppkconfiguration/identifier.md)
+### Accessing the configuration parameters
+- [var identifier: String](./identifier.md)
   The identifier for the PPK.
-- [var keychainReference: Data](nevpnikev2ppkconfiguration/keychainreference.md)
+- [var keychainReference: Data](./keychainreference.md)
   A persistent reference to the key in the keychain.
 
 

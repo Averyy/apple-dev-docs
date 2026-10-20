@@ -1,7 +1,8 @@
 # SecTrustResultType.invalid
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication of an invalid setting or result.
 
@@ -18,6 +19,10 @@ An indication of an invalid setting or result.
 
 ```swift
 case invalid
+```
+
+```c
+kSecTrustResultInvalid
 ```
 
 #### Discussion

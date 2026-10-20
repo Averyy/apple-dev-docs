@@ -1,7 +1,8 @@
 # isLeadSurrogate(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value indicating whether the specified code unit is a high-surrogate code unit.
 

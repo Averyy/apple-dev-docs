@@ -1,7 +1,8 @@
 # redEye
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key used to specify whether to return a red eye filter.
 
@@ -10,7 +11,7 @@ A key used to specify whether to return a red eye filter.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.8+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,19 +20,24 @@ A key used to specify whether to return a red eye filter.
 static let redEye: CIImageAutoAdjustmentOption
 ```
 
+```c
+extern CIImageAutoAdjustmentOption const kCIImageAutoAdjustRedEye;
+```
+
 #### Discussion
 
 The value associated with this key is a `CFBoolean` value. Supply `false` to indicate not to return a red eye filter. If you don’t specify this option, Core Image assumes its value is `true`.
 
 ## See Also
 
-- [static let crop: CIImageAutoAdjustmentOption](ciimageautoadjustmentoption/crop.md)
+### Type Properties
+- [static let crop: CIImageAutoAdjustmentOption](./crop.md)
   A key used to specify whether to return a filter that crops the image to focus on detected features.
-- [static let enhance: CIImageAutoAdjustmentOption](ciimageautoadjustmentoption/enhance.md)
+- [static let enhance: CIImageAutoAdjustmentOption](./enhance.md)
   A key used to specify whether to return enhancement filters.
-- [static let features: CIImageAutoAdjustmentOption](ciimageautoadjustmentoption/features.md)
+- [static let features: CIImageAutoAdjustmentOption](./features.md)
   A key used to specify an array of features that you want to apply enhancement and red eye filters to.
-- [static let level: CIImageAutoAdjustmentOption](ciimageautoadjustmentoption/level.md)
+- [static let level: CIImageAutoAdjustmentOption](./level.md)
   A key used to specify whether to return a filter that rotates the image to keep a level perspective.
 
 

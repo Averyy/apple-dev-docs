@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The color processing mode you set in this spatial scaler’s descriptor.
@@ -18,6 +19,10 @@ The color processing mode you set in this spatial scaler’s descriptor.
 
 ```swift
 var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLFXSpatialScalerColorProcessingMode colorProcessingMode;
 ```
 
 

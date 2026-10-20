@@ -1,7 +1,8 @@
 # useYBOrHigher
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays yottabytes in the formatter content.
 
@@ -20,25 +21,30 @@ Displays yottabytes in the formatter content.
 static var useYBOrHigher: ByteCountFormatter.Units { get }
 ```
 
+```c
+NSByteCountFormatterUseYBOrHigher
+```
+
 ## See Also
 
-- [static var useBytes: ByteCountFormatter.Units](bytecountformatter/units/usebytes.md)
+### Constants
+- [static var useBytes: ByteCountFormatter.Units](./usebytes.md)
   Displays bytes in the formatter content.
-- [static var useKB: ByteCountFormatter.Units](bytecountformatter/units/usekb.md)
+- [static var useKB: ByteCountFormatter.Units](./usekb.md)
   Displays kilobytes in the formatter content.
-- [static var useMB: ByteCountFormatter.Units](bytecountformatter/units/usemb.md)
+- [static var useMB: ByteCountFormatter.Units](./usemb.md)
   Displays megabytes in the formatter content.
-- [static var useGB: ByteCountFormatter.Units](bytecountformatter/units/usegb.md)
+- [static var useGB: ByteCountFormatter.Units](./usegb.md)
   Displays gigabytes in the formatter content.
-- [static var useTB: ByteCountFormatter.Units](bytecountformatter/units/usetb.md)
+- [static var useTB: ByteCountFormatter.Units](./usetb.md)
   Displays terabytes in the formatter content.
-- [static var usePB: ByteCountFormatter.Units](bytecountformatter/units/usepb.md)
+- [static var usePB: ByteCountFormatter.Units](./usepb.md)
   Displays petabyte in the formatter content.
-- [static var useEB: ByteCountFormatter.Units](bytecountformatter/units/useeb.md)
+- [static var useEB: ByteCountFormatter.Units](./useeb.md)
   Displays exabytes in the formatter content.
-- [static var useZB: ByteCountFormatter.Units](bytecountformatter/units/usezb.md)
+- [static var useZB: ByteCountFormatter.Units](./usezb.md)
   Displays zettabytes in the formatter content.
-- [static var useAll: ByteCountFormatter.Units](bytecountformatter/units/useall.md)
+- [static var useAll: ByteCountFormatter.Units](./useall.md)
   Can use any unit in the formatter content.
 
 

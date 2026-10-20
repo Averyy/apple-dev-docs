@@ -1,7 +1,8 @@
 # MusicSubscription.Error.permissionDenied
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the user doesn’t consent for your app to access their Apple Music data.
 

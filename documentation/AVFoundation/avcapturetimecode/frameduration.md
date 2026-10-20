@@ -1,7 +1,8 @@
 # frameDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Frame duration of the timecode. If unknown, the value is `kCMTimeInvalid`.
 
@@ -18,17 +19,22 @@ Frame duration of the timecode. If unknown, the value is `kCMTimeInvalid`.
 var frameDuration: CMTime
 ```
 
+```c
+CMTime frameDuration;
+```
+
 ## See Also
 
-- [var frames: UInt8](avcapturetimecode/frames.md)
+### Accessing timecode components
+- [var frames: UInt8](./frames.md)
   Frame component of the timecode, indicating the frame count within the second.
-- [var hours: UInt8](avcapturetimecode/hours.md)
+- [var hours: UInt8](./hours.md)
   Time component representing the current timecode in hours.
-- [var minutes: UInt8](avcapturetimecode/minutes.md)
+- [var minutes: UInt8](./minutes.md)
   Time component representing the current timecode in minutes.
-- [var seconds: UInt8](avcapturetimecode/seconds.md)
+- [var seconds: UInt8](./seconds.md)
   Time component representing the current timecode in seconds.
-- [var userBits: UInt32](avcapturetimecode/userbits.md)
+- [var userBits: UInt32](./userbits.md)
   A 32-bit field carrying SMPTE user bits, which are not strictly standardized. User bits are often used for additional metadata such as scene-take information, reel numbers, or dates, but their exact usage is application-dependent.
 
 

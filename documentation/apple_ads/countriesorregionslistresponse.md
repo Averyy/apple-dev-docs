@@ -1,16 +1,19 @@
 # CountriesOrRegionsListResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A container for product page responses.
 
 **Availability**:
-- Search Ads 4.0+
+- Search Ads 4.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object CountriesOrRegionsListResponse
 ```
 
@@ -20,27 +23,28 @@ object CountriesOrRegionsListResponse
 
 ## See Also
 
-- [object LocaleInfo](localeinfo.md)
+### Product Page Request and Response Objects
+- [object LocaleInfo](./localeinfo.md)
   The supported languages and language codes.
-- [object CountryOrRegion](countryorregion.md)
+- [object CountryOrRegion](./countryorregion.md)
   The supported locales of a product page.
-- [object MediaAppVideoAsset](mediaappvideoasset.md)
+- [object MediaAppVideoAsset](./mediaappvideoasset.md)
   The app preview or screenshot asset detail.
-- [object ProductPageLocaleDetail](productpagelocaledetail.md)
+- [object ProductPageLocaleDetail](./productpagelocaledetail.md)
   The product page locale metadata on App Store Connect.
-- [object ProductPageDetail](productpagedetail.md)
+- [object ProductPageDetail](./productpagedetail.md)
   The product page metadata.
-- [object ProductPageDetailWithAssets](productpagedetailwithassets.md)
+- [object ProductPageDetailWithAssets](./productpagedetailwithassets.md)
   The product page asset metadata.
-- [object ProductPageLocaleDetailListResponse](productpagelocaledetaillistresponse.md)
+- [object ProductPageLocaleDetailListResponse](./productpagelocaledetaillistresponse.md)
   A container for product page responses.
-- [object ProductPageDetailResponse](productpagedetailresponse.md)
+- [object ProductPageDetailResponse](./productpagedetailresponse.md)
   A container for product page responses.
-- [object ProductPageDetailWithAssetInfoResponse](productpagedetailwithassetinforesponse.md)
+- [object ProductPageDetailWithAssetInfoResponse](./productpagedetailwithassetinforesponse.md)
   A container for product page responses.
-- [object ProductPageDetailListResponse](productpagedetaillistresponse.md)
+- [object ProductPageDetailListResponse](./productpagedetaillistresponse.md)
   A container for product page responses.
-- [object ProductPageReasonCreate](productpagereasoncreate.md)
+- [object ProductPageReasonCreate](./productpagereasoncreate.md)
   The ad creative rejection reason based on a product page.
 
 

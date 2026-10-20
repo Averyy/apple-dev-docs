@@ -1,7 +1,8 @@
 # relatedCodings
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of related clinical codings for the medication.
 
@@ -17,6 +18,10 @@ The set of related clinical codings for the medication.
 
 ```swift
 var relatedCodings: Set<HKClinicalCoding> { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSSet<HKClinicalCoding *> * relatedCodings;
 ```
 
 #### Discussion

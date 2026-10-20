@@ -1,7 +1,8 @@
 # UInt8.SIMD8Storage
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Storage for a vector of eight integers.
 
@@ -24,24 +25,24 @@ struct SIMD8Storage
 ## Topics
 
 ### Initializers
-- [init()](uint8/simd8storage/init.md)
+- [init()](./simd8storage/init%28%29.md)
   Creates a vector with zero in all lanes.
 ### Instance Properties
-- [var scalarCount: Int](uint8/simd8storage/scalarcount.md)
+- [var scalarCount: Int](./simd8storage/scalarcount.md)
   The number of scalars, or elements, in the vector.
 ### Subscripts
-- [subscript(Int) -> UInt8](uint8/simd8storage/subscript(_:).md)
+- [subscript(Int) -> UInt8](./simd8storage/subscript%28_%29.md)
   Accesses the element at the specified index.
 ### Type Aliases
-- [UInt8.SIMD8Storage.Scalar](uint8/simd8storage/scalar.md)
+- [UInt8.SIMD8Storage.Scalar](./simd8storage/scalar.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [SIMDStorage](simdstorage.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [SIMDStorage](../simdstorage.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

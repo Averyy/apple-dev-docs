@@ -1,18 +1,19 @@
 # children
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string constant that serves as a dictionary key identifying an element’s children.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,31 +22,36 @@ A string constant that serves as a dictionary key identifying an element’s chi
 static let children: XCUIElement.AttributeName
 ```
 
+```c
+extern XCUIElementAttributeName const XCUIElementAttributeNameChildren;
+```
+
 ## See Also
 
-- [static let elementType: XCUIElement.AttributeName](xcuielement/attributename/elementtype.md)
+### Keys
+- [static let elementType: XCUIElement.AttributeName](./elementtype.md)
   A string constant that serves as a dictionary key identifying an element’s type.
-- [static let enabled: XCUIElement.AttributeName](xcuielement/attributename/enabled.md)
+- [static let enabled: XCUIElement.AttributeName](./enabled.md)
   A string constant that serves as a dictionary key identifying whether an element is enabled.
-- [static let frame: XCUIElement.AttributeName](xcuielement/attributename/frame.md)
+- [static let frame: XCUIElement.AttributeName](./frame.md)
   A string constant that serves as a dictionary key identifying an element’s frame.
-- [static let hasFocus: XCUIElement.AttributeName](xcuielement/attributename/hasfocus.md)
+- [static let hasFocus: XCUIElement.AttributeName](./hasfocus.md)
   A string constant that serves as a dictionary key identifying whether an element has focus.
-- [static let horizontalSizeClass: XCUIElement.AttributeName](xcuielement/attributename/horizontalsizeclass.md)
+- [static let horizontalSizeClass: XCUIElement.AttributeName](./horizontalsizeclass.md)
   A string constant that serves as a dictionary key identifying an element’s horizontal size class.
-- [static let identifier: XCUIElement.AttributeName](xcuielement/attributename/identifier.md)
+- [static let identifier: XCUIElement.AttributeName](./identifier.md)
   A string constant that serves as a dictionary key identifying an element’s identifier.
-- [static let label: XCUIElement.AttributeName](xcuielement/attributename/label.md)
+- [static let label: XCUIElement.AttributeName](./label.md)
   A string constant that serves as a dictionary key identifying an element’s label.
-- [static let placeholderValue: XCUIElement.AttributeName](xcuielement/attributename/placeholdervalue.md)
+- [static let placeholderValue: XCUIElement.AttributeName](./placeholdervalue.md)
   A string constant that serves as a dictionary key identifying an element’s placeholder value.
-- [static let selected: XCUIElement.AttributeName](xcuielement/attributename/selected.md)
+- [static let selected: XCUIElement.AttributeName](./selected.md)
   A string constant that serves as a dictionary key identifying whether an element is selected.
-- [static let title: XCUIElement.AttributeName](xcuielement/attributename/title.md)
+- [static let title: XCUIElement.AttributeName](./title.md)
   A string constant that serves as a dictionary key identifying an element’s title.
-- [static let value: XCUIElement.AttributeName](xcuielement/attributename/value.md)
+- [static let value: XCUIElement.AttributeName](./value.md)
   A string constant that serves as a dictionary key identifying an element’s value.
-- [static let verticalSizeClass: XCUIElement.AttributeName](xcuielement/attributename/verticalsizeclass.md)
+- [static let verticalSizeClass: XCUIElement.AttributeName](./verticalsizeclass.md)
   A string constant that serves as a dictionary key identifying an element’s vertical size class.
 
 

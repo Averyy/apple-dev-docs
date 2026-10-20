@@ -1,17 +1,22 @@
 # didPerformFileOperationNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when a file operation has been performed in the receiving app.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 
 ```swift
 class let didPerformFileOperationNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName NSWorkspaceDidPerformFileOperationNotification;
 ```
 
 #### Discussion

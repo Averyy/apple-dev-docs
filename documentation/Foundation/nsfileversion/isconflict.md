@@ -1,7 +1,8 @@
 # isConflict
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the contents of the version are in conflict with the contents of another version.
 
@@ -20,15 +21,20 @@ A Boolean value indicating whether the contents of the version are in conflict w
 var isConflict: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isConflict) BOOL conflict;
+```
+
 #### Discussion
 
-When two or more versions of a file are written at the same time, perhaps because the file is saved in the cloud and one or more of the writers were offline when they were writing, the system attempts to resolve the conflict automatically. It does this by picking one of the file versions to be the current file and setting this property to [`true`](https://developer.apple.com/documentation/swift/true) for the other file versions that are in conflict.
+When two or more versions of a file are written at the same time, perhaps because the file is saved in the cloud and one or more of the writers were offline when they were writing, the system attempts to resolve the conflict automatically. It does this by picking one of the file versions to be the current file and setting this property to [`true`](../../Swift/true.md) for the other file versions that are in conflict.
 
 ## See Also
 
-- [var isResolved: Bool](nsfileversion/isresolved.md)
+### Handling Version Conflicts
+- [var isResolved: Bool](./isresolved.md)
   A Boolean value that indicates if the version object is in conflict or not.
-- [class func unresolvedConflictVersionsOfItem(at: URL) -> [NSFileVersion]?](nsfileversion/unresolvedconflictversionsofitem(at:).md)
+- [class func unresolvedConflictVersionsOfItem(at: URL) -> [NSFileVersion]?](./unresolvedconflictversionsofitem%28at%29.md)
   Returns an array of version objects that are currently in conflict for the specified URL.
 
 

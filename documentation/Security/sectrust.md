@@ -1,7 +1,8 @@
 # SecTrust
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to evaluate trust.
 
@@ -20,15 +21,19 @@ An object used to evaluate trust.
 class SecTrust
 ```
 
+```c
+typedef struct __SecTrust * SecTrustRef;
+```
+
 ## Mentions
 
-- [Creating a Trust Object](creating-a-trust-object.md)
+- [Creating a Trust Object](./creating-a-trust-object.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MLMultiArrayShapeConstraintType
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible types of shape constraints.
 
@@ -20,35 +21,40 @@ The possible types of shape constraints.
 enum MLMultiArrayShapeConstraintType
 ```
 
+```c
+enum MLMultiArrayShapeConstraintType : NSInteger;
+```
+
 ## Topics
 
 ### Constraint types
-- [MLMultiArrayShapeConstraintType.enumerated](mlmultiarrayshapeconstrainttype/enumerated.md)
+- [MLMultiArrayShapeConstraintType.enumerated](./mlmultiarrayshapeconstrainttype/enumerated.md)
   The constraint is an array of allowed shapes.
-- [MLMultiArrayShapeConstraintType.range](mlmultiarrayshapeconstrainttype/range.md)
+- [MLMultiArrayShapeConstraintType.range](./mlmultiarrayshapeconstrainttype/range.md)
   The constraint is a set of ranges allowed for the array shape.
-- [MLMultiArrayShapeConstraintType.unspecified](mlmultiarrayshapeconstrainttype/unspecified.md)
+- [MLMultiArrayShapeConstraintType.unspecified](./mlmultiarrayshapeconstrainttype/unspecified.md)
   The constraint type is undefined.
 ### Creating a constraint type
-- [init?(rawValue: Int)](mlmultiarrayshapeconstrainttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mlmultiarrayshapeconstrainttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var enumeratedShapes: [[NSNumber]]](mlmultiarrayshapeconstraint/enumeratedshapes.md)
+### Accessing the Constraints
+- [var enumeratedShapes: [[NSNumber]]](./mlmultiarrayshapeconstraint/enumeratedshapes.md)
   Array of allowed shapes for a multiarray feature.
-- [var sizeRangeForDimension: [NSValue]](mlmultiarrayshapeconstraint/sizerangefordimension.md)
+- [var sizeRangeForDimension: [NSValue]](./mlmultiarrayshapeconstraint/sizerangefordimension.md)
   The allowable range for a dimention of the multiarray.
-- [var type: MLMultiArrayShapeConstraintType](mlmultiarrayshapeconstraint/type.md)
+- [var type: MLMultiArrayShapeConstraintType](./mlmultiarrayshapeconstraint/type.md)
   The type of the shape constraint.
 
 

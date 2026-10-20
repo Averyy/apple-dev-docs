@@ -1,7 +1,8 @@
 # CXErrorCodeNotificationServiceExtensionError.Code.invalidClientProcess
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that an invalid client process reported the incoming call.
 
@@ -18,15 +19,20 @@ An error indicating that an invalid client process reported the incoming call.
 case invalidClientProcess
 ```
 
+```c
+CXErrorCodeNotificationServiceExtensionErrorInvalidClientProcess
+```
+
 #### Discussion
 
-Only call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](cxprovider/reportnewincomingvoippushpayload(_:completion:).md) method from a [`UNNotificationServiceExtension`](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension) object that is responding to an incoming notification request.
+Only call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](../../cxprovider/reportnewincomingvoippushpayload%28_,completion%29.md) method from a [`UNNotificationServiceExtension`](../../../UserNotifications/unnotificationserviceextension.md) object that is responding to an incoming notification request.
 
 ## See Also
 
-- [CXErrorCodeNotificationServiceExtensionError.Code.missingNotificationFilteringEntitlement](cxerrorcodenotificationserviceextensionerror-swift.struct/code/missingnotificationfilteringentitlement.md)
+### Error Codes
+- [CXErrorCodeNotificationServiceExtensionError.Code.missingNotificationFilteringEntitlement](./missingnotificationfilteringentitlement.md)
   An error indicating that the notification service extension is missing the required filtering entitlement.
-- [CXErrorCodeNotificationServiceExtensionError.Code.unknown](cxerrorcodenotificationserviceextensionerror-swift.struct/code/unknown.md)
+- [CXErrorCodeNotificationServiceExtensionError.Code.unknown](./unknown.md)
   An error that occurs when there is an unknown problem.
 
 

@@ -1,17 +1,18 @@
 # EKSpan.futureEvents
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Modifications to this event instance should also affect future instances of this event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ Modifications to this event instance should also affect future instances of this
 case futureEvents
 ```
 
+```c
+EKSpanFutureEvents
+```
+
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
+- [Creating events and reminders](../creating-events-and-reminders.md)
 
 ## See Also
 
-- [EKSpan.thisEvent](ekspan/thisevent.md)
+### Constants
+- [EKSpan.thisEvent](./thisevent.md)
   Modifications to this event instance should affect only this instance.
 
 

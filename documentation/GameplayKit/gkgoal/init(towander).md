@@ -1,7 +1,8 @@
 # init(toWander:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a goal whose effect is to make an agent wander aimlessly, moving forward and turning at random.
 
@@ -19,6 +20,10 @@ Creates a goal whose effect is to make an agent wander aimlessly, moving forward
 convenience init(toWander speed: Float)
 ```
 
+```objc
++ (instancetype) goalToWander:(float) speed;
+```
+
 #### Return Value
 
 A new goal object.
@@ -29,11 +34,12 @@ A new goal object.
 
 ## See Also
 
-- [convenience init(toSeekAgent: GKAgent)](gkgoal/init(toseekagent:).md)
+### Creating Goals for General Movement Behavior
+- [convenience init(toSeekAgent: GKAgent)](./init%28toseekagent%29.md)
   Creates a goal whose effect is to move an agent toward the current position of the specified other agent.
-- [convenience init(toFleeAgent: GKAgent)](gkgoal/init(tofleeagent:).md)
+- [convenience init(toFleeAgent: GKAgent)](./init%28tofleeagent%29.md)
   Creates a goal whose effect is to move an agent away from the current position of the specified other agent.
-- [convenience init(toReachTargetSpeed: Float)](gkgoal/init(toreachtargetspeed:).md)
+- [convenience init(toReachTargetSpeed: Float)](./init%28toreachtargetspeed%29.md)
   Creates a goal whose effect is to accelerate or decelerate an agent until it reaches the specified speed.
 
 

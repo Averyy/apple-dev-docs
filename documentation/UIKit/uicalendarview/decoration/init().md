@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default calendar view decoration with a filled circle image, using the system fill color and medium size.
 
@@ -17,9 +18,14 @@ Creates a default calendar view decoration with a filled circle image, using the
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [static func `default`(color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](uicalendarview/decoration/default(color:size:).md)
+### Creating a Default Decoration View
+- [static func `default`(color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](./default%28color,size%29.md)
   Creates a default calendar view decoration with a filled circle image, using the color and size you specify.
 
 

@@ -1,7 +1,8 @@
 # makePixel(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Utility function to generate a `Pixel_FFFF` pixel value from a `Pixel_ARGB_16F` pixel value.
 
@@ -11,7 +12,7 @@ Utility function to generate a `Pixel_FFFF` pixel value from a `Pixel_ARGB_16F` 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the body of a disclosure group.
@@ -21,11 +22,12 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](disclosuregroupstyle/makebody(configuration:).md)
+### Creating custom disclosure group styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a disclosure group.
-- [struct DisclosureGroupStyleConfiguration](disclosuregroupstyleconfiguration.md)
+- [struct DisclosureGroupStyleConfiguration](../disclosuregroupstyleconfiguration.md)
   The properties of a disclosure group instance.
-- [DisclosureGroupStyle.Configuration](disclosuregroupstyle/configuration.md)
+- [DisclosureGroupStyle.Configuration](./configuration.md)
   The properties of a disclosure group instance.
 
 

@@ -1,7 +1,8 @@
 # NSWorkspace.ScreensDidWakeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,14 +16,14 @@ struct ScreensDidWakeMessage
 ## Topics
 
 ### Initializers
-- [init()](nsworkspace/screensdidwakemessage/init.md)
+- [init()](./screensdidwakemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

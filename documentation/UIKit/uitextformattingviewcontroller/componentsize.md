@@ -1,7 +1,8 @@
 # UITextFormattingViewController.ComponentSize
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Sizes of text formatting view controller components.
 
@@ -17,35 +18,40 @@ Sizes of text formatting view controller components.
 enum ComponentSize
 ```
 
+```c
+enum UITextFormattingViewControllerComponentSize : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UITextFormattingViewController.ComponentSize.automatic](uitextformattingviewcontroller/componentsize/automatic.md)
-- [UITextFormattingViewController.ComponentSize.extraLarge](uitextformattingviewcontroller/componentsize/extralarge.md)
-- [UITextFormattingViewController.ComponentSize.large](uitextformattingviewcontroller/componentsize/large.md)
-- [UITextFormattingViewController.ComponentSize.mini](uitextformattingviewcontroller/componentsize/mini.md)
-- [UITextFormattingViewController.ComponentSize.regular](uitextformattingviewcontroller/componentsize/regular.md)
-- [UITextFormattingViewController.ComponentSize.small](uitextformattingviewcontroller/componentsize/small.md)
+- [UITextFormattingViewController.ComponentSize.automatic](./componentsize/automatic.md)
+- [UITextFormattingViewController.ComponentSize.extraLarge](./componentsize/extralarge.md)
+- [UITextFormattingViewController.ComponentSize.large](./componentsize/large.md)
+- [UITextFormattingViewController.ComponentSize.mini](./componentsize/mini.md)
+- [UITextFormattingViewController.ComponentSize.regular](./componentsize/regular.md)
+- [UITextFormattingViewController.ComponentSize.small](./componentsize/small.md)
 ### Initializers
-- [init?(rawValue: Int)](uitextformattingviewcontroller/componentsize/init(rawvalue:).md)
+- [init?(rawValue: Int)](./componentsize/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
-- [enum UIFocusItemDeferralMode](uifocusitemdeferralmode.md)
-- [enum UIBarMinimizationBehavior](uibarminimizationbehavior.md)
-- [enum UIBarMinimizationRestorationBehavior](uibarminimizationrestorationbehavior.md)
-- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
+### Enumerations
+- [UIAccessibility.ExpandedStatus](../uiaccessibility/expandedstatus.md)
+- [enum UIFocusItemDeferralMode](../uifocusitemdeferralmode.md)
+- [enum UIBarMinimizationBehavior](../uibarminimizationbehavior.md)
+- [enum UIBarMinimizationRestorationBehavior](../uibarminimizationrestorationbehavior.md)
+- [enum UIBarMinimizationSafeAreaAdjustment](../uibarminimizationsafeareaadjustment.md)
 
 
 ---

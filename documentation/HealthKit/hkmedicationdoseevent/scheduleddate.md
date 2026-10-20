@@ -1,7 +1,8 @@
 # scheduledDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time the person takes the medication, if scheduled.
 
@@ -19,9 +20,13 @@ The date and time the person takes the medication, if scheduled.
 var scheduledDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * scheduledDate;
+```
+
 #### Discussion
 
-The value is always non-null for [`HKMedicationDoseEvent.ScheduleType.schedule`](hkmedicationdoseevent/scheduletype-swift.enum/schedule.md) and always null for  [`HKMedicationDoseEvent.ScheduleType.asNeeded`](hkmedicationdoseevent/scheduletype-swift.enum/asneeded.md).
+The value is always non-null for [`HKMedicationDoseEvent.ScheduleType.schedule`](./scheduletype-swift.enum/schedule.md) and always null for  [`HKMedicationDoseEvent.ScheduleType.asNeeded`](./scheduletype-swift.enum/asneeded.md).
 
 
 ---

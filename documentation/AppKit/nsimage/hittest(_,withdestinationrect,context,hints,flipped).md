@@ -1,7 +1,8 @@
 # hitTest(_:withDestinationRect:context:hints:flipped:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the destination rectangle would intersect a non-transparent portion of the image.
 
@@ -12,6 +13,10 @@ Returns whether the destination rectangle would intersect a non-transparent port
 
 ```swift
 func hitTest(_ testRectDestSpace: NSRect, withDestinationRect imageRectDestSpace: NSRect, context: NSGraphicsContext?, hints: [NSImageRep.HintKey : Any]?, flipped: Bool) -> Bool
+```
+
+```objc
+- (BOOL) hitTestRect:(NSRect) testRectDestSpace withImageDestinationRect:(NSRect) imageRectDestSpace context:(NSGraphicsContext *) context hints:(NSDictionary<NSString *,id> *) hints flipped:(BOOL) flipped;
 ```
 
 #### Return Value
@@ -28,7 +33,7 @@ This method simulates the results of hit-testing the test rectangle as if the im
 - `imageRectDestSpace`: A rectangle representing the drawn size of the image.
 - `context`: A graphics context. This value can be `nil`.
 - `hints`: An optional dictionary of hints that provide more context for selecting or generating a `CGImage`, and may override properties of the `referenceContext`. See `Image Hint Dictionary Keys` for a summary of the possible key-value pairs.
-- `flipped`: [`true`](https://developer.apple.com/documentation/swift/true) if the image is flipped, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+- `flipped`: [`true`](../../Swift/true.md) if the image is flipped, otherwise [`false`](../../Swift/false.md).
 
 
 ---

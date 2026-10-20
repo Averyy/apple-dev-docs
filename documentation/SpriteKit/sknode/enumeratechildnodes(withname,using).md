@@ -1,18 +1,19 @@
 # enumerateChildNodes(withName:using:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the children of the receiving node to perform processing for nodes that share a name.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,19 @@ Searches the children of the receiving node to perform processing for nodes that
 func enumerateChildNodes(withName name: String, using block: @escaping (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)
 ```
 
+```objc
+- (void) enumerateChildNodesWithName:(NSString *) name usingBlock:(void (^)(SKNode *node, BOOL *stop)) block;
+```
+
 ## Mentions
 
-- [Searching the Node Tree](searching-the-node-tree.md)
+- [Searching the Node Tree](../searching-the-node-tree.md)
 
 #### Discussion
 
 This method enumerates the child array in order, searching for nodes whose names match the search parameter. The block is called once for each node that matches the name parameter.
 
-The following Swift code shows how you could enumerate through the child nodes of a scene with a name containing the string `yellow`. Each matching node is hidden until the enumeration finds a node that also contains the string `triangle`. When this node is reached, `stop` is set to [`true`](https://developer.apple.com/documentation/swift/true) and the processing stops.
+The following Swift code shows how you could enumerate through the child nodes of a scene with a name containing the string `yellow`. Each matching node is hidden until the enumeration finds a node that also contains the string `triangle`. When this node is reached, `stop` is set to [`true`](../../Swift/true.md) and the processing stops.
 
 Listing 1. Enumerating child nodes
 
@@ -44,7 +49,7 @@ scene.enumerateChildNodes(withName: "*yellow*") {
 }
 ```
 
-You can also search by class name using [`enumerateChildNodes(withName:using:)`](sknode/enumeratechildnodes(withname:using:).md). However, for custom classes, you need to specify the fully annotated class name (i.e. the project name followed by the class name). The following Swift code shows a custom class, `SpaceshipNode`, based on [`SKSpriteNode`](skspritenode.md), and created in a project named `SpaceGame`. The first search fails to return an instance of  `SpaceshipNode` added as a child of `parentNode`:
+You can also search by class name using [`enumerateChildNodes(withName:using:)`](./enumeratechildnodes%28withname,using%29.md). However, for custom classes, you need to specify the fully annotated class name (i.e. the project name followed by the class name). The following Swift code shows a custom class, `SpaceshipNode`, based on [`SKSpriteNode`](../skspritenode.md), and created in a project named `SpaceGame`. The first search fails to return an instance of  `SpaceshipNode` added as a child of `parentNode`:
 
 Listing 2. Enumerating child nodes
 
@@ -75,17 +80,18 @@ parentNode.enumerateChildNodes(withName: "SKSpriteNode") {
 ## Parameters
 
 - `name`: The name to search for. This may be either the literal name of the node or a customized search string. See `Searching the Node Tree`.
-- `block`: A block to execute on nodes that match the `name` parameter. The block has the signature `(node:` [`SKNode`](sknode.md) `, stop:` [`UnsafeMutablePointer`](https://developer.apple.com/documentation/swift/unsafemutablepointer) `<` [`ObjCBool`](https://developer.apple.com/documentation/objectivec/objcbool) `>)`.
+- `block`: A block to execute on nodes that match the `name` parameter. The block has the signature `(node:` [`SKNode`](../sknode.md) `, stop:` [`UnsafeMutablePointer`](../../Swift/unsafemutablepointer.md) `<` [`ObjCBool`](../../ObjectiveC/objcbool.md) `>)`.
 
 ## See Also
 
-- [Searching the Node Tree](searching-the-node-tree.md)
+### Accessing Nodes by Name
+- [Searching the Node Tree](../searching-the-node-tree.md)
   Access nodes by name to avoid needing an instance variable.
-- [var name: String?](sknode/name.md)
+- [var name: String?](./name.md)
   The node’s assignable name.
-- [func childNode(withName: String) -> SKNode?](sknode/childnode(withname:).md)
+- [func childNode(withName: String) -> SKNode?](./childnode%28withname%29.md)
   Searches the children of the receiving node for a node with a specific name.
-- [subscript(String) -> [SKNode]](sknode/subscript(_:).md)
+- [subscript(String) -> [SKNode]](./subscript%28_%29.md)
   Returns an array of nodes that match the name parameter.
 
 

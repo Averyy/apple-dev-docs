@@ -1,7 +1,8 @@
 # itemCount
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of items, across all sections, in the list.
 
@@ -16,17 +17,22 @@ The total number of items, across all sections, in the list.
 var itemCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger itemCount;
+```
+
 #### Discussion
 
-This value never exceeds [`maximumItemCount`](cplisttemplate/maximumitemcount.md). If you initialize a list where the total number of items, across all sections, is greater than [`maximumItemCount`](cplisttemplate/maximumitemcount.md), CarPlay only displays items up to this limit and discards the rest.
+This value never exceeds [`maximumItemCount`](./maximumitemcount.md). If you initialize a list where the total number of items, across all sections, is greater than [`maximumItemCount`](./maximumitemcount.md), CarPlay only displays items up to this limit and discards the rest.
 
 ## See Also
 
-- [class var maximumItemCount: Int](cplisttemplate/maximumitemcount.md)
+### Getting Supplementary Information
+- [class var maximumItemCount: Int](./maximumitemcount.md)
   The maximum number of items, across all sections, that the template can display.
-- [func indexPath(for: any CPListTemplateItem) -> IndexPath?](cplisttemplate/indexpath(for:).md)
+- [func indexPath(for: any CPListTemplateItem) -> IndexPath?](./indexpath%28for%29.md)
   Returns the index path for the specified item.
-- [var title: String?](cplisttemplate/title.md)
+- [var title: String?](./title.md)
   The title that the navigation bar displays when the template is visible.
 
 

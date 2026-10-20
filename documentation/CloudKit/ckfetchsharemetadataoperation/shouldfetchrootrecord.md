@@ -1,7 +1,8 @@
 # shouldFetchRootRecord
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to retrieve the root record.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether to retrieve the root record.
 var shouldFetchRootRecord: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL shouldFetchRootRecord;
+```
+
 #### Discussion
 
-For a shared record hierarchy, set this property to [`true`](https://developer.apple.com/documentation/swift/true) to include the root record in the fetched share metadata. CloudKit ignores this property for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record.
+For a shared record hierarchy, set this property to [`true`](../../Swift/true.md) to include the root record in the fetched share metadata. CloudKit ignores this property for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var shareURLs: [URL]?](ckfetchsharemetadataoperation/shareurls.md)
+### Configuring the Operation
+- [var shareURLs: [URL]?](./shareurls.md)
   The URLs of the shares to fetch.
 
 

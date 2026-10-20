@@ -1,7 +1,8 @@
 # video
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the stream is providing video service.
 
@@ -20,15 +21,20 @@ Specifies that the stream is providing video service.
 static let video: StreamNetworkServiceTypeValue
 ```
 
+```c
+extern NSStreamNetworkServiceTypeValue const NSStreamNetworkServiceTypeVideo;
+```
+
 ## See Also
 
-- [static let background: StreamNetworkServiceTypeValue](streamnetworkservicetypevalue/background.md)
+### Type Properties
+- [static let background: StreamNetworkServiceTypeValue](./background.md)
   Specifies that the stream is providing a background service.
-- [static let voice: StreamNetworkServiceTypeValue](streamnetworkservicetypevalue/voice.md)
+- [static let voice: StreamNetworkServiceTypeValue](./voice.md)
   Specifies that the stream is providing voice service.
-- [static let voIP: StreamNetworkServiceTypeValue](streamnetworkservicetypevalue/voip.md)
+- [static let voIP: StreamNetworkServiceTypeValue](./voip.md)
   Specifies that the stream is providing VoIP service.
-- [static let callSignaling: StreamNetworkServiceTypeValue](streamnetworkservicetypevalue/callsignaling.md)
+- [static let callSignaling: StreamNetworkServiceTypeValue](./callsignaling.md)
 
 
 ---

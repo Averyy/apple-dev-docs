@@ -1,6 +1,7 @@
 # Adding a JSON Table
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Add a table to your article that displays JSON data in rows and columns.
 
@@ -18,19 +19,20 @@ You can apply styles to adjust the appearance of your table using the `tableStyl
 
 ## See Also
 
-- [object DataTable](../applenewsformat/datatable.md)
+### Tables with JSON Data
+- [object DataTable](https://developer.apple.com/documentation/applenewsformat/datatable)
   The component for adding a JSON data table.
-- [object RecordStore](../applenewsformat/recordstore.md)
+- [object RecordStore](https://developer.apple.com/documentation/applenewsformat/recordstore)
   The object that contains JSON data for a data table.
-- [object DataDescriptor](../applenewsformat/datadescriptor.md)
+- [object DataDescriptor](https://developer.apple.com/documentation/applenewsformat/datadescriptor)
   The object for providing the data type, data formatting, and label for a field in a table.
-- [object DataTableSorting](../applenewsformat/datatablesorting.md)
+- [object DataTableSorting](https://developer.apple.com/documentation/applenewsformat/datatablesorting)
   A data category by which to sort the table in descending or ascending order.
-- [object DataFormat](../applenewsformat/dataformat.md)
+- [object DataFormat](https://developer.apple.com/documentation/applenewsformat/dataformat)
   Properties shared by all data format obejct types.
-- [object FloatDataFormat](../applenewsformat/floatdataformat.md)
+- [object FloatDataFormat](https://developer.apple.com/documentation/applenewsformat/floatdataformat)
   The object that allows you to specify the number of digits after the decimal point for numeric values in data table cells.
-- [object ImageDataFormat](../applenewsformat/imagedataformat.md)
+- [object ImageDataFormat](https://developer.apple.com/documentation/applenewsformat/imagedataformat)
   The object that allows you to specify the minimum and maximum dimensions for images in data table cells.
 
 

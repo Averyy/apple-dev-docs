@@ -1,7 +1,8 @@
 # sentApplicationByteCount
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes sent on the connection.
 
@@ -22,7 +23,8 @@ let sentApplicationByteCount: UInt64
 
 ## See Also
 
-- [let receivedApplicationByteCount: UInt64](nwconnection/datatransferreport/pathreport/receivedapplicationbytecount.md)
+### Inspecting Application Metrics
+- [let receivedApplicationByteCount: UInt64](./receivedapplicationbytecount.md)
   The number of bytes the connection delivered.
 
 

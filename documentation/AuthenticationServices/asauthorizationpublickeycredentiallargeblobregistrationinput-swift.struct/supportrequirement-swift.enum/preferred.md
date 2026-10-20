@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.preferred
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -18,7 +19,8 @@ case preferred
 
 ## See Also
 
-- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.required](asauthorizationpublickeycredentiallargeblobregistrationinput-swift.struct/supportrequirement-swift.enum/required.md)
+### Supporting requirement values
+- [ASAuthorizationPublicKeyCredentialLargeBlobRegistrationInput.SupportRequirement.required](./required.md)
 
 
 ---

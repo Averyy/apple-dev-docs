@@ -1,7 +1,8 @@
 # exclusive
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A signpost identifier that indicates no overlap among different signpost time intervals.
 
@@ -11,7 +12,7 @@ A signpost identifier that indicates no overlap among different signpost time in
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ static let exclusive: OSSignpostID
 
 ## See Also
 
-- [static let invalid: OSSignpostID](ossignpostid/invalid.md)
+### Getting Signpost Identifiers
+- [static let invalid: OSSignpostID](./invalid.md)
   A signpost identifier that indicates an error.
-- [static let null: OSSignpostID](ossignpostid/null.md)
+- [static let null: OSSignpostID](./null.md)
   A signpost identifier that indicates a disabled signpost.
 
 

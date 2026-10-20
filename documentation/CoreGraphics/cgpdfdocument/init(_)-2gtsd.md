@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Graphics PDF document using data specified by a URL.
 
@@ -10,7 +11,7 @@ Creates a Core Graphics PDF document using data specified by a URL.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a Core Graphics PDF document using data specified by a URL.
 init?(_ url: CFURL)
 ```
 
+```c
+extern CGPDFDocumentRefCGPDFDocumentCreateWithURL(CFURLRef url);
+```
+
 #### Return Value
 
-A new Core Graphics PDF document, or `NULL` if a document could not be created. In Objective-C, you’re responsible for releasing the object using [`CGPDFDocumentRelease`](cgpdfdocumentrelease.md).
+A new Core Graphics PDF document, or `NULL` if a document could not be created. In Objective-C, you’re responsible for releasing the object using [`CGPDFDocumentRelease`](../cgpdfdocumentrelease.md).
 
 #### Discussion
 
@@ -34,7 +39,8 @@ Distributing individual pages of a PDF document to separate threads is not suppo
 
 ## See Also
 
-- [init?(CGDataProvider)](cgpdfdocument/init(_:)-gbq6.md)
+### Creating PDF Documents
+- [init?(CGDataProvider)](./init%28_%29-gbq6.md)
   Creates a Core Graphics PDF document using a data provider.
 
 

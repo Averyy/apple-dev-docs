@@ -1,7 +1,8 @@
 # NSZeroSize
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An `NSSize` structure set to `0` in both dimensions.
 
@@ -13,6 +14,10 @@ An `NSSize` structure set to `0` in both dimensions.
 
 ```swift
 let NSZeroSize: NSSize
+```
+
+```c
+extern const NSSize NSZeroSize;
 ```
 
 

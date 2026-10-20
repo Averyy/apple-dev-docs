@@ -1,7 +1,8 @@
 # GCController.DidBecomeCurrentMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a game controller becomes the most recently used controller.
 
@@ -25,7 +26,7 @@ This is a good time to swap out UI to match the new current controller, and unre
 
 Use the `.didBecomeCurrent` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCController.self, for: .didBecomeCurrent) { message in
    let controller = message.controller
 }
@@ -34,16 +35,16 @@ let observation = NotificationCenter.default.addObserver(of: GCController.self, 
 ## Topics
 
 ### Initializers
-- [init(controller: GCController)](gccontroller/didbecomecurrentmessage/init(controller:).md)
+- [init(controller: GCController)](./didbecomecurrentmessage/init%28controller%29.md)
 ### Instance Properties
-- [var controller: GCController](gccontroller/didbecomecurrentmessage/controller.md)
+- [var controller: GCController](./didbecomecurrentmessage/controller.md)
   The controller object that became current.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

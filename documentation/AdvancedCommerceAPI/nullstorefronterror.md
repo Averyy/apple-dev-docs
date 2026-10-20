@@ -1,39 +1,41 @@
 # NullStorefrontError
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - Advanced Commerce API 1.0+
 
 ## Declaration
 
-```swift
+```
 object NullStorefrontError
 ```
 
 ## Properties
 
-- `errorCode` (number)
-- `errorMessage` (string)
+- `errorCode` (number): **Allowed Values**: `4000100`
+- `errorMessage` (string): **Allowed Values**: `The required field, storefront, is missing.`
 
 ## See Also
 
-- [object ACAPriceIncreaseIsNotCurrentlySupportedInIndiaError](acapriceincreaseisnotcurrentlysupportedinindiaerror.md)
-- [object AlreadyRefundedError](alreadyrefundederror.md)
-- [object AtLeastOneItemError](atleastoneitemerror.md)
-- [object AtLeastOneOfDisplayNameOrDescriptionError](atleastoneofdisplaynameordescriptionerror.md)
-- [object BillingCycleResetWithEffectiveLaterError](billingcycleresetwitheffectivelatererror.md)
-- [object ChangeItemNotFoundError](changeitemnotfounderror.md)
-- [object CurrentSKULengthExceededError](currentskulengthexceedederror.md)
-- [object DependentSKUsCannotBeChainedError](dependentskuscannotbechainederror.md)
-- [object DependentSKUsCannotBeSharedError](dependentskuscannotbesharederror.md)
-- [object DescriptionLengthExceededError](descriptionlengthexceedederror.md)
-- [object DisplayNameLengthExceededError](displaynamelengthexceedederror.md)
-- [object EmptyAddChangeItemsError](emptyaddchangeitemserror.md)
-- [object FreeTrialOfferMustUsePeriodCountOfOneError](freetrialoffermustuseperiodcountofoneerror.md)
-- [object GeneralInternalError](generalinternalerror.md)
-- [object GeneralInternalRetryableError](generalinternalretryableerror.md)
+### Error codes
+- [object ACAPriceIncreaseIsNotCurrentlySupportedInIndiaError](./acapriceincreaseisnotcurrentlysupportedinindiaerror.md)
+- [object AlreadyRefundedError](./alreadyrefundederror.md)
+- [object AtLeastOneItemError](./atleastoneitemerror.md)
+- [object AtLeastOneOfDisplayNameOrDescriptionError](./atleastoneofdisplaynameordescriptionerror.md)
+- [object BillingCycleResetWithEffectiveLaterError](./billingcycleresetwitheffectivelatererror.md)
+- [object ChangeItemNotFoundError](./changeitemnotfounderror.md)
+- [object CurrentSKULengthExceededError](./currentskulengthexceedederror.md)
+- [object DependentSKUsCannotBeChainedError](./dependentskuscannotbechainederror.md)
+- [object DependentSKUsCannotBeSharedError](./dependentskuscannotbesharederror.md)
+- [object DescriptionLengthExceededError](./descriptionlengthexceedederror.md)
+- [object DisplayNameLengthExceededError](./displaynamelengthexceedederror.md)
+- [object EmptyAddChangeItemsError](./emptyaddchangeitemserror.md)
+- [object FreeTrialOfferMustUsePeriodCountOfOneError](./freetrialoffermustuseperiodcountofoneerror.md)
+- [object GeneralInternalError](./generalinternalerror.md)
+- [object GeneralInternalRetryableError](./generalinternalretryableerror.md)
 
 
 ---

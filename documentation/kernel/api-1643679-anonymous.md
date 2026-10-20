@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHubLocalPowerStatus](1643679-anonymous/khublocalpowerstatus.md)
-- [kHubLocalPowerStatusChange](1643679-anonymous/khublocalpowerstatuschange.md)
-- [kHubOverCurrentIndicator](1643679-anonymous/khubovercurrentindicator.md)
-- [kHubOverCurrentIndicatorChange](1643679-anonymous/khubovercurrentindicatorchange.md)
+- [kHubLocalPowerStatus](./api-1643679-anonymous/khublocalpowerstatus.md)
+- [kHubLocalPowerStatusChange](./api-1643679-anonymous/khublocalpowerstatuschange.md)
+- [kHubOverCurrentIndicator](./api-1643679-anonymous/khubovercurrentindicator.md)
+- [kHubOverCurrentIndicatorChange](./api-1643679-anonymous/khubovercurrentindicatorchange.md)
 
 
 ---

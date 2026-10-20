@@ -1,7 +1,8 @@
 # BetaAppLocalizationUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,14 +11,14 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object BetaAppLocalizationUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppLocalizationUpdateRequest.Data.Attributes](betaapplocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BetaAppLocalizationUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
 ## Properties
@@ -25,6 +26,8 @@ object BetaAppLocalizationUpdateRequest.Data
 - `attributes` (BetaAppLocalizationUpdateRequest.Data.Attributes): The resource’s attributes.
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `betaAppLocalizations`
 
 
 ---

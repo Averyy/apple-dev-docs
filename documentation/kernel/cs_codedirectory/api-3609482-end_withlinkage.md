@@ -1,14 +1,15 @@
 # end_withLinkage
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 char end_withLinkage[0];
 ```
 

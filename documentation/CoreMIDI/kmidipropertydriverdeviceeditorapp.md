@@ -1,7 +1,8 @@
 # kMIDIPropertyDriverDeviceEditorApp
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The full path to an app on the system that configures driver-owned devices.
 
@@ -18,17 +19,22 @@ The full path to an app on the system that configures driver-owned devices.
 let kMIDIPropertyDriverDeviceEditorApp: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyDriverDeviceEditorApp;
+```
+
 #### Discussion
 
 Only drivers may set this property on their owned devices.
 
 ## See Also
 
-- [let kMIDIPropertyNameConfigurationDictionary: CFString](kmidipropertynameconfigurationdictionary.md)
+### Configuration
+- [let kMIDIPropertyNameConfigurationDictionary: CFString](./kmidipropertynameconfigurationdictionary.md)
   The device’s current patch, note, and control name values in MIDINameDocument XML format.
-- [let kMIDIPropertyMaxSysExSpeed: CFString](kmidipropertymaxsysexspeed.md)
+- [let kMIDIPropertyMaxSysExSpeed: CFString](./kmidipropertymaxsysexspeed.md)
   The maximum rate, in bytes per second, at which the system may reliably send System Exclusive (SysEx) messages to this object.
-- [let kMIDIPropertyNameConfiguration: CFString](kmidipropertynameconfiguration.md)
+- [let kMIDIPropertyNameConfiguration: CFString](./kmidipropertynameconfiguration.md)
   An XML representation of the device’s current patch, note, and control name values.
 
 

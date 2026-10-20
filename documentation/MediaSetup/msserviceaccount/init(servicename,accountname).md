@@ -1,7 +1,8 @@
 # init(serviceName:accountName:)
 
 **Framework**: Media Setup  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new account.
 
@@ -17,6 +18,10 @@ Creates a new account.
 init(serviceName: String, accountName: String)
 ```
 
+```objc
+- (instancetype) initWithServiceName:(NSString *) serviceName accountName:(NSString *) accountName;
+```
+
 ## Parameters
 
 - `serviceName`: The name of the streaming media service.
@@ -24,9 +29,10 @@ init(serviceName: String, accountName: String)
 
 ## See Also
 
-- [var serviceName: String](msserviceaccount/servicename.md)
+### Presenting Account Information to the User
+- [var serviceName: String](./servicename.md)
   The localized name of the streaming media service.
-- [var accountName: String](msserviceaccount/accountname.md)
+- [var accountName: String](./accountname.md)
   The user’s display name, email address, or other identifier in a streaming media service.
 
 

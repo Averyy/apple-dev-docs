@@ -1,7 +1,8 @@
 # nextTriggerDate()
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The next date at which the trigger conditions are met.
 
@@ -20,6 +21,10 @@ The next date at which the trigger conditions are met.
 func nextTriggerDate() -> Date?
 ```
 
+```objc
+- (NSDate *) nextTriggerDate;
+```
+
 #### Return Value
 
 The next trigger date.
@@ -30,7 +35,8 @@ Use this property to find out when a notification associated with this trigger w
 
 ## See Also
 
-- [var timeInterval: TimeInterval](untimeintervalnotificationtrigger/timeinterval.md)
+### Getting the Trigger Information
+- [var timeInterval: TimeInterval](./timeinterval.md)
   The time interval to create the trigger.
 
 

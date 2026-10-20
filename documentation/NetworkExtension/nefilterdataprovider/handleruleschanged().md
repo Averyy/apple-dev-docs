@@ -1,7 +1,8 @@
 # handleRulesChanged()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle a rules changed event.
 
@@ -17,9 +18,13 @@ Handle a rules changed event.
 func handleRulesChanged()
 ```
 
+```objc
+- (void) handleRulesChanged;
+```
+
 #### Discussion
 
-The system calls this method when the Filter Control Provider calls the `notifyRulesChanged` method or returns a [`NEFilterControlVerdict`](nefiltercontrolverdict.md) with the [`updateRules()`](nefiltercontrolverdict/updaterules().md) property set to YES.
+The system calls this method when the Filter Control Provider calls the `notifyRulesChanged` method or returns a [`NEFilterControlVerdict`](../nefiltercontrolverdict.md) with the [`updateRules()`](../nefiltercontrolverdict/updaterules%28%29.md) property set to YES.
 
 
 ---

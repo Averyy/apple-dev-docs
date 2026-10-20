@@ -1,7 +1,8 @@
 # outstandingFileTransfers
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of in-progress file transfers.
 
@@ -18,15 +19,20 @@ An array of in-progress file transfers.
 var outstandingFileTransfers: [WCSessionFileTransfer] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<WCSessionFileTransfer *> * outstandingFileTransfers;
+```
+
 #### Discussion
 
-This property contains the [`WCSessionFileTransfer`](wcsessionfiletransfer.md) objects representing the files that are queued for delivery but have not yet been delivered to the counterpart. You can use the objects to cancel specific file transfers.
+This property contains the [`WCSessionFileTransfer`](../wcsessionfiletransfer.md) objects representing the files that are queued for delivery but have not yet been delivered to the counterpart. You can use the objects to cancel specific file transfers.
 
 ## See Also
 
-- [func transferFile(URL, metadata: [String : Any]?) -> WCSessionFileTransfer](wcsession/transferfile(_:metadata:).md)
+### Transferring Files in the Background
+- [func transferFile(URL, metadata: [String : Any]?) -> WCSessionFileTransfer](./transferfile%28_,metadata%29.md)
   Sends the specified file and optional dictionary to the counterpart.
-- [var hasContentPending: Bool](wcsession/hascontentpending.md)
+- [var hasContentPending: Bool](./hascontentpending.md)
   A Boolean value that indicates whether the session has more content to deliver.
 
 

@@ -1,14 +1,15 @@
 # BIDIRECTIONAL_HANDSET
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 BIDIRECTIONAL_HANDSET = 0x0401
 ```
 

@@ -1,7 +1,8 @@
 # Data.Deallocator.virtualMemory
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 8.0+
@@ -20,13 +21,14 @@ case virtualMemory
 
 ## See Also
 
-- [case custom((UnsafeMutableRawPointer, Int) -> Void)](data/deallocator/custom(_:).md)
+### Enumeration Cases
+- [case custom((UnsafeMutableRawPointer, Int) -> Void)](./custom%28_%29.md)
   A custom deallocator.
-- [Data.Deallocator.free](data/deallocator/free.md)
+- [Data.Deallocator.free](./free.md)
   Use `free`.
-- [Data.Deallocator.none](data/deallocator/none.md)
+- [Data.Deallocator.none](./none.md)
   Do nothing upon deallocation.
-- [Data.Deallocator.unmap](data/deallocator/unmap.md)
+- [Data.Deallocator.unmap](./unmap.md)
   Use `munmap`.
 
 

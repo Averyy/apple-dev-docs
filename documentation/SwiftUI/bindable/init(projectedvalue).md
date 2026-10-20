@@ -1,7 +1,8 @@
 # init(projectedValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bindable from the value of another bindable.
 
@@ -20,11 +21,14 @@ Creates a bindable from the value of another bindable.
 init(projectedValue: Bindable<Value>)
 ```
 
+Available when `Value` conforms to `Observable`.
+
 ## See Also
 
-- [init(Value)](bindable/init(_:).md)
+### Creating a bindable value
+- [init(Value)](./init%28_%29.md)
   Creates a bindable object from an observable object.
-- [init(wrappedValue: Value)](bindable/init(wrappedvalue:).md)
+- [init(wrappedValue: Value)](./init%28wrappedvalue%29.md)
   Creates a bindable object from an observable object.
 
 

@@ -1,7 +1,8 @@
 # speechDuration
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration in seconds of speech in the audio.
 
@@ -18,13 +19,18 @@ The duration in seconds of speech in the audio.
 var speechDuration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval speechDuration;
+```
+
 ## See Also
 
-- [var averagePauseDuration: TimeInterval](sfspeechrecognitionmetadata/averagepauseduration.md)
+### Getting audio timing information
+- [var averagePauseDuration: TimeInterval](./averagepauseduration.md)
   The average pause duration between words, measured in seconds.
-- [var speakingRate: Double](sfspeechrecognitionmetadata/speakingrate.md)
+- [var speakingRate: Double](./speakingrate.md)
   The number of words spoken per minute.
-- [var speechStartTimestamp: TimeInterval](sfspeechrecognitionmetadata/speechstarttimestamp.md)
+- [var speechStartTimestamp: TimeInterval](./speechstarttimestamp.md)
   The start timestamp of speech in the audio.
 
 

@@ -1,7 +1,8 @@
 # kAXButtonRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A button.
 
@@ -12,6 +13,10 @@ A button.
 
 ```swift
 var kAXButtonRole: String { get }
+```
+
+```c
+#define kAXButtonRole
 ```
 
 

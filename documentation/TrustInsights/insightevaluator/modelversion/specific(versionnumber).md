@@ -1,7 +1,8 @@
 # InsightEvaluator.ModelVersion.specific(versionNumber:)
 
 **Framework**: Trust Insights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that defines a specific model version intended to be run in parallel with the latest version.
 
@@ -21,7 +22,8 @@ You can use this to enable validation of or update your your internal server-sid
 
 ## See Also
 
-- [InsightEvaluator.ModelVersion.current](insightevaluator/modelversion/current.md)
+### Enumeration Cases - generated
+- [InsightEvaluator.ModelVersion.current](./current.md)
   A value that defines the latest version and includes adjustments as fraud patterns change.
 
 

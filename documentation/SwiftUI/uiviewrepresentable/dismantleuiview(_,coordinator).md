@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Cleans up the presented UIKit view (and coordinator) in anticipation of their removal.
@@ -28,6 +29,12 @@ Use this method to perform additional clean-up work related to your custom view.
 
 - `uiView`: Your custom view object.
 - `coordinator`: The custom coordinator instance you use to communicate changes back to SwiftUI. If you do not use a custom coordinator, the system provides a default instance.
+
+## Default Implementations
+
+### UIViewRepresentable Implementations
+- [static func dismantleUIView(Self.UIViewType, coordinator: Self.Coordinator)](./dismantleuiview%28_,coordinator%29-94s0o.md)
+  Cleans up the presented UIKit view (and coordinator) in anticipation of their removal.
 
 
 ---

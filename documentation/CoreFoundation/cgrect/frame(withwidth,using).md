@@ -1,7 +1,8 @@
 # frame(withWidth:using:)
 
 **Framework**: Core Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a frame around the inside of this rect in the current NSGraphicsContext in the context’s fill color The compositing operation of the fill defaults to the context’s compositing operation, not necessarily using `.copy` like `NSFrameRect()`.
 
@@ -17,7 +18,7 @@ func frame(withWidth width: CGFloat = 1.0, using operation: NSCompositingOperati
 
 #### Discussion
 
-> **Note**: There must be a set current NSGraphicsContext.
+> **Precondition**: There must be a set current NSGraphicsContext.
 
 
 ---

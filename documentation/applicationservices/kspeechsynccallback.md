@@ -1,7 +1,8 @@
 # kSpeechSyncCallBack
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Set the callback function to be called when the Speech Synthesis Manager encounters a synchronization command within an embedded speech command in text being processed on the speech channel. 
 
@@ -14,11 +15,15 @@ Set the callback function to be called when the Speech Synthesis Manager encount
 let kSpeechSyncCallBack: CFString
 ```
 
+```c
+const CFStringRef kSpeechSyncCallBack;
+```
+
 #### Discussion
 
-The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined synchronization callback function, whose syntax is described in [`SpeechSyncProcPtr`](speechsyncprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the synchronization callback function.
+The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined synchronization callback function, whose syntax is described in [`SpeechSyncProcPtr`](./speechsyncprocptr.md). Passing a `CFNumber` object that contains the value `NULL` for the value of this property disables the synchronization callback function.
 
-This property works with the [`SetSpeechProperty(_:_:_:)`](1459256-setspeechproperty.md) function.
+This property works with the [`SetSpeechProperty(_:_:_:)`](./api-1459256-setspeechproperty.md) function.
 
 
 ---

@@ -1,7 +1,8 @@
 # cmCS1TRCTag
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The tag signature for profile tonal response curve data for the associated device.
 

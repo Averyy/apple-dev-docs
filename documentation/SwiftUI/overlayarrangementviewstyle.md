@@ -1,7 +1,8 @@
 # OverlayArrangementViewStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
 
@@ -29,7 +30,7 @@ An overlay arrangement view places a primary view and a secondary view in a stac
 - When someone holds a folded iPhone Duo in landscape orientation, the arrangement view places the secondary view in the leading position and the primary view in the trailing position.
 - When someone holds a folded iPhone Duo in portrait orientation, the arrangement view places the secondary view in the top position and the primary view in the bottom position.
 
-Create an overlay arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](view/arrangementviewstyle(_:).md) modifier with [`overlay`](arrangementviewstyle/overlay.md), as the following example shows:
+Create an overlay arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](./view/arrangementviewstyle%28_%29.md) modifier with [`overlay`](./arrangementviewstyle/overlay.md), as the following example shows:
 
 ```swift
 ArrangementView {
@@ -40,7 +41,7 @@ ArrangementView {
 .arrangementViewStyle(.overlay) 
 ```
 
-#### Limit an Overlay Arrangement By Orientation
+#### Limit an overlay arrangement by orientation
 
 You can limit which axes your overlay arrangement view supports by specifying the axes for the arrangement view style. The following example shows an arrangement that only functions vertically:
 
@@ -53,11 +54,11 @@ ArrangementView {
 .arrangementViewStyle(.overlay.axes(.vertical))
 ```
 
-Use [`axes(_:)`](overlayarrangementviewstyle/axes(_:).md) to set the axes for an overlay arrangement style. For axes that you don’t include, the arrangement view only displays the primary view.
+Use [`axes(_:)`](./overlayarrangementviewstyle/axes%28_%29.md) to set the axes for an overlay arrangement style. For axes that you don’t include, the arrangement view only displays the primary view.
 
-#### Customize a Folded Layout
+#### Customize a folded layout
 
-Add the horizontal [`overlayArrangementEdge(_:)`](view/overlayarrangementedge(_:)-8slwf.md) or vertical [`overlayArrangementEdge(_:)`](view/overlayarrangementedge(_:)-4tjwn.md) view modifier to adjust how the overlay arrangement positions the primary and secondary views on a folded iPhone Duo. The following example shows a modifier that causes the primary view to appear in the leading position instead of the trailing position when someone holds a folded iPhone Duo in landscape orientation:
+Add the horizontal [`overlayArrangementEdge(_:)`](./view/overlayarrangementedge%28_%29-8slwf.md) or vertical [`overlayArrangementEdge(_:)`](./view/overlayarrangementedge%28_%29-4tjwn.md) view modifier to adjust how the overlay arrangement positions the primary and secondary views on a folded iPhone Duo. The following example shows a modifier that causes the primary view to appear in the leading position instead of the trailing position when someone holds a folded iPhone Duo in landscape orientation:
 
 ```swift
 ArrangementView {
@@ -72,28 +73,29 @@ ArrangementView {
 ## Topics
 
 ### Creating an overlay arrangement view style
-- [init()](overlayarrangementviewstyle/init.md)
+- [init()](./overlayarrangementviewstyle/init%28%29.md)
   Creates an overlay arrangement style.
 ### Specifying overlay arrangement axes
-- [func axes(Axis.Set) -> OverlayArrangementViewStyle](overlayarrangementviewstyle/axes(_:).md)
+- [func axes(Axis.Set) -> OverlayArrangementViewStyle](./overlayarrangementviewstyle/axes%28_%29.md)
   Creates an overlay arrangement that lays out its views along the axes you provide.
 
 ## Relationships
 
 ### Conforms To
-- [ArrangementViewStyle](arrangementviewstyle.md)
+- [ArrangementViewStyle](./arrangementviewstyle.md)
 
 ## See Also
 
-- [static var automatic: AutomaticArrangementViewStyle](arrangementviewstyle/automatic.md)
+### Getting arrangement view styles
+- [static var automatic: AutomaticArrangementViewStyle](./arrangementviewstyle/automatic.md)
   The default arrangement view style.
-- [struct AutomaticArrangementViewStyle](automaticarrangementviewstyle.md)
+- [struct AutomaticArrangementViewStyle](./automaticarrangementviewstyle.md)
   The default arrangement view style.
-- [static var overlay: OverlayArrangementViewStyle](arrangementviewstyle/overlay.md)
+- [static var overlay: OverlayArrangementViewStyle](./arrangementviewstyle/overlay.md)
   A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
-- [static var split: SplitArrangementViewStyle](arrangementviewstyle/split.md)
+- [static var split: SplitArrangementViewStyle](./arrangementviewstyle/split.md)
   An arrangement view style that places the primary and secondary views side by side along one or more axes.
-- [struct SplitArrangementViewStyle](splitarrangementviewstyle.md)
+- [struct SplitArrangementViewStyle](./splitarrangementviewstyle.md)
   An arrangement view style that places the primary and secondary views side by side along one or more axes.
 
 

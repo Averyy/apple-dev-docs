@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first window.
 
@@ -22,13 +23,14 @@ var startIndex: Int { get }
 
 ## See Also
 
-- [var endIndex: Int](slidingwindows/endindex.md)
+### Inspecting the sliding window
+- [var endIndex: Int](./endindex.md)
   The collection’s “past the end” position–that is, the position one greater than the last valid subscript argument.
-- [let input: MLShapedArray<Scalar>](slidingwindows/input.md)
+- [let input: MLShapedArray<Scalar>](./input.md)
   The input shaped array.
-- [let length: Int](slidingwindows/length.md)
+- [let length: Int](./length.md)
   The number samples in each window.
-- [let stride: Int](slidingwindows/stride.md)
+- [let stride: Int](./stride.md)
   The number of samples between windows.
 
 

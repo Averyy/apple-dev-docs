@@ -1,7 +1,8 @@
 # CKAccountStatus
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the availability of the user’s iCloud account.
 
@@ -10,7 +11,7 @@ Constants that indicate the availability of the user’s iCloud account.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,35 +21,40 @@ Constants that indicate the availability of the user’s iCloud account.
 enum CKAccountStatus
 ```
 
+```c
+enum CKAccountStatus : NSInteger;
+```
+
 ## Topics
 
 ### Account Statuses
-- [CKAccountStatus.available](ckaccountstatus/available.md)
+- [CKAccountStatus.available](./ckaccountstatus/available.md)
   The user’s iCloud account is available.
-- [CKAccountStatus.couldNotDetermine](ckaccountstatus/couldnotdetermine.md)
+- [CKAccountStatus.couldNotDetermine](./ckaccountstatus/couldnotdetermine.md)
   CloudKit can’t determine the status of the user’s iCloud account.
-- [CKAccountStatus.noAccount](ckaccountstatus/noaccount.md)
+- [CKAccountStatus.noAccount](./ckaccountstatus/noaccount.md)
   The device doesn’t have an iCloud account.
-- [CKAccountStatus.restricted](ckaccountstatus/restricted.md)
+- [CKAccountStatus.restricted](./ckaccountstatus/restricted.md)
   The system denies access to the user’s iCloud account.
-- [CKAccountStatus.temporarilyUnavailable](ckaccountstatus/temporarilyunavailable.md)
+- [CKAccountStatus.temporarilyUnavailable](./ckaccountstatus/temporarilyunavailable.md)
   The user’s iCloud account is temporarily unavailable.
 ### Initializers
-- [init?(rawValue: Int)](ckaccountstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ckaccountstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accountStatus(completionHandler: (CKAccountStatus, (any Error)?) -> Void)](ckcontainer/accountstatus(completionhandler:).md)
+### Determining the User’s iCloud Access Status
+- [func accountStatus(completionHandler: (CKAccountStatus, (any Error)?) -> Void)](./ckcontainer/accountstatus%28completionhandler%29.md)
   Determines whether the system can access the user’s iCloud account.
 
 

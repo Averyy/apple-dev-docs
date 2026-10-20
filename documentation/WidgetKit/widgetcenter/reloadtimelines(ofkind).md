@@ -1,7 +1,8 @@
 # reloadTimelines(ofKind:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the timelines for all widgets of a particular kind.
 
@@ -25,7 +26,8 @@ func reloadTimelines(ofKind kind: String)
 
 ## See Also
 
-- [func reloadAllTimelines()](widgetcenter/reloadalltimelines.md)
+### Reloading Widget Timelines
+- [func reloadAllTimelines()](./reloadalltimelines%28%29.md)
   Reloads the timelines for all configured widgets belonging to the containing app.
 
 

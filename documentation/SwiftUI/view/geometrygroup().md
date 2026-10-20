@@ -1,7 +1,8 @@
 # geometryGroup()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Isolates the geometry (e.g. position and size) of the view from its parent view.
 
@@ -40,13 +41,14 @@ Returns: a new view whose geometry is isolated from that of its parent view.
 
 ## See Also
 
-- [func matchedGeometryEffect<ID>(id: ID, in: Namespace.ID, properties: MatchedGeometryProperties, anchor: UnitPoint, isSource: Bool) -> some View](view/matchedgeometryeffect(id:in:properties:anchor:issource:).md)
+### Synchronizing geometries
+- [func matchedGeometryEffect<ID>(id: ID, in: Namespace.ID, properties: MatchedGeometryProperties, anchor: UnitPoint, isSource: Bool) -> some View](./matchedgeometryeffect%28id,in,properties,anchor,issource%29.md)
   Defines a group of views with synchronized geometry using an identifier and namespace that you provide.
-- [struct MatchedGeometryProperties](matchedgeometryproperties.md)
+- [struct MatchedGeometryProperties](../matchedgeometryproperties.md)
   A set of view properties that may be synchronized between views using the `View.matchedGeometryEffect()` function.
-- [protocol GeometryEffect](geometryeffect.md)
+- [protocol GeometryEffect](../geometryeffect.md)
   An effect that changes the visual appearance of a view, largely without changing its ancestors or descendants.
-- [struct Namespace](namespace.md)
+- [struct Namespace](../namespace.md)
   A dynamic property type that allows access to a namespace defined by the persistent identity of the object containing the property (e.g. a view).
 
 

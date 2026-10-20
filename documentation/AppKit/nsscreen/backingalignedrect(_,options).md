@@ -1,7 +1,8 @@
 # backingAlignedRect(_:options:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a rectangle in global screen coordinates to a pixel aligned rectangle.
 
@@ -14,26 +15,31 @@ Converts a rectangle in global screen coordinates to a pixel aligned rectangle.
 func backingAlignedRect(_ rect: NSRect, options: AlignmentOptions = []) -> NSRect
 ```
 
+```objc
+- (NSRect) backingAlignedRect:(NSRect) rect options:(NSAlignmentOptions) options;
+```
+
 #### Return Value
 
 Returns a a pixel aligned rectangle on the target screen from the given input rectangle in global screen coordinates.
 
 #### Discussion
 
-This method uses [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/foundation/nsintegralrectwithoptions(_:_:)) to produce the pixel aligned rectangle.
+This method uses [`NSIntegralRectWithOptions(_:_:)`](../../Foundation/nsintegralrectwithoptions%28_,_%29.md) to produce the pixel aligned rectangle.
 
 ## Parameters
 
 - `rect`: The input rectangle in global screen coordinates.
-- `options`: Specifies the alignment options. See [`AlignmentOptions`](https://developer.apple.com/documentation/foundation/alignmentoptions) for possible values.
+- `options`: Specifies the alignment options. See [`AlignmentOptions`](../../Foundation/alignmentoptions.md) for possible values.
 
 ## See Also
 
-- [var backingScaleFactor: CGFloat](nsscreen/backingscalefactor.md)
+### Converting Between Screen and Backing Coordinates
+- [var backingScaleFactor: CGFloat](./backingscalefactor.md)
   The backing store pixel scale factor for the screen.
-- [func convertRectFromBacking(NSRect) -> NSRect](nsscreen/convertrectfrombacking(_:).md)
+- [func convertRectFromBacking(NSRect) -> NSRect](./convertrectfrombacking%28_%29.md)
   Converts the rectangle from the device pixel aligned coordinates system of a screen.
-- [func convertRectToBacking(NSRect) -> NSRect](nsscreen/convertrecttobacking(_:).md)
+- [func convertRectToBacking(NSRect) -> NSRect](./convertrecttobacking%28_%29.md)
   Converts the rectangle to the device pixel aligned coordinates system of a screen.
 
 

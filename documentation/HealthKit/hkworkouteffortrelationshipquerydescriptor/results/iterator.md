@@ -1,14 +1,15 @@
 # HKWorkoutEffortRelationshipQueryDescriptor.Results.Iterator
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -20,7 +21,7 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

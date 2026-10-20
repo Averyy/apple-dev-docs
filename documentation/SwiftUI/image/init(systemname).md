@@ -1,7 +1,8 @@
 # init(systemName:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a system symbol image.
 
@@ -22,9 +23,9 @@ init(systemName: String)
 
 #### Discussion
 
-This initializer creates an image using a system-provided symbol. Use [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/design/resources/#sf-symbols) to find symbols and their corresponding names.
+This initializer creates an image using a system-provided symbol. Use [SF Symbols](https://developer.apple.com/design/resources/#sf-symbols) to find symbols and their corresponding names.
 
-To create a custom symbol image from your app’s asset catalog, use [`init(_:bundle:)`](image/init(_:bundle:).md) instead.
+To create a custom symbol image from your app’s asset catalog, use [`init(_:bundle:)`](./init%28_,bundle%29.md) instead.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ To create a custom symbol image from your app’s asset catalog, use [`init(_:bu
 
 ## See Also
 
-- [init(systemName: String, variableValue: Double?)](image/init(systemname:variablevalue:).md)
+### Creating a system symbol image
+- [init(systemName: String, variableValue: Double?)](./init%28systemname,variablevalue%29.md)
   Creates a system symbol image with a variable value.
 
 

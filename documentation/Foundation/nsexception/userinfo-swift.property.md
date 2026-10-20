@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing application-specific data pertaining to the receiver.
 
@@ -20,17 +21,23 @@ A dictionary containing application-specific data pertaining to the receiver.
 var userInfo: [AnyHashable : Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary * userInfo;
+```
+
 #### Discussion
 
 `nil` if no application-specific data exists. As an example, if a method’s return value caused the exception to be raised, the return value might be available to the exception handler through this method.
 
 ## See Also
 
-- [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](nsexception/init(name:reason:userinfo:).md)
+### Related Documentation
+- [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](./init%28name,reason,userinfo%29.md)
   Initializes and returns a newly allocated exception object.
-- [var name: NSExceptionName](nsexception/name-swift.property.md)
+### Querying an NSException Object
+- [var name: NSExceptionName](./name-swift.property.md)
   A string used to uniquely identify the receiver.
-- [var reason: String?](nsexception/reason-swift.property.md)
+- [var reason: String?](./reason-swift.property.md)
   A string containing a “human-readable” reason for the receiver.
 
 

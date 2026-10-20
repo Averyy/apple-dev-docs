@@ -1,7 +1,8 @@
 # MPSGraphOptimization.level0
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Graph performs core optimizations only.
 
@@ -17,6 +18,10 @@ Graph performs core optimizations only.
 
 ```swift
 case level0
+```
+
+```c
+MPSGraphOptimizationLevel0
 ```
 
 

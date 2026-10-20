@@ -1,7 +1,8 @@
 # StorefrontsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a storefront request.
 
@@ -10,7 +11,7 @@ The response to a storefront request.
 
 ## Declaration
 
-```swift
+```
 object StorefrontsResponse
 ```
 

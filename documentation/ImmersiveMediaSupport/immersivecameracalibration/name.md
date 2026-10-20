@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string identifying this calibration.
 

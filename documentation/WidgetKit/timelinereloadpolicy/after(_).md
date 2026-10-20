@@ -1,7 +1,8 @@
 # after(_:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A policy that specifies a future date for WidgetKit to request a new timeline.
 
@@ -21,13 +22,14 @@ static func after(_ date: Date) -> TimelineReloadPolicy
 
 ## Mentions
 
-- [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
+- [Keeping a widget up to date](../keeping-a-widget-up-to-date.md)
 
 ## See Also
 
-- [static let atEnd: TimelineReloadPolicy](timelinereloadpolicy/atend.md)
+### Reload Policies
+- [static let atEnd: TimelineReloadPolicy](./atend.md)
   A policy that specifies that WidgetKit requests a new timeline after the last date in a timeline passes.
-- [static let never: TimelineReloadPolicy](timelinereloadpolicy/never.md)
+- [static let never: TimelineReloadPolicy](./never.md)
   A policy that specifies that the app prompts WidgetKit when a new timeline is available.
 
 

@@ -1,7 +1,8 @@
 # lineStyle(fromName:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a line style that corresponds to the specified name.
 
@@ -10,7 +11,7 @@ Returns a line style that corresponds to the specified name.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ Returns a line style that corresponds to the specified name.
 class func lineStyle(fromName name: String) -> PDFLineStyle
 ```
 
+```objc
++ (PDFLineStyle) lineStyleFromName:(NSString *) name;
+```
+
 ## Parameters
 
 - `name`: The name of a line style, which matches the definition in the Adobe PDF Specification.
 
 ## See Also
 
-- [var startPoint: CGPoint](pdfannotation/startpoint.md)
+### Configuring Line Annotations
+- [var startPoint: CGPoint](./startpoint.md)
   The point where a line begins, in annotation-space coordinates.
-- [var endPoint: CGPoint](pdfannotation/endpoint.md)
+- [var endPoint: CGPoint](./endpoint.md)
   The point where a line ends, in annotation-space coordinates.
-- [var startLineStyle: PDFLineStyle](pdfannotation/startlinestyle.md)
+- [var startLineStyle: PDFLineStyle](./startlinestyle.md)
   The style of the line annotation’s starting point, such as square or filled arrowhead.
-- [var endLineStyle: PDFLineStyle](pdfannotation/endlinestyle.md)
+- [var endLineStyle: PDFLineStyle](./endlinestyle.md)
   The style of the line annotation’s ending point, such as square or filled arrowhead.
-- [class func name(for: PDFLineStyle) -> String](pdfannotation/name(for:).md)
+- [class func name(for: PDFLineStyle) -> String](./name%28for%29.md)
   Returns the name of the line style, which matches the definition in the Adobe PDF Specification.
 
 

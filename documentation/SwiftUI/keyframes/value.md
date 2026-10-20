@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of value animated by this keyframes type
@@ -23,9 +24,10 @@ associatedtype Value = Self.Body.Value
 
 ## See Also
 
-- [var body: Self.Body](keyframes/body-swift.property.md)
+### Creating a keyframe
+- [var body: Self.Body](./body-swift.property.md)
   The composition of content that comprise the keyframes.
-- [associatedtype Body : Keyframes](keyframes/body-swift.associatedtype.md)
+- [associatedtype Body : Keyframes](./body-swift.associatedtype.md)
   The type of keyframes representing the body of this type.
 
 

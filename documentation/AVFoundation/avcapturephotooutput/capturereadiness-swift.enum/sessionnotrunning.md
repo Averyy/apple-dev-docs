@@ -1,7 +1,8 @@
 # AVCapturePhotoOutput.CaptureReadiness.sessionNotRunning
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the session isn’t running and the output isn’t ready to receive requests.
 
@@ -18,15 +19,20 @@ Indicates that the session isn’t running and the output isn’t ready to recei
 case sessionNotRunning
 ```
 
+```c
+AVCapturePhotoOutputCaptureReadinessSessionNotRunning
+```
+
 ## See Also
 
-- [AVCapturePhotoOutput.CaptureReadiness.notReadyMomentarily](avcapturephotooutput/capturereadiness-swift.enum/notreadymomentarily.md)
+### Readiness states
+- [AVCapturePhotoOutput.CaptureReadiness.notReadyMomentarily](./notreadymomentarily.md)
   Indicates that the output isn’t ready to receive requests, but may be ready shortly.
-- [AVCapturePhotoOutput.CaptureReadiness.notReadyWaitingForCapture](avcapturephotooutput/capturereadiness-swift.enum/notreadywaitingforcapture.md)
+- [AVCapturePhotoOutput.CaptureReadiness.notReadyWaitingForCapture](./notreadywaitingforcapture.md)
   Indicates that the output isn’t ready to receive requests for a longer duration because it’s busy capturing.
-- [AVCapturePhotoOutput.CaptureReadiness.notReadyWaitingForProcessing](avcapturephotooutput/capturereadiness-swift.enum/notreadywaitingforprocessing.md)
+- [AVCapturePhotoOutput.CaptureReadiness.notReadyWaitingForProcessing](./notreadywaitingforprocessing.md)
   Indicates that the output isn’t ready to receive requests for a longer duration because it’s busy processing.
-- [AVCapturePhotoOutput.CaptureReadiness.ready](avcapturephotooutput/capturereadiness-swift.enum/ready.md)
+- [AVCapturePhotoOutput.CaptureReadiness.ready](./ready.md)
   Indicates that the output is ready to receive new requests.
 
 

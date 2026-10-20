@@ -1,7 +1,8 @@
 # hasMotion
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the transition includes motion.
 
@@ -28,7 +29,8 @@ Defaults to `true`.
 
 ## See Also
 
-- [init(hasMotion: Bool)](transitionproperties/init(hasmotion:).md)
+### Creating the transition properties
+- [init(hasMotion: Bool)](./init%28hasmotion%29.md)
 
 
 ---

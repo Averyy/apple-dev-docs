@@ -1,7 +1,8 @@
 # init(identifier:keychainReference:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a quantum-secure pre-shared key (PPK) configuration.
 
@@ -19,10 +20,14 @@ Initializes a quantum-secure pre-shared key (PPK) configuration.
 init(identifier: String, keychainReference: Data)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier keychainReference:(NSData *) keychainReference;
+```
+
 ## Parameters
 
 - `identifier`: The identifier for the PPK.
-- `keychainReference`: A persistent reference to a keychain item with the class [`kSecClassGenericPassword`](https://developer.apple.com/documentation/security/ksecclassgenericpassword) that contains the PPK.
+- `keychainReference`: A persistent reference to a keychain item with the class [`kSecClassGenericPassword`](../../Security/ksecclassgenericpassword.md) that contains the PPK.
 
 
 ---

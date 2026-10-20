@@ -1,7 +1,8 @@
 # RangeSet.Ranges.Index
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a position in the collection.
 
@@ -19,6 +20,8 @@ A type that represents a position in the collection.
 ```swift
 typealias Index = Int
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Discussion
 

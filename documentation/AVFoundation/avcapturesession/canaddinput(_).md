@@ -1,7 +1,8 @@
 # canAddInput(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether you can add an input to a session.
 
@@ -19,13 +20,17 @@ Determines whether you can add an input to a session.
 func canAddInput(_ input: AVCaptureInput) -> Bool
 ```
 
+```objc
+- (BOOL) canAddInput:(AVCaptureInput *) input;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you can add the input to the session; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if you can add the input to the session; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method returns [`false`](https://developer.apple.com/documentation/swift/false) if you can’t add an input to a capture session. This occurs, for example, if you attempt to add the input to a session twice, or if the input already belongs to another capture session.
+This method returns [`false`](../../Swift/false.md) if you can’t add an input to a capture session. This occurs, for example, if you attempt to add the input to a session twice, or if the input already belongs to another capture session.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ This method returns [`false`](https://developer.apple.com/documentation/swift/fa
 
 ## See Also
 
-- [var inputs: [AVCaptureInput]](avcapturesession/inputs.md)
+### Configuring inputs
+- [var inputs: [AVCaptureInput]](./inputs.md)
   The inputs that provide media data to a capture session.
-- [func addInput(AVCaptureInput)](avcapturesession/addinput(_:).md)
+- [func addInput(AVCaptureInput)](./addinput%28_%29.md)
   Adds a capture input to the session.
-- [func removeInput(AVCaptureInput)](avcapturesession/removeinput(_:).md)
+- [func removeInput(AVCaptureInput)](./removeinput%28_%29.md)
   Removes an input from the session.
 
 

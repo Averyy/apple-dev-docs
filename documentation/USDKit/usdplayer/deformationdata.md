@@ -1,7 +1,8 @@
 # USDPlayer.DeformationData
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Deformation data for a single deformable mesh.
 
@@ -22,29 +23,29 @@ struct DeformationData
 ## Topics
 
 ### Structures
-- [USDPlayer.DeformationData.BlendShapeData](usdplayer/deformationdata/blendshapedata.md)
+- [USDPlayer.DeformationData.BlendShapeData](./deformationdata/blendshapedata.md)
   Blend shape targets and weights for morph-target deformation.
-- [USDPlayer.DeformationData.RenormalizationData](usdplayer/deformationdata/renormalizationdata.md)
+- [USDPlayer.DeformationData.RenormalizationData](./deformationdata/renormalizationdata.md)
   Triangle adjacency data for post-deformation normal renormalization.
-- [USDPlayer.DeformationData.SkinningData](usdplayer/deformationdata/skinningdata.md)
+- [USDPlayer.DeformationData.SkinningData](./deformationdata/skinningdata.md)
   Joint deformation data for a skinned mesh.
-- [USDPlayer.DeformationData.Update](usdplayer/deformationdata/update.md)
+- [USDPlayer.DeformationData.Update](./deformationdata/update.md)
   Delta update carrying only the deformation fields that changed since the last frame.
 ### Instance Properties
-- [let blendShapes: USDPlayer.DeformationData.BlendShapeData?](usdplayer/deformationdata/blendshapes.md)
+- [let blendShapes: USDPlayer.DeformationData.BlendShapeData?](./deformationdata/blendshapes.md)
   Blend shape deformation data.
-- [let id: USDPlayer.DeformationID](usdplayer/deformationdata/id.md)
+- [let id: USDPlayer.DeformationID](./deformationdata/id.md)
   Unique identifier for this deformation resource.
-- [let renormalization: USDPlayer.DeformationData.RenormalizationData?](usdplayer/deformationdata/renormalization.md)
+- [let renormalization: USDPlayer.DeformationData.RenormalizationData?](./deformationdata/renormalization.md)
   Renormalization data.
-- [let skinning: USDPlayer.DeformationData.SkinningData?](usdplayer/deformationdata/skinning.md)
+- [let skinning: USDPlayer.DeformationData.SkinningData?](./deformationdata/skinning.md)
   Skinning deformation data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # declineInvite(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Declines an invitation for the local player to join a turn-based match.
 
@@ -17,12 +18,20 @@ Declines an invitation for the local player to join a turn-based match.
 ## Declaration
 
 ```swift
+func declineInvite(completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func declineInvite() async throws
+```
+
+```objc
+- (void) declineInviteWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
@@ -30,15 +39,20 @@ When you provide a custom interface for managing matches, use this method to pro
 
 ## Parameters
 
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameter:
+
+  - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [class func find(for: GKMatchRequest, withCompletionHandler: (GKTurnBasedMatch?, (any Error)?) -> Void)](gkturnbasedmatch/find(for:withcompletionhandler:).md)
+### Creating a Match
+- [class func find(for: GKMatchRequest, withCompletionHandler: (GKTurnBasedMatch?, (any Error)?) -> Void)](./find%28for,withcompletionhandler%29.md)
   Creates a new match or finds an existing match that needs a player.
-- [func acceptInvite(completionHandler: ((GKTurnBasedMatch?, (any Error)?) -> Void)?)](gkturnbasedmatch/acceptinvite(completionhandler:).md)
+- [func acceptInvite(completionHandler: ((GKTurnBasedMatch?, (any Error)?) -> Void)?)](./acceptinvite%28completionhandler%29.md)
   Accepts an invitation for the local player to join a turn-based match.
-- [func rematch(completionHandler: ((GKTurnBasedMatch?, (any Error)?) -> Void)?)](gkturnbasedmatch/rematch(completionhandler:).md)
+- [func rematch(completionHandler: ((GKTurnBasedMatch?, (any Error)?) -> Void)?)](./rematch%28completionhandler%29.md)
   Creates a new turn-based match with the same participants from an existing match.
 
 

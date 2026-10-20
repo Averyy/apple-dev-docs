@@ -1,17 +1,20 @@
 # SecKeyRawVerify(_:_:_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Verifies a digital signature.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS 4.0+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 2.0+ - Deprecated in 15.0
+- iPadOS 2.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS 4.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 1.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use SecKeyVerifySignature
 
 ## Declaration
 
@@ -19,14 +22,18 @@ Verifies a digital signature.
 func SecKeyRawVerify(_ key: SecKey, _ padding: SecPadding, _ signedData: UnsafePointer<UInt8>, _ signedDataLen: Int, _ sig: UnsafePointer<UInt8>, _ sigLen: Int) -> OSStatus
 ```
 
+```c
+OSStatus SecKeyRawVerify(SecKeyRef key, SecPadding padding, const uint8_t *signedData, size_t signedDataLen, const uint8_t *sig, size_t sigLen);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 
 - `key`: Public key with which to verify the data.
-- `padding`: The type of padding used. Possible values are listed in [`SecPadding`](secpadding.md). Use [`PKCS1SHA1`](secpadding/pkcs1sha1.md) if you are verifying a PKCS1-style signature with DER encoding of the digest type and the signed data is a SHA1 digest of the actual data. Specify [`kSecPaddingNone`](secpadding/ksecpaddingnone.md) if no padding was used.
+- `padding`: The type of padding used. Possible values are listed in [`SecPadding`](./secpadding.md). Use [`PKCS1SHA1`](./secpadding/pkcs1sha1.md) if you are verifying a PKCS1-style signature with DER encoding of the digest type and the signed data is a SHA1 digest of the actual data. Specify [`kSecPaddingNone`](./secpadding/ksecpaddingnone.md) if no padding was used.
 - `signedData`: The data for which the signature is being verified. Typically, a digest of the actual data is signed.
 - `signedDataLen`: Length in bytes of the data in the `signedData` buffer.
 - `sig`: The digital signature to be verified.

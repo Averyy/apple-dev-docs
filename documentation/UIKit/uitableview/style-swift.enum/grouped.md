@@ -1,21 +1,26 @@
 # UITableView.Style.grouped
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A table view where sections have distinct groups of rows.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case grouped
+```
+
+```c
+UITableViewStyleGrouped
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ Section headers and footers don’t float when the table view scrolls.
 
 ## See Also
 
-- [UITableView.Style.plain](uitableview/style-swift.enum/plain.md)
+### Styles
+- [UITableView.Style.plain](./plain.md)
   A plain table view.
-- [UITableView.Style.insetGrouped](uitableview/style-swift.enum/insetgrouped.md)
+- [UITableView.Style.insetGrouped](./insetgrouped.md)
   A table view where the grouped sections are inset with rounded corners.
 
 

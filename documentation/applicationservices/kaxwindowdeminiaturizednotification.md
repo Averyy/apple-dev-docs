@@ -1,7 +1,8 @@
 # kAXWindowDeminiaturizedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The window was moved out of the Dock.
 
@@ -12,6 +13,10 @@ The window was moved out of the Dock.
 
 ```swift
 var kAXWindowDeminiaturizedNotification: String { get }
+```
+
+```c
+#define kAXWindowDeminiaturizedNotification
 ```
 
 

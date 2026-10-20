@@ -1,7 +1,8 @@
 # IOUSBInterfaceAssociationDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a USB interface association descriptor.
 
@@ -10,17 +11,18 @@ A pointer to a USB interface association descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBInterfaceAssociationDescriptor *IOUSBInterfaceAssociationDescriptorPtr;
 ```
 
 ## See Also
 
-- [IOUSBInterfaceDescriptor](iousbinterfacedescriptor.md)
+### Interface Descriptors
+- [IOUSBInterfaceDescriptor](./iousbinterfacedescriptor.md)
   A descriptor for a specific interface of a USB device.
-- [IOUSBInterfaceDescriptorPtr](iousbinterfacedescriptorptr.md)
+- [IOUSBInterfaceDescriptorPtr](./iousbinterfacedescriptorptr.md)
   A pointer to a USB interface descriptor.
-- [IOUSBInterfaceAssociationDescriptor](iousbinterfaceassociationdescriptor.md)
+- [IOUSBInterfaceAssociationDescriptor](./iousbinterfaceassociationdescriptor.md)
   The descriptor that associates multiple interfaces to the same function.
 
 

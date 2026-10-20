@@ -1,7 +1,8 @@
 # IOUSBHubStatusPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a USB hub status structure.
 
@@ -10,17 +11,18 @@ A pointer to a USB hub status structure.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBHubStatus *IOUSBHubStatusPtr;
 ```
 
 ## See Also
 
-- [IOUSB30HubPortStatusExt](iousb30hubportstatusext.md)
+### Hub Port Status Requests
+- [IOUSB30HubPortStatusExt](./iousb30hubportstatusext.md)
   A structure that represents an extension to the USB 3.0 hub port status.
-- [IOUSBHubPortStatus](iousbhubportstatus.md)
+- [IOUSBHubPortStatus](./iousbhubportstatus.md)
   A structure that contains the USB hub port status.
-- [IOUSBHubStatus](iousbhubstatus.md)
+- [IOUSBHubStatus](./iousbhubstatus.md)
   A structure that represents the USB hub status.
 
 

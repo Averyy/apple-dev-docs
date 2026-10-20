@@ -1,7 +1,8 @@
 # CMBufferQueueGetBufferCount(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the number of buffers in the queue.
 
@@ -20,6 +21,10 @@ Gets the number of buffers in the queue.
 func CMBufferQueueGetBufferCount(_ queue: CMBufferQueue) -> CMItemCount
 ```
 
+```c
+extern CMItemCount CMBufferQueueGetBufferCount(CMBufferQueueRef queue);
+```
+
 #### Return Value
 
 Returns the number of buffers in the `CMBufferQueue`.
@@ -30,15 +35,16 @@ Returns the number of buffers in the `CMBufferQueue`.
 
 ## See Also
 
-- [func CMBufferQueueIsEmpty(CMBufferQueue) -> Bool](cmbufferqueueisempty(_:).md)
+### Inspecting a Queue
+- [func CMBufferQueueIsEmpty(CMBufferQueue) -> Bool](./cmbufferqueueisempty%28_%29.md)
   Returns a Boolean value that indicates whether a buffer queue is empty.
-- [func CMBufferQueueGetTotalSize(CMBufferQueue) -> Int](cmbufferqueuegettotalsize(_:).md)
+- [func CMBufferQueueGetTotalSize(CMBufferQueue) -> Int](./cmbufferqueuegettotalsize%28_%29.md)
   Gets the total size of all sample buffers of a buffer queue.
-- [func CMBufferQueueGetHead(CMBufferQueue) -> CMBuffer?](cmbufferqueuegethead(_:).md)
+- [func CMBufferQueueGetHead(CMBufferQueue) -> CMBuffer?](./cmbufferqueuegethead%28_%29.md)
   Retrieves the next buffer from a queue, but doesn’t remove it.
-- [func CMBufferQueueContainsEndOfData(CMBufferQueue) -> Bool](cmbufferqueuecontainsendofdata(_:).md)
+- [func CMBufferQueueContainsEndOfData(CMBufferQueue) -> Bool](./cmbufferqueuecontainsendofdata%28_%29.md)
   Returns a Boolean value that indicates whether a buffer queue has its end-of-data marker set.
-- [func CMBufferQueueIsAtEndOfData(CMBufferQueue) -> Bool](cmbufferqueueisatendofdata(_:).md)
+- [func CMBufferQueueIsAtEndOfData(CMBufferQueue) -> Bool](./cmbufferqueueisatendofdata%28_%29.md)
   Returns a Boolean value that indicates whether a buffer queue has its end-of-data marker set, and is now empty.
 
 

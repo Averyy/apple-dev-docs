@@ -1,7 +1,8 @@
 # dilationRates
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dilation rates for spatial dimensions.
 
@@ -17,6 +18,10 @@ The dilation rates for spatial dimensions.
 
 ```swift
 var dilationRates: [NSNumber] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSArray<NSNumber *> * dilationRates;
 ```
 
 #### Discussion

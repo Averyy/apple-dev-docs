@@ -1,7 +1,8 @@
 # stateHash(for:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns state hash data for the given companion type.
 
@@ -15,6 +16,10 @@ Returns state hash data for the given companion type.
 
 ```swift
 func stateHash(for companionType: LACompanionType) -> Data?
+```
+
+```objc
+- (NSData *) stateHashForCompanionType:(LACompanionType) companionType;
 ```
 
 #### Discussion

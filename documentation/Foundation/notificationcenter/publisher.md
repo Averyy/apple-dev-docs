@@ -1,7 +1,8 @@
 # NotificationCenter.Publisher
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that emits elements when broadcasting notifications.
 
@@ -23,30 +24,31 @@ struct Publisher
 ## Topics
 
 ### Declaring Publisher Topography
-- [NotificationCenter.Publisher.Output](notificationcenter/publisher/output.md)
+- [NotificationCenter.Publisher.Output](./publisher/output.md)
   The kind of values published by this publisher.
-- [NotificationCenter.Publisher.Failure](notificationcenter/publisher/failure.md)
+- [NotificationCenter.Publisher.Failure](./publisher/failure.md)
   The kind of errors this publisher might publish.
 ### Creating a Notification Publisher
-- [init(center: NotificationCenter, name: Notification.Name, object: AnyObject?)](notificationcenter/publisher/init(center:name:object:).md)
+- [init(center: NotificationCenter, name: Notification.Name, object: AnyObject?)](./publisher/init%28center,name,object%29.md)
   Creates a publisher that emits events when broadcasting notifications.
 ### Inspecting Notification Center Properties
-- [let center: NotificationCenter](notificationcenter/publisher/center.md)
+- [let center: NotificationCenter](./publisher/center.md)
   The notification center this publisher uses as a source.
-- [let name: Notification.Name](notificationcenter/publisher/name.md)
+- [let name: Notification.Name](./publisher/name.md)
   The name of notifications published by this publisher.
-- [let object: AnyObject?](notificationcenter/publisher/object.md)
+- [let object: AnyObject?](./publisher/object.md)
   The object posting the named notfication.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](../combine/publisher.md)
+- [Equatable](../../Swift/equatable.md)
+- [Publisher](../../Combine/publisher.md)
 
 ## See Also
 
-- [func publisher(for: Notification.Name, object: AnyObject?) -> NotificationCenter.Publisher](notificationcenter/publisher(for:object:).md)
+### Receiving notifications as a Combine publisher
+- [func publisher(for: Notification.Name, object: AnyObject?) -> NotificationCenter.Publisher](./publisher%28for,object%29.md)
   Returns a publisher that emits events when broadcasting notifications.
 
 

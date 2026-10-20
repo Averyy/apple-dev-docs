@@ -2,6 +2,7 @@
 
 **Framework**: MusicKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The associated type that contains the set of properties your app uses to sort results for a library request.

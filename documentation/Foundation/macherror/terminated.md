@@ -1,7 +1,8 @@
 # terminated
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Object has been terminated and is no longer available.
 

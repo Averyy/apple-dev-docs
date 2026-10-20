@@ -1,12 +1,15 @@
 # NSEPSImageRep
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that can render an image from encapsulated PostScript (EPS) code.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 14.0
+
+> **Deprecated**: `NSEPSImageRep` instances cannot be created on macOS 14.0 and later
 
 ## Declaration
 
@@ -14,41 +17,46 @@ An object that can render an image from encapsulated PostScript (EPS) code.
 class NSEPSImageRep
 ```
 
+```objc
+@interface NSEPSImageRep : NSImageRep
+```
+
 ## Topics
 
 ### Creating Representations of Images from EPS Data
-- [init?(data: Data)](nsepsimagerep/init(data:).md)
+- [init?(data: Data)](./nsepsimagerep/init%28data%29.md)
   Returns a representation of an image initialized with the specified EPS data.
 ### Getting Data
-- [var boundingBox: NSRect](nsepsimagerep/boundingbox.md)
+- [var boundingBox: NSRect](./nsepsimagerep/boundingbox.md)
   The rectangle that bounds the image representation.
-- [var epsRepresentation: Data](nsepsimagerep/epsrepresentation.md)
+- [var epsRepresentation: Data](./nsepsimagerep/epsrepresentation.md)
   The EPS representation of the image representation.
 ### Drawing Images
-- [func prepareGState()](nsepsimagerep/preparegstate.md)
+- [func prepareGState()](./nsepsimagerep/preparegstate%28%29.md)
   Implemented by subclasses to configure the graphics state prior to drawing.
 
 ## Relationships
 
 ### Inherits From
-- [NSImageRep](nsimagerep.md)
+- [NSImageRep](./nsimagerep.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSPDFImageRep](nspdfimagerep.md)
+### Vector Formats
+- [class NSPDFImageRep](./nspdfimagerep.md)
   An object that can render an image from a PDF format data stream.
-- [class NSPDFInfo](nspdfinfo.md)
+- [class NSPDFInfo](./nspdfinfo.md)
   An object that stores information associated with the creation of a PDF file, such as its URL, tag names, page orientation, and paper size.
 
 

@@ -1,14 +1,15 @@
 # IOUSBGetEndpointSynchronizationType
 
 **Framework**: USBDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t IOUSBGetEndpointSynchronizationType(const IOUSBEndpointDescriptor *descriptor);
 ```
 
@@ -28,8 +29,9 @@ This method parses an endpoint descriptor to determine its synchronization type.
 
 ## See Also
 
-- [IOUSBGetEndpointUsageType](iousbgetendpointusagetype.md)
-- [IOUSBGetPlatformCapabilityDescriptorWithUUID](iousbgetplatformcapabilitydescriptorwithuuid.md)
+### Functions
+- [IOUSBGetEndpointUsageType](./iousbgetendpointusagetype.md)
+- [IOUSBGetPlatformCapabilityDescriptorWithUUID](./iousbgetplatformcapabilitydescriptorwithuuid.md)
 
 
 ---

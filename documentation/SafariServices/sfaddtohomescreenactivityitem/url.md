@@ -2,6 +2,7 @@
 
 **Framework**: Safari Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The bookmark’s URL.
@@ -18,11 +19,16 @@ The bookmark’s URL.
 var url: URL { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSURL * URL;
+```
+
 ## See Also
 
-- [var iconItemProvider: NSItemProvider?](sfaddtohomescreenactivityitem/iconitemprovider.md)
+### Describing a bookmark or web app
+- [var iconItemProvider: NSItemProvider?](./iconitemprovider.md)
   An object that conveys the bookmark’s icon to the system.
-- [var title: String](sfaddtohomescreenactivityitem/title.md)
+- [var title: String](./title.md)
   The bookmark’s title.
 
 

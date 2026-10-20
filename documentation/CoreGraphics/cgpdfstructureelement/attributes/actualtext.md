@@ -1,7 +1,8 @@
 # actualText
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Text that is an exact replacement for the element and its children, used when extracting the document’s contents.
 

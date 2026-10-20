@@ -1,7 +1,8 @@
 # serviceGroups
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of all service groups in the home.
 
@@ -19,19 +20,24 @@ An array of all service groups in the home.
 var serviceGroups: [HMServiceGroup] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMServiceGroup *> * serviceGroups;
+```
+
 #### Discussion
 
-Services groups are instances of [`HMServiceGroup`](hmservicegroup.md).
+Services groups are instances of [`HMServiceGroup`](../hmservicegroup.md).
 
 ## See Also
 
-- [func servicesWithTypes([String]) -> [HMService]?](hmhome/serviceswithtypes(_:).md)
+### Grouping services
+- [func servicesWithTypes([String]) -> [HMService]?](./serviceswithtypes%28_%29.md)
   Returns an array of all services provided by accessories in the home that match the specified types.
-- [func addServiceGroup(withName: String, completionHandler: (HMServiceGroup?, (any Error)?) -> Void)](hmhome/addservicegroup(withname:completionhandler:).md)
+- [func addServiceGroup(withName: String, completionHandler: (HMServiceGroup?, (any Error)?) -> Void)](./addservicegroup%28withname,completionhandler%29.md)
   Adds a service group to the home.
-- [func removeServiceGroup(HMServiceGroup, completionHandler: ((any Error)?) -> Void)](hmhome/removeservicegroup(_:completionhandler:).md)
+- [func removeServiceGroup(HMServiceGroup, completionHandler: ((any Error)?) -> Void)](./removeservicegroup%28_,completionhandler%29.md)
   Removes a service group from the home.
-- [class HMServiceGroup](hmservicegroup.md)
+- [class HMServiceGroup](../hmservicegroup.md)
   A collection of accessory services.
 
 

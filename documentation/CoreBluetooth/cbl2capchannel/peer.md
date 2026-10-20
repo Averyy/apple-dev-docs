@@ -1,7 +1,8 @@
 # peer
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The peer connected to the channel.
 
@@ -18,6 +19,10 @@ The peer connected to the channel.
 
 ```swift
 var peer: CBPeer! { get }
+```
+
+```objc
+@property (nonatomic, readonly) CBPeer * peer;
 ```
 
 

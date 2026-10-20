@@ -1,7 +1,8 @@
 # isCertificate(_:equalTo:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 class func isCertificate(_ certificate1: Data, equalTo certificate2: Data) -> Bool
+```
+
+```objc
++ (BOOL) isCertificate:(MTRCertificateDERBytes) certificate1 equalTo:(MTRCertificateDERBytes) certificate2;
 ```
 
 

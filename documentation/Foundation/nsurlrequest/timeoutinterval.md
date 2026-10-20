@@ -1,7 +1,8 @@
 # timeoutInterval
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s timeout interval, in seconds.
 
@@ -20,19 +21,25 @@ The request’s timeout interval, in seconds.
 var timeoutInterval: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval timeoutInterval;
+```
+
 #### Discussion
 
 If during a connection attempt the request remains idle for longer than the timeout interval, the request is considered to have timed out.
 
 ## See Also
 
-- [var timeoutInterval: TimeInterval](nsmutableurlrequest/timeoutinterval.md)
+### Related Documentation
+- [var timeoutInterval: TimeInterval](../nsmutableurlrequest/timeoutinterval.md)
   The request’s timeout interval, in seconds.
-- [var httpShouldHandleCookies: Bool](nsurlrequest/httpshouldhandlecookies.md)
+### Controlling request behavior
+- [var httpShouldHandleCookies: Bool](./httpshouldhandlecookies.md)
   A Boolean value that indicates whether the default cookie handling will be used for this request.
-- [var httpShouldUsePipelining: Bool](nsurlrequest/httpshouldusepipelining.md)
+- [var httpShouldUsePipelining: Bool](./httpshouldusepipelining.md)
   A Boolean value that indicates whether the request should continue transmitting data before receiving a response from an earlier transmission.
-- [var allowsCellularAccess: Bool](nsurlrequest/allowscellularaccess.md)
+- [var allowsCellularAccess: Bool](./allowscellularaccess.md)
   A Boolean value that indicates whether the request is allowed to use the cellular radio (if present).
 
 

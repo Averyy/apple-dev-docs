@@ -1,7 +1,8 @@
 # inner(color:radius:x:y:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom inner shadow style.
 
@@ -37,7 +38,8 @@ Inner shadows draw on top of the source content by blurring, tinting, inverting 
 
 ## See Also
 
-- [static func drop(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> ShadowStyle](shadowstyle/drop(color:radius:x:y:).md)
+### Getting shadow styles
+- [static func drop(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> ShadowStyle](./drop%28color,radius,x,y%29.md)
   Creates a custom drop shadow style.
 
 

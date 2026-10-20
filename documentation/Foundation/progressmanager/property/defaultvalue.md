@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The default value to return when property is not set to a specific value.

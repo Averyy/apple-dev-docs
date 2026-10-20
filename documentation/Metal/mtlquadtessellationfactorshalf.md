@@ -1,17 +1,18 @@
 # MTLQuadTessellationFactorsHalf
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The per-patch tessellation factors for a quad patch.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,38 +20,43 @@ The per-patch tessellation factors for a quad patch.
 struct MTLQuadTessellationFactorsHalf
 ```
 
+```c
+typedef struct { ... } MTLQuadTessellationFactorsHalf;
+```
+
 #### Overview
 
-Refer to the [`Tessellation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Tessellation/Tessellation.html#//apple_ref/doc/uid/TP40014221-CH15) chapter of the [`Metal Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221) for further information.
+Refer to the [Tessellation](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Tessellation/Tessellation.html#//apple_ref/doc/uid/TP40014221-CH15) chapter of the [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221) for further information.
 
 ## Topics
 
 ### Initializers
-- [init()](mtlquadtessellationfactorshalf/init.md)
+- [init()](./mtlquadtessellationfactorshalf/init%28%29.md)
   Returns a new per-patch tessellation factors structure.
-- [init(edgeTessellationFactor: (UInt16, UInt16, UInt16, UInt16), insideTessellationFactor: (UInt16, UInt16))](mtlquadtessellationfactorshalf/init(edgetessellationfactor:insidetessellationfactor:).md)
+- [init(edgeTessellationFactor: (UInt16, UInt16, UInt16, UInt16), insideTessellationFactor: (UInt16, UInt16))](./mtlquadtessellationfactorshalf/init%28edgetessellationfactor,insidetessellationfactor%29.md)
   Returns a new per-patch tessellation factors structure with the specified parameters.
 ### Instance Properties
-- [var edgeTessellationFactor: (UInt16, UInt16, UInt16, UInt16)](mtlquadtessellationfactorshalf/edgetessellationfactor.md)
+- [var edgeTessellationFactor: (UInt16, UInt16, UInt16, UInt16)](./mtlquadtessellationfactorshalf/edgetessellationfactor.md)
   The edge tessellation factors, with each index value providing the tessellation factor for a particular edge.
-- [var insideTessellationFactor: (UInt16, UInt16)](mtlquadtessellationfactorshalf/insidetessellationfactor.md)
+- [var insideTessellationFactor: (UInt16, UInt16)](./mtlquadtessellationfactorshalf/insidetessellationfactor.md)
   The inside tessellation factors, with the value in index 0 providing the horizontal tessellation factor and the value in index 1 providing the vertical tessellation factor.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MTLViewport](mtlviewport.md)
+### Dynamic render pipeline states
+- [struct MTLViewport](./mtlviewport.md)
   A 3D rectangular region for the viewport clipping.
-- [struct MTLScissorRect](mtlscissorrect.md)
+- [struct MTLScissorRect](./mtlscissorrect.md)
   A rectangle for the scissor fragment test.
-- [struct MTLVertexAmplificationViewMapping](mtlvertexamplificationviewmapping.md)
+- [struct MTLVertexAmplificationViewMapping](./mtlvertexamplificationviewmapping.md)
   An offset applied to a render target index and viewport index.
-- [struct MTLTriangleTessellationFactorsHalf](mtltriangletessellationfactorshalf.md)
+- [struct MTLTriangleTessellationFactorsHalf](./mtltriangletessellationfactorshalf.md)
   The per-patch tessellation factors for a triangle patch.
 
 

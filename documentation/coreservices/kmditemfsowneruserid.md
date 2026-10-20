@@ -1,7 +1,8 @@
 # kMDItemFSOwnerUserID
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The user ID of the owner of the file. A CFNumber.
 
@@ -12,6 +13,10 @@ The user ID of the owner of the file. A CFNumber.
 
 ```swift
 let kMDItemFSOwnerUserID: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSOwnerUserID;
 ```
 
 

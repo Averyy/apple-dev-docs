@@ -1,7 +1,8 @@
 # UIActivityCollaborationMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that defines how the system shares an item.
 
@@ -17,29 +18,34 @@ A value that defines how the system shares an item.
 enum UIActivityCollaborationMode
 ```
 
+```c
+enum UIActivityCollaborationMode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UIActivityCollaborationMode.collaborate](uiactivitycollaborationmode/collaborate.md)
+- [UIActivityCollaborationMode.collaborate](./uiactivitycollaborationmode/collaborate.md)
   The system allows collaboration on a shared item.
-- [UIActivityCollaborationMode.sendCopy](uiactivitycollaborationmode/sendcopy.md)
+- [UIActivityCollaborationMode.sendCopy](./uiactivitycollaborationmode/sendcopy.md)
   The system sends a copy of the item.
 ### Initializers
-- [init?(rawValue: Int)](uiactivitycollaborationmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiactivitycollaborationmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIActivityViewController.CollaborationModeRestriction](uiactivityviewcontroller/collaborationmoderestriction.md)
+### Restricting the sharing mode
+- [UIActivityViewController.CollaborationModeRestriction](./uiactivityviewcontroller/collaborationmoderestriction.md)
   An object that disables the sharing mode and optionally displays an alert.
 
 

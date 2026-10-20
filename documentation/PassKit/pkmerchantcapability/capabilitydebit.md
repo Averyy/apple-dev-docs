@@ -1,15 +1,16 @@
 # capabilityDebit
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
-- macOS 11.0+
-- visionOS ?+
-- watchOS 3.0+
+- iOS 9.0+ - Deprecated in 17.0 (renamed: debit)
+- iPadOS 9.0+ - Deprecated in 17.0 (renamed: debit)
+- Mac Catalyst 9.0+ - Deprecated in 17.0 (renamed: debit)
+- macOS 11.0+ - Deprecated in 14.0 (renamed: debit)
+- visionOS
+- watchOS 3.0+ - Deprecated in 10.0 (renamed: debit)
 
 ## Declaration
 

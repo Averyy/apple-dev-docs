@@ -1,7 +1,8 @@
 # loadNibNamed(_:owner:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unarchives the contents of a nib file located in the receiver’s bundle.
 
@@ -10,12 +11,18 @@ Unarchives the contents of a nib file located in the receiver’s bundle.
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
 - tvOS 9.0+
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Loading Interface Builder products will not be supported in a future version of visionOS.
 
 ## Declaration
 
 ```swift
 func loadNibNamed(_ name: String, owner: Any?, options: [UINib.OptionsKey : Any]? = nil) -> [Any]?
+```
+
+```objc
+- (NSArray *) loadNibNamed:(NSString *) name owner:(id) owner options:(NSDictionary<NSString *,id> *) options;
 ```
 
 #### Return Value
@@ -24,7 +31,7 @@ An array containing the top-level objects in the nib file. The array does not co
 
 #### Discussion
 
-You can use this method to load user interfaces and make the objects available to your code. During the loading process, this method unarchives each object, initializes it, sets its properties to their configured values, and reestablishes any connections to other objects. (To establish outlet connections, this method uses the `setValue:forKey:` method, which may cause the object in the outlet to be retained automatically.) For detailed information about the nib-loading process, see [`Resource Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i).
+You can use this method to load user interfaces and make the objects available to your code. During the loading process, this method unarchives each object, initializes it, sets its properties to their configured values, and reestablishes any connections to other objects. (To establish outlet connections, this method uses the `setValue:forKey:` method, which may cause the object in the outlet to be retained automatically.) For detailed information about the nib-loading process, see [Resource Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i).
 
 If the nib file contains any proxy objects beyond just the File’s Owner proxy object, you can specify the runtime replacement objects for those proxies using the options dictionary. In that dictionary, add the `UINibExternalObjects` key and set its value to a dictionary containing the names of any proxy objects (the keys) and the real objects to use in their place. The proxy object’s name is the string you assign to it in the Identifier field of the Interface Builder inspector window.
 
@@ -36,7 +43,8 @@ If the nib file contains any proxy objects beyond just the File’s Owner proxy 
 
 ## See Also
 
-- [func loadNibNamed(NSNib.Name, owner: Any?, topLevelObjects: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> Bool](bundle/loadnibnamed(_:owner:toplevelobjects:).md)
+### Loading nib files
+- [func loadNibNamed(NSNib.Name, owner: Any?, topLevelObjects: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> Bool](./loadnibnamed%28_,owner,toplevelobjects%29.md)
   Loads a nib from the bundle with the specified file name and owner.
 
 

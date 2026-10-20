@@ -1,7 +1,8 @@
 # setValue(_:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the normalized value of the axis.
 
@@ -19,13 +20,18 @@ Sets the normalized value of the axis.
 func setValue(_ value: Float)
 ```
 
+```objc
+- (void) setValue:(float) value;
+```
+
 ## Parameters
 
 - `value`: A normalized value ranging from `-1` to `1` where `0` is in the dead zone.
 
 ## See Also
 
-- [var value: Float](gccontrolleraxisinput/value.md)
+### Accessing the input values
+- [var value: Float](./value.md)
   The current value of the axis.
 
 

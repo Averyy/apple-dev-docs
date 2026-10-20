@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A configuration for an executor capable of running this model.
@@ -22,7 +23,8 @@ var executorConfiguration: Self.Executor.Configuration { get }
 
 ## See Also
 
-- [associatedtype Executor : LanguageModelExecutor](languagemodel/executor.md)
+### Getting the executor configuration
+- [associatedtype Executor : LanguageModelExecutor](./executor.md)
 
 
 ---

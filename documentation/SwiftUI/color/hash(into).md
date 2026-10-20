@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of the color by feeding them into the given hash function.
 
@@ -26,7 +27,8 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [static func == (Color, Color) -> Bool](color/==(_:_:).md)
+### Comparing colors
+- [static func == (Color, Color) -> Bool](./eqeq%28_,_%29.md)
   Indicates whether two colors are equal.
 
 

@@ -1,7 +1,8 @@
 # init(shape:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -19,7 +20,8 @@ init(shape: [Int])
 
 ## See Also
 
-- [init(MLMultiArray)](mldatavalue/multiarraytype/init(_:).md)
+### Creating an array type
+- [init(MLMultiArray)](./init%28_%29.md)
 
 
 ---

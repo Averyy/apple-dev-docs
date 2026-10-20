@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the map size object.
 
@@ -10,7 +11,7 @@ Returns a copy of the map size object.
 
 ## Declaration
 
-```swift
+```
 copy(): MapSize;
 ```
 
@@ -20,7 +21,8 @@ A MapSize object that is a copy of the original.
 
 ## See Also
 
-- [equals(anotherSize)](mapsize/equals.md)
+### Copying and comparing map sizes
+- [equals(anotherSize)](./equals.md)
   Compares the sizes of two maps and indicates whether they’re of equal value.
 
 

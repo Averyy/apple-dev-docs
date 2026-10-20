@@ -1,7 +1,8 @@
 # init(forward:up:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose with the specified forward and up vectors.
 

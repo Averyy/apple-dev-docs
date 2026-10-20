@@ -1,7 +1,8 @@
 # USDTransformOperation.Precision.double
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Double precision (64-bit).
 

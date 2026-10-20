@@ -1,7 +1,8 @@
 # setVertexAmplificationCount(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the vertex amplification count and its view mapping for each amplification ID.
 
@@ -25,11 +26,12 @@ Each view mapping element describes how to route the corresponding amplification
 
 ## Parameters
 
-- `viewMappings`: A Swift array of [`MTLVertexAmplificationViewMapping`](mtlvertexamplificationviewmapping.md) elements. Each element in the array provides per-output offsets to a specific render target and viewport
+- `viewMappings`: A Swift array of [`MTLVertexAmplificationViewMapping`](../mtlvertexamplificationviewmapping.md) elements. Each element in the array provides per-output offsets to a specific render target and viewport
 
 ## See Also
 
-- [func setVertexAmplificationCount(Int)](mtl4rendercommandencoder/setvertexamplificationcount(_:)-85tu1.md)
+### Configuring vertex amplification
+- [func setVertexAmplificationCount(Int)](./setvertexamplificationcount%28_%29-85tu1.md)
   Sets the vertex amplification count and its view mapping for each amplification ID.
 
 

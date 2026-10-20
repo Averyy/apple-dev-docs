@@ -1,7 +1,8 @@
 # sliceGradientTensor(_:fwdInShapeTensor:starts:ends:strides:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a strided-slice gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a strided-slice gradient operation and returns the result tensor.
 
 ```swift
 func sliceGradientTensor(_ inputGradientTensor: MPSGraphTensor, fwdInShapeTensor: MPSGraphTensor, starts: [NSNumber], ends: [NSNumber], strides: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) sliceGradientTensor:(MPSGraphTensor *) inputGradientTensor fwdInShapeTensor:(MPSGraphTensor *) fwdInShapeTensor starts:(NSArray<NSNumber *> *) starts ends:(NSArray<NSNumber *> *) ends strides:(NSArray<NSNumber *> *) strides name:(NSString *) name;
 ```
 
 #### Return Value

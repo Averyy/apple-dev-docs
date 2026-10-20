@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the classifier metrics that’s suitable for output during debugging.
 
@@ -21,9 +22,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlclassifiermetrics/description.md)
+### Describing metrics
+- [var description: String](./description.md)
   A text representation of the classifier metrics.
-- [var playgroundDescription: Any](mlclassifiermetrics/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the classifier metrics shown in a playground.
 
 

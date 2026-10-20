@@ -1,7 +1,8 @@
 # cardinal
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interpolate data points with cardinal spline.
 

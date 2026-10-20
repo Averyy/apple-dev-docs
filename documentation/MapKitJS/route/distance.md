@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The route distance, in meters.
 
@@ -10,25 +11,26 @@ The route distance, in meters.
 
 ## Declaration
 
-```swift
+```
 distance: number;
 ```
 
 #### Discussion
 
-This property reflects the distance that the user covers while traversing the path of the route. It isn’t a straight line distance between the [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
+This property reflects the distance that the user covers while traversing the path of the route. It isn’t a straight line distance between the [`origin`](../directionsrequest/origin.md) and [`destination`](../directionsrequest/destination.md).
 
 ## See Also
 
-- [steps](route/steps.md)
+### Route details
+- [steps](./steps.md)
   An array of steps that compose the overall route.
-- [name](route/name.md)
+- [name](./name.md)
   The name assigned to the route.
-- [expectedTravelTime](route/expectedtraveltime.md)
+- [expectedTravelTime](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [transportType](route/transporttype.md)
+- [transportType](./transporttype.md)
   The overall route transport type.
-- [hasTolls](route/hastolls.md)
+- [hasTolls](./hastolls.md)
   A Boolean value that indicates whether a route has tolls.
 
 

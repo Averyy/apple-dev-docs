@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the persistent store.
 
@@ -10,7 +11,7 @@ The unique identifier for the persistent store.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ The unique identifier for the persistent store.
 
 ```swift
 var identifier: String! { get set }
+```
+
+```objc
+@property (copy, null_resettable) NSString * identifier;
 ```
 
 #### Discussion
@@ -30,11 +35,13 @@ The identifier is used as part of the managed object IDs for each object in the 
 
 ## See Also
 
-- [var metadata: [String : Any]!](nspersistentstore/metadata.md)
+### Related Documentation
+- [var metadata: [String : Any]!](./metadata.md)
   The metadata for the persistent store.
-- [var isReadOnly: Bool](nspersistentstore/isreadonly.md)
+### Managing Store Attributes
+- [var isReadOnly: Bool](./isreadonly.md)
   A Boolean value that indicates whether the persistent store is read-only.
-- [var url: URL?](nspersistentstore/url.md)
+- [var url: URL?](./url.md)
   The URL for the persistent store.
 
 

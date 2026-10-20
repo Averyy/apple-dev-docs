@@ -1,7 +1,8 @@
 # SettingsLink
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that opens the Settings scene defined by an app.
 
@@ -22,26 +23,27 @@ On macOS, clicking on the link opens the window for the scene or orders it to th
 ## Topics
 
 ### Creating a settings link
-- [init()](settingslink/init.md)
+- [init()](./settingslink/init%28%29.md)
   Creates a settings link with the default system label.
-- [init(label: () -> Label)](settingslink/init(label:).md)
+- [init(label: () -> Label)](./settingslink/init%28label%29.md)
   Creates a settings link with a custom label.
 ### Supporting types
-- [struct DefaultSettingsLinkLabel](defaultsettingslinklabel.md)
+- [struct DefaultSettingsLinkLabel](./defaultsettingslinklabel.md)
   The default label to use for a settings link.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Settings](settings.md)
+### Managing a settings window
+- [struct Settings](./settings.md)
   A scene that presents an interface for viewing and modifying an app’s settings.
-- [struct OpenSettingsAction](opensettingsaction.md)
+- [struct OpenSettingsAction](./opensettingsaction.md)
   An action that presents the settings scene for an app.
-- [var openSettings: OpenSettingsAction](environmentvalues/opensettings.md)
+- [var openSettings: OpenSettingsAction](./environmentvalues/opensettings.md)
   A Settings presentation action stored in a view’s environment.
 
 

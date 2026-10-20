@@ -1,7 +1,8 @@
 # MLDataTable.Aggregator.Operations.variance
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that computes the variance in a column.
 
@@ -21,29 +22,30 @@ case variance
 
 ## See Also
 
-- [MLDataTable.Aggregator.Operations.min](mldatatable/aggregator/operations-swift.enum/min.md)
+### Aggregation operations
+- [MLDataTable.Aggregator.Operations.min](./min.md)
   An operation that identifies the smallest value in a column.
-- [MLDataTable.Aggregator.Operations.max](mldatatable/aggregator/operations-swift.enum/max.md)
+- [MLDataTable.Aggregator.Operations.max](./max.md)
   An operation that identifies the largest value in a column.
-- [MLDataTable.Aggregator.Operations.sum](mldatatable/aggregator/operations-swift.enum/sum.md)
+- [MLDataTable.Aggregator.Operations.sum](./sum.md)
   An operation that the adds the values in a column.
-- [MLDataTable.Aggregator.Operations.mean](mldatatable/aggregator/operations-swift.enum/mean.md)
+- [MLDataTable.Aggregator.Operations.mean](./mean.md)
   An operation that computes the mean of the values in a column.
-- [MLDataTable.Aggregator.Operations.stdev](mldatatable/aggregator/operations-swift.enum/stdev.md)
+- [MLDataTable.Aggregator.Operations.stdev](./stdev.md)
   An operation that computes the standard deviation of the values in a column.
-- [MLDataTable.Aggregator.Operations.count](mldatatable/aggregator/operations-swift.enum/count.md)
+- [MLDataTable.Aggregator.Operations.count](./count.md)
   An operation that counts the number of values in a column.
-- [MLDataTable.Aggregator.Operations.distinctCount](mldatatable/aggregator/operations-swift.enum/distinctcount.md)
+- [MLDataTable.Aggregator.Operations.distinctCount](./distinctcount.md)
   An operation that counts the number of distinct values in a column.
-- [MLDataTable.Aggregator.Operations.randomlySelectOne](mldatatable/aggregator/operations-swift.enum/randomlyselectone.md)
+- [MLDataTable.Aggregator.Operations.randomlySelectOne](./randomlyselectone.md)
   An operation that selects a random value from a column.
-- [MLDataTable.Aggregator.Operations.sequenceMerge](mldatatable/aggregator/operations-swift.enum/sequencemerge.md)
+- [MLDataTable.Aggregator.Operations.sequenceMerge](./sequencemerge.md)
   An operation that combines the values in a column into a sequence.
-- [MLDataTable.Aggregator.Operations.dictionaryMerge(valueColumn:)](mldatatable/aggregator/operations-swift.enum/dictionarymerge(valuecolumn:).md)
+- [MLDataTable.Aggregator.Operations.dictionaryMerge(valueColumn:)](./dictionarymerge%28valuecolumn%29.md)
   An operation that combines two columns into a dictionary, using the given column as the values for that dictionary.
-- [MLDataTable.Aggregator.Operations.argmin(outputColumn:)](mldatatable/aggregator/operations-swift.enum/argmin(outputcolumn:).md)
+- [MLDataTable.Aggregator.Operations.argmin(outputColumn:)](./argmin%28outputcolumn%29.md)
   An operation that retrieves the value in the given column that’s in the same row as the minimum value of the aggregator’s column.
-- [MLDataTable.Aggregator.Operations.argmax(outputColumn:)](mldatatable/aggregator/operations-swift.enum/argmax(outputcolumn:).md)
+- [MLDataTable.Aggregator.Operations.argmax(outputColumn:)](./argmax%28outputcolumn%29.md)
   An operation that retrieves the value in the given column that’s in the same row as the maximum value of the aggregator’s column.
 
 

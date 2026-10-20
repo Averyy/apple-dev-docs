@@ -1,7 +1,8 @@
 # SubscriptionCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription create request resource.
 
@@ -10,13 +11,13 @@ Attributes that describe a subscription create request resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionCreateRequest.Data.Attributes
 ```
 
 ## Mentions
 
-- [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
+- [Managing auto-renewable subscriptions](../../managing-auto-renewable-subscriptions.md)
 
 ## Properties
 
@@ -24,12 +25,13 @@ object SubscriptionCreateRequest.Data.Attributes
 - `name` (string) *(required)*
 - `productId` (string) *(required)*
 - `reviewNote` (string)
-- `subscriptionPeriod` (string)
+- `subscriptionPeriod` (string): **Allowed Values**: `ONE_WEEK`, `ONE_MONTH`, `TWO_MONTHS`, `THREE_MONTHS`, `SIX_MONTHS`, `ONE_YEAR`
 - `groupLevel` (integer)
 
 ## See Also
 
-- [object SubscriptionCreateRequest.Data.Relationships](subscriptioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

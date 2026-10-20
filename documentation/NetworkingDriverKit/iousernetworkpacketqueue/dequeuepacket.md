@@ -1,16 +1,17 @@
 # DequeuePacket
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a single network packet from the queue.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t DequeuePacket(IOUserNetworkPacket **packet);
 ```
 
@@ -28,11 +29,12 @@ Call this method to retrieve a single packet from a submission queue. This metho
 
 ## See Also
 
-- [EnqueuePacket](iousernetworkpacketqueue/enqueuepacket.md)
+### Queueing and Dequeueing Packets
+- [EnqueuePacket](./enqueuepacket.md)
   Adds a single network packet to the queue for processing.
-- [EnqueuePackets](iousernetworkpacketqueue/enqueuepackets-qzx.md)
+- [EnqueuePackets](./enqueuepackets-qzx.md)
   Adds multiple network packets to the queue for processing.
-- [DequeuePackets](iousernetworkpacketqueue/dequeuepackets.md)
+- [DequeuePackets](./dequeuepackets.md)
   Retrieves multiple network packets from the queue.
 
 

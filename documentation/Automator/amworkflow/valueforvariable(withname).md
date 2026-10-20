@@ -1,7 +1,8 @@
 # valueForVariable(withName:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value of the workflow variable with the specified name.
 
@@ -15,6 +16,10 @@ Returns the value of the workflow variable with the specified name.
 func valueForVariable(withName variableName: String) -> Any?
 ```
 
+```objc
+- (id) valueForVariableWithName:(NSString *) variableName;
+```
+
 #### Return Value
 
 The value for the variable. Returns `nil` if no variable is found with the specified name.
@@ -25,9 +30,10 @@ The value for the variable. Returns `nil` if no variable is found with the speci
 
 ## See Also
 
-- [var actions: [AMAction]](amworkflow/actions.md)
+### Getting Information About a Workflow
+- [var actions: [AMAction]](./actions.md)
   An array of the workflow’s actions.
-- [var fileURL: URL?](amworkflow/fileurl.md)
+- [var fileURL: URL?](./fileurl.md)
   A URL that specifies the location of the workflow file.
 
 

@@ -1,7 +1,8 @@
 # init(identifier:localizedTitle:availability:handler:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates and returns a new browser action item.
 
@@ -17,20 +18,29 @@ Instantiates and returns a new browser action item.
 init(identifier: String, localizedTitle: String, availability: UIDocumentBrowserAction.Availability, handler: @escaping ([URL]) -> Void)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier localizedTitle:(NSString *) localizedTitle availability:(UIDocumentBrowserActionAvailability) availability handler:(void (^)(NSArray<NSURL *> *)) handler;
+```
+
 ## Parameters
 
 - `identifier`: A unique identifier for the activity.
-- `localizedTitle`: The title that appears in the Edit Menu or navigation bar. This title should be a [`String`](https://developer.apple.com/documentation/swift/string) returned by  [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring).
-- `availability`: A value that defines where the action can appear (in the menu, navigation bar, or both). For a list of valid values, see [`UIDocumentBrowserAction.Availability`](uidocumentbrowseraction/availability-swift.struct.md).
-- `handler`: A block that is called when the user triggers the action. The block takes the following parameter: - **urls**: An array of URLs for the documents that the user has selected. If the action’s [`supportsMultipleItems`](uidocumentbrowseraction/supportsmultipleitems.md)  property is [`false`](https://developer.apple.com/documentation/swift/false), this array contains one URL. Otherwise, it can contain one or more URLs.
+- `localizedTitle`: The title that appears in the Edit Menu or navigation bar. This title should be a [`String`](../../Swift/string.md) returned by  [`NSLocalizedString`](../../Foundation/nslocalizedstring.md).
+- `availability`: A value that defines where the action can appear (in the menu, navigation bar, or both).
+
+  For a list of valid values, see [`UIDocumentBrowserAction.Availability`](./availability-swift.struct.md).
+- `handler`: A block that is called when the user triggers the action. The block takes the following parameter:
+
+  - **urls**: An array of URLs for the documents that the user has selected. If the action’s [`supportsMultipleItems`](./supportsmultipleitems.md)  property is [`false`](../../Swift/false.md), this array contains one URL. Otherwise, it can contain one or more URLs.
 
 ## See Also
 
-- [var image: UIImage?](uidocumentbrowseraction/image.md)
+### Creating and configuring actions
+- [var image: UIImage?](./image.md)
   The action’s image displayed in the navigation bar.
-- [var supportedContentTypes: [String]](uidocumentbrowseraction/supportedcontenttypes.md)
+- [var supportedContentTypes: [String]](./supportedcontenttypes.md)
   An array of uniform type identifiers that define the types of documents that the action supports.
-- [var supportsMultipleItems: Bool](uidocumentbrowseraction/supportsmultipleitems.md)
+- [var supportsMultipleItems: Bool](./supportsmultipleitems.md)
   A Boolean value that determines whether the action can be triggered on more than one document at a time.
 
 

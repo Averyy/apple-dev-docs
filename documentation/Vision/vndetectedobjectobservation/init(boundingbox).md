@@ -1,7 +1,8 @@
 # init(boundingBox:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an observation with a bounding box.
 
@@ -19,13 +20,18 @@ Creates an observation with a bounding box.
 convenience init(boundingBox: CGRect)
 ```
 
+```objc
++ (instancetype) observationWithBoundingBox:(CGRect) boundingBox;
+```
+
 ## Parameters
 
 - `boundingBox`: The observation’s bounding box, in coordinates normalized to the dimensions of the processed image, with its origin at the image’s lower-left corner.
 
 ## See Also
 
-- [convenience init(requestRevision: Int, boundingBox: CGRect)](vndetectedobjectobservation/init(requestrevision:boundingbox:).md)
+### Creating an Observation
+- [convenience init(requestRevision: Int, boundingBox: CGRect)](./init%28requestrevision,boundingbox%29.md)
   Creates an observation with a revision number and bounding box.
 
 

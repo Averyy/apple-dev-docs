@@ -1,14 +1,15 @@
 # kSCSIPort_NotificationStatusChange
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSCSIPort_NotificationStatusChange = 0x68000001
 ```
 

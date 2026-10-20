@@ -1,23 +1,24 @@
 # Iterable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var underestimatedCount: Int](mutablerawspan/underestimatedcount.md)
+- [var underestimatedCount: Int](./underestimatedcount.md)
   A value less than or equal to the number of elements in the sequence, calculated nondestructively.
-- [var underestimatedCount: Int](mutablerawspan/underestimatedcount-31d2p.md)
+- [var underestimatedCount: Int](./underestimatedcount-31d2p.md)
   A value less than or equal to the number of elements in the sequence, calculated nondestructively.
 ### Instance Methods
-- [func makeBorrowingIterator() -> Span<UInt8>.BorrowingIterator](mutablerawspan/makeborrowingiterator.md)
+- [func makeBorrowingIterator() -> Span<UInt8>.BorrowingIterator](./makeborrowingiterator%28%29.md)
   Returns a borrowing iterator over the elements of this sequence.
 ### Type Aliases
-- [MutableRawSpan.BorrowingIterator](mutablerawspan/borrowingiterator.md)
+- [MutableRawSpan.BorrowingIterator](./borrowingiterator.md)
   A type that provides the sequence’s iteration interface and encapsulates its iteration state.
-- [MutableRawSpan.Element](mutablerawspan/element.md)
+- [MutableRawSpan.Element](./element.md)
   A type representing the sequence’s elements.
-- [MutableRawSpan.Failure](mutablerawspan/failure.md)
+- [MutableRawSpan.Failure](./failure.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # hasMediaCharacteristic(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the receiver has media with the given media characteristic.
 
@@ -20,19 +21,24 @@ Returns a Boolean value that indicates whether the receiver has media with the g
 func hasMediaCharacteristic(_ mediaCharacteristic: AVMediaCharacteristic) -> Bool
 ```
 
+```objc
+- (BOOL) hasMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the media selection option has media with mediaCharacteristic, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the media selection option has media with mediaCharacteristic, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
-- `mediaCharacteristic`: The media characteristic of interest, for example, [`visual`](avmediacharacteristic/visual.md), [`audible`](avmediacharacteristic/audible.md), or [`legible`](avmediacharacteristic/legible.md).
+- `mediaCharacteristic`: The media characteristic of interest, for example, [`visual`](../avmediacharacteristic/visual.md), [`audible`](../avmediacharacteristic/audible.md), or [`legible`](../avmediacharacteristic/legible.md).
 
 ## See Also
 
-- [var mediaType: AVMediaType](avmediaselectionoption/mediatype.md)
+### Accessing media information
+- [var mediaType: AVMediaType](./mediatype.md)
   The media type of the media data.
-- [var mediaSubTypes: [NSNumber]](avmediaselectionoption/mediasubtypes.md)
+- [var mediaSubTypes: [NSNumber]](./mediasubtypes.md)
   The media sub-types of the media data associated with the option.
 
 

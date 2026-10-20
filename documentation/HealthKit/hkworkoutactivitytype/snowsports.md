@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.snowSports
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for a variety of snow sports, including sledding, snowmobiling, or building a snowman.
 
@@ -19,17 +20,22 @@ The constant for a variety of snow sports, including sledding, snowmobiling, or 
 case snowSports
 ```
 
+```c
+HKWorkoutActivityTypeSnowSports
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.crossCountrySkiing](hkworkoutactivitytype/crosscountryskiing.md)
+### Snow and ice sports
+- [HKWorkoutActivityType.crossCountrySkiing](./crosscountryskiing.md)
   The constant for cross country skiing.
-- [HKWorkoutActivityType.curling](hkworkoutactivitytype/curling.md)
+- [HKWorkoutActivityType.curling](./curling.md)
   The constant for curling.
-- [HKWorkoutActivityType.downhillSkiing](hkworkoutactivitytype/downhillskiing.md)
+- [HKWorkoutActivityType.downhillSkiing](./downhillskiing.md)
   The constant for downhill skiing.
-- [HKWorkoutActivityType.snowboarding](hkworkoutactivitytype/snowboarding.md)
+- [HKWorkoutActivityType.snowboarding](./snowboarding.md)
   The constant for snowboarding.
-- [HKWorkoutActivityType.skatingSports](hkworkoutactivitytype/skatingsports.md)
+- [HKWorkoutActivityType.skatingSports](./skatingsports.md)
   The constant for skating activities, including ice skating, speed skating, inline skating, and skateboarding.
 
 

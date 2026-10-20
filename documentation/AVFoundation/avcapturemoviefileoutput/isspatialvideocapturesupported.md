@@ -1,7 +1,8 @@
 # isSpatialVideoCaptureSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a movie file output supports capturing spatial videos.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether a movie file output supports capturing sp
 var isSpatialVideoCaptureSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSpatialVideoCaptureSupported) BOOL spatialVideoCaptureSupported;
+```
+
 ## See Also
 
-- [var isSpatialVideoCaptureEnabled: Bool](avcapturemoviefileoutput/isspatialvideocaptureenabled.md)
+### Enabling spatial capture
+- [var isSpatialVideoCaptureEnabled: Bool](./isspatialvideocaptureenabled.md)
   A Boolean value that indicates whether a movie file output captures spatial videos.
 
 

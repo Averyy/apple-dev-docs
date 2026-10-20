@@ -1,15 +1,16 @@
 # kAudioUnitProperty_DopplerShift
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 var kAudioUnitProperty_DopplerShift: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitProperty_DopplerShift
+```
+
 ## See Also
 
-- [var kAudioUnitProperty_3DMixerAttenuationCurve: AudioUnitPropertyID](kaudiounitproperty_3dmixerattenuationcurve.md)
-- [var kAudioUnitProperty_3DMixerDistanceAtten: AudioUnitPropertyID](kaudiounitproperty_3dmixerdistanceatten.md)
-- [var kAudioUnitProperty_3DMixerDistanceParams: AudioUnitPropertyID](kaudiounitproperty_3dmixerdistanceparams.md)
-- [var kAudioUnitProperty_3DMixerRenderingFlags: AudioUnitPropertyID](kaudiounitproperty_3dmixerrenderingflags.md)
-- [var kAudioUnitProperty_ReverbPreset: AudioUnitPropertyID](kaudiounitproperty_reverbpreset.md)
+### Constants
+- [var kAudioUnitProperty_3DMixerAttenuationCurve: AudioUnitPropertyID](./kaudiounitproperty_3dmixerattenuationcurve.md)
+- [var kAudioUnitProperty_3DMixerDistanceAtten: AudioUnitPropertyID](./kaudiounitproperty_3dmixerdistanceatten.md)
+- [var kAudioUnitProperty_3DMixerDistanceParams: AudioUnitPropertyID](./kaudiounitproperty_3dmixerdistanceparams.md)
+- [var kAudioUnitProperty_3DMixerRenderingFlags: AudioUnitPropertyID](./kaudiounitproperty_3dmixerrenderingflags.md)
+- [var kAudioUnitProperty_ReverbPreset: AudioUnitPropertyID](./kaudiounitproperty_reverbpreset.md)
 
 
 ---

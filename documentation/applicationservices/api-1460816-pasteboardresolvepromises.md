@@ -1,7 +1,8 @@
 # PasteboardResolvePromises(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func PasteboardResolvePromises(_ inPasteboard: Pasteboard) -> OSStatus
+```
+
+```c
+OSStatus PasteboardResolvePromises(PasteboardRef inPasteboard);
 ```
 
 

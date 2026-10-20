@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.pending
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The customer hasn’t yet responded to an auto-renewable subscription price increase that requires customer consent.
 
@@ -22,17 +23,18 @@ case pending
 
 ## Mentions
 
-- [Managing Price Increases for Auto-Renewable Subscriptions](managing-price-increases-for-auto-renewable-subscriptions.md)
+- [Managing Price Increases for Auto-Renewable Subscriptions](../../../../managing-price-increases-for-auto-renewable-subscriptions.md)
 
 #### Discussion
 
-For more information about this value, see [`Managing Price Increases for Auto-Renewable Subscriptions`](managing-price-increases-for-auto-renewable-subscriptions.md).
+For more information about this value, see [Managing Price Increases for Auto-Renewable Subscriptions](../../../../managing-price-increases-for-auto-renewable-subscriptions.md).
 
 ## See Also
 
-- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.noIncreasePending](product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.enum/noincreasepending.md)
+### Getting Price Increase Status
+- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.noIncreasePending](./noincreasepending.md)
   There’s no pending price increase for the auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.agreed](product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.enum/agreed.md)
+- [Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.agreed](./agreed.md)
   The auto-renewable subscription is subject to a price increase.
 
 

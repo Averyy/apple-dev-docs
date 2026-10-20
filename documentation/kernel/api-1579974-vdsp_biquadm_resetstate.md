@@ -1,7 +1,8 @@
 # vDSP_biquadm_ResetState
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Resets the filter state of a single-precision multichannel biquad IIR filter object.
 
@@ -10,7 +11,7 @@ Resets the filter state of a single-precision multichannel biquad IIR filter obj
 
 ## Declaration
 
-```swift
+```c
 void vDSP_biquadm_ResetState(vDSP_biquadm_Setup __setup);
 ```
 

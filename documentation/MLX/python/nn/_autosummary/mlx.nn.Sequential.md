@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.S
 
 # mlx.nn.Sequential
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Sequential.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Sequential
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Sequential
-
 **class Sequential(**modules*)**
 : A layer that calls the passed callables in order.
 We can pass either modules or plain callables to the Sequential module. If
@@ -43,5 +16,3 @@ Parameters:
 **modules** ([tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)* of **Callables*) – The modules to call in order
 
 Methods
-
-** Contents

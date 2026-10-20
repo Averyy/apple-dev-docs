@@ -1,7 +1,8 @@
 # init(scope:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new map location compass with the provided scope.
 
@@ -17,7 +18,7 @@ Creates a new map location compass with the provided scope.
 
 ## Parameters
 
-- `scope`: The namespace the framework passes to the associated [`Map`](map.md) and [`mapScope(_:)`](https://developer.apple.com/documentation/swiftui/view/mapscope(_:)). For use outside of [`mapControls(_:)`](https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:)).
+- `scope`: The namespace the framework passes to the associated [`Map`](../map.md) and [`mapScope(_:)`](../../SwiftUI/view/mapscope%28_%29.md). For use outside of [`mapControls(_:)`](../../SwiftUI/view/mapcontrols%28_%29.md).
 
 
 ---

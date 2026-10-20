@@ -1,7 +1,8 @@
 # intValue
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying integer value.
 
@@ -21,7 +22,8 @@ var intValue: Int? { get }
 
 ## See Also
 
-- [var doubleValue: Double?](mldatavalue/doublevalue.md)
+### Accessing numeric values
+- [var doubleValue: Double?](./doublevalue.md)
   The underlying double value.
 
 

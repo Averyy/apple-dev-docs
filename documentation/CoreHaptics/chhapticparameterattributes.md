@@ -1,7 +1,8 @@
 # CHHapticParameterAttributes
 
 **Framework**: Core Haptics  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for providing default, mininum, and maximum values of a parameter.
 
@@ -19,28 +20,33 @@ A protocol for providing default, mininum, and maximum values of a parameter.
 protocol CHHapticParameterAttributes : NSObjectProtocol
 ```
 
+```objc
+@protocol CHHapticParameterAttributes <NSObject>
+```
+
 ## Topics
 
 ### Parameter Attributes
-- [var defaultValue: Float](chhapticparameterattributes/defaultvalue.md)
+- [var defaultValue: Float](./chhapticparameterattributes/defaultvalue.md)
   The default value of the parameter value.
-- [var minValue: Float](chhapticparameterattributes/minvalue.md)
+- [var minValue: Float](./chhapticparameterattributes/minvalue.md)
   The minimum value the parameter can take.
-- [var maxValue: Float](chhapticparameterattributes/maxvalue.md)
+- [var maxValue: Float](./chhapticparameterattributes/maxvalue.md)
   The maximum value the parameter can take.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class func capabilitiesForHardware() -> any CHHapticDeviceCapability](chhapticengine/capabilitiesforhardware.md)
+### Querying System Capabilities
+- [class func capabilitiesForHardware() -> any CHHapticDeviceCapability](./chhapticengine/capabilitiesforhardware%28%29.md)
   Returns a device capability object that describes the device’s haptic support and limitations.
-- [protocol CHHapticDeviceCapability](chhapticdevicecapability.md)
+- [protocol CHHapticDeviceCapability](./chhapticdevicecapability.md)
   A protocol that defines haptics and audio capabilities of a device.
-- [func attributes(forDynamicParameter: CHHapticDynamicParameter.ID) throws -> any CHHapticParameterAttributes](chhapticdevicecapability/attributes(fordynamicparameter:).md)
+- [func attributes(forDynamicParameter: CHHapticDynamicParameter.ID) throws -> any CHHapticParameterAttributes](./chhapticdevicecapability/attributes%28fordynamicparameter%29.md)
   Requests the haptic device’s attributes for a dynamic parameter.
 
 

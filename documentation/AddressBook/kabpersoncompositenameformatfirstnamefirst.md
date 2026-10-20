@@ -1,14 +1,15 @@
 # kABPersonCompositeNameFormatFirstNameFirst
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 First name first.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,9 +17,14 @@ First name first.
 var kABPersonCompositeNameFormatFirstNameFirst: Int { get }
 ```
 
+```c
+kABPersonCompositeNameFormatFirstNameFirst
+```
+
 ## See Also
 
-- [var kABPersonCompositeNameFormatLastNameFirst: Int](kabpersoncompositenameformatlastnamefirst.md)
+### Constants
+- [var kABPersonCompositeNameFormatLastNameFirst: Int](./kabpersoncompositenameformatlastnamefirst.md)
   Last name first.
 
 

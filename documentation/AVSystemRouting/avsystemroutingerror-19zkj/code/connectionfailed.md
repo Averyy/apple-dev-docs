@@ -1,7 +1,8 @@
 # AVSystemRoutingError.Code.connectionFailed
 
 **Framework**: AVSystemRouting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A connection failure with the remote application.
 
@@ -14,6 +15,10 @@ A connection failure with the remote application.
 
 ```swift
 case connectionFailed
+```
+
+```c
+AVSystemRoutingErrorConnectionFailed
 ```
 
 

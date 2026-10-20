@@ -1,7 +1,8 @@
 # kAXStandardWindowSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A standard window that includes a title bar (that is, not an inspector window or a sheet).
 
@@ -12,6 +13,10 @@ A standard window that includes a title bar (that is, not an inspector window or
 
 ```swift
 var kAXStandardWindowSubrole: String { get }
+```
+
+```c
+#define kAXStandardWindowSubrole
 ```
 
 

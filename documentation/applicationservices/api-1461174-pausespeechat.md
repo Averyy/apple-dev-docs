@@ -1,7 +1,8 @@
 # PauseSpeechAt(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Pauses speech on a speech channel.
 
@@ -14,9 +15,13 @@ Pauses speech on a speech channel.
 func PauseSpeechAt(_ chan: SpeechChannel, _ whereToPause: Int32) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr PauseSpeechAt(SpeechChannel chan, SInt32 whereToPause);
+```
 
-A resultcode. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
@@ -37,13 +42,14 @@ If you plan to continue speech synthesis from a paused speechchannel, the text b
 
 ## See Also
 
-- [func ContinueSpeech(SpeechChannel) -> OSErr](1462728-continuespeech.md)
+### Starting, Stopping, and Pausing Speech
+- [func ContinueSpeech(SpeechChannel) -> OSErr](./api-1462728-continuespeech.md)
   Resumes speech paused by the `PauseSpeechAt` function.
-- [func SpeakCFString(SpeechChannel, CFString, CFDictionary?) -> OSErr](1461621-speakcfstring.md)
+- [func SpeakCFString(SpeechChannel, CFString, CFDictionary?) -> OSErr](./api-1461621-speakcfstring.md)
   Begins speaking a string represented as a `CFString` object.
-- [func StopSpeech(SpeechChannel) -> OSErr](1462745-stopspeech.md)
+- [func StopSpeech(SpeechChannel) -> OSErr](./api-1462745-stopspeech.md)
   Terminates speech immediately on the specified channel.
-- [func StopSpeechAt(SpeechChannel, Int32) -> OSErr](1459780-stopspeechat.md)
+- [func StopSpeechAt(SpeechChannel, Int32) -> OSErr](./api-1459780-stopspeechat.md)
   Terminates speech delivery on a specified channel eitherimmediately or at the end of the current word or sentence.
 
 

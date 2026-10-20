@@ -1,7 +1,8 @@
 # AreaMark
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Chart content that represents data using the area of one or more regions.
 
@@ -48,7 +49,7 @@ struct Food: Identifiable {
 }
 ```
 
-You can create labeled data in the form of [`PlottableValue`](plottablevalue.md) instances for each of the `x` and `y` inputs to an area mark:
+You can create labeled data in the form of [`PlottableValue`](./plottablevalue.md) instances for each of the `x` and `y` inputs to an area mark:
 
 ```swift
 Chart(cheeseburgerCost) { cost in
@@ -61,11 +62,11 @@ Chart(cheeseburgerCost) { cost in
 
 The resulting chart automatically scales and labels the axes based on the data, and fills the area under the data points with a default color:
 
-![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. An irregular, monotonically increasing, piecewise linear curve starts near the lower left and continues toward the upper right. The area under the curve is filled in with a blue color.](/images/com.apple.Charts/AreaMark-1-macOS@2x.png)
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. An irregular, monotonically increasing, piecewise linear curve starts near the lower left and continues toward the upper right. The area under the curve is filled in with a blue color.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-1-macOS@2x.png)
 
-If you want only the line without filling in the area below the line, use [`LineMark`](linemark.md) instead.
+If you want only the line without filling in the area below the line, use [`LineMark`](./linemark.md) instead.
 
-##### Add Detail with a Stacked Area Chart
+##### Add detail with a stacked area chart
 
 To represent an additional dimension of information, you can create a stacked area chart. For example, suppose you have another data set that represents the same cost data from the previous example, but which is broken into the component costs for the burger, bun, and cheese:
 
@@ -84,7 +85,7 @@ let cheeseburgerCostByItem: [Food] = [
 ]
 ```
 
-You can again create an area mark with the data, but in this case add the [`foregroundStyle(by:)`](chartcontent/foregroundstyle(by:).md) modifier to create a stacked area chart that divides the information into distinct regions based on the data’s `name` property:
+You can again create an area mark with the data, but in this case add the [`foregroundStyle(by:)`](./chartcontent/foregroundstyle%28by%29.md) modifier to create a stacked area chart that divides the information into distinct regions based on the data’s `name` property:
 
 ```swift
 Chart(cheeseburgerCostByItem) { cost in
@@ -98,11 +99,11 @@ Chart(cheeseburgerCostByItem) { cost in
 
 The chart automatically assigns a different color to each region, and adds a legend that indicates what each color represents based on the names that you provide to the modifier:
 
-![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. Three irregular, non-intersecting, monotonically increasing, piecewise linear curves start near the lower left and continue toward the upper right. The area under the bottom curve is filled with blue. The area above the bottom curve and below the next curve is filled with green. The area above the second and below the top curve is filled with orange. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](/images/com.apple.Charts/AreaMark-2-macOS@2x.png)
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. Three irregular, non-intersecting, monotonically increasing, piecewise linear curves start near the lower left and continue toward the upper right. The area under the bottom curve is filled with blue. The area above the bottom curve and below the next curve is filled with green. The area above the second and below the top curve is filled with orange. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-2-macOS@2x.png)
 
-##### Stack the Data in Different Ways
+##### Stack the data in different ways
 
-You can highlight different aspects of the data by stacking it in different ways. For example, the previous chart shows the absolute contributions of each ingredient to the cheeseburger’s total cost. To see the relative contributions instead, you can create a normalized chart by setting the area mark’s `stacking` parameter to [`normalized`](markstackingmethod/normalized.md):
+You can highlight different aspects of the data by stacking it in different ways. For example, the previous chart shows the absolute contributions of each ingredient to the cheeseburger’s total cost. To see the relative contributions instead, you can create a normalized chart by setting the area mark’s `stacking` parameter to [`normalized`](./markstackingmethod/normalized.md):
 
 ```swift
 Chart(cheeseburgerCostByItem) { cost in
@@ -115,9 +116,9 @@ Chart(cheeseburgerCostByItem) { cost in
 }
 ```
 
-![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 100 on the y-axis. The entire chart is filled with color, divided into three different horizontal regions that are separated by irregular, piecewise linear curves that span the width of the chart. The area under the bottom curve is filled with blue. The area above the bottom curve and below the top curve is filled with green. The area above the top curve is filled with orange. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](/images/com.apple.Charts/AreaMark-3-macOS@2x.png)
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 100 on the y-axis. The entire chart is filled with color, divided into three different horizontal regions that are separated by irregular, piecewise linear curves that span the width of the chart. The area under the bottom curve is filled with blue. The area above the bottom curve and below the top curve is filled with green. The area above the top curve is filled with orange. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-3-macOS@2x.png)
 
-Alternatively, you can use [`center`](markstackingmethod/center.md) stacking to create a streamgraph, which shifts the area chart’s baseline to the center of the chart’s plotting area:
+Alternatively, you can use [`center`](./markstackingmethod/center.md) stacking to create a streamgraph, which shifts the area chart’s baseline to the center of the chart’s plotting area:
 
 ```swift
 Chart(cheeseburgerCostByItem) { cost in
@@ -130,9 +131,9 @@ Chart(cheeseburgerCostByItem) { cost in
 }
 ```
 
-![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of -1 to 1 on the y-axis. Three irregular, piecewise linear horizontal regions appear near the middle of the chart, growing from small on the left to larger on the right. The top region is filled with orange, the middle region is filled with green, and the bottom region is filled with blue. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](/images/com.apple.Charts/AreaMark-4-macOS@2x.png)
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of -1 to 1 on the y-axis. Three irregular, piecewise linear horizontal regions appear near the middle of the chart, growing from small on the left to larger on the right. The top region is filled with orange, the middle region is filled with green, and the bottom region is filled with blue. A legend below the chart area indicates that blue corresponds to Burger, green to Cheese, and orange to Bun.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-4-macOS@2x.png)
 
-##### Create a Range Area Chart
+##### Create a range area chart
 
 You can also use area marks to create a range area chart, where you provide an interval to fill in for each data point. To do this, you provide either a date or ordered string category for the x-axis and a range of values for the y-axis, or vice versa. For example, suppose you record the minimum and maximum temperatures every day in a `Weather` structure:
 
@@ -159,47 +160,48 @@ Chart(data) { day in
 
 This creates a filled region that’s shaped by the start and end points on each date:
 
-![A chart that shows month names on the x-axis, ranging from January to October, and a number in the range 0 to 80 on the y-axis. A solid blue region spans the chart from left to right. The region is close to the middle of the y-axis on either end, and closer to the top of the chart in the middle. The region is thinner at the ends and thicker in the middle.](/images/com.apple.Charts/AreaMark-5-macOS@2x.png)
+![A chart that shows month names on the x-axis, ranging from January to October, and a number in the range 0 to 80 on the y-axis. A solid blue region spans the chart from left to right. The region is close to the middle of the y-axis on either end, and closer to the top of the chart in the middle. The region is thinner at the ends and thicker in the middle.](https://developer.apple.com/tutorials/images/com.apple.Charts/AreaMark-5-macOS@2x.png)
 
 ## Topics
 
 ### Creating an area mark
-- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, stacking: MarkStackingMethod)](areamark/init(x:y:stacking:).md)
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, stacking: MarkStackingMethod)](./areamark/init%28x,y,stacking%29.md)
   Creates an area mark using the specified horizontal and vertical positions.
-- [init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>, stacking: MarkStackingMethod)](areamark/init(x:y:series:stacking:).md)
+- [init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>, stacking: MarkStackingMethod)](./areamark/init%28x,y,series,stacking%29.md)
   Creates an area mark and associates it with the specified series.
 ### Creating a range area chart
-- [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](areamark/init(x:ystart:yend:).md)
+- [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](./areamark/init%28x,ystart,yend%29.md)
   Creates an area mark that plots values with a vertical interval.
-- [init<X, Y, S>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, series: PlottableValue<S>)](areamark/init(x:ystart:yend:series:).md)
+- [init<X, Y, S>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>, series: PlottableValue<S>)](./areamark/init%28x,ystart,yend,series%29.md)
   Creates an area mark that plots values with a vertical interval and associates it with the specified series.
-- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>)](areamark/init(xstart:xend:y:).md)
+- [init<X, Y>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>)](./areamark/init%28xstart,xend,y%29.md)
   Creates an area mark that plots values with a horizontal interval.
-- [init<X, Y, S>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>)](areamark/init(xstart:xend:y:series:).md)
+- [init<X, Y, S>(xStart: PlottableValue<X>, xEnd: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>)](./areamark/init%28xstart,xend,y,series%29.md)
   Creates an area mark that plots values with a horizontal interval and associates it with the specified series.
 
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct LineMark](linemark.md)
+### Marks
+- [struct LineMark](./linemark.md)
   Chart content that represents data using a sequence of connected line segments.
-- [struct PointMark](pointmark.md)
+- [struct PointMark](./pointmark.md)
   Chart content that represents data using points.
-- [struct RectangleMark](rectanglemark.md)
+- [struct RectangleMark](./rectanglemark.md)
   Chart content that represents data using rectangles.
-- [struct RuleMark](rulemark.md)
+- [struct RuleMark](./rulemark.md)
   Chart content that represents data using a single horizontal or vertical rule.
-- [struct BarMark](barmark.md)
+- [struct BarMark](./barmark.md)
   Chart content that represents data using bars.
-- [struct SectorMark](sectormark.md)
+- [struct SectorMark](./sectormark.md)
   A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 

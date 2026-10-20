@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceUpdateRequest.Data.Relationships.ReleaseWithAppStoreVersion.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the App Store Versions resource that you’re relating with the Default App Clip Experiences resource you’re updating.
 
@@ -10,7 +11,7 @@ The type and ID of the App Store Versions resource that you’re relating with t
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceUpdateRequest.Data.Relationships.ReleaseWithAppStoreVersion.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipDefaultExperienceUpdateRequest.Data.Relationships.ReleaseWithAppSt
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Store Versions resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appStoreVersions`
 
 
 ---

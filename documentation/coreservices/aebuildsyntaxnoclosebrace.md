@@ -1,7 +1,8 @@
 # aeBuildSyntaxNoCloseBrace
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A comma or closing brace “}” was expected.
 

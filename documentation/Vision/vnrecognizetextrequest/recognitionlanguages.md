@@ -1,7 +1,8 @@
 # recognitionLanguages
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of languages to detect, in priority order.
 
@@ -19,9 +20,13 @@ An array of languages to detect, in priority order.
 var recognitionLanguages: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSArray<NSString *> * recognitionLanguages;
+```
+
 ## Mentions
 
-- [Recognizing Text in Images](recognizing-text-in-images.md)
+- [Recognizing Text in Images](../recognizing-text-in-images.md)
 
 #### Discussion
 
@@ -31,15 +36,16 @@ Specify the languages as ISO language codes.
 
 ## See Also
 
-- [var automaticallyDetectsLanguage: Bool](vnrecognizetextrequest/automaticallydetectslanguage.md)
+### Specifying the Language
+- [var automaticallyDetectsLanguage: Bool](./automaticallydetectslanguage.md)
   A Boolean value that indicates whether to attempt detecting the language to use the appropriate model for recognition and language correction.
-- [var usesLanguageCorrection: Bool](vnrecognizetextrequest/useslanguagecorrection.md)
+- [var usesLanguageCorrection: Bool](./useslanguagecorrection.md)
   A Boolean value that indicates whether the request applies language correction during the recognition process.
-- [var customWords: [String]](vnrecognizetextrequest/customwords.md)
+- [var customWords: [String]](./customwords.md)
   An array of strings to supplement the recognized languages at the word-recognition stage.
-- [func supportedRecognitionLanguages() throws -> [String]](vnrecognizetextrequest/supportedrecognitionlanguages.md)
+- [func supportedRecognitionLanguages() throws -> [String]](./supportedrecognitionlanguages%28%29.md)
   Returns the identifiers of the languages that the request supports.
-- [class func supportedRecognitionLanguages(for: VNRequestTextRecognitionLevel, revision: Int) throws -> [String]](vnrecognizetextrequest/supportedrecognitionlanguages(for:revision:).md)
+- [class func supportedRecognitionLanguages(for: VNRequestTextRecognitionLevel, revision: Int) throws -> [String]](./supportedrecognitionlanguages%28for,revision%29.md)
   Requests a list of languages that the specified revision recognizes.
 
 

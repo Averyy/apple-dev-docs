@@ -1,7 +1,8 @@
 # loadChallengeDefinitions(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads all the challenge definitions for the current game, returns an empty array if none exist.
 
@@ -17,7 +18,15 @@ Loads all the challenge definitions for the current game, returns an empty array
 ## Declaration
 
 ```swift
+class func loadChallengeDefinitions(completionHandler: @escaping @Sendable ([GKChallengeDefinition]?, (any Error)?) -> Void)
+```
+
+```swift
 class var all: [GKChallengeDefinition] { get async throws }
+```
+
+```objc
++ (void) loadChallengeDefinitionsWithCompletionHandler:(void (^)(NSArray<GKChallengeDefinition *> *challengeDefinitions, NSError *error)) completionHandler;
 ```
 
 #### Discussion

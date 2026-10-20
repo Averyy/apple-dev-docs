@@ -1,7 +1,8 @@
 # opaque
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the underlying Core Graphics context has an alpha channel.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates whether the underlying Core Graphics context has 
 var opaque: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL opaque;
+```
+
 #### Discussion
 
-Setting the value of this property to [`false`](https://developer.apple.com/documentation/swift/false) specifies that the underlying Core Graphics context has an alpha channel, whereas [`true`](https://developer.apple.com/documentation/swift/true) indicates it does not. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+Setting the value of this property to [`false`](../../Swift/false.md) specifies that the underlying Core Graphics context has an alpha channel, whereas [`true`](../../Swift/true.md) indicates it does not. The default value is [`false`](../../Swift/false.md).
 
 A Core Graphics context requires an alpha channel to express transparency. Without an alpha channel a Core Graphics context is said to be opaque, i.e. without transparency.
 
 ## See Also
 
-- [var scale: CGFloat](uigraphicsimagerendererformat/scale.md)
+### Configuring the renderer attributes
+- [var scale: CGFloat](./scale.md)
   The display scale of the image renderer context.
-- [var preferredRange: UIGraphicsImageRendererFormat.Range](uigraphicsimagerendererformat/preferredrange.md)
+- [var preferredRange: UIGraphicsImageRendererFormat.Range](./preferredrange.md)
   The preferred color range of the image renderer context.
-- [UIGraphicsImageRendererFormat.Range](uigraphicsimagerendererformat/range.md)
+- [UIGraphicsImageRendererFormat.Range](./range.md)
   Constants that specify the color range of the image renderer context.
-- [var prefersExtendedRange: Bool](uigraphicsimagerendererformat/prefersextendedrange.md)
+- [var prefersExtendedRange: Bool](./prefersextendedrange.md)
   A Boolean value that specifies whether the bitmap context uses extended color.
 
 

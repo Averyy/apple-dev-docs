@@ -1,7 +1,8 @@
 # removeLast(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the given number of elements from the end of the collection.
 
@@ -20,9 +21,11 @@ Removes the given number of elements from the end of the collection.
 mutating func removeLast(_ k: Int)
 ```
 
+Available when `Self` is `Self.SubSequence`.
+
 #### Discussion
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to remove.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to remove.
 
 ## Parameters
 

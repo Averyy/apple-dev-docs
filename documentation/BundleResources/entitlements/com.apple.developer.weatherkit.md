@@ -1,7 +1,8 @@
 # WeatherKit Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app may use WeatherKit.
 
@@ -13,9 +14,12 @@ A Boolean value that indicates whether the app may use WeatherKit.
 - tvOS 16.0+
 - watchOS 9.0+
 
+## Details
+
+- **Name**: `com.apple.developer.weatherkit` (WeatherKit)
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 

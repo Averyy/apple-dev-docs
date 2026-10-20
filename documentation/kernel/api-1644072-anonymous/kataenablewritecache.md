@@ -1,14 +1,15 @@
 # kATAEnableWriteCache
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kATAEnableWriteCache = 0x02
 ```
 

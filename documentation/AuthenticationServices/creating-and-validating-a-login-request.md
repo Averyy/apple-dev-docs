@@ -1,6 +1,7 @@
 # Creating and validating a login request
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Create a signed JOSE login request.
 
@@ -10,9 +11,9 @@ Your login configuration instructs Platform SSO how to create and validate a log
 
 The login request is a JSON Object Signing and Encryption object (JOSE) that’s formatted per RFC 7519 and signed with the `DeviceSigningKey` and `ES256` per RFC 7515.
 
-For more information, see [`Configuring authentication with the identity provider (IdP)`](configuring-authentication-with-the-identity-provider-idp.md).
+For more information, see [Configuring authentication with the identity provider (IdP)](./configuring-authentication-with-the-identity-provider-idp.md).
 
-##### Create the Login Request
+##### Create the login request
 
 The following table specifies the header parameters that the system uses to create a login request:
 
@@ -22,46 +23,46 @@ The following table specifies the header parameters that the system uses to crea
 |  | `platformsso-login-request+jwt` | Required if the extension SDK is macOS 14.x or later. |
 | `alg` | `ES256` | Required: The signing algorithm. The system only supports `ES256`. |
 | `kid` | The base-64 encoded SHA256 hash of the ANSI X9.63 formatted public key for the signing identity | Required. |
-| `x5c` | The base-64 encoded device signing certificate from [`saveCertificate(_:keyType:)`](asauthorizationproviderextensionloginmanager/savecertificate(_:keytype:).md) | Optional. If the certificate is set, the system includes it here. The value is base-64 encoded per RFC 7517. |
+| `x5c` | The base-64 encoded device signing certificate from [`saveCertificate(_:keyType:)`](./asauthorizationproviderextensionloginmanager/savecertificate%28_,keytype%29.md) | Optional. If the certificate is set, the system includes it here. The value is base-64 encoded per RFC 7517. |
 | `loginConfiguration.customLoginRequestHeaderClaims` |  | Optional. If present, adds key value pairs to the JSON Web Token (JWT). |
 
 The following table specifies the body parameters that the system uses to create a login request:
 
 | Key | Value | Notes |
 | --- | --- | --- |
-| `client_id` | [`clientID`](asauthorizationproviderextensionloginconfiguration/clientid.md) | Required. The open id `client_id` for login. |
-| `iss` | [`clientID`](asauthorizationproviderextensionloginconfiguration/clientid.md) | Required. Per RFC 7523 Section 3. |
+| `client_id` | [`clientID`](./asauthorizationproviderextensionloginconfiguration/clientid.md) | Required. The open id `client_id` for login. |
+| `iss` | [`clientID`](./asauthorizationproviderextensionloginconfiguration/clientid.md) | Required. Per RFC 7523 Section 3. |
 | `exp` | 5 minutes from now | Required. Per RFC 7523 Section 3. |
-| `scope` | `openid offline_access` and [`additionalScopes`](asauthorizationproviderextensionloginconfiguration/additionalscopes.md) | Required. The requested scope for the assertion. The default value is `openid offline_access` and any additional ones are appended to it. The default additional scope is `urn:apple:platformsso`. If there’s an embedded assertion, this value needs to match the scope in the embedded assertion JWT. |
+| `scope` | `openid offline_access` and [`additionalScopes`](./asauthorizationproviderextensionloginconfiguration/additionalscopes.md) | Required. The requested scope for the assertion. The default value is `openid offline_access` and any additional ones are appended to it. The default additional scope is `urn:apple:platformsso`. If there’s an embedded assertion, this value needs to match the scope in the embedded assertion JWT. |
 | `nonce` | An nonce value | Required. A unique nonce for this request. If there’s an embedded assertion and it includes the nonce, the IdP needs to verify that this value matches the `nonce` in the embedded assertion JWT. |
-| `aud` | [`keyEndpointURL`](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) | The token endpoint URL host and path. |
+| `aud` | [`keyEndpointURL`](./asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) | The token endpoint URL host and path. |
 | `iat` | The current time | Required. The IdP needs to verify this value. |
-| `request_nonce` or [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) | The value that the nonce request returns | Required. The key name is either the [`serverNonceClaimName`](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
-| `username` | [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. If not set, the system uses the local account name. If there’s an embedded assertion, this value needs to match the scope in the embedded assertion JWT. |
-| `sub` | [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. Per RFC 7523 Section 3. |
+| `request_nonce` or [`serverNonceClaimName`](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) | The value that the nonce request returns | Required. The key name is either the [`serverNonceClaimName`](./asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md) or the default value `request_nonce`. |
+| `username` | [`loginUserName`](./asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. If not set, the system uses the local account name. If there’s an embedded assertion, this value needs to match the scope in the embedded assertion JWT. |
+| `sub` | [`loginUserName`](./asauthorizationproviderextensionuserloginconfiguration/loginusername.md) | Required. Per RFC 7523 Section 3. |
 | `grant_type` | `password` | Required. The `grant_type` contains the requested authentication type. |
 |  | `urn:ietf:params:oauth:grant-type:jwt-bearer` | Use this value when requesting User Secure Enclave Key, SmartCard, or Encrypted Password authentication. |
 |  | `urn:ietf:params:oauth:grant-type:saml1_1-bearer` | When using federation and the WS-Trust response token is a Security Assertion Markup Language (SAML) 1.1 token. |
 |  | `urn:ietf:params:oauth:grant-type:saml2-bearer` | When using federation and the WS-Trust response token is a SAML 2.0 token. |
-| `password` | The password for authentication | Required when `grant_type` is `password` and the [`loginRequestEncryptionPublicKey`](asauthorizationproviderextensionloginconfiguration/loginrequestencryptionpublickey.md) isn’t set. |
+| `password` | The password for authentication | Required when `grant_type` is `password` and the [`loginRequestEncryptionPublicKey`](./asauthorizationproviderextensionloginconfiguration/loginrequestencryptionpublickey.md) isn’t set. |
 | `assertion` | The signed or encrypted embedded assertion | Required when `grant_type` isn’t `password`. For WS-Trust federation, the value is the base-64 encoded SAML token from the WS-Trust response. |
 | `jwe_crypto` | A dictionary with the following three values: | Required. The system uses the values in the dictionary to encrypt the response. |
 | `enc` | `A256GCM` | Required. The supported encryption algorithm for the response per RFC 7518 Section 4.6. |
 | `alg` | `ECDH-ES` | Required. The supported key agreement algorithm for the response per RFC 7518 Section 5.3. |
-| `apv` | The base-64 URL encoded `PartyVInfo` to use for the response | Required. Per RFC 7518 Section 4.6.1.3. The value for `PartyVInfo` to encrypt the response. See Configure Concat KDF in [`Creating an encrypted embedded assertion`](creating-an-encrypted-embedded-assertion.md) for more information. |
-| [`previousRefreshTokenClaimName`](asauthorizationproviderextensionloginconfiguration/previousrefreshtokenclaimname.md) if [`includePreviousRefreshTokenInLoginRequest`](asauthorizationproviderextensionloginconfiguration/includepreviousrefreshtokeninloginrequest.md) is [`true`](https://developer.apple.com/documentation/swift/true) | If there’s a previous `refresh_token` in the SSO tokens, the system includes the value here. | Optional. This allows the IdP to carry over any MFA or step-up authentication results per their policy. |
+| `apv` | The base-64 URL encoded `PartyVInfo` to use for the response | Required. Per RFC 7518 Section 4.6.1.3. The value for `PartyVInfo` to encrypt the response. See Configure Concat KDF in [Creating an encrypted embedded assertion](./creating-an-encrypted-embedded-assertion.md) for more information. |
+| [`previousRefreshTokenClaimName`](./asauthorizationproviderextensionloginconfiguration/previousrefreshtokenclaimname.md) if [`includePreviousRefreshTokenInLoginRequest`](./asauthorizationproviderextensionloginconfiguration/includepreviousrefreshtokeninloginrequest.md) is [`true`](../Swift/true.md) | If there’s a previous `refresh_token` in the SSO tokens, the system includes the value here. | Optional. This allows the IdP to carry over any MFA or step-up authentication results per their policy. |
 | `loginConfiguration.customLoginRequestBodyClaims` |  | Optional. If present, adds the key value pairs to the JWT. |
-| `claims : {` ![None](/images/com.apple.authenticationservices/spacer.png)     `“id_token” : {` ![None](/images/com.apple.authenticationservices/spacer.png)         `“groups” : {` ![None](/images/com.apple.authenticationservices/spacer.png)             `“values” : groupsToRequest` ![None](/images/com.apple.authenticationservices/spacer.png) `} } }` ![None](/images/com.apple.authenticationservices/spacer.png) or [`groupRequestClaimName`](asauthorizationproviderextensionloginconfiguration/grouprequestclaimname.md) | If new user, user authorization mode is groups, or authorization is enabled, the system includes the set of groups here. | Optional. If the user is a member of any of the groups, then the `id_token` the login response returns needs to include the groups. |
+| `claims : {` ![](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/spacer.png)     `“id_token” : {` ![](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/spacer.png)         `“groups” : {` ![](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/spacer.png)             `“values” : groupsToRequest` ![](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/spacer.png) `} } }` ![](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/spacer.png) or [`groupRequestClaimName`](./asauthorizationproviderextensionloginconfiguration/grouprequestclaimname.md) | If new user, user authorization mode is groups, or authorization is enabled, the system includes the set of groups here. | Optional. If the user is a member of any of the groups, then the `id_token` the login response returns needs to include the groups. |
 
-The login network request is an HTTP POST to the [`keyEndpointURL`](asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) that’s formatted per RFC 7523 and includes the following parameters:
+The login network request is an HTTP POST to the [`keyEndpointURL`](./asauthorizationproviderextensionloginconfiguration/keyendpointurl.md) that’s formatted per RFC 7523 and includes the following parameters:
 
 | Key | Value | Notes |
 | --- | --- | --- |
 | `platform_sso_version` | `1` | Required. The version of the login protocol. |
 | `grant_type` | `urn:ietf:params:oauth:grant-type:jwt-bearer` | Required. The login assertion type. |
 | `request` | The base-64 URL encoded signed login request | Required if the extension SDK is macOS 13.x. |
-| [`customRequestJWTParameterName`](asauthorizationproviderextensionloginconfiguration/customrequestjwtparametername.md) or `assertion` | The base 64 URL Encoded signed login request | Required if the extension SDK is macOS 14.x or newer. |
-| [`customLoginRequestValues`](asauthorizationproviderextensionloginconfiguration/customloginrequestvalues.md) |  | Optional. If present, adds the key value pairs to the login request. |
+| [`customRequestJWTParameterName`](./asauthorizationproviderextensionloginconfiguration/customrequestjwtparametername.md) or `assertion` | The base 64 URL Encoded signed login request | Required if the extension SDK is macOS 14.x or newer. |
+| [`customLoginRequestValues`](./asauthorizationproviderextensionloginconfiguration/customloginrequestvalues.md) |  | Optional. If present, adds the key value pairs to the login request. |
 
 The following code provides an example of a login network request:
 
@@ -74,7 +75,7 @@ client-request-id: DCAB01D3-B1FE-4E1C-802F-B3EBDCDF9E67
 platform_sso_version=1.0&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=ewogI...A063Eg
 ```
 
-##### Validate the Login Request
+##### Validate the login request
 
 The identity provider (IdP) needs to validate the login request by performing several checks to verify that the:
 
@@ -84,7 +85,7 @@ The identity provider (IdP) needs to validate the login request by performing se
 - `server_nonce` is valid and not replayed.
 - `aud` is the IdP.
 
-If the `grant_type` is password, the IdP needs to verify that the `password` is correct for the supplied [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md).
+If the `grant_type` is password, the IdP needs to verify that the `password` is correct for the supplied [`loginUserName`](./asauthorizationproviderextensionuserloginconfiguration/loginusername.md).
 
 If the `grant_type` is `urn:ietf:params:oauth:grant-type:jwt-bearer,` the IdP needs to perform several checks on the embedded assertion to verify that the:
 
@@ -97,7 +98,7 @@ If the `grant_type` is `urn:ietf:params:oauth:grant-type:jwt-bearer,` the IdP ne
 - `audience` is the IdP.
 - `nonce` matches the login request, if included.
 
-##### Create a Login Request with a Password
+##### Create a login request with a password
 
 The following code provides an example of a login request with a password:
 
@@ -138,7 +139,7 @@ The following code provides an example of a login request with a password:
 }.[Signature]
 ```
 
-##### Create a Login Request with an Encrypted Password
+##### Create a login request with an encrypted password
 
 The following code provides an example of a login request with an encrypted password:
 
@@ -179,7 +180,7 @@ The following code provides an example of a login request with an encrypted pass
 }.[Signature]
 ```
 
-##### Create a Login Request with a Secure Enclave Key
+##### Create a login request with a secure enclave key
 
 The following code provides an example of a login request with a secure enclave key:
 
@@ -220,7 +221,7 @@ The following code provides an example of a login request with a secure enclave 
 }.[Signature]
 ```
 
-##### Create a Login Request with a Smartcard
+##### Create a login request with a SmartCard
 
 The following code provides an example of a login request with a SmartCard:
 
@@ -263,15 +264,16 @@ The following code provides an example of a login request with a SmartCard:
 
 ## See Also
 
-- [Performing a WS-Trust login request](performing-a-ws-trust-login-request.md)
+### Login request
+- [Performing a WS-Trust login request](./performing-a-ws-trust-login-request.md)
   Create a WS-Trust login request using the metadata exchange data (MEX) response.
-- [Creating an embedded assertion](creating-an-embedded-assertion.md)
+- [Creating an embedded assertion](./creating-an-embedded-assertion.md)
   Request an embedded assertion for login types that require a digital signature for authentication.
-- [Creating an encrypted embedded assertion](creating-an-encrypted-embedded-assertion.md)
+- [Creating an encrypted embedded assertion](./creating-an-encrypted-embedded-assertion.md)
   Request an encrypted embedded assertion for login types that require password encryption.
-- [Creating a refresh request](creating-a-refresh-request.md)
+- [Creating a refresh request](./creating-a-refresh-request.md)
   Refresh a non-expired token instead of sending a new login request.
-- [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
+- [Supporting key requests and key exchange requests](./supporting-key-requests-and-key-exchange-requests.md)
   Support the Platform SSO 2.0 protocol for encryption and decryption operations.
 
 

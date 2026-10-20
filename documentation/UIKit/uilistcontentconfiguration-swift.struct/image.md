@@ -1,7 +1,8 @@
 # image
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display.
 
@@ -10,7 +11,7 @@ The image to display.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var image: UIImage? { get set }
 
 ## See Also
 
-- [var text: String?](uilistcontentconfiguration-swift.struct/text.md)
+### Customizing content
+- [var text: String?](./text.md)
   The primary text.
-- [var attributedText: NSAttributedString?](uilistcontentconfiguration-swift.struct/attributedtext.md)
+- [var attributedText: NSAttributedString?](./attributedtext.md)
   An attributed variant of the primary text.
-- [var secondaryText: String?](uilistcontentconfiguration-swift.struct/secondarytext.md)
+- [var secondaryText: String?](./secondarytext.md)
   The secondary text.
-- [var secondaryAttributedText: NSAttributedString?](uilistcontentconfiguration-swift.struct/secondaryattributedtext.md)
+- [var secondaryAttributedText: NSAttributedString?](./secondaryattributedtext.md)
   An attributed variant of the secondary text.
 
 

@@ -1,7 +1,8 @@
 # WeatherCondition.cloudy
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cloudy, overcast conditions.
 
@@ -22,21 +23,22 @@ case cloudy
 
 ## See Also
 
-- [WeatherCondition.blowingDust](weathercondition/blowingdust.md)
+### Getting visibility properties
+- [WeatherCondition.blowingDust](./blowingdust.md)
   Blowing dust or sandstorm.
-- [WeatherCondition.clear](weathercondition/clear.md)
+- [WeatherCondition.clear](./clear.md)
   Clear.
-- [WeatherCondition.foggy](weathercondition/foggy.md)
+- [WeatherCondition.foggy](./foggy.md)
   Fog.
-- [WeatherCondition.haze](weathercondition/haze.md)
+- [WeatherCondition.haze](./haze.md)
   Haze.
-- [WeatherCondition.mostlyClear](weathercondition/mostlyclear.md)
+- [WeatherCondition.mostlyClear](./mostlyclear.md)
   Mostly clear.
-- [WeatherCondition.mostlyCloudy](weathercondition/mostlycloudy.md)
+- [WeatherCondition.mostlyCloudy](./mostlycloudy.md)
   Mostly cloudy.
-- [WeatherCondition.partlyCloudy](weathercondition/partlycloudy.md)
+- [WeatherCondition.partlyCloudy](./partlycloudy.md)
   Partly cloudy.
-- [WeatherCondition.smoky](weathercondition/smoky.md)
+- [WeatherCondition.smoky](./smoky.md)
   Smoky.
 
 

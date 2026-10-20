@@ -1,14 +1,15 @@
 # uuid_unparse
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void uuid_unparse(const uuid_t uu, uuid_string_t out);
 ```
 

@@ -1,7 +1,8 @@
 # optional
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value of this port is optional (may be nil)
 
@@ -12,7 +13,7 @@ The value of this port is optional (may be nil)
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

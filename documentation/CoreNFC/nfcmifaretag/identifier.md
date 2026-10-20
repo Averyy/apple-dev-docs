@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique hardware identifier of the tag.
@@ -17,17 +18,22 @@ The unique hardware identifier of the tag.
 var identifier: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * identifier;
+```
+
 #### Discussion
 
-The [`identifier`](nfcmifaretag/identifier.md) data is in big-endian byte order.
+The [`identifier`](./identifier.md) data is in big-endian byte order.
 
 ## See Also
 
-- [var mifareFamily: NFCMiFareFamily](nfcmifaretag/mifarefamily.md)
+### Getting Tag Information
+- [var mifareFamily: NFCMiFareFamily](./mifarefamily.md)
   The MIFARE product family identifier for the tag.
-- [enum NFCMiFareFamily](nfcmifarefamily.md)
+- [enum NFCMiFareFamily](../nfcmifarefamily.md)
   Identifiers for the MIFARE product families.
-- [var historicalBytes: Data?](nfcmifaretag/historicalbytes.md)
+- [var historicalBytes: Data?](./historicalbytes.md)
   The historical bytes extracted from an Answer To Select response.
 
 

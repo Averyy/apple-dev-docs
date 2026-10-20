@@ -1,7 +1,8 @@
 # DropWhileSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 
@@ -21,19 +22,21 @@ A type that provides the sequence’s iteration interface and encapsulates its i
 struct Iterator
 ```
 
+Available when `Base` conforms to `Sequence`.
+
 ## Topics
 
 ### Default Implementations
-- [IteratorProtocol Implementations](dropwhilesequence/iterator/iteratorprotocol-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

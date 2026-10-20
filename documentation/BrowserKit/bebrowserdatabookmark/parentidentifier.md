@@ -1,7 +1,8 @@
 # parentIdentifier
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the bookmark’s parent folder.
 
@@ -15,9 +16,13 @@ A string that identifies the bookmark’s parent folder.
 var parentIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * parentIdentifier;
+```
+
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
 
 ---

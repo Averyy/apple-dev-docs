@@ -1,7 +1,8 @@
 # UITableViewDropProposal.Intent.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Incorporate the content in an appropriate way based on the drop location.
 
@@ -17,13 +18,18 @@ Incorporate the content in an appropriate way based on the drop location.
 case automatic
 ```
 
+```c
+UITableViewDropIntentAutomatic
+```
+
 ## See Also
 
-- [UITableViewDropProposal.Intent.unspecified](uitableviewdropproposal/intent-swift.enum/unspecified.md)
+### Constants
+- [UITableViewDropProposal.Intent.unspecified](./unspecified.md)
   No drop proposal was specified.
-- [UITableViewDropProposal.Intent.insertAtDestinationIndexPath](uitableviewdropproposal/intent-swift.enum/insertatdestinationindexpath.md)
+- [UITableViewDropProposal.Intent.insertAtDestinationIndexPath](./insertatdestinationindexpath.md)
   Insert the dropped content at the specified index path.
-- [UITableViewDropProposal.Intent.insertIntoDestinationIndexPath](uitableviewdropproposal/intent-swift.enum/insertintodestinationindexpath.md)
+- [UITableViewDropProposal.Intent.insertIntoDestinationIndexPath](./insertintodestinationindexpath.md)
   Incorporate the dropped content into the row at the specified index path.
 
 

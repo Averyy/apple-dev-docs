@@ -1,7 +1,8 @@
 # init(credentialID:relyingPartyIdentifier:userName:userDisplayName:userHandle:key:fido2Extensions:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+

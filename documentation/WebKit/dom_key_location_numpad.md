@@ -1,10 +1,11 @@
 # DOM_KEY_LOCATION_NUMPAD
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var DOM_KEY_LOCATION_NUMPAD: Int { get }
 ```
 
+```c
+DOM_KEY_LOCATION_NUMPAD
+```
+
 ## See Also
 
-- [var DOM_KEY_LOCATION_LEFT: Int](dom_key_location_left.md)
-- [var DOM_KEY_LOCATION_RIGHT: Int](dom_key_location_right.md)
-- [var DOM_KEY_LOCATION_STANDARD: Int](dom_key_location_standard.md)
+### Constants
+- [var DOM_KEY_LOCATION_LEFT: Int](./dom_key_location_left.md)
+- [var DOM_KEY_LOCATION_RIGHT: Int](./dom_key_location_right.md)
+- [var DOM_KEY_LOCATION_STANDARD: Int](./dom_key_location_standard.md)
 
 
 ---

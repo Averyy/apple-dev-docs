@@ -1,7 +1,8 @@
 # parentActivityIdentifier
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the parent activity.
 
@@ -18,6 +19,10 @@ The identifier of the parent activity.
 
 ```swift
 var parentActivityIdentifier: os_activity_id_t { get }
+```
+
+```objc
+@property (nonatomic, readonly) os_activity_id_t parentActivityIdentifier;
 ```
 
 

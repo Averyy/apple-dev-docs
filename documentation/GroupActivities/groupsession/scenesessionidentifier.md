@@ -1,7 +1,8 @@
 # sceneSessionIdentifier
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The persistent identifier of the session’s associated scene.
 
@@ -21,7 +22,7 @@ final var sceneSessionIdentifier: String? { get }
 
 #### Discussion
 
-Use this property to determine which of your app’s scenes belongs with this session. You can configure a [`GroupActivity`](groupactivity.md) object with a [`SceneAssociationBehavior`](sceneassociationbehavior.md) type that tells the system how to associate the activity with one of your app’s scenes. After matching the activity to a specific scene, the system places the scene identifier in this property.
+Use this property to determine which of your app’s scenes belongs with this session. You can configure a [`GroupActivity`](../groupactivity.md) object with a [`SceneAssociationBehavior`](../sceneassociationbehavior.md) type that tells the system how to associate the activity with one of your app’s scenes. After matching the activity to a specific scene, the system places the scene identifier in this property.
 
 
 ---

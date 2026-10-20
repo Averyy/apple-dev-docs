@@ -1,7 +1,8 @@
 # addObserver(_:selector:name:object:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an entry to the notification center’s dispatch table with an observer, a selector, and an optional notification name and sender.
 
@@ -15,9 +16,13 @@ Adds an entry to the notification center’s dispatch table with an observer, a 
 func addObserver(_ observer: Any, selector aSelector: Selector, name aName: NSNotification.Name?, object anObject: String?)
 ```
 
+```objc
+- (void) addObserver:(id) observer selector:(SEL) aSelector name:(NSNotificationName) aName object:(NSString *) anObject;
+```
+
 #### Discussion
 
-This method calls [`addObserver(_:selector:name:object:suspensionBehavior:)`](distributednotificationcenter/addobserver(_:selector:name:object:suspensionbehavior:).md), passing [`DistributedNotificationCenter.SuspensionBehavior.coalesce`](distributednotificationcenter/suspensionbehavior/coalesce.md) for `suspensionBehavior`.
+This method calls [`addObserver(_:selector:name:object:suspensionBehavior:)`](./addobserver%28_,selector,name,object,suspensionbehavior%29.md), passing [`DistributedNotificationCenter.SuspensionBehavior.coalesce`](./suspensionbehavior/coalesce.md) for `suspensionBehavior`.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ This method calls [`addObserver(_:selector:name:object:suspensionBehavior:)`](di
 
 ## See Also
 
-- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: String?, suspensionBehavior: DistributedNotificationCenter.SuspensionBehavior)](distributednotificationcenter/addobserver(_:selector:name:object:suspensionbehavior:).md)
+### Managing Observers
+- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: String?, suspensionBehavior: DistributedNotificationCenter.SuspensionBehavior)](./addobserver%28_,selector,name,object,suspensionbehavior%29.md)
   Adds an entry to the receiver’s dispatch table with a specific observer and suspended-notifications behavior, and optional notification name and sender.
-- [func removeObserver(Any, name: NSNotification.Name?, object: String?)](distributednotificationcenter/removeobserver(_:name:object:).md)
+- [func removeObserver(Any, name: NSNotification.Name?, object: String?)](./removeobserver%28_,name,object%29.md)
   Removes matching entries from the receiver’s dispatch table.
 
 

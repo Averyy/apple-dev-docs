@@ -1,15 +1,20 @@
 # role
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var role: BluetoothRole
+```
+
+```c
+BluetoothRole role;
 ```
 
 

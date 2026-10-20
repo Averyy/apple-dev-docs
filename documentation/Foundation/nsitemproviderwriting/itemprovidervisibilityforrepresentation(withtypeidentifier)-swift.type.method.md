@@ -1,7 +1,8 @@
 # itemProviderVisibilityForRepresentation(withTypeIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asks the item provider for the default representation visibility specification for the given UTI.
 
@@ -20,6 +21,10 @@ Asks the item provider for the default representation visibility specification f
 optional static func itemProviderVisibilityForRepresentation(withTypeIdentifier typeIdentifier: String) -> NSItemProviderRepresentationVisibility
 ```
 
+```objc
++ (NSItemProviderRepresentationVisibility) itemProviderVisibilityForRepresentationWithTypeIdentifier:(NSString *) typeIdentifier;
+```
+
 #### Return Value
 
 A representation visibility specification for the given UTI.
@@ -30,7 +35,8 @@ A representation visibility specification for the given UTI.
 
 ## See Also
 
-- [func itemProviderVisibilityForRepresentation(withTypeIdentifier: String) -> NSItemProviderRepresentationVisibility](nsitemproviderwriting/itemprovidervisibilityforrepresentation(withtypeidentifier:)-swift.method.md)
+### Getting the representation visibility specification
+- [func itemProviderVisibilityForRepresentation(withTypeIdentifier: String) -> NSItemProviderRepresentationVisibility](./itemprovidervisibilityforrepresentation%28withtypeidentifier%29-swift.method.md)
   Asks the item provider for the representation visibility specification for the given UTI.
 
 

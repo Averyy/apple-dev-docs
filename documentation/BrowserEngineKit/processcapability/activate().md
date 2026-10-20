@@ -1,7 +1,8 @@
 # activate()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates the capability.
 
@@ -17,7 +18,7 @@ func activate() throws
 
 #### Discussion
 
-> **Note**: An error if the capability cannot be activated.
+> **Throws**: An error if the capability cannot be activated.
 
 
 ---

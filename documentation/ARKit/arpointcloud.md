@@ -1,7 +1,8 @@
 # ARPointCloud
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of points in the world coordinate space of the AR session.
 
@@ -15,45 +16,50 @@ A collection of points in the world coordinate space of the AR session.
 class ARPointCloud
 ```
 
+```objc
+@interface ARPointCloud : NSObject
+```
+
 #### Overview
 
-Use the [`ARFrame`](arframe.md) [`rawFeaturePoints`](arframe/rawfeaturepoints.md) property to obtain a point cloud representing intermediate results of the scene analysis ARKit uses to perform world tracking.
+Use the [`ARFrame`](./arframe.md) [`rawFeaturePoints`](./arframe/rawfeaturepoints.md) property to obtain a point cloud representing intermediate results of the scene analysis ARKit uses to perform world tracking.
 
 ## Topics
 
 ### Identifying Feature Points
-- [var points: [simd_float3]](arpointcloud/points-4vkif.md)
+- [var points: [simd_float3]](./arpointcloud/points-4vkif.md)
   The list of detected points.
-- [var identifiers: [UInt64]](arpointcloud/identifiers-508tf.md)
+- [var identifiers: [UInt64]](./arpointcloud/identifiers-508tf.md)
   A list of unique identifiers corresponding to detected feature points.
 ### Initializers
-- [init?(coder: NSCoder)](arpointcloud/init(coder:).md)
+- [init?(coder: NSCoder)](./arpointcloud/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Displaying a point cloud using scene depth](displaying-a-point-cloud-using-scene-depth.md)
+### Video Frame Analysis
+- [Displaying a point cloud using scene depth](./displaying-a-point-cloud-using-scene-depth.md)
   Present a visualization of the physical environment by placing points based a scene’s depth data.
-- [Creating a fog effect using scene depth](creating-a-fog-effect-using-scene-depth.md)
+- [Creating a fog effect using scene depth](./creating-a-fog-effect-using-scene-depth.md)
   Apply virtual fog to the physical environment.
-- [class ARFrame](arframe.md)
+- [class ARFrame](./arframe.md)
   A video image captured as part of a session with position-tracking information.
-- [class ARDepthData](ardepthdata.md)
+- [class ARDepthData](./ardepthdata.md)
   An object that describes the distance to regions of the real world from the plane of the camera.
 
 

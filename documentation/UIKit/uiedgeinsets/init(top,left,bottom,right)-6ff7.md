@@ -1,16 +1,17 @@
 # init(top:left:bottom:right:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an edge insets structure with the specified edges.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
@@ -36,7 +37,8 @@ An inset is a margin around a rectangle. Positive values represent margins close
 
 ## See Also
 
-- [init()](uiedgeinsets/init.md)
+### Creating edge insets
+- [init()](./init%28%29.md)
   Initializes the edge insets structure to default values.
 
 

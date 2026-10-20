@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the rectangle that encloses the specified range of characters.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func accessibilityFrame(for range: NSRange) -> NSRect
+```
+
+```objc
+- (NSRect) accessibilityFrameForRange:(NSRange) range;
 ```
 
 #### Return Value
@@ -29,11 +34,12 @@ If the range crosses a line boundary, the returned rectangle will fully enclose 
 
 ## See Also
 
-- [func accessibilityLine(for: Int) -> Int](nsaccessibilitynavigablestatictext/accessibilityline(for:).md)
+### Supporting Accessibility
+- [func accessibilityLine(for: Int) -> Int](./accessibilityline%28for%29.md)
   Returns the line number for the line that contains the specified character index.
-- [func accessibilityRange(forLine: Int) -> NSRange](nsaccessibilitynavigablestatictext/accessibilityrange(forline:).md)
+- [func accessibilityRange(forLine: Int) -> NSRange](./accessibilityrange%28forline%29.md)
   Returns the range of characters in the specified line.
-- [func accessibilityString(for: NSRange) -> String?](nsaccessibilitynavigablestatictext/accessibilitystring(for:).md)
+- [func accessibilityString(for: NSRange) -> String?](./accessibilitystring%28for%29.md)
   Returns the substring for the specified range.
 
 

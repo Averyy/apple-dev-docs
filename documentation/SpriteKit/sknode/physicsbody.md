@@ -1,18 +1,19 @@
 # physicsBody
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The physics body associated with the node.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,14 @@ The physics body associated with the node.
 var physicsBody: SKPhysicsBody? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SKPhysicsBody * physicsBody;
+```
+
 ## Mentions
 
-- [Configuring a Physics Body](configuring-a-physics-body.md)
-- [Getting Started with Physics Bodies](getting-started-with-physics-bodies.md)
+- [Configuring a Physics Body](../configuring-a-physics-body.md)
+- [Getting Started with Physics Bodies](../getting-started-with-physics-bodies.md)
 
 #### Discussion
 
@@ -31,7 +36,8 @@ The default value is `nil`, which indicates that the node does not participate i
 
 ## See Also
 
-- [Getting Started with Physics Bodies](getting-started-with-physics-bodies.md)
+### Adding Physics Behaviors
+- [Getting Started with Physics Bodies](../getting-started-with-physics-bodies.md)
   Create and assign a physics body to enable physics.
 
 

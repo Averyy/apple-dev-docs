@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of view representing the body.
@@ -23,9 +24,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func body(content: Self.Content) -> Self.Body](viewmodifier/body(content:).md)
+### Creating a view modifier
+- [func body(content: Self.Content) -> Self.Body](./body%28content%29.md)
   Gets the current body of the caller.
-- [ViewModifier.Content](viewmodifier/content.md)
+- [ViewModifier.Content](./content.md)
   The content view type passed to `body()`.
 
 

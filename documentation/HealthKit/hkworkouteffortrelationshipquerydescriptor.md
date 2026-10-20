@@ -1,14 +1,15 @@
 # HKWorkoutEffortRelationshipQueryDescriptor
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -20,28 +21,29 @@ struct HKWorkoutEffortRelationshipQueryDescriptor
 ## Topics
 
 ### Structures
-- [HKWorkoutEffortRelationshipQueryDescriptor.Result](hkworkouteffortrelationshipquerydescriptor/result.md)
-- [HKWorkoutEffortRelationshipQueryDescriptor.Results](hkworkouteffortrelationshipquerydescriptor/results.md)
+- [HKWorkoutEffortRelationshipQueryDescriptor.Result](./hkworkouteffortrelationshipquerydescriptor/result.md)
+- [HKWorkoutEffortRelationshipQueryDescriptor.Results](./hkworkouteffortrelationshipquerydescriptor/results.md)
 ### Initializers
-- [init(predicate: NSPredicate?, anchor: HKQueryAnchor?, option: HKWorkoutEffortRelationshipQueryOptions)](hkworkouteffortrelationshipquerydescriptor/init(predicate:anchor:option:).md)
+- [init(predicate: NSPredicate?, anchor: HKQueryAnchor?, option: HKWorkoutEffortRelationshipQueryOptions)](./hkworkouteffortrelationshipquerydescriptor/init%28predicate,anchor,option%29.md)
 ### Instance Properties
-- [var anchor: HKQueryAnchor?](hkworkouteffortrelationshipquerydescriptor/anchor.md)
-- [var option: HKWorkoutEffortRelationshipQueryOptions](hkworkouteffortrelationshipquerydescriptor/option.md)
-- [var predicate: NSPredicate?](hkworkouteffortrelationshipquerydescriptor/predicate.md)
+- [var anchor: HKQueryAnchor?](./hkworkouteffortrelationshipquerydescriptor/anchor.md)
+- [var option: HKWorkoutEffortRelationshipQueryOptions](./hkworkouteffortrelationshipquerydescriptor/option.md)
+- [var predicate: NSPredicate?](./hkworkouteffortrelationshipquerydescriptor/predicate.md)
 ### Default Implementations
-- [HKAsyncQuery Implementations](hkworkouteffortrelationshipquerydescriptor/hkasyncquery-implementations.md)
+- [HKAsyncQuery Implementations](./hkworkouteffortrelationshipquerydescriptor/hkasyncquery-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HKAsyncQuery](hkasyncquery.md)
-- [HKAsyncSequenceQuery](hkasyncsequencequery.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKAsyncQuery](./hkasyncquery.md)
+- [HKAsyncSequenceQuery](./hkasyncsequencequery.md)
 
 ## See Also
 
-- [struct HKScoredAssessmentTypeIdentifier](hkscoredassessmenttypeidentifier.md)
+### Data Types
+- [struct HKScoredAssessmentTypeIdentifier](./hkscoredassessmenttypeidentifier.md)
 
 
 ---

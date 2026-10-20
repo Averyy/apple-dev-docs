@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration of the primary item and scheduled interstitial events.
 
@@ -20,23 +21,28 @@ The total duration of the primary item and scheduled interstitial events.
 var duration: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime duration;
+```
+
 #### Discussion
 
-The duration property takes into account the interstitial event’s [`playoutLimit`](avplayerinterstitialevent/playoutlimit.md) and [`resumptionOffset`](avplayerinterstitialevent/resumptionoffset.md) values.
+The duration property takes into account the interstitial event’s [`playoutLimit`](../avplayerinterstitialevent/playoutlimit.md) and [`resumptionOffset`](../avplayerinterstitialevent/resumptionoffset.md) values.
 
-Before loading the duration of the primary item, the value of this property is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid). For livestreams, this value is [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite).
+Before loading the duration of the primary item, the value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md). For livestreams, this value is [`indefinite`](../../CoreMedia/cmtime/indefinite.md).
 
 ## See Also
 
-- [var currentSegment: AVPlayerItemSegment?](avplayeritemintegratedtimelinesnapshot/currentsegment.md)
+### Inspecting the snapshot
+- [var currentSegment: AVPlayerItemSegment?](./currentsegment.md)
   The currently playing segment.
-- [var segments: [AVPlayerItemSegment]](avplayeritemintegratedtimelinesnapshot/segments.md)
+- [var segments: [AVPlayerItemSegment]](./segments.md)
   The segments for this snapshot.
-- [class AVPlayerItemSegment](avplayeritemsegment.md)
+- [class AVPlayerItemSegment](../avplayeritemsegment.md)
   An immutable object that represents a segment of time on the integrated timeline.
-- [var currentTime: CMTime](avplayeritemintegratedtimelinesnapshot/currenttime.md)
+- [var currentTime: CMTime](./currenttime.md)
   The current time on the integrated timeline when the system created the snapshot.
-- [var currentDate: Date?](avplayeritemintegratedtimelinesnapshot/currentdate.md)
+- [var currentDate: Date?](./currentdate.md)
   The current date on the integrated timeline when the system created the snapshot.
 
 

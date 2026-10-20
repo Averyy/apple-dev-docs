@@ -1,7 +1,8 @@
 # RemoteMediaSession
 
 **Framework**: Now Playing  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A session that manages remote media playback across devices.
 
@@ -19,19 +20,19 @@ class RemoteMediaSession<Attributes> where Attributes : RemoteMediaSessionAttrib
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
 #### Overview
 
 Use a remote session to represent media playback sessions happening outside of this device, but that your app wants to donate to the system so they may appear in the system’s Now Playing interface.
 
-Use this API when your app has information about the remote session and wants to signal to the system that playback has started (using [`start(attributes:)`](remotemediasession/start(attributes:).md)) or something about the session has changed (using [`update(_:)`](remotemediasession/update(_:).md)).
+Use this API when your app has information about the remote session and wants to signal to the system that playback has started (using [`start(attributes:)`](./remotemediasession/start%28attributes%29.md)) or something about the session has changed (using [`update(_:)`](./remotemediasession/update%28_%29.md)).
 
 You can also donate remote sessions to the system through push notifications, for example when playback starts while your app isn’t running.
 
 In that case, use APNs to send a push notification to the user’s device that informs the system of a `start`, `update`, or `end` event.
 
-For more information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+For more information, see [Publishing remote media sessions](./publishing-remote-media-sessions.md)
 
 The following example shows how to start a session:
 
@@ -58,53 +59,54 @@ try await session.end()
 ## Topics
 
 ### Instance Properties
-- [let id: String](remotemediasession/id.md)
+- [let id: String](./remotemediasession/id.md)
   The unique identifier for this session.
-- [var isSystemPrimary: Bool](remotemediasession/issystemprimary.md)
+- [var isSystemPrimary: Bool](./remotemediasession/issystemprimary.md)
   A Boolean value that indicates whether this is currently the primary system session.
 ### Instance Methods
-- [func end() async throws](remotemediasession/end.md)
+- [func end() async throws](./remotemediasession/end%28%29.md)
   Ends the session and removes it from the Now Playing interface.
-- [func requestToBecomeSystemPrimary() async throws](remotemediasession/requesttobecomesystemprimary.md)
+- [func requestToBecomeSystemPrimary() async throws](./remotemediasession/requesttobecomesystemprimary%28%29.md)
   Requests to make this session the system primary media session.
-- [func update(Attributes) async throws](remotemediasession/update(_:).md)
+- [func update(Attributes) async throws](./remotemediasession/update%28_%29.md)
   Updates the session with new attributes.
 ### Type Properties
-- [static var pushToStartToken: Data?](remotemediasession/pushtostarttoken.md)
-  The token you use to start a [`RemoteMediaSession`](remotemediasession.md) through a push notification.
-- [static var pushToStartTokenUpdates: AsyncStream<Data>](remotemediasession/pushtostarttokenupdates.md)
-  An asynchronous sequence that delivers updated tokens for starting a [`RemoteMediaSession`](remotemediasession.md) through a push notification.
+- [static var pushToStartToken: Data?](./remotemediasession/pushtostarttoken.md)
+  The token you use to start a [`RemoteMediaSession`](./remotemediasession.md) through a push notification.
+- [static var pushToStartTokenUpdates: AsyncStream<Data>](./remotemediasession/pushtostarttokenupdates.md)
+  An asynchronous sequence that delivers updated tokens for starting a [`RemoteMediaSession`](./remotemediasession.md) through a push notification.
 ### Type Methods
-- [static func sessions() async throws -> [RemoteMediaSession<Attributes>]](remotemediasession/sessions.md)
+- [static func sessions() async throws -> [RemoteMediaSession<Attributes>]](./remotemediasession/sessions%28%29.md)
   Returns all registered remote sessions.
-- [static func start(attributes: Attributes) async throws -> RemoteMediaSession<Attributes>](remotemediasession/start(attributes:).md)
+- [static func start(attributes: Attributes) async throws -> RemoteMediaSession<Attributes>](./remotemediasession/start%28attributes%29.md)
   Starts a new remote session with the specified attributes.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+### Remote sessions
+- [Publishing remote media sessions](./publishing-remote-media-sessions.md)
   Show media from an external device on the Lock Screen and Control Center.
-- [protocol RemoteMediaSessionRepresentable](remotemediasessionrepresentable.md)
+- [protocol RemoteMediaSessionRepresentable](./remotemediasessionrepresentable.md)
   A session that plays remotely, potentially across multiple devices.
-- [protocol RemoteMediaSessionExtension](remotemediasessionextension.md)
+- [protocol RemoteMediaSessionExtension](./remotemediasessionextension.md)
   An app extension that provides remote media sessions.
-- [class RemoteMediaSessionExtensionConfiguration](remotemediasessionextensionconfiguration.md)
+- [class RemoteMediaSessionExtensionConfiguration](./remotemediasessionextensionconfiguration.md)
   The configuration object for a remote playback extension.
-- [protocol RemoteMediaSessionAttributes](remotemediasessionattributes.md)
+- [protocol RemoteMediaSessionAttributes](./remotemediasessionattributes.md)
   A type that represents attributes for remote sessions.
-- [enum RemoteMediaSessionError](remotemediasessionerror.md)
+- [enum RemoteMediaSessionError](./remotemediasessionerror.md)
   Errors that can occur during remote session operations.
-- [struct MediaDevice](mediadevice.md)
+- [struct MediaDevice](./mediadevice.md)
   A device that plays media in a remote session.
 
 

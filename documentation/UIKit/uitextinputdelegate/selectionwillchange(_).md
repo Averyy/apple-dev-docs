@@ -2,21 +2,26 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the input delegate when the selection is about to change in the document.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func selectionWillChange(_ textInput: (any UITextInput)?)
+```
+
+```objc
+- (void) selectionWillChange:(id<UITextInput>) textInput;
 ```
 
 ## Parameters
@@ -25,9 +30,11 @@ func selectionWillChange(_ textInput: (any UITextInput)?)
 
 ## See Also
 
-- [func textWillChange((any UITextInput)?)](uitextinputdelegate/textwillchange(_:).md)
+### Related Documentation
+- [func textWillChange((any UITextInput)?)](./textwillchange%28_%29.md)
   Tells the input delegate when text is about to change in the document.
-- [func selectionDidChange((any UITextInput)?)](uitextinputdelegate/selectiondidchange(_:).md)
+### Notifying the delegate of selection changes
+- [func selectionDidChange((any UITextInput)?)](./selectiondidchange%28_%29.md)
   Tells the input delegate when the selection has changed in the document.
 
 

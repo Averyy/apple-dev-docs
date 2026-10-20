@@ -1,7 +1,8 @@
 # gss_import_sec_context(_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Imports a security context from another process.
 
@@ -18,23 +19,28 @@ Imports a security context from another process.
 func gss_import_sec_context(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ interprocess_token: gss_buffer_t, _ context_handle: UnsafeMutablePointer<gss_ctx_id_t?>) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_import_sec_context(OM_uint32 *minor_status, gss_buffer_t const interprocess_token, gss_ctx_id_t*context_handle);
+```
+
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Function Status`](function-status.md) for a description of other status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
 #### Discussion
 
-You can import an interprocess token only once. After you have imported it, release the token’s buffer using a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md).
+You can import an interprocess token only once. After you have imported it, release the token’s buffer using a call to [`gss_release_buffer(_:_:)`](./gss_release_buffer%28_,_%29.md).
 
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `interprocess_token`: The token created by a call to [`gss_export_sec_context(_:_:_:)`](gss_export_sec_context(_:_:_:).md).
-- `context_handle`: A pointer the function uses to return the imported context. Release the context with the [`gss_delete_sec_context(_:_:_:)`](gss_delete_sec_context(_:_:_:).md) function when you are done with it.
+- `interprocess_token`: The token created by a call to [`gss_export_sec_context(_:_:_:)`](./gss_export_sec_context%28_,_,_%29.md).
+- `context_handle`: A pointer the function uses to return the imported context. Release the context with the [`gss_delete_sec_context(_:_:_:)`](./gss_delete_sec_context%28_,_,_%29.md) function when you are done with it.
 
 ## See Also
 
-- [func gss_export_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_buffer_t?) -> OM_uint32](gss_export_sec_context(_:_:_:).md)
+### Import and Export
+- [func gss_export_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_buffer_t?) -> OM_uint32](./gss_export_sec_context%28_,_,_%29.md)
   Transfers a security context to another process.
 
 

@@ -1,7 +1,8 @@
 # init(contentsOfURL:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a directions request object using the specified URL.
 
@@ -10,7 +11,7 @@ Creates and returns a directions request object using the specified URL.
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -26,7 +27,7 @@ An initialized directions request object.
 
 #### Discussion
 
-You should use the [`isDirectionsRequest(_:)`](mkdirections/request/isdirectionsrequest(_:).md) method to verify that the specified URL is of the correct format before calling this method to initialize the object.
+You should use the [`isDirectionsRequest(_:)`](./isdirectionsrequest%28_%29.md) method to verify that the specified URL is of the correct format before calling this method to initialize the object.
 
 ## Parameters
 
@@ -34,7 +35,8 @@ You should use the [`isDirectionsRequest(_:)`](mkdirections/request/isdirections
 
 ## See Also
 
-- [class func isDirectionsRequest(URL) -> Bool](mkdirections/request/isdirectionsrequest(_:).md)
+### Creating a directions request object
+- [class func isDirectionsRequest(URL) -> Bool](./isdirectionsrequest%28_%29.md)
   Returns a Boolean value that indicates whether the specified URL contains a directions request.
 
 

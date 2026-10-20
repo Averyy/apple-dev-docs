@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to a Metal binary archive file.
 
@@ -19,13 +20,17 @@ A URL to a Metal binary archive file.
 var url: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSURL * url;
+```
+
 ## Mentions
 
-- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](../creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 #### Discussion
 
-You can use this method to load a binary archive you created with an [`MTLBinaryArchive`](mtlbinaryarchive.md) instance’s [`serialize(to:)`](mtlbinaryarchive/serialize(to:).md) method.
+You can use this method to load a binary archive you created with an [`MTLBinaryArchive`](../mtlbinaryarchive.md) instance’s [`serialize(to:)`](../mtlbinaryarchive/serialize%28to%29.md) method.
 
 
 ---

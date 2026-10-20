@@ -1,7 +1,8 @@
 # count
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of entity identifiers in this collection.
 

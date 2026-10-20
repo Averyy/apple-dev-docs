@@ -1,7 +1,8 @@
 # StringSearchScope.UnwrappedType
 
 **Framework**: App Intents  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 17.2+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration
@@ -20,8 +21,9 @@ typealias UnwrappedType = StringSearchScope
 
 ## See Also
 
-- [StringSearchScope.Specification](stringsearchscope/specification.md)
-- [StringSearchScope.ValueType](stringsearchscope/valuetype.md)
+### Getting the related types
+- [StringSearchScope.Specification](./specification.md)
+- [StringSearchScope.ValueType](./valuetype.md)
 
 
 ---

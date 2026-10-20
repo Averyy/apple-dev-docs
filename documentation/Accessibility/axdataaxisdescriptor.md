@@ -1,7 +1,8 @@
 # AXDataAxisDescriptor
 
 **Framework**: Accessibility  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The basic interface for a data axis in a chart.
 
@@ -20,31 +21,36 @@ The basic interface for a data axis in a chart.
 protocol AXDataAxisDescriptor : NSCopying
 ```
 
+```objc
+@protocol AXDataAxisDescriptor <NSCopying>
+```
+
 #### Overview
 
-Each [`AXChart`](axchart.md) requires at least two [`AXDataAxisDescriptor`](axdataaxisdescriptor.md) objects to describe an x-axis and a y-axis.
+Each [`AXChart`](./axchart.md) requires at least two [`AXDataAxisDescriptor`](./axdataaxisdescriptor.md) objects to describe an x-axis and a y-axis.
 
 ## Topics
 
 ### Specifying the title
-- [var title: String](axdataaxisdescriptor/title.md)
+- [var title: String](./axdataaxisdescriptor/title.md)
   The title of the axis.
-- [var attributedTitle: NSAttributedString](axdataaxisdescriptor/attributedtitle.md)
+- [var attributedTitle: NSAttributedString](./axdataaxisdescriptor/attributedtitle.md)
   An attributed version of the axis title.
 
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../foundation/nscopying.md)
+- [NSCopying](../Foundation/nscopying.md)
 ### Conforming Types
-- [AXCategoricalDataAxisDescriptor](axcategoricaldataaxisdescriptor.md)
-- [AXNumericDataAxisDescriptor](axnumericdataaxisdescriptor.md)
+- [AXCategoricalDataAxisDescriptor](./axcategoricaldataaxisdescriptor.md)
+- [AXNumericDataAxisDescriptor](./axnumericdataaxisdescriptor.md)
 
 ## See Also
 
-- [class AXCategoricalDataAxisDescriptor](axcategoricaldataaxisdescriptor.md)
+### Axis representation
+- [class AXCategoricalDataAxisDescriptor](./axcategoricaldataaxisdescriptor.md)
   An object that represents an axis of categorical data.
-- [class AXNumericDataAxisDescriptor](axnumericdataaxisdescriptor.md)
+- [class AXNumericDataAxisDescriptor](./axnumericdataaxisdescriptor.md)
   An object that represents an axis of numerical data.
 
 

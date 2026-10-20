@@ -1,7 +1,8 @@
 # SubscriptionPricePointResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single subscription price point.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single subscription price point.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPricePointResponse
 ```
 
@@ -22,17 +23,18 @@ object SubscriptionPricePointResponse
 
 ## See Also
 
-- [object SubscriptionPricePoint](subscriptionpricepoint.md)
+### Objects and types
+- [object SubscriptionPricePoint](./subscriptionpricepoint.md)
   A standard price tier for auto-renewable subscriptions, defining the customer price and developer proceeds.
-- [object SubscriptionPricePointsResponse](subscriptionpricepointsresponse.md)
+- [object SubscriptionPricePointsResponse](./subscriptionpricepointsresponse.md)
   The response body for endpoints that list available price points for a subscription.
-- [object SubscriptionPriceCreateRequest](subscriptionpricecreaterequest.md)
+- [object SubscriptionPriceCreateRequest](./subscriptionpricecreaterequest.md)
   The request body you use to create a subscription price.
-- [object SubscriptionPriceInlineCreate](subscriptionpriceinlinecreate.md)
+- [object SubscriptionPriceInlineCreate](./subscriptionpriceinlinecreate.md)
   An inline object for specifying a territory-specific subscription price within a price schedule.
-- [object SubscriptionPriceResponse](subscriptionpriceresponse.md)
+- [object SubscriptionPriceResponse](./subscriptionpriceresponse.md)
   The response body for endpoints that create a single subscription price.
-- [object SubscriptionPricePointInlineCreate](subscriptionpricepointinlinecreate.md)
+- [object SubscriptionPricePointInlineCreate](./subscriptionpricepointinlinecreate.md)
   An inline object for specifying a price point when creating a subscription pricing configuration.
 
 

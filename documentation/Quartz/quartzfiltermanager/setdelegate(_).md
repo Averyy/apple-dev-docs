@@ -1,7 +1,8 @@
 # setDelegate(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setDelegate(_ aDelegate: Any!)
+```
+
+```objc
+- (void) setDelegate:(id) aDelegate;
 ```
 
 

@@ -1,7 +1,8 @@
 # NSCollectionView.UpdateAction
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the type of action being performed on an item.
 
@@ -14,35 +15,40 @@ Constants indicating the type of action being performed on an item.
 enum UpdateAction
 ```
 
+```c
+enum NSCollectionUpdateAction : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSCollectionView.UpdateAction.insert](nscollectionview/updateaction/insert.md)
+- [NSCollectionView.UpdateAction.insert](./updateaction/insert.md)
   Insert the item into the collection view.
-- [NSCollectionView.UpdateAction.delete](nscollectionview/updateaction/delete.md)
+- [NSCollectionView.UpdateAction.delete](./updateaction/delete.md)
   Remove the action from the collection view.
-- [NSCollectionView.UpdateAction.reload](nscollectionview/updateaction/reload.md)
+- [NSCollectionView.UpdateAction.reload](./updateaction/reload.md)
   Reload the item, which consists of deleting and then inserting the item.
-- [NSCollectionView.UpdateAction.move](nscollectionview/updateaction/move.md)
+- [NSCollectionView.UpdateAction.move](./updateaction/move.md)
   Move the item from its current location to a new location.
-- [NSCollectionView.UpdateAction.none](nscollectionview/updateaction/none.md)
+- [NSCollectionView.UpdateAction.none](./updateaction/none.md)
   Take no action on the item.
 ### Initializers
-- [init?(rawValue: Int)](nscollectionview/updateaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./updateaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSCollectionView.ScrollDirection](nscollectionview/scrolldirection.md)
+### Enumerations
+- [NSCollectionView.ScrollDirection](./scrolldirection.md)
   Constants indicating the scrolling direction for the layout.
 
 

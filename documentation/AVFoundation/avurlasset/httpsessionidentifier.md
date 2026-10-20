@@ -1,7 +1,8 @@
 # httpSessionIdentifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A session identifier that the asset sends in HTTP requests that it makes.
 
@@ -20,11 +21,15 @@ A session identifier that the asset sends in HTTP requests that it makes.
 var httpSessionIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUUID * httpSessionIdentifier;
+```
+
 #### Discussion
 
 The asset uses this value to set as the `X-Playback-Session-Id` header of HTTP requests that it creates.
 
-> **Note**:  Copies of an [`AVURLAsset`](avurlasset.md) have the same session identifier as the original asset.
+> **Note**:  Copies of an [`AVURLAsset`](../avurlasset.md) have the same session identifier as the original asset.
 
 
 ---

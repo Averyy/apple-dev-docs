@@ -1,14 +1,15 @@
 # init(documentType:namespaces:issuerKeyIdentifiers:)
 
 **Framework**: IdentityDocumentServices  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a document request.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 
 ## Declaration

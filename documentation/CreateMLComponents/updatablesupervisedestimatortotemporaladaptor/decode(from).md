@@ -1,17 +1,18 @@
 # decode(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes the transformer.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -21,11 +22,12 @@ func decode(from decoder: inout any EstimatorDecoder) throws -> UpdatableSupervi
 
 ## See Also
 
-- [func encode(UpdatableSupervisedEstimatorToTemporalAdaptor<Base>.Transformer, to: inout any EstimatorEncoder) throws](updatablesupervisedestimatortotemporaladaptor/encode(_:to:).md)
+### Encoding and decoding
+- [func encode(UpdatableSupervisedEstimatorToTemporalAdaptor<Base>.Transformer, to: inout any EstimatorEncoder) throws](./encode%28_,to%29.md)
   Encodes a fitted transformer.
-- [func encodeWithOptimizer(UpdatableSupervisedEstimatorToTemporalAdaptor<Base>.Transformer, to: inout any EstimatorEncoder) throws](updatablesupervisedestimatortotemporaladaptor/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(UpdatableSupervisedEstimatorToTemporalAdaptor<Base>.Transformer, to: inout any EstimatorEncoder) throws](./encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> UpdatableSupervisedEstimatorToTemporalAdaptor<Base>.Transformer](updatablesupervisedestimatortotemporaladaptor/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> UpdatableSupervisedEstimatorToTemporalAdaptor<Base>.Transformer](./decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer with a decoder.
 
 

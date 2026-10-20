@@ -1,7 +1,8 @@
 # URLSessionConfiguration.MultipathServiceType.interactive
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A service whereby Multipath TCP attempts to use the lowest-latency interface.
 
@@ -17,17 +18,22 @@ A service whereby Multipath TCP attempts to use the lowest-latency interface.
 case interactive
 ```
 
+```c
+NSURLSessionMultipathServiceTypeInteractive
+```
+
 #### Discussion
 
-Specify this option for latency-sensitive, low-volume connections that might use cellular data. You must also set the [`Multipath Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app.
+Specify this option for latency-sensitive, low-volume connections that might use cellular data. You must also set the [`Multipath Entitlement`](../../../BundleResources/entitlements/com.apple.developer.networking.multipath.md) in the Xcode Capabilities pane for your app.
 
 ## See Also
 
-- [URLSessionConfiguration.MultipathServiceType.none](urlsessionconfiguration/multipathservicetype-swift.enum/none.md)
+### Service types
+- [URLSessionConfiguration.MultipathServiceType.none](./none.md)
   The default service type indicating that Multipath TCP should not be used.
-- [URLSessionConfiguration.MultipathServiceType.handover](urlsessionconfiguration/multipathservicetype-swift.enum/handover.md)
+- [URLSessionConfiguration.MultipathServiceType.handover](./handover.md)
   A Multipath TCP service that provides seamless handover between Wi-Fi and cellular in order to preserve the connection.
-- [URLSessionConfiguration.MultipathServiceType.aggregate](urlsessionconfiguration/multipathservicetype-swift.enum/aggregate.md)
+- [URLSessionConfiguration.MultipathServiceType.aggregate](./aggregate.md)
   A service that aggregates the capacities of other Multipath options in an attempt to increase throughput and minimize latency.
 
 

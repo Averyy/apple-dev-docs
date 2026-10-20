@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Grab strength decreases as particles approach the volume surface.
 

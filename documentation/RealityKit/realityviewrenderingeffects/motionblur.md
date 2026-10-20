@@ -1,7 +1,8 @@
 # motionBlur
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables or disables a motion blur effect for virtual content.
 
@@ -26,7 +27,7 @@ By default, RealityKit applies an effect that introduces motion blur for virtual
 
 If the motion blur effect is disabled by setting the `motionBlur` property to `.disabled`, virtual objects will be rendered at exactly one position in the frame for any given image in the image sequence. Disabling motion blur reduces the computational cost of rendering.
 
-When deciding whether to use any effect, be sure to consider your app’s CPU and GPU utilization, as described in [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
+When deciding whether to use any effect, be sure to consider your app’s CPU and GPU utilization, as described in [Improving the Performance of a RealityKit App](../improving-the-performance-of-a-realitykit-app.md).
 
 > ❗ **Important**: This rendering effect is unavailable on macOS.
 

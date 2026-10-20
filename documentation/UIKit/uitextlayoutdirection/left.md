@@ -1,16 +1,17 @@
 # UITextLayoutDirection.left
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Layout of the text to the left.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ Layout of the text to the left.
 case left
 ```
 
+```c
+UITextLayoutDirectionLeft
+```
+
 ## See Also
 
-- [UITextLayoutDirection.right](uitextlayoutdirection/right.md)
+### Constants
+- [UITextLayoutDirection.right](./right.md)
   Layout of the text to the right.
-- [UITextLayoutDirection.up](uitextlayoutdirection/up.md)
+- [UITextLayoutDirection.up](./up.md)
   Layout of the text in an upward direction.
-- [UITextLayoutDirection.down](uitextlayoutdirection/down.md)
+- [UITextLayoutDirection.down](./down.md)
   Layout of the text in a downward direction.
 
 

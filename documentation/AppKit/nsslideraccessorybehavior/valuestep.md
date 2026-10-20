@@ -1,7 +1,8 @@
 # valueStep
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value of the slider moves towards the associated value for the accessory with by a delta of the slider’s `altIncrementValue`.
 
@@ -18,11 +19,16 @@ The value of the slider moves towards the associated value for the accessory wit
 class var valueStep: NSSliderAccessoryBehavior { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSSliderAccessoryBehavior * valueStepBehavior;
+```
+
 ## See Also
 
-- [class var automatic: NSSliderAccessoryBehavior](nsslideraccessorybehavior/automatic.md)
+### Type Properties
+- [class var automatic: NSSliderAccessoryBehavior](./automatic.md)
   The behavior is automatically picked to be the system standard, given the slider’s current context.
-- [class var valueReset: NSSliderAccessoryBehavior](nsslideraccessorybehavior/valuereset.md)
+- [class var valueReset: NSSliderAccessoryBehavior](./valuereset.md)
   The value of the slider is reset to the associated value for the accessory.
 
 

@@ -1,7 +1,8 @@
 # add(_:completionHandler:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an array of media items to the end of the playlist.
 
@@ -14,17 +15,28 @@ Adds an array of media items to the end of the playlist.
 ## Declaration
 
 ```swift
+func add(_ mediaItems: [MPMediaItem], completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func add(_ mediaItems: [MPMediaItem]) async throws
+```
+
+```objc
+- (void) addMediaItems:(NSArray<MPMediaItem *> *) mediaItems completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Parameters
 
 - `mediaItems`: The array of media items to add to the end of the playlist.
-- `completionHandler`: A block that the system calls after it adds the media items to the playlist. - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+- `completionHandler`: A block that the system calls after it adds the media items to the playlist.
+
+  - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](../../ObjectiveC/nil-227m0.md).
 
 ## See Also
 
-- [func addItem(withProductID: String, completionHandler: (((any Error)?) -> Void)?)](mpmediaplaylist/additem(withproductid:completionhandler:).md)
+### Adding media items to a playlist
+- [func addItem(withProductID: String, completionHandler: (((any Error)?) -> Void)?)](./additem%28withproductid,completionhandler%29.md)
   Adds the item associated with the product identifier to the end of the playlist.
 
 

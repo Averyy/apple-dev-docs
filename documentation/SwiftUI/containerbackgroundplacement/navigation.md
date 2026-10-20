@@ -1,9 +1,10 @@
 # navigation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A background placement inside a [`NavigationStack`](navigationstack.md) or [`NavigationSplitView`](navigationsplitview.md).
+A background placement inside a [`NavigationStack`](../navigationstack.md) or [`NavigationSplitView`](../navigationsplitview.md).
 
 **Availability**:
 - iOS 18.0+
@@ -19,7 +20,7 @@ static let navigation: ContainerBackgroundPlacement
 
 #### Discussion
 
-For translucent backgrounds in a navigation split view, combine this placement with [`navigationSplitView`](containerbackgroundplacement/navigationsplitview.md).
+For translucent backgrounds in a navigation split view, combine this placement with [`navigationSplitView`](./navigationsplitview.md).
 
 ```swift
 NavigationSplitView {
@@ -34,9 +35,10 @@ NavigationSplitView {
 
 ## See Also
 
-- [static let tabView: ContainerBackgroundPlacement](containerbackgroundplacement/tabview.md)
-  A background placement inside a [`TabView`](tabview.md).
-- [static let widget: ContainerBackgroundPlacement](containerbackgroundplacement/widget.md)
+### Getting placements
+- [static let tabView: ContainerBackgroundPlacement](./tabview.md)
+  A background placement inside a [`TabView`](../tabview.md).
+- [static let widget: ContainerBackgroundPlacement](./widget.md)
   The container background placement for a widget.
 
 

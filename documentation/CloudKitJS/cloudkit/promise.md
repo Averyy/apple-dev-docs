@@ -10,7 +10,7 @@ Represents an operation that hasn’t completed yet, but is expected in the futu
 
 ## Declaration
 
-```swift
+```
 const Object Promise;
 ```
 
@@ -20,23 +20,24 @@ The asynchronous methods in CloudKit JS return a `Promise` object that resolves 
 
 ## See Also
 
-- [CKError](cloudkit/ckerror.md)
+### Properties
+- [CKError](./ckerror.md)
   Property to access the error codes.
-- [DatabaseScope](cloudkit/databasescope.md)
+- [DatabaseScope](./databasescope.md)
   Property to access the enumeration.
-- [QueryFilterComparator](cloudkit/queryfiltercomparator.md)
+- [QueryFilterComparator](./queryfiltercomparator.md)
   Property to access the enumeration.
-- [ReferenceAction](cloudkit/referenceaction.md)
+- [ReferenceAction](./referenceaction.md)
   Property to access the enumeration.
-- [ShareParticipantAcceptanceStatus](cloudkit/shareparticipantacceptancestatus.md)
+- [ShareParticipantAcceptanceStatus](./shareparticipantacceptancestatus.md)
   Property to access the enumeration.
-- [ShareParticipantPermission](cloudkit/shareparticipantpermission.md)
+- [ShareParticipantPermission](./shareparticipantpermission.md)
   Property to access the enumeration.
-- [ShareParticipantType](cloudkit/shareparticipanttype.md)
+- [ShareParticipantType](./shareparticipanttype.md)
   Property to access the enumeration.
-- [ShareRecordType](cloudkit/sharerecordtype.md)
+- [ShareRecordType](./sharerecordtype.md)
   Property to access the class instance.
-- [SubscriptionType](cloudkit/subscriptiontype.md)
+- [SubscriptionType](./subscriptiontype.md)
   Property to access the enumeration.
 
 

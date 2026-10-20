@@ -1,7 +1,8 @@
 # x
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The x-axis, expressed in unit coordinates.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 An array of UTI strings representing the types of data that can be loaded for an item provider.
@@ -21,17 +22,30 @@ An array of UTI strings representing the types of data that can be loaded for an
 static var writableTypeIdentifiersForItemProvider: [String] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (class, nonatomic, copy, readonly) NSArray<NSString *> * writableTypeIdentifiersForItemProvider;
+```
+
+*macOS*
+
+```objc
+@property (class, atomic, copy, readonly) NSArray<NSString *> * writableTypeIdentifiersForItemProvider;
+```
+
 #### Discussion
 
 Provide uniform type identifiers (UTIs) in order from highest fidelity to lowest. If your app employs a native data representation, place that first in the array.
 
-Implement this version of the property to offer a minimal list of UTIs that *all* resulting item provider instances can support. For example, using this version of the property for an [`NSURL`](nsurl.md) object, your implementation should return the `public.url` UTI but not `public.file-url`.
+Implement this version of the property to offer a minimal list of UTIs that *all* resulting item provider instances can support. For example, using this version of the property for an [`NSURL`](../nsurl.md) object, your implementation should return the `public.url` UTI but not `public.file-url`.
 
 Use the class version of this property when you do not initialize an item provider with an object, thereby deferring the underlying object’s instantiation until the destination app needs it.
 
 ## See Also
 
-- [var writableTypeIdentifiersForItemProvider: [String]](nsitemproviderwriting/writabletypeidentifiersforitemprovider-swift.property.md)
+### Getting the writable type identifiers
+- [var writableTypeIdentifiersForItemProvider: [String]](./writabletypeidentifiersforitemprovider-swift.property.md)
   An array of UTI strings representing the types of data that can be loaded for an item provider.
 
 

@@ -1,30 +1,31 @@
 # Porting your macOS apps to Apple silicon
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Article
 
 Create a version of your macOS app that runs on both Apple silicon and Intel-based Mac computers.
 
 #### Overview
 
-> ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference) and [`Configuring the build settings of a target`](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
+> ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [Build settings reference](../Xcode/build-settings-reference.md) and [Configuring the build settings of a target](../Xcode/configuring-the-build-settings-of-a-target.md). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
 
 Port your existing macOS app to Apple silicon by creating a universal binary and modifying your code to handle architectural differences. A universal binary looks no different than a regular app, but its executable file contains two versions of your compiled code. One version runs natively on Apple silicon, and the other runs natively on Intel-based Mac computers. At runtime, the system automatically chooses which version to run on the current platform.
 
-![ThAn illustration of an app, where the main executable file supports the arm64 and x86_64 architectures.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-1@2x.png)
+![ThAn illustration of an app, where the main executable file supports the arm64 and x86_64 architectures.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-1@2x.png)
 
 To build a universal binary, you need Xcode 12 or a later version, which adds `arm64` to the standard list of build architectures for macOS binaries. When you open your project and do a clean build, Xcode creates a universal binary automatically if your project uses the standard architectures. If you use custom makefiles or build scripts, add the `arm64` architecture to your build system.
 
 After you create a universal binary, test it on both architectures and determine whether you need to make additional changes. macOS frameworks shield apps from most architectural differences between platforms, but some differences may still require you to change your code. In addition, architectural differences may affect your app’s performance and require further changes.
 
-> **Note**: On Apple silicon, apps built for the `x86_64` architecture run under the Rosetta translation environment. For more information, see [`About the Rosetta translation environment`](about-the-rosetta-translation-environment.md).
+> **Note**: On Apple silicon, apps built for the `x86_64` architecture run under the Rosetta translation environment. For more information, see [About the Rosetta translation environment](./about-the-rosetta-translation-environment.md).
 
-To learn how to build a universal binary, see [`Building a universal macOS binary`](building-a-universal-macos-binary.md).
+To learn how to build a universal binary, see [Building a universal macOS binary](./building-a-universal-macos-binary.md).
 
 ##### Create a Porting Plan
 
 Early in the porting process, identify the workflow you’ll use to build and test your code. Xcode runs on all Mac computers, so build your code on either an Apple silicon or Intel-based Mac computer and do your initial testing there. However, always test, tune, and validate your code on both computer types to uncover issues specific to that architecture.
 
-![An illustration of the process for building, debugging, and tuning your code on Apple silicon-based Mac computers and Intel-based Mac computers.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-2@2x.png)
+![An illustration of the process for building, debugging, and tuning your code on Apple silicon-based Mac computers and Intel-based Mac computers.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-2@2x.png)
 
 In addition to a workflow plan, identify potential areas to investigate during the porting process. The porting effort for `arm64` depends on how much you rely on hardware-specific features. If you rely mostly on Apple frameworks and technologies, your porting effort may be small. If you tuned your code specifically for the `x86_64` architecture and hardware capabilities, porting to `arm64` may require additional effort.
 
@@ -45,21 +46,21 @@ Always have a well-defined test plan, ideally with a set of automated test suite
 
 If your project depends on any third-party libraries, contact the original vendors and ask them to provide you with universal versions of those libraries. All code running in the same process must support the same architecture. You cannot produce a universal version of your binary without universal versions of all linked libraries. If one or more libraries is not universal, the linker reports errors.
 
-![TAn illustration that shows the linker creating a universal app from the app’s code and a universal library.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-3@2x.png)
+![TAn illustration that shows the linker creating a universal app from the app’s code and a universal library.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-3@2x.png)
 
-To learn how to create your own universal binaries, see [`Building a universal macOS binary`](building-a-universal-macos-binary.md).
+To learn how to create your own universal binaries, see [Building a universal macOS binary](./building-a-universal-macos-binary.md).
 
-##### Update Plug Ins to Universal Binaries
+##### Update Plug-Ins to Universal Binaries
 
 A universal plug-in runs natively on any Mac computer. If your app supports a plug-in model, create universal versions of the plug-ins that you manage. If your company allows external developers to contribute plug-ins, encourage those developers to create universal versions of their plug-ins.
 
 Universal plug-ins are essential if your app loads those plug-ins directly into its process space. Code running in the same process must support the same architecture. If your app attempts to load a plug-in with an incompatible architecture, the system reports an error at load time.
 
-![An illustration of an XPC service managing a plug-in for an app.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-4@2x.png)
+![An illustration of an XPC service managing a plug-in for an app.](https://developer.apple.com/tutorials/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-4@2x.png)
 
 Plug-ins that run out-of-process using an XPC service may run using a different architecture than the app itself. To give your developers time to update their plug-ins, provide two non-universal XPC services—one to run `arm64` plug-ins and one to run `x86_64` plug-ins. A single XPC service can manage either native or translated plug-ins, but not both at the same time. When creating the services, give each one a unique bundle identifier so they may run simultaneously.
 
-For information about how to communicate with out-of-process plug-ins using XPC, see [`XPC`](https://developer.apple.com/documentation/foundation/xpc).
+For information about how to communicate with out-of-process plug-ins using XPC, see [XPC](../Foundation/xpc.md).
 
 ##### Address Architectural Differences
 
@@ -81,9 +82,9 @@ The following list identifies several known architectural differences between Ap
 
 > **Note**: Both Apple silicon and Intel-based Mac computers use the little-endian format for data, so you don’t need to make endian conversions in your code. However, continue to minimize the need for endian conversions in custom data formats that you create.
 
-For additional information about architectural differences, see [`Addressing architectural differences in your macOS code`](addressing-architectural-differences-in-your-macos-code.md).
+For additional information about architectural differences, see [Addressing architectural differences in your macOS code](./addressing-architectural-differences-in-your-macos-code.md).
 
-##### Update Gpu Specific Code
+##### Update GPU-Specific Code
 
 Metal on Apple silicon supports the features of both Intel-based Mac computers and iOS devices. If your app adopts Metal features that are found only on Intel-based Mac computers, consider also adopting the iOS-specific features in your `arm64` code. Adopting these features can lead to performance improvements for many apps.
 
@@ -93,9 +94,9 @@ If your app uses Metal, OpenGL, or OpenCL, be aware of the following differences
 - OpenGL is deprecated, but is available on Apple silicon.
 - OpenCL is deprecated, but is available on Apple silicon when targeting the GPU. The OpenCL CPU device is not available to arm64 apps.
 
-For information about how to update your graphics code, see [`Porting your Metal code to Apple silicon`](porting-your-metal-code-to-apple-silicon.md).
+For information about how to update your graphics code, see [Porting your Metal code to Apple silicon](./porting-your-metal-code-to-apple-silicon.md).
 
-##### Update Drivers System Extensions and Kernel Extensions
+##### Update Drivers, System Extensions, and Kernel Extensions
 
 When porting code to macOS 11, be aware of the following requirements for code that interacts with the kernel:
 
@@ -103,17 +104,17 @@ When porting code to macOS 11, be aware of the following requirements for code t
 - Kernel extensions must support the native architecture. Kernel extensions run in the kernel, and the kernel always runs as a native process. You cannot run kernel extensions using Rosetta translation.
 - The installation and uninstallation of kernel extensions requires a reboot. When you install a kernel extension, the system doesn’t load your extension until after a reboot.
 
-For more information about kernel extension and driver changes, see [`Implementing drivers, system extensions, and kexts`](https://developer.apple.com/documentation/systemextensions/implementing-drivers-system-extensions-and-kexts).
+For more information about kernel extension and driver changes, see [Implementing drivers, system extensions, and kexts](../SystemExtensions/implementing-drivers-system-extensions-and-kexts.md).
 
-##### Migrate Away From Specific Technologies
+##### Migrate Away from Specific Technologies
 
 macOS includes a few technologies that are currently deprecated or discouraged for active development. If your app uses one of the following technologies, migrate to an appropriate replacement as soon as possible:
 
-- OpenGL—Use [`Metal`](https://developer.apple.com/documentation/metal) instead.
-- OpenCL—Use [`Metal`](https://developer.apple.com/documentation/metal) instead.
-- AddressBook—Use the [`Contacts`](https://developer.apple.com/documentation/contacts) framework instead.
-- Carbon APIs—Migrate to [`AppKit`](https://developer.apple.com/documentation/appkit), [`Foundation`](https://developer.apple.com/documentation/foundation), and other modern APIs.
-- IOKit kernel extensions—Migrate to DriverKit where appropriate; see [`DriverKit`](https://developer.apple.com/documentation/driverkit) framework.
+- OpenGL—Use [Metal](../Metal/Metal.md) instead.
+- OpenCL—Use [Metal](../Metal/Metal.md) instead.
+- AddressBook—Use the [Contacts](../Contacts/Contacts.md) framework instead.
+- Carbon APIs—Migrate to [AppKit](../AppKit/AppKit.md), [Foundation](../Foundation/Foundation.md), and other modern APIs.
+- IOKit kernel extensions—Migrate to DriverKit where appropriate; see [DriverKit](../DriverKit/DriverKit.md) framework.
 
 Apple silicon still provides support for the preceding technologies, and you may continue to use them in macOS 11. However, this support may be removed in a future version of macOS, so migration to newer technologies is recommended.
 
@@ -121,24 +122,25 @@ Apple silicon still provides support for the preceding technologies, and you may
 
 Apple silicon supports all debugging and testing tools found on Intel-based Mac computers. Use the Xcode IDE to set and monitor breakpoints and monitor other aspects of your app’s behavior. Use `lldb` from the command line to perform similar tasks outside of the Xcode interface.
 
-For more information about how to debug and test your code, see [`Xcode`](https://developer.apple.com/documentation/xcode).
+For more information about how to debug and test your code, see [Xcode](../Xcode/Xcode.md).
 
-##### Tune Your Apps Performance
+##### Tune Your App’s Performance
 
 Apple silicon runs all performance tools found on Intel-based Mac computers. Use Instruments and other performance tools to gather different types of metrics for your app, including information about its memory usage, speed, energy usage, and more. You can also use command-line tools such as `leaks`, `heap`, `top`, `fs_usage`, `sc_usage`, `vm_stat`, `otool`, `sample`, `malloc_history`, and `vmmap` to identify potential performance issues.
 
 Architectural differences between `arm64` and `x86_64` mean that techniques that work well on one system might not work well on the other. For example:
 
-- Don’t assume a discrete GPU means better performance. The integrated GPU in Apple processors is optimized for high performance graphics tasks. See [`Porting your Metal code to Apple silicon`](porting-your-metal-code-to-apple-silicon.md).
+- Don’t assume a discrete GPU means better performance. The integrated GPU in Apple processors is optimized for high performance graphics tasks. See [Porting your Metal code to Apple silicon](./porting-your-metal-code-to-apple-silicon.md).
 - Don’t assume that all processor cores are equal. The processors on Apple silicon contain a mixture of cores, code paths, and other technologies that that can prioritize speed or efficiency of your code, and process tasks with different performance characteristics. Use Quality-of-Service (QoS) classes to help the system schedule your tasks on the right type of core.
 
 During the porting process, measure your app’s performance on both Apple silicon and Intel-based Mac computers and investigate any discrepancies. Tasks that take longer to run on one platform may require additional tuning.
 
-For specific tips on tuning universal binaries, see [`Tuning your code’s performance for Apple silicon`](tuning-your-code-s-performance-for-apple-silicon.md).
+For specific tips on tuning universal binaries, see [Tuning your code’s performance for Apple silicon](./tuning-your-code-s-performance-for-apple-silicon.md).
 
 ## See Also
 
-- [Building a universal macOS binary](building-a-universal-macos-binary.md)
+### Essentials
+- [Building a universal macOS binary](./building-a-universal-macos-binary.md)
   Create macOS apps and other executables that run natively on both Apple silicon and Intel-based Mac computers.
 
 

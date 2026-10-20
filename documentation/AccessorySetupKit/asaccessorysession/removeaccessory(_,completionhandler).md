@@ -1,7 +1,8 @@
 # removeAccessory(_:completionHandler:)
 
 **Framework**: AccessorySetupKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an accessory.
 
@@ -12,19 +13,28 @@ Removes an accessory.
 ## Declaration
 
 ```swift
+func removeAccessory(_ accessory: ASAccessory, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeAccessory(_ accessory: ASAccessory) async throws
+```
+
+```objc
+- (void) removeAccessory:(ASAccessory *) accessory completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Parameters
 
 - `accessory`: The accessory to remove.
-- `completionHandler`: A block or closure that executes after the remove operation completes. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance if the remove operation encounters an error.
+- `completionHandler`: A block or closure that executes after the remove operation completes. The completion handler receives an [`NSError`](../../Foundation/nserror.md) instance if the remove operation encounters an error.
 
 ## See Also
 
-- [func renameAccessory(ASAccessory, options: ASAccessory.RenameOptions, completionHandler: ((any Error)?) -> Void)](asaccessorysession/renameaccessory(_:options:completionhandler:).md)
+### Managing accessories
+- [func renameAccessory(ASAccessory, options: ASAccessory.RenameOptions, completionHandler: ((any Error)?) -> Void)](./renameaccessory%28_,options,completionhandler%29.md)
   Displays a view to rename an accessory.
-- [ASAccessory.RenameOptions](asaccessory/renameoptions.md)
+- [ASAccessory.RenameOptions](../asaccessory/renameoptions.md)
   Options that affect the behavior of an accessory renaming operation.
 
 

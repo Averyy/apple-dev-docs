@@ -1,7 +1,8 @@
 # advancedCommerceInfo
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Renewal information for a subscription that uses the Advanced Commerce API.
 
@@ -22,7 +23,8 @@ let advancedCommerceInfo: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceI
 
 ## See Also
 
-- [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct.md)
+### Getting renewal information for Advanced Commerce API
+- [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo](./advancedcommerceinfo-swift.struct.md)
   Renewal information for subscriptions that use the Advanced Commerce API.
 
 

@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an AVVideoCompositionInstruction with a configuration.
 
@@ -25,7 +26,8 @@ convenience init(configuration: AVVideoCompositionInstruction.Configuration)
 
 ## See Also
 
-- [AVVideoCompositionInstruction.Configuration](avvideocompositioninstruction-swift.class/configuration.md)
+### Creating an instruction
+- [AVVideoCompositionInstruction.Configuration](./configuration.md)
   Configurable properties for initializing a new AVVideoCompositionInstruction instance.
 
 

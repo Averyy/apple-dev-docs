@@ -1,7 +1,8 @@
 # innerAuthentication
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inner authentication type to use for the Tunneled Transport Layer Security (TTLS) configuration.
 

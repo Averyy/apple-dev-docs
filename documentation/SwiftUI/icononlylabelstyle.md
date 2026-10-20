@@ -1,7 +1,8 @@
 # IconOnlyLabelStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A label style that only displays the icon of the label.
 
@@ -23,26 +24,27 @@ struct IconOnlyLabelStyle
 
 #### Overview
 
-You can also use [`iconOnly`](labelstyle/icononly.md) to construct this style.
+You can also use [`iconOnly`](./labelstyle/icononly.md) to construct this style.
 
 ## Topics
 
 ### Creating the label style
-- [init()](icononlylabelstyle/init.md)
+- [init()](./icononlylabelstyle/init%28%29.md)
   Creates an icon-only label style.
 
 ## Relationships
 
 ### Conforms To
-- [LabelStyle](labelstyle.md)
+- [LabelStyle](./labelstyle.md)
 
 ## See Also
 
-- [struct DefaultLabelStyle](defaultlabelstyle.md)
+### Supporting types
+- [struct DefaultLabelStyle](./defaultlabelstyle.md)
   The default label style in the current context.
-- [struct TitleAndIconLabelStyle](titleandiconlabelstyle.md)
+- [struct TitleAndIconLabelStyle](./titleandiconlabelstyle.md)
   A label style that shows both the title and icon of the label using a system-standard layout.
-- [struct TitleOnlyLabelStyle](titleonlylabelstyle.md)
+- [struct TitleOnlyLabelStyle](./titleonlylabelstyle.md)
   A label style that only displays the title of the label.
 
 

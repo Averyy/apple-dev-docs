@@ -1,7 +1,8 @@
 # propertyListFromStringsFileFormat()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary object initialized with the keys and values found in the receiver.
 
@@ -18,6 +19,10 @@ Returns a dictionary object initialized with the keys and values found in the re
 
 ```swift
 func propertyListFromStringsFileFormat() -> [AnyHashable : Any]?
+```
+
+```objc
+- (NSDictionary *) propertyListFromStringsFileFormat;
 ```
 
 #### Return Value
@@ -41,9 +46,11 @@ The receiver must contain text in the format used for `.strings` files. In this 
 
 ## See Also
 
-- [class func string(withContentsOfFile: String) -> Any?](nsstring/string(withcontentsoffile:).md)
+### Related Documentation
+- [class func string(withContentsOfFile: String) -> Any?](./string%28withcontentsoffile%29.md)
   Returns a string created by reading data from the file named by a given path.
-- [func propertyList() -> Any](nsstring/propertylist.md)
+### Converting String Contents Into a Property List
+- [func propertyList() -> Any](./propertylist%28%29.md)
   Parses the receiver as a text representation of a property list, returning an `NSString`, `NSData`, `NSArray`, or `NSDictionary` object, according to the topmost element.
 
 

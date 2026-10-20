@@ -1,7 +1,8 @@
 # edgeWidths
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the edge processing region on the left, top, right, and bottom edges, in pixels.
 
@@ -19,13 +20,18 @@ The width of the edge processing region on the left, top, right, and bottom edge
 var edgeWidths: AVEdgeWidths { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVEdgeWidths edgeWidths;
+```
+
 ## See Also
 
-- [struct AVEdgeWidths](avedgewidths.md)
+### Getting pixel and edge width information
+- [struct AVEdgeWidths](../avedgewidths.md)
   A structure that defines edge processing region widths.
-- [var pixelAspectRatio: AVPixelAspectRatio](avvideocompositionrendercontext/pixelaspectratio.md)
+- [var pixelAspectRatio: AVPixelAspectRatio](./pixelaspectratio.md)
   The pixel aspect ratio for rendered frames.
-- [struct AVPixelAspectRatio](avpixelaspectratio.md)
+- [struct AVPixelAspectRatio](../avpixelaspectratio.md)
   A structure that defines a pixel aspect ratio for a rendering context.
 
 

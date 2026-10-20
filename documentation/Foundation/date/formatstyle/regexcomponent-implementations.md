@@ -1,11 +1,12 @@
 # RegexComponent Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [Date.FormatStyle.RegexOutput](date/formatstyle/regexoutput.md)
+- [Date.FormatStyle.RegexOutput](./regexoutput.md)
 
 
 ---

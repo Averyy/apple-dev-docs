@@ -1,7 +1,8 @@
 # AVContinuityDevice
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a physical iOS device that’s nearby and can provide access to its cameras and microphones.
 
@@ -14,52 +15,57 @@ A class that represents a physical iOS device that’s nearby and can provide ac
 class AVContinuityDevice
 ```
 
+```objc
+@interface AVContinuityDevice : NSObject
+```
+
 #### Overview
 
-Each continuity device instance represents another iOS device that’s nearby. Your app can access the other device’s cameras and microphones with its [`videoDevices`](avcontinuitydevice/videodevices.md) and [`audioSessionInputs`](avcontinuitydevice/audiosessioninputs.md) properties, respectively.
+Each continuity device instance represents another iOS device that’s nearby. Your app can access the other device’s cameras and microphones with its [`videoDevices`](./avcontinuitydevice/videodevices.md) and [`audioSessionInputs`](./avcontinuitydevice/audiosessioninputs.md) properties, respectively.
 
 ## Topics
 
 ### Checking a continuity device’s availability
-- [var isConnected: Bool](avcontinuitydevice/isconnected.md)
+- [var isConnected: Bool](./avcontinuitydevice/isconnected.md)
   A Boolean value that indicates whether you can use the continuity device because it’s connected to the system.
 ### Retrieving video devices from a continuity device
-- [var videoDevices: [AVCaptureDevice]](avcontinuitydevice/videodevices.md)
+- [var videoDevices: [AVCaptureDevice]](./avcontinuitydevice/videodevices.md)
   An array of the continuity device’s video-capture devices available to your app.
 ### Retrieving audio ports from a continuity device
-- [var audioSessionInputs: [AVAudioSessionPortDescription]](avcontinuitydevice/audiosessioninputs.md)
+- [var audioSessionInputs: [AVAudioSessionPortDescription]](./avcontinuitydevice/audiosessioninputs.md)
   An array of the continuity device’s audio session port descriptions that’s available to your app.
 ### Identifying a continuity device
-- [var connectionID: UUID](avcontinuitydevice/connectionid.md)
+- [var connectionID: UUID](./avcontinuitydevice/connectionid.md)
   A universally unique value that identifies a specific continuity device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Choosing a capture device](choosing-a-capture-device.md)
+### Capture devices
+- [Choosing a capture device](./choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](./adopting-smart-framing-in-your-camera-app.md)
   Capture the optimal shot by providing automatic framing recommendations.
-- [Supporting device rotation in your camera app](supporting-device-rotation-in-your-camera-app.md)
+- [Supporting device rotation in your camera app](./supporting-device-rotation-in-your-camera-app.md)
   Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
-- [class AVCaptureDevice](avcapturedevice.md)
+- [class AVCaptureDevice](./avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
-- [class AVCaptureDeviceInput](avcapturedeviceinput.md)
+- [class AVCaptureDeviceInput](./avcapturedeviceinput.md)
   An object that provides media input from a capture device to a capture session.
-- [class AVExternalStorageDevice](avexternalstoragedevice.md)
+- [class AVExternalStorageDevice](./avexternalstoragedevice.md)
   Represents a physical external storage device that stores media assets.
-- [class AVExternalStorageDeviceDiscoverySession](avexternalstoragedevicediscoverysession.md)
+- [class AVExternalStorageDeviceDiscoverySession](./avexternalstoragedevicediscoverysession.md)
   Informs your app when the external storage devices connect to and disconnect from the system.
 
 

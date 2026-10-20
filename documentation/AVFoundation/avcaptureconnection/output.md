@@ -1,7 +1,8 @@
 # output
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The connection’s output port, if applicable.
 
@@ -19,13 +20,18 @@ The connection’s output port, if applicable.
 var output: AVCaptureOutput? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVCaptureOutput * output;
+```
+
 ## See Also
 
-- [var inputPorts: [AVCaptureInput.Port]](avcaptureconnection/inputports.md)
+### Inspecting a connection
+- [var inputPorts: [AVCaptureInput.Port]](./inputports.md)
   An array of the connection’s input ports.
-- [var videoPreviewLayer: AVCaptureVideoPreviewLayer?](avcaptureconnection/videopreviewlayer.md)
+- [var videoPreviewLayer: AVCaptureVideoPreviewLayer?](./videopreviewlayer.md)
   The video preview layer associated with the connection.
-- [var audioChannels: [AVCaptureAudioChannel]](avcaptureconnection/audiochannels.md)
+- [var audioChannels: [AVCaptureAudioChannel]](./audiochannels.md)
   An array of audio channels that the connection provides.
 
 

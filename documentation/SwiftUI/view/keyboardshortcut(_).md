@@ -1,7 +1,8 @@
 # keyboardShortcut(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns a keyboard shortcut to the modified control.
 
@@ -19,6 +20,13 @@ nonisolated
 func keyboardShortcut(_ shortcut: KeyboardShortcut) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func keyboardShortcut(_ shortcut: KeyboardShortcut?) -> some View
+```
+
 #### Discussion
 
 Pressing the control’s shortcut while the control is anywhere in the frontmost window or scene, or anywhere in the macOS main menu, is equivalent to direct interaction with the control to perform its primary action.
@@ -29,17 +37,18 @@ If multiple controls are associated with the same shortcut, the first one found 
 
 ## See Also
 
-- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers) -> some View](view/keyboardshortcut(_:modifiers:).md)
+### Creating keyboard shortcuts
+- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers) -> some View](./keyboardshortcut%28_,modifiers%29.md)
   Defines a keyboard shortcut and assigns it to the modified control.
-- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization) -> some View](view/keyboardshortcut(_:modifiers:localization:).md)
+- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization) -> some View](./keyboardshortcut%28_,modifiers,localization%29.md)
   Defines a keyboard shortcut and assigns it to the modified control.
-- [var keyboardShortcut: KeyboardShortcut?](environmentvalues/keyboardshortcut.md)
+- [var keyboardShortcut: KeyboardShortcut?](../environmentvalues/keyboardshortcut.md)
   The keyboard shortcut that buttons in this environment will be triggered with.
-- [struct KeyboardShortcut](keyboardshortcut.md)
+- [struct KeyboardShortcut](../keyboardshortcut.md)
   Keyboard shortcuts describe combinations of keys on a keyboard that the user can press in order to activate a button or toggle.
-- [struct KeyEquivalent](keyequivalent.md)
+- [struct KeyEquivalent](../keyequivalent.md)
   Key equivalents consist of a letter, punctuation, or function key that can be combined with an optional set of modifier keys to specify a keyboard shortcut.
-- [struct EventModifiers](eventmodifiers.md)
+- [struct EventModifiers](../eventmodifiers.md)
   A set of key modifiers that you can add to a gesture.
 
 

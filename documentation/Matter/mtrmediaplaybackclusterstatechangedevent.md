@@ -1,7 +1,8 @@
 # MTRMediaPlaybackClusterStateChangedEvent
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,31 +19,35 @@
 class MTRMediaPlaybackClusterStateChangedEvent
 ```
 
+```objc
+@interface MTRMediaPlaybackClusterStateChangedEvent : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var audioAdvanceUnmuted: NSNumber](mtrmediaplaybackclusterstatechangedevent/audioadvanceunmuted.md)
-- [var currentState: NSNumber](mtrmediaplaybackclusterstatechangedevent/currentstate.md)
-- [var data: Data?](mtrmediaplaybackclusterstatechangedevent/data.md)
-- [var duration: NSNumber](mtrmediaplaybackclusterstatechangedevent/duration.md)
-- [var playbackSpeed: NSNumber](mtrmediaplaybackclusterstatechangedevent/playbackspeed.md)
-- [var sampledPosition: MTRMediaPlaybackClusterPlaybackPositionStruct](mtrmediaplaybackclusterstatechangedevent/sampledposition.md)
-- [var seekRangeEnd: NSNumber](mtrmediaplaybackclusterstatechangedevent/seekrangeend.md)
-- [var seekRangeStart: NSNumber](mtrmediaplaybackclusterstatechangedevent/seekrangestart.md)
-- [var startTime: NSNumber](mtrmediaplaybackclusterstatechangedevent/starttime.md)
+- [var audioAdvanceUnmuted: NSNumber](./mtrmediaplaybackclusterstatechangedevent/audioadvanceunmuted.md)
+- [var currentState: NSNumber](./mtrmediaplaybackclusterstatechangedevent/currentstate.md)
+- [var data: Data?](./mtrmediaplaybackclusterstatechangedevent/data.md)
+- [var duration: NSNumber](./mtrmediaplaybackclusterstatechangedevent/duration.md)
+- [var playbackSpeed: NSNumber](./mtrmediaplaybackclusterstatechangedevent/playbackspeed.md)
+- [var sampledPosition: MTRMediaPlaybackClusterPlaybackPositionStruct](./mtrmediaplaybackclusterstatechangedevent/sampledposition.md)
+- [var seekRangeEnd: NSNumber](./mtrmediaplaybackclusterstatechangedevent/seekrangeend.md)
+- [var seekRangeStart: NSNumber](./mtrmediaplaybackclusterstatechangedevent/seekrangestart.md)
+- [var startTime: NSNumber](./mtrmediaplaybackclusterstatechangedevent/starttime.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # showContextHelp(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implemented by subclasses to invoke the help system, displaying information relevant to the receiver and its current state.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func showContextHelp(_ sender: Any?)
+```
+
+```objc
+- (void) showContextHelp:(id) sender;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func showContextHelp(_ sender: Any?)
 
 ## See Also
 
-- [func helpRequested(NSEvent)](nsresponder/helprequested(_:).md)
+### Related Documentation
+- [func helpRequested(NSEvent)](./helprequested%28_%29.md)
   Displays context-sensitive help for the receiver if help has been registered.
 
 

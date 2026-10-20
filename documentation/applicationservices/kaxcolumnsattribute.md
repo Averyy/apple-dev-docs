@@ -1,7 +1,8 @@
 # kAXColumnsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of the accessibility objects representing the columns in this browser view.
 
@@ -12,6 +13,10 @@ An array of the accessibility objects representing the columns in this browser v
 
 ```swift
 var kAXColumnsAttribute: String { get }
+```
+
+```c
+#define kAXColumnsAttribute
 ```
 
 

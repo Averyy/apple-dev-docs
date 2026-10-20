@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSuperSpeedBusBitMask](1646377-anonymous/ksuperspeedbusbitmask.md)
-- [kXHCISSRootHubAddress](1646377-anonymous/kxhcissroothubaddress.md)
-- [kXHCIUSB2RootHubAddress](1646377-anonymous/kxhciusb2roothubaddress.md)
+- [kSuperSpeedBusBitMask](./api-1646377-anonymous/ksuperspeedbusbitmask.md)
+- [kXHCISSRootHubAddress](./api-1646377-anonymous/kxhcissroothubaddress.md)
+- [kXHCIUSB2RootHubAddress](./api-1646377-anonymous/kxhciusb2roothubaddress.md)
 
 
 ---

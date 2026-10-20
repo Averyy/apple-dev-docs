@@ -1,7 +1,8 @@
 # ClippingComponent.FeatheredEdge
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration for feathering the clipping boundaries.
 
@@ -26,28 +27,29 @@ Feathering is defined separately for positive and negative edges of each axis, p
 ## Topics
 
 ### Creating a feathered edge
-- [init(symmetricEdgeInset: SIMD3<Float>, falloff: ClippingComponent.FeatheredEdge.Falloff)](clippingcomponent/featherededge-swift.struct/init(symmetricedgeinset:falloff:).md)
-  Initializes both [`positiveEdgeInset`](clippingcomponent/featherededge-swift.struct/positiveedgeinset.md) and [`negativeEdgeInset`](clippingcomponent/featherededge-swift.struct/negativeedgeinset.md) with the same symmetric value.
+- [init(symmetricEdgeInset: SIMD3<Float>, falloff: ClippingComponent.FeatheredEdge.Falloff)](./featherededge-swift.struct/init%28symmetricedgeinset,falloff%29.md)
+  Initializes both [`positiveEdgeInset`](./featherededge-swift.struct/positiveedgeinset.md) and [`negativeEdgeInset`](./featherededge-swift.struct/negativeedgeinset.md) with the same symmetric value.
 ### Configuring edge insets
-- [var positiveEdgeInset: SIMD3<Float>](clippingcomponent/featherededge-swift.struct/positiveedgeinset.md)
+- [var positiveEdgeInset: SIMD3<Float>](./featherededge-swift.struct/positiveedgeinset.md)
   The distance from each positive edge (+X, +Y, +Z) of the clip bounds over which opacity fades to 0, expressed in local coordinate space units.
-- [var negativeEdgeInset: SIMD3<Float>](clippingcomponent/featherededge-swift.struct/negativeedgeinset.md)
+- [var negativeEdgeInset: SIMD3<Float>](./featherededge-swift.struct/negativeedgeinset.md)
   The distance from each negative edge (-X, -Y, -Z) of the clip bounds over which opacity fades to 0, expressed in local coordinate space units.
 ### Controlling the falloff
-- [var falloff: ClippingComponent.FeatheredEdge.Falloff](clippingcomponent/featherededge-swift.struct/falloff-swift.property.md)
+- [var falloff: ClippingComponent.FeatheredEdge.Falloff](./featherededge-swift.struct/falloff-swift.property.md)
   The falloff function used for the feathered edge computation.
-- [ClippingComponent.FeatheredEdge.Falloff](clippingcomponent/featherededge-swift.struct/falloff-swift.enum.md)
+- [ClippingComponent.FeatheredEdge.Falloff](./featherededge-swift.struct/falloff-swift.enum.md)
 ### Type Properties
-- [static var none: ClippingComponent.FeatheredEdge](clippingcomponent/featherededge-swift.struct/none.md)
+- [static var none: ClippingComponent.FeatheredEdge](./featherededge-swift.struct/none.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [var featheredEdge: ClippingComponent.FeatheredEdge](clippingcomponent/featherededge-swift.property.md)
+### Feathering clipped edges
+- [var featheredEdge: ClippingComponent.FeatheredEdge](./featherededge-swift.property.md)
   The feathering configuration for the clipping boundaries.
 
 

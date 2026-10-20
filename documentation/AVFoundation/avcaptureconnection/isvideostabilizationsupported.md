@@ -1,7 +1,8 @@
 # isVideoStabilizationSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this connection supports video stabilization.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether this connection supports video stabilizat
 var isVideoStabilizationSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVideoStabilizationSupported) BOOL supportsVideoStabilization;
+```
+
 #### Discussion
 
 The connection only supports video stabilization for video connection types, but may not be available for all resolutions.
 
 ## See Also
 
-- [var activeVideoStabilizationMode: AVCaptureVideoStabilizationMode](avcaptureconnection/activevideostabilizationmode.md)
+### Stabilizing video
+- [var activeVideoStabilizationMode: AVCaptureVideoStabilizationMode](./activevideostabilizationmode.md)
   The connection’s current stabilization mode.
-- [var preferredVideoStabilizationMode: AVCaptureVideoStabilizationMode](avcaptureconnection/preferredvideostabilizationmode.md)
+- [var preferredVideoStabilizationMode: AVCaptureVideoStabilizationMode](./preferredvideostabilizationmode.md)
   The stabilization mode that’s the most appropriate for a video connection.
 
 

@@ -1,7 +1,8 @@
 # init(applicationService:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a listener for apps that listen for connections from a network device picker.
 
@@ -24,7 +25,7 @@ init(applicationService: String)
 
 Use this initializer to setup a listener for application services.
 
-Apps that register as advertising an application service should always have a listener waiting for a local connection. The system launches your app when the user selects the current device in a [`DevicePicker`](https://developer.apple.com/documentation/devicediscoveryui/devicepicker) or [`DDDevicePickerViewController`](https://developer.apple.com/documentation/devicediscoveryui/dddevicepickerviewcontroller). Create the listener as soon as your app launches, so that your app can connect with the requesting device.
+Apps that register as advertising an application service should always have a listener waiting for a local connection. The system launches your app when the user selects the current device in a [`DevicePicker`](../../../DeviceDiscoveryUI/devicepicker.md) or [`DDDevicePickerViewController`](../../../DeviceDiscoveryUI/dddevicepickerviewcontroller.md). Create the listener as soon as your app launches, so that your app can connect with the requesting device.
 
 ## Parameters
 

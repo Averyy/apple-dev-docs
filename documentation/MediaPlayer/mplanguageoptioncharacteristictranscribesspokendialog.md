@@ -1,7 +1,8 @@
 # MPLanguageOptionCharacteristicTranscribesSpokenDialog
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the language option includes legible content in the language of its specified locale that transcribes spoken dialog.
 
@@ -20,29 +21,34 @@ Indicates that the language option includes legible content in the language of i
 let MPLanguageOptionCharacteristicTranscribesSpokenDialog: String
 ```
 
+```c
+extern NSString * const MPLanguageOptionCharacteristicTranscribesSpokenDialog;
+```
+
 #### Discussion
 
 It’s possible for a legible option to include both transcriptions of spoken dialog and descriptions of music and sound effects.
 
 ## See Also
 
-- [let MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles: String](mplanguageoptioncharacteristiccontainsonlyforcedsubtitles.md)
+### Language option characteristic constants
+- [let MPLanguageOptionCharacteristicContainsOnlyForcedSubtitles: String](./mplanguageoptioncharacteristiccontainsonlyforcedsubtitles.md)
   Indicates that the language option presents only forced subtitles.
-- [let MPLanguageOptionCharacteristicDescribesMusicAndSound: String](mplanguageoptioncharacteristicdescribesmusicandsound.md)
+- [let MPLanguageOptionCharacteristicDescribesMusicAndSound: String](./mplanguageoptioncharacteristicdescribesmusicandsound.md)
   Indicates that the language option includes legible content in the language of its specified locale that describes music and sound effects occurring in program audio.
-- [let MPLanguageOptionCharacteristicDescribesVideo: String](mplanguageoptioncharacteristicdescribesvideo.md)
+- [let MPLanguageOptionCharacteristicDescribesVideo: String](./mplanguageoptioncharacteristicdescribesvideo.md)
   Indicates that the language option includes audible content that describes the visual portion of the presentation.
-- [let MPLanguageOptionCharacteristicDubbedTranslation: String](mplanguageoptioncharacteristicdubbedtranslation.md)
+- [let MPLanguageOptionCharacteristicDubbedTranslation: String](./mplanguageoptioncharacteristicdubbedtranslation.md)
   Indicates that the language option includes content that contains a dubbed translation.
-- [let MPLanguageOptionCharacteristicEasyToRead: String](mplanguageoptioncharacteristiceasytoread.md)
+- [let MPLanguageOptionCharacteristicEasyToRead: String](./mplanguageoptioncharacteristiceasytoread.md)
   Indicates that the language option provides legible content in the language of its specified locale and that the content was edited for ease of reading.
-- [let MPLanguageOptionCharacteristicIsAuxiliaryContent: String](mplanguageoptioncharacteristicisauxiliarycontent.md)
+- [let MPLanguageOptionCharacteristicIsAuxiliaryContent: String](./mplanguageoptioncharacteristicisauxiliarycontent.md)
   Indicates that the language option includes content that’s marked by the content author as auxiliary to the presentation of the language option.
-- [let MPLanguageOptionCharacteristicIsMainProgramContent: String](mplanguageoptioncharacteristicismainprogramcontent.md)
+- [let MPLanguageOptionCharacteristicIsMainProgramContent: String](./mplanguageoptioncharacteristicismainprogramcontent.md)
   Indicates that the language option includes content that’s marked by the content author as intrinsic to the presentation of the language option.
-- [let MPLanguageOptionCharacteristicLanguageTranslation: String](mplanguageoptioncharacteristiclanguagetranslation.md)
+- [let MPLanguageOptionCharacteristicLanguageTranslation: String](./mplanguageoptioncharacteristiclanguagetranslation.md)
   Indicates that the language option contains a translation in the language of its specified locale.
-- [let MPLanguageOptionCharacteristicVoiceOverTranslation: String](mplanguageoptioncharacteristicvoiceovertranslation.md)
+- [let MPLanguageOptionCharacteristicVoiceOverTranslation: String](./mplanguageoptioncharacteristicvoiceovertranslation.md)
   Indicates that the language option includes voice over content in the language of its specified locale describes translated dialog.
 
 

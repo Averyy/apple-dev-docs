@@ -1,7 +1,8 @@
 # bindings
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes every input and output of the pipeline.
 
@@ -17,6 +18,10 @@ Describes every input and output of the pipeline.
 
 ```swift
 var bindings: [any MTLBinding] { get }
+```
+
+```objc
+@property (readonly, nonnull) NSArray<id<MTLBinding>> * bindings;
 ```
 
 

@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of currently-supported algorithms or configuration revisions for the class of configurations.
 
@@ -17,17 +18,22 @@ The collection of currently-supported algorithms or configuration revisions for 
 class var supportedRevisions: IndexSet { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSIndexSet * supportedRevisions;
+```
+
 #### Discussion
 
 This property allows you to check what revisions are available for each configuration at runtime.
 
 ## See Also
 
-- [var revision: VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/revision-swift.property.md)
+### Inspecting revision information
+- [var revision: VTMotionBlurConfiguration.Revision](./revision-swift.property.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
-- [class var defaultRevision: VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/defaultrevision.md)
+- [class var defaultRevision: VTMotionBlurConfiguration.Revision](./defaultrevision.md)
   The default revision of a particular algorithm or configuration.
-- [VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/revision-swift.enum.md)
+- [VTMotionBlurConfiguration.Revision](./revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
 
 

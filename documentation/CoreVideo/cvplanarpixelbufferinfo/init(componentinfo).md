@@ -1,7 +1,8 @@
 # init(componentInfo:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +21,8 @@ init(componentInfo: CVPlanarComponentInfo)
 
 ## See Also
 
-- [init()](cvplanarpixelbufferinfo/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

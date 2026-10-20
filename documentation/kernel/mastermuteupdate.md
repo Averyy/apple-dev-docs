@@ -1,14 +1,15 @@
 # MasterMuteUpdate
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef bool (*MasterMuteUpdate)(void);
 ```
 

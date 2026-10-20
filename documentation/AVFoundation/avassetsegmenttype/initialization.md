@@ -1,7 +1,8 @@
 # AVAssetSegmentType.initialization
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An initialization segment type.
 
@@ -19,9 +20,14 @@ An initialization segment type.
 case initialization
 ```
 
+```c
+AVAssetSegmentTypeInitialization
+```
+
 ## See Also
 
-- [AVAssetSegmentType.separable](avassetsegmenttype/separable.md)
+### Segment types
+- [AVAssetSegmentType.separable](./separable.md)
   A separable segment type.
 
 

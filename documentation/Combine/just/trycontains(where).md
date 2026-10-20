@@ -1,7 +1,8 @@
 # tryContains(where:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,10 +21,11 @@ func tryContains(where predicate: (Output) throws -> Bool) -> Result<Bool, any E
 
 ## See Also
 
-- [func contains(Output) -> Just<Bool>](just/contains(_:).md)
-- [func contains(where: (Output) -> Bool) -> Just<Bool>](just/contains(where:).md)
-- [func allSatisfy((Output) -> Bool) -> Just<Bool>](just/allsatisfy(_:).md)
-- [func tryAllSatisfy((Output) throws -> Bool) -> Result<Bool, any Error>.Publisher](just/tryallsatisfy(_:).md)
+### Applying matching criteria to elements
+- [func contains(Output) -> Just<Bool>](./contains%28_%29.md)
+- [func contains(where: (Output) -> Bool) -> Just<Bool>](./contains%28where%29.md)
+- [func allSatisfy((Output) -> Bool) -> Just<Bool>](./allsatisfy%28_%29.md)
+- [func tryAllSatisfy((Output) throws -> Bool) -> Result<Bool, any Error>.Publisher](./tryallsatisfy%28_%29.md)
 
 
 ---

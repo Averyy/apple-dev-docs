@@ -1,7 +1,8 @@
 # MeshResource.JointInfluences
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A buffer of vertex-joint influences which bind the mesh part’s vertices to a skeleton via a skinning deformation.
 
@@ -28,21 +29,22 @@ Each vertex is associated with a fixed number of influences. If `influencesPerVe
 ## Topics
 
 ### Initializers
-- [init(influences: MeshBuffers.JointInfluences, influencesPerVertex: Int)](meshresource/jointinfluences/init(influences:influencespervertex:).md)
+- [init(influences: MeshBuffers.JointInfluences, influencesPerVertex: Int)](./jointinfluences/init%28influences,influencespervertex%29.md)
   Associates every vertex in the mesh with a fixed number of influences per vertex.
 ### Instance Properties
-- [var influences: MeshBuffers.JointInfluences](meshresource/jointinfluences/influences.md)
+- [var influences: MeshBuffers.JointInfluences](./jointinfluences/influences.md)
   Buffer of joint influences.
 
 ## See Also
 
-- [MeshResource.Skeleton](meshresource/skeleton.md)
+### Mesh skeletons
+- [MeshResource.Skeleton](./skeleton.md)
   A skeleton consists of a hierarchy of joints. Each joint defines a coordinate space. Portions of a model may be thought of as having a position in a joint’s local space.
-- [MeshResource.Skeleton.Joint](meshresource/skeleton/joint.md)
-  A named joint in a [`MeshResource.Skeleton`](meshresource/skeleton.md).
-- [struct MeshSkeletonCollection](meshskeletoncollection.md)
+- [MeshResource.Skeleton.Joint](./skeleton/joint.md)
+  A named joint in a [`MeshResource.Skeleton`](./skeleton.md).
+- [struct MeshSkeletonCollection](../meshskeletoncollection.md)
   An object that holds a collection of skeletons used by a mesh resource.
-- [struct MeshJointInfluence](meshjointinfluence.md)
+- [struct MeshJointInfluence](../meshjointinfluence.md)
   A binding to a joint, which consists of the joint’s index and the weight of that joint’s influence on a vertex.
 
 

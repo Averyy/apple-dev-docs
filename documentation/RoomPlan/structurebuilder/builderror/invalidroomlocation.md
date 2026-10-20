@@ -1,7 +1,8 @@
 # StructureBuilder.BuildError.invalidRoomLocation
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates one or more rooms reside in a different vicinity.
 

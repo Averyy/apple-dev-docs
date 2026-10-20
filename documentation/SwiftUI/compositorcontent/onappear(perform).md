@@ -1,7 +1,8 @@
 # onAppear(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform before this content appears.
 

@@ -1,7 +1,8 @@
 # URLCredential.Persistence
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify how long the credential will be kept.
 
@@ -20,6 +21,10 @@ Constants that specify how long the credential will be kept.
 enum Persistence
 ```
 
+```c
+enum NSURLCredentialPersistence : NSUInteger;
+```
+
 #### Overview
 
 In iOS, credentials are stored in the app’s keychain, and can be accessed only by that app (and other apps in the same keychain access group, where applicable).
@@ -29,36 +34,37 @@ In macOS, credentials are stored in the user’s keychain. The credential’s in
 ## Topics
 
 ### Persistence strategies
-- [URLCredential.Persistence.none](urlcredential/persistence-swift.enum/none.md)
+- [URLCredential.Persistence.none](./persistence-swift.enum/none.md)
   The credential should not be stored.
-- [URLCredential.Persistence.forSession](urlcredential/persistence-swift.enum/forsession.md)
+- [URLCredential.Persistence.forSession](./persistence-swift.enum/forsession.md)
   The credential should be stored only for this session.
-- [URLCredential.Persistence.permanent](urlcredential/persistence-swift.enum/permanent.md)
+- [URLCredential.Persistence.permanent](./persistence-swift.enum/permanent.md)
   The credential should be stored in the keychain.
-- [URLCredential.Persistence.synchronizable](urlcredential/persistence-swift.enum/synchronizable.md)
+- [URLCredential.Persistence.synchronizable](./persistence-swift.enum/synchronizable.md)
   The credential should be stored permanently in the keychain, and in addition should be distributed to other devices based on the owning Apple ID.
 ### Initializers
-- [init?(rawValue: UInt)](urlcredential/persistence-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./persistence-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(forTrust: SecTrust)](urlcredential/init(fortrust:).md)
+### Creating a credential
+- [init(forTrust: SecTrust)](./init%28fortrust%29.md)
   Creates a URL credential instance for server trust authentication with a given accepted trust.
-- [init(identity: SecIdentity, certificates: [Any]?, persistence: URLCredential.Persistence)](urlcredential/init(identity:certificates:persistence:).md)
+- [init(identity: SecIdentity, certificates: [Any]?, persistence: URLCredential.Persistence)](./init%28identity,certificates,persistence%29.md)
   Creates a URL credential instance for resolving a client certificate authentication challenge.
-- [init(trust: SecTrust)](urlcredential/init(trust:).md)
+- [init(trust: SecTrust)](./init%28trust%29.md)
   Creates a URL credential instance for server trust authentication, initialized with a accepted trust.
-- [init(user: String, password: String, persistence: URLCredential.Persistence)](urlcredential/init(user:password:persistence:).md)
+- [init(user: String, password: String, persistence: URLCredential.Persistence)](./init%28user,password,persistence%29.md)
   Creates a URL credential instance initialized with a given user name and password, using a given persistence setting.
 
 

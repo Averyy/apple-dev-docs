@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value indicating whether at least one drag session for the text view is active.
@@ -16,6 +17,10 @@ A Boolean value indicating whether at least one drag session for the text view i
 
 ```swift
 var isTextDragActive: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isTextDragActive) BOOL textDragActive;
 ```
 
 

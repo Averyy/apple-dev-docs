@@ -1,7 +1,8 @@
 # UserInitializeDeviceSupport
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs enumeration-time initializations in response to a call from the framework.
 
@@ -10,7 +11,7 @@ Performs enumeration-time initializations in response to a call from the framewo
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserInitializeDeviceSupport(bool *result);
 ```
 
@@ -20,7 +21,8 @@ The kernel calls this user space method at enumeration time. Use this callback t
 
 ## See Also
 
-- [UserResetDevice](iouserscsiperipheraldevicetype05/userresetdevice.md)
+### Managing the device
+- [UserResetDevice](./userresetdevice.md)
   Performs a bus reset of the external drive.
 
 

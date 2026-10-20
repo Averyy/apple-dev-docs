@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new generic platform configuration.
 
@@ -12,6 +13,10 @@ Returns a new generic platform configuration.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

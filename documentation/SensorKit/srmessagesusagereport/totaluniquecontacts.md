@@ -1,7 +1,8 @@
 # totalUniqueContacts
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s number of contacts.
 
@@ -16,13 +17,18 @@ The user’s number of contacts.
 var totalUniqueContacts: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger totalUniqueContacts;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](srmessagesusagereport/duration.md)
+### Analyzing Message Use
+- [var duration: TimeInterval](./duration.md)
   The duration that the report spans.
-- [var totalIncomingMessages: Int](srmessagesusagereport/totalincomingmessages.md)
+- [var totalIncomingMessages: Int](./totalincomingmessages.md)
   The number of messages the user receives.
-- [var totalOutgoingMessages: Int](srmessagesusagereport/totaloutgoingmessages.md)
+- [var totalOutgoingMessages: Int](./totaloutgoingmessages.md)
   The number of messages the user sends.
 
 

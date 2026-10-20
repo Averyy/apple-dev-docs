@@ -1,14 +1,15 @@
 # kEndpointUsageTypeInterruptReserved1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 kEndpointUsageTypeInterruptReserved1 = (kIOUSBEndpointDescriptorUsageTypeInterruptReserved1 >> kIOUSBEndpointDescriptorUsageTypePhase)
 ```
 

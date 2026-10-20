@@ -1,7 +1,8 @@
 # init(displayName:identifier:language:mediaCharacteristics:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new media selection option.
 

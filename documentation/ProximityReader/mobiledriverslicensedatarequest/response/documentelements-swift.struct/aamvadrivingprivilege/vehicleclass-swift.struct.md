@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.AAMVADrivingPrivilege.VehicleClass
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the driving privilege vehicle class.
 
@@ -19,22 +20,22 @@ struct VehicleClass
 ## Topics
 
 ### Instance Properties
-- [let code: String](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehicleclass-swift.struct/code.md)
+- [let code: String](./vehicleclass-swift.struct/code.md)
   The code of the vehicle class privilege.
-- [let description: String](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehicleclass-swift.struct/description.md)
+- [let description: String](./vehicleclass-swift.struct/description.md)
   The description of the vehicle class privilege.
-- [let expirationDate: DateComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehicleclass-swift.struct/expirationdate.md)
+- [let expirationDate: DateComponents?](./vehicleclass-swift.struct/expirationdate.md)
   The expiration date of the vehicle class privilege.
-- [let issueDate: DateComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/aamvadrivingprivilege/vehicleclass-swift.struct/issuedate.md)
+- [let issueDate: DateComponents?](./vehicleclass-swift.struct/issuedate.md)
   The issue date of the vehicle class privilege.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

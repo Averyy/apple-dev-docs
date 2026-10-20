@@ -1,7 +1,8 @@
 # NEHotspotNetworkSecurityType.personal
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A security type to represent use of Wi-Fi protected access (WPA), WPA2, and WPA3 standards using a pre-shared secret.
 
@@ -18,15 +19,20 @@ A security type to represent use of Wi-Fi protected access (WPA), WPA2, and WPA3
 case personal
 ```
 
+```c
+NEHotspotNetworkSecurityTypePersonal
+```
+
 ## See Also
 
-- [NEHotspotNetworkSecurityType.open](nehotspotnetworksecuritytype/open.md)
+### Security types
+- [NEHotspotNetworkSecurityType.open](./open.md)
   A security type to represent an open network with no security protocol.
-- [NEHotspotNetworkSecurityType.WEP](nehotspotnetworksecuritytype/wep.md)
+- [NEHotspotNetworkSecurityType.WEP](./wep.md)
   A security type to represent use of Wired Equivalent Privacy (WEP).
-- [NEHotspotNetworkSecurityType.enterprise](nehotspotnetworksecuritytype/enterprise.md)
+- [NEHotspotNetworkSecurityType.enterprise](./enterprise.md)
   A security type to represent use of Wi-Fi protected access (WPA), WPA2, and WPA3 standards using enterprise-level seciurity.
-- [NEHotspotNetworkSecurityType.unknown](nehotspotnetworksecuritytype/unknown.md)
+- [NEHotspotNetworkSecurityType.unknown](./unknown.md)
   A value that represents an unknown security type.
 
 

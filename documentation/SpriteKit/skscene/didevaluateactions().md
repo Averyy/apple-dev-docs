@@ -1,18 +1,19 @@
 # didEvaluateActions()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your app to peform any necessary logic after scene actions are evaluated.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Tells your app to peform any necessary logic after scene actions are evaluated.
 func didEvaluateActions()
 ```
 
+```objc
+- (void) didEvaluateActions;
+```
+
 ## Mentions
 
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
+- [Responding to Frame-Cycle Events](../responding-to-frame-cycle-events.md)
 
 #### Discussion
 
@@ -32,15 +37,16 @@ Any additional actions applied are not evaluated until the next update.
 
 ## See Also
 
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
+### Responding to Frame-Cycle Events
+- [Responding to Frame-Cycle Events](../responding-to-frame-cycle-events.md)
   Implement per-frame app logic, such as the scene’s update function that’s called every frame.
-- [func update(TimeInterval)](skscene/update(_:).md)
+- [func update(TimeInterval)](./update%28_%29.md)
   Tells your app to perform any app-specific logic to update your scene.
-- [func didSimulatePhysics()](skscene/didsimulatephysics.md)
+- [func didSimulatePhysics()](./didsimulatephysics%28%29.md)
   Tells your app to peform any necessary logic after physics simulations are performed.
-- [func didApplyConstraints()](skscene/didapplyconstraints.md)
+- [func didApplyConstraints()](./didapplyconstraints%28%29.md)
   Tells your app to peform any necessary logic after constraints are applied.
-- [func didFinishUpdate()](skscene/didfinishupdate.md)
+- [func didFinishUpdate()](./didfinishupdate%28%29.md)
   Tells your app to peform any necessary logic after the scene has finished all of the steps required to process animations.
 
 

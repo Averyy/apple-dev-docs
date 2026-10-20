@@ -1,7 +1,8 @@
 # hinge
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current hinge of the device.
 

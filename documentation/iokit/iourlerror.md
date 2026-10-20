@@ -1,7 +1,8 @@
 # IOURLError
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,19 +14,25 @@
 struct IOURLError
 ```
 
+```c
+typedef enum IOURLError : int {
+    ...
+} IOURLError;
+```
+
 ## Topics
 
 ### Initializers
-- [init(Int32)](iourlerror/1514691-init.md)
-- [init(rawValue: Int32)](iourlerror/1514762-init.md)
+- [init(Int32)](./iourlerror/api-1514691-init.md)
+- [init(rawValue: Int32)](./iourlerror/api-1514762-init.md)
 ### Instance Properties
-- [var rawValue: Int32](iourlerror/1514452-rawvalue.md)
+- [var rawValue: Int32](./iourlerror/api-1514452-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A property that tells FSKit to which types of items the deactivation applies, if any.
@@ -13,6 +14,10 @@ A property that tells FSKit to which types of items the deactivation applies, if
 
 ```swift
 var itemDeactivationPolicy: FSVolume.ItemDeactivationOptions { get }
+```
+
+```objc
+@property (readonly) FSItemDeactivationOptions itemDeactivationPolicy;
 ```
 
 #### Discussion

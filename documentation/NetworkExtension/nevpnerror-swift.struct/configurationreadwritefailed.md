@@ -1,7 +1,8 @@
 # configurationReadWriteFailed
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates an error occurred while reading or writing the Network Extension preferences.
 
@@ -21,15 +22,16 @@ static var configurationReadWriteFailed: NEVPNError.Code { get }
 
 ## See Also
 
-- [static var configurationDisabled: NEVPNError.Code](nevpnerror-swift.struct/configurationdisabled.md)
+### Error codes
+- [static var configurationDisabled: NEVPNError.Code](./configurationdisabled.md)
   An error code that indicates the VPN configuration associated with the VPN manager isn’t enabled.
-- [static var configurationInvalid: NEVPNError.Code](nevpnerror-swift.struct/configurationinvalid.md)
+- [static var configurationInvalid: NEVPNError.Code](./configurationinvalid.md)
   An error code that indicates the VPN configuration associated with the VPN manager object is invalid.
-- [static var connectionFailed: NEVPNError.Code](nevpnerror-swift.struct/connectionfailed.md)
+- [static var connectionFailed: NEVPNError.Code](./connectionfailed.md)
   An error code that indicates the connection to the VPN server failed.
-- [static var configurationStale: NEVPNError.Code](nevpnerror-swift.struct/configurationstale.md)
+- [static var configurationStale: NEVPNError.Code](./configurationstale.md)
   An error code that indicates another process modfied the VPN configuration since the last time the app loaded the configuration.
-- [static var configurationUnknown: NEVPNError.Code](nevpnerror-swift.struct/configurationunknown.md)
+- [static var configurationUnknown: NEVPNError.Code](./configurationunknown.md)
   An error code that indicates that unspecified error occurred.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a strongly typed error number from a raw C error number.
 
@@ -22,7 +23,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [let rawValue: CInt](errno/rawvalue.md)
+### Interacting with C APIs
+- [let rawValue: CInt](./rawvalue.md)
   The raw C error number.
 
 

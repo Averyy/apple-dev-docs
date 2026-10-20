@@ -1,7 +1,8 @@
 # gOSKextUnresolved
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value to which a kext's unresolved, weakly-referenced symbols are bound.
 
@@ -10,7 +11,7 @@ The value to which a kext's unresolved, weakly-referenced symbols are bound.
 
 ## Declaration
 
-```swift
+```c
 const void *const gOSKextUnresolved;
 ```
 

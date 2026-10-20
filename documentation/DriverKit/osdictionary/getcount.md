@@ -1,19 +1,20 @@
 # getCount
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns count of members in dictionary.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getCount() const;
 ```
 
@@ -23,11 +24,12 @@ Count of members in dictionary.
 
 ## See Also
 
-- [ensureCapacity](osdictionary/ensurecapacity.md)
+### Inspecting a Dictionary
+- [ensureCapacity](./ensurecapacity.md)
   Allocates capacity for members in dictionary.
-- [getCapacity](osdictionary/getcapacity.md)
+- [getCapacity](./getcapacity.md)
   Returns count of currently allocated capacity for members in dictionary.
-- [OSDictionaryGetCount](osdictionarygetcount.md)
+- [OSDictionaryGetCount](../osdictionarygetcount.md)
 
 
 ---

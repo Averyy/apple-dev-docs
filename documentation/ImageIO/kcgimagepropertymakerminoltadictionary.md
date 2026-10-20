@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerMinoltaDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image from a Minolta camera.
 
@@ -20,21 +21,26 @@ A dictionary of key-value pairs for an image from a Minolta camera.
 let kCGImagePropertyMakerMinoltaDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyMakerMinoltaDictionary;
+```
+
 ## See Also
 
-- [Nikon Camera Dictionary Keys](nikon-camera-dictionary-keys.md)
+### Manufacturer-Specific Properties
+- [Nikon Camera Dictionary Keys](./nikon-camera-dictionary-keys.md)
   Metadata keys for an image from a Nikon camera.
-- [Canon Camera Dictionary Keys](canon-camera-dictionary-keys.md)
+- [Canon Camera Dictionary Keys](./canon-camera-dictionary-keys.md)
   Metadata keys for an image from a Canon camera.
-- [let kCGImagePropertyMakerAppleDictionary: CFString](kcgimagepropertymakerappledictionary.md)
+- [let kCGImagePropertyMakerAppleDictionary: CFString](./kcgimagepropertymakerappledictionary.md)
   A dictionary of key-value pairs for an image from an Apple camera.
-- [let kCGImagePropertyMakerFujiDictionary: CFString](kcgimagepropertymakerfujidictionary.md)
+- [let kCGImagePropertyMakerFujiDictionary: CFString](./kcgimagepropertymakerfujidictionary.md)
   A dictionary of key-value pairs for an image from a Fuji camera.
-- [let kCGImagePropertyMakerOlympusDictionary: CFString](kcgimagepropertymakerolympusdictionary.md)
+- [let kCGImagePropertyMakerOlympusDictionary: CFString](./kcgimagepropertymakerolympusdictionary.md)
   A dictionary of key-value pairs for an image from a Olympus camera.
-- [let kCGImagePropertyMakerPentaxDictionary: CFString](kcgimagepropertymakerpentaxdictionary.md)
+- [let kCGImagePropertyMakerPentaxDictionary: CFString](./kcgimagepropertymakerpentaxdictionary.md)
   A dictionary of key-value pairs for an image from a Pentax camera.
-- [let kCGImagePropertyRawDictionary: CFString](kcgimagepropertyrawdictionary.md)
+- [let kCGImagePropertyRawDictionary: CFString](./kcgimagepropertyrawdictionary.md)
   A dictionary of key-value pairs for an image that contains minimally processed, or raw, data.
 
 

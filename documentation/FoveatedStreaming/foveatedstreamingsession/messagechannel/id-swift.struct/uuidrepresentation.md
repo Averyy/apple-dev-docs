@@ -1,7 +1,8 @@
 # uuidRepresentation
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UUID representation of this ID, if it can be represented as one.
 

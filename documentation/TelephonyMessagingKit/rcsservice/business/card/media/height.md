@@ -1,7 +1,8 @@
 # RCSService.Business.Card.Media.Height
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration indicating the height of the media.
 
@@ -17,40 +18,41 @@ enum Height
 ## Topics
 
 ### Determining height
-- [RCSService.Business.Card.Media.Height.short](rcsservice/business/card/media/height/short.md)
+- [RCSService.Business.Card.Media.Height.short](./height/short.md)
   Short height.
-- [RCSService.Business.Card.Media.Height.medium](rcsservice/business/card/media/height/medium.md)
+- [RCSService.Business.Card.Media.Height.medium](./height/medium.md)
   Medium height.
-- [RCSService.Business.Card.Media.Height.tall](rcsservice/business/card/media/height/tall.md)
+- [RCSService.Business.Card.Media.Height.tall](./height/tall.md)
   Tall height.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../../Swift/decodable.md)
+- [Encodable](../../../../../Swift/encodable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let url: URL](rcsservice/business/card/media/url.md)
+### Accessing card media properties
+- [let url: URL](./url.md)
   URL of media.
-- [let contentType: UTType?](rcsservice/business/card/media/contenttype.md)
+- [let contentType: UTType?](./contenttype.md)
   Content type of media.
-- [let fileSize: Measurement<UnitInformationStorage>](rcsservice/business/card/media/filesize.md)
+- [let fileSize: Measurement<UnitInformationStorage>](./filesize.md)
   File size of media.
-- [let thumbnailURL: URL?](rcsservice/business/card/media/thumbnailurl.md)
+- [let thumbnailURL: URL?](./thumbnailurl.md)
   URL of thumbnail.
-- [let thumbnailContentType: UTType?](rcsservice/business/card/media/thumbnailcontenttype.md)
+- [let thumbnailContentType: UTType?](./thumbnailcontenttype.md)
   Content type of thumbnail.
-- [let thumbnailFileSize: Measurement<UnitInformationStorage>?](rcsservice/business/card/media/thumbnailfilesize.md)
+- [let thumbnailFileSize: Measurement<UnitInformationStorage>?](./thumbnailfilesize.md)
   File size of thumbnail.
-- [let displayHeight: RCSService.Business.Card.Media.Height](rcsservice/business/card/media/displayheight.md)
+- [let displayHeight: RCSService.Business.Card.Media.Height](./displayheight.md)
   The display height for media.
-- [let description: String?](rcsservice/business/card/media/description.md)
+- [let description: String?](./description.md)
   Description of media.
 
 

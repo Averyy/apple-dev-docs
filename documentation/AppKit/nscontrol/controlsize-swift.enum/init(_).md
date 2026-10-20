@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a control size from its ControlSize equivalent.
 

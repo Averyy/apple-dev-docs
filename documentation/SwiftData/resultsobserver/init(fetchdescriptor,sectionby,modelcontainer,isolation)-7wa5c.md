@@ -1,7 +1,8 @@
 # init(fetchDescriptor:sectionBy:modelContainer:isolation:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new observer with the given fetch descriptor, a String section key path, and a model container.
 
@@ -20,11 +21,13 @@ Creates a new observer with the given fetch descriptor, a String section key pat
 convenience init(fetchDescriptor: FetchDescriptor<Element> = FetchDescriptor<Element>(), sectionBy: KeyPath<Element, String>, modelContainer: ModelContainer, isolation: isolated (any Actor)? = #isolation) throws
 ```
 
+Available when `Element` conforms to `PersistentModel` and `SectionTitle` is `String`.
+
 #### Discussion
 
 A new `ModelContext` is created from the provided container.
 
-> **Note**: An error if the initial fetch fails.
+> **Throws**: An error if the initial fetch fails.
 
 ## Parameters
 
@@ -34,15 +37,16 @@ A new `ModelContext` is created from the provided container.
 
 ## See Also
 
-- [convenience init(fetchDescriptor: FetchDescriptor<Element>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](resultsobserver/init(fetchdescriptor:modelcontext:isolation:).md)
+### Creating a results observer with a fetch descriptor
+- [convenience init(fetchDescriptor: FetchDescriptor<Element>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](./init%28fetchdescriptor,modelcontext,isolation%29.md)
   Creates a new unsectioned observer with the given fetch descriptor and model context.
-- [convenience init(fetchDescriptor: FetchDescriptor<Element>, sectionBy: KeyPath<Element, String>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](resultsobserver/init(fetchdescriptor:sectionby:modelcontext:isolation:)-7ms14.md)
+- [convenience init(fetchDescriptor: FetchDescriptor<Element>, sectionBy: KeyPath<Element, String>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](./init%28fetchdescriptor,sectionby,modelcontext,isolation%29-7ms14.md)
   Creates a new observer with the given fetch descriptor, a String section key path, and a model context.
-- [convenience init(fetchDescriptor: FetchDescriptor<Element>, sectionBy: KeyPath<Element, String?>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](resultsobserver/init(fetchdescriptor:sectionby:modelcontext:isolation:)-9kg1q.md)
+- [convenience init(fetchDescriptor: FetchDescriptor<Element>, sectionBy: KeyPath<Element, String?>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](./init%28fetchdescriptor,sectionby,modelcontext,isolation%29-9kg1q.md)
   Creates a new observer with the given fetch descriptor, an optional String section key path, and a model context.
-- [convenience init(fetchDescriptor: FetchDescriptor<Element>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](resultsobserver/init(fetchdescriptor:modelcontainer:isolation:).md)
+- [convenience init(fetchDescriptor: FetchDescriptor<Element>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](./init%28fetchdescriptor,modelcontainer,isolation%29.md)
   Creates a new unsectioned observer with the given fetch descriptor and model container.
-- [convenience init(fetchDescriptor: FetchDescriptor<Element>, sectionBy: KeyPath<Element, String?>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](resultsobserver/init(fetchdescriptor:sectionby:modelcontainer:isolation:)-4tuzk.md)
+- [convenience init(fetchDescriptor: FetchDescriptor<Element>, sectionBy: KeyPath<Element, String?>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](./init%28fetchdescriptor,sectionby,modelcontainer,isolation%29-4tuzk.md)
   Creates a new observer with the given fetch descriptor, an optional String section key path, and a model container.
 
 

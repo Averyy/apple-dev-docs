@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the purgeable state of the heap.
@@ -20,6 +21,10 @@ Sets the purgeable state of the heap.
 func setPurgeableState(_ state: MTLPurgeableState) -> MTLPurgeableState
 ```
 
+```objc
+- (MTLPurgeableState) setPurgeableState:(MTLPurgeableState) state;
+```
+
 #### Return Value
 
 The previous purgeable state of the heap.
@@ -28,7 +33,7 @@ The previous purgeable state of the heap.
 
 The heap purgeability state refers to its whole backing memory and affects all resources in the heap. Heaps can be marked purgeable but its resources cannot; the heap’s resources always reflect the heap’s purgeability state.
 
-Refer to the [`MTLPurgeableState`](mtlpurgeablestate.md) and [`setPurgeableState(_:)`](mtlresource/setpurgeablestate(_:).md) reference for further information.
+Refer to the [`MTLPurgeableState`](../mtlpurgeablestate.md) and [`setPurgeableState(_:)`](../mtlresource/setpurgeablestate%28_%29.md) reference for further information.
 
 ## Parameters
 

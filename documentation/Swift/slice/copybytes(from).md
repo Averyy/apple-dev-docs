@@ -1,7 +1,8 @@
 # copyBytes(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies from a collection of `UInt8` into this buffer slice’s memory.
 
@@ -19,6 +20,8 @@ Copies from a collection of `UInt8` into this buffer slice’s memory.
 ```swift
 func copyBytes<C>(from source: C) where C : Collection, C.Element == UInt8
 ```
+
+Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
 #### Discussion
 

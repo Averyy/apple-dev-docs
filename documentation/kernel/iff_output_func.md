@@ -1,18 +1,19 @@
 # iff_output_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*iff_output_func)(void *cookie, ifnet_t interface, protocol_family_t protocol, mbuf_t *data);
 ```
 
-#### Return_value
+#### Return Value
 
 Return: 0 - The caller will continue with normal processing of the packet. EJUSTRETURN - The caller will stop processing the packet, the packet will not be freed. Anything Else - The caller will free the packet and stop processing.
 

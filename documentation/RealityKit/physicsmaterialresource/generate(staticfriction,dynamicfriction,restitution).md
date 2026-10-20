@@ -1,7 +1,8 @@
 # generate(staticFriction:dynamicFriction:restitution:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new material with the specified static friction, dynamic friction, and restitution.
 
@@ -11,7 +12,7 @@ Creates a new material with the specified static friction, dynamic friction, and
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -28,7 +29,8 @@ Creates a new material with the specified static friction, dynamic friction, and
 
 ## See Also
 
-- [static func generate(friction: Float, restitution: Float) -> PhysicsMaterialResource](physicsmaterialresource/generate(friction:restitution:).md)
+### Creating a custom material resource
+- [static func generate(friction: Float, restitution: Float) -> PhysicsMaterialResource](./generate%28friction,restitution%29.md)
   Generates a new material with the given characteristics.
 
 

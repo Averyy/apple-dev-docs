@@ -1,7 +1,8 @@
 # skip(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances the position of this iterator by the specified offset, or until the end of the underlying type’s elements.
 

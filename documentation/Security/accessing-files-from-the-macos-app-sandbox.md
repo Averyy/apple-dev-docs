@@ -1,6 +1,7 @@
 # Accessing files from the macOS App Sandbox
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Read and write documents and supporting files while maintaining security protection.
 
@@ -17,7 +18,7 @@ App Sandbox improves the overall security of a Mac by restricting your app’s a
 
 Even in situations where App Sandbox permits your app to work with a file, discretionary access controls such as POSIX permissions or access control lists, or mandatory access controls built into macOS, may cause errors when your app attempts to use a file.
 
-##### Use Files in Your Apps Container
+##### Use files in your app’s container
 
 When your sandboxed app launches for the first time, macOS creates a sandbox container on the file system (in `~/Library/Containers`) and associates it with your app. Your app has full read and write access to its sandbox container, and can run programs located there as well.
 
@@ -27,7 +28,7 @@ The operating system also tracks the association between an app’s code signing
 
 > **Note**:  In certain situations, two different versions of your app can have different designated requirements, leading the operating system to request permission when the second version tries to access the sandbox container. One case is using both the version of your app from the Mac App Store and a local build created in Xcode on the same computer. Another is if you transfer an app to another App Store team and the code signing identity used to sign the app changes between released versions.
 
-##### Access Files with Standard User Interactions
+##### Access files with standard user interactions
 
 Give your app access to files that a person chooses in open and save panels, or by following these steps:
 
@@ -37,41 +38,41 @@ Give your app access to files that a person chooses in open and save panels, or 
 4. Open the Signing & Capabilities tab.
 5. In the App Sandbox group, choose Read Only or Read/Write from the User Selected File menu.
 
-![A screenshot of the Signing and Capabilities editor in Xcode. In the App Sandbox capability, permission and access to User Selected Files is set to Read Only.](/images/com.apple.security/media-4208568@2x.png)
+![A screenshot of the Signing and Capabilities editor in Xcode. In the App Sandbox capability, permission and access to User Selected Files is set to Read Only.](https://developer.apple.com/tutorials/images/com.apple.security/media-4208568@2x.png)
 
 Present a standard open or save panel so that a person can choose a document that’s outside your app’s sandbox:
 
-- From SwiftUI, use file import modifiers like [`fileImporter(isPresented:allowedContentTypes:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/fileimporter(ispresented:allowedcontenttypes:oncompletion:)), and file exporter modifiers like [`fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:)-32vwk).
-- From AppKit, use [`NSOpenPanel`](https://developer.apple.com/documentation/appkit/nsopenpanel) and [`NSSavePanel`](https://developer.apple.com/documentation/appkit/nssavepanel).
-- From Mac Catalyst, use [`UIDocumentPickerViewController`](https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller).
+- From SwiftUI, use file import modifiers like [`fileImporter(isPresented:allowedContentTypes:onCompletion:)`](../SwiftUI/view/fileimporter%28ispresented,allowedcontenttypes,oncompletion%29.md), and file exporter modifiers like [`fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)`](../SwiftUI/view/fileexporter%28ispresented,document,contenttype,defaultfilename,oncompletion%29-32vwk.md).
+- From AppKit, use [`NSOpenPanel`](../AppKit/nsopenpanel.md) and [`NSSavePanel`](../AppKit/nssavepanel.md).
+- From Mac Catalyst, use [`UIDocumentPickerViewController`](../UIKit/uidocumentpickerviewcontroller.md).
 
 The operating system displays open and save panels in a separate process, and extends your app’s sandbox to include the selected URLs.
 
-The operating system starts security-scoped access on URLs passed from open panels, save panels, or items dragged to your app’s icon in the Dock, as if you called [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()). When you’ve finished with the resources, call [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/stopaccessingsecurityscopedresource()) to revoke your app’s access.
+The operating system starts security-scoped access on URLs passed from open panels, save panels, or items dragged to your app’s icon in the Dock, as if you called [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md). When you’ve finished with the resources, call [`stopAccessingSecurityScopedResource()`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md) to revoke your app’s access.
 
 When the URL your app receives from a standard user interface interaction represents a folder, the operating system extends your app’s sandbox to items within that folder, and recursively in nested folders. Some items within the folder could still be inaccessible for other reasons, discussed in “Diagnose other reasons your app can’t access a file,” below.
 
 Your app can’t run programs in locations outside its app bundle, sandbox container, or app group containers using the entitlements to access user-selected files. To write programs in user-selected locations, add the `com.apple.security.files.user-selected.executable` entitlement with the Boolean value `YES`.
 
-##### Persist File Access with Security Scoped Url Bookmarks
+##### Persist file access with security-scoped URL bookmarks
 
-Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:)), including the [`withSecurityScope`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkcreationoptions/withsecurityscope) option. Foundation creates a URL bookmark with an explicit security scope that your app can store and retrieve to subsequently access the resource at the URL, regardless of whether your app exits between accesses. If your app doesn’t need to write to the file on subsequent access, include the [`securityScopeAllowOnlyReadAccess`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkcreationoptions/securityscopeallowonlyreadaccess) option.
+Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md), including the [`withSecurityScope`](../Foundation/nsurl/bookmarkcreationoptions/withsecurityscope.md) option. Foundation creates a URL bookmark with an explicit security scope that your app can store and retrieve to subsequently access the resource at the URL, regardless of whether your app exits between accesses. If your app doesn’t need to write to the file on subsequent access, include the [`securityScopeAllowOnlyReadAccess`](../Foundation/nsurl/bookmarkcreationoptions/securityscopeallowonlyreadaccess.md) option.
 
-Unlike the bookmarks with implicit security scope that your app receives from standard system interactions or from communication with other processes, when you resolve a security-scoped bookmark that you retrieve from a stored representation, the system doesn’t automatically extend your app’s sandbox to include the bookmarked file. Call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()) before you use the file at the resolved URL, and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/stopaccessingsecurityscopedresource()) when you’re done with the file.
+Unlike the bookmarks with implicit security scope that your app receives from standard system interactions or from communication with other processes, when you resolve a security-scoped bookmark that you retrieve from a stored representation, the system doesn’t automatically extend your app’s sandbox to include the bookmarked file. Call [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) before you use the file at the resolved URL, and [`stopAccessingSecurityScopedResource()`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md) when you’re done with the file.
 
 To access the file:
 
-1. Resolve the URL using [`init(resolvingBookmarkData:options:relativeTo:bookmarkDataIsStale:)`](https://developer.apple.com/documentation/foundation/nsurl/init(resolvingbookmarkdata:options:relativeto:bookmarkdataisstale:)), including [`withSecurityScope`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkcreationoptions/withsecurityscope) in the options.
-2. If the Boolean value returned in `bookmarkDataIsStale` is true, then recreate the bookmark using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:)) and update your app’s stored version of the bookmark.
-3. Call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()) on the resolved URL.
+1. Resolve the URL using [`init(resolvingBookmarkData:options:relativeTo:bookmarkDataIsStale:)`](../Foundation/nsurl/init%28resolvingbookmarkdata,options,relativeto,bookmarkdataisstale%29.md), including [`withSecurityScope`](../Foundation/nsurl/bookmarkcreationoptions/withsecurityscope.md) in the options.
+2. If the Boolean value returned in `bookmarkDataIsStale` is true, then recreate the bookmark using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md) and update your app’s stored version of the bookmark.
+3. Call [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) on the resolved URL.
 4. Use the file at the resolved URL.
-5. Call [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/stopaccessingsecurityscopedresource()) on the resolved URL.
+5. Call [`stopAccessingSecurityScopedResource()`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md) on the resolved URL.
 
 You only need to create security-scoped bookmarks when your app might try to access the bookmarked resource after it exits and re-launches. In other situations, for example, passing a URL bookmark between processes, you can create and use a bookmark without security scope.
 
-##### Share File Access Between Processes with Url Bookmarks
+##### Share file access between processes with URL bookmarks
 
-Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:)), passing `[]` (Swift) or `0` (Objective-C) as the value for the options parameter. The bookmark Foundation creates refers to a security-scoped URL that grants access to the resource to a process that resolves the bookmark. Your app can pass that bookmark to another process, like a launch agent or an XPC service. Use the following example to access the resource in the receiving process:
+Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md), passing `[]` (Swift) or `0` (Objective-C) as the value for the options parameter. The bookmark Foundation creates refers to a security-scoped URL that grants access to the resource to a process that resolves the bookmark. Your app can pass that bookmark to another process, like a launch agent or an XPC service. Use the following example to access the resource in the receiving process:
 
 **Swift**:
 
@@ -106,26 +107,26 @@ if (location == nil) {
 }
 ```
 
-The receiving process automatically attempts to extend its sandbox to include the bookmarked resource when it uses the security-scoped URL, as if it called [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()) after resolving the bookmark. To defer extending the process’s sandbox until you explicitly call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()), pass the option [`withoutImplicitStartAccessing`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkresolutionoptions/withoutimplicitstartaccessing).
+The receiving process automatically attempts to extend its sandbox to include the bookmarked resource when it uses the security-scoped URL, as if it called [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) after resolving the bookmark. To defer extending the process’s sandbox until you explicitly call [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md), pass the option [`withoutImplicitStartAccessing`](../Foundation/nsurl/bookmarkresolutionoptions/withoutimplicitstartaccessing.md).
 
-##### Access Files Related to Documents with Document Relative Bookmarks
+##### Access files related to documents with document-relative bookmarks
 
 Document-relative bookmarks extend access to project files to cover the supporting files those projects reference. Consider the example of an integrated development environment (IDE) app. An IDE project file could contain references to source code files, images, and other assets. Store document-relative bookmarks in the project document, so that when the sandboxed app opens the project document, it can resolve the bookmarks to access the other files.
 
-Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:)), using the document’s URL as the `url` parameter. Foundation creates a bookmark that any process with access to the resource at the `relativeTo` URL can resolve.
+Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md), using the document’s URL as the `url` parameter. Foundation creates a bookmark that any process with access to the resource at the `relativeTo` URL can resolve.
 
-##### Share Files Between Related Apps with App Group Containers
+##### Share files between related apps with app group containers
 
 Apps that are members of the same app group can create any number of shared containers that they use to exchange files. Your app can access files and folders in an app group container if it meets the following conditions:
 
-- You get the location of the app group container by calling the [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) method [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/containerurl(forsecurityapplicationgroupidentifier:)).
-- Your app claims the [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups) with a value that contains the app group’s identifier.
+- You get the location of the app group container by calling the [`FileManager`](../Foundation/filemanager.md) method [`containerURL(forSecurityApplicationGroupIdentifier:)`](../Foundation/filemanager/containerurl%28forsecurityapplicationgroupidentifier%29.md).
+- Your app claims the [`App Groups Entitlement`](../BundleResources/entitlements/com.apple.security.application-groups.md) with a value that contains the app group’s identifier.
 - Your app is distributed through the Mac App Store, or notarized.
 - If your app is notarized, the app group’s identifier is contained in your app’s provisioning profile or prefixed with your Apple Developer team identifier.
 
 In other situations, the system displays a request for someone to authorize your app’s access to the app group container.
 
-##### Use Related File Access to Work with Groups of Files
+##### Use related file access to work with groups of files
 
 To work with files that are related to a document chosen by the person using your app, like ancillary files or versions in different formats, identify your apps’ related file types with these steps:
 
@@ -134,7 +135,7 @@ To work with files that are related to a document chosen by the person using you
 3. Open the disclosure triangle next to Document types.
 4. Add the `NSIsRelatedItemType` key to the dictionaries representing your app’s related file types, with the Boolean value `YES`.
 
-![A screenshot of Xcode, showing the property list editor for an app’s Info.plist file. The property list includes a document type with the NSIsRelatedItemType key and the value YES.](/images/com.apple.security/media-4208569@2x.png)
+![A screenshot of Xcode, showing the property list editor for an app’s Info.plist file. The property list includes a document type with the NSIsRelatedItemType key and the value YES.](https://developer.apple.com/tutorials/images/com.apple.security/media-4208569@2x.png)
 
 The `Info.plist` file entry for the related file type should look like this example.
 
@@ -157,9 +158,9 @@ The `Info.plist` file entry for the related file type should look like this exam
 </array>
 ```
 
-In your code, create an object that conforms to [`NSFilePresenter`](https://developer.apple.com/documentation/foundation/nsfilepresenter). For a given document file, set that object’s [`primaryPresentedItemURL`](https://developer.apple.com/documentation/foundation/nsfilepresenter/primarypresenteditemurl) to the document’s URL, and the [`presentedItemURL`](https://developer.apple.com/documentation/foundation/nsfilepresenter/presenteditemurl) to the supporting file’s URL. Pass the created file presenter to an instance of [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator), and use the file coordinator to access the supporting file. The operating system automatically extends your app’s sandbox to give your app access to the supporting file.
+In your code, create an object that conforms to [`NSFilePresenter`](../Foundation/nsfilepresenter.md). For a given document file, set that object’s [`primaryPresentedItemURL`](../Foundation/nsfilepresenter/primarypresenteditemurl.md) to the document’s URL, and the [`presentedItemURL`](../Foundation/nsfilepresenter/presenteditemurl.md) to the supporting file’s URL. Pass the created file presenter to an instance of [`NSFileCoordinator`](../Foundation/nsfilecoordinator.md), and use the file coordinator to access the supporting file. The operating system automatically extends your app’s sandbox to give your app access to the supporting file.
 
-##### Request Capabilities to Access Standard Folders
+##### Request capabilities to access standard folders
 
 Apps that work with common types of file including Music, Movies, or Photos, can request capabilities that grant access to the standard folders where these files are located, avoiding the need to individually request consent to access each file. For example, to access the Music folder:
 
@@ -169,24 +170,24 @@ Apps that work with common types of file including Music, Movies, or Photos, can
 4. Open the Signing & Capabilities tab.
 5. In the App Sandbox group, choose Read Only or Read/Write from the Music Folder menu.
 
-![A screenshot of the Signing and Capabilities editor in Xcode. In the App Sandbox capability, permission and access to the Music Folder is set to Read Only.](/images/com.apple.security/media-4208570@2x.png)
+![A screenshot of the Signing and Capabilities editor in Xcode. In the App Sandbox capability, permission and access to the Music Folder is set to Read Only.](https://developer.apple.com/tutorials/images/com.apple.security/media-4208570@2x.png)
 
-##### Request Full Disk Access to Use All Files on a Mac
+##### Request full disk access to use all files on a Mac
 
 Certain app workflows, like an app for backing up your Mac, require access to files wherever they reside on a file system. Your app can’t automatically gain full disk access through an entitlement or with code: the person using your app must choose to grant access in System Settings > Privacy & Security.
 
 In situations where your app tries to use a file outside of its sandbox, program defensively by handling failure cases, as someone may choose not to grant full disk access to your app.
 
-##### Diagnose Other Reasons Your App Cant Access a File
+##### Diagnose other reasons your app can’t access a file
 
 Your app may not have access to a file even if App Sandbox doesn’t block access. Any of the operating system facilities listed below may restrict access to the file.
 
-- **POSIX permissions**: The read, write, or execute permission flags on the file, or a folder in the file’s path, deny access to the user account running your app. The app receives an error with the domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and code 13 (`EACCES`).
-- **POSIX.1e access control lists**: The access control list on the file, or a folder in the file’s path, deny access to the user account running your app. The app receives an error with the domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and code 13 (`EACCES`).
-- **System Integrity Protection**: The operating system prevents software from modifying certain parts of the file system to prevent damage to installed software. The app receives an error with the domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and code 1 (`EPERM`).
-- **Data protection**: The file has a data protection class that prevents the app opening the file, for example, the file’s data protection class is [`complete`](https://developer.apple.com/documentation/foundation/fileprotectiontype/complete) and the device is locked. The app receives an error with the domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and code 1 (`EPERM`).
+- **POSIX permissions**: The read, write, or execute permission flags on the file, or a folder in the file’s path, deny access to the user account running your app. The app receives an error with the domain [`NSPOSIXErrorDomain`](../Foundation/nsposixerrordomain.md) and code 13 (`EACCES`).
+- **POSIX.1e access control lists**: The access control list on the file, or a folder in the file’s path, deny access to the user account running your app. The app receives an error with the domain [`NSPOSIXErrorDomain`](../Foundation/nsposixerrordomain.md) and code 13 (`EACCES`).
+- **System Integrity Protection**: The operating system prevents software from modifying certain parts of the file system to prevent damage to installed software. The app receives an error with the domain [`NSPOSIXErrorDomain`](../Foundation/nsposixerrordomain.md) and code 1 (`EPERM`).
+- **Data protection**: The file has a data protection class that prevents the app opening the file, for example, the file’s data protection class is [`complete`](../Foundation/fileprotectiontype/complete.md) and the device is locked. The app receives an error with the domain [`NSPOSIXErrorDomain`](../Foundation/nsposixerrordomain.md) and code 1 (`EPERM`).
 
-> **Note**:  To determine whether the App Sandbox denied your app access to a file, see [`Discovering and diagnosing App Sandbox violations`](discovering-and-diagnosing-app-sandbox-violations.md).
+> **Note**:  To determine whether the App Sandbox denied your app access to a file, see [Discovering and diagnosing App Sandbox violations](./discovering-and-diagnosing-app-sandbox-violations.md).
 
 
 ---

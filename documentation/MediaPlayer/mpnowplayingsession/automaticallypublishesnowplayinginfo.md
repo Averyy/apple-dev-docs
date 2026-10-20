@@ -1,7 +1,8 @@
 # automaticallyPublishesNowPlayingInfo
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether Now Playing info automatically publishes.
 
@@ -18,15 +19,20 @@ A Boolean that indicates whether Now Playing info automatically publishes.
 var automaticallyPublishesNowPlayingInfo: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL automaticallyPublishesNowPlayingInfo;
+```
+
 #### Discussion
 
-You can set Now Playing information keys for automatic publishing on [`nowPlayingInfo`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nowplayinginfo).
+You can set Now Playing information keys for automatic publishing on [`nowPlayingInfo`](../../AVFoundation/avplayeritem/nowplayinginfo.md).
 
-> ❗ **Important**:  If you set `automaticallyPublishesNowPlayingInfo` to `true`, don’t use [`nowPlayingInfoCenter`](mpnowplayingsession/nowplayinginfocenter.md).
+> ❗ **Important**:  If you set `automaticallyPublishesNowPlayingInfo` to `true`, don’t use [`nowPlayingInfoCenter`](./nowplayinginfocenter.md).
 
 ## See Also
 
-- [var nowPlayingInfoCenter: MPNowPlayingInfoCenter](mpnowplayingsession/nowplayinginfocenter.md)
+### Configuring Now Playing information
+- [var nowPlayingInfoCenter: MPNowPlayingInfoCenter](./nowplayinginfocenter.md)
   The Now Playing information center associated with the session.
 
 

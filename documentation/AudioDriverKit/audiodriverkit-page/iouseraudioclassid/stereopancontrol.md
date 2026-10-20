@@ -1,7 +1,8 @@
 # StereoPanControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the stereo pan control class.
 
@@ -10,7 +11,7 @@ The identifier for the stereo pan control class.
 
 ## Declaration
 
-```swift
+```c
 StereoPanControl
 ```
 

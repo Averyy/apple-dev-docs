@@ -1,7 +1,8 @@
 # urlDecodingState
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A state that indicates the process of decoding an App Clip Code URL.
 
@@ -15,15 +16,20 @@ A state that indicates the process of decoding an App Clip Code URL.
 var urlDecodingState: ARAppClipCodeAnchor.URLDecodingState { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) ARAppClipCodeURLDecodingState urlDecodingState;
+```
+
 #### Discussion
 
-The initial value of this property is [`ARAppClipCodeAnchor.URLDecodingState.decoding`](arappclipcodeanchor/urldecodingstate-swift.enum/decoding.md).
+The initial value of this property is [`ARAppClipCodeAnchor.URLDecodingState.decoding`](./urldecodingstate-swift.enum/decoding.md).
 
 ## See Also
 
-- [var url: URL?](arappclipcodeanchor/url.md)
+### Decoding the URL
+- [var url: URL?](./url.md)
   The URL encoded in an App Clip Code.
-- [ARAppClipCodeAnchor.URLDecodingState](arappclipcodeanchor/urldecodingstate-swift.enum.md)
+- [ARAppClipCodeAnchor.URLDecodingState](./urldecodingstate-swift.enum.md)
   The states in the process of decoding an App Clip code URL.
 
 

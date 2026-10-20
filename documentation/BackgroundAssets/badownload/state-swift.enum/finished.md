@@ -1,17 +1,18 @@
 # BADownload.State.finished
 
 **Framework**: Background Assets  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates a finished download.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ A state that indicates a finished download.
 case finished
 ```
 
+```c
+BADownloadStateFinished
+```
+
 ## See Also
 
-- [BADownload.State.created](badownload/state-swift.enum/created.md)
+### Download states
+- [BADownload.State.created](./created.md)
   A state that indicates a created download.
-- [BADownload.State.waiting](badownload/state-swift.enum/waiting.md)
+- [BADownload.State.waiting](./waiting.md)
   A state that indicates a download is waiting to execute.
-- [BADownload.State.downloading](badownload/state-swift.enum/downloading.md)
+- [BADownload.State.downloading](./downloading.md)
   A state that indicates a download is in progress.
-- [BADownload.State.failed](badownload/state-swift.enum/failed.md)
+- [BADownload.State.failed](./failed.md)
   A state that indicates a failed download.
 
 

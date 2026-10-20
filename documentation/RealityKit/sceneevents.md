@@ -1,7 +1,8 @@
 # SceneEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events the scene invokes.
 
@@ -11,7 +12,7 @@ Events the scene invokes.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,30 +27,31 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
 ## Topics
 
 ### Detecting scene-level updates
-- [SceneEvents.Update](sceneevents/update.md)
+- [SceneEvents.Update](./sceneevents/update.md)
   An event invoked once per frame interval that you can use to execute custom logic for each frame.
-- [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
+- [SceneEvents.AnchoredStateChanged](./sceneevents/anchoredstatechanged.md)
   An event invoked when the anchored state of an anchoring entity changes.
 ### Detecting scene hierarchy changes
-- [SceneEvents.DidAddEntity](sceneevents/didaddentity.md)
+- [SceneEvents.DidAddEntity](./sceneevents/didaddentity.md)
   Raised after an entity is added to the scene.
-- [SceneEvents.DidReparentEntity](sceneevents/didreparententity.md)
+- [SceneEvents.DidReparentEntity](./sceneevents/didreparententity.md)
   Raised after an entity has been reparented within the same scene.
-- [SceneEvents.WillRemoveEntity](sceneevents/willremoveentity.md)
+- [SceneEvents.WillRemoveEntity](./sceneevents/willremoveentity.md)
   Raised before an entity is removed from the scene.
-- [SceneEvents.DidActivateEntity](sceneevents/didactivateentity.md)
+- [SceneEvents.DidActivateEntity](./sceneevents/didactivateentity.md)
   Raised after an entity becomes active.
-- [SceneEvents.WillDeactivateEntity](sceneevents/willdeactivateentity.md)
+- [SceneEvents.WillDeactivateEntity](./sceneevents/willdeactivateentity.md)
   Raised before an entity becomes inactive.
 ### Structures
-- [SceneEvents.TrackingStateUpdate](sceneevents/trackingstateupdate.md)
+- [SceneEvents.TrackingStateUpdate](./sceneevents/trackingstateupdate.md)
   An event type that signals a change of device tracking state.
 
 ## See Also
 
-- [enum AnchorStateEvents](anchorstateevents.md)
+### Scene and entity lifecycle events
+- [enum AnchorStateEvents](./anchorstateevents.md)
   Events that trigger on an entity to indicate a change in anchor state.
-- [enum ComponentEvents](componentevents.md)
+- [enum ComponentEvents](./componentevents.md)
   Provides the events related to components.
 
 

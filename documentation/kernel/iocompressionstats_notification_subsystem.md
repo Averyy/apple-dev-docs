@@ -1,14 +1,15 @@
 # iocompressionstats_notification_subsystem
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 const struct iocompressionstats_notification_subsystem iocompressionstats_notification_subsystem;
 ```
 

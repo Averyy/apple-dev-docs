@@ -2,6 +2,7 @@
 
 **Framework**: hvf  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The CSC column starts for extremum axis values The columns correspond to the axis extrema, with minimum first, then maximum

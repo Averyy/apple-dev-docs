@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason for the event.
 
@@ -25,11 +26,12 @@ The system uses this information to craft a message in the system UI.
 
 ## See Also
 
-- [let originator: Participant](groupsessionevent/originator.md)
+### Getting the event details
+- [let originator: Participant](./originator.md)
   The participant that initiated the event.
-- [let url: URL?](groupsessionevent/url.md)
+- [let url: URL?](./url.md)
   The URL to open when the participant taps the event link in the system UI.
-- [GroupSessionEvent.Action](groupsessionevent/action-swift.struct.md)
+- [GroupSessionEvent.Action](./action-swift.struct.md)
   A playback-related change that occurs during the session.
 
 

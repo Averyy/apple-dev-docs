@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified item to the journal and begins transferring the item’s data to the other participants’ devices so they can access it.
 
@@ -21,7 +22,7 @@ final func add<ItemType>(_ item: ItemType) async throws -> GroupSessionJournal.A
 
 #### Return Value
 
-An attachment object you can remove by passing it to the [`remove(attachment:)`](groupsessionjournal/remove(attachment:).md) function.
+An attachment object you can remove by passing it to the [`remove(attachment:)`](./remove%28attachment%29.md) function.
 
 #### Discussion
 
@@ -29,11 +30,12 @@ Call this method when you want to send a file or codable data type to the other 
 
 ## Parameters
 
-- `item`: The item to send to other session participants. The type you specify must conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol. For more information about creating transferable types, see [`Core Transferable`](https://developer.apple.com/documentation/coretransferable).
+- `item`: The item to send to other session participants. The type you specify must conform to the [`Transferable`](../../CoreTransferable/transferable.md) protocol. For more information about creating transferable types, see [Core Transferable](../../CoreTransferable/CoreTransferable.md).
 
 ## See Also
 
-- [func add<ItemType, MetadataType>(ItemType, metadata: MetadataType) async throws -> GroupSessionJournal.Attachment](groupsessionjournal/add(_:metadata:).md)
+### Uploading content to the session
+- [func add<ItemType, MetadataType>(ItemType, metadata: MetadataType) async throws -> GroupSessionJournal.Attachment](./add%28_,metadata%29.md)
   Adds the specified item and metadata to the journal and begins transferring the data to the other participants’ devices so they can access it.
 
 

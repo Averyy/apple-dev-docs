@@ -1,17 +1,18 @@
 # PHASECurveType
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that apply a mathematical function to an input value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,67 +20,72 @@ Options that apply a mathematical function to an input value.
 enum PHASECurveType
 ```
 
+```c
+enum PHASECurveType : NSInteger;
+```
+
 #### Overview
 
 PHASE applies curves in several places across the framework:
 
-- A [`PHASEEnvelopeSegment`](phaseenvelopesegment.md) object represents one curved portion of an envelope’s graph.
-- The [`PHASEGroup`](phasegroup.md) class applies a curve type to its sounds by fading its volume with the [`fadeGain(gain:duration:curveType:)`](phasegroup/fadegain(gain:duration:curvetype:).md) function, and to its rate, with [`fadeRate(rate:duration:curveType:)`](phasegroup/faderate(rate:duration:curvetype:).md).
-- Each [`PHASEGroupPresetSetting`](phasegrouppresetsetting.md) applies a curve to control a setting’s rate of change.
+- A [`PHASEEnvelopeSegment`](./phaseenvelopesegment.md) object represents one curved portion of an envelope’s graph.
+- The [`PHASEGroup`](./phasegroup.md) class applies a curve type to its sounds by fading its volume with the [`fadeGain(gain:duration:curveType:)`](./phasegroup/fadegain%28gain,duration,curvetype%29.md) function, and to its rate, with [`fadeRate(rate:duration:curveType:)`](./phasegroup/faderate%28rate,duration,curvetype%29.md).
+- Each [`PHASEGroupPresetSetting`](./phasegrouppresetsetting.md) applies a curve to control a setting’s rate of change.
 
-##### Apply a Curve As a Rate of Change
+##### Apply a Curve as a Rate of Change
 
-In most cases, PHASE applies curves to output a rate of change. For example, an  envelope segment’s [`curveType`](phaseenvelopesegment/curvetype.md) determines where along the segment’s domain the y-value changes more quickly. The following figure compares all the curves’ rate of change by plotting their input over the range `(0,0)` to `(1,1)`.
+In most cases, PHASE applies curves to output a rate of change. For example, an  envelope segment’s [`curveType`](./phaseenvelopesegment/curvetype.md) determines where along the segment’s domain the y-value changes more quickly. The following figure compares all the curves’ rate of change by plotting their input over the range `(0,0)` to `(1,1)`.
 
-![A certesian graph plots all curve types for comparison. The graph encompases the first cartesian quadrant, where each curve begins at coordinate (0,0) and ends at coordinate (1,1). The linear curve plots in a straight line between the two coordinates. An arc that occupies the furthest area from the linear line to the upper left is the inverse cube curve. The next furthest arc from the linear line to the upper left is the inverse squared curve. And the third-furthest arc from the linear line to the upper left is the inverse sine curve. An arc that occupies the furthest area from the linear line to the lower right is the cube curve. The next furthest arc from the linear line to the lower right is the squared curve. And the third-furthest arc from the linear line to the lower right is the sine curve. The sigmoid and inverse sigmoid curves occupy the central area of the graph and center on top of the linear line. The sigmoid curve shapes like the letter S and begins by extending more quickly in the X direction. The inverse sigmoid curve shapes like an inverted letter S and begins by extending more quickly in the Y direction.](/images/com.apple.phase/media-3887371@2x.png)
+![A certesian graph plots all curve types for comparison. The graph encompases the first cartesian quadrant, where each curve begins at coordinate (0,0) and ends at coordinate (1,1). The linear curve plots in a straight line between the two coordinates. An arc that occupies the furthest area from the linear line to the upper left is the inverse cube curve. The next furthest arc from the linear line to the upper left is the inverse squared curve. And the third-furthest arc from the linear line to the upper left is the inverse sine curve. An arc that occupies the furthest area from the linear line to the lower right is the cube curve. The next furthest arc from the linear line to the lower right is the squared curve. And the third-furthest arc from the linear line to the lower right is the sine curve. The sigmoid and inverse sigmoid curves occupy the central area of the graph and center on top of the linear line. The sigmoid curve shapes like the letter S and begins by extending more quickly in the X direction. The inverse sigmoid curve shapes like an inverted letter S and begins by extending more quickly in the Y direction.](https://developer.apple.com/tutorials/images/com.apple.phase/media-3887371@2x.png)
 
 ## Topics
 
 ### Types
-- [PHASECurveType.linear](phasecurvetype/linear.md)
+- [PHASECurveType.linear](./phasecurvetype/linear.md)
   A curve that increases uniformly with its input.
-- [PHASECurveType.squared](phasecurvetype/squared.md)
+- [PHASECurveType.squared](./phasecurvetype/squared.md)
   A curve that increases at a rate that squares its input.
-- [PHASECurveType.inverseSquared](phasecurvetype/inversesquared.md)
+- [PHASECurveType.inverseSquared](./phasecurvetype/inversesquared.md)
   A curve that increases at a rate of one divided by the input’s square.
-- [PHASECurveType.cubed](phasecurvetype/cubed.md)
+- [PHASECurveType.cubed](./phasecurvetype/cubed.md)
   A curve that increases at a rate that cubes its input.
-- [PHASECurveType.inverseCubed](phasecurvetype/inversecubed.md)
+- [PHASECurveType.inverseCubed](./phasecurvetype/inversecubed.md)
   A curve that increases at a rate of one divided by the input’s cube.
-- [PHASECurveType.sine](phasecurvetype/sine.md)
+- [PHASECurveType.sine](./phasecurvetype/sine.md)
   A sine curve.
-- [PHASECurveType.inverseSine](phasecurvetype/inversesine.md)
+- [PHASECurveType.inverseSine](./phasecurvetype/inversesine.md)
   An inverse sine curve.
-- [PHASECurveType.sigmoid](phasecurvetype/sigmoid.md)
+- [PHASECurveType.sigmoid](./phasecurvetype/sigmoid.md)
   A sigmoid curve.
-- [PHASECurveType.inverseSigmoid](phasecurvetype/inversesigmoid.md)
+- [PHASECurveType.inverseSigmoid](./phasecurvetype/inversesigmoid.md)
   An inverse sigmoid curve.
-- [PHASECurveType.holdStartValue](phasecurvetype/holdstartvalue.md)
+- [PHASECurveType.holdStartValue](./phasecurvetype/holdstartvalue.md)
   A curve that equals its start value for the entire duration.
-- [PHASECurveType.jumpToEndValue](phasecurvetype/jumptoendvalue.md)
+- [PHASECurveType.jumpToEndValue](./phasecurvetype/jumptoendvalue.md)
   A curve that equals its end value for the entire duration.
 ### Initializers
-- [init?(rawValue: Int)](phasecurvetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./phasecurvetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class PHASEEnvelope](phaseenvelope.md)
+### Dynamic Sound Control
+- [class PHASEEnvelope](./phaseenvelope.md)
   A collection of segments that connect to graph a complex curve over a linear input.
-- [class PHASEEnvelopeSegment](phaseenvelopesegment.md)
+- [class PHASEEnvelopeSegment](./phaseenvelopesegment.md)
   A curved portion of an envelope.
-- [class PHASENumericPair](phasenumericpair.md)
+- [class PHASENumericPair](./phasenumericpair.md)
   An ordered pair that defines a bounding box for an envelope.
-- [Playback Parameterization](playback-parameterization.md)
+- [Playback Parameterization](./playback-parameterization.md)
   Change the characteristics of in-flight audio by adjusting its properties at runtime.
 
 

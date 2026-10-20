@@ -1,7 +1,8 @@
 # inputImageFeatureName
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the feature value that Vision sets from the request handler.
 
@@ -19,13 +20,18 @@ The name of the feature value that Vision sets from the request handler.
 var inputImageFeatureName: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSString * inputImageFeatureName;
+```
+
 #### Discussion
 
-By default, Vision uses the first input found, but you can manually set that input to another [`featureName`](vncoremlfeaturevalueobservation/featurename.md) instead.
+By default, Vision uses the first input found, but you can manually set that input to another [`featureName`](../vncoremlfeaturevalueobservation/featurename.md) instead.
 
 ## See Also
 
-- [var featureProvider: (any MLFeatureProvider)?](vncoremlmodel/featureprovider.md)
+### Providing Features
+- [var featureProvider: (any MLFeatureProvider)?](./featureprovider.md)
   An optional object to support inputs outside Vision.
 
 

@@ -1,7 +1,8 @@
 # virama
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Diacritic virama marks in Brahmi-derived scripts.
 

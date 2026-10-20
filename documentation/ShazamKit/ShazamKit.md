@@ -1,7 +1,8 @@
 # ShazamKit
 
 **Framework**: ShazamKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Find information about a specific audio recording when a segment of it’s part of captured sound in the Shazam catalog or your custom catalog.
 
@@ -24,7 +25,7 @@ Searching for a match compares a *query signature*, which ShazamKit generates fo
 
 The figure below illustrates matching a query signature with the reference signature in the catalog. The information for a match includes the timecode in the reference recording that matches the start of the query.
 
-![A spectrogram that shows the signature match for a query signature at a specific point in time in a reference signature.](/images/com.apple.shazamkit/media-3807548@2x.png)
+![A spectrogram that shows the signature match for a query signature at a specific point in time in a reference signature.](https://developer.apple.com/tutorials/images/com.apple.shazamkit/media-3807548@2x.png)
 
 For example, the Shazam app converts the sound stream from a device’s microphone into a query signature and searches for a match in the Shazam music catalog. The match includes the metadata for the reference signature, such as the song title, artist name, and other details.
 
@@ -33,43 +34,43 @@ You can create a custom catalog with your own reference signatures and their ass
 ## Topics
 
 ### Match audio
-- [class SHSession](shsession.md)
+- [class SHSession](./shsession.md)
   An object that matches a specific audio recording when a segment of that recording is part of captured sound in the Shazam catalog or your custom catalog.
-- [class SHManagedSession](shmanagedsession.md)
+- [class SHManagedSession](./shmanagedsession.md)
   An object that records and matches a recording with captured sound in the Shazam catalog or your custom catalog.
-- [protocol SHSessionDelegate](shsessiondelegate.md)
+- [protocol SHSessionDelegate](./shsessiondelegate.md)
   Methods that the session calls with the result of a match request.
-- [class SHMatch](shmatch.md)
+- [class SHMatch](./shmatch.md)
   An object that represents the catalog media items that match a query.
-- [class SHMatchedMediaItem](shmatchedmediaitem.md)
+- [class SHMatchedMediaItem](./shmatchedmediaitem.md)
   An object that represents the metadata for a matched reference signature.
-- [class SHMediaItem](shmediaitem.md)
+- [class SHMediaItem](./shmediaitem.md)
   An object that represents the metadata for a reference signature.
 ### Create a signature from audio
-- [class SHSignature](shsignature.md)
+- [class SHSignature](./shsignature.md)
   An object that contains the opaque data and other information for a signature.
-- [class SHSignatureGenerator](shsignaturegenerator.md)
+- [class SHSignatureGenerator](./shsignaturegenerator.md)
   An object for converting audio data into a signature.
 ### Create a custom audio catalog
-- [Building a Custom Catalog and Matching Audio](building-a-custom-catalog-and-matching-audio.md)
+- [Building a Custom Catalog and Matching Audio](./building-a-custom-catalog-and-matching-audio.md)
   Display lesson content that’s synchronized to a learning video by matching the audio to a custom reference signature and associated metadata.
-- [ShazamKit Dance Finder with Managed Session](shazamkit-dance-finder-with-managed-session.md)
+- [ShazamKit Dance Finder with Managed Session](./shazamkit-dance-finder-with-managed-session.md)
   Find a video of dance moves for a specific song by matching the audio to a custom catalog, and show a history of recognized songs.
-- [class SHCustomCatalog](shcustomcatalog.md)
+- [class SHCustomCatalog](./shcustomcatalog.md)
   An object for storing the reference signatures for custom audio recordings and their associated metadata.
-- [class SHCatalog](shcatalog.md)
+- [class SHCatalog](./shcatalog.md)
   An abstract base class for storing reference signatures and their associated metadata.
 ### Update the user’s Shazam library
-- [class SHLibrary](shlibrary.md)
+- [class SHLibrary](./shlibrary.md)
   An object that represents a user’s synced Shazam library.
-- [class SHMediaLibrary](shmedialibrary.md)
+- [class SHMediaLibrary](./shmedialibrary.md)
   An object that represents the user’s Shazam library.
 ### Shazam errors
-- [struct SHError](sherror.md)
+- [struct SHError](./sherror.md)
   An error type that you create, or the system creates, to indicate problems with a catalog, match attempt, or signature, or when saving to a user’s Shazam library.
 ### Reference
-- [ShazamKit Enumerations](shazamkit-enumerations.md)
-- [ShazamKit Constants](shazamkit-constants.md)
+- [ShazamKit Enumerations](./shazamkit-enumerations.md)
+- [ShazamKit Constants](./shazamkit-constants.md)
 
 
 ---

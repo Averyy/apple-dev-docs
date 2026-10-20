@@ -1,7 +1,8 @@
 # kSecKeyEndDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type `CSSM_DATE`.  Latest date at which this key may be used.  If the value is all zeros or not present, no restriction applies.
 
@@ -12,6 +13,10 @@ Type `CSSM_DATE`.  Latest date at which this key may be used.  If the value is a
 
 ```swift
 var kSecKeyEndDate: Int32 { get }
+```
+
+```c
+kSecKeyEndDate
 ```
 
 

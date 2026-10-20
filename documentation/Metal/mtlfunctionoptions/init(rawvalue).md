@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new function options structure from a raw value.
 

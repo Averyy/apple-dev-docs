@@ -1,7 +1,8 @@
 # fields
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array of fields associated with the reset action.
 
@@ -19,13 +20,18 @@ Returns an array of fields associated with the reset action.
 var fields: [String]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * fields;
+```
+
 #### Return Value
 
-An array of `NSString` objects that corresponds to the `fieldNames` property of widget annotations (such as [`PDFAnnotationButtonWidget`](pdfannotationbuttonwidget.md)) on the PDF page. This method can return `NULL`.
+An array of `NSString` objects that corresponds to the `fieldNames` property of widget annotations (such as [`PDFAnnotationButtonWidget`](../pdfannotationbuttonwidget.md)) on the PDF page. This method can return `NULL`.
 
 ## See Also
 
-- [class PDFActionResetForm](pdfactionresetform.md)
+### Related Documentation
+- [class PDFActionResetForm](../pdfactionresetform.md)
   `PDFActionResetForm`, a subclass of `PDFAction`, defines methods for getting and clearing fields in a PDF form.
 
 

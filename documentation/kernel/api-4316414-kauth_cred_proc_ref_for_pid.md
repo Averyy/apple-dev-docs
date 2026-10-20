@@ -1,14 +1,15 @@
 # kauth_cred_proc_ref_for_pid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 kauth_cred_t kauth_cred_proc_ref_for_pid(pid_t pid);
 ```
 

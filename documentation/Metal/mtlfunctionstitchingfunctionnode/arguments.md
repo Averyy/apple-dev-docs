@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ordered list of the nodes that provide the function’s arguments.
 
@@ -19,15 +20,20 @@ An ordered list of the nodes that provide the function’s arguments.
 var arguments: [any MTLFunctionStitchingNode] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<id<MTLFunctionStitchingNode>> * arguments;
+```
+
 #### Discussion
 
 Each node’s output data types needs to match the input data type of the matching argument.
 
 ## See Also
 
-- [var name: String](mtlfunctionstitchingfunctionnode/name.md)
+### Configuring a function node
+- [var name: String](./name.md)
   The name of the function to call.
-- [var controlDependencies: [MTLFunctionStitchingFunctionNode]](mtlfunctionstitchingfunctionnode/controldependencies.md)
+- [var controlDependencies: [MTLFunctionStitchingFunctionNode]](./controldependencies.md)
   The list of nodes that need to execute before executing the node.
 
 

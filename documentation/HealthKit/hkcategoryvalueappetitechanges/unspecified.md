@@ -1,7 +1,8 @@
 # HKCategoryValueAppetiteChanges.unspecified
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified change in appetite.
 
@@ -19,13 +20,18 @@ An unspecified change in appetite.
 case unspecified
 ```
 
+```c
+HKCategoryValueAppetiteChangesUnspecified
+```
+
 ## See Also
 
-- [HKCategoryValueAppetiteChanges.decreased](hkcategoryvalueappetitechanges/decreased.md)
+### Appetite Changes
+- [HKCategoryValueAppetiteChanges.decreased](./decreased.md)
   The user’s appetite decreased.
-- [HKCategoryValueAppetiteChanges.increased](hkcategoryvalueappetitechanges/increased.md)
+- [HKCategoryValueAppetiteChanges.increased](./increased.md)
   The user’s appetite increased.
-- [HKCategoryValueAppetiteChanges.noChange](hkcategoryvalueappetitechanges/nochange.md)
+- [HKCategoryValueAppetiteChanges.noChange](./nochange.md)
   No change in the user’s appetite.
 
 

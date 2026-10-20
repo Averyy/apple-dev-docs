@@ -1,7 +1,8 @@
 # locale(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the relative date format style to use the specified locale.
 
@@ -30,15 +31,16 @@ A relative date format style with the provided locale.
 
 ## See Also
 
-- [var presentation: Date.RelativeFormatStyle.Presentation](date/relativeformatstyle/presentation-swift.property.md)
+### Modifying a Relative Date Format Style
+- [var presentation: Date.RelativeFormatStyle.Presentation](./presentation-swift.property.md)
   Specifies the style to use when describing a relative date, such as “1 day ago” or “yesterday”.
-- [var unitsStyle: Date.RelativeFormatStyle.UnitsStyle](date/relativeformatstyle/unitsstyle-swift.property.md)
+- [var unitsStyle: Date.RelativeFormatStyle.UnitsStyle](./unitsstyle-swift.property.md)
   The style to use when formatting the quantity or the name of the unit, such as “1 day ago” or “one day ago”.
-- [var calendar: Calendar](date/relativeformatstyle/calendar.md)
+- [var calendar: Calendar](./calendar.md)
   The calendar to use when formatting relative dates.
-- [var capitalizationContext: FormatStyleCapitalizationContext](date/relativeformatstyle/capitalizationcontext.md)
+- [var capitalizationContext: FormatStyleCapitalizationContext](./capitalizationcontext.md)
   The capitalization context to use when formatting the relative dates.
-- [var locale: Locale](date/relativeformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting the relative date.
 
 

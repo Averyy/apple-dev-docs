@@ -1,7 +1,8 @@
 # CSIdentityGetCertificate(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityGetCertificate(_ user: CSIdentity!) -> Unmanaged<SecCertificate>!
+```
+
+```c
+SecCertificateRef CSIdentityGetCertificate(CSIdentityRef user);
 ```
 
 

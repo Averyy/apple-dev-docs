@@ -1,7 +1,8 @@
 # maxRadius
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum distance respected for fetching points of interest from the center of the region.
 
@@ -18,6 +19,10 @@ The maximum distance respected for fetching points of interest from the center o
 
 ```swift
 class let maxRadius: CLLocationDistance
+```
+
+```c
+extern const CLLocationDistance MKPointsOfInterestRequestMaxRadius;
 ```
 
 

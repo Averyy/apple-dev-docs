@@ -1,7 +1,8 @@
 # universalLinksOnly
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 URLs must be universal links and have an app configured to open them.
 
@@ -18,9 +19,13 @@ URLs must be universal links and have an app configured to open them.
 static let universalLinksOnly: UIApplication.OpenExternalURLOptionsKey
 ```
 
+```c
+extern UIApplicationOpenExternalURLOptionsKey const UIApplicationOpenURLOptionUniversalLinksOnly;
+```
+
 #### Discussion
 
-When you include this key in the options dictionary of the [`open(_:options:completionHandler:)`](uiapplication/open(_:options:completionhandler:).md) method, the method opens the URL only if the URL is a valid universal link and there is an installed app capable of opening that URL. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a Boolean value.
+When you include this key in the options dictionary of the [`open(_:options:completionHandler:)`](../open%28_,options,completionhandler%29.md) method, the method opens the URL only if the URL is a valid universal link and there is an installed app capable of opening that URL. The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a Boolean value.
 
 
 ---

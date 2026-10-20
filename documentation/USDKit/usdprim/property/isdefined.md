@@ -1,7 +1,8 @@
 # isDefined
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this property has a defining specification on the stage.
 

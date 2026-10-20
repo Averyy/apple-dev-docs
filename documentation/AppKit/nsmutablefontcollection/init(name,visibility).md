@@ -1,7 +1,8 @@
 # init(name:visibility:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mutable font collection with the specified name and font visibility.
 
@@ -12,6 +13,10 @@ Creates a mutable font collection with the specified name and font visibility.
 
 ```swift
 init?(name: NSFontCollection.Name, visibility: NSFontCollection.Visibility)
+```
+
+```objc
++ (NSMutableFontCollection *) fontCollectionWithName:(NSFontCollectionName) name visibility:(NSFontCollectionVisibility) visibility;
 ```
 
 #### Return Value
@@ -25,13 +30,14 @@ A mutable font collection object.
 
 ## See Also
 
-- [init(descriptors: [NSFontDescriptor])](nsmutablefontcollection/init(descriptors:).md)
+### Creating a Font Collection
+- [init(descriptors: [NSFontDescriptor])](./init%28descriptors%29.md)
   Creates a mutable font collection containing the fonts that match the specified font descriptors.
-- [init(locale: Locale)](nsmutablefontcollection/init(locale:).md)
+- [init(locale: Locale)](./init%28locale%29.md)
   Creates a mutable font collection containing fonts suitable for the specified locale.
-- [init?(name: NSFontCollection.Name)](nsmutablefontcollection/init(name:).md)
+- [init?(name: NSFontCollection.Name)](./init%28name%29.md)
   Creates a mutable named font collection object.
-- [class var withAllAvailableDescriptors: NSMutableFontCollection](nsmutablefontcollection/withallavailabledescriptors.md)
+- [class var withAllAvailableDescriptors: NSMutableFontCollection](./withallavailabledescriptors.md)
   The mutable font collection that matches all registered fonts.
 
 

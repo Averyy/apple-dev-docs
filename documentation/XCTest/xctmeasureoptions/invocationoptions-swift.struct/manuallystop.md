@@ -1,7 +1,8 @@
 # manuallyStop
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An invocation option that specifies that the test stops taking measurements when the `stopMeasuring()` function is called.
 
@@ -11,9 +12,14 @@ An invocation option that specifies that the test stops taking measurements when
 static var manuallyStop: XCTMeasureOptions.InvocationOptions { get }
 ```
 
+```c
+XCTMeasurementInvocationManuallyStop
+```
+
 ## See Also
 
-- [static var manuallyStart: XCTMeasureOptions.InvocationOptions](xctmeasureoptions/invocationoptions-swift.struct/manuallystart.md)
+### Measurement Options
+- [static var manuallyStart: XCTMeasureOptions.InvocationOptions](./manuallystart.md)
   An invocation option that specifies that the test starts taking measurements when the `startMeasuring()` function is called.
 
 

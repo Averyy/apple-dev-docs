@@ -1,7 +1,8 @@
 # stackedItemWidth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of stacked items in the tab bar.
 
@@ -18,17 +19,22 @@ The width of stacked items in the tab bar.
 var stackedItemWidth: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) CGFloat stackedItemWidth;
+```
+
 #### Discussion
 
-When the [`stackedItemPositioning`](uitabbarappearance/stackeditempositioning.md) property is set to [`UITabBar.ItemPositioning.centered`](uitabbar/itempositioning-swift.enum/centered.md), UIKit uses this property to set the width of each item. The default value of this property is `0`, which causes UIKit to use a system-defined width for items. For any values above `0`, UIKit uses the specified width, which is measured in points. If you try to assign a negative number to this property, UIKit sets the value to `0` instead.
+When the [`stackedItemPositioning`](./stackeditempositioning.md) property is set to [`UITabBar.ItemPositioning.centered`](../uitabbar/itempositioning-swift.enum/centered.md), UIKit uses this property to set the width of each item. The default value of this property is `0`, which causes UIKit to use a system-defined width for items. For any values above `0`, UIKit uses the specified width, which is measured in points. If you try to assign a negative number to this property, UIKit sets the value to `0` instead.
 
 ## See Also
 
-- [var stackedLayoutAppearance: UITabBarItemAppearance](uitabbarappearance/stackedlayoutappearance.md)
+### Configuring stacked item appearances
+- [var stackedLayoutAppearance: UITabBarItemAppearance](./stackedlayoutappearance.md)
   The appearance attributes for items with a stacked layout.
-- [var stackedItemPositioning: UITabBar.ItemPositioning](uitabbarappearance/stackeditempositioning.md)
+- [var stackedItemPositioning: UITabBar.ItemPositioning](./stackeditempositioning.md)
   The scheme to use when positioning stacked items within the tab bar.
-- [var stackedItemSpacing: CGFloat](uitabbarappearance/stackeditemspacing.md)
+- [var stackedItemSpacing: CGFloat](./stackeditemspacing.md)
   The amount of space to insert between stacked tab bar items.
 
 

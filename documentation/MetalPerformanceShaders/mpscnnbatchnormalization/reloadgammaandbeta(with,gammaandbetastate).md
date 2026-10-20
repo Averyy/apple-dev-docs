@@ -1,7 +1,8 @@
 # reloadGammaAndBeta(with:gammaAndBetaState:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func reloadGammaAndBeta(with commandBuffer: any MTLCommandBuffer, gammaAndBetaState: MPSCNNNormalizationGammaAndBetaState)
+```
+
+```objc
+- (void) reloadGammaAndBetaWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer gammaAndBetaState:(MPSCNNNormalizationGammaAndBetaState *) gammaAndBetaState;
 ```
 
 

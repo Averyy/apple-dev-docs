@@ -1,7 +1,8 @@
 # stopPathfind()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels any in-progress pathfinds.
 
@@ -21,9 +22,10 @@ func stopPathfind()
 
 ## See Also
 
-- [func requestPath(to: SIMD3<Float>)](navigationcontroller/requestpath(to:).md)
+### Requesting pathfinding
+- [func requestPath(to: SIMD3<Float>)](./requestpath%28to%29.md)
   Requests a pathfind from the owning entity’s position to the target position.
-- [func requestPath(from: SIMD3<Float>, to: SIMD3<Float>)](navigationcontroller/requestpath(from:to:).md)
+- [func requestPath(from: SIMD3<Float>, to: SIMD3<Float>)](./requestpath%28from,to%29.md)
   Requests a pathfind from a given position to the target position.
 
 

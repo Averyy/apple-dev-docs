@@ -1,18 +1,19 @@
 # AVAudioApplication.MicrophoneInjectionPermission
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate an app’s permission to add audio to calls.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,35 +21,40 @@ Constants that indicate an app’s permission to add audio to calls.
 enum MicrophoneInjectionPermission
 ```
 
+```c
+enum AVAudioApplicationMicrophoneInjectionPermission : NSInteger;
+```
+
 ## Topics
 
 ### Checking permission states
-- [AVAudioApplication.MicrophoneInjectionPermission.serviceDisabled](avaudioapplication/microphoneinjectionpermission-swift.enum/servicedisabled.md)
+- [AVAudioApplication.MicrophoneInjectionPermission.serviceDisabled](./microphoneinjectionpermission-swift.enum/servicedisabled.md)
   A person disables this service for all apps.
-- [AVAudioApplication.MicrophoneInjectionPermission.undetermined](avaudioapplication/microphoneinjectionpermission-swift.enum/undetermined.md)
+- [AVAudioApplication.MicrophoneInjectionPermission.undetermined](./microphoneinjectionpermission-swift.enum/undetermined.md)
   The app hasn’t requested a person’s permission to add audio to calls.
-- [AVAudioApplication.MicrophoneInjectionPermission.granted](avaudioapplication/microphoneinjectionpermission-swift.enum/granted.md)
+- [AVAudioApplication.MicrophoneInjectionPermission.granted](./microphoneinjectionpermission-swift.enum/granted.md)
   A person grants the app permission to add audio to calls.
-- [AVAudioApplication.MicrophoneInjectionPermission.denied](avaudioapplication/microphoneinjectionpermission-swift.enum/denied.md)
+- [AVAudioApplication.MicrophoneInjectionPermission.denied](./microphoneinjectionpermission-swift.enum/denied.md)
   A person denies the app permission to add audio to calls.
 ### Creating a permission state
-- [init?(rawValue: Int)](avaudioapplication/microphoneinjectionpermission-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./microphoneinjectionpermission-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func requestMicrophoneInjectionPermission(completionHandler: (AVAudioApplication.MicrophoneInjectionPermission) -> Void)](avaudioapplication/requestmicrophoneinjectionpermission(completionhandler:).md)
+### Managing microphone injection permission
+- [class func requestMicrophoneInjectionPermission(completionHandler: (AVAudioApplication.MicrophoneInjectionPermission) -> Void)](./requestmicrophoneinjectionpermission%28completionhandler%29.md)
   Requests the app’s permission to add audio to calls.
-- [var microphoneInjectionPermission: AVAudioApplication.MicrophoneInjectionPermission](avaudioapplication/microphoneinjectionpermission-swift.property.md)
+- [var microphoneInjectionPermission: AVAudioApplication.MicrophoneInjectionPermission](./microphoneinjectionpermission-swift.property.md)
   A value that indicates an app’s permission to add audio to calls.
 
 

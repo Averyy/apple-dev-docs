@@ -1,7 +1,8 @@
 # SKStoreProductViewControllerDelegate
 
 **Framework**: StoreKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol to call when the customer dismisses the store screen.
 
@@ -17,6 +18,10 @@ A protocol to call when the customer dismisses the store screen.
 protocol SKStoreProductViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SKStoreProductViewControllerDelegate <NSObject>
+```
+
 #### Overview
 
 Typically, this protocol is implemented by the view controller in your application that originally displayed the store screen.
@@ -24,17 +29,18 @@ Typically, this protocol is implemented by the view controller in your applicati
 ## Topics
 
 ### Responding to a Dismiss Action
-- [func productViewControllerDidFinish(SKStoreProductViewController)](skstoreproductviewcontrollerdelegate/productviewcontrollerdidfinish(_:).md)
+- [func productViewControllerDidFinish(SKStoreProductViewController)](./skstoreproductviewcontrollerdelegate/productviewcontrollerdidfinish%28_%29.md)
   Called when the user dismisses the store screen.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any SKStoreProductViewControllerDelegate)?](skstoreproductviewcontroller/delegate.md)
+### Setting a delegate
+- [var delegate: (any SKStoreProductViewControllerDelegate)?](./skstoreproductviewcontroller/delegate.md)
   The store view controller’s delegate.
 
 

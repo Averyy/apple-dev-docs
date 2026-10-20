@@ -1,7 +1,8 @@
 # nextAvailableInputBus
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unused input bus.
 
@@ -17,6 +18,10 @@ An unused input bus.
 
 ```swift
 var nextAvailableInputBus: AVAudioNodeBus { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVAudioNodeBus nextAvailableInputBus;
 ```
 
 #### Discussion

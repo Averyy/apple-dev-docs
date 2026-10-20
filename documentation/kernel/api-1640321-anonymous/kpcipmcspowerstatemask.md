@@ -1,14 +1,15 @@
 # kPCIPMCSPowerStateMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kPCIPMCSPowerStateMask = 0x0003
 ```
 

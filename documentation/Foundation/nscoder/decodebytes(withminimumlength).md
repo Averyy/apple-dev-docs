@@ -1,7 +1,8 @@
 # decodeBytes(withMinimumLength:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decode bytes from the decoder. The length of the bytes must be greater than or equal to the `length` parameter. If the result exists, but is of insufficient length, then the decoder uses `failWithError` to fail the entire decode operation. The result of that is configurable on a per-NSCoder basis using `NSDecodingFailurePolicy`.
 
@@ -18,6 +19,10 @@ Decode bytes from the decoder. The length of the bytes must be greater than or e
 
 ```swift
 func decodeBytes(withMinimumLength length: Int) -> UnsafeMutableRawPointer?
+```
+
+```objc
+- (void *) decodeBytesWithMinimumLength:(NSUInteger) length;
 ```
 
 

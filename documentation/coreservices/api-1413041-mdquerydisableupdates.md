@@ -1,7 +1,8 @@
 # MDQueryDisableUpdates(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Disables updates to the query result list.
 
@@ -14,6 +15,10 @@ Disables updates to the query result list.
 func MDQueryDisableUpdates(_ query: MDQuery!)
 ```
 
+```c
+void MDQueryDisableUpdates(MDQueryRef query);
+```
+
 #### Discussion
 
 This function should be called before iterating over query results that could change due to live-updates. The disabled state is a counter and disabling can be done recursively and from different threads.
@@ -24,13 +29,14 @@ This function should be called before iterating over query results that could ch
 
 ## See Also
 
-- [func MDQueryExecute(MDQuery!, CFOptionFlags) -> Bool](1413099-mdqueryexecute.md)
+### Starting, Stopping and Pausing Queries
+- [func MDQueryExecute(MDQuery!, CFOptionFlags) -> Bool](./api-1413099-mdqueryexecute.md)
   Run the query, and populate the query with the results. 
-- [func MDQueryStop(MDQuery!)](1413077-mdquerystop.md)
+- [func MDQueryStop(MDQuery!)](./api-1413077-mdquerystop.md)
   Stops the query from generating more results. 
-- [func MDQueryEnableUpdates(MDQuery!)](1413066-mdqueryenableupdates.md)
+- [func MDQueryEnableUpdates(MDQuery!)](./api-1413066-mdqueryenableupdates.md)
   Enables updates to the query result list.
-- [func MDQueryIsGatheringComplete(MDQuery!) -> Bool](1413032-mdqueryisgatheringcomplete.md)
+- [func MDQueryIsGatheringComplete(MDQuery!) -> Bool](./api-1413032-mdqueryisgatheringcomplete.md)
   Returns true if the first phase of a query, the initial result gathering, has finished.
 
 

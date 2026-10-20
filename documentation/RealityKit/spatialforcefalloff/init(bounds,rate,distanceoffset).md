@@ -1,7 +1,8 @@
 # init(bounds:rate:distanceOffset:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a spatial force falloff.
 

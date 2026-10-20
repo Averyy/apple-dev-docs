@@ -1,7 +1,8 @@
 # indicator
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the indicator that appears on the button.
 
@@ -10,7 +11,7 @@ The style of the indicator that appears on the button.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var indicator: UIButton.Configuration.Indicator { get set }
 
 #### Discussion
 
-Use this property to control the style of the indicator that appears on the trailing edge of the button. For example, the following code disables the indicator by setting this style to [`UIButton.Configuration.Indicator.none`](uibutton/configuration-swift.struct/indicator-swift.enum/none.md).
+Use this property to control the style of the indicator that appears on the trailing edge of the button. For example, the following code disables the indicator by setting this style to [`UIButton.Configuration.Indicator.none`](./indicator-swift.enum/none.md).
 
 ```swift
 var config = UIButton.Configuration.filled()
@@ -29,9 +30,10 @@ config.indicator = .none
 
 ## See Also
 
-- [UIButton.Configuration.Indicator](uibutton/configuration-swift.struct/indicator-swift.enum.md)
+### Configuring the indicator
+- [UIButton.Configuration.Indicator](./indicator-swift.enum.md)
   Constants that determine the style of the indicator that appears on a button.
-- [var indicatorColorTransformer: UIConfigurationColorTransformer?](uibutton/configuration-swift.struct/indicatorcolortransformer.md)
+- [var indicatorColorTransformer: UIConfigurationColorTransformer?](./indicatorcolortransformer.md)
   The color transformer for resolving the indicator color.
 
 

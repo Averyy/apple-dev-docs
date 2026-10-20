@@ -1,7 +1,8 @@
 # compileSymbolVisibility
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -15,6 +16,10 @@
 
 ```swift
 var compileSymbolVisibility: MTLCompileSymbolVisibility { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLCompileSymbolVisibility compileSymbolVisibility;
 ```
 
 

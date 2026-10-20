@@ -1,7 +1,8 @@
 # recognizedPoints(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the recognized points associated with the joint group name.
 
@@ -19,9 +20,13 @@ Retrieves the recognized points associated with the joint group name.
 func recognizedPoints(_ jointsGroupName: VNHumanBodyPoseObservation.JointsGroupName) throws -> [VNHumanBodyPoseObservation.JointName : VNRecognizedPoint]
 ```
 
+```objc
+- (NSDictionary<NSString *,VNRecognizedPoint *> *) recognizedPointsForJointsGroupName:(VNHumanBodyPoseObservationJointsGroupName) jointsGroupName error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+- [Detecting Human Body Poses in Images](../detecting-human-body-poses-in-images.md)
 
 #### Return Value
 
@@ -33,15 +38,16 @@ The array of points associated with the joint group name.
 
 ## See Also
 
-- [var availableJointNames: [VNHumanBodyPoseObservation.JointName]](vnhumanbodyposeobservation/availablejointnames.md)
+### Accessing Points
+- [var availableJointNames: [VNHumanBodyPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname.md)
+- [VNHumanBodyPoseObservation.JointName](./jointname.md)
   The supported joint names for the body pose.
-- [var availableJointsGroupNames: [VNHumanBodyPoseObservation.JointsGroupName]](vnhumanbodyposeobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanBodyPoseObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The available joint group names in the observation.
-- [VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname.md)
+- [VNHumanBodyPoseObservation.JointsGroupName](./jointsgroupname.md)
   The supported joint group names for the body pose.
-- [func recognizedPoint(VNHumanBodyPoseObservation.JointName) throws -> VNRecognizedPoint](vnhumanbodyposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNHumanBodyPoseObservation.JointName) throws -> VNRecognizedPoint](./recognizedpoint%28_%29.md)
   Retrieves the recognized point for a joint name.
 
 

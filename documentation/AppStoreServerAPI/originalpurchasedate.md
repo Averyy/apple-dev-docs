@@ -1,7 +1,8 @@
 # originalPurchaseDate
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The purchase date of the transaction associated with the original transaction identifier.
 
@@ -10,7 +11,7 @@ The purchase date of the transaction associated with the original transaction id
 
 ## Declaration
 
-```swift
+```
 timestamp originalPurchaseDate
 ```
 
@@ -20,9 +21,10 @@ The original purchase date is in UNIX time, in milliseconds.
 
 ## See Also
 
-- [type purchaseDate](purchasedate.md)
+### Product purchase dates
+- [type purchaseDate](./purchasedate.md)
   The time that the App Store charged the customer’s account for an In-App Purchase, a restored In-App Purchase, a subscription, or a subscription renewal after a lapse.
-- [type recentSubscriptionStartDate](recentsubscriptionstartdate.md)
+- [type recentSubscriptionStartDate](./recentsubscriptionstartdate.md)
   The earliest start date of a subscription in a series of auto-renewable subscription purchases that ignores all lapses of paid service shorter than 60 days.
 
 

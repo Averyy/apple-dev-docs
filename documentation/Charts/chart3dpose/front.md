@@ -1,7 +1,8 @@
 # front
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A pose to view a 3D Chart from the front.
 

@@ -1,14 +1,15 @@
 # kHIDUsage_PD_BadCount
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PD_BadCount = 0x38
 ```
 

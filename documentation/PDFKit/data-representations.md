@@ -1,26 +1,28 @@
 # Data Representations
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: API Collection
 
 Operations to represent PDF documents as data objects.
 
 ## Topics
 
 ### Creating Data Representations
-- [func dataRepresentation() -> Data?](pdfdocument/datarepresentation.md)
+- [func dataRepresentation() -> Data?](./pdfdocument/datarepresentation%28%29.md)
   Returns a representation of the document as an `NSData` object.
-- [func dataRepresentation(options: [AnyHashable : Any]) -> Data?](pdfdocument/datarepresentation(options:).md)
+- [func dataRepresentation(options: [AnyHashable : Any]) -> Data?](./pdfdocument/datarepresentation%28options%29.md)
   Returns a representation of the document as an `NSData` object with additional options applied, such as filters.
 
 ## See Also
 
-- [func write(toFile: String) -> Bool](pdfdocument/write(tofile:).md)
+### Writing Out the PDF Data
+- [func write(toFile: String) -> Bool](./pdfdocument/write%28tofile%29.md)
   Writes the document to a file at the specified path.
-- [func write(toFile: String, withOptions: [PDFDocumentWriteOption : Any]?) -> Bool](pdfdocument/write(tofile:withoptions:).md)
+- [func write(toFile: String, withOptions: [PDFDocumentWriteOption : Any]?) -> Bool](./pdfdocument/write%28tofile,withoptions%29.md)
   Writes the document to a file at the specified path with the specified options.
-- [func write(to: URL) -> Bool](pdfdocument/write(to:).md)
+- [func write(to: URL) -> Bool](./pdfdocument/write%28to%29.md)
   Writes the document to a location specified by the passed-in URL.
-- [func write(to: URL, withOptions: [PDFDocumentWriteOption : Any]?) -> Bool](pdfdocument/write(to:withoptions:).md)
+- [func write(to: URL, withOptions: [PDFDocumentWriteOption : Any]?) -> Bool](./pdfdocument/write%28to,withoptions%29.md)
   Writes the document to the specified URL with the specified options.
 
 

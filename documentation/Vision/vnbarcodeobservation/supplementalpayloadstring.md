@@ -1,7 +1,8 @@
 # supplementalPayloadString
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supplemental code decoded as a string value.
 
@@ -19,16 +20,21 @@ The supplemental code decoded as a string value.
 var supplementalPayloadString: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * supplementalPayloadString;
+```
+
 ## See Also
 
-- [var payloadStringValue: String?](vnbarcodeobservation/payloadstringvalue.md)
+### Parsing the Payload
+- [var payloadStringValue: String?](./payloadstringvalue.md)
   A string value that represents the barcode payload.
-- [var payloadData: Data?](vnbarcodeobservation/payloaddata.md)
+- [var payloadData: Data?](./payloaddata.md)
   The raw data representation of the barcode’s payload.
-- [var supplementalPayloadData: Data?](vnbarcodeobservation/supplementalpayloaddata.md)
-- [var supplementalCompositeType: VNBarcodeCompositeType](vnbarcodeobservation/supplementalcompositetype.md)
+- [var supplementalPayloadData: Data?](./supplementalpayloaddata.md)
+- [var supplementalCompositeType: VNBarcodeCompositeType](./supplementalcompositetype.md)
   The supplemental composite type.
-- [var isGS1DataCarrier: Bool](vnbarcodeobservation/isgs1datacarrier.md)
+- [var isGS1DataCarrier: Bool](./isgs1datacarrier.md)
   A Boolean value that indicates whether the barcode carries any global standards data.
 
 

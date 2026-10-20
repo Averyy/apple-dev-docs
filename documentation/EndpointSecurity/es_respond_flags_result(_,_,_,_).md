@@ -1,7 +1,8 @@
 # es_respond_flags_result(_:_:_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Responds to an event that requires authorization flags as a response.
 
@@ -14,13 +15,17 @@ Responds to an event that requires authorization flags as a response.
 func es_respond_flags_result(_ client: OpaquePointer, _ message: UnsafePointer<es_message_t>, _ authorized_flags: UInt32, _ cache: Bool) -> es_respond_result_t
 ```
 
+```c
+extern es_respond_result_t es_respond_flags_result(es_client_t *client, const es_message_t *message, uint32_t authorized_flags, bool cache);
+```
+
 #### Return Value
 
 A result that indicates whether the response succeeded or failed.
 
 #### Discussion
 
-Some events require you to respond with [`es_respond_auth_result(_:_:_:_:)`](es_respond_auth_result(_:_:_:_:).md). Responding to such events with this method instead fails with an error.
+Some events require you to respond with [`es_respond_auth_result(_:_:_:_:)`](./es_respond_auth_result%28_,_,_,_%29.md). Responding to such events with this method instead fails with an error.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ Some events require you to respond with [`es_respond_auth_result(_:_:_:_:)`](es_
 
 ## See Also
 
-- [func es_respond_auth_result(OpaquePointer, UnsafePointer<es_message_t>, es_auth_result_t, Bool) -> es_respond_result_t](es_respond_auth_result(_:_:_:_:).md)
+### Responding to Events
+- [func es_respond_auth_result(OpaquePointer, UnsafePointer<es_message_t>, es_auth_result_t, Bool) -> es_respond_result_t](./es_respond_auth_result%28_,_,_,_%29.md)
   Responds to an event that requires an authorization response.
-- [struct es_auth_result_t](es_auth_result_t.md)
+- [struct es_auth_result_t](./es_auth_result_t.md)
   Values used when responding to an authorization event.
-- [struct es_respond_result_t](es_respond_result_t.md)
+- [struct es_respond_result_t](./es_respond_result_t.md)
   Values that indicate the result of responding to a message.
 
 

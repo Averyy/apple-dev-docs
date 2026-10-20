@@ -1,7 +1,8 @@
 # VNTranslationalImageRegistrationRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the translational image registration request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the translational image registration req
 
 ```swift
 var VNTranslationalImageRegistrationRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNTranslationalImageRegistrationRequestRevision1;
 ```
 
 #### Discussion

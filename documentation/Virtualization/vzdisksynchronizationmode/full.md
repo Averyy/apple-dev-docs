@@ -1,7 +1,8 @@
 # VZDiskSynchronizationMode.full
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Perform all synchronization operations as requested by the guest OS.
 
@@ -14,13 +15,18 @@ Perform all synchronization operations as requested by the guest OS.
 case full
 ```
 
+```c
+VZDiskSynchronizationModeFull
+```
+
 #### Discussion
 
 Using this mode, `flush` and `barrier` commands from the guest result in the system sending their counterpart synchronization commands to the underlying disk implementation.
 
 ## See Also
 
-- [VZDiskSynchronizationMode.none](vzdisksynchronizationmode/none.md)
+### Synchronization modes
+- [VZDiskSynchronizationMode.none](./none.md)
   Don’t synchronize the data with the permanent storage.
 
 

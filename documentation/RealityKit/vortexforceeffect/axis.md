@@ -1,7 +1,8 @@
 # axis
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vortex’s rotational axis centered at the origin of the effect.
 

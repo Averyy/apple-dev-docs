@@ -1,7 +1,8 @@
 # adjustedRange(from:forEditingTextSelection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the text range, if any, in the backing store that required manual adjustment after editing.
 
@@ -16,6 +17,10 @@ Returns the text range, if any, in the backing store that required manual adjust
 
 ```swift
 func adjustedRange(from textRange: NSTextRange, forEditingTextSelection: Bool) -> NSTextRange?
+```
+
+```objc
+- (NSTextRange *) adjustedRangeFromRange:(NSTextRange *) textRange forEditingTextSelection:(BOOL) forEditingTextSelection;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ When `textRange` is intersecting or following the current edited range, the meth
 
 ## See Also
 
-- [func location(any NSTextLocation, offsetBy: Int) -> (any NSTextLocation)?](nstextcontentstorage/location(_:offsetby:).md)
+### Finding ranges, locations, and offsets
+- [func location(any NSTextLocation, offsetBy: Int) -> (any NSTextLocation)?](./location%28_,offsetby%29.md)
   Returns a new text location object based on an existing location and offset you provide.
-- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](nstextcontentstorage/offset(from:to:).md)
+- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](./offset%28from,to%29.md)
   Returns the number of characters between the specified locations.
 
 

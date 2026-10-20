@@ -1,7 +1,8 @@
 # NSNotFound
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -20,9 +21,10 @@ let NSNotFound: Int
 
 ## See Also
 
-- [class NSNull](nsnull.md)
+### Special Semantic Values
+- [class NSNull](./nsnull.md)
   A singleton object used to represent null values in collection objects that don’t allow `nil` values.
-- [var NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](./nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 

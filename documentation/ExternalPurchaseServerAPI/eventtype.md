@@ -1,7 +1,8 @@
 # eventType
 
 **Framework**: External Purchase Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The type of transaction the line item reports, whether it’s a buy or refund.
 
@@ -10,30 +11,36 @@ The type of transaction the line item reports, whether it’s a buy or refund.
 
 ## Declaration
 
-```swift
+```
 string eventType
 ```
 
+## Possible Values
+
+- `BUY`
+- `REFUND`
+
 ## Mentions
 
-- [Reporting tokens with transactions](reportwithtransactions.md)
+- [Reporting tokens with transactions](./reportwithtransactions.md)
 
 #### Discussion
 
 Allowed values: `BUY`, `REFUND`
 
-The `eventType` field describes the type of transaction of the line item. Specify an `eventType` in the line item objects [`OneTimeBuyLineItem`](onetimebuylineitem.md), [`SubscriptionBuyLineItem`](subscriptionbuylineitem.md), and [`RefundLineItem`](refundlineitem.md).
+The `eventType` field describes the type of transaction of the line item. Specify an `eventType` in the line item objects [`OneTimeBuyLineItem`](./onetimebuylineitem.md), [`SubscriptionBuyLineItem`](./subscriptionbuylineitem.md), and [`RefundLineItem`](./refundlineitem.md).
 
 Use the `eventType` values as follows:
 
-- `BUY`: The line item describes a product purchase, such as a one-time buy, or a subscription event, including when there’s no charge, such as with a free trial. Use this value in the [`OneTimeBuyLineItem`](onetimebuylineitem.md) and [`SubscriptionBuyLineItem`](subscriptionbuylineitem.md) objects.
-- `REFUND`: The line item describes a refund or chargeback, up to the full amount of the `BUY` transaction in the [`referenceLineItemId`](referencelineitemid.md). Use this value in a [`RefundLineItem`](refundlineitem.md) object.
+- `BUY`: The line item describes a product purchase, such as a one-time buy, or a subscription event, including when there’s no charge, such as with a free trial. Use this value in the [`OneTimeBuyLineItem`](./onetimebuylineitem.md) and [`SubscriptionBuyLineItem`](./subscriptionbuylineitem.md) objects.
+- `REFUND`: The line item describes a refund or chargeback, up to the full amount of the `BUY` transaction in the [`referenceLineItemId`](./referencelineitemid.md). Use this value in a [`RefundLineItem`](./refundlineitem.md) object.
 
 ## See Also
 
-- [type creationDate](creationdate.md)
+### Providing transaction info
+- [type creationDate](./creationdate.md)
   The UNIX date, in milliseconds, that the customer authorized the transaction.
-- [type referenceLineItemId](referencelineitemid.md)
+- [type referenceLineItemId](./referencelineitemid.md)
   The line item identifier of another transaction, that the report  references.
 
 

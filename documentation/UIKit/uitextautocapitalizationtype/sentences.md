@@ -1,16 +1,17 @@
 # UITextAutocapitalizationType.sentences
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies automatic capitalization of the first letter of each sentence.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ Specifies automatic capitalization of the first letter of each sentence.
 case sentences
 ```
 
+```c
+UITextAutocapitalizationTypeSentences
+```
+
 ## See Also
 
-- [UITextAutocapitalizationType.none](uitextautocapitalizationtype/none.md)
+### Constants
+- [UITextAutocapitalizationType.none](./none.md)
   Specifies that there is no automatic text capitalization.
-- [UITextAutocapitalizationType.words](uitextautocapitalizationtype/words.md)
+- [UITextAutocapitalizationType.words](./words.md)
   Specifies automatic capitalization of the first letter of each word.
-- [UITextAutocapitalizationType.allCharacters](uitextautocapitalizationtype/allcharacters.md)
+- [UITextAutocapitalizationType.allCharacters](./allcharacters.md)
   Specifies automatic capitalization of all characters, such as for entry of two-character state abbreviations for the United States.
 
 

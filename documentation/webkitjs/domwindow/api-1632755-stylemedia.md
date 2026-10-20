@@ -1,7 +1,8 @@
 # styleMedia
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The style media object you use to make CSS media queries.
 
@@ -11,13 +12,13 @@ The style media object you use to make CSS media queries.
 
 ## Declaration
 
-```swift
+```
 readonly attribute StyleMedia styleMedia;
 ```
 
 #### Discussion
 
-Read [`StyleMedia`](stylemedia.md) for details.
+Read [`StyleMedia`](../stylemedia.md) for details.
 
 
 ---

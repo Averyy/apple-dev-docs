@@ -1,14 +1,15 @@
 # free
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 

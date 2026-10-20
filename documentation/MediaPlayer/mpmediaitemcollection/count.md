@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of media items in a collection.
 
@@ -17,17 +18,22 @@ The number of media items in a collection.
 var count: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger count;
+```
+
 #### Discussion
 
-In some cases, using this property is more efficient than fetching the [`items`](mpmediaitemcollection/items.md) array and asking for the count.
+In some cases, using this property is more efficient than fetching the [`items`](./items.md) array and asking for the count.
 
 ## See Also
 
-- [var items: [MPMediaItem]](mpmediaitemcollection/items.md)
+### Using a media item collection
+- [var items: [MPMediaItem]](./items.md)
   The media items in a media item collection.
-- [var representativeItem: MPMediaItem?](mpmediaitemcollection/representativeitem.md)
+- [var representativeItem: MPMediaItem?](./representativeitem.md)
   A media item whose properties are representative of the other media items in a collection.
-- [var mediaTypes: MPMediaType](mpmediaitemcollection/mediatypes.md)
+- [var mediaTypes: MPMediaType](./mediatypes.md)
   The types of the media items in a collection.
 
 

@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the calling bounding region.
 
@@ -10,17 +11,18 @@ Returns a copy of the calling bounding region.
 
 ## Declaration
 
-```swift
+```
 copy(): BoundingRegion;
 ```
 
 #### Return Value
 
-A [`BoundingRegion`](boundingregion.md) that is a copy of the calling bounding region.
+A [`BoundingRegion`](../boundingregion.md) that is a copy of the calling bounding region.
 
 ## See Also
 
-- [toCoordinateRegion()](boundingregion/tocoordinateregion.md)
+### Copying and converting regions
+- [toCoordinateRegion()](./tocoordinateregion.md)
   Returns the coordinate region that corresponds to the calling bounding region.
 
 

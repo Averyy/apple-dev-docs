@@ -7,9 +7,10 @@ The title of the warning.
 
 ## See Also
 
-- [message](result/1811962-message.md)
+### Working with Result Properties
+- [message](./api-1811962-message.md)
   A String describing the cause of a warning or fatal result.
-- [type](result/1811969-type.md)
+- [type](./api-1811969-type.md)
   The type of the result.
 
 

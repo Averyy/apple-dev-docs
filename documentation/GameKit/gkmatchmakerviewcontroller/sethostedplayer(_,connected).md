@@ -1,21 +1,28 @@
 # setHostedPlayer(_:connected:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a player’s status on the view to show that the player has connected or disconnected from your server.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- visionOS 1.0+
+- iOS 5.0+ - Deprecated in 8.0
+- iPadOS 5.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`setHostedPlayer(_:didConnect:)`](./sethostedplayer%28_,didconnect%29.md) method instead.
 
 ## Declaration
 
 ```swift
 func setHostedPlayer(_ playerID: String, connected: Bool)
+```
+
+```objc
+- (void) setHostedPlayer:(NSString *) playerID connected:(BOOL) connected;
 ```
 
 #### Discussion
@@ -29,9 +36,10 @@ When setting up a hosted match, each device needs to create a matchmaker view co
 
 ## See Also
 
-- [func setHostedPlayerReady(String)](gkmatchmakerviewcontroller/sethostedplayerready(_:).md)
+### Deprecated
+- [func setHostedPlayerReady(String)](./sethostedplayerready%28_%29.md)
   Informs the controller that a player has joined a hosted match.
-- [var defaultInvitationMessage: String?](gkmatchmakerviewcontroller/defaultinvitationmessage.md)
+- [var defaultInvitationMessage: String?](./defaultinvitationmessage.md)
   The default invitation message sent to a player.
 
 

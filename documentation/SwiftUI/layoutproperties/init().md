@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default set of properties.
 
@@ -22,7 +23,7 @@ init()
 
 #### Discussion
 
-Use a layout properties instance to provide information about a type that conforms to the [`Layout`](layout.md) protocol. For example, you can create a layout properties instance in your layout’s implementation of the [`layoutProperties`](layout/layoutproperties.md) method, and use it to indicate that the layout has a [`Axis.vertical`](axis/vertical.md) orientation:
+Use a layout properties instance to provide information about a type that conforms to the [`Layout`](../layout.md) protocol. For example, you can create a layout properties instance in your layout’s implementation of the [`layoutProperties`](../layout/layoutproperties.md) method, and use it to indicate that the layout has a [`Axis.vertical`](../axis/vertical.md) orientation:
 
 ```swift
 extension BasicVStack {

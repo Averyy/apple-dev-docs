@@ -1,7 +1,8 @@
 # invalidInterfaceOrientationException
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An exception that’s thrown if a view controller or the app returns an invalid set of supported interface orientations.
 
@@ -17,15 +18,20 @@ An exception that’s thrown if a view controller or the app returns an invalid 
 class let invalidInterfaceOrientationException: NSExceptionName
 ```
 
+```c
+extern NSExceptionName const UIApplicationInvalidInterfaceOrientationException;
+```
+
 #### Discussion
 
-This exception is thrown if a view controller or the app returns `0` instead of a valid set of supported interface orientation values. It is also thrown if the orientation returned by a view controller’s [`preferredInterfaceOrientationForPresentation`](uiviewcontroller/preferredinterfaceorientationforpresentation.md) method does not match one of the view controller’s supported orientations.
+This exception is thrown if a view controller or the app returns `0` instead of a valid set of supported interface orientation values. It is also thrown if the orientation returned by a view controller’s [`preferredInterfaceOrientationForPresentation`](../uiviewcontroller/preferredinterfaceorientationforpresentation.md) method does not match one of the view controller’s supported orientations.
 
 ## See Also
 
-- [enum UIInterfaceOrientation](uiinterfaceorientation.md)
+### Managing interface geometry
+- [enum UIInterfaceOrientation](../uiinterfaceorientation.md)
   Constants that specify the orientation of the app’s user interface.
-- [struct UIInterfaceOrientationMask](uiinterfaceorientationmask.md)
+- [struct UIInterfaceOrientationMask](../uiinterfaceorientationmask.md)
   Constants that specify a view controller’s supported interface orientations.
 
 

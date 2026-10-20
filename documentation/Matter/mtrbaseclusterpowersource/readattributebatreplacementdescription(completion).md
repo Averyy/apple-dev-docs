@@ -1,7 +1,8 @@
 # readAttributeBatReplacementDescription(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBatReplacementDescription(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBatReplacementDescription() async throws -> String
+```
+
+```objc
+- (void) readAttributeBatReplacementDescriptionWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

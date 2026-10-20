@@ -1,7 +1,8 @@
 # isZoomEnabled
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the user may zoom in and out on the map using pinch gestures or the zoom control.
 
@@ -10,22 +11,23 @@ A Boolean value that determines whether the user may zoom in and out on the map 
 
 ## Declaration
 
-```swift
+```
 get isZoomEnabled(): boolean;
 set isZoomEnabled(value: boolean);
 ```
 
 #### Discussion
 
-Pinch-to-zoom with a trackpad requires browser touch event support. You can zoom the map programmatically when zoom isn’t in an enabled state by changing the [`region`](map/region.md) or [`visibleMapRect`](map/visiblemaprect.md).
+Pinch-to-zoom with a trackpad requires browser touch event support. You can zoom the map programmatically when zoom isn’t in an enabled state by changing the [`region`](./region.md) or [`visibleMapRect`](./visiblemaprect.md).
 
 ## See Also
 
-- [isRotationAvailable](map/isrotationavailable.md)
+### Accessing interaction properties
+- [isRotationAvailable](./isrotationavailable.md)
   A Boolean value that indicates whether map rotation is available.
-- [isRotationEnabled](map/isrotationenabled.md)
+- [isRotationEnabled](./isrotationenabled.md)
   A Boolean value that determines whether the user may rotate the map using the compass control or a rotate gesture.
-- [isScrollEnabled](map/isscrollenabled.md)
+- [isScrollEnabled](./isscrollenabled.md)
   A Boolean value that determines whether the user can cause the map to scroll with a pointing device or with gestures on a touchscreen.
 
 

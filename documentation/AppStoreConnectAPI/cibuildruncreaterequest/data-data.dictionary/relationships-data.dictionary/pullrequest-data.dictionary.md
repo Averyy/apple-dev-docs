@@ -1,7 +1,8 @@
 # CiBuildRunCreateRequest.Data.Relationships.PullRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship to the Pull Requests resource you can set with the request that creates a Build Runs resource.
 
@@ -10,14 +11,14 @@ The relationship to the Pull Requests resource you can set with the request that
 
 ## Declaration
 
-```swift
+```
 object CiBuildRunCreateRequest.Data.Relationships.PullRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object CiBuildRunCreateRequest.Data.Relationships.PullRequest.Data](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary/pullrequest-data.dictionary/data-data.dictionary.md)
+- [object CiBuildRunCreateRequest.Data.Relationships.PullRequest.Data](./pullrequest-data.dictionary/data-data.dictionary.md)
   The type and ID of the Pull Requests resource that you’re relating with the Build Runs resource you’re creating.
 
 ## Properties
@@ -26,11 +27,12 @@ object CiBuildRunCreateRequest.Data.Relationships.PullRequest
 
 ## See Also
 
-- [object CiBuildRunCreateRequest.Data.Relationships.BuildRun](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary/buildrun-data.dictionary.md)
+### Objects
+- [object CiBuildRunCreateRequest.Data.Relationships.BuildRun](./buildrun-data.dictionary.md)
   The relationship to the Build Runs resource you can set with the request that creates a Build Runs resource.
-- [object CiBuildRunCreateRequest.Data.Relationships.SourceBranchOrTag](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary/sourcebranchortag-data.dictionary.md)
+- [object CiBuildRunCreateRequest.Data.Relationships.SourceBranchOrTag](./sourcebranchortag-data.dictionary.md)
   The relationship to the Git References resource that represents the source branch or tag you can set with the request that creates a Build Runs resource.
-- [object CiBuildRunCreateRequest.Data.Relationships.Workflow](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary/workflow-data.dictionary.md)
+- [object CiBuildRunCreateRequest.Data.Relationships.Workflow](./workflow-data.dictionary.md)
   The relationship to the Workflows resource you can set with the request that creates a Build Runs resource.
 
 

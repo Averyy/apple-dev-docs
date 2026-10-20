@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance data to apply to the button when it’s in the disabled state.
 
@@ -18,17 +19,22 @@ The appearance data to apply to the button when it’s in the disabled state.
 var disabled: UIBarButtonItemStateAppearance { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIBarButtonItemStateAppearance * disabled;
+```
+
 #### Discussion
 
 To set the attributes for this state, get the object in this property and modify it.
 
 ## See Also
 
-- [var normal: UIBarButtonItemStateAppearance](uibarbuttonitemappearance/normal.md)
+### Configuring attributes for different button states
+- [var normal: UIBarButtonItemStateAppearance](./normal.md)
   The appearance data to apply to the button when it’s in the normal state.
-- [var highlighted: UIBarButtonItemStateAppearance](uibarbuttonitemappearance/highlighted.md)
+- [var highlighted: UIBarButtonItemStateAppearance](./highlighted.md)
   The appearance data to apply to the button when it’s in the highlighted state.
-- [var focused: UIBarButtonItemStateAppearance](uibarbuttonitemappearance/focused.md)
+- [var focused: UIBarButtonItemStateAppearance](./focused.md)
   The appearance data to apply to the button when it’s focused.
 
 

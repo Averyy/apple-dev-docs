@@ -1,7 +1,8 @@
 # kCMTextMarkupAttribute_BackgroundColorARGB
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A background color for the text.
 
@@ -20,19 +21,24 @@ A background color for the text.
 let kCMTextMarkupAttribute_BackgroundColorARGB: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAttribute_BackgroundColorARGB;
+```
+
 #### Discussion
 
 This attribute’s value must be a `CFArray` of four `CFNumber`s representing alpha, red, green, and blue fields with values between `0.0` and `1.0`. The system interprets the red, green, and blue components in the sRGB color space. The alpha indicates the opacity from `0.0` for transparent to `1.0` for 100 percent opaque.
 
-The color applies to the geometry (for example, a box) containing the text. The container’s background color may have an alpha of `0` so the system doesn’t display it even though the system displays the text. You can optionally control the color behind individual characters with the [`kCMTextMarkupAttribute_CharacterBackgroundColorARGB`](kcmtextmarkupattribute_characterbackgroundcolorargb.md) attribute.
+The color applies to the geometry (for example, a box) containing the text. The container’s background color may have an alpha of `0` so the system doesn’t display it even though the system displays the text. You can optionally control the color behind individual characters with the [`kCMTextMarkupAttribute_CharacterBackgroundColorARGB`](./kcmtextmarkupattribute_characterbackgroundcolorargb.md) attribute.
 
 If you use this attribute, apply it to the entire attributed string.
 
 ## See Also
 
-- [let kCMTextMarkupAttribute_ForegroundColorARGB: CFString](kcmtextmarkupattribute_foregroundcolorargb.md)
+### Colors
+- [let kCMTextMarkupAttribute_ForegroundColorARGB: CFString](./kcmtextmarkupattribute_foregroundcolorargb.md)
   A foreground color for the text.
-- [let kCMTextMarkupAttribute_CharacterBackgroundColorARGB: CFString](kcmtextmarkupattribute_characterbackgroundcolorargb.md)
+- [let kCMTextMarkupAttribute_CharacterBackgroundColorARGB: CFString](./kcmtextmarkupattribute_characterbackgroundcolorargb.md)
   A background color for individual text characters.
 
 

@@ -1,7 +1,8 @@
 # mCommand
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 var mCommand: UnsafeMutablePointer<UInt8>!
+```
+
+```c
+UInt8 * mCommand;
 ```
 
 

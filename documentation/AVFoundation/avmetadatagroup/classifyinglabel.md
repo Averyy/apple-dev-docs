@@ -1,7 +1,8 @@
 # classifyingLabel
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classifying label associated with the metadata group.
 
@@ -20,15 +21,20 @@ The classifying label associated with the metadata group.
 var classifyingLabel: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * classifyingLabel;
+```
+
 #### Discussion
 
 The value of this property may be `nil` if no classifying label is defined for this group.
 
 ## See Also
 
-- [var items: [AVMetadataItem]](avmetadatagroup/items.md)
+### Inspecting the metadata group
+- [var items: [AVMetadataItem]](./items.md)
   The array of metadata items associated with the metadata group.
-- [var uniqueID: String?](avmetadatagroup/uniqueid.md)
+- [var uniqueID: String?](./uniqueid.md)
   The unique identifier for the metadata group.
 
 

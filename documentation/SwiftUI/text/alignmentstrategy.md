@@ -1,7 +1,8 @@
 # Text.AlignmentStrategy
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The way SwiftUI infers the appropriate text alignment if no value is explicitly provided.
 
@@ -22,25 +23,25 @@ struct AlignmentStrategy
 
 #### Overview
 
-> **Note**: [`Text`](text.md) tightly wraps its content, so text alignment only affects how lines are positioned relative to each other. The text as a whole needs to be positioned at the view level using [`Alignment`](alignment.md).
+> **Note**: [`Text`](../text.md) tightly wraps its content, so text alignment only affects how lines are positioned relative to each other. The text as a whole needs to be positioned at the view level using [`Alignment`](../alignment.md).
 
 ## Topics
 
 ### Type Properties
-- [static let `default`: Text.AlignmentStrategy](text/alignmentstrategy/default.md)
+- [static let `default`: Text.AlignmentStrategy](./alignmentstrategy/default.md)
   The default strategy based on the context it is used in.
-- [static let layoutBased: Text.AlignmentStrategy](text/alignmentstrategy/layoutbased.md)
+- [static let layoutBased: Text.AlignmentStrategy](./alignmentstrategy/layoutbased.md)
   The alignment following the environment setting.
-- [static let writingDirectionBased: Text.AlignmentStrategy](text/alignmentstrategy/writingdirectionbased.md)
+- [static let writingDirectionBased: Text.AlignmentStrategy](./alignmentstrategy/writingdirectionbased.md)
   The alignment following the writing direction of the same paragraph.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

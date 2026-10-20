@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a fully-connected network multi-label classifier model to a sequence of examples.
 
@@ -36,11 +37,12 @@ The training process partitions the input into random batches according to the b
 
 ## See Also
 
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label>](fullyconnectednetworkmultilabelclassifier/fitted(to:validateon:eventhandler:).md)
+### Fitting a classifier
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label>](./fitted%28to,validateon,eventhandler%29.md)
   Fits a fully-connected network multi-label classifier model to a sequence of examples.
-- [FullyConnectedNetworkMultiLabelClassifier.Annotation](fullyconnectednetworkmultilabelclassifier/annotation.md)
+- [FullyConnectedNetworkMultiLabelClassifier.Annotation](./annotation.md)
   The annotation type.
-- [FullyConnectedNetworkMultiLabelClassifier.Transformer](fullyconnectednetworkmultilabelclassifier/transformer.md)
+- [FullyConnectedNetworkMultiLabelClassifier.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

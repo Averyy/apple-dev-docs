@@ -1,7 +1,8 @@
 # NINearbyObject.RemovalReason
 
 **Framework**: Nearby Interaction  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reason a session removed a nearby object.
 
@@ -17,33 +18,37 @@ The reason a session removed a nearby object.
 enum RemovalReason
 ```
 
+```c
+enum NINearbyObjectRemovalReason : NSInteger;
+```
+
 #### Overview
 
-Each case is a possible value of the `reason` argument to the delegate’s [`session(_:didRemove:reason:)`](nisessiondelegate/session(_:didremove:reason:).md) callback.
+Each case is a possible value of the `reason` argument to the delegate’s [`session(_:didRemove:reason:)`](../nisessiondelegate/session%28_,didremove,reason%29.md) callback.
 
 ## Topics
 
 ### Reasons
-- [NINearbyObject.RemovalReason.peerEnded](ninearbyobject/removalreason/peerended.md)
+- [NINearbyObject.RemovalReason.peerEnded](./removalreason/peerended.md)
   The peer ended the session.
-- [NINearbyObject.RemovalReason.timeout](ninearbyobject/removalreason/timeout.md)
+- [NINearbyObject.RemovalReason.timeout](./removalreason/timeout.md)
   NI timed out the session.
-- [NINearbyObject.RemovalReason.peerEnded](ninearbyobject/removalreason/peerended.md)
+- [NINearbyObject.RemovalReason.peerEnded](./removalreason/peerended.md)
   The peer ended the session.
-- [NINearbyObject.RemovalReason.timeout](ninearbyobject/removalreason/timeout.md)
+- [NINearbyObject.RemovalReason.timeout](./removalreason/timeout.md)
   NI timed out the session.
 ### Initializers
-- [init?(rawValue: Int)](ninearbyobject/removalreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./removalreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

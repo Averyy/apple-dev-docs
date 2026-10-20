@@ -1,7 +1,8 @@
 # PlaygroundLiveViewRepresentation
 
 **Framework**: Playground Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The supported types for displaying for live views in playgrounds.
 
@@ -19,21 +20,22 @@ enum PlaygroundLiveViewRepresentation
 ## Topics
 
 ### Displaying UIKit Views
-- [PlaygroundLiveViewRepresentation.view(_:)](playgroundliveviewrepresentation/view.md)
+- [PlaygroundLiveViewRepresentation.view(_:)](./playgroundliveviewrepresentation/view.md)
   A UIKit view that's displayed as the live view.
-- [PlaygroundLiveViewRepresentation.viewController(_:)](playgroundliveviewrepresentation/viewcontroller.md)
+- [PlaygroundLiveViewRepresentation.viewController(_:)](./playgroundliveviewrepresentation/viewcontroller.md)
   A UIKit view controller whose view is displayed as the live view.
 ### Displaying AppKit Views
-- [PlaygroundLiveViewRepresentation.view(_:)](playgroundliveviewrepresentation/view-ues.md)
+- [PlaygroundLiveViewRepresentation.view(_:)](./playgroundliveviewrepresentation/view-ues.md)
   An AppKit view that's displayed as the live view.
-- [PlaygroundLiveViewRepresentation.viewController(_:)](playgroundliveviewrepresentation/viewcontroller-uej.md)
+- [PlaygroundLiveViewRepresentation.viewController(_:)](./playgroundliveviewrepresentation/viewcontroller-uej.md)
   An AppKit view controller whose view is displayed as the live view.
 
 ## See Also
 
-- [protocol PlaygroundLiveViewable](playgroundliveviewable.md)
+### Live Views
+- [protocol PlaygroundLiveViewable](./playgroundliveviewable.md)
   A protocol that displays an instance as a live view in a playground.
-- [protocol PlaygroundLiveViewSafeAreaContainer](playgroundliveviewsafeareacontainer.md)
+- [protocol PlaygroundLiveViewSafeAreaContainer](./playgroundliveviewsafeareacontainer.md)
   A protocol that ensures that views fit without obstruction within the Swift Playgrounds user interface.
 
 

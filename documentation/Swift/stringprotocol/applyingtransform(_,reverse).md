@@ -1,7 +1,8 @@
 # applyingTransform(_:reverse:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform string transliteration.
 

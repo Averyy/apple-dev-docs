@@ -1,7 +1,8 @@
 # init(strength:direction:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a constant force effect.
 

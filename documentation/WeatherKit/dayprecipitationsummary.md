@@ -1,7 +1,8 @@
 # DayPrecipitationSummary
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the precipitation summary for a day.
 
@@ -23,21 +24,21 @@ struct DayPrecipitationSummary
 ## Topics
 
 ### Instance Properties
-- [var date: Date](dayprecipitationsummary/date.md)
+- [var date: Date](./dayprecipitationsummary/date.md)
   The day of the observed precipitation summary
-- [var precipitationAmount: Measurement<UnitLength>](dayprecipitationsummary/precipitationamount.md)
+- [var precipitationAmount: Measurement<UnitLength>](./dayprecipitationsummary/precipitationamount.md)
   The amount of liquid precipitation for the day.
-- [var snowfallAmount: Measurement<UnitLength>](dayprecipitationsummary/snowfallamount.md)
+- [var snowfallAmount: Measurement<UnitLength>](./dayprecipitationsummary/snowfallamount.md)
   The snowfall amount as depth of snow crystals for the day.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

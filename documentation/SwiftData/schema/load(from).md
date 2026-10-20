@@ -1,7 +1,8 @@
 # load(from:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ static func load(from fromURL: URL) throws -> Schema
 
 ## See Also
 
-- [func save(to: URL) throws](schema/save(to:).md)
+### Saving and loading
+- [func save(to: URL) throws](./save%28to%29.md)
 
 
 ---

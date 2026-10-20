@@ -1,7 +1,8 @@
 # AVLegibleMediaOptionsMenuState
 
 **Framework**: AVKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 struct AVLegibleMediaOptionsMenuState
 ```
 
+```c
+typedef struct AVLegibleMediaOptionsMenuState { ... } AVLegibleMediaOptionsMenuState;
+```
+
 #### Overview
 
 A struct describing the state of the legible options menu.
@@ -23,24 +28,25 @@ A struct describing the state of the legible options menu.
 ## Topics
 
 ### Creating a menu state
-- [init()](avlegiblemediaoptionsmenustate/init.md)
-- [init(enabled: ObjCBool, reason: AVLegibleMediaOptionsMenuController.StateChangeReason)](avlegiblemediaoptionsmenustate/init(enabled:reason:).md)
+- [init()](./avlegiblemediaoptionsmenustate/init%28%29.md)
+- [init(enabled: ObjCBool, reason: AVLegibleMediaOptionsMenuController.StateChangeReason)](./avlegiblemediaoptionsmenustate/init%28enabled,reason%29.md)
 ### Inspecting the state
-- [var enabled: ObjCBool](avlegiblemediaoptionsmenustate/enabled.md)
+- [var enabled: ObjCBool](./avlegiblemediaoptionsmenustate/enabled.md)
   Whether or not the legible options menu is
-- [var reason: AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenustate/reason.md)
+- [var reason: AVLegibleMediaOptionsMenuController.StateChangeReason](./avlegiblemediaoptionsmenustate/reason.md)
   The reason for changing the menu state
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class AVLegibleMediaOptionsMenuController](avlegiblemediaoptionsmenucontroller.md)
-- [class AVContentSelectionViewController](avcontentselectionviewcontroller.md)
+### Media and content selection
+- [class AVLegibleMediaOptionsMenuController](./avlegiblemediaoptionsmenucontroller.md)
+- [class AVContentSelectionViewController](./avcontentselectionviewcontroller.md)
   A view controller for providing additional UI to the multiview experience.
 
 

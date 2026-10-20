@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 4x4 homogeneous transform matrix consisting of rotation and translation factors that maps the local camera device coordinate system position and orientation into the world coordinate space tagged by  `sessionID`.
 

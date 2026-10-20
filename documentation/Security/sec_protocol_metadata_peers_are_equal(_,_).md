@@ -1,7 +1,8 @@
 # sec_protocol_metadata_peers_are_equal(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_peers_are_equal(_ metadataA: sec_protocol_metadata_t, _ metadataB: sec_protocol_metadata_t) -> Bool
+```
+
+```c
+bool sec_protocol_metadata_peers_are_equal(sec_protocol_metadata_t metadataA, sec_protocol_metadata_t metadataB);
 ```
 
 #### Return Value

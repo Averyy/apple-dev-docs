@@ -1,22 +1,24 @@
 # CVBuffer Attachment Keys
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 The attachment types for a Core Video buffer.
 
 ## Topics
 
 ### Constants
-- [let kCVBufferMovieTimeKey: CFString](kcvbuffermovietimekey.md)
-  The movie time associated with the buffer. Generally only available for frames emitted by QuickTime (type `CFDictionary` containing the [`kCVBufferTimeValueKey`](kcvbuffertimevaluekey.md) and [`kCVBufferTimeScaleKey`](kcvbuffertimescalekey.md) keys).
-- [let kCVBufferTimeValueKey: CFString](kcvbuffertimevaluekey.md)
+- [let kCVBufferMovieTimeKey: CFString](./kcvbuffermovietimekey.md)
+  The movie time associated with the buffer. Generally only available for frames emitted by QuickTime (type `CFDictionary` containing the [`kCVBufferTimeValueKey`](./kcvbuffertimevaluekey.md) and [`kCVBufferTimeScaleKey`](./kcvbuffertimescalekey.md) keys).
+- [let kCVBufferTimeValueKey: CFString](./kcvbuffertimevaluekey.md)
   The time value associated with the movie.
-- [let kCVBufferTimeScaleKey: CFString](kcvbuffertimescalekey.md)
+- [let kCVBufferTimeScaleKey: CFString](./kcvbuffertimescalekey.md)
   The time scale associated with the movie.
 
 ## See Also
 
-- [CVBuffer Attribute Keys](cvbuffer-attribute-keys.md)
+### Constants
+- [CVBuffer Attribute Keys](./cvbuffer-attribute-keys.md)
   The attributes associated with Core Video buffers.
 
 

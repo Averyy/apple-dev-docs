@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets an entry in the table.
@@ -20,6 +21,10 @@ Sets an entry in the table.
 func setFunction(_ function: (any MTLFunctionHandle)?, index: Int)
 ```
 
+```objc
+- (void) setFunction:(id<MTLFunctionHandle>) function atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `function`: A function handle for the intersection function.
@@ -27,7 +32,8 @@ func setFunction(_ function: (any MTLFunctionHandle)?, index: Int)
 
 ## See Also
 
-- [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](mtlintersectionfunctiontable/setfunctions(_:range:).md)
+### Setting a table entry
+- [func setFunctions([(any MTLFunctionHandle)?], range: Range<Int>)](./setfunctions%28_,range%29.md)
   Sets a range of entries in the table.
 
 

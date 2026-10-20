@@ -1,18 +1,21 @@
 # appendingPathComponent(_:isDirectory:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL by appending the specified path component to self, specifying whether the resulting path is a directory.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 27.2
+- iPadOS 8.0+ - Deprecated in 27.2
+- Mac Catalyst 8.0+ - Deprecated in 27.2
+- macOS 10.10+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use appending(path:directoryHint:) instead
 
 ## Declaration
 
@@ -30,7 +33,7 @@ The URL syntax for a directory and for a file at otherwise the same location are
 
 This difference is particularly important if you resolve another URL against this new URL. For example, the path component `file.html` relative to `http://www.example.com/first/second` is `http://www.apple.com/first/file.html`, whereas relative to `http://www.example.com/first/second/`, it’s `http://www.example.com/first/second/file.html`.
 
-New code should use [`appending(path:directoryHint:)`](url/appending(path:directoryhint:).md) instead of this method.
+New code should use [`appending(path:directoryHint:)`](./appending%28path,directoryhint%29.md) instead of this method.
 
 ## Parameters
 
@@ -39,27 +42,28 @@ New code should use [`appending(path:directoryHint:)`](url/appending(path:direct
 
 ## See Also
 
-- [func append<S>(path: S, directoryHint: URL.DirectoryHint)](url/append(path:directoryhint:).md)
+### Adding path components
+- [func append<S>(path: S, directoryHint: URL.DirectoryHint)](./append%28path,directoryhint%29.md)
   Appends a path to the URL, with a hint for handling directory awareness.
-- [func append<S>(component: S, directoryHint: URL.DirectoryHint)](url/append(component:directoryhint:).md)
+- [func append<S>(component: S, directoryHint: URL.DirectoryHint)](./append%28component,directoryhint%29.md)
   Appends a path component to the URL, with a hint for handling directory awareness.
-- [func appendPathComponent(String)](url/appendpathcomponent(_:).md)
+- [func appendPathComponent(String)](./appendpathcomponent%28_%29.md)
   Appends a path component to the URL.
-- [func appendPathComponent(String, isDirectory: Bool)](url/appendpathcomponent(_:isdirectory:).md)
+- [func appendPathComponent(String, isDirectory: Bool)](./appendpathcomponent%28_,isdirectory%29.md)
   Appends a path component to the URL, specifying whether the resulting path is a directory.
-- [func appending<S>(path: S, directoryHint: URL.DirectoryHint) -> URL](url/appending(path:directoryhint:).md)
+- [func appending<S>(path: S, directoryHint: URL.DirectoryHint) -> URL](./appending%28path,directoryhint%29.md)
   Returns a URL by appending the specified path to the URL, with a hint for handling directory awareness.
-- [func appending<S>(component: S, directoryHint: URL.DirectoryHint) -> URL](url/appending(component:directoryhint:).md)
+- [func appending<S>(component: S, directoryHint: URL.DirectoryHint) -> URL](./appending%28component,directoryhint%29.md)
   Returns a URL by appending the specified path component to the URL, with a hint for handling directory awareness.
-- [func appendingPathComponent(String) -> URL](url/appendingpathcomponent(_:).md)
+- [func appendingPathComponent(String) -> URL](./appendingpathcomponent%28_%29.md)
   Returns a URL by appending the specified path component to self.
-- [func append<S>(components: S..., directoryHint: URL.DirectoryHint)](url/append(components:directoryhint:).md)
+- [func append<S>(components: S..., directoryHint: URL.DirectoryHint)](./append%28components,directoryhint%29.md)
   Appends multiple path components to the URL, with a hint for handling directory awareness.
-- [func appending<S>(components: S..., directoryHint: URL.DirectoryHint) -> URL](url/appending(components:directoryhint:).md)
+- [func appending<S>(components: S..., directoryHint: URL.DirectoryHint) -> URL](./appending%28components,directoryhint%29.md)
   Returns a new URL by appending multiple path components to the URL, with a hint for handling directory awareness.
-- [func appendPathComponent(String, conformingTo: UTType)](url/appendpathcomponent(_:conformingto:).md)
+- [func appendPathComponent(String, conformingTo: UTType)](./appendpathcomponent%28_,conformingto%29.md)
   Appends a path component to the URL that conforms to a uniform type identifier.
-- [func appendingPathComponent(String, conformingTo: UTType) -> URL](url/appendingpathcomponent(_:conformingto:).md)
+- [func appendingPathComponent(String, conformingTo: UTType) -> URL](./appendingpathcomponent%28_,conformingto%29.md)
   Returns a URL by appending the specified path component that conforms to a uniform type identifier.
 
 

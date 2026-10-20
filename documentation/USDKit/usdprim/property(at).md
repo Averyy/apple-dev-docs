@@ -1,7 +1,8 @@
 # property(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the property at a given path, relative to this prim.
 

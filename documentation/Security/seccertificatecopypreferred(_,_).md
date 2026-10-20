@@ -1,7 +1,8 @@
 # SecCertificateCopyPreferred(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the preferred certificate for the specified name and key usage.
 
@@ -14,18 +15,22 @@ Returns the preferred certificate for the specified name and key usage.
 func SecCertificateCopyPreferred(_ name: CFString, _ keyUsage: CFArray?) -> SecCertificate?
 ```
 
+```c
+SecCertificateRefSecCertificateCopyPreferred(CFStringRef name, CFArrayRef keyUsage);
+```
+
 #### Return Value
 
-The preferred certificate for the specified name and key usage, or `NULL` if a matching certificate does not exist. In Objective-C, free the certificate with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function when you are done with it.
+The preferred certificate for the specified name and key usage, or `NULL` if a matching certificate does not exist. In Objective-C, free the certificate with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) function when you are done with it.
 
 #### Discussion
 
-This function is typically used to obtain the preferred encryption certificate for an email recipient. If a preferred certificate has not been set for the supplied name, this function returns `NULL`. Your code should then perform a search for possible certificates by calling [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md).
+This function is typically used to obtain the preferred encryption certificate for an email recipient. If a preferred certificate has not been set for the supplied name, this function returns `NULL`. Your code should then perform a search for possible certificates by calling [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md).
 
 ## Parameters
 
 - `name`: A string containing an email address (RFC 822) or other name for which a preferred certificate is requested.
-- `keyUsage`: An array containing a list of usage attributes ([`kSecAttrCanEncrypt`](ksecattrcanencrypt.md), for example), or `NULL` if you do not want to request a certificate based on a particular usage. See Attribute Item Keys for a complete list of possible usage attributes.
+- `keyUsage`: An array containing a list of usage attributes ([`kSecAttrCanEncrypt`](./ksecattrcanencrypt.md), for example), or `NULL` if you do not want to request a certificate based on a particular usage. See Attribute Item Keys for a complete list of possible usage attributes.
 
 
 ---

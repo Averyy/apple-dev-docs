@@ -1,7 +1,8 @@
 # StatusDeviceOperatingSystemVersion
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s operating system version.
 
@@ -16,17 +17,17 @@ The status item that reports the device’s operating system version.
 
 ## Declaration
 
-```swift
+```
 object StatusDeviceOperatingSystemVersion
 ```
 
 ## Mentions
 
-- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ object StatusDeviceOperatingSystemVersion
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -55,31 +56,32 @@ object StatusDeviceOperatingSystemVersion
 
 ## See Also
 
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
+### Device property items
+- [object StatusDeviceBatteryHealth](./statusdevicebatteryhealth.md)
   The status item that reports the device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
+- [object StatusDeviceModelFamily](./statusdevicemodelfamily.md)
   The status item that reports the device’s hardware model family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
+- [object StatusDeviceModelIdentifier](./statusdevicemodelidentifier.md)
   The status item that reports the device’s hardware model identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
+- [object StatusDeviceModelMarketingName](./statusdevicemodelmarketingname.md)
   The status item that reports the device’s model marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
+- [object StatusDeviceModelNumber](./statusdevicemodelnumber.md)
   The status item that reports the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
+- [object StatusDeviceOperatingSystemBuildVersion](./statusdeviceoperatingsystembuildversion.md)
   The status item that reports the device’s operating system build version.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
+- [object StatusDeviceOperatingSystemFamily](./statusdeviceoperatingsystemfamily.md)
   The status item that reports the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
+- [object StatusDeviceOperatingSystemMarketingName](./statusdeviceoperatingsystemmarketingname.md)
   The status item that reports the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
+- [object StatusDeviceOperatingSystemSupplementalBuildVersion](./statusdeviceoperatingsystemsupplementalbuildversion.md)
   The status item that reports the device’s operating system supplemental build version and Background Security Improvement version.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
+- [object StatusDeviceOperatingSystemSupplementalExtraVersion](./statusdeviceoperatingsystemsupplementalextraversion.md)
   The status item that reports the device’s operating system Background Security Improvement version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
+- [object StatusDeviceSerialNumber](./statusdeviceserialnumber.md)
   The status item that reports the device’s serial number.
-- [object StatusDeviceSystemHealth](statusdevicesystemhealth.md)
+- [object StatusDeviceSystemHealth](./statusdevicesystemhealth.md)
   The status item that reports the device’s system health.
-- [object StatusDeviceUDID](statusdeviceudid.md)
+- [object StatusDeviceUDID](./statusdeviceudid.md)
   The status item that reports the device’s UDID.
 
 

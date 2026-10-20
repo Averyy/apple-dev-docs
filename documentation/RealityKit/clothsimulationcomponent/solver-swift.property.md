@@ -1,7 +1,8 @@
 # solver
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The solver used by this simulation, configured at initialization and immutable thereafter.
 
@@ -18,7 +19,8 @@ var solver: ClothSimulationComponent.Solver { get }
 
 ## See Also
 
-- [ClothSimulationComponent.Solver](clothsimulationcomponent/solver-swift.struct.md)
+### Configuring the solver
+- [ClothSimulationComponent.Solver](./solver-swift.struct.md)
   The permanent solver configuration of a cloth simulation.
 
 

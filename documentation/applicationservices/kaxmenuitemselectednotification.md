@@ -1,7 +1,8 @@
 # kAXMenuItemSelectedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A menu item was selected.
 
@@ -12,6 +13,10 @@ A menu item was selected.
 
 ```swift
 var kAXMenuItemSelectedNotification: String { get }
+```
+
+```c
+#define kAXMenuItemSelectedNotification
 ```
 
 

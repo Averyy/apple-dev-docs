@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -13,9 +14,17 @@
 func updateRootPose(_ pose: Pose3D)
 ```
 
+## Default Implementations
+
+### EntityRenderDelegate Implementations
+- [func updateRootPose(Pose3D)](../../entityrenderdelegate/updaterootpose%28_%29.md)
+### TabletopGame.RenderDelegate Implementations
+- [func updateRootPose(Pose3D)](./updaterootpose%28_%29-64gn7.md)
+
 ## See Also
 
-- [func onUpdate(timeInterval: Double, snapshot: TableSnapshot, visualState: TableVisualState)](tabletopgame/renderdelegate/onupdate(timeinterval:snapshot:visualstate:).md)
+### Rendering the game
+- [func onUpdate(timeInterval: Double, snapshot: TableSnapshot, visualState: TableVisualState)](./onupdate%28timeinterval,snapshot,visualstate%29.md)
 
 
 ---

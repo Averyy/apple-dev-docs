@@ -1,7 +1,8 @@
 # AccelerateBuffer
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents an immutable buffer.
 
@@ -11,7 +12,7 @@ A type that represents an immutable buffer.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,34 +23,35 @@ protocol AccelerateBuffer<Element>
 
 #### Overview
 
-If you implement your own type that conforms to [`AccelerateBuffer`](acceleratebuffer.md) and uses the default implementation of [`withUnsafeBufferPointer(_:)`](acceleratebuffer/withunsafebufferpointer(_:).md), your type needs to return a nonnil result from [`withContiguousStorageIfAvailable(_:)`](https://developer.apple.com/documentation/swift/sequence/withcontiguousstorageifavailable(_:)).
+If you implement your own type that conforms to [`AccelerateBuffer`](./acceleratebuffer.md) and uses the default implementation of [`withUnsafeBufferPointer(_:)`](./acceleratebuffer/withunsafebufferpointer%28_%29.md), your type needs to return a nonnil result from [`withContiguousStorageIfAvailable(_:)`](../Swift/sequence/withcontiguousstorageifavailable%28_%29.md).
 
 ## Topics
 
 ### Associated Types
-- [associatedtype Element](acceleratebuffer/element.md)
+- [associatedtype Element](./acceleratebuffer/element.md)
   The buffer’s element type.
 ### Instance Properties
-- [var count: Int](acceleratebuffer/count.md)
+- [var count: Int](./acceleratebuffer/count.md)
   The number of elements in the buffer.
 ### Instance Methods
-- [func withUnsafeBufferPointer<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R](acceleratebuffer/withunsafebufferpointer(_:).md)
+- [func withUnsafeBufferPointer<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R](./acceleratebuffer/withunsafebufferpointer%28_%29.md)
   Calls a closure with a pointer to the object’s contiguous storage.
 
 ## Relationships
 
 ### Inherited By
-- [AccelerateMutableBuffer](acceleratemutablebuffer.md)
+- [AccelerateMutableBuffer](./acceleratemutablebuffer.md)
 ### Conforming Types
-- [vImage.PixelBuffer](vimage/pixelbuffer.md)
+- [vImage.PixelBuffer](./vimage/pixelbuffer.md)
 
 ## See Also
 
-- [protocol AccelerateMutableBuffer](acceleratemutablebuffer.md)
+### Essentials
+- [protocol AccelerateMutableBuffer](./acceleratemutablebuffer.md)
   A type that represents a mutable buffer.
-- [protocol AccelerateMatrixBuffer](acceleratematrixbuffer.md)
-- [protocol AccelerateMutableMatrixBuffer](acceleratemutablematrixbuffer.md)
-- [enum AccelerateMatrixOrder](acceleratematrixorder.md)
+- [protocol AccelerateMatrixBuffer](./acceleratematrixbuffer.md)
+- [protocol AccelerateMutableMatrixBuffer](./acceleratemutablematrixbuffer.md)
+- [enum AccelerateMatrixOrder](./acceleratematrixorder.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PresentationIntent.TableColumn.Alignment
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,22 +22,22 @@ enum Alignment
 ## Topics
 
 ### Enumeration Cases
-- [PresentationIntent.TableColumn.Alignment.center](presentationintent/tablecolumn/alignment-swift.enum/center.md)
-- [PresentationIntent.TableColumn.Alignment.left](presentationintent/tablecolumn/alignment-swift.enum/left.md)
-- [PresentationIntent.TableColumn.Alignment.right](presentationintent/tablecolumn/alignment-swift.enum/right.md)
+- [PresentationIntent.TableColumn.Alignment.center](./alignment-swift.enum/center.md)
+- [PresentationIntent.TableColumn.Alignment.left](./alignment-swift.enum/left.md)
+- [PresentationIntent.TableColumn.Alignment.right](./alignment-swift.enum/right.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

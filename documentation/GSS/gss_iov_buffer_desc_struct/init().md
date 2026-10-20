@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: GSS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a new, empty IOV buffer structure.
 
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(type: OM_uint32, buffer: gss_buffer_desc)](gss_iov_buffer_desc_struct/init(type:buffer:).md)
+### Initialization
+- [init(type: OM_uint32, buffer: gss_buffer_desc)](./init%28type,buffer%29.md)
 
 
 ---

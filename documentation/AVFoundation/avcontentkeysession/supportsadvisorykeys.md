@@ -1,7 +1,8 @@
 # supportsAdvisoryKeys
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Boolean indicating whether advisory keys are enabled on the client.
 
@@ -15,6 +16,10 @@ Boolean indicating whether advisory keys are enabled on the client.
 
 ```swift
 var supportsAdvisoryKeys: Bool { get set }
+```
+
+```objc
+@property (readwrite) BOOL supportsAdvisoryKeys;
 ```
 
 #### Discussion

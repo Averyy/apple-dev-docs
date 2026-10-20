@@ -1,20 +1,22 @@
 # Accessing the device’s location efficiently
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use Core Location features to manage energy use, receive updates, and minimize location update frequency.
 
 #### Overview
 
-Discovering a person’s location — particularly to a high [`desiredAccuracy`](https://developer.apple.com/documentation/corelocation/cllocationmanager/desiredaccuracy) — requires combining information from multiple device subsystems that each consume power while they’re active. Minimize the frequency with which your app requests location updates, and don’t leave location updates running when your app doesn’t need them.
+Discovering a person’s location — particularly to a high [`desiredAccuracy`](../CoreLocation/cllocationmanager/desiredaccuracy.md) — requires combining information from multiple device subsystems that each consume power while they’re active. Minimize the frequency with which your app requests location updates, and don’t leave location updates running when your app doesn’t need them.
 
-Use [`CLLocationUpdate`](https://developer.apple.com/documentation/corelocation/cllocationupdate) to receive updates from the system when the device’s location changes. If the device becomes stationary, Core Location sets the [`stationary`](https://developer.apple.com/documentation/corelocation/cllocationupdate/stationary) flag and stops providing updates until the device moves again. When this happens, if you don’t expect movement again soon, consider stopping location updates and using [`CLMonitor`](https://developer.apple.com/documentation/corelocation/clmonitor-2r51v) to get notified of significant changes to the device’s location. Set [`distanceFilter`](https://developer.apple.com/documentation/corelocation/cllocationmanager/distancefilter) to the distance the device needs to move before the system notifies your app.
+Use [`CLLocationUpdate`](../CoreLocation/cllocationupdate.md) to receive updates from the system when the device’s location changes. If the device becomes stationary, Core Location sets the [`stationary`](../CoreLocation/cllocationupdate/stationary.md) flag and stops providing updates until the device moves again. When this happens, if you don’t expect movement again soon, consider stopping location updates and using [`CLMonitor`](../CoreLocation/clmonitor-2r51v.md) to get notified of significant changes to the device’s location. Set [`distanceFilter`](../CoreLocation/cllocationmanager/distancefilter.md) to the distance the device needs to move before the system notifies your app.
 
-If you need to receive location updates when your app is in the background, use [`CLBackgroundActivitySession`](https://developer.apple.com/documentation/corelocation/clbackgroundactivitysession-3mzv3), or call [`requestAlwaysAuthorization()`](https://developer.apple.com/documentation/corelocation/cllocationmanager/requestalwaysauthorization()). For more information, see [`Handling location updates in the background`](https://developer.apple.com/documentation/corelocation/handling-location-updates-in-the-background). However, only register for background location updates if your app’s functionality doesn’t work without it, as background updates increase your app’s energy use.
+If you need to receive location updates when your app is in the background, use [`CLBackgroundActivitySession`](../CoreLocation/clbackgroundactivitysession-3mzv3.md), or call [`requestAlwaysAuthorization()`](../CoreLocation/cllocationmanager/requestalwaysauthorization%28%29.md). For more information, see [Handling location updates in the background](../CoreLocation/handling-location-updates-in-the-background.md). However, only register for background location updates if your app’s functionality doesn’t work without it, as background updates increase your app’s energy use.
 
 ## See Also
 
-- [Reducing networking and Bluetooth power usage](reducing-networking-and-bluetooth-power-usage.md)
+### Networking and location
+- [Reducing networking and Bluetooth power usage](./reducing-networking-and-bluetooth-power-usage.md)
   Schedule requests strategically and minimize background network activity to decrease your app’s energy use.
 
 

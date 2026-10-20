@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kICNoUserInteractionMask: Int](kicnouserinteractionmask.md)
+- [var kICNoUserInteractionMask: Int](../kicnouserinteractionmask.md)
 
 
 ---

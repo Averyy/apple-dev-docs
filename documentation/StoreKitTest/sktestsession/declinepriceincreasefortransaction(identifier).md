@@ -1,7 +1,8 @@
 # declinePriceIncreaseForTransaction(identifier:)
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Simulates a user canceling an auto-renewable subscription by disabling auto-renew.
 
@@ -20,21 +21,26 @@ Simulates a user canceling an auto-renewable subscription by disabling auto-rene
 func declinePriceIncreaseForTransaction(identifier: Int) throws
 ```
 
+```objc
+- (BOOL) declinePriceIncreaseForTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
+```
+
 #### Discussion
 
-To test how your app handles the price increase consent flow for auto-renewable subscriptions, first call [`requestPriceIncreaseConsentForTransaction(identifier:)`](sktestsession/requestpriceincreaseconsentfortransaction(identifier:).md).
+To test how your app handles the price increase consent flow for auto-renewable subscriptions, first call [`requestPriceIncreaseConsentForTransaction(identifier:)`](./requestpriceincreaseconsentfortransaction%28identifier%29.md).
 
-Call [`declinePriceIncreaseForTransaction(identifier:)`](sktestsession/declinepriceincreasefortransaction(identifier:).md) to simulate a user canceling the subscription. Specifically, this method disables auto-renew and removes the subscription’s pending price increase status. The subscription expires at the end of the billing period in the testing environment.
+Call [`declinePriceIncreaseForTransaction(identifier:)`](./declinepriceincreasefortransaction%28identifier%29.md) to simulate a user canceling the subscription. Specifically, this method disables auto-renew and removes the subscription’s pending price increase status. The subscription expires at the end of the billing period in the testing environment.
 
 ## Parameters
 
-- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of the auto-renewable subscription that has a pending price increase.
+- `identifier`: The transaction [`identifier`](../sktesttransaction/identifier.md) of the auto-renewable subscription that has a pending price increase.
 
 ## See Also
 
-- [func requestPriceIncreaseConsentForTransaction(identifier: Int) throws](sktestsession/requestpriceincreaseconsentfortransaction(identifier:).md)
+### Testing price increase consent
+- [func requestPriceIncreaseConsentForTransaction(identifier: Int) throws](./requestpriceincreaseconsentfortransaction%28identifier%29.md)
   Simulates a price increase that requires customer consent for an auto-renewable subscription.
-- [func consentToPriceIncreaseForTransaction(identifier: Int) throws](sktestsession/consenttopriceincreasefortransaction(identifier:).md)
+- [func consentToPriceIncreaseForTransaction(identifier: Int) throws](./consenttopriceincreasefortransaction%28identifier%29.md)
   Simulates a user consenting to a price increase for an auto-renewable subscription.
 
 

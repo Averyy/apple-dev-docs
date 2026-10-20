@@ -1,6 +1,8 @@
 # Debugging AVFoundation audio mixes, compositions, and video compositions
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [DebuggingAVFoundationAudioMixesCompositionsAndVideoCompositions.zip](https://docs-assets.developer.apple.com/published/46bb8c54cf2e/DebuggingAVFoundationAudioMixesCompositionsAndVideoCompositions.zip)
 
 Resolve common problems when creating compositions, video compositions, and audio mixes.
 
@@ -14,18 +16,18 @@ Resolve common problems when creating compositions, video compositions, and audi
 
 You can construct elaborate and complex compositions, video compositions, and audio mixes with entirely valid values that produce unexpected results. This sample code project visualizes the composition on the screen and adopts the video composition validation-handling protocol to debug common pitfalls in compositions and audio mixes.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 - Build the sample with Xcode 13.4.1 or later, and Swift 5.5 or later.
 - This sample runs on physical devices with iPadOS 13.5 or later.
 
 Build and run the app on any supported device. Use the play, pause, and scrubber controls to play and scrub through the composition in the upper portion of the screen. The debug view in the lower portion of the screen visualizes the composition, video composition, and audio mix.
 
-##### Visualize the Composition
+##### Visualize the composition
 
-*Visualization* is looking at a picture of a composition rather than looking at its code. This sample implements the `CompositionDebugView` class to present a visual description on the screen of the underlying [`AVComposition`](avcomposition.md), [`AVVideoComposition`](avvideocomposition.md), and [`AVAudioMix`](avaudiomix.md) objects that form the composition. Developers can drop the `CompositionDebugView` into their own apps. Itʼs a noninteractive view, and developers can extend it to draw their own video instructions. It helps in identifying any overlaps and gaps in the composition tracks, video instructions, and audio mix.
+*Visualization* is looking at a picture of a composition rather than looking at its code. This sample implements the `CompositionDebugView` class to present a visual description on the screen of the underlying [`AVComposition`](./avcomposition.md), [`AVVideoComposition`](./avvideocomposition.md), and [`AVAudioMix`](./avaudiomix.md) objects that form the composition. Developers can drop the `CompositionDebugView` into their own apps. Itʼs a noninteractive view, and developers can extend it to draw their own video instructions. It helps in identifying any overlaps and gaps in the composition tracks, video instructions, and audio mix.
 
-##### Synchronize the Visualized Composition
+##### Synchronize the visualized composition
 
 The `PlayerViewController` class has an outlet to the `CompositionDebugView` object in the `Main.storyboard`.
 
@@ -33,7 +35,7 @@ The `PlayerViewController` class has an outlet to the `CompositionDebugView` obj
 @IBOutlet weak var compositionDebugView: CompositionDebugView!
 ```
 
-The `PlayerViewController` creates a player item to display the composition in the upper portion of the screen using an [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) that presents a native user interface to control playback. It creates this player item from the composition, video composition, and audio mix that the `SimpleEditor` creates from the video files in the project.
+The `PlayerViewController` creates a player item to display the composition in the upper portion of the screen using an [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) that presents a native user interface to control playback. It creates this player item from the composition, video composition, and audio mix that the `SimpleEditor` creates from the video files in the project.
 
 ```swift
 // Create a player item from the simple editor composition.
@@ -77,9 +79,9 @@ func synchronize(with playerItem: AVPlayerItem) {
 }
 ```
 
-##### Create the Composition
+##### Create the composition
 
-The `SimpleEditor` class initialization creates an [`AVMutableComposition`](avmutablecomposition.md) to merge the videos.
+The `SimpleEditor` class initialization creates an [`AVMutableComposition`](./avmutablecomposition.md) to merge the videos.
 
 ```swift
 private lazy var editorComposition: AVMutableComposition = {
@@ -133,9 +135,9 @@ if clipIndex + 1 < clips.count {
 }
 ```
 
-##### Create the Video Composition and Audio Mix
+##### Create the video composition and audio mix
 
-The `SimpleEditor` class initialization creates an [`AVMutableVideoComposition`](avmutablevideocomposition.md) to apply effects between clips, and an [`AVMutableAudioMix`](avmutableaudiomix.md) for mixing the audio tracks.
+The `SimpleEditor` class initialization creates an [`AVMutableVideoComposition`](./avmutablevideocomposition.md) to apply effects between clips, and an [`AVMutableAudioMix`](./avmutableaudiomix.md) for mixing the audio tracks.
 
 ```swift
 private var editorAudioMix = AVMutableAudioMix()
@@ -190,11 +192,11 @@ editorAudioMix.inputParameters = trackMixArray
 editorVideoComposition.instructions = instructions
 ```
 
-##### Debug Video Compositions
+##### Debug video compositions
 
-The sample implements the [`AVVideoCompositionValidationHandling`](avvideocompositionvalidationhandling.md) protocol methods in the `SimpleEditor` class to debug the video composition. These methods identify errors and indicate whether validation of a video composition needs to continue after finding specific errors.
+The sample implements the [`AVVideoCompositionValidationHandling`](./avvideocompositionvalidationhandling.md) protocol methods in the `SimpleEditor` class to debug the video composition. These methods identify errors and indicate whether validation of a video composition needs to continue after finding specific errors.
 
-The sample’s implementation of each of these functions displays an appropriate error dialog, and returns `false` to stop any further validation of the video composition. See the [`AVVideoCompositionValidationHandling`](avvideocompositionvalidationhandling.md) documentation for more information.
+The sample’s implementation of each of these functions displays an appropriate error dialog, and returns `false` to stop any further validation of the video composition. See the [`AVVideoCompositionValidationHandling`](./avvideocompositionvalidationhandling.md) documentation for more information.
 
 ```swift
 func videoComposition(_ videoComposition: AVVideoComposition, shouldContinueValidatingAfterFindingEmptyTimeRange timeRange: CMTimeRange) -> Bool {
@@ -220,19 +222,20 @@ func videoComposition(_ videoComposition: AVVideoComposition, shouldContinueVali
 
 ## See Also
 
-- [Editing and playing HDR video](editing-and-playing-hdr-video.md)
+### Built-in video compositing
+- [Editing and playing HDR video](./editing-and-playing-hdr-video.md)
   Support high-dynamic-range (HDR) video content in your app by using the HDR editing and playback capabilities of AVFoundation.
-- [class AVVideoComposition](avvideocomposition.md)
+- [class AVVideoComposition](./avvideocomposition.md)
   An object that describes how to compose video frames at particular points in time.
-- [class AVVideoCompositionInstruction](avvideocompositioninstruction-swift.class.md)
+- [class AVVideoCompositionInstruction](./avvideocompositioninstruction-swift.class.md)
   An operation that a compositor performs.
-- [class AVVideoCompositionLayerInstruction](avvideocompositionlayerinstruction.md)
+- [class AVVideoCompositionLayerInstruction](./avvideocompositionlayerinstruction.md)
   An object used to modify the transform, cropping, and opacity ramps applied to a given track in a composition.
-- [class AVMutableVideoComposition](avmutablevideocomposition.md)
+- [class AVMutableVideoComposition](./avmutablevideocomposition.md)
   A mutable video composition subclass.
-- [class AVMutableVideoCompositionInstruction](avmutablevideocompositioninstruction.md)
+- [class AVMutableVideoCompositionInstruction](./avmutablevideocompositioninstruction.md)
   A mutable video composition instruction subclass.
-- [class AVMutableVideoCompositionLayerInstruction](avmutablevideocompositionlayerinstruction.md)
+- [class AVMutableVideoCompositionLayerInstruction](./avmutablevideocompositionlayerinstruction.md)
   An object used to modify the transform, cropping, and opacity ramps applied to a given track in a mutable composition.
 
 

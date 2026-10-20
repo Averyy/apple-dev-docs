@@ -1,7 +1,8 @@
 # isInteractive
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables interactive behavior for the glass effect.
 
@@ -15,6 +16,10 @@ Enables interactive behavior for the glass effect.
 
 ```swift
 var isInteractive: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isInteractive) BOOL interactive;
 ```
 
 

@@ -1,7 +1,8 @@
 # RecommendationResponseErrorDetail.Info
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Additional context that supplements the error message, varying by endpoint and error type.
 
@@ -10,7 +11,7 @@ Additional context that supplements the error message, varying by endpoint and e
 
 ## Declaration
 
-```swift
+```
 object RecommendationResponseErrorDetail.Info
 ```
 

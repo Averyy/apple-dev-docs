@@ -1,7 +1,8 @@
 # registeredContentTypes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Registered content types in the order the app registers each type.
 
@@ -20,15 +21,28 @@ Registered content types in the order the app registers each type.
 var registeredContentTypes: [UTType] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<UTType *> * registeredContentTypes;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSArray<UTType *> * registeredContentTypes;
+```
+
 #### Discussion
 
 You app should register content types in order of fidelity. The system uses content types that appear earlier in the array.
 
 ## See Also
 
-- [var registeredContentTypesForOpenInPlace: [UTType]](nsitemprovider/registeredcontenttypesforopeninplace.md)
+### Registering content types
+- [var registeredContentTypesForOpenInPlace: [UTType]](./registeredcontenttypesforopeninplace.md)
   Registered content types that the system can load as open-in-place files.
-- [func registeredContentTypes(conformingTo: UTType) -> [UTType]](nsitemprovider/registeredcontenttypes(conformingto:).md)
+- [func registeredContentTypes(conformingTo: UTType) -> [UTType]](./registeredcontenttypes%28conformingto%29.md)
   Returns an array of registered content types that conform to a specified content type.
 
 

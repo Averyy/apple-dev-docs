@@ -1,29 +1,31 @@
 # fifo_advlock
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int fifo_advlock(struct vnop_advlock_args *);
 ```
 
 ## See Also
 
-- [fifo_close](1527475-fifo_close.md)
-- [fifo_ebadf](1527462-fifo_ebadf.md)
-- [fifo_inactive](1527453-fifo_inactive.md)
-- [fifo_ioctl](1527448-fifo_ioctl.md)
-- [fifo_lookup](1527441-fifo_lookup.md)
-- [fifo_open](1527466-fifo_open.md)
-- [fifo_pathconf](1527439-fifo_pathconf.md)
-- [fifo_read](1527437-fifo_read.md)
-- [fifo_select](1527454-fifo_select.md)
-- [fifo_write](1527467-fifo_write.md)
+### fifo
+- [fifo_close](./api-1527475-fifo_close.md)
+- [fifo_ebadf](./api-1527462-fifo_ebadf.md)
+- [fifo_inactive](./api-1527453-fifo_inactive.md)
+- [fifo_ioctl](./api-1527448-fifo_ioctl.md)
+- [fifo_lookup](./api-1527441-fifo_lookup.md)
+- [fifo_open](./api-1527466-fifo_open.md)
+- [fifo_pathconf](./api-1527439-fifo_pathconf.md)
+- [fifo_read](./api-1527437-fifo_read.md)
+- [fifo_select](./api-1527454-fifo_select.md)
+- [fifo_write](./api-1527467-fifo_write.md)
 
 
 ---

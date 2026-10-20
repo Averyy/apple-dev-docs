@@ -2,6 +2,7 @@
 
 **Framework**: Virtualization  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The device’s unique identifier.
@@ -13,6 +14,10 @@ The device’s unique identifier.
 
 ```swift
 var uuid: UUID { get set }
+```
+
+```objc
+@property (copy, readwrite) NSUUID * uuid;
 ```
 
 #### Discussion

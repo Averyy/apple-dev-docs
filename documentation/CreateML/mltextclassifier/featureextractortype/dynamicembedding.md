@@ -1,15 +1,16 @@
 # MLTextClassifier.FeatureExtractorType.dynamicEmbedding
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature extractor that provides embeddings for words, based on their in-context use.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.15+
+- iOS 15.0+ - Deprecated in 17.0 (renamed: elmoEmbedding)
+- iPadOS 15.0+ - Deprecated in 17.0 (renamed: elmoEmbedding)
+- Mac Catalyst 15.0+ - Deprecated in 17.0 (renamed: elmoEmbedding)
+- macOS 10.15+ - Deprecated in 14.0 (renamed: elmoEmbedding)
 - visionOS 1.0+
 
 ## Declaration
@@ -24,13 +25,14 @@ Dynamic embedding requires certain downloadable assets to be present on device a
 
 ## See Also
 
-- [MLTextClassifier.FeatureExtractorType.customEmbedding(_:)](mltextclassifier/featureextractortype/customembedding(_:).md)
+### Selecting a feature extractor type
+- [MLTextClassifier.FeatureExtractorType.customEmbedding(_:)](./customembedding%28_%29.md)
   A feature extractor that uses a custom embedding contained in a CoreML model file.
-- [MLTextClassifier.FeatureExtractorType.staticEmbedding](mltextclassifier/featureextractortype/staticembedding.md)
+- [MLTextClassifier.FeatureExtractorType.staticEmbedding](./staticembedding.md)
   A feature extractor that uses the standard, built-in word embeddings.
-- [MLTextClassifier.FeatureExtractorType.bertEmbedding](mltextclassifier/featureextractortype/bertembedding.md)
+- [MLTextClassifier.FeatureExtractorType.bertEmbedding](./bertembedding.md)
   A feature extractor that provides BERT contextual word embeddings.
-- [MLTextClassifier.FeatureExtractorType.elmoEmbedding](mltextclassifier/featureextractortype/elmoembedding.md)
+- [MLTextClassifier.FeatureExtractorType.elmoEmbedding](./elmoembedding.md)
   A feature extractor that provides ELMo contextual word embeddings.
 
 

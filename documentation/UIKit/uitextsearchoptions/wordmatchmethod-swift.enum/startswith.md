@@ -1,7 +1,8 @@
 # UITextSearchOptions.WordMatchMethod.startsWith
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The word contains the search string as a prefix.
 
@@ -17,11 +18,16 @@ The word contains the search string as a prefix.
 case startsWith
 ```
 
+```c
+UITextSearchMatchMethodStartsWith
+```
+
 ## See Also
 
-- [UITextSearchOptions.WordMatchMethod.contains](uitextsearchoptions/wordmatchmethod-swift.enum/contains.md)
+### Constants
+- [UITextSearchOptions.WordMatchMethod.contains](./contains.md)
   The word contains the search string.
-- [UITextSearchOptions.WordMatchMethod.fullWord](uitextsearchoptions/wordmatchmethod-swift.enum/fullword.md)
+- [UITextSearchOptions.WordMatchMethod.fullWord](./fullword.md)
   The word matches the search string exactly.
 
 

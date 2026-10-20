@@ -1,7 +1,8 @@
 # MPSCNNUpsamplingNearest
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A nearest spatial upsampling filter.
 
@@ -19,9 +20,13 @@ A nearest spatial upsampling filter.
 class MPSCNNUpsamplingNearest
 ```
 
+```objc
+@interface MPSCNNUpsamplingNearest : MPSCNNUpsampling
+```
+
 #### Overview
 
-This filter can be used to resample an existing [`MPSImage`](mpsimage.md) using a different sampling frequency for the `x` and `y` dimensions with the purpose of enlarging the size of an image.
+This filter can be used to resample an existing [`MPSImage`](./mpsimage.md) using a different sampling frequency for the `x` and `y` dimensions with the purpose of enlarging the size of an image.
 
 The number of output feature channels remains the same as the number of input feature channels.
 
@@ -30,35 +35,36 @@ The `scaleFactor` must be an integer value `>= 1`. The default value is `1`.
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingnearest/init(device:integerscalefactorx:integerscalefactory:).md)
+- [init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](./mpscnnupsamplingnearest/init%28device,integerscalefactorx,integerscalefactory%29.md)
   Initializes a nearest spatial upsampling filter.
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNUpsampling](mpscnnupsampling.md)
+- [MPSCNNUpsampling](./mpscnnupsampling.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNUpsampling](mpscnnupsampling.md)
+### Upsampling Layers
+- [class MPSCNNUpsampling](./mpscnnupsampling.md)
   A filter that resamples an existing MPS image.
-- [class MPSCNNUpsamplingBilinear](mpscnnupsamplingbilinear.md)
+- [class MPSCNNUpsamplingBilinear](./mpscnnupsamplingbilinear.md)
   A bilinear spatial upsampling filter.
-- [class MPSCNNUpsamplingBilinearGradient](mpscnnupsamplingbilineargradient.md)
+- [class MPSCNNUpsamplingBilinearGradient](./mpscnnupsamplingbilineargradient.md)
   A gradient bilinear spatial upsampling filter.
-- [class MPSCNNUpsamplingGradient](mpscnnupsamplinggradient.md)
+- [class MPSCNNUpsamplingGradient](./mpscnnupsamplinggradient.md)
   A gradient filter that upsamples an existing Metal Performance Shaders image.
-- [class MPSCNNUpsamplingNearestGradient](mpscnnupsamplingnearestgradient.md)
+- [class MPSCNNUpsamplingNearestGradient](./mpscnnupsamplingnearestgradient.md)
   A gradient upsampling filter that samples the pixel nearest to the source when upsampling to the destination pixel.
 
 

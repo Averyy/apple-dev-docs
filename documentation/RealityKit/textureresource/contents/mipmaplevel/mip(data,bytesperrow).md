@@ -1,7 +1,8 @@
 # mip(data:bytesPerRow:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies a single mipmap level of a texture resource with pixel data that RealityKit copies from a byte buffer.
 
@@ -26,13 +27,14 @@ static func mip(data: Data, bytesPerRow: Int) -> TextureResource.Contents.Mipmap
 
 ## See Also
 
-- [static func mip(data: Data, bytesPerRow: Int, bytesPerImage: Int) -> TextureResource.Contents.MipmapLevel](textureresource/contents/mipmaplevel/mip(data:bytesperrow:bytesperimage:).md)
+### Creating a texture mipmap level
+- [static func mip(data: Data, bytesPerRow: Int, bytesPerImage: Int) -> TextureResource.Contents.MipmapLevel](./mip%28data,bytesperrow,bytesperimage%29.md)
   Specifies a multi-image mipmap level of a texture resource with pixel data that RealityKit copies from a byte buffer.
-- [static func mip(slices: [TextureResource.Contents.Slice]) -> TextureResource.Contents.MipmapLevel](textureresource/contents/mipmaplevel/mip(slices:).md)
+- [static func mip(slices: [TextureResource.Contents.Slice]) -> TextureResource.Contents.MipmapLevel](./mip%28slices%29.md)
   Specifies a single mipmap level of a 2D or 3D texture resource that slices provide.
-- [static func mip(unsafeBuffer: any MTLBuffer, offset: Int, size: Int, bytesPerRow: Int) -> TextureResource.Contents.MipmapLevel](textureresource/contents/mipmaplevel/mip(unsafebuffer:offset:size:bytesperrow:).md)
+- [static func mip(unsafeBuffer: any MTLBuffer, offset: Int, size: Int, bytesPerRow: Int) -> TextureResource.Contents.MipmapLevel](./mip%28unsafebuffer,offset,size,bytesperrow%29.md)
   Specifies a single mipmap level of a texture resource with pixel data that RealityKit copies from a Metal buffer.
-- [static func mip(unsafeBuffer: any MTLBuffer, offset: Int, size: Int, bytesPerRow: Int, bytesPerImage: Int) -> TextureResource.Contents.MipmapLevel](textureresource/contents/mipmaplevel/mip(unsafebuffer:offset:size:bytesperrow:bytesperimage:).md)
+- [static func mip(unsafeBuffer: any MTLBuffer, offset: Int, size: Int, bytesPerRow: Int, bytesPerImage: Int) -> TextureResource.Contents.MipmapLevel](./mip%28unsafebuffer,offset,size,bytesperrow,bytesperimage%29.md)
   Specifies a multi-image mipmap level of a texture resource with pixel data that RealityKit copies from a Metal buffer.
 
 

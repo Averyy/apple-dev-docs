@@ -1,7 +1,8 @@
 # RecognizeTextRequest
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An image-analysis request that recognizes text in an image.
 
@@ -21,78 +22,79 @@ struct RecognizeTextRequest
 
 #### Overview
 
-This request generates a collection of [`RecognizedTextObservation`](recognizedtextobservation.md) objects that describe the text the request detects. By default, a text-recognition request first locates all possible glyphs or characters in the input image, and then analyzes each string. To specify or limit the languages to find in the request, set [`recognitionLanguages`](recognizetextrequest/recognitionlanguages.md) to an array that contains the names of the languages of text you want to recognize.
+This request generates a collection of [`RecognizedTextObservation`](./recognizedtextobservation.md) objects that describe the text the request detects. By default, a text-recognition request first locates all possible glyphs or characters in the input image, and then analyzes each string. To specify or limit the languages to find in the request, set [`recognitionLanguages`](./recognizetextrequest/recognitionlanguages.md) to an array that contains the names of the languages of text you want to recognize.
 
 ## Topics
 
 ### Creating a request
-- [init(RecognizeTextRequest.Revision?)](recognizetextrequest/init(_:).md)
+- [init(RecognizeTextRequest.Revision?)](./recognizetextrequest/init%28_%29.md)
   Creates a text-recognition request.
 ### Performing a request
-- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
+- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-80bya.md)
   Performs the request on an image URL and produces observations.
-- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3f3f1.md)
+- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3f3f1.md)
   Performs the request on image data and produces observations.
-- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-qxxx.md)
+- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-qxxx.md)
   Performs the request on a Core Graphics image and produces observations.
-- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-xspx.md)
+- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-xspx.md)
   Performs the request on a pixel buffer and produces observations.
-- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3hddl.md)
+- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3hddl.md)
   Performs the request on a Core Media buffer and produces observations.
-- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
+- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-85ex1.md)
   Performs the request on a Core Image image and produces observations.
 ### Understanding the result
-- [struct RecognizedTextObservation](recognizedtextobservation.md)
+- [struct RecognizedTextObservation](./recognizedtextobservation.md)
   An object that contains information about both the location and content of text and glyphs that the framework recognizes in an image.
 ### Configuring a request
-- [var automaticallyDetectsLanguage: Bool](recognizetextrequest/automaticallydetectslanguage.md)
+- [var automaticallyDetectsLanguage: Bool](./recognizetextrequest/automaticallydetectslanguage.md)
   A Boolean value that indicates whether to attempt detecting the language to use the appropriate model for recognition and language correction.
-- [var usesLanguageCorrection: Bool](recognizetextrequest/useslanguagecorrection.md)
+- [var usesLanguageCorrection: Bool](./recognizetextrequest/useslanguagecorrection.md)
   A Boolean value that indicates whether the request applies language correction during the recognition process.
-- [var supportedRecognitionLanguages: [Locale.Language]](recognizetextrequest/supportedrecognitionlanguages.md)
+- [var supportedRecognitionLanguages: [Locale.Language]](./recognizetextrequest/supportedrecognitionlanguages.md)
   The identifiers of the languages that the request supports.
-- [var customWords: [String]](recognizetextrequest/customwords.md)
+- [var customWords: [String]](./recognizetextrequest/customwords.md)
   An array of strings to supplement the recognized languages at the word-recognition stage.
-- [var minimumTextHeightFraction: Float](recognizetextrequest/minimumtextheightfraction.md)
+- [var minimumTextHeightFraction: Float](./recognizetextrequest/minimumtextheightfraction.md)
   The minimum height, relative to the image height, of the text to recognize.
-- [var recognitionLanguages: [Locale.Language]](recognizetextrequest/recognitionlanguages.md)
+- [var recognitionLanguages: [Locale.Language]](./recognizetextrequest/recognitionlanguages.md)
   An array of languages to detect, in priority order.
-- [var recognitionLevel: RecognizeTextRequest.RecognitionLevel](recognizetextrequest/recognitionlevel-swift.property.md)
+- [var recognitionLevel: RecognizeTextRequest.RecognitionLevel](./recognizetextrequest/recognitionlevel-swift.property.md)
   A value that determines whether the request prioritizes accuracy or speed in text recognition.
-- [RecognizeTextRequest.RecognitionLevel](recognizetextrequest/recognitionlevel-swift.enum.md)
+- [RecognizeTextRequest.RecognitionLevel](./recognizetextrequest/recognitionlevel-swift.enum.md)
   Constants that identify the performance and accuracy of the text recognition.
 ### Getting the revision
-- [let revision: RecognizeTextRequest.Revision](recognizetextrequest/revision-swift.property.md)
+- [let revision: RecognizeTextRequest.Revision](./recognizetextrequest/revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [RecognizeTextRequest.Revision]](recognizetextrequest/supportedrevisions.md)
+- [static let supportedRevisions: [RecognizeTextRequest.Revision]](./recognizetextrequest/supportedrevisions.md)
   The collection of revisions the request supports.
-- [RecognizeTextRequest.Revision](recognizetextrequest/revision-swift.enum.md)
+- [RecognizeTextRequest.Revision](./recognizetextrequest/revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [ImageProcessingRequest](./imageprocessingrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionRequest](./visionrequest.md)
 
 ## See Also
 
-- [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
+### Text and document analysis
+- [Locating and displaying recognized text](./locating-and-displaying-recognized-text.md)
   Perform text recognition on a photo using the Vision framework’s text-recognition request.
-- [Recognizing tables within a document](recognize-tables-within-a-document.md)
+- [Recognizing tables within a document](./recognize-tables-within-a-document.md)
   Scan a document that contains a table and extract its content in a formatted way.
-- [struct DetectBarcodesRequest](detectbarcodesrequest.md)
+- [struct DetectBarcodesRequest](./detectbarcodesrequest.md)
   A request that detects barcodes in an image.
-- [struct DetectDocumentSegmentationRequest](detectdocumentsegmentationrequest.md)
+- [struct DetectDocumentSegmentationRequest](./detectdocumentsegmentationrequest.md)
   A request that detects rectangular regions that contain text in the input image.
-- [struct DetectTextRectanglesRequest](detecttextrectanglesrequest.md)
+- [struct DetectTextRectanglesRequest](./detecttextrectanglesrequest.md)
   An image-analysis request that finds regions of visible text in an image.
-- [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
+- [struct RecognizeDocumentsRequest](./recognizedocumentsrequest.md)
   An image-analysis request to scan an image of a document and provide information about its structure.
 
 

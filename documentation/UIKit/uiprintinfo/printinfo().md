@@ -1,7 +1,8 @@
 # printInfo()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a print-information object initialized with default values.
 
@@ -17,17 +18,22 @@ Returns a print-information object initialized with default values.
 class func printInfo() -> UIPrintInfo
 ```
 
+```objc
++ (UIPrintInfo *) printInfo;
+```
+
 #### Return Value
 
 An instance of `UIPrintInfo` or `nil` if the object could not be created.
 
 ## See Also
 
-- [init(dictionary: [AnyHashable : Any]?)](uiprintinfo/init(dictionary:).md)
+### Creating a print info object
+- [init(dictionary: [AnyHashable : Any]?)](./init%28dictionary%29.md)
   Returns a print-information object that is initialized with the data in the passed-in dictionary.
-- [var dictionaryRepresentation: [AnyHashable : Any]](uiprintinfo/dictionaryrepresentation.md)
+- [var dictionaryRepresentation: [AnyHashable : Any]](./dictionaryrepresentation.md)
   A dictionary representation of a print-information object.
-- [init?(coder: NSCoder)](uiprintinfo/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a print info object from data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # GKTurnBasedParticipant.Status.invited
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant is invited to the match, but hasn’t responded to the invitation.
 
@@ -20,17 +21,22 @@ The participant is invited to the match, but hasn’t responded to the invitatio
 case invited
 ```
 
+```c
+GKTurnBasedParticipantStatusInvited
+```
+
 ## See Also
 
-- [GKTurnBasedParticipant.Status.unknown](gkturnbasedparticipant/status-swift.enum/unknown.md)
+### Constants
+- [GKTurnBasedParticipant.Status.unknown](./unknown.md)
   The participant is in an unexpected state.
-- [GKTurnBasedParticipant.Status.declined](gkturnbasedparticipant/status-swift.enum/declined.md)
+- [GKTurnBasedParticipant.Status.declined](./declined.md)
   The participant declines the invitation to join the match, automatically terminating the match.
-- [GKTurnBasedParticipant.Status.matching](gkturnbasedparticipant/status-swift.enum/matching.md)
+- [GKTurnBasedParticipant.Status.matching](./matching.md)
   The participant represents an unfilled position in the match that Game Center promises to fill when needed.
-- [GKTurnBasedParticipant.Status.active](gkturnbasedparticipant/status-swift.enum/active.md)
+- [GKTurnBasedParticipant.Status.active](./active.md)
   The participant joins the match and is an active player.
-- [GKTurnBasedParticipant.Status.done](gkturnbasedparticipant/status-swift.enum/done.md)
+- [GKTurnBasedParticipant.Status.done](./done.md)
   The participant leaves the match.
 
 

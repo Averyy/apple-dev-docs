@@ -1,7 +1,8 @@
 # JSRelationCondition.equal
 
 **Framework**: JavaScriptCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case equal
+```
+
+```c
+kJSRelationConditionEqual
 ```
 
 #### Discussion

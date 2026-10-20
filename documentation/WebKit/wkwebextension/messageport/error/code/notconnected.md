@@ -1,7 +1,8 @@
 # WKWebExtension.MessagePort.Error.Code.notConnected
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the message port is disconnected.
 
@@ -16,6 +17,10 @@ Indicates that the message port is disconnected.
 
 ```swift
 case notConnected
+```
+
+```c
+WKWebExtensionMessagePortErrorNotConnected
 ```
 
 

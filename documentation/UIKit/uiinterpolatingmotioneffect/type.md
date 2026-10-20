@@ -1,7 +1,8 @@
 # type
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tilt direction to monitor.
 
@@ -9,7 +10,7 @@ The tilt direction to monitor.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The tilt direction to monitor.
 var type: UIInterpolatingMotionEffect.EffectType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIInterpolatingMotionEffectType type;
+```
+
 ## See Also
 
-- [var keyPath: String](uiinterpolatingmotioneffect/keypath.md)
+### Accessing the motion attributes
+- [var keyPath: String](./keypath.md)
   The key path you want to modify on the view.
-- [var minimumRelativeValue: Any?](uiinterpolatingmotioneffect/minimumrelativevalue.md)
+- [var minimumRelativeValue: Any?](./minimumrelativevalue.md)
   The value that maps to the minimum viewer offset.
-- [var maximumRelativeValue: Any?](uiinterpolatingmotioneffect/maximumrelativevalue.md)
+- [var maximumRelativeValue: Any?](./maximumrelativevalue.md)
   The value that maps to the maximum viewer offset.
 
 

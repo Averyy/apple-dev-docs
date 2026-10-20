@@ -1,7 +1,8 @@
 # init(name:bundle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a storyboard object for the specified resource file.
 
@@ -9,13 +10,19 @@ Creates and returns a storyboard object for the specified resource file.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Loading Interface Builder products will not be supported in a future version of visionOS.
 
 ## Declaration
 
 ```swift
 init(name: String, bundle storyboardBundleOrNil: Bundle?)
+```
+
+```objc
++ (UIStoryboard *) storyboardWithName:(NSString *) name bundle:(NSBundle *) storyboardBundleOrNil;
 ```
 
 #### Return Value

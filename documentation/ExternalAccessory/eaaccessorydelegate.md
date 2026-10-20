@@ -1,7 +1,8 @@
 # EAAccessoryDelegate
 
 **Framework**: External Accessory  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines an optional method for receiving notifications when the associated accessory object is disconnected.
 
@@ -19,20 +20,25 @@ A protocol that defines an optional method for receiving notifications when the 
 protocol EAAccessoryDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol EAAccessoryDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to Disconnection Events
-- [func accessoryDidDisconnect(EAAccessory)](eaaccessorydelegate/accessorydiddisconnect(_:).md)
+- [func accessoryDidDisconnect(EAAccessory)](./eaaccessorydelegate/accessorydiddisconnect%28_%29.md)
   Tells the delegate that the specified accessory was disconnected from the device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any EAAccessoryDelegate)?](eaaccessory/delegate.md)
+### Responding to Disconnection Events
+- [var delegate: (any EAAccessoryDelegate)?](./eaaccessory/delegate.md)
   The object that acts as the delegate of the accessory.
 
 

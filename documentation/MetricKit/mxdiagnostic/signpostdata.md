@@ -1,14 +1,17 @@
 # signpostData
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- visionOS 1.0+
+- iOS 17.0+ - Deprecated in 27.2
+- iPadOS 17.0+ - Deprecated in 27.2
+- Mac Catalyst 17.0+ - Deprecated in 27.0
+- macOS 14.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`signpostData`](../diagnosticreport/environment-swift.struct/signpostdata.md) instead.
 
 ## Declaration
 
@@ -16,11 +19,16 @@
 var signpostData: [MXSignpostRecord]? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSArray<MXSignpostRecord *> * signpostData;
+```
+
 ## See Also
 
-- [var applicationVersion: String](mxdiagnostic/applicationversion.md)
+### Reading data About a diagnostic
+- [var applicationVersion: String](./applicationversion.md)
   The value of the bundle version key, short form, in the app’s property list.
-- [var metaData: MXMetaData](mxdiagnostic/metadata.md)
+- [var metaData: MXMetaData](./metadata.md)
   A set of system-level information for the device.
 
 

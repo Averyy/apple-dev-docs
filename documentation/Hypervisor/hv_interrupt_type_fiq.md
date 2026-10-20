@@ -1,12 +1,13 @@
 # HV_INTERRUPT_TYPE_FIQ
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 ARM Fast Interrupt Request.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ ARM Fast Interrupt Request.
 var HV_INTERRUPT_TYPE_FIQ: hv_interrupt_type_t { get }
 ```
 
+```c
+HV_INTERRUPT_TYPE_FIQ
+```
+
 ## See Also
 
-- [var HV_INTERRUPT_TYPE_IRQ: hv_interrupt_type_t](hv_interrupt_type_irq.md)
+### Interrupt levels
+- [var HV_INTERRUPT_TYPE_IRQ: hv_interrupt_type_t](./hv_interrupt_type_irq.md)
   ARM Interrupt Request.
 
 

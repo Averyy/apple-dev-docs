@@ -1,7 +1,8 @@
 # init(scale:offset:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a linear transformer.
 

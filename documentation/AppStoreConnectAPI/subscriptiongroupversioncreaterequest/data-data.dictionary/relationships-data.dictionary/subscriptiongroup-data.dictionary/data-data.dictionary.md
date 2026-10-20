@@ -1,7 +1,8 @@
 # SubscriptionGroupVersionCreateRequest.Data.Relationships.SubscriptionGroup.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a subscription group version.
 
@@ -10,14 +11,14 @@ The request body you use to create a subscription group version.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupVersionCreateRequest.Data.Relationships.SubscriptionGroup.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionGroups`
 
 
 ---

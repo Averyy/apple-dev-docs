@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The degree of opacity in the color, given in the range `0` to `1`.
 

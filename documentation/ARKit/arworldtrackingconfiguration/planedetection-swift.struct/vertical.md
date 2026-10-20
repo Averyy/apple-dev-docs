@@ -1,7 +1,8 @@
 # vertical
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The session detects surfaces that are parallel to gravity, regardless of other orientation.
 
@@ -15,11 +16,16 @@ The session detects surfaces that are parallel to gravity, regardless of other o
 static var vertical: ARWorldTrackingConfiguration.PlaneDetection { get }
 ```
 
+```c
+ARPlaneDetectionVertical
+```
+
 ## See Also
 
-- [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](arworldtrackingconfiguration/planedetection-swift.struct/horizontal.md)
+### Plane Detection Options
+- [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](./horizontal.md)
   The session detects planar surfaces that are perpendicular to gravity.
-- [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](arworldtrackingconfiguration/planedetection-swift.struct/horizontal.md)
+- [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](./horizontal.md)
   The session detects planar surfaces that are perpendicular to gravity.
 
 

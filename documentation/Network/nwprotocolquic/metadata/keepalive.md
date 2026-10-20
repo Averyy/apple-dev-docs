@@ -1,7 +1,8 @@
 # keepAlive
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The QUIC connection keepalive behavior.
 
@@ -22,7 +23,8 @@ var keepAlive: NWProtocolQUIC.Metadata.KeepAliveBehavior { get set }
 
 ## See Also
 
-- [NWProtocolQUIC.Metadata.KeepAliveBehavior](nwprotocolquic/metadata/keepalivebehavior.md)
+### Configuring Keepalives
+- [NWProtocolQUIC.Metadata.KeepAliveBehavior](./keepalivebehavior.md)
   A QUIC connection keepalive behavior.
 
 

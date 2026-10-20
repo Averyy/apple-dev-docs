@@ -1,16 +1,17 @@
 # XCUIVoiceOverService.Error
 
 **Framework**: XCUIAutomation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,24 +23,24 @@ struct Error
 ## Topics
 
 ### Type Properties
-- [static var errorDomain: String](xcuivoiceoverservice/error/errordomain.md)
-- [static var failedToStart: XCUIVoiceOverService.Error.Code](xcuivoiceoverservice/error/failedtostart.md)
-- [static var failedToStop: XCUIVoiceOverService.Error.Code](xcuivoiceoverservice/error/failedtostop.md)
-- [static var noSpeech: XCUIVoiceOverService.Error.Code](xcuivoiceoverservice/error/nospeech.md)
-- [static var notRunning: XCUIVoiceOverService.Error.Code](xcuivoiceoverservice/error/notrunning.md)
+- [static var errorDomain: String](./error/errordomain.md)
+- [static var failedToStart: XCUIVoiceOverService.Error.Code](./error/failedtostart.md)
+- [static var failedToStop: XCUIVoiceOverService.Error.Code](./error/failedtostop.md)
+- [static var noSpeech: XCUIVoiceOverService.Error.Code](./error/nospeech.md)
+- [static var notRunning: XCUIVoiceOverService.Error.Code](./error/notrunning.md)
 ### Enumerations
-- [XCUIVoiceOverService.Error.Code](xcuivoiceoverservice/error/code.md)
+- [XCUIVoiceOverService.Error.Code](./error/code.md)
   Error codes for XCUIVoiceOverService operations.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../../Foundation/customnserror.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

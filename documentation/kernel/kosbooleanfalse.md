@@ -1,7 +1,8 @@
 # kOSBooleanFalse
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The OSBoolean constant for `false`.
 
@@ -10,7 +11,7 @@ The OSBoolean constant for `false`.
 
 ## Declaration
 
-```swift
+```c
 OSBoolean *const & kOSBooleanFalse;
 ```
 

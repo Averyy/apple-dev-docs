@@ -1,7 +1,8 @@
 # SecIdentityCopyCertificate(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves a certificate associated with an identity.
 
@@ -20,13 +21,17 @@ Retrieves a certificate associated with an identity.
 func SecIdentityCopyCertificate(_ identityRef: SecIdentity, _ certificateRef: UnsafeMutablePointer<SecCertificate?>) -> OSStatus
 ```
 
+```c
+OSStatus SecIdentityCopyCertificate(SecIdentityRef identityRef, SecCertificateRef*certificateRef);
+```
+
 ## Mentions
 
-- [Parsing an Identity](parsing-an-identity.md)
+- [Parsing an Identity](./parsing-an-identity.md)
 
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -37,7 +42,7 @@ For a certificate in a keychain, you can cast the `SecCertificateRef` data type 
 ## Parameters
 
 - `identityRef`: The identity object for the identity whose certificate you wish to retrieve.
-- `certificateRef`: On return, points to the certificate object associated with the specified identity. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
+- `certificateRef`: On return, points to the certificate object associated with the specified identity. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it.
 
 
 ---

@@ -1,7 +1,8 @@
 # x
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The x-coordinate of the point.
 
@@ -19,9 +20,14 @@ The x-coordinate of the point.
 var x: Int32
 ```
 
+```c
+int32_t x;
+```
+
 ## See Also
 
-- [var y: Int32](vtint32point/y.md)
+### Accessing the Coordinates
+- [var y: Int32](./y.md)
   The y-coordinate of the point.
 
 

@@ -1,7 +1,8 @@
 # init(waitUntilResponsive:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a metric that records the time for an app to display its first frame to screen and complete all extended launch tasks, or to display its first frame and wait until the app is responsive.
 
@@ -20,15 +21,23 @@ Initializes a metric that records the time for an app to display its first frame
 init(waitUntilResponsive: Bool)
 ```
 
+```objc
+- (instancetype) initWithWaitUntilResponsive:(BOOL) waitUntilResponsive;
+```
+
 ## Parameters
 
-- `waitUntilResponsive`: A Boolean that enables the metric to track time until the main thread is responsive after displaying the first frame. If `false`, the metric tracks time until the app has displayed its first frame and completed all extended launch tasks that [`extendLaunchMeasurement(forTaskID:)`](https://developer.apple.com/documentation/metrickit/mxmetricmanager/extendlaunchmeasurement(fortaskid:)) starts.
+- `waitUntilResponsive`: A Boolean that enables the metric to track time until the main thread is responsive after displaying the first frame.
+
+  If `false`, the metric tracks time until the app has displayed its first frame and completed all extended launch tasks that [`extendLaunchMeasurement(forTaskID:)`](../../MetricKit/mxmetricmanager/extendlaunchmeasurement%28fortaskid%29.md) starts.
 
 ## See Also
 
-- [class MXMetricManager](../metrickit/mxmetricmanager.md)
+### Related Documentation
+- [class MXMetricManager](../../MetricKit/mxmetricmanager.md)
   The shared object that registers you to receive metrics, creates logs for custom metrics, and gives access to past reports.
-- [init()](xctapplicationlaunchmetric/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Initializes a metric that records the time for an app to display its first frame to screen and complete all extended launch tasks.
 
 

@@ -1,7 +1,8 @@
 # RelevantContext.FitnessCondition
 
 **Framework**: RelevanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that represent a person’s fitness activity.
 
@@ -23,14 +24,15 @@ struct FitnessCondition
 ## Topics
 
 ### Conditions
-- [static var activityRingsIncomplete: RelevantContext.FitnessCondition](relevantcontext/fitnesscondition/activityringsincomplete.md)
+- [static var activityRingsIncomplete: RelevantContext.FitnessCondition](./fitnesscondition/activityringsincomplete.md)
   A person needs to complete their activity rings.
-- [static var workoutActive: RelevantContext.FitnessCondition](relevantcontext/fitnesscondition/workoutactive.md)
+- [static var workoutActive: RelevantContext.FitnessCondition](./fitnesscondition/workoutactive.md)
   A person is actively working out.
 
 ## See Also
 
-- [static func fitness(RelevantContext.FitnessCondition) -> RelevantContext](relevantcontext/fitness(_:).md)
+### Fitness clues
+- [static func fitness(RelevantContext.FitnessCondition) -> RelevantContext](./fitness%28_%29.md)
   Tells the system a widget is relevant because of a person’s fitness activity.
 
 

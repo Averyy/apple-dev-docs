@@ -1,7 +1,8 @@
 # Entity.Observable.Components
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observable collection of an entity’s attached components, allowing for reactive updates based on component changes.
 
@@ -21,12 +22,12 @@ struct Components
 
 #### Overview
 
-Reading a component from this set establishes observation tracking. See [`Observation`](https://developer.apple.com/documentation/observation) for more details.
+Reading a component from this set establishes observation tracking. See [Observation](../../../Observation/Observation.md) for more details.
 
 ## Topics
 
 ### Subscripts
-- [subscript(_:)](entity/observable-swift.struct/components-swift.struct/subscript(_:).md)
+- [subscript(_:)](./components-swift.struct/subscript%28_%29.md)
 
 
 ---

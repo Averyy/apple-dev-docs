@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBootDriverTypeInvalid](1644009-anonymous/kbootdrivertypeinvalid.md)
-- [kBootDriverTypeKEXT](1644009-anonymous/kbootdrivertypekext.md)
-- [kBootDriverTypeMKEXT](1644009-anonymous/kbootdrivertypemkext.md)
+- [kBootDriverTypeInvalid](./api-1644009-anonymous/kbootdrivertypeinvalid.md)
+- [kBootDriverTypeKEXT](./api-1644009-anonymous/kbootdrivertypekext.md)
+- [kBootDriverTypeMKEXT](./api-1644009-anonymous/kbootdrivertypemkext.md)
 
 
 ---

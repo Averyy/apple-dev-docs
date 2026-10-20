@@ -1,7 +1,8 @@
 # isMultiPageDocument
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `true`, if this document has more than one page; `false`, otherwise.
 
@@ -9,7 +10,7 @@
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,22 +20,23 @@ var isMultiPageDocument: Bool { get }
 
 ## See Also
 
-- [AssignedWorkDocument.ID](assignedworkdocument/id-swift.typealias.md)
+### Inspecting a work document
+- [AssignedWorkDocument.ID](./id-swift.typealias.md)
   A type representing the stable identity of this document.
-- [var id: AssignedWorkDocument.ID](assignedworkdocument/id-swift.property.md)
+- [var id: AssignedWorkDocument.ID](./id-swift.property.md)
   The stable identity of this document.
-- [var isPartial: Bool](assignedworkdocument/ispartial.md)
+- [var isPartial: Bool](./ispartial.md)
   Denotes whether or not this document is a partial one.
-- [AssignedWorkDocument.PartIDs](assignedworkdocument/partids-swift.enum.md)
+- [AssignedWorkDocument.PartIDs](./partids-swift.enum.md)
   An enumeration containing the identities of parts managed by this view.
-- [var partIDs: [MergeablePartsContainerPartID]](assignedworkdocument/partids-swift.property.md)
+- [var partIDs: [MergeablePartsContainerPartID]](./partids-swift.property.md)
   Returns a collection of identifiers reflecting the manifest of parts available in the document.
-- [var scoreAnnotations: [AssignedWorkDocument.ScoreAnnotation]](assignedworkdocument/scoreannotations.md)
+- [var scoreAnnotations: [AssignedWorkDocument.ScoreAnnotation]](./scoreannotations.md)
   The collection of score annotations for this work document. Treated as a multiset. i.e. The order of the elements doesn’t matter and duplicate values are allowed.
-- [var scorers: [AnyUserIdentity]](assignedworkdocument/scorers.md)
+- [var scorers: [AnyUserIdentity]](./scorers.md)
   The identities of users scoring this assigned work. Treated as a set.
-- [var pagesDebugDescription: String](assignedworkdocument/pagesdebugdescription.md)
-- [AssignedWorkDocument.Error](assignedworkdocument/error.md)
+- [var pagesDebugDescription: String](./pagesdebugdescription.md)
+- [AssignedWorkDocument.Error](./error.md)
   Errors for this document type.
 
 

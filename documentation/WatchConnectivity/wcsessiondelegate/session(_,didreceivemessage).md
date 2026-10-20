@@ -1,7 +1,8 @@
 # session(_:didReceiveMessage:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that an immediate message has arrived.
 
@@ -18,9 +19,13 @@ Tells the delegate that an immediate message has arrived.
 optional func session(_ session: WCSession, didReceiveMessage message: [String : Any])
 ```
 
+```objc
+- (void) session:(WCSession *) session didReceiveMessage:(NSDictionary<NSString *,id> *) message;
+```
+
 #### Discussion
 
-This method is called in response to a message sent by the counterpart process using the [`sendMessage(_:replyHandler:errorHandler:)`](wcsession/sendmessage(_:replyhandler:errorhandler:).md) method. This specific method is called when the counterpart specifies `nil` for the reply handler, indicating that it does not want a response. Use this method to process the message data and take whatever further actions are needed.
+This method is called in response to a message sent by the counterpart process using the [`sendMessage(_:replyHandler:errorHandler:)`](../wcsession/sendmessage%28_,replyhandler,errorhandler%29.md) method. This specific method is called when the counterpart specifies `nil` for the reply handler, indicating that it does not want a response. Use this method to process the message data and take whatever further actions are needed.
 
 Use messages to communicate quickly with the counterpart process. Messages can be sent and received only while both processes are active and running.
 
@@ -33,11 +38,12 @@ The delivery of multiple messages occurs serially, so your implementation of thi
 
 ## See Also
 
-- [func session(WCSession, didReceiveMessage: [String : Any], replyHandler: ([String : Any]) -> Void)](wcsessiondelegate/session(_:didreceivemessage:replyhandler:).md)
+### Receiving Immediate Messages
+- [func session(WCSession, didReceiveMessage: [String : Any], replyHandler: ([String : Any]) -> Void)](./session%28_,didreceivemessage,replyhandler%29.md)
   Tells the delegate that an immediate message has arrived, and it requires a response.
-- [func session(WCSession, didReceiveMessageData: Data)](wcsessiondelegate/session(_:didreceivemessagedata:).md)
+- [func session(WCSession, didReceiveMessageData: Data)](./session%28_,didreceivemessagedata%29.md)
   Tells the delegate that an immediate data message has arrived.
-- [func session(WCSession, didReceiveMessageData: Data, replyHandler: (Data) -> Void)](wcsessiondelegate/session(_:didreceivemessagedata:replyhandler:).md)
+- [func session(WCSession, didReceiveMessageData: Data, replyHandler: (Data) -> Void)](./session%28_,didreceivemessagedata,replyhandler%29.md)
   Tells the delegate that an immediate data message has arrived, and it requires a response.
 
 

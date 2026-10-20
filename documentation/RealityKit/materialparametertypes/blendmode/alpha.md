@@ -1,7 +1,8 @@
 # MaterialParameterTypes.BlendMode.alpha
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Blend by multiplying the material’s color value by its alpha value
 

@@ -1,7 +1,8 @@
 # resize(withGradientTensor:input:mode:centerResult:alignCorners:layout:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a Resize gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a Resize gradient operation and returns the result tensor.
 
 ```swift
 func resize(withGradientTensor gradient: MPSGraphTensor, input: MPSGraphTensor, mode: MPSGraphResizeMode, centerResult: Bool, alignCorners: Bool, layout: MPSGraphTensorNamedDataLayout, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) resizeWithGradientTensor:(MPSGraphTensor *) gradient input:(MPSGraphTensor *) input mode:(MPSGraphResizeMode) mode centerResult:(BOOL) centerResult alignCorners:(BOOL) alignCorners layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
 #### Return Value

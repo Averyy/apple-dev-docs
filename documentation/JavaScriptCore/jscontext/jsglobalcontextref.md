@@ -1,7 +1,8 @@
 # jsGlobalContextRef
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the C representation of the JavaScript context.
 
@@ -19,13 +20,18 @@ Returns the C representation of the JavaScript context.
 var jsGlobalContextRef: JSGlobalContextRef! { get }
 ```
 
+```objc
+@property (readonly) JSGlobalContextRef JSGlobalContextRef;
+```
+
 #### Discussion
 
 See `JSContextRef` for the C JavaScriptCore API.
 
 ## See Also
 
-- [init!(JSGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:)-9m51.md)
+### Working with the C JavaScriptCore API
+- [init!(JSGlobalContextRef: JSGlobalContextRef!)](./init%28jsglobalcontextref%29-9m51.md)
   Creates a JavaScript context object from the equivalent C representation.
 
 

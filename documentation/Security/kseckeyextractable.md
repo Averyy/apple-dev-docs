@@ -1,7 +1,8 @@
 # kSecKeyExtractable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. This key can be wrapped.
 
@@ -14,9 +15,13 @@ Type uint32; value is nonzero. This key can be wrapped.
 var kSecKeyExtractable: Int32 { get }
 ```
 
+```c
+kSecKeyExtractable
+```
+
 ## Mentions
 
-- [Storing Keys as Data](storing-keys-as-data.md)
+- [Storing Keys as Data](./storing-keys-as-data.md)
 
 
 ---

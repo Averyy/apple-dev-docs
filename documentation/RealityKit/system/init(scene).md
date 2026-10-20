@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new system.
@@ -12,7 +13,7 @@ Creates a new system.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,11 +24,11 @@ Creates a new system.
 
 ## Mentions
 
-- [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
+- [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
 #### Discussion
 
-There’s no need to instantiate your own systems, so don’t call this method. Instead, register your system with RealityKit by calling [`registerSystem()`](system/registersystem().md). RealityKit automatically creates an instance of every registered system for every scene.
+There’s no need to instantiate your own systems, so don’t call this method. Instead, register your system with RealityKit by calling [`registerSystem()`](./registersystem%28%29.md). RealityKit automatically creates an instance of every registered system for every scene.
 
 ## Parameters
 

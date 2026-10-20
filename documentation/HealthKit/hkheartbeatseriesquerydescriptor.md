@@ -1,7 +1,8 @@
 # HKHeartbeatSeriesQueryDescriptor
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A query interface that reads the heartbeat series data stored in a heartbeat sample using Swift concurrency.
 
@@ -10,7 +11,7 @@ A query interface that reads the heartbeat series data stored in a heartbeat sam
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,7 +22,7 @@ struct HKHeartbeatSeriesQueryDescriptor
 
 #### Overview
 
-Use [`HKHeartbeatSeriesQueryDescriptor`](hkheartbeatseriesquerydescriptor.md) to read the heartbeat data included in a [`HKHeartbeatSeriesSample`](hkheartbeatseriessample.md). To read the individual heartbeats, create a heartbeat series query descriptor using the desired series sample, and then call the [`results(for:)`](hkheartbeatseriesquerydescriptor/results(for:).md) method on the descriptor.
+Use [`HKHeartbeatSeriesQueryDescriptor`](./hkheartbeatseriesquerydescriptor.md) to read the heartbeat data included in a [`HKHeartbeatSeriesSample`](./hkheartbeatseriessample.md). To read the individual heartbeats, create a heartbeat series query descriptor using the desired series sample, and then call the [`results(for:)`](./hkheartbeatseriesquerydescriptor/results%28for%29.md) method on the descriptor.
 
 ```swift
 // Create the descriptor.
@@ -39,51 +40,52 @@ for try await heartbeat in series {
 }
 ```
 
-While this method returns an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), unlike the long-running queries, this sequence has a finite size. Iterating over the sequence asynchronously returns heartbeat data, automatically terminating after you receive all the data.
+While this method returns an [`AsyncSequence`](../Swift/asyncsequence.md), unlike the long-running queries, this sequence has a finite size. Iterating over the sequence asynchronously returns heartbeat data, automatically terminating after you receive all the data.
 
 ## Topics
 
 ### Creating Heartbeat Series Query Descriptors
-- [init(HKHeartbeatSeriesSample)](hkheartbeatseriesquerydescriptor/init(_:).md)
+- [init(HKHeartbeatSeriesSample)](./hkheartbeatseriesquerydescriptor/init%28_%29.md)
   Creates a heartbeat series query descriptor.
 ### Running Queries
-- [func results(for: HKHealthStore) -> HKHeartbeatSeriesQueryDescriptor.Results](hkheartbeatseriesquerydescriptor/results(for:).md)
+- [func results(for: HKHealthStore) -> HKHeartbeatSeriesQueryDescriptor.Results](./hkheartbeatseriesquerydescriptor/results%28for%29.md)
   Runs a one-shot query that returns an asynchronous sequence of data representing individual heartbeats.
-- [HKHeartbeatSeriesQueryDescriptor.Results](hkheartbeatseriesquerydescriptor/results.md)
+- [HKHeartbeatSeriesQueryDescriptor.Results](./hkheartbeatseriesquerydescriptor/results.md)
   An asynchronous sequence that emits data about individual heartbeats from a heartbeat series sample.
-- [HKHeartbeatSeriesQueryDescriptor.Heartbeat](hkheartbeatseriesquerydescriptor/heartbeat.md)
+- [HKHeartbeatSeriesQueryDescriptor.Heartbeat](./hkheartbeatseriesquerydescriptor/heartbeat.md)
   Data about an individual heartbeat.
 ### Accessing Query Properties
-- [var sample: HKHeartbeatSeriesSample](hkheartbeatseriesquerydescriptor/sample.md)
+- [var sample: HKHeartbeatSeriesSample](./hkheartbeatseriesquerydescriptor/sample.md)
   The sample containing the heartbeat series.
 ### Default Implementations
-- [HKAsyncSequenceQuery Implementations](hkheartbeatseriesquerydescriptor/hkasyncsequencequery-implementations.md)
+- [HKAsyncSequenceQuery Implementations](./hkheartbeatseriesquerydescriptor/hkasyncsequencequery-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HKAsyncSequenceQuery](hkasyncsequencequery.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKAsyncSequenceQuery](./hkasyncsequencequery.md)
 
 ## See Also
 
-- [struct HKQuantitySeriesSampleQueryDescriptor](hkquantityseriessamplequerydescriptor.md)
+### Series queries
+- [struct HKQuantitySeriesSampleQueryDescriptor](./hkquantityseriessamplequerydescriptor.md)
   A query interface that reads the series data associated with quantity samples using Swift concurrency.
-- [class HKQuantitySeriesSampleQuery](hkquantityseriessamplequery.md)
+- [class HKQuantitySeriesSampleQuery](./hkquantityseriessamplequery.md)
   A query that accesses the series data associated with a quantity sample.
-- [struct HKWorkoutRouteQueryDescriptor](hkworkoutroutequerydescriptor.md)
+- [struct HKWorkoutRouteQueryDescriptor](./hkworkoutroutequerydescriptor.md)
   A query interface that reads the location data stored in a workout route using Swift concurrency.
-- [class HKWorkoutRouteQuery](hkworkoutroutequery.md)
+- [class HKWorkoutRouteQuery](./hkworkoutroutequery.md)
   A query to access the location data stored in a workout route.
-- [class HKHeartbeatSeriesQuery](hkheartbeatseriesquery.md)
+- [class HKHeartbeatSeriesQuery](./hkheartbeatseriesquery.md)
   A query that returns the heartbeat data contained in a heartbeat series sample.
-- [struct HKElectrocardiogramQueryDescriptor](hkelectrocardiogramquerydescriptor.md)
+- [struct HKElectrocardiogramQueryDescriptor](./hkelectrocardiogramquerydescriptor.md)
   A query interface that reads the underlying voltage measurements for an electrocardiogram sample using Swift concurrency.
-- [class HKElectrocardiogramQuery](hkelectrocardiogramquery.md)
+- [class HKElectrocardiogramQuery](./hkelectrocardiogramquery.md)
   A query that returns the underlying voltage measurements for an electrocardiogram sample.
-- [class HKWorkoutEffortRelationship](hkworkouteffortrelationship.md)
-- [class HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
+- [class HKWorkoutEffortRelationship](./hkworkouteffortrelationship.md)
+- [class HKWorkoutEffortRelationshipQuery](./hkworkouteffortrelationshipquery.md)
 
 
 ---

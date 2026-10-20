@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Unique system identifier for this media option, used for programmatic selection and persistence across sessions.
 
@@ -14,6 +15,10 @@ Unique system identifier for this media option, used for programmatic selection 
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
 

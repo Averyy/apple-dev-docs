@@ -1,7 +1,8 @@
 # displayedReadOnlyPixelBuffer()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the pixel buffer which is currently being displayed.
 
@@ -29,9 +30,10 @@ CVReadOnlyPixelBuffer can be nil if the current player’s rate is non-zero, dis
 
 ## See Also
 
-- [var pixelBufferAttributes: [String : Any]?](avplayerlayer/pixelbufferattributes.md)
+### Processing pixel buffers
+- [var pixelBufferAttributes: [String : Any]?](./pixelbufferattributes.md)
   The attributes of the visual output that displays in the player layer during playback.
-- [func displayedPixelBuffer() -> CVPixelBuffer?](avplayerlayer/displayedpixelbuffer.md)
+- [func displayedPixelBuffer() -> CVPixelBuffer?](./displayedpixelbuffer%28%29.md)
   Returns the pixel buffer that the player layer currently displays.
 
 

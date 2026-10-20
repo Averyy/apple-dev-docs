@@ -1,7 +1,8 @@
 # MPSImageBatchSynchronize(_:_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes any copy of the specified image batch from the device’s caches, and, if needed, invalidates any CPU caches.
 
@@ -17,6 +18,10 @@ Removes any copy of the specified image batch from the device’s caches, and, i
 
 ```swift
 func MPSImageBatchSynchronize(_ batch: [MPSImage], _ cmdBuf: any MTLCommandBuffer)
+```
+
+```c
+void MPSImageBatchSynchronize(MPSImageBatch *batch, id<MTLCommandBuffer>cmdBuf);
 ```
 
 

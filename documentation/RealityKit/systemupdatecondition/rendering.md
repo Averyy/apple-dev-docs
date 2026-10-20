@@ -1,7 +1,8 @@
 # rendering
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A condition that is active whenever an update for rendering may be needed, usually matching the refresh rate of the display.
 

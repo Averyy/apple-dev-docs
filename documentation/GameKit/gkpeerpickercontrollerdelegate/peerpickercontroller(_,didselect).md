@@ -1,15 +1,18 @@
 # peerPickerController(_:didSelect:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user selected a connection type.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use MCBrowserViewController along with MCBrowserViewControllerDelegate from the MultipeerConnectivity framework.
 
 ## Declaration
 
@@ -17,11 +20,15 @@ Tells the delegate that the user selected a connection type.
 optional func peerPickerController(_ picker: GKPeerPickerController, didSelect type: GKPeerPickerConnectionType)
 ```
 
+```objc
+- (void) peerPickerController:(GKPeerPickerController *) picker didSelectConnectionType:(GKPeerPickerConnectionType) type;
+```
+
 #### Discussion
 
 If the peer picker is configured to allow users to choose between multiple connection types, this method is called when users select the connection type they want to use. Your delegate implements this method if you want to override the behavior for a particular connection type.
 
-> ❗ **Important**:  In iOS 3.0, the peer picker can configure Bluetooth connections ([`GKPeerPickerConnectionType.nearby`](gkpeerpickerconnectiontype/nearby.md)). If the user chooses an Internet connection ([`GKPeerPickerConnectionType.online`](gkpeerpickerconnectiontype/online.md)), your delegate should dismiss the dialog and present its own user interface to configure the Internet connection:
+> ❗ **Important**:  In iOS 3.0, the peer picker can configure Bluetooth connections ([`GKPeerPickerConnectionType.nearby`](../gkpeerpickerconnectiontype/nearby.md)). If the user chooses an Internet connection ([`GKPeerPickerConnectionType.online`](../gkpeerpickerconnectiontype/online.md)), your delegate should dismiss the dialog and present its own user interface to configure the Internet connection:
 
 ```objc
 - (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type {
@@ -39,7 +46,8 @@ If the peer picker is configured to allow users to choose between multiple conne
 
 ## See Also
 
-- [func peerPickerController(GKPeerPickerController, sessionFor: GKPeerPickerConnectionType) -> GKSession](gkpeerpickercontrollerdelegate/peerpickercontroller(_:sessionfor:).md)
+### Creating a Session for the Peer Picker
+- [func peerPickerController(GKPeerPickerController, sessionFor: GKPeerPickerConnectionType) -> GKSession](./peerpickercontroller%28_,sessionfor%29.md)
   Asks the delegate to return a session for the specified connection type.
 
 

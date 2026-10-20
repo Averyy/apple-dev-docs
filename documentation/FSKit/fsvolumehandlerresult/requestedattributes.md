@@ -1,7 +1,8 @@
 # requestedAttributes
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set of attributes to populate.
 
@@ -14,9 +15,13 @@ A set of attributes to populate.
 class var requestedAttributes: FSItem.GetAttributesRequest { get }
 ```
 
+```objc
+@property (class, nonatomic, strong, readonly) FSItemGetAttributesRequest * requestedAttributes;
+```
+
 #### Discussion
 
-Your module populates these attributes in [`FSItem.Attributes`](fsitem/attributes.md) instances.
+Your module populates these attributes in [`FSItem.Attributes`](../fsitem/attributes.md) instances.
 
 Different operations may require different attribute sets. Access this property through the relevant result subclass, such as ``FSLookupItemResult.requestedAttributes`.
 

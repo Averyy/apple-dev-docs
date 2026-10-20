@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the session.
 
@@ -22,15 +23,16 @@ The current state of the session.
 
 #### Discussion
 
-Use this property to get the current state value, or configure a subscriber to detect changes to the value. To change the state of a session, call the [`join()`](groupsession/join().md) and [`leave()`](groupsession/leave().md) methods.
+Use this property to get the current state value, or configure a subscriber to detect changes to the value. To change the state of a session, call the [`join()`](./join%28%29.md) and [`leave()`](./leave%28%29.md) methods.
 
-If a failure occurs or the session ends, the session object transitions to the [`GroupSession.State.invalidated(reason:)`](groupsession/state-swift.enum/invalidated(reason:).md)state. If the session ends because of an error, it provides information about that error.
+If a failure occurs or the session ends, the session object transitions to the [`GroupSession.State.invalidated(reason:)`](./state-swift.enum/invalidated%28reason%29.md)state. If the session ends because of an error, it provides information about that error.
 
 ## See Also
 
-- [GroupSession.State](groupsession/state-swift.enum.md)
+### Getting the session details
+- [GroupSession.State](./state-swift.enum.md)
   The possible states of a session.
-- [let id: UUID](groupsession/id.md)
+- [let id: UUID](./id.md)
   The unique identifier of the current session.
 
 

@@ -1,7 +1,8 @@
 # videoDevices
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the continuity device’s video-capture devices available to your app.
 
@@ -12,6 +13,10 @@ An array of the continuity device’s video-capture devices available to your ap
 
 ```swift
 var videoDevices: [AVCaptureDevice] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureDevice *> * videoDevices;
 ```
 
 

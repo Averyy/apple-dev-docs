@@ -1,17 +1,22 @@
 # write(to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the receiver’s data to a pasteboard.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func write(to pasteboard: NSPasteboard)
+```
+
+```objc
+- (void) writeToPasteboard:(NSPasteboard *) pasteboard;
 ```
 
 ## Parameters

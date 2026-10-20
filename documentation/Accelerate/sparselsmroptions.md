@@ -1,23 +1,28 @@
 # SparseLSMROptions
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for creating a least squares minimum residual method.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct SparseLSMROptions
+```
+
+```c
+typedef struct { ... } SparseLSMROptions;
 ```
 
 #### Overview
@@ -26,50 +31,51 @@ LSMR is a minimal residual (MINRES) method for solving least squares. Use LSMR t
 
 Although LSMR is equivalent to applying MINRES to the normal equations *A__ᵀ__Ax = A__ᵀ__b* in exact arithmetic, it has superior numerical behavior and is the preferred method. Due to the implicit squaring of the condition of *A* in the normal equations, LSMR may struggle to converge in single precision. Use double-precision arithmetic where possible.
 
-For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](sparseconjugategradient(_:).md). For square, full-rank unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](sparsegmres(_:).md).
+For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](./sparseconjugategradient%28_%29.md). For square, full-rank unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](./sparsegmres%28_%29.md).
 
 ## Topics
 
 ### Initializers
-- [init()](sparselsmroptions/init.md)
+- [init()](./sparselsmroptions/init%28%29.md)
   Returns a new LSMR options structure.
-- [init(reportError: ((UnsafePointer<CChar>) -> Void)?, lambda: Double, nvec: Int32, convergenceTest: SparseLSMRConvergenceTest_t, atol: Double, rtol: Double, btol: Double, conditionLimit: Double, maxIterations: Int32, reportStatus: ((UnsafePointer<CChar>) -> Void)?)](sparselsmroptions/init(reporterror:lambda:nvec:convergencetest:atol:rtol:btol:conditionlimit:maxiterations:reportstatus:).md)
+- [init(reportError: ((UnsafePointer<CChar>) -> Void)?, lambda: Double, nvec: Int32, convergenceTest: SparseLSMRConvergenceTest_t, atol: Double, rtol: Double, btol: Double, conditionLimit: Double, maxIterations: Int32, reportStatus: ((UnsafePointer<CChar>) -> Void)?)](./sparselsmroptions/init%28reporterror,lambda,nvec,convergencetest,atol,rtol,btol,conditionlimit,maxiterations,reportstatus%29.md)
   Returns a new LSMR options structure using the specified parameters.
 ### Inspecting LSMR Options
-- [var atol: Double](sparselsmroptions/atol.md)
+- [var atol: Double](./sparselsmroptions/atol.md)
   The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
-- [var btol: Double](sparselsmroptions/btol.md)
+- [var btol: Double](./sparselsmroptions/btol.md)
   The *B* tolerance (Fong-Saunders test only).
-- [var conditionLimit: Double](sparselsmroptions/conditionlimit.md)
+- [var conditionLimit: Double](./sparselsmroptions/conditionlimit.md)
   The condition number limit (Fong-Saunders test only).
-- [var convergenceTest: SparseLSMRConvergenceTest_t](sparselsmroptions/convergencetest.md)
+- [var convergenceTest: SparseLSMRConvergenceTest_t](./sparselsmroptions/convergencetest.md)
   The convergence test to use for iterative solve methods.
-- [struct SparseLSMRConvergenceTest_t](sparselsmrconvergencetest_t.md)
+- [struct SparseLSMRConvergenceTest_t](./sparselsmrconvergencetest_t.md)
   Constants that specify the type of convergence test.
-- [var lambda: Double](sparselsmroptions/lambda.md)
+- [var lambda: Double](./sparselsmroptions/lambda.md)
   The damping parameter lambda for regularized least squares.
-- [var maxIterations: Int32](sparselsmroptions/maxiterations.md)
+- [var maxIterations: Int32](./sparselsmroptions/maxiterations.md)
   The maximum number of iterations.
-- [var nvec: Int32](sparselsmroptions/nvec.md)
+- [var nvec: Int32](./sparselsmroptions/nvec.md)
   The number of vectors to use for local reorthogonalization.
-- [var reportError: ((UnsafePointer<CChar>) -> Void)?](sparselsmroptions/reporterror.md)
+- [var reportError: ((UnsafePointer<CChar>) -> Void)?](./sparselsmroptions/reporterror.md)
   An optional error-reporting routine.
-- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](sparselsmroptions/reportstatus.md)
+- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](./sparselsmroptions/reportstatus.md)
   An optional status-reporting routine.
-- [var rtol: Double](sparselsmroptions/rtol.md)
+- [var rtol: Double](./sparselsmroptions/rtol.md)
   The relative convergence tolerance (default test only).
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func SparseLSMR() -> SparseIterativeMethod](sparselsmr().md)
+### Sparse Iterative Methods for Overdetermined and Underdetermined Systems
+- [func SparseLSMR() -> SparseIterativeMethod](./sparselsmr%28%29.md)
   Returns a default least squares minimum residual (LSMR) method.
-- [func SparseLSMR(SparseLSMROptions) -> SparseIterativeMethod](sparselsmr(_:).md)
+- [func SparseLSMR(SparseLSMROptions) -> SparseIterativeMethod](./sparselsmr%28_%29.md)
   Returns a least squares minimum residual method with specified options.
 
 

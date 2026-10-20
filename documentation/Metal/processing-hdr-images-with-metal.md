@@ -1,6 +1,8 @@
 # Processing HDR images with Metal
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [ProcessingHDRImagesWithMetal.zip](https://docs-assets.developer.apple.com/published/8bd4230f1aa0/ProcessingHDRImagesWithMetal.zip)
 
 Implement a post-processing pipeline using the latest features on Apple GPUs.
 
@@ -14,21 +16,22 @@ Implement a post-processing pipeline using the latest features on Apple GPUs.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10161: Explore HDR rendering with EDR`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10161/), and WWDC20 session [`10602: Harness Apple GPUs with Metal`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10602/).
+> **Note**: This sample code project is associated with WWDC21 session [10161: Explore HDR rendering with EDR](https://developer.apple.com/wwdc21/10161/), and WWDC20 session [10602: Harness Apple GPUs with Metal](https://developer.apple.com/wwdc20/10602/).
 
 ## See Also
 
-- [Displaying HDR content in a Metal layer](displaying-hdr-content-in-a-metal-layer.md)
+### High dynamic range content
+- [Displaying HDR content in a Metal layer](./displaying-hdr-content-in-a-metal-layer.md)
   Bring your high dynamic range (HDR) content to compatible Mac displays.
-- [Determining support for EDR values](determining-support-for-edr-values.md)
+- [Determining support for EDR values](./determining-support-for-edr-values.md)
   Check whether a display supports EDR.
-- [Using color spaces to display HDR content](using-color-spaces-to-display-hdr-content.md)
+- [Using color spaces to display HDR content](./using-color-spaces-to-display-hdr-content.md)
   Use a color space when you don’t need to edit or process the pixel data.
-- [Using system tone mapping on video content](using-system-tone-mapping-on-video-content.md)
+- [Using system tone mapping on video content](./using-system-tone-mapping-on-video-content.md)
   Use EDR metadata to apply the default system tone mapping to a layer.
-- [Performing your own tone mapping](performing-your-own-tone-mapping.md)
+- [Performing your own tone mapping](./performing-your-own-tone-mapping.md)
   Apply your own tone mapping to get the exact behavior you want.
-- [Implementing tone mapping on reference displays](implementing-tone-mapping-on-reference-displays.md)
+- [Implementing tone mapping on reference displays](./implementing-tone-mapping-on-reference-displays.md)
   Detect reference displays and keep your content within the capabilities of the display hardware.
 
 

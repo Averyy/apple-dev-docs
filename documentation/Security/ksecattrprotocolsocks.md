@@ -1,7 +1,8 @@
 # kSecAttrProtocolSOCKS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 SOCKS  protocol.
 
@@ -18,6 +19,10 @@ SOCKS  protocol.
 
 ```swift
 let kSecAttrProtocolSOCKS: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolSOCKS;
 ```
 
 

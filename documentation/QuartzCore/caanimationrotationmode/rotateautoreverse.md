@@ -1,7 +1,8 @@
 # rotateAutoReverse
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -17,13 +18,18 @@
 static let rotateAutoReverse: CAAnimationRotationMode
 ```
 
+```c
+extern CAAnimationRotationMode const kCAAnimationRotateAutoReverse;
+```
+
 #### Discussion
 
 The objects travel at a 180 degree tangent to the path.
 
 ## See Also
 
-- [static let rotateAuto: CAAnimationRotationMode](caanimationrotationmode/rotateauto.md)
+### Constants
+- [static let rotateAuto: CAAnimationRotationMode](./rotateauto.md)
 
 
 ---

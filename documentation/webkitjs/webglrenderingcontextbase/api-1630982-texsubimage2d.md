@@ -1,7 +1,8 @@
 # texSubImage2D
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void texSubImage2D(
     GLenum target, 
     GLint level, 

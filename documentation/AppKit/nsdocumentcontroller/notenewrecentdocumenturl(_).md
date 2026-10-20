@@ -1,12 +1,13 @@
 # noteNewRecentDocumentURL(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds or replaces an Open Recent menu item corresponding to the data located by the URL.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Adds or replaces an Open Recent menu item corresponding to the data located by t
 func noteNewRecentDocumentURL(_ url: URL)
 ```
 
+```objc
+- (void) noteNewRecentDocumentURL:(NSURL *) url;
+```
+
 #### Discussion
 
-`NSDocument` automatically calls this method when appropriate for `NSDocument`-based applications. Applications not based on `NSDocument` must also implement the [`application(_:openFile:)`](nsapplicationdelegate/application(_:openfile:).md) method in the application delegate to handle requests from the Open Recent menu command. You can override this method in an `NSDocument`-based application to prevent certain kinds of documents from getting into the list (but you have to identify them by URL).
+`NSDocument` automatically calls this method when appropriate for `NSDocument`-based applications. Applications not based on `NSDocument` must also implement the [`application(_:openFile:)`](../nsapplicationdelegate/application%28_,openfile%29.md) method in the application delegate to handle requests from the Open Recent menu command. You can override this method in an `NSDocument`-based application to prevent certain kinds of documents from getting into the list (but you have to identify them by URL).
 
 ## Parameters
 
@@ -24,13 +29,14 @@ func noteNewRecentDocumentURL(_ url: URL)
 
 ## See Also
 
-- [var maximumRecentDocumentCount: Int](nsdocumentcontroller/maximumrecentdocumentcount.md)
+### Managing the Open Recent Menu
+- [var maximumRecentDocumentCount: Int](./maximumrecentdocumentcount.md)
   The maximum number of items that may be presented in the standard Open Recent menu.
-- [func clearRecentDocuments(Any?)](nsdocumentcontroller/clearrecentdocuments(_:).md)
+- [func clearRecentDocuments(Any?)](./clearrecentdocuments%28_%29.md)
   Empties the recent documents list for the application.
-- [func noteNewRecentDocument(NSDocument)](nsdocumentcontroller/notenewrecentdocument(_:).md)
+- [func noteNewRecentDocument(NSDocument)](./notenewrecentdocument%28_%29.md)
   Adds or replaces an Open Recent menu item corresponding to the document.
-- [var recentDocumentURLs: [URL]](nsdocumentcontroller/recentdocumenturls.md)
+- [var recentDocumentURLs: [URL]](./recentdocumenturls.md)
   The list of recent-document URLs.
 
 

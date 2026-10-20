@@ -1,7 +1,8 @@
 # WAPerformanceMode.realtime
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that prioritizes latency at the expense of throughput, power, and other concurrent Wi-Fi use cases and devices.
 
@@ -18,7 +19,8 @@ case realtime
 
 ## See Also
 
-- [WAPerformanceMode.bulk](waperformancemode/bulk.md)
+### Setting performance modes
+- [WAPerformanceMode.bulk](./bulk.md)
   A mode that prioritizes throughput, power, and support for other concurrent Wi-Fi use cases and devices.
 
 

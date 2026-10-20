@@ -1,7 +1,8 @@
 # pattern
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the regular expression pattern.
 
@@ -20,13 +21,19 @@ Returns the regular expression pattern.
 var pattern: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * pattern;
+```
+
 ## See Also
 
-- [init(pattern: String, options: NSRegularExpression.Options) throws](nsregularexpression/init(pattern:options:).md)
+### Related Documentation
+- [init(pattern: String, options: NSRegularExpression.Options) throws](./init%28pattern,options%29.md)
   Returns an initialized NSRegularExpression instance with the specified regular expression pattern and options.
-- [var options: NSRegularExpression.Options](nsregularexpression/options-swift.property.md)
+### Getting the Regular Expression and Options
+- [var options: NSRegularExpression.Options](./options-swift.property.md)
   Returns the options used when the regular expression option was created.
-- [var numberOfCaptureGroups: Int](nsregularexpression/numberofcapturegroups.md)
+- [var numberOfCaptureGroups: Int](./numberofcapturegroups.md)
   Returns the number of capture groups in the regular expression.
 
 

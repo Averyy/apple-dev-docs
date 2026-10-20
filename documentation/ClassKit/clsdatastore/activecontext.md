@@ -1,7 +1,8 @@
 # activeContext
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently active context.
 
@@ -18,21 +19,26 @@ The currently active context.
 var activeContext: CLSContext? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) CLSContext * activeContext;
+```
+
 #### Discussion
 
 This value is `nil` if there is no currently active context.
 
-To activate a context when a student begins working on the content that the context represents, call its [`becomeActive()`](clscontext/becomeactive().md) method. To deactivate a context when the student finishes, call its [`resignActive()`](clscontext/resignactive().md) function. Only one context may be active at a time. If you activate a context, the system automatically causes any previously active context to resign.
+To activate a context when a student begins working on the content that the context represents, call its [`becomeActive()`](../clscontext/becomeactive%28%29.md) method. To deactivate a context when the student finishes, call its [`resignActive()`](../clscontext/resignactive%28%29.md) function. Only one context may be active at a time. If you activate a context, the system automatically causes any previously active context to resign.
 
 ## See Also
 
-- [var mainAppContext: CLSContext](clsdatastore/mainappcontext.md)
+### Accessing specific contexts and activities
+- [var mainAppContext: CLSContext](./mainappcontext.md)
   The app’s top-level context.
-- [var runningActivity: CLSActivity?](clsdatastore/runningactivity.md)
+- [var runningActivity: CLSActivity?](./runningactivity.md)
   The currently running activity within the currently active context.
-- [func fetchActivity(for: URL, completion: (CLSActivity?, (any Error)?) -> Void)](clsdatastore/fetchactivity(for:completion:).md)
+- [func fetchActivity(for: URL, completion: (CLSActivity?, (any Error)?) -> Void)](./fetchactivity%28for,completion%29.md)
   Fetches an activity for a given document so you can record progress on the associated task.
-- [func completeAllAssignedActivities(matching: [String])](clsdatastore/completeallassignedactivities(matching:).md)
+- [func completeAllAssignedActivities(matching: [String])](./completeallassignedactivities%28matching%29.md)
   Marks all of the assigned and active activities for the given context path as complete.
 
 

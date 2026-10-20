@@ -1,16 +1,19 @@
 # reversesTitleShadowWhenHighlighted
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the title shadow changes when the button is highlighted.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS 2.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 15.0
+- iPadOS 2.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS 2.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`configurationUpdateHandler`](./configurationupdatehandler-swift.property.md) instead.
 
 ## Declaration
 
@@ -18,9 +21,13 @@ A Boolean value that determines whether the title shadow changes when the button
 var reversesTitleShadowWhenHighlighted: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL reversesTitleShadowWhenHighlighted;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the shadow changes from engrave to emboss appearance when highlighted. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](../../Swift/true.md), the shadow changes from engrave to emboss appearance when highlighted. The default value is [`false`](../../Swift/false.md).
 
 
 ---

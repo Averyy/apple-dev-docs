@@ -1,7 +1,8 @@
 # kCGImageDestinationEncodeIsBaseImage
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImageDestinationEncodeIsBaseImage: CFString
+```
+
+```c
+extern CFStringRef const kCGImageDestinationEncodeIsBaseImage;
 ```
 
 

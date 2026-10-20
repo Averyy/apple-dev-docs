@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.SecurityPolicy
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The security policies allowed for connecting to a Wi-Fi network.
 
@@ -19,45 +20,46 @@ enum SecurityPolicy
 ## Topics
 
 ### Enumeration Cases
-- [WINetworkSharingProvider.Network.SecurityPolicy.open](winetworksharingprovider/network/securitypolicy-swift.enum/open.md)
+- [WINetworkSharingProvider.Network.SecurityPolicy.open](./securitypolicy-swift.enum/open.md)
   Allows open network security, with no authentication or encryption.
-- [WINetworkSharingProvider.Network.SecurityPolicy.owe](winetworksharingprovider/network/securitypolicy-swift.enum/owe.md)
+- [WINetworkSharingProvider.Network.SecurityPolicy.owe](./securitypolicy-swift.enum/owe.md)
   Allows Opportunistic Wireless Encryption (OWE), providing encryption without authentication.
-- [WINetworkSharingProvider.Network.SecurityPolicy.wep](winetworksharingprovider/network/securitypolicy-swift.enum/wep.md)
+- [WINetworkSharingProvider.Network.SecurityPolicy.wep](./securitypolicy-swift.enum/wep.md)
   Allows WEP encryption.
-- [WINetworkSharingProvider.Network.SecurityPolicy.wpa](winetworksharingprovider/network/securitypolicy-swift.enum/wpa.md)
+- [WINetworkSharingProvider.Network.SecurityPolicy.wpa](./securitypolicy-swift.enum/wpa.md)
   Allows WPA1 authentication.
-- [WINetworkSharingProvider.Network.SecurityPolicy.wpa2](winetworksharingprovider/network/securitypolicy-swift.enum/wpa2.md)
+- [WINetworkSharingProvider.Network.SecurityPolicy.wpa2](./securitypolicy-swift.enum/wpa2.md)
   Allows WPA2 authentication.
-- [WINetworkSharingProvider.Network.SecurityPolicy.wpa3](winetworksharingprovider/network/securitypolicy-swift.enum/wpa3.md)
+- [WINetworkSharingProvider.Network.SecurityPolicy.wpa3](./securitypolicy-swift.enum/wpa3.md)
   Allows WPA3 authentication.
 ### Instance Properties
-- [var description: String](winetworksharingprovider/network/securitypolicy-swift.enum/description.md)
+- [var description: String](./securitypolicy-swift.enum/description.md)
   A string description of the security policy, for debugging purposes.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../../Swift/caseiterable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let securityPolicy: Set<WINetworkSharingProvider.Network.SecurityPolicy>](winetworksharingprovider/network/securitypolicy-swift.property.md)
+### Getting the network credentials
+- [let securityPolicy: Set<WINetworkSharingProvider.Network.SecurityPolicy>](./securitypolicy-swift.property.md)
   The set of security types allowed for connecting to this network.
-- [let credentials: WINetworkSharingProvider.Network.Credentials](winetworksharingprovider/network/credentials-swift.property.md)
+- [let credentials: WINetworkSharingProvider.Network.Credentials](./credentials-swift.property.md)
   The credentials the accessory needs to connect to this network.
-- [WINetworkSharingProvider.Network.Credentials](winetworksharingprovider/network/credentials-swift.enum.md)
+- [WINetworkSharingProvider.Network.Credentials](./credentials-swift.enum.md)
   Credentials for authenticating to a Wi-Fi network.
-- [let captivePortalLogin: WINetworkSharingProvider.Network.CaptivePortalLogin?](winetworksharingprovider/network/captiveportallogin-swift.property.md)
+- [let captivePortalLogin: WINetworkSharingProvider.Network.CaptivePortalLogin?](./captiveportallogin-swift.property.md)
   The captive portal login information for the network.
-- [WINetworkSharingProvider.Network.CaptivePortalLogin](winetworksharingprovider/network/captiveportallogin-swift.struct.md)
+- [WINetworkSharingProvider.Network.CaptivePortalLogin](./captiveportallogin-swift.struct.md)
   Captive portal login information for a Wi-Fi network.
 
 

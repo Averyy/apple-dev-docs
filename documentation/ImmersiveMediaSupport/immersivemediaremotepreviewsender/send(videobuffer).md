@@ -1,7 +1,8 @@
 # send(videoBuffer:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the video frame to the receivers.
 
@@ -16,7 +17,7 @@ func send(videoBuffer: CMSampleBuffer) async throws
 
 #### Discussion
 
-> **Note**: This function throws if anything fails while sending the frame, for example, if the frame has an invalid format or data.
+> **Throws**: This function throws if anything fails while sending the frame, for example, if the frame has an invalid format or data.
 
 ## Parameters
 

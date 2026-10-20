@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsFeaturedMusicVideosView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A collection of selected music videos to be featured with the artist.
 
@@ -10,7 +11,7 @@ A collection of selected music videos to be featured with the artist.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsFeaturedMusicVideosView.Attributes
 ```
 

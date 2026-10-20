@@ -1,7 +1,8 @@
 # BEImportOptions
 
 **Framework**: BrowserKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Options for importing browsing data.
 
@@ -15,46 +16,51 @@ Options for importing browsing data.
 class BEImportOptions
 ```
 
+```objc
+@interface BEImportOptions : NSObject
+```
+
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md)
 
 #### Overview
 
-The [`requestImport(for:completionHandler:)`](bebrowserdataimportmanager/requestimport(for:completionhandler:).md) returns an instance of this class, which indicates whether the import needs to source from files rather than direct browser-to-browser transfer.
+The [`requestImport(for:completionHandler:)`](./bebrowserdataimportmanager/requestimport%28for,completionhandler%29.md) returns an instance of this class, which indicates whether the import needs to source from files rather than direct browser-to-browser transfer.
 
 ## Topics
 
 ### Creating import options
-- [init?(coder: NSCoder)](beimportoptions/init(coder:).md)
+- [init?(coder: NSCoder)](./beimportoptions/init%28coder%29.md)
   Initializes imports from a decoder.
-- [init(importFromFiles: Bool)](beimportoptions/init(importfromfiles:).md)
+- [init(importFromFiles: Bool)](./beimportoptions/init%28importfromfiles%29.md)
   Initializes imports with a file import preference.
 ### Configuring import preferences
-- [var importFromFiles: Bool](beimportoptions/importfromfiles.md)
+- [var importFromFiles: Bool](./beimportoptions/importfromfiles.md)
   A Boolean value that indicates whether to import browser data from files.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class BEBrowserDataImportManager](bebrowserdataimportmanager.md)
+### Data import management
+- [class BEBrowserDataImportManager](./bebrowserdataimportmanager.md)
   A class that handles importing browsing data from other browsers.
-- [class BEImportMetadata](beimportmetadata.md)
+- [class BEImportMetadata](./beimportmetadata.md)
   Metadata that describes import capabilities for browser data transfers.
 
 

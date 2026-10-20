@@ -1,7 +1,8 @@
 # Process.TerminationReason
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the termination reason values that the system returns.
 
@@ -14,29 +15,34 @@ Constants that specify the termination reason values that the system returns.
 enum TerminationReason
 ```
 
+```c
+enum NSTaskTerminationReason : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [Process.TerminationReason.exit](process/terminationreason-swift.enum/exit.md)
+- [Process.TerminationReason.exit](./terminationreason-swift.enum/exit.md)
   The task exited normally.
-- [Process.TerminationReason.uncaughtSignal](process/terminationreason-swift.enum/uncaughtsignal.md)
+- [Process.TerminationReason.uncaughtSignal](./terminationreason-swift.enum/uncaughtsignal.md)
   The task exited due to an uncaught signal.
 ### Initializers
-- [init?(rawValue: Int)](process/terminationreason-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./terminationreason-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum QualityOfService](qualityofservice.md)
+### Working with constants
+- [enum QualityOfService](../qualityofservice.md)
   Constants that indicate the nature and importance of work to the system.
 
 

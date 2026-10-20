@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The activity’s universally unique identifier (UUID).
 
@@ -19,27 +20,32 @@ The activity’s universally unique identifier (UUID).
 var uuid: UUID { get }
 ```
 
+```objc
+@property (copy, readonly) NSUUID * UUID;
+```
+
 #### Discussion
 
-HealthKit assigns a UUID to the workout activity when you create it. If you want to add your own unique ID, add it to the activity’s [`metadata`](hkworkoutactivity/metadata.md) using the [`HKMetadataKeyExternalUUID`](hkmetadatakeyexternaluuid.md) key.
+HealthKit assigns a UUID to the workout activity when you create it. If you want to add your own unique ID, add it to the activity’s [`metadata`](./metadata.md) using the [`HKMetadataKeyExternalUUID`](../hkmetadatakeyexternaluuid.md) key.
 
 ## See Also
 
-- [var startDate: Date](hkworkoutactivity/startdate.md)
+### Accessing workout data
+- [var startDate: Date](./startdate.md)
   The activitiy’s start date and time.
-- [var endDate: Date?](hkworkoutactivity/enddate.md)
+- [var endDate: Date?](./enddate.md)
   The activity’s end date and time.
-- [var duration: TimeInterval](hkworkoutactivity/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The activity’s duration, measured in seconds.
-- [var allStatistics: [HKQuantityType : HKStatistics]](hkworkoutactivity/allstatistics.md)
+- [var allStatistics: [HKQuantityType : HKStatistics]](./allstatistics.md)
   A dictionary that contains all the statistics for the activity.
-- [func statistics(for: HKQuantityType) -> HKStatistics?](hkworkoutactivity/statistics(for:).md)
+- [func statistics(for: HKQuantityType) -> HKStatistics?](./statistics%28for%29.md)
   Returns the activity’s statistics for the provided quantity type.
-- [var metadata: [String : Any]?](hkworkoutactivity/metadata.md)
+- [var metadata: [String : Any]?](./metadata.md)
   Metadata that describes the activity.
-- [var workoutConfiguration: HKWorkoutConfiguration](hkworkoutactivity/workoutconfiguration.md)
+- [var workoutConfiguration: HKWorkoutConfiguration](./workoutconfiguration.md)
   The configuration information for this part of the workout.
-- [var workoutEvents: [HKWorkoutEvent]](hkworkoutactivity/workoutevents.md)
+- [var workoutEvents: [HKWorkoutEvent]](./workoutevents.md)
   An array of events associated with the containing workout and occurring during the activity’s duration.
 
 

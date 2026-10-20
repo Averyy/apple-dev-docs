@@ -1,7 +1,8 @@
 # campaignToken
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A campaign token for the Apple Services affiliate program.
 

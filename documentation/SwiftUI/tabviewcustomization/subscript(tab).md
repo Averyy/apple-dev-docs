@@ -1,7 +1,8 @@
 # subscript(tab:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 The customization of the tab, identified by its customization identifier.
 

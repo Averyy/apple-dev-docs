@@ -1,7 +1,8 @@
 # MediaIntelligenceError.resultFetching
 
 **Framework**: Media Intelligence  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework can’t retrieve analysis results.
 
@@ -21,15 +22,16 @@ case resultFetching
 
 #### Discussion
 
-This error occurs when the framework can’t find a result that matches the type expected by a [`VideoAnalyzer.Request`](videoanalyzer/request.md). Confirm that you’re passing the correct request type to [`analyze(_:for:)`](videoanalyzer/analyze(_:for:).md).
+This error occurs when the framework can’t find a result that matches the type expected by a [`VideoAnalyzer.Request`](../videoanalyzer/request.md). Confirm that you’re passing the correct request type to [`analyze(_:for:)`](../videoanalyzer/analyze%28_,for%29.md).
 
 ## See Also
 
-- [MediaIntelligenceError.faceGroupProcessing](mediaintelligenceerror/facegroupprocessing.md)
+### Errors
+- [MediaIntelligenceError.faceGroupProcessing](./facegroupprocessing.md)
   The framework can’t complete a face grouping operation.
-- [MediaIntelligenceError.mediaProcessing](mediaintelligenceerror/mediaprocessing.md)
+- [MediaIntelligenceError.mediaProcessing](./mediaprocessing.md)
   The framework can’t process a media asset.
-- [MediaIntelligenceError.workingDirectory](mediaintelligenceerror/workingdirectory.md)
+- [MediaIntelligenceError.workingDirectory](./workingdirectory.md)
   The framework can’t access the working directory.
 
 

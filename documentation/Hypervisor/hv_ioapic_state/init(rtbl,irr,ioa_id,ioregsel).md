@@ -1,10 +1,11 @@
 # init(rtbl:irr:ioa_id:ioregsel:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

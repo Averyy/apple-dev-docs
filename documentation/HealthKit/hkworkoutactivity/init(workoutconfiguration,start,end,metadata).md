@@ -1,7 +1,8 @@
 # init(workoutConfiguration:start:end:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a workout activity using the provided configuration, start date, end date, and metadata.
 
@@ -19,11 +20,15 @@ Creates a workout activity using the provided configuration, start date, end dat
 init(workoutConfiguration: HKWorkoutConfiguration, start startDate: Date, end endDate: Date?, metadata: [String : Any]?)
 ```
 
+```objc
+- (instancetype) initWithWorkoutConfiguration:(HKWorkoutConfiguration *) workoutConfiguration startDate:(NSDate *) startDate endDate:(NSDate *) endDate metadata:(NSDictionary<NSString *,id> *) metadata;
+```
+
 #### Discussion
 
 ## Parameters
 
-- `workoutConfiguration`: The configuration information for this part of the workout. For [`HKWorkoutActivityType.swimBikeRun`](hkworkoutactivitytype/swimbikerun.md) workouts, the activity’s configuration must use the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md), [`HKWorkoutActivityType.cycling`](hkworkoutactivitytype/cycling.md), or [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) activity types. For interval training, the activity’s configuration must use the same activity type as the containing workout.
+- `workoutConfiguration`: The configuration information for this part of the workout. For [`HKWorkoutActivityType.swimBikeRun`](../hkworkoutactivitytype/swimbikerun.md) workouts, the activity’s configuration must use the [`HKWorkoutActivityType.swimming`](../hkworkoutactivitytype/swimming.md), [`HKWorkoutActivityType.cycling`](../hkworkoutactivitytype/cycling.md), or [`HKWorkoutActivityType.running`](../hkworkoutactivitytype/running.md) activity types. For interval training, the activity’s configuration must use the same activity type as the containing workout.
 - `startDate`: The activity’s start date and time.
 - `endDate`: The activity’s end date and time. Set this value to `nil` if the activity is still in progress. When set to a non-`nil` value, the end date must be equal to or later than its start date. A workout can’t have overlapping activities.
 - `metadata`: Metadata that provides additional information about the activity.

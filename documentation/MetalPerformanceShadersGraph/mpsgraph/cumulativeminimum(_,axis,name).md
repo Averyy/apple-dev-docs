@@ -1,7 +1,8 @@
 # cumulativeMinimum(_:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the cumulative minimum of the input tensor along the specified axis.
 
@@ -17,6 +18,10 @@ Computes the cumulative minimum of the input tensor along the specified axis.
 
 ```swift
 func cumulativeMinimum(_ tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) cumulativeMinimumWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

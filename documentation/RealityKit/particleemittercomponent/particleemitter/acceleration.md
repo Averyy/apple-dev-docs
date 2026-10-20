@@ -1,7 +1,8 @@
 # acceleration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constant acceleration vector, in meters per second squared, applied to all particles in the system.
 

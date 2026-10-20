@@ -1,7 +1,8 @@
 # state
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether a view has a visual effect applied.
 
@@ -14,13 +15,18 @@ A value that indicates whether a view has a visual effect applied.
 var state: NSVisualEffectView.State { get set }
 ```
 
+```objc
+@property NSVisualEffectState state;
+```
+
 #### Discussion
 
-The default value of this property is [`NSVisualEffectView.State.followsWindowActiveState`](nsvisualeffectview/state-swift.enum/followswindowactivestate.md).
+The default value of this property is [`NSVisualEffectView.State.followsWindowActiveState`](./state-swift.enum/followswindowactivestate.md).
 
 ## See Also
 
-- [NSVisualEffectView.State](nsvisualeffectview/state-swift.enum.md)
+### Enabling or Disabling the Effect
+- [NSVisualEffectView.State](./state-swift.enum.md)
   Constants to specify how the material appearance should reflect window activity state.
 
 

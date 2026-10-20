@@ -1,7 +1,8 @@
 # itemIdentifiers
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of itemIdentifiers that represent the current items in the toolbar. Setting this property will set the current items in the toolbar by diffing against items that already exist. Use this with great caution if `allowsUserCustomization` is enabled as it will override any customizations the user has made. This property is key value observable.
 
@@ -15,6 +16,10 @@ An array of itemIdentifiers that represent the current items in the toolbar. Set
 
 ```swift
 var itemIdentifiers: [NSToolbarItem.Identifier] { get set }
+```
+
+```objc
+@property (copy) NSArray<NSString *> * itemIdentifiers;
 ```
 
 

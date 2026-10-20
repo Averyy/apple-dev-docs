@@ -1,7 +1,8 @@
 # sceneUnderstanding
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An entity component that detects and reacts to features of the physical environment.
 

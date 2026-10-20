@@ -1,7 +1,8 @@
 # lodMinClamp
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum level of detail (LOD) to use when sampling from a texture.
 
@@ -10,7 +11,7 @@ The minimum level of detail (LOD) to use when sampling from a texture.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ The minimum level of detail (LOD) to use when sampling from a texture.
 var lodMinClamp: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float lodMinClamp;
+```
+
 ## Mentions
 
-- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Restricting access to specific mipmaps](../restricting-access-to-specific-mipmaps.md)
 
 #### Discussion
 
@@ -29,21 +34,22 @@ The default value is `0.0`. Clamp values are always applied, even when using an 
 
 ## See Also
 
-- [var minFilter: MTLSamplerMinMagFilter](mtlsamplerdescriptor/minfilter.md)
+### Declaring filter modes
+- [var minFilter: MTLSamplerMinMagFilter](./minfilter.md)
   The filtering option for combining pixels within one mipmap level when the sample footprint is larger than a pixel (minification).
-- [var magFilter: MTLSamplerMinMagFilter](mtlsamplerdescriptor/magfilter.md)
+- [var magFilter: MTLSamplerMinMagFilter](./magfilter.md)
   The filtering operation for combining pixels within one mipmap level when the sample footprint is smaller than a pixel (magnification).
-- [var mipFilter: MTLSamplerMipFilter](mtlsamplerdescriptor/mipfilter.md)
+- [var mipFilter: MTLSamplerMipFilter](./mipfilter.md)
   The filtering option for combining pixels between two mipmap levels.
-- [var lodMaxClamp: Float](mtlsamplerdescriptor/lodmaxclamp.md)
+- [var lodMaxClamp: Float](./lodmaxclamp.md)
   The maximum level of detail (LOD) to use when sampling from a texture.
-- [var lodAverage: Bool](mtlsamplerdescriptor/lodaverage.md)
+- [var lodAverage: Bool](./lodaverage.md)
   A Boolean value that specifies whether the GPU can use an average level of detail (LOD) when sampling from a texture.
-- [var maxAnisotropy: Int](mtlsamplerdescriptor/maxanisotropy.md)
+- [var maxAnisotropy: Int](./maxanisotropy.md)
   The number of samples that can be taken to improve the quality of sample footprints that are anisotropic.
-- [enum MTLSamplerMinMagFilter](mtlsamplerminmagfilter.md)
+- [enum MTLSamplerMinMagFilter](../mtlsamplerminmagfilter.md)
   Filtering options for determining which pixel value is returned within a mipmap level.
-- [enum MTLSamplerMipFilter](mtlsamplermipfilter.md)
+- [enum MTLSamplerMipFilter](../mtlsamplermipfilter.md)
   Filtering options for determining what pixel value is returned with multiple mipmap levels.
 
 

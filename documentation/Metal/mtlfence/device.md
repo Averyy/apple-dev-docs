@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The device object that created the fence.
@@ -20,13 +21,18 @@ The device object that created the fence.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (readonly, nonnull) id<MTLDevice> device;
+```
+
 #### Discussion
 
 Only the device that created the fence can use it.
 
 ## See Also
 
-- [var label: String?](mtlfence/label.md)
+### Identifying a fence
+- [var label: String?](./label.md)
   A string that identifies the fence.
 
 

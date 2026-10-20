@@ -1,7 +1,8 @@
 # commands(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds commands to the scene.
 
@@ -21,7 +22,7 @@ func commands<Content>(@ContentBuilder content: () -> Content) -> some Scene whe
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Building and customizing the menu bar with SwiftUI](../building-and-customizing-the-menu-bar-with-swiftui.md)
 
 #### Discussion
 
@@ -31,19 +32,20 @@ On iPadOS, commands with keyboard shortcuts are exposed in the shortcut discover
 
 ## See Also
 
-- [func commandsRemoved() -> some Scene](scene/commandsremoved.md)
+### Defining commands
+- [func commandsRemoved() -> some Scene](./commandsremoved%28%29.md)
   Removes all commands defined by the modified scene.
-- [func commandsReplaced<Content>(content: () -> Content) -> some Scene](scene/commandsreplaced(content:).md)
+- [func commandsReplaced<Content>(content: () -> Content) -> some Scene](./commandsreplaced%28content%29.md)
   Replaces all commands defined by the modified scene with the commands from the builder.
-- [protocol Commands](commands.md)
+- [protocol Commands](../commands.md)
   Conforming types represent a group of related commands that can be exposed to the user via the main menu on macOS and key commands on iOS.
-- [struct CommandMenu](commandmenu.md)
+- [struct CommandMenu](../commandmenu.md)
   Command menus are stand-alone, top-level containers for controls that perform related, app-specific commands.
-- [struct CommandGroup](commandgroup.md)
+- [struct CommandGroup](../commandgroup.md)
   Groups of controls that you can add to existing command menus.
-- [struct CommandsBuilder](commandsbuilder.md)
+- [struct CommandsBuilder](../commandsbuilder.md)
   Constructs command sets from multi-expression closures. Like `ContentBuilder`, it supports up to ten expressions in the closure body.
-- [struct CommandGroupPlacement](commandgroupplacement.md)
+- [struct CommandGroupPlacement](../commandgroupplacement.md)
   The standard locations that you can place new command groups relative to.
 
 

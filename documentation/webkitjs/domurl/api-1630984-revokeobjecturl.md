@@ -1,7 +1,8 @@
 # revokeObjectURL
 
 **Framework**: WebKit JS  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 static void revokeObjectURL(
     DOMString url
 );

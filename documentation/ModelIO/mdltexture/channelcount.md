@@ -1,7 +1,8 @@
 # channelCount
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of channels per texel.
 
@@ -19,21 +20,26 @@ The number of channels per texel.
 var channelCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger channelCount;
+```
+
 #### Discussion
 
 For example, a grayscale texture has one channel (brightness) per texel, and a color texture may have three (RGB) or four (RGBA) channels per texel.
 
 ## See Also
 
-- [var dimensions: vector_int2](mdltexture/dimensions.md)
+### Examining Texture Attributes
+- [var dimensions: vector_int2](./dimensions.md)
   The width and height, in texels, of the texture image.
-- [var rowStride: Int](mdltexture/rowstride.md)
+- [var rowStride: Int](./rowstride.md)
   The number of bytes between the first texel in a row of image data and the first texel in the next row.
-- [var channelEncoding: MDLTextureChannelEncoding](mdltexture/channelencoding.md)
+- [var channelEncoding: MDLTextureChannelEncoding](./channelencoding.md)
   The data format for each channel value per texel.
-- [var isCube: Bool](mdltexture/iscube.md)
+- [var isCube: Bool](./iscube.md)
   A Boolean value that indicates whether the texture is a cube textures.
-- [var mipLevelCount: Int](mdltexture/miplevelcount.md)
+- [var mipLevelCount: Int](./miplevelcount.md)
   The number of mipmap levels contained in the texture image data.
 
 

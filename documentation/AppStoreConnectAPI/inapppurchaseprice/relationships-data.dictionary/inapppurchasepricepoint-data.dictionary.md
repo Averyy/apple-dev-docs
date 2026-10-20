@@ -1,21 +1,22 @@
 # InAppPurchasePrice.Relationships.InAppPurchasePricePoint
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object InAppPurchasePrice.Relationships.InAppPurchasePricePoint
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchasePrice.Relationships.InAppPurchasePricePoint.Data](inapppurchaseprice/relationships-data.dictionary/inapppurchasepricepoint-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchasePrice.Relationships.InAppPurchasePricePoint.Data](./inapppurchasepricepoint-data.dictionary/data-data.dictionary.md)
   The request body you use to update an In-App Purchase price.
 
 ## Properties
@@ -24,7 +25,8 @@ object InAppPurchasePrice.Relationships.InAppPurchasePricePoint
 
 ## See Also
 
-- [object InAppPurchasePrice.Relationships.Territory](inapppurchaseprice/relationships-data.dictionary/territory-data.dictionary.md)
+### Objects
+- [object InAppPurchasePrice.Relationships.Territory](./territory-data.dictionary.md)
 
 
 ---

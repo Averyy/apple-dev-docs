@@ -1,7 +1,8 @@
 # kMDItemFSName
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The file name of the item. A CFString.
 
@@ -12,6 +13,10 @@ The file name of the item. A CFString.
 
 ```swift
 let kMDItemFSName: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSName;
 ```
 
 

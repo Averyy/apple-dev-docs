@@ -1,7 +1,8 @@
 # isArray
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the wrapped value is an array.
 

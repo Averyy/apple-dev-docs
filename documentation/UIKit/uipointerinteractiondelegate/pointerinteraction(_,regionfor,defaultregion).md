@@ -1,7 +1,8 @@
 # pointerInteraction(_:regionFor:defaultRegion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a region as the pointer moves within the interaction’s view.
 
@@ -17,19 +18,24 @@ Asks the delegate for a region as the pointer moves within the interaction’s v
 optional func pointerInteraction(_ interaction: UIPointerInteraction, regionFor request: UIPointerRegionRequest, defaultRegion: UIPointerRegion) -> UIPointerRegion?
 ```
 
+```objc
+- (UIPointerRegion *) pointerInteraction:(UIPointerInteraction *) interaction regionForRequest:(UIPointerRegionRequest *) request defaultRegion:(UIPointerRegion *) defaultRegion;
+```
+
 #### Return Value
 
 A `UIPointerRegion` in which to apply a pointer style. Return `nil` to indicate that this interaction typically doesn’t customize the pointer for the current location.
 
 ## Parameters
 
-- `interaction`: This [`UIPointerInteraction`](uipointerinteraction.md).
-- `request`: The [`UIPointerRegionRequest`](uipointerregionrequest.md) that describes the pointer’s location in the interaction’s view.
-- `defaultRegion`: The [`UIPointerRegion`](uipointerregion.md) that represents the entire surface of the interaction’s view.
+- `interaction`: This [`UIPointerInteraction`](../uipointerinteraction.md).
+- `request`: The [`UIPointerRegionRequest`](../uipointerregionrequest.md) that describes the pointer’s location in the interaction’s view.
+- `defaultRegion`: The [`UIPointerRegion`](../uipointerregion.md) that represents the entire surface of the interaction’s view.
 
 ## See Also
 
-- [func pointerInteraction(UIPointerInteraction, styleFor: UIPointerRegion) -> UIPointerStyle?](uipointerinteractiondelegate/pointerinteraction(_:stylefor:).md)
+### Defining pointer styles for regions
+- [func pointerInteraction(UIPointerInteraction, styleFor: UIPointerRegion) -> UIPointerStyle?](./pointerinteraction%28_,stylefor%29.md)
   Asks the delegate for a pointer style after an interaction receives a new region.
 
 

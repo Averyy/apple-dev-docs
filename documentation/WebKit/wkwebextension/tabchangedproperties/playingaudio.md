@@ -1,7 +1,8 @@
 # playingAudio
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the audio playback state changed.
 
@@ -16,6 +17,10 @@ Indicates the audio playback state changed.
 
 ```swift
 static var playingAudio: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesPlayingAudio
 ```
 
 

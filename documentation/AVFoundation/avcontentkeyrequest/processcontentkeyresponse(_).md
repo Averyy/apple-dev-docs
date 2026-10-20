@@ -1,7 +1,8 @@
 # processContentKeyResponse(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the specified content key response to the receiver for processing.
 
@@ -20,19 +21,24 @@ Sends the specified content key response to the receiver for processing.
 func processContentKeyResponse(_ keyResponse: AVContentKeyResponse)
 ```
 
+```objc
+- (void) processContentKeyResponse:(AVContentKeyResponse *) keyResponse;
+```
+
 #### Discussion
 
-After receiving a content key request and calling [`makeStreamingContentKeyRequestData(forApp:contentIdentifier:options:completionHandler:)`](avcontentkeyrequest/makestreamingcontentkeyrequestdata(forapp:contentidentifier:options:completionhandler:).md) on that request, you must obtain a response to the request in accordance with the protocol used by the entity that controls the use of the media data. Use this method to provide the content key response, to make protected content available for processing.
+After receiving a content key request and calling [`makeStreamingContentKeyRequestData(forApp:contentIdentifier:options:completionHandler:)`](./makestreamingcontentkeyrequestdata%28forapp,contentidentifier,options,completionhandler%29.md) on that request, you must obtain a response to the request in accordance with the protocol used by the entity that controls the use of the media data. Use this method to provide the content key response, to make protected content available for processing.
 
 ## Parameters
 
-- `keyResponse`: An [`AVContentKeyResponse`](avcontentkeyresponse.md) object carrying a response to a content key request.
+- `keyResponse`: An [`AVContentKeyResponse`](../avcontentkeyresponse.md) object carrying a response to a content key request.
 
 ## See Also
 
-- [func processContentKeyResponseError(any Error)](avcontentkeyrequest/processcontentkeyresponseerror(_:).md)
+### Responding to the content key request
+- [func processContentKeyResponseError(any Error)](./processcontentkeyresponseerror%28_%29.md)
   Tells the receiver that the app was unable to obtain a content key response.
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest.md)
+- [func respondByRequestingPersistableContentKeyRequest()](./respondbyrequestingpersistablecontentkeyrequest%28%29.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 
 

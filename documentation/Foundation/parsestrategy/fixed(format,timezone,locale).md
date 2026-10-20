@@ -1,7 +1,8 @@
 # fixed(format:timeZone:locale:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A fixed-format date parse strategy.
 
@@ -27,14 +28,15 @@ A strategy for parsing a date.
 ## Parameters
 
 - `format`: The string describing the parsing format.
-- `timeZone`: The [`TimeZone`](timezone.md) used to create the string representation of the date.
-- `locale`: The [`Locale`](locale.md) used to create the string representation of the date.
+- `timeZone`: The [`TimeZone`](../timezone.md) used to create the string representation of the date.
+- `locale`: The [`Locale`](../locale.md) used to create the string representation of the date.
 
 ## See Also
 
-- [static var url: URL.ParseStrategy](parsestrategy/url.md)
+### Commonly-used parsers
+- [static var url: URL.ParseStrategy](./url.md)
   A parse strategy for URLs.
-- [static var name: PersonNameComponents.ParseStrategy](parsestrategy/name.md)
+- [static var name: PersonNameComponents.ParseStrategy](./name.md)
   A parse strategy for person name components.
 
 

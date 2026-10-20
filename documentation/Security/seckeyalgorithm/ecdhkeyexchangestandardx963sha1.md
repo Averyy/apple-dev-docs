@@ -1,7 +1,8 @@
 # ecdhKeyExchangeStandardX963SHA1
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let ecdhKeyExchangeStandardX963SHA1: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA1;
 ```
 
 

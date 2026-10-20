@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the current runtime environment supports scene reconstruction providers.
 
@@ -16,11 +17,12 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [init(modes: [SceneReconstructionProvider.Mode])](scenereconstructionprovider/init(modes:).md)
+### Creating a scene reconstruction provider
+- [init(modes: [SceneReconstructionProvider.Mode])](./init%28modes%29.md)
   Creates a provider that reconstructs a person’s surroundings.
-- [let modes: [SceneReconstructionProvider.Mode]](scenereconstructionprovider/modes.md)
+- [let modes: [SceneReconstructionProvider.Mode]](./modes.md)
   The modes of scene reconstruction a provider supplies.
-- [SceneReconstructionProvider.Mode](scenereconstructionprovider/mode.md)
+- [SceneReconstructionProvider.Mode](./mode.md)
   The additional kinds of information you can request about a person’s surroundings.
 
 

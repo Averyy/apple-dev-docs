@@ -1,7 +1,8 @@
 # signIn
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type of button that people use to sign in.
 
@@ -22,13 +23,14 @@ static var signIn: StoreButtonKind { get }
 
 #### Discussion
 
-This button type is available for [`SubscriptionStoreView`](subscriptionstoreview.md) only.
+This button type is available for [`SubscriptionStoreView`](../subscriptionstoreview.md) only.
 
 ## See Also
 
-- [static var redeemCode: StoreButtonKind](storebuttonkind/redeemcode.md)
+### Getting additional button types for subscription store views
+- [static var redeemCode: StoreButtonKind](./redeemcode.md)
   A type of button that people use to redeem an offer code.
-- [static var policies: StoreButtonKind](storebuttonkind/policies.md)
+- [static var policies: StoreButtonKind](./policies.md)
   A type of button that people use to display store policies.
 
 

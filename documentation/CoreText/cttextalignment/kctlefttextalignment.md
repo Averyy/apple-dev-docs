@@ -1,16 +1,19 @@
 # kCTLeftTextAlignment
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Text is visually left-aligned.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- macOS 10.5+
-- visionOS 1.0+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.5+ - Deprecated in 10.11
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`CTTextAlignment.left`](./left.md) instead.
 
 ## Declaration
 
@@ -18,15 +21,20 @@ Text is visually left-aligned.
 static var kCTLeftTextAlignment: CTTextAlignment { get }
 ```
 
+```c
+kCTLeftTextAlignment
+```
+
 ## See Also
 
-- [static var kCTRightTextAlignment: CTTextAlignment](cttextalignment/kctrighttextalignment.md)
+### Deprecated
+- [static var kCTRightTextAlignment: CTTextAlignment](./kctrighttextalignment.md)
   Text is visually right-aligned.
-- [static var kCTCenterTextAlignment: CTTextAlignment](cttextalignment/kctcentertextalignment.md)
+- [static var kCTCenterTextAlignment: CTTextAlignment](./kctcentertextalignment.md)
   Text is visually center-aligned.
-- [static var kCTJustifiedTextAlignment: CTTextAlignment](cttextalignment/kctjustifiedtextalignment.md)
+- [static var kCTJustifiedTextAlignment: CTTextAlignment](./kctjustifiedtextalignment.md)
   Text is fully justified.
-- [static var kCTNaturalTextAlignment: CTTextAlignment](cttextalignment/kctnaturaltextalignment.md)
+- [static var kCTNaturalTextAlignment: CTTextAlignment](./kctnaturaltextalignment.md)
   Text uses the natural alignment of the text’s script.
 
 

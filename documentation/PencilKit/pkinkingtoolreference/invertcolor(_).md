@@ -1,7 +1,8 @@
 # invertColor(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a color from light to dark appearance or vice versa.
 
@@ -12,6 +13,10 @@ Converts a color from light to dark appearance or vice versa.
 
 ```swift
 class func invertColor(_ color: CGColor) -> Unmanaged<CGColor>
+```
+
+```objc
++ (CGColorRef) invertColor:(CGColorRef) color;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # beginTransparencyLayer(in:auxiliaryInfo:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins a transparency layer whose contents are bounded by the specified rectangle.
 
@@ -10,7 +11,7 @@ Begins a transparency layer whose contents are bounded by the specified rectangl
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Begins a transparency layer whose contents are bounded by the specified rectangl
 func beginTransparencyLayer(in rect: CGRect, auxiliaryInfo auxInfo: CFDictionary?)
 ```
 
+```c
+extern void CGContextBeginTransparencyLayerWithRect(CGContextRef c, CGRect rect, CFDictionaryRef auxInfo);
+```
+
 #### Discussion
 
-This function is identical to [`beginTransparencyLayer(auxiliaryInfo:)`](cgcontext/begintransparencylayer(auxiliaryinfo:).md) except that the content of the transparency layer is within the bounds of the provided rectangle.
+This function is identical to [`beginTransparencyLayer(auxiliaryInfo:)`](./begintransparencylayer%28auxiliaryinfo%29.md) except that the content of the transparency layer is within the bounds of the provided rectangle.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ This function is identical to [`beginTransparencyLayer(auxiliaryInfo:)`](cgconte
 
 ## See Also
 
-- [func beginTransparencyLayer(auxiliaryInfo: CFDictionary?)](cgcontext/begintransparencylayer(auxiliaryinfo:).md)
+### Working with Transparency Layers
+- [func beginTransparencyLayer(auxiliaryInfo: CFDictionary?)](./begintransparencylayer%28auxiliaryinfo%29.md)
   Begins a transparency layer.
-- [func endTransparencyLayer()](cgcontext/endtransparencylayer.md)
+- [func endTransparencyLayer()](./endtransparencylayer%28%29.md)
   Ends a transparency layer.
 
 

@@ -1,7 +1,8 @@
 # date
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays day, month, and year based on the locale
 
@@ -21,9 +22,10 @@ static let date: DatePickerComponents
 
 ## See Also
 
-- [static let hourAndMinute: DatePickerComponents](datepickercomponents/hourandminute.md)
+### Getting date picker components
+- [static let hourAndMinute: DatePickerComponents](./hourandminute.md)
   Displays hour and minute components based on the locale
-- [static let hourMinuteAndSecond: DatePickerComponents](datepickercomponents/hourminuteandsecond.md)
+- [static let hourMinuteAndSecond: DatePickerComponents](./hourminuteandsecond.md)
   Displays hour, minute and second components based on the locale
 
 

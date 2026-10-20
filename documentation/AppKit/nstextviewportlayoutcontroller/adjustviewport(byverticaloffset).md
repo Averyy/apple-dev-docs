@@ -1,7 +1,8 @@
 # adjustViewport(byVerticalOffset:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the viewport rect by the specified offset if needed.
 
@@ -14,19 +15,24 @@ Adjusts the viewport rect by the specified offset if needed.
 func adjustViewport(byVerticalOffset verticalOffset: CGFloat)
 ```
 
+```objc
+- (void) adjustViewportByVerticalOffset:(CGFloat) verticalOffset;
+```
+
 ## Parameters
 
 - `verticalOffset`: A `CGFloat` that represents the offset amount to apply to the viewport.
 
 ## See Also
 
-- [var viewportBounds: CGRect](nstextviewportlayoutcontroller/viewportbounds.md)
+### Accessing the viewport characteristics
+- [var viewportBounds: CGRect](./viewportbounds.md)
   Returns the visible bounds of the view, plus the overdraw area.
-- [var viewportRange: NSTextRange?](nstextviewportlayoutcontroller/viewportrange.md)
+- [var viewportRange: NSTextRange?](./viewportrange.md)
   Returns the text range of the current viewport layout.
-- [func layoutViewport()](nstextviewportlayoutcontroller/layoutviewport.md)
+- [func layoutViewport()](./layoutviewport%28%29.md)
   Performs layout in the viewport.
-- [func relocateViewport(to: any NSTextLocation) -> CGFloat](nstextviewportlayoutcontroller/relocateviewport(to:).md)
+- [func relocateViewport(to: any NSTextLocation) -> CGFloat](./relocateviewport%28to%29.md)
   Relocates the viewport to the location you specify.
 
 

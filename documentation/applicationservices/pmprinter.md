@@ -1,7 +1,8 @@
 # PMPrinter
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 An opaque type that represents a printer.
 
@@ -14,9 +15,13 @@ An opaque type that represents a printer.
 typealias PMPrinter = OpaquePointer
 ```
 
+```c
+typedef struct OpaquePMPrinter *PMPrinter;
+```
+
 #### Discussion
 
-You typically obtain a printer object using the function [`PMSessionGetCurrentPrinter(_:_:)`](1458998-pmsessiongetcurrentprinter.md) or [`PMServerCreatePrinterList(_:_:)`](1459953-pmservercreateprinterlist.md).
+You typically obtain a printer object using the function [`PMSessionGetCurrentPrinter(_:_:)`](./api-1458998-pmsessiongetcurrentprinter.md) or [`PMServerCreatePrinterList(_:_:)`](./api-1459953-pmservercreateprinterlist.md).
 
 
 ---

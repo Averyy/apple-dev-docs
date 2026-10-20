@@ -1,7 +1,8 @@
 # parentJoint
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent joint in the observation.
 
@@ -21,11 +22,12 @@ let parentJoint: String
 
 ## See Also
 
-- [let localPosition: simd_float4x4](joint3d/localposition.md)
+### Inspecting a joint
+- [let localPosition: simd_float4x4](./localposition.md)
   The joint position relative to the parent joint.
-- [let position: simd_float4x4](joint3d/position.md)
+- [let position: simd_float4x4](./position.md)
   The joint position relative to the camera.
-- [let identifier: String](joint3d/identifier.md)
+- [let identifier: String](./identifier.md)
   The name of the joint.
 
 

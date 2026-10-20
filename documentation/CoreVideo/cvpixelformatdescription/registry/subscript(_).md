@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core Video  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get the pixel format description for specified format.
 

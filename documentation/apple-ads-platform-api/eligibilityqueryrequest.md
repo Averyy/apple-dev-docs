@@ -1,7 +1,8 @@
 # EligibilityQueryRequest
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for querying app eligibility.
 
@@ -10,7 +11,7 @@ The request body for querying app eligibility.
 
 ## Declaration
 
-```swift
+```
 object EligibilityQueryRequest
 ```
 
@@ -57,21 +58,21 @@ The `filters` array supports the following fields:
 
 ## Properties
 
-- `filters` ([QueryFilter]): See [`QueryFilter`](queryfilter.md) for details.
-- `sorting` ([QuerySort]): See [`QuerySort`](querysort.md) for details.
-- `pagination` (QueryPagination): See [`QueryPagination`](querypagination.md) for details.
+- `filters` ([QueryFilter]): See [`QueryFilter`](./queryfilter.md) for details.
+- `sorting` ([QuerySort]): See [`QuerySort`](./querysort.md) for details.
+- `pagination` (QueryPagination): See [`QueryPagination`](./querypagination.md) for details.
 
 ## See Also
 
-- [object EligibilityQueryResponse](eligibilityqueryresponse.md)
+- [object EligibilityQueryResponse](./eligibilityqueryresponse.md)
   The paginated response object for an app eligibility query.
-- [object RejectionReasonResponse](rejectionreasonresponse.md)
+- [object RejectionReasonResponse](./rejectionreasonresponse.md)
   The response object for a rejection reason operation.
-- [object AppDetailsResponse](appdetailsresponse.md)
+- [object AppDetailsResponse](./appdetailsresponse.md)
   The response object for a get app details operation.
-- [object AppDetails](appdetails.md)
+- [object AppDetails](./appdetails.md)
   Application details and metadata.
-- [object EligibilityResponse](eligibilityresponse.md)
+- [object EligibilityResponse](./eligibilityresponse.md)
   The response object describing an app’s eligibility for a specific supply placement, supply source, country or region, and device class.
 
 

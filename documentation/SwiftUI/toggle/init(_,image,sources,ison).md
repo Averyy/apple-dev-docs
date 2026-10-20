@@ -1,7 +1,8 @@
 # init(_:image:sources:isOn:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle representing a collection of values that generates its label from a localized string resource and image resource.
 
@@ -21,9 +22,23 @@ Creates a toggle representing a collection of values that generates its label fr
 nonisolated init<C>(_ titleResource: LocalizedStringResource, image: ImageResource, sources: C, isOn: KeyPath<C.Element, Binding<Bool>>) where C : RandomAccessCollection
 ```
 
+Available when `Label` is `Label<Text, Image>`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<C>(_ titleKey: LocalizedStringKey, image: ImageResource, sources: C, isOn: KeyPath<C.Element, Binding<Bool>>) where C : RandomAccessCollection
+```
+
+```swift
+nonisolated
+init<S, C>(_ title: S, image: ImageResource, sources: C, isOn: KeyPath<C.Element, Binding<Bool>>) where S : StringProtocol, C : RandomAccessCollection
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf. See `Text` for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) view on your behalf. See `Text` for more information about localizing strings.
 
 The following example creates a single toggle that represents the state of multiple alarms:
 
@@ -51,11 +66,12 @@ Toggle("Enable all alarms", sources: $alarms, isOn: \.isOn)
 
 ## See Also
 
-- [init(_:sources:isOn:)](toggle/init(_:sources:ison:).md)
+### Creating a toggle for a collection
+- [init(_:sources:isOn:)](./init%28_,sources,ison%29.md)
   Creates a toggle representing a collection of values that generates its label from a localized string resource.
-- [init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, label: () -> Label)](toggle/init(sources:ison:label:).md)
+- [init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, label: () -> Label)](./init%28sources,ison,label%29.md)
   Creates a toggle representing a collection of values with a custom label.
-- [init(_:systemImage:sources:isOn:)](toggle/init(_:systemimage:sources:ison:).md)
+- [init(_:systemImage:sources:isOn:)](./init%28_,systemimage,sources,ison%29.md)
   Creates a toggle representing a collection of values that generates its label from a localized string key and system image.
 
 

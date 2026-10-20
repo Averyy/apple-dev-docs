@@ -1,7 +1,8 @@
 # camera(framing:allowPitch:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a camera in the context of the map that frames the given map item.
 
@@ -11,7 +12,7 @@ Creates a camera in the context of the map that frames the given map item.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,18 +23,19 @@ func camera(framing item: MKMapItem, allowPitch: Bool = true) -> MapCamera
 
 #### Return Value
 
-Returns a [`MapCamera`](mapcamera.md) with the framing region and pitch you specified.
+Returns a [`MapCamera`](../mapcamera.md) with the framing region and pitch you specified.
 
 ## Parameters
 
-- `item`: The [`MKMapItem`](mkmapitem.md) to frame.
+- `item`: The [`MKMapItem`](../mkmapitem.md) to frame.
 - `allowPitch`: A Boolean value that indicates whether you can pitch the camera to frame the content.
 
 ## See Also
 
-- [func camera(framing: MKCoordinateRegion) -> MapCamera](mapproxy/camera(framing:)-1asl2.md)
+### Creating a camera proxy
+- [func camera(framing: MKCoordinateRegion) -> MapCamera](./camera%28framing%29-1asl2.md)
   Creates a camera in the context of the map that frames the given coordinate region.
-- [func camera(framing: MKMapRect) -> MapCamera](mapproxy/camera(framing:)-uxov.md)
+- [func camera(framing: MKMapRect) -> MapCamera](./camera%28framing%29-uxov.md)
   Creates a camera in the context of the map that frames the given map rectangle.
 
 

@@ -1,13 +1,14 @@
 # CoreML Enumerations
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [enum MLModelStructure](mlmodelstructure-swift.enum.md)
+- [enum MLModelStructure](./mlmodelstructure-swift.enum.md)
   An enum representing the structure of a model.
-- [enum MLShapedArrayBufferLayout](mlshapedarraybufferlayout.md)
+- [enum MLShapedArrayBufferLayout](./mlshapedarraybufferlayout.md)
   Buffer layout enum
 
 

@@ -1,7 +1,8 @@
 # hardwareModel
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Mac hardware model.
 
@@ -15,21 +16,26 @@ The Mac hardware model.
 var hardwareModel: VZMacHardwareModel { get set }
 ```
 
+```objc
+@property (copy) VZMacHardwareModel * hardwareModel;
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
 #### Discussion
 
-When creating a VM, the [`hardwareModel`](vzmacplatformconfiguration/hardwaremodel.md) depends on the restore image that you use to install macOS.
+When creating a VM, the [`hardwareModel`](./hardwaremodel.md) depends on the restore image that you use to install macOS.
 
-To choose the hardware model, start from `VZMacOSRestoreImage`.[`mostFeaturefulSupportedConfiguration`](vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md) to get a supported configuration, then use its `VZMacOSConfigurationRequirements`.[`hardwareModel`](vzmacosconfigurationrequirements/hardwaremodel.md) property to get the hardware model.
+To choose the hardware model, start from `VZMacOSRestoreImage`.[`mostFeaturefulSupportedConfiguration`](../vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md) to get a supported configuration, then use its `VZMacOSConfigurationRequirements`.[`hardwareModel`](../vzmacosconfigurationrequirements/hardwaremodel.md) property to get the hardware model.
 
 ## See Also
 
-- [var auxiliaryStorage: VZMacAuxiliaryStorage?](vzmacplatformconfiguration/auxiliarystorage.md)
+### Getting platform properties
+- [var auxiliaryStorage: VZMacAuxiliaryStorage?](./auxiliarystorage.md)
   The Mac auxiliary storage.
-- [var machineIdentifier: VZMacMachineIdentifier](vzmacplatformconfiguration/machineidentifier.md)
+- [var machineIdentifier: VZMacMachineIdentifier](./machineidentifier.md)
   The Mac machine identifier.
 
 

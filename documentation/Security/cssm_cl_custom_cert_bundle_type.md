@@ -1,7 +1,8 @@
 # CSSM_CL_CUSTOM_CERT_BUNDLE_TYPE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CL_CUSTOM_CERT_BUNDLE_TYPE: Int { get }
+```
+
+```c
+CSSM_CL_CUSTOM_CERT_BUNDLE_TYPE
 ```
 
 

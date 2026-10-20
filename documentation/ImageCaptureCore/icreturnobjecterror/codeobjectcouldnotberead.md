@@ -1,16 +1,17 @@
 # codeObjectCouldNotBeRead
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The object could not be read.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ static var codeObjectCouldNotBeRead: ICReturnObjectError.Code { get }
 
 ## See Also
 
-- [static var codeObjectDoesNotExist: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdoesnotexist.md)
+### Error Codes
+- [static var codeObjectDoesNotExist: ICReturnObjectError.Code](./codeobjectdoesnotexist.md)
   The object does not exist.
-- [static var codeObjectDataOffsetInvalid: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdataoffsetinvalid.md)
+- [static var codeObjectDataOffsetInvalid: ICReturnObjectError.Code](./codeobjectdataoffsetinvalid.md)
   The object data offset is invalid.
-- [static var codeObjectDataEmpty: ICReturnObjectError.Code](icreturnobjecterror/codeobjectdataempty.md)
+- [static var codeObjectDataEmpty: ICReturnObjectError.Code](./codeobjectdataempty.md)
   The object data is empty.
-- [ICReturnObjectError.Code](icreturnobjecterror/code.md)
+- [ICReturnObjectError.Code](./code.md)
 
 
 ---

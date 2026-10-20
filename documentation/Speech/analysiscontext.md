@@ -1,7 +1,8 @@
 # AnalysisContext
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Contextual information that may be shared among analyzers.
 
@@ -22,29 +23,30 @@ final class AnalysisContext
 ## Topics
 
 ### Creating a context
-- [init()](analysiscontext/init.md)
+- [init()](./analysiscontext/init%28%29.md)
 ### Providing textual context
-- [var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]]](analysiscontext/contextualstrings.md)
+- [var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]]](./analysiscontext/contextualstrings.md)
   Words or phrases, grouped by tag, that should be recognized even if they are not in the system vocabulary.
-- [AnalysisContext.ContextualStringsTag](analysiscontext/contextualstringstag.md)
+- [AnalysisContext.ContextualStringsTag](./analysiscontext/contextualstringstag.md)
 ### Preserving app-specific context
-- [var userData: [AnalysisContext.UserDataTag : any Sendable]](analysiscontext/userdata.md)
+- [var userData: [AnalysisContext.UserDataTag : any Sendable]](./analysiscontext/userdata.md)
   A dictionary of application-specific contextual information.
-- [AnalysisContext.UserDataTag](analysiscontext/userdatatag.md)
+- [AnalysisContext.UserDataTag](./analysiscontext/userdatatag.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SFSpeechLanguageModel](sfspeechlanguagemodel.md)
+### Custom vocabulary
+- [class SFSpeechLanguageModel](./sfspeechlanguagemodel.md)
   A language model built from custom training data.
-- [SFSpeechLanguageModel.Configuration](sfspeechlanguagemodel/configuration.md)
+- [SFSpeechLanguageModel.Configuration](./sfspeechlanguagemodel/configuration.md)
   An object describing the location of a custom language model and specialized vocabulary.
-- [class SFCustomLanguageModelData](sfcustomlanguagemodeldata.md)
+- [class SFCustomLanguageModelData](./sfcustomlanguagemodeldata.md)
   An object that generates and exports custom language model training data.
 
 

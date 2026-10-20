@@ -1,7 +1,8 @@
 # UIMenuSystem.ElementGroupPreference
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -16,27 +17,31 @@
 enum ElementGroupPreference
 ```
 
+```c
+enum UIMenuSystemElementGroupPreference : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UIMenuSystem.ElementGroupPreference.automatic](uimenusystem/elementgrouppreference/automatic.md)
+- [UIMenuSystem.ElementGroupPreference.automatic](./elementgrouppreference/automatic.md)
   The default preference. The element group is automatically included based on the platform and other system behaviors.
-- [UIMenuSystem.ElementGroupPreference.included](uimenusystem/elementgrouppreference/included.md)
+- [UIMenuSystem.ElementGroupPreference.included](./elementgrouppreference/included.md)
   Prefer that the element group is included.
-- [UIMenuSystem.ElementGroupPreference.removed](uimenusystem/elementgrouppreference/removed.md)
+- [UIMenuSystem.ElementGroupPreference.removed](./elementgrouppreference/removed.md)
   Prefer that the element group is removed.
 ### Initializers
-- [init?(rawValue: Int)](uimenusystem/elementgrouppreference/init(rawvalue:).md)
+- [init?(rawValue: Int)](./elementgrouppreference/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

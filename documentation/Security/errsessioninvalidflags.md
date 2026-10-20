@@ -1,7 +1,8 @@
 # errSessionInvalidFlags
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Encountered invalid flags or options.
 
@@ -13,6 +14,10 @@ Encountered invalid flags or options.
 
 ```swift
 var errSessionInvalidFlags: OSStatus { get }
+```
+
+```c
+errSessionInvalidFlags
 ```
 
 

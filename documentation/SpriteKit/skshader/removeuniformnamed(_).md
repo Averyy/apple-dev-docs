@@ -1,7 +1,8 @@
 # removeUniformNamed(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a uniform from the shader.
 
@@ -10,7 +11,7 @@ Removes a uniform from the shader.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Removes a uniform from the shader.
 
 ```swift
 func removeUniformNamed(_ name: String)
+```
+
+```objc
+- (void) removeUniformNamed:(NSString *) name;
 ```
 
 #### Discussion
@@ -30,11 +35,12 @@ If a uniform with that name does not exist in the shader, nothing happens.
 
 ## See Also
 
-- [func addUniform(SKUniform)](skshader/adduniform(_:).md)
+### Providing Uniform Data to a Shader
+- [func addUniform(SKUniform)](./adduniform%28_%29.md)
   Adds a uniform to the shader.
-- [var uniforms: [SKUniform]](skshader/uniforms.md)
+- [var uniforms: [SKUniform]](./uniforms.md)
   The list of uniforms associated with the shader.
-- [func uniformNamed(String) -> SKUniform?](skshader/uniformnamed(_:).md)
+- [func uniformNamed(String) -> SKUniform?](./uniformnamed%28_%29.md)
   Returns the uniform object corresponding to a particular uniform variable.
 
 

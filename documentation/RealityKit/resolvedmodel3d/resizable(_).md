@@ -1,7 +1,8 @@
 # resizable(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows this model to resize itself to fit its container.
 
@@ -17,7 +18,7 @@ Allows this model to resize itself to fit its container.
 
 #### Discussion
 
-> **Note**: By default, `Model3D` sizes itself based on the intrinsic size of the underlying model file. Setting this will scale the model to fit its container instead. To preserve the intrinsic aspect ratio of the model, use doc://com.apple.documentation/documentationSwiftUI/View/aspectRatio(_:contentMode:).
+> **Note**: By default, `Model3D` sizes itself based on the intrinsic size of the underlying model file. Setting this will scale the model to fit its container instead. To preserve the intrinsic aspect ratio of the model, use https://developer.apple.com/documentation/SwiftUI/View/aspectRatio(_:contentMode:).
 
 
 ---

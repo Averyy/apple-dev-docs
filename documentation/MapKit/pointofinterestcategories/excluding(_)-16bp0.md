@@ -1,7 +1,8 @@
 # excluding(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Show all points of interest except those belonging to certain categories using the array you provide.
 
@@ -11,7 +12,7 @@ Show all points of interest except those belonging to certain categories using t
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -30,11 +31,12 @@ Returns a set of point of interest categories to exclude.
 
 ## See Also
 
-- [static func excluding(MKPointOfInterestCategory...) -> PointOfInterestCategories](pointofinterestcategories/excluding(_:)-4jo9h.md)
+### Modifying the categories to include or exclude
+- [static func excluding(MKPointOfInterestCategory...) -> PointOfInterestCategories](./excluding%28_%29-4jo9h.md)
   Show all points of interest except those belonging to certain categories using the list you provide.
-- [static func including([MKPointOfInterestCategory]) -> PointOfInterestCategories](pointofinterestcategories/including(_:)-22f7x.md)
+- [static func including([MKPointOfInterestCategory]) -> PointOfInterestCategories](./including%28_%29-22f7x.md)
   Show only points of interest belonging to certain categories from the provided array.
-- [static func including(MKPointOfInterestCategory...) -> PointOfInterestCategories](pointofinterestcategories/including(_:)-6flda.md)
+- [static func including(MKPointOfInterestCategory...) -> PointOfInterestCategories](./including%28_%29-6flda.md)
   Show only points of interest belonging to certain categories from the provided list.
 
 

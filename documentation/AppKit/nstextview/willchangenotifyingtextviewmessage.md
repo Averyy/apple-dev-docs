@@ -1,7 +1,8 @@
 # NSTextView.WillChangeNotifyingTextViewMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct WillChangeNotifyingTextViewMessage
 ## Topics
 
 ### Initializers
-- [init(textView: NSTextView, oldNotifyingTextView: NSTextView?, newNotifyingTextView: NSTextView?)](nstextview/willchangenotifyingtextviewmessage/init(textview:oldnotifyingtextview:newnotifyingtextview:).md)
+- [init(textView: NSTextView, oldNotifyingTextView: NSTextView?, newNotifyingTextView: NSTextView?)](./willchangenotifyingtextviewmessage/init%28textview,oldnotifyingtextview,newnotifyingtextview%29.md)
 ### Instance Properties
-- [var newNotifyingTextView: NSTextView?](nstextview/willchangenotifyingtextviewmessage/newnotifyingtextview.md)
-- [var oldNotifyingTextView: NSTextView?](nstextview/willchangenotifyingtextviewmessage/oldnotifyingtextview.md)
-- [var textView: NSTextView](nstextview/willchangenotifyingtextviewmessage/textview.md)
+- [var newNotifyingTextView: NSTextView?](./willchangenotifyingtextviewmessage/newnotifyingtextview.md)
+- [var oldNotifyingTextView: NSTextView?](./willchangenotifyingtextviewmessage/oldnotifyingtextview.md)
+- [var textView: NSTextView](./willchangenotifyingtextviewmessage/textview.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AnchorUpdate.Event.added
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event that occurs when ARKit starts tracking an anchor.
 
@@ -16,9 +17,10 @@ case added
 
 ## See Also
 
-- [AnchorUpdate.Event.updated](anchorupdate/event-swift.enum/updated.md)
+### Inspecting anchor update events
+- [AnchorUpdate.Event.updated](./updated.md)
   An event that occurs when an existing anchor updates data.
-- [AnchorUpdate.Event.removed](anchorupdate/event-swift.enum/removed.md)
+- [AnchorUpdate.Event.removed](./removed.md)
   An event that occurs when ARKit stops tracking an anchor.
 
 

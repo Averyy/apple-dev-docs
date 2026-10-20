@@ -1,7 +1,8 @@
 # newTotal
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The updated total resulting from the coupon code update.
 
@@ -11,17 +12,18 @@ The updated total resulting from the coupon code update.
 
 ## Declaration
 
-```swift
+```
 required ApplePayLineItem newTotal;
 ```
 
 ## See Also
 
-- [newLineItems](applepaycouponcodeupdate/newlineitems.md)
+### Setting updated transaction details
+- [newLineItems](./newlineitems.md)
   The list of updated line items incorporating the coupon code update.
-- [newShippingMethods](applepaycouponcodeupdate/newshippingmethods.md)
+- [newShippingMethods](./newshippingmethods.md)
   The list of available shipping methods.
-- [errors](applepaycouponcodeupdate/errors.md)
+- [errors](./errors.md)
   A list of errors resulting from the coupon code update.
 
 

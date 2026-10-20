@@ -1,7 +1,8 @@
 # vImageEqualization_Planar8(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs histogram equalization on an 8-bit planar buffer.
 
@@ -20,9 +21,13 @@ Performs histogram equalization on an 8-bit planar buffer.
 func vImageEqualization_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageEqualization_Planar8(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -31,20 +36,22 @@ Histogram equalization transforms an image so that its histogram is more uniform
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
+### Related Documentation
+- [Enhancing image contrast with histogram manipulation](./enhancing-image-contrast-with-histogram-manipulation.md)
   Enhance and adjust the contrast of an image with histogram equalization and contrast stretching.
-- [Specifying histograms with vImage](specifying-histograms-with-vimage.md)
+- [Specifying histograms with vImage](./specifying-histograms-with-vimage.md)
   Calculate the histogram of one image, and apply it to a second image.
-- [func vImageEqualization_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](vimageequalization_planarf(_:_:_:_:_:_:_:).md)
+### Equalizing a histogram
+- [func vImageEqualization_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](./vimageequalization_planarf%28_,_,_,_,_,_,_%29.md)
   Performs histogram equalization on a 32-bit planar buffer.
-- [func vImageEqualization_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimageequalization_argb8888(_:_:_:).md)
+- [func vImageEqualization_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimageequalization_argb8888%28_,_,_%29.md)
   Performs histogram equalization on an 8-bit-per-channel, 4-channel interleaved buffer.
-- [func vImageEqualization_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](vimageequalization_argbffff(_:_:_:_:_:_:_:).md)
+- [func vImageEqualization_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](./vimageequalization_argbffff%28_,_,_,_,_,_,_%29.md)
   Performs histogram equalization on a 32-bit-per-channel, 4-channel interleaved buffer.
 
 

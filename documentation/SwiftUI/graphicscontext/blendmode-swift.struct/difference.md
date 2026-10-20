@@ -1,7 +1,8 @@
 # difference
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that subtracts the brighter of the source image sample color or the background image sample color from the other.
 
@@ -26,7 +27,8 @@ Source image sample values that are black produce no change; white inverts the b
 
 ## See Also
 
-- [static var exclusion: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/exclusion.md)
+### Inverting
+- [static var exclusion: GraphicsContext.BlendMode](./exclusion.md)
   A mode that produces an effect similar to that produced by the difference blend mode, but with lower contrast.
 
 

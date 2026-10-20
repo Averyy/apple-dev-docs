@@ -1,7 +1,8 @@
 # draw(in:frame:from:darkUserInterfaceStyle:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the drawing in the specified rectangle.
 

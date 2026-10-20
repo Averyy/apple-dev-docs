@@ -1,7 +1,8 @@
 # MEMessageAction
 
 **Framework**: MailKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An action the system performs on a message, such as setting a color or archiving it.
 
@@ -14,51 +15,56 @@ An action the system performs on a message, such as setting a color or archiving
 class MEMessageAction
 ```
 
+```objc
+@interface MEMessageAction : NSObject
+```
+
 ## Topics
 
 ### Changing the Read Status
-- [class var markAsRead: MEMessageAction](memessageaction/markasread.md)
+- [class var markAsRead: MEMessageAction](./memessageaction/markasread.md)
   An object that marks the message as read.
-- [class var markAsUnread: MEMessageAction](memessageaction/markasunread.md)
+- [class var markAsUnread: MEMessageAction](./memessageaction/markasunread.md)
   An object that marks the message as unread.
 ### Transferring Messages
-- [class var moveToArchive: MEMessageAction](memessageaction/movetoarchive.md)
+- [class var moveToArchive: MEMessageAction](./memessageaction/movetoarchive.md)
   An object that moves the message to the account’s Archive mailbox.
-- [class var moveToJunk: MEMessageAction](memessageaction/movetojunk.md)
+- [class var moveToJunk: MEMessageAction](./memessageaction/movetojunk.md)
   An object that moves the message to the account’s Junk mailbox.
-- [class var moveToTrash: MEMessageAction](memessageaction/movetotrash.md)
+- [class var moveToTrash: MEMessageAction](./memessageaction/movetotrash.md)
   An object that moves the message to the account’s Trash mailbox.
 ### Type Methods
-- [class func flag(MEMessageAction.Flag) -> Self](memessageaction/flag(_:).md)
-- [class func setBackgroundColor(MEMessageAction.MessageColor) -> Self](memessageaction/setbackgroundcolor(_:).md)
+- [class func flag(MEMessageAction.Flag) -> Self](./memessageaction/flag%28_%29.md)
+- [class func setBackgroundColor(MEMessageAction.MessageColor) -> Self](./memessageaction/setbackgroundcolor%28_%29.md)
 ### Enumerations
-- [MEMessageAction.Flag](memessageaction/flag.md)
-- [MEMessageAction.MessageColor](memessageaction/messagecolor.md)
+- [MEMessageAction.Flag](./memessageaction/flag.md)
+- [MEMessageAction.MessageColor](./memessageaction/messagecolor.md)
   A color that the system uses to display a message in the message list.
 ### Initializers
-- [init?(coder: NSCoder)](memessageaction/init(coder:).md)
+- [init?(coder: NSCoder)](./memessageaction/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func decideAction(for: MEMessage, completionHandler: (MEMessageActionDecision?) -> Void)](memessageactionhandler/decideaction(for:completionhandler:).md)
+### Performing Actions on Messages
+- [func decideAction(for: MEMessage, completionHandler: (MEMessageActionDecision?) -> Void)](./memessageactionhandler/decideaction%28for,completionhandler%29.md)
   Determines the action that the system takes when it downloads a message.
-- [class MEMessageActionDecision](memessageactiondecision.md)
+- [class MEMessageActionDecision](./memessageactiondecision.md)
   The action that the system performs on a message, or a request to ask the action handler again later when the message content is available.
-- [MEMessageAction.MessageColor](memessageaction/messagecolor.md)
+- [MEMessageAction.MessageColor](./memessageaction/messagecolor.md)
   A color that the system uses to display a message in the message list.
 
 

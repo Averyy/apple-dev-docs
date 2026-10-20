@@ -1,7 +1,8 @@
 # floatingPointType
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type to use for floating-point numeric values.
 
@@ -22,7 +23,7 @@ var floatingPointType: CSVType
 
 #### Discussion
 
-Defaults to [`CSVType.double`](csvtype/double.md).
+Defaults to [`CSVType.double`](../csvtype/double.md).
 
 
 ---

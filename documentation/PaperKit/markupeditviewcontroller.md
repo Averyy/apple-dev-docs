@@ -1,7 +1,8 @@
 # MarkupEditViewController
 
 **Framework**: PaperKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that manages the interface for inserting content into a canvas.
 
@@ -20,7 +21,7 @@ A view controller that manages the interface for inserting content into a canvas
 
 ## Mentions
 
-- [Integrating PaperKit into your app](getting-started-with-paperkit.md)
+- [Integrating PaperKit into your app](./getting-started-with-paperkit.md)
 
 #### Overview
 
@@ -29,48 +30,49 @@ Use `MarkupToolbarViewController` for macOS.
 ## Topics
 
 ### Creating a view controller
-- [init(supportedFeatureSet: FeatureSet, additionalActions: [UIMenuElement])](markupeditviewcontroller/init(supportedfeatureset:additionalactions:).md)
+- [init(supportedFeatureSet: FeatureSet, additionalActions: [UIMenuElement])](./markupeditviewcontroller/init%28supportedfeatureset,additionalactions%29.md)
   Creates a markup edit view controller.
 ### Configuring the view controller
-- [let supportedFeatureSet: FeatureSet](markupeditviewcontroller/supportedfeatureset.md)
+- [let supportedFeatureSet: FeatureSet](./markupeditviewcontroller/supportedfeatureset.md)
   The supported features of this edit UI.
-- [var delegate: (any MarkupEditViewController.Delegate)?](markupeditviewcontroller/delegate-swift.property.md)
+- [var delegate: (any MarkupEditViewController.Delegate)?](./markupeditviewcontroller/delegate-swift.property.md)
   The delegate for responding to user actions.
 ### Responding to changes
-- [MarkupEditViewController.Delegate](markupeditviewcontroller/delegate-swift.protocol.md)
+- [MarkupEditViewController.Delegate](./markupeditviewcontroller/delegate-swift.protocol.md)
 ### Managing view lifecycle
-- [func viewDidLoad()](markupeditviewcontroller/viewdidload.md)
+- [func viewDidLoad()](./markupeditviewcontroller/viewdidload%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class PaperMarkupViewController](papermarkupviewcontroller.md)
+### View controllers
+- [class PaperMarkupViewController](./papermarkupviewcontroller.md)
   A view controller for interactively creating and showing markup.
-- [class MarkupToolbarViewController](markuptoolbarviewcontroller.md)
+- [class MarkupToolbarViewController](./markuptoolbarviewcontroller.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # getProperty
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback to invoke when getting the property’s value.
 
@@ -19,13 +20,18 @@ A callback to invoke when getting the property’s value.
 var getProperty: JSObjectGetPropertyCallback!
 ```
 
+```c
+JSObjectGetPropertyCallback getProperty;
+```
+
 ## See Also
 
-- [var name: UnsafePointer<CChar>!](jsstaticvalue/name.md)
+### Accessing Static Value Information
+- [var name: UnsafePointer<CChar>!](./name.md)
   A null-terminated UTF-8 string that contains the property’s name.
-- [var setProperty: JSObjectSetPropertyCallback!](jsstaticvalue/setproperty.md)
+- [var setProperty: JSObjectSetPropertyCallback!](./setproperty.md)
   A callback to invoke when setting the property’s value.
-- [var attributes: JSPropertyAttributes](jsstaticvalue/attributes.md)
+- [var attributes: JSPropertyAttributes](./attributes.md)
   A set of property attributes to give to the property.
 
 

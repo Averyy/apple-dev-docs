@@ -1,7 +1,8 @@
 # value(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns this attribute’s value at the given time, or `nil` if unauthored.
 

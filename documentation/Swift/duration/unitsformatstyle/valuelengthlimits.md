@@ -1,7 +1,8 @@
 # valueLengthLimits
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The padding or truncating behavior of the unit value.
 
@@ -26,11 +27,12 @@ For example, set this to `2...` to force 2-digit padding on all units.
 
 ## See Also
 
-- [var allowedUnits: Set<Duration.UnitsFormatStyle.Unit>](duration/unitsformatstyle/allowedunits.md)
+### Working with units
+- [var allowedUnits: Set<Duration.UnitsFormatStyle.Unit>](./allowedunits.md)
   The units that may be included in the output string.
-- [Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit.md)
+- [Duration.UnitsFormatStyle.Unit](./unit.md)
   A unit to use in formatting a duration.
-- [var maximumUnitCount: Int?](duration/unitsformatstyle/maximumunitcount.md)
+- [var maximumUnitCount: Int?](./maximumunitcount.md)
   The maximum number of time units to include in the output string.
 
 

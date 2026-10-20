@@ -1,7 +1,8 @@
 # HKMetadataKeyDateOfEarliestDataUsedForEstimate
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The earliest date of data used to calculate the sample’s estimated value.
 
@@ -19,9 +20,13 @@ The earliest date of data used to calculate the sample’s estimated value.
 let HKMetadataKeyDateOfEarliestDataUsedForEstimate: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyDateOfEarliestDataUsedForEstimate;
+```
+
 #### Discussion
 
-This key takes a [`Date`](https://developer.apple.com/documentation/foundation/date) value, indicating the earliest date from the data used by HealthKit to calculate the sample’s value.
+This key takes a [`Date`](../Foundation/date.md) value, indicating the earliest date from the data used by HealthKit to calculate the sample’s value.
 
 
 ---

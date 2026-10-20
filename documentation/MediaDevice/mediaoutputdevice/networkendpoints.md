@@ -1,7 +1,8 @@
 # networkEndpoints
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The network endpoints for this device group.
 

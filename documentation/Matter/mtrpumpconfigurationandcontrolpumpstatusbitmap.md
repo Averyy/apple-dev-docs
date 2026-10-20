@@ -1,7 +1,8 @@
 # MTRPumpConfigurationAndControlPumpStatusBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.5+
@@ -18,33 +19,37 @@
 struct MTRPumpConfigurationAndControlPumpStatusBitmap
 ```
 
+```c
+enum MTRPumpConfigurationAndControlPumpStatusBitmap : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrpumpconfigurationandcontrolpumpstatusbitmap/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrpumpconfigurationandcontrolpumpstatusbitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var deviceFault: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/devicefault.md)
-- [static var localOverride: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/localoverride.md)
-- [static var remoteFlow: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/remoteflow.md)
-- [static var remotePressure: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/remotepressure.md)
-- [static var remoteTemperature: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/remotetemperature.md)
-- [static var running: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/running.md)
-- [static var speedHigh: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/speedhigh.md)
-- [static var speedLow: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/speedlow.md)
-- [static var supplyFault: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/supplyfault-8wst8.md)
-- [static var supplyfault: MTRPumpConfigurationAndControlPumpStatusBitmap](mtrpumpconfigurationandcontrolpumpstatusbitmap/supplyfault-7n9s7.md)
+- [static var deviceFault: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/devicefault.md)
+- [static var localOverride: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/localoverride.md)
+- [static var remoteFlow: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/remoteflow.md)
+- [static var remotePressure: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/remotepressure.md)
+- [static var remoteTemperature: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/remotetemperature.md)
+- [static var running: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/running.md)
+- [static var speedHigh: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/speedhigh.md)
+- [static var speedLow: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/speedlow.md)
+- [static var supplyFault: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/supplyfault-8wst8.md)
+- [static var supplyfault: MTRPumpConfigurationAndControlPumpStatusBitmap](./mtrpumpconfigurationandcontrolpumpstatusbitmap/supplyfault-7n9s7.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

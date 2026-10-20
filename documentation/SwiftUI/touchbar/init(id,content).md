@@ -1,7 +1,8 @@
 # init(id:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a customizable Touch Bar view container with a globally unique identifier.
 
@@ -25,7 +26,8 @@ Be sure that each view in `content` has an explicit `touchBarItemPresence` value
 
 ## See Also
 
-- [init(content: () -> Content)](touchbar/init(content:).md)
+### Creating a Touch Bar view
+- [init(content: () -> Content)](./init%28content%29.md)
   Creates a non-customizable Touch Bar view container.
 
 

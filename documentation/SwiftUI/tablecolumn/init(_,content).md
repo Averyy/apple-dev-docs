@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an unsortable column that generates its label from a localized string resource.
 
@@ -19,9 +20,28 @@ Creates an unsortable column that generates its label from a localized string re
 nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
+Available when `RowValue` conforms to `Identifiable`, `Sort` is `Never`, `Content` conforms to `View`, and `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ text: Text, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view for you. For more information about localizing strings, see [`Text`](text.md).
+This initializer creates a [`Text`](../text.md) view for you. For more information about localizing strings, see [`Text`](../text.md).
 
 ## Parameters
 
@@ -30,7 +50,8 @@ This initializer creates a [`Text`](text.md) view for you. For more information 
 
 ## See Also
 
-- [init(_:value:)](tablecolumn/init(_:value:).md)
+### Creating an unsortable column
+- [init(_:value:)](./init%28_,value%29.md)
   Creates an unsortable column that displays a string property that generates its label from a localized string resource.
 
 

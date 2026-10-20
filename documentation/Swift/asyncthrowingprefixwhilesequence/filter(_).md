@@ -1,7 +1,8 @@
 # filter(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given predicate.
 

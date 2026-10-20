@@ -1,7 +1,8 @@
 # radiusInKilometers
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A radius used to determine whether a field that is a location is inside a circular area.
 
@@ -10,7 +11,7 @@ A radius used to determine whether a field that is a location is inside a circul
 
 ## Declaration
 
-```swift
+```
 attribute Double? radiusInKilometers;
 ```
 

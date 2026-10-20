@@ -1,17 +1,20 @@
 # expectsMediaDataInRealTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the input tailors its processing for real-time sources.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.1+ - Deprecated in 27.0
+- iPadOS 4.1+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.7+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use the input receiver's appendImmediately(...) method instead
 
 ## Declaration
 
@@ -19,33 +22,38 @@ A Boolean value that indicates whether the input tailors its processing for real
 var expectsMediaDataInRealTime: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL expectsMediaDataInRealTime;
+```
+
 #### Discussion
 
-Set this value to [`true`](https://developer.apple.com/documentation/swift/true) if your app appends media data to the input from a real-time source, such as an [`AVCaptureOutput`](avcaptureoutput.md). Setting a [`true`](https://developer.apple.com/documentation/swift/true) value optimizes the input for real-time usage so it accurately calculates the state of its [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) property value.
+Set this value to [`true`](../../Swift/true.md) if your app appends media data to the input from a real-time source, such as an [`AVCaptureOutput`](../avcaptureoutput.md). Setting a [`true`](../../Swift/true.md) value optimizes the input for real-time usage so it accurately calculates the state of its [`isReadyForMoreMediaData`](./isreadyformoremediadata.md) property value.
 
 You can’t set this value after writing starts.
 
-> ❗ **Important**:  To ensure optimal behavior, don’t set the value of this property and [`performsMultiPassEncodingIfSupported`](avassetwriterinput/performsmultipassencodingifsupported.md) to [`true`](https://developer.apple.com/documentation/swift/true) at the same time.
+> ❗ **Important**:  To ensure optimal behavior, don’t set the value of this property and [`performsMultiPassEncodingIfSupported`](./performsmultipassencodingifsupported.md) to [`true`](../../Swift/true.md) at the same time.
 
 ## See Also
 
-- [var isReadyForMoreMediaData: Bool](avassetwriterinput/isreadyformoremediadata.md)
+### Appending media samples
+- [var isReadyForMoreMediaData: Bool](./isreadyformoremediadata.md)
   A Boolean value that indicates whether the input is ready to accept media data.
-- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](avassetwriterinput/requestmediadatawhenready(on:using:).md)
+- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](./requestmediadatawhenready%28on,using%29.md)
   Tells the input to request media data, at its convenience, to write to the output file.
-- [func append(CMSampleBuffer) -> Bool](avassetwriterinput/append(_:).md)
+- [func append(CMSampleBuffer) -> Bool](./append%28_%29.md)
   Appends a sample buffer to an input to write to the output file.
-- [func markAsFinished()](avassetwriterinput/markasfinished.md)
+- [func markAsFinished()](./markasfinished%28%29.md)
   Marks the input as finished to indicate that you’re done appending samples to it.
-- [AVAssetWriterInput.SampleBufferReceiver](avassetwriterinput/samplebufferreceiver.md)
+- [AVAssetWriterInput.SampleBufferReceiver](./samplebufferreceiver.md)
   Provides an interface for writing sample buffers to an input.
-- [AVAssetWriterInput.PixelBufferReceiver](avassetwriterinput/pixelbufferreceiver.md)
+- [AVAssetWriterInput.PixelBufferReceiver](./pixelbufferreceiver.md)
   Provides an interface for writing pixel buffers to an input.
-- [AVAssetWriterInput.TaggedPixelBufferGroupReceiver](avassetwriterinput/taggedpixelbuffergroupreceiver.md)
+- [AVAssetWriterInput.TaggedPixelBufferGroupReceiver](./taggedpixelbuffergroupreceiver.md)
   Provides an interface for writing tagged pixel buffers to an input.
-- [AVAssetWriterInput.MetadataReceiver](avassetwriterinput/metadatareceiver.md)
+- [AVAssetWriterInput.MetadataReceiver](./metadatareceiver.md)
   Provides an interface for writing timed metadata groups to an input.
-- [AVAssetWriterInput.CaptionReceiver](avassetwriterinput/captionreceiver.md)
+- [AVAssetWriterInput.CaptionReceiver](./captionreceiver.md)
   Provides an interface for writing caption data to an input.
 
 

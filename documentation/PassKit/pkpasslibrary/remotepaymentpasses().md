@@ -1,22 +1,29 @@
 # remotePaymentPasses()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a list of passes from a remote device.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
+- iOS 9.0+ - Deprecated in 27.2
+- iPadOS 9.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
 - macOS 10.12+
-- visionOS 1.0+
-- watchOS 2.0+
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`remoteSecureElementPasses`](./remotesecureelementpasses.md) instead.
 
 ## Declaration
 
 ```swift
 func remotePaymentPasses() -> [PKPaymentPass]
+```
+
+```objc
+- (NSArray<PKPaymentPass *> *) remotePaymentPasses;
 ```
 
 #### Return Value
@@ -25,17 +32,18 @@ An array that contains all the passes on a remote paired device (for example, an
 
 ## See Also
 
-- [func activate(PKPaymentPass, withActivationCode: String, completion: ((Bool, any Error) -> Void)?)](pkpasslibrary/activate(_:withactivationcode:completion:).md)
+### Deprecated Methods
+- [func activate(PKPaymentPass, withActivationCode: String, completion: ((Bool, any Error) -> Void)?)](./activate%28_,withactivationcode,completion%29.md)
   Activates a payment pass using the provided activation code.
-- [func activate(PKPaymentPass, withActivationData: Data, completion: ((Bool, any Error) -> Void)?)](pkpasslibrary/activate(_:withactivationdata:completion:).md)
+- [func activate(PKPaymentPass, withActivationData: Data, completion: ((Bool, any Error) -> Void)?)](./activate%28_,withactivationdata,completion%29.md)
   Activates a payment pass using the provided activation code.
-- [func canAddPaymentPass(withPrimaryAccountIdentifier: String) -> Bool](pkpasslibrary/canaddpaymentpass(withprimaryaccountidentifier:).md)
+- [func canAddPaymentPass(withPrimaryAccountIdentifier: String) -> Bool](./canaddpaymentpass%28withprimaryaccountidentifier%29.md)
   A Boolean value that indicates whether the app can add a card to Apple Pay for the provided primary account identifier.
-- [class func isPaymentPassActivationAvailable() -> Bool](pkpasslibrary/ispaymentpassactivationavailable-swift.type.method.md)
+- [class func isPaymentPassActivationAvailable() -> Bool](./ispaymentpassactivationavailable%28%29-swift.type.method.md)
   Returns a Boolean value that indicates whether the device supports adding payment passes.
-- [func isPaymentPassActivationAvailable() -> Bool](pkpasslibrary/ispaymentpassactivationavailable-swift.method.md)
+- [func isPaymentPassActivationAvailable() -> Bool](./ispaymentpassactivationavailable%28%29-swift.method.md)
   Returns a Boolean value that indicates whether the device supports adding payment passes.
-- [func present(PKPaymentPass)](pkpasslibrary/present(_:)-67jce.md)
+- [func present(PKPaymentPass)](./present%28_%29-67jce.md)
   Presents the payment pass for use in-store.
 
 

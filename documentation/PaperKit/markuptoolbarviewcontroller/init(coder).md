@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 26.0+
@@ -16,7 +17,8 @@ required dynamic init?(coder: NSCoder)
 
 ## See Also
 
-- [init(supportedFeatureSet: FeatureSet)](markuptoolbarviewcontroller/init(supportedfeatureset:).md)
+### Creating a toolbar
+- [init(supportedFeatureSet: FeatureSet)](./init%28supportedfeatureset%29.md)
   Creates a markup toolbar view controller.
 
 

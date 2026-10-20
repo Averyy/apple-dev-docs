@@ -1,7 +1,8 @@
 # fido2Extensions
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The FIDO2 extensions associated with this passkey.
 

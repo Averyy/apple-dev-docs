@@ -1,7 +1,8 @@
 # PaymentCardTransactionRequest.PaymentCycle.monthly
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Payment is monthly.
 

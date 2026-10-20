@@ -1,17 +1,18 @@
 # mFlags
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Audio File Services region flags.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Audio File Services region flags.
 var mFlags: AudioFileRegionFlags
 ```
 
+```c
+AudioFileRegionFlags mFlags;
+```
+
 #### Discussion
 
-For details, see [`AudioFileRegionFlags`](audiofileregionflags.md).
+For details, see [`AudioFileRegionFlags`](../audiofileregionflags.md).
 
 
 ---

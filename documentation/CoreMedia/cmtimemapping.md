@@ -1,7 +1,8 @@
 # CMTimeMapping
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that maps a segment of a source time range to a target time range.
 
@@ -20,29 +21,33 @@ A structure that maps a segment of a source time range to a target time range.
 struct CMTimeMapping
 ```
 
+```c
+typedef struct { ... } CMTimeMapping;
+```
+
 ## Topics
 
 ### Creating a Timebase
-- [init(source: CMTimeRange, target: CMTimeRange)](cmtimemapping/init(source:target:).md)
+- [init(source: CMTimeRange, target: CMTimeRange)](./cmtimemapping/init%28source,target%29.md)
   Creates a time mapping with a source and target time range.
-- [init()](cmtimemapping/init.md)
+- [init()](./cmtimemapping/init%28%29.md)
   Creates an empty time mapping.
 ### Accessing Time Ranges
-- [var source: CMTimeRange](cmtimemapping/source.md)
+- [var source: CMTimeRange](./cmtimemapping/source.md)
   A time range on the source timeline.
-- [var target: CMTimeRange](cmtimemapping/target.md)
+- [var target: CMTimeRange](./cmtimemapping/target.md)
   A time range on the target timeline.
 ### Type Properties
-- [static let invalid: CMTimeMapping](cmtimemapping/invalid.md)
+- [static let invalid: CMTimeMapping](./cmtimemapping/invalid.md)
   An invalid time mapping.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

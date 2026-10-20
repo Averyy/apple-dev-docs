@@ -1,14 +1,15 @@
 # write
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn write(IOService *client, UInt64 byteStart, IOMemoryDescriptor *buffer, IOStorageAttributes *attributes, UInt64 *actualByteCount);
 ```
 

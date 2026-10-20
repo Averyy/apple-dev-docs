@@ -1,7 +1,8 @@
 # Urgency
 
 **Framework**: WeatherKit REST API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 An indication of urgency of action from the reporting agency.
 
@@ -10,9 +11,17 @@ An indication of urgency of action from the reporting agency.
 
 ## Declaration
 
-```swift
+```
 string Urgency
 ```
+
+## Possible Values
+
+- `immediate`
+- `expected`
+- `future`
+- `past`
+- `unknown`
 
 #### Possible Values
 
@@ -24,17 +33,18 @@ string Urgency
 
 ## See Also
 
-- [GET /api/v1/weatherAlert/{language}/{id}](get-api-v1-weatheralert-_language_-_id_.md)
+### Obtaining weather alerts
+- [GET /api/v1/weatherAlert/{language}/{id}](./get-api-v1-weatheralert-_language_-_id_.md)
   Receive an active weather alert.
-- [object WeatherAlert](weatheralert.md)
+- [object WeatherAlert](./weatheralert.md)
   An official message indicating severe weather from a reporting agency.
-- [object WeatherAlertCollection](weatheralertcollection.md)
+- [object WeatherAlertCollection](./weatheralertcollection.md)
   A collection of severe weather alerts for a specified location.
-- [object WeatherAlertSummary](weatheralertsummary.md)
+- [object WeatherAlertSummary](./weatheralertsummary.md)
   Detailed information about the weather alert.
-- [type ResponseType](responsetype.md)
+- [type ResponseType](./responsetype.md)
   The recommended action from a reporting agency.
-- [type Severity](severity.md)
+- [type Severity](./severity.md)
   The level of danger to life and property.
 
 

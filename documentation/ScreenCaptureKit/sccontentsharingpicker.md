@@ -1,7 +1,8 @@
 # SCContentSharingPicker
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance of a picker presented by the operating system for managing frame-capture streams.
 
@@ -19,65 +20,70 @@ An instance of a picker presented by the operating system for managing frame-cap
 class SCContentSharingPicker
 ```
 
+```objc
+@interface SCContentSharingPicker : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**:  Avoid creating your own sharing picker. Use the picker provided by the [`shared`](sccontentsharingpicker/shared.md) static property.
+> ❗ **Important**:  Avoid creating your own sharing picker. Use the picker provided by the [`shared`](./sccontentsharingpicker/shared.md) static property.
 
 ## Topics
 
 ### Shared system picker
-- [class var shared: SCContentSharingPicker](sccontentsharingpicker/shared.md)
+- [class var shared: SCContentSharingPicker](./sccontentsharingpicker/shared.md)
   The system-provided picker UI instance for capturing display and audio content from someone’s Mac.
 ### Picker availability
-- [var isActive: Bool](sccontentsharingpicker/isactive.md)
+- [var isActive: Bool](./sccontentsharingpicker/isactive.md)
   A Boolean value that indicates if the picker is active.
 ### Stream configuration
-- [func setConfiguration(SCContentSharingPickerConfiguration?, for: SCStream)](sccontentsharingpicker/setconfiguration(_:for:).md)
+- [func setConfiguration(SCContentSharingPickerConfiguration?, for: SCStream)](./sccontentsharingpicker/setconfiguration%28_,for%29.md)
   Sets the configuration for the content capture picker for a capture stream, providing allowed selection modes and content excluded from selection.
-- [var configuration: SCContentSharingPickerConfiguration?](sccontentsharingpicker/configuration.md)
+- [var configuration: SCContentSharingPickerConfiguration?](./sccontentsharingpicker/configuration.md)
   Sets the configuration for the content capture picker for all streams, providing allowed selection modes and content excluded from selection.
-- [var defaultConfiguration: SCContentSharingPickerConfiguration](sccontentsharingpicker/defaultconfiguration-94q2b.md)
+- [var defaultConfiguration: SCContentSharingPickerConfiguration](./sccontentsharingpicker/defaultconfiguration-94q2b.md)
   The default configuration to use for the content capture picker.
-- [var maximumStreamCount: Int?](sccontentsharingpicker/maximumstreamcount-2kuaa.md)
+- [var maximumStreamCount: Int?](./sccontentsharingpicker/maximumstreamcount-2kuaa.md)
   The maximum number of streams the content capture picker allows.
 ### Manage observers
-- [func add(any SCContentSharingPickerObserver)](sccontentsharingpicker/add(_:).md)
+- [func add(any SCContentSharingPickerObserver)](./sccontentsharingpicker/add%28_%29.md)
   Adds an observer instance to notify of changes in the content-sharing picker.
-- [func remove(any SCContentSharingPickerObserver)](sccontentsharingpicker/remove(_:).md)
+- [func remove(any SCContentSharingPickerObserver)](./sccontentsharingpicker/remove%28_%29.md)
   Removes an observer instance from the content-sharing picker.
 ### Picker display
-- [func present()](sccontentsharingpicker/present.md)
+- [func present()](./sccontentsharingpicker/present%28%29.md)
   Displays the picker with no active selection for capture.
-- [func present(for: SCStream)](sccontentsharingpicker/present(for:).md)
+- [func present(for: SCStream)](./sccontentsharingpicker/present%28for%29.md)
   Displays the picker with an already running capture stream.
-- [func present(using: SCShareableContentStyle)](sccontentsharingpicker/present(using:).md)
+- [func present(using: SCShareableContentStyle)](./sccontentsharingpicker/present%28using%29.md)
   Displays the picker for a single type of capture selection.
-- [func present(for: SCStream, using: SCShareableContentStyle)](sccontentsharingpicker/present(for:using:).md)
+- [func present(for: SCStream, using: SCShareableContentStyle)](./sccontentsharingpicker/present%28for,using%29.md)
   Displays the picker with an existing capture stream, allowing for a single type of capture selection.
 ### Instance Properties
-- [var isAvailable: Bool](sccontentsharingpicker/isavailable.md)
+- [var isAvailable: Bool](./sccontentsharingpicker/isavailable.md)
 ### Instance Methods
-- [func presentForCurrentApplication()](sccontentsharingpicker/presentforcurrentapplication.md)
+- [func presentForCurrentApplication()](./sccontentsharingpicker/presentforcurrentapplication%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct SCContentSharingPickerConfiguration](sccontentsharingpickerconfiguration-swift.struct.md)
+### System content-sharing picker
+- [struct SCContentSharingPickerConfiguration](./sccontentsharingpickerconfiguration-swift.struct.md)
   An instance for configuring the system content-sharing picker.
-- [struct SCContentSharingPickerMode](sccontentsharingpickermode.md)
+- [struct SCContentSharingPickerMode](./sccontentsharingpickermode.md)
   Available modes for selecting streaming content from a picker presented by the operating system.
-- [protocol SCContentSharingPickerObserver](sccontentsharingpickerobserver.md)
+- [protocol SCContentSharingPickerObserver](./sccontentsharingpickerobserver.md)
   An observer protocol your app implements to receive messages from the operating system’s content picker.
 
 

@@ -1,7 +1,8 @@
 # heading
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The heading of the user’s location.
 
@@ -17,15 +18,20 @@ The heading of the user’s location.
 var heading: CLHeading? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CLHeading * heading;
+```
+
 #### Discussion
 
-This property is `nil` if the user’s location tracking mode isn’t [`MKUserTrackingMode.followWithHeading`](mkusertrackingmode/followwithheading.md).
+This property is `nil` if the user’s location tracking mode isn’t [`MKUserTrackingMode.followWithHeading`](../mkusertrackingmode/followwithheading.md).
 
 ## See Also
 
-- [var location: CLLocation?](mkuserlocation/location.md)
+### Determining the user’s location
+- [var location: CLLocation?](./location.md)
   The location of the device.
-- [var isUpdating: Bool](mkuserlocation/isupdating.md)
+- [var isUpdating: Bool](./isupdating.md)
   A Boolean value that indicates whether the map view is updating the user’s location.
 
 

@@ -1,7 +1,8 @@
 # PKPayLaterDisplayStyle.standard
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The standard Apple Pay Later visual merchandising widget style.
 
@@ -10,19 +11,26 @@ The standard Apple Pay Later visual merchandising widget style.
 - iPadOS 17.0+
 - visionOS 1.0+
 
+> **Deprecated**: Apple Pay Later is deprecated.
+
 ## Declaration
 
 ```swift
 case standard
 ```
 
+```c
+PKPayLaterDisplayStyleStandard
+```
+
 ## See Also
 
-- [PKPayLaterDisplayStyle.badge](pkpaylaterdisplaystyle/badge.md)
+### Payment view display styles
+- [PKPayLaterDisplayStyle.badge](./badge.md)
   Displays a badge that uses an Apple Pay Later icon.
-- [PKPayLaterDisplayStyle.checkout](pkpaylaterdisplaystyle/checkout.md)
+- [PKPayLaterDisplayStyle.checkout](./checkout.md)
   A style used inside of a checkout view that presents Apple Pay and other payment options to the customer.
-- [PKPayLaterDisplayStyle.price](pkpaylaterdisplaystyle/price.md)
+- [PKPayLaterDisplayStyle.price](./price.md)
   A style that shows the Apple Pay Later view beneath a product’s price.
 
 

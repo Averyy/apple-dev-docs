@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Converts the specified value into the expected data type.
@@ -12,7 +13,7 @@ Converts the specified value into the expected data type.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -32,8 +33,9 @@ The converted value, or `nil` if conversion fails.
 
 ## See Also
 
-- [associatedtype Input : _IntentValue](resolver/input.md)
-- [associatedtype Output : _IntentValue](resolver/output.md)
+### Resolving the type
+- [associatedtype Input : _IntentValue](./input.md)
+- [associatedtype Output : _IntentValue](./output.md)
 
 
 ---

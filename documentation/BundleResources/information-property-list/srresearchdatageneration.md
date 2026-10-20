@@ -1,7 +1,8 @@
 # SRResearchDataGeneration
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether use of an app contributes data to SensorKit while the user is enrolled in a health research study.
 
@@ -9,9 +10,12 @@ A Boolean value that indicates whether use of an app contributes data to SensorK
 - iOS 17.0+
 - iPadOS 17.0+
 
+## Details
+
+- **Name**: `SRResearchDataGeneration`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `YES`
 

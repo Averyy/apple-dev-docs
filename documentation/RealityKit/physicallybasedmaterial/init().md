@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a physically based material.
 
@@ -11,7 +12,7 @@ Creates a physically based material.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [init(program: PhysicallyBasedMaterial.Program)](physicallybasedmaterial/init(program:).md)
+### Creating a physically based material
+- [init(program: PhysicallyBasedMaterial.Program)](./init%28program%29.md)
 
 
 ---

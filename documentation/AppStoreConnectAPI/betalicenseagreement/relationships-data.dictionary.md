@@ -1,7 +1,8 @@
 # BetaLicenseAgreement.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BetaLicenseAgreement.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaLicenseAgreement.Relationships.App](betalicenseagreement/relationships-data.dictionary/app-data.dictionary.md)
+- [object BetaLicenseAgreement.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object BetaLicenseAgreement.Relationships
 
 ## See Also
 
-- [object BetaLicenseAgreement.Attributes](betalicenseagreement/attributes-data.dictionary.md)
+### Objects
+- [object BetaLicenseAgreement.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Beta License Agreements resource.
 
 

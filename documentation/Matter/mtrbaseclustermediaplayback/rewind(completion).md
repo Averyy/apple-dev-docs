@@ -1,7 +1,8 @@
 # rewind(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func rewind(completion: @escaping @Sendable (MTRMediaPlaybackClusterPlaybackResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func rewind() async throws -> MTRMediaPlaybackClusterPlaybackResponseParams
+```
+
+```objc
+- (void) rewindWithCompletion:(void (^)(MTRMediaPlaybackClusterPlaybackResponseParams *data, NSError *error)) completion;
 ```
 
 

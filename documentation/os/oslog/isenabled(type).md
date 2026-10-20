@@ -1,7 +1,8 @@
 # isEnabled(type:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the log can write messages with the specified log type.
 
@@ -20,13 +21,17 @@ Returns a Boolean value that indicates whether the log can write messages with t
 func isEnabled(type: OSLogType) -> Bool
 ```
 
+```c
+extern bool os_log_type_enabled(os_log_t oslog, os_log_type_t type);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if logging at the specified level is in an enabled state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if logging at the specified level is in an enabled state; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
-- `type`: A log type constant, such as [`OS_LOG_TYPE_DEFAULT`](os_log_type_t/os_log_type_default.md), [`OS_LOG_TYPE_INFO`](os_log_type_t/os_log_type_info.md), [`OS_LOG_TYPE_DEBUG`](os_log_type_t/os_log_type_debug.md), [`OS_LOG_TYPE_ERROR`](os_log_type_t/os_log_type_error.md), or [`OS_LOG_TYPE_FAULT`](os_log_type_t/os_log_type_fault.md), that specifies the level of logging to check.
+- `type`: A log type constant, such as [`OS_LOG_TYPE_DEFAULT`](../os_log_type_t/os_log_type_default.md), [`OS_LOG_TYPE_INFO`](../os_log_type_t/os_log_type_info.md), [`OS_LOG_TYPE_DEBUG`](../os_log_type_t/os_log_type_debug.md), [`OS_LOG_TYPE_ERROR`](../os_log_type_t/os_log_type_error.md), or [`OS_LOG_TYPE_FAULT`](../os_log_type_t/os_log_type_fault.md), that specifies the level of logging to check.
 
 
 ---

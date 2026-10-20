@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an array containing the elements of `s`.
 

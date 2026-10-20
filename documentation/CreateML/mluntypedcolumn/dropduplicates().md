@@ -1,7 +1,8 @@
 # dropDuplicates()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a subset of the column by removing all duplicate elements.
 
@@ -29,7 +30,8 @@ A new column.
 
 ## See Also
 
-- [func dropMissing() -> MLUntypedColumn](mluntypedcolumn/dropmissing.md)
+### Discarding elements to generate an untyped column
+- [func dropMissing() -> MLUntypedColumn](./dropmissing%28%29.md)
   Creates a subset of the column by removing all elements without a value.
 
 

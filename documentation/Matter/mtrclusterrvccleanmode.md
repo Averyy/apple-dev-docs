@@ -1,7 +1,8 @@
 # MTRClusterRVCCleanMode
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.4+
@@ -18,31 +19,35 @@
 class MTRClusterRVCCleanMode
 ```
 
+```objc
+@interface MTRClusterRVCCleanMode : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterrvccleanmode/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterrvccleanmode/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func changeToMode(with: MTRRVCCleanModeClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCCleanModeClusterChangeToModeResponseParams?, (any Error)?) -> Void)](mtrclusterrvccleanmode/changetomode(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvccleanmode/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvccleanmode/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvccleanmode/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentMode(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvccleanmode/readattributecurrentmode(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvccleanmode/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvccleanmode/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeSupportedModes(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvccleanmode/readattributesupportedmodes(with:).md)
+- [func changeToMode(with: MTRRVCCleanModeClusterChangeToModeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCCleanModeClusterChangeToModeResponseParams?, (any Error)?) -> Void)](./mtrclusterrvccleanmode/changetomode%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvccleanmode/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvccleanmode/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvccleanmode/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentMode(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvccleanmode/readattributecurrentmode%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvccleanmode/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvccleanmode/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeSupportedModes(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvccleanmode/readattributesupportedmodes%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

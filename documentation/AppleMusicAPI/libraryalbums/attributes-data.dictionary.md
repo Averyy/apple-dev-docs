@@ -1,7 +1,8 @@
 # LibraryAlbums.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a library album resource.
 
@@ -10,7 +11,7 @@ The attributes for a library album resource.
 
 ## Declaration
 
-```swift
+```
 object LibraryAlbums.Attributes
 ```
 
@@ -19,6 +20,8 @@ object LibraryAlbums.Attributes
 - `artistName` (string) *(required)*: The artist’s name.
 - `artwork` (Artwork) *(required)*: The album artwork.
 - `contentRating` (string): The Recording Industry Association of America (RIAA) rating of the content. The possible values for this rating are `clean` and `explicit`. No value means no rating.
+
+  **Allowed Values**: `clean`, `explicit`
 - `dateAdded` (string): The date the album was added to the library, in YYYY-MM-DD or YYYY format.
 - `name` (string) *(required)*: The localized name of the album.
 - `playParams` (PlayParameters): When present, this attribute indicates that tracks from the album are available to play.  The value map may be used to initiate playback of available tracks on the album.
@@ -29,7 +32,8 @@ object LibraryAlbums.Attributes
 
 ## See Also
 
-- [object LibraryAlbums.Relationships](libraryalbums/relationships-data.dictionary.md)
+### Related Objects
+- [object LibraryAlbums.Relationships](./relationships-data.dictionary.md)
   The relationships for a library album object.
 
 

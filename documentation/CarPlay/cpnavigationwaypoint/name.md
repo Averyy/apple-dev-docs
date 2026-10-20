@@ -1,19 +1,24 @@
 # name
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 name is an optional display name for the waypoint.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
+- iOS 26.4+ - Deprecated in 27.0
+- iPadOS 26.4+ - Deprecated in 27.0
+- Mac Catalyst 26.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 var name: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * name;
 ```
 
 

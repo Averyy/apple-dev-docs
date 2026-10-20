@@ -1,7 +1,8 @@
 # ColumnSelection.exclude(columnNames:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Selects all columns except the specified columns.
 
@@ -22,11 +23,12 @@ case exclude(columnNames: [String])
 
 ## See Also
 
-- [ColumnSelection.all](columnselection/all.md)
+### Column selection types
+- [ColumnSelection.all](./all.md)
   Select all columns in the data frame.
-- [ColumnSelection.include(columnNames:)](columnselection/include(columnnames:).md)
+- [ColumnSelection.include(columnNames:)](./include%28columnnames%29.md)
   Selects only the specified columns.
-- [ColumnSelection.numeric](columnselection/numeric.md)
+- [ColumnSelection.numeric](./numeric.md)
   Select all numeric columns in the data frame.
 
 

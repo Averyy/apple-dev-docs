@@ -1,7 +1,8 @@
 # hasActiveWindowSharingSession
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the receiver is the subject of an active SharePlay sharing session.
 
@@ -14,9 +15,14 @@ Indicates whether the receiver is the subject of an active SharePlay sharing ses
 var hasActiveWindowSharingSession: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasActiveWindowSharingSession;
+```
+
 ## See Also
 
-- [func transferWindowSharing(to: NSWindow, completionHandler: ((any Error)?) -> Void)](nswindow/transferwindowsharing(to:completionhandler:).md)
+### Managing Window Sharing
+- [func transferWindowSharing(to: NSWindow, completionHandler: ((any Error)?) -> Void)](./transferwindowsharing%28to,completionhandler%29.md)
   Attempts to move window sharing (within a SharePlay session) from this window to another window.
 
 

@@ -1,7 +1,8 @@
 # updateTarget(_:context:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the proposed target that a scrollable view should scroll to.
 

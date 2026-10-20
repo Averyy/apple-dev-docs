@@ -1,7 +1,8 @@
 # WKGestureRecognizerState.cancelled
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - watchOS 3.0+
@@ -10,6 +11,10 @@
 
 ```swift
 case cancelled
+```
+
+```c
+WKGestureRecognizerStateCancelled
 ```
 
 

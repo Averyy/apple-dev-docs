@@ -1,9 +1,10 @@
 # NSKeyedArchiveRootObjectKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Archives created using the class method [`archivedData(withRootObject:)`](nskeyedarchiver/archiveddata(withrootobject:).md) use this key for the root object in the hierarchy of encoded objects. The [`NSKeyedUnarchiver`](nskeyedunarchiver.md) class method [`unarchiveObject(with:)`](nskeyedunarchiver/unarchiveobject(with:).md) looks for this root key as well.
+Archives created using the class method [`archivedData(withRootObject:)`](./nskeyedarchiver/archiveddata%28withrootobject%29.md) use this key for the root object in the hierarchy of encoded objects. The [`NSKeyedUnarchiver`](./nskeyedunarchiver.md) class method [`unarchiveObject(with:)`](./nskeyedunarchiver/unarchiveobject%28with%29.md) looks for this root key as well.
 
 **Availability**:
 - iOS 7.0+
@@ -18,6 +19,10 @@ Archives created using the class method [`archivedData(withRootObject:)`](nskeye
 
 ```swift
 let NSKeyedArchiveRootObjectKey: String
+```
+
+```c
+extern NSString * const NSKeyedArchiveRootObjectKey;
 ```
 
 

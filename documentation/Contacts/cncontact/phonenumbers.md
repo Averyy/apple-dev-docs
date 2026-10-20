@@ -1,7 +1,8 @@
 # phoneNumbers
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of labeled phone numbers for a contact.
 
@@ -19,9 +20,21 @@ An array of labeled phone numbers for a contact.
 var phoneNumbers: [CNLabeledValue<CNPhoneNumber>] { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CNLabeledValue<CNPhoneNumber *> *> * phoneNumbers;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSArray<CNLabeledValue<CNPhoneNumber *> *> * phoneNumbers;
+```
+
 #### Discussion
 
-This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and a [`CNPhoneNumber`](cnphonenumber.md) value.
+This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`CNPhoneNumber`](../cnphonenumber.md) value.
 
 
 ---

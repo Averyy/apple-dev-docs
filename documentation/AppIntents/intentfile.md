@@ -1,7 +1,8 @@
 # IntentFile
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An interface for providing an app entity that represents an on-disk file or file-based resource.
 
@@ -11,7 +12,7 @@ An interface for providing an app entity that represents an on-disk file or file
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,8 +23,8 @@ struct IntentFile
 
 ## Mentions
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 #### Overview
 
@@ -32,55 +33,55 @@ Provide an intent file entity implementation to describe data you store in a fil
 ## Topics
 
 ### Creating a file
-- [init(data: Data, filename: String, type: UTType?)](intentfile/init(data:filename:type:).md)
-- [init(fileURL: URL, filename: String?, type: UTType?)](intentfile/init(fileurl:filename:type:).md)
+- [init(data: Data, filename: String, type: UTType?)](./intentfile/init%28data,filename,type%29.md)
+- [init(fileURL: URL, filename: String?, type: UTType?)](./intentfile/init%28fileurl,filename,type%29.md)
 ### Getting the file information
-- [var filename: String](intentfile/filename.md)
+- [var filename: String](./intentfile/filename.md)
   The human-readable name of the file, which will be displayed to the user.
-- [var fileURL: URL?](intentfile/fileurl.md)
+- [var fileURL: URL?](./intentfile/fileurl.md)
   URL to the file on disk, if any. If the file isn’t stored on disk, access the contents using the `data` property.
-- [var type: UTType?](intentfile/type.md)
+- [var type: UTType?](./intentfile/type.md)
   The uniform type identifier of the file. (i.e. “public.json”, “public.png”, or any custom type) More information about uniform type identifiers can be found in <CoreServices/UTCoreTypes.h>
-- [var data: Data](intentfile/data.md)
+- [var data: Data](./intentfile/data.md)
   The contents of the file. If the file was created with a URL, accessing this property will memory map the file contents.
-- [var removedOnCompletion: Bool](intentfile/removedoncompletion.md)
+- [var removedOnCompletion: Bool](./intentfile/removedoncompletion.md)
   Indicates whether the file should be automatically deleted from disk when the Shortcut is done running. `false` by default.
 ### Instance Properties
-- [var availableContentTypes: [UTType]](intentfile/availablecontenttypes.md)
+- [var availableContentTypes: [UTType]](./intentfile/availablecontenttypes.md)
   Valid content types the `IntentFile` can possibly be converted to.
 ### Instance Methods
-- [func data(contentType: UTType) async throws -> Data](intentfile/data(contenttype:).md)
+- [func data(contentType: UTType) async throws -> Data](./intentfile/data%28contenttype%29.md)
   Requests an `IntentFile` representation as binary data of the requested content type if possible.
-- [func file(contentType: UTType, destinationDirectory: URL?) async throws -> (fileURL: URL, openedInPlace: Bool)](intentfile/file(contenttype:destinationdirectory:).md)
+- [func file(contentType: UTType, destinationDirectory: URL?) async throws -> (fileURL: URL, openedInPlace: Bool)](./intentfile/file%28contenttype,destinationdirectory%29.md)
   Requests an `IntentFile` representation as a file url.
-- [func withFile<Result>(contentType: UTType, allowOpenInPlace: Bool, fileHandler: (URL, Bool) async throws -> Result) async throws -> Result](intentfile/withfile(contenttype:allowopeninplace:filehandler:).md)
+- [func withFile<Result>(contentType: UTType, allowOpenInPlace: Bool, fileHandler: (URL, Bool) async throws -> Result) async throws -> Result](./intentfile/withfile%28contenttype,allowopeninplace,filehandler%29.md)
   Requests an `IntentFile` representation as a file url.
 ### Type Aliases
-- [IntentFile.Specification](intentfile/specification.md)
-- [IntentFile.UnwrappedType](intentfile/unwrappedtype.md)
-- [IntentFile.ValueType](intentfile/valuetype.md)
+- [IntentFile.Specification](./intentfile/specification.md)
+- [IntentFile.UnwrappedType](./intentfile/unwrappedtype.md)
+- [IntentFile.ValueType](./intentfile/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: some ResolverSpecification](intentfile/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./intentfile/defaultresolverspecification.md)
 ### Enumerations
-- [IntentFile.IntentFileError](intentfile/intentfileerror.md)
+- [IntentFile.IntentFileError](./intentfile/intentfileerror.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [IntentValueConvertible](intentvalueconvertible.md)
-- [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [IntentValueConvertible](./intentvalueconvertible.md)
+- [IntentValueExpressing](./intentvalueexpressing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 
 ---

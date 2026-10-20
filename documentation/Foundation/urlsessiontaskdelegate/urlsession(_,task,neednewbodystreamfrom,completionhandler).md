@@ -1,7 +1,8 @@
 # urlSession(_:task:needNewBodyStreamFrom:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate if a task requires a new body stream starting from the given offset. This may be necessary when resuming a failed upload task.
 
@@ -17,7 +18,15 @@ Tells the delegate if a task requires a new body stream starting from the given 
 ## Declaration
 
 ```swift
+optional func urlSession(_ session: URLSession, task: URLSessionTask, needNewBodyStreamFrom offset: Int64, completionHandler: @escaping @Sendable (InputStream?) -> Void)
+```
+
+```swift
 optional func urlSession(_ session: URLSession, needNewBodyStreamForTask task: URLSessionTask, from offset: Int64) async -> InputStream?
+```
+
+```objc
+- (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task needNewBodyStreamFromOffset:(int64_t) offset completionHandler:(void (^)(NSInputStream *bodyStream)) completionHandler;
 ```
 
 ## Parameters

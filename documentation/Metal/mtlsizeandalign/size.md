@@ -1,17 +1,18 @@
 # size
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of a resource, in bytes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The size of a resource, in bytes.
 var size: Int
 ```
 
+```c
+NSUInteger size;
+```
+
 ## See Also
 
-- [var align: Int](mtlsizeandalign/align.md)
+### Accessing the size and alignment
+- [var align: Int](./align.md)
   The alignment of a resource, in bytes.
 
 

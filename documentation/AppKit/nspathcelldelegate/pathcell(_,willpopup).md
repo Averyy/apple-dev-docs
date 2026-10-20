@@ -1,7 +1,8 @@
 # pathCell(_:willPopUp:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implement this method to customize the menu of a pop-up–style path.
 
@@ -13,6 +14,10 @@ Implement this method to customize the menu of a pop-up–style path.
 ```swift
 @MainActor
 optional func pathCell(_ pathCell: NSPathCell, willPopUp menu: NSMenu)
+```
+
+```objc
+- (void) pathCell:(NSPathCell *) pathCell willPopUpMenu:(NSMenu *) menu;
 ```
 
 #### Discussion

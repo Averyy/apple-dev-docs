@@ -1,7 +1,8 @@
 # hasAdditionalViews
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A boolean indicating that one or more additional views may be present beyond stereo left and stereo right eyes (e.g,. a “centerline” view).
 

@@ -1,11 +1,12 @@
 # VideoToolbox Reference
 
-**Framework**: Video Toolbox
+**Framework**: Video Toolbox  
+**Role**: API Collection
 
 ## Topics
 
 ### Macros
-- [var VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER: Bool](vt_support_colorsync_pixel_transfer.md)
+- [var VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER: Bool](./vt_support_colorsync_pixel_transfer.md)
 
 
 ---

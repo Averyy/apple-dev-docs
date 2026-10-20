@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean that indicates whether the column slices are equal.
 

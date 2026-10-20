@@ -1,7 +1,8 @@
 # birthday
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A date component for the Gregorian birthday of the contact.
 
@@ -19,15 +20,28 @@ A date component for the Gregorian birthday of the contact.
 var birthday: DateComponents? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSDateComponents * birthday;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSDateComponents * birthday;
+```
+
 #### Discussion
 
-A Gregorian birthday can be displayed using this property, whose values are the relevant properties of an [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object. Day and month are required for this property, and year is optional. Calendar can be `nil` or Gregorian. All other date components are invalid.
+A Gregorian birthday can be displayed using this property, whose values are the relevant properties of an [`NSDateComponents`](../../Foundation/nsdatecomponents.md) object. Day and month are required for this property, and year is optional. Calendar can be `nil` or Gregorian. All other date components are invalid.
 
 ## See Also
 
-- [var dates: [CNLabeledValue<NSDateComponents>]](cnmutablecontact/dates.md)
+### Setting Birthday Information
+- [var dates: [CNLabeledValue<NSDateComponents>]](./dates.md)
   An array containing labeled Gregorian dates.
-- [var nonGregorianBirthday: DateComponents?](cnmutablecontact/nongregorianbirthday.md)
+- [var nonGregorianBirthday: DateComponents?](./nongregorianbirthday.md)
   A date component for the non-Gregorian birthday of the contact.
 
 

@@ -1,7 +1,8 @@
 # ageAtLeastElements
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of values that indicate whether the document holder is at least the specified age.
 

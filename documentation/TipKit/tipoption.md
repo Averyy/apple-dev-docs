@@ -1,7 +1,8 @@
 # Option
 
 **Framework**: TipKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the various customizations that you can make to a tip’s behavior.
 
@@ -23,28 +24,29 @@ protocol TipOption : Sendable
 ## Topics
 
 ### Tip options
-- [typealias IgnoresDisplayFrequency](tip/ignoresdisplayfrequency.md)
+- [typealias IgnoresDisplayFrequency](./tip/ignoresdisplayfrequency.md)
   Controls whether a tip obeys the preconfigured display frequency interval.
-- [typealias MaxDisplayCount](tip/maxdisplaycount.md)
+- [typealias MaxDisplayCount](./tip/maxdisplaycount.md)
   Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [typealias MaxDisplayDuration](tip/maxdisplayduration.md)
+- [typealias MaxDisplayDuration](./tip/maxdisplayduration.md)
   Specifies the maximum amount of time a tip is displayed before it is invalidated.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [IgnoresDisplayFrequency](tips/ignoresdisplayfrequency.md)
-- [MaxDisplayCount](tips/maxdisplaycount.md)
-- [MaxDisplayDuration](tips/maxdisplayduration.md)
+- [IgnoresDisplayFrequency](./tips/ignoresdisplayfrequency.md)
+- [MaxDisplayCount](./tips/maxdisplaycount.md)
+- [MaxDisplayDuration](./tips/maxdisplayduration.md)
 
 ## See Also
 
-- [struct AnyTip](anytip.md)
+### Common types
+- [struct AnyTip](./anytip.md)
   A type-erased tip value.
-- [struct TipKitError](tipkiterror.md)
+- [struct TipKitError](./tipkiterror.md)
   A localized tip kit error.
 
 

@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The type of this atom.
 
@@ -11,9 +12,10 @@ This field must be set to ‘`rmqu`’.
 
 ## See Also
 
-- [Size](quality_atom/size.md)
+### Data fields
+- [Size](./size.md)
   The number of bytes in this quality atom.
-- [Quality](quality_atom/quality.md)
+- [Quality](./quality.md)
   The relative quality of the movie, expressed as a 32-bit integer.
 
 

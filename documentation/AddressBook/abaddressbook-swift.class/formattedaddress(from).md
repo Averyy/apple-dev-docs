@@ -1,7 +1,8 @@
 # formattedAddress(from:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an attributed string containing the formatted address.
 
@@ -14,6 +15,10 @@ Returns an attributed string containing the formatted address.
 func formattedAddress(from address: [AnyHashable : Any]!) -> NSAttributedString!
 ```
 
+```objc
+- (NSAttributedString *) formattedAddressFromDictionary:(NSDictionary *) address;
+```
+
 #### Return Value
 
 An attributed string containing the formatted address.
@@ -22,7 +27,7 @@ An attributed string containing the formatted address.
 
 The string’s attributes match address dictionary keys, such as `kABAddressStreetKey`. Each attribute value contains the localized description of the key. (For example, the value of a Canadian `kABAddressZIPKey` field would be “Postal Code”, while the value of a French one would be “Code Postal”.)
 
-To get the dictionary containing a street address for a person record, use [`value(forProperty:)`](abrecord-swift.class/value(forproperty:).md) with the property `kABAddressProperty`, and then getting one of the values from the multivalue that is returned.
+To get the dictionary containing a street address for a person record, use [`value(forProperty:)`](../abrecord-swift.class/value%28forproperty%29.md) with the property `kABAddressProperty`, and then getting one of the values from the multivalue that is returned.
 
 ## Parameters
 

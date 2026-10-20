@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of key-value pairs in the dictionary.
 
@@ -20,15 +21,18 @@ The number of key-value pairs in the dictionary.
 var count: Int { get }
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Discussion
 
-> **Note**: O(1).
+> **Complexity**: O(1).
 
 ## See Also
 
-- [var isEmpty: Bool](dictionary/isempty.md)
+### Inspecting a Dictionary
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the dictionary is empty.
-- [var capacity: Int](dictionary/capacity.md)
+- [var capacity: Int](./capacity.md)
   The total number of key-value pairs that the dictionary can contain without allocating new storage.
 
 

@@ -1,7 +1,8 @@
 # indexBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer that contains references to control points in the control point buffer.
 
@@ -17,6 +18,10 @@ A buffer that contains references to control points in the control point buffer.
 
 ```swift
 var indexBuffer: (any MTLBuffer)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> indexBuffer;
 ```
 
 #### Discussion

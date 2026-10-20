@@ -1,7 +1,8 @@
 # invalidPolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The specified scheduling policy is not currently enabled for the processor set.
 

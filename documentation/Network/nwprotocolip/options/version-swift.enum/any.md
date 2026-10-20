@@ -1,7 +1,8 @@
 # NWProtocolIP.Options.Version.any
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow any IP version.
 
@@ -22,9 +23,10 @@ case any
 
 ## See Also
 
-- [NWProtocolIP.Options.Version.v4](nwprotocolip/options/version-swift.enum/v4.md)
+### Versions
+- [NWProtocolIP.Options.Version.v4](./v4.md)
   Require IP version 4.
-- [NWProtocolIP.Options.Version.v6](nwprotocolip/options/version-swift.enum/v6.md)
+- [NWProtocolIP.Options.Version.v6](./v6.md)
   Require IP version 6.
 
 

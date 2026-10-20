@@ -1,7 +1,8 @@
 # Get recurring request download URLs
 
 **Framework**: App Data Transfer  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get URLs to download a snapshot of someone’s data specific to your app from a recurring series.
 
@@ -12,7 +13,7 @@ Get URLs to download a snapshot of someone’s data specific to your app from a 
 
 **Request**:
 
-```None
+```
 % curl -X GET \
   -H "Authorization: Bearer [ACCESS_TOKEN]" \
   -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
@@ -22,7 +23,7 @@ Get URLs to download a snapshot of someone’s data specific to your app from a 
 
 **Response**:
 
-```None
+```
 {
   "assetInfo": [
     "https://assets.example.com/1.zip",
@@ -39,16 +40,27 @@ Get URLs to download a snapshot of someone’s data specific to your app from a 
 
 ## Parameters
 
+### Path Parameters
+
 - `requestId` (string) *(required)*: A UUID that identifies the individual download request in the recurring sequence.
 - `parentRequestId` (string) *(required)*: A UUID that identifies the recurring sequence of download requests.
 
+## Responses
+
+- `200` OK (`DownloadLinks`, `application/json`)
+- `400` Bad Request (`DownloadError`, `application/json`)
+- `401` Unauthorized
+- `403` Forbidden
+- `500` Internal Server Error
+
 ## See Also
 
-- [Get one-time request download URLs](get-one-time-request-download-urls.md)
+### Downloads
+- [Get one-time request download URLs](./get-one-time-request-download-urls.md)
   Get URLs to retrieve someone’s data.
-- [object DownloadLinks](downloadlinks.md)
+- [object DownloadLinks](./downloadlinks.md)
   An object that contains URLs to download someone’s data specific to your app.
-- [object DownloadError](downloaderror.md)
+- [object DownloadError](./downloaderror.md)
   An object that describes an error the server encounters while preparing download URLs for a request.
 
 

@@ -1,7 +1,8 @@
 # editorialNotes
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notes about the album that appear in the Music app.
 

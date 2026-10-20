@@ -1,7 +1,8 @@
 # PMPrinterCopyState(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 func PMPrinterCopyState(_ printer: PMPrinter, _ stateDict: UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus
+```
+
+```c
+OSStatus PMPrinterCopyState(PMPrinter printer, CFDictionaryRef  _Nullable *stateDict);
 ```
 
 

@@ -1,7 +1,8 @@
 # summary
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional, user-visible description of the context.
 
@@ -18,6 +19,10 @@ An optional, user-visible description of the context.
 var summary: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * summary;
+```
+
 #### Discussion
 
 The Schoolwork app may display this string to help the user understand the kinds of activities the context provides.
@@ -26,11 +31,12 @@ Localize the summary string, and limit its length to 4,000 characters.
 
 ## See Also
 
-- [var identifier: String](clscontext/identifier.md)
+### Identifying the context
+- [var identifier: String](./identifier.md)
   A string that uniquely identifies a context among its siblings.
-- [var title: String](clscontext/title.md)
+- [var title: String](./title.md)
   The name of the context as it appears to users.
-- [var thumbnail: CGImage?](clscontext/thumbnail.md)
+- [var thumbnail: CGImage?](./thumbnail.md)
   An optional thumbnail image associated with the context.
 
 

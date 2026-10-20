@@ -1,17 +1,24 @@
 # drawerWillResizeContents(_:to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the user resizes the drawer or parent.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Drawers are deprecated; consider using NSSplitViewController
 
 ## Declaration
 
 ```swift
 optional func drawerWillResizeContents(_ sender: NSDrawer, to contentSize: NSSize) -> NSSize
+```
+
+```objc
+- (NSSize) drawerWillResizeContents:(NSDrawer *) sender toSize:(NSSize) contentSize;
 ```
 
 #### Return Value

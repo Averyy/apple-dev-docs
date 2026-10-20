@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the item supports interactions.
 
@@ -14,6 +15,10 @@ A Boolean value that indicates whether the item supports interactions.
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
 #### Discussion

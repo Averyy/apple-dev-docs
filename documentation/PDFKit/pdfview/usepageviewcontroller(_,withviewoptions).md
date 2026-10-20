@@ -1,7 +1,8 @@
 # usePageViewController(_:withViewOptions:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the scroll view to use a `UIPageViewController` to layout and navigate pages.
 
@@ -18,11 +19,16 @@ Changes the scroll view to use a `UIPageViewController` to layout and navigate p
 func usePageViewController(_ enable: Bool, withViewOptions viewOptions: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (void) usePageViewController:(BOOL) enable withViewOptions:(NSDictionary *) viewOptions;
+```
+
 ## See Also
 
-- [var displaysAsBook: Bool](pdfview/displaysasbook.md)
+### Displaying as Book
+- [var displaysAsBook: Bool](./displaysasbook.md)
   A Boolean value indicating whether the view will display the first page as a book cover (meaningful only when the document is in two-up or two-up continuous display mode).
-- [var isUsingPageViewController: Bool](pdfview/isusingpageviewcontroller.md)
+- [var isUsingPageViewController: Bool](./isusingpageviewcontroller.md)
   A Boolean value indicating whether the scroll view is using a `UIPageViewController`.
 
 

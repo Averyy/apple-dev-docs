@@ -1,14 +1,15 @@
 # rsvd_fcn_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef int () rsvd_fcn_t;
 ```
 

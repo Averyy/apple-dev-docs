@@ -1,7 +1,8 @@
 # addDocumentMetadata(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates custom metadata with the PDF document.
 
@@ -10,7 +11,7 @@ Associates custom metadata with the PDF document.
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,28 @@ Associates custom metadata with the PDF document.
 func addDocumentMetadata(_ metadata: CFData?)
 ```
 
+```c
+extern void CGPDFContextAddDocumentMetadata(CGContextRef context, CFDataRef metadata);
+```
+
 ## Parameters
 
 - `metadata`: A stream of XML data that is formatted according to the Extensible Metadata Platform, as described in section 10.2.2., “Metadata Streams”, of the PDF 1.7 specification.
 
 ## See Also
 
-- [func beginPDFPage(CFDictionary?)](cgcontext/beginpdfpage(_:).md)
+### Managing a PDF Graphics Context
+- [func beginPDFPage(CFDictionary?)](./beginpdfpage%28_%29.md)
   Begins a new page in a PDF graphics context.
-- [func endPDFPage()](cgcontext/endpdfpage.md)
+- [func endPDFPage()](./endpdfpage%28%29.md)
   Ends the current page in the PDF graphics context.
-- [func addDestination(CFString, at: CGPoint)](cgcontext/adddestination(_:at:).md)
+- [func addDestination(CFString, at: CGPoint)](./adddestination%28_,at%29.md)
   Sets a destination to jump to when a point in the current page of a PDF graphics context is clicked.
-- [func setDestination(CFString, for: CGRect)](cgcontext/setdestination(_:for:).md)
+- [func setDestination(CFString, for: CGRect)](./setdestination%28_,for%29.md)
   Sets a destination to jump to when a rectangle in the current PDF page is clicked.
-- [func setURL(CFURL, for: CGRect)](cgcontext/seturl(_:for:).md)
+- [func setURL(CFURL, for: CGRect)](./seturl%28_,for%29.md)
   Sets the URL associated with a rectangle in a PDF graphics context.
-- [func closePDF()](cgcontext/closepdf.md)
+- [func closePDF()](./closepdf%28%29.md)
   Closes a PDF document.
 
 

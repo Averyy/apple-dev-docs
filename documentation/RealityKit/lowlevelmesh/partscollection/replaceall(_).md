@@ -1,7 +1,8 @@
 # replaceAll(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all mesh parts in this collection with those from the new sequence.
 
@@ -25,11 +26,12 @@ mutating func replaceAll<S>(_ newElements: S) where S : Sequence, S.Element == L
 
 ## See Also
 
-- [func append(LowLevelMesh.PartsCollection.Element)](lowlevelmesh/partscollection/append(_:).md)
+### Updating collection contents
+- [func append(LowLevelMesh.PartsCollection.Element)](./append%28_%29.md)
   Adds an element to the end of the collection.
-- [func append<S>(contentsOf: S)](lowlevelmesh/partscollection/append(contentsof:).md)
+- [func append<S>(contentsOf: S)](./append%28contentsof%29.md)
   Adds the elements of a sequence or collection to the end of this collection.
-- [func removeAll()](lowlevelmesh/partscollection/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Removes all mesh parts from this collection.
 
 

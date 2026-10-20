@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results that match the current query string.
 
@@ -20,7 +21,7 @@ var results: CSSearchQuery.Results { get }
 
 ## Mentions
 
-- [Searching for information in your app](searching-for-information-in-your-app.md)
+- [Searching for information in your app](../searching-for-information-in-your-app.md)
 
 #### Discussion
 
@@ -39,7 +40,8 @@ for try await element in query.results {
 
 ## See Also
 
-- [CSSearchQuery.Results](cssearchquery/results-swift.struct.md)
+### Executing the query automatically
+- [CSSearchQuery.Results](./results-swift.struct.md)
   An asynchronous sequence that contains the results that match the query string.
 
 

@@ -1,7 +1,8 @@
 # MLComputePlan.Cost
 
 **Framework**: Core ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct containing information on the estimated cost of executing a layer/operation.
 
@@ -23,18 +24,19 @@ struct Cost
 ## Topics
 
 ### Accessing the weight
-- [let weight: Double](mlcomputeplan-1w21n/cost/weight.md)
+- [let weight: Double](./cost/weight.md)
   The estimated workload of executing the operation over the total model evaluation. The value is between [0.0, 1.0].
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func estimatedCost(of: MLModelStructure.Program.Operation) -> MLComputePlan.Cost?](mlcomputeplan-1w21n/estimatedcost(of:).md)
+### Getting the estimated cost
+- [func estimatedCost(of: MLModelStructure.Program.Operation) -> MLComputePlan.Cost?](./estimatedcost%28of%29.md)
   Returns the estimated cost of executing a MLProgram operation.
 
 

@@ -1,12 +1,13 @@
 # discardEditing()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Discards any pending changes by registered editors.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,21 +16,26 @@ Discards any pending changes by registered editors.
 func discardEditing()
 ```
 
+```objc
+- (void) discardEditing;
+```
+
 #### Discussion
 
-The receiver invokes [`discardEditing`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/discardediting) on any current editors.
+The receiver invokes [`discardEditing`](../../ObjectiveC/nsobject-swift.class/discardediting.md) on any current editors.
 
 ## See Also
 
-- [func objectDidBeginEditing(any NSEditor)](nscontroller/objectdidbeginediting(_:).md)
+### Managing editing
+- [func objectDidBeginEditing(any NSEditor)](./objectdidbeginediting%28_%29.md)
   Invoked to inform the receiver that `editor` has uncommitted changes that can affect the receiver.
-- [func objectDidEndEditing(any NSEditor)](nscontroller/objectdidendediting(_:).md)
+- [func objectDidEndEditing(any NSEditor)](./objectdidendediting%28_%29.md)
   Invoked to inform the receiver that `editor` has committed or discarded its changes.
-- [func commitEditing() -> Bool](nscontroller/commitediting.md)
+- [func commitEditing() -> Bool](./commitediting%28%29.md)
   Attempts to commit any pending edits.
-- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](nscontroller/commitediting(withdelegate:didcommit:contextinfo:).md)
+- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](./commitediting%28withdelegate,didcommit,contextinfo%29.md)
   Attempts to commit any pending changes in known editors of the receiver.
-- [var isEditing: Bool](nscontroller/isediting.md)
+- [var isEditing: Bool](./isediting.md)
   A Boolean value indicating if any editors are registered with the controller.
 
 

@@ -1,7 +1,8 @@
 # uniqueID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that uniquely identifies the device.
 
@@ -19,25 +20,30 @@ An identifier that uniquely identifies the device.
 var uniqueID: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * uniqueID;
+```
+
 #### Discussion
 
 Capture devices have a unique identifier that persists on one system across device connections and disconnections, application restarts, and reboots of the system itself. You can store the value returned by this property to recall or track the status of a specific device in the future.
 
 ## See Also
 
-- [var modelID: String](avcapturedevice/modelid.md)
+### Identifying a device
+- [var modelID: String](./modelid.md)
   A model identifier for the device.
-- [var localizedName: String](avcapturedevice/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   A localized device name for display in the user interface.
-- [var manufacturer: String](avcapturedevice/manufacturer.md)
+- [var manufacturer: String](./manufacturer.md)
   A human-readable string for the manufacturer of the device.
-- [var deviceType: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.property.md)
+- [var deviceType: AVCaptureDevice.DeviceType](./devicetype-swift.property.md)
   The type of device, such as a built-in microphone or wide-angle camera.
-- [AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct.md)
+- [AVCaptureDevice.DeviceType](./devicetype-swift.struct.md)
   A structure that defines the device types the framework supports.
-- [var position: AVCaptureDevice.Position](avcapturedevice/position-swift.property.md)
+- [var position: AVCaptureDevice.Position](./position-swift.property.md)
   The physical position of the capture device hardware.
-- [AVCaptureDevice.Position](avcapturedevice/position-swift.enum.md)
+- [AVCaptureDevice.Position](./position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
 
 

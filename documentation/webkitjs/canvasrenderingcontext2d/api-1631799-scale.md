@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Scales the canvas coordinate system horizontally and vertically.
 
@@ -11,7 +12,7 @@ Scales the canvas coordinate system horizontally and vertically.
 
 ## Declaration
 
-```swift
+```
 void scale(
     unrestricted float sx, 
     unrestricted float sy
@@ -29,13 +30,14 @@ Drawing operations can be scaled up or down by setting the scale. All drawing op
 
 ## See Also
 
-- [rotate](canvasrenderingcontext2d/1630553-rotate.md)
+### Changing the Coordinate System
+- [rotate](./api-1630553-rotate.md)
   Rotates the canvas coordinate system.
-- [setTransform](canvasrenderingcontext2d/1630015-settransform.md)
+- [setTransform](./api-1630015-settransform.md)
   Sets the transformation matrix.
-- [transform](canvasrenderingcontext2d/1629911-transform.md)
+- [transform](./api-1629911-transform.md)
   Transforms the current transformation matrix using another matrix.
-- [translate](canvasrenderingcontext2d/1629441-translate.md)
+- [translate](./api-1629441-translate.md)
   Moves the origin of the canvas coordinate system.
 
 

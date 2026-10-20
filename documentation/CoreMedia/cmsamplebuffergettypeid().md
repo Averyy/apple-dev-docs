@@ -1,7 +1,8 @@
 # CMSampleBufferGetTypeID()
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier of sample buffer objects.
 
@@ -18,6 +19,10 @@ Returns the type identifier of sample buffer objects.
 
 ```swift
 func CMSampleBufferGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CMSampleBufferGetTypeID();
 ```
 
 #### Return Value

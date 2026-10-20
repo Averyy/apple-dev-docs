@@ -1,7 +1,8 @@
 # init(layoutSize:elementKind:containerAnchor:itemAnchor:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a supplementary item of the specified size and element kind, an anchor relative to a container, and an anchor relative to an item.
 
@@ -18,9 +19,14 @@ Creates a supplementary item of the specified size and element kind, an anchor r
 convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, containerAnchor: NSCollectionLayoutAnchor, itemAnchor: NSCollectionLayoutAnchor)
 ```
 
+```objc
++ (instancetype) supplementaryItemWithLayoutSize:(NSCollectionLayoutSize *) layoutSize elementKind:(NSString *) elementKind containerAnchor:(NSCollectionLayoutAnchor *) containerAnchor itemAnchor:(NSCollectionLayoutAnchor *) itemAnchor;
+```
+
 ## See Also
 
-- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, containerAnchor: NSCollectionLayoutAnchor)](nscollectionlayoutsupplementaryitem/init(layoutsize:elementkind:containeranchor:).md)
+### Creating a supplementary item
+- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, containerAnchor: NSCollectionLayoutAnchor)](./init%28layoutsize,elementkind,containeranchor%29.md)
   Creates a supplementary item of the specified size and element kind, with an anchor relative to a container.
 
 

@@ -1,14 +1,15 @@
 # HasPCIPowerManagement_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 kern_return_t HasPCIPowerManagement_Impl(uint64_t state);
 ```
 

@@ -1,7 +1,8 @@
 # kUSBHubRqSetDescriptor
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A request to set a descriptor.
 
@@ -10,7 +11,7 @@ A request to set a descriptor.
 
 ## Declaration
 
-```swift
+```c
 kUSBHubRqSetDescriptor = 7
 ```
 

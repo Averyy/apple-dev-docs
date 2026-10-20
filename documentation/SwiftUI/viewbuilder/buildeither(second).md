@@ -1,7 +1,8 @@
 # buildEither(second:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Produces content for a conditional statement in a multi-statement closure when the condition is false.
 
@@ -23,11 +24,12 @@ static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _Con
 
 ## See Also
 
-- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](viewbuilder/buildeither(first:).md)
+### Conditionally building content
+- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](./buildeither%28first%29.md)
   Produces content for a conditional statement in a multi-statement closure when the condition is true.
-- [static buildIf(_:)](viewbuilder/buildif(_:).md)
+- [static buildIf(_:)](./buildif%28_%29.md)
   Produces optional content for conditional statements in multi-statement closures that’s only included when the condition evaluates to true.
-- [static buildLimitedAvailability(_:)](viewbuilder/buildlimitedavailability(_:).md)
+- [static buildLimitedAvailability(_:)](./buildlimitedavailability%28_%29.md)
 
 
 ---

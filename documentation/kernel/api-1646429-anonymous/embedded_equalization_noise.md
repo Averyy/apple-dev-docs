@@ -1,14 +1,15 @@
 # EMBEDDED_EQUALIZATION_NOISE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_EQUALIZATION_NOISE = 0x0702
 ```
 

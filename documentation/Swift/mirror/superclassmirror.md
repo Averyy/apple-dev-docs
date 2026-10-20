@@ -1,7 +1,8 @@
 # superclassMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror of the subject’s superclass, if one exists.
 

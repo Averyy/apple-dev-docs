@@ -1,7 +1,8 @@
 # handler(for:)
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object that participates in the composition of a mail message.
 
@@ -12,6 +13,10 @@ Returns an object that participates in the composition of a mail message.
 
 ```swift
 optional func handler(for session: MEComposeSession) -> any MEComposeSessionHandler
+```
+
+```objc
+- (id<MEComposeSessionHandler>) handlerForComposeSession:(MEComposeSession *) session;
 ```
 
 #### Return Value

@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var typeGIF: DescType](../coreservices/typegif.md)
-- [var typeJPEG: DescType](../coreservices/typejpeg.md)
-- [var typeTIFF: DescType](../coreservices/typetiff.md)
-- [var typeVersion: DescType](../coreservices/typeversion.md)
+- [var typeGIF: DescType](../../coreservices/typegif.md)
+- [var typeJPEG: DescType](../../coreservices/typejpeg.md)
+- [var typeTIFF: DescType](../../coreservices/typetiff.md)
+- [var typeVersion: DescType](../../coreservices/typeversion.md)
 
 
 ---

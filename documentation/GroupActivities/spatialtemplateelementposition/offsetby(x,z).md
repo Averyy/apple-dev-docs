@@ -1,7 +1,8 @@
 # offsetBy(x:z:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new position at the specified distance from the origin of the shared coordinate space.
 

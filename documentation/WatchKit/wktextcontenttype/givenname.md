@@ -1,12 +1,13 @@
 # givenName
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A given name.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A given name.
 static let givenName: WKTextContentType
 ```
 
+```c
+extern WKTextContentType const WKTextContentTypeGivenName;
+```
+
 ## See Also
 
-- [static let name: WKTextContentType](wktextcontenttype/name.md)
+### Name
+- [static let name: WKTextContentType](./name.md)
   A full name.
-- [static let namePrefix: WKTextContentType](wktextcontenttype/nameprefix.md)
+- [static let namePrefix: WKTextContentType](./nameprefix.md)
   A title or prefix for a name.
-- [static let middleName: WKTextContentType](wktextcontenttype/middlename.md)
+- [static let middleName: WKTextContentType](./middlename.md)
   A middle name.
-- [static let familyName: WKTextContentType](wktextcontenttype/familyname.md)
+- [static let familyName: WKTextContentType](./familyname.md)
   A last name.
-- [static let nameSuffix: WKTextContentType](wktextcontenttype/namesuffix.md)
+- [static let nameSuffix: WKTextContentType](./namesuffix.md)
   A suffix for a name.
-- [static let nickname: WKTextContentType](wktextcontenttype/nickname.md)
+- [static let nickname: WKTextContentType](./nickname.md)
   A nickname.
 
 

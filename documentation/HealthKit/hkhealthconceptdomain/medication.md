@@ -1,7 +1,8 @@
 # medication
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The domain that represents medication concepts.
 
@@ -17,6 +18,10 @@ The domain that represents medication concepts.
 
 ```swift
 static let medication: HKHealthConceptDomain
+```
+
+```c
+extern HKHealthConceptDomain const HKHealthConceptDomainMedication;
 ```
 
 #### Discussion

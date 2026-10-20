@@ -1,7 +1,8 @@
 # tokenBackgroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color for all tokens in the search text field.
 
@@ -17,15 +18,20 @@ The background color for all tokens in the search text field.
 var tokenBackgroundColor: UIColor! { get set }
 ```
 
+```objc
+@property (nonatomic, strong, null_resettable) UIColor * tokenBackgroundColor;
+```
+
 #### Discussion
 
 If you set this property to `nil`, the search field reverts to the default token background color.
 
 ## See Also
 
-- [func tokens(in: UITextRange) -> [UISearchToken]](uisearchtextfield/tokens(in:).md)
+### Customizing token behavior
+- [func tokens(in: UITextRange) -> [UISearchToken]](./tokens%28in%29.md)
   Returns the search field’s tokens that are within a given range.
-- [func positionOfToken(at: Int) -> UITextPosition](uisearchtextfield/positionoftoken(at:).md)
+- [func positionOfToken(at: Int) -> UITextPosition](./positionoftoken%28at%29.md)
   Converts a token index into a text position.
 
 

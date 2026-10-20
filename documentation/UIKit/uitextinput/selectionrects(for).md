@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns an array of selection rects corresponding to the range of text.
@@ -10,7 +11,7 @@ Returns an array of selection rects corresponding to the range of text.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Returns an array of selection rects corresponding to the range of text.
 func selectionRects(for range: UITextRange) -> [UITextSelectionRect]
 ```
 
+```objc
+- (NSArray<UITextSelectionRect *> *) selectionRectsForRange:(UITextRange *) range;
+```
+
 #### Return Value
 
-An array of [`UITextSelectionRect`](uitextselectionrect.md) objects that encompass the selection.
+An array of [`UITextSelectionRect`](../uitextselectionrect.md) objects that encompass the selection.
 
 ## Parameters
 
@@ -29,13 +34,14 @@ An array of [`UITextSelectionRect`](uitextselectionrect.md) objects that encompa
 
 ## See Also
 
-- [func firstRect(for: UITextRange) -> CGRect](uitextinput/firstrect(for:).md)
+### Working with geometry and hit-testing
+- [func firstRect(for: UITextRange) -> CGRect](./firstrect%28for%29.md)
   Returns the first rectangle that encloses a range of text in a document.
-- [func closestPosition(to: CGPoint) -> UITextPosition?](uitextinput/closestposition(to:).md)
+- [func closestPosition(to: CGPoint) -> UITextPosition?](./closestposition%28to%29.md)
   Returns the position in a document that is closest to a specified point.
-- [func closestPosition(to: CGPoint, within: UITextRange) -> UITextPosition?](uitextinput/closestposition(to:within:).md)
+- [func closestPosition(to: CGPoint, within: UITextRange) -> UITextPosition?](./closestposition%28to,within%29.md)
   Returns the position in a document that is closest to a specified point in a specified range.
-- [func characterRange(at: CGPoint) -> UITextRange?](uitextinput/characterrange(at:).md)
+- [func characterRange(at: CGPoint) -> UITextRange?](./characterrange%28at%29.md)
   Returns the character or range of characters that is at a specified point in a document.
 
 

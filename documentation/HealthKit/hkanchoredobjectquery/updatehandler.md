@@ -1,7 +1,8 @@
 # updateHandler
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Handler for monitoring updates to the HealthKit store.
 
@@ -9,7 +10,7 @@ Handler for monitoring updates to the HealthKit store.
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Handler for monitoring updates to the HealthKit store.
 
 ```swift
 var updateHandler: (@Sendable (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^updateHandler)(HKAnchoredObjectQuery *query, NSArray<__kindof HKSample *> *addedObjects, NSArray<HKDeletedObject *> *deletedObjects, HKQueryAnchor *newAnchor, NSError *error);
 ```
 
 #### Discussion

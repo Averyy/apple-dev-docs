@@ -1,7 +1,8 @@
 # SKAttributeType
 
 **Framework**: SpriteKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that specify an attribute’s data type.
 
@@ -20,30 +21,34 @@ Options that specify an attribute’s data type.
 enum SKAttributeType
 ```
 
+```c
+enum SKAttributeType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SKAttributeType.float](skattributetype/float.md)
-- [SKAttributeType.halfFloat](skattributetype/halffloat.md)
-- [SKAttributeType.none](skattributetype/none.md)
-- [SKAttributeType.vectorFloat2](skattributetype/vectorfloat2.md)
-- [SKAttributeType.vectorFloat3](skattributetype/vectorfloat3.md)
-- [SKAttributeType.vectorFloat4](skattributetype/vectorfloat4.md)
-- [SKAttributeType.vectorHalfFloat2](skattributetype/vectorhalffloat2.md)
-- [SKAttributeType.vectorHalfFloat3](skattributetype/vectorhalffloat3.md)
-- [SKAttributeType.vectorHalfFloat4](skattributetype/vectorhalffloat4.md)
+- [SKAttributeType.float](./skattributetype/float.md)
+- [SKAttributeType.halfFloat](./skattributetype/halffloat.md)
+- [SKAttributeType.none](./skattributetype/none.md)
+- [SKAttributeType.vectorFloat2](./skattributetype/vectorfloat2.md)
+- [SKAttributeType.vectorFloat3](./skattributetype/vectorfloat3.md)
+- [SKAttributeType.vectorFloat4](./skattributetype/vectorfloat4.md)
+- [SKAttributeType.vectorHalfFloat2](./skattributetype/vectorhalffloat2.md)
+- [SKAttributeType.vectorHalfFloat3](./skattributetype/vectorhalffloat3.md)
+- [SKAttributeType.vectorHalfFloat4](./skattributetype/vectorhalffloat4.md)
 ### Initializers
-- [init?(rawValue: Int)](skattributetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./skattributetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

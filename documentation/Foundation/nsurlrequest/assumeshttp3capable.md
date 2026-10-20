@@ -1,7 +1,8 @@
 # assumesHTTP3Capable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the server is assumed to support HTTP/3.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the server is assumed to support HTTP/3.
 
 ```swift
 var assumesHTTP3Capable: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL assumesHTTP3Capable;
 ```
 
 #### Discussion

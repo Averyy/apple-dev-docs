@@ -1,17 +1,22 @@
 # menu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pull-down menu displayed when the user clicks the status item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var menu: NSMenu? { get set }
+```
+
+```objc
+@property (strong, nullable) NSMenu * menu;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ When non-`nil`, the status item’s single click action behavior is not used. Se
 
 ## See Also
 
-- [var behavior: NSStatusItem.Behavior](nsstatusitem/behavior-swift.property.md)
+### Managing the status item’s behavior
+- [var behavior: NSStatusItem.Behavior](./behavior-swift.property.md)
   The set of allowed behaviors for the status item.
-- [NSStatusItem.Behavior](nsstatusitem/behavior-swift.struct.md)
+- [NSStatusItem.Behavior](./behavior-swift.struct.md)
   A set of optional status item behaviors.
-- [var button: NSStatusBarButton?](nsstatusitem/button.md)
+- [var button: NSStatusBarButton?](./button.md)
   The button displayed in the status bar.
 
 

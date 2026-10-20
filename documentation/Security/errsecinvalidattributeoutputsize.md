@@ -1,7 +1,8 @@
 # errSecInvalidAttributeOutputSize
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An output size attribute is not valid.
 
@@ -18,6 +19,10 @@ An output size attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeOutputSize: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeOutputSize
 ```
 
 

@@ -1,17 +1,22 @@
 # synchronizeTitleAndSelectedItem()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ensures that the item being displayed by the receiver agrees with the selected item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func synchronizeTitleAndSelectedItem()
+```
+
+```objc
+- (void) synchronizeTitleAndSelectedItem;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ If there’s no selected item, this method selects the first item in the item me
 
 ## See Also
 
-- [var indexOfSelectedItem: Int](nspopupbutton/indexofselecteditem.md)
+### Related Documentation
+- [var indexOfSelectedItem: Int](./indexofselecteditem.md)
   The index of the item that was last selected by the user.
-- [var itemArray: [NSMenuItem]](nspopupbutton/itemarray.md)
+- [var itemArray: [NSMenuItem]](./itemarray.md)
   The array of menu item objects associated with the button.
 
 

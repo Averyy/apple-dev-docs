@@ -1,7 +1,8 @@
 # keyAgreement
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `KeyAgreement` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `KeyAgreement` bit is set in KeyUsage extension.
 
 ```swift
 static var keyAgreement: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageKeyAgreement
 ```
 
 

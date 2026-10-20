@@ -1,7 +1,8 @@
 # isInspectable
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can inspect the view with Safari Web Inspector.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether you can inspect the view with Safari Web 
 var isInspectable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isInspectable) BOOL inspectable;
+```
+
 #### Discussion
 
 Defaults to `false`.
@@ -26,7 +31,7 @@ Set to `true` at any point in the view’s lifetime to allow Safari Web Inspecto
 
 If you set this value to `false` during inspection, the system immediately closes Safari Web Inspector and does not provide any further information about the web content.
 
-For more information, see [`Enabling the Inspection of Web Content in Apps`](https://developer.apple.comhttps://webkit.org/blog/13936/enabling-the-inspection-of-web-content-in-apps/).
+For more information, see [Enabling the Inspection of Web Content in Apps](https://webkit.org/blog/13936/enabling-the-inspection-of-web-content-in-apps/).
 
 
 ---

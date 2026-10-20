@@ -1,7 +1,8 @@
 # FSEventsCopyUUIDForDevice(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,7 +14,11 @@
 func FSEventsCopyUUIDForDevice(_ dev: dev_t) -> CFUUID?
 ```
 
-#### Return_value
+```c
+CFUUIDRef FSEventsCopyUUIDForDevice(dev_t dev);
+```
+
+#### Return Value
 
 The UUID associated with the stream of events on this device, or NULL if no UUID is available (for example, on a read-only device). The UUID is stored on the device itself and travels with it even when the device is attached to different computers. Ownership follows the Copy Rule.
 

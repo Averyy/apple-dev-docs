@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An optional name that can help you identify the residency set.
@@ -20,21 +21,26 @@ An optional name that can help you identify the residency set.
 var label: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
-The value of this property comes from the [`label`](mtlresidencysetdescriptor/label.md) property of the [`MTLResidencySetDescriptor`](mtlresidencysetdescriptor.md) instance you use to create the residency set with [`makeResidencySet(descriptor:)`](mtldevice/makeresidencyset(descriptor:).md).
+The value of this property comes from the [`label`](../mtlresidencysetdescriptor/label.md) property of the [`MTLResidencySetDescriptor`](../mtlresidencysetdescriptor.md) instance you use to create the residency set with [`makeResidencySet(descriptor:)`](../mtldevice/makeresidencyset%28descriptor%29.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtlresidencyset/device.md)
+### Inspecting a residency set
+- [var device: any MTLDevice](./device.md)
   The Metal device that owns the residency set.
-- [func containsAllocation(any MTLAllocation) -> Bool](mtlresidencyset/containsallocation(_:).md)
+- [func containsAllocation(any MTLAllocation) -> Bool](./containsallocation%28_%29.md)
   Returns a Boolean value that indicates whether the residency set contains a specific resource allocation.
-- [var allAllocations: [any MTLAllocation]](mtlresidencyset/allallocations.md)
+- [var allAllocations: [any MTLAllocation]](./allallocations.md)
   The residency set’s current list of resource allocations.
-- [var allocationCount: Int](mtlresidencyset/allocationcount.md)
+- [var allocationCount: Int](./allocationcount.md)
   The number of resource allocations in the residency set.
-- [var allocatedSize: UInt64](mtlresidencyset/allocatedsize.md)
+- [var allocatedSize: UInt64](./allocatedsize.md)
   The amount of resident memory, in bytes, the residency set’s resource allocations consume.
 
 

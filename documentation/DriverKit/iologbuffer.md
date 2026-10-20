@@ -1,24 +1,26 @@
 # IOLogBuffer
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void IOLogBuffer(const char *title, const void *buffer, size_t size);
 ```
 
 ## See Also
 
-- [OSObjectLog](osobjectlog.md)
-- [crc32](crc32.md)
+### Log Support
+- [OSObjectLog](./osobjectlog.md)
+- [crc32](./crc32.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSTextSelectionNavigation.WritingDirection.leftToRight
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that defines the left to right writing direction.
 
@@ -14,9 +15,14 @@ The value that defines the left to right writing direction.
 case leftToRight
 ```
 
+```c
+NSTextSelectionNavigationWritingDirectionLeftToRight
+```
+
 ## See Also
 
-- [NSTextSelectionNavigation.WritingDirection.rightToLeft](nstextselectionnavigation/writingdirection/righttoleft.md)
+### Writing directions
+- [NSTextSelectionNavigation.WritingDirection.rightToLeft](./righttoleft.md)
   The value that defines the right to left writing direction.
 
 

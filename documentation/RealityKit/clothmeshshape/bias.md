@@ -1,7 +1,8 @@
 # bias
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance by which the vertices are extended outwards along the direction of their normals.
 
@@ -22,7 +23,8 @@ This can be used to make a mesh collider slightly larger than its visual counter
 
 ## See Also
 
-- [var mesh: ClothMeshResource](clothmeshshape/mesh.md)
+### Configuring the mesh shape
+- [var mesh: ClothMeshResource](./mesh.md)
   The mesh resource that this shape is based off.
 
 

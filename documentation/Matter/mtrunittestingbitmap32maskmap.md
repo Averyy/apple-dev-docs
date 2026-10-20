@@ -1,7 +1,8 @@
 # MTRUnitTestingBitmap32MaskMap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.4+
@@ -18,27 +19,31 @@
 struct MTRUnitTestingBitmap32MaskMap
 ```
 
+```c
+enum MTRUnitTestingBitmap32MaskMap : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrunittestingbitmap32maskmap/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrunittestingbitmap32maskmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var maskVal1: MTRUnitTestingBitmap32MaskMap](mtrunittestingbitmap32maskmap/maskval1.md)
-- [static var maskVal2: MTRUnitTestingBitmap32MaskMap](mtrunittestingbitmap32maskmap/maskval2.md)
-- [static var maskVal3: MTRUnitTestingBitmap32MaskMap](mtrunittestingbitmap32maskmap/maskval3.md)
-- [static var maskVal4: MTRUnitTestingBitmap32MaskMap](mtrunittestingbitmap32maskmap/maskval4.md)
+- [static var maskVal1: MTRUnitTestingBitmap32MaskMap](./mtrunittestingbitmap32maskmap/maskval1.md)
+- [static var maskVal2: MTRUnitTestingBitmap32MaskMap](./mtrunittestingbitmap32maskmap/maskval2.md)
+- [static var maskVal3: MTRUnitTestingBitmap32MaskMap](./mtrunittestingbitmap32maskmap/maskval3.md)
+- [static var maskVal4: MTRUnitTestingBitmap32MaskMap](./mtrunittestingbitmap32maskmap/maskval4.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

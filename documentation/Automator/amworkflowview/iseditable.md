@@ -1,7 +1,8 @@
 # isEditable
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the workflow view is editable.
 
@@ -15,9 +16,14 @@ A Boolean value that indicates whether the workflow view is editable.
 var isEditable: Bool { get set }
 ```
 
+```objc
+@property (atomic, getter=isEditable) BOOL editable;
+```
+
 ## See Also
 
-- [var workflowController: AMWorkflowController?](amworkflowview/workflowcontroller.md)
+### Configuring the Workflow View
+- [var workflowController: AMWorkflowController?](./workflowcontroller.md)
   The view’s workflow controller.
 
 

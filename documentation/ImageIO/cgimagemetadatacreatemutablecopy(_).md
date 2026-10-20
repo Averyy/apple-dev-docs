@@ -1,7 +1,8 @@
 # CGImageMetadataCreateMutableCopy(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a deep, mutable copy of the specified metadata information.
 
@@ -20,9 +21,13 @@ Creates a deep, mutable copy of the specified metadata information.
 func CGImageMetadataCreateMutableCopy(_ metadata: CGImageMetadata) -> CGMutableImageMetadata?
 ```
 
+```c
+extern CGMutableImageMetadataRefCGImageMetadataCreateMutableCopy(CGImageMetadataRef metadata);
+```
+
 #### Return Value
 
-A new [`CGMutableImageMetadata`](cgmutableimagemetadata.md) type that contains a deep copy of the tags in the metadata parameter.
+A new [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) type that contains a deep copy of the tags in the metadata parameter.
 
 #### Discussion
 
@@ -30,11 +35,12 @@ Typically, you call this function before modifying the metadata information for 
 
 ## Parameters
 
-- `metadata`: The metadata information to copy. This function makes a deep copy of all [`CGImageMetadataTag`](cgimagemetadatatag.md) structures in this parameter, including the values for the tags.
+- `metadata`: The metadata information to copy. This function makes a deep copy of all [`CGImageMetadataTag`](./cgimagemetadatatag.md) structures in this parameter, including the values for the tags.
 
 ## See Also
 
-- [func CGImageMetadataCreateMutable() -> CGMutableImageMetadata](cgimagemetadatacreatemutable().md)
+### Creating a Mutable Metadata Type
+- [func CGImageMetadataCreateMutable() -> CGMutableImageMetadata](./cgimagemetadatacreatemutable%28%29.md)
   Creates an empty, mutable image metdata opaque type.
 
 

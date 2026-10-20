@@ -1,7 +1,8 @@
 # URLSessionTaskMetrics.DomainResolutionProtocol.udp
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 14.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case udp
+```
+
+```c
+NSURLSessionTaskMetricsDomainResolutionProtocolUDP
 ```
 
 

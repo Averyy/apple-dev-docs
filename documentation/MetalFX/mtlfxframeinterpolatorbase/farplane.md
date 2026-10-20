@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The far plane distance that corresponds to the frustrum that renders the scene into the color buffer.
@@ -17,6 +18,10 @@ The far plane distance that corresponds to the frustrum that renders the scene i
 
 ```swift
 var farPlane: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float farPlane;
 ```
 
 

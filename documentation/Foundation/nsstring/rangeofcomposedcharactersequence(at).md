@@ -1,7 +1,8 @@
 # rangeOfComposedCharacterSequence(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range in the receiver of the composed character sequence located at a given index.
 
@@ -20,6 +21,10 @@ Returns the range in the receiver of the composed character sequence located at 
 func rangeOfComposedCharacterSequence(at index: Int) -> NSRange
 ```
 
+```objc
+- (NSRange) rangeOfComposedCharacterSequenceAtIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
 The range in the receiver of the composed character sequence located at `anIndex`.
@@ -34,7 +39,8 @@ The composed character sequence includes the first decomposed base letter found 
 
 ## See Also
 
-- [func rangeOfComposedCharacterSequences(for: NSRange) -> NSRange](nsstring/rangeofcomposedcharactersequences(for:).md)
+### Determining Composed Character Sequences
+- [func rangeOfComposedCharacterSequences(for: NSRange) -> NSRange](./rangeofcomposedcharactersequences%28for%29.md)
   Returns the range in the string of the composed character sequences for a given range.
 
 

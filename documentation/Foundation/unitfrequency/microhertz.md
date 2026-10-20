@@ -1,7 +1,8 @@
 # microhertz
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The microhertz unit of frequency.
 
@@ -21,23 +22,28 @@ The microhertz unit of frequency.
 class var microhertz: UnitFrequency { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitFrequency * microhertz;
+```
+
 ## See Also
 
-- [class var terahertz: UnitFrequency](unitfrequency/terahertz.md)
+### Accessing Predefined Units
+- [class var terahertz: UnitFrequency](./terahertz.md)
   The terahertz unit of frequency.
-- [class var gigahertz: UnitFrequency](unitfrequency/gigahertz.md)
+- [class var gigahertz: UnitFrequency](./gigahertz.md)
   The gigahertz unit of frequency.
-- [class var megahertz: UnitFrequency](unitfrequency/megahertz.md)
+- [class var megahertz: UnitFrequency](./megahertz.md)
   The megahertz unit of frequency.
-- [class var kilohertz: UnitFrequency](unitfrequency/kilohertz.md)
+- [class var kilohertz: UnitFrequency](./kilohertz.md)
   The kilohertz unit of frequency.
-- [class var hertz: UnitFrequency](unitfrequency/hertz.md)
+- [class var hertz: UnitFrequency](./hertz.md)
   The hertz unit of frequency.
-- [class var millihertz: UnitFrequency](unitfrequency/millihertz.md)
+- [class var millihertz: UnitFrequency](./millihertz.md)
   The millihertz unit of frequency.
-- [class var nanohertz: UnitFrequency](unitfrequency/nanohertz.md)
+- [class var nanohertz: UnitFrequency](./nanohertz.md)
   The nanohertz unit of frequency.
-- [class var framesPerSecond: UnitFrequency](unitfrequency/framespersecond.md)
+- [class var framesPerSecond: UnitFrequency](./framespersecond.md)
   The frames per second unit of frequency.
 
 

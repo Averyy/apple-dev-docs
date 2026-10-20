@@ -7,8 +7,8 @@ Specify current device and profile versions.
 ## Topics
 
 ### Constants
-- [var cmCurrentDeviceInfoVersion: Int](cmcurrentdeviceinfoversion.md)
-- [var cmCurrentProfileInfoVersion: Int](cmcurrentprofileinfoversion.md)
+- [var cmCurrentDeviceInfoVersion: Int](../cmcurrentdeviceinfoversion.md)
+- [var cmCurrentProfileInfoVersion: Int](../cmcurrentprofileinfoversion.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # maxResultCount
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of search results for the query to return.
 
@@ -18,15 +19,20 @@ The maximum number of search results for the query to return.
 var maxResultCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger maxResultCount;
+```
+
 #### Discussion
 
 Spotlight returns all results that it finds by default. Set a maximum limit to terminate the search early, which can improve performance.
 
 ## See Also
 
-- [var maxSuggestionCount: Int](csuserquerycontext/maxsuggestioncount.md)
+### Configuring search options
+- [var maxSuggestionCount: Int](./maxsuggestioncount.md)
   The maximum number of suggested text completions for the query to return.
-- [var disableSemanticSearch: Bool](csuserquerycontext/disablesemanticsearch.md)
+- [var disableSemanticSearch: Bool](./disablesemanticsearch.md)
   A Boolean value that indicates whether to exclude semantic-based search results from the output.
 
 

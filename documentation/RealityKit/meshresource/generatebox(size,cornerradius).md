@@ -1,7 +1,8 @@
 # generateBox(size:cornerRadius:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a box mesh from a length for the box’s width, height, and depth, and a radius for the corners.
 
@@ -11,13 +12,20 @@ Creates a box mesh from a length for the box’s width, height, and depth, and a
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 @MainActor
 @preconcurrency static func generateBox(size: Float, cornerRadius: Float = 0) -> MeshResource
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func generateBox(size: SIMD3<Float>, cornerRadius: Float = 0) -> MeshResource
 ```
 
 #### Discussion

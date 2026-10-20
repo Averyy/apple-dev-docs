@@ -1,7 +1,8 @@
 # nextMediaItem
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The next media item in the playlist after the currently selected item.
 
@@ -10,7 +11,7 @@ The next media item in the playlist after the currently selected item.
 
 ## Declaration
 
-```swift
+```
 readonly attribute MediaItem nextMediaItem;
 ```
 
@@ -20,13 +21,14 @@ This property returns `null` if the current item is the last item in the playlis
 
 ## See Also
 
-- [currentMediaItem](player/1627325-currentmediaitem.md)
+### Inspecting Media Items
+- [currentMediaItem](./api-1627325-currentmediaitem.md)
   The currently selected media item in the playlist.
-- [currentMediaItemDate](player/1837542-currentmediaitemdate.md)
+- [currentMediaItemDate](./api-1837542-currentmediaitemdate.md)
   Contains the current time of the media item as a `Date` object.
-- [currentMediaItemDuration](player/1682110-currentmediaitemduration.md)
+- [currentMediaItemDuration](./api-1682110-currentmediaitemduration.md)
   The length, in seconds, of the current media item.
-- [previousMediaItem](player/1627373-previousmediaitem.md)
+- [previousMediaItem](./api-1627373-previousmediaitem.md)
   The item in the playlist previous to the currently selected item.
 
 

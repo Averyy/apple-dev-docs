@@ -1,18 +1,19 @@
 # kCFBooleanTrue
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Boolean true value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Boolean true value.
 let kCFBooleanTrue: CFBoolean!
 ```
 
+```c
+extern CFBooleanRef const kCFBooleanTrue;
+```
+
 ## See Also
 
-- [let kCFBooleanFalse: CFBoolean!](kcfbooleanfalse.md)
+### Constants
+- [let kCFBooleanFalse: CFBoolean!](./kcfbooleanfalse.md)
   Boolean false value.
 
 

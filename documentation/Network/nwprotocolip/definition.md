@@ -1,7 +1,8 @@
 # definition
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system definition of the Internet Protocol.
 
@@ -22,7 +23,8 @@ static let definition: NWProtocolDefinition
 
 ## See Also
 
-- [NWProtocolIP.Options](nwprotocolip/options.md)
+### Configuring IP Connections
+- [NWProtocolIP.Options](./options.md)
   A container of options for configuring how IP is used on a connection.
 
 

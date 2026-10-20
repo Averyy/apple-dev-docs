@@ -1,7 +1,8 @@
 # backgroundImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display on top of the bar’s background color.
 
@@ -18,17 +19,22 @@ The image to display on top of the bar’s background color.
 var backgroundImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) UIImage * backgroundImage;
+```
+
 #### Discussion
 
-The bar layers the specified image on top of the content in the [`backgroundEffect`](uibarappearance/backgroundeffect.md) and [`backgroundColor`](uibarappearance/backgroundcolor.md) properties. UIKit sizes the image according to the value in the [`backgroundImageContentMode`](uibarappearance/backgroundimagecontentmode.md) property.
+The bar layers the specified image on top of the content in the [`backgroundEffect`](./backgroundeffect.md) and [`backgroundColor`](./backgroundcolor.md) properties. UIKit sizes the image according to the value in the [`backgroundImageContentMode`](./backgroundimagecontentmode.md) property.
 
 ## See Also
 
-- [var backgroundEffect: UIBlurEffect?](uibarappearance/backgroundeffect.md)
+### Configuring the background appearance
+- [var backgroundEffect: UIBlurEffect?](./backgroundeffect.md)
   The blur effect to apply to the bar’s background.
-- [var backgroundColor: UIColor?](uibarappearance/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   The background color of the bar.
-- [var backgroundImageContentMode: UIView.ContentMode](uibarappearance/backgroundimagecontentmode.md)
+- [var backgroundImageContentMode: UIView.ContentMode](./backgroundimagecontentmode.md)
   The content mode to use when displaying the bar’s background image.
 
 

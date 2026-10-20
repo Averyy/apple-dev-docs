@@ -1,7 +1,8 @@
 # CVTime
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure for reporting Core Video time values.
 
@@ -20,6 +21,10 @@ A structure for reporting Core Video time values.
 struct CVTime
 ```
 
+```c
+typedef struct { ... } CVTime;
+```
+
 #### Overview
 
 This structure is equivalent to the QuickTime `QTTime` structure.
@@ -27,38 +32,39 @@ This structure is equivalent to the QuickTime `QTTime` structure.
 ## Topics
 
 ### Initializers
-- [init()](cvtime/init.md)
-- [init(timeValue: Int64, timeScale: Int32, flags: Int32)](cvtime/init(timevalue:timescale:flags:).md)
-- [init(timeValue: Int64, timeScale: Int32)](cvtime/init(timevalue:timescale:).md)
+- [init()](./cvtime/init%28%29.md)
+- [init(timeValue: Int64, timeScale: Int32, flags: Int32)](./cvtime/init%28timevalue,timescale,flags%29.md)
+- [init(timeValue: Int64, timeScale: Int32)](./cvtime/init%28timevalue,timescale%29.md)
   Initialize a valid CVTime value. Note: When `timeValue` has nonzero value, `timeScale` must be greater than 0.
 ### Properties
-- [var flags: Int32](cvtime/flags.md)
-  The flags associated with the `CVTime` value. See [`CVTime Values`](cvtime-values.md) for possible values. If `kCVTimeIsIndefinite` is set, you should not use any of the other fields in this structure.
-- [var timeScale: Int32](cvtime/timescale.md)
+- [var flags: Int32](./cvtime/flags.md)
+  The flags associated with the `CVTime` value. See [CVTime Values](./cvtime-values.md) for possible values. If `kCVTimeIsIndefinite` is set, you should not use any of the other fields in this structure.
+- [var timeScale: Int32](./cvtime/timescale.md)
   The time scale for this value.
-- [var timeValue: Int64](cvtime/timevalue.md)
+- [var timeValue: Int64](./cvtime/timevalue.md)
   The time value.
 ### Instance Properties
-- [var flagOptions: CVTimeFlags](cvtime/flagoptions.md)
+- [var flagOptions: CVTimeFlags](./cvtime/flagoptions.md)
   `CVTimeFlags` representation of `CVTime.flags`
 ### Type Properties
-- [static var indefinite: CVTime](cvtime/indefinite.md)
+- [static var indefinite: CVTime](./cvtime/indefinite.md)
   CVTime with indefinite value
-- [static var zero: CVTime](cvtime/zero.md)
+- [static var zero: CVTime](./cvtime/zero.md)
   CVTime with 0 value
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CVTimeStamp](cvtimestamp-api.md)
+### Data Types
+- [CVTimeStamp](./cvtimestamp-api.md)
   A structure for representing a display timestamp.
-- [struct CVSMPTETime](cvsmptetime.md)
+- [struct CVSMPTETime](./cvsmptetime.md)
   A structure for holding an SMPTE time.
 
 

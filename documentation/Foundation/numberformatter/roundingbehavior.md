@@ -1,7 +1,8 @@
 # roundingBehavior
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rounding behavior used by the receiver.
 
@@ -15,13 +16,18 @@ The rounding behavior used by the receiver.
 var roundingBehavior: NSDecimalNumberHandler { get set }
 ```
 
+```objc
+@property (copy) NSDecimalNumberHandler * roundingBehavior;
+```
+
 ## See Also
 
-- [class NSDecimalNumberHandler](nsdecimalnumberhandler.md)
+### Configuring Rounding Behavior
+- [class NSDecimalNumberHandler](../nsdecimalnumberhandler.md)
   A class that adopts the decimal number behaviors protocol.
-- [var roundingIncrement: NSNumber!](numberformatter/roundingincrement.md)
+- [var roundingIncrement: NSNumber!](./roundingincrement.md)
   The rounding increment used by the receiver.
-- [var roundingMode: NumberFormatter.RoundingMode](numberformatter/roundingmode-swift.property.md)
+- [var roundingMode: NumberFormatter.RoundingMode](./roundingmode-swift.property.md)
   The rounding mode used by the receiver.
 
 

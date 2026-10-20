@@ -1,7 +1,8 @@
 # EnergyFormatter
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatter that provides localized descriptions of energy values.
 
@@ -20,52 +21,57 @@ A formatter that provides localized descriptions of energy values.
 class EnergyFormatter
 ```
 
+```objc
+@interface NSEnergyFormatter : NSFormatter
+```
+
 #### Overview
 
-> **Note**:  As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](measurementformatter.md) class, which can be used to represent quantities of [`UnitEnergy`](unitenergy.md) to provide equivalent functionality to [`EnergyFormatter`](energyformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
+> **Note**:  As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](./measurementformatter.md) class, which can be used to represent quantities of [`UnitEnergy`](./unitenergy.md) to provide equivalent functionality to [`EnergyFormatter`](./energyformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
 
 ## Topics
 
 ### Formatting Energy Strings
-- [var isForFoodEnergyUse: Bool](energyformatter/isforfoodenergyuse.md)
+- [var isForFoodEnergyUse: Bool](./energyformatter/isforfoodenergyuse.md)
   A Boolean value that indicates whether the energy value is used to measure food energy.
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](energyformatter/getobjectvalue(_:for:errordescription:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./energyformatter/getobjectvalue%28_,for,errordescription%29.md)
   This method is not supported for the `NSEnergyFormatter` class.
-- [var numberFormatter: NumberFormatter!](energyformatter/numberformatter.md)
+- [var numberFormatter: NumberFormatter!](./energyformatter/numberformatter.md)
   The number formatter used to format the numbers in energy strings.
-- [func string(fromJoules: Double) -> String](energyformatter/string(fromjoules:).md)
+- [func string(fromJoules: Double) -> String](./energyformatter/string%28fromjoules%29.md)
   Returns an energy string for the provided value.
-- [func string(fromValue: Double, unit: EnergyFormatter.Unit) -> String](energyformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: EnergyFormatter.Unit) -> String](./energyformatter/string%28fromvalue,unit%29.md)
   Returns a properly formatted energy string for the given value and unit.
-- [func unitString(fromJoules: Double, usedUnit: UnsafeMutablePointer<EnergyFormatter.Unit>?) -> String](energyformatter/unitstring(fromjoules:usedunit:).md)
+- [func unitString(fromJoules: Double, usedUnit: UnsafeMutablePointer<EnergyFormatter.Unit>?) -> String](./energyformatter/unitstring%28fromjoules,usedunit%29.md)
   Returns the unit string for the provided value.
-- [func unitString(fromValue: Double, unit: EnergyFormatter.Unit) -> String](energyformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: EnergyFormatter.Unit) -> String](./energyformatter/unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](energyformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./energyformatter/unitstyle.md)
   The unit style used by this formatter.
 ### Constants
-- [EnergyFormatter.Unit](energyformatter/unit.md)
+- [EnergyFormatter.Unit](./energyformatter/unit.md)
   The units supported by the `NSEnergyFormatter` class.
 
 ## Relationships
 
 ### Inherits From
-- [Formatter](formatter.md)
+- [Formatter](./formatter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class LengthFormatter](lengthformatter.md)
+### Deprecated
+- [class LengthFormatter](./lengthformatter.md)
   A formatter that provides localized descriptions of linear distances, such as length and height measurements.
-- [class MassFormatter](massformatter.md)
+- [class MassFormatter](./massformatter.md)
   A formatter that provides localized descriptions of mass and weight values.
 
 

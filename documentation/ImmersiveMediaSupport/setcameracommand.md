@@ -1,7 +1,8 @@
 # SetCameraCommand
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A command type for immersive camera switching during playback.
 
@@ -25,51 +26,52 @@ The property `cameraID` has been added to this type to hold camera identifier st
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](setcameracommand/init(from:).md)
-- [init(id: Int, time: CMTime, cameraID: String)](setcameracommand/init(id:time:cameraid:).md)
+- [init(from: any Decoder) throws](./setcameracommand/init%28from%29.md)
+- [init(id: Int, time: CMTime, cameraID: String)](./setcameracommand/init%28id,time,cameraid%29.md)
   Creates a command with a specific ID, cameraID and start time.
-- [init(id: Int, time: CMTime, cameraID: String, overrides: SetCameraCommand.Overrides?)](setcameracommand/init(id:time:cameraid:overrides:).md)
+- [init(id: Int, time: CMTime, cameraID: String, overrides: SetCameraCommand.Overrides?)](./setcameracommand/init%28id,time,cameraid,overrides%29.md)
   Creates a command with a specific ID, cameraID, start time and override parameters.
 ### Instance Properties
-- [var cameraID: String](setcameracommand/cameraid.md)
+- [var cameraID: String](./setcameracommand/cameraid.md)
   The camera ID to use for the duration of this command.
-- [var duration: CMTime](setcameracommand/duration.md)
+- [var duration: CMTime](./setcameracommand/duration.md)
   The duration of the command.
-- [var id: Int](setcameracommand/id.md)
+- [var id: Int](./setcameracommand/id.md)
   A unique command ID for the entire immersive media file.
-- [var offset: CMTime?](setcameracommand/offset.md)
+- [var offset: CMTime?](./setcameracommand/offset.md)
   Reserved for later use.
-- [var time: CMTime](setcameracommand/time.md)
+- [var time: CMTime](./setcameracommand/time.md)
   The time this command starts during playback.
-- [var overrides: SetCameraCommand.Overrides?](setcameracommand/overrides-swift.property.md)
+- [var overrides: SetCameraCommand.Overrides?](./setcameracommand/overrides-swift.property.md)
   The override parameters for the camera.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](setcameracommand/encode(to:).md)
+- [func encode(to: any Encoder) throws](./setcameracommand/encode%28to%29.md)
 ### Structures
-- [SetCameraCommand.Overrides](setcameracommand/overrides-swift.struct.md)
+- [SetCameraCommand.Overrides](./setcameracommand/overrides-swift.struct.md)
   Override camera/venue params
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PresentationCommand](presentationcommand.md)
+### Presentation commands
+- [enum PresentationCommand](./presentationcommand.md)
   A set of properties that define the interface for a presentation command.
-- [struct FadeCommand](fadecommand.md)
+- [struct FadeCommand](./fadecommand.md)
   A command type for color fading during immersive media playback.
-- [struct FadeEnvironmentCommand](fadeenvironmentcommand.md)
+- [struct FadeEnvironmentCommand](./fadeenvironmentcommand.md)
   A command type for opacity fading environment backdrops during immersive media playback.
-- [struct ShotFlopCommand](shotflopcommand.md)
+- [struct ShotFlopCommand](./shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
-- [struct ShotFlipCommand](shotflipcommand.md)
+- [struct ShotFlipCommand](./shotflipcommand.md)
   A command type to flip the video frames vertically during playback for the duration of the command.
-- [struct PresentationDescriptor](presentationdescriptor.md)
+- [struct PresentationDescriptor](./presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
-- [class PresentationDescriptorReader](presentationdescriptorreader.md)
+- [class PresentationDescriptorReader](./presentationdescriptorreader.md)
   An object that provides the functionality required to understand and process immersive presentation commands.
 
 

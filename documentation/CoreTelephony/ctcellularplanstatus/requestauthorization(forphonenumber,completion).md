@@ -1,7 +1,8 @@
 # requestAuthorization(forPhoneNumber:completion:)
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Presents a prompt that asks the person to allow cellular plan checks for their phone number.
 
@@ -13,27 +14,36 @@ Presents a prompt that asks the person to allow cellular plan checks for their p
 ## Declaration
 
 ```swift
+class func requestAuthorization(forPhoneNumber phoneNumber: String, completion completionHandler: @escaping @Sendable (CTCellularPlanStatusAuthorization, (any Error)?) -> Void)
+```
+
+```swift
 class func requestAuthorization(forPhoneNumber phoneNumber: String) async throws -> CTCellularPlanStatusAuthorization
+```
+
+```objc
++ (void) requestAuthorizationForPhoneNumber:(NSString *) phoneNumber completion:(void (^)(CTCellularPlanStatusAuthorization status, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-The completion handler receives a [`CTCellularPlanStatusAuthorization`](ctcellularplanstatusauthorization.md) value in the following circumstances:
+The completion handler receives a [`CTCellularPlanStatusAuthorization`](../ctcellularplanstatusauthorization.md) value in the following circumstances:
 
-- **[`CTCellularPlanStatusAuthorization.authorized`](ctcellularplanstatusauthorization/authorized.md)**: The person grants permission.
-- **[`CTCellularPlanStatusAuthorization.notAuthorized`](ctcellularplanstatusauthorization/notauthorized.md)**: The person denies permission.
-- **[`CTCellularPlanStatusAuthorization.restricted`](ctcellularplanstatusauthorization/restricted.md)**: Cellular plan checks aren’t available for the given number.
+- **[`CTCellularPlanStatusAuthorization.authorized`](../ctcellularplanstatusauthorization/authorized.md)**: The person grants permission.
+- **[`CTCellularPlanStatusAuthorization.notAuthorized`](../ctcellularplanstatusauthorization/notauthorized.md)**: The person denies permission.
+- **[`CTCellularPlanStatusAuthorization.restricted`](../ctcellularplanstatusauthorization/restricted.md)**: Cellular plan checks aren’t available for the given number.
 
-Only call [`getHintForPhoneNumber(_:completion:)`](ctcellularplanstatus/gethintforphonenumber(_:completion:).md) after receiving an [`CTCellularPlanStatusAuthorization.authorized`](ctcellularplanstatusauthorization/authorized.md) result.
+Only call [`getHintForPhoneNumber(_:completion:)`](./gethintforphonenumber%28_,completion%29.md) after receiving an [`CTCellularPlanStatusAuthorization.authorized`](../ctcellularplanstatusauthorization/authorized.md) result.
 
 ## Parameters
 
-- `phoneNumber`: A phone number in [`ITU-T E.164 international format`](https://developer.apple.comhttps://www.itu.int/rec/T-REC-E.164) (for example, `+15550001234`).
+- `phoneNumber`: A phone number in [ITU-T E.164 international format](https://www.itu.int/rec/T-REC-E.164) (for example, `+15550001234`).
 - `completionHandler`: A closure the framework calls with the authorization result and any error that occurs.
 
 ## See Also
 
-- [enum CTCellularPlanStatusAuthorization](ctcellularplanstatusauthorization.md)
+### Requesting phone number authorization
+- [enum CTCellularPlanStatusAuthorization](../ctcellularplanstatusauthorization.md)
   Constants that indicate the authorization status for accessing cellular plan information for a phone number.
 
 

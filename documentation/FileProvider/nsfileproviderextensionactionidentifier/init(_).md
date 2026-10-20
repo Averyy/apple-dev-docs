@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new identifier from the provided string.
 
@@ -19,7 +20,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](nsfileproviderextensionactionidentifier/init(rawvalue:).md)
+### Creating Identifiers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a new identifier from the provided value.
 
 

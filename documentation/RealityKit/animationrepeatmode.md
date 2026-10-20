@@ -1,7 +1,8 @@
 # AnimationRepeatMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that determine whether an animation replays after completion.
 
@@ -11,7 +12,7 @@ Options that determine whether an animation replays after completion.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ enum AnimationRepeatMode
 
 #### Overview
 
-Adopters of [`AnimationDefinition`](animationdefinition.md), such as [`SampledAnimation`](sampledanimation.md), offer repeat options of this type through the [`repeatMode`](sampledanimation/repeatmode.md) property.
+Adopters of [`AnimationDefinition`](./animationdefinition.md), such as [`SampledAnimation`](./sampledanimation.md), offer repeat options of this type through the [`repeatMode`](./sampledanimation/repeatmode.md) property.
 
 To select a behavior, set the repeat mode as you configure your animation, as in the following example:
 
@@ -33,34 +34,35 @@ clip.repeatMode = .repeat
 ## Topics
 
 ### Choosing a repeat mode
-- [AnimationRepeatMode.repeat](animationrepeatmode/repeat.md)
+- [AnimationRepeatMode.repeat](./animationrepeatmode/repeat.md)
   A mode that restarts the animation after it completes.
-- [AnimationRepeatMode.cumulative](animationrepeatmode/cumulative.md)
+- [AnimationRepeatMode.cumulative](./animationrepeatmode/cumulative.md)
   A mode that repeats indefinitely and begins each repetition by setting the animated property to the ending value of the previous repetition.
-- [AnimationRepeatMode.autoReverse](animationrepeatmode/autoreverse.md)
+- [AnimationRepeatMode.autoReverse](./animationrepeatmode/autoreverse.md)
   A mode that reverses the animation after reaching the end or the beginning.
-- [AnimationRepeatMode.none](animationrepeatmode/none.md)
+- [AnimationRepeatMode.none](./animationrepeatmode/none.md)
   An option that determines the animation doesn’t repeat.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+### Animation playback
+- [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
   Invoke implicit animations by setting the entity’s desired end state.
-- [class AnimationResource](animationresource.md)
+- [class AnimationResource](./animationresource.md)
   An animation for the properties of scenes or entities.
-- [struct AnimationLibraryComponent](animationlibrarycomponent.md)
+- [struct AnimationLibraryComponent](./animationlibrarycomponent.md)
   A component that represents a collection of animations that an entity can play.
-- [AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animationcollection.md)
+- [AnimationLibraryComponent.AnimationCollection](./animationlibrarycomponent/animationcollection.md)
   A collection of animations an entity can play.
-- [enum AnimationEvents](animationevents.md)
+- [enum AnimationEvents](./animationevents.md)
   Notable milestones that the framework signals during animation playback.
-- [class AnimationPlaybackController](animationplaybackcontroller.md)
+- [class AnimationPlaybackController](./animationplaybackcontroller.md)
   A controller that manages animation playback.
 
 

@@ -1,7 +1,8 @@
 # reductionMaximum(with:axes:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a reduction max operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a reduction max operation and returns the result tensor.
 
 ```swift
 func reductionMaximum(with tensor: MPSGraphTensor, axes: [NSNumber]?, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) reductionMaximumWithTensor:(MPSGraphTensor *) tensor axes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
 #### Return Value

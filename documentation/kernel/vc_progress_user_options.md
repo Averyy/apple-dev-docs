@@ -1,14 +1,15 @@
 # vc_progress_user_options
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct vc_progress_user_options {
     ...
 } vc_progress_user_options;
@@ -17,10 +18,10 @@ typedef struct vc_progress_user_options {
 ## Topics
 
 ### Instance Properties
-- [options](vc_progress_user_options/1584974-options.md)
-- [resv](vc_progress_user_options/1584967-resv.md)
-- [x_pos](vc_progress_user_options/1584965-x_pos.md)
-- [y_pos](vc_progress_user_options/1584969-y_pos.md)
+- [options](./vc_progress_user_options/api-1584974-options.md)
+- [resv](./vc_progress_user_options/api-1584967-resv.md)
+- [x_pos](./vc_progress_user_options/api-1584965-x_pos.md)
+- [y_pos](./vc_progress_user_options/api-1584969-y_pos.md)
 
 
 ---

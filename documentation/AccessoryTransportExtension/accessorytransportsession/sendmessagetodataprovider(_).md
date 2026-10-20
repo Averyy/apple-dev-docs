@@ -1,7 +1,8 @@
 # sendMessageToDataProvider(_:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a message to the data provider extension.
 
@@ -16,9 +17,9 @@ func sendMessageToDataProvider(_ message: TransportMessage) throws(AccessoryTran
 
 #### Discussion
 
-Use this method to relay data from the accessory to your app’s [`AccessoryDataProvider`](accessorydataprovider.md) extension. The system decrypts the message, if necessary, before delivering it to the data provider. Data providers receive the message through [`messageHandler(_:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/messagehandler(_:)).
+Use this method to relay data from the accessory to your app’s [`AccessoryDataProvider`](../accessorydataprovider.md) extension. The system decrypts the message, if necessary, before delivering it to the data provider. Data providers receive the message through [`messageHandler(_:)`](../../AccessoryNotifications/notificationsforwarding/accessorynotificationshandler/messagehandler%28_%29.md).
 
-> **Note**: This method relays data from the accessory for the Bluetooth transport type. For internet transport, the accessory routes its response to the device using [`pushToken`](accessorytransportsession/pushtoken.md); the system delivers the decrypted response to your data provider extension through the same message handler.
+> **Note**: This method relays data from the accessory for the Bluetooth transport type. For internet transport, the accessory routes its response to the device using [`pushToken`](./pushtoken.md); the system delivers the decrypted response to your data provider extension through the same message handler.
 
 ## Parameters
 

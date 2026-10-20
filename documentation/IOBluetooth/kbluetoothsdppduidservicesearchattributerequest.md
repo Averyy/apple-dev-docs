@@ -1,10 +1,11 @@
 # kBluetoothSDPPDUIDServiceSearchAttributeRequest
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,15 +13,20 @@
 var kBluetoothSDPPDUIDServiceSearchAttributeRequest: Int { get }
 ```
 
+```c
+kBluetoothSDPPDUIDServiceSearchAttributeRequest
+```
+
 ## See Also
 
-- [var kBluetoothSDPPDUIDErrorResponse: Int](kbluetoothsdppduiderrorresponse.md)
-- [var kBluetoothSDPPDUIDReserved: Int](kbluetoothsdppduidreserved.md)
-- [var kBluetoothSDPPDUIDServiceAttributeRequest: Int](kbluetoothsdppduidserviceattributerequest.md)
-- [var kBluetoothSDPPDUIDServiceAttributeResponse: Int](kbluetoothsdppduidserviceattributeresponse.md)
-- [var kBluetoothSDPPDUIDServiceSearchAttributeResponse: Int](kbluetoothsdppduidservicesearchattributeresponse.md)
-- [var kBluetoothSDPPDUIDServiceSearchRequest: Int](kbluetoothsdppduidservicesearchrequest.md)
-- [var kBluetoothSDPPDUIDServiceSearchResponse: Int](kbluetoothsdppduidservicesearchresponse.md)
+### Constants
+- [var kBluetoothSDPPDUIDErrorResponse: Int](./kbluetoothsdppduiderrorresponse.md)
+- [var kBluetoothSDPPDUIDReserved: Int](./kbluetoothsdppduidreserved.md)
+- [var kBluetoothSDPPDUIDServiceAttributeRequest: Int](./kbluetoothsdppduidserviceattributerequest.md)
+- [var kBluetoothSDPPDUIDServiceAttributeResponse: Int](./kbluetoothsdppduidserviceattributeresponse.md)
+- [var kBluetoothSDPPDUIDServiceSearchAttributeResponse: Int](./kbluetoothsdppduidservicesearchattributeresponse.md)
+- [var kBluetoothSDPPDUIDServiceSearchRequest: Int](./kbluetoothsdppduidservicesearchrequest.md)
+- [var kBluetoothSDPPDUIDServiceSearchResponse: Int](./kbluetoothsdppduidservicesearchresponse.md)
 
 
 ---

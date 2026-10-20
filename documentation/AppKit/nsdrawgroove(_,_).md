@@ -1,17 +1,22 @@
 # NSDrawGroove(_:_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws a gray-filled rectangle with a groove border.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func NSDrawGroove(_ rect: NSRect, _ clipRect: NSRect)
+```
+
+```c
+extern void NSDrawGroove(NSRect rect, NSRect clipRect);
 ```
 
 ## Parameters
@@ -21,9 +26,10 @@ func NSDrawGroove(_ rect: NSRect, _ clipRect: NSRect)
 
 ## See Also
 
-- [func NSEraseRect(NSRect)](nseraserect(_:).md)
+### Drawing Rectangles
+- [func NSEraseRect(NSRect)](./nseraserect%28_%29.md)
   Erases the specified rect by filling it with white.
-- [func NSDrawTiledRects(NSRect, NSRect, UnsafePointer<NSRectEdge>, UnsafePointer<CGFloat>, Int) -> NSRect](nsdrawtiledrects(_:_:_:_:_:).md)
+- [func NSDrawTiledRects(NSRect, NSRect, UnsafePointer<NSRectEdge>, UnsafePointer<CGFloat>, Int) -> NSRect](./nsdrawtiledrects%28_,_,_,_,_%29.md)
   Draws rectangles with borders.
 
 

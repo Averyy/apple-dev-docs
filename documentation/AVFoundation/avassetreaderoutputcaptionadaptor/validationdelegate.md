@@ -1,7 +1,8 @@
 # validationDelegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that handles callbacks to the caption adaptor.
 
@@ -17,9 +18,14 @@ A delegate object that handles callbacks to the caption adaptor.
 weak var validationDelegate: (any AVAssetReaderCaptionValidationHandling)? { get set }
 ```
 
+```objc
+@property (weak) id<AVAssetReaderCaptionValidationHandling> validationDelegate;
+```
+
 ## See Also
 
-- [protocol AVAssetReaderCaptionValidationHandling](avassetreadercaptionvalidationhandling.md)
+### Managing the validation delegate
+- [protocol AVAssetReaderCaptionValidationHandling](../avassetreadercaptionvalidationhandling.md)
   A protocol that defines the methods for caption validation events.
 
 

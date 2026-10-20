@@ -1,7 +1,8 @@
 # generate()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 3D representation of the image if one does not already exist.
 
@@ -18,7 +19,7 @@ Creates a 3D representation of the image if one does not already exist.
 
 This method checks for cancellation of an enclosing `Task` during generation, and cancels its own async generation early (by throwing an error) if task cancellation is detected.
 
-> **Note**: Throws an error if the underlying monoscopic image does not contain valid data to generate a spatial 3D representation; or if a spatial 3D representation has already been generated.
+> **Throws**: Throws an error if the underlying monoscopic image does not contain valid data to generate a spatial 3D representation; or if a spatial 3D representation has already been generated.
 
 Also throws an error if the image size does not meet the following requirements:
 

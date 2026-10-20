@@ -1,7 +1,8 @@
 # Application
 
 **Framework**: Managed Settings  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of an application on the user’s device.
 
@@ -23,27 +24,28 @@ Managed Settings represents apps with tokens to preserve user privacy and contro
 ## Topics
 
 ### Creating an application
-- [init(bundleIdentifier: String)](application/init(bundleidentifier:).md)
+- [init(bundleIdentifier: String)](./application/init%28bundleidentifier%29.md)
   Creates an object that represents the app with the specified bundle identifier.
-- [init(token: ApplicationToken)](application/init(token:).md)
+- [init(token: ApplicationToken)](./application/init%28token%29.md)
   Creates an object that represents the app with the specified token.
 ### Accessing application information
-- [let bundleIdentifier: String?](application/bundleidentifier.md)
+- [let bundleIdentifier: String?](./application/bundleidentifier.md)
   The unique string that identifies this app.
-- [let token: ApplicationToken?](application/token.md)
+- [let token: ApplicationToken?](./application/token.md)
   An opaque representation of a specific web domain.
-- [let localizedDisplayName: String?](application/localizeddisplayname.md)
+- [let localizedDisplayName: String?](./application/localizeddisplayname.md)
   A localized display name for the application.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [typealias ApplicationToken](applicationtoken.md)
+### Apps
+- [typealias ApplicationToken](./applicationtoken.md)
   A representation of an application.
 
 

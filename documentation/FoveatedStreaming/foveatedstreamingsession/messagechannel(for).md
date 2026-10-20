@@ -1,7 +1,8 @@
 # messageChannel(for:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates or retrieves a message channel for the given message channel ID.
 

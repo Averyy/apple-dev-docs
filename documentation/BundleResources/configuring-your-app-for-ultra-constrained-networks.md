@@ -1,6 +1,7 @@
 # Configuring your app for ultra-constrained networks
 
-**Framework**: Bundle Resources
+**Framework**: Bundle Resources  
+**Role**: Article
 
 Prepare to deliver data over resource-limited data networks.
 
@@ -18,15 +19,15 @@ With limited bandwidth and availability, ultra-constrained networks aren’t a g
 - Minimize large background downloads and uploads.
 - Minimize and optimize the use of real-time data, for instance by creating app-level resilience to breaks in service or availability.
 
-#### Configure Your App to Access Ultra Constrained Networks
+#### Configure your app to access ultra-constrained networks
 
 iOS enables apps to send data over ultra-constrained networks — or “opt-in by default” — but also makes it possible for carriers to dedicate traffic for specific use cases over the satellite networks they provide and limit data usage.
 
-To ensure your app can use ultra-constrained networks on all providers, add the [`com.apple.developer.networking.carrier-constrained.appcategory`](entitlements/com.apple.developer.networking.carrier-constrained.appcategory.md) entitlement to your app and provide an array of strings that define the service categories your app provides. The entitlement’s documentation provides specific values for a variety of app categories.
+To ensure your app can use ultra-constrained networks on all providers, add the [`com.apple.developer.networking.carrier-constrained.appcategory`](./entitlements/com.apple.developer.networking.carrier-constrained.appcategory.md) entitlement to your app and provide an array of strings that define the service categories your app provides. The entitlement’s documentation provides specific values for a variety of app categories.
 
-> **Note**: To opt out of using ultra-constrained networks, set the [`allowUltraConstrainedPaths`](https://developer.apple.com/documentation/network/nwparameters/allowultraconstrainedpaths) property to `false`.
+> **Note**: To opt out of using ultra-constrained networks, set the [`allowUltraConstrainedPaths`](../Network/nwparameters/allowultraconstrainedpaths.md) property to `false`.
 
-#### Implement a Network Path Monitor to Limit Use of Resources
+#### Implement a network path monitor to limit use of resources
 
 To ensure your app operates within the limits of ultra-constrained networks, implement a network path monitor to ensure that the data your app sends uses network resources appropriately. If you determine your app is on an ultra-constrained network, you can disable high-bandwidth features, as shown in this example.
 
@@ -54,17 +55,18 @@ monitor.start(queue: queue)
 
 The monitor runs in the background, and the system calls the handler you provide to inform the app when the network path type changes. This process allows an app to enable, disable, and then re-enable higher bandwidth features as necessary.
 
-#### Test Your App and Certify Optimization
+#### Test your app and certify optimization
 
-After you implement a network path monitor, test your app in a variety of conditions to ensure that it uses ultra-constrained network resources appropriately. Once you’ve optimized your app, add the [`com.apple.developer.networking.carrier-constrained.app-optimized`](entitlements/com.apple.developer.networking.carrier-constrained.app-optimized.md) entitlement to certify the network optimization of your app. This entitlement ensures a seamless experience for people using your app, removing system alerts that ask for permission to use the network.
+After you implement a network path monitor, test your app in a variety of conditions to ensure that it uses ultra-constrained network resources appropriately. Once you’ve optimized your app, add the [`com.apple.developer.networking.carrier-constrained.app-optimized`](./entitlements/com.apple.developer.networking.carrier-constrained.app-optimized.md) entitlement to certify the network optimization of your app. This entitlement ensures a seamless experience for people using your app, removing system alerts that ask for permission to use the network.
 
 ## See Also
 
-- [Network](../network/network.md)
+### Related Documentation
+- [Network](../Network/Network.md)
   Create network connections to send and receive data using transport and security protocols.
-- [class NWParameters](../network/nwparameters.md)
+- [class NWParameters](../Network/nwparameters.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
-- [Information Property List](information-property-list.md)
+- [Information Property List](./information-property-list.md)
   A resource containing key-value pairs that identify and configure a bundle.
 
 

@@ -1,7 +1,8 @@
 # numColors
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of colors for indexed pixel types.
 
@@ -10,7 +11,7 @@ Number of colors for indexed pixel types.
 
 ## Declaration
 
-```swift
+```c
 UInt32 numColors;
 ```
 

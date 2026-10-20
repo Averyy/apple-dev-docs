@@ -1,7 +1,8 @@
 # maxApplicableVersion
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var maxApplicableVersion: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSNumber * maxApplicableVersion;
 ```
 
 

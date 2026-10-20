@@ -1,7 +1,8 @@
 # colorSchemeContrast
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contrast associated with the color scheme of this environment.
 
@@ -22,7 +23,7 @@ var colorSchemeContrast: ColorSchemeContrast { get }
 
 #### Discussion
 
-Read this environment value from within a view to find out if SwiftUI is currently displaying the view using [`ColorSchemeContrast.standard`](colorschemecontrast/standard.md) or [`ColorSchemeContrast.increased`](colorschemecontrast/increased.md) contrast. The value that you read depends entirely on user settings, and you can’t change it.
+Read this environment value from within a view to find out if SwiftUI is currently displaying the view using [`ColorSchemeContrast.standard`](../colorschemecontrast/standard.md) or [`ColorSchemeContrast.increased`](../colorschemecontrast/increased.md) contrast. The value that you read depends entirely on user settings, and you can’t change it.
 
 ```swift
 @Environment(\.colorSchemeContrast) private var colorSchemeContrast
@@ -32,13 +33,14 @@ var body: some View {
 }
 ```
 
-When adjusting your app’s user interface to match the contrast, consider also checking the [`colorScheme`](environmentvalues/colorscheme.md) property to find out if SwiftUI is displaying the view with a light or dark appearance. For information, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Human Interface Guidelines.
+When adjusting your app’s user interface to match the contrast, consider also checking the [`colorScheme`](./colorscheme.md) property to find out if SwiftUI is displaying the view with a light or dark appearance. For information, see [Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Human Interface Guidelines.
 
-> **Note**: If you only need to provide different colors or images for different color scheme and contrast settings, do that in your app’s Asset Catalog. See [`Asset management`](https://developer.apple.com/documentation/xcode/asset-management).
+> **Note**: If you only need to provide different colors or images for different color scheme and contrast settings, do that in your app’s Asset Catalog. See [Asset management](../../Xcode/asset-management.md).
 
 ## See Also
 
-- [enum ColorSchemeContrast](colorschemecontrast.md)
+### Getting the color scheme contrast
+- [enum ColorSchemeContrast](../colorschemecontrast.md)
   The contrast between the app’s foreground and background colors.
 
 

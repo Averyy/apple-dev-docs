@@ -1,7 +1,8 @@
 # MTRDeviceResubscriptionScheduledHandler
 
 **Framework**: Matter  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 typealias MTRDeviceResubscriptionScheduledHandler = (any Error, NSNumber) -> Void
+```
+
+```c
+typedef void (^)(NSError *, NSNumber *) MTRDeviceResubscriptionScheduledHandler;
 ```
 
 

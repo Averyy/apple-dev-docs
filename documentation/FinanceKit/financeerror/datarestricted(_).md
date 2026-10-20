@@ -1,7 +1,8 @@
 # FinanceError.dataRestricted(_:)
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data is in a restricted state.
 
@@ -18,8 +19,9 @@ case dataRestricted(FinanceStore.DataType)
 
 ## See Also
 
-- [FinanceError.historyTokenInvalid](financeerror/historytokeninvalid.md)
-- [FinanceError.unknown](financeerror/unknown.md)
+### Enumeration Cases
+- [FinanceError.historyTokenInvalid](./historytokeninvalid.md)
+- [FinanceError.unknown](./unknown.md)
   An unknown error occurred.
 
 

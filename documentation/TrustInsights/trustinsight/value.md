@@ -2,6 +2,7 @@
 
 **Framework**: Trust Insights  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The result type for this particular insight which will typically be an enumeration value.
@@ -18,7 +19,8 @@ associatedtype Value
 
 ## See Also
 
-- [associatedtype SchemaVersion : Sendable](trustinsight/schemaversion.md)
+### Associated Types - generated
+- [associatedtype SchemaVersion : Sendable](./schemaversion.md)
   A value that represents one of the available schema versions for the particular insight.
 
 

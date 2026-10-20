@@ -1,7 +1,8 @@
 # timingCurve(_:_:_:_:duration:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An animation created from a cubic Bézier timing curve.
 
@@ -30,9 +31,9 @@ Use this method to create a timing curve based on the control points of a cubic 
 
 The slope of the line defines the speed of the animation at that point in time. A steep slopes causes the animation to appear to run faster, while a shallower slope appears to run slower. The following illustration shows a timing curve where the animation starts and finishes fast, but appears slower through the middle section of the animation.
 
-![An illustration of an XY graph that shows the path of a Bézier timing curve that an animation frame follows over time. The horizontal x-axis has a label with the text Time, and a label with the text Frame appears along the vertical y-axis. The path begins at the graph’s origin, labeled as (0.0, 0.0). The path moves upwards, forming a concave down shape. At the point of inflection, the path continues upwards, forming a concave up shape. A label with the text First control point (p1x, p1y) appears above the path. Extending from the label is a dotted line pointing to the position (0.1, 0.75) on the graph. Another label with the text Second control point (p2x, p2y) appears below the path. A dotted line extends from the label to the (0.85, 0.35) position on the graph.](/images/com.apple.SwiftUI/Animation-timingCurve-1@2x.png)
+![An illustration of an XY graph that shows the path of a Bézier timing curve that an animation frame follows over time. The horizontal x-axis has a label with the text Time, and a label with the text Frame appears along the vertical y-axis. The path begins at the graph’s origin, labeled as (0.0, 0.0). The path moves upwards, forming a concave down shape. At the point of inflection, the path continues upwards, forming a concave up shape. A label with the text First control point (p1x, p1y) appears above the path. Extending from the label is a dotted line pointing to the position (0.1, 0.75) on the graph. Another label with the text Second control point (p2x, p2y) appears below the path. A dotted line extends from the label to the (0.85, 0.35) position on the graph.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Animation-timingCurve-1@2x.png)
 
-The following code uses the timing curve from the previous illustration to animate a [`Circle`](circle.md) as its size changes.
+The following code uses the timing curve from the previous illustration to animate a [`Circle`](../circle.md) as its size changes.
 
 ```swift
 struct ContentView: View {
@@ -58,6 +59,8 @@ struct ContentView: View {
 }
 ```
 
+[Video: A video that shows a circle shrinking then growing to its original size using a timing curve animation. The first control point of the time curve is (0.1, 0.75) and the second is (0.85, 0.35).](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-14-timing-curve.mp4)
+
 ## Parameters
 
 - `p1x`: The x-coordinate of the first control point of the cubic Bézier curve.
@@ -68,9 +71,10 @@ struct ContentView: View {
 
 ## See Also
 
-- [init<A>(A)](animation/init(_:).md)
+### Creating custom animations
+- [init<A>(A)](./init%28_%29.md)
   Create an `Animation` that contains the specified custom animation.
-- [static func timingCurve(UnitCurve, duration: TimeInterval) -> Animation](animation/timingcurve(_:duration:).md)
+- [static func timingCurve(UnitCurve, duration: TimeInterval) -> Animation](./timingcurve%28_,duration%29.md)
   Creates a new animation with speed controlled by the given curve.
 
 

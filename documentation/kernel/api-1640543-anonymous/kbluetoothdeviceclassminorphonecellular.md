@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorPhoneCellular
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorPhoneCellular = 0x01
 ```
 

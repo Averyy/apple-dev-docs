@@ -1,7 +1,8 @@
 # init(device:windowInX:windowInY:strideInX:strideInY:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, windowInX: Int, windowInY: Int, strideInX: Int, strideInY: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device windowInX:(NSUInteger) windowInX windowInY:(NSUInteger) windowInY strideInX:(NSUInteger) strideInX strideInY:(NSUInteger) strideInY;
 ```
 
 

@@ -1,7 +1,8 @@
 # managedObjectID(forURIRepresentation:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object identifier for the specified URI representation.
 
@@ -10,7 +11,7 @@ Returns the object identifier for the specified URI representation.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the object identifier for the specified URI representation.
 
 ```swift
 func managedObjectID(forURIRepresentation url: URL) -> NSManagedObjectID?
+```
+
+```objc
+- (NSManagedObjectID *) managedObjectIDForURIRepresentation:(NSURL *) url;
 ```
 
 #### Return Value
@@ -34,9 +39,10 @@ The URI representation contains a UUID of the store the ID is coming from, and t
 
 ## See Also
 
-- [func object(with: NSManagedObjectID) -> NSManagedObject](nsmanagedobjectcontext/object(with:).md)
+### Related Documentation
+- [func object(with: NSManagedObjectID) -> NSManagedObject](../nsmanagedobjectcontext/object%28with%29.md)
   Returns either an existing object from the context or a fault that represents that object.
-- [func uriRepresentation() -> URL](nsmanagedobjectid/urirepresentation.md)
+- [func uriRepresentation() -> URL](../nsmanagedobjectid/urirepresentation%28%29.md)
   Returns a URI that provides an archiveable reference to the object for the object ID.
 
 

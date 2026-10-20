@@ -1,7 +1,8 @@
 # LocalTestingDistributedActorSystem
 
 **Framework**: Distributed  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A `DistributedActorSystem` designed for local only testing.
 
@@ -11,7 +12,7 @@ A `DistributedActorSystem` designed for local only testing.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,22 +28,23 @@ It will crash on any attempt of remote communication, but can be useful for lear
 ## Topics
 
 ### Initializers
-- [init()](localtestingdistributedactorsystem/init.md)
+- [init()](./localtestingdistributedactorsystem/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [DistributedActorSystem](distributedactorsystem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DistributedActorSystem](./distributedactorsystem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct LocalTestingActorID](localtestingactorid.md)
-- [typealias LocalTestingActorAddress](localtestingactoraddress.md)
-- [struct LocalTestingInvocationEncoder](localtestinginvocationencoder.md)
-- [class LocalTestingInvocationDecoder](localtestinginvocationdecoder.md)
-- [struct LocalTestingInvocationResultHandler](localtestinginvocationresulthandler.md)
+### Local Testing
+- [struct LocalTestingActorID](./localtestingactorid.md)
+- [typealias LocalTestingActorAddress](./localtestingactoraddress.md)
+- [struct LocalTestingInvocationEncoder](./localtestinginvocationencoder.md)
+- [class LocalTestingInvocationDecoder](./localtestinginvocationdecoder.md)
+- [struct LocalTestingInvocationResultHandler](./localtestinginvocationresulthandler.md)
 
 
 ---

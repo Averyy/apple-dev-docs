@@ -1,7 +1,8 @@
 # IntentPaymentMethod.PaymentType
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the available payment options, such as credit cards or bank accounts.
 
@@ -11,7 +12,7 @@ Constants that describe the available payment options, such as credit cards or b
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,33 +24,34 @@ enum PaymentType
 ## Topics
 
 ### Getting the payment options
-- [IntentPaymentMethod.PaymentType.applePay](intentpaymentmethod/paymenttype-swift.enum/applepay.md)
-- [IntentPaymentMethod.PaymentType.brokerage](intentpaymentmethod/paymenttype-swift.enum/brokerage.md)
-- [IntentPaymentMethod.PaymentType.checking](intentpaymentmethod/paymenttype-swift.enum/checking.md)
-- [IntentPaymentMethod.PaymentType.credit](intentpaymentmethod/paymenttype-swift.enum/credit.md)
-- [IntentPaymentMethod.PaymentType.debit](intentpaymentmethod/paymenttype-swift.enum/debit.md)
-- [IntentPaymentMethod.PaymentType.prepaid](intentpaymentmethod/paymenttype-swift.enum/prepaid.md)
-- [IntentPaymentMethod.PaymentType.savings](intentpaymentmethod/paymenttype-swift.enum/savings.md)
-- [IntentPaymentMethod.PaymentType.store](intentpaymentmethod/paymenttype-swift.enum/store.md)
-- [IntentPaymentMethod.PaymentType.unknown](intentpaymentmethod/paymenttype-swift.enum/unknown.md)
+- [IntentPaymentMethod.PaymentType.applePay](./paymenttype-swift.enum/applepay.md)
+- [IntentPaymentMethod.PaymentType.brokerage](./paymenttype-swift.enum/brokerage.md)
+- [IntentPaymentMethod.PaymentType.checking](./paymenttype-swift.enum/checking.md)
+- [IntentPaymentMethod.PaymentType.credit](./paymenttype-swift.enum/credit.md)
+- [IntentPaymentMethod.PaymentType.debit](./paymenttype-swift.enum/debit.md)
+- [IntentPaymentMethod.PaymentType.prepaid](./paymenttype-swift.enum/prepaid.md)
+- [IntentPaymentMethod.PaymentType.savings](./paymenttype-swift.enum/savings.md)
+- [IntentPaymentMethod.PaymentType.store](./paymenttype-swift.enum/store.md)
+- [IntentPaymentMethod.PaymentType.unknown](./paymenttype-swift.enum/unknown.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var paymentType: IntentPaymentMethod.PaymentType](intentpaymentmethod/paymenttype-swift.property.md)
+### Getting the payment details
+- [var paymentType: IntentPaymentMethod.PaymentType](./paymenttype-swift.property.md)
   The kind of payment method, such as a credit card or bank account
-- [var name: String?](intentpaymentmethod/name.md)
+- [var name: String?](./name.md)
   The user-visible name of the payment method
-- [var identificationHint: String?](intentpaymentmethod/identificationhint.md)
+- [var identificationHint: String?](./identificationhint.md)
   A hint making it easier for the user to identify the payment method among others of similar name or type, such as the last several digits of a credit card number
-- [var icon: DisplayRepresentation.Image?](intentpaymentmethod/icon.md)
+- [var icon: DisplayRepresentation.Image?](./icon.md)
   The icon or image representing this payment method
 
 

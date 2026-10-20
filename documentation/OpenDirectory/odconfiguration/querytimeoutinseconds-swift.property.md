@@ -1,16 +1,21 @@
 # queryTimeoutInSeconds
 
 **Framework**: Open Directory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
 
 ```swift
 var queryTimeoutInSeconds: Int { get set }
+```
+
+```objc
+@property (assign) NSInteger queryTimeoutInSeconds;
 ```
 
 

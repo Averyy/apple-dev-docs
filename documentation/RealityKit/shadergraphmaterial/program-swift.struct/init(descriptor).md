@@ -1,7 +1,8 @@
 # init(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a program by compiling the shader node graph in the given descriptor.
 
@@ -21,7 +22,7 @@ init(descriptor: ShaderGraphMaterial.Program.Descriptor) async throws
 
 #### Discussion
 
-> **Note**: If the graph is invalid or shader compilation fails.
+> **Throws**: If the graph is invalid or shader compilation fails.
 
 
 ---

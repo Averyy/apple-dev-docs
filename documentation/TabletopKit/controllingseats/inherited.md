@@ -1,7 +1,8 @@
 # ControllingSeats.inherited
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value is inherited from the parent. The table implicit value is considered to be `.any`.
 
@@ -16,13 +17,14 @@ case inherited
 
 ## See Also
 
-- [ControllingSeats.any](controllingseats/any.md)
+### Seats
+- [ControllingSeats.any](./any.md)
   Lets players in all seats interact with the equipment.
-- [case restricted([TableSeatIdentifier])](controllingseats/restricted(_:).md)
+- [case restricted([TableSeatIdentifier])](./restricted%28_%29.md)
   Lets players in specific seats interact with the equipment.
-- [case restrictedCurrent([TableSeatIdentifier])](controllingseats/restrictedcurrent(_:).md)
+- [case restrictedCurrent([TableSeatIdentifier])](./restrictedcurrent%28_%29.md)
   Lets players in specific seats interact with the equipment if they are currently in turn.
-- [ControllingSeats.current](controllingseats/current.md)
+- [ControllingSeats.current](./current.md)
   Lets only seats currently in turn interact with the equipment.
 
 

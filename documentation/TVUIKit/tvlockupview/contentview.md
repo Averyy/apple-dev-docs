@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main view for the lockup.
 
@@ -14,15 +15,20 @@ The main view for the lockup.
 var contentView: UIView { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIView * contentView;
+```
+
 #### Discussion
 
 Add subviews to the `contentView`. Don’t add views direcly to the lockup view.
 
 ## See Also
 
-- [var headerView: TVLockupHeaderFooterView?](tvlockupview/headerview.md)
+### Adding subviews
+- [var headerView: TVLockupHeaderFooterView?](./headerview.md)
   A view containing header information.
-- [var footerView: TVLockupHeaderFooterView?](tvlockupview/footerview.md)
+- [var footerView: TVLockupHeaderFooterView?](./footerview.md)
   A view containing footer information.
 
 

@@ -1,7 +1,8 @@
 # pixelBufferPool
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pixel buffer pool that will vend and efficiently recycle pixel buffer objects that can be appended to the receiver.
 
@@ -21,7 +22,8 @@ var pixelBufferPool: CVMutablePixelBuffer.Pool? { get }
 
 ## See Also
 
-- [var sourcePixelBufferAttributes: CVPixelBufferCreationAttributes?](avassetwriterinput/pixelbufferreceiver/sourcepixelbufferattributes.md)
+### Accessing the pixel buffer pool
+- [var sourcePixelBufferAttributes: CVPixelBufferCreationAttributes?](./sourcepixelbufferattributes.md)
   The pixel buffer attributes of pixel buffers that will be vended by the receiver’s pixel buffer pool.
 
 

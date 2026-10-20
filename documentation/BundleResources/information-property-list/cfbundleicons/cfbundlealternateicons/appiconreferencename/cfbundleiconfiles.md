@@ -1,7 +1,8 @@
 # CFBundleIconFiles
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 5.0+
@@ -10,13 +11,15 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `CFBundleIconFiles`
+- **Type**: array of string 
 
 ## See Also
 
-- [UIPrerenderedIcon](information-property-list/cfbundleicons/cfbundlealternateicons/appiconreferencename/uiprerenderedicon.md)
+### Property List Keys
+- [UIPrerenderedIcon](./uiprerenderedicon.md)
 
 
 ---

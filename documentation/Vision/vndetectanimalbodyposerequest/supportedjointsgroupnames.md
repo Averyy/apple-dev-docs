@@ -1,7 +1,8 @@
 # supportedJointsGroupNames
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieves the joint group names the request supports.
 
@@ -21,7 +22,8 @@ var supportedJointsGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName] { g
 
 ## See Also
 
-- [var supportedJointNames: [VNAnimalBodyPoseObservation.JointName]](vndetectanimalbodyposerequest/supportedjointnames.md)
+### Determining Supported Joints
+- [var supportedJointNames: [VNAnimalBodyPoseObservation.JointName]](./supportedjointnames.md)
   Retrieves the joint names the request supports.
 
 

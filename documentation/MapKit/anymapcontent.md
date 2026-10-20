@@ -1,7 +1,8 @@
 # AnyMapContent
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased map content.
 
@@ -28,15 +29,15 @@ An `AnyMapContent` allows changing the type of content used in a given map view.
 ## Topics
 
 ### Initializers
-- [init<Content>(Content)](anymapcontent/init(_:).md)
+- [init<Content>(Content)](./anymapcontent/init%28_%29.md)
   Create an instance that type-erases `base`.
 
 ## Relationships
 
 ### Conforms To
-- [MapContent](mapcontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MapContent](./mapcontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(largeBlob:prf:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a passkey assertion input.
 
@@ -25,9 +26,10 @@ init(largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput? = nil
 
 ## See Also
 
-- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct.md)
+### Creating an assertion input
+- [struct ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](../asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct.md)
   A type that represents input for the binary large object extension in passkey assertion requests.
-- [struct ASAuthorizationPublicKeyCredentialPRFAssertionInput](asauthorizationpublickeycredentialprfassertioninput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialPRFAssertionInput](../asauthorizationpublickeycredentialprfassertioninput-swift.struct.md)
   A type that represents input for the web authentication PRF extension in passkey assertion requests.
 
 

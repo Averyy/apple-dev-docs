@@ -1,7 +1,8 @@
 # andHide
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests that the application be hidden as soon as it completes its launch sequence.
 

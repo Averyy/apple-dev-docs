@@ -1,7 +1,8 @@
 # ProgressViewStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label describing the task represented by the progress view.
 
@@ -24,11 +25,12 @@ A type-erased label describing the task represented by the progress view.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [var label: ProgressViewStyleConfiguration.Label?](progressviewstyleconfiguration/label-swift.property.md)
+### Configuring the label
+- [var label: ProgressViewStyleConfiguration.Label?](./label-swift.property.md)
   A view that describes the task represented by the progress view.
 
 

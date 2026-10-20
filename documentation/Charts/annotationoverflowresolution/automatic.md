@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Automatically resolves overflow in each dimension.
 

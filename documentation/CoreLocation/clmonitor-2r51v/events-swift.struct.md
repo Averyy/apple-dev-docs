@@ -1,7 +1,8 @@
 # CLMonitor.Events
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents an asynchronous sequence of events.
 
@@ -24,21 +25,22 @@ Use this structure to access and iterate over the events the framework delivers.
 ## Topics
 
 ### Utility methods
-- [CLMonitor.Events.Iterator](clmonitor-2r51v/events-swift.struct/iterator.md)
+- [CLMonitor.Events.Iterator](./events-swift.struct/iterator.md)
   The type that allows iteration over the elements of the sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CLMonitor.Event](clmonitor-2r51v/event.md)
+### Monitor events
+- [CLMonitor.Event](./event.md)
   An event object that the framework passes to the events sequence in the monitor.
-- [CLMonitor.Record](clmonitor-2r51v/record.md)
+- [CLMonitor.Record](./record.md)
   A structure that represents a condition and its associated event information that the framework is monitoring.
 
 

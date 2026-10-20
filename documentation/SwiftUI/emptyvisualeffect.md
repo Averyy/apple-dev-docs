@@ -1,7 +1,8 @@
 # EmptyVisualEffect
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The base visual effect that you apply additional effect to.
 
@@ -27,24 +28,25 @@ struct EmptyVisualEffect
 ## Topics
 
 ### Creating an empty visual effect
-- [init()](emptyvisualeffect/init.md)
+- [init()](./emptyvisualeffect/init%28%29.md)
   Creates a new empty visual effect.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisualEffect](visualeffect.md)
+- [Animatable](./animatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisualEffect](./visualeffect.md)
 
 ## See Also
 
-- [func visualEffect((EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View](view/visualeffect(_:).md)
+### Applying effects based on geometry
+- [func visualEffect((EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View](./view/visualeffect%28_%29.md)
   Applies effects to this view, while providing access to layout information through a geometry proxy.
-- [func visualEffect3D((EmptyVisualEffect, GeometryProxy3D) -> some VisualEffect) -> some View](view/visualeffect3d(_:).md)
+- [func visualEffect3D((EmptyVisualEffect, GeometryProxy3D) -> some VisualEffect) -> some View](./view/visualeffect3d%28_%29.md)
   Applies effects to this view, while providing access to layout information through a 3D geometry proxy.
-- [protocol VisualEffect](visualeffect.md)
+- [protocol VisualEffect](./visualeffect.md)
   Visual Effects change the visual appearance of a view without changing its ancestors or descendents.
 
 

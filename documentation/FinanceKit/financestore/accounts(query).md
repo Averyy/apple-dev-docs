@@ -1,7 +1,8 @@
 # accounts(query:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a list of accounts a person added to their Wallet that meet the criteria in the provided account query.
 
@@ -17,21 +18,22 @@ func accounts(query: AccountQuery) async throws -> [Account]
 
 #### Return Value
 
-An array of [`Account`](account.md) structures.
+An array of [`Account`](../account.md) structures.
 
 ## Parameters
 
-- `query`: An [`AccountQuery`](accountquery.md) that describes the kinds of accounts to look for.
+- `query`: An [`AccountQuery`](../accountquery.md) that describes the kinds of accounts to look for.
 
 ## See Also
 
-- [func accountHistory(since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Account>](financestore/accounthistory(since:ismonitoring:).md)
+### Accounts
+- [func accountHistory(since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Account>](./accounthistory%28since,ismonitoring%29.md)
   Returns a list of accounts a person added since a time specified by the provided financial history token.
-- [struct AssetAccount](assetaccount.md)
+- [struct AssetAccount](../assetaccount.md)
   A structure that describes the characteristics of an asset account.
-- [struct LiabilityAccount](liabilityaccount.md)
+- [struct LiabilityAccount](../liabilityaccount.md)
   A structure that describes the characteristics of a liability account.
-- [enum Account](account.md)
+- [enum Account](../account.md)
   A structure that describes a financial account.
 
 

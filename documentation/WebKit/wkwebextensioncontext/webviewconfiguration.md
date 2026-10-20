@@ -1,7 +1,8 @@
 # webViewConfiguration
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web view configuration to use for web views that load pages from this extension.
 
@@ -17,6 +18,10 @@ The web view configuration to use for web views that load pages from this extens
 ```swift
 @NSCopying
 var webViewConfiguration: WKWebViewConfiguration? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) WKWebViewConfiguration * webViewConfiguration;
 ```
 
 #### Discussion

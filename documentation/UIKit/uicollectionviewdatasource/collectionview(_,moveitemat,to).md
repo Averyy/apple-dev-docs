@@ -1,7 +1,8 @@
 # collectionView(_:moveItemAt:to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your data source object to move the specified item to its new location.
 
@@ -18,6 +19,10 @@ Tells your data source object to move the specified item to its new location.
 optional func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath)
 ```
 
+```objc
+- (void) collectionView:(UICollectionView *) collectionView moveItemAtIndexPath:(NSIndexPath *) sourceIndexPath toIndexPath:(NSIndexPath *) destinationIndexPath;
+```
+
 #### Discussion
 
 You must implement this method to support the reordering of items within the collection view. If you don’t implement this method, the collection view ignores any attempts to reorder items.
@@ -32,7 +37,8 @@ When interactions with an item end, the collection view calls this method if the
 
 ## See Also
 
-- [func collectionView(UICollectionView, canMoveItemAt: IndexPath) -> Bool](uicollectionviewdatasource/collectionview(_:canmoveitemat:).md)
+### Reordering items
+- [func collectionView(UICollectionView, canMoveItemAt: IndexPath) -> Bool](./collectionview%28_,canmoveitemat%29.md)
   Asks your data source object whether the specified item can move to another location in the collection view.
 
 

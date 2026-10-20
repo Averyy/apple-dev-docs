@@ -1,15 +1,16 @@
 # MTLPackedFloat3.__Unnamed_union___Anonymous_field0
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ struct __Unnamed_union___Anonymous_field0
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../../Swift/sendable.md)
 
 
 ---

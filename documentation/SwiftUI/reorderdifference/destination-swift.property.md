@@ -1,7 +1,8 @@
 # destination
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end position of items to move during a reordering operation.
 
@@ -22,9 +23,10 @@ var destination: ReorderDifference<ItemID, CollectionID>.Destination
 
 ## See Also
 
-- [ReorderDifference.Destination](reorderdifference/destination-swift.struct.md)
+### Getting changes
+- [ReorderDifference.Destination](./destination-swift.struct.md)
   The destination value of a reordering operation.
-- [var sources: [ItemID]](reorderdifference/sources.md)
+- [var sources: [ItemID]](./sources.md)
   The identifiers of items to move during a reordering operation.
 
 

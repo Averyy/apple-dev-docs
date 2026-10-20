@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the association tables for the migration.
 
@@ -10,7 +11,7 @@ Resets the association tables for the migration.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Resets the association tables for the migration.
 func reset()
 ```
 
+```objc
+- (void) reset;
+```
+
 #### Discussion
 
 This method does not reset the source or destination contexts.
 
 ## See Also
 
-- [func cancelMigrationWithError(any Error)](nsmigrationmanager/cancelmigrationwitherror(_:).md)
+### Aborting a Migration
+- [func cancelMigrationWithError(any Error)](./cancelmigrationwitherror%28_%29.md)
   Cancels the migration with a given error.
 
 

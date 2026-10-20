@@ -6,30 +6,5 @@ url: https://ml-explore.github.io/mlx/build/html/python/cuda.html
 
 # CUDA
 
-**
-
-- [.rst](../_sources/python/cuda.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# CUDA
-
- Table of contents 
-
-# CUDA
-
-| is_available() | Check if the CUDA back-end is available. |
+| [is_available](_autosummary/mlx.core.cuda.is_available.md#mlx.core.cuda.is_available)() | Check if the CUDA back-end is available. |
 | --- | --- |

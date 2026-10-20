@@ -1,7 +1,8 @@
 # init(elements:pollDevice:)
 
 **Framework**: Core HID  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request element update.
 

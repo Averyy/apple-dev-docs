@@ -1,14 +1,15 @@
 # sbc_payload_fd
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 int sbc_payload_fd;
 ```
 

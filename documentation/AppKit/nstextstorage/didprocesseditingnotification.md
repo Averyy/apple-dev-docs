@@ -1,7 +1,8 @@
 # didProcessEditingNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts after a text storage finishes processing edits.
 
@@ -14,13 +15,18 @@ A notification that posts after a text storage finishes processing edits.
 class let didProcessEditingNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSTextStorageDidProcessEditingNotification;
+```
+
 #### Discussion
 
-The framework posts this notification after a text storage finishes processing edits in [`processEditing()`](nstextstorage/processediting().md). Observers other than the delegate shouldn’t make further changes to the text storage. The notification object is the text storage object that processed the edits. This notification doesn’t contain a `userInfo` dictionary.
+The framework posts this notification after a text storage finishes processing edits in [`processEditing()`](./processediting%28%29.md). Observers other than the delegate shouldn’t make further changes to the text storage. The notification object is the text storage object that processed the edits. This notification doesn’t contain a `userInfo` dictionary.
 
 ## See Also
 
-- [class let willProcessEditingNotification: NSNotification.Name](nstextstorage/willprocesseditingnotification.md)
+### Notifications
+- [class let willProcessEditingNotification: NSNotification.Name](./willprocesseditingnotification.md)
   A notification that posts before a text storage begins processing edits.
 
 

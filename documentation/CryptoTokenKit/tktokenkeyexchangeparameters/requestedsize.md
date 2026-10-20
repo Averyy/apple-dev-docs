@@ -1,7 +1,8 @@
 # requestedSize
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the requested output size, in bytes, of key exchange result.
 
@@ -20,13 +21,18 @@ Returns the requested output size, in bytes, of key exchange result.
 var requestedSize: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger requestedSize;
+```
+
 #### Discussion
 
 This property should be ignored if the output size is not configurable for the specified key exchange algorithm.
 
 ## See Also
 
-- [var sharedInfo: Data?](tktokenkeyexchangeparameters/sharedinfo.md)
+### Accessing Parameters
+- [var sharedInfo: Data?](./sharedinfo.md)
   Returns shared information typically used during the key derivation (KDF) step of a key exchange algorithm.
 
 

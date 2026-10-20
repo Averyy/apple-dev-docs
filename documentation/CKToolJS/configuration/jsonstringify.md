@@ -1,7 +1,8 @@
 # jsonStringify
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A function that a request function uses to prepare JSON to send to the API server.
 
@@ -10,7 +11,7 @@ A function that a request function uses to prepare JSON to send to the API serve
 
 ## Declaration
 
-```swift
+```
 attribute Function jsonStringify;
 ```
 

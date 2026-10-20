@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system-provided string that uniquely identifies the download object.
 
@@ -19,9 +20,14 @@ The system-provided string that uniquely identifies the download object.
 var uniqueIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var identifier: String](badownload/identifier.md)
+### Getting the identity
+- [var identifier: String](./identifier.md)
   The app-specific string that uniquely identifies the downloadable asset.
 
 

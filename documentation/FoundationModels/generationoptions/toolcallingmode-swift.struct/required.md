@@ -1,7 +1,8 @@
 # required
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The model must call one or multiple tools.
 
@@ -21,17 +22,18 @@ static let required: GenerationOptions.ToolCallingMode
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+- [Expanding generation with tool calling](../../expanding-generation-with-tool-calling.md)
 
 #### Discussion
 
-Please note that [`LanguageModelSession`](languagemodelsession.md) will loop until a `Tool` throws an error or this value is changed dynamically via `LanguageModelSession.Manifest`.
+Please note that [`LanguageModelSession`](../../languagemodelsession.md) will loop until a `Tool` throws an error or this value is changed dynamically via `LanguageModelSession.Manifest`.
 
 ## See Also
 
-- [static let allowed: GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct/allowed.md)
+### Getting the tool calling modes
+- [static let allowed: GenerationOptions.ToolCallingMode](./allowed.md)
   The model may or may not call tools.
-- [static let disallowed: GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct/disallowed.md)
+- [static let disallowed: GenerationOptions.ToolCallingMode](./disallowed.md)
   The model may not call any tool.
 
 

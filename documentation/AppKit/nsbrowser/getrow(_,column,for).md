@@ -1,7 +1,8 @@
 # getRow(_:column:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the row and column coordinates for the specified point, if a cell exists at that point.
 
@@ -14,9 +15,13 @@ Gets the row and column coordinates for the specified point, if a cell exists at
 func getRow(_ row: UnsafeMutablePointer<Int>?, column: UnsafeMutablePointer<Int>?, for point: NSPoint) -> Bool
 ```
 
+```objc
+- (BOOL) getRow:(NSInteger *) row column:(NSInteger *) column forPoint:(NSPoint) point;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a cell exists at the specified point; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if a cell exists at the specified point; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -30,7 +35,8 @@ If a row does not exist at `point`, then `-1` is set for the row. If a column do
 
 ## See Also
 
-- [func frame(ofRow: Int, inColumn: Int) -> NSRect](nsbrowser/frame(ofrow:incolumn:).md)
+### Getting Row Frames
+- [func frame(ofRow: Int, inColumn: Int) -> NSRect](./frame%28ofrow,incolumn%29.md)
   Returns the frame of the cell at the specified location, including the expandable arrow.
 
 

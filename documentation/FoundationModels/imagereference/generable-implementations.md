@@ -1,11 +1,12 @@
 # Generable Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [ImageReference.PartiallyGenerated](imagereference/partiallygenerated.md)
+- [ImageReference.PartiallyGenerated](./partiallygenerated.md)
   A representation of an image reference that the model has only partially generated.
 
 

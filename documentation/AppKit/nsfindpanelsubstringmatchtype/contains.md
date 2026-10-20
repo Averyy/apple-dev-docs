@@ -1,15 +1,20 @@
 # NSFindPanelSubstringMatchType.contains
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case contains
+```
+
+```c
+NSFindPanelSubstringMatchTypeContains
 ```
 
 #### Discussion
@@ -18,9 +23,10 @@ Finds a word containing the search string.
 
 ## See Also
 
-- [NSFindPanelSubstringMatchType.startsWith](nsfindpanelsubstringmatchtype/startswith.md)
-- [NSFindPanelSubstringMatchType.fullWord](nsfindpanelsubstringmatchtype/fullword.md)
-- [NSFindPanelSubstringMatchType.endsWith](nsfindpanelsubstringmatchtype/endswith.md)
+### Constants
+- [NSFindPanelSubstringMatchType.startsWith](./startswith.md)
+- [NSFindPanelSubstringMatchType.fullWord](./fullword.md)
+- [NSFindPanelSubstringMatchType.endsWith](./endswith.md)
 
 
 ---

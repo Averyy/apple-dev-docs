@@ -1,7 +1,8 @@
 # supportedContentTypes
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of uniform type identifiers that correspond to file formats the output image supports.
 
@@ -15,9 +16,13 @@ An array of uniform type identifiers that correspond to file formats the output 
 class var supportedContentTypes: [UTType] { get }
 ```
 
+```objc
+@property (class, readonly) NSArray<UTType *> * supportedContentTypes;
+```
+
 #### Discussion
 
-You can save the output [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) into HEIC, JPEG, and PNG formats.
+You can save the output [`CGImage`](../../CoreGraphics/cgimage.md) into HEIC, JPEG, and PNG formats.
 
 
 ---

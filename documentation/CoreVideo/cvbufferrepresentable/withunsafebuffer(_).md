@@ -2,6 +2,7 @@
 
 **Framework**: Core Video  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Access the underlying `Buffer` object. This function should be used to bridge existing code that uses the Buffer type.

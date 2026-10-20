@@ -1,7 +1,8 @@
 # sensoryFeedback(trigger:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 
@@ -19,6 +20,13 @@ Plays feedback when returned from the `feedback` closure after the provided `tri
 ```swift
 @export(implementation)
 nonisolated func sensoryFeedback<T>(trigger: T, _ feedback: @escaping () -> SensoryFeedback?) -> some View where T : Equatable
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func sensoryFeedback<T>(trigger: T, _ feedback: @escaping (T, T) -> SensoryFeedback?) -> some View where T : Equatable
 ```
 
 #### Discussion
@@ -47,11 +55,12 @@ When the value changes, the new version of the closure will be called, so any ca
 
 ## See Also
 
-- [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](view/sensoryfeedback(_:trigger:).md)
+### Providing haptic feedback
+- [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](./sensoryfeedback%28_,trigger%29.md)
   Plays the specified `feedback` when the provided `trigger` value changes.
-- [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](view/sensoryfeedback(_:trigger:condition:).md)
+- [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](./sensoryfeedback%28_,trigger,condition%29.md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
-- [struct SensoryFeedback](sensoryfeedback.md)
+- [struct SensoryFeedback](../sensoryfeedback.md)
   Represents a type of haptic and/or audio feedback that can be played.
 
 

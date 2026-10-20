@@ -1,14 +1,15 @@
 # CopyEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+ - Deprecated in 12.0
 
 ## Declaration
 
-```swift
+```c
 void CopyEvent(OSDictionary *matching, uint64_t context, OSAction *action, OSDispatchMethod supermethod);
 ```
 

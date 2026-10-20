@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassAVRemoteControl
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassAVRemoteControl = 0x110E
 ```
 

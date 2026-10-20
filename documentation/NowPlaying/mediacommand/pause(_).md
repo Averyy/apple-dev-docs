@@ -1,7 +1,8 @@
 # pause(_:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a command that pauses media playback.
 
@@ -26,11 +27,12 @@ static func pause(_ action: @escaping () async throws -> Void) -> MediaCommand
 
 ## See Also
 
-- [static func play(() async throws -> Void) -> MediaCommand](mediacommand/play(_:).md)
+### Controlling playback
+- [static func play(() async throws -> Void) -> MediaCommand](./play%28_%29.md)
   Creates a command that starts media playback.
-- [static func stop(() async throws -> Void) -> MediaCommand](mediacommand/stop(_:).md)
+- [static func stop(() async throws -> Void) -> MediaCommand](./stop%28_%29.md)
   Creates a command that stops media playback.
-- [static func togglePlayPause(() async throws -> Void) -> MediaCommand](mediacommand/toggleplaypause(_:).md)
+- [static func togglePlayPause(() async throws -> Void) -> MediaCommand](./toggleplaypause%28_%29.md)
   Creates a command that toggles between play and pause states.
 
 

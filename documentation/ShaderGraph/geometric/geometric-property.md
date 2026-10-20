@@ -1,7 +1,8 @@
 # Geometric Property
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 The value of the specified geometric property (defined using ) of the currently-bound geometry.
 
@@ -15,7 +16,62 @@ The value of the specified geometric property (defined using ) of the currently-
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Geometric Property (float)**:
+
+| Input | Type |
+| --- | --- |
+| `Geomprop` | String |
+| `Default` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Geometric Property (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `Geomprop` | String |
+| `Default` | Color4 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Geometric Property (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `Geomprop` | String |
+| `Default` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Geometric Property (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Geomprop` | String |
+| `Default` | Color3 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Geometric Property (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Geomprop` | String |
+| `Default` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+#### Parameter descriptions
 
 - **`Geomprop`**: The name of the geometric property to be read.
 - **`Default`**: The value the node returns if it’s unable to read the geometric property.
@@ -28,21 +84,22 @@ The Geometric Property node attempts to return the value of the geometric proper
 
 ## See Also
 
-- [Position](geometric/position.md)
+### Nodes
+- [Position](./position.md)
   The coordinates of the currently-processed data in a given coordinate space.
-- [Normal](geometric/normal.md)
+- [Normal](./normal.md)
   The geometric normal of the currently-processed data in a given coordinate space.
-- [Tangent](geometric/tangent.md)
+- [Tangent](./tangent.md)
   The geometric tangent of the currently-processed data in a given coordinate space.
-- [Bitangent](geometric/bitangent.md)
+- [Bitangent](./bitangent.md)
   The geometric bitangent vector of the currently-processed data in a given coordinate space.
-- [Texture Coordinates](geometric/texture-coordinates.md)
+- [Texture Coordinates](./texture-coordinates.md)
   The 2D or 3D texture coordinates of the currently-processed data.
-- [Geometry Color](geometric/geometry-color.md)
+- [Geometry Color](./geometry-color.md)
   The color associated with the geometry at the currently-processed geometric position, typically defined by vertex color.
-- [Reflect (RealityKit)](geometric/reflect-(realitykit).md)
+- [Reflect (RealityKit)](./reflect-%28realitykit%29.md)
   Reflects a vector about another vector.
-- [Refract (RealityKit)](geometric/refract-(realitykit).md)
+- [Refract (RealityKit)](./refract-%28realitykit%29.md)
   Refracts a vector using a given normal and index of refraction (eta).
 
 

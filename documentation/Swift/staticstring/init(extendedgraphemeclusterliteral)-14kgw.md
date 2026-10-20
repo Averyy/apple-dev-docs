@@ -1,7 +1,8 @@
 # init(extendedGraphemeClusterLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 init(extendedGraphemeClusterLiteral value: Self.StringLiteralType)
 ```
+
+Available when `ExtendedGraphemeClusterLiteralType` is `Self.StringLiteralType`.
 
 
 ---

@@ -1,7 +1,8 @@
 # WebKitNamespace
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface WebKitNamespace
 ```
 
 ## Topics
 
 ### Instance Properties
-- [messageHandlers](webkitnamespace/1633768-messagehandlers.md)
+- [messageHandlers](./webkitnamespace/api-1633768-messagehandlers.md)
 
 
 ---

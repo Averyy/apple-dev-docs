@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a one-hot encoding transformer from a decoder.
 
@@ -19,6 +20,8 @@ Creates a one-hot encoding transformer from a decoder.
 ```swift
 init(from decoder: any Decoder) throws
 ```
+
+Available when `Category` conforms to `Comparable`, `Decodable`, `Encodable`, and `Hashable`.
 
 ## Parameters
 

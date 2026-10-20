@@ -1,7 +1,8 @@
 # rotated(by:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the vector rotated by the specified rotation around the origin.
 

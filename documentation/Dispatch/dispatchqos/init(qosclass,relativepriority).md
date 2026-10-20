@@ -1,18 +1,19 @@
 # init(qosClass:relativePriority:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `DispatchQoS` object with the specified QoS class and relative priority.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,12 +23,15 @@ init(qosClass: DispatchQoS.QoSClass, relativePriority: Int)
 
 ## Parameters
 
-- `qosClass`: The QoS class. For possible values, see [`DispatchQoS.QoSClass`](dispatchqos/qosclass-swift.enum.md).
+- `qosClass`: The QoS class.
+
+  For possible values, see [`DispatchQoS.QoSClass`](./qosclass-swift.enum.md).
 - `relativePriority`: The relative priority.
 
 ## See Also
 
-- [DispatchQoS.QoSClass](dispatchqos/qosclass-swift.enum.md)
+### Creating a QoS Structure
+- [DispatchQoS.QoSClass](./qosclass-swift.enum.md)
   Quality-of-service classes that specify the priorities for executing tasks.
 
 

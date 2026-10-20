@@ -1,7 +1,8 @@
 # pauseAction(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func pauseAction(with params: MTRActionsClusterPauseActionParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func pauseAction(with params: MTRActionsClusterPauseActionParams) async throws
+```
+
+```objc
+- (void) pauseActionWithParams:(MTRActionsClusterPauseActionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

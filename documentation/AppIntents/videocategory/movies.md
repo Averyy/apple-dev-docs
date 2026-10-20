@@ -1,7 +1,8 @@
 # VideoCategory.movies
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app supports searching for structured movie content.
 
@@ -11,7 +12,7 @@ The app supports searching for structured movie content.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

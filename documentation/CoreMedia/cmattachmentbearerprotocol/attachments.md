@@ -2,6 +2,7 @@
 
 **Framework**: Core Media  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 All attachments for this object.
@@ -23,9 +24,10 @@ var attachments: CMAttachmentBearerAttachments { get }
 
 ## See Also
 
-- [func propagateAttachments<T>(to: T)](cmattachmentbearerprotocol/propagateattachments(to:).md)
+### Processing Attachments
+- [func propagateAttachments<T>(to: T)](./propagateattachments%28to%29.md)
   Copies all propagable attachments from one attachment bearer object to another.
-- [struct CMAttachmentBearerAttachments](cmattachmentbearerattachments.md)
+- [struct CMAttachmentBearerAttachments](../cmattachmentbearerattachments.md)
   A structure that contains attachments.
 
 

@@ -1,7 +1,8 @@
 # instanceMotion
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var instanceMotion: MTLIntersectionFunctionSignature { get }
+```
+
+```c
+MTLIntersectionFunctionSignatureInstanceMotion
 ```
 
 

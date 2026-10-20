@@ -1,7 +1,8 @@
 # gss_userok(_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a flag that indicates if a given user is authorized.
 
@@ -18,6 +19,10 @@ Returns a flag that indicates if a given user is authorized.
 func gss_userok(_ name: gss_name_t, _ user: UnsafePointer<CChar>) -> Int32
 ```
 
+```c
+int gss_userok(gss_name_t const name, const char *user);
+```
+
 #### Return Value
 
 A non-zero integer when the user is authorized and zero otherwise.
@@ -25,23 +30,24 @@ A non-zero integer when the user is authorized and zero otherwise.
 ## Parameters
 
 - `name`: A name object.
-- `user`: A C string that is first imported as a name object with name type [`GSS_C_NT_USER_NAME`](gss_c_nt_user_name.md) and then authorized against the name object given by the first parameter.
+- `user`: A C string that is first imported as a name object with name type [`GSS_C_NT_USER_NAME`](./gss_c_nt_user_name.md) and then authorized against the name object given by the first parameter.
 
 ## See Also
 
-- [func gss_display_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_buffer_t, UnsafeMutablePointer<gss_OID?>?) -> OM_uint32](gss_display_name(_:_:_:_:).md)
+### Inquiries
+- [func gss_display_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_buffer_t, UnsafeMutablePointer<gss_OID?>?) -> OM_uint32](./gss_display_name%28_,_,_,_%29.md)
   Converts a name in the internal format to an octet string and the associated name type.
-- [func gss_compare_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_name_t, UnsafeMutablePointer<Int32>) -> OM_uint32](gss_compare_name(_:_:_:_:).md)
+- [func gss_compare_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_name_t, UnsafeMutablePointer<Int32>) -> OM_uint32](./gss_compare_name%28_,_,_,_%29.md)
   Returns a flag that indicates if two names in internal name format refer to the same entity.
-- [func gss_inquire_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<gss_OID?>?, UnsafeMutablePointer<gss_buffer_set_t?>?) -> OM_uint32](gss_inquire_name(_:_:_:_:_:).md)
+- [func gss_inquire_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<gss_OID?>?, UnsafeMutablePointer<gss_buffer_set_t?>?) -> OM_uint32](./gss_inquire_name%28_,_,_,_,_%29.md)
   Returns information about a name.
-- [func gss_inquire_mechs_for_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, UnsafeMutablePointer<gss_OID_set?>) -> OM_uint32](gss_inquire_mechs_for_name(_:_:_:).md)
+- [func gss_inquire_mechs_for_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, UnsafeMutablePointer<gss_OID_set?>) -> OM_uint32](./gss_inquire_mechs_for_name%28_,_,_%29.md)
   Returns a list of mechanisms that support a particular name type.
-- [func gss_inquire_names_for_mech(UnsafeMutablePointer<OM_uint32>, gss_const_OID, UnsafeMutablePointer<gss_OID_set?>) -> OM_uint32](gss_inquire_names_for_mech(_:_:_:).md)
+- [func gss_inquire_names_for_mech(UnsafeMutablePointer<OM_uint32>, gss_const_OID, UnsafeMutablePointer<gss_OID_set?>) -> OM_uint32](./gss_inquire_names_for_mech%28_,_,_%29.md)
   Returns a list of name types that a given mechanism supports.
-- [func gss_duplicate_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, UnsafeMutablePointer<gss_name_t?>) -> OM_uint32](gss_duplicate_name(_:_:_:).md)
+- [func gss_duplicate_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, UnsafeMutablePointer<gss_name_t?>) -> OM_uint32](./gss_duplicate_name%28_,_,_%29.md)
   Returns a copy of an internal name.
-- [func gss_aapl_change_password(gss_name_t, gss_const_OID, CFDictionary, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> OM_uint32](gss_aapl_change_password(_:_:_:_:).md)
+- [func gss_aapl_change_password(gss_name_t, gss_const_OID, CFDictionary, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> OM_uint32](./gss_aapl_change_password%28_,_,_,_%29.md)
   Changes the password associated with a name.
 
 

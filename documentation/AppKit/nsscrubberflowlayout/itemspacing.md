@@ -1,7 +1,8 @@
 # itemSpacing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal spacing between items, specified in points.
 
@@ -14,13 +15,18 @@ The horizontal spacing between items, specified in points.
 var itemSpacing: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat itemSpacing;
+```
+
 #### Discussion
 
 The default value of this property is `0.0`.
 
 ## See Also
 
-- [var itemSize: NSSize](nsscrubberflowlayout/itemsize.md)
+### Configuring the layout
+- [var itemSize: NSSize](./itemsize.md)
   The frame size for each item in the scrubber.
 
 

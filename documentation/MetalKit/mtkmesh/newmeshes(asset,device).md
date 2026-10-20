@@ -1,7 +1,8 @@
 # newMeshes(asset:device:)
 
 **Framework**: MetalKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 9.0+

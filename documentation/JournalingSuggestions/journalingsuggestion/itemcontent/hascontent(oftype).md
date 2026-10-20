@@ -1,7 +1,8 @@
 # hasContent(ofType:)
 
 **Framework**: Journaling Suggestions  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the suggestion contains information for the given type.
 
@@ -20,7 +21,7 @@ func hasContent<Content>(ofType content: Content.Type) -> Bool where Content : J
 
 #### Discussion
 
-The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
+The framework templates this method, where `Content` is [`JournalingSuggestionAsset`](../../journalingsuggestionasset.md), because the `content` argument is a `Type` rather than an enumeration case, or other primitive.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ The framework templates this method, where `Content` is [`JournalingSuggestionAs
 
 ## See Also
 
-- [func content<Content>(forType: Content.Type) async throws -> Content?](journalingsuggestion/itemcontent/content(fortype:).md)
+### Accessing suggestion data by type
+- [func content<Content>(forType: Content.Type) async throws -> Content?](./content%28fortype%29.md)
   Retrieves a suggestion’s contents by returning a structure specific to the given content type.
 
 

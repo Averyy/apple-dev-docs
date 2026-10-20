@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of the fetch request, expressed as the value type you specify.
 
@@ -19,9 +20,14 @@ The result of the fetch request, expressed as the value type you specify.
 var value: ValueType { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) ValueType value;
+```
+
 ## See Also
 
-- [var currentHistoryToken: Data](cnfetchresult/currenthistorytoken.md)
+### Accessing results
+- [var currentHistoryToken: Data](./currenthistorytoken.md)
   An opaque token that indicates a point in history in the user’s Contacts database.
 
 

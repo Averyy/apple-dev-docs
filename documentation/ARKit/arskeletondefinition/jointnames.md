@@ -1,7 +1,8 @@
 # jointNames
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of unique joint names.
 
@@ -15,17 +16,22 @@ A collection of unique joint names.
 var jointNames: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * jointNames;
+```
+
 #### Discussion
 
 Refer to this array to convert a joint index to a joint identifier.
 
 ## See Also
 
-- [var jointCount: Int](arskeletondefinition/jointcount.md)
+### Getting Joint Information
+- [var jointCount: Int](./jointcount.md)
   The skeleton’s total number of joints.
-- [func index(for: ARSkeleton.JointName) -> Int](arskeletondefinition/index(for:).md)
+- [func index(for: ARSkeleton.JointName) -> Int](./index%28for%29.md)
   Returns the index for a given joint identifier.
-- [var parentIndices: [Int]](arskeletondefinition/parentindices-u2u9.md)
+- [var parentIndices: [Int]](./parentindices-u2u9.md)
   The parent index for each joint.
 
 

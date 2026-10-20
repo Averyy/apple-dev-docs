@@ -1,7 +1,8 @@
 # UIScreen.ReferenceDisplayModeStatus
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes a screen’s reference display mode status.
 
@@ -17,37 +18,42 @@ Describes a screen’s reference display mode status.
 enum ReferenceDisplayModeStatus
 ```
 
+```c
+enum UIScreenReferenceDisplayModeStatus : NSInteger;
+```
+
 ## Topics
 
 ### Statuses
-- [UIScreen.ReferenceDisplayModeStatus.notSupported](uiscreen/referencedisplaymodestatus-swift.enum/notsupported.md)
+- [UIScreen.ReferenceDisplayModeStatus.notSupported](./referencedisplaymodestatus-swift.enum/notsupported.md)
   A status that indicates the screen doesn’t provide a reference display mode.
-- [UIScreen.ReferenceDisplayModeStatus.notEnabled](uiscreen/referencedisplaymodestatus-swift.enum/notenabled.md)
+- [UIScreen.ReferenceDisplayModeStatus.notEnabled](./referencedisplaymodestatus-swift.enum/notenabled.md)
   A status that indicates the screen provides a reference display mode but it’s in a disabled state.
-- [UIScreen.ReferenceDisplayModeStatus.limited](uiscreen/referencedisplaymodestatus-swift.enum/limited.md)
+- [UIScreen.ReferenceDisplayModeStatus.limited](./referencedisplaymodestatus-swift.enum/limited.md)
   A status that indicates the screen’s in a limited reference display mode.
-- [UIScreen.ReferenceDisplayModeStatus.enabled](uiscreen/referencedisplaymodestatus-swift.enum/enabled.md)
+- [UIScreen.ReferenceDisplayModeStatus.enabled](./referencedisplaymodestatus-swift.enum/enabled.md)
   A status that indicates the screen’s in an accurate reference display mode.
 ### Initializers
-- [init?(rawValue: Int)](uiscreen/referencedisplaymodestatus-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./referencedisplaymodestatus-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus](uiscreen/referencedisplaymodestatus-swift.property.md)
+### Getting the reference display mode status
+- [var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus](./referencedisplaymodestatus-swift.property.md)
   The status of the screen’s reference display mode.
-- [var currentEDRHeadroom: CGFloat](uiscreen/currentedrheadroom.md)
+- [var currentEDRHeadroom: CGFloat](./currentedrheadroom.md)
   The screen’s current headroom when displaying extended dynamic range content.
-- [var potentialEDRHeadroom: CGFloat](uiscreen/potentialedrheadroom.md)
+- [var potentialEDRHeadroom: CGFloat](./potentialedrheadroom.md)
   The screen’s maximum headroom when displaying extended dynamic range content.
 
 

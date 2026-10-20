@@ -1,14 +1,15 @@
 # kIO16BE555PixelFormat
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIO16BE555PixelFormat = 0x00000010
 ```
 

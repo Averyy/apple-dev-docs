@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration, in seconds, of the currently loaded file.
 
@@ -19,9 +20,14 @@ The duration, in seconds, of the currently loaded file.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var currentPosition: TimeInterval](avmidiplayer/currentposition.md)
+### Accessing player timing
+- [var currentPosition: TimeInterval](./currentposition.md)
   The current playback position, in seconds.
 
 

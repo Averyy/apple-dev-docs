@@ -1,7 +1,8 @@
 # ImmersivePreviewRenderer
 
 **Framework**: Immersive Media Support  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that renders an immersive video frame into a texture and exposes the command buffer for presentation.
 
@@ -67,35 +68,36 @@ if let commandBuffer = renderer.commandBuffer {
 ## Topics
 
 ### Initializers
-- [init(device: (any MTLDevice)?, venueDescriptor: VenueDescriptor?, depthPixelFormat: MTLPixelFormat?, colorPixelFormat: MTLPixelFormat?)](immersivepreviewrenderer/init(device:venuedescriptor:depthpixelformat:colorpixelformat:).md)
+- [init(device: (any MTLDevice)?, venueDescriptor: VenueDescriptor?, depthPixelFormat: MTLPixelFormat?, colorPixelFormat: MTLPixelFormat?)](./immersivepreviewrenderer/init%28device,venuedescriptor,depthpixelformat,colorpixelformat%29.md)
   Creates an immersive preview renderer.
 ### Instance Properties
-- [var commandBuffer: (any MTLCommandBuffer)?](immersivepreviewrenderer/commandbuffer.md)
+- [var commandBuffer: (any MTLCommandBuffer)?](./immersivepreviewrenderer/commandbuffer.md)
   The command buffer of the render.
-- [var venueDescriptor: VenueDescriptor?](immersivepreviewrenderer/venuedescriptor.md)
+- [var venueDescriptor: VenueDescriptor?](./immersivepreviewrenderer/venuedescriptor.md)
   The venue descriptor for rendering immersive video frames.
 ### Instance Methods
-- [func process(ImmersiveVideoFrame, for: ImmersivePreviewRenderer.Eye, rotation: Rotation3D, fieldOfView: Float, presentationDescriptor: PresentationDescriptor, renderTexture: any MTLTexture) async](immersivepreviewrenderer/process(_:for:rotation:fieldofview:presentationdescriptor:rendertexture:).md)
+- [func process(ImmersiveVideoFrame, for: ImmersivePreviewRenderer.Eye, rotation: Rotation3D, fieldOfView: Float, presentationDescriptor: PresentationDescriptor, renderTexture: any MTLTexture) async](./immersivepreviewrenderer/process%28_,for,rotation,fieldofview,presentationdescriptor,rendertexture%29.md)
   Performs the rendering of an immersive video frame.
-- [func process(ImmersiveVideoFrame, presentationDescriptor: PresentationDescriptor, drawable: LayerRenderer.Drawable) async](immersivepreviewrenderer/process(_:presentationdescriptor:drawable:).md)
+- [func process(ImmersiveVideoFrame, presentationDescriptor: PresentationDescriptor, drawable: LayerRenderer.Drawable) async](./immersivepreviewrenderer/process%28_,presentationdescriptor,drawable%29.md)
   Performs the rendering of an immersive video frame.
 ### Enumerations
-- [ImmersivePreviewRenderer.Eye](immersivepreviewrenderer/eye.md)
+- [ImmersivePreviewRenderer.Eye](./immersivepreviewrenderer/eye.md)
   An enumeration that represents the eye of the user.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ImmersiveMediaPreviewMessagingProtocol](immersivemediapreviewmessagingprotocol.md)
+### Preview
+- [class ImmersiveMediaPreviewMessagingProtocol](./immersivemediapreviewmessagingprotocol.md)
   An object that represents the messaging protocol a remote preview sender and receiver use to communicate.
-- [class ImmersiveMediaRemotePreviewSender](immersivemediaremotepreviewsender.md)
+- [class ImmersiveMediaRemotePreviewSender](./immersivemediaremotepreviewsender.md)
   An observable object that helps an app send the required data to all connected receiver applications to help facilitate the complete preview of the immersive media playback.
-- [class ImmersiveMediaRemotePreviewReceiver](immersivemediaremotepreviewreceiver.md)
+- [class ImmersiveMediaRemotePreviewReceiver](./immersivemediaremotepreviewreceiver.md)
   An observable object that helps applications handle receiving commands and data sent from an immersive media remote preview sender object.
 
 

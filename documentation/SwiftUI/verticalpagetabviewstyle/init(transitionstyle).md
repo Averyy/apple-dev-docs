@@ -1,7 +1,8 @@
 # init(transitionStyle:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `VerticalPageTabViewStyle` with a transition style.
 
@@ -17,8 +18,9 @@ init(transitionStyle: VerticalPageTabViewStyle.TransitionStyle)
 
 ## See Also
 
-- [init()](verticalpagetabviewstyle/init.md)
-- [VerticalPageTabViewStyle.TransitionStyle](verticalpagetabviewstyle/transitionstyle.md)
+### Creating the tab view style
+- [init()](./init%28%29.md)
+- [VerticalPageTabViewStyle.TransitionStyle](./transitionstyle.md)
   A transition style used between tabs.
 
 

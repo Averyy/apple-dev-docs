@@ -1,7 +1,8 @@
 # action
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that represents an action for a PDF element, such as a link annotation.
 
@@ -19,19 +20,24 @@ An object that represents an action for a PDF element, such as a link annotation
 var action: PDFAction? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PDFAction * action;
+```
+
 ## See Also
 
-- [var page: PDFPage?](pdfannotation/page.md)
+### Accessing Information About an Annotation
+- [var page: PDFPage?](./page.md)
   Returns the page that the annotation is associated with.
-- [var modificationDate: Date?](pdfannotation/modificationdate.md)
+- [var modificationDate: Date?](./modificationdate.md)
   Returns the modification date of the annotation.
-- [var userName: String?](pdfannotation/username.md)
+- [var userName: String?](./username.md)
   Returns the name of the user who created the annotation.
-- [var type: String?](pdfannotation/type.md)
+- [var type: String?](./type.md)
   Returns the type of the annotation.
-- [class PDFAction](pdfaction.md)
+- [class PDFAction](../pdfaction.md)
   An action that is performed when, for example, a PDF annotation is activated or an outline item is clicked.
-- [class PDFDestination](pdfdestination.md)
+- [class PDFDestination](../pdfdestination.md)
   A `PDFDestination` object describes a point on a PDF page.
 
 

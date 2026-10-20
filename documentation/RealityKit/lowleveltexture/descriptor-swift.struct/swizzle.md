@@ -1,7 +1,8 @@
 # swizzle
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pattern you want the GPU to apply to pixels when you read or sample pixels from the texture.
 

@@ -1,7 +1,8 @@
 # symbolicateAddress(_:)
 
 **Framework**: CrashReportExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Symbolicates an address, returning symbol info with inline frame expansion.
 
@@ -9,9 +10,9 @@ Symbolicates an address, returning symbol info with inline frame expansion.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -29,9 +30,10 @@ An array of frames, starting with the outermost.
 
 ## See Also
 
-- [func symbolicateAddresses([UInt64]) -> [[SymbolicatedFrame]]](crashedprocess/symbolicateaddresses(_:).md)
+### Symbolicating addresses
+- [func symbolicateAddresses([UInt64]) -> [[SymbolicatedFrame]]](./symbolicateaddresses%28_%29.md)
   Symbolicates an array of addresses, returning symbol information with inline frame expansion.
-- [struct SymbolicatedFrame](symbolicatedframe.md)
+- [struct SymbolicatedFrame](../symbolicatedframe.md)
   A type that represents a single symbolicated stack frame.
 
 

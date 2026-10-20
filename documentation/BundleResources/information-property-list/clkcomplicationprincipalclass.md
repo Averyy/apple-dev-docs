@@ -1,16 +1,18 @@
 # CLKComplicationPrincipalClass
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the class that implements the complication data source protocol.
 
 **Availability**:
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `CLKComplicationPrincipalClass` (ClockKit Complication - Principal Class)
+- **Type**: array of string 
 
 #### Discussion
 
@@ -18,13 +20,14 @@ Xcode automatically includes this key in the information property list when you 
 
 ## See Also
 
-- [NSPrincipalClass](information-property-list/nsprincipalclass.md)
+### Launch
+- [NSPrincipalClass](./nsprincipalclass.md)
   The name of the bundle’s main executable class.
-- [CFBundleExecutable](information-property-list/cfbundleexecutable.md)
+- [CFBundleExecutable](./cfbundleexecutable.md)
   The name of the bundle’s executable file.
-- [LSEnvironment](information-property-list/lsenvironment.md)
+- [LSEnvironment](./lsenvironment.md)
   Environment variables to set before launching the app.
-- [UIApplicationShortcutItems](information-property-list/uiapplicationshortcutitems.md)
+- [UIApplicationShortcutItems](./uiapplicationshortcutitems.md)
 
 
 ---

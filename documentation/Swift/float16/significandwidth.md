@@ -1,7 +1,8 @@
 # significandWidth
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bits required to represent the value’s significand.
 

@@ -1,7 +1,8 @@
 # init(mesh:materials:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model entity with a particular mesh and set of materials.
 
@@ -11,7 +12,7 @@ Creates a model entity with a particular mesh and set of materials.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,11 +28,12 @@ Creates a model entity with a particular mesh and set of materials.
 
 ## See Also
 
-- [init()](modelentity/init.md)
+### Creating a model
+- [init()](./init%28%29.md)
   Creates a model entity.
-- [init(mesh: MeshResource, materials: [any Material], collisionShape: ShapeResource, mass: Float)](modelentity/init(mesh:materials:collisionshape:mass:).md)
+- [init(mesh: MeshResource, materials: [any Material], collisionShape: ShapeResource, mass: Float)](./init%28mesh,materials,collisionshape,mass%29.md)
   Creates a model entity with a particular mesh, set of materials, collision shape, and mass.
-- [init(mesh: MeshResource, materials: [any Material], collisionShapes: [ShapeResource], mass: Float)](modelentity/init(mesh:materials:collisionshapes:mass:).md)
+- [init(mesh: MeshResource, materials: [any Material], collisionShapes: [ShapeResource], mass: Float)](./init%28mesh,materials,collisionshapes,mass%29.md)
   Creates a model entity with a particular mesh, set of materials, a composite collision shape, and mass.
 
 

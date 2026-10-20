@@ -1,7 +1,8 @@
 # symbolicLink
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents a symbolic link.
 
@@ -24,21 +25,22 @@ static var symbolicLink: UTType { get }
 
 The identifier for this type is `public.symlink`.
 
-This type conforms to [`UTTypeItem`](uttypeitem.md) and [`UTTypeResolvable`](uttyperesolvable.md).
+This type conforms to [`UTTypeItem`](../uttypeitem.md) and [`UTTypeResolvable`](../uttyperesolvable.md).
 
 ## See Also
 
-- [static var directory: UTType](uttype-swift.struct/directory.md)
+### Apple file system objects
+- [static var directory: UTType](./directory.md)
   A type that represents a file system directory, including packages and folders.
-- [static var mountPoint: UTType](uttype-swift.struct/mountpoint.md)
+- [static var mountPoint: UTType](./mountpoint.md)
   A type that represents a volume mount point.
-- [static var aliasFile: UTType](uttype-swift.struct/aliasfile.md)
+- [static var aliasFile: UTType](./aliasfile.md)
   A type that represents an alias file.
-- [static var folder: UTType](uttype-swift.struct/folder.md)
+- [static var folder: UTType](./folder.md)
   A type that represents a user-browsable directory.
-- [static var volume: UTType](uttype-swift.struct/volume.md)
+- [static var volume: UTType](./volume.md)
   A type that represents the root folder of a volume or mount point.
-- [static var diskImage: UTType](uttype-swift.struct/diskimage.md)
+- [static var diskImage: UTType](./diskimage.md)
   A type that represents a data item that’s mountable as a volume.
 
 

@@ -1,9 +1,10 @@
 # omitPunctuation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Omit tokens of type [`punctuation`](nslinguistictag/punctuation.md) (all punctuation).
+Omit tokens of type [`punctuation`](../../nslinguistictag/punctuation.md) (all punctuation).
 
 **Availability**:
 - iOS 2.0+
@@ -20,15 +21,20 @@ Omit tokens of type [`punctuation`](nslinguistictag/punctuation.md) (all punctua
 static var omitPunctuation: NSLinguisticTagger.Options { get }
 ```
 
+```c
+NSLinguisticTaggerOmitPunctuation
+```
+
 ## See Also
 
-- [static var omitWords: NSLinguisticTagger.Options](nslinguistictagger/options/omitwords.md)
-  Omit tokens of type [`word`](nslinguistictag/word.md) (items considered to be words).
-- [static var omitWhitespace: NSLinguisticTagger.Options](nslinguistictagger/options/omitwhitespace.md)
-  Omit tokens of type [`whitespace`](nslinguistictag/whitespace.md) (whitespace of all sorts).
-- [static var omitOther: NSLinguisticTagger.Options](nslinguistictagger/options/omitother.md)
-  Omit tokens of type [`other`](nslinguistictag/other.md) (non-linguistic items, such as symbols).
-- [static var joinNames: NSLinguisticTagger.Options](nslinguistictagger/options/joinnames.md)
+### Constants
+- [static var omitWords: NSLinguisticTagger.Options](./omitwords.md)
+  Omit tokens of type [`word`](../../nslinguistictag/word.md) (items considered to be words).
+- [static var omitWhitespace: NSLinguisticTagger.Options](./omitwhitespace.md)
+  Omit tokens of type [`whitespace`](../../nslinguistictag/whitespace.md) (whitespace of all sorts).
+- [static var omitOther: NSLinguisticTagger.Options](./omitother.md)
+  Omit tokens of type [`other`](../../nslinguistictag/other.md) (non-linguistic items, such as symbols).
+- [static var joinNames: NSLinguisticTagger.Options](./joinnames.md)
   Typically, multiple-word names will be returned as multiple tokens, following the standard tokenization practice of the tagger.  If this option is set, then multiple-word names will be joined together and returned as a single token.
 
 

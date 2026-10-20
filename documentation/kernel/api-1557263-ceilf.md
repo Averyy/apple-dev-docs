@@ -1,24 +1,26 @@
 # ceilf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float ceilf(float);
 ```
 
 ## See Also
 
-- [ceil](1557272-ceil.md)
-- [ceill](1557207-ceill.md)
-- [floor](1557338-floor.md)
-- [floorf](1557176-floorf.md)
-- [floorl](1557330-floorl.md)
+### Ceiling and Floor
+- [ceil](./api-1557272-ceil.md)
+- [ceill](./api-1557207-ceill.md)
+- [floor](./api-1557338-floor.md)
+- [floorf](./api-1557176-floorf.md)
+- [floorl](./api-1557330-floorl.md)
 
 
 ---

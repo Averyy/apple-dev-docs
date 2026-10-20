@@ -1,7 +1,8 @@
 # Transaction.CommitmentInfo
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -20,24 +21,24 @@ struct CommitmentInfo
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](../managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## Topics
 
 ### Instance Properties - generated
-- [let billingPeriodNumber: UInt64](transaction/commitmentinfo-swift.struct/billingperiodnumber.md)
-- [let expirationDate: Date](transaction/commitmentinfo-swift.struct/expirationdate.md)
-- [let price: Decimal](transaction/commitmentinfo-swift.struct/price.md)
-- [let totalBillingPeriods: UInt64](transaction/commitmentinfo-swift.struct/totalbillingperiods.md)
+- [let billingPeriodNumber: UInt64](./commitmentinfo-swift.struct/billingperiodnumber.md)
+- [let expirationDate: Date](./commitmentinfo-swift.struct/expirationdate.md)
+- [let price: Decimal](./commitmentinfo-swift.struct/price.md)
+- [let totalBillingPeriods: UInt64](./commitmentinfo-swift.struct/totalbillingperiods.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

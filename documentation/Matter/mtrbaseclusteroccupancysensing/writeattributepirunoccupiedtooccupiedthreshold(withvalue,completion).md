@@ -1,7 +1,8 @@
 # writeAttributePIRUnoccupiedToOccupiedThreshold(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributePIRUnoccupiedToOccupiedThreshold(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributePIRUnoccupiedToOccupiedThreshold(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributePIRUnoccupiedToOccupiedThresholdWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

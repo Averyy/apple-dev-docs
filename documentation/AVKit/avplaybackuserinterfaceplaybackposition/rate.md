@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate of position advancement at the time of the snapshot. Zero when paused; negative during reverse scan.
 
@@ -14,6 +15,10 @@ The rate of position advancement at the time of the snapshot. Zero when paused; 
 
 ```swift
 var rate: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float rate;
 ```
 
 

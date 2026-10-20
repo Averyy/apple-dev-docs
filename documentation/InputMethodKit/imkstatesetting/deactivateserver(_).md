@@ -2,6 +2,7 @@
 
 **Framework**: InputMethodKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Deactivates the input method server.
@@ -15,13 +16,18 @@ Deactivates the input method server.
 func deactivateServer(_ sender: Any!)
 ```
 
+```objc
+- (void) deactivateServer:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: The object sending the deactivation message.
 
 ## See Also
 
-- [func activateServer(Any!)](imkstatesetting/activateserver(_:).md)
+### Activating and Deactivating the Server
+- [func activateServer(Any!)](./activateserver%28_%29.md)
   Activates the input method server.
 
 

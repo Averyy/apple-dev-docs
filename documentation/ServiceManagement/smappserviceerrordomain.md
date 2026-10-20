@@ -1,7 +1,8 @@
 # SMAppServiceErrorDomain
 
 **Framework**: Service Management  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 18.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let SMAppServiceErrorDomain: String
+```
+
+```c
+extern NSString * const SMAppServiceErrorDomain;
 ```
 
 

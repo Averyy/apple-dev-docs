@@ -1,14 +1,15 @@
 # sptm_instance_id_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef uint16_t sptm_instance_id_t;
 ```
 

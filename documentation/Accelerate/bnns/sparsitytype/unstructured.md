@@ -1,7 +1,8 @@
 # BNNS.SparsityType.unstructured
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that specifies no special pattern in the sparsity.
 
@@ -11,8 +12,10 @@ A constant that specifies no special pattern in the sparsity.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # prepareAudio(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Prepares multiple audio resources for synchronized playback without starting them.
 
@@ -26,9 +27,9 @@ A controller that coordinates playback of the synchronized group.
 
 #### Discussion
 
-Use this method to set up a group of audio sources that you want to play together. Each resource is paired with the entity that emits it. Call [`play()`](audioplaybackgroupcontroller/play().md) or [`play(at:)`](audioplaybackgroupcontroller/play(at:).md) to begin playback.
+Use this method to set up a group of audio sources that you want to play together. Each resource is paired with the entity that emits it. Call [`play()`](../audioplaybackgroupcontroller/play%28%29.md) or [`play(at:)`](../audioplaybackgroupcontroller/play%28at%29.md) to begin playback.
 
-> **Note**: An error if audio preparation fails.
+> **Throws**: An error if audio preparation fails.
 
 ## Parameters
 
@@ -36,9 +37,10 @@ Use this method to set up a group of audio sources that you want to play togethe
 
 ## See Also
 
-- [static func playAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](audio/playaudio(_:).md)
+### Playing audio resources
+- [static func playAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](./playaudio%28_%29.md)
   Prepares and plays multiple audio resources for synchronized playback
-- [static func playAudio([(AudioResource, Entity)], at: AVAudioTime) throws -> AudioPlaybackGroupController](audio/playaudio(_:at:).md)
+- [static func playAudio([(AudioResource, Entity)], at: AVAudioTime) throws -> AudioPlaybackGroupController](./playaudio%28_,at%29.md)
   Prepares and plays multiple audio resources for synchronized playback at a specified time.
 
 

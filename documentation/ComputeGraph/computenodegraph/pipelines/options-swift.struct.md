@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Pipelines.Options
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,7 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -21,18 +22,18 @@ struct Options
 ## Topics
 
 ### Initializers
-- [init()](computenodegraph/pipelines/options-swift.struct/init.md)
-- [init(debugDraw: Bool)](computenodegraph/pipelines/options-swift.struct/init(debugdraw:).md)
+- [init()](./options-swift.struct/init%28%29.md)
+- [init(debugDraw: Bool)](./options-swift.struct/init%28debugdraw%29.md)
 ### Instance Properties
-- [var debugDraw: Bool](computenodegraph/pipelines/options-swift.struct/debugdraw.md)
+- [var debugDraw: Bool](./options-swift.struct/debugdraw.md)
   Whether debug draw should be included in pipelines.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

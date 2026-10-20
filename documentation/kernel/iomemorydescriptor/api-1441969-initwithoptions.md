@@ -1,7 +1,8 @@
 # initWithOptions
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Primary initializer for all variants of memory descriptors. 
 
@@ -10,11 +11,11 @@ Primary initializer for all variants of memory descriptors.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithOptions(void *buffers, UInt32 count, UInt32 offset, task_t task, IOOptionBits options, IOMapper *mapper);
 ```
 
-#### Return_value
+#### Return Value
 
 true on success, false on failure.
 
@@ -24,33 +25,34 @@ For a more complete description see IOMemoryDescriptor::withOptions. Note this f
 
 ## See Also
 
-- [initWithOptions](iomemorydescriptor/1812826-initwithoptions.md)
+### Creating the Memory Buffer
+- [initWithOptions](./api-1812826-initwithoptions.md)
   Primary initializer for all variants of memory descriptors. 
-- [withOptions](iomemorydescriptor/1812897-withoptions.md)
+- [withOptions](./api-1812897-withoptions.md)
   Primary initializer for all variants of memory descriptors.
-- [+ withOptions](iomemorydescriptor/1441825-withoptions.md)
+- [+ withOptions](./api-1441825-withoptions.md)
   Primary initializer for all variants of memory descriptors.
-- [withAddress](iomemorydescriptor/1812881-withaddress.md)
+- [withAddress](./api-1812881-withaddress.md)
   Creates an IOMemoryDescriptor to describe one virtual range of the kernel task.
-- [+ withAddress](iomemorydescriptor/1442032-withaddress.md)
+- [+ withAddress](./api-1442032-withaddress.md)
   Creates an IOMemoryDescriptor to describe one virtual range of the kernel task.
-- [withAddressRange](iomemorydescriptor/1812885-withaddressrange.md)
+- [withAddressRange](./api-1812885-withaddressrange.md)
   Creates an IOMemoryDescriptor to describe one virtual range of the specified map.
-- [+ withAddressRange](iomemorydescriptor/1441897-withaddressrange.md)
+- [+ withAddressRange](./api-1441897-withaddressrange.md)
   Creates an IOMemoryDescriptor to describe one virtual range of the specified map.
-- [withAddressRanges](iomemorydescriptor/1812892-withaddressranges.md)
+- [withAddressRanges](./api-1812892-withaddressranges.md)
   Creates an IOMemoryDescriptor to describe one or more virtual ranges.
-- [+ withAddressRanges](iomemorydescriptor/1441794-withaddressranges.md)
+- [+ withAddressRanges](./api-1441794-withaddressranges.md)
   Creates an IOMemoryDescriptor to describe one or more virtual ranges.
-- [withPersistentMemoryDescriptor](iomemorydescriptor/1812901-withpersistentmemorydescriptor.md)
+- [withPersistentMemoryDescriptor](./api-1812901-withpersistentmemorydescriptor.md)
   Copy constructor that generates a new memory descriptor if the backing memory for the same task's virtual address and length has changed.
-- [+ withPersistentMemoryDescriptor](iomemorydescriptor/1441983-withpersistentmemorydescriptor.md)
+- [+ withPersistentMemoryDescriptor](./api-1441983-withpersistentmemorydescriptor.md)
   Copy constructor that generates a new memory descriptor if the backing memory for the same task's virtual address and length has changed.
-- [withPhysicalAddress](iomemorydescriptor/1812908-withphysicaladdress.md)
+- [withPhysicalAddress](./api-1812908-withphysicaladdress.md)
   Creates an IOMemoryDescriptor to describe one physical range.
-- [+ withPhysicalAddress](iomemorydescriptor/1441877-withphysicaladdress.md)
+- [+ withPhysicalAddress](./api-1441877-withphysicaladdress.md)
   Creates an IOMemoryDescriptor to describe one physical range.
-- [- free](iomemorydescriptor/3180646-free.md)
+- [- free](./api-3180646-free.md)
   Performs any final cleanup for the memory descriptor object.
 
 

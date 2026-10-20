@@ -1,7 +1,8 @@
 # keyToCharTableSize
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer specifying the number of virtual key codes supported by this resource; for ADB keyboards this is 128 (with virtual key codes ranging from 0 to 127).
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer specifying the number of virtual key codes supported 
 
 ```swift
 var keyToCharTableSize: UInt16
+```
+
+```c
+UInt16 keyToCharTableSize;
 ```
 
 

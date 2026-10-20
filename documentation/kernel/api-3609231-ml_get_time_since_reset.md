@@ -1,14 +1,15 @@
 # ml_get_time_since_reset
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t ml_get_time_since_reset(void);
 ```
 

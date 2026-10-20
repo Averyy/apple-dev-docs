@@ -1,14 +1,15 @@
 # multi_overflow
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 uint64_t multi_overflow(uint64_t a, uint64_t b);
 ```
 

@@ -1,7 +1,8 @@
 # attributedString(from:style:withDefaultAttributes:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a postal address as an attributed string and formatted for the specified style.
 
@@ -19,27 +20,32 @@ Returns a postal address as an attributed string and formatted for the specified
 class func attributedString(from postalAddress: CNPostalAddress, style: CNPostalAddressFormatterStyle, withDefaultAttributes attributes: [AnyHashable : Any] = [:]) -> NSAttributedString
 ```
 
+```objc
++ (NSAttributedString *) attributedStringFromPostalAddress:(CNPostalAddress *) postalAddress style:(CNPostalAddressFormatterStyle) style withDefaultAttributes:(NSDictionary *) attributes;
+```
+
 #### Return Value
 
 The formatted postal address as an attributed string.
 
 #### Discussion
 
-This method behaves similarly to  [`string(from:)`](cnpostaladdressformatter/string(from:).md), except that it returns an attributed string. It includes the attribute key [`CNPostalAddressPropertyAttribute`](cnpostaladdresspropertyattribute.md), whose attribute values are postal address property keys, such as [`CNPostalAddressStreetKey`](cnpostaladdressstreetkey.md). This identifies the postal address components in the formatted postal address. It also includes the attribute key [`CNPostalAddressLocalizedPropertyNameAttribute`](cnpostaladdresslocalizedpropertynameattribute.md) whose attribute values are the localized strings for the postal address property keys.
+This method behaves similarly to  [`string(from:)`](./string%28from%29.md), except that it returns an attributed string. It includes the attribute key [`CNPostalAddressPropertyAttribute`](../cnpostaladdresspropertyattribute.md), whose attribute values are postal address property keys, such as [`CNPostalAddressStreetKey`](../cnpostaladdressstreetkey.md). This identifies the postal address components in the formatted postal address. It also includes the attribute key [`CNPostalAddressLocalizedPropertyNameAttribute`](../cnpostaladdresslocalizedpropertynameattribute.md) whose attribute values are the localized strings for the postal address property keys.
 
 ## Parameters
 
 - `postalAddress`: The postal address to format.
-- `style`: The postal formatting style to use. For a list of possible values, see [`CNPostalAddressFormatterStyle`](cnpostaladdressformatterstyle.md).
+- `style`: The postal formatting style to use. For a list of possible values, see [`CNPostalAddressFormatterStyle`](../cnpostaladdressformatterstyle.md).
 - `attributes`: The default attributes to use. To learn more, see Formatter.
 
 ## See Also
 
-- [func attributedString(from: CNPostalAddress, withDefaultAttributes: [AnyHashable : Any]) -> NSAttributedString](cnpostaladdressformatter/attributedstring(from:withdefaultattributes:).md)
+### Generating a formatted attributed string
+- [func attributedString(from: CNPostalAddress, withDefaultAttributes: [AnyHashable : Any]) -> NSAttributedString](./attributedstring%28from,withdefaultattributes%29.md)
   Returns a formatted postal address as an attributed string.
-- [let CNPostalAddressPropertyAttribute: String](cnpostaladdresspropertyattribute.md)
+- [let CNPostalAddressPropertyAttribute: String](../cnpostaladdresspropertyattribute.md)
   An attribute that identifies the purpose of a range of characters in an attributed string.
-- [let CNPostalAddressLocalizedPropertyNameAttribute: String](cnpostaladdresslocalizedpropertynameattribute.md)
+- [let CNPostalAddressLocalizedPropertyNameAttribute: String](../cnpostaladdresslocalizedpropertynameattribute.md)
   An attribute that identifies the localized property of postal address.
 
 

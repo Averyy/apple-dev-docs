@@ -1,7 +1,8 @@
 # registerSceneAccessory(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a new scene accessory configuration associated with this view controller.
 
@@ -14,6 +15,10 @@ Registers a new scene accessory configuration associated with this view controll
 
 ```swift
 func registerSceneAccessory(_ accessory: UISceneAccessory) -> UISceneAccessoryRegistration
+```
+
+```objc
+- (UISceneAccessoryRegistration *) registerSceneAccessory:(UISceneAccessory *) accessory;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ The delegate type that the configuration defines will be called for all lifecycl
 
 ## See Also
 
-- [func unregisterSceneAccessory(UISceneAccessoryRegistration)](uiviewcontroller/unregistersceneaccessory(_:).md)
+### Registering scene accessories
+- [func unregisterSceneAccessory(UISceneAccessoryRegistration)](./unregistersceneaccessory%28_%29.md)
   Unregisters a scene accessory with the specified registration.
 
 

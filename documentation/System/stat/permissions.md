@@ -1,7 +1,8 @@
 # permissions
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 File permissions for the given mode
 

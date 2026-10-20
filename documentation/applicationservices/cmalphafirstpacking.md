@@ -1,7 +1,8 @@
 # cmAlphaFirstPacking
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An alpha channel is added to the color value as its first component.
 

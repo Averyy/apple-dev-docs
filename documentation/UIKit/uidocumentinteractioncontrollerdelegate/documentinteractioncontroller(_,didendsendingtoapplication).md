@@ -1,7 +1,8 @@
 # documentInteractionController(_:didEndSendingToApplication:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a document interaction controller’s document has been handed off to the specified application.
 
@@ -17,6 +18,10 @@ Called when a document interaction controller’s document has been handed off t
 optional func documentInteractionController(_ controller: UIDocumentInteractionController, didEndSendingToApplication application: String?)
 ```
 
+```objc
+- (void) documentInteractionController:(UIDocumentInteractionController *) controller didEndSendingToApplication:(NSString *) application;
+```
+
 #### Discussion
 
 This method is called after the document information has been saved for the specified application.
@@ -28,9 +33,10 @@ This method is called after the document information has been saved for the spec
 
 ## See Also
 
-- [func documentInteractionController(UIDocumentInteractionController, willBeginSendingToApplication: String?)](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:willbeginsendingtoapplication:).md)
+### Opening files
+- [func documentInteractionController(UIDocumentInteractionController, willBeginSendingToApplication: String?)](./documentinteractioncontroller%28_,willbeginsendingtoapplication%29.md)
   Called when a document interaction controller’s document is about to be opened by the specified application.
-- [func documentInteractionController(UIDocumentInteractionController, performAction: Selector?) -> Bool](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md)
+- [func documentInteractionController(UIDocumentInteractionController, performAction: Selector?) -> Bool](./documentinteractioncontroller%28_,performaction%29.md)
   Called when a document interaction controller wants its delegate to perform a specified action with the associated document.
 
 

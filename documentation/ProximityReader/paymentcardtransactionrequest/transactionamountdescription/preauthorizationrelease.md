@@ -1,9 +1,10 @@
 # PaymentCardTransactionRequest.TransactionAmountDescription.preauthorizationRelease
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Releases the amount shown from the temporary deposit. Only allowed for [`PaymentCardTransactionRequest.TransactionType.refund`](paymentcardtransactionrequest/transactiontype/refund.md)
+Releases the amount shown from the temporary deposit. Only allowed for [`PaymentCardTransactionRequest.TransactionType.refund`](../transactiontype/refund.md)
 
 **Availability**:
 - iOS 18.0+

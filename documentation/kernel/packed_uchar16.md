@@ -1,14 +1,15 @@
 # packed_uchar16
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t __attribute__((ext_vector_type(16))) packed_uchar16;
 ```
 

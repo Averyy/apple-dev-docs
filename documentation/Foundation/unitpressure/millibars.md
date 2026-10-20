@@ -1,7 +1,8 @@
 # millibars
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The millibars unit of pressure.
 
@@ -21,25 +22,30 @@ The millibars unit of pressure.
 class var millibars: UnitPressure { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitPressure * millibars;
+```
+
 ## See Also
 
-- [class var gigapascals: UnitPressure](unitpressure/gigapascals.md)
+### Accessing Predefined Units
+- [class var gigapascals: UnitPressure](./gigapascals.md)
   The gigapascals unit of pressure.
-- [class var megapascals: UnitPressure](unitpressure/megapascals.md)
+- [class var megapascals: UnitPressure](./megapascals.md)
   The megapascals unit of pressure.
-- [class var kilopascals: UnitPressure](unitpressure/kilopascals.md)
+- [class var kilopascals: UnitPressure](./kilopascals.md)
   The kilopascals unit of pressure.
-- [class var hectopascals: UnitPressure](unitpressure/hectopascals.md)
+- [class var hectopascals: UnitPressure](./hectopascals.md)
   The hectopascals unit of pressure.
-- [class var inchesOfMercury: UnitPressure](unitpressure/inchesofmercury.md)
+- [class var inchesOfMercury: UnitPressure](./inchesofmercury.md)
   The inches of mercury unit of pressure.
-- [class var bars: UnitPressure](unitpressure/bars.md)
+- [class var bars: UnitPressure](./bars.md)
   The bars unit of pressure.
-- [class var millimetersOfMercury: UnitPressure](unitpressure/millimetersofmercury.md)
+- [class var millimetersOfMercury: UnitPressure](./millimetersofmercury.md)
   The millimeters of mercury unit of pressure.
-- [class var newtonsPerMetersSquared: UnitPressure](unitpressure/newtonspermeterssquared.md)
+- [class var newtonsPerMetersSquared: UnitPressure](./newtonspermeterssquared.md)
   The newtons per square meter unit of pressure.
-- [class var poundsForcePerSquareInch: UnitPressure](unitpressure/poundsforcepersquareinch.md)
+- [class var poundsForcePerSquareInch: UnitPressure](./poundsforcepersquareinch.md)
   The pounds per square inch unit of pressure.
 
 

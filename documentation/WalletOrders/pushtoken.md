@@ -1,7 +1,8 @@
 # PushToken
 
 **Framework**: Wallet Orders  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The push token APNS uses to send update notifications to the device.
 
@@ -12,7 +13,7 @@ The push token APNS uses to send update notifications to the device.
 
 ## Declaration
 
-```swift
+```
 object PushToken
 ```
 
@@ -22,9 +23,10 @@ object PushToken
 
 ## See Also
 
-- [Register a device for update notifications](register-a-device-for-update-notifications.md)
+### Notifications
+- [Register a device for update notifications](./register-a-device-for-update-notifications.md)
   Registers a device to receive update notifications for an order.
-- [Unregister a device from update notifications](unregister-a-device-from-update-notifications.md)
+- [Unregister a device from update notifications](./unregister-a-device-from-update-notifications.md)
   Unregisters a device from receiving update notifications for an order.
 
 

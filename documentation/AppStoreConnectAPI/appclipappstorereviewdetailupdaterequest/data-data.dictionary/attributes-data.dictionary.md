@@ -1,7 +1,8 @@
 # AppClipAppStoreReviewDetailUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the updated App Clip App Store Review Details resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the updated App Clip App Store Review Detai
 
 ## Declaration
 
-```swift
+```
 object AppClipAppStoreReviewDetailUpdateRequest.Data.Attributes
 ```
 

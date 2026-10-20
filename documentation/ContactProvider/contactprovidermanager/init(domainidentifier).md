@@ -1,7 +1,8 @@
 # init(domainIdentifier:)
 
 **Framework**: ContactProvider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a provider manager.
 
@@ -17,15 +18,15 @@ init(domainIdentifier: String = DefaultContactProviderDomain.identifier) throws
 
 #### Discussion
 
-If needed, the manager registers the [`DefaultContactProviderDomain`](defaultcontactproviderdomain.md) for the extension.
+If needed, the manager registers the [`DefaultContactProviderDomain`](../defaultcontactproviderdomain.md) for the extension.
 
-> **Note**: [`ContactProviderError.extensionNotFound`](contactprovidererror/extensionnotfound.md) if discovering the extension fails.
+> **Throws**: [`ContactProviderError.extensionNotFound`](../contactprovidererror/extensionnotfound.md) if discovering the extension fails.
 
-> **Note**: [`ContactProviderError.featureNotAvailable`](contactprovidererror/featurenotavailable.md) when running on an unsupported platform.
+> **Throws**: [`ContactProviderError.featureNotAvailable`](../contactprovidererror/featurenotavailable.md) when running on an unsupported platform.
 
 ## Parameters
 
-- `domainIdentifier`: A string to identify a domain of contacts to provide. Defaults to [`identifier`](defaultcontactproviderdomain/identifier.md).
+- `domainIdentifier`: A string to identify a domain of contacts to provide. Defaults to [`identifier`](../defaultcontactproviderdomain/identifier.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # model
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying Core ML model of the hand pose classifier stored in memory.
 
@@ -20,7 +21,8 @@ var model: MLModel
 
 ## See Also
 
-- [let modelParameters: MLHandPoseClassifier.ModelParameters](mlhandposeclassifier/modelparameters-swift.property.md)
+### Inspecting a hand pose classifier model
+- [let modelParameters: MLHandPoseClassifier.ModelParameters](./modelparameters-swift.property.md)
   The hand pose model’s configuration parameters.
 
 

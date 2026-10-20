@@ -1,12 +1,13 @@
 # throwException(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Raises an exception in the current script execution context.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Raises an exception in the current script execution context.
 class func throwException(_ exceptionMessage: String!) -> Bool
 ```
 
+```objc
++ (BOOL) throwException:(NSString *) exceptionMessage;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if successful, [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ class func throwException(_ exceptionMessage: String!) -> Bool
 
 ## See Also
 
-- [func setException(String!)](webscriptobject/setexception(_:).md)
+### Raising exceptions
+- [func setException(String!)](./setexception%28_%29.md)
   Raises a scripting environment exception in the context of the current object.
 
 

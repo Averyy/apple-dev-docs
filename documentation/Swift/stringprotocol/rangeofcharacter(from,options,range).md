@@ -1,7 +1,8 @@
 # rangeOfCharacter(from:options:range:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and returns the range in the `String` of the first character from a given character set found in a given range with given options.
 

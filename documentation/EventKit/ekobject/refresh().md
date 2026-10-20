@@ -1,7 +1,8 @@
 # refresh()
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Merges changes to this object with the latest saved values.
 
@@ -19,9 +20,13 @@ Merges changes to this object with the latest saved values.
 func refresh() -> Bool
 ```
 
+```objc
+- (BOOL) refresh;
+```
+
 #### Return Value
 
-If the operation is successful, [`true`](https://developer.apple.com/documentation/swift/true); if the object was deleted in the event store, [`false`](https://developer.apple.com/documentation/swift/false). If this method returns [`false`](https://developer.apple.com/documentation/swift/false), the object should be released.
+If the operation is successful, [`true`](../../Swift/true.md); if the object was deleted in the event store, [`false`](../../Swift/false.md). If this method returns [`false`](../../Swift/false.md), the object should be released.
 
 #### Discussion
 
@@ -29,13 +34,14 @@ This method merges the local changes to properties of this object with the lates
 
 ## See Also
 
-- [var hasChanges: Bool](ekobject/haschanges.md)
+### Saving and Restoring State
+- [var hasChanges: Bool](./haschanges.md)
   Returns whether this object or any of the objects it contains has uncommitted changes.
-- [var isNew: Bool](ekobject/isnew.md)
+- [var isNew: Bool](./isnew.md)
   A Boolean value that indicates whether this object has ever been saved.
-- [func reset()](ekobject/reset.md)
+- [func reset()](./reset%28%29.md)
   Returns this object to its saved state.
-- [func rollback()](ekobject/rollback.md)
+- [func rollback()](./rollback%28%29.md)
   Rolls back the property values of this object to its original state when it was first fetched.
 
 

@@ -1,7 +1,8 @@
 # errSecCSUnsealedFrameworkRoot
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unsealed contents present in the root directory of an embedded framework.
 
@@ -13,6 +14,10 @@ Unsealed contents present in the root directory of an embedded framework.
 
 ```swift
 var errSecCSUnsealedFrameworkRoot: OSStatus { get }
+```
+
+```c
+errSecCSUnsealedFrameworkRoot
 ```
 
 

@@ -1,7 +1,8 @@
 # purchaseDate(_:renewalBehavior:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the purchase date for the transaction in the testing environment, and indicates the renewal behavior for an auto-renewable subscription.
 
@@ -21,9 +22,9 @@ static func purchaseDate(_ date: Date, renewalBehavior: Product.PurchaseOption.S
 
 #### Discussion
 
-Use this purchase option when you test your app in Xcode using [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) and call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/storekittest/sktestsession/buyproduct(identifier:options:)).
+Use this purchase option when you test your app in Xcode using [StoreKit Test](../../../StoreKitTest/StoreKitTest.md) and call [`buyProduct(identifier:options:)`](../../../StoreKitTest/sktestsession/buyproduct%28identifier,options%29.md).
 
-Use this purchase option to create useful transactions for your test cases. For example, use a date in the past with the default `renewalBehavior` to generate a full history of subscription renewals to test. Or, use a date in the past with the [`Product.PurchaseOption.SubscriptionRenewalBehavior.cancelImmediately`](product/purchaseoption/subscriptionrenewalbehavior/cancelimmediately.md) behavior to simulate an account of a customer who canceled their subscription.
+Use this purchase option to create useful transactions for your test cases. For example, use a date in the past with the default `renewalBehavior` to generate a full history of subscription renewals to test. Or, use a date in the past with the [`Product.PurchaseOption.SubscriptionRenewalBehavior.cancelImmediately`](./subscriptionrenewalbehavior/cancelimmediately.md) behavior to simulate an account of a customer who canceled their subscription.
 
 ## Parameters
 
@@ -32,11 +33,12 @@ Use this purchase option to create useful transactions for your test cases. For 
 
 ## See Also
 
-- [Product.PurchaseOption.SubscriptionRenewalBehavior](product/purchaseoption/subscriptionrenewalbehavior.md)
+### Setting options for StoreKit Testing in Xcode
+- [Product.PurchaseOption.SubscriptionRenewalBehavior](./subscriptionrenewalbehavior.md)
   Renewal options for auto-renewable subscriptions that you purchase in the testing environment.
-- [static func codeOffer(referenceName: String) -> Product.PurchaseOption](product/purchaseoption/codeoffer(referencename:).md)
+- [static func codeOffer(referenceName: String) -> Product.PurchaseOption](./codeoffer%28referencename%29.md)
   Sets an offer code for the transaction in the testing environment.
-- [static func promotionalOffer(id: String) -> Product.PurchaseOption](product/purchaseoption/promotionaloffer(id:).md)
+- [static func promotionalOffer(id: String) -> Product.PurchaseOption](./promotionaloffer%28id%29.md)
   Sets a promotional offer for the transaction in the testing environment.
 
 

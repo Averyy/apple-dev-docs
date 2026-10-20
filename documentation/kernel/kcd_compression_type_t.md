@@ -1,14 +1,15 @@
 # kcd_compression_type_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum kcd_compression_type_t : uint64_t {
     ...
 } kcd_compression_type_t;
@@ -17,8 +18,8 @@ typedef enum kcd_compression_type_t : uint64_t {
 ## Topics
 
 ### Constants
-- [KCDCT_NONE](kcd_compression_type_t/kcdct_none.md)
-- [KCDCT_ZLIB](kcd_compression_type_t/kcdct_zlib.md)
+- [KCDCT_NONE](./kcd_compression_type_t/kcdct_none.md)
+- [KCDCT_ZLIB](./kcd_compression_type_t/kcdct_zlib.md)
 
 
 ---

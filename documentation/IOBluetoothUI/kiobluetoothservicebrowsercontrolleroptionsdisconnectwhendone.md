@@ -1,7 +1,8 @@
 # kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone
 
 **Framework**: IOBluetooth UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,19 @@
 var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int { get }
 ```
 
+```c
+kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone
+```
+
 #### Discussion
 
 - disconnect from the device when UI operations are finished.
 
 ## See Also
 
-- [var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int](kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md)
-- [var kIOBluetoothServiceBrowserControllerOptionsNone: Int](kiobluetoothservicebrowsercontrolleroptionsnone.md)
+### Constants
+- [var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int](./kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsNone: Int](./kiobluetoothservicebrowsercontrolleroptionsnone.md)
 
 
 ---

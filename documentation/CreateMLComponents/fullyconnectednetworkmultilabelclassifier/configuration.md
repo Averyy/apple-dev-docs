@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fully-connected network configuration.
 
@@ -21,9 +22,10 @@ var configuration: FullyConnectedNetworkConfiguration
 
 ## See Also
 
-- [static var defaultConfiguration: FullyConnectedNetworkConfiguration](fullyconnectednetworkmultilabelclassifier/defaultconfiguration.md)
+### Getting the properties
+- [static var defaultConfiguration: FullyConnectedNetworkConfiguration](./defaultconfiguration.md)
   The default fully-connected network configration.
-- [var labels: Set<Label>](fullyconnectednetworkmultilabelclassifier/labels.md)
+- [var labels: Set<Label>](./labels.md)
   The set of possible labels.
 
 

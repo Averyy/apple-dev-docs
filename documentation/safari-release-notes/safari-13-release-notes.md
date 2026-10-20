@@ -1,6 +1,7 @@
 # Safari 13 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released September 19, 2019 — Version 13 (15608.2.11)
 
@@ -22,13 +23,13 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 
 - Updated Safari to prompt the user to change weak passwords when signing into a website. Requesting a password change uses the well-known URL for changing passwords, enabling websites to specify the page to open for updating a password.
 - Added support for FIDO2-compliant USB security keys with the Web Authentication standard in Safari on macOS.
-- Added support for Sign in With Apple to Safari and to [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview).
+- Added support for Sign in With Apple to Safari and to [`WKWebView`](../WebKit/wkwebview.md).
 
 ##### Security and Privacy
 
 ###### New Features
 
-- Added a permission API on iOS for [`DeviceMotionEvent`](https://developer.apple.com/documentation/webkitjs/devicemotionevent) and [`DeviceOrientationEvent`](https://developer.apple.com/documentation/webkitjs/deviceorientationevent).
+- Added a permission API on iOS for [`DeviceMotionEvent`](../webkitjs/devicemotionevent.md) and [`DeviceOrientationEvent`](../webkitjs/deviceorientationevent.md).
 - Changed the behavior for third party iframes to prevent them automatically navigating the page.
 - Updated Intelligent Tracking Prevention to prevent cross-site tracking through referrer and through link decoration.
 - Improved the privacy of local WebRTC data connections with mDNS ICE candidates.
@@ -52,7 +53,7 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 - Reduced the amount of memory used by JavaScript, including for non-web clients.
 - Improved the MotionMark graphics performance benchmark score by 10%.
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -64,11 +65,11 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 - Updated editing callouts to avoid in-page controls.
 - Added intelligent whitespace to editable WebViews and editable areas of webpages.
 
-##### Payment Request Api
+##### Payment Request API
 
 ###### New Features
 
-- Added support for Apple Pay on the Web to [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview). Note that using script injection APIs, such as [`WKUserScript`](https://developer.apple.com/documentation/webkit/wkuserscript) or [`evaluateJavaScript(_:completionHandler:)`](https://developer.apple.com/documentation/webkit/wkwebview/evaluatejavascript(_:completionhandler:)) disables Apple Pay for that view.
+- Added support for Apple Pay on the Web to [`WKWebView`](../WebKit/wkwebview.md). Note that using script injection APIs, such as [`WKUserScript`](../WebKit/wkuserscript.md) or [`evaluateJavaScript(_:completionHandler:)`](../WebKit/wkwebview/evaluatejavascript%28_,completionhandler%29.md) disables Apple Pay for that view.
 
 ##### Media
 
@@ -77,13 +78,13 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 - Added support for the `decodingInfo()` method of the Media Capabilities API for checking supported codecs, efficiently supported codecs, and optional codec features including alpha.
 - Added the ability to Safari for macOS to share your screen with others using only web technologies. Plug-ins are no longer required.
 - Updated Safari for iPad to support Media Source Extensions.
-- Added support for the `navigator.mediaDevices` property of the Media Capture and Streams API to [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller).
+- Added support for the `navigator.mediaDevices` property of the Media Capture and Streams API to [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md).
 
 ###### Resolved Issues
 
 - Transparency in video with an alpha channel now works correctly for all supported video formats.
 
-##### Safari App Extension Api
+##### Safari App Extension API
 
 ###### New Features
 
@@ -110,27 +111,27 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 - Disabled `-webkit-overflow-scrolling: touch `on iPad. All frames and scrollable overflow areas now use accelerated one-finger scrolling without changing stacking.
 - Disabled frame flattening on iOS. Frames now render in the same way as a desktop browser.
 
-##### Authenticationservices Framework
+##### AuthenticationServices Framework
 
 ###### New Features
 
-- Added [`ASAuthorizationController`](https://developer.apple.com/documentation/authenticationservices/asauthorizationcontroller) to implement Sign In with Apple and to use a system-provided sign-in account picker for accounts stored in iCloud Keychain.
-- Added [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) to the SDK for macOS.
-- Added support for using web browsers other than Safari to [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) on macOS. For more information, see [`ASWebAuthenticationSessionWebBrowserSessionManager`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsessionwebbrowsersessionmanager).
+- Added [`ASAuthorizationController`](../AuthenticationServices/asauthorizationcontroller.md) to implement Sign In with Apple and to use a system-provided sign-in account picker for accounts stored in iCloud Keychain.
+- Added [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) to the SDK for macOS.
+- Added support for using web browsers other than Safari to [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) on macOS. For more information, see [`ASWebAuthenticationSessionWebBrowserSessionManager`](../AuthenticationServices/aswebauthenticationsessionwebbrowsersessionmanager.md).
 
-##### Webkit Framework
+##### WebKit Framework
 
 ###### New Features
 
 - Added API to control desktop and mobile content modes.
 
-##### Javascriptcore Framework
+##### JavaScriptCore Framework
 
 ###### New Features
 
 - Added an API for loading ES6 modules.
 
-##### Linkpresentation Framework
+##### LinkPresentation Framework
 
 ###### New Features
 
@@ -138,13 +139,14 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 
 ##### Mac Catalyst
 
-###### Differences From Ios
+###### Differences From iOS
 
-- [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) opens the URL in the user’s web browser and immediately calls [`safariViewControllerDidFinish(_:)`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontrollerdelegate/safariviewcontrollerdidfinish(_:)).
+- [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md) opens the URL in the user’s web browser and immediately calls [`safariViewControllerDidFinish(_:)`](../SafariServices/sfsafariviewcontrollerdelegate/safariviewcontrollerdidfinish%28_%29.md).
 
 ## See Also
 
-- [Safari 13.1 Release Notes](safari-13_1-release_notes.md)
+### Version 13
+- [Safari 13.1 Release Notes](./safari-13_1-release_notes.md)
   Released March 24, 2020 — Version 13.1 (15609.1.20)
 
 

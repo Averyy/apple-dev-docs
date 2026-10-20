@@ -1,7 +1,8 @@
 # protectionSpace
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s protection space.
 
@@ -21,9 +22,13 @@ The receiver’s protection space.
 var protectionSpace: URLProtectionSpace { get }
 ```
 
+```objc
+@property (copy, readonly) NSURLProtectionSpace * protectionSpace;
+```
+
 ## Mentions
 
-- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
+- [Performing manual server trust authentication](../performing-manual-server-trust-authentication.md)
 
 #### Discussion
 

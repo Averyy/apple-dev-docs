@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kUSBBadDispatchTable: Int](kusbbaddispatchtable.md)
-- [var kUSBNotHandled: Int](kusbnothandled.md)
-- [var kUSBQueueFull: Int](kusbqueuefull.md)
-- [var kUSBUnknownNotification: Int](kusbunknownnotification.md)
+- [var kUSBBadDispatchTable: Int](../../kusbbaddispatchtable.md)
+- [var kUSBNotHandled: Int](../../kusbnothandled.md)
+- [var kUSBQueueFull: Int](../../kusbqueuefull.md)
+- [var kUSBUnknownNotification: Int](../../kusbunknownnotification.md)
 
 
 ---

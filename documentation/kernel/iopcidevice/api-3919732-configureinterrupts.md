@@ -1,14 +1,15 @@
 # configureInterrupts
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.3+ - Deprecated in 12.3
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn configureInterrupts(UInt32 interruptType, UInt32 numRequired, UInt32 numRequested, IOOptionBits options);
 ```
 

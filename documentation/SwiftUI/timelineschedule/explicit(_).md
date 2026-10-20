@@ -1,7 +1,8 @@
 # explicit(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A schedule for updating a timeline view at explicit points in time.
 
@@ -23,7 +24,7 @@ static func explicit<S>(_ dates: S) -> ExplicitTimelineSchedule<S> where Self ==
 
 #### Discussion
 
-Initialize a [`TimelineView`](timelineview.md) with an explicit timeline schedule when you want to schedule view updates at particular points in time:
+Initialize a [`TimelineView`](../timelineview.md) with an explicit timeline schedule when you want to schedule view updates at particular points in time:
 
 ```swift
 let dates = [
@@ -48,13 +49,14 @@ The timeline view updates its content on exactly the dates that you specify, unt
 
 ## See Also
 
-- [static var animation: AnimationTimelineSchedule](timelineschedule/animation.md)
+### Getting built-in schedules
+- [static var animation: AnimationTimelineSchedule](./animation.md)
   A pausable schedule of dates updating at a frequency no more quickly than the provided interval.
-- [static func animation(minimumInterval: Double?, paused: Bool) -> AnimationTimelineSchedule](timelineschedule/animation(minimuminterval:paused:).md)
+- [static func animation(minimumInterval: Double?, paused: Bool) -> AnimationTimelineSchedule](./animation%28minimuminterval,paused%29.md)
   A pausable schedule of dates updating at a frequency no more quickly than the provided interval.
-- [static var everyMinute: EveryMinuteTimelineSchedule](timelineschedule/everyminute.md)
+- [static var everyMinute: EveryMinuteTimelineSchedule](./everyminute.md)
   A schedule for updating a timeline view at the start of every minute.
-- [static func periodic(from: Date, by: TimeInterval) -> PeriodicTimelineSchedule](timelineschedule/periodic(from:by:).md)
+- [static func periodic(from: Date, by: TimeInterval) -> PeriodicTimelineSchedule](./periodic%28from,by%29.md)
   A schedule for updating a timeline view at regular intervals.
 
 

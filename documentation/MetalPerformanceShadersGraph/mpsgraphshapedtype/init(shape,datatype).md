@@ -1,7 +1,8 @@
 # init(shape:dataType:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a shaped type.
 
@@ -17,6 +18,10 @@ Initializes a shaped type.
 
 ```swift
 init(shape: [NSNumber]?, dataType: MPSDataType)
+```
+
+```objc
+- (instancetype) initWithShape:(MPSShape *) shape dataType:(MPSDataType) dataType;
 ```
 
 #### Return Value

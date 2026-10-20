@@ -1,7 +1,8 @@
 # minSize(width:height:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the minimum size for the configuration.
 
@@ -36,7 +37,8 @@ UIHostingConfiguration {
 
 ## See Also
 
-- [func minSize() -> UIHostingConfiguration<Content, Background>](uihostingconfiguration/minsize.md)
+### Setting a size
+- [func minSize() -> UIHostingConfiguration<Content, Background>](./minsize%28%29.md)
   Sets the minimum size for the configuration.
 
 

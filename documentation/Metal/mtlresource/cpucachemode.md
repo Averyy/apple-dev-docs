@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The CPU cache mode that defines the CPU mapping of the resource.
@@ -11,7 +12,7 @@ The CPU cache mode that defines the CPU mapping of the resource.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,23 +21,28 @@ The CPU cache mode that defines the CPU mapping of the resource.
 var cpuCacheMode: MTLCPUCacheMode { get }
 ```
 
+```objc
+@property (readonly) MTLCPUCacheMode cpuCacheMode;
+```
+
 #### Discussion
 
 The cache mode is set when you create the resource and cannot be changed.
 
 ## See Also
 
-- [var storageMode: MTLStorageMode](mtlresource/storagemode.md)
+### Reading memory and storage properties
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The location and access permissions of the resource.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlresource/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./hazardtrackingmode.md)
   A mode that determines whether Metal tracks and synchronizes resource access.
-- [var resourceOptions: MTLResourceOptions](mtlresource/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./resourceoptions.md)
   The storage mode, CPU cache mode, and hazard tracking mode of the resource.
-- [enum MTLCPUCacheMode](mtlcpucachemode.md)
+- [enum MTLCPUCacheMode](../mtlcpucachemode.md)
   Options for the CPU cache mode that define the CPU mapping of the resource.
-- [enum MTLStorageMode](mtlstoragemode.md)
+- [enum MTLStorageMode](../mtlstoragemode.md)
   Options for the memory location and access permissions for a resource.
-- [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
+- [enum MTLHazardTrackingMode](../mtlhazardtrackingmode.md)
   Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 

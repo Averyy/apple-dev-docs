@@ -1,7 +1,8 @@
 # DiskImage.LayerType
 
 **Framework**: DiskImageKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An enumeration that defines the type of a layer in a stacked disk image.
 
@@ -17,29 +18,30 @@ struct LayerType
 ## Topics
 
 ### Operators
-- [static func == (DiskImage.LayerType, DiskImage.LayerType) -> Bool](diskimage/layertype-swift.struct/==(_:_:).md)
+- [static func == (DiskImage.LayerType, DiskImage.LayerType) -> Bool](./layertype-swift.struct/eqeq%28_,_%29.md)
   Equatable implementation.
 ### Type Properties
-- [static let cache: DiskImage.LayerType](diskimage/layertype-swift.struct/cache.md)
+- [static let cache: DiskImage.LayerType](./layertype-swift.struct/cache.md)
   A cache layer.
-- [static let overlay: DiskImage.LayerType](diskimage/layertype-swift.struct/overlay.md)
+- [static let overlay: DiskImage.LayerType](./layertype-swift.struct/overlay.md)
   An overlay layer that inherits its size from the layer beneath it.
 ### Type Methods
-- [static func overlay(blockCount: Int) -> DiskImage.LayerType](diskimage/layertype-swift.struct/overlay(blockcount:).md)
+- [static func overlay(blockCount: Int) -> DiskImage.LayerType](./layertype-swift.struct/overlay%28blockcount%29.md)
   An overlay layer with a specific block count.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DiskImage.Format](diskimage/format-swift.enum.md)
+### Values that describe block sizes and image formats
+- [DiskImage.Format](./format-swift.enum.md)
   Values that describe the disk image formats DiskImageKit supports.
-- [DiskImage.BlockSize](diskimage/blocksize-swift.enum.md)
+- [DiskImage.BlockSize](./blocksize-swift.enum.md)
   Values that represent the block size of a disk image.
 
 

@@ -1,11 +1,12 @@
 # init(status:requestCount:completeCount:reserved:timeStamp:)
 
 **Framework**: IOUSBHost  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 14.0+
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.0
 
 ## Declaration
 

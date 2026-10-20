@@ -1,7 +1,8 @@
 # init(sensitivityPoints:start:end:device:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.1+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start startDate: Date, end endDate: Date, device: HKDevice?, metadata: [String : Any]?)
+```
+
+```objc
++ (instancetype) audiogramSampleWithSensitivityPoints:(NSArray<HKAudiogramSensitivityPoint *> *) sensitivityPoints startDate:(NSDate *) startDate endDate:(NSDate *) endDate device:(HKDevice *) device metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
 #### Return Value

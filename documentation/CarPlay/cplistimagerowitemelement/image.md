@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image associated with this element.
 
@@ -15,6 +16,10 @@ The image associated with this element.
 ```swift
 @NSCopying
 var image: UIImage { get set }
+```
+
+```objc
+@property (nonatomic, copy) UIImage * image;
 ```
 
 

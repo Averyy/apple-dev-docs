@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 void *calloutEntry;
 ```
 
@@ -15,8 +15,9 @@ thread_call entry for preregistered thread callouts
 
 ## See Also
 
-- [reserved](iotimereventsource/reserved.md)
-- [abstime](iotimereventsource/abstime.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [abstime](./abstime.md)
 
 
 ---

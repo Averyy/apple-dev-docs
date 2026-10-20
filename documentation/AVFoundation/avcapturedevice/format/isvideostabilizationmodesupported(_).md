@@ -1,7 +1,8 @@
 # isVideoStabilizationModeSupported(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value that indicates whether the format supports a given video stabilization mode.
 
@@ -17,9 +18,13 @@ A Boolean value that indicates whether the format supports a given video stabili
 func isVideoStabilizationModeSupported(_ videoStabilizationMode: AVCaptureVideoStabilizationMode) -> Bool
 ```
 
+```objc
+- (BOOL) isVideoStabilizationModeSupported:(AVCaptureVideoStabilizationMode) videoStabilizationMode;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if video stabilization is supported; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../../Swift/true.md) if video stabilization is supported; otherwise, [`false`](../../../Swift/false.md).
 
 ## Parameters
 
@@ -27,7 +32,8 @@ func isVideoStabilizationModeSupported(_ videoStabilizationMode: AVCaptureVideoS
 
 ## See Also
 
-- [enum AVCaptureVideoStabilizationMode](avcapturevideostabilizationmode.md)
+### Determining video stabilization support
+- [enum AVCaptureVideoStabilizationMode](../../avcapturevideostabilizationmode.md)
   An enumeration of video stabilization modes that capture devices and formats support.
 
 

@@ -1,7 +1,8 @@
 # MTLPixelFormat.r8Unorm_srgb
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ordinary format with one 8-bit normalized unsigned integer component with conversion between sRGB and linear space.
 
@@ -10,7 +11,7 @@ Ordinary format with one 8-bit normalized unsigned integer component with conver
 - iPadOS 8.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ Ordinary format with one 8-bit normalized unsigned integer component with conver
 case r8Unorm_srgb
 ```
 
+```c
+MTLPixelFormatR8Unorm_sRGB
+```
+
 ## Mentions
 
-- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
+- [Developing Metal apps that run in Simulator](../developing-metal-apps-that-run-in-simulator.md)
 
 ## See Also
 
-- [MTLPixelFormat.a8Unorm](mtlpixelformat/a8unorm.md)
+### Ordinary 8-bit pixel formats
+- [MTLPixelFormat.a8Unorm](./a8unorm.md)
   Ordinary format with one 8-bit normalized unsigned integer component.
-- [MTLPixelFormat.r8Unorm](mtlpixelformat/r8unorm.md)
+- [MTLPixelFormat.r8Unorm](./r8unorm.md)
   Ordinary format with one 8-bit normalized unsigned integer component.
-- [MTLPixelFormat.r8Snorm](mtlpixelformat/r8snorm.md)
+- [MTLPixelFormat.r8Snorm](./r8snorm.md)
   Ordinary format with one 8-bit normalized signed integer component.
-- [MTLPixelFormat.r8Uint](mtlpixelformat/r8uint.md)
+- [MTLPixelFormat.r8Uint](./r8uint.md)
   Ordinary format with one 8-bit unsigned integer component.
-- [MTLPixelFormat.r8Sint](mtlpixelformat/r8sint.md)
+- [MTLPixelFormat.r8Sint](./r8sint.md)
   Ordinary format with one 8-bit signed integer component.
 
 

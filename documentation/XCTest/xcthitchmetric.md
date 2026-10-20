@@ -1,7 +1,8 @@
 # XCTHitchMetric
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A metric to measure the number of hitches your UI encounters in a performance test.
 
@@ -19,45 +20,50 @@ A metric to measure the number of hitches your UI encounters in a performance te
 class XCTHitchMetric
 ```
 
+```objc
+@interface XCTHitchMetric : NSObject
+```
+
 #### Discussion
 
-A hitch occurs when your app doesn’t prepare the content it displays in time for the system to render it in the next screen update. For more information, see [`Understanding hitches in your app`](https://developer.apple.com/documentation/xcode/understanding-hitches-in-your-app).
+A hitch occurs when your app doesn’t prepare the content it displays in time for the system to render it in the next screen update. For more information, see [Understanding hitches in your app](../Xcode/understanding-hitches-in-your-app.md).
 
 ## Topics
 
 ### Creating a hitch metric
-- [init(application: XCUIApplication)](xcthitchmetric/init(application:).md)
+- [init(application: XCUIApplication)](./xcthitchmetric/init%28application%29.md)
   Initializes a metric that measures hitches metric in the specified app.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [XCTMetric](xctmetric.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [XCTMetric](./xctmetric.md)
 
 ## See Also
 
-- [protocol XCTMetric](xctmetric.md)
+### Measurement Metrics
+- [protocol XCTMetric](./xctmetric.md)
   A protocol that defines the methods that objects must provide when gathering metrics during performance tests.
-- [class XCTCPUMetric](xctcpumetric.md)
+- [class XCTCPUMetric](./xctcpumetric.md)
   A metric to record information about CPU activity during a performance test.
-- [class XCTClockMetric](xctclockmetric.md)
+- [class XCTClockMetric](./xctclockmetric.md)
   A metric to record the time that elapses during a performance test.
-- [class XCTMemoryMetric](xctmemorymetric.md)
+- [class XCTMemoryMetric](./xctmemorymetric.md)
   A metric to record the physical memory that a performance test uses.
-- [class XCTOSSignpostMetric](xctossignpostmetric.md)
+- [class XCTOSSignpostMetric](./xctossignpostmetric.md)
   A metric to record the time that a performance test spends executing a signposted region of code.
-- [class XCTStorageMetric](xctstoragemetric.md)
+- [class XCTStorageMetric](./xctstoragemetric.md)
   A metric to record the amount of data that a performance test logically writes to storage.
-- [class XCTApplicationLaunchMetric](xctapplicationlaunchmetric.md)
+- [class XCTApplicationLaunchMetric](./xctapplicationlaunchmetric.md)
   A metric to record the application launch duration for a performance test.
 
 

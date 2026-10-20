@@ -1,7 +1,8 @@
 # LowLevelMeshResource.VertexSemantic.position
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The semantic for vertex position data.
 
@@ -19,13 +20,14 @@ case position
 
 ## See Also
 
-- [LowLevelMeshResource.VertexSemantic.normal](lowlevelmeshresource/vertexsemantic/normal.md)
+### Identifying geometric attributes
+- [LowLevelMeshResource.VertexSemantic.normal](./normal.md)
   The semantic for surface normal data.
-- [LowLevelMeshResource.VertexSemantic.tangent](lowlevelmeshresource/vertexsemantic/tangent.md)
+- [LowLevelMeshResource.VertexSemantic.tangent](./tangent.md)
   The semantic for surface tangent vector data.
-- [LowLevelMeshResource.VertexSemantic.bitangent](lowlevelmeshresource/vertexsemantic/bitangent.md)
+- [LowLevelMeshResource.VertexSemantic.bitangent](./bitangent.md)
   The semantic for surface bitangent vector data.
-- [LowLevelMeshResource.VertexSemantic.color](lowlevelmeshresource/vertexsemantic/color.md)
+- [LowLevelMeshResource.VertexSemantic.color](./color.md)
   The semantic for per-vertex color data.
 
 

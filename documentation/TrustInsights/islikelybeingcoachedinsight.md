@@ -1,7 +1,8 @@
 # IsLikelyBeingCoachedInsight
 
 **Framework**: Trust Insights  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An insight to request to examine indications that someone may be actively coaching a person to perform actions.
 
@@ -24,26 +25,26 @@ It could be useful to consider this in operations where it’s possible that som
 ## Topics
 
 ### Instance Properties - generated
-- [var insightID: String](islikelybeingcoachedinsight/insightid.md)
+- [var insightID: String](./islikelybeingcoachedinsight/insightid.md)
   The identifier for this particular result.
-- [var modelVersion: String?](islikelybeingcoachedinsight/modelversion.md)
+- [var modelVersion: String?](./islikelybeingcoachedinsight/modelversion.md)
   The model version used for this particular insight.
-- [var newestModelVersion: String?](islikelybeingcoachedinsight/newestmodelversion.md)
+- [var newestModelVersion: String?](./islikelybeingcoachedinsight/newestmodelversion.md)
   The newest model that could be requested.
-- [let outcome: Result<IsLikelyBeingCoachedInsight.Value, InsightError>](islikelybeingcoachedinsight/outcome.md)
+- [let outcome: Result<IsLikelyBeingCoachedInsight.Value, InsightError>](./islikelybeingcoachedinsight/outcome.md)
   Result value from a request for this insight.
 ### Enumerations - generated
-- [IsLikelyBeingCoachedInsight.SchemaVersion](islikelybeingcoachedinsight/schemaversion.md)
+- [IsLikelyBeingCoachedInsight.SchemaVersion](./islikelybeingcoachedinsight/schemaversion.md)
   An enumeration of insight values present in the available schema versions.
-- [IsLikelyBeingCoachedInsight.Value](islikelybeingcoachedinsight/value.md)
+- [IsLikelyBeingCoachedInsight.Value](./islikelybeingcoachedinsight/value.md)
   The levels of trust the framework returns for the “is likely being coached” insight.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TrustInsight](trustinsight.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TrustInsight](./trustinsight.md)
 
 
 ---

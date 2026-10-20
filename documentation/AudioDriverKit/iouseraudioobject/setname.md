@@ -1,7 +1,8 @@
 # SetName
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the name of the object.
 
@@ -10,13 +11,13 @@ Sets the name of the object.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetName(OSString *in_name);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,11 +25,12 @@ If the change succeeds, the framework sends a notification to the host to update
 
 ## Parameters
 
-- `in_name`: The name to set, as an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring).
+- `in_name`: The name to set, as an [`OSString`](../../DriverKit/osstring.md).
 
 ## See Also
 
-- [GetName](iouseraudioobject/getname.md)
+### Working with Object Names
+- [GetName](./getname.md)
   Gets the name of the object.
 
 

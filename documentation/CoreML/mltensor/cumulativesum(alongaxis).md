@@ -1,7 +1,8 @@
 # cumulativeSum(alongAxis:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the cumulative sum along the specified axis.
 
@@ -40,7 +41,8 @@ MLTensor([1, 2, 3]).cumulativeSum() = [1, 1 + 2, 1 + 2 + 3]
 
 ## See Also
 
-- [func cumulativeProduct(alongAxis: Int) -> MLTensor](mltensor/cumulativeproduct(alongaxis:).md)
+### Computing the cumulative value
+- [func cumulativeProduct(alongAxis: Int) -> MLTensor](./cumulativeproduct%28alongaxis%29.md)
   Computes the cumulative product along the specified axis.
 
 

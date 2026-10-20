@@ -1,7 +1,8 @@
 # stopActivity(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the workout session activity, and sets the end date.
 
@@ -9,7 +10,7 @@ Stops the workout session activity, and sets the end date.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 5.0+
 
@@ -19,9 +20,13 @@ Stops the workout session activity, and sets the end date.
 func stopActivity(with date: Date?)
 ```
 
+```objc
+- (void) stopActivityWithDate:(NSDate *) date;
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
+- [Running workout sessions](../running-workout-sessions.md)
 
 ## Parameters
 
@@ -29,17 +34,19 @@ func stopActivity(with date: Date?)
 
 ## See Also
 
-- [HKWorkoutSessionState.stopped](hkworkoutsessionstate/stopped.md)
+### Related Documentation
+- [HKWorkoutSessionState.stopped](../hkworkoutsessionstate/stopped.md)
   The session has stopped.
-- [func prepare()](hkworkoutsession/prepare.md)
+### Managing the workout
+- [func prepare()](./prepare%28%29.md)
   Prepares the workout session.
-- [func startActivity(with: Date?)](hkworkoutsession/startactivity(with:).md)
+- [func startActivity(with: Date?)](./startactivity%28with%29.md)
   Starts the workout session activity, and sets the start date.
-- [func pause()](hkworkoutsession/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses the workout session.
-- [func resume()](hkworkoutsession/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes the workout session.
-- [func end()](hkworkoutsession/end.md)
+- [func end()](./end%28%29.md)
   Ends the workout session.
 
 

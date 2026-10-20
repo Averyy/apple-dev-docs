@@ -1,7 +1,8 @@
 # scannerDeviceView(_:didEncounterError:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked whenever the scanner encounters an error.
 
@@ -12,6 +13,10 @@ Invoked whenever the scanner encounters an error.
 
 ```swift
 optional func scannerDeviceView(_ scannerDeviceView: IKScannerDeviceView!, didEncounterError error: (any Error)!)
+```
+
+```objc
+- (void) scannerDeviceView:(IKScannerDeviceView *) scannerDeviceView didEncounterError:(NSError *) error;
 ```
 
 ## Parameters

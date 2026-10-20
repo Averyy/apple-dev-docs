@@ -1,17 +1,22 @@
 # stop(when:reachesProgress:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops running the animation represented by the receiver when another animation reaches a specific progress mark.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func stop(when animation: NSAnimation, reachesProgress stopProgress: NSAnimation.Progress)
+```
+
+```objc
+- (void) stopWhenAnimation:(NSAnimation *) animation reachesProgress:(NSAnimationProgress) stopProgress;
 ```
 
 #### Discussion
@@ -25,13 +30,15 @@ This method links the running of two animations together. You can set only one `
 
 ## See Also
 
-- [func stop()](nsanimation/stop.md)
+### Related Documentation
+- [func stop()](./stop%28%29.md)
   Stops the animation represented by the receiver.
-- [func start(when: NSAnimation, reachesProgress: NSAnimation.Progress)](nsanimation/start(when:reachesprogress:).md)
+### Linking Animations Together
+- [func start(when: NSAnimation, reachesProgress: NSAnimation.Progress)](./start%28when,reachesprogress%29.md)
   Starts running the animation represented by the receiver when another animation reaches a specific progress mark.
-- [func clearStart()](nsanimation/clearstart.md)
+- [func clearStart()](./clearstart%28%29.md)
   Clears linkage to another animation that causes the receiver to start.
-- [func clearStop()](nsanimation/clearstop.md)
+- [func clearStop()](./clearstop%28%29.md)
   Clears linkage to another animation that causes the receiver to stop.
 
 

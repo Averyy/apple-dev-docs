@@ -1,7 +1,8 @@
 # CMDyskineticSymptomResultHandler
 
 **Framework**: Core Motion  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A completion handler for processing dyskinetic symptom results.
 
@@ -14,6 +15,10 @@ A completion handler for processing dyskinetic symptom results.
 typealias CMDyskineticSymptomResultHandler = ([CMDyskineticSymptomResult], (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(NSArray<CMDyskineticSymptomResult *> *, NSError *) CMDyskineticSymptomResultHandler;
+```
+
 ## Parameters
 
 - `dyskineticSymptomResult`: An array of dyskinetic symptom results found by the query.
@@ -21,13 +26,14 @@ typealias CMDyskineticSymptomResultHandler = ([CMDyskineticSymptomResult], (any 
 
 ## See Also
 
-- [func queryTremor(from: Date, to: Date, withHandler: CMTremorResultHandler)](cmmovementdisordermanager/querytremor(from:to:withhandler:).md)
+### Querying for Movement Disorders
+- [func queryTremor(from: Date, to: Date, withHandler: CMTremorResultHandler)](./cmmovementdisordermanager/querytremor%28from,to,withhandler%29.md)
   Query for tremor results from the provided time interval.
-- [typealias CMTremorResultHandler](cmtremorresulthandler.md)
+- [typealias CMTremorResultHandler](./cmtremorresulthandler.md)
   A completion handler for accessing and processing tremor results.
-- [func queryDyskineticSymptom(from: Date, to: Date, withHandler: CMDyskineticSymptomResultHandler)](cmmovementdisordermanager/querydyskineticsymptom(from:to:withhandler:).md)
+- [func queryDyskineticSymptom(from: Date, to: Date, withHandler: CMDyskineticSymptomResultHandler)](./cmmovementdisordermanager/querydyskineticsymptom%28from,to,withhandler%29.md)
   Query for dyskinetic symptoms from the provided time interval.
-- [func lastProcessedDate() -> Date?](cmmovementdisordermanager/lastprocesseddate.md)
+- [func lastProcessedDate() -> Date?](./cmmovementdisordermanager/lastprocesseddate%28%29.md)
   Returns the date of the most recently calculated results.
 
 

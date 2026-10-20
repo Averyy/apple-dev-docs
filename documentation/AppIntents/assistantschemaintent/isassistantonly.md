@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -21,7 +22,12 @@ static var isAssistantOnly: Bool { get }
 
 ## Mentions
 
-- [Making actions and content discoverable by Apple Intelligence](making-actions-and-content-discoverable-by-apple-intelligence.md)
+- [Making actions and content discoverable by Apple Intelligence](../making-actions-and-content-discoverable-by-apple-intelligence.md)
+
+## Default Implementations
+
+### AssistantSchemaIntent Implementations
+- [static var isAssistantOnly: Bool](./isassistantonly-p4hd.md)
 
 
 ---

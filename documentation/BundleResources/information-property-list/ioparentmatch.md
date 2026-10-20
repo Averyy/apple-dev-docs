@@ -1,25 +1,28 @@
 # IOParentMatch
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `IOParentMatch`
+- **Type**: dictionary
 
 ## See Also
 
-- [IOPropertyMatch](information-property-list/iopropertymatch.md)
+### Advanced Match Criteria
+- [IOPropertyMatch](./iopropertymatch.md)
   The device-specific keys the system must match in order to use your driver.
-- [IONameMatch](information-property-list/ionamematch.md)
+- [IONameMatch](./ionamematch.md)
   One or more strings that contain the names of possible provider objects in the system registry.
-- [IOResourceMatch](information-property-list/ioresourcematch.md)
+- [IOResourceMatch](./ioresourcematch.md)
   One or more system-specific or device-specific resources that your driver requires.
-- [IOPathMatch](information-property-list/iopathmatch.md)
-- [IOMatchCategory](information-property-list/iomatchcategory.md)
+- [IOPathMatch](./iopathmatch.md)
+- [IOMatchCategory](./iomatchcategory.md)
 
 
 ---

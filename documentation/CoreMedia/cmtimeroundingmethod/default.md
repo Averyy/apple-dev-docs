@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default rounding method.
 
@@ -20,9 +21,13 @@ The default rounding method.
 static var `default`: CMTimeRoundingMethod { get }
 ```
 
+```c
+kCMTimeRoundingMethod_Default
+```
+
 #### Discussion
 
-This value is equal to [`CMTimeRoundingMethod.roundHalfAwayFromZero`](cmtimeroundingmethod/roundhalfawayfromzero.md).
+This value is equal to [`CMTimeRoundingMethod.roundHalfAwayFromZero`](./roundhalfawayfromzero.md).
 
 
 ---

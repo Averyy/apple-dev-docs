@@ -1,7 +1,8 @@
 # compositingGroup()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Wraps this view in a compositing group.
 
@@ -31,7 +32,7 @@ A compositing group makes compositing effects in this view’s ancestor views, s
 
 Use `compositingGroup()` to apply effects to a parent view before applying effects to this view.
 
-In the example below the `compositingGroup()` modifier separates the application of effects into stages. It applies the [`opacity(_:)`](view/opacity(_:).md) effect to the VStack before the `blur(radius:)` effect is applied to the views inside the enclosed [`ZStack`](zstack.md). This limits the scope of the opacity change to the outermost view.
+In the example below the `compositingGroup()` modifier separates the application of effects into stages. It applies the [`opacity(_:)`](./opacity%28_%29.md) effect to the VStack before the `blur(radius:)` effect is applied to the views inside the enclosed [`ZStack`](../zstack.md). This limits the scope of the opacity change to the outermost view.
 
 ```swift
 VStack {
@@ -49,23 +50,24 @@ VStack {
 }
 ```
 
-![A view showing the effect of the compositingGroup modifier in applying](/images/com.apple.SwiftUI/SwiftUI-View-compositingGroup@2x.png)
+![A view showing the effect of the compositingGroup modifier in applying](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-compositingGroup@2x.png)
 
 ## See Also
 
-- [func blendMode(BlendMode) -> some View](view/blendmode(_:).md)
+### Compositing views
+- [func blendMode(BlendMode) -> some View](./blendmode%28_%29.md)
   Sets the blend mode for compositing this view with overlapping views.
-- [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](view/drawinggroup(opaque:colormode:).md)
+- [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](./drawinggroup%28opaque,colormode%29.md)
   Composites this view’s contents into an offscreen image before final display.
-- [enum BlendMode](blendmode.md)
+- [enum BlendMode](../blendmode.md)
   Modes for compositing a view with overlapping content.
-- [enum ColorRenderingMode](colorrenderingmode.md)
+- [enum ColorRenderingMode](../colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
-- [protocol CompositorContent](compositorcontent.md)
+- [protocol CompositorContent](../compositorcontent.md)
   A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
-- [struct CompositorContentBuilder](compositorcontentbuilder.md)
-  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
-- [struct AnyCompositorContent](anycompositorcontent.md)
+- [struct CompositorContentBuilder](../compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](../compositorcontent.md) elements.
+- [struct AnyCompositorContent](../anycompositorcontent.md)
   Type erased compositor content.
 
 

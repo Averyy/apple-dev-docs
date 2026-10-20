@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Fits a transformer to a sequence of examples while validating with a validation sequence.
@@ -23,7 +24,7 @@ func fitted<Input, Validation>(to input: Input, validateOn validation: Validatio
 
 ## Mentions
 
-- [Creating a multi-label image classifier](creating-a-multi-label-image-classifier.md)
+- [Creating a multi-label image classifier](../creating-a-multi-label-image-classifier.md)
 
 #### Return Value
 
@@ -35,14 +36,21 @@ The fitted transformer.
 - `validation`: A sequence of examples used for validating the fitted transformer.
 - `eventHandler`: An event handler.
 
+## Default Implementations
+
+### SupervisedEstimator Implementations
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> Self.Transformer](./fitted%28to,validateon,eventhandler%29-5v8ky.md)
+  Fits a transformer to an async sequence of examples while validating with a validation sequence.
+
 ## See Also
 
-- [func adaptedAsTemporal() -> SupervisedEstimatorToTemporalAdaptor<Self>](supervisedestimator/adaptedastemporal.md)
+### Adapting and fitting
+- [func adaptedAsTemporal() -> SupervisedEstimatorToTemporalAdaptor<Self>](./adaptedastemporal%28%29.md)
   Exposes this supervised estimator as a temporal supervised estimator.
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> Self.Transformer](supervisedestimator/fitted(to:eventhandler:).md)
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> Self.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a transformer to a sequence of examples.
-- [func fitted<Input>(to: Input) async throws -> Self.Transformer](supervisedestimator/fitted(to:).md)
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation) async throws -> Self.Transformer](supervisedestimator/fitted(to:validateon:).md)
+- [func fitted<Input>(to: Input) async throws -> Self.Transformer](./fitted%28to%29.md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation) async throws -> Self.Transformer](./fitted%28to,validateon%29.md)
 
 
 ---

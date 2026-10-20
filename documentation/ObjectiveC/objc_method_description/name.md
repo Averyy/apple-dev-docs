@@ -1,18 +1,19 @@
 # name
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the method at runtime.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The name of the method at runtime.
 var name: Selector?
 ```
 
+```c
+SEL name;
+```
+
 ## See Also
 
-- [var types: UnsafeMutablePointer<CChar>?](objc_method_description/types.md)
+### Fields
+- [var types: UnsafeMutablePointer<CChar>?](./types.md)
   The types of the method arguments.
 
 

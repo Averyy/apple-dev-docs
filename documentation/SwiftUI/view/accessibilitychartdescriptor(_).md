@@ -1,7 +1,8 @@
 # accessibilityChartDescriptor(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a descriptor to a View that represents a chart to make the chart’s contents accessible to all users.
 
@@ -57,11 +58,12 @@ SomeChartView()
 
 ## Parameters
 
-- `representable`: The [`AXChartDescriptorRepresentable`](axchartdescriptorrepresentable.md) used to describe your chart and its data.
+- `representable`: The [`AXChartDescriptorRepresentable`](../axchartdescriptorrepresentable.md) used to describe your chart and its data.
 
 ## See Also
 
-- [protocol AXChartDescriptorRepresentable](axchartdescriptorrepresentable.md)
+### Describing charts
+- [protocol AXChartDescriptorRepresentable](../axchartdescriptorrepresentable.md)
   A type to generate an `AXChartDescriptor` object that you use to provide information about a chart and its data for an accessible experience in VoiceOver or other assistive technologies.
 
 

@@ -1,6 +1,7 @@
 # Creating App Clip Codes with the App Clip Code Generator
 
-**Framework**: App Clips
+**Framework**: App Clips  
+**Role**: Article
 
 Use the App Clip Code Generator command-line tool to verify your code’s colors, get color suggestions, and create App Clip Codes.
 
@@ -8,7 +9,7 @@ Use the App Clip Code Generator command-line tool to verify your code’s colors
 
 By placing an App Clip Code at a physical location or using it in printed or digital marketing materials, you make your App Clip more discoverable. An App Clip Code always uses a design Apple provides, and users instantly recognize and scan it to launch your App Clip. Use the App Clip Code generator command-line tool to create App Clip Codes during development of your App Clip or to automate the creation of App Clip Codes.
 
-> **Note**:  You must be enrolled in the Apple Developer Program before you can download the App Clip Code Generator. For information about the Apple Developer Program, see [`How the Program Works`](https://developer.apple.comhttps://developer.apple.com/programs/how-it-works/).
+> **Note**:  You must be enrolled in the Apple Developer Program before you can download the App Clip Code Generator. For information about the Apple Developer Program, see [How the Program Works](https://developer.apple.com/programs/how-it-works/).
 
 With the App Clip Code Generator command-line tool, you can:
 
@@ -17,19 +18,19 @@ With the App Clip Code Generator command-line tool, you can:
 - Verify a custom color pair.
 - Save your generated App Clip Codes as Scalable Vector Graphics (SVG) files.
 
-Use the generated SVG files to test your App Clip’s launch experience during development and to create App Clip Codes for use at physical locations, in digital communications, and so on. For design and printing guidance, see [`Human Interface Guidelines > App Clips > App Clip Codes`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/).
+Use the generated SVG files to test your App Clip’s launch experience during development and to create App Clip Codes for use at physical locations, in digital communications, and so on. For design and printing guidance, see [Human Interface Guidelines > App Clips > App Clip Codes](https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/).
 
-If you already created an advanced App Clip experience in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) or prefer a tool with a more visual interface, you can use App Store Connect to create the App Clip Code. For more information, see [`Creating App Clip Codes with App Store Connect`](creating-app-clip-codes-with-app-store-connect.md).
+If you already created an advanced App Clip experience in [App Store Connect](https://appstoreconnect.apple.com/) or prefer a tool with a more visual interface, you can use App Store Connect to create the App Clip Code. For more information, see [Creating App Clip Codes with App Store Connect](./creating-app-clip-codes-with-app-store-connect.md).
 
 ##### Install the App Clip Code Generator
 
-To download and install the App Clip Code Generator, visit [`App Clips Resources`](https://developer.apple.comhttps://developer.apple.com/app-clips/resources/) and log into your Apple Developer account. After you download the App Clip Code Generator, open the downloaded disk image and run the package installer. You can find the installed tool at `/Library/Developer/AppClipCodeGenerator`.
+To download and install the App Clip Code Generator, visit [App Clips Resources](https://developer.apple.com/app-clips/resources/) and log into your Apple Developer account. After you download the App Clip Code Generator, open the downloaded disk image and run the package installer. You can find the installed tool at `/Library/Developer/AppClipCodeGenerator`.
 
-##### Choose a Default Color Pair
+##### Choose a default color pair
 
 App Clip Codes use three different colors: a foreground color and a background color you choose, and a third color that the command-line tool generates for you based on the other two colors. To ensure that users can reliably scan the App Clip Code, the color combination must offer enough contrast. Apple offers default color templates to help you choose a color pair.
 
-![Illustration of an App Clip Code with callouts for background, foreground, and generated colors.](/images/com.apple.appclip/media-3706534@2x.png)
+![Illustration of an App Clip Code with callouts for background, foreground, and generated colors.](https://developer.apple.com/tutorials/images/com.apple.appclip/media-3706534@2x.png)
 
 To see the list of default color pairs, open the Terminal app and run the `templates` command:
 
@@ -62,7 +63,7 @@ Index: 17 Foreground: CC73E1 Background: FFFFFF
 
 To see a preview of App Clip Codes for each default color pair as a PNG file, use the Finder or Terminal app to navigate to `/Library/Developer/AppClipCodeGenerator/SampleTemplates`.
 
-##### Experiment with Custom Colors
+##### Experiment with custom colors
 
 In addition to choosing a default color pair, you can choose custom foreground and background colors. To help you choose a color pair that offers high contrast, the App Clip Code Generator tool includes functionality to verify your custom color pair. It also suggests alternative colors in case the ones you initially choose don’t offer enough contrast.
 
@@ -95,7 +96,7 @@ Foreground: CCBB33 Background: 345678
 
 Note how the tool suggests foreground colors based on the chosen background color.
 
-##### Generate Your App Clip Code
+##### Generate your App Clip Code
 
 When you’ve decided on the invocation URL and the color pair, use the App Clip Code Generator tool to create an App Clip Code and save it as an SVG vector graphic file. Open the Terminal app, then create an App Clip Code with the tool’s `generate` command, using one of the following options:
 
@@ -125,11 +126,11 @@ When you’ve decided on the invocation URL and the color pair, use the App Clip
 
 To see all available commands and options, run `AppClipCodeGenerator --help`.
 
-App Clip Codes can only encode a limited amount of information. The App Clip Code Generator displays an error message if you choose an invocation URL that exceeds the amount of encodable information or if it contains invalid characters. For more information, see [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md). For general information about choosing the invocation URL for your App Clip, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
+App Clip Codes can only encode a limited amount of information. The App Clip Code Generator displays an error message if you choose an invocation URL that exceeds the amount of encodable information or if it contains invalid characters. For more information, see [Encoding a URL in an App Clip Code](./encoding-a-url-in-an-app-clip-code.md). For general information about choosing the invocation URL for your App Clip, see [Configuring App Clip experiences](./configuring-the-launch-experience-of-your-app-clip.md).
 
-Use the SVG file to test your App Clip invocations locally, add it to your digital and print media, or create NFC-integrated App Clip Codes. Print your App Clip Codes yourself, or work with a professional printing service — for example, [`RR Donnelley`](https://developer.apple.comhttps://touchless.acc.rrd.com/). For printing guidance, see [`Preparing multiple App Clip Codes for production`](preparing-multiple-app-clip-codes-for-production.md) and [`Human Interface Guidelines > App Clips > Printing Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/).
+Use the SVG file to test your App Clip invocations locally, add it to your digital and print media, or create NFC-integrated App Clip Codes. Print your App Clip Codes yourself, or work with a professional printing service — for example, [RR Donnelley](https://touchless.acc.rrd.com/). For printing guidance, see [Preparing multiple App Clip Codes for production](./preparing-multiple-app-clip-codes-for-production.md) and [Human Interface Guidelines > App Clips > Printing Guidelines](https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/).
 
-##### Automate the Creation of App Clip Codes
+##### Automate the creation of App Clip Codes
 
 If you need to create many different App Clip Codes, consider automating their creation. The App Clip Code Generator comes with a Python script and a comma-separated values (CSV) file to use with it. The CSV file contains sample data to use to create App Clip Codes. You can find the script and the CSV file at `/Library/Developer/AppClipCodeGenerator/Scripts`.
 
@@ -162,11 +163,12 @@ Replace the placeholders with the actual file and directory names. If you used t
 
 Doing so generates four App Clip Codes using the data in the CSV file and saves them in the `GeneratedCodes` directory. 5. Review the generated App Clip Codes, then modify the `sample_list.csv` file as necessary to generate your App Clip Codes. Note that for the script to work, you can’t change the names of the CSV file’s fields.
 
-![Screenshot of a Finder window that shows the file structure of a directory named AppClipCodes. The folder contains files you copied from the Scripts folder. It also contains a new directory named GeneratedCodes that contains generated App Clip Codes.](/images/com.apple.appclip/media-3706526@2x.png)
+![Screenshot of a Finder window that shows the file structure of a directory named AppClipCodes. The folder contains files you copied from the Scripts folder. It also contains a new directory named GeneratedCodes that contains generated App Clip Codes.](https://developer.apple.com/tutorials/images/com.apple.appclip/media-3706526@2x.png)
 
 ## See Also
 
-- [Creating App Clip Codes with App Store Connect](creating-app-clip-codes-with-app-store-connect.md)
+### App Clip Code creation
+- [Creating App Clip Codes with App Store Connect](./creating-app-clip-codes-with-app-store-connect.md)
   Select one or more advanced App Clip experiences in App Store Connect and create App Clip Codes for users to scan to launch your App Clip.
 
 

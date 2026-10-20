@@ -1,7 +1,8 @@
 # UIFocusHaloEffect.Position.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that automatically chooses a position for drawing the halo effect depending on the focus item and its containing view hierarchy.
 
@@ -17,11 +18,16 @@ A constant that automatically chooses a position for drawing the halo effect dep
 case automatic
 ```
 
+```c
+UIFocusHaloEffectPositionAutomatic
+```
+
 ## See Also
 
-- [UIFocusHaloEffect.Position.outside](uifocushaloeffect/position-swift.enum/outside.md)
+### Constants
+- [UIFocusHaloEffect.Position.outside](./outside.md)
   A constant that draws the halo effect around the shape.
-- [UIFocusHaloEffect.Position.inside](uifocushaloeffect/position-swift.enum/inside.md)
+- [UIFocusHaloEffect.Position.inside](./inside.md)
   A constant that draws the halo effect inside the shape.
 
 

@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Phase publisher.
 
@@ -21,9 +22,10 @@ final var phase: AnyPublisher<MLPhase, Never> { get }
 
 ## See Also
 
-- [var checkpoints: AnyPublisher<MLCheckpoint, Never>](mljob/checkpoints.md)
+### Receiving progress updates
+- [var checkpoints: AnyPublisher<MLCheckpoint, Never>](./checkpoints.md)
   A publisher that sends a checkpoint for each of the session’s checkpoint intervals.
-- [var result: AnyPublisher<Result, any Error>](mljob/result.md)
+- [var result: AnyPublisher<Result, any Error>](./result.md)
   A publisher that provides a result when the training session has finished.
 
 

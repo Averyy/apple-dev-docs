@@ -1,7 +1,8 @@
 # atomicRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command AtomicRequest
 
@@ -17,7 +18,15 @@ Command AtomicRequest
 ## Declaration
 
 ```swift
+func atomicRequest(with params: MTRThermostatClusterAtomicRequestParams, completion: @escaping @Sendable (MTRThermostatClusterAtomicResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func atomicRequest(with params: MTRThermostatClusterAtomicRequestParams) async throws -> MTRThermostatClusterAtomicResponseParams
+```
+
+```objc
+- (void) atomicRequestWithParams:(MTRThermostatClusterAtomicRequestParams *) params completion:(void (^)(MTRThermostatClusterAtomicResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

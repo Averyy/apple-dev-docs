@@ -1,7 +1,8 @@
 # isOn
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the switch is in the on or off position.
 
@@ -17,13 +18,18 @@ A Boolean value that determines whether the switch is in the on or off position.
 var isOn: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isOn) BOOL on;
+```
+
 #### Discussion
 
-This property allows you to retrieve and set (without animation) a value determining whether the [`UISwitch`](uiswitch.md) object is on or off.
+This property allows you to retrieve and set (without animation) a value determining whether the [`UISwitch`](../uiswitch.md) object is on or off.
 
 ## See Also
 
-- [func setOn(Bool, animated: Bool)](uiswitch/seton(_:animated:).md)
+### Setting the on/off state
+- [func setOn(Bool, animated: Bool)](./seton%28_,animated%29.md)
   Sets the state of the switch to the on or off position, optionally animating the transition.
 
 

@@ -1,7 +1,8 @@
 # kAXMisspelledTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CFBooleanRef` value that indicates whether the text is misspelled.
 
@@ -12,6 +13,10 @@ A `CFBooleanRef` value that indicates whether the text is misspelled.
 
 ```swift
 var kAXMisspelledTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXMisspelledTextAttribute;
 ```
 
 #### Discussion

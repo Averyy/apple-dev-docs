@@ -1,7 +1,8 @@
 # init(type:value:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new handle of a given type with the specified value.
 
@@ -16,6 +17,10 @@ Initializes a new handle of a given type with the specified value.
 
 ```swift
 init(type: CXHandle.HandleType, value: String)
+```
+
+```objc
+- (instancetype) initWithType:(CXHandleType) type value:(NSString *) value;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # openDatabase
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 4.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 Database? openDatabase(
     DOMString name, 
     DOMString version, 

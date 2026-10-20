@@ -1,7 +1,8 @@
 # NFCFeliCaRequestSpecificationVersionResponse
 
 **Framework**: Core NFC  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 14.0+
@@ -17,10 +18,10 @@ struct NFCFeliCaRequestSpecificationVersionResponse
 ## Topics
 
 ### Instance Properties
-- [var basicVersion: Data?](nfcfelicarequestspecificationversionresponse/basicversion.md)
-- [var optionVersion: Data?](nfcfelicarequestspecificationversionresponse/optionversion.md)
-- [var statusFlag1: Int](nfcfelicarequestspecificationversionresponse/statusflag1.md)
-- [var statusFlag2: Int](nfcfelicarequestspecificationversionresponse/statusflag2.md)
+- [var basicVersion: Data?](./nfcfelicarequestspecificationversionresponse/basicversion.md)
+- [var optionVersion: Data?](./nfcfelicarequestspecificationversionresponse/optionversion.md)
+- [var statusFlag1: Int](./nfcfelicarequestspecificationversionresponse/statusflag1.md)
+- [var statusFlag2: Int](./nfcfelicarequestspecificationversionresponse/statusflag2.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # enable_if_t
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 typedef enable_if<value-parameter-0-0, type-parameter-0-1>::type enable_if_t;
 ```
 

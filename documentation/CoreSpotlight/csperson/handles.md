@@ -1,7 +1,8 @@
 # handles
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of contact handles related to the person.
 
@@ -18,17 +19,22 @@ An array of contact handles related to the person.
 var handles: [String] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSString *> * handles;
+```
+
 #### Discussion
 
-Contact handles can include phone numbers, email addresses, and URLs. For additional contact handles, see Metadata Keys in [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact).
+Contact handles can include phone numbers, email addresses, and URLs. For additional contact handles, see Metadata Keys in [`CNContact`](../../Contacts/cncontact.md).
 
 ## See Also
 
-- [var contactIdentifier: String?](csperson/contactidentifier.md)
+### Accessing person properties
+- [var contactIdentifier: String?](./contactidentifier.md)
   The identifier for the contact associated with the person.
-- [var displayName: String?](csperson/displayname.md)
+- [var displayName: String?](./displayname.md)
   A display name for the person.
-- [var handleIdentifier: String](csperson/handleidentifier.md)
+- [var handleIdentifier: String](./handleidentifier.md)
   A key that identifies the type of contact property represented by the person object’s handle.
 
 

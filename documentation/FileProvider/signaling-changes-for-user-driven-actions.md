@@ -1,6 +1,7 @@
 # Signaling Changes for User-Driven Actions
 
-**Framework**: File Provider
+**Framework**: File Provider  
+**Role**: Article
 
 Signal the system about any changes created by an action.
 
@@ -18,13 +19,13 @@ For any action, follow these steps:
 4. If the action adds items to the working set (or removes them), signal the working set.
 5. If the item’s parent is in the working set, and the action adds or removes items from the parent, signal the working set.
 
-Signal the change by calling the [`NSFileProviderManager`](nsfileprovidermanager.md) class’s [`signalEnumerator(for:completionHandler:)`](nsfileprovidermanager/signalenumerator(for:completionhandler:).md) method and passing in the proper identifier. For the working set, use the workingSet identifier.
+Signal the change by calling the [`NSFileProviderManager`](./nsfileprovidermanager.md) class’s [`signalEnumerator(for:completionHandler:)`](./nsfileprovidermanager/signalenumerator%28for,completionhandler%29.md) method and passing in the proper identifier. For the working set, use the workingSet identifier.
 
-After the system is alerted to the change, it calls [`enumerateChanges(for:from:)`](nsfileproviderenumerator/enumeratechanges(for:from:).md) on any active enumerations that are affected and updates the browser’s user interface as needed.
+After the system is alerted to the change, it calls [`enumerateChanges(for:from:)`](./nsfileproviderenumerator/enumeratechanges%28for,from%29.md) on any active enumerations that are affected and updates the browser’s user interface as needed.
 
 > **Note**:  You can signal changes for an item even if it doesn’t have an active enumerator. In that case, the system logs a warning but otherwise ignores the signal.
 
-For more information, see [`Tracking Your File Provider’s Changes`](tracking-your-file-provider-s-changes.md).
+For more information, see [Tracking Your File Provider’s Changes](./tracking-your-file-provider-s-changes.md).
 
 
 ---

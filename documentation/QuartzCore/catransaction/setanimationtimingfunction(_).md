@@ -1,7 +1,8 @@
 # setAnimationTimingFunction(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the timing function used for all animations within this transaction group.
 
@@ -19,9 +20,13 @@ Sets the timing function used for all animations within this transaction group.
 class func setAnimationTimingFunction(_ function: CAMediaTimingFunction?)
 ```
 
+```objc
++ (void) setAnimationTimingFunction:(CAMediaTimingFunction *) function;
+```
+
 #### Discussion
 
-This is a convenience method that sets the [`CAMediaTimingFunction`](camediatimingfunction.md) for the [`value(forKey:)`](catransaction/value(forkey:).md) value of  the  [`kCATransactionAnimationTimingFunction`](kcatransactionanimationtimingfunction.md) key.
+This is a convenience method that sets the [`CAMediaTimingFunction`](../camediatimingfunction.md) for the [`value(forKey:)`](./value%28forkey%29.md) value of  the  [`kCATransactionAnimationTimingFunction`](../kcatransactionanimationtimingfunction.md) key.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ This is a convenience method that sets the [`CAMediaTimingFunction`](camediatimi
 
 ## See Also
 
-- [class func animationDuration() -> CFTimeInterval](catransaction/animationduration.md)
+### Overriding Animation Duration and Timing
+- [class func animationDuration() -> CFTimeInterval](./animationduration%28%29.md)
   Returns the animation duration used by all animations within this transaction group.
-- [class func setAnimationDuration(CFTimeInterval)](catransaction/setanimationduration(_:).md)
+- [class func setAnimationDuration(CFTimeInterval)](./setanimationduration%28_%29.md)
   Sets the animation duration used by all animations within this transaction group.
-- [class func animationTimingFunction() -> CAMediaTimingFunction?](catransaction/animationtimingfunction.md)
+- [class func animationTimingFunction() -> CAMediaTimingFunction?](./animationtimingfunction%28%29.md)
   Returns the timing function used for all animations within this transaction group.
 
 

@@ -1,7 +1,8 @@
 # windowToolbarLabelStyle(fixed:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the label style of items in a toolbar.
 
@@ -23,7 +24,7 @@ func windowToolbarLabelStyle(fixed: ToolbarLabelStyle) -> some Scene
 
 #### Discussion
 
-Use this modifier to set a static [`ToolbarLabelStyle`](toolbarlabelstyle.md) the toolbar should use. The style will not be configurable by the user.
+Use this modifier to set a static [`ToolbarLabelStyle`](../toolbarlabelstyle.md) the toolbar should use. The style will not be configurable by the user.
 
 ```swift
     @main
@@ -46,11 +47,12 @@ Use this modifier to set a static [`ToolbarLabelStyle`](toolbarlabelstyle.md) th
 
 ## See Also
 
-- [func windowToolbarStyle<S>(S) -> some Scene](scene/windowtoolbarstyle(_:).md)
+### Styling the associated toolbar
+- [func windowToolbarStyle<S>(S) -> some Scene](./windowtoolbarstyle%28_%29.md)
   Sets the style for the toolbar defined within this scene.
-- [func windowToolbarLabelStyle(Binding<ToolbarLabelStyle>) -> some Scene](scene/windowtoolbarlabelstyle(_:).md)
+- [func windowToolbarLabelStyle(Binding<ToolbarLabelStyle>) -> some Scene](./windowtoolbarlabelstyle%28_%29.md)
   Sets the label style of items in a toolbar and enables user customization.
-- [protocol WindowToolbarStyle](windowtoolbarstyle.md)
+- [protocol WindowToolbarStyle](../windowtoolbarstyle.md)
   A specification for the appearance and behavior of a window’s toolbar.
 
 

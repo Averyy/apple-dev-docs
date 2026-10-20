@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind.mapperArgument
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Mapper-argument path. Legacy USD syntax retained for classifying paths parsed from older USDA data.
 

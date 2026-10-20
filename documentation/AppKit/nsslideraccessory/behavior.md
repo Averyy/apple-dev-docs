@@ -1,7 +1,8 @@
 # behavior
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The effect on interaction with the accessory.
 
@@ -18,13 +19,18 @@ The effect on interaction with the accessory.
 var behavior: NSSliderAccessoryBehavior { get set }
 ```
 
+```objc
+@property (copy) NSSliderAccessoryBehavior * behavior;
+```
+
 #### Discussion
 
 The default value is `automaticBehavior`.
 
 ## See Also
 
-- [var isEnabled: Bool](nsslideraccessory/isenabled.md)
+### Instance Properties
+- [var isEnabled: Bool](./isenabled.md)
   Determines whether or not the accessory is interactive and draws with an enabled appearance. Defaults to `true`.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mach_core_details_v2 {
     ...
 };
@@ -17,10 +17,10 @@ struct mach_core_details_v2 {
 ## Topics
 
 ### Instance Properties
-- [core_name](mach_core_details_v2/3753700-core_name.md)
-- [flags](mach_core_details_v2/3753701-flags.md)
-- [length](mach_core_details_v2/3753702-length.md)
-- [offset](mach_core_details_v2/3753703-offset.md)
+- [core_name](./mach_core_details_v2/api-3753700-core_name.md)
+- [flags](./mach_core_details_v2/api-3753701-flags.md)
+- [length](./mach_core_details_v2/api-3753702-length.md)
+- [offset](./mach_core_details_v2/api-3753703-offset.md)
 
 
 ---

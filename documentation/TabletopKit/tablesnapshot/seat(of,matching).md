@@ -1,7 +1,8 @@
 # seat(of:matching:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 2.0+
@@ -14,15 +15,16 @@ func seat<S>(of type: S.Type, matching seatID: TableSeatIdentifier) -> (S, S.Sta
 
 ## See Also
 
-- [var turn: Set<TableSeatIdentifier>](tablesnapshot/turn.md)
-- [var seats: [any TableSeat]](tablesnapshot/seats.md)
-- [var seatIDs: [TableSeatIdentifier]](tablesnapshot/seatids.md)
-- [func seat<S>(of: S.Type, for: Player) -> (S, S.State)?](tablesnapshot/seat(of:for:).md)
-- [func seats<S>(of: S.Type) -> [(S, S.State)]](tablesnapshot/seats(of:).md)
-- [func state<E>(for: E) -> E.State](tablesnapshot/state(for:).md)
-- [func state(matching: TableSeatIdentifier) -> (any SeatState)?](tablesnapshot/state(matching:)-ear2.md)
-- [func entity(forSeat: some EntityTableSeat) -> Entity?](tablesnapshot/entity(forseat:).md)
-- [func entity(matching: TableSeatIdentifier) -> Entity?](tablesnapshot/entity(matching:)-7ps7s.md)
+### Getting information on seats
+- [var turn: Set<TableSeatIdentifier>](./turn.md)
+- [var seats: [any TableSeat]](./seats.md)
+- [var seatIDs: [TableSeatIdentifier]](./seatids.md)
+- [func seat<S>(of: S.Type, for: Player) -> (S, S.State)?](./seat%28of,for%29.md)
+- [func seats<S>(of: S.Type) -> [(S, S.State)]](./seats%28of%29.md)
+- [func state<E>(for: E) -> E.State](./state%28for%29.md)
+- [func state(matching: TableSeatIdentifier) -> (any SeatState)?](./state%28matching%29-ear2.md)
+- [func entity(forSeat: some EntityTableSeat) -> Entity?](./entity%28forseat%29.md)
+- [func entity(matching: TableSeatIdentifier) -> Entity?](./entity%28matching%29-7ps7s.md)
 
 
 ---

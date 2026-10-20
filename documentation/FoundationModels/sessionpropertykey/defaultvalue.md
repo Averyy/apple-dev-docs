@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The default value of the property key.
@@ -22,7 +23,8 @@ static var defaultValue: Self.Value { get }
 
 ## See Also
 
-- [associatedtype Value](sessionpropertykey/value.md)
+### Inspecting a property key
+- [associatedtype Value](./value.md)
   The type of value that represent this property key.
 
 

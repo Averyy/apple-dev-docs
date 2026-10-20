@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a time series classifier model to a sequence of examples.
 
@@ -34,7 +35,8 @@ The training process partitions the input into random batches according to the b
 
 ## See Also
 
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](timeseriesclassifier/fitted(to:validateon:eventhandler:).md)
+### Fitting a time series classifier
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, Label>>, eventHandler: EventHandler?) async throws -> TimeSeriesClassifier<Scalar, Label>.Model](./fitted%28to,validateon,eventhandler%29.md)
   Fits a time series classifier model to a sequence of examples.
 
 

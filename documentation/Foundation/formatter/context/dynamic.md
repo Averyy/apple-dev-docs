@@ -1,7 +1,8 @@
 # Formatter.Context.dynamic
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A formatting context determined automatically at runtime.
 
@@ -20,23 +21,28 @@ A formatting context determined automatically at runtime.
 case dynamic
 ```
 
+```c
+NSFormattingContextDynamic
+```
+
 #### Discussion
 
-A [`Formatter.Context.dynamic`](formatter/context/dynamic.md) context is automatically determined to be one of the following: [`Formatter.Context.standalone`](formatter/context/standalone.md), [`Formatter.Context.beginningOfSentence`](formatter/context/beginningofsentence.md), or [`Formatter.Context.middleOfSentence`](formatter/context/middleofsentence.md).
+A [`Formatter.Context.dynamic`](./dynamic.md) context is automatically determined to be one of the following: [`Formatter.Context.standalone`](./standalone.md), [`Formatter.Context.beginningOfSentence`](./beginningofsentence.md), or [`Formatter.Context.middleOfSentence`](./middleofsentence.md).
 
-When used in combination with [`stringWithFormat:`](nsstring/stringwithformat:.md), the formatter returns a string proxy, formats the string using [`Formatter.Context.unknown`](formatter/context/unknown.md), determines context based on the proxy string’s location, and then reformats the string accordingly.
+When used in combination with [`stringWithFormat:`](../../nsstring/stringwithformat_.md), the formatter returns a string proxy, formats the string using [`Formatter.Context.unknown`](./unknown.md), determines context based on the proxy string’s location, and then reformats the string accordingly.
 
 ## See Also
 
-- [Formatter.Context.unknown](formatter/context/unknown.md)
+### Constants
+- [Formatter.Context.unknown](./unknown.md)
   An unknown formatting context.
-- [Formatter.Context.standalone](formatter/context/standalone.md)
+- [Formatter.Context.standalone](./standalone.md)
   The formatting context for stand-alone usage.
-- [Formatter.Context.listItem](formatter/context/listitem.md)
+- [Formatter.Context.listItem](./listitem.md)
   The formatting context for a list or menu item.
-- [Formatter.Context.beginningOfSentence](formatter/context/beginningofsentence.md)
+- [Formatter.Context.beginningOfSentence](./beginningofsentence.md)
   The formatting context for the beginning of a sentence.
-- [Formatter.Context.middleOfSentence](formatter/context/middleofsentence.md)
+- [Formatter.Context.middleOfSentence](./middleofsentence.md)
   The formatting context for the middle of a sentence.
 
 

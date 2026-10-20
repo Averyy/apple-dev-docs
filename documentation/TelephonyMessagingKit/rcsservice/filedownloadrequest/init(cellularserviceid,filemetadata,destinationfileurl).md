@@ -1,7 +1,8 @@
 # init(cellularServiceID:fileMetadata:destinationFileURL:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a download request instance.
 
@@ -26,7 +27,8 @@ Use this initializer when downloading end-to-end encrypted files.
 
 ## See Also
 
-- [init(cellularServiceID: CellularServiceID, fileURL: URL, destinationFileURL: URL)](rcsservice/filedownloadrequest/init(cellularserviceid:fileurl:destinationfileurl:).md)
+### Creating a download request
+- [init(cellularServiceID: CellularServiceID, fileURL: URL, destinationFileURL: URL)](./init%28cellularserviceid,fileurl,destinationfileurl%29.md)
   Creates a download request instance.
 
 

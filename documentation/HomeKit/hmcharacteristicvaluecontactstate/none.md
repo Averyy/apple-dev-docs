@@ -1,7 +1,8 @@
 # HMCharacteristicValueContactState.none
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Contact is not detected.
 
@@ -19,9 +20,14 @@ Contact is not detected.
 case none
 ```
 
+```c
+HMCharacteristicValueContactStateNone
+```
+
 ## See Also
 
-- [HMCharacteristicValueContactState.detected](hmcharacteristicvaluecontactstate/detected.md)
+### Contact Sensor State
+- [HMCharacteristicValueContactState.detected](./detected.md)
   Contact is detected.
 
 

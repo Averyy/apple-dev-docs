@@ -1,7 +1,8 @@
 # replyThreadIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional string that identifies another message in a conversation, when this entry is a reply to that message.
 
@@ -16,13 +17,18 @@ An optional string that identifies another message in a conversation, when this 
 var replyThreadIdentifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * replyThreadIdentifier;
+```
+
 #### Discussion
 
 When an entry is a reply to another conversation entry, this contains the identifier of the conversation entry that the person replied to.
 
 ## See Also
 
-- [var entryIdentifier: String](uiconversationcontext/entry/entryidentifier.md)
+### Identifying the entry
+- [var entryIdentifier: String](./entryidentifier.md)
   A string that uniquely identifies this specific entry in the conversation.
 
 

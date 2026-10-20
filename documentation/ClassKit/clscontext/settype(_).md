@@ -1,7 +1,8 @@
 # setType(_:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the kind of content that a context represents.
 
@@ -18,9 +19,13 @@ Updates the kind of content that a context represents.
 func setType(_ type: CLSContextType)
 ```
 
+```objc
+- (void) setType:(CLSContextType) type;
+```
+
 #### Discussion
 
-Use this method to change the [`type`](clscontext/type.md) property of a context that you’ve already created.
+Use this method to change the [`type`](./type.md) property of a context that you’ve already created.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ Use this method to change the [`type`](clscontext/type.md) property of a context
 
 ## See Also
 
-- [var type: CLSContextType](clscontext/type.md)
+### Managing the context type
+- [var type: CLSContextType](./type.md)
   The kind of content a context represents.
-- [enum CLSContextType](clscontexttype.md)
+- [enum CLSContextType](../clscontexttype.md)
   The kinds of assignable content a context can contain.
-- [var customTypeName: String?](clscontext/customtypename.md)
+- [var customTypeName: String?](./customtypename.md)
   An optional name that the system presents to the user if you choose the custom context type.
 
 

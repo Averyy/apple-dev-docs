@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueue.Relationships.RuleSet
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The rule set associated with the queue.
 
@@ -10,14 +11,14 @@ The rule set associated with the queue.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueue.Relationships.RuleSet
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingQueue.Relationships.RuleSet.Data](gamecentermatchmakingqueue/relationships-data.dictionary/ruleset-data.dictionary/data-data.dictionary.md)
+- [object GameCenterMatchmakingQueue.Relationships.RuleSet.Data](./ruleset-data.dictionary/data-data.dictionary.md)
   The data structure for the rule set.
 
 ## Properties
@@ -26,7 +27,8 @@ object GameCenterMatchmakingQueue.Relationships.RuleSet
 
 ## See Also
 
-- [object GameCenterMatchmakingQueue.Relationships.ExperimentRuleSet](gamecentermatchmakingqueue/relationships-data.dictionary/experimentruleset-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingQueue.Relationships.ExperimentRuleSet](./experimentruleset-data.dictionary.md)
   An experimental rule set for testing this queue.
 
 

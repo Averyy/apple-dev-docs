@@ -2,22 +2,27 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The height, in pixels, of the morphological structuring element.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var height: Float { get set }
+```
+
+```objc
+@property (nonatomic) float height;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ The value is rounded to the nearest odd integer.
 
 ## See Also
 
-- [var inputImage: CIImage?](cimorphologyrectanglemaximum/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var width: Float](cimorphologyrectanglemaximum/width.md)
+- [var width: Float](./width.md)
   The width, in pixels, of the morphological structuring element.
 
 

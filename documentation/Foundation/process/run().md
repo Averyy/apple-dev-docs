@@ -1,7 +1,8 @@
 # run()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the process with the current environment.
 
@@ -14,17 +15,22 @@ Runs the process with the current environment.
 func run() throws
 ```
 
+```objc
+- (BOOL) launchAndReturnError:(NSError **) error;
+```
+
 ## See Also
 
-- [func interrupt()](process/interrupt.md)
+### Running and stopping
+- [func interrupt()](./interrupt%28%29.md)
   Sends an interrupt signal to the receiver and all of its subtasks.
-- [func resume() -> Bool](process/resume.md)
+- [func resume() -> Bool](./resume%28%29.md)
   Resumes execution of a suspended task.
-- [func suspend() -> Bool](process/suspend.md)
+- [func suspend() -> Bool](./suspend%28%29.md)
   Suspends execution of the receiver task.
-- [func terminate()](process/terminate.md)
+- [func terminate()](./terminate%28%29.md)
   Sends a terminate signal to the receiver and all of its subtasks.
-- [func waitUntilExit()](process/waituntilexit.md)
+- [func waitUntilExit()](./waituntilexit%28%29.md)
   Blocks the process until the receiver is finished.
 
 

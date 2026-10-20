@@ -1,10 +1,11 @@
 # kAudioUnitProperty_AddParameterMIDIMapping
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kAudioUnitProperty_AddParameterMIDIMapping: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitProperty_AddParameterMIDIMapping
+```
+
 ## See Also
 
-- [var kAudioUnitProperty_AllParameterMIDIMappings: AudioUnitPropertyID](kaudiounitproperty_allparametermidimappings.md)
-- [var kAudioUnitProperty_HotMapParameterMIDIMapping: AudioUnitPropertyID](kaudiounitproperty_hotmapparametermidimapping.md)
-- [var kAudioUnitProperty_RemoveParameterMIDIMapping: AudioUnitPropertyID](kaudiounitproperty_removeparametermidimapping.md)
+### Constants
+- [var kAudioUnitProperty_AllParameterMIDIMappings: AudioUnitPropertyID](./kaudiounitproperty_allparametermidimappings.md)
+- [var kAudioUnitProperty_HotMapParameterMIDIMapping: AudioUnitPropertyID](./kaudiounitproperty_hotmapparametermidimapping.md)
+- [var kAudioUnitProperty_RemoveParameterMIDIMapping: AudioUnitPropertyID](./kaudiounitproperty_removeparametermidimapping.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom item with the specified frame.
 
@@ -14,9 +15,14 @@ Creates a custom item with the specified frame.
 convenience init(frame: NSRect)
 ```
 
+```objc
++ (instancetype) customItemWithFrame:(NSRect) frame;
+```
+
 ## See Also
 
-- [convenience init(frame: NSRect, zIndex: Int)](nscollectionlayoutgroupcustomitem/init(frame:zindex:).md)
+### Creating a custom item
+- [convenience init(frame: NSRect, zIndex: Int)](./init%28frame,zindex%29.md)
   Creates a custom item with the specified frame and vertical stacking order in relation to other items in the group.
 
 

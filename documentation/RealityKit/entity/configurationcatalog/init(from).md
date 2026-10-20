@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads a configuration catalog from a USD or reality file.
 
@@ -23,7 +24,7 @@ init(from url: URL) async throws
 
 This method parses a USD or `.reality` file, and provides a collection of available configurations based on USD variant sets or `.reality` file configurations. It doesn’t load large asset files, such as textures and meshes.
 
-You can load an entity, and its assets, with configuration choices by calling [`init(from:configurations:)`](entity/init(from:configurations:).md).
+You can load an entity, and its assets, with configuration choices by calling [`init(from:configurations:)`](../init%28from,configurations%29.md).
 
 ## Parameters
 

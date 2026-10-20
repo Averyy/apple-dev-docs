@@ -1,10 +1,11 @@
 # init(address:name:serviceClassMajor:deviceClassMajor:deviceClassMinor:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

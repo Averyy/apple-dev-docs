@@ -1,7 +1,8 @@
 # matches(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a collection containing all matches of the specified regex.
 
@@ -19,6 +20,8 @@ Returns a collection containing all matches of the specified regex.
 ```swift
 func matches<Output>(of r: some RegexComponent) -> [Regex<Output>.Match]
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

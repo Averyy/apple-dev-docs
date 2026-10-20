@@ -1,7 +1,8 @@
 # relative(dBSPL:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Relative adjustment of the resource from the default level of the audio output hardware.
 

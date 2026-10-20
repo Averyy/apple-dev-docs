@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object represented by the dock tile.
 
@@ -14,9 +15,14 @@ The object represented by the dock tile.
 weak var owner: AnyObject? { get }
 ```
 
+```objc
+@property (weak, readonly) id owner;
+```
+
 ## See Also
 
-- [var size: NSSize](nsdocktile/size.md)
+### Getting the Tile Information
+- [var size: NSSize](./size.md)
   The size of the tile.
 
 

@@ -1,7 +1,8 @@
 # items(for:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the items in the given operation’s slot.
 

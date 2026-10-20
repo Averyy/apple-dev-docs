@@ -1,7 +1,8 @@
 # suspensionReasonsDidChangeNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that the coordinator posts when its suspension reasons change.
 
@@ -19,9 +20,14 @@ A notification that the coordinator posts when its suspension reasons change.
 class let suspensionReasonsDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVPlaybackCoordinatorSuspensionReasonsDidChangeNotification;
+```
+
 ## See Also
 
-- [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](avplaybackcoordinator/suspensionreasons.md)
+### Observing suspension reasons
+- [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](./suspensionreasons.md)
   The reasons a coordinator is currently unable to participate in a group playback activity.
 
 

@@ -1,7 +1,8 @@
 # r_pcrel
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Indicates whether the item containing the address to be relocated is part of a CPU instruction that uses PC-relative addressing.
 
@@ -10,7 +11,7 @@ Indicates whether the item containing the address to be relocated is part of a C
 
 ## Declaration
 
-```swift
+```c
 uint32_t r_pcrel:1;
 ```
 

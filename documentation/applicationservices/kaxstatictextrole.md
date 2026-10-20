@@ -1,7 +1,8 @@
 # kAXStaticTextRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A string of static text displayed in a window that is not part of any control.
 
@@ -12,6 +13,10 @@ A string of static text displayed in a window that is not part of any control.
 
 ```swift
 var kAXStaticTextRole: String { get }
+```
+
+```c
+#define kAXStaticTextRole
 ```
 
 

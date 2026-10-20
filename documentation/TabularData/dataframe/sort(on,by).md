@@ -1,7 +1,8 @@
 # sort(on:by:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Arranges the rows of a data frame according to a column that you select by its column identifier, with a predicate.
 
@@ -31,17 +32,18 @@ mutating func sort<T>(on columnID: ColumnID<T>, by areInIncreasingOrder: (T, T) 
 
 ## See Also
 
-- [func sort(on: String, order: Order)](dataframe/sort(on:order:)-4vns7.md)
+### Sorting a Data Frame
+- [func sort(on: String, order: Order)](./sort%28on,order%29-4vns7.md)
   Arranges the rows of a data frame according to a column that you select by its name.
-- [func sort<T>(on: String, T.Type, order: Order)](dataframe/sort(on:_:order:)-78avw.md)
+- [func sort<T>(on: String, T.Type, order: Order)](./sort%28on,_,order%29-78avw.md)
   Arranges the rows of a data frame according to a column that you select by its name and type.
-- [func sort<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows](dataframe/sort(on:_:by:).md)
+- [func sort<T>(on: String, T.Type, by: (T, T) throws -> Bool) rethrows](./sort%28on,_,by%29.md)
   Arranges the rows of a data frame according to a column that you select by its name and type, with a predicate.
-- [func sort<T>(on: ColumnID<T>, order: Order)](dataframe/sort(on:order:)-5ep7w.md)
+- [func sort<T>(on: ColumnID<T>, order: Order)](./sort%28on,order%29-5ep7w.md)
   Arranges the rows of a data frame according to a column that you select by its column identifier.
-- [func sort<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, order: Order)](dataframe/sort(on:_:order:)-8wrkl.md)
+- [func sort<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, order: Order)](./sort%28on,_,order%29-8wrkl.md)
   Arranges the rows of a data frame according to two columns that you select by their column identifiers.
-- [func sort<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order)](dataframe/sort(on:_:_:order:).md)
+- [func sort<T0, T1, T2>(on: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>, order: Order)](./sort%28on,_,_,order%29.md)
   Arranges the rows of a data frame according to three columns that you select by their column identifiers.
 
 

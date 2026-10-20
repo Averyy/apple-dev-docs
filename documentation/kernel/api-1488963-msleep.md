@@ -1,14 +1,15 @@
 # msleep
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int msleep(void *chan, lck_mtx_t *mtx, int pri, const char *wmesg, struct timespec *ts);
 ```
 

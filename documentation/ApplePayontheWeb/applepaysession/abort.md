@@ -1,7 +1,8 @@
 # abort
 
 **Framework**: Apple Pay on the Web  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Aborts the current Apple Pay session.
 
@@ -11,17 +12,18 @@ Aborts the current Apple Pay session.
 
 ## Declaration
 
-```swift
+```
 undefined abort();
 ```
 
 #### Discussion
 
-Dismisses the payment sheet and ends the Apple Pay session without completing a transaction. Only the web page can call [`abort`](applepaysession/abort.md).
+Dismisses the payment sheet and ends the Apple Pay session without completing a transaction. Only the web page can call [`abort`](./abort.md).
 
 ## See Also
 
-- [oncancel](applepaysession/oncancel.md)
+### Ending the session
+- [oncancel](./oncancel.md)
   An event handler that is automatically called when the payment UI is dismissed.
 
 

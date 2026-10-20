@@ -1,6 +1,7 @@
 # Controlling Actions Precisely by Using Names
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Set an action’s name property so you can access it later without needing an instance variable.
 
@@ -31,13 +32,13 @@ SKAction *moveNodeRight = [SKAction moveByX:100.0 y:0.0 duration:1.0];
 
 The following key-based methods are available:
 
-- [`run(_:withKey:)`](sknode/run(_:withkey:).md) method to run the action. If an action with the same key is already executing, it is removed before the new action is added.
-- [`action(forKey:)`](sknode/action(forkey:).md) method to determine if an action with that key is already running.
-- [`removeAction(forKey:)`](sknode/removeaction(forkey:).md) method to remove the action.
+- [`run(_:withKey:)`](./sknode/run%28_,withkey%29.md) method to run the action. If an action with the same key is already executing, it is removed before the new action is added.
+- [`action(forKey:)`](./sknode/action%28forkey%29.md) method to determine if an action with that key is already running.
+- [`removeAction(forKey:)`](./sknode/removeaction%28forkey%29.md) method to remove the action.
 
-##### Find and Replace an in Flight Action
+##### Find and Replace an In-Flight Action
 
-The code below shows how you use a name to replace an action that’s currently running. The code determines where a mouse click occurred and then runs an action that moves a sprite to the click location. The action duration is calculated ahead of time to move the sprite at a fixed speed. Because this code uses [`run(_:withKey:)`](sknode/run(_:withkey:).md), any previous move that’s still executing is stopped and replaced by the new action with the same name.
+The code below shows how you use a name to replace an action that’s currently running. The code determines where a mouse click occurred and then runs an action that moves a sprite to the click location. The action duration is calculated ahead of time to move the sprite at a fixed speed. Because this code uses [`run(_:withKey:)`](./sknode/run%28_,withkey%29.md), any previous move that’s still executing is stopped and replaced by the new action with the same name.
 
 ```swift
 override func mouseDown(with event: NSEvent) {

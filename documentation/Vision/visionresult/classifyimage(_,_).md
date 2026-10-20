@@ -1,7 +1,8 @@
 # VisionResult.classifyImage(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a classify image request.
 

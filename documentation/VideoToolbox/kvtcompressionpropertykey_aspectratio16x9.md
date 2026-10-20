@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_AspectRatio16x9
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether the DV video stream should have the 16x9 flag set.
 
@@ -19,6 +20,10 @@ A Boolean value indicating whether the DV video stream should have the 16x9 flag
 let kVTCompressionPropertyKey_AspectRatio16x9: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_AspectRatio16x9;
+```
+
 #### Discussion
 
 This property is supported by the DV25/50 family of encoders.
@@ -27,15 +32,16 @@ When false, the picture aspect ratio is 4:3. When true, the picture aspect ratio
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_CleanAperture: CFString](kvtcompressionpropertykey_cleanaperture.md)
+### Clean Aperture and Pixel Aspect Ratio
+- [let kVTCompressionPropertyKey_CleanAperture: CFString](./kvtcompressionpropertykey_cleanaperture.md)
   The clean aperture for encoded frames.
-- [let kVTCompressionPropertyKey_FieldCount: CFString](kvtcompressionpropertykey_fieldcount.md)
+- [let kVTCompressionPropertyKey_FieldCount: CFString](./kvtcompressionpropertykey_fieldcount.md)
   The field count indicating whether the frames should be encoded progressive (1) or interlaced (2).
-- [let kVTCompressionPropertyKey_FieldDetail: CFString](kvtcompressionpropertykey_fielddetail.md)
+- [let kVTCompressionPropertyKey_FieldDetail: CFString](./kvtcompressionpropertykey_fielddetail.md)
   Field ordering for encoded interlaced frames.
-- [let kVTCompressionPropertyKey_PixelAspectRatio: CFString](kvtcompressionpropertykey_pixelaspectratio.md)
+- [let kVTCompressionPropertyKey_PixelAspectRatio: CFString](./kvtcompressionpropertykey_pixelaspectratio.md)
   The pixel aspect ratio for encoded frames.
-- [let kVTCompressionPropertyKey_ProgressiveScan: CFString](kvtcompressionpropertykey_progressivescan.md)
+- [let kVTCompressionPropertyKey_ProgressiveScan: CFString](./kvtcompressionpropertykey_progressivescan.md)
   A Boolean value indicating whether the DV video stream should have the progressive flag set.
 
 

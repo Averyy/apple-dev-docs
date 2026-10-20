@@ -1,7 +1,8 @@
 # Product.PurchaseOption.SubscriptionRenewalBehavior.cancelImmediately
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A subscription-renewal behavior in the testing environment that cancels the subscription, resulting in only one subscription period.
 
@@ -25,7 +26,8 @@ Choose this option for test cases that require an auto-renewable subscription th
 
 ## See Also
 
-- [Product.PurchaseOption.SubscriptionRenewalBehavior.renewUntilNow](product/purchaseoption/subscriptionrenewalbehavior/renewuntilnow.md)
+### Renewal behaviors in the testing environment
+- [Product.PurchaseOption.SubscriptionRenewalBehavior.renewUntilNow](./renewuntilnow.md)
   A subscription-renewal behavior in the testing environment that allows the subscription to renew continuously, up to the current date.
 
 

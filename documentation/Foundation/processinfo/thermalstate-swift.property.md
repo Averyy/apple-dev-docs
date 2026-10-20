@@ -1,7 +1,8 @@
 # thermalState
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current thermal state of the system.
 
@@ -20,13 +21,18 @@ The current thermal state of the system.
 var thermalState: ProcessInfo.ThermalState { get }
 ```
 
+```objc
+@property (readonly) NSProcessInfoThermalState thermalState;
+```
+
 #### Discussion
 
-At higher thermal states your app should reduce usage of system resources. For more information, see [`ProcessInfo.ThermalState`](processinfo/thermalstate-swift.enum.md).
+At higher thermal states your app should reduce usage of system resources. For more information, see [`ProcessInfo.ThermalState`](./thermalstate-swift.enum.md).
 
 ## See Also
 
-- [ProcessInfo.ThermalState](processinfo/thermalstate-swift.enum.md)
+### Getting the thermal state
+- [ProcessInfo.ThermalState](./thermalstate-swift.enum.md)
   Values used to indicate the system’s thermal state.
 
 

@@ -1,7 +1,8 @@
 # FinanceStore.BackgroundDataType
 
 **Framework**: FinanceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of data in the finance store supported by background delivery.
 
@@ -23,32 +24,33 @@ When these types of data change in the finance store, any background delivery ex
 ## Topics
 
 ### Enumeration Cases
-- [FinanceStore.BackgroundDataType.accountBalances](financestore/backgrounddatatype/accountbalances.md)
+- [FinanceStore.BackgroundDataType.accountBalances](./backgrounddatatype/accountbalances.md)
   Receive updates for changes to `AccountBalance`.
-- [FinanceStore.BackgroundDataType.accounts](financestore/backgrounddatatype/accounts.md)
+- [FinanceStore.BackgroundDataType.accounts](./backgrounddatatype/accounts.md)
   Receive updates for changes to `Account`.
-- [FinanceStore.BackgroundDataType.transactions](financestore/backgrounddatatype/transactions.md)
+- [FinanceStore.BackgroundDataType.transactions](./backgrounddatatype/transactions.md)
   Receive updates for changes to `Transaction`.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FinanceStore.ContainsOrderResult](financestore/containsorderresult.md)
+### Enumerations
+- [FinanceStore.ContainsOrderResult](./containsorderresult.md)
   Result type for queries against the finance store’s orders.
-- [FinanceStore.DataType](financestore/datatype.md)
+- [FinanceStore.DataType](./datatype.md)
   Values that describe the kinds of data in the finance store.
-- [FinanceStore.SaveOrderResult](financestore/saveorderresult.md)
+- [FinanceStore.SaveOrderResult](./saveorderresult.md)
   Result type for the finance store’s save order method.
-- [FinanceStore.UpdateFrequency](financestore/updatefrequency.md)
+- [FinanceStore.UpdateFrequency](./updatefrequency.md)
   Frequencies of background delivery updates.
 
 

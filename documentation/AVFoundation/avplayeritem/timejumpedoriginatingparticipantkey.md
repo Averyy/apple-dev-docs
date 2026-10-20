@@ -1,7 +1,8 @@
 # timeJumpedOriginatingParticipantKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key to retrieve a unique identifier of the participant that caused the time jump.
 
@@ -19,9 +20,13 @@ A key to retrieve a unique identifier of the participant that caused the time ju
 class let timeJumpedOriginatingParticipantKey: String
 ```
 
+```c
+extern NSString * const AVPlayerItemTimeJumpedOriginatingParticipantKey;
+```
+
 #### Discussion
 
-Use this key to retrieve a UUID value for the participant in a coordinated playback session that caused the time jump. The returned UUID reresents a value in the playback coordinator’s [`otherParticipants`](avplaybackcoordinator/otherparticipants.md) array.
+Use this key to retrieve a UUID value for the participant in a coordinated playback session that caused the time jump. The returned UUID reresents a value in the playback coordinator’s [`otherParticipants`](../avplaybackcoordinator/otherparticipants.md) array.
 
 
 ---

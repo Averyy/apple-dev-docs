@@ -1,7 +1,8 @@
 # next(_:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a command that advances to the next track in the playback queue.
 
@@ -22,7 +23,7 @@ static func next(_ action: @escaping () async throws -> Void) -> MediaCommand
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](../publishing-media-sessions.md)
 
 ## Parameters
 
@@ -30,11 +31,12 @@ static func next(_ action: @escaping () async throws -> Void) -> MediaCommand
 
 ## See Also
 
-- [static func previous(() async throws -> Void) -> MediaCommand](mediacommand/previous(_:).md)
+### Navigating commands
+- [static func previous(() async throws -> Void) -> MediaCommand](./previous%28_%29.md)
   Creates a command that returns to the previous track in the playback queue.
-- [static func skipForward(preferredIntervals: [TimeInterval], (TimeInterval) async throws -> Void) -> MediaCommand](mediacommand/skipforward(preferredintervals:_:).md)
+- [static func skipForward(preferredIntervals: [TimeInterval], (TimeInterval) async throws -> Void) -> MediaCommand](./skipforward%28preferredintervals,_%29.md)
   Creates a command that skips forward in the media by a specified time interval.
-- [static func skipBackward(preferredIntervals: [TimeInterval], (TimeInterval) async throws -> Void) -> MediaCommand](mediacommand/skipbackward(preferredintervals:_:).md)
+- [static func skipBackward(preferredIntervals: [TimeInterval], (TimeInterval) async throws -> Void) -> MediaCommand](./skipbackward%28preferredintervals,_%29.md)
   Creates a command that skips backward in the media by a specified time interval.
 
 

@@ -1,7 +1,8 @@
 # kCTFontWidthTrait
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The normalized proportion (width condense or expand) trait from the font traits dictionary.
 
@@ -20,17 +21,22 @@ The normalized proportion (width condense or expand) trait from the font traits 
 let kCTFontWidthTrait: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontWidthTrait;
+```
+
 #### Discussion
 
-This value corresponds to the relative interglyph spacing for a given font. The value returned is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object representing a float between `-1.0` and `1.0`. The value of `0.0` corresponds to regular glyph spacing, and negative values represent condensed glyph spacing.
+This value corresponds to the relative interglyph spacing for a given font. The value returned is a [`CFNumber`](../CoreFoundation/cfnumber.md) object representing a float between `-1.0` and `1.0`. The value of `0.0` corresponds to regular glyph spacing, and negative values represent condensed glyph spacing.
 
 ## See Also
 
-- [let kCTFontSymbolicTrait: CFString](kctfontsymbolictrait.md)
+### Font Trait Keys
+- [let kCTFontSymbolicTrait: CFString](./kctfontsymbolictrait.md)
   The symbolic traits value from the font traits dictionary.
-- [let kCTFontWeightTrait: CFString](kctfontweighttrait.md)
+- [let kCTFontWeightTrait: CFString](./kctfontweighttrait.md)
   The normalized weight trait from the font traits dictionary.
-- [let kCTFontSlantTrait: CFString](kctfontslanttrait.md)
+- [let kCTFontSlantTrait: CFString](./kctfontslanttrait.md)
   The normalized slant angle from the font traits dictionary.
 
 

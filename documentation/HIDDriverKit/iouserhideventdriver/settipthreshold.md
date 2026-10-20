@@ -1,22 +1,24 @@
 # setTipThreshold
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void setTipThreshold();
 ```
 
 ## See Also
 
-- [setAccelerationProperties](iouserhideventdriver/setaccelerationproperties.md)
-- [setSurfaceDimensions](iouserhideventdriver/setsurfacedimensions.md)
+### Configuring Private Properties
+- [setAccelerationProperties](./setaccelerationproperties.md)
+- [setSurfaceDimensions](./setsurfacedimensions.md)
 
 
 ---

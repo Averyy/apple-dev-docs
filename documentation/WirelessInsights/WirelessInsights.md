@@ -1,7 +1,8 @@
 # WirelessInsights
 
 **Framework**: WirelessInsights  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Receive notifications for anticipated changes in cellular data service conditions.
 
@@ -20,21 +21,21 @@ When your app receives a notification about a potential degradation of cellular 
 - Defer activity to a time when cellular conditions are better.
 - Build in additional retries.
 
-The app receives an asynchronous sequence of [`ServicePrediction`](serviceprediction.md) instances, which describe anticipated events in terms of their impact and expected timing. The prediction includes metrics indicating the level of confidence in each factor of the prediction.
+The app receives an asynchronous sequence of [`ServicePrediction`](./serviceprediction.md) instances, which describe anticipated events in terms of their impact and expected timing. The prediction includes metrics indicating the level of confidence in each factor of the prediction.
 
 Your app can take action appropriate to its use of cellular data; for example:
 
 - A streaming media app might react to a prediction of a lengthy, high-impact event by buffering media in advance of the event. Or, the app might proactively reduce its bit rate.
 - An app that performs one-time downloads of large files might defer a download until after an event passes.
 
-> ❗ **Important**: While the WirelessInsights framework exists in apps built with Mac Catalyst, it doesn’t have any functionality. Instead, iterating over the [`servicePredictions`](servicepredictionprovider/servicepredictions.md) sequence throws a [`ServicePredictionError.unsupportedDevice`](servicepredictionerror/unsupporteddevice.md) error. This behavior also occurs in iOS apps running in visionOS or in macOS on Apple silicon. On iPad, the framework may provide predictions on a cellular iPad device, but not on Wi-Fi-only devices. Anticipate this error in your app and handle it gracefully on unsupported devices.
+> ❗ **Important**: While the WirelessInsights framework exists in apps built with Mac Catalyst, it doesn’t have any functionality. Instead, iterating over the [`servicePredictions`](./servicepredictionprovider/servicepredictions.md) sequence throws a [`ServicePredictionError.unsupportedDevice`](./servicepredictionerror/unsupporteddevice.md) error. This behavior also occurs in iOS apps running in visionOS or in macOS on Apple silicon. On iPad, the framework may provide predictions on a cellular iPad device, but not on Wi-Fi-only devices. Anticipate this error in your app and handle it gracefully on unsupported devices.
 
 ## Topics
 
 ### Essentials
-- [class ServicePredictionProvider](servicepredictionprovider.md)
+- [class ServicePredictionProvider](./servicepredictionprovider.md)
   A class that provices cellular service predictions about upcoming events and anomalies.
-- [Wireless Insights Service Predictions](../bundleresources/entitlements/com.apple.developer.wireless-insights.service-predictions.md)
+- [Wireless Insights Service Predictions](../BundleResources/entitlements/com.apple.developer.wireless-insights.service-predictions.md)
   A Boolean value that indicates whether the app can use the WirelessInsights framework to obtain wireless service predictions.
 
 

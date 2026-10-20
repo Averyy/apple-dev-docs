@@ -1,7 +1,8 @@
 # ButtonStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label of a button.
 
@@ -24,11 +25,12 @@ A type-erased label of a button.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let label: ButtonStyleConfiguration.Label](buttonstyleconfiguration/label-swift.property.md)
+### Configuring a button’s label
+- [let label: ButtonStyleConfiguration.Label](./label-swift.property.md)
   A view that describes the effect of pressing the button.
 
 

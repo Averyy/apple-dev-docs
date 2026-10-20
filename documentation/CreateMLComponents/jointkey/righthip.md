@@ -1,7 +1,8 @@
 # rightHip
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with right hip joint in a body pose.
 
@@ -21,15 +22,16 @@ static let rightHip: JointKey
 
 ## See Also
 
-- [static let leftHip: JointKey](jointkey/lefthip.md)
+### Getting hip, knee, and ankle properties
+- [static let leftHip: JointKey](./lefthip.md)
   A key associated with left hip joint in a body pose.
-- [static let leftKnee: JointKey](jointkey/leftknee.md)
+- [static let leftKnee: JointKey](./leftknee.md)
   A key associated with left knee joint in a body pose.
-- [static let rightKnee: JointKey](jointkey/rightknee.md)
+- [static let rightKnee: JointKey](./rightknee.md)
   A key associated with right knee joint in a body pose.
-- [static let leftAnkle: JointKey](jointkey/leftankle.md)
+- [static let leftAnkle: JointKey](./leftankle.md)
   A key associated with left ankle joint in a body pose.
-- [static let rightAnkle: JointKey](jointkey/rightankle.md)
+- [static let rightAnkle: JointKey](./rightankle.md)
   A key associated with right ankle joint in a body pose.
 
 

@@ -1,18 +1,23 @@
 # isAutoFocusEnabled
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the device camera uses fixed focus or autofocus behavior.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 
 ## Declaration
 
 ```swift
 var isAutoFocusEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isAutoFocusEnabled) BOOL autoFocusEnabled;
 ```
 
 #### Discussion

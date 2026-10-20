@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The Objective-C type that corresponds to this key’s value type.

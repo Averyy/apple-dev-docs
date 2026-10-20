@@ -1,17 +1,22 @@
 # getL2CAPPSM(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the discovery of the L2CAP PSM assigned to the service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getL2CAPPSM(_ outPSM: UnsafeMutablePointer<BluetoothL2CAPPSM>!) -> IOReturn
+```
+
+```objc
+- (IOReturn) getL2CAPPSM:(BluetoothL2CAPPSM *) outPSM;
 ```
 
 #### Return Value

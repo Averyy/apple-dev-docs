@@ -1,7 +1,8 @@
 # errSecRejectedForm
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The trust policy has a rejected form.
 
@@ -18,6 +19,10 @@ The trust policy has a rejected form.
 
 ```swift
 var errSecRejectedForm: OSStatus { get }
+```
+
+```c
+errSecRejectedForm
 ```
 
 

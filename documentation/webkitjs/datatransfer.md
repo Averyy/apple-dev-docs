@@ -1,7 +1,8 @@
 # DataTransfer
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface DataTransfer
 ```
 
 ## Topics
 
 ### Instance Properties
-- [dropEffect](datatransfer/1634191-dropeffect.md)
-- [effectAllowed](datatransfer/1631390-effectallowed.md)
-- [files](datatransfer/1631124-files.md)
-- [types](datatransfer/1629011-types.md)
+- [dropEffect](./datatransfer/api-1634191-dropeffect.md)
+- [effectAllowed](./datatransfer/api-1631390-effectallowed.md)
+- [files](./datatransfer/api-1631124-files.md)
+- [types](./datatransfer/api-1629011-types.md)
 ### Instance Methods
-- [clearData](datatransfer/1630354-cleardata.md)
-- [getData](datatransfer/1631762-getdata.md)
-- [setData](datatransfer/1629411-setdata.md)
-- [setDragImage](datatransfer/1633088-setdragimage.md)
+- [clearData](./datatransfer/api-1630354-cleardata.md)
+- [getData](./datatransfer/api-1631762-getdata.md)
+- [setData](./datatransfer/api-1629411-setdata.md)
+- [setDragImage](./datatransfer/api-1633088-setdragimage.md)
 
 
 ---

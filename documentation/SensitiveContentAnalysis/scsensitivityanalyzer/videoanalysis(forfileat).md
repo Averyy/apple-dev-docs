@@ -1,7 +1,8 @@
 # videoAnalysis(forFileAt:)
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Analyzes a video file on disk at a URL for sensitive content.
 
@@ -28,7 +29,8 @@ An object that checks if a video contains sensitive content and provides the app
 
 ## See Also
 
-- [SCSensitivityAnalyzer.VideoAnalysisHandler](scsensitivityanalyzer/videoanalysishandler.md)
+### Analyzing video
+- [SCSensitivityAnalyzer.VideoAnalysisHandler](./videoanalysishandler.md)
   An object that checks if a video contains sensitive content and provides status updates.
 
 

@@ -1,7 +1,8 @@
 # isSelected
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the UI element is selected.
 

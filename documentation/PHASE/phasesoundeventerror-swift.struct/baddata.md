@@ -1,17 +1,18 @@
 # badData
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates a sound event contains invalid data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ static var badData: PHASESoundEventError.Code { get }
 
 ## See Also
 
-- [static var apiMisuse: PHASESoundEventError.Code](phasesoundeventerror-swift.struct/apimisuse.md)
+### Identifying an Error Cause
+- [static var apiMisuse: PHASESoundEventError.Code](./apimisuse.md)
   An error that indicates the app misconfigures data or calls the framework in unsupported succession.
-- [static var invalidInstance: PHASESoundEventError.Code](phasesoundeventerror-swift.struct/invalidinstance.md)
+- [static var invalidInstance: PHASESoundEventError.Code](./invalidinstance.md)
   An error that indicates a sound event object is no longer valid.
-- [static var notFound: PHASESoundEventError.Code](phasesoundeventerror-swift.struct/notfound.md)
+- [static var notFound: PHASESoundEventError.Code](./notfound.md)
   An error the framework throws when it fails to find a particular sound event.
-- [static var outOfMemory: PHASESoundEventError.Code](phasesoundeventerror-swift.struct/outofmemory.md)
+- [static var outOfMemory: PHASESoundEventError.Code](./outofmemory.md)
   An error the framework throws when a sound event depletes system memory.
-- [static var systemNotInitialized: PHASESoundEventError.Code](phasesoundeventerror-swift.struct/systemnotinitialized.md)
+- [static var systemNotInitialized: PHASESoundEventError.Code](./systemnotinitialized.md)
   An error the framework throws when engine initialization interrupts sound event playback.
 
 

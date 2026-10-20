@@ -1,7 +1,8 @@
 # MTRKeypair
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.1+
@@ -18,22 +19,26 @@
 protocol MTRKeypair : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRKeypair <NSObject>
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](./onboarding-a-matter-device.md)
 
 ## Topics
 
 ### Instance Methods
-- [func publicKey() -> Unmanaged<SecKey>](mtrkeypair/publickey.md)
-- [func signMessageECDSA_DER(Data) -> Data](mtrkeypair/signmessageecdsa_der(_:).md)
-- [func signMessageECDSA_RAW(Data) -> Data](mtrkeypair/signmessageecdsa_raw(_:).md)
-- [func copyPublicKey() -> SecKey](mtrkeypair/copypublickey.md)
+- [func publicKey() -> Unmanaged<SecKey>](./mtrkeypair/publickey%28%29.md)
+- [func signMessageECDSA_DER(Data) -> Data](./mtrkeypair/signmessageecdsa_der%28_%29.md)
+- [func signMessageECDSA_RAW(Data) -> Data](./mtrkeypair/signmessageecdsa_raw%28_%29.md)
+- [func copyPublicKey() -> SecKey](./mtrkeypair/copypublickey%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

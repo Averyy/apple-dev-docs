@@ -1,7 +1,8 @@
 # CSSMERR_APPLETP_NO_BASIC_CONSTRAINTS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLETP_NO_BASIC_CONSTRAINTS: Int { get }
+```
+
+```c
+CSSMERR_APPLETP_NO_BASIC_CONSTRAINTS
 ```
 
 

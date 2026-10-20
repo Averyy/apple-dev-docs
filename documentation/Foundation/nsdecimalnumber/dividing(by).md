@@ -1,7 +1,8 @@
 # dividing(by:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Divides the number by another given number.
 
@@ -20,6 +21,10 @@ Divides the number by another given number.
 func dividing(by decimalNumber: NSDecimalNumber) -> NSDecimalNumber
 ```
 
+```objc
+- (NSDecimalNumber *) decimalNumberByDividingBy:(NSDecimalNumber *) decimalNumber;
+```
+
 #### Return Value
 
 A new `NSDecimalNumber` object whose value is the value of the receiver divided by `decimalNumber`.
@@ -34,29 +39,31 @@ This method uses the default behavior when handling calculation errors and round
 
 ## See Also
 
-- [class var defaultBehavior: any NSDecimalNumberBehaviors](nsdecimalnumber/defaultbehavior.md)
+### Related Documentation
+- [class var defaultBehavior: any NSDecimalNumberBehaviors](./defaultbehavior.md)
   The way arithmetic methods round off and handle error conditions.
-- [func adding(NSDecimalNumber) -> NSDecimalNumber](nsdecimalnumber/adding(_:).md)
+### Performing Arithmetic
+- [func adding(NSDecimalNumber) -> NSDecimalNumber](./adding%28_%29.md)
   Adds this number to another given number.
-- [func subtracting(NSDecimalNumber) -> NSDecimalNumber](nsdecimalnumber/subtracting(_:).md)
+- [func subtracting(NSDecimalNumber) -> NSDecimalNumber](./subtracting%28_%29.md)
   Subtracts another given number from this one.
-- [func multiplying(by: NSDecimalNumber) -> NSDecimalNumber](nsdecimalnumber/multiplying(by:).md)
+- [func multiplying(by: NSDecimalNumber) -> NSDecimalNumber](./multiplying%28by%29.md)
   Multiplies the number by another given number.
-- [func raising(toPower: Int) -> NSDecimalNumber](nsdecimalnumber/raising(topower:).md)
+- [func raising(toPower: Int) -> NSDecimalNumber](./raising%28topower%29.md)
   Raises the number to a given power.
-- [func multiplying(byPowerOf10: Int16) -> NSDecimalNumber](nsdecimalnumber/multiplying(bypowerof10:).md)
+- [func multiplying(byPowerOf10: Int16) -> NSDecimalNumber](./multiplying%28bypowerof10%29.md)
   Multiplies the number by 10 raised to the given power.
-- [func adding(NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/adding(_:withbehavior:).md)
+- [func adding(NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./adding%28_,withbehavior%29.md)
   Adds this number to another given number using the specified behavior.
-- [func subtracting(NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/subtracting(_:withbehavior:).md)
+- [func subtracting(NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./subtracting%28_,withbehavior%29.md)
   Subtracts this a given number from this one using the specified behavior.
-- [func multiplying(by: NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/multiplying(by:withbehavior:).md)
+- [func multiplying(by: NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./multiplying%28by,withbehavior%29.md)
   Multiplies this number by another given number using the specified behavior.
-- [func dividing(by: NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/dividing(by:withbehavior:).md)
+- [func dividing(by: NSDecimalNumber, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./dividing%28by,withbehavior%29.md)
   Divides this number by another given number using the specified behavior.
-- [func raising(toPower: Int, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/raising(topower:withbehavior:).md)
+- [func raising(toPower: Int, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./raising%28topower,withbehavior%29.md)
   Raises the number to a given power using the specified behavior.
-- [func multiplying(byPowerOf10: Int16, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](nsdecimalnumber/multiplying(bypowerof10:withbehavior:).md)
+- [func multiplying(byPowerOf10: Int16, withBehavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber](./multiplying%28bypowerof10,withbehavior%29.md)
   Multiplies the number by 10 raised to the given power using the specified behavior.
 
 

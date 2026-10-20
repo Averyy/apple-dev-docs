@@ -1,7 +1,8 @@
 # addressCity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as a city name.
 
@@ -18,25 +19,30 @@ A property that defines the content in a text input area as a city name.
 static let addressCity: UITextContentType
 ```
 
+```c
+extern UITextContentType const UITextContentTypeAddressCity;
+```
+
 ## See Also
 
-- [static let location: UITextContentType](uitextcontenttype/location.md)
+### Setting location data
+- [static let location: UITextContentType](./location.md)
   A property that defines the content in a text input area as a location, such as a point of interest, an address, or another identifier for a location.
-- [static let fullStreetAddress: UITextContentType](uitextcontenttype/fullstreetaddress.md)
+- [static let fullStreetAddress: UITextContentType](./fullstreetaddress.md)
   A property that defines the content in a text input area as a street address that fully identifies a location.
-- [static let streetAddressLine1: UITextContentType](uitextcontenttype/streetaddressline1.md)
+- [static let streetAddressLine1: UITextContentType](./streetaddressline1.md)
   A property that defines the content in a text input area as the first line of a street address.
-- [static let streetAddressLine2: UITextContentType](uitextcontenttype/streetaddressline2.md)
+- [static let streetAddressLine2: UITextContentType](./streetaddressline2.md)
   A property that defines the content in a text input area as the second line of a street address.
-- [static let addressCityAndState: UITextContentType](uitextcontenttype/addresscityandstate.md)
+- [static let addressCityAndState: UITextContentType](./addresscityandstate.md)
   A property that defines the content in a text input area as a city name with a state name.
-- [static let addressState: UITextContentType](uitextcontenttype/addressstate.md)
+- [static let addressState: UITextContentType](./addressstate.md)
   A property that defines the content in a text input area as a state name.
-- [static let postalCode: UITextContentType](uitextcontenttype/postalcode.md)
+- [static let postalCode: UITextContentType](./postalcode.md)
   A property that defines the content in a text input area as a postal code.
-- [static let sublocality: UITextContentType](uitextcontenttype/sublocality.md)
+- [static let sublocality: UITextContentType](./sublocality.md)
   A property that defines the content in a text input area as a sublocality.
-- [static let countryName: UITextContentType](uitextcontenttype/countryname.md)
+- [static let countryName: UITextContentType](./countryname.md)
   A property that defines the content in a text input area as a country or region name.
 
 

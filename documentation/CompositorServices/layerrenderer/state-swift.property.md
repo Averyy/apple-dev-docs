@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the layer renderer is currently visible and ready for you to draw content.
 
@@ -15,17 +16,22 @@ A value that indicates whether the layer renderer is currently visible and ready
 var state: LayerRenderer.State { get }
 ```
 
+```c
+enum cp_layer_renderer_state cp_layer_renderer_get_state(cp_layer_renderer_t layer_renderer);
+```
+
 #### Discussion
 
-Use the state of the layer to determine when to start and stop your rendering loop. When the layer is in the [`LayerRenderer.State.running`](layerrenderer/state-swift.enum/running.md) state, draw frames of content using your rendering loop. Stop your rendering loop when the layer enters other states. When the layer reaches the [`LayerRenderer.State.invalidated`](layerrenderer/state-swift.enum/invalidated.md) state, clean up and deallocate your render loop structures.
+Use the state of the layer to determine when to start and stop your rendering loop. When the layer is in the [`LayerRenderer.State.running`](./state-swift.enum/running.md) state, draw frames of content using your rendering loop. Stop your rendering loop when the layer enters other states. When the layer reaches the [`LayerRenderer.State.invalidated`](./state-swift.enum/invalidated.md) state, clean up and deallocate your render loop structures.
 
 ## See Also
 
-- [func waitUntilRunning()](layerrenderer/waituntilrunning.md)
+### Managing the rendering loop
+- [func waitUntilRunning()](./waituntilrunning%28%29.md)
   Stops further execution of your code until the layer renderer leaves the paused state.
-- [LayerRenderer.State](layerrenderer/state-swift.enum.md)
+- [LayerRenderer.State](./state-swift.enum.md)
   The states of the layer renderer, which tell you how to proceed with drawing operations.
-- [LayerRenderer.Clock](layerrenderer/clock.md)
+- [LayerRenderer.Clock](./clock.md)
   A type that supports operations that require a precise time measurement.
 
 

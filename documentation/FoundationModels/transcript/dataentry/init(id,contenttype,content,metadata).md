@@ -1,7 +1,8 @@
 # init(id:contentType:content:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data entry with the content type, content, and metadata you provide.
 

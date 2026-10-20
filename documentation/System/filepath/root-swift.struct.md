@@ -1,7 +1,8 @@
 # FilePath.Root
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a root of a file path.
 
@@ -28,52 +29,56 @@ On Windows, a root contains the entire path prefix up to and including the final
 
 Examples:
 
-- Unix: - `/`
-- Windows: - `C:\`
-- `C:`
-- `\`
-- `\\server\share\`
-- `\\?\UNC\server\share\`
-- `\\?\Volume{12345678-abcd-1111-2222-123445789abc}\`
+- Unix:
+
+  - `/`
+- Windows:
+
+  - `C:\`
+  - `C:`
+  - `\`
+  - `\\server\share\`
+  - `\\?\UNC\server\share\`
+  - `\\?\Volume{12345678-abcd-1111-2222-123445789abc}\`
 
 ## Topics
 
 ### Initializers
-- [init?(String)](filepath/root-swift.struct/init(_:).md)
+- [init?(String)](./root-swift.struct/init%28_%29.md)
   Create a file path root from a string.
-- [init?(platformString: [CInterop.PlatformChar])](filepath/root-swift.struct/init(platformstring:)-3s0ol.md)
+- [init?(platformString: [CInterop.PlatformChar])](./root-swift.struct/init%28platformstring%29-3s0ol.md)
   Creates a file path root by copying bytes from a null-terminated platform string. It is a precondition that a null byte indicates the end of the string. The absence of a null byte will trigger a runtime error.
-- [init?(platformString: String)](filepath/root-swift.struct/init(platformstring:)-4twb4.md)
-- [init?(platformString: UnsafePointer<CInterop.PlatformChar>)](filepath/root-swift.struct/init(platformstring:)-5j1fu.md)
+- [init?(platformString: String)](./root-swift.struct/init%28platformstring%29-4twb4.md)
+- [init?(platformString: UnsafePointer<CInterop.PlatformChar>)](./root-swift.struct/init%28platformstring%29-5j1fu.md)
   Creates a file path root by copying bytes from a null-terminated platform string.
-- [init?(platformString: inout CInterop.PlatformChar)](filepath/root-swift.struct/init(platformstring:)-8hwtb.md)
+- [init?(platformString: inout CInterop.PlatformChar)](./root-swift.struct/init%28platformstring%29-8hwtb.md)
 ### Instance Properties
-- [var string: String](filepath/root-swift.struct/string.md)
+- [var string: String](./root-swift.struct/string.md)
   On Unix, this returns `"/"`.
 ### Instance Methods
-- [func withPlatformString<Result>((UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result](filepath/root-swift.struct/withplatformstring(_:).md)
+- [func withPlatformString<Result>((UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result](./root-swift.struct/withplatformstring%28_%29.md)
   Calls the given closure with a pointer to the contents of the file path root, represented as a null-terminated platform string.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](filepath/root-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomStringConvertible Implementations](filepath/root-swift.struct/customstringconvertible-implementations.md)
-- [ExpressibleByStringLiteral Implementations](filepath/root-swift.struct/expressiblebystringliteral-implementations.md)
+- [CustomDebugStringConvertible Implementations](./root-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./root-swift.struct/customstringconvertible-implementations.md)
+- [ExpressibleByStringLiteral Implementations](./root-swift.struct/expressiblebystringliteral-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

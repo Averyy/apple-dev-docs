@@ -1,7 +1,8 @@
 # fillColor
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fill color of a shape.
 
@@ -10,7 +11,7 @@ The fill color of a shape.
 
 ## Declaration
 
-```swift
+```
 get fillColor(): string;
 set fillColor(fillColor: string);
 ```
@@ -21,9 +22,10 @@ This can be any valid CSS color value. Set to `null` for no fill. The default fi
 
 ## See Also
 
-- [fillOpacity](style/fillopacity.md)
+### Styling fills
+- [fillOpacity](./fillopacity.md)
   The opacity of the fill color.
-- [fillRule](style/fillrule.md)
+- [fillRule](./fillrule.md)
   A rule for determining whether a point is inside or outside a polygon.
 
 

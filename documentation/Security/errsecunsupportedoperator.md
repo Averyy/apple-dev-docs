@@ -1,7 +1,8 @@
 # errSecUnsupportedOperator
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operator is not supported.
 
@@ -18,6 +19,10 @@ The operator is not supported.
 
 ```swift
 var errSecUnsupportedOperator: OSStatus { get }
+```
+
+```c
+errSecUnsupportedOperator
 ```
 
 

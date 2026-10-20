@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestRecipientMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The recipient mask.
 
@@ -10,7 +11,7 @@ The recipient mask.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestRecipientMask = IOUSBBitRange(0, 4)
 ```
 

@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Core ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Computes element-wise multiplication.
 
@@ -20,41 +21,52 @@ Computes element-wise multiplication.
 static func * (lhs: MLTensor, rhs: MLTensor) -> MLTensor
 ```
 
+**Other overloads**:
+
+```swift
+static func * (lhs: MLTensor, rhs: some MLTensorScalar & Numeric) -> MLTensor
+```
+
+```swift
+static func * (lhs: some MLTensorScalar & Numeric, rhs: MLTensor) -> MLTensor
+```
+
 #### Discussion
 
 Shapes must be broadcastable, where the broadcasted shape becomes the shape of the output.
 
 ## See Also
 
-- [static func *= (inout MLTensor, MLTensor)](mltensor/*=(_:_:).md)
+### Performing arithmetic operations
+- [static func *= (inout MLTensor, MLTensor)](./stareq%28_,_%29.md)
   Computes element-wise multiplication.
-- [static +(_:_:)](mltensor/+(_:_:).md)
+- [static +(_:_:)](./plus%28_,_%29.md)
   Computes element-wise addition.
-- [static func += (inout MLTensor, MLTensor)](mltensor/+=(_:_:).md)
+- [static func += (inout MLTensor, MLTensor)](./pluseq%28_,_%29.md)
   Computes element-wise addition.
-- [static func - (MLTensor) -> MLTensor](mltensor/-(_:).md)
+- [static func - (MLTensor) -> MLTensor](./minus%28_%29.md)
   Returns the negation of the tensor.
-- [static -(_:_:)](mltensor/-(_:_:).md)
+- [static -(_:_:)](./minus%28_,_%29.md)
   Computes element-wise subtraction.
-- [static func -= (inout MLTensor, MLTensor)](mltensor/-=(_:_:).md)
+- [static func -= (inout MLTensor, MLTensor)](./minuseq%28_,_%29.md)
   Computes element-wise subtraction.
-- [static func .! (MLTensor) -> MLTensor](mltensor/'.!(_:).md)
+- [static func .! (MLTensor) -> MLTensor](./dotnot%28_%29.md)
   Computes logical not on the tensor’s elements.
-- [static .!=(_:_:)](mltensor/'.!=(_:_:).md)
+- [static .!=(_:_:)](./dotnoteq%28_,_%29.md)
   Computes element-wise inequality between two tensors.
-- [static func .& (MLTensor, MLTensor) -> MLTensor](mltensor/'.&(_:_:).md)
+- [static func .& (MLTensor, MLTensor) -> MLTensor](./dotamp%28_,_%29.md)
   Computes element-wise logical AND where both operands are expected contain Boolean scalar elements.
-- [static .==(_:_:)](mltensor/'.==(_:_:).md)
+- [static .==(_:_:)](./doteqeq%28_,_%29.md)
   Computes element-wise equality between two tensors.
-- [static .>(_:_:)](mltensor/'._(_:_:)-3m3ro.md)
+- [static .>(_:_:)](./dotop%28_,_%29-3m3ro.md)
   Computes element-wise greater comparison between two tensors.
-- [static .<(_:_:)](mltensor/'._(_:_:)-6kfoh.md)
+- [static .<(_:_:)](./dotop%28_,_%29-6kfoh.md)
   Computes element-wise less comparison between two tensors.
-- [static func .| (MLTensor, MLTensor) -> MLTensor](mltensor/'._(_:_:)-7z7ks.md)
+- [static func .| (MLTensor, MLTensor) -> MLTensor](./dotop%28_,_%29-7z7ks.md)
   Computes element-wise logical OR where both operands are expected contain Boolean scalar elements.
-- [static func .^ (MLTensor, MLTensor) -> MLTensor](mltensor/'._(_:_:)-8il7w.md)
+- [static func .^ (MLTensor, MLTensor) -> MLTensor](./dotop%28_,_%29-8il7w.md)
   Computes element-wise logical XOR where both operands are expected contain Boolean scalar elements.
-- [static .>=(_:_:)](mltensor/'._=(_:_:)-5qa2u.md)
+- [static .>=(_:_:)](./dotopeq%28_,_%29-5qa2u.md)
   Computes element-wise greater than or equal to comparison between two tensors.
 
 

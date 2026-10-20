@@ -2,6 +2,7 @@
 
 **Framework**: Accessibility  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A semantic description of an accessible chart or graph in the form of a chart descriptor.
@@ -21,13 +22,18 @@ A semantic description of an accessible chart or graph in the form of a chart de
 var accessibilityChartDescriptor: AXChartDescriptor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) AXChartDescriptor * accessibilityChartDescriptor;
+```
+
 ## Mentions
 
-- [Representing chart data as an audio graph](representing-chart-data-as-an-audio-graph.md)
+- [Representing chart data as an audio graph](../representing-chart-data-as-an-audio-graph.md)
 
 ## See Also
 
-- [class AXChartDescriptor](axchartdescriptor.md)
+### Supporting accessibility
+- [class AXChartDescriptor](../axchartdescriptor.md)
   An object that contains all the semantic information about an accessible chart.
 
 

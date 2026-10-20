@@ -1,10 +1,11 @@
 # CAClockTimeFormat.samples
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 case samples
 ```
 
+```c
+kCAClockTimeFormat_Samples
+```
+
 ## See Also
 
-- [CAClockTimeFormat.absoluteSeconds](caclocktimeformat/absoluteseconds.md)
-- [CAClockTimeFormat.beats](caclocktimeformat/beats.md)
-- [CAClockTimeFormat.hostTime](caclocktimeformat/hosttime.md)
-- [CAClockTimeFormat.smpteSeconds](caclocktimeformat/smpteseconds.md)
-- [CAClockTimeFormat.smpteTime](caclocktimeformat/smptetime.md)
-- [CAClockTimeFormat.seconds](caclocktimeformat/seconds.md)
+### Constants
+- [CAClockTimeFormat.absoluteSeconds](./absoluteseconds.md)
+- [CAClockTimeFormat.beats](./beats.md)
+- [CAClockTimeFormat.hostTime](./hosttime.md)
+- [CAClockTimeFormat.smpteSeconds](./smpteseconds.md)
+- [CAClockTimeFormat.smpteTime](./smptetime.md)
+- [CAClockTimeFormat.seconds](./seconds.md)
 
 
 ---

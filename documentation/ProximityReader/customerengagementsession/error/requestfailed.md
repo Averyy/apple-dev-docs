@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.requestFailed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs while sending the request to the customer.
 

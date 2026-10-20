@@ -1,7 +1,8 @@
 # GCSpatialAccessory.DidConnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a spatial accessory connects to the device.
 
@@ -18,7 +19,7 @@ struct DidConnectMessage
 
 Use the `.didConnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCSpatialAccessory.self, for: .didConnect) { message in
    let accessory = message.spatialAccessory
 }
@@ -29,16 +30,16 @@ Connections of spatial accessories will be reflected in the `spatialAccessories`
 ## Topics
 
 ### Initializers
-- [init(spatialAccessory: GCSpatialAccessory)](gcspatialaccessory/didconnectmessage/init(spatialaccessory:).md)
+- [init(spatialAccessory: GCSpatialAccessory)](./didconnectmessage/init%28spatialaccessory%29.md)
 ### Instance Properties
-- [var spatialAccessory: GCSpatialAccessory](gcspatialaccessory/didconnectmessage/spatialaccessory.md)
+- [var spatialAccessory: GCSpatialAccessory](./didconnectmessage/spatialaccessory.md)
   The spatial accessory object that connected to the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

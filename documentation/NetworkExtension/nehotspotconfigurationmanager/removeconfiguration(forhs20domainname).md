@@ -1,7 +1,8 @@
 # removeConfiguration(forHS20DomainName:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a Wi-Fi hotspot configuration, identified by a Hotspot 2.0 domain name, that your app previously added.
 
@@ -17,6 +18,10 @@ Removes a Wi-Fi hotspot configuration, identified by a Hotspot 2.0 domain name, 
 func removeConfiguration(forHS20DomainName domainName: String)
 ```
 
+```objc
+- (void) removeConfigurationForHS20DomainName:(NSString *) domainName;
+```
+
 #### Discussion
 
 Your app can use this method to delete a configuration that it has added, but not a configuration added by another app or by the user.  The user can also delete configured networks through Settings > Wi-Fi.
@@ -27,7 +32,8 @@ Your app can use this method to delete a configuration that it has added, but no
 
 ## See Also
 
-- [func removeConfiguration(forSSID: String)](nehotspotconfigurationmanager/removeconfiguration(forssid:).md)
+### Removing configuration
+- [func removeConfiguration(forSSID: String)](./removeconfiguration%28forssid%29.md)
   Removes a Wi-Fi configuration, identified by an SSID, that your app previously added.
 
 

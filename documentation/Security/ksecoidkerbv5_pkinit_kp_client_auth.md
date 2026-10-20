@@ -1,7 +1,8 @@
 # kSecOIDKERBv5_PKINIT_KP_CLIENT_AUTH
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDKERBv5_PKINIT_KP_CLIENT_AUTH: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDKERBv5_PKINIT_KP_CLIENT_AUTH;
 ```
 
 

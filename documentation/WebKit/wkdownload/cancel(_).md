@@ -1,7 +1,8 @@
 # cancel(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the download, and optionally captures data so that you can resume the download later.
 
@@ -15,7 +16,15 @@ Cancels the download, and optionally captures data so that you can resume the do
 ## Declaration
 
 ```swift
+func cancel(_ completionHandler: (@MainActor @Sendable (Data?) -> Void)? = nil)
+```
+
+```swift
 func cancel() async -> Data?
+```
+
+```objc
+- (void) cancel:(void (^)(NSData *)) completionHandler;
 ```
 
 ## Parameters
@@ -24,9 +33,10 @@ func cancel() async -> Data?
 
 ## See Also
 
-- [var delegate: (any WKDownloadDelegate)?](wkdownload/delegate.md)
+### Managing the download
+- [var delegate: (any WKDownloadDelegate)?](./delegate.md)
   An object you use to track download progress and handle redirects, authentication challenges, and failures.
-- [WKDownload.RedirectPolicy](wkdownload/redirectpolicy.md)
+- [WKDownload.RedirectPolicy](./redirectpolicy.md)
   An enumeration with cases that indicate whether to proceed with a redirect.
 
 

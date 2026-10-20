@@ -1,7 +1,8 @@
 # ComputeNodeGraph.StateType.data(length:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Value is a fixed number of untyped bytes
 
@@ -12,7 +13,7 @@ Value is a fixed number of untyped bytes
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

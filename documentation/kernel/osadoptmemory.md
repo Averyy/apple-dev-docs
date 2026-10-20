@@ -1,7 +1,8 @@
 # OSAdoptMemory
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 const adopt_memory_t OSAdoptMemory;
 ```
 

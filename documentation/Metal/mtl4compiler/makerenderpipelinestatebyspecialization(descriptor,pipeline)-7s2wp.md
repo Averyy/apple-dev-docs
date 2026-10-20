@@ -1,7 +1,8 @@
 # makeRenderPipelineStateBySpecialization(descriptor:pipeline:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new render pipeline state from another, previously unspecialized, pipeline state
 

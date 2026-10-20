@@ -1,7 +1,8 @@
 # kCGImagePropertyExifUserComment
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user comment.
 
@@ -20,13 +21,18 @@ A user comment.
 let kCGImagePropertyExifUserComment: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyExifUserComment;
+```
+
 ## See Also
 
-- [let kCGImagePropertyExifMakerNote: CFString](kcgimagepropertyexifmakernote.md)
+### Camera Information
+- [let kCGImagePropertyExifMakerNote: CFString](./kcgimagepropertyexifmakernote.md)
   Information specified by the camera manufacturer.
-- [let kCGImagePropertyExifCameraOwnerName: CFString](kcgimagepropertyexifcameraownername.md)
+- [let kCGImagePropertyExifCameraOwnerName: CFString](./kcgimagepropertyexifcameraownername.md)
   A string with the name of the camera’s owner.
-- [let kCGImagePropertyExifBodySerialNumber: CFString](kcgimagepropertyexifbodyserialnumber.md)
+- [let kCGImagePropertyExifBodySerialNumber: CFString](./kcgimagepropertyexifbodyserialnumber.md)
   A string with the serial number of the camera.
 
 

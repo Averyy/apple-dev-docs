@@ -1,7 +1,8 @@
 # Stopped
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Device transport state is stopped.
 
@@ -10,7 +11,7 @@ Device transport state is stopped.
 
 ## Declaration
 
-```swift
+```c
 Stopped
 ```
 
@@ -20,9 +21,10 @@ In this state, disable the hardware necessary for I/O.
 
 ## See Also
 
-- [Prewarmed](videodriverkit/iouservideodevicetransportstate/prewarmed.md)
+### Transport states
+- [Prewarmed](./prewarmed.md)
   Device transport state is prewarmed.
-- [Running](videodriverkit/iouservideodevicetransportstate/running.md)
+- [Running](./running.md)
   Device transport state is running.
 
 

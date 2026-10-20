@@ -1,16 +1,17 @@
 # MLCGradientClippingType.byGlobalNorm
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that clips by global norm.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 17.4
+- iPadOS 15.0+ - Deprecated in 17.4
+- Mac Catalyst 15.0+ - Deprecated in 17.4
+- macOS 12.0+ - Deprecated in 14.3
+- tvOS 15.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,13 +19,18 @@ An option that clips by global norm.
 case byGlobalNorm
 ```
 
+```c
+MLCGradientClippingTypeByGlobalNorm
+```
+
 ## See Also
 
-- [MLCGradientClippingType.byValue](mlcgradientclippingtype/byvalue.md)
+### Gradient Clipping Types
+- [MLCGradientClippingType.byValue](./byvalue.md)
   An option that clips by value.
-- [MLCGradientClippingType.byNorm](mlcgradientclippingtype/bynorm.md)
+- [MLCGradientClippingType.byNorm](./bynorm.md)
   An option that clips by norm.
-- [var debugDescription: String](mlcgradientclippingtype/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual description of the gradient clipping type, suitable for debugging.
 
 

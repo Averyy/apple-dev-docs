@@ -1,7 +1,8 @@
 # didOpenWindow(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Should be called by the app when a new window is opened to fire appropriate events with all loaded web extensions.
 
@@ -18,6 +19,10 @@ Should be called by the app when a new window is opened to fire appropriate even
 func didOpenWindow(_ newWindow: any WKWebExtensionWindow)
 ```
 
+```objc
+- (void) didOpenWindow:(id<WKWebExtensionWindow>) newWindow;
+```
+
 #### Discussion
 
 This method informs all loaded extensions of the opening of a new window, ensuring consistent understanding across extensions.
@@ -30,7 +35,8 @@ If the intention is to inform only a specific extension, you should use the resp
 
 ## See Also
 
-- [func didCloseWindow(any WKWebExtensionWindow)](wkwebextensioncontroller/didclosewindow(_:).md)
+### Related Documentation
+- [func didCloseWindow(any WKWebExtensionWindow)](./didclosewindow%28_%29.md)
   Should be called by the app when a window is closed to fire appropriate events with all loaded web extensions.
 
 

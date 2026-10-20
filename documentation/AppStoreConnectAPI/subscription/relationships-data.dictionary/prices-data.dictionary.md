@@ -1,21 +1,22 @@
 # Subscription.Relationships.Prices
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object Subscription.Relationships.Prices
 ```
 
 ## Topics
 
 ### Objects
-- [object Subscription.Relationships.Prices.Data](subscription/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
+- [object Subscription.Relationships.Prices.Data](./prices-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription.
 
 ## Properties

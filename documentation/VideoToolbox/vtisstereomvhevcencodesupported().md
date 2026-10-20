@@ -1,7 +1,8 @@
 # VTIsStereoMVHEVCEncodeSupported()
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the system supports MV-HEVC encoding.
 
@@ -19,17 +20,22 @@ Returns a Boolean value that indicates whether the system supports MV-HEVC encod
 func VTIsStereoMVHEVCEncodeSupported() -> Bool
 ```
 
+```c
+extern Boolean VTIsStereoMVHEVCEncodeSupported();
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the system supports MV-HEVC encoding; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the system supports MV-HEVC encoding; otherwise, [`false`](../Swift/false.md).
 
 #### Discussion
 
-A return value of [`true`](https://developer.apple.com/documentation/swift/true) doesn’t guarantee that encoding resources are available at all times.
+A return value of [`true`](../Swift/true.md) doesn’t guarantee that encoding resources are available at all times.
 
 ## See Also
 
-- [func VTCompressionSessionEncodeMultiImageFrame(VTCompressionSession, taggedBuffers: [CMTaggedBuffer], presentationTimeStamp: CMTime, duration: CMTime, frameProperties: CFDictionary?, infoFlagsOut: UnsafeMutablePointer<VTEncodeInfoFlags>?, outputHandler: VTCompressionOutputHandler) -> OSStatus](vtcompressionsessionencodemultiimageframe(_:taggedbuffers:presentationtimestamp:duration:frameproperties:infoflagsout:outputhandler:).md)
+### Encoding Multi-Image Frames
+- [func VTCompressionSessionEncodeMultiImageFrame(VTCompressionSession, taggedBuffers: [CMTaggedBuffer], presentationTimeStamp: CMTime, duration: CMTime, frameProperties: CFDictionary?, infoFlagsOut: UnsafeMutablePointer<VTEncodeInfoFlags>?, outputHandler: VTCompressionOutputHandler) -> OSStatus](./vtcompressionsessionencodemultiimageframe%28_,taggedbuffers,presentationtimestamp,duration,frameproperties,infoflagsout,outputhandler%29.md)
   Passes a multi-image frame to a compression session for encoding and provides a callback to handle the output.
 
 

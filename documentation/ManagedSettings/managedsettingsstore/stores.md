@@ -1,7 +1,8 @@
 # stores
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Get the name of all the stores configured by your app
 

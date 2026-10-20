@@ -1,7 +1,8 @@
 # init(objects:forKeys:count:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated dictionary with the specified number of key-value pairs constructed from the provided C arrays of keys and objects.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated dictionary with the specified number of key-value 
 init(objects: UnsafePointer<AnyObject>?, forKeys keys: UnsafePointer<any NSCopying>?, count cnt: Int)
 ```
 
+```objc
+- (instancetype) initWithObjects:(ObjectType const[]) objects forKeys:(id<NSCopying> const[]) keys count:(NSUInteger) cnt;
+```
+
 #### Discussion
 
 This method steps through the `objects` and `keys` arrays, creating entries in the new dictionary as it goes. An `NSInvalidArgumentException` is raised if a key or value object is `nil`.
@@ -29,16 +34,18 @@ This method is a designated initializer of `NSDictionary`.
 ## Parameters
 
 - `objects`: A C array of values for the new dictionary.
-- `keys`: A C array of keys for the new dictionary. Each key is copied (using [`copy(with:)`](nscopying/copy(with:).md); keys must conform to the `NSCopying` protocol), and the copy is added to the new dictionary.
+- `keys`: A C array of keys for the new dictionary. Each key is copied (using [`copy(with:)`](../nscopying/copy%28with%29.md); keys must conform to the `NSCopying` protocol), and the copy is added to the new dictionary.
 - `cnt`: The number of elements to use from the `keys` and `objects` arrays. `count` must not exceed the number of elements in `objects` or `keys`.
 
 ## See Also
 
-- [init()](nsdictionary/init.md)
+### Related Documentation
+- [init()](./init%28%29.md)
   Initializes a newly allocated dictionary.
-- [convenience init(objects: [Any], forKeys: [any NSCopying])](nsdictionary/init(objects:forkeys:).md)
+### Creating a Dictionary from Objects and Keys
+- [convenience init(objects: [Any], forKeys: [any NSCopying])](./init%28objects,forkeys%29.md)
   Initializes a newly allocated dictionary with key-value pairs constructed from the provided arrays of keys and objects.
-- [convenience init(object: Any, forKey: any NSCopying)](nsdictionary/init(object:forkey:).md)
+- [convenience init(object: Any, forKey: any NSCopying)](./init%28object,forkey%29.md)
   Creates a dictionary containing a given key and value.
 
 

@@ -1,14 +1,15 @@
 # init(time:detectionType:normalizedRect:focusDisparity:)
 
 **Framework**: Cinematic  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Cinematic detection of a subject.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

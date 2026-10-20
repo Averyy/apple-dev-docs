@@ -1,7 +1,8 @@
 # SecAccessOwnerType
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for flags that enable you to configure ACL ownership.
 
@@ -15,9 +16,13 @@ A type for flags that enable you to configure ACL ownership.
 typealias SecAccessOwnerType = UInt32
 ```
 
+```c
+typedef UInt32 SecAccessOwnerType;
+```
+
 #### Discussion
 
-See [`SecAccessOwnerType Values`](secaccessownertype-values.md) for the list of possible values.
+See [SecAccessOwnerType Values](./secaccessownertype-values.md) for the list of possible values.
 
 
 ---

@@ -1,7 +1,8 @@
 # CXErrorCodeIncomingCallError.Code.filteredByBlockList
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The incoming call is filtered because the incoming caller has been blocked by the user.
 
@@ -18,15 +19,20 @@ The incoming call is filtered because the incoming caller has been blocked by th
 case filteredByBlockList
 ```
 
+```c
+CXErrorCodeIncomingCallErrorFilteredByBlockList
+```
+
 ## See Also
 
-- [CXErrorCodeIncomingCallError.Code.unknown](cxerrorcodeincomingcallerror-swift.struct/code/unknown.md)
+### Errors
+- [CXErrorCodeIncomingCallError.Code.unknown](./unknown.md)
   An unknown error occurred.
-- [CXErrorCodeIncomingCallError.Code.unentitled](cxerrorcodeincomingcallerror-swift.struct/code/unentitled.md)
+- [CXErrorCodeIncomingCallError.Code.unentitled](./unentitled.md)
   The app isn’t entitled to receive incoming calls.
-- [CXErrorCodeIncomingCallError.Code.callUUIDAlreadyExists](cxerrorcodeincomingcallerror-swift.struct/code/calluuidalreadyexists.md)
+- [CXErrorCodeIncomingCallError.Code.callUUIDAlreadyExists](./calluuidalreadyexists.md)
   The incoming call UUID already exists.
-- [CXErrorCodeIncomingCallError.Code.filteredByDoNotDisturb](cxerrorcodeincomingcallerror-swift.struct/code/filteredbydonotdisturb.md)
+- [CXErrorCodeIncomingCallError.Code.filteredByDoNotDisturb](./filteredbydonotdisturb.md)
   The incoming call is filtered because Do Not Disturb is active and the incoming caller is not a VIP.
 
 

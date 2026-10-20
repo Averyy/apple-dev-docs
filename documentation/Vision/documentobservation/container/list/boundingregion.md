@@ -1,7 +1,8 @@
 # boundingRegion
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A polygon that defines the boundary of the list.
 
@@ -25,9 +26,10 @@ var boundingRegion: NormalizedRegion { get }
 
 ## See Also
 
-- [var items: [DocumentObservation.Container.List.Item]](documentobservation/container/list/items.md)
+### Inspecting a list
+- [var items: [DocumentObservation.Container.List.Item]](./items.md)
   The elements of the list.
-- [DocumentObservation.Container.List.Marker](documentobservation/container/list/marker.md)
+- [DocumentObservation.Container.List.Marker](./marker.md)
   The symbol or character at the beginning of each list item.
 
 

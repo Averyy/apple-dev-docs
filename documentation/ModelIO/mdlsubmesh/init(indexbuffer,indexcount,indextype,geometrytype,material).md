@@ -1,7 +1,8 @@
 # init(indexBuffer:indexCount:indexType:geometryType:material:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a submesh with an index buffer and the specified properties.
 
@@ -19,13 +20,17 @@ Initializes a submesh with an index buffer and the specified properties.
 init(indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)
 ```
 
+```objc
+- (instancetype) initWithIndexBuffer:(id<MDLMeshBuffer>) indexBuffer indexCount:(NSUInteger) indexCount indexType:(MDLIndexBitDepth) indexType geometryType:(MDLGeometryType) geometryType material:(MDLMaterial *) material;
+```
+
 #### Return Value
 
 A new submesh object.
 
 #### Discussion
 
-Typically, a submesh is imported from an asset file as a member of a [`MDLMesh`](mdlmesh.md) object, but you can also use this method to create a submesh programmatically.
+Typically, a submesh is imported from an asset file as a member of a [`MDLMesh`](../mdlmesh.md) object, but you can also use this method to create a submesh programmatically.
 
 ## Parameters
 
@@ -37,11 +42,12 @@ Typically, a submesh is imported from an asset file as a member of a [`MDLMesh`]
 
 ## See Also
 
-- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](mdlsubmesh/init(name:indexbuffer:indexcount:indextype:geometrytype:material:).md)
+### Creating a Submesh
+- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?)](./init%28name,indexbuffer,indexcount,indextype,geometrytype,material%29.md)
   Initializes a named submesh with an index buffer and the specified properties.
-- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?, topology: MDLSubmeshTopology?)](mdlsubmesh/init(name:indexbuffer:indexcount:indextype:geometrytype:material:topology:).md)
+- [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?, topology: MDLSubmeshTopology?)](./init%28name,indexbuffer,indexcount,indextype,geometrytype,material,topology%29.md)
   Initializes a named submesh with a specific topology.
-- [init?(mdlSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](mdlsubmesh/init(mdlsubmesh:indextype:geometrytype:)-4czyc.md)
+- [init?(mdlSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](./init%28mdlsubmesh,indextype,geometrytype%29-4czyc.md)
   Initializes a submesh by copying or converting another submesh.
 
 

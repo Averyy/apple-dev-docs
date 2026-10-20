@@ -1,7 +1,8 @@
 # init(position:localPosition:identifer:parentJoint:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3D joint.
 

@@ -1,7 +1,8 @@
 # deviceQueue
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue this device uses.
 
@@ -14,9 +15,13 @@ The dispatch queue this device uses.
 var deviceQueue: dispatch_queue_t { get }
 ```
 
+```objc
+@property (readonly) dispatch_queue_t deviceQueue;
+```
+
 #### Discussion
 
-The framework performs all operations on `VZCustomVirtioDevice` and [`VZCustomVirtioDeviceDelegate`](vzcustomvirtiodevicedelegate.md) on this serial queue.
+The framework performs all operations on `VZCustomVirtioDevice` and [`VZCustomVirtioDeviceDelegate`](../vzcustomvirtiodevicedelegate.md) on this serial queue.
 
 
 ---

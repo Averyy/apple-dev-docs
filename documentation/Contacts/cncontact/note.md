@@ -1,7 +1,8 @@
 # note
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing notes for the contact.
 
@@ -19,13 +20,25 @@ A string containing notes for the contact.
 var note: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * note;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * note;
+```
+
 ## Mentions
 
-- [Accessing the contact store](accessing-the-contact-store.md)
+- [Accessing the contact store](../accessing-the-contact-store.md)
 
 #### Discussion
 
-To fetch the `note` property in iOS 13 or later or macOS 13 or later, add the [`com.apple.developer.contacts.notes`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.contacts.notes) entitlement to your app. The entitlement requires permission from Apple to use, and you can’t publicly distribute your app until you have permission to use it. For more information about adding the entitlement and getting permission, see [`com.apple.developer.contacts.notes`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.contacts.notes).
+To fetch the `note` property in iOS 13 or later or macOS 13 or later, add the [`com.apple.developer.contacts.notes`](../../BundleResources/entitlements/com.apple.developer.contacts.notes.md) entitlement to your app. The entitlement requires permission from Apple to use, and you can’t publicly distribute your app until you have permission to use it. For more information about adding the entitlement and getting permission, see [`com.apple.developer.contacts.notes`](../../BundleResources/entitlements/com.apple.developer.contacts.notes.md).
 
 
 ---

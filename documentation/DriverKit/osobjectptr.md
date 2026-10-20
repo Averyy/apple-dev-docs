@@ -1,29 +1,31 @@
 # OSObjectPtr
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef OSObject * OSObjectPtr;
 ```
 
 ## See Also
 
-- [init](osobject/init.md)
-- [retain](osobject/retain.md)
+### Managing the Object Lifecycle
+- [init](./osobject/init.md)
+- [retain](./osobject/retain.md)
   Retains the OSObject instance
-- [release](osobject/release.md)
+- [release](./osobject/release.md)
   Releases the OSObject instance
-- [free](osobject/free.md)
-- [OSObjectRef](osobjectref.md)
+- [free](./osobject/free.md)
+- [OSObjectRef](./osobjectref.md)
 
 
 ---

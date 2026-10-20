@@ -1,7 +1,8 @@
 # CSSearchQueryError.Code.cancelled
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The query stopped because someone canceled it.
 
@@ -18,17 +19,22 @@ The query stopped because someone canceled it.
 case cancelled
 ```
 
+```c
+CSSearchQueryErrorCodeCancelled
+```
+
 #### Discussion
 
-The system reports this error if your code called the [`cancel()`](csuserquery/cancel().md) method.
+The system reports this error if your code called the [`cancel()`](../../csuserquery/cancel%28%29.md) method.
 
 ## See Also
 
-- [CSSearchQueryError.Code.indexUnreachable](cssearchqueryerror/code/indexunreachable.md)
+### Getting the error codes
+- [CSSearchQueryError.Code.indexUnreachable](./indexunreachable.md)
   The index is unreachable.
-- [CSSearchQueryError.Code.invalidQuery](cssearchqueryerror/code/invalidquery.md)
+- [CSSearchQueryError.Code.invalidQuery](./invalidquery.md)
   The query is syntactically invalid or specifies items that your app doesn’t have access to.
-- [CSSearchQueryError.Code.unknown](cssearchqueryerror/code/unknown.md)
+- [CSSearchQueryError.Code.unknown](./unknown.md)
   An unknown error occurred.
 
 

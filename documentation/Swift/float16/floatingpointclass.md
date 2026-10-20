@@ -1,7 +1,8 @@
 # floatingPointClass
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification of this value.
 
@@ -22,7 +23,7 @@ var floatingPointClass: FloatingPointClassification { get }
 
 #### Discussion
 
-A value’s `floatingPointClass` property describes its “class” as described by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+A value’s `floatingPointClass` property describes its “class” as described by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 
 ---

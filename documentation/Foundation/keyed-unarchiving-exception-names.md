@@ -1,13 +1,14 @@
 # Keyed Unarchiving Exception Names
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 Names of exceptions that are raised by `NSKeyedUnarchiver` if there is a problem extracting an archive.
 
 ## Topics
 
 ### Constants
-- [static let invalidUnarchiveOperationException: NSExceptionName](nsexceptionname/invalidunarchiveoperationexception.md)
+- [static let invalidUnarchiveOperationException: NSExceptionName](./nsexceptionname/invalidunarchiveoperationexception.md)
   The name of the exception raised by `NSKeyedArchiver` if there is a problem extracting an archive.
 
 

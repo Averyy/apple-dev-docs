@@ -1,7 +1,8 @@
 # conforms(to:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tests the conformance of the receiver to the provided device type.
 
@@ -12,6 +13,10 @@ Tests the conformance of the receiver to the provided device type.
 
 ```swift
 func conforms(to type: GCDeviceType) -> Bool
+```
+
+```objc
+- (BOOL) conformsToDeviceType:(GCDeviceType *) type;
 ```
 
 

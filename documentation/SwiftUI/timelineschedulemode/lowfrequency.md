@@ -1,7 +1,8 @@
 # TimelineScheduleMode.lowFrequency
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that produces schedule updates at a reduced rate.
 
@@ -26,7 +27,8 @@ In this mode, the schedule should generate only “major” updates, if possible
 
 ## See Also
 
-- [TimelineScheduleMode.normal](timelineschedulemode/normal.md)
+### Getting timeline schedule modes
+- [TimelineScheduleMode.normal](./normal.md)
   A mode that produces schedule updates at the schedule’s natural cadence.
 
 

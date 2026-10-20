@@ -1,7 +1,8 @@
 # waitUntilExit()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Blocks the process until the receiver is finished.
 
@@ -15,9 +16,13 @@ Blocks the process until the receiver is finished.
 func waitUntilExit()
 ```
 
+```objc
+- (void) waitUntilExit;
+```
+
 #### Discussion
 
-This method first checks to see if the receiver is still running using [`isRunning`](process/isrunning.md). Then it polls the current run loop using `NSDefaultRunLoopMode` until the task completes.
+This method first checks to see if the receiver is still running using [`isRunning`](./isrunning.md). Then it polls the current run loop using `NSDefaultRunLoopMode` until the task completes.
 
 **Swift**:
 
@@ -49,21 +54,23 @@ if (status == 0) {
 }
 ```
 
-[`waitUntilExit()`](process/waituntilexit().md) does not guarantee that the [`terminationHandler`](process/terminationhandler.md) block has been fully executed before [`waitUntilExit()`](process/waituntilexit().md) returns.
+[`waitUntilExit()`](./waituntilexit%28%29.md) does not guarantee that the [`terminationHandler`](./terminationhandler.md) block has been fully executed before [`waitUntilExit()`](./waituntilexit%28%29.md) returns.
 
 ## See Also
 
-- [func launch()](process/launch.md)
+### Related Documentation
+- [func launch()](./launch%28%29.md)
   Launches the task represented by the receiver.
-- [func run() throws](process/run.md)
+### Running and stopping
+- [func run() throws](./run%28%29.md)
   Runs the process with the current environment.
-- [func interrupt()](process/interrupt.md)
+- [func interrupt()](./interrupt%28%29.md)
   Sends an interrupt signal to the receiver and all of its subtasks.
-- [func resume() -> Bool](process/resume.md)
+- [func resume() -> Bool](./resume%28%29.md)
   Resumes execution of a suspended task.
-- [func suspend() -> Bool](process/suspend.md)
+- [func suspend() -> Bool](./suspend%28%29.md)
   Suspends execution of the receiver task.
-- [func terminate()](process/terminate.md)
+- [func terminate()](./terminate%28%29.md)
   Sends a terminate signal to the receiver and all of its subtasks.
 
 

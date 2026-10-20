@@ -1,7 +1,8 @@
 # coverVertical
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A transition where the new view slides up from the bottom of the screen.
 
@@ -9,8 +10,8 @@ A transition where the new view slides up from the bottom of the screen.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,16 @@ static var coverVertical: Self { get }
 
 ## Mentions
 
-- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+- [Enhancing your app with fluid transitions](../../enhancing-your-app-with-fluid-transitions.md)
 
 ## See Also
 
-- [static var crossDissolve: Self](uiviewcontroller/transition/crossdissolve.md)
+### Accessing transitions
+- [static var crossDissolve: Self](./crossdissolve.md)
   A transition where the current view fades out while the new view fades in at the same time.
-- [static var flipHorizontal: Self](uiviewcontroller/transition/fliphorizontal.md)
+- [static var flipHorizontal: Self](./fliphorizontal.md)
   A transition where the current view flips horizontally to reveal the new view.
-- [static var partialCurl: Self](uiviewcontroller/transition/partialcurl.md)
+- [static var partialCurl: Self](./partialcurl.md)
   A transition where one corner of the current view curls up, revealing the new view underneath.
 
 

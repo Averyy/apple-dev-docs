@@ -1,7 +1,8 @@
 # BEScrollViewScrollUpdate.Phase.changed
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scroll phase that indicates the gesture changes scroll location.
 
@@ -15,6 +16,10 @@ A scroll phase that indicates the gesture changes scroll location.
 
 ```swift
 case changed
+```
+
+```c
+BEScrollViewScrollUpdatePhaseChanged
 ```
 
 

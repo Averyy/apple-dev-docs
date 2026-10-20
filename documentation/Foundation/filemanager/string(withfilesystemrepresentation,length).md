@@ -1,9 +1,10 @@
 # string(withFileSystemRepresentation:length:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns an [`NSString`](nsstring.md) object whose contents are derived from the specified C-string path.
+Returns an [`NSString`](../nsstring.md) object whose contents are derived from the specified C-string path.
 
 **Availability**:
 - iOS 2.0+
@@ -20,9 +21,13 @@ Returns an [`NSString`](nsstring.md) object whose contents are derived from the 
 func string(withFileSystemRepresentation str: UnsafePointer<CChar>, length len: Int) -> String
 ```
 
+```objc
+- (NSString *) stringWithFileSystemRepresentation:(const char *) str length:(NSUInteger) len;
+```
+
 #### Return Value
 
-An [`NSString`](nsstring.md) object converted from the C-string representation `string` with length `len` of a pathname in the current file system.
+An [`NSString`](../nsstring.md) object converted from the C-string representation `string` with length `len` of a pathname in the current file system.
 
 #### Discussion
 
@@ -35,7 +40,8 @@ Use this method if your code receives paths as C strings from system routines.
 
 ## See Also
 
-- [func fileSystemRepresentation(withPath: String) -> UnsafePointer<CChar>](filemanager/filesystemrepresentation(withpath:).md)
+### Converting file paths to strings
+- [func fileSystemRepresentation(withPath: String) -> UnsafePointer<CChar>](./filesystemrepresentation%28withpath%29.md)
   Returns a C-string representation of a given path that properly encodes Unicode strings for use by the file system.
 
 

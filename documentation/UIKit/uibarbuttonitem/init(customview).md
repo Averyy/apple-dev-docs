@@ -1,7 +1,8 @@
 # init(customView:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an item using the specified custom view.
 
@@ -9,7 +10,7 @@ Creates an item using the specified custom view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Creates an item using the specified custom view.
 convenience init(customView: UIView)
 ```
 
+```objc
+- (instancetype) initWithCustomView:(UIView *) customView;
+```
+
 #### Return Value
 
-A newly initialized [`UIBarButtonItem`](uibarbuttonitem.md).
+A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 
 #### Discussion
 

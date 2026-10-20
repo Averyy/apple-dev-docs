@@ -1,7 +1,8 @@
 # Schema.Unique
 
 **Framework**: SwiftData  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -22,21 +23,21 @@ final class Unique<T> where T : PersistentModel
 ## Topics
 
 ### Initializers
-- [init([PartialKeyPath<T>]...)](schema/unique/init(_:).md)
+- [init([PartialKeyPath<T>]...)](./unique/init%28_%29.md)
 ### Instance Properties
-- [let constraints: [[PartialKeyPath<T>]]](schema/unique/constraints.md)
+- [let constraints: [[PartialKeyPath<T>]]](./unique/constraints.md)
 ### Enumerations
-- [Schema.Unique.CodingKeys](schema/unique/codingkeys.md)
+- [Schema.Unique.CodingKeys](./unique/codingkeys.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [SchemaProperty](schemaproperty.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [SchemaProperty](../schemaproperty.md)
 
 
 ---

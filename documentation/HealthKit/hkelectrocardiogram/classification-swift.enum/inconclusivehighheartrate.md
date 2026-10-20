@@ -1,7 +1,8 @@
 # HKElectrocardiogram.Classification.inconclusiveHighHeartRate
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unclassifiable sample caused by a rapid heart rate.
 
@@ -19,25 +20,30 @@ An unclassifiable sample caused by a rapid heart rate.
 case inconclusiveHighHeartRate
 ```
 
+```c
+HKElectrocardiogramClassificationInconclusiveHighHeartRate
+```
+
 #### Discussion
 
-The [`HKAppleECGAlgorithmVersion.version1`](hkappleecgalgorithmversion/version1.md) algorithm can categorize heart rates below 120 BPM. [`HKAppleECGAlgorithmVersion.version2`](hkappleecgalgorithmversion/version2.md) can categorize heart rates up to 150 BPM.
+The [`HKAppleECGAlgorithmVersion.version1`](../../hkappleecgalgorithmversion/version1.md) algorithm can categorize heart rates below 120 BPM. [`HKAppleECGAlgorithmVersion.version2`](../../hkappleecgalgorithmversion/version2.md) can categorize heart rates up to 150 BPM.
 
 ## See Also
 
-- [HKElectrocardiogram.Classification.sinusRhythm](hkelectrocardiogram/classification-swift.enum/sinusrhythm.md)
+### Classifications
+- [HKElectrocardiogram.Classification.sinusRhythm](./sinusrhythm.md)
   The sample exhibits no signs of atrial fibrillation.
-- [HKElectrocardiogram.Classification.atrialFibrillation](hkelectrocardiogram/classification-swift.enum/atrialfibrillation.md)
+- [HKElectrocardiogram.Classification.atrialFibrillation](./atrialfibrillation.md)
   The sample exhibits signs of atrial fibrillation.
-- [HKElectrocardiogram.Classification.inconclusiveLowHeartRate](hkelectrocardiogram/classification-swift.enum/inconclusivelowheartrate.md)
+- [HKElectrocardiogram.Classification.inconclusiveLowHeartRate](./inconclusivelowheartrate.md)
   An unclassifiable sample caused by a heart rate below 50 bpm.
-- [HKElectrocardiogram.Classification.inconclusivePoorReading](hkelectrocardiogram/classification-swift.enum/inconclusivepoorreading.md)
+- [HKElectrocardiogram.Classification.inconclusivePoorReading](./inconclusivepoorreading.md)
   An unclassifiable sample caused by an unclear signal.
-- [HKElectrocardiogram.Classification.inconclusiveOther](hkelectrocardiogram/classification-swift.enum/inconclusiveother.md)
+- [HKElectrocardiogram.Classification.inconclusiveOther](./inconclusiveother.md)
   An unclassifiable sample caused by an unknown issue.
-- [HKElectrocardiogram.Classification.unrecognized](hkelectrocardiogram/classification-swift.enum/unrecognized.md)
+- [HKElectrocardiogram.Classification.unrecognized](./unrecognized.md)
   A sample classification that this version of HealthKit doesn’t recognize.
-- [HKElectrocardiogram.Classification.notSet](hkelectrocardiogram/classification-swift.enum/notset.md)
+- [HKElectrocardiogram.Classification.notSet](./notset.md)
   A sample that doesn’t have an assigned classification.
 
 

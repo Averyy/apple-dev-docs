@@ -1,7 +1,8 @@
 # maximumTextureDimension
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum dimension of the reconstructed texture maps.
 

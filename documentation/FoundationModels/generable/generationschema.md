@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 An instance of the generation schema.

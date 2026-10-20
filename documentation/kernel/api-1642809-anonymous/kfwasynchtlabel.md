@@ -1,14 +1,15 @@
 # kFWAsynchTLabel
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFWAsynchTLabel = FWBitRange (16, 21)
 ```
 

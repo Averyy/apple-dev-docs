@@ -1,15 +1,16 @@
 # CIImageRepresentationOption
 
 **Framework**: Core Image  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,65 +18,70 @@
 struct CIImageRepresentationOption
 ```
 
+```c
+typedef NSString * CIImageRepresentationOption;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](ciimagerepresentationoption/init(rawvalue:).md)
+- [init(rawValue: String)](./ciimagerepresentationoption/init%28rawvalue%29.md)
 ### Type Properties
-- [static let avDepthData: CIImageRepresentationOption](ciimagerepresentationoption/avdepthdata.md)
+- [static let avDepthData: CIImageRepresentationOption](./ciimagerepresentationoption/avdepthdata.md)
   The depth data representation of an image.
-- [static let avPortraitEffectsMatte: CIImageRepresentationOption](ciimagerepresentationoption/avportraiteffectsmatte.md)
-- [static let avSemanticSegmentationMattes: CIImageRepresentationOption](ciimagerepresentationoption/avsemanticsegmentationmattes.md)
-- [static let depthImage: CIImageRepresentationOption](ciimagerepresentationoption/depthimage.md)
+- [static let avPortraitEffectsMatte: CIImageRepresentationOption](./ciimagerepresentationoption/avportraiteffectsmatte.md)
+- [static let avSemanticSegmentationMattes: CIImageRepresentationOption](./ciimagerepresentationoption/avsemanticsegmentationmattes.md)
+- [static let depthImage: CIImageRepresentationOption](./ciimagerepresentationoption/depthimage.md)
   `options` dictionary key for image export methods to output depth data.
-- [static let disparityImage: CIImageRepresentationOption](ciimagerepresentationoption/disparityimage.md)
+- [static let disparityImage: CIImageRepresentationOption](./ciimagerepresentationoption/disparityimage.md)
   `options` dictionary key for image export methods to output disparity data.
-- [static let portraitEffectsMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/portraiteffectsmatteimage.md)
-- [static let semanticSegmentationGlassesMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationglassesmatteimage.md)
-- [static let semanticSegmentationHairMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationhairmatteimage.md)
-- [static let semanticSegmentationSkinMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationskinmatteimage.md)
-- [static let semanticSegmentationSkyMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationskymatteimage.md)
-- [static let semanticSegmentationTeethMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationteethmatteimage.md)
-- [static let hdrImage: CIImageRepresentationOption](ciimagerepresentationoption/hdrimage.md)
-- [static let hdrGainMapAsRGB: CIImageRepresentationOption](ciimagerepresentationoption/hdrgainmapasrgb.md)
+- [static let portraitEffectsMatteImage: CIImageRepresentationOption](./ciimagerepresentationoption/portraiteffectsmatteimage.md)
+- [static let semanticSegmentationGlassesMatteImage: CIImageRepresentationOption](./ciimagerepresentationoption/semanticsegmentationglassesmatteimage.md)
+- [static let semanticSegmentationHairMatteImage: CIImageRepresentationOption](./ciimagerepresentationoption/semanticsegmentationhairmatteimage.md)
+- [static let semanticSegmentationSkinMatteImage: CIImageRepresentationOption](./ciimagerepresentationoption/semanticsegmentationskinmatteimage.md)
+- [static let semanticSegmentationSkyMatteImage: CIImageRepresentationOption](./ciimagerepresentationoption/semanticsegmentationskymatteimage.md)
+- [static let semanticSegmentationTeethMatteImage: CIImageRepresentationOption](./ciimagerepresentationoption/semanticsegmentationteethmatteimage.md)
+- [static let hdrImage: CIImageRepresentationOption](./ciimagerepresentationoption/hdrimage.md)
+- [static let hdrGainMapAsRGB: CIImageRepresentationOption](./ciimagerepresentationoption/hdrgainmapasrgb.md)
   An optional key and value to request the gain map channel to be color instead of monochrome.
-- [static let hdrGainMapImage: CIImageRepresentationOption](ciimagerepresentationoption/hdrgainmapimage.md)
+- [static let hdrGainMapImage: CIImageRepresentationOption](./ciimagerepresentationoption/hdrgainmapimage.md)
   An optional key and value to save a gain map channel to a JPEG or HEIF.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func tiffRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/tiffrepresentation(of:format:colorspace:options:).md)
+### Rendering Images for Data or File Export
+- [func tiffRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](./cicontext/tiffrepresentation%28of,format,colorspace,options%29.md)
   Renders the image and exports the resulting image data in TIFF format.
-- [func jpegRepresentation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/jpegrepresentation(of:colorspace:options:).md)
+- [func jpegRepresentation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](./cicontext/jpegrepresentation%28of,colorspace,options%29.md)
   Renders the image and exports the resulting image data in JPEG format.
-- [func pngRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/pngrepresentation(of:format:colorspace:options:).md)
+- [func pngRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](./cicontext/pngrepresentation%28of,format,colorspace,options%29.md)
   Renders the image and exports the resulting image data in PNG format.
-- [func heifRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/heifrepresentation(of:format:colorspace:options:).md)
+- [func heifRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](./cicontext/heifrepresentation%28of,format,colorspace,options%29.md)
   Renders the image and exports the resulting image data in HEIF format.
-- [func heif10Representation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws -> Data](cicontext/heif10representation(of:colorspace:options:).md)
+- [func heif10Representation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws -> Data](./cicontext/heif10representation%28of,colorspace,options%29.md)
   Renders the image and exports the resulting image data in HEIF10 format.
-- [func openEXRRepresentation(of: CIImage, options: [CIImageRepresentationOption : Any]) throws -> Data](cicontext/openexrrepresentation(of:options:).md)
+- [func openEXRRepresentation(of: CIImage, options: [CIImageRepresentationOption : Any]) throws -> Data](./cicontext/openexrrepresentation%28of,options%29.md)
   Renders the image and exports the resulting image data in open EXR format.
-- [func writeTIFFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writetiffrepresentation(of:to:format:colorspace:options:).md)
+- [func writeTIFFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](./cicontext/writetiffrepresentation%28of,to,format,colorspace,options%29.md)
   Renders the image and exports the resulting image data as a file in TIFF format.
-- [func writeJPEGRepresentation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writejpegrepresentation(of:to:colorspace:options:).md)
+- [func writeJPEGRepresentation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](./cicontext/writejpegrepresentation%28of,to,colorspace,options%29.md)
   Renders the image and exports the resulting image data as a file in JPEG format.
-- [func writePNGRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writepngrepresentation(of:to:format:colorspace:options:).md)
+- [func writePNGRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](./cicontext/writepngrepresentation%28of,to,format,colorspace,options%29.md)
   Renders the image and exports the resulting image data as a file in PNG format.
-- [func writeHEIFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writeheifrepresentation(of:to:format:colorspace:options:).md)
+- [func writeHEIFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](./cicontext/writeheifrepresentation%28of,to,format,colorspace,options%29.md)
   Renders the image and exports the resulting image data as a file in HEIF format.
-- [func writeHEIF10Representation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writeheif10representation(of:to:colorspace:options:).md)
+- [func writeHEIF10Representation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](./cicontext/writeheif10representation%28of,to,colorspace,options%29.md)
   Renders the image and exports the resulting image data as a file in HEIF10 format.
-- [func writeOpenEXRRepresentation(of: CIImage, to: URL, options: [CIImageRepresentationOption : Any]) throws](cicontext/writeopenexrrepresentation(of:to:options:).md)
+- [func writeOpenEXRRepresentation(of: CIImage, to: URL, options: [CIImageRepresentationOption : Any]) throws](./cicontext/writeopenexrrepresentation%28of,to,options%29.md)
   Renders the image and exports the resulting image data as a file in open EXR format.
 
 

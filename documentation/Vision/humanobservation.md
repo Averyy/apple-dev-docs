@@ -1,7 +1,8 @@
 # HumanObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a person that the request detects.
 
@@ -23,29 +24,29 @@ struct HumanObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNHumanObservation)](humanobservation/init(_:).md)
+- [init(VNHumanObservation)](./humanobservation/init%28_%29.md)
   Creates a human observation.
-- [init(boundingBox: NormalizedRect, revision: DetectHumanRectanglesRequest.Revision?)](humanobservation/init(boundingbox:revision:).md)
+- [init(boundingBox: NormalizedRect, revision: DetectHumanRectanglesRequest.Revision?)](./humanobservation/init%28boundingbox,revision%29.md)
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let isUpperBodyOnly: Bool](humanobservation/isupperbodyonly.md)
+- [let isUpperBodyOnly: Bool](./humanobservation/isupperbodyonly.md)
   A Boolean value that indicates whether the observation represents an upper-body or full-body rectangle.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

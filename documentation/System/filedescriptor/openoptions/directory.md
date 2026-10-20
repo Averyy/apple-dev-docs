@@ -1,7 +1,8 @@
 # directory
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that opening the file only succeeds if the file is a directory.
 

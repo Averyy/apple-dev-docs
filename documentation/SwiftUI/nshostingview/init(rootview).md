@@ -1,7 +1,8 @@
 # init(rootView:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hosting view object that wraps the specified SwiftUI view.
 
@@ -21,9 +22,10 @@ Creates a hosting view object that wraps the specified SwiftUI view.
 
 ## See Also
 
-- [init?(coder: NSCoder)](nshostingview/init(coder:).md)
+### Creating a hosting view
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a hosting view object from the contents of the specified archive.
-- [func prepareForReuse()](nshostingview/prepareforreuse.md)
+- [func prepareForReuse()](./prepareforreuse%28%29.md)
 
 
 ---

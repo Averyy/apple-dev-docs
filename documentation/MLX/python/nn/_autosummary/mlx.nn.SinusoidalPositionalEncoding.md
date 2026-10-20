@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.S
 
 # mlx.nn.SinusoidalPositionalEncoding
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.SinusoidalPositionalEncoding.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.SinusoidalPositionalEncoding
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.SinusoidalPositionalEncoding
-
 **class SinusoidalPositionalEncoding(*dims: int*, *min_freq: float = 0.0001*, *max_freq: float = 1*, *scale: float | None = None*, *cos_first: bool = False*, *full_turns: bool = False*)**
 : Implements sinusoidal positional encoding.
 For more details see the paper [Attention Is All You Need](https://arxiv.org/abs/1706.03762).
@@ -52,5 +25,3 @@ instead of the reverse. Default: `False`.
 \(2\pi\). Default: `False`.
 
 Methods
-
-** Contents

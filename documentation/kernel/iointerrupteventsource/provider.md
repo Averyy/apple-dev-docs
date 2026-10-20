@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOService *provider;
 ```
 
@@ -15,12 +15,13 @@ IOService that provides interrupts for delivery.
 
 ## See Also
 
-- [reserved](iointerrupteventsource/reserved.md)
-- [producerCount](iointerrupteventsource/producercount.md)
-- [intIndex](iointerrupteventsource/intindex.md)
-- [explicitDisable](iointerrupteventsource/explicitdisable.md)
-- [consumerCount](iointerrupteventsource/consumercount.md)
-- [autoDisable](iointerrupteventsource/autodisable.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [producerCount](./producercount.md)
+- [intIndex](./intindex.md)
+- [explicitDisable](./explicitdisable.md)
+- [consumerCount](./consumercount.md)
+- [autoDisable](./autodisable.md)
 
 
 ---

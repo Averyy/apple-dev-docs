@@ -1,7 +1,8 @@
 # CustomerReviewResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single customer review for an app.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single customer review for an app.
 
 ## Declaration
 
-```swift
+```
 object CustomerReviewResponse
 ```
 
@@ -20,16 +21,19 @@ object CustomerReviewResponse
 - `links` (DocumentLinks) *(required)*: Navigational links that include the self-link.
 - `included` ([*]): The requested relationship data.
 
+  **Allowed Types**: `CustomerReviewResponseV1`, `Territory`
+
 ## See Also
 
-- [object CustomerReviewsResponse](customerreviewsresponse.md)
+### Objects
+- [object CustomerReviewsResponse](./customerreviewsresponse.md)
   The response body for endpoints that list customer reviews for an app.
-- [object CustomerReview](customerreview.md)
+- [object CustomerReview](./customerreview.md)
   A customer’s rating and written review of your app on the App Store.
-- [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
-- [object CustomerReviewSummarization](customerreviewsummarization.md)
+- [object AppCustomerReviewsLinkagesResponse](./appcustomerreviewslinkagesresponse.md)
+- [object CustomerReviewSummarization](./customerreviewsummarization.md)
   An AI-generated summary of customer reviews for an app in a specific App Store territory.
-- [object CustomerReviewSummarizationsResponse](customerreviewsummarizationsresponse.md)
+- [object CustomerReviewSummarizationsResponse](./customerreviewsummarizationsresponse.md)
   A response containing a list of AI-generated review summaries for an app across territories.
 
 

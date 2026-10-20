@@ -1,7 +1,8 @@
 # AccessibilityTraits
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of accessibility traits that describe how an element behaves.
 
@@ -23,56 +24,57 @@ struct AccessibilityTraits
 ## Topics
 
 ### Getting traits
-- [static let allowsDirectInteraction: AccessibilityTraits](accessibilitytraits/allowsdirectinteraction.md)
+- [static let allowsDirectInteraction: AccessibilityTraits](./accessibilitytraits/allowsdirectinteraction.md)
   The accessibility element allows direct touch interaction for VoiceOver users.
-- [static let causesPageTurn: AccessibilityTraits](accessibilitytraits/causespageturn.md)
+- [static let causesPageTurn: AccessibilityTraits](./accessibilitytraits/causespageturn.md)
   The accessibility element causes an automatic page turn when VoiceOver finishes reading the text within it.
-- [static let isButton: AccessibilityTraits](accessibilitytraits/isbutton.md)
+- [static let isButton: AccessibilityTraits](./accessibilitytraits/isbutton.md)
   The accessibility element is a button.
-- [static let isHeader: AccessibilityTraits](accessibilitytraits/isheader.md)
+- [static let isHeader: AccessibilityTraits](./accessibilitytraits/isheader.md)
   The accessibility element is a header that divides content into sections, like the title of a navigation bar.
-- [static let isImage: AccessibilityTraits](accessibilitytraits/isimage.md)
+- [static let isImage: AccessibilityTraits](./accessibilitytraits/isimage.md)
   The accessibility element is an image.
-- [static let isKeyboardKey: AccessibilityTraits](accessibilitytraits/iskeyboardkey.md)
+- [static let isKeyboardKey: AccessibilityTraits](./accessibilitytraits/iskeyboardkey.md)
   The accessibility element behaves as a keyboard key.
-- [static let isLink: AccessibilityTraits](accessibilitytraits/islink.md)
+- [static let isLink: AccessibilityTraits](./accessibilitytraits/islink.md)
   The accessibility element is a link.
-- [static let isModal: AccessibilityTraits](accessibilitytraits/ismodal.md)
+- [static let isModal: AccessibilityTraits](./accessibilitytraits/ismodal.md)
   The accessibility element is modal.
-- [static let isSearchField: AccessibilityTraits](accessibilitytraits/issearchfield.md)
+- [static let isSearchField: AccessibilityTraits](./accessibilitytraits/issearchfield.md)
   The accessibility element is a search field.
-- [static let isSelected: AccessibilityTraits](accessibilitytraits/isselected.md)
+- [static let isSelected: AccessibilityTraits](./accessibilitytraits/isselected.md)
   The accessibility element is currently selected.
-- [static let isStaticText: AccessibilityTraits](accessibilitytraits/isstatictext.md)
+- [static let isStaticText: AccessibilityTraits](./accessibilitytraits/isstatictext.md)
   The accessibility element is a static text that cannot be modified by the user.
-- [static let isSummaryElement: AccessibilityTraits](accessibilitytraits/issummaryelement.md)
+- [static let isSummaryElement: AccessibilityTraits](./accessibilitytraits/issummaryelement.md)
   The accessibility element provides summary information when the application starts.
-- [static let isToggle: AccessibilityTraits](accessibilitytraits/istoggle.md)
+- [static let isToggle: AccessibilityTraits](./accessibilitytraits/istoggle.md)
   The accessibility element is a toggle.
-- [static let playsSound: AccessibilityTraits](accessibilitytraits/playssound.md)
+- [static let playsSound: AccessibilityTraits](./accessibilitytraits/playssound.md)
   The accessibility element plays its own sound when activated.
-- [static let startsMediaSession: AccessibilityTraits](accessibilitytraits/startsmediasession.md)
+- [static let startsMediaSession: AccessibilityTraits](./accessibilitytraits/startsmediasession.md)
   The accessibility element starts a media session when it is activated.
-- [static let updatesFrequently: AccessibilityTraits](accessibilitytraits/updatesfrequently.md)
+- [static let updatesFrequently: AccessibilityTraits](./accessibilitytraits/updatesfrequently.md)
   The accessibility element frequently updates its label or value.
 ### Type Properties
-- [static let isTabBar: AccessibilityTraits](accessibilitytraits/istabbar.md)
+- [static let isTabBar: AccessibilityTraits](./accessibilitytraits/istabbar.md)
   The accessibility element is a tab bar.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func accessibilityAddTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityaddtraits(_:).md)
+### Assigning traits to content
+- [func accessibilityAddTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityaddtraits%28_%29.md)
   Adds the given traits to the view.
-- [func accessibilityRemoveTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityremovetraits(_:).md)
+- [func accessibilityRemoveTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityremovetraits%28_%29.md)
   Removes the given traits from this view.
 
 

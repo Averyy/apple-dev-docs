@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The name of the GPU’s counter set instance.
@@ -20,9 +21,13 @@ The name of the GPU’s counter set instance.
 var name: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * name;
+```
+
 #### Discussion
 
-The property typically matches one of the common counter set names that [`MTLCommonCounterSet`](mtlcommoncounterset.md) defines (see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
+The property typically matches one of the common counter set names that [`MTLCommonCounterSet`](../mtlcommoncounterset.md) defines (see [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 
 
 ---

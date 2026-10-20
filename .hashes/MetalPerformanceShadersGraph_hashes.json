@@ -11,9 +11,8 @@
       "hash": "71b80643cdb51d88fce39799f2a79264ce5c4dd56f8a7e2fb07346c5ec468a52"
     },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/adding_custom_functions_to_a_shader_graph": {
-      "etag": "W/\"e68f9097a64743301927379c05db7b19\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/adding_custom_functions_to_a_shader_graph.md",
-      "hash": "55f91ee9b0a0b124748082319671b386a3983aeb5f6553cdcc6eea3718167f76"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/filtering-images-with-mpsgraph-fft-operations": {
       "etag": "\"1641-65d560a3d8b6d-df\"",
@@ -21,9 +20,8 @@
       "hash": "a50e886f4191bae937b14c1e4b57fc53148974bdc7bbab6ef1c20907d5e4e946"
     },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/filtering_images_with_mpsgraph_fft_operations": {
-      "etag": "W/\"1e14cc306e2488fc13ef1f900647d755\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/filtering_images_with_mpsgraph_fft_operations.md",
-      "hash": "9d34ad2dbf19240a9dce4af7a35d5ab66d013fa7194cc39a000009d2f2b6e0e0"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraph": {
       "etag": "\"10c8a8-65d560a56b7c2-df\"",
@@ -4066,9 +4064,8 @@
       "hash": "f1db1933c61604dc41d775a12c00723eb8fafa3088823c1c08c627388dd6aa4d"
     },
     "https://developer.apple.com/documentation/metalperformanceshadersgraph/training_a_neural_network_using_mps_graph": {
-      "etag": "W/\"94ac89f393dcb641677bab83c255add6\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/training_a_neural_network_using_mps_graph.md",
-      "hash": "17ad512f262c74e12344fd5c78756e87bfe1a655ae351f11230a346261f934bf"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/MetalPerformanceShadersGraph.json": {
       "etag": "\"1b468-65d560a6139a8-df\"",
@@ -4081,9 +4078,8 @@
       "hash": "71b80643cdb51d88fce39799f2a79264ce5c4dd56f8a7e2fb07346c5ec468a52"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/adding_custom_functions_to_a_shader_graph.json": {
-      "etag": "W/\"e68f9097a64743301927379c05db7b19\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/adding_custom_functions_to_a_shader_graph.md",
-      "hash": "55f91ee9b0a0b124748082319671b386a3983aeb5f6553cdcc6eea3718167f76"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/filtering-images-with-mpsgraph-fft-operations.json": {
       "etag": "\"1641-65d560a3d8b6d-df\"",
@@ -4091,9 +4087,8 @@
       "hash": "a50e886f4191bae937b14c1e4b57fc53148974bdc7bbab6ef1c20907d5e4e946"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/filtering_images_with_mpsgraph_fft_operations.json": {
-      "etag": "W/\"1e14cc306e2488fc13ef1f900647d755\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/filtering_images_with_mpsgraph_fft_operations.md",
-      "hash": "9d34ad2dbf19240a9dce4af7a35d5ab66d013fa7194cc39a000009d2f2b6e0e0"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/mpsgraph.json": {
       "etag": "\"10c8a8-65d560a56b7c2-df\"",
@@ -8136,12 +8131,14 @@
       "hash": "f1db1933c61604dc41d775a12c00723eb8fafa3088823c1c08c627388dd6aa4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalperformanceshadersgraph/training_a_neural_network_using_mps_graph.json": {
-      "etag": "W/\"94ac89f393dcb641677bab83c255add6\"",
       "file_path": "documentation/MetalPerformanceShadersGraph/training_a_neural_network_using_mps_graph.md",
-      "hash": "17ad512f262c74e12344fd5c78756e87bfe1a655ae351f11230a346261f934bf"
+      "hash": ""
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1628
   }
 }

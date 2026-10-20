@@ -1,7 +1,8 @@
 # view(as:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Consume this raw view to create a typed view.
 

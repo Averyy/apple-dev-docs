@@ -1,7 +1,8 @@
 # IDBCursorWithValue
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface IDBCursorWithValue
 ```
 
 ## Topics
 
 ### Instance Properties
-- [value](idbcursorwithvalue/1633837-value.md)
+- [value](./idbcursorwithvalue/api-1633837-value.md)
 
 ## Relationships
 
 ### Inherits From
-- [IDBCursor](idbcursor.md)
+- [IDBCursor](./idbcursor.md)
 
 
 ---

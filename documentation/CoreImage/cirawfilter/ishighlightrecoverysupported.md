@@ -1,7 +1,8 @@
 # isHighlightRecoverySupported
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var isHighlightRecoverySupported: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isHighlightRecoverySupported) BOOL highlightRecoverySupported;
 ```
 
 

@@ -1,7 +1,8 @@
 # undoMenuTitle(forUndoActionName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the localized title of the Undo menu command for the identified action.
 
@@ -20,13 +21,17 @@ Returns the localized title of the Undo menu command for the identified action.
 func undoMenuTitle(forUndoActionName actionName: String) -> String
 ```
 
+```objc
+- (NSString *) undoMenuTitleForUndoActionName:(NSString *) actionName;
+```
+
 #### Return Value
 
 The localized title of the undo menu item.
 
 #### Discussion
 
-Override this method if you want to customize the localization behavior. This method is invoked by [`undoMenuItemTitle`](undomanager/undomenuitemtitle.md).
+Override this method if you want to customize the localization behavior. This method is invoked by [`undoMenuItemTitle`](./undomenuitemtitle.md).
 
 ## Parameters
 
@@ -34,11 +39,12 @@ Override this method if you want to customize the localization behavior. This me
 
 ## See Also
 
-- [var undoMenuItemTitle: String](undomanager/undomenuitemtitle.md)
+### Getting and localizing the menu item title
+- [var undoMenuItemTitle: String](./undomenuitemtitle.md)
   The title of the Undo menu command, such as Undo Paste.
-- [var redoMenuItemTitle: String](undomanager/redomenuitemtitle.md)
+- [var redoMenuItemTitle: String](./redomenuitemtitle.md)
   The title of the Redo menu command, such as Redo Paste.
-- [func redoMenuTitle(forUndoActionName: String) -> String](undomanager/redomenutitle(forundoactionname:).md)
+- [func redoMenuTitle(forUndoActionName: String) -> String](./redomenutitle%28forundoactionname%29.md)
   Returns the localized title of the Redo menu command for the identified action.
 
 

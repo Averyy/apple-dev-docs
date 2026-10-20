@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives messages about changes to the network block device attachment.
 
@@ -14,9 +15,14 @@ The object that receives messages about changes to the network block device atta
 weak var delegate: (any VZNetworkBlockDeviceStorageDeviceAttachmentDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<VZNetworkBlockDeviceStorageDeviceAttachmentDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol VZNetworkBlockDeviceStorageDeviceAttachmentDelegate](vznetworkblockdevicestoragedeviceattachmentdelegate.md)
+### Observing changes to the network block device
+- [protocol VZNetworkBlockDeviceStorageDeviceAttachmentDelegate](../vznetworkblockdevicestoragedeviceattachmentdelegate.md)
   Methods you implement to respond to changes to a network block device attachment.
 
 

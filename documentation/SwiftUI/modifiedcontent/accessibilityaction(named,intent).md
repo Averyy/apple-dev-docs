@@ -1,7 +1,8 @@
 # accessibilityAction(named:intent:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an accessibility action labeled `name` to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. When the action is performed, the `intent` will be invoked.
 
@@ -19,6 +20,25 @@ Adds an accessibility action labeled `name` to the view. Actions allow assistive
 ```swift
 nonisolated
 func accessibilityAction<I>(named name: Text, intent: I) -> ModifiedContent<Content, Modifier> where I : AppIntent
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityAction<I>(named nameKey: LocalizedStringKey, intent: I) -> ModifiedContent<Content, Modifier> where I : AppIntent
+```
+
+```swift
+nonisolated
+func accessibilityAction<I>(named nameResource: LocalizedStringResource, intent: I) -> ModifiedContent<Content, Modifier> where I : AppIntent
+```
+
+```swift
+nonisolated
+func accessibilityAction<S, I>(named name: S, intent: I) -> ModifiedContent<Content, Modifier> where S : StringProtocol, I : AppIntent
 ```
 
 

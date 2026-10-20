@@ -1,7 +1,8 @@
 # init(fallbackPlacement:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration object for an expanded experience.
 

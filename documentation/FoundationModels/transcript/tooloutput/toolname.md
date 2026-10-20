@@ -1,7 +1,8 @@
 # toolName
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the tool that produced this output.
 
@@ -21,9 +22,10 @@ var toolName: String
 
 ## See Also
 
-- [var id: String](transcript/tooloutput/id.md)
+### Inspecting a tool output
+- [var id: String](./id.md)
   A unique id for this tool output.
-- [var segments: [Transcript.Segment]](transcript/tooloutput/segments.md)
+- [var segments: [Transcript.Segment]](./segments.md)
   Segments of the tool output.
 
 

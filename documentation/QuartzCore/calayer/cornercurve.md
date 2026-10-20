@@ -1,7 +1,8 @@
 # cornerCurve
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -17,9 +18,14 @@
 var cornerCurve: CALayerCornerCurve { get set }
 ```
 
+```objc
+@property (copy) CALayerCornerCurve cornerCurve;
+```
+
 ## See Also
 
-- [var wantsDynamicContentScaling: Bool](calayer/wantsdynamiccontentscaling.md)
+### Instance properties
+- [var wantsDynamicContentScaling: Bool](./wantsdynamiccontentscaling.md)
 
 
 ---

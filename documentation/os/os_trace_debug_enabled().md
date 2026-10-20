@@ -1,23 +1,30 @@
 # os_trace_debug_enabled()
 
 **Framework**: os  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether debug level trace information is enabled.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 8.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 11.0
+- iPadOS 8.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.10+ - Deprecated in 10.13
+- tvOS 8.0+ - Deprecated in 11.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 4.0
+
+> **Deprecated**: Use [`os_log_debug_enabled`](./os_log_debug_enabled.md) instead.
 
 ## Declaration
 
 ```swift
 func os_trace_debug_enabled() -> Bool
+```
+
+```c
+extern bool os_trace_debug_enabled();
 ```
 
 #### Discussion
@@ -26,9 +33,10 @@ Generally, trace points should not involve expensive operations, however some ci
 
 ## See Also
 
-- [func os_trace_info_enabled() -> Bool](os_trace_info_enabled().md)
+### Deprecated Functions
+- [func os_trace_info_enabled() -> Bool](./os_trace_info_enabled%28%29.md)
   Returns whether info level trace information is enabled.
-- [func os_trace_type_enabled(UInt8) -> Bool](os_trace_type_enabled(_:).md)
+- [func os_trace_type_enabled(UInt8) -> Bool](./os_trace_type_enabled%28_%29.md)
   Returns whether the specified info level trace information is enabled.
 
 

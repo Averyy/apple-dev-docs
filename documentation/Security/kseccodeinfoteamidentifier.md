@@ -1,7 +1,8 @@
 # kSecCodeInfoTeamIdentifier
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the team identifier.
 
@@ -13,6 +14,10 @@ A key whose value is the team identifier.
 
 ```swift
 let kSecCodeInfoTeamIdentifier: CFString
+```
+
+```c
+extern CFStringRef const kSecCodeInfoTeamIdentifier;
 ```
 
 

@@ -1,7 +1,8 @@
 # UIAlertAction.Style.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apply the default style to the action’s button.
 
@@ -9,7 +10,7 @@ Apply the default style to the action’s button.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Apply the default style to the action’s button.
 case `default`
 ```
 
+```c
+UIAlertActionStyleDefault
+```
+
 ## See Also
 
-- [UIAlertAction.Style.cancel](uialertaction/style-swift.enum/cancel.md)
+### Constants
+- [UIAlertAction.Style.cancel](./cancel.md)
   Apply a style that indicates the action cancels the operation and leaves things unchanged.
-- [UIAlertAction.Style.destructive](uialertaction/style-swift.enum/destructive.md)
+- [UIAlertAction.Style.destructive](./destructive.md)
   Apply a style that indicates the action might change or delete data.
 
 

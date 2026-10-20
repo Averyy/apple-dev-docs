@@ -1,6 +1,7 @@
 # Reducing view modifier maintenance
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Bundle view modifiers that you regularly reuse into a custom view modifier.
 
@@ -8,11 +9,11 @@ Bundle view modifiers that you regularly reuse into a custom view modifier.
 
 To create consistent views, you might reuse the same view modifier or group of modifiers repeatedly across your views. For example, you might apply the same font and foreground color to many text instances throughout your app, so they all match. Unfortunately, this can lead to maintenance challenges, because even a small change in format, like a different font size, requires changes in many different parts of your code.
 
-To avoid this overhead, collect a set of modifiers into a single location using an instance of the [`ViewModifier`](viewmodifier.md) protocol. Then, extend the [`View`](view.md) protocol with a method that uses your modifier, making it easy to use and understand. Collecting the modifiers together provides a single location to update when you want to change them.
+To avoid this overhead, collect a set of modifiers into a single location using an instance of the [`ViewModifier`](./viewmodifier.md) protocol. Then, extend the [`View`](./view.md) protocol with a method that uses your modifier, making it easy to use and understand. Collecting the modifiers together provides a single location to update when you want to change them.
 
-##### Create a Custom View Modifier
+##### Create a custom view modifier
 
-When you create your custom modifier, name it to reflect the purpose of the collection. For example, if you repeatedly apply the [`caption`](font/caption.md) font style and a secondary color scheme to views to represent a secondary styling, collect them together as `CaptionTextFormat`:
+When you create your custom modifier, name it to reflect the purpose of the collection. For example, if you repeatedly apply the [`caption`](./font/caption.md) font style and a secondary color scheme to views to represent a secondary styling, collect them together as `CaptionTextFormat`:
 
 ```swift
 struct CaptionTextFormat: ViewModifier {
@@ -24,16 +25,16 @@ struct CaptionTextFormat: ViewModifier {
 }
 ```
 
-Apply your modifier using the [`modifier(_:)`](view/modifier(_:).md) method. The following code applies the above example to a [`Text`](text.md) instance:
+Apply your modifier using the [`modifier(_:)`](./view/modifier%28_%29.md) method. The following code applies the above example to a [`Text`](./text.md) instance:
 
 ```swift
 Text("Some additional information...")
     .modifier(CaptionTextFormat())
 ```
 
-##### Extend the View Protocol to Provide Fluent Modifier Access
+##### Extend the view protocol to provide fluent modifier access
 
-To make your custom view modifier conveniently accessible, extend the [`View`](view.md) protocol with a function that applies your modifier:
+To make your custom view modifier conveniently accessible, extend the [`View`](./view.md) protocol with a function that applies your modifier:
 
 ```swift
 extension View {
@@ -52,31 +53,32 @@ Text("Some additional information...")
 
 ## See Also
 
-- [Configuring views](configuring-views.md)
+### Modifying a view
+- [Configuring views](./configuring-views.md)
   Adjust the characteristics of a view by applying view modifiers.
-- [func modifier<T>(T) -> ModifiedContent<Self, T>](view/modifier(_:).md)
+- [func modifier<T>(T) -> ModifiedContent<Self, T>](./view/modifier%28_%29.md)
   Applies a modifier to a view and returns a new view.
-- [protocol ViewModifier](viewmodifier.md)
+- [protocol ViewModifier](./viewmodifier.md)
   A modifier that you apply to a view or another view modifier, producing a different version of the original value.
-- [struct EmptyModifier](emptymodifier.md)
+- [struct EmptyModifier](./emptymodifier.md)
   An empty, or identity, modifier, used during development to switch modifiers at compile time.
-- [struct ModifiedContent](modifiedcontent.md)
+- [struct ModifiedContent](./modifiedcontent.md)
   A value with a modifier applied to it.
-- [protocol EnvironmentalModifier](environmentalmodifier.md)
+- [protocol EnvironmentalModifier](./environmentalmodifier.md)
   A modifier that must resolve to a concrete modifier in an environment before use.
-- [struct ManipulableModifier](manipulablemodifier.md)
+- [struct ManipulableModifier](./manipulablemodifier.md)
   A view modifier that lets hand gestures move, rotate, and scale a view.
-- [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+- [struct ManipulableResponderModifier](./manipulablerespondermodifier.md)
   A view modifier that makes a view respond to manipulation hand gestures.
-- [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+- [struct ManipulableTransformBindingModifier](./manipulabletransformbindingmodifier.md)
   A view modifier that applies a 3D affine transform to a view and lets hand gestures change it.
-- [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+- [struct ManipulationGeometryModifier](./manipulationgeometrymodifier.md)
   A view modifier that tracks the geometry a manipulation gesture acts on.
-- [struct ManipulationGestureModifier](manipulationgesturemodifier.md)
+- [struct ManipulationGestureModifier](./manipulationgesturemodifier.md)
   A view modifier that recognizes manipulation hand gestures and reports their state through a binding.
-- [struct ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
+- [struct ManipulationUsingGestureStateModifier](./manipulationusinggesturestatemodifier.md)
   A view modifier that applies the manipulation state from a gesture on another view.
-- [enum Manipulable](manipulable.md)
+- [enum Manipulable](./manipulable.md)
   A namespace for various manipulable related types.
 
 

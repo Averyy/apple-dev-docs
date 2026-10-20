@@ -1,7 +1,8 @@
 # init(cgImage:cgImageFormat:pixelFormat:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new pixel buffer initialized from a Core Graphics image.
 
@@ -11,7 +12,7 @@ Returns a new pixel buffer initialized from a Core Graphics image.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,16 +21,18 @@ Returns a new pixel buffer initialized from a Core Graphics image.
 init(cgImage: CGImage, cgImageFormat: inout vImage_CGImageFormat, pixelFormat: Format.Type = Format.self) throws
 ```
 
+Available when `Format` conforms to `InitializableFromCGImage` and `StaticPixelFormat`.
+
 ## Mentions
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
+- [Converting bitmap data between Core Graphics images and vImage buffers](../../converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+- [Optimizing image-processing performance](../../optimizing-image-processing-performance.md)
 
 #### Discussion
 
-For example, the following code creates a single-channel, 8-bit per pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) of unknown bit depth.
+For example, the following code creates a single-channel, 8-bit per pixel buffer from a [`CGImage`](../../../CoreGraphics/cgimage.md) of unknown bit depth.
 
-When you pass a populated `cgImageFormat`, the [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer performs the conversion from the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance’s format to the [`vImage_CGImageFormat`](vimage_cgimageformat.md) that you specify.
+When you pass a populated `cgImageFormat`, the [`init(cgImage:cgImageFormat:pixelFormat:)`](./init%28cgimage,cgimageformat,pixelformat%29.md) initializer performs the conversion from the [`CGImage`](../../../CoreGraphics/cgimage.md) instance’s format to the [`vImage_CGImageFormat`](../../vimage_cgimageformat.md) that you specify.
 
 Note the `bitsPerComponent`, `bitsPerPixel`, `colorSpace`, and `bitmapInfo`.
 
@@ -72,7 +75,7 @@ The following code shows a similar workflow, but it creates a 32-bit per channel
      pixelFormat: pixelFormat)
 ```
 
-If you pass an empty `cgImageFormat`, the [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer populates the [`vImage_CGImageFormat`](vimage_cgimageformat.md) with the properties of the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance. For example, the following code initializes a pixel buffer from a 8-bit-per-channel, 4-channel RGB image:
+If you pass an empty `cgImageFormat`, the [`init(cgImage:cgImageFormat:pixelFormat:)`](./init%28cgimage,cgimageformat,pixelformat%29.md) initializer populates the [`vImage_CGImageFormat`](../../vimage_cgimageformat.md) with the properties of the [`CGImage`](../../../CoreGraphics/cgimage.md) instance. For example, the following code initializes a pixel buffer from a 8-bit-per-channel, 4-channel RGB image:
 
 ```swift
 let cgImage = [ ... ]
@@ -90,14 +93,14 @@ print(cgImageFormat.bitsPerComponent,
       cgImageFormat.colorSpace.takeRetainedValue().model.rawValue)
 ```
 
-> ❗ **Important**:  If you specify a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md), its bits per component and bits per pixel must match those of the buffer’s `pixelFormat`. If you specify an empty [`vImage_CGImageFormat`](vimage_cgimageformat.md), the bits per component and bits per pixel of the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) must match those of the buffer’s `pixelFormat`.
+> ❗ **Important**:  If you specify a populated [`vImage_CGImageFormat`](../../vimage_cgimageformat.md), its bits per component and bits per pixel must match those of the buffer’s `pixelFormat`. If you specify an empty [`vImage_CGImageFormat`](../../vimage_cgimageformat.md), the bits per component and bits per pixel of the [`CGImage`](../../../CoreGraphics/cgimage.md) must match those of the buffer’s `pixelFormat`.
 
-> ❗ **Important**: If you provide a populated `vImage_CGImageFormat` with properties (such as bit-depth, color space, and channel ordering) that are different from those of the `CGImage` instance, vImage uses [`any-to-any conversion`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/functions-that-perform-any-to-any-conversion/) as part of the operation. If your app is latency-sensitive, provide either an empty `vImage_CGImageFormat` or a `vImage_CGImageFormat` with properties that match the source image to ensure that the operation avoids the conversion step.
+> ❗ **Important**: If you provide a populated `vImage_CGImageFormat` with properties (such as bit-depth, color space, and channel ordering) that are different from those of the `CGImage` instance, vImage uses [any-to-any conversion](../../functions-that-perform-any-to-any-conversion.md) as part of the operation. If your app is latency-sensitive, provide either an empty `vImage_CGImageFormat` or a `vImage_CGImageFormat` with properties that match the source image to ensure that the operation avoids the conversion step.
 
 ## Parameters
 
 - `cgImage`: The source image.
-- `cgImageFormat`: The format of the image. Pass an empty [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that the function populates `cgImageFormat` with the properties of the image. Pass a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that the function converts the image data to the format you specify.
+- `cgImageFormat`: The format of the image. Pass an empty [`vImage_CGImageFormat`](../../vimage_cgimageformat.md) to specify that the function populates `cgImageFormat` with the properties of the image. Pass a populated [`vImage_CGImageFormat`](../../vimage_cgimageformat.md) to specify that the function converts the image data to the format you specify.
 - `pixelFormat`: The pixel format of the initialized buffer.
 
 

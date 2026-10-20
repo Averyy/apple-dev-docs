@@ -1,7 +1,8 @@
 # willDismissSearchController(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that the system is about to automatically dismiss the search controller.
 
@@ -9,7 +10,7 @@ Notifies the delegate that the system is about to automatically dismiss the sear
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ Notifies the delegate that the system is about to automatically dismiss the sear
 optional func willDismissSearchController(_ searchController: UISearchController)
 ```
 
+```objc
+- (void) willDismissSearchController:(UISearchController *) searchController;
+```
+
 #### Discussion
 
 The system only calls this method when it’s about to automatically dismiss the search controller. The system doesn’t call this method if you explicitly dismiss the search controller.
 
 ## Parameters
 
-- `searchController`: The [`UISearchController`](uisearchcontroller.md) object to dismiss.
+- `searchController`: The [`UISearchController`](../uisearchcontroller.md) object to dismiss.
 
 ## See Also
 
-- [func didDismissSearchController(UISearchController)](uisearchcontrollerdelegate/diddismisssearchcontroller(_:).md)
+### Presenting and dismissing the search controller
+- [func didDismissSearchController(UISearchController)](./diddismisssearchcontroller%28_%29.md)
   Notifies the delegate when the system completes automatic dismissal of the search controller.
-- [func didPresentSearchController(UISearchController)](uisearchcontrollerdelegate/didpresentsearchcontroller(_:).md)
+- [func didPresentSearchController(UISearchController)](./didpresentsearchcontroller%28_%29.md)
   Notifies the delegate when the system completes automatic presentation of the search controller.
-- [func presentSearchController(UISearchController)](uisearchcontrollerdelegate/presentsearchcontroller(_:).md)
+- [func presentSearchController(UISearchController)](./presentsearchcontroller%28_%29.md)
   Presents the designated search controller.
-- [func willPresentSearchController(UISearchController)](uisearchcontrollerdelegate/willpresentsearchcontroller(_:).md)
+- [func willPresentSearchController(UISearchController)](./willpresentsearchcontroller%28_%29.md)
   Notifies the delegate that the system is about to automatically display the search controller.
 
 

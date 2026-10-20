@@ -1,14 +1,17 @@
 # canGoBack
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the receiver can move backward.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 2.0+
+- iOS 2.0+ - Deprecated in 12.0
+- iPadOS 2.0+ - Deprecated in 12.0
+- Mac Catalyst 2.0+ - Deprecated in 12.0
+
+> **Deprecated**: For more information, see [`UIWebView`](../uiwebview.md).
 
 ## Declaration
 
@@ -16,17 +19,22 @@ A Boolean value indicating whether the receiver can move backward.
 var canGoBack: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=canGoBack) BOOL canGoBack;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), able to move backward; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](../../Swift/true.md), able to move backward; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var canGoForward: Bool](uiwebview/cangoforward.md)
+### Moving back and forward
+- [var canGoForward: Bool](./cangoforward.md)
   A Boolean value indicating whether the receiver can move forward.
-- [func goBack()](uiwebview/goback.md)
+- [func goBack()](./goback%28%29.md)
   Loads the previous location in the back-forward list.
-- [func goForward()](uiwebview/goforward.md)
+- [func goForward()](./goforward%28%29.md)
   Loads the next location in the back-forward list.
 
 

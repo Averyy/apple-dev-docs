@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of collection used for `entities`.
@@ -22,11 +23,12 @@ associatedtype Entities : EntityCollection
 
 ## See Also
 
-- [func add(Entity)](realityviewcontentprotocol/add(_:).md)
+### Managing view content
+- [func add(Entity)](./add%28_%29.md)
   Adds an entity to this content.
-- [func remove(Entity)](realityviewcontentprotocol/remove(_:).md)
+- [func remove(Entity)](./remove%28_%29.md)
   Removes an entity from this content, if present.
-- [var entities: Self.Entities](realityviewcontentprotocol/entities-swift.property.md)
+- [var entities: Self.Entities](./entities-swift.property.md)
   A collection of RealityKit entities that this view content renders within the scene.
 
 

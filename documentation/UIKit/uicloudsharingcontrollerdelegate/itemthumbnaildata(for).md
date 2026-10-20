@@ -1,7 +1,8 @@
 # itemThumbnailData(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the thumbnail image data to display on the invitation.
 
@@ -17,11 +18,15 @@ Asks the delegate for the thumbnail image data to display on the invitation.
 optional func itemThumbnailData(for csc: UICloudSharingController) -> Data?
 ```
 
+```objc
+- (NSData *) itemThumbnailDataForCloudSharingController:(UICloudSharingController *) csc;
+```
+
 #### Discussion
 
-Implement this method to return image data representing the shared recording. Returning `nil` tells the [`UICloudSharingController`](uicloudsharingcontroller.md) instance to display the generic image. Not implementing this method is the same as returning `nil`.
+Implement this method to return image data representing the shared recording. Returning `nil` tells the [`UICloudSharingController`](../uicloudsharingcontroller.md) instance to display the generic image. Not implementing this method is the same as returning `nil`.
 
-[`itemThumbnailData(for:)`](uicloudsharingcontrollerdelegate/itemthumbnaildata(for:).md) is called only when creating a new share. For an existing share, the thumbnail image is retrieved from the share using the [`CKShareThumbnailImageDataKey`](https://developer.apple.com/documentation/cloudkit/cksharethumbnailimagedatakey-1rxdx) key.
+[`itemThumbnailData(for:)`](./itemthumbnaildata%28for%29.md) is called only when creating a new share. For an existing share, the thumbnail image is retrieved from the share using the [`CKShareThumbnailImageDataKey`](../../CloudKit/cksharethumbnailimagedatakey-1rxdx.md) key.
 
 The following code shows an example of retrieving the image data from a data set stored in an asset catalog found in the main bundle.
 
@@ -35,9 +40,10 @@ The following code shows an example of retrieving the image data from a data set
 
 ## See Also
 
-- [func itemTitle(for: UICloudSharingController) -> String?](uicloudsharingcontrollerdelegate/itemtitle(for:).md)
+### Configuring the view controller
+- [func itemTitle(for: UICloudSharingController) -> String?](./itemtitle%28for%29.md)
   Asks the delegate for the title to display on the invitation screen.
-- [func itemType(for: UICloudSharingController) -> String?](uicloudsharingcontrollerdelegate/itemtype(for:).md)
+- [func itemType(for: UICloudSharingController) -> String?](./itemtype%28for%29.md)
   Asks the delegate for the Uniform Type Identifier (UTI) of the item.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the object.
 
@@ -22,7 +23,8 @@ override var description: String { get }
 
 ## See Also
 
-- [static var sidecarURL: AVAsyncProperty<Root, URL?>](avpartialasyncproperty/sidecarurl.md)
+### Describing a property
+- [static var sidecarURL: AVAsyncProperty<Root, URL?>](./sidecarurl.md)
   The sidecar URL used by the MediaExtension. The sidecar URL is returned only if the MediaExtension format reader supports sidecar files, and implements this property [MEFileInfo setSidecarFilename:]. Will return nil otherwise.
 
 

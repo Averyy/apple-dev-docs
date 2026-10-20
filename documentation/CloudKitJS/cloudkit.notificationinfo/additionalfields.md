@@ -1,7 +1,8 @@
 # additionalFields
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Fields the server sends along with this notification.
 
@@ -10,7 +11,7 @@ Fields the server sends along with this notification.
 
 ## Declaration
 
-```swift
+```
 attribute String[] additionalFields;
 ```
 

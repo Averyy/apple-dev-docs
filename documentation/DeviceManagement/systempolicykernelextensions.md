@@ -1,7 +1,8 @@
 # SystemPolicyKernelExtensions
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the kernel extension policies.
 
@@ -10,7 +11,7 @@ The payload that configures the kernel extension policies.
 
 ## Declaration
 
-```swift
+```
 object SystemPolicyKernelExtensions
 ```
 
@@ -18,7 +19,7 @@ object SystemPolicyKernelExtensions
 
 Specify `com.apple.syspolicy.kernel-extension-policy` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.syspolicy.kernel-extension-policy` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,23 +85,30 @@ Specify `com.apple.syspolicy.kernel-extension-policy` as the payload type.
 ## Topics
 
 ### Objects
-- [object SystemPolicyKernelExtensions.AllowedKernelExtensions](systempolicykernelextensions/allowedkernelextensions-data.dictionary.md)
+- [object SystemPolicyKernelExtensions.AllowedKernelExtensions](./systempolicykernelextensions/allowedkernelextensions-data.dictionary.md)
   The dictionary that represents a set of kernel extensions.
 
 ## Properties
 
 - `AllowedKernelExtensions` (SystemPolicyKernelExtensions.AllowedKernelExtensions): The dictionary that represents a set of kernel extensions that the system always allows to load on the computer. The dictionary maps team identifiers (keys) to arrays of bundle identifiers.
 - `AllowedTeamIdentifiers` ([string]): The array of team identifiers that define which validly signed kernel extensions can load.
-- `AllowNonAdminUserApprovals` (boolean): If `true`, nonadministrative users can approve additional kernel extensions in the Security & Privacy preferences. Available: macOS 11+
+- `AllowNonAdminUserApprovals` (boolean): If `true`, nonadministrative users can approve additional kernel extensions in the Security & Privacy preferences.
+
+  Available: macOS 11+
+
+  **Default**: `false`
 - `AllowUserOverrides` (boolean): If `true`, users can approve additional kernel extensions that configuration profiles don’t explicitly allow.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object SystemPolicyControl](systempolicycontrol.md)
+### System policy
+- [object SystemPolicyControl](./systempolicycontrol.md)
   The payload that configures the system policy for assessments.
-- [object SystemPolicyManaged](systempolicymanaged.md)
+- [object SystemPolicyManaged](./systempolicymanaged.md)
   The payload that configures the Finder’s contextual menu to bypass the system policy.
-- [object SystemPolicyRule](systempolicyrule.md)
+- [object SystemPolicyRule](./systempolicyrule.md)
   The payload that configures the system policy.
 
 

@@ -1,7 +1,8 @@
 # angles
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var angles: [Measurement<UnitAngle>] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSMeasurement<NSUnitAngle *> *> * angles;
 ```
 
 

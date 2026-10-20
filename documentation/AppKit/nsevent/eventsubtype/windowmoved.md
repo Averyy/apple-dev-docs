@@ -1,12 +1,13 @@
 # NSEvent.EventSubtype.windowMoved
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event that indicates a window moved.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ An event that indicates a window moved.
 case windowMoved
 ```
 
+```c
+NSEventSubtypeWindowMoved
+```
+
 ## See Also
 
-- [NSEvent.EventSubtype.applicationActivated](nsevent/eventsubtype/applicationactivated.md)
+### Getting AppKit Event Subtypes
+- [NSEvent.EventSubtype.applicationActivated](./applicationactivated.md)
   An app-activation event occurred.
-- [NSEvent.EventSubtype.applicationDeactivated](nsevent/eventsubtype/applicationdeactivated.md)
+- [NSEvent.EventSubtype.applicationDeactivated](./applicationdeactivated.md)
   An app-deactivation event occurred.
-- [NSEvent.EventSubtype.screenChanged](nsevent/eventsubtype/screenchanged.md)
+- [NSEvent.EventSubtype.screenChanged](./screenchanged.md)
   An event that indicates a window changed screens.
-- [NSEvent.EventSubtype.windowExposed](nsevent/eventsubtype/windowexposed.md)
+- [NSEvent.EventSubtype.windowExposed](./windowexposed.md)
   An event that indicates a window’s contents are visible again.
 
 

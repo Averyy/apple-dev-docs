@@ -1,7 +1,8 @@
 # modifierFlags
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The modifier keys that were pressed at the time of the navigation request.
 

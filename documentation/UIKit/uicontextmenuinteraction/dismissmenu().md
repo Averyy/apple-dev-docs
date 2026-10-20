@@ -1,7 +1,8 @@
 # dismissMenu()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the context menu.
 
@@ -18,9 +19,14 @@ Dismisses the context menu.
 func dismissMenu()
 ```
 
+```objc
+- (void) dismissMenu;
+```
+
 ## See Also
 
-- [func updateVisibleMenu((UIMenu) -> UIMenu)](uicontextmenuinteraction/updatevisiblemenu(_:).md)
+### Managing menu interactions
+- [func updateVisibleMenu((UIMenu) -> UIMenu)](./updatevisiblemenu%28_%29.md)
   Updates the currently visible menu.
 
 

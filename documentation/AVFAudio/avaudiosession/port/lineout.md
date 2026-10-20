@@ -1,7 +1,8 @@
 # lineOut
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A line-level output to the dock connector.
 
@@ -19,23 +20,28 @@ A line-level output to the dock connector.
 static let lineOut: AVAudioSession.Port
 ```
 
+```c
+extern AVAudioSessionPort const AVAudioSessionPortLineOut;
+```
+
 ## See Also
 
-- [static let airPlay: AVAudioSession.Port](avaudiosession/port/airplay.md)
+### Getting output ports
+- [static let airPlay: AVAudioSession.Port](./airplay.md)
   An output to an AirPlay device.
-- [static let bluetoothA2DP: AVAudioSession.Port](avaudiosession/port/bluetootha2dp.md)
+- [static let bluetoothA2DP: AVAudioSession.Port](./bluetootha2dp.md)
   An output to a Bluetooth A2DP device.
-- [static let bluetoothLE: AVAudioSession.Port](avaudiosession/port/bluetoothle.md)
+- [static let bluetoothLE: AVAudioSession.Port](./bluetoothle.md)
   An output to a Bluetooth Low Energy (LE) device.
-- [static let builtInReceiver: AVAudioSession.Port](avaudiosession/port/builtinreceiver.md)
+- [static let builtInReceiver: AVAudioSession.Port](./builtinreceiver.md)
   An output to the speaker you hold to your ear when you’re on a phone call.
-- [static let builtInSpeaker: AVAudioSession.Port](avaudiosession/port/builtinspeaker.md)
+- [static let builtInSpeaker: AVAudioSession.Port](./builtinspeaker.md)
   An output to the device’s built-in speaker.
-- [static let HDMI: AVAudioSession.Port](avaudiosession/port/hdmi.md)
+- [static let HDMI: AVAudioSession.Port](./hdmi.md)
   An output to a High-Definition Multimedia Interface (HDMI) device.
-- [static let headphones: AVAudioSession.Port](avaudiosession/port/headphones.md)
+- [static let headphones: AVAudioSession.Port](./headphones.md)
   An output to wired headphones.
-- [static let mediaDeviceExtension: AVAudioSession.Port](avaudiosession/port/mediadeviceextension.md)
+- [static let mediaDeviceExtension: AVAudioSession.Port](./mediadeviceextension.md)
   Output to a media device vended through a system-wide extension that the user has installed
 
 

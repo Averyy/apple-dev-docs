@@ -1,14 +1,15 @@
 # kHardLinkFileType
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHardLinkFileType = 0x686C6E6B
 ```
 

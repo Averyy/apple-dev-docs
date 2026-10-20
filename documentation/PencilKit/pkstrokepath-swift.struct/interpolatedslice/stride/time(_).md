@@ -1,7 +1,8 @@
 # PKStrokePath.InterpolatedSlice.Stride.time(_:)
 
 **Framework**: PencilKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A stride based on a time interval in seconds you provide.
 
@@ -20,9 +21,10 @@ case time(TimeInterval)
 
 ## See Also
 
-- [PKStrokePath.InterpolatedSlice.Stride.distance(_:)](pkstrokepath-swift.struct/interpolatedslice/stride/distance(_:).md)
+### Stride types
+- [PKStrokePath.InterpolatedSlice.Stride.distance(_:)](./distance%28_%29.md)
   A stride based on a distance between elements you provide.
-- [PKStrokePath.InterpolatedSlice.Stride.parametricStep(_:)](pkstrokepath-swift.struct/interpolatedslice/stride/parametricstep(_:).md)
+- [PKStrokePath.InterpolatedSlice.Stride.parametricStep(_:)](./parametricstep%28_%29.md)
   A stride based on a parametric step value you provide.
 
 

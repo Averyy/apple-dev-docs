@@ -1,7 +1,8 @@
 # isRadical
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is a radical component of CJK characters, Tangut characters, or Yi syllables.
 
@@ -24,7 +25,7 @@ var isRadical: Bool { get }
 
 These scalars are often the components of ideographic description sequences, as defined by the `isIDSBinaryOperator` and `isIDSTrinaryOperator` properties.
 
-This property corresponds to the “Radical” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Radical” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

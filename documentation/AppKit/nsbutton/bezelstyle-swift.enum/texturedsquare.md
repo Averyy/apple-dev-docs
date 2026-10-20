@@ -1,12 +1,13 @@
 # NSButton.BezelStyle.texturedSquare
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A bezel style appropriate for use with textured (metal) windows.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0 (renamed: NSButton.BezelStyle.smallSquare)
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A bezel style appropriate for use with textured (metal) windows.
 case texturedSquare
 ```
 
+```c
+NSBezelStyleTexturedSquare
+```
+
 ## See Also
 
-- [NSButton.BezelStyle.shadowlessSquare](nsbutton/bezelstyle-swift.enum/shadowlesssquare.md)
+### Deprecated constants
+- [NSButton.BezelStyle.shadowlessSquare](./shadowlesssquare.md)
   A rectangular button with no shadow, so it can abut the cells without overlapping shadows.
 
 

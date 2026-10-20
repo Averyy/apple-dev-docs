@@ -1,7 +1,8 @@
 # resetToProduction
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the schema of the environment to production.
 
@@ -10,7 +11,7 @@ Resets the schema of the environment to production.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise resetToProduction(
 	ResetToProductionParams params
 );
@@ -86,15 +87,16 @@ try {
 
 ## See Also
 
-- [exportSchema](promisesapi/exportschema.md)
+### Database Management
+- [exportSchema](./exportschema.md)
   Downloads the container’s schema.
-- [getContainers](promisesapi/getcontainers.md)
+- [getContainers](./getcontainers.md)
   Fetches containers for a team.
-- [importSchema](promisesapi/importschema.md)
+- [importSchema](./importschema.md)
   Uploads a file that defines the new schema for the container.
-- [resetConfigToProduction](promisesapi/resetconfigtoproduction.md)
+- [resetConfigToProduction](./resetconfigtoproduction.md)
   Resets the container configuration to production.
-- [validateSchema](promisesapi/validateschema.md)
+- [validateSchema](./validateschema.md)
   Validates the uploaded schema file for the container.
 
 

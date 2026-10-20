@@ -1,7 +1,8 @@
 # CLSObject
 
 **Framework**: ClassKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract base class for objects managed by ClassKit.
 
@@ -18,38 +19,43 @@ The abstract base class for objects managed by ClassKit.
 class CLSObject
 ```
 
+```objc
+@interface CLSObject : NSObject
+```
+
 ## Topics
 
 ### Accessing Object Information
-- [var dateCreated: Date](clsobject/datecreated.md)
+- [var dateCreated: Date](./clsobject/datecreated.md)
   The date on which the object was created.
-- [var dateLastModified: Date](clsobject/datelastmodified.md)
+- [var dateLastModified: Date](./clsobject/datelastmodified.md)
   The date on which the object was last modified.
 ### Initializers
-- [init?(coder: NSCoder)](clsobject/init(coder:).md)
+- [init?(coder: NSCoder)](./clsobject/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CLSActivity](clsactivity.md)
-- [CLSActivityItem](clsactivityitem.md)
-- [CLSContext](clscontext.md)
-- [CLSProgressReportingCapability](clsprogressreportingcapability.md)
+- [CLSActivity](./clsactivity.md)
+- [CLSActivityItem](./clsactivityitem.md)
+- [CLSContext](./clscontext.md)
+- [CLSProgressReportingCapability](./clsprogressreportingcapability.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [init(type: CLSContextType, identifier: String, title: String)](clscontext/init(type:identifier:title:).md)
+### Creating contexts
+- [init(type: CLSContextType, identifier: String, title: String)](./clscontext/init%28type,identifier,title%29.md)
   Initializes a new context.
 
 

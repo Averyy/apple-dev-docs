@@ -1,17 +1,18 @@
 # AVAssetExportSession.Status.waiting
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is waiting to export more data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ The session is waiting to export more data.
 case waiting
 ```
 
+```c
+AVAssetExportSessionStatusWaiting
+```
+
 ## See Also
 
-- [AVAssetExportSession.Status.unknown](avassetexportsession/status-swift.enum/unknown.md)
+### Status values
+- [AVAssetExportSession.Status.unknown](./unknown.md)
   The session status is unknown.
-- [AVAssetExportSession.Status.exporting](avassetexportsession/status-swift.enum/exporting.md)
+- [AVAssetExportSession.Status.exporting](./exporting.md)
   The export is in progress.
-- [AVAssetExportSession.Status.completed](avassetexportsession/status-swift.enum/completed.md)
+- [AVAssetExportSession.Status.completed](./completed.md)
   The export completes successfully.
-- [AVAssetExportSession.Status.failed](avassetexportsession/status-swift.enum/failed.md)
+- [AVAssetExportSession.Status.failed](./failed.md)
   The export fails.
-- [AVAssetExportSession.Status.cancelled](avassetexportsession/status-swift.enum/cancelled.md)
+- [AVAssetExportSession.Status.cancelled](./cancelled.md)
   You canceled the export.
 
 

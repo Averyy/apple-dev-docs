@@ -1,19 +1,21 @@
 # Flags
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 3-byte space for audio channel layout flags.
 
 ## See Also
 
-- [Size](audio_channel_layout_atom/size.md)
+### Data fields
+- [Size](./size.md)
   An unsigned 32-bit integer holding the size of the audio channel layout atom.
-- [Type](audio_channel_layout_atom/type.md)
+- [Type](./type.md)
   An unsigned 32-bit field.
-- [Version](audio_channel_layout_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of the audio channel layout atom.
-- [Audio channel layout](audio_channel_layout_atom/audio_channel_layout.md)
+- [Audio channel layout](./audio_channel_layout.md)
   An audio channel layout structure.
 
 

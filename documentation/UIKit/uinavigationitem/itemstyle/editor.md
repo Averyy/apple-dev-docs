@@ -1,7 +1,8 @@
 # UINavigationItem.ItemStyle.editor
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style for an editor app interface.
 
@@ -17,19 +18,24 @@ A style for an editor app interface.
 case editor
 ```
 
+```c
+UINavigationItemStyleEditor
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../../building-a-desktop-class-ipad-app.md)
 
 #### Discussion
 
-Use this style for apps that support viewing or editing of individual documents, like text editors. With this style, the navigation item’s title appears on the leading side of the navigation bar, and center items ([`centerItemGroups`](uinavigationitem/centeritemgroups.md)) appear in the center of the bar. The back button appears as a chevron without a title or image.
+Use this style for apps that support viewing or editing of individual documents, like text editors. With this style, the navigation item’s title appears on the leading side of the navigation bar, and center items ([`centerItemGroups`](../centeritemgroups.md)) appear in the center of the bar. The back button appears as a chevron without a title or image.
 
 ## See Also
 
-- [UINavigationItem.ItemStyle.navigator](uinavigationitem/itemstyle/navigator.md)
+### Constants
+- [UINavigationItem.ItemStyle.navigator](./navigator.md)
   A style for a traditional navigation-based interface.
-- [UINavigationItem.ItemStyle.browser](uinavigationitem/itemstyle/browser.md)
+- [UINavigationItem.ItemStyle.browser](./browser.md)
   A style for a browser app interface.
 
 

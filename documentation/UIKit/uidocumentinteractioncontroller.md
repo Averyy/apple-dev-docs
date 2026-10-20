@@ -1,7 +1,8 @@
 # UIDocumentInteractionController
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that previews, opens, or prints files with a file format that your app can’t handle directly.
 
@@ -18,88 +19,93 @@ A view controller that previews, opens, or prints files with a file format that 
 class UIDocumentInteractionController
 ```
 
+```objc
+@interface UIDocumentInteractionController : NSObject
+```
+
 #### Overview
 
 Use this class to present an appropriate user interface for previewing, opening, copying, or printing a specified file. For example, an email program might use this class to allow the user to preview attachments and open them in other apps.
 
 After presenting its user interface, a document interaction controller handles all interactions needed to support file preview and menu display.
 
-You can also use the delegate to participate in interactions occurring within the presented interface. For example, the delegate is notified when a file is about to be handed off to another application for opening. For a complete description of the methods you can implement in your delegate, see [`UIDocumentInteractionControllerDelegate`](uidocumentinteractioncontrollerdelegate.md).
+You can also use the delegate to participate in interactions occurring within the presented interface. For example, the delegate is notified when a file is about to be handed off to another application for opening. For a complete description of the methods you can implement in your delegate, see [`UIDocumentInteractionControllerDelegate`](./uidocumentinteractioncontrollerdelegate.md).
 
 ## Topics
 
 ### Creating the document interaction controller
-- [init(url: URL)](uidocumentinteractioncontroller/init(url:)-8wb4p.md)
+- [init(url: URL)](./uidocumentinteractioncontroller/init%28url%29-8wb4p.md)
   Creates a document interaction controller with the specified URL.
 ### Handling document-related interactions
-- [var delegate: (any UIDocumentInteractionControllerDelegate)?](uidocumentinteractioncontroller/delegate.md)
+- [var delegate: (any UIDocumentInteractionControllerDelegate)?](./uidocumentinteractioncontroller/delegate.md)
   The delegate you want to receive document interaction notifications.
-- [protocol UIDocumentInteractionControllerDelegate](uidocumentinteractioncontrollerdelegate.md)
+- [protocol UIDocumentInteractionControllerDelegate](./uidocumentinteractioncontrollerdelegate.md)
   A set of methods you can implement to respond to messages from a document interaction controller.
 ### Presenting and dismissing a document preview
-- [func presentPreview(animated: Bool) -> Bool](uidocumentinteractioncontroller/presentpreview(animated:).md)
+- [func presentPreview(animated: Bool) -> Bool](./uidocumentinteractioncontroller/presentpreview%28animated%29.md)
   Displays a full-screen preview of the target document.
-- [func dismissPreview(animated: Bool)](uidocumentinteractioncontroller/dismisspreview(animated:).md)
+- [func dismissPreview(animated: Bool)](./uidocumentinteractioncontroller/dismisspreview%28animated%29.md)
   Dismisses the currently active document preview.
 ### Presenting and dismissing menus
-- [func presentOptionsMenu(from: CGRect, in: UIView, animated: Bool) -> Bool](uidocumentinteractioncontroller/presentoptionsmenu(from:in:animated:).md)
+- [func presentOptionsMenu(from: CGRect, in: UIView, animated: Bool) -> Bool](./uidocumentinteractioncontroller/presentoptionsmenu%28from,in,animated%29.md)
   Displays an options menu and anchors it to the specified location in the view.
-- [func presentOptionsMenu(from: UIBarButtonItem, animated: Bool) -> Bool](uidocumentinteractioncontroller/presentoptionsmenu(from:animated:).md)
+- [func presentOptionsMenu(from: UIBarButtonItem, animated: Bool) -> Bool](./uidocumentinteractioncontroller/presentoptionsmenu%28from,animated%29.md)
   Displays an options menu and anchors it to the specified bar button item.
-- [func presentOpenInMenu(from: CGRect, in: UIView, animated: Bool) -> Bool](uidocumentinteractioncontroller/presentopeninmenu(from:in:animated:).md)
+- [func presentOpenInMenu(from: CGRect, in: UIView, animated: Bool) -> Bool](./uidocumentinteractioncontroller/presentopeninmenu%28from,in,animated%29.md)
   Displays a menu for opening the document and anchors that menu to the specified view.
-- [func presentOpenInMenu(from: UIBarButtonItem, animated: Bool) -> Bool](uidocumentinteractioncontroller/presentopeninmenu(from:animated:).md)
+- [func presentOpenInMenu(from: UIBarButtonItem, animated: Bool) -> Bool](./uidocumentinteractioncontroller/presentopeninmenu%28from,animated%29.md)
   Displays a menu for opening the document and anchors that menu to the specified bar button item.
-- [func dismissMenu(animated: Bool)](uidocumentinteractioncontroller/dismissmenu(animated:).md)
+- [func dismissMenu(animated: Bool)](./uidocumentinteractioncontroller/dismissmenu%28animated%29.md)
   Dismisses the currently active menu.
 ### Accessing the target document’s attributes
-- [var url: URL?](uidocumentinteractioncontroller/url.md)
+- [var url: URL?](./uidocumentinteractioncontroller/url.md)
   The URL identifying the target file on the local filesystem.
-- [var uti: String?](uidocumentinteractioncontroller/uti.md)
+- [var uti: String?](./uidocumentinteractioncontroller/uti.md)
   The type of the target file.
-- [var name: String?](uidocumentinteractioncontroller/name.md)
+- [var name: String?](./uidocumentinteractioncontroller/name.md)
   The name of the target file.
-- [var icons: [UIImage]](uidocumentinteractioncontroller/icons.md)
+- [var icons: [UIImage]](./uidocumentinteractioncontroller/icons.md)
   The images associated with the target file.
-- [var annotation: Any?](uidocumentinteractioncontroller/annotation.md)
+- [var annotation: Any?](./uidocumentinteractioncontroller/annotation.md)
   Custom property list information for the target file.
 ### Accessing the controller attributes
-- [var gestureRecognizers: [UIGestureRecognizer]](uidocumentinteractioncontroller/gesturerecognizers.md)
+- [var gestureRecognizers: [UIGestureRecognizer]](./uidocumentinteractioncontroller/gesturerecognizers.md)
   The system-supplied gesture recognizers for presenting a document interaction controller.
 ### Initializers
-- [init(URL: URL)](uidocumentinteractioncontroller/init(url:)-39lrq.md)
+- [init(URL: URL)](./uidocumentinteractioncontroller/init%28url%29-39lrq.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIActionSheetDelegate](uiactionsheetdelegate.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIActionSheetDelegate](./uiactionsheetdelegate.md)
 
 ## See Also
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+### Documents and directories
+- [Customizing a document-based app’s launch experience](./customizing-a-document-based-app-s-launch-experience.md)
   Add unique elements to your app’s document launch scene.
-- [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
+- [Adding a document browser to your app](./adding-a-document-browser-to-your-app.md)
   Give people access to their local or remote documents from within your app.
-- [Providing access to directories](providing-access-to-directories.md)
+- [Providing access to directories](./providing-access-to-directories.md)
   Use a document picker to access the content of a directory outside your app’s container.
-- [Building an app with a document browser](building-an-app-with-a-document-browser.md)
+- [Building an app with a document browser](./building-an-app-with-a-document-browser.md)
   Provide access to on-device and cloud files by adding a document browser to your app.
-- [Building a document browser app for custom file formats](building-a-document-browser-app-for-custom-file-formats.md)
+- [Building a document browser app for custom file formats](./building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
-- [class UIDocumentViewController](uidocumentviewcontroller.md)
+- [class UIDocumentViewController](./uidocumentviewcontroller.md)
   A view controller that manages and presents a document stored locally or in the cloud.
-- [class UIDocumentBrowserViewController](uidocumentbrowserviewcontroller.md)
+- [class UIDocumentBrowserViewController](./uidocumentbrowserviewcontroller.md)
   A view controller for browsing and performing actions on documents that you store locally and in the cloud.
-- [class UIDocumentPickerViewController](uidocumentpickerviewcontroller.md)
+- [class UIDocumentPickerViewController](./uidocumentpickerviewcontroller.md)
   A view controller that provides access to documents or destinations outside your app’s sandbox.
 
 

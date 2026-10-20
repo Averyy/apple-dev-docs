@@ -1,7 +1,8 @@
 # eventUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sequence of events that have occurred.
 

@@ -1,12 +1,13 @@
 # setLanguage(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the specified language is in the Spelling pop-up list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns whether the specified language is in the Spelling pop-up list.
 func setLanguage(_ language: String) -> Bool
 ```
 
+```objc
+- (BOOL) setLanguage:(NSString *) language;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the language is available in the pop-up list, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the language is available in the pop-up list, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -40,7 +45,7 @@ NSSpellChecker* spell_checker = [NSSpellChecker sharedSpellChecker];
 [spell_checker setLanguage:@"German"];
 ```
 
-For information about the strings you can use to specify a language, see [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale).
+For information about the strings you can use to specify a language, see [`NSLocale`](../../Foundation/nslocale.md).
 
 ## Parameters
 
@@ -48,13 +53,14 @@ For information about the strings you can use to specify a language, see [`NSLoc
 
 ## See Also
 
-- [var availableLanguages: [String]](nsspellchecker/availablelanguages.md)
+### Configuring Spell Checkers Languages
+- [var availableLanguages: [String]](./availablelanguages.md)
   Provides a list of all available languages.
-- [var userPreferredLanguages: [String]](nsspellchecker/userpreferredlanguages.md)
+- [var userPreferredLanguages: [String]](./userpreferredlanguages.md)
   Provides a subset of the available languages to be used for spell checking.
-- [var automaticallyIdentifiesLanguages: Bool](nsspellchecker/automaticallyidentifieslanguages.md)
+- [var automaticallyIdentifiesLanguages: Bool](./automaticallyidentifieslanguages.md)
   Sets whether the spell checker will automatically identify languages.
-- [func language() -> String](nsspellchecker/language.md)
+- [func language() -> String](./language%28%29.md)
   Returns the current language used in spell checking.
 
 

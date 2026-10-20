@@ -1,7 +1,8 @@
 # instanceDescriptorStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the stride, in bytes, between instance descriptors in the instance descriptor buffer.
 
@@ -17,6 +18,10 @@ Sets the stride, in bytes, between instance descriptors in the instance descript
 
 ```swift
 var instanceDescriptorStride: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger instanceDescriptorStride;
 ```
 
 #### Discussion

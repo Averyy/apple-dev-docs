@@ -1,12 +1,13 @@
 # NSPDFImageRep
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that can render an image from a PDF format data stream.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,42 +15,47 @@ An object that can render an image from a PDF format data stream.
 class NSPDFImageRep
 ```
 
+```objc
+@interface NSPDFImageRep : NSImageRep
+```
+
 ## Topics
 
 ### Creating Representations of Images from PDF Data
-- [init?(data: Data)](nspdfimagerep/init(data:).md)
+- [init?(data: Data)](./nspdfimagerep/init%28data%29.md)
   Returns a representation of an image initialized with the specified PDF data.
 ### Getting Data
-- [var bounds: NSRect](nspdfimagerep/bounds.md)
+- [var bounds: NSRect](./nspdfimagerep/bounds.md)
   The image representation’s bounding rectangle.
-- [var currentPage: Int](nspdfimagerep/currentpage.md)
+- [var currentPage: Int](./nspdfimagerep/currentpage.md)
   The page currently displayed by the image representation.
-- [var pageCount: Int](nspdfimagerep/pagecount.md)
+- [var pageCount: Int](./nspdfimagerep/pagecount.md)
   The number of pages in the image representation.
-- [var pdfRepresentation: Data](nspdfimagerep/pdfrepresentation.md)
+- [var pdfRepresentation: Data](./nspdfimagerep/pdfrepresentation.md)
   The PDF representation of the representation’s image.
 
 ## Relationships
 
 ### Inherits From
-- [NSImageRep](nsimagerep.md)
+- [NSImageRep](./nsimagerep.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSPDFInfo](nspdfinfo.md)
+### Vector Formats
+- [class NSPDFInfo](./nspdfinfo.md)
   An object that stores information associated with the creation of a PDF file, such as its URL, tag names, page orientation, and paper size.
-- [class NSEPSImageRep](nsepsimagerep.md)
+- [class NSEPSImageRep](./nsepsimagerep.md)
   An object that can render an image from encapsulated PostScript (EPS) code.
 
 

@@ -1,7 +1,8 @@
 # pathReports
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of reports for each network path the connection used.
 
@@ -22,9 +23,10 @@ let pathReports: [NWConnection.DataTransferReport.PathReport]
 
 ## See Also
 
-- [let aggregatePathReport: NWConnection.DataTransferReport.PathReport](nwconnection/datatransferreport/aggregatepathreport.md)
+### Examining Data Transfer
+- [let aggregatePathReport: NWConnection.DataTransferReport.PathReport](./aggregatepathreport.md)
   A report that sums counts across all network paths.
-- [NWConnection.DataTransferReport.PathReport](nwconnection/datatransferreport/pathreport.md)
+- [NWConnection.DataTransferReport.PathReport](./pathreport.md)
   A report that contains details about data transfer over a single network path.
 
 

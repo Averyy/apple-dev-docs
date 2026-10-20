@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.rotateX
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rotation around the X axis.
 

@@ -1,7 +1,8 @@
 # MTLCaptureErrorDomain
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for capture errors.
 
@@ -19,9 +20,14 @@ The error domain for capture errors.
 let MTLCaptureErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const MTLCaptureErrorDomain;
+```
+
 ## See Also
 
-- [enum MTLCaptureError](mtlcaptureerror.md)
+### Capture errors
+- [enum MTLCaptureError](./mtlcaptureerror.md)
   Errors returned by capture sessions.
 
 

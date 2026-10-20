@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Merges an individual part into the specified part of this object.
@@ -10,7 +11,7 @@ Merges an individual part into the specified part of this object.
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # setZoomFactor(_:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to set the zoom factor of the tab.
 
@@ -15,12 +16,20 @@ Called to set the zoom factor of the tab.
 ## Declaration
 
 ```swift
+optional func setZoomFactor(_ zoomFactor: Double, for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func setZoomFactor(_ zoomFactor: Double, for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) setZoomFactor:(double) zoomFactor forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Sets [`pageZoom`](wkwebview/pagezoom.md) of the tab’s web view if not implemented.
+Sets [`pageZoom`](../wkwebview/pagezoom.md) of the tab’s web view if not implemented.
 
 ## Parameters
 
@@ -30,7 +39,8 @@ Sets [`pageZoom`](wkwebview/pagezoom.md) of the tab’s web view if not implemen
 
 ## See Also
 
-- [func zoomFactor(for: WKWebExtensionContext) -> Double](wkwebextensiontab/zoomfactor(for:).md)
+### Related Documentation
+- [func zoomFactor(for: WKWebExtensionContext) -> Double](./zoomfactor%28for%29.md)
   Called when the zoom factor of the tab is needed.
 
 

@@ -1,7 +1,8 @@
 # commissionNode(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command CommissionNode
 
@@ -17,7 +18,15 @@ Command CommissionNode
 ## Declaration
 
 ```swift
+func commissionNode(with params: MTRCommissionerControlClusterCommissionNodeParams, completion: @escaping @Sendable (MTRCommissionerControlClusterReverseOpenCommissioningWindowParams?, (any Error)?) -> Void)
+```
+
+```swift
 func commissionNode(with params: MTRCommissionerControlClusterCommissionNodeParams) async throws -> MTRCommissionerControlClusterReverseOpenCommissioningWindowParams
+```
+
+```objc
+- (void) commissionNodeWithParams:(MTRCommissionerControlClusterCommissionNodeParams *) params completion:(void (^)(MTRCommissionerControlClusterReverseOpenCommissioningWindowParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

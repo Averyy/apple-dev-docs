@@ -2,6 +2,7 @@
 
 **Framework**: AVSystemRouting  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Receives data sent from a connected remote applicaiton.
@@ -19,7 +20,7 @@ func receive(_ data: Data) async throws
 
 #### Discussion
 
-> **Note**: An error if processing the received data fails.
+> **Throws**: An error if processing the received data fails.
 
 ## Parameters
 

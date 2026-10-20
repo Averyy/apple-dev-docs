@@ -1,7 +1,8 @@
 # sampleSize(at:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the size of a sample in bytes.
 
@@ -26,7 +27,7 @@ The size of the sample.
 
 #### Discussion
 
-If you specify a sample index that isn’t in the range, the system returns `0`. It also returns `0` if the sample buffer contains no sizes, which occurs if the samples in the buffer are noncontiguous, such as noninterleaved audio, or if the sample buffer contains a [`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer-q40).
+If you specify a sample index that isn’t in the range, the system returns `0`. It also returns `0` if the sample buffer contains no sizes, which occurs if the samples in the buffer are noncontiguous, such as noninterleaved audio, or if the sample buffer contains a [CVImageBuffer](../../CoreVideo/cvimagebuffer-q40.md).
 
 ## Parameters
 
@@ -34,11 +35,12 @@ If you specify a sample index that isn’t in the range, the system returns `0`.
 
 ## See Also
 
-- [var numSamples: Int](cmsamplebuffer/numsamples.md)
+### Inspecting Size Information
+- [var numSamples: Int](./numsamples.md)
   The number of media samples the buffer contains.
-- [func sampleSizes() throws -> [Int]](cmsamplebuffer/samplesizes.md)
+- [func sampleSizes() throws -> [Int]](./samplesizes%28%29.md)
   Retrieves an array of sample sizes that represents each sample in a sample buffer.
-- [var totalSampleSize: Int](cmsamplebuffer/totalsamplesize.md)
+- [var totalSampleSize: Int](./totalsamplesize.md)
   The total size in bytes of sample data in the buffer.
 
 

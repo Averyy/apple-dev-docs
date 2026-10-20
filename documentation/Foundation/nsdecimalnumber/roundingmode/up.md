@@ -1,7 +1,8 @@
 # NSDecimalNumber.RoundingMode.up
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Round return values up.
 
@@ -20,13 +21,18 @@ Round return values up.
 case up
 ```
 
+```c
+NSRoundUp
+```
+
 ## See Also
 
-- [NSDecimalNumber.RoundingMode.plain](nsdecimalnumber/roundingmode/plain.md)
+### Constants
+- [NSDecimalNumber.RoundingMode.plain](./plain.md)
   Round to the closest possible return value; when caught halfway between two positive numbers, round up; when caught between two negative numbers, round down.
-- [NSDecimalNumber.RoundingMode.down](nsdecimalnumber/roundingmode/down.md)
+- [NSDecimalNumber.RoundingMode.down](./down.md)
   Round return values down.
-- [NSDecimalNumber.RoundingMode.bankers](nsdecimalnumber/roundingmode/bankers.md)
+- [NSDecimalNumber.RoundingMode.bankers](./bankers.md)
   Round to the closest possible return value; when halfway between two possibilities, return the possibility whose last digit is even.
 
 

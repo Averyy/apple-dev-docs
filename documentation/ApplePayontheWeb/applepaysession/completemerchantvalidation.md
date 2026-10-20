@@ -1,7 +1,8 @@
 # completeMerchantValidation
 
 **Framework**: Apple Pay on the Web  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Completes the validation for a merchant session.
 
@@ -11,7 +12,7 @@ Completes the validation for a merchant session.
 
 ## Declaration
 
-```swift
+```
 undefined completeMerchantValidation(
 	any merchantSession
 );
@@ -19,14 +20,14 @@ undefined completeMerchantValidation(
 
 ## Mentions
 
-- [Providing Merchant Validation](providing-merchant-validation.md)
-- [Requesting an Apple Pay payment session](requesting-an-apple-pay-payment-session.md)
+- [Providing Merchant Validation](../providing-merchant-validation.md)
+- [Requesting an Apple Pay payment session](../requesting-an-apple-pay-payment-session.md)
 
 #### Discussion
 
-Your server receives the merchant session object when it calls the `Payment Session` endpoint as described in [`Providing Merchant Validation`](providing-merchant-validation.md).
+Your server receives the merchant session object when it calls the `Payment Session` endpoint as described in [Providing Merchant Validation](../providing-merchant-validation.md).
 
-You must pass the valid merchant session object to the [`completeMerchantValidation`](applepaysession/completemerchantvalidation.md) method to enable the user to authorize a transaction.
+You must pass the valid merchant session object to the [`completeMerchantValidation`](./completemerchantvalidation.md) method to enable the user to authorize a transaction.
 
 The guidelines for working with a merchant session are:
 
@@ -40,11 +41,12 @@ The guidelines for working with a merchant session are:
 
 ## See Also
 
-- [begin](applepaysession/begin.md)
+### Getting merchant validation
+- [begin](./begin.md)
   Begins the merchant validation process.
-- [onvalidatemerchant](applepaysession/onvalidatemerchant.md)
+- [onvalidatemerchant](./onvalidatemerchant.md)
   An event handler the system calls when it displays the payment sheet.
-- [ApplePayValidateMerchantEvent](applepayvalidatemerchantevent.md)
+- [ApplePayValidateMerchantEvent](../applepayvalidatemerchantevent.md)
   An event object that contains the validation URL.
 
 

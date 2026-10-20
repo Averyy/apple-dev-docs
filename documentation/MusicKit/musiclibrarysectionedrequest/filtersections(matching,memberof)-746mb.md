@@ -1,7 +1,8 @@
 # filterSections(matching:memberOf:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters sections by an optional property for an array of possible values.
 

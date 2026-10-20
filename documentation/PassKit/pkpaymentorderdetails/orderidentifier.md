@@ -1,7 +1,8 @@
 # orderIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique order identifier scoped to your order type identifier.
 
@@ -18,13 +19,18 @@ A unique order identifier scoped to your order type identifier.
 var orderIdentifier: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * orderIdentifier;
+```
+
 ## See Also
 
-- [var authenticationToken: String](pkpaymentorderdetails/authenticationtoken.md)
+### Identifying and authenticating the order
+- [var authenticationToken: String](./authenticationtoken.md)
   The authentification token supplied to your web service.
-- [var orderTypeIdentifier: String](pkpaymentorderdetails/ordertypeidentifier.md)
+- [var orderTypeIdentifier: String](./ordertypeidentifier.md)
   An identifier for the order type associated with the order.
-- [var webServiceURL: URL](pkpaymentorderdetails/webserviceurl.md)
+- [var webServiceURL: URL](./webserviceurl.md)
   The URL for your web service.
 
 

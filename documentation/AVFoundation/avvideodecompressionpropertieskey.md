@@ -1,7 +1,8 @@
 # AVVideoDecompressionPropertiesKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key that indicates the video decompression properties to pass to the video decoder.
 
@@ -20,25 +21,30 @@ The key that indicates the video decompression properties to pass to the video d
 let AVVideoDecompressionPropertiesKey: String
 ```
 
+```c
+extern NSString * const AVVideoDecompressionPropertiesKey;
+```
+
 #### Discussion
 
-The value for this key is specified as an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object containing other keys to pass to the video decoder.
+The value for this key is specified as an [`NSDictionary`](../Foundation/nsdictionary.md) object containing other keys to pass to the video decoder.
 
 ## See Also
 
-- [let AVVideoCompressionPropertiesKey: String](avvideocompressionpropertieskey.md)
+### Compression
+- [let AVVideoCompressionPropertiesKey: String](./avvideocompressionpropertieskey.md)
   A key to access the dictionary of compression properties for a video asset.
-- [let AVVideoAverageBitRateKey: String](avvideoaveragebitratekey.md)
+- [let AVVideoAverageBitRateKey: String](./avvideoaveragebitratekey.md)
   A key to access the average bit rate—as bits per second—used in compressing video.
-- [let AVVideoQualityKey: String](avvideoqualitykey.md)
+- [let AVVideoQualityKey: String](./avvideoqualitykey.md)
   A key to set the JPEG compression quality of the video.
-- [let AVVideoMaxKeyFrameIntervalKey: String](avvideomaxkeyframeintervalkey.md)
+- [let AVVideoMaxKeyFrameIntervalKey: String](./avvideomaxkeyframeintervalkey.md)
   A key to access the maximum interval between keyframes.
-- [let AVVideoMaxKeyFrameIntervalDurationKey: String](avvideomaxkeyframeintervaldurationkey.md)
+- [let AVVideoMaxKeyFrameIntervalDurationKey: String](./avvideomaxkeyframeintervaldurationkey.md)
   A key to access the maximum interval duration between keyframes.
-- [let AVVideoAllowFrameReorderingKey: String](avvideoallowframereorderingkey.md)
+- [let AVVideoAllowFrameReorderingKey: String](./avvideoallowframereorderingkey.md)
   A key to access permission to reorder frames.
-- [let AVVideoAppleProRAWBitDepthKey: String](avvideoappleprorawbitdepthkey.md)
+- [let AVVideoAppleProRAWBitDepthKey: String](./avvideoappleprorawbitdepthkey.md)
   A key to access the Apple ProRAW bit depth.
 
 

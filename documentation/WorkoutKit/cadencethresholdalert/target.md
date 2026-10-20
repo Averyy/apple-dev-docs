@@ -1,7 +1,8 @@
 # target
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target threshold.
 
@@ -20,7 +21,8 @@ var target: Measurement<UnitFrequency>
 
 ## See Also
 
-- [var targetQuantity: HKQuantity](cadencethresholdalert/targetquantity.md)
+### Accessing the alert data
+- [var targetQuantity: HKQuantity](./targetquantity.md)
   A HealthKit quantity that represents the target cadence threshold.
 
 

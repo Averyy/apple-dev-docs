@@ -1,7 +1,8 @@
 # fetchCurrentDownloads()
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -17,9 +18,14 @@
 func fetchCurrentDownloads() throws -> [BADownload]
 ```
 
+```objc
+- (NSArray<BADownload *> *) fetchCurrentDownloads:(NSError **) error;
+```
+
 ## See Also
 
-- [func fetchCurrentDownloads(completionHandler: ([BADownload], (any Error)?) -> Void)](badownloadmanager/fetchcurrentdownloads(completionhandler:).md)
+### Fetching in-progress downloads
+- [func fetchCurrentDownloads(completionHandler: ([BADownload], (any Error)?) -> Void)](./fetchcurrentdownloads%28completionhandler%29.md)
   Fetches the contents of the manager’s download queue.
 
 

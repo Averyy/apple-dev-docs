@@ -1,7 +1,8 @@
 # ShieldAction.secondSecondarySubmenuItemPressed
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An action that occurs when someone selects the second item in the secondary button’s submenu.
 
@@ -18,15 +19,16 @@ case secondSecondarySubmenuItemPressed
 
 #### Discussion
 
-The system invokes this callback on your app’s [`ShieldActionDelegate`](shieldactiondelegate.md) for the second item in the submenu when your app defines the [`secondaryButtonSubmenuItems`](https://developer.apple.com/documentation/managedsettingsui/shieldconfiguration/secondarybuttonsubmenuitems) array with two or more elements.
+The system invokes this callback on your app’s [`ShieldActionDelegate`](../shieldactiondelegate.md) for the second item in the submenu when your app defines the [`secondaryButtonSubmenuItems`](../../ManagedSettingsUI/shieldconfiguration/secondarybuttonsubmenuitems.md) array with two or more elements.
 
 ## See Also
 
-- [ShieldAction.secondaryButtonPressed](shieldaction/secondarybuttonpressed.md)
+### Responding to secondary button actions
+- [ShieldAction.secondaryButtonPressed](./secondarybuttonpressed.md)
   The user pressed the optional secondary button underneath the primary button of a shield.
-- [ShieldAction.firstSecondarySubmenuItemPressed](shieldaction/firstsecondarysubmenuitempressed.md)
+- [ShieldAction.firstSecondarySubmenuItemPressed](./firstsecondarysubmenuitempressed.md)
   An action that occurs when someone selects the first item in the secondary button’s submenu.
-- [ShieldAction.thirdSecondarySubmenuItemPressed](shieldaction/thirdsecondarysubmenuitempressed.md)
+- [ShieldAction.thirdSecondarySubmenuItemPressed](./thirdsecondarysubmenuitempressed.md)
   An action that occurs when someone selects the third item in the secondary button’s submenu.
 
 

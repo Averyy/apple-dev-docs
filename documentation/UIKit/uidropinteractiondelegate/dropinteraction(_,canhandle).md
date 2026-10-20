@@ -1,7 +1,8 @@
 # dropInteraction(_:canHandle:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether it can handle the session’s drag items.
 
@@ -17,17 +18,21 @@ Asks the delegate whether it can handle the session’s drag items.
 optional func dropInteraction(_ interaction: UIDropInteraction, canHandle session: any UIDropSession) -> Bool
 ```
 
+```objc
+- (BOOL) dropInteraction:(UIDropInteraction *) interaction canHandleSession:(id<UIDropSession>) session;
+```
+
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the interaction supports the drag items in the sessions; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the interaction supports the drag items in the sessions; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Returning [`true`](https://developer.apple.com/documentation/swift/true) doesn’t mean the interaction will accept the drop. Instead, it tells the system that the interaction has interest in, and can handle, the drop session.
+Returning [`true`](../../Swift/true.md) doesn’t mean the interaction will accept the drop. Instead, it tells the system that the interaction has interest in, and can handle, the drop session.
 
 To determine if the interaction can handle the session, check the data type of session’s drag items. For instance, if you’re interested in drop activities that contain images, you can do the following:
 
@@ -57,7 +62,8 @@ func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDrop
 
 ## See Also
 
-- [func dropInteraction(UIDropInteraction, performDrop: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:performdrop:).md)
+### Handling the drop
+- [func dropInteraction(UIDropInteraction, performDrop: any UIDropSession)](./dropinteraction%28_,performdrop%29.md)
   Tells the delegate it can request the item provider data from the session’s drag items.
 
 

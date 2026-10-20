@@ -2,6 +2,7 @@
 
 **Framework**: Core Media  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Queries the relative rate of one timebase or clock relative to another timebase or clock, and the times of each timebase or clock at which the relative rate went into effect.
@@ -27,7 +28,8 @@ func rateAndAnchorTime<T>(relativeTo clockOrTimebase: T) throws -> (rate: Double
 
 ## See Also
 
-- [func rate<T>(relativeTo: T) -> Double](cmsyncprotocol/rate(relativeto:).md)
+### Getting the Time Rate
+- [func rate<T>(relativeTo: T) -> Double](./rate%28relativeto%29.md)
   Queries the relative rate of one timebase or clock relative to another timebase or clock.
 
 

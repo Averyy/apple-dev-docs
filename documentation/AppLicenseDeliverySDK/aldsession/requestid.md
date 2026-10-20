@@ -1,7 +1,8 @@
 # requestID
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 requestID of the session
 

@@ -1,17 +1,20 @@
 # availableChapterLocales
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locales of the asset’s chapter metadata.
 
 **Availability**:
-- iOS 4.3+
-- iPadOS 4.3+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- watchOS 1.0+
+- iOS 4.3+ - Deprecated in 16.0
+- iPadOS 4.3+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.7+ - Deprecated in 13.0
+- tvOS 9.0+ - Deprecated in 16.0
+- watchOS 1.0+ - Deprecated in 9.0
+
+> **Deprecated**: Load the value of [`availableChapterLocales`](../avpartialasyncproperty/availablechapterlocales.md) asynchronously instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ The locales of the asset’s chapter metadata.
 var availableChapterLocales: [Locale] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSLocale *> * availableChapterLocales;
+```
+
 ## Mentions
 
-- [Presenting chapter markers](presenting-chapter-markers.md)
+- [Presenting chapter markers](../presenting-chapter-markers.md)
 
 
 ---

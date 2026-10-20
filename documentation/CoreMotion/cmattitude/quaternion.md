@@ -1,7 +1,8 @@
 # quaternion
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a quaternion representing the device’s attitude.
 
@@ -19,15 +20,21 @@ Returns a quaternion representing the device’s attitude.
 var quaternion: CMQuaternion { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMQuaternion quaternion;
+```
+
 #### Discussion
 
-See the discussion of the [`CMQuaternion`](cmquaternion.md) type in “Constants” for further information.
+See the discussion of the [`CMQuaternion`](../cmquaternion.md) type in “Constants” for further information.
 
 ## See Also
 
-- [var rotationMatrix: CMRotationMatrix](cmattitude/rotationmatrix.md)
+### Related Documentation
+- [var rotationMatrix: CMRotationMatrix](./rotationmatrix.md)
   Returns a rotation matrix representing the device’s attitude.
-- [struct CMQuaternion](cmquaternion.md)
+### Getting a Mathematical Representation of Attitude as a Quaternion
+- [struct CMQuaternion](../cmquaternion.md)
   The type for a quaternion representing a measurement of attitude.
 
 

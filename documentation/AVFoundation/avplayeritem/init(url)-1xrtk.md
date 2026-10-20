@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player item with a specified URL.
 
@@ -21,15 +22,19 @@ nonisolated
 convenience init(url URL: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL;
+```
+
 #### Return Value
 
 A new player item, prepared to use `URL`.
 
 #### Discussion
 
-This method immediately returns the item, but with the status [`AVPlayerItem.Status.unknown`](avplayeritem/status-swift.enum/unknown.md).
+This method immediately returns the item, but with the status [`AVPlayerItem.Status.unknown`](./status-swift.enum/unknown.md).
 
-Associating the player item with an [`AVPlayer`](avplayer.md) immediately begins enqueuing its media and preparing it for playback. If the URL contains valid data that can be used by the player item, its status later changes to [`AVPlayerItem.Status.readyToPlay`](avplayeritem/status-swift.enum/readytoplay.md). If the URL contains no valid data or otherwise can’t be used by the player item, its status later changes to [`AVPlayerItem.Status.failed`](avplayeritem/status-swift.enum/failed.md). You can determine the nature of the failure by querying the player item’s [`error`](avplayeritem/error.md) property.
+Associating the player item with an [`AVPlayer`](../avplayer.md) immediately begins enqueuing its media and preparing it for playback. If the URL contains valid data that can be used by the player item, its status later changes to [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md). If the URL contains no valid data or otherwise can’t be used by the player item, its status later changes to [`AVPlayerItem.Status.failed`](./status-swift.enum/failed.md). You can determine the nature of the failure by querying the player item’s [`error`](./error.md) property.
 
 ## Parameters
 
@@ -37,13 +42,14 @@ Associating the player item with an [`AVPlayer`](avplayer.md) immediately begins
 
 ## See Also
 
-- [convenience init(asset: AVAsset)](avplayeritem/init(asset:)-87rjl.md)
+### Creating a player item
+- [convenience init(asset: AVAsset)](./init%28asset%29-87rjl.md)
   Creates a player item for a specified asset.
-- [convenience init(asset: any AVAsset & Sendable)](avplayeritem/init(asset:)-1nme9.md)
-- [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md)
+- [convenience init(asset: any AVAsset & Sendable)](./init%28asset%29-1nme9.md)
+- [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-5czjh.md)
   Creates a player item for the asset, and automatically loads values for the specified properties.
-- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-85hal.md)
-- [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](avplayeritem/init(asset:automaticallyloadedassetkeys:)-8x4.md)
+- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-85hal.md)
+- [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](./init%28asset,automaticallyloadedassetkeys%29-8x4.md)
   Creates a player item with the specified asset and the asset keys to automatically load.
 
 

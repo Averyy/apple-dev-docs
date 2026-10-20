@@ -1,7 +1,8 @@
 # closeReadWithError(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Close the flow for further read operations.
 
@@ -18,19 +19,24 @@ Close the flow for further read operations.
 func closeReadWithError(_ error: (any Error)?)
 ```
 
+```objc
+- (void) closeReadWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Handling Flow Copying](handling-flow-copying.md)
+- [Handling Flow Copying](../handling-flow-copying.md)
 
 ## Parameters
 
-- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object indicating to the system the error that led to the closure. If the flow is not being closed due to an error, this parameter should be set to nil. See `NEAppProxyFlowError` below for a list of acceptable error codes.
+- `error`: An [`NSError`](../../Foundation/nserror.md) object indicating to the system the error that led to the closure. If the flow is not being closed due to an error, this parameter should be set to nil. See `NEAppProxyFlowError` below for a list of acceptable error codes.
 
 ## See Also
 
-- [func open(withLocalEndpoint: NWHostEndpoint?, completionHandler: ((any Error)?) -> Void)](neappproxyflow/open(withlocalendpoint:completionhandler:).md)
+### Managing the flow life cycle
+- [func open(withLocalEndpoint: NWHostEndpoint?, completionHandler: ((any Error)?) -> Void)](./open%28withlocalendpoint,completionhandler%29.md)
   Opens the flow, indicating to the system that the caller is ready to start receiving and sending data.
-- [func closeWriteWithError((any Error)?)](neappproxyflow/closewritewitherror(_:).md)
+- [func closeWriteWithError((any Error)?)](./closewritewitherror%28_%29.md)
   Close the flow for further write operations.
 
 

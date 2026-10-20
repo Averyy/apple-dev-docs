@@ -1,7 +1,8 @@
 # subject
 
 **Framework**: Message UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial subject of the message.
 
@@ -17,17 +18,22 @@ The initial subject of the message.
 var subject: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subject;
+```
+
 #### Discussion
 
 If you want to provide an initial subject for a message, do so before you display it. After the message is displayed you cannot change the value of this property.
 
 ## See Also
 
-- [var recipients: [String]?](mfmessagecomposeviewcontroller/recipients.md)
+### Setting the initial message information
+- [var recipients: [String]?](./recipients.md)
   An array of strings that contains the initial recipients of the message.
-- [var body: String?](mfmessagecomposeviewcontroller/body.md)
+- [var body: String?](./body.md)
   The initial content of the message.
-- [var message: MSMessage?](mfmessagecomposeviewcontroller/message.md)
+- [var message: MSMessage?](./message.md)
   A message object from your iMessage app extension.
 
 

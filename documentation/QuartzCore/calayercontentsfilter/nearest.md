@@ -1,7 +1,8 @@
 # nearest
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Nearest neighbor interpolation filter.
 
@@ -19,11 +20,16 @@ Nearest neighbor interpolation filter.
 static let nearest: CALayerContentsFilter
 ```
 
+```c
+extern CALayerContentsFilter const kCAFilterNearest;
+```
+
 ## See Also
 
-- [static let linear: CALayerContentsFilter](calayercontentsfilter/linear.md)
+### Constants
+- [static let linear: CALayerContentsFilter](./linear.md)
   Linear interpolation filter.
-- [static let trilinear: CALayerContentsFilter](calayercontentsfilter/trilinear.md)
+- [static let trilinear: CALayerContentsFilter](./trilinear.md)
   Trilinear minification filter. Enables mipmap generation. Some renderers may ignore this, or impose additional restrictions, such as source images requiring power-of-two dimensions.
 
 

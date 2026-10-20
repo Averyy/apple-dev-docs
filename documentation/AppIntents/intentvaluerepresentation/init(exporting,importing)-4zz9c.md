@@ -1,7 +1,8 @@
 # init(exporting:importing:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value representation that supports bidirectional conversion between an entity and a system intent value.
 
@@ -19,6 +20,8 @@ Creates a value representation that supports bidirectional conversion between an
 ```swift
 init(exporting: @escaping @Sendable (Item) async throws -> IntentValue, importing: @escaping @Sendable (IntentValue) async throws -> Item)
 ```
+
+Available when `Item` conforms to `Transferable` and `IntentValue` conforms to `_SystemIntentValue`.
 
 #### Example
 

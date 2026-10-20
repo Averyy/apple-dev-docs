@@ -1,7 +1,8 @@
 # didComplete(error:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the client that the task completed.
 
@@ -12,6 +13,10 @@ Informs the client that the task completed.
 
 ```swift
 func didComplete(error: (any Error)?)
+```
+
+```objc
+- (void) didCompleteWithError:(NSError *) error;
 ```
 
 ## Parameters

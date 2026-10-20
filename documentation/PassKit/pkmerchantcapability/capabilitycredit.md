@@ -1,15 +1,16 @@
 # capabilityCredit
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
-- macOS 11.0+
-- visionOS ?+
-- watchOS 3.0+
+- iOS 9.0+ - Deprecated in 17.0 (renamed: credit)
+- iPadOS 9.0+ - Deprecated in 17.0 (renamed: credit)
+- Mac Catalyst 9.0+ - Deprecated in 17.0 (renamed: credit)
+- macOS 11.0+ - Deprecated in 14.0 (renamed: credit)
+- visionOS
+- watchOS 3.0+ - Deprecated in 10.0 (renamed: credit)
 
 ## Declaration
 

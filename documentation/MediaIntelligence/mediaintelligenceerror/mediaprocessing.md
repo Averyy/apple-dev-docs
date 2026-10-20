@@ -1,7 +1,8 @@
 # MediaIntelligenceError.mediaProcessing
 
 **Framework**: Media Intelligence  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework can’t process a media asset.
 
@@ -25,11 +26,12 @@ This error occurs when the framework can’t read or process an image or video a
 
 ## See Also
 
-- [MediaIntelligenceError.faceGroupProcessing](mediaintelligenceerror/facegroupprocessing.md)
+### Errors
+- [MediaIntelligenceError.faceGroupProcessing](./facegroupprocessing.md)
   The framework can’t complete a face grouping operation.
-- [MediaIntelligenceError.resultFetching](mediaintelligenceerror/resultfetching.md)
+- [MediaIntelligenceError.resultFetching](./resultfetching.md)
   The framework can’t retrieve analysis results.
-- [MediaIntelligenceError.workingDirectory](mediaintelligenceerror/workingdirectory.md)
+- [MediaIntelligenceError.workingDirectory](./workingdirectory.md)
   The framework can’t access the working directory.
 
 

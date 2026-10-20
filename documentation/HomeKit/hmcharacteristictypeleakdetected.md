@@ -1,7 +1,8 @@
 # HMCharacteristicTypeLeakDetected
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A leak detection indicator.
 
@@ -19,21 +20,26 @@ A leak detection indicator.
 let HMCharacteristicTypeLeakDetected: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeLeakDetected;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueLeakStatus`](hmcharacteristicvalueleakstatus.md) enumeration. This characteristic typically applies to water, but can also be used for other fluids, like natural gas.
+The corresponding value is one of the constants in the [`HMCharacteristicValueLeakStatus`](./hmcharacteristicvalueleakstatus.md) enumeration. This characteristic typically applies to water, but can also be used for other fluids, like natural gas.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueLeakStatus](hmcharacteristicvalueleakstatus.md)
+- [enum HMCharacteristicValueLeakStatus](./hmcharacteristicvalueleakstatus.md)
   Possible values for leak detection.
 
 ## See Also
 
-- [let HMCharacteristicTypeWaterLevel: String](hmcharacteristictypewaterlevel.md)
+### Water
+- [let HMCharacteristicTypeWaterLevel: String](./hmcharacteristictypewaterlevel.md)
   The water level measured by an accessory.
-- [let HMCharacteristicTypeValveType: String](hmcharacteristictypevalvetype.md)
+- [let HMCharacteristicTypeValveType: String](./hmcharacteristictypevalvetype.md)
   The type of automated valve that controls fluid flow.
 
 

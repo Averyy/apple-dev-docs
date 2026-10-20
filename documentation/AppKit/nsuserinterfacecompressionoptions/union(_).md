@@ -1,7 +1,8 @@
 # union(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new compression options object representing the union with the provided options.
 
@@ -14,6 +15,10 @@ Creates a new compression options object representing the union with the provide
 func union(_ options: NSUserInterfaceCompressionOptions) -> NSUserInterfaceCompressionOptions
 ```
 
+```objc
+- (NSUserInterfaceCompressionOptions *) optionsByAddingOptions:(NSUserInterfaceCompressionOptions *) options;
+```
+
 #### Return Value
 
 A new `NSCompressibleUserInterfaceOptions` object which represents the union with the supplied compression options.
@@ -24,7 +29,8 @@ A new `NSCompressibleUserInterfaceOptions` object which represents the union wit
 
 ## See Also
 
-- [func subtracting(NSUserInterfaceCompressionOptions) -> NSUserInterfaceCompressionOptions](nsuserinterfacecompressionoptions/subtracting(_:).md)
+### Combining compression options
+- [func subtracting(NSUserInterfaceCompressionOptions) -> NSUserInterfaceCompressionOptions](./subtracting%28_%29.md)
   Creates a new compression options object with the supplied options removed.
 
 

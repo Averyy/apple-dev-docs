@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A primitive with zero values.
@@ -12,7 +13,7 @@ A primitive with zero values.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,7 +24,8 @@ static var zero: Self { get }
 
 ## See Also
 
-- [static var infinity: Self](primitive3d/infinity.md)
+### Type properties
+- [static var infinity: Self](./infinity.md)
   A primitive with infinite values.
 
 

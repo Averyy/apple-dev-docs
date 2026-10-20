@@ -1,7 +1,8 @@
 # init(region:retainedElements:nonRetainedElements:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mobile national ID card data request.
 

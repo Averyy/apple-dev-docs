@@ -1,7 +1,8 @@
 # init(width:locale:usage:numberFormatStyle:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance using the provided width, locale, usage type, and number format.
 
@@ -29,7 +30,8 @@ init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale = .autou
 
 ## See Also
 
-- [init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale, usage: MeasurementFormatUnitUsage<UnitType>, hidesScaleName: Bool, numberFormatStyle: FloatingPointFormatStyle<Double>?)](measurement/formatstyle/init(width:locale:usage:hidesscalename:numberformatstyle:).md)
+### Creating a measurement format style
+- [init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale, usage: MeasurementFormatUnitUsage<UnitType>, hidesScaleName: Bool, numberFormatStyle: FloatingPointFormatStyle<Double>?)](./init%28width,locale,usage,hidesscalename,numberformatstyle%29.md)
   Creates an instance using the provided width, locale, usage type, number format, and the option to hide the unit name.
 
 

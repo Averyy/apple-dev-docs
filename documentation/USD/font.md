@@ -1,6 +1,7 @@
 # font
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An array of font names.
 
@@ -18,21 +19,22 @@ string[] font
 
 ## See Also
 
-- [content](content.md)
+### Properties
+- [content](./content.md)
   The characters that the text displays.
-- [pointSize](pointsize.md)
+- [pointSize](./pointsize.md)
   The size of the text’s font.
-- [width](width.md)
+- [width](./width.md)
   The width of the text’s bounding box.
-- [height](height.md)
+- [height](./height.md)
   The height of the text’s bounding box.
-- [depth](depth.md)
+- [depth](./depth.md)
   A value that defines the depth, in scene units, of the text’s extrusion.
-- [wrapMode](wrapmode.md)
+- [wrapMode](./wrapmode.md)
   An option that determines the flow of the text.
-- [horizontalAlignment](horizontalalignment.md)
+- [horizontalAlignment](./horizontalalignment.md)
   An option that controls the text’s horizontal placement within its bounding box.
-- [verticalAlignment](verticalalignment.md)
+- [verticalAlignment](./verticalalignment.md)
   An option that controls the text’s vertical placement within its bounding rectangle.
 
 

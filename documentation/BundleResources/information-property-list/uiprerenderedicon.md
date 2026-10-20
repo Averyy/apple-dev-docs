@@ -1,7 +1,8 @@
 # UIPrerenderedIcon
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app’s icon contains a shine effect.
 
@@ -11,9 +12,10 @@ A Boolean value that indicates whether the app’s icon contains a shine effect.
 - tvOS 9.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `UIPrerenderedIcon` (Icon already includes gloss effects)
+- **Type**: boolean
 
 #### Discussion
 
@@ -21,13 +23,14 @@ If `YES`, the system doesn’t apply a shine effect to the app icon; otherwise, 
 
 ## See Also
 
-- [CFBundleIcons](information-property-list/cfbundleicons.md)
+### Icons
+- [CFBundleIcons](./cfbundleicons.md)
   Information about all of the icons used by the app.
-- [CFBundleIconFiles](information-property-list/cfbundleiconfiles.md)
+- [CFBundleIconFiles](./cfbundleiconfiles.md)
   The names of the bundle’s icon image files.
-- [CFBundleIconFile](information-property-list/cfbundleiconfile.md)
+- [CFBundleIconFile](./cfbundleiconfile.md)
   The file containing the bundle’s icon.
-- [CFBundleIconName](information-property-list/cfbundleiconname.md)
+- [CFBundleIconName](./cfbundleiconname.md)
   The name of the asset that represents the app icon.
 
 

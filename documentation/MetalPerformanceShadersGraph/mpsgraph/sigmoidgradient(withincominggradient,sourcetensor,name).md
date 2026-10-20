@@ -1,7 +1,8 @@
 # sigmoidGradient(withIncomingGradient:sourceTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the gradient of the sigmoid function using the incoming gradient tensor.
 
@@ -19,9 +20,13 @@ Computes the gradient of the sigmoid function using the incoming gradient tensor
 func sigmoidGradient(withIncomingGradient gradient: MPSGraphTensor, sourceTensor source: MPSGraphTensor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) sigmoidGradientWithIncomingGradient:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source name:(NSString *) name;
+```
+
 #### Return Value
 
-A valid [`MPSGraphTensor`](mpsgraphtensor.md) object
+A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 
 ## Parameters
 

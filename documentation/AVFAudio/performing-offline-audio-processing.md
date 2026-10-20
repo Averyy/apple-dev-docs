@@ -1,6 +1,8 @@
 # Performing offline audio processing
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: Sample Code  
+**Download**: [PerformingOfflineAudioProcessing.zip](https://docs-assets.developer.apple.com/published/ca0e22ea61f7/PerformingOfflineAudioProcessing.zip)
 
 Add offline audio processing features to your app by enabling offline manual rendering mode.
 
@@ -9,19 +11,19 @@ Add offline audio processing features to your app by enabling offline manual ren
 
 #### Overview
 
-You commonly use [`AVAudioEngine`](avaudioengine.md) to add advanced real-time audio playback features to your app. In a real-time scenario, the audio hardware drives the engine’s I/O and renders the data to the output hardware, such as the device’s built-in speaker or connected headphones.
+You commonly use [`AVAudioEngine`](./avaudioengine.md) to add advanced real-time audio playback features to your app. In a real-time scenario, the audio hardware drives the engine’s I/O and renders the data to the output hardware, such as the device’s built-in speaker or connected headphones.
 
-![Flow diagram showing an app using an audio engine in a real-time context. The audio flows from the app to a player node, then to a mixer node, followed by the output node, and ultimately to the device speaker or connected headphones.](/images/com.apple.avfaudio/realtime.png)
+![Flow diagram showing an app using an audio engine in a real-time context. The audio flows from the app to a player node, then to a mixer node, followed by the output node, and ultimately to the device speaker or connected headphones.](https://developer.apple.com/tutorials/images/com.apple.avfaudio/realtime.png)
 
 You can also use `AVAudioEngine` to perform *offline* audio processing by enabling the engine’s offline manual rendering mode.  In this mode, the engine’s input and output nodes are disconnected from the audio hardware and the rendering is driven by your app. You use offline manual rendering mode to perform advanced postprocessing tasks, such as applying effects or performing audio analysis, usually much faster than you can do in real time.
 
-![Flow diagram showing an app using an audio engine in an offline context. The audio flows from the app to a player node, then to an effect node, followed by the output node, and finally back to the app to write the processed audio to disk.](/images/com.apple.avfaudio/offline.png)
+![Flow diagram showing an app using an audio engine in an offline context. The audio flows from the app to a player node, then to an effect node, followed by the output node, and finally back to the app to write the processed audio to disk.](https://developer.apple.com/tutorials/images/com.apple.avfaudio/offline.png)
 
 This sample playground shows you how to enable the audio engine’s manual rendering mode and drive the rendering process from your app.
 
-##### Prepare the Source Audio
+##### Prepare the source audio
 
-The sample loads its audio data from a file contained within the playground. It creates an [`AVAudioFile`](avaudiofile.md) object to wrap the on-disk file and retrieves its input format, which is used to configure later stages of the audio pipeline.
+The sample loads its audio data from a file contained within the playground. It creates an [`AVAudioFile`](./avaudiofile.md) object to wrap the on-disk file and retrieves its input format, which is used to configure later stages of the audio pipeline.
 
 ```swift
 let sourceFile: AVAudioFile
@@ -35,7 +37,7 @@ do {
 }
 ```
 
-##### Create and Configure the Audio Engine
+##### Create and configure the audio engine
 
 The sample creates the engine and configures it to perform the desired processing. It creates a player node to drive the input, feeds its output into a reverb node, and connects the output of the reverb node to the main mixer node (which is implicitly connected to the output node). Finally, it schedules the audio file for playback.
 
@@ -59,9 +61,9 @@ engine.connect(reverb, to: engine.mainMixerNode, format: format)
 player.scheduleFile(sourceFile, at: nil)
 ```
 
-##### Enable Offline Manual Rendering Mode
+##### Enable offline manual rendering mode
 
-If you started the engine at this point, you’d hear the audio playing through the active output device. To change this default behavior, you need to explicitly configure the engine to use manual rendering mode. The sample enables this mode by calling the [`enableManualRenderingMode(_:format:maximumFrameCount:)`](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md) method, passing it the offline rendering mode value, the audio format, and the maximum number of frames to render in a given pass of the render thread.
+If you started the engine at this point, you’d hear the audio playing through the active output device. To change this default behavior, you need to explicitly configure the engine to use manual rendering mode. The sample enables this mode by calling the [`enableManualRenderingMode(_:format:maximumFrameCount:)`](./avaudioengine/enablemanualrenderingmode%28_,format,maximumframecount%29.md) method, passing it the offline rendering mode value, the audio format, and the maximum number of frames to render in a given pass of the render thread.
 
 ```swift
 do {
@@ -85,7 +87,7 @@ do {
 }
 ```
 
-##### Prepare the Output Destinations
+##### Prepare the output destinations
 
 Unlike in a real-time playback scenario, the output from the audio engine isn’t rendered to the output hardware, but is instead rendered to an output buffer and ultimately written to a file on disk. The sample creates the buffer object to render into, and an output file in your `~/Documents` directory to save the processed audio.
 
@@ -104,7 +106,7 @@ do {
 }
 ```
 
-##### Manually Render the Audio
+##### Manually render the audio
 
 The sample sequentially loops over the full duration of the input audio file, and in each pass, asks the engine to render the next batch of frames to the output buffer. If the audio engine successfully renders the data, the sample writes the buffer to the output file on disk. When the sample finishes processing the audio data, it stops the player and engine.
 
@@ -147,11 +149,12 @@ engine.stop()
 
 ## See Also
 
-- [Building a signal generator](building-a-signal-generator.md)
+### Custom and offline rendering
+- [Building a signal generator](./building-a-signal-generator.md)
   Generate audio signals using an audio source node and a custom render callback.
-- [class AVAudioSourceNode](avaudiosourcenode.md)
+- [class AVAudioSourceNode](./avaudiosourcenode.md)
   An object that supplies audio data.
-- [class AVAudioSinkNode](avaudiosinknode.md)
+- [class AVAudioSinkNode](./avaudiosinknode.md)
   An object that receives audio data.
 
 

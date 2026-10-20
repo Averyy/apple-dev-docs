@@ -1,18 +1,19 @@
 # iOS & iPadOS 27.2 RC Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27.2 RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [`Xcode 27.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27_2-release-notes).
+The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27.2 RC. The SDK comes bundled with Xcode 27.2. For information on the compatibility requirements for Xcode 27.2, see [Xcode 27.2 Release Notes](../Xcode-Release-Notes/xcode-27_2-release-notes.md).
 
 ##### App Tracking Transparency
 
 ###### New Features
 
-- `AppTrackingTransparency` ([`ATT`](https://developer.apple.comhttps://developer.apple.com/documentation/apptrackingtransparency)) now supports an alternative expanded prompt and re-prompting on a yearly basis for EU users. The alternative prompt is required for users in France, Germany, Italy, Poland, and Romania. (179504171)
+- `AppTrackingTransparency` ([ATT](../AppTrackingTransparency/AppTrackingTransparency.md)) now supports an alternative expanded prompt and re-prompting on a yearly basis for EU users. The alternative prompt is required for users in France, Germany, Italy, Poland, and Romania. (179504171)
 
 ###### Resolved Issues
 
@@ -30,13 +31,17 @@ The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- An `NISession` running with a DL-TDoA configuration in a foreground app might be invalidated unexpectedly with a resource timeout error (`NIErrorCodeResourceUsageTimeout`). (189664070) **Workaround:** Run a new `NISession` with the same DL-TDoA configuration.
+- An `NISession` running with a DL-TDoA configuration in a foreground app might be invalidated unexpectedly with a resource timeout error (`NIErrorCodeResourceUsageTimeout`). (189664070)
+
+  **Workaround:** Run a new `NISession` with the same DL-TDoA configuration.
 
 ##### Quest Lab Appointments
 
 ###### Known Issues
 
-- If you have an upcoming lab appointment, wait to update iOS versions until you receive your results. Contact [`Quest`](https://developer.apple.comhttp://support.exp.questdiagnostics.com) directly to reschedule your appointment if you run into any issues. (184530996) **Workaround:** Lab results are also available under Browse > Lab Results.
+- If you have an upcoming lab appointment, wait to update iOS versions until you receive your results. Contact [Quest](http://support.exp.questdiagnostics.com) directly to reschedule your appointment if you run into any issues. (184530996)
+
+  **Workaround:** Lab results are also available under Browse > Lab Results.
 
 ##### Shortcuts
 
@@ -48,9 +53,11 @@ The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Cloning a simulator device running runtime 27.2 might fail due to incorrect file permissions. (188407822) (FB24939277) **Workaround:** `find ~/Library/Developer/CoreSimulator/Devices/<SOURCE_UDID>/data -name '*.sb-????????-??????' -delete`
+- Cloning a simulator device running runtime 27.2 might fail due to incorrect file permissions. (188407822) (FB24939277)
 
-##### Storekit Testing in Xcode
+  **Workaround:** `find ~/Library/Developer/CoreSimulator/Devices/<SOURCE_UDID>/data -name '*.sb-????????-??????' -delete`
+
+##### StoreKit Testing in Xcode
 
 ###### Resolved Issues
 
@@ -62,7 +69,7 @@ The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad r
 
 - Making a purchase in-app for a subscription that is a member of a subscription bundle incorrectly allows the user to unbundle instead of throwing an error. (186018916)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
@@ -70,7 +77,8 @@ The iOS & iPadOS 27.2 SDK provides support to develop apps for iPhone and iPad r
 
 ## See Also
 
-- [iOS & iPadOS 27 Release Notes](ios-ipados-27-release-notes.md)
+### iOS & iPadOS 27
+- [iOS & iPadOS 27 Release Notes](./ios-ipados-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

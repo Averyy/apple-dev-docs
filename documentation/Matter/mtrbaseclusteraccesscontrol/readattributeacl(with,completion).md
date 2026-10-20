@@ -1,7 +1,8 @@
 # readAttributeACL(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeACL(with params: MTRReadParams?, completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeACL(with params: MTRReadParams?) async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeACLWithParams:(MTRReadParams *) params completion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

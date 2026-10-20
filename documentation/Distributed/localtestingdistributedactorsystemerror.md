@@ -1,7 +1,8 @@
 # LocalTestingDistributedActorSystemError
 
 **Framework**: Distributed  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,26 +22,27 @@ struct LocalTestingDistributedActorSystemError
 ## Topics
 
 ### Initializers
-- [init(message: String)](localtestingdistributedactorsystemerror/init(message:).md)
+- [init(message: String)](./localtestingdistributedactorsystemerror/init%28message%29.md)
 ### Instance Properties
-- [let message: String](localtestingdistributedactorsystemerror/message.md)
+- [let message: String](./localtestingdistributedactorsystemerror/message.md)
 
 ## Relationships
 
 ### Conforms To
-- [DistributedActorSystemError](distributedactorsystemerror.md)
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DistributedActorSystemError](./distributedactorsystemerror.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DistributedActorCodingError](distributedactorcodingerror.md)
+### Errors
+- [struct DistributedActorCodingError](./distributedactorcodingerror.md)
   Error thrown by distributed actor systems while encountering encoding/decoding issues.
-- [protocol DistributedActorSystemError](distributedactorsystemerror.md)
+- [protocol DistributedActorSystemError](./distributedactorsystemerror.md)
   Error protocol to which errors thrown by any `DistributedActorSystem` should conform.
-- [struct ExecuteDistributedTargetError](executedistributedtargeterror.md)
-  Error thrown by [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](distributedactorsystem/executedistributedtarget(on:target:invocationdecoder:handler:).md).
+- [struct ExecuteDistributedTargetError](./executedistributedtargeterror.md)
+  Error thrown by [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](./distributedactorsystem/executedistributedtarget%28on,target,invocationdecoder,handler%29.md).
 
 
 ---

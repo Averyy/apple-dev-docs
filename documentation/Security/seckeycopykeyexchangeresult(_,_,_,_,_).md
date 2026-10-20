@@ -1,7 +1,8 @@
 # SecKeyCopyKeyExchangeResult(_:_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs the Diffie-Hellman style of key exchange with optional key-derivation steps.
 
@@ -20,9 +21,13 @@ Performs the Diffie-Hellman style of key exchange with optional key-derivation s
 func SecKeyCopyKeyExchangeResult(_ privateKey: SecKey, _ algorithm: SecKeyAlgorithm, _ publicKey: SecKey, _ parameters: CFDictionary, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFData?
 ```
 
+```c
+CFDataRefSecKeyCopyKeyExchangeResult(SecKeyRef privateKey, SecKeyAlgorithm algorithm, SecKeyRef publicKey, CFDictionaryRef parameters, CFErrorRef*error);
+```
+
 #### Return Value
 
-A data object representing the result of the key exchange operation or `NULL` on failure. In Objective-C, call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to free the data object’s memory when you are done with it.
+A data object representing the result of the key exchange operation or `NULL` on failure. In Objective-C, call [`CFRelease`](../CoreFoundation/cfrelease.md) to free the data object’s memory when you are done with it.
 
 
 ---

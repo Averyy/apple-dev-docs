@@ -1,7 +1,8 @@
 # featureColumns
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the columns you selected at initialization to train the classifier.
 
@@ -25,9 +26,10 @@ Changing the value of this property doesn’t retrain the model or affect its be
 
 ## See Also
 
-- [init(trainingData:targetColumn:featureColumns:parameters:)](mlrandomforestclassifier/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
+### Creating a random forest classifier synchronously
+- [init(trainingData:targetColumn:featureColumns:parameters:)](./init%28trainingdata,targetcolumn,featurecolumns,parameters%29.md)
   Creates a random forest classifier.
-- [var targetColumn: String](mlrandomforestclassifier/targetcolumn.md)
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
 
 

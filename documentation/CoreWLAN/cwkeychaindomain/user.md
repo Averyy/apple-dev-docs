@@ -1,7 +1,8 @@
 # CWKeychainDomain.user
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user keychain domain.
 
@@ -14,15 +15,20 @@ The user keychain domain.
 case user
 ```
 
+```c
+kCWKeychainDomainUser
+```
+
 #### Discussion
 
 If iCloud Keychain is enabled, the iCloud keychain is the user keychain.
 
 ## See Also
 
-- [CWKeychainDomain.none](cwkeychaindomain/none.md)
+### Constants
+- [CWKeychainDomain.none](./none.md)
   No keychain domain specified.
-- [CWKeychainDomain.system](cwkeychaindomain/system.md)
+- [CWKeychainDomain.system](./system.md)
   The system keychain domain.
 
 

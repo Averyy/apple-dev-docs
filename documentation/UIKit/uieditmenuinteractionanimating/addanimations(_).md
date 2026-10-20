@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds a closure that performs animations to run alongside the edit menu interaction presentation.
@@ -18,13 +19,18 @@ Adds a closure that performs animations to run alongside the edit menu interacti
 func addAnimations(_ animations: @escaping () -> Void)
 ```
 
+```objc
+- (void) addAnimations:(void (^)()) animations;
+```
+
 ## Parameters
 
 - `animations`: A closure that performs animations.
 
 ## See Also
 
-- [func addCompletion(() -> Void)](uieditmenuinteractionanimating/addcompletion(_:).md)
+### Adding Animations
+- [func addCompletion(() -> Void)](./addcompletion%28_%29.md)
   Adds a closure to perform operations when the edit menu interaction presentation animations are complete.
 
 

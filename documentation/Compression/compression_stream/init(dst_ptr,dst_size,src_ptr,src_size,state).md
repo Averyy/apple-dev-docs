@@ -1,18 +1,19 @@
 # init(dst_ptr:dst_size:src_ptr:src_size:state:)
 
 **Framework**: Compression  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new compression stream structure.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

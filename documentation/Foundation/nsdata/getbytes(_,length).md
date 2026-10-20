@@ -1,7 +1,8 @@
 # getBytes(_:length:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies a number of bytes from the start of the data object into a given buffer.
 
@@ -20,9 +21,13 @@ Copies a number of bytes from the start of the data object into a given buffer.
 func getBytes(_ buffer: UnsafeMutableRawPointer, length: Int)
 ```
 
+```objc
+- (void) getBytes:(void *) buffer length:(NSUInteger) length;
+```
+
 #### Discussion
 
-The number of bytes copied is the smaller of the `length` parameter and the [`length`](nsdata/length.md) of the data encapsulated in the object.
+The number of bytes copied is the smaller of the `length` parameter and the [`length`](./length.md) of the data encapsulated in the object.
 
 ## Parameters
 
@@ -31,15 +36,17 @@ The number of bytes copied is the smaller of the `length` parameter and the [`le
 
 ## See Also
 
-- [var description: String](nsdata/description.md)
+### Related Documentation
+- [var description: String](./description.md)
   A string that contains a hexadecimal representation of the data object’s contents in a property list format.
-- [var bytes: UnsafeRawPointer](nsdata/bytes.md)
+### Accessing Underlying Bytes
+- [var bytes: UnsafeRawPointer](./bytes.md)
   A pointer to the data object’s contents.
-- [func enumerateBytes((UnsafeRawPointer, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdata/enumeratebytes(_:).md)
+- [func enumerateBytes((UnsafeRawPointer, NSRange, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratebytes%28_%29.md)
   Enumerates each range of bytes in the data object using a block.
-- [func getBytes(UnsafeMutableRawPointer)](nsdata/getbytes(_:).md)
+- [func getBytes(UnsafeMutableRawPointer)](./getbytes%28_%29.md)
   Copies a data object’s contents into a given buffer.
-- [func getBytes(UnsafeMutableRawPointer, range: NSRange)](nsdata/getbytes(_:range:).md)
+- [func getBytes(UnsafeMutableRawPointer, range: NSRange)](./getbytes%28_,range%29.md)
   Copies a range of bytes from the data object into a given buffer.
 
 

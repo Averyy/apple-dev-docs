@@ -1,7 +1,8 @@
 # AppSchema.NotesEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the notes domain.
 
@@ -21,27 +22,28 @@ protocol NotesEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var account: some AppSchemaEntity](appschema/notesentity/account.md)
+- [var account: some AppSchemaEntity](./notesentity/account.md)
   An entity schema for an account.
-- [var folder: some AppSchemaEntity](appschema/notesentity/folder.md)
+- [var folder: some AppSchemaEntity](./notesentity/folder.md)
   An entity schema for a folder.
-- [var note: some AppSchemaEntity](appschema/notesentity/note.md)
+- [var note: some AppSchemaEntity](./notesentity/note.md)
   An entity schema for a note.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var account: some AppSchemaEntity](appschema/notesentity/account.md)
+### Content and parameter types
+- [var account: some AppSchemaEntity](./notesentity/account.md)
   An entity schema for an account.
-- [var folder: some AppSchemaEntity](appschema/notesentity/folder.md)
+- [var folder: some AppSchemaEntity](./notesentity/folder.md)
   An entity schema for a folder.
-- [var note: some AppSchemaEntity](appschema/notesentity/note.md)
+- [var note: some AppSchemaEntity](./notesentity/note.md)
   An entity schema for a note.
 
 

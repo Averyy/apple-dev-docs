@@ -1,7 +1,8 @@
 # promisedItemResourceValues(forKeys:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets resource values from URLs of ‘promised’ items.
 
@@ -30,7 +31,8 @@ Most of the URL resource value keys will work with these APIs. However, there ar
 
 ## See Also
 
-- [func checkPromisedItemIsReachable() throws -> Bool](url/checkpromiseditemisreachable.md)
+### Working with promised items
+- [func checkPromisedItemIsReachable() throws -> Bool](./checkpromiseditemisreachable%28%29.md)
   Returns whether the promised item URL’s resource exists and is reachable.
 
 

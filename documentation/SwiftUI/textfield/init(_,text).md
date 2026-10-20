@@ -1,7 +1,8 @@
 # init(_:text:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text field with a text label generated from a localized title string.
 
@@ -21,6 +22,20 @@ Creates a text field with a text label generated from a localized title string.
 nonisolated init(_ titleKey: LocalizedStringKey, text: Binding<String>)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init<S>(_ title: S, text: Binding<String>) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init(_ titleResource: LocalizedStringResource, text: Binding<String>)
+```
+
 ## Parameters
 
 - `titleKey`: The key for the localized title of the text field, describing its purpose.
@@ -28,9 +43,10 @@ nonisolated init(_ titleKey: LocalizedStringKey, text: Binding<String>)
 
 ## See Also
 
-- [init(_:text:prompt:)](textfield/init(_:text:prompt:).md)
+### Creating a text field with a string
+- [init(_:text:prompt:)](./init%28_,text,prompt%29.md)
   Creates a text field with a text label generated from a localized title string resource.
-- [init(text: Binding<String>, prompt: Text?, label: () -> Label)](textfield/init(text:prompt:label:).md)
+- [init(text: Binding<String>, prompt: Text?, label: () -> Label)](./init%28text,prompt,label%29.md)
   Creates a text field with a prompt generated from a `Text`.
 
 

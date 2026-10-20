@@ -1,17 +1,18 @@
 # provideImageData(_:bytesPerRow:origin:_:size:_:userInfo:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Supplies data to a `CIImage` object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,12 +20,16 @@ Supplies data to a `CIImage` object.
 func provideImageData(_ data: UnsafeMutableRawPointer, bytesPerRow rowbytes: Int, origin originx: Int, _ originy: Int, size width: Int, _ height: Int, userInfo info: Any?)
 ```
 
+```objc
+- (void) provideImageData:(void *) data bytesPerRow:(size_t) rowbytes origin:(size_t) originx :(size_t) originy size:(size_t) width :(size_t) height userInfo:(id) info;
+```
+
 #### Discussion
 
 You can supply the image provider to these methods of the `CIImage` class:
 
-- [`imageWithImageProvider:size::format:colorSpace:options:`](https://developer.apple.com/documentation/coreimage/ciimage/imagewithimageprovider:size::format:colorspace:options:) to create a CIImage object from image data
-- [`init(imageProvider:size:_:format:colorSpace:options:)`](https://developer.apple.com/documentation/coreimage/ciimage/init(imageprovider:size:_:format:colorspace:options:)) to initialize an existing CIImage with data
+- [`imageWithImageProvider:size::format:colorSpace:options:`](../../CoreImage/ciimage/imagewithimageprovider_size__format_colorspace_options_.md) to create a CIImage object from image data
+- [`init(imageProvider:size:_:format:colorSpace:options:)`](../../CoreImage/ciimage/init%28imageprovider,size,_,format,colorspace,options%29.md) to initialize an existing CIImage with data
 
 You initialize the given bitmap with the subregion specified by the arguments `x`, `y`, `width`, and `height`. The subregion uses the local coordinate space of the image, with the origin at the upper-left corner of the image. If you change the virtual memory mapping of the buffer specified by the `data` argument (such as by using `vm_copy` to modify it), the behavior is undefined.
 
@@ -40,7 +45,8 @@ That this callback always requests the full image data regardless of what is act
 
 ## See Also
 
-- [Core Image Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
+### Related Documentation
+- [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185)
 
 
 ---

@@ -1,7 +1,8 @@
 # attachmentBounds(for:location:textContainer:proposedLineFragment:position:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the layout bounds for an attachment at a specific text location that contains the text attributes you specify.
 
@@ -18,17 +19,21 @@ Returns the layout bounds for an attachment at a specific text location that con
 func attachmentBounds(for attributes: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?, proposedLineFragment: CGRect, position: CGPoint) -> CGRect
 ```
 
+```objc
+- (CGRect) attachmentBoundsForAttributes:(NSDictionary<NSString *,id> *) attributes location:(id<NSTextLocation>) location textContainer:(NSTextContainer *) textContainer proposedLineFragment:(CGRect) proposedLineFragment position:(CGPoint) position;
+```
+
 #### Return Value
 
-Returns a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the bounds of the attachment.
+Returns a [`CGRect`](../../CoreFoundation/cgrect.md) that describes the bounds of the attachment.
 
 ## Parameters
 
 - `attributes`: A dictionary that contains a list of key and attribute pairs that describe the customization of the string.
-- `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
-- `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source string.
-- `proposedLineFragment`: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the boundaries of the line fragment.
-- `position`: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) inside `proposedLineFragment`.
+- `location`: An [`NSTextLocation`](../nstextlocation.md) that indicates that start of the string.
+- `textContainer`: The [`NSTextContainer`](../nstextcontainer.md) that contains the source string.
+- `proposedLineFragment`: A [`CGRect`](../../CoreFoundation/cgrect.md) that describes the boundaries of the line fragment.
+- `position`: A [`CGPoint`](../../CoreFoundation/cgpoint.md) inside `proposedLineFragment`.
 
 
 ---

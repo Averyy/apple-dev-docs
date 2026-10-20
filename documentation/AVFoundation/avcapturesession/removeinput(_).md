@@ -1,7 +1,8 @@
 # removeInput(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an input from the session.
 
@@ -19,6 +20,10 @@ Removes an input from the session.
 func removeInput(_ input: AVCaptureInput)
 ```
 
+```objc
+- (void) removeInput:(AVCaptureInput *) input;
+```
+
 #### Discussion
 
 You can invoke this method while the session is running.
@@ -29,11 +34,12 @@ You can invoke this method while the session is running.
 
 ## See Also
 
-- [var inputs: [AVCaptureInput]](avcapturesession/inputs.md)
+### Configuring inputs
+- [var inputs: [AVCaptureInput]](./inputs.md)
   The inputs that provide media data to a capture session.
-- [func canAddInput(AVCaptureInput) -> Bool](avcapturesession/canaddinput(_:).md)
+- [func canAddInput(AVCaptureInput) -> Bool](./canaddinput%28_%29.md)
   Determines whether you can add an input to a session.
-- [func addInput(AVCaptureInput)](avcapturesession/addinput(_:).md)
+- [func addInput(AVCaptureInput)](./addinput%28_%29.md)
   Adds a capture input to the session.
 
 

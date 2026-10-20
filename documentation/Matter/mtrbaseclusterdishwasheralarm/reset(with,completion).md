@@ -1,7 +1,8 @@
 # reset(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command Reset
 
@@ -17,7 +18,15 @@ Command Reset
 ## Declaration
 
 ```swift
+func reset(with params: MTRDishwasherAlarmClusterResetParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func reset(with params: MTRDishwasherAlarmClusterResetParams) async throws
+```
+
+```objc
+- (void) resetWithParams:(MTRDishwasherAlarmClusterResetParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # NSLinguisticTagScheme
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants for the tag schemes specified when initializing a linguistic tagger.
 
@@ -20,13 +21,17 @@ Constants for the tag schemes specified when initializing a linguistic tagger.
 struct NSLinguisticTagScheme
 ```
 
+```c
+typedef NSString * NSLinguisticTagScheme;
+```
+
 #### Discussion
 
-When initializing a linguistic tagger with [`init(tagSchemes:options:)`](nslinguistictagger/init(tagschemes:options:).md), you specify one or more tag schemes that correspond to the kind of information you’re interested in for a selection of natural language text. To ensure optimal performance, avoid specifying tag schemes that you won’t use.
+When initializing a linguistic tagger with [`init(tagSchemes:options:)`](./nslinguistictagger/init%28tagschemes,options%29.md), you specify one or more tag schemes that correspond to the kind of information you’re interested in for a selection of natural language text. To ensure optimal performance, avoid specifying tag schemes that you won’t use.
 
-Some tag schemes are only available for certain units and languages. Use the [`availableTagSchemes(for:language:)`](nslinguistictagger/availabletagschemes(for:language:).md) or [`availableTagSchemes(forLanguage:)`](nslinguistictagger/availabletagschemes(forlanguage:).md) methods to determine the possible values for a specified language and linguistic unit.
+Some tag schemes are only available for certain units and languages. Use the [`availableTagSchemes(for:language:)`](./nslinguistictagger/availabletagschemes%28for,language%29.md) or [`availableTagSchemes(forLanguage:)`](./nslinguistictagger/availabletagschemes%28forlanguage%29.md) methods to determine the possible values for a specified language and linguistic unit.
 
-When working with linguistic tags using the methods described in Getting Linguistic Tags and Enumerating Linguistic Tags, the returned tag value depends on the specified scheme. For example, given the token “Überraschung”, the returned tag is [`noun`](nslinguistictag/noun.md) when using the [`lexicalClass`](nslinguistictagscheme/lexicalclass.md) tag scheme, “de” (German language) when using the [`language`](nslinguistictagscheme/language.md) tag scheme, and “Latn” (Latin script) when using the [`script`](nslinguistictagscheme/script.md) tag scheme, as shown in the following code.
+When working with linguistic tags using the methods described in Getting Linguistic Tags and Enumerating Linguistic Tags, the returned tag value depends on the specified scheme. For example, given the token “Überraschung”, the returned tag is [`noun`](./nslinguistictag/noun.md) when using the [`lexicalClass`](./nslinguistictagscheme/lexicalclass.md) tag scheme, “de” (German language) when using the [`language`](./nslinguistictagscheme/language.md) tag scheme, and “Latn” (Latin script) when using the [`script`](./nslinguistictagscheme/script.md) tag scheme, as shown in the following code.
 
 ```swift
 let tagger = NSLinguisticTagger(tagSchemes: [.lexicalClass, .language, .script], options: 0)
@@ -41,49 +46,50 @@ The following table lists the available tag schemes, their applicable linguistic
 
 | Linguistic tag scheme | Applicable linguistic units | Possible tag values |
 | --- | --- | --- |
-| [`tokenType`](nslinguistictagscheme/tokentype.md) | [`NSLinguisticTaggerUnit.word`](nslinguistictaggerunit/word.md) | See Token Types |
-| [`lexicalClass`](nslinguistictagscheme/lexicalclass.md) | [`NSLinguisticTaggerUnit.word`](nslinguistictaggerunit/word.md) | See Lexical Classes |
-| [`nameType`](nslinguistictagscheme/nametype.md) | [`NSLinguisticTaggerUnit.word`](nslinguistictaggerunit/word.md) | See Name Types |
-| [`nameTypeOrLexicalClass`](nslinguistictagscheme/nametypeorlexicalclass.md) | [`NSLinguisticTaggerUnit.word`](nslinguistictaggerunit/word.md) | See Name Types and Lexical Classes |
-| [`lemma`](nslinguistictagscheme/lemma.md) | [`NSLinguisticTaggerUnit.word`](nslinguistictaggerunit/word.md) | A stem of the word |
-| [`language`](nslinguistictagscheme/language.md) | [`NSLinguisticTaggerUnit.word`](nslinguistictaggerunit/word.md), [`NSLinguisticTaggerUnit.sentence`](nslinguistictaggerunit/sentence.md), [`NSLinguisticTaggerUnit.paragraph`](nslinguistictaggerunit/paragraph.md), [`NSLinguisticTaggerUnit.document`](nslinguistictaggerunit/document.md) | A BCP-47 language tag |
-| [`script`](nslinguistictagscheme/script.md) | [`NSLinguisticTaggerUnit.word`](nslinguistictaggerunit/word.md), [`NSLinguisticTaggerUnit.sentence`](nslinguistictaggerunit/sentence.md), [`NSLinguisticTaggerUnit.paragraph`](nslinguistictaggerunit/paragraph.md), [`NSLinguisticTaggerUnit.document`](nslinguistictaggerunit/document.md) | An ISO 15924 script code |
+| [`tokenType`](./nslinguistictagscheme/tokentype.md) | [`NSLinguisticTaggerUnit.word`](./nslinguistictaggerunit/word.md) | See Token Types |
+| [`lexicalClass`](./nslinguistictagscheme/lexicalclass.md) | [`NSLinguisticTaggerUnit.word`](./nslinguistictaggerunit/word.md) | See Lexical Classes |
+| [`nameType`](./nslinguistictagscheme/nametype.md) | [`NSLinguisticTaggerUnit.word`](./nslinguistictaggerunit/word.md) | See Name Types |
+| [`nameTypeOrLexicalClass`](./nslinguistictagscheme/nametypeorlexicalclass.md) | [`NSLinguisticTaggerUnit.word`](./nslinguistictaggerunit/word.md) | See Name Types and Lexical Classes |
+| [`lemma`](./nslinguistictagscheme/lemma.md) | [`NSLinguisticTaggerUnit.word`](./nslinguistictaggerunit/word.md) | A stem of the word |
+| [`language`](./nslinguistictagscheme/language.md) | [`NSLinguisticTaggerUnit.word`](./nslinguistictaggerunit/word.md), [`NSLinguisticTaggerUnit.sentence`](./nslinguistictaggerunit/sentence.md), [`NSLinguisticTaggerUnit.paragraph`](./nslinguistictaggerunit/paragraph.md), [`NSLinguisticTaggerUnit.document`](./nslinguistictaggerunit/document.md) | A BCP-47 language tag |
+| [`script`](./nslinguistictagscheme/script.md) | [`NSLinguisticTaggerUnit.word`](./nslinguistictaggerunit/word.md), [`NSLinguisticTaggerUnit.sentence`](./nslinguistictaggerunit/sentence.md), [`NSLinguisticTaggerUnit.paragraph`](./nslinguistictaggerunit/paragraph.md), [`NSLinguisticTaggerUnit.document`](./nslinguistictaggerunit/document.md) | An ISO 15924 script code |
 
 ## Topics
 
 ### Schemes
-- [static let tokenType: NSLinguisticTagScheme](nslinguistictagscheme/tokentype.md)
+- [static let tokenType: NSLinguisticTagScheme](./nslinguistictagscheme/tokentype.md)
   Classifies tokens according to their broad type:  word, punctuation, or whitespace.
-- [static let lexicalClass: NSLinguisticTagScheme](nslinguistictagscheme/lexicalclass.md)
+- [static let lexicalClass: NSLinguisticTagScheme](./nslinguistictagscheme/lexicalclass.md)
   Classifies tokens according to class:  part of speech, type of punctuation, or whitespace.
-- [static let nameType: NSLinguisticTagScheme](nslinguistictagscheme/nametype.md)
+- [static let nameType: NSLinguisticTagScheme](./nslinguistictagscheme/nametype.md)
   Classifies tokens according to whether they are part of a named entity.
-- [static let nameTypeOrLexicalClass: NSLinguisticTagScheme](nslinguistictagscheme/nametypeorlexicalclass.md)
-  Classifies tokens corresponding to names according to [`nameType`](nslinguistictagscheme/nametype.md), and classifies all other tokens according to [`lexicalClass`](nslinguistictagscheme/lexicalclass.md).
-- [static let lemma: NSLinguisticTagScheme](nslinguistictagscheme/lemma.md)
+- [static let nameTypeOrLexicalClass: NSLinguisticTagScheme](./nslinguistictagscheme/nametypeorlexicalclass.md)
+  Classifies tokens corresponding to names according to [`nameType`](./nslinguistictagscheme/nametype.md), and classifies all other tokens according to [`lexicalClass`](./nslinguistictagscheme/lexicalclass.md).
+- [static let lemma: NSLinguisticTagScheme](./nslinguistictagscheme/lemma.md)
   Supplies a stem form of a word token, if known.
-- [static let language: NSLinguisticTagScheme](nslinguistictagscheme/language.md)
+- [static let language: NSLinguisticTagScheme](./nslinguistictagscheme/language.md)
   Supplies the language for a token, if one can be determined.
-- [static let script: NSLinguisticTagScheme](nslinguistictagscheme/script.md)
+- [static let script: NSLinguisticTagScheme](./nslinguistictagscheme/script.md)
   Supplies the script for a token, if one can be determined.
 ### Initializers
-- [init(String)](nslinguistictagscheme/init(_:).md)
-- [init(rawValue: String)](nslinguistictagscheme/init(rawvalue:).md)
+- [init(String)](./nslinguistictagscheme/init%28_%29.md)
+- [init(rawValue: String)](./nslinguistictagscheme/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NSLinguisticTaggerUnit](nslinguistictaggerunit.md)
+### Supporting Types
+- [enum NSLinguisticTaggerUnit](./nslinguistictaggerunit.md)
   Constants representing linguistic units.
-- [struct NSLinguisticTag](nslinguistictag.md)
+- [struct NSLinguisticTag](./nslinguistictag.md)
   A token, lexical class, name, lemma, language, or script returned by a linguistic tagger for natural language text.
 
 

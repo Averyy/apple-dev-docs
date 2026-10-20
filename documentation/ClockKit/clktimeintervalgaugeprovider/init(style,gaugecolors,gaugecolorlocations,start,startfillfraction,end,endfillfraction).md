@@ -1,17 +1,24 @@
 # init(style:gaugeColors:gaugeColorLocations:start:startFillFraction:end:endFillFraction:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time interval gauge, letting you specify whether the gauge fills or empties as time passes.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 convenience init(style: CLKGaugeProviderStyle, gaugeColors: [UIColor]?, gaugeColorLocations: [NSNumber]?, start startDate: Date, startFillFraction: Float, end endDate: Date, endFillFraction: Float)
+```
+
+```objc
++ (instancetype) gaugeProviderWithStyle:(CLKGaugeProviderStyle) style gaugeColors:(NSArray<UIColor *> *) gaugeColors gaugeColorLocations:(NSArray<NSNumber *> *) gaugeColorLocations startDate:(NSDate *) startDate startFillFraction:(float) startFillFraction endDate:(NSDate *) endDate endFillFraction:(float) endFillFraction;
 ```
 
 #### Return Value
@@ -31,7 +38,7 @@ If you provide both colors and locations, then the `gaugeColors` and `gaugeColor
 
 ## Parameters
 
-- `style`: The style defining the gauge’s visual appearance. For a list of valid styles, see [`CLKGaugeProviderStyle`](clkgaugeproviderstyle.md).
+- `style`: The style defining the gauge’s visual appearance. For a list of valid styles, see [`CLKGaugeProviderStyle`](../clkgaugeproviderstyle.md).
 - `gaugeColors`: The gauge’s colors. These colors are displayed as a gradient.
 - `gaugeColorLocations`: The location of each color along the gauge. Locations are values between `0.0` and `1.0`. If `nil`, the colors are evenly spaced along the gauge.
 - `startDate`: The start time and date.
@@ -41,7 +48,8 @@ If you provide both colors and locations, then the `gaugeColors` and `gaugeColor
 
 ## See Also
 
-- [convenience init(style: CLKGaugeProviderStyle, gaugeColors: [UIColor]?, gaugeColorLocations: [NSNumber]?, start: Date, end: Date)](clktimeintervalgaugeprovider/init(style:gaugecolors:gaugecolorlocations:start:end:).md)
+### Creating a Time Interval Gauge
+- [convenience init(style: CLKGaugeProviderStyle, gaugeColors: [UIColor]?, gaugeColorLocations: [NSNumber]?, start: Date, end: Date)](./init%28style,gaugecolors,gaugecolorlocations,start,end%29.md)
   Creates a time interval gauge that fills as time passes.
 
 

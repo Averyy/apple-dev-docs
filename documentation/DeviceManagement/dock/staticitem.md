@@ -1,7 +1,8 @@
 # Dock.StaticItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 Items that are located on the Documents side of the Dock and cannot be removed from that location.
 
@@ -10,20 +11,22 @@ Items that are located on the Documents side of the Dock and cannot be removed f
 
 ## Declaration
 
-```swift
+```
 object Dock.StaticItem
 ```
 
 ## Topics
 
 ### Objects
-- [object Dock.StaticItem.Tile-data](dock/staticitem/tile-data-data.dictionary.md)
+- [object Dock.StaticItem.Tile-data](./staticitem/tile-data-data.dictionary.md)
   The dictionary that contains details about a Dock item.
 
 ## Properties
 
 - `tile-data` (Dock.StaticItem.Tile-data) *(required)*: The information about the Dock item.
 - `tile-type` (string) *(required)*: The type of tile.
+
+  **Allowed Values**: `file-tile`, `directory-tile`, `url-tile`
 
 
 ---

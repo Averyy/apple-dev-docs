@@ -1,7 +1,8 @@
 # matchMedium
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Evaluates the given string as a media query and returns the result.
 
@@ -11,13 +12,13 @@ Evaluates the given string as a media query and returns the result.
 
 ## Declaration
 
-```swift
+```
 boolean matchMedium(
     optional DOMString mediaquery
 );
 ```
 
-#### Return_value
+#### Return Value
 
 `true` if the media query is logically true; otherwise, `false`.
 

@@ -1,7 +1,8 @@
 # UNNotificationActionOptions
 
 **Framework**: User Notifications  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The behaviors you can apply to an action.
 
@@ -19,34 +20,39 @@ The behaviors you can apply to an action.
 struct UNNotificationActionOptions
 ```
 
+```c
+enum UNNotificationActionOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](unnotificationactionoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./unnotificationactionoptions/init%28rawvalue%29.md)
   Initializes an action options object using the specified raw value.
 ### Constants
-- [static var authenticationRequired: UNNotificationActionOptions](unnotificationactionoptions/authenticationrequired.md)
+- [static var authenticationRequired: UNNotificationActionOptions](./unnotificationactionoptions/authenticationrequired.md)
   The action can be performed only on an unlocked device.
-- [static var destructive: UNNotificationActionOptions](unnotificationactionoptions/destructive.md)
+- [static var destructive: UNNotificationActionOptions](./unnotificationactionoptions/destructive.md)
   The action performs a destructive task.
-- [static var foreground: UNNotificationActionOptions](unnotificationactionoptions/foreground.md)
+- [static var foreground: UNNotificationActionOptions](./unnotificationactionoptions/foreground.md)
   The action causes the app to launch in the foreground.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var options: UNNotificationActionOptions](unnotificationaction/options.md)
+### Getting Options
+- [var options: UNNotificationActionOptions](./unnotificationaction/options.md)
   The behaviors associated with the action.
 
 

@@ -1,7 +1,8 @@
 # init(shape:stride:dataType:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a `BNNSTensor` structure based on the supplied shape and data type.
 

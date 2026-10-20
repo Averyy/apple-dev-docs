@@ -1,9 +1,10 @@
 # value(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns an array containing the results of invoking [`value(forKey:)`](nsarray/value(forkey:).md) using `key` on each of the array’s objects.
+Returns an array containing the results of invoking [`value(forKey:)`](./value%28forkey%29.md) using `key` on each of the array’s objects.
 
 **Availability**:
 - iOS 2.0+
@@ -20,6 +21,10 @@ Returns an array containing the results of invoking [`value(forKey:)`](nsarray/v
 func value(forKey key: String) -> Any
 ```
 
+```objc
+- (id) valueForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The value of the retrieved key.
@@ -34,8 +39,9 @@ The returned array contains `NSNull` elements for each object that returns `nil`
 
 ## See Also
 
-- [func setValue(Any?, forKey: String)](nsarray/setvalue(_:forkey:).md)
-  Invokes [`setValue(_:forKey:)`](nsarray/setvalue(_:forkey:).md) on each of the array’s items using the specified `value` and `key`.
+### Key-Value Coding
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
+  Invokes [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) on each of the array’s items using the specified `value` and `key`.
 
 
 ---

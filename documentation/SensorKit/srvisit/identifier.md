@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that maps to a unique geographic location.
 
@@ -14,6 +15,10 @@ A value that maps to a unique geographic location.
 
 ```swift
 var identifier: UUID { get }
+```
+
+```objc
+@property (strong, readonly) NSUUID * identifier;
 ```
 
 

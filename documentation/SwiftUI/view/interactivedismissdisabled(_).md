@@ -1,7 +1,8 @@
 # interactiveDismissDisabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Conditionally prevents interactive dismissal of presentations like popovers, sheets, and inspectors.
 
@@ -46,7 +47,7 @@ struct TermsOfService: View {
 }
 ```
 
-If you present this view in a sheet, the user can dismiss it by either tapping the button — which calls [`dismiss`](environmentvalues/dismiss.md) from its `action` closure — or by dragging the sheet down. To ensure that the user accepts the terms by tapping the button, disable interactive dismissal, conditioned on the `areTermsAccepted` property:
+If you present this view in a sheet, the user can dismiss it by either tapping the button — which calls [`dismiss`](../environmentvalues/dismiss.md) from its `action` closure — or by dragging the sheet down. To ensure that the user accepts the terms by tapping the button, disable interactive dismissal, conditioned on the `areTermsAccepted` property:
 
 ```swift
 struct ContentView: View {
@@ -65,9 +66,9 @@ struct ContentView: View {
 }
 ```
 
-You can apply the modifier to any view in the sheet’s view hierarchy, including to the sheet’s top level view, as the example demonstrates, or to any child view, like the [`Form`](form.md) or the Accept [`Button`](button.md).
+You can apply the modifier to any view in the sheet’s view hierarchy, including to the sheet’s top level view, as the example demonstrates, or to any child view, like the [`Form`](../form.md) or the Accept [`Button`](../button.md).
 
-The modifier has no effect on programmatic dismissal, which you can invoke by updating the [`Binding`](binding.md) that controls the presentation, or by calling the environment’s [`dismiss`](environmentvalues/dismiss.md) action. On macOS, disabling interactive dismissal in a popover makes the popover nontransient.
+The modifier has no effect on programmatic dismissal, which you can invoke by updating the [`Binding`](../binding.md) that controls the presentation, or by calling the environment’s [`dismiss`](../environmentvalues/dismiss.md) action. On macOS, disabling interactive dismissal in a popover makes the popover nontransient.
 
 ## Parameters
 
@@ -75,11 +76,12 @@ The modifier has no effect on programmatic dismissal, which you can invoke by up
 
 ## See Also
 
-- [var isPresented: Bool](environmentvalues/ispresented.md)
+### Dismissing a presentation
+- [var isPresented: Bool](../environmentvalues/ispresented.md)
   A Boolean value that indicates whether the view associated with this environment is currently presented.
-- [var dismiss: DismissAction](environmentvalues/dismiss.md)
+- [var dismiss: DismissAction](../environmentvalues/dismiss.md)
   An action that dismisses the current presentation.
-- [struct DismissAction](dismissaction.md)
+- [struct DismissAction](../dismissaction.md)
   An action that dismisses a presentation.
 
 

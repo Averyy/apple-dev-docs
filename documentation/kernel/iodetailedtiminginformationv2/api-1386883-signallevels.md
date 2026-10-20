@@ -1,7 +1,8 @@
 # signalLevels
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 One of:
 
@@ -10,7 +11,7 @@ One of:
 
 ## Declaration
 
-```swift
+```c
 UInt32 signalLevels;
 ```
 

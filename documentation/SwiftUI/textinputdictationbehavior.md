@@ -1,7 +1,8 @@
 # TextInputDictationBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A behavior that determines whether a search field offers dictation, and what starts it.
 
@@ -19,7 +20,7 @@ struct TextInputDictationBehavior
 
 #### Overview
 
-Pass a value of this type to the [`searchDictationBehavior(_:)`](view/searchdictationbehavior(_:).md) modifier. Search fields use [`automatic`](textinputdictationbehavior/automatic.md) unless you choose otherwise.
+Pass a value of this type to the [`searchDictationBehavior(_:)`](./view/searchdictationbehavior%28_%29.md) modifier. Search fields use [`automatic`](./textinputdictationbehavior/automatic.md) unless you choose otherwise.
 
 The following example keeps the dictation microphone in the search field, but waits for someone to select it before listening:
 
@@ -31,30 +32,31 @@ NavigationStack {
 .searchDictationBehavior(.inline(activation: .onSelect))
 ```
 
-On visionOS you can remove the microphone from the field entirely with [`preventDictation`](textinputdictationbehavior/preventdictation.md).
+On visionOS you can remove the microphone from the field entirely with [`preventDictation`](./textinputdictationbehavior/preventdictation.md).
 
 ## Topics
 
 ### Getting behavior values
-- [static let automatic: TextInputDictationBehavior](textinputdictationbehavior/automatic.md)
+- [static let automatic: TextInputDictationBehavior](./textinputdictationbehavior/automatic.md)
   A platform-appropriate default text input dictation behavior.
-- [static func inline(activation: TextInputDictationActivation) -> TextInputDictationBehavior](textinputdictationbehavior/inline(activation:).md)
+- [static func inline(activation: TextInputDictationActivation) -> TextInputDictationBehavior](./textinputdictationbehavior/inline%28activation%29.md)
   Adds a dictation microphone in the search bar.
-- [static let preventDictation: TextInputDictationBehavior](textinputdictationbehavior/preventdictation.md)
+- [static let preventDictation: TextInputDictationBehavior](./textinputdictationbehavior/preventdictation.md)
   Prevents the search bar from having a dictation microphone.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func searchDictationBehavior(TextInputDictationBehavior) -> some View](view/searchdictationbehavior(_:).md)
+### Dictating text
+- [func searchDictationBehavior(TextInputDictationBehavior) -> some View](./view/searchdictationbehavior%28_%29.md)
   Configures the dictation behavior for any search fields configured by the searchable modifier.
-- [struct TextInputDictationActivation](textinputdictationactivation.md)
+- [struct TextInputDictationActivation](./textinputdictationactivation.md)
   A configuration that determines what starts dictation in a search field.
 
 

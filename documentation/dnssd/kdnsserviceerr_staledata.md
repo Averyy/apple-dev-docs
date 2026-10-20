@@ -1,7 +1,8 @@
 # kDNSServiceErr_StaleData
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceErr_StaleData: Int { get }
+```
+
+```c
+kDNSServiceErr_StaleData
 ```
 
 

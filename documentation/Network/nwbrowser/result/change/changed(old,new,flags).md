@@ -1,7 +1,8 @@
 # NWBrowser.Result.Change.changed(old:new:flags:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result changed properties but was not removed.
 
@@ -22,13 +23,14 @@ case changed(old: NWBrowser.Result, new: NWBrowser.Result, flags: NWBrowser.Resu
 
 ## See Also
 
-- [NWBrowser.Result.Change.identical](nwbrowser/result/change/identical.md)
+### Inspecting Change Types
+- [NWBrowser.Result.Change.identical](./identical.md)
   No change was detected for the result.
-- [NWBrowser.Result.Change.added(_:)](nwbrowser/result/change/added(_:).md)
+- [NWBrowser.Result.Change.added(_:)](./added%28_%29.md)
   A new result was discovered.
-- [NWBrowser.Result.Change.removed(_:)](nwbrowser/result/change/removed(_:).md)
+- [NWBrowser.Result.Change.removed(_:)](./removed%28_%29.md)
   A previously discovered result was removed.
-- [NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags.md)
+- [NWBrowser.Result.Change.Flags](./flags.md)
   Flags providing details about a change in a discovered service.
 
 

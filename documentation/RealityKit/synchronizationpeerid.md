@@ -1,7 +1,8 @@
 # SynchronizationPeerID
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents a peer among a group of networked devices.
 
@@ -11,7 +12,7 @@ A type that represents a peer among a group of networked devices.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,20 @@ protocol SynchronizationPeerID
 
 ## See Also
 
-- [protocol SynchronizationService](synchronizationservice.md)
+### Entity ownership synchronization
+- [protocol SynchronizationService](./synchronizationservice.md)
   An interface that enables entity synchronization among a group of local peers.
-- [SynchronizationService.Identifier](synchronizationservice/identifier.md)
+- [SynchronizationService.Identifier](./synchronizationservice/identifier.md)
   A type that represents a synchronization service identifier.
-- [struct SynchronizationComponent](synchronizationcomponent.md)
+- [struct SynchronizationComponent](./synchronizationcomponent.md)
   A component that synchronizes an entity between processes and networked applications.
-- [SynchronizationComponent.OwnershipTransferMode](synchronizationcomponent/ownershiptransfermode-swift.enum.md)
+- [SynchronizationComponent.OwnershipTransferMode](./synchronizationcomponent/ownershiptransfermode-swift.enum.md)
   Modes of ownership transfer.
-- [SynchronizationComponent.OwnershipTransferCompletionResult](synchronizationcomponent/ownershiptransfercompletionresult.md)
+- [SynchronizationComponent.OwnershipTransferCompletionResult](./synchronizationcomponent/ownershiptransfercompletionresult.md)
   The result of an ownership transfer request.
-- [enum SynchronizationEvents](synchronizationevents.md)
+- [enum SynchronizationEvents](./synchronizationevents.md)
   Events associated with network synchronization of scene information.
-- [protocol HasSynchronization](hassynchronization.md)
+- [protocol HasSynchronization](./hassynchronization.md)
   An interface that enables an entity to be synchronized between processes and networked applications.
 
 

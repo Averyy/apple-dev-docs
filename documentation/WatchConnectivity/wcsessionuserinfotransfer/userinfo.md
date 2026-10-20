@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data being transferred.
 
@@ -18,9 +19,14 @@ The data being transferred.
 var userInfo: [String : Any] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,id> * userInfo;
+```
+
 ## See Also
 
-- [var isCurrentComplicationInfo: Bool](wcsessionuserinfotransfer/iscurrentcomplicationinfo.md)
+### Getting the Transfer Information
+- [var isCurrentComplicationInfo: Bool](./iscurrentcomplicationinfo.md)
   A Boolean indicating whether the data is related to the app’s complication.
 
 

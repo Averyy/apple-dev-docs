@@ -1,7 +1,8 @@
 # allocate(capacity:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allocates uninitialized memory for the specified number of instances of type `Pointee`.
 

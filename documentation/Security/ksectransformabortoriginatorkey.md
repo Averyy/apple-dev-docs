@@ -1,7 +1,8 @@
 # kSecTransformAbortOriginatorKey
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key in an error’s `userInfo` dictionary whose value indicates the transform that caused the chain to abort.
 
@@ -13,6 +14,10 @@ The key in an error’s `userInfo` dictionary whose value indicates the transfor
 
 ```swift
 let kSecTransformAbortOriginatorKey: CFString
+```
+
+```c
+extern CFStringRef const kSecTransformAbortOriginatorKey;
 ```
 
 #### Discussion

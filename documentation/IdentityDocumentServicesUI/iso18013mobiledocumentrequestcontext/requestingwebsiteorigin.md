@@ -1,14 +1,15 @@
 # requestingWebsiteOrigin
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The origin of the requesting website, if present.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

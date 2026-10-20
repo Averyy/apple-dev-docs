@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Game Center profile name for a player.
 
@@ -20,13 +21,26 @@ The Game Center profile name for a player.
 var displayName: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * displayName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, nullable) NSString * displayName;
+```
+
 #### Discussion
 
 Players only see the display name of other players who are in their contacts list.
 
 ## See Also
 
-- [var playerID: String?](gkbaseplayer/playerid.md)
+### Identifying a Player
+- [var playerID: String?](./playerid.md)
   A unique identifier for a player.
 
 

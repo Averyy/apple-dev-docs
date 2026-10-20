@@ -1,17 +1,22 @@
 # createFolder(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a folder on the remote target
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func createFolder(_ inDirName: String!) -> OBEXError
+```
+
+```objc
+- (OBEXError) createFolder:(NSString *) inDirName;
 ```
 
 #### Return Value

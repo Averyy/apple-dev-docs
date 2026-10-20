@@ -1,7 +1,8 @@
 # unapplying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the primitive that results from unapplying a scaled pose to the primitive.
 

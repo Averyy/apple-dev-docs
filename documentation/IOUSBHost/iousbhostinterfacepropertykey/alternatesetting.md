@@ -1,7 +1,8 @@
 # alternateSetting
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The USB interface’s current alternative setting value.
 
@@ -13,6 +14,10 @@ The USB interface’s current alternative setting value.
 
 ```swift
 static let alternateSetting: IOUSBHostInterfacePropertyKey
+```
+
+```c
+extern IOUSBHostInterfacePropertyKey IOUSBHostInterfacePropertyKeyAlternateSetting;
 ```
 
 

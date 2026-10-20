@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_HDRMetadataInsertionMode
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 14.0+
@@ -17,25 +18,30 @@
 let kVTCompressionPropertyKey_HDRMetadataInsertionMode: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_HDRMetadataInsertionMode;
+```
+
 ## Topics
 
 ### Insertion Modes
-- [let kVTHDRMetadataInsertionMode_Auto: CFString](kvthdrmetadatainsertionmode_auto.md)
-- [let kVTHDRMetadataInsertionMode_None: CFString](kvthdrmetadatainsertionmode_none.md)
-- [let kVTHDRMetadataInsertionMode_RequestSDRRangePreservation: CFString](kvthdrmetadatainsertionmode_requestsdrrangepreservation.md)
+- [let kVTHDRMetadataInsertionMode_Auto: CFString](./kvthdrmetadatainsertionmode_auto.md)
+- [let kVTHDRMetadataInsertionMode_None: CFString](./kvthdrmetadatainsertionmode_none.md)
+- [let kVTHDRMetadataInsertionMode_RequestSDRRangePreservation: CFString](./kvthdrmetadatainsertionmode_requestsdrrangepreservation.md)
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_Depth: CFString](kvtcompressionpropertykey_depth.md)
+### Bitstream Configuration
+- [let kVTCompressionPropertyKey_Depth: CFString](./kvtcompressionpropertykey_depth.md)
   The pixel depth of the encoded video.
-- [let kVTCompressionPropertyKey_H264EntropyMode: CFString](kvtcompressionpropertykey_h264entropymode.md)
+- [let kVTCompressionPropertyKey_H264EntropyMode: CFString](./kvtcompressionpropertykey_h264entropymode.md)
   The entropy encoding mode for H.264 compression.
-- [let kVTCompressionPropertyKey_OutputBitDepth: CFString](kvtcompressionpropertykey_outputbitdepth.md)
-- [let kVTCompressionPropertyKey_PreserveAlphaChannel: CFString](kvtcompressionpropertykey_preservealphachannel.md)
+- [let kVTCompressionPropertyKey_OutputBitDepth: CFString](./kvtcompressionpropertykey_outputbitdepth.md)
+- [let kVTCompressionPropertyKey_PreserveAlphaChannel: CFString](./kvtcompressionpropertykey_preservealphachannel.md)
   A key that specifies whether to encode the alpha channel of input video frames.
-- [let kVTCompressionPropertyKey_PreserveDynamicHDRMetadata: CFString](kvtcompressionpropertykey_preservedynamichdrmetadata.md)
+- [let kVTCompressionPropertyKey_PreserveDynamicHDRMetadata: CFString](./kvtcompressionpropertykey_preservedynamichdrmetadata.md)
   Specifies whether to preserve dynamic HDR metadata on the input pixel buffer.
-- [let kVTCompressionPropertyKey_ProfileLevel: CFString](kvtcompressionpropertykey_profilelevel.md)
+- [let kVTCompressionPropertyKey_ProfileLevel: CFString](./kvtcompressionpropertykey_profilelevel.md)
   The profile and level for the encoded bitstream.
 
 

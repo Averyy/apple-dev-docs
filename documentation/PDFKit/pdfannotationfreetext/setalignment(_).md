@@ -1,17 +1,22 @@
 # setAlignment(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the horizontal alignment of text within the bounds of the annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setAlignment(_ alignment: NSTextAlignment)
+```
+
+```objc
+- (void) setAlignment:(NSTextAlignment) alignment;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func setAlignment(_ alignment: NSTextAlignment)
 
 ## See Also
 
-- [func alignment() -> NSTextAlignment](pdfannotationfreetext/alignment.md)
+### Managing Text Alignment
+- [func alignment() -> NSTextAlignment](./alignment%28%29.md)
   Returns the horizontal alignment of text within the bounds of the annotation.
 
 

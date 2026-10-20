@@ -1,7 +1,8 @@
 # JSValueCompareDouble(_:_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSValueCompareDouble(_ ctx: JSContextRef, _ left: JSValueRef, _ right: Double, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition
+```
+
+```c
+JSRelationCondition JSValueCompareDouble(JSContextRef ctx, JSValueRef left, double right, JSValueRef*exception);
 ```
 
 #### Return Value

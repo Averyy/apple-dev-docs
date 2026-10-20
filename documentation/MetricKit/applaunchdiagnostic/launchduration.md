@@ -1,7 +1,8 @@
 # launchDuration
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Duration of the launch that triggered this diagnostic.
 

@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperiment.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an App Store version experiment treatment.
 
@@ -10,14 +11,14 @@ The request body you use to create an App Store version experiment treatment.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperiment.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperiments`
 
 
 ---

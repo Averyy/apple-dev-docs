@@ -1,7 +1,8 @@
 # ESHLIBVERS
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Shared library version mismatch.
 

@@ -1,7 +1,8 @@
 # WebPage.NavigationEvent.startedProvisionalNavigation
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This event occurs when the page receives provisional approval to process a navigation request, but before it receives a response to that request.
 

@@ -1,62 +1,63 @@
 # FixedWidthInteger Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func &* (Self, Self) -> Self](int8/&*(_:_:).md)
+- [static func &* (Self, Self) -> Self](./ampstar%28_,_%29.md)
   Returns the product of the two given values, wrapping the result in case of any overflow.
-- [static func &*= (inout Self, Self)](int8/&*=(_:_:).md)
+- [static func &*= (inout Self, Self)](./ampstareq%28_,_%29.md)
   Multiplies two values and stores the result in the left-hand-side variable, wrapping any overflow.
-- [static func &+ (Self, Self) -> Self](int8/&+(_:_:).md)
+- [static func &+ (Self, Self) -> Self](./ampplus%28_,_%29.md)
   Returns the sum of the two given values, wrapping the result in case of any overflow.
-- [static func &+= (inout Self, Self)](int8/&+=(_:_:).md)
+- [static func &+= (inout Self, Self)](./amppluseq%28_,_%29.md)
   Adds two values and stores the result in the left-hand-side variable, wrapping any overflow.
-- [static func &- (Self, Self) -> Self](int8/&-(_:_:).md)
+- [static func &- (Self, Self) -> Self](./ampminus%28_,_%29.md)
   Returns the difference of the two given values, wrapping the result in case of any overflow.
-- [static func &-= (inout Self, Self)](int8/&-=(_:_:).md)
+- [static func &-= (inout Self, Self)](./ampminuseq%28_,_%29.md)
   Subtracts the second value from the first and stores the difference in the left-hand-side variable, wrapping any overflow.
-- [static func &>> (Int8, Int8) -> Int8](int8/&__(_:_:)-1v821.md)
+- [static func &>> (Int8, Int8) -> Int8](./ampopop%28_,_%29-1v821.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
-- [static func &>> <Other>(Self, Other) -> Self](int8/&__(_:_:)-24uqw.md)
+- [static func &>> <Other>(Self, Other) -> Self](./ampopop%28_,_%29-24uqw.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
-- [static func &<< <Other>(Self, Other) -> Self](int8/&__(_:_:)-2a90q.md)
+- [static func &<< <Other>(Self, Other) -> Self](./ampopop%28_,_%29-2a90q.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width.
-- [static func &<< (Int8, Int8) -> Int8](int8/&__(_:_:)-4szuk.md)
+- [static func &<< (Int8, Int8) -> Int8](./ampopop%28_,_%29-4szuk.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width.
-- [static func &<< (Self, Self) -> Self](int8/&__(_:_:)-7028d.md)
+- [static func &<< (Self, Self) -> Self](./ampopop%28_,_%29-7028d.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width.
-- [static func &>> (Self, Self) -> Self](int8/&__(_:_:)-9x51j.md)
+- [static func &>> (Self, Self) -> Self](./ampopop%28_,_%29-9x51j.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width.
-- [static func &<<= <Other>(inout Self, Other)](int8/&__=(_:_:)-6g9h1.md)
+- [static func &<<= <Other>(inout Self, Other)](./ampopopeq%28_,_%29-6g9h1.md)
   Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width, and stores the result in the left-hand-side variable.
-- [static func &>>= <Other>(inout Self, Other)](int8/&__=(_:_:)-9dar0.md)
+- [static func &>>= <Other>(inout Self, Other)](./ampopopeq%28_,_%29-9dar0.md)
   Calculates the result of shifting a value’s binary representation the specified number of digits to the right, masking the shift amount to the type’s bit width, and stores the result in the left-hand-side variable.
 ### Initializers
-- [init<T>(T)](int8/init(_:)-7lqol.md)
-- [init?(String)](int8/init(_:)-89uu.md)
+- [init<T>(T)](./init%28_%29-7lqol.md)
+- [init?(String)](./init%28_%29-89uu.md)
   Creates a new integer value from the given string.
-- [init?<S>(S, radix: Int)](int8/init(_:radix:).md)
+- [init?<S>(S, radix: Int)](./init%28_,radix%29.md)
   Creates a new integer value from the given string and radix.
-- [init(bigEndian: Self)](int8/init(bigendian:).md)
+- [init(bigEndian: Self)](./init%28bigendian%29.md)
   Creates an integer from its big-endian representation, changing the byte order if necessary.
-- [init?<T>(exactly: T)](int8/init(exactly:)-16mcu.md)
-- [init(littleEndian: Self)](int8/init(littleendian:).md)
+- [init?<T>(exactly: T)](./init%28exactly%29-16mcu.md)
+- [init(littleEndian: Self)](./init%28littleendian%29.md)
   Creates an integer from its little-endian representation, changing the byte order if necessary.
 ### Instance Properties
-- [var bigEndian: Self](int8/bigendian.md)
+- [var bigEndian: Self](./bigendian.md)
   The big-endian representation of this integer.
-- [var littleEndian: Self](int8/littleendian.md)
+- [var littleEndian: Self](./littleendian.md)
   The little-endian representation of this integer.
 ### Type Methods
-- [static func random(in: Range<Self>) -> Self](int8/random(in:)-2fyvz.md)
+- [static func random(in: Range<Self>) -> Self](./random%28in%29-2fyvz.md)
   Returns a random value within the specified range.
-- [static func random(in: ClosedRange<Self>) -> Self](int8/random(in:)-5kgo1.md)
+- [static func random(in: ClosedRange<Self>) -> Self](./random%28in%29-5kgo1.md)
   Returns a random value within the specified range.
-- [static func random<T>(in: Range<Self>, using: inout T) -> Self](int8/random(in:using:)-1n6up.md)
+- [static func random<T>(in: Range<Self>, using: inout T) -> Self](./random%28in,using%29-1n6up.md)
   Returns a random value within the specified range, using the given generator as a source for randomness.
-- [static func random<T>(in: ClosedRange<Self>, using: inout T) -> Self](int8/random(in:using:)-8ennz.md)
+- [static func random<T>(in: ClosedRange<Self>, using: inout T) -> Self](./random%28in,using%29-8ennz.md)
   Returns a random value within the specified range, using the given generator as a source for randomness.
 
 

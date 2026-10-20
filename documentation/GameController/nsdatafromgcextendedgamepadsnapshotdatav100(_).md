@@ -1,17 +1,20 @@
 # NSDataFromGCExtendedGamepadSnapShotDataV100(_:)
 
 **Framework**: Game Controller  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Encapsulates the controller data from an extended gamepad structure into a data object.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.9+ - Deprecated in 10.15
+- tvOS 9.0+ - Deprecated in 13.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`withExtendedGamepad()`](./gccontroller/withextendedgamepad%28%29.md) method instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ Encapsulates the controller data from an extended gamepad structure into a data 
 func NSDataFromGCExtendedGamepadSnapShotDataV100(_ snapshotData: UnsafeMutablePointer<GCExtendedGamepadSnapShotDataV100>?) -> Data?
 ```
 
+```c
+NSData *NSDataFromGCExtendedGamepadSnapShotDataV100(GCExtendedGamepadSnapShotDataV100 *snapshotData);
+```
+
 #### Return Value
 
-A new [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that contains the snapshot data, or `nil` if an error occurred.
+A new [`NSData`](../Foundation/nsdata.md) object that contains the snapshot data, or `nil` if an error occurred.
 
 #### Discussion
 
@@ -33,9 +40,10 @@ If the version and size is not set in the snapshot the data will automatically h
 
 ## See Also
 
-- [struct GCExtendedGamepadSnapShotDataV100](gcextendedgamepadsnapshotdatav100.md)
+### Flattening a Snapshot to Memory
+- [struct GCExtendedGamepadSnapShotDataV100](./gcextendedgamepadsnapshotdatav100.md)
   A structure that holds a snapshot of an extended gamepad controller’s input data.
-- [func GCExtendedGamepadSnapShotDataV100FromNSData(UnsafeMutablePointer<GCExtendedGamepadSnapShotDataV100>?, Data?) -> Bool](gcextendedgamepadsnapshotdatav100fromnsdata(_:_:).md)
+- [func GCExtendedGamepadSnapShotDataV100FromNSData(UnsafeMutablePointer<GCExtendedGamepadSnapShotDataV100>?, Data?) -> Bool](./gcextendedgamepadsnapshotdatav100fromnsdata%28_,_%29.md)
   Copies the recorded data from an extended gamepad snapshot into a readable structure.
 
 

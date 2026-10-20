@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property with a raw string value.
 

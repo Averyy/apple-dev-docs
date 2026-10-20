@@ -1,14 +1,15 @@
 # kHIDDispatchOptionPhaseAny
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.2+
 
 ## Declaration
 
-```swift
+```c
 kHIDDispatchOptionPhaseAny = 0xff0
 ```
 

@@ -1,7 +1,8 @@
 # dictionaryPayload
 
 **Framework**: PushKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the received payload.
 
@@ -19,13 +20,18 @@ The contents of the received payload.
 var dictionaryPayload: [AnyHashable : Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary * dictionaryPayload;
+```
+
 #### Discussion
 
 For VoIP pushes, the sender is free to specify any fields for the contained data as long as it is provided in a text-encodable JSON format.
 
 ## See Also
 
-- [var type: PKPushType](pkpushpayload/type.md)
+### Payload Data
+- [var type: PKPushType](./type.md)
   The type value indicating how to interpret the payload.
 
 

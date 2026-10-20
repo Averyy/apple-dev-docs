@@ -1,7 +1,8 @@
 # GetSpeechInfo(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 16.0+ - Deprecated in 16.0

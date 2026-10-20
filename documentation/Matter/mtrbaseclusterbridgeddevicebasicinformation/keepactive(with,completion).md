@@ -1,7 +1,8 @@
 # keepActive(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command KeepActive
 
@@ -17,7 +18,15 @@ Command KeepActive
 ## Declaration
 
 ```swift
+func keepActive(with params: MTRBridgedDeviceBasicInformationClusterKeepActiveParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func keepActive(with params: MTRBridgedDeviceBasicInformationClusterKeepActiveParams) async throws
+```
+
+```objc
+- (void) keepActiveWithParams:(MTRBridgedDeviceBasicInformationClusterKeepActiveParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

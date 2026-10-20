@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sudivision from a Unicode identifier.
 
@@ -26,9 +27,10 @@ init(_ identifier: String)
 
 ## See Also
 
-- [static func subdivision(for: Locale.Region) -> Locale.Subdivision](locale/subdivision-swift.struct/subdivision(for:).md)
+### Creating a subdivision
+- [static func subdivision(for: Locale.Region) -> Locale.Subdivision](./subdivision%28for%29.md)
   Returns the subdivision representing the given region as a whole.
-- [init(stringLiteral: String)](locale/subdivision-swift.struct/init(stringliteral:).md)
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates a sudivision from a Unicode identifier as a string literal.
 
 

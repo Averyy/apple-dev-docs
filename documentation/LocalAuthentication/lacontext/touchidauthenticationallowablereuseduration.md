@@ -1,7 +1,8 @@
 # touchIDAuthenticationAllowableReuseDuration
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration for which Touch ID authentication reuse is allowable.
 
@@ -18,17 +19,22 @@ The duration for which Touch ID authentication reuse is allowable.
 var touchIDAuthenticationAllowableReuseDuration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval touchIDAuthenticationAllowableReuseDuration;
+```
+
 #### Discussion
 
 If the user unlocks the device using Touch ID within the specified time interval, then authentication for the receiver succeeds automatically, without prompting the user for Touch ID. This bypasses a scenario where the user unlocks the device and then is almost immediately prompted for another fingerprint.
 
 The default value is `0`, meaning that Touch ID authentication isn’t reused.
 
-The maximum allowable duration for Touch ID authentication reuse is specified by the [`LATouchIDAuthenticationMaximumAllowableReuseDuration`](latouchidauthenticationmaximumallowablereuseduration.md) constant. You cannot specify a longer duration by setting this property to a value greater than this constant.
+The maximum allowable duration for Touch ID authentication reuse is specified by the [`LATouchIDAuthenticationMaximumAllowableReuseDuration`](../latouchidauthenticationmaximumallowablereuseduration.md) constant. You cannot specify a longer duration by setting this property to a value greater than this constant.
 
 ## See Also
 
-- [let LATouchIDAuthenticationMaximumAllowableReuseDuration: TimeInterval](latouchidauthenticationmaximumallowablereuseduration.md)
+### Reusing device unlock state
+- [let LATouchIDAuthenticationMaximumAllowableReuseDuration: TimeInterval](../latouchidauthenticationmaximumallowablereuseduration.md)
   The maximum allowable reuse duration.
 
 

@@ -1,7 +1,8 @@
 # attributedSpeechString
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed string that contains the text for speech synthesis.
 
@@ -20,13 +21,18 @@ An attributed string that contains the text for speech synthesis.
 var attributedSpeechString: NSAttributedString { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSAttributedString * attributedSpeechString;
+```
+
 #### Discussion
 
 You can’t change an utterance’s text after initializaiton. If you want the speech synthesizer to speak different text, create a new utterance.
 
 ## See Also
 
-- [var speechString: String](avspeechutterance/speechstring.md)
+### Inspecting utterance text
+- [var speechString: String](./speechstring.md)
   A string that contains the text for speech synthesis.
 
 

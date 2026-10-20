@@ -1,14 +1,15 @@
 # conninfo_tcp_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct conninfo_tcp {
     ...
 } conninfo_tcp_t;
@@ -17,7 +18,7 @@ typedef struct conninfo_tcp {
 ## Topics
 
 ### Instance Properties
-- [tcpci_tcp_info](conninfo_tcp_t/3944407-tcpci_tcp_info.md)
+- [tcpci_tcp_info](./conninfo_tcp_t/api-3944407-tcpci_tcp_info.md)
 
 
 ---

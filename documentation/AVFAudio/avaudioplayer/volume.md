@@ -1,7 +1,8 @@
 # volume
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio player’s volume relative to other audio output.
 
@@ -20,21 +21,26 @@ The audio player’s volume relative to other audio output.
 var volume: Float { get set }
 ```
 
+```objc
+@property float volume;
+```
+
 #### Discussion
 
 This property supports values ranging from `0.0` for silence to `1.0` for full volume.
 
 ## See Also
 
-- [func setVolume(Float, fadeDuration: TimeInterval)](avaudioplayer/setvolume(_:fadeduration:).md)
+### Configuring playback settings
+- [func setVolume(Float, fadeDuration: TimeInterval)](./setvolume%28_,fadeduration%29.md)
   Changes the audio player’s volume over a duration of time.
-- [var pan: Float](avaudioplayer/pan.md)
+- [var pan: Float](./pan.md)
   The audio player’s stereo pan position.
-- [var enableRate: Bool](avaudioplayer/enablerate.md)
+- [var enableRate: Bool](./enablerate.md)
   A Boolean value that indicates whether you can adjust the playback rate of the audio player.
-- [var rate: Float](avaudioplayer/rate.md)
+- [var rate: Float](./rate.md)
   The audio player’s playback rate.
-- [var numberOfLoops: Int](avaudioplayer/numberofloops.md)
+- [var numberOfLoops: Int](./numberofloops.md)
   The number of times the audio repeats playback.
 
 

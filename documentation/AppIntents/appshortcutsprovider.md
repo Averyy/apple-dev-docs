@@ -1,7 +1,8 @@
 # AppShortcutsProvider
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type alias for the type that provides an app’s preconfigured shortcuts.
 
@@ -11,7 +12,7 @@ A type alias for the type that provides an app’s preconfigured shortcuts.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,40 +23,40 @@ protocol AppShortcutsProvider : Sendable
 
 ## Mentions
 
-- [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
+- [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md)
 
 #### Overview
 
-> **Note**:  Session 10170: [`Implement App Shortcuts with App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10170), and session 10169: [`Design App Shortcuts`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10169).
+> **Related sessions from WWDC22**:  Session 10170: [Implement App Shortcuts with App Intents](https://developer.apple.com/videos/play/wwdc2022/10170), and session 10169: [Design App Shortcuts](https://developer.apple.com/videos/play/wwdc2022/10169).
 
 > **Note**: Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
 
 ## Topics
 
 ### Providing App Shortcuts
-- [static var appShortcuts: [AppShortcut]](appshortcutsprovider/appshortcuts.md)
-- [enum AppShortcutsBuilder](appshortcutsbuilder.md)
+- [static var appShortcuts: [AppShortcut]](./appshortcutsprovider/appshortcuts.md)
+- [enum AppShortcutsBuilder](./appshortcutsbuilder.md)
   A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
 ### Configuring shortcut tiles
-- [static var shortcutTileColor: ShortcutTileColor](appshortcutsprovider/shortcuttilecolor.md)
+- [static var shortcutTileColor: ShortcutTileColor](./appshortcutsprovider/shortcuttilecolor.md)
   The background color of the tile that Shortcuts displays for each of the app’s App Shortcuts.
-- [enum ShortcutTileColor](shortcuttilecolor.md)
+- [enum ShortcutTileColor](./shortcuttilecolor.md)
   Describes the colors a shortcut tile in the Shortcuts app.
 ### Updating stored parameters
-- [static func updateAppShortcutParameters()](appshortcutsprovider/updateappshortcutparameters.md)
+- [static func updateAppShortcutParameters()](./appshortcutsprovider/updateappshortcutparameters%28%29.md)
 ### Type Aliases
-- [AppShortcutsProvider.OptionsCollection](appshortcutsprovider/optionscollection.md)
-- [AppShortcutsProvider.ParameterPresentation](appshortcutsprovider/parameterpresentation.md)
-- [AppShortcutsProvider.Summary](appshortcutsprovider/summary.md)
-- [AppShortcutsProvider.Title](appshortcutsprovider/title.md)
+- [AppShortcutsProvider.OptionsCollection](./appshortcutsprovider/optionscollection.md)
+- [AppShortcutsProvider.ParameterPresentation](./appshortcutsprovider/parameterpresentation.md)
+- [AppShortcutsProvider.Summary](./appshortcutsprovider/summary.md)
+- [AppShortcutsProvider.Title](./appshortcutsprovider/title.md)
 ### Type Properties
-- [static var negativePhrases: NegativeAppShortcutPhrases](appshortcutsprovider/negativephrases.md)
+- [static var negativePhrases: NegativeAppShortcutPhrases](./appshortcutsprovider/negativephrases.md)
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

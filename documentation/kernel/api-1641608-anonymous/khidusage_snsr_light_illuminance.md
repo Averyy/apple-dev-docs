@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Light_Illuminance
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.1+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Light_Illuminance = 0x04D1
 ```
 

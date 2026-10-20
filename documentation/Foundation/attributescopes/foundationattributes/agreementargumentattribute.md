@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.AgreementArgumentAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An attribute that represents grammatical agreement with an argument in a localized string.
 
@@ -37,9 +38,9 @@ The following steps ensure proper gender agreement in the translation:
 
 1. Create a type containing all the words you need for translation. For example, create an `Order` structure containing two localizable string properties for `item` and `size`.
 2. Add the necessary translations for the food items and the sizes into the Spanish localization file.
-3. Create a [`LocalizedStringResource`](localizedstringresource.md) containing the English key phrase from the Spanish localization file to translate, along with placeholder variables representing the words to inflect (*size* and *item*).
-4. In the Spanish localization file, add `%@` placeholders for the words you want to substitute as part of the translation. Make the Spanish words for the size and the item grammatically agree using the `inflect` attribute with a value of [`true`](https://developer.apple.com/documentation/swift/true). Then make the masculine Spanish word for *ready* (*listo*) agree with the feminine word for *salad* (*ensalada*) by wrapping *listo* in an `agreeWithArgument` attribute, pointing to the second replacement in the sentence (*ensalada*). Note how the placeholder attributes for *small salad*, `%1@` and `%2@`, reverse order in the code example below when translating from English to Spanish.
-5. Inflect the entire sentence by passing the [`LocalizedStringResource`](localizedstringresource.md) instance into a new instance of [`AttributedString`](attributedstring.md).
+3. Create a [`LocalizedStringResource`](../../localizedstringresource.md) containing the English key phrase from the Spanish localization file to translate, along with placeholder variables representing the words to inflect (*size* and *item*).
+4. In the Spanish localization file, add `%@` placeholders for the words you want to substitute as part of the translation. Make the Spanish words for the size and the item grammatically agree using the `inflect` attribute with a value of [`true`](../../../Swift/true.md). Then make the masculine Spanish word for *ready* (*listo*) agree with the feminine word for *salad* (*ensalada*) by wrapping *listo* in an `agreeWithArgument` attribute, pointing to the second replacement in the sentence (*ensalada*). Note how the placeholder attributes for *small salad*, `%1@` and `%2@`, reverse order in the code example below when translating from English to Spanish.
+5. Inflect the entire sentence by passing the [`LocalizedStringResource`](../../localizedstringresource.md) instance into a new instance of [`AttributedString`](../../attributedstring.md).
 
 ```swift
 struct Order {
@@ -72,37 +73,38 @@ let result = AttributedString(localized: resource)
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [MarkdownDecodableAttributedStringKey](markdowndecodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [MarkdownDecodableAttributedStringKey](../../markdowndecodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let inflect: AttributeScopes.FoundationAttributes.InflectionRuleAttribute](attributescopes/foundationattributes/inflect.md)
+### Using automatic grammar agreement attributes
+- [let inflect: AttributeScopes.FoundationAttributes.InflectionRuleAttribute](./inflect.md)
   A scope for accessing an inflection rule attribute.
-- [AttributeScopes.FoundationAttributes.InflectionRuleAttribute](attributescopes/foundationattributes/inflectionruleattribute.md)
+- [AttributeScopes.FoundationAttributes.InflectionRuleAttribute](./inflectionruleattribute.md)
   A type for using an inflection rule as an attribute.
-- [let agreementArgument: AttributeScopes.FoundationAttributes.AgreementArgumentAttribute](attributescopes/foundationattributes/agreementargument.md)
+- [let agreementArgument: AttributeScopes.FoundationAttributes.AgreementArgumentAttribute](./agreementargument.md)
   A scope for accessing an agreement argument attribute.
-- [let agreementConcept: AttributeScopes.FoundationAttributes.AgreementConceptAttribute](attributescopes/foundationattributes/agreementconcept.md)
+- [let agreementConcept: AttributeScopes.FoundationAttributes.AgreementConceptAttribute](./agreementconcept.md)
   A scope for accessing an agreement concept attribute.
-- [AttributeScopes.FoundationAttributes.AgreementConceptAttribute](attributescopes/foundationattributes/agreementconceptattribute.md)
+- [AttributeScopes.FoundationAttributes.AgreementConceptAttribute](./agreementconceptattribute.md)
   An attribute that represents grammatical agreement for objects that aren’t part of the inflected text.
-- [let morphology: AttributeScopes.FoundationAttributes.MorphologyAttribute](attributescopes/foundationattributes/morphology.md)
+- [let morphology: AttributeScopes.FoundationAttributes.MorphologyAttribute](./morphology.md)
   A scope for accessing a morphology attribute.
-- [AttributeScopes.FoundationAttributes.MorphologyAttribute](attributescopes/foundationattributes/morphologyattribute.md)
+- [AttributeScopes.FoundationAttributes.MorphologyAttribute](./morphologyattribute.md)
   A type for using a morphology as an attribute.
-- [let referentConcept: AttributeScopes.FoundationAttributes.ReferentConceptAttribute](attributescopes/foundationattributes/referentconcept.md)
+- [let referentConcept: AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./referentconcept.md)
   A scope for accessing a referent concept attribute.
-- [AttributeScopes.FoundationAttributes.ReferentConceptAttribute](attributescopes/foundationattributes/referentconceptattribute.md)
+- [AttributeScopes.FoundationAttributes.ReferentConceptAttribute](./referentconceptattribute.md)
   An attribute that specifies a grammatical agreement concept for substituting pronouns in localized text.
-- [let inflectionAlternative: AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](attributescopes/foundationattributes/inflectionalternative.md)
+- [let inflectionAlternative: AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./inflectionalternative.md)
   A scope for accessing an inflection alternative attribute.
-- [AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](attributescopes/foundationattributes/inflectionalternativeattribute.md)
+- [AttributeScopes.FoundationAttributes.InflectionAlternativeAttribute](./inflectionalternativeattribute.md)
   An attribute that provides an alternative inflection phrase when the system can’t achieve grammatical agreement.
 
 

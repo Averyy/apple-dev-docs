@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No authorization is required.
 
@@ -18,7 +19,7 @@ static var none: MediaOutputDevice.AuthorizationMethod { get }
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../../creating-a-media-device-extension.md)
 
 
 ---

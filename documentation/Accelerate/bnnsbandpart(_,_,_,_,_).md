@@ -1,18 +1,21 @@
 # BNNSBandPart(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the specified subdiagonals and superdiagonals of a matrix, and sets other elements to zero.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Copies the specified subdiagonals and superdiagonals of a matrix, and sets other
 func BNNSBandPart(_ num_lower: Int32, _ num_upper: Int32, _ input: UnsafePointer<BNNSNDArrayDescriptor>, _ output: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
 ```
 
+```c
+int BNNSBandPart(const int num_lower, const int num_upper, const BNNSNDArrayDescriptor *input, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-Use [`BNNSBandPart(_:_:_:_:_:)`](bnnsbandpart(_:_:_:_:_:).md) to copy a tensor’s main diagonal and zero or more upper and lower bands. You can specify that the function returns either the entire upper or lower triangle by passing a negative value to the corresponding `num_*` parameter.
+Use [`BNNSBandPart(_:_:_:_:_:)`](./bnnsbandpart%28_,_,_,_,_%29.md) to copy a tensor’s main diagonal and zero or more upper and lower bands. You can specify that the function returns either the entire upper or lower triangle by passing a negative value to the corresponding `num_*` parameter.
 
 For example, given the following 8x8 matrix:
 
@@ -107,14 +114,15 @@ On return, `outputDescriptor` contains the following values:
 
 ## See Also
 
-- [BNNS.Error](bnns/error.md)
-- [func BNNSShuffle(BNNSShuffleType, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsshuffle(_:_:_:_:).md)
+### Errors
+- [BNNS.Error](./bnns/error.md)
+- [func BNNSShuffle(BNNSShuffleType, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnsshuffle%28_,_,_,_%29.md)
   Rearranges elements in a tensor according to shuffle type.
-- [struct BNNSShuffleType](bnnsshuffletype.md)
+- [struct BNNSShuffleType](./bnnsshuffletype.md)
   Constants that specify a shuffle type.
-- [func BNNSTile(UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnstile(_:_:_:).md)
+- [func BNNSTile(UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnstile%28_,_,_%29.md)
   Generates an output tensor by tiling an input tensor multiple times.
-- [func BNNSTileBackward(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnstilebackward(_:_:_:).md)
+- [func BNNSTileBackward(UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnstilebackward%28_,_,_%29.md)
   Applies a tile filter backward to generate an input gradient.
 
 

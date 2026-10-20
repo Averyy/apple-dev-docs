@@ -1,7 +1,8 @@
 # SRError.Code.promptDeclined
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Occurs when the user cancels the sensor approval workflow.
 
@@ -16,19 +17,24 @@ Occurs when the user cancels the sensor approval workflow.
 case promptDeclined
 ```
 
+```c
+SRErrorPromptDeclined
+```
+
 #### Discussion
 
-The [`requestAuthorization(sensors:completion:)`](srsensorreader/requestauthorization(sensors:completion:).md) passes this error into the completion closure if the user declines the prompt by pressing Cancel. The framework also cancels the prompt if you call this function after the user had already responded to the prompt either by approving or denying access to the argument sensors.
+The [`requestAuthorization(sensors:completion:)`](../../srsensorreader/requestauthorization%28sensors,completion%29.md) passes this error into the completion closure if the user declines the prompt by pressing Cancel. The framework also cancels the prompt if you call this function after the user had already responded to the prompt either by approving or denying access to the argument sensors.
 
 ## See Also
 
-- [SRError.Code.dataInaccessible](srerror/code/datainaccessible.md)
+### Errors
+- [SRError.Code.dataInaccessible](./datainaccessible.md)
   Occurs when the app can’t access the sensor’s data.
-- [SRError.Code.fetchRequestInvalid](srerror/code/fetchrequestinvalid.md)
+- [SRError.Code.fetchRequestInvalid](./fetchrequestinvalid.md)
   Occurs when the app misconfigures a fetch request.
-- [SRError.Code.invalidEntitlement](srerror/code/invalidentitlement.md)
+- [SRError.Code.invalidEntitlement](./invalidentitlement.md)
   Occurs when the app lacks the required entitlement.
-- [SRError.Code.noAuthorization](srerror/code/noauthorization.md)
+- [SRError.Code.noAuthorization](./noauthorization.md)
   Occurs when the user declines sensor access in the Settings app.
 
 

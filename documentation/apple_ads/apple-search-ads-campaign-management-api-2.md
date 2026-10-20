@@ -1,6 +1,7 @@
 # Apple Ads Campaign Management API 2
 
-**Framework**: Apple Ads
+**Framework**: Apple Ads  
+**Role**: Article
 
 Apple no longer supports this API.
 
@@ -14,9 +15,9 @@ API 2 campaigns aren’t compatible with API 3 resources, however, API 2 reports
 
 The API now represents App Store territories as follows:
 
-- **`countriesOrRegions`**: For use in the [`Campaign`](campaign.md) object.
-- **`countriesOrRegions`**: For use in the [`ReportingCampaign`](reportingcampaign.md) object.
-- **[`CountryOrRegion`](countryorregion.md)**: For use as a `groupBy` dimension in the [`ReportingRequest`](reportingrequest.md) object.
+- **`countriesOrRegions`**: For use in the [`Campaign`](./campaign.md) object.
+- **`countriesOrRegions`**: For use in the [`ReportingCampaign`](./reportingcampaign.md) object.
+- **[`CountryOrRegion`](./countryorregion.md)**: For use as a `groupBy` dimension in the [`ReportingRequest`](./reportingrequest.md) object.
 
 Report field changes are as follows:
 
@@ -28,9 +29,9 @@ Report field changes are as follows:
 | `newDownloads` | `conversionsNewDownloads` |
 | `redownloads` | `conversionsRedownloads` |
 
-See [`ExtendedSpendRow`](extendedspendrow.md) and [`SpendRow`](spendrow.md) for field descriptions.
+See [`ExtendedSpendRow`](./extendedspendrow.md) and [`SpendRow`](./spendrow.md) for field descriptions.
 
-API 2 includes the following new features for [`Creative Sets`](creative-sets.md):
+API 2 includes the following new features for [Creative Sets](./creative-sets.md):
 
 - Creating new Creative Sets and linking to an ad group.
 - Reassigning Creative Sets to an ad group.
@@ -50,13 +51,14 @@ The following Apple Ads Campaign Management API 1 fields are no longer in the co
 
 ## See Also
 
-- [Apple Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
+### Changelog
+- [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
   Learn about changes to Apple Ads Campaign Management API 5.
-- [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
+- [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
   Learn about changes to Apple Ads Campaign Management API 4.
-- [Apple Ads Campaign Management API 3](apple-search-ads-campaign-management-api-3.md)
+- [Apple Ads Campaign Management API 3](./apple-search-ads-campaign-management-api-3.md)
   Apple no longer supports this API.
-- [Apple Ads Campaign Management API 1](apple-search-ads-campaign-management-api-1.md)
+- [Apple Ads Campaign Management API 1](./apple-search-ads-campaign-management-api-1.md)
   Apple no longer supports this API.
 
 

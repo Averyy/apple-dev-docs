@@ -1,7 +1,8 @@
 # buttonAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance attributes for plain bar button items in the navigation bar.
 
@@ -19,9 +20,13 @@ The appearance attributes for plain bar button items in the navigation bar.
 var buttonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * buttonAppearance;
+```
+
 #### Discussion
 
-To configure the appearance of the back or done buttons separately, use the [`backButtonAppearance`](uinavigationbarappearance/backbuttonappearance.md) and [`doneButtonAppearance`](uinavigationbarappearance/donebuttonappearance.md) properties instead.
+To configure the appearance of the back or done buttons separately, use the [`backButtonAppearance`](./backbuttonappearance.md) and [`doneButtonAppearance`](./donebuttonappearance.md) properties instead.
 
 
 ---

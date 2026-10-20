@@ -1,7 +1,8 @@
 # keyLayoutHeaderFormat
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer identifying the format of the structure. Set to `kUCLayoutHeaderFormat`.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer identifying the format of the structure. Set to `kUCL
 
 ```swift
 var keyLayoutHeaderFormat: UInt16
+```
+
+```c
+UInt16 keyLayoutHeaderFormat;
 ```
 
 

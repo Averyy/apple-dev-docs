@@ -1,7 +1,8 @@
 # Morphology.GrammaticalGender.neuter
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value to not specify gender when inflecting a string.
 
@@ -22,9 +23,10 @@ case neuter
 
 ## See Also
 
-- [Morphology.GrammaticalGender.feminine](morphology/grammaticalgender-swift.enum/feminine.md)
+### Determining Grammatical Gender
+- [Morphology.GrammaticalGender.feminine](./feminine.md)
   The feminine grammatical gender.
-- [Morphology.GrammaticalGender.masculine](morphology/grammaticalgender-swift.enum/masculine.md)
+- [Morphology.GrammaticalGender.masculine](./masculine.md)
   The masculine grammatical gender.
 
 

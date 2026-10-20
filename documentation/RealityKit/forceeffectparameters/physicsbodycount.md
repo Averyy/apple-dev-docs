@@ -1,7 +1,8 @@
 # physicsBodyCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of physics bodies to be updated.
 

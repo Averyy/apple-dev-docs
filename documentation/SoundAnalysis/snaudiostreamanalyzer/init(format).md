@@ -1,7 +1,8 @@
 # init(format:)
 
 **Framework**: Sound Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new audio stream analyzer.
 
@@ -18,6 +19,10 @@ Creates a new audio stream analyzer.
 
 ```swift
 init(format: AVAudioFormat)
+```
+
+```objc
+- (instancetype) initWithFormat:(AVAudioFormat *) format;
 ```
 
 #### Discussion

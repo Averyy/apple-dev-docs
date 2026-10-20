@@ -1,7 +1,8 @@
 # OSIterator
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 The abstract superclass for Libkern iterators.
 
@@ -10,7 +11,7 @@ The abstract superclass for Libkern iterators.
 
 ## Declaration
 
-```swift
+```cpp
 class OSIterator : OSObject
 ```
 
@@ -25,36 +26,37 @@ OSIterator provides no concurrency protection.
 ## Topics
 
 ### Miscellaneous
-- [getNextObject](ositerator/1808048-getnextobject.md)
+- [getNextObject](./ositerator/api-1808048-getnextobject.md)
   Advances to and returns the next object in the iteration.
-- [isValid](ositerator/1808063-isvalid.md)
+- [isValid](./ositerator/api-1808063-isvalid.md)
   Check that the collection hasn't been modified during iteration.
-- [reset](ositerator/1808074-reset.md)
+- [reset](./ositerator/api-1808074-reset.md)
   Resets the iterator to the beginning of the collection, as if it had just been created.
 ### Instance Methods
-- [- getMetaClass](ositerator/1416195-getmetaclass.md)
-- [- getNextObject](ositerator/1416192-getnextobject.md)
-- [- isValid](ositerator/1416199-isvalid.md)
-- [- reset](ositerator/1416194-reset.md)
+- [- getMetaClass](./ositerator/api-1416195-getmetaclass.md)
+- [- getNextObject](./ositerator/api-1416192-getnextobject.md)
+- [- isValid](./ositerator/api-1416199-isvalid.md)
+- [- reset](./ositerator/api-1416194-reset.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [OSArray](osarray.md)
+### Collections
+- [OSArray](./osarray.md)
   OSArray provides an indexed store of objects.
-- [OSDictionary](osdictionary.md)
+- [OSDictionary](./osdictionary.md)
   OSDictionary provides an associative store using strings for keys.
-- [OSSet](osset.md)
+- [OSSet](./osset.md)
   OSSet provides an unordered set store of objects.
-- [OSOrderedSet](osorderedset.md)
+- [OSOrderedSet](./osorderedset.md)
   OSOrderedSet provides an ordered set store of objects.
-- [OSCollection](oscollection.md)
+- [OSCollection](./oscollection.md)
   The abstract superclass for Libkern collections.
-- [OSCollectionIterator](oscollectioniterator.md)
+- [OSCollectionIterator](./oscollectioniterator.md)
 
 
 ---

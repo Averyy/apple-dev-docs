@@ -1,7 +1,8 @@
 # init(topLeadingRadius:bottomLeadingRadius:bottomTrailingRadius:topTrailingRadius:style:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new rounded rectangle shape with uneven corners.
 
@@ -23,7 +24,8 @@ init(topLeadingRadius: CGFloat = 0, bottomLeadingRadius: CGFloat = 0, bottomTrai
 
 ## See Also
 
-- [init(cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle)](unevenroundedrectangle/init(cornerradii:style:).md)
+### Creating an uneven rounded rectangle
+- [init(cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle)](./init%28cornerradii,style%29.md)
   Creates a new rounded rectangle shape with uneven corners.
 
 

@@ -1,7 +1,8 @@
 # removeTokenConfiguration(for:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a configuration for a token with the token instance identifier you specify.
 
@@ -20,6 +21,10 @@ Removes a configuration for a token with the token instance identifier you speci
 func removeTokenConfiguration(for instanceID: TKToken.InstanceID)
 ```
 
+```objc
+- (void) removeTokenConfigurationForTokenInstanceID:(TKTokenInstanceID) instanceID;
+```
+
 #### Discussion
 
 The method does nothing if the token configuration you specify doesn’t exist.
@@ -30,7 +35,8 @@ The method does nothing if the token configuration you specify doesn’t exist.
 
 ## See Also
 
-- [func addTokenConfiguration(for: TKToken.InstanceID) -> TKToken.Configuration](tktokendriver/configuration/addtokenconfiguration(for:).md)
+### Adding and Removing Configurations
+- [func addTokenConfiguration(for: TKToken.InstanceID) -> TKToken.Configuration](./addtokenconfiguration%28for%29.md)
   Creates a configuration object for a token with the token instance identifier you specify.
 
 

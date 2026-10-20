@@ -1,7 +1,8 @@
 # CTTelephonyNetworkInfo
 
 **Framework**: Core Telephony  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides notifications of changes to the user’s cellular service provider.
 
@@ -16,57 +17,62 @@ An object that provides notifications of changes to the user’s cellular servic
 class CTTelephonyNetworkInfo
 ```
 
+```objc
+@interface CTTelephonyNetworkInfo : NSObject
+```
+
 #### Overview
 
 Your app should be able to handle changes to the user’s cellular service provider. For example, the user could swap the device’s SIM card with one from another provider while your app is running.
 
-This class also gives you access to the [`CTCarrier`](ctcarrier.md) object, which contains information about the user’s home cellular service provider.
+This class also gives you access to the [`CTCarrier`](./ctcarrier.md) object, which contains information about the user’s home cellular service provider.
 
 ## Topics
 
 ### Getting Information About the Cellular Service Provider
-- [var dataServiceIdentifier: String?](cttelephonynetworkinfo/dataserviceidentifier.md)
+- [var dataServiceIdentifier: String?](./cttelephonynetworkinfo/dataserviceidentifier.md)
   The identifier of the service that’s currently providing data.
-- [var delegate: (any CTTelephonyNetworkInfoDelegate)?](cttelephonynetworkinfo/delegate.md)
+- [var delegate: (any CTTelephonyNetworkInfoDelegate)?](./cttelephonynetworkinfo/delegate.md)
   An object that the system notifies when the data service identifier changes.
-- [protocol CTTelephonyNetworkInfoDelegate](cttelephonynetworkinfodelegate.md)
+- [protocol CTTelephonyNetworkInfoDelegate](./cttelephonynetworkinfodelegate.md)
   The methods that the system invokes when data service changes occur.
-- [var serviceCurrentRadioAccessTechnology: [String : String]?](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md)
+- [var serviceCurrentRadioAccessTechnology: [String : String]?](./cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md)
   A dictionary containing the current radio access technology registered to each service.
-- [Radio Access Technology Constants](radio-access-technology-constants.md)
+- [Radio Access Technology Constants](./radio-access-technology-constants.md)
   Constants that describe the current radio access technology.
 ### Deprecated
-- [var currentRadioAccessTechnology: String?](cttelephonynetworkinfo/currentradioaccesstechnology.md)
+- [var currentRadioAccessTechnology: String?](./cttelephonynetworkinfo/currentradioaccesstechnology.md)
   The current radio access technology registered with the device.
-- [var subscriberCellularProvider: CTCarrier?](cttelephonynetworkinfo/subscribercellularprovider.md)
+- [var subscriberCellularProvider: CTCarrier?](./cttelephonynetworkinfo/subscribercellularprovider.md)
   Information about the user’s cellular service provider.
-- [var subscriberCellularProviderDidUpdateNotifier: ((CTCarrier) -> Void)?](cttelephonynetworkinfo/subscribercellularproviderdidupdatenotifier.md)
+- [var subscriberCellularProviderDidUpdateNotifier: ((CTCarrier) -> Void)?](./cttelephonynetworkinfo/subscribercellularproviderdidupdatenotifier.md)
   A block dispatched when the user’s cellular service provider information changes.
-- [var serviceSubscriberCellularProviders: [String : CTCarrier]?](cttelephonynetworkinfo/servicesubscribercellularproviders.md)
+- [var serviceSubscriberCellularProviders: [String : CTCarrier]?](./cttelephonynetworkinfo/servicesubscribercellularproviders.md)
   A dictionary that contains carrier information about each service.
-- [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.md)
+- [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](./cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.md)
   A block dispatched when there are updates to the user’s cellular provider information for any service.
-- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
+- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
 ### Structures
-- [CTTelephonyNetworkInfo.RadioAccessTechnologyDidChangeMessage](cttelephonynetworkinfo/radioaccesstechnologydidchangemessage.md)
+- [CTTelephonyNetworkInfo.RadioAccessTechnologyDidChangeMessage](./cttelephonynetworkinfo/radioaccesstechnologydidchangemessage.md)
   A message that posts when the radio access technology changes for one of the services.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [iPhone quick switch](iphone-quick-switch.md)
+### Service information
+- [iPhone quick switch](./iphone-quick-switch.md)
   Enable seamless app transition between multiple iPhones.
 
 

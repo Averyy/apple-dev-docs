@@ -1,7 +1,8 @@
 # predicateForContainers(withIdentifiers:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate to find the containers with the specified identifiers.
 
@@ -19,9 +20,13 @@ Returns a predicate to find the containers with the specified identifiers.
 class func predicateForContainers(withIdentifiers identifiers: [String]) -> NSPredicate
 ```
 
+```objc
++ (NSPredicate *) predicateForContainersWithIdentifiers:(NSArray<NSString *> *) identifiers;
+```
+
 #### Return Value
 
-A predicate that can be used to fetch containers from [`CNContactStore`](cncontactstore.md).
+A predicate that can be used to fetch containers from [`CNContactStore`](../cncontactstore.md).
 
 ## Parameters
 
@@ -29,9 +34,10 @@ A predicate that can be used to fetch containers from [`CNContactStore`](cnconta
 
 ## See Also
 
-- [class func predicateForContainerOfContact(withIdentifier: String) -> NSPredicate](cncontainer/predicateforcontainerofcontact(withidentifier:).md)
+### Generating Search Predicates for Containers
+- [class func predicateForContainerOfContact(withIdentifier: String) -> NSPredicate](./predicateforcontainerofcontact%28withidentifier%29.md)
   Returns a predicate to find the container of the specified contact.
-- [class func predicateForContainerOfGroup(withIdentifier: String) -> NSPredicate](cncontainer/predicateforcontainerofgroup(withidentifier:).md)
+- [class func predicateForContainerOfGroup(withIdentifier: String) -> NSPredicate](./predicateforcontainerofgroup%28withidentifier%29.md)
   Returns a predicate to find the container of the specified group.
 
 

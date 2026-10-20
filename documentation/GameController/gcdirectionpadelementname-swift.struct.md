@@ -1,7 +1,8 @@
 # GCDirectionPadElementName
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The names for directional pad elements.
 
@@ -11,7 +12,7 @@ The names for directional pad elements.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,48 +23,49 @@ struct GCDirectionPadElementName
 ## Topics
 
 ### Getting the directional pad component names
-- [static let directionPad: GCDirectionPadElementName](gcdirectionpadelementname-swift.struct/directionpad.md)
+- [static let directionPad: GCDirectionPadElementName](./gcdirectionpadelementname-swift.struct/directionpad.md)
   The name of the direction pad on a directional pad element.
-- [static let leftThumbstick: GCDirectionPadElementName](gcdirectionpadelementname-swift.struct/leftthumbstick.md)
+- [static let leftThumbstick: GCDirectionPadElementName](./gcdirectionpadelementname-swift.struct/leftthumbstick.md)
   The name of the left thumbstick on a directional pad element.
-- [static let rightThumbstick: GCDirectionPadElementName](gcdirectionpadelementname-swift.struct/rightthumbstick.md)
+- [static let rightThumbstick: GCDirectionPadElementName](./gcdirectionpadelementname-swift.struct/rightthumbstick.md)
   The name of the right thumbstick on a directional pad element.
 ### Type Properties
-- [static let thumbstick: GCDirectionPadElementName](gcdirectionpadelementname-swift.struct/thumbstick.md)
+- [static let thumbstick: GCDirectionPadElementName](./gcdirectionpadelementname-swift.struct/thumbstick.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [GCPhysicalInputElementTypedName](gcphysicalinputelementtypedname.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [GCPhysicalInputElementTypedName](./gcphysicalinputelementtypedname.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct GCPhysicalInputElementName](gcphysicalinputelementname-swift.struct.md)
+### Element names
+- [struct GCPhysicalInputElementName](./gcphysicalinputelementname-swift.struct.md)
   The name of a physical input element.
-- [protocol GCPhysicalInputElementTypedName](gcphysicalinputelementtypedname.md)
+- [protocol GCPhysicalInputElementTypedName](./gcphysicalinputelementtypedname.md)
   A type-safe name for accessing elements of a physical input element collection.
-- [struct GCButtonElementName](gcbuttonelementname-swift.struct.md)
+- [struct GCButtonElementName](./gcbuttonelementname-swift.struct.md)
   The names of the button elements.
-- [struct GCAxisElementName](gcaxiselementname-swift.struct.md)
+- [struct GCAxisElementName](./gcaxiselementname-swift.struct.md)
   The names for the elements that provide values along an axis.
-- [struct GCSwitchElementName](gcswitchelementname-swift.struct.md)
+- [struct GCSwitchElementName](./gcswitchelementname-swift.struct.md)
   The name for an element that represents a switch.
-- [Extended gamepad input names](extended-gamepad-input-names.md)
+- [Extended gamepad input names](./extended-gamepad-input-names.md)
   Constants for names of extended gamepad elements.
-- [DualShock controller input names](dualshock-controller-input-names.md)
+- [DualShock controller input names](./dualshock-controller-input-names.md)
   Constants for names of DualShock 4 elements.
-- [Xbox controller input names](xbox-controller-input-names.md)
+- [Xbox controller input names](./xbox-controller-input-names.md)
   Constants for names of Xbox elements.
-- [Micro gamepad input names](micro-gamepad-input-names.md)
+- [Micro gamepad input names](./micro-gamepad-input-names.md)
   Constants for names of micro gamepad elements.
-- [Directional Gamepad Input Names](directional-gamepad-input-names.md)
+- [Directional Gamepad Input Names](./directional-gamepad-input-names.md)
   Constants for names of directional pad elements.
 
 

@@ -1,7 +1,8 @@
 # HKLensSpecification
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for lens specifications.
 
@@ -19,54 +20,59 @@ An abstract superclass for lens specifications.
 class HKLensSpecification
 ```
 
+```objc
+@interface HKLensSpecification : NSObject
+```
+
 #### Overview
 
-Don’t instantiate this class directly. Instead, use one of its concrete subclasses: [`HKGlassesLensSpecification`](hkglasseslensspecification.md) or [`HKContactsLensSpecification`](hkcontactslensspecification.md).
+Don’t instantiate this class directly. Instead, use one of its concrete subclasses: [`HKGlassesLensSpecification`](./hkglasseslensspecification.md) or [`HKContactsLensSpecification`](./hkcontactslensspecification.md).
 
 ## Topics
 
 ### Accessing lens specification data
-- [var sphere: HKQuantity](hklensspecification/sphere.md)
+- [var sphere: HKQuantity](./hklensspecification/sphere.md)
   The correction for farsightedness.
-- [var cylinder: HKQuantity?](hklensspecification/cylinder.md)
+- [var cylinder: HKQuantity?](./hklensspecification/cylinder.md)
   Part of the correction for astigmatism that measures the strength of the correction.
-- [var axis: HKQuantity?](hklensspecification/axis.md)
+- [var axis: HKQuantity?](./hklensspecification/axis.md)
   Part of the correction for astigmatism that measures the orientation fo the correction.
-- [var addPower: HKQuantity?](hklensspecification/addpower.md)
+- [var addPower: HKQuantity?](./hklensspecification/addpower.md)
   The correction for nearsightedness.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HKContactsLensSpecification](hkcontactslensspecification.md)
-- [HKGlassesLensSpecification](hkglasseslensspecification.md)
+- [HKContactsLensSpecification](./hkcontactslensspecification.md)
+- [HKGlassesLensSpecification](./hkglasseslensspecification.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKVisionPrescription](hkvisionprescription.md)
+### Vision prescriptions
+- [class HKVisionPrescription](./hkvisionprescription.md)
   A sample that stores a vision prescription.
-- [class HKGlassesPrescription](hkglassesprescription.md)
+- [class HKGlassesPrescription](./hkglassesprescription.md)
   A sample that stores a prescription for glasses.
-- [class HKContactsPrescription](hkcontactsprescription.md)
+- [class HKContactsPrescription](./hkcontactsprescription.md)
   A sample that store a prescription for contacts.
-- [class HKGlassesLensSpecification](hkglasseslensspecification.md)
+- [class HKGlassesLensSpecification](./hkglasseslensspecification.md)
   An object that contains the glasses prescription data for one eye.
-- [class HKContactsLensSpecification](hkcontactslensspecification.md)
+- [class HKContactsLensSpecification](./hkcontactslensspecification.md)
   An object that contains the contacts prescription data for one eye.
-- [class HKVisionPrism](hkvisionprism.md)
+- [class HKVisionPrism](./hkvisionprism.md)
   Prescription data for eye alignment.
-- [class HKPrescriptionType](hkprescriptiontype.md)
+- [class HKPrescriptionType](./hkprescriptiontype.md)
   A type that identifies samples that store a prescription.
 
 

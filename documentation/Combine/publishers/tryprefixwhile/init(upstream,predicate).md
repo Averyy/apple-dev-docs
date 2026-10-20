@@ -1,7 +1,8 @@
 # init(upstream:predicate:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that republishes elements while an error-throwing predicate closure indicates publishing should continue.
 

@@ -1,14 +1,15 @@
 # kHIDUsage_Button_121
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Button_121 = 0x79
 ```
 

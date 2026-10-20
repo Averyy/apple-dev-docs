@@ -1,7 +1,8 @@
 # init(named:from:in:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an audio resource from a Reality Composer Pro project.
 
@@ -22,7 +23,7 @@ Initializes an audio resource from a Reality Composer Pro project.
 
 #### Discussion
 
-This method initializes a preconfigured [`AudioFileGroupResource`](audiofilegroupresource.md) from a scene in a Reality Composer Pro project.
+This method initializes a preconfigured [`AudioFileGroupResource`](../audiofilegroupresource.md) from a scene in a Reality Composer Pro project.
 
 > ❗ **Important**: The name provided **must** be unique.
 
@@ -34,9 +35,10 @@ This method initializes a preconfigured [`AudioFileGroupResource`](audiofilegrou
 
 ## See Also
 
-- [init([AudioFileResource]) throws](audiofilegroupresource/init(_:).md)
+### Creating a resource
+- [init([AudioFileResource]) throws](./init%28_%29.md)
   Creates a group resource from an array of audio file resources (backward compatibility).
-- [static func load(named: String, from: String, in: Bundle?) throws -> AudioFileGroupResource](audiofilegroupresource/load(named:from:in:).md)
+- [static func load(named: String, from: String, in: Bundle?) throws -> AudioFileGroupResource](./load%28named,from,in%29.md)
   Loads an audio resource from a Reality Composer Pro project.
 
 

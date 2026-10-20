@@ -1,9 +1,10 @@
 # currentSource
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The active timecode source used by [`AVCaptureTimecodeGenerator`](avcapturetimecodegenerator.md) to maintain clock synchronization for accurate timecode generation.
+The active timecode source used by [`AVCaptureTimecodeGenerator`](../avcapturetimecodegenerator.md) to maintain clock synchronization for accurate timecode generation.
 
 **Availability**:
 - iOS 26.0+
@@ -18,19 +19,24 @@ The active timecode source used by [`AVCaptureTimecodeGenerator`](avcapturetimec
 var currentSource: AVCaptureTimecode.Source { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureTimecodeSource * currentSource;
+```
+
 #### Discussion
 
-Indicates the active timecode source, as defined in the `AVCaptureTimecodeSynchronizationSourceType` enum. If an [`AVCaptureTimecodeGenerator`](avcapturetimecodegenerator.md) becomes disconnected from its source, it continues generating timecodes using historical data from its ring buffer. This approach allows the generator to maintain synchronization during brief disruptions, as is common in cinema workflows where timecode signals may experience discontinuities.
+Indicates the active timecode source, as defined in the `AVCaptureTimecodeSynchronizationSourceType` enum. If an [`AVCaptureTimecodeGenerator`](../avcapturetimecodegenerator.md) becomes disconnected from its source, it continues generating timecodes using historical data from its ring buffer. This approach allows the generator to maintain synchronization during brief disruptions, as is common in cinema workflows where timecode signals may experience discontinuities.
 
 ## See Also
 
-- [var availableSources: [AVCaptureTimecode.Source]](avcapturetimecodegenerator/availablesources.md)
+### Managing sources
+- [var availableSources: [AVCaptureTimecode.Source]](./availablesources.md)
   An array of available timecode synchronization sources that can be used by the timecode generator.
-- [class var frameCountSource: AVCaptureTimecode.Source](avcapturetimecodegenerator/framecountsource.md)
+- [class var frameCountSource: AVCaptureTimecode.Source](./framecountsource.md)
   A frame counter timecode source that operates independently of any internal or external synchronization.
-- [class var realTimeClockSource: AVCaptureTimecode.Source](avcapturetimecodegenerator/realtimeclocksource.md)
+- [class var realTimeClockSource: AVCaptureTimecode.Source](./realtimeclocksource.md)
   A predefined timecode source synchronized to the real-time system clock.
-- [func startSynchronization(source: AVCaptureTimecode.Source)](avcapturetimecodegenerator/startsynchronization(source:).md)
+- [func startSynchronization(source: AVCaptureTimecode.Source)](./startsynchronization%28source%29.md)
   Synchronizes the generator with the specified timecode source.
 
 

@@ -1,7 +1,8 @@
 # BindableValuesReference
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reference to a bindable value of an animation.
 
@@ -11,7 +12,7 @@ A reference to a bindable value of an animation.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,25 +22,26 @@ struct BindableValuesReference
 
 #### Overview
 
-As the name indicates, this structure doesn’t exhibit copy-on-write behavior because it’s a reference. This is in contrast to the [`BindableValue`](bindablevalue.md) structure.
+As the name indicates, this structure doesn’t exhibit copy-on-write behavior because it’s a reference. This is in contrast to the [`BindableValue`](./bindablevalue.md) structure.
 
 ## Topics
 
 ### Accessing values
-- [subscript<T>(BindTarget, T.Type) -> BindableValue<T>?](bindablevaluesreference/subscript(_:_:).md)
+- [subscript<T>(BindTarget, T.Type) -> BindableValue<T>?](./bindablevaluesreference/subscript%28_,_%29.md)
   Returns the bindable value at the subscripted index.
 
 ## See Also
 
-- [struct BindPath](bindpath.md)
+### Bindable animation targets
+- [struct BindPath](./bindpath.md)
   The components of a target’s path that refer to the animation properties of a nested scene or entity.
-- [enum BindTarget](bindtarget.md)
+- [enum BindTarget](./bindtarget.md)
   A reference to a particular scene, entity, or property that animates.
-- [struct BindableValue](bindablevalue.md)
+- [struct BindableValue](./bindablevalue.md)
   The value of a bindable target.
-- [struct ParameterSet](parameterset.md)
+- [struct ParameterSet](./parameterset.md)
   A reference to general-purpose entity parameters for animations.
-- [struct InternalBindPath](internalbindpath.md)
+- [struct InternalBindPath](./internalbindpath.md)
   A bind target for framework-provided properties.
 
 

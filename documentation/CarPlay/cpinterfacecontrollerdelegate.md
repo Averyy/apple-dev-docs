@@ -1,7 +1,8 @@
 # CPInterfaceControllerDelegate
 
 **Framework**: CarPlay  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface that an object implements to serve as a delegate to an interface controller.
 
@@ -17,30 +18,35 @@ The interface that an object implements to serve as a delegate to an interface c
 protocol CPInterfaceControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CPInterfaceControllerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling Display Events
-- [func templateWillAppear(CPTemplate, animated: Bool)](cpinterfacecontrollerdelegate/templatewillappear(_:animated:).md)
+- [func templateWillAppear(CPTemplate, animated: Bool)](./cpinterfacecontrollerdelegate/templatewillappear%28_,animated%29.md)
   Tells the delegate that the template will appear onscreen.
-- [func templateDidAppear(CPTemplate, animated: Bool)](cpinterfacecontrollerdelegate/templatedidappear(_:animated:).md)
+- [func templateDidAppear(CPTemplate, animated: Bool)](./cpinterfacecontrollerdelegate/templatedidappear%28_,animated%29.md)
   Tells the delegate that the template did appear onscreen.
-- [func templateWillDisappear(CPTemplate, animated: Bool)](cpinterfacecontrollerdelegate/templatewilldisappear(_:animated:).md)
+- [func templateWillDisappear(CPTemplate, animated: Bool)](./cpinterfacecontrollerdelegate/templatewilldisappear%28_,animated%29.md)
   Tells the delegate that the template will disappear from the screen.
-- [func templateDidDisappear(CPTemplate, animated: Bool)](cpinterfacecontrollerdelegate/templatediddisappear(_:animated:).md)
+- [func templateDidDisappear(CPTemplate, animated: Bool)](./cpinterfacecontrollerdelegate/templatediddisappear%28_,animated%29.md)
   Tells the delegate that the template did disappear from the screen.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any CPInterfaceControllerDelegate)?](cpinterfacecontroller/delegate.md)
+### Configuring the Interface Controller
+- [var delegate: (any CPInterfaceControllerDelegate)?](./cpinterfacecontroller/delegate.md)
   An object that serves as the delegate to the interface controller.
-- [var prefersDarkUserInterfaceStyle: Bool](cpinterfacecontroller/prefersdarkuserinterfacestyle.md)
+- [var prefersDarkUserInterfaceStyle: Bool](./cpinterfacecontroller/prefersdarkuserinterfacestyle.md)
   A Boolean value that determines whether the system draws the user interface in Dark Mode.
-- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/setroottemplate(_:animated:completion:).md)
+- [func setRootTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./cpinterfacecontroller/setroottemplate%28_,animated,completion%29.md)
   Sets the root template of the navigation hierarchy.
 
 

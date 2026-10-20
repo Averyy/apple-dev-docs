@@ -1,7 +1,8 @@
 # additive
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the animation builds on the current state
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ var additive: Bool { get set }
 
 ## See Also
 
-- [var group: [any AnimationDefinition]](animationgroup/group.md)
+### Configuring the group
+- [var group: [any AnimationDefinition]](./group.md)
   A collection of animations to run.
-- [var name: String](animationgroup/name.md)
+- [var name: String](./name.md)
   A textual name for the group.
-- [var bindTarget: BindTarget](animationgroup/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that refers to a property on which to run the grouped animations.
-- [var blendLayer: Int32](animationgroup/blendlayer.md)
+- [var blendLayer: Int32](./blendlayer.md)
   The order in which the framework composites the animation.
-- [var group: [any AnimationDefinition]](animationgroup/group.md)
+- [var group: [any AnimationDefinition]](./group.md)
   A collection of animations to run.
 
 

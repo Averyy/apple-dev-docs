@@ -1,7 +1,8 @@
 # layoutQueue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which the framework dispatches layout operations.
 
@@ -12,6 +13,10 @@ The queue on which the framework dispatches layout operations.
 
 ```swift
 var layoutQueue: OperationQueue? { get set }
+```
+
+```objc
+@property (strong, nullable) NSOperationQueue * layoutQueue;
 ```
 
 #### Discussion

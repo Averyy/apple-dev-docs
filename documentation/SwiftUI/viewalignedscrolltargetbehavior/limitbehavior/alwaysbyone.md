@@ -1,7 +1,8 @@
 # alwaysByOne
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The always-by-one limit behavior.
 

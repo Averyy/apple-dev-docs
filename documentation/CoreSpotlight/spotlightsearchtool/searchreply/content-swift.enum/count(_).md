@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Content.count(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scalar count answer (e.g., “How many emails from John?” → 47).
 

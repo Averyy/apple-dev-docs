@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/tensorflow-1-workflo
 
 # TensorFlow 1 Workflow
 
-**
-
-- [.md](../_sources/source/tensorflow-1-workflow.md)
-- **
-
-.pdf
-
-**
-
-# TensorFlow 1 Workflow
-
- Table of contents 
-
-## Contents
-
-# TensorFlow 1 Workflow
-
 Use the frozen graph format for conversion from TensorFlow 1. After training, always export the model for inference to this format using the `tensorflow.python.tools.freeze_graph` method. TensorFlow 1 pre-trained models are also generally available in the frozen `.pb` file format.
 
 ## Export as a Frozen Graph and Convert
@@ -80,7 +63,7 @@ with tf.Session(graph=graph) as sess:
 print("TensorFlow frozen graph saved at {}".format(frozen_graph_file))
 ```
 
-1. Convert the model to an ML program and save it as a [Core ML model package](convert-to-ml-program.html#save-ml-programs-as-model-packages):
+1. Convert the model to an ML program and save it as a [Core ML model package](convert-to-ml-program.md#save-ml-programs-as-model-packages):
 
 ```
 import coremltools as ct
@@ -195,5 +178,3 @@ The following examples demonstrate some of the capabilities of the Core ML Tools
 
 - [Converting a TensorFlow 1 Image Classifier](convert-a-tensorflow-1-image-classifier.md): Demonstrates the importance of setting the image preprocessing parameters correctly during conversion to get the right results.
 - [Converting a TensorFlow 1 DeepSpeech Model](convert-a-tensorflow-1-deepspeech-model.md): Demonstrates automatic handling of flexible shapes using automatic speech recognition.
-
-** Contents

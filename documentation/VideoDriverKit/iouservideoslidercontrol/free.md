@@ -1,7 +1,8 @@
 # free
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees the slider control.
 
@@ -10,7 +11,7 @@ Frees the slider control.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 

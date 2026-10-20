@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index immediately before an element index.
 
@@ -20,17 +21,20 @@ Returns the index immediately before an element index.
 func index(before i: Int) -> Int
 ```
 
+Available when `GroupingKey` conforms to `Hashable`.
+
 ## Parameters
 
 - `i`: A valid index to an element in the column.
 
 ## See Also
 
-- [var startIndex: Int](rowgrouping/startindex.md)
+### Retrieving an Index
+- [var startIndex: Int](./startindex.md)
   The index of the initial group in the row grouping.
-- [var endIndex: Int](rowgrouping/endindex.md)
+- [var endIndex: Int](./endindex.md)
   The index of the final group in the row grouping.
-- [func index(after: Int) -> Int](rowgrouping/index(after:).md)
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the index immediately after an element index.
 
 

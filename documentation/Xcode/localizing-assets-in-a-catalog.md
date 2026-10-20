@@ -1,6 +1,7 @@
 # Localizing assets in a catalog
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use asset catalogs to localize colors, images, symbols, watch complications, and more.
 
@@ -19,17 +20,18 @@ The localizable asset types include:
 - Apple TV image stacks
 - Sprite atlases
 
-##### Add Asset Catalogs to Localizations
+##### Add asset catalogs to localizations
 
 In the Project navigator, select the asset catalog, then select the asset you want to localize in the outline view of the editor area. Under Localization in the Attributes inspector, click Localize. Select the localizations you want to add the asset to. Xcode displays corresponding placeholder spaces in the editor area.
 
-![Screenshot of the project editor showing the language wells of an asset catalog with a Color set selected.](/images/com.apple.Xcode/localizing-assets-in-a-catalog-1@2x.png)
+![Screenshot of the project editor showing the language wells of an asset catalog with a Color set selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/localizing-assets-in-a-catalog-1@2x.png)
 
 Either drop the localized assets in the spaces for localizations, or export the localizations and let the localizers add the assets later.
 
 ## See Also
 
-- [Adding resources to localizations](adding-resources-to-localizations.md)
+### Resources and assets
+- [Adding resources to localizations](./adding-resources-to-localizations.md)
   Include more resources in the localizations you add to your project.
 
 

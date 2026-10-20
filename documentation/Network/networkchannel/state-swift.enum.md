@@ -1,7 +1,8 @@
 # NetworkChannel.State
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,23 +22,23 @@ enum State
 ## Topics
 
 ### Enumeration Cases
-- [NetworkChannel.State.cancelled](networkchannel/state-swift.enum/cancelled.md)
+- [NetworkChannel.State.cancelled](./state-swift.enum/cancelled.md)
   Cancelled connections have been invalidated by the client and will send no more events
-- [NetworkChannel.State.failed(_:)](networkchannel/state-swift.enum/failed(_:).md)
-- [NetworkChannel.State.preparing](networkchannel/state-swift.enum/preparing.md)
+- [NetworkChannel.State.failed(_:)](./state-swift.enum/failed%28_%29.md)
+- [NetworkChannel.State.preparing](./state-swift.enum/preparing.md)
   Preparing connections are actively establishing the connection
-- [NetworkChannel.State.ready](networkchannel/state-swift.enum/ready.md)
+- [NetworkChannel.State.ready](./state-swift.enum/ready.md)
   Ready connections can send and receive data
-- [NetworkChannel.State.setup](networkchannel/state-swift.enum/setup.md)
+- [NetworkChannel.State.setup](./state-swift.enum/setup.md)
   The initial state prior to start
-- [NetworkChannel.State.waiting(_:)](networkchannel/state-swift.enum/waiting(_:).md)
+- [NetworkChannel.State.waiting(_:)](./state-swift.enum/waiting%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

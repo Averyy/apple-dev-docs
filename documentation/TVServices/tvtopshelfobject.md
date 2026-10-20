@@ -1,7 +1,8 @@
 # TVTopShelfObject
 
 **Framework**: TV Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for describing top shelf items and item collections.
 
@@ -14,6 +15,10 @@ An abstract base class for describing top shelf items and item collections.
 class TVTopShelfObject
 ```
 
+```objc
+@interface TVTopShelfObject : NSObject
+```
+
 #### Overview
 
 This class provides shared information for objects you use in your app extension. Do not create instances of this class directly.
@@ -21,31 +26,32 @@ This class provides shared information for objects you use in your app extension
 ## Topics
 
 ### Getting the Object Attributes
-- [var title: String?](tvtopshelfobject/title.md)
+- [var title: String?](./tvtopshelfobject/title.md)
   The localized title of the object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [TVTopShelfItem](tvtopshelfitem.md)
-- [TVTopShelfItemCollection](tvtopshelfitemcollection.md)
+- [TVTopShelfItem](./tvtopshelfitem.md)
+- [TVTopShelfItemCollection](./tvtopshelfitemcollection.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TVTopShelfItem](tvtopshelfitem.md)
+### Common types
+- [class TVTopShelfItem](./tvtopshelfitem.md)
   An item that uses an image to represent a movie, show, or other content in the top shelf.
-- [class TVTopShelfAction](tvtopshelfaction.md)
+- [class TVTopShelfAction](./tvtopshelfaction.md)
   An action to perform in response to user interactions with an item in the top shelf.
-- [protocol TVTopShelfContent](tvtopshelfcontent.md)
+- [protocol TVTopShelfContent](./tvtopshelfcontent.md)
   The protocol that objects adopt to provide content for the top shelf.
 
 

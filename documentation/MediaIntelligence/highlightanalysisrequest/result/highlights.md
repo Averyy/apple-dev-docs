@@ -1,7 +1,8 @@
 # highlights
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time ranges the framework identifies as highlights.
 
@@ -21,11 +22,12 @@ let highlights: [CMTimeRange]
 
 ## Mentions
 
-- [Finding the best moments in a video](finding-the-best-moments-in-a-video.md)
+- [Finding the best moments in a video](../../finding-the-best-moments-in-a-video.md)
 
 ## See Also
 
-- [let levels: [(timeRange: CMTimeRange, level: Float)]](highlightanalysisrequest/result/levels.md)
+### Inspecting the result
+- [let levels: [(timeRange: CMTimeRange, level: Float)]](./levels.md)
   The engagement level of each segment in the video.
 
 

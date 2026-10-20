@@ -1,17 +1,22 @@
 # externalID
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The external ID of the notation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var externalID: CFXMLExternalID
+```
+
+```c
+CFXMLExternalID externalID;
 ```
 
 

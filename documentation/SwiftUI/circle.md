@@ -1,7 +1,8 @@
 # Circle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A circle centered on the frame of the view containing it.
 
@@ -23,8 +24,8 @@ struct Circle
 
 ## Mentions
 
-- [Laying out a simple view](laying-out-a-simple-view.md)
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+- [Laying out a simple view](./laying-out-a-simple-view.md)
+- [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 
 #### Overview
 
@@ -33,29 +34,30 @@ The circle’s radius equals half the length of the frame rectangle’s smallest
 ## Topics
 
 ### Creating a circle
-- [init()](circle/init.md)
+- [init()](./circle/init%28%29.md)
   Creates a new circle shape.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [ChartSymbolShape](../charts/chartsymbolshape.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [InsettableShape](insettableshape.md)
-- [RoundedRectangularShape](roundedrectangularshape.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [ChartSymbolShape](../Charts/chartsymbolshape.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [InsettableShape](./insettableshape.md)
+- [RoundedRectangularShape](./roundedrectangularshape.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Ellipse](ellipse.md)
+### Creating circular shapes
+- [struct Ellipse](./ellipse.md)
   An ellipse aligned inside the frame of the view containing it.
-- [struct Capsule](capsule.md)
+- [struct Capsule](./capsule.md)
   A capsule shape aligned inside the frame of the view containing it.
 
 

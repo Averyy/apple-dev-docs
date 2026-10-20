@@ -1,7 +1,8 @@
 # init(unicodeScalarLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -18,9 +19,12 @@
 init(unicodeScalarLiteral value: Self.ExtendedGraphemeClusterLiteralType)
 ```
 
+Available when `ExtendedGraphemeClusterLiteralType` is `Self.UnicodeScalarLiteralType`.
+
 ## See Also
 
-- [init(extendedGraphemeClusterLiteral: Character)](character/init(extendedgraphemeclusterliteral:).md)
+### Infrequently Used Functionality
+- [init(extendedGraphemeClusterLiteral: Character)](./init%28extendedgraphemeclusterliteral%29.md)
   Creates a character with the specified value.
 
 

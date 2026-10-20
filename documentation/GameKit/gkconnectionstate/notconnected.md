@@ -1,7 +1,8 @@
 # GKConnectionState.notConnected
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player is not connected to the game session.
 
@@ -20,9 +21,14 @@ The player is not connected to the game session.
 case notConnected
 ```
 
+```c
+GKConnectionStateNotConnected
+```
+
 ## See Also
 
-- [GKConnectionState.connected](gkconnectionstate/connected.md)
+### Constants
+- [GKConnectionState.connected](./connected.md)
   The player is connected to the game session.
 
 

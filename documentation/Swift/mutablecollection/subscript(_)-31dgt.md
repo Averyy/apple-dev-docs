@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Accesses a contiguous subrange of the collection’s elements.
@@ -39,11 +40,19 @@ print(streets[index!])
 // Prints "Eustace"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 
 - `bounds`: A range of the collection’s indices. The bounds of the range must be valid indices of the collection.
+
+## Default Implementations
+
+### MutableCollection Implementations
+- [subscript<R>(R) -> Self.SubSequence](./subscript%28_%29-1wd4v.md)
+- [subscript(Range<Self.Index>) -> Slice<Self>](./subscript%28_%29-2qem1.md)
+  Accesses a contiguous subrange of the collection’s elements.
+- [subscript(UnboundedRange) -> Self.SubSequence](./subscript%28_%29-37d4d.md)
 
 
 ---

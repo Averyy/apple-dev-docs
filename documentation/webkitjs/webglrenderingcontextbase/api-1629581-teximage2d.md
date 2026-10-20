@@ -1,7 +1,8 @@
 # texImage2D
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void texImage2D(
     GLenum target, 
     GLint level, 

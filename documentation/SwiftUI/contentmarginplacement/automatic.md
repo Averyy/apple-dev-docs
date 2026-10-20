@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic placement.
 
@@ -22,13 +23,14 @@ static var automatic: ContentMarginPlacement { get }
 
 #### Discussion
 
-Views that support margin customization can automatically use margins with this placement. For example, a [`ScrollView`](scrollview.md) will use this placement to automatically inset both its content and scroll indicators by the specified amount.
+Views that support margin customization can automatically use margins with this placement. For example, a [`ScrollView`](../scrollview.md) will use this placement to automatically inset both its content and scroll indicators by the specified amount.
 
 ## See Also
 
-- [static var scrollContent: ContentMarginPlacement](contentmarginplacement/scrollcontent.md)
+### Getting the placement
+- [static var scrollContent: ContentMarginPlacement](./scrollcontent.md)
   The scroll content placement.
-- [static var scrollIndicators: ContentMarginPlacement](contentmarginplacement/scrollindicators.md)
+- [static var scrollIndicators: ContentMarginPlacement](./scrollindicators.md)
   The scroll indicators placement.
 
 

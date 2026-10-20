@@ -1,14 +1,15 @@
 # vfs_init
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int (*vfs_init)(struct vfsconf *vfsc);
 ```
 

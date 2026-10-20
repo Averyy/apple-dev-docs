@@ -1,7 +1,8 @@
 # init(manifest:)
 
 **Framework**: Safari Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Home Screen information object with the supplied web app manifest.
 
@@ -14,6 +15,10 @@ Initializes a Home Screen information object with the supplied web app manifest.
 
 ```swift
 init(manifest: BEWebAppManifest)
+```
+
+```objc
+- (SFAddToHomeScreenInfo *) initWithManifest:(BEWebAppManifest *) manifest;
 ```
 
 ## Parameters

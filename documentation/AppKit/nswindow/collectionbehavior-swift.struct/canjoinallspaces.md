@@ -1,7 +1,8 @@
 # canJoinAllSpaces
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The window can appear in all spaces.
 
@@ -14,13 +15,18 @@ The window can appear in all spaces.
 static var canJoinAllSpaces: NSWindow.CollectionBehavior { get }
 ```
 
+```c
+NSWindowCollectionBehaviorCanJoinAllSpaces
+```
+
 #### Discussion
 
 The menu bar behaves this way.
 
 ## See Also
 
-- [static var moveToActiveSpace: NSWindow.CollectionBehavior](nswindow/collectionbehavior-swift.struct/movetoactivespace.md)
+### Spaces
+- [static var moveToActiveSpace: NSWindow.CollectionBehavior](./movetoactivespace.md)
   When the window becomes active, move it to the active space instead of switching spaces.
 
 

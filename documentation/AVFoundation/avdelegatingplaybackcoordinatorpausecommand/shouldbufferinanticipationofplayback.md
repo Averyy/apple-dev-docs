@@ -1,7 +1,8 @@
 # shouldBufferInAnticipationOfPlayback
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player starts buffering in preparation for a request to begin playback.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the player starts buffering in preparatio
 var shouldBufferInAnticipationOfPlayback: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL shouldBufferInAnticipationOfPlayback;
+```
+
 #### Discussion
 
-A [`true`](https://developer.apple.com/documentation/swift/true) value indicates that a participant player requests starting playback at the [`anticipatedPlaybackRate`](avdelegatingplaybackcoordinatorpausecommand/anticipatedplaybackrate.md) value.
+A [`true`](../../Swift/true.md) value indicates that a participant player requests starting playback at the [`anticipatedPlaybackRate`](./anticipatedplaybackrate.md) value.
 
 ## See Also
 
-- [var anticipatedPlaybackRate: Float](avdelegatingplaybackcoordinatorpausecommand/anticipatedplaybackrate.md)
+### Accessing command details
+- [var anticipatedPlaybackRate: Float](./anticipatedplaybackrate.md)
   The rate at which the coordinator expects the current item to play.
 
 

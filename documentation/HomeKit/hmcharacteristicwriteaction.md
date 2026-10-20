@@ -1,7 +1,8 @@
 # HMCharacteristicWriteAction
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An action in an action set that writes a value to a characteristic.
 
@@ -19,45 +20,50 @@ An action in an action set that writes a value to a characteristic.
 class HMCharacteristicWriteAction<TargetValueType> where TargetValueType : NSCopying
 ```
 
+```objc
+@interface HMCharacteristicWriteAction : HMAction
+```
+
 #### Overview
 
-Action sets are instances of [`HMActionSet`](hmactionset.md).
+Action sets are instances of [`HMActionSet`](./hmactionset.md).
 
 ## Topics
 
 ### New Methods
-- [init(characteristic: HMCharacteristic, targetValue: TargetValueType)](hmcharacteristicwriteaction/init(characteristic:targetvalue:).md)
+- [init(characteristic: HMCharacteristic, targetValue: TargetValueType)](./hmcharacteristicwriteaction/init%28characteristic,targetvalue%29.md)
   Initialize a characteristic write action with a specified characteristic and target value.
-- [var characteristic: HMCharacteristic](hmcharacteristicwriteaction/characteristic.md)
+- [var characteristic: HMCharacteristic](./hmcharacteristicwriteaction/characteristic.md)
   The characteristic whose value is to be written by the action.
-- [var targetValue: TargetValueType](hmcharacteristicwriteaction/targetvalue.md)
+- [var targetValue: TargetValueType](./hmcharacteristicwriteaction/targetvalue.md)
   The value that will be written to the characteristic when the action is executed.
-- [func updateTargetValue(TargetValueType, completionHandler: ((any Error)?) -> Void)](hmcharacteristicwriteaction/updatetargetvalue(_:completionhandler:).md)
+- [func updateTargetValue(TargetValueType, completionHandler: ((any Error)?) -> Void)](./hmcharacteristicwriteaction/updatetargetvalue%28_,completionhandler%29.md)
   Updates the target value.
 
 ## Relationships
 
 ### Inherits From
-- [HMAction](hmaction.md)
+- [HMAction](./hmaction.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var actions: Set<HMAction>](hmactionset/actions.md)
+### Defining the associated actions
+- [var actions: Set<HMAction>](./hmactionset/actions.md)
   Set of actions in the action set.
-- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/addaction(_:completionhandler:).md)
+- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](./hmactionset/addaction%28_,completionhandler%29.md)
   Adds an action to the action set.
-- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/removeaction(_:completionhandler:).md)
+- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](./hmactionset/removeaction%28_,completionhandler%29.md)
   Removes an action from the action set.
-- [class HMAction](hmaction.md)
+- [class HMAction](./hmaction.md)
   An abstract base class for actions in HomeKit.
 
 

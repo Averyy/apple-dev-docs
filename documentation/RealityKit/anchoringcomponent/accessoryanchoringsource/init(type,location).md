@@ -1,7 +1,8 @@
 # init(type:location:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an accessory anchoring source for a deferred accessory type.
 

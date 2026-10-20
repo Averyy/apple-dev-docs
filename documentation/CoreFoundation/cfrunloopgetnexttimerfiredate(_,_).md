@@ -1,23 +1,28 @@
 # CFRunLoopGetNextTimerFireDate(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the time at which the next timer will fire.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFRunLoopGetNextTimerFireDate(_ rl: CFRunLoop!, _ mode: CFRunLoopMode!) -> CFAbsoluteTime
+```
+
+```c
+extern CFAbsoluteTime CFRunLoopGetNextTimerFireDate(CFRunLoopRef rl, CFRunLoopMode mode);
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ The earliest firing time of the run loop timers registered in `mode` for the run
 
 ## See Also
 
-- [func CFRunLoopAddTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!)](cfrunloopaddtimer(_:_:_:).md)
+### Managing Timers
+- [func CFRunLoopAddTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!)](./cfrunloopaddtimer%28_,_,_%29.md)
   Adds a CFRunLoopTimer object to a run loop mode.
-- [func CFRunLoopRemoveTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!)](cfrunloopremovetimer(_:_:_:).md)
+- [func CFRunLoopRemoveTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!)](./cfrunloopremovetimer%28_,_,_%29.md)
   Removes a CFRunLoopTimer object from a run loop mode.
-- [func CFRunLoopContainsTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!) -> Bool](cfrunloopcontainstimer(_:_:_:).md)
+- [func CFRunLoopContainsTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!) -> Bool](./cfrunloopcontainstimer%28_,_,_%29.md)
   Returns a Boolean value that indicates whether a run loop mode contains a particular CFRunLoopTimer object.
 
 

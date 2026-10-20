@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct rslvmulti_req {
     ...
 };
@@ -17,8 +17,8 @@ struct rslvmulti_req {
 ## Topics
 
 ### Instance Properties
-- [llsa](rslvmulti_req/1564060-llsa.md)
-- [sa](rslvmulti_req/1564049-sa.md)
+- [llsa](./rslvmulti_req/api-1564060-llsa.md)
+- [sa](./rslvmulti_req/api-1564049-sa.md)
 
 
 ---

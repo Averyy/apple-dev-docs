@@ -1,7 +1,8 @@
 # requireAdministratorForPower
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Require an administrator password to change the interface power state.
 
@@ -14,15 +15,20 @@ Require an administrator password to change the interface power state.
 var requireAdministratorForPower: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL requireAdministratorForPower;
+```
+
 ## See Also
 
-- [var networkProfiles: NSOrderedSet](cwconfiguration/networkprofiles.md)
+### Instance Properties
+- [var networkProfiles: NSOrderedSet](./networkprofiles.md)
   An array of remembered CWNetworkProfile objects.
-- [var rememberJoinedNetworks: Bool](cwconfiguration/rememberjoinednetworks.md)
+- [var rememberJoinedNetworks: Bool](./rememberjoinednetworks.md)
   AirPort client will remember all joined networks.
-- [var requireAdministratorForAssociation: Bool](cwconfiguration/requireadministratorforassociation.md)
+- [var requireAdministratorForAssociation: Bool](./requireadministratorforassociation.md)
   Require an administrator password to change networks.
-- [var requireAdministratorForIBSSMode: Bool](cwconfiguration/requireadministratorforibssmode.md)
+- [var requireAdministratorForIBSSMode: Bool](./requireadministratorforibssmode.md)
   Require an administrator password to create a computer-to-computer network.
 
 

@@ -1,7 +1,8 @@
 # authorizationStatus()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a value indicating whether the app is authorized to retrieve stored motion data.
 
@@ -17,11 +18,16 @@ Returns a value indicating whether the app is authorized to retrieve stored moti
 class func authorizationStatus() -> CMAuthorizationStatus
 ```
 
+```objc
++ (CMAuthorizationStatus) authorizationStatus;
+```
+
 ## See Also
 
-- [class func isActivityAvailable() -> Bool](cmmotionactivitymanager/isactivityavailable.md)
+### Determining Activity Availability
+- [class func isActivityAvailable() -> Bool](./isactivityavailable%28%29.md)
   Returns a Boolean indicating whether motion data is available on the current device.
-- [enum CMAuthorizationStatus](cmauthorizationstatus.md)
+- [enum CMAuthorizationStatus](../cmauthorizationstatus.md)
   The authorization status for motion-related features.
 
 

@@ -1,14 +1,15 @@
 # doDriverIO
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn doDriverIO(UInt32 commandID, void *contents, UInt32 commandCode, UInt32 commandKind);
 ```
 

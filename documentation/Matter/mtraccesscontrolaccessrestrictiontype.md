@@ -1,7 +1,8 @@
 # MTRAccessControlAccessRestrictionType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTRAccessControlAccessRestrictionType
 ```
 
+```c
+enum MTRAccessControlAccessRestrictionType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRAccessControlAccessRestrictionType.attributeAccessForbidden](mtraccesscontrolaccessrestrictiontype/attributeaccessforbidden.md)
-- [MTRAccessControlAccessRestrictionType.attributeWriteForbidden](mtraccesscontrolaccessrestrictiontype/attributewriteforbidden.md)
-- [MTRAccessControlAccessRestrictionType.commandForbidden](mtraccesscontrolaccessrestrictiontype/commandforbidden.md)
-- [MTRAccessControlAccessRestrictionType.eventForbidden](mtraccesscontrolaccessrestrictiontype/eventforbidden.md)
+- [MTRAccessControlAccessRestrictionType.attributeAccessForbidden](./mtraccesscontrolaccessrestrictiontype/attributeaccessforbidden.md)
+- [MTRAccessControlAccessRestrictionType.attributeWriteForbidden](./mtraccesscontrolaccessrestrictiontype/attributewriteforbidden.md)
+- [MTRAccessControlAccessRestrictionType.commandForbidden](./mtraccesscontrolaccessrestrictiontype/commandforbidden.md)
+- [MTRAccessControlAccessRestrictionType.eventForbidden](./mtraccesscontrolaccessrestrictiontype/eventforbidden.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtraccesscontrolaccessrestrictiontype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtraccesscontrolaccessrestrictiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

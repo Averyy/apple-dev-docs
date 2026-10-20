@@ -1,16 +1,17 @@
 # dictionaryRepresentation
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ var dictionaryRepresentation: CFDictionary { get }
 
 ## See Also
 
-- [init?(dictionaryRepresentation: CFDictionary)](cgsize/init(dictionaryrepresentation:).md)
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](cgsize/customplaygroundquicklook.md)
+### Alternate Representations
+- [init?(dictionaryRepresentation: CFDictionary)](./init%28dictionaryrepresentation%29.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
 
 

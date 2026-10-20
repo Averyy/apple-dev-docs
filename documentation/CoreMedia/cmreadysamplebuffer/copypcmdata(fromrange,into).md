@@ -1,7 +1,8 @@
 # copyPCMData(fromRange:into:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies PCM audio data from the sample buffer into a pre-allocated `AudioBufferList`.
 
@@ -20,11 +21,13 @@ Copies PCM audio data from the sample buffer into a pre-allocated `AudioBufferLi
 func copyPCMData(fromRange range: Range<Int>, into bufferList: UnsafeMutablePointer<AudioBufferList>) throws
 ```
 
+Available when `Content` is `CMReadOnlyDataBlockBuffer`.
+
 #### Discussion
 
 The `AudioBufferList` must contain the same number of channels and its data buffers must be sized to hold the specified number of frames.
 
-> **Note**: `CMSampleBuffer.Error.sampleIndexOutOfRange` if the range does not fit in the sample buffer or if the bufferList does not have enough capacity.
+> **Throws**: `CMSampleBuffer.Error.sampleIndexOutOfRange` if the range does not fit in the sample buffer or if the bufferList does not have enough capacity.
 
 ## Parameters
 

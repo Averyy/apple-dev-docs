@@ -1,7 +1,8 @@
 # init(count:items:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an authorization item set with the given items.
 

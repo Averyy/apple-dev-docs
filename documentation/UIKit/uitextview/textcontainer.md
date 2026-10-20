@@ -1,7 +1,8 @@
 # textContainer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text container object that defines the area where text displays in the text view.
 
@@ -9,7 +10,7 @@ The text container object that defines the area where text displays in the text 
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The text container object that defines the area where text displays in the text 
 var textContainer: NSTextContainer { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTextContainer * textContainer;
+```
+
 ## See Also
 
-- [var textLayoutManager: NSTextLayoutManager?](uitextview/textlayoutmanager.md)
+### Accessing TextKit Objects
+- [var textLayoutManager: NSTextLayoutManager?](./textlayoutmanager.md)
   The text layout manager that lays out text for the text view’s text container.
-- [var layoutManager: NSLayoutManager](uitextview/layoutmanager.md)
+- [var layoutManager: NSLayoutManager](./layoutmanager.md)
   The layout manager that lays out text for the text view’s text container.
-- [var textStorage: NSTextStorage](uitextview/textstorage.md)
+- [var textStorage: NSTextStorage](./textstorage.md)
   The text storage object holding the text that displays in the text view.
 
 

@@ -1,7 +1,8 @@
 # notStream
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reserved.
 
@@ -22,7 +23,7 @@ static var notStream: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,17 +33,18 @@ The corresponding C error is `ENOSTR`.
 
 ## See Also
 
-- [static var lastErrnoValue: Errno](errno/lasterrnovalue.md)
+### Reserved
+- [static var lastErrnoValue: Errno](./lasterrnovalue.md)
   The largest valid error.
-- [static var multiHop: Errno](errno/multihop.md)
+- [static var multiHop: Errno](./multihop.md)
   Reserved.
-- [static var noLink: Errno](errno/nolink.md)
+- [static var noLink: Errno](./nolink.md)
   Reserved.
-- [static var noStreamResources: Errno](errno/nostreamresources.md)
+- [static var noStreamResources: Errno](./nostreamresources.md)
   Reserved.
-- [static var notUsed: Errno](errno/notused.md)
+- [static var notUsed: Errno](./notused.md)
   Error. Not used.
-- [static var timeout: Errno](errno/timeout.md)
+- [static var timeout: Errno](./timeout.md)
   Reserved.
 
 

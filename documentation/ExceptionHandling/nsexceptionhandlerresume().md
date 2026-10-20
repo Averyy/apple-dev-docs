@@ -1,7 +1,8 @@
 # NSExceptionHandlerResume()
 
 **Framework**: Exception Handling  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func NSExceptionHandlerResume()
+```
+
+```c
+extern void NSExceptionHandlerResume();
 ```
 
 

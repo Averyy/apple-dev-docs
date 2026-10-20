@@ -1,7 +1,8 @@
 # trainingBegin
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event that represents the start of training.
 
@@ -20,11 +21,16 @@ An event that represents the start of training.
 static var trainingBegin: MLUpdateProgressEvent { get }
 ```
 
+```c
+MLUpdateProgressEventTrainingBegin
+```
+
 ## See Also
 
-- [static var miniBatchEnd: MLUpdateProgressEvent](mlupdateprogressevent/minibatchend.md)
+### Getting progress event types
+- [static var miniBatchEnd: MLUpdateProgressEvent](./minibatchend.md)
   An event that represents the end of a mini-batch within a training epoch.
-- [static var epochEnd: MLUpdateProgressEvent](mlupdateprogressevent/epochend.md)
+- [static var epochEnd: MLUpdateProgressEvent](./epochend.md)
   An event that represents the end of training epoch.
 
 

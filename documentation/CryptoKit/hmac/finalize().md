@@ -1,7 +1,8 @@
 # finalize()
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finalizes the message authentication computation and returns the computed code.
 
@@ -26,9 +27,10 @@ The message authentication code.
 
 ## See Also
 
-- [init(key: SymmetricKey)](hmac/init(key:).md)
+### Creating an authentication code iteratively
+- [init(key: SymmetricKey)](./init%28key%29.md)
   Creates a message authentication code generator.
-- [func update<D>(data: D)](hmac/update(data:).md)
+- [func update<D>(data: D)](./update%28data%29.md)
   Updates the message authentication code computation with a block of data.
 
 

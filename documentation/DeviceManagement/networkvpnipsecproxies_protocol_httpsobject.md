@@ -1,7 +1,8 @@
 # NetworkVPNIPSecProxies_Protocol_HTTPSObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary to use to configure the HTTPS (TLS) server.
 
@@ -14,19 +15,24 @@ The dictionary to use to configure the HTTPS (TLS) server.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIPSecProxies_Protocol_HTTPSObject
 ```
 
 ## Properties
 
 - `Enable` (boolean): If `true`, enables proxy for HTTPS traffic.
+
+  **Default**: `false`
 - `HostName` (string): The host name of the HTTPS proxy.
 - `Port` (integer): The port number of the HTTPS proxy. This field is required if `HostName` is specified.
 
+  **Minimum**: `0`; **Maximum**: `65535`
+
 ## See Also
 
-- [object NetworkVPNIPSecProxies_Protocol_HTTPObject](networkvpnipsecproxies_protocol_httpobject.md)
+### Objects
+- [object NetworkVPNIPSecProxies_Protocol_HTTPObject](./networkvpnipsecproxies_protocol_httpobject.md)
   The dictionary to use to configure the HTTP (non-TLS) server.
 
 

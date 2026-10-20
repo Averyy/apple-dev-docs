@@ -1,14 +1,15 @@
 # kHIDUsage_PD_Tested
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PD_Tested = 0x71
 ```
 

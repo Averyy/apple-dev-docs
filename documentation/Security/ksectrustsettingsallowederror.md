@@ -1,7 +1,8 @@
 # kSecTrustSettingsAllowedError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A number which, if encountered during certificate verification, is ignored for that certificate.
 
@@ -15,9 +16,13 @@ A number which, if encountered during certificate verification, is ignored for t
 var kSecTrustSettingsAllowedError: String { get }
 ```
 
+```c
+#define kSecTrustSettingsAllowedError
+```
+
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing an `SInt32` value indicating a `CSSM_RETURN` result code.
+The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing an `SInt32` value indicating a `CSSM_RETURN` result code.
 
 
 ---

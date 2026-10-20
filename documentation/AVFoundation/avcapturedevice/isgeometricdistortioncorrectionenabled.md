@@ -1,7 +1,8 @@
 # isGeometricDistortionCorrectionEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether geometric distortion correction is enabled for this device.
 
@@ -17,13 +18,18 @@ A Boolean value that indicates whether geometric distortion correction is enable
 var isGeometricDistortionCorrectionEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isGeometricDistortionCorrectionEnabled) BOOL geometricDistortionCorrectionEnabled;
+```
+
 #### Discussion
 
-When the device supports geometric distortion correction (GDC), the default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When the device supports geometric distortion correction (GDC), the default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var isGeometricDistortionCorrectionSupported: Bool](avcapturedevice/isgeometricdistortioncorrectionsupported.md)
+### Enabling geometric distortion correction
+- [var isGeometricDistortionCorrectionSupported: Bool](./isgeometricdistortioncorrectionsupported.md)
   A Boolean value that indicates whether this device supports geometric distortion correction.
 
 

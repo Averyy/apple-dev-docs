@@ -1,7 +1,8 @@
 # CTTextTabGetOptions(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the dictionary of attributes associated with the tab.
 
@@ -20,6 +21,10 @@ Returns the dictionary of attributes associated with the tab.
 func CTTextTabGetOptions(_ tab: CTTextTab) -> CFDictionary?
 ```
 
+```c
+extern CFDictionaryRefCTTextTabGetOptions(CTTextTabRef tab);
+```
+
 #### Return Value
 
 The dictionary of attributes associated with the tab, or if no dictionary is present, `NULL`.
@@ -30,9 +35,10 @@ The dictionary of attributes associated with the tab, or if no dictionary is pre
 
 ## See Also
 
-- [func CTTextTabGetAlignment(CTTextTab) -> CTTextAlignment](cttexttabgetalignment(_:).md)
+### Getting Text Tab Data
+- [func CTTextTabGetAlignment(CTTextTab) -> CTTextAlignment](./cttexttabgetalignment%28_%29.md)
   Returns the text alignment of the tab.
-- [func CTTextTabGetLocation(CTTextTab) -> Double](cttexttabgetlocation(_:).md)
+- [func CTTextTabGetLocation(CTTextTab) -> Double](./cttexttabgetlocation%28_%29.md)
   Returns the tab’s ruler location.
 
 

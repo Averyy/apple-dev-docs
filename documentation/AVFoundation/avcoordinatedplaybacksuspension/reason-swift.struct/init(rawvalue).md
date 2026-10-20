@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a suspension with a raw string value.
 
@@ -25,7 +26,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](avcoordinatedplaybacksuspension/reason-swift.struct/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Creates a suspension with a string.
 
 

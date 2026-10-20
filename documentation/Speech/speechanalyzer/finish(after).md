@@ -1,7 +1,8 @@
 # finish(after:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finishes analysis once input for a given time is consumed.
 
@@ -21,15 +22,15 @@ final func finish(after: CMTime) async throws
 
 #### Discussion
 
-In most cases, you can call [`finalizeAndFinish(through:)`](speechanalyzer/finalizeandfinish(through:).md) or [`cancelAndFinishNow()`](speechanalyzer/cancelandfinishnow().md) instead. Those methods also finish analysis.
+In most cases, you can call [`finalizeAndFinish(through:)`](./finalizeandfinish%28through%29.md) or [`cancelAndFinishNow()`](./cancelandfinishnow%28%29.md) instead. Those methods also finish analysis.
 
 At the return of this method, the modules’ result streams will have ended and the modules will not accept further input from the input sequence. The analyzer will not be able to resume analysis with a different input sequence and will not accept module changes; most methods will do nothing.
 
-Analysis of input up to and including the given time may or may not have been completed. Modules will not publish *additional* results to their streams, but the application can read any results the modules have *already* published. To ensure analysis is completed or skipped before finishing, call [`finalize(through:)`](speechanalyzer/finalize(through:).md) or [`cancelAnalysis(before:)`](speechanalyzer/cancelanalysis(before:).md).
+Analysis of input up to and including the given time may or may not have been completed. Modules will not publish *additional* results to their streams, but the application can read any results the modules have *already* published. To ensure analysis is completed or skipped before finishing, call [`finalize(through:)`](./finalize%28through%29.md) or [`cancelAnalysis(before:)`](./cancelanalysis%28before%29.md).
 
 You do not need to call this method before releasing this analyzer or its modules.
 
-> **Note**: `CancellationError` if analysis is finished early before the given input time.
+> **Throws**: `CancellationError` if analysis is finished early before the given input time.
 
 ## Parameters
 
@@ -37,11 +38,12 @@ You do not need to call this method before releasing this analyzer or its module
 
 ## See Also
 
-- [func cancelAndFinishNow() async](speechanalyzer/cancelandfinishnow.md)
+### Finishing analysis
+- [func cancelAndFinishNow() async](./cancelandfinishnow%28%29.md)
   Finishes analysis immediately.
-- [func finalizeAndFinishThroughEndOfInput() async throws](speechanalyzer/finalizeandfinishthroughendofinput.md)
+- [func finalizeAndFinishThroughEndOfInput() async throws](./finalizeandfinishthroughendofinput%28%29.md)
   Finishes analysis after an audio input sequence has been terminated and fully consumed and the modules’ results are finalized.
-- [func finalizeAndFinish(through: CMTime) async throws](speechanalyzer/finalizeandfinish(through:).md)
+- [func finalizeAndFinish(through: CMTime) async throws](./finalizeandfinish%28through%29.md)
   Finishes analysis after finalizing results for a given time-code.
 
 

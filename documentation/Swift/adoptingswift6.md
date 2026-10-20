@@ -1,6 +1,7 @@
 # Adopting strict concurrency in Swift 6 apps
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Enable strict concurrency checking to find data races at compile time.
 
@@ -10,9 +11,9 @@ Strict concurrency checking in the Swift 6 language mode helps you find and fix 
 
 Overlapping access to shared mutable state creates the risk for data races. Data races can cause your app to crash, misbehave, or corrupt user data. Because data races depend on the ordering of concurrent operations, they can be very difficult to reproduce and debug. Strict concurrency checking lets you confirm, when you compile your app, that its code is free from data races. When you identify a data race, you fix it by eliminating overlapping access, shared access, or mutable state.
 
-For information about the language-level concurrency model in Swift, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+For information about the language-level concurrency model in Swift, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
-##### Decide When to Upgrade to Strict Checking
+##### Decide when to upgrade to strict checking
 
 Xcode 16 supports the new Swift 6 language mode, which uses strict checking for concurrency, and it also still includes the Swift 5, 4.2, and 4 language modes. The Swift 6 language mode is opt-in: Your projects continue to build with their current language mode, and new projects default to the Swift 5 language mode.
 
@@ -22,15 +23,15 @@ If your app is organized into multiple modules, you can migrate your code one mo
 
 If you maintain a public Swift package, adopting the Swift 6 language mode helps your users who want to migrate their codebases too. You can follow along on the adoption of the Swift 6 language in popular packages on `SwiftPackageIndex.com`.
 
-##### Upgrade a Project to Swift 6
+##### Upgrade a project to Swift 6
 
 You can start using new features from Swift 6, like strict concurrency checking, before upgrading your project to the Swift 6 language mode. To enable new language features, open your build settings, and choose Swift Compiler - Upcoming Features; then select Yes next to the features you want to adopt. As you prepare to upgrade to the Swift 6 language version, you can increase the level of concurrency checking by changing the Strict Concurrency Checking build setting from Minimal to Complete.
 
-![A screenshot of Xcode showing the Swift Compiler - Upcoming Features build settings](/images/com.apple.Swift/AdoptingSwift6-features@2x.png)
+![A screenshot of Xcode showing the Swift Compiler - Upcoming Features build settings](https://developer.apple.com/tutorials/images/com.apple.Swift/AdoptingSwift6-features@2x.png)
 
 To upgrade your project to the Swift 6 language mode, open your build settings, and choose Swift Compiler - Language > Swift Language Version.
 
-![A screenshot of Xcode showing the Swift Compiler - Language build settings](/images/com.apple.Swift/AdoptingSwift6-language@2x.png)
+![A screenshot of Xcode showing the Swift Compiler - Language build settings](https://developer.apple.com/tutorials/images/com.apple.Swift/AdoptingSwift6-language@2x.png)
 
 Upgrading to the Swift 6 language mode enables all of the new language features that are part of Swift 6, including strict concurrency checking.
 
@@ -38,11 +39,12 @@ Upgrading to the Swift 6 language mode enables all of the new language features 
 
 After you turn on strict concurrency checking, you might see a large number of new compiler errors and warnings. However, fixing the data race in one part of your app often resolves multiple reported errors. You don’t have to fix all of the reported data races at once. If you need to, you can fix some of them now, switch back to the Swift 5 language mode or switch back to minimal concurrency checking, and then continue fixing the remaining data races later.
 
-For information about how to migrate, including techniques for interoperating with code that hasn’t yet migrated to strict checking, see [`Migrating to Swift 6`](https://developer.apple.comhttps://swift.org/migration).
+For information about how to migrate, including techniques for interoperating with code that hasn’t yet migrated to strict checking, see [Migrating to Swift 6](https://swift.org/migration).
 
 ## See Also
 
-- [Swift updates](../updates/swift.md)
+### Essentials
+- [Swift updates](../Updates/swift.md)
   Learn about important changes to Swift.
 
 

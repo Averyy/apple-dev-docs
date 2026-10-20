@@ -1,7 +1,8 @@
 # addedStores
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Stores that were added during this change.
 

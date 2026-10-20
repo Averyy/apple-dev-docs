@@ -1,7 +1,8 @@
 # DrawOnSymbolEffect
 
 **Framework**: Symbols  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A symbol effect that applies the DrawOn animation to symbol images.
 
@@ -27,27 +28,27 @@ The DrawOn animation makes the symbol visible either as a whole, or one motion g
 ## Topics
 
 ### Instance Properties
-- [var byLayer: DrawOnSymbolEffect](drawonsymboleffect/bylayer.md)
+- [var byLayer: DrawOnSymbolEffect](./drawonsymboleffect/bylayer.md)
   Returns a copy of the effect requesting an animation that applies separately to each motion group.
-- [var configuration: SymbolEffectConfiguration](drawonsymboleffect/configuration.md)
+- [var configuration: SymbolEffectConfiguration](./drawonsymboleffect/configuration.md)
   The configuration for the effect.
-- [var individually: DrawOnSymbolEffect](drawonsymboleffect/individually.md)
+- [var individually: DrawOnSymbolEffect](./drawonsymboleffect/individually.md)
   Returns a copy of the effect requesting an animation that applies separately to each motion group, where only one motion group is active at a time.
-- [var wholeSymbol: DrawOnSymbolEffect](drawonsymboleffect/wholesymbol.md)
+- [var wholeSymbol: DrawOnSymbolEffect](./drawonsymboleffect/wholesymbol.md)
   Returns a copy of the effect requesting an animation that applies to all motion groups simultaneously.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [IndefiniteSymbolEffect](indefinitesymboleffect.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SymbolEffect](symboleffect.md)
-- [TransitionSymbolEffect](transitionsymboleffect.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [IndefiniteSymbolEffect](./indefinitesymboleffect.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SymbolEffect](./symboleffect.md)
+- [TransitionSymbolEffect](./transitionsymboleffect.md)
 
 
 ---

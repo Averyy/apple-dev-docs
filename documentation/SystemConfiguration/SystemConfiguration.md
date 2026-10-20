@@ -1,7 +1,8 @@
 # System Configuration
 
 **Framework**: System Configuration  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Allow applications to access a device’s network configuration settings. Determine the reachability of the device, such as whether Wi-Fi or cell connectivity are active.
 
@@ -20,31 +21,32 @@ This collection of documents describes the programming interfaces of the System 
 ## Topics
 
 ### Reference
-- [SCDynamicStore](scdynamicstore-gb2.md)
-- [SCDynamicStoreCopySpecific](scdynamicstorecopyspecific.md)
-- [SCDynamicStoreKey](scdynamicstorekey.md)
-- [SCNetwork](scnetwork.md)
-- [SCNetworkConfiguration](scnetworkconfiguration.md)
-- [SCNetworkConnection](scnetworkconnection-g7e.md)
-- [SCNetworkReachability](scnetworkreachability-g7d.md)
-- [SCPreferences](scpreferences-ft8.md)
-- [SCPreferencesPath](scpreferencespath.md)
-- [SCPreferencesSetSpecific](scpreferencessetspecific.md)
-- [SCSchemaDefinitions](scschemadefinitions.md)
-- [System Configuration](system-configuration.md)
-- [SystemConfiguration Enumerations](systemconfiguration-enumerations.md)
-- [SystemConfiguration Constants](systemconfiguration-constants.md)
-- [SystemConfiguration Functions](systemconfiguration-functions.md)
-- [SystemConfiguration Data Types](systemconfiguration-data-types.md)
+- [SCDynamicStore](./scdynamicstore-gb2.md)
+- [SCDynamicStoreCopySpecific](./scdynamicstorecopyspecific.md)
+- [SCDynamicStoreKey](./scdynamicstorekey.md)
+- [SCNetwork](./scnetwork.md)
+- [SCNetworkConfiguration](./scnetworkconfiguration.md)
+- [SCNetworkConnection](./scnetworkconnection-g7e.md)
+- [SCNetworkReachability](./scnetworkreachability-g7d.md)
+- [SCPreferences](./scpreferences-ft8.md)
+- [SCPreferencesPath](./scpreferencespath.md)
+- [SCPreferencesSetSpecific](./scpreferencessetspecific.md)
+- [SCSchemaDefinitions](./scschemadefinitions.md)
+- [System Configuration](./system-configuration.md)
+- [SystemConfiguration Enumerations](./systemconfiguration-enumerations.md)
+- [SystemConfiguration Constants](./systemconfiguration-constants.md)
+- [SystemConfiguration Functions](./systemconfiguration-functions.md)
+- [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
 ### Entitlements
-- [Access Wi-Fi Information Entitlement](../bundleresources/entitlements/com.apple.developer.networking.wifi-info.md)
+- [Access Wi-Fi Information Entitlement](../BundleResources/entitlements/com.apple.developer.networking.wifi-info.md)
   A Boolean value indicating whether your app can access information about the connected Wi-Fi network.
 ### Type Aliases
-- [typealias AuthorizationRef](authorizationref.md)
+- [typealias AuthorizationRef](./authorizationref.md)
 
 ## See Also
 
-- [System Configuration Programming Guidelines](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Networking/Conceptual/SystemConfigFrameworks/SC_Intro/SC_Intro.html#//apple_ref/doc/uid/TP40001065)
+### Related Documentation
+- [System Configuration Programming Guidelines](https://developer.apple.com/library/archive/documentation/Networking/Conceptual/SystemConfigFrameworks/SC_Intro/SC_Intro.html#//apple_ref/doc/uid/TP40001065)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(name:value:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new query item with the name and value you specify.
 

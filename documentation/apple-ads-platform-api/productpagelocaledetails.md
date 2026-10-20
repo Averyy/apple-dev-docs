@@ -1,7 +1,8 @@
 # ProductPageLocaleDetails
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Locale-specific metadata for an App Store product page.
 
@@ -10,7 +11,7 @@ Locale-specific metadata for an App Store product page.
 
 ## Declaration
 
-```swift
+```
 object ProductPageLocaleDetails
 ```
 
@@ -62,7 +63,7 @@ The `assetsByDevice` map is the primary structure for accessing locale media.
 ## Topics
 
 ### Dictionaries
-- [object ProductPageLocaleDetails.AssetsByDevice](productpagelocaledetails/assetsbydevice-data.dictionary.md)
+- [object ProductPageLocaleDetails.AssetsByDevice](./productpagelocaledetails/assetsbydevice-data.dictionary.md)
   A map of device type to a `DeviceAssetGroup` object.
 
 ## Properties
@@ -75,20 +76,22 @@ The `assetsByDevice` map is the primary structure for accessing locale media.
 - `promotionalText` (string): The promotional text for the locale. Max 170 characters.
 - `shortDescription` (string): A short description for the locale. Max 4000 characters.
 - `deviceClasses` ([string]): Supported device classes. Use to verify targeting compatibility when configuring ad groups with device-class targeting.
-- `assetsByDevice` (ProductPageLocaleDetails.AssetsByDevice): Map of device type (for example, `iphone_6_5`, `iphone_6_7`) to a [`DeviceAssetGroup`](deviceassetgroup.md) object. Keys are specific device type strings, not limited to the values in `deviceClasses`.
+
+  **Allowed Values**: `IPHONE`, `IPAD`
+- `assetsByDevice` (ProductPageLocaleDetails.AssetsByDevice): Map of device type (for example, `iphone_6_5`, `iphone_6_7`) to a [`DeviceAssetGroup`](./deviceassetgroup.md) object. Keys are specific device type strings, not limited to the values in `deviceClasses`.
 - `productPageId` (string): The parent product page identifier (ASC product page ID).
 
 ## See Also
 
-- [object ProductPageDetails](productpagedetails.md)
+- [object ProductPageDetails](./productpagedetails.md)
   Product page metadata for a Default Product Page, Custom Product Page, or Product Page Optimization (PPO) variant.
-- [object ProductPageDetailsResponse](productpagedetailsresponse.md)
+- [object ProductPageDetailsResponse](./productpagedetailsresponse.md)
   Response object for a single product page retrieval.
-- [object ProductPageDetailsQueryResponse](productpagedetailsqueryresponse.md)
+- [object ProductPageDetailsQueryResponse](./productpagedetailsqueryresponse.md)
   Paginated response object for the product page details query.
-- [object ProductPageLocaleDetailsQueryResponse](productpagelocaledetailsqueryresponse.md)
+- [object ProductPageLocaleDetailsQueryResponse](./productpagelocaledetailsqueryresponse.md)
   Paginated response object for the product page locale details query.
-- [object DeviceAssetGroup](deviceassetgroup.md)
+- [object DeviceAssetGroup](./deviceassetgroup.md)
   Represents assets organized by device type with fallback device information.
 
 

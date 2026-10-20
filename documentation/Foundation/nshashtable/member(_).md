@@ -1,7 +1,8 @@
 # member(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the hash table contains a given object, and returns that object if it is present
 
@@ -20,13 +21,17 @@ Determines whether the hash table contains a given object, and returns that obje
 func member(_ object: ObjectType?) -> ObjectType?
 ```
 
+```objc
+- (ObjectType) member:(ObjectType) object;
+```
+
 #### Return Value
 
 If `object` is a member of the hash table, returns `object`, otherwise returns `nil`.
 
 #### Discussion
 
-The equality test used depends on the personality option selected. For instance, choosing the [`objectPersonality`](nspointerfunctions/options/objectpersonality.md) option will use `isEqual:` to determine equality. See [`NSPointerFunctions.Options`](nspointerfunctions/options.md) for more information on personality options and their corresponding equality tests.
+The equality test used depends on the personality option selected. For instance, choosing the [`objectPersonality`](../nspointerfunctions/options/objectpersonality.md) option will use `isEqual:` to determine equality. See [`NSPointerFunctions.Options`](../nspointerfunctions/options.md) for more information on personality options and their corresponding equality tests.
 
 ## Parameters
 
@@ -34,17 +39,18 @@ The equality test used depends on the personality option selected. For instance,
 
 ## See Also
 
-- [var anyObject: ObjectType?](nshashtable/anyobject.md)
+### Accessing Content
+- [var anyObject: ObjectType?](./anyobject.md)
   One of the objects in the hash table.
-- [var allObjects: [ObjectType]](nshashtable/allobjects.md)
+- [var allObjects: [ObjectType]](./allobjects.md)
   The hash table’s members.
-- [var setRepresentation: Set<AnyHashable>](nshashtable/setrepresentation.md)
+- [var setRepresentation: Set<AnyHashable>](./setrepresentation.md)
   A set that contains the hash table’s members.
-- [var count: Int](nshashtable/count.md)
+- [var count: Int](./count.md)
   The number of elements in the hash table.
-- [func contains(ObjectType?) -> Bool](nshashtable/contains(_:).md)
+- [func contains(ObjectType?) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether the hash table contains a given object.
-- [func objectEnumerator() -> NSEnumerator](nshashtable/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the hash table.
 
 

@@ -1,7 +1,8 @@
 # startOfDay(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first moment of a given date as a date instance.
 
@@ -18,6 +19,10 @@ Returns the first moment of a given date as a date instance.
 
 ```swift
 func startOfDay(for date: Date) -> Date
+```
+
+```objc
+- (NSDate *) startOfDayForDate:(NSDate *) date;
 ```
 
 #### Return Value
@@ -38,17 +43,18 @@ If there were two midnights, this method returns the first. If there was none, i
 
 ## See Also
 
-- [func enumerateDates(startingAfter: Date, matching: DateComponents, options: NSCalendar.Options, using: (Date?, Bool, UnsafeMutablePointer<ObjCBool>) -> Void)](nscalendar/enumeratedates(startingafter:matching:options:using:).md)
+### Scanning Dates
+- [func enumerateDates(startingAfter: Date, matching: DateComponents, options: NSCalendar.Options, using: (Date?, Bool, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratedates%28startingafter,matching,options,using%29.md)
   Computes the dates that match (or most closely match) a given set of components, and calls the block once for each of them, until the enumeration is stopped.
-- [func nextDate(after: Date, matching: DateComponents, options: NSCalendar.Options) -> Date?](nscalendar/nextdate(after:matching:options:).md)
+- [func nextDate(after: Date, matching: DateComponents, options: NSCalendar.Options) -> Date?](./nextdate%28after,matching,options%29.md)
   Returns the next date after a given date matching the given components.
-- [func nextDate(after: Date, matchingHour: Int, minute: Int, second: Int, options: NSCalendar.Options) -> Date?](nscalendar/nextdate(after:matchinghour:minute:second:options:).md)
+- [func nextDate(after: Date, matchingHour: Int, minute: Int, second: Int, options: NSCalendar.Options) -> Date?](./nextdate%28after,matchinghour,minute,second,options%29.md)
   Returns the next date after a given date that matches the given hour, minute, and second, component values.
-- [func nextDate(after: Date, matching: NSCalendar.Unit, value: Int, options: NSCalendar.Options) -> Date?](nscalendar/nextdate(after:matching:value:options:).md)
+- [func nextDate(after: Date, matching: NSCalendar.Unit, value: Int, options: NSCalendar.Options) -> Date?](./nextdate%28after,matching,value,options%29.md)
   Returns the next date after a given date matching the given calendar unit value.
-- [NSCalendar.Options](nscalendar/options.md)
+- [NSCalendar.Options](./options.md)
   The options for arithmetic operations involving calendars.
-- [NSWrapCalendarComponents](nswrapcalendarcomponents-api.md)
+- [NSWrapCalendarComponents](../nswrapcalendarcomponents-api.md)
   A legacy constant used to control overflow in date calculations.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: TipKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The user interface element of the tip.

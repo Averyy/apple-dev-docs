@@ -1,7 +1,8 @@
 # AVSystemRoutingError.Code
 
 **Framework**: AVSystemRouting  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that an AVSystemRouting operation throws when it fails.
 
@@ -16,23 +17,27 @@ An error that an AVSystemRouting operation throws when it fails.
 enum Code
 ```
 
+```c
+enum AVSystemRoutingError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [AVSystemRoutingError.Code.connectionFailed](avsystemroutingerror-19zkj/code/connectionfailed.md)
+- [AVSystemRoutingError.Code.connectionFailed](./code/connectionfailed.md)
   A connection failure with the remote application.
 ### Initializers
-- [init?(rawValue: Int)](avsystemroutingerror-19zkj/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

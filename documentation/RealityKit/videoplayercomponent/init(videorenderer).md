@@ -1,7 +1,8 @@
 # init(videoRenderer:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video player component from a sample buffer video renderer object.
 
@@ -21,7 +22,7 @@ init(videoRenderer: AVSampleBufferVideoRenderer)
 
 #### Discussion
 
-To create a `VideoPlayerComponent`, first create an [`AVSampleBufferVideoRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebuffervideorenderer) instance with no parameters and then pass that to the `VideoPlayerComponent` initializer. After creating the `VideoPlayerComponent`, create an [`AVAssetReader`](https://developer.apple.com/documentation/avfoundation/avassetreader) with the [`AVURLAsset`](https://developer.apple.com/documentation/avfoundation/avurlasset) and load the media (video), which you need to track as the [`AVAssetTrack`](https://developer.apple.com/documentation/avfoundation/avassettrack). Feed this `AVAssetTrack` to the [`AVAssetReaderTrackOutput`](https://developer.apple.com/documentation/avfoundation/avassetreadertrackoutput)
+To create a `VideoPlayerComponent`, first create an [`AVSampleBufferVideoRenderer`](../../AVFoundation/avsamplebuffervideorenderer.md) instance with no parameters and then pass that to the `VideoPlayerComponent` initializer. After creating the `VideoPlayerComponent`, create an [`AVAssetReader`](../../AVFoundation/avassetreader.md) with the [`AVURLAsset`](../../AVFoundation/avurlasset.md) and load the media (video), which you need to track as the [`AVAssetTrack`](../../AVFoundation/avassettrack.md). Feed this `AVAssetTrack` to the [`AVAssetReaderTrackOutput`](../../AVFoundation/avassetreadertrackoutput.md)
 and add this output tracker to the `AVAssetReader`.
 
 Wait for setup to finish and start reading. Read the sample buffers from the reader and enqueue it into the `AVSampleBufferVideoRenderer` object. `AVSampleBufferVideoRenderer` uses a push model, so feed the video sample buffers until the queue is full, and then resume feeding it when it’s ready for more. You can use `isReadyForMoreMediaData` on the `AVSampleBufferVideoRenderer` object in a while-loop to check whether you need to enqueue more sample buffers. You can’t use the same `AVSampleBufferVideoRenderer` object with more than one `VideoPlayerComponent`.
@@ -99,7 +100,8 @@ if let url = Bundle.main.url(forResource: "MyMovie", withExtension: "mp4") {
 
 ## See Also
 
-- [init(avPlayer: AVPlayer)](videoplayercomponent/init(avplayer:).md)
+### Creating a video player component
+- [init(avPlayer: AVPlayer)](./init%28avplayer%29.md)
   Creates a video player component from an AV player object.
 
 

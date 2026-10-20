@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,7 +12,7 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated symbols
-- [static var texturedBackground: NSWindow.StyleMask](nswindow/stylemask-swift.struct/texturedbackground.md)
+- [static var texturedBackground: NSWindow.StyleMask](./nswindow/stylemask-swift.struct/texturedbackground.md)
   The window uses a textured background that darkens when the window is key or main and lightens when it is inactive, and may have a second gradient in the section below the window content.
 
 

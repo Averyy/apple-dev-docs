@@ -1,7 +1,8 @@
 # strategy
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy with which to collect and publish elements.
 
@@ -22,9 +23,10 @@ let strategy: Publishers.TimeGroupingStrategy<Context>
 
 ## See Also
 
-- [let upstream: Upstream](publishers/collectbytime/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher that this publisher receives elements from.
-- [let options: Context.SchedulerOptions?](publishers/collectbytime/options.md)
+- [let options: Context.SchedulerOptions?](./options.md)
   Scheduler options to use for the strategy.
 
 

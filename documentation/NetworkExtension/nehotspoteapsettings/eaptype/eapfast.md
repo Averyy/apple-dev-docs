@@ -1,7 +1,8 @@
 # NEHotspotEAPSettings.EAPType.EAPFAST
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Network EAP type is `EAPFAST`.
 
@@ -17,13 +18,18 @@ Network EAP type is `EAPFAST`.
 case EAPFAST
 ```
 
+```c
+NEHotspotConfigurationEAPTypeEAPFAST
+```
+
 ## See Also
 
-- [NEHotspotEAPSettings.EAPType.EAPTLS](nehotspoteapsettings/eaptype/eaptls.md)
+### Enumeration Cases
+- [NEHotspotEAPSettings.EAPType.EAPTLS](./eaptls.md)
   Network EAP type is `EAPTLS`.
-- [NEHotspotEAPSettings.EAPType.EAPTTLS](nehotspoteapsettings/eaptype/eapttls.md)
+- [NEHotspotEAPSettings.EAPType.EAPTTLS](./eapttls.md)
   Network EAP type is `EAPTTLS`.
-- [NEHotspotEAPSettings.EAPType.EAPPEAP](nehotspoteapsettings/eaptype/eappeap.md)
+- [NEHotspotEAPSettings.EAPType.EAPPEAP](./eappeap.md)
   Network EAP type is `EAPPEAP`.
 
 

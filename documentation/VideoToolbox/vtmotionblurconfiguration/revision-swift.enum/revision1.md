@@ -1,7 +1,8 @@
 # VTMotionBlurConfiguration.Revision.revision1
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An algorithm or implementation that represents the first revision.
 
@@ -15,6 +16,10 @@ An algorithm or implementation that represents the first revision.
 
 ```swift
 case revision1
+```
+
+```c
+VTMotionBlurConfigurationRevision1
 ```
 
 

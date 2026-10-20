@@ -1,7 +1,8 @@
 # MusicSubscription.Updates.Element
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element the asynchronous sequence produces.
 

@@ -1,7 +1,8 @@
 # init(frameWidth:frameHeight:spatialScaleFactor:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new low-latency frame interpolation configuration for spatial scaling and temporal scaling.
 
@@ -19,6 +20,10 @@ Creates a new low-latency frame interpolation configuration for spatial scaling 
 init?(frameWidth: Int, frameHeight: Int, spatialScaleFactor: Int)
 ```
 
+```objc
+- (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight spatialScaleFactor:(NSInteger) spatialScaleFactor;
+```
+
 #### Discussion
 
 When you configure the processor for spatial scaling, the low-latency frame interpolation processor only supports 2x spatial upscaling and a single frame of temporal interpolation at a 0.5 interpolation phase.
@@ -31,7 +36,8 @@ When you configure the processor for spatial scaling, the low-latency frame inte
 
 ## See Also
 
-- [init?(frameWidth: Int, frameHeight: Int, numberOfInterpolatedFrames: Int)](vtlowlatencyframeinterpolationconfiguration/init(framewidth:frameheight:numberofinterpolatedframes:).md)
+### Creating a frame interpolation configuration
+- [init?(frameWidth: Int, frameHeight: Int, numberOfInterpolatedFrames: Int)](./init%28framewidth,frameheight,numberofinterpolatedframes%29.md)
   Creates a new low-latency frame interpolation configuration for frame-rate conversion.
 
 

@@ -1,7 +1,8 @@
 # SHSession.Results.Element
 
 **Framework**: ShazamKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A set of results that a session result object returns.
 
@@ -22,9 +23,10 @@ typealias Element = SHSession.Result
 
 ## See Also
 
-- [func makeAsyncIterator() -> SHSession.Results.Iterator](shsession/results-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> SHSession.Results.Iterator](./makeasynciterator%28%29.md)
   Creates an asynchronous iterator that produces results from an asynchronous sequence.
-- [SHSession.Results.Iterator](shsession/results-swift.struct/iterator.md)
+- [SHSession.Results.Iterator](./iterator.md)
   An iterator for accessing session results.
 
 

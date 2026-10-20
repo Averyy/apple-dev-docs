@@ -1,7 +1,8 @@
 # max(by:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes the maximum value received from the upstream publisher, using the provided ordering closure.
 
@@ -26,9 +27,9 @@ A publisher that publishes the maximum value received from the upstream publishe
 
 #### Discussion
 
-Use [`max(by:)`](publisher/max(by:).md) to determine the maximum value of elements received from the upstream publisher based on an ordering closure you specify.
+Use [`max(by:)`](./max%28by%29.md) to determine the maximum value of elements received from the upstream publisher based on an ordering closure you specify.
 
-In the example below, an array publishes enumeration elements representing playing card ranks. The [`max(by:)`](publisher/max(by:).md) operator compares the current and next elements using the `rawValue` property of each enumeration value in the user supplied closure and prints the maximum value found after publishing all of the elements.
+In the example below, an array publishes enumeration elements representing playing card ranks. The [`max(by:)`](./max%28by%29.md) operator compares the current and next elements using the `rawValue` property of each enumeration value in the user supplied closure and prints the maximum value found after publishing all of the elements.
 
 ```swift
 enum Rank: Int {
@@ -53,17 +54,18 @@ After this publisher receives a request for more than 0 items, it requests unlim
 
 ## See Also
 
-- [func count() -> Publishers.Count<Self>](publisher/count.md)
+### Applying mathematical operations on elements
+- [func count() -> Publishers.Count<Self>](./count%28%29.md)
   Publishes the number of elements received from the upstream publisher.
-- [func max() -> Publishers.Comparison<Self>](publisher/max.md)
+- [func max() -> Publishers.Comparison<Self>](./max%28%29.md)
   Publishes the maximum value received from the upstream publisher, after it finishes.
-- [func tryMax(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](publisher/trymax(by:).md)
+- [func tryMax(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](./trymax%28by%29.md)
   Publishes the maximum value received from the upstream publisher, using the provided error-throwing closure to order the items.
-- [func min() -> Publishers.Comparison<Self>](publisher/min.md)
+- [func min() -> Publishers.Comparison<Self>](./min%28%29.md)
   Publishes the minimum value received from the upstream publisher, after it finishes.
-- [func min(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](publisher/min(by:).md)
+- [func min(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](./min%28by%29.md)
   Publishes the minimum value received from the upstream publisher, after it finishes.
-- [func tryMin(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](publisher/trymin(by:).md)
+- [func tryMin(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](./trymin%28by%29.md)
   Publishes the minimum value received from the upstream publisher, using the provided error-throwing closure to order the items.
 
 

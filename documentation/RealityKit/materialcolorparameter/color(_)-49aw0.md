@@ -1,7 +1,8 @@
 # MaterialColorParameter.color(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A color value in macOS.
 
@@ -10,7 +11,7 @@ A color value in macOS.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

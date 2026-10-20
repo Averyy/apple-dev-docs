@@ -1,7 +1,8 @@
 # MTLDynamicLibraryDomain
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Metal dynamic library errors.
 
@@ -19,9 +20,14 @@ The domain for Metal dynamic library errors.
 let MTLDynamicLibraryDomain: String
 ```
 
+```c
+extern NSErrorDomain const MTLDynamicLibraryDomain;
+```
+
 ## See Also
 
-- [static var errorDomain: String](mtldynamiclibraryerror-swift.struct/errordomain.md)
+### Error domain
+- [static var errorDomain: String](./mtldynamiclibraryerror-swift.struct/errordomain.md)
   The current dynamic library error domain.
 
 

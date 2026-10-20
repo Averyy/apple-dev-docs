@@ -1,7 +1,8 @@
 # userID
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 User ID of owner
 

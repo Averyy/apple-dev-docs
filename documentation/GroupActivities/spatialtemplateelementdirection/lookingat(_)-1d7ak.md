@@ -1,7 +1,8 @@
 # lookingAt(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a direction that orients the participant to face the specified point in the shared coordinate space.
 
@@ -20,11 +21,12 @@ A direction type that faces the specified position in the coordinate space.
 
 ## Parameters
 
-- `position`: A location in the shared coordinate space. Specify positions as an offset from the app’s content using the [`SpatialTemplateElementPosition`](spatialtemplateelementposition.md) type.
+- `position`: A location in the shared coordinate space. Specify positions as an offset from the app’s content using the [`SpatialTemplateElementPosition`](../spatialtemplateelementposition.md) type.
 
 ## See Also
 
-- [static func lookingAt(any SpatialTemplateElement) -> SpatialTemplateElementDirection](spatialtemplateelementdirection/lookingat(_:)-70j0i.md)
+### Looking at a specific location
+- [static func lookingAt(any SpatialTemplateElement) -> SpatialTemplateElementDirection](./lookingat%28_%29-70j0i.md)
   Creates a direction that orients the participant to face another template element.
 
 

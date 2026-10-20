@@ -1,7 +1,8 @@
 # testRun
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The test run object that executes the test.
 
@@ -11,17 +12,22 @@ The test run object that executes the test.
 var testRun: XCTestRun? { get }
 ```
 
+```objc
+@property (readonly, nullable) XCTestRun * testRun;
+```
+
 #### Discussion
 
-An instance of [`testRunClass`](xctest/testrunclass.md), or `nil` if the test hasn’t run.
+An instance of [`testRunClass`](./testrunclass.md), or `nil` if the test hasn’t run.
 
 ## See Also
 
-- [var name: String](xctest/name.md)
+### Examining Test Properties
+- [var name: String](./name.md)
   The name of the test.
-- [var testCaseCount: Int](xctest/testcasecount.md)
+- [var testCaseCount: Int](./testcasecount.md)
   The number of test cases in the test.
-- [var testRunClass: AnyClass?](xctest/testrunclass.md)
+- [var testRunClass: AnyClass?](./testrunclass.md)
   The test run subclass to instantiate when the test runs, which records the test’s results.
 
 

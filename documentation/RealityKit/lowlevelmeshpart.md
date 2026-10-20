@@ -1,7 +1,8 @@
 # LowLevelMeshPart
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a range of primitives to draw from a mesh resource.
 
@@ -21,48 +22,49 @@ final class LowLevelMeshPart
 
 A mesh part selects a contiguous range of indices from the mesh’s index buffer and associates it with a primitive type, winding order, and bounding volume.
 
-Create a `LowLevelMeshPart` using [`makeMeshPart(resource:indexOffset:indexCount:primitive:windingOrder:bounds:)`](lowlevelrendercontext/makemeshpart(resource:indexoffset:indexcount:primitive:windingorder:bounds:).md).
+Create a `LowLevelMeshPart` using [`makeMeshPart(resource:indexOffset:indexCount:primitive:windingOrder:bounds:)`](./lowlevelrendercontext/makemeshpart%28resource,indexoffset,indexcount,primitive,windingorder,bounds%29.md).
 
 ## Topics
 
 ### Configuring the geometry
-- [var primitive: MTLPrimitiveType](lowlevelmeshpart/primitive.md)
+- [var primitive: MTLPrimitiveType](./lowlevelmeshpart/primitive.md)
   The geometric primitive to use when rendering this part.
-- [var windingOrder: MTLWinding](lowlevelmeshpart/windingorder.md)
+- [var windingOrder: MTLWinding](./lowlevelmeshpart/windingorder.md)
   The winding order of front-facing polygons.
-- [func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRenderContextError)](lowlevelmeshpart/setindexrange(indexoffset:indexcount:).md)
+- [func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRenderContextError)](./lowlevelmeshpart/setindexrange%28indexoffset,indexcount%29.md)
   Updates the first index and index count for this mesh part.
 ### Instance Properties
-- [var bounds: BoundingSphereBox](lowlevelmeshpart/bounds.md)
+- [var bounds: BoundingSphereBox](./lowlevelmeshpart/bounds.md)
   The bounding volume of this mesh part, in model space.
-- [var indexCount: Int](lowlevelmeshpart/indexcount.md)
+- [var indexCount: Int](./lowlevelmeshpart/indexcount.md)
   The number of indices to use for this part.
-- [var indexOffset: Int](lowlevelmeshpart/indexoffset.md)
+- [var indexOffset: Int](./lowlevelmeshpart/indexoffset.md)
   The byte offset of the first index.
-- [var resource: LowLevelMeshResource](lowlevelmeshpart/resource.md)
+- [var resource: LowLevelMeshResource](./lowlevelmeshpart/resource.md)
   The mesh resource whose index and vertex buffers this part draws from.
 
 ## See Also
 
-- [class LowLevelMeshResource](lowlevelmeshresource.md)
+### GPU resources
+- [class LowLevelMeshResource](./lowlevelmeshresource.md)
   A container for vertex and index data in a custom format.
-- [class LowLevelMeshInstance](lowlevelmeshinstance.md)
+- [class LowLevelMeshInstance](./lowlevelmeshinstance.md)
   A single drawable object pairing a mesh part with a compiled pipeline state, optional per-draw argument tables, a transform, and a sort category.
-- [class LowLevelMeshInstanceArray](lowlevelmeshinstancearray.md)
+- [class LowLevelMeshInstanceArray](./lowlevelmeshinstancearray.md)
   A fixed-capacity collection of mesh instances submitted to the renderer.
-- [class LowLevelInstanceTransformResource](lowlevelinstancetransformresource.md)
+- [class LowLevelInstanceTransformResource](./lowlevelinstancetransformresource.md)
   A GPU-managed buffer that stores an array of per-instance transforms for GPU instancing.
-- [class LowLevelBufferResource](lowlevelbufferresource.md)
+- [class LowLevelBufferResource](./lowlevelbufferresource.md)
   A GPU-managed buffer for arbitrary per-draw data such as uniforms and custom parameters.
-- [struct LowLevelBufferSlice](lowlevelbufferslice.md)
+- [struct LowLevelBufferSlice](./lowlevelbufferslice.md)
   A reference to a sub-range of a buffer resource, used to bind a region of a buffer to an argument table slot.
-- [class LowLevelTextureResource](lowleveltextureresource.md)
+- [class LowLevelTextureResource](./lowleveltextureresource.md)
   A container for texture data in a custom format.
-- [class LowLevelMaterialResource](lowlevelmaterialresource.md)
+- [class LowLevelMaterialResource](./lowlevelmaterialresource.md)
   A compiled material composed of three independently-replaceable shader functions.
-- [class LowLevelDeviceResource](lowleveldeviceresource.md)
+- [class LowLevelDeviceResource](./lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
-- [struct BoundingSphereBox](boundingspherebox.md)
+- [struct BoundingSphereBox](./boundingspherebox.md)
   A combined bounding volume consisting of a bounding sphere and an optional axis-aligned bounding box.
 
 

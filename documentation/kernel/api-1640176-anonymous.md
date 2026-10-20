@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothPageScanPeriodModeP0](1640176-anonymous/kbluetoothpagescanperiodmodep0.md)
-- [kBluetoothPageScanPeriodModeP1](1640176-anonymous/kbluetoothpagescanperiodmodep1.md)
-- [kBluetoothPageScanPeriodModeP2](1640176-anonymous/kbluetoothpagescanperiodmodep2.md)
+- [kBluetoothPageScanPeriodModeP0](./api-1640176-anonymous/kbluetoothpagescanperiodmodep0.md)
+- [kBluetoothPageScanPeriodModeP1](./api-1640176-anonymous/kbluetoothpagescanperiodmodep1.md)
+- [kBluetoothPageScanPeriodModeP2](./api-1640176-anonymous/kbluetoothpagescanperiodmodep2.md)
 
 
 ---

@@ -1,13 +1,14 @@
 # endpoint
 
 **Framework**: Spatial Preview  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The endpoint for the visionOS device currently connected via Mac Virtual Display.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,9 @@ final var endpoint: SpatialPreviewEndpoint { get async throws }
 
 #### Discussion
 
-Check [`isEndpointAvailable`](connectedspatialendpointobserver/isendpointavailable.md) before accessing this property to avoid catching an [`ConnectedSpatialEndpointObserver.UnavailableError`](connectedspatialendpointobserver/unavailableerror.md).
+Check [`isEndpointAvailable`](./isendpointavailable.md) before accessing this property to avoid catching an [`ConnectedSpatialEndpointObserver.UnavailableError`](./unavailableerror.md).
 
-> **Note**: [`ConnectedSpatialEndpointObserver.UnavailableError`](connectedspatialendpointobserver/unavailableerror.md) if no device is currently connected via Mac Virtual Display.
+> **Throws**: [`ConnectedSpatialEndpointObserver.UnavailableError`](./unavailableerror.md) if no device is currently connected via Mac Virtual Display.
 
 
 ---

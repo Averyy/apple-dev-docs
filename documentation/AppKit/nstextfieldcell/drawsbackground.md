@@ -1,12 +1,13 @@
 # drawsBackground
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the cell draws its background color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,21 @@ A Boolean value that indicates whether the cell draws its background color.
 var drawsBackground: Bool { get set }
 ```
 
+```objc
+@property BOOL drawsBackground;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell draws its background color. In order to prevent inconsistent rendering, background color rendering is automatically disabled for rounded-bezel text fields.
+When the value of this property is [`true`](../../Swift/true.md), the cell draws its background color. In order to prevent inconsistent rendering, background color rendering is automatically disabled for rounded-bezel text fields.
 
 ## See Also
 
-- [var drawsBackground: Bool](nstextfield/drawsbackground.md)
+### Related Documentation
+- [var drawsBackground: Bool](../nstextfield/drawsbackground.md)
   A Boolean value that controls whether the text field’s cell draws a background color behind the text.
-- [var backgroundColor: NSColor?](nstextfieldcell/backgroundcolor.md)
+### Controlling the Background
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The color of the cell’s background.
 
 

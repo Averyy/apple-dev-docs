@@ -1,7 +1,8 @@
 # NEEvaluateConnectionRule
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 `NEEvaluateConnectionRule` associates properties of network connections with an action.
 
@@ -19,42 +20,47 @@
 class NEEvaluateConnectionRule
 ```
 
+```objc
+@interface NEEvaluateConnectionRule : NSObject
+```
+
 ## Topics
 
 ### Initializing a Rule
-- [init(matchDomains: [String], andAction: NEEvaluateConnectionRuleAction)](neevaluateconnectionrule/init(matchdomains:andaction:).md)
+- [init(matchDomains: [String], andAction: NEEvaluateConnectionRuleAction)](./neevaluateconnectionrule/init%28matchdomains,andaction%29.md)
   Initialize an `NEEvaluateConnectionRule` instance with a list of destination host domains and an action.
 ### Accessing Rule Match Properties
-- [var matchDomains: [String]](neevaluateconnectionrule/matchdomains.md)
+- [var matchDomains: [String]](./neevaluateconnectionrule/matchdomains.md)
   An array of domains used to match the destination hostname of connections. If the destination hostname of a connection matches any of the domains in the array, then the connection matches the rule. Each domain is matched against the destination hostname using suffix matching, and each label in the domain must match an entire label in the hostname. For example, the domain `example.com` will match the hostname `www.example.com` but not `www.anotherexample.com`.
-- [var useDNSServers: [String]?](neevaluateconnectionrule/usednsservers.md)
+- [var useDNSServers: [String]?](./neevaluateconnectionrule/usednsservers.md)
   If the rule matches the connection being established and the action is `NEEvaluateConnectionRuleActionConnectIfNeeded`, the DNS servers specified in this array are used to resolve the destination hostname of the connection while evaluating connectivity to the destination of the connection. If the resolution fails for any reason, the VPN is started.
-- [var probeURL: URL?](neevaluateconnectionrule/probeurl.md)
+- [var probeURL: URL?](./neevaluateconnectionrule/probeurl.md)
   An HTTP or HTTPS URL. If the rule matches the connection being established and the action is `NEEvaluateConnectionRuleActionConnectIfNeeded` and a request sent to this URL results in a response with an HTTP response code other than 200, then the VPN is started.
 ### Accessing the Rule Action
-- [var action: NEEvaluateConnectionRuleAction](neevaluateconnectionrule/action.md)
+- [var action: NEEvaluateConnectionRuleAction](./neevaluateconnectionrule/action.md)
   The action to take if the properties of the network connection being established match the rule.
-- [enum NEEvaluateConnectionRuleAction](neevaluateconnectionruleaction.md)
+- [enum NEEvaluateConnectionRuleAction](./neevaluateconnectionruleaction.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var connectionRules: [NEEvaluateConnectionRule]?](neondemandruleevaluateconnection/connectionrules.md)
-  An array of [`NEEvaluateConnectionRule`](neevaluateconnectionrule.md) objects
+### Accessing connection rules
+- [var connectionRules: [NEEvaluateConnectionRule]?](./neondemandruleevaluateconnection/connectionrules.md)
+  An array of [`NEEvaluateConnectionRule`](./neevaluateconnectionrule.md) objects
 
 
 ---

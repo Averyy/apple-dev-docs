@@ -1,7 +1,8 @@
 # destroy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Terminates a place detail.
 
@@ -10,15 +11,16 @@ Terminates a place detail.
 
 ## Declaration
 
-```swift
+```
 destroy(): void;
 ```
 
 ## See Also
 
-- [new PlaceDetail(parent, place, options)](placedetail/placedetailconstructor.md)
+### Creating and terminating a place detail
+- [new PlaceDetail(parent, place, options)](./placedetailconstructor.md)
   A representation of a place detail.
-- [interface PlaceDetailOptions](placedetailoptions.md)
+- [interface PlaceDetailOptions](../placedetailoptions.md)
   Options that you may provide when constructing place detail views.
 
 

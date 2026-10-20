@@ -1,7 +1,8 @@
 # Edge.top
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ case top
 
 ## See Also
 
-- [Edge.bottom](edge/bottom.md)
-- [Edge.leading](edge/leading.md)
-- [Edge.trailing](edge/trailing.md)
+### Getting the edges
+- [Edge.bottom](./bottom.md)
+- [Edge.leading](./leading.md)
+- [Edge.trailing](./trailing.md)
 
 
 ---

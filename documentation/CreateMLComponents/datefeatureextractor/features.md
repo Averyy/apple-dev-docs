@@ -1,7 +1,8 @@
 # features
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time features.
 
@@ -21,7 +22,8 @@ let features: DateFeatures
 
 ## See Also
 
-- [let calendar: Calendar](datefeatureextractor/calendar.md)
+### Inspecting a data feature extractor
+- [let calendar: Calendar](./calendar.md)
   The calendar.
 
 

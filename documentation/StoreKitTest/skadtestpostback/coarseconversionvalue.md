@@ -1,7 +1,8 @@
 # coarseConversionValue
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates a high, medium, or low conversion value for an ad postback.
 
@@ -16,17 +17,22 @@ A value that indicates a high, medium, or low conversion value for an ad postbac
 var coarseConversionValue: SKAdNetwork.CoarseConversionValue? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) SKAdNetworkCoarseConversionValue coarseConversionValue;
+```
+
 #### Discussion
 
-A postback in SKAdNetwork version 4 and later provides a [`fineConversionValue`](skadtestpostback/fineconversionvalue.md) or this [`coarseConversionValue`](skadtestpostback/coarseconversionvalue.md). Earlier versions of SKAdNetwork use a single [`conversionValue`](skadtestpostback/conversionvalue.md).
+A postback in SKAdNetwork version 4 and later provides a [`fineConversionValue`](./fineconversionvalue.md) or this [`coarseConversionValue`](./coarseconversionvalue.md). Earlier versions of SKAdNetwork use a single [`conversionValue`](./conversionvalue.md).
 
 ## See Also
 
-- [var fidelityType: Int](skadtestpostback/fidelitytype.md)
+### Getting conversion information
+- [var fidelityType: Int](./fidelitytype.md)
   An integer that indicates the type of ad impression, StoreKit-rendered or view-through.
-- [var fineConversionValue: Int](skadtestpostback/fineconversionvalue.md)
+- [var fineConversionValue: Int](./fineconversionvalue.md)
   The specific conversion value of an ad postback.
-- [var didWin: Bool](skadtestpostback/didwin.md)
+- [var didWin: Bool](./didwin.md)
   A Boolean value that indicates whether the postback won the attribution.
 
 

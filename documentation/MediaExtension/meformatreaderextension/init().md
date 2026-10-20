@@ -2,6 +2,7 @@
 
 **Framework**: MediaExtension  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a new format reader factory.
@@ -15,9 +16,14 @@ Creates a new format reader factory.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [func formatReader(with: MEByteSource, options: MEFormatReaderInstantiationOptions?) throws -> any MEFormatReader](meformatreaderextension/formatreader(with:options:).md)
+### Creating a format reader
+- [func formatReader(with: MEByteSource, options: MEFormatReaderInstantiationOptions?) throws -> any MEFormatReader](./formatreader%28with,options%29.md)
   Creates a new format reader with the byte source and options that you specify.
 
 

@@ -1,7 +1,8 @@
 # CVOpenGLBuffer
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A reference to a Core Video OpenGL buffer object.
 
@@ -13,6 +14,10 @@ A reference to a Core Video OpenGL buffer object.
 
 ```swift
 typealias CVOpenGLBuffer = CVImageBuffer
+```
+
+```c
+typedef CVImageBufferRef CVOpenGLBufferRef;
 ```
 
 #### Discussion

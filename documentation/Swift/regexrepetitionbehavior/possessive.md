@@ -1,7 +1,8 @@
 # possessive
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Match as much of the input string as possible, performing no backtracking.
 

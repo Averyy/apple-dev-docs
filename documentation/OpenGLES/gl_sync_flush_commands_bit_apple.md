@@ -1,7 +1,8 @@
 # GL_SYNC_FLUSH_COMMANDS_BIT_APPLE
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_SYNC_FLUSH_COMMANDS_BIT_APPLE: Int32 { get }
+```
+
+```c
+#define GL_SYNC_FLUSH_COMMANDS_BIT_APPLE
 ```
 
 

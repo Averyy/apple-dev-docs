@@ -1,7 +1,8 @@
 # systemBrown
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a color object for brown that automatically adapts to vibrancy and accessibility settings.
 
@@ -14,35 +15,40 @@ Returns a color object for brown that automatically adapts to vibrancy and acces
 class var systemBrown: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * systemBrownColor;
+```
+
 #### Discussion
 
 Use this color when you want a tint color that looks great on both light and dark backgrounds.
 
 ## See Also
 
-- [class var systemBlue: NSColor](nscolor/systemblue.md)
+### Adaptable system colors
+- [class var systemBlue: NSColor](./systemblue.md)
   Returns a color object for blue that automatically adapts to vibrancy and accessibility settings.
-- [class var systemCyan: NSColor](nscolor/systemcyan.md)
+- [class var systemCyan: NSColor](./systemcyan.md)
   Returns a color object for cyan that automatically adapts to vibrancy and accessibility settings.
-- [class var systemGray: NSColor](nscolor/systemgray.md)
+- [class var systemGray: NSColor](./systemgray.md)
   Returns a color object for gray that automatically adapts to vibrancy and accessibility settings.
-- [class var systemGreen: NSColor](nscolor/systemgreen.md)
+- [class var systemGreen: NSColor](./systemgreen.md)
   Returns a color object for green that automatically adapts to vibrancy and accessibility settings.
-- [class var systemIndigo: NSColor](nscolor/systemindigo.md)
+- [class var systemIndigo: NSColor](./systemindigo.md)
   Returns a color object for indigo that automatically adapts to vibrancy and accessibility settings.
-- [class var systemMint: NSColor](nscolor/systemmint.md)
+- [class var systemMint: NSColor](./systemmint.md)
   Returns a color object for mint that automatically adapts to vibrancy and accessibility settings.
-- [class var systemOrange: NSColor](nscolor/systemorange.md)
+- [class var systemOrange: NSColor](./systemorange.md)
   Returns a color object for orange that automatically adapts to vibrancy and accessibility settings.
-- [class var systemPink: NSColor](nscolor/systempink.md)
+- [class var systemPink: NSColor](./systempink.md)
   Returns a color object for pink that automatically adapts to vibrancy and accessibility settings.
-- [class var systemPurple: NSColor](nscolor/systempurple.md)
+- [class var systemPurple: NSColor](./systempurple.md)
   Returns a color object for purple that automatically adapts to vibrancy and accessibility settings.
-- [class var systemRed: NSColor](nscolor/systemred.md)
+- [class var systemRed: NSColor](./systemred.md)
   Returns a color object for red that automatically adapts to vibrancy and accessibility settings.
-- [class var systemTeal: NSColor](nscolor/systemteal.md)
+- [class var systemTeal: NSColor](./systemteal.md)
   Returns a color object for teal that automatically adapts to vibrancy and accessibility settings.
-- [class var systemYellow: NSColor](nscolor/systemyellow.md)
+- [class var systemYellow: NSColor](./systemyellow.md)
   Returns a color object for yellow that automatically adapts to vibrancy and accessibility settings.
 
 

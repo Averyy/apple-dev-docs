@@ -1,7 +1,8 @@
 # ITLibMediaItemPlayStatus.partiallyPlayed
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has partially played the media item.
 
@@ -15,11 +16,16 @@ The user has partially played the media item.
 case partiallyPlayed
 ```
 
+```c
+ITLibMediaItemPlayStatusPartiallyPlayed
+```
+
 ## See Also
 
-- [ITLibMediaItemPlayStatus.none](itlibmediaitemplaystatus/none.md)
+### Media Item Play Statuses
+- [ITLibMediaItemPlayStatus.none](./none.md)
   The user has played the media item or iTunes doesn’t track the play status for this kind of media item.
-- [ITLibMediaItemPlayStatus.unplayed](itlibmediaitemplaystatus/unplayed.md)
+- [ITLibMediaItemPlayStatus.unplayed](./unplayed.md)
   The user hasn’t played the media item.
 
 

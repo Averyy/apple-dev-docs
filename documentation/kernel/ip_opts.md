@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip_opts {
     ...
 };
@@ -17,8 +17,8 @@ struct ip_opts {
 ## Topics
 
 ### Instance Properties
-- [ip_dst](ip_opts/1475850-ip_dst.md)
-- [ip_opts](ip_opts/1475688-ip_opts.md)
+- [ip_dst](./ip_opts/api-1475850-ip_dst.md)
+- [ip_opts](./ip_opts/api-1475688-ip_opts.md)
 
 
 ---

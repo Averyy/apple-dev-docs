@@ -1,7 +1,8 @@
 # userTierToken
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An HTTP bearer token that authenticates the person using your app.
 
@@ -20,7 +21,7 @@ let userTierToken: Data
 
 ## Mentions
 
-- [Getting up-to-date calling and blocking information for your app](getting-up-to-date-calling-and-blocking-information-for-your-app.md)
+- [Getting up-to-date calling and blocking information for your app](../getting-up-to-date-calling-and-blocking-information-for-your-app.md)
 
 #### Discussion
 
@@ -28,9 +29,10 @@ The system sends this token to the Privacy Pass token issuer, which can verify w
 
 ## See Also
 
-- [let serviceURL: URL](livecalleridlookupextensioncontext/serviceurl.md)
+### Configuring the system
+- [let serviceURL: URL](./serviceurl.md)
   The endpoint of the service to fetch identity and blocking information.
-- [let tokenIssuerURL: URL](livecalleridlookupextensioncontext/tokenissuerurl.md)
+- [let tokenIssuerURL: URL](./tokenissuerurl.md)
   The URL of the Privacy Pass token issuer.
 
 

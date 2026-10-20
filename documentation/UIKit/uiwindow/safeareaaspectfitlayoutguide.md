@@ -1,7 +1,8 @@
 # safeAreaAspectFitLayoutGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A layout guide for placing content of a particular aspect ratio.
 
@@ -18,6 +19,10 @@ A layout guide for placing content of a particular aspect ratio.
 var safeAreaAspectFitLayoutGuide: any UILayoutGuide & UILayoutGuideAspectFitting { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UILayoutGuide<UILayoutGuideAspectFitting> * safeAreaAspectFitLayoutGuide;
+```
+
 #### Discussion
 
 This layout guide provides a centered region in the window where you can place media content of a particular aspect ratio (width over height) to avoid obscuring the content.
@@ -26,7 +31,8 @@ This layout guide provides a centered region in the window where you can place m
 
 ## See Also
 
-- [protocol UILayoutGuideAspectFitting](uilayoutguideaspectfitting.md)
+### Working with layout guides
+- [protocol UILayoutGuideAspectFitting](../uilayoutguideaspectfitting.md)
   The interface for a layout guide that supports a particular aspect ratio.
 
 

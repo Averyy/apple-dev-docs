@@ -1,7 +1,8 @@
 # Calendar.Component.weekOfMonth
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifier for the week of the month calendar unit.
 
@@ -22,13 +23,14 @@ case weekOfMonth
 
 ## See Also
 
-- [Calendar.Component.weekOfYear](calendar/component/weekofyear.md)
+### Specifying Weeks and Days
+- [Calendar.Component.weekOfYear](./weekofyear.md)
   Identifier for the week of the year unit.
-- [Calendar.Component.weekday](calendar/component/weekday.md)
+- [Calendar.Component.weekday](./weekday.md)
   Identifier for the weekday unit.
-- [Calendar.Component.weekdayOrdinal](calendar/component/weekdayordinal.md)
+- [Calendar.Component.weekdayOrdinal](./weekdayordinal.md)
   Identifier for the weekday ordinal unit.
-- [Calendar.Component.day](calendar/component/day.md)
+- [Calendar.Component.day](./day.md)
   Identifier for the day unit.
 
 

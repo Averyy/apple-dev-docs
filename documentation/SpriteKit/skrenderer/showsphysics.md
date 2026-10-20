@@ -1,7 +1,8 @@
 # showsPhysics
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view displays physics-related debugging information.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the view displays physics-related debuggi
 var showsPhysics: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsPhysics;
+```
+
 #### Discussion
 
 When this debugging option is enabled, each time a frame is rendered, an overlay image is drawn on top of your scene that shows the positions and shapes of any physics bodies visible in the scene.
 
 ## See Also
 
-- [var showsNodeCount: Bool](skrenderer/showsnodecount.md)
+### Enabling Visual Statistics for Debugging
+- [var showsNodeCount: Bool](./showsnodecount.md)
   A Boolean value that indicates whether the view displays an overlay that shows physics bodies that are visible in the scene.
-- [var showsDrawCount: Bool](skrenderer/showsdrawcount.md)
+- [var showsDrawCount: Bool](./showsdrawcount.md)
   A Boolean value that indicates whether the view displays the number of drawing passes it needed to render the view.
-- [var showsQuadCount: Bool](skrenderer/showsquadcount.md)
+- [var showsQuadCount: Bool](./showsquadcount.md)
   A Boolean value that indicates whether the view displays the number of rectangles used to render the scene.
-- [var showsFields: Bool](skrenderer/showsfields.md)
+- [var showsFields: Bool](./showsfields.md)
   A Boolean value that indicates whether the view displays information about physics fields in the scene.
 
 

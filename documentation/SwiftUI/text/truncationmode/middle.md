@@ -1,7 +1,8 @@
 # Text.TruncationMode.middle
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Truncate in the middle of the line.
 
@@ -26,9 +27,10 @@ Use this kind of truncation to omit characters from the middle of the string. Fo
 
 ## See Also
 
-- [Text.TruncationMode.head](text/truncationmode/head.md)
+### Getting text truncation modes
+- [Text.TruncationMode.head](./head.md)
   Truncate at the beginning of the line.
-- [Text.TruncationMode.tail](text/truncationmode/tail.md)
+- [Text.TruncationMode.tail](./tail.md)
   Truncate at the end of the line.
 
 

@@ -1,7 +1,8 @@
 # AccessoryFeature
 
 **Framework**: Accessory Transport Extension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines a capability for an accessory data provider extension.
 
@@ -21,28 +22,29 @@ Implement this protocol to create a custom capability that your extension suppor
 ## Topics
 
 ### Identifying the feature
-- [static var featureID: String](accessoryfeature/featureid.md)
+- [static var featureID: String](./accessoryfeature/featureid.md)
   A string identifier for the feature.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtensionPoint.Capability](../extensionfoundation/appextensionpoint/capability.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionPoint.Capability](../ExtensionFoundation/appextensionpoint/capability.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AccessoryMessage](accessorymessage.md)
+### Data and sessions
+- [struct AccessoryMessage](./accessorymessage.md)
   A structure that represents a message to send to an accessory.
-- [class AccessorySecuritySession](accessorysecuritysession.md)
+- [class AccessorySecuritySession](./accessorysecuritysession.md)
   A class that manages a security session between the extension and the system.
-- [struct TransportMessage](transportmessage.md)
+- [struct TransportMessage](./transportmessage.md)
   A structure that represents a message for transmission between the system and an accessory.
-- [struct SecurityMessage](securitymessage.md)
+- [struct SecurityMessage](./securitymessage.md)
   A structure that carries key material for a secure channel between the system and an accessory.
-- [enum AccessoryTransport](accessorytransport.md)
+- [enum AccessoryTransport](./accessorytransport.md)
   Transport methods for communicating with an accessory.
 
 

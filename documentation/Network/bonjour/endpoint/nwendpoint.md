@@ -1,7 +1,8 @@
 # nwEndpoint
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The NWEndpoint to use when connecting to this result.
 

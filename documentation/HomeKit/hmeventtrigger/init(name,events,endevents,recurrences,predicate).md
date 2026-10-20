@@ -1,7 +1,8 @@
 # init(name:events:endEvents:recurrences:predicate:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+

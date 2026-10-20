@@ -1,14 +1,15 @@
 # llrintf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long long llrintf(float);
 ```
 

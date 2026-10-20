@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The display’s serial number that you specified at creation time.
@@ -16,13 +17,18 @@ The display’s serial number that you specified at creation time.
 var serialNum: UInt32 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) uint32_t serialNum;
+```
+
 ## See Also
 
-- [var name: String?](pgdisplay/name.md)
+### Inspecting Display Properties
+- [var name: String?](./name.md)
   The display’s name that you specified at creation time.
-- [var port: Int](pgdisplay/port.md)
+- [var port: Int](./port.md)
   The display’s accelerator port that you specified at creation time.
-- [var sizeInMillimeters: NSSize](pgdisplay/sizeinmillimeters.md)
+- [var sizeInMillimeters: NSSize](./sizeinmillimeters.md)
   The display’s virtual dimensions, in millimeters, that you specified at creation time.
 
 

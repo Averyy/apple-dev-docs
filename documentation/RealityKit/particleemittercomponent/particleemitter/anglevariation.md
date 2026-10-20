@@ -1,7 +1,8 @@
 # angleVariation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines a plus/minus range (in radians) from which a value is randomly selected to offset `angle`.
 

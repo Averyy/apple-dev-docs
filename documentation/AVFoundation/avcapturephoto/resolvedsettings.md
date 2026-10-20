@@ -1,7 +1,8 @@
 # resolvedSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The settings object that was used to request this photo capture.
 
@@ -18,15 +19,20 @@ The settings object that was used to request this photo capture.
 var resolvedSettings: AVCaptureResolvedPhotoSettings { get }
 ```
 
+```objc
+@property (readonly) AVCaptureResolvedPhotoSettings * resolvedSettings;
+```
+
 #### Discussion
 
-To determine which [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) call produced this photo capture result, match this [`AVCaptureResolvedPhotoSettings`](avcaptureresolvedphotosettings.md) object’s [`uniqueID`](avcaptureresolvedphotosettings/uniqueid.md) value to the [`uniqueID`](avcapturephotosettings/uniqueid.md) property of the photo settings object you requested capture with. You can also use this object to find out which values the photo output has chosen for automatic settings.
+To determine which [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) call produced this photo capture result, match this [`AVCaptureResolvedPhotoSettings`](../avcaptureresolvedphotosettings.md) object’s [`uniqueID`](../avcaptureresolvedphotosettings/uniqueid.md) value to the [`uniqueID`](../avcapturephotosettings/uniqueid.md) property of the photo settings object you requested capture with. You can also use this object to find out which values the photo output has chosen for automatic settings.
 
 ## See Also
 
-- [var photoCount: Int](avcapturephoto/photocount.md)
+### Resolving photo capture requests
+- [var photoCount: Int](./photocount.md)
   The 1-based index of this photo capture relative to other results from the same capture request.
-- [var timestamp: CMTime](avcapturephoto/timestamp.md)
+- [var timestamp: CMTime](./timestamp.md)
   The time at which the image was captured.
 
 

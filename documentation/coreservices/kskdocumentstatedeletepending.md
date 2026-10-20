@@ -1,7 +1,8 @@
 # kSKDocumentStateDeletePending
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies that the document is in the index but will be deleted after the index is flushed or closed.
 

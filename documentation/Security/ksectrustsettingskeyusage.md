@@ -1,7 +1,8 @@
 # kSecTrustSettingsKeyUsage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A number specifying the operations for which the encryption key in this certificate can be used.
 
@@ -15,9 +16,13 @@ A number specifying the operations for which the encryption key in this certific
 var kSecTrustSettingsKeyUsage: String { get }
 ```
 
+```c
+#define kSecTrustSettingsKeyUsage
+```
+
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing an `SInt32` value.
+The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing an `SInt32` value.
 
 
 ---

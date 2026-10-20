@@ -1,7 +1,8 @@
 # UIHostingConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A content configuration suitable for hosting a hierarchy of SwiftUI views.
 
@@ -20,7 +21,7 @@ struct UIHostingConfiguration<Content, Background> where Content : View, Backgro
 
 #### Overview
 
-Use a value of this type, which conforms to the [`UIContentConfiguration`](https://developer.apple.com/documentation/uikit/uicontentconfiguration-9eib5) protocol, with a [`UICollectionViewCell`](https://developer.apple.com/documentation/uikit/uicollectionviewcell) or [`UITableViewCell`](https://developer.apple.com/documentation/uikit/uitableviewcell) to host a hierarchy of SwiftUI views in a collection or table view, respectively. For example, the following shows a stack with an image and text inside the cell:
+Use a value of this type, which conforms to the [`UIContentConfiguration`](../UIKit/uicontentconfiguration-9eib5.md) protocol, with a [`UICollectionViewCell`](../UIKit/uicollectionviewcell.md) or [`UITableViewCell`](../UIKit/uitableviewcell.md) to host a hierarchy of SwiftUI views in a collection or table view, respectively. For example, the following shows a stack with an image and text inside the cell:
 
 ```swift
 myCell.contentConfiguration = UIHostingConfiguration {
@@ -68,38 +69,39 @@ cell.contentConfiguration = UIHostingConfiguration {
 ## Topics
 
 ### Creating and updating a configuration
-- [init(content: () -> Content)](uihostingconfiguration/init(content:).md)
+- [init(content: () -> Content)](./uihostingconfiguration/init%28content%29.md)
   Creates a hosting configuration with the given contents.
 ### Setting the background
-- [func background<S>(S) -> UIHostingConfiguration<Content, _UIHostingConfigurationBackgroundView<S>>](uihostingconfiguration/background(_:).md)
+- [func background<S>(S) -> UIHostingConfiguration<Content, _UIHostingConfigurationBackgroundView<S>>](./uihostingconfiguration/background%28_%29.md)
   Sets the background contents for the hosting configuration’s enclosing cell.
-- [func background<B>(content: () -> B) -> UIHostingConfiguration<Content, B>](uihostingconfiguration/background(content:).md)
+- [func background<B>(content: () -> B) -> UIHostingConfiguration<Content, B>](./uihostingconfiguration/background%28content%29.md)
   Sets the background contents for the hosting configuration’s enclosing cell.
 ### Setting margins
-- [func margins(_:_:)](uihostingconfiguration/margins(_:_:).md)
+- [func margins(_:_:)](./uihostingconfiguration/margins%28_,_%29.md)
   Sets the margins around the content of the configuration.
 ### Setting a size
-- [func minSize(width: CGFloat?, height: CGFloat?) -> UIHostingConfiguration<Content, Background>](uihostingconfiguration/minsize(width:height:).md)
+- [func minSize(width: CGFloat?, height: CGFloat?) -> UIHostingConfiguration<Content, Background>](./uihostingconfiguration/minsize%28width,height%29.md)
   Sets the minimum size for the configuration.
-- [func minSize() -> UIHostingConfiguration<Content, Background>](uihostingconfiguration/minsize.md)
+- [func minSize() -> UIHostingConfiguration<Content, Background>](./uihostingconfiguration/minsize%28%29.md)
   Sets the minimum size for the configuration.
 
 ## Relationships
 
 ### Conforms To
-- [UIContentConfiguration](../uikit/uicontentconfiguration-9eib5.md)
+- [UIContentConfiguration](../UIKit/uicontentconfiguration-9eib5.md)
 
 ## See Also
 
-- [Using SwiftUI with UIKit](../uikit/using-swiftui-with-uikit.md)
+### Displaying SwiftUI views in UIKit
+- [Using SwiftUI with UIKit](../UIKit/using-swiftui-with-uikit.md)
   Learn how to incorporate SwiftUI views into a UIKit app.
-- [Unifying your app’s animations](unifying-your-app-s-animations.md)
+- [Unifying your app’s animations](./unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [class UIHostingController](uihostingcontroller.md)
+- [class UIHostingController](./uihostingcontroller.md)
   A UIKit view controller that manages a SwiftUI view hierarchy.
-- [struct UIHostingControllerSizingOptions](uihostingcontrollersizingoptions.md)
+- [struct UIHostingControllerSizingOptions](./uihostingcontrollersizingoptions.md)
   Options for how a hosting controller tracks its content’s size.
-- [protocol UIHostingSceneDelegate](uihostingscenedelegate.md)
+- [protocol UIHostingSceneDelegate](./uihostingscenedelegate.md)
   Extends `UIKit/UISceneDelegate` to bridge SwiftUI scenes.
 
 

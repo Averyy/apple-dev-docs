@@ -1,7 +1,8 @@
 # familyNames
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array of font family names available on the system.
 
@@ -9,7 +10,7 @@ Returns an array of font family names available on the system.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,17 +20,22 @@ Returns an array of font family names available on the system.
 class var familyNames: [String] { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSArray<NSString *> * familyNames;
+```
+
 #### Return Value
 
 An array of `NSString` objects, each of which contains the name of a font family.
 
 #### Discussion
 
-Font family names correspond to the base name of a font, such as `Times New Roman`. You can pass the returned strings to the [`fontNames(forFamilyName:)`](uifont/fontnames(forfamilyname:).md) method to retrieve a list of font names available for that family. You can then use the corresponding font name to retrieve an actual font object.
+Font family names correspond to the base name of a font, such as `Times New Roman`. You can pass the returned strings to the [`fontNames(forFamilyName:)`](./fontnames%28forfamilyname%29.md) method to retrieve a list of font names available for that family. You can then use the corresponding font name to retrieve an actual font object.
 
 ## See Also
 
-- [class func fontNames(forFamilyName: String) -> [String]](uifont/fontnames(forfamilyname:).md)
+### Getting the Available Font Names
+- [class func fontNames(forFamilyName: String) -> [String]](./fontnames%28forfamilyname%29.md)
   Returns an array of font names available in a particular font family.
 
 

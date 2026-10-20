@@ -1,7 +1,8 @@
 # CWEventType
 
 **Framework**: Core WLAN  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Wi-Fi event types.
 
@@ -14,62 +15,67 @@ Wi-Fi event types.
 enum CWEventType
 ```
 
+```c
+enum CWEventType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CWEventType.none](cweventtype/none.md)
+- [CWEventType.none](./cweventtype/none.md)
   No specified event type.
-- [CWEventType.powerDidChange](cweventtype/powerdidchange.md)
+- [CWEventType.powerDidChange](./cweventtype/powerdidchange.md)
   Posts when the power state of any Wi-Fi interface changes.
-- [CWEventType.ssidDidChange](cweventtype/ssiddidchange.md)
+- [CWEventType.ssidDidChange](./cweventtype/ssiddidchange.md)
   Posts when the current SSID of any Wi-Fi interface changes.
-- [CWEventType.bssidDidChange](cweventtype/bssiddidchange.md)
+- [CWEventType.bssidDidChange](./cweventtype/bssiddidchange.md)
   Posts when the current BSSID of any Wi-Fi interface changes.
-- [CWEventType.countryCodeDidChange](cweventtype/countrycodedidchange.md)
+- [CWEventType.countryCodeDidChange](./cweventtype/countrycodedidchange.md)
   Posts when the adopted country code of any Wi-Fi interface changes.
-- [CWEventType.linkDidChange](cweventtype/linkdidchange.md)
+- [CWEventType.linkDidChange](./cweventtype/linkdidchange.md)
   Posts when the link state for any Wi-Fi interface changes.
-- [CWEventType.linkQualityDidChange](cweventtype/linkqualitydidchange.md)
+- [CWEventType.linkQualityDidChange](./cweventtype/linkqualitydidchange.md)
   Posts when the RSSI or transmit rate for any Wi-Fi interface changes.
-- [CWEventType.modeDidChange](cweventtype/modedidchange.md)
+- [CWEventType.modeDidChange](./cweventtype/modedidchange.md)
   Posts when the operating mode of any Wi-Fi interface changes.
-- [CWEventType.scanCacheUpdated](cweventtype/scancacheupdated.md)
+- [CWEventType.scanCacheUpdated](./cweventtype/scancacheupdated.md)
   Posts when the scan cache of any Wi-Fi interface is updated with new scan results.
-- [CWEventType.unknown](cweventtype/unknown.md)
+- [CWEventType.unknown](./cweventtype/unknown.md)
   Unknown event type.
 ### Enumeration Cases
-- [CWEventType.btCoexStats](cweventtype/btcoexstats.md)
+- [CWEventType.btCoexStats](./cweventtype/btcoexstats.md)
 ### Initializers
-- [init?(rawValue: Int)](cweventtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cweventtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CWChannelBand](cwchannelband.md)
+### Enumerations
+- [enum CWChannelBand](./cwchannelband.md)
   CoreWLAN channel bands.
-- [enum CWChannelWidth](cwchannelwidth.md)
+- [enum CWChannelWidth](./cwchannelwidth.md)
   CoreWLAN channel widths.
-- [struct CWCipherKeyFlags](cwcipherkeyflags.md)
+- [struct CWCipherKeyFlags](./cwcipherkeyflags.md)
   Cipher key flags.
-- [enum CWErr](cwerr.md)
-- [enum CWIBSSModeSecurity](cwibssmodesecurity.md)
+- [enum CWErr](./cwerr.md)
+- [enum CWIBSSModeSecurity](./cwibssmodesecurity.md)
   IBSS mode security types.
-- [enum CWInterfaceMode](cwinterfacemode.md)
+- [enum CWInterfaceMode](./cwinterfacemode.md)
   Wi-Fi interface operating modes.
-- [enum CWKeychainDomain](cwkeychaindomain.md)
+- [enum CWKeychainDomain](./cwkeychaindomain.md)
   Keychain domain types that CoreWLAN keychain methods use.
-- [enum CWPHYMode](cwphymode.md)
+- [enum CWPHYMode](./cwphymode.md)
   CoreWLAN physical layer modes.
-- [enum CWSecurity](cwsecurity.md)
+- [enum CWSecurity](./cwsecurity.md)
   CoreWLAN security types.
 
 

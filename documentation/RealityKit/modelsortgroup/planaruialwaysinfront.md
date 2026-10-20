@@ -1,9 +1,10 @@
 # planarUIAlwaysInFront
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A model sort group that instructs the renderer to draw a model’s mesh in front of a SwiftUI layer that’s coincident with the mesh. See [`ModelSortGroup.PlanarUIPlacement`](modelsortgroup/planaruiplacement-swift.enum.md) for usage.
+A model sort group that instructs the renderer to draw a model’s mesh in front of a SwiftUI layer that’s coincident with the mesh. See [`ModelSortGroup.PlanarUIPlacement`](./planaruiplacement-swift.enum.md) for usage.
 
 **Availability**:
 - iOS 18.0+

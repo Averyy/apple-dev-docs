@@ -1,7 +1,8 @@
 # mandatoryFeatures
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of mandatory features that the device offers and the guest must accept.
 
@@ -12,6 +13,10 @@ The set of mandatory features that the device offers and the guest must accept.
 
 ```swift
 var mandatoryFeatures: VZVirtioFeatureSet { get }
+```
+
+```objc
+@property (strong, readonly) VZVirtioFeatureSet * mandatoryFeatures;
 ```
 
 #### Discussion

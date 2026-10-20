@@ -1,7 +1,8 @@
 # drawLayer(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a new layer, created by drawing code that you provide, into the context.
 
@@ -22,7 +23,7 @@ func drawLayer(content: (inout GraphicsContext) throws -> Void) rethrows
 
 ## Parameters
 
-- `content`: A closure that receives a new [`GraphicsContext`](graphicscontext.md) as input. This context represents a new transparency layer that you can draw into. When the closure returns, SwiftUI draws the new layer into the current context.
+- `content`: A closure that receives a new [`GraphicsContext`](../graphicscontext.md) as input. This context represents a new transparency layer that you can draw into. When the closure returns, SwiftUI draws the new layer into the current context.
 
 
 ---

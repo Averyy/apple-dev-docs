@@ -1,7 +1,8 @@
 # sec_protocol_metadata_copy_peer_public_key(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_copy_peer_public_key(_ metadata: sec_protocol_metadata_t) -> dispatch_data_t?
+```
+
+```c
+dispatch_data_tsec_protocol_metadata_copy_peer_public_key(sec_protocol_metadata_t metadata);
 ```
 
 #### Return Value

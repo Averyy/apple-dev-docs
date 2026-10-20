@@ -1,7 +1,8 @@
 # axisValues
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axis values applied to the part
 

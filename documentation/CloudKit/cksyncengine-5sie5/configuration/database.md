@@ -1,7 +1,8 @@
 # database
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The associated database.
 
@@ -11,7 +12,7 @@ The associated database.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -28,11 +29,12 @@ Multiple sync engines can run in the same process, each targeting a different da
 
 ## See Also
 
-- [var automaticallySync: Bool](cksyncengine-5sie5/configuration/automaticallysync.md)
+### Managing attributes
+- [var automaticallySync: Bool](./automaticallysync.md)
   A Boolean value that determines whether the engine syncs automatically.
-- [var subscriptionID: CKSubscription.ID?](cksyncengine-5sie5/configuration/subscriptionid.md)
+- [var subscriptionID: CKSubscription.ID?](./subscriptionid.md)
   The subscription identifier for the associated database.
-- [var stateSerialization: CKSyncEngine.State.Serialization?](cksyncengine-5sie5/configuration/stateserialization.md)
+- [var stateSerialization: CKSyncEngine.State.Serialization?](./stateserialization.md)
   The sync engine’s serialized state.
 
 

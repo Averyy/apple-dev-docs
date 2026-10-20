@@ -1,7 +1,8 @@
 # UNNotificationContentExtensionResponseOption.dismiss
 
 **Framework**: User Notifications UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Dismiss the notification interface.
 
@@ -18,15 +19,20 @@ Dismiss the notification interface.
 case dismiss
 ```
 
+```c
+UNNotificationContentExtensionResponseOptionDismiss
+```
+
 #### Discussion
 
 The content extension handles the selected action.
 
 ## See Also
 
-- [UNNotificationContentExtensionResponseOption.doNotDismiss](unnotificationcontentextensionresponseoption/donotdismiss.md)
+### Response Options
+- [UNNotificationContentExtensionResponseOption.doNotDismiss](./donotdismiss.md)
   Don’t dismiss the notification interface.
-- [UNNotificationContentExtensionResponseOption.dismissAndForwardAction](unnotificationcontentextensionresponseoption/dismissandforwardaction.md)
+- [UNNotificationContentExtensionResponseOption.dismissAndForwardAction](./dismissandforwardaction.md)
   Dismiss the notification interface and forward the notification to the app.
 
 

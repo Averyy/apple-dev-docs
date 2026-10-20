@@ -1,7 +1,8 @@
 # init(empty:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty sequence of strings or integers.
 
@@ -20,15 +21,20 @@ Creates an empty sequence of strings or integers.
 convenience init(empty type: MLFeatureType)
 ```
 
+```objc
++ (instancetype) emptySequenceWithType:(MLFeatureType) type;
+```
+
 ## Parameters
 
-- `type`: An [`MLFeatureType`](mlfeaturetype.md) instance that determines the sequence’s element type, which must be either [`MLFeatureType.string`](mlfeaturetype/string.md) or [`MLFeatureType.int64`](mlfeaturetype/int64.md).
+- `type`: An [`MLFeatureType`](../mlfeaturetype.md) instance that determines the sequence’s element type, which must be either [`MLFeatureType.string`](../mlfeaturetype/string.md) or [`MLFeatureType.int64`](../mlfeaturetype/int64.md).
 
 ## See Also
 
-- [convenience init(strings: [String])](mlsequence/init(strings:).md)
+### Creating a sequence
+- [convenience init(strings: [String])](./init%28strings%29.md)
   Creates a sequence of strings from a string array.
-- [convenience init(int64s: [NSNumber])](mlsequence/init(int64s:).md)
+- [convenience init(int64s: [NSNumber])](./init%28int64s%29.md)
   Creates a sequence of integers from an array of numbers.
 
 

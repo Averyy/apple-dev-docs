@@ -1,14 +1,15 @@
 # IOOperationHandler
 
 **Framework**: AudioDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```c
 typedef int (^)(unsigned int, unsigned int, unsigned int, unsigned long long, unsigned long long) IOOperationHandler;
 ```
 

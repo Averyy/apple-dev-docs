@@ -1,6 +1,7 @@
 # Safari 16.1 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released October 24, 2022 — Version 16.1 (18614.2.9)
 
@@ -18,9 +19,9 @@ Safari 16.1 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 
 ###### New Feature
 
-- Added support for passkeys on macOS Big Sur, macOS Monterey, macOS Ventura, and iPadOS 16.1. See [`Supporting passkeys`](https://developer.apple.com/documentation/authenticationservices/supporting-passkeys).
+- Added support for passkeys on macOS Big Sur, macOS Monterey, macOS Ventura, and iPadOS 16.1. See [Supporting passkeys](../AuthenticationServices/supporting-passkeys.md).
 
-##### Css
+##### CSS
 
 ###### Resolved Issues
 
@@ -62,7 +63,7 @@ Safari 16.1 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 
 New Features
 
-- Added support for web-to-App Store advertising with [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork).
+- Added support for web-to-App Store advertising with [`SKAdNetwork`](../StoreKit/skadnetwork.md).
 
 ##### Rendering
 
@@ -77,7 +78,7 @@ New Features
 - Fixed COOP `same-origin` breaking forms after a back navigation.
 - Fixed `script-src-elem` CSP in workers.
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -103,17 +104,18 @@ New Features
 
 ## See Also
 
-- [Safari 16.6 Release Notes](safari-16_6-release-notes.md)
+### Version 16
+- [Safari 16.6 Release Notes](./safari-16_6-release-notes.md)
   Released July 24, 2023 — Version 16.6 (18615.3.12)
-- [Safari 16.5 Release Notes](safari-16_5-release-notes.md)
+- [Safari 16.5 Release Notes](./safari-16_5-release-notes.md)
   Released May 18, 2023 — Version 16.5 (18615.2.9)
-- [Safari 16.4 Release Notes](safari-16_4-release-notes.md)
+- [Safari 16.4 Release Notes](./safari-16_4-release-notes.md)
   Released March 27, 2023 — Version 16.4 (18615.1.26)
-- [Safari 16.3 Release Notes](safari-16_3-release-notes.md)
+- [Safari 16.3 Release Notes](./safari-16_3-release-notes.md)
   Released January 23, 2023 — Version 16.3 (18614.4.6)
-- [Safari 16.2 Release Notes](safari-16_2-release-notes.md)
+- [Safari 16.2 Release Notes](./safari-16_2-release-notes.md)
   Released December 13, 2022 — Version 16.2 (18614.3.7)
-- [Safari 16 Release Notes](safari-16-release-notes.md)
+- [Safari 16 Release Notes](./safari-16-release-notes.md)
   Released September 12, 2022 — Version 16 (18614.1.25)
 
 

@@ -1,7 +1,8 @@
 # recentTeamId
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Most recently used developer `teamId`.
 
@@ -10,7 +11,7 @@ Most recently used developer `teamId`.
 
 ## Declaration
 
-```swift
+```
 attribute string? recentTeamId;
 ```
 

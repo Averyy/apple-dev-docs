@@ -1,7 +1,8 @@
 # UIMainMenuSystem
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The main menu system.
 
@@ -19,42 +20,47 @@ The main menu system.
 class UIMainMenuSystem
 ```
 
+```objc
+@interface UIMainMenuSystem : UIMenuSystem
+```
+
 ## Topics
 
 ### Accessing the main menu system
-- [class var shared: UIMainMenuSystem](uimainmenusystem/shared.md)
+- [class var shared: UIMainMenuSystem](./uimainmenusystem/shared.md)
   The shared main menu system.
 ### Configuring a main menu system
-- [func setBuildConfiguration(UIMainMenuSystem.Configuration, buildHandler: ((any UIMenuBuilder) -> Void)?)](uimainmenusystem/setbuildconfiguration(_:buildhandler:).md)
-- [UIMainMenuSystem.Configuration](uimainmenusystem/configuration.md)
+- [func setBuildConfiguration(UIMainMenuSystem.Configuration, buildHandler: ((any UIMenuBuilder) -> Void)?)](./uimainmenusystem/setbuildconfiguration%28_,buildhandler%29.md)
+- [UIMainMenuSystem.Configuration](./uimainmenusystem/configuration.md)
   A configuration for the main menu system. You can specify whether or not certain elements are present in the initial main menu, as well as a block to build the menu using a UIMenuBuilder.
 ### Inspecting a configuration of find elements
-- [UIMenuSystem.FindElementGroupConfiguration](uimenusystem/findelementgroupconfiguration.md)
+- [UIMenuSystem.FindElementGroupConfiguration](./uimenusystem/findelementgroupconfiguration.md)
   Represents a configuration for find elements, should they be present. You don’t create one of these directly. A configuration is provided as part of a `UIMainMenuSystemConfiguration`.
-- [UIMenuSystem.FindElementGroupConfiguration.Style](uimenusystem/findelementgroupconfiguration/style-swift.enum.md)
+- [UIMenuSystem.FindElementGroupConfiguration.Style](./uimenusystem/findelementgroupconfiguration/style-swift.enum.md)
   Represents a preference for the structure of Find elements in the main menu.
 
 ## Relationships
 
 ### Inherits From
-- [UIMenuSystem](uimenusystem.md)
+- [UIMenuSystem](./uimenusystem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIMenu](uimenu.md)
+### App menus
+- [class UIMenu](./uimenu.md)
   A container for grouping related menu elements in an app menu or contextual menu.
-- [protocol UIMenuBuilder](uimenubuilder.md)
+- [protocol UIMenuBuilder](./uimenubuilder.md)
   An interface for adding and removing menus from a menu system.
-- [class UIMenuSystem](uimenusystem.md)
+- [class UIMenuSystem](./uimenusystem.md)
   An object representing a main or contextual menu system.
 
 

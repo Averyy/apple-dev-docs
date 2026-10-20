@@ -1,7 +1,8 @@
 # SafariSettingsPrivacy_PermissionDefaultsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary of website permission defaults. Each key in the dictionary represents a single website, or a website and its sub-domains. The dictionary values represent the permission defaults that Safari applies for each website that matches the key.
 
@@ -13,7 +14,7 @@ The dictionary of website permission defaults. Each key in the dictionary repres
 
 ## Declaration
 
-```swift
+```
 object SafariSettingsPrivacy_PermissionDefaultsObject
 ```
 
@@ -29,7 +30,7 @@ When multiple patterns match a website, Safari uses the most precise pattern. Fo
 ## Topics
 
 ### Objects
-- [object SafariSettingsWebsiteDictionaryObject](safarisettingswebsitedictionaryobject.md)
+- [object SafariSettingsWebsiteDictionaryObject](./safarisettingswebsitedictionaryobject.md)
   The dictionary that defines the website privacy permission defaults. Each key represents a website.
 
 ## Properties

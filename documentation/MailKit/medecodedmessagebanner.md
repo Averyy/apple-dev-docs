@@ -1,7 +1,8 @@
 # MEDecodedMessageBanner
 
 **Framework**: MailKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 12.0+
@@ -12,36 +13,41 @@
 class MEDecodedMessageBanner
 ```
 
+```objc
+@interface MEDecodedMessageBanner : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(title: String, primaryActionTitle: String, dismissable: Bool)](medecodedmessagebanner/init(title:primaryactiontitle:dismissable:).md)
-- [init?(coder: NSCoder)](medecodedmessagebanner/init(coder:).md)
+- [init(title: String, primaryActionTitle: String, dismissable: Bool)](./medecodedmessagebanner/init%28title,primaryactiontitle,dismissable%29.md)
+- [init?(coder: NSCoder)](./medecodedmessagebanner/init%28coder%29.md)
 ### Instance Properties
-- [var isDismissable: Bool](medecodedmessagebanner/isdismissable.md)
-- [var primaryActionTitle: String](medecodedmessagebanner/primaryactiontitle.md)
-- [var title: String](medecodedmessagebanner/title.md)
+- [var isDismissable: Bool](./medecodedmessagebanner/isdismissable.md)
+- [var primaryActionTitle: String](./medecodedmessagebanner/primaryactiontitle.md)
+- [var title: String](./medecodedmessagebanner/title.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MEComposeContext](mecomposecontext.md)
-- [class MEEmailAddress](meemailaddress.md)
-- [class MEExtensionManager](meextensionmanager.md)
+### Classes
+- [class MEComposeContext](./mecomposecontext.md)
+- [class MEEmailAddress](./meemailaddress.md)
+- [class MEExtensionManager](./meextensionmanager.md)
 
 
 ---

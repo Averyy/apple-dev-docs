@@ -1,23 +1,28 @@
 # CFPreferencesAppSynchronize(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Writes to permanent storage all pending changes to the preference data for the application, and reads the latest preference data from permanent storage.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFPreferencesAppSynchronize(_ applicationID: CFString) -> Bool
+```
+
+```c
+extern Boolean CFPreferencesAppSynchronize(CFStringRef applicationID);
 ```
 
 #### Return Value
@@ -26,15 +31,16 @@ func CFPreferencesAppSynchronize(_ applicationID: CFString) -> Bool
 
 #### Discussion
 
-Calling the function [`CFPreferencesSetAppValue(_:_:_:)`](cfpreferencessetappvalue(_:_:_:).md) is not in itself sufficient for storing preferences. The [`CFPreferencesAppSynchronize(_:)`](cfpreferencesappsynchronize(_:).md) function writes to permanent storage all pending preference changes for the application. Typically you would call this function after multiple calls to [`CFPreferencesSetAppValue(_:_:_:)`](cfpreferencessetappvalue(_:_:_:).md). Conversely, preference data is cached after it is first read. Changes made externally are not automatically incorporated. The [`CFPreferencesAppSynchronize(_:)`](cfpreferencesappsynchronize(_:).md) function reads the latest preferences from permanent storage.
+Calling the function [`CFPreferencesSetAppValue(_:_:_:)`](./cfpreferencessetappvalue%28_,_,_%29.md) is not in itself sufficient for storing preferences. The [`CFPreferencesAppSynchronize(_:)`](./cfpreferencesappsynchronize%28_%29.md) function writes to permanent storage all pending preference changes for the application. Typically you would call this function after multiple calls to [`CFPreferencesSetAppValue(_:_:_:)`](./cfpreferencessetappvalue%28_,_,_%29.md). Conversely, preference data is cached after it is first read. Changes made externally are not automatically incorporated. The [`CFPreferencesAppSynchronize(_:)`](./cfpreferencesappsynchronize%28_%29.md) function reads the latest preferences from permanent storage.
 
 ## Parameters
 
-- `applicationID`: The ID of the application whose preferences to write to storage, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
+- `applicationID`: The ID of the application whose preferences to write to storage, typically [`kCFPreferencesCurrentApplication`](./kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](./kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
 
 ## See Also
 
-- [func CFPreferencesSynchronize(CFString, CFString, CFString) -> Bool](cfpreferencessynchronize(_:_:_:).md)
+### Synchronizing Preferences
+- [func CFPreferencesSynchronize(CFString, CFString, CFString) -> Bool](./cfpreferencessynchronize%28_,_,_%29.md)
   For the specified domain, writes all pending changes to preference data to permanent storage, and reads latest preference data from permanent storage.
 
 

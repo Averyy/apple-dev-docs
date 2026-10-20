@@ -1,7 +1,8 @@
 # CHHapticEngine.ResetHandler
 
 **Framework**: Core Haptics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A typealias for the block that the haptic engine calls after being reset.
 
@@ -9,7 +10,7 @@ A typealias for the block that the haptic engine calls after being reset.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,9 +20,14 @@ A typealias for the block that the haptic engine calls after being reset.
 typealias ResetHandler = () -> Void
 ```
 
+```c
+typedef void (^)(void) CHHapticEngineResetHandler;
+```
+
 ## See Also
 
-- [var resetHandler: CHHapticEngine.ResetHandler](chhapticengine/resethandler-swift.property.md)
+### Handling Haptic Engine Resets
+- [var resetHandler: CHHapticEngine.ResetHandler](./resethandler-swift.property.md)
   A block that the haptic engine calls after recovering from a haptic server error.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Schedules a wait operation on the command queue to ensure the display is no longer using a specific Metal drawable.
@@ -20,9 +21,13 @@ Schedules a wait operation on the command queue to ensure the display is no long
 func waitForDrawable(_ drawable: any MTLDrawable)
 ```
 
+```objc
+- (void) waitForDrawable:(id<MTLDrawable>) drawable;
+```
+
 #### Discussion
 
-Use this method to ensure the display is no longer using a [`MTLDrawable`](mtldrawable.md) instance before executing any subsequent commands.
+Use this method to ensure the display is no longer using a [`MTLDrawable`](../mtldrawable.md) instance before executing any subsequent commands.
 
 This method returns immediately and doesn’t perform any synchronization on the current thread. You are responsible for calling this method before committing any command buffers containing commands that target this drawable.
 
@@ -30,7 +35,7 @@ Call this method multiple times if you commit your command buffers to multiple c
 
 ## Parameters
 
-- `drawable`: [`MTLDrawable`](mtldrawable.md) instance to signal.
+- `drawable`: [`MTLDrawable`](../mtldrawable.md) instance to signal.
 
 
 ---

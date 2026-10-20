@@ -1,7 +1,8 @@
 # EAAccessoryManager.AccessoryDidDisconnectMessage
 
 **Framework**: External Accessory  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,15 +21,15 @@ struct AccessoryDidDisconnectMessage
 ## Topics
 
 ### Initializers
-- [init(accessory: EAAccessory)](eaaccessorymanager/accessorydiddisconnectmessage/init(accessory:).md)
+- [init(accessory: EAAccessory)](./accessorydiddisconnectmessage/init%28accessory%29.md)
 ### Instance Properties
-- [var accessory: EAAccessory](eaaccessorymanager/accessorydiddisconnectmessage/accessory.md)
+- [var accessory: EAAccessory](./accessorydiddisconnectmessage/accessory.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

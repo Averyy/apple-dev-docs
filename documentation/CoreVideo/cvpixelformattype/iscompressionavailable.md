@@ -1,7 +1,8 @@
 # isCompressionAvailable
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 True if any of the planes of this format are compressed and hardware support is available.
 

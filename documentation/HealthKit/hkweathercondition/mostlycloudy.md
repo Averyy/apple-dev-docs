@@ -1,7 +1,8 @@
 # HKWeatherCondition.mostlyCloudy
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The weather condition is mostly cloudy.
 
@@ -19,37 +20,42 @@ The weather condition is mostly cloudy.
 case mostlyCloudy
 ```
 
+```c
+HKWeatherConditionMostlyCloudy
+```
+
 ## See Also
 
-- [HKWeatherCondition.none](hkweathercondition/none.md)
+### Weather Conditions
+- [HKWeatherCondition.none](./none.md)
   The weather condition is unknown or irrelevant.
-- [HKWeatherCondition.clear](hkweathercondition/clear.md)
+- [HKWeatherCondition.clear](./clear.md)
   The weather condition is clear.
-- [HKWeatherCondition.fair](hkweathercondition/fair.md)
+- [HKWeatherCondition.fair](./fair.md)
   The weather condition is fair.
-- [HKWeatherCondition.partlyCloudy](hkweathercondition/partlycloudy.md)
+- [HKWeatherCondition.partlyCloudy](./partlycloudy.md)
   The weather condition is partly cloudy.
-- [HKWeatherCondition.cloudy](hkweathercondition/cloudy.md)
+- [HKWeatherCondition.cloudy](./cloudy.md)
   The weather condition is cloudy.
-- [HKWeatherCondition.foggy](hkweathercondition/foggy.md)
+- [HKWeatherCondition.foggy](./foggy.md)
   The weather condition is foggy.
-- [HKWeatherCondition.haze](hkweathercondition/haze.md)
+- [HKWeatherCondition.haze](./haze.md)
   The weather condition is hazy.
-- [HKWeatherCondition.windy](hkweathercondition/windy.md)
+- [HKWeatherCondition.windy](./windy.md)
   The weather condition is windy.
-- [HKWeatherCondition.blustery](hkweathercondition/blustery.md)
+- [HKWeatherCondition.blustery](./blustery.md)
   The weather condition is blustery.
-- [HKWeatherCondition.smoky](hkweathercondition/smoky.md)
+- [HKWeatherCondition.smoky](./smoky.md)
   The weather condition is smoky.
-- [HKWeatherCondition.dust](hkweathercondition/dust.md)
+- [HKWeatherCondition.dust](./dust.md)
   The weather condition is dust.
-- [HKWeatherCondition.snow](hkweathercondition/snow.md)
+- [HKWeatherCondition.snow](./snow.md)
   The weather condition is snow.
-- [HKWeatherCondition.hail](hkweathercondition/hail.md)
+- [HKWeatherCondition.hail](./hail.md)
   The weather condition is hail.
-- [HKWeatherCondition.sleet](hkweathercondition/sleet.md)
+- [HKWeatherCondition.sleet](./sleet.md)
   The weather condition is sleet.
-- [HKWeatherCondition.freezingDrizzle](hkweathercondition/freezingdrizzle.md)
+- [HKWeatherCondition.freezingDrizzle](./freezingdrizzle.md)
   The weather condition is freezing drizzle.
 
 

@@ -1,10 +1,11 @@
 # ODMappings
 
 **Framework**: Open Directory  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
@@ -13,54 +14,59 @@
 class ODMappings
 ```
 
+```objc
+@interface ODMappings : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var comment: String!](odmappings/comment-swift.property.md)
-- [var function: String!](odmappings/function-swift.property.md)
-- [var functionAttributes: [Any]!](odmappings/functionattributes-swift.property.md)
-- [var identifier: String!](odmappings/identifier-swift.property.md)
-- [var recordTypes: [Any]!](odmappings/recordtypes-swift.property.md)
-- [var templateName: String!](odmappings/templatename-swift.property.md)
+- [var comment: String!](./odmappings/comment-swift.property.md)
+- [var function: String!](./odmappings/function-swift.property.md)
+- [var functionAttributes: [Any]!](./odmappings/functionattributes-swift.property.md)
+- [var identifier: String!](./odmappings/identifier-swift.property.md)
+- [var recordTypes: [Any]!](./odmappings/recordtypes-swift.property.md)
+- [var templateName: String!](./odmappings/templatename-swift.property.md)
 ### Instance Methods
-- [func recordMap(forStandardRecordType: String!) -> ODRecordMap!](odmappings/recordmap(forstandardrecordtype:).md)
-- [func setRecordMap(ODRecordMap!, forStandardRecordType: String!)](odmappings/setrecordmap(_:forstandardrecordtype:).md)
+- [func recordMap(forStandardRecordType: String!) -> ODRecordMap!](./odmappings/recordmap%28forstandardrecordtype%29.md)
+- [func setRecordMap(ODRecordMap!, forStandardRecordType: String!)](./odmappings/setrecordmap%28_,forstandardrecordtype%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ODAttributeMap](odattributemap.md)
-- [class ODConfiguration](odconfiguration.md)
-- [class ODContext](odcontext.md)
+### Classes
+- [class ODAttributeMap](./odattributemap.md)
+- [class ODConfiguration](./odconfiguration.md)
+- [class ODContext](./odcontext.md)
   An Open Directory context type.
-- [class ODModuleEntry](odmoduleentry.md)
-- [class ODNode](odnode.md)
+- [class ODModuleEntry](./odmoduleentry.md)
+- [class ODNode](./odnode.md)
   An `ODNode` object serves as a Cocoa wrapper for an Open Directory node.
-- [class ODNodeRef](odnoderef.md)
+- [class ODNodeRef](./odnoderef.md)
   An Open Directory node type.
-- [class ODQuery](odquery.md)
+- [class ODQuery](./odquery.md)
   An `ODQuery` object serves as a Cocoa wrapper for an Open Directory query.
-- [class ODQueryRef](odqueryref.md)
+- [class ODQueryRef](./odqueryref.md)
   An Open Directory query type.
-- [class ODRecord](odrecord.md)
+- [class ODRecord](./odrecord.md)
   An `ODRecord` object serves as a Cocoa wrapper for an Open Directory record.
-- [class ODRecordMap](odrecordmap.md)
-- [class ODRecordRef](odrecordref.md)
+- [class ODRecordMap](./odrecordmap.md)
+- [class ODRecordRef](./odrecordref.md)
   An Open Directory record type.
-- [class ODSession](odsession.md)
+- [class ODSession](./odsession.md)
   An `ODSession` object serves as a Cocoa wrapper for an Open Directory session.
-- [class ODSessionRef](odsessionref.md)
+- [class ODSessionRef](./odsessionref.md)
   An Open Directory session type.
 
 

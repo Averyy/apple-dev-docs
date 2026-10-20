@@ -1,7 +1,8 @@
 # externalSyncDeviceStatusDidChange(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs your delegate when the external sync device status has changed.
 
@@ -18,9 +19,14 @@ Informs your delegate when the external sync device status has changed.
 optional func externalSyncDeviceStatusDidChange(_ device: AVExternalSyncDevice)
 ```
 
+```objc
+- (void) externalSyncDeviceStatusDidChange:(AVExternalSyncDevice *) device;
+```
+
 ## See Also
 
-- [func externalSyncDevice(AVExternalSyncDevice, failedWithError: (any Error)?)](avexternalsyncdevicedelegate/externalsyncdevice(_:failedwitherror:).md)
+### Responding to device events
+- [func externalSyncDevice(AVExternalSyncDevice, failedWithError: (any Error)?)](./externalsyncdevice%28_,failedwitherror%29.md)
 
 
 ---

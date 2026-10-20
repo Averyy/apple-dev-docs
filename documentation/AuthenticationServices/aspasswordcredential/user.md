@@ -1,7 +1,8 @@
 # user
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user for a password credential object.
 
@@ -20,9 +21,14 @@ The user for a password credential object.
 var user: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * user;
+```
+
 ## See Also
 
-- [var password: String](aspasswordcredential/password.md)
+### Accessing the username and password
+- [var password: String](./password.md)
   The password for a password credential object.
 
 

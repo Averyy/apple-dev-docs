@@ -1,7 +1,8 @@
 # quarter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of quarters.
 
@@ -20,17 +21,22 @@ The number of quarters.
 var quarter: Int { get set }
 ```
 
+```objc
+@property NSInteger quarter;
+```
+
 ## See Also
 
-- [var era: Int](nsdatecomponents/era.md)
+### Accessing Years and Months
+- [var era: Int](./era.md)
   The number of eras.
-- [var year: Int](nsdatecomponents/year.md)
+- [var year: Int](./year.md)
   The number of years.
-- [var yearForWeekOfYear: Int](nsdatecomponents/yearforweekofyear.md)
+- [var yearForWeekOfYear: Int](./yearforweekofyear.md)
   The ISO 8601 week-numbering year.
-- [var month: Int](nsdatecomponents/month.md)
+- [var month: Int](./month.md)
   The number of months.
-- [var isLeapMonth: Bool](nsdatecomponents/isleapmonth.md)
+- [var isLeapMonth: Bool](./isleapmonth.md)
   A Boolean value that indicates whether the month is a leap month.
 
 

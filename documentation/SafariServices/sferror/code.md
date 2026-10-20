@@ -1,7 +1,8 @@
 # SFError.Code
 
 **Framework**: Safari Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Messages that describe a content blocker or Safari app extension error.
 
@@ -14,41 +15,54 @@ Messages that describe a content blocker or Safari app extension error.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+enum Code
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 enum SFErrorCode
+```
+
+```c
+enum SFErrorCode : NSInteger;
 ```
 
 ## Topics
 
 ### Error Codes
-- [SFError.Code.loadingInterrupted](sferror/code/loadinginterrupted.md)
+- [SFError.Code.loadingInterrupted](./code/loadinginterrupted.md)
   There was an error loading the content blocker extension.
-- [SFError.Code.noAttachmentFound](sferror/code/noattachmentfound.md)
-  The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem) that did not include an attachment.
-- [SFError.Code.noExtensionFound](sferror/code/noextensionfound.md)
+- [SFError.Code.noAttachmentFound](./code/noattachmentfound.md)
+  The Content Blocker extension returned an [`NSExtensionItem`](../../Foundation/nsextensionitem.md) that did not include an attachment.
+- [SFError.Code.noExtensionFound](./code/noextensionfound.md)
   A Content Blocker or Safari app extension with the specified bundle identifier was not found, or the bundle identifier specified an extension that was not owned by you.
 ### Enumeration Cases
-- [SFError.Code.internalError](sferror/code/internalerror.md)
-- [SFError.Code.maximumAttemptsExceeded](sferror/code/maximumattemptsexceeded.md)
-- [SFError.Code.missingEntitlement](sferror/code/missingentitlement.md)
+- [SFError.Code.internalError](./code/internalerror.md)
+- [SFError.Code.maximumAttemptsExceeded](./code/maximumattemptsexceeded.md)
+- [SFError.Code.missingEntitlement](./code/missingentitlement.md)
 ### Initializers
-- [init?(rawValue: Int)](sferror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SFError](sferror.md)
+### Miscellaneous errors
+- [struct SFError](../sferror.md)
   A content blocker or Safari app extension error.
-- [let SFErrorDomain: String](sferrordomain.md)
+- [let SFErrorDomain: String](../sferrordomain.md)
   The domain for content blocker or Safari app extension errors.
 
 

@@ -1,7 +1,8 @@
 # invalid
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An invalid value type.
 

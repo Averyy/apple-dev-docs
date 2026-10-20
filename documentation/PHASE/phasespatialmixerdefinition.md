@@ -1,7 +1,8 @@
 # PHASESpatialMixerDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An audio-layering object that produces environmental effects and plays sound with a 3D position and orientation.
 
@@ -19,50 +20,54 @@ An audio-layering object that produces environmental effects and plays sound wit
 class PHASESpatialMixerDefinition
 ```
 
+```objc
+@interface PHASESpatialMixerDefinition : PHASEMixerDefinition
+```
+
 ## Mentions
 
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
 #### Overview
 
 This class enables the app to define a relationship between a source and listener in six degrees of freedom: orientation (roll, pitch, yaw) and a 3D position (x, y, z).
 
-The framework plays back an audio source with *distance modeling* (see [`distanceModelParameters`](phasespatialmixerdefinition/distancemodelparameters.md)), direct path transmission effects and any combination of environmental effects, such as reverb (see [`PHASESpatialPipeline`](phasespatialpipeline.md)), and directivity (see [`listenerDirectivityModelParameters`](phasespatialmixerdefinition/listenerdirectivitymodelparameters.md)). 
+The framework plays back an audio source with *distance modeling* (see [`distanceModelParameters`](./phasespatialmixerdefinition/distancemodelparameters.md)), direct path transmission effects and any combination of environmental effects, such as reverb (see [`PHASESpatialPipeline`](./phasespatialpipeline.md)), and directivity (see [`listenerDirectivityModelParameters`](./phasespatialmixerdefinition/listenerdirectivitymodelparameters.md)). 
 
 The result enables an app to implement directive point or omnidirectional sound sources — with or without direction, respectively — and volumetric sources with a defined shape.
 
-For a walkthrough of spatial mixing, see [`Playing sound from a location in a 3D scene`](playing-sound-from-a-location-in-a-3d-scene.md).
+For a walkthrough of spatial mixing, see [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md).
 
 ## Topics
 
 ### Creating a Spatial Mixer
-- [init(spatialPipeline: PHASESpatialPipeline)](phasespatialmixerdefinition/init(spatialpipeline:).md)
+- [init(spatialPipeline: PHASESpatialPipeline)](./phasespatialmixerdefinition/init%28spatialpipeline%29.md)
   Creates a mixer with the designated spatial pipeline.
-- [convenience init(spatialPipeline: PHASESpatialPipeline, identifier: String)](phasespatialmixerdefinition/init(spatialpipeline:identifier:).md)
+- [convenience init(spatialPipeline: PHASESpatialPipeline, identifier: String)](./phasespatialmixerdefinition/init%28spatialpipeline,identifier%29.md)
   Creates a named mixer with the designated spatial pipeline.
 ### Setting a Pipeline
-- [var spatialPipeline: PHASESpatialPipeline](phasespatialmixerdefinition/spatialpipeline.md)
+- [var spatialPipeline: PHASESpatialPipeline](./phasespatialmixerdefinition/spatialpipeline.md)
   An object that adds sound layers for environmental effects.
 ### Changing Sound Over Distance
-- [var distanceModelParameters: PHASEDistanceModelParameters?](phasespatialmixerdefinition/distancemodelparameters.md)
+- [var distanceModelParameters: PHASEDistanceModelParameters?](./phasespatialmixerdefinition/distancemodelparameters.md)
   An effect that changes sound as it carries over a distance.
 ### Configuring Directivity
-- [var listenerDirectivityModelParameters: PHASEDirectivityModelParameters?](phasespatialmixerdefinition/listenerdirectivitymodelparameters.md)
+- [var listenerDirectivityModelParameters: PHASEDirectivityModelParameters?](./phasespatialmixerdefinition/listenerdirectivitymodelparameters.md)
   A data set that determines how well the listener hears depending on its direction relative to a sound source.
-- [var sourceDirectivityModelParameters: PHASEDirectivityModelParameters?](phasespatialmixerdefinition/sourcedirectivitymodelparameters.md)
+- [var sourceDirectivityModelParameters: PHASEDirectivityModelParameters?](./phasespatialmixerdefinition/sourcedirectivitymodelparameters.md)
   A data set that directs sound such that it’s louder when directed at the listener.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEMixerDefinition](phasemixerdefinition.md)
+- [PHASEMixerDefinition](./phasemixerdefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

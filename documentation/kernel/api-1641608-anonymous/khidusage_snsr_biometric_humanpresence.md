@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Biometric_HumanPresence
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Biometric_HumanPresence = 0x11
 ```
 

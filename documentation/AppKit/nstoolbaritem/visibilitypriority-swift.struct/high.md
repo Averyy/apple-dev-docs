@@ -1,7 +1,8 @@
 # high
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A high priority that makes it less likely for the toolbar item to move to the overflow item.
 
@@ -9,7 +10,7 @@ A high priority that makes it less likely for the toolbar item to move to the ov
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,17 +18,22 @@ A high priority that makes it less likely for the toolbar item to move to the ov
 static var high: NSToolbarItem.VisibilityPriority { get }
 ```
 
+```c
+static const NSToolbarItemVisibilityPriority NSToolbarItemVisibilityPriorityHigh;
+```
+
 #### Discussion
 
-The toolbar moves items with [`standard`](nstoolbaritem/visibilitypriority-swift.struct/standard.md) priority to the overflow menu before it moves items with this priority.
+The toolbar moves items with [`standard`](./standard.md) priority to the overflow menu before it moves items with this priority.
 
 ## See Also
 
-- [static var standard: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/standard.md)
+### Visibility priorities
+- [static var standard: NSToolbarItem.VisibilityPriority](./standard.md)
   The default visibility priority.
-- [static var low: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/low.md)
+- [static var low: NSToolbarItem.VisibilityPriority](./low.md)
   The lowest-priority for a toolbar item.
-- [static var user: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct/user.md)
+- [static var user: NSToolbarItem.VisibilityPriority](./user.md)
   The highest priority for items in the toolbar.
 
 

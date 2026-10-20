@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shaped array from a decoder.
 
@@ -20,6 +21,8 @@ Creates a shaped array from a decoder.
 init(from decoder: any Decoder) throws
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `Decodable`.
+
 #### Discussion
 
 This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
@@ -30,7 +33,8 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](mlshapedarray/encode(to:).md)
+### Encoding and decoding
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encode a shaped array.
 
 

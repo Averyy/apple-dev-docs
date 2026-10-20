@@ -1,7 +1,8 @@
 # areaCosts
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The costs for pathing through an area. The path can move through polygons with these areas, but will try to find the lowest-cost path, avoiding high-cost areas if possible.
 
@@ -21,9 +22,10 @@ var areaCosts: [NavigationMeshResource.Area : Float]
 
 ## See Also
 
-- [var includeFlags: NavigationMeshResource.FlagGroup](navigationcomponent/filter-swift.struct/includeflags.md)
+### Configuring the filter
+- [var includeFlags: NavigationMeshResource.FlagGroup](./includeflags.md)
   The set of flags to include when pathfinding. The path will only move through polygons that have any of these flags set.
-- [var ignoreFlags: NavigationMeshResource.FlagGroup](navigationcomponent/filter-swift.struct/ignoreflags.md)
+- [var ignoreFlags: NavigationMeshResource.FlagGroup](./ignoreflags.md)
   The set of flags to ignore when pathfinding. The path will not be able to move through any polygons with any of these flags set.
 
 

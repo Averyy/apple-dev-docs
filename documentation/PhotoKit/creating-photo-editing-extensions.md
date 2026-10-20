@@ -1,6 +1,7 @@
 # Creating Photo Editing Extensions
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Article
 
 Provide custom functionality in the Photos app by bundling an app extension.
 
@@ -15,7 +16,7 @@ Provide custom functionality in the Photos app by bundling an app extension.
 
 You can incorporate your app’s features directly into the Photos app in iOS or macOS by building an app extension. With a photo-editing app extension, people can edit media, apply your app’s filter effects, and build slideshows, books, or custom content, such as collages, right in their Photos app.
 
-#### Implement and Bundle the App Extension
+#### Implement and bundle the app extension
 
 Adopt the [`PHContentEditingController`](https://developer.apple.com/documentation/photosui/phcontenteditingcontroller) protocol to create an app extension that adds to the photo editing options and capabilities in the Photos app. Creating such an extension also requires using the following classes from the Photos framework:
 
@@ -29,13 +30,14 @@ Include the app extension in your app bundle, and the system installs it in Phot
 
 ## See Also
 
-- [Delivering an Enhanced Privacy Experience in Your Photos App](delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
+### Articles
+- [Delivering an Enhanced Privacy Experience in Your Photos App](./delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
   Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
-- [Fetching Objects and Requesting Changes](fetching-objects-and-requesting-changes.md)
+- [Fetching Objects and Requesting Changes](./fetching-objects-and-requesting-changes.md)
   Get assets, asset collections, and collection lists matching a specified query.
-- [Loading and Caching Assets and Thumbnails](loading-and-caching-assets-and-thumbnails.md)
+- [Loading and Caching Assets and Thumbnails](./loading-and-caching-assets-and-thumbnails.md)
   Request image, video, or Live Photos content, and cache for quick reuse.
-- [Displaying Live Photos](displaying-live-photos.md)
+- [Displaying Live Photos](./displaying-live-photos.md)
   Provide the same interactive playback of Live Photos as in the iOS Photos app.
 
 

@@ -1,7 +1,8 @@
 # add(multiplication:_:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the double-precision element-wise sum of the product of two vectors, and a scalar value.
 
@@ -11,7 +12,7 @@ Calculates the double-precision element-wise sum of the product of two vectors, 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -29,7 +30,7 @@ This function calculates the element-wise product of vectors `A` and `B`, adds s
     D[n] = A[n] * B[n] + C;
 ```
 
-![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that multiplies A and B, with three boxes, as well as the input scalar C with one box. The third row represents the addition operation as three boxes. The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vector.   ](/images/com.apple.accelerate/media-4387427@2x.png)
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that multiplies A and B, with three boxes, as well as the input scalar C with one box. The third row represents the addition operation as three boxes. The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vector.   ](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4387427@2x.png)
 
 The following code shows an example of using this function:
 
@@ -62,35 +63,36 @@ The following code shows an example of using this function:
 
 ## See Also
 
-- [static func add<U>(Double, U) -> [Double]](vdsp/add(_:_:)-9mv1a.md)
+### Addition
+- [static func add<U>(Double, U) -> [Double]](./add%28_,_%29-9mv1a.md)
   Returns the double-precision element-wise sum of a vector and a scalar value.
-- [static func add<T, U>(T, U) -> [Double]](vdsp/add(_:_:)-2ftxc.md)
+- [static func add<T, U>(T, U) -> [Double]](./add%28_,_%29-2ftxc.md)
   Returns the double-precision element-wise sum of two vectors.
-- [static func add<U>(Float, U) -> [Float]](vdsp/add(_:_:)-53nh9.md)
+- [static func add<U>(Float, U) -> [Float]](./add%28_,_%29-53nh9.md)
   Returns the single-precision element-wise sum of a vector and a scalar value.
-- [static func add<T, U>(T, U) -> [Float]](vdsp/add(_:_:)-7swvf.md)
+- [static func add<T, U>(T, U) -> [Float]](./add%28_,_%29-7swvf.md)
   Returns the single-precision element-wise sum of two vectors.
-- [static func add<U, V>(Double, U, result: inout V)](vdsp/add(_:_:result:)-2531u.md)
+- [static func add<U, V>(Double, U, result: inout V)](./add%28_,_,result%29-2531u.md)
   Calculates the single-precision element-wise sum of a vector and a scalar value.
-- [static func add<U, V>(Float, U, result: inout V)](vdsp/add(_:_:result:)-2w0o9.md)
+- [static func add<U, V>(Float, U, result: inout V)](./add%28_,_,result%29-2w0o9.md)
   Calculates the single-precision element-wise sum of a vector and a scalar value.
-- [static func add<T, U, V>(T, U, result: inout V)](vdsp/add(_:_:result:)-338hl.md)
+- [static func add<T, U, V>(T, U, result: inout V)](./add%28_,_,result%29-338hl.md)
   Calculates the double-precision element-wise sum of two vectors.
-- [static func add<T, U, V>(T, U, result: inout V)](vdsp/add(_:_:result:)-3vzwi.md)
+- [static func add<T, U, V>(T, U, result: inout V)](./add%28_,_,result%29-3vzwi.md)
   Calculates the single-precision element-wise sum of two vectors.
-- [static func add(DSPSplitComplex, to: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/add(_:to:count:result:)-g1dk.md)
+- [static func add(DSPSplitComplex, to: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](./add%28_,to,count,result%29-g1dk.md)
   Calculates the single-precision element-wise sum of the supplied complex vectors.
-- [static func add(DSPDoubleSplitComplex, to: DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](vdsp/add(_:to:count:result:)-75np9.md)
+- [static func add(DSPDoubleSplitComplex, to: DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](./add%28_,to,count,result%29-75np9.md)
   Calculates the double-precision element-wise sum of the supplied complex vectors.
-- [static func add<U>(multiplication: (a: U, b: Double), Double) -> [Double]](vdsp/add(multiplication:_:)-4e3tj.md)
+- [static func add<U>(multiplication: (a: U, b: Double), Double) -> [Double]](./add%28multiplication,_%29-4e3tj.md)
   Returns the double-precision element-wise addition of the product of a vector and a scalar value, and a vector.
-- [static func add<T, U>(multiplication: (a: T, b: Double), U) -> [Double]](vdsp/add(multiplication:_:)-1bsuq.md)
+- [static func add<T, U>(multiplication: (a: T, b: Double), U) -> [Double]](./add%28multiplication,_%29-1bsuq.md)
   Returns the double-precision element-wise addition of the product of a vector and a scalar value, and a vector.
-- [static func add<T, U>(multiplication: (a: T, b: U), Double) -> [Double]](vdsp/add(multiplication:_:)-9dxlr.md)
+- [static func add<T, U>(multiplication: (a: T, b: U), Double) -> [Double]](./add%28multiplication,_%29-9dxlr.md)
   Returns the double-precision element-wise sum of the product of two vectors, and a scalar value.
-- [static func add<S, T, U>(multiplication: (a: S, b: T), U) -> [Double]](vdsp/add(multiplication:_:)-4667v.md)
+- [static func add<S, T, U>(multiplication: (a: S, b: T), U) -> [Double]](./add%28multiplication,_%29-4667v.md)
   Returns the double-precision element-wise sum of a vector and the product of two vectors.
-- [static func add<U>(multiplication: (a: U, b: Float), Float) -> [Float]](vdsp/add(multiplication:_:)-3tw93.md)
+- [static func add<U>(multiplication: (a: U, b: Float), Float) -> [Float]](./add%28multiplication,_%29-3tw93.md)
   Returns the single-precision element-wise addition of the product of a vector and a scalar value, and a vector.
 
 

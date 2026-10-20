@@ -1,7 +1,8 @@
 # version
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The engagement schema version of the connected customer device.
 

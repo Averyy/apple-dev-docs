@@ -1,7 +1,8 @@
 # MeshBuffers.Semantic
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,8 +21,8 @@ struct Semantic<Element>
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [MeshBufferSemantic](meshbuffersemantic.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [MeshBufferSemantic](../meshbuffersemantic.md)
 
 
 ---

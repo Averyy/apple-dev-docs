@@ -1,7 +1,8 @@
 # CuratorsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a request for curators.
 
@@ -10,21 +11,22 @@ The response to a request for curators.
 
 ## Declaration
 
-```swift
+```
 object CuratorsResponse
 ```
 
 ## Properties
 
-- `data` ([Curators]) *(required)*: The [`Curators`](curators.md) included in the response for the request.
+- `data` ([Curators]) *(required)*: The [`Curators`](./curators.md) included in the response for the request.
 
 ## See Also
 
-- [object AppleCurators](applecurators.md)
+### Handling the Response
+- [object AppleCurators](./applecurators.md)
   A resource object that represents an Apple curator.
-- [object AppleCuratorsResponse](applecuratorsresponse.md)
+- [object AppleCuratorsResponse](./applecuratorsresponse.md)
   The response to a request for Apple curators.
-- [object Curators](curators.md)
+- [object Curators](./curators.md)
   A resource object that represents a curator.
 
 

@@ -1,7 +1,8 @@
 # TKSmartCardSlot.State
 
 **Framework**: CryptoTokenKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 All smart card slot states.
 
@@ -20,30 +21,35 @@ All smart card slot states.
 enum State
 ```
 
+```c
+enum TKSmartCardSlotState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [TKSmartCardSlot.State.missing](tksmartcardslot/state-swift.enum/missing.md)
-- [TKSmartCardSlot.State.empty](tksmartcardslot/state-swift.enum/empty.md)
-- [TKSmartCardSlot.State.probing](tksmartcardslot/state-swift.enum/probing.md)
-- [TKSmartCardSlot.State.muteCard](tksmartcardslot/state-swift.enum/mutecard.md)
-- [TKSmartCardSlot.State.validCard](tksmartcardslot/state-swift.enum/validcard.md)
+- [TKSmartCardSlot.State.missing](./state-swift.enum/missing.md)
+- [TKSmartCardSlot.State.empty](./state-swift.enum/empty.md)
+- [TKSmartCardSlot.State.probing](./state-swift.enum/probing.md)
+- [TKSmartCardSlot.State.muteCard](./state-swift.enum/mutecard.md)
+- [TKSmartCardSlot.State.validCard](./state-swift.enum/validcard.md)
 ### Initializers
-- [init?(rawValue: Int)](tksmartcardslot/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: TKSmartCardSlot.State](tksmartcardslot/state-swift.property.md)
+### Getting the Slot State
+- [var state: TKSmartCardSlot.State](./state-swift.property.md)
   The current state of the Smart Card reader slot.
 
 

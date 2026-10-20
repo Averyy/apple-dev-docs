@@ -1,7 +1,8 @@
 # errorCode
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that represents the error code.
 
@@ -17,7 +18,8 @@ var errorCode: Int { get }
 
 ## See Also
 
-- [static var errorDomain: String](activityauthorizationerror/errordomain.md)
+### Protocol confirmation
+- [static var errorDomain: String](./errordomain.md)
   The domain for errors that can happen when starting a Live Activity.
 
 

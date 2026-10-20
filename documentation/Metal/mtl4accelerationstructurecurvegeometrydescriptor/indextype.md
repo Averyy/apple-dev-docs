@@ -1,7 +1,8 @@
 # indexType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the size of the indices the `indexBuffer` contains, which is typically either 16 or 32-bits for each index.
 
@@ -17,6 +18,10 @@ Specifies the size of the indices the `indexBuffer` contains, which is typically
 
 ```swift
 var indexType: MTLIndexType { get set }
+```
+
+```objc
+@property (nonatomic) MTLIndexType indexType;
 ```
 
 

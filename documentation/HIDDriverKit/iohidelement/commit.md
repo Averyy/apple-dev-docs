@@ -1,31 +1,33 @@
 # commit
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Commits the element value to and from the device.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn commit(IOHIDElementCommitDirection direction);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 ## Parameters
 
-- `direction`: The direction to commit the element. Specify [`kIOHIDElementCommitDirectionIn`](iohidelementcommitdirection/kiohidelementcommitdirectionin.md) to read the element data from the device. Specify [`kIOHIDElementCommitDirectionOut`](iohidelementcommitdirection/kiohidelementcommitdirectionout.md) to write the element data to the device.
+- `direction`: The direction to commit the element. Specify [`kIOHIDElementCommitDirectionIn`](../iohidelementcommitdirection/kiohidelementcommitdirectionin.md) to read the element data from the device. Specify [`kIOHIDElementCommitDirectionOut`](../iohidelementcommitdirection/kiohidelementcommitdirectionout.md) to write the element data to the device.
 
 ## See Also
 
-- [IOHIDElementCommitDirection](iohidelementcommitdirection.md)
+### Committing Changes to Elements
+- [IOHIDElementCommitDirection](../iohidelementcommitdirection.md)
   The commit direction for an HID element.
 
 

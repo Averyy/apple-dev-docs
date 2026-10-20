@@ -1,7 +1,8 @@
 # sortBy
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort descriptor to use to sort the returned history data.
 
@@ -23,9 +24,10 @@ var sortBy: [SortDescriptor<TransactionType>]
 
 ## See Also
 
-- [var fetchLimit: UInt64](historydescriptor/fetchlimit.md)
+### Getting the descriptor configuration
+- [var fetchLimit: UInt64](./fetchlimit.md)
   The maximum number of transactions to retrieve from the model store’s history.
-- [var predicate: Predicate<TransactionType>?](historydescriptor/predicate.md)
+- [var predicate: Predicate<TransactionType>?](./predicate.md)
   The predicate used to initialize the history descriptor.
 
 

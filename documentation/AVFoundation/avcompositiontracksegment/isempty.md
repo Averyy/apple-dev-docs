@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the segment is empty.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the segment is empty.
 var isEmpty: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEmpty) BOOL empty;
+```
+
 #### Discussion
 
-An empty segment has a valid target time range, but its [`sourceURL`](avcompositiontracksegment/sourceurl.md) value is `nil` and the source start time is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid). It doesn’t set values for its other properties.
+An empty segment has a valid target time range, but its [`sourceURL`](./sourceurl.md) value is `nil` and the source start time is [`invalid`](../../CoreMedia/cmtime/invalid.md). It doesn’t set values for its other properties.
 
 ## See Also
 
-- [var sourceURL: URL?](avcompositiontracksegment/sourceurl.md)
+### Accessing segment properties
+- [var sourceURL: URL?](./sourceurl.md)
   A URL of the container file whose media this track segment presents.
-- [var sourceTrackID: CMPersistentTrackID](avcompositiontracksegment/sourcetrackid.md)
+- [var sourceTrackID: CMPersistentTrackID](./sourcetrackid.md)
   An identifier of a track in the container file whose media this track segment presents.
 
 

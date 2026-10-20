@@ -1,7 +1,8 @@
 # Device Configured
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Inform the device that it can allow the user to continue in Setup Assistant.
 
@@ -15,9 +16,9 @@ Inform the device that it can allow the user to continue in Setup Assistant.
 
 ## Mentions
 
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
-- [Migrating managed devices](migrating-managed-devices.md)
-- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+- [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Migrating managed devices](./migrating-managed-devices.md)
+- [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
 #### Discussion
 
@@ -25,7 +26,7 @@ This command only works on Automated Device Enrollment (ADE) devices that have t
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +36,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -75,9 +76,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object DeviceConfiguredCommand](deviceconfiguredcommand.md)
+- [object DeviceConfiguredCommand](./deviceconfiguredcommand.md)
   The command to inform the device that it can allow the user to continue in Setup Assistant.
-- [object DeviceConfiguredResponse](deviceconfiguredresponse.md)
+- [object DeviceConfiguredResponse](./deviceconfiguredresponse.md)
   A response from the device after it processes the command to inform the device that it can allow the user to continue in Setup Assistant.
 
 ## Endpoint
@@ -86,15 +87,23 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `DeviceConfiguredCommand`
+
 The request object the server returns for the Device Configured Command.
+
+## Responses
+
+- `200` OK (`DeviceConfiguredResponse`, `application/xml`): The response object the system returns for the Device Configured Command.
 
 ## See Also
 
-- [Device Information](device-information-command.md)
+### Device details
+- [Device Information](./device-information-command.md)
   Get detailed information about a device.
-- [User Configured](user-configured-command.md)
+- [User Configured](./user-configured-command.md)
   Inform the device that it can continue past Setup Assistant and finish login.
-- [Restrictions](restrictions-command.md)
+- [Restrictions](./restrictions-command.md)
   Get a list of restrictions on the device.
 
 

@@ -1,7 +1,8 @@
 # replaceDocument
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Replaces a document on the stack with a new document.
 
@@ -10,7 +11,7 @@ Replaces a document on the stack with a new document.
 
 ## Declaration
 
-```swift
+```
 void replaceDocument(
     in Document document, 
     in Document oldDocument
@@ -28,9 +29,10 @@ This function searches the stack for the first instance of the document to be re
 
 ## See Also
 
-- [insertBeforeDocument](navigationdocument/1627340-insertbeforedocument.md)
+### Adding Documents to the Stack
+- [insertBeforeDocument](./api-1627340-insertbeforedocument.md)
   Inserts a new document directly before a document currently on the stack.
-- [pushDocument](navigationdocument/1627361-pushdocument.md)
+- [pushDocument](./api-1627361-pushdocument.md)
   Pushes the specified document onto the stack.
 
 

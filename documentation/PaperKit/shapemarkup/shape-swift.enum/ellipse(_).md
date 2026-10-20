@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.ellipse(_:)
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ellipse.
 

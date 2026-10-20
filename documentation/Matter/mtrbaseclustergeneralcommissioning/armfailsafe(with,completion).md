@@ -1,7 +1,8 @@
 # armFailSafe(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func armFailSafe(with params: MTRGeneralCommissioningClusterArmFailSafeParams, completion: @escaping @Sendable (MTRGeneralCommissioningClusterArmFailSafeResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func armFailSafe(with params: MTRGeneralCommissioningClusterArmFailSafeParams) async throws -> MTRGeneralCommissioningClusterArmFailSafeResponseParams
+```
+
+```objc
+- (void) armFailSafeWithParams:(MTRGeneralCommissioningClusterArmFailSafeParams *) params completion:(void (^)(MTRGeneralCommissioningClusterArmFailSafeResponseParams *data, NSError *error)) completion;
 ```
 
 

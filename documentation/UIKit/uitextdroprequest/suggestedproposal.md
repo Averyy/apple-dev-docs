@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The text drop proposal offered by the text view.
@@ -18,11 +19,16 @@ The text drop proposal offered by the text view.
 var suggestedProposal: UITextDropProposal { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITextDropProposal * suggestedProposal;
+```
+
 ## See Also
 
-- [var dropPosition: UITextPosition](uitextdroprequest/dropposition.md)
+### Getting information about the text drop request
+- [var dropPosition: UITextPosition](./dropposition.md)
   The text position corresponding to the location of a drop session.
-- [var isSameView: Bool](uitextdroprequest/issameview.md)
+- [var isSameView: Bool](./issameview.md)
   A Boolean value indicating whether the drag and the drop are within the same text view.
 
 

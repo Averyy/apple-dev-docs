@@ -1,7 +1,8 @@
 # audioResourceName
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the audio stored in audio library component of the target entity to start playing.
 

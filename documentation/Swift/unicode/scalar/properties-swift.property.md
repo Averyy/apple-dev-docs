@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of this scalar defined by the Unicode standard.
 
@@ -34,13 +35,14 @@ let hasMathSymbols = question.unicodeScalars.contains(where: {
 
 ## See Also
 
-- [var value: UInt32](unicode/scalar/value.md)
+### Inspecting a Scalar
+- [var value: UInt32](./value.md)
   A numeric representation of the Unicode scalar.
-- [Unicode.Scalar.Properties](unicode/scalar/properties-swift.struct.md)
+- [Unicode.Scalar.Properties](./properties-swift.struct.md)
   A value that provides access to properties of a Unicode scalar that are defined by the Unicode standard.
-- [func hash(into: inout Hasher)](unicode/scalar/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var isASCII: Bool](unicode/scalar/isascii.md)
+- [var isASCII: Bool](./isascii.md)
   A Boolean value indicating whether the Unicode scalar is an ASCII character.
 
 

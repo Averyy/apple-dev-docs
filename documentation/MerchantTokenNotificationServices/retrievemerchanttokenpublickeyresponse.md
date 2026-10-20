@@ -1,7 +1,8 @@
 # RetrieveMerchantTokenPublicKeyResponse
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Get the merchant token public key response.
 
@@ -10,15 +11,19 @@ Get the merchant token public key response.
 
 ## Declaration
 
-```swift
+```
 object RetrieveMerchantTokenPublicKeyResponse
 ```
 
 ## Properties
 
 - `merchantTokenPublicKey` (string) *(required)*: The X9.63-encoded public key, Base64-encoded.
+
+  **Maximum Length**: `256`
 - `statusCode` (integer) *(required)*: The HTTP status code.
 - `supportedCiphersuite` (string) *(required)*: The Apple-supported ciphersuite for HPKE in authorization mode. Supported: HPKE_AUTH_P384_SHA384_AES_GCM_256.
+
+  **Maximum Length**: `64`
 
 
 ---

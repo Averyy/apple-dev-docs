@@ -1,7 +1,8 @@
 # ShaderGraph.Edge
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a connection between two nodes in a shader graph.
 
@@ -20,23 +21,23 @@ struct Edge
 ## Topics
 
 ### Initializers
-- [init(outputNode: String, outputPort: String?, inputNode: String, inputPort: String)](shadergraph/edge/init(outputnode:outputport:inputnode:inputport:).md)
+- [init(outputNode: String, outputPort: String?, inputNode: String, inputPort: String)](./edge/init%28outputnode,outputport,inputnode,inputport%29.md)
 ### Instance Properties
-- [var from: String](shadergraph/edge/from.md)
-- [var inputNode: String](shadergraph/edge/inputnode.md)
+- [var from: String](./edge/from.md)
+- [var inputNode: String](./edge/inputnode.md)
   The name of the node receiving the input value.
-- [var inputPort: String](shadergraph/edge/inputport.md)
+- [var inputPort: String](./edge/inputport.md)
   The name of the input port on the destination node.
-- [var outputNode: String](shadergraph/edge/outputnode.md)
+- [var outputNode: String](./edge/outputnode.md)
   The name of the node providing the output value.
-- [var outputPort: String?](shadergraph/edge/outputport.md)
+- [var outputPort: String?](./edge/outputport.md)
   The name of the output port on the source node.
-- [var to: String](shadergraph/edge/to.md)
+- [var to: String](./edge/to.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

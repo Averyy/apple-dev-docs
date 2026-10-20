@@ -1,7 +1,8 @@
 # GL_SAMPLE_BUFFERS
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_SAMPLE_BUFFERS: Int32 { get }
+```
+
+```c
+#define GL_SAMPLE_BUFFERS
 ```
 
 

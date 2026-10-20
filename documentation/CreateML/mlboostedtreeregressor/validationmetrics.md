@@ -1,7 +1,8 @@
 # validationMetrics
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Measurements of the regressor’s performance on the validation data set.
 
@@ -21,9 +22,10 @@ var validationMetrics: MLRegressorMetrics { get }
 
 ## See Also
 
-- [func evaluation(on:)](mlboostedtreeregressor/evaluation(on:).md)
+### Evaluating a boosted tree regressor
+- [func evaluation(on:)](./evaluation%28on%29.md)
   Evaluates the classifier on the provided labeled data.
-- [var trainingMetrics: MLRegressorMetrics](mlboostedtreeregressor/trainingmetrics.md)
+- [var trainingMetrics: MLRegressorMetrics](./trainingmetrics.md)
   Measurements of the regressor’s performance on the training data set.
 
 

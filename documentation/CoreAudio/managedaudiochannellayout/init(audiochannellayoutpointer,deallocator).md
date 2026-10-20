@@ -1,7 +1,8 @@
 # init(audioChannelLayoutPointer:deallocator:)
 
 **Framework**: Core Audio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `ManagedAudioChannelLayout` from an existing pointer to an `AudioChannelLayout`.
 
@@ -11,7 +12,7 @@ Creates a new `ManagedAudioChannelLayout` from an existing pointer to an `AudioC
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

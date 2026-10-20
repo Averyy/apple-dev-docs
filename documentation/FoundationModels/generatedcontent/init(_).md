@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates generated content from another value.
 
@@ -19,25 +20,32 @@ Creates generated content from another value.
 init(_ content: GeneratedContent) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(_ value: some ConvertibleToGeneratedContent)
+```
+
 #### Discussion
 
 This is used to satisfy `Generable.init(_:)`.
 
 ## See Also
 
-- [init(some ConvertibleToGeneratedContent, id: GenerationID)](generatedcontent/init(_:id:).md)
+### Creating generated content
+- [init(some ConvertibleToGeneratedContent, id: GenerationID)](./init%28_,id%29.md)
   Creates content that contains a single value with a custom generation identifier.
-- [init<S>(elements: S, id: GenerationID?)](generatedcontent/init(elements:id:).md)
+- [init<S>(elements: S, id: GenerationID?)](./init%28elements,id%29.md)
   Creates content representing an array of elements you specify.
-- [init(properties: KeyValuePairs<String, any ConvertibleToGeneratedContent>, id: GenerationID?)](generatedcontent/init(properties:id:).md)
+- [init(properties: KeyValuePairs<String, any ConvertibleToGeneratedContent>, id: GenerationID?)](./init%28properties,id%29.md)
   Creates generated content representing a structure with the properties you specify.
-- [init<S>(properties: S, id: GenerationID?, uniquingKeysWith: (GeneratedContent, GeneratedContent) throws -> some ConvertibleToGeneratedContent) rethrows](generatedcontent/init(properties:id:uniquingkeyswith:).md)
+- [init<S>(properties: S, id: GenerationID?, uniquingKeysWith: (GeneratedContent, GeneratedContent) throws -> some ConvertibleToGeneratedContent) rethrows](./init%28properties,id,uniquingkeyswith%29.md)
   Creates generated content from key-value pairs, resolving duplicate keys with a combining closure.
-- [init(json: String) throws](generatedcontent/init(json:).md)
+- [init(json: String) throws](./init%28json%29.md)
   Creates equivalent content from a JSON string.
-- [init(kind: GeneratedContent.Kind, id: GenerationID?)](generatedcontent/init(kind:id:).md)
+- [init(kind: GeneratedContent.Kind, id: GenerationID?)](./init%28kind,id%29.md)
   Creates content with the specified kind and generation identifier.
-- [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
+- [GeneratedContent.ParsingError](./parsingerror.md)
   A failure that occurs when a string cannot be parsed into generated content.
 
 

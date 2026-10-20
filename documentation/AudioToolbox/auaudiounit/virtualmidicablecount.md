@@ -1,7 +1,8 @@
 # virtualMIDICableCount
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of virtual MIDI cables implemented by a music device or effect.
 
@@ -19,22 +20,35 @@ The number of virtual MIDI cables implemented by a music device or effect.
 var virtualMIDICableCount: Int { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) NSInteger virtualMIDICableCount;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSInteger virtualMIDICableCount;
+```
+
 #### Discussion
 
 A music device or effect can support up to 256 virtual MIDI cables of input.
 
 ## See Also
 
-- [var isMusicDeviceOrEffect: Bool](auaudiounit/ismusicdeviceoreffect.md)
+### Managing MIDI Events
+- [var isMusicDeviceOrEffect: Bool](./ismusicdeviceoreffect.md)
   Specifies whether an audio unit responds to MIDI events.
-- [var scheduleMIDIEventBlock: AUScheduleMIDIEventBlock?](auaudiounit/schedulemidieventblock.md)
+- [var scheduleMIDIEventBlock: AUScheduleMIDIEventBlock?](./schedulemidieventblock.md)
   A block used to schedule MIDI events.
-- [var midiOutputEventBlock: AUMIDIOutputEventBlock?](auaudiounit/midioutputeventblock.md)
-- [var midiOutputNames: [String]](auaudiounit/midioutputnames.md)
+- [var midiOutputEventBlock: AUMIDIOutputEventBlock?](./midioutputeventblock.md)
+- [var midiOutputNames: [String]](./midioutputnames.md)
   The names of the MIDI outputs.
-- [typealias AUScheduleMIDIEventBlock](auschedulemidieventblock.md)
+- [typealias AUScheduleMIDIEventBlock](../auschedulemidieventblock.md)
   A block to schedule MIDI events.
-- [typealias AUMIDIOutputEventBlock](aumidioutputeventblock.md)
+- [typealias AUMIDIOutputEventBlock](../aumidioutputeventblock.md)
 
 
 ---

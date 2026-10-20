@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IORecursiveLock *gateLock;
 ```
 
@@ -15,13 +15,14 @@ Mutual exclusion lock that is used by close and open Gate functions. This is a r
 
 ## See Also
 
-- [workToDoLock](ioworkloop/worktodolock.md)
-- [workToDo](ioworkloop/worktodo.md)
-- [workThread](ioworkloop/workthread.md)
-- [reserved](ioworkloop/reserved.md)
-- [loopRestart](ioworkloop/looprestart.md)
-- [eventChain](ioworkloop/eventchain.md)
-- [controlG](ioworkloop/controlg.md)
+### Instance Variables
+- [workToDoLock](./worktodolock.md)
+- [workToDo](./worktodo.md)
+- [workThread](./workthread.md)
+- [reserved](./reserved.md)
+- [loopRestart](./looprestart.md)
+- [eventChain](./eventchain.md)
+- [controlG](./controlg.md)
 
 
 ---

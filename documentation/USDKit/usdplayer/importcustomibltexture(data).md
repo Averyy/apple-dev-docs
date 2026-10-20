@@ -1,7 +1,8 @@
 # importCustomIBLTexture(data:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Imports a custom IBL texture.
 

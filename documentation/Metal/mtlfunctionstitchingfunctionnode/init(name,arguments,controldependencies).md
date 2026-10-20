@@ -1,7 +1,8 @@
 # init(name:arguments:controlDependencies:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new function node.
 
@@ -17,6 +18,10 @@ Creates a new function node.
 
 ```swift
 init(name: String, arguments: [any MTLFunctionStitchingNode], controlDependencies: [MTLFunctionStitchingFunctionNode])
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name arguments:(NSArray<id<MTLFunctionStitchingNode>> *) arguments controlDependencies:(NSArray<MTLFunctionStitchingFunctionNode *> *) controlDependencies;
 ```
 
 ## Parameters

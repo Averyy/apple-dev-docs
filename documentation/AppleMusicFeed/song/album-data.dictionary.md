@@ -1,7 +1,8 @@
 # Song.Album
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about the related album that contains the song.
 
@@ -10,7 +11,7 @@ Information about the related album that contains the song.
 
 ## Declaration
 
-```swift
+```
 object Song.Album
 ```
 

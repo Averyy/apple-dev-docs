@@ -1,7 +1,8 @@
 # CAMetalDisplayLink.Update
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Stores information about a single update from a Metal display link instance.
 
@@ -19,42 +20,47 @@ Stores information about a single update from a Metal display link instance.
 class Update
 ```
 
+```objc
+@interface CAMetalDisplayLinkUpdate : NSObject
+```
+
 ## Topics
 
 ### Timing the Next Animation Frame
-- [var targetPresentationTimestamp: CFTimeInterval](cametaldisplaylink/update/targetpresentationtimestamp.md)
+- [var targetPresentationTimestamp: CFTimeInterval](./update/targetpresentationtimestamp.md)
   The time the system estimates until the display of the next frame.
 ### Drawing the Next Frame
-- [var targetTimestamp: CFTimeInterval](cametaldisplaylink/update/targettimestamp.md)
+- [var targetTimestamp: CFTimeInterval](./update/targettimestamp.md)
   A deadline that indicates when your app needs to finish rendering to the drawable.
-- [var drawable: any CAMetalDrawable](cametaldisplaylink/update/drawable.md)
+- [var drawable: any CAMetalDrawable](./update/drawable.md)
   The Metal drawable your app uses to render the next frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func CACurrentMediaTime() -> CFTimeInterval](cacurrentmediatime().md)
+### Animation Timing
+- [func CACurrentMediaTime() -> CFTimeInterval](../cacurrentmediatime%28%29.md)
   Returns the current absolute time, in seconds.
-- [class CAMediaTimingFunction](camediatimingfunction.md)
+- [class CAMediaTimingFunction](../camediatimingfunction.md)
   A function that defines the pacing of an animation as a timing curve.
-- [protocol CAMediaTiming](camediatiming.md)
+- [protocol CAMediaTiming](../camediatiming.md)
   Methods that model a hierarchical timing system, allowing objects to map time between their parent and local time.
-- [class CADisplayLink](cadisplaylink.md)
+- [class CADisplayLink](../cadisplaylink.md)
   A timer object that allows your app to synchronize its drawing to the refresh rate of the display.
-- [class CAMetalDisplayLink](cametaldisplaylink.md)
+- [class CAMetalDisplayLink](../cametaldisplaylink.md)
   A class your Metal app uses to register for callbacks to synchronize its animations for a display.
-- [protocol CAMetalDisplayLinkDelegate](cametaldisplaylinkdelegate.md)
+- [protocol CAMetalDisplayLinkDelegate](../cametaldisplaylinkdelegate.md)
   A protocol your app implements to respond to callbacks from Core Animation for a Metal display link.
 
 

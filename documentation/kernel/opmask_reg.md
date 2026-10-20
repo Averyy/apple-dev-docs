@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct opmask_reg {
     ...
 };
@@ -17,7 +17,7 @@ struct opmask_reg {
 ## Topics
 
 ### Instance Properties
-- [opmask_reg](opmask_reg/2870508-opmask_reg.md)
+- [opmask_reg](./opmask_reg/api-2870508-opmask_reg.md)
 
 
 ---

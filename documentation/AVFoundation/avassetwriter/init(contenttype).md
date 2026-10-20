@@ -1,7 +1,8 @@
 # init(contentType:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that outputs segment data in a specified container format.
 
@@ -19,9 +20,13 @@ Creates an object that outputs segment data in a specified container format.
 init(contentType outputContentType: UTType)
 ```
 
+```objc
+- (instancetype) initWithContentType:(UTType *) outputContentType;
+```
+
 #### Discussion
 
-Use this initializer to create an asset writer that outputs segment data to an adopter of the [`AVAssetWriterDelegate`](avassetwriterdelegate.md) protocol. For example, you can create an asset writer object to write an MPEG-4 file as shown below:
+Use this initializer to create an asset writer that outputs segment data to an adopter of the [`AVAssetWriterDelegate`](../avassetwriterdelegate.md) protocol. For example, you can create an asset writer object to write an MPEG-4 file as shown below:
 
 ```swift
 // Create a UTType for the MP4 file type.
@@ -35,9 +40,10 @@ let assetWriter = AVAssetWriter(contentType: contentType)
 
 ## See Also
 
-- [convenience init(url: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:)-xt34.md)
+### Creating an asset writer
+- [convenience init(url: URL, fileType: AVFileType) throws](./init%28url,filetype%29-xt34.md)
   Returns a new object that writes media data to a container file at the output URL.
-- [init(outputURL: URL, fileType: AVFileType) throws](avassetwriter/init(outputurl:filetype:).md)
+- [init(outputURL: URL, fileType: AVFileType) throws](./init%28outputurl,filetype%29.md)
   Creates an object that writes media data to a container file at the output URL.
 
 

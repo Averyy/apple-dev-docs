@@ -1,7 +1,8 @@
 # genre
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The genre for the request.
 

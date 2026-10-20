@@ -1,7 +1,8 @@
 # supportedFramings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of framings supported by the monitor in its current configuration.
 
@@ -16,19 +17,24 @@ An array of framings supported by the monitor in its current configuration.
 var supportedFramings: [AVCaptureFraming] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureFraming *> * supportedFramings;
+```
+
 ## Mentions
 
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](../adopting-smart-framing-in-your-camera-app.md)
 
 #### Discussion
 
-The monitor is capable of recommending any of the framings in this array. This property is key-value observable and may change as the target capture device’s [`activeFormat`](avcapturedevice/activeformat.md) property changes. This array contains the full set of framings supported by the monitor in the device’s current configuration. You must tell the monitor which smart framings you are interested in having recommended to you by setting the [`enabledFramings`](avcapturesmartframingmonitor/enabledframings.md) property.
+The monitor is capable of recommending any of the framings in this array. This property is key-value observable and may change as the target capture device’s [`activeFormat`](../avcapturedevice/activeformat.md) property changes. This array contains the full set of framings supported by the monitor in the device’s current configuration. You must tell the monitor which smart framings you are interested in having recommended to you by setting the [`enabledFramings`](./enabledframings.md) property.
 
 ## See Also
 
-- [var enabledFramings: [AVCaptureFraming]](avcapturesmartframingmonitor/enabledframings.md)
+### Configuring framings
+- [var enabledFramings: [AVCaptureFraming]](./enabledframings.md)
   An array of framings that the monitor is allowed to suggest.
-- [var recommendedFraming: AVCaptureFraming?](avcapturesmartframingmonitor/recommendedframing.md)
+- [var recommendedFraming: AVCaptureFraming?](./recommendedframing.md)
   The latest recommended framing from the monitor.
 
 

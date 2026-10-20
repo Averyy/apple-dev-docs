@@ -1,7 +1,8 @@
 # MIDIThruConnectionFind(_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds the persistent thru connections for the specified client.
 
@@ -18,6 +19,10 @@ Finds the persistent thru connections for the specified client.
 func MIDIThruConnectionFind(_ inPersistentOwnerID: CFString, _ outConnectionList: UnsafeMutablePointer<Unmanaged<CFData>>) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIThruConnectionFind(CFStringRef inPersistentOwnerID, CFDataRef*outConnectionList);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
@@ -25,7 +30,7 @@ An `OSStatus` result code.
 ## Parameters
 
 - `inPersistentOwnerID`: The identifier of the owning object.
-- `outConnectionList`: On successful return, a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) that contains an array of MIDI thru connections.
+- `outConnectionList`: On successful return, a [`CFData`](../CoreFoundation/cfdata.md) that contains an array of MIDI thru connections.
 
 
 ---

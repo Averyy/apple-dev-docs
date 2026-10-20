@@ -1,7 +1,8 @@
 # errSecInvalidAttributeRounds
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of rounds attribute is not valid.
 
@@ -18,6 +19,10 @@ The number of rounds attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeRounds: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeRounds
 ```
 
 

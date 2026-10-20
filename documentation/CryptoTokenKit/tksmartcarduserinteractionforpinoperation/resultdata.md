@@ -1,7 +1,8 @@
 # resultData
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The returned data without SW1-SW2 bytes, if any.
 
@@ -20,9 +21,14 @@ The returned data without SW1-SW2 bytes, if any.
 var resultData: Data? { get set }
 ```
 
+```objc
+@property (nullable) NSData * resultData;
+```
+
 ## See Also
 
-- [var resultSW: UInt16](tksmartcarduserinteractionforpinoperation/resultsw.md)
+### Accessing Response Data
+- [var resultSW: UInt16](./resultsw.md)
   The SW1-SW2 status bytes.
 
 

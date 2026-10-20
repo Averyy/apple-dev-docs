@@ -1,7 +1,8 @@
 # Get a Catalog Artist’s Relationship View Directly by Name
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch related resources for a single artist’s relationship view.
 
@@ -10,13 +11,13 @@ Fetch related resources for a single artist’s relationship view.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/artists/1147783278/view/full-albums
 ```
 
@@ -118,23 +119,43 @@ https://api.music.apple.com/v1/catalog/us/artists/1147783278/view/full-albums
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: A unique identifier for the artist.
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+- `view` (string) *(required)*: The name of the resource view to fetch.
+
+  **Allowed Values**: `appears-on-albums`, `compilation-albums`, `featured-albums`, `featured-music-videos`, `featured-playlists`, `full-albums`, `latest-release`, `live-albums`, `similar-artists`, `singles`, `top-music-videos`, `top-songs`
+
+### Query Parameters
+
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `limit` (integer): The number of objects in the specified relationship view that returns.
 - `with` ([string]): A list of modifications to apply to the request.
 
+  **Allowed Values**: `attributes`
+
+## Responses
+
+- `200` OK (`RelationshipViewResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object Artists](artists.md)
+### Related Documentation
+- [object Artists](./artists.md)
   A resource object that represents the artist of an album where an artist can be one or more people.
-- [object ArtistsResponse](artistsresponse.md)
+- [object ArtistsResponse](./artistsresponse.md)
   The response to an artists request.
-- [Get a Catalog Artist](get-a-catalog-artist.md)
+### Requesting a Catalog Artist
+- [Get a Catalog Artist](./get-a-catalog-artist.md)
   Fetch an artist by using the artist’s identifier.
-- [Get a Catalog Artist's Relationship Directly by Name](fetch-a-relationship-on-this-resource-by-name-5akdm.md)
+- [Get a Catalog Artist's Relationship Directly by Name](./fetch-a-relationship-on-this-resource-by-name-5akdm.md)
   Fetch an artist’s relationship by using its identifier.
-- [Get Multiple Catalog Artists](get-multiple-catalog-artists.md)
+- [Get Multiple Catalog Artists](./get-multiple-catalog-artists.md)
   Fetch one or more artists by using their identifiers.
 
 

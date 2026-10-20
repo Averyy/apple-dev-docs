@@ -1,7 +1,8 @@
 # HistoryObserver
 
 **Framework**: SwiftData  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Monitors a model container’s data stores for remote changes and notifies when new history transactions are available.
 
@@ -22,9 +23,9 @@ final class HistoryObserver
 
 #### Overview
 
-`HistoryObserver` automatically listens for `ModelContainer/remoteChange` notifications and determines whether the incoming changes are relevant based on the models you specify at initialization. When relevant changes are detected, the observer updates its [`eventCounter`](historyobserver/eventcounter.md) property.
+`HistoryObserver` automatically listens for `ModelContainer/remoteChange` notifications and determines whether the incoming changes are relevant based on the models you specify at initialization. When relevant changes are detected, the observer updates its [`eventCounter`](./historyobserver/eventcounter.md) property.
 
-Use `HistoryObserver` as an `@Observable` object and react to changes in [`eventCounter`](historyobserver/eventcounter.md) from a SwiftUI view or other observer.
+Use `HistoryObserver` as an `@Observable` object and react to changes in [`eventCounter`](./historyobserver/eventcounter.md) from a SwiftUI view or other observer.
 
 The observer tracks its position in each data store’s transaction history using `historyTokens`, enabling incremental processing of only new transactions since the last check.
 
@@ -42,30 +43,31 @@ let observer = try HistoryObserver(
 ## Topics
 
 ### Creating a history observer
-- [convenience init(historyTokens: [String : any HistoryToken]?, observedModels: [any PersistentModel.Type], authors: Set<String>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](historyobserver/init(historytokens:observedmodels:authors:modelcontainer:isolation:).md)
-  Creates a history observer that reports changes through its observable [`eventCounter`](historyobserver/eventcounter.md) property.
+- [convenience init(historyTokens: [String : any HistoryToken]?, observedModels: [any PersistentModel.Type], authors: Set<String>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](./historyobserver/init%28historytokens,observedmodels,authors,modelcontainer,isolation%29.md)
+  Creates a history observer that reports changes through its observable [`eventCounter`](./historyobserver/eventcounter.md) property.
 ### Accessing observer properties
-- [var eventCounter: Int](historyobserver/eventcounter.md)
+- [var eventCounter: Int](./historyobserver/eventcounter.md)
   A counter that increments each time the observer detects relevant changes.
-- [let modelContainer: ModelContainer](historyobserver/modelcontainer.md)
+- [let modelContainer: ModelContainer](./historyobserver/modelcontainer.md)
   The model container whose data stores this observer monitors for changes.
-- [let observedModels: [any PersistentModel.Type]](historyobserver/observedmodels.md)
+- [let observedModels: [any PersistentModel.Type]](./historyobserver/observedmodels.md)
   The model types that the observer filters for when evaluating history transactions.
-- [let authors: Set<String>](historyobserver/authors.md)
+- [let authors: Set<String>](./historyobserver/authors.md)
   The transaction authors that the observer filters for when evaluating history transactions.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ResultsObserver](resultsobserver.md)
+### Data store observation
+- [class ResultsObserver](./resultsobserver.md)
   Observes and tracks changes to a collection of persistent models in a model context.
 
 

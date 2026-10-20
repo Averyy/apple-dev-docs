@@ -1,7 +1,8 @@
 # Read git repository information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a Git repository that Xcode Cloud can access.
 
@@ -16,7 +17,7 @@ The example request below retrieves information about a specific Git repository 
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-87a2-b6d19626b870
 ```
 
@@ -64,21 +65,43 @@ GET https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Repositories resource.
+
+### Query Parameters
+
 - `fields[scmGitReferences]` ([string]): Additional fields to include for the Repositories resource returned by the response.
+
+  **Allowed Values**: `name`, `canonicalName`, `isDeleted`, `kind`, `repository`
 - `fields[scmRepositories]` ([string]): Additional fields to include for the Repositories resource returned by the response.
+
+  **Allowed Values**: `lastAccessedDate`, `httpCloneUrl`, `sshCloneUrl`, `ownerName`, `repositoryName`, `scmProvider`, `defaultBranch`, `gitReferences`, `pullRequests`
 - `include` ([string]): The relationship data to include in the response.
-- `fields[scmProviders]` ([string])
+
+  **Allowed Values**: `scmProvider`, `defaultBranch`
+- `fields[scmProviders]` ([string]): **Allowed Values**: `scmProviderType`, `url`, `repositories`
+
+## Responses
+
+- `200` OK (`ScmRepositoryResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all git repositories](get-v1-scmrepositories.md)
+### Getting Repository Information
+- [List all git repositories](./get-v1-scmrepositories.md)
   List all Git repositories Xcode Cloud can access.
-- [List all git references for a repository](get-v1-scmrepositories-_id_-gitreferences.md)
+- [List all git references for a repository](./get-v1-scmrepositories-_id_-gitreferences.md)
   List all Git references for a specific repository that Xcode Cloud can access.
-- [List Git reference IDs for an SCM repository](get-v1-scmrepositories-_id_-relationships-gitreferences.md)
-- [List all pull requests for a repository](get-v1-scmrepositories-_id_-pullrequests.md)
+- [List Git reference IDs for an SCM repository](./get-v1-scmrepositories-_id_-relationships-gitreferences.md)
+- [List all pull requests for a repository](./get-v1-scmrepositories-_id_-pullrequests.md)
   List all pull requests for a specific repository that Xcode Cloud can access.
-- [List pull request IDs for an SCM repository](get-v1-scmrepositories-_id_-relationships-pullrequests.md)
+- [List pull request IDs for an SCM repository](./get-v1-scmrepositories-_id_-relationships-pullrequests.md)
 
 
 ---

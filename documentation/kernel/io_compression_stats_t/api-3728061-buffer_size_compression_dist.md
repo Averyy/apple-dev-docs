@@ -1,14 +1,15 @@
 # buffer_size_compression_dist
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 uint32_t buffer_size_compression_dist[10][7];
 ```
 

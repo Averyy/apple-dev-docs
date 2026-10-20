@@ -1,7 +1,8 @@
 # kMDItemDescription
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A description of the content of the resource. The description may include an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content. A CFString.
 
@@ -12,6 +13,10 @@ A description of the content of the resource. The description may include an abs
 
 ```swift
 let kMDItemDescription: CFString!
+```
+
+```c
+const CFStringRef kMDItemDescription;
 ```
 
 

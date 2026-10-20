@@ -1,7 +1,8 @@
 # headphoneAudioExposureEvent
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category sample type that records exposure to potentially damaging sounds from headphones.
 
@@ -19,29 +20,34 @@ A category sample type that records exposure to potentially damaging sounds from
 static let headphoneAudioExposureEvent: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHeadphoneAudioExposureEvent;
+```
+
 #### Discussion
 
-iPhone and Apple Watch save a [`headphoneAudioExposureEvent`](hkcategorytypeidentifier/headphoneaudioexposureevent.md) sample when the device generates a notification about loud headphone audio. Both devices generate these notifications when the user listens to audio long enough and at a volume that could affect their hearing. In some regions, users can enable or disable loud headphone notifications from Settings > Sounds & Haptics > Headphone Safety.
+iPhone and Apple Watch save a [`headphoneAudioExposureEvent`](./headphoneaudioexposureevent.md) sample when the device generates a notification about loud headphone audio. Both devices generate these notifications when the user listens to audio long enough and at a volume that could affect their hearing. In some regions, users can enable or disable loud headphone notifications from Settings > Sounds & Haptics > Headphone Safety.
 
-Samples of this type use values from the [`HKCategoryValueHeadphoneAudioExposureEvent`](hkcategoryvalueheadphoneaudioexposureevent.md) enumeration.
+Samples of this type use values from the [`HKCategoryValueHeadphoneAudioExposureEvent`](../hkcategoryvalueheadphoneaudioexposureevent.md) enumeration.
 
 ## Topics
 
 ### Metadata Keys
-- [let HKMetadataKeyAudioExposureLevel: String](hkmetadatakeyaudioexposurelevel.md)
+- [let HKMetadataKeyAudioExposureLevel: String](../hkmetadatakeyaudioexposurelevel.md)
   The audio level associated with an audio event.
-- [let HKMetadataKeyAudioExposureDuration: String](hkmetadatakeyaudioexposureduration.md)
+- [let HKMetadataKeyAudioExposureDuration: String](../hkmetadatakeyaudioexposureduration.md)
   The audio exposure event’s duration.
 
 ## See Also
 
-- [static let environmentalAudioExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/environmentalaudioexposure.md)
+### Hearing
+- [static let environmentalAudioExposure: HKQuantityTypeIdentifier](../hkquantitytypeidentifier/environmentalaudioexposure.md)
   A quantity sample type that measures audio exposure to sounds in the environment.
-- [static let headphoneAudioExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/headphoneaudioexposure.md)
+- [static let headphoneAudioExposure: HKQuantityTypeIdentifier](../hkquantitytypeidentifier/headphoneaudioexposure.md)
   A quantity sample type that measures audio exposure from headphones.
-- [static let environmentalAudioExposureEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/environmentalaudioexposureevent.md)
+- [static let environmentalAudioExposureEvent: HKCategoryTypeIdentifier](./environmentalaudioexposureevent.md)
   A category sample type that records exposure to potentially damaging sounds from the environment.
-- [static let audioExposureEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/audioexposureevent.md)
+- [static let audioExposureEvent: HKCategoryTypeIdentifier](./audioexposureevent.md)
   A category sample type for audio exposure events.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the model parameters for a linear regressor.
 
@@ -21,9 +22,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mllinearregressor/modelparameters-swift.struct/debugdescription.md)
+### Describing parameters
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the model parameters for a linear regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mllinearregressor/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the model parameters for a linear regressor shown in a playground.
 
 

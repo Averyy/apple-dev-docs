@@ -1,7 +1,8 @@
 # pile
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Drag images are placed on top of each other with random rotations.
 

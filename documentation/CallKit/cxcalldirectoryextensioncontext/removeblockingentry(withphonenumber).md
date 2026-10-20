@@ -1,7 +1,8 @@
 # removeBlockingEntry(withPhoneNumber:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a blocking entry that contains the specified phone number.
 
@@ -17,11 +18,15 @@ Removes a blocking entry that contains the specified phone number.
 func removeBlockingEntry(withPhoneNumber phoneNumber: CXCallDirectoryPhoneNumber)
 ```
 
+```objc
+- (void) removeBlockingEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber) phoneNumber;
+```
+
 #### Discussion
 
-If [`isIncremental`](cxcalldirectoryextensioncontext/isincremental.md) is [`true`](https://developer.apple.com/documentation/swift/true), the request provides incremental entries and may use this method to remove previously added blocking entries. This method removes all blocking entries that contain the specified phone number, even if multiple blocking entries with different labels are present for a single phone number.
+If [`isIncremental`](./isincremental.md) is [`true`](../../Swift/true.md), the request provides incremental entries and may use this method to remove previously added blocking entries. This method removes all blocking entries that contain the specified phone number, even if multiple blocking entries with different labels are present for a single phone number.
 
-Don’t call this method if [`isIncremental`](cxcalldirectoryextensioncontext/isincremental.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+Don’t call this method if [`isIncremental`](./isincremental.md) is [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -29,11 +34,12 @@ Don’t call this method if [`isIncremental`](cxcalldirectoryextensioncontext/is
 
 ## See Also
 
-- [func removeAllBlockingEntries()](cxcalldirectoryextensioncontext/removeallblockingentries.md)
+### Removing Entries
+- [func removeAllBlockingEntries()](./removeallblockingentries%28%29.md)
   Removes all stored blocking entries.
-- [func removeAllIdentificationEntries()](cxcalldirectoryextensioncontext/removeallidentificationentries.md)
+- [func removeAllIdentificationEntries()](./removeallidentificationentries%28%29.md)
   Removes all stored identification entries.
-- [func removeIdentificationEntry(withPhoneNumber: CXCallDirectoryPhoneNumber)](cxcalldirectoryextensioncontext/removeidentificationentry(withphonenumber:).md)
+- [func removeIdentificationEntry(withPhoneNumber: CXCallDirectoryPhoneNumber)](./removeidentificationentry%28withphonenumber%29.md)
   Removes an identification entry that contains the specified phone number.
 
 

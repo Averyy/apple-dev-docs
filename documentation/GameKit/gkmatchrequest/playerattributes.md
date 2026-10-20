@@ -1,7 +1,8 @@
 # playerAttributes
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask that specifies the role that the local player would like to play in the game.
 
@@ -20,10 +21,14 @@ A mask that specifies the role that the local player would like to play in the g
 var playerAttributes: UInt32 { get set }
 ```
 
+```objc
+@property (assign) uint32_t playerAttributes;
+```
+
 ## Mentions
 
-- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
@@ -31,7 +36,8 @@ If the value of this property is `0xFFFFFFFF` (the default), GameKit ignores thi
 
 ## See Also
 
-- [var playerGroup: Int](gkmatchrequest/playergroup.md)
+### Matching specific players
+- [var playerGroup: Int](./playergroup.md)
   A number identifying a subset of players invited to join a match.
 
 

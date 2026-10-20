@@ -1,7 +1,8 @@
 # Scanner.NumberRepresentation
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 13.0+
@@ -21,16 +22,16 @@ enum NumberRepresentation
 ## Topics
 
 ### Enumeration Cases
-- [Scanner.NumberRepresentation.decimal](scanner/numberrepresentation/decimal.md)
-- [Scanner.NumberRepresentation.hexadecimal](scanner/numberrepresentation/hexadecimal.md)
+- [Scanner.NumberRepresentation.decimal](./numberrepresentation/decimal.md)
+- [Scanner.NumberRepresentation.hexadecimal](./numberrepresentation/hexadecimal.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tag of the Bloom filter data, such as the SHA-256 hash of the Bloom filter data.
 
@@ -19,15 +20,16 @@ let tag: String
 
 ## See Also
 
-- [let data: NEURLFilterPrefilter.PrefilterData](neurlfilterprefilter/data.md)
+### Working with prefilter properties
+- [let data: NEURLFilterPrefilter.PrefilterData](./data.md)
   The Bloom filter data.
-- [NEURLFilterPrefilter.PrefilterData](neurlfilterprefilter/prefilterdata.md)
+- [NEURLFilterPrefilter.PrefilterData](./prefilterdata.md)
   An enumeration that represents Bloom filter data, as used by a prefilter.
-- [let bitCount: Int](neurlfilterprefilter/bitcount.md)
+- [let bitCount: Int](./bitcount.md)
   The number of bits in the Bloom filter.
-- [let hashCount: Int](neurlfilterprefilter/hashcount.md)
+- [let hashCount: Int](./hashcount.md)
   The number of hashes for the Bloom filter.
-- [let murmurSeed: UInt32](neurlfilterprefilter/murmurseed.md)
+- [let murmurSeed: UInt32](./murmurseed.md)
   The seed used for the hashing function.
 
 

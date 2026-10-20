@@ -1,7 +1,8 @@
 # UITableView.SeparatorInsetReference.fromAutomaticInsets
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An inset value that indicates the starting position is based on the default separator insets.
 
@@ -18,13 +19,18 @@ An inset value that indicates the starting position is based on the default sepa
 case fromAutomaticInsets
 ```
 
+```c
+UITableViewSeparatorInsetFromAutomaticInsets
+```
+
 #### Discussion
 
-When using this style, the values in the [`separatorInset`](uitableview/separatorinset.md) property are interpreted as offsets from the default insets provided by the table view. The table view normally uses its layout margins as the default cell inset value. However, these insets may be modified by other factors, such as the when the [`cellLayoutMarginsFollowReadableWidth`](uitableview/celllayoutmarginsfollowreadablewidth.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+When using this style, the values in the [`separatorInset`](../separatorinset.md) property are interpreted as offsets from the default insets provided by the table view. The table view normally uses its layout margins as the default cell inset value. However, these insets may be modified by other factors, such as the when the [`cellLayoutMarginsFollowReadableWidth`](../celllayoutmarginsfollowreadablewidth.md) property is set to [`true`](../../../Swift/true.md).
 
 ## See Also
 
-- [UITableView.SeparatorInsetReference.fromCellEdges](uitableview/separatorinsetreference-swift.enum/fromcelledges.md)
+### Constants
+- [UITableView.SeparatorInsetReference.fromCellEdges](./fromcelledges.md)
   An inset value that’s relative to the edge of the cell.
 
 

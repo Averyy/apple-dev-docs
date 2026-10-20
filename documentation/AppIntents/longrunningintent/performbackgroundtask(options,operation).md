@@ -1,7 +1,8 @@
 # performBackgroundTask(options:operation:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs an operation in the background with an extended amount of time.
 
@@ -27,15 +28,15 @@ The value you return from the `operation` closure.
 
 #### Discussion
 
-> **Note**: Throws an error if the operation fails or the system can’t run the operation.
+> **Throws**: Throws an error if the operation fails or the system can’t run the operation.
 
-Use this method to wrap long-running code in your app intent’s [`perform()`](appintent/perform().md) method. This method automatically extends the amount of time your code has to run in the background past the standard 30-second limit present on some platforms. You don’t have to start a separate background task.
+Use this method to wrap long-running code in your app intent’s [`perform()`](../appintent/perform%28%29.md) method. This method automatically extends the amount of time your code has to run in the background past the standard 30-second limit present on some platforms. You don’t have to start a separate background task.
 
-While your operation runs, provide regular progress updates using the [`progress`](progressreportingintent/progress.md) property of the [`ProgressReportingIntent`](progressreportingintent.md) protocol. If you don’t update this property regularly, the system can cancel the background runtime extension and end your task prematurely.
+While your operation runs, provide regular progress updates using the [`progress`](../progressreportingintent/progress.md) property of the [`ProgressReportingIntent`](../progressreportingintent.md) protocol. If you don’t update this property regularly, the system can cancel the background runtime extension and end your task prematurely.
 
-Live Activities displays the progress of your app intent’s task using information it receives automatically from this method. Live Activities displays the values of the [`localizedDescription`](https://developer.apple.com/documentation/foundation/progress/localizeddescription) and [`localizedAdditionalDescription`](https://developer.apple.com/documentation/foundation/progress/localizedadditionaldescription) properties as the title and subtitle of your task. It also displays a progress bar, which it configures using the values in the [`completedUnitCount`](https://developer.apple.com/documentation/foundation/progress/completedunitcount) and [`totalUnitCount`](https://developer.apple.com/documentation/foundation/progress/totalunitcount) properties.
+Live Activities displays the progress of your app intent’s task using information it receives automatically from this method. Live Activities displays the values of the [`localizedDescription`](../../Foundation/progress/localizeddescription.md) and [`localizedAdditionalDescription`](../../Foundation/progress/localizedadditionaldescription.md) properties as the title and subtitle of your task. It also displays a progress bar, which it configures using the values in the [`completedUnitCount`](../../Foundation/progress/completedunitcount.md) and [`totalUnitCount`](../../Foundation/progress/totalunitcount.md) properties.
 
-The following example shows the [`perform()`](appintent/perform().md) method of an app intent, which uses this method to extend the background runtime of the task. The method implementation uploads a file in chunks and updates progress values after each chunk.
+The following example shows the [`perform()`](../appintent/perform%28%29.md) method of an app intent, which uses this method to extend the background runtime of the task. The method implementation uploads a file in chunks and updates progress values after each chunk.
 
 ```swift
 func perform() async throws -> some IntentResult & ReturnsValue<String> {
@@ -63,9 +64,10 @@ func perform() async throws -> some IntentResult & ReturnsValue<String> {
 
 ## See Also
 
-- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T, onCancel: (IntentCancellationReason) -> Void) async throws -> T](longrunningintent/performbackgroundtask(options:operation:oncancel:).md)
+### Performing background tasks
+- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T, onCancel: (IntentCancellationReason) -> Void) async throws -> T](./performbackgroundtask%28options,operation,oncancel%29.md)
   Runs an operation in the background and provides a way to cancel the operation before it finishes.
-- [struct LongRunningTaskOptions](longrunningtaskoptions.md)
+- [struct LongRunningTaskOptions](../longrunningtaskoptions.md)
   Options for configuring long-running tasks.
 
 

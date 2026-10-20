@@ -1,7 +1,8 @@
 # openBoard
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for opening a new whiteboard canvas.
 
@@ -36,7 +37,7 @@ struct OpenCanvasBoardIntent: OpenIntent {
 }
 ```
 
-For more information about the `.whiteboard` app intent domain, see [`Whiteboard`](app-schema-domain-whiteboard.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.whiteboard` app intent domain, see [Whiteboard](../../app-schema-domain-whiteboard.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

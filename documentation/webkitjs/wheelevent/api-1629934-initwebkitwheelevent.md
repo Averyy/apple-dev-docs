@@ -1,7 +1,8 @@
 # initWebKitWheelEvent
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 5.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void initWebKitWheelEvent(
     optional long wheelDeltaX, 
     optional long wheelDeltaY, 

@@ -1,9 +1,10 @@
 # kCIUIParameterSet
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-The set of input parameters to use. The associated value can be [`kCIUISetBasic`](kciuisetbasic.md), [`kCIUISetIntermediate`](kciuisetintermediate.md), [`kCIUISetAdvanced`](kciuisetadvanced.md), or [`kCIUISetDevelopment`](kciuisetdevelopment.md).
+The set of input parameters to use. The associated value can be [`kCIUISetBasic`](./kciuisetbasic.md), [`kCIUISetIntermediate`](./kciuisetintermediate.md), [`kCIUISetAdvanced`](./kciuisetadvanced.md), or [`kCIUISetDevelopment`](./kciuisetdevelopment.md).
 
 **Availability**:
 - iOS 9.0+
@@ -19,15 +20,20 @@ The set of input parameters to use. The associated value can be [`kCIUISetBasic`
 let kCIUIParameterSet: String
 ```
 
+```c
+extern NSString * const kCIUIParameterSet;
+```
+
 ## See Also
 
-- [let kCIUISetBasic: String](kciuisetbasic.md)
+### Constants
+- [let kCIUISetBasic: String](./kciuisetbasic.md)
   Controls that are appropriate for a basic user scenario, that is, the minimum of settings to control the filter.
-- [let kCIUISetIntermediate: String](kciuisetintermediate.md)
+- [let kCIUISetIntermediate: String](./kciuisetintermediate.md)
   Controls that are appropriate for an intermediate user scenario.
-- [let kCIUISetAdvanced: String](kciuisetadvanced.md)
+- [let kCIUISetAdvanced: String](./kciuisetadvanced.md)
   Controls that are appropriate for an advanced user scenario.
-- [let kCIUISetDevelopment: String](kciuisetdevelopment.md)
+- [let kCIUISetDevelopment: String](./kciuisetdevelopment.md)
   Controls that should be visible  only for development purposes.
 
 

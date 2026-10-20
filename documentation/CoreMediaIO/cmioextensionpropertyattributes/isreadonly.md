@@ -1,7 +1,8 @@
 # isReadOnly
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a property is read-only.
 
@@ -15,13 +16,18 @@ A Boolean value that indicates whether a property is read-only.
 var isReadOnly: Bool { get }
 ```
 
+```objc
+@property (atomic, readonly, getter=isReadOnly) BOOL readOnly;
+```
+
 ## See Also
 
-- [var minValue: ObjectType?](cmioextensionpropertyattributes/minvalue.md)
+### Inspecting Attributes
+- [var minValue: ObjectType?](./minvalue.md)
   The minimum value a property supports.
-- [var maxValue: ObjectType?](cmioextensionpropertyattributes/maxvalue.md)
+- [var maxValue: ObjectType?](./maxvalue.md)
   The maximum value a property supports.
-- [var validValues: [ObjectType]?](cmioextensionpropertyattributes/validvalues.md)
+- [var validValues: [ObjectType]?](./validvalues.md)
   An array of discrete values that this property supports.
 
 

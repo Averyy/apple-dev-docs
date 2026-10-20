@@ -1,7 +1,8 @@
 # Font.Leading.standard
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The font’s default line spacing.
 
@@ -22,13 +23,14 @@ case standard
 
 #### Discussion
 
-If you modify a font to use a nonstandard line spacing like [`Font.Leading.tight`](font/leading/tight.md) or [`Font.Leading.loose`](font/leading/loose.md), you can use this value to return to the font’s default line spacing.
+If you modify a font to use a nonstandard line spacing like [`Font.Leading.tight`](./tight.md) or [`Font.Leading.loose`](./loose.md), you can use this value to return to the font’s default line spacing.
 
 ## See Also
 
-- [Font.Leading.loose](font/leading/loose.md)
+### Getting leading line spacing options
+- [Font.Leading.loose](./loose.md)
   Increased line spacing.
-- [Font.Leading.tight](font/leading/tight.md)
+- [Font.Leading.tight](./tight.md)
   Reduced line spacing.
 
 

@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats a numeric byte count, using this style.
 
@@ -26,7 +27,7 @@ A formatted representation of `value`, formatted according to the style’s conf
 
 #### Discussion
 
-Use this method when you want to create a single style instance, and then use it to format multiple values. The following example creates a [`ByteCountFormatStyle`](bytecountformatstyle.md) to format values as kilobyte counts, then applies this style to an array of [`Int64`](https://developer.apple.com/documentation/swift/int64) values.
+Use this method when you want to create a single style instance, and then use it to format multiple values. The following example creates a [`ByteCountFormatStyle`](../bytecountformatstyle.md) to format values as kilobyte counts, then applies this style to an array of [`Int64`](../../Swift/int64.md) values.
 
 ```swift
 let style = ByteCountFormatStyle(style: .memory,
@@ -39,7 +40,7 @@ let formatted = counts.map ( {style.format($0) } ) // ["Zero kB", "1 kB", "2 kB"
 
 ```
 
-To format a single integer, use the [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) instance method [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73), passing in an instance of [`IntegerFormatStyle`](integerformatstyle.md), or [`formatted()`](https://developer.apple.com/documentation/swift/binaryinteger/formatted()) to use a default style.
+To format a single integer, use the [`BinaryInteger`](../../Swift/binaryinteger.md) instance method [`formatted(_:)`](../../Swift/binaryinteger/formatted%28_%29-4qd73.md), passing in an instance of [`IntegerFormatStyle`](../integerformatstyle.md), or [`formatted()`](../../Swift/binaryinteger/formatted%28%29.md) to use a default style.
 
 ## Parameters
 

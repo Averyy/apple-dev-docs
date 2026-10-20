@@ -1,7 +1,8 @@
 # Input
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Input stream direction.
 
@@ -10,13 +11,14 @@ Input stream direction.
 
 ## Declaration
 
-```swift
+```c
 Input
 ```
 
 ## See Also
 
-- [Output](videodriverkit/iouservideostreamdirection/output.md)
+### Stream directions
+- [Output](./output.md)
   Output stream direction.
 
 

@@ -1,7 +1,8 @@
 # maximumCriticalMessagingRecipients
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer that defines the maximum number of recipients to which the framework can send messages at one time.
 

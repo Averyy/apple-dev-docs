@@ -1,7 +1,8 @@
 # checkpointDirectory
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directory that a the photogrammetry session uses for checkpoints during reconstruction.
 
@@ -21,7 +22,7 @@ var checkpointDirectory: URL?
 
 For macOS reconstruction, the `checkpointDirectory` serves as a temporary reconstruction space if it is not `nil`. Reconstruction starts from scratch, and does not resume from previous checkpoints.
 
-For iOS reconstruction, if you pass the same `checkpointDirectory` used by an [`ObjectCaptureSession`](objectcapturesession.md) or an earlier interrupted [`PhotogrammetrySession`](photogrammetrysession.md), the [`PhotogrammetrySession`](photogrammetrysession.md) tries to use the saved checkpoint instead of starting from scratch. Ensure that each `checkpointDirectory` is unique for each images folder.
+For iOS reconstruction, if you pass the same `checkpointDirectory` used by an [`ObjectCaptureSession`](../../objectcapturesession.md) or an earlier interrupted [`PhotogrammetrySession`](../../photogrammetrysession.md), the [`PhotogrammetrySession`](../../photogrammetrysession.md) tries to use the saved checkpoint instead of starting from scratch. Ensure that each `checkpointDirectory` is unique for each images folder.
 
 If set to an empty folder, the `checkpointDirectory` saves checkpoints during processing for reuse in a subsequent restart. If it is `nil`, the session does not use or save checkpoints, and every reconstruction starts from scratch.
 

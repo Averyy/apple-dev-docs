@@ -1,7 +1,8 @@
 # SearchCount
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scalar count result (e.g., “47 emails from John”).
 
@@ -21,26 +22,27 @@ struct SearchCount
 ## Topics
 
 ### Creating the search count
-- [init(value: Int, header: String?)](searchcount/init(value:header:).md)
+- [init(value: Int, header: String?)](./searchcount/init%28value,header%29.md)
 ### Getting the counted information
-- [let header: String?](searchcount/header.md)
+- [let header: String?](./searchcount/header.md)
   A short description of what was counted (e.g., “Emails from John since 2003”).
-- [let value: Int](searchcount/value.md)
+- [let value: Int](./searchcount/value.md)
   The count value.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SearchResultsTable](searchresultstable.md)
+### Search results
+- [struct SearchResultsTable](./searchresultstable.md)
   Tabulated result data — rows with typed columns for display or spreadsheet export.
-- [struct SearchStatistic](searchstatistic.md)
+- [struct SearchStatistic](./searchstatistic.md)
   A scalar statistic derived from search results (sum, average, max, min, median, stddev).
-- [struct SearchTextResult](searchtextresult.md)
+- [struct SearchTextResult](./searchtextresult.md)
   LLM-generated text summary or analysis from a pipeline stage.
 
 

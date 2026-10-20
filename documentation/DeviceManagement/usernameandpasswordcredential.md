@@ -1,7 +1,8 @@
 # UserNameAndPasswordCredential
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Data that describes a credential that represents a user name and password.
 
@@ -16,7 +17,7 @@ Data that describes a credential that represents a user name and password.
 
 ## Declaration
 
-```swift
+```
 object UserNameAndPasswordCredential
 ```
 
@@ -27,11 +28,12 @@ object UserNameAndPasswordCredential
 
 ## See Also
 
-- [object ACMECredential](acmecredential.md)
+### Credentials
+- [object ACMECredential](./acmecredential.md)
   An ACME identity that the device generates.
-- [object IdentityCredential](identitycredential.md)
+- [object IdentityCredential](./identitycredential.md)
   The data for a PKCS #12 password-protected identity.
-- [object SCEPCredential](scepcredential.md)
+- [object SCEPCredential](./scepcredential.md)
   A SCEP identity that the device generates.
 
 

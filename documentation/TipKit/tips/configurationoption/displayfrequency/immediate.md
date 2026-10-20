@@ -1,7 +1,8 @@
 # immediate
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An immediate display frequency.
 

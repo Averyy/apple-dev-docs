@@ -1,7 +1,8 @@
 # liquid
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Used to format the amount of liquid
 
@@ -19,6 +20,8 @@ Used to format the amount of liquid
 ```swift
 static var liquid: MeasurementFormatUnitUsage<UnitVolume> { get }
 ```
+
+Available when `UnitType` is `UnitVolume`.
 
 
 ---

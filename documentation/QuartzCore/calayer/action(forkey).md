@@ -1,7 +1,8 @@
 # action(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the action object assigned to the specified key.
 
@@ -19,9 +20,13 @@ Returns the action object assigned to the specified key.
 func action(forKey event: String) -> (any CAAction)?
 ```
 
+```objc
+- (id<CAAction>) actionForKey:(NSString *) event;
+```
+
 #### Return Value
 
-Returns the object that provides the action for `key`. The object must implement the [`CAAction`](caaction.md) protocol.
+Returns the object that provides the action for `key`. The object must implement the [`CAAction`](../caaction.md) protocol.
 
 #### Discussion
 
@@ -29,16 +34,16 @@ This method searches for the given action object of the layer. Actions define dy
 
 This method searches for the layer’s associated actions in the following order:
 
-1. If the layer has a delegate that implements the [`action(for:forKey:)`](calayerdelegate/action(for:forkey:).md) method, the layer calls that method. The delegate must do one of the following:
+1. If the layer has a delegate that implements the [`action(for:forKey:)`](../calayerdelegate/action%28for,forkey%29.md) method, the layer calls that method. The delegate must do one of the following:
 
 - Return the action object for the given key.
-- Return the [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) object if it does not handle the action.
+- Return the [`NSNull`](../../Foundation/nsnull.md) object if it does not handle the action.
 
-1. The layer looks in the layer’s [`actions`](calayer/actions.md) dictionary for a matching key/action pair.
-2. The layer looks in the [`style`](calayer/style.md) dictionary for an [`actions`](calayer/actions.md) dictionary  for a matching key/action pair.
-3. The layer calls the [`defaultAction(forKey:)`](calayer/defaultaction(forkey:).md) class method to look for any class-defined actions.
+1. The layer looks in the layer’s [`actions`](./actions.md) dictionary for a matching key/action pair.
+2. The layer looks in the [`style`](./style.md) dictionary for an [`actions`](./actions.md) dictionary  for a matching key/action pair.
+3. The layer calls the [`defaultAction(forKey:)`](./defaultaction%28forkey%29.md) class method to look for any class-defined actions.
 
-If any of the above steps returns an instance of [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull), it is converted to `nil` before continuing.
+If any of the above steps returns an instance of [`NSNull`](../../Foundation/nsnull.md), it is converted to `nil` before continuing.
 
 When an action object is invoked it receives three parameters: the name of the event, the object on which the event happened (the layer), and a dictionary of named arguments specific to each event kind.
 
@@ -48,12 +53,14 @@ When an action object is invoked it receives three parameters: the name of the e
 
 ## See Also
 
-- [Layer filters](calayer#Layer-filters.md)
-- [var style: [AnyHashable : Any]?](calayer/style.md)
+### Related Documentation
+- [Layer filters](../calayer.md#Layer-filters)
+- [var style: [AnyHashable : Any]?](./style.md)
   An optional dictionary used to store property values that aren’t explicitly defined by the layer.
-- [var actions: [String : any CAAction]?](calayer/actions.md)
+### Getting the layer’s actions
+- [var actions: [String : any CAAction]?](./actions.md)
   A dictionary containing layer actions.
-- [class func defaultAction(forKey: String) -> (any CAAction)?](calayer/defaultaction(forkey:).md)
+- [class func defaultAction(forKey: String) -> (any CAAction)?](./defaultaction%28forkey%29.md)
   Returns the default action for the current class.
 
 

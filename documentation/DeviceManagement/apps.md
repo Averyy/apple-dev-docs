@@ -1,7 +1,8 @@
 # Apps
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents an app.
 
@@ -10,16 +11,16 @@ A resource object that represents an app.
 
 ## Declaration
 
-```swift
+```
 object Apps
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Apps.Attributes](apps/attributes-data.dictionary.md)
+- [object Apps.Attributes](./apps/attributes-data.dictionary.md)
   The attributes for an apps resource.
-- [object Apps.Relationships](apps/relationships-data.dictionary.md)
+- [object Apps.Relationships](./apps/relationships-data.dictionary.md)
   The relationships for an apps resource.
 
 ## Properties
@@ -30,15 +31,18 @@ object Apps
 - `relationships` (Apps.Relationships): The relationships from apps to other resources.
 - `type` (string) *(required)*: The type of the resource. The only allowed value is `apps`.
 
+  **Allowed Values**: `apps`
+
 ## See Also
 
-- [object Artwork](artwork.md)
+### Getting common type information
+- [object Artwork](./artwork.md)
   An object that represents artwork.
-- [object DescriptionAttribute](descriptionattribute.md)
+- [object DescriptionAttribute](./descriptionattribute.md)
   An object that represents a description attribute.
-- [object Genres](genres.md)
+- [object Genres](./genres.md)
   A resource object that represents a music genre.
-- [object Books](books.md)
+- [object Books](./books.md)
   A resource object that represents a book.
 
 

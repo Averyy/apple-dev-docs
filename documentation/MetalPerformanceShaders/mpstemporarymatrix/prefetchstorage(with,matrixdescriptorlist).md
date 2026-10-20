@@ -1,7 +1,8 @@
 # prefetchStorage(with:matrixDescriptorList:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func prefetchStorage(with commandBuffer: any MTLCommandBuffer, matrixDescriptorList descriptorList: [MPSMatrixDescriptor])
+```
+
+```objc
++ (void) prefetchStorageWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer matrixDescriptorList:(NSArray<MPSMatrixDescriptor *> *) descriptorList;
 ```
 
 

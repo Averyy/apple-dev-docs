@@ -1,7 +1,8 @@
 # id
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The merchant identifier you used to retrieve the loyalty program information from Wallet.
 

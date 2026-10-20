@@ -1,7 +1,8 @@
 # kAXSplittersAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of views and splitter bar elements displayed by the split view represented by this accessibility object. This is a convenience attribute that helps an assistive application easily find these elements.
 
@@ -12,6 +13,10 @@ An array of views and splitter bar elements displayed by the split view represen
 
 ```swift
 var kAXSplittersAttribute: String { get }
+```
+
+```c
+#define kAXSplittersAttribute
 ```
 
 

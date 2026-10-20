@@ -1,7 +1,8 @@
 # MarketplaceSearchDetail
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The search configuration for an alternative marketplace, specifying how apps are indexed and surfaced in search.
 
@@ -10,14 +11,14 @@ The search configuration for an alternative marketplace, specifying how apps are
 
 ## Declaration
 
-```swift
+```
 object MarketplaceSearchDetail
 ```
 
 ## Topics
 
 ### Objects
-- [object MarketplaceSearchDetail.Attributes](marketplacesearchdetail/attributes-data.dictionary.md)
+- [object MarketplaceSearchDetail.Attributes](./marketplacesearchdetail/attributes-data.dictionary.md)
   Attributes that describe a marketplace search detail resource.
 
 ## Properties
@@ -25,17 +26,18 @@ object MarketplaceSearchDetail
 - `attributes` (MarketplaceSearchDetail.Attributes)
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `marketplaceSearchDetails`
 
 ## See Also
 
-- [object MarketplaceSearchDetailCreateRequest](marketplacesearchdetailcreaterequest.md)
+### Objects
+- [object MarketplaceSearchDetailCreateRequest](./marketplacesearchdetailcreaterequest.md)
   The request body you use to create an alternative marketplace search detail.
-- [object MarketplaceSearchDetailResponse](marketplacesearchdetailresponse.md)
+- [object MarketplaceSearchDetailResponse](./marketplacesearchdetailresponse.md)
   A response containing the search configuration for a single alternative marketplace.
-- [object MarketplaceSearchDetailUpdateRequest](marketplacesearchdetailupdaterequest.md)
+- [object MarketplaceSearchDetailUpdateRequest](./marketplacesearchdetailupdaterequest.md)
   The request body you use to update an alternative marketplace search detail.
-- [object AppMarketplaceSearchDetailLinkageResponse](appmarketplacesearchdetaillinkageresponse.md)
+- [object AppMarketplaceSearchDetailLinkageResponse](./appmarketplacesearchdetaillinkageresponse.md)
 
 
 ---

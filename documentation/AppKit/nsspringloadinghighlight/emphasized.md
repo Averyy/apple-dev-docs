@@ -1,7 +1,8 @@
 # NSSpringLoadingHighlight.emphasized
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates emphasized highlighting to show active spring-loading on the destination.
 
@@ -14,15 +15,20 @@ A constant that indicates emphasized highlighting to show active spring-loading 
 case emphasized
 ```
 
+```c
+NSSpringLoadingHighlightEmphasized
+```
+
 #### Discussion
 
 Apply highlighting to the destination’s user interface to visually indicate to the user that spring-loading is engaged on the destination.
 
 ## See Also
 
-- [NSSpringLoadingHighlight.none](nsspringloadinghighlight/none.md)
+### Constants
+- [NSSpringLoadingHighlight.none](./none.md)
   A constant that indicates no highlighting.
-- [NSSpringLoadingHighlight.standard](nsspringloadinghighlight/standard.md)
+- [NSSpringLoadingHighlight.standard](./standard.md)
   A constant that indicates standard highlighting to show the destination supports spring-loading.
 
 

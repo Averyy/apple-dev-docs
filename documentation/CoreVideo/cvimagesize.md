@@ -1,7 +1,8 @@
 # CVImageSize
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Size of image buffer expressed as pixel count.
 
@@ -27,41 +28,42 @@ This should be used when the sizes must be specified as exact integer width & he
 ## Topics
 
 ### Initializers
-- [init(CGSize, rounded: FloatingPointRoundingRule)](cvimagesize/init(_:rounded:).md)
-  Convert `CGSize` to [`CVImageSize`](cvimagesize.md) using the given rounding rule.
-- [init(width: Int, height: Int)](cvimagesize/init(width:height:).md)
+- [init(CGSize, rounded: FloatingPointRoundingRule)](./cvimagesize/init%28_,rounded%29.md)
+  Convert `CGSize` to [`CVImageSize`](./cvimagesize.md) using the given rounding rule.
+- [init(width: Int, height: Int)](./cvimagesize/init%28width,height%29.md)
   Create an instance with given width and height
 ### Instance Properties
-- [var height: Int](cvimagesize/height.md)
+- [var height: Int](./cvimagesize/height.md)
   Image height in pixels
-- [var width: Int](cvimagesize/width.md)
+- [var width: Int](./cvimagesize/width.md)
   Image width in pixels
 ### Type Properties
-- [static let zero: CVImageSize](cvimagesize/zero.md)
+- [static let zero: CVImageSize](./cvimagesize/zero.md)
   Size with zero width and height
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CVImageBuffer](cvimagebuffer.md)
+### Data types
+- [typealias CVImageBuffer](./cvimagebuffer.md)
   A reference to a Core Video image buffer.
-- [enum CVImageBufferOriginPosition](cvimagebufferoriginposition.md)
-- [struct CVImageCleanAperture](cvimagecleanaperture.md)
+- [enum CVImageBufferOriginPosition](./cvimagebufferoriginposition.md)
+- [struct CVImageCleanAperture](./cvimagecleanaperture.md)
   An image’s clean aperture is a region of video to display.
-- [struct CVImagePixelAspectRatio](cvimagepixelaspectratio.md)
+- [struct CVImagePixelAspectRatio](./cvimagepixelaspectratio.md)
   Aspect ratio of each pixel in the image buffer.
-- [struct CVImageDisplayMaskRectangle](cvimagedisplaymaskrectangle.md)
+- [struct CVImageDisplayMaskRectangle](./cvimagedisplaymaskrectangle.md)
   Specifies the rectangular display area within the image.
-- [struct CVImageStereoDisplayMaskRectangle](cvimagestereodisplaymaskrectangle.md)
+- [struct CVImageStereoDisplayMaskRectangle](./cvimagestereodisplaymaskrectangle.md)
   Specifies the rectangular display area within a view of stereo image.
-- [struct CVImageChromaField](cvimagechromafield.md)
+- [struct CVImageChromaField](./cvimagechromafield.md)
   Information about chroma field in the 2VUY format image data.
 
 

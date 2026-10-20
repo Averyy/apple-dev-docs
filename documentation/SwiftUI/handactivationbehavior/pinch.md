@@ -1,7 +1,8 @@
 # pinch
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Activation that requires a pinched hand.
 
@@ -16,7 +17,8 @@ static let pinch: HandActivationBehavior
 
 ## See Also
 
-- [static let automatic: HandActivationBehavior](handactivationbehavior/automatic.md)
+### Getting the behaviors
+- [static let automatic: HandActivationBehavior](./automatic.md)
   The default activation behavior, including direct touch, direct pinch, and indirect pinch.
 
 

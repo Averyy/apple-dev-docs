@@ -1,7 +1,8 @@
 # setAttributedTitle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the switch title to the specified attributed string.
 
@@ -14,11 +15,15 @@ Sets the switch title to the specified attributed string.
 func setAttributedTitle(_ attributedTitle: NSAttributedString?)
 ```
 
+```objc
+- (void) setAttributedTitle:(NSAttributedString *) attributedTitle;
+```
+
 #### Discussion
 
 This method sets the content of the switch to the specified text, replacing the previous text. The text is drawn using the style information in `attributedTitle`.
 
-If you use styled text in your switches, you must provide localized versions of the text yourself. Attributed strings may not contain any [`NSTextAttachment`](https://developer.apple.com/documentation/uikit/nstextattachment) objects as part of their content.
+If you use styled text in your switches, you must provide localized versions of the text yourself. Attributed strings may not contain any [`NSTextAttachment`](../../UIKit/nstextattachment.md) objects as part of their content.
 
 ## Parameters
 
@@ -26,7 +31,8 @@ If you use styled text in your switches, you must provide localized versions of 
 
 ## See Also
 
-- [func setTitle(String?)](wkinterfaceswitch/settitle(_:).md)
+### Setting the Switch’s Title
+- [func setTitle(String?)](./settitle%28_%29.md)
   Sets the switch title to the specified string.
 
 

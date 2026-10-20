@@ -1,6 +1,8 @@
 # Integrating MusicKit into your app
 
-**Framework**: MusicKit
+**Framework**: MusicKit  
+**Role**: Sample Code  
+**Download**: [IntegratingMusicKitIntoYourApp.zip](https://docs-assets.developer.apple.com/published/ba4910eaf1b0/IntegratingMusicKitIntoYourApp.zip)
 
 Enhance your workouts with Apple Music playback.
 
@@ -12,16 +14,16 @@ Enhance your workouts with Apple Music playback.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC26 session 254: [`Integrate MusicKit into your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc26/254).
+> **Note**: This sample code project is associated with WWDC26 session 254: [Integrate MusicKit into your app](https://developer.apple.com/videos/play/wwdc26/254).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 This sample code project doesn’t work in the simulator. Before you run the sample code project in Xcode, perform the following steps:
 
 1. In Xcode’s Project navigator, select the project, and click the Signing & Capabilities tab.
 2. From the Team pop-up menu, choose your developer team.
-3. In the Bundle Identifier field, enter a new bundle ID for the MusicKit2026WWDCSampleApp target. The bundle identifier for the project has an associated App ID, so you need a unique identifier to create your own App ID. Use a reverse-DNS format for your identifier, as [`Preparing your app for distribution `](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) describes.
-4. In Safari, visit the [`Certificates, Identifiers, and Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources) section of the Apple Developer website.
+3. In the Bundle Identifier field, enter a new bundle ID for the MusicKit2026WWDCSampleApp target. The bundle identifier for the project has an associated App ID, so you need a unique identifier to create your own App ID. Use a reverse-DNS format for your identifier, as [Preparing your app for distribution ](../Xcode/preparing-your-app-for-distribution.md) describes.
+4. In Safari, visit the [Certificates, Identifiers, and Profiles](https://developer.apple.com/account/resources) section of the Apple Developer website.
 5. Select Identifiers, and click the Add button to create a new App ID for MusicKit2026WWDCSampleApp. Follow the steps until you reach the Register an App ID page.
 6. For the Bundle ID, select Explicit, and enter the bundle ID from step 2.
 7. Click the App Services tab, and select the MusicKit checkbox.

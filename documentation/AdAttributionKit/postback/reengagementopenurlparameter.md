@@ -1,7 +1,8 @@
 # reengagementOpenURLParameter
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string that represents the query parameter that AdAttributionKit appends to the URL to indicate that a reengagement has occurred.
 
@@ -18,7 +19,7 @@ static var reengagementOpenURLParameter: String { get }
 
 ## Mentions
 
-- [Receiving ad attributions and postbacks](receiving-ad-attributions-and-postbacks.md)
+- [Receiving ad attributions and postbacks](../receiving-ad-attributions-and-postbacks.md)
 
 #### Discussion
 

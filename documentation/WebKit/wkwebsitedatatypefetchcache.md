@@ -1,7 +1,8 @@
 # WKWebsiteDataTypeFetchCache
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.3+
@@ -16,15 +17,20 @@
 let WKWebsiteDataTypeFetchCache: String
 ```
 
+```c
+extern NSString * const WKWebsiteDataTypeFetchCache;
+```
+
 ## See Also
 
-- [let WKErrorDomain: String](wkerrordomain.md)
+### Constants
+- [let WKErrorDomain: String](./wkerrordomain.md)
   String that identifies the WebKit error domain.
-- [let WKWebsiteDataTypeFileSystem: String](wkwebsitedatatypefilesystem.md)
-- [let WKWebsiteDataTypeHashSalt: String](wkwebsitedatatypehashsalt.md)
-- [let WKWebsiteDataTypeMediaKeys: String](wkwebsitedatatypemediakeys.md)
-- [let WKWebsiteDataTypeSearchFieldRecentSearches: String](wkwebsitedatatypesearchfieldrecentsearches.md)
-- [let WKWebsiteDataTypeServiceWorkerRegistrations: String](wkwebsitedatatypeserviceworkerregistrations.md)
+- [let WKWebsiteDataTypeFileSystem: String](./wkwebsitedatatypefilesystem.md)
+- [let WKWebsiteDataTypeHashSalt: String](./wkwebsitedatatypehashsalt.md)
+- [let WKWebsiteDataTypeMediaKeys: String](./wkwebsitedatatypemediakeys.md)
+- [let WKWebsiteDataTypeSearchFieldRecentSearches: String](./wkwebsitedatatypesearchfieldrecentsearches.md)
+- [let WKWebsiteDataTypeServiceWorkerRegistrations: String](./wkwebsitedatatypeserviceworkerregistrations.md)
 
 
 ---

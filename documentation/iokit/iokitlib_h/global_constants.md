@@ -1,11 +1,12 @@
 # Global Constants
 
-**Framework**: IOKit
+**Framework**: IOKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let kIOMasterPortDefault: mach_port_t](kiomasterportdefault.md)
+- [let kIOMasterPortDefault: mach_port_t](../kiomasterportdefault.md)
   The default mach port used to initiate communication with IOKit.
 
 

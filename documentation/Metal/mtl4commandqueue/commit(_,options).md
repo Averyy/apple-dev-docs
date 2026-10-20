@@ -1,7 +1,8 @@
 # commit(_:options:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enqueues an array of command buffer instances for execution with a set of options.
 
@@ -21,9 +22,9 @@ func commit(_ commandBuffers: [any MTL4CommandBuffer], options: MTL4CommitOption
 
 #### Discussion
 
-Provide an [`MTL4CommitOptions`](mtl4commitoptions.md) instance to configure the commit operation.
+Provide an [`MTL4CommitOptions`](../mtl4commitoptions.md) instance to configure the commit operation.
 
-The order in which you sort the command buffers in the array is meaningful, especially when it contains suspending/resuming render passes. A suspending/resuming render pass is a render pass you create by calling [`makeRenderCommandEncoder(descriptor:options:)`](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md), and provide `MTL4RenderEncoderOptionSuspending` or `MTL4RenderEncoderOptionResuming` for the `options` parameter.
+The order in which you sort the command buffers in the array is meaningful, especially when it contains suspending/resuming render passes. A suspending/resuming render pass is a render pass you create by calling [`makeRenderCommandEncoder(descriptor:options:)`](../mtl4commandbuffer/makerendercommandencoder%28descriptor,options%29.md), and provide `MTL4RenderEncoderOptionSuspending` or `MTL4RenderEncoderOptionResuming` for the `options` parameter.
 
 If your command buffers contain suspend/resume render passes, ensure that the first command buffer only suspends, and the last one only resumes. Additionally, make sure that all intermediate command buffers are both suspending and resuming.
 
@@ -31,8 +32,8 @@ When you commit work from multiple threads, modifying and reusing the same optio
 
 ## Parameters
 
-- `commandBuffers`: A Swift array of [`MTL4CommandBuffer`](mtl4commandbuffer.md) instances to commit.
-- `options`: An instance of [`MTL4CommitOptions`](mtl4commitoptions.md) that configures the commit operation.
+- `commandBuffers`: A Swift array of [`MTL4CommandBuffer`](../mtl4commandbuffer.md) instances to commit.
+- `options`: An instance of [`MTL4CommitOptions`](../mtl4commitoptions.md) that configures the commit operation.
 
 
 ---

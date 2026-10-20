@@ -1,7 +1,8 @@
 # cpusubtype
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An integer specifying the exact model of the CPU. To run on all PowerPC processors supported by the macOS kernel, this should be set to `CPU_SUBTYPE_POWERPC_ALL`.
 
@@ -10,7 +11,7 @@ An integer specifying the exact model of the CPU. To run on all PowerPC processo
 
 ## Declaration
 
-```swift
+```c
 cpu_subtype_t cpusubtype;
 ```
 

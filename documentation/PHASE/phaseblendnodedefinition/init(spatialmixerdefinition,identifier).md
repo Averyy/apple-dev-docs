@@ -1,7 +1,8 @@
 # init(spatialMixerDefinition:identifier:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named blend node for spatial audio output.
 
@@ -19,6 +20,10 @@ Creates a named blend node for spatial audio output.
 convenience init(spatialMixerDefinition: PHASESpatialMixerDefinition, identifier: String)
 ```
 
+```objc
+- (instancetype) initDistanceBlendWithSpatialMixerDefinition:(PHASESpatialMixerDefinition *) spatialMixerDefinition identifier:(NSString *) identifier;
+```
+
 ## Parameters
 
 - `spatialMixerDefinition`: An object that combines spatial audio layers.
@@ -26,11 +31,12 @@ convenience init(spatialMixerDefinition: PHASESpatialMixerDefinition, identifier
 
 ## See Also
 
-- [init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition)](phaseblendnodedefinition/init(blendmetaparameterdefinition:).md)
+### Creating a Blend Node
+- [init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition)](./init%28blendmetaparameterdefinition%29.md)
   Creates a blend node with a maxiumum blend range value.
-- [convenience init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition, identifier: String)](phaseblendnodedefinition/init(blendmetaparameterdefinition:identifier:).md)
+- [convenience init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinition, identifier: String)](./init%28blendmetaparameterdefinition,identifier%29.md)
   Creates a named blend node with a maxiumum blend range value.
-- [init(spatialMixerDefinition: PHASESpatialMixerDefinition)](phaseblendnodedefinition/init(spatialmixerdefinition:).md)
+- [init(spatialMixerDefinition: PHASESpatialMixerDefinition)](./init%28spatialmixerdefinition%29.md)
   Creates a blend node for spatial audio output.
 
 

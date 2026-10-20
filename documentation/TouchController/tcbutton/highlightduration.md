@@ -1,7 +1,8 @@
 # highlightDuration
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time it takes for a highlight to fade away, in seconds.
 
@@ -16,9 +17,14 @@ The time it takes for a highlight to fade away, in seconds.
 var highlightDuration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSTimeInterval highlightDuration;
+```
+
 ## See Also
 
-- [var contents: TCControlContents?](tcbutton/contents.md)
+### Inspecting a button
+- [var contents: TCControlContents?](./contents.md)
   The contents for the button in its normal state.
 
 

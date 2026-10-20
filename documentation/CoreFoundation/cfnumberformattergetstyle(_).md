@@ -1,23 +1,28 @@
 # CFNumberFormatterGetStyle(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number style used to create the given number formatter object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFNumberFormatterGetStyle(_ formatter: CFNumberFormatter!) -> CFNumberFormatterStyle
+```
+
+```c
+extern CFNumberFormatterStyle CFNumberFormatterGetStyle(CFNumberFormatterRef formatter);
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ The number style used to create `formatter`.
 
 ## See Also
 
-- [func CFNumberFormatterCopyProperty(CFNumberFormatter!, CFNumberFormatterKey!) -> CFTypeRef!](cfnumberformattercopyproperty(_:_:).md)
+### Examining a Number Formatter
+- [func CFNumberFormatterCopyProperty(CFNumberFormatter!, CFNumberFormatterKey!) -> CFTypeRef!](./cfnumberformattercopyproperty%28_,_%29.md)
   Returns a copy of a number formatter’s value for a given key.
-- [func CFNumberFormatterGetFormat(CFNumberFormatter!) -> CFString!](cfnumberformattergetformat(_:).md)
+- [func CFNumberFormatterGetFormat(CFNumberFormatter!) -> CFString!](./cfnumberformattergetformat%28_%29.md)
   Returns a format string for the given number formatter object.
-- [func CFNumberFormatterGetLocale(CFNumberFormatter!) -> CFLocale!](cfnumberformattergetlocale(_:).md)
+- [func CFNumberFormatterGetLocale(CFNumberFormatter!) -> CFLocale!](./cfnumberformattergetlocale%28_%29.md)
   Returns the locale object used to create the given number formatter object.
 
 

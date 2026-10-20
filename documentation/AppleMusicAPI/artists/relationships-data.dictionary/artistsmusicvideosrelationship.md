@@ -1,7 +1,8 @@
 # Artists.Relationships.ArtistsMusicVideosRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the artist to its music videos.
 
@@ -10,7 +11,7 @@ A relationship from the artist to its music videos.
 
 ## Declaration
 
-```swift
+```
 object Artists.Relationships.ArtistsMusicVideosRelationship
 ```
 
@@ -22,13 +23,14 @@ object Artists.Relationships.ArtistsMusicVideosRelationship
 
 ## See Also
 
-- [object Artists.Relationships.ArtistsAlbumsRelationship](artists/relationships-data.dictionary/artistsalbumsrelationship.md)
+### Related Objects
+- [object Artists.Relationships.ArtistsAlbumsRelationship](./artistsalbumsrelationship.md)
   A relationship from the artist to its albums.
-- [object Artists.Relationships.ArtistsGenresRelationship](artists/relationships-data.dictionary/artistsgenresrelationship.md)
+- [object Artists.Relationships.ArtistsGenresRelationship](./artistsgenresrelationship.md)
   A relationship from the artist to its genres.
-- [object Artists.Relationships.ArtistsPlaylistsRelationship](artists/relationships-data.dictionary/artistsplaylistsrelationship.md)
+- [object Artists.Relationships.ArtistsPlaylistsRelationship](./artistsplaylistsrelationship.md)
   A relationship from the artist to its playlists.
-- [object Artists.Relationships.ArtistsStationRelationship](artists/relationships-data.dictionary/artistsstationrelationship.md)
+- [object Artists.Relationships.ArtistsStationRelationship](./artistsstationrelationship.md)
   A relationship from the artist to its station.
 
 

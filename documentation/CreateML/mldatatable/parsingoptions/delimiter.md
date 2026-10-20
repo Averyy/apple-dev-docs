@@ -1,7 +1,8 @@
 # delimiter
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character that separates the data fields in a CSV file.
 
@@ -21,9 +22,10 @@ var delimiter: String
 
 ## See Also
 
-- [var containsHeader: Bool](mldatatable/parsingoptions/containsheader.md)
+### Specifying the CSV file format
+- [var containsHeader: Bool](./containsheader.md)
   A Boolean value indicating whether an input CSV file contains a header.
-- [var lineTerminator: String](mldatatable/parsingoptions/lineterminator.md)
+- [var lineTerminator: String](./lineterminator.md)
   The character that represents the end of a line in a CSV file.
 
 

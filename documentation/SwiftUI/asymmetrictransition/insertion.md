@@ -1,7 +1,8 @@
 # insertion
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `Transition` defining the insertion phase of `self`.
 
@@ -22,7 +23,8 @@ var insertion: Insertion
 
 ## See Also
 
-- [var removal: Removal](asymmetrictransition/removal.md)
+### Getting transition properties
+- [var removal: Removal](./removal.md)
   The `Transition` defining the removal phase of `self`.
 
 

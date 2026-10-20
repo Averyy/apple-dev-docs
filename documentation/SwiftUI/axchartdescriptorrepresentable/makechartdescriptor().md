@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Create the `AXChartDescriptor` for this view, and return it.
@@ -27,7 +28,8 @@ This will be called once per identity of your `View`. It will not be run again u
 
 ## See Also
 
-- [func updateChartDescriptor(AXChartDescriptor)](axchartdescriptorrepresentable/updatechartdescriptor(_:).md)
+### Managing a descriptor
+- [func updateChartDescriptor(AXChartDescriptor)](./updatechartdescriptor%28_%29.md)
   Update the existing `AXChartDescriptor` for your view, based on changes in your view or in the `Environment`.
 
 

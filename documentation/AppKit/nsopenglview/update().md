@@ -1,12 +1,15 @@
 # update()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by Cocoa when the view’s window moves or when the view itself moves or is resized.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use MTKView instead.
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Called by Cocoa when the view’s window moves or when the view itself moves or 
 func update()
 ```
 
+```objc
+- (void) update;
+```
+
 #### Discussion
 
-The default implementation simply calls the [`update()`](nsopenglcontext/update().md) method of [`NSOpenGLContext`](nsopenglcontext.md). You can override this method to perform additional update operations on the context or if you need to add locks for multithreaded access to multiple contexts.
+The default implementation simply calls the [`update()`](../nsopenglcontext/update%28%29.md) method of [`NSOpenGLContext`](../nsopenglcontext.md). You can override this method to perform additional update operations on the context or if you need to add locks for multithreaded access to multiple contexts.
 
 ## See Also
 
-- [func reshape()](nsopenglview/reshape.md)
+### Managing the Visible Region
+- [func reshape()](./reshape%28%29.md)
   Called by Cocoa when the view’s visible rectangle or bounds change.
 
 

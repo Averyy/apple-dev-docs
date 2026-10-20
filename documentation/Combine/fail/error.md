@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The failure to send when terminating the publisher.
 

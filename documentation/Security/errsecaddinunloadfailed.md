@@ -1,7 +1,8 @@
 # errSecAddinUnloadFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The add-in unload operation failed.
 
@@ -18,6 +19,10 @@ The add-in unload operation failed.
 
 ```swift
 var errSecAddinUnloadFailed: OSStatus { get }
+```
+
+```c
+errSecAddinUnloadFailed
 ```
 
 

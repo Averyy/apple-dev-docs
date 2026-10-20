@@ -1,7 +1,8 @@
 # AttributedString.UTF8View
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view of an attributed string’s contents as a collection of UTF-8 code units.
 
@@ -23,18 +24,18 @@ struct UTF8View
 ## Topics
 
 ### Type Aliases
-- [AttributedString.UTF8View.Subsequence](attributedstring/utf8view/subsequence.md)
+- [AttributedString.UTF8View.Subsequence](./utf8view/subsequence.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

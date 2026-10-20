@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a nested property on a collection element by index.
 
@@ -31,7 +32,7 @@ result.value[0].name == nil
 CreateCoffeeIntent.makeIntent(customerName: result.value[0].name)
 ```
 
-For more information about dynamic-member syntax, see [`dynamicMemberLookup`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes#dynamicMemberLookup) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
+For more information about dynamic-member syntax, see [dynamicMemberLookup](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes#dynamicMemberLookup) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 
 
 ---

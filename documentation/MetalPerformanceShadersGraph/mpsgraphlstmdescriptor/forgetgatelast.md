@@ -1,7 +1,8 @@
 # forgetGateLast
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that controls the internal order of the LSTM gates.
 
@@ -17,6 +18,10 @@ A parameter that controls the internal order of the LSTM gates.
 
 ```swift
 var forgetGateLast: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL forgetGateLast;
 ```
 
 #### Discussion

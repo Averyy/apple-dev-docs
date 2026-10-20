@@ -1,7 +1,8 @@
 # magnetometerUpdateInterval
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interval, in seconds, at which the system delivers magnetometer data to the block handler.
 
@@ -17,21 +18,26 @@ The interval, in seconds, at which the system delivers magnetometer data to the 
 var magnetometerUpdateInterval: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSTimeInterval magnetometerUpdateInterval;
+```
+
 #### Discussion
 
-The supplies magnetometer data to the block handler specified in [`startMagnetometerUpdates(to:withHandler:)`](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md) at regular intervals determined by the value of this property. The interval unit are in seconds. The value of this property is capped to minimum and maximum values; the maximum value is determined by the maximum frequency supported by the hardware. If your app is sensitive to the intervals of magnetometer data, it should always check the timestamps of the delivered [`CMMagnetometerData`](cmmagnetometerdata.md) instances to determine the true update interval.
+The supplies magnetometer data to the block handler specified in [`startMagnetometerUpdates(to:withHandler:)`](./startmagnetometerupdates%28to,withhandler%29.md) at regular intervals determined by the value of this property. The interval unit are in seconds. The value of this property is capped to minimum and maximum values; the maximum value is determined by the maximum frequency supported by the hardware. If your app is sensitive to the intervals of magnetometer data, it should always check the timestamps of the delivered [`CMMagnetometerData`](../cmmagnetometerdata.md) instances to determine the true update interval.
 
 ## See Also
 
-- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md)
+### Managing Magnetometer Updates
+- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](./startmagnetometerupdates%28to,withhandler%29.md)
   Starts magnetometer updates on an operation queue and with a specified handler.
-- [func startMagnetometerUpdates()](cmmotionmanager/startmagnetometerupdates.md)
+- [func startMagnetometerUpdates()](./startmagnetometerupdates%28%29.md)
   Starts magnetometer updates without a block handler.
-- [func stopMagnetometerUpdates()](cmmotionmanager/stopmagnetometerupdates.md)
+- [func stopMagnetometerUpdates()](./stopmagnetometerupdates%28%29.md)
   Stops magnetometer updates.
-- [var magnetometerData: CMMagnetometerData?](cmmotionmanager/magnetometerdata.md)
+- [var magnetometerData: CMMagnetometerData?](./magnetometerdata.md)
   The latest sample of magnetometer data.
-- [typealias CMMagnetometerHandler](cmmagnetometerhandler.md)
+- [typealias CMMagnetometerHandler](../cmmagnetometerhandler.md)
   The type of block callback for handling magnetometer data.
 
 

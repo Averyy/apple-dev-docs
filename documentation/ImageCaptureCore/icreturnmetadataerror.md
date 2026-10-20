@@ -1,16 +1,17 @@
 # ICReturnMetadataError
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A metadata error returned from ImageCaptureCore.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -21,44 +22,45 @@ struct ICReturnMetadataError
 ## Topics
 
 ### Error Domain
-- [let ICErrorDomain: String](icerrordomain.md)
+- [let ICErrorDomain: String](./icerrordomain.md)
   An error returned by the ImageCaptureCore framework.
 ### Error Codes
-- [static var alreadyFetching: ICReturnMetadataError.Code](icreturnmetadataerror/alreadyfetching.md)
+- [static var alreadyFetching: ICReturnMetadataError.Code](./icreturnmetadataerror/alreadyfetching.md)
   Item metadata request is being serviced.
-- [static var canceled: ICReturnMetadataError.Code](icreturnmetadataerror/canceled.md)
+- [static var canceled: ICReturnMetadataError.Code](./icreturnmetadataerror/canceled.md)
   Item metadata request has been canceled.
-- [static var invalid: ICReturnMetadataError.Code](icreturnmetadataerror/invalid.md)
+- [static var invalid: ICReturnMetadataError.Code](./icreturnmetadataerror/invalid.md)
   Item metadata request completed with invalid result.
-- [static var notAvailable: ICReturnMetadataError.Code](icreturnmetadataerror/notavailable.md)
+- [static var notAvailable: ICReturnMetadataError.Code](./icreturnmetadataerror/notavailable.md)
   Item does not have metadata available.
-- [ICReturnMetadataError.Code](icreturnmetadataerror/code.md)
+- [ICReturnMetadataError.Code](./icreturnmetadataerror/code.md)
 ### Type Properties
-- [static var errorDomain: String](icreturnmetadataerror/errordomain.md)
+- [static var errorDomain: String](./icreturnmetadataerror/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ICReturn](icreturn.md)
-- [struct ICLegacyReturn](iclegacyreturn.md)
-- [struct ICReturnConnectionError](icreturnconnectionerror.md)
+### Errors
+- [struct ICReturn](./icreturn.md)
+- [struct ICLegacyReturn](./iclegacyreturn.md)
+- [struct ICReturnConnectionError](./icreturnconnectionerror.md)
   A connection error returned from ImageCaptureCore.
-- [struct ICReturnDownloadError](icreturndownloaderror.md)
+- [struct ICReturnDownloadError](./icreturndownloaderror.md)
   A download error returned from ImageCaptureCore.
-- [struct ICReturnObjectError](icreturnobjecterror.md)
+- [struct ICReturnObjectError](./icreturnobjecterror.md)
   An object error returned from ImageCaptureCore.
-- [struct ICReturnPTPDeviceError](icreturnptpdeviceerror.md)
+- [struct ICReturnPTPDeviceError](./icreturnptpdeviceerror.md)
   A PTP device error returned from ImageCaptureCore.
-- [struct ICReturnThumbnailError](icreturnthumbnailerror.md)
+- [struct ICReturnThumbnailError](./icreturnthumbnailerror.md)
   A thumbnail error returned from ImageCaptureCore.
 
 

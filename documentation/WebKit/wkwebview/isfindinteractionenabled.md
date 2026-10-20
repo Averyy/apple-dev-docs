@@ -1,7 +1,8 @@
 # isFindInteractionEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,9 +16,14 @@
 var isFindInteractionEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isFindInteractionEnabled) BOOL findInteractionEnabled;
+```
+
 ## See Also
 
-- [var findInteraction: UIFindInteraction?](wkwebview/findinteraction.md)
+### Supporting Find and Replace
+- [var findInteraction: UIFindInteraction?](./findinteraction.md)
 
 
 ---

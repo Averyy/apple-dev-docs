@@ -1,7 +1,8 @@
 # NSTextBlock.Dimension.minimumWidth
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Minimum width of the text block.
 
@@ -14,17 +15,22 @@ Minimum width of the text block.
 case minimumWidth
 ```
 
+```c
+NSTextBlockDimensionMinimumWidth
+```
+
 ## See Also
 
-- [NSTextBlock.Dimension.width](nstextblock/dimension/width.md)
+### Constants
+- [NSTextBlock.Dimension.width](./width.md)
   Width of the text block.
-- [NSTextBlock.Dimension.maximumWidth](nstextblock/dimension/maximumwidth.md)
+- [NSTextBlock.Dimension.maximumWidth](./maximumwidth.md)
   Maximum width of the text block.
-- [NSTextBlock.Dimension.height](nstextblock/dimension/height.md)
+- [NSTextBlock.Dimension.height](./height.md)
   Height of the text block.
-- [NSTextBlock.Dimension.minimumHeight](nstextblock/dimension/minimumheight.md)
+- [NSTextBlock.Dimension.minimumHeight](./minimumheight.md)
   Minimum height of the text block.
-- [NSTextBlock.Dimension.maximumHeight](nstextblock/dimension/maximumheight.md)
+- [NSTextBlock.Dimension.maximumHeight](./maximumheight.md)
   Maximum height of the text block.
 
 

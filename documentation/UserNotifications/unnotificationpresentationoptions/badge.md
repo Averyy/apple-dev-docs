@@ -1,7 +1,8 @@
 # badge
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Apply the notification’s badge value to the app’s icon.
 
@@ -20,15 +21,20 @@ Apply the notification’s badge value to the app’s icon.
 static var badge: UNNotificationPresentationOptions { get }
 ```
 
+```c
+UNNotificationPresentationOptionBadge
+```
+
 ## See Also
 
-- [static var banner: UNNotificationPresentationOptions](unnotificationpresentationoptions/banner.md)
+### Constants
+- [static var banner: UNNotificationPresentationOptions](./banner.md)
   Present the notification as a banner.
-- [static var list: UNNotificationPresentationOptions](unnotificationpresentationoptions/list.md)
+- [static var list: UNNotificationPresentationOptions](./list.md)
   Show the notification in Notification Center.
-- [static var sound: UNNotificationPresentationOptions](unnotificationpresentationoptions/sound.md)
+- [static var sound: UNNotificationPresentationOptions](./sound.md)
   Play the sound associated with the notification.
-- [static var alert: UNNotificationPresentationOptions](unnotificationpresentationoptions/alert.md)
+- [static var alert: UNNotificationPresentationOptions](./alert.md)
   Display the alert using the content provided by the notification.
 
 

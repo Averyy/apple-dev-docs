@@ -1,7 +1,8 @@
 # updateAttributeNamed(_:with:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -17,29 +18,34 @@
 func updateAttributeNamed(_ name: String, with newData: MDLVertexAttributeData)
 ```
 
+```objc
+- (void) updateAttributeNamed:(NSString *) name withData:(MDLVertexAttributeData *) newData;
+```
+
 ## See Also
 
-- [var boundingBox: MDLAxisAlignedBoundingBox](mdlmesh/boundingbox.md)
+### Working with Vertex Data
+- [var boundingBox: MDLAxisAlignedBoundingBox](./boundingbox.md)
   The minimum region entirely enclosing the mesh’s vertex positions, expressed in the model coordinate system of the mesh.
-- [var submeshes: NSMutableArray?](mdlmesh/submeshes.md)
+- [var submeshes: NSMutableArray?](./submeshes.md)
   The array of submeshes to be used in rendering the mesh.
-- [var vertexBuffers: [any MDLMeshBuffer]](mdlmesh/vertexbuffers.md)
+- [var vertexBuffers: [any MDLMeshBuffer]](./vertexbuffers.md)
   The array of buffers that provide vertex data for the mesh.
-- [var vertexCount: Int](mdlmesh/vertexcount.md)
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the mesh.
-- [var vertexDescriptor: MDLVertexDescriptor](mdlmesh/vertexdescriptor.md)
+- [var vertexDescriptor: MDLVertexDescriptor](./vertexdescriptor.md)
   A description of the format and layout of the mesh’s vertex buffers.
-- [var allocator: any MDLMeshBufferAllocator](mdlmesh/allocator.md)
-- [func addAttribute(withName: String, format: MDLVertexFormat)](mdlmesh/addattribute(withname:format:).md)
+- [var allocator: any MDLMeshBufferAllocator](./allocator.md)
+- [func addAttribute(withName: String, format: MDLVertexFormat)](./addattribute%28withname,format%29.md)
   Adds a vertex attribute to the mesh and creates a new, empty corresponding vertex buffer.
-- [func addAttribute(withName: String, format: MDLVertexFormat, type: String, data: Data, stride: Int)](mdlmesh/addattribute(withname:format:type:data:stride:).md)
-- [func addAttribute(withName: String, format: MDLVertexFormat, type: String, data: Data, stride: Int, time: TimeInterval)](mdlmesh/addattribute(withname:format:type:data:stride:time:).md)
-- [func removeAttributeNamed(String)](mdlmesh/removeattributenamed(_:).md)
-- [func replaceAttributeNamed(String, with: MDLVertexAttributeData)](mdlmesh/replaceattributenamed(_:with:).md)
-- [func addUnwrappedTextureCoordinates(forAttributeNamed: String)](mdlmesh/addunwrappedtexturecoordinates(forattributenamed:).md)
-- [func vertexAttributeData(forAttributeNamed: String) -> MDLVertexAttributeData?](mdlmesh/vertexattributedata(forattributenamed:).md)
+- [func addAttribute(withName: String, format: MDLVertexFormat, type: String, data: Data, stride: Int)](./addattribute%28withname,format,type,data,stride%29.md)
+- [func addAttribute(withName: String, format: MDLVertexFormat, type: String, data: Data, stride: Int, time: TimeInterval)](./addattribute%28withname,format,type,data,stride,time%29.md)
+- [func removeAttributeNamed(String)](./removeattributenamed%28_%29.md)
+- [func replaceAttributeNamed(String, with: MDLVertexAttributeData)](./replaceattributenamed%28_,with%29.md)
+- [func addUnwrappedTextureCoordinates(forAttributeNamed: String)](./addunwrappedtexturecoordinates%28forattributenamed%29.md)
+- [func vertexAttributeData(forAttributeNamed: String) -> MDLVertexAttributeData?](./vertexattributedata%28forattributenamed%29.md)
   Returns the vertex data for the specified attribute.
-- [func vertexAttributeData(forAttributeNamed: String, as: MDLVertexFormat) -> MDLVertexAttributeData?](mdlmesh/vertexattributedata(forattributenamed:as:).md)
+- [func vertexAttributeData(forAttributeNamed: String, as: MDLVertexFormat) -> MDLVertexAttributeData?](./vertexattributedata%28forattributenamed,as%29.md)
 
 
 ---

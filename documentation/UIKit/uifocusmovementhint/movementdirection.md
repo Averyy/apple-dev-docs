@@ -1,7 +1,8 @@
 # movementDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A vector representing how close focus is to moving to another item in the swiped direction.
 
@@ -16,6 +17,10 @@ A vector representing how close focus is to moving to another item in the swiped
 
 ```swift
 var movementDirection: CGVector { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGVector movementDirection;
 ```
 
 

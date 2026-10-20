@@ -1,7 +1,8 @@
 # AVCaptureDevice.FocusMode.locked
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that locks device focus.
 
@@ -18,11 +19,16 @@ A mode that locks device focus.
 case locked
 ```
 
+```c
+AVCaptureFocusModeLocked
+```
+
 ## See Also
 
-- [AVCaptureDevice.FocusMode.autoFocus](avcapturedevice/focusmode-swift.enum/autofocus.md)
+### Focus modes
+- [AVCaptureDevice.FocusMode.autoFocus](./autofocus.md)
   A mode that automatically adjusts the focus one time, and then locks focus.
-- [AVCaptureDevice.FocusMode.continuousAutoFocus](avcapturedevice/focusmode-swift.enum/continuousautofocus.md)
+- [AVCaptureDevice.FocusMode.continuousAutoFocus](./continuousautofocus.md)
   A mode that continuously monitors focus and autofocuses when necessary.
 
 

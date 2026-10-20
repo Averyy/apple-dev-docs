@@ -1,7 +1,8 @@
 # soundEvents
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of the sounds that play under various runtime circumstances.
 
@@ -17,6 +18,10 @@ A collection of the sounds that play under various runtime circumstances.
 
 ```swift
 var soundEvents: [PHASESoundEvent] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<PHASESoundEvent *> * soundEvents;
 ```
 
 

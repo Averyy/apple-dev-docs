@@ -1,7 +1,8 @@
 # minus(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes each object in another given ordered set from the receiving mutable ordered set, if present.
 
@@ -20,21 +21,26 @@ Removes each object in another given ordered set from the receiving mutable orde
 func minus(_ other: NSOrderedSet)
 ```
 
+```objc
+- (void) minusOrderedSet:(NSOrderedSet<id> *) other;
+```
+
 ## Parameters
 
 - `other`: The ordered set of objects to remove from the receiving set.
 
 ## See Also
 
-- [func intersect(NSOrderedSet)](nsmutableorderedset/intersect(_:).md)
+### Combining and Recombining Entries
+- [func intersect(NSOrderedSet)](./intersect%28_%29.md)
   Removes from the receiving ordered set each object that isn’t a member of another ordered set.
-- [func intersectSet(Set<AnyHashable>)](nsmutableorderedset/intersectset(_:).md)
+- [func intersectSet(Set<AnyHashable>)](./intersectset%28_%29.md)
   Removes from the receiving ordered set each object that isn’t a member of another set.
-- [func minusSet(Set<AnyHashable>)](nsmutableorderedset/minusset(_:).md)
+- [func minusSet(Set<AnyHashable>)](./minusset%28_%29.md)
   Removes each object in another given set from the receiving mutable ordered set, if present.
-- [func union(NSOrderedSet)](nsmutableorderedset/union(_:).md)
+- [func union(NSOrderedSet)](./union%28_%29.md)
   Adds each object in another given ordered set to the receiving mutable ordered set, if not present.
-- [func unionSet(Set<AnyHashable>)](nsmutableorderedset/unionset(_:).md)
+- [func unionSet(Set<AnyHashable>)](./unionset%28_%29.md)
   Adds each object in another given set to the receiving mutable ordered set, if not present.
 
 

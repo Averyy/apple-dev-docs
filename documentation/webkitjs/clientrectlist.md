@@ -1,7 +1,8 @@
 # ClientRectList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface ClientRectList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](clientrectlist/1634320-length.md)
+- [length](./clientrectlist/api-1634320-length.md)
 ### Instance Methods
-- [item](clientrectlist/1632003-item.md)
+- [item](./clientrectlist/api-1632003-item.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # reviewFabricRestrictions(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ReviewFabricRestrictions
 
@@ -17,7 +18,15 @@ Command ReviewFabricRestrictions
 ## Declaration
 
 ```swift
+func reviewFabricRestrictions(with params: MTRAccessControlClusterReviewFabricRestrictionsParams, completion: @escaping @Sendable (MTRAccessControlClusterReviewFabricRestrictionsResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func reviewFabricRestrictions(with params: MTRAccessControlClusterReviewFabricRestrictionsParams) async throws -> MTRAccessControlClusterReviewFabricRestrictionsResponseParams
+```
+
+```objc
+- (void) reviewFabricRestrictionsWithParams:(MTRAccessControlClusterReviewFabricRestrictionsParams *) params completion:(void (^)(MTRAccessControlClusterReviewFabricRestrictionsResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

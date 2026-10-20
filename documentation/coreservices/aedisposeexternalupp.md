@@ -1,7 +1,8 @@
 # AEDisposeExternalUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a universal procedure pointer to a function the Apple Event Manager calls to dispose of a descriptor created by the `AECreateDescFromExternalPtr` function.
 
@@ -15,9 +16,13 @@ Defines a universal procedure pointer to a function the Apple Event Manager call
 typealias AEDisposeExternalUPP = AEDisposeExternalProcPtr
 ```
 
+```c
+typedef AEDisposeExternalProcPtr AEDisposeExternalUPP;
+```
+
 #### Discussion
 
-See the [`AEDisposeExternalProcPtr`](aedisposeexternalprocptr.md) callback function. 
+See the [`AEDisposeExternalProcPtr`](./aedisposeexternalprocptr.md) callback function. 
 
 
 ---

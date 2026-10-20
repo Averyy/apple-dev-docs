@@ -1,7 +1,8 @@
 # count
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of layers in the set.
 
@@ -21,9 +22,10 @@ var count: Int { get }
 
 ## See Also
 
-- [var isEmpty: Bool](renderlayer/set/isempty.md)
+### Inspecting the set
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the set contains no layers.
-- [func contains(RenderLayer) -> Bool](renderlayer/set/contains(_:).md)
+- [func contains(RenderLayer) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the set contains the given layer.
 
 

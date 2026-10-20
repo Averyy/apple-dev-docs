@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom font from a platform font instance.
 
@@ -22,7 +23,7 @@ init(_ font: CTFont)
 
 #### Discussion
 
-Initializing [`Font`](font.md) with platform font instance ([`CTFont`](https://developer.apple.com/documentation/coretext/ctfont)) can bridge SwiftUI [`Font`](font.md) with [`NSFont`](https://developer.apple.com/documentation/appkit/nsfont) or [`UIFont`](https://developer.apple.com/documentation/uikit/uifont), both of which are toll-free bridged to [`CTFont`](https://developer.apple.com/documentation/coretext/ctfont). For example:
+Initializing [`Font`](../font.md) with platform font instance ([`CTFont`](../../CoreText/ctfont.md)) can bridge SwiftUI [`Font`](../font.md) with [`NSFont`](../../AppKit/nsfont.md) or [`UIFont`](../../UIKit/uifont.md), both of which are toll-free bridged to [`CTFont`](../../CoreText/ctfont.md). For example:
 
 ```swift
 // Use native Core Text API to create desired ctFont.

@@ -1,7 +1,8 @@
 # bottomBar
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement that locates the compact picker in a bar near the bottom of the main scroll view in a subscription store view.
 
@@ -24,10 +25,11 @@ The bottom bar conditonally applies a special visual treatment when it overlaps 
 
 ## See Also
 
-- [static var automatic: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/automatic.md)
-- [static var buttonsInBottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/buttonsinbottombar.md)
+### Getting a placement
+- [static var automatic: CompactPickerSubscriptionStoreControlStyle.Placement](./automatic.md)
+- [static var buttonsInBottomBar: CompactPickerSubscriptionStoreControlStyle.Placement](./buttonsinbottombar.md)
   A hybrid placement that positions subscription controls within the main scroll view, and places auxiliary buttons in the bottom bar.
-- [static var scrollView: CompactPickerSubscriptionStoreControlStyle.Placement](compactpickersubscriptionstorecontrolstyle/placement/scrollview.md)
+- [static var scrollView: CompactPickerSubscriptionStoreControlStyle.Placement](./scrollview.md)
 
 
 ---

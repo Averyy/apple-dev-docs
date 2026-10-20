@@ -1,7 +1,8 @@
 # maximumRating
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum app rating the user can download.
 
@@ -29,7 +30,8 @@ The value is `nil` if your app doesn’t constrain this setting. The following l
 
 ## See Also
 
-- [static let maximumRating: BoundedSettingMetadata<Int>](appstoresettings/maximumrating-swift.type.property.md)
+### Setting an app rating limit
+- [static let maximumRating: BoundedSettingMetadata<Int>](./maximumrating-swift.type.property.md)
   The metadata associated with the maximum app rating setting.
 
 

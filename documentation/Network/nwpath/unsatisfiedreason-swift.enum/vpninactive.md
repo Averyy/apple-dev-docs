@@ -1,7 +1,8 @@
 # NWPath.UnsatisfiedReason.vpnInactive
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+

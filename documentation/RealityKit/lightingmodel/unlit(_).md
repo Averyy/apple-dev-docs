@@ -1,7 +1,8 @@
 # LightingModel.unlit(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ case unlit(UnlitLightingModel)
 
 ## See Also
 
-- [static func unlit(isTonemappingEnabled: Bool) -> LightingModel](lightingmodel/unlit(istonemappingenabled:).md)
+### Creating an unlit model
+- [static func unlit(isTonemappingEnabled: Bool) -> LightingModel](./unlit%28istonemappingenabled%29.md)
 
 
 ---

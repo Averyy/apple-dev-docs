@@ -1,7 +1,8 @@
 # eraserType
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior adopted by the eraser when deleting content.
 
@@ -20,7 +21,8 @@ var eraserType: PKEraserTool.EraserType { get set }
 
 ## See Also
 
-- [PKEraserTool.EraserType](pkerasertool-swift.struct/erasertype-swift.enum.md)
+### Getting the eraser type
+- [PKEraserTool.EraserType](./erasertype-swift.enum.md)
   Constants that indicate the behavior of the eraser.
 
 

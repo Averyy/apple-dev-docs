@@ -1,7 +1,8 @@
 # xml
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A store that reads from and writes to a persistent XML file.
 
@@ -16,15 +17,16 @@ static let xml: NSPersistentStore.StoreType
 
 #### Discussion
 
-An XML store is atomic, which means Core Data reads and writes the file in its entirety. This behavior is different from a [`sqlite`](nspersistentstore/storetype/sqlite.md) store, which you can partially modify.
+An XML store is atomic, which means Core Data reads and writes the file in its entirety. This behavior is different from a [`sqlite`](./sqlite.md) store, which you can partially modify.
 
 ## See Also
 
-- [static let binary: NSPersistentStore.StoreType](nspersistentstore/storetype/binary.md)
+### Store Types
+- [static let binary: NSPersistentStore.StoreType](./binary.md)
   A store that reads from and writes to a persistent binary file.
-- [static let inMemory: NSPersistentStore.StoreType](nspersistentstore/storetype/inmemory.md)
+- [static let inMemory: NSPersistentStore.StoreType](./inmemory.md)
   An ephemeral store that reads from and writes to memory only.
-- [static let sqlite: NSPersistentStore.StoreType](nspersistentstore/storetype/sqlite.md)
+- [static let sqlite: NSPersistentStore.StoreType](./sqlite.md)
   A store that reads from and writes to a persistent SQLite database.
 
 

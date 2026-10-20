@@ -1,7 +1,8 @@
 # PKPayLaterDisplayStyle
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values you use to style an Apple Pay Later visual merchandising widget.
 
@@ -10,39 +11,46 @@ Values you use to style an Apple Pay Later visual merchandising widget.
 - iPadOS 17.0+
 - visionOS 1.0+
 
+> **Deprecated**: Apple Pay Later is deprecated.
+
 ## Declaration
 
 ```swift
 enum PKPayLaterDisplayStyle
 ```
 
+```c
+enum PKPayLaterDisplayStyle : NSInteger;
+```
+
 ## Topics
 
 ### Payment view display styles
-- [PKPayLaterDisplayStyle.standard](pkpaylaterdisplaystyle/standard.md)
+- [PKPayLaterDisplayStyle.standard](./pkpaylaterdisplaystyle/standard.md)
   The standard Apple Pay Later visual merchandising widget style.
-- [PKPayLaterDisplayStyle.badge](pkpaylaterdisplaystyle/badge.md)
+- [PKPayLaterDisplayStyle.badge](./pkpaylaterdisplaystyle/badge.md)
   Displays a badge that uses an Apple Pay Later icon.
-- [PKPayLaterDisplayStyle.checkout](pkpaylaterdisplaystyle/checkout.md)
+- [PKPayLaterDisplayStyle.checkout](./pkpaylaterdisplaystyle/checkout.md)
   A style used inside of a checkout view that presents Apple Pay and other payment options to the customer.
-- [PKPayLaterDisplayStyle.price](pkpaylaterdisplaystyle/price.md)
+- [PKPayLaterDisplayStyle.price](./pkpaylaterdisplaystyle/price.md)
   A style that shows the Apple Pay Later view beneath a product’s price.
 ### Initializers
-- [init?(rawValue: Int)](pkpaylaterdisplaystyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pkpaylaterdisplaystyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var displayStyle: PKPayLaterDisplayStyle](pkpaylaterview/displaystyle.md)
+### Styling the view
+- [var displayStyle: PKPayLaterDisplayStyle](./pkpaylaterview/displaystyle.md)
   The style to use when presenting the Apple Pay Later visual merchandising widget view.
 
 

@@ -1,7 +1,8 @@
 # authorizationDeniedGlobally
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the app has system-wide authorization.
 
@@ -19,26 +20,27 @@ var authorizationDeniedGlobally: Bool { get }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), then the app isn’t receiving location updates because it’s denied system-wide authorization.
+If this property is [`true`](../../../Swift/true.md), then the app isn’t receiving location updates because it’s denied system-wide authorization.
 
 ## See Also
 
-- [var accuracyLimited: Bool](clmonitor-2r51v/event/accuracylimited.md)
+### Event states
+- [var accuracyLimited: Bool](./accuracylimited.md)
   A Boolean value that indicates whether the app receives accuracy-limited location updates.
-- [var authorizationDenied: Bool](clmonitor-2r51v/event/authorizationdenied.md)
+- [var authorizationDenied: Bool](./authorizationdenied.md)
   A Boolean value that indicates whether the app has local authorization.
-- [var authorizationRequestInProgress: Bool](clmonitor-2r51v/event/authorizationrequestinprogress.md)
-- [var authorizationRestricted: Bool](clmonitor-2r51v/event/authorizationrestricted.md)
+- [var authorizationRequestInProgress: Bool](./authorizationrequestinprogress.md)
+- [var authorizationRestricted: Bool](./authorizationrestricted.md)
   A Boolean value that indicates whether the app can make authorization changes.
-- [var conditionLimitExceeded: Bool](clmonitor-2r51v/event/conditionlimitexceeded.md)
+- [var conditionLimitExceeded: Bool](./conditionlimitexceeded.md)
   A Boolean value that indicates whether the app receives location updates based on other monitoring conditions.
-- [var conditionUnsupported: Bool](clmonitor-2r51v/event/conditionunsupported.md)
+- [var conditionUnsupported: Bool](./conditionunsupported.md)
   A Boolean value that indicates whether the app receives location updates based on the supported condition.
-- [var insufficientlyInUse: Bool](clmonitor-2r51v/event/insufficientlyinuse.md)
+- [var insufficientlyInUse: Bool](./insufficientlyinuse.md)
   A Boolean value that indicates whether the app receives location updates because it’s insufficiently in use.
-- [var persistenceUnavailable: Bool](clmonitor-2r51v/event/persistenceunavailable.md)
+- [var persistenceUnavailable: Bool](./persistenceunavailable.md)
   A Boolean value that indicates whether it receives location updates based on successful persistence.
-- [var serviceSessionRequired: Bool](clmonitor-2r51v/event/servicesessionrequired.md)
+- [var serviceSessionRequired: Bool](./servicesessionrequired.md)
 
 
 ---

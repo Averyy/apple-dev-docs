@@ -1,7 +1,8 @@
 # kAXValueIndicatorRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A control that indicates the value of an accessibility object, such as the scroller of a scroll bar control
 
@@ -12,6 +13,10 @@ A control that indicates the value of an accessibility object, such as the scrol
 
 ```swift
 var kAXValueIndicatorRole: String { get }
+```
+
+```c
+#define kAXValueIndicatorRole
 ```
 
 

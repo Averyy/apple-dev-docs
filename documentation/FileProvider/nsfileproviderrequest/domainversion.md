@@ -1,7 +1,8 @@
 # domainVersion
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the domain for the request.
 
@@ -18,17 +19,22 @@ The version of the domain for the request.
 var domainVersion: NSFileProviderDomainVersion? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSFileProviderDomainVersion * domainVersion;
+```
+
 #### Discussion
 
-If the file provider extension doesn’t implement the [`NSFileProviderDomainState`](nsfileproviderdomainstate.md) protocol, this property is `nil`.
+If the file provider extension doesn’t implement the [`NSFileProviderDomainState`](../nsfileproviderdomainstate.md) protocol, this property is `nil`.
 
 ## See Also
 
-- [var requestingExecutable: URL?](nsfileproviderrequest/requestingexecutable.md)
+### Accessing Application Information
+- [var requestingExecutable: URL?](./requestingexecutable.md)
   The URL of the requesting executable.
-- [var isFileViewerRequest: Bool](nsfileproviderrequest/isfileviewerrequest.md)
+- [var isFileViewerRequest: Bool](./isfileviewerrequest.md)
   A Boolean value that indicates whether the request came from Finder or related system file browsers.
-- [var isSystemRequest: Bool](nsfileproviderrequest/issystemrequest.md)
+- [var isSystemRequest: Bool](./issystemrequest.md)
   A Boolean value that indicates whether the request came from a system process.
 
 

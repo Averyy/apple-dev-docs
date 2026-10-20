@@ -1,7 +1,8 @@
 # init(attribute:relativeTo:attribute:scale:offset:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `CAConstraint` object with the specified parameters. Designated initializer.
 
@@ -13,6 +14,10 @@ Returns an `CAConstraint` object with the specified parameters. Designated initi
 
 ```swift
 init(attribute attr: CAConstraintAttribute, relativeTo srcId: String, attribute srcAttr: CAConstraintAttribute, scale m: CGFloat, offset c: CGFloat)
+```
+
+```objc
+- (instancetype) initWithAttribute:(CAConstraintAttribute) attr relativeTo:(NSString *) srcId attribute:(CAConstraintAttribute) srcAttr scale:(CGFloat) m offset:(CGFloat) c;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ The value for the constraint is calculated as (`srcAttr` * `scale`) + `offset`).
 
 ## See Also
 
-- [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute, offset: CGFloat)](caconstraint/init(attribute:relativeto:attribute:offset:).md)
+### Create a New Constraint
+- [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute, offset: CGFloat)](./init%28attribute,relativeto,attribute,offset%29.md)
   Creates and returns an `CAConstraint` object with the specified parameters.
-- [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute)](caconstraint/init(attribute:relativeto:attribute:).md)
+- [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute)](./init%28attribute,relativeto,attribute%29.md)
   Creates and returns an `CAConstraint` object with the specified parameters.
 
 

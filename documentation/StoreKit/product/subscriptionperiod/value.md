@@ -1,7 +1,8 @@
 # value
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of period units.
 
@@ -22,13 +23,14 @@ let value: Int
 
 #### Discussion
 
-Use the value and the unit together to determine the subscription period. For example, if the [`unit`](product/subscriptionperiod/unit-swift.property.md) is [`Product.SubscriptionPeriod.Unit.month`](product/subscriptionperiod/unit-swift.enum/month.md), and the [`value`](product/subscriptionperiod/value.md) is `3`, the subscription period is three months.
+Use the value and the unit together to determine the subscription period. For example, if the [`unit`](./unit-swift.property.md) is [`Product.SubscriptionPeriod.Unit.month`](./unit-swift.enum/month.md), and the [`value`](./value.md) is `3`, the subscription period is three months.
 
 ## See Also
 
-- [let unit: Product.SubscriptionPeriod.Unit](product/subscriptionperiod/unit-swift.property.md)
+### Getting the subscription period
+- [let unit: Product.SubscriptionPeriod.Unit](./unit-swift.property.md)
   The increment of time for the subscription period.
-- [Product.SubscriptionPeriod.Unit](product/subscriptionperiod/unit-swift.enum.md)
+- [Product.SubscriptionPeriod.Unit](./unit-swift.enum.md)
   Units of time that describe subscription periods.
 
 

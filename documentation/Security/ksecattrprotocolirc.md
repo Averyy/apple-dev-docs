@@ -1,7 +1,8 @@
 # kSecAttrProtocolIRC
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 IRC protocol.
 
@@ -18,6 +19,10 @@ IRC protocol.
 
 ```swift
 let kSecAttrProtocolIRC: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolIRC;
 ```
 
 

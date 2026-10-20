@@ -1,7 +1,8 @@
 # Subscription.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,27 +11,27 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object Subscription.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object Subscription.Relationships.AppStoreReviewScreenshot](subscription/relationships-data.dictionary/appstorereviewscreenshot-data.dictionary.md)
-- [object Subscription.Relationships.Group](subscription/relationships-data.dictionary/group-data.dictionary.md)
-- [object Subscription.Relationships.Images](subscription/relationships-data.dictionary/images-data.dictionary.md)
-- [object Subscription.Relationships.IntroductoryOffers](subscription/relationships-data.dictionary/introductoryoffers-data.dictionary.md)
-- [object Subscription.Relationships.OfferCodes](subscription/relationships-data.dictionary/offercodes-data.dictionary.md)
-- [object Subscription.Relationships.PlanAvailabilities](subscription/relationships-data.dictionary/planavailabilities-data.dictionary.md)
-- [object Subscription.Relationships.PricePoints](subscription/relationships-data.dictionary/pricepoints-data.dictionary.md)
-- [object Subscription.Relationships.Prices](subscription/relationships-data.dictionary/prices-data.dictionary.md)
-- [object Subscription.Relationships.PromotedPurchase](subscription/relationships-data.dictionary/promotedpurchase-data.dictionary.md)
-- [object Subscription.Relationships.PromotionalOffers](subscription/relationships-data.dictionary/promotionaloffers-data.dictionary.md)
-- [object Subscription.Relationships.SubscriptionAvailability](subscription/relationships-data.dictionary/subscriptionavailability-data.dictionary.md)
-- [object Subscription.Relationships.SubscriptionLocalizations](subscription/relationships-data.dictionary/subscriptionlocalizations-data.dictionary.md)
-- [object Subscription.Relationships.Versions](subscription/relationships-data.dictionary/versions-data.dictionary.md)
-- [object Subscription.Relationships.WinBackOffers](subscription/relationships-data.dictionary/winbackoffers-data.dictionary.md)
+- [object Subscription.Relationships.AppStoreReviewScreenshot](./relationships-data.dictionary/appstorereviewscreenshot-data.dictionary.md)
+- [object Subscription.Relationships.Group](./relationships-data.dictionary/group-data.dictionary.md)
+- [object Subscription.Relationships.Images](./relationships-data.dictionary/images-data.dictionary.md)
+- [object Subscription.Relationships.IntroductoryOffers](./relationships-data.dictionary/introductoryoffers-data.dictionary.md)
+- [object Subscription.Relationships.OfferCodes](./relationships-data.dictionary/offercodes-data.dictionary.md)
+- [object Subscription.Relationships.PlanAvailabilities](./relationships-data.dictionary/planavailabilities-data.dictionary.md)
+- [object Subscription.Relationships.PricePoints](./relationships-data.dictionary/pricepoints-data.dictionary.md)
+- [object Subscription.Relationships.Prices](./relationships-data.dictionary/prices-data.dictionary.md)
+- [object Subscription.Relationships.PromotedPurchase](./relationships-data.dictionary/promotedpurchase-data.dictionary.md)
+- [object Subscription.Relationships.PromotionalOffers](./relationships-data.dictionary/promotionaloffers-data.dictionary.md)
+- [object Subscription.Relationships.SubscriptionAvailability](./relationships-data.dictionary/subscriptionavailability-data.dictionary.md)
+- [object Subscription.Relationships.SubscriptionLocalizations](./relationships-data.dictionary/subscriptionlocalizations-data.dictionary.md)
+- [object Subscription.Relationships.Versions](./relationships-data.dictionary/versions-data.dictionary.md)
+- [object Subscription.Relationships.WinBackOffers](./relationships-data.dictionary/winbackoffers-data.dictionary.md)
 
 ## Properties
 
@@ -43,7 +44,7 @@ object Subscription.Relationships
 - `prices` (Subscription.Relationships.Prices)
 - `pricePoints` (Subscription.Relationships.PricePoints)
 - `promotedPurchase` (Subscription.Relationships.PromotedPurchase)
-- `subscriptionAvailability` (Subscription.Relationships.SubscriptionAvailability)
+- `subscriptionAvailability` (Subscription.Relationships.SubscriptionAvailability) *(deprecated)*
 - `winBackOffers` (Subscription.Relationships.WinBackOffers)
 - `images` (Subscription.Relationships.Images)
 - `planAvailabilities` (Subscription.Relationships.PlanAvailabilities)
@@ -51,7 +52,8 @@ object Subscription.Relationships
 
 ## See Also
 
-- [object Subscription.Attributes](subscription/attributes-data.dictionary.md)
+### Objects
+- [object Subscription.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription resource.
 
 

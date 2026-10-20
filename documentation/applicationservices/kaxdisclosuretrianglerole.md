@@ -1,7 +1,8 @@
 # kAXDisclosureTriangleRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A disclosure triangle control.
 
@@ -12,6 +13,10 @@ A disclosure triangle control.
 
 ```swift
 var kAXDisclosureTriangleRole: String { get }
+```
+
+```c
+#define kAXDisclosureTriangleRole
 ```
 
 

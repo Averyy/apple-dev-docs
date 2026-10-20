@@ -1,7 +1,8 @@
 # minorVersion
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Set to kHardwareCursorInfoMinorVersion.
 
@@ -10,7 +11,7 @@ Set to kHardwareCursorInfoMinorVersion.
 
 ## Declaration
 
-```swift
+```c
 UInt16 minorVersion;
 ```
 

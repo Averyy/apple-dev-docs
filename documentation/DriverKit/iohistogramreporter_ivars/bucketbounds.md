@@ -1,25 +1,27 @@
 # bucketBounds
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 int64_t * bucketBounds;
 ```
 
 ## See Also
 
-- [bucketCount](iohistogramreporter_ivars/bucketcount.md)
-- [histogramSegmentsConfig](iohistogramreporter_ivars/histogramsegmentsconfig.md)
-- [segmentCount](iohistogramreporter_ivars/segmentcount.md)
+### Instance Properties
+- [bucketCount](./bucketcount.md)
+- [histogramSegmentsConfig](./histogramsegmentsconfig.md)
+- [segmentCount](./segmentcount.md)
 
 
 ---

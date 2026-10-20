@@ -1,7 +1,8 @@
 # verticalAccuracy
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The validity of the altitude values, and their estimated uncertainty, measured in meters.
 
@@ -20,21 +21,26 @@ The validity of the altitude values, and their estimated uncertainty, measured i
 var verticalAccuracy: CLLocationAccuracy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationAccuracy verticalAccuracy;
+```
+
 #### Discussion
 
-A positive [`verticalAccuracy`](cllocation/verticalaccuracy.md) value represents the estimated uncertainty associated with [`altitude`](cllocation/altitude.md) and [`ellipsoidalAltitude`](cllocation/ellipsoidalaltitude.md). This value is available whenever altitude values are available.
+A positive [`verticalAccuracy`](./verticalaccuracy.md) value represents the estimated uncertainty associated with [`altitude`](./altitude.md) and [`ellipsoidalAltitude`](./ellipsoidalaltitude.md). This value is available whenever altitude values are available.
 
-If [`verticalAccuracy`](cllocation/verticalaccuracy.md) is `0` or a negative number, [`altitude`](cllocation/altitude.md) and [`ellipsoidalAltitude`](cllocation/ellipsoidalaltitude.md) values are invalid. If [`verticalAccuracy`](cllocation/verticalaccuracy.md) is a postive number, [`altitude`](cllocation/altitude.md) and [`ellipsoidalAltitude`](cllocation/ellipsoidalaltitude.md) values are valid.
+If [`verticalAccuracy`](./verticalaccuracy.md) is `0` or a negative number, [`altitude`](./altitude.md) and [`ellipsoidalAltitude`](./ellipsoidalaltitude.md) values are invalid. If [`verticalAccuracy`](./verticalaccuracy.md) is a postive number, [`altitude`](./altitude.md) and [`ellipsoidalAltitude`](./ellipsoidalaltitude.md) values are valid.
 
-A positive [`verticalAccuracy`](cllocation/verticalaccuracy.md) value represents an uncertainty that’s approximately 68 percent, or one standard deviation, above and below the altitude values.
+A positive [`verticalAccuracy`](./verticalaccuracy.md) value represents an uncertainty that’s approximately 68 percent, or one standard deviation, above and below the altitude values.
 
 > **Note**:  In iOS, this property is declared as `nonatomic`. In macOS, it’s declared as `atomic`.
 
 ## See Also
 
-- [var horizontalAccuracy: CLLocationAccuracy](cllocation/horizontalaccuracy.md)
+### Getting the location accuracy
+- [var horizontalAccuracy: CLLocationAccuracy](./horizontalaccuracy.md)
   The radius of uncertainty for the location, measured in meters.
-- [typealias CLLocationAccuracy](cllocationaccuracy.md)
+- [typealias CLLocationAccuracy](../cllocationaccuracy.md)
   The accuracy of a geographical coordinate.
 
 

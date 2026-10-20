@@ -1,7 +1,8 @@
 # setPendingDatasetRequestWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetPendingDatasetRequest
 
@@ -17,7 +18,15 @@ Command SetPendingDatasetRequest
 ## Declaration
 
 ```swift
+func setPendingDatasetRequestWith(_ params: MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setPendingDatasetRequestWith(_ params: MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams) async throws
+```
+
+```objc
+- (void) setPendingDatasetRequestWithParams:(MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

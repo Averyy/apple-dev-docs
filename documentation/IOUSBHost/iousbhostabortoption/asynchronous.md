@@ -1,7 +1,8 @@
 # IOUSBHostAbortOption.asynchronous
 
 **Framework**: IOUSBHost  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The option to abort input/output requests asynchronously.
 
@@ -15,9 +16,14 @@ The option to abort input/output requests asynchronously.
 case asynchronous
 ```
 
+```c
+IOUSBHostAbortOptionAsynchronous
+```
+
 ## See Also
 
-- [IOUSBHostAbortOption.synchronous](iousbhostabortoption/synchronous.md)
+### Options
+- [IOUSBHostAbortOption.synchronous](./synchronous.md)
   The option to abort input/output requests synchronously.
 
 

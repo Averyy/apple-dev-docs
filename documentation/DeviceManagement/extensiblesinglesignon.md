@@ -1,7 +1,8 @@
 # ExtensibleSingleSignOn
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures an app extension that performs single sign-on (SSO).
 
@@ -14,15 +15,15 @@ The payload that configures an app extension that performs single sign-on (SSO).
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSingleSignOn
 ```
 
 ## Mentions
 
-- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
-- [Configuring Platform Single Sign-on](configuring-platform-single-sign-on.md)
-- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
+- [Configuring Platform Single Sign-on](./configuring-platform-single-sign-on.md)
+- [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
 #### Discussion
 
@@ -30,7 +31,7 @@ Specify `com.apple.extensiblesso` as the payload type.
 
 The system supports user channel installation in macOS 11 and later.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -42,7 +43,7 @@ The system supports user channel installation in macOS 11 and later.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -95,41 +96,76 @@ The system supports user channel installation in macOS 11 and later.
 ## Topics
 
 ### Objects
-- [object ExtensibleSingleSignOn.ExtensionData](extensiblesinglesignon/extensiondata-data.dictionary.md)
+- [object ExtensibleSingleSignOn.ExtensionData](./extensiblesinglesignon/extensiondata-data.dictionary.md)
   The additional data to pass to the app extension.
-- [object ExtensibleSingleSignOn.PlatformSSO](extensiblesinglesignon/platformsso-data.dictionary.md)
+- [object ExtensibleSingleSignOn.PlatformSSO](./extensiblesinglesignon/platformsso-data.dictionary.md)
   The dictionary to configure Platform SSO. Requires setting `Type` to `Redirect`.
 
 ## Properties
 
-- `AuthenticationMethod` (string): The Platform SSO authentication method the extension uses. Requires that the SSO Extension also supports the method. Don’t use this. Use the `AuthenticationMethod` key in the `PlatformSSO` dictionary instead. Available: macOS 13+
-Deprecated: macOS 14+
-- `DeniedBundleIdentifiers` ([string]): An array of bundle identifiers of apps that don’t use SSO provided by this extension. Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
+- `AuthenticationMethod` (string) *(deprecated)*: The Platform SSO authentication method the extension uses. Requires that the SSO Extension also supports the method. Don’t use this. Use the `AuthenticationMethod` key in the `PlatformSSO` dictionary instead.
+
+  Available: macOS 13+
+  Deprecated: macOS 14+
+
+  **Allowed Values**: `Password`, `UserSecureEnclaveKey`, `SmartCard`, `OpenID`
+- `DeniedBundleIdentifiers` ([string]): An array of bundle identifiers of apps that don’t use SSO provided by this extension.
+
+  Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
 - `ExtensionData` (ExtensibleSingleSignOn.ExtensionData): A dictionary of arbitrary data passed through to the app extension.
 - `ExtensionIdentifier` (string) *(required)*: The bundle identifier of the app extension that performs SSO for the specified URLs.
-- `Hosts` ([string]): An array of host or domain names that apps can authenticate through the app extension. Required for `Credential` payloads. Ignored for `Redirect` payloads. The system: - Matches host or domain names case-insensitively
-- Requires that all the host and domain names of all installed Extensible SSO payloads are unique > **Note**:  Host names that begin with a “.” are wildcard suffixes that match all subdomains; otherwise the host name needs be an exact match.
-- `PlatformSSO` (ExtensibleSingleSignOn.PlatformSSO): The dictionary to configure Platform SSO. Requires setting `Type` to `Redirect`. Available: macOS 14+
+- `Hosts` ([string]): An array of host or domain names that apps can authenticate through the app extension.
+
+  Required for `Credential` payloads. Ignored for `Redirect` payloads.
+
+  The system:
+
+  - Matches host or domain names case-insensitively
+  - Requires that all the host and domain names of all installed Extensible SSO payloads are unique
+
+  > **Note**:  Host names that begin with a “.” are wildcard suffixes that match all subdomains; otherwise the host name needs be an exact match.
+- `PlatformSSO` (ExtensibleSingleSignOn.PlatformSSO): The dictionary to configure Platform SSO. Requires setting `Type` to `Redirect`.
+
+  Available: macOS 14+
 - `Realm` (string): The realm name for `Credential` payloads. Use proper capitalization for this value. Ignored for `Redirect` payloads.
-- `RegistrationToken` (string): The token this device uses for registration with Platform SSO. Use it for silent registration with the Identity Provider. Requires that `AuthenticationMethod` in `PlatformSSO` isn’t empty. Available: macOS 13+
-- `ScreenLockedBehavior` (string): If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) requests. Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
-- `TeamIdentifier` (string): The team identifier of the app extension. The device requires this key on macOS and ignores it elsewhere. Available: macOS 10.15+
+- `RegistrationToken` (string): The token this device uses for registration with Platform SSO. Use it for silent registration with the Identity Provider. Requires that `AuthenticationMethod` in `PlatformSSO` isn’t empty.
+
+  Available: macOS 13+
+- `ScreenLockedBehavior` (string): If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [`URLSession`](../Foundation/urlsession.md) requests.
+
+  Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
+
+  **Default**: `Cancel`; **Allowed Values**: `Cancel`, `DoNotHandle`
+- `TeamIdentifier` (string): The team identifier of the app extension. The device requires this key on macOS and ignores it elsewhere.
+
+  Available: macOS 10.15+
 - `Type` (string) *(required)*: The type of SSO.
-- `URLs` ([string]): An array of URL prefixes of identity providers where the app extension performs SSO. Required for `Redirect` payloads. Ignored for `Credential` payloads. The URLs need to begin with `http://` or `https://`. The system: - Matches scheme and host name case-insensitively
-- Doesn’t allow query parameters and URL fragments
-- Requires that the URLs of all installed Extensible SSO payloads are unique
+
+  **Allowed Values**: `Credential`, `Redirect`
+- `URLs` ([string]): An array of URL prefixes of identity providers where the app extension performs SSO.
+
+  Required for `Redirect` payloads. Ignored for `Credential` payloads.
+
+  The URLs need to begin with `http://` or `https://`.
+
+  The system:
+
+  - Matches scheme and host name case-insensitively
+  - Doesn’t allow query parameters and URL fragments
+  - Requires that the URLs of all installed Extensible SSO payloads are unique
 
 ## See Also
 
-- [object DirectoryService](directoryservice.md)
+### Authentication
+- [object DirectoryService](./directoryservice.md)
   The payload that configures an Active Directory (AD) domain.
-- [object ExtensibleSingleSignOnKerberos](extensiblesinglesignonkerberos.md)
+- [object ExtensibleSingleSignOnKerberos](./extensiblesinglesignonkerberos.md)
   The payload that configures an app extension that performs single sign-on with the Kerberos extension.
-- [object Identification](identification.md)
+- [object Identification](./identification.md)
   The payload that configures the names of the account user.
-- [object IdentityPreference](identitypreference.md)
+- [object IdentityPreference](./identitypreference.md)
   The payload that configures the user’s identity on the device.
-- [object SingleSignOn](singlesignon.md)
+- [object SingleSignOn](./singlesignon.md)
   The payload that configures single sign-on (SSO).
 
 

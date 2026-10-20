@@ -1,14 +1,16 @@
 # font-family
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the font used for the text in an element.
 
 ## See Also
 
-- [font-size](font-size.md)
+### Font Styles
+- [font-size](./font-size.md)
   Specifies the font size for the text in an element.
-- [font-weight](font-weight.md)
+- [font-weight](./font-weight.md)
   Specifies the font weight for the text in an element.
 
 

@@ -1,7 +1,8 @@
 # collisionFilter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character’s collision filter.
 
@@ -11,7 +12,7 @@ The character’s collision filter.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ var collisionFilter: CollisionFilter
 
 #### Discussion
 
-For more information on using collision filters, see doc://com.apple.documentation/documentation/realitykit/controlling_entity_collisions_in_realitykit.
+For more information on using collision filters, see https://developer.apple.com/documentation/realitykit/controlling_entity_collisions_in_realitykit.
 
 
 ---

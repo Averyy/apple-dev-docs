@@ -1,7 +1,8 @@
 # maximumImageSize
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The expected image size for the image in your @c CPListImageRowItemCardElement when @c showsImageFullHeight is false. Images provided will be resized to this size.
 
@@ -14,6 +15,10 @@ The expected image size for the image in your @c CPListImageRowItemCardElement w
 
 ```swift
 class var maximumImageSize: CGSize { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) CGSize maximumImageSize;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # partAxisCount
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of axes of the current part; zero if no part set
 

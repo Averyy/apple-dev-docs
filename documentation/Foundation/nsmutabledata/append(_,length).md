@@ -1,7 +1,8 @@
 # append(_:length:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends to the receiver a given number of bytes from a given buffer.
 
@@ -20,9 +21,13 @@ Appends to the receiver a given number of bytes from a given buffer.
 func append(_ bytes: UnsafeRawPointer, length: Int)
 ```
 
+```objc
+- (void) appendBytes:(const void *) bytes length:(NSUInteger) length;
+```
+
 #### Discussion
 
-A sample using this method can be found in [`Working With Mutable Binary Data`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/BinaryData/Tasks/WorkingMutableData.html#//apple_ref/doc/uid/20002150).
+A sample using this method can be found in [Working With Mutable Binary Data](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/BinaryData/Tasks/WorkingMutableData.html#//apple_ref/doc/uid/20002150).
 
 ## Parameters
 
@@ -31,9 +36,10 @@ A sample using this method can be found in [`Working With Mutable Binary Data`](
 
 ## See Also
 
-- [func append(Data)](nsmutabledata/append(_:).md)
+### Adding Bytes
+- [func append(Data)](./append%28_%29.md)
   Appends the content of another data object to the receiver.
-- [func increaseLength(by: Int)](nsmutabledata/increaselength(by:).md)
+- [func increaseLength(by: Int)](./increaselength%28by%29.md)
   Increases the length of the receiver by a given number of bytes.
 
 

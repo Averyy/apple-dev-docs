@@ -1,7 +1,8 @@
 # supportsImagePlayground
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether image generation is available on the current device.
 

@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: FinanceKit
+**Framework**: FinanceKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(String)](merchantcategorycode/init(_:).md)
+- [init?(String)](./init%28_%29.md)
   Creates a new merchant category code with the provided string value.
 
 

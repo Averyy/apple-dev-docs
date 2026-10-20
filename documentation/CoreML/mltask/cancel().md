@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a machine learning task before it completes.
 
@@ -20,9 +21,14 @@ Cancels a machine learning task before it completes.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 ## See Also
 
-- [func resume()](mltask/resume.md)
+### Starting and stopping a task
+- [func resume()](./resume%28%29.md)
   Begins or resumes a machine learning task.
 
 

@@ -1,6 +1,7 @@
 # Safari 17.5 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released May 13, 2024 — 17.5 (19618.2.12)
 
@@ -26,7 +27,7 @@ Safari 17.5 is available for iOS 17.5, iPadOS 17.5, visionOS 1.2, macOS Sonoma, 
 
 - Fixed `excludeCredentials` property being ignored during a passkey registration request.  (124405037)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -70,7 +71,7 @@ Safari 17.5 is available for iOS 17.5, iPadOS 17.5, visionOS 1.2, macOS Sonoma, 
 - Fixed flickering when showing a layer on a painted background for the first time by avoiding async image decoding.  (117533495)
 - Fixed line breaking before or between ruby sequences.  (122663646)
 
-##### Web Api
+##### Web API
 
 ###### Resolved Issues
 
@@ -88,13 +89,13 @@ Safari 17.5 is available for iOS 17.5, iPadOS 17.5, visionOS 1.2, macOS Sonoma, 
 
 - Fixed info and debug buttons not appearing in the Console Tab until new console messages are displayed.  (122923625)
 
-##### Webgl
+##### WebGL
 
 ###### New Features
 
 - Added support for `EXT_conservative_depth` and `NV_shader_noperspective_interpolation`.  (123854629)
 
-##### Webrtc
+##### WebRTC
 
 ###### Resolved Issues
 
@@ -102,7 +103,7 @@ Safari 17.5 is available for iOS 17.5, iPadOS 17.5, visionOS 1.2, macOS Sonoma, 
 - Fixed no incoming video in Teams VA.  (124406255)
 - Fixed the camera pausing occasionally when torch is enabled.  (124434403)
 
-##### Wkwebview
+##### WKWebView
 
 ###### New Features
 
@@ -110,17 +111,18 @@ Safari 17.5 is available for iOS 17.5, iPadOS 17.5, visionOS 1.2, macOS Sonoma, 
 
 ## See Also
 
-- [Safari 17.6 Release Notes](safari-17_6-release-notes.md)
+### Version 17
+- [Safari 17.6 Release Notes](./safari-17_6-release-notes.md)
   Released July 29, 2024 — 17.6 (19618.3.11)
-- [Safari 17.4 Release Notes](safari-17_4-release-notes.md)
+- [Safari 17.4 Release Notes](./safari-17_4-release-notes.md)
   Released March 5, 2024 — 17.4  (19618.1.15)
-- [Safari 17.3 Release Notes](safari-17_3-release-notes.md)
+- [Safari 17.3 Release Notes](./safari-17_3-release-notes.md)
   Released January 22, 2024 — Version 17.3 (19617.2.4)
-- [Safari 17.2 Release Notes](safari-17_2-release-notes.md)
+- [Safari 17.2 Release Notes](./safari-17_2-release-notes.md)
   Released December 11, 2023 — Version 17.2 (19617.1.17)
-- [Safari 17.1 Release Notes](safari-17_1-release-notes.md)
+- [Safari 17.1 Release Notes](./safari-17_1-release-notes.md)
   Released October 25, 2023 — Version 17.1 (19616.2.9)
-- [Safari 17 Release Notes](safari-17-release-notes.md)
+- [Safari 17 Release Notes](./safari-17-release-notes.md)
   Released September 18, 2023 — Version 17 (19616.1.27)
 
 

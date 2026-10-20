@@ -1,32 +1,34 @@
 # OSArrayCreate
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSArrayPtrOSArrayCreate();
 ```
 
 ## See Also
 
-- [withArray](osarray/witharray.md)
+### Creating an Array
+- [withArray](./osarray/witharray.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [withCapacity](osarray/withcapacity.md)
+- [withCapacity](./osarray/withcapacity.md)
   Allocates an OSArray object with preallocated capacity.
-- [withObjects](osarray/withobjects.md)
+- [withObjects](./osarray/withobjects.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [merge](osarray/merge.md)
+- [merge](./osarray/merge.md)
   Appends all members of an array to this array.
-- [free](osarray/free.md)
-- [flushCollection](osarray/flushcollection.md)
+- [free](./osarray/free.md)
+- [flushCollection](./osarray/flushcollection.md)
   Removes and drops references to all members of array.
 
 

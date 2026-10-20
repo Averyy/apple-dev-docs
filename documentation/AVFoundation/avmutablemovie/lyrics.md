@@ -1,7 +1,8 @@
 # lyrics
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lyrics of the asset in a language suitable for the current locale.
 
@@ -21,15 +22,16 @@ var lyrics: String? { get }
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]](avmutablemovie/metadata.md)
+### Accessing metadata
+- [var metadata: [AVMetadataItem]](./metadata.md)
   An array of metadata items for all metadata identifiers for which a value is available.
-- [var commonMetadata: [AVMetadataItem]](avmutablemovie/commonmetadata.md)
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   The metadata items an asset contains for common metadata identifiers that provide a value.
-- [var availableMetadataFormats: [AVMetadataFormat]](avmutablemovie/availablemetadataformats.md)
+- [var availableMetadataFormats: [AVMetadataFormat]](./availablemetadataformats.md)
   The metadata formats this asset contains.
-- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avmutablemovie/metadata(forformat:).md)
+- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns an array of metadata items from the container with the specified format.
-- [var creationDate: AVMetadataItem?](avmutablemovie/creationdate.md)
+- [var creationDate: AVMetadataItem?](./creationdate.md)
   A metadata item that indicates the asset’s creation date.
 
 

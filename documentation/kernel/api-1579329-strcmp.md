@@ -1,23 +1,25 @@
 # strcmp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int strcmp(const char *s1, const char *s2);
 ```
 
 ## See Also
 
-- [strncmp](1579335-strncmp.md)
-- [strcasecmp](1579333-strcasecmp.md)
-- [strncasecmp](1579347-strncasecmp.md)
-- [bcmp](1579330-bcmp.md)
+### Comparison
+- [strncmp](./api-1579335-strncmp.md)
+- [strcasecmp](./api-1579333-strcasecmp.md)
+- [strncasecmp](./api-1579347-strncasecmp.md)
+- [bcmp](./api-1579330-bcmp.md)
 
 
 ---

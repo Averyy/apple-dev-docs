@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A property that provides up-to-date statistics of the volume.
@@ -15,12 +16,17 @@ A property that provides up-to-date statistics of the volume.
 var volumeStatistics: FSStatFSResult { get }
 ```
 
+```objc
+@property (nonatomic, readonly) FSStatFSResult * volumeStatistics;
+```
+
 ## See Also
 
-- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](fsvolume/handler/supportedvolumecapabilities.md)
-- [FSVolume.SupportedCapabilities](fsvolume/supportedcapabilities.md)
+### Inspecting required volume properties
+- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](./supportedvolumecapabilities.md)
+- [FSVolume.SupportedCapabilities](../supportedcapabilities.md)
   A type that represents capabilities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
-- [class FSStatFSResult](fsstatfsresult.md)
+- [class FSStatFSResult](../../fsstatfsresult.md)
   A type used to report a volume’s statistics.
 
 

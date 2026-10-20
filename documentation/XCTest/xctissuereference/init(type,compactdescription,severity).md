@@ -1,12 +1,17 @@
 # init(type:compactDescription:severity:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 ## Declaration
 
 ```swift
 convenience init(type: XCTIssueReference.IssueType, compactDescription: String, severity: XCTIssueReference.Severity)
+```
+
+```objc
+- (instancetype) initWithType:(XCTIssueType) type compactDescription:(NSString *) compactDescription severity:(XCTIssueSeverity) severity;
 ```
 
 

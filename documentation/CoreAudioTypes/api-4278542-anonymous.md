@@ -1,12 +1,14 @@
 # Anonymous
 
-**Framework**: Core Audio Types
+**Framework**: Core Audio Types  
+**Role**: Article
 
 ## See Also
 
-- [Audio Stream Basic Description Flags](audio-stream-basic-description-flags.md)
+### Enumerations
+- [Audio Stream Basic Description Flags](./audio-stream-basic-description-flags.md)
   The standard format flags for an audio stream basic description.
-- [Anonymous](2962796-anonymous.md)
+- [Anonymous](./api-2962796-anonymous.md)
 
 
 ---

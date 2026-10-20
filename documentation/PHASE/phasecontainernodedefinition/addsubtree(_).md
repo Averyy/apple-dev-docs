@@ -1,7 +1,8 @@
 # addSubtree(_:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a sound event node as a child.
 
@@ -17,6 +18,10 @@ Adds a sound event node as a child.
 
 ```swift
 func addSubtree(_ subtree: PHASESoundEventNodeDefinition)
+```
+
+```objc
+- (void) addSubtree:(PHASESoundEventNodeDefinition *) subtree;
 ```
 
 ## Parameters

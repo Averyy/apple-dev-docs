@@ -1,13 +1,14 @@
 # LSMMapCreate(_:_:)
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new Latent Semantic Mapping map.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Creates a new Latent Semantic Mapping map.
 func LSMMapCreate(_ alloc: CFAllocator?, _ flags: CFOptionFlags) -> Unmanaged<LSMMap>
 ```
 
+```c
+LSMMapRefLSMMapCreate(CFAllocatorRef alloc, CFOptionFlags flags);
+```
+
 #### Discussion
 
-Call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to dispose of the map.
+Call [`CFRelease`](../CoreFoundation/cfrelease.md) to dispose of the map.
 
 ## See Also
 
-- [Map Flags](map-flags.md)
+### Creating a Map
+- [Map Flags](./map-flags.md)
   Options for creating a map.
 
 

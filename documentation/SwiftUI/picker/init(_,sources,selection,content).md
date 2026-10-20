@@ -1,7 +1,8 @@
 # init(_:sources:selection:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker that generates its label from a localized string resource.
 
@@ -19,6 +20,20 @@ Creates a picker that generates its label from a localized string resource.
 ```swift
 @export(implementation)
 nonisolated init<C>(_ titleResource: LocalizedStringResource, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content) where C : RandomAccessCollection
+```
+
+Available when `Label` is `Text`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<C, S>(_ title: S, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content) where C : RandomAccessCollection, S : StringProtocol
+```
+
+```swift
+nonisolated
+init<C>(_ titleKey: LocalizedStringKey, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content) where C : RandomAccessCollection
 ```
 
 #### Discussion
@@ -57,7 +72,7 @@ Picker(
 }
 ```
 
-This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 
@@ -68,7 +83,8 @@ This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](t
 
 ## See Also
 
-- [init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, content: () -> Content, label: () -> Label)](picker/init(sources:selection:content:label:).md)
+### Creating a picker for a collection
+- [init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, content: () -> Content, label: () -> Label)](./init%28sources,selection,content,label%29.md)
   Creates a picker that displays a custom label.
 
 

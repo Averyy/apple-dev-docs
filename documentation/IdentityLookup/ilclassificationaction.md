@@ -1,7 +1,8 @@
 # ILClassificationAction
 
 **Framework**: SMS and Call Reporting  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The actions the system can take in response to the reported communication.
 
@@ -17,33 +18,38 @@ The actions the system can take in response to the reported communication.
 enum ILClassificationAction
 ```
 
+```c
+enum ILClassificationAction : NSInteger;
+```
+
 ## Topics
 
 ### Classifications
-- [ILClassificationAction.none](ilclassificationaction/none.md)
+- [ILClassificationAction.none](./ilclassificationaction/none.md)
   No action is required.
-- [ILClassificationAction.reportJunk](ilclassificationaction/reportjunk.md)
+- [ILClassificationAction.reportJunk](./ilclassificationaction/reportjunk.md)
   The system should report the communication as junk.
-- [ILClassificationAction.reportJunkAndBlockSender](ilclassificationaction/reportjunkandblocksender.md)
+- [ILClassificationAction.reportJunkAndBlockSender](./ilclassificationaction/reportjunkandblocksender.md)
   The system should report the communication as junk and add the number to the system’s block list.
-- [ILClassificationAction.reportNotJunk](ilclassificationaction/reportnotjunk.md)
+- [ILClassificationAction.reportNotJunk](./ilclassificationaction/reportnotjunk.md)
   The system should report that the communication is not junk.
 ### Initializers
-- [init?(rawValue: Int)](ilclassificationaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ilclassificationaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ILClassificationResponse](ilclassificationresponse.md)
+### Responses
+- [class ILClassificationResponse](./ilclassificationresponse.md)
   A response object that tells the system how to handle the reported communications.
 
 

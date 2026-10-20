@@ -1,7 +1,8 @@
 # EditButton
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button that toggles the edit mode environment value.
 
@@ -20,7 +21,7 @@ struct EditButton
 
 #### Overview
 
-An edit button toggles the environment’s [`editMode`](environmentvalues/editmode.md) value for content within a container that supports edit mode. In the following example, an edit button placed inside a [`NavigationView`](navigationview.md) supports editing of a [`List`](list.md):
+An edit button toggles the environment’s [`editMode`](./environmentvalues/editmode.md) value for content within a container that supports edit mode. In the following example, an edit button placed inside a [`NavigationView`](./navigationview.md) supports editing of a [`List`](./list.md):
 
 ```swift
 @State private var fruits = [
@@ -47,28 +48,29 @@ var body: some View {
 }
 ```
 
-Because the [`ForEach`](foreach.md) in the above example defines behaviors for [`onDelete(perform:)`](dynamicviewcontent/ondelete(perform:).md) and [`onMove(perform:)`](dynamicviewcontent/onmove(perform:).md), the editable list displays the delete and move UI when the user taps Edit. Notice that the Edit button displays the title “Done” while edit mode is active:
+Because the [`ForEach`](./foreach.md) in the above example defines behaviors for [`onDelete(perform:)`](./dynamicviewcontent/ondelete%28perform%29.md) and [`onMove(perform:)`](./dynamicviewcontent/onmove%28perform%29.md), the editable list displays the delete and move UI when the user taps Edit. Notice that the Edit button displays the title “Done” while edit mode is active:
 
-![A screenshot of an app with an Edit button in the navigation bar.](/images/com.apple.SwiftUI/EditButton-1@2x.png)
+![A screenshot of an app with an Edit button in the navigation bar.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/EditButton-1@2x.png)
 
-You can also create custom views that react to changes in the edit mode state, as described in [`EditMode`](editmode.md).
+You can also create custom views that react to changes in the edit mode state, as described in [`EditMode`](./editmode.md).
 
 ## Topics
 
 ### Creating an edit button
-- [init()](editbutton/init.md)
+- [init()](./editbutton/init%28%29.md)
   Creates an Edit button instance.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct PasteButton](pastebutton.md)
+### Creating special-purpose buttons
+- [struct PasteButton](./pastebutton.md)
   A system button that reads items from the pasteboard and delivers it to a closure.
-- [struct RenameButton](renamebutton.md)
+- [struct RenameButton](./renamebutton.md)
   A button that triggers a standard rename action.
 
 

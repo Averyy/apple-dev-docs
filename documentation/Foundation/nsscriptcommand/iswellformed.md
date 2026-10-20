@@ -1,7 +1,8 @@
 # isWellFormed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether the receiver is well formed according to its command description.
 
@@ -15,13 +16,18 @@ Returns a Boolean value indicating whether the receiver is well formed according
 var isWellFormed: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isWellFormed) BOOL wellFormed;
+```
+
 #### Discussion
 
 The method ensures that there is a description of the command and that the number of arguments and the types of non-specifier arguments conform to the command description.
 
 ## See Also
 
-- [var commandDescription: NSScriptCommandDescription](nsscriptcommand/commanddescription.md)
+### Getting command information
+- [var commandDescription: NSScriptCommandDescription](./commanddescription.md)
   Returns the command description for the command.
 
 

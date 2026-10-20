@@ -1,7 +1,8 @@
 # DeviceUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the update request.
 
@@ -10,14 +11,14 @@ Attributes whose values you’re changing as part of the update request.
 
 ## Declaration
 
-```swift
+```
 object DeviceUpdateRequest.Data.Attributes
 ```
 
 ## Properties
 
 - `name` (string)
-- `status` (string)
+- `status` (string): **Allowed Values**: `ENABLED`, `DISABLED`
 
 
 ---

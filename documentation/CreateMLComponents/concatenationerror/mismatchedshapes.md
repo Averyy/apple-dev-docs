@@ -1,7 +1,8 @@
 # ConcatenationError.mismatchedShapes
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Shaped arrays across columns have mismatched shapes and can’t be concatenated.
 
@@ -22,7 +23,8 @@ case mismatchedShapes
 
 ## See Also
 
-- [ConcatenationError.nonUniformShapes(columnName:)](concatenationerror/nonuniformshapes(columnname:).md)
+### Analyzing the error
+- [ConcatenationError.nonUniformShapes(columnName:)](./nonuniformshapes%28columnname%29.md)
   A column contains arrays or shaped arrays with non-uniform shapes.
 
 

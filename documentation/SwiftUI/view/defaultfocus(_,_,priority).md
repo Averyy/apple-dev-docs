@@ -1,7 +1,8 @@
 # defaultFocus(_:_:priority:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a region of the window in which default focus is evaluated by assigning a value to a given focus state binding.
 
@@ -29,7 +30,7 @@ The modified view.
 
 By default, SwiftUI evaluates default focus when the window first appears, and when a focus state binding update moves focus automatically, but not when responding to user-driven navigation commands.
 
-Clients can override the default behavior by specifying an evaluation priority of [`userInitiated`](defaultfocusevaluationpriority/userinitiated.md), which causes SwiftUI to use the client’s preferred default focus in response to user-driven focus navigation as well as automatic changes.
+Clients can override the default behavior by specifying an evaluation priority of [`userInitiated`](../defaultfocusevaluationpriority/userinitiated.md), which causes SwiftUI to use the client’s preferred default focus in response to user-driven focus navigation as well as automatic changes.
 
 In the following example, focus automatically goes to the second of the two text fields when the view is first presented in the window.
 
@@ -53,9 +54,10 @@ WindowGroup {
 
 ## See Also
 
-- [func prefersDefaultFocus(Bool, in: Namespace.ID) -> some View](view/prefersdefaultfocus(_:in:).md)
+### Controlling default focus
+- [func prefersDefaultFocus(Bool, in: Namespace.ID) -> some View](./prefersdefaultfocus%28_,in%29.md)
   Indicates that the view should receive focus by default for a given namespace.
-- [struct DefaultFocusEvaluationPriority](defaultfocusevaluationpriority.md)
+- [struct DefaultFocusEvaluationPriority](../defaultfocusevaluationpriority.md)
   Prioritizations for default focus preferences when evaluating where to move focus in different circumstances.
 
 

@@ -1,7 +1,8 @@
 # prepend(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepends the specified matrix to the receiver’s matrix.
 
@@ -11,8 +12,20 @@ Prepends the specified matrix to the receiver’s matrix.
 
 ## Declaration
 
+*Mac Catalyst*
+
+```swift
+func prepend(_ transform: NSAffineTransform)
+```
+
+*macOS*
+
 ```swift
 func prepend(_ transform: AffineTransform)
+```
+
+```objc
+- (void) prependTransform:(NSAffineTransform *) transform;
 ```
 
 #### Discussion
@@ -25,19 +38,20 @@ This method multiplies the matrix in `transform` by the receiver’s matrix and 
 
 ## See Also
 
-- [func rotate(byDegrees: Double)](nsaffinetransform/rotate(bydegrees:).md)
+### Accumulating Transformations
+- [func rotate(byDegrees: Double)](./rotate%28bydegrees%29.md)
   Applies a rotation factor (measured in degrees) to the receiver’s transformation matrix.
-- [func rotate(byRadians: Double)](nsaffinetransform/rotate(byradians:).md)
+- [func rotate(byRadians: Double)](./rotate%28byradians%29.md)
   Applies a rotation factor (measured in radians) to the receiver’s transformation matrix.
-- [func scale(by: Double)](nsaffinetransform/scale(by:).md)
+- [func scale(by: Double)](./scale%28by%29.md)
   Applies the specified scaling factor along both x and y axes to the receiver’s transformation matrix.
-- [func scaleX(by: Double, yBy: Double)](nsaffinetransform/scalex(by:yby:).md)
+- [func scaleX(by: Double, yBy: Double)](./scalex%28by,yby%29.md)
   Applies scaling factors to each axis of the receiver’s transformation matrix.
-- [func translateX(by: Double, yBy: Double)](nsaffinetransform/translatex(by:yby:).md)
+- [func translateX(by: Double, yBy: Double)](./translatex%28by,yby%29.md)
   Applies the specified translation factors to the receiver’s transformation matrix.
-- [func append(NSAffineTransform)](nsaffinetransform/append(_:).md)
+- [func append(NSAffineTransform)](./append%28_%29.md)
   Appends the specified matrix to the receiver’s matrix.
-- [func invert()](nsaffinetransform/invert.md)
+- [func invert()](./invert%28%29.md)
   Replaces the receiver’s matrix with its inverse matrix.
 
 

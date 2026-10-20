@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The location and access permissions of the resource.
@@ -20,10 +21,14 @@ The location and access permissions of the resource.
 var storageMode: MTLStorageMode { get }
 ```
 
+```objc
+@property (readonly) MTLStorageMode storageMode;
+```
+
 ## Mentions
 
-- [Setting resource storage modes](setting-resource-storage-modes.md)
-- [Synchronizing a managed resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Setting resource storage modes](../setting-resource-storage-modes.md)
+- [Synchronizing a managed resource in macOS](../synchronizing-a-managed-resource-in-macos.md)
 
 #### Discussion
 
@@ -31,17 +36,18 @@ The storage mode is set when you create the resource and cannot be changed.
 
 ## See Also
 
-- [var cpuCacheMode: MTLCPUCacheMode](mtlresource/cpucachemode.md)
+### Reading memory and storage properties
+- [var cpuCacheMode: MTLCPUCacheMode](./cpucachemode.md)
   The CPU cache mode that defines the CPU mapping of the resource.
-- [var hazardTrackingMode: MTLHazardTrackingMode](mtlresource/hazardtrackingmode.md)
+- [var hazardTrackingMode: MTLHazardTrackingMode](./hazardtrackingmode.md)
   A mode that determines whether Metal tracks and synchronizes resource access.
-- [var resourceOptions: MTLResourceOptions](mtlresource/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./resourceoptions.md)
   The storage mode, CPU cache mode, and hazard tracking mode of the resource.
-- [enum MTLCPUCacheMode](mtlcpucachemode.md)
+- [enum MTLCPUCacheMode](../mtlcpucachemode.md)
   Options for the CPU cache mode that define the CPU mapping of the resource.
-- [enum MTLStorageMode](mtlstoragemode.md)
+- [enum MTLStorageMode](../mtlstoragemode.md)
   Options for the memory location and access permissions for a resource.
-- [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
+- [enum MTLHazardTrackingMode](../mtlhazardtrackingmode.md)
   Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 

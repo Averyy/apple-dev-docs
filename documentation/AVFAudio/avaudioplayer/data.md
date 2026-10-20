@@ -1,7 +1,8 @@
 # data
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio data associated with the player.
 
@@ -20,17 +21,22 @@ The audio data associated with the player.
 var data: Data? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSData * data;
+```
+
 #### Discussion
 
-This property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if you don’t create the player with a data buffer.
+This property is [`nil`](../../ObjectiveC/nil-227m0.md) if you don’t create the player with a data buffer.
 
 ## See Also
 
-- [var url: URL?](avaudioplayer/url.md)
+### Inspecting the audio data
+- [var url: URL?](./url.md)
   The URL of the audio file.
-- [var format: AVAudioFormat](avaudioplayer/format.md)
+- [var format: AVAudioFormat](./format.md)
   The format of the player’s audio data.
-- [var settings: [String : Any]](avaudioplayer/settings.md)
+- [var settings: [String : Any]](./settings.md)
   A dictionary that provides information about the player’s audio data.
 
 

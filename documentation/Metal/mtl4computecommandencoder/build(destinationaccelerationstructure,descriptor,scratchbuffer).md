@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes an acceleration structure build into the command buffer.
@@ -20,15 +21,19 @@ Encodes an acceleration structure build into the command buffer.
 func build(destinationAccelerationStructure accelerationStructure: any MTLAccelerationStructure, descriptor: MTL4AccelerationStructureDescriptor, scratchBuffer: MTL4BufferRange)
 ```
 
+```objc
+- (void) buildAccelerationStructure:(id<MTLAccelerationStructure>) accelerationStructure descriptor:(MTL4AccelerationStructureDescriptor *) descriptor scratchBuffer:(MTL4BufferRange) scratchBuffer;
+```
+
 #### Discussion
 
 Before you build an instance acceleration structure, you are responsible for ensuring the build operations for all primitive acceleration structures is complete. The built acceleration structure doesn’t retain any references to the input buffers of the descriptor, such as the vertex buffer or instance buffer, among others.
 
 The acceleration structure build process may continue as long as the command buffer is not completed. However, you can safely encode ray tracing work against the acceleration structure if you schedule and synchronize the command buffers that contain this ray tracing work such that the command buffer with the build command is complete by the time ray tracing starts.
 
-You are responsible for ensuring that the acceleration structure and scratch buffer are at least the size that the query [`accelerationStructureSizes(descriptor:)`](mtldevice/accelerationstructuresizes(descriptor:).md) returns.
+You are responsible for ensuring that the acceleration structure and scratch buffer are at least the size that the query [`accelerationStructureSizes(descriptor:)`](../mtldevice/accelerationstructuresizes%28descriptor%29.md) returns.
 
-Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of the scratch buffer the `scratchBuffer` parameter references, as well as for all the primitive acceleration structures you directly and indirectly reference.
+Use an instance of [`MTLResidencySet`](../mtlresidencyset.md) to mark residency of the scratch buffer the `scratchBuffer` parameter references, as well as for all the primitive acceleration structures you directly and indirectly reference.
 
 ## Parameters
 

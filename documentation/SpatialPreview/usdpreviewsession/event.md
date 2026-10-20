@@ -1,13 +1,14 @@
 # USDPreviewSession.Event
 
 **Framework**: Spatial Preview  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events emitted during a USD preview session
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,27 +19,28 @@ enum Event
 ## Topics
 
 ### Enumeration Cases
-- [case error(USDPreviewSession.Error)](usdpreviewsession/event/error(_:).md)
+- [case error(USDPreviewSession.Error)](./event/error%28_%29.md)
   Session error (editing read-only stage, etc.)
-- [USDPreviewSession.Event.playbackStateChanged(isPlaying:)](usdpreviewsession/event/playbackstatechanged(isplaying:).md)
+- [USDPreviewSession.Event.playbackStateChanged(isPlaying:)](./event/playbackstatechanged%28isplaying%29.md)
   The USD’s animation playback state has changed
-- [USDPreviewSession.Event.timeChanged(_:)](usdpreviewsession/event/timechanged(_:).md)
+- [USDPreviewSession.Event.timeChanged(_:)](./event/timechanged%28_%29.md)
   The USD animation timecode has changed
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SpatialPreviewSessionState](spatialpreviewsessionstate.md)
+### Session state and errors
+- [enum SpatialPreviewSessionState](../spatialpreviewsessionstate.md)
   Indicates the state of the session and the health of the underlying connection.
-- [enum SpatialPreviewSessionError](spatialpreviewsessionerror.md)
-- [ConnectedSpatialEndpointObserver.UnavailableError](connectedspatialendpointobserver/unavailableerror.md)
-  An error thrown when accessing the [`endpoint`](connectedspatialendpointobserver/endpoint.md) property while no Mac Virtual Display device is available.
-- [USDPreviewSession.Error](usdpreviewsession/error.md)
+- [enum SpatialPreviewSessionError](../spatialpreviewsessionerror.md)
+- [ConnectedSpatialEndpointObserver.UnavailableError](../connectedspatialendpointobserver/unavailableerror.md)
+  An error thrown when accessing the [`endpoint`](../connectedspatialendpointobserver/endpoint.md) property while no Mac Virtual Display device is available.
+- [USDPreviewSession.Error](./error.md)
   Errors that can occur during a USD preview session
 
 

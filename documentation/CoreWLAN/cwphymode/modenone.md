@@ -1,7 +1,8 @@
 # CWPHYMode.modeNone
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No specified mode.
 
@@ -14,17 +15,22 @@ No specified mode.
 case modeNone
 ```
 
+```c
+kCWPHYModeNone
+```
+
 ## See Also
 
-- [CWPHYMode.mode11a](cwphymode/mode11a.md)
+### Constants
+- [CWPHYMode.mode11a](./mode11a.md)
   IEEE 802.11a PHY.
-- [CWPHYMode.mode11b](cwphymode/mode11b.md)
+- [CWPHYMode.mode11b](./mode11b.md)
   IEEE 802.11b PHY.
-- [CWPHYMode.mode11g](cwphymode/mode11g.md)
+- [CWPHYMode.mode11g](./mode11g.md)
   IEEE 802.11g PHY.
-- [CWPHYMode.mode11n](cwphymode/mode11n.md)
+- [CWPHYMode.mode11n](./mode11n.md)
   IEEE 802.11n PHY.
-- [CWPHYMode.mode11ac](cwphymode/mode11ac.md)
+- [CWPHYMode.mode11ac](./mode11ac.md)
   IEEE 802.11ac PHY.
 
 

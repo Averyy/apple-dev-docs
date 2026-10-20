@@ -1,14 +1,15 @@
 # deregisterForAVBStateChangeNotifications
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13.1+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 IOReturn deregisterForAVBStateChangeNotifications(avb_state_callback_t callback, void *context);
 ```
 

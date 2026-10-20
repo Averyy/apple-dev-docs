@@ -1,7 +1,8 @@
 # formValues
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var formValues: [String : String] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,NSString *> * formValues;
 ```
 
 #### Discussion

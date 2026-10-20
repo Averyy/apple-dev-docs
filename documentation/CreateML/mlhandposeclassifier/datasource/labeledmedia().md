@@ -1,7 +1,8 @@
 # labeledMedia()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a dictionary that contains the data source’s classification labels paired with an array of URLs to the label’s image files.
 
@@ -20,11 +21,12 @@ func labeledMedia() throws -> [String : [URL]]
 
 ## See Also
 
-- [func imagesWithAnnotations() throws -> MLDataTable](mlhandposeclassifier/datasource/imageswithannotations.md)
+### Exporting a data source
+- [func imagesWithAnnotations() throws -> MLDataTable](./imageswithannotations%28%29.md)
   Generates a data table that contains a column for the data source’s image file URLs and a column of annotations.
-- [func keypointsWithAnnotations() throws -> MLDataTable](mlhandposeclassifier/datasource/keypointswithannotations.md)
+- [func keypointsWithAnnotations() throws -> MLDataTable](./keypointswithannotations%28%29.md)
   Generates a data table that contains a column for hand joint locations and hand pose annotations.
-- [func stratifiedSplit(proportions: [Double], seed: Int, labelColumn: String) throws -> MLDataTable](mlhandposeclassifier/datasource/stratifiedsplit(proportions:seed:labelcolumn:).md)
+- [func stratifiedSplit(proportions: [Double], seed: Int, labelColumn: String) throws -> MLDataTable](./stratifiedsplit%28proportions,seed,labelcolumn%29.md)
   Generates a data table by splitting the data source into strata.
 
 

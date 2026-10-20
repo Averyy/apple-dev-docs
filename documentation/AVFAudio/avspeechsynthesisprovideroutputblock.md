@@ -1,7 +1,8 @@
 # AVSpeechSynthesisProviderOutputBlock
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the method for sending marker information to the host.
 
@@ -19,6 +20,10 @@ A type that represents the method for sending marker information to the host.
 typealias AVSpeechSynthesisProviderOutputBlock = ([AVSpeechSynthesisMarker], AVSpeechSynthesisProviderRequest) -> Void
 ```
 
+```c
+typedef void (^)(NSArray<AVSpeechSynthesisMarker *> *, AVSpeechSynthesisProviderRequest *) AVSpeechSynthesisProviderOutputBlock;
+```
+
 ## Parameters
 
 - `markers`: An array of speech synthesis metadata.
@@ -26,7 +31,8 @@ typealias AVSpeechSynthesisProviderOutputBlock = ([AVSpeechSynthesisMarker], AVS
 
 ## See Also
 
-- [var speechSynthesisOutputMetadataBlock: AVSpeechSynthesisProviderOutputBlock?](avspeechsynthesisprovideraudiounit/speechsynthesisoutputmetadatablock.md)
+### Supplying metadata
+- [var speechSynthesisOutputMetadataBlock: AVSpeechSynthesisProviderOutputBlock?](./avspeechsynthesisprovideraudiounit/speechsynthesisoutputmetadatablock.md)
   A block that subclasses use to send marker information to the host.
 
 

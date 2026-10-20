@@ -1,7 +1,8 @@
 # VNGenerateOpticalFlowRequest.ComputationAccuracy
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The supported optical flow accuracy levels.
 
@@ -19,6 +20,10 @@ The supported optical flow accuracy levels.
 enum ComputationAccuracy
 ```
 
+```c
+enum VNGenerateOpticalFlowRequestComputationAccuracy : NSUInteger;
+```
+
 #### Overview
 
 The computation time typically increases with accuracy.
@@ -26,34 +31,35 @@ The computation time typically increases with accuracy.
 ## Topics
 
 ### Accuracy Levels
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy.low](vngenerateopticalflowrequest/computationaccuracy-swift.enum/low.md)
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy.low](./computationaccuracy-swift.enum/low.md)
   Low accuracy.
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy.medium](vngenerateopticalflowrequest/computationaccuracy-swift.enum/medium.md)
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy.medium](./computationaccuracy-swift.enum/medium.md)
   Medium accuracy.
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy.high](vngenerateopticalflowrequest/computationaccuracy-swift.enum/high.md)
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy.high](./computationaccuracy-swift.enum/high.md)
   High accuracy.
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy.veryHigh](vngenerateopticalflowrequest/computationaccuracy-swift.enum/veryhigh.md)
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy.veryHigh](./computationaccuracy-swift.enum/veryhigh.md)
   Very high accuracy.
 ### Creating an Accuracy Level
-- [init?(rawValue: UInt)](vngenerateopticalflowrequest/computationaccuracy-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./computationaccuracy-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var computationAccuracy: VNGenerateOpticalFlowRequest.ComputationAccuracy](vngenerateopticalflowrequest/computationaccuracy-swift.property.md)
+### Configuring the Request
+- [var computationAccuracy: VNGenerateOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.property.md)
   The accuracy level for computing optical flow.
-- [var outputPixelFormat: OSType](vngenerateopticalflowrequest/outputpixelformat.md)
+- [var outputPixelFormat: OSType](./outputpixelformat.md)
   The output buffer’s pixel format.
-- [var keepNetworkOutput: Bool](vngenerateopticalflowrequest/keepnetworkoutput.md)
+- [var keepNetworkOutput: Bool](./keepnetworkoutput.md)
   A Boolean value that indicates whether to keep the raw pixel buffer coming from the machine learning network.
 
 

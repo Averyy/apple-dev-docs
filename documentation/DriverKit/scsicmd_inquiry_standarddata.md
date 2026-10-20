@@ -1,17 +1,18 @@
 # SCSICmd_INQUIRY_StandardData
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef struct SCSICmd_INQUIRY_StandardData { ... } SCSICmd_INQUIRY_StandardData;
 ```
 
@@ -22,35 +23,36 @@ This structure defines the format of the required standard data that is returned
 ## Topics
 
 ### Instance Properties
-- [ADDITIONAL_LENGTH](scsicmd_inquiry_standarddata/additional_length.md)
-- [PERIPHERAL_DEVICE_TYPE](scsicmd_inquiry_standarddata/peripheral_device_type.md)
-- [PRODUCT_IDENTIFICATION](scsicmd_inquiry_standarddata/product_identification.md)
-- [PRODUCT_REVISION_LEVEL](scsicmd_inquiry_standarddata/product_revision_level.md)
-- [RESPONSE_DATA_FORMAT](scsicmd_inquiry_standarddata/response_data_format.md)
-- [RMB](scsicmd_inquiry_standarddata/rmb.md)
-- [SCCSReserved](scsicmd_inquiry_standarddata/sccsreserved.md)
-- [VENDOR_IDENTIFICATION](scsicmd_inquiry_standarddata/vendor_identification.md)
-- [VERSION](scsicmd_inquiry_standarddata/version.md)
-- [flags1](scsicmd_inquiry_standarddata/flags1.md)
-- [flags2](scsicmd_inquiry_standarddata/flags2.md)
+- [ADDITIONAL_LENGTH](./scsicmd_inquiry_standarddata/additional_length.md)
+- [PERIPHERAL_DEVICE_TYPE](./scsicmd_inquiry_standarddata/peripheral_device_type.md)
+- [PRODUCT_IDENTIFICATION](./scsicmd_inquiry_standarddata/product_identification.md)
+- [PRODUCT_REVISION_LEVEL](./scsicmd_inquiry_standarddata/product_revision_level.md)
+- [RESPONSE_DATA_FORMAT](./scsicmd_inquiry_standarddata/response_data_format.md)
+- [RMB](./scsicmd_inquiry_standarddata/rmb.md)
+- [SCCSReserved](./scsicmd_inquiry_standarddata/sccsreserved.md)
+- [VENDOR_IDENTIFICATION](./scsicmd_inquiry_standarddata/vendor_identification.md)
+- [VERSION](./scsicmd_inquiry_standarddata/version.md)
+- [flags1](./scsicmd_inquiry_standarddata/flags1.md)
+- [flags2](./scsicmd_inquiry_standarddata/flags2.md)
 
 ## See Also
 
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IORPCMessageErrorReturnContent](iorpcmessageerrorreturncontent.md)
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Structures
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IORPCMessageErrorReturnContent](./iorpcmessageerrorreturncontent.md)
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

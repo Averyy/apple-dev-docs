@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that defines options accepted by the scheduler.
@@ -27,7 +28,8 @@ This type is freely definable by each `Scheduler`. Typically, operations that ta
 
 ## See Also
 
-- [associatedtype SchedulerTimeType : Strideable](scheduler/schedulertimetype.md)
+### Declaring scheduler timekeeping and options
+- [associatedtype SchedulerTimeType : Strideable](./schedulertimetype.md)
   Describes an instant in time for this scheduler.
 
 

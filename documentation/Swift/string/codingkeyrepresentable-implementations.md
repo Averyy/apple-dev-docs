@@ -1,13 +1,14 @@
 # CodingKeyRepresentable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?<T>(codingKey: T)](string/init(codingkey:).md)
+- [init?<T>(codingKey: T)](./init%28codingkey%29.md)
 ### Instance Properties
-- [var codingKey: any CodingKey](string/codingkey.md)
+- [var codingKey: any CodingKey](./codingkey.md)
 
 
 ---

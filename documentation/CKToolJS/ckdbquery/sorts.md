@@ -1,7 +1,8 @@
 # sorts
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of sort descriptors that specify how to order the fetched records.
 
@@ -10,7 +11,7 @@ The array of sort descriptors that specify how to order the fetched records.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBQuerySort[]? sorts;
 ```
 

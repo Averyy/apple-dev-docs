@@ -1,7 +1,8 @@
 # wait()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Blocks the current thread until the condition is signaled.
 
@@ -20,16 +21,22 @@ Blocks the current thread until the condition is signaled.
 func wait()
 ```
 
+```objc
+- (void) wait;
+```
+
 #### Discussion
 
 You must lock the receiver prior to calling this method.
 
 ## See Also
 
-- [Threading Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
-- [func lock()](nslocking/lock.md)
+### Related Documentation
+- [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
+- [func lock()](../nslocking/lock%28%29.md)
   Attempts to acquire a lock, blocking a thread’s execution until the lock can be acquired.
-- [func wait(until: Date) -> Bool](nscondition/wait(until:).md)
+### Waiting for the Lock
+- [func wait(until: Date) -> Bool](./wait%28until%29.md)
   Blocks the current thread until the condition is signaled or the specified time limit is reached.
 
 

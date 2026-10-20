@@ -1,7 +1,8 @@
 # AppSchema.WordProcessorEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the word processor domain.
 
@@ -21,27 +22,28 @@ protocol WordProcessorEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var document: some AppSchemaEntity](appschema/wordprocessorentity/document.md)
+- [var document: some AppSchemaEntity](./wordprocessorentity/document.md)
   An entity schema for a document.
-- [var page: some AppSchemaEntity](appschema/wordprocessorentity/page.md)
+- [var page: some AppSchemaEntity](./wordprocessorentity/page.md)
   An entity schema for a page.
-- [var template: some AppSchemaEntity](appschema/wordprocessorentity/template.md)
+- [var template: some AppSchemaEntity](./wordprocessorentity/template.md)
   An entity schema for a template.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var document: some AppSchemaEntity](appschema/wordprocessorentity/document.md)
+### Content and parameter types
+- [var document: some AppSchemaEntity](./wordprocessorentity/document.md)
   An entity schema for a document.
-- [var page: some AppSchemaEntity](appschema/wordprocessorentity/page.md)
+- [var page: some AppSchemaEntity](./wordprocessorentity/page.md)
   An entity schema for a page.
-- [var template: some AppSchemaEntity](appschema/wordprocessorentity/template.md)
+- [var template: some AppSchemaEntity](./wordprocessorentity/template.md)
   An entity schema for a template.
 
 

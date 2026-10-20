@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Messages  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new message that is not part of a session.
 
@@ -16,6 +17,10 @@ Initializes a new message that is not part of a session.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A newly initialized message.
@@ -26,7 +31,8 @@ Use this initializer to create a new message that transmits app data, but is not
 
 ## See Also
 
-- [init(session: MSSession)](msmessage/init(session:).md)
+### Creating Messages
+- [init(session: MSSession)](./init%28session%29.md)
   Initializes a new message that is part of the provided session.
 
 

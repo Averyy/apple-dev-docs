@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates the edit menu displays at the given location in the text input view’s coordinate space.
@@ -15,7 +16,15 @@ Indicates the edit menu displays at the given location in the text input view’
 ## Declaration
 
 ```swift
+func selectTextForEditMenuWithLocation(inView locationInView: CGPoint, completionHandler: @escaping @Sendable (Bool, String?, NSRange) -> Void)
+```
+
+```swift
 func selectTextForEditMenuWithLocation(inView locationInView: CGPoint) async -> (Bool, String?, NSRange)
+```
+
+```objc
+- (void) selectTextForEditMenuWithLocationInView:(CGPoint) locationInView completionHandler:(void (^)(BOOL shouldPresentMenu, NSString *contextString, NSRange selectedRangeInContextString)) completionHandler;
 ```
 
 #### Discussion
@@ -28,7 +37,8 @@ The completion handler arguments are:
 
 ## See Also
 
-- [func canPerformAction(Selector, withSender: Any?) -> Bool](betextinput/canperformaction(_:withsender:).md)
+### Managing the edit menu
+- [func canPerformAction(Selector, withSender: Any?) -> Bool](./canperformaction%28_,withsender%29.md)
   Indicates whether the text view can process a given action.
 
 

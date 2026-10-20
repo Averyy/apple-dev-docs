@@ -1,7 +1,8 @@
 # TextureResource.Compression.ASTCQuality
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Selects the level of processing time allocated to achieve compression.
 
@@ -26,34 +27,35 @@ enum ASTCQuality
 ## Topics
 
 ### Compression qualities
-- [TextureResource.Compression.ASTCQuality.exhaustive](textureresource/compression/astcquality/exhaustive.md)
+- [TextureResource.Compression.ASTCQuality.exhaustive](./astcquality/exhaustive.md)
   Compresses optimally, achieving minor gains over high-level compression at the cost of much longer processing times.
-- [TextureResource.Compression.ASTCQuality.fast](textureresource/compression/astcquality/fast.md)
+- [TextureResource.Compression.ASTCQuality.fast](./astcquality/fast.md)
   Compresses as fast as possible.
-- [TextureResource.Compression.ASTCQuality.high](textureresource/compression/astcquality/high.md)
+- [TextureResource.Compression.ASTCQuality.high](./astcquality/high.md)
   Compresses with a focus on quality, reaching close to optimal quality while still spending much less time than exhaustive-level compression.
-- [TextureResource.Compression.ASTCQuality.normal](textureresource/compression/astcquality/normal.md)
+- [TextureResource.Compression.ASTCQuality.normal](./astcquality/normal.md)
   Compresses with a good balance between quality and processing time.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var `default`: TextureResource.Compression](textureresource/compression/default.md)
+### Specifying the compression settings
+- [static var `default`: TextureResource.Compression](./default.md)
   A texture you can create and export with lossy compression.
-- [static var none: TextureResource.Compression](textureresource/compression/none.md)
+- [static var none: TextureResource.Compression](./none.md)
   A texture you can create with no compression.
-- [static func astc(blockSize: TextureResource.Compression.ASTCBlockSize, quality: TextureResource.Compression.ASTCQuality) -> TextureResource.Compression](textureresource/compression/astc(blocksize:quality:).md)
+- [static func astc(blockSize: TextureResource.Compression.ASTCBlockSize, quality: TextureResource.Compression.ASTCQuality) -> TextureResource.Compression](./astc%28blocksize,quality%29.md)
   Compresses the imported image with ASTC.
-- [TextureResource.Compression.ASTCBlockSize](textureresource/compression/astcblocksize.md)
+- [TextureResource.Compression.ASTCBlockSize](./astcblocksize.md)
   The compressed block size.
 
 

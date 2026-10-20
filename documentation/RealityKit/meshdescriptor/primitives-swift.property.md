@@ -1,7 +1,8 @@
 # primitives
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primitives that make up the mesh.
 
@@ -11,7 +12,7 @@ The primitives that make up the mesh.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

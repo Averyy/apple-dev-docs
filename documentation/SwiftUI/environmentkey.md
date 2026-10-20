@@ -1,7 +1,8 @@
 # EnvironmentKey
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A key for accessing values in the environment.
 
@@ -22,7 +23,7 @@ protocol EnvironmentKey
 
 #### Overview
 
-You can create custom environment values by extending the [`EnvironmentValues`](environmentvalues.md) structure with new properties. First declare a new environment key type and specify a value for the required [`defaultValue`](environmentkey/defaultvalue.md) property:
+You can create custom environment values by extending the [`EnvironmentValues`](./environmentvalues.md) structure with new properties. First declare a new environment key type and specify a value for the required [`defaultValue`](./environmentkey/defaultvalue.md) property:
 
 ```swift
 private struct MyEnvironmentKey: EnvironmentKey {
@@ -30,7 +31,7 @@ private struct MyEnvironmentKey: EnvironmentKey {
 }
 ```
 
-The Swift compiler automatically infers the associated [`Value`](environmentkey/value.md) type as the type you specify for the default value. Then use the key to define a new environment value property:
+The Swift compiler automatically infers the associated [`Value`](./environmentkey/value.md) type as the type you specify for the default value. Then use the key to define a new environment value property:
 
 ```swift
 extension EnvironmentValues {
@@ -41,7 +42,7 @@ extension EnvironmentValues {
 }
 ```
 
-Clients of your environment value never use the key directly. Instead, they use the key path of your custom environment value property. To set the environment value for a view and all its subviews, add the [`environment(_:_:)`](view/environment(_:_:).md) view modifier to that view:
+Clients of your environment value never use the key directly. Instead, they use the key path of your custom environment value property. To set the environment value for a view and all its subviews, add the [`environment(_:_:)`](./view/environment%28_,_%29.md) view modifier to that view:
 
 ```swift
 MyView()
@@ -65,7 +66,7 @@ MyView()
     .myCustomValue("Another string")
 ```
 
-To read the value from inside `MyView` or one of its descendants, use the [`Environment`](environment.md) property wrapper:
+To read the value from inside `MyView` or one of its descendants, use the [`Environment`](./environment.md) property wrapper:
 
 ```swift
 struct MyView: View {
@@ -80,14 +81,15 @@ struct MyView: View {
 ## Topics
 
 ### Getting the default value
-- [static var defaultValue: Self.Value](environmentkey/defaultvalue.md)
+- [static var defaultValue: Self.Value](./environmentkey/defaultvalue.md)
   The default value for the environment key.
-- [associatedtype Value](environmentkey/value.md)
+- [associatedtype Value](./environmentkey/value.md)
   The associated type representing the type of the environment key’s value.
 
 ## See Also
 
-- [macro Entry()](entry().md)
+### Creating custom environment values
+- [macro Entry()](./entry%28%29.md)
   Creates an environment values, transaction, container values, or focused values entry.
 
 

@@ -1,7 +1,8 @@
 # headroomStops
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Alternate headroom in stops above reference white.
 

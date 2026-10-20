@@ -1,7 +1,8 @@
 # createPlaylist(name:description:authorDisplayName:items:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a playlist in the user’s music library.
 

@@ -1,7 +1,8 @@
 # TransactionInfoResponse
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains signed transaction information for a single transaction.
 
@@ -10,22 +11,22 @@ A response that contains signed transaction information for a single transaction
 
 ## Declaration
 
-```swift
+```
 object TransactionInfoResponse
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-The `TransactionInfoResponse` contains information about the transaction that you request using the [`Get Transaction Info`](get-transaction-info.md) endpoint. The [`transactionId`](transactionid.md) in the `signedTransactionInfo` matches the `transactionId` you provide in the request path.
+The `TransactionInfoResponse` contains information about the transaction that you request using the [`Get Transaction Info`](./get-transaction-info.md) endpoint. The [`transactionId`](./transactionid.md) in the `signedTransactionInfo` matches the `transactionId` you provide in the request path.
 
 ## Topics
 
 ### Response data types
-- [type JWSTransaction](jwstransaction.md)
+- [type JWSTransaction](./jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
 ## Properties
@@ -34,7 +35,8 @@ The `TransactionInfoResponse` contains information about the transaction that yo
 
 ## See Also
 
-- [Get Transaction Info](get-transaction-info.md)
+### Transaction information
+- [Get Transaction Info](./get-transaction-info.md)
   Get information about a single transaction for your app.
 
 

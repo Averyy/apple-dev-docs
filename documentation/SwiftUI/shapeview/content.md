@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of shape this can provide.
@@ -23,7 +24,8 @@ associatedtype Content : Shape
 
 ## See Also
 
-- [var shape: Self.Content](shapeview/shape.md)
+### Getting the shape
+- [var shape: Self.Content](./shape.md)
   The shape that this type draws and provides for other drawing operations.
 
 

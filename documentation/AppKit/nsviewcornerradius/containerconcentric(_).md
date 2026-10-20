@@ -1,7 +1,8 @@
 # containerConcentric(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A dynamic corner radius calculated based on the view’s container shape and limited to the provided minimum radius.
 
@@ -13,6 +14,10 @@ A dynamic corner radius calculated based on the view’s container shape and lim
 
 ```swift
 class func containerConcentric(_ minimumRadius: CGFloat) -> NSViewCornerRadius
+```
+
+```objc
++ (NSViewCornerRadius *) containerConcentricRadiusWithMinimum:(CGFloat) minimumRadius;
 ```
 
 ## Parameters

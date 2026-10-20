@@ -1,7 +1,8 @@
 # TableStyleConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of a table.
 
@@ -20,17 +21,18 @@ struct TableStyleConfiguration
 
 ## See Also
 
-- [func listStyle<S>(S) -> some View](view/liststyle(_:).md)
+### Styling collection views
+- [func listStyle<S>(S) -> some View](./view/liststyle%28_%29.md)
   Sets the style for lists within this view.
-- [protocol ListStyle](liststyle.md)
+- [protocol ListStyle](./liststyle.md)
   A protocol that describes the behavior and appearance of a list.
-- [func tableStyle<S>(S) -> some View](view/tablestyle(_:).md)
+- [func tableStyle<S>(S) -> some View](./view/tablestyle%28_%29.md)
   Sets the style for tables within this view.
-- [protocol TableStyle](tablestyle.md)
+- [protocol TableStyle](./tablestyle.md)
   A type that applies a custom appearance to all tables within a view.
-- [func disclosureGroupStyle<S>(S) -> some View](view/disclosuregroupstyle(_:).md)
+- [func disclosureGroupStyle<S>(S) -> some View](./view/disclosuregroupstyle%28_%29.md)
   Sets the style for disclosure groups within this view.
-- [protocol DisclosureGroupStyle](disclosuregroupstyle.md)
+- [protocol DisclosureGroupStyle](./disclosuregroupstyle.md)
   A type that specifies the appearance and interaction of disclosure groups within a view hierarchy.
 
 

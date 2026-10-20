@@ -6,30 +6,13 @@ url: https://apple.github.io/coremltools/docs-guides/source/mlmodel.html
 
 # MLModel Overview
 
-**
-
-- [.md](../_sources/source/mlmodel.md)
-- **
-
-.pdf
-
-**
-
-# MLModel Overview
-
- Table of contents 
-
-## Contents
-
-# MLModel Overview
-
-An MLModel encapsulates a [Core ML](https://developer.apple.com/documentation/coreml) model’s prediction methods, configuration, and model description. You can use the `coremltools` package to convert trained models from a variety of training tools into Core ML models. For the full list of model types, see [Core ML Model](https://apple.github.io/coremltools/mlmodel/Format/Model.md).
+An MLModel encapsulates a [Core ML](https://developer.apple.com/documentation/coreml) model’s prediction methods, configuration, and model description. You can use the `coremltools` package to convert trained models from a variety of training tools into Core ML models. For the full list of model types, see [Core ML Model](https://apple.github.io/coremltools/mlmodel/Format/Model.html).
 
 The converters in `coremltools` return a converted model as an `MLModel` object. You can then save the `MLModel` as an `.mlmodel` file, use it to make predictions, modify the input and output descriptions, and set the model’s metadata. The [MLModel class](https://apple.github.io/coremltools/source/coremltools.models.html#module-coremltools.models.model) defines the minimal interface to a Core ML model in Python.
 
 ## Core ML Specification
 
-A key component of Core ML is the public specification for representing machine learning models. This specification is defined in the [Model.proto](https://github.com/apple/coremltools/blob/master/mlmodel/format/Model.proto) protobuf (for a more readable version, see [Core ML Model](https://apple.github.io/coremltools/mlmodel/Format/Model.md)), which can be created using any language supported by protobuf (such as Python, C++, Java, C#, and Perl).
+A key component of Core ML is the public specification for representing machine learning models. This specification is defined in the [Model.proto](https://github.com/apple/coremltools/blob/master/mlmodel/format/Model.proto) protobuf (for a more readable version, see [Core ML Model](https://apple.github.io/coremltools/mlmodel/Format/Model.html)), which can be created using any language supported by protobuf (such as Python, C++, Java, C#, and Perl).
 
 At a high level, the protobuf specification consists of the following:
 
@@ -125,5 +108,3 @@ model.output_description['price'] = 'Price of the house'
 # Save the model
 model.save('HousePricer.mlmodel')
 ```
-
-** Contents

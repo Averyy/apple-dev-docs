@@ -1,7 +1,8 @@
 # setName(_:forPeripheral:)
 
 **Framework**: Playground Bluetooth  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Displays the name of the specified peripheral.
 
@@ -22,13 +23,14 @@ func setName(_ name: String, forPeripheral peripheral: CBPeripheral)
 
 ## See Also
 
-- [func setBatteryLevel(Double?, forPeripheral: CBPeripheral)](playgroundbluetoothconnectionview/3029513-setbatterylevel.md)
+### Displaying Individual Details
+- [func setBatteryLevel(Double?, forPeripheral: CBPeripheral)](./api-3029513-setbatterylevel.md)
   Displays the battery level for the specified peripheral.
-- [func setFirmwareStatus(PlaygroundBluetoothConnectionView.Item.FirmwareStatus?, forPeripheral: CBPeripheral)](playgroundbluetoothconnectionview/3029514-setfirmwarestatus.md)
+- [func setFirmwareStatus(PlaygroundBluetoothConnectionView.Item.FirmwareStatus?, forPeripheral: CBPeripheral)](./api-3029514-setfirmwarestatus.md)
   Displays whether or not the specified peripheral’s firmware is up-to-date.
-- [func setIcon(UIImage, forPeripheral: CBPeripheral)](playgroundbluetoothconnectionview/3029515-seticon.md)
+- [func setIcon(UIImage, forPeripheral: CBPeripheral)](./api-3029515-seticon.md)
   Displays an icon representing the specified peripheral.
-- [func setIssueIcon(UIImage, forPeripheral: CBPeripheral)](playgroundbluetoothconnectionview/3029516-setissueicon.md)
+- [func setIssueIcon(UIImage, forPeripheral: CBPeripheral)](./api-3029516-setissueicon.md)
   Displays an icon indicating that the specified peripheral is available but may not be usable.
 
 

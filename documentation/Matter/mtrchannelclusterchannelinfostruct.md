@@ -1,7 +1,8 @@
 # MTRChannelClusterChannelInfoStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,31 +19,35 @@
 class MTRChannelClusterChannelInfoStruct
 ```
 
+```objc
+@interface MTRChannelClusterChannelInfoStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var affiliateCallSign: String?](mtrchannelclusterchannelinfostruct/affiliatecallsign.md)
-- [var callSign: String?](mtrchannelclusterchannelinfostruct/callsign.md)
-- [var majorNumber: NSNumber](mtrchannelclusterchannelinfostruct/majornumber.md)
-- [var minorNumber: NSNumber](mtrchannelclusterchannelinfostruct/minornumber.md)
-- [var name: String?](mtrchannelclusterchannelinfostruct/name.md)
-- [var identifier: String?](mtrchannelclusterchannelinfostruct/identifier.md)
-- [var type: NSNumber?](mtrchannelclusterchannelinfostruct/type.md)
+- [var affiliateCallSign: String?](./mtrchannelclusterchannelinfostruct/affiliatecallsign.md)
+- [var callSign: String?](./mtrchannelclusterchannelinfostruct/callsign.md)
+- [var majorNumber: NSNumber](./mtrchannelclusterchannelinfostruct/majornumber.md)
+- [var minorNumber: NSNumber](./mtrchannelclusterchannelinfostruct/minornumber.md)
+- [var name: String?](./mtrchannelclusterchannelinfostruct/name.md)
+- [var identifier: String?](./mtrchannelclusterchannelinfostruct/identifier.md)
+- [var type: NSNumber?](./mtrchannelclusterchannelinfostruct/type.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRChannelClusterChannelInfo](mtrchannelclusterchannelinfo.md)
+- [MTRChannelClusterChannelInfo](./mtrchannelclusterchannelinfo.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

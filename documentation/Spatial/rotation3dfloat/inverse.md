@@ -1,7 +1,8 @@
 # inverse
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var inverse: Rotation3DFloat { get }
+```
+
+```c
+static SPRotation3DFloat SPRotation3DFloatInverse(SPRotation3DFloat rotation);
 ```
 
 #### Discussion

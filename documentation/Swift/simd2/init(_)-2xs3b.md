@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vector from the given vector of floating-point values.
 
@@ -19,6 +20,8 @@ Creates a new vector from the given vector of floating-point values.
 ```swift
 init<Other>(_ other: SIMD2<Other>) where Other : BinaryFloatingPoint, Other : SIMDScalar
 ```
+
+Available when `Scalar` conforms to `BinaryFloatingPoint` and `SIMDScalar`.
 
 ## Parameters
 

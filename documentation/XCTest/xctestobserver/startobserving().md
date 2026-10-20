@@ -1,9 +1,12 @@
 # startObserving()
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts observing a test.
+
+> **Deprecated**: Use the XCTestObservationCenter class and XCTestObservation protocol instead.
 
 ## Declaration
 
@@ -11,9 +14,14 @@ Starts observing a test.
 func startObserving()
 ```
 
+```objc
+- (void) startObserving;
+```
+
 ## See Also
 
-- [func stopObserving()](xctestobserver/stopobserving.md)
+### Starting and Stopping Test Observation
+- [func stopObserving()](./stopobserving%28%29.md)
   Stops observing a test.
 
 

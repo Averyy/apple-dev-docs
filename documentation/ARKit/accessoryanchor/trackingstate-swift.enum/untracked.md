@@ -1,7 +1,8 @@
 # AccessoryAnchor.TrackingState.untracked
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Neither position nor orientation are tracked.
 

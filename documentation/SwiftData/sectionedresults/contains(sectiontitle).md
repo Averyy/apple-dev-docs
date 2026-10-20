@@ -1,7 +1,8 @@
 # contains(sectionTitle:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether a section with the given title exists in the collection.
 
@@ -22,7 +23,7 @@ func contains(sectionTitle title: SectionTitle) -> Bool
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

@@ -1,7 +1,8 @@
 # isValidDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the current combination of properties represents a date which exists in the current calendar.
 
@@ -32,9 +33,10 @@ The calendar property must be set, or the result is always `false`.
 
 ## See Also
 
-- [func isValidDate(in: Calendar) -> Bool](datecomponents/isvaliddate(in:).md)
+### Validating a Date
+- [func isValidDate(in: Calendar) -> Bool](./isvaliddate%28in%29.md)
   Indicates whether the current combination of properties represents a date which exists in the specified calendar.
-- [var date: Date?](datecomponents/date.md)
+- [var date: Date?](./date.md)
   The date calculated from the current components using the stored calendar.
 
 

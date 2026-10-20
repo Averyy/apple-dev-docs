@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label for a contact property value.
 
@@ -19,13 +20,26 @@ The label for a contact property value.
 var label: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * label;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
-A contact property can have a label, such as Home, Work, iPhone, etc. For some predefined label constants, see[`CNPhoneNumber`](cnphonenumber.md), and [`CNContactRelation`](cncontactrelation.md). Custom labels can also be used. Labels are not used for [`CNSocialProfile`](cnsocialprofile.md) and [`CNInstantMessageAddress`](cninstantmessageaddress.md) properties.
+A contact property can have a label, such as Home, Work, iPhone, etc. For some predefined label constants, see[`CNPhoneNumber`](../cnphonenumber.md), and [`CNContactRelation`](../cncontactrelation.md). Custom labels can also be used. Labels are not used for [`CNSocialProfile`](../cnsocialprofile.md) and [`CNInstantMessageAddress`](../cninstantmessageaddress.md) properties.
 
 ## See Also
 
-- [var value: ValueType](cnlabeledvalue/value.md)
+### Getting the label and value
+- [var value: ValueType](./value.md)
   A contact property value.
 
 

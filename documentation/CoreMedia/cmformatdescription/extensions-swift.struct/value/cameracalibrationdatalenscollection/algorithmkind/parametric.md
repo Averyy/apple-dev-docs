@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.AlgorithmKind.parametric
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The camera lens calibration requires camera intrinsic and extrinsic parameters.
 

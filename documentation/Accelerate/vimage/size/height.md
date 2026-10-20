@@ -1,7 +1,8 @@
 # height
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the size structure.
 
@@ -11,7 +12,7 @@ The height of the size structure.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ let height: Int
 
 ## See Also
 
-- [let width: Int](vimage/size/width.md)
+### Instance Properties
+- [let width: Int](./width.md)
   The width of the size structure.
 
 

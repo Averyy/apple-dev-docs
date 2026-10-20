@@ -1,7 +1,8 @@
 # weights
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor of the weights.
 
@@ -11,8 +12,10 @@ The descriptor of the weights.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ var weights: BNNSNDArrayDescriptor
 
 ## See Also
 
-- [var bias: BNNSNDArrayDescriptor?](bnns/fusedfullyconnectedparameters/bias.md)
+### Inspecting the Properties of a Fused Fully Connected Parameters Structure
+- [var bias: BNNSNDArrayDescriptor?](./bias.md)
   The descriptor of the bias.
 
 

@@ -1,7 +1,8 @@
 # beginTransparencyLayer(auxiliaryInfo:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins a transparency layer.
 
@@ -10,7 +11,7 @@ Begins a transparency layer.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Begins a transparency layer.
 func beginTransparencyLayer(auxiliaryInfo: CFDictionary?)
 ```
 
+```c
+extern void CGContextBeginTransparencyLayer(CGContextRef c, CFDictionaryRef auxiliaryInfo);
+```
+
 #### Discussion
 
-Until a corresponding call to [`endTransparencyLayer()`](cgcontext/endtransparencylayer().md), all subsequent drawing operations in the specified context are composited into a fully transparent backdrop (which is treated as a separate destination buffer from the context).
+Until a corresponding call to [`endTransparencyLayer()`](./endtransparencylayer%28%29.md), all subsequent drawing operations in the specified context are composited into a fully transparent backdrop (which is treated as a separate destination buffer from the context).
 
 After a call to `CGContextEndTransparencyLayer`, the result is composited into the context using the global alpha and shadow state of the context. This operation respects the clipping region of the context.
 
@@ -41,9 +46,10 @@ Ending the transparency layer restores these parameters to their previous values
 
 ## See Also
 
-- [func beginTransparencyLayer(in: CGRect, auxiliaryInfo: CFDictionary?)](cgcontext/begintransparencylayer(in:auxiliaryinfo:).md)
+### Working with Transparency Layers
+- [func beginTransparencyLayer(in: CGRect, auxiliaryInfo: CFDictionary?)](./begintransparencylayer%28in,auxiliaryinfo%29.md)
   Begins a transparency layer whose contents are bounded by the specified rectangle.
-- [func endTransparencyLayer()](cgcontext/endtransparencylayer.md)
+- [func endTransparencyLayer()](./endtransparencylayer%28%29.md)
   Ends a transparency layer.
 
 

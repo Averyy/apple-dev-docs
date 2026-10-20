@@ -1,7 +1,8 @@
 # init(scope:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a BloomComponent with the specified scope.
 
@@ -21,7 +22,7 @@ init(scope: BloomComponent.BloomScope = .unbounded)
 
 ## Parameters
 
-- `scope`: The bloom scope. Defaults to [`unbounded`](bloomcomponent/bloomscope/unbounded.md).
+- `scope`: The bloom scope. Defaults to [`unbounded`](./bloomscope/unbounded.md).
 
 
 ---

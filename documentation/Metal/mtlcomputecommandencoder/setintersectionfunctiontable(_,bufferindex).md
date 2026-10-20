@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Binds an intersection function table to the buffer argument table, making it callable in your Metal shaders.
@@ -20,14 +21,19 @@ Binds an intersection function table to the buffer argument table, making it cal
 func setIntersectionFunctionTable(_ intersectionFunctionTable: (any MTLIntersectionFunctionTable)?, bufferIndex: Int)
 ```
 
+```objc
+- (void) setIntersectionFunctionTable:(id<MTLIntersectionFunctionTable>) intersectionFunctionTable atBufferIndex:(NSUInteger) bufferIndex;
+```
+
 ## Parameters
 
-- `intersectionFunctionTable`: The [`MTLIntersectionFunctionTable`](mtlintersectionfunctiontable.md) to bind.
+- `intersectionFunctionTable`: The [`MTLIntersectionFunctionTable`](../mtlintersectionfunctiontable.md) to bind.
 - `bufferIndex`: The index in the buffer argument table the intersection function table binds to.
 
 ## See Also
 
-- [func setAccelerationStructure((any MTLAccelerationStructure)?, bufferIndex: Int)](mtlcomputecommandencoder/setaccelerationstructure(_:bufferindex:).md)
+### Binding arguments for acceleration structures
+- [func setAccelerationStructure((any MTLAccelerationStructure)?, bufferIndex: Int)](./setaccelerationstructure%28_,bufferindex%29.md)
   Binds an acceleration structure to the buffer argument table, allowing functions to access it on the GPU.
 
 

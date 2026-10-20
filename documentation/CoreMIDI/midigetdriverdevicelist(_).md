@@ -1,7 +1,8 @@
 # MIDIGetDriverDeviceList(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the list of driver-created devices in the current MIDI setup.
 
@@ -18,13 +19,17 @@ Returns the list of driver-created devices in the current MIDI setup.
 func MIDIGetDriverDeviceList(_ driver: MIDIDriverRef) -> MIDIDeviceListRef
 ```
 
+```c
+extern MIDIDeviceListRef MIDIGetDriverDeviceList(MIDIDriverRef driver);
+```
+
 #### Return Value
 
 The requested device list.
 
 #### Discussion
 
-Dispose this list when you’re finished working with it by calling [`MIDIDeviceListDispose(_:)`](mididevicelistdispose(_:).md).
+Dispose this list when you’re finished working with it by calling [`MIDIDeviceListDispose(_:)`](./mididevicelistdispose%28_%29.md).
 
 ## Parameters
 
@@ -32,15 +37,16 @@ Dispose this list when you’re finished working with it by calling [`MIDIDevice
 
 ## See Also
 
-- [func MIDIDriverEnableMonitoring(MIDIDriverRef, Bool) -> OSStatus](mididriverenablemonitoring(_:_:).md)
+### Inspecting a Driver
+- [func MIDIDriverEnableMonitoring(MIDIDriverRef, Bool) -> OSStatus](./mididriverenablemonitoring%28_,_%29.md)
   Enables monitoring of all outgoing MIDI packets.
-- [func MIDIGetDriverIORunLoop() -> Unmanaged<CFRunLoop>](midigetdriveriorunloop().md)
+- [func MIDIGetDriverIORunLoop() -> Unmanaged<CFRunLoop>](./midigetdriveriorunloop%28%29.md)
   Returns the server’s driver I/O thread.
-- [let kMIDIDriverPropertyUsesSerial: CFString](kmididriverpropertyusesserial.md)
+- [let kMIDIDriverPropertyUsesSerial: CFString](./kmididriverpropertyusesserial.md)
   A value that indicates whether the driver uses serial ports and is eligible to have serial ports assigned to it.
-- [struct MIDIDriverInterface](mididriverinterface.md)
+- [struct MIDIDriverInterface](./mididriverinterface.md)
   The interface to a MIDI driver.
-- [typealias MIDIDriverRef](mididriverref.md)
+- [typealias MIDIDriverRef](./mididriverref.md)
   A MIDI driver object.
 
 

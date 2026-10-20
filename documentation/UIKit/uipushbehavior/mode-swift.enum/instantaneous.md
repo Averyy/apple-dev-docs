@@ -1,7 +1,8 @@
 # UIPushBehavior.Mode.instantaneous
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Option for instantaneous force.
 
@@ -9,7 +10,7 @@ Option for instantaneous force.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ Option for instantaneous force.
 case instantaneous
 ```
 
+```c
+UIPushBehaviorModeInstantaneous
+```
+
 ## See Also
 
-- [UIPushBehavior.Mode.continuous](uipushbehavior/mode-swift.enum/continuous.md)
+### Constants
+- [UIPushBehavior.Mode.continuous](./continuous.md)
   Option for continuous force.
 
 

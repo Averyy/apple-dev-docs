@@ -1,7 +1,8 @@
 # SubscriptionGracePeriodResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single grace period configuration for a subscription.
 
@@ -10,7 +11,7 @@ A response containing a single grace period configuration for a subscription.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGracePeriodResponse
 ```
 
@@ -21,13 +22,14 @@ object SubscriptionGracePeriodResponse
 
 ## See Also
 
-- [type SubscriptionGracePeriodDuration](subscriptiongraceperiodduration.md)
+### Object
+- [type SubscriptionGracePeriodDuration](./subscriptiongraceperiodduration.md)
   A string that represents the grace period duration for a subscription.
-- [object SubscriptionGracePeriod](subscriptiongraceperiod.md)
+- [object SubscriptionGracePeriod](./subscriptiongraceperiod.md)
   A grace period configuration for a subscription, allowing subscribers continued access while payment issues are resolved.
-- [object SubscriptionGracePeriodUpdateRequest](subscriptiongraceperiodupdaterequest.md)
+- [object SubscriptionGracePeriodUpdateRequest](./subscriptiongraceperiodupdaterequest.md)
   The request body you use to update a subscription grace period update request.
-- [object AppSubscriptionGracePeriodLinkageResponse](appsubscriptiongraceperiodlinkageresponse.md)
+- [object AppSubscriptionGracePeriodLinkageResponse](./appsubscriptiongraceperiodlinkageresponse.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isEditing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the collection view is in editing mode.
 
@@ -16,6 +17,10 @@ A Boolean value that determines whether the collection view is in editing mode.
 
 ```swift
 var isEditing: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isEditing) BOOL editing;
 ```
 
 

@@ -1,7 +1,8 @@
 # ActiveNSExtensionsCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of active extensions for a user on a device.
 
@@ -10,14 +11,14 @@ The command to get a list of active extensions for a user on a device.
 
 ## Declaration
 
-```swift
+```
 object ActiveNSExtensionsCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ActiveNSExtensionsCommand.Command](activensextensionscommand/command-data.dictionary.md)
+- [object ActiveNSExtensionsCommand.Command](./activensextensionscommand/command-data.dictionary.md)
   The command to get a list of active extensions for a user on a device.
 
 ## Properties
@@ -27,7 +28,8 @@ object ActiveNSExtensionsCommand
 
 ## See Also
 
-- [object ActiveNSExtensionsResponse](activensextensionsresponse.md)
+### Commands and responses
+- [object ActiveNSExtensionsResponse](./activensextensionsresponse.md)
   A response from the device after it processes the command to get a list of active extensions for a user on a device.
 
 

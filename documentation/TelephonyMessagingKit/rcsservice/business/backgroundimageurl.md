@@ -1,7 +1,8 @@
 # backgroundImageURL
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Background image to apply to business information page.
 
@@ -16,13 +17,14 @@ let backgroundImageURL: URL?
 
 ## See Also
 
-- [var themeColor: CGColor?](rcsservice/business/themecolor.md)
+### Accessing display information
+- [var themeColor: CGColor?](./themecolor.md)
   Theme color to apply to conversation view.
-- [let styleSheetTemplateURL: URL?](rcsservice/business/stylesheettemplateurl.md)
+- [let styleSheetTemplateURL: URL?](./stylesheettemplateurl.md)
   URL referring to a CSS template to be used in rich cards sent by business.
-- [let persistentMenu: RCSService.Business.Menu?](rcsservice/business/persistentmenu.md)
+- [let persistentMenu: RCSService.Business.Menu?](./persistentmenu.md)
   Persistent menu with a nested collection of suggested replies and suggested actions.
-- [RCSService.Business.Menu](rcsservice/business/menu.md)
+- [RCSService.Business.Menu](./menu.md)
   A menu provided by business.
 
 

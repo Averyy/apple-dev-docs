@@ -1,7 +1,8 @@
 # SecRequirement
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A code requirement object.
 
@@ -15,15 +16,19 @@ A code requirement object.
 class SecRequirement
 ```
 
+```c
+typedef struct __SecRequirement * SecRequirementRef;
+```
+
 ## Mentions
 
-- [Applying Code Requirements](applying-code-requirements.md)
+- [Applying Code Requirements](./applying-code-requirements.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

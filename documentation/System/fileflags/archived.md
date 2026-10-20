@@ -1,7 +1,8 @@
 # archived
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File has been archived.
 

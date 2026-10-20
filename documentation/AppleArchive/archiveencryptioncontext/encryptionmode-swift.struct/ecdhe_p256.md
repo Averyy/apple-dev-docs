@@ -1,7 +1,8 @@
 # ecdhe_p256
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents ephemeral Diffie-Hellman encryption mode.
 
@@ -11,7 +12,7 @@ A constant that represents ephemeral Diffie-Hellman encryption mode.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static let ecdhe_p256: ArchiveEncryptionContext.EncryptionMode
 
 ## See Also
 
-- [static let none: ArchiveEncryptionContext.EncryptionMode](archiveencryptioncontext/encryptionmode-swift.struct/none.md)
+### Encryption Mode Constants
+- [static let none: ArchiveEncryptionContext.EncryptionMode](./none.md)
   A constant that represents no encryption.
-- [static let scrypt: ArchiveEncryptionContext.EncryptionMode](archiveencryptioncontext/encryptionmode-swift.struct/scrypt.md)
+- [static let scrypt: ArchiveEncryptionContext.EncryptionMode](./scrypt.md)
   A constant that represents ephemeral password encryption mode.
-- [static let symmetric: ArchiveEncryptionContext.EncryptionMode](archiveencryptioncontext/encryptionmode-swift.struct/symmetric.md)
+- [static let symmetric: ArchiveEncryptionContext.EncryptionMode](./symmetric.md)
   A constant that represents symmetric key encryption mode.
 
 

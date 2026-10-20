@@ -1,7 +1,8 @@
 # grapheme
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The written representation of the term, the way it is expected to appear in transcriptions.
 
@@ -21,7 +22,8 @@ let grapheme: String
 
 ## See Also
 
-- [let phonemes: [String]](sfcustomlanguagemodeldata/custompronunciation/phonemes.md)
+### Inspecting a term
+- [let phonemes: [String]](./phonemes.md)
   Zero or more phonetic representations of the term, given as X-SAMPA strings.
 
 

@@ -1,7 +1,8 @@
 # MusicUnderstandingSession
 
 **Framework**: Music Understanding  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that performs music analysis on an audio source and provides the results.
 
@@ -23,34 +24,34 @@ actor MusicUnderstandingSession
 ## Topics
 
 ### Creating a session
-- [convenience init<Provider>(audioProvider: Provider)](musicunderstandingsession/init(audioprovider:).md)
+- [convenience init<Provider>(audioProvider: Provider)](./musicunderstandingsession/init%28audioprovider%29.md)
   Creates a music understanding session that accepts streaming audio buffers.
-- [convenience init(asset: any AVAsset & Sendable) async throws](musicunderstandingsession/init(asset:).md)
+- [convenience init(asset: any AVAsset & Sendable) async throws](./musicunderstandingsession/init%28asset%29.md)
   Creates a music understanding session from an audio asset.
 ### Performing an analysis
-- [func analyze() async throws -> MusicUnderstandingSession.SessionResult](musicunderstandingsession/analyze.md)
+- [func analyze() async throws -> MusicUnderstandingSession.SessionResult](./musicunderstandingsession/analyze%28%29.md)
   Performs all available analyses on the session’s audio source.
-- [func analyze(for: Set<AnalysisType>) async throws -> MusicUnderstandingSession.SessionResult](musicunderstandingsession/analyze(for:).md)
+- [func analyze(for: Set<AnalysisType>) async throws -> MusicUnderstandingSession.SessionResult](./musicunderstandingsession/analyze%28for%29.md)
   Performs the specified analyses on the session’s audio source.
 ### Getting analysis results
-- [MusicUnderstandingSession.SessionResult](musicunderstandingsession/sessionresult.md)
+- [MusicUnderstandingSession.SessionResult](./musicunderstandingsession/sessionresult.md)
   The aggregated results for all analysis types that a music understanding session performs.
-- [var loudnessResults: some Sendable & AsyncSequence<LoudnessResult, any Error>](musicunderstandingsession/loudnessresults.md)
+- [var loudnessResults: some Sendable & AsyncSequence<LoudnessResult, any Error>](./musicunderstandingsession/loudnessresults.md)
   An async sequence that yields loudness analysis results as they become available.
-- [MusicUnderstandingSession.RangedValue](musicunderstandingsession/rangedvalue.md)
+- [MusicUnderstandingSession.RangedValue](./musicunderstandingsession/rangedvalue.md)
   A structure that pairs a value over a time range.
-- [MusicUnderstandingSession.TimedValue](musicunderstandingsession/timedvalue.md)
+- [MusicUnderstandingSession.TimedValue](./musicunderstandingsession/timedvalue.md)
   A structure that pairs a value with a time.
 ### Cancelling a session
-- [func cancel() async](musicunderstandingsession/cancel.md)
+- [func cancel() async](./musicunderstandingsession/cancel%28%29.md)
   Cancels any ongoing analysis.
 
 ## Relationships
 
 ### Conforms To
-- [Actor](../swift/actor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Actor](../Swift/actor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

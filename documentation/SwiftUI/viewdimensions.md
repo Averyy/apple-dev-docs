@@ -1,7 +1,8 @@
 # ViewDimensions
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view’s size and alignment guides in its own coordinate space.
 
@@ -22,19 +23,19 @@ struct ViewDimensions
 
 ## Mentions
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
+- [Aligning views within a stack](./aligning-views-within-a-stack.md)
 
 #### Overview
 
 This structure contains the size and alignment guides of a view. You receive an instance of this structure to use in a variety of layout calculations, like when you:
 
-- Define a default value for a custom alignment guide; see [`defaultValue(in:)`](alignmentid/defaultvalue(in:).md).
-- Modify an alignment guide on a view; see [`alignmentGuide(_:computeValue:)`](view/alignmentguide(_:computevalue:).md).
-- Ask for the dimensions of a subview of a custom view layout; see [`dimensions(in:)`](layoutsubview/dimensions(in:).md).
+- Define a default value for a custom alignment guide; see [`defaultValue(in:)`](./alignmentid/defaultvalue%28in%29.md).
+- Modify an alignment guide on a view; see [`alignmentGuide(_:computeValue:)`](./view/alignmentguide%28_,computevalue%29.md).
+- Ask for the dimensions of a subview of a custom view layout; see [`dimensions(in:)`](./layoutsubview/dimensions%28in%29.md).
 
-##### Custom Alignment Guides
+##### Custom alignment guides
 
-You receive an instance of this structure as the `context` parameter to the [`defaultValue(in:)`](alignmentid/defaultvalue(in:).md) method that you implement to produce the default offset for an alignment guide, or as the first argument to the closure you provide to the [`alignmentGuide(_:computeValue:)`](view/alignmentguide(_:computevalue:).md) view modifier to override the default calculation for an alignment guide. In both cases you can use the instance, if helpful, to calculate the offset for the guide. For example, you could compute a default offset for a custom [`VerticalAlignment`](verticalalignment.md) as a fraction of the view’s [`height`](viewdimensions/height.md):
+You receive an instance of this structure as the `context` parameter to the [`defaultValue(in:)`](./alignmentid/defaultvalue%28in%29.md) method that you implement to produce the default offset for an alignment guide, or as the first argument to the closure you provide to the [`alignmentGuide(_:computeValue:)`](./view/alignmentguide%28_,computevalue%29.md) view modifier to override the default calculation for an alignment guide. In both cases you can use the instance, if helpful, to calculate the offset for the guide. For example, you could compute a default offset for a custom [`VerticalAlignment`](./verticalalignment.md) as a fraction of the view’s [`height`](./viewdimensions/height.md):
 
 ```swift
 private struct FirstThirdAlignment: AlignmentID {
@@ -66,13 +67,13 @@ struct ViewDimensionsOffset: View {
 
 The example above indents the second text view because the subtraction moves the second text view’s leading guide in the negative x direction, which is to the left in the view’s coordinate space. As a result, SwiftUI moves the second text view to the right, relative to the first text view, to keep their leading guides aligned:
 
-![A screenshot of two strings. The first says Default and the second,](/images/com.apple.SwiftUI/ViewDimensions-1-iOS@2x.png)
+![A screenshot of two strings. The first says Default and the second,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ViewDimensions-1-iOS@2x.png)
 
-##### Layout Direction
+##### Layout direction
 
 The discussion above describes a left-to-right language environment, but you don’t change your guide calculation to operate in a right-to-left environment. SwiftUI moves the view’s origin from the left to the right side of the view and inverts the positive x direction. As a result, the existing calculation produces the same effect, but in the opposite direction.
 
-You can see this if you use the [`environment(_:_:)`](view/environment(_:_:).md) modifier to set the [`layoutDirection`](environmentvalues/layoutdirection.md) property for the view that you defined above:
+You can see this if you use the [`environment(_:_:)`](./view/environment%28_,_%29.md) modifier to set the [`layoutDirection`](./environmentvalues/layoutdirection.md) property for the view that you defined above:
 
 ```swift
 ViewDimensionsOffset()
@@ -81,47 +82,48 @@ ViewDimensionsOffset()
 
 With no change in your guide, this produces the desired effect — it indents the second text view’s right side, relative to the first text view’s right side. The leading edge is now on the right, and the direction of the offset is reversed:
 
-![A screenshot of two strings. The first says Default and the second,](/images/com.apple.SwiftUI/ViewDimensions-2-iOS@2x.png)
+![A screenshot of two strings. The first says Default and the second,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ViewDimensions-2-iOS@2x.png)
 
 ## Topics
 
 ### Getting dimensions
-- [var height: CGFloat](viewdimensions/height.md)
+- [var height: CGFloat](./viewdimensions/height.md)
   The view’s height.
-- [var width: CGFloat](viewdimensions/width.md)
+- [var width: CGFloat](./viewdimensions/width.md)
   The view’s width.
 ### Accessing guide values
-- [subscript(_:)](viewdimensions/subscript(_:).md)
+- [subscript(_:)](./viewdimensions/subscript%28_%29.md)
   Gets the value of the given horizontal guide.
-- [subscript(explicit:)](viewdimensions/subscript(explicit:).md)
+- [subscript(explicit:)](./viewdimensions/subscript%28explicit%29.md)
   Gets the explicit value of the given horizontal alignment guide.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
+### Aligning views
+- [Aligning views within a stack](./aligning-views-within-a-stack.md)
   Position views inside a stack using alignment guides.
-- [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Aligning views across stacks](./aligning-views-across-stacks.md)
   Create a custom alignment and use it to align views across multiple stacks.
-- [func alignmentGuide(_:computeValue:)](view/alignmentguide(_:computevalue:).md)
+- [func alignmentGuide(_:computeValue:)](./view/alignmentguide%28_,computevalue%29.md)
   Sets the view’s horizontal alignment.
-- [struct Alignment](alignment.md)
+- [struct Alignment](./alignment.md)
   An alignment in both axes.
-- [struct HorizontalAlignment](horizontalalignment.md)
+- [struct HorizontalAlignment](./horizontalalignment.md)
   An alignment position along the horizontal axis.
-- [struct VerticalAlignment](verticalalignment.md)
+- [struct VerticalAlignment](./verticalalignment.md)
   An alignment position along the vertical axis.
-- [struct DepthAlignment](depthalignment.md)
+- [struct DepthAlignment](./depthalignment.md)
   An alignment position along the depth axis.
-- [protocol AlignmentID](alignmentid.md)
+- [protocol AlignmentID](./alignmentid.md)
   A type that you use to create custom alignment guides.
-- [struct ViewDimensions3D](viewdimensions3d.md)
+- [struct ViewDimensions3D](./viewdimensions3d.md)
   A view’s 3D size and alignment guides in its own coordinate space.
-- [struct SpatialContainer](spatialcontainer.md)
+- [struct SpatialContainer](./spatialcontainer.md)
   A layout container that aligns overlapping content in 3D space.
 
 

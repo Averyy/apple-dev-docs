@@ -1,13 +1,14 @@
 # force::noise
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a noise force to the current element
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void force::noise(NoiseParams params)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/force__noise.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/force__noise.svg)
 
 ## Parameters
 

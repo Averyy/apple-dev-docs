@@ -1,7 +1,8 @@
 # datePickerStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current style of the date picker.
 
@@ -17,15 +18,20 @@ The current style of the date picker.
 var datePickerStyle: UIDatePickerStyle { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) UIDatePickerStyle datePickerStyle;
+```
+
 #### Discussion
 
-This property always returns a concrete style, never [`UIDatePickerStyle.automatic`](uidatepickerstyle/automatic.md).
+This property always returns a concrete style, never [`UIDatePickerStyle.automatic`](../uidatepickerstyle/automatic.md).
 
 ## See Also
 
-- [var preferredDatePickerStyle: UIDatePickerStyle](uidatepicker/preferreddatepickerstyle.md)
+### Configuring the date picker style
+- [var preferredDatePickerStyle: UIDatePickerStyle](./preferreddatepickerstyle.md)
   The preferred style of the date picker.
-- [enum UIDatePickerStyle](uidatepickerstyle.md)
+- [enum UIDatePickerStyle](../uidatepickerstyle.md)
   Styles that determine the appearance of a date picker.
 
 

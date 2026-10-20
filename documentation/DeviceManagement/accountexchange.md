@@ -1,7 +1,8 @@
 # AccountExchange
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure an Exchange account.
 
@@ -14,7 +15,7 @@ The declaration to configure an Exchange account.
 
 ## Declaration
 
-```swift
+```
 object AccountExchange
 ```
 
@@ -22,7 +23,7 @@ object AccountExchange
 
 Specify `com.apple.configuration.account.exchange` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.configuration.account.exchange` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration sets up a Microsoft Exchange account.
 
@@ -62,9 +63,9 @@ This configuration sets up a Microsoft Exchange account.
 ## Topics
 
 ### Objects
-- [object AccountExchangeOAuthObject](accountexchangeoauthobject.md)
+- [object AccountExchangeOAuthObject](./accountexchangeoauthobject.md)
   The configuration settings for OAuth for this account.
-- [object AccountExchangeSMIMEObject](accountexchangesmimeobject.md)
+- [object AccountExchangeSMIMEObject](./accountexchangesmimeobject.md)
   Settings for S/MIME. Applicable for “EAS” only.
 
 ## Properties
@@ -72,59 +73,110 @@ This configuration sets up a Microsoft Exchange account.
 - `AuthenticationCredentialsAssetReference` (string): The identifier of an asset declaration that contains the credentials for this account to authenticate with an Exchange server. Set the corresponding asset type to `CredentialUserNameAndPassword`.
 - `AuthenticationIdentityAssetReference` (string): The identifier of a credential asset declaration that contains the identity that this account requires to authenticate with the Exchange server.
 - `CalendarServiceActive` (boolean): If `true`, activates the calendar service for this account.
+
+  **Default**: `true`
 - `ContactsServiceActive` (boolean): If `true`, activates the address book service for this account.
-- `EnabledProtocolTypes` ([string]) *(required)*: The set of protocol types to enable on the Exchange server, in order of preference. This is an array of unique strings with possible values: - `EAS:` Exchange ActiveSync
-- `EWS:` Exchange Web Services If the device supports one or more of the listed protocol types, it sets up an account for the first supported type. If the device doesn’t support any of the listed protocol types, it doesn’t set up an account and the system reports an error.
-- `External Path` (string): The external path of the EWS server. The system uses this only when this declaration has an `ExternalHostName` value. Applicable for “EWS” only. Available: macOS 13+
-- `ExternalHostName` (string): The external hostname of the EWS server (or IP address). Applicable for “EWS” only. Available: macOS 13+
-- `ExternalPort` (integer): The external port number of the EWS server. The system uses this only when this declaration has an `ExternalHostName` value. Applicable for “EWS” only. Available: macOS 13+
+
+  **Default**: `true`
+- `EnabledProtocolTypes` ([string]) *(required)*: The set of protocol types to enable on the Exchange server, in order of preference. This is an array of unique strings with possible values:
+
+  - `EAS:` Exchange ActiveSync
+  - `EWS:` Exchange Web Services
+
+  If the device supports one or more of the listed protocol types, it sets up an account for the first supported type.
+
+  If the device doesn’t support any of the listed protocol types, it doesn’t set up an account and the system reports an error.
+
+  **Allowed Values**: `EAS`, `EWS`
+- `External Path` (string): The external path of the EWS server. The system uses this only when this declaration has an `ExternalHostName` value. Applicable for “EWS” only.
+
+  Available: macOS 13+
+- `ExternalHostName` (string): The external hostname of the EWS server (or IP address). Applicable for “EWS” only.
+
+  Available: macOS 13+
+- `ExternalPort` (integer): The external port number of the EWS server. The system uses this only when this declaration has an `ExternalHostName` value. Applicable for “EWS” only.
+
+  Available: macOS 13+
 - `HostName` (string): The IP address or fully qualified domain name (FQDN) of the Exchange host.
-- `LockCalendarService` (boolean): If `true`, the system prevents the user from changing the status of the calendar service for this account. Applicable for “EAS” only. Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
-- `LockContactsService` (boolean): If `true`, the system prevents the user from changing the status of the address book service for this account. Applicable for “EAS” only. Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
-- `LockMailService` (boolean): If `true`, the system prevents the user from changing the status of the mail service for this account. Applicable for “EAS” only. Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
-- `LockNotesService` (boolean): If `true`, the system prevents the user from changing the status of the notes service for this account. Applicable for “EAS” only. Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
-- `LockRemindersService` (boolean): If `true`, the system prevents the user from changing the status of the reminders service for this account. Applicable for “EAS” only. Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+- `LockCalendarService` (boolean): If `true`, the system prevents the user from changing the status of the calendar service for this account. Applicable for “EAS” only.
+
+  Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+
+  **Default**: `false`
+- `LockContactsService` (boolean): If `true`, the system prevents the user from changing the status of the address book service for this account. Applicable for “EAS” only.
+
+  Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+
+  **Default**: `false`
+- `LockMailService` (boolean): If `true`, the system prevents the user from changing the status of the mail service for this account. Applicable for “EAS” only.
+
+  Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+
+  **Default**: `false`
+- `LockNotesService` (boolean): If `true`, the system prevents the user from changing the status of the notes service for this account. Applicable for “EAS” only.
+
+  Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+
+  **Default**: `false`
+- `LockRemindersService` (boolean): If `true`, the system prevents the user from changing the status of the reminders service for this account. Applicable for “EAS” only.
+
+  Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
+
+  **Default**: `false`
 - `MailServiceActive` (boolean): If `true`, the system activates the mail service for this account.
+
+  **Default**: `true`
 - `NotesServiceActive` (boolean): If `true`, the system activates the notes service for this account.
+
+  **Default**: `true`
 - `OAuth` (AccountExchangeOAuthObject): The configuration settings for OAuth for this account.
-- `Path` (string): The path of the EWS server. The system uses this only when this declaration has a `HostName` value. Applicable for “EWS” only. Available: macOS 13+
-- `Port` (integer): The port number of the EWS server. The system uses this only when this declaration has a `HostName` value. Applicable for “EWS” only. Available: macOS 13+
+- `Path` (string): The path of the EWS server. The system uses this only when this declaration has a `HostName` value. Applicable for “EWS” only.
+
+  Available: macOS 13+
+- `Port` (integer): The port number of the EWS server. The system uses this only when this declaration has a `HostName` value. Applicable for “EWS” only.
+
+  Available: macOS 13+
 - `RemindersServiceActive` (boolean): If `true`, the system activates the reminders service for this account.
-- `SMIME` (AccountExchangeSMIMEObject): Settings for S/MIME. Applicable for “EAS” only. Available: iOS 17+ | iPadOS 17+ | visionOS 1.1+
+
+  **Default**: `true`
+- `SMIME` (AccountExchangeSMIMEObject): Settings for S/MIME. Applicable for “EAS” only.
+
+  Available: iOS 17+ | iPadOS 17+ | visionOS 1.1+
 - `UserIdentityAssetReference` (string): The identifier of an asset declaration that contains the user identity for this account. The corresponding asset must be of type `UserIdentity`.
 - `VisibleName` (string): The name that apps show to the user for this Exchange account. If not present, the system generates a suitable default.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
-- [object ExternalIntelligenceSettings](externalintelligencesettings.md)
+- [object ExternalIntelligenceSettings](./externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 
 

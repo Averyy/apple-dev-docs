@@ -1,7 +1,8 @@
 # platformCredentials(forRelyingParty:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a list of passkeys available for authenticating with the given relying party.
 
@@ -23,7 +24,7 @@ A list of credentials stored on the keychain, or managed by third-party credenti
 
 #### Discussion
 
-Before calling this method, check that the value of [`authorizationStateForPlatformCredentials`](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstateforplatformcredentials.md) is [`ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.authorized`](asauthorizationwebbrowserpublickeycredentialmanager/authorizationstate/authorized.md) and call [`requestAuthorizationForPublicKeyCredentials(_:)`](asauthorizationwebbrowserpublickeycredentialmanager/requestauthorizationforpublickeycredentials(_:).md) if your app needs authorization. If you call this method without authorization, it returns an empty array.
+Before calling this method, check that the value of [`authorizationStateForPlatformCredentials`](./authorizationstateforplatformcredentials.md) is [`ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.authorized`](./authorizationstate/authorized.md) and call [`requestAuthorizationForPublicKeyCredentials(_:)`](./requestauthorizationforpublickeycredentials%28_%29.md) if your app needs authorization. If you call this method without authorization, it returns an empty array.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ Before calling this method, check that the value of [`authorizationStateForPlatf
 
 ## See Also
 
-- [struct ASAuthorizationWebBrowserPlatformPublicKeyCredential](asauthorizationwebbrowserplatformpublickeycredential-swift.struct.md)
+### Using passkeys
+- [struct ASAuthorizationWebBrowserPlatformPublicKeyCredential](../asauthorizationwebbrowserplatformpublickeycredential-swift.struct.md)
   A structure that describes a passkey stored in the keychain, or managed by a third-party credential manager.
 
 

@@ -1,7 +1,8 @@
 # size
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the tile definition in points.
 
@@ -20,11 +21,16 @@ The size of the tile definition in points.
 var size: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic) CGSize size;
+```
+
 ## See Also
 
-- [var name: String?](sktiledefinition/name.md)
+### Reading or Adjusting a Tile’s Instance Properties
+- [var name: String?](./name.md)
   A name associated with the tile definition.
-- [var placementWeight: Int](sktiledefinition/placementweight.md)
+- [var placementWeight: Int](./placementweight.md)
   The placement weight of the tile definition.
 
 

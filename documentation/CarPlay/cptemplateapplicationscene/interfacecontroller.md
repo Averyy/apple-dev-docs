@@ -1,7 +1,8 @@
 # interfaceController
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller that manages the scene’s user interface.
 
@@ -16,13 +17,18 @@ The controller that manages the scene’s user interface.
 var interfaceController: CPInterfaceController { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nonnull) CPInterfaceController * interfaceController;
+```
+
 #### Discussion
 
 Use this property to access the interface controller CarPlay creates when the scene connects, which you then use to manage your templates.
 
 ## See Also
 
-- [class CPInterfaceController](cpinterfacecontroller.md)
+### Accessing the Interface Controller
+- [class CPInterfaceController](../cpinterfacecontroller.md)
   A controller that manages the templates for constructing a scene’s user interface.
 
 

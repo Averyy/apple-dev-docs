@@ -1,7 +1,8 @@
 # kCFURLUbiquitousItemSupportedSyncControlsKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCFURLUbiquitousItemSupportedSyncControlsKey: CFString!
+```
+
+```c
+extern CFStringRef const kCFURLUbiquitousItemSupportedSyncControlsKey;
 ```
 
 

@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsInternalBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The USB device is internal to the enclosure.
 
@@ -10,7 +11,7 @@ The USB device is internal to the enclosure.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsInternalBit = 2
 ```
 

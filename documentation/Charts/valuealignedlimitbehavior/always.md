@@ -1,7 +1,8 @@
 # always
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The always limit behavior.
 

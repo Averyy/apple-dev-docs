@@ -1,17 +1,22 @@
 # rate
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current rate of playback.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
 ```swift
 var rate: Float { get set }
+```
+
+```objc
+@property (nonatomic) float rate;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The playback rate refers to the playback speed. A value of `0.0` indicates that 
 
 ## See Also
 
-- [func play()](wkaudiofileplayer/play.md)
+### Configuring and Controlling Playback
+- [func play()](./play%28%29.md)
   Begins playback of the current item.
-- [func pause()](wkaudiofileplayer/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses playback of the associated item.
 
 

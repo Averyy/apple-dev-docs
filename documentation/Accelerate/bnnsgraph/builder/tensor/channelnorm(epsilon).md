@@ -1,7 +1,8 @@
 # channelNorm(epsilon:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a channel normalization operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a channel normalization operation to the current graph.
 ```swift
 func channelNorm(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # logicalXor(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic logical XOR operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic logical XOR operation and return the old and new value, applyi
 @discardableResult
 func logicalXor(_ operand: Bool, ordering: AtomicUpdateOrdering) -> (oldValue: Bool, newValue: Bool)
 ```
+
+Available when `Value` is `Bool`.
 
 #### Return Value
 

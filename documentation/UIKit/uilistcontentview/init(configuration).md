@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list content view with the specified content configuration.
 
@@ -10,7 +11,7 @@ Creates a list content view with the specified content configuration.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ Creates a list content view with the specified content configuration.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uilistcontentview/init(coder:).md)
+### Creating a list content view
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a list content view from data in an unarchiver.
 
 

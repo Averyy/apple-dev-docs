@@ -1,7 +1,8 @@
 # NSStatusBarButton
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The appearance and behavior of an item in the systemwide menu bar.
 
@@ -14,44 +15,49 @@ The appearance and behavior of an item in the systemwide menu bar.
 class NSStatusBarButton
 ```
 
+```objc
+@interface NSStatusBarButton : NSButton
+```
+
 ## Topics
 
 ### Instance Properties
-- [var appearsDisabled: Bool](nsstatusbarbutton/appearsdisabled.md)
+- [var appearsDisabled: Bool](./nsstatusbarbutton/appearsdisabled.md)
   Determines whether the status bar icon has a disabled/off appearance while still being functional, such as allowing selection and actions.
 
 ## Relationships
 
 ### Inherits From
-- [NSButton](nsbutton.md)
+- [NSButton](./nsbutton.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityButton](nsaccessibilitybutton.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceCompression](nsuserinterfacecompression.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityButton](./nsaccessibilitybutton.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceCompression](./nsuserinterfacecompression.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](./nsuserinterfacevalidations.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSStatusBar](nsstatusbar.md)
+### Menu Bar Items
+- [class NSStatusBar](./nsstatusbar.md)
   An object that manages a collection of status items displayed within the system-wide menu bar.
-- [class NSStatusItem](nsstatusitem.md)
+- [class NSStatusItem](./nsstatusitem.md)
   An individual element displayed in the system menu bar.
 
 

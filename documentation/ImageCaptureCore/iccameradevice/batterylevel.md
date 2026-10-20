@@ -1,7 +1,8 @@
 # batteryLevel
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The battery charge level.
 
@@ -18,13 +19,18 @@ The battery charge level.
 var batteryLevel: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger batteryLevel;
+```
+
 #### Discussion
 
 The value of this property ranges from 0 to 100.
 
 ## See Also
 
-- [var batteryLevelAvailable: Bool](iccameradevice/batterylevelavailable.md)
+### Inspecting the Battery Charge Level
+- [var batteryLevelAvailable: Bool](./batterylevelavailable.md)
   A Boolean value that indicates whether the battery charge level is available.
 
 

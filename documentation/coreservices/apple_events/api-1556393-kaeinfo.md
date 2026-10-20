@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kAEInfo: Int](kaeinfo.md)
-- [var kAEMain: Int](kaemain.md)
-- [var kAESharing: Int](kaesharing.md)
+- [var kAEInfo: Int](../kaeinfo.md)
+- [var kAEMain: Int](../kaemain.md)
+- [var kAESharing: Int](../kaesharing.md)
 
 
 ---

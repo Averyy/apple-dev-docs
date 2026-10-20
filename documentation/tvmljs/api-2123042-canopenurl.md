@@ -1,7 +1,8 @@
 # canOpenURL
 
 **Framework**: TVMLKit JS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines if a deep-link to another app can be opened.
 
@@ -10,13 +11,13 @@ Determines if a deep-link to another app can be opened.
 
 ## Declaration
 
-```swift
+```
 Boolean canOpenURL(
     in String url
 );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns `YES` if the app can be opened.
 
@@ -26,11 +27,12 @@ Returns `YES` if the app can be opened.
 
 ## See Also
 
-- [UUID](1627409-uuid.md)
+### Manipulating the Document
+- [UUID](./api-1627409-uuid.md)
   Generates a unique UUID.
-- [getActiveDocument](1627314-getactivedocument.md)
+- [getActiveDocument](./api-1627314-getactivedocument.md)
   Retrieves the currently active document.
-- [openURL](1627399-openurl.md)
+- [openURL](./api-1627399-openurl.md)
   Opens a deep link into another app.
 
 

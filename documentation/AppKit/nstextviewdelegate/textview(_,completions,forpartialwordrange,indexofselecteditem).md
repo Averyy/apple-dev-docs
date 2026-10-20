@@ -1,18 +1,23 @@
 # textView(_:completions:forPartialWordRange:indexOfSelectedItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the actual completions for a partial word.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func textView(_ textView: NSTextView, completions words: [String], forPartialWordRange charRange: NSRange, indexOfSelectedItem index: UnsafeMutablePointer<Int>?) -> [String]
+```
+
+```objc
+- (NSArray<NSString *> *) textView:(NSTextView *) textView completions:(NSArray<NSString *> *) words forPartialWordRange:(NSRange) charRange indexOfSelectedItem:(NSInteger *) index;
 ```
 
 #### Return Value

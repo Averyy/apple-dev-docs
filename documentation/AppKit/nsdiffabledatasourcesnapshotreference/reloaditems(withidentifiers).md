@@ -1,7 +1,8 @@
 # reloadItems(withIdentifiers:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the data within the specified items in the snapshot.
 
@@ -14,13 +15,18 @@ Reloads the data within the specified items in the snapshot.
 func reloadItems(withIdentifiers identifiers: [Any])
 ```
 
+```objc
+- (void) reloadItemsWithIdentifiers:(NSArray<id> *) identifiers;
+```
+
 ## Parameters
 
 - `identifiers`: The array of identifiers corresponding to the items to reload in the snapshot.
 
 ## See Also
 
-- [func reloadSections(withIdentifiers: [Any])](nsdiffabledatasourcesnapshotreference/reloadsections(withidentifiers:).md)
+### Reloading data
+- [func reloadSections(withIdentifiers: [Any])](./reloadsections%28withidentifiers%29.md)
   Reloads the data within the specified sections of the snapshot.
 
 

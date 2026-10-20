@@ -1,7 +1,8 @@
 # type
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of payment system.
 
@@ -22,7 +23,7 @@ let type: DataDetector.Match.SemanticDetails.PaymentIdentifier.PaymentSystem
 
 ## See Also
 
-- [let identifier: String](datadetector/match/semanticdetails/paymentidentifier/identifier.md)
+- [let identifier: String](./identifier.md)
   An identifier suitable to initiate a payment transaction.
 
 

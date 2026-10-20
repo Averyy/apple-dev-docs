@@ -1,7 +1,8 @@
 # request
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL request object associated with the navigation action.
 
@@ -18,13 +19,18 @@ The URL request object associated with the navigation action.
 var request: URLRequest { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURLRequest * request;
+```
+
 ## See Also
 
-- [var sourceFrame: WKFrameInfo](wknavigationaction/sourceframe.md)
+### Inspecting navigation information
+- [var sourceFrame: WKFrameInfo](./sourceframe.md)
   The frame that requested the navigation.
-- [var targetFrame: WKFrameInfo?](wknavigationaction/targetframe.md)
+- [var targetFrame: WKFrameInfo?](./targetframe.md)
   The frame in which to display the new content.
-- [var shouldPerformDownload: Bool](wknavigationaction/shouldperformdownload.md)
+- [var shouldPerformDownload: Bool](./shouldperformdownload.md)
   A Boolean value that indicates whether the web content provided an attribute that indicates a download.
 
 

@@ -1,7 +1,8 @@
 # leftThumbstick
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s left thumbstick element.
 
@@ -19,17 +20,22 @@ The controller’s left thumbstick element.
 var leftThumbstick: GCControllerDirectionPad { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerDirectionPad * leftThumbstick;
+```
+
 #### Discussion
 
 The thumbsticks in the extended gamepad profile are analog buttons.
 
 ## See Also
 
-- [var rightThumbstick: GCControllerDirectionPad](gcextendedgamepad/rightthumbstick.md)
+### Getting thumbstick and thumbstick button inputs
+- [var rightThumbstick: GCControllerDirectionPad](./rightthumbstick.md)
   The controller’s right thumbstick element.
-- [var leftThumbstickButton: GCControllerButtonInput?](gcextendedgamepad/leftthumbstickbutton.md)
+- [var leftThumbstickButton: GCControllerButtonInput?](./leftthumbstickbutton.md)
   The button on the left thumbstick of the controller.
-- [var rightThumbstickButton: GCControllerButtonInput?](gcextendedgamepad/rightthumbstickbutton.md)
+- [var rightThumbstickButton: GCControllerButtonInput?](./rightthumbstickbutton.md)
   The button on the right thumbstick of the controller.
 
 

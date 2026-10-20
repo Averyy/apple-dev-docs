@@ -1,7 +1,8 @@
 # isMultiscatteringEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to account for multiple scattering between microfacets.
 
@@ -25,11 +26,12 @@ Improves accuracy at the cost of performance, particularly for rough surfaces.
 
 ## See Also
 
-- [var isSubsurfaceScatteringEnabled: Bool](litlightingmodel/issubsurfacescatteringenabled.md)
+### Enabling lighting features
+- [var isSubsurfaceScatteringEnabled: Bool](./issubsurfacescatteringenabled.md)
   Whether to include subsurface scattering in the lighting calculation.
-- [var isClearcoatEnabled: Bool](litlightingmodel/isclearcoatenabled.md)
+- [var isClearcoatEnabled: Bool](./isclearcoatenabled.md)
   Whether to include a clearcoat layer in the lighting calculation.
-- [var isBentNormalEnabled: Bool](litlightingmodel/isbentnormalenabled.md)
+- [var isBentNormalEnabled: Bool](./isbentnormalenabled.md)
   Whether to apply bent normal maps to improve ambient occlusion accuracy.
 
 

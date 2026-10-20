@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of actions available on the alert.
 
@@ -16,13 +17,18 @@ The array of actions available on the alert.
 var actions: [CPAlertAction] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<CPAlertAction *> * actions;
+```
+
 #### Discussion
 
 The array must include at least one action.
 
 ## See Also
 
-- [var titleVariants: [String]](cpalerttemplate/titlevariants.md)
+### Getting the Alert Information
+- [var titleVariants: [String]](./titlevariants.md)
   The array of title variants.
 
 

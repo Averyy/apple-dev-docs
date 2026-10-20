@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,8 +10,10 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: This property is deprecated
 
 ## Declaration
 
@@ -20,9 +23,10 @@ var origin: Point3D { get }
 
 ## See Also
 
-- [func rotation(to: Point3D) -> Rotation3D](point3d/rotation(to:).md)
+### Deprecated symbols
+- [func rotation(to: Point3D) -> Rotation3D](./rotation%28to%29.md)
   Returns the rotation around the origin from the first point to the second point.
-- [var simd: simd_double3](point3d/simd.md)
+- [var simd: simd_double3](./simd.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
 
 

@@ -1,7 +1,8 @@
 # zoomValue()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current zoom value.
 
@@ -14,17 +15,22 @@ Returns the current zoom value.
 func zoomValue() -> Float
 ```
 
+```objc
+- (float) zoomValue;
+```
+
 #### Return Value
 
 The zoom value.
 
 ## See Also
 
-- [func setZoomValue(Float)](ikimagebrowserview/setzoomvalue(_:).md)
+### Zooming and Resizing
+- [func setZoomValue(Float)](./setzoomvalue%28_%29.md)
   Sets the zoom value.
-- [func setContentResizingMask(Int)](ikimagebrowserview/setcontentresizingmask(_:).md)
+- [func setContentResizingMask(Int)](./setcontentresizingmask%28_%29.md)
   Determines how the receiver resizes its content when zooming.
-- [func contentResizingMask() -> Int](ikimagebrowserview/contentresizingmask.md)
+- [func contentResizingMask() -> Int](./contentresizingmask%28%29.md)
   Returns the receiver’s content resizing mask, which determines how its content is resized while zooming.
 
 

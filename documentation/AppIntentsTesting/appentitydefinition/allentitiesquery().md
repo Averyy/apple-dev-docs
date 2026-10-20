@@ -1,7 +1,8 @@
 # allEntitiesQuery()
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an entity query that retrieves all available entities of this type.
 
@@ -26,7 +27,8 @@ An entity query, configured to fetch all entities.
 
 ## See Also
 
-- [func allEntities() async throws -> [AnyAppEntity]](appentitydefinition/allentities.md)
+### Retrieving all entities
+- [func allEntities() async throws -> [AnyAppEntity]](./allentities%28%29.md)
   Fetches all available entities of this type.
 
 

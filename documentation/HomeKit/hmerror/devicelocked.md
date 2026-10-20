@@ -1,7 +1,8 @@
 # deviceLocked
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating the device is locked.
 
@@ -21,7 +22,8 @@ static var deviceLocked: HMError.Code { get }
 
 ## See Also
 
-- [static var accessoryDiscoveryFailed: HMError.Code](hmerror/accessorydiscoveryfailed.md)
+### Detecting device and discovery errors
+- [static var accessoryDiscoveryFailed: HMError.Code](./accessorydiscoveryfailed.md)
   An error indicating that accessory discovery failed.
 
 

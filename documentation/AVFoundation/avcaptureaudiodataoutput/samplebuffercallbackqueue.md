@@ -1,7 +1,8 @@
 # sampleBufferCallbackQueue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which delegate callbacks are invoked
 
@@ -18,13 +19,18 @@ The queue on which delegate callbacks are invoked
 var sampleBufferCallbackQueue: dispatch_queue_t? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) dispatch_queue_t sampleBufferCallbackQueue;
+```
+
 ## See Also
 
-- [func setSampleBufferDelegate((any AVCaptureAudioDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](avcaptureaudiodataoutput/setsamplebufferdelegate(_:queue:).md)
+### Receiving captured audio data
+- [func setSampleBufferDelegate((any AVCaptureAudioDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](./setsamplebufferdelegate%28_,queue%29.md)
   Sets the delegate that will accept captured buffers and the dispatch queue on which the delegate will be called.
-- [var sampleBufferDelegate: (any AVCaptureAudioDataOutputSampleBufferDelegate)?](avcaptureaudiodataoutput/samplebufferdelegate.md)
+- [var sampleBufferDelegate: (any AVCaptureAudioDataOutputSampleBufferDelegate)?](./samplebufferdelegate.md)
   The capture object’s delegate.
-- [protocol AVCaptureAudioDataOutputSampleBufferDelegate](avcaptureaudiodataoutputsamplebufferdelegate.md)
+- [protocol AVCaptureAudioDataOutputSampleBufferDelegate](../avcaptureaudiodataoutputsamplebufferdelegate.md)
   Methods for receiving audio sample data from an audio capture.
 
 

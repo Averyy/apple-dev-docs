@@ -1,7 +1,8 @@
 # source
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source of the audio session deactivation.
 
@@ -19,13 +20,18 @@ The source of the audio session deactivation.
 var source: AVAudioSession.DeactivationSource { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioSessionDeactivationSource source;
+```
+
 ## Mentions
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+- [Handling audio interruptions](../../handling-audio-interruptions.md)
 
 ## See Also
 
-- [var interruptionContext: AVAudioSession.InterruptionContext?](avaudiosession/deactivationcontext/interruptioncontext.md)
+### Getting the deactivation details
+- [var interruptionContext: AVAudioSession.InterruptionContext?](./interruptioncontext.md)
   Context about the interruption that caused deactivation.
 
 

@@ -1,7 +1,8 @@
 # finalize(for:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Consume the output span and return the number of initialized bytes.
 

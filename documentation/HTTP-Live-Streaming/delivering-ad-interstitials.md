@@ -1,6 +1,7 @@
 # Delivering ad interstitials in podcast streams
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Insert ad interstitials into HTTP Live Streaming (HLS) media playlists.
 
@@ -25,7 +26,7 @@ Use the following attributes with `#EXT-X-DATERANGE` for interstitial delivery:
 
 Interstitial media can be delivered using one of two methods:
 
-#### Reference the Interstitial Directly with the Asset Uri
+#### Reference the interstitial directly with the asset URI
 
 Use `X-ASSET-URI` when you know the interstitial media playlist and it’s available when you create the HLS playlist. This attribute points directly to the interstitial’s HLS media playlist.
 
@@ -33,7 +34,7 @@ Use `X-ASSET-URI` when you know the interstitial media playlist and it’s avail
 #EXT-X-DATERANGE:ID="ad_break_1",CLASS="com.apple.hls.interstitial",START-DATE="2023-10-27T10:00:00Z",PLANNED-DURATION=30.0,X-ASSET-URI="https://ad-server.example.com/ads/midroll1.m3u8",X-RESUME-OFFSET=0,X-TIMELINE-OCCUPIES="RANGE",X-TIMELINE-STYLE="PRIMARY"
 ```
 
-#### Resolve Interstitials at Playback
+#### Resolve interstitials at playback
 
 Use `X-ASSET-LIST` when you need flexibility to determine the interstitial media at playback or download time, or when no interstitial may be available. This attribute points to a JSON response that contains the interstitial media playlist information.
 
@@ -67,17 +68,17 @@ When you have no ad to place, use an empty list. The player skips the ad break a
 
 ## See Also
 
-- [Authoring multivariant and media playlists](multivariant-and-media-playlists.md)
+- [Authoring multivariant and media playlists](./multivariant-and-media-playlists.md)
   Author the HTTP Live Streaming (HLS) multivariant and media playlists that Apple Podcasts requires, with the tags and attributes each playlist uses.
-- [Encoding media for HLS](encoding-media.md)
+- [Encoding media for HLS](./encoding-media.md)
   Encode audio and video for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
-- [Configuring delivery for HLS](configuring-delivery.md)
+- [Configuring delivery for HLS](./configuring-delivery.md)
   Format media URLs and origin domain access for HTTP Live Streaming (HLS) delivery to Apple Podcasts.
-- [Delivering WebVTT subtitles and captions in HLS](delivering-subtitles-and-captions.md)
+- [Delivering WebVTT subtitles and captions in HLS](./delivering-subtitles-and-captions.md)
   Add WebVTT subtitle and caption tracks to your HTTP Live Streaming (HLS) streams, and declare their absence when a stream doesn’t carry captions.
-- [Reviewing sample playlists and validating streams](examples-and-validation.md)
+- [Reviewing sample playlists and validating streams](./examples-and-validation.md)
   Reference sample multivariant and video-on-demand (VOD) media playlists, and validate your HTTP Live Streaming (HLS) streams with Media Stream Validator.
-- [Handling downloads and playback](downloads-and-playback.md)
+- [Handling downloads and playback](./downloads-and-playback.md)
   Handle Apple Podcasts’ download and playback behavior, including hybrid audio/video streaming, non-video modes, and user-agent identification.
 
 

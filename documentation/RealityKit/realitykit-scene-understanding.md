@@ -1,6 +1,7 @@
 # Implementing scene understanding and reconstruction in your RealityKit app
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Article
 
 Detect real-world objects and surfaces to create precise AR interactions.
 
@@ -8,9 +9,9 @@ Detect real-world objects and surfaces to create precise AR interactions.
 
 RealityKit can detect planes in the real-world environment on any device, allowing virtual objects to interact with real-world surfaces. On devices with a LiDAR sensor, RealityKit can create a detailed reconstruction of the surrounding environment for more precise interactions between virtual content and the real world. With scene understanding enabled, RealityKit not only reconstructs the environment, it also recognizes many real-world object types like tables, walls, and floors.
 
-##### Configure Scene Understanding with Realityview
+##### Configure scene understanding with RealityView
 
-To enable scene understanding in a [`RealityView`](realityview.md), configure a [`SpatialTrackingSession`](spatialtrackingsession.md).
+To enable scene understanding in a [`RealityView`](./realityview.md), configure a [`SpatialTrackingSession`](./spatialtrackingsession.md).
 
 ```swift
 let session = SpatialTrackingSession()
@@ -25,11 +26,11 @@ let config = SpatialTrackingSession.Configuration(
 await session.run(config)
 ```
 
-In iOS and macOS, all scene-understanding capabilities are available, including [`occlusion`](spatialtrackingsession/configuration/sceneunderstandingcapability/occlusion.md), [`physics`](spatialtrackingsession/configuration/sceneunderstandingcapability/physics.md), [`collision`](spatialtrackingsession/configuration/sceneunderstandingcapability/collision.md), and [`shadow`](spatialtrackingsession/configuration/sceneunderstandingcapability/shadow.md). In visionOS, you can only enable [`physics`](spatialtrackingsession/configuration/sceneunderstandingcapability/physics.md) and [`collision`](spatialtrackingsession/configuration/sceneunderstandingcapability/collision.md).
+In iOS and macOS, all scene-understanding capabilities are available, including [`occlusion`](./spatialtrackingsession/configuration/sceneunderstandingcapability/occlusion.md), [`physics`](./spatialtrackingsession/configuration/sceneunderstandingcapability/physics.md), [`collision`](./spatialtrackingsession/configuration/sceneunderstandingcapability/collision.md), and [`shadow`](./spatialtrackingsession/configuration/sceneunderstandingcapability/shadow.md). In visionOS, you can only enable [`physics`](./spatialtrackingsession/configuration/sceneunderstandingcapability/physics.md) and [`collision`](./spatialtrackingsession/configuration/sceneunderstandingcapability/collision.md).
 
-##### Configure Scene Understanding with Arview
+##### Configure scene understanding with ARView
 
-For existing iOS and macOS apps that use [`ARView`](arview.md), enable these features by inserting options into [`sceneUnderstanding`](arview/environment-swift.struct/sceneunderstanding-swift.property.md).
+For existing iOS and macOS apps that use [`ARView`](./arview.md), enable these features by inserting options into [`sceneUnderstanding`](./arview/environment-swift.struct/sceneunderstanding-swift.property.md).
 
 ```swift
 arView.environment.sceneUnderstanding.options.insert(.occlusion)
@@ -38,11 +39,11 @@ arView.environment.sceneUnderstanding.options.insert(.collision)
 arView.environment.sceneUnderstanding.options.insert(.receivesLighting)
 ```
 
-##### Use Scene Understanding Meshes
+##### Use scene-understanding meshes
 
-After enabling scene-understanding options, RealityKit automatically generates entities representing real-world geometry with a [`SceneUnderstandingComponent`](sceneunderstandingcomponent.md).
+After enabling scene-understanding options, RealityKit automatically generates entities representing real-world geometry with a [`SceneUnderstandingComponent`](./sceneunderstandingcomponent.md).
 
-Retrieve these entities using an [`EntityQuery`](entityquery.md). The following code example renders a custom debug material with scene-understanding meshes:
+Retrieve these entities using an [`EntityQuery`](./entityquery.md). The following code example renders a custom debug material with scene-understanding meshes:
 
 ```swift
 var debugMaterial = UnlitMaterial(color: .green)
@@ -67,15 +68,15 @@ let _ = content.subscribe(to: CollisionEvents.Began.self) { event in
 }
 ```
 
-##### Add Virtual Scene Understanding Meshes in Visionos
+##### Add virtual scene-understanding meshes in visionOS
 
-You can add [`SceneUnderstandingComponent`](sceneunderstandingcomponent.md) to your custom entities to make them behave as virtual scene-understanding meshes. A virtual scene-understanding mesh participates in system rendering features, such as shadows and depth mitigation, just like real-world geometry.
+You can add [`SceneUnderstandingComponent`](./sceneunderstandingcomponent.md) to your custom entities to make them behave as virtual scene-understanding meshes. A virtual scene-understanding mesh participates in system rendering features, such as shadows and depth mitigation, just like real-world geometry.
 
-Custom virtual scene-understanding meshes only work in [`progressive`](https://developer.apple.com/documentation/swiftui/immersionstyle/progressive) or [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) immersive space. They don’t work in [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) space, or in a window or volume in the Shared Space.
+Custom virtual scene-understanding meshes only work in [`progressive`](../SwiftUI/immersionstyle/progressive.md) or [`full`](../SwiftUI/immersionstyle/full.md) immersive space. They don’t work in [`mixed`](../SwiftUI/immersionstyle/mixed.md) space, or in a window or volume in the Shared Space.
 
-##### Use Scene Reconstruction in Visionos
+##### Use scene reconstruction in visionOS
 
-To enable scene reconstruction for a visionOS app, use a [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider).
+To enable scene reconstruction for a visionOS app, use a [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md).
 
 ```swift
 let arSession = ARKitSession()
@@ -92,25 +93,26 @@ Task {
 
 ## See Also
 
-- [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
+### Scene reconstructions and analysis
+- [Creating a game with scene understanding](./creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
-- [Visualizing and interacting with a reconstructed scene](../arkit/visualizing-and-interacting-with-a-reconstructed-scene.md)
+- [Visualizing and interacting with a reconstructed scene](../ARKit/visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
-- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../arkit/arworldtrackingconfiguration/scenereconstruction.md)
+- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../ARKit/arworldtrackingconfiguration/scenereconstruction.md)
   A flag that enables scene reconstruction.
-- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../arkit/arworldtrackingconfiguration/supportsscenereconstruction(_:).md)
+- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../ARKit/arworldtrackingconfiguration/supportsscenereconstruction%28_%29.md)
   Checks if the device supports scene reconstruction.
-- [struct SceneUnderstandingComponent](sceneunderstandingcomponent.md)
+- [struct SceneUnderstandingComponent](./sceneunderstandingcomponent.md)
   A component that specifies an entity is participating in the system’s scene-understanding features.
-- [ARView.Environment.SceneUnderstanding](arview/environment-swift.struct/sceneunderstanding-swift.struct.md)
+- [ARView.Environment.SceneUnderstanding](./arview/environment-swift.struct/sceneunderstanding-swift.struct.md)
   An object that holds scene-understanding options for the view.
-- [ARView.Environment.SceneUnderstanding.Options](arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct.md)
+- [ARView.Environment.SceneUnderstanding.Options](./arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct.md)
   Available scene-understanding options.
-- [protocol HasSceneUnderstanding](hassceneunderstanding.md)
+- [protocol HasSceneUnderstanding](./hassceneunderstanding.md)
   A specification that detects and reacts to features of the physical environment.
-- [class SceneReconstructionProvider](../arkit/scenereconstructionprovider.md)
+- [class SceneReconstructionProvider](../ARKit/scenereconstructionprovider.md)
   A source of live data about the shape of a person’s surroundings.
-- [class ARSession](../arkit/arsession.md)
+- [class ARSession](../ARKit/arsession.md)
   The object that manages the major tasks associated with every AR experience, such as motion tracking, camera passthrough, and image analysis.
 
 

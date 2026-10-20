@@ -1,7 +1,8 @@
 # timestampSeed()
 
 **Framework**: Create ML  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a number based on the current system time.
 

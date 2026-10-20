@@ -1,7 +1,8 @@
 # Scanner
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A string parser that scans for substrings or characters in a character set, and for numeric values from decimal, hexadecimal, and floating-point representations.
 
@@ -20,110 +21,115 @@ A string parser that scans for substrings or characters in a character set, and 
 class Scanner
 ```
 
+```objc
+@interface NSScanner : NSObject
+```
+
 #### Overview
 
-A [`Scanner`](scanner.md) object interprets and converts the characters of a [`String`](https://developer.apple.com/documentation/swift/string) into number and string values. You assign the scanner’s string when you create the scanner, and the scanner progresses through the characters of that string from beginning to end as you request items.
+A [`Scanner`](./scanner.md) object interprets and converts the characters of a [`String`](../Swift/string.md) into number and string values. You assign the scanner’s string when you create the scanner, and the scanner progresses through the characters of that string from beginning to end as you request items.
 
-Because of the nature of class clusters, a scanner object isn’t an actual instance of the [`Scanner`](scanner.md) class, but is one of its private subclasses. Although a scanner object’s class is private, its interface is public, as declared by this abstract superclass, [`Scanner`](scanner.md). The objects you create using this class are referred to as scanner objects (and when no confusion will result, merely as scanners).
+Because of the nature of class clusters, a scanner object isn’t an actual instance of the [`Scanner`](./scanner.md) class, but is one of its private subclasses. Although a scanner object’s class is private, its interface is public, as declared by this abstract superclass, [`Scanner`](./scanner.md). The objects you create using this class are referred to as scanner objects (and when no confusion will result, merely as scanners).
 
-To set a [`Scanner`](scanner.md) object to ignore a set of characters as it scans the string, use the [`charactersToBeSkipped`](scanner/characterstobeskipped.md) property. Characters in the skip set are skipped over before the target is scanned. The default set of characters to skip is the whitespace and newline character set.
+To set a [`Scanner`](./scanner.md) object to ignore a set of characters as it scans the string, use the [`charactersToBeSkipped`](./scanner/characterstobeskipped.md) property. Characters in the skip set are skipped over before the target is scanned. The default set of characters to skip is the whitespace and newline character set.
 
 To retrieve the unscanned remainder of the string, use `scanner.string.substring(from: scanner.scanLocation)`.
 
 ## Topics
 
 ### Creating a Scanner
-- [class func localizedScanner(with: String) -> Any](scanner/localizedscanner(with:).md)
+- [class func localizedScanner(with: String) -> Any](./scanner/localizedscanner%28with%29.md)
   Returns an `NSScanner` object that scans a given string according to the user’s default locale.
-- [init(string: String)](scanner/init(string:).md)
+- [init(string: String)](./scanner/init%28string%29.md)
   Returns an `NSScanner` object initialized to scan a given string.
 ### Getting a Scanner’s String
-- [var string: String](scanner/string.md)
+- [var string: String](./scanner/string.md)
   The string the scanner will scan.
 ### Configuring a Scanner
-- [var scanLocation: Int](scanner/scanlocation.md)
+- [var scanLocation: Int](./scanner/scanlocation.md)
   The character position at which the receiver will begin its next scanning operation.
-- [var caseSensitive: Bool](scanner/casesensitive.md)
+- [var caseSensitive: Bool](./scanner/casesensitive.md)
   Flag that indicates whether the receiver distinguishes case in the characters it scans.
-- [var charactersToBeSkipped: CharacterSet?](scanner/characterstobeskipped.md)
+- [var charactersToBeSkipped: CharacterSet?](./scanner/characterstobeskipped.md)
   Character set containing the characters the scanner ignores when looking for a scannable element.
-- [var locale: Any?](scanner/locale.md)
+- [var locale: Any?](./scanner/locale.md)
   The locale to use when scanning.
 ### Scanning Characters and Strings
-- [func scanCharacters(from: CharacterSet, into: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](scanner/scancharacters(from:into:).md)
+- [func scanCharacters(from: CharacterSet, into: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./scanner/scancharacters%28from,into%29.md)
   Scans the string as long as characters from a given character set are encountered, accumulating characters into a string that’s returned by reference.
-- [func scanUpToCharacters(from: CharacterSet, into: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](scanner/scanuptocharacters(from:into:).md)
+- [func scanUpToCharacters(from: CharacterSet, into: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./scanner/scanuptocharacters%28from,into%29.md)
   Scans the string until a character from a given character set is encountered, accumulating characters into a string that’s returned by reference.
-- [func scanString(String, into: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](scanner/scanstring(_:into:).md)
+- [func scanString(String, into: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./scanner/scanstring%28_,into%29.md)
   Scans a given string, returning an equivalent string object by reference if a match is found.
-- [func scanUpTo(String, into: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](scanner/scanupto(_:into:).md)
+- [func scanUpTo(String, into: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./scanner/scanupto%28_,into%29.md)
   Scans the string until a given string is encountered, accumulating characters into a string that’s returned by reference.
 ### Scanning Numeric Values
-- [func scanDecimal(UnsafeMutablePointer<Decimal>?) -> Bool](scanner/scandecimal(_:).md)
+- [func scanDecimal(UnsafeMutablePointer<Decimal>?) -> Bool](./scanner/scandecimal%28_%29.md)
   Scans for an `NSDecimal` value, returning a found value by reference.
-- [func scanDouble(UnsafeMutablePointer<Double>?) -> Bool](scanner/scandouble(_:).md)
+- [func scanDouble(UnsafeMutablePointer<Double>?) -> Bool](./scanner/scandouble%28_%29.md)
   Scans for a double value, returning a found value by reference.
-- [func scanFloat(UnsafeMutablePointer<Float>?) -> Bool](scanner/scanfloat(_:).md)
+- [func scanFloat(UnsafeMutablePointer<Float>?) -> Bool](./scanner/scanfloat%28_%29.md)
   Scans for a float value, returning a found value by reference.
-- [func scanHexDouble(UnsafeMutablePointer<Double>?) -> Bool](scanner/scanhexdouble(_:).md)
+- [func scanHexDouble(UnsafeMutablePointer<Double>?) -> Bool](./scanner/scanhexdouble%28_%29.md)
   Scans for a double value from a hexadecimal representation, returning a found value by reference.
-- [func scanHexFloat(UnsafeMutablePointer<Float>?) -> Bool](scanner/scanhexfloat(_:).md)
+- [func scanHexFloat(UnsafeMutablePointer<Float>?) -> Bool](./scanner/scanhexfloat%28_%29.md)
   Scans for a double value from a hexadecimal representation, returning a found value by reference.
-- [func scanHexInt32(UnsafeMutablePointer<UInt32>?) -> Bool](scanner/scanhexint32(_:).md)
+- [func scanHexInt32(UnsafeMutablePointer<UInt32>?) -> Bool](./scanner/scanhexint32%28_%29.md)
   Scans for an unsigned value from a hexadecimal representation, returning a found value by reference.
-- [func scanHexInt64(UnsafeMutablePointer<UInt64>?) -> Bool](scanner/scanhexint64(_:).md)
+- [func scanHexInt64(UnsafeMutablePointer<UInt64>?) -> Bool](./scanner/scanhexint64%28_%29.md)
   Scans for a long long value from a hexadecimal representation, returning a found value by reference.
-- [func scanInt(UnsafeMutablePointer<Int>?) -> Bool](scanner/scanint(_:).md)
+- [func scanInt(UnsafeMutablePointer<Int>?) -> Bool](./scanner/scanint%28_%29.md)
   Scans for an NSInteger value from a decimal representation, returning a found value by reference
-- [func scanInt32(UnsafeMutablePointer<Int32>?) -> Bool](scanner/scanint32(_:).md)
+- [func scanInt32(UnsafeMutablePointer<Int32>?) -> Bool](./scanner/scanint32%28_%29.md)
   Scans for an int value from a decimal representation, returning a found value by reference.
-- [func scanInt64(UnsafeMutablePointer<Int64>?) -> Bool](scanner/scanint64(_:).md)
+- [func scanInt64(UnsafeMutablePointer<Int64>?) -> Bool](./scanner/scanint64%28_%29.md)
   Scans for a long long value from a decimal representation, returning a found value by reference.
-- [func scanUnsignedLongLong(UnsafeMutablePointer<UInt64>?) -> Bool](scanner/scanunsignedlonglong(_:).md)
+- [func scanUnsignedLongLong(UnsafeMutablePointer<UInt64>?) -> Bool](./scanner/scanunsignedlonglong%28_%29.md)
   Scans for an unsigned long long value from a decimal representation, returning a found value by reference.
 ### Monitoring Scanner Progress
-- [var isAtEnd: Bool](scanner/isatend.md)
+- [var isAtEnd: Bool](./scanner/isatend.md)
   Flag that indicates whether the receiver has exhausted all significant characters.
 ### Instance Properties
-- [var currentIndex: String.Index](scanner/currentindex.md)
+- [var currentIndex: String.Index](./scanner/currentindex.md)
 ### Instance Methods
-- [func scanCharacter() -> Character?](scanner/scancharacter.md)
-- [func scanCharacters(from: CharacterSet) -> String?](scanner/scancharacters(from:).md)
-- [func scanDecimal() -> Decimal?](scanner/scandecimal.md)
-- [func scanDouble(representation: Scanner.NumberRepresentation) -> Double?](scanner/scandouble(representation:).md)
-- [func scanFloat(representation: Scanner.NumberRepresentation) -> Float?](scanner/scanfloat(representation:).md)
-- [func scanInt(representation: Scanner.NumberRepresentation) -> Int?](scanner/scanint(representation:).md)
-- [func scanInt32(representation: Scanner.NumberRepresentation) -> Int32?](scanner/scanint32(representation:).md)
-- [func scanInt64(representation: Scanner.NumberRepresentation) -> Int64?](scanner/scanint64(representation:).md)
-- [func scanString(String) -> String?](scanner/scanstring(_:).md)
-- [func scanUInt64(representation: Scanner.NumberRepresentation) -> UInt64?](scanner/scanuint64(representation:).md)
-- [func scanUpToCharacters(from: CharacterSet) -> String?](scanner/scanuptocharacters(from:).md)
-- [func scanUpToString(String) -> String?](scanner/scanuptostring(_:).md)
+- [func scanCharacter() -> Character?](./scanner/scancharacter%28%29.md)
+- [func scanCharacters(from: CharacterSet) -> String?](./scanner/scancharacters%28from%29.md)
+- [func scanDecimal() -> Decimal?](./scanner/scandecimal%28%29.md)
+- [func scanDouble(representation: Scanner.NumberRepresentation) -> Double?](./scanner/scandouble%28representation%29.md)
+- [func scanFloat(representation: Scanner.NumberRepresentation) -> Float?](./scanner/scanfloat%28representation%29.md)
+- [func scanInt(representation: Scanner.NumberRepresentation) -> Int?](./scanner/scanint%28representation%29.md)
+- [func scanInt32(representation: Scanner.NumberRepresentation) -> Int32?](./scanner/scanint32%28representation%29.md)
+- [func scanInt64(representation: Scanner.NumberRepresentation) -> Int64?](./scanner/scanint64%28representation%29.md)
+- [func scanString(String) -> String?](./scanner/scanstring%28_%29.md)
+- [func scanUInt64(representation: Scanner.NumberRepresentation) -> UInt64?](./scanner/scanuint64%28representation%29.md)
+- [func scanUpToCharacters(from: CharacterSet) -> String?](./scanner/scanuptocharacters%28from%29.md)
+- [func scanUpToString(String) -> String?](./scanner/scanuptostring%28_%29.md)
 ### Enumerations
-- [Scanner.NumberRepresentation](scanner/numberrepresentation.md)
+- [Scanner.NumberRepresentation](./scanner/numberrepresentation.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSRegularExpression](nsregularexpression.md)
+### Pattern Matching
+- [class NSRegularExpression](./nsregularexpression.md)
   An immutable representation of a compiled regular expression that you apply to Unicode strings.
-- [class NSDataDetector](nsdatadetector.md)
+- [class NSDataDetector](./nsdatadetector.md)
   A specialized regular expression object that matches natural language text for predefined data patterns.
-- [class NSTextCheckingResult](nstextcheckingresult.md)
+- [class NSTextCheckingResult](./nstextcheckingresult.md)
   An occurrence of textual content found during the analysis of a block of text, such as when matching a regular expression.
-- [var NSNotFound: Int](nsnotfound-4qp9h.md)
+- [var NSNotFound: Int](./nsnotfound-4qp9h.md)
   A value indicating that a requested item couldn’t be found or doesn’t exist.
 
 

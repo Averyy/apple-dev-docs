@@ -1,7 +1,8 @@
 # NWParameters.ServiceClass.bestEffort
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default service type.
 
@@ -22,15 +23,16 @@ case bestEffort
 
 ## See Also
 
-- [NWParameters.ServiceClass.background](nwparameters/serviceclass-swift.enum/background.md)
+### Service Classes
+- [NWParameters.ServiceClass.background](./background.md)
   A service type for high-delay tolerant, high-loss tolerant, elastic flow, and variable size connections.
-- [NWParameters.ServiceClass.interactiveVideo](nwparameters/serviceclass-swift.enum/interactivevideo.md)
+- [NWParameters.ServiceClass.interactiveVideo](./interactivevideo.md)
   A service type for low-delay tolerant, very low-loss tolerant, inelastic flow, and constant packet rate connections.
-- [NWParameters.ServiceClass.interactiveVoice](nwparameters/serviceclass-swift.enum/interactivevoice.md)
+- [NWParameters.ServiceClass.interactiveVoice](./interactivevoice.md)
   A service type for low-delay tolerant, very low-loss tolerant, inelastic flow, and constant packet rate connections.
-- [NWParameters.ServiceClass.responsiveData](nwparameters/serviceclass-swift.enum/responsivedata.md)
+- [NWParameters.ServiceClass.responsiveData](./responsivedata.md)
   A service type for medium-delay tolerant, inelastic flow, and bursty connections.
-- [NWParameters.ServiceClass.signaling](nwparameters/serviceclass-swift.enum/signaling.md)
+- [NWParameters.ServiceClass.signaling](./signaling.md)
   A service type for low-loss tolerant, inelastic flow, jitter tolerant, bursty but short rate, and variable size connections.
 
 

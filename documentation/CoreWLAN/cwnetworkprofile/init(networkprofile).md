@@ -1,7 +1,8 @@
 # init(networkProfile:)
 
 **Framework**: Core WLAN  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a CWNetworkProfile object initialized with the given CWNetworkProfile object.
 
@@ -14,6 +15,10 @@ Creates and returns a CWNetworkProfile object initialized with the given CWNetwo
 init(networkProfile: CWNetworkProfile)
 ```
 
+```objc
+- (instancetype) initWithNetworkProfile:(CWNetworkProfile *) networkProfile;
+```
+
 #### Return Value
 
 A CWNetworkProfile object.
@@ -24,7 +29,8 @@ A CWNetworkProfile object.
 
 ## See Also
 
-- [init()](cwnetworkprofile/init.md)
+### Getting a network profile
+- [init()](./init%28%29.md)
   Creates and returns a CWNetworkProfile object.
 
 

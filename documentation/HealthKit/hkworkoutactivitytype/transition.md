@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.transition
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant for the transition time between activities in a multisport workout.
 
@@ -19,17 +20,22 @@ A constant for the transition time between activities in a multisport workout.
 case transition
 ```
 
+```c
+HKWorkoutActivityTypeTransition
+```
+
 ## Mentions
 
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
 #### Discussion
 
-Use this constant to create an [`HKWorkoutActivity`](hkworkoutactivity.md) instance that represents the transition between sports in a [`HKWorkoutActivityType.swimBikeRun`](hkworkoutactivitytype/swimbikerun.md) workout.
+Use this constant to create an [`HKWorkoutActivity`](../hkworkoutactivity.md) instance that represents the transition between sports in a [`HKWorkoutActivityType.swimBikeRun`](./swimbikerun.md) workout.
 
 ## See Also
 
-- [HKWorkoutActivityType.swimBikeRun](hkworkoutactivitytype/swimbikerun.md)
+### Multisport activities
+- [HKWorkoutActivityType.swimBikeRun](./swimbikerun.md)
   The constant for multisport activities like triathlons.
 
 

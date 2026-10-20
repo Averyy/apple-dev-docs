@@ -1,7 +1,8 @@
 # successfulObjectsKey
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 15.0+
@@ -16,11 +17,16 @@
 static let successfulObjectsKey: CLSErrorUserInfoKey
 ```
 
+```c
+extern CLSErrorUserInfoKey const CLSErrorSuccessfulObjectsKey;
+```
+
 ## See Also
 
-- [static let objectKey: CLSErrorUserInfoKey](clserroruserinfokey/objectkey.md)
+### Keys
+- [static let objectKey: CLSErrorUserInfoKey](./objectkey.md)
   A key whose value is the object that caused the error.
-- [static let underlyingErrorsKey: CLSErrorUserInfoKey](clserroruserinfokey/underlyingerrorskey.md)
+- [static let underlyingErrorsKey: CLSErrorUserInfoKey](./underlyingerrorskey.md)
   A key whose value is the array of errors that contributed to this error.
 
 

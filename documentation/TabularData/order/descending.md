@@ -1,7 +1,8 @@
 # Order.descending
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sort ordering that starts with the highest value and monotonically proceeds to lower values.
 
@@ -22,9 +23,10 @@ case descending
 
 ## See Also
 
-- [Order.ascending](order/ascending.md)
+### Getting the Properties
+- [Order.ascending](./ascending.md)
   A sort ordering that starts with the lowest value and monotonically proceeds to higher values.
-- [func areOrdered<T>(T, T) -> Bool](order/areordered(_:_:).md)
+- [func areOrdered<T>(T, T) -> Bool](./areordered%28_,_%29.md)
   Returns a Boolean that indicates whether the comparable types match the order’s state.
 
 

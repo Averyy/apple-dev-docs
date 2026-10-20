@@ -2,6 +2,7 @@
 
 **Framework**: Core Media  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -21,9 +22,10 @@ var startIndex: Int { get }
 
 ## See Also
 
-- [var dataLength: Int](cmblockbufferprotocol/datalength.md)
-- [var endIndex: Int](cmblockbufferprotocol/endindex.md)
-- [var owner: CMBlockBuffer](cmblockbufferprotocol/owner.md)
+### Inspecting a Block Buffer
+- [var dataLength: Int](./datalength.md)
+- [var endIndex: Int](./endindex.md)
+- [var owner: CMBlockBuffer](./owner.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # writeAttributeNullableInt32s(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeNullableInt32s(withValue value: NSNumber?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeNullableInt32s(withValue value: NSNumber?) async throws
+```
+
+```objc
+- (void) writeAttributeNullableInt32sWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

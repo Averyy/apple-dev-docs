@@ -1,7 +1,8 @@
 # hasColors
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the pasteboard contains contains a nonempty array of colors.
 
@@ -17,19 +18,24 @@ A Boolean value that indicates whether the pasteboard contains contains a nonemp
 var hasColors: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasColors;
+```
+
 #### Discussion
 
 Employ this property to determine if a pasteboard contains color data.
 
-Do not use the [`color`](uipasteboard/color.md) or [`colors`](uipasteboard/colors.md) properties to determine whether a pasteboard contains color data, because doing so consumes resources needlessly.
+Do not use the [`color`](./color.md) or [`colors`](./colors.md) properties to determine whether a pasteboard contains color data, because doing so consumes resources needlessly.
 
 ## See Also
 
-- [var hasImages: Bool](uipasteboard/hasimages.md)
+### Checking for data types on a pasteboard
+- [var hasImages: Bool](./hasimages.md)
   A Boolean value that indicates whether the pasteboard contains a nonempty array of images.
-- [var hasStrings: Bool](uipasteboard/hasstrings.md)
+- [var hasStrings: Bool](./hasstrings.md)
   A Boolean value that indicates whether the pasteboard contains a nonempty array of strings.
-- [var hasURLs: Bool](uipasteboard/hasurls.md)
+- [var hasURLs: Bool](./hasurls.md)
   A Boolean value that indicates whether the pasteboard contains a nonempty array of URLs.
 
 

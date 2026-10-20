@@ -1,7 +1,8 @@
 # currentController
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current first responder accepting to control the preview panel.
 
@@ -14,13 +15,18 @@ The current first responder accepting to control the preview panel.
 var currentController: Any! { get }
 ```
 
+```objc
+@property (readonly) id currentController;
+```
+
 #### Discussion
 
 You should never change the preview panel’s state (for example, its delegate, datasource, and so on) if you aren’t controlling it.
 
 ## See Also
 
-- [func updateController()](qlpreviewpanel/updatecontroller.md)
+### Accessing the Preview Panel Controller
+- [func updateController()](./updatecontroller%28%29.md)
   Asks the preview panel to update its current controller.
 
 

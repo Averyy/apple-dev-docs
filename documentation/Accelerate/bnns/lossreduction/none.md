@@ -1,7 +1,8 @@
 # BNNS.LossReduction.none
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns the loss without any reduction.
 
@@ -11,8 +12,10 @@ Returns the loss without any reduction.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,13 +25,14 @@ case none
 
 ## See Also
 
-- [BNNS.LossReduction.reductionMean](bnns/lossreduction/reductionmean.md)
+### Loss Reduction Functions
+- [BNNS.LossReduction.reductionMean](./reductionmean.md)
   Sums the loss of all samples in the batch and divides by the number of samples.
-- [BNNS.LossReduction.sum](bnns/lossreduction/sum.md)
+- [BNNS.LossReduction.sum](./sum.md)
   Sums the loss of all samples in the batch.
-- [BNNS.LossReduction.weightedMean](bnns/lossreduction/weightedmean.md)
+- [BNNS.LossReduction.weightedMean](./weightedmean.md)
   Sums the loss of all samples in the batch and divides by the sum of all weights.
-- [BNNS.LossReduction.zeroWeightMean](bnns/lossreduction/zeroweightmean.md)
+- [BNNS.LossReduction.zeroWeightMean](./zeroweightmean.md)
   Sums the loss of all samples in the batch and divides by the number of non-zero weights.
 
 

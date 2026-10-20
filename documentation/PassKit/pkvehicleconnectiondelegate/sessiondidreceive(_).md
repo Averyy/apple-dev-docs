@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func sessionDidReceive(_ data: Data)
+```
+
+```objc
+- (void) sessionDidReceiveData:(NSData *) data;
 ```
 
 

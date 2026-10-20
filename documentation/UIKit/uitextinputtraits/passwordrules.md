@@ -1,7 +1,8 @@
 # passwordRules
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 ```swift
 @NSCopying
 optional var passwordRules: UITextInputPasswordRules? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UITextInputPasswordRules * passwordRules;
 ```
 
 

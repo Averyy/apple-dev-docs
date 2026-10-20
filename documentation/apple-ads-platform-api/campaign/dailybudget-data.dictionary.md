@@ -1,7 +1,8 @@
 # Campaign.DailyBudget
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Daily budget cap for a campaign.
 
@@ -10,7 +11,7 @@ Daily budget cap for a campaign.
 
 ## Declaration
 
-```swift
+```
 object Campaign.DailyBudget
 ```
 
@@ -20,7 +21,7 @@ A `Money` object specifying the campaign’s daily spend cap. Once the daily bud
 
 ## Properties
 
-- `value` (Money): The daily budget amount as a Money object with amount and ISO 4217 currency code. The currency must match the ad account’s currency. See [`Money`](money.md). Mutable.
+- `value` (Money): The daily budget amount as a Money object with amount and ISO 4217 currency code. The currency must match the ad account’s currency. See [`Money`](../money.md). Mutable.
 
 
 ---

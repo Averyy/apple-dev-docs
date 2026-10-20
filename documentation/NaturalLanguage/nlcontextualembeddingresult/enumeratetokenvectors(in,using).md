@@ -1,7 +1,8 @@
 # enumerateTokenVectors(in:using:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Iterates over the embedding vectors corresponding to the subword tokens within the specified range of the input string.
 
@@ -38,7 +39,8 @@ Common pooling techniques include:
 
 ## See Also
 
-- [func tokenVector(at: String.Index) -> ([Double], Range<String.Index>)?](nlcontextualembeddingresult/tokenvector(at:).md)
+### Enumerating the vectors
+- [func tokenVector(at: String.Index) -> ([Double], Range<String.Index>)?](./tokenvector%28at%29.md)
   Gets a token vector at the index you specify.
 
 

@@ -1,7 +1,8 @@
 # cloudSharingServiceDelegate
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to an object that conforms to the cloud-sharing service delegate protocol.
 
@@ -14,9 +15,14 @@ A reference to an object that conforms to the cloud-sharing service delegate pro
 weak var cloudSharingServiceDelegate: (any NSCloudSharingServiceDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<NSCloudSharingServiceDelegate> cloudSharingServiceDelegate;
+```
+
 ## See Also
 
-- [var cloudSharingControllerDelegate: (any UICloudSharingControllerDelegate)?](swcollaborationview/cloudsharingcontrollerdelegate.md)
+### Customizing the cloud-sharing behavior
+- [var cloudSharingControllerDelegate: (any UICloudSharingControllerDelegate)?](./cloudsharingcontrollerdelegate.md)
   A reference to an object that conforms to the CloudKit sharing controller delegate protocol.
 
 

@@ -1,7 +1,8 @@
 # canOpen
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the app can open the external link account.
 
@@ -21,13 +22,14 @@ static var canOpen: Bool { get async }
 
 Check this property before showing any user-interface controls that enable people to open the external link account.
 
-Don’t check this property again in response to user input; instead, call [`open()`](externallinkaccount/open().md) immediately.
+Don’t check this property again in response to user input; instead, call [`open()`](./open%28%29.md) immediately.
 
-> ❗ **Important**:  Only show user-interface controls that call the [`open()`](externallinkaccount/open().md) method if this property is `true`. The [`open()`](externallinkaccount/open().md) method always throws an error when [`canOpen`](externallinkaccount/canopen.md) is `false`.
+> ❗ **Important**:  Only show user-interface controls that call the [`open()`](./open%28%29.md) method if this property is `true`. The [`open()`](./open%28%29.md) method always throws an error when [`canOpen`](./canopen.md) is `false`.
 
 ## See Also
 
-- [static func open() async throws](externallinkaccount/open.md)
+### Linking to external accounts
+- [static func open() async throws](./open%28%29.md)
   Presents a continuation sheet that enables people to choose whether to open your app’s link to an external website for account creation or management.
 
 

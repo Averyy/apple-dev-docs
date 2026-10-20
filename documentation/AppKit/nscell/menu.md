@@ -1,17 +1,22 @@
 # menu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell’s contextual menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var menu: NSMenu? { get set }
+```
+
+```objc
+@property (strong, nullable) NSMenu * menu;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ Use this property to specify a menu containing contextual commands associated wi
 
 ## See Also
 
-- [class var defaultMenu: NSMenu?](nscell/defaultmenu.md)
+### Managing Menus
+- [class var defaultMenu: NSMenu?](./defaultmenu.md)
   Returns the default menu for instances of the cell.
-- [func menu(for: NSEvent, in: NSRect, of: NSView) -> NSMenu?](nscell/menu(for:in:of:).md)
+- [func menu(for: NSEvent, in: NSRect, of: NSView) -> NSMenu?](./menu%28for,in,of%29.md)
   Returns the menu associated with the cell and related to the specified event and frame.
 
 

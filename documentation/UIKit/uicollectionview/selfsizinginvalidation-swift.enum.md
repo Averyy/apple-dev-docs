@@ -1,7 +1,8 @@
 # UICollectionView.SelfSizingInvalidation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe modes for invalidating the size of self-sizing collection view cells.
 
@@ -18,35 +19,40 @@ Constants that describe modes for invalidating the size of self-sizing collectio
 enum SelfSizingInvalidation
 ```
 
+```c
+enum UICollectionViewSelfSizingInvalidation : NSInteger;
+```
+
 #### Discussion
 
-Use these constants with the [`selfSizingInvalidation`](uicollectionview/selfsizinginvalidation-swift.property.md) property.
+Use these constants with the [`selfSizingInvalidation`](./selfsizinginvalidation-swift.property.md) property.
 
 ## Topics
 
 ### Constants
-- [UICollectionView.SelfSizingInvalidation.disabled](uicollectionview/selfsizinginvalidation-swift.enum/disabled.md)
+- [UICollectionView.SelfSizingInvalidation.disabled](./selfsizinginvalidation-swift.enum/disabled.md)
   A mode that disables self-sizing invalidation.
-- [UICollectionView.SelfSizingInvalidation.enabled](uicollectionview/selfsizinginvalidation-swift.enum/enabled.md)
+- [UICollectionView.SelfSizingInvalidation.enabled](./selfsizinginvalidation-swift.enum/enabled.md)
   A mode that enables manual self-sizing invalidation.
-- [UICollectionView.SelfSizingInvalidation.enabledIncludingConstraints](uicollectionview/selfsizinginvalidation-swift.enum/enabledincludingconstraints.md)
+- [UICollectionView.SelfSizingInvalidation.enabledIncludingConstraints](./selfsizinginvalidation-swift.enum/enabledincludingconstraints.md)
   A mode that enables automatic self-sizing invalidation after Auto Layout changes.
 ### Initializers
-- [init?(rawValue: Int)](uicollectionview/selfsizinginvalidation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./selfsizinginvalidation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var selfSizingInvalidation: UICollectionView.SelfSizingInvalidation](uicollectionview/selfsizinginvalidation-swift.property.md)
+### Resizing self-sizing cells
+- [var selfSizingInvalidation: UICollectionView.SelfSizingInvalidation](./selfsizinginvalidation-swift.property.md)
   The mode that the collection view uses for invalidating the size of self-sizing cells.
 
 

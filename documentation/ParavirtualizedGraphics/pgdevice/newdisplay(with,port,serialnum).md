@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Create a display from the specified descriptor and uniquifying parameters.
@@ -14,6 +15,10 @@ Create a display from the specified descriptor and uniquifying parameters.
 
 ```swift
 func newDisplay(with descriptor: PGDisplayDescriptor, port: Int, serialNum: UInt32) -> (any PGDisplay)?
+```
+
+```objc
+- (id<PGDisplay>) newDisplayWithDescriptor:(PGDisplayDescriptor *) descriptor port:(NSUInteger) port serialNum:(uint32_t) serialNum;
 ```
 
 #### Return Value

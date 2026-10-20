@@ -1,7 +1,8 @@
 # HKStatisticsCollectionQueryDescriptor.Result
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of results.
 
@@ -10,7 +11,7 @@ A collection of results.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -26,16 +27,16 @@ The first set of results reflects the current state of the statistics collection
 ## Topics
 
 ### Accessing Statistical Data
-- [let statisticsCollection: HKStatisticsCollection](hkstatisticscollectionquerydescriptor/result/statisticscollection.md)
+- [let statisticsCollection: HKStatisticsCollection](./result/statisticscollection.md)
   A collection of statistics, representing the results calculated over separate time intervals.
-- [let updatedStatistics: [HKStatistics]?](hkstatisticscollectionquerydescriptor/result/updatedstatistics.md)
+- [let updatedStatistics: [HKStatistics]?](./result/updatedstatistics.md)
   A collection of statistics that have changed.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

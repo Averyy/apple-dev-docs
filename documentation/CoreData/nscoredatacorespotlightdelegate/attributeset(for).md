@@ -1,7 +1,8 @@
 # attributeSet(for:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the searchable attributes for the specified managed object.
 
@@ -18,13 +19,17 @@ Returns the searchable attributes for the specified managed object.
 func attributeSet(for object: NSManagedObject) -> CSSearchableItemAttributeSet?
 ```
 
+```objc
+- (CSSearchableItemAttributeSet *) attributeSetForObject:(NSManagedObject *) object;
+```
+
 #### Return Value
 
-An instance of [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/corespotlight/cssearchableitemattributeset) that provides the searchable item’s attributes.
+An instance of [`CSSearchableItemAttributeSet`](../../CoreSpotlight/cssearchableitemattributeset.md) that provides the searchable item’s attributes.
 
 #### Discussion
 
-> ❗ **Important**:  If you enable [`isIndexedBySpotlight`](nspropertydescription/isindexedbyspotlight.md) on a property description that describes a relationship, override this method and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships.
+> ❗ **Important**:  If you enable [`isIndexedBySpotlight`](../nspropertydescription/isindexedbyspotlight.md) on a property description that describes a relationship, override this method and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships.
 
 To prevent Core Spotlight from indexing a specific managed object, override this method and return `nil` for that object.
 
@@ -34,11 +39,12 @@ To prevent Core Spotlight from indexing a specific managed object, override this
 
 ## See Also
 
-- [func deleteSpotlightIndex(completionHandler: ((any Error)?) -> Void)](nscoredatacorespotlightdelegate/deletespotlightindex(completionhandler:).md)
+### Managing the Index
+- [func deleteSpotlightIndex(completionHandler: ((any Error)?) -> Void)](./deletespotlightindex%28completionhandler%29.md)
   Deletes all searchable items from the configured index.
-- [func startSpotlightIndexing()](nscoredatacorespotlightdelegate/startspotlightindexing.md)
+- [func startSpotlightIndexing()](./startspotlightindexing%28%29.md)
   Starts the indexing of the store’s entities.
-- [func stopSpotlightIndexing()](nscoredatacorespotlightdelegate/stopspotlightindexing.md)
+- [func stopSpotlightIndexing()](./stopspotlightindexing%28%29.md)
   Stops the indexing of the store’s entities.
 
 

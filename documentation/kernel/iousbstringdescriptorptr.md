@@ -1,7 +1,8 @@
 # IOUSBStringDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a string descriptor structure.
 
@@ -10,23 +11,24 @@ A pointer to a string descriptor structure.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBStringDescriptor *IOUSBStringDescriptorPtr;
 ```
 
 ## See Also
 
-- [IOUSBStringDescriptor](iousbstringdescriptor.md)
+### USB Descriptors
+- [IOUSBStringDescriptor](./iousbstringdescriptor.md)
   The structure for storing a string descriptor.
-- [IOUSBSuperSpeedEndpointCompanionDescriptor](iousbsuperspeedendpointcompaniondescriptor.md)
+- [IOUSBSuperSpeedEndpointCompanionDescriptor](./iousbsuperspeedendpointcompaniondescriptor.md)
   The descriptor for a SuperSpeed USB endpoint companion.
-- [IOUSBSuperSpeedEndpointCompanionDescriptorPtr](iousbsuperspeedendpointcompaniondescriptorptr.md)
+- [IOUSBSuperSpeedEndpointCompanionDescriptorPtr](./iousbsuperspeedendpointcompaniondescriptorptr.md)
   A pointer to a SuperSpeed USB endpoint companion descriptor.
-- [IOUSBSuperSpeedHubDescriptor](iousbsuperspeedhubdescriptor.md)
+- [IOUSBSuperSpeedHubDescriptor](./iousbsuperspeedhubdescriptor.md)
   A structure that defines the descriptor for a SuperSpeed USB hub.
-- [IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor](iousbsuperspeedplusisochronousendpointcompaniondescriptor.md)
+- [IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor](./iousbsuperspeedplusisochronousendpointcompaniondescriptor.md)
   The descriptor for a SuperSpeedPlus isochronous USB endpoint companion.
-- [IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptorPtr](iousbsuperspeedplusisochronousendpointcompaniondescriptorptr.md)
+- [IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptorPtr](./iousbsuperspeedplusisochronousendpointcompaniondescriptorptr.md)
   A pointer to a SuperSpeedPlus isochronous USB endpoint companion descriptor.
 
 

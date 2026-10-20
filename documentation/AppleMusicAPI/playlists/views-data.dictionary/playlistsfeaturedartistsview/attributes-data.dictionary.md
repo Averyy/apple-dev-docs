@@ -1,7 +1,8 @@
 # Playlists.Views.PlaylistsFeaturedArtistsView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attribute metadata for the playlist featured artists view.
 
@@ -10,7 +11,7 @@ Attribute metadata for the playlist featured artists view.
 
 ## Declaration
 
-```swift
+```
 object Playlists.Views.PlaylistsFeaturedArtistsView.Attributes
 ```
 

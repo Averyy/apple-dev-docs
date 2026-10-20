@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An optional name for the file that the handle represents.
@@ -18,6 +19,10 @@ An optional name for the file that the handle represents.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * label;
 ```
 
 

@@ -1,12 +1,15 @@
 # Get Assignments
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of assignments currently assigned to a user or device.
 
 **Availability**:
 - VPP License Management 1.1+
+
+> **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
 #### Discussion
 
@@ -14,7 +17,7 @@ Get a list of assignments currently assigned to a user or device.
 
 **Request**:
 
-```None
+```
 {
   "adamIdStr" : "361304891",
   "clientUserIdStr" : "user1",
@@ -48,9 +51,9 @@ Get a list of assignments currently assigned to a user or device.
 ## Topics
 
 ### Request and Response
-- [object VppAssignmentRequest](vppassignmentrequest.md)
+- [object VppAssignmentRequest](./vppassignmentrequest.md)
   The request for a list of assignments.
-- [object VppAssignmentsResponse](vppassignmentsresponse.md)
+- [object VppAssignmentsResponse](./vppassignmentsresponse.md)
   The response that contains a list of assignments.
 
 ## Endpoint
@@ -59,15 +62,23 @@ Get a list of assignments currently assigned to a user or device.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `VppAssignmentRequest`
+
 The request for a list of assignments.
+
+## Responses
+
+- `200` OK (`VppAssignmentsResponse`, `application/json`): The response that contains a list of assignments.
 
 ## See Also
 
-- [Get Assets](get-assets-44p83.md)
+### Asset and license management
+- [Get Assets](./get-assets-44p83.md)
   Get the set of assets managed by your organization.
-- [Get Licenses](get-licenses.md)
+- [Get Licenses](./get-licenses.md)
   Get the set of licenses managed by your organization.
-- [Manage Licenses](manage-licenses.md)
+- [Manage Licenses](./manage-licenses.md)
   Associate and disassociate licenses with users and devices.
 
 

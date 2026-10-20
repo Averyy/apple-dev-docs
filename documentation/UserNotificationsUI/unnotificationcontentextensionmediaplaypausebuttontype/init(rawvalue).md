@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: User Notifications UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+

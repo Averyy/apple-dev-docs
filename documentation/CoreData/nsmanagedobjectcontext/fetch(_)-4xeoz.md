@@ -1,7 +1,8 @@
 # fetch(_:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of items of the specified type that meet the fetch request’s critieria.
 
@@ -11,7 +12,7 @@ Returns an array of items of the specified type that meet the fetch request’s 
 - Mac Catalyst 3.0+
 - macOS 10.4+
 - tvOS 3.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ func fetch<T>(_ request: NSFetchRequest<T>) throws -> [T] where T : NSFetchReque
 
 ## Mentions
 
-- [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
+- [Accessing data when the store changes](../accessing-data-when-the-store-changes.md)
 
 #### Discussion
 
@@ -44,25 +45,26 @@ A fetch never changes realized objects, or those with pending changes, without d
 
 ## See Also
 
-- [func fetch(NSFetchRequest<any NSFetchRequestResult>) throws -> [Any]](nsmanagedobjectcontext/fetch(_:)-38ys1.md)
+### Registering and fetching objects
+- [func fetch(NSFetchRequest<any NSFetchRequestResult>) throws -> [Any]](./fetch%28_%29-38ys1.md)
   Returns an array of objects that meet the criteria of the specified fetch request.
-- [func count(for: NSFetchRequest<any NSFetchRequestResult>) throws -> Int](nsmanagedobjectcontext/count(for:)-93zbm.md)
+- [func count(for: NSFetchRequest<any NSFetchRequestResult>) throws -> Int](./count%28for%29-93zbm.md)
   Returns the number of objects the specified request fetches when it executes.
-- [func registeredObject(for: NSManagedObjectID) -> NSManagedObject?](nsmanagedobjectcontext/registeredobject(for:).md)
+- [func registeredObject(for: NSManagedObjectID) -> NSManagedObject?](./registeredobject%28for%29.md)
   Returns an object that exists in the context.
-- [func object(with: NSManagedObjectID) -> NSManagedObject](nsmanagedobjectcontext/object(with:).md)
+- [func object(with: NSManagedObjectID) -> NSManagedObject](./object%28with%29.md)
   Returns either an existing object from the context or a fault that represents that object.
-- [func existingObject(with: NSManagedObjectID) throws -> NSManagedObject](nsmanagedobjectcontext/existingobject(with:).md)
+- [func existingObject(with: NSManagedObjectID) throws -> NSManagedObject](./existingobject%28with%29.md)
   Returns an existing object from either the context or the persistent store.
-- [var registeredObjects: Set<NSManagedObject>](nsmanagedobjectcontext/registeredobjects.md)
+- [var registeredObjects: Set<NSManagedObject>](./registeredobjects.md)
   The set of registered managed objects in the context.
-- [func count<T>(for: NSFetchRequest<T>) throws -> Int](nsmanagedobjectcontext/count(for:)-3r91z.md)
+- [func count<T>(for: NSFetchRequest<T>) throws -> Int](./count%28for%29-3r91z.md)
   Returns a count of the objects the specified request fetches when it executes.
-- [func execute(NSPersistentStoreRequest) throws -> NSPersistentStoreResult](nsmanagedobjectcontext/execute(_:).md)
+- [func execute(NSPersistentStoreRequest) throws -> NSPersistentStoreResult](./execute%28_%29.md)
   Passes a request to the persistent store without affecting the contents of the managed object context, and returns a persistent store result.
-- [func refreshAllObjects()](nsmanagedobjectcontext/refreshallobjects.md)
+- [func refreshAllObjects()](./refreshallobjects%28%29.md)
   Refreshes all of the registered managed objects in the context.
-- [var retainsRegisteredObjects: Bool](nsmanagedobjectcontext/retainsregisteredobjects.md)
+- [var retainsRegisteredObjects: Bool](./retainsregisteredobjects.md)
   A Boolean value that indicates whether the context keeps strong references to all registered managed objects.
 
 

@@ -1,7 +1,8 @@
 # errSecPVCReferentNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A reference to the calling module was not found in the list of authorized callers.
 
@@ -18,6 +19,10 @@ A reference to the calling module was not found in the list of authorized caller
 
 ```swift
 var errSecPVCReferentNotFound: OSStatus { get }
+```
+
+```c
+errSecPVCReferentNotFound
 ```
 
 

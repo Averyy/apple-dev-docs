@@ -1,7 +1,8 @@
 # dequeue_head
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,15 +10,16 @@
 
 ## Declaration
 
-```swift
+```c
 queue_entry_t dequeue_head(queue_t que);
 ```
 
 ## See Also
 
-- [dequeue_tail](1567149-dequeue_tail.md)
-- [enqueue_head](1567151-enqueue_head.md)
-- [enqueue_tail](1567142-enqueue_tail.md)
+### queue
+- [dequeue_tail](./api-1567149-dequeue_tail.md)
+- [enqueue_head](./api-1567151-enqueue_head.md)
+- [enqueue_tail](./api-1567142-enqueue_tail.md)
 
 
 ---

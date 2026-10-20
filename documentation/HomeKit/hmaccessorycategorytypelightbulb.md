@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeLightbulb
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A lightbulb accessory.
 
@@ -17,6 +18,10 @@ A lightbulb accessory.
 
 ```swift
 let HMAccessoryCategoryTypeLightbulb: String
+```
+
+```c
+extern NSString * const HMAccessoryCategoryTypeLightbulb;
 ```
 
 

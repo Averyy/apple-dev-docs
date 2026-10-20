@@ -1,7 +1,8 @@
 # QLThumbnailErrorDomain
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain of the QuickLookThumbnailing framework.
 
@@ -18,11 +19,16 @@ The error domain of the QuickLookThumbnailing framework.
 let QLThumbnailErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const QLThumbnailErrorDomain;
+```
+
 ## See Also
 
-- [struct QLThumbnailError](qlthumbnailerror-swift.struct.md)
+### Error Information
+- [struct QLThumbnailError](./qlthumbnailerror-swift.struct.md)
   Error information that might return when you generate a thumbnail.
-- [QLThumbnailError.Code](qlthumbnailerror-swift.struct/code.md)
+- [QLThumbnailError.Code](./qlthumbnailerror-swift.struct/code.md)
   Error codes that may be returned when generating a thumbnail.
 
 

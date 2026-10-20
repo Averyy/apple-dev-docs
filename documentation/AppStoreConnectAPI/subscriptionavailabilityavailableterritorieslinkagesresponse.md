@@ -1,21 +1,22 @@
 # SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API - Deprecated
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse.Data](subscriptionavailabilityavailableterritorieslinkagesresponse/data-data.dictionary.md)
+- [object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse.Data](./subscriptionavailabilityavailableterritorieslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,11 +26,12 @@ object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse
 
 ## See Also
 
-- [object SubscriptionAvailability](subscriptionavailability.md)
+### Objects
+- [object SubscriptionAvailability](./subscriptionavailability.md)
   The territory availability configuration for a subscription, specifying which App Store regions it’s offered in.
-- [object SubscriptionAvailabilityCreateRequest](subscriptionavailabilitycreaterequest.md)
+- [object SubscriptionAvailabilityCreateRequest](./subscriptionavailabilitycreaterequest.md)
   The request body you use to create a subscription availability.
-- [object SubscriptionAvailabilityResponse](subscriptionavailabilityresponse.md)
+- [object SubscriptionAvailabilityResponse](./subscriptionavailabilityresponse.md)
   A response containing a single territory availability configuration for a subscription.
 
 

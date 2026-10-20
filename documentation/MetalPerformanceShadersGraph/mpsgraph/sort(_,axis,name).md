@@ -1,7 +1,8 @@
 # sort(_:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sorts the elements of the input tensor along the specified axis.
 
@@ -17,6 +18,10 @@ Sorts the elements of the input tensor along the specified axis.
 
 ```swift
 func sort(_ tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) sortWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

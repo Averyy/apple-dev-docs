@@ -1,7 +1,8 @@
 # NSDirectionalEdgeInsets
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The inset distances for views, taking the user interface layout direction into account.
 
@@ -19,58 +20,63 @@ The inset distances for views, taking the user interface layout direction into a
 struct NSDirectionalEdgeInsets
 ```
 
+```c
+typedef struct NSDirectionalEdgeInsets { ... } NSDirectionalEdgeInsets;
+```
+
 ## Topics
 
 ### Creating directional edge insets
-- [init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat)](nsdirectionaledgeinsets/init(top:leading:bottom:trailing:)-6wnda.md)
+- [init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat)](./nsdirectionaledgeinsets/init%28top,leading,bottom,trailing%29-6wnda.md)
   Creates a directional edge insets structure that contains the specified values.
-- [init()](nsdirectionaledgeinsets/init.md)
+- [init()](./nsdirectionaledgeinsets/init%28%29.md)
   Creates a directional edge insets structure that contains default values.
-- [init(EdgeInsets)](nsdirectionaledgeinsets/init(_:).md)
+- [init(EdgeInsets)](./nsdirectionaledgeinsets/init%28_%29.md)
   Creates a directional edge insets structure from a SwiftUI edge insets structure.
 ### Getting the edge values
-- [var bottom: CGFloat](nsdirectionaledgeinsets/bottom.md)
+- [var bottom: CGFloat](./nsdirectionaledgeinsets/bottom.md)
   The bottom edge inset value.
-- [var leading: CGFloat](nsdirectionaledgeinsets/leading.md)
+- [var leading: CGFloat](./nsdirectionaledgeinsets/leading.md)
   The leading edge inset value.
-- [var top: CGFloat](nsdirectionaledgeinsets/top.md)
+- [var top: CGFloat](./nsdirectionaledgeinsets/top.md)
   The top edge inset value.
-- [var trailing: CGFloat](nsdirectionaledgeinsets/trailing.md)
+- [var trailing: CGFloat](./nsdirectionaledgeinsets/trailing.md)
   The trailing edge inset value.
 ### Converting to and from strings
-- [class func string(for: NSDirectionalEdgeInsets) -> String](../foundation/nscoder/string(for:)-hp8b.md)
+- [class func string(for: NSDirectionalEdgeInsets) -> String](../Foundation/nscoder/string%28for%29-hp8b.md)
   Returns a string formatted to contain the data from a directional edge insets structure.
-- [class func nsDirectionalEdgeInsets(for: String) -> NSDirectionalEdgeInsets](../foundation/nscoder/nsdirectionaledgeinsets(for:).md)
+- [class func nsDirectionalEdgeInsets(for: String) -> NSDirectionalEdgeInsets](../Foundation/nscoder/nsdirectionaledgeinsets%28for%29.md)
   Returns a directional edge insets structure based on data in the specified string.
 ### Getting the empty edge insets
-- [static let zero: NSDirectionalEdgeInsets](nsdirectionaledgeinsets/zero.md)
+- [static let zero: NSDirectionalEdgeInsets](./nsdirectionaledgeinsets/zero.md)
   A directional edge insets structure whose top, leading, bottom, and trailing fields all have a value of `0`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct UIOffset](uioffset.md)
+### Related types
+- [struct UIOffset](./uioffset.md)
   A structure that specifies an amount to offset a position.
-- [struct UIAxis](uiaxis.md)
+- [struct UIAxis](./uiaxis.md)
   A structure that specifies the layout axes.
-- [struct UIEdgeInsets](uiedgeinsets.md)
+- [struct UIEdgeInsets](./uiedgeinsets.md)
   The inset distances for views.
-- [struct NSDirectionalRectEdge](nsdirectionalrectedge.md)
+- [struct NSDirectionalRectEdge](./nsdirectionalrectedge.md)
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
-- [enum NSRectAlignment](nsrectalignment.md)
+- [enum NSRectAlignment](./nsrectalignment.md)
   Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction.
-- [UIKit macros](uikit-macros.md)
+- [UIKit macros](./uikit-macros.md)
   Macros that UIKit defines.
 
 

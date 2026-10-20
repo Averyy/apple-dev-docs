@@ -1,7 +1,8 @@
 # NEHotspotHelperHandler
 
 **Framework**: Network Extension  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type definition for the Hotspot Helper’s command handler block.
 
@@ -17,6 +18,10 @@ The type definition for the Hotspot Helper’s command handler block.
 typealias NEHotspotHelperHandler = (NEHotspotHelperCommand) -> Void
 ```
 
+```c
+typedef void (^)(NEHotspotHelperCommand *) NEHotspotHelperHandler;
+```
+
 #### Discussion
 
 The Hotspot Helper app provides a block of this type when it invokes the `registerWithOptions:queue:handler:` method.
@@ -25,9 +30,10 @@ The block is invoked every time there is a command to be processed.
 
 ## See Also
 
-- [class func register(options: [String : NSObject]?, queue: dispatch_queue_t, handler: NEHotspotHelperHandler) -> Bool](nehotspothelper/register(options:queue:handler:).md)
+### Registering a hotspot helper
+- [class func register(options: [String : NSObject]?, queue: dispatch_queue_t, handler: NEHotspotHelperHandler) -> Bool](./nehotspothelper/register%28options,queue,handler%29.md)
   Register the application as a Hotspot Helper.
-- [let kNEHotspotHelperOptionDisplayName: String](knehotspothelperoptiondisplayname.md)
+- [let kNEHotspotHelperOptionDisplayName: String](./knehotspothelperoptiondisplayname.md)
   The string displayed in Wi-Fi Settings for a network handled by the application.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The height of the tiles, in pixels, for the render command encoder.
@@ -20,15 +21,20 @@ The height of the tiles, in pixels, for the render command encoder.
 var tileHeight: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger tileHeight;
+```
+
 #### Discussion
 
-The value comes from the [`tileHeight`](mtlrenderpassdescriptor/tileheight.md) property of the [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md) at the time you create the render command encoder.
+The value comes from the [`tileHeight`](../mtlrenderpassdescriptor/tileheight.md) property of the [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) at the time you create the render command encoder.
 
 ## See Also
 
-- [func dispatchThreadsPerTile(MTLSize)](mtlrendercommandencoder/dispatchthreadspertile(_:).md)
+### Drawing with tile shaders
+- [func dispatchThreadsPerTile(MTLSize)](./dispatchthreadspertile%28_%29.md)
   Encodes a command that invokes GPU functions from the encoder’s current tile render pipeline state.
-- [var tileWidth: Int](mtlrendercommandencoder/tilewidth.md)
+- [var tileWidth: Int](./tilewidth.md)
   The width of the tiles, in pixels, for the render command encoder.
 
 

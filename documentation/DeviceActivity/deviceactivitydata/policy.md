@@ -1,7 +1,8 @@
 # DeviceActivityData.Policy
 
 **Framework**: Device Activity  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The policy for fetching activity data.
 
@@ -18,20 +19,21 @@ enum Policy
 ## Topics
 
 ### Fetching policies
-- [DeviceActivityData.Policy.cached](deviceactivitydata/policy/cached.md)
+- [DeviceActivityData.Policy.cached](./policy/cached.md)
   A policy that fetches device activity data from the cache.
-- [DeviceActivityData.Policy.live](deviceactivitydata/policy/live.md)
+- [DeviceActivityData.Policy.live](./policy/live.md)
   A policy that fetches live device activity data.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [DeviceActivityData.Error](deviceactivitydata/error.md)
+### Managing data access
+- [DeviceActivityData.Error](./error.md)
   Errors that may occur when attempting to fetch activity data.
 
 

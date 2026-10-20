@@ -1,10 +1,11 @@
 # kBluetoothAuthenticationRequirementsMITMProtectionNotRequiredDedicatedBonding
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,15 +13,20 @@
 var kBluetoothAuthenticationRequirementsMITMProtectionNotRequiredDedicatedBonding: BluetoothAuthenticationRequirementsValues { get }
 ```
 
+```c
+kBluetoothAuthenticationRequirementsMITMProtectionNotRequiredDedicatedBonding
+```
+
 ## See Also
 
-- [var kBluetoothAuthenticationRequirementsMITMProtectionNotRequired: BluetoothAuthenticationRequirementsValues](kbluetoothauthenticationrequirementsmitmprotectionnotrequired.md)
-- [var kBluetoothAuthenticationRequirementsMITMProtectionNotRequiredGeneralBonding: BluetoothAuthenticationRequirementsValues](kbluetoothauthenticationrequirementsmitmprotectionnotrequiredgeneralbonding.md)
-- [var kBluetoothAuthenticationRequirementsMITMProtectionNotRequiredNoBonding: BluetoothAuthenticationRequirementsValues](kbluetoothauthenticationrequirementsmitmprotectionnotrequirednobonding.md)
-- [var kBluetoothAuthenticationRequirementsMITMProtectionRequired: BluetoothAuthenticationRequirementsValues](kbluetoothauthenticationrequirementsmitmprotectionrequired.md)
-- [var kBluetoothAuthenticationRequirementsMITMProtectionRequiredDedicatedBonding: BluetoothAuthenticationRequirementsValues](kbluetoothauthenticationrequirementsmitmprotectionrequireddedicatedbonding.md)
-- [var kBluetoothAuthenticationRequirementsMITMProtectionRequiredGeneralBonding: BluetoothAuthenticationRequirementsValues](kbluetoothauthenticationrequirementsmitmprotectionrequiredgeneralbonding.md)
-- [var kBluetoothAuthenticationRequirementsMITMProtectionRequiredNoBonding: BluetoothAuthenticationRequirementsValues](kbluetoothauthenticationrequirementsmitmprotectionrequirednobonding.md)
+### Constants
+- [var kBluetoothAuthenticationRequirementsMITMProtectionNotRequired: BluetoothAuthenticationRequirementsValues](./kbluetoothauthenticationrequirementsmitmprotectionnotrequired.md)
+- [var kBluetoothAuthenticationRequirementsMITMProtectionNotRequiredGeneralBonding: BluetoothAuthenticationRequirementsValues](./kbluetoothauthenticationrequirementsmitmprotectionnotrequiredgeneralbonding.md)
+- [var kBluetoothAuthenticationRequirementsMITMProtectionNotRequiredNoBonding: BluetoothAuthenticationRequirementsValues](./kbluetoothauthenticationrequirementsmitmprotectionnotrequirednobonding.md)
+- [var kBluetoothAuthenticationRequirementsMITMProtectionRequired: BluetoothAuthenticationRequirementsValues](./kbluetoothauthenticationrequirementsmitmprotectionrequired.md)
+- [var kBluetoothAuthenticationRequirementsMITMProtectionRequiredDedicatedBonding: BluetoothAuthenticationRequirementsValues](./kbluetoothauthenticationrequirementsmitmprotectionrequireddedicatedbonding.md)
+- [var kBluetoothAuthenticationRequirementsMITMProtectionRequiredGeneralBonding: BluetoothAuthenticationRequirementsValues](./kbluetoothauthenticationrequirementsmitmprotectionrequiredgeneralbonding.md)
+- [var kBluetoothAuthenticationRequirementsMITMProtectionRequiredNoBonding: BluetoothAuthenticationRequirementsValues](./kbluetoothauthenticationrequirementsmitmprotectionrequirednobonding.md)
 
 
 ---

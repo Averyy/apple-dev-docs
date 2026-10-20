@@ -1,7 +1,8 @@
 # videoBounds
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current size and position of the video image that displays within the player view’s bounds.
 
@@ -14,15 +15,20 @@ The current size and position of the video image that displays within the player
 var videoBounds: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect videoBounds;
+```
+
 #### Discussion
 
-Use this property to determine the display dimensions of the video image within the player view’s bounds. The size and position of this rectangle depend on the aspect ratio of the media (like 16:9 or 4:3), the player view’s [`bounds`](https://developer.apple.com/documentation/appkit/nsview/bounds), and its [`controlsStyle`](avplayerview/controlsstyle.md).
+Use this property to determine the display dimensions of the video image within the player view’s bounds. The size and position of this rectangle depend on the aspect ratio of the media (like 16:9 or 4:3), the player view’s [`bounds`](../../AppKit/nsview/bounds.md), and its [`controlsStyle`](./controlsstyle.md).
 
 ## See Also
 
-- [var isReadyForDisplay: Bool](avplayerview/isreadyfordisplay.md)
+### Customizing the video presentation
+- [var isReadyForDisplay: Bool](./isreadyfordisplay.md)
   A Boolean value that indicates whether the current player item’s first video frame is ready for display.
-- [var videoGravity: AVLayerVideoGravity](avplayerview/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./videogravity.md)
   A value that determines how the player view displays video content within its bounds.
 
 

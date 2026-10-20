@@ -1,7 +1,8 @@
 # training
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that enables the LSTM layer to support training.
 
@@ -17,6 +18,10 @@ A parameter that enables the LSTM layer to support training.
 
 ```swift
 var training: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL training;
 ```
 
 #### Discussion

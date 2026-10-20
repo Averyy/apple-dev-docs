@@ -1,7 +1,8 @@
 # kDNSServiceInterfaceIndexInfra
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -18,18 +19,23 @@
 var kDNSServiceInterfaceIndexInfra: UInt32 { get }
 ```
 
+```c
+#define kDNSServiceInterfaceIndexInfra
+```
+
 ## See Also
 
-- [var DNS_SD_ORIGINAL_ENCODING_VERSION_NUMBER_MAX: Int32](dns_sd_original_encoding_version_number_max.md)
-- [let kDNSServiceAttributeAAAAFallback: _](kdnsserviceattributeaaaafallback.md)
-- [var kDNSServiceInterfaceIndexAny: Int32](kdnsserviceinterfaceindexany.md)
-- [var kDNSServiceInterfaceIndexBLE: UInt32](kdnsserviceinterfaceindexble.md)
-- [var kDNSServiceInterfaceIndexLocalOnly: UInt32](kdnsserviceinterfaceindexlocalonly.md)
-- [var kDNSServiceInterfaceIndexP2P: UInt32](kdnsserviceinterfaceindexp2p.md)
-- [var kDNSServiceInterfaceIndexUnicast: UInt32](kdnsserviceinterfaceindexunicast.md)
-- [var kDNSServiceMaxDomainName: Int32](kdnsservicemaxdomainname.md)
-- [var kDNSServiceMaxServiceName: Int32](kdnsservicemaxservicename.md)
-- [var kDNSServiceProperty_DaemonVersion: String](kdnsserviceproperty_daemonversion.md)
+### Constants
+- [var DNS_SD_ORIGINAL_ENCODING_VERSION_NUMBER_MAX: Int32](./dns_sd_original_encoding_version_number_max.md)
+- [let kDNSServiceAttributeAAAAFallback: _](./kdnsserviceattributeaaaafallback.md)
+- [var kDNSServiceInterfaceIndexAny: Int32](./kdnsserviceinterfaceindexany.md)
+- [var kDNSServiceInterfaceIndexBLE: UInt32](./kdnsserviceinterfaceindexble.md)
+- [var kDNSServiceInterfaceIndexLocalOnly: UInt32](./kdnsserviceinterfaceindexlocalonly.md)
+- [var kDNSServiceInterfaceIndexP2P: UInt32](./kdnsserviceinterfaceindexp2p.md)
+- [var kDNSServiceInterfaceIndexUnicast: UInt32](./kdnsserviceinterfaceindexunicast.md)
+- [var kDNSServiceMaxDomainName: Int32](./kdnsservicemaxdomainname.md)
+- [var kDNSServiceMaxServiceName: Int32](./kdnsservicemaxservicename.md)
+- [var kDNSServiceProperty_DaemonVersion: String](./kdnsserviceproperty_daemonversion.md)
   The daemon version property.
 
 

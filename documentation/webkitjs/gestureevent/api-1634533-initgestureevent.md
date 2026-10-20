@@ -1,7 +1,8 @@
 # initGestureEvent
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Initializes a newly created `GestureEvent` object.
 
@@ -11,7 +12,7 @@ Initializes a newly created `GestureEvent` object.
 
 ## Declaration
 
-```swift
+```
 void initGestureEvent(
     DOMString type, 
     boolean canBubble, 

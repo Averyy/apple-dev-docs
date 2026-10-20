@@ -1,7 +1,8 @@
 # init(left:right:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+

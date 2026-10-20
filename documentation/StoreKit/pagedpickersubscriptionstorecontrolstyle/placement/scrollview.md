@@ -1,7 +1,8 @@
 # scrollView
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -19,10 +20,11 @@ static var scrollView: PagedPickerSubscriptionStoreControlStyle.Placement { get 
 
 ## See Also
 
-- [static var automatic: PagedPickerSubscriptionStoreControlStyle.Placement](pagedpickersubscriptionstorecontrolstyle/placement/automatic.md)
-- [static var bottomBar: PagedPickerSubscriptionStoreControlStyle.Placement](pagedpickersubscriptionstorecontrolstyle/placement/bottombar.md)
+### Getting a placement
+- [static var automatic: PagedPickerSubscriptionStoreControlStyle.Placement](./automatic.md)
+- [static var bottomBar: PagedPickerSubscriptionStoreControlStyle.Placement](./bottombar.md)
   A placement that locates the paged picker in a bar near the bottom of the main scroll view in a subscription store view.
-- [static var buttonsInBottomBar: PagedPickerSubscriptionStoreControlStyle.Placement](pagedpickersubscriptionstorecontrolstyle/placement/buttonsinbottombar.md)
+- [static var buttonsInBottomBar: PagedPickerSubscriptionStoreControlStyle.Placement](./buttonsinbottombar.md)
   A hybrid placement that positions subscription controls within the main scroll view, and places auxiliary buttons in the bottom bar.
 
 

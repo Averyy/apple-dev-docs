@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes based on the local ID if present, otherwise the stable ID.
 
@@ -19,6 +20,8 @@ Hashes based on the local ID if present, otherwise the stable ID.
 ```swift
 func hash(into hasher: inout Hasher)
 ```
+
+Available when `LocalID` conforms to `EntityIdentifierConvertible`, `LocalID` conforms to `Sendable`, `StableID` conforms to `EntityIdentifierConvertible`, and `StableID` conforms to `Sendable`.
 
 #### Discussion
 

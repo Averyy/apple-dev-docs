@@ -1,26 +1,28 @@
 # OSActionCancelHandler
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef void (^OSActionCancelHandler)(void);
 ```
 
 ## See Also
 
-- [OSActionAbortedHandler](osactionabortedhandler.md)
-- [OSDispatchMethod](osdispatchmethod.md)
-- [OSKextRequestResourceCallback](oskextrequestresourcecallback.md)
+### Callback Methods
+- [OSActionAbortedHandler](./osactionabortedhandler.md)
+- [OSDispatchMethod](./osdispatchmethod.md)
+- [OSKextRequestResourceCallback](./oskextrequestresourcecallback.md)
   Invoked to provide results for a kext resource request.
-- [OSObjectApplierFunction](osobjectapplierfunction.md)
-- [OSSerializerBlock](osserializerblock.md)
-- [OSSerializerCallback](osserializercallback.md)
+- [OSObjectApplierFunction](./osobjectapplierfunction.md)
+- [OSSerializerBlock](./osserializerblock.md)
+- [OSSerializerCallback](./osserializercallback.md)
 
 
 ---

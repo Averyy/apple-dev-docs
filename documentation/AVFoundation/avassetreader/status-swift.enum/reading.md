@@ -1,17 +1,18 @@
 # AVAssetReader.Status.reading
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The asset reader is successfully reading samples from its asset.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ The asset reader is successfully reading samples from its asset.
 case reading
 ```
 
+```c
+AVAssetReaderStatusReading
+```
+
 ## See Also
 
-- [AVAssetReader.Status.unknown](avassetreader/status-swift.enum/unknown.md)
+### Status values
+- [AVAssetReader.Status.unknown](./unknown.md)
   The asset reader is in an unknown state.
-- [AVAssetReader.Status.completed](avassetreader/status-swift.enum/completed.md)
+- [AVAssetReader.Status.completed](./completed.md)
   The asset reader completes reading all samples within its specified time range.
-- [AVAssetReader.Status.failed](avassetreader/status-swift.enum/failed.md)
+- [AVAssetReader.Status.failed](./failed.md)
   The asset reader can no longer read samples from its asset because of an error.
-- [AVAssetReader.Status.cancelled](avassetreader/status-swift.enum/cancelled.md)
+- [AVAssetReader.Status.cancelled](./cancelled.md)
   The asset reader can no longer read samples because you canceled reading.
 
 

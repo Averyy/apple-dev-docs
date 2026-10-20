@@ -1,7 +1,8 @@
 # errSecIO
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 I/O error.
 
@@ -18,6 +19,10 @@ I/O error.
 
 ```swift
 var errSecIO: OSStatus { get }
+```
+
+```c
+errSecIO
 ```
 
 

@@ -1,7 +1,8 @@
 # encodeAtomicOptionalRepresentation(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Destroys a value of `Self` and prepares an `AtomicOptionalRepresentation` storage type to be used for atomic operations on `Optional`.
 
@@ -19,6 +20,8 @@ Destroys a value of `Self` and prepares an `AtomicOptionalRepresentation` storag
 ```swift
 static func encodeAtomicOptionalRepresentation(_ value: consuming Self?) -> Self.RawValue.AtomicOptionalRepresentation
 ```
+
+Available when `Self` conforms to `AtomicOptionalRepresentable` and `RawValue` conforms to `AtomicOptionalRepresentable`.
 
 #### Return Value
 

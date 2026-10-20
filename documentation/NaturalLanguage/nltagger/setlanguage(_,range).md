@@ -1,7 +1,8 @@
 # setLanguage(_:range:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the language for a range of text within the tagger’s string.
 
@@ -28,9 +29,10 @@ func setLanguage(_ language: NLLanguage, range: Range<String.Index>)
 
 ## See Also
 
-- [var dominantLanguage: NLLanguage?](nltagger/dominantlanguage.md)
+### Determining the dominant language and orthography
+- [var dominantLanguage: NLLanguage?](./dominantlanguage.md)
   The dominant language of the string set for the linguistic tagger.
-- [func setOrthography(NSOrthography, range: Range<String.Index>)](nltagger/setorthography(_:range:).md)
+- [func setOrthography(NSOrthography, range: Range<String.Index>)](./setorthography%28_,range%29.md)
   Sets the orthography for the specified range.
 
 

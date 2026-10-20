@@ -1,7 +1,8 @@
 # validateContextMenuItem(withCommand:in:userInfo:validationHandler:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates whether a particular contextual menu item should be displayed.
 
@@ -14,9 +15,13 @@ Validates whether a particular contextual menu item should be displayed.
 optional func validateContextMenuItem(withCommand command: String, in page: SFSafariPage, userInfo: [String : Any]? = nil, validationHandler: @escaping (Bool, String?) -> Void)
 ```
 
+```objc
+- (void) validateContextMenuItemWithCommand:(NSString *) command inPage:(SFSafariPage *) page userInfo:(NSDictionary<NSString *,id> *) userInfo validationHandler:(void (^)(BOOL shouldHide, NSString *text)) validationHandler;
+```
+
 ## Mentions
 
-- [Adjusting settings for contextual menu items](adjusting-settings-for-contextual-menu-items.md)
+- [Adjusting settings for contextual menu items](../adjusting-settings-for-contextual-menu-items.md)
 
 #### Discussion
 
@@ -71,12 +76,15 @@ validationHandler(NO, nil)
 - `command`: The command, specified in the `Info.plist` file, for the context menu item being validated.
 - `page`: The page where the context menu item is going to be presented.
 - `userInfo`: Optional message content. If specified, the dictionary’s value objects conform to the W3C standard for safe passing of structured data, such as Boolean objects, numeric values, strings, and arrays.
-- `validationHandler`: A code block used to set the state of the contextual menu item. The block receives the following parameters: - **shouldHide**: A Boolean value that indicates whether the menu item should be hidden.
-- **text**: The text to use for the menu item. Pass `nil` to use the default text from the `Info.plist` file.
+- `validationHandler`: A code block used to set the state of the contextual menu item. The block receives the following parameters:
+
+  - **shouldHide**: A Boolean value that indicates whether the menu item should be hidden.
+  - **text**: The text to use for the menu item. Pass `nil` to use the default text from the `Info.plist` file.
 
 ## See Also
 
-- [func contextMenuItemSelected(withCommand: String, in: SFSafariPage, userInfo: [String : Any]?)](sfsafariextensionhandling/contextmenuitemselected(withcommand:in:userinfo:).md)
+### Responding to Context Menu Selections
+- [func contextMenuItemSelected(withCommand: String, in: SFSafariPage, userInfo: [String : Any]?)](./contextmenuitemselected%28withcommand,in,userinfo%29.md)
   A method the system calls when a user selects one of the app extension’s context menu items.
 
 

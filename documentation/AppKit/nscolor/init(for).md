@@ -1,17 +1,24 @@
 # init(for:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the color object specified by the given control tint.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 11.0
+
+> **Deprecated**: NSControlTint does not describe the full range of available control accent colors. Use +[NSColor controlAccentColor] instead.
 
 ## Declaration
 
 ```swift
 init(for controlTint: NSControlTint)
+```
+
+```objc
++ (NSColor *) colorForControlTint:(NSControlTint) controlTint;
 ```
 
 #### Return Value
@@ -24,9 +31,11 @@ The `NSColor` object.
 
 ## See Also
 
-- [class var currentControlTint: NSControlTint](nscolor/currentcontroltint.md)
+### Related Documentation
+- [class var currentControlTint: NSControlTint](./currentcontroltint.md)
   The current system control tint color.
-- [enum NSControlTint](nscontroltint.md)
+### Creating a system tint color
+- [enum NSControlTint](../nscontroltint.md)
   Constants for specifying a cell’s tint color.
 
 

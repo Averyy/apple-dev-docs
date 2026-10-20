@@ -1,18 +1,19 @@
 # CFRunLoopTimerContext
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains program-defined data and callbacks with which you can configure a CFRunLoopTimer’s behavior.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,27 +21,31 @@ A structure that contains program-defined data and callbacks with which you can 
 struct CFRunLoopTimerContext
 ```
 
+```c
+typedef struct { ... } CFRunLoopTimerContext;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cfrunlooptimercontext/init.md)
-- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!, release: ((UnsafeRawPointer?) -> Void)!, copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!)](cfrunlooptimercontext/init(version:info:retain:release:copydescription:).md)
+- [init()](./cfrunlooptimercontext/init%28%29.md)
+- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!, release: ((UnsafeRawPointer?) -> Void)!, copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!)](./cfrunlooptimercontext/init%28version,info,retain,release,copydescription%29.md)
 ### Instance Properties
-- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](cfrunlooptimercontext/copydescription.md)
+- [var copyDescription: ((UnsafeRawPointer?) -> Unmanaged<CFString>?)!](./cfrunlooptimercontext/copydescription.md)
   A copy description callback for your program-defined `info` pointer. Can be `NULL`.
-- [var info: UnsafeMutableRawPointer!](cfrunlooptimercontext/info.md)
+- [var info: UnsafeMutableRawPointer!](./cfrunlooptimercontext/info.md)
   An arbitrary pointer to program-defined data, which can be associated with the run loop timer at creation time. This pointer is passed to all the callbacks defined in the context.
-- [var release: ((UnsafeRawPointer?) -> Void)!](cfrunlooptimercontext/release.md)
+- [var release: ((UnsafeRawPointer?) -> Void)!](./cfrunlooptimercontext/release.md)
   A release callback for your program-defined `info` pointer. Can be `NULL`.
-- [var retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!](cfrunlooptimercontext/retain.md)
+- [var retain: ((UnsafeRawPointer?) -> UnsafeRawPointer?)!](./cfrunlooptimercontext/retain.md)
   A retain callback for your program-defined `info` pointer. Can be `NULL`.
-- [var version: CFIndex](cfrunlooptimercontext/version.md)
+- [var version: CFIndex](./cfrunlooptimercontext/version.md)
   Version number of the structure. Must be 0.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

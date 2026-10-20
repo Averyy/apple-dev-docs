@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Data_Custom_Value3
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Data_Custom_Value3 = 0x0546
 ```
 

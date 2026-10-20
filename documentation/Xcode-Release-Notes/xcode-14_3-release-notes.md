@@ -1,6 +1,7 @@
 # Xcode 14.3 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -17,20 +18,22 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 ###### Resolved Issues
 
 - Fixed: Crash logs from App Extensions and extension-based Watch apps weren’t being delivered to the Xcode Organizer. This issue is resolved in iOS 16.4, macOS 13.3, watchOS 9.4 and tvOS 16.4. (90882288)
-- Fixed: You can now use Xcode’s documentation viewer to view Xcode documentation or view it on the web at [`https://developer.apple.com/documentation/Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/Xcode). (102522035)
+- Fixed: You can now use Xcode’s documentation viewer to view Xcode documentation or view it on the web at [https://developer.apple.com/documentation/Xcode](../Xcode/Xcode.md). (102522035)
 
 ###### Deprecations
 
-- Xcode isn’t supported under Rosetta.  See Developer Technote [`“Resolving architecture build errors on Apple silicon“`](https://developer.apple.comhttps://developer.apple.com/documentation/technotes/tn3117-resolving-build-errors-for-apple-silicon) for more information. (92772361)
+- Xcode isn’t supported under Rosetta.  See Developer Technote [“Resolving architecture build errors on Apple silicon“](../Technotes/tn3117-resolving-build-errors-for-apple-silicon.md) for more information. (92772361)
 
 ##### Apple Clang Compiler
 
 ###### New Features
 
 - Clang and the build system support a new mode for building module dependencies called explicit modules which improves build performance, reliability, and correctness. The new mode is opt-in, and can be enabled by setting `_EXPERIMENTAL_CLANG_EXPLICIT_MODULES` as a user-defined build setting in C and Objective-C projects which build with modules enabled. (104438594)
-- The following C++23 features have been implemented: - New support for multidimensional subscript operator. (P2128R6)
-- Relaxed restrictions on the presence of non-literal variables (and labels and gotos) in constexpr functions (P2242R3).
-- Introduce auto(x) for decay-copy in the language (P0849R8). (104887755)
+- The following C++23 features have been implemented:
+
+  - New support for multidimensional subscript operator. (P2128R6)
+  - Relaxed restrictions on the presence of non-literal variables (and labels and gotos) in constexpr functions (P2242R3).
+  - Introduce auto(x) for decay-copy in the language (P0849R8). (104887755)
 - The `-ffp-model=strict` is fully supported for the ARM architecture. The generated code adheres to the IEEE-754 standard. Specifically, floating point exceptions and rounding modes are handled according to the standard. `#pragma STDC FENV ACCESS` is supported.  By default, `-ffp-contract=ON` is set. This option enables shorter and faster floating-point code by fusing floating point operations like multiplies and adds, but it may impact the accuracy of numerically sensitive applications. (105573336)
 
 ###### Resolved Issues
@@ -51,33 +54,41 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
 ###### Known Issues
 
-- Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (103716225) **Workaround:** Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
+- Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (103716225)
+
+  **Workaround:** Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
 - When a pre-build scheme action (such as compiling a package plugin) encounters an error, the status message at the top of Xcode’s workspace window sometimes doesn’t update.  This leaves the previous status showing, possibly causing confusion if the previous status was “Build Succeeded.” (104306342)
-- Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (104683595) **Workaround:** Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
+- Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (104683595)
+
+  **Workaround:** Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
 
 ##### C++ Standard Library
 
 ###### New Features
 
-- The following new features have been implemented: - P0896R4 - The One Ranges Proposal
-- P1004R2 - Making `std::vector` constexpr
-- P0627R6 - Function to mark unreachable code
-- P1165R1 - Make stateful allocator propagation more consistent for `operator+(basic_string)`
-- P0674R1 - Support arrays in `make_shared` and `allocate_shared`
-- P0980R1 - Making `std::string` constexpr
-- LWG3659 - Consider `ATOMIC_FLAG_INIT` undeprecation
-- P1423R3 - `char8_t` backward compatibility remediation
-- `std::pop_heap` now uses an algorithm known as “bottom-up heapsort” or “heapsort with bounce” to reduce the number of comparisons, and rearranges elements using move-assignment instead of `std::swap`.
-- `std::boyer_moore_searcher` and `std::boyer_moore_horspool_searcher` have been implemented. (104702784)
+- The following new features have been implemented:
+
+  - P0896R4 - The One Ranges Proposal
+  - P1004R2 - Making `std::vector` constexpr
+  - P0627R6 - Function to mark unreachable code
+  - P1165R1 - Make stateful allocator propagation more consistent for `operator+(basic_string)`
+  - P0674R1 - Support arrays in `make_shared` and `allocate_shared`
+  - P0980R1 - Making `std::string` constexpr
+  - LWG3659 - Consider `ATOMIC_FLAG_INIT` undeprecation
+  - P1423R3 - `char8_t` backward compatibility remediation
+  - `std::pop_heap` now uses an algorithm known as “bottom-up heapsort” or “heapsort with bounce” to reduce the number of comparisons, and rearranges elements using move-assignment instead of `std::swap`.
+  - `std::boyer_moore_searcher` and `std::boyer_moore_horspool_searcher` have been implemented. (104702784)
 
 ###### Deprecations
 
-- The following items have been deprecated: - The `<experimental/filesystem>` header has been removed. Instead, use the `<filesystem>` header. The associated macro `_LIBCPP_DEPRECATED_EXPERIMENTAL_FILESYSTEM` has been removed too.
-- The C++14 function `std::quoted(const char*)` is no longer supported in C++03 or C++11 modes.
-- `std::function` has been removed in C++03. If you are using it, please remove usages or upgrade to C++11 or later.
-- `std::unary_function` and `std::binary_function` are no longer available in C++17 and C++20. They can be re-enabled by defining `_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION`. They are also marked as `[[deprecated]]` in C++11 and later. To disable deprecation warnings you have to define `_LIBCPP_DISABLE_DEPRECATION_WARNINGS`. Note that this disables all deprecation warnings.
-- The contents of `<codecvt>`, `std::wstring_convert` and `std::wbuffer_convert` have been marked as deprecated. To disable deprecation warnings you have to define `_LIBCPP_DISABLE_DEPRECATION_WARNINGS`. Note that this disables all deprecation warnings.
-- The integer distributions `std::binomial_distribution`, `std::discrete_distribution`, `std::geometric_distribution`, `std::negative_binomial_distribution`, `std::poisson_distribution`, and `std::uniform_int_distribution` now conform to the Standard by rejecting template parameter types other than `short`, `int`, `long`, `long long`, and the unsigned versions thereof. As an extension, `int8_t`, `__int128_t` and their unsigned versions are supported too. In particular, instantiating these distributions with non-integer types like `bool` and `char` won’t compile anymore. (105097623)
+- The following items have been deprecated:
+
+  - The `<experimental/filesystem>` header has been removed. Instead, use the `<filesystem>` header. The associated macro `_LIBCPP_DEPRECATED_EXPERIMENTAL_FILESYSTEM` has been removed too.
+  - The C++14 function `std::quoted(const char*)` is no longer supported in C++03 or C++11 modes.
+  - `std::function` has been removed in C++03. If you are using it, please remove usages or upgrade to C++11 or later.
+  - `std::unary_function` and `std::binary_function` are no longer available in C++17 and C++20. They can be re-enabled by defining `_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION`. They are also marked as `[[deprecated]]` in C++11 and later. To disable deprecation warnings you have to define `_LIBCPP_DISABLE_DEPRECATION_WARNINGS`. Note that this disables all deprecation warnings.
+  - The contents of `<codecvt>`, `std::wstring_convert` and `std::wbuffer_convert` have been marked as deprecated. To disable deprecation warnings you have to define `_LIBCPP_DISABLE_DEPRECATION_WARNINGS`. Note that this disables all deprecation warnings.
+  - The integer distributions `std::binomial_distribution`, `std::discrete_distribution`, `std::geometric_distribution`, `std::negative_binomial_distribution`, `std::poisson_distribution`, and `std::uniform_int_distribution` now conform to the Standard by rejecting template parameter types other than `short`, `int`, `long`, `long long`, and the unsigned versions thereof. As an extension, `int8_t`, `__int128_t` and their unsigned versions are supported too. In particular, instantiating these distributions with non-integer types like `bool` and `char` won’t compile anymore. (105097623)
 
 ##### Debugging
 
@@ -92,7 +103,7 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
 - The documentation toolchain for Objective-C has migrated to the open-source Clang extract-api tool. (101761719)
 
-##### Driverkit
+##### DriverKit
 
 ###### New Features
 
@@ -103,12 +114,16 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 ###### New Features
 
 - When attempting to launch an application using Instruments on a locked target device, Instruments now prompts the user and waits for the unlock to happen instead of presenting an error. (41464216)
-- `xctrace export` now supports requesting binary image load information for processes in a trace file. Each image includes a path, UUID, name, load address and architecture. (76676504)
+- `xctrace export` now supports requesting binary image load information for processes in a trace file.
+
+  Each image includes a path, UUID, name, load address and architecture. (76676504)
 - Stores Inspector located in the Instruments Inspector now allows for copying example `xctrace export` command after invoking the shortcut menu on a listed store. (89078433)
 - `xctrace export` now includes parsable description of backtraces recorded in an Instruments trace. Each frame inside the backtrace includes a VM address and a symbol name (if present). (95850764)
-- The “File → Symbols” UI has been updated to make symbolication workflows more streamlined: - Better display/filtering of process and image lists
-- More information about each loaded image, including UUIS, version, load address and load time.
-- Easier resymbolication with an ‘Add Symbols’ button, allowing selection of multiple dSYMs at once. (97920704)
+- The “File → Symbols” UI has been updated to make symbolication workflows more streamlined:
+
+  - Better display/filtering of process and image lists
+  - More information about each loaded image, including UUIS, version, load address and load time.
+  - Easier resymbolication with an ‘Add Symbols’ button, allowing selection of multiple dSYMs at once. (97920704)
 - Heaviest Stack Trace UI in the Extended Detail now allows for copying mangled names of symbols using shortcut menu. (98017107)
 - Graph and Detail elements specified in the Instruments Package can now be disabled based on the value of a trace parameter. (101357705)
 - The Heaviest Stack Trace UI has a new contextual menu for showing frames as a load address and binary offset. (102116922)
@@ -175,7 +190,9 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
 ###### Known Issues
 
-- Repeated Build & Run targeting iOS 16.1 and later simulator runtimes may sometimes result in a hung launch. (101990080) **Workaround:** Reboot the simulator device and reattempt the launch.
+- Repeated Build & Run targeting iOS 16.1 and later simulator runtimes may sometimes result in a hung launch. (101990080)
+
+  **Workaround:** Reboot the simulator device and reattempt the launch.
 
 ##### Source Control
 
@@ -187,7 +204,9 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
 ###### Known Issues
 
-- The branch history view may display an incomplete branch history in rare cases. (96024292) **Workaround:** Select a different branch, then, once again, select the desired branch.
+- The branch history view may display an incomplete branch history in rare cases. (96024292)
+
+  **Workaround:** Select a different branch, then, once again, select the desired branch.
 
 ##### Source Editor
 
@@ -195,81 +214,119 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
 - Improved code completion ranking for Swift. (98687334)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- The [`StoreKit Test`](https://developer.apple.comhttps://developer.apple.com/documentation/storekittest) framework now supports testing SKAdNetwork 4.0. (91782868)
+- The [StoreKit Test](../StoreKitTest/StoreKitTest.md) framework now supports testing SKAdNetwork 4.0. (91782868)
 
 ##### Swift
 
 ###### New Features
 
-- The `@backDeployed(before:)` attribute may now be used to extend the availability of a function to OS releases prior to the introduction of that function as ABI. For example, suppose that `struct Temperature` was introduced in a macOS SDK framework in macOS 12. Later in macOS 13 the framework authors decided to add a `degreesFahrenheit` property as a convenience: ```swift
-@available(macOS 12, *)
-public struct Temperature {
-  public var degreesCelsius: Double
-  
-  // ...
-}
+- The `@backDeployed(before:)` attribute may now be used to extend the availability of a function to OS releases prior to the introduction of that function as ABI.
 
-extension Temperature {
+  For example, suppose that `struct Temperature` was introduced in a macOS SDK framework in macOS 12. Later in macOS 13 the framework authors decided to add a `degreesFahrenheit` property as a convenience:
+
+  ```swift
   @available(macOS 12, *)
-  @backDeployed(before: macOS 13)
-  public var degreesFahrenheit: Double {
-    return (degreesCelsius * 9 / 5) + 32
-  }
-}
-``` Adding the `@backDeployed` attribute to `degreesFahrenheit` enables the framework author to make this new declaration available to apps with a minimum deployment target of macOS 12, even though the ABI entry point for `degreesFahrenheit` is only present in macOS 13 and up. When a function with `@backDeployed` is called, the compiler wraps the invocation of the function in a thunk. The thunk checks whether the library entry point for the declaration is available at runtime, and invokes it if it is. Otherwise, a copy of the function that was emitted into the client is called instead. [`SE-0376`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0376-function-back-deployment.md) (105198323)
-- Сollection downcasts in cast patterns are now supported. For example: ```swift
-func collectionDowncast(_ arr: [Any]) {
-  switch arr {
-  case let ints as [Int]:
-    // ...
-  case is [Bool]:
+  public struct Temperature {
+    public var degreesCelsius: Double
+    
     // ...
   }
-}
-``` (105198506)
-- The API of `UnsafeMutableRawPointer`, `UnsafeMutableBufferPointer`, `UnsafeMutableRawBufferPointer` were improved, adding previously missing initialization (and deinitialization) methods, including more performant initialization from `Collection` types. For `UnsafeMutablePointer<T>` and `UnsafeMutableBufferPointer<T>`, method names containing the word “assign” were renamed to use the word “update”, and many more were added. Every multi-element initialization method of `UnsafeMutablePointer` and `UnsafeMutableBufferPointer` now has a corresponding “update” method. Slices of `UnsafeBufferPointer`, `UnsafeRawBufferPointer`, `UnsafeMutableBufferPointer` and `UnsafeMutableRawBufferPointer` now share the collection-like API of their base type. For example, given an initialized `b: UnsafeMutableBufferPointer<Int>`, the following lines are synonymous: ```swift
-b.update(repeating: 0)
-b[b.startIndex..<b.endIndex].update(repeating: 0)
-``` [`SE-0370`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0370-pointer-family-initialization-improvements.md) (105198642)
-- Implicit `self` is now permitted for `weak self` captures, after `self` is unwrapped. For example, the usage of implicit `self` below is permitted: ```swift
-class ViewController {
-  let button: Button
 
-  func setup() {
-      button.tapHandler = { [weak self] in
-          guard let self else { return }
-          dismiss() // refers to `self.dismiss()`
-      }
-  }
-
-  func dismiss() { ... }
-}
-``` In Swift 5 language modes, implicit `self` is permitted for `weak self` captures in *non-escaping* closures even before `self` is unwrapped. For example, this code compiles successfully in Swift 5 language mode: ```swift
-class ExampleClass {
-  func makeArray() -> [String] {
-    // `Array.map` takes a non-escaping closure:
-    ["foo", "bar", "baaz"].map { [weak self] string in
-      double(string) // implicitly refers to `self!.double(string)`
+  extension Temperature {
+    @available(macOS 12, *)
+    @backDeployed(before: macOS 13)
+    public var degreesFahrenheit: Double {
+      return (degreesCelsius * 9 / 5) + 32
     }
-  } 
-
-  func double(_ string: String) -> String {
-    string + string
   }
-}
-``` In Swift 6, the above code will no longer compile. `weak self` captures in non-escaping closures now have the same behavior as captures in escaping closures (as described in SE-0365). Code relying on the previous behavior will need to be updated to either unwrap `self` (e.g. by adding a `guard let self else return` statement), or to use a different capture method (e.g. using `[self]` or `[unowned self]` instead of `[weak self]`). [`SE-0365`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0365-implicit-self-weak-capture.md) (105198849)
-- The compiler flag `-enable-upcoming-feature X` can now be used to enable a specific feature `X` that has been accepted by the evolution process, but whose introduction into the language is waiting for the next major version (e.g., version 6). The `X` is specified by any proposal that falls into this category: - `ConciseMagicFile` enables the new `#file` semantics in [`SE-0274`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0274-magic-file.md).
-- `ForwardTrailingClosures` disables the “backward” scanning behavior of [`SE-0286`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0286-forward-scan-trailing-closures.md).
-- `BareSlashRegexLiterals` enables the regex literal syntax of [`SE-0354`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0354-regex-literals.md). Features can be detected in source code with `#if hasFeature(X)`. [`SE-0362`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md) (105198978)
+  ```
+
+  Adding the `@backDeployed` attribute to `degreesFahrenheit` enables the framework author to make this new declaration available to apps with a minimum deployment target of macOS 12, even though the ABI entry point for `degreesFahrenheit` is only present in macOS 13 and up.
+
+  When a function with `@backDeployed` is called, the compiler wraps the invocation of the function in a thunk. The thunk checks whether the library entry point for the declaration is available at runtime, and invokes it if it is. Otherwise, a copy of the function that was emitted into the client is called instead. [SE-0376](https://github.com/apple/swift-evolution/blob/main/proposals/0376-function-back-deployment.md) (105198323)
+- Сollection downcasts in cast patterns are now supported. For example:
+
+  ```swift
+  func collectionDowncast(_ arr: [Any]) {
+    switch arr {
+    case let ints as [Int]:
+      // ...
+    case is [Bool]:
+      // ...
+    }
+  }
+  ```
+
+  (105198506)
+- The API of `UnsafeMutableRawPointer`, `UnsafeMutableBufferPointer`, `UnsafeMutableRawBufferPointer` were improved, adding previously missing initialization (and deinitialization) methods, including more performant initialization from `Collection` types.
+
+  For `UnsafeMutablePointer<T>` and `UnsafeMutableBufferPointer<T>`, method names containing the word “assign” were renamed to use the word “update”, and many more were added. Every multi-element initialization method of `UnsafeMutablePointer` and `UnsafeMutableBufferPointer` now has a corresponding “update” method.
+
+  Slices of `UnsafeBufferPointer`, `UnsafeRawBufferPointer`, `UnsafeMutableBufferPointer` and `UnsafeMutableRawBufferPointer` now share the collection-like API of their base type.
+
+  For example, given an initialized `b: UnsafeMutableBufferPointer<Int>`, the following lines are synonymous:
+
+  ```swift
+  b.update(repeating: 0)
+  b[b.startIndex..<b.endIndex].update(repeating: 0)
+  ```
+
+  [SE-0370](https://github.com/apple/swift-evolution/blob/main/proposals/0370-pointer-family-initialization-improvements.md) (105198642)
+- Implicit `self` is now permitted for `weak self` captures, after `self` is unwrapped.
+
+  For example, the usage of implicit `self` below is permitted:
+
+  ```swift
+  class ViewController {
+    let button: Button
+
+    func setup() {
+        button.tapHandler = { [weak self] in
+            guard let self else { return }
+            dismiss() // refers to `self.dismiss()`
+        }
+    }
+
+    func dismiss() { ... }
+  }
+  ```
+
+  In Swift 5 language modes, implicit `self` is permitted for `weak self` captures in *non-escaping* closures even before `self` is unwrapped. For example, this code compiles successfully in Swift 5 language mode:
+
+  ```swift
+  class ExampleClass {
+    func makeArray() -> [String] {
+      // `Array.map` takes a non-escaping closure:
+      ["foo", "bar", "baaz"].map { [weak self] string in
+        double(string) // implicitly refers to `self!.double(string)`
+      }
+    } 
+
+    func double(_ string: String) -> String {
+      string + string
+    }
+  }
+  ```
+
+  In Swift 6, the above code will no longer compile. `weak self` captures in non-escaping closures now have the same behavior as captures in escaping closures (as described in SE-0365). Code relying on the previous behavior will need to be updated to either unwrap `self` (e.g. by adding a `guard let self else return` statement), or to use a different capture method (e.g. using `[self]` or `[unowned self]` instead of `[weak self]`). [SE-0365](https://github.com/apple/swift-evolution/blob/main/proposals/0365-implicit-self-weak-capture.md) (105198849)
+- The compiler flag `-enable-upcoming-feature X` can now be used to enable a specific feature `X` that has been accepted by the evolution process, but whose introduction into the language is waiting for the next major version (e.g., version 6). The `X` is specified by any proposal that falls into this category:
+
+  - `ConciseMagicFile` enables the new `#file` semantics in [SE-0274](https://github.com/apple/swift-evolution/blob/main/proposals/0274-magic-file.md).
+  - `ForwardTrailingClosures` disables the “backward” scanning behavior of [SE-0286](https://github.com/apple/swift-evolution/blob/main/proposals/0286-forward-scan-trailing-closures.md).
+  - `BareSlashRegexLiterals` enables the regex literal syntax of [SE-0354](https://github.com/apple/swift-evolution/blob/main/proposals/0354-regex-literals.md).
+
+  Features can be detected in source code with `#if hasFeature(X)`. [SE-0362](https://github.com/apple/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md) (105198978)
 
 ###### Resolved Issues
 
 - Fixed an occasional crash when suspending at an `await` in apps using Swift concurrency running on macOS 12.3 and earlier, on iOS 15.4 and earlier, watchOS 8.5 and earlier, and tvOS 15.4 and earlier. (101299662)
-- Fixed: The Swift compiler may fail to build modules for XCFramework dependencies that were built with `BUILD_LIBRARY_FOR_DISTRIBUTION` enabled. These failures will occur when the XCFramework contains public Swift declarations that have `@MainActor` constraints implicitly added, such as subclasses of `UIView` or `NSView`. The Swift compiler expects those declarations to be marked `@available` for an operating system version where Swift concurrency is available. (105610970)
+- Fixed: The Swift compiler may fail to build modules for XCFramework dependencies that were built with `BUILD_LIBRARY_FOR_DISTRIBUTION` enabled. These failures will occur when the XCFramework contains public Swift declarations that have `@MainActor` constraints implicitly added, such as subclasses of `UIView` or `NSView`. The Swift compiler expects those declarations to be marked `@available` for an operating system version where Swift concurrency is available.
+
+  (105610970)
 
 ##### Swift Packages
 
@@ -277,13 +334,13 @@ class ExampleClass {
 
 - A proper diagnostic is shown instead of an ambiguous error when a tool needed by a plugin isn’t supported on the target platform. (91000836)
 - Packages with duplicate product names are now allowed. Note this only applies to the command-line builds. (94744134)
-- Implemented [`SE-0378`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0378-package-registry-auth.md), which adds support for token authentication for package registry requests. (99716571)
+- Implemented [SE-0378](https://github.com/apple/swift-evolution/blob/main/proposals/0378-package-registry-auth.md), which adds support for token authentication for package registry requests. (99716571)
 - Binary targets can now directly be vended as products without requiring the declaration of an additional source target. (101096803)
-- SwiftPM now supports piecemeal adoption of upcoming Swift language improvements per [`SE-0362`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md). (104718540)
+- SwiftPM now supports piecemeal adoption of upcoming Swift language improvements per [SE-0362](https://github.com/apple/swift-evolution/blob/main/proposals/0362-piecemeal-future-features.md). (104718540)
 
 ###### Resolved Issues
 
-- Fixed: Conditional target dependencies ([`SE-0273`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0273-swiftpm-conditional-target-dependencies.md)) in packages are now correctly applied to binary targets and leads to top-level targets being filtered out from builds of root packages. (85762201)
+- Fixed: Conditional target dependencies ([SE-0273](https://github.com/apple/swift-evolution/blob/main/proposals/0273-swiftpm-conditional-target-dependencies.md)) in packages are now correctly applied to binary targets and leads to top-level targets being filtered out from builds of root packages. (85762201)
 - Fixed: Removed implicit availability of `Foundation` from package manifests using tools-version 5.8 or later. An explicit import of Foundation is now required if APIs from Foundation are used in a manifest. (92879696)
 - Fixed: When a pre-build command depends on tools that aren’t prebuilt binaries, it showed an ambiguous error message. The fix was added to show proper diagnostics. (94712361)
 - Fixed: A proper diagnostic is shown instead of an ambiguous error when a plugin has a dependency on non-supported products or targets. (95117424)
@@ -296,7 +353,7 @@ class ExampleClass {
 
 - When a package build tool plugin generates a build command for a particular input file, that file is considered to have been handled by the plugin and isn’t passed to the build system. If the input file is a source code file (such as a Swift or Objective-C source file), it won’t be compiled into the product being built. (102789077)
 
-##### Swiftui Previews
+##### SwiftUI Previews
 
 ###### New Features
 
@@ -337,12 +394,18 @@ class ExampleClass {
 ###### Known Issues
 
 - When attempting to launch an application in a watchOS UI test under Xcode Cloud, the test may fail with an error message that the application `has not loaded accessibility`. (90334748)
-- Adding an auto-created test plan as part of a Run, Profile, Analyze, or Archive action leads to a crash when the project file is re-opened. (90378346) **Workaround:** Delete the scheme that was modified within the xcshareddata directory.
-- Swift files aren’t displaying code coverage data after running tests in the coverage report. (104935416)
-- Manually adding, then removing a test plan, to a project that has an auto-created test plan causes the Test Navigator to display “No Test Plan” even though an auto-created test plan is actually backing the project. (105433014) **Workaround:** Close and re-open the project.
-- Sometimes adding a test plan to a scheme results in the test plan not being listed within the scheme or test navigator on a subsequent project opening. (105455341) **Workaround:** Open and close the Scheme Editor to cause Xcode to persist changes to the Scheme’s contents to the .xcscheme file backing it.
+- Adding an auto-created test plan as part of a Run, Profile, Analyze, or Archive action leads to a crash when the project file is re-opened. (90378346)
 
-##### Ui Testing
+  **Workaround:** Delete the scheme that was modified within the xcshareddata directory.
+- Swift files aren’t displaying code coverage data after running tests in the coverage report. (104935416)
+- Manually adding, then removing a test plan, to a project that has an auto-created test plan causes the Test Navigator to display “No Test Plan” even though an auto-created test plan is actually backing the project. (105433014)
+
+  **Workaround:** Close and re-open the project.
+- Sometimes adding a test plan to a scheme results in the test plan not being listed within the scheme or test navigator on a subsequent project opening. (105455341)
+
+  **Workaround:** Open and close the Scheme Editor to cause Xcode to persist changes to the Scheme’s contents to the .xcscheme file backing it.
+
+##### UI Testing
 
 ###### New Features
 
@@ -363,7 +426,9 @@ class ExampleClass {
 
 ###### Known Issues
 
-- Connecting Slack may not complete successfully when using Xcode’s UI to connect. (106153362) **Workaround:** Connect Slack from Xcode Cloud’s web UI.
+- Connecting Slack may not complete successfully when using Xcode’s UI to connect. (106153362)
+
+  **Workaround:** Connect Slack from Xcode Cloud’s web UI.
 
 ##### Xcode Previews
 
@@ -373,15 +438,16 @@ class ExampleClass {
 
 ## See Also
 
-- [Xcode 14.3.1 Release Notes](xcode-14_3_1-release-notes.md)
+### Xcode 14
+- [Xcode 14.3.1 Release Notes](./xcode-14_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.2 Release Notes](xcode-14_2-release-notes.md)
+- [Xcode 14.2 Release Notes](./xcode-14_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.1 Release Notes](xcode-14_1-release-notes.md)
+- [Xcode 14.1 Release Notes](./xcode-14_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.0.1 Release Notes](xcode-14_0_1-release-notes.md)
+- [Xcode 14.0.1 Release Notes](./xcode-14_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14 Release Notes](xcode-14-release-notes.md)
+- [Xcode 14 Release Notes](./xcode-14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

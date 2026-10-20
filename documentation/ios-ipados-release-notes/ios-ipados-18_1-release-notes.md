@@ -1,12 +1,13 @@
 # iOS & iPadOS 18.1 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 18.1 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.1. The SDK comes bundled with Xcode 16.1. For information on the compatibility requirements for Xcode 16.1, see [`Xcode 16.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_1-release-notes).
+The iOS & iPadOS 18.1 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.1. The SDK comes bundled with Xcode 16.1. For information on the compatibility requirements for Xcode 16.1, see [Xcode 16.1 Release Notes](../Xcode-Release-Notes/xcode-16_1-release-notes.md).
 
 ##### General
 
@@ -26,7 +27,7 @@ The iOS & iPadOS 18.1 SDK provides support to develop apps for iPhone and iPad r
 
 - When using Apple Intelligence, the new Siri UI might fail to render full screen on large CarPlay displays.  (131586542)
 
-##### Avfoundation
+##### AVFoundation
 
 ###### Resolved Issues
 
@@ -46,7 +47,7 @@ The iOS & iPadOS 18.1 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: Creating local files in the Files app fails in the visionOS 2 and iOS 18 simulators if the host is not upgraded to macOS Sequoia Beta.  (132561244)
 
-##### Healthkit
+##### HealthKit
 
 ###### Resolved Issues
 
@@ -82,7 +83,7 @@ The iOS & iPadOS 18.1 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: Icons in Spotlight might not match icons on the Home Screen.  (134088480)
 
-##### Storekit
+##### StoreKit
 
 ###### Resolved Issues
 
@@ -95,15 +96,19 @@ The iOS & iPadOS 18.1 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: Any project that utilizes Swift Charts fails to build when targeting iOS, macOS, or visionOS.  (135905498)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
 - Fixed: Scene restoration launches the incorrect scene.  (132497400)
 - Fixed: In apps compiled against SDKs prior to iOS 18.0 and visionOS 2.0, explicit arrow edges are not respected when the app is run on iOS 18.1 or visionOS 2.1. Apps compiled against any macOS SDK will still have the arrow edge respected.  (133295608)
-- On iOS 18.0, there is a known issue where passing `nil` to the `.preferredColorScheme` modifier, after the preferred color scheme is set by a different view in the hierarchy, does not trigger the system color scheme to change. Starting in iOS 18.1, when `nil` is passed to the `.preferredColorScheme` modifier, the view indicates no preference for the color scheme and thus uses the system color scheme. ```None
- .preferredColorScheme(isDarkMode ? .dark : nil)
-``` The view with the above modifier applied prefers dark mode when `isDarkMode` is set to `true` but otherwise defers to the color scheme as determined by the system.  (133689390) (FB14768320)
+- On iOS 18.0, there is a known issue where passing `nil` to the `.preferredColorScheme` modifier, after the preferred color scheme is set by a different view in the hierarchy, does not trigger the system color scheme to change. Starting in iOS 18.1, when `nil` is passed to the `.preferredColorScheme` modifier, the view indicates no preference for the color scheme and thus uses the system color scheme.
+
+  ```
+   .preferredColorScheme(isDarkMode ? .dark : nil)
+  ```
+
+  The view with the above modifier applied prefers dark mode when `isDarkMode` is set to `true` but otherwise defers to the color scheme as determined by the system.  (133689390) (FB14768320)
 - Fixed: On iOS, tvOS, and visionOS, `View.navigationSplitViewColumnWidth` (all overloads) does not produce an effect if applied after the `NavigationSplitView` is created.  (135434989)
 - Fixed: Using `if #available` in @WidgetBundleBuilder and @SceneBuilder crashes on prior OS versions due to “unknown OS version.”  (136098106)
 
@@ -113,7 +118,7 @@ The iOS & iPadOS 18.1 SDK provides support to develop apps for iPhone and iPad r
 
 - On some managed and supervised devices, the RCS messaging service might not be blocked as expected although the MDM restriction of `allowRCSMessaging` is installed successfully.  (137974410)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### New Features
 
@@ -125,17 +130,18 @@ The iOS & iPadOS 18.1 SDK provides support to develop apps for iPhone and iPad r
 
 ## See Also
 
-- [iOS & iPadOS 18.6 Release Notes](ios-ipados-18_6-release-notes.md)
+### iOS & iPadOS 18
+- [iOS & iPadOS 18.6 Release Notes](./ios-ipados-18_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.5 Release Notes](ios-ipados-18_5-release-notes.md)
+- [iOS & iPadOS 18.5 Release Notes](./ios-ipados-18_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.4 Release Notes](ios-ipados-18_4-release-notes.md)
+- [iOS & iPadOS 18.4 Release Notes](./ios-ipados-18_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.3 Release Notes](ios-ipados-18_3-release-notes.md)
+- [iOS & iPadOS 18.3 Release Notes](./ios-ipados-18_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.2 Release Notes](ios-ipados-18_2-release-notes.md)
+- [iOS & iPadOS 18.2 Release Notes](./ios-ipados-18_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18 Release Notes](ios-ipados-18-release-notes.md)
+- [iOS & iPadOS 18 Release Notes](./ios-ipados-18-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

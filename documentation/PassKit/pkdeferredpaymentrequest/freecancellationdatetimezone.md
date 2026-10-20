@@ -1,7 +1,8 @@
 # freeCancellationDateTimeZone
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone at the destination location of the payment.
 
@@ -18,17 +19,22 @@ The time zone at the destination location of the payment.
 var freeCancellationDateTimeZone: TimeZone? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSTimeZone * freeCancellationDateTimeZone;
+```
+
 #### Discussion
 
-For a hotel booking, for example, this refers to the local time zone of the hotel. On the payment sheet, this is the time zone the framework uses to format the cancellation date. If you set the `freeCancellationDateTimeZone` date, you need to set [`freeCancellationDate`](pkdeferredpaymentrequest/freecancellationdate.md) as well.
+For a hotel booking, for example, this refers to the local time zone of the hotel. On the payment sheet, this is the time zone the framework uses to format the cancellation date. If you set the `freeCancellationDateTimeZone` date, you need to set [`freeCancellationDate`](./freecancellationdate.md) as well.
 
 ## See Also
 
-- [var freeCancellationDate: Date?](pkdeferredpaymentrequest/freecancellationdate.md)
+### Describing a deferred payment
+- [var freeCancellationDate: Date?](./freecancellationdate.md)
   The date before which you must cancel a deferred payment without incurring any cancellation charges.
-- [var billingAgreement: String?](pkdeferredpaymentrequest/billingagreement.md)
+- [var billingAgreement: String?](./billingagreement.md)
   The localized billing agreement the framework displays to the user prior to payment authorization.
-- [var paymentDescription: String](pkdeferredpaymentrequest/paymentdescription.md)
+- [var paymentDescription: String](./paymentdescription.md)
   A description of the deferred payment.
 
 

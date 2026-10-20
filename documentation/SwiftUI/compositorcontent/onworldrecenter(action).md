@@ -1,7 +1,8 @@
 # onWorldRecenter(action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when recentering the view with the digital crown.
 
@@ -14,6 +15,13 @@ Adds an action to perform when recentering the view with the digital crown.
 ```swift
 nonisolated
 func onWorldRecenter(action: @escaping @MainActor () -> Void) -> some CompositorContent
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func onWorldRecenter(action: @escaping @MainActor (WorldRecenterPhase) -> Void) -> some CompositorContent
 ```
 
 #### Discussion

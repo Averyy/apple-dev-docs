@@ -1,7 +1,8 @@
 # init(key:data:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new extended attribute structure.
 
@@ -11,7 +12,7 @@ Creates a new extended attribute structure.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

@@ -6,36 +6,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.Dt
 
 # mlx.core.Dtype
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.Dtype.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.Dtype
-
- Table of contents 
-
-## Contents
-
-# mlx.core.Dtype
-
 **class Dtype**
-: An object to hold the type of a [array](mlx.core.array.html#mlx.core.array).
-See the [list of types](../data_types.html#data-types) for more details
+: An object to hold the type of a [array](mlx.core.array.md#mlx.core.array).
+See the [list of types](../data_types.md#data-types) for more details
 on available data types.
 
 __init__(**args*, ***kwargs*)
@@ -48,5 +21,3 @@ Attributes
 
 `size`
 Size of the type in bytes.
-
-** Contents

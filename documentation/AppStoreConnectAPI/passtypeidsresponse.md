@@ -1,7 +1,8 @@
 # PassTypeIdsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of Wallet pass type identifiers registered in your account.
 
@@ -10,7 +11,7 @@ A response containing a list of Wallet pass type identifiers registered in your 
 
 ## Declaration
 
-```swift
+```
 object PassTypeIdsResponse
 ```
 
@@ -23,17 +24,18 @@ object PassTypeIdsResponse
 
 ## See Also
 
-- [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
+### Object and data types
+- [object CertificatePassTypeIdLinkageResponse](./certificatepasstypeidlinkageresponse.md)
   A response body that contains the ID of a single related resource.
-- [object PassTypeId](passtypeid.md)
+- [object PassTypeId](./passtypeid.md)
   A pass type identifier used to create and manage Wallet passes such as boarding passes, coupons, or loyalty cards.
-- [object PassTypeIdCertificatesLinkagesResponse](passtypeidcertificateslinkagesresponse.md)
+- [object PassTypeIdCertificatesLinkagesResponse](./passtypeidcertificateslinkagesresponse.md)
   A response containing the resource identifiers of signing certificates associated with a pass type identifier.
-- [object PassTypeIdCreateRequest](passtypeidcreaterequest.md)
+- [object PassTypeIdCreateRequest](./passtypeidcreaterequest.md)
   The request body for registering a new pass type identifier for Wallet pass signing.
-- [object PassTypeIdResponse](passtypeidresponse.md)
+- [object PassTypeIdResponse](./passtypeidresponse.md)
   A response containing a single Wallet pass type identifier.
-- [object PassTypeIdUpdateRequest](passtypeidupdaterequest.md)
+- [object PassTypeIdUpdateRequest](./passtypeidupdaterequest.md)
   The request body you use to update a pass type id update request.
 
 

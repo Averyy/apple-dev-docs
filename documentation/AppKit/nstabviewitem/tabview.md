@@ -1,12 +1,13 @@
 # tabView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the parent tab view for the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Returns the parent tab view for the receiver.
 var tabView: NSTabView? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSTabView * tabView;
+```
+
 #### Discussion
 
 Note that this is the tab view itself, not the view displayed when a user clicks the tab.
 
-A tab view item normally learns about its parent tab view when it is inserted into the view’s array of items. The NSTabView methods [`addTabViewItem(_:)`](nstabview/addtabviewitem(_:).md) and [`insertTabViewItem(_:at:)`](nstabview/inserttabviewitem(_:at:).md) set the tab view for the added or inserted item.
+A tab view item normally learns about its parent tab view when it is inserted into the view’s array of items. The NSTabView methods [`addTabViewItem(_:)`](../nstabview/addtabviewitem%28_%29.md) and [`insertTabViewItem(_:at:)`](../nstabview/inserttabviewitem%28_,at%29.md) set the tab view for the added or inserted item.
 
 ## See Also
 
-- [var view: NSView?](nstabviewitem/view.md)
+### Related Documentation
+- [var view: NSView?](./view.md)
   Sets the view associated with the receiver to `view`.
 
 

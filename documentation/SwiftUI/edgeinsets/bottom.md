@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ var bottom: CGFloat
 
 ## See Also
 
-- [var top: CGFloat](edgeinsets/top.md)
-- [var leading: CGFloat](edgeinsets/leading.md)
-- [var trailing: CGFloat](edgeinsets/trailing.md)
+### Getting edge insets
+- [var top: CGFloat](./top.md)
+- [var leading: CGFloat](./leading.md)
+- [var trailing: CGFloat](./trailing.md)
 
 
 ---

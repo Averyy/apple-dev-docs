@@ -1,7 +1,8 @@
 # ABPersonView
 
 **Framework**: Address Book  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides a view for displaying and editing contacts.
 
@@ -14,47 +15,52 @@ An object that provides a view for displaying and editing contacts.
 class ABPersonView
 ```
 
+```objc
+@interface ABPersonView : NSView
+```
+
 #### Overview
 
-> **Note**:  You should not override the [`fieldEditor(_:for:)`](https://developer.apple.com/documentation/appkit/nswindow/fieldeditor(_:for:)) method of the window that contains this view.
+> **Note**:  You should not override the [`fieldEditor(_:for:)`](../AppKit/nswindow/fieldeditor%28_,for%29.md) method of the window that contains this view.
 
 ## Topics
 
 ### Working with Person Views
-- [var editing: Bool](abpersonview/editing.md)
+- [var editing: Bool](./abpersonview/editing.md)
   A Boolean value that indicates whether the person view is in editing mode.
-- [var person: ABPerson!](abpersonview/person.md)
+- [var person: ABPerson!](./abpersonview/person.md)
   The contact record being displayed.
-- [var shouldShowLinkedPeople: Bool](abpersonview/shouldshowlinkedpeople.md)
+- [var shouldShowLinkedPeople: Bool](./abpersonview/shouldshowlinkedpeople.md)
   Indicates whether the person view should display data from person records that are linked with the person record being displayed.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
+- [NSView](../AppKit/nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ABPeoplePickerView](abpeoplepickerview.md)
+### Pickers
+- [class ABPeoplePickerView](./abpeoplepickerview.md)
   An object you use to customize the behavior of people-picker views in an app’s user interface.
 
 

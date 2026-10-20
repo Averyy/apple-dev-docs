@@ -1,7 +1,8 @@
 # CPNowPlayingMoreButton
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A button for presenting more options to the user.
 
@@ -17,43 +18,48 @@ A button for presenting more options to the user.
 class CPNowPlayingMoreButton
 ```
 
+```objc
+@interface CPNowPlayingMoreButton : CPNowPlayingButton
+```
+
 #### Overview
 
-`CPNowPlayingMoreButton` is a concrete subclass of [`CPNowPlayingButton`](cpnowplayingbutton.md). Use this button to present a [`CPListTemplate`](cplisttemplate.md), [`CPAlertTemplate`](cpalerttemplate.md), or another contextual interface for the currently playing item. For example, if the item is a podcast, use the button’s handler to present a template that displays the episode’s show notes.
+`CPNowPlayingMoreButton` is a concrete subclass of [`CPNowPlayingButton`](./cpnowplayingbutton.md). Use this button to present a [`CPListTemplate`](./cplisttemplate.md), [`CPAlertTemplate`](./cpalerttemplate.md), or another contextual interface for the currently playing item. For example, if the item is a podcast, use the button’s handler to present a template that displays the episode’s show notes.
 
 ## Relationships
 
 ### Inherits From
-- [CPNowPlayingButton](cpnowplayingbutton.md)
+- [CPNowPlayingButton](./cpnowplayingbutton.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var nowPlayingButtons: [CPNowPlayingButton]](cpnowplayingtemplate/nowplayingbuttons.md)
+### Managing the Template’s Buttons
+- [var nowPlayingButtons: [CPNowPlayingButton]](./cpnowplayingtemplate/nowplayingbuttons.md)
   The Now Playing template’s playback control buttons.
-- [func updateNowPlayingButtons([CPNowPlayingButton])](cpnowplayingtemplate/updatenowplayingbuttons(_:).md)
+- [func updateNowPlayingButtons([CPNowPlayingButton])](./cpnowplayingtemplate/updatenowplayingbuttons%28_%29.md)
   Updates the playback control buttons the template displays.
-- [class CPNowPlayingButton](cpnowplayingbutton.md)
+- [class CPNowPlayingButton](./cpnowplayingbutton.md)
   The abstract base class that Now Playing template buttons use.
-- [class CPNowPlayingImageButton](cpnowplayingimagebutton.md)
+- [class CPNowPlayingImageButton](./cpnowplayingimagebutton.md)
   A button that displays an image.
-- [class CPNowPlayingAddToLibraryButton](cpnowplayingaddtolibrarybutton.md)
+- [class CPNowPlayingAddToLibraryButton](./cpnowplayingaddtolibrarybutton.md)
   A button for adding the current playing item to a collection.
-- [class CPNowPlayingPlaybackRateButton](cpnowplayingplaybackratebutton.md)
+- [class CPNowPlayingPlaybackRateButton](./cpnowplayingplaybackratebutton.md)
   A button for cycling through the available playback rates.
-- [class CPNowPlayingRepeatButton](cpnowplayingrepeatbutton.md)
+- [class CPNowPlayingRepeatButton](./cpnowplayingrepeatbutton.md)
   A button for cycling through the available repeat modes.
-- [class CPNowPlayingShuffleButton](cpnowplayingshufflebutton.md)
+- [class CPNowPlayingShuffleButton](./cpnowplayingshufflebutton.md)
   A button for cycling through the available shuffle modes.
 
 

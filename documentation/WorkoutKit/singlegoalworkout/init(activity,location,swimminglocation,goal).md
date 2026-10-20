@@ -1,7 +1,8 @@
 # init(activity:location:swimmingLocation:goal:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new workout with a single goal.
 
@@ -27,9 +28,10 @@ init(activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType = .
 
 ## See Also
 
-- [static func supportsActivity(HKWorkoutActivityType) -> Bool](singlegoalworkout/supportsactivity(_:).md)
+### Creating single goal workouts
+- [static func supportsActivity(HKWorkoutActivityType) -> Bool](./supportsactivity%28_%29.md)
   Returns a Boolean value that indicates whether the system supports the provided workout activity.
-- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](singlegoalworkout/supportsgoal(_:activity:location:).md)
+- [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](./supportsgoal%28_,activity,location%29.md)
   Returns a Boolean value that determines whether the system supports the provided goal.
 
 

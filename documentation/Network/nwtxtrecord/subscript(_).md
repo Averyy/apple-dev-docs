@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Network  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get and set values in a TXT record dictionary, by keys.
 
@@ -22,9 +23,10 @@ subscript(key: String) -> String? { get set }
 
 ## See Also
 
-- [func getEntry(for: String) -> NWTXTRecord.Entry?](nwtxtrecord/getentry(for:).md)
+### Examining TXT Records
+- [func getEntry(for: String) -> NWTXTRecord.Entry?](./getentry%28for%29.md)
   Accesses an entry in a TXT record dictionary.
-- [var dictionary: [String : String]](nwtxtrecord/dictionary.md)
+- [var dictionary: [String : String]](./dictionary.md)
   The TXT record as a dictionary of strings.
 
 

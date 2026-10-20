@@ -1,7 +1,8 @@
 # keyboardDismissMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The manner in which the system dismisses the keyboard when a drag begins in the scroll view.
 
@@ -9,7 +10,7 @@ The manner in which the system dismisses the keyboard when a drag begins in the 
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ The manner in which the system dismisses the keyboard when a drag begins in the 
 var keyboardDismissMode: UIScrollView.KeyboardDismissMode { get set }
 ```
 
+```objc
+@property (nonatomic) UIScrollViewKeyboardDismissMode keyboardDismissMode;
+```
+
 #### Discussion
 
-The default value is [`UIScrollView.KeyboardDismissMode.none`](uiscrollview/keyboarddismissmode-swift.enum/none.md). See [`UIScrollView.KeyboardDismissMode`](uiscrollview/keyboarddismissmode-swift.enum.md) for possible values.
+The default value is [`UIScrollView.KeyboardDismissMode.none`](./keyboarddismissmode-swift.enum/none.md). See [`UIScrollView.KeyboardDismissMode`](./keyboarddismissmode-swift.enum.md) for possible values.
 
 ## See Also
 
-- [UIScrollView.KeyboardDismissMode](uiscrollview/keyboarddismissmode-swift.enum.md)
+### Dismissing the keyboard
+- [UIScrollView.KeyboardDismissMode](./keyboarddismissmode-swift.enum.md)
   Constants that determine how the system dismisses the keyboard when a drag begins in the scroll view.
 
 

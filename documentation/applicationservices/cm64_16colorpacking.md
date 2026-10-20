@@ -1,7 +1,8 @@
 # cm64_16ColorPacking
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The color values for four 16-bit color channels are stored in 64 consecutive bits.
 

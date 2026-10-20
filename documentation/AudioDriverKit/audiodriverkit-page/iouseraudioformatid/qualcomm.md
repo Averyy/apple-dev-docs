@@ -1,7 +1,8 @@
 # QUALCOMM
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The QUALCOMM PureVoice format.
 
@@ -10,7 +11,7 @@ The QUALCOMM PureVoice format.
 
 ## Declaration
 
-```swift
+```c
 QUALCOMM
 ```
 

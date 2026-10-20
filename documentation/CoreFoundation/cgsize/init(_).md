@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: Core Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Convert `CVImageSize` to [`CGSize`](cgsize.md)
+Convert `CVImageSize` to [`CGSize`](../cgsize.md)
 
 **Availability**:
 - iOS 26.0+

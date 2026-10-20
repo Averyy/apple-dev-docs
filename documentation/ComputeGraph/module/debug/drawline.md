@@ -1,13 +1,14 @@
 # module::debug::drawLine
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws a debug line
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void module::debug::drawLine(float3 from, float3 to, half4 color)
 
 Debug Lines are not enabled by default. You enable them in your editor or by setting `LinkOptions/debugDraw` to true when compiling your pipelines, and assigning a `DebugLinesProvider` to your ComputeGraphSimulation.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__debug__drawLine.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__debug__drawLine.svg)
 
 ## Parameters
 

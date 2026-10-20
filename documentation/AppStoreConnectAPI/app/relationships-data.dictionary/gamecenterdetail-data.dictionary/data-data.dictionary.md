@@ -1,7 +1,8 @@
 # App.Relationships.GameCenterDetail.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Game Center detail resource.
 
@@ -10,14 +11,14 @@ The type and ID of a related Game Center detail resource.
 
 ## Declaration
 
-```swift
+```
 object App.Relationships.GameCenterDetail.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterDetails`
 
 
 ---

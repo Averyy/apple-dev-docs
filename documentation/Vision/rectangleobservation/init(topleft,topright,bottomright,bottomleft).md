@@ -1,7 +1,8 @@
 # init(topLeft:topRight:bottomRight:bottomLeft:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle observation from its corner points.
 
@@ -26,7 +27,8 @@ The framework normalizes the coordinates of the rectangle to the dimensions of t
 
 ## See Also
 
-- [init(VNRectangleObservation)](rectangleobservation/init(_:).md)
+### Creating an observation
+- [init(VNRectangleObservation)](./init%28_%29.md)
   Creates a rectangle observation.
 
 

@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items in the vector.
 
@@ -10,7 +11,7 @@ The number of items in the vector.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,25 +20,30 @@ The number of items in the vector.
 var count: Int { get }
 ```
 
+```objc
+@property (readonly) size_t count;
+```
+
 ## See Also
 
-- [func value(at: Int) -> CGFloat](civector/value(at:).md)
+### Getting Values From a Vector
+- [func value(at: Int) -> CGFloat](./value%28at%29.md)
   Returns a value from a specific position in the vector.
-- [var x: CGFloat](civector/x.md)
+- [var x: CGFloat](./x.md)
   The value located in the first position in the vector.
-- [var y: CGFloat](civector/y.md)
+- [var y: CGFloat](./y.md)
   The value located in the second position in the vector.
-- [var z: CGFloat](civector/z.md)
+- [var z: CGFloat](./z.md)
   The value located in the third position in the vector.
-- [var w: CGFloat](civector/w.md)
+- [var w: CGFloat](./w.md)
   The value located in the forth position in the vector.
-- [var stringRepresentation: String](civector/stringrepresentation.md)
+- [var stringRepresentation: String](./stringrepresentation.md)
   Returns a formatted string with all the values of a `CIVector`.
-- [var cgAffineTransformValue: CGAffineTransform](civector/cgaffinetransformvalue.md)
+- [var cgAffineTransformValue: CGAffineTransform](./cgaffinetransformvalue.md)
   Returns the values in the vector as a `CGAffineTransformValue` structure.
-- [var cgPointValue: CGPoint](civector/cgpointvalue.md)
+- [var cgPointValue: CGPoint](./cgpointvalue.md)
   Returns the values in the vector as a `CGPoint` structure.
-- [var cgRectValue: CGRect](civector/cgrectvalue.md)
+- [var cgRectValue: CGRect](./cgrectvalue.md)
   Returns the values in the vector as a `CGRect` structure.
 
 

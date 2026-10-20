@@ -1,7 +1,8 @@
 # supplementalCategories
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Categories that provide more information about an app.
 
@@ -16,13 +17,18 @@ Categories that provide more information about an app.
 var supplementalCategories: [SRSupplementalCategory] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<SRSupplementalCategory *> * supplementalCategories;
+```
+
 ## See Also
 
-- [var bundleIdentifier: String?](srdeviceusagereport/applicationusage/bundleidentifier.md)
+### Identifying the App
+- [var bundleIdentifier: String?](./bundleidentifier.md)
   The bundle identifier of the app in use.
-- [var reportApplicationIdentifier: String](srdeviceusagereport/applicationusage/reportapplicationidentifier.md)
+- [var reportApplicationIdentifier: String](./reportapplicationidentifier.md)
   A pseudonymn for a real application identifier.
-- [class SRSupplementalCategory](srsupplementalcategory.md)
+- [class SRSupplementalCategory](../../srsupplementalcategory.md)
   A more detailed category that provides additional context to the app category.
 
 

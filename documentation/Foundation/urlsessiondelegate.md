@@ -1,7 +1,8 @@
 # URLSessionDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines methods that URL session instances call on their delegates to handle session-level events, like session life cycle changes.
 
@@ -20,52 +21,57 @@ A protocol that defines methods that URL session instances call on their delegat
 protocol URLSessionDelegate : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol NSURLSessionDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
-- [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
-- [Downloading files in the background](downloading-files-in-the-background.md)
-- [Uploading data to a website](uploading-data-to-a-website.md)
+- [Fetching website data into memory](./fetching-website-data-into-memory.md)
+- [Performing manual server trust authentication](./performing-manual-server-trust-authentication.md)
+- [Downloading files in the background](./downloading-files-in-the-background.md)
+- [Uploading data to a website](./uploading-data-to-a-website.md)
 
 #### Overview
 
-In addition to the methods defined in this protocol, most delegates should also implement some or all of the methods in the [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md), [`URLSessionDataDelegate`](urlsessiondatadelegate.md), and [`URLSessionDownloadDelegate`](urlsessiondownloaddelegate.md) protocols to handle task-level events. These include events like the beginning and end of individual tasks, and periodic progress updates from data or download tasks.
+In addition to the methods defined in this protocol, most delegates should also implement some or all of the methods in the [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md), [`URLSessionDataDelegate`](./urlsessiondatadelegate.md), and [`URLSessionDownloadDelegate`](./urlsessiondownloaddelegate.md) protocols to handle task-level events. These include events like the beginning and end of individual tasks, and periodic progress updates from data or download tasks.
 
-> **Note**:  Your [`URLSession`](urlsession.md) object doesn’t need to have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data.
+> **Note**:  Your [`URLSession`](./urlsession.md) object doesn’t need to have a delegate. If no delegate is assigned, a system-provided delegate is used, and you must provide a completion callback to obtain the data.
 
 ## Topics
 
 ### Handling session life cycle changes
-- [func urlSession(URLSession, didBecomeInvalidWithError: (any Error)?)](urlsessiondelegate/urlsession(_:didbecomeinvalidwitherror:).md)
+- [func urlSession(URLSession, didBecomeInvalidWithError: (any Error)?)](./urlsessiondelegate/urlsession%28_,didbecomeinvalidwitherror%29.md)
   Tells the URL session that the session has been invalidated.
-- [func urlSessionDidFinishEvents(forBackgroundURLSession: URLSession)](urlsessiondelegate/urlsessiondidfinishevents(forbackgroundurlsession:).md)
+- [func urlSessionDidFinishEvents(forBackgroundURLSession: URLSession)](./urlsessiondelegate/urlsessiondidfinishevents%28forbackgroundurlsession%29.md)
   Tells the delegate that all messages enqueued for a session have been delivered.
 ### Handling authentication challenges
-- [func urlSession(URLSession, didReceive: URLAuthenticationChallenge, completionHandler: (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)](urlsessiondelegate/urlsession(_:didreceive:completionhandler:).md)
+- [func urlSession(URLSession, didReceive: URLAuthenticationChallenge, completionHandler: (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)](./urlsessiondelegate/urlsession%28_,didreceive,completionhandler%29.md)
   Requests credentials from the delegate in response to a session-level authentication request from the remote server.
-- [URLSession.AuthChallengeDisposition](urlsession/authchallengedisposition.md)
+- [URLSession.AuthChallengeDisposition](./urlsession/authchallengedisposition.md)
   Constants passed by session or task delegates to the provided continuation block in response to an authentication challenge.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [URLSessionDataDelegate](urlsessiondatadelegate.md)
-- [URLSessionDownloadDelegate](urlsessiondownloaddelegate.md)
-- [URLSessionStreamDelegate](urlsessionstreamdelegate.md)
-- [URLSessionTaskDelegate](urlsessiontaskdelegate.md)
-- [URLSessionWebSocketDelegate](urlsessionwebsocketdelegate.md)
+- [URLSessionDataDelegate](./urlsessiondatadelegate.md)
+- [URLSessionDownloadDelegate](./urlsessiondownloaddelegate.md)
+- [URLSessionStreamDelegate](./urlsessionstreamdelegate.md)
+- [URLSessionTaskDelegate](./urlsessiontaskdelegate.md)
+- [URLSessionWebSocketDelegate](./urlsessionwebsocketdelegate.md)
 
 ## See Also
 
-- [var delegate: (any URLSessionDelegate)?](urlsession/delegate.md)
+### Working with a delegate
+- [var delegate: (any URLSessionDelegate)?](./urlsession/delegate.md)
   The delegate assigned when this object was created.
-- [protocol URLSessionTaskDelegate](urlsessiontaskdelegate.md)
+- [protocol URLSessionTaskDelegate](./urlsessiontaskdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events.
-- [var delegateQueue: OperationQueue](urlsession/delegatequeue.md)
+- [var delegateQueue: OperationQueue](./urlsession/delegatequeue.md)
   The operation queue provided when this object was created.
 
 

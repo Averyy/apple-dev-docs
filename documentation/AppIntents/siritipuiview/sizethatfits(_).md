@@ -1,12 +1,13 @@
 # sizeThatFits(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

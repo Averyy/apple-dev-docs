@@ -1,7 +1,8 @@
 # AlignmentOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values representing alignment operations.
 
@@ -15,78 +16,83 @@ Values representing alignment operations.
 struct AlignmentOptions
 ```
 
+```c
+enum NSAlignmentOptions : unsigned long long;
+```
+
 #### Overview
 
-These constants are used by the [`NSIntegralRectWithOptions(_:_:)`](nsintegralrectwithoptions(_:_:).md) function and other related methods, such as [`backingAlignedRect(_:options:)`](https://developer.apple.com/documentation/appkit/nsview/backingalignedrect(_:options:)).
+These constants are used by the [`NSIntegralRectWithOptions(_:_:)`](./nsintegralrectwithoptions%28_,_%29.md) function and other related methods, such as [`backingAlignedRect(_:options:)`](../AppKit/nsview/backingalignedrect%28_,options%29.md).
 
 ## Topics
 
 ### Constants
-- [static var alignMinXInward: AlignmentOptions](alignmentoptions/alignminxinward.md)
+- [static var alignMinXInward: AlignmentOptions](./alignmentoptions/alignminxinward.md)
   Specifies that alignment of the minimum X coordinate should be to the nearest inward integral value.
-- [static var alignMinYInward: AlignmentOptions](alignmentoptions/alignminyinward.md)
+- [static var alignMinYInward: AlignmentOptions](./alignmentoptions/alignminyinward.md)
   Specifies that alignment of the minimum Y coordinate should be to the nearest inward integral value.
-- [static var alignMaxXInward: AlignmentOptions](alignmentoptions/alignmaxxinward.md)
+- [static var alignMaxXInward: AlignmentOptions](./alignmentoptions/alignmaxxinward.md)
   Specifies that alignment of the maximum X coordinate should be to the nearest inward integral value.
-- [static var alignMaxYInward: AlignmentOptions](alignmentoptions/alignmaxyinward.md)
+- [static var alignMaxYInward: AlignmentOptions](./alignmentoptions/alignmaxyinward.md)
   Specifies that alignment of the maximum X coordinate should be to the nearest inward integral value.
-- [static var alignWidthInward: AlignmentOptions](alignmentoptions/alignwidthinward.md)
+- [static var alignWidthInward: AlignmentOptions](./alignmentoptions/alignwidthinward.md)
   Specifies that alignment of the width should be to the nearest inward integral value.
-- [static var alignHeightInward: AlignmentOptions](alignmentoptions/alignheightinward.md)
+- [static var alignHeightInward: AlignmentOptions](./alignmentoptions/alignheightinward.md)
   Specifies that alignment of the height should be to the nearest inward integral value.
-- [static var alignMinXOutward: AlignmentOptions](alignmentoptions/alignminxoutward.md)
+- [static var alignMinXOutward: AlignmentOptions](./alignmentoptions/alignminxoutward.md)
   Specifies that alignment of the minimum X coordinate should be to the nearest outward integral value.
-- [static var alignMinYOutward: AlignmentOptions](alignmentoptions/alignminyoutward.md)
+- [static var alignMinYOutward: AlignmentOptions](./alignmentoptions/alignminyoutward.md)
   Specifies that alignment of the minimum Y coordinate should be to the nearest outward integral value.
-- [static var alignMaxXOutward: AlignmentOptions](alignmentoptions/alignmaxxoutward.md)
+- [static var alignMaxXOutward: AlignmentOptions](./alignmentoptions/alignmaxxoutward.md)
   Specifies that alignment of the maximum X coordinate should be to the nearest outward integral value.
-- [static var alignMaxYOutward: AlignmentOptions](alignmentoptions/alignmaxyoutward.md)
+- [static var alignMaxYOutward: AlignmentOptions](./alignmentoptions/alignmaxyoutward.md)
   Specifies that alignment of the maximum Y coordinate should be to the nearest outward integral value.
-- [static var alignWidthOutward: AlignmentOptions](alignmentoptions/alignwidthoutward.md)
+- [static var alignWidthOutward: AlignmentOptions](./alignmentoptions/alignwidthoutward.md)
   Specifies that alignment of the width should be to the nearest outward integral value.
-- [static var alignHeightOutward: AlignmentOptions](alignmentoptions/alignheightoutward.md)
+- [static var alignHeightOutward: AlignmentOptions](./alignmentoptions/alignheightoutward.md)
   Specifies that alignment of the height should be to the nearest outward integral value.
-- [static var alignMinXNearest: AlignmentOptions](alignmentoptions/alignminxnearest.md)
+- [static var alignMinXNearest: AlignmentOptions](./alignmentoptions/alignminxnearest.md)
   Specifies that alignment of the minimum X coordinate should be to the nearest integral value.
-- [static var alignMinYNearest: AlignmentOptions](alignmentoptions/alignminynearest.md)
+- [static var alignMinYNearest: AlignmentOptions](./alignmentoptions/alignminynearest.md)
   Specifies that alignment of the minimum Y coordinate should be to the nearest integral value.
-- [static var alignMaxXNearest: AlignmentOptions](alignmentoptions/alignmaxxnearest.md)
+- [static var alignMaxXNearest: AlignmentOptions](./alignmentoptions/alignmaxxnearest.md)
   Specifies that alignment of the maximum X coordinate should be to the nearest integral value.
-- [static var alignMaxYNearest: AlignmentOptions](alignmentoptions/alignmaxynearest.md)
+- [static var alignMaxYNearest: AlignmentOptions](./alignmentoptions/alignmaxynearest.md)
   Specifies that alignment of the maximum Y coordinate should be to the nearest integral value.
-- [static var alignWidthNearest: AlignmentOptions](alignmentoptions/alignwidthnearest.md)
+- [static var alignWidthNearest: AlignmentOptions](./alignmentoptions/alignwidthnearest.md)
   Specifies that alignment of the width should be to the nearest integral value.
-- [static var alignHeightNearest: AlignmentOptions](alignmentoptions/alignheightnearest.md)
+- [static var alignHeightNearest: AlignmentOptions](./alignmentoptions/alignheightnearest.md)
   Specifies that alignment of the height should be to the nearest integral value.
-- [static var alignRectFlipped: AlignmentOptions](alignmentoptions/alignrectflipped.md)
+- [static var alignRectFlipped: AlignmentOptions](./alignmentoptions/alignrectflipped.md)
   This option should be included  if the rectangle is in a flipped coordinate system. This allows 0.5 to be treated in a visually consistent way.
-- [static var alignAllEdgesInward: AlignmentOptions](alignmentoptions/alignalledgesinward.md)
+- [static var alignAllEdgesInward: AlignmentOptions](./alignmentoptions/alignalledgesinward.md)
   Aligns all edges inward. This is the same as `NSAlignMinXInward|NSAlignMaxXInward|NSAlignMinYInward|NSAlignMaxYInward`.
-- [static var alignAllEdgesOutward: AlignmentOptions](alignmentoptions/alignalledgesoutward.md)
+- [static var alignAllEdgesOutward: AlignmentOptions](./alignmentoptions/alignalledgesoutward.md)
   Aligns all edges outwards. This is the same as `NSAlignMinXOutward|NSAlignMaxXOutward|NSAlignMinYOutward|NSAlignMaxYOutward`.
-- [static var alignAllEdgesNearest: AlignmentOptions](alignmentoptions/alignalledgesnearest.md)
+- [static var alignAllEdgesNearest: AlignmentOptions](./alignmentoptions/alignalledgesnearest.md)
   Aligns all edges to the nearest value. This is the same as `NSAlignMinXNearest|NSAlignMaxXNearest|NSAlignMinYNearest|NSAlignMaxYNearest`.
 ### Initializers
-- [init(rawValue: UInt64)](alignmentoptions/init(rawvalue:).md)
+- [init(rawValue: UInt64)](./alignmentoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum NSRectEdge](nsrectedge.md)
-- [typealias NSRectArray](nsrectarray.md)
+### Related Types
+- [enum NSRectEdge](./nsrectedge.md)
+- [typealias NSRectArray](./nsrectarray.md)
   Type indicating a parameter is array of `NSRect` structures.
-- [typealias NSRectPointer](nsrectpointer.md)
+- [typealias NSRectPointer](./nsrectpointer.md)
   Type indicating a parameter is a pointer to an `NSRect` structure.
 
 

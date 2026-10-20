@@ -1,7 +1,8 @@
 # deinitialize()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deinitializes every instance in this buffer.
 

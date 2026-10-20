@@ -1,7 +1,8 @@
 # systemButton(with:target:action:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a system type button with specified image, target, and action.
 
@@ -16,6 +17,10 @@ Creates and returns a system type button with specified image, target, and actio
 
 ```swift
 class func systemButton(with image: UIImage, target: Any?, action: Selector?) -> Self
+```
+
+```objc
++ (instancetype) systemButtonWithImage:(UIImage *) image target:(id) target action:(SEL) action;
 ```
 
 #### Discussion

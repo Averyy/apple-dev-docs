@@ -1,7 +1,8 @@
 # ContactProviderError.extensionInvalidateTimeout
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The extension invalidate operation timed out.
 
@@ -17,11 +18,12 @@ case extensionInvalidateTimeout
 
 #### Discussion
 
-This can occur if the extension takes too long to return from [`invalidate()`](contactproviderextension/invalidate().md).
+This can occur if the extension takes too long to return from [`invalidate()`](../contactproviderextension/invalidate%28%29.md).
 
 ## See Also
 
-- [ContactProviderError.extensionInvalidated](contactprovidererror/extensioninvalidated.md)
+### Invalidation errors
+- [ContactProviderError.extensionInvalidated](./extensioninvalidated.md)
   The app invalidated the extension while it was enumerating content or changes.
 
 

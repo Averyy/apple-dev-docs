@@ -1,7 +1,8 @@
 # timedInvokeRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func timedInvokeRequest(with params: MTRUnitTestingClusterTimedInvokeRequestParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func timedInvokeRequest(with params: MTRUnitTestingClusterTimedInvokeRequestParams?) async throws
+```
+
+```objc
+- (void) timedInvokeRequestWithParams:(MTRUnitTestingClusterTimedInvokeRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

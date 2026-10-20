@@ -1,7 +1,8 @@
 # vertical
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the source 2D image is a vertical arrangement of six cube faces.
 
@@ -17,6 +18,10 @@ Specifies that the source 2D image is a vertical arrangement of six cube faces.
 
 ```swift
 static let vertical: MTKTextureLoader.CubeLayout
+```
+
+```c
+extern MTKTextureLoaderCubeLayout const MTKTextureLoaderCubeLayoutVertical;
 ```
 
 #### Discussion

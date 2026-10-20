@@ -1,7 +1,8 @@
 # LazyDropWhileSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator over the elements traversed by a base iterator that follow the initial consecutive elements that satisfy a given predicate.
 
@@ -21,6 +22,8 @@ An iterator over the elements traversed by a base iterator that follow the initi
 struct Iterator
 ```
 
+Available when `Base` conforms to `Sequence`.
+
 #### Overview
 
 This is the associated iterator for the `LazyDropWhileSequence`, `LazyDropWhileCollection`, and `LazyDropWhileBidirectionalCollection` types.
@@ -28,17 +31,17 @@ This is the associated iterator for the `LazyDropWhileSequence`, `LazyDropWhileC
 ## Topics
 
 ### Type Aliases
-- [LazyDropWhileSequence.Iterator.Element](lazydropwhilesequence/iterator/element.md)
+- [LazyDropWhileSequence.Iterator.Element](./iterator/element.md)
   The type of element traversed by the iterator.
 ### Default Implementations
-- [IteratorProtocol Implementations](lazydropwhilesequence/iterator/iteratorprotocol-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
 
 
 ---

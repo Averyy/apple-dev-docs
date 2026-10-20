@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An automatic spatial experience.
 
@@ -13,6 +14,8 @@ An automatic spatial experience.
 ```swift
 static var automatic: AutomaticSpatialAudio { get }
 ```
+
+Available when `Self` is `AutomaticSpatialAudio`.
 
 
 ---

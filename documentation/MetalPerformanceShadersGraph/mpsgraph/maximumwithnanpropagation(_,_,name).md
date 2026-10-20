@@ -1,7 +1,8 @@
 # maximumWithNaNPropagation(_:_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elementwise maximum of the input tensors, while propagating `NaN` values.
 
@@ -17,6 +18,10 @@ Returns the elementwise maximum of the input tensors, while propagating `NaN` va
 
 ```swift
 func maximumWithNaNPropagation(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) maximumWithNaNPropagationWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

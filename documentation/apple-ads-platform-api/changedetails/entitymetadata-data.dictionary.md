@@ -1,7 +1,8 @@
 # ChangeDetails.EntityMetaData
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A key-value map of entity metadata captured at the time of the change, such as entity name and parent IDs.
 
@@ -10,7 +11,7 @@ A key-value map of entity metadata captured at the time of the change, such as e
 
 ## Declaration
 
-```swift
+```
 object ChangeDetails.EntityMetaData
 ```
 

@@ -1,7 +1,8 @@
 # LightmapComponent.SurfaceExtractor.ExtractionMode.finalShadedColor
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This will extract the final shaded color as it would be normally rendered, with all the effects from lights, shadows, etc. View-dependent effects like specular highlights will be consistent with the camera transform provided to `extractSurfacesForAtlasSlice`.
 
@@ -16,7 +17,8 @@ case finalShadedColor
 
 ## See Also
 
-- [LightmapComponent.SurfaceExtractor.ExtractionMode.baseColor](lightmapcomponent/surfaceextractor/extractionmode/basecolor.md)
+### Choosing the extraction mode
+- [LightmapComponent.SurfaceExtractor.ExtractionMode.baseColor](./basecolor.md)
 
 
 ---

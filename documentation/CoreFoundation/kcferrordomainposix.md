@@ -1,7 +1,8 @@
 # kCFErrorDomainPOSIX
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specified the POSIX domain.
 
@@ -20,13 +21,18 @@ A constant that specified the POSIX domain.
 let kCFErrorDomainPOSIX: CFErrorDomain!
 ```
 
+```c
+extern CFErrorDomain const kCFErrorDomainPOSIX;
+```
+
 ## See Also
 
-- [let kCFErrorDomainOSStatus: CFErrorDomain!](kcferrordomainosstatus.md)
+### Constants
+- [let kCFErrorDomainOSStatus: CFErrorDomain!](./kcferrordomainosstatus.md)
   A constant that specified the OS domain.
-- [let kCFErrorDomainMach: CFErrorDomain!](kcferrordomainmach.md)
+- [let kCFErrorDomainMach: CFErrorDomain!](./kcferrordomainmach.md)
   A constant that specified the Mach domain.
-- [let kCFErrorDomainCocoa: CFErrorDomain!](kcferrordomaincocoa.md)
+- [let kCFErrorDomainCocoa: CFErrorDomain!](./kcferrordomaincocoa.md)
   A constant that specified the Cocoa domain.
 
 

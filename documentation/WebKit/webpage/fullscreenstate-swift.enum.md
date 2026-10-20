@@ -1,7 +1,8 @@
 # WebPage.FullscreenState
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of possible fullscreen states a webpage may be in.
 
@@ -21,34 +22,35 @@ enum FullscreenState
 ## Topics
 
 ### Enumeration Cases
-- [WebPage.FullscreenState.enteringFullscreen](webpage/fullscreenstate-swift.enum/enteringfullscreen.md)
+- [WebPage.FullscreenState.enteringFullscreen](./fullscreenstate-swift.enum/enteringfullscreen.md)
   The page is entering fullscreen.
-- [WebPage.FullscreenState.exitingFullscreen](webpage/fullscreenstate-swift.enum/exitingfullscreen.md)
+- [WebPage.FullscreenState.exitingFullscreen](./fullscreenstate-swift.enum/exitingfullscreen.md)
   The page is exiting fullscreen.
-- [WebPage.FullscreenState.inFullscreen](webpage/fullscreenstate-swift.enum/infullscreen.md)
+- [WebPage.FullscreenState.inFullscreen](./fullscreenstate-swift.enum/infullscreen.md)
   The page is currently in fullscreen.
-- [WebPage.FullscreenState.notInFullscreen](webpage/fullscreenstate-swift.enum/notinfullscreen.md)
+- [WebPage.FullscreenState.notInFullscreen](./fullscreenstate-swift.enum/notinfullscreen.md)
   The page is not currently in fullscreen.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func pauseAllMediaPlayback() async](webpage/pauseallmediaplayback.md)
+### Interacting with media
+- [func pauseAllMediaPlayback() async](./pauseallmediaplayback%28%29.md)
   Pauses playback of all media in the web view.
-- [func mediaPlaybackState() async -> WKMediaPlaybackState](webpage/mediaplaybackstate.md)
+- [func mediaPlaybackState() async -> WKMediaPlaybackState](./mediaplaybackstate%28%29.md)
   Determine the playback status of media in the page.
-- [func setAllMediaPlaybackSuspended(Bool) async](webpage/setallmediaplaybacksuspended(_:).md)
+- [func setAllMediaPlaybackSuspended(Bool) async](./setallmediaplaybacksuspended%28_%29.md)
   Changes whether the webpage is suspending playback of all media in the page.
-- [func closeAllMediaPresentations() async](webpage/closeallmediapresentations.md)
+- [func closeAllMediaPresentations() async](./closeallmediapresentations%28%29.md)
   Closes all media the webpage is presenting, including picture-in-picture video and fullscreen video.
-- [var fullscreenState: WebPage.FullscreenState](webpage/fullscreenstate-swift.property.md)
+- [var fullscreenState: WebPage.FullscreenState](./fullscreenstate-swift.property.md)
   The fullscreen state the page is currently in.
 
 

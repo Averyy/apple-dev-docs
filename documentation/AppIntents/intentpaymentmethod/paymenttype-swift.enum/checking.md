@@ -1,7 +1,8 @@
 # IntentPaymentMethod.PaymentType.checking
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,14 +21,15 @@ case checking
 
 ## See Also
 
-- [IntentPaymentMethod.PaymentType.applePay](intentpaymentmethod/paymenttype-swift.enum/applepay.md)
-- [IntentPaymentMethod.PaymentType.brokerage](intentpaymentmethod/paymenttype-swift.enum/brokerage.md)
-- [IntentPaymentMethod.PaymentType.credit](intentpaymentmethod/paymenttype-swift.enum/credit.md)
-- [IntentPaymentMethod.PaymentType.debit](intentpaymentmethod/paymenttype-swift.enum/debit.md)
-- [IntentPaymentMethod.PaymentType.prepaid](intentpaymentmethod/paymenttype-swift.enum/prepaid.md)
-- [IntentPaymentMethod.PaymentType.savings](intentpaymentmethod/paymenttype-swift.enum/savings.md)
-- [IntentPaymentMethod.PaymentType.store](intentpaymentmethod/paymenttype-swift.enum/store.md)
-- [IntentPaymentMethod.PaymentType.unknown](intentpaymentmethod/paymenttype-swift.enum/unknown.md)
+### Getting the payment options
+- [IntentPaymentMethod.PaymentType.applePay](./applepay.md)
+- [IntentPaymentMethod.PaymentType.brokerage](./brokerage.md)
+- [IntentPaymentMethod.PaymentType.credit](./credit.md)
+- [IntentPaymentMethod.PaymentType.debit](./debit.md)
+- [IntentPaymentMethod.PaymentType.prepaid](./prepaid.md)
+- [IntentPaymentMethod.PaymentType.savings](./savings.md)
+- [IntentPaymentMethod.PaymentType.store](./store.md)
+- [IntentPaymentMethod.PaymentType.unknown](./unknown.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MetricResult.timeToFirstDraw(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,9 +18,10 @@ case timeToFirstDraw(TimeToFirstDrawMetric)
 
 ## See Also
 
-- [case applicationResumeTime(ApplicationResumeTimeMetric)](metricresult/applicationresumetime(_:).md)
-- [case optimizedTimeToFirstDraw(OptimizedTimeToFirstDrawMetric)](metricresult/optimizedtimetofirstdraw(_:).md)
-- [case extendedLaunch(ExtendedLaunchMetric)](metricresult/extendedlaunch(_:).md)
+### App launch
+- [case applicationResumeTime(ApplicationResumeTimeMetric)](./applicationresumetime%28_%29.md)
+- [case optimizedTimeToFirstDraw(OptimizedTimeToFirstDrawMetric)](./optimizedtimetofirstdraw%28_%29.md)
+- [case extendedLaunch(ExtendedLaunchMetric)](./extendedlaunch%28_%29.md)
 
 
 ---

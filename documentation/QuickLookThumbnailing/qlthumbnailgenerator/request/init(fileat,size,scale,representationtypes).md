@@ -1,7 +1,8 @@
 # init(fileAt:size:scale:representationTypes:)
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new request for a thumbnail with the specified parameters for a file at a provided URL.
 
@@ -18,6 +19,10 @@ Creates a new request for a thumbnail with the specified parameters for a file a
 init(fileAt url: URL, size: CGSize, scale: CGFloat, representationTypes: QLThumbnailGenerator.Request.RepresentationTypes)
 ```
 
+```objc
+- (instancetype) initWithFileAtURL:(NSURL *) url size:(CGSize) size scale:(CGFloat) scale representationTypes:(QLThumbnailGenerationRequestRepresentationTypes) representationTypes;
+```
+
 #### Return Value
 
 An initialized request object to create a thumbnail for a file.
@@ -27,7 +32,7 @@ An initialized request object to create a thumbnail for a file.
 - `url`: The URL of the file for which you want to create a thumbnail.
 - `size`: The desired size of the thumbnails.
 - `scale`: The scale of the thumbnails. This parameter usually represents the scale of the current screen. However, you can pass a screen scale to the initializer that isn’t the current device’s screen scale. For example, you can create thumbnails for different scales and upload them to a server in order to download them later on devices with a different screen scale.
-- `representationTypes`: The different thumbnail types. For a list of all possible thumbnail representation types, see [`QLThumbnailGenerator.Request.RepresentationTypes`](qlthumbnailgenerator/request/representationtypes-swift.struct.md).
+- `representationTypes`: The different thumbnail types. For a list of all possible thumbnail representation types, see [`QLThumbnailGenerator.Request.RepresentationTypes`](./representationtypes-swift.struct.md).
 
 
 ---

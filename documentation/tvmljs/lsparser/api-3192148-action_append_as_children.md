@@ -1,14 +1,15 @@
 # ACTION_APPEND_AS_CHILDREN
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 readonly attribute int ACTION_APPEND_AS_CHILDREN;
 ```
 

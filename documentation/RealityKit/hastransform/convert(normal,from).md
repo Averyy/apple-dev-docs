@@ -1,7 +1,8 @@
 # convert(normal:from:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a normal vector from the local space of a reference entity to the local space of the entity on which you called this method.
 
@@ -11,7 +12,7 @@ Converts a normal vector from the local space of a reference entity to the local
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,19 +32,20 @@ The normal vector given in the local space of the entity.
 
 ## See Also
 
-- [func convert(position: SIMD3<Float>, from: Entity?) -> SIMD3<Float>](hastransform/convert(position:from:).md)
+### Converting values between coordinate spaces
+- [func convert(position: SIMD3<Float>, from: Entity?) -> SIMD3<Float>](./convert%28position,from%29.md)
   Converts a position from the local space of a reference entity to the local space of the entity on which you called this method.
-- [func convert(position: SIMD3<Float>, to: Entity?) -> SIMD3<Float>](hastransform/convert(position:to:).md)
+- [func convert(position: SIMD3<Float>, to: Entity?) -> SIMD3<Float>](./convert%28position,to%29.md)
   Converts a position from the local space of the entity on which you called this method to the local space of a reference entity.
-- [func convert(direction: SIMD3<Float>, from: Entity?) -> SIMD3<Float>](hastransform/convert(direction:from:).md)
+- [func convert(direction: SIMD3<Float>, from: Entity?) -> SIMD3<Float>](./convert%28direction,from%29.md)
   Converts a direction vector from the local space of a reference entity to the local space of the entity on which you called this method.
-- [func convert(direction: SIMD3<Float>, to: Entity?) -> SIMD3<Float>](hastransform/convert(direction:to:).md)
+- [func convert(direction: SIMD3<Float>, to: Entity?) -> SIMD3<Float>](./convert%28direction,to%29.md)
   Converts a direction vector from the local space of the entity on which you called this method to the local space of a reference entity.
-- [func convert(normal: SIMD3<Float>, to: Entity?) -> SIMD3<Float>](hastransform/convert(normal:to:).md)
+- [func convert(normal: SIMD3<Float>, to: Entity?) -> SIMD3<Float>](./convert%28normal,to%29.md)
   Converts a normal vector from the local space of the entity on which you called this method to the local space of a reference entity.
-- [func convert(transform: Transform, from: Entity?) -> Transform](hastransform/convert(transform:from:).md)
+- [func convert(transform: Transform, from: Entity?) -> Transform](./convert%28transform,from%29.md)
   Converts the scale, rotation, and position of a transform from the local space of a reference entity to the local space of the entity on which you called this method.
-- [func convert(transform: Transform, to: Entity?) -> Transform](hastransform/convert(transform:to:).md)
+- [func convert(transform: Transform, to: Entity?) -> Transform](./convert%28transform,to%29.md)
   Converts the scale, rotation, and position of a transform from the local space of the entity on which you called this method to the local space of a reference entity.
 
 

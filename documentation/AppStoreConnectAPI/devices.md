@@ -1,6 +1,7 @@
 # Devices
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Register devices for development and testing.
 
@@ -13,43 +14,44 @@ A `devices` resource represents the iOS, Apple TV, Apple Watch, and Mac devices 
 ## Topics
 
 ### Registering a Device
-- [Register a new device](post-v1-devices.md)
+- [Register a new device](./post-v1-devices.md)
   Register a new device for app development.
 ### Getting Device Information
-- [List devices](get-v1-devices.md)
+- [List devices](./get-v1-devices.md)
   Find and list devices registered to your team.
-- [Read device information](get-v1-devices-_id_.md)
+- [Read device information](./get-v1-devices-_id_.md)
   Get information for a specific device registered to your team.
 ### Modifying Device Metadata
-- [Modify a registered device](patch-v1-devices-_id_.md)
+- [Modify a registered device](./patch-v1-devices-_id_.md)
   Update the name or status of a specific device.
 ### Objects
-- [object Device](device.md)
+- [object Device](./device.md)
   A physical Apple device registered in your developer account for testing, identified by its UDID and device type.
-- [object DevicesWithoutIncludesResponse](deviceswithoutincludesresponse.md)
+- [object DevicesWithoutIncludesResponse](./deviceswithoutincludesresponse.md)
   A response containing a list of registered devices, without related resources.
-- [object DeviceCreateRequest](devicecreaterequest.md)
+- [object DeviceCreateRequest](./devicecreaterequest.md)
   The request body you use to create a Device.
-- [object DeviceUpdateRequest](deviceupdaterequest.md)
+- [object DeviceUpdateRequest](./deviceupdaterequest.md)
   The request body you use to update a Device.
-- [object DeviceResponse](deviceresponse.md)
+- [object DeviceResponse](./deviceresponse.md)
   The response body for endpoints that create, read, or modify a single registered device.
-- [object DevicesResponse](devicesresponse.md)
+- [object DevicesResponse](./devicesresponse.md)
   The response body for endpoints that list registered devices.
 
 ## See Also
 
-- [Bundle IDs](bundle-ids.md)
+### Provisioning
+- [Bundle IDs](./bundle-ids.md)
   Manage the bundle IDs that uniquely identify your apps.
-- [Bundle ID Capabilities](bundle-id-capabilities.md)
+- [Bundle ID Capabilities](./bundle-id-capabilities.md)
   Manage the app capabilities for a bundle ID.
-- [Certificates](certificates.md)
+- [Certificates](./certificates.md)
   Create, download, and revoke signing certificates for app development and distribution.
-- [Profiles](profiles.md)
+- [Profiles](./profiles.md)
   Create, delete, and download provisioning profiles that enable app installations for development and distribution.
-- [Merchant ID](merchantids.md)
+- [Merchant ID](./merchantids.md)
   Manage your merchant ID for Apple Pay.
-- [Pass type Ids](pass-type-id.md)
+- [Pass type Ids](./pass-type-id.md)
   Create, download, and revoke pass type ids for app development and distribution.
 
 

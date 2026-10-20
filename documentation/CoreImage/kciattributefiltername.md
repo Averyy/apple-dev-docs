@@ -1,17 +1,18 @@
 # kCIAttributeFilterName
 
 **Framework**: Core Image  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The filter name.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,41 +20,46 @@ The filter name.
 let kCIAttributeFilterName: String
 ```
 
+```c
+extern NSString * const kCIAttributeFilterName;
+```
+
 #### Discussion
 
-The filter name, specified as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
+The filter name, specified as an [`NSString`](../Foundation/nsstring.md) object.
 
 ## See Also
 
-- [let kCIAttributeFilterDisplayName: String](kciattributefilterdisplayname.md)
+### Constants
+- [let kCIAttributeFilterDisplayName: String](./kciattributefilterdisplayname.md)
   The localized version of the filter name that is displayed in the user interface.
-- [let kCIAttributeDescription: String](kciattributedescription.md)
+- [let kCIAttributeDescription: String](./kciattributedescription.md)
   The localized description of the filter. This description should inform the user what the filter does and be short enough to display in the user interface for the filter. It is not intended to be technically detailed.
-- [let kCIAttributeFilterAvailable_Mac: String](kciattributefilteravailable_mac.md)
+- [let kCIAttributeFilterAvailable_Mac: String](./kciattributefilteravailable_mac.md)
   The macOS version in which the filter first became available.
-- [let kCIAttributeFilterAvailable_iOS: String](kciattributefilteravailable_ios.md)
+- [let kCIAttributeFilterAvailable_iOS: String](./kciattributefilteravailable_ios.md)
   The iOS version in which the filter first became available.
-- [let kCIAttributeReferenceDocumentation: String](kciattributereferencedocumentation.md)
+- [let kCIAttributeReferenceDocumentation: String](./kciattributereferencedocumentation.md)
   The localized reference documentation for the filter. The reference should provide developers with technical details.
-- [let kCIAttributeFilterCategories: String](kciattributefiltercategories.md)
+- [let kCIAttributeFilterCategories: String](./kciattributefiltercategories.md)
   An array of filter category keys that specifies all the categories in which the filter is a member.
-- [let kCIAttributeClass: String](kciattributeclass.md)
+- [let kCIAttributeClass: String](./kciattributeclass.md)
   The class name of the filter.
-- [let kCIAttributeType: String](kciattributetype.md)
+- [let kCIAttributeType: String](./kciattributetype.md)
   The type of an attribute.
-- [let kCIAttributeMin: String](kciattributemin.md)
+- [let kCIAttributeMin: String](./kciattributemin.md)
   The minimum value for a filter parameter, specified as a floating-point value.
-- [let kCIAttributeMax: String](kciattributemax.md)
+- [let kCIAttributeMax: String](./kciattributemax.md)
   The maximum value for a filter parameter, specified as a floating-point value.
-- [let kCIAttributeSliderMin: String](kciattributeslidermin.md)
+- [let kCIAttributeSliderMin: String](./kciattributeslidermin.md)
   The minimum value, specified as a floating-point value, to use for a slider that controls input values for a filter parameter.
-- [let kCIAttributeSliderMax: String](kciattributeslidermax.md)
+- [let kCIAttributeSliderMax: String](./kciattributeslidermax.md)
   The maximum value, specified as a floating-point value, to use for a slider that controls input values for a filter parameter.
-- [let kCIAttributeDefault: String](kciattributedefault.md)
+- [let kCIAttributeDefault: String](./kciattributedefault.md)
   The default value, specified as a floating-point value, for a filter parameter.
-- [let kCIAttributeIdentity: String](kciattributeidentity.md)
+- [let kCIAttributeIdentity: String](./kciattributeidentity.md)
   If supplied as a value for a parameter, the parameter has no effect on the input image.
-- [let kCIAttributeName: String](kciattributename.md)
+- [let kCIAttributeName: String](./kciattributename.md)
   The name of the attribute.
 
 

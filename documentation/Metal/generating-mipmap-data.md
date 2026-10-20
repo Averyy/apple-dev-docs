@@ -1,6 +1,7 @@
 # Generating mipmap data
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Create your mipmaps either when you author content or at runtime.
 
@@ -10,7 +11,7 @@ You create mipmaps for texture sampling by applying a filter to the original ima
 
 These are the options for creating mipmaps:
 
-**Have the device object generate them for you at runtime.** This approach is the simplest way to create mipmaps for color images. After initializing mipmap `0` with data, create a blit command encoder and encode a command to generate the other mipmaps using the [`generateMipmaps(for:)`](mtlblitcommandencoder/generatemipmaps(for:).md) method.
+**Have the device object generate them for you at runtime.** This approach is the simplest way to create mipmaps for color images. After initializing mipmap `0` with data, create a blit command encoder and encode a command to generate the other mipmaps using the [`generateMipmaps(for:)`](./mtlblitcommandencoder/generatemipmaps%28for%29.md) method.
 
 **Swift**:
 
@@ -37,19 +38,20 @@ As with any other GPU commands, the GPU creates the mipmaps asynchronously, at s
 
 ## See Also
 
-- [Improving texture sampling quality and performance with mipmaps](improving-texture-sampling-quality-and-performance-with-mipmaps.md)
+### Texture mipmapping
+- [Improving texture sampling quality and performance with mipmaps](./improving-texture-sampling-quality-and-performance-with-mipmaps.md)
   Avoid texture-rendering artifacts and reduce the GPU’s workload by creating smaller versions of a texture.
-- [Creating a mipmapped texture](creating-a-mipmapped-texture.md)
+- [Creating a mipmapped texture](./creating-a-mipmapped-texture.md)
   Decide whether a texture that you’re creating needs mipmaps.
-- [Copying data into or out of mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Copying data into or out of mipmaps](./copying-data-into-or-out-of-mipmaps.md)
   Specify which mipmaps that the data transfer affects.
-- [Adding mipmap filtering to samplers](adding-mipmap-filtering-to-samplers.md)
+- [Adding mipmap filtering to samplers](./adding-mipmap-filtering-to-samplers.md)
   Specify how the GPU samples mipmaps in your textures.
-- [Restricting access to specific mipmaps](restricting-access-to-specific-mipmaps.md)
+- [Restricting access to specific mipmaps](./restricting-access-to-specific-mipmaps.md)
   Set the range of mipmap levels that a sampler can access.
-- [Predicting which mips the GPU samples with level-of-detail queries](predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
+- [Predicting which mips the GPU samples with level-of-detail queries](./predicting-which-mips-the-gpu-samples-with-level-of-detail-queries.md)
   Determine in advance which mipmap levels the GPU requires to sample a texture.
-- [Dynamically adjusting texture level of detail](dynamically-adjusting-texture-level-of-detail.md)
+- [Dynamically adjusting texture level of detail](./dynamically-adjusting-texture-level-of-detail.md)
   Defer generating or loading larger mipmaps until that level of detail is needed.
 
 

@@ -1,7 +1,8 @@
 # faceIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The face index for the mesh face that that the ray hit.
 

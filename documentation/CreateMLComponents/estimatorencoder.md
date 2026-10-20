@@ -1,7 +1,8 @@
 # EstimatorEncoder
 
 **Framework**: Create ML Components  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can encode values into a model representation.
 
@@ -23,14 +24,15 @@ protocol EstimatorEncoder
 ## Topics
 
 ### Encoding values
-- [func encode<T>(T) throws](estimatorencoder/encode(_:).md)
+- [func encode<T>(T) throws](./estimatorencoder/encode%28_%29.md)
   Encodes a value.
-- [func encodeOptimizer<T>(T) throws](estimatorencoder/encodeoptimizer(_:).md)
+- [func encodeOptimizer<T>(T) throws](./estimatorencoder/encodeoptimizer%28_%29.md)
   Encodes an estimator optimizer.
 
 ## See Also
 
-- [protocol EstimatorDecoder](estimatordecoder.md)
+### Serializers
+- [protocol EstimatorDecoder](./estimatordecoder.md)
   A type that can decode values from a model representation.
 
 

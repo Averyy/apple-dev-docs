@@ -1,7 +1,8 @@
 # ExpressibleByArrayLiteral
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be initialized using an array literal.
 
@@ -38,10 +39,12 @@ print(employeesArray)
 
 The `Set` and `Array` types each handle array literals in their own way to create new instances. In this case, the newly created set drops the duplicate value (“Dave”) and doesn’t maintain the order of the array literal’s elements. The new array, on the other hand, matches the order and number of elements provided.
 
-> **Note**: An array literal is not the same as an `Array` instance. You can’t initialize a type that conforms to `ExpressibleByArrayLiteral` simply by assigning an existing array. ```swift
-let anotherSet: Set = employeesArray
-// error: cannot convert value of type '[String]' to specified type 'Set'
-```
+> **Note**: An array literal is not the same as an `Array` instance. You can’t initialize a type that conforms to `ExpressibleByArrayLiteral` simply by assigning an existing array.
+>
+> ```swift
+> let anotherSet: Set = employeesArray
+> // error: cannot convert value of type '[String]' to specified type 'Set'
+> ```
 
 ### Type Inference of Array Literals
 
@@ -92,7 +95,7 @@ log(name: "Zero integers", value: [] as [Int])
 // Prints "Zero integers: []"
 ```
 
-### Conforming to Expressiblebyarrayliteral
+### Conforming to ExpressibleByArrayLiteral
 
 Add the capability to be initialized with an array literal to your own custom types by declaring an `init(arrayLiteral:)` initializer. The following example shows the array literal initializer for a hypothetical `OrderedSet` type, which has setlike semantics but maintains the order of its elements.
 
@@ -114,36 +117,37 @@ extension OrderedSet: ExpressibleByArrayLiteral {
 ## Topics
 
 ### Associated Types
-- [associatedtype ArrayLiteralElement](expressiblebyarrayliteral/arrayliteralelement.md)
+- [associatedtype ArrayLiteralElement](./expressiblebyarrayliteral/arrayliteralelement.md)
   The type of the elements of an array literal.
 ### Initializers
-- [init(arrayLiteral: Self.ArrayLiteralElement...)](expressiblebyarrayliteral/init(arrayliteral:).md)
+- [init(arrayLiteral: Self.ArrayLiteralElement...)](./expressiblebyarrayliteral/init%28arrayliteral%29.md)
   Creates an instance initialized with the given elements.
 
 ## Relationships
 
 ### Inherited By
-- [OptionSet](optionset.md)
-- [SIMD](simd.md)
-- [SetAlgebra](setalgebra.md)
+- [OptionSet](./optionset.md)
+- [SIMD](./simd.md)
+- [SetAlgebra](./setalgebra.md)
 ### Conforming Types
-- [Array](array.md)
-- [ArraySlice](arrayslice.md)
-- [ContiguousArray](contiguousarray.md)
-- [ObservationTracking.Options](../observation/observationtracking/options.md)
-- [SIMD16](simd16.md)
-- [SIMD2](simd2.md)
-- [SIMD3](simd3.md)
-- [SIMD32](simd32.md)
-- [SIMD4](simd4.md)
-- [SIMD64](simd64.md)
-- [SIMD8](simd8.md)
-- [SIMDMask](simdmask.md)
-- [Set](set.md)
+- [Array](./array.md)
+- [ArraySlice](./arrayslice.md)
+- [ContiguousArray](./contiguousarray.md)
+- [ObservationTracking.Options](../Observation/observationtracking/options.md)
+- [SIMD16](./simd16.md)
+- [SIMD2](./simd2.md)
+- [SIMD3](./simd3.md)
+- [SIMD32](./simd32.md)
+- [SIMD4](./simd4.md)
+- [SIMD64](./simd64.md)
+- [SIMD8](./simd8.md)
+- [SIMDMask](./simdmask.md)
+- [Set](./set.md)
 
 ## See Also
 
-- [protocol ExpressibleByDictionaryLiteral](expressiblebydictionaryliteral.md)
+### Collection Literals
+- [protocol ExpressibleByDictionaryLiteral](./expressiblebydictionaryliteral.md)
   A type that can be initialized using a dictionary literal.
 
 

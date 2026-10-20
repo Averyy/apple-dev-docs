@@ -1,7 +1,8 @@
 # presetName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the preset that the asset export session uses.
 
@@ -19,19 +20,24 @@ The name of the preset that the asset export session uses.
 var presetName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * presetName;
+```
+
 #### Discussion
 
-See [`Export presets`](export-presets.md) for values an asset export session supports.
+See [Export presets](../export-presets.md) for values an asset export session supports.
 
 This property is key-value observable.
 
 ## See Also
 
-- [func determineCompatibleFileTypes(completionHandler: ([AVFileType]) -> Void)](avassetexportsession/determinecompatiblefiletypes(completionhandler:).md)
+### Accessing export presets
+- [func determineCompatibleFileTypes(completionHandler: ([AVFileType]) -> Void)](./determinecompatiblefiletypes%28completionhandler%29.md)
   Determines the output file types an asset export session supports writing in its current configuration.
-- [class func allExportPresets() -> [String]](avassetexportsession/allexportpresets.md)
+- [class func allExportPresets() -> [String]](./allexportpresets%28%29.md)
   Returns all available export preset names.
-- [class func determineCompatibility(ofExportPreset: String, with: AVAsset, outputFileType: AVFileType?, completionHandler: (Bool) -> Void)](avassetexportsession/determinecompatibility(ofexportpreset:with:outputfiletype:completionhandler:).md)
+- [class func determineCompatibility(ofExportPreset: String, with: AVAsset, outputFileType: AVFileType?, completionHandler: (Bool) -> Void)](./determinecompatibility%28ofexportpreset,with,outputfiletype,completionhandler%29.md)
   Determines an export preset’s compatibility to export the asset in a container of the output file type.
 
 

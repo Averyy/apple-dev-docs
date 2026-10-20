@@ -1,7 +1,8 @@
 # USDPrim.Attribute.ValueType.TupleDimensions
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The shape of a value type’s components.
 
@@ -28,20 +29,20 @@ enum TupleDimensions
 ## Topics
 
 ### Enumeration Cases
-- [USDPrim.Attribute.ValueType.TupleDimensions.matrix(rows:columns:)](usdprim/attribute/valuetype/tupledimensions/matrix(rows:columns:).md)
-- [USDPrim.Attribute.ValueType.TupleDimensions.scalar](usdprim/attribute/valuetype/tupledimensions/scalar.md)
-- [USDPrim.Attribute.ValueType.TupleDimensions.vector(_:)](usdprim/attribute/valuetype/tupledimensions/vector(_:).md)
+- [USDPrim.Attribute.ValueType.TupleDimensions.matrix(rows:columns:)](./tupledimensions/matrix%28rows,columns%29.md)
+- [USDPrim.Attribute.ValueType.TupleDimensions.scalar](./tupledimensions/scalar.md)
+- [USDPrim.Attribute.ValueType.TupleDimensions.vector(_:)](./tupledimensions/vector%28_%29.md)
 ### Instance Properties
-- [var componentCount: Int](usdprim/attribute/valuetype/tupledimensions/componentcount.md)
+- [var componentCount: Int](./tupledimensions/componentcount.md)
   The total number of components across all dimensions.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

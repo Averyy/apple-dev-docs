@@ -1,7 +1,8 @@
 # regionFormat
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The short country code for the region format setting of the device.
 
@@ -20,15 +21,16 @@ let regionFormat: String
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let deviceType: String](diagnosticreport/environment-swift.struct/devicetype.md)
+### Device information
+- [let deviceType: String](./devicetype.md)
   The hardware identifier for the device.
-- [let osVersion: OSVersion](diagnosticreport/environment-swift.struct/osversion.md)
+- [let osVersion: OSVersion](./osversion.md)
   The version of the OS on the device including the type of OS, version number, and build number.
-- [let platformArchitecture: String](diagnosticreport/environment-swift.struct/platformarchitecture.md)
+- [let platformArchitecture: String](./platformarchitecture.md)
   The name of the processor architecture for the device.
 
 

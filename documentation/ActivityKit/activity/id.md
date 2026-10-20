@@ -1,7 +1,8 @@
 # id
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for a Live Activity.
 
@@ -17,7 +18,7 @@ final let id: String
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
 
 ---

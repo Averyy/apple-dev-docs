@@ -1,7 +1,8 @@
 # standardDeviation(deltaDegreesOfFreedom:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the standard deviation of the floating-point column’s elements, ignoring missing elements.
 
@@ -20,6 +21,8 @@ Returns the standard deviation of the floating-point column’s elements, ignori
 func standardDeviation(deltaDegreesOfFreedom: Int = 1) -> Column<WrappedElement>.Element
 ```
 
+Available when `WrappedElement` conforms to `FloatingPoint`.
+
 #### Return Value
 
 The standard deviation; otherwise, `nil` if there are fewer than `deltaDegreesOfFreedom + 1` non-`nil` items in the column.
@@ -30,17 +33,18 @@ The standard deviation; otherwise, `nil` if there are fewer than `deltaDegreesOf
 
 ## See Also
 
-- [func sum() -> WrappedElement](column/sum.md)
+### Getting Statistical Values
+- [func sum() -> WrappedElement](./sum%28%29.md)
   Returns the sum of the column’s elements, ignoring missing elements.
-- [func min() -> Column<WrappedElement>.Element](column/min.md)
+- [func min() -> Column<WrappedElement>.Element](./min%28%29.md)
   Returns the element with the lowest value, ignoring missing elements.
-- [func max() -> Column<WrappedElement>.Element](column/max.md)
+- [func max() -> Column<WrappedElement>.Element](./max%28%29.md)
   Returns the element with the highest value, ignoring missing elements.
-- [func mean() -> Double?](column/mean-2si7j.md)
+- [func mean() -> Double?](./mean%28%29-2si7j.md)
   Returns the mean average of the integer column’s elements, ignoring missing elements.
-- [func mean() -> Column<WrappedElement>.Element](column/mean-ic5z.md)
+- [func mean() -> Column<WrappedElement>.Element](./mean%28%29-ic5z.md)
   Returns the mean average of the floating-point column’s elements, ignoring missing elements.
-- [func standardDeviation(deltaDegreesOfFreedom: Int) -> Double?](column/standarddeviation(deltadegreesoffreedom:)-9ffqu.md)
+- [func standardDeviation(deltaDegreesOfFreedom: Int) -> Double?](./standarddeviation%28deltadegreesoffreedom%29-9ffqu.md)
   Returns the standard deviation of the integer column’s elements, ignoring missing elements.
 
 

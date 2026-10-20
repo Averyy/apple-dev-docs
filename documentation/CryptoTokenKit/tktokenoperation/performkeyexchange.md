@@ -1,7 +1,8 @@
 # TKTokenOperation.performKeyExchange
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -18,16 +19,21 @@
 case performKeyExchange
 ```
 
+```c
+TKTokenOperationPerformKeyExchange
+```
+
 #### Discussion
 
 Perform a Diffie-Hellman style cryptographic key exchange using a private key
 
 ## See Also
 
-- [TKTokenOperation.none](tktokenoperation/none.md)
-- [TKTokenOperation.readData](tktokenoperation/readdata.md)
-- [TKTokenOperation.signData](tktokenoperation/signdata.md)
-- [TKTokenOperation.decryptData](tktokenoperation/decryptdata.md)
+### Constants
+- [TKTokenOperation.none](./none.md)
+- [TKTokenOperation.readData](./readdata.md)
+- [TKTokenOperation.signData](./signdata.md)
+- [TKTokenOperation.decryptData](./decryptdata.md)
 
 
 ---

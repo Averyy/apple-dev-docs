@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Defines version number of this struct. Just use the value "1" when defining an IOPMPowerState.
 
@@ -10,7 +11,7 @@ Defines version number of this struct. Just use the value "1" when defining an I
 
 ## Declaration
 
-```swift
+```c
 unsigned long version;
 ```
 

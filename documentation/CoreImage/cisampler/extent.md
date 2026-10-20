@@ -1,7 +1,8 @@
 # extent
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle that specifies the extent of the sampler
 
@@ -19,13 +20,18 @@ The rectangle that specifies the extent of the sampler
 var extent: CGRect { get }
 ```
 
+```objc
+@property (readonly) CGRect extent;
+```
+
 #### Discussion
 
 Extent is the rectangle that specifies the area outside which the wrap mode set for the sampler is invoked.
 
 ## See Also
 
-- [var definition: CIFilterShape](cisampler/definition.md)
+### Getting Information About the Sampler Object
+- [var definition: CIFilterShape](./definition.md)
   The domain of definition (DOD) of the sampler
 
 

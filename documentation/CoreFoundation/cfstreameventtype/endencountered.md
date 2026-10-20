@@ -1,18 +1,19 @@
 # endEncountered
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The end of the stream has been reached.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The end of the stream has been reached.
 static var endEncountered: CFStreamEventType { get }
 ```
 
+```c
+kCFStreamEventEndEncountered
+```
+
 ## See Also
 
-- [static var openCompleted: CFStreamEventType](cfstreameventtype/opencompleted.md)
+### Constants
+- [static var openCompleted: CFStreamEventType](./opencompleted.md)
   The open has completed successfully.
-- [static var hasBytesAvailable: CFStreamEventType](cfstreameventtype/hasbytesavailable.md)
+- [static var hasBytesAvailable: CFStreamEventType](./hasbytesavailable.md)
   The stream has bytes to be read.
-- [static var canAcceptBytes: CFStreamEventType](cfstreameventtype/canacceptbytes.md)
+- [static var canAcceptBytes: CFStreamEventType](./canacceptbytes.md)
   The stream can accept bytes for writing.
-- [static var errorOccurred: CFStreamEventType](cfstreameventtype/erroroccurred.md)
+- [static var errorOccurred: CFStreamEventType](./erroroccurred.md)
   An error has occurred on the stream.
 
 

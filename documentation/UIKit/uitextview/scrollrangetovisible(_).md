@@ -1,7 +1,8 @@
 # scrollRangeToVisible(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls the text view until the text in the specified range is visible.
 
@@ -9,7 +10,7 @@ Scrolls the text view until the text in the specified range is visible.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Scrolls the text view until the text in the specified range is visible.
 func scrollRangeToVisible(_ range: NSRange)
 ```
 
+```objc
+- (void) scrollRangeToVisible:(NSRange) range;
+```
+
 ## Parameters
 
 - `range`: The range of text to scroll into view.
 
 ## See Also
 
-- [var clearsOnInsertion: Bool](uitextview/clearsoninsertion.md)
+### Working with the selection
+- [var clearsOnInsertion: Bool](./clearsoninsertion.md)
   A Boolean value that indicates whether inserting text replaces the previous contents.
-- [var isSelectable: Bool](uitextview/isselectable.md)
+- [var isSelectable: Bool](./isselectable.md)
   A Boolean value that indicates whether the text view is selectable.
-- [var selectedRange: NSRange](uitextview/selectedrange.md)
+- [var selectedRange: NSRange](./selectedrange.md)
   The current selection range of the text view.
 
 

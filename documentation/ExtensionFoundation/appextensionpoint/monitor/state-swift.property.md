@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current details about the available, disabled, and unapproved extensions.
 
@@ -22,7 +23,7 @@ final var state: AppExtensionPoint.Monitor.State { get }
 
 ## Mentions
 
-- [Discovering app extensions from your app](discovering-app-extensions-from-your-app.md)
+- [Discovering app extensions from your app](../../discovering-app-extensions-from-your-app.md)
 
 #### Discussion
 
@@ -30,7 +31,8 @@ This property provides the list of available app extensions plus the number of c
 
 ## See Also
 
-- [AppExtensionPoint.Monitor.State](appextensionpoint/monitor/state-swift.struct.md)
+### Getting the monitor state
+- [AppExtensionPoint.Monitor.State](./state-swift.struct.md)
   A type that contains a snapshot of a monitor’s state information.
 
 

@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -18,9 +19,12 @@
 func encode(to encoder: any Encoder) throws
 ```
 
+Available when `Element` is `HourWeather`.
+
 ## See Also
 
-- [func encode(to: any Encoder) throws](forecast/encode(to:)-5zuqd.md)
+### Serializing objects
+- [func encode(to: any Encoder) throws](./encode%28to%29-5zuqd.md)
 
 
 ---

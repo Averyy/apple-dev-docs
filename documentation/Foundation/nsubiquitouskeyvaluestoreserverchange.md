@@ -1,7 +1,8 @@
 # NSUbiquitousKeyValueStoreServerChange
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that indicates a value changed in iCloud.
 
@@ -20,23 +21,28 @@ A constant that indicates a value changed in iCloud.
 var NSUbiquitousKeyValueStoreServerChange: Int { get }
 ```
 
+```c
+NSUbiquitousKeyValueStoreServerChange
+```
+
 #### Discussion
 
 This type of change occurs when another instance of your app changes the value on a different device.
 
 ## See Also
 
-- [class let didChangeExternallyNotification: NSNotification.Name](nsubiquitouskeyvaluestore/didchangeexternallynotification.md)
+### Detecting changes to values
+- [class let didChangeExternallyNotification: NSNotification.Name](./nsubiquitouskeyvaluestore/didchangeexternallynotification.md)
   Posted when the value of one or more keys changes due to incoming data from iCloud.
-- [let NSUbiquitousKeyValueStoreChangeReasonKey: String](nsubiquitouskeyvaluestorechangereasonkey.md)
+- [let NSUbiquitousKeyValueStoreChangeReasonKey: String](./nsubiquitouskeyvaluestorechangereasonkey.md)
   A key that indicates the reason why the key-value store changed.
-- [let NSUbiquitousKeyValueStoreChangedKeysKey: String](nsubiquitouskeyvaluestorechangedkeyskey.md)
+- [let NSUbiquitousKeyValueStoreChangedKeysKey: String](./nsubiquitouskeyvaluestorechangedkeyskey.md)
   A key that indicates which keys changed in the iCloud key-value store.
-- [var NSUbiquitousKeyValueStoreInitialSyncChange: Int](nsubiquitouskeyvaluestoreinitialsyncchange.md)
+- [var NSUbiquitousKeyValueStoreInitialSyncChange: Int](./nsubiquitouskeyvaluestoreinitialsyncchange.md)
   A constant that indicates the initial attempt to load keys and values from iCloud is in progress.
-- [var NSUbiquitousKeyValueStoreQuotaViolationChange: Int](nsubiquitouskeyvaluestorequotaviolationchange.md)
+- [var NSUbiquitousKeyValueStoreQuotaViolationChange: Int](./nsubiquitouskeyvaluestorequotaviolationchange.md)
   A constant that indicates an attempt to write data exceeded the quota limits.
-- [var NSUbiquitousKeyValueStoreAccountChange: Int](nsubiquitouskeyvaluestoreaccountchange.md)
+- [var NSUbiquitousKeyValueStoreAccountChange: Int](./nsubiquitouskeyvaluestoreaccountchange.md)
   A constant that indicates the current Apple account changed.
 
 

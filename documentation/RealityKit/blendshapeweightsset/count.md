@@ -1,7 +1,8 @@
 # count
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of blend shape weight data in the set.
 

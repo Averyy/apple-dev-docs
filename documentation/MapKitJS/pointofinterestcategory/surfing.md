@@ -1,7 +1,8 @@
 # Surfing
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for surfing locations.
 
@@ -10,7 +11,7 @@ The point-of-interest category for surfing locations.
 
 ## Declaration
 
-```swift
+```
 readonly Surfing: "Surfing";
 ```
 

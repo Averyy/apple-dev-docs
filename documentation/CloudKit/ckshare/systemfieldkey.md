@@ -1,7 +1,8 @@
 # CKShare.SystemFieldKey
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent the system fields of a share.
 
@@ -11,7 +12,7 @@ Constants that represent the system fields of a share.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -24,11 +25,11 @@ enum SystemFieldKey
 ## Topics
 
 ### Constants
-- [static let shareType: CKRecord.FieldKey](ckshare/systemfieldkey/sharetype.md)
+- [static let shareType: CKRecord.FieldKey](./systemfieldkey/sharetype.md)
   The system field key for the share’s type.
-- [static let title: CKRecord.FieldKey](ckshare/systemfieldkey/title.md)
+- [static let title: CKRecord.FieldKey](./systemfieldkey/title.md)
   The system field key for the share’s title.
-- [static let thumbnailImageData: CKRecord.FieldKey](ckshare/systemfieldkey/thumbnailimagedata.md)
+- [static let thumbnailImageData: CKRecord.FieldKey](./systemfieldkey/thumbnailimagedata.md)
   The system field key for the share’s thumbnail image data.
 
 

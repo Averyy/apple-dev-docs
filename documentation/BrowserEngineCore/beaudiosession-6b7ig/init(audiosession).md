@@ -1,7 +1,8 @@
 # init(audioSession:)
 
 **Framework**: BrowserEngineCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a browser engine audio session.
 
@@ -15,9 +16,13 @@ Initializes a browser engine audio session.
 init(audioSession: AVAudioSession)
 ```
 
+```objc
+- (instancetype) initWithAudioSession:(AVAudioSession *) audioSession;
+```
+
 #### Discussion
 
-[`BEAudioSession`](beaudiosession-6b7ig.md) wraps the specified [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) audio session.
+[`BEAudioSession`](../beaudiosession-6b7ig.md) wraps the specified [AVFoundation](../../AVFoundation/AVFoundation.md) audio session.
 
 
 ---

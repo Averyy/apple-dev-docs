@@ -1,7 +1,8 @@
 # persistentSystemOverlays(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred visibility of the non-transient system views overlaying the app.
 
@@ -25,7 +26,7 @@ func persistentSystemOverlays(_ visibility: Visibility) -> some View
 
 Use this modifier to influence the appearance of system overlays in your app. The behavior varies by platform.
 
-In iOS, the following example hides every persistent system overlay. In visionOS 2 and later, the SharePlay Indicator hides if the scene is shared through SharePlay, or not shared at all. During screen sharing, the indicator always remains visible. The Home indicator doesn’t appear without specific user intent when you set visibility to [`Visibility.hidden`](visibility/hidden.md). For a [`WindowGroup`](windowgroup.md), the modifier affects the visibility of the window chrome. For an [`ImmersiveSpace`](immersivespace.md), it affects the Home indicator.
+In iOS, the following example hides every persistent system overlay. In visionOS 2 and later, the SharePlay Indicator hides if the scene is shared through SharePlay, or not shared at all. During screen sharing, the indicator always remains visible. The Home indicator doesn’t appear without specific user intent when you set visibility to [`Visibility.hidden`](../visibility/hidden.md). For a [`WindowGroup`](../windowgroup.md), the modifier affects the visibility of the window chrome. For an [`ImmersiveSpace`](../immersivespace.md), it affects the Home indicator.
 
 ```swift
 struct ImmersiveView: View {
@@ -50,17 +51,18 @@ Affected non-transient system views can include, but are not limited to:
 
 ## See Also
 
-- [func labelsHidden() -> some View](view/labelshidden.md)
+### Hiding system elements
+- [func labelsHidden() -> some View](./labelshidden%28%29.md)
   Hides the labels of any controls contained within this view.
-- [func labelsVisibility(Visibility) -> some View](view/labelsvisibility(_:).md)
+- [func labelsVisibility(Visibility) -> some View](./labelsvisibility%28_%29.md)
   Controls the visibility of labels of any controls contained within this view.
-- [var labelsVisibility: Visibility](environmentvalues/labelsvisibility.md)
-  The labels visibility set by [`labelsVisibility(_:)`](view/labelsvisibility(_:).md).
-- [func menuIndicator(Visibility) -> some View](view/menuindicator(_:).md)
+- [var labelsVisibility: Visibility](../environmentvalues/labelsvisibility.md)
+  The labels visibility set by [`labelsVisibility(_:)`](./labelsvisibility%28_%29.md).
+- [func menuIndicator(Visibility) -> some View](./menuindicator%28_%29.md)
   Sets the menu indicator visibility for controls within this view.
-- [enum Visibility](visibility.md)
+- [enum Visibility](../visibility.md)
   The visibility of a UI element, chosen automatically based on the platform, current context, and other factors.
-- [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
+- [func statusBarHidden(Bool) -> some View](./statusbarhidden%28_%29.md)
   Sets the visibility of the status bar.
 
 

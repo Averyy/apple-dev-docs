@@ -1,7 +1,8 @@
 # paddingStyle
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of padding applied to the source tensor.
 
@@ -17,6 +18,10 @@ The type of padding applied to the source tensor.
 
 ```swift
 var paddingStyle: MPSGraphPaddingStyle { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphPaddingStyle paddingStyle;
 ```
 
 #### Discussion

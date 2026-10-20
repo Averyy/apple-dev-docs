@@ -1,7 +1,8 @@
 # normals
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rays that define which direction is outside for each face.
 
@@ -15,15 +16,20 @@ Rays that define which direction is outside for each face.
 var normals: ARGeometrySource { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) ARGeometrySource * normals;
+```
+
 ## See Also
 
-- [var classification: ARGeometrySource?](armeshgeometry/classification.md)
+### Getting Geometry Information
+- [var classification: ARGeometrySource?](./classification.md)
   Classification for each face in the mesh.
-- [enum ARMeshClassification](armeshclassification.md)
+- [enum ARMeshClassification](../armeshclassification.md)
   Enumeration of different classes of real-world objects that ARKit can identify.
-- [var faces: ARGeometryElement](armeshgeometry/faces.md)
+- [var faces: ARGeometryElement](./faces.md)
   An object that contains a buffer of vertex indices of the geometry’s faces.
-- [class ARGeometryElement](argeometryelement.md)
+- [class ARGeometryElement](../argeometryelement.md)
   A container for index data, such as vertex indices of a face.
 
 

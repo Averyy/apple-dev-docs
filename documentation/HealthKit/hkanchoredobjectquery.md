@@ -1,17 +1,18 @@
 # HKAnchoredObjectQuery
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A query that returns changes to the HealthKit store, including a snapshot of new changes and continuous monitoring as a long-running query.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,73 +20,78 @@ A query that returns changes to the HealthKit store, including a snapshot of new
 class HKAnchoredObjectQuery
 ```
 
+```objc
+@interface HKAnchoredObjectQuery : HKQuery
+```
+
 ## Mentions
 
-- [About the HealthKit framework](about-the-healthkit-framework.md)
-- [Executing Observer Queries](executing-observer-queries.md)
-- [Receiving Downhill Skiing and Snowboarding Data](receiving-downhill-skiing-and-snowboarding-data.md)
+- [About the HealthKit framework](./about-the-healthkit-framework.md)
+- [Executing Observer Queries](./executing-observer-queries.md)
+- [Receiving Downhill Skiing and Snowboarding Data](./receiving-downhill-skiing-and-snowboarding-data.md)
 
 #### Overview
 
-Anchored object queries provide an easy way to search for new data in the HealthKit store. An [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md) returns an anchor value that corresponds to the last sample or deleted object received by that query. Subsequent queries can use this anchor to restrict their results to only newer saved or deleted objects.
+Anchored object queries provide an easy way to search for new data in the HealthKit store. An [`HKAnchoredObjectQuery`](./hkanchoredobjectquery.md) returns an anchor value that corresponds to the last sample or deleted object received by that query. Subsequent queries can use this anchor to restrict their results to only newer saved or deleted objects.
 
-Anchored object queries are mostly immutable. You can assign the query’s [`updateHandler`](hkanchoredobjectquery/updatehandler.md) property after instantiating the object, but you must set all other properties when you instantiate the object. You can’t change them.
+Anchored object queries are mostly immutable. You can assign the query’s [`updateHandler`](./hkanchoredobjectquery/updatehandler.md) property after instantiating the object, but you must set all other properties when you instantiate the object. You can’t change them.
 
 ##### Combine Snapshots and Updates
 
 The anchored object query can combine the abilities of a regular query with a long-running query.
 
-- It grabs a snapshot of the data currently stored in the HealthKit store (like an [`HKSampleQuery`](hksamplequery.md)).
-- It can also perform a long-running query that responds to updates (like an [`HKObserverQuery`](hkobserverquery.md)).
+- It grabs a snapshot of the data currently stored in the HealthKit store (like an [`HKSampleQuery`](./hksamplequery.md)).
+- It can also perform a long-running query that responds to updates (like an [`HKObserverQuery`](./hkobserverquery.md)).
 
 Often, it’s more efficient to set up and run a single anchored object query than to run separate sample and observer queries. As a result, you may want to use anchored object queries, even when you aren’t using anchors to limit the results. In this case, set the anchor parameter to `nil`.
 
 ## Topics
 
 ### Creating Anchored Object Queries
-- [Executing Anchored Object Queries](executing-anchored-object-queries.md)
+- [Executing Anchored Object Queries](./executing-anchored-object-queries.md)
   Create and run an anchored object query.
-- [init(type: HKSampleType, predicate: NSPredicate?, anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](hkanchoredobjectquery/init(type:predicate:anchor:limit:resultshandler:).md)
+- [init(type: HKSampleType, predicate: NSPredicate?, anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md)
   Initializes a new anchored object query.
-- [init(queryDescriptors: [HKQueryDescriptor], anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](hkanchoredobjectquery/init(querydescriptors:anchor:limit:resultshandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](./hkanchoredobjectquery/init%28querydescriptors,anchor,limit,resultshandler%29.md)
   Creates an anchored object query that matches any of the query descriptors you provided.
-- [var HKObjectQueryNoLimit: Int](hkobjectquerynolimit.md)
+- [var HKObjectQueryNoLimit: Int](./hkobjectquerynolimit.md)
   A value indicating that the query returns all the matching samples in the HealthKit store.
-- [init(type: HKSampleType, predicate: NSPredicate?, anchor: Int, limit: Int, completionHandler: (HKAnchoredObjectQuery, [HKSample]?, Int, (any Error)?) -> Void)](hkanchoredobjectquery/init(type:predicate:anchor:limit:completionhandler:).md)
+- [init(type: HKSampleType, predicate: NSPredicate?, anchor: Int, limit: Int, completionHandler: (HKAnchoredObjectQuery, [HKSample]?, Int, (any Error)?) -> Void)](./hkanchoredobjectquery/init%28type,predicate,anchor,limit,completionhandler%29.md)
   Initializes a new anchored object query.
 ### Receiving Updates
-- [var updateHandler: ((HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)?](hkanchoredobjectquery/updatehandler.md)
+- [var updateHandler: ((HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)?](./hkanchoredobjectquery/updatehandler.md)
   Handler for monitoring updates to the HealthKit store.
 ### Tracking Anchors
-- [class HKQueryAnchor](hkqueryanchor.md)
+- [class HKQueryAnchor](./hkqueryanchor.md)
   An object used to identify all the samples previously returned by an anchored object query.
 ### Tracking Deleted Objects
-- [class HKDeletedObject](hkdeletedobject.md)
+- [class HKDeletedObject](./hkdeletedobject.md)
   An object that represents a sample that has been deleted from the HealthKit store.
 
 ## Relationships
 
 ### Inherits From
-- [HKQuery](hkquery.md)
+- [HKQuery](./hkquery.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKActivitySummaryQueryDescriptor](hkactivitysummaryquerydescriptor.md)
+### Long-running queries
+- [struct HKActivitySummaryQueryDescriptor](./hkactivitysummaryquerydescriptor.md)
   A query interface that reads activity summaries using Swift concurrency.
-- [class HKActivitySummaryQuery](hkactivitysummaryquery.md)
+- [class HKActivitySummaryQuery](./hkactivitysummaryquery.md)
   A query for reading activity summary objects from the HealthKit store.
-- [struct HKAnchoredObjectQueryDescriptor](hkanchoredobjectquerydescriptor.md)
+- [struct HKAnchoredObjectQueryDescriptor](./hkanchoredobjectquerydescriptor.md)
   A query interface that runs anchored object queries using Swift concurrency.
-- [class HKObserverQuery](hkobserverquery.md)
+- [class HKObserverQuery](./hkobserverquery.md)
   A long-running query that monitors the HealthKit store and updates your app when the HealthKit store saves or deletes a matching sample.
 
 

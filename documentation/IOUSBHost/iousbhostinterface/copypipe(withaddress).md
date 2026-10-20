@@ -1,7 +1,8 @@
 # copyPipe(withAddress:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies a pipe for a specific endpoint address.
 
@@ -15,13 +16,17 @@ Copies a pipe for a specific endpoint address.
 func copyPipe(withAddress address: Int) throws -> IOUSBHostPipe
 ```
 
+```objc
+- (IOUSBHostPipe *) copyPipeWithAddress:(NSUInteger) address error:(NSError **) error;
+```
+
 #### Return Value
 
-An [`IOUSBHostPipe`](iousbhostpipe.md) or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the system can’t create the pipe.
+An [`IOUSBHostPipe`](../iousbhostpipe.md) or [`nil`](../../ObjectiveC/nil-227m0.md) if the system can’t create the pipe.
 
 #### Discussion
 
-If the pipe returns successfully, the method maintains a reference to the [`IOUSBHostInterface`](iousbhostinterface.md).
+If the pipe returns successfully, the method maintains a reference to the [`IOUSBHostInterface`](../iousbhostinterface.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ If the pipe returns successfully, the method maintains a reference to the [`IOUS
 
 ## See Also
 
-- [func selectAlternateSetting(Int) throws](iousbhostinterface/selectalternatesetting(_:).md)
+### Managing Pipes
+- [func selectAlternateSetting(Int) throws](./selectalternatesetting%28_%29.md)
   Selects an alternative setting for the interface.
 
 

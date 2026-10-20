@@ -1,7 +1,8 @@
 # post(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Posts a given notification to the notification center.
 
@@ -20,15 +21,20 @@ Posts a given notification to the notification center.
 func post(_ notification: Notification)
 ```
 
+```objc
+- (void) postNotification:(NSNotification *) notification;
+```
+
 ## Parameters
 
 - `notification`: The notification to post.
 
 ## See Also
 
-- [func post(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](notificationcenter/post(name:object:userinfo:).md)
+### Posting notifications
+- [func post(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./post%28name,object,userinfo%29.md)
   Creates a notification with a given name, sender, and information and posts it to the notification center.
-- [func post(name: NSNotification.Name, object: Any?)](notificationcenter/post(name:object:).md)
+- [func post(name: NSNotification.Name, object: Any?)](./post%28name,object%29.md)
   Creates a notification with a given name and sender and posts it to the notification center.
 
 

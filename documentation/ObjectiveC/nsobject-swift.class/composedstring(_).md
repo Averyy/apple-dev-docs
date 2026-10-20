@@ -1,17 +1,22 @@
 # composedString(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return the current composed string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func composedString(_ sender: Any!) -> Any!
+```
+
+```objc
+- (id) composedString:(id) sender;
 ```
 
 #### Return Value

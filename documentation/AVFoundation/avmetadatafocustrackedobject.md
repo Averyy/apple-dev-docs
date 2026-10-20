@@ -1,7 +1,8 @@
 # AVMetadataFocusTrackedObject
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A metadata object that is maintained in focus by the camera’s auto focus system continuously tracking it.
 
@@ -18,24 +19,28 @@ A metadata object that is maintained in focus by the camera’s auto focus syste
 class AVMetadataFocusTrackedObject
 ```
 
+```objc
+@interface AVMetadataFocusTrackedObject : AVMetadataObject
+```
+
 #### Overview
 
-[`AVMetadataFocusTrackedObject`](avmetadatafocustrackedobject.md) represents a single tracked object in a picture. It is an immutable object describing the focus-tracked object.
+[`AVMetadataFocusTrackedObject`](./avmetadatafocustrackedobject.md) represents a single tracked object in a picture. It is an immutable object describing the focus-tracked object.
 
-On supported platforms, [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) outputs arrays of focus-tracked objects. See AVCaptureOutput.h.
+On supported platforms, [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md) outputs arrays of focus-tracked objects. See AVCaptureOutput.h.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataObject](avmetadataobject.md)
+- [AVMetadataObject](./avmetadataobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # indexDescription
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -18,15 +19,20 @@
 unowned(unsafe) var indexDescription: NSFetchIndexDescription? { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, nullable) NSFetchIndexDescription * indexDescription;
+```
+
 ## See Also
 
-- [var collationType: NSFetchIndexElementType](nsfetchindexelementdescription/collationtype.md)
+### Inspecting an Index Element Description
+- [var collationType: NSFetchIndexElementType](./collationtype.md)
   The type of collation that the index element uses, either binary or R-tree.
-- [var isAscending: Bool](nsfetchindexelementdescription/isascending.md)
+- [var isAscending: Bool](./isascending.md)
   A Boolean value that controls whether an index that supports direction is an ascending or descending index.
-- [var property: NSPropertyDescription?](nsfetchindexelementdescription/property.md)
+- [var property: NSPropertyDescription?](./property.md)
   A property description.
-- [var propertyName: String?](nsfetchindexelementdescription/propertyname.md)
+- [var propertyName: String?](./propertyname.md)
   The specified name in the property description.
 
 

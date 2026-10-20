@@ -1,14 +1,15 @@
 # setRealtimeReceiveQueuePacketHandler
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13.1+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setRealtimeReceiveQueuePacketHandler(uint32_t queueIndex, avb_packet_callback_t callback, void *context);
 ```
 

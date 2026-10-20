@@ -1,7 +1,8 @@
 # CSSUnknownRule
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSUnknownRule
 ```
 
 ## Relationships
 
 ### Inherits From
-- [CSSRule](cssrule.md)
+- [CSSRule](./cssrule.md)
 
 
 ---

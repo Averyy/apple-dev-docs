@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.basketball
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for playing basketball.
 
@@ -19,31 +20,36 @@ The constant for playing basketball.
 case basketball
 ```
 
+```c
+HKWorkoutActivityTypeBasketball
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.americanFootball](hkworkoutactivitytype/americanfootball.md)
+### Team sports
+- [HKWorkoutActivityType.americanFootball](./americanfootball.md)
   The constant for playing American football.
-- [HKWorkoutActivityType.australianFootball](hkworkoutactivitytype/australianfootball.md)
+- [HKWorkoutActivityType.australianFootball](./australianfootball.md)
   The constant for playing Australian football.
-- [HKWorkoutActivityType.baseball](hkworkoutactivitytype/baseball.md)
+- [HKWorkoutActivityType.baseball](./baseball.md)
   The constant for playing baseball.
-- [HKWorkoutActivityType.cricket](hkworkoutactivitytype/cricket.md)
+- [HKWorkoutActivityType.cricket](./cricket.md)
   The constant for playing cricket.
-- [HKWorkoutActivityType.discSports](hkworkoutactivitytype/discsports.md)
+- [HKWorkoutActivityType.discSports](./discsports.md)
   The constant for playing disc sports such as Ultimate and Disc Golf.
-- [HKWorkoutActivityType.handball](hkworkoutactivitytype/handball.md)
+- [HKWorkoutActivityType.handball](./handball.md)
   The constant for playing handball.
-- [HKWorkoutActivityType.hockey](hkworkoutactivitytype/hockey.md)
+- [HKWorkoutActivityType.hockey](./hockey.md)
   The constant for playing hockey, including ice hockey, field hockey, and related sports.
-- [HKWorkoutActivityType.lacrosse](hkworkoutactivitytype/lacrosse.md)
+- [HKWorkoutActivityType.lacrosse](./lacrosse.md)
   The constant for playing lacrosse.
-- [HKWorkoutActivityType.rugby](hkworkoutactivitytype/rugby.md)
+- [HKWorkoutActivityType.rugby](./rugby.md)
   The constant for playing rugby.
-- [HKWorkoutActivityType.soccer](hkworkoutactivitytype/soccer.md)
+- [HKWorkoutActivityType.soccer](./soccer.md)
   The constant for playing soccer.
-- [HKWorkoutActivityType.softball](hkworkoutactivitytype/softball.md)
+- [HKWorkoutActivityType.softball](./softball.md)
   The constant for playing softball.
-- [HKWorkoutActivityType.volleyball](hkworkoutactivitytype/volleyball.md)
+- [HKWorkoutActivityType.volleyball](./volleyball.md)
   The constant for playing volleyball.
 
 

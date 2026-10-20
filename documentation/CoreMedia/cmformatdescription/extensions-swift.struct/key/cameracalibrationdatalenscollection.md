@@ -1,9 +1,10 @@
 # cameraCalibrationDataLensCollection
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Specifies intrinsic and extrinsic parameters for single or multiple lenses. The value for this key is represented by [`CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection`](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection.md) type.
+Specifies intrinsic and extrinsic parameters for single or multiple lenses. The value for this key is represented by [`CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection`](../value/cameracalibrationdatalenscollection.md) type.
 
 **Availability**:
 - iOS 26.0+

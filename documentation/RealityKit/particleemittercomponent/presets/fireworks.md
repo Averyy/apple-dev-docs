@@ -1,7 +1,8 @@
 # fireworks
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Particles that emit in regular bursts and spawn secondary particles
 

@@ -1,7 +1,8 @@
 # height
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the image.
 
@@ -19,27 +20,32 @@ The height of the image.
 var height: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger height;
+```
+
 #### Discussion
 
 The formal height of the image, in pixels. The default value is 1.
 
 ## See Also
 
-- [var width: Int](mpsimagedescriptor/width.md)
+### Properties
+- [var width: Int](./width.md)
   The width of the image.
-- [var featureChannels: Int](mpsimagedescriptor/featurechannels.md)
+- [var featureChannels: Int](./featurechannels.md)
   The number of feature channels per pixel.
-- [var numberOfImages: Int](mpsimagedescriptor/numberofimages.md)
+- [var numberOfImages: Int](./numberofimages.md)
   The number of images for batch processing.
-- [var pixelFormat: MTLPixelFormat](mpsimagedescriptor/pixelformat.md)
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The pixel format for the underlying texture.
-- [var channelFormat: MPSImageFeatureChannelFormat](mpsimagedescriptor/channelformat.md)
+- [var channelFormat: MPSImageFeatureChannelFormat](./channelformat.md)
   The storage format to use for each channel in the image.
-- [var cpuCacheMode: MTLCPUCacheMode](mpsimagedescriptor/cpucachemode.md)
+- [var cpuCacheMode: MTLCPUCacheMode](./cpucachemode.md)
   The CPU cache mode of the underlying texture.
-- [var storageMode: MTLStorageMode](mpsimagedescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The storage mode of underlying texture.
-- [var usage: MTLTextureUsage](mpsimagedescriptor/usage.md)
+- [var usage: MTLTextureUsage](./usage.md)
   Options to specify the intended usage of the underlying texture.
 
 

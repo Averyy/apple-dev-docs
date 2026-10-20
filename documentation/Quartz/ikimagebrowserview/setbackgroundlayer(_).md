@@ -1,7 +1,8 @@
 # setBackgroundLayer(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The Core Animation layer used as the view’s background.
 
@@ -12,6 +13,10 @@ The Core Animation layer used as the view’s background.
 
 ```swift
 func setBackgroundLayer(_ aLayer: CALayer!)
+```
+
+```objc
+- (void) setBackgroundLayer:(CALayer *) aLayer;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The layer is optional.
 
 ## See Also
 
-- [func setForegroundLayer(CALayer!)](ikimagebrowserview/setforegroundlayer(_:).md)
+### Core Animation Layer Integration
+- [func setForegroundLayer(CALayer!)](./setforegroundlayer%28_%29.md)
   The Core Animation layer used as the foreground overlay.
-- [func foregroundLayer() -> CALayer!](ikimagebrowserview/foregroundlayer.md)
+- [func foregroundLayer() -> CALayer!](./foregroundlayer%28%29.md)
   Returns the foreground Core Animation layer
-- [func backgroundLayer() -> CALayer!](ikimagebrowserview/backgroundlayer.md)
+- [func backgroundLayer() -> CALayer!](./backgroundlayer%28%29.md)
   Returns the foreground Core Animation layer
 
 

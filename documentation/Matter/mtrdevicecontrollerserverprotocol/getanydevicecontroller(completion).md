@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func getAnyDeviceController(completion: @escaping @Sendable (Any?, (any Error)?) -> Void)
+```
+
+```swift
 func anyDeviceController() async throws -> Any
+```
+
+```objc
+- (void) getAnyDeviceControllerWithCompletion:(MTRDeviceControllerGetterHandler) completion;
 ```
 
 

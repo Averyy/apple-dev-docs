@@ -1,7 +1,8 @@
 # adjacencyIndexType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the per-vertex adjacencies buffer.
 

@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the history token into the provided encoder.
 

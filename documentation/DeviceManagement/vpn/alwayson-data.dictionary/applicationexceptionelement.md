@@ -1,7 +1,8 @@
 # VPN.AlwaysOn.ApplicationExceptionElement
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary that defines which applications can have traffic outside the VPN tunnel.
 
@@ -13,7 +14,7 @@ The dictionary that defines which applications can have traffic outside the VPN 
 
 ## Declaration
 
-```swift
+```
 object VPN.AlwaysOn.ApplicationExceptionElement
 ```
 
@@ -22,13 +23,16 @@ object VPN.AlwaysOn.ApplicationExceptionElement
 - `BundleIdentifier` (string) *(required)*: The app’s bundle identifier.
 - `LimitToProtocols` ([string]): Limit the exception to only the specified list of protocols, with support for `UDP` only.
 
+  **Allowed Values**: `UDP`
+
 ## See Also
 
-- [object VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement](vpn/alwayson-data.dictionary/allowedcaptivenetworkpluginelement.md)
+### Objects
+- [object VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement](./allowedcaptivenetworkpluginelement.md)
   The dictionary for captive network configurations.
-- [object VPN.AlwaysOn.ServiceExceptionElement](vpn/alwayson-data.dictionary/serviceexceptionelement.md)
+- [object VPN.AlwaysOn.ServiceExceptionElement](./serviceexceptionelement.md)
   The dictionary that defines service exceptions.
-- [object VPN.AlwaysOn.TunnelConfigurationElement](vpn/alwayson-data.dictionary/tunnelconfigurationelement.md)
+- [object VPN.AlwaysOn.TunnelConfigurationElement](./tunnelconfigurationelement.md)
   The dictionary used to configure VPN tunnels.
 
 

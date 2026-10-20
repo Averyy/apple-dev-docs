@@ -1,7 +1,8 @@
 # state
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the conversation.
 
@@ -20,11 +21,12 @@ final var state: Conversation.State { get }
 
 ## See Also
 
-- [var localMember: Handle?](conversation/localmember.md)
+### Describing a conversation
+- [var localMember: Handle?](./localmember.md)
   The handle that identifies the local participant to remote participants.
-- [Conversation.State](conversation/state-swift.enum.md)
+- [Conversation.State](./state-swift.enum.md)
   Values that describe the current state of a conversation.
-- [let uuid: UUID](conversation/uuid.md)
+- [let uuid: UUID](./uuid.md)
   The unique identifier for a conversation.
 
 

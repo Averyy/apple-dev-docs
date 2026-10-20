@@ -1,7 +1,8 @@
 # MLActionClassifier.Prediction
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of predictions, each paired with its confidence, for a range of video frames.
 
@@ -17,22 +18,23 @@ struct Prediction
 ## Topics
 
 ### Inspecting a prediction
-- [var results: [(label: String, confidence: Double)]](mlactionclassifier/prediction/results.md)
+- [var results: [(label: String, confidence: Double)]](./prediction/results.md)
   An array of prediction labels and their confidences for an action.
-- [var frameRange: Range<Int>](mlactionclassifier/prediction/framerange.md)
+- [var frameRange: Range<Int>](./prediction/framerange.md)
   The range of frame rates the action classifier used to make its prediction.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func prediction(from: URL) throws -> [MLActionClassifier.Prediction]](mlactionclassifier/prediction(from:).md)
+### Testing an action classifier
+- [func prediction(from: URL) throws -> [MLActionClassifier.Prediction]](./prediction%28from%29.md)
   Generates a prediction for each action the classifier recognizes in the video.
-- [func predictions(from: [URL]) throws -> [[MLActionClassifier.Prediction]]](mlactionclassifier/predictions(from:).md)
+- [func predictions(from: [URL]) throws -> [[MLActionClassifier.Prediction]]](./predictions%28from%29.md)
   Generates a sequence of predictions for each video input.
 
 

@@ -1,7 +1,8 @@
 # mediaPresentationLanguages(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of extended language tags for languages that can be selected for offline operations via use of the AVMediaSelectionGroup’s AVCustomMediaSelectionScheme.
 
@@ -20,13 +21,18 @@ Returns an array of extended language tags for languages that can be selected fo
 func mediaPresentationLanguages(for mediaSelectionGroup: AVMediaSelectionGroup) -> [String]
 ```
 
+```objc
+- (NSArray<NSString *> *) mediaPresentationLanguagesForMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
+```
+
 ## See Also
 
-- [var isPlayableOffline: Bool](avassetcache/isplayableoffline.md)
+### Inspecting the cached media
+- [var isPlayableOffline: Bool](./isplayableoffline.md)
   A Boolean value that indicates whether the asset is playable without an internet connection.
-- [func mediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](avassetcache/mediaselectionoptions(in:).md)
+- [func mediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](./mediaselectionoptions%28in%29.md)
   Returns an array of locally cached media selection options that are available for offline use.
-- [func mediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : [AVMediaPresentationSetting]]](avassetcache/mediapresentationsettings(for:).md)
+- [func mediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : [AVMediaPresentationSetting]]](./mediapresentationsettings%28for%29.md)
   For each AVMediaPresentationSelector defined by the AVCustomMediaSelectionScheme of an AVMediaSelectionGroup, returns the AVMediaPresentationSettings that can be satisfied for offline operations, e.g. playback.
 
 

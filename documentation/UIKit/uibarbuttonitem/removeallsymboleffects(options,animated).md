@@ -1,7 +1,8 @@
 # removeAllSymbolEffects(options:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all symbol effects from the bar button item, using the specified options and animation setting.
 
@@ -10,7 +11,7 @@ Removes all symbol effects from the bar button item, using the specified options
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,21 +27,22 @@ Removes all symbol effects from the bar button item, using the specified options
 
 ## See Also
 
-- [var isSymbolAnimationEnabled: Bool](uibarbuttonitem/issymbolanimationenabled.md)
+### Configuring symbol effects
+- [var isSymbolAnimationEnabled: Bool](./issymbolanimationenabled.md)
   A Boolean value that indicates whether symbol effects animate.
-- [func addSymbolEffect(some IndefiniteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](uibarbuttonitem/addsymboleffect(_:options:animated:)-3iew0.md)
+- [func addSymbolEffect(some IndefiniteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](./addsymboleffect%28_,options,animated%29-3iew0.md)
   Adds an indefinite symbol effect to the bar button item with the specified options and animation.
-- [func addSymbolEffect(some DiscreteSymbolEffect & IndefiniteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](uibarbuttonitem/addsymboleffect(_:options:animated:)-6jx3e.md)
+- [func addSymbolEffect(some DiscreteSymbolEffect & IndefiniteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](./addsymboleffect%28_,options,animated%29-6jx3e.md)
   Adds a discrete, indefinite symbol effect to the bar button item with the specified options and animation.
-- [func addSymbolEffect(some DiscreteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](uibarbuttonitem/addsymboleffect(_:options:animated:)-9dytr.md)
+- [func addSymbolEffect(some DiscreteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](./addsymboleffect%28_,options,animated%29-9dytr.md)
   Adds a discrete symbol effect to the bar button item with the specified options and animation.
-- [func setSymbolImage(UIImage, contentTransition: some ContentTransitionSymbolEffect & SymbolEffect, options: SymbolEffectOptions)](uibarbuttonitem/setsymbolimage(_:contenttransition:options:).md)
+- [func setSymbolImage(UIImage, contentTransition: some ContentTransitionSymbolEffect & SymbolEffect, options: SymbolEffectOptions)](./setsymbolimage%28_,contenttransition,options%29.md)
   Sets a symbol image using the specified content-transition effect and options.
-- [func removeSymbolEffect(ofType: some IndefiniteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](uibarbuttonitem/removesymboleffect(oftype:options:animated:)-214pl.md)
+- [func removeSymbolEffect(ofType: some IndefiniteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](./removesymboleffect%28oftype,options,animated%29-214pl.md)
   Removes the symbol effect that matches the specified indefinite effect type, using the specified options and animation setting.
-- [func removeSymbolEffect(ofType: some DiscreteSymbolEffect & IndefiniteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](uibarbuttonitem/removesymboleffect(oftype:options:animated:)-7m567.md)
+- [func removeSymbolEffect(ofType: some DiscreteSymbolEffect & IndefiniteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](./removesymboleffect%28oftype,options,animated%29-7m567.md)
   Removes the symbol effect that matches the specified discrete, indefinite effect type, using the specified options and animation setting.
-- [func removeSymbolEffect(ofType: some DiscreteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](uibarbuttonitem/removesymboleffect(oftype:options:animated:)-8zc4d.md)
+- [func removeSymbolEffect(ofType: some DiscreteSymbolEffect & SymbolEffect, options: SymbolEffectOptions, animated: Bool)](./removesymboleffect%28oftype,options,animated%29-8zc4d.md)
   Removes the symbol effect that matches the specified discrete effect type, using the specified options and animation setting.
 
 

@@ -1,7 +1,8 @@
 # GameCenterAchievementV2.Relationships.Versions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the versions of the Game Center achievement v2.
 
@@ -10,7 +11,7 @@ The data and links that describe the versions of the Game Center achievement v2.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementV2.Relationships.Versions
 ```
 
@@ -23,7 +24,7 @@ object GameCenterAchievementV2.Relationships.Versions
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementV2.Relationships.Versions.Data](gamecenterachievementv2/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementV2.Relationships.Versions.Data](./versions-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -33,11 +34,12 @@ object GameCenterAchievementV2.Relationships.Versions
 
 ## See Also
 
-- [object GameCenterAchievementV2.Relationships.Activity](gamecenterachievementv2/relationships-data.dictionary/activity-data.dictionary.md)
+### Dictionaries
+- [object GameCenterAchievementV2.Relationships.Activity](./activity-data.dictionary.md)
   The data and links that describe the activity of the Game Center achievement v2.
-- [object GameCenterAchievementV2.Relationships.GameCenterDetail](gamecenterachievementv2/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterAchievementV2.Relationships.GameCenterDetail](./gamecenterdetail-data.dictionary.md)
   The data that describes the Game Center detail of the Game Center achievement v2.
-- [object GameCenterAchievementV2.Relationships.GameCenterGroup](gamecenterachievementv2/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterAchievementV2.Relationships.GameCenterGroup](./gamecentergroup-data.dictionary.md)
   The data that describes the Game Center group of the Game Center achievement v2.
 
 

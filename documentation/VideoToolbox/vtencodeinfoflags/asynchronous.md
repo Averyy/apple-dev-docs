@@ -1,7 +1,8 @@
 # asynchronous
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates that an encode operation ran asynchronously.
 
@@ -19,9 +20,14 @@ A flag that indicates that an encode operation ran asynchronously.
 static var asynchronous: VTEncodeInfoFlags { get }
 ```
 
+```c
+kVTEncodeInfo_Asynchronous
+```
+
 ## See Also
 
-- [static var frameDropped: VTEncodeInfoFlags](vtencodeinfoflags/framedropped.md)
+### Info Flags
+- [static var frameDropped: VTEncodeInfoFlags](./framedropped.md)
   A flag that indicates that a frame dropped during encoding.
 
 

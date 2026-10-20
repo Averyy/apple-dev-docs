@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the function to call.
 
@@ -19,15 +20,20 @@ The name of the function to call.
 var name: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSString * name;
+```
+
 #### Discussion
 
-The name needs to match one of the functions in the stitched library descriptor’s [`functions`](mtlstitchedlibrarydescriptor/functions.md) property.
+The name needs to match one of the functions in the stitched library descriptor’s [`functions`](../mtlstitchedlibrarydescriptor/functions.md) property.
 
 ## See Also
 
-- [var arguments: [any MTLFunctionStitchingNode]](mtlfunctionstitchingfunctionnode/arguments.md)
+### Configuring a function node
+- [var arguments: [any MTLFunctionStitchingNode]](./arguments.md)
   An ordered list of the nodes that provide the function’s arguments.
-- [var controlDependencies: [MTLFunctionStitchingFunctionNode]](mtlfunctionstitchingfunctionnode/controldependencies.md)
+- [var controlDependencies: [MTLFunctionStitchingFunctionNode]](./controldependencies.md)
   The list of nodes that need to execute before executing the node.
 
 

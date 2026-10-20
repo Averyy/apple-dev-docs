@@ -1,12 +1,13 @@
 # NSPrintPanel.JobStyleHint
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify job style hints for activating the simplified Print panel interface and setting the options to display.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,41 +15,46 @@ Constants that specify job style hints for activating the simplified Print panel
 struct JobStyleHint
 ```
 
+```c
+typedef NSString * NSPrintPanelJobStyleHint;
+```
+
 ## Topics
 
 ### Constants
-- [static let photo: NSPrintPanel.JobStyleHint](nsprintpanel/jobstylehint-swift.struct/photo.md)
+- [static let photo: NSPrintPanel.JobStyleHint](./jobstylehint-swift.struct/photo.md)
   Output contains photographic data.
-- [static let allPresets: NSPrintPanel.JobStyleHint](nsprintpanel/jobstylehint-swift.struct/allpresets.md)
+- [static let allPresets: NSPrintPanel.JobStyleHint](./jobstylehint-swift.struct/allpresets.md)
   Output appropriate to all graphics types.
-- [static let noPresets: NSPrintPanel.JobStyleHint](nsprintpanel/jobstylehint-swift.struct/nopresets.md)
+- [static let noPresets: NSPrintPanel.JobStyleHint](./jobstylehint-swift.struct/nopresets.md)
   Output excludes all graphics printing.
 ### Initializers
-- [init(rawValue: String)](nsprintpanel/jobstylehint-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./jobstylehint-swift.struct/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var jobStyleHint: NSPrintPanel.JobStyleHint?](nsprintpanel/jobstylehint-swift.property.md)
+### Customizing the Panel
+- [var jobStyleHint: NSPrintPanel.JobStyleHint?](./jobstylehint-swift.property.md)
   The type of settings that the print panel displays.
-- [var options: NSPrintPanel.Options](nsprintpanel/options-swift.property.md)
+- [var options: NSPrintPanel.Options](./options-swift.property.md)
   The current configuration options for the Print panel.
-- [NSPrintPanel.Options](nsprintpanel/options-swift.struct.md)
+- [NSPrintPanel.Options](./options-swift.struct.md)
   Constants that specify options for configuring the contents of the main Print panel.
-- [func defaultButtonTitle() -> String?](nsprintpanel/defaultbuttontitle.md)
+- [func defaultButtonTitle() -> String?](./defaultbuttontitle%28%29.md)
   Returns the title of the Print panel’s default button.
-- [func setDefaultButtonTitle(String?)](nsprintpanel/setdefaultbuttontitle(_:).md)
+- [func setDefaultButtonTitle(String?)](./setdefaultbuttontitle%28_%29.md)
   Sets the title of the Print panel’s default button.
-- [var helpAnchor: NSHelpManager.AnchorName?](nsprintpanel/helpanchor.md)
+- [var helpAnchor: NSHelpManager.AnchorName?](./helpanchor.md)
   The HTML help anchor associated with the Print panel.
 
 

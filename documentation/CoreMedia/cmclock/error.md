@@ -1,7 +1,8 @@
 # CMClock.Error
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe clock errors.
 
@@ -23,22 +24,22 @@ struct Error
 ## Topics
 
 ### Constants
-- [static let allocationFailed: NSError](cmclock/error/allocationfailed.md)
+- [static let allocationFailed: NSError](./error/allocationfailed.md)
   An error that indicates the allocation fails.
-- [static let invalidParameter: NSError](cmclock/error/invalidparameter.md)
+- [static let invalidParameter: NSError](./error/invalidparameter.md)
   An error that indicates an invalid parameter.
-- [static let missingRequiredParameter: NSError](cmclock/error/missingrequiredparameter.md)
+- [static let missingRequiredParameter: NSError](./error/missingrequiredparameter.md)
   An error that indicates a missing parameter the function requires.
-- [static let unsupportedOperation: NSError](cmclock/error/unsupportedoperation.md)
+- [static let unsupportedOperation: NSError](./error/unsupportedoperation.md)
   An error that indicates an operation the system doesn’t support.
 ### Type Properties
-- [static let preferredStartTimeNotAvailable: NSError](cmclock/error/preferredstarttimenotavailable.md)
+- [static let preferredStartTimeNotAvailable: NSError](./error/preferredstarttimenotavailable.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

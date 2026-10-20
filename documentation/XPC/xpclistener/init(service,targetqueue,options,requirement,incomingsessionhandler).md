@@ -1,7 +1,8 @@
 # init(service:targetQueue:options:requirement:incomingSessionHandler:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a listener with the service defined by the provided name, and requires that the session peer has the specified requirement.
 

@@ -1,7 +1,8 @@
 # types
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of uniform type identifier strings of the data types that the receiver supports.
 
@@ -14,9 +15,14 @@ An array of uniform type identifier strings of the data types that the receiver 
 var types: [NSPasteboard.PasteboardType] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * types;
+```
+
 ## See Also
 
-- [func availableType(from: [NSPasteboard.PasteboardType]) -> NSPasteboard.PasteboardType?](nspasteboarditem/availabletype(from:).md)
+### Getting types
+- [func availableType(from: [NSPasteboard.PasteboardType]) -> NSPasteboard.PasteboardType?](./availabletype%28from%29.md)
   Returns from a given array of types the first type within the pasteboard item, according to the ordering of types.
 
 

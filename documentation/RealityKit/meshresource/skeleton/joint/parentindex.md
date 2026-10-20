@@ -1,7 +1,8 @@
 # parentIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of this joint’s parent, or nil if this joint has no parent.
 

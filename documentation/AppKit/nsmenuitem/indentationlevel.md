@@ -1,17 +1,22 @@
 # indentationLevel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item indentation level for the menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var indentationLevel: Int { get set }
+```
+
+```objc
+@property NSInteger indentationLevel;
 ```
 
 #### Discussion

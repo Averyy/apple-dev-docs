@@ -1,7 +1,8 @@
 # all
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Option to include all maps.
 

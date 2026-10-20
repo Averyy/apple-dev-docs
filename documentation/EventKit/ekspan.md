@@ -1,17 +1,18 @@
 # EKSpan
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that indicates whether modifications should apply to a single event or all future events of a recurring event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,29 +20,34 @@ An object that indicates whether modifications should apply to a single event or
 enum EKSpan
 ```
 
+```c
+enum EKSpan : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKSpan.thisEvent](ekspan/thisevent.md)
+- [EKSpan.thisEvent](./ekspan/thisevent.md)
   Modifications to this event instance should affect only this instance.
-- [EKSpan.futureEvents](ekspan/futureevents.md)
+- [EKSpan.futureEvents](./ekspan/futureevents.md)
   Modifications to this event instance should also affect future instances of this event.
 ### Initializers
-- [init?(rawValue: Int)](ekspan/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekspan/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(recurrenceWith: EKRecurrenceFrequency, interval: Int, end: EKRecurrenceEnd?)](ekrecurrencerule/init(recurrencewith:interval:end:).md)
+### Creating a Basic Recurrence Rule
+- [init(recurrenceWith: EKRecurrenceFrequency, interval: Int, end: EKRecurrenceEnd?)](./ekrecurrencerule/init%28recurrencewith,interval,end%29.md)
   Initializes and returns a simple recurrence rule with a given frequency, interval, and end.
 
 

@@ -1,7 +1,8 @@
 # confinementRect(for:on:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked to allow the delegate to specify a display location for the menu.
 
@@ -13,6 +14,10 @@ Invoked to allow the delegate to specify a display location for the menu.
 ```swift
 @MainActor
 optional func confinementRect(for menu: NSMenu, on screen: NSScreen?) -> NSRect
+```
+
+```objc
+- (NSRect) confinementRectForMenu:(NSMenu *) menu onScreen:(NSScreen *) screen;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ If you return `NSZeroRect`, or if the delegate doesn’t implement this method, 
 
 ## See Also
 
-- [func menu(NSMenu, update: NSMenuItem, at: Int, shouldCancel: Bool) -> Bool](nsmenudelegate/menu(_:update:at:shouldcancel:).md)
+### Updating Menu Layout
+- [func menu(NSMenu, update: NSMenuItem, at: Int, shouldCancel: Bool) -> Bool](./menu%28_,update,at,shouldcancel%29.md)
   Invoked to let the delegate update a menu item before it is displayed.
 
 

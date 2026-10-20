@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified index in the `Span`.
 
@@ -20,9 +21,11 @@ Accesses the element at the specified index in the `Span`.
 subscript(position: Span<Element>.Index) -> Element { get }
 ```
 
+Available when `Element` conforms to `BitwiseCopyable`.
+
 #### Overview
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

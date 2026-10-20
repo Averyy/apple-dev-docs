@@ -1,7 +1,8 @@
 # UIBlurEffect.Style
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Blur styles available for blur effect objects.
 
@@ -9,7 +10,7 @@ Blur styles available for blur effect objects.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,66 +19,70 @@ Blur styles available for blur effect objects.
 enum Style
 ```
 
+```c
+enum UIBlurEffectStyle : NSInteger;
+```
+
 ## Topics
 
 ### Adaptable styles
-- [UIBlurEffect.Style.systemUltraThinMaterial](uiblureffect/style/systemultrathinmaterial.md)
+- [UIBlurEffect.Style.systemUltraThinMaterial](./style/systemultrathinmaterial.md)
   An adaptable blur effect that creates the appearance of an ultra-thin material.
-- [UIBlurEffect.Style.systemThinMaterial](uiblureffect/style/systemthinmaterial.md)
+- [UIBlurEffect.Style.systemThinMaterial](./style/systemthinmaterial.md)
   An adaptable blur effect that creates the appearance of a thin material.
-- [UIBlurEffect.Style.systemMaterial](uiblureffect/style/systemmaterial.md)
+- [UIBlurEffect.Style.systemMaterial](./style/systemmaterial.md)
   An adaptable blur effect that creates the appearance of a material with normal thickness.
-- [UIBlurEffect.Style.systemThickMaterial](uiblureffect/style/systemthickmaterial.md)
+- [UIBlurEffect.Style.systemThickMaterial](./style/systemthickmaterial.md)
   An adaptable blur effect that creates the appearance of a material that’s thicker than normal.
-- [UIBlurEffect.Style.systemChromeMaterial](uiblureffect/style/systemchromematerial.md)
+- [UIBlurEffect.Style.systemChromeMaterial](./style/systemchromematerial.md)
   An adaptable blur effect that creates the appearance of the system chrome.
 ### Light styles
-- [UIBlurEffect.Style.systemUltraThinMaterialLight](uiblureffect/style/systemultrathinmateriallight.md)
+- [UIBlurEffect.Style.systemUltraThinMaterialLight](./style/systemultrathinmateriallight.md)
   A blur effect that creates the appearance of an ultra-thin material and is always light.
-- [UIBlurEffect.Style.systemThinMaterialLight](uiblureffect/style/systemthinmateriallight.md)
+- [UIBlurEffect.Style.systemThinMaterialLight](./style/systemthinmateriallight.md)
   A blur effect that creates the appearance of a thin material and is always light.
-- [UIBlurEffect.Style.systemMaterialLight](uiblureffect/style/systemmateriallight.md)
+- [UIBlurEffect.Style.systemMaterialLight](./style/systemmateriallight.md)
   A blur effect that creates the appearance of a material with normal thickness and is always light.
-- [UIBlurEffect.Style.systemThickMaterialLight](uiblureffect/style/systemthickmateriallight.md)
+- [UIBlurEffect.Style.systemThickMaterialLight](./style/systemthickmateriallight.md)
   A blur effect that creates the appearance of a material that’s thicker than normal and is always light.
-- [UIBlurEffect.Style.systemChromeMaterialLight](uiblureffect/style/systemchromemateriallight.md)
+- [UIBlurEffect.Style.systemChromeMaterialLight](./style/systemchromemateriallight.md)
   A blur effect that creates the appearance of the system chrome and is always light.
 ### Dark styles
-- [UIBlurEffect.Style.systemUltraThinMaterialDark](uiblureffect/style/systemultrathinmaterialdark.md)
+- [UIBlurEffect.Style.systemUltraThinMaterialDark](./style/systemultrathinmaterialdark.md)
   A blur effect that creates the appearance of an ultra-thin material and is always dark.
-- [UIBlurEffect.Style.systemThinMaterialDark](uiblureffect/style/systemthinmaterialdark.md)
+- [UIBlurEffect.Style.systemThinMaterialDark](./style/systemthinmaterialdark.md)
   A blur effect that creates the appearance of a thin material and is always dark.
-- [UIBlurEffect.Style.systemMaterialDark](uiblureffect/style/systemmaterialdark.md)
+- [UIBlurEffect.Style.systemMaterialDark](./style/systemmaterialdark.md)
   A blur effect that creates the appearance of a material with normal thickness and is always dark.
-- [UIBlurEffect.Style.systemThickMaterialDark](uiblureffect/style/systemthickmaterialdark.md)
+- [UIBlurEffect.Style.systemThickMaterialDark](./style/systemthickmaterialdark.md)
   A blur effect that creates the appearance of a material that’s thicker than normal and is always dark.
-- [UIBlurEffect.Style.systemChromeMaterialDark](uiblureffect/style/systemchromematerialdark.md)
+- [UIBlurEffect.Style.systemChromeMaterialDark](./style/systemchromematerialdark.md)
   A blur effect that creates the appearance of the system chrome and is always dark.
 ### Additional styles
-- [UIBlurEffect.Style.extraLight](uiblureffect/style/extralight.md)
+- [UIBlurEffect.Style.extraLight](./style/extralight.md)
   The area of the view is lighter than the underlying view.
-- [UIBlurEffect.Style.light](uiblureffect/style/light.md)
+- [UIBlurEffect.Style.light](./style/light.md)
   The area of the view is the same approximate lightness of the underlying view.
-- [UIBlurEffect.Style.dark](uiblureffect/style/dark.md)
+- [UIBlurEffect.Style.dark](./style/dark.md)
   The area of the view is darker than the underlying view.
-- [UIBlurEffect.Style.extraDark](uiblureffect/style/extradark.md)
+- [UIBlurEffect.Style.extraDark](./style/extradark.md)
   The area of the view is even more dark than the underlying view.
-- [UIBlurEffect.Style.regular](uiblureffect/style/regular.md)
+- [UIBlurEffect.Style.regular](./style/regular.md)
   A regular blur style that adapts to the user interface style.
-- [UIBlurEffect.Style.prominent](uiblureffect/style/prominent.md)
+- [UIBlurEffect.Style.prominent](./style/prominent.md)
   A blur style for making content more prominent that adapts to the user interface style.
 ### Initializers
-- [init?(rawValue: Int)](uiblureffect/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

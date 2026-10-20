@@ -1,7 +1,8 @@
 # AudioMixGroup
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A group that manages the playback properties of multiple playing sounds.
 
@@ -21,9 +22,9 @@ struct AudioMixGroup
 
 #### Overview
 
-A mix group component manages the playback parameters for a collection of different [`AudioPlaybackController`](audioplaybackcontroller.md) and [`AudioGeneratorController`](audiogeneratorcontroller.md) instances. Properties such as [`gain`](audiomixgroup/gain.md), [`fade(to:duration:)`](audiomixgroup/fade(to:duration:).md), and [`speed`](audiomixgroup/speed.md) are multiplicative with the parameters you set on the controller.
+A mix group component manages the playback parameters for a collection of different [`AudioPlaybackController`](./audioplaybackcontroller.md) and [`AudioGeneratorController`](./audiogeneratorcontroller.md) instances. Properties such as [`gain`](./audiomixgroup/gain.md), [`fade(to:duration:)`](./audiomixgroup/fade%28to,duration%29.md), and [`speed`](./audiomixgroup/speed.md) are multiplicative with the parameters you set on the controller.
 
-You  associate audio resources to a mix group by setting the `mixGroupName` parameter in the resource’s configuration. For an example, see [`mixGroupName`](audiofileresource/configuration-swift.struct/mixgroupname.md). Enable a mix group by adding it to an [`AudioMixGroupsComponent`](audiomixgroupscomponent.md) structure on an entity in the scene. The scene where the component belongs limits the scope of the mix group.
+You  associate audio resources to a mix group by setting the `mixGroupName` parameter in the resource’s configuration. For an example, see [`mixGroupName`](./audiofileresource/configuration-swift.struct/mixgroupname.md). Enable a mix group by adding it to an [`AudioMixGroupsComponent`](./audiomixgroupscomponent.md) structure on an entity in the scene. The scene where the component belongs limits the scope of the mix group.
 
 ```swift
 var mixGroup = AudioMixGroup(name: "myMixGroup")
@@ -33,32 +34,33 @@ entity.components.set(AudioMixGroupsComponent(mixGroups: [mixGroup]))
 ## Topics
 
 ### Initializers
-- [init(name: String)](audiomixgroup/init(name:).md)
+- [init(name: String)](./audiomixgroup/init%28name%29.md)
   Creates a mix group.
 ### Instance Properties
-- [var gain: Audio.Decibel](audiomixgroup/gain.md)
+- [var gain: Audio.Decibel](./audiomixgroup/gain.md)
   The overall level for all sounds of an audio mix group in relative decibels.
-- [var isMuted: Bool](audiomixgroup/ismuted.md)
+- [var isMuted: Bool](./audiomixgroup/ismuted.md)
   A Boolean value that indicates whether an audio mix group emits any sound.
-- [let name: String](audiomixgroup/name.md)
+- [let name: String](./audiomixgroup/name.md)
   The name of an audio mix group.
-- [var speed: Double](audiomixgroup/speed.md)
+- [var speed: Double](./audiomixgroup/speed.md)
   The rate of playback for an audio mix group.
 ### Instance Methods
-- [func fade(to: Audio.Decibel, duration: TimeInterval)](audiomixgroup/fade(to:duration:).md)
+- [func fade(to: Audio.Decibel, duration: TimeInterval)](./audiomixgroup/fade%28to,duration%29.md)
   Transitions the gain to a value over a time interval using a linear curve.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Mixing spatial music](mixing-spatial-music.md)
+### Audio mixing
+- [Mixing spatial music](./mixing-spatial-music.md)
   Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an immersive scene.
-- [struct AudioMixGroupsComponent](audiomixgroupscomponent.md)
+- [struct AudioMixGroupsComponent](./audiomixgroupscomponent.md)
   A component that provides functionality for controlling the playback of audio you assign to mix groups in a scene.
 
 

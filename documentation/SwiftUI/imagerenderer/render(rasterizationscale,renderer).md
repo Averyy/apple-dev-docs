@@ -1,7 +1,8 @@
 # render(rasterizationScale:renderer:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the renderer’s current contents to an arbitrary Core Graphics context.
 
@@ -23,20 +24,21 @@ final func render(rasterizationScale: CGFloat = 1, renderer: (CGSize, (CGContext
 
 #### Discussion
 
-Use this method to rasterize the renderer’s content to a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) you provide. The `renderer` closure receives two parameters: the current size of the view, and a function that renders the view to your `CGContext`. Implement the closure to provide a suitable `CGContext`, then invoke the function to render the content to that context.
+Use this method to rasterize the renderer’s content to a [`CGContext`](../../CoreGraphics/cgcontext.md) you provide. The `renderer` closure receives two parameters: the current size of the view, and a function that renders the view to your `CGContext`. Implement the closure to provide a suitable `CGContext`, then invoke the function to render the content to that context.
 
 ## Parameters
 
 - `rasterizationScale`: The scale factor for converting user interface points to pixels when rasterizing parts of the view that can’t be represented as native Core Graphics drawing commands.
-- `renderer`: The closure that sets up the Core Graphics context and renders the view. This closure receives two parameters: the size of the view and a function that you invoke in the closure to render the view at the reported size. This function takes a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) parameter, and assumes a bottom-left coordinate space origin.
+- `renderer`: The closure that sets up the Core Graphics context and renders the view. This closure receives two parameters: the size of the view and a function that you invoke in the closure to render the view at the reported size. This function takes a [`CGContext`](../../CoreGraphics/cgcontext.md) parameter, and assumes a bottom-left coordinate space origin.
 
 ## See Also
 
-- [var cgImage: CGImage?](imagerenderer/cgimage.md)
+### Rendering images
+- [var cgImage: CGImage?](./cgimage.md)
   The current contents of the view, rasterized as a Core Graphics image.
-- [var nsImage: NSImage?](imagerenderer/nsimage.md)
+- [var nsImage: NSImage?](./nsimage.md)
   The current contents of the view, rasterized as an AppKit image.
-- [var uiImage: UIImage?](imagerenderer/uiimage.md)
+- [var uiImage: UIImage?](./uiimage.md)
   The current contents of the view, rasterized as a UIKit image.
 
 

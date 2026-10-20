@@ -1,7 +1,8 @@
 # CMIOExtensionStream.Direction.sink
 
 **Framework**: Core Media I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A stream that consumes sample buffers for playback.
 
@@ -15,9 +16,14 @@ A stream that consumes sample buffers for playback.
 case sink
 ```
 
+```c
+CMIOExtensionStreamDirectionSink
+```
+
 ## See Also
 
-- [CMIOExtensionStream.Direction.source](cmioextensionstream/direction-swift.enum/source.md)
+### Directions
+- [CMIOExtensionStream.Direction.source](./source.md)
   A stream that provides sample buffers for capture.
 
 

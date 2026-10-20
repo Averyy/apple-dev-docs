@@ -1,7 +1,8 @@
 # secondaryTextureCoordinateTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A two-dimensional transformation RealityKit applies to the entity’s secondary texture coordinates.
 
@@ -39,7 +40,8 @@ The material’s shader function doesn’t have to do anything to apply the tran
 
 ## See Also
 
-- [var textureCoordinateTransform: CustomMaterial.TextureCoordinateTransform](custommaterial/texturecoordinatetransform-swift.property.md)
+### Modifying texture coordinates
+- [var textureCoordinateTransform: CustomMaterial.TextureCoordinateTransform](./texturecoordinatetransform-swift.property.md)
   A two-dimensional transformation RealityKit applies to the entity’s primary texture coordinates.
 
 

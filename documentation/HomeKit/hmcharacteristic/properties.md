@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of properties that describe the characteristic.
 
@@ -19,9 +20,13 @@ An array of properties that describe the characteristic.
 var properties: [String] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * properties;
+```
+
 #### Discussion
 
-Test a characteristic’s [`properties`](hmcharacteristic/properties.md) array for any of the constants listed in [`Characteristic Properties`](characteristic-properties.md) to learn something about the corresponding characteristic. For example, you can create a readability Boolean in an extension to the [`HMCharacteristic`](hmcharacteristic.md) class by testing for [`HMCharacteristicPropertyReadable`](hmcharacteristicpropertyreadable.md):
+Test a characteristic’s [`properties`](./properties.md) array for any of the constants listed in [Characteristic Properties](../characteristic-properties.md) to learn something about the corresponding characteristic. For example, you can create a readability Boolean in an extension to the [`HMCharacteristic`](../hmcharacteristic.md) class by testing for [`HMCharacteristicPropertyReadable`](../hmcharacteristicpropertyreadable.md):
 
 ```swift
 extension HMCharacteristic {
@@ -33,7 +38,8 @@ extension HMCharacteristic {
 
 ## See Also
 
-- [Characteristic Properties](characteristic-properties.md)
+### Reading characteristic properties
+- [Characteristic Properties](../characteristic-properties.md)
   The properties that characteristics can have.
 
 

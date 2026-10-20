@@ -1,7 +1,8 @@
 # isPressed
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the user is currently pressing the button.
 

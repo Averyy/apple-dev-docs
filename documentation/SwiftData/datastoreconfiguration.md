@@ -1,7 +1,8 @@
 # DataStoreConfiguration
 
 **Framework**: SwiftData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -22,27 +23,28 @@ protocol DataStoreConfiguration : Hashable
 ## Topics
 
 ### Associated Types
-- [associatedtype Store : DataStore](datastoreconfiguration/store.md)
+- [associatedtype Store : DataStore](./datastoreconfiguration/store.md)
 ### Instance Properties
-- [var name: String](datastoreconfiguration/name.md)
-- [var schema: Schema?](datastoreconfiguration/schema.md)
+- [var name: String](./datastoreconfiguration/name.md)
+- [var schema: Schema?](./datastoreconfiguration/schema.md)
 ### Instance Methods
-- [func validate() throws](datastoreconfiguration/validate.md)
+- [func validate() throws](./datastoreconfiguration/validate%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 ### Conforming Types
-- [ModelConfiguration](modelconfiguration.md)
+- [ModelConfiguration](./modelconfiguration.md)
 
 ## See Also
 
-- [var configuration: Self.Configuration](datastore/configuration-swift.property.md)
-- [associatedtype Configuration : DataStoreConfiguration](datastore/configuration-swift.associatedtype.md)
-- [var identifier: String](datastore/identifier.md)
-- [var schema: Schema](datastore/schema.md)
+### Accessing store information
+- [var configuration: Self.Configuration](./datastore/configuration-swift.property.md)
+- [associatedtype Configuration : DataStoreConfiguration](./datastore/configuration-swift.associatedtype.md)
+- [var identifier: String](./datastore/identifier.md)
+- [var schema: Schema](./datastore/schema.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # createRealtimeAVBPacketPool
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+ - Deprecated in 14.0
 
 ## Declaration
 
-```swift
+```c
 IOReturn createRealtimeAVBPacketPool(size_t poolSize);
 ```
 

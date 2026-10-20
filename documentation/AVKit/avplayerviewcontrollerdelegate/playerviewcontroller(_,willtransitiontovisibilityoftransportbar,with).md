@@ -1,7 +1,8 @@
 # playerViewController(_:willTransitionToVisibilityOfTransportBar:with:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the transport bar’s visibility is about to change.
 
@@ -14,6 +15,10 @@ Tells the delegate when the transport bar’s visibility is about to change.
 optional func playerViewController(_ playerViewController: AVPlayerViewController, willTransitionToVisibilityOfTransportBar visible: Bool, with coordinator: any AVPlayerViewControllerAnimationCoordinator)
 ```
 
+```objc
+- (void) playerViewController:(AVPlayerViewController *) playerViewController willTransitionToVisibilityOfTransportBar:(BOOL) visible withAnimationCoordinator:(id<AVPlayerViewControllerAnimationCoordinator>) coordinator;
+```
+
 ## Parameters
 
 - `playerViewController`: The player view controller.
@@ -22,7 +27,8 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 ## See Also
 
-- [protocol AVPlayerViewControllerAnimationCoordinator](avplayerviewcontrolleranimationcoordinator.md)
+### Responding to transport bar changes
+- [protocol AVPlayerViewControllerAnimationCoordinator](../avplayerviewcontrolleranimationcoordinator.md)
   A protocol that defines the methods to implement to synchronize animations with playback controls’ visibility animation.
 
 

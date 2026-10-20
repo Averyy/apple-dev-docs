@@ -1,7 +1,8 @@
 # allowsOverdamping
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -17,10 +18,15 @@
 var allowsOverdamping: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsOverdamping;
+```
+
 ## See Also
 
-- [var bounce: CGFloat](caspringanimation/bounce.md)
-- [var perceptualDuration: CFTimeInterval](caspringanimation/perceptualduration.md)
+### Instance Properties
+- [var bounce: CGFloat](./bounce.md)
+- [var perceptualDuration: CFTimeInterval](./perceptualduration.md)
 
 
 ---

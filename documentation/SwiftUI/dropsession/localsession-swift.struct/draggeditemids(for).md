@@ -1,7 +1,8 @@
 # draggedItemIDs(for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an array of identifiers of the currently dragged items if available.
 

@@ -1,7 +1,8 @@
 # CMFormatDescriptionGetMediaType(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the media type of a format description.
 
@@ -20,13 +21,17 @@ Returns the media type of a format description.
 func CMFormatDescriptionGetMediaType(_ desc: CMFormatDescription) -> CMMediaType
 ```
 
+```c
+extern CMMediaType CMFormatDescriptionGetMediaType(CMFormatDescriptionRef desc);
+```
+
 #### Return Value
 
 A media type that identifies the format description.
 
 #### Discussion
 
-For example, this function returns [`kCMMediaType_Audio`](kcmmediatype_audio.md) for a description of an audio stream.
+For example, this function returns [`kCMMediaType_Audio`](./kcmmediatype_audio.md) for a description of an audio stream.
 
 ## Parameters
 
@@ -34,13 +39,14 @@ For example, this function returns [`kCMMediaType_Audio`](kcmmediatype_audio.md)
 
 ## See Also
 
-- [func CMFormatDescriptionGetMediaSubType(CMFormatDescription) -> FourCharCode](cmformatdescriptiongetmediasubtype(_:).md)
+### Inspecting Format Descriptions
+- [func CMFormatDescriptionGetMediaSubType(CMFormatDescription) -> FourCharCode](./cmformatdescriptiongetmediasubtype%28_%29.md)
   Returns the media subtype of a format description.
-- [func CMFormatDescriptionGetExtension(CMFormatDescription, extensionKey: CFString) -> CFPropertyList?](cmformatdescriptiongetextension(_:extensionkey:).md)
+- [func CMFormatDescriptionGetExtension(CMFormatDescription, extensionKey: CFString) -> CFPropertyList?](./cmformatdescriptiongetextension%28_,extensionkey%29.md)
   Returns an extension from the format description by using an extension key.
-- [func CMFormatDescriptionGetExtensions(CMFormatDescription) -> CFDictionary?](cmformatdescriptiongetextensions(_:).md)
+- [func CMFormatDescriptionGetExtensions(CMFormatDescription) -> CFDictionary?](./cmformatdescriptiongetextensions%28_%29.md)
   Returns all of the extensions for a format description.
-- [func CMFormatDescriptionGetTypeID() -> CFTypeID](cmformatdescriptiongettypeid().md)
+- [func CMFormatDescriptionGetTypeID() -> CFTypeID](./cmformatdescriptiongettypeid%28%29.md)
   Returns the Core Foundation type identifier that identifies format description objects.
 
 

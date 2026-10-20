@@ -1,7 +1,8 @@
 # clip(to:style:options:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a path to the context’s array of clip shapes.
 
@@ -26,17 +27,18 @@ Call this method to add a shape to the array of clip shapes that the context use
 
 ## Parameters
 
-- `path`: A [`Path`](path.md) that defines the shape of the clipping mask.
-- `style`: A [`FillStyle`](fillstyle.md) that defines how to rasterize the shape.
-- `options`: Clip options that tell SwiftUI how to interpret the `path` as a clip shape. For example, you can invert the clip shape by setting the [`inverse`](graphicscontext/clipoptions/inverse.md) option.
+- `path`: A [`Path`](../path.md) that defines the shape of the clipping mask.
+- `style`: A [`FillStyle`](../fillstyle.md) that defines how to rasterize the shape.
+- `options`: Clip options that tell SwiftUI how to interpret the `path` as a clip shape. For example, you can invert the clip shape by setting the [`inverse`](./clipoptions/inverse.md) option.
 
 ## See Also
 
-- [func clipToLayer(opacity: Double, options: GraphicsContext.ClipOptions, content: (inout GraphicsContext) throws -> Void) rethrows](graphicscontext/cliptolayer(opacity:options:content:).md)
+### Masking
+- [func clipToLayer(opacity: Double, options: GraphicsContext.ClipOptions, content: (inout GraphicsContext) throws -> Void) rethrows](./cliptolayer%28opacity,options,content%29.md)
   Adds a clip shape that you define in a new layer to the context’s array of clip shapes.
-- [var clipBoundingRect: CGRect](graphicscontext/clipboundingrect.md)
+- [var clipBoundingRect: CGRect](./clipboundingrect.md)
   The bounding rectangle of the intersection of all current clip shapes in the current user space.
-- [GraphicsContext.ClipOptions](graphicscontext/clipoptions.md)
+- [GraphicsContext.ClipOptions](./clipoptions.md)
   Options that affect the use of clip shapes.
 
 

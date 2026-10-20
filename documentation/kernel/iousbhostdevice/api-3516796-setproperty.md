@@ -1,14 +1,15 @@
 # setProperty
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool setProperty(const char *aKey, unsigned long long aValue, unsigned int aNumberOfBits);
 ```
 

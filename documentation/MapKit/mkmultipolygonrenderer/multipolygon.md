@@ -1,7 +1,8 @@
 # multiPolygon
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The multipolygon object that the renderer uses to draw the overlay’s contents.
 
@@ -17,6 +18,10 @@ The multipolygon object that the renderer uses to draw the overlay’s contents.
 
 ```swift
 var multiPolygon: MKMultiPolygon { get }
+```
+
+```objc
+@property (nonatomic, readonly) MKMultiPolygon * multiPolygon;
 ```
 
 

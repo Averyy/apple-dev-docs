@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.modifierSymbol
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A non-letterlike modifier symbol.
 
@@ -22,7 +23,7 @@ case modifierSymbol
 
 #### Discussion
 
-This value corresponds to the category `Modifier_Symbol` (abbreviated `Sk`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Modifier_Symbol` (abbreviated `Sk`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

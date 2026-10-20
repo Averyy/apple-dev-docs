@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the receiver’s download and deletes the downloaded file.
 
@@ -14,9 +15,13 @@ Cancels the receiver’s download and deletes the downloaded file.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
-This method deletes the partially downloaded file unless you have previously called [`deletesFileUponFailure`](nsurldownload/deletesfileuponfailure.md), passing [`false`](https://developer.apple.com/documentation/swift/false).
+This method deletes the partially downloaded file unless you have previously called [`deletesFileUponFailure`](./deletesfileuponfailure.md), passing [`false`](../../Swift/false.md).
 
 
 ---

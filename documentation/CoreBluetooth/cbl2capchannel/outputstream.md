@@ -1,7 +1,8 @@
 # outputStream
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stream used for writing data to the peer.
 
@@ -20,9 +21,14 @@ The stream used for writing data to the peer.
 var outputStream: OutputStream! { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSOutputStream * outputStream;
+```
+
 ## See Also
 
-- [var inputStream: InputStream!](cbl2capchannel/inputstream.md)
+### Accessing Streams
+- [var inputStream: InputStream!](./inputstream.md)
   The stream used for reading data from the remote peer.
 
 

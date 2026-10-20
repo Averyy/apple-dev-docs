@@ -2,6 +2,7 @@
 
 **Framework**: CarKey  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies your delegate object that the session become invalid for the specified reason.
@@ -26,7 +27,7 @@ Use this method to detect if the system invalidated the session for any reason. 
 ## Parameters
 
 - `session`: The session that became invalid.
-- `didInvalidateWithError`: The error code that contains the reason for the invalid session. For a list of possible values, see [`CarKeyErrorCode`](carkeyerrorcode.md).
+- `didInvalidateWithError`: The error code that contains the reason for the invalid session. For a list of possible values, see [`CarKeyErrorCode`](../carkeyerrorcode.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # managedObjectModel
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinator’s managed object model.
 
@@ -10,7 +11,7 @@ The coordinator’s managed object model.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ The coordinator’s managed object model.
 var managedObjectModel: NSManagedObjectModel { get }
 ```
 
+```objc
+@property (strong, readonly) NSManagedObjectModel * managedObjectModel;
+```
+
 ## See Also
 
-- [var name: String?](nspersistentstorecoordinator/name.md)
+### Managing configuration
+- [var name: String?](./name.md)
   The coordinator’s name.
-- [var persistentStores: [NSPersistentStore]](nspersistentstorecoordinator/persistentstores.md)
+- [var persistentStores: [NSPersistentStore]](./persistentstores.md)
   The coordinator’s persistent stores.
 
 

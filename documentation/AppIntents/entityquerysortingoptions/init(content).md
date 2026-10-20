@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ init(@EntityQuerySortingOptionsBuilder<Entity> content: () -> [EntityQuerySortab
 
 ## See Also
 
-- [enum EntityQuerySortingOptionsBuilder](entityquerysortingoptionsbuilder.md)
+### Creating the sorting options
+- [enum EntityQuerySortingOptionsBuilder](../entityquerysortingoptionsbuilder.md)
   A result builder that allows you to declaratively describe the sorting options for an entity query.
 
 

@@ -1,7 +1,8 @@
 # MTRFanControlFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,29 +19,33 @@
 struct MTRFanControlFeature
 ```
 
+```c
+enum MTRFanControlFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrfancontrolfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrfancontrolfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var airflowDirection: MTRFanControlFeature](mtrfancontrolfeature/airflowdirection.md)
-- [static var auto: MTRFanControlFeature](mtrfancontrolfeature/auto.md)
-- [static var multiSpeed: MTRFanControlFeature](mtrfancontrolfeature/multispeed.md)
-- [static var rocking: MTRFanControlFeature](mtrfancontrolfeature/rocking.md)
-- [static var step: MTRFanControlFeature](mtrfancontrolfeature/step.md)
-- [static var wind: MTRFanControlFeature](mtrfancontrolfeature/wind.md)
+- [static var airflowDirection: MTRFanControlFeature](./mtrfancontrolfeature/airflowdirection.md)
+- [static var auto: MTRFanControlFeature](./mtrfancontrolfeature/auto.md)
+- [static var multiSpeed: MTRFanControlFeature](./mtrfancontrolfeature/multispeed.md)
+- [static var rocking: MTRFanControlFeature](./mtrfancontrolfeature/rocking.md)
+- [static var step: MTRFanControlFeature](./mtrfancontrolfeature/step.md)
+- [static var wind: MTRFanControlFeature](./mtrfancontrolfeature/wind.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

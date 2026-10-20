@@ -1,7 +1,8 @@
 # UINavigationBar
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The initial navigation bar’s style and translucency.
 
@@ -12,9 +13,10 @@ The initial navigation bar’s style and translucency.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `UINavigationBar` (Navigation bar)
+- **Type**: dictionary
 
 #### Discussion
 
@@ -27,13 +29,13 @@ The possible dictionary keys and values are:
 ## Topics
 
 ### Navigation Bar Configuration
-- [TintColor](information-property-list/uistatusbartintparameters/uinavigationbar/tintcolor.md)
+- [TintColor](./uinavigationbar/tintcolor.md)
   The tint color to apply to the background of the navigation bar.
 
 ## Properties
 
 - `BackgroundImage` (string)
-- `Style` (string)
+- `Style` (string): **Default**: `UIBarStyleDefault`; **Allowed Values**: `UIBarStyleDefault`, `UIBarStyleBlack`
 - `Translucent` (boolean)
 
 

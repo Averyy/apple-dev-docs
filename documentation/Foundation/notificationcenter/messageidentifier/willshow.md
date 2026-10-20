@@ -1,7 +1,8 @@
 # willShow
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willShow: NotificationCenter.BaseMessageIdentifier<NSPopover.WillShowMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSPopover.WillShowMessage>`.
 
 
 ---

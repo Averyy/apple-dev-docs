@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An optional manual score for this work. If `nil`, the work score can be synthesized from the question data and associated annotations.
@@ -10,7 +11,7 @@ An optional manual score for this work. If `nil`, the work score can be synthesi
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

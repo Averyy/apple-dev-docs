@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: ExtensionFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the host app’s connection to the app extension process.
 
@@ -22,7 +23,7 @@ func invalidate()
 
 ## Mentions
 
-- [Adding support for app extensions to your app](adding-support-for-app-extensions-to-your-app.md)
+- [Adding support for app extensions to your app](../adding-support-for-app-extensions-to-your-app.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCReferenceNumber
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The reference number.
 
@@ -20,31 +21,36 @@ The reference number.
 let kCGImagePropertyIPTCReferenceNumber: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCReferenceNumber;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCReleaseDate: CFString](kcgimagepropertyiptcreleasedate.md)
+### Release Information
+- [let kCGImagePropertyIPTCReleaseDate: CFString](./kcgimagepropertyiptcreleasedate.md)
   The earliest day on which you can use the image, in the form CCYYMMDD.
-- [let kCGImagePropertyIPTCReleaseTime: CFString](kcgimagepropertyiptcreleasetime.md)
+- [let kCGImagePropertyIPTCReleaseTime: CFString](./kcgimagepropertyiptcreleasetime.md)
   The earliest time at which you can use the image, in the form HHMMSS.
-- [let kCGImagePropertyIPTCExpirationDate: CFString](kcgimagepropertyiptcexpirationdate.md)
+- [let kCGImagePropertyIPTCExpirationDate: CFString](./kcgimagepropertyiptcexpirationdate.md)
   The latest date you can use the image, in the form CCYYMMDD.
-- [let kCGImagePropertyIPTCExpirationTime: CFString](kcgimagepropertyiptcexpirationtime.md)
+- [let kCGImagePropertyIPTCExpirationTime: CFString](./kcgimagepropertyiptcexpirationtime.md)
   The latest time on the expiration date you can use the image, in the form HHMMSS.
-- [let kCGImagePropertyIPTCSpecialInstructions: CFString](kcgimagepropertyiptcspecialinstructions.md)
+- [let kCGImagePropertyIPTCSpecialInstructions: CFString](./kcgimagepropertyiptcspecialinstructions.md)
   Special instructions about the use of the image.
-- [let kCGImagePropertyIPTCActionAdvised: CFString](kcgimagepropertyiptcactionadvised.md)
+- [let kCGImagePropertyIPTCActionAdvised: CFString](./kcgimagepropertyiptcactionadvised.md)
   The advised action.
-- [let kCGImagePropertyIPTCReferenceService: CFString](kcgimagepropertyiptcreferenceservice.md)
+- [let kCGImagePropertyIPTCReferenceService: CFString](./kcgimagepropertyiptcreferenceservice.md)
   The reference service.
-- [let kCGImagePropertyIPTCReferenceDate: CFString](kcgimagepropertyiptcreferencedate.md)
+- [let kCGImagePropertyIPTCReferenceDate: CFString](./kcgimagepropertyiptcreferencedate.md)
   The reference date.
-- [let kCGImagePropertyIPTCDateCreated: CFString](kcgimagepropertyiptcdatecreated.md)
+- [let kCGImagePropertyIPTCDateCreated: CFString](./kcgimagepropertyiptcdatecreated.md)
   The creation date.
-- [let kCGImagePropertyIPTCTimeCreated: CFString](kcgimagepropertyiptctimecreated.md)
+- [let kCGImagePropertyIPTCTimeCreated: CFString](./kcgimagepropertyiptctimecreated.md)
   The creation time.
-- [let kCGImagePropertyIPTCDigitalCreationDate: CFString](kcgimagepropertyiptcdigitalcreationdate.md)
+- [let kCGImagePropertyIPTCDigitalCreationDate: CFString](./kcgimagepropertyiptcdigitalcreationdate.md)
   The digital creation date.
-- [let kCGImagePropertyIPTCDigitalCreationTime: CFString](kcgimagepropertyiptcdigitalcreationtime.md)
+- [let kCGImagePropertyIPTCDigitalCreationTime: CFString](./kcgimagepropertyiptcdigitalcreationtime.md)
   The digital creation time.
 
 

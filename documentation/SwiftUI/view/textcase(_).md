@@ -1,7 +1,8 @@
 # textCase(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a transform for the case of the text contained in this view when displayed.
 
@@ -31,29 +32,30 @@ The default value is `nil`, displaying the text without any case changes.
 
 ## Parameters
 
-- `textCase`: One of the [`Text.Case`](text/case.md) enumerations; the default is `nil`.
+- `textCase`: One of the [`Text.Case`](../text/case.md) enumerations; the default is `nil`.
 
 ## See Also
 
-- [func bold(Bool) -> some View](view/bold(_:).md)
+### Controlling text style
+- [func bold(Bool) -> some View](./bold%28_%29.md)
   Applies a bold font weight to the text in this view.
-- [func italic(Bool) -> some View](view/italic(_:).md)
+- [func italic(Bool) -> some View](./italic%28_%29.md)
   Applies italics to the text in this view.
-- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/underline(_:pattern:color:).md)
+- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](./underline%28_,pattern,color%29.md)
   Applies an underline to the text in this view.
-- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/strikethrough(_:pattern:color:).md)
+- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](./strikethrough%28_,pattern,color%29.md)
   Applies a strikethrough to the text in this view.
-- [var textCase: Text.Case?](environmentvalues/textcase.md)
+- [var textCase: Text.Case?](../environmentvalues/textcase.md)
   A stylistic override to transform the case of `Text` when displayed, using the environment’s locale.
-- [func monospaced(Bool) -> some View](view/monospaced(_:).md)
+- [func monospaced(Bool) -> some View](./monospaced%28_%29.md)
   Modifies the fonts of all child views to use the fixed-width variant of the current font, if possible.
-- [func monospacedDigit() -> some View](view/monospaceddigit.md)
+- [func monospacedDigit() -> some View](./monospaceddigit%28%29.md)
   Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
-- [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+- [protocol AttributedTextFormattingDefinition](../attributedtextformattingdefinition.md)
   A protocol for defining how text can be styled in a view.
-- [protocol AttributedTextValueConstraint](attributedtextvalueconstraint.md)
+- [protocol AttributedTextValueConstraint](../attributedtextvalueconstraint.md)
   A protocol for defining a constraint on the value of a certain attribute.
-- [enum AttributedTextFormatting](attributedtextformatting.md)
+- [enum AttributedTextFormatting](../attributedtextformatting.md)
   A namespace for types related to attributed text formatting definitions.
 
 

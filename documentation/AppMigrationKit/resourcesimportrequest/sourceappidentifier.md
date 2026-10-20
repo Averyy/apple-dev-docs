@@ -1,7 +1,8 @@
 # sourceAppIdentifier
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The application that exported the content.
 
@@ -21,9 +22,10 @@ Use this identifier to validate that the imported data comes from a trusted sour
 
 ## See Also
 
-- [struct MigrationAppIdentifier](migrationappidentifier.md)
+### Inspecting import request properties
+- [struct MigrationAppIdentifier](../migrationappidentifier.md)
   A type that identifies an app on a different platform.
-- [let sourceVersion: String](resourcesimportrequest/sourceversion.md)
+- [let sourceVersion: String](./sourceversion.md)
   The data format version provided by the source application.
 
 

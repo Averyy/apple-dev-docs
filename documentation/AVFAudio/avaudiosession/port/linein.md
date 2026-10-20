@@ -1,7 +1,8 @@
 # lineIn
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A line-level input from the dock connector.
 
@@ -19,13 +20,18 @@ A line-level input from the dock connector.
 static let lineIn: AVAudioSession.Port
 ```
 
+```c
+extern AVAudioSessionPort const AVAudioSessionPortLineIn;
+```
+
 ## See Also
 
-- [static let builtInMic: AVAudioSession.Port](avaudiosession/port/builtinmic.md)
+### Getting input ports
+- [static let builtInMic: AVAudioSession.Port](./builtinmic.md)
   An input from a device’s built-in microphone.
-- [static let continuityMicrophone: AVAudioSession.Port](avaudiosession/port/continuitymicrophone.md)
+- [static let continuityMicrophone: AVAudioSession.Port](./continuitymicrophone.md)
   An input from a Continuity Microphone on Apple TV.
-- [static let headsetMic: AVAudioSession.Port](avaudiosession/port/headsetmic.md)
+- [static let headsetMic: AVAudioSession.Port](./headsetmic.md)
   An input from a wired headset’s built-in microphone.
 
 

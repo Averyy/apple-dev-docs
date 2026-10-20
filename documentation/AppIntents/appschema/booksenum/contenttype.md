@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enum schema for a content type parameter.
 
@@ -20,7 +21,7 @@ var contentType: some AppSchemaEnum { get }
 
 #### Discussion
 
-To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `books` domain and a parameter type matches the `contentType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .books.contentType)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s parameter types available to Apple Intelligence, conform your [`AppEnum`](../../appenum.md) to a schema that describes a parameter’s possible values to the system. If your app’s functionality aligns with the `books` domain and a parameter type matches the `contentType` schema, you can generate the protocol conformance the schema requires for your app enum implementation with the `@AppEnum( .books.contentType)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an app enum that conforms to the `contentType` schema:
 
@@ -39,29 +40,30 @@ The schema supports the following system experiences:
 
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var font: some AppSchemaEnum](appschema/booksenum/font.md)
+### Types for static parameters
+- [var font: some AppSchemaEnum](./font.md)
   An enum schema for a font parameter.
-- [var fontSize: some AppSchemaEnum](appschema/booksenum/fontsize.md)
+- [var fontSize: some AppSchemaEnum](./fontsize.md)
   An enum schema for a font size parameter.
-- [var navigationDirection: some AppSchemaEnum](appschema/booksenum/navigationdirection.md)
+- [var navigationDirection: some AppSchemaEnum](./navigationdirection.md)
   An enum schema for a navigation direction parameter.
-- [var pageNavigationSetting: some AppSchemaEnum](appschema/booksenum/pagenavigationsetting.md)
+- [var pageNavigationSetting: some AppSchemaEnum](./pagenavigationsetting.md)
   An enum schema for a page navigation setting parameter.
-- [var relativeCharacterSpacingChange: some AppSchemaEnum](appschema/booksenum/relativecharacterspacingchange.md)
+- [var relativeCharacterSpacingChange: some AppSchemaEnum](./relativecharacterspacingchange.md)
   An enum schema for a relative character spacing change parameter.
-- [var relativeFontChange: some AppSchemaEnum](appschema/booksenum/relativefontchange.md)
+- [var relativeFontChange: some AppSchemaEnum](./relativefontchange.md)
   An enum schema for a relative font change parameter.
-- [var relativeLineSpacingChange: some AppSchemaEnum](appschema/booksenum/relativelinespacingchange.md)
+- [var relativeLineSpacingChange: some AppSchemaEnum](./relativelinespacingchange.md)
   An enum schema for a relative line spacing change parameter.
-- [var relativeWordSpacingChange: some AppSchemaEnum](appschema/booksenum/relativewordspacingchange.md)
+- [var relativeWordSpacingChange: some AppSchemaEnum](./relativewordspacingchange.md)
   An enum schema for a relative word spacing change parameter.
-- [var theme: some AppSchemaEnum](appschema/booksenum/theme.md)
+- [var theme: some AppSchemaEnum](./theme.md)
   An enum schema for a theme parameter.
-- [AppSchema.BooksEnum](appschema/booksenum.md)
+- [AppSchema.BooksEnum](../booksenum.md)
   Identifies enum schemas in the books domain.
 
 

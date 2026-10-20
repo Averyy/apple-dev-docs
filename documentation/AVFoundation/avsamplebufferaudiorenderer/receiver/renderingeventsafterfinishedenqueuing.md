@@ -1,7 +1,8 @@
 # renderingEventsAfterFinishedEnqueuing
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sequence of events that may occur when rendering after enqueuing samples has finished.
 
@@ -26,7 +27,8 @@ After enqueuing samples, iterate over this sequence to discover any issues that 
 
 ## See Also
 
-- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent](avsamplebufferaudiorenderer/receiver/renderingevent.md)
+### Observing rendering events
+- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent](./renderingevent.md)
   Events that might require intervention after there are no more samples to enqueue, but before rendering has finished.
 
 

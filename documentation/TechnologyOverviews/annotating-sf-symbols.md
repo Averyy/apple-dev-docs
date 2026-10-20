@@ -28,7 +28,7 @@ The SF Symbols app writes annotation data to your symbol’s SVG file when you e
 </g>
 ```
 
-#### Configure Rendering Modes
+#### Configure rendering modes
 
 To adjust your symbol’s appearance in rendering modes other than monochrome, select your symbol and enter the gallery view by choosing View > As Gallery. Open the rendering inspector by choosing View > Inspectors > Rendering Inspector, and then select the rendering mode to start annotating.
 
@@ -38,15 +38,15 @@ The center preview lets you interact with all the paths and assign them to layer
 
 > 💡 **Tip**:  When using system-provided or fully defined asset catalog colors, your symbols adapt to changes in the system’s appearance — light, dark, and high-contrast modes — and in different vibrancy contexts.
 
-#### Add Animations to Your Symbol
+#### Add animations to your symbol
 
 Define custom animation behaviors for the Rotate, Pulse, Draw On, and Draw Off effects. With your custom symbol selected in the gallery view, switch to the animation inspector by choosing View > Inspectors > Animation Inspector.
 
-For animation demonstrations, see [`Human Interface Guidelines > SF Symbols > Animations`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/sf-symbols#Animations).
+For animation demonstrations, see [Human Interface Guidelines > SF Symbols > Animations](https://developer.apple.com/design/human-interface-guidelines/sf-symbols#Animations).
 
 > **Note**:  This article doesn’t cover every animation effect, because many don’t require annotations.
 
-#### Adjust Rotation Behavior
+#### Adjust rotation behavior
 
 If a symbol doesn’t define rotation behavior by layer, the entire symbol rotates over the center point of the defined guidelines. To customize this, adjust which layers rotate, as well as the point they rotate around. Choose the Rotate animation, and in the Animate section, choose By Layer. In the Layers pane below, locate the layer that you want to rotate, click the ellipsis button, and turn on Can Rotate.
 
@@ -64,7 +64,7 @@ The `-sfsymbols-always-rotates:true` attribute in a layer’s style for each ren
 </style>
 ```
 
-#### Configure Which Layers Pulse
+#### Configure which layers pulse
 
 If individual layers aren’t set to pulse, the Pulse effect applies to the entire symbol. Define which layers pulse in the animation inspector. In the Layers pane, locate the layer that you want to pulse, click the ellipsis button, and turn on Can Pulse. The annotation for pulse appears as the `-sfsymbols-always-pulses:true` attribute in the layer’s style.
 
@@ -76,13 +76,13 @@ If individual layers aren’t set to pulse, the Pulse effect applies to the enti
 </style>
 ```
 
-#### Define Guide Points for Draw on and Draw Off
+#### Define guide points for Draw On and Draw Off
 
 The Draw On and Draw Off effects use the same set of annotation data; defining one defines the other. The draw effect allows a symbol to appear incrementally along its defined paths. Given a simple line, annotate the symbol to draw from left to right, right to left, or start from an interior point and draw in both directions. Draw On is the inverse of Draw Off.
 
 To annotate, select a custom symbol, and in the animation inspector, set the animation to Draw On. Next, in the Layers pane, select a layer. At the top right of the gallery, the Draw toolbar consists of three icons. The leftmost play-like triangle button enables the annotation tool to add, remove, or edit guide points. If no guide points are present, the system marks the first point you add as the starting point. When you add a second point, an arrow between the two points indicates the draw direction. On a simple path, you may only need a start and end point. Add intermediate guide points on more complex paths.
 
-To learn more about guide points, see [`What’s new in SF Symbols 7 > Custom Symbols`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/337/?time=482).
+To learn more about guide points, see [What’s new in SF Symbols 7 > Custom Symbols](https://developer.apple.com/videos/play/wwdc2025/337/?time=482).
 
 The annotation data for guide points appears as the `data-clipstroke-keyframes` attribute on each variant’s path.
 
@@ -94,7 +94,7 @@ The annotation data for guide points appears as the `data-clipstroke-keyframes` 
 </g>
 ```
 
-#### Configure Variable Color Rendering
+#### Configure variable color rendering
 
 Variable relates to both color and drawing. When a symbol provides variable color mode, it can define the order in which layers dim and become fully visible. A symbol must have multiple layers defined for variable color to work. To add these annotations, start by selecting a custom multilayer symbol and viewing it in gallery view.
 
@@ -129,7 +129,7 @@ The annotation data for variable color appears as the `-sfsymbols-variable-thres
 </style>
 ```
 
-#### Configure Variable Draw
+#### Configure variable draw
 
 When a symbol provides variable draw, it defines which layers incrementally draw. As you increase the variable value, layers incrementally draw on; as you decrease it, they draw off. To add these annotations, select a custom symbol that’s configured for Draw On and Draw Off.
 
@@ -155,7 +155,7 @@ When multiple layers participate in variable draw, they draw in sequential order
 
 > **Note**:  A symbol can support both variable color and draw, but can’t perform both at the same time.
 
-#### Define Animation Defaults
+#### Define animation defaults
 
 Define defaults for many of the animation effects used by custom symbols. By providing defaults, you don’t need to specify certain parameters in code when you use the symbol. Define defaults by clicking the button with three sliders in the lower-right corner of the app while an inspector view is visible.
 
@@ -167,7 +167,7 @@ These defaults appear in the `<style>` tag as follows:
 </style>
 ```
 
-#### Distribute Your Custom Symbol
+#### Distribute your custom symbol
 
 After you annotate your custom symbol and are ready to distribute it, export it for use in your app. Use File > Export Symbol to produce an SVG file with all of the annotations. The export window provides a preview and an option to change Xcode compatibility. Some annotation features may not be available in the Xcode versions not selected by default. Xcode produces build errors when using an incompatible version.
 
@@ -175,9 +175,9 @@ When you use File > Export Template, the exported SVG doesn’t include the anno
 
 > ❗ **Important**:  Annotation data requires the same number of paths across designs. To retain annotation data when modifying the paths of an annotated symbol, you can add, remove, and adjust points, but removing or reordering whole paths makes your designs go out of sync. In these cases, reannotate the symbol to account for its new path structure.
 
-#### Use Your Custom Symbol Images
+#### Use your custom symbol images
 
-Open your app’s Xcode project and select its asset catalog. In the Xcode menu bar, select Editor > Add New Asset > Symbol Image Set, and drag your exported SVG file into the Symbol SVG section of the Symbol pane. Xcode validates the SVG file, and displays error messages if the file doesn’t fulfill the requirements. To use the symbol image in your app, follow [`Configuring and displaying symbol images in your UI`](https://developer.apple.com/documentation/uikit/configuring-and-displaying-symbol-images-in-your-ui).
+Open your app’s Xcode project and select its asset catalog. In the Xcode menu bar, select Editor > Add New Asset > Symbol Image Set, and drag your exported SVG file into the Symbol SVG section of the Symbol pane. Xcode validates the SVG file, and displays error messages if the file doesn’t fulfill the requirements. To use the symbol image in your app, follow [Configuring and displaying symbol images in your UI](../UIKit/configuring-and-displaying-symbol-images-in-your-ui.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # BEDownloadMonitor
 
 **Framework**: BrowserEngineKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that reports the status of web downloads to the system.
 
@@ -18,53 +19,54 @@ An object that reports the status of web downloads to the system.
 
 ## Mentions
 
-- [Downloading files in a web browser with an alternative browser engine](downloading-files-in-a-web-browser.md)
+- [Downloading files in a web browser with an alternative browser engine](./downloading-files-in-a-web-browser.md)
 
 #### Overview
 
-When someone downloads a file in your web browser, create an instance of this class to report progress to the system, and optionally create a placeholder file in the person’s Downloads folder. For more information, see [`Downloading files in a web browser with an alternative browser engine`](downloading-files-in-a-web-browser.md).
+When someone downloads a file in your web browser, create an instance of this class to report progress to the system, and optionally create a placeholder file in the person’s Downloads folder. For more information, see [Downloading files in a web browser with an alternative browser engine](./downloading-files-in-a-web-browser.md).
 
 ## Topics
 
 ### Creating a download monitor
-- [init(sourceURL: URL, destinationURL: URL, observedProgress: Progress, liveActivityAccessToken: Data)](bedownloadmonitor-9bwls/init(sourceurl:destinationurl:observedprogress:liveactivityaccesstoken:).md)
+- [init(sourceURL: URL, destinationURL: URL, observedProgress: Progress, liveActivityAccessToken: Data)](./bedownloadmonitor-9bwls/init%28sourceurl,destinationurl,observedprogress,liveactivityaccesstoken%29.md)
   Initializes a download monitor to report progress for the specified download.
-- [static func createAccessToken() -> Data?](bedownloadmonitor-9bwls/createaccesstoken.md)
+- [static func createAccessToken() -> Data?](./bedownloadmonitor-9bwls/createaccesstoken%28%29.md)
   Generates an opaque token that the system uses to keep your networking extension active in the background.
 ### Creating a download placeholder
-- [func useDownloadsFolder(placeholderType: UTType?, finalFileCreatedHandler: (BEDownloadMonitor.Location?) -> Void)](bedownloadmonitor-9bwls/usedownloadsfolder(placeholdertype:finalfilecreatedhandler:).md)
+- [func useDownloadsFolder(placeholderType: UTType?, finalFileCreatedHandler: (BEDownloadMonitor.Location?) -> Void)](./bedownloadmonitor-9bwls/usedownloadsfolder%28placeholdertype,finalfilecreatedhandler%29.md)
   Asks the system to create a placeholder for the downloaded file in the person’s Downloads folder.
-- [BEDownloadMonitor.Location](bedownloadmonitor-9bwls/location.md)
+- [BEDownloadMonitor.Location](./bedownloadmonitor-9bwls/location.md)
   A class that associates a URL with the bookmark you use to access that URL.
 ### Reporting progress to the system
-- [func beginMonitoring() async throws -> BEDownloadMonitor.Location?](bedownloadmonitor-9bwls/beginmonitoring.md)
+- [func beginMonitoring() async throws -> BEDownloadMonitor.Location?](./bedownloadmonitor-9bwls/beginmonitoring%28%29.md)
   Informs the system to start monitoring the download.
-- [func resumeMonitoring(placeholderURL: URL) async throws](bedownloadmonitor-9bwls/resumemonitoring(placeholderurl:).md)
+- [func resumeMonitoring(placeholderURL: URL) async throws](./bedownloadmonitor-9bwls/resumemonitoring%28placeholderurl%29.md)
   Informs the system that it needs to resume monitoring the download.
 ### Getting information about a download
-- [let sourceURL: URL](bedownloadmonitor-9bwls/sourceurl.md)
+- [let sourceURL: URL](./bedownloadmonitor-9bwls/sourceurl.md)
   A URL to a remote file to download.
-- [let destinationURL: URL](bedownloadmonitor-9bwls/destinationurl.md)
+- [let destinationURL: URL](./bedownloadmonitor-9bwls/destinationurl.md)
   A local file path to the downloaded file.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Downloading files in a web browser with an alternative browser engine](downloading-files-in-a-web-browser.md)
+### Downloads
+- [Downloading files in a web browser with an alternative browser engine](./downloading-files-in-a-web-browser.md)
   Report download progress to the system to keep your networking extension active.
 
 

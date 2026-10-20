@@ -1,7 +1,8 @@
 # removeAll(keepingCapacity:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all elements from the collection.
 
@@ -24,7 +25,7 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

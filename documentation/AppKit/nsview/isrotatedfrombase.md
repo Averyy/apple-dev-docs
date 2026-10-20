@@ -1,12 +1,13 @@
 # isRotatedFromBase
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the view or any of its ancestors has ever had a rotation factor applied to its frame or bounds.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,27 @@ A Boolean value indicating whether the view or any of its ancestors has ever had
 var isRotatedFromBase: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isRotatedFromBase) BOOL rotatedFromBase;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the view or any of its ancestors has had its [`frameRotation`](nsview/framerotation.md) or [`boundsRotation`](nsview/boundsrotation.md) properties modified at any time. The value is still [`true`](https://developer.apple.com/documentation/swift/true) if the rotation factor is changed to a nonzero value and then back to 0.
+The value of this property is [`true`](../../Swift/true.md) if the view or any of its ancestors has had its [`frameRotation`](./framerotation.md) or [`boundsRotation`](./boundsrotation.md) properties modified at any time. The value is still [`true`](../../Swift/true.md) if the rotation factor is changed to a nonzero value and then back to 0.
 
 Use this information to optimize drawing and coordinate calculation. Do not use it to reflect the exact state of the view’s coordinate system.
 
 ## See Also
 
-- [var frameRotation: CGFloat](nsview/framerotation.md)
+### Related Documentation
+- [var frameRotation: CGFloat](./framerotation.md)
   The angle of rotation, measured in degrees, applied to the view’s frame rectangle relative to its superview’s coordinate system.
-- [var boundsRotation: CGFloat](nsview/boundsrotation.md)
+- [var boundsRotation: CGFloat](./boundsrotation.md)
   The angle of rotation, measured in degrees, applied to the view’s bounds rectangle relative to its frame rectangle.
-- [var isFlipped: Bool](nsview/isflipped.md)
+### Examining Coordinate System Modifications
+- [var isFlipped: Bool](./isflipped.md)
   A Boolean value indicating whether the view uses a flipped coordinate system.
-- [var isRotatedOrScaledFromBase: Bool](nsview/isrotatedorscaledfrombase.md)
+- [var isRotatedOrScaledFromBase: Bool](./isrotatedorscaledfrombase.md)
   A Boolean value indicating whether the view or any of its ancestors has ever had a rotation factor applied to its frame or bounds, or has been scaled from the window’s base coordinate system.
 
 

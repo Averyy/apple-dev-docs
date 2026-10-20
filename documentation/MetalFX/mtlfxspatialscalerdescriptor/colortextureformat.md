@@ -1,7 +1,8 @@
 # colorTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input color texture for the spatial scaler you create with this descriptor.
 
@@ -19,13 +20,18 @@ The pixel format of the input color texture for the spatial scaler you create wi
 var colorTextureFormat: MTLPixelFormat { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat colorTextureFormat;
+```
+
 ## See Also
 
-- [var inputWidth: Int](mtlfxspatialscalerdescriptor/inputwidth.md)
+### Configuring a spatial scaler’s input
+- [var inputWidth: Int](./inputwidth.md)
   The width of the input color texture for the spatial scaler you create with this descriptor.
-- [var inputHeight: Int](mtlfxspatialscalerdescriptor/inputheight.md)
+- [var inputHeight: Int](./inputheight.md)
   The height of the input color texture for the spatial scaler you create with this descriptor.
-- [var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode](mtlfxspatialscalerdescriptor/colorprocessingmode.md)
+- [var colorProcessingMode: MTLFXSpatialScalerColorProcessingMode](./colorprocessingmode.md)
   The color space of the input color texture for the spatial scaler you create with this descriptor.
 
 

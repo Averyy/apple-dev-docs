@@ -1,7 +1,8 @@
 # sparseDescriptor(descriptorWithStorageType:dataType:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a descriptor for a sparse tensor.
 
@@ -17,6 +18,10 @@ Creates a descriptor for a sparse tensor.
 
 ```swift
 class func sparseDescriptor(descriptorWithStorageType sparseStorageType: MPSGraphSparseStorageType, dataType: MPSDataType) -> Self?
+```
+
+```objc
++ (instancetype) descriptorWithStorageType:(MPSGraphSparseStorageType) sparseStorageType dataType:(MPSDataType) dataType;
 ```
 
 #### Return Value

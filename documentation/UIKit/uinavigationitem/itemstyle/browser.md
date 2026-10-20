@@ -1,7 +1,8 @@
 # UINavigationItem.ItemStyle.browser
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style for a browser app interface.
 
@@ -17,15 +18,20 @@ A style for a browser app interface.
 case browser
 ```
 
+```c
+UINavigationItemStyleBrowser
+```
+
 #### Discussion
 
-Use this style for apps that support history-based navigation, like web browsers. With this style, the navigation item’s title appears on the leading side of the navigation bar, and center items ([`centerItemGroups`](uinavigationitem/centeritemgroups.md)) appear in the center of the bar.
+Use this style for apps that support history-based navigation, like web browsers. With this style, the navigation item’s title appears on the leading side of the navigation bar, and center items ([`centerItemGroups`](../centeritemgroups.md)) appear in the center of the bar.
 
 ## See Also
 
-- [UINavigationItem.ItemStyle.navigator](uinavigationitem/itemstyle/navigator.md)
+### Constants
+- [UINavigationItem.ItemStyle.navigator](./navigator.md)
   A style for a traditional navigation-based interface.
-- [UINavigationItem.ItemStyle.editor](uinavigationitem/itemstyle/editor.md)
+- [UINavigationItem.ItemStyle.editor](./editor.md)
   A style for an editor app interface.
 
 

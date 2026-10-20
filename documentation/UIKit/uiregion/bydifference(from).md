@@ -1,7 +1,8 @@
 # byDifference(from:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new region created by subtracting the specified region from the current region.
 
@@ -18,6 +19,10 @@ Returns a new region created by subtracting the specified region from the curren
 func byDifference(from region: UIRegion) -> Self
 ```
 
+```objc
+- (instancetype) regionByDifferenceFromRegion:(UIRegion *) region;
+```
+
 #### Return Value
 
 A new region that contains the points that are in the current region and not in the area defined by the `region` parameter.
@@ -28,11 +33,12 @@ A new region that contains the points that are in the current region and not in 
 
 ## See Also
 
-- [func inverse() -> Self](uiregion/inverse.md)
+### Creating complex regions
+- [func inverse() -> Self](./inverse%28%29.md)
   Returns a new region that’s the mathematical inverse of the current region.
-- [func byIntersection(with: UIRegion) -> Self](uiregion/byintersection(with:).md)
+- [func byIntersection(with: UIRegion) -> Self](./byintersection%28with%29.md)
   Returns a new region containing only the area occupied by both the specified region and current region.
-- [func byUnion(with: UIRegion) -> Self](uiregion/byunion(with:).md)
+- [func byUnion(with: UIRegion) -> Self](./byunion%28with%29.md)
   Returns a new region containing the combined areas of the specified region and the current region.
 
 

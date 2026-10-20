@@ -1,7 +1,8 @@
 # addTaskUnlessCancelled(priority:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 
@@ -20,6 +21,8 @@ Adds a child task to the group, unless the group has been canceled. Returns a bo
 mutating func addTaskUnlessCancelled(priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> ChildTaskResult) -> Bool
 ```
 
+Available when `ChildTaskResult` conforms to `Sendable` and `Failure` conforms to `Error`.
+
 #### Return Value
 
 `true` if the child task was added to the group; otherwise `false`.
@@ -35,23 +38,24 @@ This method doesn’t throw an error, even if the child task does. Instead, the 
 
 ## See Also
 
-- [func addTask(priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(priority:operation:).md)
+### Adding Tasks to a Throwing Task Group
+- [func addTask(priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](./addtask%28priority,operation%29.md)
   Adds a child task to the group.
-- [func addTask(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(executorpreference:priority:operation:).md)
+- [func addTask(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](./addtask%28executorpreference,priority,operation%29.md)
   Adds a child task to the group.
-- [func addTask(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(name:priority:operation:).md)
+- [func addTask(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](./addtask%28name,priority,operation%29.md)
   Adds a child task to the group.
-- [func addTask(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addtask(name:executorpreference:priority:operation:).md)
+- [func addTask(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult)](./addtask%28name,executorpreference,priority,operation%29.md)
   Adds a child task to the group.
-- [func addTaskUnlessCancelled(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(name:executorpreference:priority:operation:).md)
+- [func addTaskUnlessCancelled(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](./addtaskunlesscancelled%28name,executorpreference,priority,operation%29.md)
   Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
-- [func addTaskUnlessCancelled(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(executorpreference:priority:operation:).md)
+- [func addTaskUnlessCancelled(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](./addtaskunlesscancelled%28executorpreference,priority,operation%29.md)
   Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
-- [func addTaskUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addtaskunlesscancelled(name:priority:operation:).md)
+- [func addTaskUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async throws -> ChildTaskResult) -> Bool](./addtaskunlesscancelled%28name,priority,operation%29.md)
   Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
-- [func addImmediateTask(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> ChildTaskResult)](throwingtaskgroup/addimmediatetask(name:priority:executorpreference:operation:).md)
+- [func addImmediateTask(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> ChildTaskResult)](./addimmediatetask%28name,priority,executorpreference,operation%29.md)
   Add a child task to the group and immediately start running it in the context of the calling thread/task.
-- [func addImmediateTaskUnlessCancelled(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/addimmediatetaskunlesscancelled(name:priority:executorpreference:operation:).md)
+- [func addImmediateTaskUnlessCancelled(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> ChildTaskResult) -> Bool](./addimmediatetaskunlesscancelled%28name,priority,executorpreference,operation%29.md)
   Add a child task to the group and immediately start running it in the context of the calling thread/task.
 
 

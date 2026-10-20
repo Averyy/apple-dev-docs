@@ -1,30 +1,32 @@
 # Padding Positions
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 These constants are used to specify how numbers should be padded.
 
 ## Topics
 
 ### Constants
-- [CFNumberFormatterPadPosition.beforePrefix](cfnumberformatterpadposition/beforeprefix.md)
+- [CFNumberFormatterPadPosition.beforePrefix](./cfnumberformatterpadposition/beforeprefix.md)
   Specifies the number of padding characters before the prefix.
-- [CFNumberFormatterPadPosition.afterPrefix](cfnumberformatterpadposition/afterprefix.md)
+- [CFNumberFormatterPadPosition.afterPrefix](./cfnumberformatterpadposition/afterprefix.md)
   Specifies the number of padding characters after the prefix.
-- [CFNumberFormatterPadPosition.beforeSuffix](cfnumberformatterpadposition/beforesuffix.md)
+- [CFNumberFormatterPadPosition.beforeSuffix](./cfnumberformatterpadposition/beforesuffix.md)
   Specifies the number of padding characters before the suffix.
-- [CFNumberFormatterPadPosition.afterSuffix](cfnumberformatterpadposition/aftersuffix.md)
+- [CFNumberFormatterPadPosition.afterSuffix](./cfnumberformatterpadposition/aftersuffix.md)
   Specifies the number of padding characters after the suffix.
 
 ## See Also
 
-- [Number Formatter Styles](number-formatter-styles.md)
+### Constants
+- [Number Formatter Styles](./number-formatter-styles.md)
   Predefined number format styles.
-- [Number Formatter Property Keys](number-formatter-property-keys.md)
+- [Number Formatter Property Keys](./number-formatter-property-keys.md)
   The keys used in key-value pairs to specify the value of number formatter properties.
-- [Number Format Options](number_format_options.md)
+- [Number Format Options](./number_format_options.md)
   These constants are used to specify how numbers should be parsed.
-- [enum CFNumberFormatterRoundingMode](cfnumberformatterroundingmode.md)
+- [enum CFNumberFormatterRoundingMode](./cfnumberformatterroundingmode.md)
   These constants are used to specify how numbers should be rounded.
 
 

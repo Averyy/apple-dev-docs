@@ -1,7 +1,8 @@
 # supportsMultipleItems
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the action can be triggered on more than one document at a time.
 
@@ -17,17 +18,22 @@ A Boolean value that determines whether the action can be triggered on more than
 var supportsMultipleItems: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL supportsMultipleItems;
+```
+
 #### Discussion
 
-This property defaults to [`true`](https://developer.apple.com/documentation/swift/true).
+This property defaults to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [init(identifier: String, localizedTitle: String, availability: UIDocumentBrowserAction.Availability, handler: ([URL]) -> Void)](uidocumentbrowseraction/init(identifier:localizedtitle:availability:handler:).md)
+### Creating and configuring actions
+- [init(identifier: String, localizedTitle: String, availability: UIDocumentBrowserAction.Availability, handler: ([URL]) -> Void)](./init%28identifier,localizedtitle,availability,handler%29.md)
   Instantiates and returns a new browser action item.
-- [var image: UIImage?](uidocumentbrowseraction/image.md)
+- [var image: UIImage?](./image.md)
   The action’s image displayed in the navigation bar.
-- [var supportedContentTypes: [String]](uidocumentbrowseraction/supportedcontenttypes.md)
+- [var supportedContentTypes: [String]](./supportedcontenttypes.md)
   An array of uniform type identifiers that define the types of documents that the action supports.
 
 

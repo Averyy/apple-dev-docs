@@ -1,7 +1,8 @@
 # popupWebView
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A web view loaded with the pop-up page for this action, or `nil` if no pop-up is specified.
 
@@ -18,13 +19,18 @@ A web view loaded with the pop-up page for this action, or `nil` if no pop-up is
 var popupWebView: WKWebView? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) WKWebView * popupWebView;
+```
+
 #### Discussion
 
-The web view will be preloaded with the pop-up page upon first access or after it has been unloaded. Use the [`presentsPopup`](wkwebextension/action/presentspopup.md) property to determine whether a pop-up should be displayed before using this property.
+The web view will be preloaded with the pop-up page upon first access or after it has been unloaded. Use the [`presentsPopup`](./presentspopup.md) property to determine whether a pop-up should be displayed before using this property.
 
 ## See Also
 
-- [var presentsPopup: Bool](wkwebextension/action/presentspopup.md)
+### Related Documentation
+- [var presentsPopup: Bool](./presentspopup.md)
   A Boolean value indicating whether the action has a pop-up.
 
 

@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if two ranges intersect.
 
@@ -19,6 +20,10 @@ Determines if two ranges intersect.
 func intersects(_ textRange: NSTextRange) -> Bool
 ```
 
+```objc
+- (BOOL) intersectsWithTextRange:(NSTextRange *) textRange;
+```
+
 #### Return Value
 
 Returns `true` if the ranges intersect.
@@ -29,11 +34,12 @@ Returns `true` if the ranges intersect.
 
 ## See Also
 
-- [func intersection(NSTextRange) -> Self?](nstextrange/intersection(_:).md)
+### Comparing text ranges
+- [func intersection(NSTextRange) -> Self?](./intersection%28_%29.md)
   Returns the range, if any, where two text ranges intersect.
-- [func isEqual(to: NSTextRange) -> Bool](nstextrange/isequal(to:).md)
+- [func isEqual(to: NSTextRange) -> Bool](./isequal%28to%29.md)
   Compares two text ranges.
-- [func union(NSTextRange) -> Self](nstextrange/union(_:).md)
+- [func union(NSTextRange) -> Self](./union%28_%29.md)
   Returns a new text range by forming the union with the text range you provide.
 
 

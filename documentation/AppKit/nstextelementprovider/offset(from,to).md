@@ -1,7 +1,8 @@
 # offset(from:to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the offset between the two specified locations.
 
@@ -14,13 +15,17 @@ Returns the offset between the two specified locations.
 optional func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int
 ```
 
+```objc
+- (NSInteger) offsetFromLocation:(id<NSTextLocation>) from toLocation:(id<NSTextLocation>) to;
+```
+
 #### Return Value
 
 An `Integer` that represents the offset between the starting and ending locations.
 
 #### Discussion
 
-The return value could be positive or negative. This method can return [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) when the method can’t represent an offset as an integer value. This can occur, for example, if the locations aren’t in the same document).
+The return value could be positive or negative. This method can return [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) when the method can’t represent an offset as an integer value. This can occur, for example, if the locations aren’t in the same document).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ The return value could be positive or negative. This method can return [`NSNotFo
 
 ## See Also
 
-- [func adjustedRange(from: NSTextRange, forEditingTextSelection: Bool) -> NSTextRange?](nstextelementprovider/adjustedrange(from:foreditingtextselection:).md)
+### Adjusting the range of the text element
+- [func adjustedRange(from: NSTextRange, forEditingTextSelection: Bool) -> NSTextRange?](./adjustedrange%28from,foreditingtextselection%29.md)
   A method you implement if the location backing store requires manual adjustment after editing.
 
 

@@ -1,6 +1,8 @@
 # Add Functionality to Finder with Action Extensions
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Sample Code  
+**Download**: [AddFunctionalityToFinderWithActionExtensions.zip](https://docs-assets.developer.apple.com/published/9de4b65d06cd/AddFunctionalityToFinderWithActionExtensions.zip)
 
 Implement Action Extensions to provide quick access to commonly used features of your app.
 
@@ -21,7 +23,7 @@ The project consists of four targets:
 
 The extensions in this sample all accept file data from Finder, process it, and output the data back to Finder.
 
-By default, new Action Extensions are not enabled in macOS. After running this sample code project, enable the extensions by selecting the “Create Thumbnail”, “Make PNG Opaque”, and “Convert Text to Upper Case” checkboxes in the Actions, Finder, and Touch Bar categories of the [`Extensions System Preferences`](https://developer.apple.comhttps://support.apple.com/guide/mac-help/change-extensions-preferences-mchl8baf92fe/mac).
+By default, new Action Extensions are not enabled in macOS. After running this sample code project, enable the extensions by selecting the “Create Thumbnail”, “Make PNG Opaque”, and “Convert Text to Upper Case” checkboxes in the Actions, Finder, and Touch Bar categories of the [Extensions System Preferences](https://support.apple.com/guide/mac-help/change-extensions-preferences-mchl8baf92fe/mac).
 
 ##### Accept File Data
 
@@ -35,11 +37,11 @@ The `NSExtensionActivationRule` key in the `Info.plist` of the associated target
 
 `ThumbnailAction` and `UppercaseAction` are both configured with dictionary values. `ThumbnailAction` specifies that it accepts image data with the `NSExtensionActivationSupportsImageWithMaxCount` key and `UppercaseAction` specifies that it accepts text data with the `NSExtensionActivationSupportsText` key.
 
-For more information on valid dictionary keys for `NSExtensionActivationRule`, see the [`App Extension Keys reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW10).
+For more information on valid dictionary keys for `NSExtensionActivationRule`, see the [App Extension Keys reference](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW10).
 
-`RemoveOpacityAction` uses a [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) query as a string value for the `NSExtensionActivationRule`. The query in this sample project filters images to only be valid if they are in PNG format.
+`RemoveOpacityAction` uses a [`NSPredicate`](../Foundation/nspredicate.md) query as a string value for the `NSExtensionActivationRule`. The query in this sample project filters images to only be valid if they are in PNG format.
 
-```None
+```
 SUBQUERY (
     extensionItems,
     $extensionItem,
@@ -51,15 +53,15 @@ SUBQUERY (
 ).@count == 1
 ```
 
-For more information on defining extension activation rules, see the [`App Extension Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8).
+For more information on defining extension activation rules, see the [App Extension Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8).
 
 ##### Process Input Attachments
 
-When a user invokes an Action Extension, the system instantiates the [`NSExtensionPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW3) specified in the `Info.plist` and asks it to handle the request through the [`NSExtensionRequestHandling`](https://developer.apple.com/documentation/foundation/nsextensionrequesthandling) protocol.
+When a user invokes an Action Extension, the system instantiates the [NSExtensionPrincipalClass](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW3) specified in the `Info.plist` and asks it to handle the request through the [`NSExtensionRequestHandling`](../Foundation/nsextensionrequesthandling.md) protocol.
 
-The system calls the [`beginRequest(with:)`](https://developer.apple.com/documentation/foundation/nsextensionrequesthandling/beginrequest(with:)) method and passes in an [`NSExtensionContext`](https://developer.apple.com/documentation/foundation/nsextensioncontext). To access the input files, use the [`attachments`](https://developer.apple.com/documentation/foundation/nsextensionitem/attachments) property of the [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem) contained in the [`inputItems`](https://developer.apple.com/documentation/foundation/nsextensioncontext/inputitems) array.
+The system calls the [`beginRequest(with:)`](../Foundation/nsextensionrequesthandling/beginrequest%28with%29.md) method and passes in an [`NSExtensionContext`](../Foundation/nsextensioncontext.md). To access the input files, use the [`attachments`](../Foundation/nsextensionitem/attachments.md) property of the [`NSExtensionItem`](../Foundation/nsextensionitem.md) contained in the [`inputItems`](../Foundation/nsextensioncontext/inputitems.md) array.
 
-Once processing completes, pass output files back to the system by creating new [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) objects and registering them with [`registerFileRepresentation(forTypeIdentifier:fileOptions:visibility:loadHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/registerfilerepresentation(fortypeidentifier:fileoptions:visibility:loadhandler:)).
+Once processing completes, pass output files back to the system by creating new [`NSItemProvider`](../Foundation/nsitemprovider.md) objects and registering them with [`registerFileRepresentation(forTypeIdentifier:fileOptions:visibility:loadHandler:`](../Foundation/nsitemprovider/registerfilerepresentation%28fortypeidentifier,fileoptions,visibility,loadhandler%29.md).
 
 ```swift
 let itemProvider = NSItemProvider()
@@ -76,7 +78,7 @@ itemProvider.registerFileRepresentation(
 )
 ```
 
-To obtain the correct directory path for writing output files, use [`url(for:in:appropriateFor:create:)`](https://developer.apple.com/documentation/foundation/filemanager/url(for:in:appropriatefor:create:)), passing the [`FileManager.SearchPathDirectory.itemReplacementDirectory`](https://developer.apple.com/documentation/foundation/filemanager/searchpathdirectory/itemreplacementdirectory) constant.
+To obtain the correct directory path for writing output files, use [`url(for:in:appropriateFor:create:)`](../Foundation/filemanager/url%28for,in,appropriatefor,create%29.md), passing the [`itemReplacementDirectory`](../Foundation/filemanager/searchpathdirectory/itemreplacementdirectory.md) constant.
 
 ```swift
 let itemReplacementDirectory = try FileManager.default.url(
@@ -85,15 +87,15 @@ let itemReplacementDirectory = try FileManager.default.url(
 let thumbnailFilename = sourceUrl.deletingPathExtension().lastPathComponent + " Thumbnail.png"
 ```
 
-Finally, signal that the action is complete by calling [`completeRequest(returningItems:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsextensioncontext/completerequest(returningitems:completionhandler:)).
+Finally, signal that the action is complete by calling [`completeRequest(returningItems:completionHandler:)`](../Foundation/nsextensioncontext/completerequest%28returningitems,completionhandler%29.md).
 
 > **Note**: If you wish to preserve the input files instead of replacing them, it is important that `NSItemProvider` objects for the original input files are also included in the returned array of item providers. The `ThumbnailAction` target in this sample code project demonstrates passing back both the original input files as well as new thumbnail files.
 
 ##### Process Text Data
 
-The `UppercaseAction` extension accepts any text, either supplied as attachments in the same way as `ThumbnailAction` and `RemoveOpacityAction`, or from other sources such as a standard `NSTextField` control. Check the [`attributedContentText`](https://developer.apple.com/documentation/foundation/nsextensionitem/attributedcontenttext) property for input from text fields.
+The `UppercaseAction` extension accepts any text, either supplied as attachments in the same way as `ThumbnailAction` and `RemoveOpacityAction`, or from other sources such as a standard `NSTextField` control. Check the [`attributedContentText`](../Foundation/nsextensionitem/attributedcontenttext.md) property for input from text fields.
 
-If `attributedContentText` is empty, check for input in the [`attachments`](https://developer.apple.com/documentation/foundation/nsextensionitem/attachments) property of [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem).
+If `attributedContentText` is empty, check for input in the [`attachments`](../Foundation/nsextensionitem/attachments.md) property of [`NSExtensionItem`](../Foundation/nsextensionitem.md).
 
 ```swift
 let outputItem = NSExtensionItem()
@@ -103,15 +105,15 @@ context.completeRequest(returningItems: [outputItem], completionHandler: nil)
 
 ##### Present a User Interface
 
-If the action requires user interaction then the extension may present a user interface. Set the [`NSExtensionPointIdentifier`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) key in the `Info.plist` to `com.apple.ui-services` and ensure that the principal class is a subclass of  [`NSViewController`](nsviewcontroller.md). If the extension does not require user interaction, specify `com.apple.services` and have the principal class conform to `NSExtensionRequestHandling`.
+If the action requires user interaction then the extension may present a user interface. Set the [NSExtensionPointIdentifier](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW15) key in the `Info.plist` to `com.apple.ui-services` and ensure that the principal class is a subclass of  [`NSViewController`](./nsviewcontroller.md). If the extension does not require user interaction, specify `com.apple.services` and have the principal class conform to `NSExtensionRequestHandling`.
 
-> **Note**: When creating a new Action Extension target, Xcode prompts you to decide if your extension will present a user interface. Based on that choice, Xcode sets appropriate initial values for `NSExtensionPointIdentifier` and [`NSExtensionPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW3).
+> **Note**: When creating a new Action Extension target, Xcode prompts you to decide if your extension will present a user interface. Based on that choice, Xcode sets appropriate initial values for `NSExtensionPointIdentifier` and [`NSExtensionPrincipalClass`](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW3).
 
-Extensions that present a user interface show their view controller’s view immediately after the extension calls [`beginRequest(with:)`](https://developer.apple.com/documentation/foundation/nsextensionrequesthandling/beginrequest(with:)) and should input files with the [`extensionContext`](nsviewcontroller/extensioncontext.md) property of [`NSViewController`](nsviewcontroller.md).
+Extensions that present a user interface show their view controller’s view immediately after the extension calls [`beginRequest(with:)`](../Foundation/nsextensionrequesthandling/beginrequest%28with%29.md) and should input files with the [`extensionContext`](./nsviewcontroller/extensioncontext.md) property of [`NSViewController`](./nsviewcontroller.md).
 
-Once the extension’s user interface has completed any required user interaction for the task, process the files in the normal way by calling [`completeRequest(returningItems:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsextensioncontext/completerequest(returningitems:completionhandler:)).
+Once the extension’s user interface has completed any required user interaction for the task, process the files in the normal way by calling [`completeRequest(returningItems:completionHandler:)`](../Foundation/nsextensioncontext/completerequest%28returningitems,completionhandler%29.md).
 
-To cancel the task, use the [`cancelRequest(withError:)`](https://developer.apple.com/documentation/foundation/nsextensioncontext/cancelrequest(witherror:)). Pass a [`NSUserCancelledError`](https://developer.apple.com/documentation/foundation/nsusercancellederror-swift.var) if the user canceled the task, or an error caused the failure.
+To cancel the task, use the [`cancelRequest(withError:)`](../Foundation/nsextensioncontext/cancelrequest%28witherror%29.md). Pass a [`NSUserCancelledError`](../Foundation/nsusercancellederror-swift.var.md) if the user canceled the task, or an error caused the failure.
 
 ```swift
 let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSUserCancelledError, userInfo: nil)
@@ -122,25 +124,26 @@ context.cancelRequest(withError: cancelError)
 
 Users may also access Action Extensions from the Touch Bar and from the Quick Actions menu in Finder’s Preview pane. Set both `NSExtensionServiceAllowsFinderPreviewItem` and `NSExtensionServiceAllowsTouchBarItem` to `YES` in the `Info.plist` to support the Touch Bar and Preview Pane.
 
-Each extension must also have a template icon for use in the Quick Actions menu and the Finder Preview pane. Specify the icon with the `NSExtensionServiceTouchBarIconName` key of the `Info.plist` for each target. For more information, see the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/activity-views#Share-and-action-extensions). The color of the Touch Bar button can also be customized using the `NSExtensionServiceTouchBarBezelColorName` key. By default, this is a `TouchBarBezel` color but can be any color in the asset catalog for the target.
+Each extension must also have a template icon for use in the Quick Actions menu and the Finder Preview pane. Specify the icon with the `NSExtensionServiceTouchBarIconName` key of the `Info.plist` for each target. For more information, see the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/activity-views#Share-and-action-extensions). The color of the Touch Bar button can also be customized using the `NSExtensionServiceTouchBarBezelColorName` key. By default, this is a `TouchBarBezel` color but can be any color in the asset catalog for the target.
 
-For information on how to add Quick Actions to the Touch Bar see the [`Automator User Guide`](https://developer.apple.comhttps://support.apple.com/guide/automator/use-quick-action-workflows-aut73234890a/mac#aut7b29b7fc1).
+For information on how to add Quick Actions to the Touch Bar see the [Automator User Guide](https://support.apple.com/guide/automator/use-quick-action-workflows-aut73234890a/mac#aut7b29b7fc1).
 
 ## See Also
 
-- [NSExtensionServiceAllowsFinderPreviewItem](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md)
+### Quick Actions
+- [NSExtensionServiceAllowsFinderPreviewItem](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md)
   A Boolean value indicating whether the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceFinderPreviewLabel](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewlabel.md)
+- [NSExtensionServiceFinderPreviewLabel](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewlabel.md)
   A name for display when the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceFinderPreviewIconName](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewiconname.md)
+- [NSExtensionServiceFinderPreviewIconName](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewiconname.md)
   The name of an icon for display when the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceAllowsTouchBarItem](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstouchbaritem.md)
+- [NSExtensionServiceAllowsTouchBarItem](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstouchbaritem.md)
   A Boolean value indicating whether the extension appears as a Quick Action in the Touch Bar.
-- [NSExtensionServiceTouchBarLabel](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbarlabel.md)
+- [NSExtensionServiceTouchBarLabel](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbarlabel.md)
   A name for display when the extension appears as a Quick Action in the Touch Bar.
-- [NSExtensionServiceTouchBarIconName](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbariconname.md)
+- [NSExtensionServiceTouchBarIconName](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbariconname.md)
   The name of an icon for display when the extension appears as a Quick Action in the Touch Bar
-- [NSExtensionServiceTouchBarBezelColorName](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbarbezelcolorname.md)
+- [NSExtensionServiceTouchBarBezelColorName](../BundleResources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbarbezelcolorname.md)
   The color to use for the bezel around the extension when it appears as a Quick Action in the Touch Bar.
 
 

@@ -1,16 +1,21 @@
 # od_attribute_value_remove
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var od_attribute_value_remove: UnsafeMutablePointer<es_event_od_attribute_value_remove_t> { get set }
+```
+
+```c
+es_event_od_attribute_value_remove_t * od_attribute_value_remove;
 ```
 
 

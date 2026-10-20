@@ -1,7 +1,8 @@
 # init(mesh:meshDraping:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new cloth body component.
 
@@ -18,7 +19,7 @@ init(mesh: ClothMeshResource, meshDraping: ClothPoseResource? = nil)
 
 #### Discussion
 
-The body component must be attached to an entity that is a descendant of a simulation root (an entity with a [`ClothSimulationComponent`](clothsimulationcomponent.md)) in order to be active.
+The body component must be attached to an entity that is a descendant of a simulation root (an entity with a [`ClothSimulationComponent`](../clothsimulationcomponent.md)) in order to be active.
 
 ## Parameters
 
@@ -27,9 +28,10 @@ The body component must be attached to an entity that is a descendant of a simul
 
 ## See Also
 
-- [var mesh: ClothMeshResource](clothbodycomponent/mesh.md)
+### Creating a cloth body
+- [var mesh: ClothMeshResource](./mesh.md)
   The (simulation) mesh of the cloth body that defines the rest pose of the body.
-- [var initialMeshDraping: ClothPoseResource?](clothbodycomponent/initialmeshdraping.md)
+- [var initialMeshDraping: ClothPoseResource?](./initialmeshdraping.md)
   An optional pose that specifies an already draped configuration of the cloth at the start of the simulation.
 
 

@@ -1,6 +1,7 @@
 # SCPreferencesPath
 
-**Framework**: System Configuration
+**Framework**: System Configuration  
+**Role**: API Collection
 
 #### Overview
 
@@ -26,43 +27,44 @@ For example, the following dictionary can be accessed via two paths. The root pa
 </dict>
 ```
 
-Each dictionary can also include the `kSCResvLink` (”__LINK__”) key. The value associated with this key is interpreted as a link to another path. If this key is present, a call to the [`SCPreferencesPathGetValue(_:_:)`](scpreferencespathgetvalue(_:_:).md) function returns the dictionary specified by the link.
+Each dictionary can also include the `kSCResvLink` (”__LINK__”) key. The value associated with this key is interpreted as a link to another path. If this key is present, a call to the [`SCPreferencesPathGetValue(_:_:)`](./scpreferencespathgetvalue%28_,_%29.md) function returns the dictionary specified by the link.
 
 ## Topics
 
 ### Creating a New Path
-- [func SCPreferencesPathCreateUniqueChild(SCPreferences, CFString) -> CFString?](scpreferencespathcreateuniquechild(_:_:).md)
+- [func SCPreferencesPathCreateUniqueChild(SCPreferences, CFString) -> CFString?](./scpreferencespathcreateuniquechild%28_,_%29.md)
   Creates a new path component rooted at the specified path in the dictionary hierarchy.
 ### Associating Information with a Path
-- [func SCPreferencesPathSetValue(SCPreferences, CFString, CFDictionary) -> Bool](scpreferencespathsetvalue(_:_:_:).md)
+- [func SCPreferencesPathSetValue(SCPreferences, CFString, CFDictionary) -> Bool](./scpreferencespathsetvalue%28_,_,_%29.md)
   Associates the specified dictionary with the specified path.
-- [func SCPreferencesPathSetLink(SCPreferences, CFString, CFString) -> Bool](scpreferencespathsetlink(_:_:_:).md)
+- [func SCPreferencesPathSetLink(SCPreferences, CFString, CFString) -> Bool](./scpreferencespathsetlink%28_,_,_%29.md)
   Associates a link to a second dictionary at the specified path.
 ### Getting or Removing Information Associated with a Path
-- [func SCPreferencesPathGetValue(SCPreferences, CFString) -> CFDictionary?](scpreferencespathgetvalue(_:_:).md)
+- [func SCPreferencesPathGetValue(SCPreferences, CFString) -> CFDictionary?](./scpreferencespathgetvalue%28_,_%29.md)
   Returns the dictionary associated with the specified path.
-- [func SCPreferencesPathGetLink(SCPreferences, CFString) -> CFString?](scpreferencespathgetlink(_:_:).md)
+- [func SCPreferencesPathGetLink(SCPreferences, CFString) -> CFString?](./scpreferencespathgetlink%28_,_%29.md)
   Returns the link associated with the specified path.
-- [func SCPreferencesPathRemoveValue(SCPreferences, CFString) -> Bool](scpreferencespathremovevalue(_:_:).md)
+- [func SCPreferencesPathRemoveValue(SCPreferences, CFString) -> Bool](./scpreferencespathremovevalue%28_,_%29.md)
   Removes the data associated with the specified path.
 
 ## See Also
 
-- [SCDynamicStore](scdynamicstore-gb2.md)
-- [SCDynamicStoreCopySpecific](scdynamicstorecopyspecific.md)
-- [SCDynamicStoreKey](scdynamicstorekey.md)
-- [SCNetwork](scnetwork.md)
-- [SCNetworkConfiguration](scnetworkconfiguration.md)
-- [SCNetworkConnection](scnetworkconnection-g7e.md)
-- [SCNetworkReachability](scnetworkreachability-g7d.md)
-- [SCPreferences](scpreferences-ft8.md)
-- [SCPreferencesSetSpecific](scpreferencessetspecific.md)
-- [SCSchemaDefinitions](scschemadefinitions.md)
-- [System Configuration](system-configuration.md)
-- [SystemConfiguration Enumerations](systemconfiguration-enumerations.md)
-- [SystemConfiguration Constants](systemconfiguration-constants.md)
-- [SystemConfiguration Functions](systemconfiguration-functions.md)
-- [SystemConfiguration Data Types](systemconfiguration-data-types.md)
+### Reference
+- [SCDynamicStore](./scdynamicstore-gb2.md)
+- [SCDynamicStoreCopySpecific](./scdynamicstorecopyspecific.md)
+- [SCDynamicStoreKey](./scdynamicstorekey.md)
+- [SCNetwork](./scnetwork.md)
+- [SCNetworkConfiguration](./scnetworkconfiguration.md)
+- [SCNetworkConnection](./scnetworkconnection-g7e.md)
+- [SCNetworkReachability](./scnetworkreachability-g7d.md)
+- [SCPreferences](./scpreferences-ft8.md)
+- [SCPreferencesSetSpecific](./scpreferencessetspecific.md)
+- [SCSchemaDefinitions](./scschemadefinitions.md)
+- [System Configuration](./system-configuration.md)
+- [SystemConfiguration Enumerations](./systemconfiguration-enumerations.md)
+- [SystemConfiguration Constants](./systemconfiguration-constants.md)
+- [SystemConfiguration Functions](./systemconfiguration-functions.md)
+- [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
 
 
 ---

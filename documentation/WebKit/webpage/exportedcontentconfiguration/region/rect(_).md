@@ -1,7 +1,8 @@
 # rect(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A region that corresponds to a rectangle in the page’s coordinate system.
 
@@ -20,7 +21,7 @@ static func rect(_ rect: CGRect) -> WebPage.ExportedContentConfiguration.Region
 
 #### Return Value
 
-A [`WebPage.ExportedContentConfiguration.Region`](webpage/exportedcontentconfiguration/region.md) that uses the specified rectangle.
+A [`WebPage.ExportedContentConfiguration.Region`](../region.md) that uses the specified rectangle.
 
 ## Parameters
 

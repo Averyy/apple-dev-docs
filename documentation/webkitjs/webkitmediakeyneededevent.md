@@ -1,7 +1,8 @@
 # WebKitMediaKeyNeededEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface WebKitMediaKeyNeededEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [initData](webkitmediakeyneededevent/2871224-initdata.md)
+- [initData](./webkitmediakeyneededevent/api-2871224-initdata.md)
 
 ## Relationships
 

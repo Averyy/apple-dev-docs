@@ -1,14 +1,15 @@
 # uint_fast16_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint16_t uint_fast16_t;
 ```
 

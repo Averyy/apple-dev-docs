@@ -1,14 +1,15 @@
 # ctl_disconnect_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*ctl_disconnect_func)(kern_ctl_ref kctlref, u_int32_t unit, void *unitinfo);
 ```
 

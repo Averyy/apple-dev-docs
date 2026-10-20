@@ -1,7 +1,8 @@
 # kSecAttrProtocolNNTP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 NNTP protocol.
 
@@ -18,6 +19,10 @@ NNTP protocol.
 
 ```swift
 let kSecAttrProtocolNNTP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolNNTP;
 ```
 
 

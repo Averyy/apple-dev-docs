@@ -1,7 +1,8 @@
 # UICollectionViewCell.ConfigurationUpdateHandler
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of block for handling updates to the cell’s configuration using the current state.
 
@@ -10,7 +11,7 @@ The type of block for handling updates to the cell’s configuration using the c
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,17 +26,18 @@ typealias ConfigurationUpdateHandler = (UICollectionViewCell, UICellConfiguratio
 
 ## See Also
 
-- [var configurationState: UICellConfigurationState](uicollectionviewcell/configurationstate-4u37h.md)
+### Managing the state
+- [var configurationState: UICellConfigurationState](./configurationstate-4u37h.md)
   The current configuration state of the cell.
-- [func setNeedsUpdateConfiguration()](uicollectionviewcell/setneedsupdateconfiguration.md)
+- [func setNeedsUpdateConfiguration()](./setneedsupdateconfiguration%28%29.md)
   Informs the cell to update its configuration for its current state.
-- [func updateConfiguration(using: UICellConfigurationState)](uicollectionviewcell/updateconfiguration(using:).md)
+- [func updateConfiguration(using: UICellConfigurationState)](./updateconfiguration%28using%29.md)
   Updates the cell’s configuration using the current state.
-- [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](uicollectionviewcell/configurationupdatehandler-7rqbu.md)
+- [var configurationUpdateHandler: UICollectionViewCell.ConfigurationUpdateHandler?](./configurationupdatehandler-7rqbu.md)
   A block for handling updates to the cell’s configuration using the current state.
-- [var isSelected: Bool](uicollectionviewcell/isselected.md)
+- [var isSelected: Bool](./isselected.md)
   The selection state of the cell.
-- [var isHighlighted: Bool](uicollectionviewcell/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   The highlight state of the cell.
 
 

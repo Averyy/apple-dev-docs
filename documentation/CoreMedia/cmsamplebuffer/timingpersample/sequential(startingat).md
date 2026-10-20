@@ -1,7 +1,8 @@
 # CMSampleBuffer.TimingPerSample.sequential(startingAt:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 All samples are adjacent to each other and have the same duration.
 

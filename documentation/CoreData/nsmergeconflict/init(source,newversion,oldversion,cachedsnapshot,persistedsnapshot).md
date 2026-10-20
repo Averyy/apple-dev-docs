@@ -1,7 +1,8 @@
 # init(source:newVersion:oldVersion:cachedSnapshot:persistedSnapshot:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a merge conflict.
 
@@ -10,7 +11,7 @@ Initializes a merge conflict.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,6 +21,10 @@ Initializes a merge conflict.
 init(source srcObject: NSManagedObject, newVersion newvers: Int, oldVersion oldvers: Int, cachedSnapshot cachesnap: [String : Any]?, persistedSnapshot persnap: [String : Any]?)
 ```
 
+```objc
+- (instancetype) initWithSource:(NSManagedObject *) srcObject newVersion:(NSUInteger) newvers oldVersion:(NSUInteger) oldvers cachedSnapshot:(NSDictionary<NSString *,id> *) cachesnap persistedSnapshot:(NSDictionary<NSString *,id> *) persnap;
+```
+
 #### Return Value
 
 A merge conflict object initialized with the given parameters.
@@ -27,14 +32,17 @@ A merge conflict object initialized with the given parameters.
 ## Parameters
 
 - `srcObject`: The source object for the conflict.
-- `newvers`: The new version number for the change. A value of 0 means the object was deleted and the corresponding snapshot is `nil`.
+- `newvers`: The new version number for the change.
+
+  A value of 0 means the object was deleted and the corresponding snapshot is `nil`.
 - `oldvers`: The old version number for the change.
 - `cachesnap`: A dictionary containing the values of `srcObject` held in the persistent store coordinator layer.
 - `persnap`: A dictionary containing the values of `srcObject` held in the persistent store.
 
 ## See Also
 
-- [Core Data Model Versioning and Data Migration Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399)
+### Related Documentation
+- [Core Data Model Versioning and Data Migration Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399)
 
 
 ---

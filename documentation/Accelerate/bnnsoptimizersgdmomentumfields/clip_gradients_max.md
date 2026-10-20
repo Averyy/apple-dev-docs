@@ -1,18 +1,21 @@
 # clip_gradients_max
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The values for the maximum gradient.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,25 +23,30 @@ The values for the maximum gradient.
 var clip_gradients_max: Float
 ```
 
+```c
+float clip_gradients_max;
+```
+
 ## See Also
 
-- [var learning_rate: Float](bnnsoptimizersgdmomentumfields/learning_rate.md)
+### Instance Properties
+- [var learning_rate: Float](./learning_rate.md)
   A value that specifies the learning rate.
-- [var momentum: Float](bnnsoptimizersgdmomentumfields/momentum.md)
+- [var momentum: Float](./momentum.md)
   The rate of momentum decay.
-- [var gradient_scale: Float](bnnsoptimizersgdmomentumfields/gradient_scale.md)
+- [var gradient_scale: Float](./gradient_scale.md)
   A value that specifies the gradient scaling factor.
-- [var regularization_scale: Float](bnnsoptimizersgdmomentumfields/regularization_scale.md)
+- [var regularization_scale: Float](./regularization_scale.md)
   A value that specifies the regularization scaling factor.
-- [var clip_gradients: Bool](bnnsoptimizersgdmomentumfields/clip_gradients.md)
+- [var clip_gradients: Bool](./clip_gradients.md)
   A Boolean value that specifies whether to clip the gradient between minimum and maximum values.
-- [var clip_gradients_min: Float](bnnsoptimizersgdmomentumfields/clip_gradients_min.md)
+- [var clip_gradients_min: Float](./clip_gradients_min.md)
   The values for the minimum gradient.
-- [var nesterov: Bool](bnnsoptimizersgdmomentumfields/nesterov.md)
+- [var nesterov: Bool](./nesterov.md)
   A Boolean value that specifies whether to use Nesterov momentum update.
-- [var regularization_func: BNNSOptimizerRegularizationFunction](bnnsoptimizersgdmomentumfields/regularization_func.md)
+- [var regularization_func: BNNSOptimizerRegularizationFunction](./regularization_func.md)
   The variable that specifies the regularization function.
-- [var sgd_momentum_variant: BNNSOptimizerSGDMomentumVariant](bnnsoptimizersgdmomentumfields/sgd_momentum_variant.md)
+- [var sgd_momentum_variant: BNNSOptimizerSGDMomentumVariant](./sgd_momentum_variant.md)
   The variable that specifies the momentum variant.
 
 

@@ -1,7 +1,8 @@
 # associatedTab
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tab that this action is associated with, or `nil` if it’s the default action.
 
@@ -16,6 +17,10 @@ The tab that this action is associated with, or `nil` if it’s the default acti
 
 ```swift
 weak var associatedTab: (any WKWebExtensionTab)? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) id<WKWebExtensionTab> associatedTab;
 ```
 
 #### Discussion

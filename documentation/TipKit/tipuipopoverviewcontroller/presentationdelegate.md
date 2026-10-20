@@ -1,7 +1,8 @@
 # presentationDelegate
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The popover presentation delegate, which lets you customize the behavior of a popover-based presentation.
 

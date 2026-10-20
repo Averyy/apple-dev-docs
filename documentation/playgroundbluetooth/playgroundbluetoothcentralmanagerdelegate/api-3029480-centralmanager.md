@@ -2,6 +2,7 @@
 
 **Framework**: Playground Bluetooth  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the central manager failed to establish a connection with a peripheral.
@@ -22,9 +23,16 @@ func centralManager(_ centralManager: PlaygroundBluetoothCentralManager, didFail
 - `peripheral`: The peripheral that the central manager couldn’t connect to.
 - `error`: An error which describes the reason for the connection failure.
 
+## Default Implementations
+
+### PlaygroundBluetoothCentralManagerDelegate Implementations
+- [func centralManager(PlaygroundBluetoothCentralManager, didFailToConnectTo: CBPeripheral, error: Error?)](./api-3029481-centralmanager.md)
+  Tells the delegate that the central manager failed to establish a connection with a peripheral.
+
 ## See Also
 
-- [func centralManager(PlaygroundBluetoothCentralManager, didDisconnectFrom: CBPeripheral, error: Error?)](playgroundbluetoothcentralmanagerdelegate/3029476-centralmanager.md)
+### Handling Disconnects
+- [func centralManager(PlaygroundBluetoothCentralManager, didDisconnectFrom: CBPeripheral, error: Error?)](./api-3029476-centralmanager.md)
   Tells the delegate that the central manager disconnected from a peripheral.
 
 

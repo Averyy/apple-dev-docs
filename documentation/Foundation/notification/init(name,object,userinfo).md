@@ -1,7 +1,8 @@
 # init(name:object:userInfo:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new notification.
 
@@ -26,9 +27,10 @@ The default value for `userInfo` is nil.
 
 ## See Also
 
-- [Notification.Name](notification/name-swift.typealias.md)
+### Creating a Notification
+- [Notification.Name](./name-swift.typealias.md)
   An alias for a type used to represent the name of a notification.
-- [NSNotification.Name](nsnotification/name-swift.struct.md)
+- [NSNotification.Name](../nsnotification/name-swift.struct.md)
   A structure that defines the name of a notification.
 
 

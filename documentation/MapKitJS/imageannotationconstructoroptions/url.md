@@ -1,16 +1,19 @@
 # url
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An object that contains URLs for the image assets in multiple resolutions.
 
 **Availability**:
-- MapKit JS 5.0+
+- MapKit JS 5.0+ - Deprecated in 6.0
+
+> **Deprecated**: Use [`image`](./image.md) instead.
 
 ## Declaration
 
-```swift
+```
 url?: ImageDelegate | ImageHashObject | ImageSource | Promise<ImageSource>;
 ```
 
@@ -35,7 +38,8 @@ If you choose not to provide standard and Retina resolution assets, you have two
 
 ## See Also
 
-- [image](imageannotationconstructoroptions/image.md)
+### Initializing the image
+- [image](./image.md)
   The image for the annotation.
 
 

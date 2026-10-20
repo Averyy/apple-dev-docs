@@ -1,7 +1,8 @@
 # SMART_Execute_Offline_Immediate
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to execute an immediate offline test.
 
@@ -10,7 +11,7 @@ Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to execut
 
 ## Declaration
 
-```swift
+```c
 bool SMART_Execute_Offline_Immediate(SCSIDeviceOutParameters *request, bool extendedTest, SCSIDeviceInParameters *response, UInt64 senseBufAddr);
 ```
 
@@ -26,26 +27,27 @@ Use this method in your dext to prefill a 16-byte CDB for the standard SMART SCS
 
 - `request`: An object that contains the request information.
 - `extendedTest`: `true` to perform an extended test; `false`, otherwise.
-- `response`: An empty [`SCSIDeviceInParameters`](scsideviceinparameters.md) object. On return, the framework populates this object with the response information.
+- `response`: An empty [`SCSIDeviceInParameters`](./scsideviceinparameters.md) object. On return, the framework populates this object with the response information.
 - `senseBufAddr`: The address of the sense buffer.
 
 ## See Also
 
-- [SMART_Enable_Disable_Operations](smart_enable_disable_operations.md)
+### Creating Self-Monitoring, Analysis and Reporting Technology (SMART) Commands
+- [SMART_Enable_Disable_Operations](./smart_enable_disable_operations.md)
   Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to enable or disable operations.
-- [SMART_Enable_Disable_AutoSave](smart_enable_disable_autosave.md)
+- [SMART_Enable_Disable_AutoSave](./smart_enable_disable_autosave.md)
   Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to enable or disable the autosave feature.
-- [SMART_Return_Status](smart_return_status.md)
+- [SMART_Return_Status](./smart_return_status.md)
   Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to return status.
-- [SMART_Read_Data](smart_read_data.md)
+- [SMART_Read_Data](./smart_read_data.md)
   Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to read data.
-- [SMART_Read_Data_Thresholds](smart_read_data_thresholds.md)
+- [SMART_Read_Data_Thresholds](./smart_read_data_thresholds.md)
   Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to read data thresholds.
-- [SMART_Read_Log_At_Address](smart_read_log_at_address.md)
+- [SMART_Read_Log_At_Address](./smart_read_log_at_address.md)
   Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to read log data from an address.
-- [SMART_Write_Log_At_Address](smart_write_log_at_address.md)
+- [SMART_Write_Log_At_Address](./smart_write_log_at_address.md)
   Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to write log data at an address.
-- [SMART_Get_Identify_Data](smart_get_identify_data.md)
+- [SMART_Get_Identify_Data](./smart_get_identify_data.md)
   Fills a Command Descriptor Block (CDB) to perform a SMART SCSI Command to get identify data.
 
 

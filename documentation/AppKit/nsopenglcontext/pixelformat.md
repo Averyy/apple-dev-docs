@@ -1,17 +1,22 @@
 # pixelFormat
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the OpenGL context.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var pixelFormat: NSOpenGLPixelFormat { get }
+```
+
+```objc
+@property (strong, readonly) NSOpenGLPixelFormat * pixelFormat;
 ```
 
 

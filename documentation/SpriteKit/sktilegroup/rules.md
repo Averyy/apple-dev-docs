@@ -1,9 +1,10 @@
 # rules
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An array of [`SKTileGroupRule`](sktilegrouprule.md) objects that the tile group uses to determine tile placement.
+An array of [`SKTileGroupRule`](../sktilegrouprule.md) objects that the tile group uses to determine tile placement.
 
 **Availability**:
 - iOS 10.0+
@@ -20,9 +21,14 @@ An array of [`SKTileGroupRule`](sktilegrouprule.md) objects that the tile group 
 var rules: [SKTileGroupRule] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<SKTileGroupRule *> * rules;
+```
+
 ## See Also
 
-- [var name: String?](sktilegroup/name.md)
+### Accessing or Setting a Tile Group’s Properties
+- [var name: String?](./name.md)
   The receiver’s name.
 
 

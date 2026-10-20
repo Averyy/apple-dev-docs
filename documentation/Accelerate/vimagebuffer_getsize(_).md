@@ -1,7 +1,8 @@
 # vImageBuffer_GetSize(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the size, in pixels, of a vImage buffer.
 
@@ -20,13 +21,17 @@ Returns the size, in pixels, of a vImage buffer.
 func vImageBuffer_GetSize(_ buf: UnsafePointer<vImage_Buffer>) -> CGSize
 ```
 
+```c
+CGSize vImageBuffer_GetSize(const vImage_Buffer *buf);
+```
+
 #### Return Value
 
 The size of the buffer.
 
 #### Discussion
 
-The vImage library defines a buffer’s width and height as [`vImagePixelCount`](vimagepixelcount.md) values that may be larger than [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/swift/floatingpoint/greatestfinitemagnitude). This function rounds down the buffer’s dimensions to the nearest representable [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values that are less than, or equal to, the size of the buffer.
+The vImage library defines a buffer’s width and height as [`vImagePixelCount`](./vimagepixelcount.md) values that may be larger than [`greatestFiniteMagnitude`](../Swift/floatingpoint/greatestfinitemagnitude.md). This function rounds down the buffer’s dimensions to the nearest representable [`CGFloat`](../CoreFoundation/cgfloat-swift.struct.md) values that are less than, or equal to, the size of the buffer.
 
 ## Parameters
 

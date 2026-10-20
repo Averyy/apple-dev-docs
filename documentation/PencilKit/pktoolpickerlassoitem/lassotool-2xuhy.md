@@ -1,7 +1,8 @@
 # lassoTool
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A lasso tool for selecting parts of a drawing.
 

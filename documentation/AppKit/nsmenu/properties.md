@@ -1,12 +1,13 @@
 # NSMenu.Properties
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-These constants are used as a bitmask for specifying a set of menu or menu item properties, and are contained by the [`propertiesToUpdate`](nsmenu/propertiestoupdate.md) property.
+These constants are used as a bitmask for specifying a set of menu or menu item properties, and are contained by the [`propertiesToUpdate`](./propertiestoupdate.md) property.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,35 +15,39 @@ These constants are used as a bitmask for specifying a set of menu or menu item 
 struct Properties
 ```
 
+```c
+enum NSMenuProperties : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var propertyItemTitle: NSMenu.Properties](nsmenu/properties/propertyitemtitle.md)
+- [static var propertyItemTitle: NSMenu.Properties](./properties/propertyitemtitle.md)
   The menu item’s title.
-- [static var propertyItemAttributedTitle: NSMenu.Properties](nsmenu/properties/propertyitemattributedtitle.md)
+- [static var propertyItemAttributedTitle: NSMenu.Properties](./properties/propertyitemattributedtitle.md)
   The menu item’s attributed string title.
-- [static var propertyItemKeyEquivalent: NSMenu.Properties](nsmenu/properties/propertyitemkeyequivalent.md)
+- [static var propertyItemKeyEquivalent: NSMenu.Properties](./properties/propertyitemkeyequivalent.md)
   The menu item’s key equivalent.
-- [static var propertyItemImage: NSMenu.Properties](nsmenu/properties/propertyitemimage.md)
+- [static var propertyItemImage: NSMenu.Properties](./properties/propertyitemimage.md)
   The menu image.
-- [static var propertyItemEnabled: NSMenu.Properties](nsmenu/properties/propertyitemenabled.md)
+- [static var propertyItemEnabled: NSMenu.Properties](./properties/propertyitemenabled.md)
   Whether the menu item is enabled or disabled.
-- [static var propertyItemAccessibilityDescription: NSMenu.Properties](nsmenu/properties/propertyitemaccessibilitydescription.md)
+- [static var propertyItemAccessibilityDescription: NSMenu.Properties](./properties/propertyitemaccessibilitydescription.md)
   The menu item’s accessibility description.
 ### Creating an NSMenu Property
-- [init(rawValue: UInt)](nsmenu/properties/init(rawvalue:).md)
+- [init(rawValue: UInt)](./properties/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # receivesLighting
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `.receivesLighting` option means that the virtual lights will interact with real world surfaces causing them to shine. The properties  of the mesh will be set to a default material.
 

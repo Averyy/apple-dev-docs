@@ -1,17 +1,22 @@
 # addToFavorites()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the target device to the user’s favorite devices list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func addToFavorites() -> IOReturn
+```
+
+```objc
+- (IOReturn) addToFavorites;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # Keywords Report (Brands)
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve performance metrics for Apple Maps keywords.
 
@@ -14,13 +15,13 @@ Apple Maps keyword performance reports return one row per keyword. Each row cont
 
 Use `filters` to scope results to specific campaigns or ad groups. For Apple Maps campaigns, keywords represent search queries that trigger ad delivery on Apple Maps.
 
-See [`Filter`](filter.md) for the full set of supported comparison operators.
+See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
 #### Request Body
 
-See [`BrandsReportingRequest`](brandsreportingrequest.md).
+See [`BrandsReportingRequest`](./brandsreportingrequest.md).
 
-##### Groupby Dimensions
+##### groupBy Dimensions
 
 Apple Maps keyword reports support a reduced set of `groupBy` dimensions. Neither `supplyPlacement` nor `locationId` is available at the keyword entity level.
 
@@ -249,17 +250,34 @@ POST /v1/reports/business-brands/keywords/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `BrandsReportingRequest`
+
+## Responses
+
+- `200` OK (`BrandsKeywordReportResponse`, `application/json`): Successful response. Returns [`BrandsKeywordReportResponse`](./brandskeywordreportresponse.md) (`result`: [`BrandsKeywordResultContainer`](./brandskeywordresultcontainer.md)).
+- `400` Bad Request (`Error`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`Error`, `application/json`): Unauthorized.
+- `403` Forbidden (`Error`, `application/json`): Forbidden.
+- `404` Not Found (`Error`, `application/json`): Not Found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`Error`, `application/json`): Rate Limit Exceeded. Returns [`ErrorResponse`](./errorresponse.md).
+- `500` Internal Server Error (`Error`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
 
 ## See Also
 
-- [Campaigns Report (Brands)](get-brand-campaign-reports.md)
+- [Campaigns Report (Brands)](./get-brand-campaign-reports.md)
   Retrieve performance metrics for Apple Maps campaigns.
-- [Ad Groups Report (Brands)](get-brand-ad-group-reports.md)
+- [Ad Groups Report (Brands)](./get-brand-ad-group-reports.md)
   Retrieve performance metrics for Apple Maps ad groups.
-- [Ads Report (Brands)](get-brand-ad-reports.md)
+- [Ads Report (Brands)](./get-brand-ad-reports.md)
   Retrieve performance metrics for Apple Maps ads.
-- [Search Terms Report (Brands)](get-brand-search-term-reports.md)
+- [Search Terms Report (Brands)](./get-brand-search-term-reports.md)
   Retrieve performance metrics for the actual search terms that triggered keyword matches in Apple Maps campaigns.
 
 

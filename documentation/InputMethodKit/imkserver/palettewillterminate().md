@@ -1,7 +1,8 @@
 # paletteWillTerminate()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.7+
@@ -12,9 +13,14 @@
 func paletteWillTerminate() -> Bool
 ```
 
+```objc
+- (BOOL) paletteWillTerminate;
+```
+
 ## See Also
 
-- [func lastKeyEventWasDeadKey() -> Bool](imkserver/lastkeyeventwasdeadkey.md)
+### Instance Methods
+- [func lastKeyEventWasDeadKey() -> Bool](./lastkeyeventwasdeadkey%28%29.md)
 
 
 ---

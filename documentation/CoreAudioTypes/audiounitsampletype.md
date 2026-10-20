@@ -1,7 +1,8 @@
 # AudioUnitSampleType
 
 **Framework**: Core Audio Types  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The canonical audio data sample type for audio processing.
 
@@ -14,10 +15,32 @@ The canonical audio data sample type for audio processing.
 - visionOS 1.0+
 - watchOS 3.0+
 
+> **Deprecated**: The concept of canonical formats is deprecated
+
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+typealias AudioUnitSampleType = Int32
+```
+
+*Mac Catalyst, macOS*
 
 ```swift
 typealias AudioUnitSampleType = Float32
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```c
+typedef SInt32 AudioUnitSampleType;
+```
+
+*Mac Catalyst, macOS*
+
+```c
+typedef Float32 AudioUnitSampleType;
 ```
 
 #### Discussion
@@ -26,19 +49,20 @@ The canonical audio sample type for audio units and other audio processing in iP
 
 ## See Also
 
-- [typealias AVAudioInteger](avaudiointeger.md)
+### Common Types
+- [typealias AVAudioInteger](./avaudiointeger.md)
   An integer type for audio operations.
-- [typealias AVAudioUInteger](avaudiouinteger.md)
+- [typealias AVAudioUInteger](./avaudiouinteger.md)
   An unsigned integer type for audio operations.
-- [typealias AudioSessionID](audiosessionid.md)
+- [typealias AudioSessionID](./audiosessionid.md)
   A unique identifier of an audio session.
-- [var kAudioUnitSampleFractionBits: Int32](kaudiounitsamplefractionbits.md)
+- [var kAudioUnitSampleFractionBits: Int32](./kaudiounitsamplefractionbits.md)
   The number of fractional bits in fixed-point samples.
-- [var COREAUDIOTYPES_VERSION: Int32](coreaudiotypes_version.md)
+- [var COREAUDIOTYPES_VERSION: Int32](./coreaudiotypes_version.md)
   A value that represents the Core Audio Types version.
-- [typealias AudioSampleType](audiosampletype.md)
+- [typealias AudioSampleType](./audiosampletype.md)
   The canonical audio data sample type for input and output.
-- [struct AudioFormatListItem](audioformatlistitem.md)
+- [struct AudioFormatListItem](./audioformatlistitem.md)
 
 
 ---

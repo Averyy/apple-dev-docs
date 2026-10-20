@@ -1,7 +1,8 @@
 # mapTemplate(_:displayStyleFor:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the maneuver’s display style.
 
@@ -16,13 +17,17 @@ Asks the delegate for the maneuver’s display style.
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, displayStyleFor maneuver: CPManeuver) -> CPManeuverDisplayStyle
 ```
 
+```objc
+- (CPManeuverDisplayStyle) mapTemplate:(CPMapTemplate *) mapTemplate displayStyleForManeuver:(CPManeuver *) maneuver;
+```
+
 #### Return Value
 
 A display style that determines the visual layout for the maneuver.
 
 #### Discussion
 
-The display style only applies to the second maneuver that you provide in the navigation session’s [`upcomingManeuvers`](cpnavigationsession/upcomingmaneuvers.md) array.
+The display style only applies to the second maneuver that you provide in the navigation session’s [`upcomingManeuvers`](../cpnavigationsession/upcomingmaneuvers.md) array.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ The display style only applies to the second maneuver that you provide in the na
 
 ## See Also
 
-- [struct CPManeuverDisplayStyle](cpmaneuverdisplaystyle.md)
+### Setting the Display Style
+- [struct CPManeuverDisplayStyle](../cpmaneuverdisplaystyle.md)
   A display style that determines the visual layout for a maneuver.
 
 

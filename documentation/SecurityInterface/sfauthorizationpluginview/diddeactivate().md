@@ -1,7 +1,8 @@
 # didDeactivate()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the authorization plug-in that its user interface has been deactivated.
 
@@ -14,11 +15,16 @@ Tells the authorization plug-in that its user interface has been deactivated.
 func didDeactivate()
 ```
 
+```objc
+- (void) didDeactivate;
+```
+
 ## See Also
 
-- [func didActivate()](sfauthorizationpluginview/didactivate.md)
+### Configuring the User Interface
+- [func didActivate()](./didactivate%28%29.md)
   Tells the authorization plug-in when its user interface has become active.
-- [func willActivate(withUser: [AnyHashable : Any]!)](sfauthorizationpluginview/willactivate(withuser:).md)
+- [func willActivate(withUser: [AnyHashable : Any]!)](./willactivate%28withuser%29.md)
   Tells the authorization plug-in that its user interface is about to be made active by the Apple-provided Security Agent.
 
 

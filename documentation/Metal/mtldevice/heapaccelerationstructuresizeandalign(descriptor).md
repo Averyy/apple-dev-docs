@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the size and alignment, in bytes, of an acceleration structure if you create it from a heap with a descriptor.
@@ -20,9 +21,13 @@ Returns the size and alignment, in bytes, of an acceleration structure if you cr
 func heapAccelerationStructureSizeAndAlign(descriptor: MTLAccelerationStructureDescriptor) -> MTLSizeAndAlign
 ```
 
+```objc
+- (MTLSizeAndAlign) heapAccelerationStructureSizeAndAlignWithDescriptor:(MTLAccelerationStructureDescriptor *) descriptor;
+```
+
 #### Return Value
 
-An [`MTLSizeAndAlign`](mtlsizeandalign.md) instance.
+An [`MTLSizeAndAlign`](../mtlsizeandalign.md) instance.
 
 #### Discussion
 
@@ -30,19 +35,20 @@ Use this method to help estimate an appropriate size for a new heap before you c
 
 ## Parameters
 
-- `descriptor`: An [`MTLAccelerationStructureDescriptor`](mtlaccelerationstructuredescriptor.md) instance.
+- `descriptor`: An [`MTLAccelerationStructureDescriptor`](../mtlaccelerationstructuredescriptor.md) instance.
 
 ## See Also
 
-- [func makeHeap(descriptor: MTLHeapDescriptor) -> (any MTLHeap)?](mtldevice/makeheap(descriptor:).md)
+### Working with resource heaps
+- [func makeHeap(descriptor: MTLHeapDescriptor) -> (any MTLHeap)?](./makeheap%28descriptor%29.md)
   Creates a new GPU heap instance.
-- [func heapBufferSizeAndAlign(length: Int, options: MTLResourceOptions) -> MTLSizeAndAlign](mtldevice/heapbuffersizeandalign(length:options:).md)
+- [func heapBufferSizeAndAlign(length: Int, options: MTLResourceOptions) -> MTLSizeAndAlign](./heapbuffersizeandalign%28length,options%29.md)
   Returns the size and alignment, in bytes, of a buffer if you create it from a heap.
-- [func heapTextureSizeAndAlign(descriptor: MTLTextureDescriptor) -> MTLSizeAndAlign](mtldevice/heaptexturesizeandalign(descriptor:).md)
+- [func heapTextureSizeAndAlign(descriptor: MTLTextureDescriptor) -> MTLSizeAndAlign](./heaptexturesizeandalign%28descriptor%29.md)
   Returns the size and alignment, in bytes, of a texture if you create it from a heap.
-- [func heapAccelerationStructureSizeAndAlign(size: Int) -> MTLSizeAndAlign](mtldevice/heapaccelerationstructuresizeandalign(size:).md)
+- [func heapAccelerationStructureSizeAndAlign(size: Int) -> MTLSizeAndAlign](./heapaccelerationstructuresizeandalign%28size%29.md)
   Returns the size and alignment, in bytes, of an acceleration structure if you create it from a heap.
-- [struct MTLSizeAndAlign](mtlsizeandalign.md)
+- [struct MTLSizeAndAlign](../mtlsizeandalign.md)
   The size and alignment of a resource, in bytes.
 
 

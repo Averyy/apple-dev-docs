@@ -1,7 +1,8 @@
 # angularVelocities
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angular velocities of all rigid bodies under the influence of the effect, or nil if angular velocity information was not requested.
 

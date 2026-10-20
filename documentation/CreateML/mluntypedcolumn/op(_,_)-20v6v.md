@@ -1,7 +1,8 @@
 # /(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column by dividing each element in the first column by the corresponding element in the second column.
 
@@ -19,6 +20,16 @@ Creates a column by dividing each element in the first column by the correspondi
 static func / (a: MLUntypedColumn, b: MLUntypedColumn) -> MLUntypedColumn
 ```
 
+**Other overloads**:
+
+```swift
+static func / (a: MLUntypedColumn, b: any MLDataValueConvertible) -> MLUntypedColumn
+```
+
+```swift
+static func / (a: any MLDataValueConvertible, b: MLUntypedColumn) -> MLUntypedColumn
+```
+
 #### Return Value
 
 A new column if the columns have the same size and underlying type; otherwise an invalid column.
@@ -30,11 +41,12 @@ A new column if the columns have the same size and underlying type; otherwise an
 
 ## See Also
 
-- [static +(_:_:)](mluntypedcolumn/+(_:_:).md)
+### Combining columns
+- [static +(_:_:)](./plus%28_,_%29.md)
   Creates a column by adding each element in the first column to the corresponding element in the second column.
-- [static -(_:_:)](mluntypedcolumn/-(_:_:).md)
+- [static -(_:_:)](./minus%28_,_%29.md)
   Creates a column by subtracting each element in the second column from the corresponding element in the first column.
-- [static *(_:_:)](mluntypedcolumn/*(_:_:).md)
+- [static *(_:_:)](./star%28_,_%29.md)
   Creates a column by multiplying each element in the first column by the corresponding element in the second column.
 
 

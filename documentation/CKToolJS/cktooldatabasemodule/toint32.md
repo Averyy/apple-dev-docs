@@ -1,7 +1,8 @@
 # toInt32
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a number to an `Int32`.
 
@@ -10,7 +11,7 @@ Converts a number to an `Int32`.
 
 ## Declaration
 
-```swift
+```
 static Int32 toInt32();
 ```
 

@@ -1,17 +1,22 @@
 # requestRemoteMTU(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates the process to reconfigure the L2CAP channel with a new outgoing MTU.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func requestRemoteMTU(_ remoteMTU: BluetoothL2CAPMTU) -> IOReturn
+```
+
+```objc
+- (IOReturn) requestRemoteMTU:(BluetoothL2CAPMTU) remoteMTU;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # isApprovedRequester
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the participant was originally a requester that an originator or administrator approved to join the share.
 
@@ -18,6 +19,10 @@ Indicates whether the participant was originally a requester that an originator 
 
 ```swift
 var isApprovedRequester: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL isApprovedRequester;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(windowID:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a window visibility toggle to alter the visibility of a specific window.
 

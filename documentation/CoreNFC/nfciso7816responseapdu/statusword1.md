@@ -1,7 +1,8 @@
 # statusWord1
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SW1 command-processing status byte.
 
@@ -22,9 +23,10 @@ This value is always valid.
 
 ## See Also
 
-- [var payload: Data?](nfciso7816responseapdu/payload.md)
+### Response Data
+- [var payload: Data?](./payload.md)
   A data object that contains the response data.
-- [var statusWord2: UInt8](nfciso7816responseapdu/statusword2.md)
+- [var statusWord2: UInt8](./statusword2.md)
   The SW2 command-processing status byte.
 
 

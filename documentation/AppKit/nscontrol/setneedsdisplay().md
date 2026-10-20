@@ -1,17 +1,24 @@
 # setNeedsDisplay()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the receiver as needing redisplay (assuming automatic display is enabled).
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Set the needsDisplay property to YES instead
 
 ## Declaration
 
 ```swift
 func setNeedsDisplay()
+```
+
+```objc
+- (void) setNeedsDisplay;
 ```
 
 #### Discussion
@@ -20,23 +27,25 @@ This method also recalculates the dimensions of the control as needed.
 
 ## See Also
 
-- [var needsDisplay: Bool](nsview/needsdisplay.md)
+### Related Documentation
+- [var needsDisplay: Bool](../nsview/needsdisplay.md)
   A Boolean value that determines whether the view needs to be redrawn before being displayed.
-- [func selectedCell() -> NSCell?](nscontrol/selectedcell.md)
+### Deprecated methods
+- [func selectedCell() -> NSCell?](./selectedcell%28%29.md)
   Returns the receiver’s selected cell.
-- [func selectedTag() -> Int](nscontrol/selectedtag.md)
+- [func selectedTag() -> Int](./selectedtag%28%29.md)
   Returns the tag of the receiver’s selected cell.
-- [func calcSize()](nscontrol/calcsize.md)
+- [func calcSize()](./calcsize%28%29.md)
   Recomputes any internal sizing information for the receiver, if necessary.
-- [func selectCell(NSCell)](nscontrol/selectcell(_:).md)
+- [func selectCell(NSCell)](./selectcell%28_%29.md)
   Selects the specified cell and redraws the control as needed.
-- [func drawCell(NSCell)](nscontrol/drawcell(_:).md)
+- [func drawCell(NSCell)](./drawcell%28_%29.md)
   Draws the specified cell, as long as it belongs to the receiver.
-- [func drawCellInside(NSCell)](nscontrol/drawcellinside(_:).md)
+- [func drawCellInside(NSCell)](./drawcellinside%28_%29.md)
   Draws the inside of the receiver’s cell (the area within the bezel or border)
-- [func updateCell(NSCell)](nscontrol/updatecell(_:).md)
+- [func updateCell(NSCell)](./updatecell%28_%29.md)
   Marks the specified cell as in need of redrawing.
-- [func updateCellInside(NSCell)](nscontrol/updatecellinside(_:).md)
+- [func updateCellInside(NSCell)](./updatecellinside%28_%29.md)
   Marks the inside of the specified cell as in need of redrawing.
 
 

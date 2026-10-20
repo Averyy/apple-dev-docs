@@ -1,22 +1,23 @@
 # UserDoesHBASupportMultiPathing
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries the HBA child class to determine if it supports multipathing in response to a call from the framework.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserDoesHBASupportMultiPathing(bool *result);
 ```
 
 #### Return Value
 
-A value that indicates the result of determining if the driver extension class supports multipathing. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of determining if the driver extension class supports multipathing. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 ## Parameters
 
@@ -24,29 +25,30 @@ A value that indicates the result of determining if the driver extension class s
 
 ## See Also
 
-- [UserReportInitiatorIdentifier](iouserscsiparallelinterfacecontroller/userreportinitiatoridentifier.md)
+### Managing host bus adapters
+- [UserReportInitiatorIdentifier](./userreportinitiatoridentifier.md)
   Gets the SCSI device identifier for the host bus adapter (HBA) in response to a call from the framework.
-- [UserReportHighestSupportedDeviceID](iouserscsiparallelinterfacecontroller/userreporthighestsupporteddeviceid.md)
+- [UserReportHighestSupportedDeviceID](./userreporthighestsupporteddeviceid.md)
   Gets the highest supported SCSI device identifier in response to a call from the framework.
-- [UserReportMaximumTaskCount](iouserscsiparallelinterfacecontroller/userreportmaximumtaskcount.md)
+- [UserReportMaximumTaskCount](./userreportmaximumtaskcount.md)
   Gets the maximum number of outstanding tasks the HBA can process in response to a call from the framework.
-- [UserDoesHBAPerformDeviceManagement](iouserscsiparallelinterfacecontroller/userdoeshbaperformdevicemanagement.md)
+- [UserDoesHBAPerformDeviceManagement](./userdoeshbaperformdevicemanagement.md)
   Determines if the host bus adapter (HBA) manages devices in response to a call from the framework.
-- [UserReportHBAHighestLogicalUnitNumber](iouserscsiparallelinterfacecontroller/userreporthbahighestlogicalunitnumber.md)
+- [UserReportHBAHighestLogicalUnitNumber](./userreporthbahighestlogicalunitnumber.md)
   Gets the highest logical unit number (LUN) in response to a call from the framework.
-- [UserDoesHBAPerformAutoSense](iouserscsiparallelinterfacecontroller/userdoeshbaperformautosense.md)
+- [UserDoesHBAPerformAutoSense](./userdoeshbaperformautosense.md)
   Determines if the driver extension class automatically performs autosense and provides autosense data for each I/O in response to a call from the framework.
-- [UserDoesHBASupportSCSIParallelFeature](iouserscsiparallelinterfacecontroller/userdoeshbasupportscsiparallelfeature.md)
+- [UserDoesHBASupportSCSIParallelFeature](./userdoeshbasupportscsiparallelfeature.md)
   Determines whether the driver extension class supports a specific feature in response to a call from the framework.
-- [SCSIParallelFeature](scsiparallelfeature.md)
+- [SCSIParallelFeature](../scsiparallelfeature.md)
   A feature that the driver extension supports.
-- [UserMapHBAData](iouserscsiparallelinterfacecontroller/usermaphbadata.md)
+- [UserMapHBAData](./usermaphbadata.md)
   Maps any host bus adapter (HBA)-specific task data in response to a call from the framework.
-- [UserSetHBAProperties](iouserscsiparallelinterfacecontroller/usersethbaproperties.md)
+- [UserSetHBAProperties](./usersethbaproperties.md)
   Sets multiple properties for a host bus adapter.
-- [UserRemoveHBAProperties](iouserscsiparallelinterfacecontroller/userremovehbaproperties.md)
+- [UserRemoveHBAProperties](./userremovehbaproperties.md)
   Removes properties from a host bus adapter in response to a call from the framework.
-- [UserReportHBAConstraints](iouserscsiparallelinterfacecontroller/userreporthbaconstraints.md)
+- [UserReportHBAConstraints](./userreporthbaconstraints.md)
   Reports the I/O constraints for this controller.
 
 

@@ -1,14 +1,15 @@
 # ml_cpu_signal_deferred_get_timer
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t ml_cpu_signal_deferred_get_timer(void);
 ```
 

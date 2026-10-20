@@ -1,7 +1,8 @@
 # handleRxPacket
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes the data received from the USB device.
 
@@ -10,7 +11,7 @@ Processes the data received from the USB device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void handleRxPacket(uint8_t * & packet, uint32_t & size);
 ```
 
@@ -25,11 +26,12 @@ The system calls this method after it receives raw data from the USB device, and
 
 ## See Also
 
-- [RxFreeSpaceAvailable](iouserusbserial/rxfreespaceavailable.md)
+### Transmitting and Receiving Data
+- [RxFreeSpaceAvailable](./rxfreespaceavailable.md)
   Notifies your driver that buffer space is available for your device’s data.
-- [TxDataAvailable](iouserusbserial/txdataavailable.md)
+- [TxDataAvailable](./txdataavailable.md)
   Notifies your driver that the system has data for you to transmit to the device.
-- [handleInterruptPacket](iouserusbserial/handleinterruptpacket.md)
+- [handleInterruptPacket](./handleinterruptpacket.md)
   Processes an interrupt packet that originated from the device.
 
 

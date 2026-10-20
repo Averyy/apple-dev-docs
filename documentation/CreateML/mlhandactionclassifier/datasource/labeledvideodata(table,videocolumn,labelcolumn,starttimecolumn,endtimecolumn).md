@@ -1,15 +1,16 @@
 # MLHandActionClassifier.DataSource.labeledVideoData(table:videoColumn:labelColumn:startTimeColumn:endTimeColumn:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Creates a data source from a data table that contains the location and annotation for a set of video files.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- macOS 12.0+ - Deprecated in 14.0
 - visionOS 1.0+
 
 ## Declaration
@@ -31,17 +32,18 @@ case labeledVideoData(table: MLDataTable, videoColumn: String = __Defaults.video
 
 ## See Also
 
-- [MLHandActionClassifier.DataSource.labeledDirectories(at:)](mlhandactionclassifier/datasource/labeleddirectories(at:).md)
+### Creating a data source
+- [MLHandActionClassifier.DataSource.labeledDirectories(at:)](./labeleddirectories%28at%29.md)
   Creates a data source from a folder with subfolders that each contain videos of a hand action.
-- [MLHandActionClassifier.DataSource.labeledFiles(at:)](mlhandactionclassifier/datasource/labeledfiles(at:).md)
+- [MLHandActionClassifier.DataSource.labeledFiles(at:)](./labeledfiles%28at%29.md)
   Creates a data source from a folder that contains videos, each named after the hand action they represent.
-- [case directoryWithVideosAndAnnotation(at: URL, annotationFile: URL, videoColumn: String, labelColumn: String, startTimeColumn: String?, endTimeColumn: String?)](mlhandactionclassifier/datasource/directorywithvideosandannotation(at:annotationfile:videocolumn:labelcolumn:starttimecolumn:endtimecolumn:).md)
+- [case directoryWithVideosAndAnnotation(at: URL, annotationFile: URL, videoColumn: String, labelColumn: String, startTimeColumn: String?, endTimeColumn: String?)](./directorywithvideosandannotation%28at,annotationfile,videocolumn,labelcolumn,starttimecolumn,endtimecolumn%29.md)
   Creates a data source from a folder that contains videos and an annotation file.
-- [case labeledVideoDataFrame(DataFrame, videoColumn: String, labelColumn: String, startTimeColumn: String?, endTimeColumn: String?)](mlhandactionclassifier/datasource/labeledvideodataframe(_:videocolumn:labelcolumn:starttimecolumn:endtimecolumn:).md)
+- [case labeledVideoDataFrame(DataFrame, videoColumn: String, labelColumn: String, startTimeColumn: String?, endTimeColumn: String?)](./labeledvideodataframe%28_,videocolumn,labelcolumn,starttimecolumn,endtimecolumn%29.md)
   Creates a data source from a data frame that contains the location and annotation for a set of video files.
-- [case labeledKeypointsDataFrame(DataFrame, sessionIdColumn: String, labelColumn: String, featureColumn: String)](mlhandactionclassifier/datasource/labeledkeypointsdataframe(_:sessionidcolumn:labelcolumn:featurecolumn:).md)
+- [case labeledKeypointsDataFrame(DataFrame, sessionIdColumn: String, labelColumn: String, featureColumn: String)](./labeledkeypointsdataframe%28_,sessionidcolumn,labelcolumn,featurecolumn%29.md)
   Creates a data source from a data frame of hand action observations that each contain the locations of each hand joint and an annotation.
-- [case labeledKeypointsData(table: MLDataTable, sessionIdColumn: String, labelColumn: String, featureColumn: String)](mlhandactionclassifier/datasource/labeledkeypointsdata(table:sessionidcolumn:labelcolumn:featurecolumn:).md)
+- [case labeledKeypointsData(table: MLDataTable, sessionIdColumn: String, labelColumn: String, featureColumn: String)](./labeledkeypointsdata%28table,sessionidcolumn,labelcolumn,featurecolumn%29.md)
   Creates a data source from a data table of hand action observations that each contain the locations of each hand joint and an annotation.
 
 

@@ -1,20 +1,22 @@
 # mFrameTimeValue
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t mFrameTimeValue;
 ```
 
 ## See Also
 
-- [mFrameTimeScale](videodriverkit/iouservideostreambasicdescription/mframetimescale.md)
+### Accessing timing properties
+- [mFrameTimeScale](./mframetimescale.md)
 
 
 ---

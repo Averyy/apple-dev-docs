@@ -1,7 +1,8 @@
 # CXCallEndedReason.unanswered
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The call never started connecting and was never explicitly ended, such as when an outgoing or incoming call times out.
 
@@ -18,15 +19,20 @@ The call never started connecting and was never explicitly ended, such as when a
 case unanswered
 ```
 
+```c
+CXCallEndedReasonUnanswered
+```
+
 ## See Also
 
-- [CXCallEndedReason.failed](cxcallendedreason/failed.md)
+### Constants
+- [CXCallEndedReason.failed](./failed.md)
   An error occurred while attempting to service the call.
-- [CXCallEndedReason.remoteEnded](cxcallendedreason/remoteended.md)
+- [CXCallEndedReason.remoteEnded](./remoteended.md)
   The remote party explicitly ended the call.
-- [CXCallEndedReason.answeredElsewhere](cxcallendedreason/answeredelsewhere.md)
+- [CXCallEndedReason.answeredElsewhere](./answeredelsewhere.md)
   Another device answered the call.
-- [CXCallEndedReason.declinedElsewhere](cxcallendedreason/declinedelsewhere.md)
+- [CXCallEndedReason.declinedElsewhere](./declinedelsewhere.md)
   Another device declined the call.
 
 

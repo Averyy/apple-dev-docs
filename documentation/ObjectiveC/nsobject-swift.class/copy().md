@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object returned by `copy(with:)`.
 
@@ -20,21 +21,26 @@ Returns the object returned by `copy(with:)`.
 func copy() -> Any
 ```
 
+```objc
+- (id) copy;
+```
+
 #### Return Value
 
-The object returned by the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol method [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/copy(with:)),.
+The object returned by the [`NSCopying`](../../Foundation/nscopying.md) protocol method [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md),.
 
 #### Discussion
 
-This is a convenience method for classes that adopt the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol. An exception is raised if there is no implementation for [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/copy(with:)).
+This is a convenience method for classes that adopt the [`NSCopying`](../../Foundation/nscopying.md) protocol. An exception is raised if there is no implementation for [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md).
 
-`NSObject` does not itself support the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol. Subclasses must support the protocol and implement the [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/copy(with:)) method. A subclass version of the [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/copy(with:)) method should send the message to `super` first, to incorporate its implementation, unless the subclass descends directly from `NSObject`.
+`NSObject` does not itself support the [`NSCopying`](../../Foundation/nscopying.md) protocol. Subclasses must support the protocol and implement the [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) method. A subclass version of the [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) method should send the message to `super` first, to incorporate its implementation, unless the subclass descends directly from `NSObject`.
 
 ## See Also
 
-- [init()](nsobject-swift.class/init.md)
+### Creating, Copying, and Deallocating Objects
+- [init()](./init%28%29.md)
   Implemented by subclasses to initialize a new object (the receiver) immediately after memory for it has been allocated.
-- [func mutableCopy() -> Any](nsobject-swift.class/mutablecopy.md)
+- [func mutableCopy() -> Any](./mutablecopy%28%29.md)
   Returns the object returned by `mutableCopy(with:)` where the zone is `nil`.
 
 

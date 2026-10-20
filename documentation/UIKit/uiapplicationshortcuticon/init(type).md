@@ -1,7 +1,8 @@
 # init(type:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Home Screen quick action icon using a system-defined image.
 
@@ -17,6 +18,10 @@ Creates a Home Screen quick action icon using a system-defined image.
 convenience init(type: UIApplicationShortcutIcon.IconType)
 ```
 
+```objc
++ (instancetype) iconWithType:(UIApplicationShortcutIconType) type;
+```
+
 #### Return Value
 
 A Home Screen quick action icon initialized with the specified system image.
@@ -27,15 +32,16 @@ Use this method to create icons for actions supported by the system. Users expec
 
 ## Parameters
 
-- `type`: The system-defined image to use for the icon. For a list of possible images, see the [`UIApplicationShortcutIcon.IconType`](uiapplicationshortcuticon/icontype.md) enumeration.
+- `type`: The system-defined image to use for the icon. For a list of possible images, see the [`UIApplicationShortcutIcon.IconType`](./icontype.md) enumeration.
 
 ## See Also
 
-- [convenience init(templateImageName: String)](uiapplicationshortcuticon/init(templateimagename:).md)
+### Creating a quick action icon
+- [convenience init(templateImageName: String)](./init%28templateimagename%29.md)
   Creates a Home Screen quick action icon based on an image in your app’s bundle, preferably in an asset catalog.
-- [convenience init(systemImageName: String)](uiapplicationshortcuticon/init(systemimagename:).md)
+- [convenience init(systemImageName: String)](./init%28systemimagename%29.md)
   Creates a Home Screen quick action icon using a system symbol image.
-- [convenience init(contact: CNContact)](uiapplicationshortcuticon/init(contact:).md)
+- [convenience init(contact: CNContact)](./init%28contact%29.md)
   Creates a Home Screen quick action icon from the picture for a contact or a monogram of the contact name if the picture is unavailable.
 
 

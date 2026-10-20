@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWConfigurationPacketID](1642795-anonymous/kfwconfigurationpacketid.md)
-- [kFWLinkOnPacketID](1642795-anonymous/kfwlinkonpacketid.md)
-- [kFWSelfIDPacketID](1642795-anonymous/kfwselfidpacketid.md)
+- [kFWConfigurationPacketID](./api-1642795-anonymous/kfwconfigurationpacketid.md)
+- [kFWLinkOnPacketID](./api-1642795-anonymous/kfwlinkonpacketid.md)
+- [kFWSelfIDPacketID](./api-1642795-anonymous/kfwselfidpacketid.md)
 
 
 ---

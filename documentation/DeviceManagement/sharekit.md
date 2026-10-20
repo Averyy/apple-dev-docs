@@ -1,16 +1,17 @@
 # ShareKit
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures ShareKit.
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.12
 
 ## Declaration
 
-```swift
+```
 object ShareKit
 ```
 
@@ -18,7 +19,7 @@ object ShareKit
 
 Specify `com.apple.ShareKitHelper` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -32,20 +33,25 @@ Specify `com.apple.ShareKitHelper` as the payload type.
 
 ## Properties
 
-- `SHKAllowedShareServices` ([string]): The list of plugin IDs that show up in the user’s Share menu. If this array exists, only these items are permitted. Deprecated: macOS 10.12+
-- `SHKDeniedShareServices` ([string]): The list of plugin IDs that won’t show up in the user’s Share menu. This key is used only if there’s no `SHKAllowedShareServices` key. Deprecated: macOS 10.12+
+- `SHKAllowedShareServices` ([string]) *(deprecated)*: The list of plugin IDs that show up in the user’s Share menu. If this array exists, only these items are permitted.
+
+  Deprecated: macOS 10.12+
+- `SHKDeniedShareServices` ([string]) *(deprecated)*: The list of plugin IDs that won’t show up in the user’s Share menu. This key is used only if there’s no `SHKAllowedShareServices` key.
+
+  Deprecated: macOS 10.12+
 
 ## See Also
 
-- [object APN](apn.md)
+### Deprecated
+- [object APN](./apn.md)
   The payload that configures access point names.
-- [object FDERecoveryKeyRedirection](fderecoverykeyredirection.md)
+- [object FDERecoveryKeyRedirection](./fderecoverykeyredirection.md)
   The payload that configures FileVault recovery key redirection.
-- [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
+- [object MediaManagementAllowedMedia](./mediamanagementallowedmedia.md)
   The payload that configures media management.
-- [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
+- [object ParentalControlDictationAndProfanity](./parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
-- [object SystemPreferences](systempreferences.md)
+- [object SystemPreferences](./systempreferences.md)
   The payload that configures the preference panes.
 
 

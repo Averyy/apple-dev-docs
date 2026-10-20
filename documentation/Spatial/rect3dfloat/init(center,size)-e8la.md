@@ -1,7 +1,8 @@
 # init(center:size:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle at the specified center with the specified size.
 
@@ -18,6 +19,10 @@ Creates a rectangle at the specified center with the specified size.
 
 ```swift
 init(center: Point3DFloat, size: Size3DFloat)
+```
+
+```c
+static SPRect3DFloat SPRect3DFloatMakeAtCenter(SPPoint3DFloat center, SPSize3DFloat size);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # GroupSessionEvent.Action.QueueChange.Item
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Detailed information about an item involved in a queue change.
 
@@ -21,14 +22,14 @@ struct Item
 
 #### Overview
 
-Before you notify a participant about a queue-related change, create an item that contains the name of the song or container that changed. Use this item to configure a [`GroupSessionEvent.Action.QueueChange`](groupsessionevent/action-swift.struct/queuechange.md) structure with additional details about the change.
+Before you notify a participant about a queue-related change, create an item that contains the name of the song or container that changed. Use this item to configure a [`GroupSessionEvent.Action.QueueChange`](../queuechange.md) structure with additional details about the change.
 
 ## Topics
 
 ### Creating the item
-- [static func song(String) -> GroupSessionEvent.Action.QueueChange.Item](groupsessionevent/action-swift.struct/queuechange/item/song(_:).md)
+- [static func song(String) -> GroupSessionEvent.Action.QueueChange.Item](./item/song%28_%29.md)
   Creates an item that contains the name of a song.
-- [static func container(String) -> GroupSessionEvent.Action.QueueChange.Item](groupsessionevent/action-swift.struct/queuechange/item/container(_:).md)
+- [static func container(String) -> GroupSessionEvent.Action.QueueChange.Item](./item/container%28_%29.md)
   Creates an item that contains the name of a container.
 
 

@@ -1,7 +1,8 @@
 # init(name:type:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a new attribute object of a specified type with a name that can be referenced within the shader.
 
@@ -20,13 +21,17 @@ Creates and initializes a new attribute object of a specified type with a name t
 init(name: String, type: SKAttributeType)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name type:(SKAttributeType) type;
+```
+
 #### Return Value
 
 A new attribute object.
 
 #### Discussion
 
-Attribute names are typically named with a preceding “a” and an underscore. The following code shows how to initialize an attribute named `a_frequency` which is of type [`SKAttributeType.float`](skattributetype/float.md).
+Attribute names are typically named with a preceding “a” and an underscore. The following code shows how to initialize an attribute named `a_frequency` which is of type [`SKAttributeType.float`](../skattributetype/float.md).
 
 ```swift
 let attribute = SKAttribute(name: "a_frequency", 

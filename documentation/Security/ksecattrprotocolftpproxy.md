@@ -1,7 +1,8 @@
 # kSecAttrProtocolFTPProxy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 FTP proxy.
 
@@ -18,6 +19,10 @@ FTP proxy.
 
 ```swift
 let kSecAttrProtocolFTPProxy: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolFTPProxy;
 ```
 
 

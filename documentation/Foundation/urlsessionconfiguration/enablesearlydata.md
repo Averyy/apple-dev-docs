@@ -1,7 +1,8 @@
 # enablesEarlyData
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var enablesEarlyData: Bool { get set }
+```
+
+```objc
+@property BOOL enablesEarlyData;
 ```
 
 

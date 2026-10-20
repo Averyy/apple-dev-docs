@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.TextualContextAttribute.TextualContext.plain
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text that has no specific context.
 

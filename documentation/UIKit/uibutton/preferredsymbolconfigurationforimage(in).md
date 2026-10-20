@@ -1,7 +1,8 @@
 # preferredSymbolConfigurationForImage(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the preferred symbol configuration for a button state.
 
@@ -18,23 +19,28 @@ Returns the preferred symbol configuration for a button state.
 func preferredSymbolConfigurationForImage(in state: UIControl.State) -> UIImage.SymbolConfiguration?
 ```
 
+```objc
+- (UIImageSymbolConfiguration *) preferredSymbolConfigurationForImageInState:(UIControlState) state;
+```
+
 ## Parameters
 
-- `state`: The state that uses the symbol configuration. Possible values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
+- `state`: The state that uses the symbol configuration. Possible values are described in [`UIControl.State`](../uicontrol/state-swift.struct.md).
 
 ## See Also
 
-- [func backgroundImage(for: UIControl.State) -> UIImage?](uibutton/backgroundimage(for:).md)
+### Managing images and tint color
+- [func backgroundImage(for: UIControl.State) -> UIImage?](./backgroundimage%28for%29.md)
   Returns the background image used for a button state.
-- [func image(for: UIControl.State) -> UIImage?](uibutton/image(for:).md)
+- [func image(for: UIControl.State) -> UIImage?](./image%28for%29.md)
   Returns the image used for a button state.
-- [func setBackgroundImage(UIImage?, for: UIControl.State)](uibutton/setbackgroundimage(_:for:).md)
+- [func setBackgroundImage(UIImage?, for: UIControl.State)](./setbackgroundimage%28_,for%29.md)
   Sets the background image to use for the specified button state.
-- [func setImage(UIImage?, for: UIControl.State)](uibutton/setimage(_:for:).md)
+- [func setImage(UIImage?, for: UIControl.State)](./setimage%28_,for%29.md)
   Sets the image to use for the specified state.
-- [func setPreferredSymbolConfiguration(UIImage.SymbolConfiguration?, forImageIn: UIControl.State)](uibutton/setpreferredsymbolconfiguration(_:forimagein:).md)
+- [func setPreferredSymbolConfiguration(UIImage.SymbolConfiguration?, forImageIn: UIControl.State)](./setpreferredsymbolconfiguration%28_,forimagein%29.md)
   Sets the preferred symbol configuration for a button state.
-- [var tintColor: UIColor!](uibutton/tintcolor.md)
+- [var tintColor: UIColor!](./tintcolor.md)
   The tint color to apply to the button title and image.
 
 

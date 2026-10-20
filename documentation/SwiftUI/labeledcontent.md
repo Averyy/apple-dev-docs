@@ -1,7 +1,8 @@
 # LabeledContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for attaching a label to a value-bearing view.
 
@@ -22,9 +23,9 @@ struct LabeledContent<Label, Content>
 
 #### Overview
 
-The instance’s content represents a read-only or read-write value, and its label identifies or describes the purpose of that value. The resulting element has a layout that’s consistent with other framework controls and automatically adapts to its container, like a form or toolbar. Some styles of labeled content also apply styling or behaviors to the value content, like making [`Text`](text.md) views selectable.
+The instance’s content represents a read-only or read-write value, and its label identifies or describes the purpose of that value. The resulting element has a layout that’s consistent with other framework controls and automatically adapts to its container, like a form or toolbar. Some styles of labeled content also apply styling or behaviors to the value content, like making [`Text`](./text.md) views selectable.
 
-The following example associates a label with a custom view and has a layout that matches the label of the [`Picker`](picker.md):
+The following example associates a label with a custom view and has a layout that matches the label of the [`Picker`](./picker.md):
 
 ```swift
 Form {
@@ -38,9 +39,9 @@ Form {
 }
 ```
 
-##### Custom View Labels
+##### Custom view labels
 
-You can assemble labeled content with an explicit view for its label using the [`init(content:label:)`](labeledcontent/init(content:label:).md) initializer. For example, you can rewrite the previous labeled content example using a [`Text`](text.md) view:
+You can assemble labeled content with an explicit view for its label using the [`init(content:label:)`](./labeledcontent/init%28content,label%29.md) initializer. For example, you can rewrite the previous labeled content example using a [`Text`](./text.md) view:
 
 ```swift
 LabeledContent {
@@ -50,7 +51,7 @@ LabeledContent {
 }
 ```
 
-The `label` content builder accepts any kind of view, like a [`Label`](label.md):
+The `label` content builder accepts any kind of view, like a [`Label`](./label.md):
 
 ```swift
 LabeledContent {
@@ -71,7 +72,7 @@ LabeledContent {
 }
 ```
 
-##### Textual Labeled Content
+##### Textual labeled content
 
 You can construct labeled content with string values or formatted values to create read-only displays of textual values:
 
@@ -95,9 +96,9 @@ Form {
 
 Wherever possible, SwiftUI makes this text selectable.
 
-##### Compositional Elements
+##### Compositional elements
 
-You can use labeled content as the label for other elements. For example, a [`NavigationLink`](navigationlink.md) can present a summary value for the destination it links to:
+You can use labeled content as the label for other elements. For example, a [`NavigationLink`](./navigationlink.md) can present a summary value for the destination it links to:
 
 ```swift
 Form {
@@ -107,7 +108,7 @@ Form {
 }
 ```
 
-In some cases, the styling of views used as the value content is specialized as well. For example, while a [`Toggle`](toggle.md) in an inset group form on macOS is styled as a switch by default, it’s styled as a checkbox when used as a value element within a surrounding `LabeledContent` instance:
+In some cases, the styling of views used as the value content is specialized as well. For example, while a [`Toggle`](./toggle.md) in an inset group form on macOS is styled as a switch by default, it’s styled as a checkbox when used as a value element within a surrounding `LabeledContent` instance:
 
 ```swift
 Form {
@@ -124,9 +125,9 @@ Form {
 }
 ```
 
-##### Controlling Label Visibility
+##### Controlling label visibility
 
-A label communicates the identity or purpose of the value, which is important for accessibility. However, you might want to hide the label in the display, and some controls or contexts may visually hide their label by default. The [`labelsHidden()`](view/labelshidden().md) modifier allows controlling that visibility. The following example hides both labels, producing only a group of the two value views:
+A label communicates the identity or purpose of the value, which is important for accessibility. However, you might want to hide the label in the display, and some controls or contexts may visually hide their label by default. The [`labelsHidden()`](./view/labelshidden%28%29.md) modifier allows controlling that visibility. The following example hides both labels, producing only a group of the two value views:
 
 ```swift
 Group {
@@ -141,38 +142,39 @@ Group {
 .labelsHidden()
 ```
 
-##### Styling Labeled Content
+##### Styling labeled content
 
-You can set label styles using the [`labeledContentStyle(_:)`](view/labeledcontentstyle(_:).md) modifier. You can also build custom styles using [`LabeledContentStyle`](labeledcontentstyle.md).
+You can set label styles using the [`labeledContentStyle(_:)`](./view/labeledcontentstyle%28_%29.md) modifier. You can also build custom styles using [`LabeledContentStyle`](./labeledcontentstyle.md).
 
 ## Topics
 
 ### Creating labeled content
-- [init(_:content:)](labeledcontent/init(_:content:).md)
+- [init(_:content:)](./labeledcontent/init%28_,content%29.md)
   Creates a labeled view that generates its label from a localized string key.
-- [init(content: () -> Content, label: () -> Label)](labeledcontent/init(content:label:).md)
+- [init(content: () -> Content, label: () -> Label)](./labeledcontent/init%28content,label%29.md)
   Creates a standard labeled element, with a view that conveys the value of the element and a label.
-- [init(_:value:)](labeledcontent/init(_:value:).md)
+- [init(_:value:)](./labeledcontent/init%28_,value%29.md)
   Creates a labeled informational view.
-- [init(_:value:format:)](labeledcontent/init(_:value:format:).md)
+- [init(_:value:format:)](./labeledcontent/init%28_,value,format%29.md)
   Creates a labeled informational view from a formatted value.
-- [init(LabeledContentStyleConfiguration)](labeledcontent/init(_:).md)
+- [init(LabeledContentStyleConfiguration)](./labeledcontent/init%28_%29.md)
   Creates labeled content based on a labeled content style configuration.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [View](view.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Form](form.md)
+### Grouping inputs
+- [struct Form](./form.md)
   A container for grouping controls used for data entry, such as in settings or inspectors.
-- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+- [func formStyle<S>(S) -> some View](./view/formstyle%28_%29.md)
   Sets the style for forms in a view hierarchy.
-- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+- [func labeledContentStyle<S>(S) -> some View](./view/labeledcontentstyle%28_%29.md)
   Sets a style for labeled content.
 
 

@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Local-network
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The network details about the peer cache.
 
@@ -10,7 +11,7 @@ The network details about the peer cache.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Local-network
 ```
 
@@ -19,9 +20,12 @@ object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Local-
 - `speed` (integer): The transfer speed, in megabits per second, of the peer content cache’s connection to its local network.
 - `wired` (boolean): If `true`, the peer content cache has a wired connection to its local network. If `false`, it has a wireless connection; for example, Wi-Fi.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Capabilities](contentcachinginformationresponse/statusresponse-data.dictionary/peersitem/details-data.dictionary/capabilities-data.dictionary.md)
+### Objects
+- [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Capabilities](./capabilities-data.dictionary.md)
   The capabilities of the peer content cache.
 
 

@@ -1,16 +1,18 @@
 # Error Domain
 
-**Framework**: Assets Library
+**Framework**: Assets Library  
+**Role**: API Collection
 
 Constant for the AssetsLibrary domain.
 
 ## See Also
 
-- [Types of Asset](types-of-asset.md)
+### Constants
+- [Types of Asset](./types-of-asset.md)
   Constants to identify types of asset.
-- [Notification Keys](notification-keys.md)
-  Keys used to get values from the user information dictionary of the [`ALAssetsLibraryChangedNotification`](alassetslibrarychangednotification.md) notification.
-- [Error Codes](error-codes.md)
+- [Notification Keys](./notification-keys.md)
+  Keys used to get values from the user information dictionary of the [`ALAssetsLibraryChangedNotification`](./alassetslibrarychangednotification.md) notification.
+- [Error Codes](./error-codes.md)
   AssetsLibrary-related error codes
 
 

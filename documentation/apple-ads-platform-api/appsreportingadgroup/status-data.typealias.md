@@ -1,7 +1,8 @@
 # AppsReportingAdGroup.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Advertiser-configurable serving state of the ad group at report time.
 
@@ -10,13 +11,18 @@ Advertiser-configurable serving state of the ad group at report time.
 
 ## Declaration
 
-```swift
+```
 string AppsReportingAdGroup.Status
 ```
 
+## Possible Values
+
+- `ENABLED`: The ad group is active and eligible to serve ads.
+- `PAUSED`: The ad group is paused and won’t serve ads.
+
 #### Discussion
 
-This captures the advertiser-set status as of the report’s generation, separate from the system-evaluated [`AppsReportingAdGroup.SystemStatus`](appsreportingadgroup/systemstatus-data.typealias.md) reported alongside it.
+This captures the advertiser-set status as of the report’s generation, separate from the system-evaluated [`AppsReportingAdGroup.SystemStatus`](./systemstatus-data.typealias.md) reported alongside it.
 
 ##### Example
 
@@ -26,7 +32,7 @@ This captures the advertiser-set status as of the report’s generation, separat
 }
 ```
 
-See [`AdGroupStatus`](adgroupstatus.md) for additional context.
+See [`AdGroupStatus`](../adgroupstatus.md) for additional context.
 
 
 ---

@@ -1,43 +1,45 @@
 # IOBlitCopyRectangle
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOBlitCopyRectangleStruct IOBlitCopyRectangle;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [height](ioblitcopyrectangle/1507166-height.md)
-- [sourceX](ioblitcopyrectangle/1507407-sourcex.md)
-- [sourceY](ioblitcopyrectangle/1507243-sourcey.md)
-- [width](ioblitcopyrectangle/1507266-width.md)
-- [x](ioblitcopyrectangle/1507398-x.md)
-- [y](ioblitcopyrectangle/1507196-y.md)
+- [height](./ioblitcopyrectangle/api-1507166-height.md)
+- [sourceX](./ioblitcopyrectangle/api-1507407-sourcex.md)
+- [sourceY](./ioblitcopyrectangle/api-1507243-sourcey.md)
+- [width](./ioblitcopyrectangle/api-1507266-width.md)
+- [x](./ioblitcopyrectangle/api-1507398-x.md)
+- [y](./ioblitcopyrectangle/api-1507196-y.md)
 
 ## See Also
 
-- [IOBlitCopyRectangles](ioblitcopyrectangles.md)
-- [IOBlitCopyRegion](ioblitcopyregion.md)
-- [IOBlitCursor](ioblitcursor.md)
-- [IOBlitMemory](ioblitmemory.md)
-- [IOBlitMemoryRef](ioblitmemoryref.md)
-- [IOBlitOperation](ioblitoperation.md)
-- [IOBlitRectangle](ioblitrectangle.md)
-- [IOBlitRectangles](ioblitrectangles.md)
-- [IOBlitScanlines](ioblitscanlines.md)
-- [IOBlitSourceType](ioblitsourcetype.md)
-- [IOBlitSurface](ioblitsurface.md)
-- [IOBlitType](ioblittype.md)
-- [IOBlitVertex](ioblitvertex.md)
-- [IOBlitVertices](ioblitvertices.md)
+### Blit Structures
+- [IOBlitCopyRectangles](./ioblitcopyrectangles.md)
+- [IOBlitCopyRegion](./ioblitcopyregion.md)
+- [IOBlitCursor](./ioblitcursor.md)
+- [IOBlitMemory](./ioblitmemory.md)
+- [IOBlitMemoryRef](./ioblitmemoryref.md)
+- [IOBlitOperation](./ioblitoperation.md)
+- [IOBlitRectangle](./ioblitrectangle.md)
+- [IOBlitRectangles](./ioblitrectangles.md)
+- [IOBlitScanlines](./ioblitscanlines.md)
+- [IOBlitSourceType](./ioblitsourcetype.md)
+- [IOBlitSurface](./ioblitsurface.md)
+- [IOBlitType](./ioblittype.md)
+- [IOBlitVertex](./ioblitvertex.md)
+- [IOBlitVertices](./ioblitvertices.md)
 
 
 ---

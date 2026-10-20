@@ -1,7 +1,8 @@
 # isMainFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the frame is the web site’s main frame or a subframe.
 
@@ -18,13 +19,18 @@ A Boolean value indicating whether the frame is the web site’s main frame or a
 var isMainFrame: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isMainFrame) BOOL mainFrame;
+```
+
 ## See Also
 
-- [var request: URLRequest](wkframeinfo/request.md)
+### Inspecting frame information
+- [var request: URLRequest](./request.md)
   The frame’s current request.
-- [var securityOrigin: WKSecurityOrigin](wkframeinfo/securityorigin.md)
+- [var securityOrigin: WKSecurityOrigin](./securityorigin.md)
   The frame’s security origin.
-- [var webView: WKWebView?](wkframeinfo/webview.md)
+- [var webView: WKWebView?](./webview.md)
   The web view that contains this frame and the containing webpage.
 
 

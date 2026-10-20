@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.1+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOWorkGroupMaxNameLength](3892896-anonymous/kioworkgroupmaxnamelength.md)
+- [kIOWorkGroupMaxNameLength](./api-3892896-anonymous/kioworkgroupmaxnamelength.md)
 
 
 ---

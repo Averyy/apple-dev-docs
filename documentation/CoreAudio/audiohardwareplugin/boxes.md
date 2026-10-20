@@ -1,12 +1,13 @@
 # boxes
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of AudioHardwareBoxes that represent all the box objects currently provided by the plugin.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

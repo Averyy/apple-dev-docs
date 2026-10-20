@@ -1,7 +1,8 @@
 # UIBarMinimizationSafeAreaAdjustment.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system determines the safe area adjustment.
 
@@ -18,11 +19,16 @@ The system determines the safe area adjustment.
 case automatic
 ```
 
+```c
+UIBarMinimizationSafeAreaAdjustmentAutomatic
+```
+
 ## See Also
 
-- [UIBarMinimizationSafeAreaAdjustment.disabled](uibarminimizationsafeareaadjustment/disabled.md)
+### Adjusting the safe area
+- [UIBarMinimizationSafeAreaAdjustment.disabled](./disabled.md)
   The safe area remains unchanged as bars minimize.
-- [UIBarMinimizationSafeAreaAdjustment.enabled](uibarminimizationsafeareaadjustment/enabled.md)
+- [UIBarMinimizationSafeAreaAdjustment.enabled](./enabled.md)
   The safe area adjusts as bars minimize, allowing content to reflow.
 
 

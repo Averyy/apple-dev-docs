@@ -1,7 +1,8 @@
 # temperatureWithoutUnit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,14 +19,19 @@
 static var temperatureWithoutUnit: MeasurementFormatter.UnitOptions { get }
 ```
 
+```c
+NSMeasurementFormatterUnitOptionsTemperatureWithoutUnit
+```
+
 #### Discussion
 
-Specifies that representations of a measurement with the `NSTemperatureUnit` unit omit the letter denoting the temperature scale. For example, a temperature measurement with value equal to 72 using the [`degreeFahrenheit()`](https://developer.apple.com/documentation/healthkit/hkunit/degreefahrenheit()) would be represented as `72°` rather than `72°F`.
+Specifies that representations of a measurement with the `NSTemperatureUnit` unit omit the letter denoting the temperature scale. For example, a temperature measurement with value equal to 72 using the [`degreeFahrenheit()`](../../../HealthKit/hkunit/degreefahrenheit%28%29.md) would be represented as `72°` rather than `72°F`.
 
 ## See Also
 
-- [static var providedUnit: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/providedunit.md)
-- [static var naturalScale: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct/naturalscale.md)
+### Working with options
+- [static var providedUnit: MeasurementFormatter.UnitOptions](./providedunit.md)
+- [static var naturalScale: MeasurementFormatter.UnitOptions](./naturalscale.md)
 
 
 ---

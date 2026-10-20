@@ -1,7 +1,8 @@
 # value(onlyIfMatching:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a tag’s value as a specific type, if and only if it matches a category.
 
@@ -30,9 +31,10 @@ The value contained in the tag as an instance of type `T` if the category matche
 
 ## See Also
 
-- [let rawCategory: CMTag.RawCategory](cmtag-swift.class/rawcategory-swift.property.md)
+### Inspecting Tags
+- [let rawCategory: CMTag.RawCategory](./rawcategory-swift.property.md)
   The raw 64-bit representation of the tag’s category.
-- [let rawTagValue: CMTag.Value](cmtag-swift.class/rawtagvalue.md)
+- [let rawTagValue: CMTag.Value](./rawtagvalue.md)
   The tag’s contained value.
 
 

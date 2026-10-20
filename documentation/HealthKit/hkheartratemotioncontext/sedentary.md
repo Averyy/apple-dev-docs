@@ -1,7 +1,8 @@
 # HKHeartRateMotionContext.sedentary
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value indicating that the user has been still for at least 5 minutes prior to the heart rate sample.
 
@@ -19,11 +20,16 @@ A value indicating that the user has been still for at least 5 minutes prior to 
 case sedentary
 ```
 
+```c
+HKHeartRateMotionContextSedentary
+```
+
 ## See Also
 
-- [HKHeartRateMotionContext.active](hkheartratemotioncontext/active.md)
+### Motion Contextes
+- [HKHeartRateMotionContext.active](./active.md)
   A value indicating that the user was in motion during the heart rate sample.
-- [HKHeartRateMotionContext.notSet](hkheartratemotioncontext/notset.md)
+- [HKHeartRateMotionContext.notSet](./notset.md)
   A value indicating that the user’s activity level could not be determined.
 
 

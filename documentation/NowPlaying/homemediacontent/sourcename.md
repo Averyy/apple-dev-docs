@@ -1,7 +1,8 @@
 # sourceName
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the home media source or device.
 

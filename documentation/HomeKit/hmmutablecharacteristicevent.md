@@ -1,7 +1,8 @@
 # HMMutableCharacteristicEvent
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mutable event that is evaluated based on the value of a characteristic.
 
@@ -19,33 +20,38 @@ A mutable event that is evaluated based on the value of a characteristic.
 class HMMutableCharacteristicEvent<TriggerValueType> where TriggerValueType : NSCopying
 ```
 
+```objc
+@interface HMMutableCharacteristicEvent : HMCharacteristicEvent
+```
+
 ## Topics
 
 ### Configuring the event
-- [var characteristic: HMCharacteristic](hmmutablecharacteristicevent/characteristic.md)
+- [var characteristic: HMCharacteristic](./hmmutablecharacteristicevent/characteristic.md)
   The characteristic associated with the event.
-- [var triggerValue: TriggerValueType?](hmmutablecharacteristicevent/triggervalue.md)
+- [var triggerValue: TriggerValueType?](./hmmutablecharacteristicevent/triggervalue.md)
   The value of the characteristic that triggers the event.
 
 ## Relationships
 
 ### Inherits From
-- [HMCharacteristicEvent](hmcharacteristicevent.md)
+- [HMCharacteristicEvent](./hmcharacteristicevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMCharacteristicEvent](hmcharacteristicevent.md)
+### Characteristics
+- [class HMCharacteristicEvent](./hmcharacteristicevent.md)
   An event that is evaluated based on the value of a characteristic.
 
 

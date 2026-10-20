@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentFanState.idle
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The fan is idle.
 
@@ -19,11 +20,16 @@ The fan is idle.
 case idle
 ```
 
+```c
+HMCharacteristicValueCurrentFanStateIdle
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentFanState.inactive](hmcharacteristicvaluecurrentfanstate/inactive.md)
+### Fan State
+- [HMCharacteristicValueCurrentFanState.inactive](./inactive.md)
   The fan is inactive.
-- [HMCharacteristicValueCurrentFanState.active](hmcharacteristicvaluecurrentfanstate/active.md)
+- [HMCharacteristicValueCurrentFanState.active](./active.md)
   The fan is blowing air.
 
 

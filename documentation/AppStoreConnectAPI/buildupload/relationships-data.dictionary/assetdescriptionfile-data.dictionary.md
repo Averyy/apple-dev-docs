@@ -1,7 +1,8 @@
 # BuildUpload.Relationships.AssetDescriptionFile
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the asset description file related to a upload.
 
@@ -10,14 +11,14 @@ The data that describes the asset description file related to a upload.
 
 ## Declaration
 
-```swift
+```
 object BuildUpload.Relationships.AssetDescriptionFile
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BuildUpload.Relationships.AssetDescriptionFile.Data](buildupload/relationships-data.dictionary/assetdescriptionfile-data.dictionary/data-data.dictionary.md)
+- [object BuildUpload.Relationships.AssetDescriptionFile.Data](./assetdescriptionfile-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

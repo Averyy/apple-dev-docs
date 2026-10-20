@@ -1,7 +1,8 @@
 # translation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device capabilities of tracking translation changes in all dimensions are currently limited.
 

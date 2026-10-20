@@ -1,7 +1,8 @@
 # init(cubeWithImagesNamed:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads a cube texture from the specified image files in the app’s main bundle.
 
@@ -19,6 +20,10 @@ Loads a cube texture from the specified image files in the app’s main bundle.
 convenience init?(cubeWithImagesNamed names: [String])
 ```
 
+```objc
++ (instancetype) textureCubeWithImagesNamed:(NSArray<NSString *> *) names;
+```
+
 #### Return Value
 
 A new cube texture object, or `nil` if the specified files could not be found or are not property formatted for a cube texture.
@@ -34,7 +39,7 @@ You can create a cube texture with any of the following combinations of images:
 
 Calling this method with any other arrangement of images returns `nil`.
 
-After initialization, the texture’s data (accessible through the methods listed in Accessing Texture Data) is organized such that the six faces are in one image whose height is six times its width, and its [`dimensions`](mdltexture/dimensions.md) property reflects this arrangement.
+After initialization, the texture’s data (accessible through the methods listed in Accessing Texture Data) is organized such that the six faces are in one image whose height is six times its width, and its [`dimensions`](./dimensions.md) property reflects this arrangement.
 
 This method does not cache the texture objects it creates.
 
@@ -44,11 +49,12 @@ This method does not cache the texture objects it creates.
 
 ## See Also
 
-- [convenience init?(named: String)](mdltexture/init(named:).md)
+### Loading Textures from a Bundle
+- [convenience init?(named: String)](./init%28named%29.md)
   Loads the texture with the specified filename from the app’s main bundle.
-- [convenience init?(named: String, bundle: Bundle?)](mdltexture/init(named:bundle:).md)
+- [convenience init?(named: String, bundle: Bundle?)](./init%28named,bundle%29.md)
   Loads the texture with the specified filename from the specified bundle.
-- [convenience init?(cubeWithImagesNamed: [String], bundle: Bundle?)](mdltexture/init(cubewithimagesnamed:bundle:).md)
+- [convenience init?(cubeWithImagesNamed: [String], bundle: Bundle?)](./init%28cubewithimagesnamed,bundle%29.md)
   Loads a cube texture from the specified image files in the specified bundle.
 
 

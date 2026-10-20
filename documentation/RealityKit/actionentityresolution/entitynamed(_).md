@@ -1,7 +1,8 @@
 # ActionEntityResolution.entityNamed(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that resolves an entity from the specified name within the scene of the entity playing the action.
 

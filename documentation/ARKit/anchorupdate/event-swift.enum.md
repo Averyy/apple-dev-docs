@@ -1,7 +1,8 @@
 # AnchorUpdate.Event
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An event that indicates whether an anchor was added, updated, or removed.
 
@@ -18,36 +19,37 @@ enum Event
 ## Topics
 
 ### Inspecting anchor update events
-- [AnchorUpdate.Event.added](anchorupdate/event-swift.enum/added.md)
+- [AnchorUpdate.Event.added](./event-swift.enum/added.md)
   An event that occurs when ARKit starts tracking an anchor.
-- [AnchorUpdate.Event.updated](anchorupdate/event-swift.enum/updated.md)
+- [AnchorUpdate.Event.updated](./event-swift.enum/updated.md)
   An event that occurs when an existing anchor updates data.
-- [AnchorUpdate.Event.removed](anchorupdate/event-swift.enum/removed.md)
+- [AnchorUpdate.Event.removed](./event-swift.enum/removed.md)
   An event that occurs when ARKit stops tracking an anchor.
 ### Instance Properties
-- [var description: String](anchorupdate/event-swift.enum/description.md)
+- [var description: String](./event-swift.enum/description.md)
   A textual representation of this anchor update event.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let anchor: AnchorType](anchorupdate/anchor.md)
+### Inspecting anchor updates
+- [let anchor: AnchorType](./anchor.md)
   The anchor that this anchor update contains information about.
-- [var timestamp: TimeInterval](anchorupdate/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time when this anchor update occurred.
-- [let event: AnchorUpdate<AnchorType>.Event](anchorupdate/event-swift.property.md)
+- [let event: AnchorUpdate<AnchorType>.Event](./event-swift.property.md)
   The event which caused the anchor to update.
-- [var description: String](anchorupdate/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor update.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new context with the given value of the underlying type.
 

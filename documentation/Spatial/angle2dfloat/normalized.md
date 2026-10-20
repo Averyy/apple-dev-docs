@@ -1,7 +1,8 @@
 # normalized
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the specified angle normalized to `(-π, π]` radians (`(-180°, 180.0°]`).
 

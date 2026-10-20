@@ -1,7 +1,8 @@
 # notificationOccurred(_:at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers notification feedback at the specified location.
 
@@ -16,11 +17,16 @@ Triggers notification feedback at the specified location.
 func notificationOccurred(_ notificationType: UINotificationFeedbackGenerator.FeedbackType, at location: CGPoint)
 ```
 
+```objc
+- (void) notificationOccurred:(UINotificationFeedbackType) notificationType atLocation:(CGPoint) location;
+```
+
 ## See Also
 
-- [func notificationOccurred(UINotificationFeedbackGenerator.FeedbackType)](uinotificationfeedbackgenerator/notificationoccurred(_:).md)
+### Producing notification feedback
+- [func notificationOccurred(UINotificationFeedbackGenerator.FeedbackType)](./notificationoccurred%28_%29.md)
   Triggers notification feedback.
-- [UINotificationFeedbackGenerator.FeedbackType](uinotificationfeedbackgenerator/feedbacktype.md)
+- [UINotificationFeedbackGenerator.FeedbackType](./feedbacktype.md)
   The type of notification that a notification feedback generator object generates.
 
 

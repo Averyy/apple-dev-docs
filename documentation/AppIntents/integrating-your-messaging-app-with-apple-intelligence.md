@@ -1,6 +1,8 @@
 # Integrating your messaging app with Apple Intelligence
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: Sample Code  
+**Download**: [IntegratingYourMessagingAppWithAppleIntelligence.zip](https://docs-assets.developer.apple.com/published/ebf7c10f9546/IntegratingYourMessagingAppWithAppleIntelligence.zip)
 
 Adopt message schemas so people can send messages and manage conversations with Siri.
 
@@ -22,15 +24,15 @@ In addition to providing functionality in the app, this sample code project make
 - Create custom shortcuts in the Shortcuts app.
 - Place an App Shortcut on the Action button or the Home Screen.
 
-> **Note**: This sample code project is associated with WWDC26 session [`240: Build intelligent Siri experiences with App Schemas`](https://developer.apple.comhttps://developer.apple.com/wwdc26/240/).
+> **Note**: This sample code project is associated with WWDC26 session [240: Build intelligent Siri experiences with App Schemas](https://developer.apple.com/wwdc26/240/).
 
-#### Conform Entities to App Schemas
+#### Conform entities to app schemas
 
 App data is private to the app and Apple Intelligence doesn’t have access to the app’s functionality or context about its content. For example, when a person says “Siri, send a message to Bubbles,” Apple Intelligence needs to resolve that Bubbles is a contact in the UnicornChat app, that UnicornChat is a messaging app that supports a set of defined messaging actions, and that its data is contacts and messages.
 
-To enable Apple Intelligence to find and resolve references to app content, the app provides structured representations of its data in the form of [`AppEntity`](appentity.md) implementations that conform to app schemas. *App entities* are lightweight representations of the app’s data-model objects that contain the information Apple Intelligence and system experiences such as Siri need. *App schemas* add structure to the app’s actions and content, enabling Apple Intelligence to interpret natural language, recognize onscreen context, and disambiguate vague requests.
+To enable Apple Intelligence to find and resolve references to app content, the app provides structured representations of its data in the form of [`AppEntity`](./appentity.md) implementations that conform to app schemas. *App entities* are lightweight representations of the app’s data-model objects that contain the information Apple Intelligence and system experiences such as Siri need. *App schemas* add structure to the app’s actions and content, enabling Apple Intelligence to interpret natural language, recognize onscreen context, and disambiguate vague requests.
 
-This code snippet shows how the app’s `MessageEntity` conforms to the [`message`](appschema/messagesentity/message.md) entity schema, including all properties that the schema requires. Note how `MessageEntity` provides a custom display representation to enable the system to show a rich representation of the entity. The conformance to [`IndexedEntity`](indexedentity.md) isn’t part of the schema conformance, but is a prerequisite for making message entities available in Spotlight, as described in [`Index entities in Spotlight`](integrating-your-messaging-app-with-apple-intelligence#Index-entities-in-Spotlight.md).
+This code snippet shows how the app’s `MessageEntity` conforms to the [`message`](./appschema/messagesentity/message.md) entity schema, including all properties that the schema requires. Note how `MessageEntity` provides a custom display representation to enable the system to show a rich representation of the entity. The conformance to [`IndexedEntity`](./indexedentity.md) isn’t part of the schema conformance, but is a prerequisite for making message entities available in Spotlight, as described in [Index entities in Spotlight](./integrating-your-messaging-app-with-apple-intelligence.md#Index-entities-in-Spotlight).
 
 ```swift
 @AppEntity(schema: .messages.message)
@@ -111,7 +113,7 @@ struct MessageEntity: IndexedEntity {
 }
 ```
 
-To enable the system to query the app for message entities, its [`EntityQuery`](entityquery.md) implementation finds entities using a simple identifier lookup:
+To enable the system to query the app for message entities, its [`EntityQuery`](./entityquery.md) implementation finds entities using a simple identifier lookup:
 
 ```swift
 extension MessageEntity {
@@ -131,7 +133,7 @@ extension MessageEntity {
 }
 ```
 
-The [`EntityQuery`](entityquery.md) implementation also implements the optional [`suggestedEntities()`](entityquery/suggestedentities().md) callback to return the most recent messages in the Shortcuts app.
+The [`EntityQuery`](./entityquery.md) implementation also implements the optional [`suggestedEntities()`](./entityquery/suggestedentities%28%29.md) callback to return the most recent messages in the Shortcuts app.
 
 Because the `MessageEntity` conforms to the `message` app schema, the app also has to implement supporting entity and enum types that also conform to app schemas. For example, it defines a `CustomAttachment` entity:
 
@@ -164,11 +166,11 @@ struct CustomAttachment: AppEntity {
 }
 ```
 
-For more information about creating app entities and implementing app schemas, see [`Defining app entities for your custom data types`](defining-app-entities-for-your-custom-data-types.md) and [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about creating app entities and implementing app schemas, see [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md) and [Making actions and content discoverable by Apple Intelligence](./making-actions-and-content-discoverable-by-apple-intelligence.md).
 
-#### Make Entities Transferable
+#### Make entities transferable
 
-In addition to conforming entities to an app schema, the app’s entities also conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol. This enables Apple Intelligence to pass the message entities to other apps and system experiences.
+In addition to conforming entities to an app schema, the app’s entities also conform to the [`Transferable`](../CoreTransferable/transferable.md) protocol. This enables Apple Intelligence to pass the message entities to other apps and system experiences.
 
 ```swift
 extension MessageEntity: Transferable {
@@ -183,7 +185,7 @@ extension MessageEntity: Transferable {
 
 ```
 
-#### Index Entities in Spotlight
+#### Index entities in Spotlight
 
 Apple Intelligence uses the semantic search capabilities of Spotlight to find the app’s content, even when someone describes it vaguely. The following example shows how the app loads entities that represent contacts, conversations, and messages, then donates them to the Spotlight index:
 
@@ -205,11 +207,11 @@ func storeDidFinishLaunching() async throws {
 }
 ```
 
-For more information about making app content available to Spotlight, see [`Spotlight integration`](spotlight.md).
+For more information about making app content available to Spotlight, see [Spotlight integration](./spotlight.md).
 
-#### Annotate Views and Notifications with App Entities
+#### Annotate views and notifications with app entities
 
-People use Siri to interact with onscreen content. For example, someone might say “Siri, summarize this message.” To fulfill the request, Apple Intelligence needs contextual information about content that’s visible onscreen. To provide the needed context, the sample app annotates its view with app entities that represent the onscreen content. For example, the app’s `MessageRow` view annotates its [`HStack`](https://developer.apple.com/documentation/swiftui/hstack) with an app entity using the [`appEntityIdentifier(_:)`](https://developer.apple.com/documentation/swiftui/view/appentityidentifier(_:)) modifier:
+People use Siri to interact with onscreen content. For example, someone might say “Siri, summarize this message.” To fulfill the request, Apple Intelligence needs contextual information about content that’s visible onscreen. To provide the needed context, the sample app annotates its view with app entities that represent the onscreen content. For example, the app’s `MessageRow` view annotates its [`HStack`](../SwiftUI/hstack.md) with an app entity using the [`appEntityIdentifier(_:)`](../SwiftUI/view/appentityidentifier%28_%29.md) modifier:
 
 ```swift
 var body: some View {
@@ -246,11 +248,11 @@ func scheduleNotification(for message: Message, from author: Contact, in convers
 }
 ```
 
-For more information about providing Apple Intelligence with onscreen context by associating app entities with views and other types, see [`Providing contextual cues to Apple Intelligence and Siri`](providing-contextual-cues-to-apple-intelligence-and-siri.md).
+For more information about providing Apple Intelligence with onscreen context by associating app entities with views and other types, see [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md).
 
-#### Make Actions Discoverable By Apple Intelligence and Siri
+#### Make actions discoverable by Apple Intelligence and Siri
 
-UnicornChat makes its message actions discoverable by implementing the app intent schemas from the messages domain. Similar to how entity schemas provide Apple Intelligence with an understanding of the app’s content, intent schemas provide Apple Intelligence with an understanding of the app’s message actions. The [`Messages`](app-schema-domain-messages.md) domain requires several intents to provide a consistent user experience. The example below shows the intent for sending a message. It conforms to the `.messages.sendMessage` schema. The example also shows the implementation of the required `MessageDestination` union value type that the `destination` property uses:
+UnicornChat makes its message actions discoverable by implementing the app intent schemas from the messages domain. Similar to how entity schemas provide Apple Intelligence with an understanding of the app’s content, intent schemas provide Apple Intelligence with an understanding of the app’s message actions. The [Messages](./app-schema-domain-messages.md) domain requires several intents to provide a consistent user experience. The example below shows the intent for sending a message. It conforms to the `.messages.sendMessage` schema. The example also shows the implementation of the required `MessageDestination` union value type that the `destination` property uses:
 
 ```swift
 import AppIntents
@@ -304,11 +306,11 @@ struct SendMessageIntent: AppIntent {
 }
 ```
 
-For more information about making actions discoverable by Apple Intelligence, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about making actions discoverable by Apple Intelligence, see [Making actions and content discoverable by Apple Intelligence](./making-actions-and-content-discoverable-by-apple-intelligence.md).
 
-#### Donate App Intents to the System
+#### Donate app intents to the system
 
-Apple Intelligence can proactively suggest actions based on a person’s past behavior. For example, if a person messages the same contact every morning, Apple Intelligence might proactively suggest the action each morning. The following example shows how the app uses the [`IntentDonationManager`](intentdonationmanager.md) structure to donate a `SendMessageIntent` when a person sends a message:
+Apple Intelligence can proactively suggest actions based on a person’s past behavior. For example, if a person messages the same contact every morning, Apple Intelligence might proactively suggest the action each morning. The following example shows how the app uses the [`IntentDonationManager`](./intentdonationmanager.md) structure to donate a `SendMessageIntent` when a person sends a message:
 
 ```swift
 @discardableResult
@@ -341,15 +343,16 @@ func sendMessage(
 }
 ```
 
-For more information about donating actions and content to the system, see [`Donations and discovery`](donations-and-discovery.md).
+For more information about donating actions and content to the system, see [Donations and discovery](./donations-and-discovery.md).
 
 ## See Also
 
-- [Integrating your calendar app with Apple Intelligence](integrating-your-calendar-app-with-apple-intelligence.md)
+### Sample code
+- [Integrating your calendar app with Apple Intelligence](./integrating-your-calendar-app-with-apple-intelligence.md)
   Adopt calendar schemas so people can create, find, and manage events with Siri.
-- [Integrating your music app with Apple Intelligence](integrating-your-music-app-with-apple-intelligence.md)
+- [Integrating your music app with Apple Intelligence](./integrating-your-music-app-with-apple-intelligence.md)
   Adopt the audio and clock schemas so people can play music and set alarms with Siri.
-- [Integrating your photo app with Apple Intelligence](integrating-your-photo-app-with-apple-intelligence.md)
+- [Integrating your photo app with Apple Intelligence](./integrating-your-photo-app-with-apple-intelligence.md)
   Adopt photo schemas so people can edit and manage photos with Siri.
 
 

@@ -1,7 +1,8 @@
 # event
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of event that the save request represents.
 
@@ -15,6 +16,10 @@ The type of event that the save request represents.
 
 ```swift
 var event: ASSavePasswordRequest.Event { get }
+```
+
+```objc
+@property (nonatomic, readonly) ASSavePasswordRequestEvent event;
 ```
 
 

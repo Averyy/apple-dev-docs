@@ -1,25 +1,28 @@
 # SubscriptionAvailability
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The territory availability configuration for a subscription, specifying which App Store regions it’s offered in.
 
 **Availability**:
-- App Store Connect API 2.3+
+- App Store Connect API 2.3+ - Deprecated in 4.4
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAvailability
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionAvailability.Attributes](subscriptionavailability/attributes-data.dictionary.md)
+- [object SubscriptionAvailability.Attributes](./subscriptionavailability/attributes-data.dictionary.md)
   Attributes that describe a subscription availability resource.
-- [object SubscriptionAvailability.Relationships](subscriptionavailability/relationships-data.dictionary.md)
+- [object SubscriptionAvailability.Relationships](./subscriptionavailability/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,15 +31,16 @@ object SubscriptionAvailability
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (SubscriptionAvailability.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionAvailabilities`
 
 ## See Also
 
-- [object SubscriptionAvailabilityCreateRequest](subscriptionavailabilitycreaterequest.md)
+### Objects
+- [object SubscriptionAvailabilityCreateRequest](./subscriptionavailabilitycreaterequest.md)
   The request body you use to create a subscription availability.
-- [object SubscriptionAvailabilityResponse](subscriptionavailabilityresponse.md)
+- [object SubscriptionAvailabilityResponse](./subscriptionavailabilityresponse.md)
   A response containing a single territory availability configuration for a subscription.
-- [object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse](subscriptionavailabilityavailableterritorieslinkagesresponse.md)
+- [object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse](./subscriptionavailabilityavailableterritorieslinkagesresponse.md)
 
 
 ---

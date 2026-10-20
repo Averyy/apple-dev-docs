@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the summary’s statistics suitable for debugging.
 
@@ -22,11 +23,12 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var someCount: Int](numericsummary/somecount.md)
+### Inspecting a Summary
+- [var someCount: Int](./somecount.md)
   The number of non-missing elements in the column.
-- [var noneCount: Int](numericsummary/nonecount.md)
+- [var noneCount: Int](./nonecount.md)
   The number of missing elements in the column.
-- [var totalCount: Int](numericsummary/totalcount.md)
+- [var totalCount: Int](./totalcount.md)
   The total number of elements in the column.
 
 

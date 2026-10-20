@@ -1,7 +1,8 @@
 # systemFrame
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred frame of the scene, in system coordinates.
 
@@ -9,7 +10,7 @@ The preferred frame of the scene, in system coordinates.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,7 @@ var systemFrame: CGRect? { get set }
 
 #### Discussion
 
-This property represents the preferred frame of the scene in the system coordinate space, where an origin of `(0, 0)` corresponds to the top-left corner of the main display. The default value is [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull), which indicates no preferred frame.
+This property represents the preferred frame of the scene in the system coordinate space, where an origin of `(0, 0)` corresponds to the top-left corner of the main display. The default value is [`CGRectNull`](../../../../CoreGraphics/cgrectnull.md), which indicates no preferred frame.
 
 
 ---

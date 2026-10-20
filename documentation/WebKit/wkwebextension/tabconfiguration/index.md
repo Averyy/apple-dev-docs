@@ -1,7 +1,8 @@
 # index
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the position where the tab should be opened within the window.
 
@@ -16,6 +17,10 @@ Indicates the position where the tab should be opened within the window.
 
 ```swift
 var index: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger index;
 ```
 
 

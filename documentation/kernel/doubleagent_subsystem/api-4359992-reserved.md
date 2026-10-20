@@ -1,14 +1,15 @@
 # reserved
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 vm_address_t reserved;
 ```
 

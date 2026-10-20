@@ -1,7 +1,8 @@
 # textPasteConfigurationSupporting(_:shouldAnimatePasteOf:to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the paste or drop operation should be animated.
 
@@ -17,13 +18,17 @@ Asks the delegate if the paste or drop operation should be animated.
 optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupporting: any UITextPasteConfigurationSupporting, shouldAnimatePasteOf attributedString: NSAttributedString, to textRange: UITextRange) -> Bool
 ```
 
+```objc
+- (BOOL) textPasteConfigurationSupporting:(id<UITextPasteConfigurationSupporting>) textPasteConfigurationSupporting shouldAnimatePasteOfAttributedString:(NSAttributedString *) attributedString toRange:(UITextRange *) textRange;
+```
+
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) if the paste or drop operation should not be animated; otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
+[`false`](../../Swift/false.md) if the paste or drop operation should not be animated; otherwise, [`true`](../../Swift/true.md).
 
 #### Discussion
 
-If you don’t want the system to animate the paste or drop operation, implement this method and return [`false`](https://developer.apple.com/documentation/swift/false). The operation is animated if you return [`true`](https://developer.apple.com/documentation/swift/true) or if this method isn’t implemented.
+If you don’t want the system to animate the paste or drop operation, implement this method and return [`false`](../../Swift/false.md). The operation is animated if you return [`true`](../../Swift/true.md) or if this method isn’t implemented.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # host
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The host subcomponent.
 

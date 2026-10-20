@@ -1,7 +1,8 @@
 # conversionResult
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result object of the parametric immersive format conversion.
 

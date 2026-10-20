@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -9,7 +10,7 @@
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,10 +19,15 @@
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var sourceHeadroom: Float](citonemapheadroom/sourceheadroom.md)
-- [var targetHeadroom: Float](citonemapheadroom/targetheadroom.md)
+### Instance Properties
+- [var sourceHeadroom: Float](./sourceheadroom.md)
+- [var targetHeadroom: Float](./targetheadroom.md)
 
 
 ---

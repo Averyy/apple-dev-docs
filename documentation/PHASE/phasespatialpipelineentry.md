@@ -1,7 +1,8 @@
 # PHASESpatialPipelineEntry
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An audio layer with an adjustable volume for a spatial mixer’s output.
 
@@ -19,41 +20,46 @@ An audio layer with an adjustable volume for a spatial mixer’s output.
 class PHASESpatialPipelineEntry
 ```
 
+```objc
+@interface PHASESpatialPipelineEntry : NSObject
+```
+
 #### Overview
 
-This property adjusts the amount of audio that passes through a spatial mixer’s pipeline ([`spatialPipeline`](phasespatialmixerdefinition/spatialpipeline.md)) to the output. The pipeline’s [`entries`](phasespatialpipeline/entries.md) contains an instance of this class for each type of audio layer that [`PHASESpatialCategory`](phasespatialcategory.md) defines. Depending on the layer’s type, the audio may sound like spatial relections, environmental reverb, or the unfiltered signal. An app adjusts the layer’s presence in the mixer’s output by:
+This property adjusts the amount of audio that passes through a spatial mixer’s pipeline ([`spatialPipeline`](./phasespatialmixerdefinition/spatialpipeline.md)) to the output. The pipeline’s [`entries`](./phasespatialpipeline/entries.md) contains an instance of this class for each type of audio layer that [`PHASESpatialCategory`](./phasespatialcategory.md) defines. Depending on the layer’s type, the audio may sound like spatial relections, environmental reverb, or the unfiltered signal. An app adjusts the layer’s presence in the mixer’s output by:
 
-- Defining an initial volume using [`sendLevel`](phasespatialpipelineentry/sendlevel.md)
-- Adjusting the audio’s volume dynamically, for example, by fading it over a duration using [`sendLevelMetaParameterDefinition`](phasespatialpipelineentry/sendlevelmetaparameterdefinition.md)
+- Defining an initial volume using [`sendLevel`](./phasespatialpipelineentry/sendlevel.md)
+- Adjusting the audio’s volume dynamically, for example, by fading it over a duration using [`sendLevelMetaParameterDefinition`](./phasespatialpipelineentry/sendlevelmetaparameterdefinition.md)
 
 ## Topics
 
 ### Setting the Send Level
-- [var sendLevel: Double](phasespatialpipelineentry/sendlevel.md)
+- [var sendLevel: Double](./phasespatialpipelineentry/sendlevel.md)
   The amount of audio signal to add to the output.
 ### Fading the Send Level
-- [var sendLevelMetaParameterDefinition: PHASENumberMetaParameterDefinition?](phasespatialpipelineentry/sendlevelmetaparameterdefinition.md)
+- [var sendLevelMetaParameterDefinition: PHASENumberMetaParameterDefinition?](./phasespatialpipelineentry/sendlevelmetaparameterdefinition.md)
   A parameter that gradually updates the amount of audio signal that passes through to the output.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESpatialPipeline](phasespatialpipeline.md)
+### Sound Reflections and Resonance
+- [class PHASESpatialPipeline](./phasespatialpipeline.md)
   An object that specifies the volume of optional environmental effects.
-- [struct PHASESpatialCategory](phasespatialcategory.md)
+- [struct PHASESpatialCategory](./phasespatialcategory.md)
   Sound resonance effects for spatial mixing.
-- [PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.struct.md)
+- [PHASESpatialPipeline.Flags](./phasespatialpipeline/flags-swift.struct.md)
   Sound resonance options for a spatial pipeline.
 
 

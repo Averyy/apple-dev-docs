@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key to retrieve a status value.
 

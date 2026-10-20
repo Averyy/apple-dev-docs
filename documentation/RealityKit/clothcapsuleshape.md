@@ -1,7 +1,8 @@
 # ClothCapsuleShape
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Shape representing a capsule (full height is `height + 2 * radius`).
 
@@ -19,34 +20,35 @@ struct ClothCapsuleShape
 ## Topics
 
 ### Creating a capsule shape
-- [init(height: Float, radius: Float)](clothcapsuleshape/init(height:radius:).md)
+- [init(height: Float, radius: Float)](./clothcapsuleshape/init%28height,radius%29.md)
   Creates a capsule shape with the given height and radius.
 ### Instance Properties
-- [var height: Float](clothcapsuleshape/height.md)
+- [var height: Float](./clothcapsuleshape/height.md)
   The length of the cylinder portion of the capsule.
-- [var radius: Float](clothcapsuleshape/radius.md)
+- [var radius: Float](./clothcapsuleshape/radius.md)
   The radius of the cylinder portion and the radius of each hemisphere.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ClothMeshShape](clothmeshshape.md)
+### Cloth shapes
+- [struct ClothMeshShape](./clothmeshshape.md)
   Shape representing a mesh with a configurable inflation bias.
-- [struct ClothPlaneShape](clothplaneshape.md)
+- [struct ClothPlaneShape](./clothplaneshape.md)
   Shape representing an infinite plane that encloses one half of the world.
-- [struct ClothBoxShape](clothboxshape.md)
+- [struct ClothBoxShape](./clothboxshape.md)
   Shape representing a box.
-- [struct ClothRoundedBoxShape](clothroundedboxshape.md)
+- [struct ClothRoundedBoxShape](./clothroundedboxshape.md)
   Shape representing a box with rounded edges.
-- [struct ClothSphereShape](clothsphereshape.md)
+- [struct ClothSphereShape](./clothsphereshape.md)
   Shape representing a sphere.
-- [enum ClothVolumeShape](clothvolumeshape.md)
+- [enum ClothVolumeShape](./clothvolumeshape.md)
   Shape suitable for use as a volume.
 
 

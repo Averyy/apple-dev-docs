@@ -1,17 +1,18 @@
 # kAUNodeInteraction_Connection
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 connections between 2 audio units,
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ connections between 2 audio units,
 var kAUNodeInteraction_Connection: UInt32 { get }
 ```
 
+```c
+kAUNodeInteraction_Connection
+```
+
 ## See Also
 
-- [var kAUNodeInteraction_InputCallback: UInt32](kaunodeinteraction_inputcallback.md)
+### Constants
+- [var kAUNodeInteraction_InputCallback: UInt32](./kaunodeinteraction_inputcallback.md)
   input callbacks being registered to a single audio unit’s input bus.
 
 

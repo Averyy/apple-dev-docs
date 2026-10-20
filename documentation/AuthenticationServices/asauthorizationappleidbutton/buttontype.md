@@ -1,7 +1,8 @@
 # ASAuthorizationAppleIDButton.ButtonType
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for the authorization button.
 
@@ -19,35 +20,40 @@ A type for the authorization button.
 enum ButtonType
 ```
 
+```c
+enum ASAuthorizationAppleIDButtonType : NSInteger;
+```
+
 ## Topics
 
 ### Choosing a Button Type
-- [ASAuthorizationAppleIDButton.ButtonType.continue](asauthorizationappleidbutton/buttontype/continue.md)
+- [ASAuthorizationAppleIDButton.ButtonType.continue](./buttontype/continue.md)
   A button type that continues the Sign in with Apple authorization process.
-- [static var `default`: ASAuthorizationAppleIDButton.ButtonType](asauthorizationappleidbutton/buttontype/default.md)
+- [static var `default`: ASAuthorizationAppleIDButton.ButtonType](./buttontype/default.md)
   A default button type for the Sign in with Apple authorization process.
-- [ASAuthorizationAppleIDButton.ButtonType.signUp](asauthorizationappleidbutton/buttontype/signup.md)
+- [ASAuthorizationAppleIDButton.ButtonType.signUp](./buttontype/signup.md)
   A button type that allows the user to sign up for Sign in with Apple.
-- [ASAuthorizationAppleIDButton.ButtonType.signIn](asauthorizationappleidbutton/buttontype/signin.md)
+- [ASAuthorizationAppleIDButton.ButtonType.signIn](./buttontype/signin.md)
   A button type that performs authorization using Sign in with Apple.
 ### Initializers
-- [init?(rawValue: Int)](asauthorizationappleidbutton/buttontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./buttontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cornerRadius: CGFloat](asauthorizationappleidbutton/cornerradius.md)
+### Styling the Button
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The radius, in points, for the rounded corners on the Apple ID sign-in button.
-- [ASAuthorizationAppleIDButton.Style](asauthorizationappleidbutton/style.md)
+- [ASAuthorizationAppleIDButton.Style](./style.md)
   A style for the authorization button.
 
 

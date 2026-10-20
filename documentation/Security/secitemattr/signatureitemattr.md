@@ -1,7 +1,8 @@
 # SecItemAttr.signatureItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the server signature attribute.
 
@@ -15,9 +16,13 @@ Identifies the server signature attribute.
 case signatureItemAttr
 ```
 
+```c
+kSecSignatureItemAttr
+```
+
 #### Discussion
 
-You use this tag to set or get a value of type [`SecAFPServerSignature`](secafpserversignature.md) that represents the server signature block. This is unique to AppleShare password attributes.
+You use this tag to set or get a value of type [`SecAFPServerSignature`](../secafpserversignature.md) that represents the server signature block. This is unique to AppleShare password attributes.
 
 
 ---

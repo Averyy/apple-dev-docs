@@ -1,7 +1,8 @@
 # setSelectedDates(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the array of date component objects that represent selected dates in a calendar view, with an option to animate the change.
 
@@ -17,6 +18,10 @@ Updates the array of date component objects that represent selected dates in a c
 func setSelectedDates(_ selectedDates: [DateComponents], animated: Bool)
 ```
 
+```objc
+- (void) setSelectedDates:(NSArray<NSDateComponents *> *) selectedDates animated:(BOOL) animated;
+```
+
 ## Parameters
 
 - `selectedDates`: An array of date component objects that represent dates to select in a calendar view.
@@ -24,7 +29,8 @@ func setSelectedDates(_ selectedDates: [DateComponents], animated: Bool)
 
 ## See Also
 
-- [var selectedDates: [DateComponents]](uicalendarselectionmultidate/selecteddates.md)
+### Updating the selected dates
+- [var selectedDates: [DateComponents]](./selecteddates.md)
   An array of date component objects that represent selected dates in a calendar view.
 
 

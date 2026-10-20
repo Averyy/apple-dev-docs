@@ -1,7 +1,8 @@
 # parameters()
 
 **Framework**: Video Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous sequence that provides updates to the processing Parameter array if the processing extension makes changes to the set of Parameters.
 
@@ -20,11 +21,12 @@ These changes could be: - adding or removing Parameters - enabling/disabling Par
 
 ## See Also
 
-- [func updateParameter(values: [String : Any]) throws](vtrawprocessingsession/updateparameter(values:).md)
+### Configuring parameters
+- [func updateParameter(values: [String : Any]) throws](./updateparameter%28values%29.md)
   Sets the value for one or more of the processing parameters.
-- [var processingParameters: [VTRAWProcessingSession.Parameter]](vtrawprocessingsession/processingparameters.md)
+- [var processingParameters: [VTRAWProcessingSession.Parameter]](./processingparameters.md)
   An array of processing parameters available for this RAW processing session.
-- [VTRAWProcessingSession.Parameter](vtrawprocessingsession/parameter.md)
+- [VTRAWProcessingSession.Parameter](./parameter.md)
   A parameter expresses a control or a set of controls that influence frame processing.
 
 

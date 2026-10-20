@@ -1,7 +1,8 @@
 # components(style:fields:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a style for formatting a date interval in terms of specific date components.
 
@@ -20,15 +21,17 @@ Returns a style for formatting a date interval in terms of specific date compone
 static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>? = nil) -> Self
 ```
 
+Available when `Self` is `Date.ComponentsFormatStyle`.
+
 #### Return Value
 
 A date format style that uses the specified style and fields.
 
 #### Discussion
 
-Use this type method when the call point allows the use of [`Date.ComponentsFormatStyle`](date/componentsformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/range/formatted(_:)) method of a `Range<Date>`.
+Use this type method when the call point allows the use of [`Date.ComponentsFormatStyle`](../date/componentsformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/range/formatted%28_%29.md) method of a `Range<Date>`.
 
-The following example creates a 120-day date range, and then uses a [`Date.ComponentsFormatStyle`](date/componentsformatstyle.md) to express this as a count of weeks and days:
+The following example creates a 120-day date range, and then uses a [`Date.ComponentsFormatStyle`](../date/componentsformatstyle.md) to express this as a count of weeks and days:
 
 ```swift
 let date = Date()
@@ -41,30 +44,31 @@ let formatted = interval.formatted(
 
 ## Parameters
 
-- `style`: The style to use for the fields, such as [`abbreviated`](date/componentsformatstyle/style-swift.struct/abbreviated.md) or [`narrow`](date/componentsformatstyle/style-swift.struct/narrow.md).
+- `style`: The style to use for the fields, such as [`abbreviated`](../date/componentsformatstyle/style-swift.struct/abbreviated.md) or [`narrow`](../date/componentsformatstyle/style-swift.struct/narrow.md).
 - `fields`: A set of date component fields to include in the formatted output.
 
 ## See Also
 
-- [static var dateTime: Date.FormatStyle](formatstyle/datetime.md)
+### Applying date and time styles
+- [static var dateTime: Date.FormatStyle](./datetime.md)
   A style for formatting a date and time.
-- [struct FormatStyle](date/formatstyle.md)
+- [struct FormatStyle](../date/formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
+- [struct ISO8601FormatStyle](../date/iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
-- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](formatstyle/verbatim(_:locale:timezone:calendar:).md)
+- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](./verbatim%28_,locale,timezone,calendar%29.md)
   Returns a style for formatting a date with an explicitly-specified style.
-- [struct VerbatimFormatStyle](date/verbatimformatstyle.md)
+- [struct VerbatimFormatStyle](../date/verbatimformatstyle.md)
   A style that formats a date with an explicitly-specified style.
-- [static var interval: Date.IntervalFormatStyle](formatstyle/interval.md)
+- [static var interval: Date.IntervalFormatStyle](./interval.md)
   A style for formatting a date interval.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](../date/intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](formatstyle/relative(presentation:unitsstyle:).md)
+- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](./relative%28presentation,unitsstyle%29.md)
   Returns a style for formatting a date as relative to the current date.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](../date/relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [struct ComponentsFormatStyle](date/componentsformatstyle.md)
+- [struct ComponentsFormatStyle](../date/componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
 
 

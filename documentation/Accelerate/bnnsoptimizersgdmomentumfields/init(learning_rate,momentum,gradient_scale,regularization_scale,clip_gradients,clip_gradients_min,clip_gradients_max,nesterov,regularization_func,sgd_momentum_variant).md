@@ -1,18 +1,21 @@
 # init(learning_rate:momentum:gradient_scale:regularization_scale:clip_gradients:clip_gradients_min:clip_gradients_max:nesterov:regularization_func:sgd_momentum_variant:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new SGD with momentum optimizer fields structure from the specified parameters.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -35,7 +38,8 @@ init(learning_rate: Float, momentum: Float, gradient_scale: Float, regularizatio
 
 ## See Also
 
-- [init()](bnnsoptimizersgdmomentumfields/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new SGD with momentum optimizer fields structure.
 
 

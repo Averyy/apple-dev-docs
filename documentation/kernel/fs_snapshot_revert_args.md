@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct fs_snapshot_revert_args {
     ...
 };
@@ -17,7 +17,7 @@ struct fs_snapshot_revert_args {
 ## Topics
 
 ### Instance Properties
-- [sr_cnp](fs_snapshot_revert_args/1823713-sr_cnp.md)
+- [sr_cnp](./fs_snapshot_revert_args/api-1823713-sr_cnp.md)
 
 
 ---

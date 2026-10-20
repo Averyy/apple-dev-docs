@@ -1,7 +1,8 @@
 # finishDeferredLightweightMigration()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes all remaining tasks of a deferred lightweight migration.
 
@@ -20,15 +21,20 @@ Executes all remaining tasks of a deferred lightweight migration.
 func finishDeferredLightweightMigration() throws
 ```
 
+```objc
+- (BOOL) finishDeferredLightweightMigration:(NSError **) error;
+```
+
 #### Discussion
 
-> **Note**:  Enable deferred lightweight migrations before using this method. For more information, see [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](nspersistentstoredeferredlightweightmigrationoptionkey.md).
+> **Note**:  Enable deferred lightweight migrations before using this method. For more information, see [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](../nspersistentstoredeferredlightweightmigrationoptionkey.md).
 
 ## See Also
 
-- [let NSPersistentStoreDeferredLightweightMigrationOptionKey: String](nspersistentstoredeferredlightweightmigrationoptionkey.md)
+### Deferring a store’s migrations
+- [let NSPersistentStoreDeferredLightweightMigrationOptionKey: String](../nspersistentstoredeferredlightweightmigrationoptionkey.md)
   The key for enabling deferred lightweight migrations.
-- [func finishDeferredLightweightMigrationTask() throws](nspersistentstorecoordinator/finishdeferredlightweightmigrationtask.md)
+- [func finishDeferredLightweightMigrationTask() throws](./finishdeferredlightweightmigrationtask%28%29.md)
   Executes a single pending task of a deferred lightweight migration.
 
 

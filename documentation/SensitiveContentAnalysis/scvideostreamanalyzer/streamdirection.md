@@ -1,7 +1,8 @@
 # SCVideoStreamAnalyzer.StreamDirection
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for the different types of analyzed video streams.
 
@@ -16,34 +17,39 @@ Options for the different types of analyzed video streams.
 enum StreamDirection
 ```
 
+```c
+enum SCVideoStreamAnalyzerStreamDirection : NSInteger;
+```
+
 #### Overview
 
-Pass this enum into the [`init(participantUUID:streamDirection:)`](scvideostreamanalyzer/init(participantuuid:streamdirection:).md) initializer when creating an [`SCVideoStreamAnalyzer`](scvideostreamanalyzer.md) to analyze video streams.
+Pass this enum into the [`init(participantUUID:streamDirection:)`](./init%28participantuuid,streamdirection%29.md) initializer when creating an [`SCVideoStreamAnalyzer`](../scvideostreamanalyzer.md) to analyze video streams.
 
 ## Topics
 
 ### Identifying a stream direction
-- [SCVideoStreamAnalyzer.StreamDirection.incoming](scvideostreamanalyzer/streamdirection/incoming.md)
+- [SCVideoStreamAnalyzer.StreamDirection.incoming](./streamdirection/incoming.md)
   An option that refers to a video stream from another device.
-- [SCVideoStreamAnalyzer.StreamDirection.outgoing](scvideostreamanalyzer/streamdirection/outgoing.md)
+- [SCVideoStreamAnalyzer.StreamDirection.outgoing](./streamdirection/outgoing.md)
   An option that refers to a video stream sent to another device.
 ### Initializing a stream direction
-- [init?(rawValue: Int)](scvideostreamanalyzer/streamdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./streamdirection/init%28rawvalue%29.md)
   Initializes a stream direction with the given raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(participantUUID: String, streamDirection: SCVideoStreamAnalyzer.StreamDirection) throws](scvideostreamanalyzer/init(participantuuid:streamdirection:).md)
+### Creating a video stream analyzer
+- [init(participantUUID: String, streamDirection: SCVideoStreamAnalyzer.StreamDirection) throws](./init%28participantuuid,streamdirection%29.md)
   Creates a video stream analyzer for the given call participant and stream option.
 
 

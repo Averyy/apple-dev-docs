@@ -1,7 +1,8 @@
 # CGPDFStringCopyDate(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts a string to a date.
 
@@ -10,7 +11,7 @@ Converts a string to a date.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Converts a string to a date.
 
 ```swift
 func CGPDFStringCopyDate(_ string: CGPDFStringRef) -> CFDate?
+```
+
+```c
+extern CFDateRefCGPDFStringCopyDate(CGPDFStringRef string);
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ The PDF specification defines a specific format for strings that represent dates
 
 ## See Also
 
-- [func CGPDFStringCopyTextString(CGPDFStringRef) -> CFString?](cgpdfstringcopytextstring(_:).md)
+### Converting PDF Strings
+- [func CGPDFStringCopyTextString(CGPDFStringRef) -> CFString?](./cgpdfstringcopytextstring%28_%29.md)
   Returns a CFString object that represents a PDF string as a text string.
 
 

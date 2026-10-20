@@ -1,7 +1,8 @@
 # PGDisplayDescriptor
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor for a virtual display.
 
@@ -15,53 +16,58 @@ A descriptor for a virtual display.
 class PGDisplayDescriptor
 ```
 
+```objc
+@interface PGDisplayDescriptor : NSObject
+```
+
 ## Topics
 
 ### Specifying the Display Properties
-- [var name: String?](pgdisplaydescriptor/name.md)
+- [var name: String?](./pgdisplaydescriptor/name.md)
   The display’s name as seen in the guest operating environment.
-- [var sizeInMillimeters: NSSize](pgdisplaydescriptor/sizeinmillimeters.md)
+- [var sizeInMillimeters: NSSize](./pgdisplaydescriptor/sizeinmillimeters.md)
   The size in millimeters of the virtual display.
 ### Setting the Dispatch Queue
-- [var queue: dispatch_queue_t?](pgdisplaydescriptor/queue.md)
+- [var queue: dispatch_queue_t?](./pgdisplaydescriptor/queue.md)
   The queue that the framework uses when dispatching messages to any of the display’s registered handlers.
 ### Managing Cursor Events
-- [var cursorShowHandler: PGDisplayCursorShowHandler?](pgdisplaydescriptor/cursorshowhandler.md)
+- [var cursorShowHandler: PGDisplayCursorShowHandler?](./pgdisplaydescriptor/cursorshowhandler.md)
   A handler that the framework calls to change the cursor’s visibility.
-- [typealias PGDisplayCursorShowHandler](pgdisplaycursorshowhandler.md)
+- [typealias PGDisplayCursorShowHandler](./pgdisplaycursorshowhandler.md)
   The block signature for a routine that handles changes to the cursor’s visibility.
 ### Handling Mode Changes
-- [var modeChangeHandler: PGDisplayModeChangeHandler?](pgdisplaydescriptor/modechangehandler.md)
+- [var modeChangeHandler: PGDisplayModeChangeHandler?](./pgdisplaydescriptor/modechangehandler.md)
   A handler that the framework calls to change the virtual display’s graphics mode.
-- [typealias PGDisplayModeChangeHandler](pgdisplaymodechangehandler.md)
+- [typealias PGDisplayModeChangeHandler](./pgdisplaymodechangehandler.md)
   The block signature for a routine that handles changes to the display’s graphics mode.
 ### Handling Frame Events
-- [var newFrameEventHandler: PGDisplayNewFrameEventHandler?](pgdisplaydescriptor/newframeeventhandler.md)
+- [var newFrameEventHandler: PGDisplayNewFrameEventHandler?](./pgdisplaydescriptor/newframeeventhandler.md)
   A handler that the framework calls when the guest environment has a new frame to display.
-- [typealias PGDisplayNewFrameEventHandler](pgdisplaynewframeeventhandler.md)
+- [typealias PGDisplayNewFrameEventHandler](./pgdisplaynewframeeventhandler.md)
   The block signature for a routine that handles frame updates from the guest.
 ### Instance Properties
-- [var cursorMoveHandler: PGDisplayCursorMoveHandler?](pgdisplaydescriptor/cursormovehandler.md)
+- [var cursorMoveHandler: PGDisplayCursorMoveHandler?](./pgdisplaydescriptor/cursormovehandler.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol PGDisplay](pgdisplay.md)
+### Displays
+- [protocol PGDisplay](./pgdisplay.md)
   An object that provides display functionality to the guest operating system in a way that the host-side virtual machine app can intercept.
-- [class PGDisplayMode](pgdisplaymode.md)
+- [class PGDisplayMode](./pgdisplaymode.md)
   A description of a supported display mode.
-- [struct PGDisplayCoord_t](pgdisplaycoord_t.md)
+- [struct PGDisplayCoord_t](./pgdisplaycoord_t.md)
   Coordinates that describe sizes or offsets within a 2D array of pixels.
 
 

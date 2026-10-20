@@ -1,7 +1,8 @@
 # dimensions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of sizes, in elements, one for each dimension of this tensor.
 
@@ -19,9 +20,13 @@ The array of sizes, in elements, one for each dimension of this tensor.
 var dimensions: MTLTensorExtents? { get }
 ```
 
+```objc
+@property (readonly, nullable) MTLTensorExtents * dimensions;
+```
+
 #### Discussion
 
-For shader-bound tensors with dynamic extents, the [`rank`](mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and [`extentAtDimensionIndex:`](mtltensorextents/extentatdimensionindex:.md) always returns a value of -1.
+For shader-bound tensors with dynamic extents, the [`rank`](../mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and [`extentAtDimensionIndex:`](../mtltensorextents/extentatdimensionindex_.md) always returns a value of -1.
 
 
 ---

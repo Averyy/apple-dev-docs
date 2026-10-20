@@ -1,7 +1,8 @@
 # isDelegatedRequest
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this disbursement request is being made by a delegated entity on behalf of a merchant.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether this disbursement request is being made b
 
 ```swift
 var isDelegatedRequest: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL isDelegatedRequest;
 ```
 
 #### Discussion

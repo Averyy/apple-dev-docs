@@ -1,18 +1,19 @@
 # status
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Status field for a factorization.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,21 @@ Status field for a factorization.
 var status: SparseStatus_t
 ```
 
+```c
+SparseStatus_t status;
+```
+
 #### Discussion
 
-```None
+```
                                   numerical issue.
 ```
 
-```None
+```
                                   singular.
 ```
 
-```None
+```
                                   error (e.g. failed to allocate memory).
 ```
 

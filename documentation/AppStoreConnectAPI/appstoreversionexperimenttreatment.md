@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatment
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 One variant in an App Store product page A/B experiment, containing a set of alternative screenshots, previews, and promotional text.
 
@@ -10,16 +11,16 @@ One variant in an App Store product page A/B experiment, containing a set of alt
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatment
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentTreatment.Attributes](appstoreversionexperimenttreatment/attributes-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatment.Attributes](./appstoreversionexperimenttreatment/attributes-data.dictionary.md)
   Attributes that describe an app store version experiment treatment resource.
-- [object AppStoreVersionExperimentTreatment.Relationships](appstoreversionexperimenttreatment/relationships-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatment.Relationships](./appstoreversionexperimenttreatment/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,23 +29,24 @@ object AppStoreVersionExperimentTreatment
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (AppStoreVersionExperimentTreatment.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperimentTreatments`
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatmentCreateRequest](appstoreversionexperimenttreatmentcreaterequest.md)
+### Objects
+- [object AppStoreVersionExperimentTreatmentCreateRequest](./appstoreversionexperimenttreatmentcreaterequest.md)
   The request body you use to create an App Store version experiment treatment.
-- [object AppStoreVersionExperimentTreatmentResponse](appstoreversionexperimenttreatmentresponse.md)
+- [object AppStoreVersionExperimentTreatmentResponse](./appstoreversionexperimenttreatmentresponse.md)
   The response body for endpoints that create, read, or modify an App Store version experiment treatment.
-- [object AppStoreVersionExperimentTreatmentUpdateRequest](appstoreversionexperimenttreatmentupdaterequest.md)
+- [object AppStoreVersionExperimentTreatmentUpdateRequest](./appstoreversionexperimenttreatmentupdaterequest.md)
   The request body you use to update an app store version experiment treatment update request.
-- [object AppStoreVersionExperimentTreatmentsResponse](appstoreversionexperimenttreatmentsresponse.md)
+- [object AppStoreVersionExperimentTreatmentsResponse](./appstoreversionexperimenttreatmentsresponse.md)
   The response body for endpoints that list treatments for an App Store version experiment.
-- [object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse](appstoreversionexperimentappstoreversionexperimenttreatmentslinkagesresponse.md)
-- [object AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponse](appstoreversionexperimenttreatmentappstoreversionexperimenttreatmentlocalizationslinkagesresponse.md)
-- [object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationapppreviewsetslinkagesresponse.md)
-- [object AppStoreVersionExperimentTreatmentLocalizationAppScreenshotSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationappscreenshotsetslinkagesresponse.md)
-- [object AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse](appstoreversionexperimentv2appstoreversionexperimenttreatmentslinkagesresponse.md)
+- [object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse](./appstoreversionexperimentappstoreversionexperimenttreatmentslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponse](./appstoreversionexperimenttreatmentappstoreversionexperimenttreatmentlocalizationslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse](./appstoreversionexperimenttreatmentlocalizationapppreviewsetslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationAppScreenshotSetsLinkagesResponse](./appstoreversionexperimenttreatmentlocalizationappscreenshotsetslinkagesresponse.md)
+- [object AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse](./appstoreversionexperimentv2appstoreversionexperimenttreatmentslinkagesresponse.md)
 
 
 ---

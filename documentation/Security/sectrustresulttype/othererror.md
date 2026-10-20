@@ -1,7 +1,8 @@
 # SecTrustResultType.otherError
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a failure other than trust evaluation.
 
@@ -20,11 +21,15 @@ A value that indicates a failure other than trust evaluation.
 case otherError
 ```
 
+```c
+kSecTrustResultOtherError
+```
+
 #### Discussion
 
 This value indicates that evaluation failed for some other reason. This can be caused by either a revoked certificate or by OS-level errors that are unrelated to the certificates themselves.
 
-You might receive the [`SecTrustResultType.otherError`](sectrustresulttype/othererror.md) value after an evaluation, but you can’t store the value as part of the user trust settings with a call to the [`SecTrustSettingsSetTrustSettings(_:_:_:)`](sectrustsettingssettrustsettings(_:_:_:).md) method.
+You might receive the [`SecTrustResultType.otherError`](./othererror.md) value after an evaluation, but you can’t store the value as part of the user trust settings with a call to the [`SecTrustSettingsSetTrustSettings(_:_:_:)`](../sectrustsettingssettrustsettings%28_,_,_%29.md) method.
 
 
 ---

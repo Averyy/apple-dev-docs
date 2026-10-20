@@ -1,9 +1,10 @@
 # URLSession.ResponseDisposition.becomeDownload
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Convert the response for this request to use a [`URLSessionDownloadTask`](urlsessiondownloadtask.md).
+Convert the response for this request to use a [`URLSessionDownloadTask`](../../urlsessiondownloadtask.md).
 
 **Availability**:
 - iOS 7.0+
@@ -20,18 +21,23 @@ Convert the response for this request to use a [`URLSessionDownloadTask`](urlses
 case becomeDownload
 ```
 
+```c
+NSURLSessionResponseBecomeDownload
+```
+
 #### Discussion
 
-When used with the completion handler from [`urlSession(_:dataTask:didReceive:completionHandler:)`](urlsessiondatadelegate/urlsession(_:datatask:didreceive:completionhandler:).md), this disposition converts the data task to a download task. This will result in your delegate’s [`urlSession(_:dataTask:didBecome:)`](urlsessiondatadelegate/urlsession(_:datatask:didbecome:)-60op5.md) being called to provide you with the new download task that supersedes the current task.
+When used with the completion handler from [`urlSession(_:dataTask:didReceive:completionHandler:)`](../../urlsessiondatadelegate/urlsession%28_,datatask,didreceive,completionhandler%29.md), this disposition converts the data task to a download task. This will result in your delegate’s [`urlSession(_:dataTask:didBecome:)`](../../urlsessiondatadelegate/urlsession%28_,datatask,didbecome%29-60op5.md) being called to provide you with the new download task that supersedes the current task.
 
 ## See Also
 
-- [URLSession.ResponseDisposition.cancel](urlsession/responsedisposition/cancel.md)
+### Task dispositions
+- [URLSession.ResponseDisposition.cancel](./cancel.md)
   Cancel the load.
-- [URLSession.ResponseDisposition.allow](urlsession/responsedisposition/allow.md)
+- [URLSession.ResponseDisposition.allow](./allow.md)
   Allow the load operation to continue.
-- [URLSession.ResponseDisposition.becomeStream](urlsession/responsedisposition/becomestream.md)
-  Convert the response for this request to use a [`URLSessionStreamTask`](urlsessionstreamtask.md).
+- [URLSession.ResponseDisposition.becomeStream](./becomestream.md)
+  Convert the response for this request to use a [`URLSessionStreamTask`](../../urlsessionstreamtask.md).
 
 
 ---

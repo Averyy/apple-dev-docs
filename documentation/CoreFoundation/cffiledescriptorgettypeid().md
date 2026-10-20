@@ -1,7 +1,8 @@
 # CFFileDescriptorGetTypeID()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for the CFFileDescriptor opaque type.
 
@@ -18,6 +19,10 @@ Returns the type identifier for the CFFileDescriptor opaque type.
 
 ```swift
 func CFFileDescriptorGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CFFileDescriptorGetTypeID();
 ```
 
 #### Return Value

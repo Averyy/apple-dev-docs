@@ -1,18 +1,19 @@
 # proto_media_input
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*proto_media_input)(ifnet_t ifp, protocol_family_t protocol, mbuf_t packet, char *header);
 ```
 
-#### Return_value
+#### Return Value
 
 If the result is zero, the caller will assume the packet was passed to the protocol. If the result is non-zero and not EJUSTRETURN, the caller will free the packet.
 

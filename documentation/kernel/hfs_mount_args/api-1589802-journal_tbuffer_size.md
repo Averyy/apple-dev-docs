@@ -1,14 +1,15 @@
 # journal_tbuffer_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int journal_tbuffer_size;
 ```
 

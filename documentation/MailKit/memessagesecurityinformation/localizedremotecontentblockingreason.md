@@ -1,7 +1,8 @@
 # localizedRemoteContentBlockingReason
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 var localizedRemoteContentBlockingReason: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * localizedRemoteContentBlockingReason;
+```
+
 ## See Also
 
-- [var shouldBlockRemoteContent: Bool](memessagesecurityinformation/shouldblockremotecontent.md)
+### Instance Properties
+- [var shouldBlockRemoteContent: Bool](./shouldblockremotecontent.md)
 
 
 ---

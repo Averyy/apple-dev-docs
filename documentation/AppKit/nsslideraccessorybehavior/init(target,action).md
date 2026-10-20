@@ -1,7 +1,8 @@
 # init(target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 The action is sent to the target on interaction.
 
@@ -17,13 +18,18 @@ The action is sent to the target on interaction.
 init(target: Any?, action: Selector)
 ```
 
+```objc
++ (NSSliderAccessoryBehavior *) behaviorWithTarget:(id) target action:(SEL) action;
+```
+
 ## Parameters
 
 - `target`: An optional `NSSliderAccessory`.
 
 ## See Also
 
-- [init(handler: (NSSliderAccessory) -> Void)](nsslideraccessorybehavior/init(handler:).md)
+### Initializers
+- [init(handler: (NSSliderAccessory) -> Void)](./init%28handler%29.md)
   The handler block is invoked on interaction.
 
 

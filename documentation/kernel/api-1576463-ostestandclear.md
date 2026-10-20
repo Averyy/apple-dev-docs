@@ -1,7 +1,8 @@
 # OSTestAndClear
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Bit test and clear operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
@@ -10,11 +11,11 @@ Bit test and clear operation, performed atomically with respect to all devices t
 
 ## Declaration
 
-```swift
+```c
 Boolean OSTestAndClear(UInt32 bit, volatile UInt8 *startAddress);
 ```
 
-#### Return_value
+#### Return Value
 
 true if the bit was already clear, false otherwise.
 
@@ -31,7 +32,8 @@ This function guarantees atomicity only with main system memory. It is specifica
 
 ## See Also
 
-- [OSTestAndSet](1576456-ostestandset.md)
+### Test Operations
+- [OSTestAndSet](./api-1576456-ostestandset.md)
   Bit test and set operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
 

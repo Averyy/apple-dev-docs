@@ -1,14 +1,15 @@
 # ip_interp_sugid_fd
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int ip_interp_sugid_fd;
 ```
 

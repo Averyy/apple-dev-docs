@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The view uses any background style you apply via the view’s background style.
 
@@ -20,7 +21,8 @@ static var `default`: RealityViewEnvironment { get }
 
 ## See Also
 
-- [static func skybox(EnvironmentResource) -> RealityViewEnvironment](realityviewenvironment/skybox(_:).md)
+### Setting the environment background
+- [static func skybox(EnvironmentResource) -> RealityViewEnvironment](./skybox%28_%29.md)
   The view uses a skybox environment as the background.
 
 

@@ -1,7 +1,8 @@
 # emitterShapeSize
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The emitter shape size in meters.
 

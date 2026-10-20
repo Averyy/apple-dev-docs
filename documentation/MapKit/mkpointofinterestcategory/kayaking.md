@@ -1,7 +1,8 @@
 # kayaking
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for kayaking areas.
 
@@ -20,13 +21,18 @@ The point of interest category for kayaking areas.
 static let kayaking: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryKayaking;
+```
+
 ## See Also
 
-- [static let fishing: MKPointOfInterestCategory](mkpointofinterestcategory/fishing.md)
+### Water sports
+- [static let fishing: MKPointOfInterestCategory](./fishing.md)
   The point of interest category for fishing areas.
-- [static let surfing: MKPointOfInterestCategory](mkpointofinterestcategory/surfing.md)
+- [static let surfing: MKPointOfInterestCategory](./surfing.md)
   The point of interest category for surfing areas.
-- [static let swimming: MKPointOfInterestCategory](mkpointofinterestcategory/swimming.md)
+- [static let swimming: MKPointOfInterestCategory](./swimming.md)
   The point of interest category for swimming areas.
 
 

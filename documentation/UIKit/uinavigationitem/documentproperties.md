@@ -1,7 +1,8 @@
 # documentProperties
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides the document header for the title menu.
 
@@ -17,9 +18,13 @@ An object that provides the document header for the title menu.
 var documentProperties: UIDocumentProperties? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) UIDocumentProperties * documentProperties;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 #### Discussion
 
@@ -27,9 +32,10 @@ Assign a non-`nil` value to this property to display a document header at the to
 
 ## See Also
 
-- [var titleMenuProvider: (([UIMenuElement]) -> UIMenu?)?](uinavigationitem/titlemenuprovider.md)
+### Customizing the title menu
+- [var titleMenuProvider: (([UIMenuElement]) -> UIMenu?)?](./titlemenuprovider.md)
   A closure that generates the navigation item’s title menu.
-- [class UIDocumentProperties](uidocumentproperties.md)
+- [class UIDocumentProperties](../uidocumentproperties.md)
   Information that UIKit uses to generate a document header for a navigation item’s title menu.
 
 

@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Error.cancelled
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user requested that the session be canceled and the session is now canceled.  Another session may now be created.
 

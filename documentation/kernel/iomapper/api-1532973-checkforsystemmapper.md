@@ -1,21 +1,23 @@
 # checkForSystemMapper
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static void checkForSystemMapper(void);
 ```
 
 ## See Also
 
-- [+ setMapperRequired](iomapper/1532989-setmapperrequired.md)
-- [+ waitForSystemMapper](iomapper/1532985-waitforsystemmapper.md)
+### Determining the Mapper's Availability
+- [+ setMapperRequired](./api-1532989-setmapperrequired.md)
+- [+ waitForSystemMapper](./api-1532985-waitforsystemmapper.md)
 
 
 ---

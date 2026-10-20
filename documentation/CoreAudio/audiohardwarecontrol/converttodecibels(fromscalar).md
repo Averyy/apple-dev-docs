@@ -1,12 +1,13 @@
 # convertToDecibels(fromScalar:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Convert a volume scalar value to the equivalent dB value.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

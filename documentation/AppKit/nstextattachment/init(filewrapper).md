@@ -1,7 +1,8 @@
 # init(fileWrapper:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text attachment object to contain the specified file wrapper.
 
@@ -14,15 +15,19 @@ Creates a text attachment object to contain the specified file wrapper.
 convenience init(fileWrapper: FileWrapper?)
 ```
 
+```objc
+- (instancetype) initWithFileWrapper:(NSFileWrapper *) fileWrapper;
+```
+
 #### Return Value
 
 A new text attachment object initialized with the file wrapper.
 
 #### Discussion
 
-This method is the designated initializer for the [`NSTextAttachment`](nstextattachment.md) class in macOS.
+This method is the designated initializer for the [`NSTextAttachment`](../nstextattachment.md) class in macOS.
 
-If `aWrapper` contains an image file that the receiver can interpret as an [`NSImage`](nsimage.md) object, this method sets the attachment cell’s image to that image rather than to the icon of `aWrapper`.
+If `aWrapper` contains an image file that the receiver can interpret as an [`NSImage`](../nsimage.md) object, this method sets the attachment cell’s image to that image rather than to the icon of `aWrapper`.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ If `aWrapper` contains an image file that the receiver can interpret as an [`NSI
 
 ## See Also
 
-- [init(data: Data?, ofType: String?)](nstextattachment/init(data:oftype:).md)
+### Initializing a text attachment
+- [init(data: Data?, ofType: String?)](./init%28data,oftype%29.md)
   Creates a text attachment object with the specified data.
 
 

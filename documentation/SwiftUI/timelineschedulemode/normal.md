@@ -1,7 +1,8 @@
 # TimelineScheduleMode.normal
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that produces schedule updates at the schedule’s natural cadence.
 
@@ -22,7 +23,8 @@ case normal
 
 ## See Also
 
-- [TimelineScheduleMode.lowFrequency](timelineschedulemode/lowfrequency.md)
+### Getting timeline schedule modes
+- [TimelineScheduleMode.lowFrequency](./lowfrequency.md)
   A mode that produces schedule updates at a reduced rate.
 
 

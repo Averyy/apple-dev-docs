@@ -1,33 +1,35 @@
 # IOBacklightDisplay
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```cpp
 class IOBacklightDisplay : IODisplay
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- getMetaClass](iobacklightdisplay/1564894-getmetaclass.md)
+- [- getMetaClass](./iobacklightdisplay/api-1564894-getmetaclass.md)
 
 ## Relationships
 
 ### Inherits From
-- [IODisplay](iodisplay.md)
+- [IODisplay](./iodisplay.md)
 
 ## See Also
 
-- [IODisplayConnect](iodisplayconnect.md)
-- [IODisplay](iodisplay.md)
-- [IODisplayParameterHandler](iodisplayparameterhandler.md)
-- [IOAccelerator](ioaccelerator.md)
+### Interfaces
+- [IODisplayConnect](./iodisplayconnect.md)
+- [IODisplay](./iodisplay.md)
+- [IODisplayParameterHandler](./iodisplayparameterhandler.md)
+- [IOAccelerator](./ioaccelerator.md)
 
 
 ---

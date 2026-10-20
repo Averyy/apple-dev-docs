@@ -1,12 +1,15 @@
 # kSecDigestLengthAttribute
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The digest length.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ The digest length.
 let kSecDigestLengthAttribute: CFString
 ```
 
+```c
+extern CFStringRef const kSecDigestLengthAttribute;
+```
+
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) that contains the digest length.
+The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) that contains the digest length.
 
 
 ---

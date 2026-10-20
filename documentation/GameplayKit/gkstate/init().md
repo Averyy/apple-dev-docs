@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a state object.
 
@@ -19,6 +20,10 @@ Initializes a state object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A state object.
@@ -27,7 +32,7 @@ A state object.
 
 Override this method to perform custom initialization in your state classes.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 
 ---

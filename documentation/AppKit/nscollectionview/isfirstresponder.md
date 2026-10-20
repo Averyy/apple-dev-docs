@@ -1,7 +1,8 @@
 # isFirstResponder
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the collection view is the first responder.
 
@@ -14,9 +15,13 @@ A Boolean value indicating whether the collection view is the first responder.
 var isFirstResponder: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isFirstResponder) BOOL firstResponder;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the collection view is the first responder. This property is fully key-value observing compliant.
+The value of this property is [`true`](../../Swift/true.md) when the collection view is the first responder. This property is fully key-value observing compliant.
 
 
 ---

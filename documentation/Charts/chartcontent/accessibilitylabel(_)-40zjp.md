@@ -1,7 +1,8 @@
 # accessibilityLabel(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a label to the chart content that describes its contents.
 
@@ -23,23 +24,24 @@ func accessibilityLabel(_ labelKey: LocalizedStringKey) -> some ChartContent
 
 ## See Also
 
-- [func accessibilityHidden(Bool) -> some ChartContent](chartcontent/accessibilityhidden(_:).md)
+### Configuring accessibility
+- [func accessibilityHidden(Bool) -> some ChartContent](./accessibilityhidden%28_%29.md)
   Specifies whether to hide this chart content from system accessibility features.
-- [func accessibilityIdentifier(String) -> some ChartContent](chartcontent/accessibilityidentifier(_:).md)
+- [func accessibilityIdentifier(String) -> some ChartContent](./accessibilityidentifier%28_%29.md)
   Adds an identifier string to the chart content.
-- [func accessibilityLabel<S>(S) -> some ChartContent](chartcontent/accessibilitylabel(_:)-5gk8d.md)
+- [func accessibilityLabel<S>(S) -> some ChartContent](./accessibilitylabel%28_%29-5gk8d.md)
   Adds a label to the chart content that describes its contents.
-- [func accessibilityLabel(Text) -> some ChartContent](chartcontent/accessibilitylabel(_:)-28985.md)
+- [func accessibilityLabel(Text) -> some ChartContent](./accessibilitylabel%28_%29-28985.md)
   Adds a label to the chart content that describes its contents.
-- [func accessibilityLabel(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilitylabel(_:)-9tbjv.md)
+- [func accessibilityLabel(LocalizedStringResource) -> some ChartContent](./accessibilitylabel%28_%29-9tbjv.md)
   Adds a label to the chart content that describes its contents.
-- [func accessibilityValue(LocalizedStringKey) -> some ChartContent](chartcontent/accessibilityvalue(_:)-33c0e.md)
+- [func accessibilityValue(LocalizedStringKey) -> some ChartContent](./accessibilityvalue%28_%29-33c0e.md)
   Adds a description of the value that the chart content contains.
-- [func accessibilityValue<S>(S) -> some ChartContent](chartcontent/accessibilityvalue(_:)-4k545.md)
+- [func accessibilityValue<S>(S) -> some ChartContent](./accessibilityvalue%28_%29-4k545.md)
   Adds a description of the value that the chart content contains.
-- [func accessibilityValue(Text) -> some ChartContent](chartcontent/accessibilityvalue(_:)-5g7o4.md)
+- [func accessibilityValue(Text) -> some ChartContent](./accessibilityvalue%28_%29-5g7o4.md)
   Adds a description of the value that the chart content contains.
-- [func accessibilityValue(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilityvalue(_:)-4f8vo.md)
+- [func accessibilityValue(LocalizedStringResource) -> some ChartContent](./accessibilityvalue%28_%29-4f8vo.md)
   Adds a description of the value that the chart content contains.
 
 

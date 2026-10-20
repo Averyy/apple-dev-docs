@@ -1,18 +1,23 @@
 # tableView(_:mouseDownInHeaderOf:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the mouse button was clicked in the specified table column’s header.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func tableView(_ tableView: NSTableView, mouseDownInHeaderOf tableColumn: NSTableColumn)
+```
+
+```objc
+- (void) tableView:(NSTableView *) tableView mouseDownInHeaderOfTableColumn:(NSTableColumn *) tableColumn;
 ```
 
 ## Parameters
@@ -22,9 +27,10 @@ optional func tableView(_ tableView: NSTableView, mouseDownInHeaderOf tableColum
 
 ## See Also
 
-- [func tableView(NSTableView, didClick: NSTableColumn)](nstableviewdelegate/tableview(_:didclick:).md)
+### Responding to mouse events
+- [func tableView(NSTableView, didClick: NSTableColumn)](./tableview%28_,didclick%29.md)
   Tells the delegate that the mouse button was clicked in the specified table column, but the column was not dragged.
-- [func tableView(NSTableView, shouldTrackCell: NSCell, for: NSTableColumn?, row: Int) -> Bool](nstableviewdelegate/tableview(_:shouldtrackcell:for:row:).md)
+- [func tableView(NSTableView, shouldTrackCell: NSCell, for: NSTableColumn?, row: Int) -> Bool](./tableview%28_,shouldtrackcell,for,row%29.md)
   Asks the delegate whether the specified cell should be tracked.
 
 

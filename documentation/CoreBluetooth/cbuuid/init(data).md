@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID data container.
 
@@ -20,9 +21,13 @@ Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID data conta
 init(data theData: Data)
 ```
 
+```objc
++ (CBUUID *) UUIDWithData:(NSData *) theData;
+```
+
 #### Return Value
 
-A new [`CBUUID`](cbuuid.md) object for the specified UUID data.
+A new [`CBUUID`](../cbuuid.md) object for the specified UUID data.
 
 #### Discussion
 
@@ -34,11 +39,12 @@ This method is useful when handling the UUID of a Bluetooth attribute in raw byt
 
 ## See Also
 
-- [init(string: String)](cbuuid/init(string:).md)
+### Creating New CBUUID Objects
+- [init(string: String)](./init%28string%29.md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID string.
-- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:)-3h0ry.md)
+- [init(cfuuid: CFUUID)](./init%28cfuuid%29-3h0ry.md)
   Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
-- [init(nsuuid: UUID)](cbuuid/init(nsuuid:)-2amob.md)
+- [init(nsuuid: UUID)](./init%28nsuuid%29-2amob.md)
   Creates a Core Bluetooth UUID object from a Foundation UUID object.
 
 

@@ -1,7 +1,8 @@
 # baseURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base URL the context uses for loading extension resources or injecting content into webpages.
 
@@ -18,9 +19,13 @@ The base URL the context uses for loading extension resources or injecting conte
 var baseURL: URL { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSURL * baseURL;
+```
+
 #### Discussion
 
-The default value is a unique URL using the `webkit-extension` scheme. The base URL can be set to any URL, but only the scheme and host will be used. The scheme cannot be a scheme that is already supported by [`WKWebView`](wkwebview.md) (e.g. http, https, etc.). Setting is only allowed when the context is not loaded.
+The default value is a unique URL using the `webkit-extension` scheme. The base URL can be set to any URL, but only the scheme and host will be used. The scheme cannot be a scheme that is already supported by [`WKWebView`](../wkwebview.md) (e.g. http, https, etc.). Setting is only allowed when the context is not loaded.
 
 
 ---

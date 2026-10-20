@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of a plane within the underlying surface instance for the texture, if applicable.
@@ -20,13 +21,18 @@ The number of a plane within the underlying surface instance for the texture, if
 var iosurfacePlane: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger iosurfacePlane;
+```
+
 #### Discussion
 
-The plane number applies to the [`iosurfacePlane`](mtltexture/iosurfaceplane.md) property when it isn’t `nil`. The property’s value defaults to `0` for textures that don’t come from an [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface) instance.
+The plane number applies to the [`iosurfacePlane`](./iosurfaceplane.md) property when it isn’t `nil`. The property’s value defaults to `0` for textures that don’t come from an [`IOSurface`](../../IOSurface/iosurface-page.md) instance.
 
 ## See Also
 
-- [var iosurface: IOSurfaceRef?](mtltexture/iosurface.md)
+### Getting information about the IOSurface the texture was created from
+- [var iosurface: IOSurfaceRef?](./iosurface.md)
   A reference to the underlying surface instance for the texture, if applicable.
 
 

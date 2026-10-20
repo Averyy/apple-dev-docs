@@ -1,7 +1,8 @@
 # iconSize
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the icon size.
 
@@ -14,17 +15,22 @@ Specifies the icon size.
 var iconSize: Int { get set }
 ```
 
+```objc
+@property NSUInteger iconSize;
+```
+
 #### Discussion
 
 The icon is square, so only a single dimension is required.
 
 ## See Also
 
-- [var mode: IKCameraDeviceViewDisplayMode](ikcameradeviceview/mode.md)
+### View Display Mode
+- [var mode: IKCameraDeviceViewDisplayMode](./mode.md)
   Specifies the display mode of the camera device view.
-- [var hasDisplayModeIcon: Bool](ikcameradeviceview/hasdisplaymodeicon.md)
+- [var hasDisplayModeIcon: Bool](./hasdisplaymodeicon.md)
   Returns whether the device view is being displayed in icon mode.
-- [var hasDisplayModeTable: Bool](ikcameradeviceview/hasdisplaymodetable.md)
+- [var hasDisplayModeTable: Bool](./hasdisplaymodetable.md)
   Returns whether the device view is being displayed in table mode.
 
 

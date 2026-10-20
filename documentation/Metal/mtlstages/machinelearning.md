@@ -1,7 +1,8 @@
 # machineLearning
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Represents all machine learning network dispatch operations.
 
@@ -19,13 +20,18 @@ Represents all machine learning network dispatch operations.
 static var machineLearning: MTLStages { get }
 ```
 
+```c
+MTLStageMachineLearning
+```
+
 ## See Also
 
-- [static var dispatch: MTLStages](mtlstages/dispatch.md)
+### Compute pass stages
+- [static var dispatch: MTLStages](./dispatch.md)
   Represents all compute dispatches in a compute pass.
-- [static var blit: MTLStages](mtlstages/blit.md)
+- [static var blit: MTLStages](./blit.md)
   Represents all blit operations in a pass.
-- [static var accelerationStructure: MTLStages](mtlstages/accelerationstructure.md)
+- [static var accelerationStructure: MTLStages](./accelerationstructure.md)
   Represents all acceleration structure operations.
 
 

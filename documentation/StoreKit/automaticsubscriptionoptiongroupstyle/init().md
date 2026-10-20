@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [static var automatic: AutomaticSubscriptionOptionGroupStyle](subscriptionoptiongroupstyle/automatic.md)
+### Getting the automatic style
+- [static var automatic: AutomaticSubscriptionOptionGroupStyle](../subscriptionoptiongroupstyle/automatic.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(source:injectionTime:forMainFrameOnly:inContentWorld:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+

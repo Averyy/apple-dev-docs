@@ -1,7 +1,8 @@
 # suiteNames
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the names of the suite definitions currently loaded by the application.
 
@@ -15,9 +16,14 @@ Returns the names of the suite definitions currently loaded by the application.
 var suiteNames: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * suiteNames;
+```
+
 ## See Also
 
-- [func suite(forAppleEventCode: FourCharCode) -> String?](nsscriptsuiteregistry/suite(forappleeventcode:).md)
+### Getting Suite Information
+- [func suite(forAppleEventCode: FourCharCode) -> String?](./suite%28forappleeventcode%29.md)
   Returns the name of the suite definition associated with the given four-character Apple event code, `code`.
 
 

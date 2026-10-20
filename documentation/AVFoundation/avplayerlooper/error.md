@@ -1,7 +1,8 @@
 # error
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error that describes the reason looping failed.
 
@@ -19,9 +20,13 @@ An error that describes the reason looping failed.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSError * error;
+```
+
 #### Discussion
 
-The value of this property is `nil` unless the looper’s [`status`](avplayerlooper/status-swift.property.md) changes to [`AVPlayerLooper.Status.failed`](avplayerlooper/status-swift.enum/failed.md). If this occurs, this property value contains an error object that provides the details of the error that prevented looping.
+The value of this property is `nil` unless the looper’s [`status`](./status-swift.property.md) changes to [`AVPlayerLooper.Status.failed`](./status-swift.enum/failed.md). If this occurs, this property value contains an error object that provides the details of the error that prevented looping.
 
 
 ---

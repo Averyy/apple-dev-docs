@@ -1,7 +1,8 @@
 # suggestedFileName(_:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a filename to use if the receiver chooses to write the item to disk.
 

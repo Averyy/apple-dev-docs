@@ -1,14 +1,15 @@
 # IOWorkGroupInterface
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 12.1+
 
 ## Declaration
 
-```swift
+```cpp
 class IOWorkGroupInterface : OSInterface
 ```
 

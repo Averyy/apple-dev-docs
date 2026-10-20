@@ -1,14 +1,15 @@
 # task_test_sync_upcall
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t task_test_sync_upcall(task_t task, mach_port_t port);
 ```
 

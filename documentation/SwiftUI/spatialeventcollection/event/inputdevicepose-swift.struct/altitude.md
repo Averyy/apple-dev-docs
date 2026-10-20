@@ -1,7 +1,8 @@
 # altitude
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The altitude angle.
 
@@ -25,9 +26,10 @@ An angle of zero indicates that the device is parallel to the content, while 90 
 
 ## See Also
 
-- [var azimuth: Angle](spatialeventcollection/event/inputdevicepose-swift.struct/azimuth.md)
+### Getting the event type
+- [var azimuth: Angle](./azimuth.md)
   The azimuth angle.
-- [var pose3D: Pose3D](spatialeventcollection/event/inputdevicepose-swift.struct/pose3d.md)
+- [var pose3D: Pose3D](./pose3d.md)
   The 3D pose of the input device.
 
 

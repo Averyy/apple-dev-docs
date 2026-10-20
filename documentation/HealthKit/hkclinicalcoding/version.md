@@ -1,7 +1,8 @@
 # version
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the coding system.
 
@@ -17,6 +18,10 @@ The version of the coding system.
 
 ```swift
 var version: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * version;
 ```
 
 

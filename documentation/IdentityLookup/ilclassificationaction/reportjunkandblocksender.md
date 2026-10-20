@@ -1,7 +1,8 @@
 # ILClassificationAction.reportJunkAndBlockSender
 
 **Framework**: SMS and Call Reporting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system should report the communication as junk and add the number to the system’s block list.
 
@@ -17,6 +18,10 @@ The system should report the communication as junk and add the number to the sys
 case reportJunkAndBlockSender
 ```
 
+```c
+ILClassificationActionReportJunkAndBlockSender
+```
+
 #### Discussion
 
 The extension creates an SMS message based on the response, and displays the message to the user. The user can then send or cancel the report.
@@ -27,11 +32,12 @@ Finally, the extension dismisses the [`ILClassificationUIExtensionViewController
 
 ## See Also
 
-- [ILClassificationAction.none](ilclassificationaction/none.md)
+### Classifications
+- [ILClassificationAction.none](./none.md)
   No action is required.
-- [ILClassificationAction.reportJunk](ilclassificationaction/reportjunk.md)
+- [ILClassificationAction.reportJunk](./reportjunk.md)
   The system should report the communication as junk.
-- [ILClassificationAction.reportNotJunk](ilclassificationaction/reportnotjunk.md)
+- [ILClassificationAction.reportNotJunk](./reportnotjunk.md)
   The system should report that the communication is not junk.
 
 

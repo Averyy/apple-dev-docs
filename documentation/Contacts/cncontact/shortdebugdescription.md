@@ -1,7 +1,8 @@
 # shortDebugDescription
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 9.0+

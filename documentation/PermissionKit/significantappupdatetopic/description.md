@@ -1,7 +1,8 @@
 # description
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the significant update that initiates the permission question.
 
@@ -24,7 +25,8 @@ Provide a clear, concise explanation of what changes you’re making to your app
 
 ## See Also
 
-- [static let id: String](significantappupdatetopic/id.md)
+### Accessing properties
+- [static let id: String](./id.md)
   The unique identifier the system uses to categorize this topic type.
 
 

@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 A static factory method that allocates and initializes a selector control.
 
@@ -10,7 +11,7 @@ A static factory method that allocates and initializes a selector control.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserVideoSelectorControl> Create(IOUserVideoDriver *in_driver, bool in_is_settable, IOUserVideoObjectPropertyElement in_control_element, IOUserVideoObjectPropertyScope in_control_scope, IOUserVideoClassID in_control_class_id);
 ```
 
@@ -32,13 +33,14 @@ If IOUserVideoSelectorControl is subclassed to override behavior, don’t use th
 
 ## See Also
 
-- [init](iouservideoselectorcontrol/init.md)
+### Creating a selector control
+- [init](./init.md)
   Initializes a selector control.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+- [IOUserVideoObjectPropertyElement](../videodriverkit-page/iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](../videodriverkit-page/iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 

@@ -1,7 +1,8 @@
 # init(destinationPlatform:options:)
 
 **Framework**: AppMigrationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request instance.
 

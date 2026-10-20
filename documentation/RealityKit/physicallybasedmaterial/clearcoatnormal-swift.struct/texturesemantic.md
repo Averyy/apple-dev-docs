@@ -1,7 +1,8 @@
 # textureSemantic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The intended use of the object’s texture property.
 

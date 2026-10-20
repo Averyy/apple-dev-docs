@@ -1,7 +1,8 @@
 # init(source:paddingSizeBefore:paddingSizeAfter:edgeMode:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.1+
@@ -15,6 +16,10 @@
 
 ```swift
 init(source: MPSNNImageNode, paddingSizeBefore: MPSImageCoordinate, paddingSizeAfter: MPSImageCoordinate, edgeMode: MPSImageEdgeMode)
+```
+
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) source paddingSizeBefore:(MPSImageCoordinate) paddingSizeBefore paddingSizeAfter:(MPSImageCoordinate) paddingSizeAfter edgeMode:(MPSImageEdgeMode) edgeMode;
 ```
 
 

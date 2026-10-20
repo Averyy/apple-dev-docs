@@ -1,7 +1,8 @@
 # timeToTarget
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A duration in which the engine fades the settings from their original value to their new value.
 
@@ -19,13 +20,18 @@ A duration in which the engine fades the settings from their original value to t
 var timeToTarget: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double timeToTarget;
+```
+
 #### Discussion
 
-This property determines the speed of activation when the app calls [`activate()`](phasegrouppreset/activate().md). The framework scales the value by [`unitsPerSecond`](phaseengine/unitspersecond.md).
+This property determines the speed of activation when the app calls [`activate()`](./activate%28%29.md). The framework scales the value by [`unitsPerSecond`](../phaseengine/unitspersecond.md).
 
 ## See Also
 
-- [var timeToReset: Double](phasegrouppreset/timetoreset.md)
+### Fading Between Settings
+- [var timeToReset: Double](./timetoreset.md)
   A duration in which the framework restores the group’s original state.
 
 

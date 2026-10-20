@@ -1,7 +1,8 @@
 # seed
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the seed used to initialize the random number generator.
 
@@ -19,25 +20,30 @@ Specifies the seed used to initialize the random number generator.
 var seed: UInt32 { get set }
 ```
 
+```objc
+@property unsigned int seed;
+```
+
 #### Discussion
 
 Each layer has its own random number generator state. Emitter cell properties that are defined as a mean and a range, such as a cell’s `speed`, the value of the properties are uniformly distributed in the interval [M - R/2, M + R/2].
 
 ## See Also
 
-- [var scale: Float](caemitterlayer/scale.md)
+### Emitter Cell Attribute Multipliers
+- [var scale: Float](./scale.md)
   Defines a multiplier applied to the cell-defined particle scale.
-- [var spin: Float](caemitterlayer/spin.md)
+- [var spin: Float](./spin.md)
   Defines a multiplier applied to the cell-defined particle spin. Animatable.
-- [var velocity: Float](caemitterlayer/velocity.md)
+- [var velocity: Float](./velocity.md)
   Defines a multiplier applied to the cell-defined particle velocity. Animatable.
-- [var birthRate: Float](caemitterlayer/birthrate.md)
+- [var birthRate: Float](./birthrate.md)
   Defines a multiplier that is applied to the cell-defined birth rate. Animatable
-- [var emitterMode: CAEmitterLayerEmitterMode](caemitterlayer/emittermode.md)
+- [var emitterMode: CAEmitterLayerEmitterMode](./emittermode.md)
   Specifies the emitter mode.
-- [var lifetime: Float](caemitterlayer/lifetime.md)
+- [var lifetime: Float](./lifetime.md)
   Defines a multiplier applied to the cell-defined lifetime range when particles are created. Animatable.
-- [var preservesDepth: Bool](caemitterlayer/preservesdepth.md)
+- [var preservesDepth: Bool](./preservesdepth.md)
   Defines whether the layer flattens the particles into its plane.
 
 

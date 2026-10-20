@@ -1,16 +1,17 @@
 # Controlling Shape Drawing with Shaders
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Change a shape node’s appearance by supplying custom shader code.
 
 #### Overview
 
-When you want to go beyond the effects provided by a shape node’s properties, you can take full control of its stroking or filling by using the [`strokeShader`](skshapenode/strokeshader.md) and [`fillShader`](skshapenode/fillshader.md) properties, respectively. To do that, you supply custom OpenGL ES shader code embedded within a [`SKShader`](skshader.md) object. Custom shaders allow you to create custom effects, such as dashed lines and gradient strokes, and custom fills, such as checkerboards and random patterns.
+When you want to go beyond the effects provided by a shape node’s properties, you can take full control of its stroking or filling by using the [`strokeShader`](./skshapenode/strokeshader.md) and [`fillShader`](./skshapenode/fillshader.md) properties, respectively. To do that, you supply custom OpenGL ES shader code embedded within a [`SKShader`](./skshader.md) object. Custom shaders allow you to create custom effects, such as dashed lines and gradient strokes, and custom fills, such as checkerboards and random patterns.
 
-##### Customize a Shape Nodes Stroke
+##### Customize a Shape Node’s Stroke
 
-Shape nodes have two additional stroke-related properties that extend the properties defined by [`SKShader`](skshader.md):
+Shape nodes have two additional stroke-related properties that extend the properties defined by [`SKShader`](./skshader.md):
 
 | Symbol declaration | Type | Description |
 | --- | --- | --- |
@@ -44,7 +45,7 @@ void main() {
 
 The generated shape node looks like this:
 
-![Shape node with graduated stroke](/images/com.apple.spritekit/media-2647280@2x.png)
+![Shape node with graduated stroke](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2647280@2x.png)
 
 Alternatively, by casting both symbols to integers and using the modulo operator, you get the same shape node with a shader that generates a dashed line, as shown in the following code:
 
@@ -70,11 +71,11 @@ void main() {
 
 The generated shape node looks like this:
 
-![Shape node with dashed stroke](/images/com.apple.spritekit/media-2647282@2x.png)
+![Shape node with dashed stroke](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2647282@2x.png)
 
-##### Customize a Shape Nodes Fill
+##### Customize a Shape Node’s Fill
 
-You create a custom fill for a shape node by writing shader code and embedding it within an [`SKShader`](skshader.md) object. Assigning the shader to the [`fillShader`](skshapenode/fillshader.md) property overrides the appearance that would otherwise be defined by [`fillColor`](skshapenode/fillcolor.md) and [`fillTexture`](skshapenode/filltexture.md).
+You create a custom fill for a shape node by writing shader code and embedding it within an [`SKShader`](./skshader.md) object. Assigning the shader to the [`fillShader`](./skshapenode/fillshader.md) property overrides the appearance that would otherwise be defined by [`fillColor`](./skshapenode/fillcolor.md) and [`fillTexture`](./skshapenode/filltexture.md).
 
 The following shader code demonstrates filling a shape node with a simple checkerboard texture. Inside the shader, the variables `h` and `v` would, on their own, form horizontal and vertical stripes. The exclusive or operator, `^`, creates the checkerboard pattern from those stripes.
 
@@ -113,19 +114,20 @@ void main() {
 
 The generated shape node looks like this:
 
-![Shape node with checkerboard fill](/images/com.apple.spritekit/media-2647284@2x.png)
+![Shape node with checkerboard fill](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2647284@2x.png)
 
 ## See Also
 
-- [var strokeShader: SKShader?](skshapenode/strokeshader.md)
+### Customizing Stroking or Fill Drawing
+- [var strokeShader: SKShader?](./skshapenode/strokeshader.md)
   A custom shader used to determine the color of the stroked portion of the shape node.
-- [var fillShader: SKShader?](skshapenode/fillshader.md)
+- [var fillShader: SKShader?](./skshapenode/fillshader.md)
   A custom shader used to determine the color of the filled portion of the shape node.
-- [var attributeValues: [String : SKAttributeValue]](skshapenode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./skshapenode/attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func setValue(SKAttributeValue, forAttribute: String)](skshapenode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./skshapenode/setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skshapenode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./skshapenode/value%28forattributenamed%29.md)
   The value of a shader attribute.
 
 

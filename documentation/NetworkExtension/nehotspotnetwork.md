@@ -1,7 +1,8 @@
 # NEHotspotNetwork
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about a Wi-Fi network associated with a command or a response.
 
@@ -18,6 +19,10 @@ Information about a Wi-Fi network associated with a command or a response.
 class NEHotspotNetwork
 ```
 
+```objc
+@interface NEHotspotNetwork : NSObject
+```
+
 #### Overview
 
 When the Hotspot Helper app is asked to evaluate the a network or filter the Wi-Fi scan list, it annotates the  `NEHotspotNetwork` object via the `setConfidence:` method.
@@ -25,52 +30,53 @@ When the Hotspot Helper app is asked to evaluate the a network or filter the Wi-
 ## Topics
 
 ### Network information
-- [var ssid: String](nehotspotnetwork/ssid.md)
+- [var ssid: String](./nehotspotnetwork/ssid.md)
   The SSID for the Wi-Fi network.
-- [var bssid: String](nehotspotnetwork/bssid.md)
+- [var bssid: String](./nehotspotnetwork/bssid.md)
   The BSSID for the Wi-Fi network.
-- [var signalStrength: Double](nehotspotnetwork/signalstrength.md)
+- [var signalStrength: Double](./nehotspotnetwork/signalstrength.md)
   The recent signal strength for the Wi-Fi network.
-- [var isSecure: Bool](nehotspotnetwork/issecure.md)
+- [var isSecure: Bool](./nehotspotnetwork/issecure.md)
   Indicates whether the network is secure
-- [var didAutoJoin: Bool](nehotspotnetwork/didautojoin.md)
+- [var didAutoJoin: Bool](./nehotspotnetwork/didautojoin.md)
   Indicates whether the network was joined automatically or was joined explicitly by the user.
-- [var didJustJoin: Bool](nehotspotnetwork/didjustjoin.md)
+- [var didJustJoin: Bool](./nehotspotnetwork/didjustjoin.md)
   Indicates whether the network was just joined.
-- [var isChosenHelper: Bool](nehotspotnetwork/ischosenhelper.md)
+- [var isChosenHelper: Bool](./nehotspotnetwork/ischosenhelper.md)
   Indicates whether the calling Hotspot Helper is the chosen helper for this network.
-- [var securityType: NEHotspotNetworkSecurityType](nehotspotnetwork/securitytype.md)
+- [var securityType: NEHotspotNetworkSecurityType](./nehotspotnetwork/securitytype.md)
   The type of security used by the Wi-Fi network.
-- [enum NEHotspotNetworkSecurityType](nehotspotnetworksecuritytype.md)
+- [enum NEHotspotNetworkSecurityType](./nehotspotnetworksecuritytype.md)
   An enumeration of constants that define Wi-Fi hotspot network security types.
 ### Network annotation
-- [func setConfidence(NEHotspotHelperConfidence)](nehotspotnetwork/setconfidence(_:).md)
+- [func setConfidence(NEHotspotHelperConfidence)](./nehotspotnetwork/setconfidence%28_%29.md)
   Indicate the level of confidence in being able to handle the network.
-- [enum NEHotspotHelperConfidence](nehotspothelperconfidence.md)
+- [enum NEHotspotHelperConfidence](./nehotspothelperconfidence.md)
   A type that indicates the hotspot helper’s confidence in its ability to handle the network.
-- [func setPassword(String)](nehotspotnetwork/setpassword(_:).md)
+- [func setPassword(String)](./nehotspotnetwork/setpassword%28_%29.md)
   Provide the password for a protected network.
 ### Fetching VPN network information
-- [class func fetchCurrent(completionHandler: (NEHotspotNetwork?) -> Void)](nehotspotnetwork/fetchcurrent(completionhandler:).md)
+- [class func fetchCurrent(completionHandler: (NEHotspotNetwork?) -> Void)](./nehotspotnetwork/fetchcurrent%28completionhandler%29.md)
   Fetches information about the current Wi-Fi network.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEHotspotHelperCommand](nehotspothelpercommand.md)
+### Commands
+- [class NEHotspotHelperCommand](./nehotspothelpercommand.md)
   A command for the hotspot helper to handle.
-- [class NEHotspotHelperResponse](nehotspothelperresponse.md)
+- [class NEHotspotHelperResponse](./nehotspothelperresponse.md)
   The hotspot helper’s response to a command.
 
 

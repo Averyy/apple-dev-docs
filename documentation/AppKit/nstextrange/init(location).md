@@ -1,7 +1,8 @@
 # init(location:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new text range at the location you specify.
 
@@ -14,13 +15,18 @@ Creates a new text range at the location you specify.
 convenience init(location: any NSTextLocation)
 ```
 
+```objc
+- (instancetype) initWithLocation:(id<NSTextLocation>) location;
+```
+
 ## Parameters
 
-- `location`: An [`NSTextLocation`](nstextlocation.md).
+- `location`: An [`NSTextLocation`](../nstextlocation.md).
 
 ## See Also
 
-- [init?(location: any NSTextLocation, end: (any NSTextLocation)?)](nstextrange/init(location:end:).md)
+### Creating a text range
+- [init?(location: any NSTextLocation, end: (any NSTextLocation)?)](./init%28location,end%29.md)
   Creates a new text range with the starting and ending locations you specify.
 
 

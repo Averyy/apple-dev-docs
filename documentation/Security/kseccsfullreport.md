@@ -1,7 +1,8 @@
 # kSecCSFullReport
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kSecCSFullReport: UInt32 { get }
+```
+
+```c
+kSecCSFullReport
 ```
 
 

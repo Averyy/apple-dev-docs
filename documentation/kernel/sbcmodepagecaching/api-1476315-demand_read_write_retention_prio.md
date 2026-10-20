@@ -1,14 +1,15 @@
 # DEMAND_READ_WRITE_RETENTION_PRIORITY
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt8 DEMAND_READ_WRITE_RETENTION_PRIORITY;
 ```
 

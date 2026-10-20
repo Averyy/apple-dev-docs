@@ -1,7 +1,8 @@
 # pressesBegan(_:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells this object when a physical button is first pressed.
 
@@ -18,9 +19,13 @@ Tells this object when a physical button is first pressed.
 func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 ```
 
+```objc
+- (void) pressesBegan:(NSSet<UIPress *> *) presses withEvent:(UIPressesEvent *) event;
+```
+
 ## Mentions
 
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [Handling key presses made on a physical keyboard](../handling-key-presses-made-on-a-physical-keyboard.md)
 
 #### Discussion
 
@@ -30,16 +35,17 @@ The default implementation of this method forwards the message up the responder 
 
 ## Parameters
 
-- `presses`: A set of [`UIPress`](uipress.md) instances that represent the new presses that occurred. The phase of each press is set to [`UIPress.Phase.began`](uipress/phase-swift.enum/began.md).
+- `presses`: A set of [`UIPress`](../uipress.md) instances that represent the new presses that occurred. The phase of each press is set to [`UIPress.Phase.began`](../uipress/phase-swift.enum/began.md).
 - `event`: The event to which the presses belong.
 
 ## See Also
 
-- [func pressesChanged(Set<UIPress>, with: UIPressesEvent?)](uiresponder/presseschanged(_:with:).md)
+### Responding to press events
+- [func pressesChanged(Set<UIPress>, with: UIPressesEvent?)](./presseschanged%28_,with%29.md)
   Tells this object when a value associated with a press has changed.
-- [func pressesEnded(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressesended(_:with:).md)
+- [func pressesEnded(Set<UIPress>, with: UIPressesEvent?)](./pressesended%28_,with%29.md)
   Tells the object when a button is released.
-- [func pressesCancelled(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressescancelled(_:with:).md)
+- [func pressesCancelled(Set<UIPress>, with: UIPressesEvent?)](./pressescancelled%28_,with%29.md)
   Tells this object when a system event (such as a low-memory warning) cancels a press event.
 
 

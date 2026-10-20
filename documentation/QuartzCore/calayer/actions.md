@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing layer actions.
 
@@ -19,15 +20,20 @@ A dictionary containing layer actions.
 var actions: [String : any CAAction]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDictionary<NSString *,id<CAAction>> * actions;
+```
+
 #### Discussion
 
-The default value of this property is `nil`. You can use this dictionary to store custom actions for your layer. The contents of this dictionary searched as part of the standard implementation of the [`action(forKey:)`](calayer/action(forkey:).md) method.
+The default value of this property is `nil`. You can use this dictionary to store custom actions for your layer. The contents of this dictionary searched as part of the standard implementation of the [`action(forKey:)`](./action%28forkey%29.md) method.
 
 ## See Also
 
-- [func action(forKey: String) -> (any CAAction)?](calayer/action(forkey:).md)
+### Getting the layer’s actions
+- [func action(forKey: String) -> (any CAAction)?](./action%28forkey%29.md)
   Returns the action object assigned to the specified key.
-- [class func defaultAction(forKey: String) -> (any CAAction)?](calayer/defaultaction(forkey:).md)
+- [class func defaultAction(forKey: String) -> (any CAAction)?](./defaultaction%28forkey%29.md)
   Returns the default action for the current class.
 
 

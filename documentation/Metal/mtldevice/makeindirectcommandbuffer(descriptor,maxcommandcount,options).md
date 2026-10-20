@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an indirect command buffer instance.
@@ -20,19 +21,23 @@ Creates an indirect command buffer instance.
 func makeIndirectCommandBuffer(descriptor: MTLIndirectCommandBufferDescriptor, maxCommandCount maxCount: Int, options: MTLResourceOptions = []) -> (any MTLIndirectCommandBuffer)?
 ```
 
+```objc
+- (id<MTLIndirectCommandBuffer>) newIndirectCommandBufferWithDescriptor:(MTLIndirectCommandBufferDescriptor *) descriptor maxCommandCount:(NSUInteger) maxCount options:(MTLResourceOptions) options;
+```
+
 ## Mentions
 
-- [Creating an indirect command buffer](creating-an-indirect-command-buffer.md)
+- [Creating an indirect command buffer](../creating-an-indirect-command-buffer.md)
 
 #### Return Value
 
-A new [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance if the method completed successfully; otherwise `nil`.
+A new [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) instance if the method completed successfully; otherwise `nil`.
 
 ## Parameters
 
-- `descriptor`: An [`MTLIndirectCommandBufferDescriptor`](mtlindirectcommandbufferdescriptor.md) instance.
+- `descriptor`: An [`MTLIndirectCommandBufferDescriptor`](../mtlindirectcommandbufferdescriptor.md) instance.
 - `maxCount`: The largest number of commands you can store in the buffer.
-- `options`: An [`MTLResourceOptions`](mtlresourceoptions.md) instance.
+- `options`: An [`MTLResourceOptions`](../mtlresourceoptions.md) instance.
 
 
 ---

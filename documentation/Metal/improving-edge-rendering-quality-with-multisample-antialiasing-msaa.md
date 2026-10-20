@@ -1,6 +1,8 @@
 # Improving edge-rendering quality with multisample antialiasing (MSAA)
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [ImprovingEdgeRenderingQualityWithMultisampleAntialiasingMSAA.zip](https://docs-assets.developer.apple.com/published/3bacf1535298/ImprovingEdgeRenderingQualityWithMultisampleAntialiasingMSAA.zip)
 
 Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
 
@@ -20,15 +22,15 @@ A custom resolve is essential when the built-in resolve isn’t sufficient. For 
 
 This sample shows you how to use a custom resolve with immediate-mode devices and tile-based deferred rendering devices. The immediate-mode custom resolve uses a compute kernel to process the MSAA texture, while a tile-based shader works before the rendering is completed, saving time and memory bandwidth. The following image shows the results of applying MSAA to a colored set of thin shards with one, two, four, and eight samples per pixel.
 
-![The four multisample-antialiasing images compared. From left to right: disabled, 2x, 4x, and 8x.](/images/com.apple.metal/msaa-hd-comparison.png)
+![The four multisample-antialiasing images compared. From left to right: disabled, 2x, 4x, and 8x.](https://developer.apple.com/tutorials/images/com.apple.metal/msaa-hd-comparison.png)
 
 The sample displays a user interface for you to control the code paths to use MSAA. The app customizes the options presented based on the current device. Some devices support eight samples or the tile-based resolve. You can choose between the built-in resolve or a custom resolve that replicates the built-in choice or applies a tone-mapping operator to the samples. You can choose between two, four, or eight samples per pixel and the immediate-mode path or the tile-based resolve.
 
 There’s a checkbox to toggle MSAA on and off. There’s also a list of reduced resolutions—ranging from one-sixteenth resolution to full-resolution—that makes it easier to see the difference MSAA makes. Pressing the space bar on a macOS device or tapping the display on an iOS device causes the shards to rotate.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
-To run this sample, you need Xcode 12 or later on a macOS, iOS, or tvOS device or simulator. To experience the tile-based custom resolve feature, you need a physical device that supports [`MTLGPUFamily.apple4`](mtlgpufamily/apple4.md), such as:
+To run this sample, you need Xcode 12 or later on a macOS, iOS, or tvOS device or simulator. To experience the tile-based custom resolve feature, you need a physical device that supports [`MTLGPUFamily.apple4`](./mtlgpufamily/apple4.md), such as:
 
 - A Mac with Apple silicon running macOS 11 or later
 - An iOS device with an A11 chip or later running iOS 13 or later
@@ -36,9 +38,9 @@ To run this sample, you need Xcode 12 or later on a macOS, iOS, or tvOS device o
 
 On a device with an Intel or AMD GPU, or on a simulator, this sample runs with the custom resolve in immediate-mode rendering (IMR) only.
 
-##### Check for Msaa Support
+##### Check for MSAA support
 
-GPUs on Apple devices can support a variety of sample counts but need to support at least a sample count of four. The app checks the device’s supported sample count with [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) and uses a default sample count of four.
+GPUs on Apple devices can support a variety of sample counts but need to support at least a sample count of four. The app checks the device’s supported sample count with [`supportsTextureSampleCount(_:)`](./mtldevice/supportstexturesamplecount%28_%29.md) and uses a default sample count of four.
 
 ```objective-c
 NSUInteger sampleCounts[AAPLSampleCountOptionsCount] = { 2, 4, 8 };
@@ -48,7 +50,7 @@ for (int i = 0; i < AAPLSampleCountOptionsCount; i++)
 }
 ```
 
-##### Create a Multisample Texture
+##### Create a multisample texture
 
 The app needs to create a multisample texture before rendering the scene. The following code shows that the texture declaration is the same as a normal texture.
 
@@ -56,14 +58,14 @@ The app needs to create a multisample texture before rendering the scene. The fo
 id<MTLTexture> _multisampleTexture;
 ```
 
-The app configures the texture using a texture descriptor. It uses [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md) as the texture type, and sets the [`sampleCount`](mtltexturedescriptor/samplecount.md) property with the current count selected in the UI.
+The app configures the texture using a texture descriptor. It uses [`MTLTextureType.type2DMultisample`](./mtltexturetype/type2dmultisample.md) as the texture type, and sets the [`sampleCount`](./mtltexturedescriptor/samplecount.md) property with the current count selected in the UI.
 
 ```objective-c
 _multisampleTextureDescriptor.textureType = MTLTextureType2DMultisample;
 _multisampleTextureDescriptor.sampleCount = _antialiasingSampleCount;
 ```
 
-If the app is running on a device that supports tile shaders, then the usage and storage mode enable the renderer to take advantage of memoryless storage. That means the device discards the texture when it finishes the tile-based resolve. In comparison, the immediate-mode custom resolve requires the texture to stay in memory, and the renderer uses a separate compute pass to resolve the MSAA texture. The app sets the shader-read flag to allow the compute kernel to access the texture. The following code shows how to set the [`usage`](mtltexturedescriptor/usage.md) and [`storageMode`](mtltexturedescriptor/storagemode.md) properties in the descriptor.
+If the app is running on a device that supports tile shaders, then the usage and storage mode enable the renderer to take advantage of memoryless storage. That means the device discards the texture when it finishes the tile-based resolve. In comparison, the immediate-mode custom resolve requires the texture to stay in memory, and the renderer uses a separate compute pass to resolve the MSAA texture. The app sets the shader-read flag to allow the compute kernel to access the texture. The following code shows how to set the [`usage`](./mtltexturedescriptor/usage.md) and [`storageMode`](./mtltexturedescriptor/storagemode.md) properties in the descriptor.
 
 ```objective-c
 if (_resolvingOnTileShaders)
@@ -96,7 +98,7 @@ _resolveResultTexture = [_device newTextureWithDescriptor:_resolveTextureDescrip
 _resolveResultTexture.label = @"Resolved Texture";
 ```
 
-##### Configure the Render Pipeline
+##### Configure the render pipeline
 
 The renderer ensures the render pipeline state object (PSO) has the current sample count as the texture to use as a render target. It also decides the correct fragment function depending on whether HDR is enabled or not. The app uses a separate custom resolve step if HDR is enabled, so it doesn’t apply tone-mapping. But if antialiasing is disabled, then it uses a fragment function that applies tone-mapping. If the HDR resolve option is chosen in the UI, then toggling MSAA on and off shows the result of using tone-mapping. The following code shows how the renderer customizes the render pipeline descriptor before it creates the PSO.
 
@@ -130,7 +132,7 @@ renderPassDescriptor.colorAttachments[0].texture = _multisampleTexture;
 renderPassDescriptor.colorAttachments[0].resolveTexture = shouldResolve ? _resolveResultTexture : nil;
 ```
 
-##### Use a Custom Resolve in Imr
+##### Use a custom resolve in IMR
 
 The built-in resolve averages the color samples in the texture together to create the final pixel color in the resolve texture. But developers can use a custom resolve by using a compute kernel. Devices that don’t support tile-based rendering need to use a compute kernel. The compute kernel reads the multisample texture and writes a normal texture. The following code shows a compute kernel that accumulates the samples and calculates their average.
 
@@ -175,7 +177,7 @@ computeEncoder.label = @"Resolve on Compute";
 [computeEncoder endEncoding];
 ```
 
-##### Use a Custom Resolve to Tone Map an Hdr Image
+##### Use a custom resolve to tone-map an HDR image
 
 Images with HDR need a tone-mapping operator before they’re output to a computer display. The sample shows how to use a custom resolve to prepare the image. The following code shows the simple tone-mapping operator that uses luminance to scale the input color.
 
@@ -204,7 +206,7 @@ for (uint i = 0; i < count; ++i)
 }
 ```
 
-##### Use a Tile Based Resolve on an Apple Silicon Device
+##### Use a tile-based resolve on an Apple silicon device
 
 On Apple silicon devices, this app can resolve a multisample texture using a tile-based resolve, allowing the device to perform the resolve before the device saves the tile to memory. The app gains two advantages: The multisample texture doesn’t need to be stored, saving memory space, and it doesn’t require a second render or compute pass, saving compute time and memory bandwidth.
 
@@ -285,31 +287,32 @@ hdrResolveTileKernel(imageblock<FragData> img_blk_colors,
 
 ## See Also
 
-- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
+### Render workflows
+- [Using Metal to draw a view’s contents](./using-metal-to-draw-a-views-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+- [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md)
   Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
-- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Selecting device objects for graphics rendering](./selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Customizing render pass setup](customizing-render-pass-setup.md)
+- [Customizing render pass setup](./customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Creating a custom Metal view](creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](./creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Calculating primitive visibility using depth testing](calculating-primitive-visibility-using-depth-testing.md)
+- [Calculating primitive visibility using depth testing](./calculating-primitive-visibility-using-depth-testing.md)
   Determine which pixels are visible in a scene by using a depth texture.
-- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](./encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](./implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
-- [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
+- [Loading textures and models using Metal fast resource loading](./loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
-- [Adjusting the level of detail using Metal mesh shaders](adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
+- [Adjusting the level of detail using Metal mesh shaders](./adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Creating a 3D application with hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
+- [Creating a 3D application with hydra rendering](./creating-a-3d-application-with-hydra-rendering.md)
   Build a 3D application that integrates with Hydra and USD.
-- [Culling occluded geometry using the visibility result buffer](culling-occluded-geometry-using-the-visibility-result-buffer.md)
+- [Culling occluded geometry using the visibility result buffer](./culling-occluded-geometry-using-the-visibility-result-buffer.md)
   Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
-- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
+- [Achieving smooth frame rates with a Metal display link](./achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

@@ -1,20 +1,25 @@
 # kAudioUnitManufacturer_Apple
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kAudioUnitManufacturer_Apple: UInt32 { get }
+```
+
+```c
+kAudioUnitManufacturer_Apple
 ```
 
 

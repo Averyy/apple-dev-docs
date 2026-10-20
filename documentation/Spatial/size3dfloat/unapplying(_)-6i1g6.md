@@ -1,7 +1,8 @@
 # unapplying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unapplies a projective transform.
 

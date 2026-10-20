@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives events from the text interaction.
 
@@ -17,11 +18,16 @@ The object that receives events from the text interaction.
 weak var delegate: (any UITextInteractionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<UITextInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [var textInput: (any UIResponder & UITextInput)?](uitextinteraction/textinput.md)
+### Handling text input and interaction events
+- [var textInput: (any UIResponder & UITextInput)?](./textinput.md)
   The object that interacts with the text input system.
-- [protocol UITextInteractionDelegate](uitextinteractiondelegate.md)
+- [protocol UITextInteractionDelegate](../uitextinteractiondelegate.md)
   An interface that an object implements to receive information about text interaction events.
 
 

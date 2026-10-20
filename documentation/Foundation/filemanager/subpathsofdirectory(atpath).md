@@ -1,7 +1,8 @@
 # subpathsOfDirectory(atPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a deep enumeration of the specified directory and returns the paths of all of the contained subdirectories.
 
@@ -20,6 +21,10 @@ Performs a deep enumeration of the specified directory and returns the paths of 
 func subpathsOfDirectory(atPath path: String) throws -> [String]
 ```
 
+```objc
+- (NSArray<NSString *> *) subpathsOfDirectoryAtPath:(NSString *) path error:(NSError **) error;
+```
+
 #### Return Value
 
 An array of strings, each containing the path of an item in the directory specified by `path`. When using Objective-C, returns `nil` if an error occurred.
@@ -28,9 +33,11 @@ An array of strings, each containing the path of an item in the directory specif
 
 This method recurses the specified directory and its subdirectories. The method skips the “`.`” and “`..`” directories at each level of the recursion.
 
-Because this method recurses the directory’s contents, you might not want to use it in performance-critical code. Instead, consider using the [`enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:`](nsfilemanager/enumeratoraturl:includingpropertiesforkeys:options:errorhandler:.md) or [`enumerator(atPath:)`](filemanager/enumerator(atpath:).md) method to enumerate the directory contents yourself. Doing so gives you more control over the retrieval of items and more opportunities to complete the enumeration or perform other tasks at the same time.
+Because this method recurses the directory’s contents, you might not want to use it in performance-critical code. Instead, consider using the [`enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:`](../nsfilemanager/enumeratoraturl_includingpropertiesforkeys_options_errorhandler_.md) or [`enumerator(atPath:)`](./enumerator%28atpath%29.md) method to enumerate the directory contents yourself. Doing so gives you more control over the retrieval of items and more opportunities to complete the enumeration or perform other tasks at the same time.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -38,21 +45,22 @@ Because this method recurses the directory’s contents, you might not want to u
 
 ## See Also
 
-- [func contentsOfDirectory(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions) throws -> [URL]](filemanager/contentsofdirectory(at:includingpropertiesforkeys:options:).md)
+### Discovering directory contents
+- [func contentsOfDirectory(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions) throws -> [URL]](./contentsofdirectory%28at,includingpropertiesforkeys,options%29.md)
   Performs a shallow search of the specified directory and returns URLs for the contained items.
-- [func contentsOfDirectory(atPath: String) throws -> [String]](filemanager/contentsofdirectory(atpath:).md)
+- [func contentsOfDirectory(atPath: String) throws -> [String]](./contentsofdirectory%28atpath%29.md)
   Performs a shallow search of the specified directory and returns the paths of any contained items.
-- [func enumerator(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions, errorHandler: ((URL, any Error) -> Bool)?) -> FileManager.DirectoryEnumerator?](filemanager/enumerator(at:includingpropertiesforkeys:options:errorhandler:).md)
+- [func enumerator(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions, errorHandler: ((URL, any Error) -> Bool)?) -> FileManager.DirectoryEnumerator?](./enumerator%28at,includingpropertiesforkeys,options,errorhandler%29.md)
   Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified URL.
-- [func enumerator(atPath: String) -> FileManager.DirectoryEnumerator?](filemanager/enumerator(atpath:).md)
+- [func enumerator(atPath: String) -> FileManager.DirectoryEnumerator?](./enumerator%28atpath%29.md)
   Returns a directory enumerator object that can be used to perform a deep enumeration of the directory at the specified path.
-- [FileManager.DirectoryEnumerator](filemanager/directoryenumerator.md)
+- [FileManager.DirectoryEnumerator](./directoryenumerator.md)
   An object that enumerates the contents of a directory.
-- [func mountedVolumeURLs(includingResourceValuesForKeys: [URLResourceKey]?, options: FileManager.VolumeEnumerationOptions) -> [URL]?](filemanager/mountedvolumeurls(includingresourcevaluesforkeys:options:).md)
+- [func mountedVolumeURLs(includingResourceValuesForKeys: [URLResourceKey]?, options: FileManager.VolumeEnumerationOptions) -> [URL]?](./mountedvolumeurls%28includingresourcevaluesforkeys,options%29.md)
   Returns an array of URLs that identify the mounted volumes available on the device.
-- [FileManager.VolumeEnumerationOptions](filemanager/volumeenumerationoptions.md)
-  Options for enumerating mounted volumes with the [`mountedVolumeURLs(includingResourceValuesForKeys:options:)`](filemanager/mountedvolumeurls(includingresourcevaluesforkeys:options:).md) method.
-- [func subpaths(atPath: String) -> [String]?](filemanager/subpaths(atpath:).md)
+- [FileManager.VolumeEnumerationOptions](./volumeenumerationoptions.md)
+  Options for enumerating mounted volumes with the [`mountedVolumeURLs(includingResourceValuesForKeys:options:)`](./mountedvolumeurls%28includingresourcevaluesforkeys,options%29.md) method.
+- [func subpaths(atPath: String) -> [String]?](./subpaths%28atpath%29.md)
   Returns an array of strings identifying the paths for all items in the specified directory.
 
 

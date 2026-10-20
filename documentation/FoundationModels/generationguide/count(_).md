@@ -1,7 +1,8 @@
 # count(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enforces that the array has exactly a certain number of elements.
 
@@ -17,6 +18,12 @@ Enforces that the array has exactly a certain number of elements.
 
 ```swift
 static func count<Element>(_ count: Int) -> GenerationGuide<[Element]> where Value == [Element]
+```
+
+**Other overloads**:
+
+```swift
+static func count<Element>(_ range: ClosedRange<Int>) -> GenerationGuide<[Element]> where Value == [Element]
 ```
 
 #### Discussion

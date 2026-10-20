@@ -1,7 +1,8 @@
 # NavigationMeshResource.PathNode.Category.offMeshConnection
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A point that is part of an off-mesh connection.
 
@@ -21,7 +22,8 @@ case offMeshConnection
 
 ## See Also
 
-- [NavigationMeshResource.PathNode.Category.meshPoint](navigationmeshresource/pathnode/category-swift.enum/meshpoint.md)
+### Identifying node categories
+- [NavigationMeshResource.PathNode.Category.meshPoint](./meshpoint.md)
   A regular point on the Navigation Mesh.
 
 

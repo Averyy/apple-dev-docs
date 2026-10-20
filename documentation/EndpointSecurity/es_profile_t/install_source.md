@@ -1,16 +1,21 @@
 # install_source
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var install_source: es_profile_source_t
+```
+
+```c
+es_profile_source_t install_source;
 ```
 
 

@@ -1,7 +1,8 @@
 # Get Merchant Details
 
 **Framework**: Apple Pay Web Merchant Registration API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve information about a registered merchant’s current state by using the merchant’s internal merchant identifier.
 
@@ -10,7 +11,7 @@ Retrieve information about a registered merchant’s current state by using the 
 
 #### Discussion
 
-Get information about a merchant you previously registered. You provide the merchant’s unique identifier (`partnerInternalMerchantIdentifier`). A succesful response contains a [`MerchantDetails`](merchantdetails.md) object in the response body.
+Get information about a merchant you previously registered. You provide the merchant’s unique identifier (`partnerInternalMerchantIdentifier`). A succesful response contains a [`MerchantDetails`](./merchantdetails.md) object in the response body.
 
 ## Endpoint
 
@@ -18,11 +19,24 @@ Get information about a merchant you previously registered. You provide the merc
 
 ## Parameters
 
-- `partnerInternalMerchantIdentifier` (string) *(required)*: A unique identifier for the merchant that the e-commerce partner created and used in the [`Register Merchant`](register-merchant.md) request.
+### Path Parameters
+
+- `partnerInternalMerchantIdentifier` (string) *(required)*: A unique identifier for the merchant that the e-commerce partner created and used in the [`Register Merchant`](./register-merchant.md) request.
+
+  **Maximum Length**: `1024`; **Allowed Values**: `/a-zA-Z0-9~-_+&@$!|,.;/`
+
+## Responses
+
+- `200` OK (`MerchantDetails`, `application/json`): Success. The response contains an object with information for the registered merchant.
+- `400` Bad Request: The request is malformed or invalid, or the merchant isn’t registered.
+- `401` Unauthorized: The e-commerce platform doesn’t have permission to call this API.
+- `417` Expectation Failed: The e-commerce platform isn’t registered with Apple Developer.
+- `500` Internal Server Error: An internal server error occurred.
 
 ## See Also
 
-- [object MerchantDetails](merchantdetails.md)
+### Web Merchant Details
+- [object MerchantDetails](./merchantdetails.md)
   Detailed information for a single registered merchant.
 
 

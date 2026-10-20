@@ -1,7 +1,8 @@
 # longEraSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of longer-named eras in this calendar, localized to the Calendar’s `locale`.
 
@@ -28,7 +29,8 @@ For example, for English in the Gregorian calendar, returns `["Before Christ", "
 
 ## See Also
 
-- [var eraSymbols: [String]](calendar/erasymbols.md)
+### Getting Era Symbols
+- [var eraSymbols: [String]](./erasymbols.md)
   A list of eras in this calendar, localized to the Calendar’s `locale`.
 
 

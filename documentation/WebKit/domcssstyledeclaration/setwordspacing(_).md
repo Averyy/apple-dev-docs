@@ -1,7 +1,8 @@
 # setWordSpacing(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setWordSpacing(_ wordSpacing: String!)
+```
+
+```objc
+- (void) setWordSpacing:(NSString *) wordSpacing;
 ```
 
 

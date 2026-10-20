@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new, empty collection.
 

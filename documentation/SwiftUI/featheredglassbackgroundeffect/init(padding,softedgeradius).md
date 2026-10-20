@@ -1,7 +1,8 @@
 # init(padding:softEdgeRadius:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feathered glassBackground effect.
 

@@ -1,6 +1,7 @@
 # Player
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 An object that represents a player associated with a match request.
 
@@ -14,9 +15,10 @@ Use a `Player` object in the expression of a matchmaking rule to access informat
 
 ## See Also
 
-- [Request](request.md)
+### Objects
+- [Request](./request.md)
   An object that represents a match request in a queue.
-- [Team](team.md)
+- [Team](./team.md)
   A team that you add to a rule set.
 
 

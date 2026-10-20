@@ -1,7 +1,8 @@
 # Data.Indices
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type used to indicate a range of positions in a data’s buffer.
 

@@ -1,7 +1,8 @@
 # HeartRateZoneAlert
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An alert for a heart rate zone.
 
@@ -21,28 +22,29 @@ struct HeartRateZoneAlert
 ## Topics
 
 ### Creating new heart rate zone alerts
-- [init(zone: Int)](heartratezonealert/init(zone:).md)
+- [init(zone: Int)](./heartratezonealert/init%28zone%29.md)
   Creates a new alert for the target heart rate zone.
 ### Accessing the alert data
-- [var zone: Int](heartratezonealert/zone.md)
+- [var zone: Int](./heartratezonealert/zone.md)
   The target heart rate zone.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [WorkoutAlert](workoutalert.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [WorkoutAlert](./workoutalert.md)
 
 ## See Also
 
-- [static func heartRate(ClosedRange<Double>, unit: UnitFrequency) -> Self](workoutalert/heartrate(_:unit:).md)
+### Creating heart rate alerts
+- [static func heartRate(ClosedRange<Double>, unit: UnitFrequency) -> Self](./workoutalert/heartrate%28_,unit%29.md)
   Creates a new heart rate alert for the target range.
-- [struct HeartRateRangeAlert](heartraterangealert.md)
+- [struct HeartRateRangeAlert](./heartraterangealert.md)
   An alert for a range of heart rates.
-- [static func heartRate(zone: Int) -> Self](workoutalert/heartrate(zone:).md)
+- [static func heartRate(zone: Int) -> Self](./workoutalert/heartrate%28zone%29.md)
   Creates a new alert for the specified heart rate zone.
 
 

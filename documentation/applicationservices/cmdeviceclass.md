@@ -1,7 +1,8 @@
 # CMDeviceClass
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Define constants to represent a variety of input and output devices.
 
@@ -14,14 +15,18 @@ Define constants to represent a variety of input and output devices.
 typealias CMDeviceClass = OSType
 ```
 
+```c
+typedef OSType CMDeviceClass;
+```
+
 ## Topics
 
 ### Constants
-- [var cmScannerDeviceClass: Int](cmscannerdeviceclass.md)
-- [var cmCameraDeviceClass: Int](cmcameradeviceclass.md)
-- [var cmDisplayDeviceClass: Int](cmdisplaydeviceclass.md)
-- [var cmPrinterDeviceClass: Int](cmprinterdeviceclass.md)
-- [var cmProofDeviceClass: Int](cmproofdeviceclass.md)
+- [var cmScannerDeviceClass: Int](./cmscannerdeviceclass.md)
+- [var cmCameraDeviceClass: Int](./cmcameradeviceclass.md)
+- [var cmDisplayDeviceClass: Int](./cmdisplaydeviceclass.md)
+- [var cmPrinterDeviceClass: Int](./cmprinterdeviceclass.md)
+- [var cmProofDeviceClass: Int](./cmproofdeviceclass.md)
 
 
 ---

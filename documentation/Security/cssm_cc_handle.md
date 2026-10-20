@@ -1,7 +1,8 @@
 # CSSM_CC_HANDLE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_CC_HANDLE = CSSM_LONG_HANDLE
+```
+
+```c
+typedef CSSM_LONG_HANDLE CSSM_CC_HANDLE;
 ```
 
 

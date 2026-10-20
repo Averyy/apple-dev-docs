@@ -1,7 +1,8 @@
 # PermissionResult
 
 **Framework**: PermissionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents the outcome of the permission flow.
 
@@ -21,18 +22,18 @@ enum PermissionResult
 ## Topics
 
 ### Enumeration Cases
-- [PermissionResult.approveInPerson(approved:)](permissionresult/approveinperson(approved:).md)
+- [PermissionResult.approveInPerson(approved:)](./permissionresult/approveinperson%28approved%29.md)
   The user tapped “Approve in Person” and finalized an answer choice.
-- [PermissionResult.askToApprove(didSend:)](permissionresult/asktoapprove(didsend:).md)
+- [PermissionResult.askToApprove(didSend:)](./permissionresult/asktoapprove%28didsend%29.md)
   The user tapped “Ask to Approve” and sent the message.
-- [PermissionResult.cancel](permissionresult/cancel.md)
+- [PermissionResult.cancel](./permissionresult/cancel.md)
   The user cancelled the flow.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

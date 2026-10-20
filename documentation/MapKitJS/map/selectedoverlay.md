@@ -1,7 +1,8 @@
 # selectedOverlay
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selected overlay on the map.
 
@@ -10,7 +11,7 @@ The selected overlay on the map.
 
 ## Declaration
 
-```swift
+```
 get selectedOverlay(): Overlay | null;
 set selectedOverlay(overlay: Overlay | null);
 ```
@@ -21,23 +22,24 @@ To deselect any selected overlay, set this property to `null`.
 
 To select an overlay that’s already part of the map, set this property to the desired overlay.
 
-When MapKit JS removes the selected overlay from the map (as an effect of [`removeOverlay()`](map/removeoverlay.md), [`removeOverlays()`](map/removeoverlays.md), or setting a new set of overlays with the [`overlays`](map/overlays.md) property), MapKit JS deselects the overlay before removing it.
+When MapKit JS removes the selected overlay from the map (as an effect of [`removeOverlay()`](./removeoverlay.md), [`removeOverlays()`](./removeoverlays.md), or setting a new set of overlays with the [`overlays`](./overlays.md) property), MapKit JS deselects the overlay before removing it.
 
 ## See Also
 
-- [overlays](map/overlays.md)
+### Adding and removing overlays
+- [overlays](./overlays.md)
   An array of all of the map’s overlays.
-- [overlaysAtPoint(point)](map/overlaysatpoint.md)
+- [overlaysAtPoint(point)](./overlaysatpoint.md)
   Returns an array of overlays at a given point on the webpage.
-- [addOverlay(overlay)](map/addoverlay.md)
+- [addOverlay(overlay)](./addoverlay.md)
   Adds an overlay to the map.
-- [addOverlays(overlays)](map/addoverlays.md)
+- [addOverlays(overlays)](./addoverlays.md)
   Adds multiple overlays to the map.
-- [removeOverlay(overlay)](map/removeoverlay.md)
+- [removeOverlay(overlay)](./removeoverlay.md)
   Removes an overlay from the map.
-- [removeOverlays(overlays)](map/removeoverlays.md)
+- [removeOverlays(overlays)](./removeoverlays.md)
   Removes multiple overlays from the map.
-- [topOverlayAtPoint(point)](map/topoverlayatpoint.md)
+- [topOverlayAtPoint(point)](./topoverlayatpoint.md)
   Returns the topmost overlay at a given point on the webpage.
 
 

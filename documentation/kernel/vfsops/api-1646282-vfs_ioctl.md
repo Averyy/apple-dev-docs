@@ -1,14 +1,15 @@
 # vfs_ioctl
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 int (*vfs_ioctl)(struct mount *mp, u_long command, caddr_t data, int flags, vfs_context_t context);
 ```
 

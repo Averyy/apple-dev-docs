@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the results of mapping the given closure over the sequence’s elements.
 
@@ -11,7 +12,7 @@ Returns an array containing the results of mapping the given closure over the se
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

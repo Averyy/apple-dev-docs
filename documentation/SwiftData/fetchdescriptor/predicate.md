@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The logical condition that determines whether the fetch includes a specific model in its results.
 
@@ -25,17 +26,18 @@ var predicate: Predicate<T>?
 
 Use this property to replace or remove the fetch descriptor’s predicate. If the value is `nil`, any fetch using the descriptor will return all models of the associated type.
 
-The default value is the predicate you specify when calling [`init(predicate:sortBy:)`](fetchdescriptor/init(predicate:sortby:).md).
+The default value is the predicate you specify when calling [`init(predicate:sortBy:)`](./init%28predicate,sortby%29.md).
 
 ## See Also
 
-- [var sortBy: [SortDescriptor<T>]](fetchdescriptor/sortby.md)
+### Constraining the fetch
+- [var sortBy: [SortDescriptor<T>]](./sortby.md)
   The sort descriptors that tell the fetch how to order its results.
-- [var fetchLimit: Int?](fetchdescriptor/fetchlimit.md)
+- [var fetchLimit: Int?](./fetchlimit.md)
   The maximum number of models the fetch can return.
-- [var fetchOffset: Int?](fetchdescriptor/fetchoffset.md)
+- [var fetchOffset: Int?](./fetchoffset.md)
   The offset of the first matching model to fetch.
-- [var includePendingChanges: Bool](fetchdescriptor/includependingchanges.md)
+- [var includePendingChanges: Bool](./includependingchanges.md)
   A Boolean value that indicates whether, when the fetch runs, it matches against currently unsaved changes in the model context.
 
 

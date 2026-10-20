@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The error code within the given domain.
@@ -20,6 +21,13 @@ The error code within the given domain.
 ```swift
 var errorCode: Int { get }
 ```
+
+## Default Implementations
+
+### CustomNSError Implementations
+- [var errorCode: Int](./errorcode-2opgi.md)
+  The error code within the given domain.
+- [var errorCode: Int](./errorcode-839wu.md)
 
 
 ---

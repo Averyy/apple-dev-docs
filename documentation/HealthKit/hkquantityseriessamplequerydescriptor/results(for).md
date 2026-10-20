@@ -1,7 +1,8 @@
 # results(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs a one-shot query that returns an asynchronous sequence of matching series samples.
 
@@ -10,7 +11,7 @@ Runs a one-shot query that returns an asynchronous sequence of matching series s
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -25,9 +26,10 @@ func results(for healthStore: HKHealthStore) -> HKQuantitySeriesSampleQueryDescr
 
 ## See Also
 
-- [HKQuantitySeriesSampleQueryDescriptor.Results](hkquantityseriessamplequerydescriptor/results.md)
+### Running Queries
+- [HKQuantitySeriesSampleQueryDescriptor.Results](./results.md)
   An asynchronous sequence that emits data from the quantity series query.
-- [HKQuantitySeriesSampleQueryDescriptor.Result](hkquantityseriessamplequerydescriptor/result.md)
+- [HKQuantitySeriesSampleQueryDescriptor.Result](./result.md)
   A set of results from a quantity series sample descriptor.
 
 

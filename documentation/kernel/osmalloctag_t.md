@@ -1,16 +1,17 @@
 # OSMallocTag_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
-See [`OSMallocTag`](osmalloctag.md).
+See [`OSMallocTag`](./osmalloctag.md).
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __OSMallocTag__ *OSMallocTag_t;
 ```
 

@@ -1,7 +1,8 @@
 # activityMoveMode
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A characteristic identifier for the user’s activity mode.
 
@@ -19,17 +20,22 @@ A characteristic identifier for the user’s activity mode.
 static let activityMoveMode: HKCharacteristicTypeIdentifier
 ```
 
+```c
+extern HKCharacteristicTypeIdentifier const HKCharacteristicTypeIdentifierActivityMoveMode;
+```
+
 ## See Also
 
-- [static let biologicalSex: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/biologicalsex.md)
+### Characteristic identifiers
+- [static let biologicalSex: HKCharacteristicTypeIdentifier](./biologicalsex.md)
   A characteristic type identifier for the user’s sex.
-- [static let bloodType: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/bloodtype.md)
+- [static let bloodType: HKCharacteristicTypeIdentifier](./bloodtype.md)
   A characteristic type identifier for the user’s blood type.
-- [static let dateOfBirth: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/dateofbirth.md)
+- [static let dateOfBirth: HKCharacteristicTypeIdentifier](./dateofbirth.md)
   A characteristic type identifier for the user’s date of birth.
-- [static let fitzpatrickSkinType: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/fitzpatrickskintype.md)
+- [static let fitzpatrickSkinType: HKCharacteristicTypeIdentifier](./fitzpatrickskintype.md)
   A characteristic type identifier for the user’s skin type.
-- [static let wheelchairUse: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/wheelchairuse.md)
+- [static let wheelchairUse: HKCharacteristicTypeIdentifier](./wheelchairuse.md)
   A characteristic identifier for the user’s use of a wheelchair.
 
 

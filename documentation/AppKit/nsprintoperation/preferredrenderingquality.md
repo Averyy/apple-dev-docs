@@ -1,7 +1,8 @@
 # preferredRenderingQuality
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The printing quality.
 
@@ -14,9 +15,13 @@ The printing quality.
 var preferredRenderingQuality: NSPrintOperation.RenderingQuality { get }
 ```
 
+```objc
+@property (readonly) NSPrintRenderingQuality preferredRenderingQuality;
+```
+
 #### Return Value
 
-The preferred printing quality. See [`NSPrintOperation.RenderingQuality`](nsprintoperation/renderingquality.md) for the possible values.
+The preferred printing quality. See [`NSPrintOperation.RenderingQuality`](./renderingquality.md) for the possible values.
 
 #### Discussion
 
@@ -40,7 +45,8 @@ The following is an example use of this method:
 
 ## See Also
 
-- [NSPrintOperation.RenderingQuality](nsprintoperation/renderingquality.md)
+### Getting the Printing Quality
+- [NSPrintOperation.RenderingQuality](./renderingquality.md)
   Constants that specify the print quality in use.
 
 

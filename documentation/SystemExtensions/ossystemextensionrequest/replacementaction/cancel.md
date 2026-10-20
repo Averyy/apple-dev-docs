@@ -1,7 +1,8 @@
 # OSSystemExtensionRequest.ReplacementAction.cancel
 
 **Framework**: System Extensions  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An action that tells the manager to cancel replacement of a system extension.
 
@@ -14,9 +15,14 @@ An action that tells the manager to cancel replacement of a system extension.
 case cancel
 ```
 
+```c
+OSSystemExtensionReplacementActionCancel
+```
+
 ## See Also
 
-- [OSSystemExtensionRequest.ReplacementAction.replace](ossystemextensionrequest/replacementaction/replace.md)
+### Replacement Actions
+- [OSSystemExtensionRequest.ReplacementAction.replace](./replace.md)
   An action that tells the manager to replace an existing system extension.
 
 

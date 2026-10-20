@@ -1,7 +1,8 @@
 # interval
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interval in which to find and emit the most recent element.
 
@@ -22,11 +23,12 @@ let interval: Context.SchedulerTimeType.Stride
 
 ## See Also
 
-- [let upstream: Upstream](publishers/throttle/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let scheduler: Context](publishers/throttle/scheduler.md)
+- [let scheduler: Context](./scheduler.md)
   The scheduler on which to publish elements.
-- [let latest: Bool](publishers/throttle/latest.md)
+- [let latest: Bool](./latest.md)
   A Boolean value indicating whether to publish the most recent element.
 
 

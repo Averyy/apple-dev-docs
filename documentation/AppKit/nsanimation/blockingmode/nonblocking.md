@@ -1,12 +1,13 @@
 # NSAnimation.BlockingMode.nonblocking
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Requests the animation to run in a standard or specified run-loop mode that allows user input.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Requests the animation to run in a standard or specified run-loop mode that allo
 case nonblocking
 ```
 
+```c
+NSAnimationNonblocking
+```
+
 ## See Also
 
-- [NSAnimation.BlockingMode.blocking](nsanimation/blockingmode/blocking.md)
+### Constants
+- [NSAnimation.BlockingMode.blocking](./blocking.md)
   Requests the animation to run in the main thread in a custom run-loop mode that blocks user input.
-- [NSAnimation.BlockingMode.nonblockingThreaded](nsanimation/blockingmode/nonblockingthreaded.md)
+- [NSAnimation.BlockingMode.nonblockingThreaded](./nonblockingthreaded.md)
   Requests the animation to run in a separate thread that is spawned by the `NSAnimation` object.
 
 

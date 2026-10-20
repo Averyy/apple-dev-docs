@@ -966,14 +966,12 @@
       "hash": "51366b7ea2a8ed0d93d23603521638854109e24c23edc66638d6dbf713be22ed"
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledocumentreadererror/!=(_:_:)": {
-      "etag": "W/\"601427df9b74ca3dc72fb2723064aad2\"",
       "file_path": "documentation/ProximityReader/mobiledocumentreadererror/noteq(_,_).md",
-      "hash": "2e5a7fc19f0535f61b6f7da0a0269fff7b0c1f47a825e31061ef7fbf72c9d275"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledocumentreadererror/==(_:_:)": {
-      "etag": "W/\"8fe77c8cd3a800a6108d7d4bd140584c\"",
       "file_path": "documentation/ProximityReader/mobiledocumentreadererror/eqeq(_,_).md",
-      "hash": "77febcb385ecfe7fa192e354afeec2b681fad6f9bc4f4df961757fa9e0056d5e"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledocumentreadererror/cancelled": {
       "etag": "\"2fc3-65d55e945c008-df\"",
@@ -1461,14 +1459,12 @@
       "hash": "f0704a48e027bbc6252796c61f22cd9971f67c6d4a5f070b15d52442cef08984"
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/!=(_:_:)": {
-      "etag": "W/\"4e54a5792dda687a48e481f583de83b3\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/noteq(_,_).md",
-      "hash": "f75b1be594af8478e3de9e4a65ad025b201ca3c4f502d116bb9aab1cd4795eef"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/==(_:_:)": {
-      "etag": "W/\"825c704e933aa288896dc983974c14df\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/eqeq(_,_).md",
-      "hash": "5ebbe5f472fc75c68583ea57279babce4b54c0464e04206a50876555fd7c342d"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/black": {
       "etag": "\"1bac-65d55e938110e-df\"",
@@ -1531,14 +1527,12 @@
       "hash": "42993796d7ee296b50572e08aaf70167ea0584d3c157ef094bb76eaa935b3c30"
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/!=(_:_:)": {
-      "etag": "W/\"c2b4309481ea4d4a24d7b95d9713bfb6\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/noteq(_,_).md",
-      "hash": "6ec37cd6f5f70949d4752e52c854d6a9d2aef9e573c8c4580a401f378ec1af5c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/==(_:_:)": {
-      "etag": "W/\"048ce992fdd39c4a8491cd9d8cdccc4f\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/eqeq(_,_).md",
-      "hash": "8e3e817c84eff20c1b489c328749e4d879ed435974bd60a02e20706090fb3417"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/auburn": {
       "etag": "\"1bc5-65d55e938110e-df\"",
@@ -1666,14 +1660,12 @@
       "hash": "dc6f9c2e01184e7729a9273bdd288533ee3c9c3bda92d2807231b572f761a4ee"
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/!=(_:_:)": {
-      "etag": "W/\"40193afd464a9e6db96301e0826421eb\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/noteq(_,_).md",
-      "hash": "626187dc79b7b5f476f57eb760cd132806d86ec43c2265ea8dd0b1f09e94f4c3"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/==(_:_:)": {
-      "etag": "W/\"a3733722fa7cb35f729e1eeae70e1691\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/eqeq(_,_).md",
-      "hash": "af83ea5346b02f6619cde12a9562f0a0191cc4b8e7c79ceea395e5bee0a5226e"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/female": {
       "etag": "\"1c6d-65d55e938110e-df\"",
@@ -2166,14 +2158,12 @@
       "hash": "dc7d86310300daa376622206e5ebb463f5fefa590f00f04cc770ea0cb1137c77"
     },
     "https://developer.apple.com/documentation/proximityreader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/!=(_:_:)": {
-      "etag": "W/\"d0e0fa83ab48a6e33953e8b3b8e6e521\"",
       "file_path": "documentation/ProximityReader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/noteq(_,_).md",
-      "hash": "28e932ba4595d002cb2e292506f3b752b17df82d363a22068c9601eb32af28cb"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/==(_:_:)": {
-      "etag": "W/\"8689e38edd865709e5fbf25a9105293f\"",
       "file_path": "documentation/ProximityReader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/eqeq(_,_).md",
-      "hash": "a314c3299d57b805a00e8867256b303cdb74bf7ace86b5f15b86235f0c0c08b4"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/female": {
       "etag": "\"1c61-65d55e929d3c6-df\"",
@@ -2651,14 +2641,12 @@
       "hash": "f3877d3c721a7e089b55d18b3374f0d9d042fc31c4cb55f106bc3ab2e8853b8b"
     },
     "https://developer.apple.com/documentation/proximityreader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/!=(_:_:)": {
-      "etag": "W/\"96b2821918dc5868f1e37c25be5b874b\"",
       "file_path": "documentation/ProximityReader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/noteq(_,_).md",
-      "hash": "8031ef2d2d64584dc56697814a8d705d7059a65ceadc04a64c813cde2b38e43e"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/==(_:_:)": {
-      "etag": "W/\"46b536642b970896f55e3894e0ba3e87\"",
       "file_path": "documentation/ProximityReader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/eqeq(_,_).md",
-      "hash": "5a67fbb9fac89fc885897c3106b5fcc8786333109c5b534b24383d6e9071b49c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/female": {
       "etag": "\"1b01-65d55e93d1543-df\"",
@@ -3616,14 +3604,12 @@
       "hash": "8ec6029801f2acf0c21dbfffa90c43cd234009dd99ec2b60e6846aa7a2969411"
     },
     "https://developer.apple.com/documentation/proximityreader/paymentcardreadresult/cardeffectivestate-swift.enum/!=(_:_:)": {
-      "etag": "W/\"077d65d3e145bbfb011f6ffa8f34c593\"",
       "file_path": "documentation/ProximityReader/paymentcardreadresult/cardeffectivestate-swift.enum/noteq(_,_).md",
-      "hash": "5a79791e5891f51c1b650f14da4233aa586ea08ba2fd1a0d7bde1109e07209d3"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/paymentcardreadresult/cardeffectivestate-swift.enum/==(_:_:)": {
-      "etag": "W/\"6e3799cf0d967a443ac1e1306705c709\"",
       "file_path": "documentation/ProximityReader/paymentcardreadresult/cardeffectivestate-swift.enum/eqeq(_,_).md",
-      "hash": "2db84daaf11a5211a437780fa19e81d1947ae8539396c9c2286f7adad6577261"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/paymentcardreadresult/cardeffectivestate-swift.enum/active": {
       "etag": "\"11f5-65d55e92c9b3b-df\"",
@@ -3656,14 +3642,12 @@
       "hash": "b740aa20074438e6d35cccb52cfd476a1e219690ac6a68114ceac0fa36e2629f"
     },
     "https://developer.apple.com/documentation/proximityreader/paymentcardreadresult/cardexpirationstate-swift.enum/!=(_:_:)": {
-      "etag": "W/\"cc86fff55cf95bc45b1d1f7457aa631b\"",
       "file_path": "documentation/ProximityReader/paymentcardreadresult/cardexpirationstate-swift.enum/noteq(_,_).md",
-      "hash": "665930a3db4395d5630c3aeb6d4842488878035afd8fc1945fd854e1fb6ab126"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/paymentcardreadresult/cardexpirationstate-swift.enum/==(_:_:)": {
-      "etag": "W/\"5c44aea52f6b3644a3f8ce7d2cbb9e5e\"",
       "file_path": "documentation/ProximityReader/paymentcardreadresult/cardexpirationstate-swift.enum/eqeq(_,_).md",
-      "hash": "338fe1658675a08517b879d0aece1fb23d8cd389ded858009f61a2ba0b8da8c6"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/paymentcardreadresult/cardexpirationstate-swift.enum/expired": {
       "etag": "\"1219-65d55e92c9b3b-df\"",
@@ -3941,14 +3925,12 @@
       "hash": "6d57e10d106ada93cdd0af945d9bcedbd105218b79505adb94d4f519caabba79"
     },
     "https://developer.apple.com/documentation/proximityreader/proximityreaderdiscovery/contenterror/!=(_:_:)": {
-      "etag": "W/\"7e3c1d09292bc9b535d989aded83b339\"",
       "file_path": "documentation/ProximityReader/proximityreaderdiscovery/contenterror/noteq(_,_).md",
-      "hash": "efe581e22caf2cf42b618362da27e1975c2a38cffd2d0be4cd9872c47b0bc4cb"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/proximityreaderdiscovery/contenterror/==(_:_:)": {
-      "etag": "W/\"137d30d64090e85e79ef24c20d623690\"",
       "file_path": "documentation/ProximityReader/proximityreaderdiscovery/contenterror/eqeq(_,_).md",
-      "hash": "12b6b6161a7c5cbbe4894a30dda3d074fbf06b43123bd51c445f5390dd5fa83e"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/proximityreader/proximityreaderdiscovery/contenterror/contentdisplayfailed": {
       "etag": "\"23b5-65d55e945c008-df\"",
@@ -5236,14 +5218,12 @@
       "hash": "51366b7ea2a8ed0d93d23603521638854109e24c23edc66638d6dbf713be22ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledocumentreadererror/!=(_:_:).json": {
-      "etag": "W/\"601427df9b74ca3dc72fb2723064aad2\"",
       "file_path": "documentation/ProximityReader/mobiledocumentreadererror/noteq(_,_).md",
-      "hash": "2e5a7fc19f0535f61b6f7da0a0269fff7b0c1f47a825e31061ef7fbf72c9d275"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledocumentreadererror/==(_:_:).json": {
-      "etag": "W/\"8fe77c8cd3a800a6108d7d4bd140584c\"",
       "file_path": "documentation/ProximityReader/mobiledocumentreadererror/eqeq(_,_).md",
-      "hash": "77febcb385ecfe7fa192e354afeec2b681fad6f9bc4f4df961757fa9e0056d5e"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledocumentreadererror/cancelled.json": {
       "etag": "\"2fc3-65d55e945c008-df\"",
@@ -5731,14 +5711,12 @@
       "hash": "f0704a48e027bbc6252796c61f22cd9971f67c6d4a5f070b15d52442cef08984"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"4e54a5792dda687a48e481f583de83b3\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/noteq(_,_).md",
-      "hash": "f75b1be594af8478e3de9e4a65ad025b201ca3c4f502d116bb9aab1cd4795eef"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/==(_:_:).json": {
-      "etag": "W/\"825c704e933aa288896dc983974c14df\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/eqeq(_,_).md",
-      "hash": "5ebbe5f472fc75c68583ea57279babce4b54c0464e04206a50876555fd7c342d"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum/black.json": {
       "etag": "\"1bac-65d55e938110e-df\"",
@@ -5801,14 +5779,12 @@
       "hash": "42993796d7ee296b50572e08aaf70167ea0584d3c157ef094bb76eaa935b3c30"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"c2b4309481ea4d4a24d7b95d9713bfb6\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/noteq(_,_).md",
-      "hash": "6ec37cd6f5f70949d4752e52c854d6a9d2aef9e573c8c4580a401f378ec1af5c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/==(_:_:).json": {
-      "etag": "W/\"048ce992fdd39c4a8491cd9d8cdccc4f\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/eqeq(_,_).md",
-      "hash": "8e3e817c84eff20c1b489c328749e4d879ed435974bd60a02e20706090fb3417"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum/auburn.json": {
       "etag": "\"1bc5-65d55e938110e-df\"",
@@ -5936,14 +5912,12 @@
       "hash": "dc6f9c2e01184e7729a9273bdd288533ee3c9c3bda92d2807231b572f761a4ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"40193afd464a9e6db96301e0826421eb\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/noteq(_,_).md",
-      "hash": "626187dc79b7b5f476f57eb760cd132806d86ec43c2265ea8dd0b1f09e94f4c3"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/==(_:_:).json": {
-      "etag": "W/\"a3733722fa7cb35f729e1eeae70e1691\"",
       "file_path": "documentation/ProximityReader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/eqeq(_,_).md",
-      "hash": "af83ea5346b02f6619cde12a9562f0a0191cc4b8e7c79ceea395e5bee0a5226e"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum/female.json": {
       "etag": "\"1c6d-65d55e938110e-df\"",
@@ -6436,14 +6410,12 @@
       "hash": "dc7d86310300daa376622206e5ebb463f5fefa590f00f04cc770ea0cb1137c77"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"d0e0fa83ab48a6e33953e8b3b8e6e521\"",
       "file_path": "documentation/ProximityReader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/noteq(_,_).md",
-      "hash": "28e932ba4595d002cb2e292506f3b752b17df82d363a22068c9601eb32af28cb"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/==(_:_:).json": {
-      "etag": "W/\"8689e38edd865709e5fbf25a9105293f\"",
       "file_path": "documentation/ProximityReader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/eqeq(_,_).md",
-      "hash": "a314c3299d57b805a00e8867256b303cdb74bf7ace86b5f15b86235f0c0c08b4"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobilenationalidcarddatarequest/response/documentelements-swift.struct/sex-swift.enum/female.json": {
       "etag": "\"1c61-65d55e929d3c6-df\"",
@@ -6921,14 +6893,12 @@
       "hash": "f3877d3c721a7e089b55d18b3374f0d9d042fc31c4cb55f106bc3ab2e8853b8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"96b2821918dc5868f1e37c25be5b874b\"",
       "file_path": "documentation/ProximityReader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/noteq(_,_).md",
-      "hash": "8031ef2d2d64584dc56697814a8d705d7059a65ceadc04a64c813cde2b38e43e"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/==(_:_:).json": {
-      "etag": "W/\"46b536642b970896f55e3894e0ba3e87\"",
       "file_path": "documentation/ProximityReader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/eqeq(_,_).md",
-      "hash": "5a67fbb9fac89fc885897c3106b5fcc8786333109c5b534b24383d6e9071b49c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/mobilephotoiddatarequest/response/documentelements-swift.struct/sex-swift.enum/female.json": {
       "etag": "\"1b01-65d55e93d1543-df\"",
@@ -7886,14 +7856,12 @@
       "hash": "8ec6029801f2acf0c21dbfffa90c43cd234009dd99ec2b60e6846aa7a2969411"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/paymentcardreadresult/cardeffectivestate-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"077d65d3e145bbfb011f6ffa8f34c593\"",
       "file_path": "documentation/ProximityReader/paymentcardreadresult/cardeffectivestate-swift.enum/noteq(_,_).md",
-      "hash": "5a79791e5891f51c1b650f14da4233aa586ea08ba2fd1a0d7bde1109e07209d3"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/paymentcardreadresult/cardeffectivestate-swift.enum/==(_:_:).json": {
-      "etag": "W/\"6e3799cf0d967a443ac1e1306705c709\"",
       "file_path": "documentation/ProximityReader/paymentcardreadresult/cardeffectivestate-swift.enum/eqeq(_,_).md",
-      "hash": "2db84daaf11a5211a437780fa19e81d1947ae8539396c9c2286f7adad6577261"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/paymentcardreadresult/cardeffectivestate-swift.enum/active.json": {
       "etag": "\"11f5-65d55e92c9b3b-df\"",
@@ -7926,14 +7894,12 @@
       "hash": "b740aa20074438e6d35cccb52cfd476a1e219690ac6a68114ceac0fa36e2629f"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/paymentcardreadresult/cardexpirationstate-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"cc86fff55cf95bc45b1d1f7457aa631b\"",
       "file_path": "documentation/ProximityReader/paymentcardreadresult/cardexpirationstate-swift.enum/noteq(_,_).md",
-      "hash": "665930a3db4395d5630c3aeb6d4842488878035afd8fc1945fd854e1fb6ab126"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/paymentcardreadresult/cardexpirationstate-swift.enum/==(_:_:).json": {
-      "etag": "W/\"5c44aea52f6b3644a3f8ce7d2cbb9e5e\"",
       "file_path": "documentation/ProximityReader/paymentcardreadresult/cardexpirationstate-swift.enum/eqeq(_,_).md",
-      "hash": "338fe1658675a08517b879d0aece1fb23d8cd389ded858009f61a2ba0b8da8c6"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/paymentcardreadresult/cardexpirationstate-swift.enum/expired.json": {
       "etag": "\"1219-65d55e92c9b3b-df\"",
@@ -8211,14 +8177,12 @@
       "hash": "6d57e10d106ada93cdd0af945d9bcedbd105218b79505adb94d4f519caabba79"
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/proximityreaderdiscovery/contenterror/!=(_:_:).json": {
-      "etag": "W/\"7e3c1d09292bc9b535d989aded83b339\"",
       "file_path": "documentation/ProximityReader/proximityreaderdiscovery/contenterror/noteq(_,_).md",
-      "hash": "efe581e22caf2cf42b618362da27e1975c2a38cffd2d0be4cd9872c47b0bc4cb"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/proximityreaderdiscovery/contenterror/==(_:_:).json": {
-      "etag": "W/\"137d30d64090e85e79ef24c20d623690\"",
       "file_path": "documentation/ProximityReader/proximityreaderdiscovery/contenterror/eqeq(_,_).md",
-      "hash": "12b6b6161a7c5cbbe4894a30dda3d074fbf06b43123bd51c445f5390dd5fa83e"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/proximityreader/proximityreaderdiscovery/contenterror/contentdisplayfailed.json": {
       "etag": "\"23b5-65d55e945c008-df\"",
@@ -8542,6 +8506,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1708
   }
 }

@@ -1,6 +1,7 @@
 # Creating an airline boarding pass using semantic tags
 
-**Framework**: Wallet Passes
+**Framework**: Wallet Passes  
+**Role**: Article
 
 Update your semantic tags to provide live and interactive passenger information for boarding passes.
 
@@ -8,21 +9,21 @@ Update your semantic tags to provide live and interactive passenger information 
 
 Beginning with iOS and watchOS 26, you can update airline boarding passes with live information using semantic tags.
 
-![Image of a mock boarding pass that uses semantic tags.](/images/com.apple.walletpasses/airline-boarding-pass-semantic@2x.png)
+![Image of a mock boarding pass that uses semantic tags.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/airline-boarding-pass-semantic@2x.png)
 
-This experience builds on the existing [`PKPass`](https://developer.apple.com/documentation/passkit/pkpass) bundle in Wallet and maintains backward compatibility. If you can’t use semantic tags for some reason, Wallet falls back to the legacy boarding pass. For existing boarding passes, you can update your legacy boarding pass by using semantic tags to enable up-to-date flight information, real-time updates, and interactive features in Wallet. For more information on semantic tags, see [`Supporting semantic tags in Wallet passes`](supporting-semantic-tags-in-wallet-passes.md).
+This experience builds on the existing [`PKPass`](../PassKit/pkpass.md) bundle in Wallet and maintains backward compatibility. If you can’t use semantic tags for some reason, Wallet falls back to the legacy boarding pass. For existing boarding passes, you can update your legacy boarding pass by using semantic tags to enable up-to-date flight information, real-time updates, and interactive features in Wallet. For more information on semantic tags, see [Supporting semantic tags in Wallet passes](./supporting-semantic-tags-in-wallet-passes.md).
 
 By adding semantic tags to your boarding pass, you provide structured data that Wallet uses to automatically display information like flight status, gate changes, and baggage information, as well as an overall more dynamic and helpful experience for passengers. After you meet the minimum requirements to display a boarding pass using semantic tags, you can optimize a passenger’s experience by adding badges to highlight travel attributes and ticket add-ons.
 
 To display a semantic boarding pass, you need to meet the following minimum requirements:
 
 - Add `semanticBoardingPass` to the `preferredStyleSchemes`.
-- Set the `transitType` in the `boardingPass` top-level style dictionary to `PKTransitTypeAir`. For more information, see [`Pass.BoardingPass`](pass/boardingpass-data.dictionary.md).
+- Set the `transitType` in the `boardingPass` top-level style dictionary to `PKTransitTypeAir`. For more information, see [`Pass.BoardingPass`](./pass/boardingpass-data.dictionary.md).
 - Provide the required semantic tags to populate the pass and certain dashboard content.
 
 > **Note**: Use the semantic boarding pass style only for airline boarding passes.
 
-#### Set the Preferred Style Scheme
+#### Set the preferred style scheme
 
 The preferred style scheme is a top-level key that you provide. It takes an array of strings that correspond to schemes that the system resolves into a style. For semantic boarding passes, the scheme is `semanticBoardingPass`. Wallet recognizes this scheme and runs the appropriate validation to designate the pass as a semantic boarding pass, or falls back to the legacy boarding pass (`boardingPass`).
 
@@ -37,15 +38,15 @@ The following is an example of the preferred style scheme structure:
 
 > **Note**:  To automatically suppress the Wallet-based Live Activity, list your App Store Identifier (Adam ID) in the `associatedStoreIdentifiers` array in the `pass.json` file of the boarding pass.
 
-#### Set the Top Level Style Dictionary
+#### Set the top-level style dictionary
 
 The style dictionary determines the pass type. To provide the upgraded boarding pass experience, set the `transitType` to `PKTransitTypeAir` in the `boardingPass` top-level style dictionary key.
 
-#### Add the Required Semantic Tags
+#### Add the required semantic tags
 
-![An image of a mock boarding pass with a semantic tag diagram.](/images/com.apple.walletpasses/pass-fields-layout-airline-boarding-pass-semantic@2x.png)
+![An image of a mock boarding pass with a semantic tag diagram.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-airline-boarding-pass-semantic@2x.png)
 
-Semantic tags are objects that contain machine-readable metadata the system uses to offer a pass and suggest related actions. For the semantic boarding pass style, the following list of semantic tags is required. If you omit any of the tags, your pass falls back to the legacy boarding pass style. For more information on semantic tags, see [`SemanticTags`](semantictags.md).
+Semantic tags are objects that contain machine-readable metadata the system uses to offer a pass and suggest related actions. For the semantic boarding pass style, the following list of semantic tags is required. If you omit any of the tags, your pass falls back to the legacy boarding pass style. For more information on semantic tags, see [`SemanticTags`](./semantictags.md).
 
 | Required tags | Description |
 | --- | --- |
@@ -53,16 +54,16 @@ Semantic tags are objects that contain machine-readable metadata the system uses
 | `flightNumber` | The numeric portion of the IATA flight code, such as `123` for `flightCode EX123`. Use this key only for airline boarding passes. |
 | `departureAirportCode` | The IATA airport code for the departure airport, such as `MPM` or `LHR`. Use this key only for airline boarding passes. |
 | `departureCityName` | The name of the departure city to display on the boarding pass, such as `London` or `Shanghai`. |
-| `departureLocationTimeZone` | The time zone of the departure location, such as `America/Chicago`. See the [`IANA Time Zone Database`](https://developer.apple.comhttps://www.iana.org/time-zones) for the full list of supported time zones. |
+| `departureLocationTimeZone` | The time zone of the departure location, such as `America/Chicago`. See the [IANA Time Zone Database](https://www.iana.org/time-zones) for the full list of supported time zones. |
 | `destinationAirportCode` | The IATA airport code for the destination airport, such as `MPM` or `LHR`. Use this key only for airline boarding passes. |
 | `destinationCityName` | The name of the destination city to display on the boarding pass, such as `London` or `Shanghai`. |
-| `destinationLocationTimeZone` | The time zone of the destination location, such as `America/Los_Angeles`. See the [`IANA Time Zone Database`](https://developer.apple.comhttps://www.iana.org/time-zones) for the full list of supported time zones. |
+| `destinationLocationTimeZone` | The time zone of the destination location, such as `America/Los_Angeles`. See the [IANA Time Zone Database](https://www.iana.org/time-zones) for the full list of supported time zones. |
 | `originalArrivalDate` | The originally scheduled date and time of arrival. Use this key for any type of boarding pass. |
 | `originalBoardingDate` | The originally scheduled date and time of boarding. Use this key for any type of boarding pass. |
 | `originalDepartureDate` | The originally scheduled date and time of departure. Use this key for any type of boarding pass. |
 | `passengerName` | An object that represents the name of the passenger. Use this key for any type of boarding pass. |
 
-#### Include Recommended and Optional Semantic Tags
+#### Include recommended and optional semantic tags
 
 The following list of semantic tags are optional, but recommended for optimal pass design:
 
@@ -93,27 +94,27 @@ The following list of semantic tags are optional:
 | `destinationTerminal` | The terminal name or letter of the destination terminal, such as `A`. Don’t include the word *terminal*. Use this key only for airline boarding passes. |
 | `internationalDocumentsAreVerified` | An optional Boolean value that indicates whether the system verifies the passenger’s international documents. When `true`, Wallet displays the badge on the boarding pass with the value from `internationalDocumentsVerifiedDeclarationName`. |
 | `internationalDocumentsVerifiedDeclarationName` | The name of the declaration the system provides after it verifies the passenger’s international documents. Examples include `DOCS OK` or `Travel Ready`. When `internationalDocumentsAreVerified` is `true`, Wallet displays a badge on the boarding pass with this value. |
-| `loungePlaceIDs` | The MapKit Place IDs that reference the transit provider lounge locations. For more information, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids). |
+| `loungePlaceIDs` | The MapKit Place IDs that reference the transit provider lounge locations. For more information, see [Identifying unique locations with Place IDs](../MapKit/identifying-unique-locations-with-place-ids.md). |
 | `membershipProgramName` | The name of a frequent flyer or loyalty program. Use this key for any type of boarding pass. |
 | `membershipProgramNumber` | The ticketed passenger’s frequent flyer or loyalty program number. Use this key for any type of boarding pass. |
 | `membershipProgramStatus` | The ticketed passenger’s frequent flyer or loyalty program status. Use this key for any type of boarding pass. |
-| `passengerAirlineSSRs` | An array of airline-specific SSRs that apply to the ticketed passenger. For a list of supported SSRs, see [`Creating an airline boarding pass using semantic tags`](creating-an-airline-boarding-pass-using-semantic-tags.md). Use this key only for airline boarding passes. |
+| `passengerAirlineSSRs` | An array of airline-specific SSRs that apply to the ticketed passenger. For a list of supported SSRs, see [Creating an airline boarding pass using semantic tags](./creating-an-airline-boarding-pass-using-semantic-tags.md). Use this key only for airline boarding passes. |
 | `passengerCapabilities` | A list of the passenger’s capabilities. Use this key only for airline boarding passes. |
-| `passengerInformationSSRs` | An array of IATA SSRs that apply to the ticketed passenger, containing passenger information. For a list of supported SSRs, see [`Creating an airline boarding pass using semantic tags`](creating-an-airline-boarding-pass-using-semantic-tags.md). Use this key only for airline boarding passes. |
-| `passengerServiceSSRs` | An array of IATA SSRs that apply to the ticketed passenger, containing available services. For a list of supported SSRs, see [`Creating an airline boarding pass using semantic tags`](creating-an-airline-boarding-pass-using-semantic-tags.md). Use this key only for airline boarding passes. |
+| `passengerInformationSSRs` | An array of IATA SSRs that apply to the ticketed passenger, containing passenger information. For a list of supported SSRs, see [Creating an airline boarding pass using semantic tags](./creating-an-airline-boarding-pass-using-semantic-tags.md). Use this key only for airline boarding passes. |
+| `passengerServiceSSRs` | An array of IATA SSRs that apply to the ticketed passenger, containing available services. For a list of supported SSRs, see [Creating an airline boarding pass using semantic tags](./creating-an-airline-boarding-pass-using-semantic-tags.md). Use this key only for airline boarding passes. |
 | `priorityStatus` | The priority status the ticketed passenger holds, such as `Gold` or `Silver`. Use this key for any type of boarding pass. |
 | `seats` | An array of objects that represent the details for each seat at an event or on a transit journey. Use this key for any type of boarding pass or event ticket. |
 | `ticketFareClass` | A localizable string that denotes the ticket class, such as `Saver`, `Economy`, `First`. This value displays as a badge on the boarding pass. |
 
-#### Add the Supported Special Service Request Ssr Codes
+#### Add the supported Special Service Request (SSR) codes
 
-SSR codes can be provided through several semantic tags, such as `passengerAirlineSSRs`, `passengerInformationSSRs`, and `passengerServiceSSRs`. Boarding passes display certain SSRs as a badge, which always appears last, after all other badges. For more information on semantic tags, see [`SemanticTags`](semantictags.md).
+SSR codes can be provided through several semantic tags, such as `passengerAirlineSSRs`, `passengerInformationSSRs`, and `passengerServiceSSRs`. Boarding passes display certain SSRs as a badge, which always appears last, after all other badges. For more information on semantic tags, see [`SemanticTags`](./semantictags.md).
 
 The `passengerInformationSSRs` semantic tag supports the following SSR codes as array values:
 
 | SSR code | Description |
 | --- | --- |
-| `INFT` | The passenger is a seat infant (if assigned a seat); otherwise, if the passenger is a parent of a seat infant, add `PKPassengerCapabilityLapInfant` to the `passengerCapabilities` semantic tag. For a list of supported passenger capabilities, see [`SemanticTags`](semantictags.md). |
+| `INFT` | The passenger is a seat infant (if assigned a seat); otherwise, if the passenger is a parent of a seat infant, add `PKPassengerCapabilityLapInfant` to the `passengerCapabilities` semantic tag. For a list of supported passenger capabilities, see [`SemanticTags`](./semantictags.md). |
 
 The `passengerServiceSSRs` semantic tag supports the following SSR codes as array values:
 
@@ -131,13 +132,13 @@ The `passengerServiceSSRs` semantic tag supports the following SSR codes as arra
 | `WCMP` | The passenger has a manual wheelchair. |
 | `WCOB` | The passenger has requested an on-board aisle wheelchair for use during their flight. |
 
-For a comprehensive list of SSRs, including codes not supported by Wallet, see the [`IATA Airlines Developer Guide`](https://developer.apple.comhttps://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) in the “List of Information SSRs” section.
+For a comprehensive list of SSRs, including codes not supported by Wallet, see the [IATA Airlines Developer Guide](https://guides.developer.iata.org/docs/21-1_ImplementationGuide.pdf) in the “List of Information SSRs” section.
 
-#### Ensure Backward Compatibility
+#### Ensure backward compatibility
 
-To ensure your pass is backward compatible, continue to provide the [`PassFields.PrimaryFields`](passfields/primaryfields-data.dictionary.md), [`PassFields.SecondaryFields`](passfields/secondaryfields-data.dictionary.md), and [`PassFields.AuxiliaryFields`](passfields/auxiliaryfields-data.dictionary.md) so the system presents the legacy boarding pass style, if necessary. Semantic boarding passes add keys and assets to the existing `PKPass` bundle that legacy boarding passes use. By building on the legacy pass bundle, Wallet automatically generates the appropriate device experience for iOS and watchOS.
+To ensure your pass is backward compatible, continue to provide the [`PassFields.PrimaryFields`](./passfields/primaryfields-data.dictionary.md), [`PassFields.SecondaryFields`](./passfields/secondaryfields-data.dictionary.md), and [`PassFields.AuxiliaryFields`](./passfields/auxiliaryfields-data.dictionary.md) so the system presents the legacy boarding pass style, if necessary. Semantic boarding passes add keys and assets to the existing `PKPass` bundle that legacy boarding passes use. By building on the legacy pass bundle, Wallet automatically generates the appropriate device experience for iOS and watchOS.
 
-![An image of a legacy boarding pass with the pass fields outlined.](/images/com.apple.walletpasses/pass-fields-layout-airline-boarding-pass@2x.png)
+![An image of a legacy boarding pass with the pass fields outlined.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/pass-fields-layout-airline-boarding-pass@2x.png)
 
 When someone adds a pass to a device, that pass automatically syncs to all devices linked to the same Apple Account. When a supported device with iOS or watchOS 26 or later syncs to a device that doesn’t support semantic tags, Wallet recognizes the pass as a legacy boarding pass. The possible scenarios are:
 
@@ -147,7 +148,7 @@ When someone adds a pass to a device, that pass automatically syncs to all devic
 
 If someone adds a pass to an unsupported device and syncs it to a supported device with iOS or watchOS 26 or later, Wallet displays the semantic boarding pass information after you meet the minimum requirements by setting the top-level style dictionary and adding the required semantic tags. If you don’t meet the requirements, Wallet displays a legacy boarding pass.
 
-#### Offer Additional Flight Information
+#### Offer additional flight information
 
 Populate an airline and services page to provide additional information related to a flight. The system uses metadata you provide to display an airline and services page in Wallet. Below the boarding pass, passengers can select a quick action link to navigate to a separate page within Wallet with useful information related to their flight and airport experience. Depending on the information you provide, you can populate links for the following:
 
@@ -168,7 +169,7 @@ Populate an airline and services page to provide additional information related 
 | Track bags through the airline’s app | `trackBagsURL` |
 | Upgrade seat | `upgradeURL` |
 
-#### Provide Live Flight Information
+#### Provide live flight information
 
 Boarding passes use semantic tags to correlate which flight the pass belongs to. With semantic tags, Wallet subscribes to updates for flight and surface functionalities, like Share Flight Tracker, which allows passengers to share flight information from Wallet through iMessage or iPhone nearby interactivity.
 
@@ -196,17 +197,18 @@ You provide the following information through semantic tags, and Wallet doesn’
 | Seat | `seats` |
 | Sequence Number | `boardingSequenceNumber` |
 
-For the full list of semantic tags, see [`SemanticTags`](semantictags.md).
+For the full list of semantic tags, see [`SemanticTags`](./semantictags.md).
 
 > **Note**:  The information you provide determines the boarding time. Wallet calculates the boarding time by applying the time difference between your `originalDepartureDate` and `originalBoardingDate` to the known live departure time.
 
 ## See Also
 
-- [object Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
+### Boarding passes
+- [object Pass.BoardingPass](./pass/boardingpass-data.dictionary.md)
   An object that represents the groups of fields that display the information for a boarding pass.
-- [object SemanticTags](semantictags.md)
+- [object SemanticTags](./semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](./semantictagtype.md)
   A compilation of data object types for semantic tags.
 
 

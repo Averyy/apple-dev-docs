@@ -1,7 +1,8 @@
 # HKInsulinDeliveryReason.bolus
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insulin administered to meet the user’s episodic requirements.
 
@@ -19,13 +20,18 @@ Insulin administered to meet the user’s episodic requirements.
 case bolus
 ```
 
+```c
+HKInsulinDeliveryReasonBolus
+```
+
 #### Discussion
 
 Users administer bolus insulin to meet episodic needs, such as during a meal or to correct their blood glucose levels.
 
 ## See Also
 
-- [HKInsulinDeliveryReason.basal](hkinsulindeliveryreason/basal.md)
+### Delivery Reasons
+- [HKInsulinDeliveryReason.basal](./basal.md)
   Insulin administered to meet the user’s basic metabolic needs.
 
 

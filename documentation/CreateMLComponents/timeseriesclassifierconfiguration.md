@@ -1,7 +1,8 @@
 # TimeSeriesClassifierConfiguration
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration for a time-series classifier.
 
@@ -22,61 +23,62 @@ struct TimeSeriesClassifierConfiguration
 ## Topics
 
 ### Creating a time series classifier configuration
-- [init()](timeseriesclassifierconfiguration/init.md)
+- [init()](./timeseriesclassifierconfiguration/init%28%29.md)
   Creates a configuration.
 ### Inspecting a time series classifier configuration
-- [var batchSize: Int](timeseriesclassifierconfiguration/batchsize.md)
+- [var batchSize: Int](./timeseriesclassifierconfiguration/batchsize.md)
   The number of examples in each training batch.
-- [var earlyStoppingIterationCount: Int](timeseriesclassifierconfiguration/earlystoppingiterationcount.md)
+- [var earlyStoppingIterationCount: Int](./timeseriesclassifierconfiguration/earlystoppingiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
-- [var earlyStoppingTolerance: Float](timeseriesclassifierconfiguration/earlystoppingtolerance.md)
+- [var earlyStoppingTolerance: Float](./timeseriesclassifierconfiguration/earlystoppingtolerance.md)
   The early-stopping tolerance.
-- [var learningRate: Float](timeseriesclassifierconfiguration/learningrate.md)
+- [var learningRate: Float](./timeseriesclassifierconfiguration/learningrate.md)
   The starting learning rate.
-- [var maximumIterationCount: Int](timeseriesclassifierconfiguration/maximumiterationcount.md)
+- [var maximumIterationCount: Int](./timeseriesclassifierconfiguration/maximumiterationcount.md)
   The maximum number of allowed passes through the data.
-- [var maximumSequenceLength: Int](timeseriesclassifierconfiguration/maximumsequencelength.md)
+- [var maximumSequenceLength: Int](./timeseriesclassifierconfiguration/maximumsequencelength.md)
   The maximum number of samples that can be classified.
-- [var minimumSequenceLength: Int](timeseriesclassifierconfiguration/minimumsequencelength.md)
+- [var minimumSequenceLength: Int](./timeseriesclassifierconfiguration/minimumsequencelength.md)
   The minimum number of samples required to produce a classification.
-- [var randomSeed: Int?](timeseriesclassifierconfiguration/randomseed.md)
+- [var randomSeed: Int?](./timeseriesclassifierconfiguration/randomseed.md)
   A seed to generate reproducible results from random operations.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifier](logisticregressionclassifier.md)
+- [struct LogisticRegressionClassifier](./logisticregressionclassifier.md)
   A logistic regression classifier.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeClassifier](boostedtreeclassifier.md)
+- [struct BoostedTreeClassifier](./boostedtreeclassifier.md)
   A gradient boosted decision tree classifier.
-- [struct BoostedTreeConfiguration](boostedtreeconfiguration.md)
+- [struct BoostedTreeConfiguration](./boostedtreeconfiguration.md)
   A boosted tree configuration.
-- [struct FullyConnectedNetworkClassifier](fullyconnectednetworkclassifier.md)
+- [struct FullyConnectedNetworkClassifier](./fullyconnectednetworkclassifier.md)
   A classifier that uses a fully connected network.
-- [struct FullyConnectedNetworkClassifierModel](fullyconnectednetworkclassifiermodel.md)
+- [struct FullyConnectedNetworkClassifierModel](./fullyconnectednetworkclassifiermodel.md)
   A classifier model that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifierModel](fullyconnectednetworkmultilabelclassifiermodel.md)
+- [struct FullyConnectedNetworkMultiLabelClassifierModel](./fullyconnectednetworkmultilabelclassifiermodel.md)
   A multi-label classifier model that uses a fully-connected network.
-- [struct FullyConnectedNetworkConfiguration](fullyconnectednetworkconfiguration.md)
+- [struct FullyConnectedNetworkConfiguration](./fullyconnectednetworkconfiguration.md)
   A fully connected network configuration.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifier](timeseriesclassifier.md)
+- [struct TimeSeriesClassifier](./timeseriesclassifier.md)
 
 
 ---

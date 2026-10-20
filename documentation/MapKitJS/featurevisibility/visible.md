@@ -1,7 +1,8 @@
 # Visible
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A constant indicating that the feature is always visible.
 
@@ -10,7 +11,7 @@ A constant indicating that the feature is always visible.
 
 ## Declaration
 
-```swift
+```
 readonly Visible: "visible";
 ```
 
@@ -33,9 +34,10 @@ map.showsUserLocationControl = true;
 
 ## See Also
 
-- [Adaptive](featurevisibility/adaptive.md)
+### Feature visibility values
+- [Adaptive](./adaptive.md)
   A constant indicating that feature visibility adapts to the current map state.
-- [Hidden](featurevisibility/hidden.md)
+- [Hidden](./hidden.md)
   A constant indicating that the feature is always hidden.
 
 

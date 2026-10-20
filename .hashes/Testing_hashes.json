@@ -736,9 +736,8 @@
       "hash": "6fd5b8b2d6626082b3da5a0b04c1fddce9ec776b09b1c830c9ea2b9e02f64204"
     },
     "https://developer.apple.com/documentation/testing/tag/list/tags(_:)": {
-      "etag": "W/\"bdb4a0239ef4137e062566330a1906de\"",
       "file_path": "documentation/Testing/tag/list/tags(_).md",
-      "hash": "eae7b4bf16ecadb8104af2eb39b5677b1744f09ea92c5c74075b0235ba60ef18"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/testing/test": {
       "etag": "\"5260-65d560adcfa0b-df\"",
@@ -891,9 +890,8 @@
       "hash": "5bf61b28e2659b5ddd047f29fecad7f560b9fda8dc7762ef965ecaa91e5e848d"
     },
     "https://developer.apple.com/documentation/testing/timelimittrait/timelimit(_:)": {
-      "etag": "W/\"3c2d427adb20c978fc5b62736a0ead2e\"",
       "file_path": "documentation/Testing/timelimittrait/timelimit(_).md",
-      "hash": "21bc2babef8fff2d4d969c96bc05572ac01bd12f6735ac13b70e5e6a64ffbf38"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/testing/trait": {
       "etag": "\"8c2a-65d560adcfa0b-df\"",
@@ -1781,9 +1779,8 @@
       "hash": "b77c46f22d1d32c7553722fb4911f90e7c16759806d94bf79dd56fa1d1ff6fd5"
     },
     "https://developer.apple.com/tutorials/data/documentation/testing/tag/list/tags(_:).json": {
-      "etag": "W/\"bdb4a0239ef4137e062566330a1906de\"",
       "file_path": "documentation/Testing/tag/list/tags(_).md",
-      "hash": "eae7b4bf16ecadb8104af2eb39b5677b1744f09ea92c5c74075b0235ba60ef18"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/testing/tag/list/tags.json": {
       "etag": "\"1878-65d560ae0ddb4-df\"",
@@ -1936,9 +1933,8 @@
       "hash": "09eb93dda1248756eaef34699dab68ee6eb39ce2322cb26a99992db57455240b"
     },
     "https://developer.apple.com/tutorials/data/documentation/testing/timelimittrait/timelimit(_:).json": {
-      "etag": "W/\"3c2d427adb20c978fc5b62736a0ead2e\"",
       "file_path": "documentation/Testing/timelimittrait/timelimit(_).md",
-      "hash": "21bc2babef8fff2d4d969c96bc05572ac01bd12f6735ac13b70e5e6a64ffbf38"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/testing/timelimittrait/timelimit.json": {
       "etag": "\"11ca-65d560ad9d5ea-df\"",
@@ -2062,6 +2058,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 414
   }
 }

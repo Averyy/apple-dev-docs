@@ -1,7 +1,8 @@
 # NETunnelProviderErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain used for Tunnel Provider errors.
 
@@ -19,11 +20,16 @@ The domain used for Tunnel Provider errors.
 let NETunnelProviderErrorDomain: String
 ```
 
+```c
+extern NSString * const NETunnelProviderErrorDomain;
+```
+
 ## See Also
 
-- [NETunnelProviderError.Code](netunnelprovidererror-swift.struct/code.md)
+### Errors
+- [NETunnelProviderError.Code](./netunnelprovidererror-swift.struct/code.md)
   Error codes that the tunnel provider declares.
-- [NETunnelProviderError.Code](netunnelprovidererror-swift.struct/code.md)
+- [NETunnelProviderError.Code](./netunnelprovidererror-swift.struct/code.md)
   Error codes that the tunnel provider declares.
 
 

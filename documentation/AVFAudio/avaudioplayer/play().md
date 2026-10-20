@@ -1,7 +1,8 @@
 # play()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays audio asynchronously.
 
@@ -20,25 +21,30 @@ Plays audio asynchronously.
 func play() -> Bool
 ```
 
+```objc
+- (BOOL) play;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if playback starts successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if playback starts successfully; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Calling this method implicitly calls [`prepareToPlay()`](avaudioplayer/preparetoplay().md) if the audio player is unprepared for playback.
+Calling this method implicitly calls [`prepareToPlay()`](./preparetoplay%28%29.md) if the audio player is unprepared for playback.
 
 ## See Also
 
-- [func prepareToPlay() -> Bool](avaudioplayer/preparetoplay.md)
+### Controlling playback
+- [func prepareToPlay() -> Bool](./preparetoplay%28%29.md)
   Prepares the player for audio playback.
-- [func play(atTime: TimeInterval) -> Bool](avaudioplayer/play(attime:).md)
+- [func play(atTime: TimeInterval) -> Bool](./play%28attime%29.md)
   Plays audio asynchronously, starting at a specified point in the audio output device’s timeline.
-- [func pause()](avaudioplayer/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses audio playback.
-- [func stop()](avaudioplayer/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops playback and undoes the setup the system requires for playback.
-- [var isPlaying: Bool](avaudioplayer/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that indicates whether the player is currently playing audio.
 
 

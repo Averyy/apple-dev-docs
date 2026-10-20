@@ -1,7 +1,8 @@
 # status
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A status that indicates the object’s ability to loop playback.
 
@@ -19,17 +20,22 @@ A status that indicates the object’s ability to loop playback.
 var status: AVPlayerLooper.Status { get }
 ```
 
+```objc
+@property (readonly) AVPlayerLooperStatus status;
+```
+
 #### Discussion
 
-When the value of this property is [`AVPlayerLooper.Status.failed`](avplayerlooper/status-swift.enum/failed.md) or [`AVPlayerLooper.Status.cancelled`](avplayerlooper/status-swift.enum/cancelled.md), you can no longer use the looper for playback. You need to create a new instance to begin looping again.
+When the value of this property is [`AVPlayerLooper.Status.failed`](./status-swift.enum/failed.md) or [`AVPlayerLooper.Status.cancelled`](./status-swift.enum/cancelled.md), you can no longer use the looper for playback. You need to create a new instance to begin looping again.
 
 This property is key-value observable.
 
 ## See Also
 
-- [var loopCount: Int](avplayerlooper/loopcount.md)
+### Observing looping state
+- [var loopCount: Int](./loopcount.md)
   The number of times the object played the media.
-- [AVPlayerLooper.Status](avplayerlooper/status-swift.enum.md)
+- [AVPlayerLooper.Status](./status-swift.enum.md)
   Status constants that indicate whether a looper can successfully perform looping playback.
 
 

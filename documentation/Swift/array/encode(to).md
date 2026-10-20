@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the elements of this array into the given encoder in an unkeyed container.
 
@@ -20,6 +21,8 @@ Encodes the elements of this array into the given encoder in an unkeyed containe
 func encode(to encoder: any Encoder) throws
 ```
 
+Available when `Element` conforms to `Encodable`.
+
 #### Discussion
 
 This function throws an error if any values are invalid for the given encoder’s format.
@@ -30,7 +33,8 @@ This function throws an error if any values are invalid for the given encoder’
 
 ## See Also
 
-- [init(from: any Decoder) throws](array/init(from:).md)
+### Encoding and Decoding
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new array by decoding from the given decoder.
 
 

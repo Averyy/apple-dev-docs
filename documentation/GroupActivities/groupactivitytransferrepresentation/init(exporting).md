@@ -1,7 +1,8 @@
 # init(exporting:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a type that exports a group activity for the specified item.
 
@@ -20,7 +21,7 @@ init<ActivityType>(exporting: @escaping @Sendable (Item) async throws -> Activit
 
 ## Parameters
 
-- `exporting`: A closure that creates the [`GroupActivity`](groupactivity.md) for the given item.
+- `exporting`: A closure that creates the [`GroupActivity`](../groupactivity.md) for the given item.
 
 
 ---

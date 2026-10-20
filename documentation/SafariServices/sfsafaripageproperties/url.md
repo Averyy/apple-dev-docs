@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the URL of the page.
 
@@ -14,13 +15,18 @@ Indicates the URL of the page.
 var url: URL? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSURL * url;
+```
+
 ## See Also
 
-- [var isActive: Bool](sfsafaripageproperties/isactive.md)
+### Getting the Safari Page Properties
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether the page is currently active.
-- [var title: String?](sfsafaripageproperties/title.md)
+- [var title: String?](./title.md)
   The title of the page.
-- [var usesPrivateBrowsing: Bool](sfsafaripageproperties/usesprivatebrowsing.md)
+- [var usesPrivateBrowsing: Bool](./usesprivatebrowsing.md)
   A Boolean value that indicates whether the page is using Safari Private Browsing.
 
 

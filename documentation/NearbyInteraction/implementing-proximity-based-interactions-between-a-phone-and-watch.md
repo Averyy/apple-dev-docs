@@ -1,6 +1,8 @@
 # Implementing proximity-based interactions between a phone and watch
 
-**Framework**: Nearby Interaction
+**Framework**: Nearby Interaction  
+**Role**: Sample Code  
+**Download**: [ImplementingProximityBasedInteractionsBetweenAPhoneAndWatch.zip](https://docs-assets.developer.apple.com/published/929bfa8b5d2d/ImplementingProximityBasedInteractionsBetweenAPhoneAndWatch.zip)
 
 Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.
 
@@ -13,7 +15,7 @@ Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10165: Explore Nearby Interaction with Third-Party Accessories`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10165).
+> **Note**: This sample code project is associated with WWDC21 session [10165: Explore Nearby Interaction with Third-Party Accessories](https://developer.apple.com/wwdc21/10165).
 
 ##### Configure the Sample Code Project
 

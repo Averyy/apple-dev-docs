@@ -1,7 +1,8 @@
 # gradientClipMax
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var gradientClipMax: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float gradientClipMax;
 ```
 
 

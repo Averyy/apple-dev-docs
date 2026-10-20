@@ -1,7 +1,8 @@
 # probableWebURL
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A pattern that indicates the pasteboard contains a string that consists of a URL.
 
@@ -17,15 +18,20 @@ A pattern that indicates the pasteboard contains a string that consists of a URL
 static let probableWebURL: UIPasteboard.DetectionPattern
 ```
 
+```c
+extern UIPasteboardDetectionPattern const UIPasteboardDetectionPatternProbableWebURL;
+```
+
 #### Discussion
 
-When you include this pattern in calls to [`detectValues(for:inItemSet:completionHandler:)`](uipasteboard/detectvalues(for:initemset:completionhandler:)-pm9l.md) or [`detectValues(for:completionHandler:)`](uipasteboard/detectvalues(for:completionhandler:)-6adre.md) — [`detectValuesForPatterns:inItemSet:completionHandler:`](uipasteboard/detectvaluesforpatterns:initemset:completionhandler:.md) or [`detectValuesForPatterns:completionHandler:`](uipasteboard/detectvaluesforpatterns:completionhandler:.md) in Objective-C — and the pasteboard detects a string that consists of a URL, it reports the value as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
+When you include this pattern in calls to [`detectValues(for:inItemSet:completionHandler:)`](../detectvalues%28for,initemset,completionhandler%29-pm9l.md) or [`detectValues(for:completionHandler:)`](../detectvalues%28for,completionhandler%29-6adre.md) — [`detectValuesForPatterns:inItemSet:completionHandler:`](../detectvaluesforpatterns_initemset_completionhandler_.md) or [`detectValuesForPatterns:completionHandler:`](../detectvaluesforpatterns_completionhandler_.md) in Objective-C — and the pasteboard detects a string that consists of a URL, it reports the value as an [`NSString`](../../../Foundation/nsstring.md).
 
 ## See Also
 
-- [static let number: UIPasteboard.DetectionPattern](uipasteboard/detectionpattern/number.md)
+### Detecting common patterns
+- [static let number: UIPasteboard.DetectionPattern](./number.md)
   A pattern that indicates the pasteboard contains a string that consists of a numeric value.
-- [static let probableWebSearch: UIPasteboard.DetectionPattern](uipasteboard/detectionpattern/probablewebsearch.md)
+- [static let probableWebSearch: UIPasteboard.DetectionPattern](./probablewebsearch.md)
   A pattern that indicates the pasteboard contains a string suitable for use as a web search term.
 
 

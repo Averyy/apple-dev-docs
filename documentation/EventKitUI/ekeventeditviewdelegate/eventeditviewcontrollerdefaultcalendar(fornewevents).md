@@ -1,7 +1,8 @@
 # eventEditViewControllerDefaultCalendar(forNewEvents:)
 
 **Framework**: EventKit UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The default calendar to use when creating new events.
 
@@ -17,9 +18,13 @@ The default calendar to use when creating new events.
 optional func eventEditViewControllerDefaultCalendar(forNewEvents controller: EKEventEditViewController) -> EKCalendar
 ```
 
+```objc
+- (EKCalendar *) eventEditViewControllerDefaultCalendarForNewEvents:(EKEventEditViewController *) controller;
+```
+
 #### Discussion
 
-If the delegate does not implement this method, uses the event store’s [`defaultCalendarForNewEvents`](https://developer.apple.com/documentation/eventkit/ekeventstore/defaultcalendarfornewevents) property instead.
+If the delegate does not implement this method, uses the event store’s [`defaultCalendarForNewEvents`](../../EventKit/ekeventstore/defaultcalendarfornewevents.md) property instead.
 
 ## Parameters
 

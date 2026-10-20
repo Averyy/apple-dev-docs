@@ -1,7 +1,8 @@
 # symbolName
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SF Symbol icon that represents the current weather condition and whether it’s daylight at the current date.
 
@@ -22,7 +23,8 @@ var symbolName: String
 
 ## See Also
 
-- [var metadata: WeatherMetadata](currentweather/metadata.md)
+### Getting additional information
+- [var metadata: WeatherMetadata](./metadata.md)
   Descriptive information about the current weather data.
 
 

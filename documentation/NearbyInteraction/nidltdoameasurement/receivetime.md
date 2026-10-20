@@ -1,7 +1,8 @@
 # receiveTime
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A timestamp, in seconds, for the time that the device receives the measurement.
 
@@ -16,9 +17,14 @@ A timestamp, in seconds, for the time that the device receives the measurement.
 var receiveTime: Double { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) double receiveTime;
+```
+
 ## See Also
 
-- [var transmitTime: Double](nidltdoameasurement/transmittime.md)
+### Assessing time difference
+- [var transmitTime: Double](./transmittime.md)
   A transmission timestamp, in seconds, for the received message.
 
 

@@ -1,7 +1,8 @@
 # MPErrorDomain
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Media Player framework error domain.
 
@@ -20,12 +21,17 @@ The Media Player framework error domain.
 let MPErrorDomain: String
 ```
 
+```c
+extern NSString * const MPErrorDomain;
+```
+
 ## See Also
 
-- [static var errorDomain: String](mperror/errordomain.md)
-- [MPError.Code](mperror/code.md)
+### Inspecting an error
+- [static var errorDomain: String](./mperror/errordomain.md)
+- [MPError.Code](./mperror/code.md)
   An enumeration that represents error codes for framework operations.
-- [Error constants](error-constants.md)
+- [Error constants](./error-constants.md)
   Error code constants for framework operations.
 
 

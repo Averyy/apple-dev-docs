@@ -1,21 +1,22 @@
 # SubscriptionGroup.Relationships.Subscriptions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroup.Relationships.Subscriptions
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroup.Relationships.Subscriptions.Data](subscriptiongroup/relationships-data.dictionary/subscriptions-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionGroup.Relationships.Subscriptions.Data](./subscriptions-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription group.
 
 ## Properties
@@ -26,7 +27,8 @@ object SubscriptionGroup.Relationships.Subscriptions
 
 ## See Also
 
-- [object SubscriptionGroup.Relationships.SubscriptionGroupLocalizations](subscriptiongroup/relationships-data.dictionary/subscriptiongrouplocalizations-data.dictionary.md)
+### Objects
+- [object SubscriptionGroup.Relationships.SubscriptionGroupLocalizations](./subscriptiongrouplocalizations-data.dictionary.md)
 
 
 ---

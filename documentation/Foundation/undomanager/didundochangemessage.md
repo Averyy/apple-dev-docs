@@ -1,7 +1,8 @@
 # UndoManager.DidUndoChangeMessage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that an undo manager sends after undoing a change.
 
@@ -22,43 +23,44 @@ struct DidUndoChangeMessage
 
 #### Overview
 
-The undo manager posts this message after you call [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md). Because this is a “did”-style message, the undo manager sends the message after it performs the undo.
+The undo manager posts this message after you call [`undo()`](./undo%28%29.md) or [`undoNestedGroup()`](./undonestedgroup%28%29.md). Because this is a “did”-style message, the undo manager sends the message after it performs the undo.
 
-Observe this message type with the identifier [`didUndoChange`](notificationcenter/messageidentifier/didundochange.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`UndoManager`](undomanager.md).
+Observe this message type with the identifier [`didUndoChange`](../notificationcenter/messageidentifier/didundochange.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`UndoManager`](../undomanager.md).
 
-This message interoperates with the notification [`NSUndoManagerDidUndoChange`](nsnotification/name-swift.struct/nsundomanagerdidundochange.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
+This message interoperates with the notification [`NSUndoManagerDidUndoChange`](../nsnotification/name-swift.struct/nsundomanagerdidundochange.md). The system notifies observers of the message when the [`NotificationCenter`](../notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 
 ### Initializers
-- [init(groupIsDiscardable: Bool)](undomanager/didundochangemessage/init(groupisdiscardable:).md)
+- [init(groupIsDiscardable: Bool)](./didundochangemessage/init%28groupisdiscardable%29.md)
   Creates a did undo change message.
 ### Instance Properties
-- [var groupIsDiscardable: Bool](undomanager/didundochangemessage/groupisdiscardable.md)
+- [var groupIsDiscardable: Bool](./didundochangemessage/groupisdiscardable.md)
   A Boolean value that indicates whether the undo group as a whole is discardable.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](notificationcenter/mainactormessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../notificationcenter/mainactormessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UndoManager.WillUndoChangeMessage](undomanager/willundochangemessage.md)
+### Working with notification messages
+- [UndoManager.WillUndoChangeMessage](./willundochangemessage.md)
   A message that an undo manager sends before undoing a change.
-- [UndoManager.WillRedoChangeMessage](undomanager/willredochangemessage.md)
+- [UndoManager.WillRedoChangeMessage](./willredochangemessage.md)
   A message that an undo manager sends before redoing a change.
-- [UndoManager.DidRedoChangeMessage](undomanager/didredochangemessage.md)
+- [UndoManager.DidRedoChangeMessage](./didredochangemessage.md)
   A message that an undo manager sends after redoing a change.
-- [UndoManager.CheckpointMessage](undomanager/checkpointmessage.md)
+- [UndoManager.CheckpointMessage](./checkpointmessage.md)
   A message that an undo manager sends at certain checkpoints.
-- [UndoManager.DidOpenUndoGroupMessage](undomanager/didopenundogroupmessage.md)
+- [UndoManager.DidOpenUndoGroupMessage](./didopenundogroupmessage.md)
   A message that an undo manager sends after opening an undo group.
-- [UndoManager.WillCloseUndoGroupMessage](undomanager/willcloseundogroupmessage.md)
+- [UndoManager.WillCloseUndoGroupMessage](./willcloseundogroupmessage.md)
   A message that an undo manager sends before closing an undo group.
-- [UndoManager.DidCloseUndoGroupMessage](undomanager/didcloseundogroupmessage.md)
+- [UndoManager.DidCloseUndoGroupMessage](./didcloseundogroupmessage.md)
   A message that an undo manager sends after closing an undo group.
 
 

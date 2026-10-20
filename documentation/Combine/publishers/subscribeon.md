@@ -1,7 +1,8 @@
 # Publishers.SubscribeOn
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that receives elements from an upstream publisher on a specific scheduler.
 
@@ -23,29 +24,30 @@ struct SubscribeOn<Upstream, Context> where Upstream : Publisher, Context : Sche
 ## Topics
 
 ### Creating a subscribe-on publisher
-- [init(upstream: Upstream, scheduler: Context, options: Context.SchedulerOptions?)](publishers/subscribeon/init(upstream:scheduler:options:).md)
+- [init(upstream: Upstream, scheduler: Context, options: Context.SchedulerOptions?)](./subscribeon/init%28upstream,scheduler,options%29.md)
   Creates a publisher that receives elements from an upstream publisher on a specific scheduler.
 ### Declaring supporting types
-- [Publishers.SubscribeOn.Output](publishers/subscribeon/output.md)
+- [Publishers.SubscribeOn.Output](./subscribeon/output.md)
   The kind of values published by this publisher.
-- [Publishers.SubscribeOn.Failure](publishers/subscribeon/failure.md)
+- [Publishers.SubscribeOn.Failure](./subscribeon/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/subscribeon/upstream.md)
+- [let upstream: Upstream](./subscribeon/upstream.md)
   The publisher from which this publisher receives elements.
-- [let scheduler: Context](publishers/subscribeon/scheduler.md)
+- [let scheduler: Context](./subscribeon/scheduler.md)
   The scheduler the publisher should use to receive elements.
-- [let options: Context.SchedulerOptions?](publishers/subscribeon/options.md)
+- [let options: Context.SchedulerOptions?](./subscribeon/options.md)
   Scheduler options that customize the delivery of elements.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.ReceiveOn](publishers/receiveon.md)
+### Working with subscribers
+- [Publishers.ReceiveOn](./receiveon.md)
   A publisher that delivers elements to its downstream subscriber on a specific scheduler.
 
 

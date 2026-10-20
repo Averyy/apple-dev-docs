@@ -1,7 +1,8 @@
 # contentMargins(for:edges:alignment:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Insets the content of this view by a content margin guide.
 

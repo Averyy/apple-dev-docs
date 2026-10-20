@@ -1,7 +1,8 @@
 # init(identifier:request:fileSize:applicationGroupIdentifier:)
 
 **Framework**: Background Assets  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -17,6 +18,10 @@
 convenience init(identifier: String, request: URLRequest, fileSize: Int, applicationGroupIdentifier: String)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier request:(NSURLRequest *) request fileSize:(NSUInteger) fileSize applicationGroupIdentifier:(NSString *) applicationGroupIdentifier;
+```
+
 #### Discussion
 
 Constructs a download object to represent the download of a asset located inside of the provided @c request.
@@ -30,10 +35,11 @@ Constructs a download object to represent the download of a asset located inside
 
 ## See Also
 
-- [init(identifier: String, request: URLRequest, essential: Bool, fileSize: Int, applicationGroupIdentifier: String, priority: BADownload.Priority)](baurldownload/init(identifier:request:essential:filesize:applicationgroupidentifier:priority:).md)
-- [convenience init(identifier: String, request: URLRequest, applicationGroupIdentifier: String)](baurldownload/init(identifier:request:applicationgroupidentifier:).md)
+### Creating a download
+- [init(identifier: String, request: URLRequest, essential: Bool, fileSize: Int, applicationGroupIdentifier: String, priority: BADownload.Priority)](./init%28identifier,request,essential,filesize,applicationgroupidentifier,priority%29.md)
+- [convenience init(identifier: String, request: URLRequest, applicationGroupIdentifier: String)](./init%28identifier,request,applicationgroupidentifier%29.md)
   Creates a download that uses the specified identifier and App Group.
-- [convenience init(identifier: String, request: URLRequest, applicationGroupIdentifier: String, priority: BADownload.Priority)](baurldownload/init(identifier:request:applicationgroupidentifier:priority:).md)
+- [convenience init(identifier: String, request: URLRequest, applicationGroupIdentifier: String, priority: BADownload.Priority)](./init%28identifier,request,applicationgroupidentifier,priority%29.md)
   Creates a prioritized download that uses the specified identifier and App Group.
 
 

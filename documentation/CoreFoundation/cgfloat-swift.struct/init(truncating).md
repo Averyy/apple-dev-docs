@@ -1,7 +1,8 @@
 # init(truncating:)
 
 **Framework**: Core Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 2.0+
 
 ## Declaration

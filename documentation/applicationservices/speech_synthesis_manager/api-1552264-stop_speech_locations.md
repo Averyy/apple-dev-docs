@@ -6,16 +6,16 @@ Locations that indicate where speech should be paused or stopped.
 
 #### Overview
 
-See the functions [`PauseSpeechAt(_:_:)`](1461174-pausespeechat.md) and [`StopSpeechAt(_:_:)`](1459780-stopspeechat.md) for more information.
+See the functions [`PauseSpeechAt(_:_:)`](../api-1461174-pausespeechat.md) and [`StopSpeechAt(_:_:)`](../api-1459780-stopspeechat.md) for more information.
 
 ## Topics
 
 ### Constants
-- [var kImmediate: Int32](kimmediate.md)
+- [var kImmediate: Int32](../kimmediate.md)
   Speech should be paused or stopped immediately.
-- [var kEndOfWord: Int32](kendofword.md)
+- [var kEndOfWord: Int32](../kendofword.md)
   Speech should be paused or stopped at the endof the word.
-- [var kEndOfSentence: Int32](kendofsentence.md)
+- [var kEndOfSentence: Int32](../kendofsentence.md)
   Speech should be paused or stopped at the end of the sentence.
 
 

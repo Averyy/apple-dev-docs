@@ -1,7 +1,8 @@
 # USDPrim.Property.Spec
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A handle to a property definition (attribute or relationship) stored in a layer.
 
@@ -21,60 +22,60 @@ struct Spec
 
 #### Overview
 
-`USDPrim.Property.Spec` is the untyped base for `USDPrim.Attribute.Spec` and `USDPrim.Relationship.Spec`. It acts as a handle into data owned by a [`USDLayer`](usdlayer.md) and mutations write through to the layer.
+`USDPrim.Property.Spec` is the untyped base for `USDPrim.Attribute.Spec` and `USDPrim.Relationship.Spec`. It acts as a handle into data owned by a [`USDLayer`](../../usdlayer.md) and mutations write through to the layer.
 
 ## Topics
 
 ### Protocols
-- [USDPrim.Property.Spec.SymmetryCollection](usdprim/property/spec/symmetrycollection.md)
+- [USDPrim.Property.Spec.SymmetryCollection](./spec/symmetrycollection.md)
   Symmetry and naming substitutions used in rigging.
-- [USDPrim.Property.Spec.ValueCollection](usdprim/property/spec/valuecollection.md)
+- [USDPrim.Property.Spec.ValueCollection](./spec/valuecollection.md)
   Value-related API for property specs that hold typed default values.
 ### Initializers
-- [init()](usdprim/property/spec/init.md)
+- [init()](./spec/init%28%29.md)
   Creates an empty (invalid) property spec handle.
-- [init?(USDLayer.Spec)](usdprim/property/spec/init(_:).md)
-  Narrows an untyped [`USDLayer.Spec`](usdlayer/spec.md) to a property spec.
+- [init?(USDLayer.Spec)](./spec/init%28_%29.md)
+  Narrows an untyped [`USDLayer.Spec`](../../usdlayer/spec.md) to a property spec.
 ### Instance Properties
-- [var comment: String?](usdprim/property/spec/comment.md)
+- [var comment: String?](./spec/comment.md)
   The authored user comment, or `nil` if not authored.
-- [var customData: Dictionary<String, USDValue>](usdprim/property/spec/customdata.md)
+- [var customData: Dictionary<String, USDValue>](./spec/customdata.md)
   The custom data dictionary authored on this property.
-- [var documentation: String?](usdprim/property/spec/documentation.md)
+- [var documentation: String?](./spec/documentation.md)
   The authored documentation, or `nil` if not authored.
-- [var isCustom: Bool](usdprim/property/spec/iscustom.md)
+- [var isCustom: Bool](./spec/iscustom.md)
   Whether this property was authored as `custom`.
-- [var name: USDToken](usdprim/property/spec/name.md)
+- [var name: USDToken](./spec/name.md)
   The property’s local name.
-- [var owner: USDLayer.Spec?](usdprim/property/spec/owner.md)
+- [var owner: USDLayer.Spec?](./spec/owner.md)
   The spec that contains this property — typically a prim spec or variant spec.
-- [var permission: USDLayer.Permission](usdprim/property/spec/permission.md)
+- [var permission: USDLayer.Permission](./spec/permission.md)
   The property’s permission level (public, restricted, private).
 ### Instance Methods
-- [func clearAssetInfo(String)](usdprim/property/spec/clearassetinfo(_:).md)
+- [func clearAssetInfo(String)](./spec/clearassetinfo%28_%29.md)
   Removes `key` from the asset info dictionary.
-- [func clearCustomData(String)](usdprim/property/spec/clearcustomdata(_:).md)
+- [func clearCustomData(String)](./spec/clearcustomdata%28_%29.md)
   Removes `key` from the custom data dictionary.
-- [func rename(to: USDToken) throws](usdprim/property/spec/rename(to:).md)
+- [func rename(to: USDToken) throws](./spec/rename%28to%29.md)
   Sets the property’s name.
-- [func setAssetInfo(String, to: USDValue)](usdprim/property/spec/setassetinfo(_:to:).md)
+- [func setAssetInfo(String, to: USDValue)](./spec/setassetinfo%28_,to%29.md)
   Sets `key` in the asset info dictionary to `value`. Read the full dictionary via `field("assetInfo")` from FieldCollection.
-- [func setCustomData(String, to: USDValue)](usdprim/property/spec/setcustomdata(_:to:).md)
+- [func setCustomData(String, to: USDValue)](./spec/setcustomdata%28_,to%29.md)
   Sets `key` in the custom data dictionary to `value`.
 ### Type Methods
-- [static func isValidName(USDToken) -> Bool](usdprim/property/spec/isvalidname(_:).md)
+- [static func isValidName(USDToken) -> Bool](./spec/isvalidname%28_%29.md)
   Returns a Boolean value that indicates whether `name` is a valid property name.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [USDLayer.Spec.FieldCollection](usdlayer/spec/fieldcollection.md)
-- [USDLayer.Spec.MetadataCollection](usdlayer/spec/metadatacollection.md)
-- [USDPrim.Property.Spec.SymmetryCollection](usdprim/property/spec/symmetrycollection.md)
-- [USDPrim.Property.Spec.ValueCollection](usdprim/property/spec/valuecollection.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [USDLayer.Spec.FieldCollection](../../usdlayer/spec/fieldcollection.md)
+- [USDLayer.Spec.MetadataCollection](../../usdlayer/spec/metadatacollection.md)
+- [USDPrim.Property.Spec.SymmetryCollection](./spec/symmetrycollection.md)
+- [USDPrim.Property.Spec.ValueCollection](./spec/valuecollection.md)
 
 
 ---

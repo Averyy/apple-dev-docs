@@ -1,7 +1,8 @@
 # semantic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The semantic of the vertex attribute, which describes how you want RealityKit to interpret the attribute.
 
@@ -21,15 +22,16 @@ var semantic: LowLevelMesh.VertexSemantic
 
 #### Discussion
 
-RealityKit consults the vertex semantic when interpreting the data in your [`LowLevelMesh`](lowlevelmesh.md). For example, an attribute with the semantic value of [`LowLevelMesh.VertexSemantic.position`](lowlevelmesh/vertexsemantic/position.md) uses to determine the position of a vertex.
+RealityKit consults the vertex semantic when interpreting the data in your [`LowLevelMesh`](../../lowlevelmesh.md). For example, an attribute with the semantic value of [`LowLevelMesh.VertexSemantic.position`](../vertexsemantic/position.md) uses to determine the position of a vertex.
 
 ## See Also
 
-- [var format: MTLVertexFormat](lowlevelmesh/attribute/format.md)
+### Describing an attribute
+- [var format: MTLVertexFormat](./format.md)
   The format of the vertex attribute.
-- [var offset: Int](lowlevelmesh/attribute/offset.md)
+- [var offset: Int](./offset.md)
   The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
-- [var layoutIndex: Int](lowlevelmesh/attribute/layoutindex.md)
+- [var layoutIndex: Int](./layoutindex.md)
   The index of the layout that contains this attribute.
 
 

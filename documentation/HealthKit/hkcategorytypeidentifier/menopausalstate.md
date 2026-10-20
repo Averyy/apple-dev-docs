@@ -1,7 +1,8 @@
 # menopausalState
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for samples that record a person’s menopausal state.
 
@@ -19,23 +20,28 @@ An identifier for samples that record a person’s menopausal state.
 static let menopausalState: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMenopausalState;
+```
+
 ## Mentions
 
-- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
+- [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
 
 #### Discussion
 
-Use this category type to record which menopausal state applies at a specific point in time. Each sample is a point-in-time entry where the start date equals the end date, and the value is one of the [`HKCategoryValueMenopausalState`](hkcategoryvaluemenopausalstate.md) cases: [`HKCategoryValueMenopausalState.menopause`](hkcategoryvaluemenopausalstate/menopause.md), [`HKCategoryValueMenopausalState.perimenopause`](hkcategoryvaluemenopausalstate/perimenopause.md), or [`HKCategoryValueMenopausalState.none`](hkcategoryvaluemenopausalstate/none.md).
+Use this category type to record which menopausal state applies at a specific point in time. Each sample is a point-in-time entry where the start date equals the end date, and the value is one of the [`HKCategoryValueMenopausalState`](../hkcategoryvaluemenopausalstate.md) cases: [`HKCategoryValueMenopausalState.menopause`](../hkcategoryvaluemenopausalstate/menopause.md), [`HKCategoryValueMenopausalState.perimenopause`](../hkcategoryvaluemenopausalstate/perimenopause.md), or [`HKCategoryValueMenopausalState.none`](../hkcategoryvaluemenopausalstate/none.md).
 
 Apps can interpret these point-in-time samples as state changes, confirmations that a state applied at a particular date, or both. When creating a menopausal state sample, the framework requires that the start date and end date be identical. Attempting to save a sample where these dates differ results in an error.
 
 ## See Also
 
-- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
+### Menopause
+- [Recording and querying menopausal state](../recording-and-querying-menopausal-state.md)
   Personalize someone’s experience on a health app by tracking the information they record on menopausal state.
-- [static let bleedingAfterMenopause: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingaftermenopause.md)
+- [static let bleedingAfterMenopause: HKCategoryTypeIdentifier](./bleedingaftermenopause.md)
   An identifier for samples that record bleeding after menopause.
-- [enum HKCategoryValueMenopausalState](hkcategoryvaluemenopausalstate.md)
+- [enum HKCategoryValueMenopausalState](../hkcategoryvaluemenopausalstate.md)
   A value that indicates the menopausal state at a recorded point in time.
 
 

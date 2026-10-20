@@ -1,7 +1,8 @@
 # usesAutomaticRowHeights
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the table view uses autolayout to calculate the height of rows.
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether the table view uses autolayout to calcula
 var usesAutomaticRowHeights: Bool { get set }
 ```
 
+```objc
+@property BOOL usesAutomaticRowHeights;
+```
+
 ## See Also
 
-- [var allowsColumnReordering: Bool](nstableview/allowscolumnreordering.md)
+### Configuring Behavior
+- [var allowsColumnReordering: Bool](./allowscolumnreordering.md)
   A Boolean value indicating whether the table view allows the user to rearrange columns by dragging their headers.
-- [var allowsColumnResizing: Bool](nstableview/allowscolumnresizing.md)
+- [var allowsColumnResizing: Bool](./allowscolumnresizing.md)
   A Boolean value indicating whether the table view allows the user to resize columns by dragging between their headers.
-- [var allowsMultipleSelection: Bool](nstableview/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean value indicating whether the table view allows the user to select more than one column or row at a time.
-- [var allowsEmptySelection: Bool](nstableview/allowsemptyselection.md)
+- [var allowsEmptySelection: Bool](./allowsemptyselection.md)
   A Boolean value indicating whether the table view allows the user to select zero columns or rows.
-- [var allowsColumnSelection: Bool](nstableview/allowscolumnselection.md)
+- [var allowsColumnSelection: Bool](./allowscolumnselection.md)
   A Boolean value indicating whether the table view allows the user to select columns by clicking their headers.
 
 

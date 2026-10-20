@@ -1,6 +1,7 @@
 # multiplePerformOperation
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An option that indicates how an action handles an additional invocation while running.
 
@@ -24,7 +25,8 @@ uniform token multiplePerformOperation= "ignore" (
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
 
 

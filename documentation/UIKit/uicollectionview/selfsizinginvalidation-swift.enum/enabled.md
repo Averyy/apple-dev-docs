@@ -1,7 +1,8 @@
 # UICollectionView.SelfSizingInvalidation.enabled
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that enables manual self-sizing invalidation.
 
@@ -18,15 +19,20 @@ A mode that enables manual self-sizing invalidation.
 case enabled
 ```
 
+```c
+UICollectionViewSelfSizingInvalidationEnabled
+```
+
 #### Discussion
 
-If you use this self-sizing invalidation mode, calling [`invalidateIntrinsicContentSize()`](uiview/invalidateintrinsiccontentsize().md) on a self-sizing cell or its [`contentView`](uicollectionviewcell/contentview.md) causes the cell to resize if necessary.
+If you use this self-sizing invalidation mode, calling [`invalidateIntrinsicContentSize()`](../../uiview/invalidateintrinsiccontentsize%28%29.md) on a self-sizing cell or its [`contentView`](../../uicollectionviewcell/contentview.md) causes the cell to resize if necessary.
 
 ## See Also
 
-- [UICollectionView.SelfSizingInvalidation.disabled](uicollectionview/selfsizinginvalidation-swift.enum/disabled.md)
+### Constants
+- [UICollectionView.SelfSizingInvalidation.disabled](./disabled.md)
   A mode that disables self-sizing invalidation.
-- [UICollectionView.SelfSizingInvalidation.enabledIncludingConstraints](uicollectionview/selfsizinginvalidation-swift.enum/enabledincludingconstraints.md)
+- [UICollectionView.SelfSizingInvalidation.enabledIncludingConstraints](./enabledincludingconstraints.md)
   A mode that enables automatic self-sizing invalidation after Auto Layout changes.
 
 

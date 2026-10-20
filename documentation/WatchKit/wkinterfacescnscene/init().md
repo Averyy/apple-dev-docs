@@ -1,12 +1,15 @@
 # init()
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a SceneKit scene for use in SwiftUI.
 
 **Availability**:
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use SceneKit.SceneView instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Creates a SceneKit scene for use in SwiftUI.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
-Use this initializer to create an instance that you can wrap in a [`WKInterfaceObjectRepresentable`](https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable) view. If you aren’t using SwiftUI, create the control by dragging it from the Object library to your storyboard instead.
+Use this initializer to create an instance that you can wrap in a [`WKInterfaceObjectRepresentable`](../../SwiftUI/wkinterfaceobjectrepresentable.md) view. If you aren’t using SwiftUI, create the control by dragging it from the Object library to your storyboard instead.
 
 
 ---

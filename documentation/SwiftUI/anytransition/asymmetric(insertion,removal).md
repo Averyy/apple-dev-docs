@@ -1,7 +1,8 @@
 # asymmetric(insertion:removal:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides a composite transition that uses a different transition for insertion versus removal.
 
@@ -22,9 +23,10 @@ static func asymmetric(insertion: AnyTransition, removal: AnyTransition) -> AnyT
 
 ## See Also
 
-- [func animation(Animation?) -> AnyTransition](anytransition/animation(_:).md)
+### Combining and configuring transitions
+- [func animation(Animation?) -> AnyTransition](./animation%28_%29.md)
   Attaches an animation to this transition.
-- [func combined(with: AnyTransition) -> AnyTransition](anytransition/combined(with:).md)
+- [func combined(with: AnyTransition) -> AnyTransition](./combined%28with%29.md)
   Combines this transition with another, returning a new transition that is the result of both transitions being applied.
 
 

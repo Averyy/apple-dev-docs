@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Transport Extension  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The session identifier for this capability session.
@@ -14,6 +15,12 @@ The session identifier for this capability session.
 ```swift
 var sessionID: UUID { get }
 ```
+
+## Default Implementations
+
+### AccessoryFeatureSession Implementations
+- [var sessionID: UUID](./sessionid-1qpen.md)
+  The session identifier for this capability session.
 
 
 ---

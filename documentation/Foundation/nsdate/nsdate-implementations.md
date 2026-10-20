@@ -1,12 +1,13 @@
 # NSDate Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](nsdate/init(timeinterval:sincedate:)-758u9.md)
-- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](nsdate/init(timeinterval:sincedate:)-7wnfb.md)
+- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](./init%28timeinterval,sincedate%29-758u9.md)
+- [convenience init(timeInterval: TimeInterval, sinceDate: Date)](./init%28timeinterval,sincedate%29-7wnfb.md)
 
 
 ---

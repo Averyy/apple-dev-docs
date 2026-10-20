@@ -1,7 +1,8 @@
 # TupleContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Content created from a tuple of content to be treated as siblings.
 
@@ -32,28 +33,29 @@ This type should be conformed to builder DSL protocols to represent tuple conten
 ## Topics
 
 ### Creating tuple content
-- [init(_:)](tuplecontent/init(_:).md)
+- [init(_:)](./tuplecontent/init%28_%29.md)
 ### Getting tuple content
-- [var content: (repeat each Content)](tuplecontent/content.md)
+- [var content: (repeat each Content)](./tuplecontent/content.md)
 
 ## Relationships
 
 ### Conforms To
-- [AccessibilityRotorContent](accessibilityrotorcontent.md)
-- [ChartContent](../charts/chartcontent.md)
-- [Commands](commands.md)
-- [Copyable](../swift/copyable.md)
-- [CustomizableToolbarContent](customizabletoolbarcontent.md)
-- [Escapable](../swift/escapable.md)
-- [SceneAccessoryContent](sceneaccessorycontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ToolbarContent](toolbarcontent.md)
-- [View](view.md)
+- [AccessibilityRotorContent](./accessibilityrotorcontent.md)
+- [ChartContent](../Charts/chartcontent.md)
+- [Commands](./commands.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomizableToolbarContent](./customizabletoolbarcontent.md)
+- [Escapable](../Swift/escapable.md)
+- [SceneAccessoryContent](./sceneaccessorycontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ToolbarContent](./toolbarcontent.md)
+- [View](./view.md)
 
 ## See Also
 
-- [typealias EmptyContent](emptycontent.md)
+### Supporting content types
+- [typealias EmptyContent](./emptycontent.md)
   Content which contains nothing.
 
 

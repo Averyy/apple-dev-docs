@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar to use for date values.
 
@@ -20,21 +21,26 @@ The calendar to use for date values.
 var calendar: Calendar! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSCalendar * calendar;
+```
+
 #### Discussion
 
-The default value of this property is the calendar associated with the current [`locale`](dateintervalformatter/locale.md) object. You can change this value to use a different calendar for interpreting dates.
+The default value of this property is the calendar associated with the current [`locale`](./locale.md) object. You can change this value to use a different calendar for interpreting dates.
 
 ## See Also
 
-- [var dateStyle: DateIntervalFormatter.Style](dateintervalformatter/datestyle.md)
+### Configuring the Formatter Options
+- [var dateStyle: DateIntervalFormatter.Style](./datestyle.md)
   The style to use when formatting day, month, and year information.
-- [var timeStyle: DateIntervalFormatter.Style](dateintervalformatter/timestyle.md)
+- [var timeStyle: DateIntervalFormatter.Style](./timestyle.md)
   The style to use when formatting hour, minute, and second information.
-- [var dateTemplate: String!](dateintervalformatter/datetemplate.md)
+- [var dateTemplate: String!](./datetemplate.md)
   The template for formatting one date and time value.
-- [var locale: Locale!](dateintervalformatter/locale.md)
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting date and time values.
-- [var timeZone: TimeZone!](dateintervalformatter/timezone.md)
+- [var timeZone: TimeZone!](./timezone.md)
   The time zone with which to specify time values.
 
 

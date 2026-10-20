@@ -1,16 +1,17 @@
 # source
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A source that can be used to understand which type the content represents.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 27.0 (renamed: schemaName)
+- iPadOS 26.0+ - Deprecated in 27.0 (renamed: schemaName)
+- Mac Catalyst 26.0+ - Deprecated in 27.0 (renamed: schemaName)
+- macOS 26.0+ - Deprecated in 27.0 (renamed: schemaName)
+- visionOS 26.0+ - Deprecated in 27.0 (renamed: schemaName)
 
 ## Declaration
 
@@ -20,9 +21,10 @@ var source: String
 
 ## See Also
 
-- [var content: GeneratedContent](transcript/structuredsegment/content.md)
+### Inspecting a structured segment
+- [var content: GeneratedContent](./content.md)
   The content of the segment.
-- [var schemaName: String](transcript/structuredsegment/schemaname.md)
+- [var schemaName: String](./schemaname.md)
   A name that can be used to understand which type the content represents.
 
 

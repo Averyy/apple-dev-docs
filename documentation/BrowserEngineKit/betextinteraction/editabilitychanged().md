@@ -1,7 +1,8 @@
 # editabilityChanged()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system that the document’s editability status has changed.
 
@@ -17,13 +18,18 @@ Tells the system that the document’s editability status has changed.
 func editabilityChanged()
 ```
 
+```objc
+- (void) editabilityChanged;
+```
+
 #### Discussion
 
 In response, the system refreshes the text interaction gestures, depending on the value of `isEditable`
 
 ## See Also
 
-- [func refreshKeyboardUI()](betextinteraction/refreshkeyboardui.md)
+### UI updates
+- [func refreshKeyboardUI()](./refreshkeyboardui%28%29.md)
   Tells the system to refresh the keyboard UI.
 
 

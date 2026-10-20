@@ -1,7 +1,8 @@
 # init(parentElement:textList:contents:markerAttributes:childElements:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 13.0+

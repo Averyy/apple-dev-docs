@@ -1,7 +1,8 @@
 # avgPooling4D(_:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 4D average pooling operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 4D average pooling operation and returns the result tensor.
 
 ```swift
 func avgPooling4D(_ source: MPSGraphTensor, descriptor: MPSGraphPooling4DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) avgPooling4DWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling4DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

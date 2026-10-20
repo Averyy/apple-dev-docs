@@ -1,7 +1,8 @@
 # init(mappingTransform:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Declares support for the `hasSuffix` operator between a `String` property and user-supplied values.
 
@@ -11,7 +12,7 @@ Declares support for the `hasSuffix` operator between a `String` property and us
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ init(mappingTransform: @escaping (InputType) -> ComparatorMappingType) where Pro
 
 ## See Also
 
-- [init(mappingTransform: (InputType) -> ComparatorMappingType)](hassuffixcomparator/init(mappingtransform:)-5cmgi.md)
+### Creating a comparator
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](./init%28mappingtransform%29-5cmgi.md)
   Declares support for the `hasSuffix` operator between a `String?` property and user-supplied values.
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](hassuffixcomparator/init(withresolvers:mappingtransform:)-5rtmw.md)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](./init%28withresolvers,mappingtransform%29-5rtmw.md)
   Declares support for the `hasSuffix` operator between a `String?` property and user-supplied values.
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](hassuffixcomparator/init(withresolvers:mappingtransform:)-7tdan.md)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](./init%28withresolvers,mappingtransform%29-7tdan.md)
   Declares support for the `hasSuffix` operator between a `String` property and user-supplied values.
 
 

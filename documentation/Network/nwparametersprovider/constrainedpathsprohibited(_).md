@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prohibit using constrained paths.
@@ -28,6 +29,12 @@ Prohibit connections and listeners from using a network interface that is consid
 ## Parameters
 
 - `prohibited`: True if constrained paths are prohibited, false otherwise.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func constrainedPathsProhibited(Bool) -> Self](./constrainedpathsprohibited%28_%29-5anfr.md)
+  Prohibit using constrained paths.
 
 
 ---

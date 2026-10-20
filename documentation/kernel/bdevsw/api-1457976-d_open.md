@@ -1,14 +1,15 @@
 # d_open
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 open_close_fcn_t *d_open;
 ```
 

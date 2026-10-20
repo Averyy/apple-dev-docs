@@ -1,7 +1,8 @@
 # ImmersiveCameraCalibration.CalibrationType.usdzMesh(_:)
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a calibration type that uses a calibration mesh containing the calibration for each lens represented as a mesh inside a USDZ file.
 

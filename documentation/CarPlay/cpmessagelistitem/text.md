@@ -1,7 +1,8 @@
 # text
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list item’s primary text.
 
@@ -16,15 +17,20 @@ The list item’s primary text.
 var text: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * text;
+```
+
 #### Discussion
 
 Siri speaks this text when the user selects the list item.
 
 ## See Also
 
-- [var detailText: String?](cpmessagelistitem/detailtext.md)
+### Managing Content
+- [var detailText: String?](./detailtext.md)
   The list item’s secondary text.
-- [var trailingText: String?](cpmessagelistitem/trailingtext.md)
+- [var trailingText: String?](./trailingtext.md)
   The list item’s supplementary text.
 
 

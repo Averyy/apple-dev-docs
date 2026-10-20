@@ -1,7 +1,8 @@
 # error
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An event signifying an error occurred during the request.
 
@@ -10,21 +11,22 @@ An event signifying an error occurred during the request.
 
 ## Declaration
 
-```swift
+```
 attribute  error;
 ```
 
 ## See Also
 
-- [abort](xmlhttprequest/1627402-abort.md)
+### Responding to Events
+- [abort](./api-1627402-abort.md)
   An event signifying the request has aborted.
-- [load](xmlhttprequest/1627352-load.md)
+- [load](./api-1627352-load.md)
   An event signifying the request was successfully loaded.
-- [loadend](xmlhttprequest/1627393-loadend.md)
+- [loadend](./api-1627393-loadend.md)
   An event signifying the request has been completed.
-- [loadstart](xmlhttprequest/1627371-loadstart.md)
+- [loadstart](./api-1627371-loadstart.md)
   An event signifying the request has begun.
-- [readystatechange](xmlhttprequest/1627304-readystatechange.md)
+- [readystatechange](./api-1627304-readystatechange.md)
   An event signifying that a state change has occurred.
 
 

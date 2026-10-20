@@ -1,7 +1,8 @@
 # searchPresentationToolbarBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the search toolbar presentation behavior for any searchable modifiers within this view.
 
@@ -23,7 +24,7 @@ func searchPresentationToolbarBehavior(_ behavior: SearchPresentationToolbarBeha
 
 #### Discussion
 
-By default on iOS, a toolbar may hide parts of its content when presenting search to focus on searching. You can override this behavior by providing a value of [`avoidHidingContent`](searchpresentationtoolbarbehavior/avoidhidingcontent.md) to this modifer.
+By default on iOS, a toolbar may hide parts of its content when presenting search to focus on searching. You can override this behavior by providing a value of [`avoidHidingContent`](../searchpresentationtoolbarbehavior/avoidhidingcontent.md) to this modifer.
 
 ```swift
 @State private var searchText = ""
@@ -37,7 +38,8 @@ List {
 
 ## See Also
 
-- [struct SearchPresentationToolbarBehavior](searchpresentationtoolbarbehavior.md)
+### Displaying toolbar content during search
+- [struct SearchPresentationToolbarBehavior](../searchpresentationtoolbarbehavior.md)
   A type that defines how the toolbar behaves when presenting search.
 
 

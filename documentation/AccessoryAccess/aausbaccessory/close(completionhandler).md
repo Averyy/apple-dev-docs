@@ -1,7 +1,8 @@
 # close(completionHandler:)
 
 **Framework**: Accessory Access  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes all connections to the USB accessory for this process.
 
@@ -11,16 +12,24 @@ Closes all connections to the USB accessory for this process.
 ## Declaration
 
 ```swift
+func close(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func close() async throws
+```
+
+```objc
+- (void) closeWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion
 
-> ⚠️ **Warning**: Closing an accessory by calling the `destroy()` method on an [`IOUSBHostDevice`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice) is a blocking operation. Such an operation causes a deadlock, if you call it from a completion handler.
+> ⚠️ **Warning**: Closing an accessory by calling the `destroy()` method on an [`IOUSBHostDevice`](../../IOUSBHost/iousbhostdevice.md) is a blocking operation. Such an operation causes a deadlock, if you call it from a completion handler.
 
-This operation closes the USB accessory, that the app previously opened through [`open(serviceQueue:completionHandler:)`](aausbaccessory/open(servicequeue:completionhandler:).md). Once this operation completes, the framework invalidates any [`IOUSBHostDevice`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice) object it previously returned and you can’t use it for USB transfers. This operation has the same effect as calling the destroy method on [`IOUSBHostDevice`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice).
+This operation closes the USB accessory, that the app previously opened through [`open(serviceQueue:completionHandler:)`](./open%28servicequeue,completionhandler%29.md). Once this operation completes, the framework invalidates any [`IOUSBHostDevice`](../../IOUSBHost/iousbhostdevice.md) object it previously returned and you can’t use it for USB transfers. This operation has the same effect as calling the destroy method on [`IOUSBHostDevice`](../../IOUSBHost/iousbhostdevice.md).
 
-Once the app closes the accessory, the app can re-open the accessory using this process or any other worker process of this client application for exclusive access using [`open(serviceQueue:completionHandler:)`](aausbaccessory/open(servicequeue:completionhandler:).md).
+Once the app closes the accessory, the app can re-open the accessory using this process or any other worker process of this client application for exclusive access using [`open(serviceQueue:completionHandler:)`](./open%28servicequeue,completionhandler%29.md).
 
 ## Parameters
 
@@ -28,7 +37,8 @@ Once the app closes the accessory, the app can re-open the accessory using this 
 
 ## See Also
 
-- [func open(serviceQueue: dispatch_queue_t?, completionHandler: (IOUSBHostDevice, (any Error)?) -> Void)](aausbaccessory/open(servicequeue:completionhandler:).md)
+### Managing a USB accessory
+- [func open(serviceQueue: dispatch_queue_t?, completionHandler: (IOUSBHostDevice, (any Error)?) -> Void)](./open%28servicequeue,completionhandler%29.md)
   Opens a connection to the USB accessory for this process to access it exclusively.
 
 

@@ -1,7 +1,8 @@
 # WebPage.Configuration.MediaPlaybackBehavior.allowsInlinePlayback
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows videos to play inline. When adding a video element to an HTML document on iPhone, you must also include the `playsinline` attribute.
 

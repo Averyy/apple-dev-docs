@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of value the system under test produces.

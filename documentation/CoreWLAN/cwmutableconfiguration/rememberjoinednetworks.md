@@ -1,7 +1,8 @@
 # rememberJoinedNetworks
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to remember all joined Wi-Fi networks unless the user specifies otherwise when joining a particular Wi-Fi network.
 
@@ -14,13 +15,18 @@ A Boolean value that determines whether to remember all joined Wi-Fi networks un
 var rememberJoinedNetworks: Bool { get set }
 ```
 
+```objc
+@property BOOL rememberJoinedNetworks;
+```
+
 ## See Also
 
-- [var requireAdministratorForAssociation: Bool](cwmutableconfiguration/requireadministratorforassociation.md)
+### Configuring Settings
+- [var requireAdministratorForAssociation: Bool](./requireadministratorforassociation.md)
   A Boolean value that determines whether to require an administrator password to change networks.
-- [var requireAdministratorForPower: Bool](cwmutableconfiguration/requireadministratorforpower.md)
+- [var requireAdministratorForPower: Bool](./requireadministratorforpower.md)
   A Boolean value that determines whether to require an administrator password to change the interface power state.
-- [var requireAdministratorForIBSSMode: Bool](cwmutableconfiguration/requireadministratorforibssmode.md)
+- [var requireAdministratorForIBSSMode: Bool](./requireadministratorforibssmode.md)
   A Boolean value that determines whether to require an administrator password to create a computer-to-computer network.
 
 

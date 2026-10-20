@@ -1,7 +1,8 @@
 # init(forFunction:selectorName:arguments:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an expression that returns the result of invoking a selector with a specified name using specified arguments.
 
@@ -20,13 +21,17 @@ Creates an expression that returns the result of invoking a selector with a spec
 init(forFunction target: NSExpression, selectorName name: String, arguments parameters: [Any]?)
 ```
 
+```objc
++ (NSExpression *) expressionForFunction:(NSExpression *) target selectorName:(NSString *) name arguments:(NSArray *) parameters;
+```
+
 #### Return Value
 
 An expression which will return the result of invoking the selector named `name` on the result of evaluating the target expression with the parameters specified by evaluating the elements of `parameters`.
 
 #### Discussion
 
-See the description of [`init(forFunction:arguments:)`](nsexpression/init(forfunction:arguments:).md) for examples of how to construct the parameter array.
+See the description of [`init(forFunction:arguments:)`](./init%28forfunction,arguments%29.md) for examples of how to construct the parameter array.
 
 ##### Special Considerations
 
@@ -42,7 +47,8 @@ This expression effectively allows your application to invoke any method on any 
 
 ## See Also
 
-- [init(forFunction: String, arguments: [Any])](nsexpression/init(forfunction:arguments:).md)
+### Creating an Expression for a Function
+- [init(forFunction: String, arguments: [Any])](./init%28forfunction,arguments%29.md)
   Creates an expression that invokes one of the predefined functions.
 
 

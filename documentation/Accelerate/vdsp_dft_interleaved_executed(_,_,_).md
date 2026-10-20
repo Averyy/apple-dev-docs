@@ -1,7 +1,8 @@
 # vDSP_DFT_Interleaved_ExecuteD(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the double-precision discrete Fourier transform (DFT) for a vector of interleaved complex values.
 
@@ -20,6 +21,10 @@ Calculates the double-precision discrete Fourier transform (DFT) for a vector of
 func vDSP_DFT_Interleaved_ExecuteD(_ Setup: vDSP_DFT_Interleaved_SetupD, _ Iri: UnsafePointer<DSPDoubleComplex>, _ Ori: UnsafeMutablePointer<DSPDoubleComplex>)
 ```
 
+```c
+void vDSP_DFT_Interleaved_ExecuteD(vDSP_DFT_Interleaved_SetupD const Setup, const DSPDoubleComplex *Iri, DSPDoubleComplex *Ori);
+```
+
 #### Discussion
 
 This function supports in-place operation where the output and input parameters are equal. The transform length must equal the transform length specified in the setup structure.
@@ -34,17 +39,18 @@ This function supports in-place operation where the output and input parameters 
 
 ## See Also
 
-- [Performing Fourier transforms on interleaved-complex data](performing-fourier-transforms-on-interleaved-complex-data.md)
+### Interleaved discrete Fourier transform functions
+- [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
   Optimize discrete Fourier transform (DFT) performance with the vDSP interleaved DFT routines.
-- [func vDSP_DFT_Interleaved_CreateSetup(vDSP_DFT_Interleaved_Setup?, vDSP_Length, vDSP_DFT_Direction, vDSP_DFT_RealtoComplex) -> vDSP_DFT_Interleaved_Setup?](vdsp_dft_interleaved_createsetup(_:_:_:_:).md)
+- [func vDSP_DFT_Interleaved_CreateSetup(vDSP_DFT_Interleaved_Setup?, vDSP_Length, vDSP_DFT_Direction, vDSP_DFT_RealtoComplex) -> vDSP_DFT_Interleaved_Setup?](./vdsp_dft_interleaved_createsetup%28_,_,_,_%29.md)
   Returns a setup structure that contains precalculated data for forward and inverse, single-precision interleaved discrete Fourier transform (DFT) functions.
-- [func vDSP_DFT_Interleaved_CreateSetupD(vDSP_DFT_Interleaved_SetupD?, vDSP_Length, vDSP_DFT_Direction, vDSP_DFT_RealtoComplex) -> vDSP_DFT_Interleaved_SetupD?](vdsp_dft_interleaved_createsetupd(_:_:_:_:).md)
+- [func vDSP_DFT_Interleaved_CreateSetupD(vDSP_DFT_Interleaved_SetupD?, vDSP_Length, vDSP_DFT_Direction, vDSP_DFT_RealtoComplex) -> vDSP_DFT_Interleaved_SetupD?](./vdsp_dft_interleaved_createsetupd%28_,_,_,_%29.md)
   Returns a setup structure that contains precalculated data for forward and inverse, double-precision interleaved discrete Fourier transform (DFT) functions.
-- [func vDSP_DFT_Interleaved_Execute(vDSP_DFT_Interleaved_Setup, UnsafePointer<DSPComplex>, UnsafeMutablePointer<DSPComplex>)](vdsp_dft_interleaved_execute(_:_:_:).md)
+- [func vDSP_DFT_Interleaved_Execute(vDSP_DFT_Interleaved_Setup, UnsafePointer<DSPComplex>, UnsafeMutablePointer<DSPComplex>)](./vdsp_dft_interleaved_execute%28_,_,_%29.md)
   Calculates the single-precision discrete Fourier transform (DFT)  for a vector of interleaved complex values.
-- [func vDSP_DFT_Interleaved_DestroySetup(vDSP_DFT_Interleaved_Setup?)](vdsp_dft_interleaved_destroysetup(_:).md)
+- [func vDSP_DFT_Interleaved_DestroySetup(vDSP_DFT_Interleaved_Setup?)](./vdsp_dft_interleaved_destroysetup%28_%29.md)
   Releases a single-precision discrete Fourier transform (DFT) setup structure.
-- [func vDSP_DFT_Interleaved_DestroySetupD(vDSP_DFT_Interleaved_SetupD?)](vdsp_dft_interleaved_destroysetupd(_:).md)
+- [func vDSP_DFT_Interleaved_DestroySetupD(vDSP_DFT_Interleaved_SetupD?)](./vdsp_dft_interleaved_destroysetupd%28_%29.md)
   Releases a double-precision discrete Fourier transform (DFT) setup structure.
 
 

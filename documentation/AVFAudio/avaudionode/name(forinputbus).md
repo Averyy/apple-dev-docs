@@ -1,7 +1,8 @@
 # name(forInputBus:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the name of the input bus you specify.
 
@@ -20,6 +21,10 @@ Gets the name of the input bus you specify.
 func name(forInputBus bus: AVAudioNodeBus) -> String?
 ```
 
+```objc
+- (NSString *) nameForInputBus:(AVAudioNodeBus) bus;
+```
+
 #### Return Value
 
 The name of the input bus.
@@ -30,11 +35,12 @@ The name of the input bus.
 
 ## See Also
 
-- [typealias AVAudioNodeBus](avaudionodebus.md)
+### Inspecting input buses
+- [typealias AVAudioNodeBus](../avaudionodebus.md)
   The index of a bus on an audio node.
-- [func inputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](avaudionode/inputformat(forbus:).md)
+- [func inputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](./inputformat%28forbus%29.md)
   Gets the input format for the bus you specify.
-- [var numberOfInputs: Int](avaudionode/numberofinputs.md)
+- [var numberOfInputs: Int](./numberofinputs.md)
   The number of input busses for the node.
 
 

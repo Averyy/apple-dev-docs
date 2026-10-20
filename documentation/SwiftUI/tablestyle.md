@@ -1,7 +1,8 @@
 # TableStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that applies a custom appearance to all tables within a view.
 
@@ -21,7 +22,7 @@ A type that applies a custom appearance to all tables within a view.
 
 #### Overview
 
-To configure the current table style for a view hierarchy, use the [`tableStyle(_:)`](view/tablestyle(_:).md) modifier.
+To configure the current table style for a view hierarchy, use the [`tableStyle(_:)`](./view/tablestyle%28_%29.md) modifier.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -42,51 +43,52 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting built-in table styles
-- [static var automatic: AutomaticTableStyle](tablestyle/automatic.md)
+- [static var automatic: AutomaticTableStyle](./tablestyle/automatic.md)
   The default table style in the current context.
-- [static var inset: InsetTableStyle](tablestyle/inset.md)
+- [static var inset: InsetTableStyle](./tablestyle/inset.md)
   The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
-- [static var bordered: BorderedTableStyle](tablestyle/bordered.md)
+- [static var bordered: BorderedTableStyle](./tablestyle/bordered.md)
   The table style that describes the behavior and appearance of a table with standard border.
-- [static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle](tablestyle/inset(alternatesrowbackgrounds:).md)
+- [static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle](./tablestyle/inset%28alternatesrowbackgrounds%29.md)
   The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
-- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle](tablestyle/bordered(alternatesrowbackgrounds:).md)
+- [static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle](./tablestyle/bordered%28alternatesrowbackgrounds%29.md)
   The table style that describes the behavior and appearance of a table with standard border.
 ### Creating custom table styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](tablestyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./tablestyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a table.
-- [TableStyle.Configuration](tablestyle/configuration.md)
+- [TableStyle.Configuration](./tablestyle/configuration.md)
   The properties of a table.
-- [associatedtype Body : View](tablestyle/body.md)
+- [associatedtype Body : View](./tablestyle/body.md)
   A view that represents the body of a table.
 ### Supporting types
-- [struct AutomaticTableStyle](automatictablestyle.md)
+- [struct AutomaticTableStyle](./automatictablestyle.md)
   The default table style in the current context.
-- [struct InsetTableStyle](insettablestyle.md)
+- [struct InsetTableStyle](./insettablestyle.md)
   The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
-- [struct BorderedTableStyle](borderedtablestyle.md)
+- [struct BorderedTableStyle](./borderedtablestyle.md)
   The table style that describes the behavior and appearance of a table with standard border.
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticTableStyle](automatictablestyle.md)
-- [BorderedTableStyle](borderedtablestyle.md)
-- [InsetTableStyle](insettablestyle.md)
+- [AutomaticTableStyle](./automatictablestyle.md)
+- [BorderedTableStyle](./borderedtablestyle.md)
+- [InsetTableStyle](./insettablestyle.md)
 
 ## See Also
 
-- [func listStyle<S>(S) -> some View](view/liststyle(_:).md)
+### Styling collection views
+- [func listStyle<S>(S) -> some View](./view/liststyle%28_%29.md)
   Sets the style for lists within this view.
-- [protocol ListStyle](liststyle.md)
+- [protocol ListStyle](./liststyle.md)
   A protocol that describes the behavior and appearance of a list.
-- [func tableStyle<S>(S) -> some View](view/tablestyle(_:).md)
+- [func tableStyle<S>(S) -> some View](./view/tablestyle%28_%29.md)
   Sets the style for tables within this view.
-- [struct TableStyleConfiguration](tablestyleconfiguration.md)
+- [struct TableStyleConfiguration](./tablestyleconfiguration.md)
   The properties of a table.
-- [func disclosureGroupStyle<S>(S) -> some View](view/disclosuregroupstyle(_:).md)
+- [func disclosureGroupStyle<S>(S) -> some View](./view/disclosuregroupstyle%28_%29.md)
   Sets the style for disclosure groups within this view.
-- [protocol DisclosureGroupStyle](disclosuregroupstyle.md)
+- [protocol DisclosureGroupStyle](./disclosuregroupstyle.md)
   A type that specifies the appearance and interaction of disclosure groups within a view hierarchy.
 
 

@@ -1,7 +1,8 @@
 # DataStoreSnapshotCodingKey.modeledProperty(_:)
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents the name of the modeled property.
 

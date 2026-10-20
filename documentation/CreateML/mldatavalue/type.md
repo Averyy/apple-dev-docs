@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of the underlying value that the data value wraps.
 
@@ -21,7 +22,8 @@ var type: MLDataValue.ValueType { get }
 
 ## See Also
 
-- [MLDataValue.ValueType](mldatavalue/valuetype.md)
+### Inspecting the type
+- [MLDataValue.ValueType](./valuetype.md)
   An enumeration describing the supported underlying types that an `MLDataValue wraps`.
 
 

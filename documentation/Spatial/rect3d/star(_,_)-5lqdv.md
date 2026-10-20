@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a new rectangle after applying the pose to the rectangle.
 
@@ -11,7 +12,7 @@ Returns a new rectangle after applying the pose to the rectangle.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,9 +28,10 @@ static func * (lhs: Pose3D, rhs: Rect3D) -> Rect3D
 
 ## See Also
 
-- [static func * (AffineTransform3D, Rect3D) -> Rect3D](rect3d/*(_:_:)-8710d.md)
+### Applying arithmetic operations
+- [static func * (AffineTransform3D, Rect3D) -> Rect3D](./star%28_,_%29-8710d.md)
   Returns the rectangle that results from applying the affine transform to the rectangle.
-- [static func * (ProjectiveTransform3D, Rect3D) -> Rect3D](rect3d/*(_:_:)-8vu0.md)
+- [static func * (ProjectiveTransform3D, Rect3D) -> Rect3D](./star%28_,_%29-8vu0.md)
   Returns the rectangle that results from applying the projective transform to the rectangle.
 
 

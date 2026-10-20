@@ -1,14 +1,15 @@
 # useconds_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef __darwin_useconds_t useconds_t;
 ```
 

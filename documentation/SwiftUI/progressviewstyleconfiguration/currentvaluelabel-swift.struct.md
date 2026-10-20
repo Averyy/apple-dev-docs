@@ -1,7 +1,8 @@
 # ProgressViewStyleConfiguration.CurrentValueLabel
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label that describes the current value of a progress view.
 
@@ -24,11 +25,12 @@ A type-erased label that describes the current value of a progress view.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [var currentValueLabel: ProgressViewStyleConfiguration.CurrentValueLabel?](progressviewstyleconfiguration/currentvaluelabel-swift.property.md)
+### Configuring the current value label
+- [var currentValueLabel: ProgressViewStyleConfiguration.CurrentValueLabel?](./currentvaluelabel-swift.property.md)
   A view that describes the current value of a progress view.
 
 

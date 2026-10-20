@@ -1,7 +1,8 @@
 # applicationDidChangeScreenParameters(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate about changes to the configuration of any attached displays.
 
@@ -15,9 +16,13 @@ Tells the delegate about changes to the configuration of any attached displays.
 optional func applicationDidChangeScreenParameters(_ notification: Notification)
 ```
 
+```objc
+- (void) applicationDidChangeScreenParameters:(NSNotification *) notification;
+```
+
 ## Parameters
 
-- `notification`: A notification named [`didChangeScreenParametersNotification`](nsapplication/didchangescreenparametersnotification.md). Calling the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) method of this notification returns the `NSApplication` object itself.
+- `notification`: A notification named [`didChangeScreenParametersNotification`](../nsapplication/didchangescreenparametersnotification.md). Calling the [`object`](../../Foundation/nsnotification/object.md) method of this notification returns the `NSApplication` object itself.
 
 
 ---

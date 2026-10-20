@@ -1,7 +1,8 @@
 # MTLFunctionType.mesh
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case mesh
+```
+
+```c
+MTLFunctionTypeMesh
 ```
 
 

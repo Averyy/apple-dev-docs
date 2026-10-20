@@ -1,7 +1,8 @@
 # bringAllToFront
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Bring All to Front menu.
 
@@ -18,9 +19,14 @@ The Bring All to Front menu.
 static let bringAllToFront: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuBringAllToFront;
+```
+
 ## See Also
 
-- [static let minimizeAndZoom: UIMenu.Identifier](uimenu/identifier-swift.struct/minimizeandzoom.md)
+### Window menus
+- [static let minimizeAndZoom: UIMenu.Identifier](./minimizeandzoom.md)
   The Minimize and Zoom menu.
 
 

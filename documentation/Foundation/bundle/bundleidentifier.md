@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s bundle identifier.
 
@@ -20,19 +21,24 @@ The receiver’s bundle identifier.
 var bundleIdentifier: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * bundleIdentifier;
+```
+
 #### Discussion
 
 The bundle identifier is defined by the `CFBundleIdentifier` key in the bundle’s information property list.
 
 ## See Also
 
-- [var bundleURL: URL](bundle/bundleurl.md)
+### Getting bundle information
+- [var bundleURL: URL](./bundleurl.md)
   The full URL of the receiver’s bundle directory.
-- [var bundlePath: String](bundle/bundlepath.md)
+- [var bundlePath: String](./bundlepath.md)
   The full pathname of the receiver’s bundle directory.
-- [var infoDictionary: [String : Any]?](bundle/infodictionary.md)
+- [var infoDictionary: [String : Any]?](./infodictionary.md)
   A dictionary, constructed from the bundle’s `Info.plist` file, that contains information about the receiver.
-- [func object(forInfoDictionaryKey: String) -> Any?](bundle/object(forinfodictionarykey:).md)
+- [func object(forInfoDictionaryKey: String) -> Any?](./object%28forinfodictionarykey%29.md)
   Returns the value associated with the specified key in the receiver’s information property list.
 
 

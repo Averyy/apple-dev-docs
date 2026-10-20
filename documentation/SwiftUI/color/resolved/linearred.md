@@ -1,7 +1,8 @@
 # linearRed
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of red in the color in the sRGB linear color space.
 

@@ -1,7 +1,8 @@
 # LowLevelRenderer.CullConfiguration.Frustum
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A culling frustum defined by a set of planes.
 
@@ -20,17 +21,18 @@ struct Frustum
 ## Topics
 
 ### Creating a frustum
-- [init(cullingPlanes: [LowLevelRenderer.CullConfiguration.Plane])](lowlevelrenderer/cullconfiguration/frustum-swift.struct/init(cullingplanes:).md)
+- [init(cullingPlanes: [LowLevelRenderer.CullConfiguration.Plane])](./frustum-swift.struct/init%28cullingplanes%29.md)
   Creates a frustum with the given culling planes.
-- [var cullingPlanes: [LowLevelRenderer.CullConfiguration.Plane]](lowlevelrenderer/cullconfiguration/frustum-swift.struct/cullingplanes.md)
+- [var cullingPlanes: [LowLevelRenderer.CullConfiguration.Plane]](./frustum-swift.struct/cullingplanes.md)
   The planes that define the culling volume.
 ### Initializers
-- [init(from: LowLevelRenderer.Camera)](lowlevelrenderer/cullconfiguration/frustum-swift.struct/init(from:).md)
+- [init(from: LowLevelRenderer.Camera)](./frustum-swift.struct/init%28from%29.md)
   Creates a frustum by computing the culling planes for the given camera.
 
 ## See Also
 
-- [var frustum: LowLevelRenderer.CullConfiguration.Frustum](lowlevelrenderer/cullconfiguration/frustum-swift.property.md)
+### Configuring the frustum
+- [var frustum: LowLevelRenderer.CullConfiguration.Frustum](./frustum-swift.property.md)
   The frustum to test instances against.
 
 

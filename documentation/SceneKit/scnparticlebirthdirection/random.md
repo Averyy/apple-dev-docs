@@ -1,18 +1,19 @@
 # SCNParticleBirthDirection.random
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 SceneKit randomizes the emitting direction for each particle.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,11 +21,16 @@ SceneKit randomizes the emitting direction for each particle.
 case random
 ```
 
+```c
+SCNParticleBirthDirectionRandom
+```
+
 ## See Also
 
-- [SCNParticleBirthDirection.constant](scnparticlebirthdirection/constant.md)
+### Constants
+- [SCNParticleBirthDirection.constant](./constant.md)
   The emitting direction is the same for all particles.
-- [SCNParticleBirthDirection.surfaceNormal](scnparticlebirthdirection/surfacenormal.md)
+- [SCNParticleBirthDirection.surfaceNormal](./surfacenormal.md)
   The emitting direction for each particle is along the surface normal vector at the point where the particle is emitted.
 
 

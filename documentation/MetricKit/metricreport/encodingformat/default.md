@@ -1,7 +1,8 @@
 # MetricReport.EncodingFormat.default
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Default format with state entries and interval entries as arrays.
 
@@ -23,7 +24,8 @@ State entries are provided as an array, interval entries are provided as an arra
 
 ## See Also
 
-- [MetricReport.EncodingFormat.byStateReportingDomain](metricreport/encodingformat/bystatereportingdomain.md)
+### Encoding formats
+- [MetricReport.EncodingFormat.byStateReportingDomain](./bystatereportingdomain.md)
   Format with entries organized by StateReporting domain.
 
 

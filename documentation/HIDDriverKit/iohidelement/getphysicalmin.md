@@ -1,15 +1,16 @@
 # getPhysicalMin
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getPhysicalMin();
 ```
 
@@ -19,9 +20,10 @@ Returns the element’s physical minimum.
 
 ## See Also
 
-- [getLogicalMin](iohidelement/getlogicalmin.md)
-- [getLogicalMax](iohidelement/getlogicalmax.md)
-- [getPhysicalMax](iohidelement/getphysicalmax.md)
+### Getting Minimum and Maximum Values
+- [getLogicalMin](./getlogicalmin.md)
+- [getLogicalMax](./getlogicalmax.md)
+- [getPhysicalMax](./getphysicalmax.md)
 
 
 ---

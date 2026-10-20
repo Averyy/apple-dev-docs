@@ -1,7 +1,8 @@
 # AssistantSchemas.VisualIntelligenceIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that match visual intelligence intents.
 
@@ -23,16 +24,16 @@ protocol VisualIntelligenceIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var semanticContentSearch: some AssistantSchemas.Intent](assistantschemas/visualintelligenceintent/semanticcontentsearch.md)
+- [var semanticContentSearch: some AssistantSchemas.Intent](./visualintelligenceintent/semanticcontentsearch.md)
   The app intent conforms to the schema for visual search functionality.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

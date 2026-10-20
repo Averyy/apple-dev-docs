@@ -1,7 +1,8 @@
 # play()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes the simulation from a paused or stepped state.
 

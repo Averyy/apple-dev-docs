@@ -1,7 +1,8 @@
 # sec_protocol_metadata_get_early_data_accepted(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_get_early_data_accepted(_ metadata: sec_protocol_metadata_t) -> Bool
+```
+
+```c
+bool sec_protocol_metadata_get_early_data_accepted(sec_protocol_metadata_t metadata);
 ```
 
 #### Return Value

@@ -1,14 +1,15 @@
 # y_offset_from_center
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 int y_offset_from_center;
 ```
 

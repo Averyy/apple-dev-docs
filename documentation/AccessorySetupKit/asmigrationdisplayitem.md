@@ -1,7 +1,8 @@
 # ASMigrationDisplayItem
 
 **Framework**: AccessorySetupKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A previously-discovered accessory as presented by the discovery picker, for use when migrating it to AccessorySetupKit.
 
@@ -15,43 +16,48 @@ A previously-discovered accessory as presented by the discovery picker, for use 
 class ASMigrationDisplayItem
 ```
 
+```objc
+@interface ASMigrationDisplayItem : ASPickerDisplayItem
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](./discovering-and-configuring-accessories.md)
 
 #### Overview
 
-Create instances of `ASMigrationDisplayItem` by calling the superclass’s initializer [`init(name:productImage:descriptor:)`](aspickerdisplayitem/init(name:productimage:descriptor:).md), then specify the Bluetooth [`peripheralIdentifier`](asmigrationdisplayitem/peripheralidentifier.md), the Wi-Fi [`hotspotSSID`](asmigrationdisplayitem/hotspotssid.md), or both, for the specific accessory you want to migrate.
+Create instances of `ASMigrationDisplayItem` by calling the superclass’s initializer [`init(name:productImage:descriptor:)`](./aspickerdisplayitem/init%28name,productimage,descriptor%29.md), then specify the Bluetooth [`peripheralIdentifier`](./asmigrationdisplayitem/peripheralidentifier.md), the Wi-Fi [`hotspotSSID`](./asmigrationdisplayitem/hotspotssid.md), or both, for the specific accessory you want to migrate.
 
 ## Topics
 
 ### Accessory identifiers
-- [var peripheralIdentifier: UUID?](asmigrationdisplayitem/peripheralidentifier.md)
+- [var peripheralIdentifier: UUID?](./asmigrationdisplayitem/peripheralidentifier.md)
   The Bluetooth identifier of the accessory to migrate.
-- [var hotspotSSID: String?](asmigrationdisplayitem/hotspotssid.md)
+- [var hotspotSSID: String?](./asmigrationdisplayitem/hotspotssid.md)
   The Wi-Fi hotspot SSID of the accessory to migrate.
-- [var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID](asmigrationdisplayitem/wifiawarepaireddeviceid.md)
+- [var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID](./asmigrationdisplayitem/wifiawarepaireddeviceid.md)
   The Wi-Fi Aware paired device identififer of the accessory to migrate.
 
 ## Relationships
 
 ### Inherits From
-- [ASPickerDisplayItem](aspickerdisplayitem.md)
+- [ASPickerDisplayItem](./aspickerdisplayitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ASPickerDisplayItem](aspickerdisplayitem.md)
+### Displaying picker items
+- [class ASPickerDisplayItem](./aspickerdisplayitem.md)
   An accessory as presented by the discovery picker.
-- [class ASDiscoveredDisplayItem](asdiscovereddisplayitem.md)
+- [class ASDiscoveredDisplayItem](./asdiscovereddisplayitem.md)
   A picker display item created from customizing a discovered accessory.
 
 

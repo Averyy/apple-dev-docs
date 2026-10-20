@@ -1,7 +1,8 @@
 # errSSLConnectionRefused
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The peer dropped the connection before responding.
 
@@ -18,6 +19,10 @@ The peer dropped the connection before responding.
 
 ```swift
 var errSSLConnectionRefused: OSStatus { get }
+```
+
+```c
+errSSLConnectionRefused
 ```
 
 

@@ -1,7 +1,8 @@
 # subscript(unchecked:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified index in the `Span`.
 
@@ -24,7 +25,7 @@ subscript(unchecked position: Span<Element>.Index) -> Element { borrow }
 
 This subscript does not validate `position`. Using this subscript with an invalid `position` results in undefined behaviour.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(buffer:presentationTimeStamp:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a frame object with a pixel buffer and presentation time.
 
@@ -17,6 +18,10 @@ Creates a frame object with a pixel buffer and presentation time.
 
 ```swift
 init?(buffer: CVPixelBuffer, presentationTimeStamp: CMTime)
+```
+
+```objc
+- (instancetype) initWithBuffer:(CVPixelBufferRef) buffer presentationTimeStamp:(CMTime) presentationTimeStamp;
 ```
 
 #### Discussion

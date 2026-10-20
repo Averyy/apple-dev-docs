@@ -1,7 +1,8 @@
 # intents
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The definitions for the target app’s app intents.
 
@@ -22,7 +23,7 @@ var intents: IntentDefinitions.DefinitionCollection<AppIntentDefinition> { get }
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](../testing-your-app-intents-code.md)
 
 #### Discussion
 
@@ -39,7 +40,8 @@ let orderIntent = definitions.intents[
 
 ## See Also
 
-- [struct AppIntentDefinition](appintentdefinition.md)
+### Accessing app intents
+- [struct AppIntentDefinition](../appintentdefinition.md)
   A definition you use to dynamically create intent instances for testing.
 
 

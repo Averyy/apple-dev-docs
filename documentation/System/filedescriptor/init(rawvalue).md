@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a strongly-typed file handle from a raw C file handle.
 
@@ -22,7 +23,8 @@ init(rawValue: CInt)
 
 ## See Also
 
-- [let rawValue: CInt](filedescriptor/rawvalue.md)
+### Creating a File Descriptor
+- [let rawValue: CInt](./rawvalue.md)
   The raw C file handle.
 
 

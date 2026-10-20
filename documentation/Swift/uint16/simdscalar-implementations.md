@@ -1,24 +1,25 @@
 # SIMDScalar Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [UInt16.SIMD16Storage](uint16/simd16storage.md)
+- [UInt16.SIMD16Storage](./simd16storage.md)
   Storage for a vector of 16 integers.
-- [UInt16.SIMD2Storage](uint16/simd2storage.md)
+- [UInt16.SIMD2Storage](./simd2storage.md)
   Storage for a vector of two integers.
-- [UInt16.SIMD32Storage](uint16/simd32storage.md)
+- [UInt16.SIMD32Storage](./simd32storage.md)
   Storage for a vector of 32 integers.
-- [UInt16.SIMD4Storage](uint16/simd4storage.md)
+- [UInt16.SIMD4Storage](./simd4storage.md)
   Storage for a vector of four integers.
-- [UInt16.SIMD64Storage](uint16/simd64storage.md)
+- [UInt16.SIMD64Storage](./simd64storage.md)
   Storage for a vector of 64 integers.
-- [UInt16.SIMD8Storage](uint16/simd8storage.md)
+- [UInt16.SIMD8Storage](./simd8storage.md)
   Storage for a vector of eight integers.
 ### Type Aliases
-- [typealias SIMDMaskScalar](uint16/simdmaskscalar.md)
+- [typealias SIMDMaskScalar](./simdmaskscalar.md)
 
 
 ---

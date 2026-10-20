@@ -1,7 +1,8 @@
 # GameCenterMatchmakingTeam.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes of a game-specific team.
 
@@ -10,7 +11,7 @@ The attributes of a game-specific team.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingTeam.Attributes
 ```
 

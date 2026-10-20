@@ -1,7 +1,8 @@
 # status(for:)
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current status of the specified vehicle function.
 
@@ -28,13 +29,14 @@ Each feature of your vehicle has one or more associated states, which you define
 
 ## Parameters
 
-- `function`: The function identifier for the vehicle feature you want to check. If you specify an unknown feature, this method throws an error. For a list of the vehicle’s supported features, see the [`supportedFunctions`](vehiclereport/supportedfunctions.md) property.
+- `function`: The function identifier for the vehicle feature you want to check. If you specify an unknown feature, this method throws an error. For a list of the vehicle’s supported features, see the [`supportedFunctions`](./supportedfunctions.md) property.
 
 ## See Also
 
-- [var supportedFunctions: [FunctionIdentifier]](vehiclereport/supportedfunctions.md)
+### Getting the Vehicle’s Supported Functions
+- [var supportedFunctions: [FunctionIdentifier]](./supportedfunctions.md)
   An array of function identifiers that indicates the features the vehicle supports, populated only after the first BLE connection with the vehicle.
-- [struct FunctionStatus](functionstatus.md)
+- [struct FunctionStatus](../functionstatus.md)
   A value that the vehicle can return to indicate the status of a particular vehicle feature.
 
 

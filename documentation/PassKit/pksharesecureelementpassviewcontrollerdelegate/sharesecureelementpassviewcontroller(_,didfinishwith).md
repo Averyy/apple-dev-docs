@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -14,6 +15,10 @@
 
 ```swift
 func shareSecureElementPassViewController(_ controller: PKShareSecureElementPassViewController, didFinishWith result: PKShareSecureElementPassResult)
+```
+
+```objc
+- (void) shareSecureElementPassViewController:(PKShareSecureElementPassViewController *) controller didFinishWithResult:(PKShareSecureElementPassResult) result;
 ```
 
 

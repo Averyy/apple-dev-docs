@@ -1,7 +1,8 @@
 # init(description:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new significant app update topic with the specified description.
 

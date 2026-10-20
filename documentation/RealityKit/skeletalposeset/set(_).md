@@ -1,7 +1,8 @@
 # set(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a pose in the set based on its name. If pose with this ID does not exist, does nothing.
 

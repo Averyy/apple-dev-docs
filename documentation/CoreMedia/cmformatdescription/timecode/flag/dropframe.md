@@ -1,7 +1,8 @@
 # dropFrame
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ static let dropFrame: CMFormatDescription.TimeCode.Flag
 
 ## See Also
 
-- [static let negTimesOK: CMFormatDescription.TimeCode.Flag](cmformatdescription/timecode/flag/negtimesok.md)
-- [static let twentyFourHourMax: CMFormatDescription.TimeCode.Flag](cmformatdescription/timecode/flag/twentyfourhourmax.md)
+### Time Code Flags
+- [static let negTimesOK: CMFormatDescription.TimeCode.Flag](./negtimesok.md)
+- [static let twentyFourHourMax: CMFormatDescription.TimeCode.Flag](./twentyfourhourmax.md)
 
 
 ---

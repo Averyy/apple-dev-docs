@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassGenericAudio
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassGenericAudio = 0x1203
 ```
 

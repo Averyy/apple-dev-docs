@@ -1,13 +1,14 @@
 # random::half_01
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates a pseudo-random half-precision float between 0 and 1.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ A pseudo-random half-precision float in the range [0.0, 1.0].
 
 This function generates a random value in the range [0.0, 1.0] using half-precision floating-point format and increments the internal random seed for subsequent calls.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/random__half_01.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/random__half_01.svg)
 
 
 ---

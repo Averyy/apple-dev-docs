@@ -1,7 +1,8 @@
 # DockAccessory.Observation.ObservationType.object
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The frame contains an object other than a human face or body.
 

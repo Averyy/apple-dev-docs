@@ -1,7 +1,8 @@
 # alwaysByFew
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The always-by-few limit behavior.
 

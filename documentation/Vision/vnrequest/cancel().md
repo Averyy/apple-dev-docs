@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the request before it can finish executing.
 
@@ -17,6 +18,10 @@ Cancels the request before it can finish executing.
 
 ```swift
 func cancel()
+```
+
+```objc
+- (void) cancel;
 ```
 
 

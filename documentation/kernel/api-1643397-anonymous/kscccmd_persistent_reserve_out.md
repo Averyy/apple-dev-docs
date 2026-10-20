@@ -1,14 +1,15 @@
 # kSCCCmd_PERSISTENT_RESERVE_OUT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSCCCmd_PERSISTENT_RESERVE_OUT = 0x5F
 ```
 

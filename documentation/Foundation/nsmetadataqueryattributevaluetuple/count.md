@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of instances of the value for the tuple’s attribute.
 
@@ -20,11 +21,16 @@ The number of instances of the value for the tuple’s attribute.
 var count: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger count;
+```
+
 ## See Also
 
-- [var attribute: String](nsmetadataqueryattributevaluetuple/attribute.md)
+### Getting Query Attribute/Value Information
+- [var attribute: String](./attribute.md)
   The attribute name for the tuple’s value.
-- [var value: Any?](nsmetadataqueryattributevaluetuple/value.md)
+- [var value: Any?](./value.md)
   The value of the tuple’s attribute.
 
 

@@ -1,25 +1,27 @@
 # UIKit Enumerations
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
-- [UITextFormattingViewController.ComponentSize](uitextformattingviewcontroller/componentsize.md)
+- [UIAccessibility.ExpandedStatus](./uiaccessibility/expandedstatus.md)
+- [UITextFormattingViewController.ComponentSize](./uitextformattingviewcontroller/componentsize.md)
   Sizes of text formatting view controller components.
-- [enum UIFocusItemDeferralMode](uifocusitemdeferralmode.md)
-- [enum UIBarMinimizationBehavior](uibarminimizationbehavior.md)
-- [enum UIBarMinimizationRestorationBehavior](uibarminimizationrestorationbehavior.md)
-- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
+- [enum UIFocusItemDeferralMode](./uifocusitemdeferralmode.md)
+- [enum UIBarMinimizationBehavior](./uibarminimizationbehavior.md)
+- [enum UIBarMinimizationRestorationBehavior](./uibarminimizationrestorationbehavior.md)
+- [enum UIBarMinimizationSafeAreaAdjustment](./uibarminimizationsafeareaadjustment.md)
 
 ## See Also
 
-- [UIKit Constants](uikit-constants.md)
+### Reference
+- [UIKit Constants](./uikit-constants.md)
   This document describes constants that are used throughout the UIKit framework.
-- [UIKit Data Types](uikit-data-types.md)
+- [UIKit Data Types](./uikit-data-types.md)
   The UIKit framework defines data types that are used in multiple places throughout the framework.
-- [UIKit Functions](uikit-functions.md)
+- [UIKit Functions](./uikit-functions.md)
   The UIKit framework defines a number of functions, many of them used in graphics and drawing operations.
 
 

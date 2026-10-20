@@ -6,27 +6,12 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/tokenizing.html
 
 # Tokenizing with MLX data
 
-**
-
-- [.rst](../_sources/python/tokenizing.rst)
-- **
-
-.pdf
-
-**
-
-# Tokenizing with MLX data
-
- Table of contents 
-
-# Tokenizing with MLX data
-
 MLX data allows sample transformations with the full flexibility of python which
 means that you could use any python tokenizer in a
-[Buffer.key_transform()](_autosummary/mlx.data.Buffer.key_transform.html#mlx.data.Buffer.key_transform). However, this is likely to be subject to the GIL
+[Buffer.key_transform()](_autosummary/mlx.data.Buffer.key_transform.md#mlx.data.Buffer.key_transform). However, this is likely to be subject to the GIL
 which means that effectively only one sample can be tokenized at a time.
 
-A better choice is to use an [mlx.data.core.CharTrie](_autosummary/mlx.data.core.CharTrie.html#mlx.data.core.CharTrie) to tokenize your
+A better choice is to use an [mlx.data.core.CharTrie](_autosummary/mlx.data.core.CharTrie.md#mlx.data.core.CharTrie) to tokenize your
 data, taking full advatage of a multicore system. You can build the trie
 yourself or use one of the provided helpers to build a trie from an SentencePiece model
 or a plain text vocabulary file.
@@ -60,8 +45,8 @@ tokenizer = Tokenizer(trie, trie_key_scores=weights)
 tokenizer.tokenize_shortest(b"This is some more text to tokenize")
 ```
 
-| core.Tokenizer | A Tokenizer that can be used to tokenize arbitrary strings. |
+| [core.Tokenizer](_autosummary/mlx.data.core.Tokenizer.md#mlx.data.core.Tokenizer) | A Tokenizer that can be used to tokenize arbitrary strings. |
 | --- | --- |
-| core.CharTrie | A Trie implementation for characters. |
-| tokenizer_helpers.read_trie_from_vocab(...) | Read anmlx.data.core.CharTriefrom a file with one token per line. |
-| tokenizer_helpers.read_trie_from_spm(spm_file) | Read anmlx.data.core.CharTriefrom a sentencepiece file. |
+| [core.CharTrie](_autosummary/mlx.data.core.CharTrie.md#mlx.data.core.CharTrie) | A Trie implementation for characters. |
+| [tokenizer_helpers.read_trie_from_vocab](_autosummary/mlx.data.tokenizer_helpers.read_trie_from_vocab.md#mlx.data.tokenizer_helpers.read_trie_from_vocab)(...) | Read an [mlx.data.core.CharTrie](_autosummary/mlx.data.core.CharTrie.md#mlx.data.core.CharTrie) from a file with one token per line. |
+| [tokenizer_helpers.read_trie_from_spm](_autosummary/mlx.data.tokenizer_helpers.read_trie_from_spm.md#mlx.data.tokenizer_helpers.read_trie_from_spm)(spm_file) | Read an [mlx.data.core.CharTrie](_autosummary/mlx.data.core.CharTrie.md#mlx.data.core.CharTrie) from a sentencepiece file. |

@@ -1,7 +1,8 @@
 # FMFontFamilyCallbackFilterUPP
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias FMFontFamilyCallbackFilterUPP = FMFontFamilyCallbackFilterProcPtr
+```
+
+```c
+typedef FMFontFamilyCallbackFilterProcPtr FMFontFamilyCallbackFilterUPP;
 ```
 
 

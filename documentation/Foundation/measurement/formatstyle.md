@@ -1,7 +1,8 @@
 # Measurement.FormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides localized representations of measurements.
 
@@ -20,13 +21,15 @@ A type that provides localized representations of measurements.
 struct FormatStyle
 ```
 
+Available when `UnitType` inherits `Dimension`.
+
 #### Overview
 
-A measurement format style creates human-readable text from a [`Measurement`](measurement.md). You can customize the formatting behavior of the format style using the [`width`](measurement/formatstyle/width.md), `numberFormat`, [`usage`](measurement/formatstyle/usage.md), and [`locale`](measurement/formatstyle/locale.md) properties. The system automatically caches unique configurations of [`Measurement.FormatStyle`](measurement/formatstyle.md) to enhance performance.
+A measurement format style creates human-readable text from a [`Measurement`](../measurement.md). You can customize the formatting behavior of the format style using the [`width`](./formatstyle/width.md), `numberFormat`, [`usage`](./formatstyle/usage.md), and [`locale`](./formatstyle/locale.md) properties. The system automatically caches unique configurations of [`Measurement.FormatStyle`](./formatstyle.md) to enhance performance.
 
-Use either the [`formatted()`](measurement/formatted().md) or the [`formatted(_:)`](measurement/formatted(_:).md) instance method of [`Measurement`](measurement.md) to create a string representation of a measurement.
+Use either the [`formatted()`](./formatted%28%29.md) or the [`formatted(_:)`](./formatted%28_%29.md) instance method of [`Measurement`](../measurement.md) to create a string representation of a measurement.
 
-The [`formatted()`](measurement/formatted().md) method generates a string using the default measurement format style.
+The [`formatted()`](./formatted%28%29.md) method generates a string using the default measurement format style.
 
 ```swift
 let temperature = Measurement<UnitTemperature>(value: 38, unit: .celsius)
@@ -35,7 +38,7 @@ temperature.formatted()
 // For locale: fr_FR: 38°C
 ```
 
-The default format style in the previous example abbreviates the measurement unit. To customize any of the properties of the formatted measurement, you provide a measurement format style to the [`formatted(_:)`](measurement/formatted(_:).md) method. For example, to create a string with the full name of the unit, the code might resemble the following:
+The default format style in the previous example abbreviates the measurement unit. To customize any of the properties of the formatted measurement, you provide a measurement format style to the [`formatted(_:)`](./formatted%28_%29.md) method. For example, to create a string with the full name of the unit, the code might resemble the following:
 
 ```swift
 temperature.formatted(.measurement(width: .wide))
@@ -43,7 +46,7 @@ temperature.formatted(.measurement(width: .wide))
 // For locale: fr_FR: 38 degrés Celsius
 ```
 
-The previous example uses a static factory method to create a measurement format style within the call to the [`formatted(_:)`](measurement/formatted(_:).md) method. You can also create a measurement format style and pass it to the method, such as in the following example:
+The previous example uses a static factory method to create a measurement format style within the call to the [`formatted(_:)`](./formatted%28_%29.md) method. You can also create a measurement format style and pass it to the method, such as in the following example:
 
 ```swift
 let distance = Measurement<UnitLength>(value: 36, unit: .miles)
@@ -59,45 +62,45 @@ After you create an instance of a format style, you can use it to format measure
 ## Topics
 
 ### Creating a measurement format style
-- [init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale, usage: MeasurementFormatUnitUsage<UnitType>, numberFormatStyle: FloatingPointFormatStyle<Double>?)](measurement/formatstyle/init(width:locale:usage:numberformatstyle:).md)
+- [init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale, usage: MeasurementFormatUnitUsage<UnitType>, numberFormatStyle: FloatingPointFormatStyle<Double>?)](./formatstyle/init%28width,locale,usage,numberformatstyle%29.md)
   Creates an instance using the provided width, locale, usage type, and number format.
-- [init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale, usage: MeasurementFormatUnitUsage<UnitType>, hidesScaleName: Bool, numberFormatStyle: FloatingPointFormatStyle<Double>?)](measurement/formatstyle/init(width:locale:usage:hidesscalename:numberformatstyle:).md)
+- [init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale, usage: MeasurementFormatUnitUsage<UnitType>, hidesScaleName: Bool, numberFormatStyle: FloatingPointFormatStyle<Double>?)](./formatstyle/init%28width,locale,usage,hidesscalename,numberformatstyle%29.md)
   Creates an instance using the provided width, locale, usage type, number format, and the option to hide the unit name.
 ### Modifying a measurement format style
-- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/width.md)
+- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](./formatstyle/width.md)
   The width of the measurement unit.
-- [Measurement.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth.md)
+- [Measurement.FormatStyle.UnitWidth](./formatstyle/unitwidth.md)
   Specifies the width of the unit, determining the textual representation.
-- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](measurement/formatstyle/numberformatstyle.md)
+- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](./formatstyle/numberformatstyle.md)
   The formatting of the measurement value.
-- [var usage: MeasurementFormatUnitUsage<UnitType>?](measurement/formatstyle/usage.md)
+- [var usage: MeasurementFormatUnitUsage<UnitType>?](./formatstyle/usage.md)
   The intended purpose of the formatted measurement.
-- [var hidesScaleName: Bool](measurement/formatstyle/hidesscalename.md)
+- [var hidesScaleName: Bool](./formatstyle/hidesscalename.md)
   The visibility of the unit name of a temperature.
-- [var locale: Locale](measurement/formatstyle/locale.md)
+- [var locale: Locale](./formatstyle/locale.md)
   The locale of the format style.
-- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](measurement/formatstyle/locale(_:).md)
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](./formatstyle/locale%28_%29.md)
   Modifies the measurement format style to use the specified locale.
 ### Inspecting a measurement format style
-- [var attributed: Measurement<UnitType>.AttributedStyle](measurement/formatstyle/attributed.md)
+- [var attributed: Measurement<UnitType>.AttributedStyle](./formatstyle/attributed.md)
   The attributed style for the measurement format style.
 ### Formatting a measurement
-- [func format(Measurement<UnitType>) -> String](measurement/formatstyle/format(_:).md)
+- [func format(Measurement<UnitType>) -> String](./formatstyle/format%28_%29.md)
   Creates a string representation of a measurement.
 ### Applying byte count styles
-- [Measurement.FormatStyle.ByteCount](measurement/formatstyle/bytecount.md)
+- [Measurement.FormatStyle.ByteCount](./formatstyle/bytecount.md)
   A format style that provides string representations of byte counts, expressed as measurements of information storage.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # VTSessionSetProperties(_:propertyDictionary:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets multiple properties at once.
 
@@ -19,6 +20,10 @@ Sets multiple properties at once.
 func VTSessionSetProperties(_ session: VTSession, propertyDictionary: CFDictionary) -> OSStatus
 ```
 
+```c
+extern OSStatus VTSessionSetProperties(VTSessionRef session, CFDictionaryRef propertyDictionary);
+```
+
 #### Discussion
 
 Sets the properties specified by keys in `propertyDictionary` to the corresponding values.
@@ -26,16 +31,17 @@ Sets the properties specified by keys in `propertyDictionary` to the correspondi
 ## Topics
 
 ### Related Documentation
-- [Compression Properties](compression-properties.md)
+- [Compression Properties](./compression-properties.md)
   Properties that you use to configure a compression session.
-- [Decompression Properties](decompression-properties.md)
+- [Decompression Properties](./decompression-properties.md)
   Properties used to configure a VideoToolbox decompression session.
-- [Pixel Transfer Properties](pixel-transfer-properties.md)
+- [Pixel Transfer Properties](./pixel-transfer-properties.md)
   Properties used to configure a VideoToolbox pixel transfer session.
 
 ## See Also
 
-- [func VTSessionSetProperty(VTSession, key: CFString, value: CFTypeRef?) -> OSStatus](vtsessionsetproperty(_:key:value:).md)
+### Setting Properties
+- [func VTSessionSetProperty(VTSession, key: CFString, value: CFTypeRef?) -> OSStatus](./vtsessionsetproperty%28_,key,value%29.md)
   Sets a property on a VideoToolbox session.
 
 

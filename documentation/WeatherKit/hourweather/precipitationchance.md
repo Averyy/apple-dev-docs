@@ -1,7 +1,8 @@
 # precipitationChance
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The probability of precipitation during the hour.
 
@@ -26,7 +27,8 @@ The value is from `0` (0% probability) to `1` (100% probability).
 
 ## See Also
 
-- [var precipitation: Precipitation](hourweather/precipitation.md)
+### Getting the precipitation
+- [var precipitation: Precipitation](./precipitation.md)
   Description of precipitation for this hour.
 
 

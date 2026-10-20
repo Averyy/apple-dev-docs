@@ -1,7 +1,8 @@
 # CapturedRoom.Surface.Edge.left
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An edge that identifies the left side of a surface.
 
@@ -18,11 +19,12 @@ case left
 
 ## See Also
 
-- [CapturedRoom.Surface.Edge.top](capturedroom/surface/edge/top.md)
+### Accessing edge types
+- [CapturedRoom.Surface.Edge.top](./top.md)
   An edge that identifies the top of a surface.
-- [CapturedRoom.Surface.Edge.bottom](capturedroom/surface/edge/bottom.md)
+- [CapturedRoom.Surface.Edge.bottom](./bottom.md)
   An edge that identifies the bottom of a surface.
-- [CapturedRoom.Surface.Edge.right](capturedroom/surface/edge/right.md)
+- [CapturedRoom.Surface.Edge.right](./right.md)
   An edge that identifies the right side of a surface.
 
 

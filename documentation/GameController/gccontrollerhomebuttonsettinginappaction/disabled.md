@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingInAppAction.disabled
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 System response to the game controller Home button press is disabled.
 
@@ -12,6 +13,10 @@ System response to the game controller Home button press is disabled.
 
 ```swift
 case disabled
+```
+
+```c
+GCControllerHomeButtonSettingInAppActionDisabled
 ```
 
 

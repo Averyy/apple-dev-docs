@@ -1,17 +1,18 @@
 # EKError.Code.datesInverted
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The event’s end date occurs before its start date.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,37 +20,42 @@ The event’s end date occurs before its start date.
 case datesInverted
 ```
 
+```c
+EKErrorDatesInverted
+```
+
 ## See Also
 
-- [EKError.Code.eventNotMutable](ekerror/code/eventnotmutable.md)
+### Constants
+- [EKError.Code.eventNotMutable](./eventnotmutable.md)
   The event isn’t mutable and you can’t save or delete it.
-- [EKError.Code.noCalendar](ekerror/code/nocalendar.md)
+- [EKError.Code.noCalendar](./nocalendar.md)
   The event isn’t associated with a calendar.
-- [EKError.Code.noStartDate](ekerror/code/nostartdate.md)
+- [EKError.Code.noStartDate](./nostartdate.md)
   The event has no start date set.
-- [EKError.Code.noEndDate](ekerror/code/noenddate.md)
+- [EKError.Code.noEndDate](./noenddate.md)
   The event has no end date set.
-- [EKError.Code.internalFailure](ekerror/code/internalfailure.md)
+- [EKError.Code.internalFailure](./internalfailure.md)
   An internal error occurred.
-- [EKError.Code.calendarReadOnly](ekerror/code/calendarreadonly.md)
+- [EKError.Code.calendarReadOnly](./calendarreadonly.md)
   The calendar is read-only and you can’t add events to it.
-- [EKError.Code.durationGreaterThanRecurrence](ekerror/code/durationgreaterthanrecurrence.md)
+- [EKError.Code.durationGreaterThanRecurrence](./durationgreaterthanrecurrence.md)
   The duration of an event is greater than its recurrence interval.
-- [EKError.Code.alarmGreaterThanRecurrence](ekerror/code/alarmgreaterthanrecurrence.md)
+- [EKError.Code.alarmGreaterThanRecurrence](./alarmgreaterthanrecurrence.md)
   The alarm interval is greater than the recurrence interval.
-- [EKError.Code.startDateTooFarInFuture](ekerror/code/startdatetoofarinfuture.md)
+- [EKError.Code.startDateTooFarInFuture](./startdatetoofarinfuture.md)
   The start date is further into the future than the calendar can display.
-- [EKError.Code.startDateCollidesWithOtherOccurrence](ekerror/code/startdatecollideswithotheroccurrence.md)
+- [EKError.Code.startDateCollidesWithOtherOccurrence](./startdatecollideswithotheroccurrence.md)
   The event’s start date collides with another occurrence of the event.
-- [EKError.Code.objectBelongsToDifferentStore](ekerror/code/objectbelongstodifferentstore.md)
+- [EKError.Code.objectBelongsToDifferentStore](./objectbelongstodifferentstore.md)
   The object belongs to a different calendar store.
-- [EKError.Code.invitesCannotBeMoved](ekerror/code/invitescannotbemoved.md)
+- [EKError.Code.invitesCannotBeMoved](./invitescannotbemoved.md)
   You can’t move the event because it’s an invitation.
-- [EKError.Code.invalidSpan](ekerror/code/invalidspan.md)
+- [EKError.Code.invalidSpan](./invalidspan.md)
   The system encountered an invalid span during a save or deletion.
-- [EKError.Code.calendarHasNoSource](ekerror/code/calendarhasnosource.md)
+- [EKError.Code.calendarHasNoSource](./calendarhasnosource.md)
   You can’t save the calendar without setting a source first.
-- [EKError.Code.calendarSourceCannotBeModified](ekerror/code/calendarsourcecannotbemodified.md)
+- [EKError.Code.calendarSourceCannotBeModified](./calendarsourcecannotbemodified.md)
   You can’t move the calendar to another source.
 
 

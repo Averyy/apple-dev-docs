@@ -1,7 +1,8 @@
 # windingOrder
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The winding order of front-facing polygons.
 
@@ -23,9 +24,10 @@ Corresponds to `MTLWinding`.
 
 ## See Also
 
-- [var primitive: MTLPrimitiveType](lowlevelmeshpart/primitive.md)
+### Configuring the geometry
+- [var primitive: MTLPrimitiveType](./primitive.md)
   The geometric primitive to use when rendering this part.
-- [func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRenderContextError)](lowlevelmeshpart/setindexrange(indexoffset:indexcount:).md)
+- [func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRenderContextError)](./setindexrange%28indexoffset,indexcount%29.md)
   Updates the first index and index count for this mesh part.
 
 

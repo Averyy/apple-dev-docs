@@ -1,7 +1,8 @@
 # kIOUSBEndpointUsageTypeIsocData
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The isochronous data type.
 
@@ -10,7 +11,7 @@ The isochronous data type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointUsageTypeIsocData = (kIOUSBEndpointDescriptorUsageTypeIsocData >> kIOUSBEndpointDescriptorUsageTypePhase)
 ```
 

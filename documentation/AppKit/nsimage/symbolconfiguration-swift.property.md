@@ -1,7 +1,8 @@
 # symbolConfiguration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration details for a symbol image.
 
@@ -15,11 +16,15 @@ The configuration details for a symbol image.
 var symbolConfiguration: NSImage.SymbolConfiguration { get }
 ```
 
+```objc
+@property (copy, readonly) NSImageSymbolConfiguration * symbolConfiguration;
+```
+
 #### Discussion
 
 Use this property to access the traits and rendering attributes the system uses with the symbol image. These details determine which variant of the image to load and draw and how to render it, falling back on the current environment for values that you don’t specify. For symbol images, the default value of this property is a symbol image configuration object with unspecified values.
 
-You can’t modify this property directly, but you can use [`withSymbolConfiguration(_:)`](nsimage/withsymbolconfiguration(_:).md) when you want to create a new image object with a specific set of traits.
+You can’t modify this property directly, but you can use [`withSymbolConfiguration(_:)`](./withsymbolconfiguration%28_%29.md) when you want to create a new image object with a specific set of traits.
 
 
 ---

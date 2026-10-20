@@ -1,7 +1,8 @@
 # tabletopGame(_:parent:automaticUpdate:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a tabletop game to a view.
 
@@ -17,7 +18,8 @@ Adds a tabletop game to a view.
 
 ## See Also
 
-- [func tabletopGame(TabletopGame, parent: Entity, automaticUpdate: Bool, interaction: (TabletopInteraction.Value) -> any TabletopInteraction.Delegate) -> some View](view/tabletopgame(_:parent:automaticupdate:interaction:).md)
+### Creating a tabletop game
+- [func tabletopGame(TabletopGame, parent: Entity, automaticUpdate: Bool, interaction: (TabletopInteraction.Value) -> any TabletopInteraction.Delegate) -> some View](./tabletopgame%28_,parent,automaticupdate,interaction%29.md)
   Supplies a closure which returns a new interaction whenever needed.
 
 

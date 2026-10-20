@@ -1,7 +1,8 @@
 # HMCharacteristicTypeCurrentLockMechanismState
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current state of the locking mechanism.
 
@@ -19,31 +20,36 @@ The current state of the locking mechanism.
 let HMCharacteristicTypeCurrentLockMechanismState: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeCurrentLockMechanismState;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueLockMechanismState`](hmcharacteristicvaluelockmechanismstate.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueLockMechanismState`](./hmcharacteristicvaluelockmechanismstate.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueLockMechanismState](hmcharacteristicvaluelockmechanismstate.md)
+- [enum HMCharacteristicValueLockMechanismState](./hmcharacteristicvaluelockmechanismstate.md)
   Possible values for the state of a lock mechanism.
 
 ## See Also
 
-- [let HMCharacteristicTypeLockManagementAutoSecureTimeout: String](hmcharacteristictypelockmanagementautosecuretimeout.md)
+### Locks and openers
+- [let HMCharacteristicTypeLockManagementAutoSecureTimeout: String](./hmcharacteristictypelockmanagementautosecuretimeout.md)
   The automatic timeout for a lockable accessory that supports automatic lockout.
-- [let HMCharacteristicTypeLockManagementControlPoint: String](hmcharacteristictypelockmanagementcontrolpoint.md)
+- [let HMCharacteristicTypeLockManagementControlPoint: String](./hmcharacteristictypelockmanagementcontrolpoint.md)
   A control that accepts vendor-specific actions for lock management.
-- [let HMCharacteristicTypeLockMechanismLastKnownAction: String](hmcharacteristictypelockmechanismlastknownaction.md)
+- [let HMCharacteristicTypeLockMechanismLastKnownAction: String](./hmcharacteristictypelockmechanismlastknownaction.md)
   The last known action of the locking mechanism.
-- [let HMCharacteristicTypeLockPhysicalControls: String](hmcharacteristictypelockphysicalcontrols.md)
+- [let HMCharacteristicTypeLockPhysicalControls: String](./hmcharacteristictypelockphysicalcontrols.md)
   The lock’s physical control state.
-- [let HMCharacteristicTypeMotionDetected: String](hmcharacteristictypemotiondetected.md)
+- [let HMCharacteristicTypeMotionDetected: String](./hmcharacteristictypemotiondetected.md)
   An indicator of whether the accessory has detected motion.
-- [let HMCharacteristicTypeTargetLockMechanismState: String](hmcharacteristictypetargetlockmechanismstate.md)
+- [let HMCharacteristicTypeTargetLockMechanismState: String](./hmcharacteristictypetargetlockmechanismstate.md)
   The target state for the locking mechanism.
-- [let HMCharacteristicTypeRemoteKey: String](hmcharacteristictyperemotekey.md)
+- [let HMCharacteristicTypeRemoteKey: String](./hmcharacteristictyperemotekey.md)
   The accessory remote control key.
 
 

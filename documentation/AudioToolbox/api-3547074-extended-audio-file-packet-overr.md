@@ -1,18 +1,20 @@
 # Extended Audio File Packet Overrides
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kExtAudioFilePacketTableInfoOverride_UseFileValue: ExtAudioFilePacketTableInfoOverride](kextaudiofilepackettableinfooverride_usefilevalue.md)
-- [var kExtAudioFilePacketTableInfoOverride_UseFileValueIfValid: ExtAudioFilePacketTableInfoOverride](kextaudiofilepackettableinfooverride_usefilevalueifvalid.md)
+- [var kExtAudioFilePacketTableInfoOverride_UseFileValue: ExtAudioFilePacketTableInfoOverride](./kextaudiofilepackettableinfooverride_usefilevalue.md)
+- [var kExtAudioFilePacketTableInfoOverride_UseFileValueIfValid: ExtAudioFilePacketTableInfoOverride](./kextaudiofilepackettableinfooverride_usefilevalueifvalid.md)
 
 ## See Also
 
-- [Extended Audio FIle Errors](1486883-extended-audio-file-errors.md)
-- [Codec Unavailable Errors](1623673-codec-unavailable-errors.md)
-- [Property Identifiers for Extended Audio File Objects](1486859-property-identifiers-for-extende.md)
+### Constants
+- [Extended Audio FIle Errors](./api-1486883-extended-audio-file-errors.md)
+- [Codec Unavailable Errors](./api-1623673-codec-unavailable-errors.md)
+- [Property Identifiers for Extended Audio File Objects](./api-1486859-property-identifiers-for-extende.md)
 
 
 ---

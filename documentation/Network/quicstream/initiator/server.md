@@ -1,7 +1,8 @@
 # QUICStream.Initiator.server
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

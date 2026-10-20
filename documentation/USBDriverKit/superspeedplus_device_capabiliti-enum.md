@@ -1,76 +1,78 @@
 # SuperSpeedPlus Device Capabilities
 
-**Framework**: USBDriverKit
+**Framework**: USBDriverKit  
+**Role**: API Collection
 
 Constants for configuring super-speed plus device capabilities.
 
 ## Topics
 
 ### Getting the Device Capabilities
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCount](kiousbsuperspeedplusdevicecapabilityminrxlanecount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCountPhase](kiousbsuperspeedplusdevicecapabilityminrxlanecountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCount](kiousbsuperspeedplusdevicecapabilitymintxlanecount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCountPhase](kiousbsuperspeedplusdevicecapabilitymintxlanecountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityReserved](kiousbsuperspeedplusdevicecapabilityreserved.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilityReservedPhase](kiousbsuperspeedplusdevicecapabilityreservedphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkAsymmetric](kiousbsuperspeedplusdevicecapabilitysublinkasymmetric.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirection](kiousbsuperspeedplusdevicecapabilitysublinkdirection.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionPhase](kiousbsuperspeedplusdevicecapabilitysublinkdirectionphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionRx](kiousbsuperspeedplusdevicecapabilitysublinkdirectionrx.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionTx](kiousbsuperspeedplusdevicecapabilitysublinkdirectiontx.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSE](kiousbsuperspeedplusdevicecapabilitysublinklse.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEBits](kiousbsuperspeedplusdevicecapabilitysublinklsebits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEGbits](kiousbsuperspeedplusdevicecapabilitysublinklsegbits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEKbits](kiousbsuperspeedplusdevicecapabilitysublinklsekbits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEMbits](kiousbsuperspeedplusdevicecapabilitysublinklsembits.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEPhase](kiousbsuperspeedplusdevicecapabilitysublinklsephase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedId](kiousbsuperspeedplusdevicecapabilitysublinkminspeedid.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedIdPhase](kiousbsuperspeedplusdevicecapabilitysublinkminspeedidphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkProtocol](kiousbsuperspeedplusdevicecapabilitysublinkprotocol.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkProtocolPhase](kiousbsuperspeedplusdevicecapabilitysublinkprotocolphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkReserved](kiousbsuperspeedplusdevicecapabilitysublinkreserved.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkReservedPhase](kiousbsuperspeedplusdevicecapabilitysublinkreservedphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCount](kiousbsuperspeedplusdevicecapabilitysublinkspeedattrcount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCountPhase](kiousbsuperspeedplusdevicecapabilitysublinkspeedattrcountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedId](kiousbsuperspeedplusdevicecapabilitysublinkspeedid.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCount](kiousbsuperspeedplusdevicecapabilitysublinkspeedidcount.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCountPhase](kiousbsuperspeedplusdevicecapabilitysublinkspeedidcountphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdPhase](kiousbsuperspeedplusdevicecapabilitysublinkspeedidphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissa](kiousbsuperspeedplusdevicecapabilitysublinkspeedmantissa.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissaPhase](kiousbsuperspeedplusdevicecapabilitysublinkspeedmantissaphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetric](kiousbsuperspeedplusdevicecapabilitysublinksymmetric.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetry](kiousbsuperspeedplusdevicecapabilitysublinksymmetry.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetryPhase](kiousbsuperspeedplusdevicecapabilitysublinksymmetryphase.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkType](kiousbsuperspeedplusdevicecapabilitysublinktype.md)
-- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkTypePhase](kiousbsuperspeedplusdevicecapabilitysublinktypephase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCount](./kiousbsuperspeedplusdevicecapabilityminrxlanecount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinRxLaneCountPhase](./kiousbsuperspeedplusdevicecapabilityminrxlanecountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCount](./kiousbsuperspeedplusdevicecapabilitymintxlanecount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityMinTxLaneCountPhase](./kiousbsuperspeedplusdevicecapabilitymintxlanecountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityReserved](./kiousbsuperspeedplusdevicecapabilityreserved.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilityReservedPhase](./kiousbsuperspeedplusdevicecapabilityreservedphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkAsymmetric](./kiousbsuperspeedplusdevicecapabilitysublinkasymmetric.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirection](./kiousbsuperspeedplusdevicecapabilitysublinkdirection.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionPhase](./kiousbsuperspeedplusdevicecapabilitysublinkdirectionphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionRx](./kiousbsuperspeedplusdevicecapabilitysublinkdirectionrx.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkDirectionTx](./kiousbsuperspeedplusdevicecapabilitysublinkdirectiontx.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSE](./kiousbsuperspeedplusdevicecapabilitysublinklse.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEBits](./kiousbsuperspeedplusdevicecapabilitysublinklsebits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEGbits](./kiousbsuperspeedplusdevicecapabilitysublinklsegbits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEKbits](./kiousbsuperspeedplusdevicecapabilitysublinklsekbits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEMbits](./kiousbsuperspeedplusdevicecapabilitysublinklsembits.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkLSEPhase](./kiousbsuperspeedplusdevicecapabilitysublinklsephase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedId](./kiousbsuperspeedplusdevicecapabilitysublinkminspeedid.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkMinSpeedIdPhase](./kiousbsuperspeedplusdevicecapabilitysublinkminspeedidphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkProtocol](./kiousbsuperspeedplusdevicecapabilitysublinkprotocol.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkProtocolPhase](./kiousbsuperspeedplusdevicecapabilitysublinkprotocolphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkReserved](./kiousbsuperspeedplusdevicecapabilitysublinkreserved.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkReservedPhase](./kiousbsuperspeedplusdevicecapabilitysublinkreservedphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCount](./kiousbsuperspeedplusdevicecapabilitysublinkspeedattrcount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedAttrCountPhase](./kiousbsuperspeedplusdevicecapabilitysublinkspeedattrcountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedId](./kiousbsuperspeedplusdevicecapabilitysublinkspeedid.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCount](./kiousbsuperspeedplusdevicecapabilitysublinkspeedidcount.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdCountPhase](./kiousbsuperspeedplusdevicecapabilitysublinkspeedidcountphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedIdPhase](./kiousbsuperspeedplusdevicecapabilitysublinkspeedidphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissa](./kiousbsuperspeedplusdevicecapabilitysublinkspeedmantissa.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSpeedMantissaPhase](./kiousbsuperspeedplusdevicecapabilitysublinkspeedmantissaphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetric](./kiousbsuperspeedplusdevicecapabilitysublinksymmetric.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetry](./kiousbsuperspeedplusdevicecapabilitysublinksymmetry.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkSymmetryPhase](./kiousbsuperspeedplusdevicecapabilitysublinksymmetryphase.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkType](./kiousbsuperspeedplusdevicecapabilitysublinktype.md)
+- [kIOUSBSuperSpeedPlusDeviceCapabilitySublinkTypePhase](./kiousbsuperspeedplusdevicecapabilitysublinktypephase.md)
 
 ## See Also
 
-- [IOUSBBOSDescriptor](iousbbosdescriptor.md)
+### Capability Descriptors
+- [IOUSBBOSDescriptor](./iousbbosdescriptor.md)
   The structure for storing a binary object store (BOS) descriptor.
-- [IOUSBDeviceCapabilityDescriptorHeader](iousbdevicecapabilitydescriptorheader.md)
+- [IOUSBDeviceCapabilityDescriptorHeader](./iousbdevicecapabilitydescriptorheader.md)
   The device capability descriptor header.
-- [IOUSBDeviceCapabilityBillboard](iousbdevicecapabilitybillboard.md)
+- [IOUSBDeviceCapabilityBillboard](./iousbdevicecapabilitybillboard.md)
   The structure for the billboard device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfig](iousbdevicecapabilitybillboardaltconfig.md)
+- [IOUSBDeviceCapabilityBillboardAltConfig](./iousbdevicecapabilitybillboardaltconfig.md)
   The structure for the billboard alternative configuration device capability.
-- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](iousbdevicecapabilitybillboardaltconfigcompatibility.md)
+- [IOUSBDeviceCapabilityBillboardAltConfigCompatibility](./iousbdevicecapabilitybillboardaltconfigcompatibility.md)
   The structure for the billboard alternative configuration compatibility device capability.
-- [IOUSBDeviceCapabilityBillboardAltMode](iousbdevicecapabilitybillboardaltmode.md)
+- [IOUSBDeviceCapabilityBillboardAltMode](./iousbdevicecapabilitybillboardaltmode.md)
   The structure for the billboard alternative mode device capability.
-- [IOUSBDeviceCapabilityContainerID](iousbdevicecapabilitycontainerid.md)
+- [IOUSBDeviceCapabilityContainerID](./iousbdevicecapabilitycontainerid.md)
   The structure for the container ID device capability.
-- [IOUSBDeviceCapabilitySuperSpeedUSB](iousbdevicecapabilitysuperspeedusb.md)
+- [IOUSBDeviceCapabilitySuperSpeedUSB](./iousbdevicecapabilitysuperspeedusb.md)
   The structure for the super-speed USB device capability.
-- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](iousbdevicecapabilitysuperspeedplususb.md)
+- [IOUSBDeviceCapabilitySuperSpeedPlusUSB](./iousbdevicecapabilitysuperspeedplususb.md)
   The structure for the super-speed plus USB device capability.
-- [IOUSBDeviceCapabilityUSB2Extension](iousbdevicecapabilityusb2extension.md)
+- [IOUSBDeviceCapabilityUSB2Extension](./iousbdevicecapabilityusb2extension.md)
   The structure for the USB 2 extension device capability.
-- [IOUSBPlatformCapabilityDescriptor](iousbplatformcapabilitydescriptor.md)
+- [IOUSBPlatformCapabilityDescriptor](./iousbplatformcapabilitydescriptor.md)
   The structure for the platform capability descriptor.
-- [tIOUSBDeviceCapabilityType](tiousbdevicecapabilitytype.md)
+- [tIOUSBDeviceCapabilityType](./tiousbdevicecapabilitytype.md)
   Constants for the device capability types.
-- [SuperSpeed Device Capabilities](superspeed_device_capabilities-enum.md)
+- [SuperSpeed Device Capabilities](./superspeed_device_capabilities-enum.md)
   Constants for configuring super-speed device capabilities.
 
 

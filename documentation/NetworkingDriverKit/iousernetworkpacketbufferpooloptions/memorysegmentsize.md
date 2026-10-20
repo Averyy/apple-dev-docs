@@ -1,14 +1,15 @@
 # memorySegmentSize
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 uint32_t memorySegmentSize;
 ```
 

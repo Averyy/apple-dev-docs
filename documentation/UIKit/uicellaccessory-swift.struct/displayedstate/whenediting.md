@@ -1,7 +1,8 @@
 # UICellAccessory.DisplayedState.whenEditing
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory displays only when the cell is in editing mode.
 
@@ -10,7 +11,7 @@ The accessory displays only when the cell is in editing mode.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ case whenEditing
 
 ## See Also
 
-- [UICellAccessory.DisplayedState.always](uicellaccessory-swift.struct/displayedstate/always.md)
+### States
+- [UICellAccessory.DisplayedState.always](./always.md)
   The accessory always displays.
-- [UICellAccessory.DisplayedState.whenNotEditing](uicellaccessory-swift.struct/displayedstate/whennotediting.md)
+- [UICellAccessory.DisplayedState.whenNotEditing](./whennotediting.md)
   The accessory displays only when the cell isn’t in editing mode.
 
 

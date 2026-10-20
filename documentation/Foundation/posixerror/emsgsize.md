@@ -1,7 +1,8 @@
 # EMSGSIZE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Message too long.
 

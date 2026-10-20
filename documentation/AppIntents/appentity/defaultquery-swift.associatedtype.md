@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,10 +22,11 @@ associatedtype DefaultQuery : EntityQuery where Self.ValueType == Self.DefaultQu
 
 ## See Also
 
-- [static var defaultQuery: Self.DefaultQuery](appentity/defaultquery-4khg7.md)
+### Making the entity queryable
+- [static var defaultQuery: Self.DefaultQuery](./defaultquery-4khg7.md)
   The default query to use to retrieve entity property instances.
-- [static var defaultResolverSpecification: EmptyResolverSpecification<Self>](appentity/defaultresolverspecification-2dpf2.md)
-- [static var defaultResolverSpecification: some ResolverSpecification](appentity/defaultresolverspecification-589eq.md)
+- [static var defaultResolverSpecification: EmptyResolverSpecification<Self>](./defaultresolverspecification-2dpf2.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./defaultresolverspecification-589eq.md)
 
 
 ---

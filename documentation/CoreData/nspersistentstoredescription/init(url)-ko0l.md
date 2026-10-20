@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver with a URL for the store.
 
@@ -20,9 +21,13 @@ Initializes the receiver with a URL for the store.
 init(url: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) url;
+```
+
 #### Return Value
 
-Initialized [`NSPersistentStoreDescription`](nspersistentstoredescription.md) configured with the given URL.
+Initialized [`NSPersistentStoreDescription`](../nspersistentstoredescription.md) configured with the given URL.
 
 ## Parameters
 

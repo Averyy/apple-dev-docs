@@ -1,7 +1,8 @@
 # Actor
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Common protocol to which all actors conform.
 
@@ -24,52 +25,53 @@ protocol Actor : AnyObject, Sendable
 
 The `Actor` protocol generalizes over all `actor` types. Actor types implicitly conform to this protocol.
 
-##### Actors and Serialexecutors
+##### Actors and SerialExecutors
 
 By default, actors execute tasks on a shared global concurrency thread pool. This pool is shared by all default actors and tasks, unless an actor or task specified a more specific executor requirement.
 
-It is possible to configure an actor to use a specific [`SerialExecutor`](serialexecutor.md), as well as impact the scheduling of default tasks and actors by using a [`TaskExecutor`](taskexecutor.md).
+It is possible to configure an actor to use a specific [`SerialExecutor`](./serialexecutor.md), as well as impact the scheduling of default tasks and actors by using a [`TaskExecutor`](./taskexecutor.md).
 
-> **Note**: [`SerialExecutor`](serialexecutor.md)
+> **See Also**: [`SerialExecutor`](./serialexecutor.md)
 
-> **Note**: [`TaskExecutor`](taskexecutor.md)
+> **See Also**: [`TaskExecutor`](./taskexecutor.md)
 
 ## Topics
 
 ### Instance Properties
-- [var unownedExecutor: UnownedSerialExecutor](actor/unownedexecutor.md)
+- [var unownedExecutor: UnownedSerialExecutor](./actor/unownedexecutor.md)
   Retrieve the executor for this actor as an optimized, unowned reference.
 ### Instance Methods
-- [func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](actor/assertisolated(_:file:line:).md)
+- [func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](./actor/assertisolated%28_,file,line%29.md)
   Stops program execution if the current task is not executing on this actor’s serial executor.
-- [func assumeIsolated<T>((isolated Self) throws -> T, file: StaticString, line: UInt) rethrows -> T](actor/assumeisolated(_:file:line:).md)
+- [func assumeIsolated<T>((isolated Self) throws -> T, file: StaticString, line: UInt) rethrows -> T](./actor/assumeisolated%28_,file,line%29.md)
   Assume that the current task is executing on this actor’s serial executor, or stop program execution otherwise.
-- [func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](actor/preconditionisolated(_:file:line:).md)
+- [func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](./actor/preconditionisolated%28_,file,line%29.md)
   Stops program execution if the current task is not executing on this actor’s serial executor.
-- [func withSerialExecutor<T, E>(nonisolated(nonsending) (any SerialExecutor) async throws(E) -> T) async throws(E) -> T](actor/withserialexecutor(_:)-4ff11.md)
-  Perform an operation with the actor’s [`SerialExecutor`](serialexecutor.md).
-- [func withSerialExecutor<T, E>((any SerialExecutor) throws(E) -> T) throws(E) -> T](actor/withserialexecutor(_:)-4ucv5.md)
-  Perform an operation with the actor’s [`SerialExecutor`](serialexecutor.md).
+- [func withSerialExecutor<T, E>(nonisolated(nonsending) (any SerialExecutor) async throws(E) -> T) async throws(E) -> T](./actor/withserialexecutor%28_%29-4ff11.md)
+  Perform an operation with the actor’s [`SerialExecutor`](./serialexecutor.md).
+- [func withSerialExecutor<T, E>((any SerialExecutor) throws(E) -> T) throws(E) -> T](./actor/withserialexecutor%28_%29-4ucv5.md)
+  Perform an operation with the actor’s [`SerialExecutor`](./serialexecutor.md).
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 ### Conforming Types
-- [MainActor](mainactor.md)
+- [MainActor](./mainactor.md)
 
 ## See Also
 
-- [protocol Sendable](sendable.md)
+### Actors
+- [protocol Sendable](./sendable.md)
   A thread-safe type whose values can be shared across arbitrary concurrent contexts without introducing a risk of data races.
-- [actor MainActor](mainactor.md)
+- [actor MainActor](./mainactor.md)
   A singleton actor whose executor is equivalent to the main dispatch queue.
-- [protocol GlobalActor](globalactor.md)
+- [protocol GlobalActor](./globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
-- [protocol SendableMetatype](sendablemetatype.md)
+- [protocol SendableMetatype](./sendablemetatype.md)
   A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
-- [macro isolation<T>() -> T](isolation().md)
+- [macro isolation<T>() -> T](./isolation%28%29.md)
   Produce a reference to the actor to which the enclosing code is isolated, or `nil` if the code is nonisolated.
 
 

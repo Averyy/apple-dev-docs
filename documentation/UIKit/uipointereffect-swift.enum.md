@@ -1,7 +1,8 @@
 # UIPointerEffect
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An effect that alters a view’s appearance when a pointer enters the current region.
 
@@ -9,7 +10,7 @@ An effect that alters a view’s appearance when a pointer enters the current re
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,39 +25,40 @@ enum UIPointerEffect
 ## Topics
 
 ### Accessing the preview
-- [var preview: UITargetedPreview](uipointereffect-swift.enum/preview.md)
+- [var preview: UITargetedPreview](./uipointereffect-swift.enum/preview.md)
   A preview of the view used during an interaction’s animations.
 ### Creating a default effect
-- [case automatic(UITargetedPreview)](uipointereffect-swift.enum/automatic(_:).md)
+- [case automatic(UITargetedPreview)](./uipointereffect-swift.enum/automatic%28_%29.md)
   A pointer content effect with the given preview’s view.
 ### Creating a specific effect
-- [case highlight(UITargetedPreview)](uipointereffect-swift.enum/highlight(_:).md)
+- [case highlight(UITargetedPreview)](./uipointereffect-swift.enum/highlight%28_%29.md)
   An effect where the pointer slides under the given view and morphs into the view’s shape.
-- [case hover(UITargetedPreview, preferredTintMode: UIPointerEffect.TintMode, prefersShadow: Bool, prefersScaledContent: Bool)](uipointereffect-swift.enum/hover(_:preferredtintmode:prefersshadow:prefersscaledcontent:).md)
+- [case hover(UITargetedPreview, preferredTintMode: UIPointerEffect.TintMode, prefersShadow: Bool, prefersScaledContent: Bool)](./uipointereffect-swift.enum/hover%28_,preferredtintmode,prefersshadow,prefersscaledcontent%29.md)
   An effect where visual changes apply to the view and the pointer retains its default shape.
-- [case lift(UITargetedPreview)](uipointereffect-swift.enum/lift(_:).md)
+- [case lift(UITargetedPreview)](./uipointereffect-swift.enum/lift%28_%29.md)
   An effect where the pointer slides under the given view and disappears as the view scales up and gains a shadow.
 ### Enumerations
-- [UIPointerEffect.TintMode](uipointereffect-swift.enum/tintmode.md)
+- [UIPointerEffect.TintMode](./uipointereffect-swift.enum/tintmode.md)
   An effect that defines how to apply a tint to a view during a pointer interaction.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIHoverEffect](uihovereffect-40091.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIHoverEffect](./uihovereffect-40091.md)
 
 ## See Also
 
-- [class UIPointerStyle](uipointerstyle.md)
+### Pointer styles
+- [class UIPointerStyle](./uipointerstyle.md)
   An object that defines the pointer shape and effect.
-- [enum UIPointerShape](uipointershape-swift.enum.md)
+- [enum UIPointerShape](./uipointershape-swift.enum.md)
   An object that defines the shape of custom pointers.
-- [class UIPointerAccessory](uipointeraccessory.md)
+- [class UIPointerAccessory](./uipointeraccessory.md)
   Constants that describe accessories to display alongside the primary pointer.
 
 

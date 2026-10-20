@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A playground quicklook for the URL.
 
@@ -13,6 +14,8 @@ A playground quicklook for the URL.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: URL.customPlaygroundQuickLook will be removed in a future Swift version
 
 ## Declaration
 

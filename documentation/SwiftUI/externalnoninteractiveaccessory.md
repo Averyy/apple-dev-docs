@@ -1,7 +1,8 @@
 # ExternalNonInteractiveAccessory
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene accessory that presents non-interactive content on an external display.
 
@@ -40,23 +41,24 @@ struct RootView: View {
 ## Topics
 
 ### Initializers
-- [init(content: () -> Content)](externalnoninteractiveaccessory/init(content:).md)
+- [init(content: () -> Content)](./externalnoninteractiveaccessory/init%28content%29.md)
   Creates a scene accessory that presents non-interactive content on an external display.
-- [init(isEnabled: Binding<Bool>, content: () -> Content)](externalnoninteractiveaccessory/init(isenabled:content:).md)
+- [init(isEnabled: Binding<Bool>, content: () -> Content)](./externalnoninteractiveaccessory/init%28isenabled,content%29.md)
   Creates a scene accessory that presents non-interactive content on an external display with a binding for programmatic enablement.
 
 ## Relationships
 
 ### Conforms To
-- [SceneAccessoryContent](sceneaccessorycontent.md)
+- [SceneAccessoryContent](./sceneaccessorycontent.md)
 
 ## See Also
 
-- [func sceneAccessory<C>(content: () -> C) -> some View](view/sceneaccessory(content:).md)
+### Presenting content on an external display
+- [func sceneAccessory<C>(content: () -> C) -> some View](./view/sceneaccessory%28content%29.md)
   Defines any scene accessories associated with `self`.
-- [struct CameraCaptureAccessory](cameracaptureaccessory.md)
+- [struct CameraCaptureAccessory](./cameracaptureaccessory.md)
   A scene accessory that presents content during camera capture.
-- [protocol SceneAccessoryContent](sceneaccessorycontent.md)
+- [protocol SceneAccessoryContent](./sceneaccessorycontent.md)
   Conforming types represent items which define content for scene accessories.
 
 

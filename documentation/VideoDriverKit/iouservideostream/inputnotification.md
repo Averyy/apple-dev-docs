@@ -1,24 +1,26 @@
 # InputNotification
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void InputNotification();
 ```
 
 ## See Also
 
-- [StartIO](iouservideostream/startio.md)
+### Performing I/O
+- [StartIO](./startio.md)
   Tells the stream to start IO.
-- [StopIO](iouservideostream/stopio.md)
+- [StopIO](./stopio.md)
   Tells the stream to stop IO.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](../videodriverkit-page/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
 
 

@@ -1,17 +1,22 @@
 # description
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a standard description for an action.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var description: String? { get }
+```
+
+```c
+extern NSString *NSAccessibilityActionDescription(NSAccessibilityActionName action);
 ```
 
 #### Discussion

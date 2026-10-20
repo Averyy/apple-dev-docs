@@ -1,7 +1,8 @@
 # init(strides:dilationRates:paddingValues:paddingStyle:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3D depthwise convolution descriptor with given values.
 
@@ -17,6 +18,10 @@ Creates a 3D depthwise convolution descriptor with given values.
 
 ```swift
 convenience init?(strides: [NSNumber], dilationRates: [NSNumber], paddingValues: [NSNumber], paddingStyle: MPSGraphPaddingStyle)
+```
+
+```objc
++ (instancetype) descriptorWithStrides:(NSArray<NSNumber *> *) strides dilationRates:(NSArray<NSNumber *> *) dilationRates paddingValues:(NSArray<NSNumber *> *) paddingValues paddingStyle:(MPSGraphPaddingStyle) paddingStyle;
 ```
 
 #### Return Value

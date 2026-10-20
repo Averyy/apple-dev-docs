@@ -1,7 +1,8 @@
 # adPurchaserName
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the entity that purchased the ad.
 
@@ -16,15 +17,20 @@ The name of the entity that purchased the ad.
 var adPurchaserName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * adPurchaserName;
+```
+
 #### Discussion
 
 This property is not used.
 
 ## See Also
 
-- [var adType: String?](skadimpression/adtype.md)
+### Describing ads
+- [var adType: String?](./adtype.md)
   The type of the ad.
-- [var adDescription: String?](skadimpression/addescription.md)
+- [var adDescription: String?](./addescription.md)
   A human-readable description of the ad.
 
 

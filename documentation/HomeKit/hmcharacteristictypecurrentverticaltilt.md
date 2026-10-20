@@ -1,7 +1,8 @@
 # HMCharacteristicTypeCurrentVerticalTilt
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current tilt angle of a vertical slat for an accessory like a window or a fan.
 
@@ -19,6 +20,10 @@ The current tilt angle of a vertical slat for an accessory like a window or a fa
 let HMCharacteristicTypeCurrentVerticalTilt: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeCurrentVerticalTilt;
+```
+
 #### Discussion
 
 The corresponding value represents the angle in degrees, with a value between -90 and 90.
@@ -27,15 +32,16 @@ A value of -90 indicates the slats are fully closed and rotated such that the us
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentHorizontalTilt: String](hmcharacteristictypecurrenthorizontaltilt.md)
+### Tilting mechanisms
+- [let HMCharacteristicTypeCurrentHorizontalTilt: String](./hmcharacteristictypecurrenthorizontaltilt.md)
   The current tilt angle of a horizontal slat for an accessory like a window or a fan.
-- [let HMCharacteristicTypeTargetHorizontalTilt: String](hmcharacteristictypetargethorizontaltilt.md)
+- [let HMCharacteristicTypeTargetHorizontalTilt: String](./hmcharacteristictypetargethorizontaltilt.md)
   The target tilt angle of a horizontal slat for an accessory like a window or a fan.
-- [let HMCharacteristicTypeTargetVerticalTilt: String](hmcharacteristictypetargetverticaltilt.md)
+- [let HMCharacteristicTypeTargetVerticalTilt: String](./hmcharacteristictypetargetverticaltilt.md)
   The target tilt angle of a vertical slat for an accessory like a window or a fan.
-- [let HMCharacteristicTypeCurrentTilt: String](hmcharacteristictypecurrenttilt.md)
+- [let HMCharacteristicTypeCurrentTilt: String](./hmcharacteristictypecurrenttilt.md)
   The current tilt angle of a slat for an accessory like a window or a fan.
-- [let HMCharacteristicTypeTargetTilt: String](hmcharacteristictypetargettilt.md)
+- [let HMCharacteristicTypeTargetTilt: String](./hmcharacteristictypetargettilt.md)
   The target tilt angle of a slat for an accessory like a window or a fan.
 
 

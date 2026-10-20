@@ -7,7 +7,7 @@ A convenience method for enqueueing a buffer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn enqueueOutputBuffer(
  IOStreamBuffer *buffer, 
  IOByteCount dataOffset = 0, 
@@ -26,8 +26,9 @@ virtual IOReturn enqueueOutputBuffer(
 
 ## See Also
 
-- [dequeueInputEntry](iostream/1809653-dequeueinputentry.md)
-- [enqueueOutputEntry](iostream/1809670-enqueueoutputentry.md)
+### Queueing and dequeueing buffers
+- [dequeueInputEntry](./api-1809653-dequeueinputentry.md)
+- [enqueueOutputEntry](./api-1809670-enqueueoutputentry.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSTextSelectionManager.Mode.selectable
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text is selectable but not editable.
 
@@ -12,6 +13,10 @@ Text is selectable but not editable.
 
 ```swift
 case selectable
+```
+
+```c
+NSTextSelectionModeSelectable
 ```
 
 

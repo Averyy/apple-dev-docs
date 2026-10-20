@@ -1,18 +1,19 @@
 # CGColorConversionInfoTransformType.transformToSpace
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a color conversion from a color profile to a device color space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Specifies a color conversion from a color profile to a device color space.
 case transformToSpace
 ```
 
+```c
+kCGColorConversionTransformToSpace
+```
+
 ## See Also
 
-- [CGColorConversionInfoTransformType.transformApplySpace](cgcolorconversioninfotransformtype/transformapplyspace.md)
+### Enumeration Cases
+- [CGColorConversionInfoTransformType.transformApplySpace](./transformapplyspace.md)
   Specifies a color conversion between one color profile and another.
-- [CGColorConversionInfoTransformType.transformFromSpace](cgcolorconversioninfotransformtype/transformfromspace.md)
+- [CGColorConversionInfoTransformType.transformFromSpace](./transformfromspace.md)
   Specifies a color conversion from a device color space to a color profile.
 
 

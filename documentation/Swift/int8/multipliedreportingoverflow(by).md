@@ -1,7 +1,8 @@
 # multipliedReportingOverflow(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the product of this value and the given value, along with a Boolean value indicating whether overflow occurred in the operation.
 

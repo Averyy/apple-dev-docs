@@ -1,7 +1,8 @@
 # manager
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -17,13 +18,18 @@
 var manager: NEVPNManager { get }
 ```
 
+```objc
+@property (readonly) NEVPNManager * manager;
+```
+
 ## See Also
 
-- [var status: NEVPNStatus](nevpnconnection/status.md)
+### Getting VPN connection status
+- [var status: NEVPNStatus](./status.md)
   The current status of the VPN connection.
-- [enum NEVPNStatus](nevpnstatus.md)
+- [enum NEVPNStatus](../nevpnstatus.md)
   The possible states of a VPN connection.
-- [var connectedDate: Date?](nevpnconnection/connecteddate.md)
+- [var connectedDate: Date?](./connecteddate.md)
   The date and time when the connection status changed to `NEVPNStatusConnected`.
 
 

@@ -1,9 +1,10 @@
 # WKWebExtension.MatchPattern.Options
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Constants used by [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) to indicate matching options.
+Constants used by [`WKWebExtension.MatchPattern`](../matchpattern.md) to indicate matching options.
 
 **Availability**:
 - iOS 18.4+
@@ -18,29 +19,33 @@ Constants used by [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md
 struct Options
 ```
 
+```c
+enum WKWebExtensionMatchPatternOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](wkwebextension/matchpattern/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
 ### Type Properties
-- [static var ignorePaths: WKWebExtension.MatchPattern.Options](wkwebextension/matchpattern/options/ignorepaths.md)
+- [static var ignorePaths: WKWebExtension.MatchPattern.Options](./options/ignorepaths.md)
   Indicates that the host components should be ignored while matching.
-- [static var ignoreSchemes: WKWebExtension.MatchPattern.Options](wkwebextension/matchpattern/options/ignoreschemes.md)
+- [static var ignoreSchemes: WKWebExtension.MatchPattern.Options](./options/ignoreschemes.md)
   Indicates that the scheme components should be ignored while matching.
-- [static var matchBidirectionally: WKWebExtension.MatchPattern.Options](wkwebextension/matchpattern/options/matchbidirectionally.md)
+- [static var matchBidirectionally: WKWebExtension.MatchPattern.Options](./options/matchbidirectionally.md)
   Indicates that two patterns should be checked in either direction while matching.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SpeechTextDoneProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a pointer to a text-done callback functionthat is called when the Speech Synthesis Manager has finished processinga buffer of text.
 
@@ -12,6 +13,10 @@ Defines a pointer to a text-done callback functionthat is called when the Speech
 
 ```swift
 typealias SpeechTextDoneProcPtr = (SpeechChannel, SRefCon, UnsafeMutablePointer<UnsafeRawPointer?>?, UnsafeMutablePointer<UInt>, UnsafeMutablePointer<Int32>) -> Void
+```
+
+```c
+typedef void (*SpeechTextDoneProcPtr)(SpeechChannel chan, SRefCon refCon, const void * _Nullable *nextBuf, unsigned long *byteLen, SInt32 *controlFlags);
 ```
 
 #### Discussion
@@ -36,19 +41,20 @@ If your text-done callback function does not change the valuesof the `nextBuf` a
 
 ## See Also
 
-- [typealias SpeechDoneProcPtr](speechdoneprocptr.md)
+### Callbacks
+- [typealias SpeechDoneProcPtr](./speechdoneprocptr.md)
   Defines a pointer to a speech-done callback functionwhich is called when the Speech Synthesis Manager finishes speakinga buffer of text.
-- [typealias SpeechErrorProcPtr](speecherrorprocptr.md)
+- [typealias SpeechErrorProcPtr](./speecherrorprocptr.md)
   Defines a pointer to an error callback functionthat handles syntax errors within commands embedded in a text bufferbeing processed by the Speech Synthesis Manager.
-- [typealias SpeechErrorCFProcPtr](speecherrorcfprocptr.md)
+- [typealias SpeechErrorCFProcPtr](./speecherrorcfprocptr.md)
   Defines a pointer to an error callback function that handles syntax errors within commands embedded in a `CFString` object being processed by the Speech Synthesis Manager.
-- [typealias SpeechPhonemeProcPtr](speechphonemeprocptr.md)
+- [typealias SpeechPhonemeProcPtr](./speechphonemeprocptr.md)
   Defines a pointer to a phoneme callback functionthat is called by the Speech Synthesis Manager before it pronouncesa phoneme.
-- [typealias SpeechSyncProcPtr](speechsyncprocptr.md)
+- [typealias SpeechSyncProcPtr](./speechsyncprocptr.md)
   Defines a pointer to a synchronization callbackfunction that is called when the Speech Synthesis Manager encountersa synchronization command embedded in a text buffer.
-- [typealias SpeechWordProcPtr](speechwordprocptr.md)
+- [typealias SpeechWordProcPtr](./speechwordprocptr.md)
   Defines a pointer to a word callback functionthat is called by the Speech Synthesis Manager before it pronouncesa word.
-- [typealias SpeechWordCFProcPtr](speechwordcfprocptr.md)
+- [typealias SpeechWordCFProcPtr](./speechwordcfprocptr.md)
   Defines a pointer to a Core Foundation-based word callback function that is called by the Speech Synthesis Manager before it pronounces a word.
 
 

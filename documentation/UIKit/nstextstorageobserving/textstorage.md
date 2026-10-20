@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The document text storage object.
@@ -17,6 +18,10 @@ The document text storage object.
 
 ```swift
 var textStorage: NSTextStorage? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSTextStorage * textStorage;
 ```
 
 

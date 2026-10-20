@@ -1,7 +1,8 @@
 # init(contentsOfFile:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a character set read from the bitmap representation stored in the file a given path.
 
@@ -20,13 +21,18 @@ Returns a character set read from the bitmap representation stored in the file a
 init?(contentsOfFile fName: String)
 ```
 
+```objc
++ (NSMutableCharacterSet *) characterSetWithContentsOfFile:(NSString *) fName;
+```
+
 ## See Also
 
-- [init(charactersIn: String)](nsmutablecharacterset/init(charactersin:).md)
+### Creating Custom Character Sets
+- [init(charactersIn: String)](./init%28charactersin%29.md)
   Returns a character set containing the characters in a given string.
-- [init(range: NSRange)](nsmutablecharacterset/init(range:).md)
+- [init(range: NSRange)](./init%28range%29.md)
   Returns a character set containing characters with Unicode values in a given range.
-- [init(bitmapRepresentation: Data)](nsmutablecharacterset/init(bitmaprepresentation:).md)
+- [init(bitmapRepresentation: Data)](./init%28bitmaprepresentation%29.md)
   Returns a character set containing characters determined by a given bitmap representation.
 
 

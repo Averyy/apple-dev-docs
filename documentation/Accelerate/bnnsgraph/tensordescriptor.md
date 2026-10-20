@@ -1,7 +1,8 @@
 # BNNSGraph.TensorDescriptor
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that allows `makeContext` to return a collection of heterogeneously typed `Tensor` structures.
 
@@ -23,12 +24,12 @@ protocol TensorDescriptor
 ## Topics
 
 ### Instance Properties
-- [var tensorData: UnsafeMutableRawPointer?](bnnsgraph/tensordescriptor/tensordata.md)
+- [var tensorData: UnsafeMutableRawPointer?](./tensordescriptor/tensordata.md)
 
 ## Relationships
 
 ### Conforming Types
-- [BNNSGraph.Builder.Tensor](bnnsgraph/builder/tensor.md)
+- [BNNSGraph.Builder.Tensor](./builder/tensor.md)
 
 
 ---

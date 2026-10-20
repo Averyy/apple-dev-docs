@@ -1,7 +1,8 @@
 # contextSize
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum context size in tokens that the model supports.
 
@@ -21,7 +22,7 @@ final var contextSize: Int { get }
 
 ## Mentions
 
-- [Managing the context window](managing-the-context-window.md)
+- [Managing the context window](../managing-the-context-window.md)
 
 #### Return Value
 
@@ -31,13 +32,14 @@ The context size, in tokens.
 
 The context size represents the total number of tokens that can be used in a single session, including both input prompts and generated responses.
 
-> **Note**: An error if the context size cannot be determined. Typically this is due to the model not being available or Apple Intelligence is disabled.
+> **Throws**: An error if the context size cannot be determined. Typically this is due to the model not being available or Apple Intelligence is disabled.
 
 ## See Also
 
-- [var supportedLanguages: Set<Locale.Language>](systemlanguagemodel/supportedlanguages.md)
+### Inspecting model capabilities
+- [var supportedLanguages: Set<Locale.Language>](./supportedlanguages.md)
   Languages that the model supports.
-- [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
+- [func supportsLocale(Locale) -> Bool](./supportslocale%28_%29.md)
   Returns a Boolean value that indicates whether the given locale is supported by the model.
 
 

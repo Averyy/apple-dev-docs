@@ -1,7 +1,8 @@
 # capabilities
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capabilities of the device as reported by the device module.
 
@@ -18,11 +19,16 @@ The capabilities of the device as reported by the device module.
 var capabilities: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * capabilities;
+```
+
 ## See Also
 
-- [struct ICDeviceCapability](icdevicecapability.md)
+### Inspecting a Device’s Capabilities
+- [struct ICDeviceCapability](../icdevicecapability.md)
   Constants that describe the capabilities of a camera.
-- [struct ICSessionOptions](icsessionoptions.md)
+- [struct ICSessionOptions](../icsessionoptions.md)
   Session options for altering the delivery of the device contents.
 
 

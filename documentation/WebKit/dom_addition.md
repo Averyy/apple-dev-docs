@@ -1,10 +1,11 @@
 # DOM_ADDITION
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var DOM_ADDITION: Int { get }
 ```
 
+```c
+DOM_ADDITION
+```
+
 ## See Also
 
-- [var DOM_MODIFICATION: Int](dom_modification.md)
-- [var DOM_REMOVAL: Int](dom_removal.md)
+### Constants
+- [var DOM_MODIFICATION: Int](./dom_modification.md)
+- [var DOM_REMOVAL: Int](./dom_removal.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # fieldOfViewOrientation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation with which the system uses to apply the field-of-view degrees.
 
@@ -21,13 +22,14 @@ var fieldOfViewOrientation: CameraFieldOfViewOrientation
 
 #### Discussion
 
-The value of this property determines the orientation that the system uses to apply the [`fieldOfViewInDegrees`](perspectivecameracomponent/fieldofviewindegrees.md) value.
+The value of this property determines the orientation that the system uses to apply the [`fieldOfViewInDegrees`](./fieldofviewindegrees.md) value.
 
-This property defaults to [`CameraFieldOfViewOrientation.vertical`](camerafieldofvieworientation/vertical.md).
+This property defaults to [`CameraFieldOfViewOrientation.vertical`](../camerafieldofvieworientation/vertical.md).
 
 ## See Also
 
-- [var fieldOfViewInDegrees: Float](perspectivecameracomponent/fieldofviewindegrees.md)
+### Setting the field of view
+- [var fieldOfViewInDegrees: Float](./fieldofviewindegrees.md)
   The camera’s total field of view in degrees.
 
 

@@ -1,17 +1,22 @@
 # setDrawsOutsideLineFragment(_:forGlyphRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether the specified glyphs exceed the bounds of the line fragment in which they are laid out.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setDrawsOutsideLineFragment(_ flag: Bool, forGlyphRange glyphRange: NSRange)
+```
+
+```objc
+- (void) setDrawsOutsideLineFragment:(BOOL) flag forGlyphRange:(NSRange) glyphRange;
 ```
 
 #### Discussion
@@ -22,24 +27,25 @@ A subclass can override this method to interact with custom glyph storage.
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if the glyphs in `glyphRange` exceed the bounds of the line fragment in which they are laid out, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+- `flag`: [`true`](../../Swift/true.md) if the glyphs in `glyphRange` exceed the bounds of the line fragment in which they are laid out, [`false`](../../Swift/false.md) otherwise.
 - `glyphRange`: The range of the glyphs in question.
 
 ## See Also
 
-- [func characterRange(forGlyphRange: NSRange, actualGlyphRange: NSRangePointer?) -> NSRange](nstypesetter/characterrange(forglyphrange:actualglyphrange:).md)
+### Interfacing with Glyph Storage
+- [func characterRange(forGlyphRange: NSRange, actualGlyphRange: NSRangePointer?) -> NSRange](./characterrange%28forglyphrange,actualglyphrange%29.md)
   Returns the range for the characters in the receiver’s text store that are mapped to the specified glyphs.
-- [func glyphRange(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?) -> NSRange](nstypesetter/glyphrange(forcharacterrange:actualcharacterrange:).md)
+- [func glyphRange(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?) -> NSRange](./glyphrange%28forcharacterrange,actualcharacterrange%29.md)
   Returns the range for the glyphs mapped to the characters of the text store in the specified range.
-- [func setAttachmentSize(NSSize, forGlyphRange: NSRange)](nstypesetter/setattachmentsize(_:forglyphrange:).md)
+- [func setAttachmentSize(NSSize, forGlyphRange: NSRange)](./setattachmentsize%28_,forglyphrange%29.md)
   Sets the size the specified glyphs (assumed to be attachments) will be asked to draw themselves at.
-- [func setBidiLevels(UnsafePointer<UInt8>!, forGlyphRange: NSRange)](nstypesetter/setbidilevels(_:forglyphrange:).md)
+- [func setBidiLevels(UnsafePointer<UInt8>!, forGlyphRange: NSRange)](./setbidilevels%28_,forglyphrange%29.md)
   Sets the direction of the specified glyphs for bidirectional text.
-- [func setLineFragmentRect(NSRect, forGlyphRange: NSRange, usedRect: NSRect, baselineOffset: CGFloat)](nstypesetter/setlinefragmentrect(_:forglyphrange:usedrect:baselineoffset:).md)
+- [func setLineFragmentRect(NSRect, forGlyphRange: NSRange, usedRect: NSRect, baselineOffset: CGFloat)](./setlinefragmentrect%28_,forglyphrange,usedrect,baselineoffset%29.md)
   Sets the line fragment rectangle where the specified glyphs are laid out.
-- [func setLocation(NSPoint, withAdvancements: UnsafePointer<CGFloat>!, forStartOfGlyphRange: NSRange)](nstypesetter/setlocation(_:withadvancements:forstartofglyphrange:).md)
+- [func setLocation(NSPoint, withAdvancements: UnsafePointer<CGFloat>!, forStartOfGlyphRange: NSRange)](./setlocation%28_,withadvancements,forstartofglyphrange%29.md)
   Sets the location where the specified glyphs are laid out.
-- [func setNotShownAttribute(Bool, forGlyphRange: NSRange)](nstypesetter/setnotshownattribute(_:forglyphrange:).md)
+- [func setNotShownAttribute(Bool, forGlyphRange: NSRange)](./setnotshownattribute%28_,forglyphrange%29.md)
   Sets whether the specified glyphs are not shown.
 
 

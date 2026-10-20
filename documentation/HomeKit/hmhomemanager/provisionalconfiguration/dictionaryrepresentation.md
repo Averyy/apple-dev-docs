@@ -1,7 +1,8 @@
 # dictionaryRepresentation
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of attributes that an installation service uses to configure a home.
 
@@ -17,9 +18,10 @@ var dictionaryRepresentation: [String : any Sendable] { get }
 
 ## See Also
 
-- [let hubPairingIdentity: HMHomeManager.PairingIdentity](hmhomemanager/provisionalconfiguration/hubpairingidentity.md)
+### Identifying a provisional home
+- [let hubPairingIdentity: HMHomeManager.PairingIdentity](./hubpairingidentity.md)
   Identity information that an installation service uses to set up a provisional home and pair devices.
-- [let threadNetworkIdentifier: Data](hmhomemanager/provisionalconfiguration/threadnetworkidentifier.md)
+- [let threadNetworkIdentifier: Data](./threadnetworkidentifier.md)
   The unique identifier for a Thread network that a home hub provides.
 
 

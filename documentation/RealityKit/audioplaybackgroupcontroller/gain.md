@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The individual gain in decibels for all audio resources in the group.
 
@@ -24,7 +25,7 @@ The individual gain in decibels for all audio resources in the group.
 
 The gain must be zero or negative, where zero is nominal loudness and negative infinity is silent. If the gain is positive, it will be reset to zero.
 
-Use the [`fade(to:duration:)`](audioplaybackgroupcontroller/fade(to:duration:).md) method to change the gain gradually and create smooth transitions.
+Use the [`fade(to:duration:)`](./fade%28to,duration%29.md) method to change the gain gradually and create smooth transitions.
 
 
 ---

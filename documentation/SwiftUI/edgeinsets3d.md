@@ -1,7 +1,8 @@
 # EdgeInsets3D
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The inset distances for the faces of a 3D volume.
 
@@ -18,46 +19,47 @@ struct EdgeInsets3D
 ## Topics
 
 ### Getting edge insets
-- [var top: CGFloat](edgeinsets3d/top.md)
+- [var top: CGFloat](./edgeinsets3d/top.md)
   The inset distance along the top face of a 3D volume.
-- [var bottom: CGFloat](edgeinsets3d/bottom.md)
+- [var bottom: CGFloat](./edgeinsets3d/bottom.md)
   The inset distance along the bottom face of a 3D volume.
-- [var leading: CGFloat](edgeinsets3d/leading.md)
+- [var leading: CGFloat](./edgeinsets3d/leading.md)
   The inset distance along the leading face of a 3D volume.
-- [var trailing: CGFloat](edgeinsets3d/trailing.md)
+- [var trailing: CGFloat](./edgeinsets3d/trailing.md)
   The inset distance along the top trailing of a 3D volume.
-- [var front: CGFloat](edgeinsets3d/front.md)
+- [var front: CGFloat](./edgeinsets3d/front.md)
   The inset distance along the top front of a 3D volume.
-- [var back: CGFloat](edgeinsets3d/back.md)
+- [var back: CGFloat](./edgeinsets3d/back.md)
   The inset distance along the top back of a 3D volume.
 ### Creating an edge inset
-- [init(horizontal: CGFloat, vertical: CGFloat, depth: CGFloat)](edgeinsets3d/init(horizontal:vertical:depth:).md)
+- [init(horizontal: CGFloat, vertical: CGFloat, depth: CGFloat)](./edgeinsets3d/init%28horizontal,vertical,depth%29.md)
   Creates an `EdgeInsets3D` value with values provided for each axis.
-- [init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat, front: CGFloat, back: CGFloat)](edgeinsets3d/init(top:leading:bottom:trailing:front:back:).md)
+- [init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat, front: CGFloat, back: CGFloat)](./edgeinsets3d/init%28top,leading,bottom,trailing,front,back%29.md)
   Creates an `EdgeInsets3D` value with values provided for each face.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Animatable](./animatable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Edge](edge.md)
+### Accessing edges, regions, and layouts
+- [enum Edge](./edge.md)
   An enumeration to indicate one edge of a rectangle.
-- [enum Edge3D](edge3d.md)
+- [enum Edge3D](./edge3d.md)
   An edge or face of a 3D volume.
-- [enum HorizontalEdge](horizontaledge.md)
+- [enum HorizontalEdge](./horizontaledge.md)
   An edge on the horizontal axis.
-- [enum VerticalEdge](verticaledge.md)
+- [enum VerticalEdge](./verticaledge.md)
   An edge on the vertical axis.
-- [struct EdgeInsets](edgeinsets.md)
+- [struct EdgeInsets](./edgeinsets.md)
   The inset distances for the sides of a rectangle.
 
 

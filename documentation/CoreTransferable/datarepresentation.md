@@ -1,7 +1,8 @@
 # DataRepresentation
 
 **Framework**: Core Transferable  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transfer representation for types that provide their own binary data conversion.
 
@@ -22,7 +23,7 @@ struct DataRepresentation<Item> where Item : Transferable
 
 ## Mentions
 
-- [Choosing a transfer representation for a model type](choosing-a-transfer-representation-for-a-model-type.md)
+- [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
 
 #### Overview
 
@@ -36,7 +37,7 @@ struct ImageDocumentLayer {
 }
 ```
 
-You can provide multiple transfer representations for a model type, even if the transfer representation types are the same. The following shows the `ImageDocumentLayer` structure conforming to `Transferable` with two [`DataRepresentation`](datarepresentation.md) instances composed together:
+You can provide multiple transfer representations for a model type, even if the transfer representation types are the same. The following shows the `ImageDocumentLayer` structure conforming to `Transferable` with two [`DataRepresentation`](./datarepresentation.md) instances composed together:
 
 ```swift
 extension ImageDocumentLayer: Transferable {
@@ -70,28 +71,29 @@ Avoid registering data with the `UTType.data` content type. Instead, choose a co
   }
 ```
 
-> 💡 **Tip**: If a type conforms to `Codable`, [`CodableRepresentation`](codablerepresentation.md) might be a more convenient choice than `DataRepresentation`.
+> 💡 **Tip**: If a type conforms to `Codable`, [`CodableRepresentation`](./codablerepresentation.md) might be a more convenient choice than `DataRepresentation`.
 
 ## Topics
 
 ### Creating a transfer representation
-- [init(contentType: UTType, exporting: (Item) async throws -> Data, importing: (Data) async throws -> Item)](datarepresentation/init(contenttype:exporting:importing:).md)
+- [init(contentType: UTType, exporting: (Item) async throws -> Data, importing: (Data) async throws -> Item)](./datarepresentation/init%28contenttype,exporting,importing%29.md)
   Creates a representation that allows transporting an item as binary data.
-- [init(importedContentType: UTType, importing: (Data) async throws -> Item)](datarepresentation/init(importedcontenttype:importing:).md)
+- [init(importedContentType: UTType, importing: (Data) async throws -> Item)](./datarepresentation/init%28importedcontenttype,importing%29.md)
   Creates a representation that allows importing an item as binary data.
-- [init(exportedContentType: UTType, exporting: (Item) async throws -> Data)](datarepresentation/init(exportedcontenttype:exporting:).md)
+- [init(exportedContentType: UTType, exporting: (Item) async throws -> Data)](./datarepresentation/init%28exportedcontenttype,exporting%29.md)
   Creates a representation that allows exporting an item as binary data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TransferRepresentation](transferrepresentation.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TransferRepresentation](./transferrepresentation.md)
 
 ## See Also
 
-- [struct CodableRepresentation](codablerepresentation.md)
+### Data transfer
+- [struct CodableRepresentation](./codablerepresentation.md)
   A transfer representation for types that participate in Swift’s protocols for encoding and decoding.
 
 

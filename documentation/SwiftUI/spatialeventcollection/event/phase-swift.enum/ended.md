@@ -1,7 +1,8 @@
 # SpatialEventCollection.Event.Phase.ended
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state associated with this phase ended normally and won’t produce any more updates.
 
@@ -21,9 +22,10 @@ case ended
 
 ## See Also
 
-- [SpatialEventCollection.Event.Phase.active](spatialeventcollection/event/phase-swift.enum/active.md)
+### Getting the phase
+- [SpatialEventCollection.Event.Phase.active](./active.md)
   The phase is active and the state associated with it is guaranteed to produce at least one more update.
-- [SpatialEventCollection.Event.Phase.cancelled](spatialeventcollection/event/phase-swift.enum/cancelled.md)
+- [SpatialEventCollection.Event.Phase.cancelled](./cancelled.md)
   The state associated with this phase was canceled and won’t produce any more updates.
 
 

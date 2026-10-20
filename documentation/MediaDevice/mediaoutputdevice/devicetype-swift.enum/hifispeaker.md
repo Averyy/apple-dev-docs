@@ -1,7 +1,8 @@
 # MediaOutputDevice.DeviceType.hifiSpeaker
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A hi-fi speaker.
 

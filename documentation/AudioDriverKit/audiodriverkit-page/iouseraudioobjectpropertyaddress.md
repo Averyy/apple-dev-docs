@@ -1,7 +1,8 @@
 # IOUserAudioObjectPropertyAddress
 
 **Framework**: AudioDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that collects the three parts — selector, scope, and element — that identify a specific property.
 
@@ -10,27 +11,28 @@ An object that collects the three parts — selector, scope, and element — tha
 
 ## Declaration
 
-```swift
+```c
 struct IOUserAudioObjectPropertyAddress;
 ```
 
 ## Topics
 
 ### Address Members
-- [mSelector](audiodriverkit/iouseraudioobjectpropertyaddress/mselector.md)
+- [mSelector](./iouseraudioobjectpropertyaddress/mselector.md)
   The selector for the property.
-- [mScope](audiodriverkit/iouseraudioobjectpropertyaddress/mscope.md)
+- [mScope](./iouseraudioobjectpropertyaddress/mscope.md)
   The scope for the property.
-- [mElement](audiodriverkit/iouseraudioobjectpropertyaddress/melement.md)
+- [mElement](./iouseraudioobjectpropertyaddress/melement.md)
   The element for the property.
 
 ## See Also
 
-- [Create](iouseraudiocustomproperty/create.md)
+### Creating a Custom Property
+- [Create](../iouseraudiocustomproperty/create.md)
   Allocates and initializes an instance of the custom property class.
-- [init](iouseraudiocustomproperty/init.md)
+- [init](../iouseraudiocustomproperty/init.md)
   Initializes an instance of a custom property.
-- [IOUserAudioCustomPropertyDataType](audiodriverkit/iouseraudiocustompropertydatatype.md)
+- [IOUserAudioCustomPropertyDataType](./iouseraudiocustompropertydatatype.md)
   A data and qualifier type used for custom properties.
 
 

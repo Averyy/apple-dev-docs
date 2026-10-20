@@ -1,7 +1,8 @@
 # kMDItemAppleLoopsRootKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the loop's original key. The key is the root note or tonic for the loop, and does not include the scale type. A CFString.
 
@@ -12,6 +13,10 @@ Specifies the loop's original key. The key is the root note or tonic for the loo
 
 ```swift
 let kMDItemAppleLoopsRootKey: CFString!
+```
+
+```c
+const CFStringRef kMDItemAppleLoopsRootKey;
 ```
 
 

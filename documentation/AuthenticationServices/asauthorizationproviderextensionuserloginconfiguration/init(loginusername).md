@@ -1,7 +1,8 @@
 # init(loginUserName:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 14.0+
@@ -10,6 +11,10 @@
 
 ```swift
 init(loginUserName: String)
+```
+
+```objc
+- (instancetype) initWithLoginUserName:(NSString *) loginUserName;
 ```
 
 

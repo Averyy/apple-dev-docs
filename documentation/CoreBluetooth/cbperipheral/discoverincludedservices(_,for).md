@@ -1,7 +1,8 @@
 # discoverIncludedServices(_:for:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Discovers the specified included services of a previously-discovered service.
 
@@ -20,24 +21,29 @@ Discovers the specified included services of a previously-discovered service.
 func discoverIncludedServices(_ includedServiceUUIDs: [CBUUID]?, for service: CBService)
 ```
 
+```objc
+- (void) discoverIncludedServices:(NSArray<CBUUID *> *) includedServiceUUIDs forService:(CBService *) service;
+```
+
 #### Discussion
 
-You can provide an array of [`CBUUID`](cbuuid.md) objects—representing included service UUIDs—in the `includedServiceUUIDs` parameter. When you do, the peripheral returns only the services of the peripheral that match the provided UUIDs.
+You can provide an array of [`CBUUID`](../cbuuid.md) objects—representing included service UUIDs—in the `includedServiceUUIDs` parameter. When you do, the peripheral returns only the services of the peripheral that match the provided UUIDs.
 
 > **Note**:  If the `servicesUUIDs` parameter is `nil`, this method returns all of the peripheral’s available services. This is much slower than providing an array of service UUIDs to search for.
 
-When the peripheral discovers one or more included services of the specified service, it calls the [`peripheral(_:didDiscoverIncludedServicesFor:error:)`](cbperipheraldelegate/peripheral(_:diddiscoverincludedservicesfor:error:).md) method of its delegate object. After the service discovers its included services, you can access them through the service’s [`includedServices`](cbservice/includedservices.md) property.
+When the peripheral discovers one or more included services of the specified service, it calls the [`peripheral(_:didDiscoverIncludedServicesFor:error:)`](../cbperipheraldelegate/peripheral%28_,diddiscoverincludedservicesfor,error%29.md) method of its delegate object. After the service discovers its included services, you can access them through the service’s [`includedServices`](../cbservice/includedservices.md) property.
 
 ## Parameters
 
-- `includedServiceUUIDs`: An array of [`CBUUID`](cbuuid.md) objects that you are interested in. Here, each [`CBUUID`](cbuuid.md) object represents a UUID that identifies the type of included service you want to discover.
+- `includedServiceUUIDs`: An array of [`CBUUID`](../cbuuid.md) objects that you are interested in. Here, each [`CBUUID`](../cbuuid.md) object represents a UUID that identifies the type of included service you want to discover.
 - `service`: The previously-discovered service whose included services you want to discover.
 
 ## See Also
 
-- [func discoverServices([CBUUID]?)](cbperipheral/discoverservices(_:).md)
+### Discovering Services
+- [func discoverServices([CBUUID]?)](./discoverservices%28_%29.md)
   Discovers the specified services of the peripheral.
-- [var services: [CBService]?](cbperipheral/services.md)
+- [var services: [CBService]?](./services.md)
   A list of a peripheral’s discovered services.
 
 

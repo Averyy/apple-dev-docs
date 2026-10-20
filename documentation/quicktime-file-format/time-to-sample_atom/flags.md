@@ -1,7 +1,8 @@
 # Flags
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 3-byte space for time-to-sample flags.
 
@@ -11,15 +12,16 @@ Set this field to `0`.
 
 ## See Also
 
-- [Size](time-to-sample_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this time-to-sample atom.
-- [Type](time-to-sample_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](time-to-sample_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this time-to-sample atom.
-- [Number of entries](time-to-sample_atom/number_of_entries.md)
+- [Number of entries](./number_of_entries.md)
   A 32-bit integer containing the count of entries in the time-to-sample table.
-- [Time-to-sample table](time-to-sample_atom/time-to-sample_table.md)
+- [Time-to-sample table](./time-to-sample_table.md)
   A table that defines the duration of each sample in the media.
 
 

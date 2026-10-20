@@ -1,7 +1,8 @@
 # AudioComponentValidate(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 16.0+
@@ -16,10 +17,15 @@
 func AudioComponentValidate(_ inComponent: AudioComponent, _ inValidationParameters: CFDictionary?, _ outValidationResult: UnsafeMutablePointer<AudioComponentValidationResult>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioComponentValidate(AudioComponent inComponent, CFDictionaryRef inValidationParameters, AudioComponentValidationResult *outValidationResult);
+```
+
 ## See Also
 
-- [var kAudioComponentValidationParameter_LoadOutOfProcess: String](kaudiocomponentvalidationparameter_loadoutofprocess.md)
-- [enum AudioComponentValidationResult](audiocomponentvalidationresult.md)
+### Validating an Audio Component
+- [var kAudioComponentValidationParameter_LoadOutOfProcess: String](./kaudiocomponentvalidationparameter_loadoutofprocess.md)
+- [enum AudioComponentValidationResult](./audiocomponentvalidationresult.md)
 
 
 ---

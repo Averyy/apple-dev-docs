@@ -1,7 +1,8 @@
 # Apps.Attributes
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for an apps resource.
 
@@ -10,26 +11,26 @@ The attributes for an apps resource.
 
 ## Declaration
 
-```swift
+```
 object Apps.Attributes
 ```
 
 ## Mentions
 
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
+- [Installing, managing, updating, and removing apps](../installing-managing-updating-and-removing-apps.md)
 
 ## Topics
 
 ### Related Objects
-- [object Apps.Attributes.ContentRatingsBySystem](apps/attributes-data.dictionary/contentratingsbysystem-data.dictionary.md)
-- [object Apps.Attributes.FileSizeByDevice](apps/attributes-data.dictionary/filesizebydevice-data.dictionary.md)
-- [object Apps.Attributes.LatestVersionInfo](apps/attributes-data.dictionary/latestversioninfo-data.dictionary.md)
-- [object Apps.Attributes.Offers](apps/attributes-data.dictionary/offers-data.dictionary.md)
-- [object Apps.Attributes.RequirementsByDeviceFamily](apps/attributes-data.dictionary/requirementsbydevicefamily-data.dictionary.md)
-- [object Apps.Attributes.ScreenshotsByType](apps/attributes-data.dictionary/screenshotsbytype-data.dictionary.md)
-- [object Apps.Attributes.TaxExclusivePrices](apps/attributes-data.dictionary/taxexclusiveprices-data.dictionary.md)
-- [object Apps.Attributes.UserRating](apps/attributes-data.dictionary/userrating-data.dictionary.md)
-- [object Apps.Attributes.VersionHistory](apps/attributes-data.dictionary/versionhistory-data.dictionary.md)
+- [object Apps.Attributes.ContentRatingsBySystem](./attributes-data.dictionary/contentratingsbysystem-data.dictionary.md)
+- [object Apps.Attributes.FileSizeByDevice](./attributes-data.dictionary/filesizebydevice-data.dictionary.md)
+- [object Apps.Attributes.LatestVersionInfo](./attributes-data.dictionary/latestversioninfo-data.dictionary.md)
+- [object Apps.Attributes.Offers](./attributes-data.dictionary/offers-data.dictionary.md)
+- [object Apps.Attributes.RequirementsByDeviceFamily](./attributes-data.dictionary/requirementsbydevicefamily-data.dictionary.md)
+- [object Apps.Attributes.ScreenshotsByType](./attributes-data.dictionary/screenshotsbytype-data.dictionary.md)
+- [object Apps.Attributes.TaxExclusivePrices](./attributes-data.dictionary/taxexclusiveprices-data.dictionary.md)
+- [object Apps.Attributes.UserRating](./attributes-data.dictionary/userrating-data.dictionary.md)
+- [object Apps.Attributes.VersionHistory](./attributes-data.dictionary/versionhistory-data.dictionary.md)
 
 ## Properties
 
@@ -76,7 +77,8 @@ object Apps.Attributes
 
 ## See Also
 
-- [object Apps.Relationships](apps/relationships-data.dictionary.md)
+### Related Objects
+- [object Apps.Relationships](./relationships-data.dictionary.md)
   The relationships for an apps resource.
 
 

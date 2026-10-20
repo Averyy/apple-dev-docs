@@ -1,7 +1,8 @@
 # SSL_NO_SUCH_CIPHERSUITE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var SSL_NO_SUCH_CIPHERSUITE: SSLCipherSuite { get }
+```
+
+```c
+SSL_NO_SUCH_CIPHERSUITE
 ```
 
 

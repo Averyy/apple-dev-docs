@@ -1,7 +1,8 @@
 # ClothGrabComponent.GrabMode
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines whether a grab component will select particles using a ray or a volume.
 
@@ -19,21 +20,22 @@ struct GrabMode
 ## Topics
 
 ### Creating a grab mode
-- [static var ray: ClothGrabComponent.GrabMode](clothgrabcomponent/grabmode/ray.md)
+- [static var ray: ClothGrabComponent.GrabMode](./grabmode/ray.md)
   Grabbing will be performed using a ray.
-- [static func volume(shape: ClothVolumeShape) -> ClothGrabComponent.GrabMode](clothgrabcomponent/grabmode/volume(shape:).md)
+- [static func volume(shape: ClothVolumeShape) -> ClothGrabComponent.GrabMode](./grabmode/volume%28shape%29.md)
   Grabbing will be performed using a volume of the given shape.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(mode: ClothGrabComponent.GrabMode)](clothgrabcomponent/init(mode:).md)
+### Creating a grab component
+- [init(mode: ClothGrabComponent.GrabMode)](./init%28mode%29.md)
   Creates a cloth grab component with the given grab mode.
 
 

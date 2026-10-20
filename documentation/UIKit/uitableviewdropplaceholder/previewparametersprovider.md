@@ -1,7 +1,8 @@
 # previewParametersProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler block that provides the preview parameters for the specified cell.
 
@@ -15,6 +16,10 @@ The handler block that provides the preview parameters for the specified cell.
 
 ```swift
 var previewParametersProvider: ((UITableViewCell) -> UIDragPreviewParameters?)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIDragPreviewParameters * (^previewParametersProvider)(UITableViewCell *);
 ```
 
 #### Discussion

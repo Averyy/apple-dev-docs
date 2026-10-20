@@ -1,7 +1,8 @@
 # code
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error code.
 

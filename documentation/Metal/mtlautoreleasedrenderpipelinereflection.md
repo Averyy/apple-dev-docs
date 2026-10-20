@@ -1,17 +1,18 @@
 # MTLAutoreleasedRenderPipelineReflection
 
 **Framework**: Metal  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A convenience type alias for an autoreleased pipeline reflection instance.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,21 +20,26 @@ A convenience type alias for an autoreleased pipeline reflection instance.
 typealias MTLAutoreleasedRenderPipelineReflection = MTLRenderPipelineReflection
 ```
 
+```c
+typedef MTLRenderPipelineReflection * MTLAutoreleasedRenderPipelineReflection;
+```
+
 ## See Also
 
-- [class MTLComputePipelineReflection](mtlcomputepipelinereflection.md)
+### Introspection data
+- [class MTLComputePipelineReflection](./mtlcomputepipelinereflection.md)
   Information about the arguments of a compute function.
-- [typealias MTLAutoreleasedComputePipelineReflection](mtlautoreleasedcomputepipelinereflection.md)
+- [typealias MTLAutoreleasedComputePipelineReflection](./mtlautoreleasedcomputepipelinereflection.md)
   A convenience type alias for an autoreleased compute pipeline reflection object.
-- [class MTLRenderPipelineReflection](mtlrenderpipelinereflection.md)
+- [class MTLRenderPipelineReflection](./mtlrenderpipelinereflection.md)
   Information about the arguments of a graphics function.
-- [enum MTLBindingType](mtlbindingtype.md)
-- [protocol MTLBinding](mtlbinding.md)
-- [enum MTLBindingAccess](mtlbindingaccess.md)
-- [protocol MTLBufferBinding](mtlbufferbinding.md)
-- [protocol MTLTextureBinding](mtltexturebinding.md)
-- [protocol MTLThreadgroupBinding](mtlthreadgroupbinding.md)
-- [protocol MTLObjectPayloadBinding](mtlobjectpayloadbinding.md)
+- [enum MTLBindingType](./mtlbindingtype.md)
+- [protocol MTLBinding](./mtlbinding.md)
+- [enum MTLBindingAccess](./mtlbindingaccess.md)
+- [protocol MTLBufferBinding](./mtlbufferbinding.md)
+- [protocol MTLTextureBinding](./mtltexturebinding.md)
+- [protocol MTLThreadgroupBinding](./mtlthreadgroupbinding.md)
+- [protocol MTLObjectPayloadBinding](./mtlobjectpayloadbinding.md)
 
 
 ---

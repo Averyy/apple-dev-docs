@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Spring loaded interactions will be enabled for applicable views.
 
@@ -22,9 +23,10 @@ static let enabled: SpringLoadingBehavior
 
 ## See Also
 
-- [static let automatic: SpringLoadingBehavior](springloadingbehavior/automatic.md)
+### Getting the behaviors
+- [static let automatic: SpringLoadingBehavior](./automatic.md)
   The automatic spring loading behavior.
-- [static let disabled: SpringLoadingBehavior](springloadingbehavior/disabled.md)
+- [static let disabled: SpringLoadingBehavior](./disabled.md)
   Spring loaded interactions will be disabled for applicable views.
 
 

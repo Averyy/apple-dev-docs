@@ -1,7 +1,8 @@
 # UICollectionViewFlowLayout.SectionInsetReference.fromContentInset
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Section insets are defined in relation to the collection view’s content inset.
 
@@ -18,11 +19,16 @@ Section insets are defined in relation to the collection view’s content inset.
 case fromContentInset
 ```
 
+```c
+UICollectionViewFlowLayoutSectionInsetFromContentInset
+```
+
 ## See Also
 
-- [UICollectionViewFlowLayout.SectionInsetReference.fromLayoutMargins](uicollectionviewflowlayout/sectioninsetreference-swift.enum/fromlayoutmargins.md)
+### Constants
+- [UICollectionViewFlowLayout.SectionInsetReference.fromLayoutMargins](./fromlayoutmargins.md)
   Section insets are defined in relation to the margins of the layout.
-- [UICollectionViewFlowLayout.SectionInsetReference.fromSafeArea](uicollectionviewflowlayout/sectioninsetreference-swift.enum/fromsafearea.md)
+- [UICollectionViewFlowLayout.SectionInsetReference.fromSafeArea](./fromsafearea.md)
   Section insets are defined in relation to the safe area of the layout.
 
 

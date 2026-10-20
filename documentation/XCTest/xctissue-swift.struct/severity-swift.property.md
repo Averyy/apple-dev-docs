@@ -1,7 +1,8 @@
 # severity
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The severity of the issue.
 

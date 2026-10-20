@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data source for the picker view.
 
@@ -17,13 +18,18 @@ The data source for the picker view.
 weak var dataSource: (any UIPickerViewDataSource)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIPickerViewDataSource> dataSource;
+```
+
 #### Discussion
 
-The data source must adopt the [`UIPickerViewDataSource`](uipickerviewdatasource.md) protocol and implement the required methods to return the number of components and the number of rows in each component.
+The data source must adopt the [`UIPickerViewDataSource`](../uipickerviewdatasource.md) protocol and implement the required methods to return the number of components and the number of rows in each component.
 
 ## See Also
 
-- [protocol UIPickerViewDataSource](uipickerviewdatasource.md)
+### Providing the picker data
+- [protocol UIPickerViewDataSource](../uipickerviewdatasource.md)
   The interface for a picker view’s data source.
 
 

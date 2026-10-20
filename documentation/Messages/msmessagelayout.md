@@ -1,9 +1,10 @@
 # MSMessageLayout
 
 **Framework**: Messages  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-An abstract base class that defines the appearance of [`MSMessage`](msmessage.md) objects in the conversation transcript.
+An abstract base class that defines the appearance of [`MSMessage`](./msmessage.md) objects in the conversation transcript.
 
 **Availability**:
 - iOS 10.0+
@@ -16,35 +17,40 @@ An abstract base class that defines the appearance of [`MSMessage`](msmessage.md
 class MSMessageLayout
 ```
 
+```objc
+@interface MSMessageLayout : NSObject
+```
+
 #### Overview
 
-You do not subclass `MSMessageLayout` or create instances of it directly. Instead, instantiate the provided concrete subclass, the [`MSMessageTemplateLayout`](msmessagetemplatelayout.md) class.
+You do not subclass `MSMessageLayout` or create instances of it directly. Instead, instantiate the provided concrete subclass, the [`MSMessageTemplateLayout`](./msmessagetemplatelayout.md) class.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MSMessageLiveLayout](msmessagelivelayout.md)
-- [MSMessageTemplateLayout](msmessagetemplatelayout.md)
+- [MSMessageLiveLayout](./msmessagelivelayout.md)
+- [MSMessageTemplateLayout](./msmessagetemplatelayout.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MSMessage](msmessage.md)
+### Interactive messages
+- [class MSMessage](./msmessage.md)
   A custom message object.
-- [class MSSession](mssession.md)
+- [class MSSession](./mssession.md)
   A session object used to create and update messages.
-- [class MSMessageTemplateLayout](msmessagetemplatelayout.md)
+- [class MSMessageTemplateLayout](./msmessagetemplatelayout.md)
   A template-based layout for custom messages.
-- [class MSMessageLiveLayout](msmessagelivelayout.md)
+- [class MSMessageLiveLayout](./msmessagelivelayout.md)
   A layout that provides a custom, interactive view inside the transcript.
 
 

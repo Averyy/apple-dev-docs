@@ -1,12 +1,13 @@
 # NSGraphicsContext
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a graphics context.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,94 +15,98 @@ An object that represents a graphics context.
 class NSGraphicsContext
 ```
 
+```objc
+@interface NSGraphicsContext : NSObject
+```
+
 #### Overview
 
 You can think of a graphics context as a destination to which drawing and graphics state operations are sent for execution. Each graphics context contains its own graphics environment and state.
 
-The [`NSGraphicsContext`](nsgraphicscontext.md) class is an abstract superclass for destination-specific graphics contexts. You obtain instances of concrete subclasses with the class methods [`current`](nsgraphicscontext/current.md), [`init(attributes:)`](nsgraphicscontext/init(attributes:).md), [`init(bitmapImageRep:)`](nsgraphicscontext/init(bitmapimagerep:).md), [`init(cgContext:flipped:)`](nsgraphicscontext/init(cgcontext:flipped:)-9cbad.md), and [`init(window:)`](nsgraphicscontext/init(window:).md).
+The [`NSGraphicsContext`](./nsgraphicscontext.md) class is an abstract superclass for destination-specific graphics contexts. You obtain instances of concrete subclasses with the class methods [`current`](./nsgraphicscontext/current.md), [`init(attributes:)`](./nsgraphicscontext/init%28attributes%29.md), [`init(bitmapImageRep:)`](./nsgraphicscontext/init%28bitmapimagerep%29.md), [`init(cgContext:flipped:)`](./nsgraphicscontext/init%28cgcontext,flipped%29-9cbad.md), and [`init(window:)`](./nsgraphicscontext/init%28window%29.md).
 
-At any time there is the notion of the current context. The current context for the current thread may be set using [`current`](nsgraphicscontext/current.md).
+At any time there is the notion of the current context. The current context for the current thread may be set using [`current`](./nsgraphicscontext/current.md).
 
-Graphics contexts are maintained on a stack. You push a graphics context onto the stack by sending it a [`saveGraphicsState()`](nsgraphicscontext/savegraphicsstate()-swift.method.md) message, and pop it off the stack by sending it a [`restoreGraphicsState()`](nsgraphicscontext/restoregraphicsstate()-swift.method.md) message. By sending [`restoreGraphicsState()`](nsgraphicscontext/restoregraphicsstate()-swift.method.md) to a graphics context object you remove it from the stack, and the next graphics context on the stack becomes the current graphics context.
+Graphics contexts are maintained on a stack. You push a graphics context onto the stack by sending it a [`saveGraphicsState()`](./nsgraphicscontext/savegraphicsstate%28%29-swift.method.md) message, and pop it off the stack by sending it a [`restoreGraphicsState()`](./nsgraphicscontext/restoregraphicsstate%28%29-swift.method.md) message. By sending [`restoreGraphicsState()`](./nsgraphicscontext/restoregraphicsstate%28%29-swift.method.md) to a graphics context object you remove it from the stack, and the next graphics context on the stack becomes the current graphics context.
 
 ## Topics
 
 ### Creating a Graphics Context
-- [init?(attributes: [NSGraphicsContext.AttributeKey : Any])](nsgraphicscontext/init(attributes:).md)
+- [init?(attributes: [NSGraphicsContext.AttributeKey : Any])](./nsgraphicscontext/init%28attributes%29.md)
   Creates a graphics context using the specified attributes.
-- [init?(bitmapImageRep: NSBitmapImageRep)](nsgraphicscontext/init(bitmapimagerep:).md)
+- [init?(bitmapImageRep: NSBitmapImageRep)](./nsgraphicscontext/init%28bitmapimagerep%29.md)
   Creates a new graphics context using the specified bitmap image representation object as the context destination.
-- [init(cgContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:)-9cbad.md)
+- [init(cgContext: CGContext, flipped: Bool)](./nsgraphicscontext/init%28cgcontext,flipped%29-9cbad.md)
   Creates a new graphics context from the specified Core Graphics context and the initial flipped state.
 ### Managing the Current Context
-- [class var current: NSGraphicsContext?](nsgraphicscontext/current.md)
+- [class var current: NSGraphicsContext?](./nsgraphicscontext/current.md)
   Returns the current graphics context of the current thread.
-- [var cgContext: CGContext](nsgraphicscontext/cgcontext.md)
+- [var cgContext: CGContext](./nsgraphicscontext/cgcontext.md)
   The Core Graphics context, which is a low-level, platform-specific graphics context.
 ### Managing the Graphics State
-- [class func restoreGraphicsState()](nsgraphicscontext/restoregraphicsstate-swift.type.method.md)
+- [class func restoreGraphicsState()](./nsgraphicscontext/restoregraphicsstate%28%29-swift.type.method.md)
   Pops a graphics context from the per-thread stack, makes it current, and sends the context a restore graphics state message.
-- [func restoreGraphicsState()](nsgraphicscontext/restoregraphicsstate-swift.method.md)
+- [func restoreGraphicsState()](./nsgraphicscontext/restoregraphicsstate%28%29-swift.method.md)
   Removes the context’s graphics state from the top of the graphics state stack and makes the next graphics state the current graphics state.
-- [class func saveGraphicsState()](nsgraphicscontext/savegraphicsstate-swift.type.method.md)
+- [class func saveGraphicsState()](./nsgraphicscontext/savegraphicsstate%28%29-swift.type.method.md)
   Saves the graphics state of the current graphics context.
-- [func saveGraphicsState()](nsgraphicscontext/savegraphicsstate-swift.method.md)
+- [func saveGraphicsState()](./nsgraphicscontext/savegraphicsstate%28%29-swift.method.md)
   Saves the current graphics state and creates a new graphics state on the top of the stack.
 ### Testing the Drawing Destination
-- [class func currentContextDrawingToScreen() -> Bool](nsgraphicscontext/currentcontextdrawingtoscreen.md)
+- [class func currentContextDrawingToScreen() -> Bool](./nsgraphicscontext/currentcontextdrawingtoscreen%28%29.md)
   Returns a Boolean value that indicates whether the current context is drawing to the screen.
-- [var isDrawingToScreen: Bool](nsgraphicscontext/isdrawingtoscreen.md)
+- [var isDrawingToScreen: Bool](./nsgraphicscontext/isdrawingtoscreen.md)
   A Boolean value that indicates whether the drawing destination is the screen.
 ### Getting Information About the Context
-- [var attributes: [NSGraphicsContext.AttributeKey : Any]?](nsgraphicscontext/attributes.md)
+- [var attributes: [NSGraphicsContext.AttributeKey : Any]?](./nsgraphicscontext/attributes.md)
   The attributes used to create this instance.
-- [NSGraphicsContext.AttributeKey](nsgraphicscontext/attributekey.md)
+- [NSGraphicsContext.AttributeKey](./nsgraphicscontext/attributekey.md)
   Constants that specify the dictionary keys for the attributes of the graphics context.
-- [NSGraphicsContext.RepresentationFormatName](nsgraphicscontext/representationformatname.md)
+- [NSGraphicsContext.RepresentationFormatName](./nsgraphicscontext/representationformatname.md)
   Constants that specify values for the representation format name key in a graphic context’s attributes dictionary.
-- [var isFlipped: Bool](nsgraphicscontext/isflipped.md)
+- [var isFlipped: Bool](./nsgraphicscontext/isflipped.md)
   A Boolean value that indicates the graphics context’s flipped state.
 ### Flushing Graphics to the Context
-- [func flushGraphics()](nsgraphicscontext/flushgraphics.md)
+- [func flushGraphics()](./nsgraphicscontext/flushgraphics%28%29.md)
   Forces any buffered operations or data to be sent to the graphics context’s destination.
 ### Configuring Rendering Options
-- [var compositingOperation: NSCompositingOperation](nsgraphicscontext/compositingoperation.md)
+- [var compositingOperation: NSCompositingOperation](./nsgraphicscontext/compositingoperation.md)
   The graphics context’s global compositing operation setting.
-- [enum NSCompositingOperation](nscompositingoperation.md)
+- [enum NSCompositingOperation](./nscompositingoperation.md)
   Constants that describe compositing operators in terms of source and destination images, each having an opaque and transparent region.
-- [var imageInterpolation: NSImageInterpolation](nsgraphicscontext/imageinterpolation.md)
+- [var imageInterpolation: NSImageInterpolation](./nsgraphicscontext/imageinterpolation.md)
   A constant that specifies the graphics context’s interpolation, or image smoothing, behavior.
-- [enum NSImageInterpolation](nsimageinterpolation.md)
+- [enum NSImageInterpolation](./nsimageinterpolation.md)
   Constants that specify the interpolation, or image smoothing, behavior used by the image interpolation property.
-- [var shouldAntialias: Bool](nsgraphicscontext/shouldantialias.md)
+- [var shouldAntialias: Bool](./nsgraphicscontext/shouldantialias.md)
   A Boolean value that indicates whether the graphics context uses antialiasing.
-- [var patternPhase: NSPoint](nsgraphicscontext/patternphase.md)
+- [var patternPhase: NSPoint](./nsgraphicscontext/patternphase.md)
   The amount to offset the pattern color when filling the graphics context.
 ### Getting the Context for Rendering Core Image Objects
-- [var ciContext: CIContext?](nsgraphicscontext/cicontext.md)
+- [var ciContext: CIContext?](./nsgraphicscontext/cicontext.md)
   A context for Core Image objects that you can use to render into the graphics context.
 ### Managing Color Rendering
-- [var colorRenderingIntent: NSColorRenderingIntent](nsgraphicscontext/colorrenderingintent.md)
+- [var colorRenderingIntent: NSColorRenderingIntent](./nsgraphicscontext/colorrenderingintent.md)
   The color rendering intent in the graphics context’s graphics state.
-- [enum NSColorRenderingIntent](nscolorrenderingintent.md)
+- [enum NSColorRenderingIntent](./nscolorrenderingintent.md)
   Constants that specify how Cocoa should handle colors that are not located within the destination color space of a graphics context.
 ### Deprecated
-- [Deprecated symbols](nsgraphicscontext-deprecated-symbols.md)
+- [Deprecated symbols](./nsgraphicscontext-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
-- [init(CGContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:)-4txqw.md)
+- [init(CGContext: CGContext, flipped: Bool)](./nsgraphicscontext/init%28cgcontext,flipped%29-4txqw.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # passes(withReaderIdentifier:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 6.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func passes(withReaderIdentifier readerIdentifier: String) -> Set<PKSecureElementPass>
+```
+
+```objc
+- (NSSet<PKSecureElementPass *> *) passesWithReaderIdentifier:(NSString *) readerIdentifier;
 ```
 
 

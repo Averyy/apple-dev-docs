@@ -1,7 +1,8 @@
 # Int128.IntegerLiteralType
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents an integer literal.
 

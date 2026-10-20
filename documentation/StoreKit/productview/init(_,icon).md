@@ -1,7 +1,8 @@
 # init(_:icon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to display a product that the system already loaded from the App Store, and merchandise it using its promotional image.
 
@@ -25,18 +26,19 @@ init(_ product: Product, @ViewBuilder icon: @escaping (ProductIconPhase) -> Icon
 
 The product view asynchronously loads and displays the product’s promotional image.
 
-The [`ProductIconPhase`](producticonphase.md) value indicates whether the promotional image is loading, unavailable, or whether it succeeded or failed to load. Use the [`ProductIconPhase`](producticonphase.md) to monitor current loading phase, and to decide the image to return in the `icon` closure.
+The [`ProductIconPhase`](../producticonphase.md) value indicates whether the promotional image is loading, unavailable, or whether it succeeded or failed to load. Use the [`ProductIconPhase`](../producticonphase.md) to monitor current loading phase, and to decide the image to return in the `icon` closure.
 
 ## Parameters
 
 - `product`: The product to merchandise.
-- `icon`: A closure that receives a [`ProductIconPhase`](producticonphase.md) as an input, which indicates the state of the loading operation of the product’s promoted image, and returns the view to display for the specified phase.
+- `icon`: A closure that receives a [`ProductIconPhase`](../producticonphase.md) as an input, which indicates the state of the loading operation of the product’s promoted image, and returns the view to display for the specified phase.
 
 ## See Also
 
-- [init(Product, prefersPromotionalIcon: Bool, icon: () -> Icon)](productview/init(_:preferspromotionalicon:icon:).md)
+### Creating product views with preloaded products
+- [init(Product, prefersPromotionalIcon: Bool, icon: () -> Icon)](./init%28_,preferspromotionalicon,icon%29.md)
   Creates a view to merchandise an individual product using a custom icon.
-- [init(Product, prefersPromotionalIcon: Bool)](productview/init(_:preferspromotionalicon:).md)
+- [init(Product, prefersPromotionalIcon: Bool)](./init%28_,preferspromotionalicon%29.md)
   Creates a view to merchandise an individual product.
 
 

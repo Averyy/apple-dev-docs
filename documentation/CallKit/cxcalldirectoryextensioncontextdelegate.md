@@ -1,7 +1,8 @@
 # CXCallDirectoryExtensionContextDelegate
 
 **Framework**: CallKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A collection of methods a Call Directory extension context object calls when a request fails.
 
@@ -17,26 +18,31 @@ A collection of methods a Call Directory extension context object calls when a r
 protocol CXCallDirectoryExtensionContextDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CXCallDirectoryExtensionContextDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling Request Failures
-- [func requestFailed(for: CXCallDirectoryExtensionContext, withError: any Error)](cxcalldirectoryextensioncontextdelegate/requestfailed(for:witherror:).md)
+- [func requestFailed(for: CXCallDirectoryExtensionContext, withError: any Error)](./cxcalldirectoryextensioncontextdelegate/requestfailed%28for,witherror%29.md)
   Called when a Call Directory app extension request fails.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Identifying and blocking calls](identifying-and-blocking-calls.md)
+### Caller ID
+- [Identifying and blocking calls](./identifying-and-blocking-calls.md)
   Create a Call Directory app extension to identify and block incoming callers by their phone number.
-- [class CXCallDirectoryProvider](cxcalldirectoryprovider.md)
+- [class CXCallDirectoryProvider](./cxcalldirectoryprovider.md)
   The principal object for a Call Directory app extension for a host app.
-- [class CXCallDirectoryExtensionContext](cxcalldirectoryextensioncontext.md)
+- [class CXCallDirectoryExtensionContext](./cxcalldirectoryextensioncontext.md)
   A programmatic interface for adding identification and blocking entries to a Call Directory app extension.
-- [class CXCallDirectoryManager](cxcalldirectorymanager.md)
+- [class CXCallDirectoryManager](./cxcalldirectorymanager.md)
   The programmatic interface to an object that manages a Call Directory app extension.
 
 

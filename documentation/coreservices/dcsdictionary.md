@@ -1,7 +1,8 @@
 # DCSDictionary
 
 **Framework**: Core Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 An opaque object that represents a dictionary file.
 

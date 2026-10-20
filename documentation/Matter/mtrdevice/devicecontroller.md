@@ -1,7 +1,8 @@
 # deviceController
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var deviceController: MTRDeviceController? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) MTRDeviceController * deviceController;
 ```
 
 

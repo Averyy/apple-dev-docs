@@ -1,7 +1,8 @@
 # SubscriptionImageV2CreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a SubscriptionImageV2CreateRequest resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a SubscriptionImageV2CreateRequest resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionImageV2CreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object SubscriptionImageV2CreateRequest.Data.Attributes
 
 ## See Also
 
-- [object SubscriptionImageV2CreateRequest.Data.Relationships](subscriptionimagev2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionImageV2CreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

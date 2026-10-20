@@ -1,7 +1,8 @@
 # updateSelectableDates()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the calendar view to update the view for selectable dates.
 
@@ -15,6 +16,10 @@ Informs the calendar view to update the view for selectable dates.
 
 ```swift
 func updateSelectableDates()
+```
+
+```objc
+- (void) updateSelectableDates;
 ```
 
 #### Discussion

@@ -1,6 +1,7 @@
 # Adopting inheritance in SwiftData
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: Article
 
 Add flexibility to your models using class inheritance.
 
@@ -39,7 +40,7 @@ An example of such an app might one that tracks trips: both personal trips, such
 
 A name, a destination, start and end dates, living accommodations, and `true` or `false` values that indicate a business or personal trip: this is functional, but as the capabilities for a trip tracking app grow, it might expand to track more kinds of information, and this is where inheritance can provide more flexibility.
 
-#### Design for Specialization
+#### Design for specialization
 
 As described above, inheritance allows you to develop models that share fundamental properties but that diverge as use cases become more specialized. For example, a more expansive view of business and personal trips may include the  addition of new elements depending upon the specific use case. The following table shows a few more elements that these trips this might record.
 
@@ -128,7 +129,7 @@ The `PersonalTrip` subclass may have  a very different set of properties, its de
 }
 ```
 
-#### Determine Whether Inheritance Is Right for Your Use Case
+#### Determine whether inheritance is right for your use case
 
 Inheritance is useful when defining class hierarchies where you need to specialize a model representation that derives from a common base. For example `Trip`, `PersonalTrip`, and `BusinessTrip` form a natural hierarchy: a business trip and a personal trip extend the basic concept of a “trip” and create, in the language of Object Oriented design, an “IS-A” relationship. A `BusinessTrip` IS-A `Trip`. and a `PersonalTrip` also IS-A `Trip`.
 
@@ -281,13 +282,14 @@ struct TripListView: View {
 
 ## See Also
 
-- [Preserving your app’s model data across launches](preserving-your-apps-model-data-across-launches.md)
+### Essentials
+- [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
   Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
-- [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
+- [Adding and editing persistent data in your app](./adding-and-editing-persistent-data-in-your-app.md)
   Create a data entry form for collecting and changing data managed by SwiftData.
-- [Adopting SwiftData for a Core Data app](../coredata/adopting-swiftdata-for-a-core-data-app.md)
+- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
   Persist data in your app intuitively with the Swift native persistence framework.
-- [SwiftData updates](../updates/swiftdata.md)
+- [SwiftData updates](../Updates/swiftdata.md)
   Learn about important changes to SwiftData.
 
 

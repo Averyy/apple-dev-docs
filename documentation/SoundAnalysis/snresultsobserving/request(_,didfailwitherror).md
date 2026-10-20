@@ -1,7 +1,8 @@
 # request(_:didFailWithError:)
 
 **Framework**: Sound Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides any errors that occur during processing of the request.
 
@@ -20,9 +21,13 @@ Provides any errors that occur during processing of the request.
 optional func request(_ request: any SNRequest, didFailWithError error: any Error)
 ```
 
+```objc
+- (void) request:(id<SNRequest>) request didFailWithError:(NSError *) error;
+```
+
 #### Discussion
 
-The analyzer stops processing a specific request when it encounters an error, and doesn’t call [`requestDidComplete(_:)`](snresultsobserving/requestdidcomplete(_:).md).
+The analyzer stops processing a specific request when it encounters an error, and doesn’t call [`requestDidComplete(_:)`](./requestdidcomplete%28_%29.md).
 
 ## Parameters
 
@@ -31,11 +36,12 @@ The analyzer stops processing a specific request when it encounters an error, an
 
 ## See Also
 
-- [func request(any SNRequest, didProduce: any SNResult)](snresultsobserving/request(_:didproduce:).md)
+### Handling Requests
+- [func request(any SNRequest, didProduce: any SNResult)](./request%28_,didproduce%29.md)
   Provides a new analysis result to your app with the specified time range.
-- [protocol SNResult](snresult.md)
+- [protocol SNResult](../snresult.md)
   A protocol that represents sound analysis results.
-- [func requestDidComplete(any SNRequest)](snresultsobserving/requestdidcomplete(_:).md)
+- [func requestDidComplete(any SNRequest)](./requestdidcomplete%28_%29.md)
   Notifies your app when the analysis request completes normally.
 
 

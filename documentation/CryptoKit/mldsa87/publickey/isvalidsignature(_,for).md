@@ -1,7 +1,8 @@
 # isValidSignature(_:for:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Verifies a MLDSA87 signature.
 

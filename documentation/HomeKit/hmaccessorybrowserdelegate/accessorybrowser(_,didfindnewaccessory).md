@@ -1,7 +1,8 @@
 # accessoryBrowser(_:didFindNewAccessory:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a new accessory has been discovered.
 
@@ -17,6 +18,10 @@ Tells the delegate that a new accessory has been discovered.
 optional func accessoryBrowser(_ browser: HMAccessoryBrowser, didFindNewAccessory accessory: HMAccessory)
 ```
 
+```objc
+- (void) accessoryBrowser:(HMAccessoryBrowser *) browser didFindNewAccessory:(HMAccessory *) accessory;
+```
+
 ## Parameters
 
 - `browser`: The browser that discovered the new accessory.
@@ -24,7 +29,8 @@ optional func accessoryBrowser(_ browser: HMAccessoryBrowser, didFindNewAccessor
 
 ## See Also
 
-- [func accessoryBrowser(HMAccessoryBrowser, didRemoveNewAccessory: HMAccessory)](hmaccessorybrowserdelegate/accessorybrowser(_:didremovenewaccessory:).md)
+### Tracking new accessories
+- [func accessoryBrowser(HMAccessoryBrowser, didRemoveNewAccessory: HMAccessory)](./accessorybrowser%28_,didremovenewaccessory%29.md)
   Tells the delegate that a new accessory is no longer available in the browser.
 
 

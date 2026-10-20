@@ -1,7 +1,8 @@
 # eventStoreIdentifier
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the event store.
 
@@ -19,15 +20,20 @@ The unique identifier for the event store.
 var eventStoreIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * eventStoreIdentifier;
+```
+
 #### Discussion
 
 If the store is damaged, it’s recreated and given a new identifier. If this value is different from a fetched value, you should take the appropriate action.
 
 ## See Also
 
-- [init()](ekeventstore/init.md)
+### Creating event stores
+- [init()](./init%28%29.md)
   Creates a new event store.
-- [init(sources: [EKSource])](ekeventstore/init(sources:).md)
+- [init(sources: [EKSource])](./init%28sources%29.md)
   Creates an event store that contains data for the specified sources.
 
 

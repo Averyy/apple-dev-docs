@@ -1,17 +1,18 @@
 # IOSimpleReporter_IVars
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Constructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOSimpleReporter_IVars(IOService *reportingService, IOReportChannelType channelType, IOReportUnit unit);
 ```
 

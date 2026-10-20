@@ -1,6 +1,8 @@
 # Encrypting and Decrypting a Single File
 
-**Framework**: Apple Archive
+**Framework**: Apple Archive  
+**Role**: Sample Code  
+**Download**: [EncryptingAndDecryptingASingleFile.zip](https://docs-assets.developer.apple.com/published/9fdd84f37897/EncryptingAndDecryptingASingleFile.zip)
 
 Encrypt a single file and save the result to the file system, then decrypt and recreate the original file from the archive file using Apple Encrypted Archive.
 
@@ -10,15 +12,15 @@ Encrypt a single file and save the result to the file system, then decrypt and r
 
 #### Overview
 
-This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a single file using a [`SymmetricKey`](https://developer.apple.com/documentation/cryptokit/symmetrickey). The sample saves the encrypted file to the user’s temporary directory and then calls a second function that decrypts the contents of the archive and recreates the original file.
+This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a single file using a [`SymmetricKey`](../CryptoKit/symmetrickey.md). The sample saves the encrypted file to the user’s temporary directory and then calls a second function that decrypts the contents of the archive and recreates the original file.
 
 ##### Configure the Sample Code Project
 
-Before running the sample code project in Xcode, ensure you have a file in your temporary directory (see: [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/nstemporarydirectory())) named `file.txt`.
+Before running the sample code project in Xcode, ensure you have a file in your temporary directory (see: [`NSTemporaryDirectory()`](../Foundation/nstemporarydirectory%28%29.md)) named `file.txt`.
 
 ##### Define File Paths
 
-The sample code project defines [`FilePath`](https://developer.apple.com/documentation/system/filepath) structures that represent the locations of the source file, the encrypted version of the source file, and the recreated, unencrypted version of the source file.
+The sample code project defines [`FilePath`](../System/filepath.md) structures that represent the locations of the source file, the encrypted version of the source file, and the recreated, unencrypted version of the source file.
 
 ```swift
 // The sample defines a `FilePath` structure that represents the path of
@@ -37,7 +39,7 @@ let decryptedFilePath = FilePath(NSTemporaryDirectory() + "file.decrypted.txt")
 
 ##### Generate a Symmetric Key
 
-The sample imports the [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) framework to generate the symmetric cryptographic key.
+The sample imports the [Apple CryptoKit](../CryptoKit/CryptoKit.md) framework to generate the symmetric cryptographic key.
 
 ```swift
 let key = SymmetricKey(size: SymmetricKeySize.bits256)
@@ -57,7 +59,7 @@ try context.setSymmetricKey(key)
 
 ##### Open Source and Destination File Streams
 
-The sample creates a [`readOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/readonly) file stream to read the source file, and a [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly) file stream to write the encrypted file to the file system.
+The sample creates a [`readOnly`](../System/filedescriptor/accessmode/readonly.md) file stream to read the source file, and a [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md) file stream to write the encrypted file to the file system.
 
 ```swift
 guard let sourceFileStream = ArchiveByteStream.fileStream(
@@ -88,7 +90,7 @@ guard let encryptionStream = ArchiveByteStream.encryptionStream(
 
 ##### Encrypt the File
 
-The [`process(readingFrom:writingTo:)`](archivebytestream/process(readingfrom:writingto:).md) function sends the output of the file-reading stream to the encryption stream. In turn, the compression stream sends its output to the file-writing stream and writes the encrypted file to the file system.
+The [`process(readingFrom:writingTo:)`](./archivebytestream/process%28readingfrom,writingto%29.md) function sends the output of the file-reading stream to the encryption stream. In turn, the compression stream sends its output to the file-writing stream and writes the encrypted file to the file system.
 
 ```swift
 _ = try ArchiveByteStream.process(readingFrom: sourceFileStream,
@@ -136,7 +138,7 @@ guard let decryptionStream = ArchiveByteStream.decryptionStream(
 
 ##### Open the Destination File Stream
 
-The destination file stream writes the encrypted file to the file system. In this case, the file stream’s mode is [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly).  The options specify that the stream creates the file if it doesn’t exist, and that if the file does exist, it should be truncated to zero bytes before the stream performs any operations.
+The destination file stream writes the encrypted file to the file system. In this case, the file stream’s mode is [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md).  The options specify that the stream creates the file if it doesn’t exist, and that if the file does exist, it should be truncated to zero bytes before the stream performs any operations.
 
 ```swift
 guard let decryptedFileStream = ArchiveByteStream.fileStream(
@@ -150,22 +152,23 @@ guard let decryptedFileStream = ArchiveByteStream.fileStream(
 
 ##### Decrypt the Source Archive
 
-The [`process(readingFrom:writingTo:)`](archivebytestream/process(readingfrom:writingto:).md) method writes the output of the decryption stream to the file-writing stream.
+The [`process(readingFrom:writingTo:)`](./archivebytestream/process%28readingfrom,writingto%29.md) method writes the output of the decryption stream to the file-writing stream.
 
 ```swift
 _ = try ArchiveByteStream.process(readingFrom: decryptionStream,
                                   writingTo: decryptedFileStream)
 ```
 
-On return, `file.decrypted.txt` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/nstemporarydirectory()) and contains the decrypted contents of `file.encrypted`.
+On return, `file.decrypted.txt` exists in [`NSTemporaryDirectory()`](../Foundation/nstemporarydirectory%28%29.md) and contains the decrypted contents of `file.encrypted`.
 
 ## See Also
 
-- [Encrypting and Decrypting a String](encrypting-and-decrypting-a-string.md)
+### Apple Encrypted Archive essentials
+- [Encrypting and Decrypting a String](./encrypting-and-decrypting-a-string.md)
   Encrypt the contents of a string and save the result to the file system, then decrypt and recreate the string from the archive file using Apple Encrypted Archive.
-- [Encrypting and Decrypting Directories](encrypting-and-decrypting-directories.md)
+- [Encrypting and Decrypting Directories](./encrypting-and-decrypting-directories.md)
   Compress and encrypt the contents of an entire directory or decompress and decrypt an archived directory  using Apple Encrypted Archive.
-- [class ArchiveEncryptionContext](archiveencryptioncontext.md)
+- [class ArchiveEncryptionContext](./archiveencryptioncontext.md)
   An object that encapsulates all parameters, keys, and data necessary to open an encrypted archive for both encryption and decryption streams.
 
 

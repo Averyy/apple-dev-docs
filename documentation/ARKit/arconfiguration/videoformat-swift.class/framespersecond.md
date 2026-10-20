@@ -1,7 +1,8 @@
 # framesPerSecond
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which the session captures video and provides AR frame information.
 
@@ -15,13 +16,18 @@ The rate at which the session captures video and provides AR frame information.
 var framesPerSecond: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger framesPerSecond;
+```
+
 ## See Also
 
-- [var imageResolution: CGSize](arconfiguration/videoformat-swift.class/imageresolution.md)
+### Accessing format information
+- [var imageResolution: CGSize](./imageresolution.md)
   The size, in pixels, of video images captured in the session.
-- [var isRecommendedForHighResolutionFrameCapturing: Bool](arconfiguration/videoformat-swift.class/isrecommendedforhighresolutionframecapturing.md)
+- [var isRecommendedForHighResolutionFrameCapturing: Bool](./isrecommendedforhighresolutionframecapturing.md)
   Determines whether the framework considers a format suitable for high-resolution frame capture.
-- [var isVideoHDRSupported: Bool](arconfiguration/videoformat-swift.class/isvideohdrsupported.md)
+- [var isVideoHDRSupported: Bool](./isvideohdrsupported.md)
   Determines whether the format supports high dynamic range (HDR).
 
 

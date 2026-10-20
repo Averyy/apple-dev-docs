@@ -1,7 +1,8 @@
 # typeSectionH
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Handle to a section record. (Deprecated.)
 

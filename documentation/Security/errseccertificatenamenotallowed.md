@@ -1,7 +1,8 @@
 # errSecCertificateNameNotAllowed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The requested name isn’t allowed for this certificate.
 
@@ -18,6 +19,10 @@ The requested name isn’t allowed for this certificate.
 
 ```swift
 var errSecCertificateNameNotAllowed: OSStatus { get }
+```
+
+```c
+errSecCertificateNameNotAllowed
 ```
 
 

@@ -1,7 +1,8 @@
 # shouldPerformDownload
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the web content provided an attribute that indicates a download.
 

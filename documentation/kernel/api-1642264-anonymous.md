@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWSBP2AbortTask](1642264-anonymous/kfwsbp2aborttask.md)
-- [kFWSBP2AbortTaskSet](1642264-anonymous/kfwsbp2aborttaskset.md)
-- [kFWSBP2LogicalUnitReset](1642264-anonymous/kfwsbp2logicalunitreset.md)
-- [kFWSBP2QueryLogins](1642264-anonymous/kfwsbp2querylogins.md)
-- [kFWSBP2TargetReset](1642264-anonymous/kfwsbp2targetreset.md)
+- [kFWSBP2AbortTask](./api-1642264-anonymous/kfwsbp2aborttask.md)
+- [kFWSBP2AbortTaskSet](./api-1642264-anonymous/kfwsbp2aborttaskset.md)
+- [kFWSBP2LogicalUnitReset](./api-1642264-anonymous/kfwsbp2logicalunitreset.md)
+- [kFWSBP2QueryLogins](./api-1642264-anonymous/kfwsbp2querylogins.md)
+- [kFWSBP2TargetReset](./api-1642264-anonymous/kfwsbp2targetreset.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # loadHTMLString(_:baseURL:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the main page contents and base URL.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,26 +15,33 @@ Sets the main page contents and base URL.
 func loadHTMLString(_ string: String!, baseURL URL: URL!)
 ```
 
+```objc
+- (void) loadHTMLString:(NSString *) string baseURL:(NSURL *) URL;
+```
+
 ## Parameters
 
-- `string`: The string to use as the main page for the document. Since the string is treated as a webpage with UTF-8 encoding, the default encoding for any script elements referenced by the HTML is also UTF-8. To avoid this, include a character set attribute on the script element.
+- `string`: The string to use as the main page for the document.
+
+  Since the string is treated as a webpage with UTF-8 encoding, the default encoding for any script elements referenced by the HTML is also UTF-8. To avoid this, include a character set attribute on the script element.
 - `URL`: A file that is used to resolve relative URLs within the document.
 
 ## See Also
 
-- [func load(URLRequest!)](webframe/load(_:)-47p2s.md)
+### Loading Content
+- [func load(URLRequest!)](./load%28_%29-47p2s.md)
   Connects to a given URL by initiating an asynchronous client request.
-- [func reload()](webframe/reload.md)
-  Reloads the initial request passed as an argument to [`load(_:)`](webframe/load(_:)-47p2s.md).
-- [func reloadFromOrigin()](webframe/reloadfromorigin.md)
+- [func reload()](./reload%28%29.md)
+  Reloads the initial request passed as an argument to [`load(_:)`](./load%28_%29-47p2s.md).
+- [func reloadFromOrigin()](./reloadfromorigin%28%29.md)
   Performs an end-to-end revalidation using cache-validating conditionals if possible.
-- [func stopLoading()](webframe/stoploading.md)
+- [func stopLoading()](./stoploading%28%29.md)
   Stops any pending loads on the receiver’s data source, and those of its children.
-- [func loadAlternateHTMLString(String!, baseURL: URL!, forUnreachableURL: URL!)](webframe/loadalternatehtmlstring(_:baseurl:forunreachableurl:).md)
+- [func loadAlternateHTMLString(String!, baseURL: URL!, forUnreachableURL: URL!)](./loadalternatehtmlstring%28_,baseurl,forunreachableurl%29.md)
   Loads alternate content for a frame whose URL is unreachable.
-- [func load(Data!, mimeType: String!, textEncodingName: String!, baseURL: URL!)](webframe/load(_:mimetype:textencodingname:baseurl:).md)
+- [func load(Data!, mimeType: String!, textEncodingName: String!, baseURL: URL!)](./load%28_,mimetype,textencodingname,baseurl%29.md)
   Sets the main page contents, MIME type, content encoding, and base URL.
-- [func load(WebArchive!)](webframe/load(_:)-6wkx6.md)
+- [func load(WebArchive!)](./load%28_%29-6wkx6.md)
   Loads an archive into the web frame.
 
 

@@ -1,7 +1,8 @@
 # all
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Reports collisions between kinematic objects and both static and kinematic objects.
 

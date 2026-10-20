@@ -1,7 +1,8 @@
 # textFieldDidBeginEditing(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when editing begins in the specified text field.
 
@@ -9,13 +10,17 @@ Tells the delegate when editing begins in the specified text field.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func textFieldDidBeginEditing(_ textField: UITextField)
+```
+
+```objc
+- (void) textFieldDidBeginEditing:(UITextField *) textField;
 ```
 
 #### Discussion
@@ -30,15 +35,16 @@ Implementation of this method by the delegate is optional.
 
 ## See Also
 
-- [func textFieldShouldBeginEditing(UITextField) -> Bool](uitextfielddelegate/textfieldshouldbeginediting(_:).md)
+### Managing editing
+- [func textFieldShouldBeginEditing(UITextField) -> Bool](./textfieldshouldbeginediting%28_%29.md)
   Asks the delegate whether to begin editing in the specified text field.
-- [func textFieldShouldEndEditing(UITextField) -> Bool](uitextfielddelegate/textfieldshouldendediting(_:).md)
+- [func textFieldShouldEndEditing(UITextField) -> Bool](./textfieldshouldendediting%28_%29.md)
   Asks the delegate whether to stop editing in the specified text field.
-- [func textFieldDidEndEditing(UITextField, reason: UITextField.DidEndEditingReason)](uitextfielddelegate/textfielddidendediting(_:reason:).md)
+- [func textFieldDidEndEditing(UITextField, reason: UITextField.DidEndEditingReason)](./textfielddidendediting%28_,reason%29.md)
   Tells the delegate when editing stops for the specified text field, and the reason it stopped.
-- [func textFieldDidEndEditing(UITextField)](uitextfielddelegate/textfielddidendediting(_:).md)
+- [func textFieldDidEndEditing(UITextField)](./textfielddidendediting%28_%29.md)
   Tells the delegate when editing stops for the specified text field.
-- [UITextField.DidEndEditingReason](uitextfield/didendeditingreason.md)
+- [UITextField.DidEndEditingReason](../uitextfield/didendeditingreason.md)
   Constants that indicate the reason for ending editing in a text field.
 
 

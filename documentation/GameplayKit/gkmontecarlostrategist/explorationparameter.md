@@ -1,7 +1,8 @@
 # explorationParameter
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that influences whether the strategist searches more broadly or more deeply for winning game model states.
 
@@ -19,15 +20,20 @@ A value that influences whether the strategist searches more broadly or more dee
 var explorationParameter: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger explorationParameter;
+```
+
 #### Discussion
 
-When you call the [`bestMoveForActivePlayer()`](gkstrategist/bestmoveforactiveplayer().md) method, the Monte Carlo strategist performs an iterative process of randomly choosing moves, searching for a sequence of moves that ends in a win for the current player. At each step in this process, the strategist chooses whether to try a different move or to continue examining the current sequence of moves.
+When you call the [`bestMoveForActivePlayer()`](../gkstrategist/bestmoveforactiveplayer%28%29.md) method, the Monte Carlo strategist performs an iterative process of randomly choosing moves, searching for a sequence of moves that ends in a win for the current player. At each step in this process, the strategist chooses whether to try a different move or to continue examining the current sequence of moves.
 
 Higher values favor *exploration—that is,* the strategist becomes more likely to try different moves on each turn. Lower values favor *exploitation—that is,* the strategist becomes more likely to follow a sequence of moves to a possible endgame. The default value of 4 tends to balance exploration and exploitation. For best results, experiment with different values to find one that provides a style and difficulty of gameplay you prefer for your game.
 
 ## See Also
 
-- [var budget: Int](gkmontecarlostrategist/budget.md)
+### Configuring a Strategist
+- [var budget: Int](./budget.md)
   The maximum number of game model states the strategist will examine when searching for a move.
 
 

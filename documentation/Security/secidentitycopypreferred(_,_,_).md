@@ -1,7 +1,8 @@
 # SecIdentityCopyPreferred(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the preferred identity for the specified name and key use.
 
@@ -14,19 +15,23 @@ Retrieves the preferred identity for the specified name and key use.
 func SecIdentityCopyPreferred(_ name: CFString, _ keyUsage: CFArray?, _ validIssuers: CFArray?) -> SecIdentity?
 ```
 
+```c
+SecIdentityRefSecIdentityCopyPreferred(CFStringRef name, CFArrayRef keyUsage, CFArrayRef validIssuers);
+```
+
 #### Return Value
 
-Returns an identity, or `nil` if no identity from one of the specified issuers has been set as the preferred identity for the specified name and usage. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the identity’s memory when you are done with it.
+Returns an identity, or `nil` if no identity from one of the specified issuers has been set as the preferred identity for the specified name and usage. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the identity’s memory when you are done with it.
 
 #### Discussion
 
-If a preferred identity has not been set for the supplied name, this function returns `NULL`. Your code should then perform a search for possible identities by calling [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md).
+If a preferred identity has not been set for the supplied name, this function returns `NULL`. Your code should then perform a search for possible identities by calling [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md).
 
 ## Parameters
 
 - `name`: A string containing an email address (RFC 822) or other name for which a preferred identity is requested.
-- `keyUsage`: An array containing a list of usage attributes ([`kSecAttrCanEncrypt`](ksecattrcanencrypt.md), for example), or `NULL` if you do not want to request an identity for a particular usage. See Attribute Item Keys for a complete list of possible usage attributes.
-- `validIssuers`: An array of `CFDataRef` objects whose contents are the subject names of allowable issuers, as returned by a call to [`SSLCopyDistinguishedNames(_:_:)`](sslcopydistinguishednames(_:_:).md). Pass `NULL` to allow any issuer.
+- `keyUsage`: An array containing a list of usage attributes ([`kSecAttrCanEncrypt`](./ksecattrcanencrypt.md), for example), or `NULL` if you do not want to request an identity for a particular usage. See Attribute Item Keys for a complete list of possible usage attributes.
+- `validIssuers`: An array of `CFDataRef` objects whose contents are the subject names of allowable issuers, as returned by a call to [`SSLCopyDistinguishedNames(_:_:)`](./sslcopydistinguishednames%28_,_%29.md). Pass `NULL` to allow any issuer.
 
 
 ---

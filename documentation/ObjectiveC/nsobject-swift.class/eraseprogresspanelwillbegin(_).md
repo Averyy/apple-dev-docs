@@ -1,17 +1,22 @@
 # eraseProgressPanelWillBegin(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notification sent by the panel before display.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func eraseProgressPanelWillBegin(_ aNotification: Notification!)
+```
+
+```objc
+- (void) eraseProgressPanelWillBegin:(NSNotification *) aNotification;
 ```
 
 #### Discussion
@@ -20,7 +25,7 @@ If the delegate implements this method it will receive the message immediately b
 
 ## Parameters
 
-- `aNotification`: Always `DREraseProgressPanelWillBeginNotification` You can retrieve the `DREraseProgressPanel` object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `aNotification`.
+- `aNotification`: Always `DREraseProgressPanelWillBeginNotification` You can retrieve the `DREraseProgressPanel` object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `aNotification`.
 
 
 ---

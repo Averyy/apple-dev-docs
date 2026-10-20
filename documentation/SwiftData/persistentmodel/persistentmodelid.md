@@ -1,7 +1,8 @@
 # persistentModelID
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,13 +22,14 @@ var persistentModelID: PersistentIdentifier { get }
 
 ## Mentions
 
-- [Fetching and filtering time-based model changes](fetching-and-filtering-time-based-model-changes.md)
+- [Fetching and filtering time-based model changes](../fetching-and-filtering-time-based-model-changes.md)
 
 ## See Also
 
-- [struct PersistentIdentifier](persistentidentifier.md)
+### Identifying the model instance
+- [struct PersistentIdentifier](../persistentidentifier.md)
   A type that describes the aggregate identity of a SwiftData model.
-- [var modelContext: ModelContext?](persistentmodel/modelcontext.md)
+- [var modelContext: ModelContext?](./modelcontext.md)
 
 
 ---

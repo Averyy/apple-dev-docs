@@ -1,7 +1,8 @@
 # EPROCUNAVAIL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Bad procedure for program.
 

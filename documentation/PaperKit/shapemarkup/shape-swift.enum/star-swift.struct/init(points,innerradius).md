@@ -1,7 +1,8 @@
 # init(points:innerRadius:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new star shape with alternating inner and outer points.
 

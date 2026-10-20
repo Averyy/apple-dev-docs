@@ -1,7 +1,8 @@
 # showsScale
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A feature visibility setting that determines when the map displays the map’s scale indicator.
 
@@ -10,7 +11,7 @@ A feature visibility setting that determines when the map displays the map’s s
 
 ## Declaration
 
-```swift
+```
 get showsScale(): FeatureVisibility;
 set showsScale(showsScale: FeatureVisibility);
 ```
@@ -27,13 +28,14 @@ MapKit JS ignores invalid values, but reports them to the console.
 
 ## See Also
 
-- [showsCompass](map/showscompass.md)
+### Showing the map’s controls
+- [showsCompass](./showscompass.md)
   A feature visibility setting that determines when the compass is visible.
-- [showsMapTypeControl](map/showsmaptypecontrol.md)
+- [showsMapTypeControl](./showsmaptypecontrol.md)
   A Boolean value that determines whether to display a control that lets users choose the map type.
-- [showsUserLocationControl](map/showsuserlocationcontrol.md)
+- [showsUserLocationControl](./showsuserlocationcontrol.md)
   A Boolean value that determines whether the user location control is visible.
-- [showsZoomControl](map/showszoomcontrol.md)
+- [showsZoomControl](./showszoomcontrol.md)
   A Boolean value that determines whether to display a control for zooming in and zooming out on a map.
 
 

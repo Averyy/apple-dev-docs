@@ -1,7 +1,8 @@
 # PDFActionNamedName.nextPage
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Next Page action.
 
@@ -19,29 +20,34 @@ The Next Page action.
 case nextPage
 ```
 
+```c
+kPDFActionNamedNextPage
+```
+
 ## See Also
 
-- [PDFActionNamedName.find](pdfactionnamedname/find.md)
+### Constants
+- [PDFActionNamedName.find](./find.md)
   The Find action.
-- [PDFActionNamedName.firstPage](pdfactionnamedname/firstpage.md)
+- [PDFActionNamedName.firstPage](./firstpage.md)
   The First Page action.
-- [PDFActionNamedName.goBack](pdfactionnamedname/goback.md)
+- [PDFActionNamedName.goBack](./goback.md)
   The Go Back action.
-- [PDFActionNamedName.goForward](pdfactionnamedname/goforward.md)
+- [PDFActionNamedName.goForward](./goforward.md)
   The Go Forward action.
-- [PDFActionNamedName.goToPage](pdfactionnamedname/gotopage.md)
+- [PDFActionNamedName.goToPage](./gotopage.md)
   The Go to Page action.
-- [PDFActionNamedName.lastPage](pdfactionnamedname/lastpage.md)
+- [PDFActionNamedName.lastPage](./lastpage.md)
   The Last Page action.
-- [PDFActionNamedName.none](pdfactionnamedname/none.md)
+- [PDFActionNamedName.none](./none.md)
   The action has no name.
-- [PDFActionNamedName.previousPage](pdfactionnamedname/previouspage.md)
+- [PDFActionNamedName.previousPage](./previouspage.md)
   The Previous Page action.
-- [PDFActionNamedName.print](pdfactionnamedname/print.md)
+- [PDFActionNamedName.print](./print.md)
   The Print action.
-- [PDFActionNamedName.zoomIn](pdfactionnamedname/zoomin.md)
+- [PDFActionNamedName.zoomIn](./zoomin.md)
   The Zoom In action.
-- [PDFActionNamedName.zoomOut](pdfactionnamedname/zoomout.md)
+- [PDFActionNamedName.zoomOut](./zoomout.md)
   The Zoom Out action.
 
 

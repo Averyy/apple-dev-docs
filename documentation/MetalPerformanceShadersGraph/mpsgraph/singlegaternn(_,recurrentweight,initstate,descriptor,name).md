@@ -1,7 +1,8 @@
 # singleGateRNN(_:recurrentWeight:initState:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a single-gate RNN operation and returns the value and optionally the training state tensor.
 
@@ -19,6 +20,10 @@ Creates a single-gate RNN operation and returns the value and optionally the tra
 func singleGateRNN(_ source: MPSGraphTensor, recurrentWeight: MPSGraphTensor, initState: MPSGraphTensor?, descriptor: MPSGraphSingleGateRNNDescriptor, name: String?) -> [MPSGraphTensor]
 ```
 
+```objc
+- (NSArray<MPSGraphTensor *> *) singleGateRNNWithSourceTensor:(MPSGraphTensor *) source recurrentWeight:(MPSGraphTensor *) recurrentWeight initState:(MPSGraphTensor *) initState descriptor:(MPSGraphSingleGateRNNDescriptor *) descriptor name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid MPSGraphTensor array of size 1 or 2, depending on value of `descriptor.training`. The layout of the both outputs is [T,N,H] or [T,N,2H] for bidirectional.
@@ -33,7 +38,7 @@ for t = 0 to T-1
   h[t] = activation( z[t] ), where
 ```
 
-`W` is optional `inputWeight`, `R` is `recurrentWeight`, `b` is `bias`, `m` is optional `mask`, `x[t]` is `source` `h[t]` is the first output, `z[t]` is the second output (optional) and `h[-1]` is `initState`. See [`MPSGraphSingleGateRNNDescriptor`](mpsgraphsinglegaternndescriptor.md) for different `activation` options.
+`W` is optional `inputWeight`, `R` is `recurrentWeight`, `b` is `bias`, `m` is optional `mask`, `x[t]` is `source` `h[t]` is the first output, `z[t]` is the second output (optional) and `h[-1]` is `initState`. See [`MPSGraphSingleGateRNNDescriptor`](../mpsgraphsinglegaternndescriptor.md) for different `activation` options.
 
 ## Parameters
 

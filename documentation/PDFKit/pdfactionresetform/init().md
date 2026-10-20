@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a reset form action.
 
@@ -19,13 +20,17 @@ Initializes a reset form action.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized `PDFActionResetForm` instance, or `NULL` if the object could not be initialized.
 
 #### Discussion
 
-Initially, there are no fields and [`fieldsIncludedAreCleared`](pdfactionresetform/fieldsincludedarecleared.md) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Initially, there are no fields and [`fieldsIncludedAreCleared`](./fieldsincludedarecleared.md) returns [`true`](../../Swift/true.md).
 
 
 ---

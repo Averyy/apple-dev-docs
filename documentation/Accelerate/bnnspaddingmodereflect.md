@@ -1,7 +1,8 @@
 # BNNSPaddingModeReflect
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that indicates that a padding operation fills the padded area to form an odd-symmetric pattern.
 
@@ -20,6 +21,10 @@ A constant that indicates that a padding operation fills the padded area to form
 var BNNSPaddingModeReflect: BNNSPaddingMode { get }
 ```
 
+```c
+BNNSPaddingModeReflect
+```
+
 #### Discussion
 
 For example, given the following padding size and input:
@@ -33,7 +38,7 @@ var destination = [Float](repeating: 0,
                           count: source.count + paddingSize.0 + paddingSize.1)
 ```
 
-A padding operation using [`BNNSPaddingModeReflect`](bnnspaddingmodereflect.md) populates destination with the following values:
+A padding operation using [`BNNSPaddingModeReflect`](./bnnspaddingmodereflect.md) populates destination with the following values:
 
 ```swift
 [2.0, 1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 7.0, 8.0, 9.0, 8.0, 7.0, 5.0, 4.0]
@@ -41,12 +46,13 @@ A padding operation using [`BNNSPaddingModeReflect`](bnnspaddingmodereflect.md) 
 
 ## See Also
 
-- [init(UInt32)](bnnspaddingmode/init(_:).md)
-- [init(rawValue: UInt32)](bnnspaddingmode/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnspaddingmode/rawvalue.md)
-- [var BNNSPaddingModeConstant: BNNSPaddingMode](bnnspaddingmodeconstant.md)
+### Padding Modes
+- [init(UInt32)](./bnnspaddingmode/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnspaddingmode/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnspaddingmode/rawvalue.md)
+- [var BNNSPaddingModeConstant: BNNSPaddingMode](./bnnspaddingmodeconstant.md)
   A constant that indicates that a padding operation fills the padded area with a specified constant.
-- [var BNNSPaddingModeSymmetric: BNNSPaddingMode](bnnspaddingmodesymmetric.md)
+- [var BNNSPaddingModeSymmetric: BNNSPaddingMode](./bnnspaddingmodesymmetric.md)
   A constant that indicates that a padding operation fills the padded area to form an even-symmetric pattern.
 
 

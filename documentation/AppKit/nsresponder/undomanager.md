@@ -1,17 +1,22 @@
 # undoManager
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The undo manager for this responder.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var undoManager: UndoManager? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSUndoManager * undoManager;
 ```
 
 #### Discussion

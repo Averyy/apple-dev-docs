@@ -1,7 +1,8 @@
 # NSXPCConnectionInterrupted
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The XPC connection was interrupted.
 
@@ -22,15 +23,16 @@ var NSXPCConnectionInterrupted: Int { get }
 
 ## See Also
 
-- [var NSXPCConnectionInvalid: Int](nsxpcconnectioninvalid-swift.var.md)
+### Error codes
+- [var NSXPCConnectionInvalid: Int](./nsxpcconnectioninvalid-swift.var.md)
   The XPC connection was invalid.
-- [var NSXPCConnectionReplyInvalid: Int](nsxpcconnectionreplyinvalid-swift.var.md)
+- [var NSXPCConnectionReplyInvalid: Int](./nsxpcconnectionreplyinvalid-swift.var.md)
   The XPC connection reply was invalid.
-- [var NSXPCConnectionErrorMinimum: Int](nsxpcconnectionerrorminimum-swift.var.md)
+- [var NSXPCConnectionErrorMinimum: Int](./nsxpcconnectionerrorminimum-swift.var.md)
   The lower bounds of XPC connection error code values.
-- [var NSXPCConnectionErrorMaximum: Int](nsxpcconnectionerrormaximum-swift.var.md)
+- [var NSXPCConnectionErrorMaximum: Int](./nsxpcconnectionerrormaximum-swift.var.md)
   The upper bounds of XPC connection error code values.
-- [var NSXPCConnectionCodeSigningRequirementFailure: Int](nsxpcconnectioncodesigningrequirementfailure-swift.var.md)
+- [var NSXPCConnectionCodeSigningRequirementFailure: Int](./nsxpcconnectioncodesigningrequirementfailure-swift.var.md)
   A code-signing requirement check failed.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the current body of the caller.
@@ -28,9 +29,10 @@ Gets the current body of the caller.
 
 ## See Also
 
-- [associatedtype Body : View](transition/body.md)
+### Creating a custom transition
+- [associatedtype Body : View](./body.md)
   The type of view representing the body.
-- [Transition.Content](transition/content.md)
+- [Transition.Content](./content.md)
   The content view type passed to `body()`.
 
 

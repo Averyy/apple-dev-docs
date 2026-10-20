@@ -1,7 +1,8 @@
 # shuffled()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new array that lists this array’s elements in a random order.
 
@@ -19,17 +20,22 @@ Returns a new array that lists this array’s elements in a random order.
 func shuffled() -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) shuffledArray;
+```
+
 #### Return Value
 
 A new array that lists this array’s elements in a random order.
 
 #### Discussion
 
-Calling this method is equivalent to calling the [`shuffled(using:)`](nsarray/shuffled(using:).md) method and passing the system [`sharedRandom()`](https://developer.apple.com/documentation/gameplaykit/gkrandomsource/sharedrandom()) random source. To influence the random shuffling or to be able to deterministically reproduce a series of shuffles, create your own [`GKRandomSource`](https://developer.apple.com/documentation/gameplaykit/gkrandomsource) object.
+Calling this method is equivalent to calling the [`shuffled(using:)`](./shuffled%28using%29.md) method and passing the system [`sharedRandom()`](../../GameplayKit/gkrandomsource/sharedrandom%28%29.md) random source. To influence the random shuffling or to be able to deterministically reproduce a series of shuffles, create your own [`GKRandomSource`](../../GameplayKit/gkrandomsource.md) object.
 
 ## See Also
 
-- [func shuffled(using: GKRandomSource) -> [Any]](nsarray/shuffled(using:).md)
+### Randomly Shuffling an Array
+- [func shuffled(using: GKRandomSource) -> [Any]](./shuffled%28using%29.md)
   Returns a new array that lists this array’s elements in a random order, using the specified random source.
 
 

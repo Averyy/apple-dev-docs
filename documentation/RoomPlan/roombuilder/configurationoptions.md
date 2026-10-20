@@ -1,7 +1,8 @@
 # RoomBuilder.ConfigurationOptions
 
 **Framework**: RoomPlan  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that configure a room builder.
 
@@ -18,31 +19,32 @@ struct ConfigurationOptions
 
 #### Overview
 
-The `options` argument to the [`RoomBuilder`](roombuilder.md) initializer [`init(options:)`](roombuilder/init(options:).md) is of this type.
+The `options` argument to the [`RoomBuilder`](../roombuilder.md) initializer [`init(options:)`](./init%28options%29.md) is of this type.
 
 ## Topics
 
 ### Creating a configuration option
-- [init(rawValue: Int)](roombuilder/configurationoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./configurationoptions/init%28rawvalue%29.md)
   Creates a configuration option with the specified raw value.
-- [let rawValue: Int](roombuilder/configurationoptions/rawvalue.md)
+- [let rawValue: Int](./configurationoptions/rawvalue.md)
   A raw value for a configuration option.
 ### Choosing a configuration option
-- [static let beautifyObjects: RoomBuilder.ConfigurationOptions](roombuilder/configurationoptions/beautifyobjects.md)
+- [static let beautifyObjects: RoomBuilder.ConfigurationOptions](./configurationoptions/beautifyobjects.md)
   An option that instructs the captured room to enhance its look.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(options: RoomBuilder.ConfigurationOptions)](roombuilder/init(options:).md)
+### Creating a room builder
+- [init(options: RoomBuilder.ConfigurationOptions)](./init%28options%29.md)
   Creates a room builder using the specified options.
 
 

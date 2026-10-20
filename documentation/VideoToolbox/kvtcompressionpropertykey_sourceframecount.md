@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_SourceFrameCount
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of source frames, if known.
 
@@ -19,24 +20,29 @@ The number of source frames, if known.
 let kVTCompressionPropertyKey_SourceFrameCount: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_SourceFrameCount;
+```
+
 #### Discussion
 
-This property allows a client to give the video encoder advance guidance as to how many frames will be encoded. If nonzero, this value should be the exact number of times that the client calls [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:sourceframerefcon:infoflagsout:).md) in each pass.
+This property allows a client to give the video encoder advance guidance as to how many frames will be encoded. If nonzero, this value should be the exact number of times that the client calls [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md) in each pass.
 
 The default is `0`, which indicates that the number of source frames is unknown.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_ExpectedDuration: CFString](kvtcompressionpropertykey_expectedduration.md)
+### Encoding Hints
+- [let kVTCompressionPropertyKey_ExpectedDuration: CFString](./kvtcompressionpropertykey_expectedduration.md)
   The expected total duration of the compression session, if known.
-- [let kVTCompressionPropertyKey_ExpectedFrameRate: CFString](kvtcompressionpropertykey_expectedframerate.md)
+- [let kVTCompressionPropertyKey_ExpectedFrameRate: CFString](./kvtcompressionpropertykey_expectedframerate.md)
   The expected frame rate, if known.
-- [let kVTCompressionPropertyKey_MaximumRealTimeFrameRate: CFString](kvtcompressionpropertykey_maximumrealtimeframerate.md)
+- [let kVTCompressionPropertyKey_MaximumRealTimeFrameRate: CFString](./kvtcompressionpropertykey_maximumrealtimeframerate.md)
   A value that specifies the maximum real time rate at which frames can be submitted to a compression session.
-- [let kVTCompressionPropertyKey_PrioritizeEncodingSpeedOverQuality: CFString](kvtcompressionpropertykey_prioritizeencodingspeedoverquality.md)
+- [let kVTCompressionPropertyKey_PrioritizeEncodingSpeedOverQuality: CFString](./kvtcompressionpropertykey_prioritizeencodingspeedoverquality.md)
   A hint for the video encoder to maximize its speed during encoding, sacrificing quality if needed.
-- [let kVTCompressionPropertyKey_ReferenceBufferCount: CFString](kvtcompressionpropertykey_referencebuffercount.md)
-- [let kVTCompressionPropertyKey_SuggestedLookAheadFrameCount: CFString](kvtcompressionpropertykey_suggestedlookaheadframecount.md)
+- [let kVTCompressionPropertyKey_ReferenceBufferCount: CFString](./kvtcompressionpropertykey_referencebuffercount.md)
+- [let kVTCompressionPropertyKey_SuggestedLookAheadFrameCount: CFString](./kvtcompressionpropertykey_suggestedlookaheadframecount.md)
   A value that requests that the encoder retain the specified number of frames during encoding.
 
 

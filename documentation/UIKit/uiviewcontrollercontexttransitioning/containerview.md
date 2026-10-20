@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The view that acts as the superview for the views involved in the transition.
@@ -10,13 +11,17 @@ The view that acts as the superview for the views involved in the transition.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var containerView: UIView { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIView * containerView;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ The container view acts as the superview of all other views (including those of 
 
 ## See Also
 
-- [func viewController(forKey: UITransitionContextViewControllerKey) -> UIViewController?](uiviewcontrollercontexttransitioning/viewcontroller(forkey:).md)
+### Accessing the transition objects
+- [func viewController(forKey: UITransitionContextViewControllerKey) -> UIViewController?](./viewcontroller%28forkey%29.md)
   Returns a view controller involved in the transition.
-- [func view(forKey: UITransitionContextViewKey) -> UIView?](uiviewcontrollercontexttransitioning/view(forkey:).md)
+- [func view(forKey: UITransitionContextViewKey) -> UIView?](./view%28forkey%29.md)
   Returns the specified view involved in the transition.
 
 

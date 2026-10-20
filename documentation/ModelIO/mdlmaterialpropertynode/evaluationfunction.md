@@ -1,7 +1,8 @@
 # evaluationFunction
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var evaluationFunction: (MDLMaterialPropertyNode) -> Void { get set }
+```
+
+```objc
+@property (nonatomic, copy) void (^evaluationFunction)(MDLMaterialPropertyNode *);
 ```
 
 

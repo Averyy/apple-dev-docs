@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var hrHTMLRenderingLibNotInstalledErr: Int](hrhtmlrenderinglibnotinstallederr.md)
-- [var hrMiscellaneousExceptionErr: Int](hrmiscellaneousexceptionerr.md)
-- [var hrURLNotHandledErr: Int](hrurlnothandlederr.md)
-- [var hrUnableToResizeHandleErr: Int](hrunabletoresizehandleerr.md)
+- [var hrHTMLRenderingLibNotInstalledErr: Int](../../hrhtmlrenderinglibnotinstallederr.md)
+- [var hrMiscellaneousExceptionErr: Int](../../hrmiscellaneousexceptionerr.md)
+- [var hrURLNotHandledErr: Int](../../hrurlnothandlederr.md)
+- [var hrUnableToResizeHandleErr: Int](../../hrunabletoresizehandleerr.md)
 
 
 ---

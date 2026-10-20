@@ -1,7 +1,8 @@
 # BNNSGraphMessageLevelInfo
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifies information message types.
 
@@ -20,15 +21,20 @@ A constant that specifies information message types.
 var BNNSGraphMessageLevelInfo: BNNSGraphMessageLevel { get }
 ```
 
+```c
+BNNSGraphMessageLevelInfo
+```
+
 ## See Also
 
-- [var rawValue: UInt32](bnnsgraphmessagelevel/rawvalue.md)
+### Instance properties
+- [var rawValue: UInt32](./bnnsgraphmessagelevel/rawvalue.md)
   The corresponding value of the raw type.
-- [var BNNSGraphMessageLevelWarning: BNNSGraphMessageLevel](bnnsgraphmessagelevelwarning.md)
+- [var BNNSGraphMessageLevelWarning: BNNSGraphMessageLevel](./bnnsgraphmessagelevelwarning.md)
   A constant that specifies warning message types.
-- [var BNNSGraphMessageLevelError: BNNSGraphMessageLevel](bnnsgraphmessagelevelerror.md)
+- [var BNNSGraphMessageLevelError: BNNSGraphMessageLevel](./bnnsgraphmessagelevelerror.md)
   A constant that specifies error message types.
-- [var BNNSGraphMessageLevelUnsupported: BNNSGraphMessageLevel](bnnsgraphmessagelevelunsupported.md)
+- [var BNNSGraphMessageLevelUnsupported: BNNSGraphMessageLevel](./bnnsgraphmessagelevelunsupported.md)
   A constant that specifies unsupported function message types.
 
 

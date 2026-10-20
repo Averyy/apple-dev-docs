@@ -1,7 +1,8 @@
 # pentagon
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Pentagon symbol.
 
@@ -19,6 +20,8 @@ Pentagon symbol.
 ```swift
 static var pentagon: BasicChartSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChartSymbolShape`.
 
 
 ---

@@ -1,7 +1,8 @@
 # transportType
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hardware connection type the device is using.
 
@@ -18,9 +19,14 @@ The hardware connection type the device is using.
 var transportType: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * transportType;
+```
+
 ## See Also
 
-- [struct ICDeviceTransport](icdevicetransport.md)
+### Inspecting a Device’s Transport Type
+- [struct ICDeviceTransport](../icdevicetransport.md)
   The hardware connection types a device can use.
 
 

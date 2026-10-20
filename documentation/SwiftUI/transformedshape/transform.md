@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ var transform: CGAffineTransform
 
 ## See Also
 
-- [var shape: Content](transformedshape/shape.md)
+### Getting the shape’s characteristics
+- [var shape: Content](./shape.md)
 
 
 ---

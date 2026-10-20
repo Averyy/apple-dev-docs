@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.Ellipse
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -19,19 +20,19 @@ struct Ellipse
 ## Topics
 
 ### Initializers
-- [init()](shapemarkup/shape-swift.enum/ellipse-swift.struct/init.md)
+- [init()](./ellipse-swift.struct/init%28%29.md)
   Create a new ellipse.
 ### Instance Properties
-- [var path: CGPath](shapemarkup/shape-swift.enum/ellipse-swift.struct/path.md)
+- [var path: CGPath](./ellipse-swift.struct/path.md)
   The path of the shape.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

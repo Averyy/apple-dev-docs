@@ -1,7 +1,8 @@
 # showAnnotation(_:)
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays an annotation string in an annotation window.
 
@@ -14,9 +15,13 @@ Displays an annotation string in an annotation window.
 func showAnnotation(_ annotationString: NSAttributedString!)
 ```
 
+```objc
+- (void) showAnnotation:(NSAttributedString *) annotationString;
+```
+
 #### Discussion
 
-An annotation string explains or comments on the candidate string in the candidates window. An annotation window is a small, borderless window that is aligned with the current candidates window. An input method calls `showAnnotation:` when the `candidateSelectionChanged:` method of the [`IMKInputController`](imkinputcontroller.md) class is called, and the candidate string has annotations.
+An annotation string explains or comments on the candidate string in the candidates window. An annotation window is a small, borderless window that is aligned with the current candidates window. An input method calls `showAnnotation:` when the `candidateSelectionChanged:` method of the [`IMKInputController`](../imkinputcontroller.md) class is called, and the candidate string has annotations.
 
 ## Parameters
 

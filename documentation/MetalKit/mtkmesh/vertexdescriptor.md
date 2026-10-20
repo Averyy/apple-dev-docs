@@ -1,7 +1,8 @@
 # vertexDescriptor
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Model I/O vertex descriptor specifying the data layout in the vertex buffers.
 
@@ -19,15 +20,20 @@ A Model I/O vertex descriptor specifying the data layout in the vertex buffers.
 var vertexDescriptor: MDLVertexDescriptor { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nonnull) MDLVertexDescriptor * vertexDescriptor;
+```
+
 #### Discussion
 
-This is a convenience property. The [`MTKMesh`](mtkmesh.md) class does not use this descriptor, but your application may use this object to determine rendering state or create a [`MTLVertexDescriptor`](https://developer.apple.com/documentation/metal/mtlvertexdescriptor) object to build a [`MTLRenderPipelineState`](https://developer.apple.com/documentation/metal/mtlrenderpipelinestate) object capable of interpreting the data in [`vertexBuffers`](mtkmesh/vertexbuffers.md).
+This is a convenience property. The [`MTKMesh`](../mtkmesh.md) class does not use this descriptor, but your application may use this object to determine rendering state or create a [`MTLVertexDescriptor`](../../Metal/mtlvertexdescriptor.md) object to build a [`MTLRenderPipelineState`](../../Metal/mtlrenderpipelinestate.md) object capable of interpreting the data in [`vertexBuffers`](./vertexbuffers.md).
 
 ## See Also
 
-- [var vertexBuffers: [MTKMeshBuffer]](mtkmesh/vertexbuffers.md)
+### Vertex Properties
+- [var vertexBuffers: [MTKMeshBuffer]](./vertexbuffers.md)
   An array of buffers in which mesh vertex data resides.
-- [var vertexCount: Int](mtkmesh/vertexcount.md)
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the vertex buffers.
 
 

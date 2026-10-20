@@ -1,7 +1,8 @@
 # NWProtocolIP.ECN
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Flag values for Explicit Congestion Notifications in IP packets.
 
@@ -23,28 +24,29 @@ enum ECN
 ## Topics
 
 ### ECN Flags
-- [NWProtocolIP.ECN.nonECT](nwprotocolip/ecn/nonect.md)
+- [NWProtocolIP.ECN.nonECT](./ecn/nonect.md)
   Non-ECN Capable Transport.
-- [NWProtocolIP.ECN.ect0](nwprotocolip/ecn/ect0.md)
+- [NWProtocolIP.ECN.ect0](./ecn/ect0.md)
   ECN Capable Transport (flag 0).
-- [NWProtocolIP.ECN.ect1](nwprotocolip/ecn/ect1.md)
+- [NWProtocolIP.ECN.ect1](./ecn/ect1.md)
   ECN Capable Transport (flag 1).
-- [NWProtocolIP.ECN.ce](nwprotocolip/ecn/ce.md)
+- [NWProtocolIP.ECN.ce](./ecn/ce.md)
   Congestion Experienced.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [init()](nwprotocolip/metadata/init.md)
+### Sending IP Options
+- [init()](./metadata/init%28%29.md)
   Initializes an IP packet configuration with default settings.
-- [var ecn: NWProtocolIP.ECN](nwprotocolip/metadata/ecn.md)
+- [var ecn: NWProtocolIP.ECN](./metadata/ecn.md)
   A specific Explicit Congestion Notification flag value to set on an IP packet.
-- [var serviceClass: NWParameters.ServiceClass](nwprotocolip/metadata/serviceclass.md)
+- [var serviceClass: NWParameters.ServiceClass](./metadata/serviceclass.md)
   A specific service class to mark on an IP packet.
 
 

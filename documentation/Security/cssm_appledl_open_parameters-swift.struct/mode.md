@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var mode: mode_t
+```
+
+```c
+mode_t mode;
 ```
 
 

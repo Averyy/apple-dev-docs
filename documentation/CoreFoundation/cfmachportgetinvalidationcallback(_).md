@@ -1,18 +1,19 @@
 # CFMachPortGetInvalidationCallBack(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the invalidation callback function for a CFMachPort object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns the invalidation callback function for a CFMachPort object.
 func CFMachPortGetInvalidationCallBack(_ port: CFMachPort!) -> CFMachPortInvalidationCallBack!
 ```
 
+```c
+extern CFMachPortInvalidationCallBackCFMachPortGetInvalidationCallBack(CFMachPortRef port);
+```
+
 #### Return Value
 
-The callback function invoked when `port` is invalidated. `NULL` if no callback has been set with [`CFMachPortSetInvalidationCallBack(_:_:)`](cfmachportsetinvalidationcallback(_:_:).md).
+The callback function invoked when `port` is invalidated. `NULL` if no callback has been set with [`CFMachPortSetInvalidationCallBack(_:_:)`](./cfmachportsetinvalidationcallback%28_,_%29.md).
 
 ## Parameters
 
@@ -30,11 +35,12 @@ The callback function invoked when `port` is invalidated. `NULL` if no callback 
 
 ## See Also
 
-- [func CFMachPortGetContext(CFMachPort!, UnsafeMutablePointer<CFMachPortContext>!)](cfmachportgetcontext(_:_:).md)
+### Examining a CFMachPort Object
+- [func CFMachPortGetContext(CFMachPort!, UnsafeMutablePointer<CFMachPortContext>!)](./cfmachportgetcontext%28_,_%29.md)
   Returns the context information for a CFMachPort object.
-- [func CFMachPortGetPort(CFMachPort!) -> mach_port_t](cfmachportgetport(_:).md)
+- [func CFMachPortGetPort(CFMachPort!) -> mach_port_t](./cfmachportgetport%28_%29.md)
   Returns the native Mach port represented by a CFMachPort object.
-- [func CFMachPortIsValid(CFMachPort!) -> Bool](cfmachportisvalid(_:).md)
+- [func CFMachPortIsValid(CFMachPort!) -> Bool](./cfmachportisvalid%28_%29.md)
   Returns a Boolean value that indicates whether a CFMachPort object is valid and able to receive messages.
 
 

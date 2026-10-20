@@ -1,7 +1,8 @@
 # ignoreShadows
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether to ignore framing on windows.
 
@@ -13,6 +14,10 @@ A Boolean value that specifies whether to ignore framing on windows.
 
 ```swift
 var ignoreShadows: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL ignoreShadows;
 ```
 
 

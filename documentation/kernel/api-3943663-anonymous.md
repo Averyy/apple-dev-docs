@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,10 +18,10 @@ enum : int {
 ## Topics
 
 ### Constants
-- [IFNET_NPM_THRESH_FAR](3943663-anonymous/ifnet_npm_thresh_far.md)
-- [IFNET_NPM_THRESH_GENERAL](3943663-anonymous/ifnet_npm_thresh_general.md)
-- [IFNET_NPM_THRESH_NEAR](3943663-anonymous/ifnet_npm_thresh_near.md)
-- [IFNET_NPM_THRESH_UNKNOWN](3943663-anonymous/ifnet_npm_thresh_unknown.md)
+- [IFNET_NPM_THRESH_FAR](./api-3943663-anonymous/ifnet_npm_thresh_far.md)
+- [IFNET_NPM_THRESH_GENERAL](./api-3943663-anonymous/ifnet_npm_thresh_general.md)
+- [IFNET_NPM_THRESH_NEAR](./api-3943663-anonymous/ifnet_npm_thresh_near.md)
+- [IFNET_NPM_THRESH_UNKNOWN](./api-3943663-anonymous/ifnet_npm_thresh_unknown.md)
 
 
 ---

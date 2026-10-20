@@ -1,12 +1,13 @@
 # reason
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about an exit from the vcpu to the host.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Information about an exit from the vcpu to the host.
 var reason: hv_exit_reason_t
 ```
 
+```c
+hv_exit_reason_t reason;
+```
+
 ## See Also
 
-- [var exception: hv_vcpu_exit_exception_t](hv_vcpu_exit_t/exception.md)
+### Instance Properties
+- [var exception: hv_vcpu_exit_exception_t](./exception.md)
   Information about an exit exception from the vcpu to the host.
 
 

@@ -1,7 +1,8 @@
 # CiFilesAndFoldersRule
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings Xcode Cloud uses to determine whether a change should start a new build or not.
 
@@ -10,14 +11,14 @@ Settings Xcode Cloud uses to determine whether a change should start a new build
 
 ## Declaration
 
-```swift
+```
 object CiFilesAndFoldersRule
 ```
 
 ## Topics
 
 ### Objects
-- [object CiStartConditionFileMatcher](cistartconditionfilematcher.md)
+- [object CiStartConditionFileMatcher](./cistartconditionfilematcher.md)
   A path pattern filter applied to an Xcode Cloud workflow start condition, restricting triggers to changes in specific files or directories.
 
 ## Properties
@@ -25,32 +26,35 @@ object CiFilesAndFoldersRule
 - `matchers` ([CiStartConditionFileMatcher]): Directory and file information Xcode Cloud uses to determine if a change to a file or directory matches a custom start condition.
 - `mode` (string): A string that indicates whether a workflow’s start condition’s Files and Folders setting should start a new build or not for a change.
 
+  **Allowed Values**: `START_IF_ANY_FILE_MATCHES`, `DO_NOT_START_IF_ALL_FILES_MATCH`
+
 ## See Also
 
-- [object CiProduct](ciproduct.md)
+### Objects
+- [object CiProduct](./ciproduct.md)
   An app or framework registered in Xcode Cloud that has one or more workflows and build history.
-- [object CiProductResponse](ciproductresponse.md)
+- [object CiProductResponse](./ciproductresponse.md)
   The response body for endpoints that read a single Xcode Cloud product.
-- [object CiProductsResponse](ciproductsresponse.md)
+- [object CiProductsResponse](./ciproductsresponse.md)
   The response body for endpoints that list Xcode Cloud products.
-- [object CiProductAdditionalRepositoriesLinkagesResponse](ciproductadditionalrepositorieslinkagesresponse.md)
-- [object CiProductAppLinkageResponse](ciproductapplinkageresponse.md)
-- [object CiProductBuildRunsLinkagesResponse](ciproductbuildrunslinkagesresponse.md)
-- [object CiProductPrimaryRepositoriesLinkagesResponse](ciproductprimaryrepositorieslinkagesresponse.md)
-- [object CiProductWorkflowsLinkagesResponse](ciproductworkflowslinkagesresponse.md)
-- [object CiBranchStartCondition](cibranchstartcondition.md)
+- [object CiProductAdditionalRepositoriesLinkagesResponse](./ciproductadditionalrepositorieslinkagesresponse.md)
+- [object CiProductAppLinkageResponse](./ciproductapplinkageresponse.md)
+- [object CiProductBuildRunsLinkagesResponse](./ciproductbuildrunslinkagesresponse.md)
+- [object CiProductPrimaryRepositoriesLinkagesResponse](./ciproductprimaryrepositorieslinkagesresponse.md)
+- [object CiProductWorkflowsLinkagesResponse](./ciproductworkflowslinkagesresponse.md)
+- [object CiBranchStartCondition](./cibranchstartcondition.md)
   Settings for a start condition that starts a build if a branch changes.
-- [object CiGitUser](cigituser.md)
+- [object CiGitUser](./cigituser.md)
   The Git identity (name and email) of the person who authored or committed the code change that triggered an Xcode Cloud build.
-- [object CiIssueCounts](ciissuecounts.md)
+- [object CiIssueCounts](./ciissuecounts.md)
   A summary of the warnings, errors, analyzer warnings, and test failures in an Xcode Cloud build run.
-- [object CiPullRequestStartCondition](cipullrequeststartcondition.md)
+- [object CiPullRequestStartCondition](./cipullrequeststartcondition.md)
   Settings for a start condition that starts a build if a pull request changes.
-- [object CiScheduledStartCondition](cischeduledstartcondition.md)
+- [object CiScheduledStartCondition](./cischeduledstartcondition.md)
   Settings for a start condition that starts a build based on a schedule.
-- [object CiTagStartCondition](citagstartcondition.md)
+- [object CiTagStartCondition](./citagstartcondition.md)
   Settings for a start condition that starts a build if a Git tag changes.
-- [object CiTestDestination](citestdestination.md)
+- [object CiTestDestination](./citestdestination.md)
   The test destination of a test action that Xcode Cloud performs.
 
 

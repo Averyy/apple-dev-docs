@@ -1,7 +1,8 @@
 # persistentIdentifier
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The string that identifies the intent.
 

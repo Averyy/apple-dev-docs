@@ -1,17 +1,22 @@
 # rearrangeObjects()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Use this method to trigger reordering of the tree controller’s content.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func rearrangeObjects()
+```
+
+```objc
+- (void) rearrangeObjects;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Subclasses should invoke this method if any parameter that affects the arranged 
 
 ## See Also
 
-- [var arrangedObjects: NSTreeNode](nstreecontroller/arrangedobjects.md)
+### Arranging Objects
+- [var arrangedObjects: NSTreeNode](./arrangedobjects.md)
   The tree controller’s sorted content objects.
 
 

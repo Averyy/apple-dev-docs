@@ -1,7 +1,8 @@
 # NSTextStorage
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The fundamental storage mechanism of TextKit that contains the text managed by the system.
 
@@ -14,115 +15,120 @@ The fundamental storage mechanism of TextKit that contains the text managed by t
 class NSTextStorage
 ```
 
+```objc
+@interface NSTextStorage : NSMutableAttributedString
+```
+
 #### Overview
 
-[`NSTextStorage`](nstextstorage.md) is a semi-concrete subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring) that adds behavior for managing a set of client [`NSLayoutManager`](nslayoutmanager.md) objects. A text storage object notifies its layout managers of changes to its characters or attributes, which lets the layout managers redisplay the text as needed.
+[`NSTextStorage`](./nstextstorage.md) is a semi-concrete subclass of [`NSMutableAttributedString`](../Foundation/nsmutableattributedstring.md) that adds behavior for managing a set of client [`NSLayoutManager`](./nslayoutmanager.md) objects. A text storage object notifies its layout managers of changes to its characters or attributes, which lets the layout managers redisplay the text as needed.
 
 You can access a text storage object from any thread of your app, but your app must guarantee access from only one thread at a time.
 
-In macOS, this class also defines properties for getting and setting scriptable attributes of [`NSTextStorage`](nstextstorage.md) objects. Unless you’re dealing with scriptability, you shouldn’t access these properties directly. In particular, using the [`characters`](nstextstorage/characters.md), [`words`](nstextstorage/words.md), or [`paragraphs`](nstextstorage/paragraphs.md) properties is an inefficient way to manipulate the text storage, since accessing these properties involves the creation of many objects. Instead, use the text access methods defined by [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), [`NSMutableString`](https://developer.apple.com/documentation/foundation/nsmutablestring), and [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) to perform character-level manipulation.
+In macOS, this class also defines properties for getting and setting scriptable attributes of [`NSTextStorage`](./nstextstorage.md) objects. Unless you’re dealing with scriptability, you shouldn’t access these properties directly. In particular, using the [`characters`](./nstextstorage/characters.md), [`words`](./nstextstorage/words.md), or [`paragraphs`](./nstextstorage/paragraphs.md) properties is an inefficient way to manipulate the text storage, since accessing these properties involves the creation of many objects. Instead, use the text access methods defined by [`NSMutableAttributedString`](../Foundation/nsmutableattributedstring.md), [`NSAttributedString`](../Foundation/nsattributedstring.md), [`NSMutableString`](../Foundation/nsmutablestring.md), and [`NSString`](../Foundation/nsstring.md) to perform character-level manipulation.
 
 ##### Subclassing Notes
 
-The [`NSTextStorage`](nstextstorage.md) class implements change management through the [`beginEditing()`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/beginediting()) and [`endEditing()`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/endediting()) methods, as well as verification of attributes, delegate handling, and layout management notification. The one aspect it doesn’t implement is managing the actual attributed string storage, which subclasses manage by overriding the two [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) primitives:
+The [`NSTextStorage`](./nstextstorage.md) class implements change management through the [`beginEditing()`](../Foundation/nsmutableattributedstring/beginediting%28%29.md) and [`endEditing()`](../Foundation/nsmutableattributedstring/endediting%28%29.md) methods, as well as verification of attributes, delegate handling, and layout management notification. The one aspect it doesn’t implement is managing the actual attributed string storage, which subclasses manage by overriding the two [`NSAttributedString`](../Foundation/nsattributedstring.md) primitives:
 
-- [`string`](https://developer.apple.com/documentation/foundation/nsattributedstring/string)
-- [`attributes(at:effectiveRange:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/attributes(at:effectiverange:))
+- [`string`](../Foundation/nsattributedstring/string.md)
+- [`attributes(at:effectiveRange:)`](../Foundation/nsattributedstring/attributes%28at,effectiverange%29.md)
 
-Subclasses must also override two [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring) primitives:
+Subclasses must also override two [`NSMutableAttributedString`](../Foundation/nsmutableattributedstring.md) primitives:
 
-- [`replaceCharacters(in:with:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/replacecharacters(in:with:)-6oq9r)
-- [`setAttributes(_:range:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/setattributes(_:range:))
+- [`replaceCharacters(in:with:)`](../Foundation/nsmutableattributedstring/replacecharacters%28in,with%29-6oq9r.md)
+- [`setAttributes(_:range:)`](../Foundation/nsmutableattributedstring/setattributes%28_,range%29.md)
 
-These primitives should perform the change, then call [`edited(_:range:changeInLength:)`](nstextstorage/edited(_:range:changeinlength:).md) to let the parent class know there are changes.
+These primitives should perform the change, then call [`edited(_:range:changeInLength:)`](./nstextstorage/edited%28_,range,changeinlength%29.md) to let the parent class know there are changes.
 
 ## Topics
 
 ### Processing the editing actions
-- [var delegate: (any NSTextStorageDelegate)?](nstextstorage/delegate.md)
+- [var delegate: (any NSTextStorageDelegate)?](./nstextstorage/delegate.md)
   The delegate for the text storage object.
-- [protocol NSTextStorageDelegate](nstextstoragedelegate.md)
+- [protocol NSTextStorageDelegate](./nstextstoragedelegate.md)
   The optional methods that delegates of text storage objects implement to handle text-edit processing.
 ### Accessing the layout managers
-- [var layoutManagers: [NSLayoutManager]](nstextstorage/layoutmanagers.md)
+- [var layoutManagers: [NSLayoutManager]](./nstextstorage/layoutmanagers.md)
   The layout managers for the text storage object.
-- [func addLayoutManager(NSLayoutManager)](nstextstorage/addlayoutmanager(_:).md)
+- [func addLayoutManager(NSLayoutManager)](./nstextstorage/addlayoutmanager%28_%29.md)
   Adds a layout manager to the text storage object’s set of layout managers.
-- [func removeLayoutManager(NSLayoutManager)](nstextstorage/removelayoutmanager(_:).md)
+- [func removeLayoutManager(NSLayoutManager)](./nstextstorage/removelayoutmanager%28_%29.md)
   Removes a layout manager from the text storage object’s set of layout managers.
 ### Managing edits
-- [func edited(NSTextStorageEditActions, range: NSRange, changeInLength: Int)](nstextstorage/edited(_:range:changeinlength:).md)
+- [func edited(NSTextStorageEditActions, range: NSRange, changeInLength: Int)](./nstextstorage/edited%28_,range,changeinlength%29.md)
   Tracks changes made to the text storage object, allowing the text storage to record the full extent of changes.
-- [func processEditing()](nstextstorage/processediting.md)
+- [func processEditing()](./nstextstorage/processediting%28%29.md)
   Cleans up changes to the text storage object and notifies its delegate and layout managers of changes.
 ### Fixing the string attributes
-- [func invalidateAttributes(in: NSRange)](nstextstorage/invalidateattributes(in:).md)
+- [func invalidateAttributes(in: NSRange)](./nstextstorage/invalidateattributes%28in%29.md)
   Invalidates attributes in the specified range.
-- [func ensureAttributesAreFixed(in: NSRange)](nstextstorage/ensureattributesarefixed(in:).md)
+- [func ensureAttributesAreFixed(in: NSRange)](./nstextstorage/ensureattributesarefixed%28in%29.md)
   Ensures that attribute fixing occurs in the specified range.
-- [var fixesAttributesLazily: Bool](nstextstorage/fixesattributeslazily.md)
+- [var fixesAttributesLazily: Bool](./nstextstorage/fixesattributeslazily.md)
   A Boolean value that indicates whether the text storage object fixes attributes lazily.
 ### Determining the nature of changes
-- [var editedMask: NSTextStorageEditActions](nstextstorage/editedmask.md)
+- [var editedMask: NSTextStorageEditActions](./nstextstorage/editedmask.md)
   A mask that describes the kinds of edits pending for the text storage object.
-- [var editedRange: NSRange](nstextstorage/editedrange.md)
+- [var editedRange: NSRange](./nstextstorage/editedrange.md)
   The range of text that contains changes.
-- [var changeInLength: Int](nstextstorage/changeinlength.md)
+- [var changeInLength: Int](./nstextstorage/changeinlength.md)
   The difference between the current length of the edited range and its length before editing.
 ### Accessing scriptable properties
-- [var attributeRuns: [NSTextStorage]](nstextstorage/attributeruns.md)
+- [var attributeRuns: [NSTextStorage]](./nstextstorage/attributeruns.md)
   The text storage contents as an array of attribute runs.
-- [var paragraphs: [NSTextStorage]](nstextstorage/paragraphs.md)
+- [var paragraphs: [NSTextStorage]](./nstextstorage/paragraphs.md)
   The text storage contents as an array of paragraphs.
-- [var words: [NSTextStorage]](nstextstorage/words.md)
+- [var words: [NSTextStorage]](./nstextstorage/words.md)
   The text storage contents as an array of words.
-- [var characters: [NSTextStorage]](nstextstorage/characters.md)
+- [var characters: [NSTextStorage]](./nstextstorage/characters.md)
   The text storage contents as an array of characters.
-- [var font: NSFont?](nstextstorage/font.md)
+- [var font: NSFont?](./nstextstorage/font.md)
   The font for the text storage.
-- [var foregroundColor: NSColor?](nstextstorage/foregroundcolor.md)
+- [var foregroundColor: NSColor?](./nstextstorage/foregroundcolor.md)
   The color for the text.
 ### Constants
-- [struct NSTextStorageEditActions](nstextstorageeditactions.md)
+- [struct NSTextStorageEditActions](./nstextstorageeditactions.md)
   Constants that indicate the types of changes.
 ### Notifications
-- [class let willProcessEditingNotification: NSNotification.Name](nstextstorage/willprocesseditingnotification.md)
+- [class let willProcessEditingNotification: NSNotification.Name](./nstextstorage/willprocesseditingnotification.md)
   A notification that posts before a text storage begins processing edits.
-- [class let didProcessEditingNotification: NSNotification.Name](nstextstorage/didprocesseditingnotification.md)
+- [class let didProcessEditingNotification: NSNotification.Name](./nstextstorage/didprocesseditingnotification.md)
   A notification that posts after a text storage finishes processing edits.
 ### Accessing the storage controller
-- [var textStorageObserver: (any NSTextStorageObserving)?](nstextstorage/textstorageobserver.md)
+- [var textStorageObserver: (any NSTextStorageObserving)?](./nstextstorage/textstorageobserver.md)
   The observer for the text storage object.
-- [protocol NSTextStorageObserving](nstextstorageobserving.md)
+- [protocol NSTextStorageObserving](./nstextstorageobserving.md)
   Optional methods that delegates implement to handle editing and transaction processing.
 
 ## Relationships
 
 ### Inherits From
-- [NSMutableAttributedString](../foundation/nsmutableattributedstring.md)
+- [NSMutableAttributedString](../Foundation/nsmutableattributedstring.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSPasteboardReading](nspasteboardreading.md)
-- [NSPasteboardWriting](nspasteboardwriting.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSPasteboardReading](./nspasteboardreading.md)
+- [NSPasteboardWriting](./nspasteboardwriting.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSLayoutManager](nslayoutmanager.md)
+### TextKit 1
+- [class NSLayoutManager](./nslayoutmanager.md)
   An object that coordinates the layout and display of text characters.
-- [class NSATSTypesetter](nsatstypesetter.md)
+- [class NSATSTypesetter](./nsatstypesetter.md)
   A concrete typesetter object that places glyphs during the text layout process.
-- [class NSTypesetter](nstypesetter.md)
+- [class NSTypesetter](./nstypesetter.md)
   An abstract class that performs various type layout tasks.
 
 

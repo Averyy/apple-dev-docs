@@ -1,7 +1,8 @@
 # jointTransforms
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Changed joint transforms.
 

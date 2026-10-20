@@ -1,7 +1,8 @@
 # NSBundleOnDemandResourceInvalidTagError
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The application specified a tag that the system couldn’t find in the application tag manifest.
 
@@ -22,13 +23,14 @@ var NSBundleOnDemandResourceInvalidTagError: Int { get }
 
 ## See Also
 
-- [var NSBundleErrorMaximum: Int](nsbundleerrormaximum-swift.var.md)
+### Errors
+- [var NSBundleErrorMaximum: Int](./nsbundleerrormaximum-swift.var.md)
   The end of the range of error codes reserved for bundle errors.
-- [var NSBundleErrorMinimum: Int](nsbundleerrorminimum-swift.var.md)
+- [var NSBundleErrorMinimum: Int](./nsbundleerrorminimum-swift.var.md)
   The start of the range of error codes reserved for bundle errors.
-- [var NSBundleOnDemandResourceExceededMaximumSizeError: Int](nsbundleondemandresourceexceededmaximumsizeerror-swift.var.md)
+- [var NSBundleOnDemandResourceExceededMaximumSizeError: Int](./nsbundleondemandresourceexceededmaximumsizeerror-swift.var.md)
   The application exceeded the amount of on-demand resources content in use at one time.
-- [var NSBundleOnDemandResourceOutOfSpaceError: Int](nsbundleondemandresourceoutofspaceerror-swift.var.md)
+- [var NSBundleOnDemandResourceOutOfSpaceError: Int](./nsbundleondemandresourceoutofspaceerror-swift.var.md)
   Insufficient space available to download the requested on-demand resources.
 
 

@@ -1,7 +1,8 @@
 # values
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of values for the attribute.
 
@@ -14,9 +15,14 @@ The array of values for the attribute.
 var values: [String] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * values;
+```
+
 ## See Also
 
-- [var name: String](tvtopshelfnamedattribute/name.md)
+### Getting the Name and Value
+- [var name: String](./name.md)
   The localized name of the attribute.
 
 

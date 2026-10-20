@@ -1,7 +1,8 @@
 # MPSGraphRNNActivation.none
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines a pass through activation.
 
@@ -17,6 +18,10 @@ Defines a pass through activation.
 
 ```swift
 case none
+```
+
+```c
+MPSGraphRNNActivationNone
 ```
 
 

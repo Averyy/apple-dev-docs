@@ -1,7 +1,8 @@
 # PreviewSession.Event
 
 **Framework**: Quick Look  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An event from the preview session’s events stream.
 
@@ -17,18 +18,18 @@ enum Event
 ## Topics
 
 ### Enumeration Cases
-- [PreviewSession.Event.didClose](previewsession/event/didclose.md)
+- [PreviewSession.Event.didClose](./event/didclose.md)
   The session did close.
-- [PreviewSession.Event.didFail(_:)](previewsession/event/didfail(_:).md)
+- [PreviewSession.Event.didFail(_:)](./event/didfail%28_%29.md)
   The session failed to open with an error.
-- [PreviewSession.Event.didOpen](previewsession/event/didopen.md)
+- [PreviewSession.Event.didOpen](./event/didopen.md)
   The session did successfully open.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

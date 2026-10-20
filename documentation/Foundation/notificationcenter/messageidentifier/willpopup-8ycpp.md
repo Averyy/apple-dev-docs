@@ -1,7 +1,8 @@
 # willPopUp
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willPopUp: NotificationCenter.BaseMessageIdentifier<NSPopUpButtonCell.WillPopUpMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSPopUpButtonCell.WillPopUpMessage>`.
 
 
 ---

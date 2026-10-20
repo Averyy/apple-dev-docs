@@ -1,7 +1,8 @@
 # DefaultHistoryTransaction
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,34 +23,35 @@ struct DefaultHistoryTransaction
 ## Topics
 
 ### Instance Properties
-- [let bundleIdentifier: String](defaulthistorytransaction/bundleidentifier.md)
-- [let processIdentifier: String](defaulthistorytransaction/processidentifier.md)
+- [let bundleIdentifier: String](./defaulthistorytransaction/bundleidentifier.md)
+- [let processIdentifier: String](./defaulthistorytransaction/processidentifier.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [HistoryTransaction](historytransaction.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [HistoryTransaction](./historytransaction.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HistoryChange](historychange.md)
+### History life cycle
+- [enum HistoryChange](./historychange.md)
   Values that describe data history transactions.
-- [protocol HistoryDelete](historydelete.md)
+- [protocol HistoryDelete](./historydelete.md)
   An interface that enables a custom data store to delete items from the history of changes to its persisted models.
-- [protocol HistoryInsert](historyinsert.md)
-- [protocol HistoryToken](historytoken.md)
-- [protocol HistoryTransaction](historytransaction.md)
-- [protocol HistoryUpdate](historyupdate.md)
-- [struct HistoryTombstone](historytombstone.md)
-- [struct DefaultHistoryInsert](defaulthistoryinsert.md)
-- [struct DefaultHistoryUpdate](defaulthistoryupdate.md)
-- [struct DefaultHistoryDelete](defaulthistorydelete.md)
-- [struct DefaultHistoryToken](defaulthistorytoken.md)
+- [protocol HistoryInsert](./historyinsert.md)
+- [protocol HistoryToken](./historytoken.md)
+- [protocol HistoryTransaction](./historytransaction.md)
+- [protocol HistoryUpdate](./historyupdate.md)
+- [struct HistoryTombstone](./historytombstone.md)
+- [struct DefaultHistoryInsert](./defaulthistoryinsert.md)
+- [struct DefaultHistoryUpdate](./defaulthistoryupdate.md)
+- [struct DefaultHistoryDelete](./defaulthistorydelete.md)
+- [struct DefaultHistoryToken](./defaulthistorytoken.md)
 
 
 ---

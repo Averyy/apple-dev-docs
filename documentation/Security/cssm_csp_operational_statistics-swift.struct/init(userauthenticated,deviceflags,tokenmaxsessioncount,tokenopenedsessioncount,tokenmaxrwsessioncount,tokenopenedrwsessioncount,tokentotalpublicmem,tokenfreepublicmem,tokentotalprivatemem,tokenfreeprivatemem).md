@@ -1,7 +1,8 @@
 # init(UserAuthenticated:DeviceFlags:TokenMaxSessionCount:TokenOpenedSessionCount:TokenMaxRWSessionCount:TokenOpenedRWSessionCount:TokenTotalPublicMem:TokenFreePublicMem:TokenTotalPrivateMem:TokenFreePrivateMem:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+

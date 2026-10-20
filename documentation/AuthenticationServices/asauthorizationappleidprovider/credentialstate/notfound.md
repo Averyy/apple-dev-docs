@@ -1,7 +1,8 @@
 # ASAuthorizationAppleIDProvider.CredentialState.notFound
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user hasn’t established a relationship with Sign in with Apple.
 
@@ -20,13 +21,18 @@ The user hasn’t established a relationship with Sign in with Apple.
 case notFound
 ```
 
+```c
+ASAuthorizationAppleIDProviderCredentialNotFound
+```
+
 ## See Also
 
-- [ASAuthorizationAppleIDProvider.CredentialState.authorized](asauthorizationappleidprovider/credentialstate/authorized.md)
+### User Credential States
+- [ASAuthorizationAppleIDProvider.CredentialState.authorized](./authorized.md)
   The user is authorized.
-- [ASAuthorizationAppleIDProvider.CredentialState.revoked](asauthorizationappleidprovider/credentialstate/revoked.md)
+- [ASAuthorizationAppleIDProvider.CredentialState.revoked](./revoked.md)
   The given user’s authorization has been revoked and they should be signed out.
-- [ASAuthorizationAppleIDProvider.CredentialState.transferred](asauthorizationappleidprovider/credentialstate/transferred.md)
+- [ASAuthorizationAppleIDProvider.CredentialState.transferred](./transferred.md)
   The app has been transferred to a different team, and you need to migrate the user’s identifier.
 
 

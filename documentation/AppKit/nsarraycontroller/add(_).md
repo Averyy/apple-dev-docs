@@ -1,18 +1,23 @@
 # add(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and adds a new object to the receiver’s content and arranged objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @IBAction
 func add(_ sender: Any?)
+```
+
+```objc
+- (void) add:(id) sender;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # Read variant information for an alternative distribution package
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get detail information about specific alternative distribution package variants.
 
@@ -14,7 +15,7 @@ Get detail information about specific alternative distribution package variants.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVariants/b4ab437b-5c13-42c7-b5ea-a8ec9889e402
 ```
 
@@ -46,11 +47,29 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVariants/
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the alternative distribution package variant resource ID from the [`List Variants Information`](./get-v1-alternativedistributionpackageversions-_id_-variants.md) response.
+
+### Query Parameters
+
 - `fields[alternativeDistributionPackageVariants]` ([string]): Additional fields to include for each alternative distribution package variants resource returned by the response.
+
+  **Allowed Values**: `url`, `urlExpirationDate`, `alternativeDistributionKeyBlob`, `fileChecksum`
+
+## Responses
+
+- `200` OK (`AlternativeDistributionPackageVariantResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List Variants Information](get-v1-alternativedistributionpackageversions-_id_-variants.md)
+### Getting variant information
+- [List Variants Information](./get-v1-alternativedistributionpackageversions-_id_-variants.md)
   List variants for specific alternative distribution package version.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFifthDepthMode](1644532-anonymous/kfifthdepthmode.md)
-- [kFirstDepthMode](1644532-anonymous/kfirstdepthmode.md)
-- [kFourthDepthMode](1644532-anonymous/kfourthdepthmode.md)
-- [kSecondDepthMode](1644532-anonymous/kseconddepthmode.md)
-- [kSixthDepthMode](1644532-anonymous/ksixthdepthmode.md)
-- [kThirdDepthMode](1644532-anonymous/kthirddepthmode.md)
+- [kFifthDepthMode](./api-1644532-anonymous/kfifthdepthmode.md)
+- [kFirstDepthMode](./api-1644532-anonymous/kfirstdepthmode.md)
+- [kFourthDepthMode](./api-1644532-anonymous/kfourthdepthmode.md)
+- [kSecondDepthMode](./api-1644532-anonymous/kseconddepthmode.md)
+- [kSixthDepthMode](./api-1644532-anonymous/ksixthdepthmode.md)
+- [kThirdDepthMode](./api-1644532-anonymous/kthirddepthmode.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # incompatibleSessionSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the export session settings are incompatible with resumable export.
 
@@ -19,13 +20,18 @@ Indicates the export session settings are incompatible with resumable export.
 static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason
 ```
 
+```c
+extern AVAssetExportSessionResumptionFailureReason const AVAssetExportSessionResumptionFailureReasonIncompatibleSessionSettings;
+```
+
 ## See Also
 
-- [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatibletemporarydirectorycontents.md)
+### Failure reasons
+- [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](./incompatibletemporarydirectorycontents.md)
   Indicates that the contents of the specified temporary files directory are inconsistent with the current resuming export.
-- [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/temporarydirectorydoesnotexist.md)
+- [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](./temporarydirectorydoesnotexist.md)
   Indicates that the specified temporary files directory doesn’t exist.
-- [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/unsupportedforpresetonplatform.md)
+- [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](./unsupportedforpresetonplatform.md)
   Indicates that resumption isn’t supported for this preset and platform combination.
 
 

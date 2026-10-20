@@ -1,7 +1,8 @@
 # init(device:venueDescriptor:depthPixelFormat:colorPixelFormat:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an immersive preview renderer.
 
@@ -18,7 +19,7 @@ init(device: (any MTLDevice)? = nil, venueDescriptor: VenueDescriptor? = nil, de
 
 #### Discussion
 
-The renderer is initialized with optional Metal device and pixel format configurations. If you don’t provide a device, the renderer uses the system default Metal device. You can set the venue descriptor during initialization or update it later through the [`venueDescriptor`](immersivepreviewrenderer/venuedescriptor.md) property.
+The renderer is initialized with optional Metal device and pixel format configurations. If you don’t provide a device, the renderer uses the system default Metal device. You can set the venue descriptor during initialization or update it later through the [`venueDescriptor`](./venuedescriptor.md) property.
 
 ## Parameters
 

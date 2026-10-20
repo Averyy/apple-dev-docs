@@ -1,7 +1,8 @@
 # AssetError.Kind.invalidFeatureType(_:)
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the feature type is invalid.
 
@@ -24,13 +25,14 @@ This means that either the feature type has an incorrect name, or that the asset
 
 ## See Also
 
-- [AssetError.Kind.corruptedMetadata](asseterror/kind-swift.enum/corruptedmetadata.md)
+### Types of errors
+- [AssetError.Kind.corruptedMetadata](./corruptedmetadata.md)
   An error that indicates the asset metadata is corrupted.
-- [AssetError.Kind.duplicateName](asseterror/kind-swift.enum/duplicatename.md)
+- [AssetError.Kind.duplicateName](./duplicatename.md)
   An error that indicates a component with that name already exists in the asset.
-- [AssetError.Kind.invalidName](asseterror/kind-swift.enum/invalidname.md)
+- [AssetError.Kind.invalidName](./invalidname.md)
   An error that indicates the component name is invalid.
-- [AssetError.Kind.unsupportedVersion(_:)](asseterror/kind-swift.enum/unsupportedversion(_:).md)
+- [AssetError.Kind.unsupportedVersion(_:)](./unsupportedversion%28_%29.md)
   An error that indicates the asset version is unsupported.
 
 

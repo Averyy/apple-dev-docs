@@ -1,7 +1,8 @@
 # localizedDisplayName
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized name for the complication.
 
@@ -14,13 +15,18 @@ A localized name for the complication.
 var localizedDisplayName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * localizedDisplayName;
+```
+
 ## See Also
 
-- [var kind: String](clkcomplicationintentwidgetmigrationconfiguration/kind.md)
+### Accessing configuration properties
+- [var kind: String](./kind.md)
   A string that uniquely identifies a widget in your WidgetKit extension.
-- [var extensionBundleIdentifier: String](clkcomplicationintentwidgetmigrationconfiguration/extensionbundleidentifier.md)
+- [var extensionBundleIdentifier: String](./extensionbundleidentifier.md)
   The bundle identifier for your WidgetKit extension.
-- [var intent: INIntent](clkcomplicationintentwidgetmigrationconfiguration/intent.md)
+- [var intent: INIntent](./intent.md)
   A SiriKit intent that provides additional configuration information to your WidgetKit complication.
 
 

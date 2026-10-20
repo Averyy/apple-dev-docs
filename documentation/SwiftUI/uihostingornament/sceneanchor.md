@@ -1,7 +1,8 @@
 # sceneAnchor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor point for aligning the ornament’s content (based on the `contentAlignment`) with the scene.
 
@@ -16,7 +17,8 @@ var sceneAnchor: UnitPoint { get set }
 
 ## See Also
 
-- [var contentAlignment: Alignment](uihostingornament/contentalignment.md)
+### Setting the alignment
+- [var contentAlignment: Alignment](./contentalignment.md)
   The alignment in the ornament used to position it.
 
 

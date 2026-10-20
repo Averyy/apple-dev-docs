@@ -1,7 +1,8 @@
 # instrumentID
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instrument identifier.
 
@@ -19,19 +20,24 @@ The instrument identifier.
 var instrumentID: UInt32 { get set }
 ```
 
+```objc
+@property (readwrite) UInt32 instrumentID;
+```
+
 #### Discussion
 
-Set this value to [`defaultInstrument`](avextendednoteonevent/defaultinstrument.md).
+Set this value to [`defaultInstrument`](./defaultinstrument.md).
 
 ## See Also
 
-- [var midiNote: Float](avextendednoteonevent/midinote.md)
+### Configuring a note-on event
+- [var midiNote: Float](./midinote.md)
   The MIDI note number.
-- [var velocity: Float](avextendednoteonevent/velocity.md)
+- [var velocity: Float](./velocity.md)
   The MDI velocity.
-- [var groupID: UInt32](avextendednoteonevent/groupid.md)
+- [var groupID: UInt32](./groupid.md)
   The audio unit channel that handles the event.
-- [var duration: AVMusicTimeStamp](avextendednoteonevent/duration.md)
+- [var duration: AVMusicTimeStamp](./duration.md)
   The duration of the event, in beats.
 
 

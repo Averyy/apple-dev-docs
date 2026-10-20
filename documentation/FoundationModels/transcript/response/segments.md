@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Ordered response segments.
 
@@ -21,9 +22,10 @@ var segments: [Transcript.Segment]
 
 ## See Also
 
-- [var assetIDs: [String]](transcript/response/assetids.md)
+### Inspecting a response
+- [var assetIDs: [String]](./assetids.md)
   Version-aware identifiers for all assets used to generate this response.
-- [var metadata: [String : GeneratedContent]](transcript/response/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata associated with generating the response.
 
 

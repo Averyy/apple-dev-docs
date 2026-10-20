@@ -1,7 +1,8 @@
 # MeshGradient.Colors
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An array of colors.
 
@@ -23,15 +24,15 @@ enum Colors
 ## Topics
 
 ### Enumeration Cases
-- [MeshGradient.Colors.colors(_:)](meshgradient/colors-swift.enum/colors(_:).md)
-- [MeshGradient.Colors.resolvedColors(_:)](meshgradient/colors-swift.enum/resolvedcolors(_:).md)
+- [MeshGradient.Colors.colors(_:)](./colors-swift.enum/colors%28_%29.md)
+- [MeshGradient.Colors.resolvedColors(_:)](./colors-swift.enum/resolvedcolors%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

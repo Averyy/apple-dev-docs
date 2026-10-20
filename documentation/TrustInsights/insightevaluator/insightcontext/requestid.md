@@ -1,7 +1,8 @@
 # requestID
 
 **Framework**: Trust Insights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional identifier you can use to tie an assessment to a specific transaction.
 
@@ -21,9 +22,10 @@ It’s a best practice to use a server generated identifier and then to verify t
 
 ## See Also
 
-- [var operationCategory: InsightEvaluator.OperationCategory](insightevaluator/insightcontext/operationcategory.md)
+### insight context properties
+- [var operationCategory: InsightEvaluator.OperationCategory](./operationcategory.md)
   The type of operation you’re requesting the evaluation for.
-- [let requestedInsight: (repeat each InsightRequest)](insightevaluator/insightcontext/requestedinsight.md)
+- [let requestedInsight: (repeat each InsightRequest)](./requestedinsight.md)
   The insight you’re requesting.
 
 

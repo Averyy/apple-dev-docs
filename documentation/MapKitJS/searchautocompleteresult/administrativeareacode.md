@@ -1,7 +1,8 @@
 # administrativeAreaCode
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The official abbreviation for the state or area.
 
@@ -10,13 +11,13 @@ The official abbreviation for the state or area.
 
 ## Declaration
 
-```swift
+```
 administrativeAreaCode: string | null;
 ```
 
 #### Discussion
 
-For example, the [`administrativeAreaCode`](place/administrativeareacode.md) for Golden Gate Park in San Francisco, California, is `"CA"`.
+For example, the [`administrativeAreaCode`](../place/administrativeareacode.md) for Golden Gate Park in San Francisco, California, is `"CA"`.
 
 
 ---

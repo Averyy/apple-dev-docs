@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a prediction from a single input.
 
@@ -31,7 +32,8 @@ A classification distribution.
 
 ## See Also
 
-- [MLModelClassifierAdaptor.Label](mlmodelclassifieradaptor/label.md)
+### Performing the transformation
+- [MLModelClassifierAdaptor.Label](./label.md)
   The classifier label type.
 
 

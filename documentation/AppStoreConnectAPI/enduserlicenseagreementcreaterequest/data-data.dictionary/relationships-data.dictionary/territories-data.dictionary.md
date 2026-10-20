@@ -1,7 +1,8 @@
 # EndUserLicenseAgreementCreateRequest.Data.Relationships.Territories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object EndUserLicenseAgreementCreateRequest.Data.Relationships.Territories
 ```
 
 ## Topics
 
 ### Objects
-- [object EndUserLicenseAgreementCreateRequest.Data.Relationships.Territories.Data](enduserlicenseagreementcreaterequest/data-data.dictionary/relationships-data.dictionary/territories-data.dictionary/data-data.dictionary.md)
+- [object EndUserLicenseAgreementCreateRequest.Data.Relationships.Territories.Data](./territories-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
 ## Properties
@@ -26,7 +27,8 @@ object EndUserLicenseAgreementCreateRequest.Data.Relationships.Territories
 
 ## See Also
 
-- [object EndUserLicenseAgreementCreateRequest.Data.Relationships.App](enduserlicenseagreementcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+### Objects
+- [object EndUserLicenseAgreementCreateRequest.Data.Relationships.App](./app-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

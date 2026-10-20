@@ -1,7 +1,8 @@
 # openVerificationCodeAppSettings(completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Open the Settings app and navigate to the verification code provider settings.
 
@@ -15,7 +16,15 @@ Open the Settings app and navigate to the verification code provider settings.
 ## Declaration
 
 ```swift
+class func openVerificationCodeAppSettings(completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func openVerificationCodeAppSettings() async throws
+```
+
+```objc
++ (void) openVerificationCodeAppSettingsWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Parameters
@@ -24,7 +33,8 @@ class func openVerificationCodeAppSettings() async throws
 
 ## See Also
 
-- [class func openCredentialProviderAppSettings(completionHandler: (((any Error)?) -> Void)?)](assettingshelper/opencredentialproviderappsettings(completionhandler:).md)
+### Opening the Settings app
+- [class func openCredentialProviderAppSettings(completionHandler: (((any Error)?) -> Void)?)](./opencredentialproviderappsettings%28completionhandler%29.md)
   Open the Settings app and navigate to the AutoFill provider settings.
 
 

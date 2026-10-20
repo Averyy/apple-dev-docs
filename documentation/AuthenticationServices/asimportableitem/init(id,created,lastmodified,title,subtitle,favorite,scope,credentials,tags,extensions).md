@@ -1,7 +1,8 @@
 # init(id:created:lastModified:title:subtitle:favorite:scope:credentials:tags:extensions:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+

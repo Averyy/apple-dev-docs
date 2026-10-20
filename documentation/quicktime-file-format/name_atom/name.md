@@ -1,15 +1,17 @@
 # Name
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An array of bytes, constituting a UTF-8 string, containing the name.
 
 ## See Also
 
-- [Version](name_atom/version.md)
+### Data fields
+- [Version](./version.md)
   One byte.
-- [Flags](name_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes.
 
 

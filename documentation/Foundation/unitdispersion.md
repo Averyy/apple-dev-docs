@@ -1,7 +1,8 @@
 # UnitDispersion
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for specific quantities of dispersion.
 
@@ -20,49 +21,54 @@ A unit of measure for specific quantities of dispersion.
 class UnitDispersion
 ```
 
+```objc
+@interface NSUnitDispersion : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitDispersion`](unitdispersion.md) to represent specific quantities of dispersion using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitDispersion`](./unitdispersion.md) to represent specific quantities of dispersion using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Dispersion
 
 Dispersion describes the amount of a constituent divided by the amount of all other constituents in a mixture. Dispersion is a dimensionless quantity that is commonly expressed in “parts-per” notation, such as “parts per million” (ppm), to describe small relative quantities.
 
-The [`UnitDispersion`](unitdispersion.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`partsPerMillion`](unitdispersion/partspermillion.md).
+The [`UnitDispersion`](./unitdispersion.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`partsPerMillion`](./unitdispersion/partspermillion.md).
 
 | Name | Method | Abbreviation |
 | --- | --- | --- |
-| Parts Per Million | [`partsPerMillion`](unitdispersion/partspermillion.md) | ppm |
+| Parts Per Million | [`partsPerMillion`](./unitdispersion/partspermillion.md) | ppm |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var partsPerMillion: UnitDispersion](unitdispersion/partspermillion.md)
+- [class var partsPerMillion: UnitDispersion](./unitdispersion/partspermillion.md)
   The parts per million unit.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitConcentrationMass](unitconcentrationmass.md)
+### Concentration and Dispersion
+- [class UnitConcentrationMass](./unitconcentrationmass.md)
   A unit of measure for concentration of mass.
 
 

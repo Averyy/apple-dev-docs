@@ -1,7 +1,8 @@
 # pointerVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the visibility of the pointer when it’s over the view.
 
@@ -25,9 +26,10 @@ A view that changes the visibility of the pointer when hovered.
 
 ## See Also
 
-- [func pointerStyle(PointerStyle?) -> some View](view/pointerstyle(_:).md)
+### Modifying pointer appearance
+- [func pointerStyle(PointerStyle?) -> some View](./pointerstyle%28_%29.md)
   Sets the pointer style to display when the pointer is over the view.
-- [struct PointerStyle](pointerstyle.md)
+- [struct PointerStyle](../pointerstyle.md)
   A style describing the appearance of the pointer (also called a cursor) when it’s hovered over a view.
 
 

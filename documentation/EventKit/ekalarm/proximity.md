@@ -1,7 +1,8 @@
 # proximity
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value indicating how a location-based alarm is triggered.
 
@@ -19,15 +20,20 @@ A value indicating how a location-based alarm is triggered.
 var proximity: EKAlarmProximity { get set }
 ```
 
+```objc
+@property (nonatomic) EKAlarmProximity proximity;
+```
+
 #### Discussion
 
-Alarms can be set to trigger when entering or exiting a location specified by [`structuredLocation`](ekalarm/structuredlocation.md). By default, alarms are not affected by location.
+Alarms can be set to trigger when entering or exiting a location specified by [`structuredLocation`](./structuredlocation.md). By default, alarms are not affected by location.
 
 ## See Also
 
-- [enum EKAlarmProximity](ekalarmproximity.md)
+### Setting GeoFence-based Alarms
+- [enum EKAlarmProximity](../ekalarmproximity.md)
   A value indicating whether an alarm is triggered by entering or exiting a region.
-- [var structuredLocation: EKStructuredLocation?](ekalarm/structuredlocation.md)
+- [var structuredLocation: EKStructuredLocation?](./structuredlocation.md)
   The location to trigger an alarm.
 
 

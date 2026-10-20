@@ -1,18 +1,19 @@
 # handle
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the underlying system handle associated with the specified dispatch source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ var handle: UInt { get }
 
 ## See Also
 
-- [var data: UInt](dispatchsourceprotocol/data.md)
+### Getting the Dispatch Source Attributes
+- [var data: UInt](./data.md)
   Returns pending data for the dispatch source.
-- [var mask: UInt](dispatchsourceprotocol/mask.md)
+- [var mask: UInt](./mask.md)
   Returns the mask of events monitored by the dispatch source.
 
 

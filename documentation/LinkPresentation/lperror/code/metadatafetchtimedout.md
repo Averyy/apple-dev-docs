@@ -1,7 +1,8 @@
 # LPError.Code.metadataFetchTimedOut
 
 **Framework**: Link Presentation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the metadata fetch took longer than allowed.
 
@@ -20,13 +21,18 @@ An error indicating that the metadata fetch took longer than allowed.
 case metadataFetchTimedOut
 ```
 
+```c
+LPErrorMetadataFetchTimedOut
+```
+
 ## See Also
 
-- [LPError.Code.metadataFetchCancelled](lperror/code/metadatafetchcancelled.md)
+### Error cases
+- [LPError.Code.metadataFetchCancelled](./metadatafetchcancelled.md)
   An error indicating that the metadata fetch was canceled by the client.
-- [LPError.Code.metadataFetchFailed](lperror/code/metadatafetchfailed.md)
+- [LPError.Code.metadataFetchFailed](./metadatafetchfailed.md)
   An error indicating that a metadata fetch failed.
-- [LPError.Code.unknown](lperror/code/unknown.md)
+- [LPError.Code.unknown](./unknown.md)
   An unknown error.
 
 

@@ -1,7 +1,8 @@
 # init(_:originalName:hashModifier:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ init(_ options: Schema.Attribute.Option..., originalName: String? = nil, hashMod
 
 ## See Also
 
-- [init(name: String, originalName: String?, options: [Schema.Attribute.Option], valueType: any Any.Type, defaultValue: Any?, hashModifier: String?)](schema/attribute/init(name:originalname:options:valuetype:defaultvalue:hashmodifier:).md)
+### Creating an attribute
+- [init(name: String, originalName: String?, options: [Schema.Attribute.Option], valueType: any Any.Type, defaultValue: Any?, hashModifier: String?)](./init%28name,originalname,options,valuetype,defaultvalue,hashmodifier%29.md)
 
 
 ---

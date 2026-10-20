@@ -1,7 +1,8 @@
 # denyRequesters(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Denies access requests from specified users.
 
@@ -20,17 +21,21 @@ Denies access requests from specified users.
 func denyRequesters(_ requesters: [CKShare.AccessRequester])
 ```
 
+```objc
+- (void) denyRequesters:(NSArray<CKShareAccessRequester *> *) requesters;
+```
+
 #### Discussion
 
-Use this method to deny pending access requests from uninvited users. CloudKit removes denied requesters from the [`requesters`](ckshare/requesters.md) array. To persist the changes, save the share to the server after calling this method.
+Use this method to deny pending access requests from uninvited users. CloudKit removes denied requesters from the [`requesters`](./requesters.md) array. To persist the changes, save the share to the server after calling this method.
 
-After denial, requesters can still submit new access requests unless explicitly blocked using [`blockRequesters(_:)`](ckshare/blockrequesters(_:).md).
+After denial, requesters can still submit new access requests unless explicitly blocked using [`blockRequesters(_:)`](./blockrequesters%28_%29.md).
 
 Only the share owner or an administrator can invoke this method. Attempts by other participants result in an exception.
 
 ## Parameters
 
-- `requesters`: An array of [`CKShare.AccessRequester`](ckshare/accessrequester.md) objects to deny.
+- `requesters`: An array of [`CKShare.AccessRequester`](./accessrequester.md) objects to deny.
 
 
 ---

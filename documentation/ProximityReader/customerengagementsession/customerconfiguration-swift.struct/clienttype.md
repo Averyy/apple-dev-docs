@@ -1,7 +1,8 @@
 # clientType
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enum value that indicates the type of connected peer client.
 

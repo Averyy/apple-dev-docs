@@ -1,7 +1,8 @@
 # interstitialEventDidFinishEventKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The dictionary key for the AVPlayerInterstitialEvent that finished playing in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
 
@@ -20,27 +21,32 @@ The dictionary key for the AVPlayerInterstitialEvent that finished playing in th
 class let interstitialEventDidFinishEventKey: String
 ```
 
+```c
+extern NSString * const AVPlayerInterstitialEventMonitorInterstitialEventDidFinishEventKey;
+```
+
 #### Discussion
 
 The value corresponding to this key is of type AVPlayerInterstitialEvent.
 
 ## See Also
 
-- [var events: [AVPlayerInterstitialEvent]](avplayerinterstitialeventmonitor/events.md)
+### Monitoring the event schedule
+- [var events: [AVPlayerInterstitialEvent]](./events.md)
   The schedule of interstitial events.
-- [class let eventsDidChangeNotification: NSNotification.Name](avplayerinterstitialeventmonitor/eventsdidchangenotification.md)
+- [class let eventsDidChangeNotification: NSNotification.Name](./eventsdidchangenotification.md)
   A notification the system posts when the monitor’s schedule of interstitial events changes.
-- [class let interstitialEventWasUnscheduledNotification: NSNotification.Name](avplayerinterstitialeventmonitor/interstitialeventwasunschedulednotification.md)
+- [class let interstitialEventWasUnscheduledNotification: NSNotification.Name](./interstitialeventwasunschedulednotification.md)
   A notification that is posted whenever an AVPlayerInterstitialEvent with loaded assets was unscheduled prior to playing.
-- [class let interstitialEventWasUnscheduledEventKey: String](avplayerinterstitialeventmonitor/interstitialeventwasunscheduledeventkey.md)
+- [class let interstitialEventWasUnscheduledEventKey: String](./interstitialeventwasunscheduledeventkey.md)
   The dictionary key for the AVPlayerInterstitialEvent that was unscheduled in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledNotification.
-- [class let interstitialEventWasUnscheduledErrorKey: String](avplayerinterstitialeventmonitor/interstitialeventwasunschedulederrorkey.md)
+- [class let interstitialEventWasUnscheduledErrorKey: String](./interstitialeventwasunschedulederrorkey.md)
   The dictionary key to indicate whether the event that was unscheduled was due to an error.
-- [class let interstitialEventDidFinishNotification: NSNotification.Name](avplayerinterstitialeventmonitor/interstitialeventdidfinishnotification.md)
+- [class let interstitialEventDidFinishNotification: NSNotification.Name](./interstitialeventdidfinishnotification.md)
   A notification that is posted whenever an AVPlayerInterstitialEvent finished playing.
-- [class let interstitialEventDidFinishPlayoutTimeKey: String](avplayerinterstitialeventmonitor/interstitialeventdidfinishplayouttimekey.md)
+- [class let interstitialEventDidFinishPlayoutTimeKey: String](./interstitialeventdidfinishplayouttimekey.md)
   The dictionary key for the playout time of the event that finished playing in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
-- [class let interstitialEventDidFinishDidPlayEntireEventKey: String](avplayerinterstitialeventmonitor/interstitialeventdidfinishdidplayentireeventkey.md)
+- [class let interstitialEventDidFinishDidPlayEntireEventKey: String](./interstitialeventdidfinishdidplayentireeventkey.md)
   The dictionary key to indicate whether the event that finished playing was fully played out in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
 
 

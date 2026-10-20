@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overlay’s delegate.
 
@@ -17,9 +18,14 @@ The overlay’s delegate.
 weak var delegate: (any SKOverlayDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<SKOverlayDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol SKOverlayDelegate](skoverlaydelegate.md)
+### Setting a delegate
+- [protocol SKOverlayDelegate](../skoverlaydelegate.md)
   Methods for responding to the overlay’s appearance, dismissal, or failure to load.
 
 

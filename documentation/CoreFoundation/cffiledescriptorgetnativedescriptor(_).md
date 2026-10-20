@@ -1,7 +1,8 @@
 # CFFileDescriptorGetNativeDescriptor(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the native file descriptor for a given CFFileDescriptor.
 
@@ -20,6 +21,10 @@ Returns the native file descriptor for a given CFFileDescriptor.
 func CFFileDescriptorGetNativeDescriptor(_ f: CFFileDescriptor!) -> CFFileDescriptorNativeDescriptor
 ```
 
+```c
+extern CFFileDescriptorNativeDescriptor CFFileDescriptorGetNativeDescriptor(CFFileDescriptorRef f);
+```
+
 #### Return Value
 
 The native file descriptor for `f`.
@@ -30,11 +35,13 @@ The native file descriptor for `f`.
 
 ## See Also
 
-- [func CFFileDescriptorInvalidate(CFFileDescriptor!)](cffiledescriptorinvalidate(_:).md)
+### Related Documentation
+- [func CFFileDescriptorInvalidate(CFFileDescriptor!)](./cffiledescriptorinvalidate%28_%29.md)
   Invalidates a CFFileDescriptor object.
-- [func CFFileDescriptorIsValid(CFFileDescriptor!) -> Bool](cffiledescriptorisvalid(_:).md)
+### Getting Information About a File Descriptor
+- [func CFFileDescriptorIsValid(CFFileDescriptor!) -> Bool](./cffiledescriptorisvalid%28_%29.md)
   Returns a Boolean value that indicates whether the native file descriptor for a given CFFileDescriptor is valid.
-- [func CFFileDescriptorGetContext(CFFileDescriptor!, UnsafeMutablePointer<CFFileDescriptorContext>!)](cffiledescriptorgetcontext(_:_:).md)
+- [func CFFileDescriptorGetContext(CFFileDescriptor!, UnsafeMutablePointer<CFFileDescriptorContext>!)](./cffiledescriptorgetcontext%28_,_%29.md)
   Gets the context for a given CFFileDescriptor.
 
 

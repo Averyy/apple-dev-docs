@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A 3D coordinate that defines the ray’s starting place.
 
@@ -15,9 +16,14 @@ A 3D coordinate that defines the ray’s starting place.
 var origin: simd_float3 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) simd_float3 origin;
+```
+
 ## See Also
 
-- [var direction: simd_float3](arraycastquery/direction.md)
+### Interpreting the Ray
+- [var direction: simd_float3](./direction.md)
   A vector that describes the ray’s trajectory in 3D space.
 
 

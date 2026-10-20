@@ -1,7 +1,8 @@
 # avgPooling2DGradient(withGradientTensor:sourceTensor:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 2D average pooling gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 2D average pooling gradient operation and returns the result tensor.
 
 ```swift
 func avgPooling2DGradient(withGradientTensor gradient: MPSGraphTensor, sourceTensor source: MPSGraphTensor, descriptor: MPSGraphPooling2DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) avgPooling2DGradientWithGradientTensor:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

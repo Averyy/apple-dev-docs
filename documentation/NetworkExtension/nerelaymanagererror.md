@@ -1,7 +1,8 @@
 # NERelayManagerError
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes specific to relay managers.
 
@@ -19,33 +20,38 @@ Error codes specific to relay managers.
 enum NERelayManagerError
 ```
 
+```c
+enum NERelayManagerError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [NERelayManagerError.configurationInvalid](nerelaymanagererror/configurationinvalid.md)
+- [NERelayManagerError.configurationInvalid](./nerelaymanagererror/configurationinvalid.md)
   An error code that indicates the relay manager is invalid.
-- [NERelayManagerError.configurationDisabled](nerelaymanagererror/configurationdisabled.md)
+- [NERelayManagerError.configurationDisabled](./nerelaymanagererror/configurationdisabled.md)
   An error code that indicates the relay manager isn’t enabled.
-- [NERelayManagerError.configurationStale](nerelaymanagererror/configurationstale.md)
+- [NERelayManagerError.configurationStale](./nerelaymanagererror/configurationstale.md)
   An error code that indicates the relay manager isn’t loaded.
-- [NERelayManagerError.configurationCannotBeRemoved](nerelaymanagererror/configurationcannotberemoved.md)
+- [NERelayManagerError.configurationCannotBeRemoved](./nerelaymanagererror/configurationcannotberemoved.md)
   An error code that indicates removing the relay manager failed.
 ### Initializers
-- [init?(rawValue: Int)](nerelaymanagererror/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nerelaymanagererror/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let NERelayErrorDomain: String](nerelayerrordomain.md)
+### Handling errors
+- [let NERelayErrorDomain: String](./nerelayerrordomain.md)
   The domain for errors resulting from calls to the relay manager.
 
 

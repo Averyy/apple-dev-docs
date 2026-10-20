@@ -1,7 +1,8 @@
 # minuteSecond
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A pattern to format a duration with minutes and seconds only, with default padding and rounding behavior.
 
@@ -22,9 +23,10 @@ static var minuteSecond: Duration.TimeFormatStyle.Pattern { get }
 
 ## See Also
 
-- [static var hourMinute: Duration.TimeFormatStyle.Pattern](duration/timeformatstyle/pattern-swift.struct/hourminute.md)
+### Using common patterns
+- [static var hourMinute: Duration.TimeFormatStyle.Pattern](./hourminute.md)
   A pattern to format a duration with hours and minutes only, with default padding and rounding behavior.
-- [static var hourMinuteSecond: Duration.TimeFormatStyle.Pattern](duration/timeformatstyle/pattern-swift.struct/hourminutesecond.md)
+- [static var hourMinuteSecond: Duration.TimeFormatStyle.Pattern](./hourminutesecond.md)
   A pattern to format a duration with hours, minutes, and seconds, with default padding and rounding behavior.
 
 

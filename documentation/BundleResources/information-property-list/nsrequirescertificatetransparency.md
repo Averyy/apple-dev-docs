@@ -1,7 +1,8 @@
 # NSRequiresCertificateTransparency
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An obsolete Boolean value indicating whether to require Certificate Transparency.
 
@@ -11,15 +12,18 @@ An obsolete Boolean value indicating whether to require Certificate Transparency
 - macOS 10.11+
 - visionOS 1.0+
 
+## Details
+
+- **Name**: `NSRequiresCertificateTransparency`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
 #### Discussion
 
-Certificate Transparency (CT) is a protocol that ATS can use to identify mistakenly or maliciously issued X.509 certificates. Earlier versions of the system used this key to enable or disable CT for a given domain. Specifically, CT requires a domain’s server certificates to have support from signed CT timestamps from at least two CT logs trusted by Apple. For more information about Certificate Transparency, see [`RFC 6962`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6962).
+Certificate Transparency (CT) is a protocol that ATS can use to identify mistakenly or maliciously issued X.509 certificates. Earlier versions of the system used this key to enable or disable CT for a given domain. Specifically, CT requires a domain’s server certificates to have support from signed CT timestamps from at least two CT logs trusted by Apple. For more information about Certificate Transparency, see [RFC 6962](https://tools.ietf.org/html/rfc6962).
 
 The system now requires this behavior in all cases, making the key irrelevant.
 
@@ -27,13 +31,14 @@ The system now requires this behavior in all cases, making the key irrelevant.
 
 ## See Also
 
-- [NSExceptionAllowsInsecureHTTPLoads](information-property-list/nsexceptionallowsinsecurehttploads.md)
+### Exceptions
+- [NSExceptionAllowsInsecureHTTPLoads](./nsexceptionallowsinsecurehttploads.md)
   A Boolean value indicating whether to allow insecure HTTP loads.
-- [NSExceptionMinimumTLSVersion](information-property-list/nsexceptionminimumtlsversion.md)
+- [NSExceptionMinimumTLSVersion](./nsexceptionminimumtlsversion.md)
   The minimum Transport Layer Security (TLS) version for network connections.
-- [NSExceptionRequiresForwardSecrecy](information-property-list/nsexceptionrequiresforwardsecrecy.md)
+- [NSExceptionRequiresForwardSecrecy](./nsexceptionrequiresforwardsecrecy.md)
   A Boolean value indicating whether to override the perfect forward secrecy requirement.
-- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+- [NSExceptionRequiresNIAPTLSPackageVersion](./nsexceptionrequiresniaptlspackageversion.md)
   A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 

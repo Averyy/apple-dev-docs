@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other objects that you include when creating a rule.
 
@@ -10,14 +11,14 @@ The relationships to other objects that you include when creating a rule.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleCreateRequest.Data.Relationships.RuleSet](gamecentermatchmakingrulecreaterequest/data-data.dictionary/relationships-data.dictionary/ruleset-data.dictionary.md)
+- [object GameCenterMatchmakingRuleCreateRequest.Data.Relationships.RuleSet](./relationships-data.dictionary/ruleset-data.dictionary.md)
   The relationship to the rule set that you provide when you create a rule.
 
 ## Properties
@@ -26,7 +27,8 @@ object GameCenterMatchmakingRuleCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object GameCenterMatchmakingRuleCreateRequest.Data.Attributes](gamecentermatchmakingrulecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingRuleCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes for a rule that you create.
 
 

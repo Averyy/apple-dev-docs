@@ -1,7 +1,8 @@
 # updateEntry
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An intent schema that updates journal entry.
 
@@ -20,7 +21,7 @@ var updateEntry: some AppSchemaIntent { get }
 
 #### Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `journal` domain and one of your app’s actions matches the `updateEntry` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .journal.updateEntry)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `journal` domain and one of your app’s actions matches the `updateEntry` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .journal.updateEntry)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an intent that conforms to the `updateEntry` schema:
 
@@ -44,17 +45,18 @@ The schema supports the following system experiences:
 
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var createAudioEntry: some AppSchemaIntent](appschema/journalintent/createaudioentry.md)
+### Actions
+- [var createAudioEntry: some AppSchemaIntent](./createaudioentry.md)
   An intent schema that creates a new audio journal entry.
-- [var createEntry: some AppSchemaIntent](appschema/journalintent/createentry.md)
+- [var createEntry: some AppSchemaIntent](./createentry.md)
   An intent schema that creates a new journal entry.
-- [var deleteEntry: some AppSchemaIntent](appschema/journalintent/deleteentry.md)
+- [var deleteEntry: some AppSchemaIntent](./deleteentry.md)
   An intent schema that deletes the specified journal entries.
-- [AppSchema.JournalIntent](appschema/journalintent.md)
+- [AppSchema.JournalIntent](../journalintent.md)
   Identifies intent schemas in the journal domain.
 
 

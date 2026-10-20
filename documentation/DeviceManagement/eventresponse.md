@@ -1,7 +1,8 @@
 # EventResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response that contains the event identifier.
 
@@ -10,59 +11,64 @@ The response that contains the event identifier.
 
 ## Declaration
 
-```swift
+```
 object EventResponse
 ```
 
 ## Mentions
 
-- [Managing assets](managing-assets.md)
-- [Managing users](managing-users.md)
+- [Managing assets](./managing-assets.md)
+- [Managing users](./managing-users.md)
 
 ## Topics
 
 ### Objects and Data Types
-- [object MdmInfo](mdminfo.md)
+- [object MdmInfo](./mdminfo.md)
   Information about the MDM client.
 
 ## Properties
 
 - `eventId` (string): The unique identifier for the asynchronous event.
-- `mdmInfo` (MdmInfo): The current information for the provided token. The response only includes this field when MDM sets a value using the [`Client Config`](client-config-4szk1.md) endpoint.
-- `tokenExpirationDate` (string): The token expiration date in an ISO-8601 format. Note: The server shows all dates and times in UTC.
+- `mdmInfo` (MdmInfo): The current information for the provided token.
+
+  The response only includes this field when MDM sets a value using the [`Client Config`](./client-config-4szk1.md) endpoint.
+- `tokenExpirationDate` (string): The token expiration date in an ISO-8601 format.
+
+  Note: The server shows all dates and times in UTC.
 - `uId` (string): The unique library identifier. When querying records using multiple tokens that may share libraries, use the `uId` field to filter duplicates and avoid double-counting records when different content managers upload duplicate tokens.
 
 ## See Also
 
-- [object Asset](asset.md)
+### Objects and data types
+- [object Asset](./asset.md)
   A product in the store.
-- [object ResponseAsset](responseasset.md)
+- [object ResponseAsset](./responseasset.md)
   The asset that the organization owns.
-- [object UnlimitedResponseAsset](unlimitedresponseasset.md)
+- [object UnlimitedResponseAsset](./unlimitedresponseasset.md)
   An asset with an unlimited license that the organization owns.
-- [object Assignment](assignment.md)
+- [object Assignment](./assignment.md)
   The asset assignment for a user or device.
-- [object RequestUser](requestuser.md)
+- [object RequestUser](./requestuser.md)
   The requested user in the organization.
-- [object ResponseUser](responseuser.md)
+- [object ResponseUser](./responseuser.md)
   The user in the organization.
-- [object ResponseSubscription](responsesubscription.md)
+- [object ResponseSubscription](./responsesubscription.md)
   A subscription with its assignment counts.
-- [object ResponseSubscriptionAssignment](responsesubscriptionassignment.md)
+- [object ResponseSubscriptionAssignment](./responsesubscriptionassignment.md)
   An assignment of a subscription to a user.
-- [object SubscriptionCounts](subscriptioncounts.md)
+- [object SubscriptionCounts](./subscriptioncounts.md)
   The subscription assignment counts broken down by assigned and available.
-- [object SubscriptionCountsBreakdown](subscriptioncountsbreakdown.md)
+- [object SubscriptionCountsBreakdown](./subscriptioncountsbreakdown.md)
   The breakdown of subscription counts by renewing and expiring status.
-- [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
+- [object ManageSubscriptionsRequest](./managesubscriptionsrequest.md)
   The request for subscription management.
-- [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
+- [object ManageSubscriptionAdminsRequest](./managesubscriptionadminsrequest.md)
   The request body for adding or removing subscription administrators.
-- [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
+- [object ManageSubscriptionAdminsResponse](./managesubscriptionadminsresponse.md)
   The confirmation response that the server returns after adding or removing subscription administrators.
-- [object ResponseSubscriptionAdmin](responsesubscriptionadmin.md)
+- [object ResponseSubscriptionAdmin](./responsesubscriptionadmin.md)
   An administrator for a subscription.
-- [object SubscriptionManagementResponse](subscriptionmanagementresponse.md)
+- [object SubscriptionManagementResponse](./subscriptionmanagementresponse.md)
   A confirmation response that reports your device management service’s subscription management support.
 
 

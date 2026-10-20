@@ -1,7 +1,8 @@
 # regionOfInterest
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies region of interest that image statistics cover.
 

@@ -1,7 +1,8 @@
 # CVPixelFormatType
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Identifier for a pixel format type
 
@@ -23,27 +24,28 @@ struct CVPixelFormatType
 ## Topics
 
 ### Instance Properties
-- [var isCompressionAvailable: Bool](cvpixelformattype/iscompressionavailable.md)
+- [var isCompressionAvailable: Bool](./cvpixelformattype/iscompressionavailable.md)
   True if any of the planes of this format are compressed and hardware support is available.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CVPixelFormatDescription](cvpixelformatdescription.md)
+### Data Types
+- [struct CVPixelFormatDescription](./cvpixelformatdescription.md)
   Defines a pixel format which can be used to create custom pixel buffer types.
-- [struct CVFillExtendedPixelsCallBackData](cvfillextendedpixelscallbackdata.md)
+- [struct CVFillExtendedPixelsCallBackData](./cvfillextendedpixelscallbackdata.md)
   A structure for holding information that describes a custom extended pixel fill algorithm.
-- [struct CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+- [struct CVSenselSitingOffsets](./cvsenselsitingoffsets.md)
   Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
-- [enum CVSenselArrayPattern](cvsenselarraypattern.md)
+- [enum CVSenselArrayPattern](./cvsenselarraypattern.md)
   Pattern indicating sensel arrangement.
 
 

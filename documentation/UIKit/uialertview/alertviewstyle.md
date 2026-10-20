@@ -1,14 +1,15 @@
 # alertViewStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of alert displayed to the user.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
+- iOS 5.0+ - Deprecated in 9.0
+- iPadOS 5.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
@@ -16,15 +17,20 @@ The kind of alert displayed to the user.
 var alertViewStyle: UIAlertViewStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIAlertViewStyle alertViewStyle;
+```
+
 ## See Also
 
-- [var delegate: AnyObject?](uialertview/delegate.md)
+### Setting properties
+- [var delegate: AnyObject?](./delegate.md)
   The receiver’s delegate or `nil` if it doesn’t have a delegate.
-- [var title: String](uialertview/title.md)
+- [var title: String](./title.md)
   The string that appears in the receiver’s title bar.
-- [var message: String?](uialertview/message.md)
+- [var message: String?](./message.md)
   Descriptive text that provides more details than the title.
-- [var isVisible: Bool](uialertview/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the receiver is displayed.
 
 

@@ -1,7 +1,8 @@
 # removeUIInterruptionMonitor(_:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a handler using the token from when you added the handler.
 
@@ -11,19 +12,24 @@ Removes a handler using the token from when you added the handler.
 func removeUIInterruptionMonitor(_ monitor: any NSObjectProtocol)
 ```
 
+```objc
+- (void) removeUIInterruptionMonitor:(id<NSObject>) monitor;
+```
+
 ## Mentions
 
-- [Handling UI Interruptions](handling-ui-interruptions.md)
+- [Handling UI Interruptions](../handling-ui-interruptions.md)
 
 ## Parameters
 
-- `monitor`: An identifier token for an interruption monitor, obtained from a previous call to [`addUIInterruptionMonitor(withDescription:handler:)`](xctestcase/adduiinterruptionmonitor(withdescription:handler:).md).
+- `monitor`: An identifier token for an interruption monitor, obtained from a previous call to [`addUIInterruptionMonitor(withDescription:handler:)`](./adduiinterruptionmonitor%28withdescription,handler%29.md).
 
 ## See Also
 
-- [Handling UI Interruptions](handling-ui-interruptions.md)
+### Monitoring UI Interruptions
+- [Handling UI Interruptions](../handling-ui-interruptions.md)
   Improve your UI test’s stability by handling interface changes that block the UI elements under test.
-- [func addUIInterruptionMonitor(withDescription: String, handler: (XCUIElement) -> Bool) -> any NSObjectProtocol](xctestcase/adduiinterruptionmonitor(withdescription:handler:).md)
+- [func addUIInterruptionMonitor(withDescription: String, handler: (XCUIElement) -> Bool) -> any NSObjectProtocol](./adduiinterruptionmonitor%28withdescription,handler%29.md)
   Adds a handler to the current context.
 
 

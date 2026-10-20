@@ -1,7 +1,8 @@
 # commandTypes
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of command types that you can encode into the indirect command buffer.
 
@@ -17,6 +18,10 @@ The set of command types that you can encode into the indirect command buffer.
 
 ```swift
 var commandTypes: MTLIndirectCommandType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLIndirectCommandType commandTypes;
 ```
 
 #### Discussion

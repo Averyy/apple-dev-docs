@@ -1,7 +1,8 @@
 # AppIntentControlConfiguration
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The description of a control that uses a custom app intent to provide user-configurable options.
 
@@ -45,7 +46,7 @@ struct DoorOpener: ControlWidget {
 }
 ```
 
-Every control has a unique `kind`, a string that you choose. You use this string to identify your control when reloading its template with [`ControlCenter`](controlcenter.md).
+Every control has a unique `kind`, a string that you choose. You use this string to identify your control when reloading its template with [`ControlCenter`](./controlcenter.md).
 
 The value provider is an object that determines a value to use to render your template. This provider receives an intent containing user-editable parameters.
 
@@ -54,33 +55,34 @@ The content closure defines the template that WidgetKit needs to render the cont
 ## Topics
 
 ### Initializers
-- [init(kind: String, intent: Configuration.Type, content: (Configuration) -> Content)](appintentcontrolconfiguration/init(kind:intent:content:).md)
+- [init(kind: String, intent: Configuration.Type, content: (Configuration) -> Content)](./appintentcontrolconfiguration/init%28kind,intent,content%29.md)
   Creates a configuration for a control that uses a custom app intent to provide user-configurable options.
-- [init<Provider>(kind: String, provider: Provider, content: (Provider.Value) -> Content)](appintentcontrolconfiguration/init(kind:provider:content:).md)
+- [init<Provider>(kind: String, provider: Provider, content: (Provider.Value) -> Content)](./appintentcontrolconfiguration/init%28kind,provider,content%29.md)
   Creates a configuration for a control that uses a custom app intent to provide user-configurable options.
 
 ## Relationships
 
 ### Conforms To
-- [ControlWidgetConfiguration](../swiftui/controlwidgetconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ControlWidgetConfiguration](../SwiftUI/controlwidgetconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating controls to perform actions across the system](creating-controls-to-perform-actions-across-the-system.md)
+### Setup and configuration
+- [Creating controls to perform actions across the system](./creating-controls-to-perform-actions-across-the-system.md)
   Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
-- [Adding refinements and configuration to controls](adding-refinements-and-configuration-to-controls.md)
+- [Adding refinements and configuration to controls](./adding-refinements-and-configuration-to-controls.md)
   Customize the way controls display across the system and offer people the ability to configure them.
-- [struct StaticControlConfiguration](staticcontrolconfiguration.md)
+- [struct StaticControlConfiguration](./staticcontrolconfiguration.md)
   The description of a control that has no user-configurable options.
-- [class ControlCenter](controlcenter.md)
+- [class ControlCenter](./controlcenter.md)
   An object you use to access configuration information for controls and reload them.
-- [struct ControlInfo](controlinfo.md)
+- [struct ControlInfo](./controlinfo.md)
   A structure that contains information about user-configured controls.
-- [struct ControlWidgetButton](controlwidgetbutton.md)
+- [struct ControlWidgetButton](./controlwidgetbutton.md)
   A control template representing a button.
-- [struct ControlWidgetToggle](controlwidgettoggle.md)
+- [struct ControlWidgetToggle](./controlwidgettoggle.md)
   A control template representing a toggle.
 
 

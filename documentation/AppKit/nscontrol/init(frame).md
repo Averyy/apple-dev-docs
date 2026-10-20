@@ -1,17 +1,22 @@
 # init(frame:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a control with the specified frame rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(frame frameRect: NSRect)
+```
+
+```objc
+- (instancetype) initWithFrame:(NSRect) frameRect;
 ```
 
 #### Return Value
@@ -28,9 +33,11 @@ If a cell has been specified for controls of this type, this method also creates
 
 ## See Also
 
-- [class NSControl](nscontrol.md)
+### Related Documentation
+- [class NSControl](../nscontrol.md)
   A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern.
-- [init?(coder: NSCoder)](nscontrol/init(coder:).md)
+### Creating a Control
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes a control with data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # LanguageModelFeedback.Sentiment.negative
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A negative sentiment.
 
@@ -21,13 +22,14 @@ case negative
 
 ## Mentions
 
-- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+- [Inspecting session transcripts and reporting model feedback](../../inspecting-session-transcripts-and-reporting-model-feedback.md)
 
 ## See Also
 
-- [LanguageModelFeedback.Sentiment.neutral](languagemodelfeedback/sentiment/neutral.md)
+### Sentiment values
+- [LanguageModelFeedback.Sentiment.neutral](./neutral.md)
   A neutral sentiment.
-- [LanguageModelFeedback.Sentiment.positive](languagemodelfeedback/sentiment/positive.md)
+- [LanguageModelFeedback.Sentiment.positive](./positive.md)
   A positive sentiment.
 
 

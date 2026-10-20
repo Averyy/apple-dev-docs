@@ -1,7 +1,8 @@
 # unsharpMask()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Increases an image’s contrast between two colors.
 
@@ -19,6 +20,10 @@ Increases an image’s contrast between two colors.
 class func unsharpMask() -> any CIFilter & CIUnsharpMask
 ```
 
+```objc
++ (CIFilter<CIUnsharpMask> *) unsharpMaskFilter;
+```
+
 #### Return Value
 
 The modified image.
@@ -29,9 +34,9 @@ This method applies the unsharp mask filter to an image. The effect increases th
 
 The unsharp mask filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
-- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](../../Foundation/nsnumber.md).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that results in the objects within the image becoming darker:
 
@@ -45,11 +50,12 @@ func unsharp (inputImage: CIImage) -> CIImage? {
 }
 ```
 
-![Two photographs of a downtown sidewalk with trees, a blue square highlighting the end of the sidewalk with a bike lane and street sign displayed. The photo on the left has no modifications to color. In the photo on the right a unsharp mask filter has been applied resulting in darker color on the tree leafs and street signs. ](/images/com.apple.coreimage/media-3595819@2x.png)
+![Two photographs of a downtown sidewalk with trees, a blue square highlighting the end of the sidewalk with a bike lane and street sign displayed. The photo on the left has no modifications to color. In the photo on the right a unsharp mask filter has been applied resulting in darker color on the tree leafs and street signs. ](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3595819@2x.png)
 
 ## See Also
 
-- [class func sharpenLuminance() -> any CIFilter & CISharpenLuminance](cifilter-swift.class/sharpenluminance.md)
+### Filters
+- [class func sharpenLuminance() -> any CIFilter & CISharpenLuminance](./sharpenluminance%28%29.md)
   Applies a sharpening effect to an image.
 
 

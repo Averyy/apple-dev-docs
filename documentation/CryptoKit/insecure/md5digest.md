@@ -1,7 +1,8 @@
 # Insecure.MD5Digest
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The output of a MD5 hash.
 
@@ -23,32 +24,33 @@ struct MD5Digest
 ## Topics
 
 ### Inspecting the digest length
-- [static var byteCount: Int](insecure/md5digest/bytecount.md)
+- [static var byteCount: Int](./md5digest/bytecount.md)
   The number of bytes in the digest.
 ### Describing a digest
-- [var description: String](insecure/md5digest/description.md)
+- [var description: String](./md5digest/description.md)
   A human-readable description of the digest.
 ### Hashing a digest
-- [func hash(into: inout Hasher)](insecure/md5digest/hash(into:).md)
+- [func hash(into: inout Hasher)](./md5digest/hash%28into%29.md)
   Hashes the essential components of the digest by feeding them into the given hash function.
 
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Digest](digest.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [ContiguousBytes](../../Foundation/contiguousbytes.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Digest](../digest.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [Insecure.MD5.Digest](insecure/md5/digest.md)
+### Specifying the output type
+- [Insecure.MD5.Digest](./md5/digest.md)
   The digest type for a MD5 hash function.
 
 

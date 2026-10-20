@@ -1,7 +1,8 @@
 # url(forOption:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a URL for a given option.
 
@@ -12,6 +13,10 @@ Retrieves a URL for a given option.
 
 ```swift
 func url(forOption option: String) -> URL?
+```
+
+```objc
+- (NSURL *) urlForOption:(NSString *) option;
 ```
 
 #### Discussion

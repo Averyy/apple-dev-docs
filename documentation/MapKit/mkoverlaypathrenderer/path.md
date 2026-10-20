@@ -1,7 +1,8 @@
 # path
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path representing the overlay’s shape.
 
@@ -19,15 +20,20 @@ The path representing the overlay’s shape.
 var path: CGPath! { get set }
 ```
 
+```objc
+@property (null_resettable) CGPathRef path;
+```
+
 #### Discussion
 
-Getting the value of this property causes the method to create the path (using the [`createPath()`](mkoverlaypathrenderer/createpath().md) method) if it doesn’t already exist. You can assign a path object to this property explicitly. When assigning a new path object to this property, the overlay renderer stores a strong reference to the path you provide.
+Getting the value of this property causes the method to create the path (using the [`createPath()`](./createpath%28%29.md) method) if it doesn’t already exist. You can assign a path object to this property explicitly. When assigning a new path object to this property, the overlay renderer stores a strong reference to the path you provide.
 
 ## See Also
 
-- [func createPath()](mkoverlaypathrenderer/createpath.md)
+### Creating and managing the path
+- [func createPath()](./createpath%28%29.md)
   Creates the path for the overlay.
-- [func invalidatePath()](mkoverlaypathrenderer/invalidatepath.md)
+- [func invalidatePath()](./invalidatepath%28%29.md)
   Updates the path associated with the overlay renderer.
 
 

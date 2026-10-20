@@ -1,7 +1,8 @@
 # PresentationIntent
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines presentation intent for blocks of characters like paragraphs, lists, block quotes, and tables.
 
@@ -23,48 +24,49 @@ struct PresentationIntent
 ## Topics
 
 ### Structures
-- [PresentationIntent.IntentType](presentationintent/intenttype.md)
-- [PresentationIntent.TableColumn](presentationintent/tablecolumn.md)
+- [PresentationIntent.IntentType](./presentationintent/intenttype.md)
+- [PresentationIntent.TableColumn](./presentationintent/tablecolumn.md)
 ### Initializers
-- [init(PresentationIntent.Kind, identity: Int, parent: PresentationIntent?)](presentationintent/init(_:identity:parent:).md)
-- [init(types: [PresentationIntent.IntentType])](presentationintent/init(types:).md)
+- [init(PresentationIntent.Kind, identity: Int, parent: PresentationIntent?)](./presentationintent/init%28_,identity,parent%29.md)
+- [init(types: [PresentationIntent.IntentType])](./presentationintent/init%28types%29.md)
 ### Instance Properties
-- [var components: [PresentationIntent.IntentType]](presentationintent/components.md)
-- [var count: Int](presentationintent/count.md)
-- [var indentationLevel: Int](presentationintent/indentationlevel.md)
-- [var isValid: Bool](presentationintent/isvalid.md)
+- [var components: [PresentationIntent.IntentType]](./presentationintent/components.md)
+- [var count: Int](./presentationintent/count.md)
+- [var indentationLevel: Int](./presentationintent/indentationlevel.md)
+- [var isValid: Bool](./presentationintent/isvalid.md)
 ### Enumerations
-- [PresentationIntent.Kind](presentationintent/kind.md)
+- [PresentationIntent.Kind](./presentationintent/kind.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AsyncCharacterSequence](asynccharactersequence.md)
+### Structures
+- [struct AsyncCharacterSequence](./asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [struct AsyncLineSequence](asynclinesequence.md)
+- [struct AsyncLineSequence](./asynclinesequence.md)
   An asynchronous sequence of lines of text.
-- [struct AsyncUnicodeScalarSequence](asyncunicodescalarsequence.md)
+- [struct AsyncUnicodeScalarSequence](./asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
-- [struct Expression](expression.md)
-- [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+- [struct Expression](./expression.md)
+- [struct NSAttributedStringFormattingContextKey](./nsattributedstringformattingcontextkey.md)
   A type that represents a key in the formatting context dictionary.
-- [struct NSKeyValueChangeKey](nskeyvaluechangekey.md)
+- [struct NSKeyValueChangeKey](./nskeyvaluechangekey.md)
   The keys that can appear in the change dictionary.
-- [struct NSKeyValueObservedChange](nskeyvalueobservedchange.md)
-- [struct NSKeyValueOperator](nskeyvalueoperator.md)
-  These constants define the available array operators. See [`Using Collection Operators`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
+- [struct NSKeyValueObservedChange](./nskeyvalueobservedchange.md)
+- [struct NSKeyValueOperator](./nskeyvalueoperator.md)
+  These constants define the available array operators. See [Using Collection Operators](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
 
 
 ---

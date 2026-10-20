@@ -1,7 +1,8 @@
 # requestGrammarChecking(of:range:waitForAllResults:completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+func requestGrammarChecking(of stringToCheck: String, range: NSRange, waitForAllResults: Bool, completionHandler: (([NSTextCheckingResult]) -> Void)? = nil)
+```
+
+```swift
 func requestGrammarChecking(of stringToCheck: String, range: NSRange, waitForAllResults: Bool) async -> [NSTextCheckingResult]
+```
+
+```objc
+- (void) requestGrammarCheckingOfString:(NSString *) stringToCheck range:(NSRange) range waitForAllResults:(BOOL) waitForAllResults completionHandler:(void (^)(NSArray<NSTextCheckingResult *> *results)) completionHandler;
 ```
 
 

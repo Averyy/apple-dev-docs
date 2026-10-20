@@ -1,7 +1,8 @@
 # getAllTasks(completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously calls a completion callback with all tasks in a session
 
@@ -17,7 +18,15 @@ Asynchronously calls a completion callback with all tasks in a session
 ## Declaration
 
 ```swift
+func getAllTasks(completionHandler: @escaping @Sendable ([URLSessionTask]) -> Void)
+```
+
+```swift
 var allTasks: [URLSessionTask] { get async }
+```
+
+```objc
+- (void) getAllTasksWithCompletionHandler:(void (^)(NSArray<__kindof NSURLSessionTask *> *tasks)) completionHandler;
 ```
 
 ## Parameters
@@ -26,17 +35,18 @@ var allTasks: [URLSessionTask] { get async }
 
 ## See Also
 
-- [func finishTasksAndInvalidate()](urlsession/finishtasksandinvalidate.md)
+### Managing the session
+- [func finishTasksAndInvalidate()](./finishtasksandinvalidate%28%29.md)
   Invalidates the session, allowing any outstanding tasks to finish.
-- [func flush(completionHandler: () -> Void)](urlsession/flush(completionhandler:).md)
+- [func flush(completionHandler: () -> Void)](./flush%28completionhandler%29.md)
   Flushes cookies and credentials to disk, clears transient caches, and ensures that future requests occur on a new TCP connection.
-- [func getTasksWithCompletionHandler(([URLSessionDataTask], [URLSessionUploadTask], [URLSessionDownloadTask]) -> Void)](urlsession/gettaskswithcompletionhandler(_:).md)
+- [func getTasksWithCompletionHandler(([URLSessionDataTask], [URLSessionUploadTask], [URLSessionDownloadTask]) -> Void)](./gettaskswithcompletionhandler%28_%29.md)
   Asynchronously calls a completion callback with all data, upload, and download tasks in a session.
-- [func invalidateAndCancel()](urlsession/invalidateandcancel.md)
+- [func invalidateAndCancel()](./invalidateandcancel%28%29.md)
   Cancels all outstanding tasks and then invalidates the session.
-- [func reset(completionHandler: () -> Void)](urlsession/reset(completionhandler:).md)
+- [func reset(completionHandler: () -> Void)](./reset%28completionhandler%29.md)
   Empties all cookies, caches and credential stores, removes disk files, flushes in-progress downloads to disk, and ensures that future requests occur on a new socket.
-- [var sessionDescription: String?](urlsession/sessiondescription.md)
+- [var sessionDescription: String?](./sessiondescription.md)
   An app-defined descriptive label for the session.
 
 

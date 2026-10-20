@@ -1,7 +1,8 @@
 # playgroundDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the object annotation within a playground.
 
@@ -16,9 +17,10 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var description: String](mlobjectdetector/objectannotation/description.md)
+### Describing an annotation
+- [var description: String](./description.md)
   A text representation of the object annotation.
-- [var debugDescription: String](mlobjectdetector/objectannotation/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the object annotation that’s suitable for output during debugging.
 
 

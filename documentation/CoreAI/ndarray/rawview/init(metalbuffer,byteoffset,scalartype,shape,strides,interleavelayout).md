@@ -1,7 +1,8 @@
 # init(metalBuffer:byteOffset:scalarType:shape:strides:interleaveLayout:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a raw view from an existing metal buffer, interpreted as the specified scalar type.
 
@@ -32,13 +33,14 @@ This initializer is unsafe, you are responsible for ensuring that no other code 
 - scalarType: The type of scalars in the provided span.
 - shape: The shape of the resulting view.
 - strides: The strides of the resulting view. If left empty, they will be computed as contiguous row-major.
-- interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+- interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md).
 
 ## See Also
 
-- [init(bytes: RawSpan, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](ndarray/rawview/init(bytes:byteoffset:scalartype:shape:strides:interleavelayout:).md)
+### Creating a raw view
+- [init(bytes: RawSpan, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](./init%28bytes,byteoffset,scalartype,shape,strides,interleavelayout%29.md)
   Initialize a raw view from existing raw memory, interpreted as the specified scalar type.
-- [init(ioSurface: borrowing IOSurface, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](ndarray/rawview/init(iosurface:byteoffset:scalartype:shape:strides:interleavelayout:).md)
+- [init(ioSurface: borrowing IOSurface, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](./init%28iosurface,byteoffset,scalartype,shape,strides,interleavelayout%29.md)
   Initialize a raw view from an existing IOSurface, interpreted as the specified scalar type.
 
 

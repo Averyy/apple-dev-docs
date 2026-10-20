@@ -1,7 +1,8 @@
 # AccessoryTransportSession.Error.unknown
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure with an unknown cause.
 
@@ -16,9 +17,10 @@ case unknown
 
 ## See Also
 
-- [AccessoryTransportSession.Error.invalidated](accessorytransportsession/error/invalidated.md)
+### Identifying session errors
+- [AccessoryTransportSession.Error.invalidated](./invalidated.md)
   An error that indicates the session is invalidated.
-- [AccessoryTransportSession.Error.unsupported](accessorytransportsession/error/unsupported.md)
+- [AccessoryTransportSession.Error.unsupported](./unsupported.md)
   An error that indicates the framework doesn’t support an client-provided value or operation.
 
 

@@ -1,7 +1,8 @@
 # securityDomainCounter
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authentication counter of the security domain.
 
@@ -19,7 +20,9 @@ var securityDomainCounter: Int { get async throws }
 
 Accessing this property fetches the latest counter from the remote hardware.
 
-- The most common errors are: - [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system service is temporarily unavailable.
+- The most common errors are:
+
+  - [`CredentialSession.ErrorCode.resourceUnavailable`](../../errorcode/resourceunavailable.md): The system service is temporarily unavailable.
 
 
 ---

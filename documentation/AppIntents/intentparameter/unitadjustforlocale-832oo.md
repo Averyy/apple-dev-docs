@@ -1,7 +1,8 @@
 # unitAdjustForLocale
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unitAdjustForLocale: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitPressure>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Pressure?](intentparameter/unit-991uj.md)
-- [IntentParameter.Pressure](intentparameter/pressure.md)
-- [var defaultUnit: IntentParameter<Value>.Pressure?](intentparameter/defaultunit-4p4yh.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-83fjo.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Pressure?](./unit-991uj.md)
+- [IntentParameter.Pressure](./pressure.md)
+- [var defaultUnit: IntentParameter<Value>.Pressure?](./defaultunit-4p4yh.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-83fjo.md)
 
 
 ---

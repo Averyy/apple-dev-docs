@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?<S>(S)](float80/init(_:)-74kpu.md)
+- [init?<S>(S)](./init%28_%29-74kpu.md)
   Creates a new instance from the given string.
 
 

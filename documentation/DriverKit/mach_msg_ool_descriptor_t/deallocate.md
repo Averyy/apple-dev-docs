@@ -1,27 +1,29 @@
 # deallocate
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 int deallocate;
 ```
 
 ## See Also
 
-- [address](mach_msg_ool_descriptor_t/address.md)
-- [copy](mach_msg_ool_descriptor_t/copy.md)
-- [pad1](mach_msg_ool_descriptor_t/pad1.md)
-- [size](mach_msg_ool_descriptor_t/size.md)
-- [type](mach_msg_ool_descriptor_t/type.md)
+### Getting the Properties
+- [address](./address.md)
+- [copy](./copy.md)
+- [pad1](./pad1.md)
+- [size](./size.md)
+- [type](./type.md)
 
 
 ---

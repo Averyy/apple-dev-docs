@@ -1,7 +1,8 @@
 # altitude
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The altitude of this point in radians.
 
@@ -18,11 +19,16 @@ The altitude of this point in radians.
 var altitude: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat altitude;
+```
+
 ## See Also
 
-- [var azimuth: CGFloat](pkstrokepointreference/azimuth.md)
+### Getting the point’s touch data
+- [var azimuth: CGFloat](./azimuth.md)
   The azimuth of this point in radians.
-- [var force: CGFloat](pkstrokepointreference/force.md)
+- [var force: CGFloat](./force.md)
   The amount of force applied by the touch.
 
 

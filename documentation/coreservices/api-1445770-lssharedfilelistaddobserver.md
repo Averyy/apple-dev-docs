@@ -1,7 +1,8 @@
 # LSSharedFileListAddObserver(_:_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+ - Deprecated in 10.11
@@ -10,6 +11,10 @@
 
 ```swift
 func LSSharedFileListAddObserver(_ inList: LSSharedFileList?, _ inRunloop: CFRunLoop, _ inRunloopMode: CFString, _ callback: LSSharedFileListChangedProcPtr, _ context: UnsafeMutableRawPointer?)
+```
+
+```c
+void LSSharedFileListAddObserver(LSSharedFileListRef inList, CFRunLoopRef inRunloop, CFStringRef inRunloopMode, LSSharedFileListChangedProcPtr callback, void *context);
 ```
 
 

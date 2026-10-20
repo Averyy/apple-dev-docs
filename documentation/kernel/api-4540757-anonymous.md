@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 enum : uint32_t {
     ...
 };
@@ -17,10 +18,10 @@ enum : uint32_t {
 ## Topics
 
 ### Constants
-- [SPTM_N_PUBLIC_VIOLATIONS](4540757-anonymous/sptm_n_public_violations.md)
-- [VIOLATION_INVALID_DT_RANGE](4540757-anonymous/violation_invalid_dt_range.md)
-- [VIOLATION_INVALID_IO_PADDR](4540757-anonymous/violation_invalid_io_paddr.md)
-- [VIOLATION_INVALID_RESTRICTED_IO_PADDR](4540757-anonymous/violation_invalid_restricted_io_paddr.md)
+- [SPTM_N_PUBLIC_VIOLATIONS](./api-4540757-anonymous/sptm_n_public_violations.md)
+- [VIOLATION_INVALID_DT_RANGE](./api-4540757-anonymous/violation_invalid_dt_range.md)
+- [VIOLATION_INVALID_IO_PADDR](./api-4540757-anonymous/violation_invalid_io_paddr.md)
+- [VIOLATION_INVALID_RESTRICTED_IO_PADDR](./api-4540757-anonymous/violation_invalid_restricted_io_paddr.md)
 
 
 ---

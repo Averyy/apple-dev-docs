@@ -1,7 +1,8 @@
 # capacity
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements that a queue can hold.
 
@@ -22,11 +23,12 @@ var capacity: Int { get }
 
 ## See Also
 
-- [var head: UnsafeRawPointer?](cmsimplequeue/head.md)
+### Inspecting Queues
+- [var head: UnsafeRawPointer?](./head.md)
   The head element in the queue.
-- [var count: Int](cmsimplequeue/count.md)
+- [var count: Int](./count.md)
   The number of elements currently in the queue.
-- [var fullness: Float](cmsimplequeue/fullness.md)
+- [var fullness: Float](./fullness.md)
   The fullness of a queue as a percentage of its capacity.
 
 

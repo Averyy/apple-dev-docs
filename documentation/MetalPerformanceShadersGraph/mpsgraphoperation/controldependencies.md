@@ -1,7 +1,8 @@
 # controlDependencies
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of operations guaranteed to execute before this operation.
 
@@ -17,6 +18,10 @@ The set of operations guaranteed to execute before this operation.
 
 ```swift
 var controlDependencies: [MPSGraphOperation] { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<MPSGraphOperation *> * controlDependencies;
 ```
 
 

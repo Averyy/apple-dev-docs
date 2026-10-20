@@ -1,7 +1,8 @@
 # monospacedDigit()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
 
@@ -31,7 +32,7 @@ Using fixed-width digits allows you to easily align numbers of the same size in 
 
 This modifier only affects numeric characters, and leaves all other characters unchanged.
 
-The following example shows the effect of `monospacedDigit()` on multiple child views. The example consists of two [`VStack`](vstack.md) views inside an [`HStack`](hstack.md). Each `VStack` contains two [`Button`](button.md) views, with the second `VStack` applying the `monospacedDigit()` modifier to its contents. As a result, the digits in the buttons in the trailing `VStack` are the same width, which in turn gives the buttons equal widths.
+The following example shows the effect of `monospacedDigit()` on multiple child views. The example consists of two [`VStack`](../vstack.md) views inside an [`HStack`](../hstack.md). Each `VStack` contains two [`Button`](../button.md) views, with the second `VStack` applying the `monospacedDigit()` modifier to its contents. As a result, the digits in the buttons in the trailing `VStack` are the same width, which in turn gives the buttons equal widths.
 
 ```swift
 var body: some View {
@@ -51,31 +52,32 @@ var body: some View {
 }
 ```
 
-![A macOS window showing four buttons, arranged in two columns. Each](/images/com.apple.SwiftUI/View-monospacedDigit-1@2x.png)
+![A macOS window showing four buttons, arranged in two columns. Each](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-monospacedDigit-1@2x.png)
 
 If a child view’s base font doesn’t support fixed-width digits, the font remains unchanged.
 
 ## See Also
 
-- [func bold(Bool) -> some View](view/bold(_:).md)
+### Controlling text style
+- [func bold(Bool) -> some View](./bold%28_%29.md)
   Applies a bold font weight to the text in this view.
-- [func italic(Bool) -> some View](view/italic(_:).md)
+- [func italic(Bool) -> some View](./italic%28_%29.md)
   Applies italics to the text in this view.
-- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/underline(_:pattern:color:).md)
+- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](./underline%28_,pattern,color%29.md)
   Applies an underline to the text in this view.
-- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/strikethrough(_:pattern:color:).md)
+- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](./strikethrough%28_,pattern,color%29.md)
   Applies a strikethrough to the text in this view.
-- [func textCase(Text.Case?) -> some View](view/textcase(_:).md)
+- [func textCase(Text.Case?) -> some View](./textcase%28_%29.md)
   Sets a transform for the case of the text contained in this view when displayed.
-- [var textCase: Text.Case?](environmentvalues/textcase.md)
+- [var textCase: Text.Case?](../environmentvalues/textcase.md)
   A stylistic override to transform the case of `Text` when displayed, using the environment’s locale.
-- [func monospaced(Bool) -> some View](view/monospaced(_:).md)
+- [func monospaced(Bool) -> some View](./monospaced%28_%29.md)
   Modifies the fonts of all child views to use the fixed-width variant of the current font, if possible.
-- [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+- [protocol AttributedTextFormattingDefinition](../attributedtextformattingdefinition.md)
   A protocol for defining how text can be styled in a view.
-- [protocol AttributedTextValueConstraint](attributedtextvalueconstraint.md)
+- [protocol AttributedTextValueConstraint](../attributedtextvalueconstraint.md)
   A protocol for defining a constraint on the value of a certain attribute.
-- [enum AttributedTextFormatting](attributedtextformatting.md)
+- [enum AttributedTextFormatting](../attributedtextformatting.md)
   A namespace for types related to attributed text formatting definitions.
 
 

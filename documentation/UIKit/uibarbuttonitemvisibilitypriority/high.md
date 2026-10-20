@@ -1,7 +1,8 @@
 # high
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,10 +15,15 @@
 static let high: UIBarButtonItemVisibilityPriority
 ```
 
+```c
+extern const UIBarButtonItemVisibilityPriority UIBarButtonItemVisibilityPriorityHigh;
+```
+
 ## See Also
 
-- [static let low: UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority/low.md)
-- [static let standard: UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority/standard.md)
+### Getting visibility priorities
+- [static let low: UIBarButtonItemVisibilityPriority](./low.md)
+- [static let standard: UIBarButtonItemVisibilityPriority](./standard.md)
 
 
 ---

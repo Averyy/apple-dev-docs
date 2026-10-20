@@ -1,7 +1,8 @@
 # fetchAllHistory(completionHandler:)
 
 **Framework**: Screen Time  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches all web history associated with the bundle identifier and profile identifier you specified during initialization.
 
@@ -14,7 +15,15 @@ Fetches all web history associated with the bundle identifier and profile identi
 ## Declaration
 
 ```swift
+func fetchAllHistory(completionHandler: @escaping @Sendable (Set<URL>?, (any Error)?) -> Void)
+```
+
+```swift
 func fetchAllHistory() async throws -> Set<URL>
+```
+
+```objc
+- (void) fetchAllHistoryWithCompletionHandler:(void (^)(NSSet<NSURL *> *urls, NSError *error)) completionHandler;
 ```
 
 

@@ -1,7 +1,8 @@
 # bRequest
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The request code.
 
@@ -10,23 +11,24 @@ The request code.
 
 ## Declaration
 
-```swift
+```c
 UInt8 bRequest;
 ```
 
 ## See Also
 
-- [bmRequestType](iousbdevrequest/1546317-bmrequesttype.md)
+### Getting the Properties
+- [bmRequestType](./api-1546317-bmrequesttype.md)
   The type of the request.
-- [wValue](iousbdevrequest/1546433-wvalue.md)
+- [wValue](./api-1546433-wvalue.md)
   The 16-bit parameter for the request.
-- [wIndex](iousbdevrequest/1546579-windex.md)
+- [wIndex](./api-1546579-windex.md)
   The 16-bit parameter for the request.
-- [wLength](iousbdevrequest/1545928-wlength.md)
+- [wLength](./api-1545928-wlength.md)
   The length of the data part of the request.
-- [pData](iousbdevrequest/1546431-pdata.md)
+- [pData](./api-1546431-pdata.md)
   The pointer to the data for the request.
-- [wLenDone](iousbdevrequest/1546308-wlendone.md)
+- [wLenDone](./api-1546308-wlendone.md)
   The number of data bytes that the system actually transferred.
 
 

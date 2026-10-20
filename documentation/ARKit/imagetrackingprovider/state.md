@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of data coming from a provider.
 
@@ -16,9 +17,10 @@ final var state: DataProviderState { get }
 
 ## See Also
 
-- [var description: String](imagetrackingprovider/description.md)
+### Inspecting an image-tracking provider
+- [var description: String](./description.md)
   A textual representation of this image tracking provider.
-- [var allAnchors: [ImageAnchor]](imagetrackingprovider/allanchors.md)
+- [var allAnchors: [ImageAnchor]](./allanchors.md)
   An array of all the image anchors the provider is tracking.
 
 

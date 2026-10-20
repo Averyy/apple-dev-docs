@@ -2,6 +2,7 @@
 
 **Framework**: hvf  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The CSC row indices for the extremum axis values

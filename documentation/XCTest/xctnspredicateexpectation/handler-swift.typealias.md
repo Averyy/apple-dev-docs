@@ -1,7 +1,8 @@
 # XCTNSPredicateExpectation.Handler
 
 **Framework**: XCTest  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A handler XCTest calls when evaluating the predicate returns `true`.
 
@@ -11,13 +12,18 @@ A handler XCTest calls when evaluating the predicate returns `true`.
 typealias Handler = @Sendable () -> Bool
 ```
 
+```c
+typedef _Bool (^)(void) XCPredicateExpectationHandler;
+```
+
 #### Return Value
 
-Your custom handler should return [`true`](https://developer.apple.com/documentation/swift/true) if the expectation is considered fulfilled, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Your custom handler should return [`true`](../../Swift/true.md) if the expectation is considered fulfilled, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var handler: XCTNSPredicateExpectation.Handler?](xctnspredicateexpectation/handler-swift.property.md)
+### Handling Predicate Resolution
+- [var handler: XCTNSPredicateExpectation.Handler?](./handler-swift.property.md)
   An optional handler that performs custom evaluation when `predicate` evaluates as `true`.
 
 

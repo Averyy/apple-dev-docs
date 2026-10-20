@@ -1,7 +1,8 @@
 # NSFileProviderErrorNonExistentItemIdentifierKey
 
 **Framework**: File Provider  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for accessing the specified item’s identifier when the item doesn’t exist.
 
@@ -18,21 +19,26 @@ The key for accessing the specified item’s identifier when the item doesn’t 
 let NSFileProviderErrorNonExistentItemIdentifierKey: String
 ```
 
+```c
+extern NSErrorUserInfoKey const NSFileProviderErrorNonExistentItemIdentifierKey;
+```
+
 #### Discussion
 
-Use this key to access the item’s identifier from a [`noSuchItem`](nsfileprovidererror/nosuchitem.md) error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
+Use this key to access the item’s identifier from a [`noSuchItem`](./nsfileprovidererror/nosuchitem.md) error’s [`userInfo`](../Foundation/nserror/userinfo.md) dictionary.
 
 ## See Also
 
-- [struct NSFileProviderError](nsfileprovidererror.md)
+### Errors
+- [struct NSFileProviderError](./nsfileprovidererror.md)
   A structure that contains information about File Provider extension errors.
-- [NSFileProviderError.Code](nsfileprovidererror/code.md)
+- [NSFileProviderError.Code](./nsfileprovidererror/code.md)
   The error codes for the File Provider extension.
-- [let NSFileProviderErrorDomain: String](nsfileprovidererrordomain.md)
+- [let NSFileProviderErrorDomain: String](./nsfileprovidererrordomain.md)
   The error domain for the File Provider extension.
-- [let NSFileProviderErrorItemKey: String](nsfileprovidererroritemkey.md)
+- [let NSFileProviderErrorItemKey: String](./nsfileprovidererroritemkey.md)
   The key for accessing information about sync-related errors.
-- [let NSFileProviderErrorCollidingItemKey: String](nsfileprovidererrorcollidingitemkey.md)
+- [let NSFileProviderErrorCollidingItemKey: String](./nsfileprovidererrorcollidingitemkey.md)
   The key for accessing the existing item from a filename collision error’s user info dictionary.
 
 

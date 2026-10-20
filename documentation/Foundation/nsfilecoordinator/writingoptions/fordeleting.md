@@ -1,7 +1,8 @@
 # forDeleting
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -18,16 +19,21 @@
 static var forDeleting: NSFileCoordinator.WritingOptions { get }
 ```
 
+```c
+NSFileCoordinatorWritingForDeleting
+```
+
 #### Discussion
 
-When this constant is specified, the file coordinator calls the [`accommodatePresentedItemDeletion(completionHandler:)`](nsfilepresenter/accommodatepresenteditemdeletion(completionhandler:).md) or [`accommodatePresentedSubitemDeletion(at:completionHandler:)`](nsfilepresenter/accommodatepresentedsubitemdeletion(at:completionhandler:).md) method of relevant file presenters to give them a chance to make adjustments before the item is deleted.
+When this constant is specified, the file coordinator calls the [`accommodatePresentedItemDeletion(completionHandler:)`](../../nsfilepresenter/accommodatepresenteditemdeletion%28completionhandler%29.md) or [`accommodatePresentedSubitemDeletion(at:completionHandler:)`](../../nsfilepresenter/accommodatepresentedsubitemdeletion%28at,completionhandler%29.md) method of relevant file presenters to give them a chance to make adjustments before the item is deleted.
 
 ## See Also
 
-- [static var forMoving: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/formoving.md)
-- [static var forMerging: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/formerging.md)
-- [static var forReplacing: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/forreplacing.md)
-- [static var contentIndependentMetadataOnly: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/contentindependentmetadataonly.md)
+### Constants
+- [static var forMoving: NSFileCoordinator.WritingOptions](./formoving.md)
+- [static var forMerging: NSFileCoordinator.WritingOptions](./formerging.md)
+- [static var forReplacing: NSFileCoordinator.WritingOptions](./forreplacing.md)
+- [static var contentIndependentMetadataOnly: NSFileCoordinator.WritingOptions](./contentindependentmetadataonly.md)
   Select this option when writing to change the file’s metadata only and not its contents.
 
 

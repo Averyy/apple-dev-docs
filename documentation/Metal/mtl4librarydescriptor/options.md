@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides compile-time options for the Metal library.
 
@@ -18,6 +19,10 @@ Provides compile-time options for the Metal library.
 ```swift
 @NSCopying
 var options: MTLCompileOptions? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) MTLCompileOptions * options;
 ```
 
 

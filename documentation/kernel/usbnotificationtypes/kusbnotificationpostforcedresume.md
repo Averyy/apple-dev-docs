@@ -1,7 +1,8 @@
 # kUSBNotificationPostForcedResume
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system sends a notification after a resume, which occurs after a forced suspend.
 
@@ -10,7 +11,7 @@ The system sends a notification after a resume, which occurs after a forced susp
 
 ## Declaration
 
-```swift
+```c
 kUSBNotificationPostForcedResume = (1 << kUSBNotificationPostForcedResumeBit)
 ```
 

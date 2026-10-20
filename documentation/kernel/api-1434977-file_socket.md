@@ -1,23 +1,25 @@
 # file_socket
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int file_socket(int, socket_t *);
 ```
 
 ## See Also
 
-- [file_drop](1434981-file_drop.md)
-- [file_flags](1434975-file_flags.md)
-- [file_vnode](1434979-file_vnode.md)
-- [file_vnode_withvid](1434973-file_vnode_withvid.md)
+### file
+- [file_drop](./api-1434981-file_drop.md)
+- [file_flags](./api-1434975-file_flags.md)
+- [file_vnode](./api-1434979-file_vnode.md)
+- [file_vnode_withvid](./api-1434973-file_vnode_withvid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # onStateUpdate(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set a closure to be called when the browser’s state changes.
 

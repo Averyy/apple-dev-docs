@@ -1,7 +1,8 @@
 # SubscriptionGroupLocalizationV2CreateRequest.Data.Relationships.Version
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The subscription group version to associate with the new subscription group localization.
 
@@ -10,14 +11,14 @@ The subscription group version to associate with the new subscription group loca
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupLocalizationV2CreateRequest.Data.Relationships.Version
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroupLocalizationV2CreateRequest.Data.Relationships.Version.Data](subscriptiongrouplocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionGroupLocalizationV2CreateRequest.Data.Relationships.Version.Data](./version-data.dictionary/data-data.dictionary.md)
   The request body you use to create a subscription group localization.
 
 ## Properties

@@ -1,7 +1,8 @@
 # interGroupSpacing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of space between the groups in the section.
 
@@ -18,17 +19,22 @@ The amount of space between the groups in the section.
 var interGroupSpacing: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat interGroupSpacing;
+```
+
 ## See Also
 
-- [var contentInsets: NSDirectionalEdgeInsets](nscollectionlayoutsection/contentinsets.md)
+### Configuring section spacing
+- [var contentInsets: NSDirectionalEdgeInsets](./contentinsets.md)
   The amount of space between the content of the section and its boundaries.
-- [var contentInsetsReference: UIContentInsetsReference](nscollectionlayoutsection/contentinsetsreference.md)
+- [var contentInsetsReference: UIContentInsetsReference](./contentinsetsreference.md)
   The boundary to reference when defining content insets.
-- [var supplementaryContentInsetsReference: UIContentInsetsReference](nscollectionlayoutsection/supplementarycontentinsetsreference.md)
+- [var supplementaryContentInsetsReference: UIContentInsetsReference](./supplementarycontentinsetsreference.md)
   The reference boundary for content insets on boundary supplementary items.
-- [enum UIContentInsetsReference](uicontentinsetsreference.md)
+- [enum UIContentInsetsReference](../uicontentinsetsreference.md)
   Constants that describe the reference point of the content insets.
-- [var supplementariesFollowContentInsets: Bool](nscollectionlayoutsection/supplementariesfollowcontentinsets.md)
+- [var supplementariesFollowContentInsets: Bool](./supplementariesfollowcontentinsets.md)
   A Boolean value that indicates whether the section’s supplementary items follow the specified content insets for the section.
 
 

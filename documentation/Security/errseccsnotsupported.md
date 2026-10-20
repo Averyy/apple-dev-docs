@@ -1,7 +1,8 @@
 # errSecCSNotSupported
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Operation not supported for this type of code.
 
@@ -13,6 +14,10 @@ Operation not supported for this type of code.
 
 ```swift
 var errSecCSNotSupported: OSStatus { get }
+```
+
+```c
+errSecCSNotSupported
 ```
 
 

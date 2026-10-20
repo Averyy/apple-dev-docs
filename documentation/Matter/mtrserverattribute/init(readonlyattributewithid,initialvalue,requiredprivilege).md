@@ -1,7 +1,8 @@
 # init(readonlyAttributeWithID:initialValue:requiredPrivilege:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(readonlyAttributeWithID attributeID: NSNumber, initialValue value: [String : Any], requiredPrivilege: MTRAccessControlEntryPrivilege)
+```
+
+```objc
+- (instancetype) initReadonlyAttributeWithID:(NSNumber *) attributeID initialValue:(NSDictionary<NSString *,id> *) value requiredPrivilege:(MTRAccessControlEntryPrivilege) requiredPrivilege;
 ```
 
 

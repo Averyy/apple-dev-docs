@@ -1,7 +1,8 @@
 # GetPreferredChannelsForStereo
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the channel indices for the prefered stereo pair.
 
@@ -10,7 +11,7 @@ Returns the channel indices for the prefered stereo pair.
 
 ## Declaration
 
-```swift
+```c
 void GetPreferredChannelsForStereo(uint32_t *out_left_channel, uint32_t *out_right_channel);
 ```
 
@@ -21,13 +22,14 @@ void GetPreferredChannelsForStereo(uint32_t *out_left_channel, uint32_t *out_rig
 
 ## See Also
 
-- [SetPreferredChannelsForStereo](iouseraudiodevice/setpreferredchannelsforstereo.md)
+### Working with Channel Layouts
+- [SetPreferredChannelsForStereo](./setpreferredchannelsforstereo.md)
   Sets the channel indices for the prefered stereo pair.
-- [SetPreferredInputChannelLayout](iouseraudiodevice/setpreferredinputchannellayout.md)
+- [SetPreferredInputChannelLayout](./setpreferredinputchannellayout.md)
   Sets the input channel layout, using an array of audio channel label values.
-- [SetPreferredOutputChannelLayout](iouseraudiodevice/setpreferredoutputchannellayout.md)
+- [SetPreferredOutputChannelLayout](./setpreferredoutputchannellayout.md)
   Sets the output channel layout, using an array of audio channel label values.
-- [IOUserAudioChannelLabel](audiodriverkit/iouseraudiochannellabel.md)
+- [IOUserAudioChannelLabel](../audiodriverkit-page/iouseraudiochannellabel.md)
   Constants to set the preferred channel layout on an audio device.
 
 

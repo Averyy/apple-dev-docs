@@ -1,7 +1,8 @@
 # includeSample
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the query should return the series sample.
 
@@ -19,17 +20,22 @@ A Boolean value that determines whether the query should return the series sampl
 var includeSample: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL includeSample;
+```
+
 #### Discussion
 
-By default, a quantity series sample only returns the individual quantity objects that make up the series—not the [`HKQuantitySample`](hkquantitysample.md) object that represents the entire series. Set this parameter to [`true`](https://developer.apple.com/documentation/foundation/nsexpression/true) to have the query also return the quantity sample object for the series.
+By default, a quantity series sample only returns the individual quantity objects that make up the series—not the [`HKQuantitySample`](../hkquantitysample.md) object that represents the entire series. Set this parameter to [`true`](../../Foundation/nsexpression/true.md) to have the query also return the quantity sample object for the series.
 
 > **Note**:  This may introduce a performance cost for the query.
 
 ## See Also
 
-- [init(quantityType: HKQuantityType, predicate: NSPredicate?, quantityHandler: (HKQuantitySeriesSampleQuery, HKQuantity?, DateInterval?, HKQuantitySample?, Bool, (any Error)?) -> Void)](hkquantityseriessamplequery/init(quantitytype:predicate:quantityhandler:).md)
+### Creating a Series Query
+- [init(quantityType: HKQuantityType, predicate: NSPredicate?, quantityHandler: (HKQuantitySeriesSampleQuery, HKQuantity?, DateInterval?, HKQuantitySample?, Bool, (any Error)?) -> Void)](./init%28quantitytype,predicate,quantityhandler%29.md)
   Creates a new query for a series of the specified quantity type.
-- [var orderByQuantitySampleStartDate: Bool](hkquantityseriessamplequery/orderbyquantitysamplestartdate.md)
+- [var orderByQuantitySampleStartDate: Bool](./orderbyquantitysamplestartdate.md)
   A Boolean value that determines whether the query groups the results based on the quantity sample’s start date.
 
 

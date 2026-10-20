@@ -1,7 +1,8 @@
 # SecMessageBlock
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block that delivers messages during asynchronous operations.
 
@@ -13,6 +14,10 @@ A block that delivers messages during asynchronous operations.
 
 ```swift
 typealias SecMessageBlock = (CFTypeRef?, CFError?, Bool) -> Void
+```
+
+```c
+typedef void (^)(const void *, struct __CFError *, unsigned char) SecMessageBlock;
 ```
 
 ## Parameters

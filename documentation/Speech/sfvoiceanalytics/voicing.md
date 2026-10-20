@@ -1,7 +1,8 @@
 # voicing
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The likelihood of a voice in each frame of a transcription segment.
 
@@ -19,19 +20,24 @@ The likelihood of a voice in each frame of a transcription segment.
 var voicing: SFAcousticFeature { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) SFAcousticFeature * voicing;
+```
+
 #### Discussion
 
 The `voicing` value is expressed as a probability in the range `[0.0, 1.0]`.
 
 ## See Also
 
-- [class SFAcousticFeature](sfacousticfeature.md)
+### Analyzing voice
+- [class SFAcousticFeature](../sfacousticfeature.md)
   The value of a voice analysis metric.
-- [var pitch: SFAcousticFeature](sfvoiceanalytics/pitch.md)
+- [var pitch: SFAcousticFeature](./pitch.md)
   The highness or lowness of the tone (fundamental frequency) in each frame of a transcription segment, expressed as a logarithm.
-- [var jitter: SFAcousticFeature](sfvoiceanalytics/jitter.md)
+- [var jitter: SFAcousticFeature](./jitter.md)
   The variation in pitch in each frame of a transcription segment, expressed as a percentage of the frame’s fundamental frequency.
-- [var shimmer: SFAcousticFeature](sfvoiceanalytics/shimmer.md)
+- [var shimmer: SFAcousticFeature](./shimmer.md)
   The variation in vocal volume stability (amplitude) in each frame of a transcription segment, expressed in decibels.
 
 

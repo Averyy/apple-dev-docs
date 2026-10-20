@@ -1,7 +1,8 @@
 # immediate(name:priority:executorPreference:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create and immediately start running a new task in the context of the calling thread/task.
 
@@ -21,6 +22,8 @@ Create and immediately start running a new task in the context of the calling th
 static func immediate(name: String? = nil, priority: TaskPriority? = nil, executorPreference taskExecutor: consuming (any TaskExecutor)? = nil, operation: sending @escaping @isolated(any) () async throws -> Success) -> Task<Success, any Error>
 ```
 
+Available when `Success` conforms to `Sendable` and `Failure` is `any Error`.
+
 #### Return Value
 
 A reference to the unstructured task which may be awaited on.
@@ -36,17 +39,18 @@ Other than the execution semantics discussed above, the created task is semantic
 ## Parameters
 
 - `name`: The high-level human-readable name given for this task
-- `priority`: The priority of the task. Pass `nil` to use the [`basePriority`](task/basepriority.md) of the current task (if there is one).
-- `taskExecutor`: The task executor that the child task should be started on and keep using. Explicitly passing `nil` as the executor preference is equivalent to no preference, and effectively means to inherit the outer context’s executor preference. You can also pass the [`globalConcurrentExecutor`](globalconcurrentexecutor.md) global executor explicitly.
+- `priority`: The priority of the task. Pass `nil` to use the [`basePriority`](./basepriority.md) of the current task (if there is one).
+- `taskExecutor`: The task executor that the child task should be started on and keep using. Explicitly passing `nil` as the executor preference is equivalent to no preference, and effectively means to inherit the outer context’s executor preference. You can also pass the [`globalConcurrentExecutor`](../globalconcurrentexecutor.md) global executor explicitly.
 - `operation`: The operation to be run immediately upon entering the task.
 
 ## See Also
 
-- [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediate(name:priority:executorpreference:operation:)-88o80.md)
+### Creating a Task that Starts Immediately
+- [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](./immediate%28name,priority,executorpreference,operation%29-88o80.md)
   Create and immediately start running a new task in the context of the calling thread/task.
-- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediatedetached(name:priority:executorpreference:operation:)-52ipd.md)
+- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](./immediatedetached%28name,priority,executorpreference,operation%29-52ipd.md)
   Create and immediately start running a new detached task in the context of the calling thread/task.
-- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediatedetached(name:priority:executorpreference:operation:)-7h41b.md)
+- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](./immediatedetached%28name,priority,executorpreference,operation%29-7h41b.md)
   Create and immediately start running a new detached task in the context of the calling thread/task.
 
 

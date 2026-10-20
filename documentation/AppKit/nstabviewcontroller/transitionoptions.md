@@ -1,7 +1,8 @@
 # transitionOptions
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation options to use when switching between tabs.
 
@@ -14,19 +15,24 @@ The animation options to use when switching between tabs.
 var transitionOptions: NSViewController.TransitionOptions { get set }
 ```
 
+```objc
+@property NSViewControllerTransitionOptions transitionOptions;
+```
+
 #### Discussion
 
-By default, this property is set to the [`crossfade`](nsviewcontroller/transitionoptions/crossfade.md) and [`allowUserInteraction`](nsviewcontroller/transitionoptions/allowuserinteraction.md) options.
+By default, this property is set to the [`crossfade`](../nsviewcontroller/transitionoptions/crossfade.md) and [`allowUserInteraction`](../nsviewcontroller/transitionoptions/allowuserinteraction.md) options.
 
-The tab view controller uses the [`transition(from:to:options:completionHandler:)`](nsviewcontroller/transition(from:to:options:completionhandler:).md) method to perform transitions between tabs. For more information about how transitions happen, see the description of that method.
+The tab view controller uses the [`transition(from:to:options:completionHandler:)`](../nsviewcontroller/transition%28from,to,options,completionhandler%29.md) method to perform transitions between tabs. For more information about how transitions happen, see the description of that method.
 
 ## See Also
 
-- [var tabStyle: NSTabViewController.TabStyle](nstabviewcontroller/tabstyle-swift.property.md)
+### Configuring the Tab View
+- [var tabStyle: NSTabViewController.TabStyle](./tabstyle-swift.property.md)
   The style used to display the tabs.
-- [var tabView: NSTabView](nstabviewcontroller/tabview.md)
+- [var tabView: NSTabView](./tabview.md)
   The tab view that manages the views of the interface.
-- [var canPropagateSelectedChildViewControllerTitle: Bool](nstabviewcontroller/canpropagateselectedchildviewcontrollertitle.md)
+- [var canPropagateSelectedChildViewControllerTitle: Bool](./canpropagateselectedchildviewcontrollertitle.md)
   A Boolean value indicating whether the tab view controller gets its title from the selected child view controller.
 
 

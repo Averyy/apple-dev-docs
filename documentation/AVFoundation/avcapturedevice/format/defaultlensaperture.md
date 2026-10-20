@@ -1,9 +1,10 @@
 # defaultLensAperture
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The default value for the [`lensAperture`](avcapturedevice/lensaperture.md) property.
+The default value for the [`lensAperture`](../lensaperture.md) property.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@ The default value for the [`lensAperture`](avcapturedevice/lensaperture.md) prop
 
 ```swift
 var defaultLensAperture: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float defaultLensAperture;
 ```
 
 

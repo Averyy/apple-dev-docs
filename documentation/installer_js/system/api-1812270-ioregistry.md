@@ -7,7 +7,7 @@ An object providing access to the IOKit registry.
 
 #### Overview
 
-See [`IORegistry`](ioregistry.md) for the properties and methods of this object.
+See [IORegistry](../ioregistry.md) for the properties and methods of this object.
 
 
 ---

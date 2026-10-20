@@ -1,7 +1,8 @@
 # ATTrackingManager.AuthorizationStatus.restricted
 
 **Framework**: App Tracking Transparency  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the system restricts tracking authorization.
 
@@ -19,20 +20,25 @@ A value that indicates the system restricts tracking authorization.
 case restricted
 ```
 
+```c
+ATTrackingManagerAuthorizationStatusRestricted
+```
+
 #### Discussion
 
 When the system restricts tracking for the device:
 
-- Tracking request methods (for example, [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md)) run their completion handlers immediately, without prompting the person.
+- Tracking request methods (for example, [`requestTrackingAuthorization(completionHandler:)`](../requesttrackingauthorization%28completionhandler%29.md)) run their completion handlers immediately, without prompting the person.
 - The system disables “Allow Apps to Request to Track” (called “Allow Apps to Request to Link Your Activity Across Companies” in the European Union) in Settings > Privacy & Security > Tracking.
 
 ## See Also
 
-- [ATTrackingManager.AuthorizationStatus.authorized](attrackingmanager/authorizationstatus/authorized.md)
+### Determining the status
+- [ATTrackingManager.AuthorizationStatus.authorized](./authorized.md)
   A value that indicates someone grants your app permission to access data your app can use to track a person or device.
-- [ATTrackingManager.AuthorizationStatus.denied](attrackingmanager/authorizationstatus/denied.md)
+- [ATTrackingManager.AuthorizationStatus.denied](./denied.md)
   A value that indicates someone denies your app permission to access data your app can use to track a person or device.
-- [ATTrackingManager.AuthorizationStatus.notDetermined](attrackingmanager/authorizationstatus/notdetermined.md)
+- [ATTrackingManager.AuthorizationStatus.notDetermined](./notdetermined.md)
   A value that indicates the person hasn’t responded to a tracking authorization request.
 
 

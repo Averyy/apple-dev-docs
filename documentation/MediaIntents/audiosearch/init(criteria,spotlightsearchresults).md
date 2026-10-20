@@ -1,7 +1,8 @@
 # init(criteria:spotlightSearchResults:)
 
 **Framework**: Media Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,8 @@
 - visionOS 27.0+
 - watchOS 27.0+
 
+> **Deprecated**: spotlightSearchResults is no longer used; pass criteria only
+
 ## Declaration
 
 ```swift
@@ -20,7 +23,8 @@ init(criteria: AudioSearch.Criteria, spotlightSearchResults: [Never])
 
 ## See Also
 
-- [static let defaultResolverSpecification: EmptyResolverSpecification<AudioSearch>](audiosearch/defaultresolverspecification.md)
+### Providing default implementations
+- [static let defaultResolverSpecification: EmptyResolverSpecification<AudioSearch>](./defaultresolverspecification.md)
 
 
 ---

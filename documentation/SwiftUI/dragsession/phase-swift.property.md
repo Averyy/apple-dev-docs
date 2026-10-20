@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current phase of the drag session.
 

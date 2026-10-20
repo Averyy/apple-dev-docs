@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Reads and writes values associated with a given focused value key.
 
@@ -22,7 +23,7 @@ subscript<Key>(key: Key.Type) -> Key.Value? where Key : FocusedValueKey { get se
 
 #### Overview
 
-Use this subscript to get or set a focused value for a custom [`FocusedValueKey`](focusedvaluekey.md). In most cases, you’ll use the `Entry` macro to create focused value properties, which automatically generates the appropriate key and uses this subscript internally:
+Use this subscript to get or set a focused value for a custom [`FocusedValueKey`](../focusedvaluekey.md). In most cases, you’ll use the `Entry` macro to create focused value properties, which automatically generates the appropriate key and uses this subscript internally:
 
 ```swift
 extension FocusedValues {

@@ -1,7 +1,8 @@
 # value(_:_:unit:calendar:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a parameter value with label key and value.
 
@@ -19,6 +20,8 @@ Creates a parameter value with label key and value.
 ```swift
 static func value(_ labelKey: LocalizedStringKey, _ date: Date, unit: Calendar.Component, calendar: Calendar? = nil) -> PlottableValue<Value> where Value == Date
 ```
+
+Available when `Value` conforms to `Plottable`.
 
 ## Parameters
 

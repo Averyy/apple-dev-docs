@@ -1,7 +1,8 @@
 # member
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact the user added to the group.
 
@@ -19,9 +20,14 @@ The contact the user added to the group.
 var member: CNContact { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CNContact * member;
+```
+
 ## See Also
 
-- [var group: CNGroup](cnchangehistoryaddmembertogroupevent/group.md)
+### Getting event details
+- [var group: CNGroup](./group.md)
   The group where the user added a contact.
 
 

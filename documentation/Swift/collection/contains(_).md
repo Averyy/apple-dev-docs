@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the collection contains the given sequence.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether the collection contains the given seq
 ```swift
 func contains<C>(_ other: C) -> Bool where C : Collection, Self.Element == C.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 

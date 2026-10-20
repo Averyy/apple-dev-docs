@@ -1,7 +1,8 @@
 # BuildBundleFileSize.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Build Bundle File Sizes resource.
 
@@ -10,7 +11,7 @@ The attributes that describe a Build Bundle File Sizes resource.
 
 ## Declaration
 
-```swift
+```
 object BuildBundleFileSize.Attributes
 ```
 

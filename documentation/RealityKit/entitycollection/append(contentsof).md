@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the specified sequence of entities to the end of this collection, in order.
@@ -27,6 +28,12 @@ mutating func append<S>(contentsOf sequence: S) where S : Sequence, S.Element : 
 ## Parameters
 
 - `sequence`: The entities to add to the collection.
+
+## Default Implementations
+
+### EntityCollection Implementations
+- [func append<S>(contentsOf: S)](./append%28contentsof%29-9g9w5.md)
+  Adds the specified sequence of entities to the end of this collection, in order.
 
 
 ---

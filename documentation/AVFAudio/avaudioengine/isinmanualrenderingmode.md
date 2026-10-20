@@ -1,7 +1,8 @@
 # isInManualRenderingMode
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the engine is operating in manual rendering mode.
 
@@ -20,21 +21,26 @@ A Boolean value that indicates whether the engine is operating in manual renderi
 var isInManualRenderingMode: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isInManualRenderingMode;
+```
+
 ## See Also
 
-- [typealias AVAudioEngineManualRenderingBlock](avaudioenginemanualrenderingblock.md)
+### Getting manual rendering properties
+- [typealias AVAudioEngineManualRenderingBlock](../avaudioenginemanualrenderingblock.md)
   The type that represents a block that renders the engine when operating in manual rendering mode.
-- [var manualRenderingBlock: AVAudioEngineManualRenderingBlock](avaudioengine/manualrenderingblock.md)
+- [var manualRenderingBlock: AVAudioEngineManualRenderingBlock](./manualrenderingblock.md)
   The block that renders the engine when operating in manual rendering mode.
-- [var manualRenderingFormat: AVAudioFormat](avaudioengine/manualrenderingformat.md)
+- [var manualRenderingFormat: AVAudioFormat](./manualrenderingformat.md)
   The render format of the engine in manual rendering mode.
-- [var manualRenderingMaximumFrameCount: AVAudioFrameCount](avaudioengine/manualrenderingmaximumframecount.md)
+- [var manualRenderingMaximumFrameCount: AVAudioFrameCount](./manualrenderingmaximumframecount.md)
   The maximum number of PCM sample frames the engine produces in any single render call in manual rendering mode.
-- [var manualRenderingMode: AVAudioEngineManualRenderingMode](avaudioengine/manualrenderingmode.md)
+- [var manualRenderingMode: AVAudioEngineManualRenderingMode](./manualrenderingmode.md)
   The manual rendering mode configured on the engine.
-- [var manualRenderingSampleTime: AVAudioFramePosition](avaudioengine/manualrenderingsampletime.md)
+- [var manualRenderingSampleTime: AVAudioFramePosition](./manualrenderingsampletime.md)
   An indication of where the engine is on its render timeline in manual rendering mode.
-- [var isAutoShutdownEnabled: Bool](avaudioengine/isautoshutdownenabled.md)
+- [var isAutoShutdownEnabled: Bool](./isautoshutdownenabled.md)
   A Boolean value that indicates whether autoshutdown is in an enabled state.
 
 

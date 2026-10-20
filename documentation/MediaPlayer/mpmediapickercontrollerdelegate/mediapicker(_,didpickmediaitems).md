@@ -1,7 +1,8 @@
 # mediaPicker(_:didPickMediaItems:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method that the system calls when a user selects a set of media items.
 
@@ -16,9 +17,13 @@ A method that the system calls when a user selects a set of media items.
 optional func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection)
 ```
 
+```objc
+- (void) mediaPicker:(MPMediaPickerController *) mediaPicker didPickMediaItems:(MPMediaItemCollection *) mediaItemCollection;
+```
+
 ## Mentions
 
-- [Displaying a media picker from your app](displaying-a-media-picker-from-your-app.md)
+- [Displaying a media picker from your app](../displaying-a-media-picker-from-your-app.md)
 
 ## Parameters
 
@@ -27,8 +32,10 @@ optional func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaIt
 
 ## See Also
 
-- [iPod Library Access Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/iPodLibraryAccess_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008765)
-- [func mediaPickerDidCancel(MPMediaPickerController)](mpmediapickercontrollerdelegate/mediapickerdidcancel(_:).md)
+### Related Documentation
+- [iPod Library Access Programming Guide](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/iPodLibraryAccess_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008765)
+### Responding to user actions
+- [func mediaPickerDidCancel(MPMediaPickerController)](./mediapickerdidcancel%28_%29.md)
   A method that the system calls when a user taps Cancel to dismiss a media item picker.
 
 

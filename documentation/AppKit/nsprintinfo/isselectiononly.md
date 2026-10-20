@@ -1,7 +1,8 @@
 # isSelectionOnly
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether only the currently selected contents should be printed.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether only the currently selected contents shou
 var isSelectionOnly: Bool { get set }
 ```
 
+```objc
+@property (getter=isSelectionOnly) BOOL selectionOnly;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if only the currently selected contents should be printed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if only the currently selected contents should be printed, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var scalingFactor: CGFloat](nsprintinfo/scalingfactor.md)
+### Print Settings Convenience Methods
+- [var scalingFactor: CGFloat](./scalingfactor.md)
   The current scaling factor.
 
 

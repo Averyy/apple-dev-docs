@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that the authorization controller informs about the success or failure of an authorization attempt.
 
@@ -20,11 +21,16 @@ A delegate that the authorization controller informs about the success or failur
 weak var delegate: (any ASAuthorizationControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<ASAuthorizationControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](asauthorizationcontrollerdelegate/authorizationcontroller(_:didcompletewithcustommethod:).md)
+### Responding to request completion
+- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](../asauthorizationcontrollerdelegate/authorizationcontroller%28_,didcompletewithcustommethod%29.md)
   Informs the delegate when authorization completes, and specifies the custom method the user selected.
-- [protocol ASAuthorizationControllerDelegate](asauthorizationcontrollerdelegate.md)
+- [protocol ASAuthorizationControllerDelegate](../asauthorizationcontrollerdelegate.md)
   An interface for providing information about the outcome of an authorization request.
 
 

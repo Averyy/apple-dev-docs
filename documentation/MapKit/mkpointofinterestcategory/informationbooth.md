@@ -1,7 +1,8 @@
 # informationBooth
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let informationBooth: MKPointOfInterestCategory
+```
+
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryInformationBooth;
 ```
 
 

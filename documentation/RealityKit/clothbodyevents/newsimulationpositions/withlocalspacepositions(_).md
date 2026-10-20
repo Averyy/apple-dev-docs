@@ -1,7 +1,8 @@
 # withLocalSpacePositions(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides access to the new simulation positions of the body’s particles, in local space.
 

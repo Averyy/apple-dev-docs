@@ -1,12 +1,13 @@
 # Signing the HTTP Request
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Sign the canonical request and send the custom authorization header to the Apple News API.
 
 #### Overview
 
-When communicating using HTTP protocol, the server validates the identity of the client and provides authorization for specific actions. By signing the HTTP request, the Apple News API authenticates the client and authorizes your news channel. See [`About the Apple News Security Model`](about-the-apple-news-security-model.md).
+When communicating using HTTP protocol, the server validates the identity of the client and provides authorization for specific actions. By signing the HTTP request, the Apple News API authenticates the client and authorizes your news channel. See [About the Apple News Security Model](./about-the-apple-news-security-model.md).
 
 **On this page, you’ll learn how to:**
 
@@ -159,9 +160,10 @@ return requests.request(method, url, headers=headers)
 
 ## See Also
 
-- [Making an HTTP Request to the Apple News API](making-an-http-request-to-the-apple-news-api.md)
+### Apple News API Python Tutorial
+- [Making an HTTP Request to the Apple News API](./making-an-http-request-to-the-apple-news-api.md)
   Create the URL, set the method, and send the request.
-- [Publishing an Article](publishing-an-article.md)
+- [Publishing an Article](./publishing-an-article.md)
   Build a URL and article body for the publish-article request.
 
 

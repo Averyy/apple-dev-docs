@@ -1,7 +1,8 @@
 # Get Image List
 
 **Framework**: Retention Messaging API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Gets the image identifier and state for all uploaded images.
 
@@ -10,12 +11,12 @@ Gets the image identifier and state for all uploaded images.
 
 ## Mentions
 
-- [Identifying rate limits](identifying-rate-limits.md)
-- [Setting up retention messages](setting-up-retention-messages.md)
+- [Identifying rate limits](./identifying-rate-limits.md)
+- [Setting up retention messages](./setting-up-retention-messages.md)
 
 #### Discussion
 
-Call this endpoint to get all uploaded image identifiers and check their current state, [`imageState`](imagestate.md).
+Call this endpoint to get all uploaded image identifiers and check their current state, [`imageState`](./imagestate.md).
 
 Images need to be in an `APPROVED` state before the system can display messages that contain them.
 
@@ -23,15 +24,22 @@ Images need to be in an `APPROVED` state before the system can display messages 
 
 `GET https://api.storekit-sandbox.apple.com/inApps/v1/messaging/image/list`
 
+## Responses
+
+- `200` OK (`GetImageListResponse`, `application/json`): Request succeeded.
+- `429` (`RateLimitExceededError`, `application/json`): The request exceeded the rate limit. For more information, see [Identifying rate limits](./identifying-rate-limits.md).
+- `500` Internal Server Error (`GeneralInternalError`, `application/json`): Server error. Try again later.
+
 ## See Also
 
-- [Upload Image](upload-image.md)
+### Image configuration
+- [Upload Image](./upload-image.md)
   Uploads an image to use for retention messaging.
-- [Delete Image](delete-image.md)
+- [Delete Image](./delete-image.md)
   Deletes a previously uploaded image.
-- [object GetImageListResponse](getimagelistresponse.md)
+- [object GetImageListResponse](./getimagelistresponse.md)
   A response that contains status information for all images.
-- [object GetImageListResponseItem](getimagelistresponseitem.md)
+- [object GetImageListResponseItem](./getimagelistresponseitem.md)
   An image identifier and state information for an image.
 
 

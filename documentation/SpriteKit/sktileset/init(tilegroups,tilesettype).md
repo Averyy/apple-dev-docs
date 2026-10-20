@@ -1,7 +1,8 @@
 # init(tileGroups:tileSetType:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new tile set with an array of tile groups and specified layout.
 
@@ -20,18 +21,23 @@ Initializes a new tile set with an array of tile groups and specified layout.
 init(tileGroups: [SKTileGroup], tileSetType: SKTileSetType)
 ```
 
+```objc
+- (instancetype) initWithTileGroups:(NSArray<SKTileGroup *> *) tileGroups tileSetType:(SKTileSetType) tileSetType;
+```
+
 #### Return Value
 
 A new tile set.
 
 ## Parameters
 
-- `tileGroups`: An array of [`SKTileGroup`](sktilegroup.md) objects from which to create the tile set from.
+- `tileGroups`: An array of [`SKTileGroup`](../sktilegroup.md) objects from which to create the tile set from.
 - `tileSetType`: The arrangement of the tiles.
 
 ## See Also
 
-- [init(tileGroups: [SKTileGroup])](sktileset/init(tilegroups:).md)
+### Creating a Tile Set Programmatically
+- [init(tileGroups: [SKTileGroup])](./init%28tilegroups%29.md)
   Initializes a new tile set with an array of tile groups and rectangular grid layout.
 
 

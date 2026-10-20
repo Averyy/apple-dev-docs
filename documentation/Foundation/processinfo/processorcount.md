@@ -1,7 +1,8 @@
 # processorCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of processing cores available on the computer.
 
@@ -20,21 +21,26 @@ The number of processing cores available on the computer.
 var processorCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger processorCount;
+```
+
 #### Discussion
 
 This property value is equal to the result of entering the command `sysctl -n hw.ncpu` on the current system.
 
 ## See Also
 
-- [var activeProcessorCount: Int](processinfo/activeprocessorcount.md)
+### Getting computer information
+- [var activeProcessorCount: Int](./activeprocessorcount.md)
   The number of active processing cores available on the computer.
-- [var physicalMemory: UInt64](processinfo/physicalmemory.md)
+- [var physicalMemory: UInt64](./physicalmemory.md)
   The amount of physical memory on the computer in bytes.
-- [func isDeviceCertified(for: NSDeviceCertification) -> Bool](processinfo/isdevicecertified(for:).md)
+- [func isDeviceCertified(for: NSDeviceCertification) -> Bool](./isdevicecertified%28for%29.md)
   Indicates whether the device supports the requested performance tier.
-- [func hasPerformanceProfile(NSProcessPerformanceProfile) -> Bool](processinfo/hasperformanceprofile(_:).md)
+- [func hasPerformanceProfile(NSProcessPerformanceProfile) -> Bool](./hasperformanceprofile%28_%29.md)
   Indicates whether an app is running under a known performance profile.
-- [var systemUptime: TimeInterval](processinfo/systemuptime.md)
+- [var systemUptime: TimeInterval](./systemuptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 
 

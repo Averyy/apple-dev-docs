@@ -1,7 +1,8 @@
 # GetOffset
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the offset from the original start of the memory block.
 
@@ -11,11 +12,11 @@ Returns the offset from the original start of the memory block.
 
 ## Declaration
 
-```swift
+```c
 uint64_t GetOffset(void);
 ```
 
-#### Return_value
+#### Return Value
 
 The number of bytes from the start of the original block of memory to the first byte of this memory map object.
 
@@ -25,9 +26,10 @@ When creating a memory map object, you can map to a location in the middle of th
 
 ## See Also
 
-- [- GetAddress](iomemorymap/3180656-getaddress.md)
+### Getting the Map Attributes
+- [- GetAddress](./api-3180656-getaddress.md)
   Returns the address of the memory block.
-- [- GetLength](iomemorymap/3180657-getlength.md)
+- [- GetLength](./api-3180657-getlength.md)
   Returns the length of the memory block in bytes.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Encodes a Unicode scalar as a series of code units by calling the given closure on each code unit.

@@ -1,7 +1,8 @@
 # init(noiseSource:gradientColors:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -12,6 +13,14 @@
 - visionOS 1.0+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+init(noiseSource: GKNoiseSource, gradientColors: [NSNumber : UIColor])
+```
+
+*macOS*
 
 ```swift
 init(noiseSource: GKNoiseSource, gradientColors: [NSNumber : NSColor])

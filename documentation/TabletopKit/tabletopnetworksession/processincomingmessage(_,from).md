@@ -1,7 +1,8 @@
 # processIncomingMessage(_:from:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pass incoming messages from the reliable channel to the game.
 
@@ -21,7 +22,8 @@ func processIncomingMessage(_ message: Data, from sender: TabletopNetworkSession
 
 ## See Also
 
-- [func processIncomingUnreliableMessage(Data, from: TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/processincomingunreliablemessage(_:from:).md)
+### Receiving messages from peers
+- [func processIncomingUnreliableMessage(Data, from: TabletopNetworkSession<Coordinator>.Peer)](./processincomingunreliablemessage%28_,from%29.md)
   Pass incoming messages from the unreliable channel to the game.
 
 

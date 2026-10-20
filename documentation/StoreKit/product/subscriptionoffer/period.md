@@ -1,7 +1,8 @@
 # period
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subscription period for the subscription offer.
 
@@ -22,7 +23,8 @@ let period: Product.SubscriptionPeriod
 
 ## See Also
 
-- [let periodCount: Int](product/subscriptionoffer/periodcount.md)
+### Getting the subscription duration
+- [let periodCount: Int](./periodcount.md)
   The number of periods that the subscription offer renews for.
 
 

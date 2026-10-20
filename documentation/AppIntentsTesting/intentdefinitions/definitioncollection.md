@@ -1,7 +1,8 @@
 # IntentDefinitions.DefinitionCollection
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of a specific type of definition.
 
@@ -33,14 +34,14 @@ let orderIntent = definitions.intents[
 ## Topics
 
 ### Subscripts
-- [subscript(String) -> Definition](intentdefinitions/definitioncollection/subscript(_:).md)
+- [subscript(String) -> Definition](./definitioncollection/subscript%28_%29.md)
   Retrieves a type definition using its identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

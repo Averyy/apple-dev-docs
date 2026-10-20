@@ -1,7 +1,8 @@
 # MPSKeyedUnarchiver
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A keyed archiver that supports Metal Performance Shaders kernel decoding.
 
@@ -19,43 +20,48 @@ A keyed archiver that supports Metal Performance Shaders kernel decoding.
 class MPSKeyedUnarchiver
 ```
 
+```objc
+@interface MPSKeyedUnarchiver : NSKeyedUnarchiver
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: any MTLDevice)](mpskeyedunarchiver/init(device:).md)
-- [init(forReadingFrom: Data, device: any MTLDevice, error: NSErrorPointer)](mpskeyedunarchiver/init(forreadingfrom:device:error:).md)
-- [init(forReadingFromData: Data, device: any MTLDevice, error: NSErrorPointer)](mpskeyedunarchiver/init(forreadingfromdata:device:error:).md)
-- [init(forReadingWith: Data, device: any MTLDevice)](mpskeyedunarchiver/init(forreadingwith:device:).md)
-- [init(forReadingWithData: Data, device: any MTLDevice)](mpskeyedunarchiver/init(forreadingwithdata:device:).md)
+- [init?(device: any MTLDevice)](./mpskeyedunarchiver/init%28device%29.md)
+- [init(forReadingFrom: Data, device: any MTLDevice, error: NSErrorPointer)](./mpskeyedunarchiver/init%28forreadingfrom,device,error%29.md)
+- [init(forReadingFromData: Data, device: any MTLDevice, error: NSErrorPointer)](./mpskeyedunarchiver/init%28forreadingfromdata,device,error%29.md)
+- [init(forReadingWith: Data, device: any MTLDevice)](./mpskeyedunarchiver/init%28forreadingwith,device%29.md)
+- [init(forReadingWithData: Data, device: any MTLDevice)](./mpskeyedunarchiver/init%28forreadingwithdata,device%29.md)
 ### Instance Methods
-- [func mpsMTLDevice() -> any MTLDevice](mpskeyedunarchiver/mpsmtldevice.md)
+- [func mpsMTLDevice() -> any MTLDevice](./mpskeyedunarchiver/mpsmtldevice%28%29.md)
 ### Type Methods
-- [class func unarchiveObject(with: Data, device: any MTLDevice) -> Any?](mpskeyedunarchiver/unarchiveobject(with:device:).md)
-- [class func unarchiveObject(withFile: String, device: any MTLDevice) -> Any?](mpskeyedunarchiver/unarchiveobject(withfile:device:).md)
-- [class func unarchiveTopLevelObject(with: Data, device: any MTLDevice) throws -> Any](mpskeyedunarchiver/unarchivetoplevelobject(with:device:).md)
-- [class func unarchivedObject(of: AnyClass, from: Data, device: any MTLDevice) throws -> Any](mpskeyedunarchiver/unarchivedobject(of:from:device:).md)
-- [class func unarchivedObject(ofClasses: Set<AnyHashable>, from: Data, device: any MTLDevice) throws -> Any](mpskeyedunarchiver/unarchivedobject(ofclasses:from:device:).md)
+- [class func unarchiveObject(with: Data, device: any MTLDevice) -> Any?](./mpskeyedunarchiver/unarchiveobject%28with,device%29.md)
+- [class func unarchiveObject(withFile: String, device: any MTLDevice) -> Any?](./mpskeyedunarchiver/unarchiveobject%28withfile,device%29.md)
+- [class func unarchiveTopLevelObject(with: Data, device: any MTLDevice) throws -> Any](./mpskeyedunarchiver/unarchivetoplevelobject%28with,device%29.md)
+- [class func unarchivedObject(of: AnyClass, from: Data, device: any MTLDevice) throws -> Any](./mpskeyedunarchiver/unarchivedobject%28of,from,device%29.md)
+- [class func unarchivedObject(ofClasses: Set<AnyHashable>, from: Data, device: any MTLDevice) throws -> Any](./mpskeyedunarchiver/unarchivedobject%28ofclasses,from,device%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSKeyedUnarchiver](../foundation/nskeyedunarchiver.md)
+- [NSKeyedUnarchiver](../Foundation/nskeyedunarchiver.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSDeviceProvider](mpsdeviceprovider.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSDeviceProvider](./mpsdeviceprovider.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSKeyedArchiver](../foundation/nskeyedarchiver.md)
+### Keyed Archivers
+- [class NSKeyedArchiver](../Foundation/nskeyedarchiver.md)
   An encoder that stores an object’s data to an archive referenced by keys.
-- [protocol MPSDeviceProvider](mpsdeviceprovider.md)
+- [protocol MPSDeviceProvider](./mpsdeviceprovider.md)
   An interface that enables the setting of a Metal device for unarchived objects.
 
 

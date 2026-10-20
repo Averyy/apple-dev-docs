@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
@@ -27,11 +28,12 @@ An instance of the `AsyncIterator` type used to produce elements of the asynchro
 
 ## See Also
 
-- [associatedtype AsyncIterator : AsyncIteratorProtocol](asyncsequence/asynciterator.md)
+### Creating an Iterator
+- [associatedtype AsyncIterator : AsyncIteratorProtocol](./asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [protocol AsyncIteratorProtocol](asynciteratorprotocol.md)
+- [protocol AsyncIteratorProtocol](../asynciteratorprotocol.md)
   A type that asynchronously supplies the values of a sequence one at a time.
-- [associatedtype Element](asyncsequence/element.md)
+- [associatedtype Element](./element.md)
   The type of element produced by this asynchronous sequence.
 
 

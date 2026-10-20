@@ -1,7 +1,8 @@
 # setTextColor(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the color of the date and time text.
 
@@ -14,16 +15,22 @@ Sets the color of the date and time text.
 func setTextColor(_ color: UIColor?)
 ```
 
+```objc
+- (void) setTextColor:(UIColor *) color;
+```
+
 ## Parameters
 
 - `color`: The custom color to be applied to the time string. Specifying `nil` removes the custom color and returns the text to the color specified in the storyboard file. The default text color is white.
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
-- [func setTimeZone(TimeZone?)](wkinterfacedate/settimezone(_:).md)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+### Configuring the Date and Time Display
+- [func setTimeZone(TimeZone?)](./settimezone%28_%29.md)
   Sets the time zone to use when displaying time information.
-- [func setCalendar(Calendar?)](wkinterfacedate/setcalendar(_:).md)
+- [func setCalendar(Calendar?)](./setcalendar%28_%29.md)
   Sets the calendar to use when formatting date information.
 
 

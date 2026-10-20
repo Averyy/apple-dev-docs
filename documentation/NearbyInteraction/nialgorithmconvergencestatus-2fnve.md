@@ -1,7 +1,8 @@
 # NIAlgorithmConvergenceStatus
 
 **Framework**: Nearby Interaction  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of Camera Assistance.
 
@@ -19,38 +20,39 @@ enum NIAlgorithmConvergenceStatus
 
 #### Overview
 
-When the app enables Camera Assistance by setting [`isCameraAssistanceEnabled`](ninearbypeerconfiguration/iscameraassistanceenabled.md) to `true`, the framework provides the app one of these values in the [`status`](nialgorithmconvergence/status-j61c.md) field of the convergence object provided by the [`session(_:didUpdateAlgorithmConvergence:for:)`](nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).md) callback.
+When the app enables Camera Assistance by setting [`isCameraAssistanceEnabled`](./ninearbypeerconfiguration/iscameraassistanceenabled.md) to `true`, the framework provides the app one of these values in the [`status`](./nialgorithmconvergence/status-j61c.md) field of the convergence object provided by the [`session(_:didUpdateAlgorithmConvergence:for:)`](./nisessiondelegate/session%28_,didupdatealgorithmconvergence,for%29.md) callback.
 
-The framework may require user action before Camera Assistance is fully operational at runtime. This enumeration indicates whether Camera Assistance currently functions as expected on device (convergence state [`NIAlgorithmConvergenceStatus.converged`](nialgorithmconvergencestatus-2fnve/converged.md)), and otherwise, the [`NIAlgorithmConvergenceStatus.Reason`](nialgorithmconvergencestatus-2fnve/reason.md) defines the recommended user actions when status is [`NIAlgorithmConvergenceStatus.notConverged(_:)`](nialgorithmconvergencestatus-2fnve/notconverged(_:).md).
+The framework may require user action before Camera Assistance is fully operational at runtime. This enumeration indicates whether Camera Assistance currently functions as expected on device (convergence state [`NIAlgorithmConvergenceStatus.converged`](./nialgorithmconvergencestatus-2fnve/converged.md)), and otherwise, the [`NIAlgorithmConvergenceStatus.Reason`](./nialgorithmconvergencestatus-2fnve/reason.md) defines the recommended user actions when status is [`NIAlgorithmConvergenceStatus.notConverged(_:)`](./nialgorithmconvergencestatus-2fnve/notconverged%28_%29.md).
 
-> **Note**: The Objective-C version of this enumeration is [`Algorithm Convergence Status`](algorithm-convergence-status.md).
+> **Note**: The Objective-C version of this enumeration is [Algorithm Convergence Status](./algorithm-convergence-status.md).
 
 ## Topics
 
 ### Interpreting the convergence state
-- [NIAlgorithmConvergenceStatus.converged](nialgorithmconvergencestatus-2fnve/converged.md)
+- [NIAlgorithmConvergenceStatus.converged](./nialgorithmconvergencestatus-2fnve/converged.md)
   A status that indicates the framework’s Camera Assistance feature is operational.
-- [case notConverged([NIAlgorithmConvergenceStatus.Reason])](nialgorithmconvergencestatus-2fnve/notconverged(_:).md)
+- [case notConverged([NIAlgorithmConvergenceStatus.Reason])](./nialgorithmconvergencestatus-2fnve/notconverged%28_%29.md)
   A status that indicates the framework’s Camera Assistance feature requires action from the user.
-- [NIAlgorithmConvergenceStatus.unknown](nialgorithmconvergencestatus-2fnve/unknown.md)
+- [NIAlgorithmConvergenceStatus.unknown](./nialgorithmconvergencestatus-2fnve/unknown.md)
   An indication that the framework is unsure of the Camera Assistance status.
 ### Comparing convergence states
-- [static func == (NIAlgorithmConvergenceStatus, NIAlgorithmConvergenceStatus) -> Bool](nialgorithmconvergencestatus-2fnve/==(_:_:).md)
+- [static func == (NIAlgorithmConvergenceStatus, NIAlgorithmConvergenceStatus) -> Bool](./nialgorithmconvergencestatus-2fnve/eqeq%28_,_%29.md)
   Determines whether two convergence statuses are equal.
 ### Inspecting the convergence state reason
-- [NIAlgorithmConvergenceStatus.Reason](nialgorithmconvergencestatus-2fnve/reason.md)
+- [NIAlgorithmConvergenceStatus.Reason](./nialgorithmconvergencestatus-2fnve/reason.md)
   The possible reasons for the Camera Assistance status.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [func session(NISession, didUpdateAlgorithmConvergence: NIAlgorithmConvergence, for: NINearbyObject?)](nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).md)
+### Coaching the user
+- [func session(NISession, didUpdateAlgorithmConvergence: NIAlgorithmConvergence, for: NINearbyObject?)](./nisessiondelegate/session%28_,didupdatealgorithmconvergence,for%29.md)
   Provides recommended actions the user can take to facilitate the framework’s Camera Assistance.
-- [NIAlgorithmConvergenceStatus.Reason](nialgorithmconvergencestatus-2fnve/reason.md)
+- [NIAlgorithmConvergenceStatus.Reason](./nialgorithmconvergencestatus-2fnve/reason.md)
   The possible reasons for the Camera Assistance status.
 
 

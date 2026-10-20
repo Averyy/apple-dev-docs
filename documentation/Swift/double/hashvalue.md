@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash value.
 
@@ -28,23 +29,24 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 ## See Also
 
-- [init()](double/init.md)
-- [init(floatLiteral: Double)](double/init(floatliteral:).md)
+### Infrequently Used Functionality
+- [init()](./init%28%29.md)
+- [init(floatLiteral: Double)](./init%28floatliteral%29.md)
   Creates an instance initialized to the specified floating-point value.
-- [init(integerLiteral: Int64)](double/init(integerliteral:).md)
+- [init(integerLiteral: Int64)](./init%28integerliteral%29.md)
   Creates an instance initialized to the specified integer value.
-- [init(integerLiteral: Self)](double/init(integerliteral:)-6hc7j.md)
-- [typealias FloatLiteralType](double/floatliteraltype.md)
+- [init(integerLiteral: Self)](./init%28integerliteral%29-6hc7j.md)
+- [typealias FloatLiteralType](./floatliteraltype.md)
   A type that represents a floating-point literal.
-- [typealias IntegerLiteralType](double/integerliteraltype.md)
+- [typealias IntegerLiteralType](./integerliteraltype.md)
   A type that represents an integer literal.
-- [func advanced(by: Double) -> Double](double/advanced(by:).md)
+- [func advanced(by: Double) -> Double](./advanced%28by%29.md)
   Returns a value that is offset the specified distance from this value.
-- [func distance(to: Double) -> Double](double/distance(to:).md)
+- [func distance(to: Double) -> Double](./distance%28to%29.md)
   Returns the distance from this value to the given value, expressed as a stride.
-- [typealias Stride](double/stride.md)
+- [typealias Stride](./stride.md)
   A type that represents the distance between two values.
-- [func write<Target>(to: inout Target)](double/write(to:).md)
+- [func write<Target>(to: inout Target)](./write%28to%29.md)
   Writes a textual representation of this instance into the given output stream.
 
 

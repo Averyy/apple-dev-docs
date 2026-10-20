@@ -1,17 +1,18 @@
 # Link Status Constants
 
-**Framework**: NetworkingDriverKit
+**Framework**: NetworkingDriverKit  
+**Role**: API Collection
 
 Constants describing the state of the link between the device and your driver.
 
 ## Topics
 
 ### Getting the Link Statuses
-- [kIOUserNetworkLinkStatusInvalid](kiousernetworklinkstatusinvalid.md)
-- [kIOUserNetworkLinkStatusInactive](kiousernetworklinkstatusinactive.md)
-- [kIOUserNetworkLinkStatusActive](kiousernetworklinkstatusactive.md)
-- [kIOUserNetworkLinkStatusWakeSameNet](kiousernetworklinkstatuswakesamenet.md)
-- [kIOUserNetworkLinkStatusForceNotify](kiousernetworklinkstatusforcenotify.md)
+- [kIOUserNetworkLinkStatusInvalid](./kiousernetworklinkstatusinvalid.md)
+- [kIOUserNetworkLinkStatusInactive](./kiousernetworklinkstatusinactive.md)
+- [kIOUserNetworkLinkStatusActive](./kiousernetworklinkstatusactive.md)
+- [kIOUserNetworkLinkStatusWakeSameNet](./kiousernetworklinkstatuswakesamenet.md)
+- [kIOUserNetworkLinkStatusForceNotify](./kiousernetworklinkstatusforcenotify.md)
 
 
 ---

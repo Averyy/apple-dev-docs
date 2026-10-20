@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uncompressed or RAW image sample buffer for the photo, if requested.
 
@@ -18,19 +19,24 @@ The uncompressed or RAW image sample buffer for the photo, if requested.
 var pixelBuffer: CVPixelBuffer? { get }
 ```
 
+```objc
+@property (readonly, nullable) CVPixelBufferRef pixelBuffer;
+```
+
 ## Mentions
 
-- [Capturing uncompressed image data](capturing-uncompressed-image-data.md)
+- [Capturing uncompressed image data](../capturing-uncompressed-image-data.md)
 
 #### Discussion
 
 If you requested photo capture in a RAW format, or in a processed format without compression such as TIFF, you can use this property to access the underlying sample buffer.
 
-If you requested capture in a compressed format such as JPEG or HEVC/HEIF, this property’s value is `nil`. Use the [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md) or [`cgImageRepresentation()`](avcapturephoto/cgimagerepresentation().md) method to obtain compressed image data.
+If you requested capture in a compressed format such as JPEG or HEVC/HEIF, this property’s value is `nil`. Use the [`fileDataRepresentation()`](./filedatarepresentation%28%29.md) or [`cgImageRepresentation()`](./cgimagerepresentation%28%29.md) method to obtain compressed image data.
 
 ## See Also
 
-- [var isRawPhoto: Bool](avcapturephoto/israwphoto.md)
+### Accessing photo pixel data
+- [var isRawPhoto: Bool](./israwphoto.md)
   A Boolean value indicating whether this photo object contains RAW format data.
 
 

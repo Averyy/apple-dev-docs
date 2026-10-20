@@ -1,7 +1,8 @@
 # UIAccessibilityScrollDirection.previous
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is scrolling to the previous view in an ordered set of views.
 
@@ -9,7 +10,7 @@ The user is scrolling to the previous view in an ordered set of views.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The user is scrolling to the previous view in an ordered set of views.
 case previous
 ```
 
+```c
+UIAccessibilityScrollDirectionPrevious
+```
+
 ## See Also
 
-- [UIAccessibilityScrollDirection.right](uiaccessibilityscrolldirection/right.md)
+### Constants
+- [UIAccessibilityScrollDirection.right](./right.md)
   The user is scrolling to the right.
-- [UIAccessibilityScrollDirection.left](uiaccessibilityscrolldirection/left.md)
+- [UIAccessibilityScrollDirection.left](./left.md)
   The user is scrolling to the left.
-- [UIAccessibilityScrollDirection.up](uiaccessibilityscrolldirection/up.md)
+- [UIAccessibilityScrollDirection.up](./up.md)
   The user is scrolling up.
-- [UIAccessibilityScrollDirection.down](uiaccessibilityscrolldirection/down.md)
+- [UIAccessibilityScrollDirection.down](./down.md)
   The user is scrolling down.
-- [UIAccessibilityScrollDirection.next](uiaccessibilityscrolldirection/next.md)
+- [UIAccessibilityScrollDirection.next](./next.md)
   The user is scrolling to the next view in an ordered set of views.
 
 

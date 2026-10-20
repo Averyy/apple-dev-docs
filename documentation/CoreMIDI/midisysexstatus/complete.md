@@ -1,16 +1,17 @@
 # MIDISysExStatus.complete
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 case complete
 ```
 
+```c
+kMIDISysExStatusComplete
+```
+
 ## See Also
 
-- [MIDISysExStatus.start](midisysexstatus/start.md)
-- [MIDISysExStatus.continue](midisysexstatus/continue.md)
-- [MIDISysExStatus.end](midisysexstatus/end.md)
+### Status Types
+- [MIDISysExStatus.start](./start.md)
+- [MIDISysExStatus.continue](./continue.md)
+- [MIDISysExStatus.end](./end.md)
 
 
 ---

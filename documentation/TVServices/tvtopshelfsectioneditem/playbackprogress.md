@@ -1,7 +1,8 @@
 # playbackProgress
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of the content that the user has already played, specified as a value between 0.0 and 1.0.
 
@@ -12,6 +13,10 @@ The percentage of the content that the user has already played, specified as a v
 
 ```swift
 var playbackProgress: Double { get set }
+```
+
+```objc
+@property (nonatomic) double playbackProgress;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # timeIntervalSinceReferenceDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
 
@@ -20,25 +21,30 @@ The interval between 00:00:00 UTC on 1 January 2001 and the current date and tim
 class var timeIntervalSinceReferenceDate: TimeInterval { get }
 ```
 
+```objc
+@property (class, readonly) NSTimeInterval timeIntervalSinceReferenceDate;
+```
+
 #### Return Value
 
 The interval between the system’s absolute reference date (00:00:00 UTC on 1 January 2001) and the current date and time.
 
 #### Discussion
 
-This method is the primitive method for [`NSDate`](nsdate.md). If you subclass [`NSDate`](nsdate.md), you must override this method with your own implementation for it.
+This method is the primitive method for [`NSDate`](../nsdate.md). If you subclass [`NSDate`](../nsdate.md), you must override this method with your own implementation for it.
 
 ## See Also
 
-- [func timeIntervalSince(Date) -> TimeInterval](nsdate/timeintervalsince(_:).md)
+### Getting Time Intervals
+- [func timeIntervalSince(Date) -> TimeInterval](./timeintervalsince%28_%29.md)
   Returns the interval between the receiver and another given date.
-- [var timeIntervalSinceNow: TimeInterval](nsdate/timeintervalsincenow.md)
+- [var timeIntervalSinceNow: TimeInterval](./timeintervalsincenow.md)
   The interval between the date object and the current date and time.
-- [var timeIntervalSinceReferenceDate: TimeInterval](nsdate/timeintervalsincereferencedate-swift.property.md)
+- [var timeIntervalSinceReferenceDate: TimeInterval](./timeintervalsincereferencedate-swift.property.md)
   The interval between the date object and 00:00:00 UTC on 1 January 2001.
-- [var timeIntervalSince1970: TimeInterval](nsdate/timeintervalsince1970.md)
+- [var timeIntervalSince1970: TimeInterval](./timeintervalsince1970.md)
   The interval between the date object and 00:00:00 UTC on 1 January 1970.
-- [var NSTimeIntervalSince1970: Double](nstimeintervalsince1970.md)
+- [var NSTimeIntervalSince1970: Double](../nstimeintervalsince1970.md)
   The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
 
 

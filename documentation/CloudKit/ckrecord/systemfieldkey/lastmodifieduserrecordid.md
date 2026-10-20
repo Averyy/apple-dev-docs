@@ -1,7 +1,8 @@
 # lastModifiedUserRecordID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key constant that a record uses for its CKRecord.lastModifiedUserRecordID.
 
@@ -11,7 +12,7 @@ A key constant that a record uses for its CKRecord.lastModifiedUserRecordID.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 

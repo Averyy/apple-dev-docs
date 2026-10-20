@@ -1,7 +1,8 @@
 # index
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the point along the path.
 
@@ -18,13 +19,18 @@ The index of the point along the path.
 var index: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger index;
+```
+
 ## See Also
 
-- [var pointCount: Int](pkconvertedbezierpointreference/pointcount.md)
+### Getting the point data
+- [var pointCount: Int](./pointcount.md)
   The total number of B-Spline control points in the path.
-- [var location: CGPoint](pkconvertedbezierpointreference/location.md)
+- [var location: CGPoint](./location.md)
   The location of the cubic uniform B-Spline control point.
-- [var bezierSegmentIndex: Int](pkconvertedbezierpointreference/beziersegmentindex.md)
+- [var bezierSegmentIndex: Int](./beziersegmentindex.md)
   The index of the Bézier segment the point originates from, not including `move to` elements.
 
 

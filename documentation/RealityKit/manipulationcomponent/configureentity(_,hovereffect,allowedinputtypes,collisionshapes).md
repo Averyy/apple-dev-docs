@@ -1,7 +1,8 @@
 # configureEntity(_:hoverEffect:allowedInputTypes:collisionShapes:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Apply a default configuration to an entity to enable to it for use with manipulation component.
 
@@ -16,9 +17,9 @@ static func configureEntity(_ entity: Entity, hoverEffect: HoverEffectComponent.
 
 #### Discussion
 
-This function applies an [`InputTargetComponent`](inputtargetcomponent.md), [`CollisionComponent`](collisioncomponent.md), and [`HoverEffectComponent`](hovereffectcomponent.md) to an [`Entity`](entity.md).
+This function applies an [`InputTargetComponent`](../inputtargetcomponent.md), [`CollisionComponent`](../collisioncomponent.md), and [`HoverEffectComponent`](../hovereffectcomponent.md) to an [`Entity`](../entity.md).
 
-Use this method on an entity that already has a mesh asset in a [`ModelComponent`](modelcomponent.md). The system generates a collision mesh based on the entity’s bounding box if you don’t set one. This function will replace any pre-existing components of these types.
+Use this method on an entity that already has a mesh asset in a [`ModelComponent`](../modelcomponent.md). The system generates a collision mesh based on the entity’s bounding box if you don’t set one. This function will replace any pre-existing components of these types.
 
 ## Parameters
 
@@ -29,11 +30,12 @@ Use this method on an entity that already has a mesh asset in a [`ModelComponent
 
 ## See Also
 
-- [var audioConfiguration: ManipulationComponent.AudioConfiguration](manipulationcomponent/audioconfiguration-swift.property.md)
+### Configuring the manipulation
+- [var audioConfiguration: ManipulationComponent.AudioConfiguration](./audioconfiguration-swift.property.md)
   The audio configuration to apply to the object over the course of the interaction.
-- [var dynamics: ManipulationComponent.Dynamics](manipulationcomponent/dynamics-swift.property.md)
+- [var dynamics: ManipulationComponent.Dynamics](./dynamics-swift.property.md)
   The dynamics controlling the object’s movement and behaviors during the interaction.
-- [var releaseBehavior: ManipulationComponent.ReleaseBehavior](manipulationcomponent/releasebehavior-swift.property.md)
+- [var releaseBehavior: ManipulationComponent.ReleaseBehavior](./releasebehavior-swift.property.md)
   The behavior to apply to the object’s transform when someone releases it.
 
 

@@ -1,7 +1,8 @@
 # init(session:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a journal and associates it with the specified session of a group activity.
 
@@ -21,11 +22,11 @@ convenience init<Activity>(session: GroupSession<Activity>) where Activity : Gro
 
 #### Return Value
 
-A [`GroupSessionJournal`](groupsessionjournal.md) object configured for the specified session.
+A [`GroupSessionJournal`](../groupsessionjournal.md) object configured for the specified session.
 
 ## Parameters
 
-- `session`: The session you use for communicating with participants. The session must be in the [`GroupSession.State.waiting`](groupsession/state-swift.enum/waiting.md) or [`GroupSession.State.joined`](groupsession/state-swift.enum/joined.md) state when you create the journal, and the session must be in the [`GroupSession.State.joined`](groupsession/state-swift.enum/joined.md) state before you can send or receive attachments.
+- `session`: The session you use for communicating with participants. The session must be in the [`GroupSession.State.waiting`](../groupsession/state-swift.enum/waiting.md) or [`GroupSession.State.joined`](../groupsession/state-swift.enum/joined.md) state when you create the journal, and the session must be in the [`GroupSession.State.joined`](../groupsession/state-swift.enum/joined.md) state before you can send or receive attachments.
 
 
 ---

@@ -1,7 +1,8 @@
 # ActiveDirectoryCertificate
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Active Directory Certificate settings.
 
@@ -10,7 +11,7 @@ The payload that configures Active Directory Certificate settings.
 
 ## Declaration
 
-```swift
+```
 object ActiveDirectoryCertificate
 ```
 
@@ -18,9 +19,9 @@ object ActiveDirectoryCertificate
 
 Specify `com.apple.ADCertificate.managed` as the payload type.
 
-To get a certificate from a Microsoft CA, follow the instructions at [`Request a certificate from a Microsoft Certificate Authority`](https://developer.apple.comhttps://support.apple.com/en-us/HT204602).
+To get a certificate from a Microsoft CA, follow the instructions at [Request a certificate from a Microsoft Certificate Authority](https://support.apple.com/en-us/HT204602).
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +33,7 @@ To get a certificate from a Microsoft CA, follow the instructions at [`Request a
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Example Profile
+##### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,42 +81,69 @@ To get a certificate from a Microsoft CA, follow the instructions at [`Request a
 
 ## Properties
 
-- `AllowAllAppsAccess` (boolean): If `true`, gives apps access to the private key. Available: macOS 10.10+
-- `CertificateAcquisitionMechanism` (string): This value is most commonly `RPC`; if using web enrollment, use `HTTP`. Available: macOS 10.8+
-- `CertificateAuthority` (string): The name of the certificate authority (CA), which the device determines from the common name (CN) of the Active Directory entry. Valid values: - CN=
-- CN=`Certification Authorities`
-- CN=`Public Key Services`
-- CN=`Services`
-- CN=`Configuration`
-- CN= Available: macOS 10.8+
+- `AllowAllAppsAccess` (boolean): If `true`, gives apps access to the private key.
+
+  Available: macOS 10.10+
+
+  **Default**: `false`
+- `CertificateAcquisitionMechanism` (string): This value is most commonly `RPC`; if using web enrollment, use `HTTP`.
+
+  Available: macOS 10.8+
+- `CertificateAuthority` (string): The name of the certificate authority (CA), which the device determines from the common name (CN) of the Active Directory entry. Valid values:
+
+  - CN=
+  - CN=`Certification Authorities`
+  - CN=`Public Key Services`
+  - CN=`Services`
+  - CN=`Configuration`
+  - CN=
+
+  Available: macOS 10.8+
 - `CertificateRenewalTimeInterval` (integer): The number of days in advance of certificate expiration that the notification center notifies the user.
 - `CertServer` (string) *(required)*: The fully qualified host name of the CA.
 - `CertTemplate` (string) *(required)*: The certificate template for your environment. The default user certificate value is `User`. The default computer certificate value is `Machine`.
 - `Description` (string): A user-friendly description of the certification identity.
-- `EnableAutoRenewal` (boolean): If `true`, the certificate obtained with this payload attempts auto-renewal. Auto-renewal can only be used with device Active Directory certificate payloads. Available: macOS 10.13.4+
-- `KeyIsExtractable` (boolean): If `true`, the system allows exporting the private key. Available: macOS 10.10+
-- `Keysize` (integer): The RSA key size for the certificate signing request (CSR). Available: macOS 10.11+
-- `PromptForCredentials` (boolean): If `true`, the system prompts the user for credentials when is installs the profile. This key applies only to user certificates with the Manual Download profile delivery method. Omit this key for computer certificates. Available: macOS 10.8+
+- `EnableAutoRenewal` (boolean): If `true`, the certificate obtained with this payload attempts auto-renewal. Auto-renewal can only be used with device Active Directory certificate payloads.
+
+  Available: macOS 10.13.4+
+
+  **Default**: `false`
+- `KeyIsExtractable` (boolean): If `true`, the system allows exporting the private key.
+
+  Available: macOS 10.10+
+
+  **Default**: `false`
+- `Keysize` (integer): The RSA key size for the certificate signing request (CSR).
+
+  Available: macOS 10.11+
+
+  **Default**: `2048`
+- `PromptForCredentials` (boolean): If `true`, the system prompts the user for credentials when is installs the profile. This key applies only to user certificates with the Manual Download profile delivery method. Omit this key for computer certificates.
+
+  Available: macOS 10.8+
+
+  **Default**: `false`
 
 ## See Also
 
-- [object ACMECertificate](acmecertificate.md)
+### Certificates
+- [object ACMECertificate](./acmecertificate.md)
   The payload that configures Automated Certificate Management Environment (ACME) settings.
-- [object CertificatePEM](certificatepem.md)
+- [object CertificatePEM](./certificatepem.md)
   The payload that configures a PEM-formatted certificate.
-- [object CertificatePKCS1](certificatepkcs1.md)
+- [object CertificatePKCS1](./certificatepkcs1.md)
   The payload that configures a PKCS #1-formatted certificate.
-- [object CertificatePKCS12](certificatepkcs12.md)
+- [object CertificatePKCS12](./certificatepkcs12.md)
   The payload that configures a PKCS #12-formatted certificate.
-- [object CertificateRoot](certificateroot.md)
+- [object CertificateRoot](./certificateroot.md)
   The payload that configures a root certificate.
-- [object CertificatePreference](certificatepreference.md)
+- [object CertificatePreference](./certificatepreference.md)
   The payload that configures a certificate preference.
-- [object CertificateRevocation](certificaterevocation.md)
+- [object CertificateRevocation](./certificaterevocation.md)
   The payload that configures certificate revocation checking.
-- [object CertificateTransparency](certificatetransparency.md)
+- [object CertificateTransparency](./certificatetransparency.md)
   The payload that configures certificate transparency enforcement.
-- [object SCEP](scep.md)
+- [object SCEP](./scep.md)
   The payload that configures Simple Certificate Enrollment Protocol (SCEP) settings.
 
 

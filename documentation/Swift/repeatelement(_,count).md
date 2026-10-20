@@ -1,7 +1,8 @@
 # repeatElement(_:count:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a collection containing the specified number of the given element.
 
@@ -47,13 +48,14 @@ for x in zeroes {
 
 ## See Also
 
-- [struct CollectionOfOne](collectionofone.md)
+### Special-Use Collections
+- [struct CollectionOfOne](./collectionofone.md)
   A collection containing a single element.
-- [struct EmptyCollection](emptycollection.md)
+- [struct EmptyCollection](./emptycollection.md)
   A collection whose element type is `Element` but that is always empty.
-- [struct KeyValuePairs](keyvaluepairs.md)
+- [struct KeyValuePairs](./keyvaluepairs.md)
   A lightweight collection of key-value pairs.
-- [typealias DictionaryLiteral](dictionaryliteral.md)
+- [typealias DictionaryLiteral](./dictionaryliteral.md)
 
 
 ---

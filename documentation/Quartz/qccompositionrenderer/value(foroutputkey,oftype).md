@@ -2,17 +2,24 @@
 
 **Framework**: Quartz  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the current value on an output port (identified by its key) of the root patch of the composition.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func value(forOutputKey key: String!, ofType type: String!) -> Any!
+```
+
+```objc
+- (id) valueForOutputKey:(NSString *) key ofType:(NSString *) type;
 ```
 
 #### Return Value
@@ -25,11 +32,11 @@ The value type depends on the type of the port type, as shown in the following t
 
 | Port type | Value type |
 | --- | --- |
-| Boolean, Index, or Number | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) or any object that responds to the methods `integerValue`, `floatValue`, or `doubleValue` |
-| String | [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) or any object that responds to the methods`stringValue` or `description` |
-| Color | [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor), [`CIColor`](https://developer.apple.com/documentation/coreimage/cicolor), or `CGColor` object |
-| Image | [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage), [`NSBitmapImageRep`](https://developer.apple.com/documentation/appkit/nsbitmapimagerep), `CGImage` object, [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), `CVPixelBuffer` object, `CVOpenGLBuffer` object, or an opaque `QCImage` (that is, an optimized abstract image object only to be used with `setValue:forInputKey:` of another `<QCCompositionRenderer>`) |
-| Structure | [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) or [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) |
+| Boolean, Index, or Number | [`NSNumber`](../../Foundation/nsnumber.md) or any object that responds to the methods `integerValue`, `floatValue`, or `doubleValue` |
+| String | [`NSString`](../../Foundation/nsstring.md) or any object that responds to the methods`stringValue` or `description` |
+| Color | [`NSColor`](../../AppKit/nscolor.md), [`CIColor`](../../CoreImage/cicolor.md), or `CGColor` object |
+| Image | [`NSImage`](../../AppKit/nsimage.md), [`NSBitmapImageRep`](../../AppKit/nsbitmapimagerep.md), `CGImage` object, [`CIImage`](../../CoreImage/ciimage.md), `CVPixelBuffer` object, `CVOpenGLBuffer` object, or an opaque `QCImage` (that is, an optimized abstract image object only to be used with `setValue:forInputKey:` of another `<QCCompositionRenderer>`) |
+| Structure | [`NSArray`](../../Foundation/nsarray.md) or [`NSDictionary`](../../Foundation/nsdictionary.md) |
 
 ## Parameters
 
@@ -38,11 +45,12 @@ The value type depends on the type of the port type, as shown in the following t
 
 ## See Also
 
-- [func setValue(Any!, forInputKey: String!) -> Bool](qccompositionrenderer/setvalue(_:forinputkey:).md)
+### Passing and Retrieving Values From a Composition
+- [func setValue(Any!, forInputKey: String!) -> Bool](./setvalue%28_,forinputkey%29.md)
   Sets the value for an input port of a composition.
-- [func value(forInputKey: String!) -> Any!](qccompositionrenderer/value(forinputkey:).md)
+- [func value(forInputKey: String!) -> Any!](./value%28forinputkey%29.md)
   Returns the value for an input port of a composition.
-- [func value(forOutputKey: String!) -> Any!](qccompositionrenderer/value(foroutputkey:).md)
+- [func value(forOutputKey: String!) -> Any!](./value%28foroutputkey%29.md)
   Returns the value for an output port of a composition.
 
 

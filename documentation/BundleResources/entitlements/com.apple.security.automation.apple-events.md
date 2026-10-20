@@ -1,16 +1,18 @@
 # Apple Events Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app may prompt the user for permission to send Apple events to other apps.
 
 **Availability**:
 - macOS 10.7+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.security.automation.apple-events` (Apple Events)
+- **Type**: boolean
 
 #### Discussion
 

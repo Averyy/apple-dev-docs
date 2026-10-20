@@ -1,7 +1,8 @@
 # SRHeadphoneSettings.SettingEnablement
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -14,24 +15,28 @@
 enum SettingEnablement
 ```
 
+```c
+enum SRHeadphoneSettingsSettingEnablement : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SRHeadphoneSettings.SettingEnablement.disabled](srheadphonesettings/settingenablement/disabled.md)
-- [SRHeadphoneSettings.SettingEnablement.enabled](srheadphonesettings/settingenablement/enabled.md)
-- [SRHeadphoneSettings.SettingEnablement.unsupported](srheadphonesettings/settingenablement/unsupported.md)
+- [SRHeadphoneSettings.SettingEnablement.disabled](./settingenablement/disabled.md)
+- [SRHeadphoneSettings.SettingEnablement.enabled](./settingenablement/enabled.md)
+- [SRHeadphoneSettings.SettingEnablement.unsupported](./settingenablement/unsupported.md)
 ### Initializers
-- [init?(rawValue: Int)](srheadphonesettings/settingenablement/init(rawvalue:).md)
+- [init?(rawValue: Int)](./settingenablement/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

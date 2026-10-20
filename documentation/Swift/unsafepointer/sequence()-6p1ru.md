@@ -1,7 +1,8 @@
 # sequence()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,8 @@
 ```swift
 func sequence() -> MIDIPacket.ByteSequence
 ```
+
+Available when `Pointee` is `MIDIPacket`.
 
 
 ---

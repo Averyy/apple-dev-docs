@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The URL representation of the app intent.
@@ -35,6 +36,15 @@ struct OpenAppleDotCom: URLRepresentableIntent {
    static var title: LocalizedStringResource = "Open Apple website"
 }
 ```
+
+## Default Implementations
+
+### URLRepresentableIntent Implementations
+- [static var urlRepresentation: Self.URLRepresentation](./urlrepresentation-35e40.md)
+  The URL representation of the app intent.
+- [static var urlRepresentation: Self.URLRepresentation](./urlrepresentation-8rzp8.md)
+  The URL representation of the app intent.
+- [var urlRepresentation: URL?](./urlrepresentation-swift.property.md)
 
 
 ---

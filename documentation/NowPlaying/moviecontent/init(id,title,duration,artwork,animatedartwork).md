@@ -1,7 +1,8 @@
 # init(id:title:duration:artwork:animatedArtwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates movie content with static and animated artwork.
 

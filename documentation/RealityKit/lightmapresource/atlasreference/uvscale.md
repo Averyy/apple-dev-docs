@@ -1,7 +1,8 @@
 # uvScale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A scale to apply to lightmap UV attribute before sampling from the slice of the atlas. Note that lightmap textures use the Metal convention: UV (0,0) corresponds to the top-left corner of the image, while UV (1,1) corresponds to the bottom-right.
 
@@ -21,7 +22,8 @@ var uvScale: SIMD2<Float>
 
 ## See Also
 
-- [var uvOffset: SIMD2<Float>](lightmapresource/atlasreference/uvoffset.md)
+### Mapping texture coordinates
+- [var uvOffset: SIMD2<Float>](./uvoffset.md)
   An offset to apply to lightmap UV attribute before sampling from the slice of the atlas. Note that lightmap textures use the Metal convention: UV (0,0) corresponds to the top-left corner of the image, while UV (1,1) corresponds to the bottom-right.
 
 

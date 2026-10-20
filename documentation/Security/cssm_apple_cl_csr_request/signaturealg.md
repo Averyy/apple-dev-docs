@@ -1,7 +1,8 @@
 # signatureAlg
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var signatureAlg: CSSM_ALGORITHMS
+```
+
+```c
+CSSM_ALGORITHMS signatureAlg;
 ```
 
 

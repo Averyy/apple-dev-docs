@@ -1,7 +1,8 @@
 # CLLocationUpdate.Updates.Iterator
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of the update’s iterator.
 
@@ -22,12 +23,12 @@ struct Iterator
 
 #### Overview
 
-Use [`CLLocationUpdate.Updates.Iterator`](cllocationupdate/updates/iterator.md) process events that [`CLLocationUpdate`](cllocationupdate.md) delivers.
+Use [`CLLocationUpdate.Updates.Iterator`](./iterator.md) process events that [`CLLocationUpdate`](../../cllocationupdate.md) delivers.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

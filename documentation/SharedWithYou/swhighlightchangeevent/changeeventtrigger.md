@@ -1,7 +1,8 @@
 # changeEventTrigger
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of change event for the highlight.
 
@@ -18,11 +19,16 @@ The type of change event for the highlight.
 var changeEventTrigger: SWHighlightChangeEventTrigger { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) SWHighlightChangeEventTrigger changeEventTrigger;
+```
+
 ## See Also
 
-- [var highlightURL: URL](swhighlightchangeevent/highlighturl.md)
+### Accessing event attributes
+- [var highlightURL: URL](./highlighturl.md)
   The URL of the hightlight.
-- [enum SWHighlightChangeEventTrigger](swhighlightchangeeventtrigger.md)
+- [enum SWHighlightChangeEventTrigger](../swhighlightchangeeventtrigger.md)
   The type of change event for the highlight
 
 

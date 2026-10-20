@@ -1,7 +1,8 @@
 # VZUSBPassthroughDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 class VZUSBPassthroughDeviceConfiguration
+```
+
+```objc
+@interface VZUSBPassthroughDeviceConfiguration : NSObject
 ```
 
 #### Overview
@@ -23,27 +28,28 @@ The USB device is captured when the VZVirtualMachine is started with a VZUSBPass
 ## Topics
 
 ### Initializers
-- [init(device: AAUSBAccessory)](vzusbpassthroughdeviceconfiguration/init(device:).md)
+- [init(device: AAUSBAccessory)](./vzusbpassthroughdeviceconfiguration/init%28device%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VZUSBDeviceConfiguration](vzusbdeviceconfiguration.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VZUSBDeviceConfiguration](./vzusbdeviceconfiguration.md)
 
 ## See Also
 
-- [class VZUSBControllerConfiguration](vzusbcontrollerconfiguration.md)
+### Configurations
+- [class VZUSBControllerConfiguration](./vzusbcontrollerconfiguration.md)
   The base class for a USB controller configuration.
-- [class VZXHCIControllerConfiguration](vzxhcicontrollerconfiguration.md)
+- [class VZXHCIControllerConfiguration](./vzxhcicontrollerconfiguration.md)
   The configuration object for the USB Extensible Host Controller Interface (XHCI) controller.
 
 

@@ -1,7 +1,8 @@
 # completer(_:didFailWithError:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the method when the specified search completer is unable to generate a list of search results.
 
@@ -20,6 +21,10 @@ Tells the method when the specified search completer is unable to generate a lis
 optional func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: any Error)
 ```
 
+```objc
+- (void) completer:(MKLocalSearchCompleter *) completer didFailWithError:(NSError *) error;
+```
+
 #### Discussion
 
 Use this object to process any errors that occur while generating search results. Even when an error occurs, the search completer starts a new search if it already has a new search string. Depending on the error, you might do nothing or let the user know that you were unable to obtain a list of search completions.
@@ -31,7 +36,8 @@ Use this object to process any errors that occur while generating search results
 
 ## See Also
 
-- [func completerDidUpdateResults(MKLocalSearchCompleter)](mklocalsearchcompleterdelegate/completerdidupdateresults(_:).md)
+### Getting the search results
+- [func completerDidUpdateResults(MKLocalSearchCompleter)](./completerdidupdateresults%28_%29.md)
   Tells the method when the specified search completer updates its array of search completions.
 
 

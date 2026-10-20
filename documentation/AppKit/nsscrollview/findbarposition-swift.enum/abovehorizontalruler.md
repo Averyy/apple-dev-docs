@@ -1,7 +1,8 @@
 # NSScrollView.FindBarPosition.aboveHorizontalRuler
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The find bar is displayed above the horizontal ruler, if visible.
 
@@ -14,11 +15,16 @@ The find bar is displayed above the horizontal ruler, if visible.
 case aboveHorizontalRuler
 ```
 
+```c
+NSScrollViewFindBarPositionAboveHorizontalRuler
+```
+
 ## See Also
 
-- [NSScrollView.FindBarPosition.aboveContent](nsscrollview/findbarposition-swift.enum/abovecontent.md)
+### Constants
+- [NSScrollView.FindBarPosition.aboveContent](./abovecontent.md)
   The find bar is displayed above the scroll view content.
-- [NSScrollView.FindBarPosition.belowContent](nsscrollview/findbarposition-swift.enum/belowcontent.md)
+- [NSScrollView.FindBarPosition.belowContent](./belowcontent.md)
   The find bar is displayed below the scroll view content.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A completion block that runs after the haptic finishes playing.
@@ -20,15 +21,20 @@ A completion block that runs after the haptic finishes playing.
 var completionHandler: CHHapticAdvancedPatternPlayerCompletionHandler { get set }
 ```
 
+```objc
+@property (readwrite) CHHapticAdvancedPatternPlayerCompletionHandler completionHandler;
+```
+
 ## See Also
 
-- [var loopEnabled: Bool](chhapticadvancedpatternplayer/loopenabled.md)
+### Setting Playback Properties
+- [var loopEnabled: Bool](./loopenabled.md)
   A Boolean that determines whether the haptic repeats itself on completion.
-- [var loopEnd: TimeInterval](chhapticadvancedpatternplayer/loopend.md)
+- [var loopEnd: TimeInterval](./loopend.md)
   The time at which to end looping haptic playback.
-- [var playbackRate: Float](chhapticadvancedpatternplayer/playbackrate.md)
+- [var playbackRate: Float](./playbackrate.md)
   The playback rate of the haptic player.
-- [typealias CHHapticAdvancedPatternPlayerCompletionHandler](chhapticadvancedpatternplayercompletionhandler.md)
+- [typealias CHHapticAdvancedPatternPlayerCompletionHandler](../chhapticadvancedpatternplayercompletionhandler.md)
   A typealias for the completion handler to run after a haptic finishes playback.
 
 

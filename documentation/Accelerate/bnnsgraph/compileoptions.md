@@ -1,7 +1,8 @@
 # BNNSGraph.CompileOptions
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The compilation options that BNNS uses when compiling a source mlmodelc file to a graph object.
 
@@ -11,7 +12,7 @@ The compilation options that BNNS uses when compiling a source mlmodelc file to 
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,24 +23,24 @@ struct CompileOptions
 
 #### Overview
 
-Call `/Accelerate/BNNSGraph/Context/init(compileFromPath:functionName:options:)` to create a default options structure and then set properties such as [`optimizationPreference`](bnnsgraph/compileoptions/optimizationpreference-swift.property.md) to specify individual options.
+Call `/Accelerate/BNNSGraph/Context/init(compileFromPath:functionName:options:)` to create a default options structure and then set properties such as [`optimizationPreference`](./compileoptions/optimizationpreference-swift.property.md) to specify individual options.
 
 ## Topics
 
 ### Creating a compilation options structure
-- [init()](bnnsgraph/compileoptions/init.md)
+- [init()](./compileoptions/init%28%29.md)
   Creates an allocated compilation-options object with default values.
-- [init(useSingleThread: Bool, generateDebugInfo: Bool, optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference)](bnnsgraph/compileoptions/init(usesinglethread:generatedebuginfo:optimizationpreference:).md)
+- [init(useSingleThread: Bool, generateDebugInfo: Bool, optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference)](./compileoptions/init%28usesinglethread,generatedebuginfo,optimizationpreference%29.md)
   Creates an allocated compilation-options object with the specified values.
 ### Specifying and querying compilation options
-- [var useSingleThread: Bool](bnnsgraph/compileoptions/usesinglethread.md)
+- [var useSingleThread: Bool](./compileoptions/usesinglethread.md)
   A Boolean value that specifies whether the graph executes on one thread.
-- [var generateDebugInfo: Bool](bnnsgraph/compileoptions/generatedebuginfo.md)
+- [var generateDebugInfo: Bool](./compileoptions/generatedebuginfo.md)
   A Boolean value that specifies whether the generated graph includes debug info.
-- [var optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference](bnnsgraph/compileoptions/optimizationpreference-swift.property.md)
+- [var optimizationPreference: BNNSGraph.CompileOptions.OptimizationPreference](./compileoptions/optimizationpreference-swift.property.md)
   A constant that specifies the graph compilation-optimization preferences.
 ### Specifying the optimization preference
-- [BNNSGraph.CompileOptions.OptimizationPreference](bnnsgraph/compileoptions/optimizationpreference-swift.struct.md)
+- [BNNSGraph.CompileOptions.OptimizationPreference](./compileoptions/optimizationpreference-swift.struct.md)
   Constants that describe the compilation-optimization preference.
 
 

@@ -1,7 +1,8 @@
 # primaryTextLayoutManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary text layout manager for this content.
 
@@ -18,23 +19,28 @@ The primary text layout manager for this content.
 var primaryTextLayoutManager: NSTextLayoutManager? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSTextLayoutManager * primaryTextLayoutManager;
+```
+
 #### Discussion
 
-Setting this property to an [`NSTextLayoutManager`](nstextlayoutmanager.md) not in `textLayoutManagers` resets it to `nil`. It automatically synchronizes pending edits before switching to a new primary object. The operation is synchronous.
+Setting this property to an [`NSTextLayoutManager`](../nstextlayoutmanager.md) not in `textLayoutManagers` resets it to `nil`. It automatically synchronizes pending edits before switching to a new primary object. The operation is synchronous.
 
 This property is KVO-compliant.
 
 ## See Also
 
-- [var textLayoutManagers: [NSTextLayoutManager]](nstextcontentmanager/textlayoutmanagers.md)
+### Working with layout managers
+- [var textLayoutManagers: [NSTextLayoutManager]](./textlayoutmanagers.md)
   The array of text layout managers associated with this text content manager.
-- [var automaticallySynchronizesTextLayoutManagers: Bool](nstextcontentmanager/automaticallysynchronizestextlayoutmanagers.md)
+- [var automaticallySynchronizesTextLayoutManagers: Bool](./automaticallysynchronizestextlayoutmanagers.md)
   Determines if the framework should automatically synchronize all text layout managers when exiting an editing transaction.
-- [func addTextLayoutManager(NSTextLayoutManager)](nstextcontentmanager/addtextlayoutmanager(_:).md)
+- [func addTextLayoutManager(NSTextLayoutManager)](./addtextlayoutmanager%28_%29.md)
   Adds the layout manager you provide to the list of layout managers.
-- [func removeTextLayoutManager(NSTextLayoutManager)](nstextcontentmanager/removetextlayoutmanager(_:).md)
+- [func removeTextLayoutManager(NSTextLayoutManager)](./removetextlayoutmanager%28_%29.md)
   Removes the layout manager you specifiy from the list of layout managers.
-- [func synchronizeTextLayoutManagers((((any Error)?) -> Void)?)](nstextcontentmanager/synchronizetextlayoutmanagers(_:).md)
+- [func synchronizeTextLayoutManagers((((any Error)?) -> Void)?)](./synchronizetextlayoutmanagers%28_%29.md)
   Synchronizes changes to all nonprimary text layout managers.
 
 

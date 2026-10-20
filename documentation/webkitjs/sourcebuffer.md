@@ -1,38 +1,39 @@
 # SourceBuffer
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
 
 ## Declaration
 
-```swift
+```
 interface SourceBuffer
 ```
 
 ## Topics
 
 ### Instance Properties
-- [appendWindowEnd](sourcebuffer/1634403-appendwindowend.md)
-- [appendWindowStart](sourcebuffer/1630201-appendwindowstart.md)
-- [audioTracks](sourcebuffer/1628896-audiotracks.md)
-- [buffered](sourcebuffer/1633829-buffered.md)
-- [mode](sourcebuffer/1628977-mode.md)
-- [onabort](sourcebuffer/2871490-onabort.md)
-- [onerror](sourcebuffer/2871493-onerror.md)
-- [onupdate](sourcebuffer/2871489-onupdate.md)
-- [onupdateend](sourcebuffer/2871492-onupdateend.md)
-- [onupdatestart](sourcebuffer/2871495-onupdatestart.md)
-- [textTracks](sourcebuffer/1633954-texttracks.md)
-- [timestampOffset](sourcebuffer/1630475-timestampoffset.md)
-- [updating](sourcebuffer/1631494-updating.md)
-- [videoTracks](sourcebuffer/1634196-videotracks.md)
+- [appendWindowEnd](./sourcebuffer/api-1634403-appendwindowend.md)
+- [appendWindowStart](./sourcebuffer/api-1630201-appendwindowstart.md)
+- [audioTracks](./sourcebuffer/api-1628896-audiotracks.md)
+- [buffered](./sourcebuffer/api-1633829-buffered.md)
+- [mode](./sourcebuffer/api-1628977-mode.md)
+- [onabort](./sourcebuffer/api-2871490-onabort.md)
+- [onerror](./sourcebuffer/api-2871493-onerror.md)
+- [onupdate](./sourcebuffer/api-2871489-onupdate.md)
+- [onupdateend](./sourcebuffer/api-2871492-onupdateend.md)
+- [onupdatestart](./sourcebuffer/api-2871495-onupdatestart.md)
+- [textTracks](./sourcebuffer/api-1633954-texttracks.md)
+- [timestampOffset](./sourcebuffer/api-1630475-timestampoffset.md)
+- [updating](./sourcebuffer/api-1631494-updating.md)
+- [videoTracks](./sourcebuffer/api-1634196-videotracks.md)
 ### Instance Methods
-- [abort](sourcebuffer/1631786-abort.md)
-- [appendBuffer](sourcebuffer/1629723-appendbuffer.md)
-- [remove](sourcebuffer/1633966-remove.md)
+- [abort](./sourcebuffer/api-1631786-abort.md)
+- [appendBuffer](./sourcebuffer/api-1629723-appendbuffer.md)
+- [remove](./sourcebuffer/api-1633966-remove.md)
 
 ## Relationships
 

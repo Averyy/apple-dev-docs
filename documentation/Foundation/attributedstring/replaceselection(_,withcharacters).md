@@ -1,7 +1,8 @@
 # replaceSelection(_:withCharacters:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replace the selection with new content, attributed with the typing attributes.
 
@@ -22,7 +23,7 @@ mutating func replaceSelection(_ selection: inout AttributedTextSelection, withC
 
 #### Discussion
 
-Operates just like [`replaceSelection(_:with:)`](attributedstring/replaceselection(_:with:).md), but applies the typing attributes to the new content before inserting it.
+Operates just like [`replaceSelection(_:with:)`](./replaceselection%28_,with%29.md), but applies the typing attributes to the new content before inserting it.
 
 
 ---

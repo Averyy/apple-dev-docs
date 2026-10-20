@@ -1,7 +1,8 @@
 # image(at:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the artwork image for an item at the given size.
 
@@ -16,8 +17,28 @@ Returns the artwork image for an item at the given size.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+func image(at size: CGSize) -> UIImage?
+```
+
+*macOS*
+
 ```swift
 func image(at size: CGSize) -> NSImage?
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+- (UIImage *) imageWithSize:(CGSize) size;
+```
+
+*macOS*
+
+```objc
+- (NSImage *) imageWithSize:(CGSize) size;
 ```
 
 #### Return Value
@@ -30,12 +51,14 @@ The returned image is the smallest available image that’s at least as large as
 
 ## Parameters
 
-- `size`: The size, in points, for the new [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object.
+- `size`: The size, in points, for the new [`UIImage`](../../UIKit/uiimage.md) object.
 
 ## See Also
 
-- [iPod Library Access Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/iPodLibraryAccess_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008765)
-- [var bounds: CGRect](mpmediaitemartwork/bounds.md)
+### Related Documentation
+- [iPod Library Access Programming Guide](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/iPodLibraryAccess_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008765)
+### Using a media item image
+- [var bounds: CGRect](./bounds.md)
   The maximum size, in points, of the image associated with the media item artwork.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique name for the definition.
 
@@ -17,6 +18,10 @@ A unique name for the definition.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * identifier;
 ```
 
 

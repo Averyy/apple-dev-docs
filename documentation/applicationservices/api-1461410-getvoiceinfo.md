@@ -1,7 +1,8 @@
 # GetVoiceInfo(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the same information about a voice that the `GetVoiceDescription` function provides,or to determine in which file and resource a voice is stored. 
 
@@ -14,9 +15,13 @@ Gets the same information about a voice that the `GetVoiceDescription` function 
 func GetVoiceInfo(_ voice: UnsafePointer<VoiceSpec>?, _ selector: OSType, _ voiceInfo: UnsafeMutableRawPointer) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr GetVoiceInfo(const VoiceSpec *voice, OSType selector, void *voiceInfo);
+```
 
-A resultcode. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
@@ -34,13 +39,14 @@ If the voice specification is invalid, `GetVoiceInfo` returnsa `voiceNotFound` e
 
 ## See Also
 
-- [func CountVoices(UnsafeMutablePointer<Int16>) -> OSErr](1459947-countvoices.md)
+### Getting Information About Voices
+- [func CountVoices(UnsafeMutablePointer<Int16>) -> OSErr](./api-1459947-countvoices.md)
   Determines how many voices are available.
-- [func GetIndVoice(Int16, UnsafeMutablePointer<VoiceSpec>) -> OSErr](1464595-getindvoice.md)
+- [func GetIndVoice(Int16, UnsafeMutablePointer<VoiceSpec>) -> OSErr](./api-1464595-getindvoice.md)
   Gets a voice specification structure for a voice bypassing an index to the `GetIndVoice` function.
-- [func GetVoiceDescription(UnsafePointer<VoiceSpec>?, UnsafeMutablePointer<VoiceDescription>?, Int) -> OSErr](1463940-getvoicedescription.md)
+- [func GetVoiceDescription(UnsafePointer<VoiceSpec>?, UnsafeMutablePointer<VoiceDescription>?, Int) -> OSErr](./api-1463940-getvoicedescription.md)
   Gets a description of a voice by using the `GetVoiceDescription` function.
-- [func MakeVoiceSpec(OSType, OSType, UnsafeMutablePointer<VoiceSpec>) -> OSErr](1461446-makevoicespec.md)
+- [func MakeVoiceSpec(OSType, OSType, UnsafeMutablePointer<VoiceSpec>) -> OSErr](./api-1461446-makevoicespec.md)
   Sets the fields of a voice specification structure. 
 
 

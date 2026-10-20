@@ -1,7 +1,8 @@
 # defaultAppStorage(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The default store used by `AppStorage` contained within the view.
 
@@ -31,11 +32,12 @@ If unspecified, the default store for a view hierarchy is `UserDefaults.standard
 
 ## See Also
 
-- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
+### Saving state across app launches
+- [Restoring your app’s state with SwiftUI](../restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
-- [struct AppStorage](appstorage.md)
+- [struct AppStorage](../appstorage.md)
   A property wrapper type that reflects a value from `UserDefaults` and invalidates a view on a change in value in that user default.
-- [struct SceneStorage](scenestorage.md)
+- [struct SceneStorage](../scenestorage.md)
   A property wrapper type that reads and writes to persisted, per-scene storage.
 
 

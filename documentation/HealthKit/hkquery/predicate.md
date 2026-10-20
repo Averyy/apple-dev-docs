@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate used to filter the objects returned from the HealthKit store.
 
@@ -19,15 +20,20 @@ A predicate used to filter the objects returned from the HealthKit store.
 var predicate: NSPredicate? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSPredicate * predicate;
+```
+
 #### Discussion
 
 If the predicate is `nil`, the query does not filter its results. Instead, it returns all the objects matching the query’s other parameters.
 
 ## See Also
 
-- [var objectType: HKObjectType?](hkquery/objecttype.md)
+### Accessing properties
+- [var objectType: HKObjectType?](./objecttype.md)
   The type of objects being queried.
-- [var sampleType: HKSampleType?](hkquery/sampletype.md)
+- [var sampleType: HKSampleType?](./sampletype.md)
   The type of objects being queried.
 
 

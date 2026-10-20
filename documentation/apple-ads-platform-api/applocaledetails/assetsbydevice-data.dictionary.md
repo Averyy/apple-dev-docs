@@ -1,7 +1,8 @@
 # AppLocaleDetails.AssetsByDevice
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Map of device type to a `DeviceAssetGroup` containing the ordered list of asset IDs and any fallback device references.
 
@@ -10,15 +11,15 @@ Map of device type to a `DeviceAssetGroup` containing the ordered list of asset 
 
 ## Declaration
 
-```swift
+```
 object AppLocaleDetails.AssetsByDevice
 ```
 
 #### Discussion
 
-Each key is a device type identifier, such as `iphone_6_5` or `iphone_6_7`, not a fixed field name. The `assetsByDevice` field is a free-form map rather than an object with named properties, so the reference page labels this key `Any Key`. The value for each key is a [`DeviceAssetGroup`](deviceassetgroup.md).
+Each key is a device type identifier, such as `iphone_6_5` or `iphone_6_7`, not a fixed field name. The `assetsByDevice` field is a free-form map rather than an object with named properties, so the reference page labels this key `Any Key`. The value for each key is a [`DeviceAssetGroup`](../deviceassetgroup.md).
 
-On the parent [`AppLocaleDetails`](applocaledetails.md) object, `assetsByDevice` maps each device type to a `DeviceAssetGroup` containing the ordered list of asset IDs and any fallback device references for that locale’s Default Product Page content.
+On the parent [`AppLocaleDetails`](../applocaledetails.md) object, `assetsByDevice` maps each device type to a `DeviceAssetGroup` containing the ordered list of asset IDs and any fallback device references for that locale’s Default Product Page content.
 
 ## Properties
 

@@ -1,7 +1,8 @@
 # authorName
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document’s author.
 
@@ -18,6 +19,10 @@ The document’s author.
 var authorName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * authorName;
+```
+
 #### Discussion
 
 Usually, this is the treating physician’s name.
@@ -26,13 +31,14 @@ HealthKit automatically extracts the author’s name from the CDA’s XML data.
 
 ## See Also
 
-- [var custodianName: String](hkcdadocument/custodianname.md)
+### Accessing the Document’s Data
+- [var custodianName: String](./custodianname.md)
   The name of the organization responsible for the document.
-- [var documentData: Data?](hkcdadocument/documentdata.md)
+- [var documentData: Data?](./documentdata.md)
   The CDA document stored as XML data.
-- [var patientName: String](hkcdadocument/patientname.md)
+- [var patientName: String](./patientname.md)
   The patient’s name.
-- [var title: String](hkcdadocument/title.md)
+- [var title: String](./title.md)
   The document’s title.
 
 

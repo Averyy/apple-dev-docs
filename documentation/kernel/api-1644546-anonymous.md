@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kVideoReplyMicroSecDelayBit](1644546-anonymous/kvideoreplymicrosecdelaybit.md)
-- [kVideoReplyMicroSecDelayMask](1644546-anonymous/kvideoreplymicrosecdelaymask.md)
-- [kVideoUsageAddrSubAddrBit](1644546-anonymous/kvideousageaddrsubaddrbit.md)
-- [kVideoUsageAddrSubAddrMask](1644546-anonymous/kvideousageaddrsubaddrmask.md)
+- [kVideoReplyMicroSecDelayBit](./api-1644546-anonymous/kvideoreplymicrosecdelaybit.md)
+- [kVideoReplyMicroSecDelayMask](./api-1644546-anonymous/kvideoreplymicrosecdelaymask.md)
+- [kVideoUsageAddrSubAddrBit](./api-1644546-anonymous/kvideousageaddrsubaddrbit.md)
+- [kVideoUsageAddrSubAddrMask](./api-1644546-anonymous/kvideousageaddrsubaddrmask.md)
 
 
 ---

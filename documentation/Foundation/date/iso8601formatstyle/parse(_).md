@@ -1,7 +1,8 @@
 # parse(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses a string into a date.
 
@@ -51,7 +52,8 @@ let yourBirthday = try? birthdayFormatStyle.parse(yourBirthdayString)
 
 ## See Also
 
-- [var parseStrategy: Date.ISO8601FormatStyle](date/iso8601formatstyle/parsestrategy.md)
+### Parsing an ISO 8601 Format Style
+- [var parseStrategy: Date.ISO8601FormatStyle](./parsestrategy.md)
   The strategy used to parse a string into a date.
 
 

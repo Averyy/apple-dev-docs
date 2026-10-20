@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds animations to perform alongside the playback controls’ visibility animation.
@@ -12,7 +13,15 @@ Adds animations to perform alongside the playback controls’ visibility animati
 ## Declaration
 
 ```swift
+func addCoordinatedAnimations(_ animations: (() -> Void)?, completion: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func addCoordinatedAnimations(_ animations: (() -> Void)?) async -> Bool
+```
+
+```objc
+- (void) addCoordinatedAnimations:(void (^)()) animations completion:(void (^)(BOOL finished)) completion;
 ```
 
 ## Parameters

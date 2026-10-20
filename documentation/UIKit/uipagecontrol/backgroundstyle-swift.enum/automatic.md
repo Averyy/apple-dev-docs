@@ -1,7 +1,8 @@
 # UIPageControl.BackgroundStyle.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default background style, which adapts in response to changes in the page control’s interaction state.
 
@@ -18,11 +19,16 @@ The default background style, which adapts in response to changes in the page co
 case automatic
 ```
 
+```c
+UIPageControlBackgroundStyleAutomatic
+```
+
 ## See Also
 
-- [UIPageControl.BackgroundStyle.prominent](uipagecontrol/backgroundstyle-swift.enum/prominent.md)
+### Constants
+- [UIPageControl.BackgroundStyle.prominent](./prominent.md)
   The background style that shows a full background regardless of the interaction.
-- [UIPageControl.BackgroundStyle.minimal](uipagecontrol/backgroundstyle-swift.enum/minimal.md)
+- [UIPageControl.BackgroundStyle.minimal](./minimal.md)
   The background style that shows a minimal background regardless of the interaction.
 
 

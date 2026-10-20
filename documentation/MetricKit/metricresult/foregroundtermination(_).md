@@ -1,7 +1,8 @@
 # MetricResult.foregroundTermination(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,13 +18,14 @@ case foregroundTermination(ForegroundTerminationMetric)
 
 ## See Also
 
-- [case backgroundTermination(BackgroundTerminationMetric)](metricresult/backgroundtermination(_:).md)
-- [case totalForegroundTime(TotalForegroundTimeMetric)](metricresult/totalforegroundtime(_:).md)
-- [case totalBackgroundTime(TotalBackgroundTimeMetric)](metricresult/totalbackgroundtime(_:).md)
-- [case totalBackgroundAudioTime(TotalBackgroundAudioTimeMetric)](metricresult/totalbackgroundaudiotime(_:).md)
-- [case totalBackgroundLocationTime(TotalBackgroundLocationTimeMetric)](metricresult/totalbackgroundlocationtime(_:).md)
-- [case locationActivityTime(LocationActivityTimeMetric)](metricresult/locationactivitytime(_:).md)
-- [case signpostInterval(SignpostIntervalMetric)](metricresult/signpostinterval(_:).md)
+### App runtime
+- [case backgroundTermination(BackgroundTerminationMetric)](./backgroundtermination%28_%29.md)
+- [case totalForegroundTime(TotalForegroundTimeMetric)](./totalforegroundtime%28_%29.md)
+- [case totalBackgroundTime(TotalBackgroundTimeMetric)](./totalbackgroundtime%28_%29.md)
+- [case totalBackgroundAudioTime(TotalBackgroundAudioTimeMetric)](./totalbackgroundaudiotime%28_%29.md)
+- [case totalBackgroundLocationTime(TotalBackgroundLocationTimeMetric)](./totalbackgroundlocationtime%28_%29.md)
+- [case locationActivityTime(LocationActivityTimeMetric)](./locationactivitytime%28_%29.md)
+- [case signpostInterval(SignpostIntervalMetric)](./signpostinterval%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # removeAPISchema(_:instanceName:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a multi-apply API schema from this prim with the given instance name.
 
@@ -21,7 +22,7 @@ func removeAPISchema(_ schemaIdentifier: USDToken, instanceName: USDToken) throw
 
 #### Discussion
 
-> **Note**: An error if the schema cannot be removed.
+> **Throws**: An error if the schema cannot be removed.
 
 ## Parameters
 

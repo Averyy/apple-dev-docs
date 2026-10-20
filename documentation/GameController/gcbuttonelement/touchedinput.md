@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The input object that provides the touch state of the element.
@@ -20,9 +21,14 @@ The input object that provides the touch state of the element.
 var touchedInput: (any GCTouchedStateInput)? { get }
 ```
 
+```objc
+@property (readonly, nullable) id<GCTouchedStateInput> touchedInput;
+```
+
 ## See Also
 
-- [var pressedInput: any GCLinearInput & GCPressedStateInput](gcbuttonelement/pressedinput.md)
+### Getting input state
+- [var pressedInput: any GCLinearInput & GCPressedStateInput](./pressedinput.md)
   The input object that provides the linear and press state of the element.
 
 

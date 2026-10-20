@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Calculates and returns the current orientation of the pin relative to the pin’s owning entity, adjusted by the optional offset orientation.
 

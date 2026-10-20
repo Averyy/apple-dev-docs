@@ -1,12 +1,13 @@
 # percentageValueType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Percentage value (out of 100).
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0 (renamed: NSTextBlock.ValueType.percentage)
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Percentage value (out of 100).
 static var percentageValueType: NSTextBlock.ValueType { get }
 ```
 
+```c
+NSTextBlockPercentageValueType
+```
+
 ## See Also
 
-- [static var absoluteValueType: NSTextBlock.ValueType](nstextblock/valuetype/absolutevaluetype.md)
+### Constants
+- [static var absoluteValueType: NSTextBlock.ValueType](./absolutevaluetype.md)
   Absolute value in points.
 
 

@@ -1,7 +1,8 @@
 # NSSpellChecker.DidChangeAutomaticQuoteSubstitutionMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,15 +16,15 @@ struct DidChangeAutomaticQuoteSubstitutionMessage
 ## Topics
 
 ### Initializers
-- [init()](nsspellchecker/didchangeautomaticquotesubstitutionmessage/init.md)
+- [init()](./didchangeautomaticquotesubstitutionmessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

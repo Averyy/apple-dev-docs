@@ -1,7 +1,8 @@
 # init(insertionIndexPath:reuseIdentifier:rowHeight:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a placeholder object with the specified index path and cell-related information.
 
@@ -17,6 +18,10 @@ Creates a placeholder object with the specified index path and cell-related info
 init(insertionIndexPath: IndexPath, reuseIdentifier: String, rowHeight: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithInsertionIndexPath:(NSIndexPath *) insertionIndexPath reuseIdentifier:(NSString *) reuseIdentifier rowHeight:(CGFloat) rowHeight;
+```
+
 #### Return Value
 
 A new placeholder cell object.
@@ -25,7 +30,7 @@ A new placeholder cell object.
 
 - `insertionIndexPath`: The index path at which to insert the placeholder cell.
 - `reuseIdentifier`: The reuse identifier to use when dequeueing the cell. A cell with the specified identifier must be registered with the table prior to inserting the placeholder cell. You can register cells in your storyboard file or programmatically.
-- `rowHeight`: The initial height of the cell. Specify [`automaticDimension`](uitableview/automaticdimension.md) if your table uses estimated row heights and the placeholder cell is self-sizing.
+- `rowHeight`: The initial height of the cell. Specify [`automaticDimension`](../uitableview/automaticdimension.md) if your table uses estimated row heights and the placeholder cell is self-sizing.
 
 
 ---

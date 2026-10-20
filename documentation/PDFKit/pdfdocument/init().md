@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a `PDFDocument` object.
 
@@ -19,11 +20,16 @@ Initializes a `PDFDocument` object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init?(url: URL)](pdfdocument/init(url:)-98jte.md)
+### Initializing Documents
+- [init?(url: URL)](./init%28url%29-98jte.md)
   Initializes a `PDFDocument` object with the contents at the specified URL (if the URL is invalid, this method returns `NULL`).
-- [init?(data: Data)](pdfdocument/init(data:).md)
+- [init?(data: Data)](./init%28data%29.md)
   Initializes a `PDFDocument` object with the passed-in data.
 
 

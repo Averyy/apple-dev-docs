@@ -1,12 +1,15 @@
 # neuter
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A neutral voice (or a novelty voice with a humorous or whimsical quality).
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVSpeechSynthesizer in AVFoundation instead
 
 ## Declaration
 
@@ -14,11 +17,16 @@ A neutral voice (or a novelty voice with a humorous or whimsical quality).
 static let neuter: NSSpeechSynthesizer.VoiceGender
 ```
 
+```c
+extern NSVoiceGenderName const NSVoiceGenderNeuter;
+```
+
 ## See Also
 
-- [static let female: NSSpeechSynthesizer.VoiceGender](nsspeechsynthesizer/voicegender/female.md)
+### Gender Values
+- [static let female: NSSpeechSynthesizer.VoiceGender](./female.md)
   A female voice
-- [static let male: NSSpeechSynthesizer.VoiceGender](nsspeechsynthesizer/voicegender/male.md)
+- [static let male: NSSpeechSynthesizer.VoiceGender](./male.md)
   A male voice
 
 

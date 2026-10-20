@@ -1,12 +1,13 @@
 # NSLayoutConstraint.Orientation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The layout constraint orientation, either horizontal or vertical, that the constraint uses to enforce layout between objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,35 +15,40 @@ The layout constraint orientation, either horizontal or vertical, that the const
 enum Orientation
 ```
 
+```c
+enum NSLayoutConstraintOrientation : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSLayoutConstraint.Orientation.horizontal](nslayoutconstraint/orientation/horizontal.md)
+- [NSLayoutConstraint.Orientation.horizontal](./orientation/horizontal.md)
   The constraint orientation applied to laying out the horizontal relationship between objects.
-- [NSLayoutConstraint.Orientation.vertical](nslayoutconstraint/orientation/vertical.md)
+- [NSLayoutConstraint.Orientation.vertical](./orientation/vertical.md)
   The constraint orientation applied to laying out the vertical relationship between objects.
 ### Initializers
-- [init?(rawValue: Int)](nslayoutconstraint/orientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./orientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSLayoutConstraint.Relation](nslayoutconstraint/relation-swift.enum.md)
+### Constants
+- [NSLayoutConstraint.Relation](./relation-swift.enum.md)
   The relation between the first attribute and the modified second attribute in a constraint.
-- [NSLayoutConstraint.Attribute](nslayoutconstraint/attribute.md)
+- [NSLayoutConstraint.Attribute](./attribute.md)
   The part of the object’s visual representation that should be used to get the value for the constraint.
-- [NSLayoutConstraint.FormatOptions](nslayoutconstraint/formatoptions.md)
+- [NSLayoutConstraint.FormatOptions](./formatoptions.md)
   A bit mask that specifies both a part of an interface element to align and a direction for the alignment between two interface elements.
-- [struct NSEdgeInsets](../foundation/nsedgeinsets.md)
+- [struct NSEdgeInsets](../../Foundation/nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 
 

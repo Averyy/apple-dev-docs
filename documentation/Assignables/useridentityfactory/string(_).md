@@ -1,15 +1,16 @@
 # string(_:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Creates a [`StringUserIdentity`](stringuseridentity.md) with the given string value.
+Creates a [`StringUserIdentity`](../stringuseridentity.md) with the given string value.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

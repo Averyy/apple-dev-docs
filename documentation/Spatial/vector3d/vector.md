@@ -1,7 +1,8 @@
 # vector
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A simd three-element vector that contains the x-, y-, and z-element values.
 
@@ -20,13 +21,18 @@ A simd three-element vector that contains the x-, y-, and z-element values.
 var vector: simd_double3 { get set }
 ```
 
+```c
+simd_double3 vector;
+```
+
 ## See Also
 
-- [var x: Double](vector3d/x.md)
+### Inspecting a vector’s properties
+- [var x: Double](./x.md)
   The x-element value.
-- [var y: Double](vector3d/y.md)
+- [var y: Double](./y.md)
   The y-element value.
-- [var z: Double](vector3d/z.md)
+- [var z: Double](./z.md)
   The z-element value.
 
 

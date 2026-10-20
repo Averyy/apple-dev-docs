@@ -1,7 +1,8 @@
 # authorizationStatus(for:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines the authorization status for the given entity type.
 
@@ -19,6 +20,10 @@ Determines the authorization status for the given entity type.
 class func authorizationStatus(for entityType: EKEntityType) -> EKAuthorizationStatus
 ```
 
+```objc
++ (EKAuthorizationStatus) authorizationStatusForEntityType:(EKEntityType) entityType;
+```
+
 #### Return Value
 
 The app’s authorization status of the given type.
@@ -29,21 +34,22 @@ The app’s authorization status of the given type.
 
 ## See Also
 
-- [func requestWriteOnlyAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
+### Requesting access to events and reminders
+- [func requestWriteOnlyAccessToEvents(completion: (Bool, (any Error)?) -> Void)](./requestwriteonlyaccesstoevents%28completion%29.md)
   Prompts the person using your app to grant or deny write access to event data.
-- [func requestFullAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestfullaccesstoevents(completion:).md)
+- [func requestFullAccessToEvents(completion: (Bool, (any Error)?) -> Void)](./requestfullaccesstoevents%28completion%29.md)
   Prompts people to grant or deny read and write access to event data.
-- [func requestFullAccessToReminders(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestfullaccesstoreminders(completion:).md)
+- [func requestFullAccessToReminders(completion: (Bool, (any Error)?) -> Void)](./requestfullaccesstoreminders%28completion%29.md)
   Prompts people to grant or deny read and write access to reminders.
-- [enum EKAuthorizationStatus](ekauthorizationstatus.md)
+- [enum EKAuthorizationStatus](../ekauthorizationstatus.md)
   The current authorization status for a specific entity type.
-- [typealias EKEventStoreRequestAccessCompletionHandler](ekeventstorerequestaccesscompletionhandler.md)
+- [typealias EKEventStoreRequestAccessCompletionHandler](../ekeventstorerequestaccesscompletionhandler.md)
   The signature for a closure that EventKit calls when requesting access to event and reminder data.
-- [NSCalendarsFullAccessUsageDescription](../bundleresources/information-property-list/nscalendarsfullaccessusagedescription.md)
+- [NSCalendarsFullAccessUsageDescription](../../BundleResources/information-property-list/nscalendarsfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their calendar data.
-- [NSCalendarsWriteOnlyAccessUsageDescription](../bundleresources/information-property-list/nscalendarswriteonlyaccessusagedescription.md)
+- [NSCalendarsWriteOnlyAccessUsageDescription](../../BundleResources/information-property-list/nscalendarswriteonlyaccessusagedescription.md)
   A message that tells people why the app is requesting access to create calendar events.
-- [NSRemindersFullAccessUsageDescription](../bundleresources/information-property-list/nsremindersfullaccessusagedescription.md)
+- [NSRemindersFullAccessUsageDescription](../../BundleResources/information-property-list/nsremindersfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their reminders data.
 
 

@@ -1,7 +1,8 @@
 # Free space atom ('free')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that designates unused space in the movie data file.
 
@@ -12,18 +13,19 @@ Both `free` and `skip` atoms designate unused space in the movie data file. Thes
 ## Topics
 
 ### Data fields
-- [Size](free_space_atom/size.md)
+- [Size](./free_space_atom/size.md)
   A 32-bit integer that specifies the number of bytes in the atom.
-- [Type](free_space_atom/type.md)
+- [Type](./free_space_atom/type.md)
   A 32-bit integer that identifies the atom type.
-- [Free space](free_space_atom/free_space.md)
+- [Free space](./free_space_atom/free_space.md)
   Bytes of free space.
 
 ## See Also
 
-- [Skip atom ('skip')](skip_atom.md)
+### Setting free space
+- [Skip atom ('skip')](./skip_atom.md)
   An atom that designates unused space in the movie data file.
-- [Wide atom ('wide')](wide_atom.md)
+- [Wide atom ('wide')](./wide_atom.md)
   An atom that designates reserved space in the movie data file.
 
 

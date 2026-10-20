@@ -1,16 +1,17 @@
 # UIKeyboardAppearance
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the appearance of the keyboard for a text-based view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,49 +19,54 @@ Constants that specify the appearance of the keyboard for a text-based view.
 enum UIKeyboardAppearance
 ```
 
+```c
+enum UIKeyboardAppearance : NSInteger;
+```
+
 #### Overview
 
-Use these constants with the [`keyboardAppearance`](uitextinputtraits/keyboardappearance.md) property.
+Use these constants with the [`keyboardAppearance`](./uitextinputtraits/keyboardappearance.md) property.
 
 ## Topics
 
 ### Constants
-- [UIKeyboardAppearance.default](uikeyboardappearance/default.md)
+- [UIKeyboardAppearance.default](./uikeyboardappearance/default.md)
   Specifies the default keyboard appearance for the current input method.
-- [UIKeyboardAppearance.dark](uikeyboardappearance/dark.md)
+- [UIKeyboardAppearance.dark](./uikeyboardappearance/dark.md)
   Specifies a keyboard appearance suitable for a dark UI look.
-- [UIKeyboardAppearance.light](uikeyboardappearance/light.md)
+- [UIKeyboardAppearance.light](./uikeyboardappearance/light.md)
   Specifies a keyboard appearance suitable for a light UI look.
-- [static var alert: UIKeyboardAppearance](uikeyboardappearance/alert.md)
+- [static var alert: UIKeyboardAppearance](./uikeyboardappearance/alert.md)
   Specifies a keyboard appearance suitable for an alert panel.
 ### Initializers
-- [init?(rawValue: Int)](uikeyboardappearance/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uikeyboardappearance/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var keyboardType: UIKeyboardType](uitextinputtraits/keyboardtype.md)
+### Configuring the keyboard appearance
+- [var keyboardType: UIKeyboardType](./uitextinputtraits/keyboardtype.md)
   The keyboard type for the text object.
-- [enum UIKeyboardType](uikeyboardtype.md)
+- [enum UIKeyboardType](./uikeyboardtype.md)
   Constants that specify the type of keyboard to display for a text-based view.
-- [var keyboardAppearance: UIKeyboardAppearance](uitextinputtraits/keyboardappearance.md)
+- [var keyboardAppearance: UIKeyboardAppearance](./uitextinputtraits/keyboardappearance.md)
   The appearance style of the keyboard for the text object.
-- [var returnKeyType: UIReturnKeyType](uitextinputtraits/returnkeytype.md)
+- [var returnKeyType: UIReturnKeyType](./uitextinputtraits/returnkeytype.md)
   The visible indication of what the Return key does.
-- [enum UIReturnKeyType](uireturnkeytype.md)
+- [enum UIReturnKeyType](./uireturnkeytype.md)
   Constants that specify the type of Return key the keyboard displays.
-- [var textContentType: UITextContentType!](uitextinputtraits/textcontenttype.md)
+- [var textContentType: UITextContentType!](./uitextinputtraits/textcontenttype.md)
   The semantic meaning for a text input area.
-- [struct UITextContentType](uitextcontenttype.md)
+- [struct UITextContentType](./uitextcontenttype.md)
   Constants that identify the semantic meaning for a text-entry area.
 
 

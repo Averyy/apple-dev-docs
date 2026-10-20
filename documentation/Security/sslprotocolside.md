@@ -1,7 +1,8 @@
 # SSLProtocolSide
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The flags that indicate whether a context is for the server or client side of a connection.
 
@@ -16,29 +17,33 @@ The flags that indicate whether a context is for the server or client side of a 
 enum SSLProtocolSide
 ```
 
+```c
+enum SSLProtocolSide : int;
+```
+
 #### Overview
 
-Use one of these flags with the [`SSLCreateContext(_:_:_:)`](sslcreatecontext(_:_:_:).md) function to indicate whether the context is intended for the server side or client side of a connection.
+Use one of these flags with the [`SSLCreateContext(_:_:_:)`](./sslcreatecontext%28_,_,_%29.md) function to indicate whether the context is intended for the server side or client side of a connection.
 
 ## Topics
 
 ### Constants
-- [SSLProtocolSide.serverSide](sslprotocolside/serverside.md)
+- [SSLProtocolSide.serverSide](./sslprotocolside/serverside.md)
   Server side.
-- [SSLProtocolSide.clientSide](sslprotocolside/clientside.md)
+- [SSLProtocolSide.clientSide](./sslprotocolside/clientside.md)
   Client side.
 ### Initializers
-- [init?(rawValue: Int32)](sslprotocolside/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./sslprotocolside/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

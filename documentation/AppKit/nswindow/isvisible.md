@@ -1,12 +1,13 @@
 # isVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window is visible onscreen (even when it’s obscured by other windows).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,21 @@ A Boolean value that indicates whether the window is visible onscreen (even when
 var isVisible: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isVisible) BOOL visible;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window is onscreen (even if it’s obscured by other windows); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) when the window is onscreen (even if it’s obscured by other windows); otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var visibleRect: NSRect](nsview/visiblerect.md)
+### Related Documentation
+- [var visibleRect: NSRect](../nsview/visiblerect.md)
   The portion of the view that isn’t clipped by its superviews.
-- [var occlusionState: NSWindow.OcclusionState](nswindow/occlusionstate-swift.property.md)
+### Managing Window Visibility and Occlusion State
+- [var occlusionState: NSWindow.OcclusionState](./occlusionstate-swift.property.md)
   The occlusion state of the window.
 
 

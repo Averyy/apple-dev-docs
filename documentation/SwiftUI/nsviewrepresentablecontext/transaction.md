@@ -1,7 +1,8 @@
 # transaction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current transaction.
 
@@ -17,7 +18,8 @@ The current transaction.
 
 ## See Also
 
-- [let coordinator: View.Coordinator](nsviewrepresentablecontext/coordinator.md)
+### Coordinating view-related interactions
+- [let coordinator: View.Coordinator](./coordinator.md)
   An instance you use to communicate your AppKit view’s behavior and state out to SwiftUI objects.
 
 

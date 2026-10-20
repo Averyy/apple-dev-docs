@@ -1,14 +1,15 @@
 # ipc_info_tree_name_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ipc_info_tree_name {
     ...
 } ipc_info_tree_name_t;
@@ -17,9 +18,9 @@ typedef struct ipc_info_tree_name {
 ## Topics
 
 ### Instance Properties
-- [iitn_lchild](ipc_info_tree_name_t/1563467-iitn_lchild.md)
-- [iitn_name](ipc_info_tree_name_t/1563481-iitn_name.md)
-- [iitn_rchild](ipc_info_tree_name_t/1563479-iitn_rchild.md)
+- [iitn_lchild](./ipc_info_tree_name_t/api-1563467-iitn_lchild.md)
+- [iitn_name](./ipc_info_tree_name_t/api-1563481-iitn_name.md)
+- [iitn_rchild](./ipc_info_tree_name_t/api-1563479-iitn_rchild.md)
 
 
 ---

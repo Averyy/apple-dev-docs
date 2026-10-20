@@ -1,7 +1,8 @@
 # parentJointName(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the parent joint of the joint name you specify.
 

@@ -1,7 +1,8 @@
 # SHSession.Result
 
 **Framework**: ShazamKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifies the result from an asynchronous sequence result.
 
@@ -24,22 +25,23 @@ enum Result
 ## Topics
 
 ### Constants
-- [SHSession.Result.match(_:)](shsession/result/match(_:).md)
+- [SHSession.Result.match(_:)](./result/match%28_%29.md)
   A type that indicates a session match.
-- [SHSession.Result.noMatch(_:)](shsession/result/nomatch(_:).md)
+- [SHSession.Result.noMatch(_:)](./result/nomatch%28_%29.md)
   A type that indicates there’s no match for the signature.
-- [case error(any Error, SHSignature)](shsession/result/error(_:_:).md)
+- [case error(any Error, SHSignature)](./result/error%28_,_%29.md)
   A type that indicates a session error.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func result(from: SHSignature) async -> SHSession.Result](shsession/result(from:).md)
+### Returning queries
+- [func result(from: SHSignature) async -> SHSession.Result](./result%28from%29.md)
   Performs an asynchronous match with a signature you specify.
 
 

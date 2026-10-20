@@ -1,7 +1,8 @@
 # overlayContentView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view for hosting layered content on top of the image view.
 
@@ -14,11 +15,15 @@ A view for hosting layered content on top of the image view.
 var overlayContentView: UIView { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UIView * overlayContentView;
+```
+
 #### Discussion
 
-Use this view to host content that you want layered on top of the image view. This view is managed by the image view itself and is automatically sized to fill the image view’s frame rectangle. Add your subviews and use layout constraints to position them within the view. When the [`adjustsImageWhenAncestorFocused`](uiimageview/adjustsimagewhenancestorfocused.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the overlay view receives the same floating effects as the image view when it’s focused.
+Use this view to host content that you want layered on top of the image view. This view is managed by the image view itself and is automatically sized to fill the image view’s frame rectangle. Add your subviews and use layout constraints to position them within the view. When the [`adjustsImageWhenAncestorFocused`](./adjustsimagewhenancestorfocused.md) property is [`true`](../../Swift/true.md), the overlay view receives the same floating effects as the image view when it’s focused.
 
-The view in this property clips its subviews to its bounds rectangle by default, but you can change that behavior using the [`clipsToBounds`](uiview/clipstobounds.md) property.
+The view in this property clips its subviews to its bounds rectangle by default, but you can change that behavior using the [`clipsToBounds`](../uiview/clipstobounds.md) property.
 
 
 ---

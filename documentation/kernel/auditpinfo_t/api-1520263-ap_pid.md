@@ -1,14 +1,15 @@
 # ap_pid
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 pid_t ap_pid;
 ```
 

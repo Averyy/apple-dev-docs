@@ -1,7 +1,8 @@
 # rotatedBy(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new direction structure that adds the specified rotation angle to the current direction’s value.
 

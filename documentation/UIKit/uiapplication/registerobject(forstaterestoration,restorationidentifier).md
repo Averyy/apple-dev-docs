@@ -1,7 +1,8 @@
 # registerObject(forStateRestoration:restorationIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers a custom object for use with the state restoration system.
 
@@ -9,7 +10,7 @@ Registers a custom object for use with the state restoration system.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,26 +19,31 @@ Registers a custom object for use with the state restoration system.
 class func registerObject(forStateRestoration object: any UIStateRestoring, restorationIdentifier: String)
 ```
 
+```objc
++ (void) registerObjectForStateRestoration:(id<UIStateRestoring>) object restorationIdentifier:(NSString *) restorationIdentifier;
+```
+
 ## Mentions
 
-- [About the UI preservation process](about-the-ui-preservation-process.md)
+- [About the UI preservation process](../about-the-ui-preservation-process.md)
 
 #### Discussion
 
-You use this method to register objects that you want to save as part of the overall state restoration process. Registering the object makes it available for inclusion in the restoration archive but does not automatically include it. To include the object, refer to it from one of your other interface objects. For example, you might write out a reference to the object from the [`encodeRestorableState(with:)`](uiviewcontroller/encoderestorablestate(with:).md) method of one of your view controllers.
+You use this method to register objects that you want to save as part of the overall state restoration process. Registering the object makes it available for inclusion in the restoration archive but does not automatically include it. To include the object, refer to it from one of your other interface objects. For example, you might write out a reference to the object from the [`encodeRestorableState(with:)`](../uiviewcontroller/encoderestorablestate%28with%29.md) method of one of your view controllers.
 
 ## Parameters
 
-- `object`: The object to be registered with the restoration archive. The object must adopt the [`UIStateRestoring`](uistaterestoring.md) protocol. This parameter must not be `nil`.
+- `object`: The object to be registered with the restoration archive. The object must adopt the [`UIStateRestoring`](../uistaterestoring.md) protocol. This parameter must not be `nil`.
 - `restorationIdentifier`: The restoration identifier for the object. UIKit uses this parameter to distinguish the object from other objects in the archive. This parameter must not be `nil`.
 
 ## See Also
 
-- [func extendStateRestoration()](uiapplication/extendstaterestoration.md)
+### Managing state restoration
+- [func extendStateRestoration()](./extendstaterestoration%28%29.md)
   Tells the app that your code is restoring state asynchronously.
-- [func completeStateRestoration()](uiapplication/completestaterestoration.md)
+- [func completeStateRestoration()](./completestaterestoration%28%29.md)
   Tells the app that your code has finished any asynchronous state restoration.
-- [func ignoreSnapshotOnNextApplicationLaunch()](uiapplication/ignoresnapshotonnextapplicationlaunch.md)
+- [func ignoreSnapshotOnNextApplicationLaunch()](./ignoresnapshotonnextapplicationlaunch%28%29.md)
   Prevents the app from using the recent snapshot image during the next launch cycle.
 
 

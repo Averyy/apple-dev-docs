@@ -1,7 +1,8 @@
 # IOUserVideoSelectorValueDescription
 
 **Framework**: VideoDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A selector control’s value and name.
 
@@ -10,7 +11,7 @@ A selector control’s value and name.
 
 ## Declaration
 
-```swift
+```c
 struct IOUserVideoSelectorValueDescription;
 ```
 
@@ -21,26 +22,27 @@ struct IOUserVideoSelectorValueDescription;
 ## Topics
 
 ### Accessing description properties
-- [m_name](iouservideoselectorvaluedescription/m_name.md)
-- [m_value](iouservideoselectorvaluedescription/m_value.md)
-- [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+- [m_name](./iouservideoselectorvaluedescription/m_name.md)
+- [m_value](./iouservideoselectorvaluedescription/m_value.md)
+- [IOUserVideoSelectorValue](./iouservideoselectorvalue.md)
   Selector value for controls.
 
 ## See Also
 
-- [SetCurrentSelectedValues](iouservideoselectorcontrol/setcurrentselectedvalues.md)
+### Accessing the value
+- [SetCurrentSelectedValues](./iouservideoselectorcontrol/setcurrentselectedvalues.md)
   Sets the current control value.
-- [GetCurrentSelectedValues](iouservideoselectorcontrol/getcurrentselectedvalues.md)
+- [GetCurrentSelectedValues](./iouservideoselectorcontrol/getcurrentselectedvalues.md)
   Gets the current selected values of the control.
-- [IOUserVideoSelectorValue](iouservideoselectorvalue.md)
+- [IOUserVideoSelectorValue](./iouservideoselectorvalue.md)
   Selector value for controls.
-- [GetControlValuesCount](iouservideoselectorcontrol/getcontrolvaluescount.md)
+- [GetControlValuesCount](./iouservideoselectorcontrol/getcontrolvaluescount.md)
   Gets the number of available selector control values.
-- [AddControlValueDescriptions](iouservideoselectorcontrol/addcontrolvaluedescriptions.md)
+- [AddControlValueDescriptions](./iouservideoselectorcontrol/addcontrolvaluedescriptions.md)
   Adds control value descriptions to the selector control.
-- [RemoveControlValueDescriptions](iouservideoselectorcontrol/removecontrolvaluedescriptions.md)
+- [RemoveControlValueDescriptions](./iouservideoselectorcontrol/removecontrolvaluedescriptions.md)
   Removes selector control values from the selector control.
-- [GetControlValueDescriptions](iouservideoselectorcontrol/getcontrolvaluedescriptions.md)
+- [GetControlValueDescriptions](./iouservideoselectorcontrol/getcontrolvaluedescriptions.md)
   Gets the selector values for the control.
 
 

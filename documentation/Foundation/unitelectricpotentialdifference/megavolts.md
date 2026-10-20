@@ -1,7 +1,8 @@
 # megavolts
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The megavolts unit of electric potential difference.
 
@@ -21,15 +22,20 @@ The megavolts unit of electric potential difference.
 class var megavolts: UnitElectricPotentialDifference { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitElectricPotentialDifference * megavolts;
+```
+
 ## See Also
 
-- [class var kilovolts: UnitElectricPotentialDifference](unitelectricpotentialdifference/kilovolts.md)
+### Accessing Predefined Units
+- [class var kilovolts: UnitElectricPotentialDifference](./kilovolts.md)
   The kilovolts unit of electric potential difference.
-- [class var volts: UnitElectricPotentialDifference](unitelectricpotentialdifference/volts.md)
+- [class var volts: UnitElectricPotentialDifference](./volts.md)
   The volts unit of electric potential difference.
-- [class var millivolts: UnitElectricPotentialDifference](unitelectricpotentialdifference/millivolts.md)
+- [class var millivolts: UnitElectricPotentialDifference](./millivolts.md)
   The millivolts unit of electric potential difference.
-- [class var microvolts: UnitElectricPotentialDifference](unitelectricpotentialdifference/microvolts.md)
+- [class var microvolts: UnitElectricPotentialDifference](./microvolts.md)
   The microvolts unit of electric potential difference.
 
 

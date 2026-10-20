@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional display name to present for the preview item.
 

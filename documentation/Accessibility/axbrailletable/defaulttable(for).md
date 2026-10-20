@@ -1,7 +1,8 @@
 # defaultTable(for:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The default table that provides translations for the given locale’s language. Returns nil if there is none.
 
@@ -18,6 +19,10 @@ The default table that provides translations for the given locale’s language. 
 
 ```swift
 class func defaultTable(for locale: Locale) -> AXBrailleTable?
+```
+
+```objc
++ (AXBrailleTable *) defaultTableForLocale:(NSLocale *) locale;
 ```
 
 

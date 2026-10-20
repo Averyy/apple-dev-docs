@@ -1,7 +1,8 @@
 # contentRating
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rating of the content.
 

@@ -1,7 +1,8 @@
 # kMDItemDueDate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Date this item is due. A CFDate.
 
@@ -12,6 +13,10 @@ Date this item is due. A CFDate.
 
 ```swift
 let kMDItemDueDate: CFString!
+```
+
+```c
+const CFStringRef kMDItemDueDate;
 ```
 
 

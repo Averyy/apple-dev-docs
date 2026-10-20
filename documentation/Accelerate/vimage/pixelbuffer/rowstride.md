@@ -1,7 +1,8 @@
 # rowStride
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width, in pixels, of the underlying memory, including any additional row byte padding.
 
@@ -11,7 +12,7 @@ The width, in pixels, of the underlying memory, including any additional row byt
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,13 +21,15 @@ The width, in pixels, of the underlying memory, including any additional row byt
 var rowStride: Int { get }
 ```
 
+Available when `Format` conforms to `StaticPixelFormat`.
+
 #### Discussion
 
-Use this property when working with the [`AccelerateBuffer`](acceleratebuffer.md) and [`AccelerateMutableBuffer`](acceleratemutablebuffer.md) functions. The property allows you to limit work you do on the underlying memory of a pixel buffer to just the visible pixels.
+Use this property when working with the [`AccelerateBuffer`](../../acceleratebuffer.md) and [`AccelerateMutableBuffer`](../../acceleratemutablebuffer.md) functions. The property allows you to limit work you do on the underlying memory of a pixel buffer to just the visible pixels.
 
-In some cases, vImage adds extra bytes at the end of each row. Use [`rowStride`](vimage/pixelbuffer/rowstride.md) to find the width, in pixels, of the memory pointed to by the vImage buffer’s [`data`](vimage_buffer/data.md) property.
+In some cases, vImage adds extra bytes at the end of each row. Use [`rowStride`](./rowstride.md) to find the width, in pixels, of the memory pointed to by the vImage buffer’s [`data`](../../vimage_buffer/data.md) property.
 
-For example, the following code creates a 5 x 1 [`vImage.InterleavedFx2`](vimage/interleavedfx2.md) buffer that contains the pixel values `(1, 2)`, `(3, 4)`, `(5, 6)`, `(7, 8)`, and `(9, 10)`:
+For example, the following code creates a 5 x 1 [`vImage.InterleavedFx2`](../interleavedfx2.md) buffer that contains the pixel values `(1, 2)`, `(3, 4)`, `(5, 6)`, `(7, 8)`, and `(9, 10)`:
 
 ```swift
  let values: [Float] = [1, 2,  3, 4,  5, 6,  7, 8,  9, 10]
@@ -35,17 +38,17 @@ For example, the following code creates a 5 x 1 [`vImage.InterleavedFx2`](vimage
                                  pixelFormat: vImage.InterleavedFx2.self)
 ```
 
-In this case, the [`rowStride`](vimage/pixelbuffer/rowstride.md) is `8`. This equates to the buffer’s [`rowBytes`](vimage_buffer/rowbytes.md) property of `64`.
+In this case, the [`rowStride`](./rowstride.md) is `8`. This equates to the buffer’s [`rowBytes`](../../vimage_buffer/rowbytes.md) property of `64`.
 
-Each pixel contains two 32-bit values, which is equivalent to 8 bytes per pixel, and 8 bytes per pixel multiplied by the [`rowStride`](vimage/pixelbuffer/rowstride.md) of 8 pixels equals 64.
+Each pixel contains two 32-bit values, which is equivalent to 8 bytes per pixel, and 8 bytes per pixel multiplied by the [`rowStride`](./rowstride.md) of 8 pixels equals 64.
 
-##### Working with the Underlying Row Bytes Property
+##### Working with the underlying row-bytes property.
 
-If you’re accessing the underlying bytes of a pixel buffer, note that the [`rowStride`](vimage/pixelbuffer/rowstride.md) `*` [`channelCount`](vimage/pixelbuffer/channelcount.md) `*` [`bitCountPerPixel`](staticpixelformat/bitcountperpixel.md) may not correspond to the [`rowBytes`](vimage_buffer/rowbytes.md) properly of the underlying [`vImage_Buffer`](vimage_buffer.md). This may happen when the integer row stride multiplied by the number of bytes per pixel isn’t a factor of the row bytes.
+If you’re accessing the underlying bytes of a pixel buffer, note that the [`rowStride`](./rowstride.md) `*` [`channelCount`](./channelcount.md) `*` [`bitCountPerPixel`](../../staticpixelformat/bitcountperpixel.md) may not correspond to the [`rowBytes`](../../vimage_buffer/rowbytes.md) properly of the underlying [`vImage_Buffer`](../../vimage_buffer.md). This may happen when the integer row stride multiplied by the number of bytes per pixel isn’t a factor of the row bytes.
 
-In this case, use the [`withUnsafeVImageBuffer(_:)`](vimage/pixelbuffer/withunsafevimagebuffer(_:).md) function to access the underlying vImage buffer.
+In this case, use the [`withUnsafeVImageBuffer(_:)`](./withunsafevimagebuffer%28_%29.md) function to access the underlying vImage buffer.
 
-For example, the following code creates a 3-channel, 8-bit-per-channel 5 x 5 pixel buffer. The code uses the [`rowStride`](vimage/pixelbuffer/rowstride.md) property to fill the buffer with the constant value `99`. The pixel buffer’s underlying bytes per row is `16`, but because the [`rowStride`](vimage/pixelbuffer/rowstride.md) property returns `5`, the code calculates `5 * 3` or `15` bytes per row. Although the code correctly calculates the `5 * 5 * 3` elements, it doesn’t consider the row padding.
+For example, the following code creates a 3-channel, 8-bit-per-channel 5 x 5 pixel buffer. The code uses the [`rowStride`](./rowstride.md) property to fill the buffer with the constant value `99`. The pixel buffer’s underlying bytes per row is `16`, but because the [`rowStride`](./rowstride.md) property returns `5`, the code calculates `5 * 3` or `15` bytes per row. Although the code correctly calculates the `5 * 5 * 3` elements, it doesn’t consider the row padding.
 
 ```swift
 let width = 5
@@ -66,9 +69,9 @@ pixelBuffer.withUnsafeMutableBufferPointer { buf in
 }
 ```
 
-After the loop completes, the last four elements of the pixel buffer’s [`array`](vimage/pixelbuffer/array.md) are `0`. For more information on how the vImage library adds additional padding to a buffer’s memory, see [`vImage_Buffer`](vimage_buffer.md).
+After the loop completes, the last four elements of the pixel buffer’s [`array`](./array.md) are `0`. For more information on how the vImage library adds additional padding to a buffer’s memory, see [`vImage_Buffer`](../../vimage_buffer.md).
 
-The code below performs a similar loop to that above, but uses the [`rowBytes`](vimage_buffer/rowbytes.md) property to determine the length of the loop. In this case, the code successfully fills the entire buffer with the value `99`.
+The code below performs a similar loop to that above, but uses the [`rowBytes`](../../vimage_buffer/rowbytes.md) property to determine the length of the loop. In this case, the code successfully fills the entire buffer with the value `99`.
 
 ```swift
 pixelBuffer.withUnsafeVImageBuffer {
@@ -88,19 +91,20 @@ pixelBuffer.withUnsafeVImageBuffer {
 
 ## See Also
 
-- [var width: Int](vimage/pixelbuffer/width.md)
+### Inspecting a pixel buffer
+- [var width: Int](./width.md)
   The width of the pixel buffer.
-- [var height: Int](vimage/pixelbuffer/height.md)
+- [var height: Int](./height.md)
   The height of the pixel buffer.
-- [var size: vImage.Size](vimage/pixelbuffer/size.md)
+- [var size: vImage.Size](./size.md)
   The size of the pixel buffer.
-- [var channelCount: Int](vimage/pixelbuffer/channelcount.md)
+- [var channelCount: Int](./channelcount.md)
   Returns the number of channels.
-- [var byteCountPerPixel: Int](vimage/pixelbuffer/bytecountperpixel.md)
+- [var byteCountPerPixel: Int](./bytecountperpixel.md)
   Returns the number of bytes per pixel.
-- [var count: Int](vimage/pixelbuffer/count.md)
+- [var count: Int](./count.md)
   The total number of pixels multiplied by the number of channels in the buffer, including any row padding.
-- [var array: [Format.ComponentType]](vimage/pixelbuffer/array.md)
+- [var array: [Format.ComponentType]](./array.md)
   An array of `width * height * channelCount` values that’s a copy of the buffer’s visible contents.
 
 

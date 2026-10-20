@@ -1,7 +1,8 @@
 # GameCenterAchievementLocalizationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a achievement resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a achievement resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationCreateRequest.Data.Attributes
 ```
 
@@ -18,12 +19,13 @@ object GameCenterAchievementLocalizationCreateRequest.Data.Attributes
 
 - `afterEarnedDescription` (string) *(required)*
 - `beforeEarnedDescription` (string) *(required)*
-- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string) *(required)*: The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `name` (string) *(required)*
 
 ## See Also
 
-- [object GameCenterAchievementLocalizationCreateRequest.Data.Relationships](gamecenterachievementlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementLocalizationCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

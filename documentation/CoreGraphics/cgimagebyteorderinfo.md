@@ -1,14 +1,15 @@
 # CGImageByteOrderInfo
 
 **Framework**: Core Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,66 +19,71 @@
 enum CGImageByteOrderInfo
 ```
 
+```c
+enum CGImageByteOrderInfo : uint32_t;
+```
+
 ## Topics
 
 ### Constants
-- [CGImageByteOrderInfo.order16Big](cgimagebyteorderinfo/order16big.md)
-- [CGImageByteOrderInfo.order16Little](cgimagebyteorderinfo/order16little.md)
-- [CGImageByteOrderInfo.order32Big](cgimagebyteorderinfo/order32big.md)
-- [CGImageByteOrderInfo.order32Little](cgimagebyteorderinfo/order32little.md)
-- [CGImageByteOrderInfo.orderMask](cgimagebyteorderinfo/ordermask.md)
-- [CGImageByteOrderInfo.orderDefault](cgimagebyteorderinfo/orderdefault.md)
+- [CGImageByteOrderInfo.order16Big](./cgimagebyteorderinfo/order16big.md)
+- [CGImageByteOrderInfo.order16Little](./cgimagebyteorderinfo/order16little.md)
+- [CGImageByteOrderInfo.order32Big](./cgimagebyteorderinfo/order32big.md)
+- [CGImageByteOrderInfo.order32Little](./cgimagebyteorderinfo/order32little.md)
+- [CGImageByteOrderInfo.orderMask](./cgimagebyteorderinfo/ordermask.md)
+- [CGImageByteOrderInfo.orderDefault](./cgimagebyteorderinfo/orderdefault.md)
 ### Initializers
-- [init?(rawValue: UInt32)](cgimagebyteorderinfo/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./cgimagebyteorderinfo/init%28rawvalue%29.md)
 ### Type Properties
-- [static var order16Host: CGImageByteOrderInfo](cgimagebyteorderinfo/order16host.md)
-- [static var order32Host: CGImageByteOrderInfo](cgimagebyteorderinfo/order32host.md)
+- [static var order16Host: CGImageByteOrderInfo](./cgimagebyteorderinfo/order16host.md)
+- [static var order32Host: CGImageByteOrderInfo](./cgimagebyteorderinfo/order32host.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CGCaptureOptions](cgcaptureoptions.md)
+### Enumerations
+- [struct CGCaptureOptions](./cgcaptureoptions.md)
   Configuration parameters that are used when capturing displays.
-- [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
+- [enum CGColorConversionInfoTransformType](./cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
-- [enum CGColorRenderingIntent](cgcolorrenderingintent.md)
+- [enum CGColorRenderingIntent](./cgcolorrenderingintent.md)
   Handling options for colors that are not located within the destination color space of a graphics context.
-- [struct CGConfigureOption](cgconfigureoption.md)
+- [struct CGConfigureOption](./cgconfigureoption.md)
   The scope of the changes in a display configuration transaction.
-- [struct CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags.md)
+- [struct CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags.md)
   The configuration parameters that are passed to a display reconfiguration callback function.
-- [enum CGDisplayStreamFrameStatus](cgdisplaystreamframestatus.md)
+- [enum CGDisplayStreamFrameStatus](./cgdisplaystreamframestatus.md)
   Describes a frame update event.
-- [enum CGDisplayStreamUpdateRectType](cgdisplaystreamupdaterecttype.md)
+- [enum CGDisplayStreamUpdateRectType](./cgdisplaystreamupdaterecttype.md)
   Use these constants to determine which rectangles your app is interested in.
-- [enum CGError](cgerror.md)
+- [enum CGError](./cgerror.md)
   A uniform type for result codes returned by functions in Core Graphics.
-- [enum CGEventField](cgeventfield.md)
+- [enum CGEventField](./cgeventfield.md)
   Constants used as keys to access specialized fields in low-level events.
-- [struct CGEventFilterMask](cgeventfiltermask.md)
+- [struct CGEventFilterMask](./cgeventfiltermask.md)
   Specify masks for classes of low-level events that can be filtered during event suppression states.
-- [struct CGEventFlags](cgeventflags.md)
+- [struct CGEventFlags](./cgeventflags.md)
   Constants that indicate the modifier key state at the time an event is created, as well as other event-related states.
-- [enum CGEventMouseSubtype](cgeventmousesubtype.md)
-  Constants used with the [`CGEventField.mouseEventSubtype`](cgeventfield/mouseeventsubtype.md) event field.
-- [enum CGEventSourceStateID](cgeventsourcestateid.md)
+- [enum CGEventMouseSubtype](./cgeventmousesubtype.md)
+  Constants used with the [`CGEventField.mouseEventSubtype`](./cgeventfield/mouseeventsubtype.md) event field.
+- [enum CGEventSourceStateID](./cgeventsourcestateid.md)
   Constants that specify the possible source states of an event source.
-- [enum CGEventSuppressionState](cgeventsuppressionstate.md)
+- [enum CGEventSuppressionState](./cgeventsuppressionstate.md)
   Specify the event suppression states that can occur after posting an event.
-- [enum CGEventTapLocation](cgeventtaplocation.md)
+- [enum CGEventTapLocation](./cgeventtaplocation.md)
   Constants that specify possible tapping points for events.
 
 

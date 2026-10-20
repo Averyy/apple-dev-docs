@@ -1,7 +1,8 @@
 # topLevelDictionaryAssumed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the parser assumes the top level of the JSON data is a dictionary, even if it doesn’t begin and end with curly braces.
 
@@ -20,33 +21,38 @@ Specifies that the parser assumes the top level of the JSON data is a dictionary
 static var topLevelDictionaryAssumed: JSONSerialization.ReadingOptions { get }
 ```
 
+```c
+NSJSONReadingTopLevelDictionaryAssumed
+```
+
 #### Discussion
 
-This is an extension to JSON5 that isn’t part of the specification. [`AttributedString`](attributedstring.md) uses this option, along with [`json5Allowed`](jsonserialization/readingoptions/json5allowed.md), to support the use of JSON5 inside Markdown strings that use multiple custom attributes. Using [`topLevelDictionaryAssumed`](jsonserialization/readingoptions/topleveldictionaryassumed.md) allows for the following syntax in the parentheses of the custom attribute markup:
+This is an extension to JSON5 that isn’t part of the specification. [`AttributedString`](../../attributedstring.md) uses this option, along with [`json5Allowed`](./json5allowed.md), to support the use of JSON5 inside Markdown strings that use multiple custom attributes. Using [`topLevelDictionaryAssumed`](./topleveldictionaryassumed.md) allows for the following syntax in the parentheses of the custom attribute markup:
 
 ```other
 This is a [Markdown](https://commonmark.org) string with a ^[custom attribute](factor: 10, other: true).
 ```
 
-Without [`topLevelDictionaryAssumed`](jsonserialization/readingoptions/topleveldictionaryassumed.md), the markup would have to use explicit enclosing braces to declare the contents of the parentheses to be a dictionary:
+Without [`topLevelDictionaryAssumed`](./topleveldictionaryassumed.md), the markup would have to use explicit enclosing braces to declare the contents of the parentheses to be a dictionary:
 
 ```other
 This is a [Markdown](https://commonmark.org) string with a ^[custom attribute]({factor: 10, other: true}).
 ```
 
-When you use braces, you must use matched pairs. This means that with [`topLevelDictionaryAssumed`](jsonserialization/readingoptions/topleveldictionaryassumed.md) set, the syntax `({…})` and `(…)` are both legal, but `({…)` and `(…})` are not.
+When you use braces, you must use matched pairs. This means that with [`topLevelDictionaryAssumed`](./topleveldictionaryassumed.md) set, the syntax `({…})` and `(…)` are both legal, but `({…)` and `(…})` are not.
 
 ## See Also
 
-- [static var mutableContainers: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/mutablecontainers.md)
+### Reading Options
+- [static var mutableContainers: JSONSerialization.ReadingOptions](./mutablecontainers.md)
   Specifies that arrays and dictionaries in the returned object are mutable.
-- [static var mutableLeaves: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/mutableleaves.md)
+- [static var mutableLeaves: JSONSerialization.ReadingOptions](./mutableleaves.md)
   Specifies that leaf strings in the JSON object graph are mutable.
-- [static var fragmentsAllowed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/fragmentsallowed.md)
+- [static var fragmentsAllowed: JSONSerialization.ReadingOptions](./fragmentsallowed.md)
   Specifies that the parser allows top-level objects that aren’t arrays or dictionaries.
-- [static var json5Allowed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/json5allowed.md)
+- [static var json5Allowed: JSONSerialization.ReadingOptions](./json5allowed.md)
   Specifies that reading serialized JSON data supports the JSON5 syntax.
-- [static var allowFragments: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/allowfragments.md)
+- [static var allowFragments: JSONSerialization.ReadingOptions](./allowfragments.md)
   A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
 
 

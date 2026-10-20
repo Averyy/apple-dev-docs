@@ -1,7 +1,8 @@
 # assetPack(withID:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the asset pack in this manifest with the given ID.
 
@@ -29,7 +30,8 @@ The asset pack, if it could be found in this manifest; otherwise, `nil`.
 
 ## See Also
 
-- [let assetPacks: Set<AssetPack>](assetpackmanifest/assetpacks.md)
+### Getting asset packs
+- [let assetPacks: Set<AssetPack>](./assetpacks.md)
   The asset packs in this manifest that are available to download.
 
 

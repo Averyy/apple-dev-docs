@@ -1,13 +1,14 @@
 # send(_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 8.5+
 
@@ -15,6 +16,10 @@
 
 ```swift
 func send(_ message: Data) throws
+```
+
+```objc
+- (BOOL) sendData:(NSData *) message error:(NSError **) error;
 ```
 
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.G
 
 # mlx.nn.GRU
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.GRU.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.GRU
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.GRU
-
 **class GRU(*input_size: int*, *hidden_size: int*, *bias: bool = True*)**
 : A gated recurrent unit (GRU) RNN layer.
 The input has shape `NLD` or `LD` where:
@@ -60,5 +33,3 @@ Parameters:
 **bias** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – Whether to use biases or not. Default: `True`.
 
 Methods
-
-** Contents

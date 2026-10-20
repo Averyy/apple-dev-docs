@@ -1,7 +1,8 @@
 # ByteCountFormatStyle.Style
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The semantic style to use when formatting a byte count value.
 
@@ -23,31 +24,32 @@ enum Style
 ## Topics
 
 ### Byte count styles
-- [ByteCountFormatStyle.Style.binary](bytecountformatstyle/style-swift.enum/binary.md)
+- [ByteCountFormatStyle.Style.binary](./style-swift.enum/binary.md)
   A style for representing byte counts as binary values.
-- [ByteCountFormatStyle.Style.decimal](bytecountformatstyle/style-swift.enum/decimal.md)
+- [ByteCountFormatStyle.Style.decimal](./style-swift.enum/decimal.md)
   A style for representing byte counts as decimal values.
-- [ByteCountFormatStyle.Style.file](bytecountformatstyle/style-swift.enum/file.md)
+- [ByteCountFormatStyle.Style.file](./style-swift.enum/file.md)
   A style for representing file system storage.
-- [ByteCountFormatStyle.Style.memory](bytecountformatstyle/style-swift.enum/memory.md)
+- [ByteCountFormatStyle.Style.memory](./style-swift.enum/memory.md)
   The style for representing memory usage.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var style: ByteCountFormatStyle.Style](bytecountformatstyle/style-swift.property.md)
+### Customizing style behavior
+- [var style: ByteCountFormatStyle.Style](./style-swift.property.md)
   The semantic style the format style uses to represent a byte count value.
 
 

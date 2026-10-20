@@ -1,7 +1,8 @@
 # paddingValues
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines padding values for spatial dimensions which must be eight numbers, two for each spatial dimension.
 
@@ -17,6 +18,10 @@ Defines padding values for spatial dimensions which must be eight numbers, two f
 
 ```swift
 var paddingValues: [NSNumber] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSArray<NSNumber *> * paddingValues;
 ```
 
 #### Discussion

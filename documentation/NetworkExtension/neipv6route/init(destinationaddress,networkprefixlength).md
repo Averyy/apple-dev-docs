@@ -1,7 +1,8 @@
 # init(destinationAddress:networkPrefixLength:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the NEIPv6Route
 
@@ -19,6 +20,10 @@ Initialize the NEIPv6Route
 init(destinationAddress address: String, networkPrefixLength: NSNumber)
 ```
 
+```objc
+- (instancetype) initWithDestinationAddress:(NSString *) address networkPrefixLength:(NSNumber *) networkPrefixLength;
+```
+
 #### Return Value
 
 The initialized `NEIPv6Route` object.
@@ -30,7 +35,8 @@ The initialized `NEIPv6Route` object.
 
 ## See Also
 
-- [class func `default`() -> NEIPv6Route](neipv6route/default.md)
+### Creating an IPv6 Route
+- [class func `default`() -> NEIPv6Route](./default%28%29.md)
   A convenience method for creating the default IPv4 route.
 
 

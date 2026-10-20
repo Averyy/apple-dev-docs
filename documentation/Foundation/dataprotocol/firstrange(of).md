@@ -1,7 +1,8 @@
 # firstRange(of:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first found range of the type’s data buffer.
 
@@ -42,11 +43,12 @@ let foundRange = data.firstRange(of: pattern)
 
 ## See Also
 
-- [func firstRange<D, R>(of: D, in: R) -> Range<Self.Index>?](dataprotocol/firstrange(of:in:).md)
+### Searching Within Data
+- [func firstRange<D, R>(of: D, in: R) -> Range<Self.Index>?](./firstrange%28of,in%29.md)
   Returns the first found range of the type’s data buffer.
-- [func lastRange<D>(of: D) -> Range<Self.Index>?](dataprotocol/lastrange(of:).md)
+- [func lastRange<D>(of: D) -> Range<Self.Index>?](./lastrange%28of%29.md)
   Returns the last found range of the type’s data buffer.
-- [func lastRange<D, R>(of: D, in: R) -> Range<Self.Index>?](dataprotocol/lastrange(of:in:).md)
+- [func lastRange<D, R>(of: D, in: R) -> Range<Self.Index>?](./lastrange%28of,in%29.md)
   Returns the last found range of the type’s data buffer.
 
 

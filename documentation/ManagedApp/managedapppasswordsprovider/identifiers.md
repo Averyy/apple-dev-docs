@@ -1,7 +1,8 @@
 # identifiers
 
 **Framework**: ManagedApp  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of arrays of password identifiers provided by the MDM server.
 
@@ -19,7 +20,7 @@ var identifiers: some AsyncSequence<Array<String>, Never> { get async }
 
 #### Discussion
 
-Use [`password(withIdentifier:)`](managedapppasswordsprovider/password(withidentifier:).md) to look up an identifier to obtain the associated password. The sequence yields an array of identifiers when:
+Use [`password(withIdentifier:)`](./password%28withidentifier%29.md) to look up an identifier to obtain the associated password. The sequence yields an array of identifiers when:
 
 - You begin iterating this property using `for await`.
 - The list of password identifiers changes.

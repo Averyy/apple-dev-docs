@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared system music player, which controls the Music app’s state.
 

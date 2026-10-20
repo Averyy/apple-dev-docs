@@ -1,7 +1,8 @@
 # strides
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer array that stores the number of memory locations that span the length of each dimension in the corresponding element.
 

@@ -340,13 +340,13 @@ Each barcode has a number system digit,
 followed by five manufacturer code digits and five product code digits.
 These are followed by a check digit to verify that the code has been scanned correctly:
 
-![](barcode_UPC)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/barcode_UPC@2x.png)
 
 Other products are labeled with 2D barcodes in QR code format,
 which can use any ISO 8859-1 character
 and can encode a string up to 2,953 characters long:
 
-![](barcode_QR)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/barcode_QR@2x.png)
 
 It's convenient for an inventory tracking system to store UPC barcodes
 as a tuple of four integers,
@@ -540,7 +540,7 @@ enum ASCIIControlCharacter: Character {
 Here, the raw values for an enumeration called `ASCIIControlCharacter`
 are defined to be of type `Character`,
 and are set to some of the more common ASCII control characters.
-`Character` values are described in [Strings And Characters](StringsAndCharacters.md).
+`Character` values are described in [Strings and Characters](StringsAndCharacters.md).
 
 Raw values can be
 strings, characters, or any of the integer or floating-point number types.
@@ -674,7 +674,7 @@ or “optional `Planet`.”
 
 > Note: The raw value initializer is a failable initializer,
 > because not every raw value will return an enumeration case.
-> For more information, see [Failable Initializers](Declarations.md#Failable-Initializers).
+> For more information, see [Failable Initializers](../ReferenceManual/Declarations.md#Failable-Initializers).
 
 If you try to find a planet with a position of `11`,
 the optional `Planet` value returned by the raw value initializer will be `nil`:

@@ -1,7 +1,8 @@
 # CTFontCopyLocalizedName(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a reference to a localized name for the given font.
 
@@ -20,6 +21,10 @@ Returns a reference to a localized name for the given font.
 func CTFontCopyLocalizedName(_ font: CTFont, _ nameKey: CFString, _ actualLanguage: UnsafeMutablePointer<Unmanaged<CFString>?>?) -> CFString?
 ```
 
+```c
+extern CFStringRefCTFontCopyLocalizedName(CTFontRef font, CFStringRef nameKey, CFStringRef*actualLanguage);
+```
+
 #### Return Value
 
 A specific localized name from the font reference or `NULL` if the font does not have an entry for the requested name key.
@@ -31,20 +36,21 @@ The name is localized based on the user’s global language preference precedenc
 ## Parameters
 
 - `font`: The font reference.
-- `nameKey`: The name specifier. See [`Name Specifier Constants`](name-specifier-constants.md) for possible values.
+- `nameKey`: The name specifier. See [Name Specifier Constants](./name-specifier-constants.md) for possible values.
 - `actualLanguage`: On output, points to the language string of the returned name string. The format of the language identifier conforms to the RFC 3066bis standard.
 
 ## See Also
 
-- [func CTFontCopyPostScriptName(CTFont) -> CFString](ctfontcopypostscriptname(_:).md)
+### Getting Font Names
+- [func CTFontCopyPostScriptName(CTFont) -> CFString](./ctfontcopypostscriptname%28_%29.md)
   Returns the PostScript name of the given font.
-- [func CTFontCopyFamilyName(CTFont) -> CFString](ctfontcopyfamilyname(_:).md)
+- [func CTFontCopyFamilyName(CTFont) -> CFString](./ctfontcopyfamilyname%28_%29.md)
   Returns the family name of the given font.
-- [func CTFontCopyFullName(CTFont) -> CFString](ctfontcopyfullname(_:).md)
+- [func CTFontCopyFullName(CTFont) -> CFString](./ctfontcopyfullname%28_%29.md)
   Returns the full name of the given font.
-- [func CTFontCopyDisplayName(CTFont) -> CFString](ctfontcopydisplayname(_:).md)
+- [func CTFontCopyDisplayName(CTFont) -> CFString](./ctfontcopydisplayname%28_%29.md)
   Returns the display name of the given font.
-- [func CTFontCopyName(CTFont, CFString) -> CFString?](ctfontcopyname(_:_:).md)
+- [func CTFontCopyName(CTFont, CFString) -> CFString?](./ctfontcopyname%28_,_%29.md)
   Returns a reference to the requested name of the given font.
 
 

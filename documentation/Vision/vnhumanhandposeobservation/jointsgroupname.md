@@ -1,7 +1,8 @@
 # VNHumanHandPoseObservation.JointsGroupName
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The supported joint group names for the hand pose.
 
@@ -19,45 +20,50 @@ The supported joint group names for the hand pose.
 struct JointsGroupName
 ```
 
+```c
+typedef VNRecognizedPointGroupKey VNHumanHandPoseObservationJointsGroupName;
+```
+
 ## Topics
 
 ### Group Names
-- [static let thumb: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/thumb.md)
+- [static let thumb: VNHumanHandPoseObservation.JointsGroupName](./jointsgroupname/thumb.md)
   The thumb.
-- [static let indexFinger: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/indexfinger.md)
+- [static let indexFinger: VNHumanHandPoseObservation.JointsGroupName](./jointsgroupname/indexfinger.md)
   The index finger.
-- [static let littleFinger: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/littlefinger.md)
+- [static let littleFinger: VNHumanHandPoseObservation.JointsGroupName](./jointsgroupname/littlefinger.md)
   The little finger.
-- [static let middleFinger: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/middlefinger.md)
+- [static let middleFinger: VNHumanHandPoseObservation.JointsGroupName](./jointsgroupname/middlefinger.md)
   The middle finger.
-- [static let ringFinger: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/ringfinger.md)
+- [static let ringFinger: VNHumanHandPoseObservation.JointsGroupName](./jointsgroupname/ringfinger.md)
   The ring finger.
-- [static let all: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/all.md)
+- [static let all: VNHumanHandPoseObservation.JointsGroupName](./jointsgroupname/all.md)
   All hand group names.
 ### Initializers
-- [init(rawValue: VNRecognizedPointGroupKey)](vnhumanhandposeobservation/jointsgroupname/init(rawvalue:).md)
+- [init(rawValue: VNRecognizedPointGroupKey)](./jointsgroupname/init%28rawvalue%29.md)
   Creates a joint group name with a recognized point group key.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var availableJointNames: [VNHumanHandPoseObservation.JointName]](vnhumanhandposeobservation/availablejointnames.md)
+### Retrieving Points
+- [var availableJointNames: [VNHumanHandPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname.md)
+- [VNHumanHandPoseObservation.JointName](./jointname.md)
   The supported joint names for the hand pose.
-- [var availableJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](vnhumanhandposeobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The joint group names available in the observation.
-- [func recognizedPoint(VNHumanHandPoseObservation.JointName) throws -> VNRecognizedPoint](vnhumanhandposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNHumanHandPoseObservation.JointName) throws -> VNRecognizedPoint](./recognizedpoint%28_%29.md)
   Retrieves the recognized point for a joint name.
-- [func recognizedPoints(VNHumanHandPoseObservation.JointsGroupName) throws -> [VNHumanHandPoseObservation.JointName : VNRecognizedPoint]](vnhumanhandposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNHumanHandPoseObservation.JointsGroupName) throws -> [VNHumanHandPoseObservation.JointName : VNRecognizedPoint]](./recognizedpoints%28_%29.md)
   Retrieves the recognized points associated with the joint group name.
 
 

@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The density of the shadow the mask creates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The density of the shadow the mask creates.
 var shadowDensity: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float shadowDensity;
+```
+
 ## See Also
 
-- [var maskImage: CIImage?](cidisintegratewithmasktransition/maskimage.md)
+### Instance Properties
+- [var maskImage: CIImage?](./maskimage.md)
   An image that defines the shape to use when disintegrating from the source to the target image.
-- [var shadowOffset: CGPoint](cidisintegratewithmasktransition/shadowoffset.md)
+- [var shadowOffset: CGPoint](./shadowoffset.md)
   The offset of the shadow the mask creates.
-- [var shadowRadius: Float](cidisintegratewithmasktransition/shadowradius.md)
+- [var shadowRadius: Float](./shadowradius.md)
   The radius of the shadow the mask creates.
 
 

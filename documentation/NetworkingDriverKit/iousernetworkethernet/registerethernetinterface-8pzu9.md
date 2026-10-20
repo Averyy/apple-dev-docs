@@ -1,14 +1,15 @@
 # registerEthernetInterface
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn registerEthernetInterface(ether_addr_t macAddress, IOUserNetworkPacketQueue **queues, uint32_t numQueues, IOUserNetworkPacketBufferPool *txPool, IOUserNetworkPacketBufferPool *rxPool);
 ```
 

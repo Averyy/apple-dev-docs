@@ -1,9 +1,10 @@
 # accessibilityElement(children:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Creates a new accessibility element, or modifies the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element.
+Creates a new accessibility element, or modifies the [`AccessibilityChildBehavior`](../accessibilitychildbehavior.md) of the existing accessibility element.
 
 **Availability**:
 - iOS 13.0+
@@ -25,21 +26,22 @@ func accessibilityElement(children: AccessibilityChildBehavior = .ignore) -> som
 
 See also:
 
-- [`ignore`](accessibilitychildbehavior/ignore.md)
-- [`combine`](accessibilitychildbehavior/combine.md)
-- [`contain`](accessibilitychildbehavior/contain.md)
+- [`ignore`](../accessibilitychildbehavior/ignore.md)
+- [`combine`](../accessibilitychildbehavior/combine.md)
+- [`contain`](../accessibilitychildbehavior/contain.md)
 
 ## Parameters
 
-- `children`: The behavior to use when creating or transforming an accessibility element. The default is [`ignore`](accessibilitychildbehavior/ignore.md)
+- `children`: The behavior to use when creating or transforming an accessibility element. The default is [`ignore`](../accessibilitychildbehavior/ignore.md)
 
 ## See Also
 
-- [func accessibilityChildren<V>(children: () -> V) -> some View](view/accessibilitychildren(children:).md)
+### Creating accessible elements
+- [func accessibilityChildren<V>(children: () -> V) -> some View](./accessibilitychildren%28children%29.md)
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
-- [func accessibilityRepresentation<V>(representation: () -> V) -> some View](view/accessibilityrepresentation(representation:).md)
+- [func accessibilityRepresentation<V>(representation: () -> V) -> some View](./accessibilityrepresentation%28representation%29.md)
   Replaces one or more accessibility elements for this view with new accessibility elements.
-- [struct AccessibilityChildBehavior](accessibilitychildbehavior.md)
+- [struct AccessibilityChildBehavior](../accessibilitychildbehavior.md)
   Defines the behavior for the child elements of the new parent element.
 
 

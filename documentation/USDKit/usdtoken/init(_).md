@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -19,8 +20,9 @@ init(_ name: String)
 
 ## See Also
 
-- [init()](usdtoken/init.md)
-- [init(namespaceComponents: [USDToken])](usdtoken/init(namespacecomponents:).md)
+### Creating a token
+- [init()](./init%28%29.md)
+- [init(namespaceComponents: [USDToken])](./init%28namespacecomponents%29.md)
   Creates a namespaced token by joining `components` with `:`.
 
 

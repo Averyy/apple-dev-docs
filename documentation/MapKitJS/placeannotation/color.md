@@ -1,7 +1,8 @@
 # color
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the place.
 
@@ -10,7 +11,7 @@ The color of the place.
 
 ## Declaration
 
-```swift
+```
 get color(): string;
 ```
 
@@ -20,15 +21,16 @@ Not all places have a color. You can’t set the color property of the place ann
 
 ## See Also
 
-- [title](mapfeatureannotation/title.md)
+### Annotation properties
+- [title](../mapfeatureannotation/title.md)
   The title of the feature.
-- [featureType](mapfeatureannotation/featuretype.md)
+- [featureType](../mapfeatureannotation/featuretype.md)
   A value that describes the type of place the feature represents.
-- [pointOfInterestCategory](mapfeatureannotation/pointofinterestcategory.md)
+- [pointOfInterestCategory](../mapfeatureannotation/pointofinterestcategory.md)
   The point-of-interest category of the feature.
-- [glyphImage](placeannotation/glyphimage.md)
+- [glyphImage](./glyphimage.md)
   The glyph image for the place.
-- [selectedGlyphImage](placeannotation/selectedglyphimage.md)
+- [selectedGlyphImage](./selectedglyphimage.md)
   The selected glyph image for the place.
 
 

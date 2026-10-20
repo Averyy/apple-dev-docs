@@ -1,7 +1,8 @@
 # HKMetadataKeyWeatherHumidity
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that represents the weather humidity during the sample.
 
@@ -19,17 +20,22 @@ A key that represents the weather humidity during the sample.
 let HKMetadataKeyWeatherHumidity: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyWeatherHumidity;
+```
+
 #### Discussion
 
-This key takes an `HKQuantity` value expressed as a percentage. Set this key on an [`HKWorkout`](hkworkout.md) object to represent the overall humidity during the workout.
+This key takes an `HKQuantity` value expressed as a percentage. Set this key on an [`HKWorkout`](./hkworkout.md) object to represent the overall humidity during the workout.
 
 ## See Also
 
-- [let HKMetadataKeyBarometricPressure: String](hkmetadatakeybarometricpressure.md)
+### Weather Keys
+- [let HKMetadataKeyBarometricPressure: String](./hkmetadatakeybarometricpressure.md)
   The metadata key for the barometric pressure associated with a sample.
-- [let HKMetadataKeyWeatherCondition: String](hkmetadatakeyweathercondition.md)
+- [let HKMetadataKeyWeatherCondition: String](./hkmetadatakeyweathercondition.md)
   A key that represents the weather condition during the sample.
-- [let HKMetadataKeyWeatherTemperature: String](hkmetadatakeyweathertemperature.md)
+- [let HKMetadataKeyWeatherTemperature: String](./hkmetadatakeyweathertemperature.md)
   A key that represents the weather temperature during the sample.
 
 

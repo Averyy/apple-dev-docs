@@ -1,7 +1,8 @@
 # toInt64()
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func toInt64() -> Int64
+```
+
+```objc
+- (int64_t) toInt64;
 ```
 
 #### Discussion

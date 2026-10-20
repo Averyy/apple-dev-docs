@@ -1,7 +1,8 @@
 # IOUserVideoStreamDirection
 
 **Framework**: VideoDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The direction of a video stream.
 
@@ -10,37 +11,38 @@ The direction of a video stream.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserVideoStreamDirection : uint32_t;
 ```
 
 ## Topics
 
 ### Stream directions
-- [Input](videodriverkit/iouservideostreamdirection/input.md)
+- [Input](./iouservideostreamdirection/input.md)
   Input stream direction.
-- [Output](videodriverkit/iouservideostreamdirection/output.md)
+- [Output](./iouservideostreamdirection/output.md)
   Output stream direction.
 
 ## See Also
 
-- [SetCurrentStreamFormat](iouservideostream/setcurrentstreamformat.md)
+### Working with stream formats
+- [SetCurrentStreamFormat](../iouservideostream/setcurrentstreamformat.md)
   Sets the current stream format.
-- [GetCurrentStreamFormat](iouservideostream/getcurrentstreamformat.md)
+- [GetCurrentStreamFormat](../iouservideostream/getcurrentstreamformat.md)
   Gets the current basic description of the stream.
-- [SetAvailableStreamFormats](iouservideostream/setavailablestreamformats.md)
+- [SetAvailableStreamFormats](../iouservideostream/setavailablestreamformats.md)
   Sets the available descriptions for the stream.
-- [GetAvailableStreamFormats](iouservideostream/getavailablestreamformats.md)
+- [GetAvailableStreamFormats](../iouservideostream/getavailablestreamformats.md)
   Gets the available basic descriptions for the stream.
-- [GetNumberAvailableStreamFormats](iouservideostream/getnumberavailablestreamformats.md)
+- [GetNumberAvailableStreamFormats](../iouservideostream/getnumberavailablestreamformats.md)
   Gets the number of available description for the stream.
-- [IOUserVideoStreamBasicDescription](videodriverkit/iouservideostreambasicdescription.md)
+- [IOUserVideoStreamBasicDescription](./iouservideostreambasicdescription.md)
   A structure that encapsulates all the information for describing the basic format properties of a stream of audio data.
-- [GetStreamDirection](iouservideostream/getstreamdirection.md)
+- [GetStreamDirection](../iouservideostream/getstreamdirection.md)
   Gets the direction of the stream.
-- [SetStreamIsActive](iouservideostream/setstreamisactive.md)
+- [SetStreamIsActive](../iouservideostream/setstreamisactive.md)
   Sets whether that the stream is active and doing IO.
-- [GetStreamIsActive](iouservideostream/getstreamisactive.md)
+- [GetStreamIsActive](../iouservideostream/getstreamisactive.md)
   Gets the stream activity state.
 
 

@@ -1,7 +1,8 @@
 # continuous
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A clock that measures time that always increments but does not stop incrementing while the system is asleep.
 
@@ -19,6 +20,8 @@ A clock that measures time that always increments but does not stop incrementing
 ```swift
 static var continuous: ContinuousClock { get }
 ```
+
+Available when `Self` is `ContinuousClock`.
 
 #### Discussion
 

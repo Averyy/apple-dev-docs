@@ -1,7 +1,8 @@
 # LazySequence.Iterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that provides the collection’s iteration interface and encapsulates its iteration state.
 
@@ -19,6 +20,8 @@ A type that provides the collection’s iteration interface and encapsulates its
 ```swift
 typealias Iterator = Base.Iterator
 ```
+
+Available when `Base` conforms to `Sequence`.
 
 #### Discussion
 

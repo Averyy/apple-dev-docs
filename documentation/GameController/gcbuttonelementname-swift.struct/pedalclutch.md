@@ -1,7 +1,8 @@
 # pedalClutch
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the controller’s clutch.
 
@@ -17,13 +18,14 @@ static let pedalClutch: GCButtonElementName
 
 ## See Also
 
-- [static let pedalBrake: GCButtonElementName](gcbuttonelementname-swift.struct/pedalbrake.md)
+### Getting steering wheel controller names
+- [static let pedalBrake: GCButtonElementName](./pedalbrake.md)
   The name of the controller’s brake pedal.
-- [static let pedalAccelerator: GCButtonElementName](gcbuttonelementname-swift.struct/pedalaccelerator.md)
+- [static let pedalAccelerator: GCButtonElementName](./pedalaccelerator.md)
   The name of the controller’s accelerator pedal.
-- [static let leftPaddle: GCButtonElementName](gcbuttonelementname-swift.struct/leftpaddle.md)
+- [static let leftPaddle: GCButtonElementName](./leftpaddle.md)
   The name of the controller’s left paddle.
-- [static let rightPaddle: GCButtonElementName](gcbuttonelementname-swift.struct/rightpaddle.md)
+- [static let rightPaddle: GCButtonElementName](./rightpaddle.md)
   The name of the controller’s right paddle.
 
 

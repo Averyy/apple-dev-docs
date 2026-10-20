@@ -1,7 +1,8 @@
 # Data format
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer indicating the format of the stored data.
 
@@ -11,35 +12,36 @@ This depends on the media type, but is usually either the compression format or 
 
 ## See Also
 
-- [Sample description size](sound_sample_description_version_2/sample_description_size.md)
+### Data fields
+- [Sample description size](./sample_description_size.md)
   A 32-bit integer indicating the number of bytes in the sample description.
-- [Reserved](sound_sample_description_version_2/reserved.md)
+- [Reserved](./reserved.md)
   Six bytes.
-- [Data reference index](sound_sample_description_version_2/data_reference_index.md)
+- [Data reference index](./data_reference_index.md)
   A 16-bit integer that contains the index of the data reference to use to retrieve data associated with samples that use this sample description.
-- [Version](sound_sample_description_version_2/version.md)
+- [Version](./version.md)
   A 16-bit integer that holds the sample description version.
-- [Revision level](sound_sample_description_version_2/revision_level.md)
+- [Revision level](./revision_level.md)
   A 16-bit integer.
-- [Vendor](sound_sample_description_version_2/vendor.md)
+- [Vendor](./vendor.md)
   A 32-bit integer.
-- [always3](sound_sample_description_version_2/always3.md)
+- [always3](./always3.md)
   A 16-bit integer field.
-- [always16](sound_sample_description_version_2/always16.md)
+- [always16](./always16.md)
   A 16-bit integer field.
-- [alwaysMinus2](sound_sample_description_version_2/alwaysminus2.md)
+- [alwaysMinus2](./alwaysminus2.md)
   A 16-bit integer field.
-- [always0](sound_sample_description_version_2/always0.md)
+- [always0](./always0.md)
   A 16-bit integer field.
-- [always65536](sound_sample_description_version_2/always65536.md)
+- [always65536](./always65536.md)
   A 32-bit integer field.
-- [sizeOfStructOnly](sound_sample_description_version_2/sizeofstructonly.md)
+- [sizeOfStructOnly](./sizeofstructonly.md)
   A 32-bit integer field providing the offset to sound sample description structure’s extensions.
-- [numAudioChannels](sound_sample_description_version_2/numaudiochannels.md)
+- [numAudioChannels](./numaudiochannels.md)
   A 32-bit integer field set to the number of audio channels.
-- [always7F000000](sound_sample_description_version_2/always7f000000.md)
+- [always7F000000](./always7f000000.md)
   A 32-bit integer field.
-- [constBitsPerChannel](sound_sample_description_version_2/constbitsperchannel.md)
+- [constBitsPerChannel](./constbitsperchannel.md)
   A 32-bit integer field which is set only if constant and only for uncompressed audio.
 
 

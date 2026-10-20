@@ -1,7 +1,8 @@
 # selected
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the map shows the annotation in a selected state.
 
@@ -10,18 +11,19 @@ A Boolean value that indicates whether the map shows the annotation in a selecte
 
 ## Declaration
 
-```swift
+```
 get selected(): boolean;
 set selected(value: boolean);
 ```
 
 ## See Also
 
-- [animates](annotation/animates.md)
+### Getting and setting interaction behavior
+- [animates](./animates.md)
   A Boolean value that determines whether the framework animates the annotation.
-- [draggable](annotation/draggable.md)
+- [draggable](./draggable.md)
   A Boolean value that determines whether the user can drag the annotation.
-- [enabled](annotation/enabled.md)
+- [enabled](./enabled.md)
   A Boolean value that determines whether the annotation responds to user interaction.
 
 

@@ -1,7 +1,8 @@
 # MPSNNReshapeNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.1+
@@ -17,22 +18,26 @@
 class MPSNNReshapeNode
 ```
 
+```objc
+@interface MPSNNReshapeNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, resultWidth: Int, resultHeight: Int, resultFeatureChannels: Int)](mpsnnreshapenode/init(source:resultwidth:resultheight:resultfeaturechannels:).md)
+- [init(source: MPSNNImageNode, resultWidth: Int, resultHeight: Int, resultFeatureChannels: Int)](./mpsnnreshapenode/init%28source,resultwidth,resultheight,resultfeaturechannels%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

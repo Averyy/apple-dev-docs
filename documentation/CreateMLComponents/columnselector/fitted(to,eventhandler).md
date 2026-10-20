@@ -1,7 +1,8 @@
 # fitted(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a transformer to a data frame
 
@@ -31,9 +32,10 @@ The fitted transformer.
 
 ## See Also
 
-- [ColumnSelector.Input](columnselector/input.md)
-- [ColumnSelector.Output](columnselector/output.md)
-- [protocol Transformer](transformer.md)
+### Fitting a transformer
+- [ColumnSelector.Input](./input.md)
+- [ColumnSelector.Output](./output.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

@@ -1,7 +1,8 @@
 # allowEvaluation(validator:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func allowEvaluation(validator: any NSPredicateValidating) throws
+```
+
+```objc
+- (BOOL) allowEvaluationWithValidator:(id<NSPredicateValidating>) validator error:(NSError **) error;
 ```
 
 

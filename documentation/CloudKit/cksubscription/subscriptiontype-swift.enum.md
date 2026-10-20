@@ -1,7 +1,8 @@
 # CKSubscription.SubscriptionType
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that identify a subscription’s behavior.
 
@@ -10,7 +11,7 @@ Constants that identify a subscription’s behavior.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 6.0+
 
@@ -20,35 +21,40 @@ Constants that identify a subscription’s behavior.
 enum SubscriptionType
 ```
 
+```c
+enum CKSubscriptionType : NSInteger;
+```
+
 ## Topics
 
 ### Subscription Types
-- [CKSubscription.SubscriptionType.query](cksubscription/subscriptiontype-swift.enum/query.md)
+- [CKSubscription.SubscriptionType.query](./subscriptiontype-swift.enum/query.md)
   A constant that indicates the subscription is query-based.
-- [CKSubscription.SubscriptionType.database](cksubscription/subscriptiontype-swift.enum/database.md)
+- [CKSubscription.SubscriptionType.database](./subscriptiontype-swift.enum/database.md)
   A constant that indicates the subscription is database-based.
-- [CKSubscription.SubscriptionType.recordZone](cksubscription/subscriptiontype-swift.enum/recordzone.md)
+- [CKSubscription.SubscriptionType.recordZone](./subscriptiontype-swift.enum/recordzone.md)
   A constant that indicates the subscription is zone-based.
 ### Initializers
-- [init?(rawValue: Int)](cksubscription/subscriptiontype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./subscriptiontype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var subscriptionID: CKSubscription.ID](cksubscription/subscriptionid-6fp3j.md)
+### Accessing the Subscription Metadata
+- [var subscriptionID: CKSubscription.ID](./subscriptionid-6fp3j.md)
   The subscription’s unique identifier.
-- [CKSubscription.ID](cksubscription/id.md)
+- [CKSubscription.ID](./id.md)
   A type that represents a subscription’s identifier.
-- [var subscriptionType: CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.property.md)
+- [var subscriptionType: CKSubscription.SubscriptionType](./subscriptiontype-swift.property.md)
   The behavior that a subscription provides.
 
 

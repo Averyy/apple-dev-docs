@@ -1,7 +1,8 @@
 # yPlacement
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,13 +13,18 @@
 var yPlacement: NSGridCell.Placement { get set }
 ```
 
+```objc
+@property NSGridCellPlacement yPlacement;
+```
+
 ## See Also
 
-- [var topPadding: CGFloat](nsgridrow/toppadding.md)
-- [var bottomPadding: CGFloat](nsgridrow/bottompadding.md)
-- [var height: CGFloat](nsgridrow/height.md)
-- [var rowAlignment: NSGridRow.Alignment](nsgridrow/rowalignment.md)
-- [NSGridRow.Alignment](nsgridrow/alignment.md)
+### Formatting the Row
+- [var topPadding: CGFloat](./toppadding.md)
+- [var bottomPadding: CGFloat](./bottompadding.md)
+- [var height: CGFloat](./height.md)
+- [var rowAlignment: NSGridRow.Alignment](./rowalignment.md)
+- [NSGridRow.Alignment](./alignment.md)
 
 
 ---

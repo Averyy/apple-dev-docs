@@ -1,9 +1,10 @@
 # takeDeformationUpdate(id:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Consumes and returns the [`USDPlayer.DeformationData.Update`](usdplayer/deformationdata/update.md) for the given deformation delta update.
+Consumes and returns the [`USDPlayer.DeformationData.Update`](../deformationdata/update.md) for the given deformation delta update.
 
 **Availability**:
 - iOS 27.0+

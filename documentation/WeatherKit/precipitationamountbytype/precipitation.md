@@ -1,7 +1,8 @@
 # precipitation
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of liquid equivalent of all precipitation for the period.
 

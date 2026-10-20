@@ -1,7 +1,8 @@
 # NSCloseCommand
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A command that closes one or more scriptable objects.
 
@@ -15,6 +16,10 @@ A command that closes one or more scriptable objects.
 class NSCloseCommand
 ```
 
+```objc
+@interface NSCloseCommand : NSScriptCommand
+```
+
 #### Overview
 
 An instance of `NSCloseCommand` closes the specified scriptable object or objects—typically a document or window (and its associated document, if any). The command may optionally specify a location to save in and how to handle modified documents (by automatically saving changes, not saving them, or asking the user).
@@ -24,48 +29,49 @@ An instance of `NSCloseCommand` closes the specified scriptable object or object
 ## Topics
 
 ### Accessing save options
-- [var saveOptions: NSSaveOptions](nsclosecommand/saveoptions.md)
+- [var saveOptions: NSSaveOptions](./nsclosecommand/saveoptions.md)
   Returns a constant indicating how to deal with closing any modified documents.
 ### Constants
-- [enum NSSaveOptions](nssaveoptions.md)
-  The [`saveOptions`](nsclosecommand/saveoptions.md) method returns one of the following constants to indicate how to deal with saving any modified documents:
+- [enum NSSaveOptions](./nssaveoptions.md)
+  The [`saveOptions`](./nsclosecommand/saveoptions.md) method returns one of the following constants to indicate how to deal with saving any modified documents:
 
 ## Relationships
 
 ### Inherits From
-- [NSScriptCommand](nsscriptcommand.md)
+- [NSScriptCommand](./nsscriptcommand.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSScriptCommand](nsscriptcommand.md)
+### Script Commands
+- [class NSScriptCommand](./nsscriptcommand.md)
   A self-contained scripting statement.
-- [class NSQuitCommand](nsquitcommand.md)
+- [class NSQuitCommand](./nsquitcommand.md)
   A command that quits the specified app.
-- [class NSSetCommand](nssetcommand.md)
+- [class NSSetCommand](./nssetcommand.md)
   A command that sets one or more attributes or relationships to one or more values.
-- [class NSMoveCommand](nsmovecommand.md)
+- [class NSMoveCommand](./nsmovecommand.md)
   A command that moves one or more scriptable objects.
-- [class NSCreateCommand](nscreatecommand.md)
+- [class NSCreateCommand](./nscreatecommand.md)
   A command that creates a scriptable object.
-- [class NSDeleteCommand](nsdeletecommand.md)
+- [class NSDeleteCommand](./nsdeletecommand.md)
   A command that deletes a scriptable object.
-- [class NSExistsCommand](nsexistscommand.md)
+- [class NSExistsCommand](./nsexistscommand.md)
   A command that determines whether a scriptable object exists.
-- [class NSGetCommand](nsgetcommand.md)
+- [class NSGetCommand](./nsgetcommand.md)
   A command that retrieves a value or object from a scriptable object.
-- [class NSCloneCommand](nsclonecommand.md)
+- [class NSCloneCommand](./nsclonecommand.md)
   A command that clones one or more scriptable objects.
-- [class NSCountCommand](nscountcommand.md)
+- [class NSCountCommand](./nscountcommand.md)
   A command that counts the number of objects of a specified class in the specified object container.
 
 

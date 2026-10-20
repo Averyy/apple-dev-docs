@@ -1,7 +1,8 @@
 # UIAccessibilityNavigationStyle.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The assistive technology automatically determines how the receiver’s elements should be navigated.
 
@@ -9,7 +10,7 @@ The assistive technology automatically determines how the receiver’s elements 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,15 +20,20 @@ The assistive technology automatically determines how the receiver’s elements 
 case automatic
 ```
 
+```c
+UIAccessibilityNavigationStyleAutomatic
+```
+
 #### Discussion
 
 This is the default value.
 
 ## See Also
 
-- [UIAccessibilityNavigationStyle.separate](uiaccessibilitynavigationstyle/separate.md)
+### Constants
+- [UIAccessibilityNavigationStyle.separate](./separate.md)
   The receiver’s elements should be navigated as separate elements.
-- [UIAccessibilityNavigationStyle.combined](uiaccessibilitynavigationstyle/combined.md)
+- [UIAccessibilityNavigationStyle.combined](./combined.md)
   The receiver’s elements should be combined and navigated as a single item.
 
 

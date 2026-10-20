@@ -1,7 +1,8 @@
 # requiresLinearPlayback
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether this segment must be played sequentially without seeking or skipping. Typically used for advertisements or important announcements.
 
@@ -14,6 +15,10 @@ Indicates whether this segment must be played sequentially without seeking or sk
 
 ```swift
 var requiresLinearPlayback: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL requiresLinearPlayback;
 ```
 
 

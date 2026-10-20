@@ -1,7 +1,8 @@
 # vImageHistogramCalculation_Planar8(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the histogram of an 8-bit planar buffer.
 
@@ -20,13 +21,17 @@ Calculates the histogram of an 8-bit planar buffer.
 func vImageHistogramCalculation_Planar8(_ src: UnsafePointer<vImage_Buffer>, _ histogram: UnsafeMutablePointer<vImagePixelCount>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageHistogramCalculation_Planar8(const vImage_Buffer *src, vImagePixelCount *histogram, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-The following code populates the `histogram` array with the histogram of the specified [`vImage_Buffer`](vimage_buffer.md) structure:
+The following code populates the `histogram` array with the histogram of the specified [`vImage_Buffer`](./vimage_buffer.md) structure:
 
 **Swift**:
 
@@ -73,19 +78,21 @@ printf("%lu %lu %lu %lu\n",
 
 - `src`: The source vImage buffer.
 - `histogram`: The collection that contains 256 elements that receives the histogram data.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
+### Related Documentation
+- [Enhancing image contrast with histogram manipulation](./enhancing-image-contrast-with-histogram-manipulation.md)
   Enhance and adjust the contrast of an image with histogram equalization and contrast stretching.
-- [Specifying histograms with vImage](specifying-histograms-with-vimage.md)
+- [Specifying histograms with vImage](./specifying-histograms-with-vimage.md)
   Calculate the histogram of one image, and apply it to a second image.
-- [func vImageHistogramCalculation_PlanarF(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<vImagePixelCount>, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](vimagehistogramcalculation_planarf(_:_:_:_:_:_:).md)
+### Calculating a histogram
+- [func vImageHistogramCalculation_PlanarF(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<vImagePixelCount>, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](./vimagehistogramcalculation_planarf%28_,_,_,_,_,_%29.md)
   Calculates the histogram of a 32-bit planar buffer.
-- [func vImageHistogramCalculation_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafeMutablePointer<vImagePixelCount>?>, vImage_Flags) -> vImage_Error](vimagehistogramcalculation_argb8888(_:_:_:).md)
+- [func vImageHistogramCalculation_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafeMutablePointer<vImagePixelCount>?>, vImage_Flags) -> vImage_Error](./vimagehistogramcalculation_argb8888%28_,_,_%29.md)
   Calculates the histogram of an 8-bit-per-channel, 4-channel interleaved buffer.
-- [func vImageHistogramCalculation_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafeMutablePointer<vImagePixelCount>?>, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](vimagehistogramcalculation_argbffff(_:_:_:_:_:_:).md)
+- [func vImageHistogramCalculation_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafeMutablePointer<UnsafeMutablePointer<vImagePixelCount>?>, UInt32, Pixel_F, Pixel_F, vImage_Flags) -> vImage_Error](./vimagehistogramcalculation_argbffff%28_,_,_,_,_,_%29.md)
   Calculates the histogram of a 32-bit-per-channel, 4-channel interleaved buffer.
 
 

@@ -1,7 +1,8 @@
 # GetRange
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the current range of the slider control.
 
@@ -10,7 +11,7 @@ Gets the current range of the slider control.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoSliderRange GetRange();
 ```
 
@@ -20,13 +21,14 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetControlValue](iouservideoslidercontrol/setcontrolvalue.md)
+### Accessing the value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the current control value.
-- [GetControlValue](iouservideoslidercontrol/getcontrolvalue.md)
+- [GetControlValue](./getcontrolvalue.md)
   Gets the current value of the control.
-- [SetRange](iouservideoslidercontrol/setrange.md)
+- [SetRange](./setrange.md)
   Sets the current range of the slider control.
-- [IOUserVideoSliderRange](iouservideosliderrange.md)
+- [IOUserVideoSliderRange](../iouservideosliderrange.md)
   The minimum and maximum range for the slider value.
 
 

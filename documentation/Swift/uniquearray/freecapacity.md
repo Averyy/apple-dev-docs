@@ -1,7 +1,8 @@
 # freeCapacity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of additional elements that can be added to this array without reallocating its storage.
 
@@ -22,7 +23,7 @@ var freeCapacity: Int { get }
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

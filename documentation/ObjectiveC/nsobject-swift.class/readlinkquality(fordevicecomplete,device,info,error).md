@@ -1,15 +1,20 @@
 # readLinkQuality(forDeviceComplete:device:info:error:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func readLinkQuality(forDeviceComplete controller: Any!, device: IOBluetoothDevice!, info: UnsafeMutablePointer<BluetoothHCILinkQualityInfo>!, error: IOReturn)
+```
+
+```objc
+- (void) readLinkQualityForDeviceComplete:(id) controller device:(IOBluetoothDevice *) device info:(BluetoothHCILinkQualityInfo *) info error:(IOReturn) error;
 ```
 
 #### Discussion

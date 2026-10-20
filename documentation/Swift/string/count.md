@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of characters in a string.
 
@@ -24,11 +25,12 @@ var count: Int { get }
 
 To check whether a string is empty, use its `isEmpty` property instead of comparing `count` to zero.
 
-> **Note**: O(n), where n is the length of the string.
+> **Complexity**: O(n), where n is the length of the string.
 
 ## See Also
 
-- [var isEmpty: Bool](string/isempty.md)
+### Inspecting a String
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether a string has no characters.
 
 

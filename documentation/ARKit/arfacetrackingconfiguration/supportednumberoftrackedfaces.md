@@ -1,7 +1,8 @@
 # supportedNumberOfTrackedFaces
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of faces that the framework can track.
 
@@ -15,13 +16,18 @@ The maximum number of faces that the framework can track.
 class var supportedNumberOfTrackedFaces: Int { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSInteger supportedNumberOfTrackedFaces;
+```
+
 #### Discussion
 
-Do not exceed this value when you set [`maximumNumberOfTrackedFaces`](arfacetrackingconfiguration/maximumnumberoftrackedfaces.md).
+Do not exceed this value when you set [`maximumNumberOfTrackedFaces`](./maximumnumberoftrackedfaces.md).
 
 ## See Also
 
-- [var maximumNumberOfTrackedFaces: Int](arfacetrackingconfiguration/maximumnumberoftrackedfaces.md)
+### Tracking Multiple Faces
+- [var maximumNumberOfTrackedFaces: Int](./maximumnumberoftrackedfaces.md)
   The number of faces to track during the session.
 
 

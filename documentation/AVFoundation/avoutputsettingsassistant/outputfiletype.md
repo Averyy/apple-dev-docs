@@ -1,7 +1,8 @@
 # outputFileType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A uniform type identifier (UTI) that indicates the type of file to write.
 
@@ -19,19 +20,24 @@ A uniform type identifier (UTI) that indicates the type of file to write.
 var outputFileType: AVFileType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVFileType outputFileType;
+```
+
 ## See Also
 
-- [var audioSettings: [String : Any]?](avoutputsettingsassistant/audiosettings.md)
+### Configuring output settings
+- [var audioSettings: [String : Any]?](./audiosettings.md)
   An audio settings dictionary.
-- [var sourceAudioFormat: CMAudioFormatDescription?](avoutputsettingsassistant/sourceaudioformat.md)
+- [var sourceAudioFormat: CMAudioFormatDescription?](./sourceaudioformat.md)
   The format of the source audio data.
-- [var videoSettings: [String : Any]?](avoutputsettingsassistant/videosettings.md)
+- [var videoSettings: [String : Any]?](./videosettings.md)
   A video settings dictionary.
-- [var sourceVideoFormat: CMVideoFormatDescription?](avoutputsettingsassistant/sourcevideoformat.md)
+- [var sourceVideoFormat: CMVideoFormatDescription?](./sourcevideoformat.md)
   The format of the source video data.
-- [var sourceVideoMinFrameDuration: CMTime](avoutputsettingsassistant/sourcevideominframeduration.md)
+- [var sourceVideoMinFrameDuration: CMTime](./sourcevideominframeduration.md)
   A time value that describes the minimum frame duration of the video data.
-- [var sourceVideoAverageFrameDuration: CMTime](avoutputsettingsassistant/sourcevideoaverageframeduration.md)
+- [var sourceVideoAverageFrameDuration: CMTime](./sourcevideoaverageframeduration.md)
   A time value that describes the average frame duration of the video data.
 
 

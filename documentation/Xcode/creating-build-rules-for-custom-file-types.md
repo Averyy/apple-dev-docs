@@ -1,6 +1,7 @@
 # Creating build rules for custom file types
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Tell Xcode how to build your project’s custom file types, and provide dependency information to optimize the build process for each file.
 
@@ -10,9 +11,9 @@ The code and resource files in a project are typically in an editable format tha
 
 A build rule maps a specific file type to the tools Xcode needs to generate the required output for that file. For example, one build rule compiles `.swift` files into executable code using the Swift compiler. Xcode contains built-in rules for many file types, including both code files and resource files. You can create additional rules to transform other file types into an appropriate final form, or override a built-in rule to use a different tool.
 
-> **Note**: A build rule is the preferred way to process files that are independent from each other. The build system processes each file using a separate task, which allows for more parallelization. If you require the build system to process your files as a group in a single operation, create a custom Run Script build phase instead, as described in [`Running custom scripts during a build`](running-custom-scripts-during-a-build.md).
+> **Note**: A build rule is the preferred way to process files that are independent from each other. The build system processes each file using a separate task, which allows for more parallelization. If you require the build system to process your files as a group in a single operation, create a custom Run Script build phase instead, as described in [Running custom scripts during a build](./running-custom-scripts-during-a-build.md).
 
-##### Add a New Build Rule for a Custom File Type
+##### Add a new build rule for a custom file type
 
 If your project contains file types not covered by Xcode’s built-in build rules, you can add new build rules to address those types. To create a new build rule:
 
@@ -22,11 +23,11 @@ If your project contains file types not covered by Xcode’s built-in build rule
 4. In the Process field, specify a filename matching string.
 5. In the script text field, specify your custom script code.
 
-![A target contains a custom build rule that builds a custom file type using a shell script.](/images/com.apple.Xcode/build-rules-creating@2x.png)
+![A target contains a custom build rule that builds a custom file type using a shell script.](https://developer.apple.com/tutorials/images/com.apple.Xcode/build-rules-creating@2x.png)
 
 A build rule can use either a custom shell script or an existing tool to process files. If you use an existing tool to handle your custom file types, select that tool from the build rule’s Using field. For example, if your input files contain source code that a built-in compiler can handle, select the compiler from the list.
 
-##### Specify the Match Criteria for Source Files
+##### Specify the match criteria for source files
 
 To match custom file types, select the “Source files with names matching” option in the Process field and specify a custom pattern string. Specify pattern strings that follow the same rules as the `fnmatch` function in the Standard C library. For example, to match all files with the names `myfile.c` and `myfile.h`, specify the string `*/myfile.c */myfile.h`. During a build, Xcode compares the full path of each project file against the specified pattern. When a match occurs, the system executes your custom script code.
 
@@ -34,7 +35,7 @@ To match custom file types, select the “Source files with names matching” op
 
 For information about pattern matching using the `fnmatch` function, see the man (manual) page for that function.
 
-##### Specify the Input and Output Files for Your Shell Script
+##### Specify the input and output files for your shell script
 
 When Xcode detects one of your custom file types, it executes the shell script associated with the matching build rule. In your script, get the path to the source file from the `SCRIPT_INPUT_FILE` environment variable, and begin processing the file. If your script requires additional input data, such as build configuration files, specify those files in the Input Files section of your build rule, and access them using environment variables.
 
@@ -53,7 +54,7 @@ When you specify input and output files in your build rule, use the following va
 
 > ❗ **Important**: Place your script’s output files in the directory represented by the `DERIVED_FILE_DIR` variable. If you place them in other locations, your version-control system might not find them, or Xcode might not be able to remove them during a clean build operation.
 
-##### Access Script Related Files From Environment Variables
+##### Access script-related files from environment variables
 
 Shell scripts have access to the current target’s build settings and the input and output files associated with the build rule. Before executing your build rule’s script, Xcode configures the shell environment with several environment variables. To access the build rule’s input and output files, use the environment variables in the following table.
 
@@ -70,9 +71,9 @@ Shell scripts have access to the current target’s build settings and the input
 
 > ❗ **Important**: In your shell scripts, place environment variables in quotation marks before you pass them as parameters to other scripts or tools. The quotation marks prevent parsing errors when a variable contains spaces or special characters.
 
-For a list of build setting environment variables, see [`Build settings reference`](build-settings-reference.md).
+For a list of build setting environment variables, see [Build settings reference](./build-settings-reference.md).
 
-##### Specify Additional Build Dependencies for Your Source File
+##### Specify additional build dependencies for your source file
 
 To improve performance during incremental builds, Xcode rebuilds only the files that require a rebuild. To determine whether a file requires a rebuild, Xcode evaluates the following criteria:
 
@@ -89,13 +90,14 @@ Create the actual files in your script code when you build custom files. Fill th
 
 ## See Also
 
-- [Customizing the build schemes for a project](customizing-the-build-schemes-for-a-project.md)
+### Build customization
+- [Customizing the build schemes for a project](./customizing-the-build-schemes-for-a-project.md)
   Specify which targets to build, and customize the settings Xcode uses to build, run, test, and profile those targets.
-- [Customizing the build phases of a target](customizing-the-build-phases-of-a-target.md)
+- [Customizing the build phases of a target](./customizing-the-build-phases-of-a-target.md)
   Specify the tasks to perform during a build, including the source files to compile, the scripts to run, and the resources to include in the final product.
-- [Running custom scripts during a build](running-custom-scripts-during-a-build.md)
+- [Running custom scripts during a build](./running-custom-scripts-during-a-build.md)
   Execute custom shell scripts during the build process, and run tools or other commands that your project requires.
-- [Running code on a specific platform or OS version](running-code-on-a-specific-version.md)
+- [Running code on a specific platform or OS version](./running-code-on-a-specific-version.md)
   Add conditional compilation markers around code that requires a particular family of devices or minimum operating system version to run.
 
 

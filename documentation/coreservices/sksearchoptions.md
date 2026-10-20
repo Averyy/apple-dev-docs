@@ -1,9 +1,10 @@
 # SKSearchOptions
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
-Specifies the search options available for the [`SKSearchCreate(_:_:_:)`](1443079-sksearchcreate.md) function.
+Specifies the search options available for the [`SKSearchCreate(_:_:_:)`](./api-1443079-sksearchcreate.md) function.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,15 +16,19 @@ Specifies the search options available for the [`SKSearchCreate(_:_:_:)`](144307
 typealias SKSearchOptions = UInt32
 ```
 
+```c
+typedef UInt32 SKSearchOptions;
+```
+
 ## Topics
 
 ### Constants
-- [var kSKSearchOptionDefault: Int](ksksearchoptiondefault.md)
-- [var kSKSearchOptionNoRelevanceScores: Int](ksksearchoptionnorelevancescores.md)
+- [var kSKSearchOptionDefault: Int](./ksksearchoptiondefault.md)
+- [var kSKSearchOptionNoRelevanceScores: Int](./ksksearchoptionnorelevancescores.md)
   This option saves time during a search by suppressing the computation of relevance scores.
-- [var kSKSearchOptionSpaceMeansOR: Int](ksksearchoptionspacemeansor.md)
+- [var kSKSearchOptionSpaceMeansOR: Int](./ksksearchoptionspacemeansor.md)
   This option alters query behavior so that spaces are interpreted as Boolean `OR` operators.
-- [var kSKSearchOptionFindSimilar: Int](ksksearchoptionfindsimilar.md)
+- [var kSKSearchOptionFindSimilar: Int](./ksksearchoptionfindsimilar.md)
   This option alters query behavior so that Search Kit returns references to documents that are similar to an example text string. When this option is specified, Search Kit ignores all query operators.
 
 

@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the image was captured.
 
@@ -18,15 +19,20 @@ The time at which the image was captured.
 var timestamp: CMTime { get }
 ```
 
+```objc
+@property (readonly) CMTime timestamp;
+```
+
 #### Discussion
 
-This timestamp is always synchronized to the [`masterClock`](avcapturesession/masterclock.md) time of the [`AVCaptureSession`](avcapturesession.md) object to which the photo output is connected.
+This timestamp is always synchronized to the [`masterClock`](../avcapturesession/masterclock.md) time of the [`AVCaptureSession`](../avcapturesession.md) object to which the photo output is connected.
 
 ## See Also
 
-- [var resolvedSettings: AVCaptureResolvedPhotoSettings](avcapturephoto/resolvedsettings.md)
+### Resolving photo capture requests
+- [var resolvedSettings: AVCaptureResolvedPhotoSettings](./resolvedsettings.md)
   The settings object that was used to request this photo capture.
-- [var photoCount: Int](avcapturephoto/photocount.md)
+- [var photoCount: Int](./photocount.md)
   The 1-based index of this photo capture relative to other results from the same capture request.
 
 

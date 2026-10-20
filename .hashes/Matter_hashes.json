@@ -10721,7 +10721,7 @@
       "hash": "6ebcc68cbda93d604ea03588b813aee8f3266e10cc16dd6c0acd70bc6955c2bf"
     },
     "https://developer.apple.com/documentation/matter/mtrattributeidtype/mtrclusteradministratorcommissioningattributewindowstatusid": {
-      "etag": "\"2304-65d560e82acde-df\"",
+      "etag": "\"2304-65d560e82acde\"",
       "file_path": "documentation/Matter/mtrattributeidtype/mtrclusteradministratorcommissioningattributewindowstatusid.md",
       "hash": "774d2ec2ae17c9db62970205919f2de752d36c15f8d99adebb9640c5bc893a5d"
     },
@@ -19376,7 +19376,7 @@
       "hash": "4add59483d550b4f00a3ec4cb485e63833ab7f873eb1bc60c134f8653a85ab4d"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclusterballastconfiguration/subscribeattributelampmanufacturer(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:)": {
-      "etag": "\"50b7-65d5610f7fc80-df\"",
+      "etag": "\"50b7-65d5610f7fc80\"",
       "file_path": "documentation/Matter/mtrbaseclusterballastconfiguration/subscribeattributelampmanufacturer(withmininterval,maxinterval,params,subscriptionestablished,reporthandler).md",
       "hash": "b33ab0f5ece5d46210916b8cb650487da3c7311de1b3e1eda5882891ec448d99"
     },
@@ -23731,7 +23731,7 @@
       "hash": "e5f36aac0577ace9531bcd16e1477ba5f05c1f65847c1e50c0d714470d2f514d"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclusterchannel/skip(with:completion:)": {
-      "etag": "\"33c6-65d5611048e1c\"",
+      "etag": "\"33c6-65d5611048e1c-df\"",
       "file_path": "documentation/Matter/mtrbaseclusterchannel/skip(with,completion).md",
       "hash": "6f05707885604bff6668614b52c7fc11ccac0f8e111b47ba744e86f43538895f"
     },
@@ -30851,7 +30851,7 @@
       "hash": "a9a867c040f1263a62ee30e348a7236dd07ae3e7eaa47229a3e2152b8943a2fe"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclusterelectricalmeasurement/readattributedcvoltagedivisor(completion:)": {
-      "etag": "\"317a-65d561054c8f6-df\"",
+      "etag": "\"317a-65d561054c8f6\"",
       "file_path": "documentation/Matter/mtrbaseclusterelectricalmeasurement/readattributedcvoltagedivisor(completion).md",
       "hash": "272f1f3b6d29f19d2ed0fbb3caf8d8a433dd40d96124b92c9ccba883b87937f8"
     },
@@ -32576,7 +32576,7 @@
       "hash": "c01ac32e1cd121bff0c4306233257e705dc851eb40805ae902bf89d7d597bb7f"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclusterelectricalmeasurement/subscribeattributeactivepower(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:)": {
-      "etag": "\"4ed8-65d561049a387\"",
+      "etag": "\"4ed8-65d561049a387-df\"",
       "file_path": "documentation/Matter/mtrbaseclusterelectricalmeasurement/subscribeattributeactivepower(withmininterval,maxinterval,params,subscriptionestablished,reporthandler).md",
       "hash": "c9f415eaa6bb4c9d2705c5da3aba59bdd6e5b36a9f16e8573efb300b7de176ee"
     },
@@ -42966,7 +42966,7 @@
       "hash": "17a5d67f7d753118cc69d42592483e88087abd6ff18e45e50c9387fe0441e43b"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclusternetworkcommissioning/readattributesupportedthreadfeatures(withclusterstatecache:endpoint:queue:completion:)": {
-      "etag": "\"49f1-65d5610751380\"",
+      "etag": "\"49f1-65d5610751380-df\"",
       "file_path": "documentation/Matter/mtrbaseclusternetworkcommissioning/readattributesupportedthreadfeatures(withclusterstatecache,endpoint,queue,completion).md",
       "hash": "9890a93f73500d797cb15ec393c0ceba16f96d8679351f5db2aef65b526d9f17"
     },
@@ -45581,7 +45581,7 @@
       "hash": "04873edfafa88edb4aa1fc7172785a24c3ed7bf0c93ba081a2583e5a37bb5f2a"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclusterotasoftwareupdateprovider-2vync/readattributeattributelist(completionhandler:)": {
-      "etag": "\"2f11-65d5610da8db1\"",
+      "etag": "\"2f11-65d5610da8db1-df\"",
       "file_path": "documentation/Matter/mtrbaseclusterotasoftwareupdateprovider-2vync/readattributeattributelist(completionhandler).md",
       "hash": "e21ee6845e6df7dc950d7c6cf496a52b773b5fa333bc788b895e9f70f5a87163"
     },
@@ -52686,7 +52686,7 @@
       "hash": "cad105ca71ebd4daf9d2f3793f358bdb99e54dfacc7c69c04cad32bb34e28d83"
     },
     "https://developer.apple.com/documentation/matter/mtrbaseclustertemperaturecontrol/init(device:endpointid:queue:)": {
-      "etag": "\"30ac-65d560fe52f5c\"",
+      "etag": "\"30ac-65d560fe52f5c-df\"",
       "file_path": "documentation/Matter/mtrbaseclustertemperaturecontrol/init(device,endpointid,queue).md",
       "hash": "4ca265338cc8076a4d00b2c9e4bb53efc3baece3a7f0e16f172c4eddc737d09a"
     },
@@ -66931,7 +66931,7 @@
       "hash": "37c9a35d4f435ca0ce44267795f0f8803f31898a6d8de974142381c994027526"
     },
     "https://developer.apple.com/documentation/matter/mtrbasicinformationcolor/maroon": {
-      "etag": "\"17cd-65d560f0ca0d2\"",
+      "etag": "\"17cd-65d560f0ca0d2-df\"",
       "file_path": "documentation/Matter/mtrbasicinformationcolor/maroon.md",
       "hash": "9b7c1df084980a9d56d939f485179829d8d8799013c9b9d052737056106a3bf6"
     },
@@ -132501,7 +132501,7 @@
       "hash": "6ebcc68cbda93d604ea03588b813aee8f3266e10cc16dd6c0acd70bc6955c2bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrattributeidtype/mtrclusteradministratorcommissioningattributewindowstatusid.json": {
-      "etag": "\"2304-65d560e82acde-df\"",
+      "etag": "\"2304-65d560e82acde\"",
       "file_path": "documentation/Matter/mtrattributeidtype/mtrclusteradministratorcommissioningattributewindowstatusid.md",
       "hash": "774d2ec2ae17c9db62970205919f2de752d36c15f8d99adebb9640c5bc893a5d"
     },
@@ -141156,7 +141156,7 @@
       "hash": "4add59483d550b4f00a3ec4cb485e63833ab7f873eb1bc60c134f8653a85ab4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclusterballastconfiguration/subscribeattributelampmanufacturer(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).json": {
-      "etag": "\"50b7-65d5610f7fc80-df\"",
+      "etag": "\"50b7-65d5610f7fc80\"",
       "file_path": "documentation/Matter/mtrbaseclusterballastconfiguration/subscribeattributelampmanufacturer(withmininterval,maxinterval,params,subscriptionestablished,reporthandler).md",
       "hash": "b33ab0f5ece5d46210916b8cb650487da3c7311de1b3e1eda5882891ec448d99"
     },
@@ -145511,7 +145511,7 @@
       "hash": "e5f36aac0577ace9531bcd16e1477ba5f05c1f65847c1e50c0d714470d2f514d"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclusterchannel/skip(with:completion:).json": {
-      "etag": "\"33c6-65d5611048e1c\"",
+      "etag": "\"33c6-65d5611048e1c-df\"",
       "file_path": "documentation/Matter/mtrbaseclusterchannel/skip(with,completion).md",
       "hash": "6f05707885604bff6668614b52c7fc11ccac0f8e111b47ba744e86f43538895f"
     },
@@ -152631,7 +152631,7 @@
       "hash": "a9a867c040f1263a62ee30e348a7236dd07ae3e7eaa47229a3e2152b8943a2fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclusterelectricalmeasurement/readattributedcvoltagedivisor(completion:).json": {
-      "etag": "\"317a-65d561054c8f6-df\"",
+      "etag": "\"317a-65d561054c8f6\"",
       "file_path": "documentation/Matter/mtrbaseclusterelectricalmeasurement/readattributedcvoltagedivisor(completion).md",
       "hash": "272f1f3b6d29f19d2ed0fbb3caf8d8a433dd40d96124b92c9ccba883b87937f8"
     },
@@ -154356,7 +154356,7 @@
       "hash": "c01ac32e1cd121bff0c4306233257e705dc851eb40805ae902bf89d7d597bb7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclusterelectricalmeasurement/subscribeattributeactivepower(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).json": {
-      "etag": "\"4ed8-65d561049a387\"",
+      "etag": "\"4ed8-65d561049a387-df\"",
       "file_path": "documentation/Matter/mtrbaseclusterelectricalmeasurement/subscribeattributeactivepower(withmininterval,maxinterval,params,subscriptionestablished,reporthandler).md",
       "hash": "c9f415eaa6bb4c9d2705c5da3aba59bdd6e5b36a9f16e8573efb300b7de176ee"
     },
@@ -164746,7 +164746,7 @@
       "hash": "17a5d67f7d753118cc69d42592483e88087abd6ff18e45e50c9387fe0441e43b"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclusternetworkcommissioning/readattributesupportedthreadfeatures(withclusterstatecache:endpoint:queue:completion:).json": {
-      "etag": "\"49f1-65d5610751380\"",
+      "etag": "\"49f1-65d5610751380-df\"",
       "file_path": "documentation/Matter/mtrbaseclusternetworkcommissioning/readattributesupportedthreadfeatures(withclusterstatecache,endpoint,queue,completion).md",
       "hash": "9890a93f73500d797cb15ec393c0ceba16f96d8679351f5db2aef65b526d9f17"
     },
@@ -167361,7 +167361,7 @@
       "hash": "04873edfafa88edb4aa1fc7172785a24c3ed7bf0c93ba081a2583e5a37bb5f2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclusterotasoftwareupdateprovider-2vync/readattributeattributelist(completionhandler:).json": {
-      "etag": "\"2f11-65d5610da8db1\"",
+      "etag": "\"2f11-65d5610da8db1-df\"",
       "file_path": "documentation/Matter/mtrbaseclusterotasoftwareupdateprovider-2vync/readattributeattributelist(completionhandler).md",
       "hash": "e21ee6845e6df7dc950d7c6cf496a52b773b5fa333bc788b895e9f70f5a87163"
     },
@@ -174466,7 +174466,7 @@
       "hash": "cad105ca71ebd4daf9d2f3793f358bdb99e54dfacc7c69c04cad32bb34e28d83"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbaseclustertemperaturecontrol/init(device:endpointid:queue:).json": {
-      "etag": "\"30ac-65d560fe52f5c\"",
+      "etag": "\"30ac-65d560fe52f5c-df\"",
       "file_path": "documentation/Matter/mtrbaseclustertemperaturecontrol/init(device,endpointid,queue).md",
       "hash": "4ca265338cc8076a4d00b2c9e4bb53efc3baece3a7f0e16f172c4eddc737d09a"
     },
@@ -188711,7 +188711,7 @@
       "hash": "37c9a35d4f435ca0ce44267795f0f8803f31898a6d8de974142381c994027526"
     },
     "https://developer.apple.com/tutorials/data/documentation/matter/mtrbasicinformationcolor/maroon.json": {
-      "etag": "\"17cd-65d560f0ca0d2\"",
+      "etag": "\"17cd-65d560f0ca0d2-df\"",
       "file_path": "documentation/Matter/mtrbasicinformationcolor/maroon.md",
       "hash": "9b7c1df084980a9d56d939f485179829d8d8799013c9b9d052737056106a3bf6"
     },
@@ -243566,6 +243566,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 48713
   }
 }

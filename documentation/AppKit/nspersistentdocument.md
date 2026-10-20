@@ -1,12 +1,13 @@
 # NSPersistentDocument
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A document object that can integrate with Core Data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,76 +15,91 @@ A document object that can integrate with Core Data.
 class NSPersistentDocument
 ```
 
+```objc
+@interface NSPersistentDocument : NSDocument
+```
+
 #### Overview
 
-The [`NSPersistentDocument`](nspersistentdocument.md) class is a subclass of [`NSDocument`](nsdocument.md) that is designed to easily integrate into the Core Data framework. It provides methods to access a document-wide [`NSManagedObjectContext`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext) object, and provides default implementations of methods to read and write files using the persistence framework. In a persistent document, the undo manager functionality is taken over by managed object context.
+The [`NSPersistentDocument`](./nspersistentdocument.md) class is a subclass of [`NSDocument`](./nsdocument.md) that is designed to easily integrate into the Core Data framework. It provides methods to access a document-wide [`NSManagedObjectContext`](../CoreData/nsmanagedobjectcontext.md) object, and provides default implementations of methods to read and write files using the persistence framework. In a persistent document, the undo manager functionality is taken over by managed object context.
 
 Standard document behavior is implemented as follows:
 
-- Opening a document invokes [`configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)`](nspersistentdocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).md) with the new URL, and adds a store of the default type (XML). Objects are loaded from the persistent store on demand through the document’s context.
-- Saving a new document adds a store of the default type with the chosen URL and invokes save: on the context. For an existing document, a save just invokes [`save()`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/save()) on the context.
-- Save As for a new document simply invokes save. For an opened document, it migrates the persistent store to the new URL and invokes [`save()`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/save()) on the context.
+- Opening a document invokes [`configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)`](./nspersistentdocument/configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md) with the new URL, and adds a store of the default type (XML). Objects are loaded from the persistent store on demand through the document’s context.
+- Saving a new document adds a store of the default type with the chosen URL and invokes save: on the context. For an existing document, a save just invokes [`save()`](../CoreData/nsmanagedobjectcontext/save%28%29.md) on the context.
+- Save As for a new document simply invokes save. For an opened document, it migrates the persistent store to the new URL and invokes [`save()`](../CoreData/nsmanagedobjectcontext/save%28%29.md) on the context.
 - Revert resets the document’s managed object context. Objects are subsequently loaded from the persistent store on demand, as with opening a new document.
 
-By default an [`NSPersistentDocument`](nspersistentdocument.md) instance creates its own ready-to-use persistence stack including managed object context, persistent object store coordinator and persistent store. There is a one-to-one mapping between the document and the backing object store.
+By default an [`NSPersistentDocument`](./nspersistentdocument.md) instance creates its own ready-to-use persistence stack including managed object context, persistent object store coordinator and persistent store. There is a one-to-one mapping between the document and the backing object store.
 
-You can customize the architecture of the persistence stack by overriding the [`managedObjectModel`](nspersistentdocument/managedobjectmodel.md) property and [`configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)`](nspersistentdocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).md) method. You might wish to do this, for example, to specify a particular managed object model.
+You can customize the architecture of the persistence stack by overriding the [`managedObjectModel`](./nspersistentdocument/managedobjectmodel.md) property and [`configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)`](./nspersistentdocument/configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md) method. You might wish to do this, for example, to specify a particular managed object model.
 
-> ❗ **Important**:  [`NSPersistentDocument`](nspersistentdocument.md) does not support some document behaviors: - File wrappers.
-- [`NSDocument.SaveOperationType.saveToOperation`](nsdocument/saveoperationtype/savetooperation.md) operation type. Core Data does not support saving changes to a new document while maintaining the unsaved state in the current document. - Asynchronous saving. [`NSPersistentDocument`](nspersistentdocument.md) does not support the asynchronous saving API of [`NSDocument`](nsdocument.md) because that API requires accessing the document’s state on multiple threads and that violates the requirements of the [`NSManagedObjectContext`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext) class. Do not override [`canAsynchronouslyWrite(to:ofType:for:)`](nsdocument/canasynchronouslywrite(to:oftype:for:).md).
+> ❗ **Important**:  [`NSPersistentDocument`](./nspersistentdocument.md) does not support some document behaviors:
+>
+> - File wrappers.
+> - [`NSDocument.SaveOperationType.saveToOperation`](./nsdocument/saveoperationtype/savetooperation.md) operation type.
+>
+> Core Data does not support saving changes to a new document while maintaining the unsaved state in the current document.
+>
+> - Asynchronous saving.
+>
+> [`NSPersistentDocument`](./nspersistentdocument.md) does not support the asynchronous saving API of [`NSDocument`](./nsdocument.md) because that API requires accessing the document’s state on multiple threads and that violates the requirements of the [`NSManagedObjectContext`](../CoreData/nsmanagedobjectcontext.md) class. Do not override [`canAsynchronouslyWrite(to:ofType:for:)`](./nsdocument/canasynchronouslywrite%28to,oftype,for%29.md).
 
 ##### Undo Support
 
 The persistent document uses the managed object context’s undo manager.
 
-> ❗ **Important**: Do not override the following properties, their getters, or their setters: - [`hasUndoManager`](nsdocument/hasundomanager.md)
-- [`undoManager`](nsdocument/undomanager.md)
+> ❗ **Important**: Do not override the following properties, their getters, or their setters:
+>
+> - [`hasUndoManager`](./nsdocument/hasundomanager.md)
+> - [`undoManager`](./nsdocument/undomanager.md)
 
-The [`isDocumentEdited`](nsdocument/isdocumentedited.md) method returns [`true`](https://developer.apple.com/documentation/swift/true) if the persistent document’s managed object context, or editors registered with the context, have uncommitted changes, otherwise it returns [`false`](https://developer.apple.com/documentation/swift/false).
+The [`isDocumentEdited`](./nsdocument/isdocumentedited.md) method returns [`true`](../Swift/true.md) if the persistent document’s managed object context, or editors registered with the context, have uncommitted changes, otherwise it returns [`false`](../Swift/false.md).
 
 ## Topics
 
 ### Managing the Persistence Objects
-- [var managedObjectContext: NSManagedObjectContext?](nspersistentdocument/managedobjectcontext.md)
+- [var managedObjectContext: NSManagedObjectContext?](./nspersistentdocument/managedobjectcontext.md)
   The managed object context for the document.
-- [var managedObjectModel: NSManagedObjectModel?](nspersistentdocument/managedobjectmodel.md)
+- [var managedObjectModel: NSManagedObjectModel?](./nspersistentdocument/managedobjectmodel.md)
   The managed object model of the document.
-- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [String : Any]?) throws](nspersistentdocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).md)
+- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [String : Any]?) throws](./nspersistentdocument/configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md)
   Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.
-- [func persistentStoreType(forFileType: String) -> String](nspersistentdocument/persistentstoretype(forfiletype:).md)
+- [func persistentStoreType(forFileType: String) -> String](./nspersistentdocument/persistentstoretype%28forfiletype%29.md)
   Returns the type of persistent store associated with the specified file type.
 ### Document Content Management
-- [func read(from: URL, ofType: String) throws](nspersistentdocument/read(from:oftype:).md)
+- [func read(from: URL, ofType: String) throws](./nspersistentdocument/read%28from,oftype%29.md)
   Sets the contents of the receiver by reading from a file of a given type located by a given URL.
-- [func revert(toContentsOf: URL, ofType: String) throws](nspersistentdocument/revert(tocontentsof:oftype:).md)
+- [func revert(toContentsOf: URL, ofType: String) throws](./nspersistentdocument/revert%28tocontentsof,oftype%29.md)
   Overridden to clean up the managed object context and controllers during a revert.
-- [func write(to: URL, ofType: String, for: NSDocument.SaveOperationType, originalContentsURL: URL?) throws](nspersistentdocument/write(to:oftype:for:originalcontentsurl:).md)
+- [func write(to: URL, ofType: String, for: NSDocument.SaveOperationType, originalContentsURL: URL?) throws](./nspersistentdocument/write%28to,oftype,for,originalcontentsurl%29.md)
   Saves changes in the document’s managed object context and saves the document’s persistent store to a given URL.
 
 ## Relationships
 
 ### Inherits From
-- [NSDocument](nsdocument.md)
+- [NSDocument](./nsdocument.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSEditorRegistration](nseditorregistration.md)
-- [NSFilePresenter](../foundation/nsfilepresenter.md)
-- [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSEditorRegistration](./nseditorregistration.md)
+- [NSFilePresenter](../Foundation/nsfilepresenter.md)
+- [NSMenuItemValidation](./nsmenuitemvalidation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceValidations](./nsuserinterfacevalidations.md)
 
 ## See Also
 
-- [Developing a Document-Based App](developing-a-document-based-app.md)
+### Documents
+- [Developing a Document-Based App](./developing-a-document-based-app.md)
   Write an app that creates, manages, edits, and saves text documents.
-- [class NSDocument](nsdocument.md)
+- [class NSDocument](./nsdocument.md)
   An abstract class that defines the interface for macOS documents.
-- [class NSDocumentController](nsdocumentcontroller.md)
+- [class NSDocumentController](./nsdocumentcontroller.md)
   An object that manages an app’s documents.
 
 

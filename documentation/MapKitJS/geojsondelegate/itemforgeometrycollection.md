@@ -1,7 +1,8 @@
 # itemForGeometryCollection(item, object)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Interface Method
 
 Overrides a geometry collection with the provided item and object.
 
@@ -10,7 +11,7 @@ Overrides a geometry collection with the provided item and object.
 
 ## Declaration
 
-```swift
+```
 itemForGeometryCollection?<D extends GeoJSONTypes.GeometryCollection>(
     item: ItemCollection<D>,
     object: D,

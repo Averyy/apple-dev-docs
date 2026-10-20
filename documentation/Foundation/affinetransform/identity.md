@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identity affine transformation matrix.
 

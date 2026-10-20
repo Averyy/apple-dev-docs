@@ -1,7 +1,8 @@
 # validationURL
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL your server must use to validate itself and obtain a merchant session object.
 
@@ -11,19 +12,19 @@ The URL your server must use to validate itself and obtain a merchant session ob
 
 ## Declaration
 
-```swift
+```
 readonly attribute DOMString validationURL;
 ```
 
 ## Mentions
 
-- [Providing Merchant Validation](providing-merchant-validation.md)
+- [Providing Merchant Validation](../providing-merchant-validation.md)
 
 #### Discussion
 
-This attribute is contained by the [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md) event. Access this attribute using the event parameter, for example, `var URL = event.validationURL;`.
+This attribute is contained by the [`onvalidatemerchant`](../applepaysession/onvalidatemerchant.md) event. Access this attribute using the event parameter, for example, `var URL = event.validationURL;`.
 
-Pass the URL in the [`validationURL`](applepayvalidatemerchantevent/validationurl.md) attribute to your server, as described in [`Providing Merchant Validation`](providing-merchant-validation.md).
+Pass the URL in the [`validationURL`](./validationurl.md) attribute to your server, as described in [Providing Merchant Validation](../providing-merchant-validation.md).
 
 
 ---

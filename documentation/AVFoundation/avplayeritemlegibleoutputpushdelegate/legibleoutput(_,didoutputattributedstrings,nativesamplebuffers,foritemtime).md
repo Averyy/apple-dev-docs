@@ -1,7 +1,8 @@
 # legibleOutput(_:didOutputAttributedStrings:nativeSampleBuffers:forItemTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to process the delivery of new textual samples.
 
@@ -19,17 +20,21 @@ Asks the delegate to process the delivery of new textual samples.
 optional func legibleOutput(_ output: AVPlayerItemLegibleOutput, didOutputAttributedStrings strings: [NSAttributedString], nativeSampleBuffers nativeSamples: [Any], forItemTime itemTime: CMTime)
 ```
 
+```objc
+- (void) legibleOutput:(AVPlayerItemLegibleOutput *) output didOutputAttributedStrings:(NSArray<NSAttributedString *> *) strings nativeSampleBuffers:(NSArray *) nativeSamples forItemTime:(CMTime) itemTime;
+```
+
 #### Discussion
 
-For each media subtype in the array passed in to the `output` object’s  [`init(mediaSubtypesForNativeRepresentation:)`](avplayeritemlegibleoutput/init(mediasubtypesfornativerepresentation:).md) method, the delegate receives sample buffers carrying data in its native format via the `nativeSamples` parameter if there is media data of that subtype in the media resource.
+For each media subtype in the array passed in to the `output` object’s  [`init(mediaSubtypesForNativeRepresentation:)`](../avplayeritemlegibleoutput/init%28mediasubtypesfornativerepresentation%29.md) method, the delegate receives sample buffers carrying data in its native format via the `nativeSamples` parameter if there is media data of that subtype in the media resource.
 
-For all other media subtypes present in the media resource, the delegate receives attributed strings in a common format via the `strings` parameter.  See [`CMTextMarkup`](https://developer.apple.com/documentation/coremedia/cmtextmarkup) for the string attributes keys and values that are used in the attributed strings.
+For all other media subtypes present in the media resource, the delegate receives attributed strings in a common format via the `strings` parameter.  See [CMTextMarkup](../../CoreMedia/cmtextmarkup.md) for the string attributes keys and values that are used in the attributed strings.
 
 ## Parameters
 
-- `output`: The [`AVPlayerItemLegibleOutput`](avplayeritemlegibleoutput.md) source instance.
-- `strings`: An array of [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) objects, each containing both the run of text and the descriptive markup.
-- `nativeSamples`: An array of [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) objects, for media subtypes included in the array passed to the `output` object’s [`init(mediaSubtypesForNativeRepresentation:)`](avplayeritemlegibleoutput/init(mediasubtypesfornativerepresentation:).md) method.
+- `output`: The [`AVPlayerItemLegibleOutput`](../avplayeritemlegibleoutput.md) source instance.
+- `strings`: An array of [`NSAttributedString`](../../Foundation/nsattributedstring.md) objects, each containing both the run of text and the descriptive markup.
+- `nativeSamples`: An array of [`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md) objects, for media subtypes included in the array passed to the `output` object’s [`init(mediaSubtypesForNativeRepresentation:)`](../avplayeritemlegibleoutput/init%28mediasubtypesfornativerepresentation%29.md) method.
 - `itemTime`: The item time at which the strings should be presented.
 
 

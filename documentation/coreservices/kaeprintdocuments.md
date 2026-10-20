@@ -1,7 +1,8 @@
 # kAEPrintDocuments
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Event that provides an application with a list of documents to print.
 

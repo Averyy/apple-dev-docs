@@ -1,7 +1,8 @@
 # usdzFile
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 USDZ file representing this accessory, if present.
 

@@ -1,7 +1,8 @@
 # SafeAreaRegions
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of symbolic safe area regions.
 
@@ -24,37 +25,38 @@ struct SafeAreaRegions
 ## Topics
 
 ### Getting safe area regions
-- [static let all: SafeAreaRegions](safearearegions/all.md)
+- [static let all: SafeAreaRegions](./safearearegions/all.md)
   All safe area regions.
-- [static let container: SafeAreaRegions](safearearegions/container.md)
+- [static let container: SafeAreaRegions](./safearearegions/container.md)
   The safe area defined by the device and containers within the user interface, including elements such as top and bottom bars.
-- [static let keyboard: SafeAreaRegions](safearearegions/keyboard.md)
+- [static let keyboard: SafeAreaRegions](./safearearegions/keyboard.md)
   The safe area matching the current extent of any software keyboard displayed over the view content.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](view/ignoressafearea(_:edges:).md)
+### Staying in the safe areas
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](./view/ignoressafearea%28_,edges%29.md)
   Expands the safe area of a view.
-- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](./view/ignoressafearea%28_,edges,alignment%29.md)
   Expands the safe area of a view aligning content within the new bounds using the provided alignment.
-- [func safeAreaInset(edge:alignment:spacing:content:)](view/safeareainset(edge:alignment:spacing:content:).md)
+- [func safeAreaInset(edge:alignment:spacing:content:)](./view/safeareainset%28edge,alignment,spacing,content%29.md)
   Shows the specified content beside the modified view.
-- [func safeAreaPadding(_:)](view/safeareapadding(_:).md)
+- [func safeAreaPadding(_:)](./view/safeareapadding%28_%29.md)
   Adds the provided insets into the safe area of this view.
-- [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](view/safeareapadding(_:_:).md)
+- [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](./view/safeareapadding%28_,_%29.md)
   Adds the provided insets into the safe area of this view.
 
 

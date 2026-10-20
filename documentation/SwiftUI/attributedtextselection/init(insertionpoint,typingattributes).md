@@ -1,7 +1,8 @@
 # init(insertionPoint:typingAttributes:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a selection to a single insertion point.
 

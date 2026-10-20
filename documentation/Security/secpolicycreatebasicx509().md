@@ -1,7 +1,8 @@
 # SecPolicyCreateBasicX509()
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a policy object for the default X.509 policy.
 
@@ -20,13 +21,17 @@ Returns a policy object for the default X.509 policy.
 func SecPolicyCreateBasicX509() -> SecPolicy
 ```
 
+```c
+SecPolicyRefSecPolicyCreateBasicX509();
+```
+
 ## Mentions
 
-- [Creating a Trust Object](creating-a-trust-object.md)
+- [Creating a Trust Object](./creating-a-trust-object.md)
 
 #### Return Value
 
-The policy object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release the object when you are finished with it.
+The policy object. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release the object when you are finished with it.
 
 
 ---

@@ -1,12 +1,13 @@
 # handle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user started a workout session on the paired iPhone.
 
 **Availability**:
-- watchOS 3.0+
+- watchOS 3.0+ - Deprecated in 9.2
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Tells the delegate that the user started a workout session on the paired iPhone.
 optional func handle(_ workoutConfiguration: HKWorkoutConfiguration)
 ```
 
+```objc
+- (void) handleWorkoutConfiguration:(HKWorkoutConfiguration *) workoutConfiguration;
+```
+
 #### Discussion
 
-When your iPhone app starts a workout session using the HealthKit store’s `startWatchAppWithWorkoutConfiguration:completion:` method, the system launches or wakes the corresponding Watch app in the background and calls this method. Use this method to configure an [`HKWorkoutSession`](https://developer.apple.com/documentation/healthkit/hkworkoutsession) object in your Watch app, and then call [`start(_:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/start(_:)) to start the session.
+When your iPhone app starts a workout session using the HealthKit store’s `startWatchAppWithWorkoutConfiguration:completion:` method, the system launches or wakes the corresponding Watch app in the background and calls this method. Use this method to configure an [`HKWorkoutSession`](../../HealthKit/hkworkoutsession.md) object in your Watch app, and then call [`start(_:)`](../../HealthKit/hkhealthstore/start%28_%29.md) to start the session.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ When your iPhone app starts a workout session using the HealthKit store’s `sta
 
 ## See Also
 
-- [func handleActiveWorkoutRecovery()](wkextensiondelegate/handleactiveworkoutrecovery.md)
+### Handling a workout session
+- [func handleActiveWorkoutRecovery()](./handleactiveworkoutrecovery%28%29.md)
   Tells the delegate when the app relaunches after crashing during an active workout session.
 
 

@@ -1,7 +1,8 @@
 # readAttributeInt8u(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeInt8u(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeInt8uWithParams:(MTRReadParams *) params;
 ```
 
 

@@ -1,7 +1,8 @@
 # SKSearch
 
 **Framework**: Core Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Defines an opaque data type representing an asynchronous search.
 
@@ -17,11 +18,11 @@ class SKSearch
 
 #### Overview
 
-A search object is created when you call the [`SKSearchCreate(_:_:_:)`](1443079-sksearchcreate.md) function.
+A search object is created when you call the [`SKSearchCreate(_:_:_:)`](./api-1443079-sksearchcreate.md) function.
 
-##### 1681574
+##### Special Considerations
 
-You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/cfmakecollectable) with SKSearch objects. In a garbage-collected environment, you must use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to dispose of an SKSearch object.
+You cannot use [`CFMakeCollectable`](../CoreFoundation/cfmakecollectable.md) with SKSearch objects. In a garbage-collected environment, you must use [`CFRelease`](../CoreFoundation/cfrelease.md) to dispose of an SKSearch object.
 
 
 ---

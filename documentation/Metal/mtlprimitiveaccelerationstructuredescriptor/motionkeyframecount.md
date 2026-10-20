@@ -1,7 +1,8 @@
 # motionKeyframeCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of keyframes in the geometry data.
 
@@ -19,23 +20,29 @@ The number of keyframes in the geometry data.
 var motionKeyframeCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger motionKeyframeCount;
+```
+
 #### Discussion
 
-The default value is `1`. If the value is greater than `1`, all geometry descriptors that you attach to this descriptor need to be motion descriptors, and each needs to have exactly that many [`MTLMotionKeyframeData`](mtlmotionkeyframedata.md) objects.
+The default value is `1`. If the value is greater than `1`, all geometry descriptors that you attach to this descriptor need to be motion descriptors, and each needs to have exactly that many [`MTLMotionKeyframeData`](../mtlmotionkeyframedata.md) objects.
 
 ## See Also
 
-- [var geometryDescriptors: [MTLAccelerationStructureGeometryDescriptor]?](mtlprimitiveaccelerationstructuredescriptor/geometrydescriptors.md)
+### Related Documentation
+- [var geometryDescriptors: [MTLAccelerationStructureGeometryDescriptor]?](./geometrydescriptors.md)
   An array that contains the individual pieces of geometry that compose the acceleration structure.
-- [var motionStartTime: Float](mtlprimitiveaccelerationstructuredescriptor/motionstarttime.md)
+### Specifying motion behavior
+- [var motionStartTime: Float](./motionstarttime.md)
   The start time for the range of motion that the keyframe data describes.
-- [var motionEndTime: Float](mtlprimitiveaccelerationstructuredescriptor/motionendtime.md)
+- [var motionEndTime: Float](./motionendtime.md)
   The end time for the range of motion that the keyframe data describes.
-- [var motionStartBorderMode: MTLMotionBorderMode](mtlprimitiveaccelerationstructuredescriptor/motionstartbordermode.md)
+- [var motionStartBorderMode: MTLMotionBorderMode](./motionstartbordermode.md)
   The mode to use when handling timestamps before the start time.
-- [var motionEndBorderMode: MTLMotionBorderMode](mtlprimitiveaccelerationstructuredescriptor/motionendbordermode.md)
+- [var motionEndBorderMode: MTLMotionBorderMode](./motionendbordermode.md)
   The mode to use when handling timestamps after the end time.
-- [enum MTLMotionBorderMode](mtlmotionbordermode.md)
+- [enum MTLMotionBorderMode](../mtlmotionbordermode.md)
   Options for specifying how the acceleration structure handles timestamps that are outside the specified range.
 
 

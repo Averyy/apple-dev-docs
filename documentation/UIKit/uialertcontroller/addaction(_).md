@@ -1,7 +1,8 @@
 # addAction(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches an action object to the alert or action sheet.
 
@@ -9,13 +10,17 @@ Attaches an action object to the alert or action sheet.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func addAction(_ action: UIAlertAction)
+```
+
+```objc
+- (void) addAction:(UIAlertAction *) action;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ If your alert has multiple actions, the order in which you add those actions det
 
 ## See Also
 
-- [var actions: [UIAlertAction]](uialertcontroller/actions.md)
+### Configuring the user actions
+- [var actions: [UIAlertAction]](./actions.md)
   The actions that the user can take in response to the alert or action sheet.
-- [var preferredAction: UIAlertAction?](uialertcontroller/preferredaction.md)
+- [var preferredAction: UIAlertAction?](./preferredaction.md)
   The preferred action for the user to take from an alert.
 
 

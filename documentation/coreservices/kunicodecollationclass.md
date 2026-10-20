@@ -1,7 +1,8 @@
 # kUnicodeCollationClass
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Identifies collation as a class of operations.
 

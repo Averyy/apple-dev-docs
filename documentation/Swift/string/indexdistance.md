@@ -1,7 +1,8 @@
 # String.IndexDistance
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the number of steps between two `String.Index` values, where one value is reachable from the other.
 
@@ -13,6 +14,8 @@ A type that represents the number of steps between two `String.Index` values, wh
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: All index distances are now of type Int
 
 ## Declaration
 

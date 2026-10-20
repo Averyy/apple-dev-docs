@@ -1,7 +1,8 @@
 # street
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that corresponds to the street address component of the address.
 
@@ -20,23 +21,28 @@ A key that corresponds to the street address component of the address.
 static let street: NSTextCheckingKey
 ```
 
+```c
+extern NSTextCheckingKey const NSTextCheckingStreetKey;
+```
+
 ## See Also
 
-- [static let name: NSTextCheckingKey](nstextcheckingkey/name.md)
+### Constants
+- [static let name: NSTextCheckingKey](./name.md)
   A key that corresponds to the name component of the address.
-- [static let jobTitle: NSTextCheckingKey](nstextcheckingkey/jobtitle.md)
+- [static let jobTitle: NSTextCheckingKey](./jobtitle.md)
   A key that corresponds to the job component of the address.
-- [static let organization: NSTextCheckingKey](nstextcheckingkey/organization.md)
+- [static let organization: NSTextCheckingKey](./organization.md)
   A key that corresponds to the organization component of the address.
-- [static let city: NSTextCheckingKey](nstextcheckingkey/city.md)
+- [static let city: NSTextCheckingKey](./city.md)
   A key that corresponds to the city component of the address.
-- [static let state: NSTextCheckingKey](nstextcheckingkey/state.md)
+- [static let state: NSTextCheckingKey](./state.md)
   A key that corresponds to the state or province component of the address.
-- [static let zip: NSTextCheckingKey](nstextcheckingkey/zip.md)
+- [static let zip: NSTextCheckingKey](./zip.md)
   A key that corresponds to the zip code or postal code component of the address.
-- [static let country: NSTextCheckingKey](nstextcheckingkey/country.md)
+- [static let country: NSTextCheckingKey](./country.md)
   A key that corresponds to the country or region component of the address.
-- [static let phone: NSTextCheckingKey](nstextcheckingkey/phone.md)
+- [static let phone: NSTextCheckingKey](./phone.md)
   A key that corresponds to the phone number component of the address.
 
 

@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale of the requested thumbnail.
 
@@ -18,13 +19,18 @@ The scale of the requested thumbnail.
 var scale: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat scale;
+```
+
 ## See Also
 
-- [var maximumSize: CGSize](qlfilethumbnailrequest/maximumsize.md)
+### Describing the Requested Thumbnail
+- [var maximumSize: CGSize](./maximumsize.md)
   The maximum accepted size of a thumbnail.
-- [var minimumSize: CGSize](qlfilethumbnailrequest/minimumsize.md)
+- [var minimumSize: CGSize](./minimumsize.md)
   The minimum accepted size of a thumbnail.
-- [var fileURL: URL](qlfilethumbnailrequest/fileurl.md)
+- [var fileURL: URL](./fileurl.md)
   The URL of the image file to use for the thumbnail.
 
 

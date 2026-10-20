@@ -1,7 +1,8 @@
 # NetworkListener.ServiceRegistrationChange
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,16 +22,16 @@ enum ServiceRegistrationChange
 ## Topics
 
 ### Enumeration Cases
-- [NetworkListener.ServiceRegistrationChange.add(_:)](networklistener/serviceregistrationchange/add(_:).md)
+- [NetworkListener.ServiceRegistrationChange.add(_:)](./serviceregistrationchange/add%28_%29.md)
   An event when a Bonjour service has been registered, with the endpoint being advertised
-- [NetworkListener.ServiceRegistrationChange.remove(_:)](networklistener/serviceregistrationchange/remove(_:).md)
+- [NetworkListener.ServiceRegistrationChange.remove(_:)](./serviceregistrationchange/remove%28_%29.md)
   An event when a Bonjour service has been unregistered, with the endpoint being removed
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

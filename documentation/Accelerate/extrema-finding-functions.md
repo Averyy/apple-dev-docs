@@ -1,12 +1,14 @@
 # Extrema finding functions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Extract the values from a vector that fall outside a range.
 
 ## See Also
 
-- [Vector-to-vector minima and maxima](vector-to-vector-minima-and-maxima.md)
+### Vector-to-vector extrema functions
+- [Vector-to-vector minima and maxima](./vector-to-vector-minima-and-maxima.md)
   Compute the element-wise minimum or maximum values or magnitudes in a vector.
 
 

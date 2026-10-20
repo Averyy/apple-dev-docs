@@ -1,7 +1,8 @@
 # MPSSVGFDefaultTextureAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,30 +18,34 @@
 class MPSSVGFDefaultTextureAllocator
 ```
 
+```objc
+@interface MPSSVGFDefaultTextureAllocator : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpssvgfdefaulttextureallocator/init(device:).md)
+- [init(device: any MTLDevice)](./mpssvgfdefaulttextureallocator/init%28device%29.md)
 ### Instance Properties
-- [var allocatedTextureCount: Int](mpssvgfdefaulttextureallocator/allocatedtexturecount.md)
-- [var device: any MTLDevice](mpssvgfdefaulttextureallocator/device.md)
+- [var allocatedTextureCount: Int](./mpssvgfdefaulttextureallocator/allocatedtexturecount.md)
+- [var device: any MTLDevice](./mpssvgfdefaulttextureallocator/device.md)
 ### Instance Methods
-- [func reset()](mpssvgfdefaulttextureallocator/reset.md)
-- [func `return`(any MTLTexture)](mpssvgfdefaulttextureallocator/return(_:).md)
-- [func texture(with: MTLPixelFormat, width: Int, height: Int) -> (any MTLTexture)?](mpssvgfdefaulttextureallocator/texture(with:width:height:).md)
+- [func reset()](./mpssvgfdefaulttextureallocator/reset%28%29.md)
+- [func `return`(any MTLTexture)](./mpssvgfdefaulttextureallocator/return%28_%29.md)
+- [func texture(with: MTLPixelFormat, width: Int, height: Int) -> (any MTLTexture)?](./mpssvgfdefaulttextureallocator/texture%28with,width,height%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSSVGFTextureAllocator](mpssvgftextureallocator.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSSVGFTextureAllocator](./mpssvgftextureallocator.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

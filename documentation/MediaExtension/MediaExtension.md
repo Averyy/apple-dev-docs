@@ -1,7 +1,8 @@
 # MediaExtension
 
 **Framework**: MediaExtension  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 This framework provides a means for developers to create format readers, video decoders, and RAW processors for media that the system doesn’t natively support.
 
@@ -11,88 +12,88 @@ This framework provides a means for developers to create format readers, video d
 
 #### Overview
 
-MediaExtension format readers encapsulate media assets that the system doesn’t natively support so that the system can recognize them. MediaExtension video decoders decode video formats that the system doesn’t natively support. MediaExtension RAW processors work together with video decoders to allow direct control over the RAW decoding process. Developers need to build format readers, video decoders, and RAW processors as [`ExtensionKit`](https://developer.apple.com/documentation/extensionkit) bundles and embed them in a host app. Once a user installs and runs the host app, the embedded extensions become available to any app on the user’s system that opts in to using them.
+MediaExtension format readers encapsulate media assets that the system doesn’t natively support so that the system can recognize them. MediaExtension video decoders decode video formats that the system doesn’t natively support. MediaExtension RAW processors work together with video decoders to allow direct control over the RAW decoding process. Developers need to build format readers, video decoders, and RAW processors as [ExtensionKit](../ExtensionKit/ExtensionKit.md) bundles and embed them in a host app. Once a user installs and runs the host app, the embedded extensions become available to any app on the user’s system that opts in to using them.
 
 ## Topics
 
 ### Format readers
-- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+- [Supporting custom media formats and decoders](./supporting-custom-media-formats-and-decoders.md)
   Extend the media formats the system can open by providing a format reader and a video decoder.
-- [protocol MEFormatReader](meformatreader.md)
+- [protocol MEFormatReader](./meformatreader.md)
   A protocol that defines the requirements for a format reader, which represents a single media asset.
-- [protocol MEFormatReaderExtension](meformatreaderextension.md)
+- [protocol MEFormatReaderExtension](./meformatreaderextension.md)
   A protocol that defines a factory to create a new format reader with a byte source.
-- [class MEFormatReaderInstantiationOptions](meformatreaderinstantiationoptions.md)
+- [class MEFormatReaderInstantiationOptions](./meformatreaderinstantiationoptions.md)
   An object that contains options to pass to a format reader extension.
-- [class MEFileInfo](mefileinfo.md)
+- [class MEFileInfo](./mefileinfo.md)
   An object that contains file properties from the media asset.
-- [Format reader property list dictionaries](format-reader-property-list-dictionaries.md)
+- [Format reader property list dictionaries](./format-reader-property-list-dictionaries.md)
   Include property list dictionaries to describe a format reader and register the formats it supports.
-- [Format reader entitlement](format-reader-entitlement.md)
+- [Format reader entitlement](./format-reader-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension format reader.
 ### Track readers
-- [protocol METrackReader](metrackreader.md)
+- [protocol METrackReader](./metrackreader.md)
   A protocol that defines the information to provide about a track within a media asset.
-- [class METrackInfo](metrackinfo.md)
+- [class METrackInfo](./metrackinfo.md)
   An object that includes track properties parsed from the media asset.
 ### Sample cursors
-- [protocol MESampleCursor](mesamplecursor.md)
+- [protocol MESampleCursor](./mesamplecursor.md)
   A protocol that defines the information to provide about samples within a track of a media asset, and enables stepping through samples in the track in decode or presentation order.
-- [class MESampleLocation](mesamplelocation.md)
+- [class MESampleLocation](./mesamplelocation.md)
   An object that provides information about the sample location with the media.
-- [class MESampleCursorChunk](mesamplecursorchunk.md)
+- [class MESampleCursorChunk](./mesamplecursorchunk.md)
   An object that provides information about the chunk of media at the location of a sample.
-- [class MEEstimatedSampleLocation](meestimatedsamplelocation.md)
+- [class MEEstimatedSampleLocation](./meestimatedsamplelocation.md)
   An object that provides information about the estimated sample location with the media.
-- [class MEHEVCDependencyInfo](mehevcdependencyinfo.md)
+- [class MEHEVCDependencyInfo](./mehevcdependencyinfo.md)
   An object that provides information about the HEVC dependency attributes of a sample.
 ### Byte sources
-- [class MEByteSource](mebytesource.md)
+- [class MEByteSource](./mebytesource.md)
   Provides read access to the data in a media asset file.
 ### Video decoders
-- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+- [Supporting custom media formats and decoders](./supporting-custom-media-formats-and-decoders.md)
   Extend the media formats the system can open by providing a format reader and a video decoder.
-- [protocol MEVideoDecoder](mevideodecoder.md)
+- [protocol MEVideoDecoder](./mevideodecoder.md)
   A protocol that defines the requirements for a video decoder.
-- [protocol MEVideoDecoderExtension](mevideodecoderextension.md)
+- [protocol MEVideoDecoderExtension](./mevideodecoderextension.md)
   A protocol that defines a factory to create new video decoders for a codec type that the extension implements.
-- [class MEDecodeFrameOptions](medecodeframeoptions.md)
+- [class MEDecodeFrameOptions](./medecodeframeoptions.md)
   An object that guides the video decoder operation on a per-frame basis.
-- [class MEVideoDecoderPixelBufferManager](mevideodecoderpixelbuffermanager.md)
+- [class MEVideoDecoderPixelBufferManager](./mevideodecoderpixelbuffermanager.md)
   Describes pixel buffer requirements and creates new pixel buffers.
-- [Video decoder property list dictionary](video-decoder-property-list-dictionary.md)
+- [Video decoder property list dictionary](./video-decoder-property-list-dictionary.md)
   Include a property list dictionary to describe a video decoder.
-- [Video decoder entitlement](video-decoder-entitlement.md)
+- [Video decoder entitlement](./video-decoder-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension video decoder.
 ### RAW processors
-- [protocol MERAWProcessor](merawprocessor.md)
+- [protocol MERAWProcessor](./merawprocessor.md)
   A protocol that defines the requirements for a RAW processor.
-- [protocol MERAWProcessorExtension](merawprocessorextension.md)
+- [protocol MERAWProcessorExtension](./merawprocessorextension.md)
   A protocol that defines a factory to create RAW processors for a codec type that the extension implements.
-- [class MERAWProcessorPixelBufferManager](merawprocessorpixelbuffermanager.md)
+- [class MERAWProcessorPixelBufferManager](./merawprocessorpixelbuffermanager.md)
   Describes pixel buffer requirements and creates new pixel buffers.
-- [class MERAWProcessingParameter](merawprocessingparameter.md)
+- [class MERAWProcessingParameter](./merawprocessingparameter.md)
   An object for the RAW processor to describe each processing parameter the processor exposes.
-- [enum MERAWProcessorNotification](merawprocessornotification.md)
+- [enum MERAWProcessorNotification](./merawprocessornotification.md)
   Notifications that indicate a RAW processor state change.
-- [RAW processor property list dictionary](raw-processor-property-list-dictionary.md)
+- [RAW processor property list dictionary](./raw-processor-property-list-dictionary.md)
   Include a property list dictionary to describe a RAW processor.
-- [RAW processor entitlement](raw-processor-entitlement.md)
+- [RAW processor entitlement](./raw-processor-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension RAW processor.
 ### Errors
-- [let MediaExtensionErrorDomain: String](mediaextensionerrordomain.md)
+- [let MediaExtensionErrorDomain: String](./mediaextensionerrordomain.md)
   The domain of the error.
-- [struct MEError](meerror-swift.struct.md)
+- [struct MEError](./meerror-swift.struct.md)
   A MediaExtension framework error.
-- [MEError.Code](meerror-swift.struct/code.md)
+- [MEError.Code](./meerror-swift.struct/code.md)
   An enumeration that models media extension error codes.
 ### Variables
-- [var kMEFormatReaderSidecarFileNameExtensionArrayKey: String](kmeformatreadersidecarfilenameextensionarraykey.md)
-- [var kMERAWProcessorClassImplementationIDKey: String](kmerawprocessorclassimplementationidkey.md)
-- [var kMERAWProcessorCodecNameKey: String](kmerawprocessorcodecnamekey.md)
-- [var kMERAWProcessorCodecTypeKey: String](kmerawprocessorcodectypekey.md)
-- [var kMERAWProcessorObjectNameKey: String](kmerawprocessorobjectnamekey.md)
-- [var kMERAWProcessorProcessorInfoKey: String](kmerawprocessorprocessorinfokey.md)
+- [var kMEFormatReaderSidecarFileNameExtensionArrayKey: String](./kmeformatreadersidecarfilenameextensionarraykey.md)
+- [var kMERAWProcessorClassImplementationIDKey: String](./kmerawprocessorclassimplementationidkey.md)
+- [var kMERAWProcessorCodecNameKey: String](./kmerawprocessorcodecnamekey.md)
+- [var kMERAWProcessorCodecTypeKey: String](./kmerawprocessorcodectypekey.md)
+- [var kMERAWProcessorObjectNameKey: String](./kmerawprocessorobjectnamekey.md)
+- [var kMERAWProcessorProcessorInfoKey: String](./kmerawprocessorprocessorinfokey.md)
 
 
 ---

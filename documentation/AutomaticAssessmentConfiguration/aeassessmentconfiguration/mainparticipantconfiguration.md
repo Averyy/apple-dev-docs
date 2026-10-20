@@ -1,7 +1,8 @@
 # mainParticipantConfiguration
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app-specific configuration for the app that invokes the assessment.
 
@@ -17,9 +18,13 @@ The app-specific configuration for the app that invokes the assessment.
 var mainParticipantConfiguration: AEAssessmentParticipantConfiguration { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) AEAssessmentParticipantConfiguration * mainParticipantConfiguration;
+```
+
 #### Discussion
 
-Use this property to get and customize the app-specific configuration that’s applied to your own app. For example, you can set the [`allowsNetworkAccess`](aeassessmentparticipantconfiguration/allowsnetworkaccess.md) property for your own app:
+Use this property to get and customize the app-specific configuration that’s applied to your own app. For example, you can set the [`allowsNetworkAccess`](../aeassessmentparticipantconfiguration/allowsnetworkaccess.md) property for your own app:
 
 **Swift**:
 
@@ -37,11 +42,12 @@ AEAssessmentConfiguration *config = [[AEAssessmentConfiguration alloc] init];
 
 ## See Also
 
-- [var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticipantConfiguration]](aeassessmentconfiguration/configurationsbyapplication.md)
+### Allowing access to other apps
+- [var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticipantConfiguration]](./configurationsbyapplication.md)
   The collection of apps available during an assessment, along with their associated configurations.
-- [class AEAssessmentApplication](aeassessmentapplication.md)
+- [class AEAssessmentApplication](../aeassessmentapplication.md)
   A representation of an app that users can access during an assessment.
-- [class AEAssessmentParticipantConfiguration](aeassessmentparticipantconfiguration.md)
+- [class AEAssessmentParticipantConfiguration](../aeassessmentparticipantconfiguration.md)
   Configuration information for an app that’s available during an assessment.
 
 

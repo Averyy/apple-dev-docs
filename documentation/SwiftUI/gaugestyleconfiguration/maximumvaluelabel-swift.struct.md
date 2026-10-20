@@ -1,7 +1,8 @@
 # GaugeStyleConfiguration.MaximumValueLabel
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased value label of a gauge describing the maximum value.
 
@@ -23,15 +24,16 @@ A type-erased value label of a gauge describing the maximum value.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [var minimumValueLabel: GaugeStyleConfiguration.MinimumValueLabel?](gaugestyleconfiguration/minimumvaluelabel-swift.property.md)
+### Reporting the range
+- [var minimumValueLabel: GaugeStyleConfiguration.MinimumValueLabel?](./minimumvaluelabel-swift.property.md)
   A view that describes the minimum of the range for the current value.
-- [GaugeStyleConfiguration.MinimumValueLabel](gaugestyleconfiguration/minimumvaluelabel-swift.struct.md)
+- [GaugeStyleConfiguration.MinimumValueLabel](./minimumvaluelabel-swift.struct.md)
   A type-erased value label of a gauge describing the minimum value.
-- [var maximumValueLabel: GaugeStyleConfiguration.MaximumValueLabel?](gaugestyleconfiguration/maximumvaluelabel-swift.property.md)
+- [var maximumValueLabel: GaugeStyleConfiguration.MaximumValueLabel?](./maximumvaluelabel-swift.property.md)
   A view that describes the maximum of the range for the current value.
 
 

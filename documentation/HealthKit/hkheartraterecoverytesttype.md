@@ -1,7 +1,8 @@
 # HKHeartRateRecoveryTestType
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The test that measured a person’s heart-rate recovery.
 
@@ -19,29 +20,33 @@ The test that measured a person’s heart-rate recovery.
 enum HKHeartRateRecoveryTestType
 ```
 
+```c
+enum HKHeartRateRecoveryTestType : NSInteger;
+```
+
 ## Topics
 
 ### Heart-rate recovery tests
-- [HKHeartRateRecoveryTestType.maxExercise](hkheartraterecoverytesttype/maxexercise.md)
+- [HKHeartRateRecoveryTestType.maxExercise](./hkheartraterecoverytesttype/maxexercise.md)
   Measures a person’s actual heart-rate recovery.
-- [HKHeartRateRecoveryTestType.predictionNonExercise](hkheartraterecoverytesttype/predictionnonexercise.md)
+- [HKHeartRateRecoveryTestType.predictionNonExercise](./hkheartraterecoverytesttype/predictionnonexercise.md)
   A test that estimates a person’s heart-rate recovery without using exercise.
-- [HKHeartRateRecoveryTestType.predictionSubMaxExercise](hkheartraterecoverytesttype/predictionsubmaxexercise.md)
+- [HKHeartRateRecoveryTestType.predictionSubMaxExercise](./hkheartraterecoverytesttype/predictionsubmaxexercise.md)
   A test that estimates a person’s heart-rate recovery using lower-intensity exercise.
 ### Enumeration Cases
-- [HKHeartRateRecoveryTestType.stepTest](hkheartraterecoverytesttype/steptest.md)
+- [HKHeartRateRecoveryTestType.stepTest](./hkheartraterecoverytesttype/steptest.md)
 ### Initializers
-- [init?(rawValue: Int)](hkheartraterecoverytesttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkheartraterecoverytesttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

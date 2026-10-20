@@ -1,7 +1,8 @@
 # NSFileProviderItemDecorating
 
 **Framework**: File Provider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Support for decorating items.
 
@@ -18,9 +19,13 @@ Support for decorating items.
 protocol NSFileProviderItemDecorating : NSFileProviderItemProtocol
 ```
 
+```objc
+@protocol NSFileProviderItemDecorating <NSFileProviderItem>
+```
+
 #### Overview
 
-To adopt this protocol, implement the [`decorations`](nsfileprovideritemdecorating/decorations.md) method for your extension’s [`NSFileProviderItem`](nsfileprovideritem-swift.typealias.md) and return valid identifiers for the desired decorations.
+To adopt this protocol, implement the [`decorations`](./nsfileprovideritemdecorating/decorations.md) method for your extension’s [`NSFileProviderItem`](./nsfileprovideritem-swift.typealias.md) and return valid identifiers for the desired decorations.
 
 You define decorations in the File Provider extension’s `Info.plist` file by adding the `NSFileProviderDecorations` key to the `NSExtension` dictionary.
 
@@ -63,24 +68,25 @@ The `Category` value must be one of the following:
 ## Topics
 
 ### Providing Decorations
-- [var decorations: [NSFileProviderItemDecorationIdentifier]?](nsfileprovideritemdecorating/decorations.md)
+- [var decorations: [NSFileProviderItemDecorationIdentifier]?](./nsfileprovideritemdecorating/decorations.md)
   Asks the item for an array of decorations.
 
 ## Relationships
 
 ### Inherits From
-- [NSFileProviderItemProtocol](nsfileprovideritemprotocol.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSFileProviderItemProtocol](./nsfileprovideritemprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct NSFileProviderItemFields](nsfileprovideritemfields.md)
+### Items and metadata
+- [struct NSFileProviderItemFields](./nsfileprovideritemfields.md)
   Fields that specify which of the item’s properties have changed.
-- [class NSFileProviderItemVersion](nsfileprovideritemversion.md)
+- [class NSFileProviderItemVersion](./nsfileprovideritemversion.md)
   The version of the item’s content and its metadata.
-- [class NSFileProviderRequest](nsfileproviderrequest.md)
+- [class NSFileProviderRequest](./nsfileproviderrequest.md)
   An object that provides information about the application requesting data from the File Provider extension.
-- [struct NSFileProviderItemDecorationIdentifier](nsfileprovideritemdecorationidentifier.md)
+- [struct NSFileProviderItemDecorationIdentifier](./nsfileprovideritemdecorationidentifier.md)
   A decoration identifier defined in the File Provider extension’s information property list.
 
 

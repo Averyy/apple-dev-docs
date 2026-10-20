@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shadow object with default values.
 
@@ -12,6 +13,10 @@ Creates a shadow object with default values.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value

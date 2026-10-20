@@ -1,7 +1,8 @@
 # init(excluded:segments:enumerateHierarchy:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new path options configuration with default values.
 

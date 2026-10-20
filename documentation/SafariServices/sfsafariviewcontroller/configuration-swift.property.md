@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A copy of the Safari view controller’s initialized configuration.
 
@@ -18,18 +19,23 @@ A copy of the Safari view controller’s initialized configuration.
 var configuration: SFSafariViewController.Configuration { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) SFSafariViewControllerConfiguration * configuration;
+```
+
 #### Discussion
 
-See [`SFSafariViewController.Configuration`](sfsafariviewcontroller/configuration-swift.class.md) for configuration properties.
+See [`SFSafariViewController.Configuration`](./configuration-swift.class.md) for configuration properties.
 
 ## See Also
 
-- [var dismissButtonStyle: SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.property.md)
+### Configuring the View Controller
+- [var dismissButtonStyle: SFSafariViewController.DismissButtonStyle](./dismissbuttonstyle-swift.property.md)
   The style of dismiss button to use in the navigation bar to close the Safari view controller.
-- [SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.enum.md)
-- [var preferredBarTintColor: UIColor?](sfsafariviewcontroller/preferredbartintcolor.md)
+- [SFSafariViewController.DismissButtonStyle](./dismissbuttonstyle-swift.enum.md)
+- [var preferredBarTintColor: UIColor?](./preferredbartintcolor.md)
   The color to tint the background of the navigation bar and the toolbar.
-- [var preferredControlTintColor: UIColor?](sfsafariviewcontroller/preferredcontroltintcolor.md)
+- [var preferredControlTintColor: UIColor?](./preferredcontroltintcolor.md)
   The color to tint the control buttons on the navigation bar and the toolbar.
 
 

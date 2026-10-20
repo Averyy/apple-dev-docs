@@ -1,7 +1,8 @@
 # enableLanguageOptionCommand
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command object for enabling a language option.
 
@@ -20,13 +21,18 @@ The command object for enabling a language option.
 var enableLanguageOptionCommand: MPRemoteCommand { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPRemoteCommand * enableLanguageOptionCommand;
+```
+
 #### Discussion
 
 Use the object in this property to register your app’s handler for enabling the language option for the media item. In your handler, change the language option to the new value. You can disable the command if your app does not support it.
 
 ## See Also
 
-- [var disableLanguageOptionCommand: MPRemoteCommand](mpremotecommandcenter/disablelanguageoptioncommand.md)
+### Enabling language options
+- [var disableLanguageOptionCommand: MPRemoteCommand](./disablelanguageoptioncommand.md)
   The command object for disabling a language option
 
 

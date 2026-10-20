@@ -1,7 +1,8 @@
 # bits256
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A size of 256 bits.
 
@@ -22,9 +23,10 @@ static var bits256: SymmetricKeySize { get }
 
 ## See Also
 
-- [static var bits128: SymmetricKeySize](symmetrickeysize/bits128.md)
+### Using standard key lengths
+- [static var bits128: SymmetricKeySize](./bits128.md)
   A size of 128 bits.
-- [static var bits192: SymmetricKeySize](symmetrickeysize/bits192.md)
+- [static var bits192: SymmetricKeySize](./bits192.md)
   A size of 192 bits.
 
 

@@ -1,7 +1,8 @@
 # AVCaptureViewControlsStyle.floating
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view’s floating controls style, which matches the user interface of QuickTime Player.
 
@@ -14,13 +15,18 @@ The view’s floating controls style, which matches the user interface of QuickT
 case floating
 ```
 
+```c
+AVCaptureViewControlsStyleFloating
+```
+
 ## See Also
 
-- [AVCaptureViewControlsStyle.inline](avcaptureviewcontrolsstyle/inline.md)
+### Controls styles
+- [AVCaptureViewControlsStyle.inline](./inline.md)
   The view’s inline controls style.
-- [AVCaptureViewControlsStyle.inlineDeviceSelection](avcaptureviewcontrolsstyle/inlinedeviceselection.md)
+- [AVCaptureViewControlsStyle.inlineDeviceSelection](./inlinedeviceselection.md)
   The view’s inline device selection style.
-- [static var `default`: AVCaptureViewControlsStyle](avcaptureviewcontrolsstyle/default.md)
+- [static var `default`: AVCaptureViewControlsStyle](./default.md)
   The view’s default controls style.
 
 

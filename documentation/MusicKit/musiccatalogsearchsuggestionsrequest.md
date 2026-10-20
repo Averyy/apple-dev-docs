@@ -1,7 +1,8 @@
 # MusicCatalogSearchSuggestionsRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch suggestions from the Apple Music catalog using a search term.
 
@@ -23,17 +24,17 @@ struct MusicCatalogSearchSuggestionsRequest
 ## Topics
 
 ### Initializers
-- [init(term: String, includingTopResultsOfTypes: [any MusicCatalogSearchable.Type])](musiccatalogsearchsuggestionsrequest/init(term:includingtopresultsoftypes:).md)
+- [init(term: String, includingTopResultsOfTypes: [any MusicCatalogSearchable.Type])](./musiccatalogsearchsuggestionsrequest/init%28term,includingtopresultsoftypes%29.md)
   Creates a catalog search suggestions request for a specified search term along with a list of types to include when fetching top results.
 ### Instance Properties
-- [var limit: Int?](musiccatalogsearchsuggestionsrequest/limit.md)
+- [var limit: Int?](./musiccatalogsearchsuggestionsrequest/limit.md)
   A limit for the number of items to return in the catalog search suggestions response.
-- [let term: String](musiccatalogsearchsuggestionsrequest/term.md)
+- [let term: String](./musiccatalogsearchsuggestionsrequest/term.md)
   The search term for the request.
-- [var typesForTopResults: [any MusicCatalogSearchable.Type]](musiccatalogsearchsuggestionsrequest/typesfortopresults.md)
+- [var typesForTopResults: [any MusicCatalogSearchable.Type]](./musiccatalogsearchsuggestionsrequest/typesfortopresults.md)
   The list of requested types for top results.
 ### Instance Methods
-- [func response() async throws -> MusicCatalogSearchSuggestionsResponse](musiccatalogsearchsuggestionsrequest/response.md)
+- [func response() async throws -> MusicCatalogSearchSuggestionsResponse](./musiccatalogsearchsuggestionsrequest/response%28%29.md)
   Fetches suggestions of the requested catalog searchable types that match the search term of the request.
 
 

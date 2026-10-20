@@ -1,16 +1,17 @@
 # isCinematic(asset:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines if the asset is Cinematic asynchronously.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst ?+
-- macOS 14.0+
-- tvOS 17.0+
+- iOS 17.0+ - Deprecated in 27.0 (renamed: cinematicCapability(for:))
+- iPadOS 17.0+ - Deprecated in 27.0 (renamed: cinematicCapability(for:))
+- Mac Catalyst
+- macOS 14.0+ - Deprecated in 27.0 (renamed: cinematicCapability(for:))
+- tvOS 17.0+ - Deprecated in 27.0 (renamed: cinematicCapability(for:))
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # CMBlockBuffer.Slice
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A slice of a `CMBlockBuffer` instance.
 
@@ -27,15 +28,16 @@ struct Slice
 ## Relationships
 
 ### Conforms To
-- [CMBlockBufferProtocol](cmblockbufferprotocol.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [CMBlockBufferProtocol](../cmblockbufferprotocol.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [CMBlockBuffer.Error](cmblockbuffer/error.md)
+### Data Types
+- [CMBlockBuffer.Error](./error.md)
   A structure that defines block buffer errors.
-- [CMBlockBuffer.Flags](cmblockbuffer/flags.md)
+- [CMBlockBuffer.Flags](./flags.md)
   A structure that defines feature and control flags.
 
 

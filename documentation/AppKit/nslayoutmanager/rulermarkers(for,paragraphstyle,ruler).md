@@ -1,12 +1,13 @@
 # rulerMarkers(for:paragraphStyle:ruler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of text ruler objects for the current selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,21 @@ Returns an array of text ruler objects for the current selection.
 func rulerMarkers(for view: NSTextView, paragraphStyle style: NSParagraphStyle, ruler: NSRulerView) -> [NSRulerMarker]
 ```
 
+```objc
+- (NSArray<NSRulerMarker *> *) rulerMarkersForTextView:(NSTextView *) view paragraphStyle:(NSParagraphStyle *) style ruler:(NSRulerView *) ruler;
+```
+
 #### Return Value
 
-An array of [`NSRulerMarker`](nsrulermarker.md) objects representing such things as left and right margins, first-line indent, and tab stops.
+An array of [`NSRulerMarker`](../nsrulermarker.md) objects representing such things as left and right margins, first-line indent, and tab stops.
 
 #### Discussion
 
-If you have turned off automatic ruler updating through the use of [`usesRuler`](nstextview/usesruler.md) so that you can do more complex things, but you still want to display the appropriate accessory view, you can use this method.
+If you have turned off automatic ruler updating through the use of [`usesRuler`](../nstextview/usesruler.md) so that you can do more complex things, but you still want to display the appropriate accessory view, you can use this method.
 
 This method is invoked automatically by the `NSTextView` object using the layout manager. You should rarely need to invoke it, but you can override it to add new kinds of markers or otherwise customize ruler support.
 
-You can set the returned ruler markers with the `NSRulerView` method [`markers`](nsrulerview/markers.md).
+You can set the returned ruler markers with the `NSRulerView` method [`markers`](../nsrulerview/markers.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ You can set the returned ruler markers with the `NSRulerView` method [`markers`]
 
 ## See Also
 
-- [func rulerAccessoryView(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView, enabled: Bool) -> NSView?](nslayoutmanager/ruleraccessoryview(for:paragraphstyle:ruler:enabled:).md)
+### Handling Rulers
+- [func rulerAccessoryView(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView, enabled: Bool) -> NSView?](./ruleraccessoryview%28for,paragraphstyle,ruler,enabled%29.md)
   Returns the accessory view that the text system uses for its ruler.
 
 

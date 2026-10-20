@@ -1,18 +1,19 @@
 # XCUIGestureVelocity
 
 **Framework**: XCUIAutomation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that describes how fast a gesture moves across the screen, in pixels per second.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,56 +22,61 @@ A value that describes how fast a gesture moves across the screen, in pixels per
 struct XCUIGestureVelocity
 ```
 
+```c
+typedef CGFloat XCUIGestureVelocity;
+```
+
 ## Topics
 
 ### Creating a gesture velocity
-- [init(CGFloat)](xcuigesturevelocity/init(_:).md)
+- [init(CGFloat)](./xcuigesturevelocity/init%28_%29.md)
   Creates a gesture velocity, expressed as a float.
-- [init(rawValue: CGFloat)](xcuigesturevelocity/init(rawvalue:).md)
+- [init(rawValue: CGFloat)](./xcuigesturevelocity/init%28rawvalue%29.md)
   Creates a gesture velocity with a raw value, expressed as a float.
 ### Using typical gesture velocities
-- [static let `default`: XCUIGestureVelocity](xcuigesturevelocity/default.md)
+- [static let `default`: XCUIGestureVelocity](./xcuigesturevelocity/default.md)
   A value representing a default gesture velocity.
-- [static let fast: XCUIGestureVelocity](xcuigesturevelocity/fast.md)
+- [static let fast: XCUIGestureVelocity](./xcuigesturevelocity/fast.md)
   A value representing a fast gesture velocity.
-- [static let slow: XCUIGestureVelocity](xcuigesturevelocity/slow.md)
+- [static let slow: XCUIGestureVelocity](./xcuigesturevelocity/slow.md)
   A value representing a slow gesture velocity.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func swipeLeft()](xcuielement/swipeleft.md)
+### Performing gestures
+- [func swipeLeft()](./xcuielement/swipeleft%28%29.md)
   Sends a swipe-left gesture.
-- [func swipeLeft(velocity: XCUIGestureVelocity)](xcuielement/swipeleft(velocity:).md)
+- [func swipeLeft(velocity: XCUIGestureVelocity)](./xcuielement/swipeleft%28velocity%29.md)
   Sends a swipe-left gesture with a velocity you specify.
-- [func swipeRight()](xcuielement/swiperight.md)
+- [func swipeRight()](./xcuielement/swiperight%28%29.md)
   Sends a swipe-right gesture.
-- [func swipeRight(velocity: XCUIGestureVelocity)](xcuielement/swiperight(velocity:).md)
+- [func swipeRight(velocity: XCUIGestureVelocity)](./xcuielement/swiperight%28velocity%29.md)
   Sends a swipe-right gesture with a velocity you specify.
-- [func swipeUp()](xcuielement/swipeup.md)
+- [func swipeUp()](./xcuielement/swipeup%28%29.md)
   Sends a swipe-up gesture.
-- [func swipeUp(velocity: XCUIGestureVelocity)](xcuielement/swipeup(velocity:).md)
+- [func swipeUp(velocity: XCUIGestureVelocity)](./xcuielement/swipeup%28velocity%29.md)
   Sends a swipe-up gesture with a velocity you specify.
-- [func swipeDown()](xcuielement/swipedown.md)
+- [func swipeDown()](./xcuielement/swipedown%28%29.md)
   Sends a swipe-down gesture.
-- [func swipeDown(velocity: XCUIGestureVelocity)](xcuielement/swipedown(velocity:).md)
+- [func swipeDown(velocity: XCUIGestureVelocity)](./xcuielement/swipedown%28velocity%29.md)
   Sends a swipe-down gesture with a velocity you specify.
-- [func pinch(withScale: CGFloat, velocity: CGFloat)](xcuielement/pinch(withscale:velocity:).md)
+- [func pinch(withScale: CGFloat, velocity: CGFloat)](./xcuielement/pinch%28withscale,velocity%29.md)
   Sends a pinching gesture with two touches.
-- [func rotate(CGFloat, withVelocity: CGFloat)](xcuielement/rotate(_:withvelocity:).md)
+- [func rotate(CGFloat, withVelocity: CGFloat)](./xcuielement/rotate%28_,withvelocity%29.md)
   Sends a rotation gesture with two touches.
 
 

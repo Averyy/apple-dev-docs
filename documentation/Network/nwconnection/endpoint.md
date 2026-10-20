@@ -1,7 +1,8 @@
 # endpoint
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The remote endpoint with which the connection was initialized.
 
@@ -22,13 +23,14 @@ final let endpoint: NWEndpoint
 
 ## See Also
 
-- [func metadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](nwconnection/metadata(definition:).md)
+### Inspecting Connections
+- [func metadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](./metadata%28definition%29.md)
   Retrieves the connection-wide metadata for a specific protocol.
-- [class NWProtocolMetadata](nwprotocolmetadata.md)
+- [class NWProtocolMetadata](../nwprotocolmetadata.md)
   The abstract superclass for specifying metadata about a network protocol.
-- [let parameters: NWParameters](nwconnection/parameters.md)
+- [let parameters: NWParameters](./parameters.md)
   The parameters with which the connection was initialized.
-- [var queue: DispatchQueue?](nwconnection/queue.md)
+- [var queue: DispatchQueue?](./queue.md)
   The queue on which connection events are delivered.
 
 

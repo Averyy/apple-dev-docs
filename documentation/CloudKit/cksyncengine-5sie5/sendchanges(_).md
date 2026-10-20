@@ -1,7 +1,8 @@
 # sendChanges(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends pending local changes to the server.
 
@@ -11,7 +12,7 @@ Sends pending local changes to the server.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -24,21 +25,22 @@ final func sendChanges(_ options: CKSyncEngine.SendChangesOptions = .init()) asy
 
 Use this method to request the sync engine sends all pending local changes to the server before your app continues. This isn’t necessary in normal use, as the engine automatically syncs your app’s records. It is useful, however, in scenarios where you require greater control over sync, such as a “Backup now” button or unit tests.
 
-> **Note**: [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) returns only after your sync delegate finishes processing all related send events.
+> **Note**: [`sendChanges(_:)`](./sendchanges%28_%29.md) returns only after your sync delegate finishes processing all related send events.
 
-> **Note**: An error if the send operation fails. Common errors include network failures, authentication issues, conflicts, or server-side problems.
+> **Throws**: An error if the send operation fails. Common errors include network failures, authentication issues, conflicts, or server-side problems.
 
 ## Parameters
 
-- `options`: The options to use when sending changes. For more information, see [`CKSyncEngine.SendChangesOptions`](cksyncengine-5sie5/sendchangesoptions.md).
+- `options`: The options to use when sending changes. For more information, see [`CKSyncEngine.SendChangesOptions`](./sendchangesoptions.md).
 
 ## See Also
 
-- [func fetchChanges(CKSyncEngine.FetchChangesOptions) async throws](cksyncengine-5sie5/fetchchanges(_:).md)
+### Invoking manual sync operations
+- [func fetchChanges(CKSyncEngine.FetchChangesOptions) async throws](./fetchchanges%28_%29.md)
   Fetches pending remote changes from the server.
-- [CKSyncEngine.FetchChangesOptions](cksyncengine-5sie5/fetchchangesoptions.md)
+- [CKSyncEngine.FetchChangesOptions](./fetchchangesoptions.md)
   A set of options to use when fetching changes from the server.
-- [CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangesoptions.md)
+- [CKSyncEngine.SendChangesOptions](./sendchangesoptions.md)
   A set of options to use when sending changes to the server.
 
 

@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width of the swipe.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The width of the swipe.
 var width: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float width;
+```
+
 ## See Also
 
-- [var angle: Float](ciswipetransition/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle of the swipe.
-- [var color: CIColor](ciswipetransition/color.md)
+- [var color: CIColor](./color.md)
   The color of the swipe.
-- [var extent: CGRect](ciswipetransition/extent.md)
+- [var extent: CGRect](./extent.md)
   The extent of the effect.
-- [var opacity: Float](ciswipetransition/opacity.md)
+- [var opacity: Float](./opacity.md)
   The opacity of the swipe.
 
 

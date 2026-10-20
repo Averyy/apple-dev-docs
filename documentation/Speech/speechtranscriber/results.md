@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asynchronous sequence of transcription results.
 
@@ -25,7 +26,8 @@ Accessing this property does not create a new sequence.
 
 ## See Also
 
-- [SpeechTranscriber.Result](speechtranscriber/result.md)
+### Getting results
+- [SpeechTranscriber.Result](./result.md)
   A phrase or passage of transcribed speech. The phrases are sent in order.
 
 

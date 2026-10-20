@@ -1,7 +1,8 @@
 # mapView
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map view that provides the scale information to the scale view.
 
@@ -18,13 +19,18 @@ The map view that provides the scale information to the scale view.
 weak var mapView: MKMapView? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) MKMapView * mapView;
+```
+
 ## See Also
 
-- [var scaleVisibility: MKFeatureVisibility](mkscaleview/scalevisibility.md)
+### Getting the scale view attributes
+- [var scaleVisibility: MKFeatureVisibility](./scalevisibility.md)
   The visibility of the scale view.
-- [var legendAlignment: MKScaleView.Alignment](mkscaleview/legendalignment.md)
+- [var legendAlignment: MKScaleView.Alignment](./legendalignment.md)
   The alignment of the distance information in the scale view.
-- [MKScaleView.Alignment](mkscaleview/alignment.md)
+- [MKScaleView.Alignment](./alignment.md)
   Constants that indicate how the framework should align measurements.
 
 

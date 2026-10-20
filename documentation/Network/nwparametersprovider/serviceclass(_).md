@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Set the data service class to use for connections.
@@ -24,6 +25,12 @@ func serviceClass(_ serviceClass: NWParameters.ServiceClass) -> Self
 ## Parameters
 
 - `serviceClass`: The service class to use.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func serviceClass(NWParameters.ServiceClass) -> Self](./serviceclass%28_%29-42fh6.md)
+  Set the data service class to use for connections.
 
 
 ---

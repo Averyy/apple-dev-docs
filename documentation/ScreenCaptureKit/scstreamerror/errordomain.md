@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,9 +20,10 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [Error Constants](error-constants.md)
+### Error inspection
+- [Error Constants](../error-constants.md)
   Error code constants for framework operations.
-- [SCStreamError.Code](scstreamerror/code.md)
+- [SCStreamError.Code](./code.md)
   Codes for user cancellation events and errors that can occur in ScreenCaptureKit.
 
 

@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether a hardware-accelerated video encoder is used.
 
@@ -19,13 +20,18 @@ A Boolean value indicating whether a hardware-accelerated video encoder is used.
 let kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder;
+```
+
 #### Discussion
 
-You can query this property using [`VTSessionCopyProperty(_:key:allocator:valueOut:)`](vtsessioncopyproperty(_:key:allocator:valueout:).md) after you have enabled hardware accelerated encode using [`kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder`](kvtvideoencoderspecification_enablehardwareacceleratedvideoencoder.md) to see if a hardware-accelerated encoder was selected ([`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue)).
+You can query this property using [`VTSessionCopyProperty(_:key:allocator:valueOut:)`](./vtsessioncopyproperty%28_,key,allocator,valueout%29.md) after you have enabled hardware accelerated encode using [`kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder`](./kvtvideoencoderspecification_enablehardwareacceleratedvideoencoder.md) to see if a hardware-accelerated encoder was selected ([`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md)).
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_UsingGPURegistryID: CFString](kvtcompressionpropertykey_usinggpuregistryid.md)
+### Hardware Acceleration
+- [let kVTCompressionPropertyKey_UsingGPURegistryID: CFString](./kvtcompressionpropertykey_usinggpuregistryid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # darkBackground
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The icon dark background color gradients.
 
@@ -16,11 +17,12 @@ var darkBackground: Gradient?
 
 ## See Also
 
-- [var lightBackground: Gradient?](journalingsuggestion/stateofmind/lightbackground.md)
+### Getting the state of mind data
+- [var lightBackground: Gradient?](./lightbackground.md)
   The icon light background color gradients.
-- [var icon: URL?](journalingsuggestion/stateofmind/icon.md)
+- [var icon: URL?](./icon.md)
   The URL to an image on disk that depicts the state of mind reflection valence image.
-- [var state: HKStateOfMind](journalingsuggestion/stateofmind/state.md)
+- [var state: HKStateOfMind](./state.md)
   The state of mind reflection as logged in the Health app.
 
 

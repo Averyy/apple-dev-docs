@@ -1,7 +1,8 @@
 # AnyIntentValue
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type the system uses to access a parameter or property value.
 
@@ -11,7 +12,7 @@ A type the system uses to access a parameter or property value.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,24 +24,25 @@ protocol AnyIntentValue : Sendable
 ## Topics
 
 ### Getting the value type
-- [associatedtype Value : _IntentValue, Sendable](anyintentvalue/value.md)
+- [associatedtype Value : _IntentValue, Sendable](./anyintentvalue/value.md)
 ### Getting type-specific information
-- [var title: LocalizedStringResource](anyintentvalue/title.md)
-- [var isOptional: Bool](anyintentvalue/isoptional.md)
+- [var title: LocalizedStringResource](./anyintentvalue/title.md)
+- [var isOptional: Bool](./anyintentvalue/isoptional.md)
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [EntityProperty](entityproperty.md)
-- [IntentParameter](intentparameter.md)
-- [IntentParameterContext](intentparametercontext.md)
+- [EntityProperty](./entityproperty.md)
+- [IntentParameter](./intentparameter.md)
+- [IntentParameterContext](./intentparametercontext.md)
 
 ## See Also
 
-- [protocol AppValue](appvalue.md)
+### Foundational types
+- [protocol AppValue](./appvalue.md)
   An interface that describes conceptual types you use in app intents.
 
 

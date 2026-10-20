@@ -1,7 +1,8 @@
 # icyMetadataKeyStreamTitle
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the title of a stream.
 
@@ -20,9 +21,14 @@ A key that represents the title of a stream.
 static let icyMetadataKeyStreamTitle: AVMetadataKey
 ```
 
+```c
+extern AVMetadataKey const AVMetadataIcyMetadataKeyStreamTitle;
+```
+
 ## See Also
 
-- [static let icyMetadataKeyStreamURL: AVMetadataKey](avmetadatakey/icymetadatakeystreamurl.md)
+### ICY metadata keys
+- [static let icyMetadataKeyStreamURL: AVMetadataKey](./icymetadatakeystreamurl.md)
   A key that represents the web address of a stream.
 
 

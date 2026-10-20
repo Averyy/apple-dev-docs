@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,9 +20,10 @@ final var label: String? { get }
 
 ## See Also
 
-- [var motionVectorSize: VTMotionEstimationSession.BlockSize](vtmotionestimationsession/motionvectorsize.md)
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionestimationsession/sourcepixelbufferattributes.md)
-- [var useMultiPassSearch: Bool](vtmotionestimationsession/usemultipasssearch.md)
+### Inspecting the session
+- [var motionVectorSize: VTMotionEstimationSession.BlockSize](./motionvectorsize.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
+- [var useMultiPassSearch: Bool](./usemultipasssearch.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # VZPlatformConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for a platform configuration.
 
@@ -14,35 +15,41 @@ The base class for a platform configuration.
 class VZPlatformConfiguration
 ```
 
+```objc
+@interface VZPlatformConfiguration : NSObject
+```
+
 #### Overview
 
-Don’t instantiate directly `VZPlatformConfiguration`, use one of its subclasses, such as [`VZGenericPlatformConfiguration`](vzgenericplatformconfiguration.md) or [`VZMacPlatformConfiguration`](vzmacplatformconfiguration.md) instead.
+Don’t instantiate directly `VZPlatformConfiguration`, use one of its subclasses, such as [`VZGenericPlatformConfiguration`](./vzgenericplatformconfiguration.md) or [`VZMacPlatformConfiguration`](./vzmacplatformconfiguration.md) instead.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZGenericPlatformConfiguration](vzgenericplatformconfiguration.md)
-- [VZMacPlatformConfiguration](vzmacplatformconfiguration.md)
+- [VZGenericPlatformConfiguration](./vzgenericplatformconfiguration.md)
+- [VZMacPlatformConfiguration](./vzmacplatformconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMacPlatformConfiguration](vzmacplatformconfiguration.md)
+### Related Documentation
+- [class VZMacPlatformConfiguration](./vzmacplatformconfiguration.md)
   The platform configuration for booting macOS on Apple silicon.
-- [class VZVirtualMachineConfiguration](vzvirtualmachineconfiguration.md)
+### Configurations
+- [class VZVirtualMachineConfiguration](./vzvirtualmachineconfiguration.md)
   The environment attributes and list of devices to use during the configuration of macOS or Linux VMs.
-- [class VZVirtualMachineStartOptions](vzvirtualmachinestartoptions.md)
+- [class VZVirtualMachineStartOptions](./vzvirtualmachinestartoptions.md)
   The abstract class for VM start options.
-- [class VZGenericPlatformConfiguration](vzgenericplatformconfiguration.md)
+- [class VZGenericPlatformConfiguration](./vzgenericplatformconfiguration.md)
   The platform configuration for a generic Intel or ARM virtual machine.
 
 

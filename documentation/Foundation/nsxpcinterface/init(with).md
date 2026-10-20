@@ -1,7 +1,8 @@
 # init(with:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an NSXPCInterface instance for a given protocol.
 
@@ -18,6 +19,10 @@ Returns an NSXPCInterface instance for a given protocol.
 
 ```swift
 init(with protocol: Protocol)
+```
+
+```objc
++ (NSXPCInterface *) interfaceWithProtocol:(Protocol *) protocol;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # didConnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a spatial accessory connects to the device.
 
@@ -13,6 +14,8 @@ The identifier of the message that posts after a spatial accessory connects to t
 ```swift
 static var didConnect: NotificationCenter.BaseMessageIdentifier<GCSpatialAccessory.DidConnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCSpatialAccessory.DidConnectMessage>`.
 
 
 ---

@@ -1,12 +1,13 @@
 # refusesFirstResponder
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the receiver refuses the first responder role.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,25 @@ A Boolean value indicating whether the receiver refuses the first responder role
 var refusesFirstResponder: Bool { get set }
 ```
 
+```objc
+@property BOOL refusesFirstResponder;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver refuses the first responder role; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the receiver refuses the first responder role; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var objectValue: Any?](nscontrol/objectvalue.md)
+### Related Documentation
+- [var objectValue: Any?](./objectvalue.md)
   The value of the receiver’s cell as an Objective-C object.
-- [var doubleValue: Double](nscontrol/doublevalue.md)
+- [var doubleValue: Double](./doublevalue.md)
   The value of the receiver’s cell as a double-precision floating-point number.
-- [var floatValue: Float](nscontrol/floatvalue.md)
+- [var floatValue: Float](./floatvalue.md)
   The value of the receiver’s cell as a single-precision floating-point number.
-- [func performClick(Any?)](nscontrol/performclick(_:).md)
+### Activating from the Keyboard
+- [func performClick(Any?)](./performclick%28_%29.md)
   Simulates a single mouse click on the receiver.
 
 

@@ -1,7 +1,8 @@
 # isFamilyShareable
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the product is available for family sharing.
 

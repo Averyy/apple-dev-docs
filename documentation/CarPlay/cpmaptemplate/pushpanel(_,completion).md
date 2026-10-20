@@ -1,7 +1,8 @@
 # pushPanel(_:completion:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pushes a new panel.
 
@@ -13,7 +14,15 @@ Pushes a new panel.
 ## Declaration
 
 ```swift
+func pushPanel(_ panel: CPMapPanel, completion: ((Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func pushPanel(_ panel: CPMapPanel) async throws -> Bool
+```
+
+```objc
+- (void) pushPanel:(CPMapPanel *) panel completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 ## Parameters

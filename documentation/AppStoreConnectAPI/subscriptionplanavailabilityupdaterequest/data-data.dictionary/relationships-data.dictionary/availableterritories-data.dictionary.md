@@ -1,7 +1,8 @@
 # SubscriptionPlanAvailabilityUpdateRequest.Data.Relationships.AvailableTerritories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The available territories to associate with the updated subscription plan availability.
 
@@ -10,14 +11,14 @@ The available territories to associate with the updated subscription plan availa
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPlanAvailabilityUpdateRequest.Data.Relationships.AvailableTerritories
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object SubscriptionPlanAvailabilityUpdateRequest.Data.Relationships.AvailableTerritories.Data](subscriptionplanavailabilityupdaterequest/data-data.dictionary/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionPlanAvailabilityUpdateRequest.Data.Relationships.AvailableTerritories.Data](./availableterritories-data.dictionary/data-data.dictionary.md)
   The request body you use to modify a subscription plan availability.
 
 ## Properties

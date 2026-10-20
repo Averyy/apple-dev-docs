@@ -1,7 +1,8 @@
 # bufferTypeInfo
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Requests reflection information for buffer types.
 
@@ -17,6 +18,10 @@ Requests reflection information for buffer types.
 
 ```swift
 static var bufferTypeInfo: MTL4ShaderReflection { get }
+```
+
+```c
+MTL4ShaderReflectionBufferTypeInfo
 ```
 
 

@@ -1,7 +1,8 @@
 # Zip2Sequence.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing the sequence’s elements.
 
@@ -19,6 +20,8 @@ A type representing the sequence’s elements.
 ```swift
 typealias Element = (Sequence1.Element, Sequence2.Element)
 ```
+
+Available when `Sequence1` conforms to `Sequence` and `Sequence2` conforms to `Sequence`.
 
 
 ---

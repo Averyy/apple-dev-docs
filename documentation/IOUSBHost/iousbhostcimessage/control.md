@@ -1,7 +1,8 @@
 # control
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,10 +14,15 @@
 var control: UInt32
 ```
 
+```c
+uint32_t control;
+```
+
 ## See Also
 
-- [var data0: UInt32](iousbhostcimessage/data0.md)
-- [var data1: UInt64](iousbhostcimessage/data1.md)
+### Instance Properties
+- [var data0: UInt32](./data0.md)
+- [var data1: UInt64](./data1.md)
 
 
 ---

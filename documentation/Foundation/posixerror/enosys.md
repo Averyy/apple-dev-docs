@@ -1,7 +1,8 @@
 # ENOSYS
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Function not implemented.
 

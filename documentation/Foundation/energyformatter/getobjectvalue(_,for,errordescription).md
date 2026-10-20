@@ -1,7 +1,8 @@
 # getObjectValue(_:for:errorDescription:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This method is not supported for the `NSEnergyFormatter` class.
 
@@ -20,13 +21,17 @@ This method is not supported for the `NSEnergyFormatter` class.
 func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for string: String, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool
 ```
 
+```objc
+- (BOOL) getObjectValue:(id*) obj forString:(NSString *) string errorDescription:(NSString **) error;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the conversion from string was successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the conversion from string was successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-You can override this method in a subclass. For more information, see [`Formatter`](formatter.md).
+You can override this method in a subclass. For more information, see [`Formatter`](../formatter.md).
 
 ## Parameters
 
@@ -36,21 +41,23 @@ You can override this method in a subclass. For more information, see [`Formatte
 
 ## See Also
 
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](formatter/getobjectvalue(_:for:errordescription:).md)
+### Related Documentation
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../formatter/getobjectvalue%28_,for,errordescription%29.md)
   The default implementation of this method raises an exception.
-- [var isForFoodEnergyUse: Bool](energyformatter/isforfoodenergyuse.md)
+### Formatting Energy Strings
+- [var isForFoodEnergyUse: Bool](./isforfoodenergyuse.md)
   A Boolean value that indicates whether the energy value is used to measure food energy.
-- [var numberFormatter: NumberFormatter!](energyformatter/numberformatter.md)
+- [var numberFormatter: NumberFormatter!](./numberformatter.md)
   The number formatter used to format the numbers in energy strings.
-- [func string(fromJoules: Double) -> String](energyformatter/string(fromjoules:).md)
+- [func string(fromJoules: Double) -> String](./string%28fromjoules%29.md)
   Returns an energy string for the provided value.
-- [func string(fromValue: Double, unit: EnergyFormatter.Unit) -> String](energyformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: EnergyFormatter.Unit) -> String](./string%28fromvalue,unit%29.md)
   Returns a properly formatted energy string for the given value and unit.
-- [func unitString(fromJoules: Double, usedUnit: UnsafeMutablePointer<EnergyFormatter.Unit>?) -> String](energyformatter/unitstring(fromjoules:usedunit:).md)
+- [func unitString(fromJoules: Double, usedUnit: UnsafeMutablePointer<EnergyFormatter.Unit>?) -> String](./unitstring%28fromjoules,usedunit%29.md)
   Returns the unit string for the provided value.
-- [func unitString(fromValue: Double, unit: EnergyFormatter.Unit) -> String](energyformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: EnergyFormatter.Unit) -> String](./unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](energyformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./unitstyle.md)
   The unit style used by this formatter.
 
 

@@ -1,7 +1,8 @@
 # Wind.CompassDirection
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A compass composed of cardinal and intercardinal directions.
 
@@ -28,55 +29,56 @@ This enumeration represents true headings.
 ## Topics
 
 ### Describing the compass direction
-- [var abbreviation: String](wind/compassdirection-swift.enum/abbreviation.md)
+- [var abbreviation: String](./compassdirection-swift.enum/abbreviation.md)
   A localized short abbreviation of the wind compass direction.
-- [var accessibilityDescription: String](wind/compassdirection-swift.enum/accessibilitydescription.md)
+- [var accessibilityDescription: String](./compassdirection-swift.enum/accessibilitydescription.md)
   A localized accessibility description describing the compass direction.
-- [var description: String](wind/compassdirection-swift.enum/description.md)
+- [var description: String](./compassdirection-swift.enum/description.md)
   A localized string describing the compass direction.
 ### Enumeration Cases
-- [Wind.CompassDirection.east](wind/compassdirection-swift.enum/east.md)
-- [Wind.CompassDirection.eastNortheast](wind/compassdirection-swift.enum/eastnortheast.md)
-- [Wind.CompassDirection.eastSoutheast](wind/compassdirection-swift.enum/eastsoutheast.md)
-- [Wind.CompassDirection.north](wind/compassdirection-swift.enum/north.md)
-- [Wind.CompassDirection.northNortheast](wind/compassdirection-swift.enum/northnortheast.md)
-- [Wind.CompassDirection.northNorthwest](wind/compassdirection-swift.enum/northnorthwest.md)
-- [Wind.CompassDirection.northeast](wind/compassdirection-swift.enum/northeast.md)
-- [Wind.CompassDirection.northwest](wind/compassdirection-swift.enum/northwest.md)
-- [Wind.CompassDirection.south](wind/compassdirection-swift.enum/south.md)
-- [Wind.CompassDirection.southSoutheast](wind/compassdirection-swift.enum/southsoutheast.md)
-- [Wind.CompassDirection.southSouthwest](wind/compassdirection-swift.enum/southsouthwest.md)
-- [Wind.CompassDirection.southeast](wind/compassdirection-swift.enum/southeast.md)
-- [Wind.CompassDirection.southwest](wind/compassdirection-swift.enum/southwest.md)
-- [Wind.CompassDirection.west](wind/compassdirection-swift.enum/west.md)
-- [Wind.CompassDirection.westNorthwest](wind/compassdirection-swift.enum/westnorthwest.md)
-- [Wind.CompassDirection.westSouthwest](wind/compassdirection-swift.enum/westsouthwest.md)
+- [Wind.CompassDirection.east](./compassdirection-swift.enum/east.md)
+- [Wind.CompassDirection.eastNortheast](./compassdirection-swift.enum/eastnortheast.md)
+- [Wind.CompassDirection.eastSoutheast](./compassdirection-swift.enum/eastsoutheast.md)
+- [Wind.CompassDirection.north](./compassdirection-swift.enum/north.md)
+- [Wind.CompassDirection.northNortheast](./compassdirection-swift.enum/northnortheast.md)
+- [Wind.CompassDirection.northNorthwest](./compassdirection-swift.enum/northnorthwest.md)
+- [Wind.CompassDirection.northeast](./compassdirection-swift.enum/northeast.md)
+- [Wind.CompassDirection.northwest](./compassdirection-swift.enum/northwest.md)
+- [Wind.CompassDirection.south](./compassdirection-swift.enum/south.md)
+- [Wind.CompassDirection.southSoutheast](./compassdirection-swift.enum/southsoutheast.md)
+- [Wind.CompassDirection.southSouthwest](./compassdirection-swift.enum/southsouthwest.md)
+- [Wind.CompassDirection.southeast](./compassdirection-swift.enum/southeast.md)
+- [Wind.CompassDirection.southwest](./compassdirection-swift.enum/southwest.md)
+- [Wind.CompassDirection.west](./compassdirection-swift.enum/west.md)
+- [Wind.CompassDirection.westNorthwest](./compassdirection-swift.enum/westnorthwest.md)
+- [Wind.CompassDirection.westSouthwest](./compassdirection-swift.enum/westsouthwest.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var compassDirection: Wind.CompassDirection](wind/compassdirection-swift.property.md)
+### Getting the properties
+- [var compassDirection: Wind.CompassDirection](./compassdirection-swift.property.md)
   The general indicator of wind direction.
-- [var direction: Measurement<UnitAngle>](wind/direction.md)
+- [var direction: Measurement<UnitAngle>](./direction.md)
   The direction the wind is coming from in degrees.
-- [var gust: Measurement<UnitSpeed>?](wind/gust.md)
+- [var gust: Measurement<UnitSpeed>?](./gust.md)
   A sudden increase in wind speed due to friction, wind shear, or by heating.
-- [var speed: Measurement<UnitSpeed>](wind/speed.md)
+- [var speed: Measurement<UnitSpeed>](./speed.md)
   Sustained wind speed.
 
 

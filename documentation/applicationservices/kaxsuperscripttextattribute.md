@@ -1,7 +1,8 @@
 # kAXSuperscriptTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CFNumberRef` value that indicates whether the text is superscript (value > 0) or subscript (value < 0).
 
@@ -12,6 +13,10 @@ A `CFNumberRef` value that indicates whether the text is superscript (value > 0)
 
 ```swift
 var kAXSuperscriptTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXSuperscriptTextAttribute;
 ```
 
 #### Discussion

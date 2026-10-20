@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a user event with the data you specify.
 
@@ -17,6 +18,10 @@ Creates a user event with the data you specify.
 
 ```swift
 init(data: Data)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data;
 ```
 
 ## Parameters

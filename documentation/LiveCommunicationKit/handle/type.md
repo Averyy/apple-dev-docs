@@ -1,7 +1,8 @@
 # type
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the handle; for example a phone number or email address.
 
@@ -20,7 +21,8 @@ var type: Handle.Kind
 
 ## See Also
 
-- [Handle.Kind](handle/kind.md)
+### Type
+- [Handle.Kind](./kind.md)
   Values that define the handle that identifies a participant in a conversation.
 
 

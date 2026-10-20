@@ -1,7 +1,8 @@
 # wide
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Shows the fields in their full spelling. For example, “2 hour, 10 minutes”, “2小時10分鐘”
 

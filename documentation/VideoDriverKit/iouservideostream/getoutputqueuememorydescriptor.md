@@ -1,7 +1,8 @@
 # GetOutputQueueMemoryDescriptor
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an memory descriptorrepesenting the shared memory output queue buffer.
 
@@ -10,19 +11,20 @@ Returns an memory descriptorrepesenting the shared memory output queue buffer.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<IOMemoryDescriptor> GetOutputQueueMemoryDescriptor();
 ```
 
 ## See Also
 
-- [GetOutputControlMemoryDescriptor](iouservideostream/getoutputcontrolmemorydescriptor.md)
+### Working with memory descriptors
+- [GetOutputControlMemoryDescriptor](./getoutputcontrolmemorydescriptor.md)
   Gets the memory descriptor used for the control data part of a buffer.
-- [GetOutputDataMemoryDescriptor](iouservideostream/getoutputdatamemorydescriptor.md)
+- [GetOutputDataMemoryDescriptor](./getoutputdatamemorydescriptor.md)
   Gets the memory descriptor used for the video data part of a buffer.
-- [GetInputQueueMemoryDescriptor](iouservideostream/getinputqueuememorydescriptor.md)
+- [GetInputQueueMemoryDescriptor](./getinputqueuememorydescriptor.md)
   Returns an memory descriptor for the shared memory input queue buffer.
-- [GetMemoryObjectID](iouservideostream/getmemoryobjectid.md)
+- [GetMemoryObjectID](./getmemoryobjectid.md)
   Gets the video object identifier for a memory object.
 
 

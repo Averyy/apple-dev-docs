@@ -1,7 +1,8 @@
 # bookmarkData
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bookmark that resolves to the resource’s URL.
 
@@ -18,7 +19,8 @@ final let bookmarkData: Data
 
 ## See Also
 
-- [let url: URL](bedownloadmonitor-9bwls/location/url.md)
+### Getting information about a location
+- [let url: URL](./url.md)
   The location of the resource.
 
 

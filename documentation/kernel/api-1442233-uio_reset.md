@@ -1,14 +1,15 @@
 # uio_reset
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void uio_reset(uio_t a_uio, off_t a_offset, int a_spacetype, int a_iodirection);
 ```
 

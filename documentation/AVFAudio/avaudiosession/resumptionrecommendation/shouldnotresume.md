@@ -1,7 +1,8 @@
 # AVAudioSession.ResumptionRecommendation.shouldNotResume
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,9 +18,14 @@
 case shouldNotResume
 ```
 
+```c
+AVAudioSessionResumptionRecommendationShouldNotResume
+```
+
 ## See Also
 
-- [AVAudioSession.ResumptionRecommendation.shouldResume](avaudiosession/resumptionrecommendation/shouldresume.md)
+### Getting the recommendation
+- [AVAudioSession.ResumptionRecommendation.shouldResume](./shouldresume.md)
 
 
 ---

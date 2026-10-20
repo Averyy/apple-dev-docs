@@ -1,7 +1,8 @@
 # thermalStateDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a thermal state change.
 
@@ -20,15 +21,18 @@ An identifier for a message about a thermal state change.
 static var thermalStateDidChange: NotificationCenter.BaseMessageIdentifier<ProcessInfo.ThermalStateDidChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<ProcessInfo.ThermalStateDidChangeMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`ProcessInfo.ThermalStateDidChangeMessage`](processinfo/thermalstatedidchangemessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`ProcessInfo.ThermalStateDidChangeMessage`](../../processinfo/thermalstatedidchangemessage.md).
 
 ## See Also
 
-- [static var powerStateDidChange: NotificationCenter.BaseMessageIdentifier<ProcessInfo.PowerStateDidChangeMessage>](notificationcenter/messageidentifier/powerstatedidchange.md)
+### Identifying process info messages
+- [static var powerStateDidChange: NotificationCenter.BaseMessageIdentifier<ProcessInfo.PowerStateDidChangeMessage>](./powerstatedidchange.md)
   An identifier for a message about a power state change.
-- [static var didTerminate: NotificationCenter.BaseMessageIdentifier<Process.DidTerminateMessage>](notificationcenter/messageidentifier/didterminate.md)
+- [static var didTerminate: NotificationCenter.BaseMessageIdentifier<Process.DidTerminateMessage>](./didterminate.md)
   An identifier for a message about a stopped task.
 
 

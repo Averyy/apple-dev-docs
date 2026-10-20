@@ -1,6 +1,7 @@
 # View groupings
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Present views in different kinds of purpose-driven containers, like forms or control groups.
 
@@ -8,85 +9,86 @@ Present views in different kinds of purpose-driven containers, like forms or con
 
 You can create groups of views that serve different purposes.
 
-![None](/images/com.apple.SwiftUI/view-groupings-hero@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/view-groupings-hero@2x.png)
 
-For example, a [`Group`](group.md) construct treats the specified views as a unit without imposing any additional layout or appearance characteristics. A [`Form`](form.md) presents a group of elements with a platform-specific appearance that’s suitable for gathering input from people.
+For example, a [`Group`](./group.md) construct treats the specified views as a unit without imposing any additional layout or appearance characteristics. A [`Form`](./form.md) presents a group of elements with a platform-specific appearance that’s suitable for gathering input from people.
 
-For design guidance, see [`Layout`](https://developer.apple.com/design/human-interface-guidelines/layout) in the Human Interface Guidelines.
+For design guidance, see [Layout](https://developer.apple.com/design/human-interface-guidelines/layout) in the Human Interface Guidelines.
 
 ## Topics
 
 ### Grouping views into a container
-- [Creating custom container views](creating-custom-container-views.md)
+- [Creating custom container views](./creating-custom-container-views.md)
   Access individual subviews to compose flexible container views.
-- [struct Group](group.md)
+- [struct Group](./group.md)
   A type that collects multiple instances of a content type — like views, scenes, or commands — into a single unit.
-- [struct GroupElementsOfContent](groupelementsofcontent.md)
+- [struct GroupElementsOfContent](./groupelementsofcontent.md)
   Transforms the subviews of a given view into a resulting content view.
-- [struct GroupSectionsOfContent](groupsectionsofcontent.md)
+- [struct GroupSectionsOfContent](./groupsectionsofcontent.md)
   Transforms the sections of a given view into a resulting content view.
 ### Organizing views into sections
-- [struct Section](section.md)
+- [struct Section](./section.md)
   A container view that you can use to add hierarchy within certain views.
-- [struct SectionCollection](sectioncollection.md)
+- [struct SectionCollection](./sectioncollection.md)
   An opaque collection representing the sections of view.
-- [struct SectionConfiguration](sectionconfiguration.md)
+- [struct SectionConfiguration](./sectionconfiguration.md)
   Specifies the contents of a section.
 ### Iterating over dynamic data
-- [struct ForEach](foreach.md)
+- [struct ForEach](./foreach.md)
   A structure that computes views on demand from an underlying collection of identified data.
-- [struct ForEachSectionCollection](foreachsectioncollection.md)
+- [struct ForEachSectionCollection](./foreachsectioncollection.md)
   A collection which allows a view to be treated as a collection of its sections in a for each loop.
-- [struct ForEachSubviewCollection](foreachsubviewcollection.md)
+- [struct ForEachSubviewCollection](./foreachsubviewcollection.md)
   A collection which allows a view to be treated as a collection of its subviews in a for each loop.
-- [protocol DynamicViewContent](dynamicviewcontent.md)
+- [protocol DynamicViewContent](./dynamicviewcontent.md)
   A type of view that generates views from an underlying collection of data.
 ### Accessing a container’s subviews
-- [struct Subview](subview.md)
+- [struct Subview](./subview.md)
   An opaque value representing a subview of another view.
-- [struct SubviewsCollection](subviewscollection.md)
+- [struct SubviewsCollection](./subviewscollection.md)
   An opaque collection representing the subviews of view.
-- [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+- [struct SubviewsCollectionSlice](./subviewscollectionslice.md)
   A slice of a SubviewsCollection.
-- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
+- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](./view/containervalue%28_,_%29.md)
   Sets a particular container value of a view.
-- [struct ContainerValues](containervalues.md)
+- [struct ContainerValues](./containervalues.md)
   A collection of container values associated with a given view.
-- [protocol ContainerValueKey](containervaluekey.md)
+- [protocol ContainerValueKey](./containervaluekey.md)
   A key for accessing container values.
 ### Grouping views into a box
-- [struct GroupBox](groupbox.md)
+- [struct GroupBox](./groupbox.md)
   A stylized view, with an optional label, that visually collects a logical grouping of content.
-- [func groupBoxStyle<S>(S) -> some View](view/groupboxstyle(_:).md)
+- [func groupBoxStyle<S>(S) -> some View](./view/groupboxstyle%28_%29.md)
   Sets the style for group boxes within this view.
 ### Grouping inputs
-- [struct Form](form.md)
+- [struct Form](./form.md)
   A container for grouping controls used for data entry, such as in settings or inspectors.
-- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+- [func formStyle<S>(S) -> some View](./view/formstyle%28_%29.md)
   Sets the style for forms in a view hierarchy.
-- [struct LabeledContent](labeledcontent.md)
+- [struct LabeledContent](./labeledcontent.md)
   A container for attaching a label to a value-bearing view.
-- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+- [func labeledContentStyle<S>(S) -> some View](./view/labeledcontentstyle%28_%29.md)
   Sets a style for labeled content.
 ### Presenting a group of controls
-- [struct ControlGroup](controlgroup.md)
+- [struct ControlGroup](./controlgroup.md)
   A container view that displays semantically-related controls in a visually-appropriate manner for the context
-- [func controlGroupStyle<S>(S) -> some View](view/controlgroupstyle(_:).md)
+- [func controlGroupStyle<S>(S) -> some View](./view/controlgroupstyle%28_%29.md)
   Sets the style for control groups within this view.
 
 ## See Also
 
-- [Layout fundamentals](layout-fundamentals.md)
+### View layout
+- [Layout fundamentals](./layout-fundamentals.md)
   Arrange views inside built-in layout containers like stacks and grids.
-- [Layout adjustments](layout-adjustments.md)
+- [Layout adjustments](./layout-adjustments.md)
   Make fine adjustments to alignment, spacing, padding, and other layout parameters.
-- [Custom layout](custom-layout.md)
+- [Custom layout](./custom-layout.md)
   Place views in custom arrangements and create animated transitions between layout types.
-- [Lists](lists.md)
+- [Lists](./lists.md)
   Display a structured, scrollable column of information.
-- [Tables](tables.md)
+- [Tables](./tables.md)
   Display selectable, sortable data arranged in rows and columns.
-- [Scroll views](scroll-views.md)
+- [Scroll views](./scroll-views.md)
   Enable people to scroll to content that doesn’t fit in the current display.
 
 

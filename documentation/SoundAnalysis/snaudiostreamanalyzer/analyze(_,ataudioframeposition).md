@@ -1,7 +1,8 @@
 # analyze(_:atAudioFramePosition:)
 
 **Framework**: Sound Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a new audio buffer to the analyzer’s larger stream buffer.
 
@@ -20,11 +21,15 @@ Adds a new audio buffer to the analyzer’s larger stream buffer.
 func analyze(_ audioBuffer: AVAudioBuffer, atAudioFramePosition audioFramePosition: AVAudioFramePosition)
 ```
 
+```objc
+- (void) analyzeAudioBuffer:(AVAudioBuffer *) audioBuffer atAudioFramePosition:(AVAudioFramePosition) audioFramePosition;
+```
+
 #### Discussion
 
 Serialize all calls to this method on a dedicated dispatch queue to prevent blocking the calling thread. The audio stream analyzer sends errors to each request’s results observer.
 
-> ❗ **Important**:  Don’t call this method from a real-time audio context. However, you may call it from a lower priority thread, such as an [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) tap or an [`AudioQueueRef`](https://developer.apple.com/documentation/audiotoolbox/audioqueueref) callback.
+> ❗ **Important**:  Don’t call this method from a real-time audio context. However, you may call it from a lower priority thread, such as an [`AVAudioEngine`](../../AVFAudio/avaudioengine.md) tap or an [`AudioQueueRef`](../../AudioToolbox/audioqueueref.md) callback.
 
 The method handles audio buffers that vary in size. If necessary, the analyzer regroups the data to a block size the underlying Core ML model expects. The analyzer uses a fixed-size audio block from some audio analysis types and may call a request’s results observer one time or many times. The factors that affect the number of calls are:
 
@@ -41,7 +46,8 @@ By default, the analyzer processes data on the first audio channel in the audio 
 
 ## See Also
 
-- [func completeAnalysis()](snaudiostreamanalyzer/completeanalysis.md)
+### Analyzing Data
+- [func completeAnalysis()](./completeanalysis%28%29.md)
   Notifies the analyzer when it receives the final audio buffer.
 
 

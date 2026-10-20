@@ -1,7 +1,8 @@
 # setUserTrackingMode(_:animated:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the mode to use for tracking the user’s location, with optional animation.
 
@@ -19,34 +20,40 @@ Sets the mode to use for tracking the user’s location, with optional animation
 func setUserTrackingMode(_ mode: MKUserTrackingMode, animated: Bool)
 ```
 
+```objc
+- (void) setUserTrackingMode:(MKUserTrackingMode) mode animated:(BOOL) animated;
+```
+
 #### Discussion
 
-Setting the tracking mode to [`MKUserTrackingMode.follow`](mkusertrackingmode/follow.md) or [`MKUserTrackingMode.followWithHeading`](mkusertrackingmode/followwithheading.md) causes the map view to center the map on that location and begin tracking the user’s location. If it’s zoomed out, the map view automatically zooms in on the user’s location, effectively changing the current visible region.
+Setting the tracking mode to [`MKUserTrackingMode.follow`](../mkusertrackingmode/follow.md) or [`MKUserTrackingMode.followWithHeading`](../mkusertrackingmode/followwithheading.md) causes the map view to center the map on that location and begin tracking the user’s location. If it’s zoomed out, the map view automatically zooms in on the user’s location, effectively changing the current visible region.
 
 ## Parameters
 
-- `mode`: The mode for tracking the user’s location. [`MKUserTrackingMode`](mkusertrackingmode.md) describes the possible values.
-- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the map animates the change from the current mode to the new mode; otherwise, it doesn’t. This parameter affects only tracking-mode changes. Changes to the user’s location or heading use animation.
+- `mode`: The mode for tracking the user’s location. [`MKUserTrackingMode`](../mkusertrackingmode.md) describes the possible values.
+- `animated`: If [`true`](../../Swift/true.md), the map animates the change from the current mode to the new mode; otherwise, it doesn’t. This parameter affects only tracking-mode changes. Changes to the user’s location or heading use animation.
 
 ## See Also
 
-- [func mapView(MKMapView, didChange: MKUserTrackingMode, animated: Bool)](mkmapviewdelegate/mapview(_:didchange:animated:).md)
+### Related Documentation
+- [func mapView(MKMapView, didChange: MKUserTrackingMode, animated: Bool)](../mkmapviewdelegate/mapview%28_,didchange,animated%29.md)
   Tells the delegate when the user-tracking mode changes.
-- [func mapView(MKMapView, didUpdate: MKUserLocation)](mkmapviewdelegate/mapview(_:didupdate:).md)
+- [func mapView(MKMapView, didUpdate: MKUserLocation)](../mkmapviewdelegate/mapview%28_,didupdate%29.md)
   Tells the delegate when the map view updates the user’s location.
-- [var heading: CLHeading?](mkuserlocation/heading.md)
+- [var heading: CLHeading?](../mkuserlocation/heading.md)
   The heading of the user’s location.
-- [Converting a user’s location to a descriptive placemark](converting-a-user-s-location-to-a-descriptive-placemark.md)
+### Displaying the user’s location
+- [Converting a user’s location to a descriptive placemark](../converting-a-user-s-location-to-a-descriptive-placemark.md)
   Transform the user’s location that displays on a map into an informative textual description by reverse geocoding.
-- [var showsUserLocation: Bool](mkmapview/showsuserlocation.md)
+- [var showsUserLocation: Bool](./showsuserlocation.md)
   A Boolean value that indicates whether the map tries to display the user’s location.
-- [var isUserLocationVisible: Bool](mkmapview/isuserlocationvisible.md)
+- [var isUserLocationVisible: Bool](./isuserlocationvisible.md)
   A Boolean value that indicates whether the user’s location is visible in the map view.
-- [var userLocation: MKUserLocation](mkmapview/userlocation.md)
+- [var userLocation: MKUserLocation](./userlocation.md)
   The annotation object that represents the user’s location.
-- [var userTrackingMode: MKUserTrackingMode](mkmapview/usertrackingmode.md)
+- [var userTrackingMode: MKUserTrackingMode](./usertrackingmode.md)
   The mode to use for tracking the user’s location.
-- [enum MKUserTrackingMode](mkusertrackingmode.md)
+- [enum MKUserTrackingMode](../mkusertrackingmode.md)
   The mode to use for tracking the user’s location on the map.
 
 

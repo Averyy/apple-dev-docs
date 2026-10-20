@@ -1,7 +1,8 @@
 # Apple Music Feed
 
 **Framework**: Apple Music Feed  
-**Kind**: module
+**Kind**: module  
+**Role**: Web Service
 
 Access the content of the Apple Music Catalog in bulk.
 
@@ -10,7 +11,7 @@ Access the content of the Apple Music Catalog in bulk.
 
 #### Overview
 
-Apple Music Feed contains the catalog content of Apple Music products in bulk for consumption as feed exports. These bulk exports are appropriate for offline use cases, complementing Apple Music API, which is best for online use. Apple Music Feed includes content metadata for albums, songs, artists, and popularity charts, and fully refreshes every 24 hours. You access the Apple Music Feed using Apple Media Feed API to [`Requesting a feed export`](requesting-a-feed-export.md) of a data set.
+Apple Music Feed contains the catalog content of Apple Music products in bulk for consumption as feed exports. These bulk exports are appropriate for offline use cases, complementing Apple Music API, which is best for online use. Apple Music Feed includes content metadata for albums, songs, artists, and popularity charts, and fully refreshes every 24 hours. You access the Apple Music Feed using Apple Media Feed API to [request an export](./requesting-a-feed-export.md) of a data set.
 
 > ❗ **Important**: Apple Music Feed, and all content and data accessed through Apple Music Feed, may be used only for the purpose of publicly promoting Apple Music content within your app. Using Apple Music Feed for any other purpose — including, but not limited to, powering or enhancing internal systems and tools, sharing data with third parties, or analyzing music- and artist-related information for reasons other than the promotion of Apple Music in your app — is strictly prohibited.
 
@@ -20,9 +21,9 @@ Apple Music Feed uses the Parquet format, which is an open-source columnar stora
 
 > **Note**: Although the feed is in Parquet format, this documentation provides data examples in JSON format for illustrative purposes.
 
-#### Use Sample Scripts
+#### Use sample scripts
 
-You can find sample Java and Python scripts in the [`music-feed-examples`](https://developer.apple.comhttps://github.com/apple/music-feed-examples) public GitHub repository that perform the following steps:
+You can find sample Java and Python scripts in the [music-feed-examples](https://github.com/apple/music-feed-examples) public GitHub repository that perform the following steps:
 
 - Generate a developer token.
 - Use the token to request metadata for the latest feed export for a specific data set.
@@ -33,22 +34,22 @@ You can find sample Java and Python scripts in the [`music-feed-examples`](https
 ## Topics
 
 ### Essentials
-- [Generating developer tokens](generating-developer-tokens.md)
+- [Generating developer tokens](./generating-developer-tokens.md)
   Create a JSON Web Token to authorize your requests to Apple Media Feed API.
-- [Requesting a feed export](requesting-a-feed-export.md)
+- [Requesting a feed export](./requesting-a-feed-export.md)
   Create requests for Apple Music Catalog metadata.
-- [Interpreting responses](interpreting-responses.md)
+- [Interpreting responses](./interpreting-responses.md)
   Learn about responses from Apple Media Feed API to your Apple Music Feed requests.
 ### Objects
-- [object Album](album.md)
+- [object Album](./album.md)
   The data structure that represents an Album resource.
-- [object Song](song.md)
+- [object Song](./song.md)
   The data structure that represents a Song resource.
-- [object Artist](artist.md)
+- [object Artist](./artist.md)
   The data structure that represents an Artist resource.
-- [object PopularityTopChartAlbums](popularitytopchartalbums.md)
+- [object PopularityTopChartAlbums](./popularitytopchartalbums.md)
   The data structure that represents an album popularity chart resource.
-- [object PopularityTopChartSongs](popularitytopchartsongs.md)
+- [object PopularityTopChartSongs](./popularitytopchartsongs.md)
   The data structure that represents a song popularity chart resource.
 
 

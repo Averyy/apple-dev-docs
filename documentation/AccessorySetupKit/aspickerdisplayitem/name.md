@@ -1,7 +1,8 @@
 # name
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory name to display in the picker.
 
@@ -15,9 +16,14 @@ The accessory name to display in the picker.
 var name: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var productImage: UIImage](aspickerdisplayitem/productimage.md)
+### Customizing display properties
+- [var productImage: UIImage](./productimage.md)
   An image of the accessory to display in the picker.
 
 

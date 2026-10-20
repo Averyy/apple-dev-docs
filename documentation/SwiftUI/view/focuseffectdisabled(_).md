@@ -1,7 +1,8 @@
 # focusEffectDisabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a condition that controls whether this view can display focus effects, such as a default focus ring or hover effect.
 
@@ -43,7 +44,8 @@ HStack {
 
 ## See Also
 
-- [var isFocusEffectEnabled: Bool](environmentvalues/isfocuseffectenabled.md)
+### Configuring effects
+- [var isFocusEffectEnabled: Bool](../environmentvalues/isfocuseffectenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows focus effects to be displayed.
 
 

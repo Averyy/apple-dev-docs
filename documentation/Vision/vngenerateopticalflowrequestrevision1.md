@@ -1,7 +1,8 @@
 # VNGenerateOpticalFlowRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the optical flow generation request.
 
@@ -19,9 +20,14 @@ A constant for specifying revision 1 of the optical flow generation request.
 var VNGenerateOpticalFlowRequestRevision1: Int { get }
 ```
 
+```c
+static const NSUInteger VNGenerateOpticalFlowRequestRevision1;
+```
+
 ## See Also
 
-- [var VNGenerateOpticalFlowRequestRevision2: Int](vngenerateopticalflowrequestrevision2.md)
+### Identifying Request Revisions
+- [var VNGenerateOpticalFlowRequestRevision2: Int](./vngenerateopticalflowrequestrevision2.md)
   A constant for specifying revision 2 of the optical flow generation request.
 
 

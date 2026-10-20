@@ -1,7 +1,8 @@
 # x
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The x-axis of alignment.
 

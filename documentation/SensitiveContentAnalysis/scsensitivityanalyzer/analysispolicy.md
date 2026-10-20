@@ -1,7 +1,8 @@
 # analysisPolicy
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that determines if the app detects nudity and how the app responds.
 
@@ -18,13 +19,17 @@ A property that determines if the app detects nudity and how the app responds.
 var analysisPolicy: SCSensitivityAnalysisPolicy { get }
 ```
 
+```objc
+@property (assign, readonly) SCSensitivityAnalysisPolicy analysisPolicy;
+```
+
 ## Mentions
 
-- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
 
 #### Discussion
 
-Before attempting to use the framework, first check the [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md):
+Before attempting to use the framework, first check the [`analysisPolicy`](./analysispolicy.md):
 
 ```swift
 let policy = analyzer.analysisPolicy
@@ -33,10 +38,10 @@ if policy == .disabled { return }
 
 An app can utilize the Sensitive Content Analysis framework when the system sets the value of this property to either:
 
-- [`SCSensitivityAnalysisPolicy.simpleInterventions`](scsensitivityanalysispolicy/simpleinterventions.md), which indicates that someone activates the Communication Safety parental control in Screen Time.
-- [`SCSensitivityAnalysisPolicy.descriptiveInterventions`](scsensitivityanalysispolicy/descriptiveinterventions.md), which indicates that someone activates the Sensitive Content Warning user preference.
+- [`SCSensitivityAnalysisPolicy.simpleInterventions`](../scsensitivityanalysispolicy/simpleinterventions.md), which indicates that someone activates the Communication Safety parental control in Screen Time.
+- [`SCSensitivityAnalysisPolicy.descriptiveInterventions`](../scsensitivityanalysispolicy/descriptiveinterventions.md), which indicates that someone activates the Sensitive Content Warning user preference.
 
-The framework won’t detect nudity if the system disables this property. For more information on why the system disables sensitive content analysis, see [`SCSensitivityAnalysisPolicy.disabled`](scsensitivityanalysispolicy/disabled.md).
+The framework won’t detect nudity if the system disables this property. For more information on why the system disables sensitive content analysis, see [`SCSensitivityAnalysisPolicy.disabled`](../scsensitivityanalysispolicy/disabled.md).
 
 
 ---

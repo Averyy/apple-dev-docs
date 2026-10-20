@@ -1,7 +1,8 @@
 # unitString(fromKilograms:usedUnit:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the unit string for the provided value.
 
@@ -20,34 +21,39 @@ Returns the unit string for the provided value.
 func unitString(fromKilograms numberInKilograms: Double, usedUnit unitp: UnsafeMutablePointer<MassFormatter.Unit>?) -> String
 ```
 
+```objc
+- (NSString *) unitStringFromKilograms:(double) numberInKilograms usedUnit:(NSMassFormatterUnit *) unitp;
+```
+
 #### Return Value
 
 A localized string representing the unit.
 
 #### Discussion
 
-This method selects the correct unit based on the formatter’s locale, the magnitude of the value, and the [`isForPersonMassUse`](massformatter/isforpersonmassuse.md) property. The value, once converted into the appropriate unit, determines whether the unit string is plural or singular.
+This method selects the correct unit based on the formatter’s locale, the magnitude of the value, and the [`isForPersonMassUse`](./isforpersonmassuse.md) property. The value, once converted into the appropriate unit, determines whether the unit string is plural or singular.
 
 ## Parameters
 
 - `numberInKilograms`: The mass’s value in kilograms.
-- `unitp`: An output parameter. This will hold the [`MassFormatter.Unit`](massformatter/unit.md) value that corresponds to the returned units.
+- `unitp`: An output parameter. This will hold the [`MassFormatter.Unit`](./unit.md) value that corresponds to the returned units.
 
 ## See Also
 
-- [var isForPersonMassUse: Bool](massformatter/isforpersonmassuse.md)
+### Formatting Mass Strings
+- [var isForPersonMassUse: Bool](./isforpersonmassuse.md)
   A Boolean value that indicates whether the resulting string represents a person’s mass.
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](massformatter/getobjectvalue(_:for:errordescription:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./getobjectvalue%28_,for,errordescription%29.md)
   This method is not supported for the `NSMassFormatter` class.
-- [var numberFormatter: NumberFormatter!](massformatter/numberformatter.md)
+- [var numberFormatter: NumberFormatter!](./numberformatter.md)
   The number formatter used to format the numbers in a mass strings.
-- [func string(fromKilograms: Double) -> String](massformatter/string(fromkilograms:).md)
+- [func string(fromKilograms: Double) -> String](./string%28fromkilograms%29.md)
   Returns a mass string for the provided value.
-- [func string(fromValue: Double, unit: MassFormatter.Unit) -> String](massformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: MassFormatter.Unit) -> String](./string%28fromvalue,unit%29.md)
   Returns a properly formatted mass string for the given value and unit.
-- [func unitString(fromValue: Double, unit: MassFormatter.Unit) -> String](massformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: MassFormatter.Unit) -> String](./unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](massformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./unitstyle.md)
   The unit style used by this formatter.
 
 

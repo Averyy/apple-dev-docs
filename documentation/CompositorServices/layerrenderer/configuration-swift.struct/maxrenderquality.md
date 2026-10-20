@@ -1,7 +1,8 @@
 # maxRenderQuality
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The max render quality the layer can use when drawing to the drawables.
 
@@ -17,7 +18,7 @@ var maxRenderQuality: LayerRenderer.RenderQuality { get set }
 
 ## Mentions
 
-- [Defining layer renderer quality](defining-layer-renderer-quality.md)
+- [Defining layer renderer quality](../../defining-layer-renderer-quality.md)
 
 #### Discussion
 
@@ -27,11 +28,12 @@ Setting a higher max render quality will impact the resolution that is allocated
 
 ## See Also
 
-- [var renderQuality: LayerRenderer.RenderQuality](layerrenderer/renderquality-swift.property.md)
+### Defining quality level
+- [var renderQuality: LayerRenderer.RenderQuality](../renderquality-swift.property.md)
   Get the render quality to be used by the drawables.
-- [var defaultRenderQuality: LayerRenderer.RenderQuality](layerrenderer/capabilities/defaultrenderquality.md)
+- [var defaultRenderQuality: LayerRenderer.RenderQuality](../capabilities/defaultrenderquality.md)
   The default render quality used on this platform.
-- [Defining layer renderer quality](defining-layer-renderer-quality.md)
+- [Defining layer renderer quality](../../defining-layer-renderer-quality.md)
   Declare the render quality of your textures to enable high-quality rendering.
 
 

@@ -1,7 +1,8 @@
 # NSTypeIdentifierTransitInformationText
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -15,15 +16,20 @@
 let NSTypeIdentifierTransitInformationText: String
 ```
 
+```c
+extern NSString * const NSTypeIdentifierTransitInformationText;
+```
+
 #### Discussion
 
-UTI subtype for [`transitInformation`](https://developer.apple.com/documentation/foundation/nstextcheckingresult/checkingtype/transitinformation), `com.apple.structured-text.transit-information`.
+UTI subtype for [`transitInformation`](../Foundation/nstextcheckingresult/checkingtype/transitinformation.md), `com.apple.structured-text.transit-information`.
 
 ## See Also
 
-- [let NSTypeIdentifierAddressText: String](nstypeidentifieraddresstext.md)
-- [let NSTypeIdentifierDateText: String](nstypeidentifierdatetext.md)
-- [let NSTypeIdentifierPhoneNumberText: String](nstypeidentifierphonenumbertext.md)
+### UTI Subtypes for Data Detector Types
+- [let NSTypeIdentifierAddressText: String](./nstypeidentifieraddresstext.md)
+- [let NSTypeIdentifierDateText: String](./nstypeidentifierdatetext.md)
+- [let NSTypeIdentifierPhoneNumberText: String](./nstypeidentifierphonenumbertext.md)
 
 
 ---

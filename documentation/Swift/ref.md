@@ -1,7 +1,8 @@
 # Ref
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A safe reference allowing in-place reads to a shared value.
 
@@ -24,25 +25,26 @@ struct Ref<Value> where Value : ~Copyable
 ## Topics
 
 ### Initializers
-- [init(borrowing Value)](ref/init(_:).md)
+- [init(borrowing Value)](./ref/init%28_%29.md)
   Initializes an instance of `Ref` with the given borrowed value. This creates a constant reference to that value preventing writes on the original value while this reference is still active.
-- [init<Owner>(unsafeAddress: UnsafePointer<Value>, borrowing: borrowing Owner)](ref/init(unsafeaddress:borrowing:).md)
+- [init<Owner>(unsafeAddress: UnsafePointer<Value>, borrowing: borrowing Owner)](./ref/init%28unsafeaddress,borrowing%29.md)
   Unsafely initializes an instance of `Ref` using the given ‘unsafeAddress’ as the reference based on the borrowed lifetime of the given ‘owner’ argument.
 ### Instance Properties
-- [var value: Value](ref/value.md)
+- [var value: Value](./ref/value.md)
   Dereferences the constant reference allowing for in-place reads to the underlying value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Copyable](./copyable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct MutableRef](mutableref.md)
+### Borrowing
+- [struct MutableRef](./mutableref.md)
   A safe mutable reference allowing in-place mutation to an exclusive value.
 
 

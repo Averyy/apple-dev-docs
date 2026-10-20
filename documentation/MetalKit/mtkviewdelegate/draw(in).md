@@ -2,6 +2,7 @@
 
 **Framework**: MetalKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Draws the view’s contents.
@@ -19,6 +20,10 @@ Draws the view’s contents.
 ```swift
 @MainActor
 func draw(in view: MTKView)
+```
+
+```objc
+- (void) drawInMTKView:(MTKView *) view;
 ```
 
 #### Discussion

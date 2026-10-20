@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an instance initialized to the specified integer value.
@@ -34,6 +35,11 @@ In this example, the assignment to the `x` constant calls this integer literal i
 ## Parameters
 
 - `value`: The value to create.
+
+## Default Implementations
+
+### ExpressibleByIntegerLiteral Implementations
+- [init(integerLiteral: Self)](./init%28integerliteral%29-88n2x.md)
 
 
 ---

@@ -1,25 +1,27 @@
 # histogramSegmentsConfig
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOHistogramSegmentConfig * histogramSegmentsConfig;
 ```
 
 ## See Also
 
-- [bucketBounds](iohistogramreporter_ivars/bucketbounds.md)
-- [bucketCount](iohistogramreporter_ivars/bucketcount.md)
-- [segmentCount](iohistogramreporter_ivars/segmentcount.md)
+### Instance Properties
+- [bucketBounds](./bucketbounds.md)
+- [bucketCount](./bucketcount.md)
+- [segmentCount](./segmentcount.md)
 
 
 ---

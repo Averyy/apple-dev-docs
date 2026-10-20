@@ -1,15 +1,22 @@
 # readWrite
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 15.0
+
+> **Deprecated**: Use NSWindowSharingReadOnly instead
 
 ## Declaration
 
 ```swift
 static var readWrite: NSWindow.SharingType { get }
+```
+
+```c
+static const NSWindowSharingType NSWindowSharingReadWrite;
 ```
 
 #### Discussion
@@ -18,9 +25,10 @@ The window’s contents can be read and modified by another process.
 
 ## See Also
 
-- [NSWindow.SharingType.none](nswindow/sharingtype-swift.enum/none.md)
+### Constants
+- [NSWindow.SharingType.none](./none.md)
   A legacy constant that macOS no longer uses.
-- [NSWindow.SharingType.readOnly](nswindow/sharingtype-swift.enum/readonly.md)
+- [NSWindow.SharingType.readOnly](./readonly.md)
 
 
 ---

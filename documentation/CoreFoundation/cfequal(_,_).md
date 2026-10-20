@@ -1,23 +1,28 @@
 # CFEqual(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines whether two Core Foundation objects are considered equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFEqual(_ cf1: CFTypeRef!, _ cf2: CFTypeRef!) -> Bool
+```
+
+```c
+extern Boolean CFEqual(CFTypeRef cf1, CFTypeRef cf2);
 ```
 
 #### Return Value

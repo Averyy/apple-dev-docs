@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingHandleInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request to handle a fully resolved play media intent.
 
@@ -10,14 +11,14 @@ Your service’s response to a request to handle a fully resolved play media int
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingHandleInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying a Result
-- [object PlayMediaIntentHandlingHandleInvocationResponse.Result](playmediaintenthandlinghandleinvocationresponse/result-data.dictionary.md)
+- [object PlayMediaIntentHandlingHandleInvocationResponse.Result](./playmediaintenthandlinghandleinvocationresponse/result-data.dictionary.md)
   The result of handling an intent to play a media item.
 
 ## Properties
@@ -25,16 +26,19 @@ object PlayMediaIntentHandlingHandleInvocationResponse
 - `result` (PlayMediaIntentHandlingHandleInvocationResponse.Result) *(required)*: The results of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `PlayMediaIntentHandling.handle`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [object PlayMediaIntentResponse](playmediaintentresponse.md)
+### Handling a Play Media Intent
+- [object PlayMediaIntentResponse](./playmediaintentresponse.md)
   A structure that contains a response code indicating how your service handles a play media intent.
-- [type PlayMediaIntentResponseCode](playmediaintentresponsecode.md)
+- [type PlayMediaIntentResponseCode](./playmediaintentresponsecode.md)
   Codes your service can return when handling a play media intent.
 
 

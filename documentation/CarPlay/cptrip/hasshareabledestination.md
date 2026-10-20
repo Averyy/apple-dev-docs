@@ -1,7 +1,8 @@
 # hasShareableDestination
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set to @YES to enable sharing of the destination of this trip.
 
@@ -14,6 +15,10 @@ Set to @YES to enable sharing of the destination of this trip.
 
 ```swift
 var hasShareableDestination: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL hasShareableDestination;
 ```
 
 

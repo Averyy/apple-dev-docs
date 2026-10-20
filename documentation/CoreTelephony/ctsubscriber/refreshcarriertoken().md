@@ -1,7 +1,8 @@
 # refreshCarrierToken()
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to refresh the carrier token.
 
@@ -16,23 +17,28 @@ Attempts to refresh the carrier token.
 func refreshCarrierToken() -> Bool
 ```
 
+```objc
+- (BOOL) refreshCarrierToken;
+```
+
 #### Return Value
 
 `true` if the system performs a token refresh in response to this call; otherwise, `false`.
 
 #### Discussion
 
-Call this method to update the [`carrierToken`](ctsubscriber/carriertoken.md) when the token exists but the server rejects it.
+Call this method to update the [`carrierToken`](./carriertoken.md) when the token exists but the server rejects it.
 
 > **Note**:  Retrieve and attempt to use `carrierToken` first. Only call this method when you know the token is invalid.
 
-Inspect the return value to determine whether this call results in an actual refresh. If the return value is `true`, the system attempts the refresh and calls the delegate method [`subscriberTokenRefreshed(_:)`](ctsubscriberdelegate/subscribertokenrefreshed(_:).md). A return value of `false` indicates an invalid argument (such as bad carrier descriptors or service descriptor) or that the subscriber doesn’t support the authentication action.
+Inspect the return value to determine whether this call results in an actual refresh. If the return value is `true`, the system attempts the refresh and calls the delegate method [`subscriberTokenRefreshed(_:)`](../ctsubscriberdelegate/subscribertokenrefreshed%28_%29.md). A return value of `false` indicates an invalid argument (such as bad carrier descriptors or service descriptor) or that the subscriber doesn’t support the authentication action.
 
 ## See Also
 
-- [var carrierToken: Data?](ctsubscriber/carriertoken.md)
+### Managing the carrier token
+- [var carrierToken: Data?](./carriertoken.md)
   A data object containing authorization information about the subscriber.
-- [let CTSubscriberTokenRefreshed: String](ctsubscribertokenrefreshed.md)
+- [let CTSubscriberTokenRefreshed: String](../ctsubscribertokenrefreshed.md)
   The name of the notification indicating that the carrier token is available.
 
 

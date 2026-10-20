@@ -1,7 +1,8 @@
 # unidentified
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `und` code: used in cases where the language has not been identified
 

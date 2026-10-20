@@ -1,7 +1,8 @@
 # readAttributeMaxPINCodeLength(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMaxPINCodeLength(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMaxPINCodeLength() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMaxPINCodeLengthWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

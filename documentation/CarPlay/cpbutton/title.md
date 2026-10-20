@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button’s title.
 
@@ -16,9 +17,14 @@ The button’s title.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var isEnabled: Bool](cpbutton/isenabled.md)
+### Configuring the Button’s Attributes
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that determines whether the button is in an enabled state.
 
 

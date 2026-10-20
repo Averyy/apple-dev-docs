@@ -1,7 +1,8 @@
 # GameCenterAchievementUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a achievement resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a achievement resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementUpdateRequest.Data.Attributes
 ```
 

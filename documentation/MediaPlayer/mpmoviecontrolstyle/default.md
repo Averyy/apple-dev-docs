@@ -1,17 +1,24 @@
 # default
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 static var `default`: MPMovieControlStyle { get }
+```
+
+```c
+MPMovieControlStyleDefault
 ```
 
 #### Discussion
@@ -20,9 +27,10 @@ Fullscreen controls are displayed by default.
 
 ## See Also
 
-- [MPMovieControlStyle.none](mpmoviecontrolstyle/none.md)
-- [MPMovieControlStyle.embedded](mpmoviecontrolstyle/embedded.md)
-- [MPMovieControlStyle.fullscreen](mpmoviecontrolstyle/fullscreen.md)
+### Constants
+- [MPMovieControlStyle.none](./none.md)
+- [MPMovieControlStyle.embedded](./embedded.md)
+- [MPMovieControlStyle.fullscreen](./fullscreen.md)
 
 
 ---

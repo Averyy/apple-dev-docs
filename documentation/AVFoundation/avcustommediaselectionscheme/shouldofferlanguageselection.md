@@ -1,7 +1,8 @@
 # shouldOfferLanguageSelection
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether an alternative selection interface should provide a menu of language choices.
 
@@ -20,13 +21,18 @@ Indicates whether an alternative selection interface should provide a menu of la
 var shouldOfferLanguageSelection: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL shouldOfferLanguageSelection;
+```
+
 ## See Also
 
-- [var availableLanguages: [String]](avcustommediaselectionscheme/availablelanguages.md)
+### Inspecting the scheme
+- [var availableLanguages: [String]](./availablelanguages.md)
   Provides available language choices.
-- [var selectors: [AVMediaPresentationSelector]](avcustommediaselectionscheme/selectors.md)
+- [var selectors: [AVMediaPresentationSelector]](./selectors.md)
   Provides custom settings.
-- [func mediaPresentationSettings(for: AVMediaPresentationSelector, complementaryToLanguage: String?, settings: [AVMediaPresentationSetting]) -> [AVMediaPresentationSetting]](avcustommediaselectionscheme/mediapresentationsettings(for:complementarytolanguage:settings:).md)
+- [func mediaPresentationSettings(for: AVMediaPresentationSelector, complementaryToLanguage: String?, settings: [AVMediaPresentationSetting]) -> [AVMediaPresentationSetting]](./mediapresentationsettings%28for,complementarytolanguage,settings%29.md)
   Provides an array of media presentation settings that can be effective at the same time as the specified language and settings for other selectors of the receiver.
 
 

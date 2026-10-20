@@ -1,7 +1,8 @@
 # MTRUnitTestingClusterTestSpecificResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,28 +19,32 @@
 class MTRUnitTestingClusterTestSpecificResponseParams
 ```
 
+```objc
+@interface MTRUnitTestingClusterTestSpecificResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrunittestingclustertestspecificresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrunittestingclustertestspecificresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var returnValue: NSNumber](mtrunittestingclustertestspecificresponseparams/returnvalue.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrunittestingclustertestspecificresponseparams/timedinvoketimeoutms.md)
+- [var returnValue: NSNumber](./mtrunittestingclustertestspecificresponseparams/returnvalue.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrunittestingclustertestspecificresponseparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTestClusterClusterTestSpecificResponseParams](mtrtestclusterclustertestspecificresponseparams.md)
+- [MTRTestClusterClusterTestSpecificResponseParams](./mtrtestclusterclustertestspecificresponseparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

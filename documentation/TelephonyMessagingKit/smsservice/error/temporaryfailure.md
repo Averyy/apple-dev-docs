@@ -1,7 +1,8 @@
 # SMSService.Error.temporaryFailure
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation failed temporarily.
 
@@ -16,11 +17,12 @@ case temporaryFailure
 
 ## See Also
 
-- [SMSService.Error.notSupported](smsservice/error/notsupported.md)
+### Identifying errors
+- [SMSService.Error.notSupported](./notsupported.md)
   The operation isn’t supported.
-- [SMSService.Error.permanentFailure](smsservice/error/permanentfailure.md)
+- [SMSService.Error.permanentFailure](./permanentfailure.md)
   The operation failed permanently.
-- [SMSService.Error.unknown](smsservice/error/unknown.md)
+- [SMSService.Error.unknown](./unknown.md)
   An unknown problem caused the error.
 
 

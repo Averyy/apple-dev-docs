@@ -1,7 +1,8 @@
 # isLoading
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the snapshot request is loading.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the snapshot request is loading.
 
 ```swift
 var isLoading: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isLoading) BOOL loading;
 ```
 
 

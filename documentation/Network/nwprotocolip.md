@@ -1,7 +1,8 @@
 # NWProtocolIP
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A network protocol for configuring the Internet Protocol on connections.
 
@@ -23,42 +24,43 @@ class NWProtocolIP
 ## Topics
 
 ### Handling IP Packets
-- [NWProtocolIP.Metadata](nwprotocolip/metadata.md)
+- [NWProtocolIP.Metadata](./nwprotocolip/metadata.md)
   Per-packet IP metadata you configure when sending and receiving packets.
 ### Configuring IP Connections
-- [NWProtocolIP.Options](nwprotocolip/options.md)
+- [NWProtocolIP.Options](./nwprotocolip/options.md)
   A container of options for configuring how IP is used on a connection.
-- [static let definition: NWProtocolDefinition](nwprotocolip/definition.md)
+- [static let definition: NWProtocolDefinition](./nwprotocolip/definition.md)
   The system definition of the Internet Protocol.
 ### Enumerations
-- [NWProtocolIP.ECN](nwprotocolip/ecn.md)
+- [NWProtocolIP.ECN](./nwprotocolip/ecn.md)
   Flag values for Explicit Congestion Notifications in IP packets.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocol](nwprotocol.md)
+- [NWProtocol](./nwprotocol.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Building a custom peer-to-peer protocol](building-a-custom-peer-to-peer-protocol.md)
+### Network Protocols
+- [Building a custom peer-to-peer protocol](./building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
-- [Connecting iPadOS and visionOS apps over the local network](../visionos/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
   Build an iPadOS companion app to control your visionOS app.
-- [class NWProtocolTCP](nwprotocoltcp.md)
+- [class NWProtocolTCP](./nwprotocoltcp.md)
   A network protocol for connections that use the Transmission Control Protocol.
-- [class NWProtocolTLS](nwprotocoltls.md)
+- [class NWProtocolTLS](./nwprotocoltls.md)
   A network protocol for connections that use Transport Layer Security.
-- [class NWProtocolQUIC](nwprotocolquic.md)
+- [class NWProtocolQUIC](./nwprotocolquic.md)
   A network protocol for connections that use the QUIC transport protocol.
-- [class NWProtocolUDP](nwprotocoludp.md)
+- [class NWProtocolUDP](./nwprotocoludp.md)
   A network protocol for connections that use the User Datagram Protocol.
-- [class NWProtocolWebSocket](nwprotocolwebsocket.md)
+- [class NWProtocolWebSocket](./nwprotocolwebsocket.md)
   A network protocol for connections that use WebSocket.
-- [class NWProtocolFramer](nwprotocolframer.md)
+- [class NWProtocolFramer](./nwprotocolframer.md)
   A customizable network protocol for defining application message parsers.
 
 

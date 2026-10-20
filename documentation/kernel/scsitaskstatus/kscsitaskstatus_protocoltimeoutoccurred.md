@@ -1,14 +1,15 @@
 # kSCSITaskStatus_ProtocolTimeoutOccurred
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 kSCSITaskStatus_ProtocolTimeoutOccurred = 0x02
 ```
 

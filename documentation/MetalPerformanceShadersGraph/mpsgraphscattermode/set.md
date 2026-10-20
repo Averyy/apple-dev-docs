@@ -1,7 +1,8 @@
 # MPSGraphScatterMode.set
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Set
 
@@ -17,6 +18,10 @@ Set
 
 ```swift
 case set
+```
+
+```c
+MPSGraphScatterModeSet
 ```
 
 

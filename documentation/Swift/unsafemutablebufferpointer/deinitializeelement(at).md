@@ -1,7 +1,8 @@
 # deinitializeElement(at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deinitializes the memory underlying the element at `index`.
 

@@ -1,21 +1,26 @@
 # interactionControllerForDismissal(using:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks your delegate for the interactive animator object to use when dismissing a view controller.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 optional func interactionControllerForDismissal(using animator: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?
+```
+
+```objc
+- (id<UIViewControllerInteractiveTransitioning>) interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>) animator;
 ```
 
 #### Return Value
@@ -24,19 +29,20 @@ The animator object that implements the code needed specifically to manage inter
 
 #### Discussion
 
-Use this method to create and return an object that implements the methods of the [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md) protocol. The implementation of that protocol should configure the event-handling code required to manage the disappearance of the target view controller. You may return `nil` from this method if you do not want to the animations to be interactive.
+Use this method to create and return an object that implements the methods of the [`UIViewControllerInteractiveTransitioning`](../uiviewcontrollerinteractivetransitioning.md) protocol. The implementation of that protocol should configure the event-handling code required to manage the disappearance of the target view controller. You may return `nil` from this method if you do not want to the animations to be interactive.
 
-> ❗ **Important**:  If you implement this method, you must also implement the [`animationController(forDismissed:)`](uiviewcontrollertransitioningdelegate/animationcontroller(fordismissed:).md) method and use it to return a custom transition animator object. If the [`animationController(forDismissed:)`](uiviewcontrollertransitioningdelegate/animationcontroller(fordismissed:).md) method returns `nil`, UIKit does not call this method.
+> ❗ **Important**:  If you implement this method, you must also implement the [`animationController(forDismissed:)`](./animationcontroller%28fordismissed%29.md) method and use it to return a custom transition animator object. If the [`animationController(forDismissed:)`](./animationcontroller%28fordismissed%29.md) method returns `nil`, UIKit does not call this method.
 
-For more information on implementing an interactive animator object, see [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md).
+For more information on implementing an interactive animator object, see [`UIViewControllerInteractiveTransitioning`](../uiviewcontrollerinteractivetransitioning.md).
 
 ## Parameters
 
-- `animator`: The transition animator object returned by your [`animationController(forDismissed:)`](uiviewcontrollertransitioningdelegate/animationcontroller(fordismissed:).md) method.
+- `animator`: The transition animator object returned by your [`animationController(forDismissed:)`](./animationcontroller%28fordismissed%29.md) method.
 
 ## See Also
 
-- [func interactionControllerForPresentation(using: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?](uiviewcontrollertransitioningdelegate/interactioncontrollerforpresentation(using:).md)
+### Getting the interactive animator objects
+- [func interactionControllerForPresentation(using: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)?](./interactioncontrollerforpresentation%28using%29.md)
   Asks your delegate for the interactive animator object to use when presenting a view controller.
 
 

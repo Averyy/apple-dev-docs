@@ -1,7 +1,8 @@
 # errSecInvalidAttributeEndDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An end date attribute is not valid.
 
@@ -18,6 +19,10 @@ An end date attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeEndDate: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeEndDate
 ```
 
 

@@ -1,7 +1,8 @@
 # Preview(_:as:using:widget:contentStates:)
 
 **Framework**: WidgetKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Preview a widget with an activity configuration, using the specified attributes and content states.
 
@@ -18,7 +19,7 @@ Preview a widget with an activity configuration, using the specified attributes 
 
 ## Mentions
 
-- [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)
+- [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md)
 
 #### Overview
 

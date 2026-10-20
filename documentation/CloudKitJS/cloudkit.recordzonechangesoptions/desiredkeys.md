@@ -1,7 +1,8 @@
 # desiredKeys
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of record field names that limit the amount of data returned. Only the fields specified in the array are returned. The default is `null`, which fetches all record fields.
 
@@ -10,7 +11,7 @@ An array of record field names that limit the amount of data returned. Only the 
 
 ## Declaration
 
-```swift
+```
 attribute String[] desiredKeys;
 ```
 

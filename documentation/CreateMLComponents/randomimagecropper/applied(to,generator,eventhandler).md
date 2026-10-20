@@ -1,7 +1,8 @@
 # applied(to:generator:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Randomly crops an image at a random location of a given size.
 

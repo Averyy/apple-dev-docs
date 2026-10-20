@@ -1,7 +1,8 @@
 # fromAddress
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sender’s email address.
 
@@ -15,6 +16,10 @@ The sender’s email address.
 var fromAddress: MEEmailAddress { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) MEEmailAddress * fromAddress;
+```
+
 #### Discussion
 
 This property corresponds to the From header in the message.
@@ -23,15 +28,16 @@ The value specifies the email address only, and doesn’t include any additional
 
 ## See Also
 
-- [var toAddresses: [MEEmailAddress]](memessage/toaddresses.md)
+### Accessing the Sender and Recipients
+- [var toAddresses: [MEEmailAddress]](./toaddresses.md)
   An array of email addresses for the primary recipients of the message.
-- [var ccAddresses: [MEEmailAddress]](memessage/ccaddresses.md)
+- [var ccAddresses: [MEEmailAddress]](./ccaddresses.md)
   An array of email addresses for the secondary recipients of the message.
-- [var bccAddresses: [MEEmailAddress]](memessage/bccaddresses.md)
+- [var bccAddresses: [MEEmailAddress]](./bccaddresses.md)
   An array of email addresses for the concealed tertiary recipients of the message.
-- [var replyToAddresses: [MEEmailAddress]](memessage/replytoaddresses.md)
+- [var replyToAddresses: [MEEmailAddress]](./replytoaddresses.md)
   An array of email addresses to use when replying to the message.
-- [var allRecipientAddresses: [MEEmailAddress]](memessage/allrecipientaddresses.md)
+- [var allRecipientAddresses: [MEEmailAddress]](./allrecipientaddresses.md)
   An array of email addresses for all recipients of the message.
 
 

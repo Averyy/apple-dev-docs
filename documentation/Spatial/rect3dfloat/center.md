@@ -1,7 +1,8 @@
 # center
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var center: Point3DFloat { get }
+```
+
+```c
+static SPPoint3DFloat SPRect3DFloatGetCenter(SPRect3DFloat rect);
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Tells you when to initialize an audio node that has been unarchived.
 
@@ -20,17 +21,22 @@ Tells you when to initialize an audio node that has been unarchived.
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 #### Discussion
 
 Do not call this initializer directly; it’s called by the system when you should initialize an audio node that has been unarchived.
 
 ## See Also
 
-- [init(avAudioNode: AVAudioNode?)](skaudionode/init(avaudionode:)-969st.md)
+### Initializing Audio Nodes
+- [init(avAudioNode: AVAudioNode?)](./init%28avaudionode%29-969st.md)
   Initializes an audio node from an AVFoundation audio node.
-- [convenience init(fileNamed: String)](skaudionode/init(filenamed:).md)
+- [convenience init(fileNamed: String)](./init%28filenamed%29.md)
   Initializes an audio node from an audio asset with the specified filename.
-- [convenience init(url: URL)](skaudionode/init(url:)-8v3q0.md)
+- [convenience init(url: URL)](./init%28url%29-8v3q0.md)
   Initializes an audio node from an audio asset with the specified URL.
 
 

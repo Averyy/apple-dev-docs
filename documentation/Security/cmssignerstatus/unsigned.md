@@ -1,7 +1,8 @@
 # CMSSignerStatus.unsigned
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The message was not signed.
 
@@ -13,6 +14,10 @@ The message was not signed.
 
 ```swift
 case unsigned
+```
+
+```c
+kCMSSignerUnsigned
 ```
 
 

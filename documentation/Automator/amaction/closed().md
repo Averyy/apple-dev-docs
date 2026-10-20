@@ -1,7 +1,8 @@
 # closed()
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked by Automator when the receiving action is removed from a workflow, allowing it to perform cleanup operations.
 
@@ -13,6 +14,10 @@ Invoked by Automator when the receiving action is removed from a workflow, allow
 
 ```swift
 func closed()
+```
+
+```objc
+- (void) closed;
 ```
 
 #### Discussion

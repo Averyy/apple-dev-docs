@@ -1,7 +1,8 @@
 # init(integerLiteral:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a fixed corner style with an int value as its corner radius. This is a shorthand of writing `.fixed(value)`.
 

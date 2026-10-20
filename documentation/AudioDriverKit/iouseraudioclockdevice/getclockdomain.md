@@ -1,7 +1,8 @@
 # GetClockDomain
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the clock domain value of the clock device.
 
@@ -10,7 +11,7 @@ Gets the clock domain value of the clock device.
 
 ## Declaration
 
-```swift
+```c
 uint32_t GetClockDomain();
 ```
 
@@ -24,7 +25,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetClockDomain](iouseraudioclockdevice/setclockdomain.md)
+### Working with Clock Domain
+- [SetClockDomain](./setclockdomain.md)
   Sets the clock domain value of the clock device.
 
 

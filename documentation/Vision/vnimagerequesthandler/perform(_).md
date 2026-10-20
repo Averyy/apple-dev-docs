@@ -1,7 +1,8 @@
 # perform(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules Vision requests to perform.
 
@@ -17,6 +18,10 @@ Schedules Vision requests to perform.
 
 ```swift
 func perform(_ requests: [VNRequest]) throws
+```
+
+```objc
+- (BOOL) performRequests:(NSArray<VNRequest *> *) requests error:(NSError **) error;
 ```
 
 #### Discussion

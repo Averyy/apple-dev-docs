@@ -1,7 +1,8 @@
 # script
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The written script of the language.
 
@@ -22,19 +23,20 @@ var script: Locale.Script? { get }
 
 ## See Also
 
-- [var languageCode: Locale.LanguageCode?](locale/language-swift.struct/languagecode.md)
+### Examining language properties
+- [var languageCode: Locale.LanguageCode?](./languagecode.md)
   The language code that identifies the language.
-- [Locale.LanguageCode](locale/languagecode-swift.struct.md)
+- [Locale.LanguageCode](../languagecode-swift.struct.md)
   An alphabetical code associated with a language.
-- [var region: Locale.Region?](locale/language-swift.struct/region.md)
+- [var region: Locale.Region?](./region.md)
   The region used with the language.
-- [Locale.Region](locale/region-swift.struct.md)
+- [Locale.Region](../region-swift.struct.md)
   A type that represents a geographic region, for use in specifying a locale or language.
-- [Locale.Script](locale/script.md)
+- [Locale.Script](../script.md)
   The written script used with a given language.
-- [var characterDirection: Locale.LanguageDirection](locale/language-swift.struct/characterdirection.md)
+- [var characterDirection: Locale.LanguageDirection](./characterdirection.md)
   The ordering of characters within a line.
-- [typealias LanguageDirection](locale/languagedirection.md)
+- [typealias LanguageDirection](../languagedirection.md)
   An alias for the standard set of language directions.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Assigns an acceleration structure to an entry in the tile shader argument table.
@@ -20,13 +21,17 @@ Assigns an acceleration structure to an entry in the tile shader argument table.
 func setTileAccelerationStructure(_ accelerationStructure: (any MTLAccelerationStructure)?, bufferIndex: Int)
 ```
 
+```objc
+- (void) setTileAccelerationStructure:(id<MTLAccelerationStructure>) accelerationStructure atBufferIndex:(NSUInteger) bufferIndex;
+```
+
 #### Discussion
 
 By default, the acceleration structure at each index is `nil`.
 
 ## Parameters
 
-- `accelerationStructure`: An [`MTLAccelerationStructure`](mtlaccelerationstructure.md) instance the command assigns to an entry in the tile shader argument table for acceleration structures.
+- `accelerationStructure`: An [`MTLAccelerationStructure`](../mtlaccelerationstructure.md) instance the command assigns to an entry in the tile shader argument table for acceleration structures.
 - `bufferIndex`: An integer that represents the entry in the tile shader argument table for acceleration structures that stores a record of `accelerationStructure`.
 
 

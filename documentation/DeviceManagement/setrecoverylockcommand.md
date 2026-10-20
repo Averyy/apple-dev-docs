@@ -1,7 +1,8 @@
 # SetRecoveryLockCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to set or clear the Recovery Lock password.
 
@@ -10,14 +11,14 @@ The command to set or clear the Recovery Lock password.
 
 ## Declaration
 
-```swift
+```
 object SetRecoveryLockCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object SetRecoveryLockCommand.Command](setrecoverylockcommand/command-data.dictionary.md)
+- [object SetRecoveryLockCommand.Command](./setrecoverylockcommand/command-data.dictionary.md)
   The command to set or clear the Recovery Lock password.
 
 ## Properties
@@ -27,7 +28,8 @@ object SetRecoveryLockCommand
 
 ## See Also
 
-- [object SetRecoveryLockResponse](setrecoverylockresponse.md)
+### Commands and responses
+- [object SetRecoveryLockResponse](./setrecoverylockresponse.md)
   A response from the device after it processes the command to set or clear the Recovery Lock password.
 
 

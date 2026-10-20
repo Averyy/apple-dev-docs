@@ -1,7 +1,8 @@
 # stringEncoding
 
 **Framework**: Quick Look UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -14,9 +15,10 @@ var stringEncoding: String.Encoding { get set }
 
 ## See Also
 
-- [var title: String](qlpreviewreply/title.md)
+### Inspecting a preview reply
+- [var title: String](./title.md)
   The title for the system to display with the preview.
-- [var attachments: [String : QLPreviewReplyAttachment]](qlpreviewreply/attachments.md)
+- [var attachments: [String : QLPreviewReplyAttachment]](./attachments.md)
   The attachments for a preview reply that provide additional data for the system to display the preview.
 
 

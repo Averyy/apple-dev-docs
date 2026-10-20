@@ -1,9 +1,10 @@
 # isSensitive
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Whether sessions established for the Smart Card should be considered sensitive. [`false`](https://developer.apple.com/documentation/swift/false) by default.
+Whether sessions established for the Smart Card should be considered sensitive. [`false`](../../Swift/false.md) by default.
 
 **Availability**:
 - iOS 9.0+
@@ -20,17 +21,22 @@ Whether sessions established for the Smart Card should be considered sensitive. 
 var isSensitive: Bool { get set }
 ```
 
+```objc
+@property BOOL sensitive;
+```
+
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), any sessions established for the receiver will begin and end by sending a reset command to the Smart Card. This is recommended anytime potentially sensitive information is transferred.
+When this property is set to [`true`](../../Swift/true.md), any sessions established for the receiver will begin and end by sending a reset command to the Smart Card. This is recommended anytime potentially sensitive information is transferred.
 
 ## See Also
 
-- [var slot: TKSmartCardSlot](tksmartcard/slot.md)
+### Configuring the Smart Card
+- [var slot: TKSmartCardSlot](./slot.md)
   The slot in which the Smart Card is inserted.
-- [var isValid: Bool](tksmartcard/isvalid.md)
+- [var isValid: Bool](./isvalid.md)
   Whether the Smart Card is valid and accessible from its slot.
-- [var context: Any?](tksmartcard/context.md)
+- [var context: Any?](./context.md)
   User-specified information. This property is automatically set to `nil` if the Smart Card is removed or another `TKSmartCard` object begins a session.
 
 

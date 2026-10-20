@@ -1,18 +1,19 @@
 # mutableContainersAndLeaves
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the property list should have mutable containers and mutable leaves.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Specifies that the property list should have mutable containers and mutable leav
 static var mutableContainersAndLeaves: CFPropertyListMutabilityOptions { get }
 ```
 
+```c
+kCFPropertyListMutableContainersAndLeaves
+```
+
 ## See Also
 
-- [static var mutableContainers: CFPropertyListMutabilityOptions](cfpropertylistmutabilityoptions/mutablecontainers.md)
+### Constants
+- [static var mutableContainers: CFPropertyListMutabilityOptions](./mutablecontainers.md)
   Specifies that the property list should have mutable containers but immutable leaves.
 
 

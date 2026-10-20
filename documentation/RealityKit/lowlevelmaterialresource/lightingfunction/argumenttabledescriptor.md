@@ -1,7 +1,8 @@
 # argumentTableDescriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The argument table descriptor for this lighting function, or `nil` if it takes no per-draw arguments.
 
@@ -19,7 +20,8 @@ final var argumentTableDescriptor: LowLevelArgumentTable.Descriptor? { get }
 
 ## See Also
 
-- [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/lightingfunction/parametermapping.md)
+### Configuring shader arguments
+- [var parameterMapping: LowLevelMaterialParameterMapping?](./parametermapping.md)
   The parameter name-to-slot mapping for this lighting function, or `nil` if it takes no custom parameters.
 
 

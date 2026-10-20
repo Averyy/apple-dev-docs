@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.eapTLS
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that indicates the system allows the Transport Layer Security Extensible Authentication Protocol (EAP-TLS) for this network.
 

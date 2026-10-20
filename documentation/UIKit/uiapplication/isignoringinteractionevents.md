@@ -1,15 +1,18 @@
 # isIgnoringInteractionEvents
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is ignoring events initiated by touches on the screen.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 2.0+ - Deprecated in 13.0
+- iPadOS 2.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 13.0
+
+> **Deprecated**: Use [`isUserInteractionEnabled`](../uiview/isuserinteractionenabled.md) instead.
 
 ## Declaration
 
@@ -17,39 +20,44 @@ A Boolean value that indicates whether the receiver is ignoring events initiated
 var isIgnoringInteractionEvents: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isIgnoringInteractionEvents) BOOL ignoringInteractionEvents;
+```
+
 #### Discussion
 
 The value of this property is
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is ignoring interaction events and if the nested [`beginIgnoringInteractionEvents()`](uiapplication/beginignoringinteractionevents().md) and [`endIgnoringInteractionEvents()`](uiapplication/endignoringinteractionevents().md) calls are at least one level deep; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver is ignoring interaction events and if the nested [`beginIgnoringInteractionEvents()`](./beginignoringinteractionevents%28%29.md) and [`endIgnoringInteractionEvents()`](./endignoringinteractionevents%28%29.md) calls are at least one level deep; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var applicationIconBadgeNumber: Int](uiapplication/applicationiconbadgenumber.md)
+### Deprecated properties
+- [var applicationIconBadgeNumber: Int](./applicationiconbadgenumber.md)
   The number currently set as the badge of the app icon on the Home screen.
-- [class let statusBarFrameUserInfoKey: String](uiapplication/statusbarframeuserinfokey.md)
+- [class let statusBarFrameUserInfoKey: String](./statusbarframeuserinfokey.md)
   A key whose value indicates the new status bar frame.
-- [class let statusBarOrientationUserInfoKey: String](uiapplication/statusbarorientationuserinfokey.md)
+- [class let statusBarOrientationUserInfoKey: String](./statusbarorientationuserinfokey.md)
   A key whose value indicates the current interface orientation.
-- [var currentUserNotificationSettings: UIUserNotificationSettings?](uiapplication/currentusernotificationsettings.md)
+- [var currentUserNotificationSettings: UIUserNotificationSettings?](./currentusernotificationsettings.md)
   Returns the user notification settings for the app.
-- [var isNetworkActivityIndicatorVisible: Bool](uiapplication/isnetworkactivityindicatorvisible.md)
+- [var isNetworkActivityIndicatorVisible: Bool](./isnetworkactivityindicatorvisible.md)
   A Boolean value that turns an indicator of network activity on or off.
-- [var isStatusBarHidden: Bool](uiapplication/isstatusbarhidden.md)
+- [var isStatusBarHidden: Bool](./isstatusbarhidden.md)
   A Boolean value that determines whether the status bar is hidden.
-- [var keyWindow: UIWindow?](uiapplication/keywindow.md)
+- [var keyWindow: UIWindow?](./keywindow.md)
   The app’s key window.
-- [var scheduledLocalNotifications: [UILocalNotification]?](uiapplication/scheduledlocalnotifications.md)
+- [var scheduledLocalNotifications: [UILocalNotification]?](./scheduledlocalnotifications.md)
   All currently scheduled local notifications.
-- [var statusBarFrame: CGRect](uiapplication/statusbarframe.md)
+- [var statusBarFrame: CGRect](./statusbarframe.md)
   The frame rectangle defining the area of the status bar.
-- [var statusBarOrientation: UIInterfaceOrientation](uiapplication/statusbarorientation.md)
+- [var statusBarOrientation: UIInterfaceOrientation](./statusbarorientation.md)
   The current orientation of the app’s status bar.
-- [var statusBarOrientationAnimationDuration: TimeInterval](uiapplication/statusbarorientationanimationduration.md)
+- [var statusBarOrientationAnimationDuration: TimeInterval](./statusbarorientationanimationduration.md)
   The animation duration in seconds for the status bar during a 90 degree orientation change.
-- [var statusBarStyle: UIStatusBarStyle](uiapplication/statusbarstyle.md)
+- [var statusBarStyle: UIStatusBarStyle](./statusbarstyle.md)
   The current style of the status bar.
-- [var windows: [UIWindow]](uiapplication/windows.md)
+- [var windows: [UIWindow]](./windows.md)
   The app’s visible and hidden windows.
 
 

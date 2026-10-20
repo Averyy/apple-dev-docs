@@ -1,7 +1,8 @@
 # primaryRecipientIdentifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of strings that identifies the primary recipients of the message.
 
@@ -16,9 +17,14 @@ A set of strings that identifies the primary recipients of the message.
 var primaryRecipientIdentifiers: Set<String> { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSSet<NSString *> * primaryRecipientIdentifiers;
+```
+
 ## See Also
 
-- [var senderIdentifier: String](uiconversationcontext/entry/senderidentifier.md)
+### Identifying entry participants
+- [var senderIdentifier: String](./senderidentifier.md)
   A string that identifies the message’s sender.
 
 

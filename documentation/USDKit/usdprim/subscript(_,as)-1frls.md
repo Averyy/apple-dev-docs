@@ -1,7 +1,8 @@
 # subscript(_:as:)
 
 **Framework**: USDKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access or modify the value of a named attribute on this prim.
 
@@ -21,7 +22,7 @@ subscript<T>(attributeName: USDToken, as type: T.Type) -> T? where T : USDPrim.A
 
 #### Overview
 
-If the attribute has time samples, this subscript operates at the [`default`](usdstage/timecode/default.md) time code.
+If the attribute has time samples, this subscript operates at the [`default`](../usdstage/timecode/default.md) time code.
 
 
 ---

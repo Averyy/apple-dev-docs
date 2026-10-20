@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ init(_ value: Value, @ParameterSummaryBuilder<Intent> _ parameterSummary: () -> 
 
 ## See Also
 
-- [init([Value], () -> Summary)](parametersummarycasecondition/init(_:_:)-4029f.md)
+### Creating the case condition
+- [init([Value], () -> Summary)](./init%28_,_%29-4029f.md)
 
 
 ---

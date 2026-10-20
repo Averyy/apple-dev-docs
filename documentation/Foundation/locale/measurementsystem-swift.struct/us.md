@@ -1,7 +1,8 @@
 # us
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The United States measurement system.
 
@@ -22,11 +23,12 @@ static let us: Locale.MeasurementSystem
 
 ## See Also
 
-- [static var measurementSystems: [Locale.MeasurementSystem]](locale/measurementsystem-swift.struct/measurementsystems.md)
+### Using common measurement systems
+- [static var measurementSystems: [Locale.MeasurementSystem]](./measurementsystems.md)
   An array of the measurement systems defined by the Unicode Common Locale Data Repository (CLDR).
-- [static let metric: Locale.MeasurementSystem](locale/measurementsystem-swift.struct/metric.md)
+- [static let metric: Locale.MeasurementSystem](./metric.md)
   The metric measurement system.
-- [static let uk: Locale.MeasurementSystem](locale/measurementsystem-swift.struct/uk.md)
+- [static let uk: Locale.MeasurementSystem](./uk.md)
   The United Kingdom measurement system.
 
 

@@ -1,7 +1,8 @@
 # setDuration(_:forPage:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a custom duration for the specified page. Set 0.0 to remove the custom duration for the specified page.
 
@@ -16,6 +17,10 @@ Sets a custom duration for the specified page. Set 0.0 to remove the custom dura
 
 ```swift
 func setDuration(_ duration: TimeInterval, forPage page: Int)
+```
+
+```objc
+- (void) setDuration:(NSTimeInterval) duration forPage:(NSInteger) page;
 ```
 
 

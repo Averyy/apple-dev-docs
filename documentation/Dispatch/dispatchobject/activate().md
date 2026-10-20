@@ -1,7 +1,8 @@
 # activate()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates the dispatch object.
 
@@ -20,15 +21,20 @@ Activates the dispatch object.
 func activate()
 ```
 
+```c
+extern void dispatch_activate(dispatch_object_t object);
+```
+
 #### Discussion
 
 Once a dispatch object has been activated, it cannot change its target queue.
 
 ## See Also
 
-- [func resume()](dispatchobject/resume.md)
+### Activating, Suspending, and Resuming
+- [func resume()](./resume%28%29.md)
   Resumes the invocation of block objects on a dispatch object.
-- [func suspend()](dispatchobject/suspend.md)
+- [func suspend()](./suspend%28%29.md)
   Suspends the invocation of block objects on a dispatch object.
 
 

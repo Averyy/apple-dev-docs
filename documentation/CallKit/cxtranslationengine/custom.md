@@ -1,7 +1,8 @@
 # CXTranslationEngine.custom
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case custom
+```
+
+```c
+CXTranslationEngineCustom
 ```
 
 

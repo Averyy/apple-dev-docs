@@ -1,7 +1,8 @@
 # nextState
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer. This base dead-key state value is used to determine the following dead-key state, if any.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer. This base dead-key state value is used to determine 
 
 ```swift
 var nextState: UInt16
+```
+
+```c
+UInt16 nextState;
 ```
 
 

@@ -1,7 +1,8 @@
 # limited(partnerIdentifiers:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Show a limited number of specified partners
 

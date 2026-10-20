@@ -1,16 +1,17 @@
 # SCNLightProbeType
 
 **Framework**: SceneKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -18,28 +19,33 @@
 enum SCNLightProbeType
 ```
 
+```c
+enum SCNLightProbeType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SCNLightProbeType.irradiance](scnlightprobetype/irradiance.md)
-- [SCNLightProbeType.radiance](scnlightprobetype/radiance.md)
+- [SCNLightProbeType.irradiance](./scnlightprobetype/irradiance.md)
+- [SCNLightProbeType.radiance](./scnlightprobetype/radiance.md)
 ### Initializers
-- [init?(rawValue: Int)](scnlightprobetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scnlightprobetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SCNLightAreaType](scnlightareatype.md)
-- [enum SCNLightProbeUpdateType](scnlightprobeupdatetype.md)
+### Enumerations
+- [enum SCNLightAreaType](./scnlightareatype.md)
+- [enum SCNLightProbeUpdateType](./scnlightprobeupdatetype.md)
 
 
 ---

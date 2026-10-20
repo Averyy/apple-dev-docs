@@ -1,7 +1,8 @@
 # errSecCSDbCorrupt
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A system database or file is corrupt.
 
@@ -13,6 +14,10 @@ A system database or file is corrupt.
 
 ```swift
 var errSecCSDbCorrupt: OSStatus { get }
+```
+
+```c
+errSecCSDbCorrupt
 ```
 
 

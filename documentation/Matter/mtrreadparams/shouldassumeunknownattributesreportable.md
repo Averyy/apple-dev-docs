@@ -1,7 +1,8 @@
 # shouldAssumeUnknownAttributesReportable
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 var shouldAssumeUnknownAttributesReportable: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=shouldAssumeUnknownAttributesReportable) BOOL assumeUnknownAttributesReportable;
 ```
 
 

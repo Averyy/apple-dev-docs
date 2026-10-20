@@ -5,16 +5,16 @@
 ## Topics
 
 ### Constants
-- [var errIAAllocationErr: Int](erriaallocationerr.md)
-- [var errIABufferTooSmall: Int](erriabuffertoosmall.md)
-- [var errIACanceled: Int](erriacanceled.md)
-- [var errIAEndOfTextRun: Int](erriaendoftextrun.md)
-- [var errIAInvalidDocument: Int](erriainvaliddocument.md)
-- [var errIANoErr: Int](errianoerr.md)
-- [var errIANoMoreItems: Int](errianomoreitems.md)
-- [var errIAParamErr: Int](erriaparamerr.md)
-- [var errIATextExtractionErr: Int](erriatextextractionerr.md)
-- [var errIAUnknownErr: Int](erriaunknownerr.md)
+- [var errIAAllocationErr: Int](../../erriaallocationerr.md)
+- [var errIABufferTooSmall: Int](../../erriabuffertoosmall.md)
+- [var errIACanceled: Int](../../erriacanceled.md)
+- [var errIAEndOfTextRun: Int](../../erriaendoftextrun.md)
+- [var errIAInvalidDocument: Int](../../erriainvaliddocument.md)
+- [var errIANoErr: Int](../../errianoerr.md)
+- [var errIANoMoreItems: Int](../../errianomoreitems.md)
+- [var errIAParamErr: Int](../../erriaparamerr.md)
+- [var errIATextExtractionErr: Int](../../erriatextextractionerr.md)
+- [var errIAUnknownErr: Int](../../erriaunknownerr.md)
 
 
 ---

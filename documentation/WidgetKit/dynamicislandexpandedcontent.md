@@ -1,7 +1,8 @@
 # DynamicIslandExpandedContent
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that describes the expanded presentation of a Live Activity that appears in the Dynamic Island.
 
@@ -17,20 +18,21 @@ struct DynamicIslandExpandedContent<Content> where Content : View
 
 #### Overview
 
-This view holds the intermediate content for the [`DynamicIslandExpandedContentBuilder`](dynamicislandexpandedcontentbuilder.md).
+This view holds the intermediate content for the [`DynamicIslandExpandedContentBuilder`](./dynamicislandexpandedcontentbuilder.md).
 
 ## See Also
 
-- [init(DynamicIslandExpandedRegionPosition, priority: Double, content: () -> Content)](dynamicislandexpandedregion/init(_:priority:content:).md)
+### Creating the expanded presentation
+- [init(DynamicIslandExpandedRegionPosition, priority: Double, content: () -> Content)](./dynamicislandexpandedregion/init%28_,priority,content%29.md)
   Creates the object that defines and positions the content of an expanded Live Activity in the Dynamic Island.
-- [struct DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition.md)
+- [struct DynamicIslandExpandedRegionPosition](./dynamicislandexpandedregionposition.md)
   View positions of an expanded Live Activity that appears in the Dynamic Island.
 - [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View
-](../swiftui/view/dynamicisland(verticalplacement:).md)
+](../SwiftUI/view/dynamicisland%28verticalplacement%29.md)
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
-- [struct DynamicIslandExpandedRegionVerticalPlacement](dynamicislandexpandedregionverticalplacement.md)
+- [struct DynamicIslandExpandedRegionVerticalPlacement](./dynamicislandexpandedregionverticalplacement.md)
   Vertical view positions of an expanded Live Activity that appears in the Dynamic Island.
-- [struct DynamicIslandExpandedContentBuilder](dynamicislandexpandedcontentbuilder.md)
+- [struct DynamicIslandExpandedContentBuilder](./dynamicislandexpandedcontentbuilder.md)
   A result builder that constructs the content of an expanded Live Activity in the Dynamic Island.
 
 

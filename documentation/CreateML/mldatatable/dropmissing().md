@@ -1,7 +1,8 @@
 # dropMissing()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a subset of the table by removing any row missing one or more values.
 
@@ -25,11 +26,12 @@ A new data table.
 
 ## See Also
 
-- [func dropDuplicates() -> MLDataTable](mldatatable/dropduplicates.md)
+### Discarding rows
+- [func dropDuplicates() -> MLDataTable](./dropduplicates%28%29.md)
   Creates a subset of the table by removing all duplicate rows.
-- [func exclude<T>(T..., of: String) -> MLDataTable](mldatatable/exclude(_:of:).md)
+- [func exclude<T>(T..., of: String) -> MLDataTable](./exclude%28_,of%29.md)
   Creates a subset of the table by excluding the rows that contain any of the given values in the given column.
-- [func randomSample(by: Double, seed: Int) -> MLDataTable](mldatatable/randomsample(by:seed:).md)
+- [func randomSample(by: Double, seed: Int) -> MLDataTable](./randomsample%28by,seed%29.md)
   Creates a subset of the table by randomly selecting the given proportion of rows.
 
 

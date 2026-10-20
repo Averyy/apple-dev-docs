@@ -1,7 +1,8 @@
 # EncodingError
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that occurs during the encoding of a value.
 
@@ -23,32 +24,33 @@ enum EncodingError
 ## Topics
 
 ### Structures
-- [EncodingError.Context](encodingerror/context.md)
+- [EncodingError.Context](./encodingerror/context.md)
   The context in which the error occurred.
 ### Enumeration Cases
-- [case invalidValue(Any, EncodingError.Context)](encodingerror/invalidvalue(_:_:).md)
+- [case invalidValue(Any, EncodingError.Context)](./encodingerror/invalidvalue%28_,_%29.md)
   An indication that an encoder or its containers could not encode the given value.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](encodingerror/customdebugstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./encodingerror/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [Error](error.md)
-- [Escapable](escapable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [Error](./error.md)
+- [Escapable](./escapable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Encoder](encoder.md)
+### Encoders and Decoders
+- [protocol Encoder](./encoder.md)
   A type that can encode values into a native format for external representation.
-- [protocol Decoder](decoder.md)
+- [protocol Decoder](./decoder.md)
   A type that can decode values from a native format into in-memory representations.
-- [enum DecodingError](decodingerror.md)
+- [enum DecodingError](./decodingerror.md)
   An error that occurs during the decoding of a value.
 
 

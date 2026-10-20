@@ -1,14 +1,15 @@
 # EMBEDDED_RADIO_RECEIVER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_RADIO_RECEIVER = 0x0710
 ```
 

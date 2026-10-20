@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 static func + (lhs: Self.Stride, rhs: Self) -> Self
 ```
+
+Available when `Self` conforms to `_Pointer`.
 
 
 ---

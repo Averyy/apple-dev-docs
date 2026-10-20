@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kModeSenseParameterHeader10_LongLBABit](1645308-anonymous/kmodesenseparameterheader10_longlbabit.md)
-- [kModeSenseParameterHeader10_LongLBAMask](1645308-anonymous/kmodesenseparameterheader10_longlbamask.md)
+- [kModeSenseParameterHeader10_LongLBABit](./api-1645308-anonymous/kmodesenseparameterheader10_longlbabit.md)
+- [kModeSenseParameterHeader10_LongLBAMask](./api-1645308-anonymous/kmodesenseparameterheader10_longlbamask.md)
 
 
 ---

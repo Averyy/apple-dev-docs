@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The message to encode in the Aztec barcode.
@@ -20,13 +21,18 @@ The message to encode in the Aztec barcode.
 var message: Data { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSData * message;
+```
+
 ## See Also
 
-- [var compactStyle: Float](ciazteccodegenerator/compactstyle.md)
+### Instance Properties
+- [var compactStyle: Float](./compactstyle.md)
   A Boolean that specifies whether to force a compact style Aztec code.
-- [var correctionLevel: Float](ciazteccodegenerator/correctionlevel.md)
+- [var correctionLevel: Float](./correctionlevel.md)
   The Aztec error correction, a value from 5 to 95.
-- [var layers: Float](ciazteccodegenerator/layers.md)
+- [var layers: Float](./layers.md)
   The number of Aztec layers, a value from 1 to 32.
 
 

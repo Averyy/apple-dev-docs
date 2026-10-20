@@ -1,7 +1,8 @@
 # GetTokenResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The get token response details.
 
@@ -14,7 +15,7 @@ The get token response details.
 
 ## Declaration
 
-```swift
+```
 object GetTokenResponse
 ```
 
@@ -24,7 +25,8 @@ object GetTokenResponse
 
 ## See Also
 
-- [object GetTokenRequest](gettokenrequest.md)
+### Requests and responses
+- [object GetTokenRequest](./gettokenrequest.md)
   The get token request details.
 
 

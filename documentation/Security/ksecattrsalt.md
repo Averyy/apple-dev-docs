@@ -1,7 +1,8 @@
 # kSecAttrSalt
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the salt to use for this item.
 
@@ -14,9 +15,13 @@ A key whose value indicates the salt to use for this item.
 let kSecAttrSalt: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrSalt;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) that indicates the salt to use with this cryptographic key.
+The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) that indicates the salt to use with this cryptographic key.
 
 
 ---

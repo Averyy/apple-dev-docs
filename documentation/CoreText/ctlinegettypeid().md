@@ -1,7 +1,8 @@
 # CTLineGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier of the line object.
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier of the line object.
 
 ```swift
 func CTLineGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTLineGetTypeID();
 ```
 
 

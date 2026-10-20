@@ -1,17 +1,22 @@
 # setDelegate(_:withConfiguration:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows an object to register itself as client of the L2CAP channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setDelegate(_ channelDelegate: Any!, withConfiguration channelConfiguration: [AnyHashable : Any]!) -> IOReturn
+```
+
+```objc
+- (IOReturn) setDelegate:(id) channelDelegate withConfiguration:(NSDictionary *) channelConfiguration;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # CMSEncoderAddSigners(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies signers of the message.
 
@@ -14,15 +15,19 @@ Specifies signers of the message.
 func CMSEncoderAddSigners(_ cmsEncoder: CMSEncoder, _ signerOrArray: CFTypeRef) -> OSStatus
 ```
 
+```c
+OSStatus CMSEncoderAddSigners(CMSEncoderRef cmsEncoder, CFTypeRef signerOrArray);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
 Call this function only if the message is to be signed. You can call this function more than once for the same message.
 
-If you do call this function, you must call it before the first call to the [`CMSEncoderUpdateContent(_:_:_:)`](cmsencoderupdatecontent(_:_:_:).md) function.
+If you do call this function, you must call it before the first call to the [`CMSEncoderUpdateContent(_:_:_:)`](./cmsencoderupdatecontent%28_,_,_%29.md) function.
 
 ## Parameters
 
@@ -31,13 +36,14 @@ If you do call this function, you must call it before the first call to the [`CM
 
 ## See Also
 
-- [func CMSEncoderUpdateContent(CMSEncoder, UnsafeRawPointer, Int) -> OSStatus](cmsencoderupdatecontent(_:_:_:).md)
+### Related Documentation
+- [func CMSEncoderUpdateContent(CMSEncoder, UnsafeRawPointer, Int) -> OSStatus](./cmsencoderupdatecontent%28_,_,_%29.md)
   Feeds content bytes into the encoder.
-- [func CMSEncoderCopySigners(CMSEncoder, UnsafeMutablePointer<CFArray?>) -> OSStatus](cmsencodercopysigners(_:_:).md)
+- [func CMSEncoderCopySigners(CMSEncoder, UnsafeMutablePointer<CFArray?>) -> OSStatus](./cmsencodercopysigners%28_,_%29.md)
   Obtains the array of signers specified with the `CMSEncoderAddSigners` function.
-- [func CMSEncoderCreate(UnsafeMutablePointer<CMSEncoder?>) -> OSStatus](cmsencodercreate(_:).md)
+- [func CMSEncoderCreate(UnsafeMutablePointer<CMSEncoder?>) -> OSStatus](./cmsencodercreate%28_%29.md)
   Creates a CMSEncoder reference.
-- [func CMSDecoderCopySignerStatus(CMSDecoder, Int, CFTypeRef, Bool, UnsafeMutablePointer<CMSSignerStatus>?, UnsafeMutablePointer<SecTrust?>?, UnsafeMutablePointer<OSStatus>?) -> OSStatus](cmsdecodercopysignerstatus(_:_:_:_:_:_:_:).md)
+- [func CMSDecoderCopySignerStatus(CMSDecoder, Int, CFTypeRef, Bool, UnsafeMutablePointer<CMSSignerStatus>?, UnsafeMutablePointer<SecTrust?>?, UnsafeMutablePointer<OSStatus>?) -> OSStatus](./cmsdecodercopysignerstatus%28_,_,_,_,_,_,_%29.md)
   Obtains the status of a CMS message’s signature.
 
 

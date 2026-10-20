@@ -1,7 +1,8 @@
 # UITrackingLayoutGuide
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layout guide that automatically activates and deactivates layout constraints depending on its proximity to edges.
 
@@ -18,44 +19,49 @@ A layout guide that automatically activates and deactivates layout constraints d
 class UITrackingLayoutGuide
 ```
 
+```objc
+@interface UITrackingLayoutGuide : UILayoutGuide
+```
+
 ## Topics
 
 ### Configuring automatic constraint activation
-- [func setConstraints([NSLayoutConstraint], activeWhenNearEdge: NSDirectionalRectEdge)](uitrackinglayoutguide/setconstraints(_:activewhennearedge:).md)
+- [func setConstraints([NSLayoutConstraint], activeWhenNearEdge: NSDirectionalRectEdge)](./uitrackinglayoutguide/setconstraints%28_,activewhennearedge%29.md)
   Configures the tracking layout guide to automatically activate and deactivate constraints when the guide is close to the given edge.
-- [func setConstraints([NSLayoutConstraint], activeWhenAwayFrom: NSDirectionalRectEdge)](uitrackinglayoutguide/setconstraints(_:activewhenawayfrom:).md)
+- [func setConstraints([NSLayoutConstraint], activeWhenAwayFrom: NSDirectionalRectEdge)](./uitrackinglayoutguide/setconstraints%28_,activewhenawayfrom%29.md)
   Configures the tracking layout guide to automatically activate and deactivate constraints when the guide is away from the given edge.
-- [func constraints(activeWhenNearEdge: NSDirectionalRectEdge) -> [NSLayoutConstraint]](uitrackinglayoutguide/constraints(activewhennearedge:).md)
+- [func constraints(activeWhenNearEdge: NSDirectionalRectEdge) -> [NSLayoutConstraint]](./uitrackinglayoutguide/constraints%28activewhennearedge%29.md)
   Returns the constraints that the tracking layout guide activates when it’s near the given edge, and deactivates when it’s away from the given edge.
-- [func constraints(activeWhenAwayFrom: NSDirectionalRectEdge) -> [NSLayoutConstraint]](uitrackinglayoutguide/constraints(activewhenawayfrom:).md)
+- [func constraints(activeWhenAwayFrom: NSDirectionalRectEdge) -> [NSLayoutConstraint]](./uitrackinglayoutguide/constraints%28activewhenawayfrom%29.md)
   Returns the constraints that the tracking layout guide activates when it’s away from the given edge, and deactivates when it’s near the edge.
 ### Tracking constraints
-- [func removeAllTrackedConstraints()](uitrackinglayoutguide/removealltrackedconstraints.md)
+- [func removeAllTrackedConstraints()](./uitrackinglayoutguide/removealltrackedconstraints%28%29.md)
   Stops the layout guide from tracking any constraints.
 
 ## Relationships
 
 ### Inherits From
-- [UILayoutGuide](uilayoutguide.md)
+- [UILayoutGuide](./uilayoutguide.md)
 ### Inherited By
-- [UIKeyboardLayoutGuide](uikeyboardlayoutguide.md)
+- [UIKeyboardLayoutGuide](./uikeyboardlayoutguide.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIPopoverPresentationControllerSourceItem](./uipopoverpresentationcontrollersourceitem.md)
 
 ## See Also
 
-- [Adjusting your layout with keyboard layout guide](adjusting-your-layout-with-keyboard-layout-guide.md)
+### Keyboard layout
+- [Adjusting your layout with keyboard layout guide](./adjusting-your-layout-with-keyboard-layout-guide.md)
   Respond dynamically to keyboard movement by using the tracking features of the keyboard layout guide.
-- [class UIKeyboardLayoutGuide](uikeyboardlayoutguide.md)
+- [class UIKeyboardLayoutGuide](./uikeyboardlayoutguide.md)
   A layout guide that represents the space the keyboard occupies in your app’s layout.
 
 

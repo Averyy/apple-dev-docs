@@ -1,7 +1,8 @@
 # init(identifier:remotePid:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a remote element in the hosting process.
 
@@ -14,6 +15,10 @@ Initializes a remote element in the hosting process.
 
 ```swift
 init(identifier: String, remotePid: pid_t)
+```
+
+```objc
+- (id) initWithIdentifier:(NSString *) identifier remotePid:(pid_t) remotePid;
 ```
 
 ## Parameters

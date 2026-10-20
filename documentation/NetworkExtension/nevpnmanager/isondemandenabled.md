@@ -1,7 +1,8 @@
 # isOnDemandEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean used to toggle the Connect On Demand capability.
 
@@ -19,25 +20,30 @@ A Boolean used to toggle the Connect On Demand capability.
 var isOnDemandEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isOnDemandEnabled) BOOL onDemandEnabled;
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isEnabled: Bool](nevpnmanager/isenabled.md)
+### Accessing VPN configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean used to toggle the enabled state of the VPN configuration.
-- [var protocolConfiguration: NEVPNProtocol?](nevpnmanager/protocolconfiguration.md)
-  An [`NEVPNProtocol`](nevpnprotocol.md) object containing the configuration settings of the VPN tunneling protocol.
-- [var `protocol`: NEVPNProtocol?](nevpnmanager/protocol.md)
+- [var protocolConfiguration: NEVPNProtocol?](./protocolconfiguration.md)
+  An [`NEVPNProtocol`](../nevpnprotocol.md) object containing the configuration settings of the VPN tunneling protocol.
+- [var `protocol`: NEVPNProtocol?](./protocol.md)
   An `NEVPNProtocol` object containing the configuration settings of the VPN tunneling protocol.
-- [var localizedDescription: String?](nevpnmanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string containing the display name of the VPN configuration.
-- [var onDemandRules: [NEOnDemandRule]?](nevpnmanager/ondemandrules.md)
+- [var onDemandRules: [NEOnDemandRule]?](./ondemandrules.md)
   An ordered list of Connect On Demand rules.
 
 

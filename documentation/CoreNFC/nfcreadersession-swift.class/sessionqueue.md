@@ -1,7 +1,8 @@
 # sessionQueue
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which the reader session delegate callbacks and completion block handlers are dispatched.
 
@@ -16,9 +17,14 @@ The queue on which the reader session delegate callbacks and completion block ha
 var sessionQueue: dispatch_queue_t { get }
 ```
 
+```objc
+@property (nonatomic, readonly) dispatch_queue_t sessionQueue;
+```
+
 ## See Also
 
-- [var delegate: AnyObject?](nfcreadersession-swift.class/delegate.md)
+### Working with a Session
+- [var delegate: AnyObject?](./delegate.md)
   The delegate of the reader session.
 
 

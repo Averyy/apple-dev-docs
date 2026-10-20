@@ -1,7 +1,8 @@
 # QueueIdentifier
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A stable identifier for a playback queue.
 
@@ -10,17 +11,24 @@ A stable identifier for a playback queue.
 
 ## Declaration
 
-```swift
+```
 string QueueIdentifier
 ```
 
+
+
+**Maximum Length**: `1024`
+
+**Minimum Length**: `1`
+
 ## See Also
 
-- [object Queue](queue.md)
+### Creating or Updating a Playback Queue
+- [object Queue](./queue.md)
   A sequence of media content for playback, with links to the previous and next segments of a full playback queue.
-- [object QueueInsertPointer](queueinsertpointer.md)
+- [object QueueInsertPointer](./queueinsertpointer.md)
   Instructions for editing the current playback queue.
-- [object QueuePlayPointer](queueplaypointer.md)
+- [object QueuePlayPointer](./queueplaypointer.md)
   A position within a playback queue.
 
 

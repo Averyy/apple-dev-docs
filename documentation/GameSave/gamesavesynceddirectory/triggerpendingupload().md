@@ -1,7 +1,8 @@
 # triggerPendingUpload()
 
 **Framework**: GameSave  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers an upload of the directory for any changes that were pending.
 
@@ -24,7 +25,8 @@ func triggerPendingUpload() async -> Bool
 
 ## See Also
 
-- [func close()](gamesavesynceddirectory/close.md)
+### Finishing with a directory
+- [func close()](./close%28%29.md)
   Closes the directory, and resumes syncing the directory to the cloud.
 
 

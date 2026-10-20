@@ -1,16 +1,17 @@
 # +(_:_:)
 
 **Framework**: Dispatch  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ func + (time: DispatchWallTime, seconds: Double) -> DispatchWallTime
 
 ## See Also
 
-- [func + (DispatchWallTime, DispatchTimeInterval) -> DispatchWallTime](+(_:_:)-8ylhk.md)
-- [func - (DispatchWallTime, Double) -> DispatchWallTime](-(_:_:)-6jk71.md)
-- [func - (DispatchWallTime, DispatchTimeInterval) -> DispatchWallTime](-(_:_:)-50bxr.md)
+### Operator Functions
+- [func + (DispatchWallTime, DispatchTimeInterval) -> DispatchWallTime](./plus%28_,_%29-8ylhk.md)
+- [func - (DispatchWallTime, Double) -> DispatchWallTime](./minus%28_,_%29-6jk71.md)
+- [func - (DispatchWallTime, DispatchTimeInterval) -> DispatchWallTime](./minus%28_,_%29-50bxr.md)
 
 
 ---

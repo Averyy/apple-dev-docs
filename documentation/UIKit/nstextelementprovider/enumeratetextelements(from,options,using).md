@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Enumerates text elements starting at the text location you provide.
@@ -19,6 +20,10 @@ Enumerates text elements starting at the text location you provide.
 func enumerateTextElements(from textLocation: (any NSTextLocation)?, options: NSTextContentManager.EnumerationOptions = [], using block: (NSTextElement) -> Bool) -> (any NSTextLocation)?
 ```
 
+```objc
+- (id<NSTextLocation>) enumerateTextElementsFromLocation:(id<NSTextLocation>) textLocation options:(NSTextContentManagerEnumerationOptions) options usingBlock:(BOOL (^)(NSTextElement *element)) block;
+```
+
 #### Return Value
 
 An `NSTextLocation`.
@@ -33,17 +38,18 @@ Returning `NO` or `false` from block breaks out of the enumeration.
 
 ## Parameters
 
-- `textLocation`: The [`NSTextLocation`](nstextlocation.md) at which to start the enumeration.
+- `textLocation`: The [`NSTextLocation`](../nstextlocation.md) at which to start the enumeration.
 - `options`: One of the possible `NSTextElementProviderEnumerationOptions` directions.
 - `block`: A block you use to evaluate whether to continue the enumeration or tell the method to stop. Return `false` to end the enumeration process.
 
 ## See Also
 
-- [NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions.md)
+### Accessing and updating the text
+- [NSTextLayoutFragment.EnumerationOptions](../nstextlayoutfragment/enumerationoptions.md)
   Values that describe options for enumerating text layout fragments.
-- [func location(any NSTextLocation, offsetBy: Int) -> (any NSTextLocation)?](nstextelementprovider/location(_:offsetby:).md)
+- [func location(any NSTextLocation, offsetBy: Int) -> (any NSTextLocation)?](./location%28_,offsetby%29.md)
   Returns a new location from location with offset you provide.
-- [func replaceContents(in: NSTextRange, with: [NSTextElement]?)](nstextelementprovider/replacecontents(in:with:).md)
+- [func replaceContents(in: NSTextRange, with: [NSTextElement]?)](./replacecontents%28in,with%29.md)
   Replaces the characters specified by range with the text elements you provide.
 
 

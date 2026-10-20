@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a multipolyline object using the provided polylines.
 
@@ -20,9 +21,13 @@ Creates a multipolyline object using the provided polylines.
 init(_ polylines: [MKPolyline])
 ```
 
+```objc
+- (instancetype) initWithPolylines:(NSArray<MKPolyline *> *) polylines;
+```
+
 ## Parameters
 
-- `polylines`: An array of [`MKPolyline`](mkpolyline.md) objects to initialize the object with.
+- `polylines`: An array of [`MKPolyline`](../mkpolyline.md) objects to initialize the object with.
 
 
 ---

@@ -1,7 +1,8 @@
 # functionID
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vehicle-specific code that identifies which feature you want to control.
 

@@ -1,7 +1,8 @@
 # kIOUSB30HubPortStatusCodeStandard
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The hub standard status code.
 
@@ -10,7 +11,7 @@ The hub standard status code.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubPortStatusCodeStandard = 0
 ```
 

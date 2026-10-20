@@ -1,7 +1,8 @@
 # consuming(_:startingAt:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 
@@ -19,6 +20,8 @@ Process the input string within the specified bounds, beginning at the given ind
 ```swift
 func consuming(_ input: String, startingAt index: String.Index, in bounds: Range<String.Index>) throws -> (upperBound: String.Index, output: Value)?
 ```
+
+Available when `Value` conforms to `BinaryInteger`.
 
 #### Return Value
 

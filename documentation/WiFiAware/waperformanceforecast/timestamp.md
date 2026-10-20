@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the forecast was generated.
 

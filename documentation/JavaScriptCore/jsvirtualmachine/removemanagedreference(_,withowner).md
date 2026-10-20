@@ -1,7 +1,8 @@
 # removeManagedReference(_:withOwner:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the JavaScriptCore virtual machine that a previously registered object relationship no longer exists.
 
@@ -19,9 +20,13 @@ Notifies the JavaScriptCore virtual machine that a previously registered object 
 func removeManagedReference(_ object: Any!, withOwner owner: Any!)
 ```
 
+```objc
+- (void) removeManagedReference:(id) object withOwner:(id) owner;
+```
+
 #### Discussion
 
-Use this method to deregister object relationships recorded using the [`addManagedReference(_:withOwner:)`](jsvirtualmachine/addmanagedreference(_:withowner:).md) method.
+Use this method to deregister object relationships recorded using the [`addManagedReference(_:withOwner:)`](./addmanagedreference%28_,withowner%29.md) method.
 
 The JavaScript garbage collector continues to scan any references that were reported to it until you use this method to remove those references.
 
@@ -32,7 +37,8 @@ The JavaScript garbage collector continues to scan any references that were repo
 
 ## See Also
 
-- [func addManagedReference(Any!, withOwner: Any!)](jsvirtualmachine/addmanagedreference(_:withowner:).md)
+### Managing Memory for Bridged Values
+- [func addManagedReference(Any!, withOwner: Any!)](./addmanagedreference%28_,withowner%29.md)
   Notifies the JavaScriptCore virtual machine of an external object relationship.
 
 

@@ -1,7 +1,8 @@
 # memoryPresent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt was made to supply “precious” data for memory that is already present in a memory object.
 

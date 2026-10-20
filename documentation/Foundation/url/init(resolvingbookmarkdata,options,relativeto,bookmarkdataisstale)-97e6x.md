@@ -1,7 +1,8 @@
 # init(resolvingBookmarkData:options:relativeTo:bookmarkDataIsStale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a URL that refers to a location specified by resolving bookmark data.
 
@@ -22,13 +23,14 @@ init?(resolvingBookmarkData data: Data, options: URL.BookmarkResolutionOptions =
 
 ## See Also
 
-- [init?(string: String)](url/init(string:).md)
+### Creating a URL from a string
+- [init?(string: String)](./init%28string%29.md)
   Creates a URL instance from the provided string.
-- [init?(string: String, encodingInvalidCharacters: Bool)](url/init(string:encodinginvalidcharacters:).md)
+- [init?(string: String, encodingInvalidCharacters: Bool)](./init%28string,encodinginvalidcharacters%29.md)
   Creates a URL instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
-- [init?(string: String, relativeTo: URL?)](url/init(string:relativeto:).md)
+- [init?(string: String, relativeTo: URL?)](./init%28string,relativeto%29.md)
   Creates a URL instance from the provided string, relative to another URL.
-- [init(resolvingBookmarkData: Data, options: URL.BookmarkResolutionOptions, relativeTo: URL?, bookmarkDataIsStale: inout Bool) throws](url/init(resolvingbookmarkdata:options:relativeto:bookmarkdataisstale:)-3ic6f.md)
+- [init(resolvingBookmarkData: Data, options: URL.BookmarkResolutionOptions, relativeTo: URL?, bookmarkDataIsStale: inout Bool) throws](./init%28resolvingbookmarkdata,options,relativeto,bookmarkdataisstale%29-3ic6f.md)
   Creates a URL that refers to a location specified by resolving bookmark data.
 
 

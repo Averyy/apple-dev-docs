@@ -1,7 +1,8 @@
 # TranslationUIProviderSelectedTextScene
 
 **Framework**: TranslationUIProvider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The specific app extension scene that this extension provides.
 
@@ -20,20 +21,21 @@ The specific app extension scene that this extension provides.
 ## Topics
 
 ### Initializers
-- [init(content: (any TranslationUIProviderContext) -> Content)](translationuiproviderselectedtextscene/init(content:).md)
+- [init(content: (any TranslationUIProviderContext) -> Content)](./translationuiproviderselectedtextscene/init%28content%29.md)
   Creates the scene to translate the user’s selected text, with the provided View content.
 
 ## Relationships
 
 ### Conforms To
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TranslationUIProviderExtensionScene](translationuiproviderextensionscene.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TranslationUIProviderExtensionScene](./translationuiproviderextensionscene.md)
 
 ## See Also
 
-- [struct TranslationProviderUIExtensionConfiguration](translationprovideruiextensionconfiguration.md)
+### Configuration and text selection
+- [struct TranslationProviderUIExtensionConfiguration](./translationprovideruiextensionconfiguration.md)
   The type for a translation UI provider extension’s configuration object.
 
 

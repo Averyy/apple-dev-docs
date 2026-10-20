@@ -1,28 +1,30 @@
 # IOUserClientAsyncArgumentsArray
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t[16] IOUserClientAsyncArgumentsArray;
 ```
 
 ## See Also
 
-- [AsyncCompletion](iouserclient/asynccompletion.md)
+### Communicating with the Client
+- [AsyncCompletion](./iouserclient/asynccompletion.md)
   Send asynchronous arguments to a completion supplied by ExternalMethod().
-- [KernelCompletion](iouserclient/kernelcompletion.md)
-- [Arguments Array Maximum](3325601-arguments_array_maximum.md)
-- [IOUserClientAsyncReferenceArray](iouserclientasyncreferencearray.md)
-- [Reference Array Maximum](3325602-reference_array_maximum.md)
+- [KernelCompletion](./iouserclient/kernelcompletion.md)
+- [Arguments Array Maximum](./api-3325601-arguments_array_maximum.md)
+- [IOUserClientAsyncReferenceArray](./iouserclientasyncreferencearray.md)
+- [Reference Array Maximum](./api-3325602-reference_array_maximum.md)
 
 
 ---

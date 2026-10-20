@@ -1,7 +1,8 @@
 # firstPicked
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a file is autopicked by Photos to represent the burst.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether a file is autopicked by Photos to represe
 var firstPicked: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL firstPicked;
+```
+
 ## See Also
 
-- [var burstUUID: String?](iccamerafile/burstuuid.md)
+### Inspecting a File in a Burst
+- [var burstUUID: String?](./burstuuid.md)
   The burst UUID of the file if it is in a burst.
-- [var burstFavorite: Bool](iccamerafile/burstfavorite.md)
+- [var burstFavorite: Bool](./burstfavorite.md)
   A Boolean value that indicates this file is the burst favorite in a burst.
-- [var burstPicked: Bool](iccamerafile/burstpicked.md)
+- [var burstPicked: Bool](./burstpicked.md)
   A Boolean value that indicates whether this file is user picked in a burst.
 
 

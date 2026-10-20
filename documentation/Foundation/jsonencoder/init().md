@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new, reusable JSON encoder with the default formatting settings and encoding strategies.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [func encode<T>(T) throws -> Data](jsonencoder/encode(_:).md)
+### First Steps
+- [func encode<T>(T) throws -> Data](./encode%28_%29.md)
   Returns a JSON-encoded representation of the value you supply.
 
 

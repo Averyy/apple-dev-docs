@@ -1,7 +1,8 @@
 # init(upstream:predicate:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a publisher that publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
 

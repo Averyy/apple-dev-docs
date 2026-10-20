@@ -1,7 +1,8 @@
 # openWindow
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A window presentation action stored in a view’s environment.
 
@@ -20,7 +21,7 @@ var openWindow: OpenWindowAction { get }
 
 #### Discussion
 
-Use the `openWindow` environment value to get an [`OpenWindowAction`](openwindowaction.md) instance for a given [`Environment`](environment.md). Then call the instance to open a window. You call the instance directly because it defines a [`callAsFunction(id:)`](openwindowaction/callasfunction(id:).md) method that Swift calls when you call the instance.
+Use the `openWindow` environment value to get an [`OpenWindowAction`](../openwindowaction.md) instance for a given [`Environment`](../environment.md). Then call the instance to open a window. You call the instance directly because it defines a [`callAsFunction(id:)`](../openwindowaction/callasfunction%28id%29.md) method that Swift calls when you call the instance.
 
 For example, you can define a button that opens a new mail viewer window:
 
@@ -49,21 +50,22 @@ You indicate which scene to open by providing one of the following:
 
 - A string identifier that you pass through the `id` parameter, as in the above example.
 - A `value` parameter that has a type that matches the type that you specify in the scene’s initializer.
-- Both an identifier and a value. This enables you to define multiple window groups that take input values of the same type like a [`UUID`](https://developer.apple.com/documentation/foundation/uuid).
+- Both an identifier and a value. This enables you to define multiple window groups that take input values of the same type like a [`UUID`](../../Foundation/uuid.md).
 
-Use the first option to target either a [`WindowGroup`](windowgroup.md) or a [`Window`](window.md) scene in your app that has a matching identifier. For a `WindowGroup`, the system creates a new window for the group. If the window group presents data, the system provides the default value or `nil` to the window’s root view. If the targeted scene is a `Window`, the system orders it to the front.
+Use the first option to target either a [`WindowGroup`](../windowgroup.md) or a [`Window`](../window.md) scene in your app that has a matching identifier. For a `WindowGroup`, the system creates a new window for the group. If the window group presents data, the system provides the default value or `nil` to the window’s root view. If the targeted scene is a `Window`, the system orders it to the front.
 
 Use the other two options to target a `WindowGroup` and provide a value to present. If the interface already has a window from the group that’s presenting the specified value, the system brings the window to the front. Otherwise, the system creates a new window and passes a binding to the specified value.
 
 ## See Also
 
-- [Presenting windows and spaces](../visionos/presenting-windows-and-spaces.md)
+### Opening windows
+- [Presenting windows and spaces](../../visionOS/presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
-- [var supportsMultipleWindows: Bool](environmentvalues/supportsmultiplewindows.md)
+- [var supportsMultipleWindows: Bool](./supportsmultiplewindows.md)
   A Boolean value that indicates whether the current platform supports opening multiple windows.
-- [struct OpenWindowAction](openwindowaction.md)
+- [struct OpenWindowAction](../openwindowaction.md)
   An action that presents a window.
-- [struct PushWindowAction](pushwindowaction.md)
+- [struct PushWindowAction](../pushwindowaction.md)
   An action that opens the requested window in place of the window the action is called from.
 
 

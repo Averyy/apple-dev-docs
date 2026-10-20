@@ -1,7 +1,8 @@
 # APActivationPayloadError.Code
 
 **Framework**: App Clips  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that an App Clip activation payload returns.
 
@@ -16,31 +17,36 @@ Error codes that an App Clip activation payload returns.
 enum Code
 ```
 
+```c
+enum APActivationPayloadErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error types
-- [APActivationPayloadError.Code.doesNotMatch](apactivationpayloaderror/code/doesnotmatch.md)
+- [APActivationPayloadError.Code.doesNotMatch](./code/doesnotmatch.md)
   The provided URL doesn’t match the registered App Clip URL.
-- [APActivationPayloadError.Code.disallowed](apactivationpayloaderror/code/disallowed.md)
+- [APActivationPayloadError.Code.disallowed](./code/disallowed.md)
   The user denied location access, or the source of the App Clip invocation wasn’t from an NFC tag or visual code.
 ### Initializers
-- [init?(rawValue: Int)](apactivationpayloaderror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let APActivationPayloadErrorDomain: String](apactivationpayloaderrordomain.md)
+### Understanding errors
+- [let APActivationPayloadErrorDomain: String](../apactivationpayloaderrordomain.md)
   A string that identifies the activation payload’s error domain.
-- [struct APActivationPayloadError](apactivationpayloaderror.md)
+- [struct APActivationPayloadError](../apactivationpayloaderror.md)
   An error that an App Clip activation payload returns.
 
 

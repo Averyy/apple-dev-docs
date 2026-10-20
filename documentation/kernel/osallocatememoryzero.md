@@ -1,7 +1,8 @@
 # OSAllocateMemoryZero
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 const allocate_memory_zero_t OSAllocateMemoryZero;
 ```
 

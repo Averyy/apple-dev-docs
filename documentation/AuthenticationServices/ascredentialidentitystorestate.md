@@ -1,7 +1,8 @@
 # ASCredentialIdentityStoreState
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of the state of a credential identity store.
 
@@ -18,29 +19,34 @@ A representation of the state of a credential identity store.
 class ASCredentialIdentityStoreState
 ```
 
+```objc
+@interface ASCredentialIdentityStoreState : NSObject
+```
+
 ## Topics
 
 ### Checking the state
-- [var isEnabled: Bool](ascredentialidentitystorestate/isenabled.md)
+- [var isEnabled: Bool](./ascredentialidentitystorestate/isenabled.md)
   A Boolean value indicating whether the credential identity store is enabled.
-- [var supportsIncrementalUpdates: Bool](ascredentialidentitystorestate/supportsincrementalupdates.md)
+- [var supportsIncrementalUpdates: Bool](./ascredentialidentitystorestate/supportsincrementalupdates.md)
   A Boolean value indicating whether the credential identity store supports incremental updates.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func getState((ASCredentialIdentityStoreState) -> Void)](ascredentialidentitystore/getstate(_:).md)
+### Checking the state of the store
+- [func getState((ASCredentialIdentityStoreState) -> Void)](./ascredentialidentitystore/getstate%28_%29.md)
   Gets the state of the credential identity store.
 
 

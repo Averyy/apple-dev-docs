@@ -1,7 +1,8 @@
 # kSecUseKeychain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a keychain to operate on.
 
@@ -14,9 +15,13 @@ A key whose value is a keychain to operate on.
 let kSecUseKeychain: CFString
 ```
 
+```c
+extern CFStringRef const kSecUseKeychain;
+```
+
 #### Discussion
 
-Specifies a [`SecKeychain`](seckeychain.md) object that references the keychain to which [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) should add the provided items.
+Specifies a [`SecKeychain`](./seckeychain.md) object that references the keychain to which [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) should add the provided items.
 
 
 ---

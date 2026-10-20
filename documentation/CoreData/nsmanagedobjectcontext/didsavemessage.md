@@ -1,7 +1,8 @@
 # NSManagedObjectContext.DidSaveMessage
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Posted after a main queue context saves.
 
@@ -27,22 +28,22 @@ Only use this message type for contexts with `NSMainQueueConcurrencyType`.
 ## Topics
 
 ### Instance Properties
-- [let context: NSManagedObjectContext](nsmanagedobjectcontext/didsavemessage/context.md)
-- [var deleted: Set<NSManagedObject>](nsmanagedobjectcontext/didsavemessage/deleted.md)
+- [let context: NSManagedObjectContext](./didsavemessage/context.md)
+- [var deleted: Set<NSManagedObject>](./didsavemessage/deleted.md)
   Managed objects that were deleted during this save.
-- [let historyToken: NSPersistentHistoryToken?](nsmanagedobjectcontext/didsavemessage/historytoken.md)
-- [var inserted: Set<NSManagedObject>](nsmanagedobjectcontext/didsavemessage/inserted.md)
+- [let historyToken: NSPersistentHistoryToken?](./didsavemessage/historytoken.md)
+- [var inserted: Set<NSManagedObject>](./didsavemessage/inserted.md)
   Managed objects that were inserted during this save.
-- [let queryGeneration: NSQueryGenerationToken?](nsmanagedobjectcontext/didsavemessage/querygeneration.md)
+- [let queryGeneration: NSQueryGenerationToken?](./didsavemessage/querygeneration.md)
   Query generation token after the save.
-- [var updated: Set<NSManagedObject>](nsmanagedobjectcontext/didsavemessage/updated.md)
+- [var updated: Set<NSManagedObject>](./didsavemessage/updated.md)
   Managed objects that were updated during this save.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

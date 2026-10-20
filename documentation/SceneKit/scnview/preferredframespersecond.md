@@ -1,23 +1,28 @@
 # preferredFramesPerSecond
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation frame rate that the view uses to render its scene.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var preferredFramesPerSecond: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSInteger preferredFramesPerSecond;
 ```
 
 #### Discussion
@@ -28,14 +33,15 @@ The default value is `60` frames per second.
 
 ## See Also
 
-- [var backgroundColor: NSColor](scnview/backgroundcolor.md)
+### Configuring a View
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The background color of the view.
-- [var rendersContinuously: Bool](scnview/renderscontinuously.md)
+- [var rendersContinuously: Bool](./renderscontinuously.md)
   A Boolean value that determines whether the view always renders at its preferred frame rate or only when its visible content changes.
-- [var antialiasingMode: SCNAntialiasingMode](scnview/antialiasingmode.md)
+- [var antialiasingMode: SCNAntialiasingMode](./antialiasingmode.md)
   The antialiasing mode used for rendering the view’s scene.
-- [enum SCNAntialiasingMode](scnantialiasingmode.md)
-  Modes for antialiased rendering of the view’s scene, used by the [`SCNView`](scnview.md) property.
+- [enum SCNAntialiasingMode](../scnantialiasingmode.md)
+  Modes for antialiased rendering of the view’s scene, used by the [`SCNView`](../scnview.md) property.
 
 
 ---

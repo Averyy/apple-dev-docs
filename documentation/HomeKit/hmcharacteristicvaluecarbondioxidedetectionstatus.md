@@ -1,7 +1,8 @@
 # HMCharacteristicValueCarbonDioxideDetectionStatus
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the state of carbon dioxide level detection.
 
@@ -19,25 +20,29 @@ Possible values for the state of carbon dioxide level detection.
 enum HMCharacteristicValueCarbonDioxideDetectionStatus
 ```
 
+```c
+enum HMCharacteristicValueCarbonDioxideDetectionStatus : NSInteger;
+```
+
 ## Topics
 
 ### Carbon Dioxide Levels
-- [HMCharacteristicValueCarbonDioxideDetectionStatus.notDetected](hmcharacteristicvaluecarbondioxidedetectionstatus/notdetected.md)
+- [HMCharacteristicValueCarbonDioxideDetectionStatus.notDetected](./hmcharacteristicvaluecarbondioxidedetectionstatus/notdetected.md)
   Carbon dioxide levels are normal.
-- [HMCharacteristicValueCarbonDioxideDetectionStatus.detected](hmcharacteristicvaluecarbondioxidedetectionstatus/detected.md)
+- [HMCharacteristicValueCarbonDioxideDetectionStatus.detected](./hmcharacteristicvaluecarbondioxidedetectionstatus/detected.md)
   Abnormally high levels of carbon dioxide are present.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecarbondioxidedetectionstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecarbondioxidedetectionstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

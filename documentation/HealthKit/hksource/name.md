@@ -1,7 +1,8 @@
 # name
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source’s name.
 
@@ -19,13 +20,18 @@ The source’s name.
 var name: String { get }
 ```
 
+```objc
+@property (strong, readonly) NSString * name;
+```
+
 #### Discussion
 
 For apps, this property holds a localized name for the app. For supported Bluetooth LE devices, this property holds whatever string the device reports as its name.
 
 ## See Also
 
-- [var bundleIdentifier: String](hksource/bundleidentifier.md)
+### Getting Property Data
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The source’s bundle identifier.
 
 

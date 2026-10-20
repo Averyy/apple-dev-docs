@@ -1,7 +1,8 @@
 # GetVppAssetResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response with the asset.
 
@@ -10,14 +11,14 @@ The response with the asset.
 
 ## Declaration
 
-```swift
+```
 object GetVppAssetResponse
 ```
 
 ## Properties
 
 - `assets` ([VppAsset]): The list of assets managed by the provided `sToken`.
-- `clientContext` (string): The value currently associated with the provided `sToken`. This field is only included in the response when a value is set with the [`Client Configuration`](client-configuration.md) endpoint.
+- `clientContext` (string): The value currently associated with the provided `sToken`. This field is only included in the response when a value is set with the [`Client Configuration`](./client-configuration.md) endpoint.
 - `errorMessage` (string): The human-readable explanation of the error.
 - `errorNumber` (int32): The numeric code of the error.
 - `expirationMillis` (int64): The UNIX epoch timestamp, in milliseconds, when the account’s `sToken` or password expires (whichever is earlier).
@@ -28,7 +29,8 @@ object GetVppAssetResponse
 
 ## See Also
 
-- [object GetVppAssetRequest](getvppassetrequest.md)
+### Request and Response
+- [object GetVppAssetRequest](./getvppassetrequest.md)
   The request for an asset.
 
 

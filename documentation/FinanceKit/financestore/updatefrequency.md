@@ -1,7 +1,8 @@
 # FinanceStore.UpdateFrequency
 
 **Framework**: FinanceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Frequencies of background delivery updates.
 
@@ -25,32 +26,33 @@ These represent the expected minimum interval between updates delivered to a `Ba
 ## Topics
 
 ### Enumeration Cases
-- [FinanceStore.UpdateFrequency.daily](financestore/updatefrequency/daily.md)
+- [FinanceStore.UpdateFrequency.daily](./updatefrequency/daily.md)
   Get notified within a day of data updating.
-- [FinanceStore.UpdateFrequency.hourly](financestore/updatefrequency/hourly.md)
+- [FinanceStore.UpdateFrequency.hourly](./updatefrequency/hourly.md)
   Get notified within an hour of data updating.
-- [FinanceStore.UpdateFrequency.weekly](financestore/updatefrequency/weekly.md)
+- [FinanceStore.UpdateFrequency.weekly](./updatefrequency/weekly.md)
   Get notified within a week of data updating.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FinanceStore.ContainsOrderResult](financestore/containsorderresult.md)
+### Enumerations
+- [FinanceStore.ContainsOrderResult](./containsorderresult.md)
   Result type for queries against the finance store’s orders.
-- [FinanceStore.DataType](financestore/datatype.md)
+- [FinanceStore.DataType](./datatype.md)
   Values that describe the kinds of data in the finance store.
-- [FinanceStore.SaveOrderResult](financestore/saveorderresult.md)
+- [FinanceStore.SaveOrderResult](./saveorderresult.md)
   Result type for the finance store’s save order method.
-- [FinanceStore.BackgroundDataType](financestore/backgrounddatatype.md)
+- [FinanceStore.BackgroundDataType](./backgrounddatatype.md)
   Types of data in the finance store supported by background delivery.
 
 

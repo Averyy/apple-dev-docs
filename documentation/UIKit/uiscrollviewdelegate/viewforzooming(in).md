@@ -1,7 +1,8 @@
 # viewForZooming(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the view to scale when zooming is about to occur in the scroll view.
 
@@ -9,7 +10,7 @@ Asks the delegate for the view to scale when zooming is about to occur in the sc
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Asks the delegate for the view to scale when zooming is about to occur in the sc
 optional func viewForZooming(in scrollView: UIScrollView) -> UIView?
 ```
 
+```objc
+- (UIView *) viewForZoomingInScrollView:(UIScrollView *) scrollView;
+```
+
 #### Return Value
 
-A [`UIView`](uiview.md) object that will be scaled as a result of the zooming gesture. Return `nil` if you don’t want zooming to occur.
+A [`UIView`](../uiview.md) object that will be scaled as a result of the zooming gesture. Return `nil` if you don’t want zooming to occur.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ A [`UIView`](uiview.md) object that will be scaled as a result of the zooming ge
 
 ## See Also
 
-- [func scrollViewWillBeginZooming(UIScrollView, with: UIView?)](uiscrollviewdelegate/scrollviewwillbeginzooming(_:with:).md)
+### Managing zooming
+- [func scrollViewWillBeginZooming(UIScrollView, with: UIView?)](./scrollviewwillbeginzooming%28_,with%29.md)
   Tells the delegate that zooming of the content in the scroll view is about to commence.
-- [func scrollViewDidEndZooming(UIScrollView, with: UIView?, atScale: CGFloat)](uiscrollviewdelegate/scrollviewdidendzooming(_:with:atscale:).md)
+- [func scrollViewDidEndZooming(UIScrollView, with: UIView?, atScale: CGFloat)](./scrollviewdidendzooming%28_,with,atscale%29.md)
   Tells the delegate when zooming of the content in the scroll view completed.
-- [func scrollViewDidZoom(UIScrollView)](uiscrollviewdelegate/scrollviewdidzoom(_:).md)
+- [func scrollViewDidZoom(UIScrollView)](./scrollviewdidzoom%28_%29.md)
   Tells the delegate that the scroll view’s zoom factor changed.
 
 

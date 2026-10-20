@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique identifier for this content.

@@ -1,7 +1,8 @@
 # storagePressure
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A condition that allows purging under device storage pressure.
 
@@ -24,7 +25,8 @@ This option allows the system to delete a specialized asset when the device runs
 
 ## See Also
 
-- [static let sourceAssetChangedOrDeleted: AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.struct/sourceassetchangedordeleted.md)
+### Identifying purge conditions
+- [static let sourceAssetChangedOrDeleted: AIModelCache.Policy.PurgeConditions](./sourceassetchangedordeleted.md)
   A condition that allows purging when the source model changes or no longer exists.
 
 

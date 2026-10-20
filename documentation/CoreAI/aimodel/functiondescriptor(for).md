@@ -1,7 +1,8 @@
 # functionDescriptor(for:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a descriptor for the specified function.
 
@@ -32,8 +33,9 @@ Use the descriptor to inspect the function’s inputs, outputs, and state names 
 
 ## See Also
 
-- [func loadFunction(named: String) throws -> InferenceFunction?](aimodel/loadfunction(named:).md)
-- [var functionNames: [String]](aimodel/functionnames.md)
+### Loading inference functions
+- [func loadFunction(named: String) throws -> InferenceFunction?](./loadfunction%28named%29.md)
+- [var functionNames: [String]](./functionnames.md)
   The names of the inference functions in this model.
 
 

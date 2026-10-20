@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a fragmented movie from the array of movies being minded.
 
@@ -19,15 +20,20 @@ Removes a fragmented movie from the array of movies being minded.
 func remove(_ movie: AVFragmentedMovie)
 ```
 
+```objc
+- (void) removeFragmentedMovie:(AVFragmentedMovie *) movie;
+```
+
 ## Parameters
 
 - `movie`: The fragmented movie removed from the minder.
 
 ## See Also
 
-- [var movies: [AVFragmentedMovie]](avfragmentedmovieminder/movies.md)
+### Adding and removing movies
+- [var movies: [AVFragmentedMovie]](./movies.md)
   An array containing the fragmented movie objects being minded.
-- [func add(AVFragmentedMovie)](avfragmentedmovieminder/add(_:).md)
+- [func add(AVFragmentedMovie)](./add%28_%29.md)
   Adds a fragmented movie to the array of movies being minded.
 
 

@@ -1,7 +1,8 @@
 # originPosition
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Position of {0, 0} coordinates in the image
 

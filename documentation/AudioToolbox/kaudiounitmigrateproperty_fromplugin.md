@@ -1,10 +1,11 @@
 # kAudioUnitMigrateProperty_FromPlugin
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kAudioUnitMigrateProperty_FromPlugin: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitMigrateProperty_FromPlugin
+```
+
 ## See Also
 
-- [var kAudioUnitMigrateProperty_OldAutomation: AudioUnitPropertyID](kaudiounitmigrateproperty_oldautomation.md)
+### Constants
+- [var kAudioUnitMigrateProperty_OldAutomation: AudioUnitPropertyID](./kaudiounitmigrateproperty_oldautomation.md)
 
 
 ---

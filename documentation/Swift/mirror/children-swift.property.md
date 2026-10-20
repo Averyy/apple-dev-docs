@@ -1,7 +1,8 @@
 # children
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of `Child` elements describing the structure of the reflected subject.
 

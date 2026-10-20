@@ -1,7 +1,8 @@
 # relativeTime
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start time of the event, relative to other events in the same pattern.
 
@@ -19,17 +20,22 @@ The start time of the event, relative to other events in the same pattern.
 var relativeTime: TimeInterval { get set }
 ```
 
+```objc
+@property (readwrite) NSTimeInterval relativeTime;
+```
+
 #### Discussion
 
-A [`relativeTime`](chhapticparametercurve/relativetime.md) of zero indicates immediate playback. Another haptic event starting one second later would have a [`relativeTime`](chhapticevent/relativetime.md) of `1`.
+A [`relativeTime`](../chhapticparametercurve/relativetime.md) of zero indicates immediate playback. Another haptic event starting one second later would have a [`relativeTime`](./relativetime.md) of `1`.
 
 ## See Also
 
-- [var eventParameters: [CHHapticEventParameter]](chhapticevent/eventparameters.md)
+### Configuring Haptic Events
+- [var eventParameters: [CHHapticEventParameter]](./eventparameters.md)
   An array of event parameters, possibly empty.
-- [CHHapticEvent.ParameterID](chhapticevent/parameterid.md)
+- [CHHapticEvent.ParameterID](./parameterid.md)
   An identifier for an event parameter.
-- [var duration: TimeInterval](chhapticevent/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration of the haptic event.
 
 

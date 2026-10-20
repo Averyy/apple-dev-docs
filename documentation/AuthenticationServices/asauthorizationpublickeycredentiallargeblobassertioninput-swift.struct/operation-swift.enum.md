@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type to represent the possible operations of a large binary object assertion input.
 
@@ -21,14 +22,15 @@ enum Operation
 ## Topics
 
 ### Input operations
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation.read](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.enum/read.md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation.read](./operation-swift.enum/read.md)
   A value to represent the read operation.
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation.write(_:)](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.enum/write(_:).md)
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation.write(_:)](./operation-swift.enum/write%28_%29.md)
   A value to represent the write operation.
 
 ## See Also
 
-- [var operation: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.property.md)
+### Inspecting the operation
+- [var operation: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation](./operation-swift.property.md)
   The reading or writing operation the input performs.
 
 

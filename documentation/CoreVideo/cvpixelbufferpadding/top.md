@@ -1,7 +1,8 @@
 # top
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixel row padding at the top
 

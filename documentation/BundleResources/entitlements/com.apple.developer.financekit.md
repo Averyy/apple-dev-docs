@@ -1,7 +1,8 @@
 # FinanceKit
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that allows an app to access financial data in FinanceKit.
 
@@ -10,17 +11,20 @@ An entitlement that allows an app to access financial data in FinanceKit.
 - iPadOS 13.0+
 - macOS 10.15+
 
+## Details
+
+- **Name**: `com.apple.developer.financekit`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `true`
 
 #### Discussion
 
-Add this entitlement to your app to use [`FinanceKit`](https://developer.apple.com/documentation/financekit) to read financial data, and read and write order data. You need to get consent from the person using your app to access data in FinanceKit.
+Add this entitlement to your app to use [FinanceKit](../../FinanceKit/FinanceKit.md) to read financial data, and read and write order data. You need to get consent from the person using your app to access data in FinanceKit.
 
-To request this entitlement for your app, [`fill out the request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/financekit/).
+To request this entitlement for your app, [fill out the request form](https://developer.apple.com/contact/request/financekit/).
 
 
 ---

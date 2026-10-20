@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.load_image
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.Buffer.load_image.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.Buffer.load_image
-
- Table of contents 
-
-## Contents
-
-# mlx.data.Buffer.load_image
-
 **Buffer.load_image(*self: mlx.data._c.Buffer*, *key: str*, *prefix: str = ''*, *info: bool = False*, *format: str = 'RGB'*, *from_memory: bool = False*, *output_key: str = ''*) → mlx.data._c.Buffer**
 : Load an image file.
 Loads an image from an image file on disk or in memory. It can also
@@ -44,5 +27,3 @@ space (e.g. YCbCr) (default: RGB).
 instead of the file name. (default: False)
 **output_key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The key to store the result in. If it is an empty
 string then overwrite the input. (default: ‘’)
-
-** Contents

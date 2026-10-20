@@ -1,15 +1,16 @@
 # metaParameter
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 static var metaParameter: AudioSettingsFlags { get }
 ```
 
+```c
+kAudioSettingsFlags_MetaParameter
+```
+
 ## See Also
 
-- [static var expertParameter: AudioSettingsFlags](audiosettingsflags/expertparameter.md)
-- [static var invisibleParameter: AudioSettingsFlags](audiosettingsflags/invisibleparameter.md)
-- [static var userInterfaceParameter: AudioSettingsFlags](audiosettingsflags/userinterfaceparameter.md)
+### Constants
+- [static var expertParameter: AudioSettingsFlags](./expertparameter.md)
+- [static var invisibleParameter: AudioSettingsFlags](./invisibleparameter.md)
+- [static var userInterfaceParameter: AudioSettingsFlags](./userinterfaceparameter.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SectionCollection
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque collection representing the sections of view.
 
@@ -24,23 +25,24 @@ struct SectionCollection
 
 Sections are constructed lazily, on demand, so access only as much of this collection as is necessary to create the resulting content.
 
-You can get access to a view’s [`SectionCollection`](sectioncollection.md) by using the `Group/init(sectionsOf:transform:)` initializer.
+You can get access to a view’s [`SectionCollection`](./sectioncollection.md) by using the `Group/init(sectionsOf:transform:)` initializer.
 
 Any content of the given view which is not explicitly specified as a section is grouped with its sibling content to form implicit sections, meaning the minimum number of sections in a `SectionCollection` is one.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct Section](section.md)
+### Organizing views into sections
+- [struct Section](./section.md)
   A container view that you can use to add hierarchy within certain views.
-- [struct SectionConfiguration](sectionconfiguration.md)
+- [struct SectionConfiguration](./sectionconfiguration.md)
   Specifies the contents of a section.
 
 

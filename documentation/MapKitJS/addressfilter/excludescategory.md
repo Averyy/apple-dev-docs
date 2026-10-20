@@ -1,7 +1,8 @@
 # excludesCategory(category)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value that indicates whether to exclude a category from a search.
 
@@ -10,13 +11,14 @@ A Boolean value that indicates whether to exclude a category from a search.
 
 ## Declaration
 
-```swift
+```
 excludesCategory(category: AddressCategory): boolean;
 ```
 
 ## See Also
 
-- [includesCategory(category)](addressfilter/includescategory.md)
+### Querying filter behavior
+- [includesCategory(category)](./includescategory.md)
   A Boolean value that indicates whether to include a category from a search.
 
 

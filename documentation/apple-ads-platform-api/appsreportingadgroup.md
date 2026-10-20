@@ -1,7 +1,8 @@
 # AppsReportingAdGroup
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Ad group metadata for apps report rows.
 
@@ -10,7 +11,7 @@ Ad group metadata for apps report rows.
 
 ## Declaration
 
-```swift
+```
 object AppsReportingAdGroup
 ```
 
@@ -68,11 +69,11 @@ The response populates the dimension fields (`countryOrRegion`, `deviceClass`, `
 ## Topics
 
 ### Type Aliases
-- [type AppsReportingAdGroup.PricingModel](appsreportingadgroup/pricingmodel-data.typealias.md)
+- [type AppsReportingAdGroup.PricingModel](./appsreportingadgroup/pricingmodel-data.typealias.md)
   The pricing model of the ad group at report time.
-- [type AppsReportingAdGroup.Status](appsreportingadgroup/status-data.typealias.md)
+- [type AppsReportingAdGroup.Status](./appsreportingadgroup/status-data.typealias.md)
   Advertiser-configurable serving state of the ad group at report time.
-- [type AppsReportingAdGroup.SystemStatus](appsreportingadgroup/systemstatus-data.typealias.md)
+- [type AppsReportingAdGroup.SystemStatus](./appsreportingadgroup/systemstatus-data.typealias.md)
   System-evaluated delivery state of the ad group at report time.
 
 ## Properties
@@ -90,15 +91,19 @@ The response populates the dimension fields (`countryOrRegion`, `deviceClass`, `
 - `automatedKeywordsRequired` (boolean): Whether automated keywords are required for this ad group.
 - `pricingModel` (AppsReportingAdGroup.PricingModel): Possible values: `CPA`, `CPM`, `CPT`.
 - `displayStatus` (string): System-computed, rolled-up delivery state combining ad group and campaign conditions.
+
+  **Allowed Values**: `CAMPAIGN_ON_HOLD`, `DELETED`, `LIMITED`, `ON_HOLD`, `PAUSED`, `PROCESSING`, `RUNNING`
 - `modificationTime` (date-time): Timestamp of the ad group’s last modification (ISO 8601).
 - `creationTime` (date-time): Timestamp when the ad group was created (ISO 8601).
 - `startTime` (date-time): Ad group start time.
 - `endTime` (date-time): Ad group end time.
-- `campaign` (ReportingCampaignMin): See [`ReportingCampaignMin`](reportingcampaignmin.md) for details.
-- `cpaCap` (ReportingMoney): CPA cap amount. See [`ReportingMoney`](reportingmoney.md) for details.
-- `bidStrategy` (ReportingBidStrategy): See [`ReportingBidStrategy`](reportingbidstrategy.md) for details.
+- `campaign` (ReportingCampaignMin): See [`ReportingCampaignMin`](./reportingcampaignmin.md) for details.
+- `cpaCap` (ReportingMoney): CPA cap amount. See [`ReportingMoney`](./reportingmoney.md) for details.
+- `bidStrategy` (ReportingBidStrategy): See [`ReportingBidStrategy`](./reportingbidstrategy.md) for details.
 - `countryOrRegion` (string): Country or region groupBy dimension value.
 - `deviceClass` (string): Device class groupBy dimension value.
+
+  **Allowed Values**: `IPHONE`, `IPAD`
 - `gender` (string): Gender groupBy dimension value.
 - `ageRange` (string): Age range groupBy dimension value.
 - `locality` (string): Locality groupBy dimension value.
@@ -107,35 +112,35 @@ The response populates the dimension fields (`countryOrRegion`, `deviceClass`, `
 
 ## See Also
 
-- [object AppsReportingRequest](appsreportingrequest.md)
+- [object AppsReportingRequest](./appsreportingrequest.md)
   Request body for apps reporting queries.
-- [object AppsReportingCampaign](appsreportingcampaign.md)
+- [object AppsReportingCampaign](./appsreportingcampaign.md)
   Campaign metadata for apps report rows.
-- [object AppsReportingAd](appsreportingad.md)
+- [object AppsReportingAd](./appsreportingad.md)
   Ad metadata for apps report rows.
-- [object AppsReportingCreative](appsreportingcreative.md)
+- [object AppsReportingCreative](./appsreportingcreative.md)
   Creative metadata for apps ads.
-- [object AppsCampaignReportResponse](appscampaignreportresponse.md)
+- [object AppsCampaignReportResponse](./appscampaignreportresponse.md)
   The top-level response envelope for apps campaign-level reports.
-- [object AppsCampaignReportRow](appscampaignreportrow.md)
+- [object AppsCampaignReportRow](./appscampaignreportrow.md)
   A single row in an apps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object AppsCampaignReportSummary](appscampaignreportsummary.md)
+- [object AppsCampaignReportSummary](./appscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps campaign report.
-- [object AppsCampaignResultContainer](appscampaignresultcontainer.md)
+- [object AppsCampaignResultContainer](./appscampaignresultcontainer.md)
   Wraps the array of Apps campaign report rows along with a grand-total summary.
-- [object AppsAdGroupReportResponse](appsadgroupreportresponse.md)
+- [object AppsAdGroupReportResponse](./appsadgroupreportresponse.md)
   The top-level response envelope for apps ad group reports.
-- [object AppsAdGroupReportRow](appsadgroupreportrow.md)
+- [object AppsAdGroupReportRow](./appsadgroupreportrow.md)
   A single row in an Apps ad group report, containing ad group metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdGroupReportSummary](appsadgroupreportsummary.md)
+- [object AppsAdGroupReportSummary](./appsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad group report.
-- [object AppsAdGroupResultContainer](appsadgroupresultcontainer.md)
+- [object AppsAdGroupResultContainer](./appsadgroupresultcontainer.md)
   Wraps the array of Apps ad group report rows along with a grand-total summary.
-- [object AppsAdReportResponse](appsadreportresponse.md)
+- [object AppsAdReportResponse](./appsadreportresponse.md)
   The top-level response envelope for apps ad-level reports.
-- [object AppsAdReportRow](appsadreportrow.md)
+- [object AppsAdReportRow](./appsadreportrow.md)
   A single row in an Apps ad-level report, containing ad metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdReportSummary](appsadreportsummary.md)
+- [object AppsAdReportSummary](./appsadreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad-level report.
 
 

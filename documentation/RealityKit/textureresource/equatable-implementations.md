@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (TextureResource, TextureResource) -> Bool](textureresource/==(_:_:).md)
+- [static func == (TextureResource, TextureResource) -> Bool](./eqeq%28_,_%29.md)
   Indicates whether two texture resources are equal.
 
 

@@ -1,7 +1,8 @@
 # VNGenerateOpticalFlowRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that generates directional change vectors for each pixel in the targeted image.
 
@@ -19,6 +20,10 @@ An object that generates directional change vectors for each pixel in the target
 class VNGenerateOpticalFlowRequest
 ```
 
+```objc
+@interface VNGenerateOpticalFlowRequest : VNTargetedImageRequest
+```
+
 #### Overview
 
 This request operates at a pixel level, so both images need to have the same dimensions to successfully perform the analysis. Setting a region of interest limits the region in which the analysis occurs. However, the system reports the resulting observation at full resolution.
@@ -28,39 +33,40 @@ Optical flow requests are resource-intensive, so create only one request at a ti
 ## Topics
 
 ### Configuring the Request
-- [var computationAccuracy: VNGenerateOpticalFlowRequest.ComputationAccuracy](vngenerateopticalflowrequest/computationaccuracy-swift.property.md)
+- [var computationAccuracy: VNGenerateOpticalFlowRequest.ComputationAccuracy](./vngenerateopticalflowrequest/computationaccuracy-swift.property.md)
   The accuracy level for computing optical flow.
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy](vngenerateopticalflowrequest/computationaccuracy-swift.enum.md)
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy](./vngenerateopticalflowrequest/computationaccuracy-swift.enum.md)
   The supported optical flow accuracy levels.
-- [var outputPixelFormat: OSType](vngenerateopticalflowrequest/outputpixelformat.md)
+- [var outputPixelFormat: OSType](./vngenerateopticalflowrequest/outputpixelformat.md)
   The output buffer’s pixel format.
-- [var keepNetworkOutput: Bool](vngenerateopticalflowrequest/keepnetworkoutput.md)
+- [var keepNetworkOutput: Bool](./vngenerateopticalflowrequest/keepnetworkoutput.md)
   A Boolean value that indicates whether to keep the raw pixel buffer coming from the machine learning network.
 ### Accessing the Results
-- [var results: [VNPixelBufferObservation]?](vngenerateopticalflowrequest/results.md)
+- [var results: [VNPixelBufferObservation]?](./vngenerateopticalflowrequest/results.md)
   The results of the request to generate optical flow.
 ### Identifying Request Revisions
-- [var VNGenerateOpticalFlowRequestRevision2: Int](vngenerateopticalflowrequestrevision2.md)
+- [var VNGenerateOpticalFlowRequestRevision2: Int](./vngenerateopticalflowrequestrevision2.md)
   A constant for specifying revision 2 of the optical flow generation request.
-- [var VNGenerateOpticalFlowRequestRevision1: Int](vngenerateopticalflowrequestrevision1.md)
+- [var VNGenerateOpticalFlowRequestRevision1: Int](./vngenerateopticalflowrequestrevision1.md)
   A constant for specifying revision 1 of the optical flow generation request.
 
 ## Relationships
 
 ### Inherits From
-- [VNTargetedImageRequest](vntargetedimagerequest.md)
+- [VNTargetedImageRequest](./vntargetedimagerequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VNTrackOpticalFlowRequest](vntrackopticalflowrequest.md)
+### Optical flow
+- [class VNTrackOpticalFlowRequest](./vntrackopticalflowrequest.md)
   An object that determines the direction change of vectors for each pixel from a previous to current image.
 
 

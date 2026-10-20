@@ -1,7 +1,8 @@
 # StatusManagementClientCapabilitiesCapabilitiesObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains the client’s protocol capabilities. These typically only change when the device upgrades its software. An implicit status subscription for this status item is always present, so the client always reports changes to the server.
 
@@ -16,16 +17,16 @@ An object that contains the client’s protocol capabilities. These typically on
 
 ## Declaration
 
-```swift
+```
 object StatusManagementClientCapabilitiesCapabilitiesObject
 ```
 
 ## Topics
 
 ### Objects
-- [object StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject](statusmanagementclientcapabilitiescapabilities_supportedfeaturesobject.md)
+- [object StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject](./statusmanagementclientcapabilitiescapabilities_supportedfeaturesobject.md)
   A set of optional protocol features that the client supports. Each object’s key represents a feature, and the property value represents the feature’s associated parameters.
-- [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject](statusmanagementclientcapabilitiescapabilities_supportedpayloadsobject.md)
+- [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject](./statusmanagementclientcapabilitiescapabilities_supportedpayloadsobject.md)
   A set of declaration and status items that the client supports.
 
 ## Properties

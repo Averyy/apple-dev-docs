@@ -1,14 +1,17 @@
 # show(from:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays an action sheet that originates from the specified tab bar.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 8.3
+- iPadOS 2.0+ - Deprecated in 8.3
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIActionSheet`](../uiactionsheet.md).
 
 ## Declaration
 
@@ -16,11 +19,15 @@ Displays an action sheet that originates from the specified tab bar.
 func show(from view: UITabBar)
 ```
 
+```objc
+- (void) showFromTabBar:(UITabBar *) view;
+```
+
 #### Discussion
 
 The appearance of the action sheet is animated.
 
-On iPad, this method centers the action sheet in the middle of the screen. Generally, if you want to present an action sheet relative to a tab bar in an iPad application, you should use the [`show(from:in:animated:)`](uiactionsheet/show(from:in:animated:).md) method instead.
+On iPad, this method centers the action sheet in the middle of the screen. Generally, if you want to present an action sheet relative to a tab bar in an iPad application, you should use the [`show(from:in:animated:)`](./show%28from,in,animated%29.md) method instead.
 
 ## Parameters
 
@@ -28,13 +35,14 @@ On iPad, this method centers the action sheet in the middle of the screen. Gener
 
 ## See Also
 
-- [func show(from: UIToolbar)](uiactionsheet/show(from:)-1p4ap.md)
+### Presenting the action sheet
+- [func show(from: UIToolbar)](./show%28from%29-1p4ap.md)
   Displays an action sheet that originates from the specified toolbar.
-- [func show(in: UIView)](uiactionsheet/show(in:).md)
+- [func show(in: UIView)](./show%28in%29.md)
   Displays an action sheet that originates from the specified view.
-- [func show(from: UIBarButtonItem, animated: Bool)](uiactionsheet/show(from:animated:).md)
+- [func show(from: UIBarButtonItem, animated: Bool)](./show%28from,animated%29.md)
   Displays an action sheet that originates from the specified bar button item.
-- [func show(from: CGRect, in: UIView, animated: Bool)](uiactionsheet/show(from:in:animated:).md)
+- [func show(from: CGRect, in: UIView, animated: Bool)](./show%28from,in,animated%29.md)
   Displays an action sheet that originates from the specified view.
 
 

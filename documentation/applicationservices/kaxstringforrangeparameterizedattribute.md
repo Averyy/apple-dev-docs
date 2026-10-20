@@ -1,7 +1,8 @@
 # kAXStringForRangeParameterizedAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A substring of the text associated with this accessibility object that is specified by the given character range.
 
@@ -12,6 +13,10 @@ A substring of the text associated with this accessibility object that is specif
 
 ```swift
 var kAXStringForRangeParameterizedAttribute: String { get }
+```
+
+```c
+#define kAXStringForRangeParameterizedAttribute
 ```
 
 

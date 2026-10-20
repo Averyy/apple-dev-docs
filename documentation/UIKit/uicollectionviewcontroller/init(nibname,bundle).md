@@ -1,7 +1,8 @@
 # init(nibName:bundle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly initialized view controller with the nib file in the specified bundle.
 
@@ -9,7 +10,7 @@ Returns a newly initialized view controller with the nib file in the specified b
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,24 +19,29 @@ Returns a newly initialized view controller with the nib file in the specified b
 init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 ```
 
+```objc
+- (instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
+```
+
 #### Return Value
 
-A newly initialized [`UICollectionViewController`](uicollectionviewcontroller.md) object.
+A newly initialized [`UICollectionViewController`](../uicollectionviewcontroller.md) object.
 
 #### Discussion
 
-For more information on how to initialize a view controller from a nib file, see [`init(nibName:bundle:)`](uiviewcontroller/init(nibname:bundle:).md).
+For more information on how to initialize a view controller from a nib file, see [`init(nibName:bundle:)`](../uiviewcontroller/init%28nibname,bundle%29.md).
 
 ## Parameters
 
-- `nibNameOrNil`: The name of the nib file to associate with the view controller. The nib file name shouldn’t contain any leading path information. If you specify `nil`, the [`nibName`](uiviewcontroller/nibname.md) property is set to `nil`.
+- `nibNameOrNil`: The name of the nib file to associate with the view controller. The nib file name shouldn’t contain any leading path information. If you specify `nil`, the [`nibName`](../uiviewcontroller/nibname.md) property is set to `nil`.
 - `nibBundleOrNil`: The bundle in which to search for the nib file. This method looks for the nib file in the bundle’s language-specific project directories first, followed by the Resources directory.
 
 ## See Also
 
-- [init(collectionViewLayout: UICollectionViewLayout)](uicollectionviewcontroller/init(collectionviewlayout:).md)
+### Creating a collection view controller
+- [init(collectionViewLayout: UICollectionViewLayout)](./init%28collectionviewlayout%29.md)
   Initializes a collection view controller and configures the collection view with the provided layout.
-- [init?(coder: NSCoder)](uicollectionviewcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a collection view controller with the nib file in the specified bundle.
 
 

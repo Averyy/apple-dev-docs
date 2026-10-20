@@ -1,7 +1,8 @@
 # printInteractionControllerParentViewController(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a parent view controller for managing the printing-options view.
 
@@ -17,19 +18,23 @@ Returns a parent view controller for managing the printing-options view.
 optional func printInteractionControllerParentViewController(_ printInteractionController: UIPrintInteractionController) -> UIViewController?
 ```
 
+```objc
+- (UIViewController *) printInteractionControllerParentViewController:(UIPrintInteractionController *) printInteractionController;
+```
+
 #### Return Value
 
 The view controller that is to be the parent of the print-interaction controller managing the printing-options view. Return `nil` for the standard presentation behavior.
 
 #### Discussion
 
-This method allows an application to present the print-options view from a view controller of their own choosing. The parent view controller returned must be a [`UIViewController`](uiviewcontroller.md) object, such as a [`UINavigationController`](uinavigationcontroller.md) object or a generic view controller. A common strategy for embedding is to create a [`UINavigationController`](uinavigationcontroller.md) object as the content view controller ([`contentViewController`](uipopovercontroller/contentviewcontroller.md) property) of a [`UIPopoverController`](uipopovercontroller.md) object and return that. UIKit can push the returned view controller onto the stack if its parent is a navigation controller or present it modally if it isn’t.
+This method allows an application to present the print-options view from a view controller of their own choosing. The parent view controller returned must be a [`UIViewController`](../uiviewcontroller.md) object, such as a [`UINavigationController`](../uinavigationcontroller.md) object or a generic view controller. A common strategy for embedding is to create a [`UINavigationController`](../uinavigationcontroller.md) object as the content view controller ([`contentViewController`](../uipopovercontroller/contentviewcontroller.md) property) of a [`UIPopoverController`](../uipopovercontroller.md) object and return that. UIKit can push the returned view controller onto the stack if its parent is a navigation controller or present it modally if it isn’t.
 
-This method is invoked in any of the `present...` methods of the [`UIPrintInteractionController`](uiprintinteractioncontroller.md) class (for example, [`present(animated:completionHandler:)`](uiprintinteractioncontroller/present(animated:completionhandler:).md)).
+This method is invoked in any of the `present...` methods of the [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) class (for example, [`present(animated:completionHandler:)`](../uiprintinteractioncontroller/present%28animated,completionhandler%29.md)).
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) that is managing the print job.
 
 
 ---

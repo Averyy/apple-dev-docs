@@ -1,7 +1,8 @@
 # init(_:id:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a window with a localized title and an identifier.
 
@@ -14,6 +15,23 @@ Creates a window with a localized title and an identifier.
 ```swift
 @export(implementation)
 nonisolated init(_ titleResource: LocalizedStringResource, id: String, @ContentBuilder content: () -> Content)
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ title: Text, id: String, @ContentBuilder content: () -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, id: String, @ContentBuilder content: () -> Content)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, id: String, @ContentBuilder content: () -> Content) where S : StringProtocol
 ```
 
 #### Discussion

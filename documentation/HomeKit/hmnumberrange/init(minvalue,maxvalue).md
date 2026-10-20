@@ -1,7 +1,8 @@
 # init(minValue:maxValue:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new number range.
 
@@ -19,6 +20,10 @@ Creates a new number range.
 convenience init(minValue: NSNumber, maxValue: NSNumber)
 ```
 
+```objc
++ (instancetype) numberRangeWithMinValue:(NSNumber *) minValue maxValue:(NSNumber *) maxValue;
+```
+
 #### Return Value
 
 An initialized number range.
@@ -30,9 +35,10 @@ An initialized number range.
 
 ## See Also
 
-- [convenience init(minValue: NSNumber)](hmnumberrange/init(minvalue:).md)
+### Creating a number range
+- [convenience init(minValue: NSNumber)](./init%28minvalue%29.md)
   Creates an one-sided number range with a minimum value.
-- [convenience init(maxValue: NSNumber)](hmnumberrange/init(maxvalue:).md)
+- [convenience init(maxValue: NSNumber)](./init%28maxvalue%29.md)
   Creates a one-sided number range with a maximum value.
 
 

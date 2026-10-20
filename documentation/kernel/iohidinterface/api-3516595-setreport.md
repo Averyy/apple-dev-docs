@@ -1,14 +1,15 @@
 # setReport
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+ - Deprecated in 10.15.2
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setReport(IOMemoryDescriptor *report, IOHIDReportType reportType, UInt32 reportID, IOOptionBits options, UInt32 completionTimeout, CompletionAction *completion);
 ```
 

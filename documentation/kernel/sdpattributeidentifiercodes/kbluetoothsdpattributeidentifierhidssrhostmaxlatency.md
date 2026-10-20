@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierHIDSSRHostMaxLatency
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierHIDSSRHostMaxLatency = 0x020F
 ```
 

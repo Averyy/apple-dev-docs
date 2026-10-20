@@ -1,6 +1,7 @@
 # Enabling Password AutoFill on an HTML input element
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Make sure a web view or webpage provides the correct AutoFill suggestions.
 
@@ -41,7 +42,7 @@ Additionally, you can autocomplete security codes from single-factor SMS login f
 <input id="single-factor-code-text-field" autocomplete="one-time-code"/>
 ```
 
-For more information on how to enable Password AutoFill behavior in iOS apps, see [`Enabling Password AutoFill on a text input view`](enabling-password-autofill-on-a-text-input-view.md).
+For more information on how to enable Password AutoFill behavior in iOS apps, see [Enabling Password AutoFill on a text input view](./enabling-password-autofill-on-a-text-input-view.md).
 
 
 ---

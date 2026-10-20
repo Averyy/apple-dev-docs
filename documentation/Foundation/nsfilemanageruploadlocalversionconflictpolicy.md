@@ -1,7 +1,8 @@
 # NSFileManagerUploadLocalVersionConflictPolicy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The policies the file manager can apply to resolve conflicts when uploading a local version of a file.
 
@@ -18,41 +19,46 @@ The policies the file manager can apply to resolve conflicts when uploading a lo
 enum NSFileManagerUploadLocalVersionConflictPolicy
 ```
 
+```c
+enum NSFileManagerUploadLocalVersionConflictPolicy : NSInteger;
+```
+
 ## Topics
 
 ### Working with conflict policies
-- [NSFileManagerUploadLocalVersionConflictPolicy.conflictPolicyDefault](nsfilemanageruploadlocalversionconflictpolicy/conflictpolicydefault.md)
+- [NSFileManagerUploadLocalVersionConflictPolicy.conflictPolicyDefault](./nsfilemanageruploadlocalversionconflictpolicy/conflictpolicydefault.md)
   Resolves the conflict using the policy defined by the file provider.
-- [NSFileManagerUploadLocalVersionConflictPolicy.conflictPolicyFailOnConflict](nsfilemanageruploadlocalversionconflictpolicy/conflictpolicyfailonconflict.md)
+- [NSFileManagerUploadLocalVersionConflictPolicy.conflictPolicyFailOnConflict](./nsfilemanageruploadlocalversionconflictpolicy/conflictpolicyfailonconflict.md)
   Resolves the conflict by causing the upload to fail.
 ### Working with raw values
-- [init?(rawValue: Int)](nsfilemanageruploadlocalversionconflictpolicy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsfilemanageruploadlocalversionconflictpolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NSFileManagerSupportedSyncControls](nsfilemanagersupportedsynccontrols.md)
+### Controlling file provider synchronization
+- [struct NSFileManagerSupportedSyncControls](./nsfilemanagersupportedsynccontrols.md)
   An option set of the sync controls available for an item.
-- [func pauseSyncForUbiquitousItem(at: URL, completionHandler: ((any Error)?) -> Void)](filemanager/pausesyncforubiquitousitem(at:completionhandler:).md)
+- [func pauseSyncForUbiquitousItem(at: URL, completionHandler: ((any Error)?) -> Void)](./filemanager/pausesyncforubiquitousitem%28at,completionhandler%29.md)
   Asynchronously pauses sync of an item at the given URL.
-- [func resumeSyncForUbiquitousItem(at: URL, with: NSFileManagerResumeSyncBehavior, completionHandler: ((any Error)?) -> Void)](filemanager/resumesyncforubiquitousitem(at:with:completionhandler:).md)
+- [func resumeSyncForUbiquitousItem(at: URL, with: NSFileManagerResumeSyncBehavior, completionHandler: ((any Error)?) -> Void)](./filemanager/resumesyncforubiquitousitem%28at,with,completionhandler%29.md)
   Asynchronously resumes the sync on a paused item using the given resume behavior.
-- [enum NSFileManagerResumeSyncBehavior](nsfilemanagerresumesyncbehavior.md)
+- [enum NSFileManagerResumeSyncBehavior](./nsfilemanagerresumesyncbehavior.md)
   The behaviors the file manager can apply to resolve conflicts when resuming a sync.
-- [func fetchLatestRemoteVersionOfItem(at: URL, completionHandler: (NSFileVersion?, (any Error)?) -> Void)](filemanager/fetchlatestremoteversionofitem(at:completionhandler:).md)
+- [func fetchLatestRemoteVersionOfItem(at: URL, completionHandler: (NSFileVersion?, (any Error)?) -> Void)](./filemanager/fetchlatestremoteversionofitem%28at,completionhandler%29.md)
   Asynchronously fetches the latest remote version of a given item from the server.
-- [class NSFileVersion](nsfileversion.md)
+- [class NSFileVersion](./nsfileversion.md)
   A snapshot of a file at a specific point in time.
-- [func uploadLocalVersionOfUbiquitousItem(at: URL, withConflictResolutionPolicy: NSFileManagerUploadLocalVersionConflictPolicy, completionHandler: (NSFileVersion?, (any Error)?) -> Void)](filemanager/uploadlocalversionofubiquitousitem(at:withconflictresolutionpolicy:completionhandler:).md)
+- [func uploadLocalVersionOfUbiquitousItem(at: URL, withConflictResolutionPolicy: NSFileManagerUploadLocalVersionConflictPolicy, completionHandler: (NSFileVersion?, (any Error)?) -> Void)](./filemanager/uploadlocalversionofubiquitousitem%28at,withconflictresolutionpolicy,completionhandler%29.md)
   Asynchronously uploads the local version of the item using the provided conflict resolution policy.
 
 

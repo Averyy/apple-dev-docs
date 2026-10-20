@@ -1,7 +1,8 @@
 # CodeDirectoryHash
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A constraint that matches the hash of a code directory of a code file or of a running or launching process.
 
@@ -22,61 +23,62 @@ struct CodeDirectoryHash
 
 #### Overview
 
-In the context of [`ProcessCodeRequirement`](processcoderequirement.md) and [`LaunchCodeRequirement`](launchcoderequirement.md) this constraint matches the hash of the chosen code directory for the running process, or the process the system is launching.
+In the context of [`ProcessCodeRequirement`](./processcoderequirement.md) and [`LaunchCodeRequirement`](./launchcoderequirement.md) this constraint matches the hash of the chosen code directory for the running process, or the process the system is launching.
 
-In the context of [`OnDiskCodeRequirement`](ondiskcoderequirement.md) this constraint matches the hash of the code directory for the specified `SecStaticCodeRef` that best matches the current architecture. The best match is different for processes running on Intel and Apple silicon, including an Intel process running on Apple silicon with Rosetta. To reliably identify a code file using its code directory hash, use [`in(_:)`](codedirectoryhash/in(_:)-912dv.md) and supply a list of the known code directory hash values.
+In the context of [`OnDiskCodeRequirement`](./ondiskcoderequirement.md) this constraint matches the hash of the code directory for the specified `SecStaticCodeRef` that best matches the current architecture. The best match is different for processes running on Intel and Apple silicon, including an Intel process running on Apple silicon with Rosetta. To reliably identify a code file using its code directory hash, use [`in(_:)`](./codedirectoryhash/in%28_%29-912dv.md) and supply a list of the known code directory hash values.
 
 ## Topics
 
 ### Initializers
-- [init(Data)](codedirectoryhash/init(_:).md)
+- [init(Data)](./codedirectoryhash/init%28_%29.md)
   Match against a single code directory hash.
-- [init(from: any Decoder) throws](codedirectoryhash/init(from:).md)
+- [init(from: any Decoder) throws](./codedirectoryhash/init%28from%29.md)
   Create a new instance by decoding from the given decoder
 ### Instance Methods
-- [func encode(to: any Encoder) throws](codedirectoryhash/encode(to:).md)
+- [func encode(to: any Encoder) throws](./codedirectoryhash/encode%28to%29.md)
   Encodes this value into the given encoder
 ### Type Aliases
-- [CodeDirectoryHash.DataType](codedirectoryhash/datatype.md)
+- [CodeDirectoryHash.DataType](./codedirectoryhash/datatype.md)
   The basic input data type for this constraint: Data
-- [CodeDirectoryHash.OutType](codedirectoryhash/outtype.md)
-  The type of this constraint: [`CodeDirectoryHash`](codedirectoryhash.md)
+- [CodeDirectoryHash.OutType](./codedirectoryhash/outtype.md)
+  The type of this constraint: [`CodeDirectoryHash`](./codedirectoryhash.md)
 ### Type Methods
-- [static func `in`([CodeDirectoryHash.DataType]) -> CodeDirectoryHash.OutType](codedirectoryhash/in(_:)-1kiuo.md)
+- [static func `in`([CodeDirectoryHash.DataType]) -> CodeDirectoryHash.OutType](./codedirectoryhash/in%28_%29-1kiuo.md)
   Match against any of the code directory hashes in the provided list.
-- [static func `in`(CodeDirectoryHash.DataType...) -> CodeDirectoryHash.OutType](codedirectoryhash/in(_:)-912dv.md)
+- [static func `in`(CodeDirectoryHash.DataType...) -> CodeDirectoryHash.OutType](./codedirectoryhash/in%28_%29-912dv.md)
   Match against any of the code directory hashes in the provided list.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [LaunchConstraint](launchconstraint.md)
-- [OnDiskConstraint](ondiskconstraint.md)
-- [ProcessConstraint](processconstraint.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [LaunchConstraint](./launchconstraint.md)
+- [OnDiskConstraint](./ondiskconstraint.md)
+- [ProcessConstraint](./processconstraint.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class EntitlementsQuery](entitlementsquery.md)
+### Testing properties of executable code
+- [class EntitlementsQuery](./entitlementsquery.md)
   A constraint that tests values in the entitlements dictionary associated with a process or code file.
-- [struct InfoPlistHash](infoplisthash.md)
+- [struct InfoPlistHash](./infoplisthash.md)
   A constraint that tests the specified hash against the Information property list hash stored in the code signature of the process or code file.
-- [struct IsInitProcess](isinitprocess.md)
+- [struct IsInitProcess](./isinitprocess.md)
   A constraint that tests whether a process is the operating system’s initial process.
-- [struct IsMainBinary](ismainbinary.md)
+- [struct IsMainBinary](./ismainbinary.md)
   A constraint that tests whether a code file is a main binary.
-- [struct IsSIPProtected](issipprotected.md)
+- [struct IsSIPProtected](./issipprotected.md)
   A constraint that tests whether a code file or process is on a volume protected by System Integrity Protection (SIP).
-- [struct PlatformType](platformtype.md)
+- [struct PlatformType](./platformtype.md)
   A constraint that tests whether a code file or running process targets a given platform.
-- [struct SigningIdentifier](signingidentifier.md)
+- [struct SigningIdentifier](./signingidentifier.md)
   A constraint that tests whether the provided signing identifier matches the signature attached to the code.
-- [struct TeamIdentifier](teamidentifier.md)
+- [struct TeamIdentifier](./teamidentifier.md)
   A constraint that tests whether the provided team identifier matches the team identified in the code signature.
-- [struct ValidationCategory](validationcategory.md)
+- [struct ValidationCategory](./validationcategory.md)
   A constraint that tests whether a code file or running process is signed in a way that conforms to the specified validation category.
 
 

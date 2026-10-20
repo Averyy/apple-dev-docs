@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an affine transform matrix to the identity matrix.
 
@@ -15,9 +16,14 @@ Initializes an affine transform matrix to the identity matrix.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(transform: NSAffineTransform)](nsaffinetransform/init(transform:).md)
+### Creating an Affine Transform
+- [convenience init(transform: NSAffineTransform)](./init%28transform%29.md)
   Initializes the receiver’s matrix using another transform object.
 
 

@@ -1,7 +1,8 @@
 # NEAppPushProvider
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that creates and maintains a persistent network connection to a local push server.
 
@@ -17,23 +18,27 @@ An object that creates and maintains a persistent network connection to a local 
 class NEAppPushProvider
 ```
 
+```objc
+@interface NEAppPushProvider : NEProvider
+```
+
 ## Mentions
 
-- [Maintaining a Reliable Network Connection](maintaining-a-reliable-network-connection.md)
+- [Maintaining a Reliable Network Connection](./maintaining-a-reliable-network-connection.md)
 
 #### Overview
 
-Subclass [`NEAppPushProvider`](neapppushprovider.md) to provide the connection to your local push server. A [`NEAppPushManager`](neapppushmanager.md) creates instances of your provider class based on the [`providerBundleIdentifier`](neapppushmanager/providerbundleidentifier.md) in the manager’s configuration. The manager then calls methods on your provider to start and stop communication with the server, and periodically check the provider’s status. When your provider receives an incoming call from your server, call the provider’s [`reportIncomingCall(userInfo:)`](neapppushprovider/reportincomingcall(userinfo:).md) method to alert the manager’s [`delegate`](neapppushmanager/delegate.md).
+Subclass [`NEAppPushProvider`](./neapppushprovider.md) to provide the connection to your local push server. A [`NEAppPushManager`](./neapppushmanager.md) creates instances of your provider class based on the [`providerBundleIdentifier`](./neapppushmanager/providerbundleidentifier.md) in the manager’s configuration. The manager then calls methods on your provider to start and stop communication with the server, and periodically check the provider’s status. When your provider receives an incoming call from your server, call the provider’s [`reportIncomingCall(userInfo:)`](./neapppushprovider/reportincomingcall%28userinfo%29.md) method to alert the manager’s [`delegate`](./neapppushmanager/delegate.md).
 
 ##### Creating a Local Push Provider Extension
 
-Local Push Providers run as App Extensions for the `app-push-provider` extension point, which is a possible value the [`Network Extensions Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.networkextension).
+Local Push Providers run as App Extensions for the `app-push-provider` extension point, which is a possible value the [`Network Extensions Entitlement`](../BundleResources/entitlements/com.apple.developer.networking.networkextension.md).
 
 To create a Local Push Provider extension, first create a new App Extension target in your project.
 
-For an example of an Xcode build target for this app extension, see the [`Receiving Voice and Text Communications on a Local Network`](receiving-voice-and-text-communications-on-a-local-network.md) sample code project.
+For an example of an Xcode build target for this app extension, see the [Receiving Voice and Text Communications on a Local Network](./receiving-voice-and-text-communications-on-a-local-network.md) sample code project.
 
-Once you have an extension target, create a subclass of [`NEAppPushProvider`](neapppushprovider.md). Then set the `NSExtensionPrincipalClass` key in the extension’s `Info.plist` to the name of your subclass. Set the `NSExtensionPointIdentifier` key in the extension’s `Info.plist` to `com.apple.networkextension.app-push`, if it’s not set already.
+Once you have an extension target, create a subclass of [`NEAppPushProvider`](./neapppushprovider.md). Then set the `NSExtensionPrincipalClass` key in the extension’s `Info.plist` to the name of your subclass. Set the `NSExtensionPointIdentifier` key in the extension’s `Info.plist` to `com.apple.networkextension.app-push`, if it’s not set already.
 
 Here’s an example of the `NSExtension` dictionary in a Local Push Provider extension’s `Info.plist`:
 
@@ -53,45 +58,46 @@ Finally, add your Local Push Provider extension target to your app’s Embed App
 ## Topics
 
 ### Inspecting provider properties
-- [var providerConfiguration: [String : Any]?](neapppushprovider/providerconfiguration.md)
+- [var providerConfiguration: [String : Any]?](./neapppushprovider/providerconfiguration.md)
   A dictionary that contains current vendor-specific configuration parameters.
 ### Implementing provider life cycle
-- [func start()](neapppushprovider/start.md)
+- [func start()](./neapppushprovider/start%28%29.md)
   Indicates that the framework has started the provider.
-- [func start(completionHandler: ((any Error)?) -> Void)](neapppushprovider/start(completionhandler:).md)
+- [func start(completionHandler: ((any Error)?) -> Void)](./neapppushprovider/start%28completionhandler%29.md)
   Indicates that the framework has started the provider, and provides a completion handler for subclasses to signal their readiness.
-- [func stop(with: NEProviderStopReason, completionHandler: () -> Void)](neapppushprovider/stop(with:completionhandler:).md)
+- [func stop(with: NEProviderStopReason, completionHandler: () -> Void)](./neapppushprovider/stop%28with,completionhandler%29.md)
   Indicates that the framework needs to stop the provider.
-- [func handleTimerEvent()](neapppushprovider/handletimerevent.md)
+- [func handleTimerEvent()](./neapppushprovider/handletimerevent%28%29.md)
   Indicates a periodic status check from the framework to the provider.
 ### Receiving local events
-- [func reportIncomingCall(userInfo: [AnyHashable : Any])](neapppushprovider/reportincomingcall(userinfo:).md)
+- [func reportIncomingCall(userInfo: [AnyHashable : Any])](./neapppushprovider/reportincomingcall%28userinfo%29.md)
   Informs the manager about an incoming call.
-- [func reportPushToTalkMessage(userInfo: [AnyHashable : Any])](neapppushprovider/reportpushtotalkmessage(userinfo:).md)
+- [func reportPushToTalkMessage(userInfo: [AnyHashable : Any])](./neapppushprovider/reportpushtotalkmessage%28userinfo%29.md)
   Informs the manager about a push-to-talk message on the connection.
 ### Operating over Ethernet
-- [func unmatchEthernet()](neapppushprovider/unmatchethernet.md)
+- [func unmatchEthernet()](./neapppushprovider/unmatchethernet%28%29.md)
   Tells the framework not to use the provider with an active Ethernet connection.
 
 ## Relationships
 
 ### Inherits From
-- [NEProvider](neprovider.md)
+- [NEProvider](./neprovider.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEAppPushManager](neapppushmanager.md)
+### Essentials
+- [class NEAppPushManager](./neapppushmanager.md)
   An object that configures a push provider and manages its life cycle.
-- [Maintaining a Reliable Network Connection](maintaining-a-reliable-network-connection.md)
+- [Maintaining a Reliable Network Connection](./maintaining-a-reliable-network-connection.md)
   Implement your Local Push Connectivity app to ensure delivery of notifications.
-- [Receiving Voice and Text Communications on a Local Network](receiving-voice-and-text-communications-on-a-local-network.md)
+- [Receiving Voice and Text Communications on a Local Network](./receiving-voice-and-text-communications-on-a-local-network.md)
   Provide voice and text communication on a local network isolated from Apple Push Notification service by adopting Local Push Connectivity.
 
 

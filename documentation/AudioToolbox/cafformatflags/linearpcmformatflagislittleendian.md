@@ -1,15 +1,16 @@
 # linearPCMFormatFlagIsLittleEndian
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 static var linearPCMFormatFlagIsLittleEndian: CAFFormatFlags { get }
 ```
 
+```c
+kCAFLinearPCMFormatFlagIsLittleEndian
+```
+
 ## See Also
 
-- [static var linearPCMFormatFlagIsFloat: CAFFormatFlags](cafformatflags/linearpcmformatflagisfloat.md)
+### Constants
+- [static var linearPCMFormatFlagIsFloat: CAFFormatFlags](./linearpcmformatflagisfloat.md)
 
 
 ---

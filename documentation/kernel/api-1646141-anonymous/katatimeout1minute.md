@@ -1,14 +1,15 @@
 # kATATimeout1Minute
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kATATimeout1Minute = 60000
 ```
 

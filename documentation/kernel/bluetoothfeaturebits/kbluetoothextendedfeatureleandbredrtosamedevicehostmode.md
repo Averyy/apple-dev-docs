@@ -1,14 +1,15 @@
 # kBluetoothExtendedFeatureLEAndBREDRToSameDeviceHostMode
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothExtendedFeatureLEAndBREDRToSameDeviceHostMode = (1 << 2L)
 ```
 

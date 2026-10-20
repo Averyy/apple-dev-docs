@@ -1,7 +1,8 @@
 # allowedUnits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The units the format style can use to express the byte count.
 
@@ -22,11 +23,12 @@ var allowedUnits: ByteCountFormatStyle.Units
 
 ## See Also
 
-- [var spellsOutZero: Bool](bytecountformatstyle/attributed-swift.struct/spellsoutzero.md)
+### Accessing style properties
+- [var spellsOutZero: Bool](./spellsoutzero.md)
   A Boolean value that indicates whether the format style should spell out zero-byte values as text.
-- [var includesActualByteCount: Bool](bytecountformatstyle/attributed-swift.struct/includesactualbytecount.md)
+- [var includesActualByteCount: Bool](./includesactualbytecount.md)
   A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
-- [var locale: Locale](bytecountformatstyle/attributed-swift.struct/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use to format the numeric part of the byte count.
 
 

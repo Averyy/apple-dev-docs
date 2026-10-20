@@ -1,7 +1,8 @@
 # init(_:visible:title:category:matchingSignature:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new library item.
 
@@ -30,7 +31,8 @@ init<SnippetExpressionType>(_ snippet: @autoclosure () -> SnippetExpressionType,
 
 ## See Also
 
-- [LibraryItem.Category](libraryitem/category.md)
+### Creating a Library Item
+- [LibraryItem.Category](./category.md)
   The kinds of library items that you can create.
 
 

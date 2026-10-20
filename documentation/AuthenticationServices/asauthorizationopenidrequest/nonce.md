@@ -1,7 +1,8 @@
 # nonce
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string value to pass to the identity provider.
 
@@ -18,6 +19,10 @@ A string value to pass to the identity provider.
 
 ```swift
 var nonce: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * nonce;
 ```
 
 #### Discussion

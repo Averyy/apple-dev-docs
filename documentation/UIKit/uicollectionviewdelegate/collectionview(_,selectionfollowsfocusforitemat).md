@@ -1,7 +1,8 @@
 # collectionView(_:selectionFollowsFocusForItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to relate selection and focus behavior for the cell at the corresponding index path.
 
@@ -17,13 +18,17 @@ Asks the delegate whether to relate selection and focus behavior for the cell at
 optional func collectionView(_ collectionView: UICollectionView, selectionFollowsFocusForItemAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) collectionView:(UICollectionView *) collectionView selectionFollowsFocusForItemAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want to automatically select the cell at the specified index path when focus moves to it; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if you want to automatically select the cell at the specified index path when focus moves to it; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the collection view’s [`selectionFollowsFocus`](uicollectionview/selectionfollowsfocus.md) property is [`true`](https://developer.apple.com/documentation/swift/true) and you return [`false`](https://developer.apple.com/documentation/swift/false) from this delegate method, focus still moves to the cell when the user selects it. However, when focus moves to the cell, the cell doesn’t automatically select.
+If the collection view’s [`selectionFollowsFocus`](../uicollectionview/selectionfollowsfocus.md) property is [`true`](../../Swift/true.md) and you return [`false`](../../Swift/false.md) from this delegate method, focus still moves to the cell when the user selects it. However, when focus moves to the cell, the cell doesn’t automatically select.
 
 ## Parameters
 
@@ -32,13 +37,14 @@ If the collection view’s [`selectionFollowsFocus`](uicollectionview/selectionf
 
 ## See Also
 
-- [func collectionView(UICollectionView, canFocusItemAt: IndexPath) -> Bool](uicollectionviewdelegate/collectionview(_:canfocusitemat:).md)
+### Working with focus
+- [func collectionView(UICollectionView, canFocusItemAt: IndexPath) -> Bool](./collectionview%28_,canfocusitemat%29.md)
   Asks the delegate whether the item at the specified index path can be focused.
-- [func indexPathForPreferredFocusedView(in: UICollectionView) -> IndexPath?](uicollectionviewdelegate/indexpathforpreferredfocusedview(in:).md)
+- [func indexPathForPreferredFocusedView(in: UICollectionView) -> IndexPath?](./indexpathforpreferredfocusedview%28in%29.md)
   Asks the delegate for the index path of the cell that should be focused.
-- [func collectionView(UICollectionView, shouldUpdateFocusIn: UICollectionViewFocusUpdateContext) -> Bool](uicollectionviewdelegate/collectionview(_:shouldupdatefocusin:).md)
+- [func collectionView(UICollectionView, shouldUpdateFocusIn: UICollectionViewFocusUpdateContext) -> Bool](./collectionview%28_,shouldupdatefocusin%29.md)
   Asks the delegate whether a change in focus should occur.
-- [func collectionView(UICollectionView, didUpdateFocusIn: UICollectionViewFocusUpdateContext, with: UIFocusAnimationCoordinator)](uicollectionviewdelegate/collectionview(_:didupdatefocusin:with:).md)
+- [func collectionView(UICollectionView, didUpdateFocusIn: UICollectionViewFocusUpdateContext, with: UIFocusAnimationCoordinator)](./collectionview%28_,didupdatefocusin,with%29.md)
   Tells the delegate that a focus update occurred.
 
 

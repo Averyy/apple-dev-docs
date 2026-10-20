@@ -1,7 +1,8 @@
 # SearchSuggestionsResponse.Results.TermSuggestion
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A suggested search term from a search suggestion response.
 
@@ -10,7 +11,7 @@ A suggested search term from a search suggestion response.
 
 ## Declaration
 
-```swift
+```
 object SearchSuggestionsResponse.Results.TermSuggestion
 ```
 
@@ -18,11 +19,14 @@ object SearchSuggestionsResponse.Results.TermSuggestion
 
 - `displayTerm` (string) *(required)*: A potentially censored term to display to the user to select from. Use the `searchTerm` value for the actual search.
 - `kind` (string) *(required)*: The kind of suggestion.
+
+  **Allowed Values**: `terms`
 - `searchTerm` (string) *(required)*: The term to use as a search input when using this suggestion.
 
 ## See Also
 
-- [object SearchSuggestionsResponse.Results.TopResultSuggestion](searchsuggestionsresponse/results-data.dictionary/topresultsuggestion.md)
+### Related Objects
+- [object SearchSuggestionsResponse.Results.TopResultSuggestion](./topresultsuggestion.md)
   A suggested popular result for similar search prefix terms.
 
 

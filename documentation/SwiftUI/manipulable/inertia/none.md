@@ -1,7 +1,8 @@
 # none
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A view has no inertia and no resistance to being manipulated.
 

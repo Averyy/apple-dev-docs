@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Data_Location_FixQualityNoFix
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Data_Location_FixQualityNoFix = 0x0870
 ```
 

@@ -6,43 +6,14 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.tr
 
 # mlx.core.trunc
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.trunc.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.trunc
-
- Table of contents 
-
-## Contents
-
-# mlx.core.trunc
-
-**trunc(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**trunc(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Element-wise truncation towards zero.
 
 Parameters:
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
 Returns:
 The truncated array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

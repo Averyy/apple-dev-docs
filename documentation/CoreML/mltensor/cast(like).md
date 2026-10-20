@@ -1,7 +1,8 @@
 # cast(like:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Casts the elements of the tensor to the scalar type of the given array.
 
@@ -41,7 +42,8 @@ z.scalarType // is Float
 
 ## See Also
 
-- [func cast<Scalar>(to: Scalar.Type) -> MLTensor](mltensor/cast(to:).md)
+### Casting the elements
+- [func cast<Scalar>(to: Scalar.Type) -> MLTensor](./cast%28to%29.md)
   Casts the elements of the tensor to the given scalar type.
 
 

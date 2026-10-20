@@ -1,7 +1,8 @@
 # keypoints
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A multi-array compatible with Core ML that contains normalized point coordinates and confidence scores.
 
@@ -21,13 +22,14 @@ var keypoints: MLMultiArray { get throws }
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let leftHand: HumanHandPoseObservation?](humanbodyposeobservation/lefthand.md)
+- [let leftHand: HumanHandPoseObservation?](./lefthand.md)
   The observed left hand.
-- [let rightHand: HumanHandPoseObservation?](humanbodyposeobservation/righthand.md)
+- [let rightHand: HumanHandPoseObservation?](./righthand.md)
   The observed right hand.
-- [struct HumanHandPoseObservation](humanhandposeobservation.md)
+- [struct HumanHandPoseObservation](../humanhandposeobservation.md)
   An observation that provides the hand points the analysis recognizes.
 
 

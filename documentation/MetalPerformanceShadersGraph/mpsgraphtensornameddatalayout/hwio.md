@@ -1,7 +1,8 @@
 # MPSGraphTensorNamedDataLayout.HWIO
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 LayoutHWIO
 
@@ -17,6 +18,10 @@ LayoutHWIO
 
 ```swift
 case HWIO
+```
+
+```c
+MPSGraphTensorNamedDataLayoutHWIO
 ```
 
 

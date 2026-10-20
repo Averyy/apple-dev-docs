@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the spring-loaded interaction state has changed.
@@ -16,6 +17,10 @@ Called when the spring-loaded interaction state has changed.
 
 ```swift
 func interaction(_ interaction: UISpringLoadedInteraction, didChangeWith context: any UISpringLoadedInteractionContext)
+```
+
+```objc
+- (void) interaction:(UISpringLoadedInteraction *) interaction didChangeWithContext:(id<UISpringLoadedInteractionContext>) context;
 ```
 
 ## Parameters

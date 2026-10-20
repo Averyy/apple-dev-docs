@@ -1,7 +1,8 @@
 # kAXTitleChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that the title changed.
 
@@ -12,6 +13,10 @@ Notification that the title changed.
 
 ```swift
 var kAXTitleChangedNotification: String { get }
+```
+
+```c
+#define kAXTitleChangedNotification
 ```
 
 

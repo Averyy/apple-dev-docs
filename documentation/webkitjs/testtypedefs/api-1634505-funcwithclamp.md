@@ -1,14 +1,15 @@
 # funcWithClamp
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 void funcWithClamp(
     ULONGLONG arg1, 
     optional ULONGLONG arg2

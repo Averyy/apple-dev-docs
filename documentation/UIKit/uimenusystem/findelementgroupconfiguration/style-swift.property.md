@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies a preference for the style of Find elements in the main menu.
 
@@ -16,6 +17,10 @@ Specifies a preference for the style of Find elements in the main menu.
 
 ```swift
 var style: UIMenuSystem.FindElementGroupConfiguration.Style { get set }
+```
+
+```objc
+@property (nonatomic, assign) UIMenuSystemFindElementGroupConfigurationStyle style;
 ```
 
 

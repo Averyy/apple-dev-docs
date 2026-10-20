@@ -1,7 +1,8 @@
 # SFSafariExtensionViewController
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The view controller for a popover associated with your app extension.
 
@@ -14,9 +15,13 @@ The view controller for a popover associated with your app extension.
 class SFSafariExtensionViewController
 ```
 
+```objc
+@interface SFSafariExtensionViewController : NSViewController
+```
+
 ## Mentions
 
-- [Adjusting settings for a toolbar item](adjusting-settings-for-a-toolbar-item.md)
+- [Adjusting settings for a toolbar item](./adjusting-settings-for-a-toolbar-item.md)
 
 #### Overview
 
@@ -27,37 +32,38 @@ Your view controller’s contents must use Auto Layout.
 ## Topics
 
 ### Instance Methods
-- [func dismissPopover()](sfsafariextensionviewcontroller/dismisspopover.md)
+- [func dismissPopover()](./sfsafariextensionviewcontroller/dismisspopover%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../appkit/nsviewcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](../appkit/nseditor.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](../appkit/nssegueperforming.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](../AppKit/nseditor.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](../AppKit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
 
 ## See Also
 
-- [Using contextual menu and toolbar item keys](using-contextual-menu-and-toolbar-item-keys.md)
+### Contextual menu and toolbar items
+- [Using contextual menu and toolbar item keys](./using-contextual-menu-and-toolbar-item-keys.md)
   Learn about adding contextual menu items and toolbar items to a Safari app extension with information property list keys.
-- [Adjusting settings for a toolbar item](adjusting-settings-for-a-toolbar-item.md)
+- [Adjusting settings for a toolbar item](./adjusting-settings-for-a-toolbar-item.md)
   Customize a toolbar item for your Safari app extension.
-- [Adjusting settings for contextual menu items](adjusting-settings-for-contextual-menu-items.md)
+- [Adjusting settings for contextual menu items](./adjusting-settings-for-contextual-menu-items.md)
   Customize contextual menu items for your Safari app extension.
-- [class SFSafariToolbarItem](sfsafaritoolbaritem.md)
+- [class SFSafariToolbarItem](./sfsafaritoolbaritem.md)
   A proxy for a Safari app extension toolbar item in a Safari window.
 
 

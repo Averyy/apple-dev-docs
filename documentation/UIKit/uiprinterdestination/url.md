@@ -1,7 +1,8 @@
 # url
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address of the printer.
 
@@ -17,15 +18,20 @@ The address of the printer.
 var url: URL { get set }
 ```
 
+```objc
+@property (copy, readwrite) NSURL * URL;
+```
+
 #### Discussion
 
 This property locates the IP address and resource path for the printer.
 
 ## See Also
 
-- [var displayName: String?](uiprinterdestination/displayname.md)
+### Describing the printer
+- [var displayName: String?](./displayname.md)
   A human-readable string that displays the name of a printer.
-- [var txtRecord: Data?](uiprinterdestination/txtrecord.md)
+- [var txtRecord: Data?](./txtrecord.md)
   A DNS TXT record to identify the printer.
 
 

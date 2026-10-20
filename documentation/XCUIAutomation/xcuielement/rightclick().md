@@ -1,7 +1,8 @@
 # rightClick()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a Control-click event to a hittable point the system computes for the element.
 
@@ -9,7 +10,7 @@ Sends a Control-click event to a hittable point the system computes for the elem
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - Xcode 16.3+
 
 ## Declaration
@@ -18,19 +19,24 @@ Sends a Control-click event to a hittable point the system computes for the elem
 func rightClick()
 ```
 
+```objc
+- (void) rightClick;
+```
+
 #### Discussion
 
 If the element exists within a scrollable view but is offscreen, XCTest attempts to scroll the element onscreen before performing the Control-click.
 
 ## See Also
 
-- [func click()](xcuielement/click.md)
+### Clicking
+- [func click()](./click%28%29.md)
   Sends a click event to a hittable point computed for the element.
-- [func click(forDuration: TimeInterval, thenDragTo: XCUIElement)](xcuielement/click(forduration:thendragto:).md)
+- [func click(forDuration: TimeInterval, thenDragTo: XCUIElement)](./click%28forduration,thendragto%29.md)
   Clicks and holds an element for a duration you specify, and then drags it to another element.
-- [func click(forDuration: TimeInterval, thenDragTo: XCUIElement, withVelocity: XCUIGestureVelocity, thenHoldForDuration: TimeInterval)](xcuielement/click(forduration:thendragto:withvelocity:thenholdforduration:).md)
+- [func click(forDuration: TimeInterval, thenDragTo: XCUIElement, withVelocity: XCUIGestureVelocity, thenHoldForDuration: TimeInterval)](./click%28forduration,thendragto,withvelocity,thenholdforduration%29.md)
   Clicks and holds an element for a duration, drags it at a velocity, and holds it over another element for a duration, all of which you specify.
-- [func doubleClick()](xcuielement/doubleclick.md)
+- [func doubleClick()](./doubleclick%28%29.md)
   Sends a double-click event to a hittable point the system computes for the element.
 
 

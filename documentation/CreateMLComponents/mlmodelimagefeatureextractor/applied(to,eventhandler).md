@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uses the CoreML model to create image features from the input pixel buffer.
 
@@ -30,7 +31,8 @@ func applied(to input: CIImage, eventHandler: EventHandler? = nil) async throws 
 
 ## See Also
 
-- [MLModelImageFeatureExtractor.Error](mlmodelimagefeatureextractor/error.md)
+### Applying
+- [MLModelImageFeatureExtractor.Error](./error.md)
   CoreML Extraction error.
 
 

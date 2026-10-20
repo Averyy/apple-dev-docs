@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The radius of the blur, in pixels.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The radius of the blur, in pixels.
 var radius: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float radius;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cidiscblur/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

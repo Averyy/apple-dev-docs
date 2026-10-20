@@ -1,7 +1,8 @@
 # managedObjectContextDidRegisterObjects(with:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that objects identified by a given array of object IDs are in use in a managed object context.
 
@@ -10,7 +11,7 @@ Indicates that objects identified by a given array of object IDs are in use in a
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Indicates that objects identified by a given array of object IDs are in use in a
 func managedObjectContextDidRegisterObjects(with objectIDs: [NSManagedObjectID])
 ```
 
+```objc
+- (void) managedObjectContextDidRegisterObjectsWithIDs:(NSArray<NSManagedObjectID *> *) objectIDs;
+```
+
 #### Discussion
 
-This method and [`managedObjectContextDidUnregisterObjects(with:)`](nsincrementalstore/managedobjectcontextdidunregisterobjects(with:).md) allow managed object contexts to communicate interest in the row data of specific objects in a manner akin to reference counting. For more details, see [`managedObjectContextDidUnregisterObjects(with:)`](nsincrementalstore/managedobjectcontextdidunregisterobjects(with:).md).
+This method and [`managedObjectContextDidUnregisterObjects(with:)`](./managedobjectcontextdidunregisterobjects%28with%29.md) allow managed object contexts to communicate interest in the row data of specific objects in a manner akin to reference counting. For more details, see [`managedObjectContextDidUnregisterObjects(with:)`](./managedobjectcontextdidunregisterobjects%28with%29.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ This method and [`managedObjectContextDidUnregisterObjects(with:)`](nsincrementa
 
 ## See Also
 
-- [func managedObjectContextDidUnregisterObjects(with: [NSManagedObjectID])](nsincrementalstore/managedobjectcontextdidunregisterobjects(with:).md)
+### Responding to Context Changes
+- [func managedObjectContextDidUnregisterObjects(with: [NSManagedObjectID])](./managedobjectcontextdidunregisterobjects%28with%29.md)
   Indicates that objects identified by a given array of object IDs are no longer being used by a managed object context.
 
 

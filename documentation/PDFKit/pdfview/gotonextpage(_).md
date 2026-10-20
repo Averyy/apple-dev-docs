@@ -1,7 +1,8 @@
 # goToNextPage(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Navigates to the next page of the document.
 
@@ -20,23 +21,29 @@ Navigates to the next page of the document.
 func goToNextPage(_ sender: Any?)
 ```
 
+```objc
+- (void) goToNextPage:(id) sender;
+```
+
 #### Discussion
 
 PDF Kit records the move in its page history.
 
 ## See Also
 
-- [var canGoToNextPage: Bool](pdfview/cangotonextpage.md)
+### Related Documentation
+- [var canGoToNextPage: Bool](./cangotonextpage.md)
   Returns a Boolean value indicating whether the user can navigate to the next page of the document.
-- [func goBack(Any?)](pdfview/goback(_:).md)
+### Navigating History for a Document
+- [func goBack(Any?)](./goback%28_%29.md)
   Navigates back one step in the page history.
-- [func goForward(Any?)](pdfview/goforward(_:).md)
+- [func goForward(Any?)](./goforward%28_%29.md)
   Navigates forward one step in the page history.
-- [func goToFirstPage(Any?)](pdfview/gotofirstpage(_:).md)
+- [func goToFirstPage(Any?)](./gotofirstpage%28_%29.md)
   Navigates to the first page of the document.
-- [func goToLastPage(Any?)](pdfview/gotolastpage(_:).md)
+- [func goToLastPage(Any?)](./gotolastpage%28_%29.md)
   Navigates to the last page of the document.
-- [func goToPreviousPage(Any?)](pdfview/gotopreviouspage(_:).md)
+- [func goToPreviousPage(Any?)](./gotopreviouspage%28_%29.md)
   Navigates to the previous page of the document.
 
 

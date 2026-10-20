@@ -1,7 +1,8 @@
 # CATransform3DMakeAffineTransform(_:)
 
 **Framework**: Core Animation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a transform with the same effect as affine transform `m`.
 
@@ -19,9 +20,14 @@ Returns a transform with the same effect as affine transform `m`.
 func CATransform3DMakeAffineTransform(_ m: CGAffineTransform) -> CATransform3D
 ```
 
+```c
+extern CATransform3D CATransform3DMakeAffineTransform(CGAffineTransform m);
+```
+
 ## See Also
 
-- [func CATransform3DGetAffineTransform(CATransform3D) -> CGAffineTransform](catransform3dgetaffinetransform(_:).md)
+### Converting to and from Core Graphics Affine Transforms
+- [func CATransform3DGetAffineTransform(CATransform3D) -> CGAffineTransform](./catransform3dgetaffinetransform%28_%29.md)
   Returns the affine transform represented by `t`.
 
 

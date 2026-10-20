@@ -1,18 +1,19 @@
 # CGLineCap.butt
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A line with a squared-off end. Core Graphics draws the line to extend only to the exact endpoint of the path. This is the default.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ A line with a squared-off end. Core Graphics draws the line to extend only to th
 case butt
 ```
 
+```c
+kCGLineCapButt
+```
+
 ## See Also
 
-- [CGLineCap.round](cglinecap/round.md)
+### Constants
+- [CGLineCap.round](./round.md)
   A line with a rounded end. Core Graphics draws the line to extend beyond the endpoint of the path. The line ends with a semicircular arc with a radius of 1/2 the line’s width, centered on the endpoint.
-- [CGLineCap.square](cglinecap/square.md)
+- [CGLineCap.square](./square.md)
   A line with a squared-off end. Core Graphics extends the line beyond the endpoint of the path for a distance equal to half the line width.
 
 

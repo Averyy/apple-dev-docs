@@ -1,14 +1,15 @@
 # kUSB_SSCompDesc_Bulk_MaxStreams_Shift
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kUSB_SSCompDesc_Bulk_MaxStreams_Shift = USBBitRangePhase(0, 4)
 ```
 

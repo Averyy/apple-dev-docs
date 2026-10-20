@@ -1,7 +1,8 @@
 # BNNSGraph.Shape
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The specification of the shape of an argument.
 
@@ -11,7 +12,7 @@ The specification of the shape of an argument.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,42 +23,43 @@ struct Shape
 
 #### Overview
 
-The [`setDynamicShapes(_:forFunction:)`](bnnsgraph/context/setdynamicshapes(_:forfunction:).md) function uses arrays of [`BNNSGraph.Shape`](bnnsgraph/shape.md) structures as its input and output. This structure wraps the C API [`bnns_graph_shape_t`](bnns_graph_shape_t.md) type and derives its rank from the number of elements in the [`dimensions`](bnnsgraph/shape/dimensions.md) array.
+The [`setDynamicShapes(_:forFunction:)`](./context/setdynamicshapes%28_,forfunction%29.md) function uses arrays of [`BNNSGraph.Shape`](./shape.md) structures as its input and output. This structure wraps the C API [`bnns_graph_shape_t`](../bnns_graph_shape_t.md) type and derives its rank from the number of elements in the [`dimensions`](./shape/dimensions.md) array.
 
 ## Topics
 
 ### Creating a shape structure
-- [init(arrayLiteral: Int...)](bnnsgraph/shape/init(arrayliteral:).md)
+- [init(arrayLiteral: Int...)](./shape/init%28arrayliteral%29.md)
   Creates a shape structure from the given array literal.
-- [init([Int])](bnnsgraph/shape/init(_:).md)
+- [init([Int])](./shape/init%28_%29.md)
   Creates a shape structure from the given array elements.
 ### Querying a shape structure’s properties
-- [var dimensions: [Int]](bnnsgraph/shape/dimensions.md)
+- [var dimensions: [Int]](./shape/dimensions.md)
   An array that contains the dimensions of the shape structure.
 ### Type Aliases
-- [BNNSGraph.Shape.ArrayLiteralElement](bnnsgraph/shape/arrayliteralelement.md)
+- [BNNSGraph.Shape.ArrayLiteralElement](./shape/arrayliteralelement.md)
   The type of the elements of an array literal.
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
 
 ## See Also
 
-- [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](bnnsgraph/context/setdynamicshapes(_:forfunction:).md)
+### Specifying and querying a graph context’s properties
+- [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](./context/setdynamicshapes%28_,forfunction%29.md)
   Specifies the dynamic shapes for a graph and, if possible, infers the output shapes.
-- [func argumentCount(forFunction: String?) -> Int](bnnsgraph/context/argumentcount(forfunction:).md)
+- [func argumentCount(forFunction: String?) -> Int](./context/argumentcount%28forfunction%29.md)
   Returns the number of arguments for the given function argument.
-- [func argumentNames(forFunction: String?) -> [String]](bnnsgraph/context/argumentnames(forfunction:).md)
+- [func argumentNames(forFunction: String?) -> [String]](./context/argumentnames%28forfunction%29.md)
   Returns the names of arguments for the given function argument.
-- [func argumentPosition(forFunction: String?, argument: String) -> Int](bnnsgraph/context/argumentposition(forfunction:argument:).md)
+- [func argumentPosition(forFunction: String?, argument: String) -> Int](./context/argumentposition%28forfunction,argument%29.md)
   Returns the index into the arguments array for the given function argument.
-- [var functionCount: Int](bnnsgraph/context/functioncount.md)
+- [var functionCount: Int](./context/functioncount.md)
   The number of input arguments for the given function argument.
-- [var functionNames: [String]](bnnsgraph/context/functionnames.md)
+- [var functionNames: [String]](./context/functionnames.md)
   Returns the names of callable functions in the graph.
-- [var checkForNaNsAndInfinities: Bool](bnnsgraph/context/checkfornansandinfinities.md)
+- [var checkForNaNsAndInfinities: Bool](./context/checkfornansandinfinities.md)
   A Boolean value that specifies that the context checks intermediate tensors for NaNs and infinities.
 
 

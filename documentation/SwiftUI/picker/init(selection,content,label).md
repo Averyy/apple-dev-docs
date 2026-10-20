@@ -1,7 +1,8 @@
 # init(selection:content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker that displays a custom label.
 
@@ -21,6 +22,8 @@ Creates a picker that displays a custom label.
 nonisolated init(selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
+
 ## Parameters
 
 - `selection`: A binding to a property that determines the currently-selected option.
@@ -29,9 +32,10 @@ nonisolated init(selection: Binding<SelectionValue>, @ContentBuilder content: ()
 
 ## See Also
 
-- [init(_:selection:content:)](picker/init(_:selection:content:).md)
+### Creating a picker
+- [init(_:selection:content:)](./init%28_,selection,content%29.md)
   Creates a picker that generates its label from a localized string resource.
-- [init(selection: Binding<SelectionValue>, label: Label, content: () -> Content)](picker/init(selection:label:content:).md)
+- [init(selection: Binding<SelectionValue>, label: Label, content: () -> Content)](./init%28selection,label,content%29.md)
   Creates a picker that displays a custom label.
 
 

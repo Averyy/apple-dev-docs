@@ -1,7 +1,8 @@
 # init(a:b:c:d:tx:ty:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,10 @@ init(a: CGFloat, b: CGFloat, c: CGFloat, d: CGFloat, tx: CGFloat, ty: CGFloat)
 
 ## See Also
 
-- [init(a: Float, b: Float, c: Float, d: Float, tx: Float, ty: Float)](vimage_affinetransform/init(a:b:c:d:tx:ty:)-58fxt.md)
+### Initializers
+- [init(a: Float, b: Float, c: Float, d: Float, tx: Float, ty: Float)](./init%28a,b,c,d,tx,ty%29-58fxt.md)
   Returns a new affine transform.
-- [init()](vimage_affinetransform/init.md)
+- [init()](./init%28%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # banner
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 var banner: MEDecodedMessageBanner? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MEDecodedMessageBanner * banner;
+```
+
 ## See Also
 
-- [var context: Data?](medecodedmessage/context.md)
+### Instance Properties
+- [var context: Data?](./context.md)
 
 
 ---

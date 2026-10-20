@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of this element.
 
@@ -18,7 +19,7 @@ var type: HIDReportType
 
 The type of an element is determined by the report that contains it.
 
-See [`HIDReportType`](hidreporttype.md) for more details.
+See [`HIDReportType`](../hidreporttype.md) for more details.
 
 
 ---

@@ -1,7 +1,8 @@
 # addTarget(handler:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a block to be called when an event is received.
 
@@ -20,27 +21,32 @@ Adds a block to be called when an event is received.
 func addTarget(handler: @escaping (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus) -> Any
 ```
 
+```objc
+- (id) addTargetWithHandler:(MPRemoteCommandHandlerStatus (^)(MPRemoteCommandEvent *event)) handler;
+```
+
 #### Return Value
 
 An opaque object associated with the designated handler.
 
 #### Discussion
 
-Call the [`addTarget(handler:)`](mpremotecommand/addtarget(handler:).md) method to add a block to be called. Remove the handler by calling the [`removeTarget(_:)`](mpremotecommand/removetarget(_:).md) method, passing in the object returned by this method.
+Call the [`addTarget(handler:)`](./addtarget%28handler%29.md) method to add a block to be called. Remove the handler by calling the [`removeTarget(_:)`](./removetarget%28_%29.md) method, passing in the object returned by this method.
 
 ## Parameters
 
-- `handler`: A block object to handle the [`MPRemoteCommandEvent`](mpremotecommandevent.md).
+- `handler`: A block object to handle the [`MPRemoteCommandEvent`](../mpremotecommandevent.md).
 
 ## See Also
 
-- [func addTarget(Any, action: Selector)](mpremotecommand/addtarget(_:action:).md)
+### Handling events
+- [func addTarget(Any, action: Selector)](./addtarget%28_,action%29.md)
   Adds a target object to be called when an event is received.
-- [func removeTarget(Any?)](mpremotecommand/removetarget(_:).md)
+- [func removeTarget(Any?)](./removetarget%28_%29.md)
   Removes a target from the remote command object.
-- [func removeTarget(Any, action: Selector?)](mpremotecommand/removetarget(_:action:).md)
+- [func removeTarget(Any, action: Selector?)](./removetarget%28_,action%29.md)
   Removes a target and action from a remote command object.
-- [enum MPRemoteCommandHandlerStatus](mpremotecommandhandlerstatus.md)
+- [enum MPRemoteCommandHandlerStatus](../mpremotecommandhandlerstatus.md)
   Constants indicating the status of a command.
 
 

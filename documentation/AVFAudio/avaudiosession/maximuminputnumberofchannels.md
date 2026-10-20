@@ -1,7 +1,8 @@
 # maximumInputNumberOfChannels
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of input channels available for the current audio route.
 
@@ -19,13 +20,18 @@ The maximum number of input channels available for the current audio route.
 var maximumInputNumberOfChannels: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger maximumInputNumberOfChannels;
+```
+
 ## See Also
 
-- [var preferredInputNumberOfChannels: Int](avaudiosession/preferredinputnumberofchannels.md)
+### Setting the number of input channels
+- [var preferredInputNumberOfChannels: Int](./preferredinputnumberofchannels.md)
   The preferred number of input channels for the current route.
-- [func setPreferredInputNumberOfChannels(Int) throws](avaudiosession/setpreferredinputnumberofchannels(_:).md)
+- [func setPreferredInputNumberOfChannels(Int) throws](./setpreferredinputnumberofchannels%28_%29.md)
   Sets the preferred number of input channels for the current route.
-- [var inputNumberOfChannels: Int](avaudiosession/inputnumberofchannels.md)
+- [var inputNumberOfChannels: Int](./inputnumberofchannels.md)
   The number of audio input channels for the current route.
 
 

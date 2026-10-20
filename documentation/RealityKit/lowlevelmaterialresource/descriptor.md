@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The geometry modifier, surface shader, and lighting function for a material.
 
@@ -20,26 +21,27 @@ struct Descriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(geometry: LowLevelMaterialResource.GeometryModifier, surface: LowLevelMaterialResource.SurfaceShader, lighting: LowLevelMaterialResource.LightingFunction)](lowlevelmaterialresource/descriptor/init(geometry:surface:lighting:).md)
+- [init(geometry: LowLevelMaterialResource.GeometryModifier, surface: LowLevelMaterialResource.SurfaceShader, lighting: LowLevelMaterialResource.LightingFunction)](./descriptor/init%28geometry,surface,lighting%29.md)
   Creates a descriptor from the three shader stages.
 ### Configuring the shaders
-- [var surface: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/descriptor/surface.md)
+- [var surface: LowLevelMaterialResource.SurfaceShader](./descriptor/surface.md)
   The fragment-stage surface shader.
-- [var geometry: LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/descriptor/geometry.md)
+- [var geometry: LowLevelMaterialResource.GeometryModifier](./descriptor/geometry.md)
   The vertex-stage geometry modifier.
 ### Instance Properties
-- [var lighting: LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/descriptor/lighting.md)
+- [var lighting: LowLevelMaterialResource.LightingFunction](./descriptor/lighting.md)
   The lighting evaluation function.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LowLevelMaterialResource.SimpleSurfaceDescriptor](lowlevelmaterialresource/simplesurfacedescriptor.md)
+### Describing the material
+- [LowLevelMaterialResource.SimpleSurfaceDescriptor](./simplesurfacedescriptor.md)
   The configuration for a built-in surface shader that applies a tint color, a texture, or both.
 
 

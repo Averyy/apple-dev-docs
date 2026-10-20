@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom display title for the preview. If left as the empty string, QuickLook will use the file name.
 
@@ -15,6 +16,10 @@ Custom display title for the preview. If left as the empty string, QuickLook wil
 
 ```swift
 var title: String { get set }
+```
+
+```objc
+@property (copy) NSString * title;
 ```
 
 

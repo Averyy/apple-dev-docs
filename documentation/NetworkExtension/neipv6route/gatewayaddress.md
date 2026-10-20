@@ -1,7 +1,8 @@
 # gatewayAddress
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address of the next-hop gateway of the route.
 
@@ -19,15 +20,20 @@ The address of the next-hop gateway of the route.
 var gatewayAddress: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * gatewayAddress;
+```
+
 #### Discussion
 
 The default value of this property is nil. When this property is nil, the route’s next-hop gateway will be set to the TUN interface.
 
 ## See Also
 
-- [var destinationAddress: String](neipv6route/destinationaddress.md)
+### Accessing IPv6 Route Properties
+- [var destinationAddress: String](./destinationaddress.md)
   The destination network address of the route.
-- [var destinationNetworkPrefixLength: NSNumber](neipv6route/destinationnetworkprefixlength.md)
+- [var destinationNetworkPrefixLength: NSNumber](./destinationnetworkprefixlength.md)
   The destination network prefix length of the route.
 
 

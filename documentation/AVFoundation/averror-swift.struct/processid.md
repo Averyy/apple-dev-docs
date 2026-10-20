@@ -1,17 +1,18 @@
 # processID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process ID.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,26 +23,27 @@ var processID: Int? { get }
 
 ## See Also
 
-- [var device: AVCaptureDevice?](averror-swift.struct/device-5iio4.md)
+### Error properties
+- [var device: AVCaptureDevice?](./device-5iio4.md)
   The capture device in use.
-- [var device: String?](averror-swift.struct/device-1qfzr.md)
-- [var fileSize: Int64?](averror-swift.struct/filesize.md)
+- [var device: String?](./device-1qfzr.md)
+- [var fileSize: Int64?](./filesize.md)
   The asset file size.
-- [var fileType: AVFileType?](averror-swift.struct/filetype.md)
+- [var fileType: AVFileType?](./filetype.md)
   The asset file type.
-- [var mediaSubtypes: [Int]?](averror-swift.struct/mediasubtypes.md)
+- [var mediaSubtypes: [Int]?](./mediasubtypes.md)
   An array of media subtypes.
-- [var mediaType: AVMediaType?](averror-swift.struct/mediatype-7ksjb.md)
+- [var mediaType: AVMediaType?](./mediatype-7ksjb.md)
   The asset media type.
-- [var mediaType: String?](averror-swift.struct/mediatype-5d8ie.md)
+- [var mediaType: String?](./mediatype-5d8ie.md)
   The media type.
-- [var persistentTrackID: CMPersistentTrackID?](averror-swift.struct/persistenttrackid.md)
+- [var persistentTrackID: CMPersistentTrackID?](./persistenttrackid.md)
   The persistent track ID, if the track exists.
-- [var presentationTimeStamp: CMTime?](averror-swift.struct/presentationtimestamp.md)
+- [var presentationTimeStamp: CMTime?](./presentationtimestamp.md)
   The presentation time stamp.
-- [var recordingSuccessfullyFinished: Bool?](averror-swift.struct/recordingsuccessfullyfinished.md)
+- [var recordingSuccessfullyFinished: Bool?](./recordingsuccessfullyfinished.md)
   A Boolean value that indicates whether recording finished successfully.
-- [var time: CMTime?](averror-swift.struct/time.md)
+- [var time: CMTime?](./time.md)
   The time duration of the error.
 
 

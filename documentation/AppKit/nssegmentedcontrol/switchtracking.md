@@ -1,12 +1,13 @@
 # NSSegmentedControl.SwitchTracking
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the type of tracking behavior a segmented control exhibits.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,40 +15,45 @@ Constants that specify the type of tracking behavior a segmented control exhibit
 enum SwitchTracking
 ```
 
+```c
+enum NSSegmentSwitchTracking : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSSegmentedControl.SwitchTracking.selectOne](nssegmentedcontrol/switchtracking/selectone.md)
+- [NSSegmentedControl.SwitchTracking.selectOne](./switchtracking/selectone.md)
   Only one segment in the control can be selected at a time.
-- [NSSegmentedControl.SwitchTracking.selectAny](nssegmentedcontrol/switchtracking/selectany.md)
+- [NSSegmentedControl.SwitchTracking.selectAny](./switchtracking/selectany.md)
   One or more segment cells in the control can be selected at a time.
-- [NSSegmentedControl.SwitchTracking.momentary](nssegmentedcontrol/switchtracking/momentary.md)
+- [NSSegmentedControl.SwitchTracking.momentary](./switchtracking/momentary.md)
   A tracking mode that selects a segment when a person clicks within the bounds of the segment.
-- [NSSegmentedControl.SwitchTracking.momentaryAccelerator](nssegmentedcontrol/switchtracking/momentaryaccelerator.md)
+- [NSSegmentedControl.SwitchTracking.momentaryAccelerator](./switchtracking/momentaryaccelerator.md)
   A tracking mode that sends repeating actions as pressure changes on Force Touch systems, stopping when someone releases the segment.
 ### Initializers
-- [init?(rawValue: UInt)](nssegmentedcontrol/switchtracking/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./switchtracking/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var trackingMode: NSSegmentedControl.SwitchTracking](nssegmentedcontrol/trackingmode.md)
+### Specifying the segment behavior
+- [var trackingMode: NSSegmentedControl.SwitchTracking](./trackingmode.md)
   The type of tracking behavior the control exhibits.
-- [var segmentStyle: NSSegmentedControl.Style](nssegmentedcontrol/segmentstyle.md)
+- [var segmentStyle: NSSegmentedControl.Style](./segmentstyle.md)
   The visual style used to display the control.
-- [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
-  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
-- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
-- [NSSegmentedControl.Role](nssegmentedcontrol/role-swift.enum.md)
+- [NSSegmentedControl.Style](./style.md)
+  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](./segmentstyle.md).
+- [var role: NSSegmentedControl.Role](./role-swift.property.md)
+- [NSSegmentedControl.Role](./role-swift.enum.md)
 
 
 ---

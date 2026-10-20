@@ -1,7 +1,8 @@
 # CTFontCopyVariation(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a variation dictionary from the font reference.
 
@@ -20,13 +21,17 @@ Returns a variation dictionary from the font reference.
 func CTFontCopyVariation(_ font: CTFont) -> CFDictionary?
 ```
 
+```c
+extern CFDictionaryRefCTFontCopyVariation(CTFontRef font);
+```
+
 #### Return Value
 
 The current variation instance as a dictionary.
 
 #### Discussion
 
-The keys for each variation correspond to the variation identifier obtained via [`kCTFontVariationAxisIdentifierKey`](kctfontvariationaxisidentifierkey.md), which represents the four-character axis code as a CFNumber object.
+The keys for each variation correspond to the variation identifier obtained via [`kCTFontVariationAxisIdentifierKey`](./kctfontvariationaxisidentifierkey.md), which represents the four-character axis code as a CFNumber object.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ The keys for each variation correspond to the variation identifier obtained via 
 
 ## See Also
 
-- [func CTFontCopyVariationAxes(CTFont) -> CFArray?](ctfontcopyvariationaxes(_:).md)
+### Working With Font Variations
+- [func CTFontCopyVariationAxes(CTFont) -> CFArray?](./ctfontcopyvariationaxes%28_%29.md)
   Returns an array of variation axes.
 
 

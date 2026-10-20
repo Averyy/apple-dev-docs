@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of the adaptive trigger and whether it’s applying effects.
 
@@ -19,9 +20,14 @@ The current status of the adaptive trigger and whether it’s applying effects.
 var status: GCDualSenseAdaptiveTrigger.Status { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCDualSenseAdaptiveTriggerStatus status;
+```
+
 ## See Also
 
-- [GCDualSenseAdaptiveTrigger.Status](gcdualsenseadaptivetrigger/status-swift.enum.md)
+### Checking the status
+- [GCDualSenseAdaptiveTrigger.Status](./status-swift.enum.md)
   The possible states of an adaptive trigger.
 
 

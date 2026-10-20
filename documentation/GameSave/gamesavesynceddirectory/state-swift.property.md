@@ -1,7 +1,8 @@
 # state
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state that the game-save directory is in.
 
@@ -20,9 +21,10 @@ var state: GameSaveSyncedDirectory.State { get }
 
 ## See Also
 
-- [class func openDirectory(containerIdentifier: String?) -> GameSaveSyncedDirectory](gamesavesynceddirectory/opendirectory(containeridentifier:).md)
+### Accessing a directory
+- [class func openDirectory(containerIdentifier: String?) -> GameSaveSyncedDirectory](./opendirectory%28containeridentifier%29.md)
   Requests an instance of the game-save directory.
-- [GameSaveSyncedDirectory.State](gamesavesynceddirectory/state-swift.enum.md)
+- [GameSaveSyncedDirectory.State](./state-swift.enum.md)
   The state of the directory.
 
 

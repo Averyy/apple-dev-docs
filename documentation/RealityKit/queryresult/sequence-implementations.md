@@ -1,14 +1,15 @@
 # Sequence Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [QueryResult.Iterator](queryresult/iterator.md)
+- [QueryResult.Iterator](./iterator.md)
   The type of iterator used for entity query results.
 ### Instance Methods
-- [func makeIterator() -> QueryResult<Element>.Iterator](queryresult/makeiterator.md)
+- [func makeIterator() -> QueryResult<Element>.Iterator](./makeiterator%28%29.md)
   Returns an iterator for the contained entities.
 
 

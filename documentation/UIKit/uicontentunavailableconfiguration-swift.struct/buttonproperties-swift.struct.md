@@ -1,7 +1,8 @@
 # UIContentUnavailableConfiguration.ButtonProperties
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties to configure buttons for a content-unavailable view.
 
@@ -10,7 +11,7 @@ Properties to configure buttons for a content-unavailable view.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,25 +22,25 @@ struct ButtonProperties
 ## Topics
 
 ### Instance Properties
-- [var isEnabled: Bool](uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/isenabled.md)
+- [var isEnabled: Bool](./buttonproperties-swift.struct/isenabled.md)
   A Boolean value that enables and disables the button.
-- [var menu: UIMenu?](uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/menu.md)
+- [var menu: UIMenu?](./buttonproperties-swift.struct/menu.md)
   A menu that the button displays.
-- [var primaryAction: UIAction?](uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/primaryaction.md)
+- [var primaryAction: UIAction?](./buttonproperties-swift.struct/primaryaction.md)
   The action to perform for the primary action control event.
-- [var role: UIButton.Role](uicontentunavailableconfiguration-swift.struct/buttonproperties-swift.struct/role.md)
+- [var role: UIButton.Role](./buttonproperties-swift.struct/role.md)
   The role of the button.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../../Swift/customreflectable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

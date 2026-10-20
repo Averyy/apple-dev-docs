@@ -1,7 +1,8 @@
 # NLTokenUnit.paragraph
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An individual paragraph.
 
@@ -18,6 +19,10 @@ An individual paragraph.
 
 ```swift
 case paragraph
+```
+
+```c
+NLTokenUnitParagraph
 ```
 
 #### Discussion
@@ -41,15 +46,16 @@ tokenizer.enumerateTokens(in: range) { tokenRange, _ in
 }
 ```
 
-For more information, see [`Tokenizing natural language text`](tokenizing-natural-language-text.md).
+For more information, see [Tokenizing natural language text](../tokenizing-natural-language-text.md).
 
 ## See Also
 
-- [NLTokenUnit.word](nltokenunit/word.md)
+### Constants
+- [NLTokenUnit.word](./word.md)
   An individual word.
-- [NLTokenUnit.sentence](nltokenunit/sentence.md)
+- [NLTokenUnit.sentence](./sentence.md)
   An individual sentence.
-- [NLTokenUnit.document](nltokenunit/document.md)
+- [NLTokenUnit.document](./document.md)
   The document in its entirety.
 
 

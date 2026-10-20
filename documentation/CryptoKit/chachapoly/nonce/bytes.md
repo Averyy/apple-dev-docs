@@ -1,7 +1,8 @@
 # bytes
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bytes stored in the nonce.
 

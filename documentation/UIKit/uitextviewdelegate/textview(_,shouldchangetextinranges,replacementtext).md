@@ -1,7 +1,8 @@
 # textView(_:shouldChangeTextInRanges:replacementText:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func textView(_ textView: UITextView, shouldChangeTextInRanges ranges: [NSValue], replacementText text: String) -> Bool
+```
+
+```objc
+- (BOOL) textView:(UITextView *) textView shouldChangeTextInRanges:(NSArray<NSValue *> *) ranges replacementText:(NSString *) text;
 ```
 
 #### Return Value

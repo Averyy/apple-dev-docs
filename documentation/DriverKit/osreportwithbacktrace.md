@@ -1,19 +1,20 @@
 # OSReportWithBacktrace
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates a backtrace and message for debugging.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void OSReportWithBacktrace(const char *str, ...);
 ```
 
@@ -27,7 +28,8 @@ Generates a backtrace and message for debugging. May be inoperative on release O
 
 ## See Also
 
-- [OSSynchronizeIO](ossynchronizeio.md)
+### Additional Utilities
+- [OSSynchronizeIO](./ossynchronizeio.md)
   Performs an `mfence` instruction on Intel-based Mac computers.
 
 

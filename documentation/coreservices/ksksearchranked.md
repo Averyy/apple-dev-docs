@@ -1,7 +1,8 @@
 # kSKSearchRanked
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Deprecated. Specifies a basic ranked search.
 

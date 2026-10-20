@@ -1,37 +1,38 @@
 # IOUserNetworkPacketPoller
 
 **Framework**: NetworkingDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserNetworkPacketPoller;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [TimerOccurred](iousernetworkpacketpoller/timeroccurred.md)
-- [applyPollerParameters](iousernetworkpacketpoller/applypollerparameters.md)
-- [disable](iousernetworkpacketpoller/disable.md)
-- [enable](iousernetworkpacketpoller/enable.md)
-- [free](iousernetworkpacketpoller/free.md)
-- [init](iousernetworkpacketpoller/init.md)
-- [initPoller](iousernetworkpacketpoller/initpoller.md)
-- [pollerEngine](iousernetworkpacketpoller/pollerengine.md)
-- [setPollerParameters](iousernetworkpacketpoller/setpollerparameters.md)
-- [updatePacketCounters](iousernetworkpacketpoller/updatepacketcounters.md)
+- [TimerOccurred](./iousernetworkpacketpoller/timeroccurred.md)
+- [applyPollerParameters](./iousernetworkpacketpoller/applypollerparameters.md)
+- [disable](./iousernetworkpacketpoller/disable.md)
+- [enable](./iousernetworkpacketpoller/enable.md)
+- [free](./iousernetworkpacketpoller/free.md)
+- [init](./iousernetworkpacketpoller/init.md)
+- [initPoller](./iousernetworkpacketpoller/initpoller.md)
+- [pollerEngine](./iousernetworkpacketpoller/pollerengine.md)
+- [setPollerParameters](./iousernetworkpacketpoller/setpollerparameters.md)
+- [updatePacketCounters](./iousernetworkpacketpoller/updatepacketcounters.md)
 ### Type Methods
-- [poller](iousernetworkpacketpoller/poller.md)
+- [poller](./iousernetworkpacketpoller/poller.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](../driverkit/osobject.md)
+- [OSObject](../DriverKit/osobject.md)
 
 
 ---

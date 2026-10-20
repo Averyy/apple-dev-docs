@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 var count: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger count;
+```
+
 ## See Also
 
-- [var maximumStop: Float](ciarealogarithmichistogram/maximumstop.md)
-- [var minimumStop: Float](ciarealogarithmichistogram/minimumstop.md)
-- [var scale: Float](ciarealogarithmichistogram/scale.md)
+### Instance Properties
+- [var maximumStop: Float](./maximumstop.md)
+- [var minimumStop: Float](./minimumstop.md)
+- [var scale: Float](./scale.md)
 
 
 ---

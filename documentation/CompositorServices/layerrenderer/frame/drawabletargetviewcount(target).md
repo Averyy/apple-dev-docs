@@ -1,7 +1,8 @@
 # drawableTargetViewCount(target:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of view in the drawable target.
 
@@ -15,13 +16,17 @@ Returns the number of view in the drawable target.
 func drawableTargetViewCount(target drawable_target: LayerRenderer.Drawable.Target) -> Int
 ```
 
+```c
+size_t cp_frame_get_drawable_target_view_count(cp_frame_t frame, cp_drawable_target drawable_target);
+```
+
 #### Return Value
 
 The number of views available for drawing. For example, a return value of `2` indicates there are two views for this target drawable in this frame. value of `0` indicates there is no view available for this target drawable in this frame.
 
 #### Discussion
 
-Use the returned value as the maximum number of views to retrieve from the [`cp_frame_binocular_frustum_matrix_for_drawable_target`](cp_frame_binocular_frustum_matrix_for_drawable_target.md) or [`cp_frame_monocular_frustum_matrix_for_drawable_target`](cp_frame_monocular_frustum_matrix_for_drawable_target.md) functions.
+Use the returned value as the maximum number of views to retrieve from the [`cp_frame_binocular_frustum_matrix_for_drawable_target`](../../cp_frame_binocular_frustum_matrix_for_drawable_target.md) or [`cp_frame_monocular_frustum_matrix_for_drawable_target`](../../cp_frame_monocular_frustum_matrix_for_drawable_target.md) functions.
 
 ## Parameters
 

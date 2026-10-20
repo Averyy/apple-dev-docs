@@ -1,7 +1,8 @@
 # TabSearchActivation
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configures the activation behavior of search in the search tab.
 
@@ -22,23 +23,23 @@ struct TabSearchActivation
 
 #### Overview
 
-You can configure this for a particular [`TabView`](tabview.md) by using the [`tabViewSearchActivation(_:)`](view/tabviewsearchactivation(_:).md) modifier.
+You can configure this for a particular [`TabView`](./tabview.md) by using the [`tabViewSearchActivation(_:)`](./view/tabviewsearchactivation%28_%29.md) modifier.
 
 ## Topics
 
 ### Type Properties
-- [static var automatic: TabSearchActivation](tabsearchactivation/automatic.md)
+- [static var automatic: TabSearchActivation](./tabsearchactivation/automatic.md)
   The default search activation behavior.
-- [static var searchTabSelection: TabSearchActivation](tabsearchactivation/searchtabselection.md)
+- [static var searchTabSelection: TabSearchActivation](./tabsearchactivation/searchtabselection.md)
   Links the search tab’s selection to search activation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

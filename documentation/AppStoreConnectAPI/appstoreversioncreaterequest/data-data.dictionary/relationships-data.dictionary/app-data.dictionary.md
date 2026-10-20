@@ -1,7 +1,8 @@
 # AppStoreVersionCreateRequest.Data.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionCreateRequest.Data.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionCreateRequest.Data.Relationships.App.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The type and ID of the resource that you’re relating with the resource you’re creating.
 
 ## Properties
@@ -26,11 +27,12 @@ object AppStoreVersionCreateRequest.Data.Relationships.App
 
 ## See Also
 
-- [object AppStoreVersionCreateRequest.Data.Relationships.Build](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
+### Objects
+- [object AppStoreVersionCreateRequest.Data.Relationships.Build](./build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](./appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
   The request body you use to create an App Store version.
-- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations](./appstoreversionlocalizations-data.dictionary.md)
 
 
 ---

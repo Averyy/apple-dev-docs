@@ -1,7 +1,8 @@
 # kUSBHostPortConnectionSpeedSuperPlusBy2
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The SuperSpeedPlus By 2 connection.
 
@@ -10,7 +11,7 @@ The SuperSpeedPlus By 2 connection.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortConnectionSpeedSuperPlusBy2 = kIOUSBHostConnectionSpeedSuperPlusBy2
 ```
 

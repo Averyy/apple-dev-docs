@@ -1,7 +1,8 @@
 # now
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current date and time, as of the time of access.
 
@@ -20,9 +21,13 @@ The current date and time, as of the time of access.
 class var now: Date { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSDate * now;
+```
+
 #### Discussion
 
-This is equivalent to initializing a new instance with `NSDate()` (or `[[NSDate alloc] init]` in Objective-C). The [`NSDate`](nsdate.md) instance doesn’t automatically update its time after you retrieve it.
+This is equivalent to initializing a new instance with `NSDate()` (or `[[NSDate alloc] init]` in Objective-C). The [`NSDate`](../nsdate.md) instance doesn’t automatically update its time after you retrieve it.
 
 
 ---

@@ -1,7 +1,8 @@
 # XCTAssertTrue(_:_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asserts that an expression is true.
 
@@ -13,7 +14,7 @@ func XCTAssertTrue(_ expression: @autoclosure () throws -> Bool, _ message: @aut
 
 #### Discussion
 
-This function generates a failure when `expression == false` and is equivalent to [`XCTAssert(_:_:file:line:)`](xctassert(_:_:file:line:).md).
+This function generates a failure when `expression == false` and is equivalent to [`XCTAssert(_:_:file:line:)`](./xctassert%28_,_,file,line%29.md).
 
 ## Parameters
 
@@ -24,7 +25,8 @@ This function generates a failure when `expression == false` and is equivalent t
 
 ## See Also
 
-- [func XCTAssert(@autoclosure () throws -> Bool, @autoclosure () -> String, file: StaticString, line: UInt)](xctassert(_:_:file:line:).md)
+### Tests for True Conditions
+- [func XCTAssert(@autoclosure () throws -> Bool, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassert%28_,_,file,line%29.md)
   Asserts that an expression is true.
 
 

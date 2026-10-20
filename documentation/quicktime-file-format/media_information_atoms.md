@@ -1,6 +1,7 @@
 # Media information atoms
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 An atom that contains a number of other atoms that define specific characteristics of the video media data.
 
@@ -12,35 +13,36 @@ These atoms contain information that is specific to the type of data defined by 
 
 This section describes the atoms that store media information for the video (`'vmhd'`), sound (`'smhd'`), and base (`'gmhd'`) portions of QuickTime movies.
 
-> **Note**: [`Using sample atoms`](using_sample_atoms.md) discusses how the video media handler locates samples in a video media.
+> **Note**: [Using sample atoms](./using_sample_atoms.md) discusses how the video media handler locates samples in a video media.
 
 ## See Also
 
-- [Media atom ('mdia')](media_atom.md)
+### Describing media
+- [Media atom ('mdia')](./media_atom.md)
   An atom that describes and defines a track’s media type and sample data.
-- [Media header atom ('mdhd')](media_header_atom.md)
+- [Media header atom ('mdhd')](./media_header_atom.md)
   An atom that specifies the characteristics of a media, including time scale and duration.
-- [Extended language tag atom ('elng')](extended_language_tag_atom.md)
+- [Extended language tag atom ('elng')](./extended_language_tag_atom.md)
   An atom that represents media language information.
-- [Handler reference atom ('hdlr')](handler_reference_atom.md)
+- [Handler reference atom ('hdlr')](./handler_reference_atom.md)
   An atom that specifies the media handler component that is to be used to interpret the media’s data.
-- [Video media information atom ('minf')](video_media_information_atom.md)
+- [Video media information atom ('minf')](./video_media_information_atom.md)
   An atom that contains a number of other atoms that define specific characteristics of the video media data.
-- [Video media information header atom ('vmhd')](video_media_information_header_atom.md)
+- [Video media information header atom ('vmhd')](./video_media_information_header_atom.md)
   An atom that defines specific color and graphics mode information.
-- [Sound media information atom ('minf')](sound_media_information_atom.md)
+- [Sound media information atom ('minf')](./sound_media_information_atom.md)
   An atom that contains a number of other atoms that define specific characteristics of the sound media data.
-- [Sound media information header atom ('smhd')](sound_media_information_header_atom.md)
+- [Sound media information header atom ('smhd')](./sound_media_information_header_atom.md)
   An atom that stores the sound media’s control information, such as balance.
-- [Base media information atom ('minf')](base_media_information_atom.md)
+- [Base media information atom ('minf')](./base_media_information_atom.md)
   An atom that stores the media information for media types such as timed metadata, text, MPEG, time code, and music.
-- [Base media information header atom ('gmhd')](base_media_information_header_atom.md)
+- [Base media information header atom ('gmhd')](./base_media_information_header_atom.md)
   An atom that indicates that this media information atom pertains to a base media.
-- [Base media info atom ('gmin')](base_media_info_atom.md)
+- [Base media info atom ('gmin')](./base_media_info_atom.md)
   An atom that defines the media’s control information, including graphics mode and balance information.
-- [Data information atom ('dinf')](data_information_atom.md)
+- [Data information atom ('dinf')](./data_information_atom.md)
   An atom that specifies the data handler component that provides access to the media data.
-- [Media data reference atom ('dref')](media_data_reference_atom.md)
+- [Media data reference atom ('dref')](./media_data_reference_atom.md)
   An atom that contains tabular data that instructs the data handler component how to access the media’s data.
 
 

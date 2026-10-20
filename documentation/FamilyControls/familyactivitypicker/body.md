@@ -1,7 +1,8 @@
 # body
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of this view.
 

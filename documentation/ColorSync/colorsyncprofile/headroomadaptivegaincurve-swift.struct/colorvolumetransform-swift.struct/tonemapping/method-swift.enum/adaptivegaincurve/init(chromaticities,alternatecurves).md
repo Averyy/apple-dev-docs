@@ -1,7 +1,8 @@
 # init(chromaticities:alternateCurves:)
 
 **Framework**: ColorSync  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an adaptive gain curve.
 
@@ -22,11 +23,11 @@ init(chromaticities: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTrans
 
 #### Discussion
 
-> **Note**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.tooManyAlternateCurves(count:limit:)`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanyalternatecurves(count:limit:).md) if more than four curves are supplied, or [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.invalidCustomChromaticities`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/invalidcustomchromaticities.md) if custom chromaticities fall outside the valid range.
+> **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.tooManyAlternateCurves(count:limit:)`](../../../../error/toomanyalternatecurves%28count,limit%29.md) if more than four curves are supplied, or [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.invalidCustomChromaticities`](../../../../error/invalidcustomchromaticities.md) if custom chromaticities fall outside the valid range.
 
 ## Parameters
 
-- `chromaticities`: The chromaticities used to derive the driving signal. Defaults to [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.Chromaticities.bt709`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/bt709.md).
+- `chromaticities`: The chromaticities used to derive the driving signal. Defaults to [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.Chromaticities.bt709`](../chromaticities/bt709.md).
 - `alternateCurves`: The alternate curves. At most four.
 
 

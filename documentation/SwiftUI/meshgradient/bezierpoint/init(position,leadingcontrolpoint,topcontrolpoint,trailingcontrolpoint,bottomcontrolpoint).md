@@ -1,7 +1,8 @@
 # init(position:leadingControlPoint:topControlPoint:trailingControlPoint:bottomControlPoint:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vertex.
 

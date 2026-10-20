@@ -1,7 +1,8 @@
 # aboveRight
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Distinct marks at the top right.
 

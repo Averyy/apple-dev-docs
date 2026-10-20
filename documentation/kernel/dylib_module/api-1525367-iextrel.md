@@ -1,7 +1,8 @@
 # iextrel
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The index into the external relocation table of the first entry provided by this module.
 
@@ -10,7 +11,7 @@ The index into the external relocation table of the first entry provided by this
 
 ## Declaration
 
-```swift
+```c
 uint32_t iextrel;
 ```
 

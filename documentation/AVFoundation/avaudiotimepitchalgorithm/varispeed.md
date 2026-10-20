@@ -1,7 +1,8 @@
 # varispeed
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A high-quality time pitch algorithm that doesn’t perform pitch correction.
 
@@ -20,17 +21,22 @@ A high-quality time pitch algorithm that doesn’t perform pitch correction.
 static let varispeed: AVAudioTimePitchAlgorithm
 ```
 
+```c
+extern AVAudioTimePitchAlgorithm const AVAudioTimePitchAlgorithmVarispeed;
+```
+
 #### Discussion
 
 The pitch varies with the rate, and supports variable rates from `1/32` to `32`.
 
 ## See Also
 
-- [static let timeDomain: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/timedomain.md)
+### Constants
+- [static let timeDomain: AVAudioTimePitchAlgorithm](./timedomain.md)
   A modest quality time pitch algorithm that’s suitable for voice.
-- [static let spectral: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/spectral.md)
+- [static let spectral: AVAudioTimePitchAlgorithm](./spectral.md)
   A highest-quality time pitch algorithm that’s suitable for music.
-- [static let lowQualityZeroLatency: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/lowqualityzerolatency.md)
+- [static let lowQualityZeroLatency: AVAudioTimePitchAlgorithm](./lowqualityzerolatency.md)
   A low-quality and very low computationally intensive pitch algorithm.
 
 

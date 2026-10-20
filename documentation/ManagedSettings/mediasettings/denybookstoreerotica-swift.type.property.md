@@ -1,7 +1,8 @@
 # denyBookstoreErotica
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata associated with the setting that denies access to content in the Books store categorized as erotica.
 
@@ -18,11 +19,12 @@ static let denyBookstoreErotica: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `denyBookstoreErotica` to access the metadata for [`denyBookstoreErotica`](mediasettings/denybookstoreerotica-swift.property.md). The default value is `false`.
+Use `denyBookstoreErotica` to access the metadata for [`denyBookstoreErotica`](./denybookstoreerotica-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var denyBookstoreErotica: Bool?](mediasettings/denybookstoreerotica-swift.property.md)
+### Constraining content in the Books app
+- [var denyBookstoreErotica: Bool?](./denybookstoreerotica-swift.property.md)
   A Boolean value that indicates whether to deny media categorized as erotica in the Books store.
 
 

@@ -1,7 +1,8 @@
 # AggregateMetric
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An aggregate statistic computed from a metric’s results across the evaluation dataset.
 
@@ -33,29 +34,30 @@ The summary DataFrame stores one `AggregateMetric` for each column. Each value r
 ## Topics
 
 ### Instance Properties
-- [let group: String?](aggregatemetric/group.md)
+- [let group: String?](./aggregatemetric/group.md)
   The group this aggregate belongs to, if any.
-- [var label: String](aggregatemetric/label.md)
+- [var label: String](./aggregatemetric/label.md)
   The display label for this aggregate.
-- [let operation: AggregationOperation](aggregatemetric/operation.md)
+- [let operation: AggregationOperation](./aggregatemetric/operation.md)
   The aggregation operation that produced this value.
-- [var sourceMetric: String?](aggregatemetric/sourcemetric.md)
+- [var sourceMetric: String?](./aggregatemetric/sourcemetric.md)
   The name of the source metric.
-- [let value: Double](aggregatemetric/value.md)
+- [let value: Double](./aggregatemetric/value.md)
   The aggregate value.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum AggregationOperation](aggregationoperation.md)
+### Inspecting aggregate results
+- [enum AggregationOperation](./aggregationoperation.md)
   The type of aggregation operation used to compute a summary statistic.
 
 

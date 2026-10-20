@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIDoorbellDeviceAddress](3612498-anonymous/iousbhostcidoorbelldeviceaddress.md)
-- [IOUSBHostCIDoorbellDeviceAddressPhase](3612498-anonymous/iousbhostcidoorbelldeviceaddressphase.md)
-- [IOUSBHostCIDoorbellEndpointAddress](3612498-anonymous/iousbhostcidoorbellendpointaddress.md)
-- [IOUSBHostCIDoorbellEndpointAddressPhase](3612498-anonymous/iousbhostcidoorbellendpointaddressphase.md)
-- [IOUSBHostCIDoorbellStreamID](3612498-anonymous/iousbhostcidoorbellstreamid.md)
-- [IOUSBHostCIDoorbellStreamIDPhase](3612498-anonymous/iousbhostcidoorbellstreamidphase.md)
+- [IOUSBHostCIDoorbellDeviceAddress](./api-3612498-anonymous/iousbhostcidoorbelldeviceaddress.md)
+- [IOUSBHostCIDoorbellDeviceAddressPhase](./api-3612498-anonymous/iousbhostcidoorbelldeviceaddressphase.md)
+- [IOUSBHostCIDoorbellEndpointAddress](./api-3612498-anonymous/iousbhostcidoorbellendpointaddress.md)
+- [IOUSBHostCIDoorbellEndpointAddressPhase](./api-3612498-anonymous/iousbhostcidoorbellendpointaddressphase.md)
+- [IOUSBHostCIDoorbellStreamID](./api-3612498-anonymous/iousbhostcidoorbellstreamid.md)
+- [IOUSBHostCIDoorbellStreamIDPhase](./api-3612498-anonymous/iousbhostcidoorbellstreamidphase.md)
 
 
 ---

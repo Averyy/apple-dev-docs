@@ -1,7 +1,8 @@
 # systemGroupedBackground
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color for the main background of your grouped interface.
 
@@ -17,15 +18,20 @@ The color for the main background of your grouped interface.
 class var systemGroupedBackground: UIColor { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIColor * systemGroupedBackgroundColor;
+```
+
 #### Discussion
 
 Use this color for grouped content, including table views and platter-based designs.
 
 ## See Also
 
-- [class var secondarySystemGroupedBackground: UIColor](uicolor/secondarysystemgroupedbackground.md)
+### Grouped content background colors
+- [class var secondarySystemGroupedBackground: UIColor](./secondarysystemgroupedbackground.md)
   The color for content layered on top of the main background of your grouped interface.
-- [class var tertiarySystemGroupedBackground: UIColor](uicolor/tertiarysystemgroupedbackground.md)
+- [class var tertiarySystemGroupedBackground: UIColor](./tertiarysystemgroupedbackground.md)
   The color for content layered on top of secondary backgrounds of your grouped interface.
 
 

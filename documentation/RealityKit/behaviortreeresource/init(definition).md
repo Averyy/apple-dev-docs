@@ -1,7 +1,8 @@
 # init(definition:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Compile a new resource from data, throws on failure.
 

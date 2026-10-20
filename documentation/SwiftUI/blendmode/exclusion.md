@@ -1,7 +1,8 @@
 # BlendMode.exclusion
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ case exclusion
 
 ## See Also
 
-- [BlendMode.difference](blendmode/difference.md)
+### Inverting
+- [BlendMode.difference](./difference.md)
 
 
 ---

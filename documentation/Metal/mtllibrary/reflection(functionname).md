@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Retrieves reflection information for a function in the library.
@@ -18,6 +19,10 @@ Retrieves reflection information for a function in the library.
 
 ```swift
 func reflection(functionName: String) -> MTLFunctionReflection?
+```
+
+```objc
+- (MTLFunctionReflection *) reflectionForFunctionWithName:(NSString *) functionName;
 ```
 
 #### Return Value
@@ -42,7 +47,7 @@ The method only returns reflection information if all of the following condition
 
 ## Parameters
 
-- `functionName`: The name of a GPU function in the library. The name needs to match one of the elements in the string array of library’s [`functionNames`](mtllibrary/functionnames.md) property.
+- `functionName`: The name of a GPU function in the library. The name needs to match one of the elements in the string array of library’s [`functionNames`](./functionnames.md) property.
 
 
 ---

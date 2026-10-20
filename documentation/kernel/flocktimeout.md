@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct flocktimeout {
     ...
 };
@@ -17,8 +17,8 @@ struct flocktimeout {
 ## Topics
 
 ### Instance Properties
-- [fl](flocktimeout/1572556-fl.md)
-- [timeout](flocktimeout/1572466-timeout.md)
+- [fl](./flocktimeout/api-1572556-fl.md)
+- [timeout](./flocktimeout/api-1572466-timeout.md)
 
 
 ---

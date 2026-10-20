@@ -1,7 +1,8 @@
 # powerToDecibels(_:zeroReference:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns single-precision power values converted to decibel values.
 
@@ -11,7 +12,7 @@ Returns single-precision power values converted to decibel values.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -38,11 +39,12 @@ for (n = 0; n < N; ++n)
 
 ## See Also
 
-- [static func amplitudeToDecibels<U>(U, zeroReference: Float) -> [Float]](vdsp/amplitudetodecibels(_:zeroreference:)-88bpy.md)
+### Converting single-precision power or amplitude values to decibel values
+- [static func amplitudeToDecibels<U>(U, zeroReference: Float) -> [Float]](./amplitudetodecibels%28_,zeroreference%29-88bpy.md)
   Returns single-precision amplitude values converted to decibels.
-- [static func convert<U, V>(amplitude: U, toDecibels: inout V, zeroReference: Float)](vdsp/convert(amplitude:todecibels:zeroreference:)-83uy1.md)
+- [static func convert<U, V>(amplitude: U, toDecibels: inout V, zeroReference: Float)](./convert%28amplitude,todecibels,zeroreference%29-83uy1.md)
   Converts single-precision amplitude values to decibel values.
-- [static func convert<U, V>(power: U, toDecibels: inout V, zeroReference: Float)](vdsp/convert(power:todecibels:zeroreference:)-5u3vs.md)
+- [static func convert<U, V>(power: U, toDecibels: inout V, zeroReference: Float)](./convert%28power,todecibels,zeroreference%29-5u3vs.md)
   Converts single-precision power values to decibel values.
 
 

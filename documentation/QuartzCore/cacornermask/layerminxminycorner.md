@@ -1,7 +1,8 @@
 # layerMinXMinYCorner
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 static var layerMinXMinYCorner: CACornerMask { get }
 ```
 
+```c
+kCALayerMinXMinYCorner
+```
+
 ## See Also
 
-- [init(rawValue: UInt)](cacornermask/init(rawvalue:).md)
-- [static var layerMaxXMaxYCorner: CACornerMask](cacornermask/layermaxxmaxycorner.md)
-- [static var layerMaxXMinYCorner: CACornerMask](cacornermask/layermaxxminycorner.md)
-- [static var layerMinXMaxYCorner: CACornerMask](cacornermask/layerminxmaxycorner.md)
+### Constants
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
+- [static var layerMaxXMaxYCorner: CACornerMask](./layermaxxmaxycorner.md)
+- [static var layerMaxXMinYCorner: CACornerMask](./layermaxxminycorner.md)
+- [static var layerMinXMaxYCorner: CACornerMask](./layerminxmaxycorner.md)
 
 
 ---

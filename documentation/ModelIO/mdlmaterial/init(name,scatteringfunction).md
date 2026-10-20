@@ -1,7 +1,8 @@
 # init(name:scatteringFunction:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a material
 
@@ -19,18 +20,22 @@ Initializes a material
 init(name: String, scatteringFunction: MDLScatteringFunction)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name scatteringFunction:(MDLScatteringFunction *) scatteringFunction;
+```
+
 #### Return Value
 
 A new material object.
 
 #### Discussion
 
-To use the newly created material with a 3D object, assign it to the the [`material`](mdlsubmesh/material.md) property of a [`MDLSubmesh`](mdlsubmesh.md) instance.
+To use the newly created material with a 3D object, assign it to the the [`material`](../mdlsubmesh/material.md) property of a [`MDLSubmesh`](../mdlsubmesh.md) instance.
 
 ## Parameters
 
 - `name`: A descriptive name for the material.
-- `scatteringFunction`: The collection of material properties that define the material’s response to light. For details, see the [`scatteringFunction`](mdlmaterial/scatteringfunction.md) property.
+- `scatteringFunction`: The collection of material properties that define the material’s response to light. For details, see the [`scatteringFunction`](./scatteringfunction.md) property.
 
 
 ---

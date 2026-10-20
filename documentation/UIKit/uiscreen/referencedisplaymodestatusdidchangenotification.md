@@ -1,7 +1,8 @@
 # referenceDisplayModeStatusDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when there’s a change to a screen’s reference display mode status.
 
@@ -18,19 +19,24 @@ nonisolated
 class let referenceDisplayModeStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIScreenReferenceDisplayModeStatusDidChangeNotification;
+```
+
 #### Discussion
 
-The notification’s [`object`](https://developer.apple.com/documentation/foundation/notification/object) is the changed screen. Use that object’s [`referenceDisplayModeStatus`](uiscreen/referencedisplaymodestatus-swift.property.md) property to retrieve the new status.
+The notification’s [`object`](../../Foundation/notification/object.md) is the changed screen. Use that object’s [`referenceDisplayModeStatus`](./referencedisplaymodestatus-swift.property.md) property to retrieve the new status.
 
 The system posts this notification on the main actor.
 
 ## See Also
 
-- [class let brightnessDidChangeNotification: NSNotification.Name](uiscreen/brightnessdidchangenotification.md)
+### Notifications
+- [class let brightnessDidChangeNotification: NSNotification.Name](./brightnessdidchangenotification.md)
   A notification that posts when a screen’s brightness changes.
-- [class let modeDidChangeNotification: NSNotification.Name](uiscreen/modedidchangenotification.md)
+- [class let modeDidChangeNotification: NSNotification.Name](./modedidchangenotification.md)
   A notification that posts when a screen’s mode changes.
-- [class let capturedDidChangeNotification: NSNotification.Name](uiscreen/captureddidchangenotification.md)
+- [class let capturedDidChangeNotification: NSNotification.Name](./captureddidchangenotification.md)
   A notification that posts when the capture status of a screen changes.
 
 

@@ -1,7 +1,8 @@
 # make(sourceFormat:destinationFormat:flags:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a vImage converter that converts from one vImage Core Graphics image format to another.
 
@@ -11,7 +12,7 @@ Creates a vImage converter that converts from one vImage Core Graphics image for
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,17 +23,19 @@ static func make(sourceFormat: vImage_CGImageFormat, destinationFormat: vImage_C
 
 ## Mentions
 
-- [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
+- [Building a basic image conversion workflow](../building-a-basic-image-conversion-workflow.md)
 
 ## See Also
 
-- [func vImageConverter_CreateWithCGImageFormat(UnsafePointer<vImage_CGImageFormat>, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](vimageconverter_createwithcgimageformat(_:_:_:_:_:).md)
+### Related Documentation
+- [func vImageConverter_CreateWithCGImageFormat(UnsafePointer<vImage_CGImageFormat>, UnsafePointer<vImage_CGImageFormat>, UnsafePointer<CGFloat>!, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> Unmanaged<vImageConverter>!](../vimageconverter_createwithcgimageformat%28_,_,_,_,_%29.md)
   Creates a vImage converter that converts from one vImage Core Graphics image format to another.
-- [static func make(sourceFormat: vImageCVImageFormat, destinationFormat: vImage_CGImageFormat, flags: vImage.Options) throws -> vImageConverter](vimageconverter/make(sourceformat:destinationformat:flags:)-8iupf.md)
+### Type Methods
+- [static func make(sourceFormat: vImageCVImageFormat, destinationFormat: vImage_CGImageFormat, flags: vImage.Options) throws -> vImageConverter](./make%28sourceformat,destinationformat,flags%29-8iupf.md)
   Creates a vImage converter that converts a Core Video-formatted image to a Core Graphics-formatted image.
-- [static func make(sourceFormat: vImage_CGImageFormat, destinationFormat: vImageCVImageFormat, flags: vImage.Options) throws -> vImageConverter](vimageconverter/make(sourceformat:destinationformat:flags:)-fub5.md)
+- [static func make(sourceFormat: vImage_CGImageFormat, destinationFormat: vImageCVImageFormat, flags: vImage.Options) throws -> vImageConverter](./make%28sourceformat,destinationformat,flags%29-fub5.md)
   Creates a vImage converter that converts a Core Graphics-formatted image to a Core Video-formatted image.
-- [static func make(sourceFormat: vImage_CGImageFormat, destinationFormat: vImage_CGImageFormat, colorConversionInfo: CGColorConversionInfo) throws -> vImageConverter](vimageconverter/make(sourceformat:destinationformat:colorconversioninfo:).md)
+- [static func make(sourceFormat: vImage_CGImageFormat, destinationFormat: vImage_CGImageFormat, colorConversionInfo: CGColorConversionInfo) throws -> vImageConverter](./make%28sourceformat,destinationformat,colorconversioninfo%29.md)
 
 
 ---

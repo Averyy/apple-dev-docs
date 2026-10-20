@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses typed properties from the intent value at the given index.
 

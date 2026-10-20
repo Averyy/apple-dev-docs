@@ -1,21 +1,26 @@
 # manufacturerSpecific
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var manufacturerSpecific: MIDICIProfileIDManufacturerSpecific { get set }
+```
+
+```c
+MIDICIProfileIDManufacturerSpecific manufacturerSpecific;
 ```
 
 

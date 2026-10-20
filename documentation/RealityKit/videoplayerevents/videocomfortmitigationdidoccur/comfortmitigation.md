@@ -1,7 +1,8 @@
 # comfortMitigation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Video comfort mitigation action occurred
 

@@ -1,7 +1,8 @@
 # AVParameterEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a parameter event on a music track’s destination.
 
@@ -19,9 +20,13 @@ An object that represents a parameter event on a music track’s destination.
 class AVParameterEvent
 ```
 
+```objc
+@interface AVParameterEvent : AVMusicEvent
+```
+
 #### Overview
 
-When you configure an audio unit as the destination for an [`AVMusicTrack`](avmusictrack.md) that contains this event, you can schedule and automate parameter changes.
+When you configure an audio unit as the destination for an [`AVMusicTrack`](./avmusictrack.md) that contains this event, you can schedule and automate parameter changes.
 
 When the track is playing as part of a sequence, the destination audio unit receives set-parameter messages whose values change smoothly along a linear ramp between each event’s beat location.
 
@@ -30,41 +35,42 @@ If you add an event to an empty, non-automation track, the track becomes an auto
 ## Topics
 
 ### Creating a parameter event
-- [init(parameterID: UInt32, scope: UInt32, element: UInt32, value: Float)](avparameterevent/init(parameterid:scope:element:value:).md)
+- [init(parameterID: UInt32, scope: UInt32, element: UInt32, value: Float)](./avparameterevent/init%28parameterid,scope,element,value%29.md)
   Creates an event with a parameter identifier, scope, element, and value for the parameter to set.
 ### Configuring a parameter event
-- [var parameterID: UInt32](avparameterevent/parameterid.md)
+- [var parameterID: UInt32](./avparameterevent/parameterid.md)
   The identifier of the parameter.
-- [var scope: UInt32](avparameterevent/scope.md)
+- [var scope: UInt32](./avparameterevent/scope.md)
   The audio unit scope for the parameter.
-- [var element: UInt32](avparameterevent/element.md)
+- [var element: UInt32](./avparameterevent/element.md)
   The element index in the scope.
-- [var value: Float](avparameterevent/value.md)
+- [var value: Float](./avparameterevent/value.md)
   The value of the parameter to set.
 
 ## Relationships
 
 ### Inherits From
-- [AVMusicEvent](avmusicevent.md)
+- [AVMusicEvent](./avmusicevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMusicEvent](avmusicevent.md)
+### Handling music events
+- [class AVMusicEvent](./avmusicevent.md)
   A base class for the events you associate with a music track.
-- [class AVMusicUserEvent](avmusicuserevent.md)
+- [class AVMusicUserEvent](./avmusicuserevent.md)
   An object that represents a custom user message.
-- [class AVAUPresetEvent](avaupresetevent.md)
+- [class AVAUPresetEvent](./avaupresetevent.md)
   An object that represents a preset load and change on the music track’s destination audio unit.
-- [class AVExtendedTempoEvent](avextendedtempoevent.md)
+- [class AVExtendedTempoEvent](./avextendedtempoevent.md)
   An object that represents a tempo change to a specific beats-per-minute value.
-- [class AVExtendedNoteOnEvent](avextendednoteonevent.md)
+- [class AVExtendedNoteOnEvent](./avextendednoteonevent.md)
   An object that represents a custom extension of a MIDI note on event.
 
 

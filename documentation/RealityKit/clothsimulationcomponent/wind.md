@@ -1,7 +1,8 @@
 # wind
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wind force affecting all the cloth bodies in the simulation, in Newtons.
 
@@ -24,9 +25,10 @@ Expressed in the simulation root entity’s local coordinate space. The default 
 
 ## See Also
 
-- [var gravity: SIMD3<Float>](clothsimulationcomponent/gravity.md)
+### Applying forces
+- [var gravity: SIMD3<Float>](./gravity.md)
   The gravitational acceleration for the bodies in the simulation, in m/s².
-- [var dampingFactor: Float](clothsimulationcomponent/dampingfactor.md)
+- [var dampingFactor: Float](./dampingfactor.md)
   The damping factor affecting all the cloth bodies in the simulation. The expected range is between 0 and 1 (included).
 
 

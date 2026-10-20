@@ -1,7 +1,8 @@
 # init(glTexture:target:width:height:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a render destination based on an OpenGL texture.
 
@@ -19,15 +20,19 @@ Creates a render destination based on an OpenGL texture.
 init(glTexture texture: UInt32, target: UInt32, width: Int, height: Int)
 ```
 
+```objc
+- (instancetype) initWithGLTexture:(unsigned int) texture target:(unsigned int) target width:(NSUInteger) width height:(NSUInteger) height;
+```
+
 #### Return Value
 
-A [`CIRenderDestination`](cirenderdestination.md) object for rendering to a `GLTexture` supported by `GLContext`-backed [`CIContext`](cicontext.md).
+A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to a `GLTexture` supported by `GLContext`-backed [`CIContext`](../cicontext.md).
 
 #### Discussion
 
-Rendering to a `GLTexture`-backed [`CIRenderDestination`](cirenderdestination.md) is supported by only `GLContext`-backed [`CIContext`](cicontext.md).
+Rendering to a `GLTexture`-backed [`CIRenderDestination`](../cirenderdestination.md) is supported by only `GLContext`-backed [`CIContext`](../cicontext.md).
 
-The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) created with [`sRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/srgb), [`extendedSRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/extendedsrgb), or [`genericGrayGamma2_2`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/genericgraygamma2_2).
+The destination’s [`colorSpace`](./colorspace.md) property will default to a [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md) created with [`sRGB`](../../CoreGraphics/cgcolorspace/srgb.md), [`extendedSRGB`](../../CoreGraphics/cgcolorspace/extendedsrgb.md), or [`genericGrayGamma2_2`](../../CoreGraphics/cgcolorspace/genericgraygamma2_2.md).
 
 ## Parameters
 
@@ -38,15 +43,16 @@ The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property w
 
 ## See Also
 
-- [init(pixelBuffer: CVPixelBuffer)](cirenderdestination/init(pixelbuffer:).md)
+### Creating a Render Destination
+- [init(pixelBuffer: CVPixelBuffer)](./init%28pixelbuffer%29.md)
   Creates a render destination based on a Core Video pixel buffer.
-- [init(ioSurface: IOSurface)](cirenderdestination/init(iosurface:)-1hfcq.md)
+- [init(ioSurface: IOSurface)](./init%28iosurface%29-1hfcq.md)
   Creates a render destination based on an `IOSurface` object.
-- [init(mtlTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](cirenderdestination/init(mtltexture:commandbuffer:)-2iu5i.md)
+- [init(mtlTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](./init%28mtltexture,commandbuffer%29-2iu5i.md)
   Creates a render destination based on a Metal texture.
-- [init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any MTLCommandBuffer)?, mtlTextureProvider: (() -> any MTLTexture)?)](cirenderdestination/init(width:height:pixelformat:commandbuffer:mtltextureprovider:).md)
+- [init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any MTLCommandBuffer)?, mtlTextureProvider: (() -> any MTLTexture)?)](./init%28width,height,pixelformat,commandbuffer,mtltextureprovider%29.md)
   Creates a render destination based on a Metal texture with specified pixel format.
-- [init(bitmapData: UnsafeMutableRawPointer, width: Int, height: Int, bytesPerRow: Int, format: CIFormat)](cirenderdestination/init(bitmapdata:width:height:bytesperrow:format:).md)
+- [init(bitmapData: UnsafeMutableRawPointer, width: Int, height: Int, bytesPerRow: Int, format: CIFormat)](./init%28bitmapdata,width,height,bytesperrow,format%29.md)
   Creates a render destination based on a client-managed buffer.
 
 

@@ -1,7 +1,8 @@
 # sheared(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sheared size.
 

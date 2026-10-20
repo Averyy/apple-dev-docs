@@ -1,7 +1,8 @@
 # motionType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option that implements animation effects.
 

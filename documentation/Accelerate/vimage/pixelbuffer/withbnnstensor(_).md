@@ -1,7 +1,8 @@
 # withBNNSTensor(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to a BNNS tensor that shares memory with the pixel buffer.
 
@@ -20,11 +21,13 @@ Calls the given closure with a pointer to a BNNS tensor that shares memory with 
 func withBNNSTensor<R>(_ body: (BNNSTensor) throws -> R) rethrows -> R
 ```
 
+Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentType` conforms to `BNNSScalar`.
+
 #### Discussion
 
 Use this function to pass image data to a `BNNSGraph`. For example, the following code creates a graph that calculates the mean value of an image and apply a threshold based on the mean.
 
-```None
+```
 let context = try BNNSGraph.makeContext {
    builder in
 
@@ -44,7 +47,7 @@ let context = try BNNSGraph.makeContext {
 
 Use `withBNNSTensor()` to pass source and destination pixel buffers to the context:
 
-```None
+```
 let source = vImage.PixelBuffer<vImage.Planar16F>(...)
 let destination = vImage.PixelBuffer<vImage.Planar16F>(...)
 source.withBNNSTensor { src in
@@ -63,7 +66,7 @@ Note that the tensor that this function creates has the shape `height, width, ch
 
 For example, given the following code:
 
-```None
+```
    let sourcePixels: [Float] = [
        001, 002, 003, 004,     005, 006, 007, 008,     009, 010, 011, 012,
        013, 014, 015, 016,     017, 018, 019, 020,     021, 022, 023, 024,
@@ -104,7 +107,7 @@ For example, given the following code:
 
 The slice selects rows 0, 1, and 2 and columns 1 and 2. On return, `destination` contains the following values:
 
-```None
+```
        [
            005, 006, 007, 008,     009, 010, 011, 012,
            017, 018, 019, 020,     021, 022, 023, 024,

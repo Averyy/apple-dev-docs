@@ -1,7 +1,8 @@
 # MobileDriversLicenseDisplayRequest
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mobile driver’s license request that retrieves elements from the holder and displays the results onscreen for visual inspection.
 
@@ -18,64 +19,65 @@ struct MobileDriversLicenseDisplayRequest
 
 ## Mentions
 
-- [Checking IDs with the Verifier API](checking-ids-with-the-verifier-api.md)
+- [Checking IDs with the Verifier API](./checking-ids-with-the-verifier-api.md)
 
 ## Topics
 
 ### Creating a display request
-- [init(elements: [MobileDriversLicenseDisplayRequest.Element], options: MobileDriversLicenseDisplayRequest.Options)](mobiledriverslicensedisplayrequest/init(elements:options:).md)
+- [init(elements: [MobileDriversLicenseDisplayRequest.Element], options: MobileDriversLicenseDisplayRequest.Options)](./mobiledriverslicensedisplayrequest/init%28elements,options%29.md)
   Creates a new mobile driver’s license display request.
-- [var elements: [MobileDriversLicenseDisplayRequest.Element]](mobiledriverslicensedisplayrequest/elements.md)
+- [var elements: [MobileDriversLicenseDisplayRequest.Element]](./mobiledriverslicensedisplayrequest/elements.md)
   The document elements you’re requesting.
-- [MobileDriversLicenseDisplayRequest.Element](mobiledriverslicensedisplayrequest/element.md)
+- [MobileDriversLicenseDisplayRequest.Element](./mobiledriverslicensedisplayrequest/element.md)
   A type that represents an element you can request from a mobile driver’s license.
 ### Configuring a display request
-- [var options: MobileDriversLicenseDisplayRequest.Options](mobiledriverslicensedisplayrequest/options-swift.property.md)
+- [var options: MobileDriversLicenseDisplayRequest.Options](./mobiledriverslicensedisplayrequest/options-swift.property.md)
   An object that customizes how to perform a display request.
-- [MobileDriversLicenseDisplayRequest.Options](mobiledriverslicensedisplayrequest/options-swift.struct.md)
+- [MobileDriversLicenseDisplayRequest.Options](./mobiledriverslicensedisplayrequest/options-swift.struct.md)
   An object that customizes how to perform a display request.
 ### Handling the response
-- [MobileDriversLicenseDisplayRequest.Response](mobiledriverslicensedisplayrequest/response.md)
+- [MobileDriversLicenseDisplayRequest.Response](./mobiledriverslicensedisplayrequest/response.md)
   A type that contains the response information from a successful mobile driver’s license display request.
 ### Default Implementations
-- [MobileDocumentRequest Implementations](mobiledriverslicensedisplayrequest/mobiledocumentrequest-implementations.md)
+- [MobileDocumentRequest Implementations](./mobiledriverslicensedisplayrequest/mobiledocumentrequest-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MobileDocumentRequest](mobiledocumentrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MobileDocumentRequest](./mobiledocumentrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MobileDriversLicenseDataRequest](mobiledriverslicensedatarequest.md)
+### Mobile document requests
+- [struct MobileDriversLicenseDataRequest](./mobiledriverslicensedatarequest.md)
   A mobile driver’s license request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobileDriversLicenseRawDataRequest](mobiledriverslicenserawdatarequest.md)
+- [struct MobileDriversLicenseRawDataRequest](./mobiledriverslicenserawdatarequest.md)
   A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
-- [struct MobileNationalIDCardDisplayRequest](mobilenationalidcarddisplayrequest.md)
+- [struct MobileNationalIDCardDisplayRequest](./mobilenationalidcarddisplayrequest.md)
   A mobile national ID card request that retrieves elements from the holder and displays the results onscreen for visual inspection.
-- [struct MobileNationalIDCardDataRequest](mobilenationalidcarddatarequest.md)
+- [struct MobileNationalIDCardDataRequest](./mobilenationalidcarddatarequest.md)
   A mobile national ID card request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobileNationalIDCardRawDataRequest](mobilenationalidcardrawdatarequest.md)
+- [struct MobileNationalIDCardRawDataRequest](./mobilenationalidcardrawdatarequest.md)
   A mobile national ID card request which retrieves elements from the holder and returns the raw response data for processing.
-- [struct MobileDocumentDisplayRequest](mobiledocumentdisplayrequest.md)
+- [struct MobileDocumentDisplayRequest](./mobiledocumentdisplayrequest.md)
   A mobile document request that retrieves elements from the holder and displays the results onscreen for visual inspection.
-- [protocol MobileDocumentRequest](mobiledocumentrequest.md)
+- [protocol MobileDocumentRequest](./mobiledocumentrequest.md)
   A type that represents a mobile document request.
-- [protocol MobileDocumentDataRequest](mobiledocumentdatarequest.md)
+- [protocol MobileDocumentDataRequest](./mobiledocumentdatarequest.md)
   A type that represents a mobile document data request.
-- [protocol MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
+- [protocol MobileDocumentRawDataRequest](./mobiledocumentrawdatarequest.md)
   A type that represents a mobile document raw data request.
-- [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
+- [struct MobilePhotoIDDataRequest](./mobilephotoiddatarequest.md)
   A photo ID request that retrieves elements from the holder and returns the validated document elements.
-- [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
+- [struct MobilePhotoIDRawDataRequest](./mobilephotoidrawdatarequest.md)
   A photo ID request which retrieves elements from the holder and returns the raw response data for processing.
-- [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
+- [struct MobileDocumentAnyOfDataRequest](./mobiledocumentanyofdatarequest.md)
   A type that describes a data request for any mobile document from a group of requests.
-- [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)
+- [struct MobileDocumentAnyOfRawDataRequest](./mobiledocumentanyofrawdatarequest.md)
   A type that describes a raw data request for any mobile document from a group of requests.
 
 

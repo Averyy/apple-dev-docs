@@ -1,7 +1,8 @@
 # shortcutItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-selected action to perform.
 
@@ -17,11 +18,15 @@ The user-selected action to perform.
 var shortcutItem: UIApplicationShortcutItem? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIApplicationShortcutItem * shortcutItem;
+```
+
 #### Discussion
 
 If the user selected one of your app’s quick actions, this property contains the selected action. You use quick actions to provide access to frequently used features of your app, and the user accesses those actions through interactions with your app’s icon in the Home Screen. If the user didn’t select a quick action, this property is `nil`.
 
-For an example of how to set up quick actions for your app, see [`Add Home Screen quick actions`](add-home-screen-quick-actions.md).
+For an example of how to set up quick actions for your app, see [Add Home Screen quick actions](../../add-home-screen-quick-actions.md).
 
 
 ---

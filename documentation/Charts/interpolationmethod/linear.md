@@ -1,7 +1,8 @@
 # linear
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interpolate data points linearly.
 

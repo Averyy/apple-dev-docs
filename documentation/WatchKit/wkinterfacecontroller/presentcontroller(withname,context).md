@@ -1,7 +1,8 @@
 # presentController(withName:context:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a single interface controller modally.
 
@@ -14,15 +15,19 @@ Presents a single interface controller modally.
 func presentController(withName name: String, context: Any?)
 ```
 
+```objc
+- (void) presentControllerWithName:(NSString *) name context:(id) context;
+```
+
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
 After calling this method, the WatchKit extension loads and initializes the new interface controller and animates it into position on top of the current interface controller. A modal interface slides up from the bottom of the screen and completely covers the previous interface.
 
-The title of the modal interface is set to the string `Cancel` by default. Change the title using the [`setTitle(_:)`](wkinterfacecontroller/settitle(_:).md) method. Tapping the title dismisses the interface automatically. To dismiss the interface programmatically, call the [`dismiss()`](wkinterfacecontroller/dismiss().md) method.
+The title of the modal interface is set to the string `Cancel` by default. Change the title using the [`setTitle(_:)`](./settitle%28_%29.md) method. Tapping the title dismisses the interface automatically. To dismiss the interface programmatically, call the [`dismiss()`](./dismiss%28%29.md) method.
 
 Always call this method from your WatchKit extension’s main thread.
 
@@ -33,15 +38,16 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## See Also
 
-- [func presentController(withNames: [String], contexts: [Any]?)](wkinterfacecontroller/presentcontroller(withnames:contexts:).md)
+### Presenting interface controllers modally
+- [func presentController(withNames: [String], contexts: [Any]?)](./presentcontroller%28withnames,contexts%29.md)
   Presents a page-based interface modally.
-- [func presentController(withNamesAndContexts: [(name: String, context: AnyObject)])](wkinterfacecontroller/presentcontroller(withnamesandcontexts:).md)
+- [func presentController(withNamesAndContexts: [(name: String, context: AnyObject)])](./presentcontroller%28withnamesandcontexts%29.md)
   Presents a page-based interface modally.
-- [func presentAlert(withTitle: String?, message: String?, preferredStyle: WKAlertControllerStyle, actions: [WKAlertAction])](wkinterfacecontroller/presentalert(withtitle:message:preferredstyle:actions:).md)
+- [func presentAlert(withTitle: String?, message: String?, preferredStyle: WKAlertControllerStyle, actions: [WKAlertAction])](./presentalert%28withtitle,message,preferredstyle,actions%29.md)
   Presents an alert or action sheet over the current interface controller.
-- [enum WKAlertControllerStyle](wkalertcontrollerstyle.md)
+- [enum WKAlertControllerStyle](../wkalertcontrollerstyle.md)
   Constants indicating the styles for standard system alerts.
-- [func dismiss()](wkinterfacecontroller/dismiss.md)
+- [func dismiss()](./dismiss%28%29.md)
   Dismisses the current interface controller from the screen.
 
 

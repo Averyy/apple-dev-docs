@@ -1,7 +1,8 @@
 # EAWiFiUnconfiguredAccessoryBrowserState.wiFiUnavailable
 
 **Framework**: External Accessory  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Wi-Fi is unavailable, typically because the user has placed the device in Airplane Mode or explicitly turned off Wi-Fi.
 
@@ -19,13 +20,18 @@ Wi-Fi is unavailable, typically because the user has placed the device in Airpla
 case wiFiUnavailable
 ```
 
+```c
+EAWiFiUnconfiguredAccessoryBrowserStateWiFiUnavailable
+```
+
 ## See Also
 
-- [EAWiFiUnconfiguredAccessoryBrowserState.stopped](eawifiunconfiguredaccessorybrowserstate/stopped.md)
+### States
+- [EAWiFiUnconfiguredAccessoryBrowserState.stopped](./stopped.md)
   The browser is not actively searching for unconfigured accessories.
-- [EAWiFiUnconfiguredAccessoryBrowserState.searching](eawifiunconfiguredaccessorybrowserstate/searching.md)
+- [EAWiFiUnconfiguredAccessoryBrowserState.searching](./searching.md)
   The browser is actively searching for unconfigured accessory.
-- [EAWiFiUnconfiguredAccessoryBrowserState.configuring](eawifiunconfiguredaccessorybrowserstate/configuring.md)
+- [EAWiFiUnconfiguredAccessoryBrowserState.configuring](./configuring.md)
   The browser is actively configuring an accessory.
 
 

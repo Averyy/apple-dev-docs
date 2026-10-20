@@ -1,7 +1,8 @@
 # url
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 URL to open.
 
@@ -16,9 +17,10 @@ let url: URL
 
 ## See Also
 
-- [let target: RCSService.Business.OpenURLAction.Target](rcsservice/business/openurlaction/target-swift.property.md)
+### Accessing action properties
+- [let target: RCSService.Business.OpenURLAction.Target](./target-swift.property.md)
   Target to use when opening URL.
-- [RCSService.Business.OpenURLAction.Target](rcsservice/business/openurlaction/target-swift.enum.md)
+- [RCSService.Business.OpenURLAction.Target](./target-swift.enum.md)
   Enumeration representing the target to open the URL in.
 
 

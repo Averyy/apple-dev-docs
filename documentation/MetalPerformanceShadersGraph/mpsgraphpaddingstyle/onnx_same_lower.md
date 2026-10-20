@@ -1,7 +1,8 @@
 # MPSGraphPaddingStyle.ONNX_SAME_LOWER
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Explicit offsets
 
@@ -17,6 +18,10 @@ Explicit offsets
 
 ```swift
 case ONNX_SAME_LOWER
+```
+
+```c
+MPSGraphPaddingStyleONNX_SAME_LOWER
 ```
 
 

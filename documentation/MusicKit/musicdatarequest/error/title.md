@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A developer-friendly title for the error.
 

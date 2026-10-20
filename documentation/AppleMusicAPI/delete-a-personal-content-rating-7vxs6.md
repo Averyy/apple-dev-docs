@@ -1,7 +1,8 @@
 # Delete a Personal Library Playlist Rating
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remove a user’s library playlist rating by using the library playlist’s identifier.
 
@@ -10,7 +11,7 @@ Remove a user’s library playlist rating by using the library playlist’s iden
 
 #### Discussion
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 A rating indicates whether a user likes `(1)` or dislikes `(-1)` the playlist. These are the only two ratings supported.
 
@@ -20,7 +21,7 @@ For a particular playlist, the personal ratings for that playlist’s catalog ID
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/ratings/library-playlists/p.MoGJYM3CYXW09B
 ```
 
@@ -36,17 +37,32 @@ No response body.
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the library playlist.
+
+### Query Parameters
+
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
+
+## Responses
+
+- `204` No Content (`EmptyBodyResponse`, `application/json`): The modification was successful, but there’s no content in the response.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
 
 ## See Also
 
-- [object Ratings](ratings.md)
+### Related Documentation
+- [object Ratings](./ratings.md)
   An object that represents a rating for a resource.
-- [Delete a Personal Library Album Rating](delete-a-personal-content-rating-32o8r.md)
+### Deleting Library Ratings
+- [Delete a Personal Library Album Rating](./delete-a-personal-content-rating-32o8r.md)
   Remove a user’s content rating by using the content’s identifier.
-- [Delete a Personal Library Music Video Rating](delete-a-personal-content-rating-1vj60.md)
+- [Delete a Personal Library Music Video Rating](./delete-a-personal-content-rating-1vj60.md)
   Remove a user’s library music video rating by using the library music video’s identifier.
-- [Delete a Personal Library Song Rating](delete-a-personal-content-rating-2k02e.md)
+- [Delete a Personal Library Song Rating](./delete-a-personal-content-rating-2k02e.md)
   Remove a user’s library song rating by using the library song’s identifier.
 
 

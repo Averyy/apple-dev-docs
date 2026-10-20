@@ -1,7 +1,8 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the menu element.
 
@@ -18,11 +19,16 @@ The title of the menu element.
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * title;
+```
+
 ## See Also
 
-- [var subtitle: String?](uimenuelement/subtitle.md)
+### Getting the element attributes
+- [var subtitle: String?](./subtitle.md)
   The subtitle to display alongside the menu element’s title.
-- [var image: UIImage?](uimenuelement/image.md)
+- [var image: UIImage?](./image.md)
   The image to display alongside the menu element’s title.
 
 

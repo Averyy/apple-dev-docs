@@ -1,7 +1,8 @@
 # AudioValueTranslation
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that stores buffers to use in translation operations.
 
@@ -20,28 +21,33 @@ A structure that stores buffers to use in translation operations.
 struct AudioValueTranslation
 ```
 
+```c
+struct AudioValueTranslation;
+```
+
 ## Topics
 
 ### Initializers
-- [init(mInputData: UnsafeMutableRawPointer, mInputDataSize: UInt32, mOutputData: UnsafeMutableRawPointer, mOutputDataSize: UInt32)](audiovaluetranslation/init(minputdata:minputdatasize:moutputdata:moutputdatasize:).md)
+- [init(mInputData: UnsafeMutableRawPointer, mInputDataSize: UInt32, mOutputData: UnsafeMutableRawPointer, mOutputDataSize: UInt32)](./audiovaluetranslation/init%28minputdata,minputdatasize,moutputdata,moutputdatasize%29.md)
 ### Instance Properties
-- [var mInputData: UnsafeMutableRawPointer](audiovaluetranslation/minputdata.md)
+- [var mInputData: UnsafeMutableRawPointer](./audiovaluetranslation/minputdata.md)
   The buffer containing the data to be translated.
-- [var mInputDataSize: UInt32](audiovaluetranslation/minputdatasize.md)
+- [var mInputDataSize: UInt32](./audiovaluetranslation/minputdatasize.md)
   The number of bytes in the buffer pointed at by `mInputData`.
-- [var mOutputData: UnsafeMutableRawPointer](audiovaluetranslation/moutputdata.md)
+- [var mOutputData: UnsafeMutableRawPointer](./audiovaluetranslation/moutputdata.md)
   The buffer to hold the result of the translation.
-- [var mOutputDataSize: UInt32](audiovaluetranslation/moutputdatasize.md)
+- [var mOutputDataSize: UInt32](./audiovaluetranslation/moutputdatasize.md)
   The number of bytes in the buffer pointed at by `mOutputData`.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct AudioValueRange](audiovaluerange.md)
+### Values
+- [struct AudioValueRange](./audiovaluerange.md)
   A structure that represents a continuous range of values.
 
 

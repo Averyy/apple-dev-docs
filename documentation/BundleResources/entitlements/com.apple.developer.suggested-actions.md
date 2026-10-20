@@ -1,7 +1,8 @@
 # Suggested Actions
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether a messaging app displays suggested actions for a message.
 
@@ -9,9 +10,12 @@ A Boolean value that indicates whether a messaging app displays suggested action
 - iOS 27.0+
 - iPadOS 27.0+
 
+## Details
+
+- **Name**: `com.apple.developer.suggested-actions`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
@@ -21,7 +25,7 @@ A Boolean value that indicates whether a messaging app displays suggested action
 
 #### Overview
 
-Add this entitlement to your app and use the [`Suggested Actions`](https://developer.apple.com/documentation/suggestedactions) framework to add a view to your messaging app that suggests actions, based on the content of a message. For example, a person might receive a message with an invite to an event, and your app can automatically display a suggested action for adding the event in Calendar.
+Add this entitlement to your app and use the [Suggested Actions](../../SuggestedActions/SuggestedActions.md) framework to add a view to your messaging app that suggests actions, based on the content of a message. For example, a person might receive a message with an invite to an event, and your app can automatically display a suggested action for adding the event in Calendar.
 
 
 ---

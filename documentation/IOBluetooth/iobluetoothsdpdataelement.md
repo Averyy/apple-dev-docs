@@ -1,17 +1,22 @@
 # IOBluetoothSDPDataElement
 
 **Framework**: IOBluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance of this class represents a single SDP data element as defined by the Bluetooth SDP spec.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class IOBluetoothSDPDataElement
+```
+
+```objc
+@interface IOBluetoothSDPDataElement : NSObject
 ```
 
 #### Overview
@@ -39,86 +44,87 @@ In the case where the element is a data element sequence, the value may be an ar
 ## Topics
 
 ### Initializers
-- [init!(elementValue: NSObject!)](iobluetoothsdpdataelement/init(elementvalue:).md)
+- [init!(elementValue: NSObject!)](./iobluetoothsdpdataelement/init%28elementvalue%29.md)
   Initializes a new IOBluetoothSDPDataElement with the given value.
-- [init!(type: BluetoothSDPDataElementTypeDescriptor, sizeDescriptor: BluetoothSDPDataElementSizeDescriptor, size: UInt32, value: NSObject!)](iobluetoothsdpdataelement/init(type:sizedescriptor:size:value:).md)
+- [init!(type: BluetoothSDPDataElementTypeDescriptor, sizeDescriptor: BluetoothSDPDataElementSizeDescriptor, size: UInt32, value: NSObject!)](./iobluetoothsdpdataelement/init%28type,sizedescriptor,size,value%29.md)
   Initializes a new IOBluetoothSDPDataElement with the given attributes.
-- [init?(coder: NSCoder)](iobluetoothsdpdataelement/init(coder:).md)
+- [init?(coder: NSCoder)](./iobluetoothsdpdataelement/init%28coder%29.md)
 ### Instance Methods
-- [func contains(IOBluetoothSDPDataElement!) -> Bool](iobluetoothsdpdataelement/contains(_:).md)
+- [func contains(IOBluetoothSDPDataElement!) -> Bool](./iobluetoothsdpdataelement/contains%28_%29.md)
   Checks to see if the target data element is the same as the dataElement parameter or if it contains the dataElement parameter (if its a sequence type).
-- [func containsValue(NSObject!) -> Bool](iobluetoothsdpdataelement/containsvalue(_:).md)
+- [func containsValue(NSObject!) -> Bool](./iobluetoothsdpdataelement/containsvalue%28_%29.md)
   Checks to see if the target data element’s value is the same as the value parameter or if it contains the value parameter.
-- [func getArrayValue() -> [Any]!](iobluetoothsdpdataelement/getarrayvalue.md)
+- [func getArrayValue() -> [Any]!](./iobluetoothsdpdataelement/getarrayvalue%28%29.md)
   If the data element is represented by an array object, it returns the value as an NSArray.
-- [func getDataValue() -> Data!](iobluetoothsdpdataelement/getdatavalue.md)
+- [func getDataValue() -> Data!](./iobluetoothsdpdataelement/getdatavalue%28%29.md)
   If the data element is represented by a data object, it returns the value as an NSData.
-- [func getNumberValue() -> NSNumber!](iobluetoothsdpdataelement/getnumbervalue.md)
+- [func getNumberValue() -> NSNumber!](./iobluetoothsdpdataelement/getnumbervalue%28%29.md)
   If the data element is represented by a number, it returns the value as an NSNumber.
-- [func getRef() -> Unmanaged<IOBluetoothSDPDataElementRef>!](iobluetoothsdpdataelement/getref.md)
+- [func getRef() -> Unmanaged<IOBluetoothSDPDataElementRef>!](./iobluetoothsdpdataelement/getref%28%29.md)
   Returns an IOBluetoothSDPDataElementRef representation of the target IOBluetoothSDPDataElement object.
-- [func getSize() -> UInt32](iobluetoothsdpdataelement/getsize.md)
+- [func getSize() -> UInt32](./iobluetoothsdpdataelement/getsize%28%29.md)
   Returns the size in bytes of the target data element.
-- [func getSizeDescriptor() -> BluetoothSDPDataElementSizeDescriptor](iobluetoothsdpdataelement/getsizedescriptor.md)
+- [func getSizeDescriptor() -> BluetoothSDPDataElementSizeDescriptor](./iobluetoothsdpdataelement/getsizedescriptor%28%29.md)
   Returns the SDP spec defined data element size descriptor for the target data element.
-- [func getStringValue() -> String!](iobluetoothsdpdataelement/getstringvalue.md)
+- [func getStringValue() -> String!](./iobluetoothsdpdataelement/getstringvalue%28%29.md)
   If the data element is represented by a string object, it returns the value as an NSString.
-- [func getTypeDescriptor() -> BluetoothSDPDataElementTypeDescriptor](iobluetoothsdpdataelement/gettypedescriptor.md)
+- [func getTypeDescriptor() -> BluetoothSDPDataElementTypeDescriptor](./iobluetoothsdpdataelement/gettypedescriptor%28%29.md)
   Returns the SDP spec defined data element type descriptor for the target data element.
-- [func getUUIDValue() -> IOBluetoothSDPUUID!](iobluetoothsdpdataelement/getuuidvalue.md)
+- [func getUUIDValue() -> IOBluetoothSDPUUID!](./iobluetoothsdpdataelement/getuuidvalue%28%29.md)
   If the data element is a UUID (type 3), it returns the value as an IOBluetoothSDPUUID.
-- [func getValue() -> NSObject!](iobluetoothsdpdataelement/getvalue.md)
+- [func getValue() -> NSObject!](./iobluetoothsdpdataelement/getvalue%28%29.md)
   Returns the object value of the data element.
 ### Type Methods
-- [class func withElementValue(NSObject!) -> Self!](iobluetoothsdpdataelement/withelementvalue(_:).md)
+- [class func withElementValue(NSObject!) -> Self!](./iobluetoothsdpdataelement/withelementvalue%28_%29.md)
   Creates a new IOBluetoothSDPDataElement with the given value.
-- [class func withSDPDataElementRef(IOBluetoothSDPDataElementRef!) -> Self!](iobluetoothsdpdataelement/withsdpdataelementref(_:).md)
+- [class func withSDPDataElementRef(IOBluetoothSDPDataElementRef!) -> Self!](./iobluetoothsdpdataelement/withsdpdataelementref%28_%29.md)
   Method call to convert an IOBluetoothSDPDataElementRef into an IOBluetoothSDPDataElement *.
-- [class func withType(BluetoothSDPDataElementTypeDescriptor, sizeDescriptor: BluetoothSDPDataElementSizeDescriptor, size: UInt32, value: NSObject!) -> Self!](iobluetoothsdpdataelement/withtype(_:sizedescriptor:size:value:).md)
+- [class func withType(BluetoothSDPDataElementTypeDescriptor, sizeDescriptor: BluetoothSDPDataElementSizeDescriptor, size: UInt32, value: NSObject!) -> Self!](./iobluetoothsdpdataelement/withtype%28_,sizedescriptor,size,value%29.md)
   Creates a new IOBluetoothSDPDataElement with the given attributes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class IOBluetoothDevice](iobluetoothdevice.md)
+### Classes
+- [class IOBluetoothDevice](./iobluetoothdevice.md)
   An instance of IOBluetoothDevice represents a single remote Bluetooth device.
-- [class IOBluetoothDeviceInquiry](iobluetoothdeviceinquiry.md)
+- [class IOBluetoothDeviceInquiry](./iobluetoothdeviceinquiry.md)
   Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them.
-- [class IOBluetoothDevicePair](iobluetoothdevicepair.md)
+- [class IOBluetoothDevicePair](./iobluetoothdevicepair.md)
   An instance of IOBluetoothDevicePair represents a pairing attempt to a remote Bluetooth device.
-- [class IOBluetoothDeviceRef](iobluetoothdeviceref.md)
+- [class IOBluetoothDeviceRef](./iobluetoothdeviceref.md)
   An object that represents a Bluetooth I/O device.
-- [class IOBluetoothHandsFree](iobluetoothhandsfree.md)
+- [class IOBluetoothHandsFree](./iobluetoothhandsfree.md)
   Hands free profile class.
-- [class IOBluetoothHandsFreeAudioGateway](iobluetoothhandsfreeaudiogateway.md)
+- [class IOBluetoothHandsFreeAudioGateway](./iobluetoothhandsfreeaudiogateway.md)
   An object that sends data to a connected Bluetooth hands-free phone or headset and processes commands from it.
-- [class IOBluetoothHandsFreeDevice](iobluetoothhandsfreedevice.md)
+- [class IOBluetoothHandsFreeDevice](./iobluetoothhandsfreedevice.md)
   An object you use to manage phone calls on a connected Bluetooth hands-free phone or headset.
-- [class IOBluetoothHostController](iobluetoothhostcontroller.md)
+- [class IOBluetoothHostController](./iobluetoothhostcontroller.md)
   This class is a representation of a Bluetooth Host Controller Interface that is present on the local computer (either plugged in externally or available internally).
-- [class IOBluetoothL2CAPChannel](iobluetoothl2capchannel.md)
+- [class IOBluetoothL2CAPChannel](./iobluetoothl2capchannel.md)
   An instance of IOBluetoothL2CAPChannel represents a single open L2CAP channel.
-- [class IOBluetoothL2CAPChannelRef](iobluetoothl2capchannelref.md)
-- [class IOBluetoothOBEXSession](iobluetoothobexsession.md)
+- [class IOBluetoothL2CAPChannelRef](./iobluetoothl2capchannelref.md)
+- [class IOBluetoothOBEXSession](./iobluetoothobexsession.md)
   An OBEX Session with a Bluetooth RFCOMM channel as the transport.
-- [class IOBluetoothObject](iobluetoothobject.md)
-- [class IOBluetoothObjectRef](iobluetoothobjectref.md)
-- [class IOBluetoothRFCOMMChannel](iobluetoothrfcommchannel.md)
+- [class IOBluetoothObject](./iobluetoothobject.md)
+- [class IOBluetoothObjectRef](./iobluetoothobjectref.md)
+- [class IOBluetoothRFCOMMChannel](./iobluetoothrfcommchannel.md)
   An instance of this class represents an RFCOMM channel as defined by the Bluetooth SDP spec..
-- [class IOBluetoothRFCOMMChannelRef](iobluetoothrfcommchannelref.md)
+- [class IOBluetoothRFCOMMChannelRef](./iobluetoothrfcommchannelref.md)
 
 
 ---

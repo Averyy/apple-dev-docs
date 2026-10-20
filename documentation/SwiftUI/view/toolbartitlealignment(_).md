@@ -1,7 +1,8 @@
 # toolbarTitleAlignment(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred alignment of the navigation bar’s title.
 

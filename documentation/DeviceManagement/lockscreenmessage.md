@@ -1,7 +1,8 @@
 # LockScreenMessage
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a Lock Screen message.
 
@@ -12,7 +13,7 @@ The payload that configures a Lock Screen message.
 
 ## Declaration
 
-```swift
+```
 object LockScreenMessage
 ```
 
@@ -22,7 +23,7 @@ Specify `com.apple.shareddeviceconfiguration` as the payload type.
 
 This payload allows administrators to specify optional text displayed in the Login Window and Lock Screen (for example, an “If Lost, Return To” message and asset tag information). There can only be one Lock Screen payload.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ This payload allows administrators to specify optional text displayed in the Log
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -75,26 +76,31 @@ This payload allows administrators to specify optional text displayed in the Log
 ## Properties
 
 - `AssetTagInformation` (string): The asset tag information for the device, displayed in the Login Window and Lock Screen.
-- `IfLostReturnToMessage` (string): Deprecated. Use `LockScreenFootnote` instead. Deprecated: iOS 9.3.1+ | iPadOS 9.3.1+
-- `LockScreenFootnote` (string): The footnote displayed in the Login Window and Lock Screen. Available: iOS 9.3.1+ | iPadOS 9.3.1+
+- `IfLostReturnToMessage` (string) *(deprecated)*: Deprecated. Use `LockScreenFootnote` instead.
+
+  Deprecated: iOS 9.3.1+ | iPadOS 9.3.1+
+- `LockScreenFootnote` (string): The footnote displayed in the Login Window and Lock Screen.
+
+  Available: iOS 9.3.1+ | iPadOS 9.3.1+
 
 ## See Also
 
-- [object Declarations](declarations.md)
+### System configuration
+- [object Declarations](./declarations.md)
   The payload that applies a set of declarations to the device through the Settings app.
-- [object EnergySaver](energysaver.md)
+- [object EnergySaver](./energysaver.md)
   The payload that configures Energy Saver settings.
-- [object FileProvider](fileprovider.md)
+- [object FileProvider](./fileprovider.md)
   The payload that configures file provider settings.
-- [object Font](font.md)
+- [object Font](./font.md)
   The payload that configures fonts.
-- [object Screensaver](screensaver.md)
+- [object Screensaver](./screensaver.md)
   The payload that configures the screen saver.
-- [object SystemExtensions](systemextensions.md)
+- [object SystemExtensions](./systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
+- [object SystemLogging](./systemlogging.md)
   The payload that configures system logging.
-- [object TimeServer](timeserver.md)
+- [object TimeServer](./timeserver.md)
   The payload that configures the time server.
 
 

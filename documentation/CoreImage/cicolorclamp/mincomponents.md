@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A vector containing the lower clamping values.
@@ -11,7 +12,7 @@ A vector containing the lower clamping values.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ A vector containing the lower clamping values.
 var minComponents: CIVector { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIVector * minComponents;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cicolorclamp/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var maxComponents: CIVector](cicolorclamp/maxcomponents.md)
+- [var maxComponents: CIVector](./maxcomponents.md)
   A vector containing the higher clamping values.
 
 

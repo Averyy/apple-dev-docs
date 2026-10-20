@@ -1,7 +1,8 @@
 # Read an App’s Alternative Distribution Key
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the alternative distribution keys for a specific app.
 
@@ -10,9 +11,9 @@ Get the alternative distribution keys for a specific app.
 
 ## Mentions
 
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
-- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
+- [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
+- [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
+- [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
 
 #### Discussion
 
@@ -20,7 +21,7 @@ Get the alternative distribution keys for a specific app.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/apps/6473805491/alternativeDistributionKey
 ```
 
@@ -50,22 +51,40 @@ https://api.appstoreconnect.apple.com/v1/apps/6473805491/alternativeDistribution
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
 - `fields[alternativeDistributionKeys]` ([string]): Additional fields to include for each alternative distribution key resource returned by the response.
+
+  **Allowed Values**: `publicKey`
+
+## Responses
+
+- `200` OK (`AlternativeDistributionKeyResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
+### Creating and reading keys
+- [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
   Manage keys you use to sign JSON web tokens and connect marketplaces with apps.
-- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
+- [Creating and configuring keys for web distribution](./creating-and-configuring-keys-for-web-distribution.md)
   Manage keys you use to sign JSON web tokens (JWTs).
-- [Add an Alternative Distribution Key](post-v1-alternativedistributionkeys.md)
+- [Add an Alternative Distribution Key](./post-v1-alternativedistributionkeys.md)
   Add an alternative distribution key for your alternative marketplace app or web distribution.
-- [List Alternative Distribution Keys](get-v1-alternativedistributionkeys.md)
+- [List Alternative Distribution Keys](./get-v1-alternativedistributionkeys.md)
   List the alternative distribution key for your account.
-- [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
+- [Read Alternative Distribution Key Information](./get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
-- [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)
+- [Get the alternative distribution key ID for an app](./get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Remove an Alternative Distribution Key](./delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 
 

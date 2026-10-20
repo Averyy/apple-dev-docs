@@ -1,7 +1,8 @@
 # init(completion:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a search request based on the specified search completion data.
 
@@ -20,22 +21,28 @@ Creates and returns a search request based on the specified search completion da
 init(completion: MKLocalSearchCompletion)
 ```
 
+```objc
+- (instancetype) initWithCompletion:(MKLocalSearchCompletion *) completion;
+```
+
 #### Return Value
 
 An initialized search request.
 
 #### Discussion
 
-Use this method when initializing your object from [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) objects. You don’t need to use this method if you intend to provide the search string and region information yourself.
+Use this method when initializing your object from [`MKLocalSearchCompleter`](../../mklocalsearchcompleter.md) objects. You don’t need to use this method if you intend to provide the search string and region information yourself.
 
 ## Parameters
 
-- `completion`: A search completion object that MapKit obtains from an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object. The search request uses the provided object to set the value of the [`naturalLanguageQuery`](mklocalsearch/request/naturallanguagequery.md) property.
+- `completion`: A search completion object that MapKit obtains from an [`MKLocalSearchCompleter`](../../mklocalsearchcompleter.md) object. The search request uses the provided object to set the value of the [`naturalLanguageQuery`](./naturallanguagequery.md) property.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [init()](mklocalsearch/request/init.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating a local search request
+- [init()](./init%28%29.md)
   Creates a local search request.
 
 

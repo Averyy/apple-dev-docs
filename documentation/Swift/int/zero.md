@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The zero value.
 
@@ -20,17 +21,20 @@ The zero value.
 static var zero: Self { get }
 ```
 
+Available when `Self` conforms to `ExpressibleByIntegerLiteral`.
+
 #### Discussion
 
 Zero is the identity element for addition. For any value, `x + .zero == x` and `.zero + x == x`.
 
 ## See Also
 
-- [static var min: Self](int/min.md)
+### Accessing Numeric Constants
+- [static var min: Self](./min.md)
   The minimum representable integer in this type.
-- [static var max: Self](int/max.md)
+- [static var max: Self](./max.md)
   The maximum representable integer in this type.
-- [static var isSigned: Bool](int/issigned.md)
+- [static var isSigned: Bool](./issigned.md)
   A Boolean value indicating whether this type is a signed integer type.
 
 

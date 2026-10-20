@@ -1,7 +1,8 @@
 # ChartAxisContent
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents a chart’s axis.
 
@@ -24,21 +25,22 @@ A view that represents a chart’s axis.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Customizing axes in Swift Charts](customizing-axes-in-swift-charts.md)
+### Axes
+- [Customizing axes in Swift Charts](./customizing-axes-in-swift-charts.md)
   Improve the clarity of your chart by configuring the appearance of its axes.
-- [protocol AxisContent](axiscontent.md)
+- [protocol AxisContent](./axiscontent.md)
   A type that represents the elements you use to build a chart’s axes.
-- [struct AxisMarks](axismarks.md)
+- [struct AxisMarks](./axismarks.md)
   A group of visual marks that a chart draws to indicate the composition of a chart’s axes.
-- [struct AnyAxisContent](anyaxiscontent.md)
+- [struct AnyAxisContent](./anyaxiscontent.md)
   A type-erased element of a chart’s axis.
-- [struct AxisContentBuilder](axiscontentbuilder.md)
+- [struct AxisContentBuilder](./axiscontentbuilder.md)
   A result builder that constructs axis content.
 
 

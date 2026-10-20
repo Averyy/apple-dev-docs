@@ -1,7 +1,8 @@
 # errSecMemoryError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A memory error occurred.
 
@@ -18,6 +19,10 @@ A memory error occurred.
 
 ```swift
 var errSecMemoryError: OSStatus { get }
+```
+
+```c
+errSecMemoryError
 ```
 
 

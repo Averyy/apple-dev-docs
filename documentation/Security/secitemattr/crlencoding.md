@@ -1,7 +1,8 @@
 # SecItemAttr.crlEncoding
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a `CSSM_CRL_ENCODING` type.
 
@@ -13,6 +14,10 @@ Indicates a `CSSM_CRL_ENCODING` type.
 
 ```swift
 case crlEncoding
+```
+
+```c
+kSecCrlEncoding
 ```
 
 

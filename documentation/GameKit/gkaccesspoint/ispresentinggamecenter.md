@@ -1,7 +1,8 @@
 # isPresentingGameCenter
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the game is presenting the Game Center dashboard.
 
@@ -19,21 +20,26 @@ A Boolean value that indicates whether the game is presenting the Game Center da
 var isPresentingGameCenter: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isPresentingGameCenter;
+```
+
 ## Mentions
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+- [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) when the player taps the access point control and [`false`](https://developer.apple.com/documentation/swift/false) when the player dismisses the Game Center dashboard. This is an observable property.
+This property is [`true`](../../Swift/true.md) when the player taps the access point control and [`false`](../../Swift/false.md) when the player dismisses the Game Center dashboard. This is an observable property.
 
 ## See Also
 
-- [var isActive: Bool](gkaccesspoint/isactive.md)
+### Displaying the access point
+- [var isActive: Bool](./isactive.md)
   A Boolean value that determines whether to display the access point.
-- [var isVisible: Bool](gkaccesspoint/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that indicates whether the access point is visible.
-- [var showHighlights: Bool](gkaccesspoint/showhighlights.md)
+- [var showHighlights: Bool](./showhighlights.md)
   A Boolean value that indicates whether to display highlights for achievements and current ranks for leaderboards.
 
 

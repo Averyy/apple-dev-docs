@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a pan direction using the specified raw value.
 

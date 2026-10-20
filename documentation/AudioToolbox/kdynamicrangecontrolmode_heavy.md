@@ -1,15 +1,16 @@
 # kDynamicRangeControlMode_Heavy
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kDynamicRangeControlMode_Heavy: UInt32 { get }
 ```
 
+```c
+kDynamicRangeControlMode_Heavy
+```
+
 ## See Also
 
-- [var kDynamicRangeControlMode_Light: UInt32](kdynamicrangecontrolmode_light.md)
-- [var kDynamicRangeControlMode_None: UInt32](kdynamicrangecontrolmode_none.md)
+### Constants
+- [var kDynamicRangeControlMode_Light: UInt32](./kdynamicrangecontrolmode_light.md)
+- [var kDynamicRangeControlMode_None: UInt32](./kdynamicrangecontrolmode_none.md)
 
 
 ---

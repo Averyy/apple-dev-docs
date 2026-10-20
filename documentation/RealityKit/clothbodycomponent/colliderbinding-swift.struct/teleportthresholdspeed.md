@@ -1,7 +1,8 @@
 # teleportThresholdSpeed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instantaneous collider speed (in m/s) over which the source collider will be considered to have teleported.
 
@@ -24,7 +25,8 @@ Only works if the mesh collider is animated by a visual mesh that has a skeleton
 
 ## See Also
 
-- [var distanceLimits: PerClothVertexData<Float>](clothbodycomponent/colliderbinding-swift.struct/distancelimits.md)
+### Tuning collision response
+- [var distanceLimits: PerClothVertexData<Float>](./distancelimits.md)
   Distance limits (in meters) for how much each particle is allowed to deviate from its perfectly-bound position.
 
 

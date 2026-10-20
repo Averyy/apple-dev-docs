@@ -1,14 +1,15 @@
 # EXDisplayPipeHealthReport
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct EXDisplayPipeHealthReport {
     ...
 } EXDisplayPipeHealthReport;
@@ -17,12 +18,12 @@ typedef struct EXDisplayPipeHealthReport {
 ## Topics
 
 ### Instance Properties
-- [health](exdisplaypipehealthreport/4460328-health.md)
-- [link_health](exdisplaypipehealthreport/4460329-link_health.md)
-- [pipe_health](exdisplaypipehealthreport/4460330-pipe_health.md)
-- [sca_algorithm_health](exdisplaypipehealthreport/4460331-sca_algorithm_health.md)
-- [sca_driver_health](exdisplaypipehealthreport/4460332-sca_driver_health.md)
-- [scl_health](exdisplaypipehealthreport/4460333-scl_health.md)
+- [health](./exdisplaypipehealthreport/api-4460328-health.md)
+- [link_health](./exdisplaypipehealthreport/api-4460329-link_health.md)
+- [pipe_health](./exdisplaypipehealthreport/api-4460330-pipe_health.md)
+- [sca_algorithm_health](./exdisplaypipehealthreport/api-4460331-sca_algorithm_health.md)
+- [sca_driver_health](./exdisplaypipehealthreport/api-4460332-sca_driver_health.md)
+- [scl_health](./exdisplaypipehealthreport/api-4460333-scl_health.md)
 
 
 ---

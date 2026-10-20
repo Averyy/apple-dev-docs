@@ -1,7 +1,8 @@
 # registerViewProviderClass(_:forFileType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers a specific file type with the attachment view provider.
 
@@ -14,14 +15,19 @@ Registers a specific file type with the attachment view provider.
 class func registerViewProviderClass(_ textAttachmentViewProviderClass: AnyClass, forFileType fileType: String)
 ```
 
+```objc
++ (void) registerTextAttachmentViewProviderClass:(Class) textAttachmentViewProviderClass forFileType:(NSString *) fileType;
+```
+
 ## Parameters
 
 - `textAttachmentViewProviderClass`: The text attachment view provider class.
-- `fileType`: A [`String`](https://developer.apple.com/documentation/swift/string) that represents the file type.
+- `fileType`: A [`String`](../../Swift/string.md) that represents the file type.
 
 ## See Also
 
-- [class func textAttachmentViewProviderClass(forFileType: String) -> AnyClass?](nstextattachment/textattachmentviewproviderclass(forfiletype:).md)
+### Convenience methods
+- [class func textAttachmentViewProviderClass(forFileType: String) -> AnyClass?](./textattachmentviewproviderclass%28forfiletype%29.md)
   Returns the text attachment view provider class, if any, for the file type you specify.
 
 

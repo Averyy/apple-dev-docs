@@ -1,7 +1,8 @@
 # LitLightingModel.SpecularModel.sheen
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sheen specular, designed for cloth and fabric surfaces.
 
@@ -21,11 +22,12 @@ case sheen
 
 ## See Also
 
-- [LitLightingModel.SpecularModel.ggx](litlightingmodel/specularmodel-swift.enum/ggx.md)
+### Choosing a specular model
+- [LitLightingModel.SpecularModel.ggx](./ggx.md)
   GGX (Trowbridge-Reitz) specular, a physically based microfacet model.
-- [LitLightingModel.SpecularModel.anisotropicGGX](litlightingmodel/specularmodel-swift.enum/anisotropicggx.md)
+- [LitLightingModel.SpecularModel.anisotropicGGX](./anisotropicggx.md)
   Anisotropic GGX specular, for surfaces with directional highlight variation such as brushed metal.
-- [LitLightingModel.SpecularModel.blinnPhong](litlightingmodel/specularmodel-swift.enum/blinnphong.md)
+- [LitLightingModel.SpecularModel.blinnPhong](./blinnphong.md)
   Blinn-Phong specular, a simple and performant approximation.
 
 

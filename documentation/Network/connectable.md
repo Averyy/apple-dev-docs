@@ -1,7 +1,8 @@
 # Connectable
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Describes types that can be used to make NetworkConnections.
 
@@ -23,7 +24,7 @@ protocol Connectable
 ## Relationships
 
 ### Conforming Types
-- [Bonjour.Endpoint](bonjour/endpoint.md)
+- [Bonjour.Endpoint](./bonjour/endpoint.md)
 
 
 ---

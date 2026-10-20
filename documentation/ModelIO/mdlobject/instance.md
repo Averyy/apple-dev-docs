@@ -1,7 +1,8 @@
 # instance
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary object, if applicable, of which this object is an instance.
 
@@ -19,19 +20,24 @@ The primary object, if applicable, of which this object is an instance.
 var instance: MDLObject? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) MDLObject * instance;
+```
+
 #### Discussion
 
 Some asset formats supported by Model I/O provide *instancing*, a feature where the asset provides a single definition for an object, then can reuse that definition at multiple points in a scene. For example, an asset describing a scene of a table and chairs could contain mesh and material data for only one chair, then use instancing to place several of the same chair around the table.
 
-If an object loaded from an asset is an instance, this property refers to one of the objects in the asset’s [`masters`](mdlasset/masters.md) array. If this object is not an instance (or is loaded from an asset format that does not support instancing), this property is `nil`.
+If an object loaded from an asset is an instance, this property refers to one of the objects in the asset’s [`masters`](../mdlasset/masters.md) array. If this object is not an instance (or is loaded from an asset format that does not support instancing), this property is `nil`.
 
 ## See Also
 
-- [var hidden: Bool](mdlobject/hidden.md)
+### Managing Rendering Intent
+- [var hidden: Bool](./hidden.md)
   A Boolean value indicating whether this object should be used in rendering.
-- [var path: String](mdlobject/path.md)
+- [var path: String](./path.md)
   A path that identifies the object in an asset’s object hierarchy using object names.
-- [var components: [any MDLComponent]](mdlobject/components.md)
+- [var components: [any MDLComponent]](./components.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # present(in:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents an overlay in a window scene.
 
@@ -16,6 +17,10 @@ Presents an overlay in a window scene.
 ```swift
 @MainActor
 func present(in scene: UIWindowScene)
+```
+
+```objc
+- (void) presentInScene:(UIWindowScene *) scene;
 ```
 
 ## Parameters

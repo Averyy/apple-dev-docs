@@ -1,7 +1,8 @@
 # DDErrorHandler
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A function that executes code you provide when an operation returns an error or completes successfully.
 
@@ -9,7 +10,7 @@ A function that executes code you provide when an operation returns an error or 
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ A function that executes code you provide when an operation returns an error or 
 typealias DDErrorHandler = ((any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(NSError *) DDErrorHandler;
+```
+
 ## Parameters
 
-- `inError`: A reference that the framework assigns an error object when the operation fails. When the operation succeeds, the value may be `nil` or [`DDError.Code.success`](dderror/code/success.md).
+- `inError`: A reference that the framework assigns an error object when the operation fails. When the operation succeeds, the value may be `nil` or [`DDError.Code.success`](./dderror/code/success.md).
 
 ## See Also
 
-- [struct DDError](dderror.md)
+### Errors
+- [struct DDError](./dderror.md)
   An error that the framework reports.
-- [DDError.Code](dderror/code.md)
+- [DDError.Code](./dderror/code.md)
   Codes that identify errors that can occur during the framework’s use.
-- [typealias DDErrorOutType](dderrorouttype.md)
+- [typealias DDErrorOutType](./dderrorouttype.md)
   A type for framework functions that return error references.
-- [let DDErrorDomain: String](dderrordomain.md)
+- [let DDErrorDomain: String](./dderrordomain.md)
   A unique error domain for the framework.
 
 

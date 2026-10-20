@@ -1,7 +1,8 @@
 # kMDQueryDidUpdateNotification
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification posted to indicate that a change has occurred to the query’s results list during the live-update phase of a query’s execution.
 
@@ -12,6 +13,10 @@ Notification posted to indicate that a change has occurred to the query’s resu
 
 ```swift
 let kMDQueryDidUpdateNotification: CFString!
+```
+
+```c
+const CFStringRef kMDQueryDidUpdateNotification;
 ```
 
 

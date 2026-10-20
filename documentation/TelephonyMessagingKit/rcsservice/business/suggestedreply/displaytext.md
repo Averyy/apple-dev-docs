@@ -1,7 +1,8 @@
 # displayText
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Display text for reply.
 

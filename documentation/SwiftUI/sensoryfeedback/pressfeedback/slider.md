@@ -1,7 +1,8 @@
 # slider
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a slider’s thumb has been pressed (touch down).
 
@@ -22,7 +23,7 @@ static let slider: SensoryFeedback.PressFeedback
 
 #### Discussion
 
-Slider controls should also play [`release(_:)`](sensoryfeedback/release(_:).md) with [`slider`](sensoryfeedback/releasefeedback/slider.md).
+Slider controls should also play [`release(_:)`](../release%28_%29.md) with [`slider`](../releasefeedback/slider.md).
 
 Only plays feedback on visionOS.
 

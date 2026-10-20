@@ -1,7 +1,8 @@
 # intendedSpatialExperience
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AudioQueue’s intended spatial audio experience.
 

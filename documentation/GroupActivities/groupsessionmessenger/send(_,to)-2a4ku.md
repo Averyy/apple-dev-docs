@@ -1,7 +1,8 @@
 # send(_:to:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a custom type asynchronously to other participants in the group session.
 
@@ -25,17 +26,18 @@ Use this method to send data that you package into a custom class or structure. 
 
 ## Parameters
 
-- `participants`: The recipients of the message. The default value of this parameter is the set of all active participants in the session. Use the [`Participants.only(_:)`](participants/only(_:)-swift.enum.case.md) option to specify a subset of participants.
+- `participants`: The recipients of the message. The default value of this parameter is the set of all active participants in the session. Use the [`Participants.only(_:)`](../participants/only%28_%29-swift.enum.case.md) option to specify a subset of participants.
 
 ## See Also
 
-- [func send(Data, to: Participants) async throws](groupsessionmessenger/send(_:to:)-4o52m.md)
+### Sending data to the group
+- [func send(Data, to: Participants) async throws](./send%28_,to%29-4o52m.md)
   Sends a standard data object asynchronously to other participants in the group session.
-- [func send(Data, to: Participants, completion: ((any Error)?) -> Void)](groupsessionmessenger/send(_:to:completion:)-zufl.md)
+- [func send(Data, to: Participants, completion: ((any Error)?) -> Void)](./send%28_,to,completion%29-zufl.md)
   Sends a standard data object to other participants in the group session.
-- [func send<Message>(Message, to: Participants, completion: ((any Error)?) -> Void)](groupsessionmessenger/send(_:to:completion:)-9e0sn.md)
+- [func send<Message>(Message, to: Participants, completion: ((any Error)?) -> Void)](./send%28_,to,completion%29-9e0sn.md)
   Sends a custom type to other participants in the group session.
-- [enum Participants](participants.md)
+- [enum Participants](../participants.md)
   The set of participants to include in messages.
 
 

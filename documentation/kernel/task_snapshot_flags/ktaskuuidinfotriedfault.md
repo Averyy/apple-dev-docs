@@ -1,14 +1,15 @@
 # kTaskUUIDInfoTriedFault
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kTaskUUIDInfoTriedFault = 0x400000
 ```
 

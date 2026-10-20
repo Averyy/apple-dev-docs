@@ -1,7 +1,8 @@
 # requiresActivation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Inhibits passthrough to the direct touch area until a person double-taps the element.
 
@@ -17,6 +18,10 @@ Inhibits passthrough to the direct touch area until a person double-taps the ele
 
 ```swift
 static var requiresActivation: UIAccessibility.DirectTouchOptions { get }
+```
+
+```c
+UIAccessibilityDirectTouchOptionRequiresActivation
 ```
 
 

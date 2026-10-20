@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform to apply to the detected horizon.
 
@@ -19,15 +20,20 @@ The transform to apply to the detected horizon.
 var transform: CGAffineTransform { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CGAffineTransform transform;
+```
+
 #### Discussion
 
 Apply the transform’s inverse to orient the image in an upright position and make the detected horizon level.
 
 ## See Also
 
-- [var angle: CGFloat](vnhorizonobservation/angle.md)
+### Evaluating the Horizon
+- [var angle: CGFloat](./angle.md)
   The angle of the observed horizon.
-- [func transform(forImageWidth: Int, height: Int) -> CGAffineTransform](vnhorizonobservation/transform(forimagewidth:height:).md)
+- [func transform(forImageWidth: Int, height: Int) -> CGAffineTransform](./transform%28forimagewidth,height%29.md)
   Creates an affine transform for the specified image width and height.
 
 

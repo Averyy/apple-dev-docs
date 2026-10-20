@@ -1,7 +1,8 @@
 # groupHandle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group handle whose subject was updated.
 
@@ -16,11 +17,12 @@ let groupHandle: RCSHandle.Group
 
 ## See Also
 
-- [let cellularServiceID: CellularServiceID](rcsservice/groupchatsubjectupdatedevent/cellularserviceid.md)
+### Accessing event properties
+- [let cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Cellular service identifier associated with this event.
-- [let newSubject: String](rcsservice/groupchatsubjectupdatedevent/newsubject.md)
+- [let newSubject: String](./newsubject.md)
   The new subject for the group.
-- [let changedBy: RCSHandle.URI](rcsservice/groupchatsubjectupdatedevent/changedby.md)
+- [let changedBy: RCSHandle.URI](./changedby.md)
   Handle of device that performed the operation.
 
 

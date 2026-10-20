@@ -1,6 +1,7 @@
 # Metadata Attribute Schema Description Keys
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 Specify the schema of a metadata attribute key.
 
@@ -11,11 +12,11 @@ These keys are in the dictionary returned by the function `MDSchemaCopyMetaAttri
 ## Topics
 
 ### Constants
-- [let kMDAttributeName: CFString!](kmdattributename.md)
+- [let kMDAttributeName: CFString!](../../kmdattributename.md)
   A string containing the name of the metadataattribute key.
-- [let kMDAttributeType: CFString!](kmdattributetype.md)
+- [let kMDAttributeType: CFString!](../../kmdattributetype.md)
   A CFNumberRef or CFTypeId describing thetype of data returned as the value of the metadata attribute key.
-- [let kMDAttributeMultiValued: CFString!](kmdattributemultivalued.md)
+- [let kMDAttributeMultiValued: CFString!](../../kmdattributemultivalued.md)
   A boolean that indicates if the metadataattribute value is multi-valued. If this is `TRUE`,the metadata attribute value is an array of the types specifiedin `kMDAttributeType`.
 
 

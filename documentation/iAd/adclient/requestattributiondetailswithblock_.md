@@ -1,11 +1,12 @@
 # requestAttributionDetailsWithBlock:
 
 **Framework**: iAd  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 ## Declaration
 
-```swift
+```objc
 - (void) requestAttributionDetailsWithBlock:(void (^)(NSDictionary<NSString *,NSObject *> *attributionDetails, NSError *error)) completionHandler;
 ```
 

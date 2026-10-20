@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A collection of RealityKit entities that this view content renders within the scene.
@@ -22,11 +23,12 @@ var entities: Self.Entities { get nonmutating set }
 
 ## See Also
 
-- [func add(Entity)](realityviewcontentprotocol/add(_:).md)
+### Managing view content
+- [func add(Entity)](./add%28_%29.md)
   Adds an entity to this content.
-- [func remove(Entity)](realityviewcontentprotocol/remove(_:).md)
+- [func remove(Entity)](./remove%28_%29.md)
   Removes an entity from this content, if present.
-- [associatedtype Entities : EntityCollection](realityviewcontentprotocol/entities-swift.associatedtype.md)
+- [associatedtype Entities : EntityCollection](./entities-swift.associatedtype.md)
   The type of collection used for `entities`.
 
 

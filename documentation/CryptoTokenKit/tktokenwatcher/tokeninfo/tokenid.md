@@ -1,7 +1,8 @@
 # tokenID
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var tokenID: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * tokenID;
 ```
 
 

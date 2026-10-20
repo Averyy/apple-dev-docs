@@ -1,7 +1,8 @@
 # dataLayout
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 var dataLayout: MPSDataLayout { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPSDataLayout dataLayout;
+```
+
 ## See Also
 
-- [var destinationMatrixBatchIndex: Int](mpsimagecopytomatrix/destinationmatrixbatchindex.md)
-- [var destinationMatrixOrigin: MTLOrigin](mpsimagecopytomatrix/destinationmatrixorigin.md)
+### Instance Properties
+- [var destinationMatrixBatchIndex: Int](./destinationmatrixbatchindex.md)
+- [var destinationMatrixOrigin: MTLOrigin](./destinationmatrixorigin.md)
 
 
 ---

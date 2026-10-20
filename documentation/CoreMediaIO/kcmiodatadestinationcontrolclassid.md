@@ -1,7 +1,8 @@
 # kCMIODataDestinationControlClassID
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var kCMIODataDestinationControlClassID: Int { get }
 ```
 
+```c
+kCMIODataDestinationControlClassID
+```
+
 ## See Also
 
-- [var kCMIODataSourceControlClassID: Int](kcmiodatasourcecontrolclassid.md)
+### Constants
+- [var kCMIODataSourceControlClassID: Int](./kcmiodatasourcecontrolclassid.md)
 
 
 ---

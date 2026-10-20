@@ -1,7 +1,8 @@
 # label()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func label() -> String
+```
+
+```objc
+- (NSString *) label;
 ```
 
 

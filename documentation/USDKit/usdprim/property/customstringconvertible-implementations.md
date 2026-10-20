@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: USDKit
+**Framework**: USDKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](usdprim/property/description.md)
+- [var description: String](./description.md)
   A summary description of this property.
 
 

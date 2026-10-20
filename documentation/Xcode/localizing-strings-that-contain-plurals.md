@@ -1,20 +1,21 @@
 # Localizing strings that contain plurals
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Use a strings dictionary file to ensure correct localization of strings that contain language plurals.
 
 #### Overview
 
-> ❗ **Important**: In Xcode 15 and later, string catalogs are the recommended way to localize strings that contain plurals. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
+> ❗ **Important**: In Xcode 15 and later, string catalogs are the recommended way to localize strings that contain plurals. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [Localizing and varying text with a string catalog](./localizing-and-varying-text-with-a-string-catalog.md).
 
 Languages have different grammatical rules for handling plurals of nouns and units. So if you localize formatted strings that contain variable amounts, use a `.stringsdict` file to provide a different translation for each plural form in the language.
 
-For example, if you pass the `%d home(s) found` formatted string to the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro or similar API, such as the [`Text`](https://developer.apple.com/documentation/swiftui/text) structure, you can use the a `.stringsdict` file to return different versions of the string. In English, you can return `one home found` or `1 home found` when `d` is `1`, and `%d homes found` when `d` is greater than `1`. For other languages, the `.stringsdict` file can have more or fewer plural variants of a formatted string.
+For example, if you pass the `%d home(s) found` formatted string to the [`NSLocalizedString`](../Foundation/nslocalizedstring.md) macro or similar API, such as the [`Text`](../SwiftUI/text.md) structure, you can use the a `.stringsdict` file to return different versions of the string. In English, you can return `one home found` or `1 home found` when `d` is `1`, and `%d homes found` when `d` is greater than `1`. For other languages, the `.stringsdict` file can have more or fewer plural variants of a formatted string.
 
 Xcode automatically handles `.stringsdict` files for you when you export and import localizations. However, you need to know the format of a `.stringsdict` file to localize it in the development language and other languages if you don’t use a localization service.
 
-##### Add a Strings Dictionary File to Your Project
+##### Add a strings dictionary file to your project
 
 To add a `.stringsdict` file to your project, choose File > New > File from Template. In the sheet that appears, select the platform, enter `strings` in the Filter field, select Stringsdict File, and click Next. In the dialog that appears, enter a name for the file, choose a location, and click Create.
 
@@ -24,7 +25,7 @@ If you previously added localizations to your project, select the other localiza
 
 Later when you add more localizations, be sure to include the `.stringsdict` file when you select resources for the localization.
 
-##### Localize the Strings Dictionary File in the Development Language
+##### Localize the strings dictionary file in the development language
 
 Next, add the plural rules and variants to the development language version of the `.stringsdict` file.
 
@@ -63,7 +64,7 @@ For example, enter separate dictionaries for the user-facing formatted strings y
 </plist>
 ```
 
-The variable dictionary for each formatted string determines which string returns from the [`Text`](https://developer.apple.com/documentation/swiftui/text) structure, [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro, or similar API in your code. It contains a key-value pair for each grammatical plural variant in the language, called a *category*.
+The variable dictionary for each formatted string determines which string returns from the [`Text`](../SwiftUI/text.md) structure, [`NSLocalizedString`](../Foundation/nslocalizedstring.md) macro, or similar API in your code. It contains a key-value pair for each grammatical plural variant in the language, called a *category*.
 
 For example, the following `.stringsdict` file with English localization contains plural variants for the `zero`, `one`, and `other` categories. For the `%d home(s) found` formatted string, the API returns `No homes found` for `0`, `%d home found `for` 1`, and `%d homes found` for `other` values.
 
@@ -102,9 +103,9 @@ A variable dictionary can contain the following key-value pairs:
 
 The meaning of the plural categories is language-dependent, and not all languages have the same categories. For example, the English language only requires the `one` and `other` categories to represent plural forms, and `zero` is optional. Arabic has different plural forms for the `zero`, `one`, `two`, `few`, `many`, and `other` categories. Although Russian also uses the `many` category, the rules for which numbers are in the `many` category aren’t the same as the Arabic rules.
 
-For the categories and plural rules for each language, see [`CLDR Language Plural Rules`](https://developer.apple.comhttp://cldr.unicode.org/index/cldr-spec/plural-rules).
+For the categories and plural rules for each language, see [CLDR Language Plural Rules](http://cldr.unicode.org/index/cldr-spec/plural-rules).
 
-##### Localize the Strings Dictionary File in Other Languages
+##### Localize the strings dictionary file in other languages
 
 After you localize the `.stringsdict` files in the development langauge and add the other localizations to your project, you export the localizations.
 
@@ -145,13 +146,15 @@ You can use the format specifier (`%d`)` `or spell out numbers (`one`)` `in the 
 
 ## See Also
 
-- [Adding support for languages and regions](adding-support-for-languages-and-regions.md)
+### Related Documentation
+- [Adding support for languages and regions](./adding-support-for-languages-and-regions.md)
   Select the resources that you want to localize for each language and region you support.
-- [Exporting localizations](exporting-localizations.md)
+- [Exporting localizations](./exporting-localizations.md)
   Provide the localizable files from your project to localizers.
-- [Importing localizations](importing-localizations.md)
+- [Importing localizations](./importing-localizations.md)
   Import the files that you translate or adapt for a language and region into your project.
-- [Creating width and device variants of strings](creating-width-and-device-variants-of-strings.md)
+### Legacy localization techniques
+- [Creating width and device variants of strings](./creating-width-and-device-variants-of-strings.md)
   Change a localized string for different interface widths and devices.
 
 

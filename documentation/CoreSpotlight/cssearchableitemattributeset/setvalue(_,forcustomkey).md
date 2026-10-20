@@ -1,7 +1,8 @@
 # setValue(_:forCustomKey:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value for a custom attribute key.
 
@@ -18,14 +19,19 @@ Sets the value for a custom attribute key.
 func setValue(_ value: (any NSSecureCoding)?, forCustomKey key: CSCustomAttributeKey)
 ```
 
+```objc
+- (void) setValue:(id<NSSecureCoding>) value forCustomKey:(CSCustomAttributeKey *) key;
+```
+
 ## Parameters
 
-- `value`: The value of the custom attribute. Values must be common property list types, such as [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), or an array of property list types.
+- `value`: The value of the custom attribute. Values must be common property list types, such as [`NSString`](../../Foundation/nsstring.md), [`NSNumber`](../../Foundation/nsnumber.md), [`NSNull`](../../Foundation/nsnull.md), [`NSData`](../../Foundation/nsdata.md), or [`NSDate`](../../Foundation/nsdate.md), or an array of property list types.
 - `key`: The custom attribute key.
 
 ## See Also
 
-- [func value(forCustomKey: CSCustomAttributeKey) -> (any NSSecureCoding)?](cssearchableitemattributeset/value(forcustomkey:).md)
+### Accessing custom attributes
+- [func value(forCustomKey: CSCustomAttributeKey) -> (any NSSecureCoding)?](./value%28forcustomkey%29.md)
   Returns the value associated with the specified custom attribute key.
 
 

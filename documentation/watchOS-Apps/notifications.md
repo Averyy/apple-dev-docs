@@ -20,26 +20,26 @@ A watchOS app can customize notifications to:
 - Receive remote notifications directly from your server.
 - Receive background notifications from your server.
 
-For more information, see [`User Notifications`](https://developer.apple.com/documentation/usernotifications)
+For more information, see [User Notifications](../UserNotifications/UserNotifications.md)
 
 ## Topics
 
 ### Essentials
-- [Enabling and receiving notifications](enabling-and-receiving-notifications.md)
+- [Enabling and receiving notifications](./enabling-and-receiving-notifications.md)
   Set up and handle local and remote notifications.
-- [Presenting notifications on Apple Watch](presenting-notifications-on-apple-watch.md)
+- [Presenting notifications on Apple Watch](./presenting-notifications-on-apple-watch.md)
   Understand how the system displays incoming notifications.
 ### Customizing the user experience
-- [Taking advantage of notification forwarding](taking-advantage-of-notification-forwarding.md)
+- [Taking advantage of notification forwarding](./taking-advantage-of-notification-forwarding.md)
   Deliver notifications to the user’s iPhone or Apple Watch.
-- [Customizing your long-look interface](customizing-your-long-look-interface.md)
+- [Customizing your long-look interface](./customizing-your-long-look-interface.md)
   Create custom interfaces for your watchOS app’s notifications.
-- [Adding actions to notifications on watchOS](adding-actions-to-notifications-on-watchos.md)
+- [Adding actions to notifications on watchOS](./adding-actions-to-notifications-on-watchos.md)
   Provide a set of responses to a notification.
-- [Grouping notifications](grouping-notifications.md)
+- [Grouping notifications](./grouping-notifications.md)
   Organize notifications into threads.
 ### Testing notifications
-- [Testing custom notification interfaces](testing-custom-notification-interfaces.md)
+- [Testing custom notification interfaces](./testing-custom-notification-interfaces.md)
   Test your notification interfaces on watchOS using a notification scheme and payload file.
 
 

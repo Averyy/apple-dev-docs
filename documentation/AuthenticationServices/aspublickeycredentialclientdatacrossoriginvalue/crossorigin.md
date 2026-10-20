@@ -1,7 +1,8 @@
 # ASPublicKeyCredentialClientDataCrossOriginValue.crossOrigin
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.4+
@@ -15,10 +16,15 @@
 case crossOrigin
 ```
 
+```c
+ASPublicKeyCredentialClientDataCrossOriginValueCrossOrigin
+```
+
 ## See Also
 
-- [ASPublicKeyCredentialClientDataCrossOriginValue.notSet](aspublickeycredentialclientdatacrossoriginvalue/notset.md)
-- [ASPublicKeyCredentialClientDataCrossOriginValue.sameOriginWithAncestors](aspublickeycredentialclientdatacrossoriginvalue/sameoriginwithancestors.md)
+### Enumeration Cases
+- [ASPublicKeyCredentialClientDataCrossOriginValue.notSet](./notset.md)
+- [ASPublicKeyCredentialClientDataCrossOriginValue.sameOriginWithAncestors](./sameoriginwithancestors.md)
 
 
 ---

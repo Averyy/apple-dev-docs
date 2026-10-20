@@ -1,7 +1,8 @@
 # launchURL(with:expectedValues:expectedValueInterval:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func launchURL(with params: MTRContentLauncherClusterLaunchURLParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?, completion: @escaping @Sendable (MTRContentLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func launchURL(with params: MTRContentLauncherClusterLaunchURLParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?) async throws -> MTRContentLauncherClusterLauncherResponseParams
+```
+
+```objc
+- (void) launchURLWithParams:(MTRContentLauncherClusterLaunchURLParams *) params expectedValues:(NSArray<NSDictionary<NSString *,id> *> *) expectedDataValueDictionaries expectedValueInterval:(NSNumber *) expectedValueIntervalMs completion:(void (^)(MTRContentLauncherClusterLauncherResponseParams *data, NSError *error)) completion;
 ```
 
 

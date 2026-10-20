@@ -1,7 +1,8 @@
 # BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints.Values
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The tester enrollment values within a single data point of the public link usage metric.
 
@@ -10,7 +11,7 @@ The tester enrollment values within a single data point of the public link usage
 
 ## Declaration
 
-```swift
+```
 object BetaPublicLinkUsagesV1MetricResponse.Data.DataPoints.Values
 ```
 

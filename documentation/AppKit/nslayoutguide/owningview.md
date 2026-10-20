@@ -1,7 +1,8 @@
 # owningView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that owns this layout guide.
 
@@ -14,15 +15,20 @@ The view that owns this layout guide.
 weak var owningView: NSView? { get set }
 ```
 
+```objc
+@property (weak, nullable) NSView * owningView;
+```
+
 #### Discussion
 
-By default, this property is `nil`.  To participate in Auto Layout, the layout guide must be added to a view by calling its [`addLayoutGuide(_:)`](nsview/addlayoutguide(_:).md) method. Do not modify this property directly. Instead, use the view’s [`addLayoutGuide(_:)`](nsview/addlayoutguide(_:).md) and [`removeLayoutGuide(_:)`](nsview/removelayoutguide(_:).md) methods, which update this property as necessary.
+By default, this property is `nil`.  To participate in Auto Layout, the layout guide must be added to a view by calling its [`addLayoutGuide(_:)`](../nsview/addlayoutguide%28_%29.md) method. Do not modify this property directly. Instead, use the view’s [`addLayoutGuide(_:)`](../nsview/addlayoutguide%28_%29.md) and [`removeLayoutGuide(_:)`](../nsview/removelayoutguide%28_%29.md) methods, which update this property as necessary.
 
 ## See Also
 
-- [var identifier: NSUserInterfaceItemIdentifier](nslayoutguide/identifier.md)
+### Working With Layout Guides
+- [var identifier: NSUserInterfaceItemIdentifier](./identifier.md)
   A string used to identify the layout guide.
-- [var frame: NSRect](nslayoutguide/frame.md)
+- [var frame: NSRect](./frame.md)
   The layout guide’s frame in its owning view’s coordinate system.
 
 

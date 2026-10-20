@@ -1,17 +1,18 @@
 # kAudioUnitSubType_Varispeed
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An audio unit that can control playback rate. As the playback rate increases, so does pitch. This subtype provides a generic view, making it suitable for UI and programmatic context. macOS provides realtime and offline audio units of this subtype.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,16 +20,21 @@ An audio unit that can control playback rate. As the playback rate increases, so
 var kAudioUnitSubType_Varispeed: UInt32 { get }
 ```
 
+```c
+kAudioUnitSubType_Varispeed
+```
+
 ## See Also
 
-- [var kAudioUnitSubType_AUConverter: UInt32](kaudiounitsubtype_auconverter.md)
-- [var kAudioUnitSubType_AUiPodTimeOther: UInt32](kaudiounitsubtype_auipodtimeother.md)
-- [var kAudioUnitSubType_DeferredRenderer: UInt32](kaudiounitsubtype_deferredrenderer.md)
-- [var kAudioUnitSubType_Merger: UInt32](kaudiounitsubtype_merger.md)
-- [var kAudioUnitSubType_MultiSplitter: UInt32](kaudiounitsubtype_multisplitter.md)
-- [var kAudioUnitSubType_NewTimePitch: UInt32](kaudiounitsubtype_newtimepitch.md)
-- [var kAudioUnitSubType_RoundTripAAC: UInt32](kaudiounitsubtype_roundtripaac.md)
-- [var kAudioUnitSubType_Splitter: UInt32](kaudiounitsubtype_splitter.md)
+### Constants
+- [var kAudioUnitSubType_AUConverter: UInt32](./kaudiounitsubtype_auconverter.md)
+- [var kAudioUnitSubType_AUiPodTimeOther: UInt32](./kaudiounitsubtype_auipodtimeother.md)
+- [var kAudioUnitSubType_DeferredRenderer: UInt32](./kaudiounitsubtype_deferredrenderer.md)
+- [var kAudioUnitSubType_Merger: UInt32](./kaudiounitsubtype_merger.md)
+- [var kAudioUnitSubType_MultiSplitter: UInt32](./kaudiounitsubtype_multisplitter.md)
+- [var kAudioUnitSubType_NewTimePitch: UInt32](./kaudiounitsubtype_newtimepitch.md)
+- [var kAudioUnitSubType_RoundTripAAC: UInt32](./kaudiounitsubtype_roundtripaac.md)
+- [var kAudioUnitSubType_Splitter: UInt32](./kaudiounitsubtype_splitter.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(URL:)
 
 **Framework**: TV Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - tvOS 13.0+

@@ -1,7 +1,8 @@
 # renderingState
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sound event’s playback status.
 
@@ -19,13 +20,18 @@ The sound event’s playback status.
 var renderingState: PHASESoundEvent.RenderingState { get }
 ```
 
+```objc
+@property (readonly) PHASERenderingState renderingState;
+```
+
 #### Discussion
 
-Access this property to check the sound event’s playback status. The value reflects the state you control by calling one of the functions: [`start(completion:)`](phasesoundevent/start(completion:).md), [`stopAndInvalidate()`](phasesoundevent/stopandinvalidate().md), or [`pause()`](phasesoundevent/pause().md).
+Access this property to check the sound event’s playback status. The value reflects the state you control by calling one of the functions: [`start(completion:)`](./start%28completion%29.md), [`stopAndInvalidate()`](./stopandinvalidate%28%29.md), or [`pause()`](./pause%28%29.md).
 
 ## See Also
 
-- [PHASESoundEvent.RenderingState](phasesoundevent/renderingstate-swift.enum.md)
+### Checking Playback Status
+- [PHASESoundEvent.RenderingState](./renderingstate-swift.enum.md)
   The playback status of audio.
 
 

@@ -1,12 +1,13 @@
 # exact(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a requirement for the given exact version.
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 5.6
 
 ## Declaration
 

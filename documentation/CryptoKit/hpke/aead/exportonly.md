@@ -1,7 +1,8 @@
 # HPKE.AEAD.exportOnly
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An export-only mode.
 

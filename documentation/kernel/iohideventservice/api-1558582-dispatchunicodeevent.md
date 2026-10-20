@@ -1,14 +1,15 @@
 # dispatchUnicodeEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12.2+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchUnicodeEvent(AbsoluteTime timeStamp, UInt8 *payload, UInt32 length, UnicodeEncodingType encoding, IOFixed quality, IOOptionBits options);
 ```
 

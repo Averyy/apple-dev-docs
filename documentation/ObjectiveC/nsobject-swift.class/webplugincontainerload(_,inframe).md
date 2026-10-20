@@ -1,17 +1,22 @@
 # webPlugInContainerLoad(_:inFrame:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads a URL into a web frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func webPlugInContainerLoad(_ request: URLRequest!, inFrame target: String!)
+```
+
+```objc
+- (void) webPlugInContainerLoadRequest:(NSURLRequest *) request inFrame:(NSString *) target;
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ If the frame specified by `target` is not found, a new window is opened, loaded 
 
 ## See Also
 
-- [func webPlugInContainerShowStatus(String!)](nsobject-swift.class/webplugincontainershowstatus(_:).md)
+### Performing actions on the enclosing container
+- [func webPlugInContainerShowStatus(String!)](./webplugincontainershowstatus%28_%29.md)
   Tells the container to show a status message.
 
 

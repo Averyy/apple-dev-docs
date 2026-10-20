@@ -1,7 +1,8 @@
 # NSTextSelectionManager.Mode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for text selection interaction modes.
 
@@ -14,6 +15,10 @@ Values for text selection interaction modes.
 enum Mode
 ```
 
+```c
+enum NSTextSelectionMode : NSInteger;
+```
+
 #### Overview
 
 These modes determine how the text selection manager handles user interaction with text content.
@@ -21,30 +26,31 @@ These modes determine how the text selection manager handles user interaction wi
 ## Topics
 
 ### Enumeration Cases
-- [NSTextSelectionManager.Mode.editable](nstextselectionmanager/mode/editable.md)
+- [NSTextSelectionManager.Mode.editable](./mode/editable.md)
   Text is editable and selectable.
-- [NSTextSelectionManager.Mode.nonInteractive](nstextselectionmanager/mode/noninteractive.md)
+- [NSTextSelectionManager.Mode.nonInteractive](./mode/noninteractive.md)
   Text is neither selectable nor editable.
-- [NSTextSelectionManager.Mode.selectable](nstextselectionmanager/mode/selectable.md)
+- [NSTextSelectionManager.Mode.selectable](./mode/selectable.md)
   Text is selectable but not editable.
 ### Initializers
-- [init?(rawValue: Int)](nstextselectionmanager/mode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var textSelectionMode: NSTextSelectionManager.Mode](nstextselectionmanager/textselectionmode.md)
+### Configuring text selection
+- [var textSelectionMode: NSTextSelectionManager.Mode](./textselectionmode.md)
   The interaction mode for text selection.
-- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](nstextselectionmanager/textselectiondatasource.md)
+- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](./textselectiondatasource.md)
   The data source that provides text layout information to the selection manager.
 
 

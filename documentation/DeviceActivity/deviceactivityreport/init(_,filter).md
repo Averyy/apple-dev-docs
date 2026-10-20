@@ -1,7 +1,8 @@
 # init(_:filter:)
 
 **Framework**: Device Activity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new device activity report.
 

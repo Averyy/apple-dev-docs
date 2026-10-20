@@ -1,7 +1,8 @@
 # DADissenter
 
 **Framework**: Disk Arbitration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Type of a reference to DADissenter instances.
 
@@ -15,11 +16,15 @@ Type of a reference to DADissenter instances.
 class DADissenter
 ```
 
+```c
+typedef const struct __DADissenter * DADissenterRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

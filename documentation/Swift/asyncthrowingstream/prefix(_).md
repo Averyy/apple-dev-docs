@@ -1,7 +1,8 @@
 # prefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous sequence, up to the specified maximum length, containing the initial elements of the base asynchronous sequence.
 
@@ -45,7 +46,8 @@ If the count passed to `prefix(_:)` exceeds the number of elements in the base s
 
 ## See Also
 
-- [func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>](asyncthrowingstream/prefix(while:).md)
+### Selecting Elements
+- [func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>](./prefix%28while%29.md)
   Returns an asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given predicate.
 
 

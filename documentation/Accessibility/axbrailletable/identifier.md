@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique string that identifies this table.
 
@@ -18,6 +19,10 @@ A unique string that identifies this table.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * identifier;
 ```
 
 

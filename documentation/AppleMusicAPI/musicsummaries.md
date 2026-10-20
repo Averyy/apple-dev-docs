@@ -1,7 +1,8 @@
 # MusicSummaries
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The music for the period summary.
 
@@ -10,16 +11,16 @@ The music for the period summary.
 
 ## Declaration
 
-```swift
+```
 object MusicSummaries
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object MusicSummaries.Attributes](musicsummaries/attributes-data.dictionary.md)
+- [object MusicSummaries.Attributes](./musicsummaries/attributes-data.dictionary.md)
   The attributes for the music summaries resource type.
-- [object MusicSummaries.Views](musicsummaries/views-data.dictionary.md)
+- [object MusicSummaries.Views](./musicsummaries/views-data.dictionary.md)
   The top albums, artists, and songs that the user listened to for the given period.
 
 ## Properties
@@ -28,6 +29,8 @@ object MusicSummaries
 - `href` (string) *(required)*: A relative location for the music summaries resource.
 - `id` (string) *(required)*: The identifier for the music summaries resource.
 - `type` (string) *(required)*: The type of the resource. This value is always `Music Summaries`.
+
+  **Allowed Values**: `music-summaries`
 - `views` (MusicSummaries.Views): The views for associations between `Music Summaries` and the user’s top content for that period.
 
 

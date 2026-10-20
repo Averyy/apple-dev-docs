@@ -1,7 +1,8 @@
 # height
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the output.
 
@@ -18,17 +19,22 @@ The height of the output.
 var height: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) size_t height;
+```
+
 ## See Also
 
-- [var width: Int](scstreamconfiguration/width.md)
+### Specifying dimensions
+- [var width: Int](./width.md)
   The width of the output.
-- [var scalesToFit: Bool](scstreamconfiguration/scalestofit.md)
+- [var scalesToFit: Bool](./scalestofit.md)
   A Boolean value that indicates whether to scale the output to fit the configured width and height.
-- [var sourceRect: CGRect](scstreamconfiguration/sourcerect.md)
+- [var sourceRect: CGRect](./sourcerect.md)
   A rectangle that specifies the source area to capture.
-- [var destinationRect: CGRect](scstreamconfiguration/destinationrect.md)
+- [var destinationRect: CGRect](./destinationrect.md)
   A rectangle that specifies a destination into which to write the output.
-- [var preservesAspectRatio: Bool](scstreamconfiguration/preservesaspectratio.md)
+- [var preservesAspectRatio: Bool](./preservesaspectratio.md)
   A Boolean value that determines if the stream preserves aspect ratio.
 
 

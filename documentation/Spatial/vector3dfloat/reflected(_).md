@@ -1,7 +1,8 @@
 # reflected(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the reflection direction of this incident vector and the specified unit normal vector.
 

@@ -1,15 +1,16 @@
 # UIDevice.BatteryState.charging
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is plugged into power and the battery is less than 100% charged.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ The device is plugged into power and the battery is less than 100% charged.
 case charging
 ```
 
+```c
+UIDeviceBatteryStateCharging
+```
+
 ## See Also
 
-- [UIDevice.BatteryState.unknown](uidevice/batterystate-swift.enum/unknown.md)
+### Constants
+- [UIDevice.BatteryState.unknown](./unknown.md)
   The battery state for the device can’t be determined.
-- [UIDevice.BatteryState.unplugged](uidevice/batterystate-swift.enum/unplugged.md)
+- [UIDevice.BatteryState.unplugged](./unplugged.md)
   The device isn’t plugged into power; the battery is discharging.
-- [UIDevice.BatteryState.full](uidevice/batterystate-swift.enum/full.md)
+- [UIDevice.BatteryState.full](./full.md)
   The device is plugged into power and the battery is 100% charged.
 
 

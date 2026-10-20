@@ -1,7 +1,8 @@
 # append(buffer:allocator:flags:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a memory block to a block buffer using a custom allocator.
 
@@ -28,25 +29,26 @@ func append(buffer: UnsafeMutableRawBufferPointer, allocator: CFAllocator? = kCF
 
 ## See Also
 
-- [func append(length: Int, allocator: CFAllocator?, range: Range<Int>?, flags: CMBlockBuffer.Flags) throws](cmblockbuffer/append(length:allocator:range:flags:).md)
+### Modifying a Block Buffer
+- [func append(length: Int, allocator: CFAllocator?, range: Range<Int>?, flags: CMBlockBuffer.Flags) throws](./append%28length,allocator,range,flags%29.md)
   Adds a memory block to an existing block buffer.
-- [func append(buffer: Slice<UnsafeMutableRawBufferPointer>, allocator: CFAllocator?, flags: CMBlockBuffer.Flags) throws](cmblockbuffer/append(buffer:allocator:flags:)-8fws8.md)
+- [func append(buffer: Slice<UnsafeMutableRawBufferPointer>, allocator: CFAllocator?, flags: CMBlockBuffer.Flags) throws](./append%28buffer,allocator,flags%29-8fws8.md)
   Adds a sliced memory block to a block buffer using a custom allocator.
-- [func append(length: Int, allocator: CMBlockBuffer.CustomBlockAllocator, deallocator: CMBlockBuffer.CustomBlockDeallocator, range: Range<Int>?, flags: CMBlockBuffer.Flags) throws](cmblockbuffer/append(length:allocator:deallocator:range:flags:).md)
+- [func append(length: Int, allocator: CMBlockBuffer.CustomBlockAllocator, deallocator: CMBlockBuffer.CustomBlockDeallocator, range: Range<Int>?, flags: CMBlockBuffer.Flags) throws](./append%28length,allocator,deallocator,range,flags%29.md)
   Adds a memory block to a block buffer using a custom allocator and deallocator.
-- [func append(buffer: UnsafeMutableRawBufferPointer, deallocator: CMBlockBuffer.CustomBlockDeallocator, flags: CMBlockBuffer.Flags) throws](cmblockbuffer/append(buffer:deallocator:flags:)-3bfef.md)
+- [func append(buffer: UnsafeMutableRawBufferPointer, deallocator: CMBlockBuffer.CustomBlockDeallocator, flags: CMBlockBuffer.Flags) throws](./append%28buffer,deallocator,flags%29-3bfef.md)
   Adds a memory block to a block buffer with a custom deallocator.
-- [func append(buffer: Slice<UnsafeMutableRawBufferPointer>, deallocator: CMBlockBuffer.CustomBlockDeallocator, flags: CMBlockBuffer.Flags) throws](cmblockbuffer/append(buffer:deallocator:flags:)-1ibzz.md)
+- [func append(buffer: Slice<UnsafeMutableRawBufferPointer>, deallocator: CMBlockBuffer.CustomBlockDeallocator, flags: CMBlockBuffer.Flags) throws](./append%28buffer,deallocator,flags%29-1ibzz.md)
   Adds a sliced memory block to a block buffer with a custom deallocator.
-- [CMBlockBuffer.CustomBlockAllocator](cmblockbuffer/customblockallocator.md)
+- [CMBlockBuffer.CustomBlockAllocator](./customblockallocator.md)
   A type that allocates memory blocks.
-- [CMBlockBuffer.CustomBlockDeallocator](cmblockbuffer/customblockdeallocator.md)
+- [CMBlockBuffer.CustomBlockDeallocator](./customblockdeallocator.md)
   A type that deallocates memory blocks.
-- [func append<T>(bufferReference: T, flags: CMBlockBuffer.Flags) throws](cmblockbuffer/append(bufferreference:flags:).md)
+- [func append<T>(bufferReference: T, flags: CMBlockBuffer.Flags) throws](./append%28bufferreference,flags%29.md)
   Adds a reference to another block buffer.
-- [func assureBlockMemory() throws](cmblockbuffer/assureblockmemory.md)
+- [func assureBlockMemory() throws](./assureblockmemory%28%29.md)
   Assures that the system allocates all memory blocks.
-- [func withUnsafeMutableBytes<R>(atOffset: Int, (UnsafeMutableRawBufferPointer) throws -> R) throws -> R](cmblockbuffer/withunsafemutablebytes(atoffset:_:).md)
+- [func withUnsafeMutableBytes<R>(atOffset: Int, (UnsafeMutableRawBufferPointer) throws -> R) throws -> R](./withunsafemutablebytes%28atoffset,_%29.md)
   Accesses the data that a block buffer represents.
 
 

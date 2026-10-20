@@ -1,7 +1,8 @@
 # name
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the device.
 
@@ -9,13 +10,17 @@ The name of the device.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var name: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSString * name;
 ```
 
 #### Discussion
@@ -27,23 +32,26 @@ The default value of this property varies according to the device’s operating 
 | iOS 15 and earlier | User-assigned device name | `"Ravi’s iPhone 13 Pro"` |
 | iOS 16 and later | Generic device name | `"iPhone"` |
 
-In iOS, the *user-assigned device name* is available in the Settings app under General > About > Name. To access the user-assigned device name through this property in iOS 16 and later, your app must meet certain criteria and be assigned an entitlement. For information, see [`com.apple.developer.device-information.user-assigned-device-name`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.device-information.user-assigned-device-name).
+In iOS, the *user-assigned device name* is available in the Settings app under General > About > Name. To access the user-assigned device name through this property in iOS 16 and later, your app must meet certain criteria and be assigned an entitlement. For information, see [`com.apple.developer.device-information.user-assigned-device-name`](../../BundleResources/entitlements/com.apple.developer.device-information.user-assigned-device-name.md).
 
-> **Note**:  Session 10096: [`What’s new in privacy`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10096) Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10068)
+> **Related Sessions from WWDC22**:  Session 10096: [What’s new in privacy](https://developer.apple.com/videos/play/wwdc2022/10096)
+>
+> Session 10068: [What’s new in UIKit](https://developer.apple.com/videos/play/wwdc2022/10068)
 
 ## See Also
 
-- [var systemName: String](uidevice/systemname.md)
+### Identifying the device and operating system
+- [var systemName: String](./systemname.md)
   The name of the operating system running on the device.
-- [var systemVersion: String](uidevice/systemversion.md)
+- [var systemVersion: String](./systemversion.md)
   The current version of the operating system.
-- [var model: String](uidevice/model.md)
+- [var model: String](./model.md)
   The model of the device.
-- [var localizedModel: String](uidevice/localizedmodel.md)
+- [var localizedModel: String](./localizedmodel.md)
   The model of the device as a localized string.
-- [var userInterfaceIdiom: UIUserInterfaceIdiom](uidevice/userinterfaceidiom.md)
+- [var userInterfaceIdiom: UIUserInterfaceIdiom](./userinterfaceidiom.md)
   The style of interface to use on the current device.
-- [var identifierForVendor: UUID?](uidevice/identifierforvendor.md)
+- [var identifierForVendor: UUID?](./identifierforvendor.md)
   An alphanumeric string that uniquely identifies a device to the app’s vendor.
 
 

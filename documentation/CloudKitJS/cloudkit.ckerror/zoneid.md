@@ -1,7 +1,8 @@
 # zoneID
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record zone in the database where the error occurred.
 
@@ -10,7 +11,7 @@ The record zone in the database where the error occurred.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.ZoneID zoneID;
 ```
 
@@ -20,9 +21,10 @@ This property value is `Undefined` if the error is unrelated to a zone operation
 
 ## See Also
 
-- [recordName](cloudkit.ckerror/recordname.md)
+### Identifying the Operation
+- [recordName](./recordname.md)
   The name of the record that the operation failed on.
-- [subscriptionID](cloudkit.ckerror/subscriptionid.md)
+- [subscriptionID](./subscriptionid.md)
   A string that is a unique identifier for the subscription where the error occurred.
 
 

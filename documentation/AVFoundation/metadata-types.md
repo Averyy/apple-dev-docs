@@ -1,44 +1,46 @@
 # Metadata types
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 Inspect the supported metadata object types that the framework supports.
 
 ## Topics
 
 ### 2D and 3D codes
-- [class AVMetadataMachineReadableCodeObject](avmetadatamachinereadablecodeobject.md)
+- [class AVMetadataMachineReadableCodeObject](./avmetadatamachinereadablecodeobject.md)
   Barcode information detected by a metadata capture output.
 ### Faces
-- [class AVMetadataFaceObject](avmetadatafaceobject.md)
+- [class AVMetadataFaceObject](./avmetadatafaceobject.md)
   Face information detected by a metadata capture output.
 ### Heads
-- [class AVMetadataCatHeadObject](avmetadatacatheadobject.md)
+- [class AVMetadataCatHeadObject](./avmetadatacatheadobject.md)
   A concrete metadata object subclass representing a cat head.
-- [class AVMetadataDogHeadObject](avmetadatadogheadobject.md)
+- [class AVMetadataDogHeadObject](./avmetadatadogheadobject.md)
   A concrete metadata object subclass representing a dog head.
 ### Bodies
-- [class AVMetadataBodyObject](avmetadatabodyobject.md)
+- [class AVMetadataBodyObject](./avmetadatabodyobject.md)
   An abstract class that defines the interface for a metadata body object.
-- [class AVMetadataCatBodyObject](avmetadatacatbodyobject.md)
+- [class AVMetadataCatBodyObject](./avmetadatacatbodyobject.md)
   An object representing a single detected cat body in a picture.
-- [class AVMetadataDogBodyObject](avmetadatadogbodyobject.md)
+- [class AVMetadataDogBodyObject](./avmetadatadogbodyobject.md)
   An object representing a single detected dog body in a picture.
-- [class AVMetadataHumanBodyObject](avmetadatahumanbodyobject.md)
+- [class AVMetadataHumanBodyObject](./avmetadatahumanbodyobject.md)
   An object representing a single detected human body in a picture.
-- [class AVMetadataHumanFullBodyObject](avmetadatahumanfullbodyobject.md)
+- [class AVMetadataHumanFullBodyObject](./avmetadatahumanfullbodyobject.md)
   An object that represents a detected human full body in a picture.
 ### Saliency
-- [class AVMetadataSalientObject](avmetadatasalientobject.md)
+- [class AVMetadataSalientObject](./avmetadatasalientobject.md)
   An object representing a single salient area in a picture.
 
 ## See Also
 
-- [class AVCaptureMetadataInput](avcapturemetadatainput.md)
+### Metadata capture
+- [class AVCaptureMetadataInput](./avcapturemetadatainput.md)
   A capture input for providing timed metadata to a capture session.
-- [class AVCaptureMetadataOutput](avcapturemetadataoutput.md)
+- [class AVCaptureMetadataOutput](./avcapturemetadataoutput.md)
   A capture output for processing timed metadata produced by a capture session.
-- [class AVMetadataObject](avmetadataobject.md)
+- [class AVMetadataObject](./avmetadataobject.md)
   The abstract superclass for objects provided by a metadata capture output.
 
 

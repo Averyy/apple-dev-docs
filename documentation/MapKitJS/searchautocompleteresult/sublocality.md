@@ -1,7 +1,8 @@
 # subLocality
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the area within the locality.
 
@@ -10,13 +11,13 @@ The name of the area within the locality.
 
 ## Declaration
 
-```swift
+```
 subLocality: string | null;
 ```
 
 #### Discussion
 
-For example, the [`subLocality`](searchautocompleteresult/sublocality.md) for the Golden Gate Park is `"Golden Gate Park"`.
+For example, the [`subLocality`](./sublocality.md) for the Golden Gate Park is `"Golden Gate Park"`.
 
 
 ---

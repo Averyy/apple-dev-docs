@@ -1,7 +1,8 @@
 # cmCMYData
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The CMY data color space.
 

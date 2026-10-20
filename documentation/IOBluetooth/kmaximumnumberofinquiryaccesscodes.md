@@ -1,15 +1,20 @@
 # kMaximumNumberOfInquiryAccessCodes
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kMaximumNumberOfInquiryAccessCodes: Int { get }
+```
+
+```c
+kMaximumNumberOfInquiryAccessCodes
 ```
 
 

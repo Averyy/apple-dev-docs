@@ -1,7 +1,8 @@
 # moveToActiveSpace
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 When the window becomes active, move it to the active space instead of switching spaces.
 
@@ -14,9 +15,14 @@ When the window becomes active, move it to the active space instead of switching
 static var moveToActiveSpace: NSWindow.CollectionBehavior { get }
 ```
 
+```c
+NSWindowCollectionBehaviorMoveToActiveSpace
+```
+
 ## See Also
 
-- [static var canJoinAllSpaces: NSWindow.CollectionBehavior](nswindow/collectionbehavior-swift.struct/canjoinallspaces.md)
+### Spaces
+- [static var canJoinAllSpaces: NSWindow.CollectionBehavior](./canjoinallspaces.md)
   The window can appear in all spaces.
 
 

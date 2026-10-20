@@ -1,14 +1,15 @@
 # withPool
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 static IOUserNetworkPacket * withPool(IOUserNetworkPacketBufferPool *pool, IOUserNetworkPacketDescriptor *descriptor, IOOptionBits options);
 ```
 

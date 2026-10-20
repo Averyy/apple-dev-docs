@@ -1,7 +1,8 @@
 # identifierPath
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier path that locates the context within the data store’s context hierarchy.
 
@@ -18,19 +19,24 @@ The identifier path that locates the context within the data store’s context h
 var identifierPath: [String] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * identifierPath;
+```
+
 #### Discussion
 
-You can use the value stored in this property when calling the [`contexts(matchingIdentifierPath:completion:)`](clsdatastore/contexts(matchingidentifierpath:completion:).md) method to retrieve the current context.
+You can use the value stored in this property when calling the [`contexts(matchingIdentifierPath:completion:)`](../clsdatastore/contexts%28matchingidentifierpath,completion%29.md) method to retrieve the current context.
 
 ## See Also
 
-- [var parent: CLSContext?](clscontext/parent.md)
+### Managing context hierarchy
+- [var parent: CLSContext?](./parent.md)
   The direct ancestor of this context.
-- [func removeFromParent()](clscontext/removefromparent.md)
+- [func removeFromParent()](./removefromparent%28%29.md)
   Removes the context from its parent.
-- [func addChildContext(CLSContext)](clscontext/addchildcontext(_:).md)
+- [func addChildContext(CLSContext)](./addchildcontext%28_%29.md)
   Adds the specifed context as a child of the context receiving the method call.
-- [func descendant(matchingIdentifierPath: [String], completion: (CLSContext?, (any Error)?) -> Void)](clscontext/descendant(matchingidentifierpath:completion:).md)
+- [func descendant(matchingIdentifierPath: [String], completion: (CLSContext?, (any Error)?) -> Void)](./descendant%28matchingidentifierpath,completion%29.md)
   Finds the context with the given identifier path relative to this context.
 
 

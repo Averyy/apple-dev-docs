@@ -1,7 +1,8 @@
 # SNClassifierIdentifier
 
 **Framework**: Sound Analysis  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier that represents the versions of the framework’s sound classifier.
 
@@ -20,29 +21,34 @@ An identifier that represents the versions of the framework’s sound classifier
 struct SNClassifierIdentifier
 ```
 
+```c
+typedef NSString * SNClassifierIdentifier;
+```
+
 ## Topics
 
 ### Selecting a Sound Classifier
-- [static let version1: SNClassifierIdentifier](snclassifieridentifier/version1.md)
+- [static let version1: SNClassifierIdentifier](./snclassifieridentifier/version1.md)
   Version 1 of the sound classifier.
 ### Creating an Identifier
-- [init(rawValue: String)](snclassifieridentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./snclassifieridentifier/init%28rawvalue%29.md)
   Creates an identifier for a sound classifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(mlModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:)-6rmee.md)
+### Creating a Request
+- [init(mlModel: MLModel) throws](./snclassifysoundrequest/init%28mlmodel%29-6rmee.md)
   Creates a request that uses a custom sound classification model.
-- [init(classifierIdentifier: SNClassifierIdentifier) throws](snclassifysoundrequest/init(classifieridentifier:).md)
+- [init(classifierIdentifier: SNClassifierIdentifier) throws](./snclassifysoundrequest/init%28classifieridentifier%29.md)
   Creates a request that uses the framework’s built-in sound classification model.
 
 

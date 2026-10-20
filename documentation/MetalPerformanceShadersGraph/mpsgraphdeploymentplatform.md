@@ -1,7 +1,8 @@
 # MPSGraphDeploymentPlatform
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The options available to a graph.
 
@@ -19,29 +20,33 @@ The options available to a graph.
 enum MPSGraphDeploymentPlatform
 ```
 
+```c
+enum MPSGraphDeploymentPlatform : uint64_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphDeploymentPlatform.iOS](mpsgraphdeploymentplatform/ios.md)
+- [MPSGraphDeploymentPlatform.iOS](./mpsgraphdeploymentplatform/ios.md)
   Deployment target for iOS.
-- [MPSGraphDeploymentPlatform.macOS](mpsgraphdeploymentplatform/macos.md)
+- [MPSGraphDeploymentPlatform.macOS](./mpsgraphdeploymentplatform/macos.md)
   Deployment platofmr for macOS.
-- [MPSGraphDeploymentPlatform.tvOS](mpsgraphdeploymentplatform/tvos.md)
+- [MPSGraphDeploymentPlatform.tvOS](./mpsgraphdeploymentplatform/tvos.md)
   Deployment target for tvOS.
-- [MPSGraphDeploymentPlatform.visionOS](mpsgraphdeploymentplatform/visionos.md)
+- [MPSGraphDeploymentPlatform.visionOS](./mpsgraphdeploymentplatform/visionos.md)
   Deployment target for visionOS.
 ### Initializers
-- [init?(rawValue: UInt64)](mpsgraphdeploymentplatform/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./mpsgraphdeploymentplatform/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

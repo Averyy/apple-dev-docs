@@ -1,7 +1,8 @@
 # init(id:configurations:defaultConfigurationId:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration set from an ID, an array of configurations, and a default configuration ID.
 
@@ -19,6 +20,12 @@ Creates a configuration set from an ID, an array of configurations, and a defaul
 init(id: String, configurations: [Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String? = nil) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(id: String, configurations: [String : Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String? = nil) throws
+```
+
 #### Return Value
 
 A configuration set containing the configurations.
@@ -26,7 +33,7 @@ A configuration set containing the configurations.
 ## Parameters
 
 - `id`: The ID of the configuration set that’s unique across all other configuration sets.
-- `configurations`: An array of configurations you can choose from. The configuration set stores the array in the [`configurations`](entity/configurationcatalog/configurationset/configurations.md) property and doesn’t preserve the order of the array.
+- `configurations`: An array of configurations you can choose from. The configuration set stores the array in the [`configurations`](./configurations.md) property and doesn’t preserve the order of the array.
 - `defaultConfigurationId`: The ID of one of the configuration elements in the `configurations` parameter, which is the default configuration the entity initializer applies if you don’t choose a configuration from the set.
 
 

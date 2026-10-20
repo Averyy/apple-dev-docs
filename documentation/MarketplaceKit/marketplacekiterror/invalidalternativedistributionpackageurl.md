@@ -1,7 +1,8 @@
 # MarketplaceKitError.invalidAlternativeDistributionPackageURL
 
 **Framework**: MarketplaceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the alternative-distribution-package URL is invalid.
 
@@ -17,13 +18,14 @@ case invalidAlternativeDistributionPackageURL
 
 ## See Also
 
-- [MarketplaceKitError.invalidAlternativeDistributionPackageSignature](marketplacekiterror/invalidalternativedistributionpackagesignature.md)
+### Content validation and security errors
+- [MarketplaceKitError.invalidAlternativeDistributionPackageSignature](./invalidalternativedistributionpackagesignature.md)
   An error that indicates the alternative-distribution-package signature is invalid.
-- [MarketplaceKitError.invalidLicense](marketplacekiterror/invalidlicense.md)
+- [MarketplaceKitError.invalidLicense](./invalidlicense.md)
   An error that indicates that a license your server provides is invalid.
-- [MarketplaceKitError.invalidManifest](marketplacekiterror/invalidmanifest.md)
+- [MarketplaceKitError.invalidManifest](./invalidmanifest.md)
   An error that indicates that the app manifest provided by your server is invalid.
-- [MarketplaceKitError.invalidURL](marketplacekiterror/invalidurl.md)
+- [MarketplaceKitError.invalidURL](./invalidurl.md)
   An error that indicates that a URL your server or app provides is invalid.
 
 

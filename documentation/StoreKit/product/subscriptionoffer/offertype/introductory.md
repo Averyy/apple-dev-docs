@@ -1,7 +1,8 @@
 # introductory
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An introductory offer for an auto-renewable subscription.
 
@@ -22,13 +23,14 @@ static let introductory: Product.SubscriptionOffer.OfferType
 
 #### Discussion
 
-For more information about introductory offers, see [`Set up introductory offers for an auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions).
+For more information about introductory offers, see [Set up introductory offers for an auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions).
 
 ## See Also
 
-- [static let promotional: Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype/promotional.md)
+### Getting offer types
+- [static let promotional: Product.SubscriptionOffer.OfferType](./promotional.md)
   A promotional offer for an auto-renewable subscription.
-- [static let winBack: Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype/winback.md)
+- [static let winBack: Product.SubscriptionOffer.OfferType](./winback.md)
   A win-back offer for an auto-renewable subscription.
 
 

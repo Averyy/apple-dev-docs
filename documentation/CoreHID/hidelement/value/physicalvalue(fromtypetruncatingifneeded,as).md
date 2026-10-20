@@ -1,9 +1,10 @@
 # physicalValue(fromTypeTruncatingIfNeeded:as:)
 
 **Framework**: Core HID  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-The logical value of the data, shifted and scaled by the [`HIDElement`](hidelement.md)’s physical minimum, physical maximum and exponent.
+The logical value of the data, shifted and scaled by the [`HIDElement`](../../hidelement.md)’s physical minimum, physical maximum and exponent.
 
 **Availability**:
 - macOS 15.0+
@@ -20,9 +21,9 @@ The calculated value cast as the requested type, or nil if out of bounds.
 
 #### Discussion
 
-The [`logicalValue(asTypeTruncatingIfNeeded:)`](hidelement/value/logicalvalue(astypetruncatingifneeded:).md) is first retrieved with the specified type. If the logical value is undefined, such as when the raw value is out of bounds, the physical value is also undefined.
+The [`logicalValue(asTypeTruncatingIfNeeded:)`](./logicalvalue%28astypetruncatingifneeded%29.md) is first retrieved with the specified type. If the logical value is undefined, such as when the raw value is out of bounds, the physical value is also undefined.
 
-More information and example calculations for physical values can be found in the HID specification: See the HID specification for more details: [`https://www.usb.org/hid`](https://developer.apple.comhttps://www.usb.org/hid).
+More information and example calculations for physical values can be found in the HID specification: See the HID specification for more details: [https://www.usb.org/hid](https://www.usb.org/hid).
 
 ## Parameters
 
@@ -31,13 +32,14 @@ More information and example calculations for physical values can be found in th
 
 ## See Also
 
-- [var bytes: Data](hidelement/value/bytes.md)
+### Get element data and values
+- [var bytes: Data](./bytes.md)
   The data as an array of bytes.
-- [func integerValue<IntegerType>(asTypeTruncatingIfNeeded: IntegerType.Type) -> IntegerType](hidelement/value/integervalue(astypetruncatingifneeded:).md)
+- [func integerValue<IntegerType>(asTypeTruncatingIfNeeded: IntegerType.Type) -> IntegerType](./integervalue%28astypetruncatingifneeded%29.md)
   The raw value of the data cast as an integer type, with no transformations applied.
-- [func logicalValue<IntegerType>(asTypeTruncatingIfNeeded: IntegerType.Type) -> IntegerType?](hidelement/value/logicalvalue(astypetruncatingifneeded:).md)
-  The raw value of the data cast as an integer type and bound by the [`HIDElement`](hidelement.md)’s logical minimum and logical maximum values.
-- [var timestamp: SuspendingClock.Instant](hidelement/value/timestamp.md)
+- [func logicalValue<IntegerType>(asTypeTruncatingIfNeeded: IntegerType.Type) -> IntegerType?](./logicalvalue%28astypetruncatingifneeded%29.md)
+  The raw value of the data cast as an integer type and bound by the [`HIDElement`](../../hidelement.md)’s logical minimum and logical maximum values.
+- [var timestamp: SuspendingClock.Instant](./timestamp.md)
   The time that this data was received by the system.
 
 

@@ -1,7 +1,8 @@
 # categorySummaryFormat
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A format string for the summary description used when the system groups the category’s notifications.
 
@@ -18,15 +19,28 @@ A format string for the summary description used when the system groups the cate
 var categorySummaryFormat: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * categorySummaryFormat;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * categorySummaryFormat;
+```
+
 ## See Also
 
-- [var identifier: String](unnotificationcategory/identifier.md)
+### Getting the Information
+- [var identifier: String](./identifier.md)
   The unique string assigned to the category.
-- [var actions: [UNNotificationAction]](unnotificationcategory/actions.md)
+- [var actions: [UNNotificationAction]](./actions.md)
   The actions to display when the system delivers notifications of this type.
-- [var intentIdentifiers: [String]](unnotificationcategory/intentidentifiers.md)
+- [var intentIdentifiers: [String]](./intentidentifiers.md)
   The intents related to notifications of this category.
-- [var hiddenPreviewsBodyPlaceholder: String](unnotificationcategory/hiddenpreviewsbodyplaceholder.md)
+- [var hiddenPreviewsBodyPlaceholder: String](./hiddenpreviewsbodyplaceholder.md)
   The placeholder text to display when the system disables notification previews for the app.
 
 

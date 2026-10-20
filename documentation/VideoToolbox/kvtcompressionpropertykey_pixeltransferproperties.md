@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_PixelTransferProperties
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Properties for configuring a pixel transfer session.
 
@@ -19,13 +20,17 @@ Properties for configuring a pixel transfer session.
 let kVTCompressionPropertyKey_PixelTransferProperties: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_PixelTransferProperties;
+```
+
 #### Discussion
 
-The properties for configuring a [`VTPixelTransferSession`](vtpixeltransfersession-api-collection.md) to transfer source frames from the client’s image buffers to the video encoder’s image buffers, if necessary.
+The properties for configuring a [VTPixelTransferSession](./vtpixeltransfersession-api-collection.md) to transfer source frames from the client’s image buffers to the video encoder’s image buffers, if necessary.
 
 #### Discussion
 
-The value is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) of properties to configure a [`VTPixelTransferSession`](vtpixeltransfersession-api-collection.md). Setting this property alone does not necessarily guarantee that a [`VTPixelTransferSession`](vtpixeltransfersession-api-collection.md) will be created.
+The value is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) of properties to configure a [VTPixelTransferSession](./vtpixeltransfersession-api-collection.md). Setting this property alone does not necessarily guarantee that a [VTPixelTransferSession](./vtpixeltransfersession-api-collection.md) will be created.
 
 
 ---

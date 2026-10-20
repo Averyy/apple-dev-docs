@@ -1,7 +1,8 @@
 # dateFormat
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format the CSV file generator uses to create date strings.
 
@@ -13,6 +14,8 @@ The format the CSV file generator uses to create date strings.
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
+
+> **Deprecated**: Use dateFormatter instead.
 
 ## Declaration
 

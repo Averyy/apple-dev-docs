@@ -1,7 +1,8 @@
 # SKAdNetworkIdentifier
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A string that contains an ad network ID.
 
@@ -9,13 +10,14 @@ A string that contains an ad network ID.
 - iOS 11.3+
 - iPadOS 11.3+
 
+## Details
 
-
-**Type**: string
+- **Name**: `SKAdNetworkIdentifier`
+- **Type**: string
 
 #### Discussion
 
-Contact the ad network to learn their ad network ID. Include this key, and the value of the ad network ID as a string, as a dictionary in the [`SKAdNetworkItems`](information-property-list/skadnetworkitems.md) key.
+Contact the ad network to learn their ad network ID. Include this key, and the value of the ad network ID as a string, as a dictionary in the [`SKAdNetworkItems`](../skadnetworkitems.md) key.
 
 
 ---

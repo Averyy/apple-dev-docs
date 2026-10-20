@@ -1,7 +1,8 @@
 # kSecOIDX509V3CertificateExtensionCritical
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDX509V3CertificateExtensionCritical: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDX509V3CertificateExtensionCritical;
 ```
 
 

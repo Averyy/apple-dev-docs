@@ -1,7 +1,8 @@
 # NSCollectionView.UpdateAction.move
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Move the item from its current location to a new location.
 
@@ -14,15 +15,20 @@ Move the item from its current location to a new location.
 case move
 ```
 
+```c
+NSCollectionUpdateActionMove
+```
+
 ## See Also
 
-- [NSCollectionView.UpdateAction.insert](nscollectionview/updateaction/insert.md)
+### Constants
+- [NSCollectionView.UpdateAction.insert](./insert.md)
   Insert the item into the collection view.
-- [NSCollectionView.UpdateAction.delete](nscollectionview/updateaction/delete.md)
+- [NSCollectionView.UpdateAction.delete](./delete.md)
   Remove the action from the collection view.
-- [NSCollectionView.UpdateAction.reload](nscollectionview/updateaction/reload.md)
+- [NSCollectionView.UpdateAction.reload](./reload.md)
   Reload the item, which consists of deleting and then inserting the item.
-- [NSCollectionView.UpdateAction.none](nscollectionview/updateaction/none.md)
+- [NSCollectionView.UpdateAction.none](./none.md)
   Take no action on the item.
 
 

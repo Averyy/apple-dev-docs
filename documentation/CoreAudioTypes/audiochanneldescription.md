@@ -1,7 +1,8 @@
 # AudioChannelDescription
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes a channel of audio data.
 
@@ -20,40 +21,45 @@ A structure that describes a channel of audio data.
 struct AudioChannelDescription
 ```
 
+```c
+struct AudioChannelDescription;
+```
+
 ## Topics
 
 ### Creating a Channel Description
-- [init()](audiochanneldescription/init.md)
+- [init()](./audiochanneldescription/init%28%29.md)
   Creates an empty channel description.
-- [init(mChannelLabel: AudioChannelLabel, mChannelFlags: AudioChannelFlags, mCoordinates: (Float32, Float32, Float32))](audiochanneldescription/init(mchannellabel:mchannelflags:mcoordinates:).md)
+- [init(mChannelLabel: AudioChannelLabel, mChannelFlags: AudioChannelFlags, mCoordinates: (Float32, Float32, Float32))](./audiochanneldescription/init%28mchannellabel,mchannelflags,mcoordinates%29.md)
   Creates a channel description with a label, flags, and coordinates.
 ### Accessing the Data
-- [var mChannelFlags: AudioChannelFlags](audiochanneldescription/mchannelflags.md)
+- [var mChannelFlags: AudioChannelFlags](./audiochanneldescription/mchannelflags.md)
   The audio channel flags that indicate how to interpret the channel coordinates.
-- [var mChannelLabel: AudioChannelLabel](audiochanneldescription/mchannellabel.md)
+- [var mChannelLabel: AudioChannelLabel](./audiochanneldescription/mchannellabel.md)
   A label that describes the audio channel.
-- [var mCoordinates: (Float32, Float32, Float32)](audiochanneldescription/mcoordinates.md)
+- [var mCoordinates: (Float32, Float32, Float32)](./audiochanneldescription/mcoordinates.md)
   The coordinates that specify a precise speaker location.
-- [typealias AudioChannelLabel](audiochannellabel.md)
+- [typealias AudioChannelLabel](./audiochannellabel.md)
   Identifies how an audio data channel is to be used.
-- [Audio Channel Coordinates](audio-channel-coordinates.md)
-  Used in the `mChannelFlags` field of an [`AudioChannelDescription`](audiochanneldescription.md) structure.
-- [struct AudioChannelFlags](audiochannelflags.md)
+- [Audio Channel Coordinates](./audio-channel-coordinates.md)
+  Used in the `mChannelFlags` field of an [`AudioChannelDescription`](./audiochanneldescription.md) structure.
+- [struct AudioChannelFlags](./audiochannelflags.md)
   Constants that define the audio channel flags of an audio channel description.
-- [Audio Channel Labels](audio-channel-labels.md)
-  Channel labels for use in the `mChannelLabel` field of an [`AudioChannelDescription`](audiochanneldescription.md) structure.
+- [Audio Channel Labels](./audio-channel-labels.md)
+  Channel labels for use in the `mChannelLabel` field of an [`AudioChannelDescription`](./audiochanneldescription.md) structure.
 ### Operators
-- [static func == (AudioChannelDescription, AudioChannelDescription) -> Bool](audiochanneldescription/==(_:_:).md)
+- [static func == (AudioChannelDescription, AudioChannelDescription) -> Bool](./audiochanneldescription/eqeq%28_,_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AudioChannelLayout](audiochannellayout.md)
+### Channels
+- [struct AudioChannelLayout](./audiochannellayout.md)
   A structure that specifies a channel layout in a file or in hardware.
 
 

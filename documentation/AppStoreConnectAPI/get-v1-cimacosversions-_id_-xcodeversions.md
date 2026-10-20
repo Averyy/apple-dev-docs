@@ -1,7 +1,8 @@
 # List available xcode versions for a macos version
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List all Xcode versions available for a specific macOS version in Xcode Cloud.
 
@@ -16,7 +17,7 @@ The example request below lists Xcode versions available in Xcode Cloud for a sp
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95/xcodeVersions
 ```
 
@@ -114,19 +115,45 @@ GET https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95/xcodeVersions
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the macOS Versions resource.
+
+### Query Parameters
+
 - `fields[ciMacOsVersions]` ([string]): Additional fields to include for each Xcode Versions resource returned by the response.
+
+  **Allowed Values**: `version`, `name`, `xcodeVersions`
 - `fields[ciXcodeVersions]` ([string]): Additional fields to include for each Xcode Versions resource returned by the response.
+
+  **Allowed Values**: `version`, `name`, `testDestinations`, `macOsVersions`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `macOsVersions`
 - `limit` (integer): The number of Xcode Versions resources to return.
+
+  **Maximum**: `200`
 - `limit[macOsVersions]` (integer): The number of included Xcode Versions resources to return if the macOS versions relationship is included.
+
+  **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`CiXcodeVersionsResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all macos versions available in xcode cloud](get-v1-cimacosversions.md)
+### Getting macOS Version Information
+- [List all macos versions available in xcode cloud](./get-v1-cimacosversions.md)
   List all macOS versions available to Xcode Cloud workflows.
-- [Read macos version information](get-v1-cimacosversions-_id_.md)
+- [Read macos version information](./get-v1-cimacosversions-_id_.md)
   Get information about a specific macOS version that’s available to Xcode Cloud workflows.
-- [List Xcode version IDs for a CI macOS version](get-v1-cimacosversions-_id_-relationships-xcodeversions.md)
+- [List Xcode version IDs for a CI macOS version](./get-v1-cimacosversions-_id_-relationships-xcodeversions.md)
 
 
 ---

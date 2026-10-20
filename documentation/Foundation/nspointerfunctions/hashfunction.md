@@ -1,7 +1,8 @@
 # hashFunction
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash function.
 
@@ -20,13 +21,18 @@ The hash function.
 var hashFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Int)? { get set }
 ```
 
+```objc
+@property (nullable) unsigned long (*)(const void *, unsigned long (*)(const void *)) hashFunction;
+```
+
 ## See Also
 
-- [var isEqualFunction: ((UnsafeRawPointer, UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> ObjCBool)?](nspointerfunctions/isequalfunction.md)
+### Personality Functions
+- [var isEqualFunction: ((UnsafeRawPointer, UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> ObjCBool)?](./isequalfunction.md)
   The function used to compare pointers.
-- [var sizeFunction: ((UnsafeRawPointer) -> Int)?](nspointerfunctions/sizefunction.md)
+- [var sizeFunction: ((UnsafeRawPointer) -> Int)?](./sizefunction.md)
   The function used to determine the size of pointers.
-- [var descriptionFunction: ((UnsafeRawPointer) -> String?)?](nspointerfunctions/descriptionfunction.md)
+- [var descriptionFunction: ((UnsafeRawPointer) -> String?)?](./descriptionfunction.md)
   The function used to describe elements.
 
 

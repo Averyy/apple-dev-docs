@@ -1,7 +1,8 @@
 # fetchAttributes
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributes the system fetches for the searchable items.
 
@@ -18,17 +19,22 @@ The attributes the system fetches for the searchable items.
 var fetchAttributes: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSArray<NSString *> * fetchAttributes;
+```
+
 ## Mentions
 
-- [Searching for information in your app](searching-for-information-in-your-app.md)
+- [Searching for information in your app](../searching-for-information-in-your-app.md)
 
 ## See Also
 
-- [var keyboardLanguage: String?](cssearchquerycontext/keyboardlanguage.md)
+### Configuring search behavior
+- [var keyboardLanguage: String?](./keyboardlanguage.md)
   The language used for the query.
-- [var sourceOptions: CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.property.md)
+- [var sourceOptions: CSSearchQueryContext.SourceOptions](./sourceoptions-swift.property.md)
   The query source options to allow or deny Mail messages in the search.
-- [CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.struct.md)
+- [CSSearchQueryContext.SourceOptions](./sourceoptions-swift.struct.md)
   The query source options to allow or deny Mail messages in the search.
 
 

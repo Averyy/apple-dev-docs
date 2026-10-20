@@ -1,7 +1,8 @@
 # init(playerItem:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new synchronized layer with timing synchronized with a given player item.
 
@@ -17,6 +18,10 @@ Creates a new synchronized layer with timing synchronized with a given player it
 
 ```swift
 init(playerItem: AVPlayerItem)
+```
+
+```objc
++ (AVSynchronizedLayer *) synchronizedLayerWithPlayerItem:(AVPlayerItem *) playerItem;
 ```
 
 #### Return Value

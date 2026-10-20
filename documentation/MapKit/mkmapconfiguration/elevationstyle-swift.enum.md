@@ -1,7 +1,8 @@
 # MKMapConfiguration.ElevationStyle
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that control the map’s elevation style.
 
@@ -20,31 +21,36 @@ Values that control the map’s elevation style.
 enum ElevationStyle
 ```
 
+```c
+enum MKMapElevationStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MKMapConfiguration.ElevationStyle.flat](mkmapconfiguration/elevationstyle-swift.enum/flat.md)
+- [MKMapConfiguration.ElevationStyle.flat](./elevationstyle-swift.enum/flat.md)
   The value that represents the flat map elevation style.
-- [MKMapConfiguration.ElevationStyle.realistic](mkmapconfiguration/elevationstyle-swift.enum/realistic.md)
+- [MKMapConfiguration.ElevationStyle.realistic](./elevationstyle-swift.enum/realistic.md)
   The value that represents a map elevation style with realistic ground contours.
 ### Initializers
-- [init?(rawValue: Int)](mkmapconfiguration/elevationstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./elevationstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init()](mkhybridmapconfiguration/init.md)
+### Creating a hybrid map configuration
+- [init()](../mkhybridmapconfiguration/init%28%29.md)
   Creates a new hybrid map configuration.
-- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)](mkhybridmapconfiguration/init(elevationstyle:).md)
+- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)](../mkhybridmapconfiguration/init%28elevationstyle%29.md)
   Creates a new hybrid map configuration with the specified elevation style.
 
 

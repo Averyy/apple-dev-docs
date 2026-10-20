@@ -1,7 +1,8 @@
 # readAttributeCumulativeEnergyReset(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCumulativeEnergyReset(completion: @escaping @Sendable (MTRElectricalEnergyMeasurementClusterCumulativeEnergyResetStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCumulativeEnergyReset() async throws -> MTRElectricalEnergyMeasurementClusterCumulativeEnergyResetStruct
+```
+
+```objc
+- (void) readAttributeCumulativeEnergyResetWithCompletion:(void (^)(MTRElectricalEnergyMeasurementClusterCumulativeEnergyResetStruct *value, NSError *error)) completion;
 ```
 
 

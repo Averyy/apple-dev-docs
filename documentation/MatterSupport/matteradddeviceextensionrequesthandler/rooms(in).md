@@ -1,7 +1,8 @@
 # rooms(in:)
 
 **Framework**: MatterSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides rooms that correspond to a home in the device setup.
 
@@ -10,7 +11,7 @@ Provides rooms that correspond to a home in the device setup.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,11 +31,12 @@ If the returned array contains two or more rooms, the user-interface flow displa
 
 ## See Also
 
-- [func configureDevice(named: String, in: MatterAddDeviceRequest.Room?) async](matteradddeviceextensionrequesthandler/configuredevice(named:in:).md)
+### Configuring and validating the device
+- [func configureDevice(named: String, in: MatterAddDeviceRequest.Room?) async](./configuredevice%28named,in%29.md)
   Configures the device with selected attributes.
-- [func validateDeviceCredential(MatterAddDeviceExtensionRequestHandler.DeviceCredential) async throws](matteradddeviceextensionrequesthandler/validatedevicecredential(_:).md)
+- [func validateDeviceCredential(MatterAddDeviceExtensionRequestHandler.DeviceCredential) async throws](./validatedevicecredential%28_%29.md)
   Performs verification and attestation checks.
-- [MatterAddDeviceExtensionRequestHandler.DeviceCredential](matteradddeviceextensionrequesthandler/devicecredential.md)
+- [MatterAddDeviceExtensionRequestHandler.DeviceCredential](./devicecredential.md)
   A collection of device credentials the device presents during commissioning.
 
 

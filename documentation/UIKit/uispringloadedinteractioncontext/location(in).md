@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the location of the drag activity within the specified view.
@@ -16,6 +17,10 @@ Returns the location of the drag activity within the specified view.
 
 ```swift
 func location(in view: UIView?) -> CGPoint
+```
+
+```objc
+- (CGPoint) locationInView:(UIView *) view;
 ```
 
 #### Return Value

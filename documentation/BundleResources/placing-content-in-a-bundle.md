@@ -1,6 +1,7 @@
 # Placing content in a bundle
 
-**Framework**: Bundle Resources
+**Framework**: Bundle Resources  
+**Role**: Article
 
 Place bundle content in the correct location based on its type.
 
@@ -14,11 +15,11 @@ Xcode understands the bundle structure and, if you use Xcode to build your bundl
 
 > ❗ **Important**:  If you put content in the wrong location, you may encounter hard-to-debug code signing and distribution problems. These problems aren’t always immediately obvious. For example, when building a Mac app, incorrectly placed code might work during day-to-day development, but might cause problems during notarization.
 
-##### Place Content Based on Type and Platform
+##### Place content based on type and platform
 
 Bundled content includes the bundle’s `Info.plist`, code content and resources:
 
-- The `Info.plist` is a property list file stored at a location that identifies a directory hierarchy as a bundle. For a list of `Info.plist` keys, see [`Information Property List`](information-property-list.md).
+- The `Info.plist` is a property list file stored at a location that identifies a directory hierarchy as a bundle. For a list of `Info.plist` keys, see [`Information Property List`](./information-property-list.md).
 - Code content is either executable code, like a helper tool, or another bundle that contains executable code, like an app extension. In this context, executable code means a Mach-O image. It doesn’t include things like shell scripts, Python scripts, and AppleScripts (unless you save the AppleScript as an application). Although you execute a script, it has no place to hold a code signature, so you treat it as a resource.
 - Resources are everything that’s not code.
 
@@ -45,7 +46,7 @@ When adding content to a bundle, place it according to the rules in the followin
 | framework, dynamic library | macOS | `Contents/Frameworks/` |
 |  | macOS framework | `Versions/A/Frameworks/` |
 |  | iOS, tvOS, visionOS | `Frameworks/` |
-|  | watchOS | See [`Handle frameworks and Swift system libraries on watchOS`](placing-content-in-a-bundle#Handle-frameworks-and-Swift-system-libraries-on-watchOS.md) section below. |
+|  | watchOS | See [Handle frameworks and Swift system libraries on watchOS](./placing-content-in-a-bundle.md#Handle-frameworks-and-Swift-system-libraries-on-watchOS) section below. |
 | app extension | macOS | `Contents/PlugIns/` |
 |  | iOS, watchOS, tvOS | `PlugIns/` |
 | plug-in | macOS | `Contents/PlugIns/` |
@@ -70,11 +71,11 @@ iOS, watchOS, and tvOS support third-party frameworks but don’t support third-
 
 iOS and tvOS support frameworks and Swift system libraries at the topmost app level; a nested bundle, like an app extension, can’t include a framework.
 
-For more information about embedding frameworks and Swift system libraries on watchOS, see [`Handle frameworks and Swift system libraries on watchOS`](placing-content-in-a-bundle#Handle-frameworks-and-Swift-system-libraries-on-watchOS.md).
+For more information about embedding frameworks and Swift system libraries on watchOS, see [Handle frameworks and Swift system libraries on watchOS](./placing-content-in-a-bundle.md#Handle-frameworks-and-Swift-system-libraries-on-watchOS).
 
-For information on localizing resources, see [`Localized Resources in Bundles`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html#//apple_ref/doc/uid/10000123i-CH101-SW7).
+For information on localizing resources, see [Localized Resources in Bundles](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html#//apple_ref/doc/uid/10000123i-CH101-SW7).
 
-##### Handle Frameworks and Swift System Libraries on Watchos
+##### Handle frameworks and Swift system libraries on watchOS
 
 A watchOS app consists of an iOS app that contains a watchOS app, that then contains a WatchKit extension. This nesting is present even for watch-only apps. When embedding frameworks and Swift system libraries in a watchOS app, you need to:
 
@@ -82,7 +83,7 @@ A watchOS app consists of an iOS app that contains a watchOS app, that then cont
 - Place the watchOS Swift system libraries in the WatchKit app’s `Frameworks` directory, for example, `MyApp.app/Watch/MyApp WatchKit App.app/Frameworks/`.
 - Place watchOS frameworks in the WatchKit extension’s `Frameworks` directory, for example, `MyApp.app/Watch/MyApp WatchKit App.app/PlugIns/MyApp WatchKit Extension.appex/Frameworks/`.
 
-##### Support a Single Framework Version on Macos
+##### Support a single framework version on macOS
 
 A macOS framework is a bundle that uses a unique format. The framework’s root contains a `Versions` directory that holds one or more versions of the framework, each of which has its own bundle-like structure. On ancestor platforms to macOS, multiple versions of a framework can coexist within this versioned bundle. On macOS, however, best practice is to use a single version named `A`.
 
@@ -113,7 +114,7 @@ CoreWaffleVarnishing.framework/
 
 > ❗ **Important**:  The framework’s root must contain only the `Versions` directory and symlinks. Don’t place any other content there. Doing so causes code-signing problems. Similarly, the `Versions` directory must contain only version directories — ideally just one, called `A` — and a symlink called `Current` that targets one version directory.
 
-##### Place Code Content Directly in Its Location
+##### Place code content directly in its location
 
 Each code location must contain a flat list of code content. If you have a lot of code content, you might be tempted to group it in nested directories, for example:
 
@@ -139,7 +140,7 @@ Don’t group your nested code in this way. Although it might work in some situa
 
 If you ignore this recommendation and use this structure, don’t use a dot (`.`) in your directory names, such as `Waffles` and `Varnishes` in the example above. The code-signing machinery assumes that any directory with a name that contains a dot is a bundle, and then fails when signing that directory because it’s not a well-formed bundle.
 
-##### Codeless Bundles
+##### Codeless bundles
 
 A codeless bundle has no executable code. For example, some apps use a codeless bundle as part of their plug-in support. A codeless bundle can hold a code signature, so you can sign it either as code or a resource, depending on the circumstances:
 

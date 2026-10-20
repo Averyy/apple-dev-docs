@@ -1,18 +1,19 @@
 # look(at:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the node’s orientation so that its local forward vector points toward the specified location.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,11 +21,15 @@ Changes the node’s orientation so that its local forward vector points toward 
 func look(at worldTarget: SCNVector3)
 ```
 
+```objc
+- (void) lookAt:(SCNVector3) worldTarget;
+```
+
 #### Discussion
 
-Using this method is equivalent to calling the [`look(at:up:localFront:)`](scnnode/look(at:up:localfront:).md) method and passing the node’s [`worldUp`](scnnode/worldup.md) and [`localFront`](scnnode/localfront.md) vectors for the corresponding parameters.
+Using this method is equivalent to calling the [`look(at:up:localFront:)`](./look%28at,up,localfront%29.md) method and passing the node’s [`worldUp`](./worldup.md) and [`localFront`](./localfront.md) vectors for the corresponding parameters.
 
-The effects of this method are animatable; that is, calling this method during an implicit-animation transaction animates the rotation effect. (See [`Animating SceneKit Content`](animating-scenekit-content.md).)
+The effects of this method are animatable; that is, calling this method during an implicit-animation transaction animates the rotation effect. (See [Animating SceneKit Content](../animating-scenekit-content.md).)
 
 ## Parameters
 
@@ -32,15 +37,17 @@ The effects of this method are animatable; that is, calling this method during a
 
 ## See Also
 
-- [func simdLook(at: simd_float3)](scnnode/simdlook(at:).md)
+### Related Documentation
+- [func simdLook(at: simd_float3)](./simdlook%28at%29.md)
   Changes the node’s orientation so that its local forward vector points toward the specified location.
-- [func rotate(by: SCNQuaternion, aroundTarget: SCNVector3)](scnnode/rotate(by:aroundtarget:).md)
+### Performing Node-Relative Operations (SceneKit Types)
+- [func rotate(by: SCNQuaternion, aroundTarget: SCNVector3)](./rotate%28by,aroundtarget%29.md)
   Changes the node’s position and orientation, relative to its current transform, through a rotation around the specified point in scene space.
-- [func localTranslate(by: SCNVector3)](scnnode/localtranslate(by:).md)
+- [func localTranslate(by: SCNVector3)](./localtranslate%28by%29.md)
   Changes the node’s position relative to its current position.
-- [func localRotate(by: SCNQuaternion)](scnnode/localrotate(by:).md)
+- [func localRotate(by: SCNQuaternion)](./localrotate%28by%29.md)
   Changes the node’s orientation relative to its current orientation.
-- [func look(at: SCNVector3, up: SCNVector3, localFront: SCNVector3)](scnnode/look(at:up:localfront:).md)
+- [func look(at: SCNVector3, up: SCNVector3, localFront: SCNVector3)](./look%28at,up,localfront%29.md)
   Changes the node’s orientation so that the specified forward vector points toward the specified location.
 
 

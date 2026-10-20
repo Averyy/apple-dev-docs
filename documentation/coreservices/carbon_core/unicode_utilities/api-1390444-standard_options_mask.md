@@ -6,12 +6,12 @@ Specifies standard options for Unicode string comparison.
 
 #### Overview
 
-For descriptions of other collation options, see  [`UCCollateOptions`](uccollateoptions.md). 
+For descriptions of other collation options, see  [`UCCollateOptions`](../../uccollateoptions.md). 
 
 ## Topics
 
 ### Constants
-- [var kUCCollateStandardOptions: Int](kuccollatestandardoptions.md)
+- [var kUCCollateStandardOptions: Int](../../kuccollatestandardoptions.md)
 
 
 ---

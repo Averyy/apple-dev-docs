@@ -1,7 +1,8 @@
 # updateTextureMapping(_:mode:region:mipLevel:slice:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command to update the texture mappings for a region in a single texture mipmap.
 
@@ -15,19 +16,31 @@ Encodes a command to update the texture mappings for a region in a single textur
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, region: MTLRegion, mipLevel: Int, slice: Int)
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 optional func updateTextureMapping(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, region: MTLRegion, mipLevel: Int, slice: Int)
+```
+
+```objc
+- (void) updateTextureMapping:(id<MTLTexture>) texture mode:(const MTLSparseTextureMappingMode) mode region:(const MTLRegion) region mipLevel:(const NSUInteger) mipLevel slice:(const NSUInteger) slice;
 ```
 
 #### Discussion
 
 When the GPU executes the command that updates the texture’s memory mapping, the GPU gets details about the region from the `region` parameter.
 
-To allocate tiles from the heap, pass [`MTLSparseTextureMappingMode.map`](mtlsparsetexturemappingmode/map.md) as the `mode` parameter, and to free files back to the heap, pass [`MTLSparseTextureMappingMode.unmap`](mtlsparsetexturemappingmode/unmap.md).
+To allocate tiles from the heap, pass [`MTLSparseTextureMappingMode.map`](../mtlsparsetexturemappingmode/map.md) as the `mode` parameter, and to free files back to the heap, pass [`MTLSparseTextureMappingMode.unmap`](../mtlsparsetexturemappingmode/unmap.md).
 
-If you encode other commands that use the texture’s contents, such as rendering to the texture or sampling from a texture, synchronize the texture’s mapping updates with those commands to avoid race conditions. See [`Resource synchronization`](resource-synchronization.md).
+If you encode other commands that use the texture’s contents, such as rendering to the texture or sampling from a texture, synchronize the texture’s mapping updates with those commands to avoid race conditions. See [Resource synchronization](../resource-synchronization.md).
 
-If you encode commands with multiple resource state passes, synchronize the resources to run the commands in the passes sequentially. See the [`MTLResourceStateCommandEncoder`](mtlresourcestatecommandencoder.md) protocol.
+If you encode commands with multiple resource state passes, synchronize the resources to run the commands in the passes sequentially. See the [`MTLResourceStateCommandEncoder`](../mtlresourcestatecommandencoder.md) protocol.
 
 ## Parameters
 
@@ -39,9 +52,10 @@ If you encode commands with multiple resource state passes, synchronize the reso
 
 ## See Also
 
-- [func updateTextureMappings(any MTLTexture, mode: MTLSparseTextureMappingMode, regions: UnsafePointer<MTLRegion>, mipLevels: UnsafePointer<Int>, slices: UnsafePointer<Int>, numRegions: Int)](mtlresourcestatecommandencoder/updatetexturemappings(_:mode:regions:miplevels:slices:numregions:).md)
+### Updating texture memory assignments
+- [func updateTextureMappings(any MTLTexture, mode: MTLSparseTextureMappingMode, regions: UnsafePointer<MTLRegion>, mipLevels: UnsafePointer<Int>, slices: UnsafePointer<Int>, numRegions: Int)](./updatetexturemappings%28_,mode,regions,miplevels,slices,numregions%29.md)
   Encodes a command to update memory mappings for multiple regions inside a texture.
-- [enum MTLSparseTextureMappingMode](mtlsparsetexturemappingmode.md)
+- [enum MTLSparseTextureMappingMode](../mtlsparsetexturemappingmode.md)
   Options for sparse texture mapping.
 
 

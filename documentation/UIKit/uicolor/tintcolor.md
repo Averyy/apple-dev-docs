@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A color value that resolves at runtime based on the current tint color of the app or trait hierarchy.
 
@@ -16,6 +17,10 @@ A color value that resolves at runtime based on the current tint color of the ap
 
 ```swift
 class var tintColor: UIColor { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIColor * tintColor;
 ```
 
 

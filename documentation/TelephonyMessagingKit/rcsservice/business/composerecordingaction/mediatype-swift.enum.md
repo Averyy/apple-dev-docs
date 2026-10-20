@@ -1,7 +1,8 @@
 # RCSService.Business.ComposeRecordingAction.MediaType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -15,26 +16,27 @@ enum MediaType
 ## Topics
 
 ### Acccessing media types
-- [RCSService.Business.ComposeRecordingAction.MediaType.audio](rcsservice/business/composerecordingaction/mediatype-swift.enum/audio.md)
+- [RCSService.Business.ComposeRecordingAction.MediaType.audio](./mediatype-swift.enum/audio.md)
   Compose an audio message.
-- [RCSService.Business.ComposeRecordingAction.MediaType.video](rcsservice/business/composerecordingaction/mediatype-swift.enum/video.md)
+- [RCSService.Business.ComposeRecordingAction.MediaType.video](./mediatype-swift.enum/video.md)
   Compose a video message.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let mediaType: RCSService.Business.ComposeRecordingAction.MediaType](rcsservice/business/composerecordingaction/mediatype-swift.property.md)
+### Accessing action properties
+- [let mediaType: RCSService.Business.ComposeRecordingAction.MediaType](./mediatype-swift.property.md)
   Type of media to record.
-- [let phoneNumber: String](rcsservice/business/composerecordingaction/phonenumber.md)
+- [let phoneNumber: String](./phonenumber.md)
   Destination phone number.
 
 

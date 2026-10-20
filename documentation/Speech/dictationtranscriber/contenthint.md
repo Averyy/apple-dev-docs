@@ -1,7 +1,8 @@
 # DictationTranscriber.ContentHint
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Expected characteristics of the spoken audio content and its delivery.
 
@@ -25,30 +26,31 @@ These hints optimize transcription, but do not preclude spoken audio with differ
 ## Topics
 
 ### Content hints
-- [static let shortForm: DictationTranscriber.ContentHint](dictationtranscriber/contenthint/shortform.md)
+- [static let shortForm: DictationTranscriber.ContentHint](./contenthint/shortform.md)
   A processing hint indicating that the audio is only expected to be a minute or so long.
-- [static let farField: DictationTranscriber.ContentHint](dictationtranscriber/contenthint/farfield.md)
+- [static let farField: DictationTranscriber.ContentHint](./contenthint/farfield.md)
   A processing hint indicating that the audio should be processed as if it were from a speaker far from the microphone.
-- [static func customizedLanguage(modelConfiguration: SFSpeechLanguageModel.Configuration) -> DictationTranscriber.ContentHint](dictationtranscriber/contenthint/customizedlanguage(modelconfiguration:).md)
+- [static func customizedLanguage(modelConfiguration: SFSpeechLanguageModel.Configuration) -> DictationTranscriber.ContentHint](./contenthint/customizedlanguage%28modelconfiguration%29.md)
   A hint specifying a custom language model applicable to the expected spoken audio content.
-- [static let atypicalSpeech: DictationTranscriber.ContentHint](dictationtranscriber/contenthint/atypicalspeech.md)
+- [static let atypicalSpeech: DictationTranscriber.ContentHint](./contenthint/atypicalspeech.md)
   A processing hint indicating that the audio is from a speaker with a heavy accent, lisp, or other confounding factor.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DictationTranscriber.ReportingOption](dictationtranscriber/reportingoption.md)
+### Configuring transcription
+- [DictationTranscriber.ReportingOption](./reportingoption.md)
   Options relating to the transcriber’s result delivery.
-- [DictationTranscriber.ResultAttributeOption](dictationtranscriber/resultattributeoption.md)
+- [DictationTranscriber.ResultAttributeOption](./resultattributeoption.md)
   Options relating to the attributes of the transcription.
-- [DictationTranscriber.TranscriptionOption](dictationtranscriber/transcriptionoption.md)
+- [DictationTranscriber.TranscriptionOption](./transcriptionoption.md)
   Options relating to the text of the transcription.
 
 

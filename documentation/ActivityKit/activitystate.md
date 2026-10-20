@@ -1,7 +1,8 @@
 # ActivityState
 
 **Framework**: ActivityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The enum that describes the state of a Live Activity in its life cycle.
 
@@ -17,39 +18,40 @@ enum ActivityState
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](./displaying-live-data-with-live-activities.md)
 
 ## Topics
 
 ### Live Activity states
-- [ActivityState.active](activitystate/active.md)
+- [ActivityState.active](./activitystate/active.md)
   The Live Activity is active, visible, and can receive content updates.
-- [ActivityState.dismissed](activitystate/dismissed.md)
+- [ActivityState.dismissed](./activitystate/dismissed.md)
   The Live Activity ended and is no longer visible because a person or the system removed it.
-- [ActivityState.pending](activitystate/pending.md)
+- [ActivityState.pending](./activitystate/pending.md)
   The Live Activity is scheduled to start at a specified date but hasn’t started yet.
-- [ActivityState.stale](activitystate/stale.md)
+- [ActivityState.stale](./activitystate/stale.md)
   The Live Activity content is out of date and needs an update.
-- [ActivityState.ended](activitystate/ended.md)
+- [ActivityState.ended](./activitystate/ended.md)
   The Live Activity is visible, but a person, the app, or the system ended it, and it won’t update its content anymore.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var activityState: ActivityState](activity/activitystate.md)
+### Observing the Live Activity life cycle
+- [var activityState: ActivityState](./activity/activitystate.md)
   The current state of a Live Activity in its life cycle.
-- [var activityStateUpdates: Activity<Attributes>.ActivityStateUpdates](activity/activitystateupdates-swift.property.md)
+- [var activityStateUpdates: Activity<Attributes>.ActivityStateUpdates](./activity/activitystateupdates-swift.property.md)
   An asynchronous sequence you use to observe activity state changes.
-- [Activity.ActivityStateUpdates](activity/activitystateupdates-swift.struct.md)
+- [Activity.ActivityStateUpdates](./activity/activitystateupdates-swift.struct.md)
   A structure that offers functionality to observe state changes of a Live Activity.
 
 

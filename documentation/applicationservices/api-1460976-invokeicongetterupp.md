@@ -1,7 +1,8 @@
 # InvokeIconGetterUPP(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func InvokeIconGetterUPP(_ theType: ResType, _ yourDataPtr: UnsafeMutableRawPointer!, _ userUPP: IconGetterUPP!) -> Handle!
+```
+
+```c
+Handle InvokeIconGetterUPP(ResType theType, void *yourDataPtr, IconGetterUPP userUPP);
 ```
 
 

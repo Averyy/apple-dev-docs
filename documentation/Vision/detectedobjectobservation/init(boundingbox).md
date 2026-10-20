@@ -1,7 +1,8 @@
 # init(boundingBox:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a detected object observation with the bounding box you specify.
 
@@ -22,7 +23,8 @@ init(boundingBox: NormalizedRect)
 
 ## See Also
 
-- [init(VNDetectedObjectObservation)](detectedobjectobservation/init(_:).md)
+### Creating an observation
+- [init(VNDetectedObjectObservation)](./init%28_%29.md)
   Creates a detected object observation.
 
 

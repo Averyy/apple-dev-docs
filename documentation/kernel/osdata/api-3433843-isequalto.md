@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares the data with an OSString
 
@@ -11,11 +12,19 @@ Compares the data with an OSString
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool isEqualTo(const OSString *aString);
+```
+
+*macOS*
+
+```cpp
 virtual bool isEqualTo(const OSString *aString);
 ```
 
-#### Return_value
+#### Return Value
 
 true if the OSData and OSString contain the same c-string.
 
@@ -29,11 +38,12 @@ If the passed OSString object has the same length and all bytes are identical, t
 
 ## See Also
 
-- [- isEqualTo](osdata/3180882-isequalto.md)
+### Comparing Data Objects
+- [- isEqualTo](./api-3180882-isequalto.md)
   Compares the data with an OSData
-- [- isEqualTo](osdata/3433844-isequalto.md)
+- [- isEqualTo](./api-3433844-isequalto.md)
   Compares the data with a pointer to bytes
-- [- isEqualTo](osdata/3433858-isequalto.md)
+- [- isEqualTo](./api-3433858-isequalto.md)
   Compares the data with an OSObject
 
 

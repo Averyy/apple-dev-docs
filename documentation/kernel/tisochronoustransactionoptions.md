@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum tIsochronousTransactionOptions : unsigned int {
     ...
 };
@@ -17,8 +17,8 @@ enum tIsochronousTransactionOptions : unsigned int {
 ## Topics
 
 ### Constants
-- [kIsochronousTransactionOptionsNone](tisochronoustransactionoptions/kisochronoustransactionoptionsnone.md)
-- [kIsochronousTransactionOptionsWrap](tisochronoustransactionoptions/kisochronoustransactionoptionswrap.md)
+- [kIsochronousTransactionOptionsNone](./tisochronoustransactionoptions/kisochronoustransactionoptionsnone.md)
+- [kIsochronousTransactionOptionsWrap](./tisochronoustransactionoptions/kisochronoustransactionoptionswrap.md)
 
 
 ---

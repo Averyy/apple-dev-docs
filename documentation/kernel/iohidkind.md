@@ -1,14 +1,15 @@
 # IOHIDKind
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOHIDKind : unsigned int {
     ...
 } IOHIDKind;
@@ -17,9 +18,9 @@ typedef enum IOHIDKind : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIKeyboardDevice](iohidkind/khikeyboarddevice.md)
-- [kHIRelativePointingDevice](iohidkind/khirelativepointingdevice.md)
-- [kHIUnknownDevice](iohidkind/khiunknowndevice.md)
+- [kHIKeyboardDevice](./iohidkind/khikeyboarddevice.md)
+- [kHIRelativePointingDevice](./iohidkind/khirelativepointingdevice.md)
+- [kHIUnknownDevice](./iohidkind/khiunknowndevice.md)
 
 
 ---

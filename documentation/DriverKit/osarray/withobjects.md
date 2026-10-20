@@ -1,19 +1,20 @@
 # withObjects
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates an OSArray object with given members and preallocated capacity.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSArrayPtr withObjects(const OSObject **values, uint32_t count, uint32_t capacity);
 ```
 
@@ -29,15 +30,16 @@ NULL on failure, otherwise the allocated OSArray with reference count 1 to be re
 
 ## See Also
 
-- [withArray](osarray/witharray.md)
+### Creating an Array
+- [withArray](./witharray.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [withCapacity](osarray/withcapacity.md)
+- [withCapacity](./withcapacity.md)
   Allocates an OSArray object with preallocated capacity.
-- [OSArrayCreate](osarraycreate.md)
-- [merge](osarray/merge.md)
+- [OSArrayCreate](../osarraycreate.md)
+- [merge](./merge.md)
   Appends all members of an array to this array.
-- [free](osarray/free.md)
-- [flushCollection](osarray/flushcollection.md)
+- [free](./free.md)
+- [flushCollection](./flushcollection.md)
   Removes and drops references to all members of array.
 
 

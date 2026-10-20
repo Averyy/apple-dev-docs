@@ -1,7 +1,8 @@
 # visibleItemIndexes()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the indexes of the view’s currently visible items.
 
@@ -14,17 +15,22 @@ Returns the indexes of the view’s currently visible items.
 func visibleItemIndexes() -> IndexSet!
 ```
 
+```objc
+- (NSIndexSet *) visibleItemIndexes;
+```
+
 #### Return Value
 
 A set containing the indexes.
 
 ## See Also
 
-- [func indexOfItem(at: NSPoint) -> Int](ikimagebrowserview/indexofitem(at:).md)
+### Getting Item Information
+- [func indexOfItem(at: NSPoint) -> Int](./indexofitem%28at%29.md)
   Returns the index of the item at the specified location.
-- [func itemFrame(at: Int) -> NSRect](ikimagebrowserview/itemframe(at:).md)
+- [func itemFrame(at: Int) -> NSRect](./itemframe%28at%29.md)
   Returns the frame rectangle for the item located at the specified index.
-- [func cellForItem(at: Int) -> IKImageBrowserCell!](ikimagebrowserview/cellforitem(at:).md)
+- [func cellForItem(at: Int) -> IKImageBrowserCell!](./cellforitem%28at%29.md)
   Returns the browser cell for the item at the specified index.
 
 

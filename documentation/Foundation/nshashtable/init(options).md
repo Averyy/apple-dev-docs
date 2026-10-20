@@ -1,7 +1,8 @@
 # init(options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a hash table with given pointer functions options.
 
@@ -20,17 +21,22 @@ Returns a hash table with given pointer functions options.
 init(options: NSPointerFunctions.Options = [])
 ```
 
+```objc
++ (NSHashTable<id> *) hashTableWithOptions:(NSPointerFunctionsOptions) options;
+```
+
 #### Return Value
 
 A hash table with given pointer functions options.
 
 ## Parameters
 
-- `options`: A bit field that specifies the options for the elements in the hash table. For possible values, see [`NSHashTableOptions`](nshashtableoptions.md).
+- `options`: A bit field that specifies the options for the elements in the hash table. For possible values, see [`NSHashTableOptions`](../nshashtableoptions.md).
 
 ## See Also
 
-- [class func weakObjects() -> NSHashTable<ObjectType>](nshashtable/weakobjects.md)
+### Convenience Constructors
+- [class func weakObjects() -> NSHashTable<ObjectType>](./weakobjects%28%29.md)
   Returns a new hash table for storing weak references to its contents.
 
 

@@ -1,7 +1,8 @@
 # DeviceFitStatus.valid
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User’s eyes are properly positioned within the optimal device fit range.
 

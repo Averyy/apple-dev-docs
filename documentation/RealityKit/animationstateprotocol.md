@@ -1,7 +1,8 @@
 # AnimationStateProtocol
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol representing the current animation state of an action animation.
 
@@ -27,41 +28,42 @@ Animating values with the animation engine allows for cross-fading and additive 
 
 Access the animation state structure from the event structure returned to `.updated` event handlers. Define a valid bind target and matching animation type to make the state structure available and non nil.
 
-> **Note**: Custom actions don’t support animating [`BlendShapeWeights`](blendshapeweights.md).
+> **Note**: Custom actions don’t support animating [`BlendShapeWeights`](./blendshapeweights.md).
 
 ## Topics
 
 ### Associated Types
-- [associatedtype ValueType : AnimatableData](animationstateprotocol/valuetype.md)
+- [associatedtype ValueType : AnimatableData](./animationstateprotocol/valuetype.md)
 ### Instance Properties
-- [var defaultSource: Self.ValueType?](animationstateprotocol/defaultsource.md)
+- [var defaultSource: Self.ValueType?](./animationstateprotocol/defaultsource.md)
   The previous blend stage value.
-- [var defaultTarget: Self.ValueType?](animationstateprotocol/defaulttarget.md)
+- [var defaultTarget: Self.ValueType?](./animationstateprotocol/defaulttarget.md)
   The default unanimated value of the target.
-- [var deltaTime: TimeInterval](animationstateprotocol/deltatime.md)
+- [var deltaTime: TimeInterval](./animationstateprotocol/deltatime.md)
   The time that has elapsed since the most recent evaluation, or 0 if animation is paused.
-- [var evaluationTime: TimeInterval](animationstateprotocol/evaluationtime.md)
+- [var evaluationTime: TimeInterval](./animationstateprotocol/evaluationtime.md)
   The time at which the animation result should be evaluated.
-- [var normalizedTime: TimeInterval](animationstateprotocol/normalizedtime.md)
+- [var normalizedTime: TimeInterval](./animationstateprotocol/normalizedtime.md)
   The normalized time ranges from 0 to 1, and is the time at which the animation result should be evaluated.
 ### Instance Methods
-- [func storeAnimatedValue<ValueType>(ValueType) -> Bool](animationstateprotocol/storeanimatedvalue(_:).md)
+- [func storeAnimatedValue<ValueType>(ValueType) -> Bool](./animationstateprotocol/storeanimatedvalue%28_%29.md)
   Stores the action’s animated value, which the animation manager uses to produce a final animated result. Returns true on success, otherwise false.
 
 ## Relationships
 
 ### Conforming Types
-- [AnimationState](animationstate.md)
+- [AnimationState](./animationstate.md)
 
 ## See Also
 
-- [struct ActionEvent](actionevent.md)
+### Action events
+- [struct ActionEvent](./actionevent.md)
   The structure returned to all action event handlers.
-- [struct AnimationState](animationstate.md)
+- [struct AnimationState](./animationstate.md)
   The concretely typed animation state structure.
-- [struct ActionEventType](actioneventtype.md)
+- [struct ActionEventType](./actioneventtype.md)
   A set of events that an action responds to.
-- [struct ActionEventDefinition](actioneventdefinition.md)
+- [struct ActionEventDefinition](./actioneventdefinition.md)
   Defines an action event interval, and any associated parameters.
 
 

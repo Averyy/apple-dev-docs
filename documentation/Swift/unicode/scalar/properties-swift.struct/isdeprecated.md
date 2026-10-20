@@ -1,7 +1,8 @@
 # isDeprecated
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is deprecated.
 
@@ -24,7 +25,7 @@ var isDeprecated: Bool { get }
 
 Scalars are never removed from the Unicode Standard, but the usage of deprecated scalars is strongly discouraged.
 
-This property corresponds to the “Deprecated” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Deprecated” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

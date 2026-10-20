@@ -1,7 +1,8 @@
 # viewDidDisappear(_:)
 
 **Framework**: Image Playground  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the view controller that its view is about to be removed from a view hierarchy.
 

@@ -1,7 +1,8 @@
 # presented
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The presented behavior. The scene will present itself in the absence of any previously restored scenes.
 

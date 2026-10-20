@@ -1,7 +1,8 @@
 # vertexFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var vertexFormat: MTLAttributeFormat { get set }
+```
+
+```objc
+@property (nonatomic) MTLAttributeFormat vertexFormat;
 ```
 
 

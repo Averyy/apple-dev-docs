@@ -1,9 +1,10 @@
 # releaseDrawables()
 
 **Framework**: MetalKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Releases the [`depthStencilTexture`](mtkview/depthstenciltexture.md) and [`multisampleColorTexture`](mtkview/multisamplecolortexture.md) objects.
+Releases the [`depthStencilTexture`](./depthstenciltexture.md) and [`multisampleColorTexture`](./multisamplecolortexture.md) objects.
 
 **Availability**:
 - iOS 9.0+
@@ -17,6 +18,10 @@ Releases the [`depthStencilTexture`](mtkview/depthstenciltexture.md) and [`multi
 
 ```swift
 func releaseDrawables()
+```
+
+```objc
+- (void) releaseDrawables;
 ```
 
 #### Discussion

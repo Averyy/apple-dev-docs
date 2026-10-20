@@ -1,7 +1,8 @@
 # appearsOnAlbums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of albums from other artists that this artist appears on.
 

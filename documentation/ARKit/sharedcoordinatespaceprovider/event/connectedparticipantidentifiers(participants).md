@@ -1,7 +1,8 @@
 # SharedCoordinateSpaceProvider.Event.connectedParticipantIdentifiers(participants:)
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Participants changed.
 

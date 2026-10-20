@@ -1,7 +1,8 @@
 # init(center:halfExtents:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bounding box with the given center and half-extents, with a circumscribed sphere.
 
@@ -24,11 +25,12 @@ init(center: SIMD3<Float>, halfExtents: SIMD3<Float>)
 
 ## See Also
 
-- [init(center: SIMD3<Float>, radius: Float)](boundingspherebox/init(center:radius:).md)
+### Creating a bounding volume
+- [init(center: SIMD3<Float>, radius: Float)](./init%28center,radius%29.md)
   Creates a bounding sphere with the given center and radius.
-- [init(center: SIMD3<Float>, fullExtents: SIMD3<Float>)](boundingspherebox/init(center:fullextents:).md)
+- [init(center: SIMD3<Float>, fullExtents: SIMD3<Float>)](./init%28center,fullextents%29.md)
   Creates a bounding box with the given center and full extents, with a circumscribed sphere.
-- [init(boxMin: SIMD3<Float>, boxMax: SIMD3<Float>)](boundingspherebox/init(boxmin:boxmax:).md)
+- [init(boxMin: SIMD3<Float>, boxMax: SIMD3<Float>)](./init%28boxmin,boxmax%29.md)
   Creates a bounding box from minimum and maximum corner positions, with a circumscribed sphere.
 
 

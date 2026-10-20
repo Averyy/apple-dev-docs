@@ -1,7 +1,8 @@
 # tokenNotificationURL
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to receive life-cycle notifications for the merchant-specific payment token the system issues for the request, if applicable.
 
@@ -11,7 +12,7 @@ A URL to receive life-cycle notifications for the merchant-specific payment toke
 
 ## Declaration
 
-```swift
+```
 DOMString tokenNotificationURL;
 ```
 
@@ -21,7 +22,8 @@ If you don’t set this property, the framework doesn’t send notifications whe
 
 ## See Also
 
-- [managementURL](applepaydeferredpaymentrequest/managementurl.md)
+### Managing payment tokens
+- [managementURL](./managementurl.md)
   A URL that links to a page on your web site where the user can manage the payment method for the deferred payment, including deleting it.
 
 

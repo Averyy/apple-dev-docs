@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position in the sequence of the joint that preceeds the given position.
 
@@ -11,7 +12,7 @@ Returns the position in the sequence of the joint that preceeds the given positi
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ func index(before i: JointTransforms.Index) -> JointTransforms.Index
 
 #### Discussion
 
-For more on calculating indices, see [`index(before:)`](https://developer.apple.com/documentation/swift/array/index(before:)).
+For more on calculating indices, see [`index(before:)`](../../Swift/array/index%28before%29.md).
 
 ## See Also
 
-- [subscript(JointTransforms.Index) -> Transform](jointtransforms/subscript(_:).md)
+### Accessing joint transforms
+- [subscript(JointTransforms.Index) -> Transform](./subscript%28_%29.md)
   Accesses a single joint transform in the collection at the given index.
-- [func index(after: JointTransforms.Index) -> JointTransforms.Index](jointtransforms/index(after:).md)
+- [func index(after: JointTransforms.Index) -> JointTransforms.Index](./index%28after%29.md)
   Returns the position in the sequence of the joint that follows the given position.
 
 

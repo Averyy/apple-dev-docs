@@ -1,6 +1,7 @@
 # kMDQueryDidFinishNotification
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 Indicates that a query has finished with the initial result-gathering phase.
 
@@ -13,14 +14,15 @@ This notification is only sent to the application’s notification center.
 ## Topics
 
 ### Constants
-- [let kMDQueryDidFinishNotification: CFString!](kmdquerydidfinishnotification.md)
+- [let kMDQueryDidFinishNotification: CFString!](../../kmdquerydidfinishnotification.md)
   Posted to indicate that the query has finished the initial result-gathering phase. 
 
 ## See Also
 
-- [kMDQueryDidUpdateNotification](file_metadata/mdquery/kmdquerydidupdatenotification.md)
+### Notifications
+- [kMDQueryDidUpdateNotification](./kmdquerydidupdatenotification.md)
   Indicates that a query’s results list has change during the live-update phase of a query.
-- [kMDQueryProgressNotification](file_metadata/mdquery/kmdqueryprogressnotification.md)
+- [kMDQueryProgressNotification](./kmdqueryprogressnotification.md)
   Indicates that a query’s results list has change during the initial result-gathering phase of a query.
 
 

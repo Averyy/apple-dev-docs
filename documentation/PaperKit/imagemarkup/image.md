@@ -1,7 +1,8 @@
 # image
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image content displayed by this markup.
 
@@ -26,13 +27,14 @@ This property is async because an in-memory `CGImage` is not always loaded from 
 
 ## See Also
 
-- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
+### Accessing image content
+- [func replaceImage(with: URL) throws](./replaceimage%28with%29-10qzi.md)
   Replaces the contents of this image markup with an image file.
-- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
+- [func replaceImage(with: CGImage)](./replaceimage%28with%29-6eb53.md)
   Replaces the contents of this image markup with a `CGImage`.
-- [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
+- [var orientation: CGImagePropertyOrientation](./orientation.md)
   The orientation of the image content.
-- [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)
+- [var contentsBounds: CGRect](./contentsbounds.md)
   The portion of the image to display, in normalized coordinates.
 
 

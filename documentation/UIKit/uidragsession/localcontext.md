@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The optional custom data that you attach to a drag session, visible only to the app in which the drag activity begins.
@@ -16,6 +17,10 @@ The optional custom data that you attach to a drag session, visible only to the 
 
 ```swift
 var localContext: Any? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id localContext;
 ```
 
 

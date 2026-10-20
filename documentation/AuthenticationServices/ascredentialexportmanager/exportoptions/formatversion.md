@@ -1,7 +1,8 @@
 # formatVersion
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the Credential Exchange Format standard used by the export manager.
 

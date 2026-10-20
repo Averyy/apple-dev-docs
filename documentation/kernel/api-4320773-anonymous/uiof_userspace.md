@@ -1,14 +1,15 @@
 # UIOF_USERSPACE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 UIOF_USERSPACE = (1 << UIO_USERSPACE)
 ```
 

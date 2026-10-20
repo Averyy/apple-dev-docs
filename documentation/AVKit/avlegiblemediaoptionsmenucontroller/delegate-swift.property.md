@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -16,13 +17,18 @@
 weak var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<AVLegibleMediaOptionsMenuControllerDelegate> delegate;
+```
+
 #### Discussion
 
 The delegate for receiving caption preview and state change notifications.
 
 ## See Also
 
-- [AVLegibleMediaOptionsMenuController.Delegate](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol.md)
+### Configuring a delegate
+- [AVLegibleMediaOptionsMenuController.Delegate](./delegate-swift.protocol.md)
 
 
 ---

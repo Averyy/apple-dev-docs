@@ -1,21 +1,22 @@
 # SubscriptionOfferCodePrice.Relationships.SubscriptionPricePoint
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodePrice.Relationships.SubscriptionPricePoint
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCodePrice.Relationships.SubscriptionPricePoint.Data](subscriptionoffercodeprice/relationships-data.dictionary/subscriptionpricepoint-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionOfferCodePrice.Relationships.SubscriptionPricePoint.Data](./subscriptionpricepoint-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription offer code price.
 
 ## Properties
@@ -24,7 +25,8 @@ object SubscriptionOfferCodePrice.Relationships.SubscriptionPricePoint
 
 ## See Also
 
-- [object SubscriptionOfferCodePrice.Relationships.Territory](subscriptionoffercodeprice/relationships-data.dictionary/territory-data.dictionary.md)
+### Objects
+- [object SubscriptionOfferCodePrice.Relationships.Territory](./territory-data.dictionary.md)
 
 
 ---

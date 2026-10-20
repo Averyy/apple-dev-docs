@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an augmentation set with the given raw value.
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AdServices  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an error code structure with the specified raw value.
 

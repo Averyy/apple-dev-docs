@@ -1,15 +1,20 @@
 # stage
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var stage: UInt8
+```
+
+```c
+UInt8 stage;
 ```
 
 

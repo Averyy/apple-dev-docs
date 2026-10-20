@@ -1,7 +1,8 @@
 # readAttributeFloatSingle(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeFloatSingle(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeFloatSingle() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeFloatSingleWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

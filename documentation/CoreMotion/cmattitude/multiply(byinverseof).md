@@ -1,7 +1,8 @@
 # multiply(byInverseOf:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Yields the change in attitude given a specific attitude.
 
@@ -17,6 +18,10 @@ Yields the change in attitude given a specific attitude.
 
 ```swift
 func multiply(byInverseOf attitude: CMAttitude)
+```
+
+```objc
+- (void) multiplyByInverseOfAttitude:(CMAttitude *) attitude;
 ```
 
 #### Discussion

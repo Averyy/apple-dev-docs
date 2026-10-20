@@ -1,7 +1,8 @@
 # MPSImageMultiply
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that returns the element-wise product of its two input images.
 
@@ -19,35 +20,40 @@ A filter that returns the element-wise product of its two input images.
 class MPSImageMultiply
 ```
 
+```objc
+@interface MPSImageMultiply : MPSImageArithmetic
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsimagemultiply/init(device:).md)
+- [init(device: any MTLDevice)](./mpsimagemultiply/init%28device%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSImageArithmetic](mpsimagearithmetic.md)
+- [MPSImageArithmetic](./mpsimagearithmetic.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageAdd](mpsimageadd.md)
+### Image Arithmetic Filters
+- [class MPSImageAdd](./mpsimageadd.md)
   A filter that returns the element-wise sum of its two input images.
-- [class MPSImageSubtract](mpsimagesubtract.md)
+- [class MPSImageSubtract](./mpsimagesubtract.md)
   A filter that returns the element-wise difference of its two input images.
-- [class MPSImageDivide](mpsimagedivide.md)
+- [class MPSImageDivide](./mpsimagedivide.md)
   A filter that returns the element-wise quotient of its two input images.
-- [class MPSImageArithmetic](mpsimagearithmetic.md)
+- [class MPSImageArithmetic](./mpsimagearithmetic.md)
   Base class for basic arithmetic nodes
 
 

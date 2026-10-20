@@ -1,7 +1,8 @@
 # Download logs for a diagnostic signature
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the anonymized backtrace logs associated with a specific diagnostic signature.
 
@@ -16,7 +17,7 @@ The example below requests a single disk write diagnostic log for a specific sig
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/diagnosticSignatures/012a219872fe2aa3ca056df08dc9161007a26879a1c1475ca2e2712f7d0aefd7b4/logs?limit=1
 ```
 
@@ -280,17 +281,35 @@ GET https://api.appstoreconnect.apple.com/v1/diagnosticSignatures/012a219872fe2a
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The resource ID that uniquely identifies a diagnostic signature. Obtain the diagnostic signature resource ID from the [`List all diagnostic signatures for a build`](./get-v1-builds-_id_-diagnosticsignatures.md) response.
+
+### Query Parameters
+
 - `limit` (integer): The maximum number of diagnostic logs to return.
+
+  **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`diagnosticLogs`, `application/vnd.apple.diagnostic-logs+json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Retrieve Power and Performance Metrics and Log Insights](retrieve-power-and-performance-metrics-and-log-insights.md)
+### Getting Metrics and Diagnostic Logs
+- [Retrieve Power and Performance Metrics and Log Insights](./retrieve-power-and-performance-metrics-and-log-insights.md)
   Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
-- [Get power and performance metrics for an app](get-v1-apps-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for an app](./get-v1-apps-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for the most recent version of an app.
-- [Get power and performance metrics for a build](get-v1-builds-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for a build](./get-v1-builds-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for a specific build.
-- [List all diagnostic signatures for a build](get-v1-builds-_id_-diagnosticsignatures.md)
+- [List all diagnostic signatures for a build](./get-v1-builds-_id_-diagnosticsignatures.md)
   List the aggregate backtrace signatures captured for a specific build.
 
 

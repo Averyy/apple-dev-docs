@@ -1,7 +1,8 @@
 # addColorStop(offset, color)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a color transition point to the gradient.
 
@@ -10,7 +11,7 @@ Adds a color transition point to the gradient.
 
 ## Declaration
 
-```swift
+```
 addColorStop(offset: number, color: string): void;
 ```
 
@@ -25,9 +26,10 @@ If offset is less than `0` or greater than `1`, MapKit JS logs a warning to the 
 
 ## See Also
 
-- [new LineGradient(colorStops)](linegradient/linegradientconstructor.md)
+### Creating a Line Gradient
+- [new LineGradient(colorStops)](./linegradientconstructor.md)
   Creates a style that renders a gradient along the length of a line.
-- [addColorStopAtIndex(index, color)](linegradient/addcolorstopatindex.md)
+- [addColorStopAtIndex(index, color)](./addcolorstopatindex.md)
   Adds a color transition at the index point in the list of points within a polyline.
 
 

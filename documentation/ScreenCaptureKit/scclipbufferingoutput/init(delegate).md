@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(delegate: (any SCClipBufferingOutputDelegate)?)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id<SCClipBufferingOutputDelegate>) delegate;
 ```
 
 #### Discussion

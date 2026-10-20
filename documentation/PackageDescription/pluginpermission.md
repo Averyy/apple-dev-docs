@@ -1,7 +1,8 @@
 # PluginPermission
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of permission a plug-in requires.
 
@@ -16,30 +17,31 @@ enum PluginPermission
 
 #### Overview
 
-Supported types are [`PluginPermission.allowNetworkConnections(scope:reason:)`](pluginpermission/allownetworkconnections(scope:reason:).md) and [`PluginPermission.writeToPackageDirectory(reason:)`](pluginpermission/writetopackagedirectory(reason:).md).
+Supported types are [`PluginPermission.allowNetworkConnections(scope:reason:)`](./pluginpermission/allownetworkconnections%28scope,reason%29.md) and [`PluginPermission.writeToPackageDirectory(reason:)`](./pluginpermission/writetopackagedirectory%28reason%29.md).
 
 ## Topics
 
 ### Create a permission
-- [case allowNetworkConnections(scope: PluginNetworkPermissionScope, reason: String)](pluginpermission/allownetworkconnections(scope:reason:).md)
+- [case allowNetworkConnections(scope: PluginNetworkPermissionScope, reason: String)](./pluginpermission/allownetworkconnections%28scope,reason%29.md)
   Create a permission to make network connections.
-- [PluginPermission.writeToPackageDirectory(reason:)](pluginpermission/writetopackagedirectory(reason:).md)
+- [PluginPermission.writeToPackageDirectory(reason:)](./pluginpermission/writetopackagedirectory%28reason%29.md)
   Create a permission to modify files in the package’s directory.
 ### Allow network connection
-- [enum PluginNetworkPermissionScope](pluginnetworkpermissionscope.md)
+- [enum PluginNetworkPermissionScope](./pluginnetworkpermissionscope.md)
   The scope of a network permission.
 
 ## See Also
 
-- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, packageAccess: Bool) -> Target](target/plugin(name:capability:dependencies:path:exclude:sources:packageaccess:).md)
+### Creating a Plugin Target
+- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, packageAccess: Bool) -> Target](./target/plugin%28name,capability,dependencies,path,exclude,sources,packageaccess%29.md)
   Defines a new package plug-in target.
-- [var pluginCapability: Target.PluginCapability?](target/plugincapability-swift.property.md)
+- [var pluginCapability: Target.PluginCapability?](./target/plugincapability-swift.property.md)
   The capability provided by a package plug-in target.
-- [Target.PluginCapability](target/plugincapability-swift.enum.md)
+- [Target.PluginCapability](./target/plugincapability-swift.enum.md)
   The different types of capability that a plug-in can provide.
-- [enum PluginCommandIntent](plugincommandintent.md)
+- [enum PluginCommandIntent](./plugincommandintent.md)
   The intended use case of the command plug-in.
-- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](target/plugin(name:capability:dependencies:path:exclude:sources:).md)
+- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](./target/plugin%28name,capability,dependencies,path,exclude,sources%29.md)
   Defines a new package plugin target.
 
 

@@ -1,7 +1,8 @@
 # UNNotificationAttributedMessageContext
 
 **Framework**: User Notifications  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,23 +18,27 @@
 class UNNotificationAttributedMessageContext
 ```
 
+```objc
+@interface UNNotificationAttributedMessageContext : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(sendMessageIntent: INSendMessageIntent, attributedContent: NSAttributedString)](unnotificationattributedmessagecontext/init(sendmessageintent:attributedcontent:).md)
+- [convenience init(sendMessageIntent: INSendMessageIntent, attributedContent: NSAttributedString)](./unnotificationattributedmessagecontext/init%28sendmessageintent,attributedcontent%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UNNotificationContentProviding](unnotificationcontentproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UNNotificationContentProviding](./unnotificationcontentproviding.md)
 
 
 ---

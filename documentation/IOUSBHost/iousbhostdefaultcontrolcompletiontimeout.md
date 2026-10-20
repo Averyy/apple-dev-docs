@@ -1,7 +1,8 @@
 # IOUSBHostDefaultControlCompletionTimeout
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default completion timeout for input/output requests.
 
@@ -15,9 +16,14 @@ The default completion timeout for input/output requests.
 let IOUSBHostDefaultControlCompletionTimeout: TimeInterval
 ```
 
+```c
+extern const NSTimeInterval IOUSBHostDefaultControlCompletionTimeout;
+```
+
 ## See Also
 
-- [func IOUSBHostDeviceRequestType(tIOUSBDeviceRequestDirectionValue, tIOUSBDeviceRequestTypeValue, tIOUSBDeviceRequestRecipientValue) -> UInt8](iousbhostdevicerequesttype(_:_:_:).md)
+### Sending Device Requests
+- [func IOUSBHostDeviceRequestType(tIOUSBDeviceRequestDirectionValue, tIOUSBDeviceRequestTypeValue, tIOUSBDeviceRequestRecipientValue) -> UInt8](./iousbhostdevicerequesttype%28_,_,_%29.md)
   Creates the request type field of a device request.
 
 

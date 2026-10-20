@@ -1,7 +1,8 @@
 # center
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the horizontal center of the view.
 
@@ -24,9 +25,9 @@ static let center: HorizontalAlignment
 
 Use this guide to align the centers of views:
 
-![A box that contains the word, Center. Vertical](/images/com.apple.SwiftUI/HorizontalAlignment-center-1-iOS@2x.png)
+![A box that contains the word, Center. Vertical](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/HorizontalAlignment-center-1-iOS@2x.png)
 
-The following code generates the image above using a [`VStack`](vstack.md):
+The following code generates the image above using a [`VStack`](../vstack.md):
 
 ```swift
 struct HorizontalAlignmentCenter: View {
@@ -42,13 +43,14 @@ struct HorizontalAlignmentCenter: View {
 
 ## See Also
 
-- [static let leading: HorizontalAlignment](horizontalalignment/leading.md)
+### Getting guides
+- [static let leading: HorizontalAlignment](./leading.md)
   A guide that marks the leading edge of the view.
-- [static let trailing: HorizontalAlignment](horizontalalignment/trailing.md)
+- [static let trailing: HorizontalAlignment](./trailing.md)
   A guide that marks the trailing edge of the view.
-- [static let listRowSeparatorLeading: HorizontalAlignment](horizontalalignment/listrowseparatorleading.md)
+- [static let listRowSeparatorLeading: HorizontalAlignment](./listrowseparatorleading.md)
   A guide marking the leading edge of a `List` row separator.
-- [static let listRowSeparatorTrailing: HorizontalAlignment](horizontalalignment/listrowseparatortrailing.md)
+- [static let listRowSeparatorTrailing: HorizontalAlignment](./listrowseparatortrailing.md)
   A guide marking the trailing edge of a `List` row separator.
 
 

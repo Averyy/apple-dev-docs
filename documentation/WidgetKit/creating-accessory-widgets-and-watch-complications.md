@@ -1,6 +1,7 @@
 # Creating accessory widgets and watch complications
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
 
@@ -15,13 +16,13 @@ Widgets and watch complications use WidgetKit and SwiftUI views, enabling you to
 - Create watch complications and Lock Screen widgets simultaneously.
 - Add support for iOS or watchOS to your app — in addition to platforms you already support — and offer widgets or complications.
 
-Your path to creating accessory widgets and WidgetKit complications depends on your project. Before you start coding, make sure to review options available to you and carefully plan your software development project. If you’re new to WidgetKit development, see [`Developing a WidgetKit strategy`](developing-a-widgetkit-strategy.md).
+Your path to creating accessory widgets and WidgetKit complications depends on your project. Before you start coding, make sure to review options available to you and carefully plan your software development project. If you’re new to WidgetKit development, see [Developing a WidgetKit strategy](./developing-a-widgetkit-strategy.md).
 
-> **Note**: [`Session 10050: Complications and widgets: Reloaded`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10050) and [`Session 10051: Go further with complications in WidgetKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10051)
+> **Related sessions from WWDC22**: [Session 10050: Complications and widgets: Reloaded](https://developer.apple.com/videos/play/wwdc2022/10050) and [Session 10051: Go further with complications in WidgetKit](https://developer.apple.com/videos/play/wwdc2022/10051)
 
-> **Note**: [`Session 10309:Design widgets for the Smart Stack on Apple Watch`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10309) and [`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
+> **Related sessions from WWDC23**: [Session 10309:Design widgets for the Smart Stack on Apple Watch](https://developer.apple.com/videos/play/wwdc2023/10309) and [Session 10027: Bring widgets to new places](https://developer.apple.com/videos/play/wwdc2023/10027)
 
-##### Create a New App That Offers Widgets and Watch Complications
+##### Create a new app that offers widgets and watch complications
 
 If you create a new app, support iOS and watchOS and offer widgets and complications right from the start. This allows you to create a shared code base and reduces the need for costly code changes later in the app development process.
 
@@ -33,46 +34,47 @@ To get started:
 4. Add a new iOS widget extension target to your project.
 5. Add code for your iOS and watchOS apps, and create iOS widgets — including for the Lock Screen — and watchOS complications simultaneously using SwiftUI views and WidgetKit.
 
-To learn more about creating widgets and building apps with SwiftUI, see [`Creating a widget extension`](creating-a-widget-extension.md) and [`SwiftUI`](https://developer.apple.com/documentation/swiftui). For more information on creating watchOS apps, see [`watchOS apps`](https://developer.apple.com/documentation/watchos-apps).
+To learn more about creating widgets and building apps with SwiftUI, see [Creating a widget extension](./creating-a-widget-extension.md) and [SwiftUI](../SwiftUI/SwiftUI.md). For more information on creating watchOS apps, see [watchOS apps](../watchOS-Apps/watchOS-Apps.md).
 
-##### Add Accessory Widgets to Your Existing Ios App
+##### Add accessory widgets to your existing iOS App
 
-If your app supports widgets, adding accessory widgets works like supporting any other widget size. To learn more, see [`Supporting additional widget sizes`](supporting-additional-widget-sizes.md).
+If your app supports widgets, adding accessory widgets works like supporting any other widget size. To learn more, see [Supporting additional widget sizes](./supporting-additional-widget-sizes.md).
 
-If you don’t offer widgets in your app, add a widget extension to your app and support accessory widgets from the start. To learn more about adding a widget extension to your project, see [`Creating a widget extension`](creating-a-widget-extension.md).
+If you don’t offer widgets in your app, add a widget extension to your app and support accessory widgets from the start. To learn more about adding a widget extension to your project, see [Creating a widget extension](./creating-a-widget-extension.md).
 
-Additionally, consider adding support for watchOS with WidgetKit complications by adding a watchOS app target and a watchOS widget extension target. To learn more about creating a watchOS app, see [`watchOS apps`](https://developer.apple.com/documentation/watchos-apps).
+Additionally, consider adding support for watchOS with WidgetKit complications by adding a watchOS app target and a watchOS widget extension target. To learn more about creating a watchOS app, see [watchOS apps](../watchOS-Apps/watchOS-Apps.md).
 
-##### Add Widgetkit Complications to Your Existing Watchos App
+##### Add WidgetKit complications to your existing watchOS app
 
-If your existing watchOS app doesn’t offer complications, add a watchOS widget extension to your project in Xcode, and create complications with WidgetKit. Implementing WidgetKit complications works like creating widgets. For more information about creating a widget extension, see [`Creating a widget extension`](creating-a-widget-extension.md).
+If your existing watchOS app doesn’t offer complications, add a watchOS widget extension to your project in Xcode, and create complications with WidgetKit. Implementing WidgetKit complications works like creating widgets. For more information about creating a widget extension, see [Creating a widget extension](./creating-a-widget-extension.md).
 
-If your watchOS app offers ClockKit complications, continue to use these to support watchOS 8 and earlier. However, plan to migrate your existing ClockKit complications to WidgetKit as described in [`Migrating ClockKit complications to WidgetKit`](converting-a-clockkit-app.md).
+If your watchOS app offers ClockKit complications, continue to use these to support watchOS 8 and earlier. However, plan to migrate your existing ClockKit complications to WidgetKit as described in [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md).
 
-> ❗ **Important**: As soon as you offer a widget-based complication, the system stops calling ClockKit APIs. For example, it no longer calls your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource) object’s methods to request timeline entries. The system may still wake your data source for migration requests.
+> ❗ **Important**: As soon as you offer a widget-based complication, the system stops calling ClockKit APIs. For example, it no longer calls your [`CLKComplicationDataSource`](../ClockKit/clkcomplicationdatasource.md) object’s methods to request timeline entries. The system may still wake your data source for migration requests.
 
 Additionally, consider adding support for iOS by adding an iOS app target to your Xcode project if your watchOS app doesn’t come with an iOS companion app.
 
 ## See Also
 
-- [struct AccessoryWidgetGroup](accessorywidgetgroup.md)
+### Accessory and watchOS widgets
+- [struct AccessoryWidgetGroup](./accessorywidgetgroup.md)
   A view type that has a label at the top and three content views masked with a circle or rounded square.
-- [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
+- [struct AccessoryWidgetGroupStyle](./accessorywidgetgroupstyle.md)
   The style for an accessory widget group view.
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 - [func widgetCurvesContent(Bool) -> some View
-](../swiftui/view/widgetcurvescontent(_:).md)
+](../SwiftUI/view/widgetcurvescontent%28_%29.md)
   Displays the widget’s content along a curve if the context allows it.
-- [func widgetLabel(_:)](../swiftui/view/widgetlabel(_:).md)
+- [func widgetLabel(_:)](../SwiftUI/view/widgetlabel%28_%29.md)
   Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
 - [func widgetLabel<Label>(label: () -> Label) -> some View
-](../swiftui/view/widgetlabel(label:).md)
+](../SwiftUI/view/widgetlabel%28label%29.md)
   Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
-- [var showsWidgetLabel: Bool](../swiftui/environmentvalues/showswidgetlabel.md)
+- [var showsWidgetLabel: Bool](../SwiftUI/environmentvalues/showswidgetlabel.md)
   A Boolean value that indicates whether an accessory family widget can display an accessory label.
 - [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View
-](../swiftui/view/accessorywidgetgroupstyle(_:).md)
+](../SwiftUI/view/accessorywidgetgroupstyle%28_%29.md)
   The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 
 

@@ -1,7 +1,8 @@
 # variantSets
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variant sets authored on this prim, keyed by name.
 

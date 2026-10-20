@@ -1,9 +1,10 @@
 # inconsistentArchiveException
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The name of an exception raised by [`NSArchiver`](nsarchiver.md) if there are problems initializing or encoding.
+The name of an exception raised by [`NSArchiver`](../nsarchiver.md) if there are problems initializing or encoding.
 
 **Availability**:
 - iOS 2.0+
@@ -18,6 +19,10 @@ The name of an exception raised by [`NSArchiver`](nsarchiver.md) if there are pr
 
 ```swift
 static let inconsistentArchiveException: NSExceptionName
+```
+
+```c
+extern NSExceptionName const NSInconsistentArchiveException;
 ```
 
 

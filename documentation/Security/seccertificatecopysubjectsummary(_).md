@@ -1,7 +1,8 @@
 # SecCertificateCopySubjectSummary(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a human-readable summary of a certificate.
 
@@ -20,14 +21,18 @@ Returns a human-readable summary of a certificate.
 func SecCertificateCopySubjectSummary(_ certificate: SecCertificate) -> CFString?
 ```
 
+```c
+CFStringRefSecCertificateCopySubjectSummary(SecCertificateRef certificate);
+```
+
 ## Mentions
 
-- [Examining a Certificate](examining-a-certificate.md)
-- [Importing an Identity](importing-an-identity.md)
+- [Examining a Certificate](./examining-a-certificate.md)
+- [Importing an Identity](./importing-an-identity.md)
 
 #### Return Value
 
-A string that contains a human-readable summary of the contents of the certificate. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it. Returns `NULL` if the data passed in the `certificate` parameter is not a valid certificate object.
+A string that contains a human-readable summary of the contents of the certificate. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it. Returns `NULL` if the data passed in the `certificate` parameter is not a valid certificate object.
 
 #### Discussion
 
@@ -39,7 +44,8 @@ Because all the data in the string comes from the certificate, the string is in 
 
 ## See Also
 
-- [func SecCertificateCreateWithData(CFAllocator?, CFData) -> SecCertificate?](seccertificatecreatewithdata(_:_:).md)
+### Related Documentation
+- [func SecCertificateCreateWithData(CFAllocator?, CFData) -> SecCertificate?](./seccertificatecreatewithdata%28_,_%29.md)
   Creates a certificate object from a DER representation of a certificate.
 
 

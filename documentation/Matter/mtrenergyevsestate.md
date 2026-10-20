@@ -1,7 +1,8 @@
 # MTREnergyEVSEState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,27 +19,31 @@
 enum MTREnergyEVSEState
 ```
 
+```c
+enum MTREnergyEVSEState : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTREnergyEVSEState.fault](mtrenergyevsestate/fault.md)
-- [MTREnergyEVSEState.notPluggedIn](mtrenergyevsestate/notpluggedin.md)
-- [MTREnergyEVSEState.pluggedInCharging](mtrenergyevsestate/pluggedincharging.md)
-- [MTREnergyEVSEState.pluggedInDemand](mtrenergyevsestate/pluggedindemand.md)
-- [MTREnergyEVSEState.pluggedInNoDemand](mtrenergyevsestate/pluggedinnodemand.md)
-- [MTREnergyEVSEState.sessionEnding](mtrenergyevsestate/sessionending.md)
+- [MTREnergyEVSEState.fault](./mtrenergyevsestate/fault.md)
+- [MTREnergyEVSEState.notPluggedIn](./mtrenergyevsestate/notpluggedin.md)
+- [MTREnergyEVSEState.pluggedInCharging](./mtrenergyevsestate/pluggedincharging.md)
+- [MTREnergyEVSEState.pluggedInDemand](./mtrenergyevsestate/pluggedindemand.md)
+- [MTREnergyEVSEState.pluggedInNoDemand](./mtrenergyevsestate/pluggedinnodemand.md)
+- [MTREnergyEVSEState.sessionEnding](./mtrenergyevsestate/sessionending.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrenergyevsestate/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrenergyevsestate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

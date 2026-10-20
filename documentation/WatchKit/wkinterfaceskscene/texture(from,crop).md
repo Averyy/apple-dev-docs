@@ -1,7 +1,8 @@
 # texture(from:crop:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders a portion of a node’s contents and returns the rendered image as a SpriteKit texture.
 
@@ -12,6 +13,10 @@ Renders a portion of a node’s contents and returns the rendered image as a Spr
 
 ```swift
 func texture(from node: SKNode, crop: CGRect) -> SKTexture?
+```
+
+```objc
+- (SKTexture *) textureFromNode:(SKNode *) node crop:(CGRect) crop;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ The `node` being rendered does not need to appear in the interface’s presented
 
 ## See Also
 
-- [func texture(from: SKNode) -> SKTexture?](wkinterfaceskscene/texture(from:).md)
+### Snapshotting Nodes to a Texture
+- [func texture(from: SKNode) -> SKTexture?](./texture%28from%29.md)
   Renders the contents of a node tree and returns the rendered image as a SpriteKit texture.
 
 

@@ -1,7 +1,8 @@
 # LiabilityAccount
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the characteristics of a liability account.
 
@@ -22,40 +23,41 @@ A liability account includes accounts such as credit cards.
 ## Topics
 
 ### Instance Properties
-- [let accountDescription: String?](liabilityaccount/accountdescription.md)
+- [let accountDescription: String?](./liabilityaccount/accountdescription.md)
   A description of the account.
-- [let creditInformation: AccountCreditInformation](liabilityaccount/creditinformation.md)
+- [let creditInformation: AccountCreditInformation](./liabilityaccount/creditinformation.md)
   Information regarding credits to the account.
-- [let currencyCode: String](liabilityaccount/currencycode.md)
+- [let currencyCode: String](./liabilityaccount/currencycode.md)
   An ISO 4217 currency code that identifies the currency in which the account is held.
-- [let displayName: String](liabilityaccount/displayname.md)
+- [let displayName: String](./liabilityaccount/displayname.md)
   The name for the account given by an individual.
-- [let id: UUID](liabilityaccount/id.md)
+- [let id: UUID](./liabilityaccount/id.md)
   A unique account ID.
-- [let institutionName: String](liabilityaccount/institutionname.md)
+- [let institutionName: String](./liabilityaccount/institutionname.md)
   The name of the institution that holds the account.
-- [let openingDate: Date?](liabilityaccount/openingdate.md)
+- [let openingDate: Date?](./liabilityaccount/openingdate.md)
   The date the account was opened, if known.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accounts(query: AccountQuery) async throws -> [Account]](financestore/accounts(query:).md)
+### Accounts
+- [func accounts(query: AccountQuery) async throws -> [Account]](./financestore/accounts%28query%29.md)
   Returns a list of accounts a person added to their Wallet that meet the criteria in the provided account query.
-- [func accountHistory(since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Account>](financestore/accounthistory(since:ismonitoring:).md)
+- [func accountHistory(since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Account>](./financestore/accounthistory%28since,ismonitoring%29.md)
   Returns a list of accounts a person added since a time specified by the provided financial history token.
-- [struct AssetAccount](assetaccount.md)
+- [struct AssetAccount](./assetaccount.md)
   A structure that describes the characteristics of an asset account.
-- [enum Account](account.md)
+- [enum Account](./account.md)
   A structure that describes a financial account.
 
 

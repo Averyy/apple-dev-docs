@@ -1,14 +1,15 @@
 # dot3ChipSetWesternDigital83C690
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 dot3ChipSetWesternDigital83C690 = 1
 ```
 

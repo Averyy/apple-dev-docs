@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Initiates the user registration process for the user and the single sign-on extension.
@@ -12,16 +13,24 @@ Initiates the user registration process for the user and the single sign-on exte
 ## Declaration
 
 ```swift
+func beginUserRegistration(loginManager: ASAuthorizationProviderExtensionLoginManager, userName: String?, method authenticationMethod: ASAuthorizationProviderExtensionAuthenticationMethod, options: ASAuthorizationProviderExtensionRequestOptions = [], completion: @escaping @Sendable (ASAuthorizationProviderExtensionRegistrationResult) -> Void)
+```
+
+```swift
 func beginUserRegistration(loginManager: ASAuthorizationProviderExtensionLoginManager, userName: String?, method authenticationMethod: ASAuthorizationProviderExtensionAuthenticationMethod, options: ASAuthorizationProviderExtensionRequestOptions = []) async -> ASAuthorizationProviderExtensionRegistrationResult
+```
+
+```objc
+- (void) beginUserRegistrationUsingLoginManager:(ASAuthorizationProviderExtensionLoginManager *) loginManager userName:(NSString *) userName authenticationMethod:(ASAuthorizationProviderExtensionAuthenticationMethod) authenticationMethod options:(ASAuthorizationProviderExtensionRequestOptions) options completion:(void (^)(ASAuthorizationProviderExtensionRegistrationResult result)) completion;
 ```
 
 ## Mentions
 
-- [Registering devices and users](registering-devices-and-users.md)
+- [Registering devices and users](../registering-devices-and-users.md)
 
 #### Discussion
 
-The completion handler returns the status as an [`ASAuthorizationProviderExtensionRegistrationResult`](asauthorizationproviderextensionregistrationresult.md).
+The completion handler returns the status as an [`ASAuthorizationProviderExtensionRegistrationResult`](../asauthorizationproviderextensionregistrationresult.md).
 
 ## Parameters
 
@@ -33,9 +42,10 @@ The completion handler returns the status as an [`ASAuthorizationProviderExtensi
 
 ## See Also
 
-- [func beginDeviceRegistration(loginManager: ASAuthorizationProviderExtensionLoginManager, options: ASAuthorizationProviderExtensionRequestOptions, completion: (ASAuthorizationProviderExtensionRegistrationResult) -> Void)](asauthorizationproviderextensionregistrationhandler/begindeviceregistration(loginmanager:options:completion:).md)
+### Registering users and devices
+- [func beginDeviceRegistration(loginManager: ASAuthorizationProviderExtensionLoginManager, options: ASAuthorizationProviderExtensionRequestOptions, completion: (ASAuthorizationProviderExtensionRegistrationResult) -> Void)](./begindeviceregistration%28loginmanager,options,completion%29.md)
   Initiates the device registration process for the single sign-on extension.
-- [func registrationDidComplete()](asauthorizationproviderextensionregistrationhandler/registrationdidcomplete.md)
+- [func registrationDidComplete()](./registrationdidcomplete%28%29.md)
   Calls the extension to allow it to complete registration.
 
 

@@ -1,7 +1,8 @@
 # paddleButton1
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s paddle 1 button element, which has a P1 label on the back of the controller.
 
@@ -19,15 +20,20 @@ The controller’s paddle 1 button element, which has a P1 label on the back of 
 var paddleButton1: GCControllerButtonInput? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) GCControllerButtonInput * paddleButton1;
+```
+
 ## See Also
 
-- [var paddleButton2: GCControllerButtonInput?](gcxboxgamepad/paddlebutton2.md)
+### Getting button inputs
+- [var paddleButton2: GCControllerButtonInput?](./paddlebutton2.md)
   The paddle 2 button element, which has a P2 label on the back of the controller.
-- [var paddleButton3: GCControllerButtonInput?](gcxboxgamepad/paddlebutton3.md)
+- [var paddleButton3: GCControllerButtonInput?](./paddlebutton3.md)
   The paddle 3 button element, which has a P3 label on the back of the controller.
-- [var paddleButton4: GCControllerButtonInput?](gcxboxgamepad/paddlebutton4.md)
+- [var paddleButton4: GCControllerButtonInput?](./paddlebutton4.md)
   The paddle 4 button element, which has a P4 label on the back of the controller.
-- [var buttonShare: GCControllerButtonInput?](gcxboxgamepad/buttonshare.md)
+- [var buttonShare: GCControllerButtonInput?](./buttonshare.md)
   The share button on an Xbox Series X|S controller or later.
 
 

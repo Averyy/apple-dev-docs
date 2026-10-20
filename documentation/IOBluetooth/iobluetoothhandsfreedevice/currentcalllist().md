@@ -1,7 +1,8 @@
 # currentCallList()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the Bluetooth audio gateway send the delegate a list of calls that are active, on hold, or being set up.
 
@@ -14,13 +15,18 @@ Requests that the Bluetooth audio gateway send the delegate a list of calls that
 func currentCallList()
 ```
 
+```objc
+- (void) currentCallList;
+```
+
 #### Discussion
 
-The [`handsFree(_:currentCall:)`](iobluetoothhandsfreedevicedelegate/handsfree(_:currentcall:).md) function of the delegate is called once for each current call.
+The [`handsFree(_:currentCall:)`](../iobluetoothhandsfreedevicedelegate/handsfree%28_,currentcall%29.md) function of the delegate is called once for each current call.
 
 ## See Also
 
-- [func subscriberNumber()](iobluetoothhandsfreedevice/subscribernumber.md)
+### Requesting Status Information
+- [func subscriberNumber()](./subscribernumber%28%29.md)
   Requests that the Bluetooth audio gateway send the subscriber number to the delegate.
 
 

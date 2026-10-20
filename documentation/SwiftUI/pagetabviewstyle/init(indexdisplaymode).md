@@ -1,7 +1,8 @@
 # init(indexDisplayMode:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `PageTabViewStyle` with an index display mode
 
@@ -22,7 +23,8 @@ init(indexDisplayMode: PageTabViewStyle.IndexDisplayMode = .automatic)
 
 ## See Also
 
-- [PageTabViewStyle.IndexDisplayMode](pagetabviewstyle/indexdisplaymode.md)
+### Creating a page tab view style
+- [PageTabViewStyle.IndexDisplayMode](./indexdisplaymode.md)
   A style for displaying the page index view
 
 

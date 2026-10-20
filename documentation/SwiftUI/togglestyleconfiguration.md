@@ -1,7 +1,8 @@
 # ToggleStyleConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of a toggle instance.
 
@@ -22,31 +23,32 @@ struct ToggleStyleConfiguration
 
 #### Overview
 
-When you define a custom toggle style by creating a type that conforms to the [`ToggleStyle`](togglestyle.md) protocol, you implement the [`makeBody(configuration:)`](togglestyle/makebody(configuration:).md) method. That method takes a `ToggleStyleConfiguration` input that has the information you need to define the behavior and appearance of a [`Toggle`](toggle.md).
+When you define a custom toggle style by creating a type that conforms to the [`ToggleStyle`](./togglestyle.md) protocol, you implement the [`makeBody(configuration:)`](./togglestyle/makebody%28configuration%29.md) method. That method takes a `ToggleStyleConfiguration` input that has the information you need to define the behavior and appearance of a [`Toggle`](./toggle.md).
 
-The configuration structure’s [`label`](togglestyleconfiguration/label-swift.property.md) reflects the toggle’s content, which might be the value that you supply to the `label` parameter of the [`init(isOn:label:)`](toggle/init(ison:label:).md) initializer. Alternatively, it could be another view that SwiftUI builds from an initializer that takes a string input, like [`init(_:isOn:)`](toggle/init(_:ison:).md). In either case, incorporate the label into the toggle’s view to help the user understand what the toggle does. For example, the built-in [`switch`](togglestyle/switch.md) style horizontally stacks the label with the control element.
+The configuration structure’s [`label`](./togglestyleconfiguration/label-swift.property.md) reflects the toggle’s content, which might be the value that you supply to the `label` parameter of the [`init(isOn:label:)`](./toggle/init%28ison,label%29.md) initializer. Alternatively, it could be another view that SwiftUI builds from an initializer that takes a string input, like [`init(_:isOn:)`](./toggle/init%28_,ison%29.md). In either case, incorporate the label into the toggle’s view to help the user understand what the toggle does. For example, the built-in [`switch`](./togglestyle/switch.md) style horizontally stacks the label with the control element.
 
-The structure’s [`isOn`](togglestyleconfiguration/ison.md) property provides a [`Binding`](binding.md) to the state of the toggle. Adjust the appearance of the toggle based on this value. For example, the built-in [`button`](togglestyle/button.md) style fills the button’s background when the property is `true`, but leaves the background empty when the property is `false`. Change the value when the user performs an action that’s meant to change the toggle, like the button does when tapped or clicked by the user.
+The structure’s [`isOn`](./togglestyleconfiguration/ison.md) property provides a [`Binding`](./binding.md) to the state of the toggle. Adjust the appearance of the toggle based on this value. For example, the built-in [`button`](./togglestyle/button.md) style fills the button’s background when the property is `true`, but leaves the background empty when the property is `false`. Change the value when the user performs an action that’s meant to change the toggle, like the button does when tapped or clicked by the user.
 
 ## Topics
 
 ### Getting the label view
-- [let label: ToggleStyleConfiguration.Label](togglestyleconfiguration/label-swift.property.md)
+- [let label: ToggleStyleConfiguration.Label](./togglestyleconfiguration/label-swift.property.md)
   A view that describes the effect of switching the toggle between states.
-- [ToggleStyleConfiguration.Label](togglestyleconfiguration/label-swift.struct.md)
+- [ToggleStyleConfiguration.Label](./togglestyleconfiguration/label-swift.struct.md)
   A type-erased label of a toggle.
 ### Managing the toggle state
-- [var isMixed: Bool](togglestyleconfiguration/ismixed.md)
-  Whether the [`Toggle`](toggle.md) is currently in a mixed state.
-- [var isOn: Bool](togglestyleconfiguration/ison.md)
+- [var isMixed: Bool](./togglestyleconfiguration/ismixed.md)
+  Whether the [`Toggle`](./toggle.md) is currently in a mixed state.
+- [var isOn: Bool](./togglestyleconfiguration/ison.md)
   A binding to a state property that indicates whether the toggle is on.
-- [var $isOn: Binding<Bool>](togglestyleconfiguration/$ison.md)
+- [var $isOn: Binding<Bool>](./togglestyleconfiguration/dollarison.md)
 
 ## See Also
 
-- [func toggleStyle<S>(S) -> some View](view/togglestyle(_:).md)
+### Styling toggles
+- [func toggleStyle<S>(S) -> some View](./view/togglestyle%28_%29.md)
   Sets the style for toggles in a view hierarchy.
-- [protocol ToggleStyle](togglestyle.md)
+- [protocol ToggleStyle](./togglestyle.md)
   The appearance and behavior of a toggle.
 
 

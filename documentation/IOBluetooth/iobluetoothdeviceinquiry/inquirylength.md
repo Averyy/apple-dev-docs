@@ -1,17 +1,22 @@
 # inquiryLength
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set the length of the inquiry that is performed each time -start is used on an inquiry object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var inquiryLength: UInt8 { get set }
+```
+
+```objc
+@property (assign) uint8_t inquiryLength;
 ```
 
 #### Discussion

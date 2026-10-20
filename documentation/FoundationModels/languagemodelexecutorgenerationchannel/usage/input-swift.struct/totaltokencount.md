@@ -1,7 +1,8 @@
 # totalTokenCount
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of input tokens from the transcript.
 
@@ -21,7 +22,8 @@ var totalTokenCount: Int
 
 ## See Also
 
-- [var cachedTokenCount: Int](languagemodelexecutorgenerationchannel/usage/input-swift.struct/cachedtokencount.md)
+### Handling the input tokens
+- [var cachedTokenCount: Int](./cachedtokencount.md)
   The number of input tokens that were served from a cache.
 
 

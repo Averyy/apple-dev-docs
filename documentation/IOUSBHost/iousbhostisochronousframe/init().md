@@ -1,13 +1,14 @@
 # init()
 
 **Framework**: IOUSBHost  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new frame structure.
 
 **Availability**:
 - Mac Catalyst 14.0+
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.0
 
 ## Declaration
 

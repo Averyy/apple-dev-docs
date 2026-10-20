@@ -1,7 +1,8 @@
 # kSpeechRecentSyncProperty
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Get the message code for the most recently encountered synchronization command.
 
@@ -14,9 +15,13 @@ Get the message code for the most recently encountered synchronization command.
 let kSpeechRecentSyncProperty: CFString
 ```
 
+```c
+const CFStringRef kSpeechRecentSyncProperty;
+```
+
 #### Discussion
 
-The value associated with this property is a `CFNumber` object that specifies the most recently encountered synchronization command. This property works with the [`CopySpeechProperty(_:_:_:)`](1459075-copyspeechproperty.md) function.
+The value associated with this property is a `CFNumber` object that specifies the most recently encountered synchronization command. This property works with the [`CopySpeechProperty(_:_:_:)`](./api-1459075-copyspeechproperty.md) function.
 
 
 ---

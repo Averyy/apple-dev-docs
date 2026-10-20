@@ -1,7 +1,8 @@
 # SecKeychainEvent.passwordChangedEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the keychain password was changed.
 
@@ -13,6 +14,10 @@ Indicates the keychain password was changed.
 
 ```swift
 case passwordChangedEvent
+```
+
+```c
+kSecPasswordChangedEvent
 ```
 
 

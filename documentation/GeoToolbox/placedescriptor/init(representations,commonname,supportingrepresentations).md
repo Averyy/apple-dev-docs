@@ -1,7 +1,8 @@
 # init(representations:commonName:supportingRepresentations:)
 
 **Framework**: GeoToolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a place descriptor, suitable for use when searching or retrieving rich data about a place.
 
@@ -32,7 +33,8 @@ The `representations` property needs to have at least one member. Sort arrays wi
 
 ## See Also
 
-- [init?(item: MKMapItem)](placedescriptor/init(item:).md)
+### Creating a place descriptor
+- [init?(item: MKMapItem)](./init%28item%29.md)
   Creates a place descriptor from a map item.
 
 

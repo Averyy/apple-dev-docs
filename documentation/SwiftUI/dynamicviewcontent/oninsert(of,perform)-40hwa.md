@@ -1,23 +1,33 @@
 # onInsert(of:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the insert action for the dynamic view.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`onInsert(of:perform:)`](./oninsert%28of,perform%29-418bq.md) instead.
 
 ## Declaration
 
 ```swift
 func onInsert(of acceptedTypeIdentifiers: [String], perform action: @escaping (Int, [NSItemProvider]) -> Void) -> some DynamicViewContent
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func onInsert(of supportedContentTypes: [UTType], perform action: @escaping (Int, [NSItemProvider]) -> Void) -> some DynamicViewContent
 ```
 
 #### Return Value

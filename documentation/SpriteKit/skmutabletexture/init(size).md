@@ -1,7 +1,8 @@
 # init(size:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an empty texture with a specific size.
 
@@ -20,13 +21,17 @@ Initializes an empty texture with a specific size.
 init(size: CGSize)
 ```
 
+```objc
+- (instancetype) initWithSize:(CGSize) size;
+```
+
 #### Return Value
 
 An empty mutable texture.
 
 #### Discussion
 
-You must call the [`modifyPixelData(_:)`](skmutabletexture/modifypixeldata(_:).md) method at least once before using this texture.
+You must call the [`modifyPixelData(_:)`](./modifypixeldata%28_%29.md) method at least once before using this texture.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ You must call the [`modifyPixelData(_:)`](skmutabletexture/modifypixeldata(_:).m
 
 ## See Also
 
-- [init(size: CGSize, pixelFormat: Int32)](skmutabletexture/init(size:pixelformat:).md)
+### Creating an Empty Mutable Texture
+- [init(size: CGSize, pixelFormat: Int32)](./init%28size,pixelformat%29.md)
   Initializes an empty texture with a specific size and format.
 
 

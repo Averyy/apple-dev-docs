@@ -1,7 +1,8 @@
 # tokenProvider
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared token provider for fetching tokens that Apple Music API requires.
 

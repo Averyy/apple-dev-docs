@@ -1,7 +1,8 @@
 # kFSEventStreamEventExtendedDocIDKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 17.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kFSEventStreamEventExtendedDocIDKey: String { get }
+```
+
+```c
+#define kFSEventStreamEventExtendedDocIDKey
 ```
 
 

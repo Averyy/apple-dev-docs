@@ -1,7 +1,8 @@
 # prototype
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prototype that creates type-erased columns with the same underlying type as the column slice.
 

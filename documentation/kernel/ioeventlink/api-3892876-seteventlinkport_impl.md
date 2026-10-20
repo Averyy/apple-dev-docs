@@ -1,14 +1,15 @@
 # SetEventlinkPort_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.1+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetEventlinkPort_Impl(mach_port_t port);
 ```
 

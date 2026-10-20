@@ -1,7 +1,8 @@
 # sleepSessions
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,8 @@
 ```swift
 static var sleepSessions: SRSleepSessionsSensor { get }
 ```
+
+Available when `Self` is `SRSleepSessionsSensor`.
 
 
 ---

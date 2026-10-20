@@ -1,7 +1,8 @@
 # Query Category Suggestions
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query category suggestions for apps or brands using either a discovery or search route based on the query type.
 
@@ -10,9 +11,9 @@ Query category suggestions for apps or brands using either a discovery or search
 
 #### Discussion
 
-Each result is a [`CategorySuggestion`](categorysuggestion.md) object with a `category` name (for example, `"Productivity"`) and a `popularity` score. Sort by `popularity DESC` and use `pagination` to page through results.
+Each result is a [`CategorySuggestion`](./categorysuggestion.md) object with a `category` name (for example, `"Productivity"`) and a `popularity` score. Sort by `popularity DESC` and use `pagination` to page through results.
 
-See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -194,19 +195,34 @@ POST /v1/suggestions/categories/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
 
 ## Request Body
 
-See [`RecommendationQueryRequest`](recommendationqueryrequest.md). This endpoint supports two query routes selected by the `queryType` filter: `SUGGESTION` discovers categories for a specific app or brand, and `SEARCH` looks up or searches categories by name.
+**Content-Type**: `application/json`  
+**Type**: `RecommendationQueryRequest`
+
+See [`RecommendationQueryRequest`](./recommendationqueryrequest.md). This endpoint supports two query routes selected by the `queryType` filter: `SUGGESTION` discovers categories for a specific app or brand, and `SEARCH` looks up or searches categories by name.
+
+## Responses
+
+- `200` OK (`RecommendationQueryCategorySuggestionResponse`, `application/json`)
+- `400` Bad Request (`RecommendationResponseBody`, `application/json`)
+- `401` Unauthorized (`RecommendationResponseBody`, `application/json`)
+- `403` Forbidden (`RecommendationResponseBody`, `application/json`)
+- `404` Not Found (`RecommendationResponseBody`, `application/json`)
+- `429` Too Many Requests (`RecommendationResponseBody`, `application/json`)
+- `500` Internal Server Error (`RecommendationResponseBody`, `application/json`)
 
 ## See Also
 
-- [Query Keyword Suggestions](query-keyword-suggestions.md)
+- [Query Keyword Suggestions](./query-keyword-suggestions.md)
   Query keyword suggestions based on search terms and App Store countries or regions using structured filters.
-- [Query Phrase Suggestions](query-phrase-suggestions.md)
+- [Query Phrase Suggestions](./query-phrase-suggestions.md)
   Query phrase suggestions using either a discovery or search route based on the query type.
-- [Query Target CPA Suggestion](query-target-cpa-suggestion.md)
+- [Query Target CPA Suggestion](./query-target-cpa-suggestion.md)
   Retrieve the recommended target CPA for a new Maximize Conversions campaign on the App Store.
 
 

@@ -1,14 +1,15 @@
 # EMBEDDED_ANALOG_TAPE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_ANALOG_TAPE = 0x0707
 ```
 

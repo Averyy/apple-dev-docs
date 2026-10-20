@@ -1,7 +1,8 @@
 # sender
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The email address or phone number of the sender.
 
@@ -17,9 +18,14 @@ The email address or phone number of the sender.
 var sender: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * sender;
+```
+
 ## See Also
 
-- [var dateReceived: Date](ilcommunication/datereceived.md)
+### Accessing Data
+- [var dateReceived: Date](./datereceived.md)
   The date and time when the system received the message.
 
 

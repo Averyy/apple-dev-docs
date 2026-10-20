@@ -1,7 +1,8 @@
 # CSSM_TP_ACTION_LEAF_IS_CA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_TP_ACTION_LEAF_IS_CA: Int { get }
+```
+
+```c
+CSSM_TP_ACTION_LEAF_IS_CA
 ```
 
 

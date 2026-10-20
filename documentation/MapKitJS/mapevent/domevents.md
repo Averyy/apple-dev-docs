@@ -1,7 +1,8 @@
 # domEvents
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of DOM event objects that list the low-level events that led to the recognized gesture.
 
@@ -10,7 +11,7 @@ An array of DOM event objects that list the low-level events that led to the rec
 
 ## Declaration
 
-```swift
+```
 readonly domEvents: Event[];
 ```
 

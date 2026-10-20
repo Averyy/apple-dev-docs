@@ -1,7 +1,8 @@
 # BetaFeedbackScreenshotSubmissionResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single screenshot and feedback note submitted by a TestFlight beta tester.
 
@@ -10,22 +11,23 @@ A response containing a single screenshot and feedback note submitted by a TestF
 
 ## Declaration
 
-```swift
+```
 object BetaFeedbackScreenshotSubmissionResponse
 ```
 
 ## Properties
 
 - `data` (BetaFeedbackScreenshotSubmission) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `BetaTester`, `Build`
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object BetaFeedbackScreenshotSubmission](betafeedbackscreenshotsubmission.md)
+### Objects
+- [object BetaFeedbackScreenshotSubmission](./betafeedbackscreenshotsubmission.md)
   A screenshot and feedback note submitted by a TestFlight beta tester while testing a specific build.
-- [object BetaFeedbackScreenshotSubmissionsResponse](betafeedbackscreenshotsubmissionsresponse.md)
-- [object BetaFeedbackScreenshotImage](betafeedbackscreenshotimage.md)
+- [object BetaFeedbackScreenshotSubmissionsResponse](./betafeedbackscreenshotsubmissionsresponse.md)
+- [object BetaFeedbackScreenshotImage](./betafeedbackscreenshotimage.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GLKViewDrawableDepthFormat.formatNone
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The underlying framebuffer object has no depth buffer.
 
@@ -16,11 +17,16 @@ The underlying framebuffer object has no depth buffer.
 case formatNone
 ```
 
+```c
+GLKViewDrawableDepthFormatNone
+```
+
 ## See Also
 
-- [GLKViewDrawableDepthFormat.format16](glkviewdrawabledepthformat/format16.md)
+### Constants
+- [GLKViewDrawableDepthFormat.format16](./format16.md)
   A 16-bit depth entry for each pixel.
-- [GLKViewDrawableDepthFormat.format24](glkviewdrawabledepthformat/format24.md)
+- [GLKViewDrawableDepthFormat.format24](./format24.md)
   A 24-bit depth entry for each pixel.
 
 

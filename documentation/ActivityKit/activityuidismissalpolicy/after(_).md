@@ -1,7 +1,8 @@
 # after(_:)
 
 **Framework**: ActivityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The system removes the Live Activity that ended at the specified time within a four-hour window.
 
@@ -17,11 +18,11 @@ static func after(_ date: Date) -> ActivityUIDismissalPolicy
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
 #### Discussion
 
-Provide a date to tell the system when it should remove a Live Activity that ended. While you can provide any date, the system removes a Live Activity that ended after the specified date or after four hours from the moment the Live Activity ended — whichever comes first. When the system removes the Live Activity,  the [`ActivityState`](activitystate.md) changes to [`ActivityState.dismissed`](activitystate/dismissed.md).
+Provide a date to tell the system when it should remove a Live Activity that ended. While you can provide any date, the system removes a Live Activity that ended after the specified date or after four hours from the moment the Live Activity ended — whichever comes first. When the system removes the Live Activity,  the [`ActivityState`](../activitystate.md) changes to [`ActivityState.dismissed`](../activitystate/dismissed.md).
 
 ## Parameters
 
@@ -29,9 +30,10 @@ Provide a date to tell the system when it should remove a Live Activity that end
 
 ## See Also
 
-- [static let `default`: ActivityUIDismissalPolicy](activityuidismissalpolicy/default.md)
+### Dismissing a Live Activity
+- [static let `default`: ActivityUIDismissalPolicy](./default.md)
   The system’s default dismissal policy for the Live Activity.
-- [static let immediate: ActivityUIDismissalPolicy](activityuidismissalpolicy/immediate.md)
+- [static let immediate: ActivityUIDismissalPolicy](./immediate.md)
   The system immediately removes the Live Activity that ended.
 
 

@@ -1,7 +1,8 @@
 # makePixelBuffer()
 
 **Framework**: MediaExtension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a pixel buffer using the session’s pixel buffer pool.
 
@@ -14,13 +15,18 @@ Generates a pixel buffer using the session’s pixel buffer pool.
 func makePixelBuffer() throws -> CVPixelBuffer
 ```
 
+```objc
+- (CVPixelBufferRef) createPixelBufferAndReturnError:(NSError **) error;
+```
+
 #### Return Value
 
 A pixel buffer that’s compatible with the extension’s most recently set pixel buffer attributes.
 
 ## See Also
 
-- [var pixelBufferAttributes: [String : Any]](mevideodecoderpixelbuffermanager/pixelbufferattributes.md)
+### Creating a pixel buffer
+- [var pixelBufferAttributes: [String : Any]](./pixelbufferattributes.md)
   A dictionary that contains the attributes Video Toolbox uses to create a pixel buffer for the decoder.
 
 

@@ -1,7 +1,8 @@
 # MDLRelativeAssetResolver
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,25 +18,29 @@
 class MDLRelativeAssetResolver
 ```
 
+```objc
+@interface MDLRelativeAssetResolver : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(asset: MDLAsset)](mdlrelativeassetresolver/init(asset:).md)
+- [init(asset: MDLAsset)](./mdlrelativeassetresolver/init%28asset%29.md)
 ### Instance Properties
-- [var asset: MDLAsset?](mdlrelativeassetresolver/asset.md)
+- [var asset: MDLAsset?](./mdlrelativeassetresolver/asset.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLAssetResolver](mdlassetresolver.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLAssetResolver](./mdlassetresolver.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

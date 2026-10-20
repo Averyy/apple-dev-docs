@@ -1,7 +1,8 @@
 # containerIsRangeContainerObject
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets whether the receiver’s container is to be the container for a range specifier or a top-level object.
 
@@ -15,19 +16,24 @@ Sets whether the receiver’s container is to be the container for a range speci
 var containerIsRangeContainerObject: Bool { get set }
 ```
 
+```objc
+@property BOOL containerIsRangeContainerObject;
+```
+
 #### Discussion
 
-If the receiver’s container specifier is `nil` and `flag` is [`true`](https://developer.apple.com/documentation/swift/true), sets the receiver’s container to be the container for a range specifier. If the receiver’s container specifier is `nil` and `flag` is [`false`](https://developer.apple.com/documentation/swift/false), sets the receiver’s container to be the top-level object.
+If the receiver’s container specifier is `nil` and `flag` is [`true`](../../Swift/true.md), sets the receiver’s container to be the container for a range specifier. If the receiver’s container specifier is `nil` and `flag` is [`false`](../../Swift/false.md), sets the receiver’s container to be the top-level object.
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), [`containerIsObjectBeingTested`](nsscriptobjectspecifier/containerisobjectbeingtested.md) should not also be invoked with an argument of [`true`](https://developer.apple.com/documentation/swift/true).
+If `flag` is [`true`](../../Swift/true.md), [`containerIsObjectBeingTested`](./containerisobjectbeingtested.md) should not also be invoked with an argument of [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var containerClassDescription: NSScriptClassDescription?](nsscriptobjectspecifier/containerclassdescription.md)
+### Getting, testing, and setting containers
+- [var containerClassDescription: NSScriptClassDescription?](./containerclassdescription.md)
   Sets the class description of the receiver’s container specifier to a given specifier.
-- [var containerIsObjectBeingTested: Bool](nsscriptobjectspecifier/containerisobjectbeingtested.md)
+- [var containerIsObjectBeingTested: Bool](./containerisobjectbeingtested.md)
   Sets whether the receiver’s container should be an object involved in a filter reference or the top-level object.
-- [var container: NSScriptObjectSpecifier?](nsscriptobjectspecifier/container.md)
+- [var container: NSScriptObjectSpecifier?](./container.md)
   Sets the container specifier of the receiver.
 
 

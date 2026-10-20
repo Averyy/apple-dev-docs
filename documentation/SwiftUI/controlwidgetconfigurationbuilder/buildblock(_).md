@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Passes a single control widget configuration written as a child control through unmodified.
 

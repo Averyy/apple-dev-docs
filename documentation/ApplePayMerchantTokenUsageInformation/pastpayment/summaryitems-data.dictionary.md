@@ -1,13 +1,14 @@
 # PastPayment.SummaryItems
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Items that summarize the total amount, such as taxes or shipping cost.
 
 ## Declaration
 
-```swift
+```
 object PastPayment.SummaryItems
 ```
 

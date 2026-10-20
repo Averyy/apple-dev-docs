@@ -1,23 +1,24 @@
 # CompleteReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Completes all async requests made when getting or setting a report.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void CompleteReport(OSAction *action, IOReturn status, uint32_t actualByteCount);
 ```
 
 #### Discussion
 
-Call this method upon completion of the [`getReport`](iohiddevice/getreport.md) and [`setReport`](iohiddevice/setreport.md) methods.
+Call this method upon completion of the [`getReport`](./getreport.md) and [`setReport`](./setreport.md) methods.
 
 ## Parameters
 
@@ -27,13 +28,14 @@ Call this method upon completion of the [`getReport`](iohiddevice/getreport.md) 
 
 ## See Also
 
-- [handleReport](iohiddevice/handlereport.md)
+### Processing Device Reports
+- [handleReport](./handlereport.md)
   Handles an asynchronous report received from the HID device.
-- [getReport](iohiddevice/getreport.md)
+- [getReport](./getreport.md)
   Gets a report from the HID device.
-- [setReport](iohiddevice/setreport.md)
+- [setReport](./setreport.md)
   Sends a report to the HID device.
-- [Report Options](report-options-enum.md)
+- [Report Options](../report-options-enum.md)
   The enumerated report options.
 
 

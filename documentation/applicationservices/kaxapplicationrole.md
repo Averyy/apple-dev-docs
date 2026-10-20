@@ -1,7 +1,8 @@
 # kAXApplicationRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An application.
 
@@ -12,6 +13,10 @@ An application.
 
 ```swift
 var kAXApplicationRole: String { get }
+```
+
+```c
+#define kAXApplicationRole
 ```
 
 

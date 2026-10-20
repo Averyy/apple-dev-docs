@@ -1,7 +1,8 @@
 # isSupportedRegion(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether you can make a request for the specified region.
 

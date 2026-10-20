@@ -1,7 +1,8 @@
 # MACaptionAppearanceCopyFontDescriptorForStyle(_:_:_:)
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the preferred font for the specified style of type.
 
@@ -19,25 +20,30 @@ Returns the preferred font for the specified style of type.
 func MACaptionAppearanceCopyFontDescriptorForStyle(_ domain: MACaptionAppearanceDomain, _ behavior: UnsafeMutablePointer<MACaptionAppearanceBehavior>?, _ fontStyle: MACaptionAppearanceFontStyle) -> Unmanaged<CTFontDescriptor>
 ```
 
+```c
+extern CTFontDescriptorRefMACaptionAppearanceCopyFontDescriptorForStyle(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior, MACaptionAppearanceFontStyle fontStyle);
+```
+
 #### Return Value
 
 The name of the preferred font for the specified style.
 
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
-- `behavior`: A pointer to memory. On return, this memory holds the caption appearance behavior for this preference setting. For possible values see [`MACaptionAppearanceBehavior`](macaptionappearancebehavior.md). Pass `NULL` when you do not need the behavior setting.
-- `fontStyle`: A font style, such as cursive or small caps, see [`MACaptionAppearanceFontStyle`](macaptionappearancefontstyle.md).
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](./macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](./macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
+- `behavior`: A pointer to memory. On return, this memory holds the caption appearance behavior for this preference setting. For possible values see [`MACaptionAppearanceBehavior`](./macaptionappearancebehavior.md). Pass `NULL` when you do not need the behavior setting.
+- `fontStyle`: A font style, such as cursive or small caps, see [`MACaptionAppearanceFontStyle`](./macaptionappearancefontstyle.md).
 
 ## See Also
 
-- [func MACaptionAppearanceCopyForegroundColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](macaptionappearancecopyforegroundcolor(_:_:).md)
+### Text settings
+- [func MACaptionAppearanceCopyForegroundColor(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> Unmanaged<CGColor>](./macaptionappearancecopyforegroundcolor%28_,_%29.md)
   Returns the preference for text color.
-- [func MACaptionAppearanceGetForegroundOpacity(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](macaptionappearancegetforegroundopacity(_:_:).md)
+- [func MACaptionAppearanceGetForegroundOpacity(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](./macaptionappearancegetforegroundopacity%28_,_%29.md)
   Returns the preference for text opacity.
-- [func MACaptionAppearanceGetRelativeCharacterSize(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](macaptionappearancegetrelativecharactersize(_:_:).md)
+- [func MACaptionAppearanceGetRelativeCharacterSize(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> CGFloat](./macaptionappearancegetrelativecharactersize%28_,_%29.md)
   Returns the preference for font scaling.
-- [func MACaptionAppearanceGetTextEdgeStyle(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> MACaptionAppearanceTextEdgeStyle](macaptionappearancegettextedgestyle(_:_:).md)
+- [func MACaptionAppearanceGetTextEdgeStyle(MACaptionAppearanceDomain, UnsafeMutablePointer<MACaptionAppearanceBehavior>?) -> MACaptionAppearanceTextEdgeStyle](./macaptionappearancegettextedgestyle%28_,_%29.md)
   Returns the preference for text edge style.
 
 

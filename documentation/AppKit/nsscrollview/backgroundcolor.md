@@ -1,12 +1,13 @@
 # backgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the content view’s background.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,19 +16,25 @@ The color of the content view’s background.
 var backgroundColor: NSColor { get set }
 ```
 
+```objc
+@property (copy) NSColor * backgroundColor;
+```
+
 #### Discussion
 
 This color is used to paint areas inside the content view that aren’t covered by the document view.
 
 ## See Also
 
-- [var backgroundColor: NSColor](nsclipview/backgroundcolor.md)
+### Related Documentation
+- [var backgroundColor: NSColor](../nsclipview/backgroundcolor.md)
   The color of the clip view’s background.
-- [var drawsBackground: Bool](nsscrollview/drawsbackground.md)
+### Managing Graphics Attributes
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean that indicates whether the scroll view draws its background.
-- [var borderType: NSBorderType](nsscrollview/bordertype.md)
+- [var borderType: NSBorderType](./bordertype.md)
   A value that specifies the appearance of the scroll view’s border.
-- [var documentCursor: NSCursor?](nsscrollview/documentcursor.md)
+- [var documentCursor: NSCursor?](./documentcursor.md)
   The content view’s document cursor.
 
 

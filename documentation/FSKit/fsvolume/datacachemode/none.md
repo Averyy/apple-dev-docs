@@ -1,7 +1,8 @@
 # FSVolume.DataCacheMode.none
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that indicates no active caching.
 
@@ -14,11 +15,16 @@ A mode that indicates no active caching.
 case none
 ```
 
+```c
+FSDataCacheModeNone
+```
+
 ## See Also
 
-- [FSVolume.DataCacheMode.readWithCache](fsvolume/datacachemode/readwithcache.md)
+### Data cache modes
+- [FSVolume.DataCacheMode.readWithCache](./readwithcache.md)
   A mode that indicates read access with caching enabled.
-- [FSVolume.DataCacheMode.readWriteWithCache](fsvolume/datacachemode/readwritewithcache.md)
+- [FSVolume.DataCacheMode.readWriteWithCache](./readwritewithcache.md)
   A mode that indicates read-write access with caching enabled.
 
 

@@ -1,7 +1,8 @@
 # badgeText
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The badge text for the action.
 
@@ -16,6 +17,10 @@ The badge text for the action.
 
 ```swift
 var badgeText: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * badgeText;
 ```
 
 #### Discussion

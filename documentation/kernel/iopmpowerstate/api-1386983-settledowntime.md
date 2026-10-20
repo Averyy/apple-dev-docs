@@ -1,7 +1,8 @@
 # settleDownTime
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Settle time required after entering next lower state from this state (microseconds). Unused; drivers may specify 0.
 
@@ -10,7 +11,7 @@ Settle time required after entering next lower state from this state (microsecon
 
 ## Declaration
 
-```swift
+```c
 unsigned long settleDownTime;
 ```
 

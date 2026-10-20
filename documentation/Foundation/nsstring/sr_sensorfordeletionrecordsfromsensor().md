@@ -1,17 +1,24 @@
 # sr_sensorForDeletionRecordsFromSensor()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
+- iOS 14.0+ - Deprecated in 27.0
+- iPadOS 14.0+ - Deprecated in 27.0
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use deletionRecords(matching request: SRFetchRequest) of SRReader<Sensor> class
 
 ## Declaration
 
 ```swift
 func sr_sensorForDeletionRecordsFromSensor() -> SRSensor?
+```
+
+```objc
+- (SRSensor) sr_sensorForDeletionRecordsFromSensor;
 ```
 
 #### Return Value

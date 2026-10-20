@@ -1,7 +1,8 @@
 # UIViewAnimatingState.stopped
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The animation is stopped. Putting an animation into this state ends the animation and leaves any animatable properties at their current values, instead of updating them to their intended final values. An animation cannot be started while in this state.
 
@@ -18,12 +19,17 @@ The animation is stopped. Putting an animation into this state ends the animatio
 case stopped
 ```
 
+```c
+UIViewAnimatingStateStopped
+```
+
 ## See Also
 
-- [UIViewAnimatingState.inactive](uiviewanimatingstate/inactive.md)
+### Constants
+- [UIViewAnimatingState.inactive](./inactive.md)
   The animations have not yet started executing. This is the initial state of the animator object.
-- [UIViewAnimatingState.active](uiviewanimatingstate/active.md)
-  The animator object is active and animations are either running or paused. An animator moves to this state after the first call to [`startAnimation()`](uiviewanimating/startanimation().md) or [`pauseAnimation()`](uiviewanimating/pauseanimation().md). It stays in the active state until the animations finish naturally or until you call the [`stopAnimation(_:)`](uiviewanimating/stopanimation(_:).md) method.
+- [UIViewAnimatingState.active](./active.md)
+  The animator object is active and animations are either running or paused. An animator moves to this state after the first call to [`startAnimation()`](../uiviewanimating/startanimation%28%29.md) or [`pauseAnimation()`](../uiviewanimating/pauseanimation%28%29.md). It stays in the active state until the animations finish naturally or until you call the [`stopAnimation(_:)`](../uiviewanimating/stopanimation%28_%29.md) method.
 
 
 ---

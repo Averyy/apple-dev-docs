@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An audio stream source that defines how the host supplies audio data for the guest.
 
@@ -14,15 +15,20 @@ An audio stream source that defines how the host supplies audio data for the gue
 var source: VZAudioInputStreamSource? { get set }
 ```
 
+```objc
+@property (strong, nullable) VZAudioInputStreamSource * source;
+```
+
 #### Discussion
 
 Not specifying a source results in a default handler that produces audio silence. The default is `nil`.
 
 ## See Also
 
-- [class VZAudioInputStreamSource](vzaudioinputstreamsource.md)
+### Related Documentation
+- [class VZAudioInputStreamSource](../vzaudioinputstreamsource.md)
   The base class for an audio input stream source.
-- [class VZHostAudioInputStreamSource](vzhostaudioinputstreamsource.md)
+- [class VZHostAudioInputStreamSource](../vzhostaudioinputstreamsource.md)
   The host audio input stream source that provides audio from the host system’s default input device.
 
 

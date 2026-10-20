@@ -1,7 +1,8 @@
 # trigger(gameActivity:handler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the game activity view for the provided activity instance.
 
@@ -14,7 +15,15 @@ Displays the game activity view for the provided activity instance.
 ## Declaration
 
 ```swift
+func trigger(gameActivity: GKGameActivity, handler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func trigger(gameActivity: GKGameActivity) async
+```
+
+```objc
+- (void) triggerAccessPointWithGameActivity:(GKGameActivity *) gameActivity handler:(void (^)()) handler;
 ```
 
 

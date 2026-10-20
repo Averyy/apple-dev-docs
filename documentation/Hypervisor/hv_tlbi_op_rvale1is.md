@@ -1,15 +1,20 @@
 # HV_TLBI_OP_RVALE1IS
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var HV_TLBI_OP_RVALE1IS: hv_tlbi_op_t { get }
+```
+
+```c
+HV_TLBI_OP_RVALE1IS
 ```
 
 #### Discussion

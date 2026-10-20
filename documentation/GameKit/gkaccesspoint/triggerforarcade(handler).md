@@ -1,7 +1,8 @@
 # triggerForArcade(handler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Brings up the Arcade dashboard.
 
@@ -14,7 +15,15 @@ Brings up the Arcade dashboard.
 ## Declaration
 
 ```swift
+func triggerForArcade(handler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func triggerForArcade() async
+```
+
+```objc
+- (void) triggerAccessPointForArcadeWithHandler:(void (^)()) handler;
 ```
 
 

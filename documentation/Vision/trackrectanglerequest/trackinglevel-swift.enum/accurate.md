@@ -1,7 +1,8 @@
 # TrackRectangleRequest.TrackingLevel.accurate
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ case accurate
 
 ## See Also
 
-- [TrackRectangleRequest.TrackingLevel.fast](trackrectanglerequest/trackinglevel-swift.enum/fast.md)
+### Getting the tracking levels
+- [TrackRectangleRequest.TrackingLevel.fast](./fast.md)
 
 
 ---

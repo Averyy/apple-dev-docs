@@ -1,7 +1,8 @@
 # FinancialConnectionExtensionAuthorizationRequest
 
 **Framework**: FinanceKitUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -17,13 +18,13 @@ struct FinancialConnectionExtensionAuthorizationRequest
 ## Topics
 
 ### Instance Properties
-- [var params: FinancialConnectionExtensionAuthorizationParams](financialconnectionextensionauthorizationrequest/params.md)
+- [var params: FinancialConnectionExtensionAuthorizationParams](./financialconnectionextensionauthorizationrequest/params.md)
 ### Instance Methods -
-- [func complete(authorizationResult: FinancialConnectionExtensionAuthorizationResult)](financialconnectionextensionauthorizationrequest/complete(authorizationresult:).md)
-- [func complete(error: any Error)](financialconnectionextensionauthorizationrequest/complete(error:).md)
+- [func complete(authorizationResult: FinancialConnectionExtensionAuthorizationResult)](./financialconnectionextensionauthorizationrequest/complete%28authorizationresult%29.md)
+- [func complete(error: any Error)](./financialconnectionextensionauthorizationrequest/complete%28error%29.md)
 ### Type Aliases
-- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandler](financialconnectionextensionauthorizationrequest/completionhandler.md)
-- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandlerResult](financialconnectionextensionauthorizationrequest/completionhandlerresult.md)
+- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandler](./financialconnectionextensionauthorizationrequest/completionhandler.md)
+- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandlerResult](./financialconnectionextensionauthorizationrequest/completionhandlerresult.md)
 
 
 ---

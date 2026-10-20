@@ -1,14 +1,15 @@
 # tv_sec
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 __int64_t tv_sec;
 ```
 

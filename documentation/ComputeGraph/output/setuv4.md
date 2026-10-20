@@ -1,13 +1,14 @@
 # output::setUV4
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the fourth UV coordinate set for the rendered output mesh.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::setUV4(float4 value)
 
 This function assigns a custom UV coordinate to the fourth texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV4 channel, it will be created. This enables multi-texturing and advanced shader effects.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__setUV4.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__setUV4.svg)
 
 > **Note**: Reads and writes to output attribute `float4 uv4`
 

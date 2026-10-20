@@ -1,7 +1,8 @@
 # upperBodyOnly
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request requires detecting a full body or upper body only to produce a result.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates whether the request requires detecting a full bod
 var upperBodyOnly: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL upperBodyOnly;
+```
+
 #### Discussion
 
-The default value of [`true`](https://developer.apple.com/documentation/swift/true) indicates that the request requires detecting a person’s upper body only to find the bound box around it.
+The default value of [`true`](../../Swift/true.md) indicates that the request requires detecting a person’s upper body only to find the bound box around it.
 
 
 ---

@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scale operation.
 

@@ -1,9 +1,10 @@
 # label
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A view that provides the optional label of the [`ControlGroup`](controlgroup.md).
+A view that provides the optional label of the [`ControlGroup`](../controlgroup.md).
 
 **Availability**:
 - iOS 16.0+
@@ -21,8 +22,9 @@ let label: ControlGroupStyleConfiguration.Label
 
 ## See Also
 
-- [ControlGroupStyleConfiguration.Label](controlgroupstyleconfiguration/label-swift.struct.md)
-  A type-erased label of a [`ControlGroup`](controlgroup.md).
+### Configuring the label
+- [ControlGroupStyleConfiguration.Label](./label-swift.struct.md)
+  A type-erased label of a [`ControlGroup`](../controlgroup.md).
 
 
 ---

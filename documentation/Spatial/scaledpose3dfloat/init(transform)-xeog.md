@@ -1,7 +1,8 @@
 # init(transform:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose with with a position, rotation, and scale that are defined by a projective transform.
 
@@ -26,7 +27,7 @@ A pose with a position, rotation, and scale that are defined by a projective tra
 
 #### Discussion
 
-> **Note**: This function can’t extract rotation from a non-scale-rotate-translate affine transform. In that case, the function returns `nil`.  If the specified  [`ProjectiveTransform3DFloat`](projectivetransform3dfloat.md) doesn’t have uniform scale, the function returns `nil`.
+> **Note**: This function can’t extract rotation from a non-scale-rotate-translate affine transform. In that case, the function returns `nil`.  If the specified  [`ProjectiveTransform3DFloat`](../projectivetransform3dfloat.md) doesn’t have uniform scale, the function returns `nil`.
 
 ## Parameters
 

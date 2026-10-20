@@ -1,7 +1,8 @@
 # concepts
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of elements that describes the expected contents of the image.
 
@@ -21,7 +22,8 @@ An array of elements that describes the expected contents of the image.
 
 ## See Also
 
-- [var sourceImage: UIImage?](imageplaygroundviewcontroller/sourceimage.md)
+### Specifying the source content
+- [var sourceImage: UIImage?](./sourceimage.md)
   An image to use as source input for generating the new image.
 
 

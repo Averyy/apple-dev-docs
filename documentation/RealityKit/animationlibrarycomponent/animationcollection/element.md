@@ -1,7 +1,8 @@
 # AnimationLibraryComponent.AnimationCollection.Element
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A key-value pair from the collection consisting of the name of an animation and the animation itself.
 
@@ -21,13 +22,14 @@ typealias Element = (key: String, value: AnimationResource)
 
 ## See Also
 
-- [subscript(String) -> AnimationResource?](animationlibrarycomponent/animationcollection/subscript(_:)-4sfyo.md)
+### Accessing animations
+- [subscript(String) -> AnimationResource?](./subscript%28_%29-4sfyo.md)
   Accesses a single animation in the collection with a key.
-- [subscript(Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence](animationlibrarycomponent/animationcollection/subscript(_:)-2n5pw.md)
+- [subscript(Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence](./subscript%28_%29-2n5pw.md)
   Accesses animations in the collection within an index range.
-- [subscript(AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element](animationlibrarycomponent/animationcollection/subscript(_:)-45p83.md)
+- [subscript(AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element](./subscript%28_%29-45p83.md)
   Accesses a single animation in the collection at an index.
-- [AnimationLibraryComponent.AnimationCollection.SubSequence](animationlibrarycomponent/animationcollection/subsequence.md)
+- [AnimationLibraryComponent.AnimationCollection.SubSequence](./subsequence.md)
   A sequence that represents a contiguous subrange of animations in the collection.
 
 

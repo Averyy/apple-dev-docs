@@ -1,7 +1,8 @@
 # availableModes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display modes that can be associated with the screen.
 
@@ -16,19 +17,24 @@ The display modes that can be associated with the screen.
 var availableModes: [UIScreenMode] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<UIScreenMode *> * availableModes;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
 #### Discussion
 
-The array contains one or more [`UIScreenMode`](uiscreenmode.md) objects, each of which represents a display mode supported by the screen.
+The array contains one or more [`UIScreenMode`](../uiscreenmode.md) objects, each of which represents a display mode supported by the screen.
 
 ## See Also
 
-- [var currentMode: UIScreenMode?](uiscreen/currentmode.md)
+### Managing screen modes
+- [var currentMode: UIScreenMode?](./currentmode.md)
   The current screen mode associated with the screen.
-- [var preferredMode: UIScreenMode?](uiscreen/preferredmode.md)
+- [var preferredMode: UIScreenMode?](./preferredmode.md)
   The preferred display mode for the screen.
 
 

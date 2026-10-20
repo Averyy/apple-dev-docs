@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsRemoteMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is remote.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is remote.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsRemoteMask = (1 << kUSBInformationDeviceIsRemote)
 ```
 

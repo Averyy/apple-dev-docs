@@ -1,7 +1,8 @@
 # AnyTransition
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased transition.
 
@@ -28,56 +29,57 @@ struct AnyTransition
 ## Topics
 
 ### Getting built-in transitions
-- [static var identity: AnyTransition](anytransition/identity.md)
+- [static var identity: AnyTransition](./anytransition/identity.md)
   A transition that returns the input view, unmodified, as the output view.
-- [static func move(edge: Edge) -> AnyTransition](anytransition/move(edge:).md)
+- [static func move(edge: Edge) -> AnyTransition](./anytransition/move%28edge%29.md)
   Returns a transition that moves the view away, towards the specified edge of the view.
-- [static func offset(CGSize) -> AnyTransition](anytransition/offset(_:).md)
-- [static func offset(x: CGFloat, y: CGFloat) -> AnyTransition](anytransition/offset(x:y:).md)
-- [static let opacity: AnyTransition](anytransition/opacity.md)
+- [static func offset(CGSize) -> AnyTransition](./anytransition/offset%28_%29.md)
+- [static func offset(x: CGFloat, y: CGFloat) -> AnyTransition](./anytransition/offset%28x,y%29.md)
+- [static let opacity: AnyTransition](./anytransition/opacity.md)
   A transition from transparent to opaque on insertion, and from opaque to transparent on removal.
-- [static func push(from: Edge) -> AnyTransition](anytransition/push(from:).md)
+- [static func push(from: Edge) -> AnyTransition](./anytransition/push%28from%29.md)
   Creates a transition that when added to a view will animate the view’s insertion by moving it in from the specified edge while fading it in, and animate its removal by moving it out towards the opposite edge and fading it out.
-- [static var scale: AnyTransition](anytransition/scale.md)
+- [static var scale: AnyTransition](./anytransition/scale.md)
   Returns a transition that scales the view.
-- [static func scale(scale: CGFloat, anchor: UnitPoint) -> AnyTransition](anytransition/scale(scale:anchor:).md)
+- [static func scale(scale: CGFloat, anchor: UnitPoint) -> AnyTransition](./anytransition/scale%28scale,anchor%29.md)
   Returns a transition that scales the view by the specified amount.
-- [static var slide: AnyTransition](anytransition/slide.md)
+- [static var slide: AnyTransition](./anytransition/slide.md)
   A transition that inserts by moving in from the leading edge, and removes by moving out towards the trailing edge.
 ### Combining and configuring transitions
-- [func animation(Animation?) -> AnyTransition](anytransition/animation(_:).md)
+- [func animation(Animation?) -> AnyTransition](./anytransition/animation%28_%29.md)
   Attaches an animation to this transition.
-- [static func asymmetric(insertion: AnyTransition, removal: AnyTransition) -> AnyTransition](anytransition/asymmetric(insertion:removal:).md)
+- [static func asymmetric(insertion: AnyTransition, removal: AnyTransition) -> AnyTransition](./anytransition/asymmetric%28insertion,removal%29.md)
   Provides a composite transition that uses a different transition for insertion versus removal.
-- [func combined(with: AnyTransition) -> AnyTransition](anytransition/combined(with:).md)
+- [func combined(with: AnyTransition) -> AnyTransition](./anytransition/combined%28with%29.md)
   Combines this transition with another, returning a new transition that is the result of both transitions being applied.
 ### Creating a custom transition
-- [init<T>(T)](anytransition/init(_:).md)
+- [init<T>(T)](./anytransition/init%28_%29.md)
   Create an instance that type-erases `transition`.
-- [static func modifier<E>(active: E, identity: E) -> AnyTransition](anytransition/modifier(active:identity:).md)
+- [static func modifier<E>(active: E, identity: E) -> AnyTransition](./anytransition/modifier%28active,identity%29.md)
   Returns a transition defined between an active modifier and an identity modifier.
 
 ## See Also
 
-- [func transition(_:)](view/transition(_:).md)
+### Defining transitions
+- [func transition(_:)](./view/transition%28_%29.md)
   Associates a transition with the view.
-- [protocol Transition](transition.md)
+- [protocol Transition](./transition.md)
   A description of view changes to apply when a view is added to and removed from the view hierarchy.
-- [struct TransitionProperties](transitionproperties.md)
+- [struct TransitionProperties](./transitionproperties.md)
   The properties a `Transition` can have.
-- [enum TransitionPhase](transitionphase.md)
+- [enum TransitionPhase](./transitionphase.md)
   An indication of which the current stage of a transition.
-- [struct AsymmetricTransition](asymmetrictransition.md)
+- [struct AsymmetricTransition](./asymmetrictransition.md)
   A composite `Transition` that uses a different transition for insertion versus removal.
-- [func contentTransition(ContentTransition) -> some View](view/contenttransition(_:).md)
+- [func contentTransition(ContentTransition) -> some View](./view/contenttransition%28_%29.md)
   Modifies the view to use a given transition as its method of animating changes to the contents of its views.
-- [var contentTransition: ContentTransition](environmentvalues/contenttransition.md)
+- [var contentTransition: ContentTransition](./environmentvalues/contenttransition.md)
   The current method of animating the contents of views.
-- [var contentTransitionAddsDrawingGroup: Bool](environmentvalues/contenttransitionaddsdrawinggroup.md)
+- [var contentTransitionAddsDrawingGroup: Bool](./environmentvalues/contenttransitionaddsdrawinggroup.md)
   A Boolean value that controls whether views that render content transitions use GPU-accelerated rendering.
-- [struct ContentTransition](contenttransition.md)
+- [struct ContentTransition](./contenttransition.md)
   A kind of transition that applies to the content within a single view, rather than to the insertion or removal of a view.
-- [struct PlaceholderContentView](placeholdercontentview.md)
+- [struct PlaceholderContentView](./placeholdercontentview.md)
   A placeholder used to construct an inline modifier, transition, or other helper type.
 
 

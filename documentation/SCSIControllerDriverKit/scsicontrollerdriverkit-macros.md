@@ -1,15 +1,16 @@
 # Macros
 
-**Framework**: SCSIControllerDriverKit
+**Framework**: SCSIControllerDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Macros
-- [kIOHierarchicalLogicalUnitSupportKey](kiohierarchicallogicalunitsupportkey.md)
-- [kIOMinimumHBADataAlignmentMaskKey](kiominimumhbadataalignmentmaskkey.md)
-- [kIOServicePowerCapabilityPause](kioservicepowercapabilitypause.md)
+- [kIOHierarchicalLogicalUnitSupportKey](./kiohierarchicallogicalunitsupportkey.md)
+- [kIOMinimumHBADataAlignmentMaskKey](./kiominimumhbadataalignmentmaskkey.md)
+- [kIOServicePowerCapabilityPause](./kioservicepowercapabilitypause.md)
   A PCIe-specific power state for halting transactions while reallocating resources.
-- [kMaxSenseBufferSize](kmaxsensebuffersize.md)
+- [kMaxSenseBufferSize](./kmaxsensebuffersize.md)
   The maximum size of the SCSI sense data buffer in a response.
 
 

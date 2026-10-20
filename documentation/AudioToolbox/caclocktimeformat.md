@@ -1,10 +1,11 @@
 # CAClockTimeFormat
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,36 +13,41 @@
 enum CAClockTimeFormat
 ```
 
+```c
+enum CAClockTimeFormat : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [CAClockTimeFormat.absoluteSeconds](caclocktimeformat/absoluteseconds.md)
-- [CAClockTimeFormat.beats](caclocktimeformat/beats.md)
-- [CAClockTimeFormat.hostTime](caclocktimeformat/hosttime.md)
-- [CAClockTimeFormat.smpteSeconds](caclocktimeformat/smpteseconds.md)
-- [CAClockTimeFormat.smpteTime](caclocktimeformat/smptetime.md)
-- [CAClockTimeFormat.samples](caclocktimeformat/samples.md)
-- [CAClockTimeFormat.seconds](caclocktimeformat/seconds.md)
+- [CAClockTimeFormat.absoluteSeconds](./caclocktimeformat/absoluteseconds.md)
+- [CAClockTimeFormat.beats](./caclocktimeformat/beats.md)
+- [CAClockTimeFormat.hostTime](./caclocktimeformat/hosttime.md)
+- [CAClockTimeFormat.smpteSeconds](./caclocktimeformat/smpteseconds.md)
+- [CAClockTimeFormat.smpteTime](./caclocktimeformat/smptetime.md)
+- [CAClockTimeFormat.samples](./caclocktimeformat/samples.md)
+- [CAClockTimeFormat.seconds](./caclocktimeformat/seconds.md)
 ### Initializers
-- [init?(rawValue: UInt32)](caclocktimeformat/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./caclocktimeformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func CAClockGetCurrentTime(CAClockRef, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](caclockgetcurrenttime(_:_:_:).md)
-- [func CAClockSetCurrentTime(CAClockRef, UnsafePointer<CAClockTime>) -> OSStatus](caclocksetcurrenttime(_:_:).md)
-- [func CAClockGetStartTime(CAClockRef, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](caclockgetstarttime(_:_:_:).md)
-- [struct CAClockTime](caclocktime.md)
-- [typealias CAClockSamples](caclocksamples.md)
+### Accessing the Current Time
+- [func CAClockGetCurrentTime(CAClockRef, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](./caclockgetcurrenttime%28_,_,_%29.md)
+- [func CAClockSetCurrentTime(CAClockRef, UnsafePointer<CAClockTime>) -> OSStatus](./caclocksetcurrenttime%28_,_%29.md)
+- [func CAClockGetStartTime(CAClockRef, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](./caclockgetstarttime%28_,_,_%29.md)
+- [struct CAClockTime](./caclocktime.md)
+- [typealias CAClockSamples](./caclocksamples.md)
 
 
 ---

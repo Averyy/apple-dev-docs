@@ -1,7 +1,8 @@
 # Version
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 One byte.
 
@@ -11,9 +12,10 @@ Set to 0.
 
 ## See Also
 
-- [Flags](name_atom/flags.md)
+### Data fields
+- [Flags](./flags.md)
   Three bytes.
-- [Name](name_atom/name.md)
+- [Name](./name.md)
   An array of bytes, constituting a UTF-8 string, containing the name.
 
 

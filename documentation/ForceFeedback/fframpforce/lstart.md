@@ -1,7 +1,8 @@
 # lStart
 
 **Framework**: Force Feedback  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var lStart: LONG
 ```
 
+```c
+LONG lStart;
+```
+
 ## See Also
 
-- [var lEnd: LONG](fframpforce/lend.md)
+### Instance Properties
+- [var lEnd: LONG](./lend.md)
   Magnitude at the end of the effect, in the range from -10,000 through 10,000.
 
 

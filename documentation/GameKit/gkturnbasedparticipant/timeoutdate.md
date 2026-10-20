@@ -1,7 +1,8 @@
 # timeoutDate
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date and time that the participant’s turn timed out.
 
@@ -20,21 +21,34 @@ The date and time that the participant’s turn timed out.
 var timeoutDate: Date? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * timeoutDate;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSDate * timeoutDate;
+```
+
 #### Discussion
 
 This property is `nil` when the participant takes a turn that doesn’t time out.
 
 ## See Also
 
-- [var lastTurnDate: Date?](gkturnbasedparticipant/lastturndate.md)
+### Retrieving Participant Details
+- [var lastTurnDate: Date?](./lastturndate.md)
   The date and time that this participant last took a turn in the game.
-- [var player: GKPlayer?](gkturnbasedparticipant/player.md)
+- [var player: GKPlayer?](./player.md)
   The player object containing the participant details.
-- [var status: GKTurnBasedParticipant.Status](gkturnbasedparticipant/status-swift.property.md)
+- [var status: GKTurnBasedParticipant.Status](./status-swift.property.md)
   The status of the participant.
-- [GKTurnBasedParticipant.Status](gkturnbasedparticipant/status-swift.enum.md)
+- [GKTurnBasedParticipant.Status](./status-swift.enum.md)
   The state the participant is in during the match.
-- [var playerID: String?](gkturnbasedparticipant/playerid.md)
+- [var playerID: String?](./playerid.md)
   The player identifier for this participant.
 
 

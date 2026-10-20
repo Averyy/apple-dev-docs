@@ -1,7 +1,8 @@
 # timedOutWaitingForAccessory
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An accessory did not respond timely.
 
@@ -21,21 +22,22 @@ static var timedOutWaitingForAccessory: HMError.Code { get }
 
 ## See Also
 
-- [static var accessDenied: HMError.Code](hmerror/accessdenied.md)
+### Detecting communication errors
+- [static var accessDenied: HMError.Code](./accessdenied.md)
   An error indicating the current user doesn’t have privileges to perform the operation.
-- [static var accessoryCommunicationFailure: HMError.Code](hmerror/accessorycommunicationfailure.md)
+- [static var accessoryCommunicationFailure: HMError.Code](./accessorycommunicationfailure.md)
   The accessory failed to communicate.
-- [static var accessoryPairingFailed: HMError.Code](hmerror/accessorypairingfailed.md)
+- [static var accessoryPairingFailed: HMError.Code](./accessorypairingfailed.md)
   An attempt to pair with the accessory has failed.
-- [static var accessorySentInvalidResponse: HMError.Code](hmerror/accessorysentinvalidresponse.md)
+- [static var accessorySentInvalidResponse: HMError.Code](./accessorysentinvalidresponse.md)
   An error indicating the accessory sent an invalid response.
-- [static var clientRequestError: HMError.Code](hmerror/clientrequesterror.md)
+- [static var clientRequestError: HMError.Code](./clientrequesterror.md)
   An error with the client request.
-- [static var communicationFailure: HMError.Code](hmerror/communicationfailure.md)
+- [static var communicationFailure: HMError.Code](./communicationfailure.md)
   A communication failure.
-- [static var dataResetFailure: HMError.Code](hmerror/dataresetfailure.md)
+- [static var dataResetFailure: HMError.Code](./dataresetfailure.md)
   An attempt to reset the data failed.
-- [static var partialCommunicationFailure: HMError.Code](hmerror/partialcommunicationfailure.md)
+- [static var partialCommunicationFailure: HMError.Code](./partialcommunicationfailure.md)
 
 
 ---

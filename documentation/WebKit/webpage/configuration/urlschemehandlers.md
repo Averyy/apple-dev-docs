@@ -1,7 +1,8 @@
 # urlSchemeHandlers
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allows registering an object to load resources associated with a specified URL scheme.
 

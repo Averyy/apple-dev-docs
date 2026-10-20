@@ -1,12 +1,15 @@
 # showsBaselineSeparator
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the toolbar shows the separator between the toolbar and the main window contents.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 15.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -14,23 +17,28 @@ A Boolean value that indicates whether the toolbar shows the separator between t
 var showsBaselineSeparator: Bool { get set }
 ```
 
+```objc
+@property BOOL showsBaselineSeparator;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the toolbar shows the separator between the toolbar and the main window contents. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the toolbar doesn’t show the separator. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If the value of this property is [`true`](../../Swift/true.md), the toolbar shows the separator between the toolbar and the main window contents. If the value is [`false`](../../Swift/false.md), the toolbar doesn’t show the separator. The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var configuration: [String : Any]](nstoolbar/configuration.md)
+### Deprecated properties
+- [var configuration: [String : Any]](./configuration.md)
   A dictionary containing the current configuration details for the toolbar.
-- [var centeredItemIdentifier: NSToolbarItem.Identifier?](nstoolbar/centereditemidentifier.md)
+- [var centeredItemIdentifier: NSToolbarItem.Identifier?](./centereditemidentifier.md)
   The item to display in the center of the toolbar.
-- [var fullScreenAccessoryView: NSView?](nstoolbar/fullscreenaccessoryview.md)
+- [var fullScreenAccessoryView: NSView?](./fullscreenaccessoryview.md)
   The toolbar’s full screen accessory view.
-- [var fullScreenAccessoryViewMinHeight: CGFloat](nstoolbar/fullscreenaccessoryviewminheight.md)
+- [var fullScreenAccessoryViewMinHeight: CGFloat](./fullscreenaccessoryviewminheight.md)
   The minimum height of the toolbar’s full screen accessory view.
-- [var fullScreenAccessoryViewMaxHeight: CGFloat](nstoolbar/fullscreenaccessoryviewmaxheight.md)
+- [var fullScreenAccessoryViewMaxHeight: CGFloat](./fullscreenaccessoryviewmaxheight.md)
   The maximum height of the toolbar’s full screen accessory view, in points.
-- [var sizeMode: NSToolbar.SizeMode](nstoolbar/sizemode-swift.property.md)
+- [var sizeMode: NSToolbar.SizeMode](./sizemode-swift.property.md)
   The toolbar’s size mode.
 
 

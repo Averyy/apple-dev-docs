@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a text editor.
@@ -22,7 +23,7 @@ Creates a view that represents the body of a text editor.
 
 #### Discussion
 
-The system calls this method for each [`TextEditor`](texteditor.md) instance in a view hierarchy where this style is the current text editor style.
+The system calls this method for each [`TextEditor`](../texteditor.md) instance in a view hierarchy where this style is the current text editor style.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ The system calls this method for each [`TextEditor`](texteditor.md) instance in 
 
 ## See Also
 
-- [TextEditorStyle.Configuration](texteditorstyle/configuration.md)
+### Creating custom styles
+- [TextEditorStyle.Configuration](./configuration.md)
   The properties of a text editor.
-- [associatedtype Body : View](texteditorstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a text editor.
 
 

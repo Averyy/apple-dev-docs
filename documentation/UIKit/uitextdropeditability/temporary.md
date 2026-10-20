@@ -1,7 +1,8 @@
 # UITextDropEditability.temporary
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A text-drop editability specifier indicating that a noneditable text view does accept drops but reverts to its noneditable status immediately afterward.
 
@@ -17,11 +18,16 @@ A text-drop editability specifier indicating that a noneditable text view does a
 case temporary
 ```
 
+```c
+UITextDropEditabilityTemporary
+```
+
 ## See Also
 
-- [UITextDropEditability.no](uitextdropeditability/no.md)
+### Editability styles
+- [UITextDropEditability.no](./no.md)
   A text-drop editability specifier indicating that a noneditable text view does not accept drops.
-- [UITextDropEditability.yes](uitextdropeditability/yes.md)
+- [UITextDropEditability.yes](./yes.md)
   A text-drop editability specifier indicating that a noneditable text view does accept drops, and that the dropped text remains editable after the drop is finished.
 
 

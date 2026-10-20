@@ -1,6 +1,7 @@
 # format
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies how a date is displayed.
 
@@ -12,17 +13,18 @@ Here’s an example that sets the date to January 19, 2031.
 <date format="MMMM dd, yyyy">2031-01-19</date>
 ```
 
-##### Values for Format
+##### Values for format
 
 - **String**: The format for the date string.
 
-##### Elements That Use Format
+##### Elements that Use format
 
-- [`date`](date.md)
+- [date](./date.md)
 
 ## See Also
 
-- [locale](locale.md)
+### Date Settings
+- [locale](./locale.md)
   Sets the locale for the date element.
 
 

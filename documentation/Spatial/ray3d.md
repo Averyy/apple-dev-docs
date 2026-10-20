@@ -1,7 +1,8 @@
 # Ray3D
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A ray in a 3D coordinate system.
 
@@ -20,134 +21,139 @@ A ray in a 3D coordinate system.
 struct Ray3D
 ```
 
+```c
+typedef struct { ... } SPRay3D;
+```
+
 ## Topics
 
 ### Creating a 3D ray structure
-- [init()](ray3d/init.md)
+- [init()](./ray3d/init%28%29.md)
   Creates a ray structure.
-- [init(origin: Point3D, direction: Vector3D)](ray3d/init(origin:direction:)-5sxkl.md)
+- [init(origin: Point3D, direction: Vector3D)](./ray3d/init%28origin,direction%29-5sxkl.md)
   Creates a ray with the specified origin and the specified direction from Spatial primitives.
-- [init(origin: simd_float3, direction: simd_float3)](ray3d/init(origin:direction:)-3gfcj.md)
+- [init(origin: simd_float3, direction: simd_float3)](./ray3d/init%28origin,direction%29-3gfcj.md)
   Creates a ray with the specified origin and the specified direction from single-precision vectors.
-- [init(origin: simd_double3, direction: simd_double3)](ray3d/init(origin:direction:)-47w1c.md)
+- [init(origin: simd_double3, direction: simd_double3)](./ray3d/init%28origin,direction%29-47w1c.md)
   Creates a ray with the specified origin and the specified direction from double-precision vectors.
 ### Inspecting a 3D ray’s properties
-- [var origin: Point3D](ray3d/origin.md)
+- [var origin: Point3D](./ray3d/origin.md)
   The origin of the ray.
-- [var direction: Vector3D](ray3d/direction.md)
+- [var direction: Vector3D](./ray3d/direction.md)
   The direction of the ray.
 ### Transforming a 3D ray structure
-- [func apply(Pose3D)](ray3d/apply(_:).md)
+- [func apply(Pose3D)](./ray3d/apply%28_%29.md)
   Applies the specified pose to the ray.
-- [func applying(AffineTransform3D) -> Ray3D](ray3d/applying(_:)-337n0.md)
+- [func applying(AffineTransform3D) -> Ray3D](./ray3d/applying%28_%29-337n0.md)
   Returns a ray that results from applying the specified affine transform.
-- [func applying(ProjectiveTransform3D) -> Ray3D](ray3d/applying(_:)-2aom9.md)
+- [func applying(ProjectiveTransform3D) -> Ray3D](./ray3d/applying%28_%29-2aom9.md)
   Returns a ray that results from applying the specified projective transform.
-- [func applying(Pose3D) -> Ray3D](ray3d/applying(_:)-34rqi.md)
+- [func applying(Pose3D) -> Ray3D](./ray3d/applying%28_%29-34rqi.md)
   Returns a ray that results from applying the specified pose.
-- [func unapplying(AffineTransform3D) -> Ray3D](ray3d/unapplying(_:)-7bc37.md)
+- [func unapplying(AffineTransform3D) -> Ray3D](./ray3d/unapplying%28_%29-7bc37.md)
   Returns a ray that results from unapplying the specified affine transform.
-- [func unapplying(ProjectiveTransform3D) -> Ray3D](ray3d/unapplying(_:)-6tj2w.md)
+- [func unapplying(ProjectiveTransform3D) -> Ray3D](./ray3d/unapplying%28_%29-6tj2w.md)
   Returns a ray that results from unapplying the specified projective transform.
-- [func unapplying(Pose3D) -> Ray3D](ray3d/unapplying(_:)-928o9.md)
+- [func unapplying(Pose3D) -> Ray3D](./ray3d/unapplying%28_%29-928o9.md)
   Unapplies the specified pose to the ray.
-- [func rotated(by: Rotation3D) -> Ray3D](ray3d/rotated(by:)-qxp0.md)
+- [func rotated(by: Rotation3D) -> Ray3D](./ray3d/rotated%28by%29-qxp0.md)
   Returns a ray that results from applying the specified rotation.
-- [func rotated(by: simd_quatd) -> Ray3D](ray3d/rotated(by:)-81glv.md)
+- [func rotated(by: simd_quatd) -> Ray3D](./ray3d/rotated%28by%29-81glv.md)
   Returns a ray that results from rotating with the specified quaternion.
-- [func rotated(by: simd_quatd, around: Point3D) -> Ray3D](ray3d/rotated(by:around:)-uzon.md)
+- [func rotated(by: simd_quatd, around: Point3D) -> Ray3D](./ray3d/rotated%28by,around%29-uzon.md)
   Returns a ray that’s rotated by the specified quaternion around a specified pivot.
-- [func rotated(by: Rotation3D, around: Point3D) -> Ray3D](ray3d/rotated(by:around:)-7h43.md)
+- [func rotated(by: Rotation3D, around: Point3D) -> Ray3D](./ray3d/rotated%28by,around%29-7h43.md)
   Returns a ray that’s rotated by the specified rotation around a specified pivot.
-- [func applying(ScaledPose3D) -> Ray3D](ray3d/applying(_:)-6hfqw.md)
+- [func applying(ScaledPose3D) -> Ray3D](./ray3d/applying%28_%29-6hfqw.md)
   Returns a ray that’s transformed by the specified scaled pose.
-- [func unapplying(ScaledPose3D) -> Ray3D](ray3d/unapplying(_:)-9x164.md)
+- [func unapplying(ScaledPose3D) -> Ray3D](./ray3d/unapplying%28_%29-9x164.md)
   Returns a ray that’s transformed by the inverse of the specified scaled pose.
 ### Checking characteristics
-- [var isFinite: Bool](ray3d/isfinite.md)
+- [var isFinite: Bool](./ray3d/isfinite.md)
   A Boolean value that indicates whether all of the values of the ray are finite.
-- [var isNaN: Bool](ray3d/isnan.md)
+- [var isNaN: Bool](./ray3d/isnan.md)
   A Boolean value that indicates whether the ray contains any NaN values.
-- [var isZero: Bool](ray3d/iszero.md)
+- [var isZero: Bool](./ray3d/iszero.md)
   A Boolean value that indicates whether all of the values of the ray are zero.
-- [func intersects(Rect3D) -> Bool](ray3d/intersects(_:).md)
+- [func intersects(Rect3D) -> Bool](./ray3d/intersects%28_%29.md)
   Returns a Boolean value that indicates whether a ray intersects a rectangle.
-- [func intersects(sphereOrigin: Point3D, sphereRadius: Double) -> Bool](ray3d/intersects(sphereorigin:sphereradius:).md)
+- [func intersects(sphereOrigin: Point3D, sphereRadius: Double) -> Bool](./ray3d/intersects%28sphereorigin,sphereradius%29.md)
   Returns a Boolean value that indicates whether the ray intersects a specified sphere.
 ### Comparing values
-- [static func == (Ray3D, Ray3D) -> Bool](ray3d/==(_:_:).md)
+- [static func == (Ray3D, Ray3D) -> Bool](./ray3d/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 ### Applying arithmetic operations
-- [static func * (Pose3D, Ray3D) -> Ray3D](ray3d/*(_:_:).md)
+- [static func * (Pose3D, Ray3D) -> Ray3D](./ray3d/star%28_,_%29.md)
   Returns the ray that results from applying the pose to the ray.
 ### Initializers
-- [init(Ray3DFloat)](ray3d/init(_:).md)
+- [init(Ray3DFloat)](./ray3d/init%28_%29.md)
   Returns a double-precision ray from a single-precision ray.
-- [init(origin: Point3D, direction: Vector3D)](ray3d/init(origin:direction:)-63yk4.md)
+- [init(origin: Point3D, direction: Vector3D)](./ray3d/init%28origin,direction%29-63yk4.md)
   Creates a ray from Spatial primitives that describe the origin and direction.
 ### Default Implementations
-- [CustomReflectable Implementations](ray3d/customreflectable-implementations.md)
-- [Decodable Implementations](ray3d/decodable-implementations.md)
-- [Encodable Implementations](ray3d/encodable-implementations.md)
-- [Equatable Implementations](ray3d/equatable-implementations.md)
-- [Hashable Implementations](ray3d/hashable-implementations.md)
-- [Primitive3DProtocol Implementations](ray3d/primitive3dprotocol-implementations.md)
-- [ProjectiveTransformable3D Implementations](ray3d/projectivetransformable3d-implementations.md)
-- [Rotatable3DProtocol Implementations](ray3d/rotatable3dprotocol-implementations.md)
+- [CustomReflectable Implementations](./ray3d/customreflectable-implementations.md)
+- [Decodable Implementations](./ray3d/decodable-implementations.md)
+- [Encodable Implementations](./ray3d/encodable-implementations.md)
+- [Equatable Implementations](./ray3d/equatable-implementations.md)
+- [Hashable Implementations](./ray3d/hashable-implementations.md)
+- [Primitive3DProtocol Implementations](./ray3d/primitive3dprotocol-implementations.md)
+- [ProjectiveTransformable3D Implementations](./ray3d/projectivetransformable3d-implementations.md)
+- [Rotatable3DProtocol Implementations](./ray3d/rotatable3dprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Primitive3D](primitive3d.md)
-- [Primitive3DProtocol](primitive3dprotocol.md)
-- [ProjectiveTransformable3D](projectivetransformable3d.md)
-- [Rotatable3D](rotatable3d.md)
-- [Rotatable3DProtocol](rotatable3dprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
-- [Translatable3D](translatable3d.md)
-- [Translatable3DProtocol](translatable3dprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Primitive3D](./primitive3d.md)
+- [Primitive3DProtocol](./primitive3dprotocol.md)
+- [ProjectiveTransformable3D](./projectivetransformable3d.md)
+- [Rotatable3D](./rotatable3d.md)
+- [Rotatable3DProtocol](./rotatable3dprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
+- [Translatable3D](./translatable3d.md)
+- [Translatable3DProtocol](./translatable3dprotocol.md)
 
 ## See Also
 
-- [struct Point3D](point3d.md)
+### 3D primitives
+- [struct Point3D](./point3d.md)
   A point in a 3D coordinate system.
-- [struct Point3DFloat](point3dfloat.md)
+- [struct Point3DFloat](./point3dfloat.md)
   A single-precision structure that contains a point in a three-dimensional coordinate system.
-- [struct Size3D](size3d.md)
+- [struct Size3D](./size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
-- [struct Size3DFloat](size3dfloat.md)
+- [struct Size3DFloat](./size3dfloat.md)
   A single-precision structure that contains width, height, and depth values.
-- [struct Rect3D](rect3d.md)
+- [struct Rect3D](./rect3d.md)
   A rectangle in a 3D coordinate system.
-- [struct Rect3DFloat](rect3dfloat.md)
+- [struct Rect3DFloat](./rect3dfloat.md)
   A single-precision structure that contains the location and dimensions of a 3D rectangle.
-- [struct Rotation3D](rotation3d.md)
+- [struct Rotation3D](./rotation3d.md)
   A rotation in three dimensions.
-- [struct Rotation3DFloat](rotation3dfloat.md)
+- [struct Rotation3DFloat](./rotation3dfloat.md)
   A single-precision structure that represents a rotation in three dimensions.
-- [struct RotationAxis3D](rotationaxis3d.md)
+- [struct RotationAxis3D](./rotationaxis3d.md)
   A 3D rotation axis.
-- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+- [struct RotationAxis3DFloat](./rotationaxis3dfloat.md)
   A 3D axis.
-- [struct Pose3D](pose3d.md)
+- [struct Pose3D](./pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
-- [struct Pose3DFloat](pose3dfloat.md)
+- [struct Pose3DFloat](./pose3dfloat.md)
   A single-precision structure that contains a position and rotation.
-- [struct ScaledPose3D](scaledpose3d.md)
+- [struct ScaledPose3D](./scaledpose3d.md)
   A structure that contains a position, rotation, and scale.
-- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
+- [struct ScaledPose3DFloat](./scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
-- [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
+- [struct SphericalCoordinates3D](./sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A type that the sort comparator can compare.
@@ -23,7 +24,8 @@ associatedtype Compared
 
 ## See Also
 
-- [func compare(Self.Compared, Self.Compared) -> ComparisonResult](sortcomparator/compare(_:_:).md)
+### Using a Comparator
+- [func compare(Self.Compared, Self.Compared) -> ComparisonResult](./compare%28_,_%29.md)
   Provides the relative ordering of two elements based on the sort order of the comparator.
 
 

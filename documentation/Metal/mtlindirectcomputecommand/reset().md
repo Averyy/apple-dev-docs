@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Resets the command to its default state.
@@ -18,6 +19,10 @@ Resets the command to its default state.
 
 ```swift
 func reset()
+```
+
+```objc
+- (void) reset;
 ```
 
 #### Discussion

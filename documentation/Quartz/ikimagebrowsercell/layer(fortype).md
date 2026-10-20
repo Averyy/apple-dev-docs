@@ -1,7 +1,8 @@
 # layer(forType:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a layer for the specified position.
 
@@ -14,6 +15,10 @@ Returns a layer for the specified position.
 func layer(forType type: String!) -> CALayer!
 ```
 
+```objc
+- (CALayer *) layerForType:(NSString *) type;
+```
+
 #### Return Value
 
 The `CALayer` to display in the specified position.
@@ -24,7 +29,7 @@ Subclasses can override this method to add a Core Animation layer to the cell
 
 ## Parameters
 
-- `type`: A string representing the layer location. See [`Cell Layer Positions`](cell-layer-positions.md) for possible values.
+- `type`: A string representing the layer location. See [Cell Layer Positions](../cell-layer-positions.md) for possible values.
 
 
 ---

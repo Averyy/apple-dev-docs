@@ -1,7 +1,8 @@
 # image(_:alignmentAnchor:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an image configuration using a custom image.
 
@@ -22,13 +23,14 @@ An `ImageConfiguration` for the custom image.
 
 ## See Also
 
-- [static let `default`: MarkupAdornment.ImageConfiguration](markupadornment/imageconfiguration-swift.struct/default.md)
+### Creating an image configuration
+- [static let `default`: MarkupAdornment.ImageConfiguration](./default.md)
   The default image configuration using a pin-shaped system image.
-- [static func systemImage(String, tint: UIColor, size: CGSize?, alignmentAnchor: CGPoint) -> MarkupAdornment.ImageConfiguration](markupadornment/imageconfiguration-swift.struct/systemimage(_:tint:size:alignmentanchor:)-24032.md)
+- [static func systemImage(String, tint: UIColor, size: CGSize?, alignmentAnchor: CGPoint) -> MarkupAdornment.ImageConfiguration](./systemimage%28_,tint,size,alignmentanchor%29-24032.md)
   Creates an image configuration using a system image.
-- [static func systemImage(String, tint: NSColor, size: CGSize?, alignmentAnchor: CGPoint) -> MarkupAdornment.ImageConfiguration](markupadornment/imageconfiguration-swift.struct/systemimage(_:tint:size:alignmentanchor:)-4itb9.md)
+- [static func systemImage(String, tint: NSColor, size: CGSize?, alignmentAnchor: CGPoint) -> MarkupAdornment.ImageConfiguration](./systemimage%28_,tint,size,alignmentanchor%29-4itb9.md)
   Creates an image configuration using a system image.
-- [static func image(NSImage, alignmentAnchor: CGPoint) -> MarkupAdornment.ImageConfiguration](markupadornment/imageconfiguration-swift.struct/image(_:alignmentanchor:)-6nbjc.md)
+- [static func image(NSImage, alignmentAnchor: CGPoint) -> MarkupAdornment.ImageConfiguration](./image%28_,alignmentanchor%29-6nbjc.md)
   Creates an image configuration using a custom image.
 
 

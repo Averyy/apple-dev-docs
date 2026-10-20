@@ -1,7 +1,8 @@
 # registerCustomURLScheme(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers a custom URL scheme that can be used in match patterns.
 
@@ -16,6 +17,10 @@ Registers a custom URL scheme that can be used in match patterns.
 
 ```swift
 class func registerCustomURLScheme(_ urlScheme: String)
+```
+
+```objc
++ (void) registerCustomURLScheme:(NSString *) urlScheme;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # PhysicsSimulationComponent.SolverIterations
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The parameters that control the accuracy of solving physics simulations.
 
@@ -22,18 +23,18 @@ struct SolverIterations
 ## Topics
 
 ### Initializers
-- [init(positionIterations: Int, velocityIterations: Int)](physicssimulationcomponent/solveriterations-swift.struct/init(positioniterations:velocityiterations:).md)
+- [init(positionIterations: Int, velocityIterations: Int)](./solveriterations-swift.struct/init%28positioniterations,velocityiterations%29.md)
   Creates a solver iterations configuration.
 ### Instance Properties
-- [var positionIterations: Int](physicssimulationcomponent/solveriterations-swift.struct/positioniterations.md)
+- [var positionIterations: Int](./solveriterations-swift.struct/positioniterations.md)
   The number of position iterations the solver performs.
-- [var velocityIterations: Int](physicssimulationcomponent/solveriterations-swift.struct/velocityiterations.md)
+- [var velocityIterations: Int](./solveriterations-swift.struct/velocityiterations.md)
   The number of velocity iterations the solver performs.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

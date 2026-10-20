@@ -1,7 +1,8 @@
 # collisionResolution
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collision resolution allows to specify how the object should interaction with the collision targets during the pickup phase.
 
@@ -16,9 +17,10 @@ var collisionResolution: TabletopInteraction.DirectPickupBehavior.CollisionResol
 
 ## See Also
 
-- [var deadZone: TabletopInteraction.DeadZone](tabletopinteraction/directpickupbehavior/deadzone.md)
+### Getting the behavior properties
+- [var deadZone: TabletopInteraction.DeadZone](./deadzone.md)
   The dead zone allows to specify how much the input device should move from its initial pose to start moving the object.
-- [static let `default`: TabletopInteraction.DirectPickupBehavior](tabletopinteraction/directpickupbehavior/default.md)
+- [static let `default`: TabletopInteraction.DirectPickupBehavior](./default.md)
   The default behavior
 
 

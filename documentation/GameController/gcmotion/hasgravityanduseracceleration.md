@@ -1,7 +1,8 @@
 # hasGravityAndUserAcceleration
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the controller provides gravity and user acceleration data.
 
@@ -19,21 +20,27 @@ A Boolean value that indicates whether the controller provides gravity and user 
 var hasGravityAndUserAcceleration: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasGravityAndUserAcceleration;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the controller provides both gravity and user acceleration data; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the controller provides both gravity and user acceleration data; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var gravity: GCAcceleration](gcmotion/gravity.md)
+### Related Documentation
+- [var gravity: GCAcceleration](./gravity.md)
   The gravity acceleration vector from the controller’s reference frame.
-- [var userAcceleration: GCAcceleration](gcmotion/useracceleration.md)
+- [var userAcceleration: GCAcceleration](./useracceleration.md)
   The acceleration that the user applies to the controller.
-- [var hasAttitude: Bool](gcmotion/hasattitude.md)
+### Verifying Capabilities
+- [var hasAttitude: Bool](./hasattitude.md)
   A Boolean value that indicates whether the controller provides attitude data.
-- [var hasRotationRate: Bool](gcmotion/hasrotationrate.md)
+- [var hasRotationRate: Bool](./hasrotationrate.md)
   A Boolean value that indicates whether the controller provides rotation data.
-- [var hasAttitudeAndRotationRate: Bool](gcmotion/hasattitudeandrotationrate.md)
+- [var hasAttitudeAndRotationRate: Bool](./hasattitudeandrotationrate.md)
   A Boolean value that indicates whether the controller provides attitude and rotation data.
 
 

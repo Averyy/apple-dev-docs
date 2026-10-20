@@ -1,6 +1,7 @@
 # Responding to App Store Server Notifications
 
-**Framework**: App Store Server Notifications
+**Framework**: App Store Server Notifications  
+**Role**: Article
 
 Send HTTP status codes to indicate the success of a notification post.
 
@@ -20,19 +21,20 @@ If the App Store server doesn’t receive a success response from your server af
 
 > **Note**:  Retry notifications are available only in the production environment. In the sandbox environment, the App Store server attempts to send the notification one time.
 
-##### Recover From Server Outages
+##### Recover from server outages
 
-If your server misses notifications due to an outage, you can always get up-to-date transaction information by calling [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi) endpoints including [`Get Transaction History`](https://developer.apple.com/documentation/appstoreserverapi/get-transaction-history) and [`Get All Subscription Statuses`](https://developer.apple.com/documentation/appstoreserverapi/get-all-subscription-statuses).
+If your server misses notifications due to an outage, you can always get up-to-date transaction information by calling [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md) endpoints including [`Get Transaction History`](../AppStoreServerAPI/get-transaction-history.md) and [`Get All Subscription Statuses`](../AppStoreServerAPI/get-all-subscription-statuses.md).
 
-If you use version 2 notifications ([`App Store Server Notifications V2`](app-store-server-notifications-v2.md)), you can recover missed notifications by calling [`Get Notification History`](https://developer.apple.com/documentation/appstoreserverapi/get-notification-history). You can also test whether your server is receiving and responding to version 2 notifications correctly by calling the [`Request a Test Notification`](https://developer.apple.com/documentation/appstoreserverapi/request-a-test-notification) endpoint.
+If you use version 2 notifications ([`App Store Server Notifications V2`](./app-store-server-notifications-v2.md)), you can recover missed notifications by calling [`Get Notification History`](../AppStoreServerAPI/get-notification-history.md). You can also test whether your server is receiving and responding to version 2 notifications correctly by calling the [`Request a Test Notification`](../AppStoreServerAPI/request-a-test-notification.md) endpoint.
 
 ## See Also
 
-- [Enabling App Store Server Notifications](enabling-app-store-server-notifications.md)
+### Essentials
+- [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md)
   Configure your server and provide an HTTPS URL to receive notifications about in-app purchase events and unreported external purchase tokens.
-- [Receiving App Store Server Notifications](receiving-app-store-server-notifications.md)
+- [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md)
   Implement server-side code to receive and parse notification posts.
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+- [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
   Learn about changes to the App Store Server Notifications service.
 
 

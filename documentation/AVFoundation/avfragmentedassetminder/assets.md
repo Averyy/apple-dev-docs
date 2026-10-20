@@ -1,7 +1,8 @@
 # assets
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minded array of fragmented assets.
 
@@ -18,6 +19,10 @@ The minded array of fragmented assets.
 
 ```swift
 var assets: [any AVAsset & AVFragmentMinding] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<AVAsset<AVFragmentMinding> *> * assets;
 ```
 
 

@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_ITU_2_0
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An ITU 2-channel audio layout.
 
@@ -20,6 +21,10 @@ An ITU 2-channel audio layout.
 var kAudioChannelLayoutTag_ITU_2_0: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_ITU_2_0
+```
+
 #### Discussion
 
 Your channels must be laid out in the following order:
@@ -29,21 +34,22 @@ Your channels must be laid out in the following order:
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_ITU_1_0: AudioChannelLayoutTag](kaudiochannellayouttag_itu_1_0.md)
+### ITU Defined Layouts
+- [var kAudioChannelLayoutTag_ITU_1_0: AudioChannelLayoutTag](./kaudiochannellayouttag_itu_1_0.md)
   An ITU 1-channel audio layout.
-- [var kAudioChannelLayoutTag_ITU_2_1: AudioChannelLayoutTag](kaudiochannellayouttag_itu_2_1.md)
+- [var kAudioChannelLayoutTag_ITU_2_1: AudioChannelLayoutTag](./kaudiochannellayouttag_itu_2_1.md)
   An ITU 2.1-channel audio layout.
-- [var kAudioChannelLayoutTag_ITU_2_2: AudioChannelLayoutTag](kaudiochannellayouttag_itu_2_2.md)
+- [var kAudioChannelLayoutTag_ITU_2_2: AudioChannelLayoutTag](./kaudiochannellayouttag_itu_2_2.md)
   An ITU 2.2-channel audio layout.
-- [var kAudioChannelLayoutTag_ITU_3_0: AudioChannelLayoutTag](kaudiochannellayouttag_itu_3_0.md)
+- [var kAudioChannelLayoutTag_ITU_3_0: AudioChannelLayoutTag](./kaudiochannellayouttag_itu_3_0.md)
   An ITU 3-channel audio layout.
-- [var kAudioChannelLayoutTag_ITU_3_1: AudioChannelLayoutTag](kaudiochannellayouttag_itu_3_1.md)
+- [var kAudioChannelLayoutTag_ITU_3_1: AudioChannelLayoutTag](./kaudiochannellayouttag_itu_3_1.md)
   An ITU 3.1-channel audio layout.
-- [var kAudioChannelLayoutTag_ITU_3_2: AudioChannelLayoutTag](kaudiochannellayouttag_itu_3_2.md)
+- [var kAudioChannelLayoutTag_ITU_3_2: AudioChannelLayoutTag](./kaudiochannellayouttag_itu_3_2.md)
   An ITU 3.2-channel audio layout.
-- [var kAudioChannelLayoutTag_ITU_3_2_1: AudioChannelLayoutTag](kaudiochannellayouttag_itu_3_2_1.md)
+- [var kAudioChannelLayoutTag_ITU_3_2_1: AudioChannelLayoutTag](./kaudiochannellayouttag_itu_3_2_1.md)
   An ITU 3.2.1-channel audio layout.
-- [var kAudioChannelLayoutTag_ITU_3_4_1: AudioChannelLayoutTag](kaudiochannellayouttag_itu_3_4_1.md)
+- [var kAudioChannelLayoutTag_ITU_3_4_1: AudioChannelLayoutTag](./kaudiochannellayouttag_itu_3_4_1.md)
   An ITU 3.4.1-channel audio layout.
 
 

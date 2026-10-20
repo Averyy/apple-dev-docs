@@ -1,7 +1,8 @@
 # UpcomingPassInformationEntry.DateInformation
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about the start and end time of the upcoming pass information entry.
 
@@ -12,7 +13,7 @@ Information about the start and end time of the upcoming pass information entry.
 
 ## Declaration
 
-```swift
+```
 object UpcomingPassInformationEntry.DateInformation
 ```
 
@@ -27,13 +28,14 @@ object UpcomingPassInformationEntry.DateInformation
 
 ## See Also
 
-- [object UpcomingPassInformationEntry.AdditionalInfoFields](upcomingpassinformationentry/additionalinfofields-data.dictionary.md)
+### Adding information to multievent passes
+- [object UpcomingPassInformationEntry.AdditionalInfoFields](./additionalinfofields-data.dictionary.md)
   The fields of information that display in the Additional Info section below a pass.
-- [object UpcomingPassInformationEntry.BackFields](upcomingpassinformationentry/backfields-data.dictionary.md)
+- [object UpcomingPassInformationEntry.BackFields](./backfields-data.dictionary.md)
   The fields of information displayed in the details view  of the upcoming pass information entry.
-- [object UpcomingPassInformationEntry.Images](upcomingpassinformationentry/images-data.dictionary.md)
+- [object UpcomingPassInformationEntry.Images](./images-data.dictionary.md)
   A collection of image names used to populate images in the details view.
-- [object UpcomingPassInformationEntry.URLs](upcomingpassinformationentry/urls-data.dictionary.md)
+- [object UpcomingPassInformationEntry.URLs](./urls-data.dictionary.md)
   An object with links to information about the upcoming pass information entry.
 
 

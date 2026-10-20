@@ -1,7 +1,8 @@
 # GetClassID
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the class identifier of the object.
 
@@ -10,7 +11,7 @@ Gets the class identifier of the object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOUserVideoClassID GetClassID();
 ```
 
@@ -24,9 +25,10 @@ This method overrides the base class’s implementation.
 
 ## See Also
 
-- [GetBaseClassID](iouservideostream/getbaseclassid.md)
+### Getting information about the class
+- [GetBaseClassID](./getbaseclassid.md)
   Gets the class identifier of the base class object.
-- [IOUserVideoClassID](videodriverkit/iouservideoclassid.md)
+- [IOUserVideoClassID](../videodriverkit-page/iouservideoclassid.md)
   Video class identifiers of an video object.
 
 

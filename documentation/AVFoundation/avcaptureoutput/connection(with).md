@@ -1,7 +1,8 @@
 # connection(with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first connection with an input port of a specified media type.
 
@@ -19,19 +20,24 @@ Returns the first connection with an input port of a specified media type.
 func connection(with mediaType: AVMediaType) -> AVCaptureConnection?
 ```
 
+```objc
+- (AVCaptureConnection *) connectionWithMediaType:(AVMediaType) mediaType;
+```
+
 #### Return Value
 
 The first capture connection that has the specified media type, or `nil` if no connection for the media type exists.
 
 ## Parameters
 
-- `mediaType`: A media type such as [`video`](avmediatype/video.md) or [`audio`](avmediatype/audio.md).
+- `mediaType`: A media type such as [`video`](../avmediatype/video.md) or [`audio`](../avmediatype/audio.md).
 
 ## See Also
 
-- [var connections: [AVCaptureConnection]](avcaptureoutput/connections.md)
+### Accessing connections
+- [var connections: [AVCaptureConnection]](./connections.md)
   The capture output object’s connections.
-- [AVCaptureOutput.DataDroppedReason](avcaptureoutput/datadroppedreason.md)
+- [AVCaptureOutput.DataDroppedReason](./datadroppedreason.md)
   Constants that define reasons for why the system dropped a frame.
 
 

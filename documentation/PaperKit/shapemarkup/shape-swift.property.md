@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the shape.
 
@@ -26,9 +27,10 @@ Use `shapeScaled` for a shape type with scaled values relative to the shape’s 
 
 ## See Also
 
-- [var shapeScaled: ShapeMarkup.Shape](shapemarkup/shapescaled.md)
+### Choosing a shape type
+- [var shapeScaled: ShapeMarkup.Shape](./shapescaled.md)
   The type of the shape with values scaled to the current frame.
-- [ShapeMarkup.Shape](shapemarkup/shape-swift.enum.md)
+- [ShapeMarkup.Shape](./shape-swift.enum.md)
 
 
 ---

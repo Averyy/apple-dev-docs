@@ -1,14 +1,15 @@
 # NDR_record
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 NDR_record_t NDR_record;
 ```
 

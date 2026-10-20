@@ -1,7 +1,8 @@
 # VisionError.unsupportedRevision(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates an app specifies a request revision the framework doesn’t support.
 
@@ -22,11 +23,12 @@ case unsupportedRevision(String)
 
 ## See Also
 
-- [VisionError.unsupportedComputeDevice(_:)](visionerror/unsupportedcomputedevice(_:).md)
+### Getting the unsupported error
+- [VisionError.unsupportedComputeDevice(_:)](./unsupportedcomputedevice%28_%29.md)
   An error that indicates an app requests a compute device the framework doesn’t support.
-- [VisionError.unsupportedComputeStage(_:)](visionerror/unsupportedcomputestage(_:).md)
+- [VisionError.unsupportedComputeStage(_:)](./unsupportedcomputestage%28_%29.md)
   An error that indicates an app requests a compute stage the framework doesn’t support.
-- [VisionError.unsupportedRequest(_:)](visionerror/unsupportedrequest(_:).md)
+- [VisionError.unsupportedRequest(_:)](./unsupportedrequest%28_%29.md)
   An error that indicates an app attempts a request the framework doesn’t support.
 
 

@@ -1,7 +1,8 @@
 # ATSNotificationCallback
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias ATSNotificationCallback = (ATSFontNotificationInfoRef?, UnsafeMutableRawPointer?) -> Void
+```
+
+```c
+typedef void (*ATSNotificationCallback)(ATSFontNotificationInfoRef info, void *refCon);
 ```
 
 

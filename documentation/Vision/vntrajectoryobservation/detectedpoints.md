@@ -1,7 +1,8 @@
 # detectedPoints
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The centroid points of the detected contour along the trajectory.
 
@@ -19,17 +20,22 @@ The centroid points of the detected contour along the trajectory.
 var detectedPoints: [VNPoint] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<VNPoint *> * detectedPoints;
+```
+
 #### Discussion
 
 The detected points may differ slightly from the ideal trajectory because they fall within the allowed tolerance. The system limits the maximum number of points based on the maximum trajectory length set in the request.
 
 ## See Also
 
-- [var projectedPoints: [VNPoint]](vntrajectoryobservation/projectedpoints.md)
+### Evaluating an Observation
+- [var projectedPoints: [VNPoint]](./projectedpoints.md)
   The centroids of the calculated trajectory from the detected points.
-- [var equationCoefficients: simd_float3](vntrajectoryobservation/equationcoefficients.md)
+- [var equationCoefficients: simd_float3](./equationcoefficients.md)
   The coefficients of the parabolic equation.
-- [var movingAverageRadius: CGFloat](vntrajectoryobservation/movingaverageradius.md)
+- [var movingAverageRadius: CGFloat](./movingaverageradius.md)
   The moving average radius of the object the request is tracking.
 
 

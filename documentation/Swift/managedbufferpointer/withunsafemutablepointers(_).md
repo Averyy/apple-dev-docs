@@ -1,7 +1,8 @@
 # withUnsafeMutablePointers(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Call `body` with `UnsafeMutablePointer`s to the stored `Header` and raw `Element` storage.
 
@@ -26,9 +27,10 @@ func withUnsafeMutablePointers<E, R>(_ body: (UnsafeMutablePointer<Header>, Unsa
 
 ## See Also
 
-- [func withUnsafeMutablePointerToElements<E, R>((UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](managedbufferpointer/withunsafemutablepointertoelements(_:).md)
+### Accessing Buffer Contents
+- [func withUnsafeMutablePointerToElements<E, R>((UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](./withunsafemutablepointertoelements%28_%29.md)
   Call `body` with an `UnsafeMutablePointer` to the `Element` storage.
-- [func withUnsafeMutablePointerToHeader<E, R>((UnsafeMutablePointer<Header>) throws(E) -> R) throws(E) -> R](managedbufferpointer/withunsafemutablepointertoheader(_:).md)
+- [func withUnsafeMutablePointerToHeader<E, R>((UnsafeMutablePointer<Header>) throws(E) -> R) throws(E) -> R](./withunsafemutablepointertoheader%28_%29.md)
   Call `body` with an `UnsafeMutablePointer` to the stored `Header`.
 
 

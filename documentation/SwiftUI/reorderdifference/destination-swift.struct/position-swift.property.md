@@ -1,7 +1,8 @@
 # position
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier position in the collection where the sources should be moved to.
 
@@ -22,9 +23,10 @@ var position: ReorderDifference<ItemID, CollectionID>.Destination.Position
 
 ## See Also
 
-- [var collectionID: CollectionID](reorderdifference/destination-swift.struct/collectionid.md)
+### Getting destination details
+- [var collectionID: CollectionID](./collectionid.md)
   The collection that contains the destination’s position.
-- [ReorderDifference.Destination.Position](reorderdifference/destination-swift.struct/position-swift.enum.md)
+- [ReorderDifference.Destination.Position](./position-swift.enum.md)
   The position within the destination collection.
 
 

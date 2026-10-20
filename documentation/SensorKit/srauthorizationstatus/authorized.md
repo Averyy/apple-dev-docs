@@ -1,7 +1,8 @@
 # SRAuthorizationStatus.authorized
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 User has granted authorization to this application
 
@@ -14,6 +15,10 @@ User has granted authorization to this application
 
 ```swift
 case authorized
+```
+
+```c
+SRAuthorizationStatusAuthorized
 ```
 
 

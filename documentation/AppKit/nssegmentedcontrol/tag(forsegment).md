@@ -1,7 +1,8 @@
 # tag(forSegment:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+
@@ -12,11 +13,16 @@
 func tag(forSegment segment: Int) -> Int
 ```
 
+```objc
+- (NSInteger) tagForSegment:(NSInteger) segment;
+```
+
 ## See Also
 
-- [func setTag(Int, forSegment: Int)](nssegmentedcontrol/settag(_:forsegment:).md)
-- [func setToolTip(String?, forSegment: Int)](nssegmentedcontrol/settooltip(_:forsegment:).md)
-- [func toolTip(forSegment: Int) -> String?](nssegmentedcontrol/tooltip(forsegment:).md)
+### Managing tags and tooltips
+- [func setTag(Int, forSegment: Int)](./settag%28_,forsegment%29.md)
+- [func setToolTip(String?, forSegment: Int)](./settooltip%28_,forsegment%29.md)
+- [func toolTip(forSegment: Int) -> String?](./tooltip%28forsegment%29.md)
 
 
 ---

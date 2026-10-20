@@ -1,7 +1,8 @@
 # init(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

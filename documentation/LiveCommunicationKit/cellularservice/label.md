@@ -1,7 +1,8 @@
 # label
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label for the service that people view in a communication app.
 
@@ -18,7 +19,8 @@ let label: String
 
 ## See Also
 
-- [let id: UUID](cellularservice/id.md)
+### Attributes
+- [let id: UUID](./id.md)
   A unique identifier that identifies the cellular service.
 
 

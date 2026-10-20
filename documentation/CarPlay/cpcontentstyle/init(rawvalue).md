@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a content style from a raw value.
 

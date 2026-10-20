@@ -8,7 +8,7 @@ Contains a new list item.
 
 The `listItemLockup` subelements are arranged using the `tv-align` and `tv-position` styles. Containing elements are centered by default.
 
-![Layout diagram showing the positions other elements can be placed in.](/images/com.apple.TVML/listitemlockup-1@2x.png)
+![Layout diagram showing the positions other elements can be placed in.](https://developer.apple.com/tutorials/images/com.apple.TVML/listitemlockup-1@2x.png)
 
 Elements contained in the same position are arranged from the top of the cell to the bottom, in the same order in which they are specified in the `listItemLockup` element. You can specify a `<background><img /></background>` that displays a background image inside of the `listItemLockup`. The background image is top-aligned and is fitted to the size of the `listItemLockup` while keeping the image’s original aspect ratio. Text wrapping inside of the `listItemLockup` only occurs in the `header`, `center`, and `footer` positions. Here is an example of a two `listItemLockup` elements inside a `section` element.
 
@@ -27,55 +27,56 @@ Elements contained in the same position are arranged from the top of the cell to
 </section>
 ```
 
-##### Subelements of Listitemlockup
+##### Subelements of listItemLockup
 
-- [`decorationImage`](decorationimage.md)
-- [`decorationLabel`](decorationlabel.md)
-- [`img`](img.md)
-- [`ordinal`](ordinal.md)
-- [`organizer`](organizer.md)
-- [`placeholder`](placeholder.md)
-- [`relatedContent`](relatedcontent.md)
-- [`row`](row.md)
-- [`subtitle`](subtitle.md)
-- [`title`](title.md)
+- [decorationImage](./decorationimage.md)
+- [decorationLabel](./decorationlabel.md)
+- [img](./img.md)
+- [ordinal](./ordinal.md)
+- [organizer](./organizer.md)
+- [placeholder](./placeholder.md)
+- [relatedContent](./relatedcontent.md)
+- [row](./row.md)
+- [subtitle](./subtitle.md)
+- [title](./title.md)
 
-##### Elements That Use Listitemlockup
+##### Elements that Use listItemLockup
 
-- [`section`](section.md)
+- [section](./section.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [height](element-shaping-height.md)
+- [height](./element-shaping-height.md)
   Specifies the height of an element.
-- [tv-align](tv-align.md)
+- [tv-align](./tv-align.md)
   Aligns an element horizontally inside its parent.
-- [tv-highlight-color](tv-highlight-color.md)
+- [tv-highlight-color](./tv-highlight-color.md)
   Changes an element’s color when it comes into focus.
-- [tv-position](tv-position.md)
+- [tv-position](./tv-position.md)
   Sets the position of an element inside of its parent element.
 ### Valid TVML Attributes
-- [autoHighlight](autohighlight.md)
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [button](button.md)
+### Lockup Elements
+- [button](./button.md)
   Displays a button icon the user can click to initiate an action.
-- [buttonLockup](buttonlockup.md)
+- [buttonLockup](./buttonlockup.md)
   Creates a button that can also have a badge associated with it.
-- [lockup](lockup.md)
+- [lockup](./lockup.md)
   Contains several elements that are treated as a single element.
-- [monogramLockup](monogramlockup.md)
+- [monogramLockup](./monogramlockup.md)
   Creates a monogram using a person’s image or initials.
-- [overlay](overlay.md)
+- [overlay](./overlay.md)
   Displays elements on top of other elements.
 
 

@@ -1,7 +1,8 @@
 # layoutManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout manager that lays out text for the text view’s text container.
 
@@ -9,7 +10,7 @@ The layout manager that lays out text for the text view’s text container.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The layout manager that lays out text for the text view’s text container.
 var layoutManager: NSLayoutManager { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSLayoutManager * layoutManager;
+```
+
 #### Discussion
 
 This property is a convenience accessor that provides access through the text container.
 
 ## See Also
 
-- [var textLayoutManager: NSTextLayoutManager?](uitextview/textlayoutmanager.md)
+### Accessing TextKit Objects
+- [var textLayoutManager: NSTextLayoutManager?](./textlayoutmanager.md)
   The text layout manager that lays out text for the text view’s text container.
-- [var textContainer: NSTextContainer](uitextview/textcontainer.md)
+- [var textContainer: NSTextContainer](./textcontainer.md)
   The text container object that defines the area where text displays in the text view.
-- [var textStorage: NSTextStorage](uitextview/textstorage.md)
+- [var textStorage: NSTextStorage](./textstorage.md)
   The text storage object holding the text that displays in the text view.
 
 

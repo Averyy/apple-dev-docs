@@ -1,7 +1,8 @@
 # NWConnection.State
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 States indicating whether a connection can be used to send and receive data.
 
@@ -23,31 +24,32 @@ enum State
 ## Topics
 
 ### States
-- [NWConnection.State.setup](nwconnection/state-swift.enum/setup.md)
+- [NWConnection.State.setup](./state-swift.enum/setup.md)
   The connection has been initialized but not started.
-- [NWConnection.State.waiting(_:)](nwconnection/state-swift.enum/waiting(_:).md)
+- [NWConnection.State.waiting(_:)](./state-swift.enum/waiting%28_%29.md)
   The connection is waiting for a network path change.
-- [NWConnection.State.preparing](nwconnection/state-swift.enum/preparing.md)
+- [NWConnection.State.preparing](./state-swift.enum/preparing.md)
   The connection in the process of being established.
-- [NWConnection.State.ready](nwconnection/state-swift.enum/ready.md)
+- [NWConnection.State.ready](./state-swift.enum/ready.md)
   The connection is established, and ready to send and receive data.
-- [NWConnection.State.failed(_:)](nwconnection/state-swift.enum/failed(_:).md)
+- [NWConnection.State.failed(_:)](./state-swift.enum/failed%28_%29.md)
   The connection has disconnected or encountered an error.
-- [NWConnection.State.cancelled](nwconnection/state-swift.enum/cancelled.md)
+- [NWConnection.State.cancelled](./state-swift.enum/cancelled.md)
   The connection has been canceled.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: NWConnection.State](nwconnection/state-swift.property.md)
+### Handling State Updates
+- [var state: NWConnection.State](./state-swift.property.md)
   The current state of the connection.
-- [var stateUpdateHandler: ((NWConnection.State) -> Void)?](nwconnection/stateupdatehandler.md)
+- [var stateUpdateHandler: ((NWConnection.State) -> Void)?](./stateupdatehandler.md)
   A handler that receives connection state updates.
 
 

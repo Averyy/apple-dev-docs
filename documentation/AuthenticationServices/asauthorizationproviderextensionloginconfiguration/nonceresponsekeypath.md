@@ -1,7 +1,8 @@
 # nonceResponseKeypath
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keypath in the response that contains the one-time use value.
 
@@ -14,19 +15,24 @@ The keypath in the response that contains the one-time use value.
 var nonceResponseKeypath: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * nonceResponseKeypath;
+```
+
 ## Mentions
 
-- [Obtaining a server nonce](obtaining-a-server-nonce.md)
+- [Obtaining a server nonce](../obtaining-a-server-nonce.md)
 
 #### Discussion
 
 ## See Also
 
-- [var customNonceRequestValues: [URLQueryItem]](asauthorizationproviderextensionloginconfiguration/customnoncerequestvalues.md)
+### Configuring the server nonce
+- [var customNonceRequestValues: [URLQueryItem]](./customnoncerequestvalues.md)
   Custom values to add to the server nonce POST request body.
-- [var nonceEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/nonceendpointurl.md)
+- [var nonceEndpointURL: URL](./nonceendpointurl.md)
   The URL to retrieve a one-time use value from the server.
-- [var serverNonceClaimName: String](asauthorizationproviderextensionloginconfiguration/servernonceclaimname.md)
+- [var serverNonceClaimName: String](./servernonceclaimname.md)
   The name of the claim to include in authentication requests.
 
 

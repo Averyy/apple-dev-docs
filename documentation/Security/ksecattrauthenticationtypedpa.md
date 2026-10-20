@@ -1,7 +1,8 @@
 # kSecAttrAuthenticationTypeDPA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Distributed Password authentication.
 
@@ -18,6 +19,10 @@ Distributed Password authentication.
 
 ```swift
 let kSecAttrAuthenticationTypeDPA: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAuthenticationTypeDPA;
 ```
 
 

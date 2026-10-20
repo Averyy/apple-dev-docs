@@ -1,7 +1,8 @@
 # QUIC.Stream
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -21,27 +22,27 @@ final class Stream<ApplicationProtocol> where ApplicationProtocol : NetworkProto
 ## Topics
 
 ### Instance Properties
-- [var directionality: QUICStream.Directionality](quic/stream/directionality.md)
+- [var directionality: QUICStream.Directionality](./stream/directionality.md)
   The directionality of this stream, either bidirectional or unidirectional.
-- [var initiator: QUICStream.Initiator](quic/stream/initiator.md)
+- [var initiator: QUICStream.Initiator](./stream/initiator.md)
   The initiator of this QUIC stream, either client or server.
-- [let parent: NetworkConnection<QUIC>](quic/stream/parent.md)
-- [var streamApplicationErrorCode: UInt64](quic/stream/streamapplicationerrorcode.md)
+- [let parent: NetworkConnection<QUIC>](./stream/parent.md)
+- [var streamApplicationErrorCode: UInt64](./stream/streamapplicationerrorcode.md)
   The QUIC application error code to send for the stream, or received from the peer.
-- [var streamID: UInt64](quic/stream/streamid.md)
+- [var streamID: UInt64](./stream/streamid.md)
   The QUIC stream identifier.
 
 ## Relationships
 
 ### Inherits From
-- [NetworkChannel](networkchannel.md)
+- [NetworkChannel](../networkchannel.md)
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

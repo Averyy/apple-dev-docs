@@ -1,7 +1,8 @@
 # preventsAutomaticBackgroundingDuringVideoPlayback
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether video playback prevents the system from automatically backgrounding the app.
 
@@ -15,13 +16,18 @@ nonisolated
 var preventsAutomaticBackgroundingDuringVideoPlayback: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL preventsAutomaticBackgroundingDuringVideoPlayback;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true), which indicates the system doesn’t automatically background an app while it’s actively playing video. A user may still choose to background an app.
+The default value is [`true`](../../Swift/true.md), which indicates the system doesn’t automatically background an app while it’s actively playing video. A user may still choose to background an app.
 
 ## See Also
 
-- [var preventsDisplaySleepDuringVideoPlayback: Bool](avplayer/preventsdisplaysleepduringvideoplayback.md)
+### Preventing sleep and backgrounding
+- [var preventsDisplaySleepDuringVideoPlayback: Bool](./preventsdisplaysleepduringvideoplayback.md)
   A Boolean value that indicates whether video playback prevents display and device sleep.
 
 

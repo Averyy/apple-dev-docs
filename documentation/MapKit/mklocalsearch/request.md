@@ -1,7 +1,8 @@
 # MKLocalSearch.Request
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The parameters to use when searching for points of interest on the map.
 
@@ -20,11 +21,15 @@ The parameters to use when searching for points of interest on the map.
 class Request
 ```
 
+```objc
+@interface MKLocalSearchRequest : NSObject
+```
+
 #### Overview
 
-You create an [`MKLocalSearch.Request`](mklocalsearch/request.md) object when you want to search for map locations based on a natural language string. For example, if your interface allows the user to type in addresses, place the typed text in this object and pass it to an [`MKLocalSearch`](mklocalsearch.md) object to begin the search process. When specifying your search strings, include a map region to narrow the search results to the specified geographical area.
+You create an [`MKLocalSearch.Request`](./request.md) object when you want to search for map locations based on a natural language string. For example, if your interface allows the user to type in addresses, place the typed text in this object and pass it to an [`MKLocalSearch`](../mklocalsearch.md) object to begin the search process. When specifying your search strings, include a map region to narrow the search results to the specified geographical area.
 
-When creating an MKLocalSearch.Request object yourself, set the [`naturalLanguageQuery`](mklocalsearch/request/naturallanguagequery.md) property to an appropriate search string, as in the following example:
+When creating an MKLocalSearch.Request object yourself, set the [`naturalLanguageQuery`](./request/naturallanguagequery.md) property to an appropriate search string, as in the following example:
 
 **Swift**:
 
@@ -72,58 +77,59 @@ MKLocalSearch *search = [[MKLocalSearch alloc] initWithRequest:searchRequest];
 }];
 ```
 
-If your app uses an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object to implement autocomplete support for user-supplied search strings, initialize your search request using the search completion that the user selects. In that case, use the [`init(completion:)`](mklocalsearch/request/init(completion:).md) method instead of the [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method to initialize your search request object. The completion object automatically provides the value for the [`naturalLanguageQuery`](mklocalsearch/request/naturallanguagequery.md) property.
+If your app uses an [`MKLocalSearchCompleter`](../mklocalsearchcompleter.md) object to implement autocomplete support for user-supplied search strings, initialize your search request using the search completion that the user selects. In that case, use the [`init(completion:)`](./request/init%28completion%29.md) method instead of the [`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) method to initialize your search request object. The completion object automatically provides the value for the [`naturalLanguageQuery`](./request/naturallanguagequery.md) property.
 
 ## Topics
 
 ### Creating a local search request
-- [init()](mklocalsearch/request/init.md)
+- [init()](./request/init%28%29.md)
   Creates a local search request.
-- [init(completion: MKLocalSearchCompletion)](mklocalsearch/request/init(completion:).md)
+- [init(completion: MKLocalSearchCompletion)](./request/init%28completion%29.md)
   Creates and returns a search request based on the specified search completion data.
 ### Initializing a natural language search request
-- [convenience init(naturalLanguageQuery: String)](mklocalsearch/request/init(naturallanguagequery:).md)
+- [convenience init(naturalLanguageQuery: String)](./request/init%28naturallanguagequery%29.md)
   Initializes and returns a local search request based on the provided string.
-- [convenience init(naturalLanguageQuery: String, region: MKCoordinateRegion)](mklocalsearch/request/init(naturallanguagequery:region:).md)
+- [convenience init(naturalLanguageQuery: String, region: MKCoordinateRegion)](./request/init%28naturallanguagequery,region%29.md)
   Initializes and returns a local search request based on the provided string and region.
 ### Configuring the search parameters
-- [var addressFilter: MKAddressFilter?](mklocalsearch/request/addressfilter.md)
+- [var addressFilter: MKAddressFilter?](./request/addressfilter.md)
   A filter that lists which address options to include or exclude in search results.
-- [var naturalLanguageQuery: String?](mklocalsearch/request/naturallanguagequery.md)
+- [var naturalLanguageQuery: String?](./request/naturallanguagequery.md)
   A string containing the desired search item.
-- [var region: MKCoordinateRegion](mklocalsearch/request/region.md)
+- [var region: MKCoordinateRegion](./request/region.md)
   A map region that provides a hint as to where to search.
-- [static var physicalFeature: MKLocalSearch.ResultType](mklocalsearch/resulttype/physicalfeature.md)
+- [static var physicalFeature: MKLocalSearch.ResultType](./resulttype/physicalfeature.md)
   A value that indicates that search results include physical features.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklocalsearch/request/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./request/pointofinterestfilter.md)
   A filter that lists point-of-interest categories to include or exclude in search results.
-- [var regionPriority: MKLocalSearchRegionPriority](mklocalsearch/request/regionpriority.md)
+- [var regionPriority: MKLocalSearchRegionPriority](./request/regionpriority.md)
   A value that indicates the importance of the configured region.
-- [var resultTypes: MKLocalSearch.ResultType](mklocalsearch/request/resulttypes.md)
+- [var resultTypes: MKLocalSearch.ResultType](./request/resulttypes.md)
   The types of items to include in the search results.
-- [MKLocalSearch.Request.ResultType](mklocalsearch/request/resulttype.md)
+- [MKLocalSearch.Request.ResultType](./request/resulttype.md)
   Options that indicate types of search results.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(request: MKLocalSearch.Request)](mklocalsearch/init(request:)-12tf0.md)
+### Creating a search request
+- [init(request: MKLocalSearch.Request)](./init%28request%29-12tf0.md)
   Creates and returns a search object with the specified parameters.
-- [init(request: MKLocalPointsOfInterestRequest)](mklocalsearch/init(request:)-9x8kn.md)
+- [init(request: MKLocalPointsOfInterestRequest)](./init%28request%29-9x8kn.md)
   Creates and returns a search object for fetching points of interest.
-- [MKLocalSearch.ResultType](mklocalsearch/resulttype.md)
+- [MKLocalSearch.ResultType](./resulttype.md)
   Options that indicate types of search results.
 
 

@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default mass properties, equivalent to a unit sphere with a mass of 1 kilogram.
 
@@ -11,7 +12,7 @@ The default mass properties, equivalent to a unit sphere with a mass of 1 kilogr
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

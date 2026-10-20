@@ -1,12 +1,15 @@
 # male
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A male voice
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVSpeechSynthesizer in AVFoundation instead
 
 ## Declaration
 
@@ -14,11 +17,16 @@ A male voice
 static let male: NSSpeechSynthesizer.VoiceGender
 ```
 
+```c
+extern NSVoiceGenderName const NSVoiceGenderMale;
+```
+
 ## See Also
 
-- [static let neuter: NSSpeechSynthesizer.VoiceGender](nsspeechsynthesizer/voicegender/neuter.md)
+### Gender Values
+- [static let neuter: NSSpeechSynthesizer.VoiceGender](./neuter.md)
   A neutral voice (or a novelty voice with a humorous or whimsical quality).
-- [static let female: NSSpeechSynthesizer.VoiceGender](nsspeechsynthesizer/voicegender/female.md)
+- [static let female: NSSpeechSynthesizer.VoiceGender](./female.md)
   A female voice
 
 

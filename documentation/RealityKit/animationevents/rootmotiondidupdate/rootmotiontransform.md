@@ -1,7 +1,8 @@
 # rootMotionTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The change in position and orientation since the previous frame.
 
@@ -25,7 +26,8 @@ This value is the delta from the previous frame, not a cumulative transform.
 
 ## See Also
 
-- [var suppressesAutomaticApplication: Bool](animationevents/rootmotiondidupdate/suppressesautomaticapplication.md)
+### Accessing root motion
+- [var suppressesAutomaticApplication: Bool](./suppressesautomaticapplication.md)
   A Boolean value that controls whether subscribing to the event suppresses automatic application of the root motion delta.
 
 

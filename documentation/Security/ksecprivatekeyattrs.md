@@ -1,7 +1,8 @@
 # kSecPrivateKeyAttrs
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a dictionary of cryptographic key attributes specific to a private key.
 
@@ -20,13 +21,17 @@ A key whose value is a dictionary of cryptographic key attributes specific to a 
 let kSecPrivateKeyAttrs: CFString
 ```
 
+```c
+extern CFStringRef const kSecPrivateKeyAttrs;
+```
+
 ## Mentions
 
-- [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
 #### Discussion
 
-The corresponding value is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) containing key-value pairs for attributes specific to the private key to be generated.
+The corresponding value is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) containing key-value pairs for attributes specific to the private key to be generated.
 
 
 ---

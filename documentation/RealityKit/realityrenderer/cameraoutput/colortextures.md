@@ -1,7 +1,8 @@
 # colorTextures
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Textures to store color output.
 

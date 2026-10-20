@@ -1,7 +1,8 @@
 # sizeThatFits(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the subview for its size.
 
@@ -26,7 +27,7 @@ The size that the subview chooses for itself, given the proposal from its contai
 
 #### Discussion
 
-Use this method as a convenience to get the [`width`](viewdimensions/width.md) and [`height`](viewdimensions/height.md) properties of the [`ViewDimensions`](viewdimensions.md) instance returned by the [`dimensions(in:)`](layoutsubview/dimensions(in:).md) method, reported as a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) instance.
+Use this method as a convenience to get the [`width`](../viewdimensions/width.md) and [`height`](../viewdimensions/height.md) properties of the [`ViewDimensions`](../viewdimensions.md) instance returned by the [`dimensions(in:)`](./dimensions%28in%29.md) method, reported as a [`CGSize`](../../CoreFoundation/cgsize.md) instance.
 
 ## Parameters
 
@@ -34,11 +35,12 @@ Use this method as a convenience to get the [`width`](viewdimensions/width.md) a
 
 ## See Also
 
-- [func dimensions(in: ProposedViewSize) -> ViewDimensions](layoutsubview/dimensions(in:).md)
+### Getting subview characteristics
+- [func dimensions(in: ProposedViewSize) -> ViewDimensions](./dimensions%28in%29.md)
   Asks the subview for its dimensions and alignment guides.
-- [var spacing: ViewSpacing](layoutsubview/spacing.md)
+- [var spacing: ViewSpacing](./spacing.md)
   The subviews’s preferred spacing values.
-- [var priority: Double](layoutsubview/priority.md)
+- [var priority: Double](./priority.md)
   The layout priority of the subview.
 
 

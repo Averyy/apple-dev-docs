@@ -1,7 +1,8 @@
 # AppClipAppStoreReviewDetailCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the new App Clip App Store Review Details resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the new App Clip App Store Review Details r
 
 ## Declaration
 
-```swift
+```
 object AppClipAppStoreReviewDetailCreateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object AppClipAppStoreReviewDetailCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships](appclipappstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

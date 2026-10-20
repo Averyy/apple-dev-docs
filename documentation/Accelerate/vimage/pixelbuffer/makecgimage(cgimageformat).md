@@ -1,7 +1,8 @@
 # makeCGImage(cgImageFormat:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Core Graphics image from the pixel buffer’s contents.
 
@@ -11,7 +12,7 @@ Returns a Core Graphics image from the pixel buffer’s contents.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,11 +21,13 @@ Returns a Core Graphics image from the pixel buffer’s contents.
 func makeCGImage(cgImageFormat: vImage_CGImageFormat) -> CGImage?
 ```
 
+Available when `Format` conforms to `StaticPixelFormat`.
+
 ## Mentions
 
-- [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
-- [Applying flood fills to an image](applying-flood-fills-to-an-image.md)
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
+- [Converting bitmap data between Core Graphics images and vImage buffers](../../converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
+- [Applying flood fills to an image](../../applying-flood-fills-to-an-image.md)
+- [Optimizing image-processing performance](../../optimizing-image-processing-performance.md)
 
 #### Return Value
 
@@ -36,11 +39,12 @@ A Core Graphics image that contains the source buffer’s contents.
 
 ## See Also
 
-- [func copy(to: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/copy(to:).md)
+### Pixel buffer methods
+- [func copy(to: vImage.PixelBuffer<Format>)](./copy%28to%29.md)
   Copies the contents of the pixel buffer to another pixel buffer.
-- [func copy(to: CVPixelBuffer, cvImageFormat: vImageCVImageFormat, cgImageFormat: vImage_CGImageFormat) throws](vimage/pixelbuffer/copy(to:cvimageformat:cgimageformat:).md)
+- [func copy(to: CVPixelBuffer, cvImageFormat: vImageCVImageFormat, cgImageFormat: vImage_CGImageFormat) throws](./copy%28to,cvimageformat,cgimageformat%29.md)
   Copies the contents of a pixel buffer to a Core Video pixel buffer.
-- [func withCVPixelBuffer(readOnly: Bool, body: (CVPixelBuffer) -> Void)](vimage/pixelbuffer/withcvpixelbuffer(readonly:body:).md)
+- [func withCVPixelBuffer(readOnly: Bool, body: (CVPixelBuffer) -> Void)](./withcvpixelbuffer%28readonly,body%29.md)
   Calls the given closure with a locked 32-bit BGRA Core Video Pixel Buffer.
 
 

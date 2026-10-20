@@ -1,7 +1,8 @@
 # Substring.UTF8View
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 8.0+
@@ -22,26 +23,26 @@ struct UTF8View
 ## Topics
 
 ### Instance Properties
-- [var span: Span<UTF8.CodeUnit>](substring/utf8view/span.md)
+- [var span: Span<UTF8.CodeUnit>](./utf8view/span.md)
   A span over the UTF-8 code units that make up this substring.
 ### Instance Methods
-- [func isTriviallyIdentical(to: Substring.UTF8View) -> Bool](substring/utf8view/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: Substring.UTF8View) -> Bool](./utf8view/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this UTF8 view is trivially identical to `other`.
 ### Default Implementations
-- [BidirectionalCollection Implementations](substring/utf8view/bidirectionalcollection-implementations.md)
-- [Collection Implementations](substring/utf8view/collection-implementations.md)
-- [Sequence Implementations](substring/utf8view/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./utf8view/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./utf8view/collection-implementations.md)
+- [Sequence Implementations](./utf8view/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

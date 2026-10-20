@@ -1,7 +1,8 @@
 # RingBufferFrameSize
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An indicator for a change to the ring buffer frame size.
 
@@ -10,15 +11,16 @@ An indicator for a change to the ring buffer frame size.
 
 ## Declaration
 
-```swift
+```c
 RingBufferFrameSize
 ```
 
 ## See Also
 
-- [SampleRate](audiodriverkit/iouseraudioreservedconfigchangeaction/samplerate.md)
+### Configuration Change Identifiers
+- [SampleRate](./samplerate.md)
   An indicator for a change to the sample rate.
-- [StreamFormat](audiodriverkit/iouseraudioreservedconfigchangeaction/streamformat.md)
+- [StreamFormat](./streamformat.md)
   An indicator for a change to the stream format.
 
 

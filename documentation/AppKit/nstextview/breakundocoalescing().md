@@ -1,17 +1,22 @@
 # breakUndoCoalescing()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the receiver that it should begin coalescing successive typing operations in a new undo grouping.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func breakUndoCoalescing()
+```
+
+```objc
+- (void) breakUndoCoalescing;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This method should be invoked when saving the receiver’s contents to preserve 
 
 ## See Also
 
-- [var isCoalescingUndo: Bool](nstextview/iscoalescingundo.md)
+### Supporting undo
+- [var isCoalescingUndo: Bool](./iscoalescingundo.md)
   A Boolean value that indicates whether undo coalescing is in progress.
 
 

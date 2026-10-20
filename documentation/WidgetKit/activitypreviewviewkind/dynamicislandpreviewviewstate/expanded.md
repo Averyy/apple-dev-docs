@@ -1,7 +1,8 @@
 # ActivityPreviewViewKind.DynamicIslandPreviewViewState.expanded
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The expanded presentation of a Live Activity in the Dynamic Island.
 
@@ -17,9 +18,10 @@ case expanded
 
 ## See Also
 
-- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.compact](activitypreviewviewkind/dynamicislandpreviewviewstate/compact.md)
-  The presentation of a Live Activity in the Dynamic Island that shows both the [`compactLeading`](dynamicislandmode/compactleading.md) and [`compactTrailing`](dynamicislandmode/compacttrailing.md) views combined.
-- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.minimal](activitypreviewviewkind/dynamicislandpreviewviewstate/minimal.md)
+### Dynamic Island presentations
+- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.compact](./compact.md)
+  The presentation of a Live Activity in the Dynamic Island that shows both the [`compactLeading`](../../dynamicislandmode/compactleading.md) and [`compactTrailing`](../../dynamicislandmode/compacttrailing.md) views combined.
+- [ActivityPreviewViewKind.DynamicIslandPreviewViewState.minimal](./minimal.md)
   The minimal presentation of a Live Activity in the Dynamic Island.
 
 

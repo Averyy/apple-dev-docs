@@ -1,7 +1,8 @@
 # Team
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Details of a developer team.
 
@@ -10,7 +11,7 @@ Details of a developer team.
 
 ## Declaration
 
-```swift
+```
 dictionary Team {
 	string teamId;
 	string teamName;
@@ -33,20 +34,21 @@ import type { Team } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [teamId](team/teamid.md)
+- [teamId](./team/teamid.md)
   Unique identifier of the developer team.
-- [teamName](team/teamname.md)
+- [teamName](./team/teamname.md)
   Name of the developer team.
-- [teamType](team/teamtype.md)
+- [teamType](./team/teamtype.md)
   Type of the developer team.
 
 ## See Also
 
-- [getSessionUser](promisesapi/getsessionuser.md)
+### User and Team
+- [getSessionUser](./promisesapi/getsessionuser.md)
   Returns details for the user in current session.
-- [getTeams](promisesapi/getteams.md)
+- [getTeams](./promisesapi/getteams.md)
   Fetches a list of teams the current user is in.
-- [TeamsResponse](teamsresponse.md)
+- [TeamsResponse](./teamsresponse.md)
   Response object for a list of teams.
 
 

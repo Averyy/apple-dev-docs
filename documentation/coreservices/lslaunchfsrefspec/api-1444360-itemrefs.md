@@ -1,7 +1,8 @@
 # itemRefs
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An array of file-system references designatingthe item or items to open. If the value of `numDocs` is `0`,this field is ignored and can be set to `NULL`.
 
@@ -12,6 +13,10 @@ An array of file-system references designatingthe item or items to open. If the 
 
 ```swift
 var itemRefs: UnsafePointer<FSRef>!
+```
+
+```c
+const FSRef *itemRefs;
 ```
 
 

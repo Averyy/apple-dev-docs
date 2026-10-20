@@ -1,13 +1,14 @@
 # module::setColor
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the color of an element to the specified RGBA value.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void module::setColor(half4 color)
 
 Use this function to change the visual appearance of an element by assigning a new color with alpha channel.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__setColor.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__setColor.svg)
 
 ## Parameters
 

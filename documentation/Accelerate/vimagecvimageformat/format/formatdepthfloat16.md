@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.formatDepthFloat16
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit depth pixel format that describes the distance to an object in meters.
 
@@ -11,7 +12,7 @@ A 16-bit depth pixel format that describes the distance to an object in meters.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case formatDepthFloat16
 
 ## See Also
 
-- [vImageCVImageFormat.Format.formatDepthFloat32](vimagecvimageformat/format/formatdepthfloat32.md)
+### Depth format constants
+- [vImageCVImageFormat.Format.formatDepthFloat32](./formatdepthfloat32.md)
   A 32-bit depth pixel format that describes the distance to an object in meters.
 
 

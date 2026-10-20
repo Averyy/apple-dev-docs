@@ -1,7 +1,8 @@
 # MPSUnaryImageKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A kernel that consumes one texture and produces one texture.
 
@@ -19,89 +20,94 @@ A kernel that consumes one texture and produces one texture.
 class MPSUnaryImageKernel
 ```
 
+```objc
+@interface MPSUnaryImageKernel : MPSKernel
+```
+
 ## Mentions
 
-- [The MPSKernel Class](the-mpskernel-class.md)
+- [The MPSKernel Class](./the-mpskernel-class.md)
 
 #### Overview
 
-[`MPSUnaryImageKernel`](mpsunaryimagekernel.md) defines shared behavior for most image processing kernels (filters) such as edging modes, clipping, and tiling support for image operations that consumes a single source textures. It is not meant to be used directly, but provides API abstraction and in some cases may allow some level of polymorphic manipulation of image kernel objects.
+[`MPSUnaryImageKernel`](./mpsunaryimagekernel.md) defines shared behavior for most image processing kernels (filters) such as edging modes, clipping, and tiling support for image operations that consumes a single source textures. It is not meant to be used directly, but provides API abstraction and in some cases may allow some level of polymorphic manipulation of image kernel objects.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsunaryimagekernel/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsunaryimagekernel/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsunaryimagekernel/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsunaryimagekernel/init%28device%29.md)
 ### Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, inPlaceTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inPlaceTexture: UnsafeMutablePointer<any MTLTexture>, fallbackCopyAllocator: MPSCopyAllocator?) -> Bool](./mpsunaryimagekernel/encode%28commandbuffer,inplacetexture,fallbackcopyallocator%29.md)
   This method attempts to apply a kernel in place on a texture.
-- [typealias MPSCopyAllocator](mpscopyallocator.md)
+- [typealias MPSCopyAllocator](./mpscopyallocator.md)
   A block to make a copy of a source texture for filters that can only execute out of place.
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationImage: MPSImage)](mpsunaryimagekernel/encode(commandbuffer:sourceimage:destinationimage:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: any MTLTexture)](mpsunaryimagekernel/encode(commandbuffer:sourcetexture:destinationtexture:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, destinationImage: MPSImage)](./mpsunaryimagekernel/encode%28commandbuffer,sourceimage,destinationimage%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, destinationTexture: any MTLTexture)](./mpsunaryimagekernel/encode%28commandbuffer,sourcetexture,destinationtexture%29.md)
   Encodes a kernel into a command buffer, out of place.
-- [func sourceRegion(destinationSize: MTLSize) -> MPSRegion](mpsunaryimagekernel/sourceregion(destinationsize:).md)
+- [func sourceRegion(destinationSize: MTLSize) -> MPSRegion](./mpsunaryimagekernel/sourceregion%28destinationsize%29.md)
   Determines the region of the source texture that will be read for an encode operation.
 ### Properties
-- [var offset: MPSOffset](mpsunaryimagekernel/offset.md)
+- [var offset: MPSOffset](./mpsunaryimagekernel/offset.md)
   The position of the destination clip rectangle origin relative to the source buffer.
-- [struct MPSOffset](mpsoffset.md)
+- [struct MPSOffset](./mpsoffset.md)
   A signed coordinate with x, y, and z components.
-- [var clipRect: MTLRegion](mpsunaryimagekernel/cliprect.md)
+- [var clipRect: MTLRegion](./mpsunaryimagekernel/cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the rectangle will be overwritten.
-- [struct MPSRegion](mpsregion.md)
+- [struct MPSRegion](./mpsregion.md)
   A region of an image.
-- [var edgeMode: MPSImageEdgeMode](mpsunaryimagekernel/edgemode.md)
+- [var edgeMode: MPSImageEdgeMode](./mpsunaryimagekernel/edgemode.md)
   The edge mode to use when texture reads stray off the edge of an image.
-- [enum MPSImageEdgeMode](mpsimageedgemode.md)
+- [enum MPSImageEdgeMode](./mpsimageedgemode.md)
   The options used to control the edge behavior of an image filter when it reads outside the bounds of a source texture.
 
 ## Relationships
 
 ### Inherits From
-- [MPSKernel](mpskernel.md)
+- [MPSKernel](./mpskernel.md)
 ### Inherited By
-- [MPSImageAreaMax](mpsimageareamax.md)
-- [MPSImageBox](mpsimagebox.md)
-- [MPSImageCanny](mpsimagecanny.md)
-- [MPSImageConversion](mpsimageconversion.md)
-- [MPSImageConvolution](mpsimageconvolution.md)
-- [MPSImageDilate](mpsimagedilate.md)
-- [MPSImageEuclideanDistanceTransform](mpsimageeuclideandistancetransform.md)
-- [MPSImageGaussianBlur](mpsimagegaussianblur.md)
-- [MPSImageHistogramEqualization](mpsimagehistogramequalization.md)
-- [MPSImageHistogramSpecification](mpsimagehistogramspecification.md)
-- [MPSImageIntegral](mpsimageintegral.md)
-- [MPSImageIntegralOfSquares](mpsimageintegralofsquares.md)
-- [MPSImageLaplacian](mpsimagelaplacian.md)
-- [MPSImageMedian](mpsimagemedian.md)
-- [MPSImagePyramid](mpsimagepyramid.md)
-- [MPSImageReduceUnary](mpsimagereduceunary.md)
-- [MPSImageScale](mpsimagescale.md)
-- [MPSImageSobel](mpsimagesobel.md)
-- [MPSImageStatisticsMean](mpsimagestatisticsmean.md)
-- [MPSImageStatisticsMeanAndVariance](mpsimagestatisticsmeanandvariance.md)
-- [MPSImageStatisticsMinAndMax](mpsimagestatisticsminandmax.md)
-- [MPSImageThresholdBinary](mpsimagethresholdbinary.md)
-- [MPSImageThresholdBinaryInverse](mpsimagethresholdbinaryinverse.md)
-- [MPSImageThresholdToZero](mpsimagethresholdtozero.md)
-- [MPSImageThresholdToZeroInverse](mpsimagethresholdtozeroinverse.md)
-- [MPSImageThresholdTruncate](mpsimagethresholdtruncate.md)
-- [MPSImageTranspose](mpsimagetranspose.md)
+- [MPSImageAreaMax](./mpsimageareamax.md)
+- [MPSImageBox](./mpsimagebox.md)
+- [MPSImageCanny](./mpsimagecanny.md)
+- [MPSImageConversion](./mpsimageconversion.md)
+- [MPSImageConvolution](./mpsimageconvolution.md)
+- [MPSImageDilate](./mpsimagedilate.md)
+- [MPSImageEuclideanDistanceTransform](./mpsimageeuclideandistancetransform.md)
+- [MPSImageGaussianBlur](./mpsimagegaussianblur.md)
+- [MPSImageHistogramEqualization](./mpsimagehistogramequalization.md)
+- [MPSImageHistogramSpecification](./mpsimagehistogramspecification.md)
+- [MPSImageIntegral](./mpsimageintegral.md)
+- [MPSImageIntegralOfSquares](./mpsimageintegralofsquares.md)
+- [MPSImageLaplacian](./mpsimagelaplacian.md)
+- [MPSImageMedian](./mpsimagemedian.md)
+- [MPSImagePyramid](./mpsimagepyramid.md)
+- [MPSImageReduceUnary](./mpsimagereduceunary.md)
+- [MPSImageScale](./mpsimagescale.md)
+- [MPSImageSobel](./mpsimagesobel.md)
+- [MPSImageStatisticsMean](./mpsimagestatisticsmean.md)
+- [MPSImageStatisticsMeanAndVariance](./mpsimagestatisticsmeanandvariance.md)
+- [MPSImageStatisticsMinAndMax](./mpsimagestatisticsminandmax.md)
+- [MPSImageThresholdBinary](./mpsimagethresholdbinary.md)
+- [MPSImageThresholdBinaryInverse](./mpsimagethresholdbinaryinverse.md)
+- [MPSImageThresholdToZero](./mpsimagethresholdtozero.md)
+- [MPSImageThresholdToZeroInverse](./mpsimagethresholdtozeroinverse.md)
+- [MPSImageThresholdTruncate](./mpsimagethresholdtruncate.md)
+- [MPSImageTranspose](./mpsimagetranspose.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSBinaryImageKernel](mpsbinaryimagekernel.md)
+### Image Filter Base Classes
+- [class MPSBinaryImageKernel](./mpsbinaryimagekernel.md)
   A kernel that consumes two textures and produces one texture.
 
 

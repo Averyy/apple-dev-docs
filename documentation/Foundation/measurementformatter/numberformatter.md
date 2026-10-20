@@ -1,7 +1,8 @@
 # numberFormatter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number formatter used to format the quantity of a measurement.
 
@@ -21,19 +22,24 @@ The number formatter used to format the quantity of a measurement.
 var numberFormatter: NumberFormatter! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSNumberFormatter * numberFormatter;
+```
+
 #### Discussion
 
-If unspecified, an [`NumberFormatter`](numberformatter.md) object with [`NumberFormatter.Style.decimal`](numberformatter/style/decimal.md) style is used.
+If unspecified, an [`NumberFormatter`](../numberformatter.md) object with [`NumberFormatter.Style.decimal`](../numberformatter/style/decimal.md) style is used.
 
 ## See Also
 
-- [var unitOptions: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.property.md)
+### Specifying the Format
+- [var unitOptions: MeasurementFormatter.UnitOptions](./unitoptions-swift.property.md)
   The options for how the unit is formatted.
-- [MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct.md)
+- [MeasurementFormatter.UnitOptions](./unitoptions-swift.struct.md)
   Measurement formatter options.
-- [var unitStyle: Formatter.UnitStyle](measurementformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./unitstyle.md)
   The unit style.
-- [var locale: Locale!](measurementformatter/locale.md)
+- [var locale: Locale!](./locale.md)
   The locale of the formatter.
 
 

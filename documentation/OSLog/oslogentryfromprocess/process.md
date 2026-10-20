@@ -2,6 +2,7 @@
 
 **Framework**: OSLog  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The name of the process that made the entry.
@@ -21,15 +22,20 @@ The name of the process that made the entry.
 var process: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * process;
+```
+
 ## See Also
 
-- [var activityIdentifier: os_activity_id_t](oslogentryfromprocess/activityidentifier.md)
+### Identifying the Process Source
+- [var activityIdentifier: os_activity_id_t](./activityidentifier.md)
   The activity identifier associated with the entry.
-- [var processIdentifier: pid_t](oslogentryfromprocess/processidentifier.md)
+- [var processIdentifier: pid_t](./processidentifier.md)
   The process identifier that made the entry.
-- [var sender: String](oslogentryfromprocess/sender.md)
+- [var sender: String](./sender.md)
   The name of the binary image that made the entry.
-- [var threadIdentifier: UInt64](oslogentryfromprocess/threadidentifier.md)
+- [var threadIdentifier: UInt64](./threadidentifier.md)
   The identifier of the thread that made the entry.
 
 

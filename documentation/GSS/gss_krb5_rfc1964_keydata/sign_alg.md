@@ -1,7 +1,8 @@
 # sign_alg
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signing algorithm.
 
@@ -18,11 +19,16 @@ The signing algorithm.
 var sign_alg: OM_uint32
 ```
 
+```c
+OM_uint32 sign_alg;
+```
+
 ## See Also
 
-- [var ctx_key: gss_krb5_lucid_key_t](gss_krb5_rfc1964_keydata/ctx_key.md)
+### Key Data Members
+- [var ctx_key: gss_krb5_lucid_key_t](./ctx_key.md)
   The context key (Kerberos session key or subkey).
-- [var seal_alg: OM_uint32](gss_krb5_rfc1964_keydata/seal_alg.md)
+- [var seal_alg: OM_uint32](./seal_alg.md)
   The seal/encrypt algorithm.
 
 

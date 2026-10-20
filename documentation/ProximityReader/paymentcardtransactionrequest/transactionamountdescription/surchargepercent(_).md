@@ -1,9 +1,10 @@
 # PaymentCardTransactionRequest.TransactionAmountDescription.surchargePercent(_:)
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The maximum surcharge percentage the payment processor may apply to the transaction. Only allowed for [`PaymentCardTransactionRequest.TransactionType.purchase`](paymentcardtransactionrequest/transactiontype/purchase.md)
+The maximum surcharge percentage the payment processor may apply to the transaction. Only allowed for [`PaymentCardTransactionRequest.TransactionType.purchase`](../transactiontype/purchase.md)
 
 **Availability**:
 - iOS 18.0+

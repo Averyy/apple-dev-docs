@@ -1,7 +1,8 @@
 # VTSuperResolutionScalerParameters
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains both input and output parameters that the super-resolution processor needs to run on a frame.
 
@@ -17,6 +18,10 @@ An object that contains both input and output parameters that the super-resoluti
 class VTSuperResolutionScalerParameters
 ```
 
+```objc
+@interface VTSuperResolutionScalerParameters : NSObject
+```
+
 #### Overview
 
 Use this object in the `processWithParameters` call of the `VTFrameProcessor` class. The output parameter for this class is `destinationFrame`, where the processor returns the output frame (as `VTFrameProcessorFrame`) back to you once `processWithParameters` completes.
@@ -26,38 +31,39 @@ Use this object in the `processWithParameters` call of the `VTFrameProcessor` cl
 ## Topics
 
 ### Creating a parameters object
-- [init?(sourceFrame: VTFrameProcessorFrame, previousFrame: VTFrameProcessorFrame?, previousOutputFrame: VTFrameProcessorFrame?, opticalFlow: VTFrameProcessorOpticalFlow?, submissionMode: VTSuperResolutionScalerParameters.SubmissionMode, destinationFrame: VTFrameProcessorFrame)](vtsuperresolutionscalerparameters/init(sourceframe:previousframe:previousoutputframe:opticalflow:submissionmode:destinationframe:).md)
+- [init?(sourceFrame: VTFrameProcessorFrame, previousFrame: VTFrameProcessorFrame?, previousOutputFrame: VTFrameProcessorFrame?, opticalFlow: VTFrameProcessorOpticalFlow?, submissionMode: VTSuperResolutionScalerParameters.SubmissionMode, destinationFrame: VTFrameProcessorFrame)](./vtsuperresolutionscalerparameters/init%28sourceframe,previousframe,previousoutputframe,opticalflow,submissionmode,destinationframe%29.md)
   Creates a new super-resolution scaler parameters instance.
 ### Inspecting the parameters
-- [var sourceFrame: VTFrameProcessorFrame](vtsuperresolutionscalerparameters/sourceframe.md)
+- [var sourceFrame: VTFrameProcessorFrame](./vtsuperresolutionscalerparameters/sourceframe.md)
   Current source frame, which must be non `nil`.
-- [var previousFrame: VTFrameProcessorFrame?](vtsuperresolutionscalerparameters/previousframe.md)
+- [var previousFrame: VTFrameProcessorFrame?](./vtsuperresolutionscalerparameters/previousframe.md)
   Previous source frame in presentation time order, which is `nil` for the first frame.
-- [var previousOutputFrame: VTFrameProcessorFrame?](vtsuperresolutionscalerparameters/previousoutputframe.md)
+- [var previousOutputFrame: VTFrameProcessorFrame?](./vtsuperresolutionscalerparameters/previousoutputframe.md)
   Previous output frame in presentation time order, which is `nil` for the first frame.
-- [var opticalFlow: VTFrameProcessorOpticalFlow?](vtsuperresolutionscalerparameters/opticalflow.md)
+- [var opticalFlow: VTFrameProcessorOpticalFlow?](./vtsuperresolutionscalerparameters/opticalflow.md)
   Optional object that contains forward and backward optical flow with the previous frame.
-- [var submissionMode: VTSuperResolutionScalerParameters.SubmissionMode](vtsuperresolutionscalerparameters/submissionmode-swift.property.md)
+- [var submissionMode: VTSuperResolutionScalerParameters.SubmissionMode](./vtsuperresolutionscalerparameters/submissionmode-swift.property.md)
   Ordering of the input frames in this submission relative to the previous submission.
-- [VTSuperResolutionScalerParameters.SubmissionMode](vtsuperresolutionscalerparameters/submissionmode-swift.enum.md)
+- [VTSuperResolutionScalerParameters.SubmissionMode](./vtsuperresolutionscalerparameters/submissionmode-swift.enum.md)
   Indicates the order of input frames.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VTFrameProcessorParameters](vtframeprocessorparameters.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VTFrameProcessorParameters](./vtframeprocessorparameters.md)
 
 ## See Also
 
-- [class VTSuperResolutionScalerConfiguration](vtsuperresolutionscalerconfiguration.md)
+### Super resolution
+- [class VTSuperResolutionScalerConfiguration](./vtsuperresolutionscalerconfiguration.md)
   Configuration that you use to set up the super-resolution processor.
 
 

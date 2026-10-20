@@ -1,14 +1,15 @@
 # ts_p_comm
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 char ts_p_comm[32];
 ```
 

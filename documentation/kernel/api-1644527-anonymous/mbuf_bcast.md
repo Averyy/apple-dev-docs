@@ -1,14 +1,15 @@
 # MBUF_BCAST
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 MBUF_BCAST = 0x0100
 ```
 

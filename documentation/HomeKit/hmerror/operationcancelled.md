@@ -1,7 +1,8 @@
 # operationCancelled
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating the user canceled the operation.
 
@@ -21,9 +22,10 @@ static var operationCancelled: HMError.Code { get }
 
 ## See Also
 
-- [static var operationInProgress: HMError.Code](hmerror/operationinprogress.md)
+### Detecting operation errors
+- [static var operationInProgress: HMError.Code](./operationinprogress.md)
   An error indicating the operation is already in progress.
-- [static var operationTimedOut: HMError.Code](hmerror/operationtimedout.md)
+- [static var operationTimedOut: HMError.Code](./operationtimedout.md)
   An error indicating the operation timed out.
 
 

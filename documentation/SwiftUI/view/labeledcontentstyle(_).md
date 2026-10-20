@@ -1,7 +1,8 @@
 # labeledContentStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a style for labeled content.
 
@@ -23,11 +24,12 @@ func labeledContentStyle<S>(_ style: S) -> some View where S : LabeledContentSty
 
 ## See Also
 
-- [struct Form](form.md)
+### Grouping inputs
+- [struct Form](../form.md)
   A container for grouping controls used for data entry, such as in settings or inspectors.
-- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+- [func formStyle<S>(S) -> some View](./formstyle%28_%29.md)
   Sets the style for forms in a view hierarchy.
-- [struct LabeledContent](labeledcontent.md)
+- [struct LabeledContent](../labeledcontent.md)
   A container for attaching a label to a value-bearing view.
 
 

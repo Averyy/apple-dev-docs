@@ -1,7 +1,8 @@
 # contentPolicy
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,13 +17,18 @@
 optional var contentPolicy: NSFileProviderContentPolicy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderContentPolicy contentPolicy;
+```
+
 ## See Also
 
-- [var childItemCount: NSNumber?](nsfileprovideritemprotocol/childitemcount.md)
+### Managing Content
+- [var childItemCount: NSNumber?](./childitemcount.md)
   The number of items contained by this item.
-- [var documentSize: NSNumber?](nsfileprovideritemprotocol/documentsize.md)
+- [var documentSize: NSNumber?](./documentsize.md)
   The document’s size, in bytes.
-- [enum NSFileProviderContentPolicy](nsfileprovidercontentpolicy.md)
+- [enum NSFileProviderContentPolicy](../nsfileprovidercontentpolicy.md)
 
 
 ---

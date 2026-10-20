@@ -1,7 +1,8 @@
 # UINavigationBar
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 Navigation bar visibility and configuration during launch.
 
@@ -9,27 +10,29 @@ Navigation bar visibility and configuration during launch.
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `UINavigationBar` (Show Navigation bar)
+- **Type**: dictionary
 
 #### Discussion
 
-When you provide a dictionary for this key, the system displays a navigation bar during launch. You can optionally set the dictionary’s [`UIImageName`](information-property-list/uilaunchscreen/uinavigationbar/uiimagename.md) key to define a custom image for the navigation bar.
+When you provide a dictionary for this key, the system displays a navigation bar during launch. You can optionally set the dictionary’s [`UIImageName`](./uinavigationbar/uiimagename.md) key to define a custom image for the navigation bar.
 
 Omit this key if you don’t want to display a navigation bar during launch.
 
 ## Topics
 
 ### Optional Image
-- [UIImageName](information-property-list/uilaunchscreen/uinavigationbar/uiimagename.md)
+- [UIImageName](./uinavigationbar/uiimagename.md)
   A custom image that replaces the navigation bar during launch.
 
 ## See Also
 
-- [UITabBar](information-property-list/uilaunchscreen/uitabbar.md)
+### Border Elements
+- [UITabBar](./uitabbar.md)
   Tab bar visibility and configuration during launch.
-- [UIToolbar](information-property-list/uilaunchscreen/uitoolbar.md)
+- [UIToolbar](./uitoolbar.md)
   Toolbar visibility and configuration during launch.
 
 

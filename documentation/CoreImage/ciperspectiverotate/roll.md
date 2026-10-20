@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The roll angle, in radians.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The roll angle, in radians.
 var roll: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float roll;
+```
+
 ## See Also
 
-- [var focalLength: Float](ciperspectiverotate/focallength.md)
+### Instance Properties
+- [var focalLength: Float](./focallength.md)
   The 35mm equivalent focal length of the input image.
-- [var inputImage: CIImage?](ciperspectiverotate/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to process.
-- [var pitch: Float](ciperspectiverotate/pitch.md)
+- [var pitch: Float](./pitch.md)
   The pitch angle, in radians.
-- [var yaw: Float](ciperspectiverotate/yaw.md)
+- [var yaw: Float](./yaw.md)
   The yaw angle, in radians.
 
 

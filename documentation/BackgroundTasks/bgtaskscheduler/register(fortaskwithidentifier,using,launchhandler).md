@@ -1,7 +1,8 @@
 # register(forTaskWithIdentifier:using:launchHandler:)
 
 **Framework**: Background Tasks  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register a launch handler for the task with the associated identifier that’s executed on the specified queue.
 
@@ -18,17 +19,21 @@ Register a launch handler for the task with the associated identifier that’s e
 func register(forTaskWithIdentifier identifier: String, using queue: dispatch_queue_t?, launchHandler: @escaping (BGTask) -> Void) -> Bool
 ```
 
+```objc
+- (BOOL) registerForTaskWithIdentifier:(NSString *) identifier usingQueue:(dispatch_queue_t) queue launchHandler:(void (^)(BGTask *task)) launchHandler;
+```
+
 ## Mentions
 
-- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+- [Performing long-running tasks on iOS and iPadOS](../performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Return Value
+#### Return value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the launch handler was registered. Returns [`false`](https://developer.apple.com/documentation/swift/false) if the identifier isn’t included in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/bundleresources/information-property-list/bgtaskschedulerpermittedidentifiers) `Info.plist`.
+Returns [`true`](../../Swift/true.md) if the launch handler was registered. Returns [`false`](../../Swift/false.md) if the identifier isn’t included in the [`BGTaskSchedulerPermittedIdentifiers`](../../BundleResources/information-property-list/bgtaskschedulerpermittedidentifiers.md) `Info.plist`.
 
 #### Discussion
 
-Every identifier in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/bundleresources/information-property-list/bgtaskschedulerpermittedidentifiers) requires a handler. Registration of all launch handlers must be complete before the end of [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationdidfinishlaunching(_:)).
+Every identifier in the [`BGTaskSchedulerPermittedIdentifiers`](../../BundleResources/information-property-list/bgtaskschedulerpermittedidentifiers.md) requires a handler. Registration of all launch handlers must be complete before the end of [`applicationDidFinishLaunching(_:)`](../../UIKit/uiapplicationdelegate/applicationdidfinishlaunching%28_%29.md).
 
 > ❗ **Important**: Register each task identifier only once. The system kills the app on the second registration of the same task identifier.
 
@@ -36,11 +41,12 @@ Every identifier in the [`BGTaskSchedulerPermittedIdentifiers`](https://develope
 
 - `identifier`: A string containing the identifier of the task.
 - `queue`: A queue for executing the task. Pass `nil` to use a default background queue.
-- `launchHandler`: The system runs the block of code for the launch handler when it launches the app in the background. The block takes a single parameter, a [`BGTask`](bgtask.md) object used for assigning an expiration handler and for setting a completion status. The block has no return value.
+- `launchHandler`: The system runs the block of code for the launch handler when it launches the app in the background. The block takes a single parameter, a [`BGTask`](../bgtask.md) object used for assigning an expiration handler and for setting a completion status. The block has no return value.
 
 ## See Also
 
-- [func submit(BGTaskRequest) throws](bgtaskscheduler/submit(_:).md)
+### Scheduling a task
+- [func submit(BGTaskRequest) throws](./submit%28_%29.md)
   Submit a previously registered background task for execution.
 
 

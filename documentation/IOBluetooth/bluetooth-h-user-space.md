@@ -15,25 +15,26 @@ Bluetooth wireless technology
 ## Topics
 
 ### Constants
-- [BluetoothHCIUSBDeviceMatchingConstants](bluetoothhciusbdevicematchingconstants-8yru7.md)
+- [BluetoothHCIUSBDeviceMatchingConstants](./bluetoothhciusbdevicematchingconstants-8yru7.md)
   Bluetooth USB device matching constants
 
 ## See Also
 
-- [IOBluetoothUserLib.h](iobluetoothuserlib-h.md)
+### Reference
+- [IOBluetoothUserLib.h](./iobluetoothuserlib-h.md)
   Public Interfaces for Apple’s implementation of Bluetooth technology.
-- [IOBluetoothUtilities.h](iobluetoothutilities-h.md)
+- [IOBluetoothUtilities.h](./iobluetoothutilities-h.md)
   See the Overview section above for header-level documentation.
-- [OBEX.h](obex-h.md)
+- [OBEX.h](./obex-h.md)
   Public OBEX technology interfaces.
-- [OBEXBluetooth.h](obexbluetooth-h.md)
+- [OBEXBluetooth.h](./obexbluetooth-h.md)
   Object Exchange over Bluetooth.
-- [OBEXFileTransferServices.h](obexfiletransferservices-h.md)
-- [IOBluetooth Structures](iobluetooth-structures.md)
-- [IOBluetooth Enumerations](iobluetooth-enumerations.md)
-- [IOBluetooth Constants](iobluetooth-constants.md)
-- [IOBluetooth Functions](iobluetooth-functions.md)
-- [IOBluetooth Data Types](iobluetooth-data-types.md)
+- [OBEXFileTransferServices.h](./obexfiletransferservices-h.md)
+- [IOBluetooth Structures](./iobluetooth-structures.md)
+- [IOBluetooth Enumerations](./iobluetooth-enumerations.md)
+- [IOBluetooth Constants](./iobluetooth-constants.md)
+- [IOBluetooth Functions](./iobluetooth-functions.md)
+- [IOBluetooth Data Types](./iobluetooth-data-types.md)
 
 
 ---

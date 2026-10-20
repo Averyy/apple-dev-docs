@@ -1,7 +1,8 @@
 # textFieldStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for text fields within this view.
 
@@ -23,13 +24,14 @@ func textFieldStyle<S>(_ style: S) -> some View where S : TextFieldStyle
 
 ## See Also
 
-- [Building rich SwiftUI text experiences](building-rich-swiftui-text-experiences.md)
+### Getting text input
+- [Building rich SwiftUI text experiences](../building-rich-swiftui-text-experiences.md)
   Build an editor for formatted text using SwiftUI text editor views and attributed strings.
-- [struct TextField](textfield.md)
+- [struct TextField](../textfield.md)
   A control that displays an editable text interface.
-- [struct SecureField](securefield.md)
+- [struct SecureField](../securefield.md)
   A control into which people securely enter private text.
-- [struct TextEditor](texteditor.md)
+- [struct TextEditor](../texteditor.md)
   A view that can display and edit long-form text.
 
 

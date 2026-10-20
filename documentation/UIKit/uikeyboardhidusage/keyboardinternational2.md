@@ -1,7 +1,8 @@
 # UIKeyboardHIDUsage.keyboardInternational2
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw usage code 136 (decimal)/88 (hexadecimal).
 
@@ -18,37 +19,42 @@ The raw usage code 136 (decimal)/88 (hexadecimal).
 case keyboardInternational2
 ```
 
+```c
+UIKeyboardHIDUsageKeyboardInternational2
+```
+
 ## See Also
 
-- [static var keyboardKanaSwitch: UIKeyboardHIDUsage](uikeyboardhidusage/keyboardkanaswitch.md)
+### Input method keys
+- [static var keyboardKanaSwitch: UIKeyboardHIDUsage](./keyboardkanaswitch.md)
   An alias for the LANG1 key on Japanese language keyboards from Apple.
-- [static var keyboardHangul: UIKeyboardHIDUsage](uikeyboardhidusage/keyboardhangul.md)
+- [static var keyboardHangul: UIKeyboardHIDUsage](./keyboardhangul.md)
   An alias for the LANG1 key on Korean language keyboards.
-- [static var keyboardAlphanumericSwitch: UIKeyboardHIDUsage](uikeyboardhidusage/keyboardalphanumericswitch.md)
+- [static var keyboardAlphanumericSwitch: UIKeyboardHIDUsage](./keyboardalphanumericswitch.md)
   An alias for the LANG2 key on Japanese language keyboards from Apple.
-- [static var keyboardHanja: UIKeyboardHIDUsage](uikeyboardhidusage/keyboardhanja.md)
+- [static var keyboardHanja: UIKeyboardHIDUsage](./keyboardhanja.md)
   An alias for the LANG2 key on Korean language keyboards.
-- [static var keyboardKatakana: UIKeyboardHIDUsage](uikeyboardhidusage/keyboardkatakana.md)
+- [static var keyboardKatakana: UIKeyboardHIDUsage](./keyboardkatakana.md)
   An alias for the LANG3 key on Japanese language keyboards.
-- [static var keyboardHiragana: UIKeyboardHIDUsage](uikeyboardhidusage/keyboardhiragana.md)
+- [static var keyboardHiragana: UIKeyboardHIDUsage](./keyboardhiragana.md)
   An alias for the LANG4 key on Japanese language keyboards.
-- [static var keyboardZenkakuHankakuKanji: UIKeyboardHIDUsage](uikeyboardhidusage/keyboardzenkakuhankakukanji.md)
+- [static var keyboardZenkakuHankakuKanji: UIKeyboardHIDUsage](./keyboardzenkakuhankakukanji.md)
   An alias for the LANG5 key on Japanese language keyboards.
-- [UIKeyboardHIDUsage.keyboardLANG1](uikeyboardhidusage/keyboardlang1.md)
+- [UIKeyboardHIDUsage.keyboardLANG1](./keyboardlang1.md)
   The raw usage code 144 (decimal)/90 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLANG2](uikeyboardhidusage/keyboardlang2.md)
+- [UIKeyboardHIDUsage.keyboardLANG2](./keyboardlang2.md)
   The raw usage code 145 (decimal)/91 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLANG3](uikeyboardhidusage/keyboardlang3.md)
+- [UIKeyboardHIDUsage.keyboardLANG3](./keyboardlang3.md)
   The raw usage code 146 (decimal)/92 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLANG4](uikeyboardhidusage/keyboardlang4.md)
+- [UIKeyboardHIDUsage.keyboardLANG4](./keyboardlang4.md)
   The raw usage code 147 (decimal)/93 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLANG5](uikeyboardhidusage/keyboardlang5.md)
+- [UIKeyboardHIDUsage.keyboardLANG5](./keyboardlang5.md)
   The raw usage code 148 (decimal)/94 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLANG6](uikeyboardhidusage/keyboardlang6.md)
+- [UIKeyboardHIDUsage.keyboardLANG6](./keyboardlang6.md)
   The raw usage code 149 (decimal)/95 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLANG7](uikeyboardhidusage/keyboardlang7.md)
+- [UIKeyboardHIDUsage.keyboardLANG7](./keyboardlang7.md)
   The raw usage code 150 (decimal)/96 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardLANG8](uikeyboardhidusage/keyboardlang8.md)
+- [UIKeyboardHIDUsage.keyboardLANG8](./keyboardlang8.md)
   The raw usage code 151 (decimal)/97 (hexadecimal).
 
 

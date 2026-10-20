@@ -1,7 +1,8 @@
 # defaultResolverSpecification
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+

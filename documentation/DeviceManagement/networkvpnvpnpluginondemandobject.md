@@ -1,7 +1,8 @@
 # NetworkVPNVPNPluginOnDemandObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies details about how the system controls on-demand VPN.
 
@@ -15,37 +16,44 @@ Specifies details about how the system controls on-demand VPN.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNVPNPluginOnDemandObject
 ```
 
 ## Topics
 
 ### Objects
-- [object NetworkVPNVPNPluginRulesElementObject](networkvpnvpnpluginruleselementobject.md)
+- [object NetworkVPNVPNPluginRulesElementObject](./networkvpnvpnpluginruleselementobject.md)
   An array of dictionaries defining On Demand Rules.
 
 ## Properties
 
-- `DisableUserOverride` (boolean): If `true`, the device disables the Connect On Demand toggle in Settings for this configuration. Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+- `DisableUserOverride` (boolean): If `true`, the device disables the Connect On Demand toggle in Settings for this configuration.
+
+  Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+
+  **Default**: `false`
 - `Enabled` (boolean): If `true`, enables VPN On Demand.
+
+  **Default**: `false`
 - `Rules` ([NetworkVPNVPNPluginRulesElementObject]): An array of dictionaries defining On Demand Rules.
 
 ## See Also
 
-- [object NetworkVPNVPNPluginAuthenticationObject](networkvpnvpnpluginauthenticationobject.md)
+### Objects
+- [object NetworkVPNVPNPluginAuthenticationObject](./networkvpnvpnpluginauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNVPNPluginDNSObject](networkvpnvpnplugindnsobject.md)
+- [object NetworkVPNVPNPluginDNSObject](./networkvpnvpnplugindnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNVPNPluginIdleObject](networkvpnvpnpluginidleobject.md)
+- [object NetworkVPNVPNPluginIdleObject](./networkvpnvpnpluginidleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNVPNPluginNetworkRoutingObject](networkvpnvpnpluginnetworkroutingobject.md)
+- [object NetworkVPNVPNPluginNetworkRoutingObject](./networkvpnvpnpluginnetworkroutingobject.md)
   Specifies details about how the VPN routes different types of network traffic.
-- [object NetworkVPNVPNPluginProviderObject](networkvpnvpnpluginproviderobject.md)
+- [object NetworkVPNVPNPluginProviderObject](./networkvpnvpnpluginproviderobject.md)
   Specifies details about the provider.
-- [object NetworkVPNVPNPluginProxiesObject](networkvpnvpnpluginproxiesobject.md)
+- [object NetworkVPNVPNPluginProxiesObject](./networkvpnvpnpluginproxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
-- [object NetworkVPNVPNPluginVendorConfigObject](networkvpnvpnpluginvendorconfigobject.md)
+- [object NetworkVPNVPNPluginVendorConfigObject](./networkvpnvpnpluginvendorconfigobject.md)
   The vendor-specific configuration dictionary, which the system reads only when `SubType` has a value.
 
 

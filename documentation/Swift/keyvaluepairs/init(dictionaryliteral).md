@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `KeyValuePairs` instance from the given dictionary literal.
 

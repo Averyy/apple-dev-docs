@@ -1,7 +1,8 @@
 # colorTransform
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var colorTransform: UnsafePointer<Float> { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) const float * colorTransform;
 ```
 
 

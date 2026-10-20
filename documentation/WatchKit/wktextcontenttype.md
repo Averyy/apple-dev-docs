@@ -1,12 +1,13 @@
 # WKTextContentType
 
 **Framework**: WatchKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify a text field’s semantic meaning.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,84 +15,89 @@ Constants that specify a text field’s semantic meaning.
 struct WKTextContentType
 ```
 
+```c
+typedef NSString * WKTextContentType;
+```
+
 ## Topics
 
 ### Name
-- [static let name: WKTextContentType](wktextcontenttype/name.md)
+- [static let name: WKTextContentType](./wktextcontenttype/name.md)
   A full name.
-- [static let namePrefix: WKTextContentType](wktextcontenttype/nameprefix.md)
+- [static let namePrefix: WKTextContentType](./wktextcontenttype/nameprefix.md)
   A title or prefix for a name.
-- [static let givenName: WKTextContentType](wktextcontenttype/givenname.md)
+- [static let givenName: WKTextContentType](./wktextcontenttype/givenname.md)
   A given name.
-- [static let middleName: WKTextContentType](wktextcontenttype/middlename.md)
+- [static let middleName: WKTextContentType](./wktextcontenttype/middlename.md)
   A middle name.
-- [static let familyName: WKTextContentType](wktextcontenttype/familyname.md)
+- [static let familyName: WKTextContentType](./wktextcontenttype/familyname.md)
   A last name.
-- [static let nameSuffix: WKTextContentType](wktextcontenttype/namesuffix.md)
+- [static let nameSuffix: WKTextContentType](./wktextcontenttype/namesuffix.md)
   A suffix for a name.
-- [static let nickname: WKTextContentType](wktextcontenttype/nickname.md)
+- [static let nickname: WKTextContentType](./wktextcontenttype/nickname.md)
   A nickname.
 ### Employment
-- [static let jobTitle: WKTextContentType](wktextcontenttype/jobtitle.md)
+- [static let jobTitle: WKTextContentType](./wktextcontenttype/jobtitle.md)
   A job title.
-- [static let organizationName: WKTextContentType](wktextcontenttype/organizationname.md)
+- [static let organizationName: WKTextContentType](./wktextcontenttype/organizationname.md)
   An organization’s name.
 ### Address
-- [static let location: WKTextContentType](wktextcontenttype/location.md)
+- [static let location: WKTextContentType](./wktextcontenttype/location.md)
   A point of interest, address, or other identifiable location.
-- [static let fullStreetAddress: WKTextContentType](wktextcontenttype/fullstreetaddress.md)
+- [static let fullStreetAddress: WKTextContentType](./wktextcontenttype/fullstreetaddress.md)
   The full street address for a location, including the unit or suite number.
-- [static let streetAddressLine1: WKTextContentType](wktextcontenttype/streetaddressline1.md)
+- [static let streetAddressLine1: WKTextContentType](./wktextcontenttype/streetaddressline1.md)
   The first line of a street address.
-- [static let streetAddressLine2: WKTextContentType](wktextcontenttype/streetaddressline2.md)
+- [static let streetAddressLine2: WKTextContentType](./wktextcontenttype/streetaddressline2.md)
   The second line of a street address.
-- [static let addressCity: WKTextContentType](wktextcontenttype/addresscity.md)
+- [static let addressCity: WKTextContentType](./wktextcontenttype/addresscity.md)
   The name of a city.
-- [static let addressState: WKTextContentType](wktextcontenttype/addressstate.md)
+- [static let addressState: WKTextContentType](./wktextcontenttype/addressstate.md)
   The name of a state.
-- [static let addressCityAndState: WKTextContentType](wktextcontenttype/addresscityandstate.md)
+- [static let addressCityAndState: WKTextContentType](./wktextcontenttype/addresscityandstate.md)
   The name of a city and state.
-- [static let sublocality: WKTextContentType](wktextcontenttype/sublocality.md)
+- [static let sublocality: WKTextContentType](./wktextcontenttype/sublocality.md)
   The sublocality.
-- [static let countryName: WKTextContentType](wktextcontenttype/countryname.md)
+- [static let countryName: WKTextContentType](./wktextcontenttype/countryname.md)
   The name of a country or region.
-- [static let postalCode: WKTextContentType](wktextcontenttype/postalcode.md)
+- [static let postalCode: WKTextContentType](./wktextcontenttype/postalcode.md)
   A postal code.
 ### Contact Information
-- [static let telephoneNumber: WKTextContentType](wktextcontenttype/telephonenumber.md)
+- [static let telephoneNumber: WKTextContentType](./wktextcontenttype/telephonenumber.md)
   A telephone number.
-- [static let emailAddress: WKTextContentType](wktextcontenttype/emailaddress.md)
+- [static let emailAddress: WKTextContentType](./wktextcontenttype/emailaddress.md)
   An email address.
 ### Other
-- [static let URL: WKTextContentType](wktextcontenttype/url.md)
+- [static let URL: WKTextContentType](./wktextcontenttype/url.md)
   A URL.
-- [static let creditCardNumber: WKTextContentType](wktextcontenttype/creditcardnumber.md)
+- [static let creditCardNumber: WKTextContentType](./wktextcontenttype/creditcardnumber.md)
   A credit card number.
 ### Login Credentials
-- [static let username: WKTextContentType](wktextcontenttype/username.md)
+- [static let username: WKTextContentType](./wktextcontenttype/username.md)
   An account or login name.
-- [static let password: WKTextContentType](wktextcontenttype/password.md)
+- [static let password: WKTextContentType](./wktextcontenttype/password.md)
   An existing password.
-- [static let newPassword: WKTextContentType](wktextcontenttype/newpassword.md)
+- [static let newPassword: WKTextContentType](./wktextcontenttype/newpassword.md)
   A new password.
-- [static let oneTimeCode: WKTextContentType](wktextcontenttype/onetimecode.md)
+- [static let oneTimeCode: WKTextContentType](./wktextcontenttype/onetimecode.md)
   A one-time code.
 ### Initializers
-- [init(rawValue: String)](wktextcontenttype/init(rawvalue:).md)
+- [init(rawValue: String)](./wktextcontenttype/init%28rawvalue%29.md)
   Returns a newly instantiated content type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setTextContentType(WKTextContentType?)](wkinterfacetextfield/settextcontenttype(_:).md)
+### Specifying the Content Type
+- [func setTextContentType(WKTextContentType?)](./wkinterfacetextfield/settextcontenttype%28_%29.md)
   Sets the text field’s semantic meaning.
 
 

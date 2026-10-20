@@ -1,17 +1,22 @@
 # intercellSpacing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spacing between cells in the combo box’s pop-up list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var intercellSpacing: NSSize { get set }
+```
+
+```objc
+@property NSSize intercellSpacing;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ The value of this property is the horizontal and vertical spacing between cells 
 
 ## See Also
 
-- [var hasVerticalScroller: Bool](nscomboboxcell/hasverticalscroller.md)
+### Setting Display Attributes
+- [var hasVerticalScroller: Bool](./hasverticalscroller.md)
   A Boolean value that indicates if the combo box displays a vertical scroller.
-- [var isButtonBordered: Bool](nscomboboxcell/isbuttonbordered.md)
+- [var isButtonBordered: Bool](./isbuttonbordered.md)
   A Boolean value that indicates whether the combo box button displays a border.
-- [var itemHeight: CGFloat](nscomboboxcell/itemheight.md)
+- [var itemHeight: CGFloat](./itemheight.md)
   The height of each item in the combo box’s pop-up list.
-- [var numberOfVisibleItems: Int](nscomboboxcell/numberofvisibleitems.md)
+- [var numberOfVisibleItems: Int](./numberofvisibleitems.md)
   The maximum number of items visible in the pop-up list at any one time.
 
 

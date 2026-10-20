@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the state of the specified view with new information from SwiftUI.
@@ -31,10 +32,11 @@ When the state of your app changes, SwiftUI updates the portions of your interfa
 
 ## See Also
 
-- [func makeUIView(context: Self.Context) -> Self.UIViewType](uiviewrepresentable/makeuiview(context:).md)
+### Creating and updating the view
+- [func makeUIView(context: Self.Context) -> Self.UIViewType](./makeuiview%28context%29.md)
   Creates the view object and configures its initial state.
-- [UIViewRepresentable.Context](uiviewrepresentable/context.md)
-- [associatedtype UIViewType : UIView](uiviewrepresentable/uiviewtype.md)
+- [UIViewRepresentable.Context](./context.md)
+- [associatedtype UIViewType : UIView](./uiviewtype.md)
   The type of view to present.
 
 

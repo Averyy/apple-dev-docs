@@ -1,12 +1,13 @@
 # NSDocument.ChangeType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate a document’s edit status.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,47 +15,52 @@ Values that indicate a document’s edit status.
 enum ChangeType
 ```
 
+```c
+enum NSDocumentChangeType : NSUInteger;
+```
+
 #### Overview
 
-These constants indicate how a document should operate on its change count and are passed to the [`updateChangeCount(_:)`](nsdocument/updatechangecount(_:).md) method.
+These constants indicate how a document should operate on its change count and are passed to the [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) method.
 
 ## Topics
 
 ### Constants
-- [NSDocument.ChangeType.changeDone](nsdocument/changetype/changedone.md)
+- [NSDocument.ChangeType.changeDone](./changetype/changedone.md)
   Increment change count.
-- [NSDocument.ChangeType.changeUndone](nsdocument/changetype/changeundone.md)
+- [NSDocument.ChangeType.changeUndone](./changetype/changeundone.md)
   Decrement change count.
-- [NSDocument.ChangeType.changeCleared](nsdocument/changetype/changecleared.md)
+- [NSDocument.ChangeType.changeCleared](./changetype/changecleared.md)
   Set change count to 0.
-- [NSDocument.ChangeType.changeReadOtherContents](nsdocument/changetype/changereadothercontents.md)
+- [NSDocument.ChangeType.changeReadOtherContents](./changetype/changereadothercontents.md)
   The document has been initialized with the contents of a file or file package other than the one whose location is in the `fileURL` property, and therefore can’t possibly be synchronized with its persistent representation.
-- [NSDocument.ChangeType.changeAutosaved](nsdocument/changetype/changeautosaved.md)
+- [NSDocument.ChangeType.changeAutosaved](./changetype/changeautosaved.md)
   The document’s contents have been autosaved.
-- [NSDocument.ChangeType.changeRedone](nsdocument/changetype/changeredone.md)
+- [NSDocument.ChangeType.changeRedone](./changetype/changeredone.md)
   A single change has been redone.
-- [NSDocument.ChangeType.changeDiscardable](nsdocument/changetype/changediscardable.md)
+- [NSDocument.ChangeType.changeDiscardable](./changetype/changediscardable.md)
   A discardable change has been done.
 ### Initializers
-- [init?(rawValue: UInt)](nsdocument/changetype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./changetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func updateChangeCount(withToken: Any, for: NSDocument.SaveOperationType)](nsdocument/updatechangecount(withtoken:for:).md)
+### Updating the Document Change Count
+- [func updateChangeCount(withToken: Any, for: NSDocument.SaveOperationType)](./updatechangecount%28withtoken,for%29.md)
   Updates the document’s change count settings after a successful save operation.
-- [func updateChangeCount(NSDocument.ChangeType)](nsdocument/updatechangecount(_:).md)
+- [func updateChangeCount(NSDocument.ChangeType)](./updatechangecount%28_%29.md)
   Updates the receiver’s change count according to the given change type.
-- [func changeCountToken(for: NSDocument.SaveOperationType) -> Any](nsdocument/changecounttoken(for:).md)
+- [func changeCountToken(for: NSDocument.SaveOperationType) -> Any](./changecounttoken%28for%29.md)
   Returns an object that encapsulates the current record of document changes at the beginning of a save operation.
 
 

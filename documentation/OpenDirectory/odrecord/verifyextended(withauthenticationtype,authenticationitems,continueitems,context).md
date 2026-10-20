@@ -1,12 +1,13 @@
 # verifyExtended(withAuthenticationType:authenticationItems:continueItems:context:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Verifies the credentials for interaction with the record’s node using other types of authentication available to Open Directory.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
@@ -15,9 +16,15 @@ Verifies the credentials for interaction with the record’s node using other ty
 func verifyExtended(withAuthenticationType inType: String!, authenticationItems inItems: [Any]!, continueItems outItems: AutoreleasingUnsafeMutablePointer<NSArray?>!, context outContext: AutoreleasingUnsafeMutablePointer<AnyObject?>!) throws
 ```
 
+```objc
+- (BOOL) verifyExtendedWithAuthenticationType:(ODAuthenticationType) inType authenticationItems:(NSArray *) inItems continueItems:(NSArray **) outItems context:(id*) outContext error:(NSError **) outError;
+```
+
 #### Discussion
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -28,13 +35,14 @@ func verifyExtended(withAuthenticationType inType: String!, authenticationItems 
 
 ## See Also
 
-- [func changePassword(String!, toPassword: String!) throws](odrecord/changepassword(_:topassword:).md)
+### Managing Authentication
+- [func changePassword(String!, toPassword: String!) throws](./changepassword%28_,topassword%29.md)
   Changes the record’s password.
-- [func setNodeCredentials(String!, password: String!) throws](odrecord/setnodecredentials(_:password:).md)
+- [func setNodeCredentials(String!, password: String!) throws](./setnodecredentials%28_,password%29.md)
   Sets credentials for the record’s node.
-- [func setNodeCredentialsWithRecordType(String!, authenticationType: String!, authenticationItems: [Any]!, continueItems: AutoreleasingUnsafeMutablePointer<NSArray?>!, context: AutoreleasingUnsafeMutablePointer<AnyObject?>!) throws](odrecord/setnodecredentialswithrecordtype(_:authenticationtype:authenticationitems:continueitems:context:).md)
+- [func setNodeCredentialsWithRecordType(String!, authenticationType: String!, authenticationItems: [Any]!, continueItems: AutoreleasingUnsafeMutablePointer<NSArray?>!, context: AutoreleasingUnsafeMutablePointer<AnyObject?>!) throws](./setnodecredentialswithrecordtype%28_,authenticationtype,authenticationitems,continueitems,context%29.md)
   Sets the credentials for interaction with the record’s node using other types of authentication available to Open Directory.
-- [func verifyPassword(String!) throws](odrecord/verifypassword(_:).md)
+- [func verifyPassword(String!) throws](./verifypassword%28_%29.md)
   Verifies the password for interaction with the record.
 
 

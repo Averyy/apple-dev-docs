@@ -1,7 +1,8 @@
 # init(mapItem:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new structured location with the specified map item.
 
@@ -19,13 +20,18 @@ Creates a new structured location with the specified map item.
 convenience init(mapItem: MKMapItem)
 ```
 
+```objc
++ (instancetype) locationWithMapItem:(MKMapItem *) mapItem;
+```
+
 ## Parameters
 
-- `mapItem`: The [`MKMapItem`](https://developer.apple.com/documentation/mapkit/mkmapitem) object that represents the location.
+- `mapItem`: The [`MKMapItem`](../../MapKit/mkmapitem.md) object that represents the location.
 
 ## See Also
 
-- [convenience init(title: String)](ekstructuredlocation/init(title:).md)
+### Creating Structured Locations
+- [convenience init(title: String)](./init%28title%29.md)
   Creates a new structured location with the specified title.
 
 

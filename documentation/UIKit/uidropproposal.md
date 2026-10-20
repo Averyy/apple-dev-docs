@@ -1,7 +1,8 @@
 # UIDropProposal
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration for the behavior of a drop interaction, required if a view accepts drop activities.
 
@@ -18,54 +19,59 @@ A configuration for the behavior of a drop interaction, required if a view accep
 class UIDropProposal
 ```
 
+```objc
+@interface UIDropProposal : NSObject
+```
+
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 
 #### Overview
 
-If a view’s drop interaction delegate accepts dropped drag items, it must return a drop proposal in its implementation of the [`dropInteraction(_:sessionDidUpdate:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md) method.
+If a view’s drop interaction delegate accepts dropped drag items, it must return a drop proposal in its implementation of the [`dropInteraction(_:sessionDidUpdate:)`](./uidropinteractiondelegate/dropinteraction%28_,sessiondidupdate%29.md) method.
 
 ## Topics
 
 ### Initializing a drop proposal
-- [init(operation: UIDropOperation)](uidropproposal/init(operation:).md)
+- [init(operation: UIDropOperation)](./uidropproposal/init%28operation%29.md)
   Initializes a new drop proposal with a drop operation type.
-- [var operation: UIDropOperation](uidropproposal/operation.md)
+- [var operation: UIDropOperation](./uidropproposal/operation.md)
   The drop operation that the drop interaction proposes to perform.
 ### Configuring a drop proposal
-- [var isPrecise: Bool](uidropproposal/isprecise.md)
+- [var isPrecise: Bool](./uidropproposal/isprecise.md)
   A Boolean value that proposes that the drop interaction define the drop location precisely, such as at a specific point within existing text.
-- [var prefersFullSizePreview: Bool](uidropproposal/prefersfullsizepreview.md)
+- [var prefersFullSizePreview: Bool](./uidropproposal/prefersfullsizepreview.md)
   A Boolean value that indicates that the drag item preview should be shown at its full, original size.
 ### Initializers
-- [init(dropOperation: UIDropOperation)](uidropproposal/init(dropoperation:).md)
+- [init(dropOperation: UIDropOperation)](./uidropproposal/init%28dropoperation%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UICollectionViewDropProposal](uicollectionviewdropproposal.md)
-- [UITableViewDropProposal](uitableviewdropproposal.md)
-- [UITextDropProposal](uitextdropproposal.md)
+- [UICollectionViewDropProposal](./uicollectionviewdropproposal.md)
+- [UITableViewDropProposal](./uitableviewdropproposal.md)
+- [UITextDropProposal](./uitextdropproposal.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol UIDropSession](uidropsession.md)
+### Drop destinations
+- [protocol UIDropSession](./uidropsession.md)
   The interface for querying a drop session about its state and associated drag items.
-- [enum UIDropOperation](uidropoperation.md)
+- [enum UIDropOperation](./uidropoperation.md)
   Operation types that determine how a drag and drop activity resolves when the user drops a drag item.
-- [enum UIDropSessionProgressIndicatorStyle](uidropsessionprogressindicatorstyle.md)
+- [enum UIDropSessionProgressIndicatorStyle](./uidropsessionprogressindicatorstyle.md)
   The drop-progress indicator styles for the drop session, used while data is moving from the source to the destination.
 
 

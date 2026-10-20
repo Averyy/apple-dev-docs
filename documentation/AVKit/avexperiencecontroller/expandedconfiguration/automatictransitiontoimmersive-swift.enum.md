@@ -1,7 +1,8 @@
 # AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The expanded experience automatic transition behavior into the immersive experience.
 
@@ -21,20 +22,21 @@ Use this enum to describe the desired automatic transition behavior into the imm
 ## Topics
 
 ### Transition behaviors
-- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.default](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum/default.md)
+- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.default](./automatictransitiontoimmersive-swift.enum/default.md)
   Describes the system default behavior.
-- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.none](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum/none.md)
+- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.none](./automatictransitiontoimmersive-swift.enum/none.md)
   Describes no behavior.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var automaticTransitionToImmersive: AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.property.md)
+### Configuring automatic immersive transitions
+- [var automaticTransitionToImmersive: AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive](./automatictransitiontoimmersive-swift.property.md)
   The expanded experience automatic transition behavior for the immersive experience.
 
 

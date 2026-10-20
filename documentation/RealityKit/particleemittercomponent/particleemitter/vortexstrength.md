@@ -1,7 +1,8 @@
 # vortexStrength
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Strength of the vortex forces affecting particle motion. Defaults to 0.
 

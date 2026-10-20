@@ -1,7 +1,8 @@
 # contains(_:eoFill:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns true if the path contains a specified point.
 
@@ -26,15 +27,16 @@ If `eoFill` is true, this method uses the even-odd rule to define which points a
 
 ## See Also
 
-- [var boundingRect: CGRect](path/boundingrect.md)
+### Getting the path’s characteristics
+- [var boundingRect: CGRect](./boundingrect.md)
   A rectangle containing all path segments.
-- [var cgPath: CGPath](path/cgpath.md)
+- [var cgPath: CGPath](./cgpath.md)
   An immutable path representing the elements in the path.
-- [var currentPoint: CGPoint?](path/currentpoint.md)
+- [var currentPoint: CGPoint?](./currentpoint.md)
   Returns the last point in the path, or nil if the path contains no points.
-- [var description: String](path/description.md)
+- [var description: String](./description.md)
   A description of the path that may be used to recreate the path via `init?(_:)`.
-- [var isEmpty: Bool](path/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value indicating whether the path contains zero elements.
 
 

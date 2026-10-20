@@ -1,7 +1,8 @@
 # selectedRanges
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets selected text ranges.
 
@@ -20,7 +21,8 @@ final var selectedRanges: [Range<String.Index>] { get set }
 
 ## See Also
 
-- [func resetTextSelection()](imageanalysisinteraction/resettextselection.md)
+### Managing text selection
+- [func resetTextSelection()](./resettextselection%28%29.md)
   Removes a person’s text selection from the interface.
 
 

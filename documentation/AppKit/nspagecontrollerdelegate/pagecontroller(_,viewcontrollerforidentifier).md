@@ -1,7 +1,8 @@
 # pageController(_:viewControllerForIdentifier:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a view controller the page controller uses for managing the specified identifier.
 
@@ -15,6 +16,10 @@ Returns a view controller the page controller uses for managing the specified id
 optional func pageController(_ pageController: NSPageController, viewControllerForIdentifier identifier: NSPageController.ObjectIdentifier) -> NSViewController
 ```
 
+```objc
+- (NSViewController *) pageController:(NSPageController *) pageController viewControllerForIdentifier:(NSPageControllerObjectIdentifier) identifier;
+```
+
 #### Return Value
 
 Returns the view controller for the specified identifier.
@@ -25,7 +30,7 @@ Your implementation of this method should return the requested view controller f
 
 `NSPageController` will cache as many view controllers and views as necessary to maintain performance. This method is called whenever another instance is required.
 
-The view controller may become the [`selectedViewController`](nspagecontroller/selectedviewcontroller.md) after a transition if necessary.
+The view controller may become the [`selectedViewController`](../nspagecontroller/selectedviewcontroller.md) after a transition if necessary.
 
 ## Parameters
 
@@ -34,13 +39,14 @@ The view controller may become the [`selectedViewController`](nspagecontroller/s
 
 ## See Also
 
-- [func pageController(NSPageController, identifierFor: Any) -> NSPageController.ObjectIdentifier](nspagecontrollerdelegate/pagecontroller(_:identifierfor:).md)
+### Managing View Controllers
+- [func pageController(NSPageController, identifierFor: Any) -> NSPageController.ObjectIdentifier](./pagecontroller%28_,identifierfor%29.md)
   Return the identifier of the view controller that owns a view to display the object.
-- [func pageController(NSPageController, prepare: NSViewController, with: Any?)](nspagecontrollerdelegate/pagecontroller(_:prepare:with:).md)
+- [func pageController(NSPageController, prepare: NSViewController, with: Any?)](./pagecontroller%28_,prepare,with%29.md)
   Prepare the view controller and it’s view for drawing.
-- [func pageController(NSPageController, frameFor: Any?) -> NSRect](nspagecontrollerdelegate/pagecontroller(_:framefor:).md)
+- [func pageController(NSPageController, frameFor: Any?) -> NSRect](./pagecontroller%28_,framefor%29.md)
   Returns the frame appropriate for displaying the specified object.
-- [NSPageController.ObjectIdentifier](nspagecontroller/objectidentifier.md)
+- [NSPageController.ObjectIdentifier](../nspagecontroller/objectidentifier.md)
 
 
 ---

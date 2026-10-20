@@ -1,7 +1,8 @@
 # SetQualifierAndDataValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the custom property’s data value.
 
@@ -10,7 +11,7 @@ Sets the custom property’s data value.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetQualifierAndDataValue(OSObject *in_qualifier_data, OSObject *in_data);
 ```
 
@@ -25,11 +26,12 @@ kern_return_t SetQualifierAndDataValue(OSObject *in_qualifier_data, OSObject *in
 
 ## See Also
 
-- [GetCustomPropertyValueWithQualifier](iouservideocustomproperty/getcustompropertyvaluewithqualifier.md)
+### Accessing the data value
+- [GetCustomPropertyValueWithQualifier](./getcustompropertyvaluewithqualifier.md)
   Gets the custom property value for a given qualifier.
-- [GetCustomPropertyInfo](iouservideocustomproperty/getcustompropertyinfo.md)
+- [GetCustomPropertyInfo](./getcustompropertyinfo.md)
   Gets the custom property information.
-- [IOUserVideoCustomPropertyInfo](videodriverkit/iouservideocustompropertyinfo.md)
+- [IOUserVideoCustomPropertyInfo](../videodriverkit-page/iouservideocustompropertyinfo.md)
   A description of a a custom property that allow the Host to marshal the data between the Host and its clients.
 
 

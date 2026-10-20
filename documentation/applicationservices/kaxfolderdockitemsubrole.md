@@ -1,7 +1,8 @@
 # kAXFolderDockItemSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An icon in the Dock that represents a folder.
 
@@ -12,6 +13,10 @@ An icon in the Dock that represents a folder.
 
 ```swift
 var kAXFolderDockItemSubrole: String { get }
+```
+
+```c
+#define kAXFolderDockItemSubrole
 ```
 
 

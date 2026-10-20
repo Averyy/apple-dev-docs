@@ -1,7 +1,8 @@
 # cpuCacheMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that configures the cache mode of CPU mapping of tensors you create with this descriptor.
 
@@ -19,9 +20,13 @@ A value that configures the cache mode of CPU mapping of tensors you create with
 var cpuCacheMode: MTLCPUCacheMode { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLCPUCacheMode cpuCacheMode;
+```
+
 #### Discussion
 
-The default value of this property is [`MTLCPUCacheMode.defaultCache`](mtlcpucachemode/defaultcache.md).
+The default value of this property is [`MTLCPUCacheMode.defaultCache`](../mtlcpucachemode/defaultcache.md).
 
 
 ---

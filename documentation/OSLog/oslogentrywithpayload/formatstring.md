@@ -2,6 +2,7 @@
 
 **Framework**: OSLog  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The payload’s format string.
@@ -21,13 +22,18 @@ The payload’s format string.
 var formatString: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * formatString;
+```
+
 ## See Also
 
-- [var category: String](oslogentrywithpayload/category.md)
+### Elements of a Payload
+- [var category: String](./category.md)
   The payload’s category.
-- [var components: [OSLogMessageComponent]](oslogentrywithpayload/components.md)
+- [var components: [OSLogMessageComponent]](./components.md)
   The payload’s components.
-- [var subsystem: String](oslogentrywithpayload/subsystem.md)
+- [var subsystem: String](./subsystem.md)
   The payload’s subsystem.
 
 

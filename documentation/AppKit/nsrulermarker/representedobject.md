@@ -1,12 +1,13 @@
 # representedObject
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object the receiver represents.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The object the receiver represents.
 var representedObject: (any NSCopying)? { get set }
 ```
 
+```objc
+@property (strong, nullable) id<NSCopying> representedObject;
+```
+
 #### Discussion
 
-See [`About Ruler Markers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Rulers/Concepts/AboutRulerMarkers.html#//apple_ref/doc/uid/20000873) for more information on the represented object.
+See [About Ruler Markers](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Rulers/Concepts/AboutRulerMarkers.html#//apple_ref/doc/uid/20000873) for more information on the represented object.
 
 
 ---

@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Convert a non-copyable continuation to an [`UnsafeContinuation`](unsafecontinuation.md).
+Convert a non-copyable continuation to an [`UnsafeContinuation`](../unsafecontinuation.md).
 
 **Availability**:
 - iOS 27.0+
@@ -19,6 +20,8 @@ Convert a non-copyable continuation to an [`UnsafeContinuation`](unsafecontinuat
 ```swift
 init(_ continuation: consuming Continuation<T, E>)
 ```
+
+Available when `E` conforms to `Error`.
 
 #### Discussion
 

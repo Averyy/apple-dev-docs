@@ -1,12 +1,13 @@
 # NSScroller.UsableParts
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify which parts of the scroller are visible.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,35 +15,40 @@ These constants specify which parts of the scroller are visible.
 enum UsableParts
 ```
 
+```c
+enum NSUsableScrollerParts : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSScroller.UsableParts.noScrollerParts](nsscroller/usableparts-swift.enum/noscrollerparts.md)
+- [NSScroller.UsableParts.noScrollerParts](./usableparts-swift.enum/noscrollerparts.md)
   Specifies that the scroller has neither a knob nor scroll buttons, only the knob slot.
-- [NSScroller.UsableParts.allScrollerParts](nsscroller/usableparts-swift.enum/allscrollerparts.md)
+- [NSScroller.UsableParts.allScrollerParts](./usableparts-swift.enum/allscrollerparts.md)
   Specifies that the scroller has at least a knob, possibly also scroll buttons.
-- [NSScroller.UsableParts.onlyScrollerArrows](nsscroller/usableparts-swift.enum/onlyscrollerarrows.md)
+- [NSScroller.UsableParts.onlyScrollerArrows](./usableparts-swift.enum/onlyscrollerarrows.md)
   Specifies that the scroller has only scroll buttons, no knob.
 ### Initializers
-- [init?(rawValue: UInt)](nsscroller/usableparts-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./usableparts-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSScroller.Style](nsscroller/style.md)
+### Constants
+- [NSScroller.Style](./style.md)
   Constants to specify the scroller style.
-- [NSScroller.KnobStyle](nsscroller/knobstyle-swift.enum.md)
+- [NSScroller.KnobStyle](./knobstyle-swift.enum.md)
   Specify different knob styles.
-- [NSScroller.Part](nsscroller/part.md)
+- [NSScroller.Part](./part.md)
   These constants specify the different parts of the scroller:
 
 

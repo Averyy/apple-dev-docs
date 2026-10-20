@@ -1,7 +1,8 @@
 # selfTestRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func selfTestRequest(with params: MTRSmokeCOAlarmClusterSelfTestRequestParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func selfTestRequest(with params: MTRSmokeCOAlarmClusterSelfTestRequestParams?) async throws
+```
+
+```objc
+- (void) selfTestRequestWithParams:(MTRSmokeCOAlarmClusterSelfTestRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

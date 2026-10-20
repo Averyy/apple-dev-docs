@@ -1,12 +1,13 @@
 # showsFirstResponder
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the cell provides a visual indication that it is the first responder.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A Boolean value indicating whether the cell provides a visual indication that it
 var showsFirstResponder: Bool { get set }
 ```
 
+```objc
+@property BOOL showsFirstResponder;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) and the cell becomes the first responder, the cell performs additional drawing to indicate that it is the first responder. The `NSCell` class itself does not draw a first-responder indicator. Subclasses may use the value in this property to determine whether or not they should draw one.
+When the value of this property is [`true`](../../Swift/true.md) and the cell becomes the first responder, the cell performs additional drawing to indicate that it is the first responder. The `NSCell` class itself does not draw a first-responder indicator. Subclasses may use the value in this property to determine whether or not they should draw one.
 
 ## See Also
 
-- [var acceptsFirstResponder: Bool](nscell/acceptsfirstresponder.md)
+### Respond to Keyboard Events
+- [var acceptsFirstResponder: Bool](./acceptsfirstresponder.md)
   A Boolean value indicating whether the cell accepts first responder status.
-- [var refusesFirstResponder: Bool](nscell/refusesfirstresponder.md)
+- [var refusesFirstResponder: Bool](./refusesfirstresponder.md)
   A Boolean value indicating whether the cell refuses the first responder status.
-- [func performClick(Any?)](nscell/performclick(_:).md)
+- [func performClick(Any?)](./performclick%28_%29.md)
   Simulates a single mouse click on the receiver.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The set of endpoints that define the connection group.

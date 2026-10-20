@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color for the refresh control.
 
@@ -17,13 +18,18 @@ The tint color for the refresh control.
 var tintColor: UIColor! { get set }
 ```
 
+```objc
+@property (nonatomic, strong, null_resettable) UIColor * tintColor;
+```
+
 #### Discussion
 
 The default value of this property is `nil`.
 
 ## See Also
 
-- [var attributedTitle: NSAttributedString?](uirefreshcontrol/attributedtitle.md)
+### Accessing the control attributes
+- [var attributedTitle: NSAttributedString?](./attributedtitle.md)
   The styled title text to display in the refresh control.
 
 

@@ -1,7 +1,8 @@
 # init(subscriptions:content:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -19,10 +20,13 @@ nonisolated
 init<C>(subscriptions: some Collection<Product>, @StoreContentBuilder content: () -> C) where Content == SubscriptionStoreContentView<C>, C : StoreContent
 ```
 
+Available when `Content` conforms to `View`.
+
 ## See Also
 
-- [init<C>(groupID: String, visibleRelationships: Product.SubscriptionRelationship, content: () -> C)](subscriptionstoreview/init(groupid:visiblerelationships:content:).md)
-- [init<C>(productIDs: some Collection<String>, content: () -> C)](subscriptionstoreview/init(productids:content:).md)
+### Creating subscription store views with a hierarchichal structure
+- [init<C>(groupID: String, visibleRelationships: Product.SubscriptionRelationship, content: () -> C)](./init%28groupid,visiblerelationships,content%29.md)
+- [init<C>(productIDs: some Collection<String>, content: () -> C)](./init%28productids,content%29.md)
 
 
 ---

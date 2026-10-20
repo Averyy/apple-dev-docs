@@ -1,7 +1,8 @@
 # minimumDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum duration of each incremental segment. kCMTimeZero means there is no minimum segment duration requirement. kCMTimePositiveInfinity means that incremental segmentation is not supported for this codecType.
 
@@ -17,6 +18,10 @@ The minimum duration of each incremental segment. kCMTimeZero means there is no 
 
 ```swift
 var minimumDuration: CMTime
+```
+
+```c
+CMTime minimumDuration;
 ```
 
 

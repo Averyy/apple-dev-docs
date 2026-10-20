@@ -1,7 +1,8 @@
 # strides
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strides of the tensor.
 
@@ -20,12 +21,13 @@ var strides: Span<Int> { get }
 
 ## See Also
 
-- [var scalarType: NDArray.ScalarType](ndarray/rawview/scalartype.md)
-- [var shape: Span<Int>](ndarray/rawview/shape.md)
+### Inspecting the view
+- [var scalarType: NDArray.ScalarType](./scalartype.md)
+- [var shape: Span<Int>](./shape.md)
   The shape of the tensor.
-- [var bytes: RawSpan](ndarray/rawview/bytes.md)
+- [var bytes: RawSpan](./bytes.md)
   A span over the backing bytes of this tensor.
-- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/rawview/interleavelayout.md)
+- [var interleaveLayout: NDArray.InterleaveLayout?](./interleavelayout.md)
   Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
 
 

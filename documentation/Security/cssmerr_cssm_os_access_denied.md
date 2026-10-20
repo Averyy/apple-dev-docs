@@ -1,7 +1,8 @@
 # CSSMERR_CSSM_OS_ACCESS_DENIED
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_CSSM_OS_ACCESS_DENIED: Int { get }
+```
+
+```c
+CSSMERR_CSSM_OS_ACCESS_DENIED
 ```
 
 

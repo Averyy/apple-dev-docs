@@ -1,7 +1,8 @@
 # atomicMemoryFence(ordering:)
 
 **Framework**: Synchronization  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Establishes a memory ordering without associating it with a particular atomic operation.
 
@@ -34,11 +35,12 @@ Be aware that Thread Sanitizer does not support fences and may report false-posi
 
 ## See Also
 
-- [struct AtomicLoadOrdering](atomicloadordering.md)
+### Memory Ordering Semantics
+- [struct AtomicLoadOrdering](./atomicloadordering.md)
   Specifies the memory ordering semantics of an atomic load operation.
-- [struct AtomicStoreOrdering](atomicstoreordering.md)
+- [struct AtomicStoreOrdering](./atomicstoreordering.md)
   Specifies the memory ordering semantics of an atomic store operation.
-- [struct AtomicUpdateOrdering](atomicupdateordering.md)
+- [struct AtomicUpdateOrdering](./atomicupdateordering.md)
   Specifies the memory ordering semantics of an atomic read-modify-write operation.
 
 

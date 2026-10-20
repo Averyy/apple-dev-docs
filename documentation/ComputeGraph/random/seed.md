@@ -1,13 +1,14 @@
 # random::seed
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current random seed, without incrementing it.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The current random seed as a 32-bit unsigned integer.
 
 This function retrieves the current state of the random number generator’s seed without modifying it, allowing you to inspect or save the seed value for later use.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/random__seed.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/random__seed.svg)
 
 
 ---

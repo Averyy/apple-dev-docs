@@ -1,7 +1,8 @@
 # ulp
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit in the last place of this value.
 

@@ -1,7 +1,8 @@
 # encode(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a JSON-encoded representation of the value you supply.
 
@@ -29,8 +30,8 @@ The encoded JSON data.
 If there’s a problem encoding the value you supply, this method throws an error based on the type of problem:
 
 - The value fails to encode, or contains a nested value that fails to encode—this method throws the corresponding error.
-- The value isn’t encodable as a JSON array or JSON object—this method throws the [`EncodingError.invalidValue(_:_:)`](https://developer.apple.com/documentation/swift/encodingerror/invalidvalue(_:_:)) error.
-- The value contains an exceptional floating-point number (such as [`infinity`](https://developer.apple.com/documentation/swift/floatingpoint/infinity) or [`nan`](https://developer.apple.com/documentation/swift/floatingpoint/nan)) and you’re using the default [`JSONEncoder.NonConformingFloatEncodingStrategy`](jsonencoder/nonconformingfloatencodingstrategy-swift.enum.md) — this method throws the [`EncodingError.invalidValue(_:_:)`](https://developer.apple.com/documentation/swift/encodingerror/invalidvalue(_:_:)) error.
+- The value isn’t encodable as a JSON array or JSON object—this method throws the [`EncodingError.invalidValue(_:_:)`](../../Swift/encodingerror/invalidvalue%28_,_%29.md) error.
+- The value contains an exceptional floating-point number (such as [`infinity`](../../Swift/floatingpoint/infinity.md) or [`nan`](../../Swift/floatingpoint/nan.md)) and you’re using the default [`JSONEncoder.NonConformingFloatEncodingStrategy`](./nonconformingfloatencodingstrategy-swift.enum.md) — this method throws the [`EncodingError.invalidValue(_:_:)`](../../Swift/encodingerror/invalidvalue%28_,_%29.md) error.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ If there’s a problem encoding the value you supply, this method throws an erro
 
 ## See Also
 
-- [init()](jsonencoder/init.md)
+### First Steps
+- [init()](./init%28%29.md)
   Creates a new, reusable JSON encoder with the default formatting settings and encoding strategies.
 
 

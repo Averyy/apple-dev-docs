@@ -1,7 +1,8 @@
 # senselArray
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Format contains sensel data (for example Bayer RAW data).
 

@@ -1,7 +1,8 @@
 # toUuid
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a string to a `Uuid`.
 
@@ -10,7 +11,7 @@ Converts a string to a `Uuid`.
 
 ## Declaration
 
-```swift
+```
 static Uuid toUuid();
 ```
 

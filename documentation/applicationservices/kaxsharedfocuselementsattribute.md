@@ -1,7 +1,8 @@
 # kAXSharedFocusElementsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXSharedFocusElementsAttribute: String { get }
+```
+
+```c
+#define kAXSharedFocusElementsAttribute
 ```
 
 

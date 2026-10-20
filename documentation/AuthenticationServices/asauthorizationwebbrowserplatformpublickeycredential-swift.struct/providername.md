@@ -1,7 +1,8 @@
 # providerName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the app that manages this credential, or “iCloud Keychain” if it’s the operating system.
 
@@ -19,13 +20,14 @@ let providerName: String
 
 ## See Also
 
-- [let customTitle: String](asauthorizationwebbrowserplatformpublickeycredential-swift.struct/customtitle.md)
+### Describing credentials
+- [let customTitle: String](./customtitle.md)
   A string the person can supply to describe this credential.
-- [let name: String](asauthorizationwebbrowserplatformpublickeycredential-swift.struct/name.md)
+- [let name: String](./name.md)
   The user name for the account associated with this credential.
-- [let relyingParty: String](asauthorizationwebbrowserplatformpublickeycredential-swift.struct/relyingparty.md)
+- [let relyingParty: String](./relyingparty.md)
   The relying party that issues challenges for this credential.
-- [let userHandle: Data](asauthorizationwebbrowserplatformpublickeycredential-swift.struct/userhandle.md)
+- [let userHandle: Data](./userhandle.md)
   A unique identifier for the user account at the relying party.
 
 

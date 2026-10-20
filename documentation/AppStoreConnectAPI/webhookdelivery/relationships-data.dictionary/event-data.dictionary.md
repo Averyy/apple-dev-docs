@@ -1,21 +1,22 @@
 # WebhookDelivery.Relationships.Event
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object WebhookDelivery.Relationships.Event
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object WebhookDelivery.Relationships.Event.Data](webhookdelivery/relationships-data.dictionary/event-data.dictionary/data-data.dictionary.md)
+- [object WebhookDelivery.Relationships.Event.Data](./event-data.dictionary/data-data.dictionary.md)
   The request body you use to update a webhook delivery.
 
 ## Properties

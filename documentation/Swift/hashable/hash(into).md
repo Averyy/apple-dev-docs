@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Hashes the essential components of this value by feeding them into the given hasher.
@@ -30,6 +31,17 @@ Implement this method to conform to the `Hashable` protocol. The components used
 ## Parameters
 
 - `hasher`: The hasher to use when combining the components of this instance.
+
+## Default Implementations
+
+### DistributedActor Implementations
+- [func hash(into: inout Hasher)](../../Distributed/distributedactor/hash%28into%29.md)
+  A distributed actor’s hash and equality is implemented by directly delegating to its [`id`](../../Distributed/distributedactor/id.md).
+### Hashable Implementations
+- [func hash(into: inout Hasher)](./hash%28into%29-3gv4c.md)
+  Hashes the essential components of this value by feeding them into the given hasher.
+- [func hash(into: inout Hasher)](./hash%28into%29-86617.md)
+  Hashes the elements of the vector using the given hasher.
 
 
 ---

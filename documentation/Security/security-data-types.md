@@ -1,12 +1,13 @@
 # Security Data Types
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias SecCECrlReason](seccecrlreason.md)
-- [typealias SecCEKeyUsage](seccekeyusage.md)
+- [typealias SecCECrlReason](./seccecrlreason.md)
+- [typealias SecCEKeyUsage](./seccekeyusage.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # DockAccessory.Animation.wakeup
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The dock accessory moves upwards towards center.
 

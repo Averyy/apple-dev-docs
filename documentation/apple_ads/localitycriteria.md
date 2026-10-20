@@ -1,16 +1,19 @@
 # LocalityCriteria
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The defined targeted audience by locality.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object LocalityCriteria
 ```
 
@@ -18,41 +21,46 @@ object LocalityCriteria
 
 A `locality` is a city or the equivalent according to its associated `adminArea`.
 
-Use the [`Search for Geolocations`](search-for-geolocations.md) endpoint with the `entity` query parameter to search for and retrieve geolocations. Then use geotargeting dimensions `country`, `adminArea`, and `locality` with [`Create an Ad Group`](create-an-ad-group.md)  and [`Update an Ad Group`](update-an-ad-group.md) endpoints.
+Use the [`Search for Geolocations`](./search-for-geolocations.md) endpoint with the `entity` query parameter to search for and retrieve geolocations. Then use geotargeting dimensions `country`, `adminArea`, and `locality` with [`Create an Ad Group`](./create-an-ad-group.md)  and [`Update an Ad Group`](./update-an-ad-group.md) endpoints.
 
 ## Properties
 
-- `included` ([string]): The dimension to include targeted users by locality. For example, in the United States, a locality dimension is a city. This parameter doesn’t support the  `excluded` attribute. ```json
-"locality": {
-      "included": [
-        "US|CA|Cupertino"
-      ]
-    },
-```
+- `included` ([string]): The dimension to include targeted users by locality. For example, in the United States, a locality dimension is a city.
+
+  This parameter doesn’t support the  `excluded` attribute.
+
+  ```json
+  "locality": {
+        "included": [
+          "US|CA|Cupertino"
+        ]
+      },
+  ```
 
 ## See Also
 
-- [object TargetingDimensions](targetingdimensions.md)
+### Audience Refinement
+- [object TargetingDimensions](./targetingdimensions.md)
   The optional criteria to use with ad groups to narrow the audience that views your ads.
-- [object AppCategoryCriteria](appcategorycriteria.md)
+- [object AppCategoryCriteria](./appcategorycriteria.md)
   The defined target audience by app category.
-- [object AppDownloaderCriteria](appdownloadercriteria.md)
+- [object AppDownloaderCriteria](./appdownloadercriteria.md)
   The defined targeted audience according to app downloads.
-- [object AdminAreaCriteria](adminareacriteria.md)
+- [object AdminAreaCriteria](./adminareacriteria.md)
   The defined targeted audience by administrative area.
-- [object CountryCriteria](countrycriteria.md)
+- [object CountryCriteria](./countrycriteria.md)
   The defined targeted audience by country or region.
-- [object AgeCriteria](agecriteria.md)
+- [object AgeCriteria](./agecriteria.md)
   The defined targeted audience to include using the age demographic.
-- [object AgeRange](agerange.md)
+- [object AgeRange](./agerange.md)
   The defined target audience to include using the age-range demographic.
-- [object DaypartCriteria](daypartcriteria.md)
+- [object DaypartCriteria](./daypartcriteria.md)
   The defined targeted audience to include for a specific time of day.
-- [object DaypartDetail](daypartdetail.md)
+- [object DaypartDetail](./daypartdetail.md)
   The defined targeted audience to include by a specific time of day.
-- [object DeviceClassCriteria](deviceclasscriteria.md)
+- [object DeviceClassCriteria](./deviceclasscriteria.md)
   The defined targeted audience to include by device type.
-- [object GenderCriteria](gendercriteria.md)
+- [object GenderCriteria](./gendercriteria.md)
   The defined targeted audience to include using the gender demographic.
 
 

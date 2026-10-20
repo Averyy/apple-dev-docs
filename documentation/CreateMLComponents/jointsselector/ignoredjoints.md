@@ -1,7 +1,8 @@
 # ignoredJoints
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of joint keys to be ignored.
 
@@ -21,7 +22,8 @@ var ignoredJoints: [JointKey]?
 
 ## See Also
 
-- [var selectedJoints: [JointKey]?](jointsselector/selectedjoints.md)
+### Getting the properties
+- [var selectedJoints: [JointKey]?](./selectedjoints.md)
   A list of joint keys to be selected.
 
 

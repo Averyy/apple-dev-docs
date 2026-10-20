@@ -7,7 +7,7 @@ Generates a CPU natural physical scatter/gather list given a memory descriptor.
 
 ## Declaration
 
-```swift
+```cpp
 virtual UInt32 getPhysicalSegments(
  IOMemoryDescriptor *descriptor, 
  IOByteCount fromPosition, 
@@ -17,7 +17,7 @@ virtual UInt32 getPhysicalSegments(
  IOByteCount *transferSize = 0)
 ```
 
-#### Return_value
+#### Return Value
 
 If the descriptor is exhausted of memory, a zero is returned, otherwise the number of segments that were filled in is returned.
 
@@ -36,11 +36,12 @@ Generates a list of physical segments from the given memory descriptor, relative
 
 ## See Also
 
-- [initWithSpecification](ionaturalmemorycursor/1813089-initwithspecification.md)
+### Miscellaneous
+- [initWithSpecification](./api-1813089-initwithspecification.md)
   Primary initializer for the IONaturalMemoryCursor class.
-- [outputSegment](ionaturalmemorycursor/1813100-outputsegment.md)
+- [outputSegment](./api-1813100-outputsegment.md)
   Outputs the given segment into the output segments array in natural byte order.
-- [withSpecification](ionaturalmemorycursor/1813112-withspecification.md)
+- [withSpecification](./api-1813112-withspecification.md)
   Creates and initializes an IONaturalMemoryCursor in one operation.
 
 

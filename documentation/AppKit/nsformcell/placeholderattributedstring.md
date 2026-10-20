@@ -1,12 +1,13 @@
 # placeholderAttributedString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell’s attributed placeholder string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The cell’s attributed placeholder string.
 var placeholderAttributedString: NSAttributedString? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSAttributedString * placeholderAttributedString;
+```
+
 #### Discussion
 
 If this property returns `nil`, you can also call `placeholderString` to see if the cell has a plain text placeholder string.
 
 ## See Also
 
-- [var placeholderString: String?](nsformcell/placeholderstring.md)
+### Asking About Placeholder Values
+- [var placeholderString: String?](./placeholderstring.md)
   The cell’s plain text placeholder string.
 
 

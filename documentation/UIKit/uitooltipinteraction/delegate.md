@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides text that a tooltip displays instead of the default text.
 
@@ -17,9 +18,13 @@ An object that provides text that a tooltip displays instead of the default text
 weak var delegate: (any UIToolTipInteractionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIToolTipInteractionDelegate> delegate;
+```
+
 #### Discussion
 
-To provide tooltip text based on the current state or unique logic of your app, set the [`delegate`](uitooltipinteraction/delegate.md) property to an object that conforms to the [`UIToolTipInteractionDelegate`](uitooltipinteractiondelegate.md) protocol and implements the [`toolTipInteraction(_:configurationAt:)`](uitooltipinteractiondelegate/tooltipinteraction(_:configurationat:).md) method. The method returns a [`UIToolTipConfiguration`](uitooltipconfiguration.md) object containing the text to display in the tooltip. For example, the following code listing instructs the tooltip to show the name of the view’s background color instead of the [`defaultToolTip`](uitooltipinteraction/defaulttooltip.md) text. If the color name is unavailable, the method returns `nil`, which disables the display of the tooltip.
+To provide tooltip text based on the current state or unique logic of your app, set the [`delegate`](./delegate.md) property to an object that conforms to the [`UIToolTipInteractionDelegate`](../uitooltipinteractiondelegate.md) protocol and implements the [`toolTipInteraction(_:configurationAt:)`](../uitooltipinteractiondelegate/tooltipinteraction%28_,configurationat%29.md) method. The method returns a [`UIToolTipConfiguration`](../uitooltipconfiguration.md) object containing the text to display in the tooltip. For example, the following code listing instructs the tooltip to show the name of the view’s background color instead of the [`defaultToolTip`](./defaulttooltip.md) text. If the color name is unavailable, the method returns `nil`, which disables the display of the tooltip.
 
 ```swift
 func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt point: CGPoint) -> UIToolTipConfiguration? {
@@ -36,7 +41,8 @@ func toolTipInteraction(_ interaction: UIToolTipInteraction, configurationAt poi
 
 ## See Also
 
-- [protocol UIToolTipInteractionDelegate](uitooltipinteractiondelegate.md)
+### Providing tooltip configurations
+- [protocol UIToolTipInteractionDelegate](../uitooltipinteractiondelegate.md)
   An interface that provides tooltip settings to an interaction.
 
 

@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the image, in pixels.
 
@@ -24,9 +25,10 @@ A value of `-1` indicates a dynamic shape.
 
 ## See Also
 
-- [let pixelFormatType: OSType](imagedescriptor/pixelformattype.md)
+### Inspecting image properties
+- [let pixelFormatType: OSType](./pixelformattype.md)
   The four-character code that identifies the pixel format.
-- [let height: Int](imagedescriptor/height.md)
+- [let height: Int](./height.md)
   The height of the image, in pixels.
 
 

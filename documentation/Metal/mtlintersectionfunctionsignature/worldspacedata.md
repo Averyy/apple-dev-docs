@@ -1,7 +1,8 @@
 # worldSpaceData
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag indicating that function signature uses world space data.
 
@@ -19,15 +20,20 @@ A flag indicating that function signature uses world space data.
 static var worldSpaceData: MTLIntersectionFunctionSignature { get }
 ```
 
+```c
+MTLIntersectionFunctionSignatureWorldSpaceData
+```
+
 #### Discussion
 
 The corresponding MSL function needs to contain the `world_space_data` tag in its declaration.
 
 ## See Also
 
-- [static var instancing: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/instancing.md)
+### Specifying the intersection function signature
+- [static var instancing: MTLIntersectionFunctionSignature](./instancing.md)
   A flag indicating that function signature uses instancing.
-- [static var triangleData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/triangledata.md)
+- [static var triangleData: MTLIntersectionFunctionSignature](./triangledata.md)
   A flag indicating that function signature uses triangle data.
 
 

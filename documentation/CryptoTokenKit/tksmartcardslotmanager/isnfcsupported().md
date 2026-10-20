@@ -1,7 +1,8 @@
 # isNFCSupported()
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether NFC (Near Field Communication) is supported on this device.
 
@@ -14,6 +15,10 @@ Determines whether NFC (Near Field Communication) is supported on this device.
 
 ```swift
 func isNFCSupported() -> Bool
+```
+
+```objc
+- (BOOL) isNFCSupported;
 ```
 
 #### Return Value

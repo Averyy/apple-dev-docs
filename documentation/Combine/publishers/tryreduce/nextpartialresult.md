@@ -1,7 +1,8 @@
 # nextPartialResult
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error-throwing closure that takes the previously-accumulated value and the next element from the upstream to produce a new value.
 
@@ -26,9 +27,10 @@ If this closure throws an error, the publisher fails and passes the error to its
 
 ## See Also
 
-- [let upstream: Upstream](publishers/tryreduce/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let initial: Output](publishers/tryreduce/initial.md)
+- [let initial: Output](./initial.md)
   The initial value provided on the first-use of the closure.
 
 

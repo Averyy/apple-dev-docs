@@ -1,7 +1,8 @@
 # kern
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a kerning attribute.
 
@@ -22,7 +23,8 @@ let kern: AttributeScopes.SwiftUIAttributes.KerningAttribute
 
 ## See Also
 
-- [let baselineOffset: AttributeScopes.SwiftUIAttributes.BaselineOffsetAttribute](attributescopes/swiftuiattributes/baselineoffset.md)
+### Using Text Styling Attributes
+- [let baselineOffset: AttributeScopes.SwiftUIAttributes.BaselineOffsetAttribute](./baselineoffset.md)
   A property for accessing a baseline offset attribute.
 
 

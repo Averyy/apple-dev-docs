@@ -1,7 +1,8 @@
 # SecCECrlReason
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias SecCECrlReason = UInt32
+```
+
+```c
+typedef uint32_t SecCECrlReason;
 ```
 
 

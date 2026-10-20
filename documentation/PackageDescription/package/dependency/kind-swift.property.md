@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the package dependency.
 
@@ -16,13 +17,14 @@ final let kind: Package.Dependency.Kind
 
 ## See Also
 
-- [Package.Dependency.Kind](package/dependency/kind-swift.enum.md)
+### Describing a Package Dependency
+- [Package.Dependency.Kind](./kind-swift.enum.md)
   The type of dependency.
-- [struct Version](version.md)
+- [struct Version](../../version.md)
   A version according to the semantic versioning specification.
-- [var name: String?](package/dependency/name.md)
+- [var name: String?](./name.md)
   The name of the dependency.
-- [var url: String?](package/dependency/url.md)
+- [var url: String?](./url.md)
   The Git URL of the package dependency.
 
 

@@ -1,7 +1,8 @@
 # CSSM_ALGID_WrapSET_OAEP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_ALGID_WrapSET_OAEP: UInt32 { get }
+```
+
+```c
+CSSM_ALGID_WrapSET_OAEP
 ```
 
 

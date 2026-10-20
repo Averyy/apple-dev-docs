@@ -1,7 +1,8 @@
 # probability
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The probability of applying the transformer. Default value is 0.5.
 

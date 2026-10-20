@@ -1,7 +1,8 @@
 # timedInvokeTimeoutMs
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether the command is a timed command (using Timed Invoke).
 
@@ -19,6 +20,10 @@ Controls whether the command is a timed command (using Timed Invoke).
 ```swift
 @NSCopying
 var timedInvokeTimeoutMs: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSNumber * timedInvokeTimeoutMs;
 ```
 
 #### Discussion

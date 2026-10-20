@@ -1,7 +1,8 @@
 # kSecSubjectKeyIdentifierItemAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Subject key identifier.
 
@@ -12,6 +13,10 @@ Subject key identifier.
 
 ```swift
 var kSecSubjectKeyIdentifierItemAttr: Int { get }
+```
+
+```c
+kSecSubjectKeyIdentifierItemAttr
 ```
 
 

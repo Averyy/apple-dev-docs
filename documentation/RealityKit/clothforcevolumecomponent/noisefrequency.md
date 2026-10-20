@@ -1,7 +1,8 @@
 # noiseFrequency
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frequency of the noise applied to particles inside the volume.
 
@@ -22,7 +23,8 @@ Must be non-negative; negative values are clamped to zero.
 
 ## See Also
 
-- [var noiseAmplitude: Float](clothforcevolumecomponent/noiseamplitude.md)
+### Adding force noise
+- [var noiseAmplitude: Float](./noiseamplitude.md)
   The amplitude of the noise applied to particles inside the volume.
 
 

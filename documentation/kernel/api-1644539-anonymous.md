@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,20 +18,20 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kModeBuiltIn](1644539-anonymous/kmodebuiltin.md)
-- [kModeDefault](1644539-anonymous/kmodedefault.md)
-- [kModeInterlaced](1644539-anonymous/kmodeinterlaced.md)
-- [kModeNotGraphicsQuality](1644539-anonymous/kmodenotgraphicsquality.md)
-- [kModeNotPreset](1644539-anonymous/kmodenotpreset.md)
-- [kModeNotResize](1644539-anonymous/kmodenotresize.md)
-- [kModeRequiresPan](1644539-anonymous/kmoderequirespan.md)
-- [kModeSafe](1644539-anonymous/kmodesafe.md)
-- [kModeShowNever](1644539-anonymous/kmodeshownever.md)
-- [kModeShowNow](1644539-anonymous/kmodeshownow.md)
-- [kModeSimulscan](1644539-anonymous/kmodesimulscan.md)
-- [kModeStretched](1644539-anonymous/kmodestretched.md)
-- [kModeValid](1644539-anonymous/kmodevalid.md)
-- [kModeValidateAgainstDisplay](1644539-anonymous/kmodevalidateagainstdisplay.md)
+- [kModeBuiltIn](./api-1644539-anonymous/kmodebuiltin.md)
+- [kModeDefault](./api-1644539-anonymous/kmodedefault.md)
+- [kModeInterlaced](./api-1644539-anonymous/kmodeinterlaced.md)
+- [kModeNotGraphicsQuality](./api-1644539-anonymous/kmodenotgraphicsquality.md)
+- [kModeNotPreset](./api-1644539-anonymous/kmodenotpreset.md)
+- [kModeNotResize](./api-1644539-anonymous/kmodenotresize.md)
+- [kModeRequiresPan](./api-1644539-anonymous/kmoderequirespan.md)
+- [kModeSafe](./api-1644539-anonymous/kmodesafe.md)
+- [kModeShowNever](./api-1644539-anonymous/kmodeshownever.md)
+- [kModeShowNow](./api-1644539-anonymous/kmodeshownow.md)
+- [kModeSimulscan](./api-1644539-anonymous/kmodesimulscan.md)
+- [kModeStretched](./api-1644539-anonymous/kmodestretched.md)
+- [kModeValid](./api-1644539-anonymous/kmodevalid.md)
+- [kModeValidateAgainstDisplay](./api-1644539-anonymous/kmodevalidateagainstdisplay.md)
 
 
 ---

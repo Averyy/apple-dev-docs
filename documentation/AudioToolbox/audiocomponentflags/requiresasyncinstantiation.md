@@ -1,7 +1,8 @@
 # requiresAsyncInstantiation
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -17,16 +18,21 @@
 static var requiresAsyncInstantiation: AudioComponentFlags { get }
 ```
 
+```c
+kAudioComponentFlag_RequiresAsyncInstantiation
+```
+
 ## Mentions
 
-- [Hosting Audio Unit Extensions Using the AUv2 API](hosting-audio-unit-extensions-using-the-auv2-api.md)
+- [Hosting Audio Unit Extensions Using the AUv2 API](../hosting-audio-unit-extensions-using-the-auv2-api.md)
 
 ## See Also
 
-- [static var unsearchable: AudioComponentFlags](audiocomponentflags/unsearchable.md)
-- [static var sandboxSafe: AudioComponentFlags](audiocomponentflags/sandboxsafe.md)
-- [static var isV3AudioUnit: AudioComponentFlags](audiocomponentflags/isv3audiounit.md)
-- [static var canLoadInProcess: AudioComponentFlags](audiocomponentflags/canloadinprocess.md)
+### Flags
+- [static var unsearchable: AudioComponentFlags](./unsearchable.md)
+- [static var sandboxSafe: AudioComponentFlags](./sandboxsafe.md)
+- [static var isV3AudioUnit: AudioComponentFlags](./isv3audiounit.md)
+- [static var canLoadInProcess: AudioComponentFlags](./canloadinprocess.md)
 
 
 ---

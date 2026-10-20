@@ -1,17 +1,24 @@
 # NSSpeechSynthesizer.VoiceAttributeKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The following constants are keys for the dictionary returned by [`attributes(forVoice:)`](nsspeechsynthesizer/attributes(forvoice:).md).
+The following constants are keys for the dictionary returned by [`attributes(forVoice:)`](./attributes%28forvoice%29.md).
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVSpeechSynthesizer in AVFoundation instead
 
 ## Declaration
 
 ```swift
 struct VoiceAttributeKey
+```
+
+```c
+typedef NSString * NSVoiceAttributeKey;
 ```
 
 #### Overview
@@ -48,43 +55,44 @@ com.apple.speech.synthesis.voice.Zarvox
 ## Topics
 
 ### Voice Attribute Keys
-- [static let identifier: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/identifier.md)
+- [static let identifier: NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey/identifier.md)
   A unique string identifying the voice. The identifiers of the system voices are listed in `Listing 1`.
-- [static let name: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/name.md)
+- [static let name: NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey/name.md)
   The name of the voice suitable for display. An `NSString`.
-- [static let age: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/age.md)
+- [static let age: NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey/age.md)
   The perceived age (in years) of the voice. An `NSString`
-- [static let gender: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/gender.md)
+- [static let gender: NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey/gender.md)
   The perceived gender of the voice. The supported values are listed in `Voice Gender Keys`.  An `NSString`
-- [static let demoText: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/demotext.md)
+- [static let demoText: NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey/demotext.md)
   A demonstration string to speak. An `NSString`
-- [static let localeIdentifier: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/localeidentifier.md)
+- [static let localeIdentifier: NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey/localeidentifier.md)
   The language of the voice.  An `NSString`
-- [static let supportedCharacters: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/supportedcharacters.md)
+- [static let supportedCharacters: NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey/supportedcharacters.md)
   A list of Unicode character id ranges that define the Unicode characters supported by this voice.
-- [static let individuallySpokenCharacters: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/individuallyspokencharacters.md)
+- [static let individuallySpokenCharacters: NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey/individuallyspokencharacters.md)
   A list of Unicode character id ranges that define the Unicode characters that can be spoken in character-by-character mode by this voice.
 ### Initializers
-- [init(rawValue: String)](nsspeechsynthesizer/voiceattributekey/init(rawvalue:).md)
+- [init(rawValue: String)](./voiceattributekey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class var availableVoices: [NSSpeechSynthesizer.VoiceName]](nsspeechsynthesizer/availablevoices.md)
+### Getting Speech Synthesizer Information
+- [class var availableVoices: [NSSpeechSynthesizer.VoiceName]](./availablevoices.md)
   Provides the identifiers of the voices available on the system.
-- [class func attributes(forVoice: NSSpeechSynthesizer.VoiceName) -> [NSSpeechSynthesizer.VoiceAttributeKey : Any]](nsspeechsynthesizer/attributes(forvoice:).md)
+- [class func attributes(forVoice: NSSpeechSynthesizer.VoiceName) -> [NSSpeechSynthesizer.VoiceAttributeKey : Any]](./attributes%28forvoice%29.md)
   Provides the attribute dictionary of a voice.
-- [class var defaultVoice: NSSpeechSynthesizer.VoiceName](nsspeechsynthesizer/defaultvoice.md)
+- [class var defaultVoice: NSSpeechSynthesizer.VoiceName](./defaultvoice.md)
   Provides the identifier of the default voice.
-- [NSSpeechSynthesizer.VoiceName](nsspeechsynthesizer/voicename.md)
+- [NSSpeechSynthesizer.VoiceName](./voicename.md)
 
 
 ---

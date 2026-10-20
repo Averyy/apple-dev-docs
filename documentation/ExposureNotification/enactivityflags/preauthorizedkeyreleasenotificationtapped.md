@@ -1,14 +1,17 @@
 # preAuthorizedKeyReleaseNotificationTapped
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The property that specifies launching the app in the foreground to display preauthorized key-release information.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,13 +19,18 @@ The property that specifies launching the app in the foreground to display preau
 static var preAuthorizedKeyReleaseNotificationTapped: ENActivityFlags { get }
 ```
 
+```c
+ENActivityFlagsPreAuthorizedKeyReleaseNotificationTapped
+```
+
 ## See Also
 
-- [static var periodicRun: ENActivityFlags](enactivityflags/periodicrun.md)
+### Type Properties
+- [static var periodicRun: ENActivityFlags](./periodicrun.md)
   The property that specifies launching the app in the background for periodic operation in iOS 12.5.
-- [static var reserved1: ENActivityFlags](enactivityflags/reserved1.md)
+- [static var reserved1: ENActivityFlags](./reserved1.md)
   This property is reserved.
-- [static var reserved2: ENActivityFlags](enactivityflags/reserved2.md)
+- [static var reserved2: ENActivityFlags](./reserved2.md)
   This property is reserved.
 
 

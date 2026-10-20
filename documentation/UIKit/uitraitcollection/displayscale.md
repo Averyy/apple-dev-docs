@@ -1,7 +1,8 @@
 # displayScale
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display scale of the trait collection.
 
@@ -9,7 +10,7 @@ The display scale of the trait collection.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The display scale of the trait collection.
 var displayScale: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat displayScale;
+```
+
 #### Discussion
 
 A value of `1.0` indicates a non-Retina display, `2.0` indicates a Retina display, and `3.0` indicates a Super Retina display. The default display scale for a trait collection is `0.0` (indicating unspecified).
 
 ## See Also
 
-- [var displayGamut: UIDisplayGamut](uitraitcollection/displaygamut.md)
+### Retrieving display-related traits
+- [var displayGamut: UIDisplayGamut](./displaygamut.md)
   The gamut of the current display.
-- [enum UIDisplayGamut](uidisplaygamut.md)
+- [enum UIDisplayGamut](../uidisplaygamut.md)
   Constants that indicate the gamut of the current display.
 
 

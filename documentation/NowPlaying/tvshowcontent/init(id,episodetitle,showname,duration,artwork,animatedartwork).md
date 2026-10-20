@@ -1,7 +1,8 @@
 # init(id:episodeTitle:showName:duration:artwork:animatedArtwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates TV show episode content with static and animated artwork.
 

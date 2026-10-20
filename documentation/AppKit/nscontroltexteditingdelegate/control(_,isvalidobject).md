@@ -1,12 +1,13 @@
 # control(_:isValidObject:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the insertion point leaves a cell belonging to the specified control, but before the value of the cell’s object is displayed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Invoked when the insertion point leaves a cell belonging to the specified contro
 optional func control(_ control: NSControl, isValidObject obj: Any?) -> Bool
 ```
 
+```objc
+- (BOOL) control:(NSControl *) control isValidObject:(id) obj;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want to allow the control to display the specified value; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) to reject the value and return the cursor to the control’s cell.
+[`true`](../../Swift/true.md) if you want to allow the control to display the specified value; otherwise, [`false`](../../Swift/false.md) to reject the value and return the cursor to the control’s cell.
 
 #### Discussion
 
@@ -30,9 +35,11 @@ This method gives the delegate the opportunity to validate the contents of the c
 
 ## See Also
 
-- [protocol NSControlTextEditingDelegate](nscontroltexteditingdelegate.md)
-  A set of optional methods implemented by delegates of [`NSControl`](nscontrol.md) subclasses to respond to editing actions.
-- [func control(NSControl, didFailToValidatePartialString: String, errorDescription: String?)](nscontroltexteditingdelegate/control(_:didfailtovalidatepartialstring:errordescription:).md)
+### Related Documentation
+- [protocol NSControlTextEditingDelegate](../nscontroltexteditingdelegate.md)
+  A set of optional methods implemented by delegates of [`NSControl`](../nscontrol.md) subclasses to respond to editing actions.
+### Validating a Control’s Value
+- [func control(NSControl, didFailToValidatePartialString: String, errorDescription: String?)](./control%28_,didfailtovalidatepartialstring,errordescription%29.md)
   Invoked when the formatter for the cell belonging to `control` (or selected cell) rejects a partial string a user is typing into the cell.
 
 

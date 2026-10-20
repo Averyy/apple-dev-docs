@@ -1,7 +1,8 @@
 # targetRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text range (if any) of the target element.
 
@@ -18,9 +19,14 @@ The text range (if any) of the target element.
 var targetRange: UITextRange? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) UITextRange * targetRange;
+```
+
 ## See Also
 
-- [var targetElement: (any NSObjectProtocol)?](uiaccessibilitycustomrotoritemresult/targetelement.md)
+### Getting information about the target element
+- [var targetElement: (any NSObjectProtocol)?](./targetelement.md)
   The target element of the rotor.
 
 

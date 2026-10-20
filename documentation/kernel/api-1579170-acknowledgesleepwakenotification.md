@@ -1,36 +1,38 @@
 # acknowledgeSleepWakeNotification
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 IOReturn acknowledgeSleepWakeNotification(void *);
 ```
 
 ## See Also
 
-- [IOACPIPlatformDevice](ioacpiplatformdevice.md)
-- [IOACPIPlatformExpert](ioacpiplatformexpert.md)
-- [IOPMPowerSource](iopmpowersource.md)
-- [IOPMPowerSourceList](iopmpowersourcelist.md)
-- [IOPMrootDomain](iopmrootdomain.md)
-- [IOPowerConnection](iopowerconnection.md)
-- [IOPwrController](iopwrcontroller.md)
-- [IOACPIAddress](ioacpiaddress.md)
-- [IOACPIAddressSpaceDescriptor](ioacpiaddressspacedescriptor.md)
-- [IOACPIAddressSpaceHandler](ioacpiaddressspacehandler.md)
-- [IOACPIAddressSpaceID](ioacpiaddressspaceid.md)
-- [IOPMPowerState](iopmpowerstate.md)
-- [gIOACPIAddressKey](gioacpiaddresskey.md)
-- [gIOACPIDeviceStatusKey](gioacpidevicestatuskey.md)
-- [gIOACPIHardwareIDKey](gioacpihardwareidkey.md)
-- [gIOACPIPlane](gioacpiplane.md)
-- [gIOACPIUniqueIDKey](gioacpiuniqueidkey.md)
+### Power Management
+- [IOACPIPlatformDevice](./ioacpiplatformdevice.md)
+- [IOACPIPlatformExpert](./ioacpiplatformexpert.md)
+- [IOPMPowerSource](./iopmpowersource.md)
+- [IOPMPowerSourceList](./iopmpowersourcelist.md)
+- [IOPMrootDomain](./iopmrootdomain.md)
+- [IOPowerConnection](./iopowerconnection.md)
+- [IOPwrController](./iopwrcontroller.md)
+- [IOACPIAddress](./ioacpiaddress.md)
+- [IOACPIAddressSpaceDescriptor](./ioacpiaddressspacedescriptor.md)
+- [IOACPIAddressSpaceHandler](./ioacpiaddressspacehandler.md)
+- [IOACPIAddressSpaceID](./ioacpiaddressspaceid.md)
+- [IOPMPowerState](./iopmpowerstate.md)
+- [gIOACPIAddressKey](./gioacpiaddresskey.md)
+- [gIOACPIDeviceStatusKey](./gioacpidevicestatuskey.md)
+- [gIOACPIHardwareIDKey](./gioacpihardwareidkey.md)
+- [gIOACPIPlane](./gioacpiplane.md)
+- [gIOACPIUniqueIDKey](./gioacpiuniqueidkey.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ScmProviderType
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The source code management provider’s type.
 
@@ -10,7 +11,7 @@ The source code management provider’s type.
 
 ## Declaration
 
-```swift
+```
 object ScmProviderType
 ```
 
@@ -20,9 +21,12 @@ object ScmProviderType
 - `isOnPremise` (boolean): A Boolean value that indicates whether it’s a self-hosted source code management provider.
 - `kind` (string): A string that represents the kind of a Providers resource.
 
+  **Allowed Values**: `BITBUCKET_CLOUD`, `BITBUCKET_SERVER`, `GITHUB_CLOUD`, `GITHUB_ENTERPRISE`, `GITLAB_CLOUD`, `GITLAB_SELF_MANAGED`
+
 ## See Also
 
-- [object ScmProvider.Attributes](scmprovider/attributes-data.dictionary.md)
+### Objects and types
+- [object ScmProvider.Attributes](./scmprovider/attributes-data.dictionary.md)
   The attributes that describe a Providers resource.
 
 

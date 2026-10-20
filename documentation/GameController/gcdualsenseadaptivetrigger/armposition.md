@@ -1,7 +1,8 @@
 # armPosition
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the trigger’s arm.
 
@@ -19,13 +20,18 @@ The position of the trigger’s arm.
 var armPosition: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float armPosition;
+```
+
 #### Discussion
 
 This property represents the value of the stepped mechanical arm inside the trigger and isn’t the same as the trigger’s inherited `value` property. This property ranges between `0` and `1`, where `0` represents the minimum and `1` represents the maximum position.
 
 ## See Also
 
-- [class var discretePositionCount: Int](gcdualsenseadaptivetrigger/discretepositioncount.md)
+### Getting the arm position
+- [class var discretePositionCount: Int](./discretepositioncount.md)
   The number of discrete control positions that the DualSense adaptive triggers support.
 
 

@@ -1,7 +1,8 @@
 # mediaType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media type of the samples that the input accepts.
 
@@ -19,11 +20,16 @@ The media type of the samples that the input accepts.
 var mediaType: AVMediaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVMediaType mediaType;
+```
+
 ## See Also
 
-- [var outputSettings: [String : Any]?](avassetwriterinput/outputsettings.md)
+### Inspecting an input
+- [var outputSettings: [String : Any]?](./outputsettings.md)
   The settings to use for encoding media data you append to the output.
-- [var sourceFormatHint: CMFormatDescription?](avassetwriterinput/sourceformathint.md)
+- [var sourceFormatHint: CMFormatDescription?](./sourceformathint.md)
   A hint about the format of the sample buffers to append to the input.
 
 

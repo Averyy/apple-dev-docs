@@ -1,7 +1,8 @@
 # limitAttachment(with:offsetFromCenter:attachedTo:offsetFromCenter:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns an attachment behavior object where two items are constrained by a maximum distance from one another.
 
@@ -18,6 +19,10 @@ Creates and returns an attachment behavior object where two items are constraine
 class func limitAttachment(with item1: any UIDynamicItem, offsetFromCenter offset1: UIOffset, attachedTo item2: any UIDynamicItem, offsetFromCenter offset2: UIOffset) -> Self
 ```
 
+```objc
++ (instancetype) limitAttachmentWithItem:(id<UIDynamicItem>) item1 offsetFromCenter:(UIOffset) offset1 attachedToItem:(id<UIDynamicItem>) item2 offsetFromCenter:(UIOffset) offset2;
+```
+
 #### Return Value
 
 A new attachment object or `nil` if the object could not be created.
@@ -26,32 +31,33 @@ A new attachment object or `nil` if the object could not be created.
 
 The behavior created by this method is like connecting two items with a rope. The only constraint between the items is the maximum distance between them, which corresponds to the moment when the rope is taut. At other times, the objects move freely relative to one another.
 
-The initial maximum distance between the items is set using the current position of the items. You can change the maximum distance by modifying the [`length`](uiattachmentbehavior/length.md) property.
+The initial maximum distance between the items is set using the current position of the items. You can change the maximum distance by modifying the [`length`](./length.md) property.
 
 ## Parameters
 
 - `item1`: The first of two dynamic items connected by the attachment behavior.
-- `offset1`: The offset from the center of `item1` that corresponds to the attachment point. Use an offset value to create rotational torque on the item. To pull the item from its center, specify [`zero`](uioffset/zero.md).
+- `offset1`: The offset from the center of `item1` that corresponds to the attachment point. Use an offset value to create rotational torque on the item. To pull the item from its center, specify [`zero`](../uioffset/zero.md).
 - `item2`: The second of two dynamic items connected by the attachment behavior.
-- `offset2`: The offset from the center of `item2` that corresponds to the attachment point. Use an offset value to create rotational torque on the item. To pull the item from its center, specify [`zero`](uioffset/zero.md).
+- `offset2`: The offset from the center of `item2` that corresponds to the attachment point. Use an offset value to create rotational torque on the item. To pull the item from its center, specify [`zero`](../uioffset/zero.md).
 
 ## See Also
 
-- [class func slidingAttachment(with: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](uiattachmentbehavior/slidingattachment(with:attachmentanchor:axisoftranslation:).md)
+### Creating and initializing attachment behavior objects
+- [class func slidingAttachment(with: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](./slidingattachment%28with,attachmentanchor,axisoftranslation%29.md)
   Creates and returns an attachment behavior where one item slides along the specified axis.
-- [class func slidingAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](uiattachmentbehavior/slidingattachment(with:attachedto:attachmentanchor:axisoftranslation:).md)
+- [class func slidingAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](./slidingattachment%28with,attachedto,attachmentanchor,axisoftranslation%29.md)
   Creates and returns an attachment behavior where two items are fixed to points that slide along the specified axis.
-- [class func fixedAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](uiattachmentbehavior/fixedattachment(with:attachedto:attachmentanchor:).md)
+- [class func fixedAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](./fixedattachment%28with,attachedto,attachmentanchor%29.md)
   Creates and returns an attachment behavior where the two items are fixed together through the specified anchor point.
-- [class func pinAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](uiattachmentbehavior/pinattachment(with:attachedto:attachmentanchor:).md)
+- [class func pinAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](./pinattachment%28with,attachedto,attachmentanchor%29.md)
   Creates and returns an attachment behavior where the two items are pinned to, and move around, an anchor point
-- [convenience init(item: any UIDynamicItem, attachedToAnchor: CGPoint)](uiattachmentbehavior/init(item:attachedtoanchor:).md)
+- [convenience init(item: any UIDynamicItem, attachedToAnchor: CGPoint)](./init%28item,attachedtoanchor%29.md)
   Initializes a behavior where the center of a dynamic item is attached to the specified anchor point.
-- [convenience init(item: any UIDynamicItem, attachedTo: any UIDynamicItem)](uiattachmentbehavior/init(item:attachedto:).md)
+- [convenience init(item: any UIDynamicItem, attachedTo: any UIDynamicItem)](./init%28item,attachedto%29.md)
   Initializes a behavior where the centers of two dynamic items are attached to each other.
-- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedToAnchor: CGPoint)](uiattachmentbehavior/init(item:offsetfromcenter:attachedtoanchor:).md)
+- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedToAnchor: CGPoint)](./init%28item,offsetfromcenter,attachedtoanchor%29.md)
   Initializes a behavior where the specified point in a dynamic item is attached to an anchor point.
-- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset)](uiattachmentbehavior/init(item:offsetfromcenter:attachedto:offsetfromcenter:).md)
+- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset)](./init%28item,offsetfromcenter,attachedto,offsetfromcenter%29.md)
   Initializes an attachment behavior that connects a specified point in one dynamic item to a specified point in another dynamic item.
 
 

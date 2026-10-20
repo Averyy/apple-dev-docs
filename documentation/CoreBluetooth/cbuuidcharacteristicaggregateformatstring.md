@@ -1,7 +1,8 @@
 # CBUUIDCharacteristicAggregateFormatString
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The UUID for the Aggregate Format descriptor, as a string.
 
@@ -20,19 +21,24 @@ The UUID for the Aggregate Format descriptor, as a string.
 let CBUUIDCharacteristicAggregateFormatString: String
 ```
 
+```c
+extern NSString * const CBUUIDCharacteristicAggregateFormatString;
+```
+
 ## See Also
 
-- [let CBUUIDCharacteristicExtendedPropertiesString: String](cbuuidcharacteristicextendedpropertiesstring.md)
+### Characteristic Descriptors
+- [let CBUUIDCharacteristicExtendedPropertiesString: String](./cbuuidcharacteristicextendedpropertiesstring.md)
   The UUID for the Extended Properties descriptor, as a string.
-- [let CBUUIDCharacteristicUserDescriptionString: String](cbuuidcharacteristicuserdescriptionstring.md)
+- [let CBUUIDCharacteristicUserDescriptionString: String](./cbuuidcharacteristicuserdescriptionstring.md)
   The UUID for the User Description descriptor, as a string.
-- [let CBUUIDClientCharacteristicConfigurationString: String](cbuuidclientcharacteristicconfigurationstring.md)
+- [let CBUUIDClientCharacteristicConfigurationString: String](./cbuuidclientcharacteristicconfigurationstring.md)
   The UUID for the Client Configuration descriptor, as a string.
-- [let CBUUIDServerCharacteristicConfigurationString: String](cbuuidservercharacteristicconfigurationstring.md)
+- [let CBUUIDServerCharacteristicConfigurationString: String](./cbuuidservercharacteristicconfigurationstring.md)
   The UUID for the Server Configuration descriptor, as a string.
-- [let CBUUIDCharacteristicFormatString: String](cbuuidcharacteristicformatstring.md)
+- [let CBUUIDCharacteristicFormatString: String](./cbuuidcharacteristicformatstring.md)
   The UUID for the Presentation Format descriptor, as a string.
-- [let CBUUIDL2CAPPSMCharacteristicString: String](cbuuidl2cappsmcharacteristicstring.md)
+- [let CBUUIDL2CAPPSMCharacteristicString: String](./cbuuidl2cappsmcharacteristicstring.md)
   The PSM of an L2CAP channel associated with the GATT service containing this characteristic.
 
 

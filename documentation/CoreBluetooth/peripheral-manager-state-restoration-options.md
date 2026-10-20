@@ -1,22 +1,24 @@
 # Peripheral Manager State Restoration Options
 
-**Framework**: Core Bluetooth
+**Framework**: Core Bluetooth  
+**Role**: API Collection
 
 Keys used to specify options when restoring the state of a peripheral manager.
 
 ## Topics
 
 ### State Restoration Dictionary Keys
-- [let CBPeripheralManagerRestoredStateServicesKey: String](cbperipheralmanagerrestoredstateserviceskey.md)
+- [let CBPeripheralManagerRestoredStateServicesKey: String](./cbperipheralmanagerrestoredstateserviceskey.md)
   An array of restored peripheral services.
-- [let CBPeripheralManagerRestoredStateAdvertisementDataKey: String](cbperipheralmanagerrestoredstateadvertisementdatakey.md)
+- [let CBPeripheralManagerRestoredStateAdvertisementDataKey: String](./cbperipheralmanagerrestoredstateadvertisementdatakey.md)
   A dictionary of restored advertising data.
 
 ## See Also
 
-- [func peripheralManagerDidUpdateState(CBPeripheralManager)](cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate(_:).md)
+### Monitoring Changes to the Peripheral Manager’s State
+- [func peripheralManagerDidUpdateState(CBPeripheralManager)](./cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate%28_%29.md)
   Tells the delegate the peripheral manager’s state updated.
-- [func peripheralManager(CBPeripheralManager, willRestoreState: [String : Any])](cbperipheralmanagerdelegate/peripheralmanager(_:willrestorestate:).md)
+- [func peripheralManager(CBPeripheralManager, willRestoreState: [String : Any])](./cbperipheralmanagerdelegate/peripheralmanager%28_,willrestorestate%29.md)
   Tells the delegate the system is about to restore the peripheral manager.
 
 

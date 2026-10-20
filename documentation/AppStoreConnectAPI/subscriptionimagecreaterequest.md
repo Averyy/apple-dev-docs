@@ -1,23 +1,26 @@
 # SubscriptionImageCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a subscription purchase image reservation.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 3.6+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`SubscriptionImageV2CreateRequest`](./subscriptionimagev2createrequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionImageCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionImageCreateRequest.Data](subscriptionimagecreaterequest/data-data.dictionary.md)
+- [object SubscriptionImageCreateRequest.Data](./subscriptionimagecreaterequest/data-data.dictionary.md)
   The request body you use to create a subscription purchase image reservation.
 
 ## Properties
@@ -26,15 +29,16 @@ object SubscriptionImageCreateRequest
 
 ## See Also
 
-- [object SubscriptionImage](subscriptionimage.md)
+### Objects
+- [object SubscriptionImage](./subscriptionimage.md)
   An image used to represent a subscription product on the App Store product page.
-- [object SubscriptionImageResponse](subscriptionimageresponse.md)
+- [object SubscriptionImageResponse](./subscriptionimageresponse.md)
   A response containing a single subscription product image.
-- [object SubscriptionImagesResponse](subscriptionimagesresponse.md)
+- [object SubscriptionImagesResponse](./subscriptionimagesresponse.md)
   A response containing a list of images for a subscription product.
-- [object SubscriptionImageUpdateRequest](subscriptionimageupdaterequest.md)
+- [object SubscriptionImageUpdateRequest](./subscriptionimageupdaterequest.md)
   The request body for updating the upload status or content of a subscription product image.
-- [object SubscriptionImagesLinkagesResponse](subscriptionimageslinkagesresponse.md)
+- [object SubscriptionImagesLinkagesResponse](./subscriptionimageslinkagesresponse.md)
 
 
 ---

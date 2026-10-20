@@ -2,6 +2,7 @@
 
 **Framework**: AudioAccessoryKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the head-tracking session has been invalidated.

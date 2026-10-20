@@ -1,7 +1,8 @@
 # results
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results as an asynchronous sequence of matches.
 
@@ -22,11 +23,12 @@ var results: SHSession.Results { get }
 
 ## See Also
 
-- [var delegate: (any SHSessionDelegate)?](shsession/delegate.md)
+### Reading the session properties
+- [var delegate: (any SHSessionDelegate)?](./delegate.md)
   The object that the session calls with the result of a match request.
-- [var catalog: SHCatalog](shsession/catalog.md)
+- [var catalog: SHCatalog](./catalog.md)
   The catalog object containing the reference signatures and their associated metadata that the session uses to perform matches.
-- [SHSession.Results](shsession/results-swift.struct.md)
+- [SHSession.Results](./results-swift.struct.md)
   An asynchronous sequence that emits updates from a session object query.
 
 

@@ -1,7 +1,8 @@
 # delegateQueue
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue on which the session invokes delegate callbacks.
 
@@ -17,19 +18,24 @@ The dispatch queue on which the session invokes delegate callbacks.
 var delegateQueue: dispatch_queue_t? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) dispatch_queue_t delegateQueue;
+```
+
 #### Discussion
 
-By default, NI invokes delegate callbacks on [`main`](https://developer.apple.com/documentation/dispatch/dispatchqueue/main).
+By default, NI invokes delegate callbacks on [`main`](../../Dispatch/dispatchqueue/main.md).
 
 ## See Also
 
-- [var discoveryToken: NIDiscoveryToken?](nisession/discoverytoken.md)
+### Connecting to a peer device
+- [var discoveryToken: NIDiscoveryToken?](./discoverytoken.md)
   A temporary, random identifier for a device.
-- [class NIDiscoveryToken](nidiscoverytoken.md)
+- [class NIDiscoveryToken](../nidiscoverytoken.md)
   An object that uniquely identifies a peer that participates in an interaction session.
-- [func run(NIConfiguration)](nisession/run(_:).md)
+- [func run(NIConfiguration)](./run%28_%29.md)
   Starts a session with a nearby peer.
-- [var configuration: NIConfiguration?](nisession/configuration.md)
+- [var configuration: NIConfiguration?](./configuration.md)
   The configuration run by the session.
 
 

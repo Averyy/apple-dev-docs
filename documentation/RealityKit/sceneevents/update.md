@@ -1,7 +1,8 @@
 # SceneEvents.Update
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event invoked once per frame interval that you can use to execute custom logic for each frame.
 
@@ -11,7 +12,7 @@ An event invoked once per frame interval that you can use to execute custom logi
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,21 +23,22 @@ struct Update
 ## Topics
 
 ### Characterizing an update
-- [let scene: Scene](sceneevents/update/scene.md)
+- [let scene: Scene](./update/scene.md)
   The updated scene.
-- [let deltaTime: TimeInterval](sceneevents/update/deltatime.md)
+- [let deltaTime: TimeInterval](./update/deltatime.md)
   The elapsed time since the last update.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SceneEvents.AnchoredStateChanged](sceneevents/anchoredstatechanged.md)
+### Detecting scene-level updates
+- [SceneEvents.AnchoredStateChanged](./anchoredstatechanged.md)
   An event invoked when the anchored state of an anchoring entity changes.
 
 

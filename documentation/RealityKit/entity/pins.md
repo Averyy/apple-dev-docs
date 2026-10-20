@@ -1,7 +1,8 @@
 # pins
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity’s geometric pins.
 
@@ -22,11 +23,11 @@ The entity’s geometric pins.
 
 #### Discussion
 
-You can look up, add, and remove a [`GeometricPin`](geometricpin.md) for the owning entity through this [`EntityGeometricPins`](entitygeometricpins.md) instance. The entity’s [`GeometricPinsComponent`](geometricpinscomponent.md) stores any added geometric pins.
+You can look up, add, and remove a [`GeometricPin`](../geometricpin.md) for the owning entity through this [`EntityGeometricPins`](../entitygeometricpins.md) instance. The entity’s [`GeometricPinsComponent`](../geometricpinscomponent.md) stores any added geometric pins.
 
-Other [`Component`](component.md) types on an [`Entity`](entity.md) may also provide [`GeometricPin`](geometricpin.md) instances, such as for skeletal pose joints. There is no distinction between these two when [`GeometricPin`](geometricpin.md) instances are accessed.
+Other [`Component`](../component.md) types on an [`Entity`](../entity.md) may also provide [`GeometricPin`](../geometricpin.md) instances, such as for skeletal pose joints. There is no distinction between these two when [`GeometricPin`](../geometricpin.md) instances are accessed.
 
-##### Geometric Pins for Skeletal Pose Joints
+##### Geometric pins for skeletal pose joints
 
 Pins for skeletal pose joints are not predefined, they need to be set in entity’s GeometricPinsComponent before you can access them. When associating a pin with a skeletal pose joint, you need to pass in the correct joint names either in full pose joint name or with its leaf joint name:
 
@@ -35,9 +36,9 @@ let fullNamePin = skeletalPoseEntity.pins.set(named: "fullName", skeletalJointNa
 let shortNamePin = skeletalPoseEntity.pins.set(named: "shortName", skeletalJointName: "spine_2_joint")
 ```
 
-The pose (position and orientation) of the [`GeometricPin`](geometricpin.md) is the current pose of the joint in the coordinate frame of the [`Entity`](entity.md) (i.e. *not* relative to the parent joint). While the skeletal pose is animated, the [`GeometricPin`](geometricpin.md) pose change on every frame.
+The pose (position and orientation) of the [`GeometricPin`](../geometricpin.md) is the current pose of the joint in the coordinate frame of the [`Entity`](../entity.md) (i.e. *not* relative to the parent joint). While the skeletal pose is animated, the [`GeometricPin`](../geometricpin.md) pose change on every frame.
 
-To print all the pins, you can loop over [`pins`](entity/pins.md).
+To print all the pins, you can loop over [`pins`](./pins.md).
 
 ```swift
 for pin in skeletalPoseEntity.pins {

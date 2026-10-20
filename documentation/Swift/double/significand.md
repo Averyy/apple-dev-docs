@@ -1,7 +1,8 @@
 # significand
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The significand of the floating-point value.
 
@@ -43,19 +44,20 @@ If a type’s radix is 2, then for finite nonzero numbers, the significand is in
 - If `x` is infinite, then `x.significand` is infinity.
 - If `x` is NaN, then `x.significand` is NaN.
 
-> **Note**: The significand is frequently also called the *mantissa*, but significand is the preferred terminology in the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933), to allay confusion with the use of mantissa for the fractional part of a logarithm.
+> **Note**: The significand is frequently also called the *mantissa*, but significand is the preferred terminology in the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933), to allay confusion with the use of mantissa for the fractional part of a logarithm.
 
 ## See Also
 
-- [var ulp: Double](double/ulp.md)
+### Querying a Double
+- [var ulp: Double](./ulp.md)
   The unit in the last place of this value.
-- [var exponent: Int](double/exponent-swift.property.md)
+- [var exponent: Int](./exponent-swift.property.md)
   The exponent of the floating-point value.
-- [var nextUp: Double](double/nextup.md)
+- [var nextUp: Double](./nextup.md)
   The least representable value that compares greater than this value.
-- [var nextDown: Self](double/nextdown.md)
+- [var nextDown: Self](./nextdown.md)
   The greatest representable value that compares less than this value.
-- [var binade: Double](double/binade.md)
+- [var binade: Double](./binade.md)
   The floating-point value with the same sign and exponent as this value, but with a significand of 1.0.
 
 

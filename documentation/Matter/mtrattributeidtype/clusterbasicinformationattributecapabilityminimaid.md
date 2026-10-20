@@ -1,7 +1,8 @@
 # clusterBasicInformationAttributeCapabilityMinimaID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterBasicInformationAttributeCapabilityMinimaID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterBasicInformationAttributeCapabilityMinimaID
 ```
 
 

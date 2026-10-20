@@ -1,7 +1,8 @@
 # isNextRowSelected
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
@@ -12,9 +13,14 @@
 var isNextRowSelected: Bool { get set }
 ```
 
+```objc
+@property (getter=isNextRowSelected) BOOL nextRowSelected;
+```
+
 ## See Also
 
-- [var isPreviousRowSelected: Bool](nstablerowview/ispreviousrowselected.md)
+### Instance Properties
+- [var isPreviousRowSelected: Bool](./ispreviousrowselected.md)
 
 
 ---

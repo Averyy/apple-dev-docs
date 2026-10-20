@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: AdAttributionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A function that hashes the essential components of the value by passing them into the hasher.
 
@@ -22,7 +23,8 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [static func == (AppImpression, AppImpression) -> Bool](appimpression/==(_:_:).md)
+### Comparing and hashing ad impressions
+- [static func == (AppImpression, AppImpression) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 

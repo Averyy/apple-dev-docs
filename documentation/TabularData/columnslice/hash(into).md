@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of the column slice by feeding them into a hasher.
 
@@ -19,6 +20,8 @@ Hashes the essential components of the column slice by feeding them into a hashe
 ```swift
 func hash(into hasher: inout Hasher)
 ```
+
+Available when `WrappedElement` conforms to `Hashable`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # setActionName(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the name of the action associated with the Undo or Redo command.
 
@@ -20,6 +21,10 @@ Sets the name of the action associated with the Undo or Redo command.
 func setActionName(_ actionName: String)
 ```
 
+```objc
+- (void) setActionName:(NSString *) actionName;
+```
+
 #### Discussion
 
 If `actionName` is an empty string, the undo manager removes the action name currently associated with the menu command.
@@ -30,11 +35,12 @@ If `actionName` is an empty string, the undo manager removes the action name cur
 
 ## See Also
 
-- [var undoActionName: String](undomanager/undoactionname.md)
+### Managing the action name
+- [var undoActionName: String](./undoactionname.md)
   The name identifying the undo action.
-- [var redoActionName: String](undomanager/redoactionname.md)
+- [var redoActionName: String](./redoactionname.md)
   The name identifying the redo action.
-- [func setActionName(LocalizedStringResource?)](undomanager/setactionname(_:)-cci9.md)
+- [func setActionName(LocalizedStringResource?)](./setactionname%28_%29-cci9.md)
   Sets the name of the action associated with the Undo or Redo command using a localized string resource.
 
 

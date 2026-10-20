@@ -1,7 +1,8 @@
 # Movie.Prices
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A mapping of storefront to pricing information and availability.
 
@@ -10,14 +11,14 @@ A mapping of storefront to pricing information and availability.
 
 ## Declaration
 
-```swift
+```
 object Movie.Prices
 ```
 
 ## Topics
 
 ### Related objects
-- [object Movie.Prices.Price](movie/prices-data.dictionary/price.md)
+- [object Movie.Prices.Price](./prices-data.dictionary/price.md)
   Information about a pricing offer.
 
 ## Properties
@@ -27,23 +28,24 @@ object Movie.Prices
 
 ## See Also
 
-- [object Movie.Artworks](movie/artworks-data.dictionary.md)
+### Related objects
+- [object Movie.Artworks](./artworks-data.dictionary.md)
   A mapping of locale to localized artwork.
-- [object Movie.CastAndCrew](movie/castandcrew-data.dictionary.md)
+- [object Movie.CastAndCrew](./castandcrew-data.dictionary.md)
   Information about a cast or crew member, including translations of their name.
-- [object Movie.Description](movie/description-data.dictionary.md)
+- [object Movie.Description](./description-data.dictionary.md)
   A mapping of locale to localized descriptions of the movie.
-- [object Movie.ExternalContentId](movie/externalcontentid.md)
+- [object Movie.ExternalContentId](./externalcontentid.md)
   Information about an external content ID.
-- [object Movie.Genre](movie/genre.md)
+- [object Movie.Genre](./genre.md)
   A genre name and its structure.
-- [object Movie.Name](movie/name-data.dictionary.md)
+- [object Movie.Name](./name-data.dictionary.md)
   A mapping of locale to localized names for the movie.
-- [object Movie.OriginalReleaseDate](movie/originalreleasedate-data.dictionary.md)
+- [object Movie.OriginalReleaseDate](./originalreleasedate-data.dictionary.md)
   A mapping of locale to localized release date.
-- [object Movie.Rating](movie/rating-data.dictionary.md)
+- [object Movie.Rating](./rating-data.dictionary.md)
   Information about a content rating.
-- [object Movie.Url](movie/url-data.dictionary.md)
+- [object Movie.Url](./url-data.dictionary.md)
   A mapping of locale to localized URLs for the content.
 
 

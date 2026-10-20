@@ -17,13 +17,13 @@ At appropriate times, UIKit preserves the state of your app’s views and view c
 
 If you define your interface entirely in storyboards, UIKit knows how to recreate your view controllers, and does so automatically. If you don’t use storyboards, or if you want more control over the creation and initialization of your view controllers, you can create them yourself.
 
-To see an example of state preservation and restoration, see [`Restoring your app’s state`](restoring-your-app-s-state.md).
+To see an example of state preservation and restoration, see [Restoring your app’s state](./restoring-your-app-s-state.md).
 
-##### Enable State Preservation and Restoration for Your App
+##### Enable state preservation and restoration for your app
 
-You opt-in to state preservation and restoration by implementing your app delegate’s [`application(_:shouldSaveSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldsavesecureapplicationstate:).md) and [`application(_:shouldRestoreSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md) methods. Both methods return a Boolean value indicating whether the associated process should occur, and in most cases you simply return [`true`](https://developer.apple.com/documentation/swift/true). However, you can return [`false`](https://developer.apple.com/documentation/swift/false) at times when restoring your app’s interface might not be appropriate.
+You opt-in to state preservation and restoration by implementing your app delegate’s [`application(_:shouldSaveSecureApplicationState:)`](./uiapplicationdelegate/application%28_,shouldsavesecureapplicationstate%29.md) and [`application(_:shouldRestoreSecureApplicationState:)`](./uiapplicationdelegate/application%28_,shouldrestoresecureapplicationstate%29.md) methods. Both methods return a Boolean value indicating whether the associated process should occur, and in most cases you simply return [`true`](../Swift/true.md). However, you can return [`false`](../Swift/false.md) at times when restoring your app’s interface might not be appropriate.
 
-When UIKit calls your [`application(_:shouldSaveSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldsavesecureapplicationstate:).md) method, you can save data in addition to returning [`true`](https://developer.apple.com/documentation/swift/true). You might save data that you intend to use during the restoration process. For example, the following code shows an example that saves the app’s current version number. At restoration time, the [`application(_:shouldRestoreSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md) method checks the version number in the archive and prevents restoration from occurring if it doesn’t match the expected version.
+When UIKit calls your [`application(_:shouldSaveSecureApplicationState:)`](./uiapplicationdelegate/application%28_,shouldsavesecureapplicationstate%29.md) method, you can save data in addition to returning [`true`](../Swift/true.md). You might save data that you intend to use during the restoration process. For example, the following code shows an example that saves the app’s current version number. At restoration time, the [`application(_:shouldRestoreSecureApplicationState:)`](./uiapplicationdelegate/application%28_,shouldrestoresecureapplicationstate%29.md) method checks the version number in the archive and prevents restoration from occurring if it doesn’t match the expected version.
 
 ```swift
 func application(_ application: UIApplication, 
@@ -48,23 +48,23 @@ func application(_ application: UIApplication,
 }
 ```
 
-If you prevent restoration from occurring, you can still configure your app’s interface manually in the [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method of your app delegate.
+If you prevent restoration from occurring, you can still configure your app’s interface manually in the [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method of your app delegate.
 
-##### Assign Restoration Identifiers to Your View Controllers
+##### Assign restoration identifiers to your view controllers
 
-You explicitly tell UIKit which view controllers to preserve by assigning restoration identifiers to them. A restoration identifier is a unique string that you assign to the view controller programmatically or in Interface Builder. The name of the view controller class is usually a suitable restoration identifier, but you may use any string. Add that string to the view controller in your storyboard file or assign it to the view controller’s [`restorationIdentifier`](uiviewcontroller/restorationidentifier.md) property at runtime.
+You explicitly tell UIKit which view controllers to preserve by assigning restoration identifiers to them. A restoration identifier is a unique string that you assign to the view controller programmatically or in Interface Builder. The name of the view controller class is usually a suitable restoration identifier, but you may use any string. Add that string to the view controller in your storyboard file or assign it to the view controller’s [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) property at runtime.
 
-![Screenshot of specifying a restoration identifier in a storyboard file.](/images/com.apple.uikit/preserving-your-app-s-ui-across-launches@2x.png)
+![Screenshot of specifying a restoration identifier in a storyboard file.](https://developer.apple.com/tutorials/images/com.apple.uikit/preserving-your-app-s-ui-across-launches@2x.png)
 
 At preservation time, UIKit attempts to preserve the root view controllers of your app’s windows. For each root view controller with a restoration identifier, UIKit asks that view controller to encode its custom data in an archive. A container view controller can encode references to its child view controllers as part of its custom data. If it does, and if those view controllers also have restoration identifiers, UIKit attempts to preserve the child view controllers and their contents. This process continues recursively, following the connections from one view controller to the next until all of them are saved or ignored.
 
 You aren’t required to assign a restoration identifier to every view controller. In fact, there are times when you might not want to preserve all of your view controllers. For example, if your app displays a temporary login screen, you might not want that screen preserved. Instead, you’d want to determine at restoration time whether to display it. In that case, you wouldn’t assign a restoration identifier to the view controller for your login screen.
 
-For detailed information about what gets preserved, see [`About the UI preservation process`](about-the-ui-preservation-process.md).
+For detailed information about what gets preserved, see [About the UI preservation process](./about-the-ui-preservation-process.md).
 
-##### Encode and Decode Custom Information for Your App
+##### Encode and decode custom information for your app
 
-During the preservation process, UIKit calls the [`encodeRestorableState(with:)`](uistaterestoring/encoderestorablestate(with:).md) method of each preserved view and view controller. Use this method to preserve the information that you need to return the view or view controller to its current state.
+During the preservation process, UIKit calls the [`encodeRestorableState(with:)`](./uistaterestoring/encoderestorablestate%28with%29.md) method of each preserved view and view controller. Use this method to preserve the information that you need to return the view or view controller to its current state.
 
 - **Do** save details about the visual state of views and controls.
 - **Do** save references to child view controllers that you also want to preserve.
@@ -98,17 +98,17 @@ override func encodeRestorableState(with coder: NSCoder) {
 }
 ```
 
-For more information about how UIKit preserves your app’s views, view controllers, and state information, see [`About the UI preservation process`](about-the-ui-preservation-process.md).
+For more information about how UIKit preserves your app’s views, view controllers, and state information, see [About the UI preservation process](./about-the-ui-preservation-process.md).
 
-##### Create View Controllers When Asked
+##### Create view controllers when asked
 
 If preserved state information is available when your app is launched, the system attempts to restore your app’s interface using the preserved data.
 
-1. UIKit calls your app delegate’s [`application(_:shouldRestoreSecureApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoresecureapplicationstate:).md) method to determine if restoration should proceed.
+1. UIKit calls your app delegate’s [`application(_:shouldRestoreSecureApplicationState:)`](./uiapplicationdelegate/application%28_,shouldrestoresecureapplicationstate%29.md) method to determine if restoration should proceed.
 2. UIKit uses your app’s storyboards to recreate your view controllers.
-3. UIKit calls each view controller’s [`decodeRestorableState(with:)`](uistaterestoring/decoderestorablestate(with:).md) method to restore its state information.
+3. UIKit calls each view controller’s [`decodeRestorableState(with:)`](./uistaterestoring/decoderestorablestate%28with%29.md) method to restore its state information.
 
-UIKit loads both the view controller and its views from your storyboard initially. After those objects have been loaded and initialized, UIKit begins restoring their state information. Use your [`decodeRestorableState(with:)`](uistaterestoring/decoderestorablestate(with:).md) methods to return your view controller to its previous state.
+UIKit loads both the view controller and its views from your storyboard initially. After those objects have been loaded and initialized, UIKit begins restoring their state information. Use your [`decodeRestorableState(with:)`](./uistaterestoring/decoderestorablestate%28with%29.md) methods to return your view controller to its previous state.
 
 The following code shows the method for decoding the state that was encoded in the previous example. This method restores the view controller’s data from the preserved user ID. If a text field was being edited, this method also restores the in-progress value and makes the corresponding text field the first responder, which displays the keyboard for that text field.
 
@@ -142,27 +142,28 @@ override func decodeRestorableState(with coder: NSCoder) {
 }
 ```
 
-Defining your view controllers in storyboards is the easiest way to manage state restoration, but it isn’t the only way. For more information about other ways to recreate your view controllers, see [`About the UI restoration process`](about-the-ui-restoration-process.md).
+Defining your view controllers in storyboards is the easiest way to manage state restoration, but it isn’t the only way. For more information about other ways to recreate your view controllers, see [About the UI restoration process](./about-the-ui-restoration-process.md).
 
 ## Topics
 
 ### Process details
-- [About the UI preservation process](about-the-ui-preservation-process.md)
+- [About the UI preservation process](./about-the-ui-preservation-process.md)
   Learn how to customize the UIKit state preservation process.
-- [About the UI restoration process](about-the-ui-restoration-process.md)
+- [About the UI restoration process](./about-the-ui-restoration-process.md)
   Learn how to customize the UIKit state restoration process.
 
 ## See Also
 
-- [Restoring your app’s state](restoring-your-app-s-state.md)
+### Interface restoration
+- [Restoring your app’s state](./restoring-your-app-s-state.md)
   Provide continuity for the user by preserving current activities.
-- [Restoring your app’s state with SwiftUI](../swiftui/restoring-your-app-s-state-with-swiftui.md)
+- [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
-- [protocol UIViewControllerRestoration](uiviewcontrollerrestoration.md)
+- [protocol UIViewControllerRestoration](./uiviewcontrollerrestoration.md)
   The methods that objects adopt so that they can act as a restoration class for view controllers during state restoration.
-- [protocol UIObjectRestoration](uiobjectrestoration.md)
+- [protocol UIObjectRestoration](./uiobjectrestoration.md)
   The interface that restoration classes use to restore preserved objects.
-- [protocol UIStateRestoring](uistaterestoring.md)
+- [protocol UIStateRestoring](./uistaterestoring.md)
   Methods for adding objects to your state restoration archives.
 
 

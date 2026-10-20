@@ -1,7 +1,8 @@
 # DynamicGenerationSchema.Property
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property that belongs to a dynamic generation schema.
 
@@ -26,28 +27,29 @@ Fields are named members of object types. Fields are strongly typed and have opt
 ## Topics
 
 ### Creating a property
-- [init(name: String, description: String?, schema: DynamicGenerationSchema, isOptional: Bool)](dynamicgenerationschema/property/init(name:description:schema:isoptional:).md)
+- [init(name: String, description: String?, schema: DynamicGenerationSchema, isOptional: Bool)](./property/init%28name,description,schema,isoptional%29.md)
   Creates a property referencing a dynamic schema.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(arrayOf: DynamicGenerationSchema, minimumElements: Int?, maximumElements: Int?)](dynamicgenerationschema/init(arrayof:minimumelements:maximumelements:).md)
+### Creating a dynamic schema
+- [init(arrayOf: DynamicGenerationSchema, minimumElements: Int?, maximumElements: Int?)](./init%28arrayof,minimumelements,maximumelements%29.md)
   Creates an array schema.
-- [init(name:description:anyOf:)](dynamicgenerationschema/init(name:description:anyof:).md)
+- [init(name:description:anyOf:)](./init%28name,description,anyof%29.md)
   Creates an any-of schema.
-- [init(name: String, description: String?, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:properties:).md)
+- [init(name: String, description: String?, properties: [DynamicGenerationSchema.Property])](./init%28name,description,properties%29.md)
   Creates an object schema.
-- [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
+- [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](./init%28name,description,representnilexplicitlyingeneratedcontent,properties%29.md)
   Creates an object schema.
-- [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
+- [init(referenceTo: String)](./init%28referenceto%29.md)
   Creates a reference schema.
-- [init<Value>(type: Value.Type, guides: [GenerationGuide<Value>])](dynamicgenerationschema/init(type:guides:).md)
+- [init<Value>(type: Value.Type, guides: [GenerationGuide<Value>])](./init%28type,guides%29.md)
   Creates a schema from a generable type and guides.
 
 

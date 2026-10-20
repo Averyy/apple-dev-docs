@@ -1,7 +1,8 @@
 # OSLMarkUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `OSLMarkProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `OSLMarkProcPtr`
 typealias OSLMarkUPP = OSLMarkProcPtr
 ```
 
+```c
+typedef OSLMarkProcPtr OSLMarkUPP;
+```
+
 #### Discussion
 
-For a description of a mark callback function, see [`OSLMarkProcPtr`](oslmarkprocptr.md). 
+For a description of a mark callback function, see [`OSLMarkProcPtr`](./oslmarkprocptr.md). 
 
 
 ---

@@ -1,7 +1,8 @@
 # ICScannerMeasurementUnit.pixels
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.4+
@@ -12,13 +13,18 @@
 case pixels
 ```
 
+```c
+ICScannerMeasurementUnitPixels
+```
+
 ## See Also
 
-- [ICScannerMeasurementUnit.centimeters](icscannermeasurementunit/centimeters.md)
-- [ICScannerMeasurementUnit.inches](icscannermeasurementunit/inches.md)
-- [ICScannerMeasurementUnit.picas](icscannermeasurementunit/picas.md)
-- [ICScannerMeasurementUnit.points](icscannermeasurementunit/points.md)
-- [ICScannerMeasurementUnit.twips](icscannermeasurementunit/twips.md)
+### Constants
+- [ICScannerMeasurementUnit.centimeters](./centimeters.md)
+- [ICScannerMeasurementUnit.inches](./inches.md)
+- [ICScannerMeasurementUnit.picas](./picas.md)
+- [ICScannerMeasurementUnit.points](./points.md)
+- [ICScannerMeasurementUnit.twips](./twips.md)
 
 
 ---

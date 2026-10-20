@@ -1,7 +1,8 @@
 # ModelJudgeError.invalidScore(dimension:value:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scoring dimension returns a value the evaluator can’t parse as a number.
 

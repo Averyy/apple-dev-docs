@@ -1,7 +1,8 @@
 # pageControlProgressVisibilityDidChange(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the page control progress visibility has changed, which could occur when the page control is being interacted with. The page control progress becomes hidden when the user begins to interact with the page control (when it begins continuous interaction), and is visible again when the user stops interacting with the control. Observe the page control progress visibility to pause or resume the paging content.
 
@@ -16,6 +17,10 @@ Called when the page control progress visibility has changed, which could occur 
 
 ```swift
 optional func pageControlProgressVisibilityDidChange(_ progress: UIPageControlProgress)
+```
+
+```objc
+- (void) pageControlProgressVisibilityDidChange:(UIPageControlProgress *) progress;
 ```
 
 #### Discussion

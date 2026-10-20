@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value referenced by the focused object.
 
@@ -23,15 +24,16 @@ The underlying value referenced by the focused object.
 
 #### Discussion
 
-This property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you use the property variable created with the [`FocusedObject`](focusedobject.md) attribute.
+This property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you use the property variable created with the [`FocusedObject`](../focusedobject.md) attribute.
 
 When a mutable value changes, the new value is immediately available. However, a view displaying the value is updated asynchronously and may not show the new value immediately.
 
 ## See Also
 
-- [var projectedValue: FocusedObject<ObjectType>.Wrapper?](focusedobject/projectedvalue.md)
+### Getting the value
+- [var projectedValue: FocusedObject<ObjectType>.Wrapper?](./projectedvalue.md)
   A projection of the focused object that creates bindings to its properties using dynamic member lookup.
-- [FocusedObject.Wrapper](focusedobject/wrapper.md)
+- [FocusedObject.Wrapper](./wrapper.md)
   A wrapper around the underlying focused object that can create bindings to its properties using dynamic member lookup.
 
 

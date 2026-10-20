@@ -1,7 +1,8 @@
 # TriggerEnhancedLogCollectionCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to trigger enhanced log collection on the device.
 
@@ -14,14 +15,14 @@ The command to trigger enhanced log collection on the device.
 
 ## Declaration
 
-```swift
+```
 object TriggerEnhancedLogCollectionCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object TriggerEnhancedLogCollectionCommand.Command](triggerenhancedlogcollectioncommand/command-data.dictionary.md)
+- [object TriggerEnhancedLogCollectionCommand.Command](./triggerenhancedlogcollectioncommand/command-data.dictionary.md)
   The command to trigger enhanced log collection on the device.
 
 ## Properties
@@ -31,7 +32,8 @@ object TriggerEnhancedLogCollectionCommand
 
 ## See Also
 
-- [object TriggerEnhancedLogCollectionResponse](triggerenhancedlogcollectionresponse.md)
+### Commands and responses
+- [object TriggerEnhancedLogCollectionResponse](./triggerenhancedlogcollectionresponse.md)
   A response from the device after it processes the command to trigger enhanced log collection on the device.
 
 

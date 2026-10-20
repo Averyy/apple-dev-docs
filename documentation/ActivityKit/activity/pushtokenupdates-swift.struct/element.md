@@ -1,7 +1,8 @@
 # Activity.PushTokenUpdates.Element
 
 **Framework**: ActivityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element this asynchronous sequence produces.
 
@@ -17,9 +18,10 @@ typealias Element = Data
 
 ## See Also
 
-- [func makeAsyncIterator() -> Activity<Attributes>.PushTokenUpdates.Iterator](activity/pushtokenupdates-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> Activity<Attributes>.PushTokenUpdates.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
-- [Activity.PushTokenUpdates.Iterator](activity/pushtokenupdates-swift.struct/iterator.md)
+- [Activity.PushTokenUpdates.Iterator](./iterator.md)
   An iterator for accessing individual data entries from the series.
 
 

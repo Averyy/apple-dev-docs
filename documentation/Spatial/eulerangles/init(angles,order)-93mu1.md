@@ -1,7 +1,8 @@
 # init(angles:order:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Euler angles structure from the specified double-precision angles and order.
 
@@ -22,7 +23,7 @@ init(angles: simd_double3, order: __SPEulerAngleOrder)
 
 #### Discussion
 
-> **Note**: In Swift, use [`EulerAngles.Order`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/eulerangles/order-swift.typealias) in place of `__SPEulerAngleOrder`.
+> **Note**: In Swift, use [EulerAngles.Order](./order-swift.typealias.md) in place of `__SPEulerAngleOrder`.
 
 ## Parameters
 
@@ -31,13 +32,14 @@ init(angles: simd_double3, order: __SPEulerAngleOrder)
 
 ## See Also
 
-- [init()](eulerangles/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates a new Euler angles structure.
-- [init(angles: simd_float3, order: EulerAngles.Order)](eulerangles/init(angles:order:)-44rv1.md)
+- [init(angles: simd_float3, order: EulerAngles.Order)](./init%28angles,order%29-44rv1.md)
   Creates a new Euler angles structure from the specified single-precision angles and order.
-- [init(x: Angle2D, y: Angle2D, z: Angle2D, order: EulerAngles.Order)](eulerangles/init(x:y:z:order:).md)
+- [init(x: Angle2D, y: Angle2D, z: Angle2D, order: EulerAngles.Order)](./init%28x,y,z,order%29.md)
   Creates a new Euler angles structure from the specified angle structures and order.
-- [init(Angle2D, Angle2D, Angle2D, order: EulerAngles.Order)](eulerangles/init(_:_:_:order:).md)
+- [init(Angle2D, Angle2D, Angle2D, order: EulerAngles.Order)](./init%28_,_,_,order%29.md)
   Creates a new Euler angles structure from the specified angle structures and order.
 
 

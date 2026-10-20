@@ -1,7 +1,8 @@
 # CSSM_KEYBLOB_OTHER
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_KEYBLOB_OTHER: UInt32 { get }
+```
+
+```c
+CSSM_KEYBLOB_OTHER
 ```
 
 

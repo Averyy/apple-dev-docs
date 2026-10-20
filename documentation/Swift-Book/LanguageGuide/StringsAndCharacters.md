@@ -200,7 +200,7 @@ However, if you write whitespace at the beginning of a line
 in addition to what's before the closing quotation marks,
 that whitespace *is* included.
 
-![](multilineStringWhitespace)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/multilineStringWhitespace@2x.png)
 
 <!--
   Using an image here is a little clearer than a code listing,
@@ -506,7 +506,7 @@ for character in "Dog!🐶" {
   ```
 -->
 
-The `for`-`in` loop is described in [For In Loops](ControlFlow.md#For-In-Loops).
+The `for`-`in` loop is described in [For-In Loops](ControlFlow.md#For-In-Loops).
 
 Alternatively, you can create a stand-alone `Character` constant or variable
 from a single-character string literal by providing a `Character` type annotation:
@@ -1253,7 +1253,7 @@ The figure below shows these relationships:
   would be clearer if the variable names appeared in the figure.
 -->
 
-![](stringSubstring)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/stringSubstring@2x.png)
 
 > Note: Both `String` and `Substring` conform to the
 > [`StringProtocol`](https://developer.apple.com/documentation/swift/stringprotocol) protocol,
@@ -1612,7 +1612,7 @@ This property is of type `String.UTF8View`,
 which is a collection of unsigned 8-bit (`UInt8`) values,
 one for each byte in the string's UTF-8 representation:
 
-![](UTF8)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/UTF8@2x.png)
 
 ```swift
 for codeUnit in dogString.utf8 {
@@ -1666,7 +1666,7 @@ This property is of type `String.UTF16View`,
 which is a collection of unsigned 16-bit (`UInt16`) values,
 one for each 16-bit code unit in the string's UTF-16 representation:
 
-![](UTF16)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/UTF16@2x.png)
 
 ```swift
 for codeUnit in dogString.utf16 {
@@ -1720,7 +1720,7 @@ which is a collection of values of type `UnicodeScalar`.
 Each `UnicodeScalar` has a `value` property that returns
 the scalar's 21-bit value, represented within a `UInt32` value:
 
-![](UnicodeScalar)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/UnicodeScalar@2x.png)
 
 ```swift
 for scalar in dogString.unicodeScalars {

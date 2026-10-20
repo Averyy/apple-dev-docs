@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system-assigned identifier for search tabs.
 
@@ -16,6 +17,10 @@ The system-assigned identifier for search tabs.
 
 ```swift
 class var identifier: String { get }
+```
+
+```objc
+@property (class, nonatomic, copy, readonly) NSString * identifier;
 ```
 
 

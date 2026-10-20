@@ -1,7 +1,8 @@
 # init(id:prefersPromotionalIcon:icon:placeholderIcon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to load an individual product from the App Store and merchandise it using an image and a custom placeholder icon.
 
@@ -37,7 +38,7 @@ ProductView(id: "com.example.product") {
 }
 ```
 
-> 💡 **Tip**:  To gain more control over the image that decorates this view, use the [`init(id:icon:placeholderIcon:)`](productview/init(id:icon:placeholdericon:).md) initializer. It receives a [`ProductIconPhase`](producticonphase.md), which enables you to supply an image for each phase of the image-loading process.
+> 💡 **Tip**:  To gain more control over the image that decorates this view, use the [`init(id:icon:placeholderIcon:)`](./init%28id,icon,placeholdericon%29.md) initializer. It receives a [`ProductIconPhase`](../producticonphase.md), which enables you to supply an image for each phase of the image-loading process.
 
 ## Parameters
 
@@ -48,11 +49,12 @@ ProductView(id: "com.example.product") {
 
 ## See Also
 
-- [init(id: Product.ID, prefersPromotionalIcon: Bool)](productview/init(id:preferspromotionalicon:).md)
+### Creating product views that load products
+- [init(id: Product.ID, prefersPromotionalIcon: Bool)](./init%28id,preferspromotionalicon%29.md)
   Creates a view to load and merchandise an individual product from the App Store.
-- [init(id: Product.ID, prefersPromotionalIcon: Bool, icon: () -> Icon)](productview/init(id:preferspromotionalicon:icon:).md)
+- [init(id: Product.ID, prefersPromotionalIcon: Bool, icon: () -> Icon)](./init%28id,preferspromotionalicon,icon%29.md)
   Creates a view to load an individual product from the App Store and merchandise it using a custom icon.
-- [init(id: Product.ID, icon: (ProductIconPhase) -> Icon, placeholderIcon: () -> PlaceholderIcon)](productview/init(id:icon:placeholdericon:).md)
+- [init(id: Product.ID, icon: (ProductIconPhase) -> Icon, placeholderIcon: () -> PlaceholderIcon)](./init%28id,icon,placeholdericon%29.md)
   Creates a view to load an individual product from the App Store, and merchandise it using its promotional image and a custom placeholder icon.
 
 

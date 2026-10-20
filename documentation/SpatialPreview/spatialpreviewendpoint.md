@@ -1,13 +1,14 @@
 # SpatialPreviewEndpoint
 
 **Framework**: Spatial Preview  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An endpoint representing a visionOS device you can connect to for spatial preview.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,25 +18,26 @@ struct SpatialPreviewEndpoint
 
 #### Overview
 
-Obtain an endpoint from [`endpoint`](connectedspatialendpointobserver/endpoint.md) when a device is connected via Mac Virtual Display, or let the user select one with [`SpatialPreviewDevicePicker`](spatialpreviewdevicepicker.md). Pass the endpoint to [`start(endpoint:)`](documentpreviewsession/start(endpoint:).md) or [`start(endpoint:parameters:viewerOptions:)`](usdpreviewsession/start(endpoint:parameters:vieweroptions:).md) to begin a session.
+Obtain an endpoint from [`endpoint`](./connectedspatialendpointobserver/endpoint.md) when a device is connected via Mac Virtual Display, or let the user select one with [`SpatialPreviewDevicePicker`](./spatialpreviewdevicepicker.md). Pass the endpoint to [`start(endpoint:)`](./documentpreviewsession/start%28endpoint%29.md) or [`start(endpoint:parameters:viewerOptions:)`](./usdpreviewsession/start%28endpoint,parameters,vieweroptions%29.md) to begin a session.
 
 ## Relationships
 
 ### Conforms To
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SpatialPreviewDevicePicker](spatialpreviewdevicepicker.md)
+### Nearby devices
+- [struct SpatialPreviewDevicePicker](./spatialpreviewdevicepicker.md)
   Presents nearby companion devices and allows the user to make a selection.
-- [class ConnectedSpatialEndpointObserver](connectedspatialendpointobserver.md)
+- [class ConnectedSpatialEndpointObserver](./connectedspatialendpointobserver.md)
   An observer that provides access to the endpoint for a device connected via Mac Virtual Display.
 
 

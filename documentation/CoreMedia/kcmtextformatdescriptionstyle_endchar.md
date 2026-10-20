@@ -1,7 +1,8 @@
 # kCMTextFormatDescriptionStyle_EndChar
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The style value for the ending character.
 
@@ -20,41 +21,46 @@ The style value for the ending character.
 let kCMTextFormatDescriptionStyle_EndChar: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextFormatDescriptionStyle_EndChar;
+```
+
 #### Discussion
 
 The value needs to be a `SInt16`.
 
 ## See Also
 
-- [let kCMTextFormatDescriptionColor_Red: CFString](kcmtextformatdescriptioncolor_red.md)
+### Description Constants
+- [let kCMTextFormatDescriptionColor_Red: CFString](./kcmtextformatdescriptioncolor_red.md)
   The color value for red is a number.
-- [let kCMTextFormatDescriptionColor_Green: CFString](kcmtextformatdescriptioncolor_green.md)
+- [let kCMTextFormatDescriptionColor_Green: CFString](./kcmtextformatdescriptioncolor_green.md)
   The color value for green is a number.
-- [let kCMTextFormatDescriptionColor_Blue: CFString](kcmtextformatdescriptioncolor_blue.md)
+- [let kCMTextFormatDescriptionColor_Blue: CFString](./kcmtextformatdescriptioncolor_blue.md)
   The color value for blue is a number.
-- [let kCMTextFormatDescriptionColor_Alpha: CFString](kcmtextformatdescriptioncolor_alpha.md)
+- [let kCMTextFormatDescriptionColor_Alpha: CFString](./kcmtextformatdescriptioncolor_alpha.md)
   The color value for the alpha is a number.
-- [let kCMTextFormatDescriptionRect_Top: CFString](kcmtextformatdescriptionrect_top.md)
+- [let kCMTextFormatDescriptionRect_Top: CFString](./kcmtextformatdescriptionrect_top.md)
   The top value for the rect as a 16-bit number.
-- [let kCMTextFormatDescriptionRect_Left: CFString](kcmtextformatdescriptionrect_left.md)
+- [let kCMTextFormatDescriptionRect_Left: CFString](./kcmtextformatdescriptionrect_left.md)
   The left value for the rect as a 16-bit number.
-- [let kCMTextFormatDescriptionRect_Bottom: CFString](kcmtextformatdescriptionrect_bottom.md)
+- [let kCMTextFormatDescriptionRect_Bottom: CFString](./kcmtextformatdescriptionrect_bottom.md)
   The bottom value for the rect as a 16-bit number.
-- [let kCMTextFormatDescriptionRect_Right: CFString](kcmtextformatdescriptionrect_right.md)
+- [let kCMTextFormatDescriptionRect_Right: CFString](./kcmtextformatdescriptionrect_right.md)
   The right value for the rect as a 16-bit number.
-- [let kCMTextFormatDescriptionStyle_StartChar: CFString](kcmtextformatdescriptionstyle_startchar.md)
+- [let kCMTextFormatDescriptionStyle_StartChar: CFString](./kcmtextformatdescriptionstyle_startchar.md)
   The style value for the starting character.
-- [let kCMTextFormatDescriptionStyle_Font: CFString](kcmtextformatdescriptionstyle_font.md)
+- [let kCMTextFormatDescriptionStyle_Font: CFString](./kcmtextformatdescriptionstyle_font.md)
   The style value for font.
-- [let kCMTextFormatDescriptionStyle_FontFace: CFString](kcmtextformatdescriptionstyle_fontface.md)
+- [let kCMTextFormatDescriptionStyle_FontFace: CFString](./kcmtextformatdescriptionstyle_fontface.md)
   The style value for font face.
-- [let kCMTextFormatDescriptionStyle_ForegroundColor: CFString](kcmtextformatdescriptionstyle_foregroundcolor.md)
+- [let kCMTextFormatDescriptionStyle_ForegroundColor: CFString](./kcmtextformatdescriptionstyle_foregroundcolor.md)
   The style value for foreground color.
-- [let kCMTextFormatDescriptionStyle_Height: CFString](kcmtextformatdescriptionstyle_height.md)
+- [let kCMTextFormatDescriptionStyle_Height: CFString](./kcmtextformatdescriptionstyle_height.md)
   The style value for the height.
-- [let kCMTextFormatDescriptionStyle_Ascent: CFString](kcmtextformatdescriptionstyle_ascent.md)
+- [let kCMTextFormatDescriptionStyle_Ascent: CFString](./kcmtextformatdescriptionstyle_ascent.md)
   The style value for the ascent.
-- [let kCMTextFormatDescriptionStyle_FontSize: CFString](kcmtextformatdescriptionstyle_fontsize.md)
+- [let kCMTextFormatDescriptionStyle_FontSize: CFString](./kcmtextformatdescriptionstyle_fontsize.md)
   The style value for the font size.
 
 

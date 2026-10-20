@@ -1,7 +1,8 @@
 # AppSchema.PhotosEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the photos domain.
 
@@ -21,27 +22,28 @@ protocol PhotosEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var album: some AppSchemaEntity](appschema/photosentity/album.md)
+- [var album: some AppSchemaEntity](./photosentity/album.md)
   An entity schema for an album.
-- [var asset: some AppSchemaEntity](appschema/photosentity/asset.md)
+- [var asset: some AppSchemaEntity](./photosentity/asset.md)
   An entity schema for an asset.
-- [var recognizedPerson: some AppSchemaEntity](appschema/photosentity/recognizedperson.md)
+- [var recognizedPerson: some AppSchemaEntity](./photosentity/recognizedperson.md)
   An entity schema for a recognized person.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var album: some AppSchemaEntity](appschema/photosentity/album.md)
+### Content and parameter types
+- [var album: some AppSchemaEntity](./photosentity/album.md)
   An entity schema for an album.
-- [var asset: some AppSchemaEntity](appschema/photosentity/asset.md)
+- [var asset: some AppSchemaEntity](./photosentity/asset.md)
   An entity schema for an asset.
-- [var recognizedPerson: some AppSchemaEntity](appschema/photosentity/recognizedperson.md)
+- [var recognizedPerson: some AppSchemaEntity](./photosentity/recognizedperson.md)
   An entity schema for a recognized person.
 
 

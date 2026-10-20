@@ -1,7 +1,8 @@
 # audioSpatialization
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Device supports audio spatialization
 

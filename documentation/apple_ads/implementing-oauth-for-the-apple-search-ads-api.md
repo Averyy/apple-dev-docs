@@ -1,12 +1,13 @@
 # Implementing OAuth for the Apple Ads API
 
-**Framework**: Apple Ads
+**Framework**: Apple Ads  
+**Role**: Article
 
 Manage secure access to Ads accounts.
 
 #### Overview
 
-> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+> **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
 The Apple Ads Campaign Management API supports OAuth 2. With OAuth 2, users authenticate with credentials in exchange for an access token to make authenticated requests to Apple Ads API. OAuth 2 replaces key and certificate credentials authentication in previous versions of the API.
 
@@ -25,17 +26,17 @@ This implementation process guides you through the following steps:
 
 Account administrators invite users with API permissions using the following process:
 
-1. From [`Apple Ads`](https://developer.apple.comhttps://ads.apple.com), choose Sign In > Advanced and log in as an account administrator.
+1. From [Apple Ads](https://ads.apple.com), choose Sign In > Advanced and log in as an account administrator.
 2. From the Users menu in the top-right corner, select the account to invite users to.
 3. Choose Account Settings > User Management.
 4. Click Invite Users to invite users to your Apple Ads organization.
 5. In the User Details section, enter the user’s first name, last name, and Apple ID.
-6. In the User Access and Role section, select an API user role. For non-API roles, see [`Invite users to your account`](https://developer.apple.comhttps://ads.apple.com/help/advanced/0011-invite-users-to-your-account/).
+6. In the User Access and Role section, select an API user role. For non-API roles, see [Invite users to your account](https://ads.apple.com/help/advanced/0011-invite-users-to-your-account/).
 7. Click Send Invite. The invited user receives an email with a secure code. The user signs into the secure Apple URL in the email and inputs the provided code, which activates the user’s account.
 
 ##### Generate a Private Key
 
-API users need to create a private key. If you’re using MacOS or a UNIX-like operating system, OpenSSL works natively. If you’re on a Windows platform, you need to download [`OpenSSL`](https://developer.apple.comhttps://www.openssl.org).
+API users need to create a private key. If you’re using MacOS or a UNIX-like operating system, OpenSSL works natively. If you’re on a Windows platform, you need to download [OpenSSL](https://www.openssl.org).
 
 ```console
 openssl ecparam -genkey -name prime256v1 -noout -out private-key.pem
@@ -56,7 +57,7 @@ LaZriCQnnqq4Vx+IscLFcrjBj+ulZzKlUQ==
 -----END EC PRIVATE KEY-----
 ```
 
-> ❗ **Important**:  Always keep your private key secure and never share it. If your private key becomes compromised, you need to re-create a private key and client secret, and reupload it to your [`Apple Ads`](https://developer.apple.comhttps://ads.apple.com) account.
+> ❗ **Important**:  Always keep your private key secure and never share it. If your private key becomes compromised, you need to re-create a private key and client secret, and reupload it to your [Apple Ads](https://ads.apple.com) account.
 
 ##### Extract a Public Key
 
@@ -92,7 +93,7 @@ You can make edits to the public key by choosing Account Settings > API > Edit.
 
 ##### Create a Client Secret
 
-A client secret is a JSON web token ([`JWT`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that you create and sign using your private key. Your client secret authenticates token requests to the authorization server. Only you and the authorization server know the client secret.
+A client secret is a JSON web token ([JWT](https://tools.ietf.org/html/rfc7519)) that you create and sign using your private key. Your client secret authenticates token requests to the authorization server. Only you and the authorization server know the client secret.
 
 The following example is a Python 3 script that generates, encodes, and signs the client secret using your private key. If you decide to create your own JWT using a different programming language and open source library, make sure the library you use supports elliptic curve methods.
 
@@ -242,8 +243,8 @@ xwRMB5LaaVrQZlhj9xjum0MfDpIS1hJI6p5CHZ8w&scope=searchadsorg'
 | --- | --- | --- |
 | `client_id` | String | **Required**. You receive your `clientId` when you upload a public key. |
 | `client_secret` | String | **Required**. The client secret is a JWT that you create and sign with your private key. |
-| `grant_type` | String | **Required**. The method to request authorization and get an access token.  ![None](/images/com.apple.appleads/spacer.png) The value is `client_credentials`. |
-| `scope` | String | **Required**. Defines the access permissions you request from the user, and limits the authorization of the access token you receive. ![None](/images/com.apple.appleads/spacer.png) The value is `searchadsorg`. |
+| `grant_type` | String | **Required**. The method to request authorization and get an access token.  ![](https://developer.apple.com/tutorials/images/com.apple.appleads/spacer.png) The value is `client_credentials`. |
+| `scope` | String | **Required**. Defines the access permissions you request from the user, and limits the authorization of the access token you receive. ![](https://developer.apple.com/tutorials/images/com.apple.appleads/spacer.png) The value is `searchadsorg`. |
 
 After accepting the credentials, the authorization server returns an access token.
 
@@ -263,16 +264,17 @@ QaxF3Gadtu_Z5rYFg.vD0iQuRwHGYVnDy27qexCw",
 
 | **Response parameter** | **Type** | **Description** |
 | --- | --- | --- |
-| `access_token` | String | Your `access_token` is a requirement to make calls to Apple Ads Campaign Management API endpoints. See [`Calling the Apple Ads API`](calling-the-apple-search-ads-api.md). ![None](/images/com.apple.appleads/spacer.png) Your `access_token` is valid for the number of seconds that `expires_in` specifies. |
+| `access_token` | String | Your `access_token` is a requirement to make calls to Apple Ads Campaign Management API endpoints. See [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md). ![](https://developer.apple.com/tutorials/images/com.apple.appleads/spacer.png) Your `access_token` is valid for the number of seconds that `expires_in` specifies. |
 | `token_type` | String | The type of access token. The value is always `Bearer`. |
 | `expires_in` | Integer | The token lifetime (TTL) of one hour (3600 seconds). |
 | `scope` | String | Defines the access permissions you request from the user, and limits the authorization of the access token you receive. |
 
 ## See Also
 
-- [Calling the Apple Ads API](calling-the-apple-search-ads-api.md)
+### Essentials
+- [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md)
   Pass your access token in the authorization header of HTTP requests.
-- [Using Apple Ads API Functionality](using-apple-search-ads-api-functionality.md)
+- [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md)
   Call endpoints using CRUD methods.
 
 

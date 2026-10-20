@@ -1,7 +1,8 @@
 # initialEvent
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The first Apple Event to send to the launchedprocess. The value of this field can be `NULL`.
 
@@ -12,6 +13,10 @@ The first Apple Event to send to the launchedprocess. The value of this field ca
 
 ```swift
 var initialEvent: UnsafeMutablePointer<AppleEvent>!
+```
+
+```c
+AppleEvent *initialEvent;
 ```
 
 

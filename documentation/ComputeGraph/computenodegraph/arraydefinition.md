@@ -1,7 +1,8 @@
 # ComputeNodeGraph.ArrayDefinition
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,7 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -21,15 +22,15 @@ struct ArrayDefinition
 ## Topics
 
 ### Instance Properties
-- [var count: Int](computenodegraph/arraydefinition/count.md)
-- [var element: ComputeNodeGraph.StateType](computenodegraph/arraydefinition/element.md)
+- [var count: Int](./arraydefinition/count.md)
+- [var element: ComputeNodeGraph.StateType](./arraydefinition/element.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,13 +1,14 @@
 # output::setOpacity
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the opacity of the rendered output.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::setOpacity(half opacity)
 
 This function customizes the alpha component of the rendered particle output, controlling its transparency. This affects only the rendered appearance and does not modify the particle node itself.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/output__setOpacity.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__setOpacity.svg)
 
 ## Parameters
 

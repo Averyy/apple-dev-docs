@@ -1,7 +1,8 @@
 # sources
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unordered array of objects that represent accounts that contain calendars.
 
@@ -19,15 +20,20 @@ An unordered array of objects that represent accounts that contain calendars.
 var sources: [EKSource] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<EKSource *> * sources;
+```
+
 #### Discussion
 
 Although this property is an array, the order of the elements in the array isn’t guaranteed.
 
 ## See Also
 
-- [var delegateSources: [EKSource]](ekeventstore/delegatesources.md)
+### Accessing account sources
+- [var delegateSources: [EKSource]](./delegatesources.md)
   The event sources delegated to the person using your app.
-- [func source(withIdentifier: String) -> EKSource?](ekeventstore/source(withidentifier:).md)
+- [func source(withIdentifier: String) -> EKSource?](./source%28withidentifier%29.md)
   Locates an event source with the specified identifier.
 
 

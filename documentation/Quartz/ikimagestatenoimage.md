@@ -1,7 +1,8 @@
 # IKImageStateNoImage
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Returned until a thumbnail has been created from the represented object.
 
@@ -14,11 +15,16 @@ Returned until a thumbnail has been created from the represented object.
 var IKImageStateNoImage: IKImageBrowserCellState { get }
 ```
 
+```c
+IKImageStateNoImage
+```
+
 ## See Also
 
-- [var IKImageStateInvalid: IKImageBrowserCellState](ikimagestateinvalid.md)
+### Constants
+- [var IKImageStateInvalid: IKImageBrowserCellState](./ikimagestateinvalid.md)
   The thumbnail is invalid. For example, an unsupported image is provided.
-- [var IKImageStateReady: IKImageBrowserCellState](ikimagestateready.md)
+- [var IKImageStateReady: IKImageBrowserCellState](./ikimagestateready.md)
   The receiver’s represented object has been set and the cell is ready to display.
 
 

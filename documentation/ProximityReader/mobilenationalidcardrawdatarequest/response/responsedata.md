@@ -1,7 +1,8 @@
 # responseData
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data the mobile national ID card holder returns.
 

@@ -1,7 +1,8 @@
 # IOUSBHostCIControllerStateMachine
 
 **Framework**: IOUSBHost  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,35 +14,40 @@
 class IOUSBHostCIControllerStateMachine
 ```
 
+```objc
+@interface IOUSBHostCIControllerStateMachine : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var controllerInterface: IOUSBHostControllerInterface](iousbhostcicontrollerstatemachine/controllerinterface.md)
-- [var controllerState: IOUSBHostCIControllerState](iousbhostcicontrollerstatemachine/controllerstate.md)
+- [var controllerInterface: IOUSBHostControllerInterface](./iousbhostcicontrollerstatemachine/controllerinterface.md)
+- [var controllerState: IOUSBHostCIControllerState](./iousbhostcicontrollerstatemachine/controllerstate.md)
 ### Instance Methods
-- [func enqueueUpdatedFrame(UInt64, timestamp: UInt64) throws](iousbhostcicontrollerstatemachine/enqueueupdatedframe(_:timestamp:).md)
-- [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](iousbhostcicontrollerstatemachine/inspectcommand(_:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](iousbhostcicontrollerstatemachine/respond(tocommand:status:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, frame: UInt64, timestamp: UInt64) throws](iousbhostcicontrollerstatemachine/respond(tocommand:status:frame:timestamp:).md)
+- [func enqueueUpdatedFrame(UInt64, timestamp: UInt64) throws](./iousbhostcicontrollerstatemachine/enqueueupdatedframe%28_,timestamp%29.md)
+- [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./iousbhostcicontrollerstatemachine/inspectcommand%28_%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./iousbhostcicontrollerstatemachine/respond%28tocommand,status%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, frame: UInt64, timestamp: UInt64) throws](./iousbhostcicontrollerstatemachine/respond%28tocommand,status,frame,timestamp%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOUSBHostCIDeviceStateMachine](iousbhostcidevicestatemachine.md)
-- [class IOUSBHostCIEndpointStateMachine](iousbhostciendpointstatemachine.md)
-- [class IOUSBHostCIPortStateMachine](iousbhostciportstatemachine.md)
-- [class IOUSBHostControllerInterface](iousbhostcontrollerinterface.md)
+### Classes
+- [class IOUSBHostCIDeviceStateMachine](./iousbhostcidevicestatemachine.md)
+- [class IOUSBHostCIEndpointStateMachine](./iousbhostciendpointstatemachine.md)
+- [class IOUSBHostCIPortStateMachine](./iousbhostciportstatemachine.md)
+- [class IOUSBHostControllerInterface](./iousbhostcontrollerinterface.md)
 
 
 ---

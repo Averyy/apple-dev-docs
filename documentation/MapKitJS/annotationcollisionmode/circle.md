@@ -1,7 +1,8 @@
 # Circle
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Uses a circle inscribed in the collision frame rectangle to detect collisions.
 
@@ -10,7 +11,7 @@ Uses a circle inscribed in the collision frame rectangle to detect collisions.
 
 ## Declaration
 
-```swift
+```
 readonly Circle: "circle";
 ```
 
@@ -20,9 +21,10 @@ The circle inscribed in the bounding box is used for collision detection.
 
 ## See Also
 
-- [Rectangle](annotationcollisionmode/rectangle.md)
+### Collision modes
+- [Rectangle](./rectangle.md)
   Uses the full collision frame rectangle to detect collisions.
-- [None](annotationcollisionmode/none.md)
+- [None](./none.md)
   A collision mode in which the annotation doesn’t collide with other annotations.
 
 

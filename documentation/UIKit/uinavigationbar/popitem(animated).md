@@ -1,7 +1,8 @@
 # popItem(animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pops the top item from the navigation bar’s stack and updates the UI.
 
@@ -9,13 +10,17 @@ Pops the top item from the navigation bar’s stack and updates the UI.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func popItem(animated: Bool) -> UINavigationItem?
+```
+
+```objc
+- (UINavigationItem *) popNavigationItemAnimated:(BOOL) animated;
 ```
 
 #### Return Value
@@ -28,19 +33,20 @@ Popping a navigation item removes the top item from the stack and replaces it wi
 
 ## Parameters
 
-- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) if the navigation bar should be animated; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `animated`: [`true`](../../Swift/true.md) if the navigation bar should be animated; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func pushItem(UINavigationItem, animated: Bool)](uinavigationbar/pushitem(_:animated:).md)
+### Pushing and popping items
+- [func pushItem(UINavigationItem, animated: Bool)](./pushitem%28_,animated%29.md)
   Pushes the given navigation item onto the navigation bar’s stack and updates the UI.
-- [func setItems([UINavigationItem]?, animated: Bool)](uinavigationbar/setitems(_:animated:).md)
+- [func setItems([UINavigationItem]?, animated: Bool)](./setitems%28_,animated%29.md)
   Replaces the navigation items currently managed by the navigation bar with the specified items.
-- [var items: [UINavigationItem]?](uinavigationbar/items.md)
+- [var items: [UINavigationItem]?](./items.md)
   An array of navigation items managed by the navigation bar.
-- [var topItem: UINavigationItem?](uinavigationbar/topitem.md)
+- [var topItem: UINavigationItem?](./topitem.md)
   The navigation item at the top of the navigation bar’s stack.
-- [var backItem: UINavigationItem?](uinavigationbar/backitem.md)
+- [var backItem: UINavigationItem?](./backitem.md)
   The navigation item that is immediately below the topmost item on a navigation bar’s stack.
 
 

@@ -1,7 +1,8 @@
 # EPError.Code.generic
 
 **Framework**: Execution Policy  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,9 +14,14 @@
 case generic
 ```
 
+```c
+EPErrorGeneric
+```
+
 ## See Also
 
-- [EPError.Code.notADeveloperTool](eperror-swift.struct/code/notadevelopertool.md)
+### Enumeration Cases
+- [EPError.Code.notADeveloperTool](./notadevelopertool.md)
 
 
 ---

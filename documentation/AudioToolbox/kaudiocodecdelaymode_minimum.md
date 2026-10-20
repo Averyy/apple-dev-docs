@@ -1,15 +1,16 @@
 # kAudioCodecDelayMode_Minimum
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioCodecDelayMode_Minimum: UInt32 { get }
 ```
 
+```c
+kAudioCodecDelayMode_Minimum
+```
+
 ## See Also
 
-- [var kAudioCodecDelayMode_Compatibility: UInt32](kaudiocodecdelaymode_compatibility.md)
-- [var kAudioCodecDelayMode_Optimal: UInt32](kaudiocodecdelaymode_optimal.md)
+### Constants
+- [var kAudioCodecDelayMode_Compatibility: UInt32](./kaudiocodecdelaymode_compatibility.md)
+- [var kAudioCodecDelayMode_Optimal: UInt32](./kaudiocodecdelaymode_optimal.md)
 
 
 ---

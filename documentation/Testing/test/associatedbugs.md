@@ -1,18 +1,19 @@
 # associatedBugs
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of bugs associated with this test.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,7 +25,7 @@ var associatedBugs: [Bug] { get }
 
 #### Discussion
 
-For information on how to associate a bug with a test, see the documentation for [`Bug`](bug.md).
+For information on how to associate a bug with a test, see the documentation for [`Bug`](../bug.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # CLSBinaryValueType.yesNo
 
 **Framework**: ClassKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Yes or no.
 
@@ -18,13 +19,18 @@ Yes or no.
 case yesNo
 ```
 
+```c
+CLSBinaryValueTypeYesNo
+```
+
 ## See Also
 
-- [CLSBinaryValueType.passFail](clsbinaryvaluetype/passfail.md)
+### Value Types
+- [CLSBinaryValueType.passFail](./passfail.md)
   Pass or fail.
-- [CLSBinaryValueType.trueFalse](clsbinaryvaluetype/truefalse.md)
+- [CLSBinaryValueType.trueFalse](./truefalse.md)
   True or false.
-- [CLSBinaryValueType.correctIncorrect](clsbinaryvaluetype/correctincorrect.md)
+- [CLSBinaryValueType.correctIncorrect](./correctincorrect.md)
   Correct or incorrect.
 
 

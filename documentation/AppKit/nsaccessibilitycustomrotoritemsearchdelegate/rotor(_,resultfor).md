@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs a search with the specified search parameters and returns the item result.
@@ -15,9 +16,14 @@ Performs a search with the specified search parameters and returns the item resu
 func rotor(_ rotor: NSAccessibilityCustomRotor, resultFor searchParameters: NSAccessibilityCustomRotor.SearchParameters) -> NSAccessibilityCustomRotor.ItemResult?
 ```
 
+```objc
+- (NSAccessibilityCustomRotorItemResult *) rotor:(NSAccessibilityCustomRotor *) rotor resultForSearchParameters:(NSAccessibilityCustomRotorSearchParameters *) searchParameters;
+```
+
 ## See Also
 
-- [NSAccessibilityCustomRotor.SearchParameters](nsaccessibilitycustomrotor/searchparameters.md)
+### Finding the Next Item
+- [NSAccessibilityCustomRotor.SearchParameters](../nsaccessibilitycustomrotor/searchparameters.md)
   Search parameters for a custom rotor.
 
 

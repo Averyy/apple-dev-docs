@@ -1,14 +1,15 @@
 # svm_reserved1
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 __uint16_t svm_reserved1;
 ```
 

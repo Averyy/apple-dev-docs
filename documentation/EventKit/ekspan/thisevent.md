@@ -1,17 +1,18 @@
 # EKSpan.thisEvent
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Modifications to this event instance should affect only this instance.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ Modifications to this event instance should affect only this instance.
 case thisEvent
 ```
 
+```c
+EKSpanThisEvent
+```
+
 ## See Also
 
-- [EKSpan.futureEvents](ekspan/futureevents.md)
+### Constants
+- [EKSpan.futureEvents](./futureevents.md)
   Modifications to this event instance should also affect future instances of this event.
 
 

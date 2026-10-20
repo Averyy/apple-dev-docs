@@ -1,7 +1,8 @@
 # custom(of:label:_:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes a custom aggregation and adds it to the group.
 

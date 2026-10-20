@@ -1,6 +1,7 @@
 # Sending MDM commands to a device
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Execute commands on a device and receive responses that contain the results of each operation.
 
@@ -8,7 +9,7 @@ Execute commands on a device and receive responses that contain the results of e
 
 After enrolling a device with your device management service, you can send commands to it. Your device management service sends a push notification to the device to initiate communication, and the device responds and establishes a secure connection with it. Then the service can send commands to the device, which the device executes and reports results back to the service. Wait for the response from a device with a matching `UUID` for a command, to verify that the device executed it. This value corresponds to the contents of the `User ID` parameter in the `Subject` field of the push-notification client certificate.
 
-#### Initiate Polling for Mdm Commands
+#### Initiate polling for MDM commands
 
 The device management service sends a notification through the Apple Push Notfication service (APNs) to the device, to make a device poll the device management service for commands. Format the message that the service sends with the push notification as JSON, and only include the `PushMagic` string as the value of the `mdm` key; for example:
 
@@ -20,7 +21,7 @@ In place of `PushMagicValue`, substitute the actual `PushMagic` string that the 
 
 > **Note**:  A visionOS device doesn’t receive push notifications when locked or not worn by a user.
 
-#### Establish a Connection to the Device Management Service
+#### Establish a connection to the device management service
 
 In response to receiving a push notification from a device management service, a device initiates communication by establishing a TLS connection to the URL of the device management service. The device validates the service’s certificate, then uses its identity certificate as the client certificate to authentication for the connection.
 
@@ -50,7 +51,7 @@ Content-Type: application/x-apple-aspen-mdm; charset=UTF-8
 </plist>
 ```
 
-#### Send a Command to the Device
+#### Send a command to the device
 
 The device management service responds to the request-payload message from the device by sending a response-payload message back to the device enclosed in an HTTP reply. This message includes the next command for the device to execute in a property list-encoded dictionary that contains the following required keys:
 
@@ -82,7 +83,7 @@ Content-Type: application/xml; charset=UTF-8
 </plist>
 ```
 
-#### Execute the Command and Report Results
+#### Execute the command and report results
 
 The device executes the command and sends its response in another HTTP `PUT request to the device management service. The response includes a property list-encoded dictionary that contains the following keys, and additional keys returned by the command:
 
@@ -90,7 +91,7 @@ The device executes the command and sends its response in another HTTP `PUT requ
 | --- | --- | --- |
 | `CommandUUID` | String | The unique identifier of the command for this response. |
 | `ErrorChain` | Array | If present, an array of dictionaries that describes any errors that occurred. The first item represents the top-level error. Subsequent items represent the underlying errors that led up to the top-level error. |
-| `Status` | String | The status of the response, which is one of the following values: ![None](/images/com.apple.devicemanagement/spacer.png) `Acknowledged`: The device processed the command successfully. ![None](/images/com.apple.devicemanagement/spacer.png) `Error`: An error occurred. See the `ErrorChain` for more details. ![None](/images/com.apple.devicemanagement/spacer.png) `CommandFormatError`: A protocol error occurred, which can result from a malformed command. ![None](/images/com.apple.devicemanagement/spacer.png) `Idle`: The device is idle; there’s no status. ![None](/images/com.apple.devicemanagement/spacer.png) `NotNow`: The device received the command, but couldn’t execute it. For more information, see [`Handling NotNow status responses`](handling-notnow-status-responses.md). |
+| `Status` | String | The status of the response, which is one of the following values: ![](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/spacer.png) `Acknowledged`: The device processed the command successfully. ![](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/spacer.png) `Error`: An error occurred. See the `ErrorChain` for more details. ![](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/spacer.png) `CommandFormatError`: A protocol error occurred, which can result from a malformed command. ![](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/spacer.png) `Idle`: The device is idle; there’s no status. ![](https://developer.apple.com/tutorials/images/com.apple.devicemanagement/spacer.png) `NotNow`: The device received the command, but couldn’t execute it. For more information, see [Handling NotNow status responses](./handling-notnow-status-responses.md). |
 | `UDID` | String | The unique identifier of the device. |
 
 Each entry in the `ErrorChain` contains the following dictionary:
@@ -106,7 +107,7 @@ The `ErrorCode` and `ErrorDomain` keys contain internal codes that are useful fo
 
 If the device disconnects from the device management service while processing a command, it caches the result of the command and reports the result when it reconnects.
 
-#### Receive Results and Optionally Send Another Command
+#### Receive results and optionally send another command
 
 When the device management service receives a response from the device, it can either reply with the next command or end the connection by sending a `200` status (OK) with an empty response body.
 
@@ -114,7 +115,7 @@ If the connection breaks or the service returns a non `200` status while perform
 
 > **Note**:  An empty response body is zero bytes in length and doesn’t contain an empty property list.
 
-#### Manage the Command Queue
+#### Manage the command queue
 
 Don’t consider a command accepted and executed by a device until your device management service receives the `Acknowledged` or `Error` status with the command `UUID` in the message. Until then, leave the last command on the queue.
 
@@ -122,7 +123,8 @@ It’s also possible for the device to send the same status twice. Examine the `
 
 ## See Also
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+### Commands
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
   Handle when a device won’t execute a command and instead returns a NotNow status.
 
 

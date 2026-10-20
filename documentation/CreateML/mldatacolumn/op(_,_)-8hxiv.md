@@ -1,7 +1,8 @@
 # /(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column of doubles by dividing the given double by each element of the given column.
 
@@ -19,6 +20,30 @@ Creates a column of doubles by dividing the given double by each element of the 
 static func / (a: Double, b: MLDataColumn<Double>) -> MLDataColumn<Double>
 ```
 
+Available when `Element` is `Double`.
+
+**Other overloads**:
+
+```swift
+static func / (a: Int, b: MLDataColumn<Int>) -> MLDataColumn<Int>
+```
+
+```swift
+static func / (a: MLDataColumn<Double>, b: Double) -> MLDataColumn<Double>
+```
+
+```swift
+static func / (a: MLDataColumn<Double>, b: MLDataColumn<Double>) -> MLDataColumn<Double>
+```
+
+```swift
+static func / (a: MLDataColumn<Int>, b: Int) -> MLDataColumn<Int>
+```
+
+```swift
+static func / (a: MLDataColumn<Int>, b: MLDataColumn<Int>) -> MLDataColumn<Int>
+```
+
 #### Return Value
 
 A new column of doubles.
@@ -30,11 +55,12 @@ A new column of doubles.
 
 ## See Also
 
-- [static +(_:_:)](mldatacolumn/+(_:_:).md)
+### Combining columns
+- [static +(_:_:)](./plus%28_,_%29.md)
   Creates a column of doubles by adding the given double to each element of the given column.
-- [static -(_:_:)](mldatacolumn/-(_:_:).md)
+- [static -(_:_:)](./minus%28_,_%29.md)
   Creates a column of doubles by subtracting each element of the given column from the given double.
-- [static *(_:_:)](mldatacolumn/*(_:_:).md)
+- [static *(_:_:)](./star%28_,_%29.md)
   Creates a column of doubles by multiplying the given double by each element of the given column.
 
 

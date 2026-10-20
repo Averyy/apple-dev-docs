@@ -1,7 +1,8 @@
 # init(boxes:maxScore:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance of this object with the given values.
 
@@ -9,7 +10,7 @@ Initializes an instance of this object with the given values.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

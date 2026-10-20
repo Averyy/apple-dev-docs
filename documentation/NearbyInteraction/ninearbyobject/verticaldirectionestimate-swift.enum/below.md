@@ -1,7 +1,8 @@
 # NINearbyObject.VerticalDirectionEstimate.below
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that the nearby object resides at a lower vertical location than the user’s device.
 
@@ -17,15 +18,20 @@ An indication that the nearby object resides at a lower vertical location than t
 case below
 ```
 
+```c
+NINearbyObjectVerticalDirectionEstimateBelow
+```
+
 ## See Also
 
-- [NINearbyObject.VerticalDirectionEstimate.unknown](ninearbyobject/verticaldirectionestimate-swift.enum/unknown.md)
+### Relative vertical location
+- [NINearbyObject.VerticalDirectionEstimate.unknown](./unknown.md)
   An indication that the nearby object resides at an unknown vertical location.
-- [NINearbyObject.VerticalDirectionEstimate.same](ninearbyobject/verticaldirectionestimate-swift.enum/same.md)
+- [NINearbyObject.VerticalDirectionEstimate.same](./same.md)
   An indication that the nearby object resides at an equivalent vertical location as the user’s device.
-- [NINearbyObject.VerticalDirectionEstimate.above](ninearbyobject/verticaldirectionestimate-swift.enum/above.md)
+- [NINearbyObject.VerticalDirectionEstimate.above](./above.md)
   An indication that the nearby object resides at a higher vertical location than the user’s device.
-- [NINearbyObject.VerticalDirectionEstimate.aboveOrBelow](ninearbyobject/verticaldirectionestimate-swift.enum/aboveorbelow.md)
+- [NINearbyObject.VerticalDirectionEstimate.aboveOrBelow](./aboveorbelow.md)
   An indication that the nearby object doesn’t reside at the same vertical location as the user’s device.
 
 

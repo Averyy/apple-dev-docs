@@ -1,7 +1,8 @@
 # NEAppRule
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The identity of an app whose traffic is to be routed through the tunnel.
 
@@ -18,51 +19,56 @@ The identity of an app whose traffic is to be routed through the tunnel.
 class NEAppRule
 ```
 
+```objc
+@interface NEAppRule : NSObject
+```
+
 ## Topics
 
 ### Initializing an app rule
-- [init(signingIdentifier: String)](neapprule/init(signingidentifier:).md)
+- [init(signingIdentifier: String)](./neapprule/init%28signingidentifier%29.md)
   Create an app rule that matches an app with a given signing identifier.
-- [init(signingIdentifier: String, designatedRequirement: String)](neapprule/init(signingidentifier:designatedrequirement:).md)
+- [init(signingIdentifier: String, designatedRequirement: String)](./neapprule/init%28signingidentifier,designatedrequirement%29.md)
   Create an app rule that matches an app with a given signing identifier and a given designated requirement.
 ### Accessing app rule properties
-- [var matchSigningIdentifier: String](neapprule/matchsigningidentifier.md)
+- [var matchSigningIdentifier: String](./neapprule/matchsigningidentifier.md)
   The signing identifier of the app that matches the rule.
-- [var matchDesignatedRequirement: String](neapprule/matchdesignatedrequirement.md)
+- [var matchDesignatedRequirement: String](./neapprule/matchdesignatedrequirement.md)
   The designated requirement of the app that matches the rule.
-- [var matchPath: String?](neapprule/matchpath.md)
+- [var matchPath: String?](./neapprule/matchpath.md)
   The file system path of the app that matches the rule.
-- [var matchDomains: [Any]?](neapprule/matchdomains.md)
+- [var matchDomains: [Any]?](./neapprule/matchdomains.md)
   The hostname domains that match the rule.
-- [var matchTools: [NEAppRule]?](neapprule/matchtools.md)
+- [var matchTools: [NEAppRule]?](./neapprule/matchtools.md)
   An array of app rule objects that restrict the rule so it only matches network traffic generated from helper processes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEAppProxyProviderManager](neappproxyprovidermanager.md)
+### VPN configuration
+- [class NEAppProxyProviderManager](./neappproxyprovidermanager.md)
   An object to create and manage the app proxy provider’s VPN configuration.
-- [class NETunnelProviderManager](netunnelprovidermanager.md)
+- [class NETunnelProviderManager](./netunnelprovidermanager.md)
   An object to create and manage the tunnel provider’s VPN configuration.
-- [class NEVPNManager](nevpnmanager.md)
+- [class NEVPNManager](./nevpnmanager.md)
   An object to create and manage a Personal VPN configuration.
-- [class NETunnelProviderProtocol](netunnelproviderprotocol.md)
+- [class NETunnelProviderProtocol](./netunnelproviderprotocol.md)
   Configuration parameters for a VPN tunnel.
-- [VPN On Demand Rules](vpn-on-demand-rules.md)
+- [VPN On Demand Rules](./vpn-on-demand-rules.md)
   Set up VPN On Demand.
 
 

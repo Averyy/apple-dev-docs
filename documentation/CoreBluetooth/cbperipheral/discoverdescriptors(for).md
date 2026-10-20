@@ -1,7 +1,8 @@
 # discoverDescriptors(for:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Discovers the descriptors of a characteristic.
 
@@ -20,9 +21,13 @@ Discovers the descriptors of a characteristic.
 func discoverDescriptors(for characteristic: CBCharacteristic)
 ```
 
+```objc
+- (void) discoverDescriptorsForCharacteristic:(CBCharacteristic *) characteristic;
+```
+
 #### Discussion
 
-When the peripheral discovers one or more descriptors of the specified characteristic, it calls the [`peripheral(_:didDiscoverDescriptorsFor:error:)`](cbperipheraldelegate/peripheral(_:diddiscoverdescriptorsfor:error:).md) method of its delegate object. After the peripheral discovers the descriptors of the characteristic, you can access them through the characteristic’s [`descriptors`](cbcharacteristic/descriptors.md) property.
+When the peripheral discovers one or more descriptors of the specified characteristic, it calls the [`peripheral(_:didDiscoverDescriptorsFor:error:)`](../cbperipheraldelegate/peripheral%28_,diddiscoverdescriptorsfor,error%29.md) method of its delegate object. After the peripheral discovers the descriptors of the characteristic, you can access them through the characteristic’s [`descriptors`](../cbcharacteristic/descriptors.md) property.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ When the peripheral discovers one or more descriptors of the specified character
 
 ## See Also
 
-- [func discoverCharacteristics([CBUUID]?, for: CBService)](cbperipheral/discovercharacteristics(_:for:).md)
+### Discovering Characteristics and Descriptors
+- [func discoverCharacteristics([CBUUID]?, for: CBService)](./discovercharacteristics%28_,for%29.md)
   Discovers the specified characteristics of a service.
 
 

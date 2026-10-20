@@ -1,7 +1,8 @@
 # horizontalBlanking
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Blanking clocks per line.
 
@@ -10,7 +11,7 @@ Blanking clocks per line.
 
 ## Declaration
 
-```swift
+```c
 UInt32 horizontalBlanking;
 ```
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object you use to customize the toolbar contents and configuration.
 
@@ -9,7 +10,7 @@ The object you use to customize the toolbar contents and configuration.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ The object you use to customize the toolbar contents and configuration.
 weak var delegate: (any NSToolbarDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSToolbarDelegate> delegate;
+```
+
 #### Discussion
 
-Assign an object to this property if you customize the toolbar’s behavior. The object you assign to this property must adopt the [`NSToolbarDelegate`](nstoolbardelegate.md) protocol.
+Assign an object to this property if you customize the toolbar’s behavior. The object you assign to this property must adopt the [`NSToolbarDelegate`](../nstoolbardelegate.md) protocol.
 
 ## See Also
 
-- [protocol NSToolbarDelegate](nstoolbardelegate.md)
+### Configuring the toolbar contents
+- [protocol NSToolbarDelegate](../nstoolbardelegate.md)
   A set of optional methods you use to configure the toolbar and respond to changes.
 
 

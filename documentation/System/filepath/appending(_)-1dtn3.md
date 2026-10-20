@@ -1,7 +1,8 @@
 # appending(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Non-mutating version of `append(_:String)`.
 

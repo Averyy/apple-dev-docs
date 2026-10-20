@@ -1,7 +1,8 @@
 # UIListContentConfiguration.TextProperties.TextAlignment.natural
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The text uses the default alignment that the system associates with the current localization of the app.
 
@@ -10,7 +11,7 @@ The text uses the default alignment that the system associates with the current 
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ case natural
 
 ## See Also
 
-- [UIListContentConfiguration.TextProperties.TextAlignment.center](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/textalignment/center.md)
+### Text alignment
+- [UIListContentConfiguration.TextProperties.TextAlignment.center](./center.md)
   The text has centered alignment.
-- [UIListContentConfiguration.TextProperties.TextAlignment.justified](uilistcontentconfiguration-swift.struct/textproperties-swift.struct/textalignment/justified.md)
+- [UIListContentConfiguration.TextProperties.TextAlignment.justified](./justified.md)
   The text has justified alignment.
 
 

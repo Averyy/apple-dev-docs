@@ -1,7 +1,8 @@
 # labeledTexts()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the labeled data from the data source.
 
@@ -24,7 +25,8 @@ A dictionary that contains each label with their related text entries.
 
 ## See Also
 
-- [func stratifiedSplit(proportions: [Double], seed: Int, labelColumn: String, textColumn: String) throws -> MLDataTable](mltextclassifier/datasource/stratifiedsplit(proportions:seed:labelcolumn:textcolumn:).md)
+### Retrieving the data
+- [func stratifiedSplit(proportions: [Double], seed: Int, labelColumn: String, textColumn: String) throws -> MLDataTable](./stratifiedsplit%28proportions,seed,labelcolumn,textcolumn%29.md)
   Generates a data table by splitting the data source into strata.
 
 

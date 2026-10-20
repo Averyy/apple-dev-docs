@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The intensity of the effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The intensity of the effect.
 var intensity: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float intensity;
+```
+
 ## See Also
 
-- [var center: CGPoint](civignetteeffect/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The center of the effect as x and y coordinates.
-- [var falloff: Float](civignetteeffect/falloff.md)
+- [var falloff: Float](./falloff.md)
   The falloff of the effect.
-- [var inputImage: CIImage?](civignetteeffect/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var radius: Float](civignetteeffect/radius.md)
+- [var radius: Float](./radius.md)
   The distance from the center of the effect.
 
 

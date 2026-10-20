@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an overlapping priority from the value.
 
@@ -21,11 +22,12 @@ init(_ rawValue: Float)
 
 ## Parameters
 
-- `rawValue`: A value between [`min`](mkannotationviewzpriority/min.md) and [`max`](mkannotationviewzpriority/max.md).
+- `rawValue`: A value between [`min`](./min.md) and [`max`](./max.md).
 
 ## See Also
 
-- [init(rawValue: Float)](mkannotationviewzpriority/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: Float)](./init%28rawvalue%29.md)
   Creates an overlapping priority from the value.
 
 

@@ -1,7 +1,8 @@
 # canHandle(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns whether a request can be handled based on a preflight evaluation.
 
@@ -20,13 +21,17 @@ Returns whether a request can be handled based on a preflight evaluation.
 class func canHandle(_ request: URLRequest) -> Bool
 ```
 
+```objc
++ (BOOL) canHandleRequest:(NSURLRequest *) request;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a preflight operation determines that a connection with `request` can be created and the associated I/O can be started, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if a preflight operation determines that a connection with `request` can be created and the associated I/O can be started, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-The result of this method is valid as long as no [`URLProtocol`](urlprotocol.md) classes are registered or unregistered, and `request` remains unchanged. Applications should be prepared to handle failures even if they have performed request preflighting by calling this method.
+The result of this method is valid as long as no [`URLProtocol`](../urlprotocol.md) classes are registered or unregistered, and `request` remains unchanged. Applications should be prepared to handle failures even if they have performed request preflighting by calling this method.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ The result of this method is valid as long as no [`URLProtocol`](urlprotocol.md)
 
 ## See Also
 
-- [class func unregisterClass(AnyClass)](urlprotocol/unregisterclass(_:).md)
-  Unregisters the specified subclass of [`URLProtocol`](urlprotocol.md).
-- [class func registerClass(AnyClass) -> Bool](urlprotocol/registerclass(_:).md)
-  Attempts to register a subclass of [`URLProtocol`](urlprotocol.md), making it visible to the URL loading system.
-- [URL Loading System](url-loading-system.md)
+### Related Documentation
+- [class func unregisterClass(AnyClass)](../urlprotocol/unregisterclass%28_%29.md)
+  Unregisters the specified subclass of [`URLProtocol`](../urlprotocol.md).
+- [class func registerClass(AnyClass) -> Bool](../urlprotocol/registerclass%28_%29.md)
+  Attempts to register a subclass of [`URLProtocol`](../urlprotocol.md), making it visible to the URL loading system.
+- [URL Loading System](../url-loading-system.md)
   Interact with URLs and communicate with servers using standard Internet protocols.
 
 

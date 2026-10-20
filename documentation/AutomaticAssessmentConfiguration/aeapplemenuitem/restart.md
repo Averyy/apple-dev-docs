@@ -1,7 +1,8 @@
 # restart
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Restart item, covering both the command and its confirmation.
 
@@ -13,6 +14,10 @@ The Restart item, covering both the command and its confirmation.
 
 ```swift
 static let restart: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemRestart;
 ```
 
 

@@ -1,7 +1,8 @@
 # cspHand
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var cspHand: CSSM_CSP_HANDLE
+```
+
+```c
+CSSM_CSP_HANDLE cspHand;
 ```
 
 

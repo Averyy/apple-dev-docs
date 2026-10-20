@@ -1,12 +1,13 @@
 # isMemberRecord(_:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether a given record is a member of this group record.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
@@ -15,11 +16,17 @@ Determines whether a given record is a member of this group record.
 func isMemberRecord(_ inRecord: ODRecord!) throws
 ```
 
+```objc
+- (BOOL) isMemberRecord:(ODRecord *) inRecord error:(NSError **) outError;
+```
+
 #### Discussion
 
-If this record is not a group record, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+If this record is not a group record, this method returns [`false`](../../Swift/false.md).
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -27,9 +34,10 @@ If this record is not a group record, this method returns [`false`](https://deve
 
 ## See Also
 
-- [func addMemberRecord(ODRecord!) throws](odrecord/addmemberrecord(_:).md)
+### Managing Group Records
+- [func addMemberRecord(ODRecord!) throws](./addmemberrecord%28_%29.md)
   Adds a member record to this group record.
-- [func removeMemberRecord(ODRecord!) throws](odrecord/removememberrecord(_:).md)
+- [func removeMemberRecord(ODRecord!) throws](./removememberrecord%28_%29.md)
   Removes a record as a member of this group record.
 
 

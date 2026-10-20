@@ -1,18 +1,20 @@
 # Anonymous
 
-**Framework**: InputMethodKit
+**Framework**: InputMethodKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kIMKScrollingGridCandidatePanel: Int](kimkscrollinggridcandidatepanel.md)
-- [var kIMKSingleColumnScrollingCandidatePanel: Int](kimksinglecolumnscrollingcandidatepanel.md)
-- [var kIMKSingleRowSteppingCandidatePanel: Int](kimksinglerowsteppingcandidatepanel.md)
+- [var kIMKScrollingGridCandidatePanel: Int](./kimkscrollinggridcandidatepanel.md)
+- [var kIMKSingleColumnScrollingCandidatePanel: Int](./kimksinglecolumnscrollingcandidatepanel.md)
+- [var kIMKSingleRowSteppingCandidatePanel: Int](./kimksinglerowsteppingcandidatepanel.md)
 
 ## See Also
 
-- [Anonymous](inputmethodkit-enumerations-1448298-anonymous.md)
-- [Anonymous](inputmethodkit-enumerations-1448301-anonymous.md)
+### Enumerations
+- [Anonymous](./inputmethodkit-enumerations-1448298-anonymous.md)
+- [Anonymous](./inputmethodkit-enumerations-1448301-anonymous.md)
 
 
 ---

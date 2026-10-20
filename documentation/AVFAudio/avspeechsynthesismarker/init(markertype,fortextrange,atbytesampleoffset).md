@@ -1,7 +1,8 @@
 # init(markerType:forTextRange:atByteSampleOffset:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a marker with a type and location of the request’s text.
 
@@ -20,6 +21,10 @@ Creates a marker with a type and location of the request’s text.
 init(markerType type: AVSpeechSynthesisMarker.Mark, forTextRange range: NSRange, atByteSampleOffset byteSampleOffset: Int)
 ```
 
+```objc
+- (instancetype) initWithMarkerType:(AVSpeechSynthesisMarkerMark) type forTextRange:(NSRange) range atByteSampleOffset:(NSUInteger) byteSampleOffset;
+```
+
 ## Parameters
 
 - `type`: The type that describes the text.
@@ -28,15 +33,16 @@ init(markerType type: AVSpeechSynthesisMarker.Mark, forTextRange range: NSRange,
 
 ## See Also
 
-- [init(wordRange: NSRange, atByteSampleOffset: Int)](avspeechsynthesismarker/init(wordrange:atbytesampleoffset:).md)
+### Creating a marker
+- [init(wordRange: NSRange, atByteSampleOffset: Int)](./init%28wordrange,atbytesampleoffset%29.md)
   Creates a word marker with a range of the word and offset into the audio buffer.
-- [init(sentenceRange: NSRange, atByteSampleOffset: Int)](avspeechsynthesismarker/init(sentencerange:atbytesampleoffset:).md)
+- [init(sentenceRange: NSRange, atByteSampleOffset: Int)](./init%28sentencerange,atbytesampleoffset%29.md)
   Creates a sentence marker with a range of the sentence and offset into the audio buffer.
-- [init(paragraphRange: NSRange, atByteSampleOffset: Int)](avspeechsynthesismarker/init(paragraphrange:atbytesampleoffset:).md)
+- [init(paragraphRange: NSRange, atByteSampleOffset: Int)](./init%28paragraphrange,atbytesampleoffset%29.md)
   Creates a paragraph marker with a range of the paragraph and offset into the audio buffer.
-- [init(phonemeString: String, atByteSampleOffset: Int)](avspeechsynthesismarker/init(phonemestring:atbytesampleoffset:).md)
+- [init(phonemeString: String, atByteSampleOffset: Int)](./init%28phonemestring,atbytesampleoffset%29.md)
   Creates a phoneme marker with a range of the phoneme and offset into the audio buffer.
-- [init(bookmarkName: String, atByteSampleOffset: Int)](avspeechsynthesismarker/init(bookmarkname:atbytesampleoffset:).md)
+- [init(bookmarkName: String, atByteSampleOffset: Int)](./init%28bookmarkname,atbytesampleoffset%29.md)
   Creates a bookmark marker with a name and offset into the audio buffer.
 
 

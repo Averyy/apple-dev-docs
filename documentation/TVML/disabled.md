@@ -1,6 +1,7 @@
 # disabled
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Sets an element as unfocusable.
 
@@ -8,20 +9,21 @@ Sets an element as unfocusable.
 
 Child elements inherit this attribute from their parent element.
 
-##### Values for Disabled
+##### Values for disabled
 
 - **Boolean**: Cannot come into focus when set to `true`.
 
-##### Elements That Use Disabled
+##### Elements that Use disabled
 
 - All full-page templates
 - Any focusable element
 
 ## See Also
 
-- [autoHighlight](autohighlight.md)
+### Focus Attributes
+- [autoHighlight](./autohighlight.md)
   Specifies that the element should initially be in focus.
-- [handlesOverflow](handlesoverflow.md)
+- [handlesOverflow](./handlesoverflow.md)
   Adds the “MORE” label to a description.
 
 

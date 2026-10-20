@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app store version experiment treatment localization create request resource.
 
@@ -10,17 +11,18 @@ Attributes that describe an app store version experiment treatment localization 
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Attributes
 ```
 
 ## Properties
 
-- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string) *(required)*: The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships](appstoreversionexperimenttreatmentlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

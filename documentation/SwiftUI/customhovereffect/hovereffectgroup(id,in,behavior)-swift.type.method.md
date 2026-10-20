@@ -1,7 +1,8 @@
 # hoverEffectGroup(id:in:behavior:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an effect that activates a named group of effects.
 
@@ -14,6 +15,8 @@ Creates an effect that activates a named group of effects.
 static func hoverEffectGroup(id: String? = nil, in namespace: Namespace.ID, behavior: HoverEffectGroup.Behavior = .activatesGroup) -> GroupHoverEffect
 ```
 
+Available when `Self` is `GroupHoverEffect`.
+
 #### Return Value
 
 A new effect that activates the given effect group.
@@ -22,7 +25,7 @@ A new effect that activates the given effect group.
 
 The effect group is uniquely identified by combining the `id` and `namespace` parameters. If an `id` is not provided, the effect will be identified by the `namespace` alone. Providing an `id` is useful when creating effects that use multiple, closely-related groups.
 
-The default behavior of an effect is to activate the effect group when hovered. The `behavior` parameter can be used to choose alternative behaviors. See [`HoverEffectGroup.Behavior`](hovereffectgroup/behavior.md) for all possible behaviors.
+The default behavior of an effect is to activate the effect group when hovered. The `behavior` parameter can be used to choose alternative behaviors. See [`HoverEffectGroup.Behavior`](../hovereffectgroup/behavior.md) for all possible behaviors.
 
 ## Parameters
 

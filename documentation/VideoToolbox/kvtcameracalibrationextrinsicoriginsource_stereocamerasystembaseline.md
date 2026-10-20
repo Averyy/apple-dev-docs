@@ -1,7 +1,8 @@
 # kVTCameraCalibrationExtrinsicOriginSource_StereoCameraSystemBaseline
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let kVTCameraCalibrationExtrinsicOriginSource_StereoCameraSystemBaseline: CFString
+```
+
+```c
+extern CFStringRef const kVTCameraCalibrationExtrinsicOriginSource_StereoCameraSystemBaseline;
 ```
 
 

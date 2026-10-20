@@ -1,7 +1,8 @@
 # GCInputPedalAccelerator
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the accelerator element.
 
@@ -17,15 +18,17 @@ var GCInputPedalAccelerator: String { get }
 
 ## See Also
 
-- [var acceleratorPedal: (any GCButtonElement)?](gcracingwheelinputstate/acceleratorpedal.md)
+### Related Documentation
+- [var acceleratorPedal: (any GCButtonElement)?](./gcracingwheelinputstate/acceleratorpedal.md)
   The controller’s accelerator pedal element.
-- [var GCInputSteeringWheel: String](gcinputsteeringwheel-26283.md)
+### Accessing elements by name
+- [var GCInputSteeringWheel: String](./gcinputsteeringwheel-26283.md)
   The name of the steering wheel element.
-- [var GCInputShifter: String](gcinputshifter-6miga.md)
+- [var GCInputShifter: String](./gcinputshifter-6miga.md)
   The name of the shifter element.
-- [var GCInputPedalClutch: String](gcinputpedalclutch-82gwe.md)
+- [var GCInputPedalClutch: String](./gcinputpedalclutch-82gwe.md)
   The name of the clutch element.
-- [var GCInputPedalBrake: String](gcinputpedalbrake-6wpdc.md)
+- [var GCInputPedalBrake: String](./gcinputpedalbrake-6wpdc.md)
   The name of the brake element.
 
 

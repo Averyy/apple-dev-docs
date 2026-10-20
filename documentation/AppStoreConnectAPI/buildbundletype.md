@@ -1,7 +1,8 @@
 # BuildBundleType
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that represents the possible components of a build bundle.
 
@@ -10,23 +11,30 @@ A string that represents the possible components of a build bundle.
 
 ## Declaration
 
-```swift
+```
 string BuildBundleType
 ```
 
+## Possible Values
+
+- `APP`
+- `APP_CLIP`
+- `WATCH_APP`
+
 ## See Also
 
-- [object BuildBundle](buildbundle.md)
+### Objects
+- [object BuildBundle](./buildbundle.md)
   A specific binary bundle within a build, such as an app extension, App Clip, or nested app target.
-- [object AppClipDomainStatus](appclipdomainstatus.md)
+- [object AppClipDomainStatus](./appclipdomainstatus.md)
   The validation status of the associated domains configured for an App Clip, indicating whether each domain is reachable and correctly set up.
-- [object BuildBundleFileSize](buildbundlefilesize.md)
+- [object BuildBundleFileSize](./buildbundlefilesize.md)
   The estimated and actual download and install sizes for a build bundle, broken down by device type.
-- [object AppClipDomainStatusResponse](appclipdomainstatusresponse.md)
+- [object AppClipDomainStatusResponse](./appclipdomainstatusresponse.md)
   A response containing the validation status of associated domains configured for an App Clip.
-- [object BetaAppClipInvocationsResponse](betaappclipinvocationsresponse.md)
+- [object BetaAppClipInvocationsResponse](./betaappclipinvocationsresponse.md)
   A response containing a list of TestFlight App Clip invocations for a beta build.
-- [object BuildBundleFileSizesResponse](buildbundlefilesizesresponse.md)
+- [object BuildBundleFileSizesResponse](./buildbundlefilesizesresponse.md)
   A response containing a list of download and install size estimates for a build’s bundles.
 
 

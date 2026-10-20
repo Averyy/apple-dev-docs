@@ -1,12 +1,15 @@
 # TVPlaybackState.undefined
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The playback state of the player is undefined.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,23 +17,28 @@ The playback state of the player is undefined.
 case undefined
 ```
 
+```c
+TVPlaybackStateUndefined
+```
+
 ## See Also
 
-- [TVPlaybackState.begin](tvplaybackstate/begin.md)
+### Playback States
+- [TVPlaybackState.begin](./begin.md)
   The player is beginning playback.
-- [TVPlaybackState.loading](tvplaybackstate/loading.md)
+- [TVPlaybackState.loading](./loading.md)
   The player is loading a media item.
-- [TVPlaybackState.playing](tvplaybackstate/playing.md)
+- [TVPlaybackState.playing](./playing.md)
   The player is currently playing.
-- [TVPlaybackState.paused](tvplaybackstate/paused.md)
+- [TVPlaybackState.paused](./paused.md)
   The player paused playback.
-- [TVPlaybackState.scanning](tvplaybackstate/scanning.md)
+- [TVPlaybackState.scanning](./scanning.md)
   The player is quickly scanning forwards or backwards.
-- [TVPlaybackState.fastForwarding](tvplaybackstate/fastforwarding.md)
+- [TVPlaybackState.fastForwarding](./fastforwarding.md)
   The player is fast-forwarding.
-- [TVPlaybackState.rewinding](tvplaybackstate/rewinding.md)
+- [TVPlaybackState.rewinding](./rewinding.md)
   The player is rewinding.
-- [TVPlaybackState.end](tvplaybackstate/end.md)
+- [TVPlaybackState.end](./end.md)
   The player ended playback.
 
 

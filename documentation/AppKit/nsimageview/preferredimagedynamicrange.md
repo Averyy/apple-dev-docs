@@ -1,7 +1,8 @@
 # preferredImageDynamicRange
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred dynamic range when displaying an image in the receiving image view.
 
@@ -14,11 +15,16 @@ The preferred dynamic range when displaying an image in the receiving image view
 var preferredImageDynamicRange: NSImage.DynamicRange { get set }
 ```
 
+```objc
+@property NSImageDynamicRange preferredImageDynamicRange;
+```
+
 ## See Also
 
-- [var imageDynamicRange: NSImage.DynamicRange](nsimageview/imagedynamicrange.md)
+### Specifying the dynamic range
+- [var imageDynamicRange: NSImage.DynamicRange](./imagedynamicrange.md)
   The resolved dynamic range of the fully resolved image content.
-- [class var defaultPreferredImageDynamicRange: NSImage.DynamicRange](nsimageview/defaultpreferredimagedynamicrange.md)
+- [class var defaultPreferredImageDynamicRange: NSImage.DynamicRange](./defaultpreferredimagedynamicrange.md)
   The default preferred image dynamic range.
 
 

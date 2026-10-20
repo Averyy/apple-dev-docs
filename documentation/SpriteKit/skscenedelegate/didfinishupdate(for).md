@@ -1,7 +1,8 @@
 # didFinishUpdate(for:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells you to peform any necessary logic after the scene has finished all of the steps required to process animations.
 
@@ -18,6 +19,10 @@ Tells you to peform any necessary logic after the scene has finished all of the 
 
 ```swift
 optional func didFinishUpdate(for scene: SKScene)
+```
+
+```objc
+- (void) didFinishUpdateForScene:(SKScene *) scene;
 ```
 
 #### Discussion
@@ -38,15 +43,16 @@ No further update logic will be applied to the scene after this call. Any values
 
 ## See Also
 
-- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
+### Handling Animation Events
+- [Use SpriteKit Objects within Scene Delegate Callbacks](../use-spritekit-objects-within-scene-delegate-callbacks.md)
   Follow threading guidelines to keep your SpriteKit app thread safe.
-- [func update(TimeInterval, for: SKScene)](skscenedelegate/update(_:for:).md)
+- [func update(TimeInterval, for: SKScene)](./update%28_,for%29.md)
   Tells you to perform any app specific logic to update your scene.
-- [func didEvaluateActions(for: SKScene)](skscenedelegate/didevaluateactions(for:).md)
+- [func didEvaluateActions(for: SKScene)](./didevaluateactions%28for%29.md)
   Tells you to peform any necessary logic after scene actions are evaluated.
-- [func didSimulatePhysics(for: SKScene)](skscenedelegate/didsimulatephysics(for:).md)
+- [func didSimulatePhysics(for: SKScene)](./didsimulatephysics%28for%29.md)
   Tells you to peform any necessary logic after physics simulations are performed.
-- [func didApplyConstraints(for: SKScene)](skscenedelegate/didapplyconstraints(for:).md)
+- [func didApplyConstraints(for: SKScene)](./didapplyconstraints%28for%29.md)
   Tells you to peform any necessary logic after constraints are applied.
 
 

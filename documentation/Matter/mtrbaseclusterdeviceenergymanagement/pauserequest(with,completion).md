@@ -1,7 +1,8 @@
 # pauseRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command PauseRequest
 
@@ -17,7 +18,15 @@ Command PauseRequest
 ## Declaration
 
 ```swift
+func pauseRequest(with params: MTRDeviceEnergyManagementClusterPauseRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func pauseRequest(with params: MTRDeviceEnergyManagementClusterPauseRequestParams) async throws
+```
+
+```objc
+- (void) pauseRequestWithParams:(MTRDeviceEnergyManagementClusterPauseRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

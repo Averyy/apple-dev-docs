@@ -1,7 +1,8 @@
 # hasPreciseScrollingDeltas
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether precise scrolling deltas are available.
 
@@ -14,27 +15,32 @@ A Boolean value that indicates whether precise scrolling deltas are available.
 var hasPreciseScrollingDeltas: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasPreciseScrollingDeltas;
+```
+
 #### Discussion
 
-This property is set to [`true`](https://developer.apple.com/documentation/swift/true) if precise scrolling deltas are available; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+This property is set to [`true`](../../Swift/true.md) if precise scrolling deltas are available; otherwise, [`false`](../../Swift/false.md).
 
-This property is valid for [`NSScrollWheel`](nsscrollwheel.md) events. A generic scroll wheel issues rather coarse scroll deltas. Some mice and trackpads provide much more precise delta. This method determines how the values of the [`scrollingDeltaX`](nsevent/scrollingdeltax.md) and [`scrollingDeltaY`](nsevent/scrollingdeltay.md) should be interpreted.
+This property is valid for [`NSScrollWheel`](../nsscrollwheel.md) events. A generic scroll wheel issues rather coarse scroll deltas. Some mice and trackpads provide much more precise delta. This method determines how the values of the [`scrollingDeltaX`](./scrollingdeltax.md) and [`scrollingDeltaY`](./scrollingdeltay.md) should be interpreted.
 
 ## See Also
 
-- [var deltaX: CGFloat](nsevent/deltax.md)
+### Getting scroll wheel and flick events
+- [var deltaX: CGFloat](./deltax.md)
   The x-coordinate change for scroll wheel, mouse-move, mouse-drag, and swipe events.
-- [var deltaY: CGFloat](nsevent/deltay.md)
+- [var deltaY: CGFloat](./deltay.md)
   The y-coordinate change for scroll wheel, mouse-move, mouse-drag, and swipe events.
-- [var deltaZ: CGFloat](nsevent/deltaz.md)
+- [var deltaZ: CGFloat](./deltaz.md)
   The z-coordinate change for a scroll wheel, mouse-move, or mouse-drag event.
-- [var scrollingDeltaX: CGFloat](nsevent/scrollingdeltax.md)
+- [var scrollingDeltaX: CGFloat](./scrollingdeltax.md)
   The scroll wheel’s horizontal delta.
-- [var scrollingDeltaY: CGFloat](nsevent/scrollingdeltay.md)
+- [var scrollingDeltaY: CGFloat](./scrollingdeltay.md)
   The scroll wheel’s vertical delta.
-- [var momentumPhase: NSEvent.Phase](nsevent/momentumphase.md)
+- [var momentumPhase: NSEvent.Phase](./momentumphase.md)
   The momentum phase for a scroll or flick gesture.
-- [var isDirectionInvertedFromDevice: Bool](nsevent/isdirectioninvertedfromdevice.md)
+- [var isDirectionInvertedFromDevice: Bool](./isdirectioninvertedfromdevice.md)
   A Boolean value that indicates whether the user has changed the device inversion.
 
 

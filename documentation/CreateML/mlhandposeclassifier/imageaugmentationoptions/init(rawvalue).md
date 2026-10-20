@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an option set from an integer.
 

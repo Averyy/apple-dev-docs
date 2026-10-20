@@ -1,17 +1,22 @@
 # init(duration:animationCurve:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSAnimation` object initialized with the specified duration and animation-curve values.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(duration: TimeInterval, animationCurve: NSAnimation.Curve)
+```
+
+```objc
+- (instancetype) initWithDuration:(NSTimeInterval) duration animationCurve:(NSAnimationCurve) animationCurve;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ An initialized `NSAnimation` instance. Returns `nil` if the object could not be 
 
 #### Discussion
 
-You can always later change the duration of an `NSAnimation` object by changing the [`duration`](nsanimation/duration.md) property, even while the animation is running. See “Constants” for descriptions of the NSAnimationCurve constants.
+You can always later change the duration of an `NSAnimation` object by changing the [`duration`](./duration.md) property, even while the animation is running. See “Constants” for descriptions of the NSAnimationCurve constants.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ You can always later change the duration of an `NSAnimation` object by changing 
 
 ## See Also
 
-- [Drawing](drawing.md)
+### Related Documentation
+- [Drawing](../drawing.md)
   Draw shapes, images, and other content on the screen.
-- [class NSAnimation](nsanimation.md)
+- [class NSAnimation](../nsanimation.md)
   An object that manages the timing and progress of animations in the user interface.
 
 

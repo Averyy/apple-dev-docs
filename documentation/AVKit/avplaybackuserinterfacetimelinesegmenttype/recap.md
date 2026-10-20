@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType.recap
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment contains a recap of previous content.
 
@@ -14,6 +15,10 @@ The segment contains a recap of previous content.
 
 ```swift
 case recap
+```
+
+```c
+AVPlaybackUserInterfaceTimelineSegmentTypeRecap
 ```
 
 

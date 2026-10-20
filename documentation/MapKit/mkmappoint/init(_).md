@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the map point data structure that corresponds to the specified coordinate.
 
@@ -20,6 +21,10 @@ Creates the map point data structure that corresponds to the specified coordinat
 init(_ coordinate: CLLocationCoordinate2D)
 ```
 
+```c
+extern MKMapPoint MKMapPointForCoordinate(CLLocationCoordinate2D coordinate);
+```
+
 #### Return Value
 
 The map point value that corresponds to the specified coordinate on a two-dimensional map projection.
@@ -30,9 +35,10 @@ The map point value that corresponds to the specified coordinate on a two-dimens
 
 ## See Also
 
-- [init()](mkmappoint/init.md)
+### Creating a map point
+- [init()](./init%28%29.md)
   Creates a map point at an unspecified point.
-- [init(x: Double, y: Double)](mkmappoint/init(x:y:).md)
+- [init(x: Double, y: Double)](./init%28x,y%29.md)
   Creates a new map point structure from the specified values.
 
 

@@ -1,21 +1,22 @@
 # WebhookDeliveryCreateRequest.Data.Relationships.Template
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object WebhookDeliveryCreateRequest.Data.Relationships.Template
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object WebhookDeliveryCreateRequest.Data.Relationships.Template.Data](webhookdeliverycreaterequest/data-data.dictionary/relationships-data.dictionary/template-data.dictionary/data-data.dictionary.md)
+- [object WebhookDeliveryCreateRequest.Data.Relationships.Template.Data](./template-data.dictionary/data-data.dictionary.md)
   The request body you use to create a webhook delivery.
 
 ## Properties

@@ -1,7 +1,8 @@
 # Spa
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for spas.
 
@@ -10,7 +11,7 @@ The point-of-interest category for spas.
 
 ## Declaration
 
-```swift
+```
 readonly Spa: "Spa";
 ```
 

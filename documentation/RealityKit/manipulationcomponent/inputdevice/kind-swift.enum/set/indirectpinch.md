@@ -1,7 +1,8 @@
 # indirectPinch
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An indirectly targeted pinching hand.
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [FFT_RADIX2](1645053-anonymous/fft_radix2.md)
-- [FFT_RADIX3](1645053-anonymous/fft_radix3.md)
-- [FFT_RADIX5](1645053-anonymous/fft_radix5.md)
+- [FFT_RADIX2](./api-1645053-anonymous/fft_radix2.md)
+- [FFT_RADIX3](./api-1645053-anonymous/fft_radix3.md)
+- [FFT_RADIX5](./api-1645053-anonymous/fft_radix5.md)
 
 
 ---

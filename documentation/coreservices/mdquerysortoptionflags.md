@@ -1,7 +1,8 @@
 # MDQuerySortOptionFlags
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,26 @@
 struct MDQuerySortOptionFlags
 ```
 
+```c
+typedef enum MDQuerySortOptionFlags : unsigned int {
+    ...
+} MDQuerySortOptionFlags;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](mdquerysortoptionflags/1446465-init.md)
-- [init(rawValue: UInt32)](mdquerysortoptionflags/1442455-init.md)
+- [init(UInt32)](./mdquerysortoptionflags/api-1446465-init.md)
+- [init(rawValue: UInt32)](./mdquerysortoptionflags/api-1442455-init.md)
 ### Instance Properties
-- [var rawValue: UInt32](mdquerysortoptionflags/1442589-rawvalue.md)
+- [var rawValue: UInt32](./mdquerysortoptionflags/api-1442589-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

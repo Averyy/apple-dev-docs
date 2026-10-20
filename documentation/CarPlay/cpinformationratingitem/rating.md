@@ -1,7 +1,8 @@
 # rating
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current rating that the template displays.
 
@@ -16,13 +17,18 @@ The current rating that the template displays.
 var rating: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * rating;
+```
+
 #### Discussion
 
-This property is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that contains a value in the range of 0 to [`maximumRating`](cpinformationratingitem/maximumrating.md). The value is an increment of 0.5.
+This property is an [`NSNumber`](../../Foundation/nsnumber.md) that contains a value in the range of 0 to [`maximumRating`](./maximumrating.md). The value is an increment of 0.5.
 
 ## See Also
 
-- [var maximumRating: NSNumber?](cpinformationratingitem/maximumrating.md)
+### Accessing the Item’s Attributes
+- [var maximumRating: NSNumber?](./maximumrating.md)
   The maximum rating that the template displays.
 
 

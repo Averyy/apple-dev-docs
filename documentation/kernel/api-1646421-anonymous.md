@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [BIDIRECTIONAL_ECHO_CANCELING_SPEAKERPHONE](1646421-anonymous/bidirectional_echo_canceling_speakerphone.md)
-- [BIDIRECTIONAL_ECHO_SUPPRESSING_SPEAKERPHONE](1646421-anonymous/bidirectional_echo_suppressing_speakerphone.md)
-- [BIDIRECTIONAL_HANDSET](1646421-anonymous/bidirectional_handset.md)
-- [BIDIRECTIONAL_HEADSET](1646421-anonymous/bidirectional_headset.md)
-- [BIDIRECTIONAL_SPEAKERPHONE_NO_ECHO_REDX](1646421-anonymous/bidirectional_speakerphone_no_echo_redx.md)
-- [BIDIRECTIONAL_UNDEFINED](1646421-anonymous/bidirectional_undefined.md)
+- [BIDIRECTIONAL_ECHO_CANCELING_SPEAKERPHONE](./api-1646421-anonymous/bidirectional_echo_canceling_speakerphone.md)
+- [BIDIRECTIONAL_ECHO_SUPPRESSING_SPEAKERPHONE](./api-1646421-anonymous/bidirectional_echo_suppressing_speakerphone.md)
+- [BIDIRECTIONAL_HANDSET](./api-1646421-anonymous/bidirectional_handset.md)
+- [BIDIRECTIONAL_HEADSET](./api-1646421-anonymous/bidirectional_headset.md)
+- [BIDIRECTIONAL_SPEAKERPHONE_NO_ECHO_REDX](./api-1646421-anonymous/bidirectional_speakerphone_no_echo_redx.md)
+- [BIDIRECTIONAL_UNDEFINED](./api-1646421-anonymous/bidirectional_undefined.md)
 
 
 ---

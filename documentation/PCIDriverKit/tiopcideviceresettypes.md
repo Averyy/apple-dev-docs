@@ -1,30 +1,31 @@
 # tIOPCIDeviceResetTypes
 
 **Framework**: PCIDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef enum tIOPCIDeviceResetTypes : unsigned int { ... } tIOPCIDeviceResetTypes;
 ```
 
 #### Overview
 
-```None
+```
         This will issue a hot reset from its upstream bridge by setting the secondary bus reset bit in the bridge's control
         register.
 ```
 
-```None
+```
         specific function exists.
 ```
 
-```None
+```
         specific function exists. Upon completion, the device is unusable until the caller requests reset with type
         kIOPCIDeviceResetTypeWarmResetEnable.
 
@@ -32,34 +33,35 @@ typedef enum tIOPCIDeviceResetTypes : unsigned int { ... } tIOPCIDeviceResetType
         and re-applying it before using kIOPCIDeviceResetTypeWarmResetEnable.
 ```
 
-```None
+```
         (e.g. deassert PERST#). See kIOPCIDeviceResetTypeWarmResetDisable for more details.
 ```
 
 ## Topics
 
 ### Enumeration Cases
-- [kIOPCIDeviceResetTypeFunctionReset](tiopcideviceresettypes/kiopcideviceresettypefunctionreset.md)
-- [kIOPCIDeviceResetTypeHotReset](tiopcideviceresettypes/kiopcideviceresettypehotreset.md)
-- [kIOPCIDeviceResetTypeWarmReset](tiopcideviceresettypes/kiopcideviceresettypewarmreset.md)
-- [kIOPCIDeviceResetTypeWarmResetDisable](tiopcideviceresettypes/kiopcideviceresettypewarmresetdisable.md)
-- [kIOPCIDeviceResetTypeWarmResetEnable](tiopcideviceresettypes/kiopcideviceresettypewarmresetenable.md)
+- [kIOPCIDeviceResetTypeFunctionReset](./tiopcideviceresettypes/kiopcideviceresettypefunctionreset.md)
+- [kIOPCIDeviceResetTypeHotReset](./tiopcideviceresettypes/kiopcideviceresettypehotreset.md)
+- [kIOPCIDeviceResetTypeWarmReset](./tiopcideviceresettypes/kiopcideviceresettypewarmreset.md)
+- [kIOPCIDeviceResetTypeWarmResetDisable](./tiopcideviceresettypes/kiopcideviceresettypewarmresetdisable.md)
+- [kIOPCIDeviceResetTypeWarmResetEnable](./tiopcideviceresettypes/kiopcideviceresettypewarmresetenable.md)
 
 ## See Also
 
-- [Anonymous](anonymous-enum.md)
-- [tIOPCIAccessOptions](tiopciaccessoptions.md)
-- [tIOPCIDeviceResetOptions](tiopcideviceresetoptions.md)
-- [tIOPCILinkSpeed](tiopcilinkspeed.md)
-- [IOPCIBARType](iopcibartype.md)
-- [IOPCILinkSpeed](iopcilinkspeed.md)
-- [IOPCIMemoryRange](iopcimemoryrange.md)
-- [IOPCISaveDeviceStateOptions](iopcisavedevicestateoptions.md)
-- [tIOPCIAccessOptions](tiopciaccessoptions.md)
-- [tIOPCIDeviceResetOptions](tiopcideviceresetoptions.md)
-- [tIOPCILinkControlASPMBits](tiopcilinkcontrolaspmbits.md)
-- [tIOPCILinkSpeed](tiopcilinkspeed.md)
-- [Interrupt Types](interrupt-types-enum.md)
+### Enumerations
+- [Anonymous](./anonymous-enum.md)
+- [tIOPCIAccessOptions](./tiopciaccessoptions.md)
+- [tIOPCIDeviceResetOptions](./tiopcideviceresetoptions.md)
+- [tIOPCILinkSpeed](./tiopcilinkspeed.md)
+- [IOPCIBARType](./iopcibartype.md)
+- [IOPCILinkSpeed](./iopcilinkspeed.md)
+- [IOPCIMemoryRange](./iopcimemoryrange.md)
+- [IOPCISaveDeviceStateOptions](./iopcisavedevicestateoptions.md)
+- [tIOPCIAccessOptions](./tiopciaccessoptions.md)
+- [tIOPCIDeviceResetOptions](./tiopcideviceresetoptions.md)
+- [tIOPCILinkControlASPMBits](./tiopcilinkcontrolaspmbits.md)
+- [tIOPCILinkSpeed](./tiopcilinkspeed.md)
+- [Interrupt Types](./interrupt-types-enum.md)
   Interrupt types that the device supports.
 
 

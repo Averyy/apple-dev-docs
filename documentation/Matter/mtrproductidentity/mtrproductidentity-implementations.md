@@ -1,11 +1,12 @@
 # MTRProductIdentity Implementations
 
-**Framework**: Matter
+**Framework**: Matter  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mtrproductidentity/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(conversationUUID:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that ends a conversation.
 

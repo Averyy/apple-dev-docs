@@ -1,7 +1,8 @@
 # max()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the maximum element in an asynchronous sequence of comparable elements.
 
@@ -20,6 +21,8 @@ Returns the maximum element in an asynchronous sequence of comparable elements.
 @warn_unqualified_access
 func max() async rethrows -> Self.Element?
 ```
+
+Available when `Element` conforms to `Comparable`.
 
 #### Return Value
 

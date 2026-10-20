@@ -1,7 +1,8 @@
 # tunnelRemoteAddress
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IP address of the tunnel server.
 
@@ -19,15 +20,20 @@ The IP address of the tunnel server.
 var tunnelRemoteAddress: String { get }
 ```
 
+```objc
+@property (readonly) NSString * tunnelRemoteAddress;
+```
+
 ## See Also
 
-- [var dnsSettings: NEDNSSettings?](netunnelnetworksettings/dnssettings.md)
+### Accessing tunnel network settings
+- [var dnsSettings: NEDNSSettings?](./dnssettings.md)
   The tunnel DNS settings.
-- [class NEDNSSettings](nednssettings.md)
+- [class NEDNSSettings](../nednssettings.md)
   The DNS resolver settings of a network tunnel or a system-wide configuration.
-- [var proxySettings: NEProxySettings?](netunnelnetworksettings/proxysettings.md)
+- [var proxySettings: NEProxySettings?](./proxysettings.md)
   The tunnel HTTP proxy settings.
-- [class NEProxySettings](neproxysettings.md)
+- [class NEProxySettings](../neproxysettings.md)
   `NEProxySettings` contains HTTP proxy settings.
 
 

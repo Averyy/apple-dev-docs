@@ -1,7 +1,8 @@
 # Delete Default Message
 
 **Framework**: Retention Messaging API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Deletes a default message for a product in a locale.
 
@@ -10,7 +11,7 @@ Deletes a default message for a product in a locale.
 
 ## Mentions
 
-- [Identifying rate limits](identifying-rate-limits.md)
+- [Identifying rate limits](./identifying-rate-limits.md)
 
 #### Discussion
 
@@ -24,18 +25,29 @@ This endpoint is idempotent. If the product has no configured default message fo
 
 ## Parameters
 
+### Path Parameters
+
 - `locale` (locale) *(required)*: The locale of the default message configuration.
 - `productId` (productId) *(required)*: The product ID of the default message configuration.
 
+## Responses
+
+- `200` OK: Request succeeded.
+- `400` Bad Request (`(InvalidProductIdError | InvalidLocaleError)`, `application/json`): The request is invalid and unacceptable.
+- `401` Unauthorized: The JSON Web Token (JWT) in the authorization header is invalid. For more information, see [Generating JSON Web Tokens for API requests](../AppStoreServerAPI/generating-json-web-tokens-for-api-requests.md).
+- `429` (`RateLimitExceededError`, `application/json`): The request exceeded the rate limit. For more information, see [Identifying rate limits](./identifying-rate-limits.md).
+- `500` Internal Server Error (`GeneralInternalError`, `application/json`): Server error. Try again later.
+
 ## See Also
 
-- [Configure Default Message](configure-default-message.md)
+### Default message configuration
+- [Configure Default Message](./configure-default-message.md)
   Configures a default message for a specific product in a specific locale.
-- [Get Default Message](get-default-message.md)
+- [Get Default Message](./get-default-message.md)
   Gets the default message for a specific product in a specific locale, if it’s configured.
-- [object DefaultConfigurationRequest](defaultconfigurationrequest.md)
+- [object DefaultConfigurationRequest](./defaultconfigurationrequest.md)
   The request body that contains the default configuration information.
-- [object DefaultConfigurationResponse](defaultconfigurationresponse.md)
+- [object DefaultConfigurationResponse](./defaultconfigurationresponse.md)
   The response body that contains the default configuration information.
 
 

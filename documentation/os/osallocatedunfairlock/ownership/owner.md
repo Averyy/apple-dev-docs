@@ -1,7 +1,8 @@
 # OSAllocatedUnfairLock.Ownership.owner
 
 **Framework**: os  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Describes code that owns the lock.
 
@@ -11,7 +12,7 @@ Describes code that owns the lock.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case owner
 
 ## See Also
 
-- [OSAllocatedUnfairLock.Ownership.notOwner](osallocatedunfairlock/ownership/notowner.md)
+### Specifying ownership
+- [OSAllocatedUnfairLock.Ownership.notOwner](./notowner.md)
   Describes code that doesn’t own the lock.
 
 

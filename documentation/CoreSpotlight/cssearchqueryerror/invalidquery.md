@@ -1,7 +1,8 @@
 # invalidQuery
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The query is syntactically invalid or specifies items that your app doesn’t have access to.
 
@@ -20,11 +21,12 @@ static var invalidQuery: CSSearchQueryError.Code { get }
 
 ## See Also
 
-- [static var cancelled: CSSearchQueryError.Code](cssearchqueryerror/cancelled.md)
+### Getting the error codes
+- [static var cancelled: CSSearchQueryError.Code](./cancelled.md)
   The query stopped because someone canceled it.
-- [static var indexUnreachable: CSSearchQueryError.Code](cssearchqueryerror/indexunreachable.md)
+- [static var indexUnreachable: CSSearchQueryError.Code](./indexunreachable.md)
   The index is unreachable.
-- [static var unknown: CSSearchQueryError.Code](cssearchqueryerror/unknown.md)
+- [static var unknown: CSSearchQueryError.Code](./unknown.md)
   An unknown error occurred.
 
 

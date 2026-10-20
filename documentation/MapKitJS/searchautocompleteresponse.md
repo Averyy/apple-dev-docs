@@ -1,7 +1,8 @@
 # SearchAutocompleteResponse
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 An object containing the response from an autocomplete request.
 
@@ -10,25 +11,26 @@ An object containing the response from an autocomplete request.
 
 ## Declaration
 
-```swift
+```
 interface SearchAutocompleteResponse
 ```
 
 ## Topics
 
 ### Response
-- [query](searchautocompleteresponse/query.md)
+- [query](./searchautocompleteresponse/query.md)
   The query string used to perform the autocomplete request.
-- [results](searchautocompleteresponse/results.md)
+- [results](./searchautocompleteresponse/results.md)
   The results from an autocomplete request.
 
 ## See Also
 
-- [autocomplete(query, options)](search/autocomplete.md)
+### Performing a search autocomplete
+- [autocomplete(query, options)](./search/autocomplete.md)
   Retrieves a list of autocomplete results for the specified search query.
-- [interface SearchAutocompleteOptions](searchautocompleteoptions.md)
+- [interface SearchAutocompleteOptions](./searchautocompleteoptions.md)
   Options you provide to constrain an autocomplete request.
-- [class SearchAutocompleteResult](searchautocompleteresult.md)
+- [class SearchAutocompleteResult](./searchautocompleteresult.md)
   The result of an autocomplete query, including display lines and a coordinate.
 
 

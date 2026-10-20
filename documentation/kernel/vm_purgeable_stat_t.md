@@ -1,14 +1,15 @@
 # vm_purgeable_stat_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef struct vm_purgeable_stat {
     ...
 } vm_purgeable_stat_t;
@@ -17,14 +18,15 @@ typedef struct vm_purgeable_stat {
 ## Topics
 
 ### Instance Properties
-- [count](vm_purgeable_stat_t/1573553-count.md)
-- [size](vm_purgeable_stat_t/1573501-size.md)
+- [count](./vm_purgeable_stat_t/api-1573553-count.md)
+- [size](./vm_purgeable_stat_t/api-1573501-size.md)
 
 ## See Also
 
-- [vm_statistics64_data_t](vm_statistics64_data_t.md)
-- [vm_statistics_data_t](vm_statistics_data_t.md)
-- [vm_extmod_statistics_data_t](vm_extmod_statistics_data_t.md)
+### Statistics
+- [vm_statistics64_data_t](./vm_statistics64_data_t.md)
+- [vm_statistics_data_t](./vm_statistics_data_t.md)
+- [vm_extmod_statistics_data_t](./vm_extmod_statistics_data_t.md)
 
 
 ---

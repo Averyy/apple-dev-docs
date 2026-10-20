@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothVoiceSettingInputDataFormat1sComplement](1639916-anonymous/kbluetoothvoicesettinginputdataformat1scomplement.md)
-- [kBluetoothVoiceSettingInputDataFormat2sComplement](1639916-anonymous/kbluetoothvoicesettinginputdataformat2scomplement.md)
-- [kBluetoothVoiceSettingInputDataFormatMask](1639916-anonymous/kbluetoothvoicesettinginputdataformatmask.md)
-- [kBluetoothVoiceSettingInputDataFormatSignMagnitude](1639916-anonymous/kbluetoothvoicesettinginputdataformatsignmagnitude.md)
-- [kBluetoothVoiceSettingInputDataFormatUnsigned](1639916-anonymous/kbluetoothvoicesettinginputdataformatunsigned.md)
+- [kBluetoothVoiceSettingInputDataFormat1sComplement](./api-1639916-anonymous/kbluetoothvoicesettinginputdataformat1scomplement.md)
+- [kBluetoothVoiceSettingInputDataFormat2sComplement](./api-1639916-anonymous/kbluetoothvoicesettinginputdataformat2scomplement.md)
+- [kBluetoothVoiceSettingInputDataFormatMask](./api-1639916-anonymous/kbluetoothvoicesettinginputdataformatmask.md)
+- [kBluetoothVoiceSettingInputDataFormatSignMagnitude](./api-1639916-anonymous/kbluetoothvoicesettinginputdataformatsignmagnitude.md)
+- [kBluetoothVoiceSettingInputDataFormatUnsigned](./api-1639916-anonymous/kbluetoothvoicesettinginputdataformatunsigned.md)
 
 
 ---

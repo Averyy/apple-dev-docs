@@ -1,7 +1,8 @@
 # WKExtendedRuntimeSessionInvalidationReason.none
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session ended normally.
 
@@ -14,21 +15,26 @@ The session ended normally.
 case none
 ```
 
+```c
+WKExtendedRuntimeSessionInvalidationReasonNone
+```
+
 #### Discussion
 
-The system uses this reason when you stop a session by calling its [`invalidate()`](wkextendedruntimesession/invalidate().md) method.
+The system uses this reason when you stop a session by calling its [`invalidate()`](../wkextendedruntimesession/invalidate%28%29.md) method.
 
 ## See Also
 
-- [WKExtendedRuntimeSessionInvalidationReason.error](wkextendedruntimesessioninvalidationreason/error.md)
+### Invalidation Reasons
+- [WKExtendedRuntimeSessionInvalidationReason.error](./error.md)
   An error prevented the session from running.
-- [WKExtendedRuntimeSessionInvalidationReason.sessionInProgress](wkextendedruntimesessioninvalidationreason/sessioninprogress.md)
+- [WKExtendedRuntimeSessionInvalidationReason.sessionInProgress](./sessioninprogress.md)
   This app already has a running session.
-- [WKExtendedRuntimeSessionInvalidationReason.expired](wkextendedruntimesessioninvalidationreason/expired.md)
+- [WKExtendedRuntimeSessionInvalidationReason.expired](./expired.md)
   The session used all of its allocated time.
-- [WKExtendedRuntimeSessionInvalidationReason.resignedFrontmost](wkextendedruntimesessioninvalidationreason/resignedfrontmost.md)
+- [WKExtendedRuntimeSessionInvalidationReason.resignedFrontmost](./resignedfrontmost.md)
   The app lost its frontmost status.
-- [WKExtendedRuntimeSessionInvalidationReason.suppressedBySystem](wkextendedruntimesessioninvalidationreason/suppressedbysystem.md)
+- [WKExtendedRuntimeSessionInvalidationReason.suppressedBySystem](./suppressedbysystem.md)
   The system is in a state that doesn’t allow sessions of this type.
 
 

@@ -1,14 +1,15 @@
 # bsdName
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 char bsdName[16];
 ```
 

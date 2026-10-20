@@ -1,7 +1,8 @@
 # zoom(options:sourceViewProvider:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a zoom transition from the view that the source provider specifies.
 
@@ -9,8 +10,8 @@ Creates a zoom transition from the view that the source provider specifies.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,11 @@ static func zoom(options: UIViewController.Transition.ZoomOptions? = nil, source
 
 ## Mentions
 
-- [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
+- [Enhancing your app with fluid transitions](../../enhancing-your-app-with-fluid-transitions.md)
 
 #### Discussion
 
-The system calls the source view provider when it presents and when it dismisses the view controller. In the closure, return the [`UIView`](uiview.md) that the animation should zoom in from or zoom back out to, respectively. For more information, see [`Enhancing your app with fluid transitions`](enhancing-your-app-with-fluid-transitions.md).
+The system calls the source view provider when it presents and when it dismisses the view controller. In the closure, return the [`UIView`](../../uiview.md) that the animation should zoom in from or zoom back out to, respectively. For more information, see [Enhancing your app with fluid transitions](../../enhancing-your-app-with-fluid-transitions.md).
 
 ## Parameters
 
@@ -33,9 +34,10 @@ The system calls the source view provider when it presents and when it dismisses
 
 ## See Also
 
-- [UIViewController.Transition.ZoomOptions](uiviewcontroller/transition/zoomoptions.md)
+### Creating zoom transitions
+- [UIViewController.Transition.ZoomOptions](./zoomoptions.md)
   Options for a zoom transition.
-- [UIViewController.Transition.ZoomSourceViewProviderContext](uiviewcontroller/transition/zoomsourceviewprovidercontext.md)
+- [UIViewController.Transition.ZoomSourceViewProviderContext](./zoomsourceviewprovidercontext.md)
   A context object that contains references to the view controllers from a zoom transition.
 
 

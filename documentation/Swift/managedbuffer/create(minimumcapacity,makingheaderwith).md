@@ -1,7 +1,8 @@
 # create(minimumCapacity:makingHeaderWith:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a new instance of the most-derived class, calling `factory` on the partially-constructed object to generate an initial `Header`.
 

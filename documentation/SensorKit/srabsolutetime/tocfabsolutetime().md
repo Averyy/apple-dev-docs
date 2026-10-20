@@ -1,7 +1,8 @@
 # toCFAbsoluteTime()
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts an absolute time to a core-foundation absolute time.
 
@@ -16,19 +17,24 @@ Converts an absolute time to a core-foundation absolute time.
 func toCFAbsoluteTime() -> CFAbsoluteTime
 ```
 
+```c
+extern CFAbsoluteTime SRAbsoluteTimeToCFAbsoluteTime(SRAbsoluteTime sr);
+```
+
 #### Return Value
 
 The core-foundation absolute time.
 
 ## See Also
 
-- [var from: SRAbsoluteTime](srfetchrequest/from.md)
+### Defining the Time Range
+- [var from: SRAbsoluteTime](../srfetchrequest/from.md)
   Fetches sample information that occurs after this time.
-- [var to: SRAbsoluteTime](srfetchrequest/to.md)
+- [var to: SRAbsoluteTime](../srfetchrequest/to.md)
   Fetches sample information that occurs before this time.
-- [struct SRAbsoluteTime](srabsolutetime.md)
+- [struct SRAbsoluteTime](../srabsolutetime.md)
   A value that describes when the system records the data.
-- [static func current() -> SRAbsoluteTime](srabsolutetime/current.md)
+- [static func current() -> SRAbsoluteTime](./current%28%29.md)
   Provides the current absolute time.
 
 

@@ -1,7 +1,8 @@
 # NSMenu.PresentationStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the style of a menu.
 
@@ -14,29 +15,34 @@ Specifies the style of a menu.
 enum PresentationStyle
 ```
 
+```c
+enum NSMenuPresentationStyle : NSInteger;
+```
+
 ## Topics
 
 ### Defining the menu style
-- [NSMenu.PresentationStyle.palette](nsmenu/presentationstyle-swift.enum/palette.md)
+- [NSMenu.PresentationStyle.palette](./presentationstyle-swift.enum/palette.md)
   A menu presentation style where items to display align horizontally.
-- [NSMenu.PresentationStyle.regular](nsmenu/presentationstyle-swift.enum/regular.md)
+- [NSMenu.PresentationStyle.regular](./presentationstyle-swift.enum/regular.md)
   The default presentation style for a menu.
 ### Initializers
-- [init?(rawValue: Int)](nsmenu/presentationstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./presentationstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var presentationStyle: NSMenu.PresentationStyle](nsmenu/presentationstyle-swift.property.md)
+### Managing Presentation Styles
+- [var presentationStyle: NSMenu.PresentationStyle](./presentationstyle-swift.property.md)
   The presentation style of the menu.
 
 

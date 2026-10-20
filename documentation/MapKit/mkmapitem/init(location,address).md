@@ -1,7 +1,8 @@
 # init(location:address:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a map item object using the specified location and address objects.
 
@@ -20,6 +21,10 @@ Creates and returns a map item object using the specified location and address o
 init(location: CLLocation, address: MKAddress?)
 ```
 
+```objc
+- (instancetype) initWithLocation:(CLLocation *) location address:(MKAddress *) address;
+```
+
 #### Return Value
 
 An initialized map item object.
@@ -30,8 +35,8 @@ Use this method to create a map item for a specific location. Don’t use it to 
 
 ## Parameters
 
-- `location`: A [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation).
-- `address`: An [`MKAddress`](mkaddress.md).
+- `location`: A [`CLLocation`](../../CoreLocation/cllocation.md).
+- `address`: An [`MKAddress`](../mkaddress.md).
 
 
 ---

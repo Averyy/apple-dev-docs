@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a property list object to represent the receiver on a pasteboard as an object of a specified type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func pasteboardPropertyList(forType type: NSPasteboard.PasteboardType) -> Any?
+```
+
+```objc
+- (id) pasteboardPropertyListForType:(NSPasteboardType) type;
 ```
 
 #### Return Value
@@ -25,7 +30,7 @@ The returned value will commonly be the `NSData` object for the specified data t
 
 ## Parameters
 
-- `type`: One of the types the receiver supports for writing (one of the UTIs returned by its implementation of [`writableTypes(for:)`](nspasteboardwriting/writabletypes(for:).md)).
+- `type`: One of the types the receiver supports for writing (one of the UTIs returned by its implementation of [`writableTypes(for:)`](./writabletypes%28for%29.md)).
 
 
 ---

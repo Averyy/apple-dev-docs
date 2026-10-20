@@ -1,7 +1,8 @@
 # UIEditMenuInteractionDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The methods for customizing the menu the interaction displays.
 
@@ -17,36 +18,41 @@ The methods for customizing the menu the interaction displays.
 protocol UIEditMenuInteractionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIEditMenuInteractionDelegate <NSObject>
+```
+
 #### Overview
 
-You use this protocol to customize the actions or presentation of the menu an [`UIEditMenuInteraction`](uieditmenuinteraction.md) object displays.
+You use this protocol to customize the actions or presentation of the menu an [`UIEditMenuInteraction`](./uieditmenuinteraction.md) object displays.
 
 ## Topics
 
 ### Customizing the Menu
-- [func editMenuInteraction(UIEditMenuInteraction, menuFor: UIEditMenuConfiguration, suggestedActions: [UIMenuElement]) -> UIMenu?](uieditmenuinteractiondelegate/editmenuinteraction(_:menufor:suggestedactions:).md)
+- [func editMenuInteraction(UIEditMenuInteraction, menuFor: UIEditMenuConfiguration, suggestedActions: [UIMenuElement]) -> UIMenu?](./uieditmenuinteractiondelegate/editmenuinteraction%28_,menufor,suggestedactions%29.md)
   Provides the menu to use when the interaction begins or requires an update.
-- [func editMenuInteraction(UIEditMenuInteraction, targetRectFor: UIEditMenuConfiguration) -> CGRect](uieditmenuinteractiondelegate/editmenuinteraction(_:targetrectfor:).md)
+- [func editMenuInteraction(UIEditMenuInteraction, targetRectFor: UIEditMenuConfiguration) -> CGRect](./uieditmenuinteractiondelegate/editmenuinteraction%28_,targetrectfor%29.md)
   Provides the target rectangle to position the menu relative to when the interaction begins or requires an update.
-- [func editMenuInteraction(UIEditMenuInteraction, willPresentMenuFor: UIEditMenuConfiguration, animator: any UIEditMenuInteractionAnimating)](uieditmenuinteractiondelegate/editmenuinteraction(_:willpresentmenufor:animator:).md)
+- [func editMenuInteraction(UIEditMenuInteraction, willPresentMenuFor: UIEditMenuConfiguration, animator: any UIEditMenuInteractionAnimating)](./uieditmenuinteractiondelegate/editmenuinteraction%28_,willpresentmenufor,animator%29.md)
   Informs the delegate when the interaction is about to present the menu.
-- [func editMenuInteraction(UIEditMenuInteraction, willDismissMenuFor: UIEditMenuConfiguration, animator: any UIEditMenuInteractionAnimating)](uieditmenuinteractiondelegate/editmenuinteraction(_:willdismissmenufor:animator:).md)
+- [func editMenuInteraction(UIEditMenuInteraction, willDismissMenuFor: UIEditMenuConfiguration, animator: any UIEditMenuInteractionAnimating)](./uieditmenuinteractiondelegate/editmenuinteraction%28_,willdismissmenufor,animator%29.md)
   Informs the delegate when the interaction is about to dismiss the menu.
-- [protocol UIEditMenuInteractionAnimating](uieditmenuinteractionanimating.md)
+- [protocol UIEditMenuInteractionAnimating](./uieditmenuinteractionanimating.md)
   Methods adopted by system-supplied animator objects when interacting with menus.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIEditMenuInteraction](uieditmenuinteraction.md)
+### Edit menus
+- [class UIEditMenuInteraction](./uieditmenuinteraction.md)
   An interaction that provides edit operations using a menu.
-- [class UIEditMenuConfiguration](uieditmenuconfiguration.md)
+- [class UIEditMenuConfiguration](./uieditmenuconfiguration.md)
   An object containing the configuration details for the menu your app presents in response to an edit menu interaction.
-- [protocol UIResponderStandardEditActions](uiresponderstandardeditactions.md)
+- [protocol UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
   A set of standard methods that apps can adopt to support editing.
 
 

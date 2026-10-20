@@ -1,7 +1,8 @@
 # MDLLight
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for objects that describe light sources in a scene.
 
@@ -19,52 +20,57 @@ The abstract superclass for objects that describe light sources in a scene.
 class MDLLight
 ```
 
+```objc
+@interface MDLLight : MDLObject
+```
+
 #### Overview
 
-When you load lights from an asset file using the [`MDLAsset`](mdlasset.md) class or create lights when building an asset for export, you use one or more of the concrete subclasses [`MDLPhysicallyPlausibleLight`](mdlphysicallyplausiblelight.md), [`MDLAreaLight`](mdlarealight.md), [`MDLPhotometricLight`](mdlphotometriclight.md), or [`MDLLightProbe`](mdllightprobe.md).
+When you load lights from an asset file using the [`MDLAsset`](./mdlasset.md) class or create lights when building an asset for export, you use one or more of the concrete subclasses [`MDLPhysicallyPlausibleLight`](./mdlphysicallyplausiblelight.md), [`MDLAreaLight`](./mdlarealight.md), [`MDLPhotometricLight`](./mdlphotometriclight.md), or [`MDLLightProbe`](./mdllightprobe.md).
 
 ## Topics
 
 ### Working with Lights
-- [func irradiance(atPoint: vector_float3) -> Unmanaged<CGColor>](mdllight/irradiance(atpoint:).md)
+- [func irradiance(atPoint: vector_float3) -> Unmanaged<CGColor>](./mdllight/irradiance%28atpoint%29.md)
   Returns the radiance of the light as received at a specific point in the same scene.
-- [func irradiance(atPoint: vector_float3, colorSpace: CGColorSpace) -> Unmanaged<CGColor>](mdllight/irradiance(atpoint:colorspace:).md)
+- [func irradiance(atPoint: vector_float3, colorSpace: CGColorSpace) -> Unmanaged<CGColor>](./mdllight/irradiance%28atpoint,colorspace%29.md)
   Returns the radiance of the light as received at a specific point in the same scene, expressed using the specified color space.
-- [var lightType: MDLLightType](mdllight/lighttype.md)
+- [var lightType: MDLLightType](./mdllight/lighttype.md)
   The type of the light.
-- [var colorSpace: String](mdllight/colorspace.md)
+- [var colorSpace: String](./mdllight/colorspace.md)
   The name of the Core Graphics color space to be used for interpreting the light’s color information.
 ### Constants
-- [enum MDLLightType](mdllighttype.md)
-  Options for the shape and style of illumination provided by a light, used by the [`lightType`](mdllight/lighttype.md) property.
+- [enum MDLLightType](./mdllighttype.md)
+  Options for the shape and style of illumination provided by a light, used by the [`lightType`](./mdllight/lighttype.md) property.
 
 ## Relationships
 
 ### Inherits From
-- [MDLObject](mdlobject.md)
+- [MDLObject](./mdlobject.md)
 ### Inherited By
-- [MDLLightProbe](mdllightprobe.md)
-- [MDLPhysicallyPlausibleLight](mdlphysicallyplausiblelight.md)
+- [MDLLightProbe](./mdllightprobe.md)
+- [MDLPhysicallyPlausibleLight](./mdlphysicallyplausiblelight.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MDLAreaLight](mdlarealight.md)
+### Lights
+- [class MDLAreaLight](./mdlarealight.md)
   A light source that illuminates a 3D scene from an area with a specific shape.
-- [class MDLLightProbe](mdllightprobe.md)
+- [class MDLLightProbe](./mdllightprobe.md)
   A light source described in terms of the variations in color and intensity of its illumination in all directions.
-- [protocol MDLLightProbeIrradianceDataSource](mdllightprobeirradiancedatasource.md)
+- [protocol MDLLightProbeIrradianceDataSource](./mdllightprobeirradiancedatasource.md)
   Adopt this protocol to provide information for use in automatic placement of light probes around a scene.
-- [class MDLPhotometricLight](mdlphotometriclight.md)
+- [class MDLPhotometricLight](./mdlphotometriclight.md)
   A light source whose shape, direction, and intensity of illumination are determined by a photometric profile.
-- [class MDLPhysicallyPlausibleLight](mdlphysicallyplausiblelight.md)
+- [class MDLPhysicallyPlausibleLight](./mdlphysicallyplausiblelight.md)
   A light source for use in shading models based on real-world physics.
 
 

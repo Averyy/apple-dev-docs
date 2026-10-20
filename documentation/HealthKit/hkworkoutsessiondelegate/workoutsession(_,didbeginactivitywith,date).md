@@ -1,7 +1,8 @@
 # workoutSession(_:didBeginActivityWith:date:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a new workout session began.
 
@@ -19,6 +20,10 @@ Tells the delegate that a new workout session began.
 optional func workoutSession(_ workoutSession: HKWorkoutSession, didBeginActivityWith workoutConfiguration: HKWorkoutConfiguration, date: Date)
 ```
 
+```objc
+- (void) workoutSession:(HKWorkoutSession *) workoutSession didBeginActivityWithConfiguration:(HKWorkoutConfiguration *) workoutConfiguration date:(NSDate *) date;
+```
+
 ## Parameters
 
 - `workoutSession`: The workout session that receives the new activity.
@@ -27,13 +32,14 @@ optional func workoutSession(_ workoutSession: HKWorkoutSession, didBeginActivit
 
 ## See Also
 
-- [func workoutSession(HKWorkoutSession, didChangeTo: HKWorkoutSessionState, from: HKWorkoutSessionState, date: Date)](hkworkoutsessiondelegate/workoutsession(_:didchangeto:from:date:).md)
+### Tracking workout sessions
+- [func workoutSession(HKWorkoutSession, didChangeTo: HKWorkoutSessionState, from: HKWorkoutSessionState, date: Date)](./workoutsession%28_,didchangeto,from,date%29.md)
   Tells the delegate that the session’s state changed.
-- [func workoutSession(HKWorkoutSession, didFailWithError: any Error)](hkworkoutsessiondelegate/workoutsession(_:didfailwitherror:).md)
+- [func workoutSession(HKWorkoutSession, didFailWithError: any Error)](./workoutsession%28_,didfailwitherror%29.md)
   Tells the delegate that the session failed with an error.
-- [func workoutSession(HKWorkoutSession, didGenerate: HKWorkoutEvent)](hkworkoutsessiondelegate/workoutsession(_:didgenerate:).md)
+- [func workoutSession(HKWorkoutSession, didGenerate: HKWorkoutEvent)](./workoutsession%28_,didgenerate%29.md)
   Tells the delegate that the system generated a workout event.
-- [func workoutSession(HKWorkoutSession, didEndActivityWith: HKWorkoutConfiguration, date: Date)](hkworkoutsessiondelegate/workoutsession(_:didendactivitywith:date:).md)
+- [func workoutSession(HKWorkoutSession, didEndActivityWith: HKWorkoutConfiguration, date: Date)](./workoutsession%28_,didendactivitywith,date%29.md)
   Tells the session that the current workout activity ended.
 
 

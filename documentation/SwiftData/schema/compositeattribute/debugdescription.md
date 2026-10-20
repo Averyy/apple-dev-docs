@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance, suitable for debugging.
 

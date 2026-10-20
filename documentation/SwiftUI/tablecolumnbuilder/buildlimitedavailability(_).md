@@ -1,7 +1,8 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.5+
@@ -15,6 +16,15 @@
 ```swift
 @export(implementation)
 static func buildLimitedAvailability(_ content: any TableColumnContent<RowValue, Never>) -> some TableColumnContent<RowValue, Never>
+```
+
+Available when `RowValue` conforms to `Identifiable` and `Sort` conforms to `SortComparator`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildLimitedAvailability(_ content: any TableColumnContent<RowValue, Sort>) -> some TableColumnContent<RowValue, Sort>
 ```
 
 

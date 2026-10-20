@@ -1,7 +1,8 @@
 # MKAnnotationView.DragState.canceling
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An annotation view cancels drag operation.
 
@@ -18,19 +19,24 @@ An annotation view cancels drag operation.
 case canceling
 ```
 
+```c
+MKAnnotationViewDragStateCanceling
+```
+
 #### Discussion
 
 A user action causes the view to cancel the drag operation. You can put an annotation view into this state to abort the operation.
 
 ## See Also
 
-- [MKAnnotationView.DragState.none](mkannotationview/dragstate-swift.enum/none.md)
+### Constants
+- [MKAnnotationView.DragState.none](./none.md)
   An annotation view that doesn’t have a drag operation.
-- [MKAnnotationView.DragState.starting](mkannotationview/dragstate-swift.enum/starting.md)
+- [MKAnnotationView.DragState.starting](./starting.md)
   An annotation view begins dragging.
-- [MKAnnotationView.DragState.dragging](mkannotationview/dragstate-swift.enum/dragging.md)
+- [MKAnnotationView.DragState.dragging](./dragging.md)
   An annotation view is actively dragging.
-- [MKAnnotationView.DragState.ending](mkannotationview/dragstate-swift.enum/ending.md)
+- [MKAnnotationView.DragState.ending](./ending.md)
   An annotation view ends dragging.
 
 

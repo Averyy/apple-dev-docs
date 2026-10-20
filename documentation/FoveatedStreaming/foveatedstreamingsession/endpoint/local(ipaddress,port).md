@@ -1,7 +1,8 @@
 # local(ipAddress:port:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Connects to a local endpoint by IP address and port number.
 

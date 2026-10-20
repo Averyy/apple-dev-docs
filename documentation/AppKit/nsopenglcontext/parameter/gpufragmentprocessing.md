@@ -1,12 +1,15 @@
 # NSOpenGLContext.Parameter.gpuFragmentProcessing
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Get whether the CPU is currently processing fragments with the GPU.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.)
 
 ## Declaration
 
@@ -14,35 +17,40 @@ Get whether the CPU is currently processing fragments with the GPU.
 case gpuFragmentProcessing
 ```
 
+```c
+NSOpenGLContextParameterGPUFragmentProcessing
+```
+
 ## See Also
 
-- [NSOpenGLContext.Parameter.swapInterval](nsopenglcontext/parameter/swapinterval.md)
+### Parameters
+- [NSOpenGLContext.Parameter.swapInterval](./swapinterval.md)
   Set or get the swap interval.
-- [NSOpenGLContext.Parameter.surfaceOrder](nsopenglcontext/parameter/surfaceorder.md)
+- [NSOpenGLContext.Parameter.surfaceOrder](./surfaceorder.md)
   Set or get the surface order.
-- [NSOpenGLContext.Parameter.surfaceOpacity](nsopenglcontext/parameter/surfaceopacity.md)
+- [NSOpenGLContext.Parameter.surfaceOpacity](./surfaceopacity.md)
   Set or get the surface opacity.
-- [NSOpenGLContext.Parameter.surfaceBackingSize](nsopenglcontext/parameter/surfacebackingsize.md)
+- [NSOpenGLContext.Parameter.surfaceBackingSize](./surfacebackingsize.md)
   Set or get the height and width of the back buffer.
-- [NSOpenGLContext.Parameter.reclaimResources](nsopenglcontext/parameter/reclaimresources.md)
+- [NSOpenGLContext.Parameter.reclaimResources](./reclaimresources.md)
   Enable or disable reclaiming resources.
-- [NSOpenGLContext.Parameter.currentRendererID](nsopenglcontext/parameter/currentrendererid.md)
+- [NSOpenGLContext.Parameter.currentRendererID](./currentrendererid.md)
   Get the current renderer ID.
-- [NSOpenGLContext.Parameter.gpuVertexProcessing](nsopenglcontext/parameter/gpuvertexprocessing.md)
+- [NSOpenGLContext.Parameter.gpuVertexProcessing](./gpuvertexprocessing.md)
   Get whether the CPU is currently processing vertices with the GPU.
-- [NSOpenGLContext.Parameter.hasDrawable](nsopenglcontext/parameter/hasdrawable.md)
+- [NSOpenGLContext.Parameter.hasDrawable](./hasdrawable.md)
   Returns a Boolean that indicates whether a drawable is attached to the context.
-- [NSOpenGLContext.Parameter.mpSwapsInFlight](nsopenglcontext/parameter/mpswapsinflight.md)
+- [NSOpenGLContext.Parameter.mpSwapsInFlight](./mpswapsinflight.md)
   The number of frames that the multithreaded OpenGL engine can process before stalling.
-- [NSOpenGLContext.Parameter.swapRectangle](nsopenglcontext/parameter/swaprectangle.md)
+- [NSOpenGLContext.Parameter.swapRectangle](./swaprectangle.md)
   Sets or gets the swap rectangle.
-- [NSOpenGLContext.Parameter.swapRectangleEnable](nsopenglcontext/parameter/swaprectangleenable.md)
+- [NSOpenGLContext.Parameter.swapRectangleEnable](./swaprectangleenable.md)
   Enables or disables the swap rectangle in the context’s drawable object.
-- [NSOpenGLContext.Parameter.rasterizationEnable](nsopenglcontext/parameter/rasterizationenable.md)
+- [NSOpenGLContext.Parameter.rasterizationEnable](./rasterizationenable.md)
   If disabled, all rasterization of 2D and 3D primitives is disabled.
-- [NSOpenGLContext.Parameter.stateValidation](nsopenglcontext/parameter/statevalidation.md)
+- [NSOpenGLContext.Parameter.stateValidation](./statevalidation.md)
   If enabled, OpenGL inspects the context state each time the update method is called to ensure that it is in an appropriate state for switching between renderers.
-- [NSOpenGLContext.Parameter.surfaceSurfaceVolatile](nsopenglcontext/parameter/surfacesurfacevolatile.md)
+- [NSOpenGLContext.Parameter.surfaceSurfaceVolatile](./surfacesurfacevolatile.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # andPrint
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests that documents opened in the application be printed.
 

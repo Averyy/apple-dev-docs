@@ -1,7 +1,8 @@
 # AuthTags
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var AuthTags: UnsafeMutablePointer<CSSM_ACL_AUTHORIZATION_TAG>!
+```
+
+```c
+CSSM_ACL_AUTHORIZATION_TAG * AuthTags;
 ```
 
 

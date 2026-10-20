@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that copies data from one buffer into another.
@@ -11,7 +12,7 @@ Encodes a command that copies data from one buffer into another.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,13 @@ Encodes a command that copies data from one buffer into another.
 func copy(from sourceBuffer: any MTLBuffer, sourceOffset: Int, to destinationBuffer: any MTLBuffer, destinationOffset: Int, size: Int)
 ```
 
+```objc
+- (void) copyFromBuffer:(id<MTLBuffer>) sourceBuffer sourceOffset:(NSUInteger) sourceOffset toBuffer:(id<MTLBuffer>) destinationBuffer destinationOffset:(NSUInteger) destinationOffset size:(NSUInteger) size;
+```
+
 ## Mentions
 
-- [Copying data to a private resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](../copying-data-to-a-private-resource.md)
 
 #### Discussion
 

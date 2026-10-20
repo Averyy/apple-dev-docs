@@ -1,16 +1,19 @@
 # containsTraits(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries whether a trait collection contains all of another trait collection’s values.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 17.0
+- iPadOS 8.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- tvOS - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Compare values for specific traits in the trait collections instead.
 
 ## Declaration
 
@@ -18,9 +21,13 @@ Queries whether a trait collection contains all of another trait collection’s 
 func containsTraits(in trait: UITraitCollection?) -> Bool
 ```
 
+```objc
+- (BOOL) containsTraitsInCollection:(UITraitCollection *) trait;
+```
+
 #### Return Value
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) if the receiver contains all of the trait values in the trait collection passed in the `trait` parameter, and returns [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This method returns [`true`](../../Swift/true.md) if the receiver contains all of the trait values in the trait collection passed in the `trait` parameter, and returns [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -32,9 +39,10 @@ Use this method to compare two standalone trait collections, or to compare the i
 
 ## See Also
 
-- [init(traitsFrom: [UITraitCollection])](uitraitcollection/init(traitsfrom:).md)
+### Deprecated
+- [init(traitsFrom: [UITraitCollection])](./init%28traitsfrom%29.md)
   Creates a trait collection that consists of traits merged from a specified array of trait collections.
-- [init(traitsFromCollections: [UITraitCollection])](uitraitcollection/init(traitsfromcollections:).md)
+- [init(traitsFromCollections: [UITraitCollection])](./init%28traitsfromcollections%29.md)
 
 
 ---

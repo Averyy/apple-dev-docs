@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagIsAlignedHigh
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag to indicate whether PCM sample bits use the high bits of the channel.
 
@@ -10,23 +11,24 @@ A flag to indicate whether PCM sample bits use the high bits of the channel.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagIsAlignedHigh
 ```
 
 #### Discussion
 
-This flag is a synonym of [`FormatFlagIsAlignedHigh`](audiodriverkit/iouseraudioformatflags/formatflagisalignedhigh.md).
+This flag is a synonym of [`FormatFlagIsAlignedHigh`](./formatflagisalignedhigh.md).
 
 ## See Also
 
-- [FormatFlagIsAlignedHigh](audiodriverkit/iouseraudioformatflags/formatflagisalignedhigh.md)
+### Bitwise Layout Flags
+- [FormatFlagIsAlignedHigh](./formatflagisalignedhigh.md)
   A flag to indicate whether sample bits use the high bits of the channel.
-- [FormatFlagIsPacked](audiodriverkit/iouseraudioformatflags/formatflagispacked.md)
+- [FormatFlagIsPacked](./formatflagispacked.md)
   A flag to indicate whether sample bits use all available bits of the channel.
-- [LinearPCMFormatFlagIsPacked](audiodriverkit/iouseraudioformatflags/linearpcmformatflagispacked.md)
+- [LinearPCMFormatFlagIsPacked](./linearpcmformatflagispacked.md)
   A flag to indicate whether PCM sample bits use all available bits of the channel.
-- [FormatFlagsNativeFloatPacked](audiodriverkit/iouseraudioformatflags/formatflagsnativefloatpacked.md)
+- [FormatFlagsNativeFloatPacked](./formatflagsnativefloatpacked.md)
   A flag indicating native-endian packed floating-point values.
 
 

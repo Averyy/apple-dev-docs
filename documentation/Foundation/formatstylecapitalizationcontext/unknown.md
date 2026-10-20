@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 15.0+
@@ -20,12 +21,13 @@ static var unknown: FormatStyleCapitalizationContext { get }
 
 ## See Also
 
-- [static var standalone: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/standalone.md)
+### Customizing Style Behavior
+- [static var standalone: FormatStyleCapitalizationContext](./standalone.md)
   For stand-alone usage, such as an isolated name on a calendar page.
-- [static var listItem: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/listitem.md)
+- [static var listItem: FormatStyleCapitalizationContext](./listitem.md)
   For use in a UI list or menu item.
-- [static var beginningOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/beginningofsentence.md)
-- [static var middleOfSentence: FormatStyleCapitalizationContext](formatstylecapitalizationcontext/middleofsentence.md)
+- [static var beginningOfSentence: FormatStyleCapitalizationContext](./beginningofsentence.md)
+- [static var middleOfSentence: FormatStyleCapitalizationContext](./middleofsentence.md)
 
 
 ---

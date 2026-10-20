@@ -1,7 +1,8 @@
 # depthPixelFormat
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the depth attachment, or `nil` to omit depth.
 
@@ -23,7 +24,8 @@ Corresponds to `MTLRenderPassDepthAttachmentDescriptor.texture.pixelFormat`.
 
 ## See Also
 
-- [var colorPixelFormat: MTLPixelFormat?](lowlevelrenderer/configuration/output-swift.struct/colorpixelformat.md)
+### Specifying pixel formats
+- [var colorPixelFormat: MTLPixelFormat?](./colorpixelformat.md)
   The pixel format of the color attachment, or `nil` for depth-only passes.
 
 

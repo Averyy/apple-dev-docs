@@ -1,7 +1,8 @@
 # MTLAttributeFormat.half4
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A four-component vector with 16-bit floating-point values.
 
@@ -19,13 +20,18 @@ A four-component vector with 16-bit floating-point values.
 case half4
 ```
 
+```c
+MTLAttributeFormatHalf4
+```
+
 ## See Also
 
-- [MTLAttributeFormat.half](mtlattributeformat/half.md)
+### 16-bit floating-point formats
+- [MTLAttributeFormat.half](./half.md)
   A 16-bit floating-point value.
-- [MTLAttributeFormat.half2](mtlattributeformat/half2.md)
+- [MTLAttributeFormat.half2](./half2.md)
   A two-component vector with 16-bit floating-point values.
-- [MTLAttributeFormat.half3](mtlattributeformat/half3.md)
+- [MTLAttributeFormat.half3](./half3.md)
   A three-component vector with 16-bit floating-point values.
 
 

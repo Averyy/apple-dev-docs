@@ -1,25 +1,27 @@
 # overrideBucketValues
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOReturn overrideBucketValues(unsigned int index, uint64_t bucket_hits, int64_t bucket_min, int64_t bucket_max, int64_t bucket_sum);
 ```
 
 ## See Also
 
-- [addChannel](iohistogramreporter/addchannel.md)
-- [initWith](iohistogramreporter/initwith.md)
-- [tallyValue](iohistogramreporter/tallyvalue.md)
+### Instance Methods
+- [addChannel](./addchannel.md)
+- [initWith](./initwith.md)
+- [tallyValue](./tallyvalue.md)
 
 
 ---

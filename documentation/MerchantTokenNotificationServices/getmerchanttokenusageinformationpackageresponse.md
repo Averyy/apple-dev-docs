@@ -1,7 +1,8 @@
 # GetMerchantTokenUsageInformationPackageResponse
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The encrypted merchant token usage information package.
 
@@ -10,13 +11,13 @@ The encrypted merchant token usage information package.
 
 ## Declaration
 
-```swift
+```
 object GetMerchantTokenUsageInformationPackageResponse
 ```
 
 ## Mentions
 
-- [Adding merchant token usage information](../applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information.md)
+- [Adding merchant token usage information](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
 
 #### Discussion
 
@@ -28,42 +29,55 @@ The `data` needs to be a merchant token usage information package encrypted to t
 | `KDF` | HKDF-SHA384 |
 | `AEAD` | AES-256-GCM |
 
-The `merchantPrivateKey` needs to correspond to the `merchantPublicKey` provided in the merchant token usage information availability notification. The `info` parameter needs to be the UTF-8 bytes of `ApplePayMerchantTokenUsageInformation_1.0` concatenated with the SHA-256 digest (in bytes) of the `merchantTokenIdentifier` (encoded using UTF-8). For the `ciphersuite`, use the `supportedCiphersuite` returned by Apple in the [`Retrieve Merchant Token Public Key`](retrieve-merchant-token-public-key.md).
+The `merchantPrivateKey` needs to correspond to the `merchantPublicKey` provided in the merchant token usage information availability notification. The `info` parameter needs to be the UTF-8 bytes of `ApplePayMerchantTokenUsageInformation_1.0` concatenated with the SHA-256 digest (in bytes) of the `merchantTokenIdentifier` (encoded using UTF-8). For the `ciphersuite`, use the `supportedCiphersuite` returned by Apple in the [`Retrieve Merchant Token Public Key`](./retrieve-merchant-token-public-key.md).
 
 ## Properties
 
 - `ciphersuite` (string) *(required)*: The cipher suite used for HPKE in authorization mode. Use the value sent as `supportedCiphersuite` in the `Retrieve MerchantToken PublicKey API` response.
+
+  **Maximum Length**: `64`
 - `data` (string) *(required)*: The encrypted merchant token usage information package.
+
+  **Maximum Length**: `4000`
 - `ephemeralPublicKey` (string) *(required)*: The ephemeral public key in X9.63 representation, Base64-encoded.
+
+  **Maximum Length**: `256`
 - `infoHash` (string) *(required)*: A SHA-256 digest of the `info`, hex-encoded.
+
+  **Maximum Length**: `256`
 - `merchantPublicKeyHash` (string) *(required)*: An SHA-256 digest of the `merchantPublicKey`, hex-encoded.
+
+  **Maximum Length**: `256`
 - `merchantTokenPublicKeyHash` (string) *(required)*: An SHA-256 digest of the `merchantTokenPublicKey`, hex-encoded.
+
+  **Maximum Length**: `256`
 
 ## See Also
 
-- [Retrieve Merchant Token Public Key](retrieve-merchant-token-public-key.md)
+### Merchant token usage information
+- [Retrieve Merchant Token Public Key](./retrieve-merchant-token-public-key.md)
   Get the merchant token public key.
-- [MerchantToken Usage Data Availability Notification](merchanttoken-usage-data-availability-notification.md)
+- [MerchantToken Usage Data Availability Notification](./merchanttoken-usage-data-availability-notification.md)
   Notify Apple servers that the user’s devices can retrieve merchant token usage information.
-- [object MerchantTokenUsageDataAvailabilityNotificationRequest](merchanttokenusagedataavailabilitynotificationrequest.md)
+- [object MerchantTokenUsageDataAvailabilityNotificationRequest](./merchanttokenusagedataavailabilitynotificationrequest.md)
   The data for the merchant token usage data availability notification request.
-- [Get MerchantToken Usage Information Package](get-merchanttoken-usage-information-package.md)
+- [Get MerchantToken Usage Information Package](./get-merchanttoken-usage-information-package.md)
   Retrieve the merchant token usage information package from the merchant server.
-- [object AutomaticReloadPaymentDetails](../applepaymerchanttokenusageinformation/automaticreloadpaymentdetails.md)
+- [object AutomaticReloadPaymentDetails](../ApplePayMerchantTokenUsageInformation/automaticreloadpaymentdetails.md)
   Details about an automatic reload payment.
-- [object CurrencyAmount](../applepaymerchanttokenusageinformation/currencyamount.md)
+- [object CurrencyAmount](../ApplePayMerchantTokenUsageInformation/currencyamount.md)
   An amount of money.
-- [object DeferredPaymentDetails](../applepaymerchanttokenusageinformation/deferredpaymentdetails.md)
+- [object DeferredPaymentDetails](../ApplePayMerchantTokenUsageInformation/deferredpaymentdetails.md)
   Details about a deferred payment, such as a hotel booking or a preorder.
-- [object PastPayment](../applepaymerchanttokenusageinformation/pastpayment.md)
+- [object PastPayment](../ApplePayMerchantTokenUsageInformation/pastpayment.md)
   A past payment.
-- [object PaymentIssueDetails](../applepaymerchanttokenusageinformation/paymentissuedetails.md)
+- [object PaymentIssueDetails](../ApplePayMerchantTokenUsageInformation/paymentissuedetails.md)
   Details about a payment issue, such as a declined payment.
-- [object RecurringPaymentDetails](../applepaymerchanttokenusageinformation/recurringpaymentdetails.md)
+- [object RecurringPaymentDetails](../ApplePayMerchantTokenUsageInformation/recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
-- [object UpcomingPayment](../applepaymerchanttokenusageinformation/upcomingpayment.md)
+- [object UpcomingPayment](../ApplePayMerchantTokenUsageInformation/upcomingpayment.md)
   An upcoming payment.
-- [object UsageInformation](../applepaymerchanttokenusageinformation/usageinformation.md)
+- [object UsageInformation](../ApplePayMerchantTokenUsageInformation/usageinformation.md)
   Information about the usage of a merchant token, such as past and upcoming payments.
 
 

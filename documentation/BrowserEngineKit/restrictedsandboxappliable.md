@@ -1,7 +1,8 @@
 # RestrictedSandboxAppliable
 
 **Framework**: BrowserEngineKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that browser extensions implement to opt into a more restricted sandbox.
 
@@ -18,40 +19,41 @@ protocol RestrictedSandboxAppliable
 
 ## Mentions
 
-- [Limiting resource access in web content extensions](limiting-resource-access-in-content-extensions.md)
+- [Limiting resource access in web content extensions](./limiting-resource-access-in-content-extensions.md)
 
 #### Overview
 
-Call [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md) to enter the restricted sandbox, indicating which revision of the sandbox restrictions to apply.
+Call [`applyRestrictedSandbox(revision:)`](./restrictedsandboxappliable/applyrestrictedsandbox%28revision%29.md) to enter the restricted sandbox, indicating which revision of the sandbox restrictions to apply.
 
-In the first revision ([`RestrictedSandboxRevision.revision1`](restrictedsandboxrevision/revision1.md)), additional restrictions affect the web content extension only.
+In the first revision ([`RestrictedSandboxRevision.revision1`](./restrictedsandboxrevision/revision1.md)), additional restrictions affect the web content extension only.
 
-For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md).
+For more information, see [Limiting resource access in web content extensions](./limiting-resource-access-in-content-extensions.md).
 
 ## Topics
 
 ### Applying sandbox restrictions
-- [func applyRestrictedSandbox(revision: RestrictedSandboxRevision)](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md)
+- [func applyRestrictedSandbox(revision: RestrictedSandboxRevision)](./restrictedsandboxappliable/applyrestrictedsandbox%28revision%29.md)
   Puts a browser extension into a more restricted sandbox.
-- [enum RestrictedSandboxRevision](restrictedsandboxrevision.md)
+- [enum RestrictedSandboxRevision](./restrictedsandboxrevision.md)
   Revisions to the restricted sandbox rules.
 
 ## Relationships
 
 ### Inherited By
-- [NetworkingExtension](networkingextension.md)
-- [RenderingExtension](renderingextension.md)
-- [WebContentExtension](webcontentextension.md)
+- [NetworkingExtension](./networkingextension.md)
+- [RenderingExtension](./renderingextension.md)
+- [WebContentExtension](./webcontentextension.md)
 
 ## See Also
 
-- [Limiting resource access in web content extensions](limiting-resource-access-in-content-extensions.md)
+### Access control
+- [Limiting resource access in web content extensions](./limiting-resource-access-in-content-extensions.md)
   Reduce the impact of vulnerabilities in web content extensions by limiting privileges.
-- [Accessing files in browser extensions](accessing-files-in-browser-extensions.md)
+- [Accessing files in browser extensions](./accessing-files-in-browser-extensions.md)
   Grant extensions access to files from within your browser app.
-- [Attributing memory to a content extension](attributing-memory-to-a-content-extension.md)
+- [Attributing memory to a content extension](./attributing-memory-to-a-content-extension.md)
   Adhere to operating-system limits on GPU memory use.
-- [enum RestrictedSandboxRevision](restrictedsandboxrevision.md)
+- [enum RestrictedSandboxRevision](./restrictedsandboxrevision.md)
   Revisions to the restricted sandbox rules.
 
 

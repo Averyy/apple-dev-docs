@@ -1,7 +1,8 @@
 # AttributedTextSelection.Indices.insertionPoint(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The index of a single insertion point.
 

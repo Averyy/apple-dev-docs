@@ -1,23 +1,28 @@
 # CFAbsoluteTimeGetCurrent()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current system absolute time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFAbsoluteTimeGetCurrent() -> CFAbsoluteTime
+```
+
+```c
+extern CFAbsoluteTime CFAbsoluteTimeGetCurrent();
 ```
 
 #### Return Value
@@ -30,21 +35,22 @@ Absolute time is measured in seconds relative to the absolute reference date of 
 
 ## See Also
 
-- [func CFAbsoluteTimeAddGregorianUnits(CFAbsoluteTime, CFTimeZone!, CFGregorianUnits) -> CFAbsoluteTime](cfabsolutetimeaddgregorianunits(_:_:_:).md)
+### Core Foundation Time Utilities Miscellaneous Functions
+- [func CFAbsoluteTimeAddGregorianUnits(CFAbsoluteTime, CFTimeZone!, CFGregorianUnits) -> CFAbsoluteTime](./cfabsolutetimeaddgregorianunits%28_,_,_%29.md)
   Adds a time interval, expressed as Gregorian units, to a given absolute time.
-- [func CFAbsoluteTimeGetDayOfWeek(CFAbsoluteTime, CFTimeZone!) -> Int32](cfabsolutetimegetdayofweek(_:_:).md)
+- [func CFAbsoluteTimeGetDayOfWeek(CFAbsoluteTime, CFTimeZone!) -> Int32](./cfabsolutetimegetdayofweek%28_,_%29.md)
   Returns an integer representing the day of the week indicated by the specified absolute time.
-- [func CFAbsoluteTimeGetDayOfYear(CFAbsoluteTime, CFTimeZone!) -> Int32](cfabsolutetimegetdayofyear(_:_:).md)
+- [func CFAbsoluteTimeGetDayOfYear(CFAbsoluteTime, CFTimeZone!) -> Int32](./cfabsolutetimegetdayofyear%28_,_%29.md)
   Returns an integer representing the day of the year indicated by the specified absolute time.
-- [func CFAbsoluteTimeGetDifferenceAsGregorianUnits(CFAbsoluteTime, CFAbsoluteTime, CFTimeZone!, CFOptionFlags) -> CFGregorianUnits](cfabsolutetimegetdifferenceasgregorianunits(_:_:_:_:).md)
+- [func CFAbsoluteTimeGetDifferenceAsGregorianUnits(CFAbsoluteTime, CFAbsoluteTime, CFTimeZone!, CFOptionFlags) -> CFGregorianUnits](./cfabsolutetimegetdifferenceasgregorianunits%28_,_,_,_%29.md)
   Computes the time difference between two specified absolute times and returns the result as an interval in Gregorian units.
-- [func CFAbsoluteTimeGetGregorianDate(CFAbsoluteTime, CFTimeZone!) -> CFGregorianDate](cfabsolutetimegetgregoriandate(_:_:).md)
+- [func CFAbsoluteTimeGetGregorianDate(CFAbsoluteTime, CFTimeZone!) -> CFGregorianDate](./cfabsolutetimegetgregoriandate%28_,_%29.md)
   Converts an absolute time value into a Gregorian date.
-- [func CFAbsoluteTimeGetWeekOfYear(CFAbsoluteTime, CFTimeZone!) -> Int32](cfabsolutetimegetweekofyear(_:_:).md)
+- [func CFAbsoluteTimeGetWeekOfYear(CFAbsoluteTime, CFTimeZone!) -> Int32](./cfabsolutetimegetweekofyear%28_,_%29.md)
   Returns an integer representing the week of the year indicated by the specified absolute time.
-- [func CFGregorianDateGetAbsoluteTime(CFGregorianDate, CFTimeZone!) -> CFAbsoluteTime](cfgregoriandategetabsolutetime(_:_:).md)
+- [func CFGregorianDateGetAbsoluteTime(CFGregorianDate, CFTimeZone!) -> CFAbsoluteTime](./cfgregoriandategetabsolutetime%28_,_%29.md)
   Converts a Gregorian date value into an absolute time value.
-- [func CFGregorianDateIsValid(CFGregorianDate, CFOptionFlags) -> Bool](cfgregoriandateisvalid(_:_:).md)
+- [func CFGregorianDateIsValid(CFGregorianDate, CFOptionFlags) -> Bool](./cfgregoriandateisvalid%28_,_%29.md)
   Checks the specified fields of a CFGregorianDate structure for valid values.
 
 

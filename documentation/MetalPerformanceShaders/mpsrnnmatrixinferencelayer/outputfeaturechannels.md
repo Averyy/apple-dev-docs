@@ -1,7 +1,8 @@
 # outputFeatureChannels
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,15 +18,20 @@
 var outputFeatureChannels: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger outputFeatureChannels;
+```
+
 ## See Also
 
-- [var bidirectionalCombineMode: MPSRNNBidirectionalCombineMode](mpsrnnmatrixinferencelayer/bidirectionalcombinemode.md)
-- [enum MPSRNNBidirectionalCombineMode](mpsrnnbidirectionalcombinemode.md)
+### Instance Properties
+- [var bidirectionalCombineMode: MPSRNNBidirectionalCombineMode](./bidirectionalcombinemode.md)
+- [enum MPSRNNBidirectionalCombineMode](../mpsrnnbidirectionalcombinemode.md)
   Modes that define how two images or matrices are combined.
-- [var inputFeatureChannels: Int](mpsrnnmatrixinferencelayer/inputfeaturechannels.md)
-- [var numberOfLayers: Int](mpsrnnmatrixinferencelayer/numberoflayers.md)
-- [var recurrentOutputIsTemporary: Bool](mpsrnnmatrixinferencelayer/recurrentoutputistemporary.md)
-- [var storeAllIntermediateStates: Bool](mpsrnnmatrixinferencelayer/storeallintermediatestates.md)
+- [var inputFeatureChannels: Int](./inputfeaturechannels.md)
+- [var numberOfLayers: Int](./numberoflayers.md)
+- [var recurrentOutputIsTemporary: Bool](./recurrentoutputistemporary.md)
+- [var storeAllIntermediateStates: Bool](./storeallintermediatestates.md)
 
 
 ---

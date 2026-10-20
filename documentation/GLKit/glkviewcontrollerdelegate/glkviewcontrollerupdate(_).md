@@ -2,6 +2,7 @@
 
 **Framework**: GLKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called before each frame is displayed.
@@ -17,9 +18,13 @@ Called before each frame is displayed.
 func glkViewControllerUpdate(_ controller: GLKViewController)
 ```
 
+```objc
+- (void) glkViewControllerUpdate:(GLKViewController *) controller;
+```
+
 #### Discussion
 
-This method is used by your application if it wants to updates state information on each frame of animation. A typical implementation might read the controller’s [`timeSinceLastUpdate`](glkviewcontroller/timesincelastupdate.md) property to determine how much time has actually passed, and use that time to calculate the positions for any objects to be rendered in the next frame.
+This method is used by your application if it wants to updates state information on each frame of animation. A typical implementation might read the controller’s [`timeSinceLastUpdate`](../glkviewcontroller/timesincelastupdate.md) property to determine how much time has actually passed, and use that time to calculate the positions for any objects to be rendered in the next frame.
 
 ## Parameters
 

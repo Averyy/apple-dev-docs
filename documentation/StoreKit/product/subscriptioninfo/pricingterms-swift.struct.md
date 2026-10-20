@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.PricingTerms
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -21,22 +22,22 @@ struct PricingTerms
 ## Topics
 
 ### Instance Properties - generated
-- [let billingDisplayPrice: String](product/subscriptioninfo/pricingterms-swift.struct/billingdisplayprice.md)
-- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](product/subscriptioninfo/pricingterms-swift.struct/billingperiod.md)
-- [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/pricingterms-swift.struct/billingplantype.md)
-- [let billingPrice: Decimal](product/subscriptioninfo/pricingterms-swift.struct/billingprice.md)
-- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](product/subscriptioninfo/pricingterms-swift.struct/commitmentinfo.md)
-- [let subscriptionOffers: [Product.SubscriptionOffer]](product/subscriptioninfo/pricingterms-swift.struct/subscriptionoffers.md)
+- [let billingDisplayPrice: String](./pricingterms-swift.struct/billingdisplayprice.md)
+- [let billingPeriod: Product.SubscriptionInfo.BillingPeriod](./pricingterms-swift.struct/billingperiod.md)
+- [let billingPlanType: Product.SubscriptionInfo.BillingPlanType](./pricingterms-swift.struct/billingplantype.md)
+- [let billingPrice: Decimal](./pricingterms-swift.struct/billingprice.md)
+- [let commitmentInfo: Product.SubscriptionInfo.CommitmentInfo](./pricingterms-swift.struct/commitmentinfo.md)
+- [let subscriptionOffers: [Product.SubscriptionOffer]](./pricingterms-swift.struct/subscriptionoffers.md)
 ### Subscripts - generated
-- [subscript(offers _: Product.SubscriptionOffer.OfferType) -> [Product.SubscriptionOffer]](product/subscriptioninfo/pricingterms-swift.struct/subscript(offers:).md)
+- [subscript(offers _: Product.SubscriptionOffer.OfferType) -> [Product.SubscriptionOffer]](./pricingterms-swift.struct/subscript%28offers%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

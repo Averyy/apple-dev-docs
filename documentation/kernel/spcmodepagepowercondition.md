@@ -1,14 +1,15 @@
 # SPCModePagePowerCondition
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct SPCModePagePowerCondition SPCModePagePowerCondition;
 ```
 
@@ -19,11 +20,11 @@ Power Conditions Mode Page (PAGE CODE 0x1A) format.
 ## Topics
 
 ### Instance Properties
-- [IDLE_CONDITION_TIMER](spcmodepagepowercondition/1476523-idle_condition_timer.md)
-- [IDLE_STANDBY](spcmodepagepowercondition/1476380-idle_standby.md)
-- [RESERVED](spcmodepagepowercondition/1476305-reserved.md)
-- [STANDBY_CONDITION_TIMER](spcmodepagepowercondition/1476498-standby_condition_timer.md)
-- [header](spcmodepagepowercondition/1476413-header.md)
+- [IDLE_CONDITION_TIMER](./spcmodepagepowercondition/api-1476523-idle_condition_timer.md)
+- [IDLE_STANDBY](./spcmodepagepowercondition/api-1476380-idle_standby.md)
+- [RESERVED](./spcmodepagepowercondition/api-1476305-reserved.md)
+- [STANDBY_CONDITION_TIMER](./spcmodepagepowercondition/api-1476498-standby_condition_timer.md)
+- [header](./spcmodepagepowercondition/api-1476413-header.md)
 
 
 ---

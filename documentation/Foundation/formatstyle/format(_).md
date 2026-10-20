@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Formats a value, using this style.
@@ -23,7 +24,7 @@ func format(_ value: Self.FormatInput) -> Self.FormatOutput
 
 #### Return Value
 
-A representation of `value`, in the [`FormatOutput`](formatstyle/formatoutput.md) type, formatted according to the style’s configuration.
+A representation of `value`, in the [`FormatOutput`](./formatoutput.md) type, formatted according to the style’s configuration.
 
 #### Discussion
 

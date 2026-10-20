@@ -1,7 +1,8 @@
 # vDSP_IntegerConvertable
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Types that are convertible from floating point values.
 
@@ -11,7 +12,7 @@ Types that are convertible from floating point values.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ protocol vDSP_IntegerConvertable
 
 ## See Also
 
-- [protocol vDSP_FloatingPointConvertable](vdsp_floatingpointconvertable.md)
+### Type Conversion
+- [protocol vDSP_FloatingPointConvertable](./vdsp_floatingpointconvertable.md)
   Types that are convertible from integer values.
 
 

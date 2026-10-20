@@ -1,12 +1,13 @@
 # CNAssetPreprocessConfiguration
 
 **Framework**: Cinematic  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 
 ## Declaration
@@ -18,10 +19,10 @@ class CNAssetPreprocessConfiguration
 ## Topics
 
 ### Initializers
-- [init(destinationAssetURL: URL)](cnassetpreprocessconfiguration-5u7dk/init(destinationasseturl:).md)
+- [init(destinationAssetURL: URL)](./cnassetpreprocessconfiguration-5u7dk/init%28destinationasseturl%29.md)
 ### Instance Properties
-- [var destinationAssetURL: URL](cnassetpreprocessconfiguration-5u7dk/destinationasseturl.md)
-- [var referenceSourceAssetTracks: Bool](cnassetpreprocessconfiguration-5u7dk/referencesourceassettracks.md)
+- [var destinationAssetURL: URL](./cnassetpreprocessconfiguration-5u7dk/destinationasseturl.md)
+- [var referenceSourceAssetTracks: Bool](./cnassetpreprocessconfiguration-5u7dk/referencesourceassettracks.md)
   Controls whether the color and audio tracks in the output asset reference the source asset or embed a copy of its sample data.
 
 

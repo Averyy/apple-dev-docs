@@ -2,6 +2,7 @@
 
 **Framework**: CarPlay  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates if the item is enabled.
@@ -15,6 +16,10 @@ A Boolean value that indicates if the item is enabled.
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
 

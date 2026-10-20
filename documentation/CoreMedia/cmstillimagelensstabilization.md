@@ -1,7 +1,8 @@
 # CMStillImageLensStabilization
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -21,26 +22,26 @@ enum CMStillImageLensStabilization
 ## Topics
 
 ### Enumeration Cases
-- [CMStillImageLensStabilization.active](cmstillimagelensstabilization/active.md)
+- [CMStillImageLensStabilization.active](./cmstillimagelensstabilization/active.md)
   The lens stabilization module was active for the duration this buffer.
-- [CMStillImageLensStabilization.off](cmstillimagelensstabilization/off.md)
+- [CMStillImageLensStabilization.off](./cmstillimagelensstabilization/off.md)
   The lens stabilization module was not used during this capture.
-- [CMStillImageLensStabilization.outOfRange](cmstillimagelensstabilization/outofrange.md)
+- [CMStillImageLensStabilization.outOfRange](./cmstillimagelensstabilization/outofrange.md)
   The motion of the device or duration of the capture was outside of what the stabilization mechanism could support.
-- [CMStillImageLensStabilization.unavailable](cmstillimagelensstabilization/unavailable.md)
+- [CMStillImageLensStabilization.unavailable](./cmstillimagelensstabilization/unavailable.md)
   The lens stabilization module was unavailable for use.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

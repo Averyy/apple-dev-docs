@@ -1,7 +1,8 @@
 # GetClockIsStable
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a Boolean value for clock stability of the clock device.
 
@@ -10,7 +11,7 @@ Gets a Boolean value for clock stability of the clock device.
 
 ## Declaration
 
-```swift
+```c
 bool GetClockIsStable();
 ```
 
@@ -24,13 +25,14 @@ The object’s work queue synchronizes access to this value.
 
 ## See Also
 
-- [SetClockAlgorithm](iouservideoclockdevice/setclockalgorithm.md)
+### Working with clock device behavior
+- [SetClockAlgorithm](./setclockalgorithm.md)
   Sets the algorithm for the video clock device.
-- [GetClockAlgorithm](iouservideoclockdevice/getclockalgorithm.md)
+- [GetClockAlgorithm](./getclockalgorithm.md)
   Gets the clock algorithm of the clock device.
-- [IOUserVideoClockAlgorithm](videodriverkit/iouservideoclockalgorithm.md)
+- [IOUserVideoClockAlgorithm](../videodriverkit-page/iouservideoclockalgorithm.md)
   Clock smoothing algorithm selectors.
-- [SetClockIsStable](iouservideoclockdevice/setclockisstable.md)
+- [SetClockIsStable](./setclockisstable.md)
   Sets the clock stability of the clock device.
 
 

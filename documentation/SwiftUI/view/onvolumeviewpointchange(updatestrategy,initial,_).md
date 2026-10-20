@@ -1,7 +1,8 @@
 # onVolumeViewpointChange(updateStrategy:initial:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when the viewpoint of the volume changes.
 
@@ -17,7 +18,7 @@ Adds an action to perform when the viewpoint of the volume changes.
 
 #### Discussion
 
-Use the provided [`Viewpoint3D`](viewpoint3d.md) to update the content of the volume:
+Use the provided [`Viewpoint3D`](../viewpoint3d.md) to update the content of the volume:
 
 ```swift
 struct RobotContentView: View {
@@ -39,7 +40,7 @@ struct RobotContentView: View {
 }
 ```
 
-By default, the action will only be run when the new viewpoint is equivalent to one of the values provided through [`supportedVolumeViewpoints(_:)`](view/supportedvolumeviewpoints(_:).md). The viewpoint will be equivalent to where the window bar and ornaments are presented for a volume. Providing `.all` for the `updateStrategy` argument will result in the action being called without regard to the supported viewpoints.
+By default, the action will only be run when the new viewpoint is equivalent to one of the values provided through [`supportedVolumeViewpoints(_:)`](./supportedvolumeviewpoints%28_%29.md). The viewpoint will be equivalent to where the window bar and ornaments are presented for a volume. Providing `.all` for the `updateStrategy` argument will result in the action being called without regard to the supported viewpoints.
 
 To determine if the volume is being viewed from an unsupported viewpoint, provide `.all` for the `updateStrategy` argument and check if the viewpoint is not within the supported viewpoints:
 
@@ -69,9 +70,9 @@ struct ContentView: View {
 }
 ```
 
-The old and new [`Viewpoint3D`](viewpoint3d.md) provided to the action are relative to the center of the volume.
+The old and new [`Viewpoint3D`](../viewpoint3d.md) provided to the action are relative to the center of the volume.
 
-Reading this value is only valid inside a [`View`](view.md) that inherits the environment of a [`Scene`](scene.md) created with a [`VolumetricWindowStyle`](volumetricwindowstyle.md).
+Reading this value is only valid inside a [`View`](../view.md) that inherits the environment of a [`Scene`](../scene.md) created with a [`VolumetricWindowStyle`](../volumetricwindowstyle.md).
 
 ## Parameters
 
@@ -81,29 +82,30 @@ Reading this value is only valid inside a [`View`](view.md) that inherits the en
 
 ## See Also
 
-- [func supportedVolumeViewpoints(SquareAzimuth.Set) -> some View](view/supportedvolumeviewpoints(_:).md)
+### Interacting with volumes
+- [func supportedVolumeViewpoints(SquareAzimuth.Set) -> some View](./supportedvolumeviewpoints%28_%29.md)
   Specifies which viewpoints are supported for the window bar and ornaments in a volume.
-- [struct VolumeViewpointUpdateStrategy](volumeviewpointupdatestrategy.md)
-  A type describing when the action provided to [`onVolumeViewpointChange(updateStrategy:initial:_:)`](view/onvolumeviewpointchange(updatestrategy:initial:_:).md) should be called.
-- [struct Viewpoint3D](viewpoint3d.md)
+- [struct VolumeViewpointUpdateStrategy](../volumeviewpointupdatestrategy.md)
+  A type describing when the action provided to [`onVolumeViewpointChange(updateStrategy:initial:_:)`](./onvolumeviewpointchange%28updatestrategy,initial,_%29.md) should be called.
+- [struct Viewpoint3D](../viewpoint3d.md)
   A type describing what direction something is being viewed from.
-- [enum SquareAzimuth](squareazimuth.md)
+- [enum SquareAzimuth](../squareazimuth.md)
   A type describing what direction something is being viewed from along the horizontal plane and snapped to 4 directions.
-- [struct WorldAlignmentBehavior](worldalignmentbehavior.md)
+- [struct WorldAlignmentBehavior](../worldalignmentbehavior.md)
   A type representing the world alignment behavior for a scene.
-- [func volumeWorldAlignment(WorldAlignmentBehavior) -> some Scene](scene/volumeworldalignment(_:).md)
+- [func volumeWorldAlignment(WorldAlignmentBehavior) -> some Scene](../scene/volumeworldalignment%28_%29.md)
   Specifies how a volume should be aligned when moved in the world.
-- [struct WorldScalingBehavior](worldscalingbehavior.md)
+- [struct WorldScalingBehavior](../worldscalingbehavior.md)
   Specifies the scaling behavior a window should have within the world.
-- [func defaultWorldScaling(WorldScalingBehavior) -> some Scene](scene/defaultworldscaling(_:).md)
+- [func defaultWorldScaling(WorldScalingBehavior) -> some Scene](../scene/defaultworldscaling%28_%29.md)
   Specify the world scaling behavior for the window.
-- [struct WorldScalingCompensation](worldscalingcompensation.md)
+- [struct WorldScalingCompensation](../worldscalingcompensation.md)
   Indicates whether returned metrics will take dynamic scaling into account.
-- [var worldTrackingLimitations: Set<WorldTrackingLimitation>](environmentvalues/worldtrackinglimitations.md)
+- [var worldTrackingLimitations: Set<WorldTrackingLimitation>](../environmentvalues/worldtrackinglimitations.md)
   The current limitations of the device tracking the user’s surroundings.
-- [struct WorldTrackingLimitation](worldtrackinglimitation.md)
+- [struct WorldTrackingLimitation](../worldtrackinglimitation.md)
   A structure to represent limitations of tracking the user’s surroundings.
-- [struct SurfaceSnappingInfo](surfacesnappinginfo.md)
+- [struct SurfaceSnappingInfo](../surfacesnappinginfo.md)
   A type representing information about the window scenes snap state.
 
 

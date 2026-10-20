@@ -1,7 +1,8 @@
 # streamIdentifier
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The QUIC stream identifier.
 
@@ -22,7 +23,8 @@ var streamIdentifier: UInt64 { get }
 
 ## See Also
 
-- [var usableDatagramFrameSize: Int](nwprotocolquic/metadata/usabledatagramframesize.md)
+### Inspecting Stream State
+- [var usableDatagramFrameSize: Int](./usabledatagramframesize.md)
   The maximum usable size of a datagram frame on a QUIC datagram flow.
 
 

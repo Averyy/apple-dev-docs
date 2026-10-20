@@ -1,7 +1,8 @@
 # SharedCoordinateSpaceProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Provides ability to establish a shared coordinate space among multiple participants.
 
@@ -16,48 +17,48 @@ final class SharedCoordinateSpaceProvider
 
 #### Overview
 
-You may access the shared coordinate space outside the context of a FaceTime call with the  [`Shared Coordinate Space access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.shared-coordinate-space.allow) entitlement.
+You may access the shared coordinate space outside the context of a FaceTime call with the  [`Shared Coordinate Space access`](../BundleResources/entitlements/com.apple.developer.arkit.shared-coordinate-space.allow.md) entitlement.
 
 ## Topics
 
 ### Structures
-- [SharedCoordinateSpaceProvider.CoordinateSpaceData](sharedcoordinatespaceprovider/coordinatespacedata.md)
+- [SharedCoordinateSpaceProvider.CoordinateSpaceData](./sharedcoordinatespaceprovider/coordinatespacedata.md)
   A coordinate space data object.
 ### Initializers
-- [init()](sharedcoordinatespaceprovider/init.md)
+- [init()](./sharedcoordinatespaceprovider/init%28%29.md)
   Create a shared coordinate space provider.
 ### Instance Properties
-- [var description: String](sharedcoordinatespaceprovider/description.md)
+- [var description: String](./sharedcoordinatespaceprovider/description.md)
   A textual representation of this SharedCoordinateSpaceProvider.
-- [var eventUpdates: some AsyncSequence<SharedCoordinateSpaceProvider.Event, Never>](sharedcoordinatespaceprovider/eventupdates.md)
+- [var eventUpdates: some AsyncSequence<SharedCoordinateSpaceProvider.Event, Never>](./sharedcoordinatespaceprovider/eventupdates.md)
   A sequence of events that have occurred.
-- [var isSharingEnabled: Bool](sharedcoordinatespaceprovider/issharingenabled.md)
+- [var isSharingEnabled: Bool](./sharedcoordinatespaceprovider/issharingenabled.md)
   Returns true if coordinate space sharing is enabled, false otherwise.
-- [var nextCoordinateSpaceData: SharedCoordinateSpaceProvider.CoordinateSpaceData?](sharedcoordinatespaceprovider/nextcoordinatespacedata.md)
+- [var nextCoordinateSpaceData: SharedCoordinateSpaceProvider.CoordinateSpaceData?](./sharedcoordinatespaceprovider/nextcoordinatespacedata.md)
   Get the next coordinate space data to be broadcast to all participants.
-- [var participantIdentifier: UUID](sharedcoordinatespaceprovider/participantidentifier.md)
+- [var participantIdentifier: UUID](./sharedcoordinatespaceprovider/participantidentifier.md)
   Get the identifier of the local participant.
-- [var state: DataProviderState](sharedcoordinatespaceprovider/state.md)
+- [var state: DataProviderState](./sharedcoordinatespaceprovider/state.md)
   The state of this shared coordinate space provider.
 ### Instance Methods
-- [func push(data: SharedCoordinateSpaceProvider.CoordinateSpaceData)](sharedcoordinatespaceprovider/push(data:).md)
+- [func push(data: SharedCoordinateSpaceProvider.CoordinateSpaceData)](./sharedcoordinatespaceprovider/push%28data%29.md)
   Push data to the shared coordinate space provider.
 ### Type Properties
-- [static var isSupported: Bool](sharedcoordinatespaceprovider/issupported.md)
+- [static var isSupported: Bool](./sharedcoordinatespaceprovider/issupported.md)
   Determines whether this device supports the shared coordinate space provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](sharedcoordinatespaceprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./sharedcoordinatespaceprovider/requiredauthorizations.md)
   The authorization type(s) required by the shared coordinate space provider.
 ### Enumerations
-- [SharedCoordinateSpaceProvider.Event](sharedcoordinatespaceprovider/event.md)
+- [SharedCoordinateSpaceProvider.Event](./sharedcoordinatespaceprovider/event.md)
   Events that can occur in a shared coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

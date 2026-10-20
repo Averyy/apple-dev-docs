@@ -1,7 +1,8 @@
 # FSDeactivateItemResult
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of a deactivate-item call.
 
@@ -14,33 +15,38 @@ The result of a deactivate-item call.
 class FSDeactivateItemResult
 ```
 
+```objc
+@interface FSDeactivateItemResult : FSVolumeHandlerResult
+```
+
 #### Overview
 
-Use this type in your implementation of [`deactivateItem(_:context:replyHandler:)`](fsvolume/itemdeactivationhandler/deactivateitem(_:context:replyhandler:).md)
+Use this type in your implementation of [`deactivateItem(_:context:replyHandler:)`](./fsvolume/itemdeactivationhandler/deactivateitem%28_,context,replyhandler%29.md)
 
 ## Topics
 
 ### Creating a deactive-item result
-- [init?(freeSpace: FSFreeSpace?)](fsdeactivateitemresult/init(freespace:).md)
+- [init?(freeSpace: FSFreeSpace?)](./fsdeactivateitemresult/init%28freespace%29.md)
   Creates a result for an item-deactivation operation.
-- [class FSFreeSpace](fsfreespace.md)
+- [class FSFreeSpace](./fsfreespace.md)
   A free space object that pairs free space values with atomic sequence numbers.
 
 ## Relationships
 
 ### Inherits From
-- [FSVolumeHandlerResult](fsvolumehandlerresult.md)
+- [FSVolumeHandlerResult](./fsvolumehandlerresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func deactivateItem(FSItem, context: FSContext, replyHandler: (FSDeactivateItemResult?, (any Error)?) -> Void)](fsvolume/itemdeactivationhandler/deactivateitem(_:context:replyhandler:).md)
+### Deactivating an item
+- [func deactivateItem(FSItem, context: FSContext, replyHandler: (FSDeactivateItemResult?, (any Error)?) -> Void)](./fsvolume/itemdeactivationhandler/deactivateitem%28_,context,replyhandler%29.md)
   Notifies the file system that the kernel is no longer making immediate use of the given item.
 
 

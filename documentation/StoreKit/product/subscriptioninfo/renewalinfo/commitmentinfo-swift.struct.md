@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.RenewalInfo.CommitmentInfo
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -20,24 +21,24 @@ struct CommitmentInfo
 
 ## Mentions
 
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](../../../managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## Topics
 
 ### Instance Properties - generated
-- [let autoRenewPreference: String](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference.md)
-- [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype.md)
-- [let renewalDate: Date](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewaldate.md)
-- [let renewalPrice: Decimal](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalprice.md)
-- [let willAutoRenew: Bool](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/willautorenew.md)
+- [let autoRenewPreference: String](./commitmentinfo-swift.struct/autorenewpreference.md)
+- [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](./commitmentinfo-swift.struct/renewalbillingplantype.md)
+- [let renewalDate: Date](./commitmentinfo-swift.struct/renewaldate.md)
+- [let renewalPrice: Decimal](./commitmentinfo-swift.struct/renewalprice.md)
+- [let willAutoRenew: Bool](./commitmentinfo-swift.struct/willautorenew.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

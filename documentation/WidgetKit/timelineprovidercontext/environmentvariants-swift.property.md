@@ -1,7 +1,8 @@
 # environmentVariants
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All environment values that might be set when a widget appears.
 
@@ -21,7 +22,8 @@ let environmentVariants: TimelineProviderContext.EnvironmentVariants
 
 ## See Also
 
-- [TimelineProviderContext.EnvironmentVariants](timelineprovidercontext/environmentvariants-swift.struct.md)
+### Accessing Environment Variations
+- [TimelineProviderContext.EnvironmentVariants](./environmentvariants-swift.struct.md)
   A structure containing all varieties of environments where a widget could appear.
 
 

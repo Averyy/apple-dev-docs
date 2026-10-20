@@ -1,7 +1,8 @@
 # rightTrigger
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The right trigger on a game controller.
 
@@ -19,21 +20,26 @@ The right trigger on a game controller.
 static let rightTrigger: GCHapticsLocality
 ```
 
+```c
+extern GCHapticsLocality const GCHapticsLocalityRightTrigger;
+```
+
 ## See Also
 
-- [static let `default`: GCHapticsLocality](gchapticslocality/default.md)
+### Localities
+- [static let `default`: GCHapticsLocality](./default.md)
   The default location of a haptics actuator on a game controller.
-- [static let all: GCHapticsLocality](gchapticslocality/all.md)
+- [static let all: GCHapticsLocality](./all.md)
   All locations of haptics actuators on a game controller.
-- [static let handles: GCHapticsLocality](gchapticslocality/handles.md)
+- [static let handles: GCHapticsLocality](./handles.md)
   All handles on a game controller.
-- [static let leftHandle: GCHapticsLocality](gchapticslocality/lefthandle.md)
+- [static let leftHandle: GCHapticsLocality](./lefthandle.md)
   The left handle on a game controller.
-- [static let rightHandle: GCHapticsLocality](gchapticslocality/righthandle.md)
+- [static let rightHandle: GCHapticsLocality](./righthandle.md)
   The right handle on a game controller.
-- [static let triggers: GCHapticsLocality](gchapticslocality/triggers.md)
+- [static let triggers: GCHapticsLocality](./triggers.md)
   All triggers on a game controller.
-- [static let leftTrigger: GCHapticsLocality](gchapticslocality/lefttrigger.md)
+- [static let leftTrigger: GCHapticsLocality](./lefttrigger.md)
   The left trigger on a game controller.
 
 

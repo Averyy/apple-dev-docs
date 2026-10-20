@@ -1,7 +1,8 @@
 # init(vertexCapacity:vertexAttributes:vertexLayouts:indexCapacity:indexType:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor for a low-level mesh.
 
@@ -21,7 +22,7 @@ init(vertexCapacity: Int = 0, vertexAttributes: [LowLevelMesh.Attribute] = [Attr
 
 #### Discussion
 
-To create a new [`LowLevelMesh`](lowlevelmesh.md), first create a `Descriptor` object and set its property values, then use that `Descriptor` with [`init(descriptor:)`](lowlevelmesh/init(descriptor:).md).
+To create a new [`LowLevelMesh`](../../lowlevelmesh.md), first create a `Descriptor` object and set its property values, then use that `Descriptor` with [`init(descriptor:)`](../init%28descriptor%29.md).
 
 ## Parameters
 

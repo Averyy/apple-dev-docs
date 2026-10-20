@@ -1,7 +1,8 @@
 # TimeSeriesClassifier.Configuration
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -17,9 +18,12 @@
 typealias Configuration = TimeSeriesClassifierConfiguration
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
+
 ## See Also
 
-- [TimeSeriesClassifier.Model](timeseriesclassifier/model.md)
+### Supporting types
+- [TimeSeriesClassifier.Model](./model.md)
   A time-series classifier model.
 
 

@@ -1,7 +1,8 @@
 # positiveZ
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,11 +20,12 @@ var positiveZ: Float
 
 ## See Also
 
-- [var positiveX: Float](levelofdetailcomponent/selectionstrategy/resolutionmetric/directionalswitchingresolutions/positivex.md)
-- [var negativeX: Float](levelofdetailcomponent/selectionstrategy/resolutionmetric/directionalswitchingresolutions/negativex.md)
-- [var positiveY: Float](levelofdetailcomponent/selectionstrategy/resolutionmetric/directionalswitchingresolutions/positivey.md)
-- [var negativeY: Float](levelofdetailcomponent/selectionstrategy/resolutionmetric/directionalswitchingresolutions/negativey.md)
-- [var negativeZ: Float](levelofdetailcomponent/selectionstrategy/resolutionmetric/directionalswitchingresolutions/negativez.md)
+### Setting axis resolutions
+- [var positiveX: Float](./positivex.md)
+- [var negativeX: Float](./negativex.md)
+- [var positiveY: Float](./positivey.md)
+- [var negativeY: Float](./negativey.md)
+- [var negativeZ: Float](./negativez.md)
 
 
 ---

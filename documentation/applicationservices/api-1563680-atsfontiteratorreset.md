@@ -1,7 +1,8 @@
 # ATSFontIteratorReset(_:_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontIteratorReset(_ iContext: ATSFontContext, _ iFilter: UnsafePointer<ATSFontFilter>!, _ iRefCon: UnsafeMutableRawPointer!, _ iOptions: ATSOptionFlags, _ ioIterator: UnsafeMutablePointer<ATSFontIterator?>!) -> OSStatus
+```
+
+```c
+OSStatus ATSFontIteratorReset(ATSFontContext iContext, const ATSFontFilter *iFilter, void *iRefCon, ATSOptionFlags iOptions, ATSFontIterator *ioIterator);
 ```
 
 

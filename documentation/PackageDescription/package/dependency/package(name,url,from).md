@@ -1,12 +1,15 @@
 # package(name:url:from:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds a remote package dependency with a version requirement, starting with the given minimum version, going up to the next major version.
 
 **Availability**:
-- SwiftPM 5.2+
+- SwiftPM 5.2+ - Deprecated in 5.6
+
+> **Deprecated**: use package(url:from:) instead
 
 ## Declaration
 
@@ -37,21 +40,22 @@ The following example allows the Swift package manager to select a version like 
 
 ## See Also
 
-- [static func package(name: String?, url: String, Package.Dependency.Requirement) -> Package.Dependency](package/dependency/package(name:url:_:)-6k3na.md)
+### Deprecated methods
+- [static func package(name: String?, url: String, Package.Dependency.Requirement) -> Package.Dependency](./package%28name,url,_%29-6k3na.md)
   Adds a remote package dependency with a given version requirement.
-- [static func package(name: String, url: String, Range<Version>) -> Package.Dependency](package/dependency/package(name:url:_:)-nqbk.md)
+- [static func package(name: String, url: String, Range<Version>) -> Package.Dependency](./package%28name,url,_%29-nqbk.md)
   Adds a remote package dependency starting with a specific minimum version, up to but not including a specified maximum version.
-- [static func package(name: String, url: String, ClosedRange<Version>) -> Package.Dependency](package/dependency/package(name:url:_:)-7zltl.md)
+- [static func package(name: String, url: String, ClosedRange<Version>) -> Package.Dependency](./package%28name,url,_%29-7zltl.md)
   Adds a remote package dependency starting with a specific minimum version, going up to and including a specific maximum version.
-- [static func package(name: String, url: String, branch: String) -> Package.Dependency](package/dependency/package(name:url:branch:).md)
+- [static func package(name: String, url: String, branch: String) -> Package.Dependency](./package%28name,url,branch%29.md)
   Adds a remote package dependency with a branch requirement you provide.
-- [static func package(name: String, url: String, revision: String) -> Package.Dependency](package/dependency/package(name:url:revision:).md)
+- [static func package(name: String, url: String, revision: String) -> Package.Dependency](./package%28name,url,revision%29.md)
   Adds a remote package dependency with a specific revision requirement.
-- [static func package(url: String, Package.Dependency.Requirement) -> Package.Dependency](package/dependency/package(url:_:)-4tkwi.md)
+- [static func package(url: String, Package.Dependency.Requirement) -> Package.Dependency](./package%28url,_%29-4tkwi.md)
   Adds a remote package dependency given a version requirement.
-- [var name: String?](package/dependency/name.md)
+- [var name: String?](./name.md)
   The name of the dependency.
-- [var url: String?](package/dependency/url.md)
+- [var url: String?](./url.md)
   The Git URL of the package dependency.
 
 

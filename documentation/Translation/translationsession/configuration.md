@@ -1,7 +1,8 @@
 # TranslationSession.Configuration
 
 **Framework**: Translation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type containing the information to use when performing a translation.
 
@@ -19,9 +20,9 @@ struct Configuration
 
 #### Overview
 
-Specify the source and target languages to use in a translation session with this object. Initialize an instance of this type using the [`init(source:target:)`](translationsession/configuration/init(source:target:).md) and passing in the `source` and `target` languages. When you pass this configuration into the [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:))  function, the framework uses the languages you specify for translation.
+Specify the source and target languages to use in a translation session with this object. Initialize an instance of this type using the [`init(source:target:)`](./configuration/init%28source,target%29.md) and passing in the `source` and `target` languages. When you pass this configuration into the [`translationTask(_:action:)`](../../SwiftUI/view/translationtask%28_,action%29.md)  function, the framework uses the languages you specify for translation.
 
-To re-run a translation, store the configuration object as state in your SwiftUI view by using the `State` property wrapper. Then change one of the configuration properties (such as the source or target language) to re-run the translation on a new pair of languages. You can also call [`invalidate()`](translationsession/configuration/invalidate().md) on the configuration instance to re-run the translation using the same languages with new content to translate. When you do, the action closure of [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) runs and the framework translates the text.
+To re-run a translation, store the configuration object as state in your SwiftUI view by using the `State` property wrapper. Then change one of the configuration properties (such as the source or target language) to re-run the translation on a new pair of languages. You can also call [`invalidate()`](./configuration/invalidate%28%29.md) on the configuration instance to re-run the translation using the same languages with new content to translate. When you do, the action closure of [`translationTask(_:action:)`](../../SwiftUI/view/translationtask%28_,action%29.md) runs and the framework translates the text.
 
 The following example demonstrates how to initiate a new translation from a button press:
 
@@ -62,33 +63,34 @@ struct TranslationExample: View {
 ## Topics
 
 ### Creating a configuration
-- [init(source: Locale.Language?, target: Locale.Language?)](translationsession/configuration/init(source:target:).md)
+- [init(source: Locale.Language?, target: Locale.Language?)](./configuration/init%28source,target%29.md)
   Creates a configuration from a source and target language.
-- [init(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](translationsession/configuration/init(source:target:preferredstrategy:).md)
+- [init(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy)](./configuration/init%28source,target,preferredstrategy%29.md)
   Creates a configuration from a source and target language.
 ### Specifying translation languages
-- [var source: Locale.Language?](translationsession/configuration/source.md)
+- [var source: Locale.Language?](./configuration/source.md)
   The language to translate content from.
-- [var target: Locale.Language?](translationsession/configuration/target.md)
+- [var target: Locale.Language?](./configuration/target.md)
   The language to translate content into.
 ### Configuring translation behavior
-- [var preferredStrategy: TranslationSession.Strategy](translationsession/configuration/preferredstrategy.md)
+- [var preferredStrategy: TranslationSession.Strategy](./configuration/preferredstrategy.md)
   The translation approach for this configuration.
 ### Updating the translation
-- [func invalidate()](translationsession/configuration/invalidate.md)
+- [func invalidate()](./configuration/invalidate%28%29.md)
   Invalidate the current translation session and re-run it with new content.
 ### Comparing configurations
-- [var version: Int](translationsession/configuration/version.md)
+- [var version: Int](./configuration/version.md)
   A value the equals function uses to represent change in the configuration instance.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [func prepareTranslation() async throws](translationsession/preparetranslation.md)
+### Preparing for translation
+- [func prepareTranslation() async throws](./preparetranslation%28%29.md)
   Asks for permission to download translation languages without doing any translations.
 
 

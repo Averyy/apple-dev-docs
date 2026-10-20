@@ -1,17 +1,22 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var title: String { get set }
+```
+
+```objc
+@property (copy) NSString * title;
 ```
 
 #### Discussion

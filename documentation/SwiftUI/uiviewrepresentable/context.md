@@ -1,7 +1,8 @@
 # UIViewRepresentable.Context
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 13.0+
@@ -18,11 +19,12 @@ typealias Context = UIViewRepresentableContext<Self>
 
 ## See Also
 
-- [func makeUIView(context: Self.Context) -> Self.UIViewType](uiviewrepresentable/makeuiview(context:).md)
+### Creating and updating the view
+- [func makeUIView(context: Self.Context) -> Self.UIViewType](./makeuiview%28context%29.md)
   Creates the view object and configures its initial state.
-- [func updateUIView(Self.UIViewType, context: Self.Context)](uiviewrepresentable/updateuiview(_:context:).md)
+- [func updateUIView(Self.UIViewType, context: Self.Context)](./updateuiview%28_,context%29.md)
   Updates the state of the specified view with new information from SwiftUI.
-- [associatedtype UIViewType : UIView](uiviewrepresentable/uiviewtype.md)
+- [associatedtype UIViewType : UIView](./uiviewtype.md)
   The type of view to present.
 
 

@@ -1,7 +1,8 @@
 # translation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Position of the pose relative to the reference coordinate system.
 

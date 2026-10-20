@@ -1,7 +1,8 @@
 # CTGlyphInfoGetGlyphName(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the glyph name for a glyph info object, if that object exists.
 
@@ -20,6 +21,10 @@ Retrieves the glyph name for a glyph info object, if that object exists.
 func CTGlyphInfoGetGlyphName(_ glyphInfo: CTGlyphInfo) -> CFString?
 ```
 
+```c
+extern CFStringRefCTGlyphInfoGetGlyphName(CTGlyphInfoRef glyphInfo);
+```
+
 #### Return Value
 
 A glyph name, if the glyph info object was created with a name; otherwise, `NULL`.
@@ -30,11 +35,12 @@ A glyph name, if the glyph info object was created with a name; otherwise, `NULL
 
 ## See Also
 
-- [func CTGlyphInfoGetCharacterIdentifier(CTGlyphInfo) -> CGFontIndex](ctglyphinfogetcharacteridentifier(_:).md)
+### Getting GlyphInfo Data
+- [func CTGlyphInfoGetCharacterIdentifier(CTGlyphInfo) -> CGFontIndex](./ctglyphinfogetcharacteridentifier%28_%29.md)
   Gets the character identifier for a glyph info object.
-- [func CTGlyphInfoGetCharacterCollection(CTGlyphInfo) -> CTCharacterCollection](ctglyphinfogetcharactercollection(_:).md)
+- [func CTGlyphInfoGetCharacterCollection(CTGlyphInfo) -> CTCharacterCollection](./ctglyphinfogetcharactercollection%28_%29.md)
   Gets the character collection for a glyph info object.
-- [func CTGlyphInfoGetGlyph(CTGlyphInfo) -> CGGlyph](ctglyphinfogetglyph(_:).md)
+- [func CTGlyphInfoGetGlyph(CTGlyphInfo) -> CGGlyph](./ctglyphinfogetglyph%28_%29.md)
   Retrieves the glyph for a glyph info, if that object exists.
 
 

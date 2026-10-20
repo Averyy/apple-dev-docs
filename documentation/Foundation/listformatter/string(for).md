@@ -1,7 +1,8 @@
 # string(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a formatted string for an array of items.
 
@@ -20,13 +21,17 @@ Creates a formatted string for an array of items.
 func string(for obj: Any?) -> String?
 ```
 
+```objc
+- (NSString *) stringForObjectValue:(id) obj;
+```
+
 #### Return Value
 
 A formatted string representing the list of objects in an array. Returns `nil` if the formatter can’t generate a description for all objects in the array, or if `obj` is `nil`.
 
 #### Discussion
 
-The list formatter uses [`itemFormatter`](listformatter/itemformatter.md) to format each item in the array. If [`itemFormatter`](listformatter/itemformatter.md) doesn’t apply to a particular item, the list formatter falls back to the item’s [`description(withLocale:)`](nsarray/description(withlocale:).md) or [`localizedDescription`](progress/localizeddescription.md) if implemented. If those methods aren’t implemented, the formatter uses [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) instead.
+The list formatter uses [`itemFormatter`](./itemformatter.md) to format each item in the array. If [`itemFormatter`](./itemformatter.md) doesn’t apply to a particular item, the list formatter falls back to the item’s [`description(withLocale:)`](../nsarray/description%28withlocale%29.md) or [`localizedDescription`](../progress/localizeddescription.md) if implemented. If those methods aren’t implemented, the formatter uses [`description`](../../ObjectiveC/nsobjectprotocol/description.md) instead.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ The list formatter uses [`itemFormatter`](listformatter/itemformatter.md) to for
 
 ## See Also
 
-- [func string(from: [Any]) -> String?](listformatter/string(from:).md)
+### Converting Arrays to Formatted Lists
+- [func string(from: [Any]) -> String?](./string%28from%29.md)
   Creates a formatted string for an array of items.
-- [class func localizedString(byJoining: [String]) -> String](listformatter/localizedstring(byjoining:).md)
+- [class func localizedString(byJoining: [String]) -> String](./localizedstring%28byjoining%29.md)
   Constructs a formatted string from an array of strings that uses the list format specific to the current locale.
 
 

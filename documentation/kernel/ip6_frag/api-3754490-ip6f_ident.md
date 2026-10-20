@@ -1,14 +1,15 @@
 # ip6f_ident
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t ip6f_ident;
 ```
 

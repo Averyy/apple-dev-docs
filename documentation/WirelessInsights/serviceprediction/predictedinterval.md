@@ -1,7 +1,8 @@
 # predictedInterval
 
 **Framework**: WirelessInsights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected duration of the predicted event.
 
@@ -17,13 +18,14 @@ let predictedInterval: TimeInterval
 
 #### Discussion
 
-The value of this property is one of the defined values of the [`ServicePrediction.QuantizedInterval`](serviceprediction/quantizedinterval.md) type.
+The value of this property is one of the defined values of the [`ServicePrediction.QuantizedInterval`](./quantizedinterval.md) type.
 
 ## See Also
 
-- [let predictedStartTime: Date](serviceprediction/predictedstarttime.md)
+### Accessing prediction timing
+- [let predictedStartTime: Date](./predictedstarttime.md)
   The start time of the predicted event.
-- [ServicePrediction.QuantizedInterval](serviceprediction/quantizedinterval.md)
+- [ServicePrediction.QuantizedInterval](./quantizedinterval.md)
   A type that provides discrete time intervals to express the expected duration of a predicted event.
 
 

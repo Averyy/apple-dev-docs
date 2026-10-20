@@ -1,7 +1,8 @@
 # supportedPhonemes(locale:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 List the supported subset of X-SAMPA pronunciations supported by this locale for the Speech framework.
 
@@ -29,9 +30,10 @@ SFCustomLanguageModelData accepts custom pronunciations whose phonetic represent
 
 ## See Also
 
-- [func insert(term: SFCustomLanguageModelData.CustomPronunciation)](sfcustomlanguagemodeldata/insert(term:).md)
+### Adding terms
+- [func insert(term: SFCustomLanguageModelData.CustomPronunciation)](./insert%28term%29.md)
   Add a custom term to the vocabulary.
-- [SFCustomLanguageModelData.CustomPronunciation](sfcustomlanguagemodeldata/custompronunciation.md)
+- [SFCustomLanguageModelData.CustomPronunciation](./custompronunciation.md)
   A term to be introduced into the speech recognition model’s vocabulary.
 
 

@@ -1,7 +1,8 @@
 # interleavingPeriod
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time period indicating the duration for interleaving runs of samples for each track.
 
@@ -19,17 +20,22 @@ A time period indicating the duration for interleaving runs of samples for each 
 var interleavingPeriod: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic) CMTime interleavingPeriod;
+```
+
 #### Discussion
 
 Default value is `0.5` seconds.
 
 ## See Also
 
-- [var isModified: Bool](avmutablemovie/ismodified.md)
+### Configuring a movie
+- [var isModified: Bool](./ismodified.md)
   A Boolean value that indicates whether the movie is in a modified state.
-- [var timescale: CMTimeScale](avmutablemovie/timescale.md)
+- [var timescale: CMTimeScale](./timescale.md)
   The time scale of the movie.
-- [var defaultMediaDataStorage: AVMediaDataStorage?](avmutablemovie/defaultmediadatastorage.md)
+- [var defaultMediaDataStorage: AVMediaDataStorage?](./defaultmediadatastorage.md)
   The default storage container for media data that you add to a movie.
 
 

@@ -1,7 +1,8 @@
 # removePlayer(_:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a player from the session.
 
@@ -18,15 +19,20 @@ Removes a player from the session.
 func removePlayer(_ player: AVPlayer)
 ```
 
+```objc
+- (void) removePlayer:(AVPlayer *) player;
+```
+
 ## Parameters
 
 - `player`: The player to remove from the session.
 
 ## See Also
 
-- [var players: [AVPlayer]](mpnowplayingsession/players.md)
+### Managing players
+- [var players: [AVPlayer]](./players.md)
   The array of players associated with the session.
-- [func addPlayer(AVPlayer)](mpnowplayingsession/addplayer(_:).md)
+- [func addPlayer(AVPlayer)](./addplayer%28_%29.md)
   Adds a player to the session.
 
 

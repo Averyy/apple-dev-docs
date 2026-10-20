@@ -1,7 +1,8 @@
 # IntentAuthenticationPolicy
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The authentication policies you can apply to an app intent when it runs.
 
@@ -11,7 +12,7 @@ The authentication policies you can apply to an app intent when it runs.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,24 +24,25 @@ enum IntentAuthenticationPolicy
 ## Topics
 
 ### Authentication policies
-- [IntentAuthenticationPolicy.alwaysAllowed](intentauthenticationpolicy/alwaysallowed.md)
+- [IntentAuthenticationPolicy.alwaysAllowed](./intentauthenticationpolicy/alwaysallowed.md)
   A policy that allows the app intent to run at any time, including when the device is locked.
-- [IntentAuthenticationPolicy.requiresAuthentication](intentauthenticationpolicy/requiresauthentication.md)
+- [IntentAuthenticationPolicy.requiresAuthentication](./intentauthenticationpolicy/requiresauthentication.md)
   A policy that requires authentication before running the app intent.
-- [IntentAuthenticationPolicy.requiresLocalDeviceAuthentication](intentauthenticationpolicy/requireslocaldeviceauthentication.md)
+- [IntentAuthenticationPolicy.requiresLocalDeviceAuthentication](./intentauthenticationpolicy/requireslocaldeviceauthentication.md)
   A policy that requires the person to unlock the device running the intent.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var authenticationPolicy: IntentAuthenticationPolicy](appintent/authenticationpolicy.md)
+### Specifying the authentication policy
+- [static var authenticationPolicy: IntentAuthenticationPolicy](./appintent/authenticationpolicy.md)
   The authentication policy to enforce when running the app intent.
 
 

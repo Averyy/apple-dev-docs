@@ -1,14 +1,15 @@
 # IOUSBHostCIPortCapabilitiesMessageData0MaxPower
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIPortCapabilitiesMessageData0MaxPower = IOUSBBitRange(0, 7)
 ```
 

@@ -1,12 +1,13 @@
 # Routing Notifications to Combine Subscribers
 
-**Framework**: Combine
+**Framework**: Combine  
+**Role**: Article
 
 Deliver notifications to subscribers by using notification centers’ publishers.
 
 #### Overview
 
-Many frameworks deliver asynchronous events to your app with the [`NotificationCenter`](https://developer.apple.com/documentation/foundation/notificationcenter) API. Your app may already have places where it receives and processes these notifications in callback methods or closures. For example, the following code uses [`addObserver(forName:object:queue:using:)`](https://developer.apple.com/documentation/foundation/notificationcenter/addobserver(forname:object:queue:using:)) to print a message every time an iOS device rotates to portrait orientation.
+Many frameworks deliver asynchronous events to your app with the [`NotificationCenter`](../Foundation/notificationcenter.md) API. Your app may already have places where it receives and processes these notifications in callback methods or closures. For example, the following code uses [`addObserver(forName:object:queue:using:)`](../Foundation/notificationcenter/addobserver%28forname,object,queue,using%29.md) to print a message every time an iOS device rotates to portrait orientation.
 
 ```swift
 var notificationToken: NSObjectProtocol?
@@ -23,13 +24,13 @@ override func viewDidLoad() {
 }
 ```
 
-##### Migrate Notification Handling Code to Use Combine
+##### Migrate Notification-Handling Code to Use Combine
 
 Using notification center callbacks and closures requires you to do all your work inside the callback method or closure. By migrating to Combine, you can use operators to perform common tasks like filtering.
 
-To take advantage of Combine, use the [`NotificationCenter.Publisher`](https://developer.apple.com/documentation/foundation/notificationcenter/publisher) to migrate your [`NSNotification`](https://developer.apple.com/documentation/foundation/nsnotification) handling code to the Combine idiom. You create this publisher with the [`NotificationCenter`](https://developer.apple.com/documentation/foundation/notificationcenter) method [`publisher(for:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/publisher(for:object:)), passing in the notification name in which you’re interested and a source object, if any.
+To take advantage of Combine, use the [`NotificationCenter.Publisher`](../Foundation/notificationcenter/publisher.md) to migrate your [`NSNotification`](../Foundation/nsnotification.md) handling code to the Combine idiom. You create this publisher with the [`NotificationCenter`](../Foundation/notificationcenter.md) method [`publisher(for:object:)`](../Foundation/notificationcenter/publisher%28for,object%29.md), passing in the notification name in which you’re interested and a source object, if any.
 
-Rewrite the above code in Combine as shown in the following listing. This code uses the default notification center to create a publisher for the [`orientationDidChangeNotification`](https://developer.apple.com/documentation/uikit/uidevice/orientationdidchangenotification) notification. When the code receives notifications from this publisher, it applies a filter operator to only act on portrait orientation notifications, and prints a message.
+Rewrite the above code in Combine as shown in the following listing. This code uses the default notification center to create a publisher for the [`orientationDidChangeNotification`](../UIKit/uidevice/orientationdidchangenotification.md) notification. When the code receives notifications from this publisher, it applies a filter operator to only act on portrait orientation notifications, and prints a message.
 
 ```swift
 var cancellable: Cancellable?
@@ -42,15 +43,16 @@ override func viewDidLoad() {
 }
 ```
 
-Note that in this case, the [`orientationDidChangeNotification`](https://developer.apple.com/documentation/uikit/uidevice/orientationdidchangenotification) doesn’t contain the new orientation in its [`userInfo`](https://developer.apple.com/documentation/foundation/notification/userinfo) dictionary, so the [`filter(_:)`](publisher/filter(_:).md) operator queries the [`UIDevice`](https://developer.apple.com/documentation/uikit/uidevice) directly.
+Note that in this case, the [`orientationDidChangeNotification`](../UIKit/uidevice/orientationdidchangenotification.md) doesn’t contain the new orientation in its [`userInfo`](../Foundation/notification/userinfo.md) dictionary, so the [`filter(_:)`](./publisher/filter%28_%29.md) operator queries the [`UIDevice`](../UIKit/uidevice.md) directly.
 
 ## See Also
 
-- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
+### Combine Migration
+- [Replacing Foundation Timers with Timer Publishers](./replacing-foundation-timers-with-timer-publishers.md)
   Publish elements periodically by using a timer.
-- [Performing Key-Value Observing with Combine](performing-key-value-observing-with-combine.md)
+- [Performing Key-Value Observing with Combine](./performing-key-value-observing-with-combine.md)
   Expose KVO changes with a Combine publisher.
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
   Apply common patterns to migrate your closure-based, event-handling code.
 
 

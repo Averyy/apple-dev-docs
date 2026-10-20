@@ -1,11 +1,12 @@
 # CustomLocalizedStringResourceConvertible Implementations
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var localizedStringResource: LocalizedStringResource](instancedisplayrepresentable/localizedstringresource.md)
+- [var localizedStringResource: LocalizedStringResource](./localizedstringresource.md)
   A resource that helps provide a description of this instance.
 
 

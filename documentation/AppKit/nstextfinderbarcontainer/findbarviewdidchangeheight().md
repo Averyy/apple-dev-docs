@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the find bar container that the find bar has changed its height.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func findBarViewDidChangeHeight()
+```
+
+```objc
+- (void) findBarViewDidChangeHeight;
 ```
 
 #### Discussion

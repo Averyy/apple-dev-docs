@@ -1,7 +1,8 @@
 # waitUntilCompleted
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Flag for the graph executable to wait till the execution has completed.
 
@@ -17,6 +18,10 @@ Flag for the graph executable to wait till the execution has completed.
 
 ```swift
 var waitUntilCompleted: Bool { get set }
+```
+
+```objc
+@property (atomic, readwrite) BOOL waitUntilCompleted;
 ```
 
 #### Discussion

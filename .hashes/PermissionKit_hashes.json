@@ -56,14 +56,12 @@
       "hash": "dc051fa586d195279a496ea6ed63aeff17d461c5be4b9e2df5391697f84ad055"
     },
     "https://developer.apple.com/documentation/permissionkit/askerror/!=(_:_:)": {
-      "etag": "W/\"9d6c9dd630bd1dd1afe1d5fe7d75fc77\"",
       "file_path": "documentation/PermissionKit/askerror/noteq(_,_).md",
-      "hash": "122984afb64bd7dde44b520f2934c9b6a6d8142ca736c66b882506f6f212cd61"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/permissionkit/askerror/==(_:_:)": {
-      "etag": "W/\"81ec0dbfd431f7d2ca27e20459361cf8\"",
       "file_path": "documentation/PermissionKit/askerror/eqeq(_,_).md",
-      "hash": "aa3ca0ff78df10fa537480ca08fd2b642b7e9377d5fb9adb86b714def00b28be"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/permissionkit/askerror/communicationlimitsnotenabled": {
       "etag": "\"1a04-65d55e6934fae-df\"",
@@ -606,14 +604,12 @@
       "hash": "dc051fa586d195279a496ea6ed63aeff17d461c5be4b9e2df5391697f84ad055"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askerror/!=(_:_:).json": {
-      "etag": "W/\"9d6c9dd630bd1dd1afe1d5fe7d75fc77\"",
       "file_path": "documentation/PermissionKit/askerror/noteq(_,_).md",
-      "hash": "122984afb64bd7dde44b520f2934c9b6a6d8142ca736c66b882506f6f212cd61"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askerror/==(_:_:).json": {
-      "etag": "W/\"81ec0dbfd431f7d2ca27e20459361cf8\"",
       "file_path": "documentation/PermissionKit/askerror/eqeq(_,_).md",
-      "hash": "aa3ca0ff78df10fa537480ca08fd2b642b7e9377d5fb9adb86b714def00b28be"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askerror/communicationlimitsnotenabled.json": {
       "etag": "\"1a04-65d55e6934fae-df\"",
@@ -1102,6 +1098,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 220
   }
 }

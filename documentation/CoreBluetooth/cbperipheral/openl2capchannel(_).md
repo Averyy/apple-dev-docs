@@ -1,7 +1,8 @@
 # openL2CAPChannel(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to open an L2CAP channel to the peripheral using the supplied Protocol/Service Multiplexer (PSM).
 
@@ -20,15 +21,20 @@ Attempts to open an L2CAP channel to the peripheral using the supplied Protocol/
 func openL2CAPChannel(_ PSM: CBL2CAPPSM)
 ```
 
+```objc
+- (void) openL2CAPChannel:(CBL2CAPPSM) PSM;
+```
+
 ## Parameters
 
 - `PSM`: The PSM of the channel to open.
 
 ## See Also
 
-- [class CBL2CAPChannel](cbl2capchannel.md)
+### Working with L2CAP Channels
+- [class CBL2CAPChannel](../cbl2capchannel.md)
   A live L2CAP connection to a remote device.
-- [typealias CBL2CAPPSM](cbl2cappsm.md)
+- [typealias CBL2CAPPSM](../cbl2cappsm.md)
   The type of PSM identifiers.
 
 

@@ -1,12 +1,13 @@
 # NSSound
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A simple interface for loading and playing audio files.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,96 +15,100 @@ A simple interface for loading and playing audio files.
 class NSSound
 ```
 
+```objc
+@interface NSSound : NSObject
+```
+
 #### Overview
 
-You create a sound object with an audio file or data, which can be in any format that Core Audio supports. Customize the sound by configuring its properties, such as setting its playback volume and looping behavior. Call the sound’s [`play()`](nssound/play().md) method to begin playback. The system executes this call asynchronously so that it doesn’t interrupt the functioning of your app.
+You create a sound object with an audio file or data, which can be in any format that Core Audio supports. Customize the sound by configuring its properties, such as setting its playback volume and looping behavior. Call the sound’s [`play()`](./nssound/play%28%29.md) method to begin playback. The system executes this call asynchronously so that it doesn’t interrupt the functioning of your app.
 
-If you want to play the system beep sound, use the [`beep()`](nssound/beep().md) (Swift) or [`NSBeep`](nsbeep.md) (Objective-C) function.
+If you want to play the system beep sound, use the [`beep()`](./nssound/beep%28%29.md) (Swift) or [`NSBeep`](./nsbeep.md) (Objective-C) function.
 
 ## Topics
 
 ### Detecting When a Sound Finishes Playing
-- [var delegate: (any NSSoundDelegate)?](nssound/delegate.md)
+- [var delegate: (any NSSoundDelegate)?](./nssound/delegate.md)
   The sound’s delegate.
-- [protocol NSSoundDelegate](nssounddelegate.md)
-  A set of optional methods implemented by delegates of [`NSSound`](nssound.md) objects.
+- [protocol NSSoundDelegate](./nssounddelegate.md)
+  A set of optional methods implemented by delegates of [`NSSound`](./nssound.md) objects.
 ### Creating Sounds
-- [class func canInit(with: NSPasteboard) -> Bool](nssound/caninit(with:).md)
+- [class func canInit(with: NSPasteboard) -> Bool](./nssound/caninit%28with%29.md)
   Indicates whether the receiver can create an instance of itself from the data in a pasteboard.
-- [init?(contentsOfFile: String, byReference: Bool)](nssound/init(contentsoffile:byreference:).md)
+- [init?(contentsOfFile: String, byReference: Bool)](./nssound/init%28contentsoffile,byreference%29.md)
   Initializes the receiver with the audio data located at a given filepath.
-- [init?(contentsOf: URL, byReference: Bool)](nssound/init(contentsof:byreference:).md)
+- [init?(contentsOf: URL, byReference: Bool)](./nssound/init%28contentsof,byreference%29.md)
   Initializes the receiver with the audio data located at a given URL.
-- [init?(data: Data)](nssound/init(data:).md)
+- [init?(data: Data)](./nssound/init%28data%29.md)
   Initializes the receiver with a given audio data.
-- [init?(pasteboard: NSPasteboard)](nssound/init(pasteboard:).md)
-  Initializes the receiver with data from a pasteboard. The pasteboard should contain a type returned by [`NSSound`](nssound.md). `NSSound` expects the data to have a proper magic number, sound header, and data for the formats it supports.
+- [init?(pasteboard: NSPasteboard)](./nssound/init%28pasteboard%29.md)
+  Initializes the receiver with data from a pasteboard. The pasteboard should contain a type returned by [`NSSound`](./nssound.md). `NSSound` expects the data to have a proper magic number, sound header, and data for the formats it supports.
 ### Configuring Sounds
-- [var name: NSSound.Name?](nssound/name-swift.property.md)
+- [var name: NSSound.Name?](./nssound/name-swift.property.md)
   The name assigned to the sound.
-- [typealias Name](nssound/name-swift.typealias.md)
-- [func setName(NSSound.Name?) -> Bool](nssound/setname(_:).md)
-- [var volume: Float](nssound/volume.md)
+- [typealias Name](./nssound/name-swift.typealias.md)
+- [func setName(NSSound.Name?) -> Bool](./nssound/setname%28_%29.md)
+- [var volume: Float](./nssound/volume.md)
   The volume of the sound.
-- [var currentTime: TimeInterval](nssound/currenttime.md)
+- [var currentTime: TimeInterval](./nssound/currenttime.md)
   The sound’s playback progress, in seconds.
-- [var loops: Bool](nssound/loops.md)
+- [var loops: Bool](./nssound/loops.md)
   A Boolean that indicates whether the sound restarts playback when it reaches the end of its content.
-- [var playbackDeviceIdentifier: NSSound.PlaybackDeviceIdentifier?](nssound/playbackdeviceidentifier-swift.property.md)
+- [var playbackDeviceIdentifier: NSSound.PlaybackDeviceIdentifier?](./nssound/playbackdeviceidentifier-swift.property.md)
   Identifies the sound’s output device
-- [typealias PlaybackDeviceIdentifier](nssound/playbackdeviceidentifier-swift.typealias.md)
+- [typealias PlaybackDeviceIdentifier](./nssound/playbackdeviceidentifier-swift.typealias.md)
 ### Getting Sound Information
-- [class var soundUnfilteredTypes: [String]](nssound/soundunfilteredtypes.md)
+- [class var soundUnfilteredTypes: [String]](./nssound/soundunfilteredtypes.md)
   Provides the file types the `NSSound` class understands.
-- [init?(named: NSSound.Name)](nssound/init(named:).md)
+- [init?(named: NSSound.Name)](./nssound/init%28named%29.md)
   Returns the `NSSound` instance associated with a given name.
-- [var duration: TimeInterval](nssound/duration.md)
+- [var duration: TimeInterval](./nssound/duration.md)
   The duration of the sound, in seconds.
 ### Playing Sounds
-- [static func beep()](nssound/beep.md)
+- [static func beep()](./nssound/beep%28%29.md)
   Plays the system beep.
-- [var isPlaying: Bool](nssound/isplaying.md)
+- [var isPlaying: Bool](./nssound/isplaying.md)
   A Boolean that indicates whether the sound is playing its audio data.
-- [func pause() -> Bool](nssound/pause.md)
+- [func pause() -> Bool](./nssound/pause%28%29.md)
   Pauses audio playback.
-- [func play() -> Bool](nssound/play.md)
+- [func play() -> Bool](./nssound/play%28%29.md)
   Initiates audio playback.
-- [func resume() -> Bool](nssound/resume.md)
+- [func resume() -> Bool](./nssound/resume%28%29.md)
   Resumes audio playback.
-- [func stop() -> Bool](nssound/stop.md)
+- [func stop() -> Bool](./nssound/stop%28%29.md)
   Concludes audio playback.
 ### Writing Sounds
-- [func write(to: NSPasteboard)](nssound/write(to:).md)
+- [func write(to: NSPasteboard)](./nssound/write%28to%29.md)
   Writes the receiver’s data to a pasteboard.
 ### Constants
-- [NSPasteboard Type for Sound Data](nspasteboard-type-for-sound-data.md)
+- [NSPasteboard Type for Sound Data](./nspasteboard-type-for-sound-data.md)
   The `NSSound` class defines this common pasteboard data type.
 ### Initializers
-- [init?(coder: NSCoder)](nssound/init(coder:).md)
-- [init?(contentsOfURL: URL, byReference: Bool)](nssound/init(contentsofurl:byreference:).md)
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nssound/init(pasteboardpropertylist:oftype:).md)
+- [init?(coder: NSCoder)](./nssound/init%28coder%29.md)
+- [init?(contentsOfURL: URL, byReference: Bool)](./nssound/init%28contentsofurl,byreference%29.md)
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](./nssound/init%28pasteboardpropertylist,oftype%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSPasteboardReading](nspasteboardreading.md)
-- [NSPasteboardWriting](nspasteboardwriting.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transferable](../coretransferable/transferable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSPasteboardReading](./nspasteboardreading.md)
+- [NSPasteboardWriting](./nspasteboardwriting.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transferable](../CoreTransferable/transferable.md)
 
 
 ---

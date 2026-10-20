@@ -1,7 +1,8 @@
 # EquipmentPose2D
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the position and rotation of equipment on the XZ plane.
 
@@ -17,31 +18,32 @@ struct EquipmentPose2D
 ## Topics
 
 ### Creating an equipment pose object
-- [init(id: EquipmentIdentifier, pose: TableVisualState.Pose2D)](equipmentpose2d/init(id:pose:).md)
+- [init(id: EquipmentIdentifier, pose: TableVisualState.Pose2D)](./equipmentpose2d/init%28id,pose%29.md)
   Creates a position and rotation on the table for a specific piece of equipment.
 ### Getting equipment pose properties
-- [var id: EquipmentIdentifier](equipmentpose2d/id.md)
+- [var id: EquipmentIdentifier](./equipmentpose2d/id.md)
   The unique identifier for the equipment.
-- [var pose: TableVisualState.Pose2D](equipmentpose2d/pose.md)
+- [var pose: TableVisualState.Pose2D](./equipmentpose2d/pose.md)
   The 2D position and rotation of equipment on the table.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol EquipmentLayout](equipmentlayout.md)
+### Equipment layout
+- [protocol EquipmentLayout](./equipmentlayout.md)
   A protocol for objects that describe the layout of equipment.
-- [struct DefaultEquipmentLayout](defaultequipmentlayout.md)
+- [struct DefaultEquipmentLayout](./defaultequipmentlayout.md)
   An object that provides a standard configuration for equipment layout.
-- [struct EquipmentPose3D](equipmentpose3d.md)
+- [struct EquipmentPose3D](./equipmentpose3d.md)
   An object that represents the 3D position and orientation of equipment on the table.
 
 

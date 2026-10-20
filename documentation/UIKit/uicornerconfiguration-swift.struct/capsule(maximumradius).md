@@ -1,7 +1,8 @@
 # capsule(maximumRadius:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration that rounds the corners into a capsule shape, scaling with the view’s size up to the maximum radius you provide.
 

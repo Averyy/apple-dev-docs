@@ -1,7 +1,8 @@
 # callerAuditToken
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var callerAuditToken: Data { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSData * callerAuditToken;
 ```
 
 

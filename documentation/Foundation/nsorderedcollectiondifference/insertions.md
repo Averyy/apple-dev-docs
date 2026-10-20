@@ -1,7 +1,8 @@
 # insertions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of insertion change objects.
 
@@ -20,15 +21,20 @@ A collection of insertion change objects.
 var insertions: [NSOrderedCollectionChange] { get }
 ```
 
+```objc
+@property (strong, readonly) NSArray<NSOrderedCollectionChange<id> *> * insertions;
+```
+
 ## See Also
 
-- [var hasChanges: Bool](nsorderedcollectiondifference/haschanges.md)
+### Accessing Changes
+- [var hasChanges: Bool](./haschanges.md)
   A Boolean value that indicates if the difference has changes.
-- [var removals: [NSOrderedCollectionChange]](nsorderedcollectiondifference/removals.md)
+- [var removals: [NSOrderedCollectionChange]](./removals.md)
   A collection of removal change objects.
-- [class NSOrderedCollectionChange](nsorderedcollectionchange.md)
+- [class NSOrderedCollectionChange](../nsorderedcollectionchange.md)
   An object that represents an indexed change within an ordered collection.
-- [enum NSCollectionChangeType](nscollectionchangetype.md)
+- [enum NSCollectionChangeType](../nscollectionchangetype.md)
   The type of change represented in computing the difference of an ordered collection.
 
 

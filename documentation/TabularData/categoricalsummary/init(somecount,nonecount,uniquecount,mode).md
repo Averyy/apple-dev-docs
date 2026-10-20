@@ -1,7 +1,8 @@
 # init(someCount:noneCount:uniqueCount:mode:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a categorical summary.
 
@@ -29,7 +30,8 @@ init(someCount: Int, noneCount: Int, uniqueCount: Int, mode: [Element])
 
 ## See Also
 
-- [init()](categoricalsummary/init.md)
+### Creating a Summary
+- [init()](./init%28%29.md)
   Creates a categorical summary with default values.
 
 

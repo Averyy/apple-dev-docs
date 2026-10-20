@@ -1,17 +1,18 @@
 # allocate_memory_zero_t
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Constructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 explicit allocate_memory_zero_t();
 ```
 

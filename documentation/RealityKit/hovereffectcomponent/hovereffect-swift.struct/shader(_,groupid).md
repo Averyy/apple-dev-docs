@@ -1,7 +1,8 @@
 # shader(_:groupID:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shader hover effect that is assigned to the group.
 

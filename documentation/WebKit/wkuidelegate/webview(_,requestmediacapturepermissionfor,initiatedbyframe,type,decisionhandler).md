@@ -1,7 +1,8 @@
 # webView(_:requestMediaCapturePermissionFor:initiatedByFrame:type:decisionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether a web resource, which the security origin object describes, can access to the device’s microphone audio and camera video.
 
@@ -15,12 +16,20 @@ Determines whether a web resource, which the security origin object describes, c
 ## Declaration
 
 ```swift
+optional func webView(_ webView: WKWebView, requestMediaCapturePermissionFor origin: WKSecurityOrigin, initiatedByFrame frame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: @escaping @MainActor @Sendable (WKPermissionDecision) -> Void)
+```
+
+```swift
 optional func webView(_ webView: WKWebView, decideMediaCapturePermissionsFor origin: WKSecurityOrigin, initiatedBy frame: WKFrameInfo, type: WKMediaCaptureType) async -> WKPermissionDecision
+```
+
+```objc
+- (void) webView:(WKWebView *) webView requestMediaCapturePermissionForOrigin:(WKSecurityOrigin *) origin initiatedByFrame:(WKFrameInfo *) frame type:(WKMediaCaptureType) type decisionHandler:(void (^)(enum WKPermissionDecision)) decisionHandler;
 ```
 
 #### Discussion
 
-If you don’t implement this method in your delegate, the system returns [`WKPermissionDecision.prompt`](wkpermissiondecision/prompt.md).
+If you don’t implement this method in your delegate, the system returns [`WKPermissionDecision.prompt`](../wkpermissiondecision/prompt.md).
 
 ## Parameters
 
@@ -32,11 +41,12 @@ If you don’t implement this method in your delegate, the system returns [`WKPe
 
 ## See Also
 
-- [func webView(WKWebView, requestDeviceOrientationAndMotionPermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, decisionHandler: (WKPermissionDecision) -> Void)](wkuidelegate/webview(_:requestdeviceorientationandmotionpermissionfor:initiatedbyframe:decisionhandler:).md)
+### Requesting permissions
+- [func webView(WKWebView, requestDeviceOrientationAndMotionPermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, decisionHandler: (WKPermissionDecision) -> Void)](./webview%28_,requestdeviceorientationandmotionpermissionfor,initiatedbyframe,decisionhandler%29.md)
   Determines whether a web resource, which the security origin object describes, can access the device’s orientation and motion.
-- [enum WKPermissionDecision](wkpermissiondecision.md)
+- [enum WKPermissionDecision](../wkpermissiondecision.md)
   An enumeration of possible permission decisions for device resource access.
-- [enum WKMediaCaptureType](wkmediacapturetype.md)
+- [enum WKMediaCaptureType](../wkmediacapturetype.md)
   An enumeration listing the types of media devices that can capture audio, video, or both.
 
 

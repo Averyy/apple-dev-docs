@@ -1,7 +1,8 @@
 # PagedPickerSubscriptionStoreControlStyle.Placement
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The placement of paged subscription picker in a subscription store view.
 
@@ -22,18 +23,18 @@ struct Placement
 ## Topics
 
 ### Getting a placement
-- [static var automatic: PagedPickerSubscriptionStoreControlStyle.Placement](pagedpickersubscriptionstorecontrolstyle/placement/automatic.md)
-- [static var bottomBar: PagedPickerSubscriptionStoreControlStyle.Placement](pagedpickersubscriptionstorecontrolstyle/placement/bottombar.md)
+- [static var automatic: PagedPickerSubscriptionStoreControlStyle.Placement](./placement/automatic.md)
+- [static var bottomBar: PagedPickerSubscriptionStoreControlStyle.Placement](./placement/bottombar.md)
   A placement that locates the paged picker in a bar near the bottom of the main scroll view in a subscription store view.
-- [static var buttonsInBottomBar: PagedPickerSubscriptionStoreControlStyle.Placement](pagedpickersubscriptionstorecontrolstyle/placement/buttonsinbottombar.md)
+- [static var buttonsInBottomBar: PagedPickerSubscriptionStoreControlStyle.Placement](./placement/buttonsinbottombar.md)
   A hybrid placement that positions subscription controls within the main scroll view, and places auxiliary buttons in the bottom bar.
-- [static var scrollView: PagedPickerSubscriptionStoreControlStyle.Placement](pagedpickersubscriptionstorecontrolstyle/placement/scrollview.md)
+- [static var scrollView: PagedPickerSubscriptionStoreControlStyle.Placement](./placement/scrollview.md)
 
 ## Relationships
 
 ### Conforms To
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SubscriptionStoreControlPlacement](subscriptionstorecontrolplacement.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SubscriptionStoreControlPlacement](../subscriptionstorecontrolplacement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kAXApplicationActivatedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The application was activated (that is, brought to front).
 
@@ -12,6 +13,10 @@ The application was activated (that is, brought to front).
 
 ```swift
 var kAXApplicationActivatedNotification: String { get }
+```
+
+```c
+#define kAXApplicationActivatedNotification
 ```
 
 

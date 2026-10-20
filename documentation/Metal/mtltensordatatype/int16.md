@@ -1,7 +1,8 @@
 # MTLTensorDataType.int16
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit signed integer data type.
 
@@ -17,6 +18,10 @@ A 16-bit signed integer data type.
 
 ```swift
 case int16
+```
+
+```c
+MTLTensorDataTypeInt16
 ```
 
 

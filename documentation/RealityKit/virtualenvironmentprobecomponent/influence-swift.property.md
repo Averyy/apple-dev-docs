@@ -1,7 +1,8 @@
 # influence
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ var influence: VirtualEnvironmentProbeComponent.Influence { get set }
 
 ## See Also
 
-- [VirtualEnvironmentProbeComponent.Influence](virtualenvironmentprobecomponent/influence-swift.struct.md)
+### Configuring probe influence
+- [VirtualEnvironmentProbeComponent.Influence](./influence-swift.struct.md)
   Defines the spatial influence of an environment probe.
 
 

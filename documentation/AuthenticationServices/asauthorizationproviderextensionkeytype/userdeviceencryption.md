@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionKeyType.userDeviceEncryption
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user device encryption key.
 
@@ -14,11 +15,16 @@ The user device encryption key.
 case userDeviceEncryption
 ```
 
+```c
+ASAuthorizationProviderExtensionKeyTypeUserDeviceEncryption
+```
+
 ## See Also
 
-- [ASAuthorizationProviderExtensionKeyType.userDeviceSigning](asauthorizationproviderextensionkeytype/userdevicesigning.md)
+### Identifying the key types
+- [ASAuthorizationProviderExtensionKeyType.userDeviceSigning](./userdevicesigning.md)
   The user device signing key.
-- [ASAuthorizationProviderExtensionKeyType.userSecureEnclaveKey](asauthorizationproviderextensionkeytype/usersecureenclavekey.md)
+- [ASAuthorizationProviderExtensionKeyType.userSecureEnclaveKey](./usersecureenclavekey.md)
   The user Secure Enclave key.
 
 

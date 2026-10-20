@@ -1,14 +1,15 @@
 # SetAutosenseCommand
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 bool SetAutosenseCommand(SCSITaskIdentifier request, UInt8 cdbByte0, UInt8 cdbByte1, UInt8 cdbByte2, UInt8 cdbByte3, UInt8 cdbByte4, UInt8 cdbByte5);
 ```
 

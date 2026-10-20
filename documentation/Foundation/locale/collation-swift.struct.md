@@ -1,7 +1,8 @@
 # Locale.Collation
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the string sort order used by the locale.
 
@@ -23,44 +24,45 @@ struct Collation
 ## Topics
 
 ### Creating a collation
-- [init(String)](locale/collation-swift.struct/init(_:).md)
+- [init(String)](./collation-swift.struct/init%28_%29.md)
   Creates a collation from a BCP 47 identifier.
-- [init(stringLiteral: String)](locale/collation-swift.struct/init(stringliteral:).md)
+- [init(stringLiteral: String)](./collation-swift.struct/init%28stringliteral%29.md)
   Creates a collation from a BCP 47 identifier as a string literal.
 ### Examining collation properties
-- [var identifier: String](locale/collation-swift.struct/identifier.md)
+- [var identifier: String](./collation-swift.struct/identifier.md)
   The collation’s BCP 47 identifier.
 ### Using special-purpose collations
-- [static let standard: Locale.Collation](locale/collation-swift.struct/standard.md)
+- [static let standard: Locale.Collation](./collation-swift.struct/standard.md)
   A collation that provides the default ordering for each language.
-- [static let searchRules: Locale.Collation](locale/collation-swift.struct/searchrules.md)
+- [static let searchRules: Locale.Collation](./collation-swift.struct/searchrules.md)
   A collation used for string search.
 ### Type Properties
-- [static var availableCollations: [Locale.Collation]](locale/collation-swift.struct/availablecollations.md)
+- [static var availableCollations: [Locale.Collation]](./collation-swift.struct/availablecollations.md)
   A list of available collations on the system.
 ### Type Methods
-- [static func availableCollations(for: Locale.Language) -> [Locale.Collation]](locale/collation-swift.struct/availablecollations(for:).md)
+- [static func availableCollations(for: Locale.Language) -> [Locale.Collation]](./collation-swift.struct/availablecollations%28for%29.md)
   A list of available collations for the specified `language` in the order that it is most likely to make a difference.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var collation: Locale.Collation](locale/collation-swift.property.md)
+### Getting ordering components
+- [var collation: Locale.Collation](./collation-swift.property.md)
   The string sort order of the locale.
 
 

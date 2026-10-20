@@ -1,7 +1,8 @@
 # MarketplaceDisplayOption
 
 **Framework**: MarketplaceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kinds of deep links that the operating system makes into your marketplace.
 
@@ -17,36 +18,37 @@ enum MarketplaceDisplayOption
 
 #### Overview
 
-The [`MarketplaceSceneDelegate`](marketplacescenedelegate.md) function [`scene(_:askedToDisplay:)`](marketplacescenedelegate/scene(_:askedtodisplay:).md) accepts a case of this enumeration as a parameter.
+The [`MarketplaceSceneDelegate`](./marketplacescenedelegate.md) function [`scene(_:askedToDisplay:)`](./marketplacescenedelegate/scene%28_,askedtodisplay%29.md) accepts a case of this enumeration as a parameter.
 
 ## Topics
 
 ### Enumeration Cases
-- [MarketplaceDisplayOption.authentication(account:)](marketplacedisplayoption/authentication(account:).md)
-- [case productPage(appleItemID: AppleItemID, appleVersionID: AppleVersionID?)](marketplacedisplayoption/productpage(appleitemid:appleversionid:).md)
-- [MarketplaceDisplayOption.searchResults(query:)](marketplacedisplayoption/searchresults(query:).md)
+- [MarketplaceDisplayOption.authentication(account:)](./marketplacedisplayoption/authentication%28account%29.md)
+- [case productPage(appleItemID: AppleItemID, appleVersionID: AppleVersionID?)](./marketplacedisplayoption/productpage%28appleitemid,appleversionid%29.md)
+- [MarketplaceDisplayOption.searchResults(query:)](./marketplacedisplayoption/searchresults%28query%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
 
 ## See Also
 
-- [class ActionButton](actionbutton.md)
+### App distribution UI
+- [class ActionButton](./actionbutton.md)
   A user-interface element that enables a person to install, update, or launch apps by tapping the element.
-- [struct InstallMetadata](installmetadata.md)
+- [struct InstallMetadata](./installmetadata.md)
   Information about a specific app to install or update and the person who initiates it.
-- [struct InstallConfiguration](installconfiguration.md)
+- [struct InstallConfiguration](./installconfiguration.md)
   Information that describes a requested app installation or app update.
-- [enum InstallConfirmationResult](installconfirmationresult.md)
+- [enum InstallConfirmationResult](./installconfirmationresult.md)
   Options that indicate whether the installation of an app proceeds when a person interacts with an app installation button.
-- [struct BatchInstallConfiguration](batchinstallconfiguration.md)
+- [struct BatchInstallConfiguration](./batchinstallconfiguration.md)
   Information that describes multiple app installations or app updates.
-- [enum BatchInstallConfirmationResult](batchinstallconfirmationresult.md)
+- [enum BatchInstallConfirmationResult](./batchinstallconfirmationresult.md)
   Options that indicate whether the installation of multiple apps proceeds when a person interacts with an app installation button.
-- [protocol MarketplaceSceneDelegate](marketplacescenedelegate.md)
+- [protocol MarketplaceSceneDelegate](./marketplacescenedelegate.md)
   A delegate that handles deep link requests into your marketplace app.
 
 

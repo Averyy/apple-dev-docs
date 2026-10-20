@@ -1,7 +1,8 @@
 # ActionFlags
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var ActionFlags: CSSM_APPLE_TP_ACTION_FLAGS
+```
+
+```c
+CSSM_APPLE_TP_ACTION_FLAGS ActionFlags;
 ```
 
 

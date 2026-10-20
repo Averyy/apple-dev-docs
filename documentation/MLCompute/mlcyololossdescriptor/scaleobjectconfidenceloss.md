@@ -1,21 +1,26 @@
 # scaleObjectConfidenceLoss
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale factor you use for object confidence loss and loss gradient.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 var scaleObjectConfidenceLoss: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float scaleObjectConfidenceLoss;
 ```
 
 #### Discussion
@@ -24,23 +29,24 @@ The default value is `100.0`.
 
 ## See Also
 
-- [var anchorBoxCount: Int](mlcyololossdescriptor/anchorboxcount.md)
+### Inspecting YOLO Loss Descriptors
+- [var anchorBoxCount: Int](./anchorboxcount.md)
   The number of anchor boxes you use to detect an object in each grid cell.
-- [var anchorBoxes: Data](mlcyololossdescriptor/anchorboxes.md)
+- [var anchorBoxes: Data](./anchorboxes.md)
   Data that contains the width and height for all the anchor boxes.
-- [var maximumIOUForObjectAbsence: Float](mlcyololossdescriptor/maximumiouforobjectabsence.md)
+- [var maximumIOUForObjectAbsence: Float](./maximumiouforobjectabsence.md)
   The negative intersection over union (IOU).
-- [var minimumIOUForObjectPresence: Float](mlcyololossdescriptor/minimumiouforobjectpresence.md)
+- [var minimumIOUForObjectPresence: Float](./minimumiouforobjectpresence.md)
   The positive intersection over union (IOU).
-- [var scaleClassLoss: Float](mlcyololossdescriptor/scaleclassloss.md)
+- [var scaleClassLoss: Float](./scaleclassloss.md)
   The scale factor you use for loss when there are no object classes, and for loss gradient.
-- [var scaleNoObjectConfidenceLoss: Float](mlcyololossdescriptor/scalenoobjectconfidenceloss.md)
+- [var scaleNoObjectConfidenceLoss: Float](./scalenoobjectconfidenceloss.md)
   The scale factor you use for no object confidence loss and loss gradient.
-- [var scaleSpatialPositionLoss: Float](mlcyololossdescriptor/scalespatialpositionloss.md)
+- [var scaleSpatialPositionLoss: Float](./scalespatialpositionloss.md)
   The scale factor you use for spatial position loss and loss gradient.
-- [var scaleSpatialSizeLoss: Float](mlcyololossdescriptor/scalespatialsizeloss.md)
+- [var scaleSpatialSizeLoss: Float](./scalespatialsizeloss.md)
   The scale factor you use for spatial size loss and loss gradient.
-- [var shouldRescore: Bool](mlcyololossdescriptor/shouldrescore.md)
+- [var shouldRescore: Bool](./shouldrescore.md)
   A Boolean that indicates whether the layer scales the object confidence loss by the intersection over union (IOU) overlap.
 
 

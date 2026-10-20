@@ -1,7 +1,8 @@
 # activityType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout session’s activity type.
 
@@ -19,21 +20,26 @@ The workout session’s activity type.
 var activityType: HKWorkoutActivityType { get set }
 ```
 
+```objc
+@property (assign) HKWorkoutActivityType activityType;
+```
+
 #### Discussion
 
-For a list of possible values, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
+For a list of possible values, see [`HKWorkoutActivityType`](../hkworkoutactivitytype.md).
 
 ## See Also
 
-- [var locationType: HKWorkoutSessionLocationType](hkworkoutconfiguration/locationtype.md)
+### Session settings
+- [var locationType: HKWorkoutSessionLocationType](./locationtype.md)
   The workout session’s location.
-- [enum HKWorkoutSessionLocationType](hkworkoutsessionlocationtype.md)
+- [enum HKWorkoutSessionLocationType](../hkworkoutsessionlocationtype.md)
   A constant indicating whether the workout session takes place indoors or outdoors.
-- [var swimmingLocationType: HKWorkoutSwimmingLocationType](hkworkoutconfiguration/swimminglocationtype.md)
+- [var swimmingLocationType: HKWorkoutSwimmingLocationType](./swimminglocationtype.md)
   The workout session’s swimming location.
-- [enum HKWorkoutSwimmingLocationType](hkworkoutswimminglocationtype.md)
+- [enum HKWorkoutSwimmingLocationType](../hkworkoutswimminglocationtype.md)
   The possible locations for swimming.
-- [var lapLength: HKQuantity?](hkworkoutconfiguration/laplength.md)
+- [var lapLength: HKQuantity?](./laplength.md)
   The length of the lap for a workout session.
 
 

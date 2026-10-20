@@ -1,7 +1,8 @@
 # maxCenterCoordinateDistance
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum distance of the camera to the center of the map, measured in meters.
 
@@ -19,9 +20,14 @@ The maximum distance of the camera to the center of the map, measured in meters.
 var maxCenterCoordinateDistance: CLLocationDistance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationDistance maxCenterCoordinateDistance;
+```
+
 ## See Also
 
-- [var minCenterCoordinateDistance: CLLocationDistance](mkmapview/camerazoomrange-swift.class/mincentercoordinatedistance.md)
+### Accessing zoom range values
+- [var minCenterCoordinateDistance: CLLocationDistance](./mincentercoordinatedistance.md)
   The minimum distance of the camera to the center of the map, measured in meters.
 
 

@@ -1,7 +1,8 @@
 # init(withResolvers:mappingTransform:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Declares support for the `hasPrefix` operator between a `String` property and user-supplied values.
 
@@ -11,7 +12,7 @@ Declares support for the `hasPrefix` operator between a `String` property and us
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,11 +28,12 @@ init<Spec>(@ResolverSpecificationBuilder<String.UnwrappedType> withResolvers res
 
 ## See Also
 
-- [init(mappingTransform: (InputType) -> ComparatorMappingType)](hasprefixcomparator/init(mappingtransform:)-4i1bf.md)
+### Creating a comparator
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](./init%28mappingtransform%29-4i1bf.md)
   Declares support for the `hasPrefix` operator between a `String` property and user-supplied values.
-- [init(mappingTransform: (InputType) -> ComparatorMappingType)](hasprefixcomparator/init(mappingtransform:)-5kri6.md)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](./init%28mappingtransform%29-5kri6.md)
   Declares support for the `hasPrefix` operator between a `String` property and user-supplied values.
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](hasprefixcomparator/init(withresolvers:mappingtransform:)-48o75.md)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](./init%28withresolvers,mappingtransform%29-48o75.md)
   Declares support for the `hasPrefix` operator between a `String` property and user-supplied values.
 
 

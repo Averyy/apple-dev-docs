@@ -1,7 +1,8 @@
 # filter(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements of `self` that satisfy `isIncluded`.
 

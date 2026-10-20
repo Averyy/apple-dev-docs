@@ -1,12 +1,13 @@
 # setFrameSize(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the size of the view’s frame rectangle to the specified dimensions, resizing it within its superview without affecting its coordinate system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Sets the size of the view’s frame rectangle to the specified dimensions, resiz
 func setFrameSize(_ newSize: NSSize)
 ```
 
+```objc
+- (void) setFrameSize:(NSSize) newSize;
+```
+
 #### Discussion
 
-Changing the frame does not mark the view as needing to be displayed. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the view to be redisplayed.
+Changing the frame does not mark the view as needing to be displayed. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 
-Changing the frame size results in the posting of an [`frameDidChangeNotification`](nsview/framedidchangenotification.md) to the default notification center if the view is configured to do so.
+Changing the frame size results in the posting of an [`frameDidChangeNotification`](./framedidchangenotification.md) to the default notification center if the view is configured to do so.
 
 In macOS 10.4 and later, you can override this method to support content preservation during live resizing. In your overridden implementation, include some conditional code to be executed only during a live resize operation. Your code must invalidate any portions of your view that need to be redrawn.
 
@@ -28,16 +33,17 @@ In macOS 10.4 and later, you can override this method to support content preserv
 
 ## See Also
 
-- [var frame: NSRect](nsview/frame.md)
+### Modifying the Frame Rectangle
+- [var frame: NSRect](./frame.md)
   The view’s frame rectangle, which defines its position and size in its superview’s coordinate system.
-- [func setFrameOrigin(NSPoint)](nsview/setframeorigin(_:).md)
+- [func setFrameOrigin(NSPoint)](./setframeorigin%28_%29.md)
   Sets the origin of the view’s frame rectangle to the specified point, effectively repositioning it within its superview.
-- [var frameRotation: CGFloat](nsview/framerotation.md)
+- [var frameRotation: CGFloat](./framerotation.md)
   The angle of rotation, measured in degrees, applied to the view’s frame rectangle relative to its superview’s coordinate system.
-- [class let frameDidChangeNotification: NSNotification.Name](nsview/framedidchangenotification.md)
+- [class let frameDidChangeNotification: NSNotification.Name](./framedidchangenotification.md)
   A notification that posts when the view’s frame rectangle changes to a new value.
-- [NSView.FrameDidChangeMessage](nsview/framedidchangemessage.md)
-- [var postsFrameChangedNotifications: Bool](nsview/postsframechangednotifications.md)
+- [NSView.FrameDidChangeMessage](./framedidchangemessage.md)
+- [var postsFrameChangedNotifications: Bool](./postsframechangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its frame rectangle changes.
 
 

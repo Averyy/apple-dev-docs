@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.switzerlandGerman
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Swiss/German in the HID specification.
 

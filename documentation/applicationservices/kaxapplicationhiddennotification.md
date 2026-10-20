@@ -1,7 +1,8 @@
 # kAXApplicationHiddenNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The application was hidden.
 
@@ -12,6 +13,10 @@ The application was hidden.
 
 ```swift
 var kAXApplicationHiddenNotification: String { get }
+```
+
+```c
+#define kAXApplicationHiddenNotification
 ```
 
 

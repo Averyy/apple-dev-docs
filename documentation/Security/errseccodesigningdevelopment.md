@@ -1,7 +1,8 @@
 # errSecCodeSigningDevelopment
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code signing indicated use of a development-only certificate.
 
@@ -18,6 +19,10 @@ Code signing indicated use of a development-only certificate.
 
 ```swift
 var errSecCodeSigningDevelopment: OSStatus { get }
+```
+
+```c
+errSecCodeSigningDevelopment
 ```
 
 

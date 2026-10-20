@@ -1,7 +1,8 @@
 # CLBackgroundActivitySession.Diagnostic
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -19,12 +20,12 @@ struct Diagnostic
 ## Topics
 
 ### Instance Properties
-- [var authorizationDenied: Bool](clbackgroundactivitysession-3mzv3/diagnostic/authorizationdenied.md)
-- [var authorizationDeniedGlobally: Bool](clbackgroundactivitysession-3mzv3/diagnostic/authorizationdeniedglobally.md)
-- [var authorizationRequestInProgress: Bool](clbackgroundactivitysession-3mzv3/diagnostic/authorizationrequestinprogress.md)
-- [var authorizationRestricted: Bool](clbackgroundactivitysession-3mzv3/diagnostic/authorizationrestricted.md)
-- [var insufficientlyInUse: Bool](clbackgroundactivitysession-3mzv3/diagnostic/insufficientlyinuse.md)
-- [var serviceSessionRequired: Bool](clbackgroundactivitysession-3mzv3/diagnostic/servicesessionrequired.md)
+- [var authorizationDenied: Bool](./diagnostic/authorizationdenied.md)
+- [var authorizationDeniedGlobally: Bool](./diagnostic/authorizationdeniedglobally.md)
+- [var authorizationRequestInProgress: Bool](./diagnostic/authorizationrequestinprogress.md)
+- [var authorizationRestricted: Bool](./diagnostic/authorizationrestricted.md)
+- [var insufficientlyInUse: Bool](./diagnostic/insufficientlyinuse.md)
+- [var serviceSessionRequired: Bool](./diagnostic/servicesessionrequired.md)
 
 
 ---

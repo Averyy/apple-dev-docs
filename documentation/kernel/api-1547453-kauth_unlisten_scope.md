@@ -1,14 +1,15 @@
 # kauth_unlisten_scope
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 void kauth_unlisten_scope(kauth_listener_t _scope);
 ```
 

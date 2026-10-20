@@ -1,13 +1,14 @@
 # DevicesResponse
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains a list of Devices resources.
 
 ## Declaration
 
-```swift
+```
 object DevicesResponse
 ```
 
@@ -19,14 +20,15 @@ object DevicesResponse
 
 ## See Also
 
-- [object Device](device.md)
+### Objects
+- [object Device](./device.md)
   The data structure that represents a Devices resource.
-- [object DevicesWithoutIncludesResponse](deviceswithoutincludesresponse.md)
-- [object DeviceCreateRequest](devicecreaterequest.md)
+- [object DevicesWithoutIncludesResponse](./deviceswithoutincludesresponse.md)
+- [object DeviceCreateRequest](./devicecreaterequest.md)
   The request body you use to create a Device.
-- [object DeviceUpdateRequest](deviceupdaterequest.md)
+- [object DeviceUpdateRequest](./deviceupdaterequest.md)
   The request body you use to update a Device.
-- [object DeviceResponse](deviceresponse.md)
+- [object DeviceResponse](./deviceresponse.md)
   A response that contains a single Devices resource.
 
 

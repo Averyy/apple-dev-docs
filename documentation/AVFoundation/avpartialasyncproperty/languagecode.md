@@ -1,7 +1,8 @@
 # languageCode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The language code of the track.
 
@@ -20,15 +21,18 @@ The language code of the track.
 static var languageCode: AVAsyncProperty<Root, String?> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 The value is an ISO 639-2/T language code, or `nil` if the track doesn’t specify a language code.
 
 ## See Also
 
-- [static var extendedLanguageTag: AVAsyncProperty<Root, String?>](avpartialasyncproperty/extendedlanguagetag.md)
+### Loading language support
+- [static var extendedLanguageTag: AVAsyncProperty<Root, String?>](./extendedlanguagetag.md)
   The language tag of the track.
 
 

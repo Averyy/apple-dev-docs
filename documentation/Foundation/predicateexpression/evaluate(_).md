@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -21,7 +22,8 @@ func evaluate(_ bindings: PredicateBindings) throws -> Self.Output
 
 ## See Also
 
-- [associatedtype Output](predicateexpression/output.md)
+### Evaluating a predicate expression
+- [associatedtype Output](./output.md)
 
 
 ---

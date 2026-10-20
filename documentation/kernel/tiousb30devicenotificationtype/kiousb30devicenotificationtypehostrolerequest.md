@@ -1,7 +1,8 @@
 # kIOUSB30DeviceNotificationTypeHostRoleRequest
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The host role request.
 
@@ -10,7 +11,7 @@ The host role request.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30DeviceNotificationTypeHostRoleRequest = 4
 ```
 

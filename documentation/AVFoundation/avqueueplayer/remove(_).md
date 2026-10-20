@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a given player item from the queue.
 
@@ -21,9 +22,13 @@ nonisolated
 func remove(_ item: AVPlayerItem)
 ```
 
+```objc
+- (void) removeItem:(AVPlayerItem *) item;
+```
+
 #### Discussion
 
-If the item is currently playing, calling this method has the same effect as calling the [`advanceToNextItem()`](avqueueplayer/advancetonextitem().md) method.
+If the item is currently playing, calling this method has the same effect as calling the [`advanceToNextItem()`](./advancetonextitem%28%29.md) method.
 
 ## Parameters
 
@@ -31,15 +36,16 @@ If the item is currently playing, calling this method has the same effect as cal
 
 ## See Also
 
-- [func items() -> [AVPlayerItem]](avqueueplayer/items.md)
+### Managing the player queue
+- [func items() -> [AVPlayerItem]](./items%28%29.md)
   Returns an array of the currently enqueued items.
-- [func advanceToNextItem()](avqueueplayer/advancetonextitem.md)
+- [func advanceToNextItem()](./advancetonextitem%28%29.md)
   Ends playback of the current item and starts playback of the next item in the player’s queue.
-- [func canInsert(AVPlayerItem, after: AVPlayerItem?) -> Bool](avqueueplayer/caninsert(_:after:).md)
+- [func canInsert(AVPlayerItem, after: AVPlayerItem?) -> Bool](./caninsert%28_,after%29.md)
   Returns a Boolean value that indicates whether you can insert a player item into the player’s queue.
-- [func insert(AVPlayerItem, after: AVPlayerItem?)](avqueueplayer/insert(_:after:).md)
+- [func insert(AVPlayerItem, after: AVPlayerItem?)](./insert%28_,after%29.md)
   Inserts a player item after another player item in the queue.
-- [func removeAllItems()](avqueueplayer/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all player items from the queue.
 
 

@@ -1,7 +1,8 @@
 # item(at:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the item at the specified index.
 
@@ -16,9 +17,13 @@ Returns the item at the specified index.
 func item(at index: Int) -> any CPListTemplateItem
 ```
 
+```objc
+- (id<CPListTemplateItem>) itemAtIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
-The index must be within the bounds of the [`items`](cplistsection/items.md) array, otherwise, your app throws an exception.
+The index must be within the bounds of the [`items`](./items.md) array, otherwise, your app throws an exception.
 
 ## Parameters
 
@@ -26,9 +31,10 @@ The index must be within the bounds of the [`items`](cplistsection/items.md) arr
 
 ## See Also
 
-- [var items: [any CPListTemplateItem]](cplistsection/items.md)
+### Getting Items
+- [var items: [any CPListTemplateItem]](./items.md)
   The list of items for the section.
-- [func index(of: any CPListTemplateItem) -> Int](cplistsection/index(of:).md)
+- [func index(of: any CPListTemplateItem) -> Int](./index%28of%29.md)
   Returns the index of the specified item.
 
 

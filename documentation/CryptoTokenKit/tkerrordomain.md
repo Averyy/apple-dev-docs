@@ -1,7 +1,8 @@
 # TKErrorDomain
 
 **Framework**: CryptoTokenKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for all CryptoTokenKit framework errors.
 
@@ -20,11 +21,16 @@ The domain for all CryptoTokenKit framework errors.
 let TKErrorDomain: String
 ```
 
+```c
+extern NSString * const TKErrorDomain;
+```
+
 ## See Also
 
-- [struct TKError](tkerror.md)
+### Errors
+- [struct TKError](./tkerror.md)
   An error specific to the CryptoTokenKit framework.
-- [TKError.Code](tkerror/code.md)
+- [TKError.Code](./tkerror/code.md)
   Error codes from CryptoTokenKit.
 
 

@@ -1,7 +1,8 @@
 # CIFeature
 
 **Framework**: Core Image  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for objects representing notable features detected in an image.
 
@@ -10,7 +11,7 @@ The abstract superclass for objects representing notable features detected in an
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,57 +20,62 @@ The abstract superclass for objects representing notable features detected in an
 class CIFeature
 ```
 
+```objc
+@interface CIFeature : NSObject
+```
+
 #### Overview
 
-> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the Vision framework replaces these classes for identifying and analyzing image features. See [`VNObservation`](https://developer.apple.com/documentation/vision/vnobservation))
+> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the Vision framework replaces these classes for identifying and analyzing image features. See [`VNObservation`](../Vision/vnobservation.md))
 
 A `CIFeature` object represents a portion of an image that a detector believes matches its criteria. Subclasses of CIFeature holds additional information specific to the detector that discovered the feature.
 
 ## Topics
 
 ### Feature Properties
-- [var bounds: CGRect](cifeature/bounds.md)
+- [var bounds: CGRect](./cifeature/bounds.md)
   The rectangle that holds discovered feature.
-- [var type: String](cifeature/type.md)
+- [var type: String](./cifeature/type.md)
   The type of feature that was discovered.
 ### Feature Types
-- [let CIFeatureTypeFace: String](cifeaturetypeface.md)
+- [let CIFeatureTypeFace: String](./cifeaturetypeface.md)
   A Core Image feature type for person’s face.
-- [let CIFeatureTypeRectangle: String](cifeaturetyperectangle.md)
+- [let CIFeatureTypeRectangle: String](./cifeaturetyperectangle.md)
   A Core Image feature type for rectangular object.
-- [let CIFeatureTypeQRCode: String](cifeaturetypeqrcode.md)
+- [let CIFeatureTypeQRCode: String](./cifeaturetypeqrcode.md)
   A Core Image feature type for QR code object.
-- [let CIFeatureTypeText: String](cifeaturetypetext.md)
+- [let CIFeatureTypeText: String](./cifeaturetypetext.md)
   A Core Image feature type for text.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CIFaceFeature](cifacefeature.md)
-- [CIQRCodeFeature](ciqrcodefeature.md)
-- [CIRectangleFeature](cirectanglefeature.md)
-- [CITextFeature](citextfeature.md)
+- [CIFaceFeature](./cifacefeature.md)
+- [CIQRCodeFeature](./ciqrcodefeature.md)
+- [CIRectangleFeature](./cirectanglefeature.md)
+- [CITextFeature](./citextfeature.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CIDetector](cidetector.md)
+### Image Feature Detection
+- [class CIDetector](./cidetector.md)
   An image processor that identifies notable features, such as faces and barcodes, in a still image or video.
-- [class CIFaceFeature](cifacefeature.md)
+- [class CIFaceFeature](./cifacefeature.md)
   Information about a face detected in a still or video image.
-- [class CIRectangleFeature](cirectanglefeature.md)
+- [class CIRectangleFeature](./cirectanglefeature.md)
   Information about a rectangular region detected in a still or video image.
-- [class CITextFeature](citextfeature.md)
+- [class CITextFeature](./citextfeature.md)
   Information about a text that was detected in a still or video image.
-- [class CIQRCodeFeature](ciqrcodefeature.md)
+- [class CIQRCodeFeature](./ciqrcodefeature.md)
   Information about a Quick Response code detected in a still or video image.
 
 

@@ -1,7 +1,8 @@
 # first
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first gesture in a sequence of two gestures.
 
@@ -22,9 +23,10 @@ var first: First
 
 ## See Also
 
-- [init(First, Second)](sequencegesture/init(_:_:).md)
+### Creating the gesture
+- [init(First, Second)](./init%28_,_%29.md)
   Creates a sequence gesture with two gestures.
-- [var second: Second](sequencegesture/second.md)
+- [var second: Second](./second.md)
   The second gesture in a sequence of two gestures.
 
 

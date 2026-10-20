@@ -1,7 +1,8 @@
 # VZNetworkDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The common configuration traits for network devices.
 
@@ -14,38 +15,43 @@ The common configuration traits for network devices.
 class VZNetworkDeviceConfiguration
 ```
 
+```objc
+@interface VZNetworkDeviceConfiguration : NSObject
+```
+
 #### Overview
 
-Don’t instantiate the [`VZNetworkDeviceConfiguration`](vznetworkdeviceconfiguration.md) class directly. Instead, instantiate one of its subclasses, such as [`VZVirtioNetworkDeviceConfiguration`](vzvirtionetworkdeviceconfiguration.md). Then use the properties of this class to configure the network device.
+Don’t instantiate the [`VZNetworkDeviceConfiguration`](./vznetworkdeviceconfiguration.md) class directly. Instead, instantiate one of its subclasses, such as [`VZVirtioNetworkDeviceConfiguration`](./vzvirtionetworkdeviceconfiguration.md). Then use the properties of this class to configure the network device.
 
 ## Topics
 
 ### Setting configuration attributes
-- [var attachment: VZNetworkDeviceAttachment?](vznetworkdeviceconfiguration/attachment.md)
+- [var attachment: VZNetworkDeviceAttachment?](./vznetworkdeviceconfiguration/attachment.md)
   The object that defines how the virtual network device communicates with the host system.
-- [var macAddress: VZMACAddress](vznetworkdeviceconfiguration/macaddress.md)
+- [var macAddress: VZMACAddress](./vznetworkdeviceconfiguration/macaddress.md)
   The media access control (MAC) address to assign to the network device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZVirtioNetworkDeviceConfiguration](vzvirtionetworkdeviceconfiguration.md)
+- [VZVirtioNetworkDeviceConfiguration](./vzvirtionetworkdeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioNetworkDeviceConfiguration](vzvirtionetworkdeviceconfiguration.md)
+### Configurations
+- [class VZVirtioNetworkDeviceConfiguration](./vzvirtionetworkdeviceconfiguration.md)
   A configuration object that requests the creation of a network device for the guest system.
-- [class VZMACAddress](vzmacaddress.md)
+- [class VZMACAddress](./vzmacaddress.md)
   The media access control (MAC) address for a network interface in your virtual machine.
 
 

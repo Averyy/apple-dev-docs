@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The drop session for the text view.
@@ -16,6 +17,10 @@ The drop session for the text view.
 
 ```swift
 var dropSession: any UIDropSession { get }
+```
+
+```objc
+@property (nonatomic, readonly) id<UIDropSession> dropSession;
 ```
 
 

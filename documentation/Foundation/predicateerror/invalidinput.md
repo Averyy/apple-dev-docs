@@ -1,7 +1,8 @@
 # invalidInput
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -20,9 +21,10 @@ static let invalidInput: PredicateError
 
 ## See Also
 
-- [static let forceCastFailure: PredicateError](predicateerror/forcecastfailure.md)
-- [static let forceUnwrapFailure: PredicateError](predicateerror/forceunwrapfailure.md)
-- [static let undefinedVariable: PredicateError](predicateerror/undefinedvariable.md)
+### Errors
+- [static let forceCastFailure: PredicateError](./forcecastfailure.md)
+- [static let forceUnwrapFailure: PredicateError](./forceunwrapfailure.md)
+- [static let undefinedVariable: PredicateError](./undefinedvariable.md)
 
 
 ---

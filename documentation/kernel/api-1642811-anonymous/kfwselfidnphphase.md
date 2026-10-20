@@ -1,14 +1,15 @@
 # kFWSelfIDNPhPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFWSelfIDNPhPhase = FWBitRangePhase (28, 29)
 ```
 

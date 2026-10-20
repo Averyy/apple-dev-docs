@@ -1,14 +1,15 @@
 # kIOPCIStatusMasterAbortActive
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 12.4
 
 ## Declaration
 
-```swift
+```c
 kIOPCIStatusMasterAbortActive = kIOPCIStatusLeadAbortActive
 ```
 

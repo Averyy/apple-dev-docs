@@ -1,18 +1,19 @@
 # Issue.Kind.valueAttachmentFailed(_:)
 
 **Framework**: Swift Testing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An issue due to an `Error` being thrown while attempting to save an attachment to a test report or to disk.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 

@@ -1,7 +1,8 @@
 # Castle
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for castles.
 
@@ -10,7 +11,7 @@ The point-of-interest category for castles.
 
 ## Declaration
 
-```swift
+```
 readonly Castle: "Castle";
 ```
 

@@ -1,7 +1,8 @@
 # presentsCalendarOverlay
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to present a graphical calendar overlay when editing a calendar element within a text-field style date picker.
 
@@ -14,31 +15,36 @@ A Boolean value that indicates whether to present a graphical calendar overlay w
 var presentsCalendarOverlay: Bool { get set }
 ```
 
+```objc
+@property BOOL presentsCalendarOverlay;
+```
+
 #### Discussion
 
 The default value is `NO`. The overlay only appears for text-style date pickers when you select a calendar element. The overlay doesn’t appear when there are no calendar events or the value of this property is `YES`.
 
 ## See Also
 
-- [var isBezeled: Bool](nsdatepicker/isbezeled.md)
+### Configuring Date Pickers
+- [var isBezeled: Bool](./isbezeled.md)
   A Boolean value that indicates whether the date picker draws a bezeled border.
-- [var isBordered: Bool](nsdatepicker/isbordered.md)
+- [var isBordered: Bool](./isbordered.md)
   A Boolean value that indicates whether the date picker has a plain border.
-- [var backgroundColor: NSColor](nsdatepicker/backgroundcolor.md)
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The date picker’s background color.
-- [var drawsBackground: Bool](nsdatepicker/drawsbackground.md)
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean value that indicates whether the date picker draws the background.
-- [var textColor: NSColor](nsdatepicker/textcolor.md)
+- [var textColor: NSColor](./textcolor.md)
   The date picker’s text color.
-- [var datePickerStyle: NSDatePicker.Style](nsdatepicker/datepickerstyle.md)
+- [var datePickerStyle: NSDatePicker.Style](./datepickerstyle.md)
   The date picker’s style.
-- [var delegate: (any NSDatePickerCellDelegate)?](nsdatepicker/delegate.md)
+- [var delegate: (any NSDatePickerCellDelegate)?](./delegate.md)
   A delegate for the date picker’s cell
-- [var datePickerElements: NSDatePicker.ElementFlags](nsdatepicker/datepickerelements.md)
+- [var datePickerElements: NSDatePicker.ElementFlags](./datepickerelements.md)
   A bitmask that indicates which visual elements of the date picker are currently shown, and which won’t be usable because they are hidden.
-- [NSDatePicker.ElementFlags](nsdatepicker/elementflags.md)
+- [NSDatePicker.ElementFlags](./elementflags.md)
   Constants that specify the date and time elements displayed by the picker.
-- [NSDatePicker.Style](nsdatepicker/style.md)
+- [NSDatePicker.Style](./style.md)
   Constants that define the visual appearance of the date picker cell.
 
 

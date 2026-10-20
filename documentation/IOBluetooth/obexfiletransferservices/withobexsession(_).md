@@ -1,17 +1,22 @@
 # withOBEXSession(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a new OBEXFileTransferServices object
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withOBEXSession(_ inOBEXSession: IOBluetoothOBEXSession!) -> Self!
+```
+
+```objc
++ (instancetype) withOBEXSession:(IOBluetoothOBEXSession *) inOBEXSession;
 ```
 
 #### Return Value

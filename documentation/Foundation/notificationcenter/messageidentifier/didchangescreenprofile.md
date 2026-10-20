@@ -1,7 +1,8 @@
 # didChangeScreenProfile
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didChangeScreenProfile: NotificationCenter.BaseMessageIdentifier<NSWindow.DidChangeScreenProfileMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWindow.DidChangeScreenProfileMessage>`.
 
 
 ---

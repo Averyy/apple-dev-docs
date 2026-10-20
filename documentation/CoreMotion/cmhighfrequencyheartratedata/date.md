@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the heart rate value occurs.
 
@@ -15,6 +16,10 @@ The time the heart rate value occurs.
 
 ```swift
 var date: Date? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSDate * date;
 ```
 
 

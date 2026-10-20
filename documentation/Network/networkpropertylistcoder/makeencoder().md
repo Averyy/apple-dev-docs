@@ -1,7 +1,8 @@
 # makeEncoder()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Make a PropertyListEncoder that can be used to encode an Encodable type.
 

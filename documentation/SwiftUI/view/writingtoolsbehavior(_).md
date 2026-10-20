@@ -1,7 +1,8 @@
 # writingToolsBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the Writing Tools behavior for text and text input in the environment.
 
@@ -25,7 +26,7 @@ A view preferring the specified Writing Tools behavior.
 
 #### Discussion
 
-Use this view modifier to customize or disable the Writing Tools editing experience for [`Text`](text.md) (when selectable), [`TextField`](textfield.md), and [`TextEditor`](texteditor.md) views.
+Use this view modifier to customize or disable the Writing Tools editing experience for [`Text`](../text.md) (when selectable), [`TextField`](../textfield.md), and [`TextEditor`](../texteditor.md) views.
 
 ## Parameters
 
@@ -33,9 +34,10 @@ Use this view modifier to customize or disable the Writing Tools editing experie
 
 ## See Also
 
-- [struct WritingToolsBehavior](writingtoolsbehavior.md)
+### Configuring the Writing Tools behavior
+- [struct WritingToolsBehavior](../writingtoolsbehavior.md)
   The Writing Tools editing experience for text and text input.
-- [func writingToolsAffordanceVisibility(Visibility) -> some View](view/writingtoolsaffordancevisibility(_:).md)
+- [func writingToolsAffordanceVisibility(Visibility) -> some View](./writingtoolsaffordancevisibility%28_%29.md)
   Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 
 

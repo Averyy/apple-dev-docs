@@ -1,33 +1,37 @@
 # OSUpdateStatusResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
-- macOS 10.11.5+
-- tvOS 12.0+
+- iOS 9.0+ - Deprecated in 26.0
+- iPadOS 9.0+ - Deprecated in 26.0
+- Mac Catalyst 9.0+ - Deprecated in 26.0
+- macOS 10.11.5+ - Deprecated in 26.0
+- tvOS 12.0+ - Deprecated in 26.0
+
+> **Deprecated**: **Removed** Use the declarative management software update features instead.
 
 ## Declaration
 
-```swift
+```
 object OSUpdateStatusResponse.ErrorChainItem
 ```
 
 ## Properties
 
-- `ErrorCode` (integer) *(required)*: The error code.
-- `ErrorDomain` (string) *(required)*: The error domain.
-- `LocalizedDescription` (string) *(required)*: A description of the error in the device’s localized language.
-- `USEnglishDescription` (string): A description of the error in U.S. English.
+- `ErrorCode` (integer) *(required)* *(deprecated)*: The error code.
+- `ErrorDomain` (string) *(required)* *(deprecated)*: The error domain.
+- `LocalizedDescription` (string) *(required)* *(deprecated)*: A description of the error in the device’s localized language.
+- `USEnglishDescription` (string) *(deprecated)*: A description of the error in U.S. English.
 
 ## See Also
 
-- [object OSUpdateStatusResponse.OSUpdateStatusItem](osupdatestatusresponse/osupdatestatusitem.md)
+### Objects
+- [object OSUpdateStatusResponse.OSUpdateStatusItem](./osupdatestatusitem.md)
   A dictionary that describes the status of a software update.
 
 

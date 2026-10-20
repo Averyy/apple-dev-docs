@@ -1,7 +1,8 @@
 # update(repeating:count:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update this pointer’s initialized memory with the specified number of consecutive copies of the given value.
 

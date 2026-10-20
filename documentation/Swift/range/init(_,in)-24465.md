@@ -1,7 +1,8 @@
 # init(_:in:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -17,6 +18,8 @@
 ```swift
 init?<S>(_ range: NSRange, in string: S) where S : AttributedStringProtocol
 ```
+
+Available when `Bound` is `AttributedString.Index`.
 
 
 ---

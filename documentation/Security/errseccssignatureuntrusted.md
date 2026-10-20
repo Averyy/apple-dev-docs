@@ -1,7 +1,8 @@
 # errSecCSSignatureUntrusted
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature is valid but signer isn’t trusted.
 
@@ -13,6 +14,10 @@ The signature is valid but signer isn’t trusted.
 
 ```swift
 var errSecCSSignatureUntrusted: OSStatus { get }
+```
+
+```c
+errSecCSSignatureUntrusted
 ```
 
 

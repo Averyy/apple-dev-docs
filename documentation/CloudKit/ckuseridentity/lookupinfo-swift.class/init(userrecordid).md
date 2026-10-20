@@ -1,7 +1,8 @@
 # init(userRecordID:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a lookup info for the specified user record ID.
 
@@ -20,9 +21,13 @@ Creates a lookup info for the specified user record ID.
 init(userRecordID: CKRecord.ID)
 ```
 
+```objc
+- (instancetype) initWithUserRecordID:(CKRecordID *) userRecordID;
+```
+
 #### Discussion
 
-After you create a lookup info, use the [`CKDiscoverUserIdentitiesOperation`](ckdiscoveruseridentitiesoperation.md) operation or the  [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) operation to retrieve the corresponding user identity.
+After you create a lookup info, use the [`CKDiscoverUserIdentitiesOperation`](../../ckdiscoveruseridentitiesoperation.md) operation or the  [`CKFetchShareParticipantsOperation`](../../ckfetchshareparticipantsoperation.md) operation to retrieve the corresponding user identity.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ After you create a lookup info, use the [`CKDiscoverUserIdentitiesOperation`](ck
 
 ## See Also
 
-- [init(emailAddress: String)](ckuseridentity/lookupinfo-swift.class/init(emailaddress:).md)
+### Creating a Lookup Info
+- [init(emailAddress: String)](./init%28emailaddress%29.md)
   Creates a lookup info for the specified email address.
-- [init(phoneNumber: String)](ckuseridentity/lookupinfo-swift.class/init(phonenumber:).md)
+- [init(phoneNumber: String)](./init%28phonenumber%29.md)
   Creates a lookup info for the specified phone number.
 
 

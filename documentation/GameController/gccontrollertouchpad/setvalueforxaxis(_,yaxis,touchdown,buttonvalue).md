@@ -1,7 +1,8 @@
 # setValueForXAxis(_:yAxis:touchDown:buttonValue:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the input values of a snapshot of a touchpad.
 
@@ -19,15 +20,19 @@ Sets the input values of a snapshot of a touchpad.
 func setValueForXAxis(_ xAxis: Float, yAxis: Float, touchDown: Bool, buttonValue: Float)
 ```
 
+```objc
+- (void) setValueForXAxis:(float) xAxis yAxis:(float) yAxis touchDown:(BOOL) touchDown buttonValue:(float) buttonValue;
+```
+
 #### Discussion
 
-This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](gccontroller/issnapshot.md) property is [`false`](https://developer.apple.com/documentation/swift/false)`)`.
+This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](../gccontroller/issnapshot.md) property is [`false`](../../Swift/false.md)`)`.
 
 ## Parameters
 
 - `xAxis`: A normalized value of the x-axis ranging from `-1` to `1`.
 - `yAxis`: A normalized value of the y-axis ranging from `-1` to `1`.
-- `touchDown`: A Boolean value that indicates whether the user starts touching the surface. If [`true`](https://developer.apple.com/documentation/swift/true), the user is touching the surface; otherwise, the user isn’t.
+- `touchDown`: A Boolean value that indicates whether the user starts touching the surface. If [`true`](../../Swift/true.md), the user is touching the surface; otherwise, the user isn’t.
 - `buttonValue`: A normalized number between `0.0` (minimum) and `1.0` (maximum) that represents the level of pressure the user applies to the button.
 
 

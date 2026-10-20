@@ -1,7 +1,8 @@
 # userCancelled
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates someone explicitly canceled the intent.
 

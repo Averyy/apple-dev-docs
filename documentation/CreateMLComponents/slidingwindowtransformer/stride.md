@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements between the start of two consecutive windows.
 
@@ -22,7 +23,8 @@ let stride: Int
 
 ## See Also
 
-- [let length: Int](slidingwindowtransformer/length.md)
+### Getting the properties
+- [let length: Int](./length.md)
   The length of a window.
 
 

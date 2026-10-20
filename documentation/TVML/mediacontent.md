@@ -8,39 +8,40 @@ Contains information used to play inline audio or video.
 
 Access the embedded player using `mediaContent.getFeature('Player');` in your TVMLKit JS file. Create the required media items and push them onto the playlist. Assign the new playlist to your inline player to begin playback.
 
-##### Subelements of Mediacontent
+##### Subelements of mediaContent
 
-- [`img`](img.md)
+- [img](./img.md)
 
-##### Elements That Use Mediacontent
+##### Elements that Use mediaContent
 
-- [`divTemplate`](divtemplate.md)
-- [`lockup`](lockup.md)
-- [`background`](background.md)
+- [divTemplate](./divtemplate.md)
+- [lockup](./lockup.md)
+- [background](./background.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [audioMode](audiomode.md)
+- [audioMode](./audiomode.md)
   Specifies how audio is played during inline playback.
-- [playbackMode](playbackmode.md)
+- [playbackMode](./playbackmode.md)
   Specifies when inline playback of a media item starts.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [asset](asset.md)
+### Multimedia Elements
+- [asset](./asset.md)
   Contains information about where a media item is stored.
-- [relatedContentURL](relatedcontenturl.md)
+- [relatedContentURL](./relatedcontenturl.md)
   Contains the URL for the displayed content.
-- [searchField](searchfield.md)
+- [searchField](./searchfield.md)
   Displays an interactive text field used to search for content.
-- [textField](textfield.md)
+- [textField](./textfield.md)
   Displays a text field the user can interact with.
 
 

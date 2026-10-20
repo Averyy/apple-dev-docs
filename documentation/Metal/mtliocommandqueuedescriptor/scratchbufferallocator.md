@@ -1,7 +1,8 @@
 # scratchBufferAllocator
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional memory allocator that you implement to manage the scratch memory that an input/output command queue requests.
 
@@ -19,9 +20,13 @@ An optional memory allocator that you implement to manage the scratch memory tha
 var scratchBufferAllocator: (any MTLIOScratchBufferAllocator)? { get set }
 ```
 
+```objc
+@property (retain, readwrite, nullable) id<MTLIOScratchBufferAllocator> scratchBufferAllocator;
+```
+
 #### Discussion
 
-Your app can manage an input/output command queue’s scratch memory by an implementing [`MTLIOScratchBufferAllocator`](mtlioscratchbufferallocator.md) in one of your types, and assigning an instance of it to [`scratchBufferAllocator`](mtliocommandqueuedescriptor/scratchbufferallocator.md). Otherwise, set to `nil` to instruct the input/output command queue to allocate and manage its own scratch buffers.
+Your app can manage an input/output command queue’s scratch memory by an implementing [`MTLIOScratchBufferAllocator`](../mtlioscratchbufferallocator.md) in one of your types, and assigning an instance of it to [`scratchBufferAllocator`](./scratchbufferallocator.md). Otherwise, set to `nil` to instruct the input/output command queue to allocate and manage its own scratch buffers.
 
 > **Note**:  An input/output command queue uses scratch buffers for memory-intensives tasks, including loading textures and decompressing asset files.
 

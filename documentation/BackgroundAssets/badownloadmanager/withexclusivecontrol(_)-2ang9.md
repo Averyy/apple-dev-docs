@@ -1,20 +1,27 @@
 # withExclusiveControl(_:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 18.4+
-- visionOS 2.4+
+- iOS 16.1+ - Deprecated in 27.0
+- iPadOS 16.1+ - Deprecated in 27.0
+- Mac Catalyst 16.1+ - Deprecated in 27.0
+- macOS 13.0+ - Deprecated in 27.0
+- tvOS 18.4+ - Deprecated in 27.0
+- visionOS 2.4+ - Deprecated in 27.0
+
+> **Deprecated**: Use the asynchronous overload of withExclusiveControl(_:) instead.
 
 ## Declaration
 
 ```swift
 func withExclusiveControl(_ performHandler: @escaping (Bool, (any Error)?) -> Void)
+```
+
+```objc
+- (void) performWithExclusiveControl:(void (^)(BOOL acquiredLock, NSError *error)) performHandler;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # description(withLocale:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string that represents the contents of the set, formatted as a property list.
 
@@ -20,13 +21,17 @@ Returns a string that represents the contents of the set, formatted as a propert
 func description(withLocale locale: Any?) -> String
 ```
 
+```objc
+- (NSString *) descriptionWithLocale:(id) locale;
+```
+
 #### Return Value
 
 A string that represents the contents of the set, formatted as a property list.
 
 #### Discussion
 
-This method sends each of the set’s members  `descriptionWithLocale:` with `locale` passed as the sole parameter. If the set’s members do not respond to `descriptionWithLocale:`, this method sends [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) instead.
+This method sends each of the set’s members  `descriptionWithLocale:` with `locale` passed as the sole parameter. If the set’s members do not respond to `descriptionWithLocale:`, this method sends [`description`](../../ObjectiveC/nsobjectprotocol/description.md) instead.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ This method sends each of the set’s members  `descriptionWithLocale:` with `lo
 
 ## See Also
 
-- [var description: String](nsset/description.md)
+### Describing a Set
+- [var description: String](./description.md)
   A string that represents the contents of the set, formatted as a property list.
 
 

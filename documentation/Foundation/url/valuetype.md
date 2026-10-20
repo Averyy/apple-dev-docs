@@ -1,7 +1,8 @@
 # URL.ValueType
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The value type for conforming with App Intents.
 
@@ -22,11 +23,12 @@ typealias ValueType = URL
 
 ## See Also
 
-- [static var defaultResolverSpecification: some ResolverSpecification](url/defaultresolverspecification.md)
+### App Intents support
+- [static var defaultResolverSpecification: some ResolverSpecification](./defaultresolverspecification.md)
   The default resolver specification that the App Intents framework uses.
-- [typealias Specification](url/specification.md)
+- [typealias Specification](./specification.md)
   The specification type for conforming with App Intents.
-- [typealias UnwrappedType](url/unwrappedtype.md)
+- [typealias UnwrappedType](./unwrappedtype.md)
   The core type for conforming with App Intents.
 
 

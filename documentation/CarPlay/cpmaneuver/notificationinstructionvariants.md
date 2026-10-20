@@ -1,7 +1,8 @@
 # notificationInstructionVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of instruction variants for notification banners.
 
@@ -16,15 +17,20 @@ An array of instruction variants for notification banners.
 var notificationInstructionVariants: [String] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * notificationInstructionVariants;
+```
+
 #### Discussion
 
 Localize each variant for display to the user, and make sure the array contains at least one variant. The system displays the first variant that fits into the available screen space, so arrange the variants in order from most- to least-preferred.
 
-> **Note**:  If you provide both [`notificationInstructionVariants`](cpmaneuver/notificationinstructionvariants.md) and [`notificationAttributedInstructionVariants`](cpmaneuver/notificationattributedinstructionvariants.md), the system displays instructions from the attributed instruction variants array. If you don’t provide notification variants, the system checks for [`attributedInstructionVariants`](cpmaneuver/attributedinstructionvariants.md), and then [`instructionVariants`](cpmaneuver/instructionvariants.md).
+> **Note**:  If you provide both [`notificationInstructionVariants`](./notificationinstructionvariants.md) and [`notificationAttributedInstructionVariants`](./notificationattributedinstructionvariants.md), the system displays instructions from the attributed instruction variants array. If you don’t provide notification variants, the system checks for [`attributedInstructionVariants`](./attributedinstructionvariants.md), and then [`instructionVariants`](./instructionvariants.md).
 
 ## See Also
 
-- [var dashboardInstructionVariants: [String]](cpmaneuver/dashboardinstructionvariants.md)
+### Providing instructions
+- [var dashboardInstructionVariants: [String]](./dashboardinstructionvariants.md)
   An array of instruction variants for the CarPlay dashboard.
 
 

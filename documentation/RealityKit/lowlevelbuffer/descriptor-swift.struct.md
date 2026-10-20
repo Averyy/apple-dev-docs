@@ -1,7 +1,8 @@
 # LowLevelBuffer.Descriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -20,18 +21,18 @@ struct Descriptor
 ## Topics
 
 ### Initializers
-- [init(capacity: Int, sizeMultiple: Int)](lowlevelbuffer/descriptor-swift.struct/init(capacity:sizemultiple:).md)
+- [init(capacity: Int, sizeMultiple: Int)](./descriptor-swift.struct/init%28capacity,sizemultiple%29.md)
 ### Instance Properties
-- [var capacity: Int](lowlevelbuffer/descriptor-swift.struct/capacity.md)
+- [var capacity: Int](./descriptor-swift.struct/capacity.md)
   Length of the buffer in bytes.
-- [var sizeMultiple: Int](lowlevelbuffer/descriptor-swift.struct/sizemultiple.md)
+- [var sizeMultiple: Int](./descriptor-swift.struct/sizemultiple.md)
   For variable length buffers, bytesUsed needs to be a multiple of this value.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

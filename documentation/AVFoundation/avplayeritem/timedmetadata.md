@@ -1,16 +1,19 @@
 # timedMetadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the most recently encountered timed metadata.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
+- iOS 4.0+ - Deprecated in 13.0
+- iPadOS 4.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.7+ - Deprecated in 10.15
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: Use [`AVPlayerItemMetadataOutput`](../avplayeritemmetadataoutput.md) to access timed metadata.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ An array of the most recently encountered timed metadata.
 var timedMetadata: [AVMetadataItem]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<AVMetadataItem *> * timedMetadata;
+```
+
 #### Return Value
 
-An array of [`AVMetadataItem`](avmetadataitem.md) or `nil` if no metadata was found.
+An array of [`AVMetadataItem`](../avmetadataitem.md) or `nil` if no metadata was found.
 
 #### Discussion
 

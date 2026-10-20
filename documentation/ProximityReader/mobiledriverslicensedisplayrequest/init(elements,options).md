@@ -1,7 +1,8 @@
 # init(elements:options:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new mobile driver’s license display request.
 
@@ -18,9 +19,10 @@ init(elements: [MobileDriversLicenseDisplayRequest.Element] = [], options: Mobil
 
 ## See Also
 
-- [var elements: [MobileDriversLicenseDisplayRequest.Element]](mobiledriverslicensedisplayrequest/elements.md)
+### Creating a display request
+- [var elements: [MobileDriversLicenseDisplayRequest.Element]](./elements.md)
   The document elements you’re requesting.
-- [MobileDriversLicenseDisplayRequest.Element](mobiledriverslicensedisplayrequest/element.md)
+- [MobileDriversLicenseDisplayRequest.Element](./element.md)
   A type that represents an element you can request from a mobile driver’s license.
 
 

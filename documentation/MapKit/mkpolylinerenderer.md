@@ -1,7 +1,8 @@
 # MKPolylineRenderer
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A visual representation of any polyline overlay object.
 
@@ -19,6 +20,10 @@ A visual representation of any polyline overlay object.
 class MKPolylineRenderer
 ```
 
+```objc
+@interface MKPolylineRenderer : MKOverlayPathRenderer
+```
+
 #### Overview
 
 This renderer strokes the line only; it doesn’t fill it. You can change the color and other drawing attributes of the polyline by modifying the properties it inherits from the main class. You typically use this class as-is and don’t subclass it.
@@ -26,42 +31,43 @@ This renderer strokes the line only; it doesn’t fill it. You can change the co
 ## Topics
 
 ### Creating a polyline renderer
-- [init(polyline: MKPolyline)](mkpolylinerenderer/init(polyline:).md)
+- [init(polyline: MKPolyline)](./mkpolylinerenderer/init%28polyline%29.md)
   Creates a new overlay view using the specified polyline overlay object.
 ### Accessing the polyline overlay
-- [var polyline: MKPolyline](mkpolylinerenderer/polyline.md)
+- [var polyline: MKPolyline](./mkpolylinerenderer/polyline.md)
   The polyline overlay object that contains the information for drawing the overlay.
 ### Accessing the stroke
-- [var strokeStart: CGFloat](mkpolylinerenderer/strokestart.md)
+- [var strokeStart: CGFloat](./mkpolylinerenderer/strokestart.md)
   The unit distance along the line where the stroke starts.
-- [var strokeEnd: CGFloat](mkpolylinerenderer/strokeend.md)
+- [var strokeEnd: CGFloat](./mkpolylinerenderer/strokeend.md)
   The unit distance along the line where the stroke ends.
 
 ## Relationships
 
 ### Inherits From
-- [MKOverlayPathRenderer](mkoverlaypathrenderer.md)
+- [MKOverlayPathRenderer](./mkoverlaypathrenderer.md)
 ### Inherited By
-- [MKGradientPolylineRenderer](mkgradientpolylinerenderer.md)
+- [MKGradientPolylineRenderer](./mkgradientpolylinerenderer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKPolyline](mkpolyline.md)
+### Multiple segment lines
+- [class MKPolyline](./mkpolyline.md)
   An open polygon overlay consisting of one or more connected line segments.
-- [class MKGeodesicPolyline](mkgeodesicpolyline.md)
+- [class MKGeodesicPolyline](./mkgeodesicpolyline.md)
   An open polygon overlay consisting of line segments that follow the contours of the Earth to create the shortest path between the specified points.
-- [class MKMultiPolyline](mkmultipolyline.md)
+- [class MKMultiPolyline](./mkmultipolyline.md)
   A collection of multipolyline shapes, each consisting of one or more connected line segments.
-- [class MKMultiPolylineRenderer](mkmultipolylinerenderer.md)
+- [class MKMultiPolylineRenderer](./mkmultipolylinerenderer.md)
   A visual representation of multiple polyline overlay objects.
-- [class MKGradientPolylineRenderer](mkgradientpolylinerenderer.md)
+- [class MKGradientPolylineRenderer](./mkgradientpolylinerenderer.md)
   A visual representation of any polyline overlay object with a gradient.
 
 

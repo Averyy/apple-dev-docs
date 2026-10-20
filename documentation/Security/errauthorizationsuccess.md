@@ -1,7 +1,8 @@
 # errAuthorizationSuccess
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operation completed successfully.
 
@@ -15,9 +16,13 @@ The operation completed successfully.
 var errAuthorizationSuccess: OSStatus { get }
 ```
 
+```c
+errAuthorizationSuccess
+```
+
 #### Discussion
 
-This result code is an alias for [`errSecSuccess`](errsecsuccess.md).
+This result code is an alias for [`errSecSuccess`](./errsecsuccess.md).
 
 
 ---

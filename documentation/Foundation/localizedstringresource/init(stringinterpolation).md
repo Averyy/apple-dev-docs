@@ -1,7 +1,8 @@
 # init(stringInterpolation:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a localized string resource from the given string interpolation.
 
@@ -32,7 +33,8 @@ This initializer uses the default values from `LocalizedStringResource/init(_:ta
 
 ## See Also
 
-- [init(stringLiteral: String)](localizedstringresource/init(stringliteral:).md)
+### Creating a localized string resource from literal values
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates a localized string resource from the specified string literal.
 
 

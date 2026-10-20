@@ -1,7 +1,8 @@
 # training
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that makes the RNN layer support training.
 
@@ -17,6 +18,10 @@ A parameter that makes the RNN layer support training.
 
 ```swift
 var training: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL training;
 ```
 
 #### Discussion

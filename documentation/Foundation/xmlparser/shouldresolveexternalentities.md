@@ -1,7 +1,8 @@
 # shouldResolveExternalEntities
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the parser reports declarations of external entities.
 
@@ -20,17 +21,22 @@ A Boolean value that determines whether the parser reports declarations of exter
 var shouldResolveExternalEntities: Bool { get set }
 ```
 
+```objc
+@property BOOL shouldResolveExternalEntities;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the parser reports declarations of external entities, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default value is [`false`](https://developer.apple.com/documentation/swift/false). If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), you may cause other I/O operations, either network-based or disk-based, to load the external DTD.
+[`true`](../../Swift/true.md) if the parser reports declarations of external entities, [`false`](../../Swift/false.md) otherwise. The default value is [`false`](../../Swift/false.md). If you set this property to [`true`](../../Swift/true.md), you may cause other I/O operations, either network-based or disk-based, to load the external DTD.
 
-The parser reports declarations of external entities with the delegate method [`parser(_:foundExternalEntityDeclarationWithName:publicID:systemID:)`](xmlparserdelegate/parser(_:foundexternalentitydeclarationwithname:publicid:systemid:).md).
+The parser reports declarations of external entities with the delegate method [`parser(_:foundExternalEntityDeclarationWithName:publicID:systemID:)`](../xmlparserdelegate/parser%28_,foundexternalentitydeclarationwithname,publicid,systemid%29.md).
 
 ## See Also
 
-- [var shouldProcessNamespaces: Bool](xmlparser/shouldprocessnamespaces.md)
+### Managing Parser Behavior
+- [var shouldProcessNamespaces: Bool](./shouldprocessnamespaces.md)
   A Boolean value that determines whether the parser reports the namespaces and qualified names of elements.
-- [var shouldReportNamespacePrefixes: Bool](xmlparser/shouldreportnamespaceprefixes.md)
+- [var shouldReportNamespacePrefixes: Bool](./shouldreportnamespaceprefixes.md)
   A Boolean value that determines whether the parser reports the prefixes indicating the scope of namespace declarations.
 
 

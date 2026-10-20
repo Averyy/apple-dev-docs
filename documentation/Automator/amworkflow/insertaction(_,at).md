@@ -1,7 +1,8 @@
 # insertAction(_:at:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the specified action at the specified position of the receiving workflow.
 
@@ -15,6 +16,10 @@ Inserts the specified action at the specified position of the receiving workflow
 func insertAction(_ action: AMAction, at index: Int)
 ```
 
+```objc
+- (void) insertAction:(AMAction *) action atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 The workflow retains the action but does not copy it.
@@ -26,11 +31,12 @@ The workflow retains the action but does not copy it.
 
 ## See Also
 
-- [func addAction(AMAction)](amworkflow/addaction(_:).md)
+### Manipulating the Workflow’s Actions
+- [func addAction(AMAction)](./addaction%28_%29.md)
   Adds the specified action at the end of the receiving workflow.
-- [func moveAction(at: Int, to: Int)](amworkflow/moveaction(at:to:).md)
+- [func moveAction(at: Int, to: Int)](./moveaction%28at,to%29.md)
   Moves the action from the specified start position to the specified end position in the receiving workflow.
-- [func removeAction(AMAction)](amworkflow/removeaction(_:).md)
+- [func removeAction(AMAction)](./removeaction%28_%29.md)
   Removes the specified action from the workflow.
 
 

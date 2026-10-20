@@ -1,7 +1,8 @@
 # AVPlayerItemSampleBufferOutput.SampleBufferInSequence
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Holds the information necessary for processing generated sample buffers.
 
@@ -23,24 +24,25 @@ struct SampleBufferInSequence
 ## Topics
 
 ### Initializers
-- [init(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>, sequenceWasRestarted: Bool)](avplayeritemsamplebufferoutput/samplebufferinsequence/init(samplebuffer:sequencewasrestarted:).md)
+- [init(sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>, sequenceWasRestarted: Bool)](./samplebufferinsequence/init%28samplebuffer,sequencewasrestarted%29.md)
 ### Instance Properties
-- [var sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>](avplayeritemsamplebufferoutput/samplebufferinsequence/samplebuffer.md)
+- [var sampleBuffer: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>](./samplebufferinsequence/samplebuffer.md)
   Sample buffer containing media data.
-- [var sequenceWasRestarted: Bool](avplayeritemsamplebufferoutput/samplebufferinsequence/sequencewasrestarted.md)
+- [var sequenceWasRestarted: Bool](./samplebufferinsequence/sequencewasrestarted.md)
   Indicates the very first buffer in a new sequence produced by this output. Seeking or changing playback direction will start a new sequence of buffers. If you have any sample buffers queued from the previous sequence, these should be discarded.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func nextAvailableSampleBuffer() -> AVPlayerItemSampleBufferOutput.SampleBufferInSequence?](avplayeritemsamplebufferoutput/nextavailablesamplebuffer.md)
+### Retrieving sample buffers
+- [func nextAvailableSampleBuffer() -> AVPlayerItemSampleBufferOutput.SampleBufferInSequence?](./nextavailablesamplebuffer%28%29.md)
   Returns the next sample buffer if it is already available.
-- [func nextSampleBuffer() async -> AVPlayerItemSampleBufferOutput.SampleBufferInSequence?](avplayeritemsamplebufferoutput/nextsamplebuffer.md)
+- [func nextSampleBuffer() async -> AVPlayerItemSampleBufferOutput.SampleBufferInSequence?](./nextsamplebuffer%28%29.md)
   Returns next sample buffer once it becomes available.
 
 

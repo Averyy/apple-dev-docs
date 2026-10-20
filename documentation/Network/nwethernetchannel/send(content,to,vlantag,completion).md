@@ -1,7 +1,8 @@
 # send(content:to:vlanTag:completion:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a single Ethernet frame over a channel to a specific Ethernet address.
 
@@ -17,9 +18,10 @@ final func send(content: Data, to remoteAddress: NWEthernetChannel.EthernetAddre
 
 ## See Also
 
-- [var receiveHandler: ((Data, UInt16, NWEthernetChannel.EthernetAddress, NWEthernetChannel.EthernetAddress) -> Void)?](nwethernetchannel/receivehandler.md)
+### Sending and Receiving Ethernet Frames
+- [var receiveHandler: ((Data, UInt16, NWEthernetChannel.EthernetAddress, NWEthernetChannel.EthernetAddress) -> Void)?](./receivehandler.md)
   A handler that delivers inbound Ethernet frames.
-- [NWEthernetChannel.EthernetAddress](nwethernetchannel/ethernetaddress.md)
+- [NWEthernetChannel.EthernetAddress](./ethernetaddress.md)
   A 48-bit Ethernet address.
 
 

@@ -1,7 +1,8 @@
 # init(title:urlDescriptors:conferenceDetails:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that describes a virtual conference, including a name and URL to join the conference.
 
@@ -17,6 +18,10 @@ Creates an object that describes a virtual conference, including a name and URL 
 
 ```swift
 init(title: String?, urlDescriptors URLDescriptors: [EKVirtualConferenceURLDescriptor], conferenceDetails: String?)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title URLDescriptors:(NSArray<EKVirtualConferenceURLDescriptor *> *) URLDescriptors conferenceDetails:(NSString *) conferenceDetails;
 ```
 
 #### Return Value

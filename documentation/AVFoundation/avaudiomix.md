@@ -1,7 +1,8 @@
 # AVAudioMix
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the input parameters for mixing audio tracks.
 
@@ -20,37 +21,42 @@ An object that manages the input parameters for mixing audio tracks.
 class AVAudioMix
 ```
 
+```objc
+@interface AVAudioMix : NSObject
+```
+
 ## Topics
 
 ### Retrieving input parameters
-- [var inputParameters: [AVAudioMixInputParameters]](avaudiomix/inputparameters.md)
+- [var inputParameters: [AVAudioMixInputParameters]](./avaudiomix/inputparameters.md)
   An array of input parameters for the mix.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVMutableAudioMix](avmutableaudiomix.md)
+- [AVMutableAudioMix](./avmutableaudiomix.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAudioMixInputParameters](avaudiomixinputparameters.md)
+### Mixing
+- [class AVAudioMixInputParameters](./avaudiomixinputparameters.md)
   An object that represents the parameters that you apply when adding an audio track to a mix.
-- [enum AVAudioMixInputParametersTrackID](avaudiomixinputparameterstrackid.md)
+- [enum AVAudioMixInputParametersTrackID](./avaudiomixinputparameterstrackid.md)
   Special value for the trackID property of AVAudioMixInputParameters.
-- [class AVMutableAudioMix](avmutableaudiomix.md)
+- [class AVMutableAudioMix](./avmutableaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
-- [class AVMutableAudioMixInputParameters](avmutableaudiomixinputparameters.md)
+- [class AVMutableAudioMixInputParameters](./avmutableaudiomixinputparameters.md)
   The parameters you use when adding an audio track to a mix.
 
 

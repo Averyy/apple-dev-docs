@@ -1,7 +1,8 @@
 # SHA384.Digest
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The digest type for a SHA384 hash function.
 
@@ -22,7 +23,8 @@ typealias Digest = SHA384Digest
 
 ## See Also
 
-- [struct SHA384Digest](sha384digest.md)
+### Specifying the output type
+- [struct SHA384Digest](../sha384digest.md)
   The output of a Secure Hashing Algorithm 2 (SHA-2) hash with a 384-bit digest.
 
 

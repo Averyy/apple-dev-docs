@@ -1,7 +1,8 @@
 # MusicVideos.Views.MusicVideosMoreInGenreView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 More music videos in a specific music video genre.
 
@@ -10,7 +11,7 @@ More music videos in a specific music video genre.
 
 ## Declaration
 
-```swift
+```
 object MusicVideos.Views.MusicVideosMoreInGenreView.Attributes
 ```
 

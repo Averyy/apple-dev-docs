@@ -1,13 +1,14 @@
 # Predefined Callback Structures
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 CFArray provides a predefined callback structure appropriate for use when the values in a CFArray are all CFType-derived objects.
 
 ## Topics
 
 ### Constants
-- [let kCFTypeArrayCallBacks: CFArrayCallBacks](kcftypearraycallbacks.md)
+- [let kCFTypeArrayCallBacks: CFArrayCallBacks](./kcftypearraycallbacks.md)
 
 
 ---

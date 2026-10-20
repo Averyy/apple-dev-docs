@@ -1,7 +1,8 @@
 # dataDetectorTypes
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of data detectors to apply to the webpage’s content.
 

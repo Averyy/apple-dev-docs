@@ -1,7 +1,8 @@
 # SubscriptionAppStoreReviewScreenshotUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription app store review screenshot update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription app store review screenshot update reque
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAppStoreReviewScreenshotUpdateRequest.Data.Attributes
 ```
 

@@ -1,7 +1,8 @@
 # SFSpeechError.Code.timeout
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation timed out.
 
@@ -19,15 +20,20 @@ The operation timed out.
 case timeout
 ```
 
+```c
+SFSpeechErrorCodeTimeout
+```
+
 ## See Also
 
-- [static var assetLocaleNotAllocated: SFSpeechError.Code](sfspeecherror/code/assetlocalenotallocated.md)
+### Asset errors
+- [static var assetLocaleNotAllocated: SFSpeechError.Code](./assetlocalenotallocated.md)
   The asset locale has not been allocated, but module requires it.
-- [static var cannotAllocateUnsupportedLocale: SFSpeechError.Code](sfspeecherror/code/cannotallocateunsupportedlocale.md)
+- [static var cannotAllocateUnsupportedLocale: SFSpeechError.Code](./cannotallocateunsupportedlocale.md)
   The asset locale being requested is not supported by SpeechFramework.
-- [static var noModel: SFSpeechError.Code](sfspeecherror/code/nomodel.md)
+- [static var noModel: SFSpeechError.Code](./nomodel.md)
   The selected locale/options does not have an appropriate model available or downloadable.
-- [static var tooManyAssetLocalesAllocated: SFSpeechError.Code](sfspeecherror/code/toomanyassetlocalesallocated.md)
+- [static var tooManyAssetLocalesAllocated: SFSpeechError.Code](./toomanyassetlocalesallocated.md)
   The application has allocated too many locales.
 
 

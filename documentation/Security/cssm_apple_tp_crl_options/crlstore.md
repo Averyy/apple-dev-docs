@@ -1,7 +1,8 @@
 # crlStore
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var crlStore: UnsafeMutablePointer<cssm_dl_db_handle>!
+```
+
+```c
+CSSM_DL_DB_HANDLE_PTR crlStore;
 ```
 
 

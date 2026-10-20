@@ -1,7 +1,8 @@
 # BetaLicenseAgreementUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the update request.
 
@@ -10,7 +11,7 @@ Attributes whose values you’re changing as part of the update request.
 
 ## Declaration
 
-```swift
+```
 object BetaLicenseAgreementUpdateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object BetaLicenseAgreementUpdateRequest.Data.Attributes
 
 ## See Also
 
-- [Beta License Agreements](beta-license-agreements.md)
+### Related Documentation
+- [Beta License Agreements](../../beta-license-agreements.md)
   Beta license agreements for apps.
 
 

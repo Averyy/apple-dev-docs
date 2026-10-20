@@ -1,7 +1,8 @@
 # AlarmManager.AlarmError.maximumLimitReached
 
 **Framework**: AlarmKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A maximum number of alarms is already scheduled.
 

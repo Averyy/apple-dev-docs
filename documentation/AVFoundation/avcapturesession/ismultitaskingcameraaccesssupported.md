@@ -1,7 +1,8 @@
 # isMultitaskingCameraAccessSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the capture session supports using the camera while multitasking.
 
@@ -17,25 +18,30 @@ A Boolean value that indicates whether the capture session supports using the ca
 var isMultitaskingCameraAccessSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isMultitaskingCameraAccessSupported) BOOL multitaskingCameraAccessSupported;
+```
+
 #### Discussion
 
-Query this property to determine whether you can use the camera while multitasking by setting the state of the [`isMultitaskingCameraAccessEnabled`](avcapturesession/ismultitaskingcameraaccessenabled.md) property to `true`.
+Query this property to determine whether you can use the camera while multitasking by setting the state of the [`isMultitaskingCameraAccessEnabled`](./ismultitaskingcameraaccessenabled.md) property to `true`.
 
 In iOS and iPadOS, this property is `true` for any of the following cases:
 
 - The app runs on an iPad that supports Stage Manager with an extended display.
-- The app links against iOS 18 or later and uses `voip` as one of its [`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uibackgroundmodes).
-- The app has the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement.
+- The app links against iOS 18 or later and uses `voip` as one of its [`UIBackgroundModes`](../../BundleResources/information-property-list/uibackgroundmodes.md).
+- The app has the [`com.apple.developer.avfoundation.multitasking-camera-access`](../../BundleResources/entitlements/com.apple.developer.avfoundation.multitasking-camera-access.md) entitlement.
 
 In tvOS, this property is always `true`.
 
-> **Note**:  This property is key-value observable. If the value changes from `true` to `false`, the value of [`isMultitaskingCameraAccessEnabled`](avcapturesession/ismultitaskingcameraaccessenabled.md) also changes to `false`.
+> **Note**:  This property is key-value observable. If the value changes from `true` to `false`, the value of [`isMultitaskingCameraAccessEnabled`](./ismultitaskingcameraaccessenabled.md) also changes to `false`.
 
-To learn about best practices for using the camera while multitasking, see [`Accessing the camera while multitasking on iPad`](https://developer.apple.com/documentation/avkit/accessing-the-camera-while-multitasking-on-ipad).
+To learn about best practices for using the camera while multitasking, see [Accessing the camera while multitasking on iPad](../../AVKit/accessing-the-camera-while-multitasking-on-ipad.md).
 
 ## See Also
 
-- [var isMultitaskingCameraAccessEnabled: Bool](avcapturesession/ismultitaskingcameraaccessenabled.md)
+### Configuring multitasking
+- [var isMultitaskingCameraAccessEnabled: Bool](./ismultitaskingcameraaccessenabled.md)
   A Boolean value that indicates whether the capture session enables access to the camera while multitasking.
 
 

@@ -1,7 +1,8 @@
 # LinearTimeSeriesForecaster
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A time-series forecasting estimator.
 
@@ -27,77 +28,78 @@ struct LinearTimeSeriesForecaster<Scalar> where Scalar : MLShapedArrayScalar, Sc
 ## Topics
 
 ### Creating a linear time series forecaster
-- [init(configuration: LinearTimeSeriesForecaster<Scalar>.Configuration)](lineartimeseriesforecaster/init(configuration:).md)
+- [init(configuration: LinearTimeSeriesForecaster<Scalar>.Configuration)](./lineartimeseriesforecaster/init%28configuration%29.md)
   Creates a linear time-series forecaster.
 ### Inspecting a linear time series forecaster
-- [let configuration: LinearTimeSeriesForecaster<Scalar>.Configuration](lineartimeseriesforecaster/configuration-swift.property.md)
+- [let configuration: LinearTimeSeriesForecaster<Scalar>.Configuration](./lineartimeseriesforecaster/configuration-swift.property.md)
   The configuration.
-- [var forecastWindowSize: Int](lineartimeseriesforecaster/forecastwindowsize.md)
+- [var forecastWindowSize: Int](./lineartimeseriesforecaster/forecastwindowsize.md)
   The number of predicted samples.
-- [var inputWindowSize: Int](lineartimeseriesforecaster/inputwindowsize.md)
+- [var inputWindowSize: Int](./lineartimeseriesforecaster/inputwindowsize.md)
   The number of input samples.
 ### Updating and fitting
-- [func update(inout LinearTimeSeriesForecaster<Scalar>.Transformer, with: AnnotatedBatch<Scalar>) async throws -> Scalar](lineartimeseriesforecaster/update(_:with:).md)
+- [func update(inout LinearTimeSeriesForecaster<Scalar>.Transformer, with: AnnotatedBatch<Scalar>) async throws -> Scalar](./lineartimeseriesforecaster/update%28_,with%29.md)
   Updates a model with a new batch of examples.
-- [func update(inout LinearTimeSeriesForecaster<Scalar>.Model, withWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](lineartimeseriesforecaster/update(_:withwindows:eventhandler:).md)
+- [func update(inout LinearTimeSeriesForecaster<Scalar>.Model, withWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws](./lineartimeseriesforecaster/update%28_,withwindows,eventhandler%29.md)
   Updates a model with a sequence of windows.
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(to:eventhandler:).md)
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](./lineartimeseriesforecaster/fitted%28to,eventhandler%29.md)
   Fits a model to a sequence of examples.
-- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](./lineartimeseriesforecaster/fitted%28to,validateon,eventhandler%29.md)
   Fits a model to a sequence of examples with validation.
-- [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(towindows:eventhandler:).md)
+- [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](./lineartimeseriesforecaster/fitted%28towindows,eventhandler%29.md)
   Fits a model to a sequence of windows.
-- [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](lineartimeseriesforecaster/fitted(towindows:validateon:eventhandler:).md)
+- [func fitted(toWindows: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, validateOn: some Sequence<AnnotatedFeature<MLShapedArray<Scalar>, MLShapedArray<Scalar>>>, eventHandler: EventHandler?) async throws -> LinearTimeSeriesForecaster<Scalar>.Model](./lineartimeseriesforecaster/fitted%28towindows,validateon,eventhandler%29.md)
   Fits a model to a sequence of annotated windows with validation.
 ### Supporting types
-- [LinearTimeSeriesForecaster.Configuration](lineartimeseriesforecaster/configuration-swift.typealias.md)
-- [LinearTimeSeriesForecaster.Model](lineartimeseriesforecaster/model.md)
+- [LinearTimeSeriesForecaster.Configuration](./lineartimeseriesforecaster/configuration-swift.typealias.md)
+- [LinearTimeSeriesForecaster.Model](./lineartimeseriesforecaster/model.md)
   A linear time-series forecasting model.
 ### Default Implementations
-- [SupervisedEstimator Implementations](lineartimeseriesforecaster/supervisedestimator-implementations.md)
-- [UpdatableSupervisedEstimator Implementations](lineartimeseriesforecaster/updatablesupervisedestimator-implementations.md)
+- [SupervisedEstimator Implementations](./lineartimeseriesforecaster/supervisedestimator-implementations.md)
+- [UpdatableSupervisedEstimator Implementations](./lineartimeseriesforecaster/updatablesupervisedestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedEstimator](supervisedestimator.md)
-- [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedEstimator](./supervisedestimator.md)
+- [UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
 
 ## See Also
 
-- [Creating a time-series classifier](creating-a-time-series-classifier.md)
+### Time-based components
+- [Creating a time-series classifier](./creating-a-time-series-classifier.md)
   Train a machine learning model to predict the class label of time-series signals.
-- [Creating a time-series forecaster](creating-a-time-series-forecaster.md)
+- [Creating a time-series forecaster](./creating-a-time-series-forecaster.md)
   Forecast future data points by training a machine learning model using historical data.
-- [struct DateFeatures](datefeatures.md)
+- [struct DateFeatures](./datefeatures.md)
   A set of date and time features.
-- [struct DateFeatureExtractor](datefeatureextractor.md)
+- [struct DateFeatureExtractor](./datefeatureextractor.md)
   A time and date feature extractor.
-- [struct LinearTimeSeriesForecasterConfiguration](lineartimeseriesforecasterconfiguration.md)
+- [struct LinearTimeSeriesForecasterConfiguration](./lineartimeseriesforecasterconfiguration.md)
   The configuration for a linear time-series forecaster.
-- [struct TimeSeriesForecasterBatches](timeseriesforecasterbatches.md)
+- [struct TimeSeriesForecasterBatches](./timeseriesforecasterbatches.md)
   A sequence of forecaster batches on a time series shaped array.
-- [struct TimeSeriesForecasterAnnotatedWindows](timeseriesforecasterannotatedwindows.md)
+- [struct TimeSeriesForecasterAnnotatedWindows](./timeseriesforecasterannotatedwindows.md)
   A sequence of forecasting windows on a time series shaped array.
-- [struct TemporalFeature](temporalfeature.md)
+- [struct TemporalFeature](./temporalfeature.md)
   A temporal feature contains a segment identifier and a feature value.
-- [protocol TemporalSequence](temporalsequence.md)
+- [protocol TemporalSequence](./temporalsequence.md)
   Async sequence for temporal features.
-- [struct TemporalSegmentIdentifier](temporalsegmentidentifier.md)
+- [struct TemporalSegmentIdentifier](./temporalsegmentidentifier.md)
   Uniquely identifiers a segment of a temporal sequence.
-- [struct SlidingWindows](slidingwindows.md)
+- [struct SlidingWindows](./slidingwindows.md)
   A sequence of windows on a time series shaped array.
-- [struct SlidingWindowTransformer](slidingwindowtransformer.md)
+- [struct SlidingWindowTransformer](./slidingwindowtransformer.md)
   A temporal transformer that groups input elements.
-- [struct Downsampler](downsampler.md)
+- [struct Downsampler](./downsampler.md)
   A temporal transformer that down samples the input stream.
-- [struct VideoReader](videoreader.md)
+- [struct VideoReader](./videoreader.md)
   A video file reader.
-- [struct TemporalFileSegment](temporalfilesegment.md)
+- [struct TemporalFileSegment](./temporalfilesegment.md)
   A URL and a time range identifying a specific segment of a time-based (temporal) file.
 
 

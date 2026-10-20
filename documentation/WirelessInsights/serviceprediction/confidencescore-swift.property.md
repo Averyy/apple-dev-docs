@@ -1,7 +1,8 @@
 # confidenceScore
 
 **Framework**: WirelessInsights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A score that represents the level of confidence in various aspects of the prediction.
 
@@ -17,9 +18,10 @@ let confidenceScore: ServicePrediction.ConfidenceScore
 
 ## See Also
 
-- [ServicePrediction.ConfidenceScore](serviceprediction/confidencescore-swift.struct.md)
+### Accessing prediction confidence
+- [ServicePrediction.ConfidenceScore](./confidencescore-swift.struct.md)
   A type that represents the confidence in various aspects of the prediction.
-- [ServicePrediction.Confidence](serviceprediction/confidence.md)
+- [ServicePrediction.Confidence](./confidence.md)
   An enumeration of levels of confidence for a prediction or one of its properties.
 
 

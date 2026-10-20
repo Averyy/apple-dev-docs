@@ -1,7 +1,8 @@
 # keyEnumerator()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an enumerator to access the keys in the dictionary.
 
@@ -18,6 +19,10 @@ Provides an enumerator to access the keys in the dictionary.
 
 ```swift
 func keyEnumerator() -> NSEnumerator
+```
+
+```objc
+- (NSEnumerator<id> *) keyEnumerator;
 ```
 
 #### Return Value
@@ -50,23 +55,24 @@ while ((key = [enumerator nextObject])) {
 }
 ```
 
-If you use this method with instances of mutable subclasses of [`NSDictionary`](nsdictionary.md), your code should not modify the entries during enumeration. If you intend to modify the entries, use the [`allKeys`](nsdictionary/allkeys.md) property to create a snapshot of the dictionary’s keys. Then use this snapshot to traverse the entries, modifying them along the way.
+If you use this method with instances of mutable subclasses of [`NSDictionary`](../nsdictionary.md), your code should not modify the entries during enumeration. If you intend to modify the entries, use the [`allKeys`](./allkeys.md) property to create a snapshot of the dictionary’s keys. Then use this snapshot to traverse the entries, modifying them along the way.
 
-If you want to enumerate the dictionary’s values rather than its keys, use the [`objectEnumerator()`](nsdictionary/objectenumerator().md) method.
+If you want to enumerate the dictionary’s values rather than its keys, use the [`objectEnumerator()`](./objectenumerator%28%29.md) method.
 
 ##### Special Considerations
 
-It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](nsfastenumeration.md)) than this method. Fast enumeration is available in macOS 10.5 and later and iOS 2.0 and later.
+It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](../nsfastenumeration.md)) than this method. Fast enumeration is available in macOS 10.5 and later and iOS 2.0 and later.
 
 ## See Also
 
-- [func objectEnumerator() -> NSEnumerator](nsdictionary/objectenumerator.md)
+### Enumerating Dictionaries
+- [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each value in the dictionary.
-- [func enumerateKeysAndObjects((Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdictionary/enumeratekeysandobjects(_:).md)
+- [func enumerateKeysAndObjects((Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratekeysandobjects%28_%29.md)
   Applies a given block object to the entries of the dictionary.
-- [func enumerateKeysAndObjects(options: NSEnumerationOptions, using: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](nsdictionary/enumeratekeysandobjects(options:using:).md)
+- [func enumerateKeysAndObjects(options: NSEnumerationOptions, using: (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratekeysandobjects%28options,using%29.md)
   Applies a given block object to the entries of the dictionary, with options specifying how the enumeration is performed.
-- [func makeIterator() -> NSDictionary.Iterator](nsdictionary/makeiterator.md)
+- [func makeIterator() -> NSDictionary.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the elements of this sequence.
 
 

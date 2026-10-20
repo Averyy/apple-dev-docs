@@ -1,7 +1,8 @@
 # MTLIOFileHandle
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Represents a raw or compressed file, such as a resource asset file in your app’s bundle.
 
@@ -19,30 +20,35 @@ Represents a raw or compressed file, such as a resource asset file in your app�
 protocol MTLIOFileHandle : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol MTLIOFileHandle <NSObject>
+```
+
 ## Topics
 
 ### Naming a file handle
-- [var label: String?](mtliofilehandle/label.md)
+- [var label: String?](./mtliofilehandle/label.md)
   An optional name for the file that the handle represents.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLIOCommandBuffer](mtliocommandbuffer.md)
+### I/O command buffers
+- [protocol MTLIOCommandBuffer](./mtliocommandbuffer.md)
   A command buffer that contains input/output commands that work with files in the file systems and Metal resources.
-- [typealias MTLIOCommandBufferHandler](mtliocommandbufferhandler.md)
+- [typealias MTLIOCommandBufferHandler](./mtliocommandbufferhandler.md)
   A convenience type that defines the signature of an input/output command buffer’s completion handler.
-- [enum MTLIOStatus](mtliostatus.md)
+- [enum MTLIOStatus](./mtliostatus.md)
   Represents the state of an input/output command buffer.
-- [MTLIOError.Code](mtlioerror-swift.struct/code.md)
+- [MTLIOError.Code](./mtlioerror-swift.struct/code.md)
   The error codes for creating an input/output file handle.
-- [let MTLIOErrorDomain: String](mtlioerrordomain.md)
+- [let MTLIOErrorDomain: String](./mtlioerrordomain.md)
   The domain for input/output command queue errors.
 
 

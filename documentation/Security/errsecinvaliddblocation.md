@@ -1,7 +1,8 @@
 # errSecInvalidDBLocation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The database location is not valid.
 
@@ -18,6 +19,10 @@ The database location is not valid.
 
 ```swift
 var errSecInvalidDBLocation: OSStatus { get }
+```
+
+```c
+errSecInvalidDBLocation
 ```
 
 

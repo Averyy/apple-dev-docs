@@ -1,17 +1,22 @@
 # printWindow(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the Print panel, and if the user chooses an option other than canceling, prints the window (its frame view and all subviews).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func printWindow(_ sender: Any?)
+```
+
+```objc
+- (void) print:(id) sender;
 ```
 
 ## Parameters
@@ -20,9 +25,10 @@ func printWindow(_ sender: Any?)
 
 ## See Also
 
-- [func dataWithEPS(inside: NSRect) -> Data](nswindow/datawitheps(inside:).md)
+### Printing Windows
+- [func dataWithEPS(inside: NSRect) -> Data](./datawitheps%28inside%29.md)
   Returns EPS data that draws the region of the window within a given rectangle.
-- [func dataWithPDF(inside: NSRect) -> Data](nswindow/datawithpdf(inside:).md)
+- [func dataWithPDF(inside: NSRect) -> Data](./datawithpdf%28inside%29.md)
   Returns PDF data that draws the region of the window within a given rectangle.
 
 

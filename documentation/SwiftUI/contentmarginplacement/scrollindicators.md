@@ -1,7 +1,8 @@
 # scrollIndicators
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The scroll indicators placement.
 
@@ -22,13 +23,14 @@ static var scrollIndicators: ContentMarginPlacement { get }
 
 #### Discussion
 
-Scrollable views like [`ScrollView`](scrollview.md) will use this placement to inset their scroll indicators, but not their content.
+Scrollable views like [`ScrollView`](../scrollview.md) will use this placement to inset their scroll indicators, but not their content.
 
 ## See Also
 
-- [static var automatic: ContentMarginPlacement](contentmarginplacement/automatic.md)
+### Getting the placement
+- [static var automatic: ContentMarginPlacement](./automatic.md)
   The automatic placement.
-- [static var scrollContent: ContentMarginPlacement](contentmarginplacement/scrollcontent.md)
+- [static var scrollContent: ContentMarginPlacement](./scrollcontent.md)
   The scroll content placement.
 
 

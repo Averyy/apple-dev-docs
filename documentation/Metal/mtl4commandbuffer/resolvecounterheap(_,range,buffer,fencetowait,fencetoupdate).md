@@ -1,7 +1,8 @@
 # resolveCounterHeap(_:range:buffer:fenceToWait:fenceToUpdate:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that resolves an opaque counter heap into a buffer.
 
@@ -23,7 +24,7 @@ func resolveCounterHeap(_ counterHeap: any MTL4CounterHeap, range: Range<Int>, b
 
 The command converts the data within a counter heap into a common format and stores it in `buffer`.
 
-The command places each entry in the counter heap within `range` sequentially. Each entry has a fixed size that you can query by calling the [`size(ofCounterHeapEntry:)`](mtldevice/size(ofcounterheapentry:).md) method.
+The command places each entry in the counter heap within `range` sequentially. Each entry has a fixed size that you can query by calling the [`size(ofCounterHeapEntry:)`](../mtldevice/size%28ofcounterheapentry%29.md) method.
 
 This command runs during the blit stage of the GPU timeline. Barrier against this stage to ensure the data is present in the buffer before you access it.
 
@@ -31,7 +32,7 @@ This command runs during the blit stage of the GPU timeline. Barrier against thi
 
 Similarly, your app needs to synchronize any GPU accesses to `buffer` after the command completes with a barrier.
 
-If your app needs to access `buffer` from the CPU, signal an [`MTLSharedEvent`](mtlsharedevent.md) to notify the CPU when it’s ready. Alternatively, you can resolve the heap’s data from the CPU by calling the heap’s [`resolveCounterRange:`](mtl4counterheap/resolvecounterrange:.md) method.
+If your app needs to access `buffer` from the CPU, signal an [`MTLSharedEvent`](../mtlsharedevent.md) to notify the CPU when it’s ready. Alternatively, you can resolve the heap’s data from the CPU by calling the heap’s [`resolveCounterRange:`](../mtl4counterheap/resolvecounterrange_.md) method.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # sourceTimeRanges
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of time ranges.
 
@@ -19,9 +20,13 @@ An array of time ranges.
 var sourceTimeRanges: [NSValue] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSValue *> * sourceTimeRanges;
+```
+
 #### Discussion
 
-Each element in the array is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that wraps a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) structure that represents one source time range. The value of this property is suitable to pass to the [`reset(forReadingTimeRanges:)`](avassetreaderoutput/reset(forreadingtimeranges:).md) method of [`AVAssetReaderOutput`](avassetreaderoutput.md).
+Each element in the array is an [`NSValue`](../../Foundation/nsvalue.md) object that wraps a [`CMTimeRange`](../../CoreMedia/cmtimerange.md) structure that represents one source time range. The value of this property is suitable to pass to the [`reset(forReadingTimeRanges:)`](../avassetreaderoutput/reset%28forreadingtimeranges%29.md) method of [`AVAssetReaderOutput`](../avassetreaderoutput.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # path
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path subcomponent.
 

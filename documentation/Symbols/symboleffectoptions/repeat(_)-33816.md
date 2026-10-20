@@ -1,18 +1,19 @@
 # repeat(_:)
 
 **Framework**: Symbols  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A default set of effect options with a preferred repeat count.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
-- visionOS 1.0+
-- watchOS 10.0+
+- iOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- iPadOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- Mac Catalyst 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- macOS 14.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- tvOS 17.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
+- watchOS 10.0+ - Deprecated in 27.2 (renamed: SymbolEffectOptions.RepeatBehavior.periodic(_:delay:))
 
 ## Declaration
 
@@ -30,15 +31,16 @@ A new set of effect options with the preferred repeat count.
 
 ## See Also
 
-- [var repeating: SymbolEffectOptions](symboleffectoptions/repeating-swift.property.md)
+### Configuring repeating effects
+- [var repeating: SymbolEffectOptions](./repeating-swift.property.md)
   A set of effect options that prefers to repeat indefinitely.
-- [static var repeating: SymbolEffectOptions](symboleffectoptions/repeating-swift.type.property.md)
+- [static var repeating: SymbolEffectOptions](./repeating-swift.type.property.md)
   A default set of effect options that prefers to repeat indefinitely.
-- [var nonRepeating: SymbolEffectOptions](symboleffectoptions/nonrepeating-swift.property.md)
+- [var nonRepeating: SymbolEffectOptions](./nonrepeating-swift.property.md)
   A set of effect options that prefers to not repeat.
-- [static var nonRepeating: SymbolEffectOptions](symboleffectoptions/nonrepeating-swift.type.property.md)
+- [static var nonRepeating: SymbolEffectOptions](./nonrepeating-swift.type.property.md)
   A default set of effect options that prefers to not repeat.
-- [func `repeat`(Int?) -> SymbolEffectOptions](symboleffectoptions/repeat(_:)-314sv.md)
+- [func `repeat`(Int?) -> SymbolEffectOptions](./repeat%28_%29-314sv.md)
   Creates a set of effect options with a preferred repeat count.
 
 

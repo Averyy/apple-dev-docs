@@ -1,7 +1,8 @@
 # lineLimit(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets to a closed range the number of lines that text can occupy in this view.
 
@@ -21,9 +22,26 @@ nonisolated
 func lineLimit(_ limit: ClosedRange<Int>) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func lineLimit(_ limit: PartialRangeFrom<Int>) -> some View
+```
+
+```swift
+nonisolated
+func lineLimit(_ limit: PartialRangeThrough<Int>) -> some View
+```
+
+```swift
+nonisolated
+func lineLimit(_ number: Int?) -> some View
+```
+
 #### Discussion
 
-Use this modifier to specify a closed range of lines that a [`Text`](text.md) view or a vertical [`TextField`](textfield.md) can occupy. When the text of such views occupies more space than the provided limit, a [`Text`](text.md) view truncates its content while a [`TextField`](textfield.md) becomes scrollable.
+Use this modifier to specify a closed range of lines that a [`Text`](../text.md) view or a vertical [`TextField`](../textfield.md) can occupy. When the text of such views occupies more space than the provided limit, a [`Text`](../text.md) view truncates its content while a [`TextField`](../textfield.md) becomes scrollable.
 
 ```swift
 Form {
@@ -39,9 +57,10 @@ Form {
 
 ## See Also
 
-- [func lineLimit(Int, reservesSpace: Bool) -> some View](view/linelimit(_:reservesspace:).md)
+### Limiting line count for multiline text
+- [func lineLimit(Int, reservesSpace: Bool) -> some View](./linelimit%28_,reservesspace%29.md)
   Sets a limit for the number of lines text can occupy in this view.
-- [var lineLimit: Int?](environmentvalues/linelimit.md)
+- [var lineLimit: Int?](../environmentvalues/linelimit.md)
   The maximum number of lines that text can occupy in a view.
 
 

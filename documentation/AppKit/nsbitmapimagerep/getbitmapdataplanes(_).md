@@ -1,12 +1,13 @@
 # getBitmapDataPlanes(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns by indirection bitmap data of the bitmap image representation separated into planes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns by indirection bitmap data of the bitmap image representation separated 
 func getBitmapDataPlanes(_ data: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>)
 ```
 
+```objc
+- (void) getBitmapDataPlanes:(unsigned char **) data;
+```
+
 #### Discussion
 
-Color components in planar configuration are arranged in the expected order—for example, red before green before blue for RGB color. All color planes precede the coverage plane. For bitmaps whose [`bitmapFormat`](nsbitmapimagerep/bitmapformat.md) mask does not include [`alphaNonpremultiplied`](nsbitmapimagerep/format/alphanonpremultiplied.md), if a coverage plane exists, the bitmap’s color components are premultiplied with it. In this case, if you modify the contents of the bitmap, you are responsible for premultiplying the data.
+Color components in planar configuration are arranged in the expected order—for example, red before green before blue for RGB color. All color planes precede the coverage plane. For bitmaps whose [`bitmapFormat`](./bitmapformat.md) mask does not include [`alphaNonpremultiplied`](./format/alphanonpremultiplied.md), if a coverage plane exists, the bitmap’s color components are premultiplied with it. In this case, if you modify the contents of the bitmap, you are responsible for premultiplying the data.
 
 ## Parameters
 
@@ -24,13 +29,15 @@ Color components in planar configuration are arranged in the expected order—fo
 
 ## See Also
 
-- [init?(bitmapDataPlanes: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>?, pixelsWide: Int, pixelsHigh: Int, bitsPerSample: Int, samplesPerPixel: Int, hasAlpha: Bool, isPlanar: Bool, colorSpaceName: NSColorSpaceName, bitmapFormat: NSBitmapImageRep.Format, bytesPerRow: Int, bitsPerPixel: Int)](nsbitmapimagerep/init(bitmapdataplanes:pixelswide:pixelshigh:bitspersample:samplesperpixel:hasalpha:isplanar:colorspacename:bitmapformat:bytesperrow:bitsperpixel:).md)
+### Related Documentation
+- [init?(bitmapDataPlanes: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>?, pixelsWide: Int, pixelsHigh: Int, bitsPerSample: Int, samplesPerPixel: Int, hasAlpha: Bool, isPlanar: Bool, colorSpaceName: NSColorSpaceName, bitmapFormat: NSBitmapImageRep.Format, bytesPerRow: Int, bitsPerPixel: Int)](./init%28bitmapdataplanes,pixelswide,pixelshigh,bitspersample,samplesperpixel,hasalpha,isplanar,colorspacename,bitmapformat,bytesperrow,bitsperpixel%29.md)
   Initializes a newly allocated bitmap image representation so it can render the specified image.
-- [var isPlanar: Bool](nsbitmapimagerep/isplanar.md)
+- [var isPlanar: Bool](./isplanar.md)
   A Boolean value that indicates whether the image data is in a planar configuration.
-- [init?(bitmapDataPlanes: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>?, pixelsWide: Int, pixelsHigh: Int, bitsPerSample: Int, samplesPerPixel: Int, hasAlpha: Bool, isPlanar: Bool, colorSpaceName: NSColorSpaceName, bytesPerRow: Int, bitsPerPixel: Int)](nsbitmapimagerep/init(bitmapdataplanes:pixelswide:pixelshigh:bitspersample:samplesperpixel:hasalpha:isplanar:colorspacename:bytesperrow:bitsperpixel:).md)
+- [init?(bitmapDataPlanes: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>?, pixelsWide: Int, pixelsHigh: Int, bitsPerSample: Int, samplesPerPixel: Int, hasAlpha: Bool, isPlanar: Bool, colorSpaceName: NSColorSpaceName, bytesPerRow: Int, bitsPerPixel: Int)](./init%28bitmapdataplanes,pixelswide,pixelshigh,bitspersample,samplesperpixel,hasalpha,isplanar,colorspacename,bytesperrow,bitsperpixel%29.md)
   Initializes a newly allocated bitmap image representation so it can render the specified image.
-- [var bitmapData: UnsafeMutablePointer<UInt8>?](nsbitmapimagerep/bitmapdata.md)
+### Getting the Bitmap Data
+- [var bitmapData: UnsafeMutablePointer<UInt8>?](./bitmapdata.md)
   A pointer to the bitmap data.
 
 

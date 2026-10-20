@@ -1,7 +1,8 @@
 # BackgroundAssetUploadFileUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data wrapper for updating a background asset upload file’s state.
 
@@ -10,21 +11,21 @@ The data wrapper for updating a background asset upload file’s state.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetUploadFileUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetUploadFileUpdateRequest.Data.Attributes](backgroundassetuploadfileupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object BackgroundAssetUploadFileUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a background asset upload file update request resource.
 
 ## Properties
 
 - `attributes` (BackgroundAssetUploadFileUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `backgroundAssetUploadFiles`
 
 
 ---

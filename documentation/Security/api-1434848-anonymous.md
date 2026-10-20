@@ -1,12 +1,13 @@
 # Anonymous
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var CSSM_ACL_AUTHORIZATION_INTEGRITY: Int](cssm_acl_authorization_integrity.md)
-- [var CSSM_ACL_AUTHORIZATION_PARTITION_ID: Int](cssm_acl_authorization_partition_id.md)
+- [var CSSM_ACL_AUTHORIZATION_INTEGRITY: Int](./cssm_acl_authorization_integrity.md)
+- [var CSSM_ACL_AUTHORIZATION_PARTITION_ID: Int](./cssm_acl_authorization_partition_id.md)
 
 
 ---

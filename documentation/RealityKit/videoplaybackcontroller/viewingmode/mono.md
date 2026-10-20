@@ -1,7 +1,8 @@
 # VideoPlaybackController.ViewingMode.mono
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A viewing mode that presents video in monoscopic mode.
 

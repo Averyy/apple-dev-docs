@@ -1,7 +1,8 @@
 # clearTransactions()
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all transactions from the test environment.
 
@@ -20,17 +21,22 @@ Removes all transactions from the test environment.
 func clearTransactions()
 ```
 
+```objc
+- (void) clearTransactions;
+```
+
 #### Discussion
 
 After you clear the transactions from the test environment, the test environment produces an empty receipt. Use this method to enable repeating tests for one-time purchases.
 
-To revert all the settings in the test environment to those in the StoreKit configuration file, see [`resetToDefaultState()`](sktestsession/resettodefaultstate().md).
+To revert all the settings in the test environment to those in the StoreKit configuration file, see [`resetToDefaultState()`](./resettodefaultstate%28%29.md).
 
 ## See Also
 
-- [func allTransactions() -> [SKTestTransaction]](sktestsession/alltransactions.md)
+### Managing transactions in the test environment
+- [func allTransactions() -> [SKTestTransaction]](./alltransactions%28%29.md)
   Gets a list of all transactions in the test environment.
-- [func deleteTransaction(identifier: Int) throws](sktestsession/deletetransaction(identifier:).md)
+- [func deleteTransaction(identifier: Int) throws](./deletetransaction%28identifier%29.md)
   Deletes a specific transaction from the test environment.
 
 

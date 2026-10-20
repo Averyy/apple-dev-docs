@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index past the last element ID.
 

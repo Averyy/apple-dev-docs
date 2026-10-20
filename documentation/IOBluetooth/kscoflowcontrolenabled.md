@@ -1,10 +1,11 @@
 # kSCOFlowControlEnabled
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kSCOFlowControlEnabled: BluetoothHCISCOFlowControlStates { get }
 ```
 
+```c
+kSCOFlowControlEnabled
+```
+
 ## See Also
 
-- [var kSCOFlowControlDisabled: BluetoothHCISCOFlowControlStates](kscoflowcontroldisabled.md)
+### Constants
+- [var kSCOFlowControlDisabled: BluetoothHCISCOFlowControlStates](./kscoflowcontroldisabled.md)
 
 
 ---

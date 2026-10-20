@@ -1,7 +1,8 @@
 # makeTouchBar()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the receiving responder to create and configure a Touch Bar object.
 
@@ -14,13 +15,17 @@ Asks the receiving responder to create and configure a Touch Bar object.
 func makeTouchBar() -> NSTouchBar?
 ```
 
+```objc
+- (NSTouchBar *) makeTouchBar;
+```
+
 #### Return Value
 
 A newly created Touch Bar object.
 
 #### Discussion
 
-Override this method in a responder, such as [`UIViewController`](uiviewcontroller.md), to create and configure a Touch Bar object for the responder.
+Override this method in a responder, such as [`UIViewController`](../uiviewcontroller.md), to create and configure a Touch Bar object for the responder.
 
 ```swift
 #if targetEnvironment(macCatalyst)
@@ -52,7 +57,8 @@ extension RecipeDetailViewController: NSTouchBarDelegate {
 
 ## See Also
 
-- [var touchBar: NSTouchBar?](uiresponder/touchbar.md)
+### Managing the Touch Bar
+- [var touchBar: NSTouchBar?](./touchbar.md)
   The Touch Bar object for the responder.
 
 

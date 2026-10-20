@@ -1,7 +1,8 @@
 # GameCenterGroupGameCenterChallengesLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying a Game Center challenge associated with a group.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying a Game Center challenge associated with a 
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroupGameCenterChallengesLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallenges`
 
 
 ---

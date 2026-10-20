@@ -1,7 +1,8 @@
 # TextSelectability
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that describes the ability to select text.
 
@@ -20,43 +21,44 @@ protocol TextSelectability
 
 #### Overview
 
-To configure whether people can select text in your app, use the [`textSelection(_:)`](view/textselection(_:).md) modifier, passing in a text selectability value like [`enabled`](textselectability/enabled.md) or [`disabled`](textselectability/disabled.md).
+To configure whether people can select text in your app, use the [`textSelection(_:)`](./view/textselection%28_%29.md) modifier, passing in a text selectability value like [`enabled`](./textselectability/enabled.md) or [`disabled`](./textselectability/disabled.md).
 
 ## Topics
 
 ### Getting selectability options
-- [static var enabled: EnabledTextSelectability](textselectability/enabled.md)
+- [static var enabled: EnabledTextSelectability](./textselectability/enabled.md)
   A selectability value that enables text selection by a person using your app.
-- [static var disabled: DisabledTextSelectability](textselectability/disabled.md)
+- [static var disabled: DisabledTextSelectability](./textselectability/disabled.md)
   A selectability value that disables text selection by the person using your app.
 ### Specifying selectability
-- [static var allowsSelection: Bool](textselectability/allowsselection.md)
+- [static var allowsSelection: Bool](./textselectability/allowsselection.md)
   A Boolean value that indicates whether the selectability type allows selection.
 ### Supporting types
-- [struct EnabledTextSelectability](enabledtextselectability.md)
+- [struct EnabledTextSelectability](./enabledtextselectability.md)
   A selectability type that enables text selection by the person using your app.
-- [struct DisabledTextSelectability](disabledtextselectability.md)
+- [struct DisabledTextSelectability](./disabledtextselectability.md)
   A selectability type that disables text selection by the person using your app.
 
 ## Relationships
 
 ### Conforming Types
-- [DisabledTextSelectability](disabledtextselectability.md)
-- [EnabledTextSelectability](enabledtextselectability.md)
+- [DisabledTextSelectability](./disabledtextselectability.md)
+- [EnabledTextSelectability](./enabledtextselectability.md)
 
 ## See Also
 
-- [func textSelection<S>(S) -> some View](view/textselection(_:).md)
+### Selecting text
+- [func textSelection<S>(S) -> some View](./view/textselection%28_%29.md)
   Controls whether people can select text within this view.
-- [struct TextSelection](textselection.md)
+- [struct TextSelection](./textselection.md)
   Represents a selection of text.
-- [func textSelectionAffinity(TextSelectionAffinity) -> some View](view/textselectionaffinity(_:).md)
+- [func textSelectionAffinity(TextSelectionAffinity) -> some View](./view/textselectionaffinity%28_%29.md)
   Sets the direction of a selection or cursor relative to a text character.
-- [var textSelectionAffinity: TextSelectionAffinity](environmentvalues/textselectionaffinity.md)
+- [var textSelectionAffinity: TextSelectionAffinity](./environmentvalues/textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
-- [enum TextSelectionAffinity](textselectionaffinity.md)
+- [enum TextSelectionAffinity](./textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
-- [struct AttributedTextSelection](attributedtextselection.md)
+- [struct AttributedTextSelection](./attributedtextselection.md)
   Represents a selection of attributed text.
 
 

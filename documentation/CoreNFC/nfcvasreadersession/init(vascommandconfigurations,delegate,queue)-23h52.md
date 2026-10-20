@@ -1,7 +1,8 @@
 # init(vasCommandConfigurations:delegate:queue:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a VAS reader session.
 
@@ -16,15 +17,20 @@ Creates a VAS reader session.
 init(vasCommandConfigurations commandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)
 ```
 
+```objc
+- (instancetype) initWithVASCommandConfigurations:(NSArray<NFCVASCommandConfiguration *> *) commandConfigurations delegate:(id<NFCVASReaderSessionDelegate>) delegate queue:(dispatch_queue_t) queue;
+```
+
 #### Return Value
 
 A newly initialized VAS reader session object.
 
 ## See Also
 
-- [class NFCVASCommandConfiguration](nfcvascommandconfiguration.md)
+### Creating a VAS Reader Session
+- [class NFCVASCommandConfiguration](../nfcvascommandconfiguration.md)
   An object providing the configuration for a GET VAS DATA command.
-- [protocol NFCVASReaderSessionDelegate](nfcvasreadersessiondelegate.md)
+- [protocol NFCVASReaderSessionDelegate](../nfcvasreadersessiondelegate.md)
   A protocol that an object implements to receive callbacks from a VAS reader session.
 
 

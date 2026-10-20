@@ -1,18 +1,19 @@
 # contentsTransform
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transformation applied to the material property’s visual contents. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,37 +21,42 @@ The transformation applied to the material property’s visual contents. Animata
 var contentsTransform: SCNMatrix4 { get set }
 ```
 
+```objc
+@property (nonatomic) SCNMatrix4 contentsTransform;
+```
+
 #### Discussion
 
-SceneKit applies this transformation to the texture coordinates provided by the geometry object the material is attached to, then uses the resulting coordinates to map the material property’s [`contents`](scnmaterialproperty/contents.md) across the surface of the material. (This transformation has no effect if the material property’s [`contents`](scnmaterialproperty/contents.md) object is a constant color.)
+SceneKit applies this transformation to the texture coordinates provided by the geometry object the material is attached to, then uses the resulting coordinates to map the material property’s [`contents`](./contents.md) across the surface of the material. (This transformation has no effect if the material property’s [`contents`](./contents.md) object is a constant color.)
 
 For example, you can use this property to grow, offset, or rotate a texture relative to the surface of a material, as illustrated below.
 
-![None](/images/com.apple.scenekit/media-2929785@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929785@2x.png)
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var wrapS: SCNWrapMode](scnmaterialproperty/wraps.md)
+### Configuring Texture Mapping Attributes
+- [var wrapS: SCNWrapMode](./wraps.md)
   The wrapping behavior for the S texture coordinate.
-- [var wrapT: SCNWrapMode](scnmaterialproperty/wrapt.md)
+- [var wrapT: SCNWrapMode](./wrapt.md)
   The wrapping behavior for the T texture coordinate.
-- [enum SCNWrapMode](scnwrapmode.md)
-  Modes to apply to texture wrapping, used by the [`wrapT`](scnmaterialproperty/wrapt.md) and [`wrapS`](scnmaterialproperty/wraps.md) properties.
-- [var minificationFilter: SCNFilterMode](scnmaterialproperty/minificationfilter.md)
+- [enum SCNWrapMode](../scnwrapmode.md)
+  Modes to apply to texture wrapping, used by the [`wrapT`](./wrapt.md) and [`wrapS`](./wraps.md) properties.
+- [var minificationFilter: SCNFilterMode](./minificationfilter.md)
   Texture filtering for rendering the material property’s image contents at a size smaller than that of the original image.
-- [var magnificationFilter: SCNFilterMode](scnmaterialproperty/magnificationfilter.md)
+- [var magnificationFilter: SCNFilterMode](./magnificationfilter.md)
   Texture filtering for rendering the material property’s image contents at a size larger than that of the original image.
-- [var mipFilter: SCNFilterMode](scnmaterialproperty/mipfilter.md)
+- [var mipFilter: SCNFilterMode](./mipfilter.md)
   Texture filtering for using mipmaps to render the material property’s image contents at a size smaller than that of the original image.
-- [enum SCNFilterMode](scnfiltermode.md)
-  Texture filtering modes, used by the [`minificationFilter`](scnmaterialproperty/minificationfilter.md), [`magnificationFilter`](scnmaterialproperty/magnificationfilter.md), and [`mipFilter`](scnmaterialproperty/mipfilter.md) properties.
-- [var maxAnisotropy: CGFloat](scnmaterialproperty/maxanisotropy.md)
+- [enum SCNFilterMode](../scnfiltermode.md)
+  Texture filtering modes, used by the [`minificationFilter`](./minificationfilter.md), [`magnificationFilter`](./magnificationfilter.md), and [`mipFilter`](./mipfilter.md) properties.
+- [var maxAnisotropy: CGFloat](./maxanisotropy.md)
   The amount of anisotropic texture filtering to be used when rendering the material property’s image contents.
-- [var mappingChannel: Int](scnmaterialproperty/mappingchannel.md)
+- [var mappingChannel: Int](./mappingchannel.md)
   The source of texture coordinates for mapping the material property’s image contents.
-- [var borderColor: Any?](scnmaterialproperty/bordercolor.md)
+- [var borderColor: Any?](./bordercolor.md)
   A color used to fill in areas of a material’s surface not covered by the material property’s image contents.
 
 

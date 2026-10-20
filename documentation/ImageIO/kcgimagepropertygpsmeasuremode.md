@@ -1,7 +1,8 @@
 # kCGImagePropertyGPSMeasureMode
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The measurement mode.
 
@@ -20,29 +21,34 @@ The measurement mode.
 let kCGImagePropertyGPSMeasureMode: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGPSMeasureMode;
+```
+
 ## See Also
 
-- [let kCGImagePropertyGPSStatus: CFString](kcgimagepropertygpsstatus.md)
+### Measurement Details
+- [let kCGImagePropertyGPSStatus: CFString](./kcgimagepropertygpsstatus.md)
   The status of the GPS receiver.
-- [let kCGImagePropertyGPSSatellites: CFString](kcgimagepropertygpssatellites.md)
+- [let kCGImagePropertyGPSSatellites: CFString](./kcgimagepropertygpssatellites.md)
   The satellites used for GPS measurements.
-- [let kCGImagePropertyGPSDOP: CFString](kcgimagepropertygpsdop.md)
+- [let kCGImagePropertyGPSDOP: CFString](./kcgimagepropertygpsdop.md)
   The degree of precision (DOP) of the data.
-- [let kCGImagePropertyGPSSpeedRef: CFString](kcgimagepropertygpsspeedref.md)
+- [let kCGImagePropertyGPSSpeedRef: CFString](./kcgimagepropertygpsspeedref.md)
   The unit for expressing the GPS receiver’s speed of movement.
-- [let kCGImagePropertyGPSSpeed: CFString](kcgimagepropertygpsspeed.md)
+- [let kCGImagePropertyGPSSpeed: CFString](./kcgimagepropertygpsspeed.md)
   The GPS receiver’s speed of movement.
-- [let kCGImagePropertyGPSTrackRef: CFString](kcgimagepropertygpstrackref.md)
+- [let kCGImagePropertyGPSTrackRef: CFString](./kcgimagepropertygpstrackref.md)
   The reference for the direction of GPS receiver’s movement.
-- [let kCGImagePropertyGPSTrack: CFString](kcgimagepropertygpstrack.md)
+- [let kCGImagePropertyGPSTrack: CFString](./kcgimagepropertygpstrack.md)
   The direction of GPS receiver’s movement.
-- [let kCGImagePropertyGPSMapDatum: CFString](kcgimagepropertygpsmapdatum.md)
+- [let kCGImagePropertyGPSMapDatum: CFString](./kcgimagepropertygpsmapdatum.md)
   The geodetic survey data used by the GPS receiver.
-- [let kCGImagePropertyGPSProcessingMethod: CFString](kcgimagepropertygpsprocessingmethod.md)
+- [let kCGImagePropertyGPSProcessingMethod: CFString](./kcgimagepropertygpsprocessingmethod.md)
   The name of the method used to find a location.
-- [let kCGImagePropertyGPSAreaInformation: CFString](kcgimagepropertygpsareainformation.md)
+- [let kCGImagePropertyGPSAreaInformation: CFString](./kcgimagepropertygpsareainformation.md)
   The name of the GPS area.
-- [let kCGImagePropertyGPSDifferental: CFString](kcgimagepropertygpsdifferental.md)
+- [let kCGImagePropertyGPSDifferental: CFString](./kcgimagepropertygpsdifferental.md)
   An indication of whether differential correction is applied to the GPS receiver.
 
 

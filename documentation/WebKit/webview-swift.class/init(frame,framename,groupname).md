@@ -1,17 +1,24 @@
 # init(frame:frameName:groupName:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver with a frame rectangle, frame name, and group name.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
 ```swift
 init!(frame: NSRect, frameName: String!, groupName: String!)
+```
+
+```objc
+- (instancetype) initWithFrame:(NSRect) frame frameName:(NSString *) frameName groupName:(NSString *) groupName;
 ```
 
 #### Return Value

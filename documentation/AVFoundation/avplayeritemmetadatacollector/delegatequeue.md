@@ -1,7 +1,8 @@
 # delegateQueue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue on which the delegate’s methods are called.
 
@@ -20,17 +21,22 @@ The dispatch queue on which the delegate’s methods are called.
 var delegateQueue: dispatch_queue_t? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) dispatch_queue_t delegateQueue;
+```
+
 #### Discussion
 
 This property is not key-value observable.
 
 ## See Also
 
-- [func setDelegate((any AVPlayerItemMetadataCollectorPushDelegate)?, queue: dispatch_queue_t?)](avplayeritemmetadatacollector/setdelegate(_:queue:).md)
+### Accessing the delegate and callback queue
+- [func setDelegate((any AVPlayerItemMetadataCollectorPushDelegate)?, queue: dispatch_queue_t?)](./setdelegate%28_,queue%29.md)
   Sets the delegate and a dispatch queue on which the delegate will be called.
-- [var delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?](avplayeritemmetadatacollector/delegate.md)
+- [var delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?](./delegate.md)
   Accesses the metadata collector’s delegate object.
-- [protocol AVPlayerItemMetadataCollectorPushDelegate](avplayeritemmetadatacollectorpushdelegate.md)
+- [protocol AVPlayerItemMetadataCollectorPushDelegate](../avplayeritemmetadatacollectorpushdelegate.md)
   A protocol you implement to receive metadata callbacks from a player item metadata collector.
 
 

@@ -1,7 +1,8 @@
 # point(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,9 +19,18 @@
 static func point(_ p: CGPoint) -> Anchor<Value>.Source
 ```
 
+Available when `Value` is `CGPoint`.
+
+**Other overloads**:
+
+```swift
+static func point(_ p: Point3D) -> Anchor<Value>.Source
+```
+
 ## See Also
 
-- [static unitPoint(_:)](anchor/source/unitpoint(_:).md)
+### Getting point anchor sources
+- [static unitPoint(_:)](./unitpoint%28_%29.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # dy
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The y component of the vector.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The y component of the vector.
 var dy: Double
 ```
 
+```c
+CGFloat dy;
+```
+
 ## See Also
 
-- [var dx: Double](cgvector/dx.md)
+### Geometric Properties
+- [var dx: Double](./dx.md)
   The x component of the vector.
 
 

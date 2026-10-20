@@ -1,7 +1,8 @@
 # PlatformType.Value
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Supported Platform Types for a process
 
@@ -27,47 +28,47 @@ A platform type is an indication of the runtime enviroment of a process. These r
 ## Topics
 
 ### Initializers
-- [init?(rawValue: Int64)](platformtype/value/init(rawvalue:).md)
+- [init?(rawValue: Int64)](./value/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [let rawValue: Int64](platformtype/value/rawvalue.md)
+- [let rawValue: Int64](./value/rawvalue.md)
   The corresponding value of the raw type.
 ### Type Properties
-- [static let driverKit: PlatformType.Value](platformtype/value/driverkit.md)
+- [static let driverKit: PlatformType.Value](./value/driverkit.md)
   The platform type for a driverkit driver.
-- [static let iOS: PlatformType.Value](platformtype/value/ios.md)
+- [static let iOS: PlatformType.Value](./value/ios.md)
   The platform type for iOS/iPadOS software running on iOS/ipadOS/macOS/visionOS
-- [static let iOSSimulator: PlatformType.Value](platformtype/value/iossimulator.md)
+- [static let iOSSimulator: PlatformType.Value](./value/iossimulator.md)
   The platform type for code running in the iOS Simulator.
-- [static let macCatalyst: PlatformType.Value](platformtype/value/maccatalyst.md)
+- [static let macCatalyst: PlatformType.Value](./value/maccatalyst.md)
   The platform type for macCatalyst software.
-- [static let macOS: PlatformType.Value](platformtype/value/macos.md)
+- [static let macOS: PlatformType.Value](./value/macos.md)
   The platform type for non-macCatalyst macOS software.
-- [static let tvOS: PlatformType.Value](platformtype/value/tvos.md)
+- [static let tvOS: PlatformType.Value](./value/tvos.md)
   The platform type for native tvOS software.
-- [static let tvOSSimulator: PlatformType.Value](platformtype/value/tvossimulator.md)
+- [static let tvOSSimulator: PlatformType.Value](./value/tvossimulator.md)
   The platform type for code running in the tvOS Simulator.
-- [static let visionOS: PlatformType.Value](platformtype/value/visionos.md)
+- [static let visionOS: PlatformType.Value](./value/visionos.md)
   The platform type for native visionOS code.
-- [static let visionOSSimulator: PlatformType.Value](platformtype/value/visionossimulator.md)
+- [static let visionOSSimulator: PlatformType.Value](./value/visionossimulator.md)
   The platform type for code running in the visionOS Simulator.
-- [static let watchOS: PlatformType.Value](platformtype/value/watchos.md)
+- [static let watchOS: PlatformType.Value](./value/watchos.md)
   The platform type for native watchOS software.
-- [static let watchOSSimulator: PlatformType.Value](platformtype/value/watchossimulator.md)
+- [static let watchOSSimulator: PlatformType.Value](./value/watchossimulator.md)
   The platform type for code running in the watchOS Simulator.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

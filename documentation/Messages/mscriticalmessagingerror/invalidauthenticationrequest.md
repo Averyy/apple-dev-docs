@@ -1,7 +1,8 @@
 # MSCriticalMessagingError.invalidAuthenticationRequest
 
 **Framework**: Messages  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The authentication request isn’t valid.
 
@@ -21,13 +22,14 @@ The framework isn’t able to validate the authentication request.
 
 ## See Also
 
-- [MSCriticalMessagingError.unknown](mscriticalmessagingerror/unknown.md)
+### Error codes
+- [MSCriticalMessagingError.unknown](./unknown.md)
   The error code the framework returns after an unknown error occurs.
-- [MSCriticalMessagingError.notSupported](mscriticalmessagingerror/notsupported.md)
+- [MSCriticalMessagingError.notSupported](./notsupported.md)
   The framework doesn’t support the current device.
-- [MSCriticalMessagingError.notAuthorized](mscriticalmessagingerror/notauthorized.md)
+- [MSCriticalMessagingError.notAuthorized](./notauthorized.md)
   The operation isn’t authorized.
-- [MSCriticalMessagingError.sendFailed](mscriticalmessagingerror/sendfailed.md)
+- [MSCriticalMessagingError.sendFailed](./sendfailed.md)
   The message failed to send.
 
 

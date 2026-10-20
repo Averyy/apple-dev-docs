@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type string of the persistent store.
 
@@ -10,7 +11,7 @@ The type string of the persistent store.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ The type string of the persistent store.
 
 ```swift
 var type: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * type;
 ```
 
 #### Discussion
@@ -30,15 +35,16 @@ Subclasses must override this method to provide a unique type.
 
 ## See Also
 
-- [var configurationName: String](nspersistentstore/configurationname.md)
+### Getting Store Configuration
+- [var configurationName: String](./configurationname.md)
   The name of the managed object model configuration that creates the persistent store.
-- [var options: [AnyHashable : Any]?](nspersistentstore/options.md)
+- [var options: [AnyHashable : Any]?](./options.md)
   The options that Core Data uses to create the store.
-- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](nspersistentstore/persistentstorecoordinator.md)
+- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](./persistentstorecoordinator.md)
   The persistent store coordinator that loads the persistent store.
-- [NSPersistentStore.StoreType](nspersistentstore/storetype.md)
+- [NSPersistentStore.StoreType](./storetype.md)
   The types of persistent stores that Core Data supports.
-- [Persistent Store Types](persistent-store-types.md)
+- [Persistent Store Types](../persistent-store-types.md)
   Persist data through the available store types.
 
 

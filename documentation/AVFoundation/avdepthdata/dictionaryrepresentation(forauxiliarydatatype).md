@@ -1,7 +1,8 @@
 # dictionaryRepresentation(forAuxiliaryDataType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary representation of the depth data suitable for writing into an image file.
 
@@ -19,17 +20,22 @@ Returns a dictionary representation of the depth data suitable for writing into 
 func dictionaryRepresentation(forAuxiliaryDataType outAuxDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?
 ```
 
+```objc
+- (NSDictionary *) dictionaryRepresentationForAuxiliaryDataType:(NSString **) outAuxDataType;
+```
+
 #### Discussion
 
-When using `CGImageDestination` functions to write depth data (along with image data) to a HEIF, JPEG, or DNG file, you can use this method to obtain a dictionary of primitive depth map information, then use the [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagedestinationaddauxiliarydatainfo(_:_:_:)) function to embed that data into the output file.
+When using `CGImageDestination` functions to write depth data (along with image data) to a HEIF, JPEG, or DNG file, you can use this method to obtain a dictionary of primitive depth map information, then use the [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](../../ImageIO/cgimagedestinationaddauxiliarydatainfo%28_,_,_%29.md) function to embed that data into the output file.
 
 ## Parameters
 
-- `outAuxDataType`: On output, either [`kCGImageAuxiliaryDataTypeDisparity`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypedisparity) or [`kCGImageAuxiliaryDataTypeDepth`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypedepth), depending on the depth data’s type.
+- `outAuxDataType`: On output, either [`kCGImageAuxiliaryDataTypeDisparity`](../../ImageIO/kcgimageauxiliarydatatypedisparity.md) or [`kCGImageAuxiliaryDataTypeDepth`](../../ImageIO/kcgimageauxiliarydatatypedepth.md), depending on the depth data’s type.
 
 ## See Also
 
-- [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](avdepthdata/init(fromdictionaryrepresentation:).md)
+### Creating depth data
+- [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](./init%28fromdictionaryrepresentation%29.md)
   Creates a depth data object from depth information such as that found in an image file.
 
 

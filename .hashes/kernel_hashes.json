@@ -27216,7 +27216,7 @@
       "hash": "00dc91fee40d3e994919474bac48a31560ceeec7500c873a754117b551b6594c"
     },
     "https://developer.apple.com/documentation/kernel/1641608-anonymous/khidusage_snsr_event_sensorevent_lowthresholdcrossdown": {
-      "etag": "\"e70-6593d136326bf\"",
+      "etag": "\"e70-6593d136326bf-df\"",
       "file_path": "documentation/kernel/api-1641608-anonymous/khidusage_snsr_event_sensorevent_lowthresholdcrossdown.md",
       "hash": "3e25c9f49e3193a6c98cd61f00af8f8d795ca12d66fcf474243637c54ecbc3a3"
     },
@@ -56046,7 +56046,7 @@
       "hash": "c9b71dd98627bc41e546a12cb861fbe7a8e7cfec3248497371ff67ba71d31395"
     },
     "https://developer.apple.com/documentation/kernel/3325704-anonymous": {
-      "etag": "\"2801-6593d11a45728\"",
+      "etag": "\"2801-6593d11a45728-df\"",
       "file_path": "documentation/kernel/api-3325704-anonymous.md",
       "hash": "0ff25e4cae1bba0e230c068b61714d4fef8942f6ba95101adcced14c1ff5fc76"
     },
@@ -96546,7 +96546,7 @@
       "hash": "1342e7aab24a300d93e2fa771affcd3902515ea3a6f345a62f9f8b60192eb715"
     },
     "https://developer.apple.com/documentation/kernel/ioaudiocontrol/1812069-adduserclient": {
-      "etag": "\"70c5-6593d13ba4a1a-df\"",
+      "etag": "\"70c5-6593d13ba4a1a\"",
       "file_path": "documentation/kernel/ioaudiocontrol/api-1812069-adduserclient.md",
       "hash": "37f885e5cd40291b993f2f2bf58f9ebf7ebd823f5975681b1f45cafb328c6b7d"
     },
@@ -102641,7 +102641,7 @@
       "hash": "bbb69de7fef3795b02ab1e7ec3d16c5a9217beb2a309e79f54e99b1ce2095572"
     },
     "https://developer.apple.com/documentation/kernel/iocdmedia/1811353-getspeed": {
-      "etag": "\"29ae-6593d127683bd-df\"",
+      "etag": "\"29ae-6593d127683bd\"",
       "file_path": "documentation/kernel/iocdmedia/api-1811353-getspeed.md",
       "hash": "3375dfb58e114a3eed99b10246b7b85e4ece857a69e23627f5cac27591c31724"
     },
@@ -119546,7 +119546,7 @@
       "hash": "125620b2f0525d1893009462d8c2bde109e74dbf87b9c19e9239d93871fb958b"
     },
     "https://developer.apple.com/documentation/kernel/iohardwarecursorinfo/1386462-majorversion": {
-      "etag": "\"ee0-6593d1411c2d3-df\"",
+      "etag": "\"ee0-6593d1411c2d3\"",
       "file_path": "documentation/kernel/iohardwarecursorinfo/api-1386462-majorversion.md",
       "hash": "ee38ad2b319f8ba1d00c15afcfe641a6ed0b5e04f2697add87c6366d0c8b4f55"
     },
@@ -168861,7 +168861,7 @@
       "hash": "553873c54cf2efad991b87aa59ca003743931aefcd708d91da74b025ba4bc407"
     },
     "https://developer.apple.com/documentation/kernel/scsicmdfield5byte": {
-      "etag": "\"b5b7-6593d12614842-df\"",
+      "etag": "\"b5b7-6593d12614842\"",
       "file_path": "documentation/kernel/scsicmdfield5byte.md",
       "hash": "b57b763574cb7e1fb8886599d96d27718cb93f1cacfea458aa89a713867de632"
     },
@@ -224736,7 +224736,7 @@
       "hash": "00dc91fee40d3e994919474bac48a31560ceeec7500c873a754117b551b6594c"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/1641608-anonymous/khidusage_snsr_event_sensorevent_lowthresholdcrossdown.json": {
-      "etag": "\"e70-6593d136326bf\"",
+      "etag": "\"e70-6593d136326bf-df\"",
       "file_path": "documentation/kernel/api-1641608-anonymous/khidusage_snsr_event_sensorevent_lowthresholdcrossdown.md",
       "hash": "3e25c9f49e3193a6c98cd61f00af8f8d795ca12d66fcf474243637c54ecbc3a3"
     },
@@ -253566,7 +253566,7 @@
       "hash": "c9b71dd98627bc41e546a12cb861fbe7a8e7cfec3248497371ff67ba71d31395"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/3325704-anonymous.json": {
-      "etag": "\"2801-6593d11a45728\"",
+      "etag": "\"2801-6593d11a45728-df\"",
       "file_path": "documentation/kernel/api-3325704-anonymous.md",
       "hash": "0ff25e4cae1bba0e230c068b61714d4fef8942f6ba95101adcced14c1ff5fc76"
     },
@@ -294066,7 +294066,7 @@
       "hash": "1342e7aab24a300d93e2fa771affcd3902515ea3a6f345a62f9f8b60192eb715"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/ioaudiocontrol/1812069-adduserclient.json": {
-      "etag": "\"70c5-6593d13ba4a1a-df\"",
+      "etag": "\"70c5-6593d13ba4a1a\"",
       "file_path": "documentation/kernel/ioaudiocontrol/api-1812069-adduserclient.md",
       "hash": "37f885e5cd40291b993f2f2bf58f9ebf7ebd823f5975681b1f45cafb328c6b7d"
     },
@@ -300161,7 +300161,7 @@
       "hash": "bbb69de7fef3795b02ab1e7ec3d16c5a9217beb2a309e79f54e99b1ce2095572"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iocdmedia/1811353-getspeed.json": {
-      "etag": "\"29ae-6593d127683bd-df\"",
+      "etag": "\"29ae-6593d127683bd\"",
       "file_path": "documentation/kernel/iocdmedia/api-1811353-getspeed.md",
       "hash": "3375dfb58e114a3eed99b10246b7b85e4ece857a69e23627f5cac27591c31724"
     },
@@ -317066,7 +317066,7 @@
       "hash": "125620b2f0525d1893009462d8c2bde109e74dbf87b9c19e9239d93871fb958b"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/iohardwarecursorinfo/1386462-majorversion.json": {
-      "etag": "\"ee0-6593d1411c2d3-df\"",
+      "etag": "\"ee0-6593d1411c2d3\"",
       "file_path": "documentation/kernel/iohardwarecursorinfo/api-1386462-majorversion.md",
       "hash": "ee38ad2b319f8ba1d00c15afcfe641a6ed0b5e04f2697add87c6366d0c8b4f55"
     },
@@ -366381,7 +366381,7 @@
       "hash": "553873c54cf2efad991b87aa59ca003743931aefcd708d91da74b025ba4bc407"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernel/scsicmdfield5byte.json": {
-      "etag": "\"b5b7-6593d12614842-df\"",
+      "etag": "\"b5b7-6593d12614842\"",
       "file_path": "documentation/kernel/scsicmdfield5byte.md",
       "hash": "b57b763574cb7e1fb8886599d96d27718cb93f1cacfea458aa89a713867de632"
     },
@@ -395042,6 +395042,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 79008
   }
 }

@@ -1,7 +1,8 @@
 # all
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All flags set.
 
@@ -12,6 +13,10 @@ All flags set.
 
 ```swift
 static var all: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageAll
 ```
 
 

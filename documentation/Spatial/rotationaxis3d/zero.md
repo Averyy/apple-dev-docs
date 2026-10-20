@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The rotation axis with the zero value.
 
@@ -20,21 +21,26 @@ The rotation axis with the zero value.
 static let zero: RotationAxis3D
 ```
 
+```c
+static const SPRotationAxis3D SPRotationAxis3DZero;
+```
+
 ## See Also
 
-- [static let x: RotationAxis3D](rotationaxis3d/x-swift.type.property.md)
+### Constants
+- [static let x: RotationAxis3D](./x-swift.type.property.md)
   The x-axis, expressed in unit coordinates.
-- [static let y: RotationAxis3D](rotationaxis3d/y-swift.type.property.md)
+- [static let y: RotationAxis3D](./y-swift.type.property.md)
   The y-axis, expressed in unit coordinates.
-- [static let z: RotationAxis3D](rotationaxis3d/z-swift.type.property.md)
+- [static let z: RotationAxis3D](./z-swift.type.property.md)
   The z-axis, expressed in unit coordinates.
-- [static let xy: RotationAxis3D](rotationaxis3d/xy.md)
+- [static let xy: RotationAxis3D](./xy.md)
   The xy-axis, expressed in unit coordinates.
-- [static let yz: RotationAxis3D](rotationaxis3d/yz.md)
+- [static let yz: RotationAxis3D](./yz.md)
   The yz-axis, expressed in unit coordinates.
-- [static let xz: RotationAxis3D](rotationaxis3d/xz.md)
+- [static let xz: RotationAxis3D](./xz.md)
   The xz-axis, expressed in unit coordinates.
-- [static let xyz: RotationAxis3D](rotationaxis3d/xyz.md)
+- [static let xyz: RotationAxis3D](./xyz.md)
   The xyz-axis, expressed in unit coordinates.
 
 

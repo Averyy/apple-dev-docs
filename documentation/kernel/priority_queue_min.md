@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct priority_queue_min {
     ...
 };
@@ -17,8 +17,8 @@ struct priority_queue_min {
 ## Topics
 
 ### Instance Properties
-- [pq_cmp_fn](priority_queue_min/3553534-pq_cmp_fn.md)
-- [pq_root](priority_queue_min/3553535-pq_root.md)
+- [pq_cmp_fn](./priority_queue_min/api-3553534-pq_cmp_fn.md)
+- [pq_root](./priority_queue_min/api-3553535-pq_root.md)
 
 
 ---

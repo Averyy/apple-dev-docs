@@ -1,7 +1,8 @@
 # playbackCoordinationMedium
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AVPlaybackCoordinationMedium this playback coordinator is connected to.
 
@@ -19,13 +20,18 @@ The AVPlaybackCoordinationMedium this playback coordinator is connected to.
 var playbackCoordinationMedium: AVPlaybackCoordinationMedium? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVPlaybackCoordinationMedium * playbackCoordinationMedium;
+```
+
 #### Discussion
 
 This is the AVPlaybackCoordinationMedium the playback coordinator is connected to. If not NULL, the playback coordinator is connected to the specified coordination medium. The playback coordinator is not available to coordinate with a group session. If NULL, the playback coordinator is not connected to any playback coordination medium. The playback coordinator is available to coordinate with a group session through the `coordinateWithSession` API.
 
 ## See Also
 
-- [func coordinate(using: AVPlaybackCoordinationMedium?) throws](avplayerplaybackcoordinator/coordinate(using:).md)
+### Managing coordination
+- [func coordinate(using: AVPlaybackCoordinationMedium?) throws](./coordinate%28using%29.md)
   Connects the playback coordinator to the coordination medium
 
 

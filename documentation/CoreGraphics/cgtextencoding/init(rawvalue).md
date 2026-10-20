@@ -1,14 +1,17 @@
 # init(rawValue:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 7.0
+- iPadOS 2.0+ - Deprecated in 7.0
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 

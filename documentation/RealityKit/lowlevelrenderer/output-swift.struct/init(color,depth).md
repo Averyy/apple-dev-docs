@@ -1,7 +1,8 @@
 # init(color:depth:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an output configuration with the given color and depth texture targets.
 
@@ -24,7 +25,8 @@ init(color: LowLevelRenderer.Output.Texture? = nil, depth: LowLevelRenderer.Outp
 
 ## See Also
 
-- [LowLevelRenderer.Output.Texture](lowlevelrenderer/output-swift.struct/texture.md)
+### Creating an output
+- [LowLevelRenderer.Output.Texture](./texture.md)
   A reference to a specific mip level, slice, and depth plane within a Metal texture.
 
 

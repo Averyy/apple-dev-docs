@@ -1,7 +1,8 @@
 # allowedPickerModes
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content-selection modes supported by the picker.
 
@@ -17,15 +18,16 @@ var allowedPickerModes: SCContentSharingPickerMode
 
 #### Discussion
 
-The default value doesn’t exclude selecting any content for streaming. There isn’t an equivalent [`SCContentSharingPickerMode`](sccontentsharingpickermode.md) available to reset this property once changed.
+The default value doesn’t exclude selecting any content for streaming. There isn’t an equivalent [`SCContentSharingPickerMode`](../sccontentsharingpickermode.md) available to reset this property once changed.
 
 ## See Also
 
-- [var allowsChangingSelectedContent: Bool](sccontentsharingpickerconfiguration-swift.struct/allowschangingselectedcontent.md)
+### Control streaming selections
+- [var allowsChangingSelectedContent: Bool](./allowschangingselectedcontent.md)
   A Boolean value that indicates if the present stream can change to a different source.
-- [var excludedBundleIDs: Array<String>](sccontentsharingpickerconfiguration-swift.struct/excludedbundleids.md)
+- [var excludedBundleIDs: Array<String>](./excludedbundleids.md)
   A list of bundle IDs to exclude from the sharing picker.
-- [var excludedWindowIDs: Array<Int>](sccontentsharingpickerconfiguration-swift.struct/excludedwindowids.md)
+- [var excludedWindowIDs: Array<Int>](./excludedwindowids.md)
   A list of window IDs to exclude from the sharing picker.
 
 

@@ -1,7 +1,8 @@
 # enforcesChildRestrictions
 
 **Framework**: Screen Time  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the device is currently enforcing child restrictions.
 
@@ -15,6 +16,10 @@ A Boolean that indicates whether the device is currently enforcing child restric
 
 ```swift
 var enforcesChildRestrictions: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL enforcesChildRestrictions;
 ```
 
 

@@ -1,7 +1,8 @@
 # planarTensor(tensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a real-valued tensor from a complex-valued tensor with real and imaginary planes separated.
 
@@ -17,6 +18,10 @@ Returns a real-valued tensor from a complex-valued tensor with real and imaginar
 
 ```swift
 func planarTensor(tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) planarTensorWithComplexTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

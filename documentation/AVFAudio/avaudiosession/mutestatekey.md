@@ -1,9 +1,10 @@
 # muteStateKey
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Keys for [`outputMuteStateChangeNotification`](avaudiosession/outputmutestatechangenotification.md) Value is `NSNumber` type with boolean value 0 for unmuted or value 1 for muted (samples zeroed out)
+Keys for [`outputMuteStateChangeNotification`](./outputmutestatechangenotification.md) Value is `NSNumber` type with boolean value 0 for unmuted or value 1 for muted (samples zeroed out)
 
 **Availability**:
 - iOS 26.0+
@@ -16,17 +17,22 @@ Keys for [`outputMuteStateChangeNotification`](avaudiosession/outputmutestatecha
 class let muteStateKey: String
 ```
 
+```c
+extern NSString * const AVAudioSessionMuteStateKey;
+```
+
 ## See Also
 
-- [var isOutputMuted: Bool](avaudiosession/isoutputmuted.md)
+### Configuring audio muting
+- [var isOutputMuted: Bool](./isoutputmuted.md)
   A Boolean value that indicates whether audio output is in a muted state.
-- [func setOutputMuted(Bool) throws](avaudiosession/setoutputmuted(_:).md)
+- [func setOutputMuted(Bool) throws](./setoutputmuted%28_%29.md)
   Sets a Boolean value to inform the system to mute the session’s output audio. The default value is false (unmuted).
-- [class let outputMuteStateChangeNotification: NSNotification.Name](avaudiosession/outputmutestatechangenotification.md)
+- [class let outputMuteStateChangeNotification: NSNotification.Name](./outputmutestatechangenotification.md)
   Notification sent to registered listeners when session’s output mute state changes.
-- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](avaudiosession/userintenttounmuteoutputnotification.md)
+- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](./userintenttounmuteoutputnotification.md)
   Notification sent to registered listeners when the application’s output is muted and user hints to unmute.
-- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](avaudiosession/userintenttounmuteoutputnotification.md)
+- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](./userintenttounmuteoutputnotification.md)
   Notification sent to registered listeners when the application’s output is muted and user hints to unmute.
 
 

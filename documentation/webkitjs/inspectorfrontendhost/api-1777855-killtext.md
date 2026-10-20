@@ -1,14 +1,15 @@
 # killText
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Mobile 10.0+
 
 ## Declaration
 
-```swift
+```
 void killText(
     DOMString text, 
     boolean shouldPrependToKillRing, 

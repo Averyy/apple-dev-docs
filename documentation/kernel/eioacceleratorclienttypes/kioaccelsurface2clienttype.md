@@ -1,14 +1,15 @@
 # kIOAccelSurface2ClientType
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kIOAccelSurface2ClientType = 0x20
 ```
 

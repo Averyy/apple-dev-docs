@@ -1,7 +1,8 @@
 # deleteRecords
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes one or more records.
 
@@ -10,7 +11,7 @@ Deletes one or more records.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.RecordsResponse, CloudKit.CKError> deleteRecords(
 	CloudKit.Record|CloudKit.Record[]|String|String[] records,
 	optional Object options
@@ -19,27 +20,30 @@ Promise<CloudKit.RecordsResponse, CloudKit.CKError> deleteRecords(
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.RecordsResponse`](cloudkit.recordsresponse.md) object if the operation succeeds; otherwise, a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.RecordsResponse`](../cloudkit.recordsresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
 ## Parameters
 
-- `records`: Possible values are: | Type | Description |
-| --- | --- |
-| [`CloudKit.Record`](cloudkit.record.md) | A dictionary or the record name of the record to delete. |
-| `CloudKit.Record[]` | An array of records to delete. |
-| `String` | The name of a record to delete. |
-| `String[]` | An array of names of records to delete. |
-- `options`: A dictionary containing a single `zoneID` key that identifies the zone ([`CloudKit.ZoneID`](cloudkit.zoneid.md)) in the database where the record resides. If the `options` parameter is omitted, the default zone is used.
+- `records`: Possible values are:
+
+  | Type | Description |
+  | --- | --- |
+  | [`CloudKit.Record`](../cloudkit.record.md) | A dictionary or the record name of the record to delete. |
+  | `CloudKit.Record[]` | An array of records to delete. |
+  | `String` | The name of a record to delete. |
+  | `String[]` | An array of names of records to delete. |
+- `options`: A dictionary containing a single `zoneID` key that identifies the zone ([`CloudKit.ZoneID`](../cloudkit.zoneid.md)) in the database where the record resides. If the `options` parameter is omitted, the default zone is used.
 
 ## See Also
 
-- [saveRecords](cloudkit.database/saverecords.md)
+### Accessing Records
+- [saveRecords](./saverecords.md)
   Saves records to the database.
-- [fetchRecords](cloudkit.database/fetchrecords.md)
+- [fetchRecords](./fetchrecords.md)
   Fetches one or more records.
-- [performQuery](cloudkit.database/performquery.md)
+- [performQuery](./performquery.md)
   Fetches records by using a query.
-- [newRecordsBatch](cloudkit.database/newrecordsbatch.md)
+- [newRecordsBatch](./newrecordsbatch.md)
   Creates records batch builder object for modifying multiple records.
 
 

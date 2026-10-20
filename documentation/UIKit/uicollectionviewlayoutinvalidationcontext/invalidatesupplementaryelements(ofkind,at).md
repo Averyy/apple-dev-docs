@@ -1,7 +1,8 @@
 # invalidateSupplementaryElements(ofKind:at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the supplementary views at the specified index paths to the list of invalid items.
 
@@ -9,7 +10,7 @@ Adds the supplementary views at the specified index paths to the list of invalid
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,26 +19,31 @@ Adds the supplementary views at the specified index paths to the list of invalid
 func invalidateSupplementaryElements(ofKind elementKind: String, at indexPaths: [IndexPath])
 ```
 
+```objc
+- (void) invalidateSupplementaryElementsOfKind:(NSString *) elementKind atIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
+```
+
 #### Discussion
 
-Call this method to identify the specific supplementary views of your layout that require updates. The views you specify are added to the dictionary in the [`invalidatedSupplementaryIndexPaths`](uicollectionviewlayoutinvalidationcontext/invalidatedsupplementaryindexpaths.md) property. All of the views you specify should be of the type that you specified in the `elementKind` parameter. If you call this method two or more times with the same value for the `elementKind` parameter, this method merges the new index paths with the ones previously specified.
+Call this method to identify the specific supplementary views of your layout that require updates. The views you specify are added to the dictionary in the [`invalidatedSupplementaryIndexPaths`](./invalidatedsupplementaryindexpaths.md) property. All of the views you specify should be of the type that you specified in the `elementKind` parameter. If you call this method two or more times with the same value for the `elementKind` parameter, this method merges the new index paths with the ones previously specified.
 
 ## Parameters
 
 - `elementKind`: A string that identifies the type of the supplementary views. This parameter must not be `nil`.
-- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects. Each index path represents a supplementary view of the given kind whose layout needs to be recomputed.
+- `indexPaths`: An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects. Each index path represents a supplementary view of the given kind whose layout needs to be recomputed.
 
 ## See Also
 
-- [func invalidateItems(at: [IndexPath])](uicollectionviewlayoutinvalidationcontext/invalidateitems(at:).md)
+### Invalidating Specific Items
+- [func invalidateItems(at: [IndexPath])](./invalidateitems%28at%29.md)
   Adds the cells at the specified index paths to the list of invalid items.
-- [func invalidateDecorationElements(ofKind: String, at: [IndexPath])](uicollectionviewlayoutinvalidationcontext/invalidatedecorationelements(ofkind:at:).md)
+- [func invalidateDecorationElements(ofKind: String, at: [IndexPath])](./invalidatedecorationelements%28ofkind,at%29.md)
   Adds the decoration views at the specified index paths to the list of invalid items.
-- [var invalidatedItemIndexPaths: [IndexPath]?](uicollectionviewlayoutinvalidationcontext/invalidateditemindexpaths.md)
+- [var invalidatedItemIndexPaths: [IndexPath]?](./invalidateditemindexpaths.md)
   An array of index paths representing the cells that were invalidated.
-- [var invalidatedSupplementaryIndexPaths: [String : [IndexPath]]?](uicollectionviewlayoutinvalidationcontext/invalidatedsupplementaryindexpaths.md)
+- [var invalidatedSupplementaryIndexPaths: [String : [IndexPath]]?](./invalidatedsupplementaryindexpaths.md)
   A dictionary that identifies the supplementary views that were invalidated.
-- [var invalidatedDecorationIndexPaths: [String : [IndexPath]]?](uicollectionviewlayoutinvalidationcontext/invalidateddecorationindexpaths.md)
+- [var invalidatedDecorationIndexPaths: [String : [IndexPath]]?](./invalidateddecorationindexpaths.md)
   A dictionary that identifies the decoration views that were invalidated.
 
 

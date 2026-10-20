@@ -1,7 +1,8 @@
 # userCurated
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,8 +19,9 @@ static let userCurated: SearchableItemAttribute
 
 ## See Also
 
-- [static let userCreated: SearchableItemAttribute](searchableitemattribute/usercreated.md)
-- [static let userOwned: SearchableItemAttribute](searchableitemattribute/userowned.md)
+### Describing user involvement
+- [static let userCreated: SearchableItemAttribute](./usercreated.md)
+- [static let userOwned: SearchableItemAttribute](./userowned.md)
 
 
 ---

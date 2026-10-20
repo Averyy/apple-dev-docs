@@ -1,9 +1,10 @@
 # clear()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Removes all in-memory content from the layer. The file on disk is unaffected until [`save()`](usdlayer/save().md) is called.
+Removes all in-memory content from the layer. The file on disk is unaffected until [`save()`](./save%28%29.md) is called.
 
 **Availability**:
 - iOS 27.0+
@@ -21,9 +22,10 @@ func clear()
 
 ## See Also
 
-- [func save() throws](usdlayer/save.md)
+### Saving and reloading
+- [func save() throws](./save%28%29.md)
   Saves the layer to its source if it has unsaved changes.
-- [func reload() throws](usdlayer/reload.md)
+- [func reload() throws](./reload%28%29.md)
   Reloads the layer from its source, discarding any unsaved changes.
 
 

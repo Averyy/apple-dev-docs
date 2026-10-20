@@ -1,7 +1,8 @@
 # filename
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file name of the MMS part.
 
@@ -20,17 +21,18 @@ If the file name is unavailable or doesn’t apply to this kind of content part,
 
 ## See Also
 
-- [var data: Data](mmspartcontent/data.md)
+### Accessing part properties
+- [var data: Data](./data.md)
   The raw data used for the MMS content part.
-- [var disposition: MMSPartContent.MMSDispositionType](mmspartcontent/disposition.md)
+- [var disposition: MMSPartContent.MMSDispositionType](./disposition.md)
   The disposition of the MMS part, indicating whether the part renders inline or as an attachment.
-- [MMSPartContent.MMSDispositionType](mmspartcontent/mmsdispositiontype.md)
+- [MMSPartContent.MMSDispositionType](./mmsdispositiontype.md)
   A structure that defines the disposition of the content part when rendered.
-- [var contentID: String](mmspartcontent/contentid.md)
+- [var contentID: String](./contentid.md)
   A unique identifier for the part.
-- [var contentType: UTType?](mmspartcontent/contenttype.md)
+- [var contentType: UTType?](./contenttype.md)
   The content type of the part, as a Uniform Type Identifier.
-- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
+- [struct UTType](../../UniformTypeIdentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 
 

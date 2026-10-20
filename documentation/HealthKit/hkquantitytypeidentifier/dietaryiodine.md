@@ -1,7 +1,8 @@
 # dietaryIodine
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the amount of iodine consumed.
 
@@ -19,27 +20,33 @@ A quantity sample type that measures the amount of iodine consumed.
 static let dietaryIodine: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDietaryIodine;
+```
+
 #### Discussion
 
-These samples use mass units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use mass units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+### Related Documentation
+- [struct HKQuantityTypeIdentifier](../hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](../hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKQuantity](hkquantity.md)
+- [class HKQuantity](../hkquantity.md)
   An object that stores a value for a given unit.
-- [static let dietaryChromium: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarychromium.md)
+### Ultratrace Minerals
+- [static let dietaryChromium: HKQuantityTypeIdentifier](./dietarychromium.md)
   A quantity sample type that measures the amount of chromium consumed.
-- [static let dietaryCopper: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarycopper.md)
+- [static let dietaryCopper: HKQuantityTypeIdentifier](./dietarycopper.md)
   A quantity sample type that measures the amount of copper consumed.
-- [static let dietaryManganese: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarymanganese.md)
+- [static let dietaryManganese: HKQuantityTypeIdentifier](./dietarymanganese.md)
   A quantity sample type that measures the amount of manganese consumed.
-- [static let dietaryMolybdenum: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarymolybdenum.md)
+- [static let dietaryMolybdenum: HKQuantityTypeIdentifier](./dietarymolybdenum.md)
   A quantity sample type that measures the amount of molybdenum consumed.
-- [static let dietarySelenium: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietaryselenium.md)
+- [static let dietarySelenium: HKQuantityTypeIdentifier](./dietaryselenium.md)
   A quantity sample type that measures the amount of selenium consumed.
 
 

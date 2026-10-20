@@ -1,17 +1,22 @@
 # undoManager(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the undo manager to be used by a web view.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func undoManager(for webView: WebView!) -> UndoManager!
+```
+
+```objc
+- (NSUndoManager *) undoManagerForWebView:(WebView *) webView;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # orient(named:on:orientationWeight:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a constraint with only an orientation demand.
 

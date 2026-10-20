@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when the transition context changes during a transition.
@@ -27,11 +28,12 @@ Implement this method to track the transition between experiences.
 
 ## See Also
 
-- [func experienceController(AVExperienceController, didChangeAvailableExperiences: AVExperienceController.Experiences)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangeavailableexperiences:).md)
+### Responding to experience changes
+- [func experienceController(AVExperienceController, didChangeAvailableExperiences: AVExperienceController.Experiences)](./experiencecontroller%28_,didchangeavailableexperiences%29.md)
   Tells the delegate when the available experiences change.
-- [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:preparefortransitionusing:).md)
+- [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](./experiencecontroller%28_,preparefortransitionusing%29.md)
   Tells the delegate that the system is preparing for a transition.
-- [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
+- [AVExperienceController.TransitionContext](../transitioncontext.md)
   The state of the transition that the system provides to the delegate object.
 
 

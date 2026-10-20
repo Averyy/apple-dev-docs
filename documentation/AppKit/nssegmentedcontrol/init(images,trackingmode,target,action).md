@@ -1,7 +1,8 @@
 # init(images:trackingMode:target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a standard segmented control containing one segment for each of the provided images.
 
@@ -12,6 +13,10 @@ Creates a standard segmented control containing one segment for each of the prov
 
 ```swift
 convenience init(images: [NSImage], trackingMode: NSSegmentedControl.SwitchTracking, target: Any?, action: Selector?)
+```
+
+```objc
++ (instancetype) segmentedControlWithImages:(NSArray<NSImage *> *) images trackingMode:(NSSegmentSwitchTracking) trackingMode target:(id) target action:(SEL) action;
 ```
 
 #### Return Value
@@ -31,7 +36,8 @@ To ensure accessibility for this control, set the `accessibilityDescription` pro
 
 ## See Also
 
-- [convenience init(labels: [String], trackingMode: NSSegmentedControl.SwitchTracking, target: Any?, action: Selector?)](nssegmentedcontrol/init(labels:trackingmode:target:action:).md)
+### Creating a segmented control
+- [convenience init(labels: [String], trackingMode: NSSegmentedControl.SwitchTracking, target: Any?, action: Selector?)](./init%28labels,trackingmode,target,action%29.md)
   Creates a standard segmented control containing one segment for each of the provided labels.
 
 

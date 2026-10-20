@@ -1,7 +1,8 @@
 # topTrailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The top trailing corner style.
 

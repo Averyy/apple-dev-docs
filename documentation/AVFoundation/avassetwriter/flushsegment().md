@@ -1,7 +1,8 @@
 # flushSegment()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the current segment and outputs it to a delegate method.
 
@@ -19,21 +20,26 @@ Closes the current segment and outputs it to a delegate method.
 func flushSegment()
 ```
 
+```objc
+- (void) flushSegment;
+```
+
 #### Discussion
 
-Call this method only when the [`preferredOutputSegmentInterval`](avassetwriter/preferredoutputsegmentinterval.md) property value is [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite).
+Call this method only when the [`preferredOutputSegmentInterval`](./preferredoutputsegmentinterval.md) property value is [`indefinite`](../../CoreMedia/cmtime/indefinite.md).
 
 ## See Also
 
-- [var delegate: (any AVAssetWriterDelegate)?](avassetwriter/delegate.md)
+### Configuring segment writing
+- [var delegate: (any AVAssetWriterDelegate)?](./delegate.md)
   A delegate object that responds to asset-writing events.
-- [protocol AVAssetWriterDelegate](avassetwriterdelegate.md)
+- [protocol AVAssetWriterDelegate](../avassetwriterdelegate.md)
   A delegate protocol that defines the methods to implement to respond to asset-writing events.
-- [var preferredOutputSegmentInterval: CMTime](avassetwriter/preferredoutputsegmentinterval.md)
+- [var preferredOutputSegmentInterval: CMTime](./preferredoutputsegmentinterval.md)
   The interval of output segments that you prefer.
-- [var initialSegmentStartTime: CMTime](avassetwriter/initialsegmentstarttime.md)
+- [var initialSegmentStartTime: CMTime](./initialsegmentstarttime.md)
   The start time of the initial segment.
-- [var outputFileTypeProfile: AVFileTypeProfile?](avassetwriter/outputfiletypeprofile.md)
+- [var outputFileTypeProfile: AVFileTypeProfile?](./outputfiletypeprofile.md)
   A profile for the output file type.
 
 

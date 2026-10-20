@@ -1,7 +1,8 @@
 # fieldsIncludedAreCleared
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets whether the fields associated with the reset action are cleared when the action is performed.
 
@@ -19,13 +20,18 @@ Sets whether the fields associated with the reset action are cleared when the ac
 var fieldsIncludedAreCleared: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL fieldsIncludedAreCleared;
+```
+
 ## Parameters
 
-- `include`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to clear the fields associated with the action when the reset action is performed. Pass [`false`](https://developer.apple.com/documentation/swift/false) to exclude from the reset action only the fields associated with the action.
+- `include`: Pass [`true`](../../Swift/true.md) to clear the fields associated with the action when the reset action is performed. Pass [`false`](../../Swift/false.md) to exclude from the reset action only the fields associated with the action.
 
 ## See Also
 
-- [class PDFActionResetForm](pdfactionresetform.md)
+### Related Documentation
+- [class PDFActionResetForm](../pdfactionresetform.md)
   `PDFActionResetForm`, a subclass of `PDFAction`, defines methods for getting and clearing fields in a PDF form.
 
 

@@ -1,7 +1,8 @@
 # init(colorSpace:hue:saturation:brightness:alpha:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object with the specified color space, hue, saturation, brightness, and alpha channel values.
 
@@ -12,6 +13,10 @@ Creates a color object with the specified color space, hue, saturation, brightne
 
 ```swift
 init(colorSpace space: NSColorSpace, hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)
+```
+
+```objc
++ (NSColor *) colorWithColorSpace:(NSColorSpace *) space hue:(CGFloat) hue saturation:(CGFloat) saturation brightness:(CGFloat) brightness alpha:(CGFloat) alpha;
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ The color object.
 
 ## See Also
 
-- [init(calibratedHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](nscolor/init(calibratedhue:saturation:brightness:alpha:).md)
+### Creating a color using HSB components
+- [init(calibratedHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](./init%28calibratedhue,saturation,brightness,alpha%29.md)
   Creates a color object using the given opacity and HSB color space components.
-- [init(deviceHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](nscolor/init(devicehue:saturation:brightness:alpha:).md)
+- [init(deviceHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](./init%28devicehue,saturation,brightness,alpha%29.md)
   Creates a color object using the given opacity value and HSB color space components.
-- [init(hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](nscolor/init(hue:saturation:brightness:alpha:).md)
+- [init(hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](./init%28hue,saturation,brightness,alpha%29.md)
   Creates a color object with the specified hue, saturation, brightness, and alpha channel values.
 
 

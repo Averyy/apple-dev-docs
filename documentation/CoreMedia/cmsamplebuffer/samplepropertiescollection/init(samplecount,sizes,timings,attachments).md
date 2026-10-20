@@ -1,7 +1,8 @@
 # init(sampleCount:sizes:timings:attachments:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a collection with specified sample information.
 

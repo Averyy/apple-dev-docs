@@ -1,7 +1,8 @@
 # inlinePresentationIntent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attribute that provides details for an inline Markdown element.
 
@@ -20,21 +21,26 @@ An attribute that provides details for an inline Markdown element.
 static let inlinePresentationIntent: NSAttributedString.Key
 ```
 
+```c
+extern NSAttributedStringKey const NSInlinePresentationIntentAttributeName;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](nsnumber.md) that contains a value from the [`InlinePresentationIntent`](inlinepresentationintent.md) type. This value indicates the Markdown formatting to apply to the range of text.
+The value of this key is an [`NSNumber`](../../nsnumber.md) that contains a value from the [`InlinePresentationIntent`](../../inlinepresentationintent.md) type. This value indicates the Markdown formatting to apply to the range of text.
 
 The system provides default visual treatments for ranges of text with this attribute. To replace the default visual treatment, remove this attribute and replace it with the formatting options you want.
 
 ## See Also
 
-- [static let presentationIntentAttributeName: NSAttributedString.Key](nsattributedstring/key/presentationintentattributename.md)
+### Getting Markdown attribute keys
+- [static let presentationIntentAttributeName: NSAttributedString.Key](./presentationintentattributename.md)
   An attribute that provides details for a block-level Markdown element.
-- [static let markdownSourcePosition: NSAttributedString.Key](nsattributedstring/key/markdownsourceposition.md)
+- [static let markdownSourcePosition: NSAttributedString.Key](./markdownsourceposition.md)
   The position in a Markdown source string corresponding to some attributed text.
-- [static let alternateDescription: NSAttributedString.Key](nsattributedstring/key/alternatedescription.md)
+- [static let alternateDescription: NSAttributedString.Key](./alternatedescription.md)
   An alternate description for a URL or image.
-- [static let imageURL: NSAttributedString.Key](nsattributedstring/key/imageurl.md)
+- [static let imageURL: NSAttributedString.Key](./imageurl.md)
   The URL for an image in Markdown text.
 
 

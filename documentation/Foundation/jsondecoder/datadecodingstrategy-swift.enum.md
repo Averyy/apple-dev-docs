@@ -1,7 +1,8 @@
 # JSONDecoder.DataDecodingStrategy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The strategies for decoding raw data.
 
@@ -23,24 +24,25 @@ enum DataDecodingStrategy
 ## Topics
 
 ### Base64 Decoding
-- [JSONDecoder.DataDecodingStrategy.base64](jsondecoder/datadecodingstrategy-swift.enum/base64.md)
+- [JSONDecoder.DataDecodingStrategy.base64](./datadecodingstrategy-swift.enum/base64.md)
   The strategy that decodes data using Base 64 decoding.
 ### Custom Decoding
-- [JSONDecoder.DataDecodingStrategy.custom(_:)](jsondecoder/datadecodingstrategy-swift.enum/custom(_:).md)
+- [JSONDecoder.DataDecodingStrategy.custom(_:)](./datadecodingstrategy-swift.enum/custom%28_%29.md)
   The strategy that decodes data using a user-defined function.
 ### Data Decoding
-- [JSONDecoder.DataDecodingStrategy.deferredToData](jsondecoder/datadecodingstrategy-swift.enum/deferredtodata.md)
+- [JSONDecoder.DataDecodingStrategy.deferredToData](./datadecodingstrategy-swift.enum/deferredtodata.md)
   The strategy that encodes data using the encoding specified by the data instance itself.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var dataDecodingStrategy: JSONDecoder.DataDecodingStrategy](jsondecoder/datadecodingstrategy-swift.property.md)
+### Decoding Raw Data
+- [var dataDecodingStrategy: JSONDecoder.DataDecodingStrategy](./datadecodingstrategy-swift.property.md)
   The strategy that a decoder uses to decode raw data.
 
 

@@ -1,7 +1,8 @@
 # orderObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+int32_t orderObject(const OSMetaClassBase *anObject);
+```
+
+*macOS*
+
+```cpp
 virtual SInt32 orderObject(const OSMetaClassBase *anObject);
 ```
 

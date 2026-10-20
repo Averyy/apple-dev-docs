@@ -1,7 +1,8 @@
 # dismissOnDisconnect(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Dismisses the immersive space when the session disconnects.
 

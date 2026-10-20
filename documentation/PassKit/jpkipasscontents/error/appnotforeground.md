@@ -1,7 +1,8 @@
 # JPKIPassContents.Error.appNotForeground
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The calling app isn’t in the foreground.
 
@@ -17,13 +18,14 @@ case appNotForeground
 
 ## See Also
 
-- [JPKIPassContents.Error.biometricUnavailable](jpkipasscontents/error/biometricunavailable.md)
+### Error cases
+- [JPKIPassContents.Error.biometricUnavailable](./biometricunavailable.md)
   Biometric authorization isn’t available.
-- [JPKIPassContents.Error.incorrectUserAuthentication](jpkipasscontents/error/incorrectuserauthentication.md)
+- [JPKIPassContents.Error.incorrectUserAuthentication](./incorrectuserauthentication.md)
   The provided credential authentication request wasn’t accepted.
-- [JPKIPassContents.Error.invalidInput](jpkipasscontents/error/invalidinput.md)
+- [JPKIPassContents.Error.invalidInput](./invalidinput.md)
   The PIN or password doesn’t meet the specified conditions.
-- [JPKIPassContents.Error.resourceNotAvailable](jpkipasscontents/error/resourcenotavailable.md)
+- [JPKIPassContents.Error.resourceNotAvailable](./resourcenotavailable.md)
   The system resouce is currently unavailable.
 
 

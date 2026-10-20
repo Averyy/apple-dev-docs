@@ -1,16 +1,17 @@
 # top
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The top edge inset value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ The top edge inset value.
 var top: CGFloat
 ```
 
+```c
+CGFloat top;
+```
+
 ## See Also
 
-- [var bottom: CGFloat](uiedgeinsets/bottom.md)
+### Getting the edge values
+- [var bottom: CGFloat](./bottom.md)
   The bottom edge inset value.
-- [var left: CGFloat](uiedgeinsets/left.md)
+- [var left: CGFloat](./left.md)
   The left edge inset value.
-- [var right: CGFloat](uiedgeinsets/right.md)
+- [var right: CGFloat](./right.md)
   The right edge inset value.
 
 

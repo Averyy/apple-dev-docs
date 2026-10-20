@@ -1,7 +1,8 @@
 # blurRadius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the bloom blur kernel as a percentage of viewport height
 
@@ -25,9 +26,10 @@ Valid range: `[3, 12]`
 
 ## See Also
 
-- [var strength: Float](bloomoptionscomponent/strength.md)
+### Configuring the bloom effect
+- [var strength: Float](./strength.md)
   The intensity of the bloom effect.
-- [var threshold: Float](bloomoptionscomponent/threshold.md)
+- [var threshold: Float](./threshold.md)
   The brightness threshold for bloom activation.
 
 

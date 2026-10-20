@@ -1,7 +1,8 @@
 # kSecValueData
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the item’s data.
 
@@ -20,14 +21,18 @@ A key whose value is the item’s data.
 let kSecValueData: CFString
 ```
 
+```c
+extern CFStringRef const kSecValueData;
+```
+
 ## Mentions
 
-- [Searching for keychain items](searching-for-keychain-items.md)
-- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
+- [Searching for keychain items](./searching-for-keychain-items.md)
+- [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata).  For keys and password items, the data is secret (encrypted) and may require the user to enter a password for access.
+The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md).  For keys and password items, the data is secret (encrypted) and may require the user to enter a password for access.
 
 
 ---

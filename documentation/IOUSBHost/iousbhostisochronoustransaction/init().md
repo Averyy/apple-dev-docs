@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: IOUSBHost  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -15,7 +16,8 @@ init()
 
 ## See Also
 
-- [init(status: IOReturn, requestCount: UInt32, offset: UInt32, completeCount: UInt32, timeStamp: IOUSBHostTime, options: IOUSBHostIsochronousTransactionOptions)](iousbhostisochronoustransaction/init(status:requestcount:offset:completecount:timestamp:options:).md)
+### Initializers
+- [init(status: IOReturn, requestCount: UInt32, offset: UInt32, completeCount: UInt32, timeStamp: IOUSBHostTime, options: IOUSBHostIsochronousTransactionOptions)](./init%28status,requestcount,offset,completecount,timestamp,options%29.md)
 
 
 ---

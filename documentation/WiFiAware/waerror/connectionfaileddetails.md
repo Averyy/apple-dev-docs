@@ -1,7 +1,8 @@
 # WAError.ConnectionFailedDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing the failed connection.
 
@@ -19,14 +20,15 @@ struct ConnectionFailedDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case connectionFailed(WAError.ConnectionFailedDetails)](waerror/connectionfailed(_:).md)
+### Checking for connection
+- [case connectionFailed(WAError.ConnectionFailedDetails)](./connectionfailed%28_%29.md)
   An error that occurs if the service is unable to connect.
 
 

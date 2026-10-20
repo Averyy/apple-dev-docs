@@ -1,7 +1,8 @@
 # <(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean array that indicates whether the corresponding element of a column type is less than a value.
 
@@ -19,6 +20,8 @@ Returns a Boolean array that indicates whether the corresponding element of a co
 ```swift
 static func < (lhs: Self, rhs: Self.Element) -> [Bool]
 ```
+
+Available when `Element` conforms to `Comparable`.
 
 #### Return Value
 

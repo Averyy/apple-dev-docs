@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates and initializes an instance of the custom property class.
 
@@ -10,33 +11,34 @@ Allocates and initializes an instance of the custom property class.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserAudioCustomProperty> Create(IOUserAudioDriver *in_audio_driver, IOUserAudioObjectPropertyAddress in_prop_addr, bool in_is_property_settable, IOUserAudioCustomPropertyDataType in_qualifier_data_type, IOUserAudioCustomPropertyDataType in_data_type);
 ```
 
 #### Return Value
 
-A poiner to an [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md), if allocation and initialization succeeded.
+A poiner to an [`IOUserAudioCustomProperty`](../iouseraudiocustomproperty.md), if allocation and initialization succeeded.
 
 #### Discussion
 
-If you subclass [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md) to override this class’ behavior, don’t use [`Create`](iouseraudiocustomproperty/create.md) to allocate and initialize the custom subclass.
+If you subclass [`IOUserAudioCustomProperty`](../iouseraudiocustomproperty.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 
 ## Parameters
 
-- `in_audio_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
-- `in_prop_addr`: [`IOUserAudioObjectPropertyAddress`](audiodriverkit/iouseraudioobjectpropertyaddress.md) of the custom property.
+- `in_audio_driver`: The [`IOUserAudioDriver`](../iouseraudiodriver.md) that owns this object.
+- `in_prop_addr`: [`IOUserAudioObjectPropertyAddress`](../audiodriverkit-page/iouseraudioobjectpropertyaddress.md) of the custom property.
 - `in_is_property_settable`: A Boolean value that indicates if the property can be set.
-- `in_qualifier_data_type`: The [`IOUserAudioCustomPropertyDataType`](audiodriverkit/iouseraudiocustompropertydatatype.md) for custom property’s qualifier data value.
-- `in_data_type`: The [`IOUserAudioCustomPropertyDataType`](audiodriverkit/iouseraudiocustompropertydatatype.md) for custom property’s data value.This value can’t be `IOUserAudioCustomPropertyDataType::None`.
+- `in_qualifier_data_type`: The [`IOUserAudioCustomPropertyDataType`](../audiodriverkit-page/iouseraudiocustompropertydatatype.md) for custom property’s qualifier data value.
+- `in_data_type`: The [`IOUserAudioCustomPropertyDataType`](../audiodriverkit-page/iouseraudiocustompropertydatatype.md) for custom property’s data value.This value can’t be `IOUserAudioCustomPropertyDataType::None`.
 
 ## See Also
 
-- [init](iouseraudiocustomproperty/init.md)
+### Creating a Custom Property
+- [init](./init.md)
   Initializes an instance of a custom property.
-- [IOUserAudioObjectPropertyAddress](audiodriverkit/iouseraudioobjectpropertyaddress.md)
+- [IOUserAudioObjectPropertyAddress](../audiodriverkit-page/iouseraudioobjectpropertyaddress.md)
   An object that collects the three parts — selector, scope, and element — that identify a specific property.
-- [IOUserAudioCustomPropertyDataType](audiodriverkit/iouseraudiocustompropertydatatype.md)
+- [IOUserAudioCustomPropertyDataType](../audiodriverkit-page/iouseraudiocustompropertydatatype.md)
   A data and qualifier type used for custom properties.
 
 

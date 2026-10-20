@@ -1,14 +1,15 @@
 # get_arm_cpu_version
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t get_arm_cpu_version(void);
 ```
 

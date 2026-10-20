@@ -1,7 +1,8 @@
 # audioExposureSampleLifetime
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var audioExposureSampleLifetime: SRAcousticSettings.SampleLifetime { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) SRAcousticSettingsSampleLifetime audioExposureSampleLifetime;
 ```
 
 #### Discussion

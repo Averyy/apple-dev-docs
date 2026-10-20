@@ -1,6 +1,7 @@
 # Language code values
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Indicate the language associated with a particular object using language codes.
 
@@ -8,7 +9,7 @@ Indicate the language associated with a particular object using language codes.
 
 Some elements of a QuickTime file may be associated with a particular spoken language. To indicate the language associated with a particular object, the QuickTime file format uses either language codes from the Macintosh Script Manager or ISO language codes (as specified in *ISO 639-2/T*).
 
-QuickTime stores language codes as unsigned 16-bit fields. All Macintosh language codes have a value that is less than `0x400` except for the single value `0x7FFF` indicating an unspecified language. ISO language codes are three-character codes, and are stored inside the 16-bit language code field as packed arrays, as described in [`Language code values`](language_code_values.md). If treated as an unsigned 16-bit integer, an ISO language code always has a value of `0x400` or greater unless the code is equal to the value `0x7FFF` indicating an Unspecified Macintosh language code.
+QuickTime stores language codes as unsigned 16-bit fields. All Macintosh language codes have a value that is less than `0x400` except for the single value `0x7FFF` indicating an unspecified language. ISO language codes are three-character codes, and are stored inside the 16-bit language code field as packed arrays, as described in [Language code values](./language_code_values.md). If treated as an unsigned 16-bit integer, an ISO language code always has a value of `0x400` or greater unless the code is equal to the value `0x7FFF` indicating an Unspecified Macintosh language code.
 
 If the language is specified using a Macintosh language code, any associated text uses Macintosh text encoding.
 
@@ -16,9 +17,9 @@ If the language is specified using an ISO language code, any associated text use
 
 > **Note**: ISO language codes cannot be used for all elements of a QuickTime file. ISO language codes can be used *only for user data text*. All other elements, including text tracks, must be specified using Macintosh language codes.
 
-> **Note**: ISO 639-2/T codes do not distinguish between certain language variations. Use an extended language tag atom (`'elng'`) to make these distinctions. For example, ISO 639-2T does not distinguish between traditional and simplified Chinese, so also use `'elng'` with the value `"zh-Hant"` or `"zh-Hans"`, respectively. See [`Extended language tag atom`](extended_language_tag_atom.md).
+> **Note**: ISO 639-2/T codes do not distinguish between certain language variations. Use an extended language tag atom (`'elng'`) to make these distinctions. For example, ISO 639-2T does not distinguish between traditional and simplified Chinese, so also use `'elng'` with the value `"zh-Hant"` or `"zh-Hans"`, respectively. See [`Extended language tag atom`](./extended_language_tag_atom.md).
 
-#### Macintosh Language Codes
+#### Macintosh language codes
 
 The following table lists QuickTime language code values.
 
@@ -134,7 +135,7 @@ The following table lists QuickTime language code values.
 | JavaneseRom | `138` |
 | Unspecified | `32767` |
 
-#### Iso Language Codes
+#### ISO language codes
 
 Because the language codes specified by ISO 639-2/T are three characters long, they must be packed to fit into a 16-bit field. The packing algorithm must map each of the three characters, which are always lowercase, into a 5-bit integer and then concatenate these integers into the least significant 15 bits of a 16-bit integer, leaving the 16-bit integer’s most significant bit set to zero.
 

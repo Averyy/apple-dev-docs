@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decodes a value of the given type.
@@ -27,13 +28,21 @@ A value of the requested type, if present for the given key and convertible to t
 
 #### Discussion
 
-> **Note**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
+> **Throws**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 
-> **Note**: `DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
+> **Throws**: `DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
 
 ## Parameters
 
 - `type`: The type of value to decode.
+
+## Default Implementations
+
+### UnkeyedDecodingContainer Implementations
+- [func decode(UInt128.Type) throws -> UInt128](./decode%28_%29-4c0se.md)
+  Decodes a value of the given type.
+- [func decode(Int128.Type) throws -> Int128](./decode%28_%29-6k8gu.md)
+  Decodes a value of the given type.
 
 
 ---

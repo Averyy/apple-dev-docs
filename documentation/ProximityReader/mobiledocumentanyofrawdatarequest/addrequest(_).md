@@ -1,7 +1,8 @@
 # addRequest(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the request as a candidate of this composite request.
 
@@ -18,7 +19,7 @@ mutating func addRequest(_ request: any MobileDocumentRawDataRequest)
 
 #### Discussion
 
-> **Note**: A request isn’t considered valid if it contains requests that are not raw data requests. If you call [`requestDocument(_:)`](mobiledocumentreadersession/requestdocument(_:).md) with an invalid request, the framework throws a [`MobileDocumentReaderError.invalidRequest`](mobiledocumentreadererror/invalidrequest.md) error.
+> **Note**: A request isn’t considered valid if it contains requests that are not raw data requests. If you call [`requestDocument(_:)`](../mobiledocumentreadersession/requestdocument%28_%29.md) with an invalid request, the framework throws a [`MobileDocumentReaderError.invalidRequest`](../mobiledocumentreadererror/invalidrequest.md) error.
 
 ## Parameters
 
@@ -26,7 +27,8 @@ mutating func addRequest(_ request: any MobileDocumentRawDataRequest)
 
 ## See Also
 
-- [init()](mobiledocumentanyofrawdatarequest/init.md)
+### Initializing a raw data request
+- [init()](./init%28%29.md)
   Returns a composite mobile document raw data request.
 
 

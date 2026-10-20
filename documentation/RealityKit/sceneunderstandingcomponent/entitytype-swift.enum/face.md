@@ -1,7 +1,8 @@
 # SceneUnderstandingComponent.EntityType.face
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An entity that models a face that the framework detects in the physical environment.
 
@@ -18,7 +19,8 @@ case face
 
 ## See Also
 
-- [SceneUnderstandingComponent.EntityType.meshChunk](sceneunderstandingcomponent/entitytype-swift.enum/meshchunk.md)
+### Choosing the entity type
+- [SceneUnderstandingComponent.EntityType.meshChunk](./meshchunk.md)
   An entity that models the physical shape of the environment within a given cubic region.
 
 

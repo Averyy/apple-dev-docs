@@ -1,7 +1,8 @@
 # HistoryProviding
 
 **Framework**: SwiftData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that enables a custom data store to provide the history of changes for its persisted models.
 
@@ -24,32 +25,33 @@ protocol HistoryProviding
 ## Topics
 
 ### Processing history fetch requests
-- [func fetchHistory(HistoryDescriptor<Self.HistoryType>) throws -> [Self.HistoryType]](historyproviding/fetchhistory(_:).md)
+- [func fetchHistory(HistoryDescriptor<Self.HistoryType>) throws -> [Self.HistoryType]](./historyproviding/fetchhistory%28_%29.md)
 ### Deleting history
-- [func deleteHistory(HistoryDescriptor<Self.HistoryType>) throws](historyproviding/deletehistory(_:).md)
+- [func deleteHistory(HistoryDescriptor<Self.HistoryType>) throws](./historyproviding/deletehistory%28_%29.md)
 ### Getting the history transaction type
-- [associatedtype HistoryType : HistoryTransaction](historyproviding/historytype-swift.associatedtype.md)
+- [associatedtype HistoryType : HistoryTransaction](./historyproviding/historytype-swift.associatedtype.md)
 ### Type Properties
-- [static var historyType: Self.HistoryType.Type](historyproviding/historytype-swift.type.property.md)
+- [static var historyType: Self.HistoryType.Type](./historyproviding/historytype-swift.type.property.md)
 
 ## Relationships
 
 ### Conforming Types
-- [DefaultStore](defaultstore.md)
+- [DefaultStore](./defaultstore.md)
 
 ## See Also
 
-- [Maintaining a local copy of server data](maintaining-a-local-copy-of-server-data.md)
+### Model storage
+- [Maintaining a local copy of server data](./maintaining-a-local-copy-of-server-data.md)
   Create and update a persistent store to cache read-only network data.
-- [class DefaultStore](defaultstore.md)
+- [class DefaultStore](./defaultstore.md)
   A data store that uses Core Data as its undelying storage mechanism.
-- [protocol DataStore](datastore.md)
+- [protocol DataStore](./datastore.md)
   An interface that enables SwiftData to read and write model data without knowledge of the underlying storage mechanism.
-- [protocol DataStoreBatching](datastorebatching.md)
+- [protocol DataStoreBatching](./datastorebatching.md)
   An interface that enables a custom data store to support batch requests.
-- [Building a document-based app using SwiftData](../swiftui/building-a-document-based-app-using-swiftdata.md)
+- [Building a document-based app using SwiftData](../SwiftUI/building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
-- [struct ModelDocument](modeldocument.md)
+- [struct ModelDocument](./modeldocument.md)
   A document type that uses SwiftData to manage its storage.
 
 

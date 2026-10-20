@@ -1,19 +1,20 @@
 # configureReport
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Track IOService::configureReport(), provide sizing info
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOReturn configureReport(IOReportChannelList *channelList, IOReportConfigureAction action, uint32_t & elementCount);
 ```
 
@@ -39,12 +40,13 @@ Locking: same-instance concurrency SAFE, MAY BLOCK
 
 ## See Also
 
-- [addChannel](ioreporter/addchannel.md)
+### Instance Methods
+- [addChannel](./addchannel.md)
   Add an additional, similar channel to the reporter.
-- [createLegend](ioreporter/createlegend.md)
+- [createLegend](./createlegend.md)
   Create a legend entry represending this reporter’s channels.
-- [free](ioreporter/free.md)
-- [updateReport](ioreporter/updatereport.md)
+- [free](./free.md)
+- [updateReport](./updatereport.md)
   Produce standard reply to IOService::updateReport()
 
 

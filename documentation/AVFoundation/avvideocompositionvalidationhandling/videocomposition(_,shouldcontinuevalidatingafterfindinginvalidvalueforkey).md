@@ -1,7 +1,8 @@
 # videoComposition(_:shouldContinueValidatingAfterFindingInvalidValueForKey:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports that a key that has an invalid value.
 
@@ -19,9 +20,13 @@ Reports that a key that has an invalid value.
 optional func videoComposition(_ videoComposition: AVVideoComposition, shouldContinueValidatingAfterFindingInvalidValueForKey key: String) -> Bool
 ```
 
+```objc
+- (BOOL) videoComposition:(AVVideoComposition *) videoComposition shouldContinueValidatingAfterFindingInvalidValueForKey:(NSString *) key;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the video composition should continue validation in order to report additional problems that may exist, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the video composition should continue validation in order to report additional problems that may exist, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,11 +35,12 @@ optional func videoComposition(_ videoComposition: AVVideoComposition, shouldCon
 
 ## See Also
 
-- [func videoComposition(AVVideoComposition, shouldContinueValidatingAfterFindingEmptyTimeRange: CMTimeRange) -> Bool](avvideocompositionvalidationhandling/videocomposition(_:shouldcontinuevalidatingafterfindingemptytimerange:).md)
+### Configuring validation methods
+- [func videoComposition(AVVideoComposition, shouldContinueValidatingAfterFindingEmptyTimeRange: CMTimeRange) -> Bool](./videocomposition%28_,shouldcontinuevalidatingafterfindingemptytimerange%29.md)
   Reports a time range that has no corresponding video composition instruction.
-- [func videoComposition(AVVideoComposition, shouldContinueValidatingAfterFindingInvalidTimeRangeIn: any AVVideoCompositionInstructionProtocol) -> Bool](avvideocompositionvalidationhandling/videocomposition(_:shouldcontinuevalidatingafterfindinginvalidtimerangein:).md)
+- [func videoComposition(AVVideoComposition, shouldContinueValidatingAfterFindingInvalidTimeRangeIn: any AVVideoCompositionInstructionProtocol) -> Bool](./videocomposition%28_,shouldcontinuevalidatingafterfindinginvalidtimerangein%29.md)
   Reports a video composition instruction with a time range that is invalid.
-- [func videoComposition(AVVideoComposition, shouldContinueValidatingAfterFindingInvalidTrackIDIn: any AVVideoCompositionInstructionProtocol, layerInstruction: AVVideoCompositionLayerInstruction, asset: AVAsset) -> Bool](avvideocompositionvalidationhandling/videocomposition(_:shouldcontinuevalidatingafterfindinginvalidtrackidin:layerinstruction:asset:).md)
+- [func videoComposition(AVVideoComposition, shouldContinueValidatingAfterFindingInvalidTrackIDIn: any AVVideoCompositionInstructionProtocol, layerInstruction: AVVideoCompositionLayerInstruction, asset: AVAsset) -> Bool](./videocomposition%28_,shouldcontinuevalidatingafterfindinginvalidtrackidin,layerinstruction,asset%29.md)
   Reports a video composition layer instruction that does not correspond to the track ID used for the composition’s animation or to a track of the asset.
 
 

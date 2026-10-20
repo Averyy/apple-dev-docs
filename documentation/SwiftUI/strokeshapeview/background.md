@@ -1,7 +1,8 @@
 # background
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background shown beneath this view.
 
@@ -23,13 +24,14 @@ nonisolated var background: Background { get set }
 
 ## See Also
 
-- [var isAntialiased: Bool](strokeshapeview/isantialiased.md)
+### Getting shape view properties
+- [var isAntialiased: Bool](./isantialiased.md)
   Whether this shape should be drawn antialiased.
-- [var shape: Content](strokeshapeview/shape.md)
+- [var shape: Content](./shape.md)
   The shape that this type draws and provides for other drawing operations.
-- [var strokeStyle: StrokeStyle](strokeshapeview/strokestyle.md)
+- [var strokeStyle: StrokeStyle](./strokestyle.md)
   The stroke style used when stroking this view’s shape.
-- [var style: Style](strokeshapeview/style.md)
+- [var style: Style](./style.md)
   The style that strokes this view’s shape.
 
 

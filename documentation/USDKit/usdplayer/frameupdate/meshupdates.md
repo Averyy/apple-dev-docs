@@ -1,7 +1,8 @@
 # meshUpdates
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 IDs of meshes with delta changes this frame.
 

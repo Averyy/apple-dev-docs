@@ -1,7 +1,8 @@
 # NSTextSelection.Affinity.upstream
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that defines the visual location of the text cursor to the tail of the previous line.
 
@@ -14,9 +15,14 @@ The value that defines the visual location of the text cursor to the tail of the
 case upstream
 ```
 
+```c
+NSTextSelectionAffinityUpstream
+```
+
 ## See Also
 
-- [NSTextSelection.Affinity.downstream](nstextselection/affinity-swift.enum/downstream.md)
+### Affinities
+- [NSTextSelection.Affinity.downstream](./downstream.md)
   The value that defines the visual location of the text cursor between the head of line that contains the selection location.
 
 

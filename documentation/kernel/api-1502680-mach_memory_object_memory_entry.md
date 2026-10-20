@@ -1,20 +1,22 @@
 # mach_memory_object_memory_entry
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t mach_memory_object_memory_entry(host_t host, boolean_t internal, vm_size_t size, vm_prot_t permission, memory_object_t pager, mach_port_t *entry_handle);
 ```
 
 ## See Also
 
-- [mach_memory_object_memory_entry_64](1502560-mach_memory_object_memory_entry_.md)
+### Memory Objects
+- [mach_memory_object_memory_entry_64](./api-1502560-mach_memory_object_memory_entry_.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # RequestDescriptor.detectDocumentSegmentationRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a detect document segmentation request.
 
@@ -22,10 +23,11 @@ case detectDocumentSegmentationRequest(DetectDocumentSegmentationRequest.Revisio
 
 ## See Also
 
-- [case recognizeDocumentsRequest(RecognizeDocumentsRequest.Revision)](requestdescriptor/recognizedocumentsrequest(_:).md)
-- [case generatePersonInstanceMaskRequest(GeneratePersonInstanceMaskRequest.Revision)](requestdescriptor/generatepersoninstancemaskrequest(_:).md)
+### Getting the image sequence descriptor
+- [case recognizeDocumentsRequest(RecognizeDocumentsRequest.Revision)](./recognizedocumentsrequest%28_%29.md)
+- [case generatePersonInstanceMaskRequest(GeneratePersonInstanceMaskRequest.Revision)](./generatepersoninstancemaskrequest%28_%29.md)
   A descriptor that describes a generate person instance mask request.
-- [case generatePersonSegmentationRequest(GeneratePersonSegmentationRequest.Revision)](requestdescriptor/generatepersonsegmentationrequest(_:).md)
+- [case generatePersonSegmentationRequest(GeneratePersonSegmentationRequest.Revision)](./generatepersonsegmentationrequest%28_%29.md)
   A descriptor that describes a generate person segmentation request.
 
 

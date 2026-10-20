@@ -9,19 +9,20 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short TIMEOUT_ERR;
 ```
 
 ## See Also
 
-- [CONSTRAINT_ERR](sqlerror/1631070-constraint_err.md)
-- [DATABASE_ERR](sqlerror/1633604-database_err.md)
-- [QUOTA_ERR](sqlerror/1629730-quota_err.md)
-- [SYNTAX_ERR](sqlerror/1629508-syntax_err.md)
-- [TOO_LARGE_ERR](sqlerror/1634288-too_large_err.md)
-- [UNKNOWN_ERR](sqlerror/1631531-unknown_err.md)
-- [VERSION_ERR](sqlerror/1629997-version_err.md)
+### Miscellaneous
+- [CONSTRAINT_ERR](./api-1631070-constraint_err.md)
+- [DATABASE_ERR](./api-1633604-database_err.md)
+- [QUOTA_ERR](./api-1629730-quota_err.md)
+- [SYNTAX_ERR](./api-1629508-syntax_err.md)
+- [TOO_LARGE_ERR](./api-1634288-too_large_err.md)
+- [UNKNOWN_ERR](./api-1631531-unknown_err.md)
+- [VERSION_ERR](./api-1629997-version_err.md)
 
 
 ---

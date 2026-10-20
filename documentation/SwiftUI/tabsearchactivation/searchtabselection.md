@@ -1,7 +1,8 @@
 # searchTabSelection
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Links the search tab’s selection to search activation.
 

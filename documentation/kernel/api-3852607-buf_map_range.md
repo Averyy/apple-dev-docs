@@ -1,14 +1,15 @@
 # buf_map_range
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 errno_t buf_map_range(buf_t bp, caddr_t *io_addr);
 ```
 

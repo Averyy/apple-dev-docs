@@ -1,19 +1,20 @@
 # withNumber
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates an OSNumber object with value from a c-string and size.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSNumberPtr withNumber(const char *valueString, size_t numberOfBits);
 ```
 
@@ -32,11 +33,12 @@ Allocates an OSNumber object with value from a c-string and size.
 
 ## See Also
 
-- [withNumber](osnumber/withnumber-5rcqv.md)
+### Creating a Number Object
+- [withNumber](./withnumber-5rcqv.md)
   Allocates an OSNumber object with value and size.
-- [OSNumberCreateWithUInt64Value](osnumbercreatewithuint64value.md)
-- [free](osnumber/free.md)
-- [OSNumberPtr](osnumberptr.md)
+- [OSNumberCreateWithUInt64Value](../osnumbercreatewithuint64value.md)
+- [free](./free.md)
+- [OSNumberPtr](../osnumberptr.md)
 
 
 ---

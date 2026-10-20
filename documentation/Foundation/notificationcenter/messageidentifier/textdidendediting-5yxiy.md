@@ -1,7 +1,8 @@
 # textDidEndEditing
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var textDidEndEditing: NotificationCenter.BaseMessageIdentifier<NSControl.TextDidEndEditingMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSControl.TextDidEndEditingMessage>`.
 
 
 ---

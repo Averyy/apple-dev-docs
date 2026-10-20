@@ -1,7 +1,8 @@
 # boxConvolve(kernelSize:edgeMode:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Convolves a multiple-plane 8-bit-per-channel pixel buffer with a box filter.
 
@@ -11,7 +12,7 @@ Convolves a multiple-plane 8-bit-per-channel pixel buffer with a box filter.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Convolves a multiple-plane 8-bit-per-channel pixel buffer with a box filter.
 ```swift
 func boxConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8>, destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` conforms to `MultiplePlanePixelFormat` and `Format.ComponentType` is `UInt8`.
 
 ## Parameters
 
@@ -28,13 +31,15 @@ func boxConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8>, de
 
 ## See Also
 
-- [Blurring an image](blurring-an-image.md)
+### Related Documentation
+- [Blurring an image](../../blurring-an-image.md)
   Filter an image by convolving it with custom and high-speed kernels.
-- [func boxConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/boxconvolve(kernelsize:edgemode:destination:)-2h7fy.md)
+### Box convolution
+- [func boxConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8>, destination: vImage.PixelBuffer<Format>)](./boxconvolve%28kernelsize,edgemode,destination%29-2h7fy.md)
   Convolves an 8-bit planar pixel buffer with a box filter.
-- [func boxConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/boxconvolve(kernelsize:edgemode:destination:)-2m20d.md)
+- [func boxConvolve(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888>, destination: vImage.PixelBuffer<Format>)](./boxconvolve%28kernelsize,edgemode,destination%29-2m20d.md)
   Convolves an 8-bit-per-channel, 4-channel interleaved pixel buffer with a box filter.
-- [func boxConvolved(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888>) -> vImage.PixelBuffer<Format>](vimage/pixelbuffer/boxconvolved(kernelsize:edgemode:).md)
+- [func boxConvolved(kernelSize: vImage.Size, edgeMode: vImage.EdgeMode<Pixel_8888>) -> vImage.PixelBuffer<Format>](./boxconvolved%28kernelsize,edgemode%29.md)
   Returns a box-filter convolved 8-bit-per-channel, 4-channel interleaved pixel buffer.
 
 

@@ -1,20 +1,25 @@
 # smf_PreserveTracks
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 static var smf_PreserveTracks: MusicSequenceLoadFlags { get }
+```
+
+```c
+kMusicSequenceLoadSMF_PreserveTracks
 ```
 
 

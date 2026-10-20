@@ -1,7 +1,8 @@
 # AAUSBAccessoryMatchingCriteria.DeviceMatchingCriteria
 
 **Framework**: Accessory Access  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure you provide that enumerates which device characteristics to search for.
 
@@ -17,31 +18,32 @@ struct DeviceMatchingCriteria
 ## Topics
 
 ### Creating a device characteristics structure
-- [init(vendorID: Int?, productID: Int?, deviceClass: Int?, deviceSubClass: Int?, deviceProtocol: Int?, speed: Int?)](aausbaccessorymatchingcriteria/devicematchingcriteria/init(vendorid:productid:deviceclass:devicesubclass:deviceprotocol:speed:).md)
+- [init(vendorID: Int?, productID: Int?, deviceClass: Int?, deviceSubClass: Int?, deviceProtocol: Int?, speed: Int?)](./devicematchingcriteria/init%28vendorid,productid,deviceclass,devicesubclass,deviceprotocol,speed%29.md)
   Initializes a new device matching criteria structure with the provided values.
 ### Device characteristics
-- [var deviceClass: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/deviceclass.md)
+- [var deviceClass: Int?](./devicematchingcriteria/deviceclass.md)
   The value that represents the device class.
-- [var deviceProtocol: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/deviceprotocol.md)
+- [var deviceProtocol: Int?](./devicematchingcriteria/deviceprotocol.md)
   The value that represents the device protocol.
-- [var deviceSubClass: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/devicesubclass.md)
+- [var deviceSubClass: Int?](./devicematchingcriteria/devicesubclass.md)
   The value that represents the device subclass.
-- [var productID: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/productid.md)
+- [var productID: Int?](./devicematchingcriteria/productid.md)
   The value that represents the product ID.
-- [var speed: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/speed.md)
+- [var speed: Int?](./devicematchingcriteria/speed.md)
   The value that represents the device speed.
-- [var vendorID: Int?](aausbaccessorymatchingcriteria/devicematchingcriteria/vendorid.md)
+- [var vendorID: Int?](./devicematchingcriteria/vendorid.md)
   The value that represents the vendor ID.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AAUSBAccessoryMatchingCriteria.InterfaceMatchingCriteria](aausbaccessorymatchingcriteria/interfacematchingcriteria.md)
+### Specifying device and interface criteria
+- [AAUSBAccessoryMatchingCriteria.InterfaceMatchingCriteria](./interfacematchingcriteria.md)
   A structure you provide that enumerates which device interface characteristics to search for.
 
 

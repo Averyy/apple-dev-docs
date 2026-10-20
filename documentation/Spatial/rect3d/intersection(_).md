@@ -1,7 +1,8 @@
 # intersection(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the intersection of two rectangles.
 
@@ -11,7 +12,7 @@ Returns the intersection of two rectangles.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -30,13 +31,14 @@ A new rectangle that is the intersection of two rectangles.
 
 ## See Also
 
-- [var integral: Rect3D](rect3d/integral.md)
+### Creating derived 3D rectangles
+- [var integral: Rect3D](./integral.md)
   Returns the smallest rectangle after converting the source rectangle values to integers.
-- [func formInset(by: Size3D)](rect3d/forminset(by:).md)
+- [func formInset(by: Size3D)](./forminset%28by%29.md)
   Insets the rectangle by the specified size.
-- [func inset(by: Size3D) -> Rect3D](rect3d/inset(by:).md)
+- [func inset(by: Size3D) -> Rect3D](./inset%28by%29.md)
   Returns a new rectangle with the same center point after applying the specified inset amount.
-- [var standardized: Rect3D](rect3d/standardized.md)
+- [var standardized: Rect3D](./standardized.md)
   A rectangle with positive dimensions.
 
 

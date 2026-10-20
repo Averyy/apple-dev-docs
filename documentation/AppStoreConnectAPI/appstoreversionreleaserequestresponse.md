@@ -1,7 +1,8 @@
 # AppStoreVersionReleaseRequestResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single manual release request for an App Store version.
 
@@ -10,7 +11,7 @@ A response containing a single manual release request for an App Store version.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionReleaseRequestResponse
 ```
 
@@ -21,9 +22,10 @@ object AppStoreVersionReleaseRequestResponse
 
 ## See Also
 
-- [object AppStoreVersionReleaseRequestCreateRequest](appstoreversionreleaserequestcreaterequest.md)
+### Objects
+- [object AppStoreVersionReleaseRequestCreateRequest](./appstoreversionreleaserequestcreaterequest.md)
   The request body you use to manually release an App Store approved version of your app.
-- [object AppStoreVersionReleaseRequest](appstoreversionreleaserequest.md)
+- [object AppStoreVersionReleaseRequest](./appstoreversionreleaserequest.md)
   A request to manually release an App Store version that was set to manual release after review approval.
 
 

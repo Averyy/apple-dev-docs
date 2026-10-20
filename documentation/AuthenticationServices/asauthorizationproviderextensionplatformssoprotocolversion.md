@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionPlatformSSOProtocolVersion
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
@@ -12,34 +13,39 @@
 enum ASAuthorizationProviderExtensionPlatformSSOProtocolVersion
 ```
 
+```c
+enum ASAuthorizationProviderExtensionPlatformSSOProtocolVersion : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version1_0](asauthorizationproviderextensionplatformssoprotocolversion/version1_0.md)
-- [ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version2_0](asauthorizationproviderextensionplatformssoprotocolversion/version2_0.md)
+- [ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version1_0](./asauthorizationproviderextensionplatformssoprotocolversion/version1_0.md)
+- [ASAuthorizationProviderExtensionPlatformSSOProtocolVersion.version2_0](./asauthorizationproviderextensionplatformssoprotocolversion/version2_0.md)
 ### Initializers
-- [init?(rawValue: Int)](asauthorizationproviderextensionplatformssoprotocolversion/init(rawvalue:).md)
+- [init?(rawValue: Int)](./asauthorizationproviderextensionplatformssoprotocolversion/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum.md)
-- [ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct.md)
-- [struct ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes.md)
-- [enum ASAuthorizationPublicKeyCredentialAttachment](asauthorizationpublickeycredentialattachment.md)
-- [ASCredentialIdentityStore.IdentityTypes](ascredentialidentitystore/identitytypes.md)
+### Enumerations
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType](./asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](./asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct.md)
+- [struct ASAuthorizationProviderExtensionSupportedGrantTypes](./asauthorizationproviderextensionsupportedgranttypes.md)
+- [enum ASAuthorizationPublicKeyCredentialAttachment](./asauthorizationpublickeycredentialattachment.md)
+- [ASCredentialIdentityStore.IdentityTypes](./ascredentialidentitystore/identitytypes.md)
   The defined identity types for use in retrieving credentials.
-- [enum ASPublicKeyCredentialClientDataCrossOriginValue](aspublickeycredentialclientdatacrossoriginvalue.md)
-- [enum ASUserAgeRange](asuseragerange.md)
+- [enum ASPublicKeyCredentialClientDataCrossOriginValue](./aspublickeycredentialclientdatacrossoriginvalue.md)
+- [enum ASUserAgeRange](./asuseragerange.md)
 
 
 ---

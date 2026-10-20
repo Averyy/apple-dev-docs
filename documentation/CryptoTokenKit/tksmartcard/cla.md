@@ -1,7 +1,8 @@
 # cla
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CLA byte used for APDU transmission. `0x00` by default.
 
@@ -20,11 +21,16 @@ The CLA byte used for APDU transmission. `0x00` by default.
 var cla: UInt8 { get set }
 ```
 
+```objc
+@property UInt8 cla;
+```
+
 ## See Also
 
-- [var useExtendedLength: Bool](tksmartcard/useextendedlength.md)
+### Configuring APDU Behavior
+- [var useExtendedLength: Bool](./useextendedlength.md)
   Whether to use extended length APDU.
-- [var useCommandChaining: Bool](tksmartcard/usecommandchaining.md)
+- [var useCommandChaining: Bool](./usecommandchaining.md)
   Whether to use command chaining of APDU with a data field longer than 255 bytes.
 
 

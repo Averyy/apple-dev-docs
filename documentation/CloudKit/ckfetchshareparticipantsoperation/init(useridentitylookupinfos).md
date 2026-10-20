@@ -1,7 +1,8 @@
 # init(userIdentityLookupInfos:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation for generating share participants from the specified user data.
 
@@ -20,17 +21,22 @@ Creates an operation for generating share participants from the specified user d
 convenience init(userIdentityLookupInfos: [CKUserIdentity.LookupInfo])
 ```
 
+```objc
+- (instancetype) initWithUserIdentityLookupInfos:(NSArray<CKUserIdentityLookupInfo *> *) userIdentityLookupInfos;
+```
+
 #### Discussion
 
-After you create the operation, assign a handler to the [`fetchShareParticipantsCompletionBlock`](ckfetchshareparticipantsoperation/fetchshareparticipantscompletionblock.md) property to process the results.
+After you create the operation, assign a handler to the [`fetchShareParticipantsCompletionBlock`](./fetchshareparticipantscompletionblock.md) property to process the results.
 
 ## Parameters
 
-- `userIdentityLookupInfos`: The user data for the participants. If you specify `nil`, you must assign a value to the [`userIdentityLookupInfos`](ckfetchshareparticipantsoperation/useridentitylookupinfos.md) property before you execute this operation.
+- `userIdentityLookupInfos`: The user data for the participants. If you specify `nil`, you must assign a value to the [`userIdentityLookupInfos`](./useridentitylookupinfos.md) property before you execute this operation.
 
 ## See Also
 
-- [init()](ckfetchshareparticipantsoperation/init.md)
+### Creating an Operation
+- [init()](./init%28%29.md)
   Creates an empty operation.
 
 

@@ -1,7 +1,8 @@
 # SKSceneDelegate
 
 **Framework**: SpriteKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods that, when implemented, allow any class to participate in the SpriteKit render loop callbacks.
 
@@ -20,54 +21,59 @@ Methods that, when implemented, allow any class to participate in the SpriteKit 
 protocol SKSceneDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SKSceneDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Configuring a Physics Body](configuring-a-physics-body.md)
-- [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
-- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
-- [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
-- [Getting Started with Actions](getting-started-with-actions.md)
-- [Getting Started with Nodes](getting-started-with-nodes.md)
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
-- [Subclassing Scenes Versus Assigning a Delegate](subclassing-scenes-versus-assigning-a-delegate.md)
-- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
+- [Configuring a Physics Body](./configuring-a-physics-body.md)
+- [Detecting Changes at Each Step of an Animation](./detecting-changes-at-each-step-of-an-animation.md)
+- [Disconnecting Bodies from Joints](./disconnecting-bodies-from-joints.md)
+- [Displaying 3D Content in a SpriteKit Scene](./displaying-3d-content-in-a-spritekit-scene.md)
+- [Getting Started with Actions](./getting-started-with-actions.md)
+- [Getting Started with Nodes](./getting-started-with-nodes.md)
+- [Responding to Frame-Cycle Events](./responding-to-frame-cycle-events.md)
+- [Subclassing Scenes Versus Assigning a Delegate](./subclassing-scenes-versus-assigning-a-delegate.md)
+- [Use SpriteKit Objects within Scene Delegate Callbacks](./use-spritekit-objects-within-scene-delegate-callbacks.md)
 
 #### Overview
 
-The [`SKSceneDelegate`](skscenedelegate.md) protocol is used to implement a delegate to be called whenever the scene is being animated. Typically, you supply a delegate when you want to use a scene without requiring the scene to be subclassed. The methods in this protocol all correspond to methods implemented by the [`SKScene`](skscene.md) class. If the delegate implements a particular method, that method is called instead of the corresponding method on the scene object.
+The [`SKSceneDelegate`](./skscenedelegate.md) protocol is used to implement a delegate to be called whenever the scene is being animated. Typically, you supply a delegate when you want to use a scene without requiring the scene to be subclassed. The methods in this protocol all correspond to methods implemented by the [`SKScene`](./skscene.md) class. If the delegate implements a particular method, that method is called instead of the corresponding method on the scene object.
 
-When processing a scene, SpriteKit runs a loop that processes and renders the scene. The [`SKSceneDelegate`](skscenedelegate.md) methods allows you to add logic at any step of the loop.
+When processing a scene, SpriteKit runs a loop that processes and renders the scene. The [`SKSceneDelegate`](./skscenedelegate.md) methods allows you to add logic at any step of the loop.
 
-![Frame processing in a scene](/images/com.apple.spritekit/media-2527821@2x.png)
+![Frame processing in a scene](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2527821@2x.png)
 
-> ❗ **Important**:  If your view has a [`SKViewDelegate`](skviewdelegate.md) and its [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) method returns [`false`](https://developer.apple.com/documentation/swift/false), the update is skipped and none of the scene delegate methods are called.
+> ❗ **Important**:  If your view has a [`SKViewDelegate`](./skviewdelegate.md) and its [`view(_:shouldRenderAtTime:)`](./skviewdelegate/view%28_,shouldrenderattime%29.md) method returns [`false`](../Swift/false.md), the update is skipped and none of the scene delegate methods are called.
 
 ## Topics
 
 ### Handling Animation Events
-- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
+- [Use SpriteKit Objects within Scene Delegate Callbacks](./use-spritekit-objects-within-scene-delegate-callbacks.md)
   Follow threading guidelines to keep your SpriteKit app thread safe.
-- [func update(TimeInterval, for: SKScene)](skscenedelegate/update(_:for:).md)
+- [func update(TimeInterval, for: SKScene)](./skscenedelegate/update%28_,for%29.md)
   Tells you to perform any app specific logic to update your scene.
-- [func didEvaluateActions(for: SKScene)](skscenedelegate/didevaluateactions(for:).md)
+- [func didEvaluateActions(for: SKScene)](./skscenedelegate/didevaluateactions%28for%29.md)
   Tells you to peform any necessary logic after scene actions are evaluated.
-- [func didSimulatePhysics(for: SKScene)](skscenedelegate/didsimulatephysics(for:).md)
+- [func didSimulatePhysics(for: SKScene)](./skscenedelegate/didsimulatephysics%28for%29.md)
   Tells you to peform any necessary logic after physics simulations are performed.
-- [func didApplyConstraints(for: SKScene)](skscenedelegate/didapplyconstraints(for:).md)
+- [func didApplyConstraints(for: SKScene)](./skscenedelegate/didapplyconstraints%28for%29.md)
   Tells you to peform any necessary logic after constraints are applied.
-- [func didFinishUpdate(for: SKScene)](skscenedelegate/didfinishupdate(for:).md)
+- [func didFinishUpdate(for: SKScene)](./skscenedelegate/didfinishupdate%28for%29.md)
   Tells you to peform any necessary logic after the scene has finished all of the steps required to process animations.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Subclassing Scenes Versus Assigning a Delegate](subclassing-scenes-versus-assigning-a-delegate.md)
+### Configuring a Delegate
+- [Subclassing Scenes Versus Assigning a Delegate](./subclassing-scenes-versus-assigning-a-delegate.md)
   Use a scene delegate to share app logic across various scenes.
-- [var delegate: (any SKSceneDelegate)?](skscene/delegate.md)
+- [var delegate: (any SKSceneDelegate)?](./skscene/delegate.md)
   A delegate to be called during the animation loop.
 
 

@@ -1,7 +1,8 @@
 # performPrimaryAction()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the method associated with the control’s primary action.
 
@@ -18,17 +19,22 @@ Calls the method associated with the control’s primary action.
 func performPrimaryAction()
 ```
 
+```objc
+- (void) performPrimaryAction;
+```
+
 #### Discussion
 
 This method invokes the primary action for the control, whether it’s a direct action, for example, a button tap, or presents further UI, for example, a contextual menu.
 
 ## See Also
 
-- [func sendAction(UIAction)](uicontrol/sendaction(_:).md)
+### Triggering actions
+- [func sendAction(UIAction)](./sendaction%28_%29.md)
   Like -sendAction:to:forEvent:, this method is called by -sendActionsForControlEvents:. You may override this method to observe or modify behavior. If you override this method, you should call super precisely once to dispatch the action, or not call super to suppress sending that action.
-- [func sendAction(Selector, to: Any?, for: UIEvent?)](uicontrol/sendaction(_:to:for:).md)
+- [func sendAction(Selector, to: Any?, for: UIEvent?)](./sendaction%28_,to,for%29.md)
   Calls the specified action method.
-- [func sendActions(for: UIControl.Event)](uicontrol/sendactions(for:).md)
+- [func sendActions(for: UIControl.Event)](./sendactions%28for%29.md)
   Calls the action methods associated with the specified events.
 
 

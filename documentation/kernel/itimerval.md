@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct itimerval {
     ...
 };
@@ -17,8 +17,8 @@ struct itimerval {
 ## Topics
 
 ### Instance Properties
-- [it_interval](itimerval/1391774-it_interval.md)
-- [it_value](itimerval/1391806-it_value.md)
+- [it_interval](./itimerval/api-1391774-it_interval.md)
+- [it_value](./itimerval/api-1391806-it_value.md)
 
 
 ---

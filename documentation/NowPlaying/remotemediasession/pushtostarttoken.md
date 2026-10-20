@@ -1,9 +1,10 @@
 # pushToStartToken
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The token you use to start a [`RemoteMediaSession`](remotemediasession.md) through a push notification.
+The token you use to start a [`RemoteMediaSession`](../remotemediasession.md) through a push notification.
 
 **Availability**:
 - iOS 27.0+
@@ -17,17 +18,19 @@ The token you use to start a [`RemoteMediaSession`](remotemediasession.md) throu
 static var pushToStartToken: Data? { get }
 ```
 
+Available when `Attributes` conforms to `RemoteMediaSessionAttributes`.
+
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 #### Discussion
 
-The push token for a [`RemoteMediaSession`](remotemediasession.md) may change over time. Use the [`pushToStartTokenUpdates`](remotemediasession/pushtostarttokenupdates.md) asynchronous sequence to receive an updated push-to-start token.
+The push token for a [`RemoteMediaSession`](../remotemediasession.md) may change over time. Use the [`pushToStartTokenUpdates`](./pushtostarttokenupdates.md) asynchronous sequence to receive an updated push-to-start token.
 
 > **Note**: When you receive an updated push token, transmit it securely to your server (for example, over HTTPS) and invalidate the outdated token promptly so it cannot be reused.
 
-> **Note**: The system provisions tokens asynchronously, so this property will be `nil` until provisioning completes. Use [`pushToStartTokenUpdates`](remotemediasession/pushtostarttokenupdates.md) to receive tokens as soon as they become available.
+> **Note**: The system provisions tokens asynchronously, so this property will be `nil` until provisioning completes. Use [`pushToStartTokenUpdates`](./pushtostarttokenupdates.md) to receive tokens as soon as they become available.
 
 
 ---

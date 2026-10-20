@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the given range is contained within this range.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether the given range is contained within t
 ```swift
 func contains(_ other: Range<Bound>) -> Bool
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Return Value
 
@@ -43,7 +46,7 @@ emptyRange.contains(3..<3)   // true
 emptyRange.contains(5..<5)   // true
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # selectionManager(_:shouldBeginSelectionAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether a selection can begin at the specified point.
 
@@ -12,6 +13,10 @@ Asks the delegate whether a selection can begin at the specified point.
 
 ```swift
 optional func selectionManager(_ selectionManager: NSTextSelectionManager, shouldBeginSelectionAt point: NSPoint) -> Bool
+```
+
+```objc
+- (BOOL) selectionManager:(NSTextSelectionManager *) selectionManager shouldBeginSelectionAtPoint:(NSPoint) point;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # AccountQuery
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines an account query.
 
@@ -22,32 +23,33 @@ Use an `AccountQuery` to find and filter a person’s accounts.
 ## Topics
 
 ### Initializers
-- [init(sortDescriptors: [SortDescriptor<Account>], predicate: Predicate<Account>?, limit: Int?, offset: Int?)](accountquery/init(sortdescriptors:predicate:limit:offset:).md)
+- [init(sortDescriptors: [SortDescriptor<Account>], predicate: Predicate<Account>?, limit: Int?, offset: Int?)](./accountquery/init%28sortdescriptors,predicate,limit,offset%29.md)
   Creates a new account query structure with the provided sort descriptors and, optionally, a predicate and limit on the number of records the query should return.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](financestore/transactionhistory(foraccountid:since:ismonitoring:).md)
+### Transactions
+- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](./financestore/transactionhistory%28foraccountid,since,ismonitoring%29.md)
   Returns the transactions for the specified account ID, optional starting time, and monitoring indicator for long running transaction queries.
-- [func transactions(query: TransactionQuery) async throws -> [Transaction]](financestore/transactions(query:).md)
+- [func transactions(query: TransactionQuery) async throws -> [Transaction]](./financestore/transactions%28query%29.md)
   Returns transactions that match the provided transaction query.
-- [struct AccountCreditInformation](accountcreditinformation.md)
+- [struct AccountCreditInformation](./accountcreditinformation.md)
   A structure that describes the credit information associated with an account.
-- [struct CurrencyAmount](currencyamount.md)
+- [struct CurrencyAmount](./currencyamount.md)
   A structure that describes a monetary amount and its currency.
-- [struct Transaction](transaction.md)
+- [struct Transaction](./transaction.md)
   A structure that represents a transaction relating to a specific financial account.
-- [struct TransactionQuery](transactionquery.md)
+- [struct TransactionQuery](./transactionquery.md)
   A structure that describes the parameters to use for a transaction query.
-- [enum TransactionType](transactiontype.md)
+- [enum TransactionType](./transactiontype.md)
   Values that describe kinds of transactions.
-- [enum TransactionStatus](transactionstatus.md)
+- [enum TransactionStatus](./transactionstatus.md)
   Values that describe the status of a transaction.
 
 

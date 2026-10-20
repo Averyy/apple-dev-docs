@@ -1,7 +1,8 @@
 # entities(matching:updatingSystemWhen:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all entities which pass the query predicate of the query.
 
@@ -21,16 +22,16 @@ func entities(matching query: EntityQuery, updatingSystemWhen condition: SystemU
 
 ## Mentions
 
-- [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
+- [Implementing systems for entities in a scene](../implementing-systems-for-entities-in-a-scene.md)
 
 #### Discussion
 
-Calling this function can increase the rate at which RealityKit calls the [`update(context:)`](system/update(context:).md) method. If `condition` is not met for the current update, this method returns an empty result.
+Calling this function can increase the rate at which RealityKit calls the [`update(context:)`](../system/update%28context%29.md) method. If `condition` is not met for the current update, this method returns an empty result.
 
 ## Parameters
 
 - `query`: The query identifying which entities you want to fetch.
-- `condition`: How often the [`System`](system.md) is updated (if the query is not empty).
+- `condition`: How often the [`System`](../system.md) is updated (if the query is not empty).
 
 
 ---

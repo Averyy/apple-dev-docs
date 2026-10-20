@@ -1,7 +1,8 @@
 # init(dataRepresentation:)
 
 **Framework**: ShazamKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Load a @c SHCustomCatalog from data
 
@@ -18,6 +19,10 @@ Load a @c SHCustomCatalog from data
 
 ```swift
 init(dataRepresentation: Data) throws
+```
+
+```objc
+- (instancetype) initWithDataRepresentation:(NSData *) dataRepresentation error:(NSError **) error;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # sourceAlphaBlendFactor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the source-alpha blend factor.
 
@@ -19,9 +20,13 @@ Configures the source-alpha blend factor.
 var sourceAlphaBlendFactor: MTLBlendFactor { get set }
 ```
 
+```objc
+@property (nonatomic) MTLBlendFactor sourceAlphaBlendFactor;
+```
+
 #### Discussion
 
-This property defaults to [`MTLBlendFactor.one`](mtlblendfactor/one.md).
+This property defaults to [`MTLBlendFactor.one`](../mtlblendfactor/one.md).
 
 
 ---

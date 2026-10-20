@@ -1,7 +1,8 @@
 # CapturedRoom.Section.Label.bathroom
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A distinct area that resembles a bathroom within a larger structure.
 
@@ -18,15 +19,16 @@ case bathroom
 
 ## See Also
 
-- [CapturedRoom.Section.Label.livingRoom](capturedroom/section/label-swift.enum/livingroom.md)
+### Assigning a section a label
+- [CapturedRoom.Section.Label.livingRoom](./livingroom.md)
   A distinct area that resembles a living room within a larger structure.
-- [CapturedRoom.Section.Label.kitchen](capturedroom/section/label-swift.enum/kitchen.md)
+- [CapturedRoom.Section.Label.kitchen](./kitchen.md)
   A distinct area that resembles a kitchen within a larger structure.
-- [CapturedRoom.Section.Label.diningRoom](capturedroom/section/label-swift.enum/diningroom.md)
+- [CapturedRoom.Section.Label.diningRoom](./diningroom.md)
   A distinct area that resembles a dining room within a larger structure.
-- [CapturedRoom.Section.Label.bedroom](capturedroom/section/label-swift.enum/bedroom.md)
+- [CapturedRoom.Section.Label.bedroom](./bedroom.md)
   A distinct area that resembles a bedroom within a larger structure.
-- [CapturedRoom.Section.Label.unidentified](capturedroom/section/label-swift.enum/unidentified.md)
+- [CapturedRoom.Section.Label.unidentified](./unidentified.md)
   An uncategorized area within a larger structure.
 
 

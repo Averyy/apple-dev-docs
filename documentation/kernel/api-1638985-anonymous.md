@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [OSBigEndian](1638985-anonymous/osbigendian.md)
-- [OSLittleEndian](1638985-anonymous/oslittleendian.md)
-- [OSUnknownByteOrder](1638985-anonymous/osunknownbyteorder.md)
+- [OSBigEndian](./api-1638985-anonymous/osbigendian.md)
+- [OSLittleEndian](./api-1638985-anonymous/oslittleendian.md)
+- [OSUnknownByteOrder](./api-1638985-anonymous/osunknownbyteorder.md)
 
 
 ---

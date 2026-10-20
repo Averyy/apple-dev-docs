@@ -1,7 +1,8 @@
 # configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.
 
@@ -14,6 +15,10 @@ Configures the receiver’s persistent store coordinator with the appropriate st
 func configurePersistentStoreCoordinator(for url: URL, ofType fileType: String, modelConfiguration configuration: String?, storeOptions: [String : Any]? = nil) throws
 ```
 
+```objc
+- (BOOL) configurePersistentStoreCoordinatorForURL:(NSURL *) url ofType:(NSString *) fileType modelConfiguration:(NSString *) configuration storeOptions:(NSDictionary<NSString *,id> *) storeOptions error:(NSError **) error;
+```
+
 #### Discussion
 
 This method is invoked automatically when an existing document is opened. You override this method to customize creation of a persistent store for a given document or store type. You can retrieve the persistent store coordinator with the following code:
@@ -24,22 +29,25 @@ This method is invoked automatically when an existing document is opened. You ov
 
 You can override this method to create the store to save to or load from (invoked from within the other `NSDocument` methods to read/write files), which gives developers the ability to load/save from/to different persistent store types (default type is XML).
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
 - `url`: An URL that specifies the location of the document’s store.
 - `fileType`: The document type.
 - `configuration`: The name of the managed object model configuration to use. (The managed object model is associated with the persistent store coordinator.) Pass `nil` if you do not want to specify a configuration.
-- `storeOptions`: Options for the store. See “Store Options” in [`NSPersistentStoreCoordinator`](https://developer.apple.com/documentation/coredata/nspersistentstorecoordinator) for possible values.
+- `storeOptions`: Options for the store. See “Store Options” in [`NSPersistentStoreCoordinator`](../../CoreData/nspersistentstorecoordinator.md) for possible values.
 
 ## See Also
 
-- [var managedObjectContext: NSManagedObjectContext?](nspersistentdocument/managedobjectcontext.md)
+### Managing the Persistence Objects
+- [var managedObjectContext: NSManagedObjectContext?](./managedobjectcontext.md)
   The managed object context for the document.
-- [var managedObjectModel: NSManagedObjectModel?](nspersistentdocument/managedobjectmodel.md)
+- [var managedObjectModel: NSManagedObjectModel?](./managedobjectmodel.md)
   The managed object model of the document.
-- [func persistentStoreType(forFileType: String) -> String](nspersistentdocument/persistentstoretype(forfiletype:).md)
+- [func persistentStoreType(forFileType: String) -> String](./persistentstoretype%28forfiletype%29.md)
   Returns the type of persistent store associated with the specified file type.
 
 

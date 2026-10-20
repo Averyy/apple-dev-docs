@@ -1,11 +1,12 @@
 # Miscellaneous Defines
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [IOEventSourceAction](ioeventsourceaction.md)
+- [IOEventSourceAction](../ioeventsourceaction.md)
 
 
 ---

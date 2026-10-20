@@ -1,7 +1,8 @@
 # layoutAlgorithm
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
@@ -17,12 +18,17 @@
 var layoutAlgorithm: NSTextTable.LayoutAlgorithm { get set }
 ```
 
+```objc
+@property (nonatomic) NSTextTableLayoutAlgorithm layoutAlgorithm;
+```
+
 ## See Also
 
-- [var numberOfColumns: Int](nstexttable/numberofcolumns.md)
-- [var collapsesBorders: Bool](nstexttable/collapsesborders.md)
-- [var hidesEmptyCells: Bool](nstexttable/hidesemptycells.md)
-- [NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum.md)
+### Configuring the table
+- [var numberOfColumns: Int](./numberofcolumns.md)
+- [var collapsesBorders: Bool](./collapsesborders.md)
+- [var hidesEmptyCells: Bool](./hidesemptycells.md)
+- [NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.enum.md)
 
 
 ---

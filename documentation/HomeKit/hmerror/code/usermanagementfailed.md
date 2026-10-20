@@ -1,7 +1,8 @@
 # HMError.Code.userManagementFailed
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A user management error not covered by the other errors.
 
@@ -19,15 +20,20 @@ A user management error not covered by the other errors.
 case userManagementFailed
 ```
 
+```c
+HMErrorCodeUserManagementFailed
+```
+
 ## See Also
 
-- [HMError.Code.userDeclinedAddingUser](hmerror/code/userdeclinedaddinguser.md)
+### User errors
+- [HMError.Code.userDeclinedAddingUser](./userdeclinedaddinguser.md)
   An error indicating the user canceled the add user operation.
-- [HMError.Code.userDeclinedRemovingUser](hmerror/code/userdeclinedremovinguser.md)
+- [HMError.Code.userDeclinedRemovingUser](./userdeclinedremovinguser.md)
   An error indicating the user canceled the remove user operation.
-- [HMError.Code.userDeclinedInvite](hmerror/code/userdeclinedinvite.md)
+- [HMError.Code.userDeclinedInvite](./userdeclinedinvite.md)
   An error indicating the user declined the invitation.
-- [HMError.Code.userIDNotEmailAddress](hmerror/code/useridnotemailaddress.md)
+- [HMError.Code.userIDNotEmailAddress](./useridnotemailaddress.md)
   An error indicating the user’s ID is not a valid email address.
 
 

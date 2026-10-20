@@ -1,15 +1,18 @@
 # imageExportPreset
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preset to use when preparing images for export to your app.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) instead.
 
 ## Declaration
 
@@ -17,15 +20,20 @@ The preset to use when preparing images for export to your app.
 var imageExportPreset: UIImagePickerController.ImageURLExportPreset { get set }
 ```
 
+```objc
+@property (nonatomic) UIImagePickerControllerImageURLExportPreset imageExportPreset;
+```
+
 #### Discussion
 
-The default value of this property is [`UIImagePickerController.ImageURLExportPreset.compatible`](uiimagepickercontroller/imageurlexportpreset/compatible.md).
+The default value of this property is [`UIImagePickerController.ImageURLExportPreset.compatible`](./imageurlexportpreset/compatible.md).
 
 ## See Also
 
-- [UIImagePickerController.ImageURLExportPreset](uiimagepickercontroller/imageurlexportpreset.md)
+### Deprecated
+- [UIImagePickerController.ImageURLExportPreset](./imageurlexportpreset.md)
   Constants that indicate how to export images to the client app.
-- [var videoExportPreset: String](uiimagepickercontroller/videoexportpreset.md)
+- [var videoExportPreset: String](./videoexportpreset.md)
   The preset to use when preparing video for export to your app.
 
 

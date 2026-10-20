@@ -1,7 +1,8 @@
 # opaque
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that intersectors should treat the instance as opaque.
 
@@ -19,13 +20,18 @@ Specifies that intersectors should treat the instance as opaque.
 static var opaque: MTLAccelerationStructureInstanceOptions { get }
 ```
 
+```c
+MTLAccelerationStructureInstanceOptionOpaque
+```
+
 ## See Also
 
-- [static var disableTriangleCulling: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions/disabletriangleculling.md)
+### Usage options
+- [static var disableTriangleCulling: MTLAccelerationStructureInstanceOptions](./disabletriangleculling.md)
   An option that turns off culling for this instance if ray intersector has culling enabled.
-- [static var triangleFrontFacingWindingCounterClockwise: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions/trianglefrontfacingwindingcounterclockwise.md)
+- [static var triangleFrontFacingWindingCounterClockwise: MTLAccelerationStructureInstanceOptions](./trianglefrontfacingwindingcounterclockwise.md)
   Specifies that the instance specifies front facing triangles in counter-clockwise order.
-- [static var nonOpaque: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructureinstanceoptions/nonopaque.md)
+- [static var nonOpaque: MTLAccelerationStructureInstanceOptions](./nonopaque.md)
   Specifies that intersectors should treat the instance as non-opaque.
 
 

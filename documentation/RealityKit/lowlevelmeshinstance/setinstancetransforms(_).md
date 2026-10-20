@@ -1,7 +1,8 @@
 # setInstanceTransforms(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns or clears the transform buffer for GPU instancing.
 
@@ -19,7 +20,7 @@ final func setInstanceTransforms(_ instanceTransforms: LowLevelInstanceTransform
 
 #### Discussion
 
-> **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if `instanceTransforms` is incompatible with this instance.
+> **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if `instanceTransforms` is incompatible with this instance.
 
 ## Parameters
 
@@ -27,7 +28,8 @@ final func setInstanceTransforms(_ instanceTransforms: LowLevelInstanceTransform
 
 ## See Also
 
-- [var instanceTransforms: LowLevelInstanceTransformResource?](lowlevelmeshinstance/instancetransforms.md)
+### Positioning instances
+- [var instanceTransforms: LowLevelInstanceTransformResource?](./instancetransforms.md)
   The transform buffer for GPU instancing, or `nil` for single-instance rendering.
 
 

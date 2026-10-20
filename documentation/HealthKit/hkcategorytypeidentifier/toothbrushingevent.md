@@ -1,7 +1,8 @@
 # toothbrushingEvent
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category sample type for toothbrushing events.
 
@@ -19,13 +20,18 @@ A category sample type for toothbrushing events.
 static let toothbrushingEvent: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierToothbrushingEvent;
+```
+
 #### Discussion
 
-These samples have a value of [`HKCategoryValue.notApplicable`](hkcategoryvalue/notapplicable.md).
+These samples have a value of [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md).
 
 ## See Also
 
-- [static let handwashingEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/handwashingevent.md)
+### Self care
+- [static let handwashingEvent: HKCategoryTypeIdentifier](./handwashingevent.md)
   A category sample type for handwashing events.
 
 

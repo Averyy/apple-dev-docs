@@ -1,7 +1,8 @@
 # setAffineTransform(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the layer’s transform to the specified affine transform.
 
@@ -19,17 +20,22 @@ Sets the layer’s transform to the specified affine transform.
 func setAffineTransform(_ m: CGAffineTransform)
 ```
 
+```objc
+- (void) setAffineTransform:(CGAffineTransform) m;
+```
+
 ## Parameters
 
 - `m`: The affine transform to use for the layer’s transform.
 
 ## See Also
 
-- [var transform: CATransform3D](calayer/transform.md)
+### Managing the layer’s transform
+- [var transform: CATransform3D](./transform.md)
   The transform applied to the layer’s contents. Animatable.
-- [var sublayerTransform: CATransform3D](calayer/sublayertransform.md)
+- [var sublayerTransform: CATransform3D](./sublayertransform.md)
   Specifies the transform to apply to sublayers when rendering. Animatable.
-- [func affineTransform() -> CGAffineTransform](calayer/affinetransform.md)
+- [func affineTransform() -> CGAffineTransform](./affinetransform%28%29.md)
   Returns an affine version of the layer’s transform.
 
 

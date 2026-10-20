@@ -1,14 +1,15 @@
 # getMapperOptions
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 uint16_t getMapperOptions(void);
 ```
 

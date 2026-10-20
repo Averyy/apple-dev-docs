@@ -1,7 +1,8 @@
 # CredentialSession.PresentmentIntentAssertion.State.invalid
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The presentment intent assertion is invalid, and doesn’t provide exclusive use of contactless features.
 
@@ -17,7 +18,8 @@ case invalid
 
 ## See Also
 
-- [CredentialSession.PresentmentIntentAssertion.State.active](credentialsession/presentmentintentassertion/state-swift.enum/active.md)
+### Assertion states
+- [CredentialSession.PresentmentIntentAssertion.State.active](./active.md)
   The presentment intent assertion is active, offering exclusive use of the device’s contactless features.
 
 

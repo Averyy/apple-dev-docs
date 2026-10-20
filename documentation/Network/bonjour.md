@@ -1,7 +1,8 @@
 # Bonjour
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A browser that discovers Bonjour services.
 
@@ -23,15 +24,15 @@ struct Bonjour
 ## Topics
 
 ### Structures
-- [Bonjour.Endpoint](bonjour/endpoint.md)
+- [Bonjour.Endpoint](./bonjour/endpoint.md)
   An endpoint for a discovered Bonjour service.
 
 ## Relationships
 
 ### Conforms To
-- [BrowserProvider](browserprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BrowserProvider](./browserprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

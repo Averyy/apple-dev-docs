@@ -1,7 +1,8 @@
 # isExtender
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar’s principal function is to extend the value or shape of a preceding alphabetic scalar.
 
@@ -24,7 +25,7 @@ var isExtender: Bool { get }
 
 Typical extenders are length and iteration marks.
 
-This property corresponds to the “Extender” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Extender” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

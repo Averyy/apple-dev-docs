@@ -1,7 +1,8 @@
 # MTROperationalCSRInfo
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,34 +19,38 @@
 class MTROperationalCSRInfo
 ```
 
+```objc
+@interface MTROperationalCSRInfo : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(csr: Data, csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csr:csrnonce:csrelementstlv:attestationsignature:)-69823.md)
-- [init?(csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrelementstlv:attestationsignature:)-pboh.md)
-- [init?(csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrnonce:csrelementstlv:attestationsignature:)-82w0o.md)
-- [init?(csrResponseParams: MTROperationalCredentialsClusterCSRResponseParams)](mtroperationalcsrinfo/init(csrresponseparams:)-86yeg.md)
-- [init(CSR: Data, csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csr:csrnonce:csrelementstlv:attestationsignature:)-2l26j.md)
-- [init?(CSRElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrelementstlv:attestationsignature:)-73sbs.md)
-- [init?(CSRNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrnonce:csrelementstlv:attestationsignature:)-7tep6.md)
-- [init?(CSRResponseParams: MTROperationalCredentialsClusterCSRResponseParams)](mtroperationalcsrinfo/init(csrresponseparams:)-3o8qo.md)
+- [init(csr: Data, csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](./mtroperationalcsrinfo/init%28csr,csrnonce,csrelementstlv,attestationsignature%29-69823.md)
+- [init?(csrElementsTLV: Data, attestationSignature: Data)](./mtroperationalcsrinfo/init%28csrelementstlv,attestationsignature%29-pboh.md)
+- [init?(csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](./mtroperationalcsrinfo/init%28csrnonce,csrelementstlv,attestationsignature%29-82w0o.md)
+- [init?(csrResponseParams: MTROperationalCredentialsClusterCSRResponseParams)](./mtroperationalcsrinfo/init%28csrresponseparams%29-86yeg.md)
+- [init(CSR: Data, csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](./mtroperationalcsrinfo/init%28csr,csrnonce,csrelementstlv,attestationsignature%29-2l26j.md)
+- [init?(CSRElementsTLV: Data, attestationSignature: Data)](./mtroperationalcsrinfo/init%28csrelementstlv,attestationsignature%29-73sbs.md)
+- [init?(CSRNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](./mtroperationalcsrinfo/init%28csrnonce,csrelementstlv,attestationsignature%29-7tep6.md)
+- [init?(CSRResponseParams: MTROperationalCredentialsClusterCSRResponseParams)](./mtroperationalcsrinfo/init%28csrresponseparams%29-3o8qo.md)
 ### Instance Properties
-- [var attestationSignature: Data](mtroperationalcsrinfo/attestationsignature.md)
-- [var csr: Data](mtroperationalcsrinfo/csr.md)
-- [var csrElementsTLV: Data](mtroperationalcsrinfo/csrelementstlv.md)
-- [var csrNonce: Data](mtroperationalcsrinfo/csrnonce.md)
+- [var attestationSignature: Data](./mtroperationalcsrinfo/attestationsignature.md)
+- [var csr: Data](./mtroperationalcsrinfo/csr.md)
+- [var csrElementsTLV: Data](./mtroperationalcsrinfo/csrelementstlv.md)
+- [var csrNonce: Data](./mtroperationalcsrinfo/csrnonce.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

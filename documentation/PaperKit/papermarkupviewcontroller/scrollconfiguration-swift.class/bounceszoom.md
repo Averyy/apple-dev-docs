@@ -1,7 +1,8 @@
 # bouncesZoom
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the scroll view animates the content scaling when the scaling exceeds the maximum or minimum limits.
 
@@ -24,9 +25,10 @@ When enabled, a person can zoom past the minimum or maximum scale while gesturin
 
 ## See Also
 
-- [var bounces: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/bounces.md)
+### Configuring bouncing behavior
+- [var bounces: PaperMarkupViewController.ScrollConfiguration.Axis](./bounces.md)
   The axes for which the scroll view bounces past the edge of content and back again.
-- [var alwaysBounces: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/alwaysbounces.md)
+- [var alwaysBounces: PaperMarkupViewController.ScrollConfiguration.Axis](./alwaysbounces.md)
   The axes for which bouncing always occurs when scrolling reaches the end of the content.
 
 

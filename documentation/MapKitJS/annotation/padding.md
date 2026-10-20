@@ -1,7 +1,8 @@
 # padding
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Spacing to add around the annotation when showing items.
 
@@ -10,28 +11,29 @@ Spacing to add around the annotation when showing items.
 
 ## Declaration
 
-```swift
+```
 get padding(): Padding;
 set padding(value: PaddingData);
 ```
 
 #### Discussion
 
-Padding prevents any items from touching the edges of the map. Set `padding` to a [`Padding`](padding.md) object (the default is no padding on all sides).
+Padding prevents any items from touching the edges of the map. Set `padding` to a [`Padding`](../padding.md) object (the default is no padding on all sides).
 
 ## See Also
 
-- [coordinate](annotation/coordinate.md)
+### Getting and setting annotation appearance
+- [coordinate](./coordinate.md)
   The annotation’s coordinate.
-- [anchorOffset](annotation/anchoroffset.md)
+- [anchorOffset](./anchoroffset.md)
   An offset that changes the annotation’s default anchor point.
-- [appearanceAnimation](annotation/appearanceanimation.md)
+- [appearanceAnimation](./appearanceanimation.md)
   A CSS animation that runs when the annotation appears on the map.
-- [displayPriority](annotation/displaypriority-data.property.md)
+- [displayPriority](./displaypriority-data.property.md)
   A numeric hint that the map uses to prioritize how it displays annotations.
-- [size](annotation/size.md)
+- [size](./size.md)
   The desired dimensions of the annotation, in CSS pixels.
-- [visible](annotation/visible.md)
+- [visible](./visible.md)
   A Boolean value that determines whether the annotation is visible or hidden.
 
 

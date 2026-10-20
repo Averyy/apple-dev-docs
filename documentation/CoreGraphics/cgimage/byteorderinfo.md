@@ -1,7 +1,8 @@
 # byteOrderInfo
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -18,12 +19,17 @@
 var byteOrderInfo: CGImageByteOrderInfo { get }
 ```
 
+```c
+extern CGImageByteOrderInfo CGImageGetByteOrderInfo(CGImageRef image);
+```
+
 ## See Also
 
-- [var containsImageSpecificToneMappingMetadata: Bool](cgimage/containsimagespecifictonemappingmetadata.md)
-- [var contentHeadroom: Float](cgimage/contentheadroom.md)
-- [var pixelFormatInfo: CGImagePixelFormatInfo](cgimage/pixelformatinfo.md)
-- [var shouldToneMap: Bool](cgimage/shouldtonemap.md)
+### Instance properties
+- [var containsImageSpecificToneMappingMetadata: Bool](./containsimagespecifictonemappingmetadata.md)
+- [var contentHeadroom: Float](./contentheadroom.md)
+- [var pixelFormatInfo: CGImagePixelFormatInfo](./pixelformatinfo.md)
+- [var shouldToneMap: Bool](./shouldtonemap.md)
 
 
 ---

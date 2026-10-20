@@ -1,7 +1,8 @@
 # NSGrammaticalPerson.second
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case second
+```
+
+```c
+NSGrammaticalPersonSecond
 ```
 
 

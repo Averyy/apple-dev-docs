@@ -1,48 +1,50 @@
 # PassthruInterruptController
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```cpp
 class PassthruInterruptController : IOInterruptController
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- causeInterrupt](passthruinterruptcontroller/3553401-causeinterrupt.md)
-- [- disableInterrupt](passthruinterruptcontroller/3553402-disableinterrupt.md)
-- [- enableInterrupt](passthruinterruptcontroller/3553403-enableinterrupt.md)
-- [- externalInterrupt](passthruinterruptcontroller/3553404-externalinterrupt.md)
-- [- getInterruptType](passthruinterruptcontroller/3553405-getinterrupttype.md)
-- [- getMetaClass](passthruinterruptcontroller/3553406-getmetaclass.md)
-- [- handleInterrupt](passthruinterruptcontroller/3553407-handleinterrupt.md)
-- [- init](passthruinterruptcontroller/3553408-init.md)
-- [- registerInterrupt](passthruinterruptcontroller/3553409-registerinterrupt.md)
-- [- setCPUInterruptProperties](passthruinterruptcontroller/3553410-setcpuinterruptproperties.md)
-- [- waitForChildController](passthruinterruptcontroller/3553411-waitforchildcontroller.md)
+- [- causeInterrupt](./passthruinterruptcontroller/api-3553401-causeinterrupt.md)
+- [- disableInterrupt](./passthruinterruptcontroller/api-3553402-disableinterrupt.md)
+- [- enableInterrupt](./passthruinterruptcontroller/api-3553403-enableinterrupt.md)
+- [- externalInterrupt](./passthruinterruptcontroller/api-3553404-externalinterrupt.md)
+- [- getInterruptType](./passthruinterruptcontroller/api-3553405-getinterrupttype.md)
+- [- getMetaClass](./passthruinterruptcontroller/api-3553406-getmetaclass.md)
+- [- handleInterrupt](./passthruinterruptcontroller/api-3553407-handleinterrupt.md)
+- [- init](./passthruinterruptcontroller/api-3553408-init.md)
+- [- registerInterrupt](./passthruinterruptcontroller/api-3553409-registerinterrupt.md)
+- [- setCPUInterruptProperties](./passthruinterruptcontroller/api-3553410-setcpuinterruptproperties.md)
+- [- waitForChildController](./passthruinterruptcontroller/api-3553411-waitforchildcontroller.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOInterruptController](iointerruptcontroller.md)
+- [IOInterruptController](./iointerruptcontroller.md)
 
 ## See Also
 
-- [IOInterruptDispatchSource](iointerruptdispatchsource.md)
-- [IOInterruptDispatchSourceInterface](iointerruptdispatchsourceinterface.md)
-- [IOFilterInterruptEventSource](iofilterinterrupteventsource.md)
+### Interrupts
+- [IOInterruptDispatchSource](./iointerruptdispatchsource.md)
+- [IOInterruptDispatchSourceInterface](./iointerruptdispatchsourceinterface.md)
+- [IOFilterInterruptEventSource](./iofilterinterrupteventsource.md)
   Filtering varient of the $link IOInterruptEventSource.
-- [IOInterruptEventSource](iointerrupteventsource.md)
+- [IOInterruptEventSource](./iointerrupteventsource.md)
   Event source for interrupt delivery to work-loop based drivers.
-- [IOInterruptController](iointerruptcontroller.md)
-- [IOInterruptSource](iointerruptsource.md)
-- [IOInterruptVector](iointerruptvector.md)
+- [IOInterruptController](./iointerruptcontroller.md)
+- [IOInterruptSource](./iointerruptsource.md)
+- [IOInterruptVector](./iointerruptvector.md)
 
 
 ---

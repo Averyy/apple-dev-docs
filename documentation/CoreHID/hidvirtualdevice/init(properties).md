@@ -1,7 +1,8 @@
 # init(properties:)
 
 **Framework**: Core HID  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a virtual HID device.
 
@@ -16,17 +17,18 @@ init?(properties: HIDVirtualDevice.Properties)
 
 #### Discussion
 
-[`HIDVirtualDevice`](hidvirtualdevice.md) is created in an inactive state, notifications won’t be received and many functions won’t run until [`activate(delegate:)`](hidvirtualdevice/activate(delegate:).md) has run successfully.
+[`HIDVirtualDevice`](../hidvirtualdevice.md) is created in an inactive state, notifications won’t be received and many functions won’t run until [`activate(delegate:)`](./activate%28delegate%29.md) has run successfully.
 
 ## Parameters
 
-- `properties`: The [`HIDVirtualDevice.Properties`](hidvirtualdevice/properties.md) for the virtual device. These values determine the device functionality.
+- `properties`: The [`HIDVirtualDevice.Properties`](./properties.md) for the virtual device. These values determine the device functionality.
 
 ## See Also
 
-- [let deviceReference: HIDDeviceClient.DeviceReference](hidvirtualdevice/devicereference.md)
+### Create a HID virtual device
+- [let deviceReference: HIDDeviceClient.DeviceReference](./devicereference.md)
   The reference to the virtual HID device.
-- [func activate(delegate: any HIDVirtualDeviceDelegate)](hidvirtualdevice/activate(delegate:).md)
+- [func activate(delegate: any HIDVirtualDeviceDelegate)](./activate%28delegate%29.md)
   Activate a newly created virtual device to begin receiving notifications and enable functionality.
 
 

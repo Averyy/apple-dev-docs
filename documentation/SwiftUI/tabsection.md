@@ -1,7 +1,8 @@
 # TabSection
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container that you can use to add hierarchy within a tab view.
 
@@ -22,41 +23,42 @@ struct TabSection<Header, Content, Footer, SelectionValue>
 
 #### Overview
 
-Use [`TabSection`](tabsection.md) to organize tab content into separate sections. Each section has custom tab content that you provide on a per-instance basis. You can also provide a header for each section.
+Use [`TabSection`](./tabsection.md) to organize tab content into separate sections. Each section has custom tab content that you provide on a per-instance basis. You can also provide a header for each section.
 
 ## Topics
 
 ### Creating a tab section
-- [init(content:)](tabsection/init(content:).md)
+- [init(content:)](./tabsection/init%28content%29.md)
   Creates a section with the provided section content.
-- [init(_:content:)](tabsection/init(_:content:).md)
+- [init(_:content:)](./tabsection/init%28_,content%29.md)
   Creates a section with the provided content.
-- [init(content:header:)](tabsection/init(content:header:).md)
+- [init(content:header:)](./tabsection/init%28content,header%29.md)
   Creates a section with a header and the provided section content.
 ### Supporting types
-- [struct DefaultTabLabel](defaulttablabel.md)
+- [struct DefaultTabLabel](./defaulttablabel.md)
   The default label to use for a tab or tab section.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [TabContent](tabcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [TabContent](./tabcontent.md)
 
 ## See Also
 
-- [Enhancing your app’s content with tab navigation](enhancing-your-app-content-with-tab-navigation.md)
+### Presenting views in tabs
+- [Enhancing your app’s content with tab navigation](./enhancing-your-app-content-with-tab-navigation.md)
   Keep your app content front and center while providing quick access to navigation using the tab bar.
-- [struct TabView](tabview.md)
+- [struct TabView](./tabview.md)
   A view that switches between multiple child views using interactive user interface elements.
-- [struct Tab](tab.md)
+- [struct Tab](./tab.md)
   The content for a tab and the tab’s associated tab item in a tab view.
-- [struct TabRole](tabrole.md)
+- [struct TabRole](./tabrole.md)
   A value that defines the purpose of the tab.
-- [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
+- [func tabViewStyle<S>(S) -> some View](./view/tabviewstyle%28_%29.md)
   Sets the style for the tab view within the current environment.
-- [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
+- [func tabItem<V>(() -> V) -> some View](./view/tabitem%28_%29.md)
   Sets the tab bar item associated with this view.
 
 

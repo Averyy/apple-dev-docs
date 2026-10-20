@@ -1,7 +1,8 @@
 # initialize(repeating:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes every element in this buffer’s memory to a copy of the given value.
 

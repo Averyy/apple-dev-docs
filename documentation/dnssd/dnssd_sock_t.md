@@ -1,7 +1,8 @@
 # dnssd_sock_t
 
 **Framework**: dnssd  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 10.0+
@@ -18,13 +19,18 @@
 typealias dnssd_sock_t = Int32
 ```
 
+```c
+typedef int dnssd_sock_t;
+```
+
 ## See Also
 
-- [struct CompileTimeAssertionChecks_DNS_SD](compiletimeassertionchecks_dns_sd.md)
-- [typealias DNSRecordRef](dnsrecordref.md)
-- [typealias DNSServiceRef](dnsserviceref.md)
-- [typealias DNSServiceSleepKeepaliveReply](dnsservicesleepkeepalivereply.md)
-- [typealias DNSServiceAttributeRef](dnsserviceattributeref.md)
+### Data Types
+- [struct CompileTimeAssertionChecks_DNS_SD](./compiletimeassertionchecks_dns_sd.md)
+- [typealias DNSRecordRef](./dnsrecordref.md)
+- [typealias DNSServiceRef](./dnsserviceref.md)
+- [typealias DNSServiceSleepKeepaliveReply](./dnsservicesleepkeepalivereply.md)
+- [typealias DNSServiceAttributeRef](./dnsserviceattributeref.md)
 
 
 ---

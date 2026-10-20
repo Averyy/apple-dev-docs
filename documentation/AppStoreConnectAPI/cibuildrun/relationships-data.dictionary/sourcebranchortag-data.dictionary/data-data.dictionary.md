@@ -1,7 +1,8 @@
 # CiBuildRun.Relationships.SourceBranchOrTag.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Git References resource that represents the source branch or tag.
 
@@ -10,7 +11,7 @@ The type and ID of a related Git References resource that represents the source 
 
 ## Declaration
 
-```swift
+```
 object CiBuildRun.Relationships.SourceBranchOrTag.Data
 ```
 
@@ -18,6 +19,8 @@ object CiBuildRun.Relationships.SourceBranchOrTag.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Git References resource that represents the source branch or tag.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `scmGitReferences`
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.14.4+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDataRotate0](3129514-anonymous/kdatarotate0.md)
-- [kDataRotate180](3129514-anonymous/kdatarotate180.md)
-- [kDataRotate270](3129514-anonymous/kdatarotate270.md)
-- [kDataRotate90](3129514-anonymous/kdatarotate90.md)
+- [kDataRotate0](./api-3129514-anonymous/kdatarotate0.md)
+- [kDataRotate180](./api-3129514-anonymous/kdatarotate180.md)
+- [kDataRotate270](./api-3129514-anonymous/kdatarotate270.md)
+- [kDataRotate90](./api-3129514-anonymous/kdatarotate90.md)
 
 
 ---

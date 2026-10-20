@@ -1,7 +1,8 @@
 # conflictingSource
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This error code is unused.
 
@@ -18,9 +19,10 @@ static var conflictingSource: SKAdTestError.Code { get }
 
 ## See Also
 
-- [static var invalidCampaignId: SKAdTestError.Code](skadtesterror/invalidcampaignid.md)
+### Getting Older Errors
+- [static var invalidCampaignId: SKAdTestError.Code](./invalidcampaignid.md)
   The campaign ID isn’t an integer between one and one hundred.
-- [static var signatureMissingCampaignId: SKAdTestError.Code](skadtesterror/signaturemissingcampaignid.md)
+- [static var signatureMissingCampaignId: SKAdTestError.Code](./signaturemissingcampaignid.md)
   The signature is missing the campaign identifier, in the testing environment.
 
 

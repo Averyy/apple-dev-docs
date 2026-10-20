@@ -1,7 +1,8 @@
 # LazyMapSequence.SubSequence
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 
@@ -19,6 +20,8 @@ A collection representing a contiguous subrange of this collection’s elements.
 ```swift
 typealias SubSequence = LazyMapCollection<Base.SubSequence, Element>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Discussion
 

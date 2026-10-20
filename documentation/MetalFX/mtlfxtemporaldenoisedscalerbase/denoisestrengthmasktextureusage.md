@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The minimal texture usage options that your app’s input denoise strength texture needs in order to support this denoiser scaler.
@@ -17,6 +18,10 @@ The minimal texture usage options that your app’s input denoise strength textu
 
 ```swift
 var denoiseStrengthMaskTextureUsage: MTLTextureUsage { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLTextureUsage denoiseStrengthMaskTextureUsage;
 ```
 
 

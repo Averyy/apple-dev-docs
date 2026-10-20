@@ -1,7 +1,8 @@
 # init(standardFormatWithSampleRate:channelLayout:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio format instance as a deinterleaved float with the specified sample rate and channel layout.
 
@@ -20,13 +21,17 @@ Creates an audio format instance as a deinterleaved float with the specified sam
 init(standardFormatWithSampleRate sampleRate: Double, channelLayout layout: AVAudioChannelLayout)
 ```
 
+```objc
+- (instancetype) initStandardFormatWithSampleRate:(double) sampleRate channelLayout:(AVAudioChannelLayout *) layout;
+```
+
 #### Return Value
 
 A new `AVAudioFormat` instance.
 
 #### Discussion
 
-The returned `AVAudioFormat` instance uses the [`AVAudioCommonFormat.pcmFormatFloat32`](avaudiocommonformat/pcmformatfloat32.md) format.
+The returned `AVAudioFormat` instance uses the [`AVAudioCommonFormat.pcmFormatFloat32`](../avaudiocommonformat/pcmformatfloat32.md) format.
 
 ## Parameters
 
@@ -35,24 +40,26 @@ The returned `AVAudioFormat` instance uses the [`AVAudioCommonFormat.pcmFormatFl
 
 ## See Also
 
-- [var sampleRate: Double](avaudioformat/samplerate.md)
+### Related Documentation
+- [var sampleRate: Double](./samplerate.md)
   The audio format sampling rate, in hertz.
-- [var channelLayout: AVAudioChannelLayout?](avaudioformat/channellayout.md)
+- [var channelLayout: AVAudioChannelLayout?](./channellayout.md)
   The underlying audio channel layout.
-- [init?(standardFormatWithSampleRate: Double, channels: AVAudioChannelCount)](avaudioformat/init(standardformatwithsamplerate:channels:).md)
+### Creating an audio format
+- [init?(standardFormatWithSampleRate: Double, channels: AVAudioChannelCount)](./init%28standardformatwithsamplerate,channels%29.md)
   Creates an audio format instance with the specified sample rate and channel count.
-- [init?(commonFormat: AVAudioCommonFormat, sampleRate: Double, channels: AVAudioChannelCount, interleaved: Bool)](avaudioformat/init(commonformat:samplerate:channels:interleaved:).md)
+- [init?(commonFormat: AVAudioCommonFormat, sampleRate: Double, channels: AVAudioChannelCount, interleaved: Bool)](./init%28commonformat,samplerate,channels,interleaved%29.md)
   Creates an audio format instance.
-- [init(commonFormat: AVAudioCommonFormat, sampleRate: Double, interleaved: Bool, channelLayout: AVAudioChannelLayout)](avaudioformat/init(commonformat:samplerate:interleaved:channellayout:).md)
+- [init(commonFormat: AVAudioCommonFormat, sampleRate: Double, interleaved: Bool, channelLayout: AVAudioChannelLayout)](./init%28commonformat,samplerate,interleaved,channellayout%29.md)
   Creates an audio format instance with the specified audio format, sample rate, interleaved state, and channel layout.
-- [init?(settings: [String : Any])](avaudioformat/init(settings:).md)
+- [init?(settings: [String : Any])](./init%28settings%29.md)
   Creates an audio format instance using the specified settings dictionary.
-- [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>)](avaudioformat/init(streamdescription:).md)
+- [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>)](./init%28streamdescription%29.md)
   Creates an audio format instance from a stream description.
-- [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>, channelLayout: AVAudioChannelLayout?)](avaudioformat/init(streamdescription:channellayout:).md)
+- [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>, channelLayout: AVAudioChannelLayout?)](./init%28streamdescription,channellayout%29.md)
   Creates an audio format instance from a stream description and channel layout.
-- [init?(formatDescription: CMAudioFormatDescription)](avaudioformat/init(formatdescription:).md)
-- [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:)-8rdfj.md)
+- [init?(formatDescription: CMAudioFormatDescription)](./init%28formatdescription%29.md)
+- [init(cmAudioFormatDescription: CMAudioFormatDescription)](./init%28cmaudioformatdescription%29-8rdfj.md)
   Creates an audio format instance from a Core Media audio format description.
 
 

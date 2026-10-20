@@ -1,7 +1,8 @@
 # falloff
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exponent for the rate of decay of the light source.
 
@@ -20,17 +21,22 @@ The exponent for the rate of decay of the light source.
 var falloff: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat falloff;
+```
+
 #### Discussion
 
 The default value is `1.0`, which means the light decays linearly with distance. The value must be a positive number less than or equal to `1.0`.
 
 ## See Also
 
-- [var ambientColor: UIColor](sklightnode/ambientcolor.md)
+### Configuring the Lighting Properties
+- [var ambientColor: UIColor](./ambientcolor.md)
   The ambient color of the light.
-- [var lightColor: UIColor](sklightnode/lightcolor.md)
+- [var lightColor: UIColor](./lightcolor.md)
   The diffuse and specular color of the light source.
-- [var shadowColor: UIColor](sklightnode/shadowcolor.md)
+- [var shadowColor: UIColor](./shadowcolor.md)
   The color of any shadow cast by a sprite.
 
 

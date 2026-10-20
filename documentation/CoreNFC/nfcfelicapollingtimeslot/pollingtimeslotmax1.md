@@ -1,14 +1,15 @@
 # PollingTimeSlotMax1
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates a maximum of one slot.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: NFCFeliCaPollingTimeSlot.max1)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: NFCFeliCaPollingTimeSlot.max1)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: NFCFeliCaPollingTimeSlot.max1)
 
 ## Declaration
 
@@ -16,15 +17,20 @@ A constant that indicates a maximum of one slot.
 static var PollingTimeSlotMax1: NFCFeliCaPollingTimeSlot { get }
 ```
 
+```c
+PollingTimeSlotMax1
+```
+
 ## See Also
 
-- [static var PollingTimeSlotMax2: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax2.md)
+### Maximum Slots
+- [static var PollingTimeSlotMax2: NFCFeliCaPollingTimeSlot](./pollingtimeslotmax2.md)
   A constant that indicates a maximum of two slots.
-- [static var PollingTimeSlotMax4: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax4.md)
+- [static var PollingTimeSlotMax4: NFCFeliCaPollingTimeSlot](./pollingtimeslotmax4.md)
   A constant that indicates a maximum of four slots.
-- [static var PollingTimeSlotMax8: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax8.md)
+- [static var PollingTimeSlotMax8: NFCFeliCaPollingTimeSlot](./pollingtimeslotmax8.md)
   A constant that indicates a maximum of eight slots.
-- [static var PollingTimeSlotMax16: NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot/pollingtimeslotmax16.md)
+- [static var PollingTimeSlotMax16: NFCFeliCaPollingTimeSlot](./pollingtimeslotmax16.md)
   A constant that indicates a maximum of sixteen slots.
 
 

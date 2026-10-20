@@ -1,7 +1,8 @@
 # AccessoryAuthorizationResult
 
 **Framework**: Accessory Live Activities  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Responses to the Live Activity forwarding permission prompt.
 
@@ -17,39 +18,40 @@ enum AccessoryAuthorizationResult
 
 ## Mentions
 
-- [Receiving Live Activity updates and alerts on an accessory](receiving-live-activities-on-an-accessory.md)
+- [Receiving Live Activity updates and alerts on an accessory](./receiving-live-activities-on-an-accessory.md)
 
 #### Overview
 
-Call [`authorization(forAccessory:)`](liveactivityforwarding/authorization(foraccessory:).md) to check the current forwarding authorization for an accessory without showing any UI. If the result is `.undetermined`, ask people for their permission to forward iOS system notifications and Live Activities to your accessory. For more information, see [`Receiving Live Activity updates and alerts on an accessory`](receiving-live-activities-on-an-accessory.md).
+Call [`authorization(forAccessory:)`](./liveactivityforwarding/authorization%28foraccessory%29.md) to check the current forwarding authorization for an accessory without showing any UI. If the result is `.undetermined`, ask people for their permission to forward iOS system notifications and Live Activities to your accessory. For more information, see [Receiving Live Activity updates and alerts on an accessory](./receiving-live-activities-on-an-accessory.md).
 
-To ask if someone wants to update their current selection – for example, if they previously denied Live Activity forwarding – call [`presentAuthorizationSheet(forAccessory:)`](liveactivityforwarding/presentauthorizationsheet(foraccessory:).md).
+To ask if someone wants to update their current selection – for example, if they previously denied Live Activity forwarding – call [`presentAuthorizationSheet(forAccessory:)`](./liveactivityforwarding/presentauthorizationsheet%28foraccessory%29.md).
 
 ## Topics
 
 ### Identifying the decision
-- [AccessoryAuthorizationResult.undetermined](accessoryauthorizationresult/undetermined.md)
+- [AccessoryAuthorizationResult.undetermined](./accessoryauthorizationresult/undetermined.md)
   An option that indicates the system hasn’t shown the authorization prompt to the person.
-- [AccessoryAuthorizationResult.allow](accessoryauthorizationresult/allow.md)
+- [AccessoryAuthorizationResult.allow](./accessoryauthorizationresult/allow.md)
   An option that indicates the person allows Live Activity forwarding from all apps that support them.
-- [AccessoryAuthorizationResult.limited](accessoryauthorizationresult/limited.md)
+- [AccessoryAuthorizationResult.limited](./accessoryauthorizationresult/limited.md)
   An option that indicates the person allows Live Activities from a selected subset of apps.
-- [AccessoryAuthorizationResult.deny](accessoryauthorizationresult/deny.md)
+- [AccessoryAuthorizationResult.deny](./accessoryauthorizationresult/deny.md)
   An option that indicates the person doesn’t allow Live Activities.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class LiveActivityForwarding](liveactivityforwarding.md)
+### Authorization
+- [class LiveActivityForwarding](./liveactivityforwarding.md)
   A class for requesting permission to forward Live Activities to your accessory and handle them in your accessory’s data provider extension.
 
 

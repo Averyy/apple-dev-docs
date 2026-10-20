@@ -1,7 +1,8 @@
 # WidgetConfigurationIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for configuring a WidgetKit widget.
 
@@ -10,7 +11,7 @@ An interface for configuring a WidgetKit widget.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ protocol WidgetConfigurationIntent : AppIntent
 
 #### Overview
 
-The parameters of the intent define the configuration options for your widget. The system uses the intent’s title and description for the display name and description of the widget if those values aren’t set explicitly on the [`AppIntentConfiguration`](https://developer.apple.com/documentation/widgetkit/appintentconfiguration).
+The parameters of the intent define the configuration options for your widget. The system uses the intent’s title and description for the display name and description of the widget if those values aren’t set explicitly on the [`AppIntentConfiguration`](../WidgetKit/appintentconfiguration.md).
 
 ```swift
 import AppIntents
@@ -38,7 +39,7 @@ struct FavoriteBook: WidgetConfigurationIntent {
 }
 ```
 
-Use [`parameterSummary`](appintent/parametersummary-4vgic.md) to configure the order of the parameters in the configuration UI, as well as dynamic presentation such as using the value of one parameter to determine whether to show or hide another.
+Use [`parameterSummary`](./appintent/parametersummary-4vgic.md) to configure the order of the parameters in the configuration UI, as well as dynamic presentation such as using the value of one parameter to determine whether to show or hide another.
 
 ```swift
 enum RefreshInterval: String, AppEnum {
@@ -82,30 +83,31 @@ struct FavoriteSoup: WidgetConfigurationIntent {
 }
 ```
 
-When using this protocol, you don’t need to provide an implementation for [`perform()`](appintent/perform().md). You can, however, still implement `perform()` to use the same implementation for both widget configuration and as an actionable intent. For more information, refer to the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project’s `EmojiRangerSelection` structure and [`AppIntentTimelineProvider`](https://developer.apple.com/documentation/widgetkit/appintenttimelineprovider).
+When using this protocol, you don’t need to provide an implementation for [`perform()`](./appintent/perform%28%29.md). You can, however, still implement `perform()` to use the same implementation for both widget configuration and as an actionable intent. For more information, refer to the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project’s `EmojiRangerSelection` structure and [`AppIntentTimelineProvider`](../WidgetKit/appintenttimelineprovider.md).
 
 ## Topics
 
 ### Widget families
-- [enum IntentWidgetFamily](intentwidgetfamily.md)
+- [enum IntentWidgetFamily](./intentwidgetfamily.md)
 ### Associated Types
-- [associatedtype NeverResult](widgetconfigurationintent/neverresult.md)
+- [associatedtype NeverResult](./widgetconfigurationintent/neverresult.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Increasing the visibility of widgets in Smart Stacks](../widgetkit/widget-suggestions-in-smart-stacks.md)
+### Widgets
+- [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/widget-suggestions-in-smart-stacks.md)
   Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
-- [Migrating widgets from SiriKit Intents to App Intents](../widgetkit/migrating-from-sirikit-intents-to-app-intents.md)
+- [Migrating widgets from SiriKit Intents to App Intents](../WidgetKit/migrating-from-sirikit-intents-to-app-intents.md)
   Configure your widgets for backward compatibility.
-- [WidgetKit](../widgetkit/widgetkit.md)
+- [WidgetKit](../WidgetKit/WidgetKit.md)
   Extend the reach of your app by creating widgets, watch complications, Live Activities, and controls.
 
 

@@ -1,11 +1,12 @@
 # Transferable Implementations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Properties
-- [static var transferRepresentation: some TransferRepresentation](color/transferrepresentation.md)
+- [static var transferRepresentation: some TransferRepresentation](./transferrepresentation.md)
   One group of colors–constant colors–created with explicitly specified component values are transferred as is.
 
 

@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The values of the session’s managed properties.
 

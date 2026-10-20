@@ -1,7 +1,8 @@
 # errAuthorizationToolEnvironmentError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The attempt to execute the tool failed to return a success or an error code.
 
@@ -13,6 +14,10 @@ The attempt to execute the tool failed to return a success or an error code.
 
 ```swift
 var errAuthorizationToolEnvironmentError: OSStatus { get }
+```
+
+```c
+errAuthorizationToolEnvironmentError
 ```
 
 

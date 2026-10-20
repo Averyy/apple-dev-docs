@@ -1,7 +1,8 @@
 # manager(_:didUpdate:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when a water submersion event occurs.
 
@@ -16,6 +17,10 @@ Tells the delegate when a water submersion event occurs.
 
 ```swift
 optional func manager(_ manager: CMWaterSubmersionManager, didUpdate event: CMWaterSubmersionEvent)
+```
+
+```objc
+- (void) manager:(CMWaterSubmersionManager *) manager didUpdateEvent:(CMWaterSubmersionEvent *) event;
 ```
 
 #### Discussion
@@ -59,11 +64,12 @@ nonisolated func manager(_ manager: CMWaterSubmersionManager, didUpdate event: C
 
 ## See Also
 
-- [func manager(CMWaterSubmersionManager, didUpdate: CMWaterSubmersionMeasurement)](cmwatersubmersionmanagerdelegate/manager(_:didupdate:)-7nhjb.md)
+### Receiving updates
+- [func manager(CMWaterSubmersionManager, didUpdate: CMWaterSubmersionMeasurement)](./manager%28_,didupdate%29-7nhjb.md)
   Provides the delegate with a new set of pressure and depth measurements.
-- [func manager(CMWaterSubmersionManager, didUpdate: CMWaterTemperature)](cmwatersubmersionmanagerdelegate/manager(_:didupdate:)-18wua.md)
+- [func manager(CMWaterSubmersionManager, didUpdate: CMWaterTemperature)](./manager%28_,didupdate%29-18wua.md)
   Provides the delegate with updated water temperature data.
-- [func manager(CMWaterSubmersionManager, errorOccurred: any Error)](cmwatersubmersionmanagerdelegate/manager(_:erroroccurred:).md)
+- [func manager(CMWaterSubmersionManager, errorOccurred: any Error)](./manager%28_,erroroccurred%29.md)
   Tells the delegate when an error occurs.
 
 

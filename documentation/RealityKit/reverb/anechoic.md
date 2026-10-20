@@ -1,7 +1,8 @@
 # anechoic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A reverb instance that applies no reverberation to spatial audio sources.
 
@@ -21,7 +22,7 @@ static let anechoic: Reverb
 
 #### Discussion
 
-> ⚠️ **Warning**: [`anechoic`](reverb/anechoic.md) will cause spatial audio sources to lose externalization, or the sense that an audio source is in a person’s space. Only use this case when when the immersive environment is abstract or otherwise unrealistic.
+> ⚠️ **Warning**: [`anechoic`](./anechoic.md) will cause spatial audio sources to lose externalization, or the sense that an audio source is in a person’s space. Only use this case when when the immersive environment is abstract or otherwise unrealistic.
 
 
 ---

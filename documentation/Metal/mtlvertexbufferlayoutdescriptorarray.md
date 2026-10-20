@@ -1,7 +1,8 @@
 # MTLVertexBufferLayoutDescriptorArray
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An array of vertex buffer layout descriptor instances.
 
@@ -10,7 +11,7 @@ An array of vertex buffer layout descriptor instances.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,39 +20,44 @@ An array of vertex buffer layout descriptor instances.
 class MTLVertexBufferLayoutDescriptorArray
 ```
 
+```objc
+@interface MTLVertexBufferLayoutDescriptorArray : NSObject
+```
+
 #### Overview
 
-An [`MTLVertexBufferLayoutDescriptorArray`](mtlvertexbufferlayoutdescriptorarray.md) holds an array of vertex buffer layout states. The methods of [`MTLVertexBufferLayoutDescriptorArray`](mtlvertexbufferlayoutdescriptorarray.md) set the vertex buffer layout state in the array or retrieve the state from the array.
+An [`MTLVertexBufferLayoutDescriptorArray`](./mtlvertexbufferlayoutdescriptorarray.md) holds an array of vertex buffer layout states. The methods of [`MTLVertexBufferLayoutDescriptorArray`](./mtlvertexbufferlayoutdescriptorarray.md) set the vertex buffer layout state in the array or retrieve the state from the array.
 
 ## Topics
 
 ### Accessing a specified vertex buffer layout
-- [subscript(Int) -> MTLVertexBufferLayoutDescriptor!](mtlvertexbufferlayoutdescriptorarray/subscript(_:).md)
+- [subscript(Int) -> MTLVertexBufferLayoutDescriptor!](./mtlvertexbufferlayoutdescriptorarray/subscript%28_%29.md)
   Returns the state of the specified vertex buffer layout.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLVertexDescriptor](mtlvertexdescriptor.md)
+### Render pass inputs
+- [class MTLVertexDescriptor](./mtlvertexdescriptor.md)
   An instance that describes how to organize and map data to a vertex function.
-- [class MTLVertexAttributeDescriptor](mtlvertexattributedescriptor.md)
+- [class MTLVertexAttributeDescriptor](./mtlvertexattributedescriptor.md)
   An object that determines how to store attribute data in memory and map it to the arguments of a vertex function.
-- [class MTLVertexAttributeDescriptorArray](mtlvertexattributedescriptorarray.md)
+- [class MTLVertexAttributeDescriptorArray](./mtlvertexattributedescriptorarray.md)
   An array of vertex attribute descriptor instances.
-- [class MTLVertexBufferLayoutDescriptor](mtlvertexbufferlayoutdescriptor.md)
+- [class MTLVertexBufferLayoutDescriptor](./mtlvertexbufferlayoutdescriptor.md)
   An object that configures how a render pipeline fetches data to send to the vertex function.
-- [var MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
+- [var MTLBufferLayoutStrideDynamic: Int](./mtlbufferlayoutstridedynamic.md)
 
 
 ---

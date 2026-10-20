@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a run loop mode using the specified string value.
 
@@ -26,7 +27,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](runloop/mode/init(rawvalue:).md)
+### Run Loop Mode Creation
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a run loop mode using the specified raw string value.
 
 

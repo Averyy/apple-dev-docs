@@ -1,23 +1,28 @@
 # CGBitmapContextReleaseDataCallback
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A callback function used to release data associate with the bitmap context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CGBitmapContextReleaseDataCallback = (UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> Void
+```
+
+```c
+typedef void (*)(void *, void *) CGBitmapContextReleaseDataCallback;
 ```
 
 #### Discussion

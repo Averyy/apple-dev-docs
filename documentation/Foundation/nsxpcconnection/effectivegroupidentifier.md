@@ -1,7 +1,8 @@
 # effectiveGroupIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The effective group ID (EGID) of the connecting process.
 
@@ -20,17 +21,22 @@ The effective group ID (EGID) of the connecting process.
 var effectiveGroupIdentifier: gid_t { get }
 ```
 
+```objc
+@property (readonly) gid_t effectiveGroupIdentifier;
+```
+
 #### Discussion
 
 This attribute may be used by the listener delegate to accept or reject connections.
 
 ## See Also
 
-- [var auditSessionIdentifier: au_asid_t](nsxpcconnection/auditsessionidentifier.md)
+### Working with security attributes
+- [var auditSessionIdentifier: au_asid_t](./auditsessionidentifier.md)
   The BSM audit session identifier for the connecting process.
-- [var processIdentifier: pid_t](nsxpcconnection/processidentifier.md)
+- [var processIdentifier: pid_t](./processidentifier.md)
   The process ID (PID) of the connecting process.
-- [var effectiveUserIdentifier: uid_t](nsxpcconnection/effectiveuseridentifier.md)
+- [var effectiveUserIdentifier: uid_t](./effectiveuseridentifier.md)
   The effective user ID (EUID) of the connecting process.
 
 

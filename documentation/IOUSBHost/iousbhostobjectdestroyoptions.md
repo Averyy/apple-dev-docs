@@ -1,7 +1,8 @@
 # IOUSBHostObjectDestroyOptions
 
 **Framework**: IOUSBHost  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,11 +14,15 @@
 struct IOUSBHostObjectDestroyOptions
 ```
 
+```c
+enum IOUSBHostObjectDestroyOptions : NSUInteger;
+```
+
 #### Overview
 
 Options for destroyWithOptions
 
-```None
+```
          the device will not be reset and drivers will not be re-registered for matching.  This allows for IOUSBHostDevice
          objects that were initialized with <code>IOUSBHostObjectInitOptionsDeviceCapture</code> to honor the
          <code>kUSBHostMessageDeviceIsRequestingClose</code> message.
@@ -28,38 +33,39 @@ Options for destroyWithOptions
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](iousbhostobjectdestroyoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./iousbhostobjectdestroyoptions/init%28rawvalue%29.md)
 ### Type Properties
-- [static var deviceSurrender: IOUSBHostObjectDestroyOptions](iousbhostobjectdestroyoptions/devicesurrender.md)
+- [static var deviceSurrender: IOUSBHostObjectDestroyOptions](./iousbhostobjectdestroyoptions/devicesurrender.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct IOUSBHostCIControllerState](iousbhostcicontrollerstate.md)
-- [struct IOUSBHostCIDeviceSpeed](iousbhostcidevicespeed.md)
-- [struct IOUSBHostCIDeviceState](iousbhostcidevicestate.md)
-- [struct IOUSBHostCIEndpointState](iousbhostciendpointstate.md)
-- [struct IOUSBHostCIExceptionType](iousbhostciexceptiontype.md)
-- [struct IOUSBHostCILinkState](iousbhostcilinkstate.md)
-- [struct IOUSBHostCIMessage](iousbhostcimessage.md)
-- [struct IOUSBHostCIMessageStatus](iousbhostcimessagestatus.md)
-- [struct IOUSBHostCIMessageType](iousbhostcimessagetype.md)
-- [struct IOUSBHostCIPortState](iousbhostciportstate.md)
-- [struct IOUSBHostCIUserClientVersion](iousbhostciuserclientversion.md)
-- [struct IOUSBHostIsochronousTransaction](iousbhostisochronoustransaction.md)
-- [struct IOUSBHostIsochronousTransactionOptions](iousbhostisochronoustransactionoptions.md)
-- [struct IOUSBHostIsochronousTransferOptions](iousbhostisochronoustransferoptions.md)
+### Structures
+- [struct IOUSBHostCIControllerState](./iousbhostcicontrollerstate.md)
+- [struct IOUSBHostCIDeviceSpeed](./iousbhostcidevicespeed.md)
+- [struct IOUSBHostCIDeviceState](./iousbhostcidevicestate.md)
+- [struct IOUSBHostCIEndpointState](./iousbhostciendpointstate.md)
+- [struct IOUSBHostCIExceptionType](./iousbhostciexceptiontype.md)
+- [struct IOUSBHostCILinkState](./iousbhostcilinkstate.md)
+- [struct IOUSBHostCIMessage](./iousbhostcimessage.md)
+- [struct IOUSBHostCIMessageStatus](./iousbhostcimessagestatus.md)
+- [struct IOUSBHostCIMessageType](./iousbhostcimessagetype.md)
+- [struct IOUSBHostCIPortState](./iousbhostciportstate.md)
+- [struct IOUSBHostCIUserClientVersion](./iousbhostciuserclientversion.md)
+- [struct IOUSBHostIsochronousTransaction](./iousbhostisochronoustransaction.md)
+- [struct IOUSBHostIsochronousTransactionOptions](./iousbhostisochronoustransactionoptions.md)
+- [struct IOUSBHostIsochronousTransferOptions](./iousbhostisochronoustransferoptions.md)
 
 
 ---

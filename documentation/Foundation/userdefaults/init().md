@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new defaults object and initializes it with the app’s current settings.
 
@@ -20,15 +21,20 @@ Creates a new defaults object and initializes it with the app’s current settin
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
-Use this method to create a new defaults object to manage the app’s settings. If you add a domain using the [`addSuite(named:)`](userdefaults/addsuite(named:).md) method, the returned object retrieves values in that domain in addition to the standard ones. Custom domains remain in the search list until you remove them or release the object. When you write setting values using this object, it writes them to the current app’s settings.
+Use this method to create a new defaults object to manage the app’s settings. If you add a domain using the [`addSuite(named:)`](./addsuite%28named%29.md) method, the returned object retrieves values in that domain in addition to the standard ones. Custom domains remain in the search list until you remove them or release the object. When you write setting values using this object, it writes them to the current app’s settings.
 
 ## See Also
 
-- [class var standard: UserDefaults](userdefaults/standard.md)
+### Creating a user defaults object
+- [class var standard: UserDefaults](./standard.md)
   The shared defaults object for the current app.
-- [init?(suiteName: String?)](userdefaults/init(suitename:).md)
+- [init?(suiteName: String?)](./init%28suitename%29.md)
   Creates a new defaults object and initializes it with the settings from the specified database.
 
 

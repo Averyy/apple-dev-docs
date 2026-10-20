@@ -1,7 +1,8 @@
 # removeAll(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all the elements that satisfy the given predicate.
 
@@ -32,7 +33,7 @@ phrase.removeAll(where: { vowels.contains($0) })
 // phrase == "Th rn n Spn stys mnly n th pln."
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

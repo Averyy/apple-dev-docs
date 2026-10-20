@@ -1,7 +1,8 @@
 # circle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A circular shape.
 
@@ -22,17 +23,18 @@ static let circle: ButtonBorderShape
 
 #### Discussion
 
-Use the [`buttonBorderShape(_:)`](view/buttonbordershape(_:).md) view modifier to apply the shape to bordered buttons within a view hierarchy.
+Use the [`buttonBorderShape(_:)`](../view/buttonbordershape%28_%29.md) view modifier to apply the shape to bordered buttons within a view hierarchy.
 
 ## See Also
 
-- [static let automatic: ButtonBorderShape](buttonbordershape/automatic.md)
+### Getting border shapes
+- [static let automatic: ButtonBorderShape](./automatic.md)
   A shape that defers to the system to determine an appropriate shape for the given context and platform.
-- [static let capsule: ButtonBorderShape](buttonbordershape/capsule.md)
+- [static let capsule: ButtonBorderShape](./capsule.md)
   A capsule shape.
-- [static let roundedRectangle: ButtonBorderShape](buttonbordershape/roundedrectangle.md)
+- [static let roundedRectangle: ButtonBorderShape](./roundedrectangle.md)
   A rounded rectangle shape.
-- [static func roundedRectangle(radius: CGFloat) -> ButtonBorderShape](buttonbordershape/roundedrectangle(radius:).md)
+- [static func roundedRectangle(radius: CGFloat) -> ButtonBorderShape](./roundedrectangle%28radius%29.md)
   A rounded rectangle shape.
 
 

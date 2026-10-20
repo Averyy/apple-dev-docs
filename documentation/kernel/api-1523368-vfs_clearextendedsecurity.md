@@ -1,7 +1,8 @@
 # vfs_clearextendedsecurity
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Mark a filesystem as NOT supporting security controls beyond POSIX permissions.
 
@@ -10,11 +11,11 @@ Mark a filesystem as NOT supporting security controls beyond POSIX permissions.
 
 ## Declaration
 
-```swift
+```c
 void vfs_clearextendedsecurity(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

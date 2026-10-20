@@ -1,7 +1,8 @@
 # init(fromPasteboard:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Reads an NSURL object off of the specified pasteboard.
 
@@ -11,7 +12,15 @@ Reads an NSURL object off of the specified pasteboard.
 ## Declaration
 
 ```swift
+init?(fromPasteboard pasteBoard: NSPasteboard)
+```
+
+```swift
 init?(from pasteBoard: NSPasteboard)
+```
+
+```objc
++ (NSURL *) URLFromPasteboard:(NSPasteboard *) pasteBoard;
 ```
 
 #### Return Value
@@ -24,7 +33,8 @@ A `NSURL` object, or `nil` if the pasteboard does not contain `NSURLPboardType` 
 
 ## See Also
 
-- [func write(to: NSPasteboard)](nsurl/write(to:).md)
+### Working with Pasteboards
+- [func write(to: NSPasteboard)](./write%28to%29.md)
   Writes the URL to the specified pasteboard.
 
 

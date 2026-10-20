@@ -1,7 +1,8 @@
 # ConditionalDynamicInstructions
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A dynamic instructions type that conditionally selects between two conditions.
 
@@ -22,25 +23,26 @@ struct ConditionalDynamicInstructions<TrueContent, FalseContent> where TrueConte
 ## Topics
 
 ### Creating an instance
-- [init(ConditionalDynamicInstructions<TrueContent, FalseContent>.Branch)](conditionaldynamicinstructions/init(_:).md)
+- [init(ConditionalDynamicInstructions<TrueContent, FalseContent>.Branch)](./conditionaldynamicinstructions/init%28_%29.md)
   Creates a dynamic instructions instance that selects between two conditions.
-- [ConditionalDynamicInstructions.Branch](conditionaldynamicinstructions/branch.md)
+- [ConditionalDynamicInstructions.Branch](./conditionaldynamicinstructions/branch.md)
   An enumeration that represents a condition to evaluate.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicInstructions](dynamicinstructions.md)
+- [DynamicInstructions](./dynamicinstructions.md)
 
 ## See Also
 
-- [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
+### Building dynamic instructions
+- [struct DynamicInstructionsBuilder](./dynamicinstructionsbuilder.md)
   A result builder that combines tools and other content into dynamic instructions.
-- [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
+- [struct EmptyDynamicInstructions](./emptydynamicinstructions.md)
   An empty dynamic instructions type.
-- [struct AnyDynamicInstructions](anydynamicinstructions.md)
+- [struct AnyDynamicInstructions](./anydynamicinstructions.md)
   A dynamic instructions type that’s type-erased.
-- [struct TupleDynamicInstructions](tupledynamicinstructions.md)
+- [struct TupleDynamicInstructions](./tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
 
 

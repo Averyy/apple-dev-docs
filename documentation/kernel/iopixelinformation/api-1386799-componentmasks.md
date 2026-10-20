@@ -1,7 +1,8 @@
 # componentMasks
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Mask of the bits valid for each component of the pixel - in R, G, B order for direct pixels.
 
@@ -10,7 +11,7 @@ Mask of the bits valid for each component of the pixel - in R, G, B order for di
 
 ## Declaration
 
-```swift
+```c
 UInt32 componentMasks[16];
 ```
 

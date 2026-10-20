@@ -1,7 +1,8 @@
 # cameraViewTransform
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform to apply to the camera’s preview image.
 
@@ -16,19 +17,24 @@ The transform to apply to the camera’s preview image.
 var cameraViewTransform: CGAffineTransform { get set }
 ```
 
+```objc
+@property (nonatomic) CGAffineTransform cameraViewTransform;
+```
+
 #### Discussion
 
 This transform affects the live preview image only and does not affect your custom overlay view or the default image picker controls. You can use this property in conjunction with custom controls to implement your own electronic zoom behaviors.
 
-You can access this property only when the source type of the image picker is set to [`UIImagePickerController.SourceType.camera`](uiimagepickercontroller/sourcetype-swift.enum/camera.md). Attempting to access this property for other source types results in the throwing of an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) exception.
+You can access this property only when the source type of the image picker is set to [`UIImagePickerController.SourceType.camera`](./sourcetype-swift.enum/camera.md). Attempting to access this property for other source types results in the throwing of an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) exception.
 
 ## See Also
 
-- [Customizing an image picker controller](customizing-an-image-picker-controller.md)
+### Customizing the camera controls
+- [Customizing an image picker controller](../customizing-an-image-picker-controller.md)
   Manage user interactions and present custom information when taking pictures by adding an overlay view to your image picker.
-- [var showsCameraControls: Bool](uiimagepickercontroller/showscameracontrols.md)
+- [var showsCameraControls: Bool](./showscameracontrols.md)
   A Boolean value that indicates whether the image picker displays the default camera controls.
-- [var cameraOverlayView: UIView?](uiimagepickercontroller/cameraoverlayview.md)
+- [var cameraOverlayView: UIView?](./cameraoverlayview.md)
   The view to display on top of the default image picker interface.
 
 

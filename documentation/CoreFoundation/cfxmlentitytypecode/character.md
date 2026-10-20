@@ -1,12 +1,13 @@
 # CFXMLEntityTypeCode.character
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a character entity type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Indicates a character entity type.
 case character
 ```
 
+```c
+kCFXMLEntityTypeCharacter
+```
+
 ## See Also
 
-- [CFXMLEntityTypeCode.parameter](cfxmlentitytypecode/parameter.md)
+### Constants
+- [CFXMLEntityTypeCode.parameter](./parameter.md)
   Implies a parsed, internal entity.
-- [CFXMLEntityTypeCode.parsedInternal](cfxmlentitytypecode/parsedinternal.md)
+- [CFXMLEntityTypeCode.parsedInternal](./parsedinternal.md)
   Indicates a parsed, internal entity.
-- [CFXMLEntityTypeCode.parsedExternal](cfxmlentitytypecode/parsedexternal.md)
+- [CFXMLEntityTypeCode.parsedExternal](./parsedexternal.md)
   Indicates a parsed, external entity.
-- [CFXMLEntityTypeCode.unparsed](cfxmlentitytypecode/unparsed.md)
+- [CFXMLEntityTypeCode.unparsed](./unparsed.md)
   Indicates an unparsed entity.
 
 

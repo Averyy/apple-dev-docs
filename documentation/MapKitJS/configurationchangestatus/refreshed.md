@@ -1,7 +1,8 @@
 # Refreshed
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A status value that indicates the configuration refresh is successful.
 
@@ -10,7 +11,7 @@ A status value that indicates the configuration refresh is successful.
 
 ## Declaration
 
-```swift
+```
 readonly Refreshed: "Refreshed";
 ```
 

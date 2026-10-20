@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes the contents of a promise to the specified URL.
@@ -13,14 +14,23 @@ Writes the contents of a promise to the specified URL.
 
 ```swift
 nonisolated
+func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, writePromiseTo url: URL, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
+nonisolated
 func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, writePromiseTo url: URL) async throws
+```
+
+```objc
+- (void) filePromiseProvider:(NSFilePromiseProvider *) filePromiseProvider writePromiseToURL:(NSURL *) url completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
 #### Discussion
 
-This method is called after the drag is complete. The request executes on the [`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue) supplied by [`operationQueue(for:)`](nsfilepromiseproviderdelegate/operationqueue(for:).md).
+This method is called after the drag is complete. The request executes on the [`OperationQueue`](../../Foundation/operationqueue.md) supplied by [`operationQueue(for:)`](./operationqueue%28for%29.md).
 
-Call the completion handler with the file contents wrapped in [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator).  Be sure to write your file to the input `url` parameter.
+Call the completion handler with the file contents wrapped in [`NSFileCoordinator`](../../Foundation/nsfilecoordinator.md).  Be sure to write your file to the input `url` parameter.
 
 ## Parameters
 
@@ -30,9 +40,10 @@ Call the completion handler with the file contents wrapped in [`NSFileCoordinato
 
 ## See Also
 
-- [func filePromiseProvider(NSFilePromiseProvider, fileNameForType: String) -> String](nsfilepromiseproviderdelegate/filepromiseprovider(_:filenamefortype:).md)
+### Handling File Promises
+- [func filePromiseProvider(NSFilePromiseProvider, fileNameForType: String) -> String](./filepromiseprovider%28_,filenamefortype%29.md)
   Provides the drag destination file’s name.
-- [func operationQueue(for: NSFilePromiseProvider) -> OperationQueue](nsfilepromiseproviderdelegate/operationqueue(for:).md)
+- [func operationQueue(for: NSFilePromiseProvider) -> OperationQueue](./operationqueue%28for%29.md)
   Returns the operation queue from which to issue the write request.
 
 

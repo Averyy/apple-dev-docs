@@ -1,7 +1,8 @@
 # TextSelectionAffinity.downstream
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An downstream selection affinity. In this case, the cursor is associated with the character immediately after it.
 

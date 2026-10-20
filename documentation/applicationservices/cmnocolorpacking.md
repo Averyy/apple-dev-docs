@@ -1,7 +1,8 @@
 # cmNoColorPacking
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This constant is not used for ColorSync bitmaps.
 

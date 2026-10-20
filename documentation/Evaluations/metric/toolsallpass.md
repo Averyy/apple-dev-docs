@@ -1,9 +1,10 @@
 # toolsAllPass
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator`](toolcallevaluator.md).
+A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator`](../toolcallevaluator.md).
 
 **Availability**:
 - iOS 27.0+

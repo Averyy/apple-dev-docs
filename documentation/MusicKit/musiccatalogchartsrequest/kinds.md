@@ -1,7 +1,8 @@
 # kinds
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kinds of requested catalog charts.
 

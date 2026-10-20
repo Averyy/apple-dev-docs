@@ -1,20 +1,22 @@
 # BinauralRight
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 BinauralRight
 ```
 
 ## See Also
 
-- [BinauralLeft](videodriverkit/iouservideochannellabel/binauralleft.md)
+### Binaural recording
+- [BinauralLeft](./binauralleft.md)
 
 
 ---

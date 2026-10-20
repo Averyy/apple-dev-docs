@@ -1,7 +1,8 @@
 # TransitionEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface TransitionEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [elapsedTime](transitionevent/1629070-elapsedtime.md)
-- [propertyName](transitionevent/1631122-propertyname.md)
-- [pseudoElement](transitionevent/1632397-pseudoelement.md)
+- [elapsedTime](./transitionevent/api-1629070-elapsedtime.md)
+- [propertyName](./transitionevent/api-1631122-propertyname.md)
+- [pseudoElement](./transitionevent/api-1632397-pseudoelement.md)
 
 ## Relationships
 

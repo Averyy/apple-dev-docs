@@ -1,7 +1,8 @@
 # init(sources:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 init(sources sourceNodes: [MPSNNImageNode])
 ```
 
+```objc
+- (instancetype) initWithSources:(NSArray<MPSNNImageNode *> *) sourceNodes;
+```
+
 ## See Also
 
-- [init(leftSource: MPSNNImageNode, rightSource: MPSNNImageNode)](mpsnnbinaryarithmeticnode/init(leftsource:rightsource:).md)
+### Initializers
+- [init(leftSource: MPSNNImageNode, rightSource: MPSNNImageNode)](./init%28leftsource,rightsource%29.md)
 
 
 ---

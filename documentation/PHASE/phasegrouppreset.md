@@ -1,7 +1,8 @@
 # PHASEGroupPreset
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of settings for groups.
 
@@ -17,6 +18,10 @@ A collection of settings for groups.
 
 ```swift
 class PHASEGroupPreset
+```
+
+```objc
+@interface PHASEGroupPreset : NSObject
 ```
 
 #### Overview
@@ -123,46 +128,47 @@ PHASEGroupPreset* inGamePreset = [[PHASEGroupPreset alloc] initWithEngine:myPHAS
 ## Topics
 
 ### Creating a Group Preset
-- [init(engine: PHASEEngine, settings: [String : PHASEGroupPresetSetting], timeToTarget: Double, timeToReset: Double)](phasegrouppreset/init(engine:settings:timetotarget:timetoreset:).md)
+- [init(engine: PHASEEngine, settings: [String : PHASEGroupPresetSetting], timeToTarget: Double, timeToReset: Double)](./phasegrouppreset/init%28engine,settings,timetotarget,timetoreset%29.md)
   Creates a group preset with the designated engine, settings, and fade parameters.
 ### Applying Settings
-- [var settings: [String : PHASEGroupPresetSetting]](phasegrouppreset/settings.md)
+- [var settings: [String : PHASEGroupPresetSetting]](./phasegrouppreset/settings.md)
   A dictionary with preset setting values and group objects as keys.
 ### Fading Between Settings
-- [var timeToTarget: Double](phasegrouppreset/timetotarget.md)
+- [var timeToTarget: Double](./phasegrouppreset/timetotarget.md)
   A duration in which the engine fades the settings from their original value to their new value.
-- [var timeToReset: Double](phasegrouppreset/timetoreset.md)
+- [var timeToReset: Double](./phasegrouppreset/timetoreset.md)
   A duration in which the framework restores the group’s original state.
 ### Activating a Group Preset
-- [func activate()](phasegrouppreset/activate.md)
+- [func activate()](./phasegrouppreset/activate%28%29.md)
   Applies settings to the designated groups.
-- [func activate(timeToTargetOverride: Double)](phasegrouppreset/activate(timetotargetoverride:).md)
+- [func activate(timeToTargetOverride: Double)](./phasegrouppreset/activate%28timetotargetoverride%29.md)
   Applies settings with an overriden fade duration.
 ### Deactivating a Group Preset
-- [func deactivate()](phasegrouppreset/deactivate.md)
+- [func deactivate()](./phasegrouppreset/deactivate%28%29.md)
   Reverts settings for the preset’s groups.
-- [func deactivate(timeToResetOverride: Double)](phasegrouppreset/deactivate(timetoresetoverride:).md)
+- [func deactivate(timeToResetOverride: Double)](./phasegrouppreset/deactivate%28timetoresetoverride%29.md)
   Reverts settings for the preset’s groups using a timed adjustment.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEGroup](phasegroup.md)
+### Sound Grouping and Management
+- [class PHASEGroup](./phasegroup.md)
   A container that shares audio parameters with a collection of sounds.
-- [class PHASEGroupPresetSetting](phasegrouppresetsetting.md)
+- [class PHASEGroupPresetSetting](./phasegrouppresetsetting.md)
   Settings for group presets.
-- [class PHASEDucker](phaseducker.md)
+- [class PHASEDucker](./phaseducker.md)
   An object that manages competing sounds.
 
 

@@ -1,7 +1,8 @@
 # init(asset:automaticallyLoadedAssetKeys:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player item for the asset, and automatically loads values for the specified properties.
 
@@ -23,7 +24,7 @@ Creates a player item for the asset, and automatically loads values for the spec
 
 #### Discussion
 
-The system automatically loads values for the specified property identifiers before the player item reaches an [`AVPlayerItem.Status.readyToPlay`](avplayeritem/status-swift.enum/readytoplay.md) state. In this state, calling [`status(of:)`](avasynchronouskeyvalueloading/status(of:).md) on a specified property identifier returns a value of [`AVAsyncProperty.Status.loaded(_:)`](avasyncproperty/status/loaded(_:).md) or [`AVAsyncProperty.Status.failed(_:)`](avasyncproperty/status/failed(_:).md).
+The system automatically loads values for the specified property identifiers before the player item reaches an [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md) state. In this state, calling [`status(of:)`](../avasynchronouskeyvalueloading/status%28of%29.md) on a specified property identifier returns a value of [`AVAsyncProperty.Status.loaded(_:)`](../avasyncproperty/status/loaded%28_%29.md) or [`AVAsyncProperty.Status.failed(_:)`](../avasyncproperty/status/failed%28_%29.md).
 
 ## Parameters
 
@@ -32,13 +33,14 @@ The system automatically loads values for the specified property identifiers bef
 
 ## See Also
 
-- [convenience init(url: URL)](avplayeritem/init(url:)-1xrtk.md)
+### Creating a player item
+- [convenience init(url: URL)](./init%28url%29-1xrtk.md)
   Creates a player item with a specified URL.
-- [convenience init(asset: AVAsset)](avplayeritem/init(asset:)-87rjl.md)
+- [convenience init(asset: AVAsset)](./init%28asset%29-87rjl.md)
   Creates a player item for a specified asset.
-- [convenience init(asset: any AVAsset & Sendable)](avplayeritem/init(asset:)-1nme9.md)
-- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-85hal.md)
-- [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](avplayeritem/init(asset:automaticallyloadedassetkeys:)-8x4.md)
+- [convenience init(asset: any AVAsset & Sendable)](./init%28asset%29-1nme9.md)
+- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./init%28asset,automaticallyloadedassetkeys%29-85hal.md)
+- [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](./init%28asset,automaticallyloadedassetkeys%29-8x4.md)
   Creates a player item with the specified asset and the asset keys to automatically load.
 
 

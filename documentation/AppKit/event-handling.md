@@ -1,113 +1,114 @@
 # Event Handling
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Respond to mouse, keyboard, touch, and tablet events and gestures that originate inside your view.
 
 ## Topics
 
 ### Handling Events in the View
-- [func acceptsFirstMouse(for: NSEvent?) -> Bool](nsview/acceptsfirstmouse(for:).md)
+- [func acceptsFirstMouse(for: NSEvent?) -> Bool](./nsview/acceptsfirstmouse%28for%29.md)
   Returns a Boolean value that indicates whether the view accepts the initial mouse-down event.
-- [func hitTest(NSPoint) -> NSView?](nsview/hittest(_:).md)
+- [func hitTest(NSPoint) -> NSView?](./nsview/hittest%28_%29.md)
   Returns the farthest descendant of the view in the view hierarchy (including itself) that contains a specified point, or `nil` if that point lies completely outside the view.
-- [func isMousePoint(NSPoint, in: NSRect) -> Bool](nsview/ismousepoint(_:in:).md)
+- [func isMousePoint(NSPoint, in: NSRect) -> Bool](./nsview/ismousepoint%28_,in%29.md)
   Returns whether a region of the view contains a specified point, accounting for whether the view is flipped or not.
-- [func performKeyEquivalent(with: NSEvent) -> Bool](nsview/performkeyequivalent(with:).md)
+- [func performKeyEquivalent(with: NSEvent) -> Bool](./nsview/performkeyequivalent%28with%29.md)
   Implemented by subclasses to respond to key equivalents (also known as keyboard shortcuts).
-- [func rightMouseDown(with: NSEvent)](nsresponder/rightmousedown(with:).md)
+- [func rightMouseDown(with: NSEvent)](./nsresponder/rightmousedown%28with%29.md)
   Informs the receiver that the user has pressed the right mouse button.
-- [var mouseDownCanMoveWindow: Bool](nsview/mousedowncanmovewindow.md)
+- [var mouseDownCanMoveWindow: Bool](./nsview/mousedowncanmovewindow.md)
   A Boolean value indicating whether the view can pass mouse down events through to its superviews.
-- [var inputContext: NSTextInputContext?](nsview/inputcontext.md)
+- [var inputContext: NSTextInputContext?](./nsview/inputcontext.md)
   The text input context object for the view.
 ### Handling Touch Events
-- [var allowedTouchTypes: NSTouch.TouchTypeMask](nsview/allowedtouchtypes.md)
+- [var allowedTouchTypes: NSTouch.TouchTypeMask](./nsview/allowedtouchtypes.md)
   The types of touch interactions the view allows.
-- [var wantsRestingTouches: Bool](nsview/wantsrestingtouches.md)
+- [var wantsRestingTouches: Bool](./nsview/wantsrestingtouches.md)
   A Boolean value indicating whether the view wants resting touches.
-- [var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>?](nsview/candidatelisttouchbaritem.md)
+- [var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>?](./nsview/candidatelisttouchbaritem.md)
 ### Managing gesture recognizers
-- [var gestureRecognizers: [NSGestureRecognizer]](nsview/gesturerecognizers.md)
+- [var gestureRecognizers: [NSGestureRecognizer]](./nsview/gesturerecognizers.md)
   The gesture recognize objects currently attached to the view.
-- [func addGestureRecognizer(NSGestureRecognizer)](nsview/addgesturerecognizer(_:).md)
+- [func addGestureRecognizer(NSGestureRecognizer)](./nsview/addgesturerecognizer%28_%29.md)
   Attaches a gesture recognizer to the view.
-- [func removeGestureRecognizer(NSGestureRecognizer)](nsview/removegesturerecognizer(_:).md)
+- [func removeGestureRecognizer(NSGestureRecognizer)](./nsview/removegesturerecognizer%28_%29.md)
   Detaches a gesture recognizer from the view.
-- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.property.md)
+- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](./nsview/exclusivegesturebehavior-swift.property.md)
   Declares whether gesture recognizers should be exclusive in this view and its subviews.
-- [NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.enum.md)
+- [NSView.ExclusiveGestureBehavior](./nsview/exclusivegesturebehavior-swift.enum.md)
   Exclusive gesture behavior
 ### Managing the Key-View Loop
-- [var canBecomeKeyView: Bool](nsview/canbecomekeyview.md)
+- [var canBecomeKeyView: Bool](./nsview/canbecomekeyview.md)
   A Boolean value indicating whether the view can become key view.
-- [var needsPanelToBecomeKey: Bool](nsview/needspaneltobecomekey.md)
+- [var needsPanelToBecomeKey: Bool](./nsview/needspaneltobecomekey.md)
   A Boolean value indicating whether the view needs its panel to become the key window before it can handle keyboard input and navigation.
-- [var nextKeyView: NSView?](nsview/nextkeyview.md)
+- [var nextKeyView: NSView?](./nsview/nextkeyview.md)
   The view object that follows the current view in the key view loop.
-- [var nextValidKeyView: NSView?](nsview/nextvalidkeyview.md)
+- [var nextValidKeyView: NSView?](./nsview/nextvalidkeyview.md)
   The closest view object in the key view loop that follows the current view in the key view loop and accepts first responder status.
-- [var previousKeyView: NSView?](nsview/previouskeyview.md)
+- [var previousKeyView: NSView?](./nsview/previouskeyview.md)
   The view object preceding the current view in the key view loop.
-- [var previousValidKeyView: NSView?](nsview/previousvalidkeyview.md)
+- [var previousValidKeyView: NSView?](./nsview/previousvalidkeyview.md)
   The closest view object in the key view loop that precedes the current view and accepts first responder status.
 ### Handling Smart Magnification
-- [func rectForSmartMagnification(at: NSPoint, in: NSRect) -> NSRect](nsview/rectforsmartmagnification(at:in:).md)
+- [func rectForSmartMagnification(at: NSPoint, in: NSRect) -> NSRect](./nsview/rectforsmartmagnification%28at,in%29.md)
   Returns the appropriate rectangle to use when magnifying around the specified point.
 ### Managing Tracking Areas
-- [func addTrackingArea(NSTrackingArea)](nsview/addtrackingarea(_:).md)
+- [func addTrackingArea(NSTrackingArea)](./nsview/addtrackingarea%28_%29.md)
   Adds a given tracking area to the view.
-- [func removeTrackingArea(NSTrackingArea)](nsview/removetrackingarea(_:).md)
+- [func removeTrackingArea(NSTrackingArea)](./nsview/removetrackingarea%28_%29.md)
   Removes a given tracking area from the view.
-- [var trackingAreas: [NSTrackingArea]](nsview/trackingareas.md)
+- [var trackingAreas: [NSTrackingArea]](./nsview/trackingareas.md)
   An array of the view’s tracking areas.
-- [func updateTrackingAreas()](nsview/updatetrackingareas.md)
+- [func updateTrackingAreas()](./nsview/updatetrackingareas%28%29.md)
   Invoked automatically when the view’s geometry changes such that its tracking areas need to be recalculated.
-- [class let didUpdateTrackingAreasNotification: NSNotification.Name](nsview/didupdatetrackingareasnotification.md)
+- [class let didUpdateTrackingAreasNotification: NSNotification.Name](./nsview/didupdatetrackingareasnotification.md)
   Posted whenever a view recalculates its tracking areas.
 ### Managing Tracking Rectangles
-- [func addTrackingRect(NSRect, owner: Any, userData: UnsafeMutableRawPointer?, assumeInside: Bool) -> NSView.TrackingRectTag](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md)
+- [func addTrackingRect(NSRect, owner: Any, userData: UnsafeMutableRawPointer?, assumeInside: Bool) -> NSView.TrackingRectTag](./nsview/addtrackingrect%28_,owner,userdata,assumeinside%29.md)
   Establishes an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
-- [func removeTrackingRect(NSView.TrackingRectTag)](nsview/removetrackingrect(_:).md)
+- [func removeTrackingRect(NSView.TrackingRectTag)](./nsview/removetrackingrect%28_%29.md)
   Removes the tracking rectangle identified by a tag.
-- [typealias TrackingRectTag](nsview/trackingrecttag.md)
+- [typealias TrackingRectTag](./nsview/trackingrecttag.md)
   This type describes the rectangle used to track the mouse.
 ### Scrolling the View
-- [func prepareContent(in: NSRect)](nsview/preparecontent(in:).md)
+- [func prepareContent(in: NSRect)](./nsview/preparecontent%28in%29.md)
   Prepares the overdraw region for drawing.
-- [var preparedContentRect: NSRect](nsview/preparedcontentrect.md)
+- [var preparedContentRect: NSRect](./nsview/preparedcontentrect.md)
   The portion of the view that has been rendered and is available for responsive scrolling.
-- [func scroll(NSPoint)](nsview/scroll(_:).md)
-  Scrolls the view’s closest ancestor [`NSClipView`](nsclipview.md) object so a point in the view lies at the origin of the clip view’s bounds rectangle.
-- [func scrollToVisible(NSRect) -> Bool](nsview/scrolltovisible(_:).md)
-  Scrolls the view’s closest ancestor [`NSClipView`](nsclipview.md) object the minimum distance needed so a specified region of the view becomes visible in the clip view.
-- [func autoscroll(with: NSEvent) -> Bool](nsview/autoscroll(with:).md)
-  Scrolls the view’s closest ancestor [`NSClipView`](nsclipview.md) object proportionally to the distance of an event that occurs outside of it.
-- [func adjustScroll(NSRect) -> NSRect](nsview/adjustscroll(_:).md)
+- [func scroll(NSPoint)](./nsview/scroll%28_%29.md)
+  Scrolls the view’s closest ancestor [`NSClipView`](./nsclipview.md) object so a point in the view lies at the origin of the clip view’s bounds rectangle.
+- [func scrollToVisible(NSRect) -> Bool](./nsview/scrolltovisible%28_%29.md)
+  Scrolls the view’s closest ancestor [`NSClipView`](./nsclipview.md) object the minimum distance needed so a specified region of the view becomes visible in the clip view.
+- [func autoscroll(with: NSEvent) -> Bool](./nsview/autoscroll%28with%29.md)
+  Scrolls the view’s closest ancestor [`NSClipView`](./nsclipview.md) object proportionally to the distance of an event that occurs outside of it.
+- [func adjustScroll(NSRect) -> NSRect](./nsview/adjustscroll%28_%29.md)
   Overridden by subclasses to modify a given rectangle, returning the altered rectangle.
-- [var enclosingScrollView: NSScrollView?](nsview/enclosingscrollview.md)
+- [var enclosingScrollView: NSScrollView?](./nsview/enclosingscrollview.md)
   The nearest ancestor scroll view that contains the current view.
-- [func scroll(NSClipView, to: NSPoint)](nsview/scroll(_:to:).md)
+- [func scroll(NSClipView, to: NSPoint)](./nsview/scroll%28_,to%29.md)
   Notifies the superview of a clip view that the clip view needs to reset the origin of its bounds rectangle.
-- [func reflectScrolledClipView(NSClipView)](nsview/reflectscrolledclipview(_:).md)
+- [func reflectScrolledClipView(NSClipView)](./nsview/reflectscrolledclipview%28_%29.md)
   Notifies a clip view’s superview that either the clip view’s bounds rectangle or the document view’s frame rectangle has changed, and that any indicators of the scroll position need to be adjusted.
-- [class var isCompatibleWithResponsiveScrolling: Bool](nsview/iscompatiblewithresponsivescrolling.md)
+- [class var isCompatibleWithResponsiveScrolling: Bool](./nsview/iscompatiblewithresponsivescrolling.md)
   A Boolean value that indicates whether views support responsive scrolling.
 ### Configuring Pressure
-- [var pressureConfiguration: NSPressureConfiguration?](nsview/pressureconfiguration.md)
+- [var pressureConfiguration: NSPressureConfiguration?](./nsview/pressureconfiguration.md)
   Configures the behavior and progression of the Force Touch trackpad when responding to touch input produced by the user when the cursor is over the view.
 ### Dragging Operations
-- [func registerForDraggedTypes([NSPasteboard.PasteboardType])](nsview/registerfordraggedtypes(_:).md)
+- [func registerForDraggedTypes([NSPasteboard.PasteboardType])](./nsview/registerfordraggedtypes%28_%29.md)
   Registers the pasteboard types that the view will accept as the destination of an image-dragging session.
-- [func unregisterDraggedTypes()](nsview/unregisterdraggedtypes.md)
+- [func unregisterDraggedTypes()](./nsview/unregisterdraggedtypes%28%29.md)
   Unregisters the view as a possible destination in a dragging session.
-- [var registeredDraggedTypes: [NSPasteboard.PasteboardType]](nsview/registereddraggedtypes.md)
+- [var registeredDraggedTypes: [NSPasteboard.PasteboardType]](./nsview/registereddraggedtypes.md)
   The array of pasteboard drag types that the view can accept.
-- [func beginDraggingSession(with: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](nsview/begindraggingsession(with:event:source:).md)
+- [func beginDraggingSession(with: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](./nsview/begindraggingsession%28with,event,source%29.md)
   Initiates a dragging session with a group of dragging items.
-- [func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer, source: any NSDraggingSource) -> NSDraggingSession?](nsview/begindraggingsession(items:gesture:source:).md)
+- [func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer, source: any NSDraggingSource) -> NSDraggingSession?](./nsview/begindraggingsession%28items,gesture,source%29.md)
   Initiates a drag operation using a gesture recognizer.
-- [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](nsview/shoulddelaywindowordering(for:).md)
+- [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](./nsview/shoulddelaywindowordering%28for%29.md)
   Allows the user to drag objects from the view without activating the app or moving the window of the view forward, possibly obscuring the destination.
 
 

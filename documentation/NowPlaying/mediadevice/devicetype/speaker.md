@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.speaker
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A speaker device.
 

@@ -1,7 +1,8 @@
 # vmnet_mode_t
 
 **Framework**: vmnet  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that defines the operating modes of the vmnet interface.
 
@@ -15,19 +16,24 @@ A type that defines the operating modes of the vmnet interface.
 typealias vmnet_mode_t = operating_modes_t
 ```
 
+```c
+typedef operating_modes_t vmnet_mode_t;
+```
+
 ## See Also
 
-- [enum vmnet_return_t](vmnet_return_t.md)
+### Data types
+- [enum vmnet_return_t](./vmnet_return_t.md)
   Values returned by functions in the vmnet Framework.
-- [struct vmpktdesc](vmpktdesc.md)
+- [struct vmpktdesc](./vmpktdesc.md)
   Describes a packet.
-- [typealias interface_ref](interface_ref.md)
+- [typealias interface_ref](./interface_ref.md)
   A virtual network interface.
-- [struct interface_event_t](interface_event_t.md)
+- [struct interface_event_t](./interface_event_t.md)
   Interface event types.
-- [enum operating_modes_t](operating_modes_t.md)
+- [enum operating_modes_t](./operating_modes_t.md)
   The operating modes for an interface.
-- [typealias vmnet_network_ref](vmnet_network_ref.md)
+- [typealias vmnet_network_ref](./vmnet_network_ref.md)
   A pointer to a network structure.
 
 

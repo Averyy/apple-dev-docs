@@ -1,7 +1,8 @@
 # MKDirections.Response
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The route information that Apple servers return in response to your request for directions.
 
@@ -20,44 +21,49 @@ The route information that Apple servers return in response to your request for 
 class Response
 ```
 
+```objc
+@interface MKDirectionsResponse : NSObject
+```
+
 #### Overview
 
-You don’t create instances of this class directly. Instead, you initiate a request for directions by calling the [`calculate(completionHandler:)`](mkdirections/calculate(completionhandler:).md) method of an [`MKDirections`](mkdirections.md) object. The completion handler you pass to that method receives an `MKDirections.Response` object with the results.
+You don’t create instances of this class directly. Instead, you initiate a request for directions by calling the [`calculate(completionHandler:)`](./calculate%28completionhandler%29.md) method of an [`MKDirections`](../mkdirections.md) object. The completion handler you pass to that method receives an `MKDirections.Response` object with the results.
 
 ## Topics
 
 ### Getting the end points
-- [var source: MKMapItem](mkdirections/response/source.md)
+- [var source: MKMapItem](./response/source.md)
   The start point of the route.
-- [var destination: MKMapItem](mkdirections/response/destination.md)
+- [var destination: MKMapItem](./response/destination.md)
   The end point of the route.
 ### Getting the route information
-- [var routes: [MKRoute]](mkdirections/response/routes.md)
+- [var routes: [MKRoute]](./response/routes.md)
   An array of route objects representing the directions between the start and end points.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKDirections](mkdirections.md)
+### Directions
+- [class MKDirections](../mkdirections.md)
   A utility object that computes directions and travel-time information based on the route information you provide.
-- [MKDirections.Request](mkdirections/request.md)
+- [MKDirections.Request](./request.md)
   The start and end points of a route, along with the planned mode of transportation.
-- [MKDirections.ETAResponse](mkdirections/etaresponse.md)
+- [MKDirections.ETAResponse](./etaresponse.md)
   The travel-time information that Apple servers return.
-- [class MKRoute](mkroute.md)
+- [class MKRoute](../mkroute.md)
   A single route between a requested start and end point.
-- [MKRoute.Step](mkroute/step.md)
+- [MKRoute.Step](../mkroute/step.md)
   One portion of an overall route.
 
 

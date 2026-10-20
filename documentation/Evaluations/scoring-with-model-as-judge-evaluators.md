@@ -1,6 +1,7 @@
 # Scoring with model-judge evaluators
 
-**Framework**: Evaluations
+**Framework**: Evaluations  
+**Role**: Article
 
 Score subjective qualities like tone, accuracy, and relevance that programmatic checks cannot measure.
 
@@ -8,9 +9,9 @@ Score subjective qualities like tone, accuracy, and relevance that programmatic 
 
 Programmatic evaluators work well when correctness is easily measurable, for example, exact matches, numeric ranges, or JSON schema validation. But there are many quality metrics that you cannot verify with simple code checks. Judging whether a joke is funny, an explanation is clear, or an email strikes the right tone requires reasoning about language, context, and intent.
 
-[`ModelJudgeEvaluator`](modeljudgeevaluator.md) uses a language model to score the output of another model. You configure the model as judge with a scoring scale that defines what quality levels look like and, optionally, a [`ModelJudgePrompt`](modeljudgeprompt.md) with domain-specific instructions.
+[`ModelJudgeEvaluator`](./modeljudgeevaluator.md) uses a language model to score the output of another model. You configure the model as judge with a scoring scale that defines what quality levels look like and, optionally, a [`ModelJudgePrompt`](./modeljudgeprompt.md) with domain-specific instructions.
 
-The model judge scores each response alongside a written rationale explaining its reasoning. The result is a [`Metric`](metric.md) you can aggregate and track just as with any code-based evaluator. For guidance on when to use a model judge versus a code-based evaluator, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md). For best practices on scoring scales and calibration, see [`Designing effective model-judge evaluators`](designing-effective-model-judges.md). To see a model-judge evaluator scoring a real feature alongside code-based checks, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
+The model judge scores each response alongside a written rationale explaining its reasoning. The result is a [`Metric`](./metric.md) you can aggregate and track just as with any code-based evaluator. For guidance on when to use a model judge versus a code-based evaluator, see [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md). For best practices on scoring scales and calibration, see [Designing effective model-judge evaluators](./designing-effective-model-judges.md). To see a model-judge evaluator scoring a real feature alongside code-based checks, see [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
 The Evaluations Framework supports two modes:
 
@@ -19,11 +20,11 @@ The Evaluations Framework supports two modes:
 
 This article shows you how to create pointwise evaluations with single and multi-dimension scoring, build pairwise evaluations, and customize the model-judge prompt with instructions, evaluation targets, and reference data.
 
-#### Build a Pointwise Evaluator
+#### Build a pointwise evaluator
 
 A pointwise evaluator scores each response independently against criteria you define. This lets you evaluate domain-specific qualities that programmatic checks cannot measure, such as whether generated content is accurate, relevant, and useful for your app’s purpose.
 
-The following evaluation uses a [`ModelJudgeEvaluator`](modeljudgeevaluator.md) to assess how well a model generates tags for books based on user reviews. The `BookTags` type uses [`Generable`](https://developer.apple.com/documentation/foundationmodels/generable) and [`Guide(description:_:)`](https://developer.apple.com/documentation/foundationmodels/guide(description:_:)) from [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels) to describe the expected output structure to the language model:
+The following evaluation uses a [`ModelJudgeEvaluator`](./modeljudgeevaluator.md) to assess how well a model generates tags for books based on user reviews. The `BookTags` type uses [`Generable`](../FoundationModels/generable.md) and [`Guide(description:_:)`](../FoundationModels/guide%28description,_%29.md) from [Foundation Models](../FoundationModels/FoundationModels.md) to describe the expected output structure to the language model:
 
 ```swift
 @Generable
@@ -74,17 +75,17 @@ struct BookTagEvaluation: Evaluation {
 }
 ```
 
-This evaluation generates tags for each review, then asks the model judge to score them. The [`ModelJudgeEvaluator`](modeljudgeevaluator.md) sends the original review and the model’s tags to the model judge, which returns a score and rationale.
+This evaluation generates tags for each review, then asks the model judge to score them. The [`ModelJudgeEvaluator`](./modeljudgeevaluator.md) sends the original review and the model’s tags to the model judge, which returns a score and rationale.
 
-The name you pass as the first parameter, `"TagQuality"`, identifies this metric in the results. Use the same string in [`aggregateMetrics(using:)`](evaluation/aggregatemetrics(using:).md) to compute summary statistics.
+The name you pass as the first parameter, `"TagQuality"`, identifies this metric in the results. Use the same string in [`aggregateMetrics(using:)`](./evaluation/aggregatemetrics%28using%29.md) to compute summary statistics.
 
 The scale maps numeric values to quality-level descriptions. Each entry describes what a response at that score looks like, constraining the model judge to one of these values. Each level needs to describe observable features rather than restating a quality gradient. “Tags accurately represent the book and are useful for browsing” gives the model judge something concrete to check. “Excellent quality” does not.
 
-#### Evaluate Multiple Dimensions in a Single Pass
+#### Evaluate multiple dimensions in a single pass
 
 The single `"TagQuality"` scale above asks two different questions at once: are the tags accurate and are they useful for browsing?
 
-Use [`ScoreDimension`](scoredimension.md) to split each concern into its own focused question with its own scale. Pass an array of dimensions to [`ModelJudgeEvaluator`](modeljudgeevaluator.md) using the `dimensions:` parameter. The evaluator scores all dimensions in a single call to the model judge, so you get multiple metrics without extra latency:
+Use [`ScoreDimension`](./scoredimension.md) to split each concern into its own focused question with its own scale. Pass an array of dimensions to [`ModelJudgeEvaluator`](./modeljudgeevaluator.md) using the `dimensions:` parameter. The evaluator scores all dimensions in a single call to the model judge, so you get multiple metrics without extra latency:
 
 ```swift
     private let accuracy = ScoreDimension(
@@ -115,7 +116,7 @@ Use [`ScoreDimension`](scoredimension.md) to split each concern into its own foc
     }
 ```
 
-Each [`ScoreDimension`](scoredimension.md) answers exactly one question, which gives the model as judge a clearer task and gives you a more specific signal. In the example above, a book-tagging service might score high on accuracy (the tags match the review text) but low on usefulness (subjective tags like “uninspired” are too narrow to browse by). A single combined scale obscures that distinction.
+Each [`ScoreDimension`](./scoredimension.md) answers exactly one question, which gives the model as judge a clearer task and gives you a more specific signal. In the example above, a book-tagging service might score high on accuracy (the tags match the review text) but low on usefulness (subjective tags like “uninspired” are too narrow to browse by). A single combined scale obscures that distinction.
 
 Aggregate each dimension separately to track them independently:
 
@@ -128,9 +129,9 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator) {
 }
 ```
 
-#### Customize the Pointwise Model Judge Prompt
+#### Customize the pointwise model-judge prompt
 
-For pointwise evaluation, you can provide a [`ModelJudgePrompt`](modeljudgeprompt.md) to control how the model judge sees and evaluates the response. The prompt has three components:
+For pointwise evaluation, you can provide a [`ModelJudgePrompt`](./modeljudgeprompt.md) to control how the model judge sees and evaluates the response. The prompt has three components:
 
 - **Instructions**: The system prompt for the judge session. Define the judge’s role, list the criteria to assess, and provide step-by-step evaluation procedures.
 - **Evaluation target**: An optional closure that extracts the text the judge evaluates from the model’s response. When omitted, the response is JSON-serialized automatically.
@@ -138,7 +139,7 @@ For pointwise evaluation, you can provide a [`ModelJudgePrompt`](modeljudgepromp
 
 Pairwise evaluation builds its own prompt internally. The `instructions` and `reference` components only apply to pointwise evaluators. Pairwise evaluation supports `evaluationTarget` through its own parameter to control how both the response and baseline are formatted for the model judge.
 
-##### Write Effective Instructions
+##### Write effective instructions
 
 Good instructions include three things:
 
@@ -179,9 +180,9 @@ ModelJudgePrompt(
 )
 ```
 
-If you omit the [`ModelJudgePrompt`](modeljudgeprompt.md) entirely, the evaluator uses default instructions that ask the model judge to rate the response using the scoring scale.
+If you omit the [`ModelJudgePrompt`](./modeljudgeprompt.md) entirely, the evaluator uses default instructions that ask the model judge to rate the response using the scoring scale.
 
-##### Improve Consistency with Scored Examples
+##### Improve consistency with scored examples
 
 Improve scoring consistency by embedding scored examples directly in the instructions. These examples of what different score levels look like help the model judge apply the scale consistently across samples.
 
@@ -264,7 +265,7 @@ Include examples that span the full range of your scale. At minimum, show what a
 
 > 💡 **Tip**: Add a final instruction such as “Use these examples to calibrate your scoring.” to remind the model judge to use the examples as reference points.
 
-##### Format Structured Output for the Model Judge
+##### Format structured output for the model judge
 
 When you use structured output, the `evaluationTarget` closure formats the response into readable text for the model judge. By default, the model judge receives a JSON serialized version of the result.
 
@@ -276,7 +277,7 @@ prompt: ModelJudgePrompt(
 )
 ```
 
-##### Provide Reference Data for the Model Judge
+##### Provide reference data for the model judge
 
 Use the `reference` closure to give the model judge additional context, such as expected values, source material, or ground truth data that’s known to be accurate. The closure receives the input sample and the model’s response, and returns a `[String: String]` dictionary. Each key-value pair becomes a labeled section in the judge’s prompt.
 
@@ -312,13 +313,13 @@ ModelJudgeEvaluator(
 
 Without `reference`, the model judge only sees the prompt and the response. Adding reference data lets the model judge evaluate how well the response matches expectations, not just whether it seems reasonable in isolation.
 
-#### Compare Two Responses with Pairwise Evaluation
+#### Compare two responses with pairwise evaluation
 
 Pairwise evaluation compares two responses and tells you which one the model judge rates higher. Use it to compare prompt strategies, model versions, or before-and-after changes. Instead of scoring absolute quality, the model judge decides whether a response is better or worse than a baseline.
 
-Use the [`pairwise(_:scale:judge:scoringMode:evaluationTarget:)`](modeljudgeevaluator/pairwise(_:scale:judge:scoringmode:evaluationtarget:).md) method and frame your scale as a comparison. A score of 4 means the response is much better than the baseline, and a score of 1 means the baseline is much better. The 1–4 scale has no neutral midpoint, so the judge has to decide which side of the comparison wins on every sample.
+Use the [`pairwise(_:scale:judge:scoringMode:evaluationTarget:)`](./modeljudgeevaluator/pairwise%28_,scale,judge,scoringmode,evaluationtarget%29.md) method and frame your scale as a comparison. A score of 4 means the response is much better than the baseline, and a score of 1 means the baseline is much better. The 1–4 scale has no neutral midpoint, so the judge has to decide which side of the comparison wins on every sample.
 
-Unlike pointwise evaluation, the pairwise method uses its own built-in prompt and automatically sends the sample’s [`expected`](modelsample/expected.md) value to the model judge as the baseline. You provide the baseline when you create each sample, and the evaluator handles the rest.
+Unlike pointwise evaluation, the pairwise method uses its own built-in prompt and automatically sends the sample’s [`expected`](./modelsample/expected.md) value to the model judge as the baseline. You provide the baseline when you create each sample, and the evaluator handles the rest.
 
 ```swift
 struct ExplanationPairwiseEvaluation: Evaluation {
@@ -372,9 +373,9 @@ struct ExplanationPairwiseEvaluation: Evaluation {
 
 In this example, a mean score above 2.5 indicates the model’s responses are generally better than the baselines. A mean score below 2.5 indicates regressions. Scores near 2.5 suggest comparable quality.
 
-#### Combine Model Judge Metrics with Programmatic Evaluators
+#### Combine model-judge metrics with programmatic evaluators
 
-Model-judge evaluators and code-based evaluators work together in the same evaluation. Use code-based evaluators for dimensions with clear right answers, and model-judge evaluators for subjective quality. Both produce [`Metric`](metric.md) values that you aggregate in the same [`MetricsAggregator`](metricsaggregator.md):
+Model-judge evaluators and code-based evaluators work together in the same evaluation. Use code-based evaluators for dimensions with clear right answers, and model-judge evaluators for subjective quality. Both produce [`Metric`](./metric.md) values that you aggregate in the same [`MetricsAggregator`](./metricsaggregator.md):
 
 ```swift
     private let nonEmpty = Metric("NonEmpty")
@@ -413,9 +414,9 @@ Model-judge evaluators and code-based evaluators work together in the same evalu
     }
 ```
 
-#### Run a Model Judge Evaluation
+#### Run a model-judge evaluation
 
-Run your model-judge evaluation with [`Swift Testing`](https://developer.apple.com/documentation/testing), just as you do with other evaluations:
+Run your model-judge evaluation with [Swift Testing](../Testing/Testing.md), just as you do with other evaluations:
 
 ```swift
 import Testing
@@ -432,19 +433,20 @@ struct BookTagTests {
 }
 ```
 
-#### Use Rationales to Debug and Refine Your Evaluator
+#### Use rationales to debug and refine your evaluator
 
-When the model judge scores a response, it also produces a written rationale explaining its reasoning. These rationales appear in the detailed results alongside the score for each sample. When scores seem wrong or inconsistent, the rationales usually show you why. For a guide to interpreting rationales, identifying common scoring problems, and refining your evaluator configuration, see [`Designing effective model-judge evaluators`](designing-effective-model-judges.md).
+When the model judge scores a response, it also produces a written rationale explaining its reasoning. These rationales appear in the detailed results alongside the score for each sample. When scores seem wrong or inconsistent, the rationales usually show you why. For a guide to interpreting rationales, identifying common scoring problems, and refining your evaluator configuration, see [Designing effective model-judge evaluators](./designing-effective-model-judges.md).
 
 ## See Also
 
-- [Designing effective model-judge evaluators](designing-effective-model-judges.md)
+### Model-judge evaluations
+- [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
   Configure model-judge evaluators that produce scores you correlate with human review.
-- [struct ModelJudgeEvaluator](modeljudgeevaluator.md)
+- [struct ModelJudgeEvaluator](./modeljudgeevaluator.md)
   An evaluator that uses a language model as a judge to score responses.
-- [struct ModelJudgePrompt](modeljudgeprompt.md)
+- [struct ModelJudgePrompt](./modeljudgeprompt.md)
   A configuration for how a model evaluator constructs its prompt.
-- [struct ScoreDimension](scoredimension.md)
+- [struct ScoreDimension](./scoredimension.md)
   A named scoring dimension for a model evaluator.
 
 

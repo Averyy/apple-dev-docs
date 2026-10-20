@@ -1,7 +1,8 @@
 # signature
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Opaque producer-supplied signature for this reasoning entry.
 
@@ -25,11 +26,12 @@ When this is non-nil, `segments` may represent a partial summary or be empty; fu
 
 ## See Also
 
-- [var description: String](transcript/reasoning/description.md)
+### Inspecting the reasoning
+- [var description: String](./description.md)
   A textual representation of the reasoning entry.
-- [var metadata: [String : GeneratedContent]](transcript/reasoning/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata produced by the model while generating this reasoning entry.
-- [var segments: [Transcript.Segment]](transcript/reasoning/segments.md)
+- [var segments: [Transcript.Segment]](./segments.md)
   Ordered reasoning segments.
 
 

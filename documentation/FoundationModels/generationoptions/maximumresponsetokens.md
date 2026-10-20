@@ -1,7 +1,8 @@
 # maximumResponseTokens
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of tokens the model is allowed to produce in its response.
 
@@ -21,7 +22,7 @@ var maximumResponseTokens: Int?
 
 ## Mentions
 
-- [Managing the context window](managing-the-context-window.md)
+- [Managing the context window](../managing-the-context-window.md)
 
 #### Discussion
 
@@ -31,17 +32,18 @@ If no value is specified, then the model is allowed to produce the longest answe
 
 ## See Also
 
-- [var temperature: Double?](generationoptions/temperature.md)
+### Configuring options
+- [var temperature: Double?](./temperature.md)
   A value that influences the confidence of the model’s response.
-- [var sampling: GenerationOptions.SamplingMode?](generationoptions/sampling.md)
+- [var sampling: GenerationOptions.SamplingMode?](./sampling.md)
   A sampling strategy for how the model picks tokens when generating a response.
-- [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)
+- [var samplingMode: GenerationOptions.SamplingMode?](./samplingmode-swift.property.md)
   A sampling strategy for how the model picks tokens when generating a response.
-- [GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct.md)
+- [GenerationOptions.SamplingMode](./samplingmode-swift.struct.md)
   A type that defines how values are sampled from a probability distribution.
-- [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
+- [var toolCallingMode: GenerationOptions.ToolCallingMode?](./toolcallingmode-swift.property.md)
   The tool calling requirements.
-- [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
+- [GenerationOptions.ToolCallingMode](./toolcallingmode-swift.struct.md)
   A value that describes how the model uses tools.
 
 

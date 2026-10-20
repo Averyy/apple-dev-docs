@@ -1,14 +1,15 @@
 # CreateIOBuffer
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CreateIOBuffer(IOOptionBits options, uint64_t capacity, IOBufferMemoryDescriptor **buffer, OSDispatchMethod supermethod);
 ```
 

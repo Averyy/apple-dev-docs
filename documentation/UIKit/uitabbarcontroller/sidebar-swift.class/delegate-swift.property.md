@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object managing the delegate of the sidebar.
 
@@ -17,9 +18,14 @@ The object managing the delegate of the sidebar.
 weak var delegate: (any UITabBarController.Sidebar.Delegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UITabBarControllerSidebarDelegate> delegate;
+```
+
 ## See Also
 
-- [UITabBarController.Sidebar.Delegate](uitabbarcontroller/sidebar-swift.class/delegate-swift.protocol.md)
+### Setting the sidebar delegate
+- [UITabBarController.Sidebar.Delegate](./delegate-swift.protocol.md)
 
 
 ---

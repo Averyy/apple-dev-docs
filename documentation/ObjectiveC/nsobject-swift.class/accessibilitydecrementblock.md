@@ -1,7 +1,8 @@
 # accessibilityDecrementBlock
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var accessibilityDecrementBlock: AXVoidReturnBlock? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) AXVoidReturnBlock accessibilityDecrementBlock;
 ```
 
 

@@ -1,7 +1,8 @@
 # root
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the root of a path if there is one, otherwise `nil`.
 
@@ -30,15 +31,19 @@ On Windows, for UNC or device paths, this will return the path prefix up to and 
 
 Examples:
 
-- Unix: - `/foo/bar => /`
-- `foo/bar  => nil`
-- Windows: - `C:\foo\bar                => C:\`
-- `C:foo\bar                 => C:`
-- `\foo\bar                  => \ `
-- `foo\bar                   => nil`
-- `\\server\share\file       => \\server\share\`
-- `\\?\UNC\server\share\file => \\?\UNC\server\share\`
-- `\\.\device\folder         => \\.\device\`
+- Unix:
+
+  - `/foo/bar => /`
+  - `foo/bar  => nil`
+- Windows:
+
+  - `C:\foo\bar                => C:\`
+  - `C:foo\bar                 => C:`
+  - `\foo\bar                  => \ `
+  - `foo\bar                   => nil`
+  - `\\server\share\file       => \\server\share\`
+  - `\\?\UNC\server\share\file => \\?\UNC\server\share\`
+  - `\\.\device\folder         => \\.\device\`
 
 Setting the root to `nil` will remove the root and setting a new root will replace the root.
 

@@ -1,7 +1,8 @@
 # isFinite(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the input tensor elements are finite or not.
 
@@ -17,6 +18,10 @@ Checks if the input tensor elements are finite or not.
 
 ```swift
 func isFinite(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) isFiniteWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

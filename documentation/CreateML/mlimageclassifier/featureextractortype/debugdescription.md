@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the feature extractor that’s suitable for output during debugging.
 
@@ -20,9 +21,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlimageclassifier/featureextractortype/description.md)
+### Describing a feature extractor type
+- [var description: String](./description.md)
   A text representation of the feature extractor.
-- [var playgroundDescription: Any](mlimageclassifier/featureextractortype/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the feature extractor shown in a playground.
 
 

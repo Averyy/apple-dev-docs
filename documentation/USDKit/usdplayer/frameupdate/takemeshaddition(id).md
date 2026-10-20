@@ -1,9 +1,10 @@
 # takeMeshAddition(id:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Consumes and returns the [`USDPlayer.MeshData`](usdplayer/meshdata.md) for the given mesh addition.
+Consumes and returns the [`USDPlayer.MeshData`](../meshdata.md) for the given mesh addition.
 
 **Availability**:
 - iOS 27.0+

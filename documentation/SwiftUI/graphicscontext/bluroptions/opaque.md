@@ -1,7 +1,8 @@
 # opaque
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that causes the filter to ensure the result is completely opaque.
 
@@ -26,7 +27,8 @@ The filter ensure opacity by dividing each pixel by its alpha value. The result 
 
 ## See Also
 
-- [static var dithersResult: GraphicsContext.BlurOptions](graphicscontext/bluroptions/dithersresult.md)
+### Getting blur options
+- [static var dithersResult: GraphicsContext.BlurOptions](./dithersresult.md)
   An option that causes the filter to dither the result, to reduce banding.
 
 

@@ -1,7 +1,8 @@
 # AddMediaIntentHandlingInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The service’s response to a request to process an add media intent.
 
@@ -10,19 +11,24 @@ The service’s response to a request to process an add media intent.
 
 ## Declaration
 
-```swift
+```
 * AddMediaIntentHandlingInvocationResponse
 ```
 
+
+
+**Allowed Types**: `AddMediaIntentHandlingResolveMediaItemsInvocationResponse`, `AddMediaIntentHandlingResolveMediaDestinationInvocationResponse`, `AddMediaIntentHandlingConfirmInvocationResponse`, `AddMediaIntentHandlingHandleInvocationResponse`, `ProtocolExceptionInvocationResponse`
+
 #### Discussion
 
-Allowed types: [`AddMediaIntentHandlingResolveMediaItemsInvocationResponse`](addmediaintenthandlingresolvemediaitemsinvocationresponse.md), [`AddMediaIntentHandlingResolveMediaDestinationInvocationResponse`](addmediaintenthandlingresolvemediadestinationinvocationresponse.md), [`AddMediaIntentHandlingConfirmInvocationResponse`](addmediaintenthandlingconfirminvocationresponse.md), [`AddMediaIntentHandlingHandleInvocationResponse`](addmediaintenthandlinghandleinvocationresponse.md).
+Allowed types: [`AddMediaIntentHandlingResolveMediaItemsInvocationResponse`](./addmediaintenthandlingresolvemediaitemsinvocationresponse.md), [`AddMediaIntentHandlingResolveMediaDestinationInvocationResponse`](./addmediaintenthandlingresolvemediadestinationinvocationresponse.md), [`AddMediaIntentHandlingConfirmInvocationResponse`](./addmediaintenthandlingconfirminvocationresponse.md), [`AddMediaIntentHandlingHandleInvocationResponse`](./addmediaintenthandlinghandleinvocationresponse.md).
 
 ## See Also
 
-- [object AddMediaIntent](addmediaintent.md)
+### Processing an Add Media Intent
+- [object AddMediaIntent](./addmediaintent.md)
   An object that describes the user’s request to add media items to their library or to a specific playlist.
-- [object AddMediaIntentHandlingInvocation](addmediaintenthandlinginvocation.md)
+- [object AddMediaIntentHandlingInvocation](./addmediaintenthandlinginvocation.md)
   A request to process an add media intent.
 
 

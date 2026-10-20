@@ -1,18 +1,19 @@
 # require(_:_:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Unwrap an optional value or, if it is `nil`, fail and throw an error.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -25,7 +26,7 @@ Unwrap an optional value or, if it is `nil`, fail and throw an error.
 
 ## Mentions
 
-- [Migrating a test from XCTest](migratingfromxctest.md)
+- [Migrating a test from XCTest](./migratingfromxctest.md)
 
 #### Return Value
 
@@ -33,9 +34,9 @@ The unwrapped value of `optionalValue`.
 
 #### Overview
 
-> **Note**: An instance of [`ExpectationFailedError`](expectationfailederror.md) if `optionalValue` is `nil`.
+> **Throws**: An instance of [`ExpectationFailedError`](./expectationfailederror.md) if `optionalValue` is `nil`.
 
-If `optionalValue` is `nil`, an [`Issue`](issue.md) is recorded for the test that is running in the current task and an instance of [`ExpectationFailedError`](expectationfailederror.md) is thrown.
+If `optionalValue` is `nil`, an [`Issue`](./issue.md) is recorded for the test that is running in the current task and an instance of [`ExpectationFailedError`](./expectationfailederror.md) is thrown.
 
 ## Parameters
 
@@ -45,9 +46,10 @@ If `optionalValue` is `nil`, an [`Issue`](issue.md) is recorded for the test tha
 
 ## See Also
 
-- [macro expect(Bool, @autoclosure () -> Comment?, sourceLocation: SourceLocation)](expect(_:_:sourcelocation:).md)
+### Checking expectations
+- [macro expect(Bool, @autoclosure () -> Comment?, sourceLocation: SourceLocation)](./expect%28_,_,sourcelocation%29.md)
   Check that an expectation has passed after a condition has been evaluated.
-- [macro require(Bool, @autoclosure () -> Comment?, sourceLocation: SourceLocation)](require(_:_:sourcelocation:)-5l63q.md)
+- [macro require(Bool, @autoclosure () -> Comment?, sourceLocation: SourceLocation)](./require%28_,_,sourcelocation%29-5l63q.md)
   Check that an expectation has passed after a condition has been evaluated and throw an error if it failed.
 
 

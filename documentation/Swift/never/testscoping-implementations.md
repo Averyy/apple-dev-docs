@@ -1,11 +1,12 @@
 # TestScoping Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func provideScope(for: Test, testCase: Test.Case?, performing: () async throws -> Void) async throws](never/providescope(for:testcase:performing:).md)
+- [func provideScope(for: Test, testCase: Test.Case?, performing: () async throws -> Void) async throws](./providescope%28for,testcase,performing%29.md)
 
 
 ---

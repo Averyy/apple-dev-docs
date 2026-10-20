@@ -1,22 +1,24 @@
 # mach_vm_read_list
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t mach_vm_read_list(vm_map_read_t target_task, mach_vm_read_entry_t data_list, natural_t count);
 ```
 
 ## See Also
 
-- [mach_vm_read](1402405-mach_vm_read.md)
-- [mach_vm_write](1402070-mach_vm_write.md)
-- [mach_vm_read_overwrite](1402127-mach_vm_read_overwrite.md)
+### Reads and Writes
+- [mach_vm_read](./api-1402405-mach_vm_read.md)
+- [mach_vm_write](./api-1402070-mach_vm_write.md)
+- [mach_vm_read_overwrite](./api-1402127-mach_vm_read_overwrite.md)
 
 
 ---

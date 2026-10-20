@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a form.
@@ -24,7 +25,7 @@ Creates a view that represents the body of a form.
 
 #### Return Value
 
-A view that has behavior and appearance that enables it to function as a [`Form`](form.md).
+A view that has behavior and appearance that enables it to function as a [`Form`](../form.md).
 
 ## Parameters
 
@@ -32,9 +33,10 @@ A view that has behavior and appearance that enables it to function as a [`Form`
 
 ## See Also
 
-- [FormStyle.Configuration](formstyle/configuration.md)
+### Creating custom form styles
+- [FormStyle.Configuration](./configuration.md)
   The properties of a form instance.
-- [associatedtype Body : View](formstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the appearance and interaction of a form.
 
 

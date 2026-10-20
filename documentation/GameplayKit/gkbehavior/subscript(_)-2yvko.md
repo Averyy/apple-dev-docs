@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: GameplayKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the weight associated with the goal specified by subscript syntax.
 
@@ -19,13 +20,17 @@ Returns the weight associated with the goal specified by subscript syntax.
 subscript(goal: GKGoal) -> NSNumber! { get set }
 ```
 
+```objc
+- (NSNumber *) objectForKeyedSubscript:(GKGoal *) goal;
+```
+
 #### Return Value
 
 The weight to be applied to the goal’s influence on an agent’s speed and direction, or `0.0` if the goal is not in the behavior.
 
 #### Discussion
 
-This method is equivalent to the [`weight(for:)`](gkbehavior/weight(for:).md) method, but allows access using subscript syntax.
+This method is equivalent to the [`weight(for:)`](./weight%28for%29.md) method, but allows access using subscript syntax.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ This method is equivalent to the [`weight(for:)`](gkbehavior/weight(for:).md) me
 
 ## See Also
 
-- [subscript(Int) -> GKGoal](gkbehavior/subscript(_:)-997a9.md)
+### Working with Goals Using Subscript Syntax
+- [subscript(Int) -> GKGoal](./subscript%28_%29-997a9.md)
   Returns the goal at the specified index in the behavior’s list of goals.
 
 

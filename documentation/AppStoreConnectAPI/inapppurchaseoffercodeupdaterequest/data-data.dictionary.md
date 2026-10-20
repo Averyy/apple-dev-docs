@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an In-App Purchase offer code.
 
@@ -10,21 +11,21 @@ The request body you use to update an In-App Purchase offer code.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCodeUpdateRequest.Data.Attributes](inapppurchaseoffercodeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object InAppPurchaseOfferCodeUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify an In-App Purchase offer code update request.
 
 ## Properties
 
 - `attributes` (InAppPurchaseOfferCodeUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchaseOfferCodes`
 
 
 ---

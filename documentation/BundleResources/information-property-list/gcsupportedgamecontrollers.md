@@ -1,7 +1,8 @@
 # GCSupportedGameControllers
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The types of game controller profiles that the app supports or requires.
 
@@ -12,42 +13,44 @@ The types of game controller profiles that the app supports or requires.
 - tvOS 9.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `GCSupportedGameControllers` (Supported game controller types)
+- **Type**: array of dictionary 
 
 #### Discussion
 
 The dictionary keys are `ProfileName` and the possible game controller values are:
 
-- **`ExtendedGamepad`**: The extended set of gamepad controls. See [`GCExtendedGamepad`](https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad).
+- **`ExtendedGamepad`**: The extended set of gamepad controls. See [`GCExtendedGamepad`](../../GameController/gcextendedgamepad.md).
 - **`SpatialGamepad`**: The set of spatial gamepad controls.
-- **`MicroGamepad`**: The 1st Generation Siri Remote. See [`GCMicroGamepad`](https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad).
-- **`DirectionalGamepad`**: The 2nd Generation Siri Remote. A directional pad without motion or rotation. See [`GCDirectionalGamepad`](https://developer.apple.com/documentation/gamecontroller/gcdirectionalgamepad). Available in iOS 14.3+, macOS 11.1+, Mac Catalyst 14.3+, and tvOS 14.3+.
+- **`MicroGamepad`**: The 1st Generation Siri Remote. See [`GCMicroGamepad`](../../GameController/gcmicrogamepad.md).
+- **`DirectionalGamepad`**: The 2nd Generation Siri Remote. A directional pad without motion or rotation. See [`GCDirectionalGamepad`](../../GameController/gcdirectionalgamepad.md). Available in iOS 14.3+, macOS 11.1+, Mac Catalyst 14.3+, and tvOS 14.3+.
 
 ## Properties
 
-- `ProfileName` (string)
+- `ProfileName` (string): **Allowed Values**: `DirectionalGamepad`, `SpatialGamepad`, `ExtendedGamepad`, `MicroGamepad`
 
 ## See Also
 
-- [AVGameBypassSystemSpatialAudio](information-property-list/avgamebypasssystemspatialaudio.md)
+### Games
+- [AVGameBypassSystemSpatialAudio](./avgamebypasssystemspatialaudio.md)
   A key that ignores the system spatial-audio toggle in Control Center.
-- [GKGameCenterBadgingDisabled](information-property-list/gkgamecenterbadgingdisabled.md)
+- [GKGameCenterBadgingDisabled](./gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
-- [GCDisableInferringGameMetadata](information-property-list/gcdisableinferringgamemetadata.md)
+- [GCDisableInferringGameMetadata](./gcdisableinferringgamemetadata.md)
   A Boolean value that indicates whether the Games app excludes game information for non-App Store games.
-- [GCSupportsControllerUserInteraction](information-property-list/gcsupportscontrolleruserinteraction.md)
+- [GCSupportsControllerUserInteraction](./gcsupportscontrolleruserinteraction.md)
   A Boolean value indicating whether the app supports a game controller.
-- [GCRequiresControllerUserInteraction](information-property-list/gcrequirescontrolleruserinteraction.md)
+- [GCRequiresControllerUserInteraction](./gcrequirescontrolleruserinteraction.md)
   The platforms for which your app requires or you recommend a game controller.
-- [GCSupportsMultipleMicroGamepads](information-property-list/gcsupportsmultiplemicrogamepads.md)
+- [GCSupportsMultipleMicroGamepads](./gcsupportsmultiplemicrogamepads.md)
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
-- [LSSupportsGameMode](information-property-list/lssupportsgamemode.md)
+- [LSSupportsGameMode](./lssupportsgamemode.md)
   A Boolean value indicating whether the app supports Game Mode.
-- [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
+- [GCSupportsGameMode](./gcsupportsgamemode.md)
   A Boolean value indicating whether the app supports game mode.
-- [GKShowChallengeBanners](information-property-list/gkshowchallengebanners.md)
+- [GKShowChallengeBanners](./gkshowchallengebanners.md)
   A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 

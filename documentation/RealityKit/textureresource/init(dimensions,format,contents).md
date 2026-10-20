@@ -1,7 +1,8 @@
 # init(dimensions:format:contents:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously creates a 2D texture resource from a pixel Metal buffer, or data.
 
@@ -18,6 +19,43 @@ Asynchronously creates a 2D texture resource from a pixel Metal buffer, or data.
 ```swift
 @MainActor
 @preconcurrency convenience init(dimensions: TextureResource.Dimensions2D, format: TextureResource.Format, contents: TextureResource.Contents) async throws
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(dimensions: TextureResource.Dimensions2D, format: TextureResource.Format, contents: TextureResource.Contents) throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(dimensions: TextureResource.Dimensions2DArray, format: TextureResource.Format, contents: TextureResource.Contents) async throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(dimensions: TextureResource.Dimensions2DArray, format: TextureResource.Format, contents: TextureResource.Contents) throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(dimensions: TextureResource.Dimensions3D, format: TextureResource.Format, contents: TextureResource.Contents) async throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(dimensions: TextureResource.Dimensions3D, format: TextureResource.Format, contents: TextureResource.Contents) throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(dimensions: TextureResource.DimensionsCube, format: TextureResource.Format, contents: TextureResource.Contents) async throws
+```
+
+```swift
+@MainActor
+@preconcurrency convenience init(dimensions: TextureResource.DimensionsCube, format: TextureResource.Format, contents: TextureResource.Contents) throws
 ```
 
 #### Discussion
@@ -45,7 +83,7 @@ let texture = try await TextureResource(
 )
 ```
 
-See [`init(named:in:)`](textureresource/init(named:in:).md) for an example of optimally loading textures with other content.
+See [`init(named:in:)`](./init%28named,in%29.md) for an example of optimally loading textures with other content.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # verticalScrollBounceBehavior
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroll bounce mode for the vertical axis of scrollable views.
 
@@ -22,15 +23,16 @@ var verticalScrollBounceBehavior: ScrollBounceBehavior { get set }
 
 #### Discussion
 
-Use the [`scrollBounceBehavior(_:axes:)`](view/scrollbouncebehavior(_:axes:).md) view modifier to set this value in the [`Environment`](environment.md).
+Use the [`scrollBounceBehavior(_:axes:)`](../view/scrollbouncebehavior%28_,axes%29.md) view modifier to set this value in the [`Environment`](../environment.md).
 
 ## See Also
 
-- [func scrollBounceBehavior(ScrollBounceBehavior, axes: Axis.Set) -> some View](view/scrollbouncebehavior(_:axes:).md)
+### Configuring scroll bounce behavior
+- [func scrollBounceBehavior(ScrollBounceBehavior, axes: Axis.Set) -> some View](../view/scrollbouncebehavior%28_,axes%29.md)
   Configures the bounce behavior of scrollable views along the specified axis.
-- [var horizontalScrollBounceBehavior: ScrollBounceBehavior](environmentvalues/horizontalscrollbouncebehavior.md)
+- [var horizontalScrollBounceBehavior: ScrollBounceBehavior](./horizontalscrollbouncebehavior.md)
   The scroll bounce mode for the horizontal axis of scrollable views.
-- [struct ScrollBounceBehavior](scrollbouncebehavior.md)
+- [struct ScrollBounceBehavior](../scrollbouncebehavior.md)
   The ways that a scrollable view can bounce when it reaches the end of its content.
 
 

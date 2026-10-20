@@ -1,7 +1,8 @@
 # WKWebsiteDataTypeScreenTime
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 let WKWebsiteDataTypeScreenTime: String
+```
+
+```c
+extern NSString * const WKWebsiteDataTypeScreenTime;
 ```
 
 

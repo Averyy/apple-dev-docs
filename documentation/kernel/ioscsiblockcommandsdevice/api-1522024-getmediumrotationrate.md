@@ -1,14 +1,15 @@
 # GetMediumRotationRate
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 void GetMediumRotationRate(void);
 ```
 

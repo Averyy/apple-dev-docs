@@ -1,17 +1,20 @@
 # paymentPass
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying payment pass.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 27.2
+- iPadOS 8.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 3.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`secureElementPass`](./secureelementpass.md) instead.
 
 ## Declaration
 
@@ -19,25 +22,30 @@ The underlying payment pass.
 var paymentPass: PKPaymentPass? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) PKPaymentPass * paymentPass;
+```
+
 ## See Also
 
-- [var passType: PKPassType](pkpass/passtype.md)
+### Identifying a pass
+- [var passType: PKPassType](./passtype.md)
   The pass’s type.
-- [enum PKPassType](pkpasstype.md)
+- [enum PKPassType](../pkpasstype.md)
   Types of passes.
-- [var secureElementPass: PKSecureElementPass?](pkpass/secureelementpass.md)
+- [var secureElementPass: PKSecureElementPass?](./secureelementpass.md)
   The pass that contains an accompanying credential that the device stores in the Secure Element.
-- [var serialNumber: String](pkpass/serialnumber.md)
+- [var serialNumber: String](./serialnumber.md)
   A value that uniquely identifies the pass.
-- [var passTypeIdentifier: String](pkpass/passtypeidentifier.md)
+- [var passTypeIdentifier: String](./passtypeidentifier.md)
   The pass’s pass type identifier.
-- [var deviceName: String](pkpass/devicename.md)
+- [var deviceName: String](./devicename.md)
   The name of the device that hosts the pass.
-- [var localizedName: String](pkpass/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   The localized name for the pass’s template.
-- [var localizedDescription: String](pkpass/localizeddescription.md)
+- [var localizedDescription: String](./localizeddescription.md)
   The pass’s localized description.
-- [var isRemotePass: Bool](pkpass/isremotepass.md)
+- [var isRemotePass: Bool](./isremotepass.md)
   A Boolean value that indicates whether the pass is on a paired device, such as an Apple Watch.
 
 

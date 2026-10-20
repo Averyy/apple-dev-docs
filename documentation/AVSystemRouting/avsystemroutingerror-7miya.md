@@ -1,7 +1,8 @@
 # AVSystemRoutingError
 
 **Framework**: AVSystemRouting  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that an AVSystemRouting operation throws when it fails.
 
@@ -19,34 +20,35 @@ struct AVSystemRoutingError
 ## Topics
 
 ### Initializers
-- [init(AVSystemRoutingError.Code)](avsystemroutingerror-7miya/init(_:).md)
+- [init(AVSystemRoutingError.Code)](./avsystemroutingerror-7miya/init%28_%29.md)
   Creates an error with the specified error code.
 ### Instance Properties
-- [let code: AVSystemRoutingError.Code](avsystemroutingerror-7miya/code-swift.property.md)
+- [let code: AVSystemRoutingError.Code](./avsystemroutingerror-7miya/code-swift.property.md)
   The code that identifies the type of routing error.
-- [var errorDescription: String?](avsystemroutingerror-7miya/errordescription.md)
+- [var errorDescription: String?](./avsystemroutingerror-7miya/errordescription.md)
   A localized description of the error.
-- [var failureReason: String?](avsystemroutingerror-7miya/failurereason.md)
+- [var failureReason: String?](./avsystemroutingerror-7miya/failurereason.md)
   A localized explanation of the reason for the error.
-- [var helpAnchor: String?](avsystemroutingerror-7miya/helpanchor.md)
+- [var helpAnchor: String?](./avsystemroutingerror-7miya/helpanchor.md)
   A localized help anchor for the error.
-- [var recoverySuggestion: String?](avsystemroutingerror-7miya/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./avsystemroutingerror-7miya/recoverysuggestion.md)
   A localized suggestion for how to recover from the error.
 ### Enumerations
-- [AVSystemRoutingError.Code](avsystemroutingerror-7miya/code-swift.enum.md)
+- [AVSystemRoutingError.Code](./avsystemroutingerror-7miya/code-swift.enum.md)
   The codes that identify the type of a routing error.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AVSystemRoutingError](avsystemroutingerror-19zkj.md)
+### Errors
+- [struct AVSystemRoutingError](./avsystemroutingerror-19zkj.md)
 
 
 ---

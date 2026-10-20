@@ -1,7 +1,8 @@
 # XWingMLKEM768X25519.PublicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,30 +22,31 @@ struct PublicKey
 ## Topics
 
 ### Accessing a key’s raw representation
-- [var rawRepresentation: Data](xwingmlkem768x25519/publickey/rawrepresentation.md)
+- [var rawRepresentation: Data](./publickey/rawrepresentation.md)
 ### Accessing the corresponding private key type
-- [XWingMLKEM768X25519.PublicKey.HPKEEphemeralPrivateKey](xwingmlkem768x25519/publickey/hpkeephemeralprivatekey.md)
+- [XWingMLKEM768X25519.PublicKey.HPKEEphemeralPrivateKey](./publickey/hpkeephemeralprivatekey.md)
   The type of the ephemeral private key associated with this public key.
 ### Initializers
-- [init<D>(rawRepresentation: D) throws](xwingmlkem768x25519/publickey/init(rawrepresentation:).md)
+- [init<D>(rawRepresentation: D) throws](./publickey/init%28rawrepresentation%29.md)
 ### Default Implementations
-- [HPKEKEMPublicKey Implementations](xwingmlkem768x25519/publickey/hpkekempublickey-implementations.md)
-- [HPKEPublicKeySerialization Implementations](xwingmlkem768x25519/publickey/hpkepublickeyserialization-implementations.md)
+- [HPKEKEMPublicKey Implementations](./publickey/hpkekempublickey-implementations.md)
+- [HPKEPublicKeySerialization Implementations](./publickey/hpkepublickeyserialization-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HPKEKEMPublicKey](hpkekempublickey.md)
-- [HPKEPublicKeySerialization](hpkepublickeyserialization.md)
-- [KEMPublicKey](kempublickey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [HPKEKEMPublicKey](../hpkekempublickey.md)
+- [HPKEPublicKeySerialization](../hpkepublickeyserialization.md)
+- [KEMPublicKey](../kempublickey.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [XWingMLKEM768X25519.PrivateKey](xwingmlkem768x25519/privatekey.md)
+### Keys
+- [XWingMLKEM768X25519.PrivateKey](./privatekey.md)
 
 
 ---

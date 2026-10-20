@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceLocalizationInlineCreate.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe an Advanced App Clip Experience Localization Inline Creates resource.
 
@@ -10,7 +11,7 @@ The attributes that describe an Advanced App Clip Experience Localization Inline
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceLocalizationInlineCreate.Attributes
 ```
 

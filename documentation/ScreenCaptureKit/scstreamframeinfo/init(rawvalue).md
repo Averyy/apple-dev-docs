@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with a raw value.
 
@@ -21,7 +22,7 @@ init(rawValue: String)
 
 #### Discussion
 
-> ❗ **Important**:  Use the static properties of [`SCStreamFrameInfo`](scstreamframeinfo.md) such as [`status`](scstreamframeinfo/status.md) or [`contentRect`](scstreamframeinfo/contentrect.md) instead of creating an instance with this initializer.
+> ❗ **Important**:  Use the static properties of [`SCStreamFrameInfo`](../scstreamframeinfo.md) such as [`status`](./status.md) or [`contentRect`](./contentrect.md) instead of creating an instance with this initializer.
 
 ## Parameters
 

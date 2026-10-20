@@ -1,7 +1,8 @@
 # AlarmManager.AlarmConfiguration
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains all the properties necessary to schedule an alarm.
 
@@ -37,25 +38,26 @@ let configuration = AlarmManager.AlarmConfiguration(
 ## Topics
 
 ### Configuring a scheduled alarm
-- [static func alarm(schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](alarmmanager/alarmconfiguration/alarm(schedule:attributes:stopintent:secondaryintent:sound:).md)
+- [static func alarm(schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](./alarmconfiguration/alarm%28schedule,attributes,stopintent,secondaryintent,sound%29.md)
   Creates a configuration that behaves like a traditional alarm.
 ### Configuring a countdown
-- [init(countdownDuration: Alarm.CountdownDuration?, schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound)](alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:stopintent:secondaryintent:sound:).md)
+- [init(countdownDuration: Alarm.CountdownDuration?, schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound)](./alarmconfiguration/init%28countdownduration,schedule,attributes,stopintent,secondaryintent,sound%29.md)
   Creates a configuration that behaves like a countdown.
-- [static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](alarmmanager/alarmconfiguration/timer(duration:attributes:stopintent:secondaryintent:sound:).md)
+- [static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](./alarmconfiguration/timer%28duration,attributes,stopintent,secondaryintent,sound%29.md)
   Creates a configuration that behaves like a traditional timer.
 ### Initializers
-- [init(countdownDuration: Alarm.CountdownDuration?, schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound)](alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:).md)
+- [init(countdownDuration: Alarm.CountdownDuration?, schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound)](./alarmconfiguration/init%28countdownduration,schedule,attributes,appentityidentifier,stopintent,secondaryintent,sound%29.md)
   Creates a configuration that behaves like a countdown.
 ### Type Methods
-- [static func alarm(schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](alarmmanager/alarmconfiguration/alarm(schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:).md)
+- [static func alarm(schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](./alarmconfiguration/alarm%28schedule,attributes,appentityidentifier,stopintent,secondaryintent,sound%29.md)
   Creates a configuration that behaves like a traditional alarm.
-- [static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](alarmmanager/alarmconfiguration/timer(duration:attributes:appentityidentifier:stopintent:secondaryintent:sound:).md)
+- [static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](./alarmconfiguration/timer%28duration,attributes,appentityidentifier,stopintent,secondaryintent,sound%29.md)
   Creates a configuration that behaves like a traditional timer.
 
 ## See Also
 
-- [func schedule<Metadata>(id: Alarm.ID, configuration: AlarmManager.AlarmConfiguration<Metadata>) async throws -> Alarm](alarmmanager/schedule(id:configuration:).md)
+### Scheduling an alarm
+- [func schedule<Metadata>(id: Alarm.ID, configuration: AlarmManager.AlarmConfiguration<Metadata>) async throws -> Alarm](./schedule%28id,configuration%29.md)
   Schedules a new alarm.
 
 

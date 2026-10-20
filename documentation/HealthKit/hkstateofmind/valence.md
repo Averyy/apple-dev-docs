@@ -1,7 +1,8 @@
 # valence
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var valence: Double { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) double valence;
 ```
 
 

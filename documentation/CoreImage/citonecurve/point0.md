@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A vector containing the position of the first point of the tone curve.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ A vector containing the position of the first point of the tone curve.
 var point0: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint point0;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](citonecurve/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var point1: CGPoint](citonecurve/point1.md)
+- [var point1: CGPoint](./point1.md)
   A vector containing the position of the second point of the tone curve.
-- [var point2: CGPoint](citonecurve/point2.md)
+- [var point2: CGPoint](./point2.md)
   A vector containing the position of the third point of the tone curve.
-- [var point3: CGPoint](citonecurve/point3.md)
+- [var point3: CGPoint](./point3.md)
   A vector containing the position of the fourth point of the tone curve.
-- [var point4: CGPoint](citonecurve/point4.md)
+- [var point4: CGPoint](./point4.md)
   A vector containing the position of the fifth point of the tone curve.
 
 

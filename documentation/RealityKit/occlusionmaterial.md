@@ -1,7 +1,8 @@
 # OcclusionMaterial
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An invisible material that hides objects rendered behind it.
 
@@ -11,7 +12,7 @@ An invisible material that hides objects rendered behind it.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ struct OcclusionMaterial
 
 #### Overview
 
-Add an `OcclusionMaterial` to a model by setting it as one of the [`materials`](modelcomponent/materials.md) in a [`ModelComponent`](modelcomponent.md).
+Add an `OcclusionMaterial` to a model by setting it as one of the [`materials`](./modelcomponent/materials.md) in a [`ModelComponent`](./modelcomponent.md).
 
 ```swift
 let model = ModelComponent(
@@ -35,39 +36,40 @@ For example, on the left is a case of two cubes, the larger red cube is slightly
 
 | No material | Occlusion material |
 | --- | --- |
-| ![A screenshot of two cubes in a living room scene. One cube is red and is slightly further from the camera, the other cube has a magenta striped material, is slightly closer to the camera, and is smaller than the red cube.](/images/com.apple.RealityKit/occlusionmaterial-not-applied.jpg) | ![A screenshot of a partial red shape in a living room scene. The shape is of a cube with a cut-out in the shape of another cube slightly towards the upper right corner of the cube.](/images/com.apple.RealityKit/occlusionmaterial-applied.jpg) |
+| ![A screenshot of two cubes in a living room scene. One cube is red and is slightly further from the camera, the other cube has a magenta striped material, is slightly closer to the camera, and is smaller than the red cube.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/occlusionmaterial-not-applied.jpg) | ![A screenshot of a partial red shape in a living room scene. The shape is of a cube with a cut-out in the shape of another cube slightly towards the upper right corner of the cube.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/occlusionmaterial-applied.jpg) |
 
 ## Topics
 
 ### Creating an occlusion material
-- [init(receivesDynamicLighting: Bool)](occlusionmaterial/init(receivesdynamiclighting:).md)
+- [init(receivesDynamicLighting: Bool)](./occlusionmaterial/init%28receivesdynamiclighting%29.md)
   Creates an occlusion material.
-- [init()](occlusionmaterial/init.md)
+- [init()](./occlusionmaterial/init%28%29.md)
 ### Receiving dynamic lighting
-- [let receivesDynamicLighting: Bool](occlusionmaterial/receivesdynamiclighting.md)
+- [let receivesDynamicLighting: Bool](./occlusionmaterial/receivesdynamiclighting.md)
   A Boolean that indicates whether the occlusion material receives dynamic lighting.
 ### Setting depth testing properties
-- [var readsDepth: Bool](occlusionmaterial/readsdepth.md)
+- [var readsDepth: Bool](./occlusionmaterial/readsdepth.md)
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
 ### Instance Properties
-- [var faceCulling: OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.property.md)
+- [var faceCulling: OcclusionMaterial.FaceCulling](./occlusionmaterial/faceculling-swift.property.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
 ### Type Aliases
-- [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.typealias.md)
+- [OcclusionMaterial.FaceCulling](./occlusionmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 
 ## Relationships
 
 ### Conforms To
-- [Material](material.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Material](./material.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Obscuring virtual items in a scene behind real-world items](../visionos/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+### Object occlusion
+- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
-- [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.typealias.md)
+- [OcclusionMaterial.FaceCulling](./occlusionmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 
 

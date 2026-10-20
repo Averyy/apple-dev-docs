@@ -1,7 +1,8 @@
 # CAAnimationRotationMode
 
 **Framework**: Core Animation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 2.0+
@@ -17,40 +18,45 @@
 struct CAAnimationRotationMode
 ```
 
+```c
+typedef NSString * CAAnimationRotationMode;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](caanimationrotationmode/init(rawvalue:).md)
+- [init(rawValue: String)](./caanimationrotationmode/init%28rawvalue%29.md)
 ### Type Properties
-- [static let rotateAuto: CAAnimationRotationMode](caanimationrotationmode/rotateauto.md)
-- [static let rotateAutoReverse: CAAnimationRotationMode](caanimationrotationmode/rotateautoreverse.md)
+- [static let rotateAuto: CAAnimationRotationMode](./caanimationrotationmode/rotateauto.md)
+- [static let rotateAutoReverse: CAAnimationRotationMode](./caanimationrotationmode/rotateautoreverse.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CAAnimationCalculationMode](caanimationcalculationmode.md)
-- [struct CAEmitterLayerEmitterMode](caemitterlayeremittermode.md)
-- [struct CAEmitterLayerEmitterShape](caemitterlayeremittershape.md)
-- [struct CAEmitterLayerRenderMode](caemitterlayerrendermode.md)
-- [struct CAGradientLayerType](cagradientlayertype.md)
-- [struct CALayerContentsFilter](calayercontentsfilter.md)
-- [struct CALayerContentsFormat](calayercontentsformat.md)
-- [struct CALayerContentsGravity](calayercontentsgravity.md)
-- [struct CALayerCornerCurve](calayercornercurve.md)
-- [struct CAMediaTimingFillMode](camediatimingfillmode.md)
-- [struct CAMediaTimingFunctionName](camediatimingfunctionname.md)
-- [struct CAScrollLayerScrollMode](cascrolllayerscrollmode.md)
-- [struct CAShapeLayerFillRule](cashapelayerfillrule.md)
-- [struct CAShapeLayerLineCap](cashapelayerlinecap.md)
-- [struct CAShapeLayerLineJoin](cashapelayerlinejoin.md)
+### Data Types
+- [struct CAAnimationCalculationMode](./caanimationcalculationmode.md)
+- [struct CAEmitterLayerEmitterMode](./caemitterlayeremittermode.md)
+- [struct CAEmitterLayerEmitterShape](./caemitterlayeremittershape.md)
+- [struct CAEmitterLayerRenderMode](./caemitterlayerrendermode.md)
+- [struct CAGradientLayerType](./cagradientlayertype.md)
+- [struct CALayerContentsFilter](./calayercontentsfilter.md)
+- [struct CALayerContentsFormat](./calayercontentsformat.md)
+- [struct CALayerContentsGravity](./calayercontentsgravity.md)
+- [struct CALayerCornerCurve](./calayercornercurve.md)
+- [struct CAMediaTimingFillMode](./camediatimingfillmode.md)
+- [struct CAMediaTimingFunctionName](./camediatimingfunctionname.md)
+- [struct CAScrollLayerScrollMode](./cascrolllayerscrollmode.md)
+- [struct CAShapeLayerFillRule](./cashapelayerfillrule.md)
+- [struct CAShapeLayerLineCap](./cashapelayerlinecap.md)
+- [struct CAShapeLayerLineJoin](./cashapelayerlinejoin.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # cDevice
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the `ar_device` associated with this device.
 

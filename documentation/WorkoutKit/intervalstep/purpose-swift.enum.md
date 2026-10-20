@@ -1,7 +1,8 @@
 # IntervalStep.Purpose
 
 **Framework**: WorkoutKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An interval step’s purpose.
 
@@ -21,18 +22,18 @@ enum Purpose
 ## Topics
 
 ### Determining the purpose
-- [IntervalStep.Purpose.recovery](intervalstep/purpose-swift.enum/recovery.md)
+- [IntervalStep.Purpose.recovery](./purpose-swift.enum/recovery.md)
   A recovery step.
-- [IntervalStep.Purpose.work](intervalstep/purpose-swift.enum/work.md)
+- [IntervalStep.Purpose.work](./purpose-swift.enum/work.md)
   A work step.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

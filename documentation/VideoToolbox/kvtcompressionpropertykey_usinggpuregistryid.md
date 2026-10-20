@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_UsingGPURegistryID
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -17,9 +18,14 @@
 let kVTCompressionPropertyKey_UsingGPURegistryID: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_UsingGPURegistryID;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder: CFString](kvtcompressionpropertykey_usinghardwareacceleratedvideoencoder.md)
+### Hardware Acceleration
+- [let kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder: CFString](./kvtcompressionpropertykey_usinghardwareacceleratedvideoencoder.md)
   A Boolean value indicating whether a hardware-accelerated video encoder is used.
 
 

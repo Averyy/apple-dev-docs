@@ -1,6 +1,8 @@
 # Emoji Rangers: Supporting Live Activities, interactivity, and animations
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Sample Code  
+**Download**: [EmojiRangersSupportingLiveActivitiesInteractivityAndAnimations.zip](https://docs-assets.developer.apple.com/published/8b262812bc2d/EmojiRangersSupportingLiveActivitiesInteractivityAndAnimations.zip)
 
 Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
 
@@ -13,19 +15,20 @@ Offer Live Activities, controls, animate data updates, and add interactivity to 
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 sessions 10184: [`Meet ActivityKit`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10184/), 10185: [`Update live activities with push notifications`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10185/), 10027: [`Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10027/), and  10028: [`Bring widgets to  life`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10028/).
+> **Note**: This sample code project is associated with WWDC23 sessions 10184: [Meet ActivityKit](https://developer.apple.com/wwdc23/10184/), 10185: [Update live activities with push notifications](https://developer.apple.com/wwdc23/10185/), 10027: [Bring widgets to new places](https://developer.apple.com/wwdc23/10027/), and  10028: [Bring widgets to  life](https://developer.apple.com/wwdc23/10028/).
 
 ## See Also
 
-- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
+### Essentials
+- [Developing a WidgetKit strategy](./developing-a-widgetkit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
-- [WidgetKit updates](../updates/widgetkit.md)
+- [WidgetKit updates](../Updates/widgetkit.md)
   Learn about important changes in WidgetKit.
-- [Creating a widget extension](creating-a-widget-extension.md)
+- [Creating a widget extension](./creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Building Widgets Using WidgetKit and SwiftUI](building-widgets-using-widgetkit-and-swiftui.md)
+- [Building Widgets Using WidgetKit and SwiftUI](./building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
-- [protocol WidgetBundle](../swiftui/widgetbundle.md)
+- [protocol WidgetBundle](../SwiftUI/widgetbundle.md)
   A container used to expose multiple widgets from a single widget extension.
 
 

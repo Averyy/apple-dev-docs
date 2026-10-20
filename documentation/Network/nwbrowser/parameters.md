@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameters with which the browser was initialized.
 
@@ -22,9 +23,10 @@ final let parameters: NWParameters
 
 ## See Also
 
-- [let descriptor: NWBrowser.Descriptor](nwbrowser/descriptor-swift.property.md)
+### Inspecting Browsers
+- [let descriptor: NWBrowser.Descriptor](./descriptor-swift.property.md)
   The service descriptor with which the browser was initialized.
-- [var queue: DispatchQueue?](nwbrowser/queue.md)
+- [var queue: DispatchQueue?](./queue.md)
   The queue on which browser events are delivered.
 
 

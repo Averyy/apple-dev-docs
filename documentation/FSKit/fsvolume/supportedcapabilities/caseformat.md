@@ -1,7 +1,8 @@
 # caseFormat
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the volume’s support for case sensitivity.
 
@@ -14,9 +15,14 @@ A value that indicates the volume’s support for case sensitivity.
 var caseFormat: FSVolume.CaseFormat { get set }
 ```
 
+```objc
+@property (nonatomic) FSVolumeCaseFormat caseFormat;
+```
+
 ## See Also
 
-- [FSVolume.CaseFormat](fsvolume/caseformat.md)
+### Working with case sensitivity
+- [FSVolume.CaseFormat](../caseformat.md)
   An enumeration of case-sensitivity support types.
 
 

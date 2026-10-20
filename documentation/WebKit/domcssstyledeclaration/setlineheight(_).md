@@ -1,7 +1,8 @@
 # setLineHeight(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setLineHeight(_ lineHeight: String!)
+```
+
+```objc
+- (void) setLineHeight:(NSString *) lineHeight;
 ```
 
 

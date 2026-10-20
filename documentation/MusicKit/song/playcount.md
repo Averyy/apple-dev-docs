@@ -1,7 +1,8 @@
 # playCount
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the user played the song.
 

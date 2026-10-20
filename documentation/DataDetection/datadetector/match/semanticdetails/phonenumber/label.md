@@ -1,7 +1,8 @@
 # label
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional string that may contain a value suitable to populate a label when creating a contact.
 
@@ -22,7 +23,8 @@ let label: String?
 
 ## See Also
 
-- [let phoneNumber: String](datadetector/match/semanticdetails/phonenumber/phonenumber.md)
+### Components of a phone number
+- [let phoneNumber: String](./phonenumber.md)
   A string that contains the phone number the data detector found.
 
 

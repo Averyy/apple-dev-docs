@@ -1,7 +1,8 @@
 # displays
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The displays associated with this graphics device.
 
@@ -12,6 +13,10 @@ The displays associated with this graphics device.
 
 ```swift
 var displays: [VZMacGraphicsDisplayConfiguration] { get set }
+```
+
+```objc
+@property (copy) NSArray<VZMacGraphicsDisplayConfiguration *> * displays;
 ```
 
 

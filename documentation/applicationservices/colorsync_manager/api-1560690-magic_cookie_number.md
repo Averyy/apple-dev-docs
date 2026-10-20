@@ -7,7 +7,7 @@ Specifies a magic cookie number for anonymous file ID.
 ## Topics
 
 ### Constants
-- [var cmMagicNumber: Int](cmmagicnumber.md)
+- [var cmMagicNumber: Int](../cmmagicnumber.md)
 
 
 ---

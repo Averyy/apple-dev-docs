@@ -1,7 +1,8 @@
 # es_set_deadline_miss_mode(_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Set the deadline miss mode for the specified client
 
@@ -12,6 +13,10 @@ Set the deadline miss mode for the specified client
 
 ```swift
 func es_set_deadline_miss_mode(_ client: OpaquePointer, _ mode: es_deadline_miss_mode_t) -> es_return_t
+```
+
+```c
+extern es_return_t es_set_deadline_miss_mode(es_client_t *client, es_deadline_miss_mode_t mode);
 ```
 
 #### Return Value

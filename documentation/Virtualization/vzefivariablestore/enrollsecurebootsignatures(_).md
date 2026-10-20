@@ -1,7 +1,8 @@
 # enrollSecureBootSignatures(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enrolls the given signatures to Secure Boot databases.
 
@@ -12,6 +13,10 @@ Enrolls the given signatures to Secure Boot databases.
 
 ```swift
 func enrollSecureBootSignatures(_ signatures: VZEFISignatureDatabaseConfiguration) throws
+```
+
+```objc
+- (BOOL) enrollSecureBootSignatures:(VZEFISignatureDatabaseConfiguration *) signatures error:(NSError **) error;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # ATSFontApplyFunction(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontApplyFunction(_ iFunction: ATSFontApplierFunction!, _ iRefCon: UnsafeMutableRawPointer!) -> OSStatus
+```
+
+```c
+OSStatus ATSFontApplyFunction(ATSFontApplierFunction iFunction, void *iRefCon);
 ```
 
 

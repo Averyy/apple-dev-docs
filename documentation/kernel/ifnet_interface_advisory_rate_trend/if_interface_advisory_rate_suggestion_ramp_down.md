@@ -1,14 +1,15 @@
 # IF_INTERFACE_ADVISORY_RATE_SUGGESTION_RAMP_DOWN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 IF_INTERFACE_ADVISORY_RATE_SUGGESTION_RAMP_DOWN = INT32_MIN
 ```
 

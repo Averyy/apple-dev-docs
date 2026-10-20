@@ -1,7 +1,8 @@
 # MTLLanguageVersion.version4_1
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case version4_1
+```
+
+```c
+MTLLanguageVersion4_1
 ```
 
 

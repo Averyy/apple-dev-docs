@@ -1,7 +1,8 @@
 # maximum
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value (inclusive) for the tested length property.
 
@@ -10,7 +11,7 @@ The maximum value (inclusive) for the tested length property.
 
 ## Declaration
 
-```swift
+```
 attribute number maximum;
 ```
 

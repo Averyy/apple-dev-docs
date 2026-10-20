@@ -1,25 +1,26 @@
 # IOVirtualRange
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef struct { ... } IOVirtualRange;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [address](iovirtualrange/address.md)
-- [length](iovirtualrange/length.md)
+- [address](./iovirtualrange/address.md)
+- [length](./iovirtualrange/length.md)
 
 
 ---

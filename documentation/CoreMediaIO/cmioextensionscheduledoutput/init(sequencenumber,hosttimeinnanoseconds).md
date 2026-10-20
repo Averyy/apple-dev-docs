@@ -1,7 +1,8 @@
 # init(sequenceNumber:hostTimeInNanoseconds:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scheduled output object.
 
@@ -13,6 +14,10 @@ Creates a scheduled output object.
 
 ```swift
 init(sequenceNumber: UInt64, hostTimeInNanoseconds: UInt64)
+```
+
+```objc
+- (instancetype) initWithSequenceNumber:(uint64_t) sequenceNumber hostTimeInNanoseconds:(uint64_t) hostTimeInNanoseconds;
 ```
 
 ## Parameters

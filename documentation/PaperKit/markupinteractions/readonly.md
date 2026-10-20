@@ -1,7 +1,8 @@
 # readOnly
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Read-only: no interactions enabled.
 
@@ -20,7 +21,8 @@ static let readOnly: MarkupInteractions
 
 ## See Also
 
-- [static let all: MarkupInteractions](markupinteractions/all.md)
+### Using presets
+- [static let all: MarkupInteractions](./all.md)
   All interactions enabled (default).
 
 

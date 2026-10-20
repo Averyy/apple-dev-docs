@@ -1,7 +1,8 @@
 # init(named:in:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named 3D model asset from the provided bundle.
 

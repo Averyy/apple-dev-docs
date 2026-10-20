@@ -1,7 +1,8 @@
 # playParameters
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameters to use to play the track.
 

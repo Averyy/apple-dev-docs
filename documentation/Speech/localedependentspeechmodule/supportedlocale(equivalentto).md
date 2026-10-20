@@ -2,6 +2,7 @@
 
 **Framework**: Speech  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 A locale from the module’s supported locales equivalent to the given locale.
@@ -34,7 +35,8 @@ Use this method to determine which of this module’s supported locales is equiv
 
 ## See Also
 
-- [static var supportedLocales: [Locale]](localedependentspeechmodule/supportedlocales.md)
+### Getting supported locales
+- [static var supportedLocales: [Locale]](./supportedlocales.md)
   The set of all possible asset locales that the module supports.
 
 

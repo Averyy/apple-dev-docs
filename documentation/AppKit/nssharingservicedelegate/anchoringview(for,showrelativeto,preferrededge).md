@@ -1,7 +1,8 @@
 # anchoringView(for:showRelativeTo:preferredEdge:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method invoked when the service is performed and wants to display its contents in a popover.
 
@@ -13,6 +14,10 @@ The method invoked when the service is performed and wants to display its conten
 ```swift
 @MainActor
 optional func anchoringView(for sharingService: NSSharingService, showRelativeTo positioningRect: UnsafeMutablePointer<NSRect>, preferredEdge: UnsafeMutablePointer<NSRectEdge>) -> NSView?
+```
+
+```objc
+- (NSView *) anchoringViewForSharingService:(NSSharingService *) sharingService showRelativeToRect:(NSRect *) positioningRect preferredEdge:(NSRectEdge *) preferredEdge;
 ```
 
 #### Discussion

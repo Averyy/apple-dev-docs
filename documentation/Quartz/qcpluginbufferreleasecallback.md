@@ -1,10 +1,13 @@
 # QCPlugInBufferReleaseCallback
 
 **Framework**: Quartz  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -12,9 +15,14 @@
 typealias QCPlugInBufferReleaseCallback = (UnsafeRawPointer?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(const void *, void *) QCPlugInBufferReleaseCallback;
+```
+
 ## See Also
 
-- [typealias QCPlugInTextureReleaseCallback](qcplugintexturereleasecallback.md)
+### Data Types
+- [typealias QCPlugInTextureReleaseCallback](./qcplugintexturereleasecallback.md)
 
 
 ---

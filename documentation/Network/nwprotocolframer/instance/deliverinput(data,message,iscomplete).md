@@ -1,7 +1,8 @@
 # deliverInput(data:message:isComplete:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Delivers an inbound message containing arbitrary data from your protocol to the application.
 
@@ -22,11 +23,12 @@ final func deliverInput(data: Data, message: NWProtocolFramer.Message, isComplet
 
 ## See Also
 
-- [func parseInput(minimumIncompleteLength: Int, maximumLength: Int, parse: (UnsafeMutableRawBufferPointer?, Bool) -> Int) -> Bool](nwprotocolframer/instance/parseinput(minimumincompletelength:maximumlength:parse:).md)
+### Delivering Input
+- [func parseInput(minimumIncompleteLength: Int, maximumLength: Int, parse: (UnsafeMutableRawBufferPointer?, Bool) -> Int) -> Bool](./parseinput%28minimumincompletelength,maximumlength,parse%29.md)
   Examines the content of input data while in your input handler.
-- [func deliverInputNoCopy(length: Int, message: NWProtocolFramer.Message, isComplete: Bool) -> Bool](nwprotocolframer/instance/deliverinputnocopy(length:message:iscomplete:).md)
+- [func deliverInputNoCopy(length: Int, message: NWProtocolFramer.Message, isComplete: Bool) -> Bool](./deliverinputnocopy%28length,message,iscomplete%29.md)
   Delivers an inbound message containing a specific number of next received bytes.
-- [func passThroughInput()](nwprotocolframer/instance/passthroughinput.md)
+- [func passThroughInput()](./passthroughinput%28%29.md)
   Indicates that your protocol no longer needs to handle input data.
 
 

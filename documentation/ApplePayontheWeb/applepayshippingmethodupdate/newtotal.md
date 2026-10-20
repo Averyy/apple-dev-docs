@@ -1,7 +1,8 @@
 # newTotal
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The new total that results from a change in the shipping method.
 
@@ -11,19 +12,20 @@ The new total that results from a change in the shipping method.
 
 ## Declaration
 
-```swift
+```
 required ApplePayLineItem newTotal;
 ```
 
 #### Discussion
 
-Recalculate the total for the payment, because it may change as a result of shipping method changes. The [`newTotal`](applepayshippingcontactupdate/newtotal.md) value is required.
+Recalculate the total for the payment, because it may change as a result of shipping method changes. The [`newTotal`](../applepayshippingcontactupdate/newtotal.md) value is required.
 
 ## See Also
 
-- [newLineItems](applepayshippingmethodupdate/newlineitems.md)
+### Updating shipping method properties
+- [newLineItems](./newlineitems.md)
   An optional list of updated line items.
-- [newShippingMethods](applepayshippingmethodupdate/newshippingmethods.md)
+- [newShippingMethods](./newshippingmethods.md)
   An updated list of new shipping methods.
 
 

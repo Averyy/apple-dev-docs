@@ -1,15 +1,16 @@
 # init(forURL:target:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new targeted drag item preview with a URL and a drag item preview.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -32,7 +33,8 @@ This method creates a targeted drag item preview of the URL. The URL preview is 
 
 ## See Also
 
-- [convenience init(forURL: URL, title: String?, target: UIDragPreviewTarget)](uitargeteddragpreview/init(forurl:title:target:).md)
+### Initializing a targeted drag item preview
+- [convenience init(forURL: URL, title: String?, target: UIDragPreviewTarget)](./init%28forurl,title,target%29.md)
   Initializes a new targeted drag item preview with a URL, a title, and a drag item preview.
 
 

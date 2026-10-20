@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a background activity scheduler object with a specified unique identifier.
 
@@ -14,13 +15,17 @@ Initializes a background activity scheduler object with a specified unique ident
 init(identifier: String)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier;
+```
+
 #### Return Value
 
-A new background activity scheduler object of type [`NSBackgroundActivityScheduler`](nsbackgroundactivityscheduler.md).
+A new background activity scheduler object of type [`NSBackgroundActivityScheduler`](../nsbackgroundactivityscheduler.md).
 
 #### Discussion
 
-The string passed to the `identifier` parameter should remain constant for an activity across launches of your app because the system uses this unique identifier to track the number of times the activity has run and to improve the heuristics for deciding when to run it again in the future. See [`Create a Scheduler`](nsbackgroundactivityscheduler#Create-a-Scheduler.md).
+The string passed to the `identifier` parameter should remain constant for an activity across launches of your app because the system uses this unique identifier to track the number of times the activity has run and to improve the heuristics for deciding when to run it again in the future. See [Create a Scheduler](../nsbackgroundactivityscheduler.md#Create-a-Scheduler).
 
 ## Parameters
 
@@ -28,7 +33,8 @@ The string passed to the `identifier` parameter should remain constant for an ac
 
 ## See Also
 
-- [var identifier: String](nsbackgroundactivityscheduler/identifier.md)
+### Related Documentation
+- [var identifier: String](./identifier.md)
   A unique reverse DNS notation string, such as `com.example.MyApp.updatecheck`, that identifies the activity.
 
 

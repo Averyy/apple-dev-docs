@@ -1,7 +1,8 @@
 # builtInSensorInaccessible
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var builtInSensorInaccessible: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL builtInSensorInaccessible;
 ```
 
 #### Discussion

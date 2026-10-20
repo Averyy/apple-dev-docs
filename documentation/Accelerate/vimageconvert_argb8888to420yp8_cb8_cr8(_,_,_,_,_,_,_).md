@@ -1,7 +1,8 @@
 # vImageConvert_ARGB8888To420Yp8_Cb8_Cr8(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts an 8-bit-per-channel, 4-channel ARGB buffer to planar Yp, Cb, and Cr buffers.
 
@@ -20,23 +21,28 @@ Converts an 8-bit-per-channel, 4-channel ARGB buffer to planar Yp, Cb, and Cr bu
 func vImageConvert_ARGB8888To420Yp8_Cb8_Cr8(_ src: UnsafePointer<vImage_Buffer>, _ destYp: UnsafePointer<vImage_Buffer>, _ destCb: UnsafePointer<vImage_Buffer>, _ destCr: UnsafePointer<vImage_Buffer>, _ info: UnsafePointer<vImage_ARGBToYpCbCr>, _ permuteMap: UnsafePointer<UInt8>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_ARGB8888To420Yp8_Cb8_Cr8(const vImage_Buffer *src, const vImage_Buffer *destYp, const vImage_Buffer *destCb, const vImage_Buffer *destCr, const vImage_ARGBToYpCbCr *info, const uint8_t permuteMap[4], vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `destYp`: A pointer to the Yp destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the Yp destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `destCb`: A pointer to the Cb destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the Cb destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `destCr`: A pointer to the Cr destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the Cr destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `info`: A [`vImage_ARGBToYpCbCr`](vimage_argbtoypcbcr.md) structure that describes the conversion matrix, the range of the input and output pixels from the matrix, and clamping information.
+- `destYp`: A pointer to the Yp destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the Yp destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `destCb`: A pointer to the Cb destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the Cb destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `destCr`: A pointer to the Cr destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the Cr destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `info`: A [`vImage_ARGBToYpCbCr`](./vimage_argbtoypcbcr.md) structure that describes the conversion matrix, the range of the input and output pixels from the matrix, and clamping information.
 - `permuteMap`: An array of four 8-bit integers with the values `0`, `1`, `2`, and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageConvert_ARGB8888To420Yp8_CbCr8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](vimageconvert_argb8888to420yp8_cbcr8(_:_:_:_:_:_:).md)
+### Converting to 4:2:0
+- [func vImageConvert_ARGB8888To420Yp8_CbCr8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_ARGBToYpCbCr>, UnsafePointer<UInt8>!, vImage_Flags) -> vImage_Error](./vimageconvert_argb8888to420yp8_cbcr8%28_,_,_,_,_,_%29.md)
   Converts an 8-bit-per-channel, 4-channel ARGB buffer to a planar Yp buffer and a 2-channel CbCr buffer.
 
 

@@ -1,7 +1,8 @@
 # collectionView(_:canPerformPrimaryActionForItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to perform a primary action for the cell at the specified index path.
 
@@ -18,15 +19,19 @@ Asks the delegate whether to perform a primary action for the cell at the specif
 optional func collectionView(_ collectionView: UICollectionView, canPerformPrimaryActionForItemAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) collectionView:(UICollectionView *) collectionView canPerformPrimaryActionForItemAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the primary action can be performed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). If you don’t implement this method, the default return value is [`true`](https://developer.apple.com/documentation/swift/true) when the collection view isn’t in an editing state, and [`false`](https://developer.apple.com/documentation/swift/false) when it is.
+[`true`](../../Swift/true.md) if the primary action can be performed; otherwise, [`false`](../../Swift/false.md). If you don’t implement this method, the default return value is [`true`](../../Swift/true.md) when the collection view isn’t in an editing state, and [`false`](../../Swift/false.md) when it is.
 
 #### Discussion
 
 Primary actions allow you to distinguish between a distinct user action and a change in selection (like a focus change or other indirect selection change). A primary action occurs when a person selects a single cell without extending an existing selection.
 
-UIKit calls this method before [`collectionView(_:performPrimaryActionForItemAt:)`](uicollectionviewdelegate/collectionview(_:performprimaryactionforitemat:).md).
+UIKit calls this method before [`collectionView(_:performPrimaryActionForItemAt:)`](./collectionview%28_,performprimaryactionforitemat%29.md).
 
 ## Parameters
 
@@ -35,7 +40,8 @@ UIKit calls this method before [`collectionView(_:performPrimaryActionForItemAt:
 
 ## See Also
 
-- [func collectionView(UICollectionView, performPrimaryActionForItemAt: IndexPath)](uicollectionviewdelegate/collectionview(_:performprimaryactionforitemat:).md)
+### Managing actions for cells
+- [func collectionView(UICollectionView, performPrimaryActionForItemAt: IndexPath)](./collectionview%28_,performprimaryactionforitemat%29.md)
   Tells the delegate to perform the primary action for the cell at the specified index path.
 
 

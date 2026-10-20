@@ -1,7 +1,8 @@
 # AppClipAppStoreReviewDetailResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing the App Store review details for a single App Clip.
 
@@ -10,7 +11,7 @@ A response containing the App Store review details for a single App Clip.
 
 ## Declaration
 
-```swift
+```
 object AppClipAppStoreReviewDetailResponse
 ```
 
@@ -22,11 +23,12 @@ object AppClipAppStoreReviewDetailResponse
 
 ## See Also
 
-- [object AppClipAppStoreReviewDetail](appclipappstorereviewdetail.md)
+### Objects
+- [object AppClipAppStoreReviewDetail](./appclipappstorereviewdetail.md)
   The review submission details for an App Clip, including the invocation URLs required for App Store review.
-- [object AppClipAppStoreReviewDetailCreateRequest](appclipappstorereviewdetailcreaterequest.md)
+- [object AppClipAppStoreReviewDetailCreateRequest](./appclipappstorereviewdetailcreaterequest.md)
   The request body you use to create an App Clip App Store Review Detail.
-- [object AppClipAppStoreReviewDetailUpdateRequest](appclipappstorereviewdetailupdaterequest.md)
+- [object AppClipAppStoreReviewDetailUpdateRequest](./appclipappstorereviewdetailupdaterequest.md)
   The request body you use to update App Clip information that you provide to App Store Review.
 
 

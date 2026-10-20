@@ -1,7 +1,8 @@
 # rsaEncryptionOAEPSHA512AESGCM
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,9 +19,13 @@
 static let rsaEncryptionOAEPSHA512AESGCM: SecKeyAlgorithm
 ```
 
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmRSAEncryptionOAEPSHA512AESGCM;
+```
+
 ## Mentions
 
-- [Using Keys for Encryption](using-keys-for-encryption.md)
+- [Using Keys for Encryption](../using-keys-for-encryption.md)
 
 
 ---

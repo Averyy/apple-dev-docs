@@ -1,7 +1,8 @@
 # resume(at:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func resume(at time: AVAudioTime?)
+```
+
+```objc
+- (void) resumeAtTime:(AVAudioTime *) time;
 ```
 
 #### Discussion

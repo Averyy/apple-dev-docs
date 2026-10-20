@@ -1,7 +1,8 @@
 # invalidAct
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a passphrase should be required when an application with an invalid signature attempts to use the keychain.
 
@@ -12,6 +13,10 @@ Indicates that a passphrase should be required when an application with an inval
 
 ```swift
 static var invalidAct: SecKeychainPromptSelector { get }
+```
+
+```c
+kSecKeychainPromptInvalidAct
 ```
 
 

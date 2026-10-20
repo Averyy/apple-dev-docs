@@ -1,7 +1,8 @@
 # CNPostalAddress
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable representation of the postal address for a contact.
 
@@ -19,6 +20,10 @@ An immutable representation of the postal address for a contact.
 class CNPostalAddress
 ```
 
+```objc
+@interface CNPostalAddress : NSObject
+```
+
 #### Overview
 
 `CNPostalAddress` is a thread-safe class.
@@ -26,65 +31,66 @@ class CNPostalAddress
 ## Topics
 
 ### Getting the Parts of a Postal Address
-- [var street: String](cnpostaladdress/street.md)
+- [var street: String](./cnpostaladdress/street.md)
   The street name in a postal address.
-- [var city: String](cnpostaladdress/city.md)
+- [var city: String](./cnpostaladdress/city.md)
   The city name in a postal address.
-- [var state: String](cnpostaladdress/state.md)
+- [var state: String](./cnpostaladdress/state.md)
   The state name in a postal address.
-- [var postalCode: String](cnpostaladdress/postalcode.md)
+- [var postalCode: String](./cnpostaladdress/postalcode.md)
   The postal code in a postal address.
-- [var country: String](cnpostaladdress/country.md)
+- [var country: String](./cnpostaladdress/country.md)
   The country or region name in a postal address.
-- [var isoCountryCode: String](cnpostaladdress/isocountrycode.md)
+- [var isoCountryCode: String](./cnpostaladdress/isocountrycode.md)
   The ISO country code for the country or region in a postal address, using the ISO 3166-1 alpha-2 standard.
-- [var subAdministrativeArea: String](cnpostaladdress/subadministrativearea.md)
+- [var subAdministrativeArea: String](./cnpostaladdress/subadministrativearea.md)
   The subadministrative area (such as a county or other region) in a postal address.
-- [var subLocality: String](cnpostaladdress/sublocality.md)
+- [var subLocality: String](./cnpostaladdress/sublocality.md)
   Additional information associated with the location, typically defined at the city or town level, in a postal address.
 ### Getting Localized Postal Values
-- [class func localizedString(forKey: String) -> String](cnpostaladdress/localizedstring(forkey:).md)
+- [class func localizedString(forKey: String) -> String](./cnpostaladdress/localizedstring%28forkey%29.md)
   Returns the localized name for the property associated with the specified key.
-- [let CNPostalAddressStreetKey: String](cnpostaladdressstreetkey.md)
+- [let CNPostalAddressStreetKey: String](./cnpostaladdressstreetkey.md)
   The street name of the address.
-- [let CNPostalAddressCityKey: String](cnpostaladdresscitykey.md)
+- [let CNPostalAddressCityKey: String](./cnpostaladdresscitykey.md)
   The city of the address.
-- [let CNPostalAddressStateKey: String](cnpostaladdressstatekey.md)
+- [let CNPostalAddressStateKey: String](./cnpostaladdressstatekey.md)
   The state name of the address.
-- [let CNPostalAddressPostalCodeKey: String](cnpostaladdresspostalcodekey.md)
+- [let CNPostalAddressPostalCodeKey: String](./cnpostaladdresspostalcodekey.md)
   The postal code of the address.
-- [let CNPostalAddressCountryKey: String](cnpostaladdresscountrykey.md)
+- [let CNPostalAddressCountryKey: String](./cnpostaladdresscountrykey.md)
   The country or region name of the address.
-- [let CNPostalAddressISOCountryCodeKey: String](cnpostaladdressisocountrycodekey.md)
+- [let CNPostalAddressISOCountryCodeKey: String](./cnpostaladdressisocountrycodekey.md)
   The ISO country code of the address.
 ### Initializers
-- [init?(coder: NSCoder)](cnpostaladdress/init(coder:).md)
+- [init?(coder: NSCoder)](./cnpostaladdress/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CNMutablePostalAddress](cnmutablepostaladdress.md)
+- [CNMutablePostalAddress](./cnmutablepostaladdress.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CNMutablePostalAddress](cnmutablepostaladdress.md)
+### Addresses
+- [class CNMutablePostalAddress](./cnmutablepostaladdress.md)
   A mutable representation of the postal address for a contact.
-- [class CNInstantMessageAddress](cninstantmessageaddress.md)
+- [class CNInstantMessageAddress](./cninstantmessageaddress.md)
   An immutable object representing an instant message address for the contact.
 
 

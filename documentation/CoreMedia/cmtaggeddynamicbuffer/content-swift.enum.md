@@ -1,7 +1,8 @@
 # CMTaggedDynamicBuffer.Content
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A read-only buffer associated with the tags.
 
@@ -23,15 +24,15 @@ enum Content
 ## Topics
 
 ### Enumeration Cases
-- [case dataSampleBuffer(CMReadySampleBuffer<CMReadOnlyDataBlockBuffer>)](cmtaggeddynamicbuffer/content-swift.enum/datasamplebuffer(_:).md)
-- [CMTaggedDynamicBuffer.Content.pixelBuffer(_:)](cmtaggeddynamicbuffer/content-swift.enum/pixelbuffer(_:).md)
-- [case pixelSampleBuffer(CMReadySampleBuffer<CVReadOnlyPixelBuffer>)](cmtaggeddynamicbuffer/content-swift.enum/pixelsamplebuffer(_:).md)
+- [case dataSampleBuffer(CMReadySampleBuffer<CMReadOnlyDataBlockBuffer>)](./content-swift.enum/datasamplebuffer%28_%29.md)
+- [CMTaggedDynamicBuffer.Content.pixelBuffer(_:)](./content-swift.enum/pixelbuffer%28_%29.md)
+- [case pixelSampleBuffer(CMReadySampleBuffer<CVReadOnlyPixelBuffer>)](./content-swift.enum/pixelsamplebuffer%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

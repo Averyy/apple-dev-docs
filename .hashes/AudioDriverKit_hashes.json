@@ -976,7 +976,7 @@
       "hash": "8973f82e795c225517154e401663a6029bb345f444d82462c5ec979a180d2d7f"
     },
     "https://developer.apple.com/documentation/audiodriverkit/audiodriverkit/iouseraudioformatid/mpeg4aac_spatial": {
-      "etag": "\"2a89-65d55f0bdb4a2\"",
+      "etag": "\"2a89-65d55f0bdb4a2-df\"",
       "file_path": "documentation/AudioDriverKit/audiodriverkit-page/iouseraudioformatid/mpeg4aac_spatial.md",
       "hash": "b54eb26734a337a573010350756f1aebb5663d908dfe54fc2231ccc883bf1d42"
     },
@@ -3651,7 +3651,7 @@
       "hash": "8973f82e795c225517154e401663a6029bb345f444d82462c5ec979a180d2d7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/audiodriverkit/audiodriverkit/iouseraudioformatid/mpeg4aac_spatial.json": {
-      "etag": "\"2a89-65d55f0bdb4a2\"",
+      "etag": "\"2a89-65d55f0bdb4a2-df\"",
       "file_path": "documentation/AudioDriverKit/audiodriverkit-page/iouseraudioformatid/mpeg4aac_spatial.md",
       "hash": "b54eb26734a337a573010350756f1aebb5663d908dfe54fc2231ccc883bf1d42"
     },
@@ -5352,6 +5352,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1070
   }
 }

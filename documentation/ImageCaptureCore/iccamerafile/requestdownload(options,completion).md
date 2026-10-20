@@ -1,7 +1,8 @@
 # requestDownload(options:completion:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a download and executes the completion block in place of the delegate.
 
@@ -16,6 +17,10 @@ Requests a download and executes the completion block in place of the delegate.
 
 ```swift
 func requestDownload(options: [ICDownloadOption : Any]? = nil, completion: @escaping (String?, (any Error)?) -> Void) -> Progress?
+```
+
+```objc
+- (NSProgress *) requestDownloadWithOptions:(NSDictionary<NSString *,id> *) options completion:(void (^)(NSString *filename, NSError *error)) completion;
 ```
 
 #### Discussion

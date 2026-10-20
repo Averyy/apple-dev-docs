@@ -1,7 +1,8 @@
 # MPSTemporaryMatrix
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A matrix allocated on GPU private memory.
 
@@ -19,32 +20,37 @@ A matrix allocated on GPU private memory.
 class MPSTemporaryMatrix
 ```
 
+```objc
+@interface MPSTemporaryMatrix : MPSMatrix
+```
+
 ## Topics
 
 ### Initializers
-- [convenience init(commandBuffer: any MTLCommandBuffer, matrixDescriptor: MPSMatrixDescriptor)](mpstemporarymatrix/init(commandbuffer:matrixdescriptor:).md)
+- [convenience init(commandBuffer: any MTLCommandBuffer, matrixDescriptor: MPSMatrixDescriptor)](./mpstemporarymatrix/init%28commandbuffer,matrixdescriptor%29.md)
 ### Instance Properties
-- [var readCount: Int](mpstemporarymatrix/readcount.md)
+- [var readCount: Int](./mpstemporarymatrix/readcount.md)
 ### Type Methods
-- [class func prefetchStorage(with: any MTLCommandBuffer, matrixDescriptorList: [MPSMatrixDescriptor])](mpstemporarymatrix/prefetchstorage(with:matrixdescriptorlist:).md)
+- [class func prefetchStorage(with: any MTLCommandBuffer, matrixDescriptorList: [MPSMatrixDescriptor])](./mpstemporarymatrix/prefetchstorage%28with,matrixdescriptorlist%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSMatrix](mpsmatrix.md)
+- [MPSMatrix](./mpsmatrix.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSMatrix](mpsmatrix.md)
+### Matrices
+- [class MPSMatrix](./mpsmatrix.md)
   A 2D array of data that stores the data’s values.
-- [class MPSMatrixDescriptor](mpsmatrixdescriptor.md)
+- [class MPSMatrixDescriptor](./mpsmatrixdescriptor.md)
   A description of attributes used to create an MPS matrix.
 
 

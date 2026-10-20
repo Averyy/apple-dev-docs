@@ -1,7 +1,8 @@
 # cameraDeviceCanTakePicture
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The capability for the client to request to take a picture while the camera is connected.
 
@@ -18,13 +19,18 @@ The capability for the client to request to take a picture while the camera is c
 static let cameraDeviceCanTakePicture: ICDeviceCapability
 ```
 
+```c
+extern ICDeviceCapability const ICCameraDeviceCanTakePicture;
+```
+
 #### Discussion
 
-When this capability is available, the client can call [`requestTakePicture()`](iccameradevice/requesttakepicture().md) to capture a picture.
+When this capability is available, the client can call [`requestTakePicture()`](../iccameradevice/requesttakepicture%28%29.md) to capture a picture.
 
 ## See Also
 
-- [static let cameraDeviceCanTakePictureUsingShutterReleaseOnCamera: ICDeviceCapability](icdevicecapability/cameradevicecantakepictureusingshutterreleaseoncamera.md)
+### Taking Pictures
+- [static let cameraDeviceCanTakePictureUsingShutterReleaseOnCamera: ICDeviceCapability](./cameradevicecantakepictureusingshutterreleaseoncamera.md)
   The capability to capture a picture if the user presses the shutter release on the camera while the camera is connected.
 
 

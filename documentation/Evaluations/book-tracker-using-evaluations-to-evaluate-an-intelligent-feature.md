@@ -1,6 +1,8 @@
 # Book Tracker: Using Evaluations to evaluate an intelligent feature
 
-**Framework**: Evaluations
+**Framework**: Evaluations  
+**Role**: Sample Code  
+**Download**: [BookTrackerUsingEvaluationsToEvaluateAnIntelligentFeature.zip](https://docs-assets.developer.apple.com/published/a61fe92e915e/BookTrackerUsingEvaluationsToEvaluateAnIntelligentFeature.zip)
 
 Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
 
@@ -19,7 +21,7 @@ Book Tracker is a SwiftUI app for cataloging books and the reviews you write abo
 - Descriptive tags from a freeform review, so you can browse and filter your library
 - Natural-language search assistant that answers questions about your collection by calling tools
 
-![A side-by-side view of the Book Tracker app. The library screen shows a grid of book covers, and the book details screen shows generated tags above a written review.](/images/com.apple.evaluations/library-and-details@2x.png)
+![A side-by-side view of the Book Tracker app. The library screen shows a grid of book covers, and the book details screen shows generated tags above a written review.](https://developer.apple.com/tutorials/images/com.apple.evaluations/library-and-details@2x.png)
 
 This sample evaluates both of Book Tracker’s intelligent features. It builds a complete evaluation for the book-tagging feature, then assesses the app’s synthetic data generation, model-judge calibration, and tool-call evaluation:
 
@@ -29,25 +31,25 @@ This sample evaluates both of Book Tracker’s intelligent features. It builds a
 - Calibrate the model judge against a human expert so you can trust its scores as you iterate on a prompt.
 - Evaluate the search assistant’s tool calls against expected tool-calling trajectories.
 
-For more information about the concepts behind this workflow, see [`Designing effective evaluations`](designing-effective-evaluations.md). This article focuses on the code that puts these concepts to work.
+For more information about the concepts behind this workflow, see [Designing effective evaluations](./designing-effective-evaluations.md). This article focuses on the code that puts these concepts to work.
 
-> **Note**: This sample code project is associated with WWDC26 session 298: [`Meet the Evaluations framework`](https://developer.apple.comhttps://developer.apple.com/wwdc26/298/), session 335: [`Improve your prompts by hill-climbing with Evaluations`](https://developer.apple.comhttps://developer.apple.com/wwdc26/335/), and session 299: [`Create robust evaluations for agentic apps`](https://developer.apple.comhttps://developer.apple.com/wwdc26/299/).
+> **Note**: This sample code project is associated with WWDC26 session 298: [Meet the Evaluations framework](https://developer.apple.com/wwdc26/298/), session 335: [Improve your prompts by hill-climbing with Evaluations](https://developer.apple.com/wwdc26/335/), and session 299: [Create robust evaluations for agentic apps](https://developer.apple.com/wwdc26/299/).
 
 The diagram below shows the evaluation pipeline that this sample builds. A dataset of reviews flows through the book-tagging feature, both code-based evaluators and a model judge score the generated tags, and the combined results produce a pass-or-fail report. The model judge is calibrated to match a human expert’s scores.
 
-![A flowchart of the sample’s evaluation pipeline. A dataset of reviews and expected tags feeds the book-tagging feature, which produces generated tags. The tags flow in parallel to code-based evaluators and to a model judge, whose results combine in a metrics aggregator that produces a pass-or-fail report. A dashed loop calibrates the model judge against expert scores.](/images/com.apple.evaluations/flowchart@2x.png)
+![A flowchart of the sample’s evaluation pipeline. A dataset of reviews and expected tags feeds the book-tagging feature, which produces generated tags. The tags flow in parallel to code-based evaluators and to a model judge, whose results combine in a metrics aggregator that produces a pass-or-fail report. A dashed loop calibrates the model judge against expert scores.](https://developer.apple.com/tutorials/images/com.apple.evaluations/flowchart@2x.png)
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 Before you run the sample code project:
 
 1. Open the sample with the latest version of Xcode.
-2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution).
+2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [Set the bundle ID](../Xcode/preparing-your-app-for-distribution.md) and [Assign the project to a team](../Xcode/preparing-your-app-for-distribution.md).
 3. Run the sample on a device or simulator that supports Apple Intelligence and the Foundation Models framework.
 
-#### Generate Tags for a Review
+#### Generate tags for a review
 
-The descriptive-tag feature is in `BookTaggingService`. It asks the on-device model to turn a reader’s review into a small set of descriptive tags. The output type is a [`Generable`](https://developer.apple.com/documentation/foundationmodels/generable) struct, and a [`Guide(description:_:)`](https://developer.apple.com/documentation/foundationmodels/guide(description:_:)) constrains the model to generate between three and eight tags:
+The descriptive-tag feature is in `BookTaggingService`. It asks the on-device model to turn a reader’s review into a small set of descriptive tags. The output type is a [`@Generable`](../FoundationModels/generable.md) struct, and a [`@Guide`](../FoundationModels/guide%28description,_%29.md) constrains the model to generate between three and eight tags:
 
 ```swift
 @Generable
@@ -57,7 +59,7 @@ struct BookTags: Codable, Equatable {
 }
 ```
 
-The service builds a [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession) from a fixed set of instructions, running the on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel), and asks for the structured output:
+The service builds a [`LanguageModelSession`](../FoundationModels/languagemodelsession.md) from a fixed set of instructions, running the on-device [`SystemLanguageModel`](../FoundationModels/systemlanguagemodel.md), and asks for the structured output:
 
 ```swift
 static func generateTags(for review: String) async throws -> BookTags {
@@ -108,9 +110,9 @@ static let instructions = """
 
 The sections that follow show how the sample measures how well these instructions perform, so you can change them with confidence. Most of them build up the book-tagging evaluation; the final section turns to the search assistant.
 
-#### Create an Evaluation Dataset
+#### Create an evaluation dataset
 
-An evaluation runs a feature against a dataset of samples. In the sample, each [`ModelSample`](modelsample.md) pairs a prompt that the feature receives with its expected result and measures the actual output against this expected result. `BookTaggingEvaluation` builds its dataset with an [`ArrayLoader`](arrayloader.md) from the app’s curated `Book.sampleBooks`, using each book’s review as the prompt and the maintainer’s hand-chosen tags as the expected value:
+An evaluation runs a feature against a dataset of samples. In the sample, each [`ModelSample`](./modelsample.md) pairs a prompt that the feature receives with its expected result and measures the actual output against this expected result. `BookTaggingEvaluation` builds its dataset with an [`ArrayLoader`](./arrayloader.md) from the app’s curated `Book.sampleBooks`, using each book’s review as the prompt and the maintainer’s hand-chosen tags as the expected value:
 
 ```swift
 extension Book {
@@ -147,9 +149,9 @@ var dataset = ArrayLoader(samples:
 )
 ```
 
-Because the sample maintainer wrote both the reviews and the expected tags, this curated set serves as *ground truth*: every sample has a known-good answer to score against. For guidance on categorizing samples and sizing a dataset, see [`Designing datasets to test your feature`](designing-evaluation-datasets.md).
+Because the sample maintainer wrote both the reviews and the expected tags, this curated set serves as *ground truth*: every sample has a known-good answer to score against. For guidance on categorizing samples and sizing a dataset, see [Designing datasets to test your feature](./designing-evaluation-datasets.md).
 
-#### Define the Subject Under Test
+#### Define the subject under test
 
 The *subject* is what an evaluation actually scores. In the sample, `BookTaggingEvaluation` defines the subject by calling the real `BookTaggingService`, so the evaluation tests the same code path that the app ships:
 
@@ -162,14 +164,14 @@ func subject(from sample: ModelSample<BookTags>) async throws -> ModelSubject<Bo
 
 Because the production feature is called rather than a copy, improvements or weaknesses you measure here match the performance that people experience with the two intelligent features in the app: book tagging and natural-language search.
 
-#### Score Tags with Code
+#### Score tags with code
 
 Some qualities that the sample app tests are objective, so using a code-based evaluation is the fastest, most reproducible way to check whether:
 
 - Tags include the book’s genre, chosen from a known list.
 - Tags are concise, a single word or hyphenated, with three to eight tags in all.
 
-The sample’s evaluation declares a [`Metric`](metric.md) for each check, then implements the checks as [`Evaluator`](evaluator.md) closures that report [`passing(rationale:)`](metric/passing(rationale:).md), [`failing(rationale:)`](metric/failing(rationale:).md), or [`scoring(_:rationale:)`](metric/scoring(_:rationale:).md):
+The sample’s evaluation declares a [`Metric`](./metric.md) for each check, then implements the checks as [`Evaluator`](./evaluator.md) closures that report [`passing(rationale:)`](./metric/passing%28rationale%29.md), [`failing(rationale:)`](./metric/failing%28rationale%29.md), or [`scoring(_:rationale:)`](./metric/scoring%28_,rationale%29.md):
 
 ```swift
 /// Whether the tag count fell in the required 3–8 range.
@@ -219,9 +221,9 @@ var evaluators: Evaluators {
 
 The evaluation above defines three checks: tag count, multiple-word test, and genre check. These checks are cheap and deterministic: they run quickly and always return the same result for the same input. But they cannot tell you whether a tag is subjectively “good.”
 
-#### Judge Subjective Quality with a Model
+#### Judge subjective quality with a model
 
-When you need to determine whether a tag describes the book or the reader’s mood, that’s a judgment call, not a rule you can express in code. The sample uses a [`ModelJudgeEvaluator`](modeljudgeevaluator.md) to score those qualities by asking a model to rate each response on one or more [`ScoreDimension`](scoredimension.md) values. Each dimension states a focused question and a numeric scale with levels.
+When you need to determine whether a tag describes the book or the reader’s mood, that’s a judgment call, not a rule you can express in code. The sample uses a [`ModelJudgeEvaluator`](./modeljudgeevaluator.md) to score those qualities by asking a model to rate each response on one or more [`ScoreDimension`](./scoredimension.md) values. Each dimension states a focused question and a numeric scale with levels.
 
 ```swift
 let relevance = ScoreDimension(
@@ -253,7 +255,7 @@ let usefulness = ScoreDimension(
 )
 ```
 
-Each level has a concrete description instead of an abstract one, such as “the tags are good.” The scale uses four levels rather than three or five, so the judge has no neutral middle ground to default to and needs to commit to whether the tags are good or bad. The evaluator scores both relevance and usefulness in a single pass, and a [`ModelJudgePrompt`](modeljudgeprompt.md) tells the judge what it’s looking at, how to format each response, and what expected tags to consult:
+Each level has a concrete description instead of an abstract one, such as “the tags are good.” The scale uses four levels rather than three or five, so the judge has no neutral middle ground to default to and needs to commit to whether the tags are good or bad. The evaluator scores both relevance and usefulness in a single pass, and a [`ModelJudgePrompt`](./modeljudgeprompt.md) tells the judge what it’s looking at, how to format each response, and what expected tags to consult:
 
 ```swift
 ModelJudgeEvaluator(
@@ -274,11 +276,11 @@ ModelJudgeEvaluator(
 )
 ```
 
-For the full range of model-judge options, including pairwise comparison and scored examples, see [`Scoring with model-judge evaluators`](scoring-with-model-as-judge-evaluators.md). For strategies that make a model judge reliable, see [`Designing effective model-judge evaluators`](designing-effective-model-judges.md).
+For the full range of model-judge options, including pairwise comparison and scored examples, see [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md). For strategies that make a model judge reliable, see [Designing effective model-judge evaluators](./designing-effective-model-judges.md).
 
-#### Run the Evaluation and Read Results
+#### Run the evaluation and read results
 
-The sample’s evaluation aggregates its metrics by building up a [`MetricsAggregator`](metricsaggregator.md) in `aggregateMetrics(using:)`. Grouping the code-based heuristics separately from the model-judge quality scores keeps the results organized logically:
+The sample’s evaluation aggregates its metrics by building up a [`MetricsAggregator`](./metricsaggregator.md) in `aggregateMetrics(using:)`. Grouping the code-based heuristics separately from the model-judge quality scores keeps the results organized logically:
 
 ```swift
 func aggregateMetrics(using aggregator: inout MetricsAggregator) {
@@ -297,7 +299,7 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator) {
 }
 ```
 
-In the Evaluations framework, an evaluation runs from a Swift Testing test through the [`EvaluationTrait`](evaluationtrait.md) that the `.evaluates(_:info:)` modifier adds. The test reads the aggregated result from [`EvaluationContext`](evaluationcontext.md) and asserts a threshold, which turns a quality target into a pass-or-fail check in the test suite:
+In the Evaluations framework, an evaluation runs from a Swift Testing test through the [`EvaluationTrait`](./evaluationtrait.md) that the `.evaluates(_:info:)` modifier adds. The test reads the aggregated result from [`EvaluationContext`](./evaluationcontext.md) and asserts a threshold, which turns a quality target into a pass-or-fail check in the test suite:
 
 ```swift
 @Test("Book Tag Evaluations", .evaluates(evaluation, info: evaluationInfo))
@@ -309,11 +311,11 @@ func evaluateBookTagging() async throws {
 
 In the sample’s evaluation, the threshold for the `tagCount` metric requires at least 80 percent of the runs to produce a valid tag count. An intelligence feature that can’t reliably return the right number of tags fails. Xcode records the results and presents them in detail:
 
-![The Xcode test report summary for the Book Tracker tag evaluation. Metric cards report the code-based heuristics, including Has Genre Tag Ratio, Tag Count Ratio, and the tag-total average, variance, and standard deviation, alongside the model-judge Relevance and Usefulness averages.](/images/com.apple.evaluations/heuristics-and-quality-metric-groups@2x.png)
+![The Xcode test report summary for the Book Tracker tag evaluation. Metric cards report the code-based heuristics, including Has Genre Tag Ratio, Tag Count Ratio, and the tag-total average, variance, and standard deviation, alongside the model-judge Relevance and Usefulness averages.](https://developer.apple.com/tutorials/images/com.apple.evaluations/heuristics-and-quality-metric-groups@2x.png)
 
-#### Scale Coverage with Synthetic Data
+#### Scale coverage with synthetic data
 
-A small dataset can demonstrate that the intelligence-powered feature of generating descriptive tags works as expected on familiar titles, but it’s not large enough to produce statistically valid results. In the sample, the `BookSampleGenerator` command-line tool expands the curated set toward a target of 100 samples with a [`SampleGenerator`](samplegenerator.md). It seeds generation with the curated books and rejects any sample that breaks the rules. For this offline step, it uses the more powerful [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel) instead of the on-device model.
+A small dataset can demonstrate that the intelligence-powered feature of generating descriptive tags works as expected on familiar titles, but it’s not large enough to produce statistically valid results. In the sample, the `BookSampleGenerator` command-line tool expands the curated set toward a target of 100 samples with a [`SampleGenerator`](./samplegenerator.md). It seeds generation with the curated books and rejects any sample that breaks the rules. For this offline step, it uses the more powerful [`PrivateCloudComputeLanguageModel`](../FoundationModels/privatecloudcomputelanguagemodel.md) instead of the on-device model.
 
 ```swift
 let generator = SampleGenerator<ModelSample<BookTags>>(
@@ -336,9 +338,9 @@ for try await sample in generator.run() {
 }
 ```
 
-The tool writes the expanded set to `synthetic_book_samples.json`, and `SyntheticBookTaggingEvaluation` loads it with a [`JSONLoader`](jsonloader.md) to run the same metrics against the larger dataset. For the validation and sampling options, see [`Generating synthetic datasets`](generating-synthetic-evaluation-datasets.md).
+The tool writes the expanded set to `synthetic_book_samples.json`, and `SyntheticBookTaggingEvaluation` loads it with a [`JSONLoader`](./jsonloader.md) to run the same metrics against the larger dataset. For the validation and sampling options, see [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md).
 
-#### Calibrate the Model Judge Against an Expert
+#### Calibrate the model judge against an expert
 
 You can improve the quality of a model-judge’s scores for subjective quality evaluation by calibrating the scoring against a human expert. In the sample, `BookTagJudgmentCalibration` checks how closely the model judge agrees with a set of human scores. The `DatasetExtractor` tool exports a real evaluation run to JSON, an expert scores those same tag sets by hand, and the calibration evaluation re-judges them and compares the two sets of scores.
 
@@ -434,11 +436,11 @@ aggregator.group("Relevance") { group in
 #expect(result.aggregateValue(.custom(label: "Usefulness Alignment Score")) > 0.6)
 ```
 
-![The Xcode test report showing the Judge Calibration test failing. The Relevance Alignment Score is -0.037, well below the required 0.6, so the assertion fails and the judge isn’t yet calibrated against the expert.](/images/com.apple.evaluations/alignment-fail@2x.png)
+![The Xcode test report showing the Judge Calibration test failing. The Relevance Alignment Score is -0.037, well below the required 0.6, so the assertion fails and the judge isn’t yet calibrated against the expert.](https://developer.apple.com/tutorials/images/com.apple.evaluations/alignment-fail@2x.png)
 
 In the sample, the test requires a Cohen’s kappa above 0.6 on both the relevance and usefulness dimensions. If the test fails, the next step is to revise the model-judge’s instructions, often by adding a worked example that covers the disagreement, and run again until the model judge aligns with human scoring.
 
-#### Evaluate the Assistants Tool Calls
+#### Evaluate the assistant’s tool calls
 
 The intelligence-powered search assistant feature answers a person’s question by calling tools rather than returning text, so the quality of its output is based on:
 
@@ -446,7 +448,7 @@ The intelligence-powered search assistant feature answers a person’s question 
 - In what order
 - With what arguments
 
-In the sample, `SearchToolEvaluations` registers the app’s three real [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool) implementations and captures the model’s tool calls through the session’s [`StructuredTranscript`](structuredtranscript.md):
+In the sample, `SearchToolEvaluations` registers the app’s three real [`Tool`](../FoundationModels/tool.md) implementations and captures the model’s tool calls through the session’s [`StructuredTranscript`](./structuredtranscript.md):
 
 ```swift
 func subject(from sample: ModelSample<BookResults>) async throws -> ModelSubject<BookResults> {
@@ -460,7 +462,7 @@ func subject(from sample: ModelSample<BookResults>) async throws -> ModelSubject
 }
 ```
 
-Each sample carries a [`TrajectoryExpectation`](trajectoryexpectation.md) built from one or more [`ToolExpectation`](toolexpectation.md) values that describe the tool calls a correct answer requires. Expectations can be unordered or ordered, can allow extra calls, can match arguments exactly or by natural-language criteria, and can forbid tools a correct answer must never call. This ordered expectation requires the assistant to search by tag and then fetch the matching book’s details:
+Each sample carries a [`TrajectoryExpectation`](./trajectoryexpectation.md) built from one or more [`ToolExpectation`](./toolexpectation.md) values that describe the tool calls a correct answer requires. Expectations can be unordered or ordered, can allow extra calls, can match arguments exactly or by natural-language criteria, and can forbid tools a correct answer must never call. This ordered expectation requires the assistant to search by tag and then fetch the matching book’s details:
 
 ```swift
 expectations: TrajectoryExpectation(
@@ -489,7 +491,7 @@ expectations: TrajectoryExpectation(
 )
 ```
 
-A [`ToolCallEvaluator`](toolcallevaluator.md) scores each trajectory, reporting whether every expected call passed and what percentage passed. The test then asserts a minimum pass rate:
+A [`ToolCallEvaluator`](./toolcallevaluator.md) scores each trajectory, reporting whether every expected call passed and what percentage passed. The test then asserts a minimum pass rate:
 
 ```swift
 var evaluators: Evaluators {
@@ -501,23 +503,24 @@ var evaluators: Evaluators {
 #expect(result.aggregateValue(.mean(of: runner.percent)) >= 0.8)
 ```
 
-For the full set of argument matchers and trajectory options, see [`Evaluating tool-calling behavior`](evaluating-tool-calling-behavior.md).
+For the full set of argument matchers and trajectory options, see [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md).
 
 This evaluation checks which tools the assistant calls, in what order, and with what arguments. It doesn’t score the quality of the answers the assistant produces from those tool results. A production app also evaluates the generated answers, scoring them for qualities like relevance and groundedness with the same code-based and model-judge techniques this sample applies to tags.
 
-![The Xcode test report for the search-tool evaluation. An All Passed column marks each prompt with a pass or fail, and a Percentage Passed column reports the share of expected tool calls each prompt matched, with All Passed Ratio and Percentage Passed Average summarized above.](/images/com.apple.evaluations/search-tools-per-sample@2x.png)
+![The Xcode test report for the search-tool evaluation. An All Passed column marks each prompt with a pass or fail, and a Percentage Passed column reports the share of expected tool calls each prompt matched, with All Passed Ratio and Percentage Passed Average summarized above.](https://developer.apple.com/tutorials/images/com.apple.evaluations/search-tools-per-sample@2x.png)
 
 Both of Book Tracker’s intelligent features now have a measurable quality check: the sample scores tags with code and a calibrated model judge, and it measures search against expected tool trajectories. Every change to a prompt, a model, or a tool runs against those evaluations, tracking statistics and failing the test suite when quality regresses. This systematic evaluation turns subjective impressions into evidence you can act on, and makes each round of improvement verifiable before release.
 
 ## See Also
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+### Essentials
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
-- [Designing effective evaluations](designing-effective-evaluations.md)
+- [Designing effective evaluations](./designing-effective-evaluations.md)
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
-- [Evaluating a Core AI model](evaluating-a-core-ai-model.md)
+- [Evaluating a Core AI model](./evaluating-a-core-ai-model.md)
   Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
-- [protocol Evaluation](evaluation.md)
+- [protocol Evaluation](./evaluation.md)
   A type that defines an evaluation.
 
 

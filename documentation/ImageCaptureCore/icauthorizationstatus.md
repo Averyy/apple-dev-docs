@@ -1,7 +1,8 @@
 # ICAuthorizationStatus
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -16,19 +17,23 @@
 struct ICAuthorizationStatus
 ```
 
+```c
+typedef NSString * ICAuthorizationStatus;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](icauthorizationstatus/init(rawvalue:).md)
+- [init(rawValue: String)](./icauthorizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

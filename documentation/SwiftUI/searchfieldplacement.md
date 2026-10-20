@@ -1,7 +1,8 @@
 # SearchFieldPlacement
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The placement of a search field in a view hierarchy.
 
@@ -22,11 +23,11 @@ struct SearchFieldPlacement
 
 ## Mentions
 
-- [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
+- [Adding a search interface to your app](./adding-a-search-interface-to-your-app.md)
 
 #### Overview
 
-You can give a preferred placement to any of the searchable modifiers, like [`searchable(text:placement:prompt:)`](view/searchable(text:placement:prompt:).md):
+You can give a preferred placement to any of the searchable modifiers, like [`searchable(text:placement:prompt:)`](./view/searchable%28text,placement,prompt%29.md):
 
 ```swift
 var body: some View {
@@ -44,40 +45,41 @@ Depending on the containing view hierachy, SwiftUI might not be able to fulfill 
 ## Topics
 
 ### Getting a search field placement
-- [static let automatic: SearchFieldPlacement](searchfieldplacement/automatic.md)
+- [static let automatic: SearchFieldPlacement](./searchfieldplacement/automatic.md)
   SwiftUI places the search field automatically.
-- [static let navigationBarDrawer: SearchFieldPlacement](searchfieldplacement/navigationbardrawer.md)
+- [static let navigationBarDrawer: SearchFieldPlacement](./searchfieldplacement/navigationbardrawer.md)
   The search field appears in the navigation bar.
-- [static func navigationBarDrawer(displayMode: SearchFieldPlacement.NavigationBarDrawerDisplayMode) -> SearchFieldPlacement](searchfieldplacement/navigationbardrawer(displaymode:).md)
+- [static func navigationBarDrawer(displayMode: SearchFieldPlacement.NavigationBarDrawerDisplayMode) -> SearchFieldPlacement](./searchfieldplacement/navigationbardrawer%28displaymode%29.md)
   The search field appears in the navigation bar using the specified display mode.
-- [static var sidebar: SearchFieldPlacement](searchfieldplacement/sidebar.md)
+- [static var sidebar: SearchFieldPlacement](./searchfieldplacement/sidebar.md)
   The search field appears in the sidebar of a navigation view.
-- [static let toolbar: SearchFieldPlacement](searchfieldplacement/toolbar.md)
+- [static let toolbar: SearchFieldPlacement](./searchfieldplacement/toolbar.md)
   The search field appears in the toolbar.
 ### Supporting types
-- [SearchFieldPlacement.NavigationBarDrawerDisplayMode](searchfieldplacement/navigationbardrawerdisplaymode.md)
+- [SearchFieldPlacement.NavigationBarDrawerDisplayMode](./searchfieldplacement/navigationbardrawerdisplaymode.md)
   A mode that determines when to display a search field that appears in a navigation bar.
 ### Type Properties
-- [static var toolbarPrincipal: SearchFieldPlacement](searchfieldplacement/toolbarprincipal.md)
+- [static var toolbarPrincipal: SearchFieldPlacement](./searchfieldplacement/toolbarprincipal.md)
   The search field appears in the principal section of the toolbar.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
+### Searching your app’s data model
+- [Adding a search interface to your app](./adding-a-search-interface-to-your-app.md)
   Present an interface that people can use to search for content in your app.
-- [Performing a search operation](performing-a-search-operation.md)
+- [Performing a search operation](./performing-a-search-operation.md)
   Update search results based on search text and optional tokens that you store.
-- [func searchable(text:placement:prompt:)](view/searchable(text:placement:prompt:).md)
+- [func searchable(text:placement:prompt:)](./view/searchable%28text,placement,prompt%29.md)
   Marks this view as searchable, which configures the display of a search field.
-- [func searchable(text:tokens:placement:prompt:token:)](view/searchable(text:tokens:placement:prompt:token:).md)
+- [func searchable(text:tokens:placement:prompt:token:)](./view/searchable%28text,tokens,placement,prompt,token%29.md)
   Marks this view as searchable with text and tokens.
-- [func searchable(text:editableTokens:placement:prompt:token:)](view/searchable(text:editabletokens:placement:prompt:token:).md)
+- [func searchable(text:editableTokens:placement:prompt:token:)](./view/searchable%28text,editabletokens,placement,prompt,token%29.md)
   Marks this view as searchable, which configures the display of a search field.
 
 

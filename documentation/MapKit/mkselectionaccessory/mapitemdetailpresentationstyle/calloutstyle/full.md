@@ -1,7 +1,8 @@
 # MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle.full
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rich, detailed callout style that is suitable for large map views.
 
@@ -16,6 +17,10 @@ A rich, detailed callout style that is suitable for large map views.
 
 ```swift
 case full
+```
+
+```c
+MKMapItemDetailSelectionAccessoryCalloutStyleFull
 ```
 
 #### Discussion

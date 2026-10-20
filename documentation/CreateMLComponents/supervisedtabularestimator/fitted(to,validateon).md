@@ -1,7 +1,8 @@
 # fitted(to:validateOn:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -20,7 +21,8 @@ func fitted(to input: DataFrame, validateOn validation: DataFrame? = nil) async 
 
 ## See Also
 
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> Self.Transformer](supervisedtabularestimator/fitted(to:validateon:eventhandler:).md)
+### Fitting
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> Self.Transformer](./fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a data frame
 
 

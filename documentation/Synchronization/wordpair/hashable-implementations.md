@@ -1,11 +1,12 @@
 # Hashable Implementations
 
-**Framework**: Synchronization
+**Framework**: Synchronization  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func hash(into: inout Hasher)](wordpair/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

@@ -1,7 +1,8 @@
 # AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for the corresponding error.
 
@@ -19,9 +20,14 @@ The key for the corresponding error.
 let AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: String
 ```
 
+```c
+extern NSString * const AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey;
+```
+
 ## See Also
 
-- [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../foundation/nsnotification/name-swift.struct/avsamplebufferdisplaylayerfailedtodecode.md)
+### Handling errors
+- [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/avsamplebufferdisplaylayerfailedtodecode.md)
   A notification the system posts when a sample buffer display layer fails to decode.
 
 

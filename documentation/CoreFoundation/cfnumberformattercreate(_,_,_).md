@@ -1,18 +1,19 @@
 # CFNumberFormatterCreate(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new CFNumberFormatter object, localized to the given locale, which will format numbers to the given style.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,19 @@ Creates a new CFNumberFormatter object, localized to the given locale, which wil
 func CFNumberFormatterCreate(_ allocator: CFAllocator!, _ locale: CFLocale!, _ style: CFNumberFormatterStyle) -> CFNumberFormatter!
 ```
 
+```c
+extern CFNumberFormatterRefCFNumberFormatterCreate(CFAllocatorRef allocator, CFLocaleRef locale, CFNumberFormatterStyle style);
+```
+
 #### Return Value
 
-A new number formatter, localized to the given locale, which will format numbers using the given style. Returns `NULL` if there was a problem creating the formatter. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new number formatter, localized to the given locale, which will format numbers using the given style. Returns `NULL` if there was a problem creating the formatter. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
-- `locale`: A locale to use for localization. If `NULL`, the function uses the default system locale. Use [`CFLocaleCopyCurrent()`](cflocalecopycurrent().md) to specify the locale of the current user.
-- `style`: A number style. See [`Number Formatter Styles`](number-formatter-styles.md) for possible values.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
+- `locale`: A locale to use for localization. If `NULL`, the function uses the default system locale. Use [`CFLocaleCopyCurrent()`](./cflocalecopycurrent%28%29.md) to specify the locale of the current user.
+- `style`: A number style. See [Number Formatter Styles](./number-formatter-styles.md) for possible values.
 
 
 ---

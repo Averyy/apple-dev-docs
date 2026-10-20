@@ -1,7 +1,8 @@
 # sidebarAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance of a tab group’s section in a sidebar.
 
@@ -17,11 +18,16 @@ The appearance of a tab group’s section in a sidebar.
 var sidebarAppearance: UITabGroup.SidebarAppearance { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UITabGroupSidebarAppearance sidebarAppearance;
+```
+
 ## See Also
 
-- [UITabGroup.SidebarAppearance](uitabgroup/sidebarappearance-swift.enum.md)
+### Configuring a tab group
+- [UITabGroup.SidebarAppearance](./sidebarappearance-swift.enum.md)
   The appearance of a section in a sidebar.
-- [var managingNavigationController: UINavigationController?](uitabgroup/managingnavigationcontroller.md)
+- [var managingNavigationController: UINavigationController?](./managingnavigationcontroller.md)
   The controller that manages navigation for items in a sidebar.
 
 

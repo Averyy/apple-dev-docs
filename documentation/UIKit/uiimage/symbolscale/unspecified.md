@@ -1,7 +1,8 @@
 # UIImage.SymbolScale.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified scale.
 
@@ -19,19 +20,24 @@ An unspecified scale.
 case unspecified
 ```
 
+```c
+UIImageSymbolScaleUnspecified
+```
+
 #### Discussion
 
 When you specify this value, the image inherits the scale value from its current environment.
 
 ## See Also
 
-- [UIImage.SymbolScale.default](uiimage/symbolscale/default.md)
+### Symbol image scales
+- [UIImage.SymbolScale.default](./default.md)
   The default scale variant that matches the system usage.
-- [UIImage.SymbolScale.small](uiimage/symbolscale/small.md)
+- [UIImage.SymbolScale.small](./small.md)
   The small variant of the symbol image.
-- [UIImage.SymbolScale.medium](uiimage/symbolscale/medium.md)
+- [UIImage.SymbolScale.medium](./medium.md)
   The medium variant of the symbol image
-- [UIImage.SymbolScale.large](uiimage/symbolscale/large.md)
+- [UIImage.SymbolScale.large](./large.md)
   The large variant of the symbol image.
 
 

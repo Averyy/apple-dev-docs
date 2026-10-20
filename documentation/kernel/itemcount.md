@@ -1,7 +1,8 @@
 # ItemCount
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Abst_ItemCount
 
@@ -10,7 +11,7 @@ Abst_ItemCount
 
 ## Declaration
 
-```swift
+```c
 typedef IOItemCount ItemCount;
 ```
 

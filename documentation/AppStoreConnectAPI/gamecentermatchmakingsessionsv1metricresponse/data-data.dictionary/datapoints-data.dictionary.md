@@ -1,7 +1,8 @@
 # GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The time-series data points for the Game Center matchmaking sessions metric.
 
@@ -10,14 +11,14 @@ The time-series data points for the Game Center matchmaking sessions metric.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints.Values](gamecentermatchmakingsessionsv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary.md)
+- [object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints.Values](./datapoints-data.dictionary/values-data.dictionary.md)
   The data values in the response per session.
 
 ## Properties

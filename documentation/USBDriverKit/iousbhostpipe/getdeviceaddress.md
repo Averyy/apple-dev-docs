@@ -1,7 +1,8 @@
 # GetDeviceAddress
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the address of the device.
 
@@ -10,13 +11,13 @@ Retrieves the address of the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetDeviceAddress(uint8_t *address) const;
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 ## Parameters
 
@@ -24,9 +25,10 @@ virtual kern_return_t GetDeviceAddress(uint8_t *address) const;
 
 ## See Also
 
-- [GetSpeed](iousbhostpipe/getspeed.md)
+### Getting the Device Attributes
+- [GetSpeed](./getspeed.md)
   Retrieves the device’s operational speed.
-- [tIOUSBHostConnectionSpeed](tiousbhostconnectionspeed.md)
+- [tIOUSBHostConnectionSpeed](../tiousbhostconnectionspeed.md)
   Constants indicating the connection speed of the device.
 
 

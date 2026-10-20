@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Allow or prohibit the use of expired DNS answers during connection establishment.
@@ -30,6 +31,12 @@ By default, this value is `.systemDefault`, which allows the system to determine
 ## Parameters
 
 - `behavior`: The expired DNS behavior to use.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func expiredDNSBehavior(NWParameters.ExpiredDNSBehavior) -> Self](./expireddnsbehavior%28_%29-3w6lp.md)
+  Allow or prohibit the use of expired DNS answers during connection establishment.
 
 
 ---

@@ -1,7 +1,8 @@
 # VDGamRecPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Represents a type used by the Video Components API.
 
@@ -12,6 +13,10 @@ Represents a type used by the Video Components API.
 
 ```swift
 typealias VDGamRecPtr = UnsafeMutablePointer<VDGammaRecord>
+```
+
+```c
+typedef VDGammaRecord *VDGamRecPtr;
 ```
 
 

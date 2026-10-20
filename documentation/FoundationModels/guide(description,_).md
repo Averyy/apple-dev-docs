@@ -1,7 +1,8 @@
 # Guide(description:_:)
 
 **Framework**: Foundation Models  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - iOS 26.0+
@@ -18,10 +19,18 @@
 (peer) macro Guide<RegexOutput>(description: String? = nil, _ guides: Regex<RegexOutput>)
 ```
 
+**Other overloads**:
+
+```swift
+@attached
+(peer) macro Guide<T>(description: String? = nil, _ guides: GenerationGuide<T>...) where T : Generable
+```
+
 ## See Also
 
-- [macro Guide(description: String)](guide(description:).md)
-- [struct GenerationGuide](generationguide.md)
+### Creating a guide
+- [macro Guide(description: String)](./guide%28description%29.md)
+- [struct GenerationGuide](./generationguide.md)
   Guides that control how values are generated.
 
 

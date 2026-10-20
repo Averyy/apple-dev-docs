@@ -1,14 +1,15 @@
 # CLUSTER_TYPE_P
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.1+
 
 ## Declaration
 
-```swift
+```c
 CLUSTER_TYPE_P = 2
 ```
 

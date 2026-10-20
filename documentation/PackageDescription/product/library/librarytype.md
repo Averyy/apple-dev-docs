@@ -1,7 +1,8 @@
 # Product.Library.LibraryType
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The different types of a library product.
 
@@ -14,25 +15,26 @@ enum LibraryType
 ## Topics
 
 ### Enumeration Cases
-- [Product.Library.LibraryType.dynamic](product/library/librarytype/dynamic.md)
+- [Product.Library.LibraryType.dynamic](./librarytype/dynamic.md)
   A dynamically linked library.
-- [Product.Library.LibraryType.static](product/library/librarytype/static.md)
+- [Product.Library.LibraryType.static](./librarytype/static.md)
   A statically linked library.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [let targets: [String]](product/library/targets.md)
+### Describing a Library Product
+- [let targets: [String]](./targets.md)
   The names of the targets in this product.
-- [let type: Product.Library.LibraryType?](product/library/type.md)
+- [let type: Product.Library.LibraryType?](./type.md)
   The type of the library.
 
 

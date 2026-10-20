@@ -1,7 +1,8 @@
 # elementsEqual(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether this sequence and another sequence co
 ```swift
 func elementsEqual<OtherSequence>(_ other: OtherSequence) -> Bool where OtherSequence : Sequence, Self.Element == OtherSequence.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 
@@ -40,7 +43,7 @@ print(a.elementsEqual([1, 2, 3]))
 // Prints "true"
 ```
 
-> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `other`.
+> **Complexity**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `other`.
 
 ## Parameters
 

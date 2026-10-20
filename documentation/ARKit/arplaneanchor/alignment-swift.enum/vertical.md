@@ -1,7 +1,8 @@
 # ARPlaneAnchor.Alignment.vertical
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The plane is parallel to gravity.
 
@@ -15,13 +16,18 @@ The plane is parallel to gravity.
 case vertical
 ```
 
+```c
+ARPlaneAnchorAlignmentVertical
+```
+
 #### Discussion
 
-The [`transform`](aranchor/transform.md) property for a vertical plane anchor includes a rotation component. That is, the transform matrix represents the result of rotating a horizontal plane to match the orientation of the detected surface.
+The [`transform`](../../aranchor/transform.md) property for a vertical plane anchor includes a rotation component. That is, the transform matrix represents the result of rotating a horizontal plane to match the orientation of the detected surface.
 
 ## See Also
 
-- [ARPlaneAnchor.Alignment.horizontal](arplaneanchor/alignment-swift.enum/horizontal.md)
+### Alignment Values
+- [ARPlaneAnchor.Alignment.horizontal](./horizontal.md)
   The plane is perpendicular to gravity.
 
 

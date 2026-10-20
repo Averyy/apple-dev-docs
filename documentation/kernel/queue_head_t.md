@@ -1,22 +1,33 @@
 # queue_head_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+typedef struct queue_entry {
+    ...
+} queue_head_t;
+```
+
+*macOS*
+
+```c
 typedef struct queue_entry queue_head_t;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [next](queue_head_t/1567116-next.md)
-- [prev](queue_head_t/1567109-prev.md)
+- [next](./queue_head_t/api-1567116-next.md)
+- [prev](./queue_head_t/api-1567109-prev.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ExternalPurchaseCustomLink.TokenType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that represent the external purchase token types.
 
@@ -22,32 +23,33 @@ struct TokenType
 
 #### Discussion
 
-Provide a token type value when you call [`token(for:)`](externalpurchasecustomlink/token(for:)-6pixj.md).
+Provide a token type value when you call [`token(for:)`](./token%28for%29-6pixj.md).
 
 ## Topics
 
 ### Token types
-- [static let withinApp: ExternalPurchaseCustomLink.TokenType](externalpurchasecustomlink/tokentype/withinapp.md)
+- [static let withinApp: ExternalPurchaseCustomLink.TokenType](./tokentype/withinapp.md)
   A token type for workflows that use an alternative payment provider inside the app.
-- [static let outOfApp: ExternalPurchaseCustomLink.TokenType](externalpurchasecustomlink/tokentype/outofapp.md)
+- [static let outOfApp: ExternalPurchaseCustomLink.TokenType](./tokentype/outofapp.md)
   A token type for workflows in which customers complete transactions outside of the app.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func token(for: ExternalPurchaseCustomLink.TokenType) async throws -> ExternalPurchaseCustomLink.Token?](externalpurchasecustomlink/token(for:)-6pixj.md)
+### Getting external purchase tokens
+- [static func token(for: ExternalPurchaseCustomLink.TokenType) async throws -> ExternalPurchaseCustomLink.Token?](./token%28for%29-6pixj.md)
   Returns an external purchase token of the specified token type.
-- [ExternalPurchaseCustomLink.Token](externalpurchasecustomlink/token.md)
+- [ExternalPurchaseCustomLink.Token](./token.md)
   A token you use with the External Purchase custom link API.
-- [Receiving and decoding external purchase tokens](receiving-and-decoding-external-purchase-tokens.md)
+- [Receiving and decoding external purchase tokens](../receiving-and-decoding-external-purchase-tokens.md)
   Receive tokens for external purchases that you use to report transactions to Apple.
 
 

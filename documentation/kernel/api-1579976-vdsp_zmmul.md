@@ -1,7 +1,8 @@
 # vDSP_zmmul
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies two matrices of single-precision complex numbers out-of-place.
 
@@ -10,7 +11,7 @@ Multiplies two matrices of single-precision complex numbers out-of-place.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_zmmul(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __M, vDSP_Length __N, vDSP_Length __P);
 ```
 

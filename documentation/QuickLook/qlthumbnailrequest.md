@@ -1,7 +1,8 @@
 # QLThumbnailRequest
 
 **Framework**: Quick Look  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque reference that represents a thumbnail request object.
 
@@ -14,17 +15,22 @@ An opaque reference that represents a thumbnail request object.
 class QLThumbnailRequest
 ```
 
+```c
+typedef struct __QLThumbnailRequest * QLThumbnailRequestRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class QLThumbnail](qlthumbnail.md)
+### Opaque types
+- [class QLThumbnail](./qlthumbnail.md)
   An opaque reference that represents a thumbnail object.
-- [class QLPreviewRequest](qlpreviewrequest.md)
+- [class QLPreviewRequest](./qlpreviewrequest.md)
   An opaque reference that represents a preview request object.
 
 

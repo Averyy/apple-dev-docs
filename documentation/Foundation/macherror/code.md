@@ -1,7 +1,8 @@
 # MachError.Code
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of an error code.
 

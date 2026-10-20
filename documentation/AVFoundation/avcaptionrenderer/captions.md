@@ -1,7 +1,8 @@
 # captions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The captions to render.
 
@@ -17,13 +18,18 @@ The captions to render.
 var captions: [AVCaption] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVCaption *> * captions;
+```
+
 #### Discussion
 
 This property value is an empty array if there are no captions for the system to render.
 
 ## See Also
 
-- [var bounds: CGRect](avcaptionrenderer/bounds.md)
+### Configuring the renderer
+- [var bounds: CGRect](./bounds.md)
   The drawing bounds of caption scenes.
 
 

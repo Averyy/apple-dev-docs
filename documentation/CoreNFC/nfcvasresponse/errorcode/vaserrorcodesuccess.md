@@ -1,14 +1,15 @@
 # VASErrorCodeSuccess
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant indicating that the `GET VAS DATA` command was successful.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: NFCVASResponse.ErrorCode.success)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: NFCVASResponse.ErrorCode.success)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: NFCVASResponse.ErrorCode.success)
 
 ## Declaration
 
@@ -16,9 +17,14 @@ A constant indicating that the `GET VAS DATA` command was successful.
 static var VASErrorCodeSuccess: NFCVASResponse.ErrorCode { get }
 ```
 
+```c
+VASErrorCodeSuccess
+```
+
 ## See Also
 
-- [static var VASErrorCodeUserIntervention: NFCVASResponse.ErrorCode](nfcvasresponse/errorcode/vaserrorcodeuserintervention.md)
+### Status Codes
+- [static var VASErrorCodeUserIntervention: NFCVASResponse.ErrorCode](./vaserrorcodeuserintervention.md)
   A constant indicating that the tag requires user intervention.
 
 

@@ -1,7 +1,8 @@
 # init(buffer:format:stride:offset:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor that locates a property within a buffer.
 

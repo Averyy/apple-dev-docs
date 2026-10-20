@@ -1,7 +1,8 @@
 # init(container:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes an observer using the provided container.
 
@@ -18,9 +19,13 @@ Creates and initializes an observer using the provided container.
 init(container: CKContainer)
 ```
 
+```objc
+- (instancetype) initWithContainer:(CKContainer *) container;
+```
+
 ## Parameters
 
-- `container`: The [`CKContainer`](ckcontainer.md) for the sharing observer.
+- `container`: The [`CKContainer`](../ckcontainer.md) for the sharing observer.
 
 
 ---

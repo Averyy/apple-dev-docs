@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -20,15 +21,21 @@
 func fetchCount<T>(_ request: DataStoreFetchRequest<T>) throws -> Int where T : PersistentModel
 ```
 
+## Default Implementations
+
+### DataStore Implementations
+- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](./fetchcount%28_%29-91yf3.md)
+
 ## See Also
 
-- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](datastore/fetch(_:).md)
-- [struct DataStoreFetchRequest](datastorefetchrequest.md)
-- [struct DataStoreFetchResult](datastorefetchresult.md)
-- [associatedtype Snapshot : DataStoreSnapshot](datastore/snapshot.md)
-- [protocol DataStoreSnapshot](datastoresnapshot.md)
-- [typealias DataStoreSnapshotValue](datastoresnapshotvalue.md)
-- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](datastore/fetchidentifiers(_:).md)
+### Processing fetch requests
+- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](./fetch%28_%29.md)
+- [struct DataStoreFetchRequest](../datastorefetchrequest.md)
+- [struct DataStoreFetchResult](../datastorefetchresult.md)
+- [associatedtype Snapshot : DataStoreSnapshot](./snapshot.md)
+- [protocol DataStoreSnapshot](../datastoresnapshot.md)
+- [typealias DataStoreSnapshotValue](../datastoresnapshotvalue.md)
+- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](./fetchidentifiers%28_%29.md)
 
 
 ---

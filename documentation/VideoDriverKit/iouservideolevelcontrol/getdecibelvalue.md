@@ -1,7 +1,8 @@
 # GetDecibelValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the decibel level value for the control.
 
@@ -10,7 +11,7 @@ Gets the decibel level value for the control.
 
 ## Declaration
 
-```swift
+```c
 float GetDecibelValue();
 ```
 
@@ -20,11 +21,12 @@ The object’s work queue synchronizes access to the control value.
 
 ## See Also
 
-- [SetScalarValue](iouservideolevelcontrol/setscalarvalue.md)
+### Accessing the value
+- [SetScalarValue](./setscalarvalue.md)
   Sets the current scalar level value.
-- [SetDecibelValue](iouservideolevelcontrol/setdecibelvalue.md)
+- [SetDecibelValue](./setdecibelvalue.md)
   Sets the current decibel level value.
-- [GetScalarValue](iouservideolevelcontrol/getscalarvalue.md)
+- [GetScalarValue](./getscalarvalue.md)
   Gets the scalar level value for the control.
 
 

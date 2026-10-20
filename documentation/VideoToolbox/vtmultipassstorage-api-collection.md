@@ -1,40 +1,42 @@
 # VTMultiPassStorage
 
-**Framework**: Video Toolbox
+**Framework**: Video Toolbox  
+**Role**: API Collection
 
 An object that stores video encoding metadata from a multipass encoding session.
 
 ## Topics
 
 ### Creating Storage Objects
-- [func VTMultiPassStorageCreate(allocator: CFAllocator?, fileURL: CFURL?, timeRange: CMTimeRange, options: CFDictionary?, multiPassStorageOut: UnsafeMutablePointer<VTMultiPassStorage?>) -> OSStatus](vtmultipassstoragecreate(allocator:fileurl:timerange:options:multipassstorageout:).md)
+- [func VTMultiPassStorageCreate(allocator: CFAllocator?, fileURL: CFURL?, timeRange: CMTimeRange, options: CFDictionary?, multiPassStorageOut: UnsafeMutablePointer<VTMultiPassStorage?>) -> OSStatus](./vtmultipassstoragecreate%28allocator,fileurl,timerange,options,multipassstorageout%29.md)
   Creates a multipass storage object using a temporary file.
 ### Closing Storage Objects
-- [func VTMultiPassStorageClose(VTMultiPassStorage) -> OSStatus](vtmultipassstorageclose(_:).md)
+- [func VTMultiPassStorageClose(VTMultiPassStorage) -> OSStatus](./vtmultipassstorageclose%28_%29.md)
   Ensures that any pending data is written to the multipass storage file and closes the file.
 ### Inspecting Storage Objects
-- [func VTMultiPassStorageGetTypeID() -> CFTypeID](vtmultipassstoragegettypeid().md)
+- [func VTMultiPassStorageGetTypeID() -> CFTypeID](./vtmultipassstoragegettypeid%28%29.md)
   Retrieves the Core Foundation type identifier for the multipass storage object.
 ### Data Types
-- [class VTMultiPassStorage](vtmultipassstorage.md)
+- [class VTMultiPassStorage](./vtmultipassstorage.md)
   An object for storing information for each frame of a multipass compression session.
 ### Constants
-- [let kVTMultiPassStorageCreationOption_DoNotDelete: CFString](kvtmultipassstoragecreationoption_donotdelete.md)
+- [let kVTMultiPassStorageCreationOption_DoNotDelete: CFString](./kvtmultipassstoragecreationoption_donotdelete.md)
   Indicates that the multipass storage object’s backing store should not be deleted when finalized.
 
 ## See Also
 
-- [Encoding video for low-latency conferencing](encoding-video-for-low-latency-conferencing.md)
+### Compression
+- [Encoding video for low-latency conferencing](./encoding-video-for-low-latency-conferencing.md)
   Configure a compression session to optimize encoding for video-conferencing apps.
-- [Encoding video for live streaming](encoding-video-for-live-streaming.md)
+- [Encoding video for live streaming](./encoding-video-for-live-streaming.md)
   Configure a compression session to encode video for live streaming.
-- [Encoding video for offline transcoding](encoding-video-for-offline-transcoding.md)
+- [Encoding video for offline transcoding](./encoding-video-for-offline-transcoding.md)
   Configure a compression session to transcode video in offline workflows.
-- [VTCompressionSession](vtcompressionsession-api-collection.md)
+- [VTCompressionSession](./vtcompressionsession-api-collection.md)
   An object that compresses video data.
-- [VTDecompressionSession](vtdecompressionsession-api-collection.md)
+- [VTDecompressionSession](./vtdecompressionsession-api-collection.md)
   An object that decompresses video data.
-- [VTFrameSilo](vtframesilo-api-collection.md)
+- [VTFrameSilo](./vtframesilo-api-collection.md)
   An object that stores sample buffers from a multipass encoding session.
 
 

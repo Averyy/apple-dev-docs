@@ -1,7 +1,8 @@
 # ExternalPurchase.NoticeResult
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The options available to people while viewing the external purchase notice sheet.
 
@@ -22,31 +23,32 @@ enum NoticeResult
 
 #### Overview
 
-These values return when your app calls [`presentNoticeSheet()`](externalpurchase/presentnoticesheet().md).
+These values return when your app calls [`presentNoticeSheet()`](./presentnoticesheet%28%29.md).
 
 ## Topics
 
 ### Getting notice sheet results
-- [ExternalPurchase.NoticeResult.cancelled](externalpurchase/noticeresult/cancelled.md)
+- [ExternalPurchase.NoticeResult.cancelled](./noticeresult/cancelled.md)
   Describes when people chose to cancel and not view external purchases.
-- [ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)](externalpurchase/noticeresult/continuedwithexternalpurchasetoken(token:).md)
+- [ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)](./noticeresult/continuedwithexternalpurchasetoken%28token%29.md)
   Describes when people chose to continue to view external purchases, and provides the external purchase token.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var canPresent: Bool](externalpurchase/canpresent.md)
+### Offering an external purchase
+- [static var canPresent: Bool](./canpresent.md)
   A Boolean value that indicates whether the app can successfully present the notice sheet to inform people about external purchases.
-- [static func presentNoticeSheet() async throws -> ExternalPurchase.NoticeResult](externalpurchase/presentnoticesheet.md)
+- [static func presentNoticeSheet() async throws -> ExternalPurchase.NoticeResult](./presentnoticesheet%28%29.md)
   Presents a notice sheet from Apple that informs people of external purchases before showing them, and determines if your app can present external purchases
-- [SKExternalPurchase](../bundleresources/information-property-list/skexternalpurchase.md)
+- [SKExternalPurchase](../../BundleResources/information-property-list/skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 
 

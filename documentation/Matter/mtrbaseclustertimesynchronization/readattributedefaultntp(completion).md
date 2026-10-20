@@ -1,7 +1,8 @@
 # readAttributeDefaultNTP(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeDefaultNTP(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeDefaultNTP() async throws -> String
+```
+
+```objc
+- (void) readAttributeDefaultNTPWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

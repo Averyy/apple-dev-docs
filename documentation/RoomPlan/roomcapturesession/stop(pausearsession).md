@@ -1,7 +1,8 @@
 # stop(pauseARSession:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the room-capture session and indicates whether the app pauses the underlying AR session.
 
@@ -18,19 +19,20 @@ func stop(pauseARSession: Bool = true)
 
 ## Mentions
 
-- [Scanning the rooms of a single structure](scanning-the-rooms-of-a-single-structure.md)
+- [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
 ## Parameters
 
-- `pauseARSession`: A Boolean value that indicates whether the framework automatically pauses the underlying AR session by calling [`pause()`](https://developer.apple.com/documentation/arkit/arsession/pause()). The default value is `true`. If you pass `false`, the AR session continues to run.
+- `pauseARSession`: A Boolean value that indicates whether the framework automatically pauses the underlying AR session by calling [`pause()`](../../ARKit/arsession/pause%28%29.md). The default value is `true`. If you pass `false`, the AR session continues to run.
 
 ## See Also
 
-- [func run(configuration: RoomCaptureSession.Configuration)](roomcapturesession/run(configuration:).md)
+### Controlling a session
+- [func run(configuration: RoomCaptureSession.Configuration)](./run%28configuration%29.md)
   Starts a room-capture session with the specified configuration.
-- [RoomCaptureSession.Configuration](roomcapturesession/configuration.md)
+- [RoomCaptureSession.Configuration](./configuration.md)
   Settings that configure the room-scanning process.
-- [func stop()](roomcapturesession/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the room-capture session.
 
 

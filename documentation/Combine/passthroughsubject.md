@@ -1,7 +1,8 @@
 # PassthroughSubject
 
 **Framework**: Combine  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A subject that broadcasts elements to downstream subscribers.
 
@@ -22,30 +23,31 @@ final class PassthroughSubject<Output, Failure> where Failure : Error
 
 ## Mentions
 
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
 #### Overview
 
-As a concrete implementation of [`Subject`](subject.md), the [`PassthroughSubject`](passthroughsubject.md) provides a convenient way to adapt existing imperative code to the Combine model.
+As a concrete implementation of [`Subject`](./subject.md), the [`PassthroughSubject`](./passthroughsubject.md) provides a convenient way to adapt existing imperative code to the Combine model.
 
-Unlike [`CurrentValueSubject`](currentvaluesubject.md), a [`PassthroughSubject`](passthroughsubject.md) doesn’t have an initial value or a buffer of the most recently-published element. A [`PassthroughSubject`](passthroughsubject.md) drops values if there are no subscribers, or its current demand is zero.
+Unlike [`CurrentValueSubject`](./currentvaluesubject.md), a [`PassthroughSubject`](./passthroughsubject.md) doesn’t have an initial value or a buffer of the most recently-published element. A [`PassthroughSubject`](./passthroughsubject.md) drops values if there are no subscribers, or its current demand is zero.
 
 ## Topics
 
 ### Creating a passthrough subject
-- [init()](passthroughsubject/init.md)
+- [init()](./passthroughsubject/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
-- [Subject](subject.md)
+- [Publisher](./publisher.md)
+- [Subject](./subject.md)
 
 ## See Also
 
-- [protocol Subject](subject.md)
+### Subjects
+- [protocol Subject](./subject.md)
   A publisher that exposes a method for outside callers to publish elements.
-- [class CurrentValueSubject](currentvaluesubject.md)
+- [class CurrentValueSubject](./currentvaluesubject.md)
   A subject that wraps a single value and publishes a new element whenever the value changes.
 
 

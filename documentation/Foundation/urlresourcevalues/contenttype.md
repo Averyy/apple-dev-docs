@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resource’s type.
 
@@ -22,33 +23,34 @@ var contentType: UTType? { get }
 
 ## See Also
 
-- [var addedToDirectoryDate: Date?](urlresourcevalues/addedtodirectorydate.md)
+### Universal resource values
+- [var addedToDirectoryDate: Date?](./addedtodirectorydate.md)
   The date the resource was created, or renamed into or within its parent directory.
-- [var allValues: [URLResourceKey : Any]](urlresourcevalues/allvalues.md)
+- [var allValues: [URLResourceKey : Any]](./allvalues.md)
   A loosely-typed dictionary containing all keys and values.
-- [var attributeModificationDate: Date?](urlresourcevalues/attributemodificationdate.md)
+- [var attributeModificationDate: Date?](./attributemodificationdate.md)
   The time the resource’s attributes were last modified.
-- [var canonicalPath: String?](urlresourcevalues/canonicalpath.md)
+- [var canonicalPath: String?](./canonicalpath.md)
   The URL’s path as a canonical absolute file system path.
-- [var contentAccessDate: Date?](urlresourcevalues/contentaccessdate.md)
+- [var contentAccessDate: Date?](./contentaccessdate.md)
   The date the resource was last accessed.
-- [var contentModificationDate: Date?](urlresourcevalues/contentmodificationdate.md)
+- [var contentModificationDate: Date?](./contentmodificationdate.md)
   The time the resource content was last modified.
-- [var creationDate: Date?](urlresourcevalues/creationdate.md)
+- [var creationDate: Date?](./creationdate.md)
   The date the resource was created.
-- [var customIcon: NSImage?](urlresourcevalues/customicon.md)
-- [var effectiveIcon: AnyObject?](urlresourcevalues/effectiveicon.md)
-- [var generationIdentifier: (any NSCopying & NSSecureCoding & NSObjectProtocol)?](urlresourcevalues/generationidentifier.md)
+- [var customIcon: NSImage?](./customicon.md)
+- [var effectiveIcon: AnyObject?](./effectiveicon.md)
+- [var generationIdentifier: (any NSCopying & NSSecureCoding & NSObjectProtocol)?](./generationidentifier.md)
   An opaque generation identifier which can be compared using `==` to determine if the data in a document has been modified.
-- [var hasHiddenExtension: Bool?](urlresourcevalues/hashiddenextension.md)
+- [var hasHiddenExtension: Bool?](./hashiddenextension.md)
   True for resources whose filename extension is removed from the localized name property.
-- [var isAliasFile: Bool?](urlresourcevalues/isaliasfile.md)
+- [var isAliasFile: Bool?](./isaliasfile.md)
   true if the resource is a Finder alias file or a symlink, false otherwise
-- [var isExcludedFromBackup: Bool?](urlresourcevalues/isexcludedfrombackup.md)
+- [var isExcludedFromBackup: Bool?](./isexcludedfrombackup.md)
   True if resource should be excluded from backups, false otherwise.
-- [var isHidden: Bool?](urlresourcevalues/ishidden.md)
+- [var isHidden: Bool?](./ishidden.md)
   True for resources normally not displayed to users.
-- [var isPackage: Bool?](urlresourcevalues/ispackage.md)
+- [var isPackage: Bool?](./ispackage.md)
   True for packaged directories.
 
 

@@ -1,6 +1,7 @@
 # Messaging Between a Playground Page and the Always-On Live View
 
-**Framework**: Playground Support
+**Framework**: Playground Support  
+**Role**: Article
 
 Display the results of running a playground page's code in a persistent live view.
 
@@ -10,13 +11,13 @@ The always-on live view in Swift Playgrounds runs continuously as learners write
 
 Instances in a playground page can't communicate directly with instances in the always-on live view. Instead, you communicate asynchronously between the two parts of a playground by adopting a message-handling protocol and setting a delegate for a proxy object that mediates between the two processes.
 
-##### 3034527
+##### Configure the Always-On Live View
 
-You create the always-on live view by assigning a view or view controller to the global [`liveView`](playgroundpage/1964506-liveview.md) for the current page.
+You create the always-on live view by assigning a view or view controller to the global [`liveView`](./playgroundpage/api-1964506-liveview.md) for the current page.
 
-> ❗ **Important**: You invoke the always-on live view from a file named `LiveView.swift`, which must be located in the directory for each playground page. If you assign the current [`liveView`](playgroundpage/1964506-liveview.md) from any other code, the resulting live view will be a traditional live view that doesn't persist across multiple runs of the page.
+> ❗ **Important**: You invoke the always-on live view from a file named `LiveView.swift`, which must be located in the directory for each playground page. If you assign the current [`liveView`](./playgroundpage/api-1964506-liveview.md) from any other code, the resulting live view will be a traditional live view that doesn't persist across multiple runs of the page.
 
-Configure your always-on live view to adopt the [`PlaygroundLiveViewMessageHandler`](playgroundliveviewmessagehandler.md) protocol for sending and receiving messages from the corresponding playground page. The example below uses a [`UIButton`](https://developer.apple.com/documentation/uikit/uibutton) as the root view and changes the background color of the button when it receives a message. 
+Configure your always-on live view to adopt the [`PlaygroundLiveViewMessageHandler`](./playgroundliveviewmessagehandler.md) protocol for sending and receiving messages from the corresponding playground page. The example below uses a [`UIButton`](../UIKit/uibutton.md) as the root view and changes the background color of the button when it receives a message. 
 
 ```swift
 extension UIButton: PlaygroundLiveViewMessageHandler {
@@ -33,9 +34,9 @@ button.setTitle("Always-on live view", for: .normal)
 PlaygroundPage.current.liveView = button
 ```
 
-##### 3034523
+##### Configure the Playground Page
 
-The always-on live view that you configure in `LiveView.swift` is visible to learner-facing code—code invoked from `main.swift`—as an instance of [`PlaygroundRemoteLiveViewProxy`](playgroundremoteliveviewproxy.md). To receive messages from the always-on live view, you define a class to be that proxy's delegate.
+The always-on live view that you configure in `LiveView.swift` is visible to learner-facing code—code invoked from `main.swift`—as an instance of [`PlaygroundRemoteLiveViewProxy`](./playgroundremoteliveviewproxy.md). To receive messages from the always-on live view, you define a class to be that proxy's delegate.
 
 The example below defines a delegate for the always-on live view proxy and configures it to print any messages it receives.
 
@@ -58,17 +59,17 @@ guard let remoteView = PlaygroundPage.current.liveView as? PlaygroundRemoteLiveV
 remoteView.delegate = MessageHandler()
 ```
 
-##### 3034522
+##### Send and Receive Messages
 
-You send messages to the always-on live view by calling the [`send(_:)`](playgroundremoteliveviewproxy/3029570-send.md) method on its proxy.
+You send messages to the always-on live view by calling the [`send(_:)`](./playgroundremoteliveviewproxy/api-3029570-send.md) method on its proxy.
 
 ```swift
 remoteView.send(.string("Hey"))
 ```
 
-You send messages back to the playground page from the always-on live view by calling the [`send(_:)`](playgroundliveviewmessagehandler/3029542-send.md) method on the view itself.
+You send messages back to the playground page from the always-on live view by calling the [`send(_:)`](./playgroundliveviewmessagehandler/api-3029542-send.md) method on the view itself.
 
-The example below builds on the example in [`Configure the Always-On Live View`](messaging_between_a_playground_page_and_the_always-on_live_view#3034527.md) by sending a message back to the playground page in response to any messages the always-on live view receives.
+The example below builds on the example in [Configure the Always-On Live View](./messaging_between_a_playground_page_and_the_always-on_live_view.md#3034527) by sending a message back to the playground page in response to any messages the always-on live view receives.
 
 ```swift
 extension UIButton: PlaygroundLiveViewMessageHandler {
@@ -84,13 +85,15 @@ extension UIButton: PlaygroundLiveViewMessageHandler {
 
 ## See Also
 
-- [class PlaygroundRemoteLiveViewProxy](playgroundremoteliveviewproxy.md)
+### Page-View Communication
+- [class PlaygroundRemoteLiveViewProxy](./playgroundremoteliveviewproxy.md)
   A proxy that facilitates message passing between the always-on live view and its corresponding playground page.
-- [protocol PlaygroundRemoteLiveViewProxyDelegate](playgroundremoteliveviewproxydelegate.md)
+- [protocol PlaygroundRemoteLiveViewProxyDelegate](./playgroundremoteliveviewproxydelegate.md)
   A delegate you use to receive messages from the always-on live view.
-- [protocol PlaygroundLiveViewMessageHandler](playgroundliveviewmessagehandler.md)
+- [protocol PlaygroundLiveViewMessageHandler](./playgroundliveviewmessagehandler.md)
   A handler you use to send and receive messages between the always-on live view and its corresponding playground page.
-- [class PlaygroundPage](playgroundpage.md)
+### Related Documentation
+- [class PlaygroundPage](./playgroundpage.md)
   An object you use to configure the state of a playground page and its live view.
 
 

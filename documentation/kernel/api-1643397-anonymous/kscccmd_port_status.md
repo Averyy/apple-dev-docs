@@ -1,7 +1,8 @@
 # kSCCCmd_PORT_STATUS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCCCmd_PORT_STATUS = 0x1F
 ```
 

@@ -1,9 +1,10 @@
 # MDLMeshBufferType
 
 **Framework**: Model I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for the content of a mesh buffer, used by the [`type`](mdlmeshbuffer/type.md) property and by [`MDLMeshBufferAllocator`](mdlmeshbufferallocator.md) methods for creating buffers.
+Options for the content of a mesh buffer, used by the [`type`](./mdlmeshbuffer/type.md) property and by [`MDLMeshBufferAllocator`](./mdlmeshbufferallocator.md) methods for creating buffers.
 
 **Availability**:
 - iOS 9.0+
@@ -19,27 +20,31 @@ Options for the content of a mesh buffer, used by the [`type`](mdlmeshbuffer/typ
 enum MDLMeshBufferType
 ```
 
+```c
+enum MDLMeshBufferType : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MDLMeshBufferType.vertex](mdlmeshbuffertype/vertex.md)
-  The buffer contains per-vertex data for one or more vertex attributes of a [`MDLMesh`](mdlmesh.md) object.
-- [MDLMeshBufferType.index](mdlmeshbuffertype/index.md)
-  The buffer contains index data for a [`MDLSubmesh`](mdlsubmesh.md) object.
+- [MDLMeshBufferType.vertex](./mdlmeshbuffertype/vertex.md)
+  The buffer contains per-vertex data for one or more vertex attributes of a [`MDLMesh`](./mdlmesh.md) object.
+- [MDLMeshBufferType.index](./mdlmeshbuffertype/index.md)
+  The buffer contains index data for a [`MDLSubmesh`](./mdlsubmesh.md) object.
 ### Enumeration Cases
-- [MDLMeshBufferType.custom](mdlmeshbuffertype/custom.md)
+- [MDLMeshBufferType.custom](./mdlmeshbuffertype/custom.md)
 ### Initializers
-- [init?(rawValue: UInt)](mdlmeshbuffertype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mdlmeshbuffertype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

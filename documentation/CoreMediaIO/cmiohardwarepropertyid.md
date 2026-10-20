@@ -1,7 +1,8 @@
 # CMIOHardwarePropertyID
 
 **Framework**: Core Media I/O  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,23 +14,28 @@
 typealias CMIOHardwarePropertyID = CMIOObjectPropertySelector
 ```
 
+```c
+typedef CMIOObjectPropertySelector CMIOHardwarePropertyID;
+```
+
 ## See Also
 
-- [typealias CMIOClassID](cmioclassid.md)
-- [typealias CMIOControlID](cmiocontrolid.md)
-- [typealias CMIODeviceGetSMPTETimeProc](cmiodevicegetsmptetimeproc.md)
-- [typealias CMIODeviceID](cmiodeviceid.md)
-- [typealias CMIODevicePropertyID](cmiodevicepropertyid.md)
-- [typealias CMIODeviceStreamQueueAlteredProc](cmiodevicestreamqueuealteredproc.md)
-- [typealias CMIOObjectID](cmioobjectid.md)
-- [typealias CMIOObjectPropertyElement](cmioobjectpropertyelement.md)
-- [typealias CMIOObjectPropertyListenerBlock](cmioobjectpropertylistenerblock.md)
-- [typealias CMIOObjectPropertyListenerProc](cmioobjectpropertylistenerproc.md)
-- [typealias CMIOObjectPropertyScope](cmioobjectpropertyscope.md)
-- [typealias CMIOObjectPropertySelector](cmioobjectpropertyselector.md)
-- [typealias CMIOStreamID](cmiostreamid.md)
-- [typealias CMIOStreamScheduledOutputNotificationProc](cmiostreamscheduledoutputnotificationproc.md)
-- [struct CMIOExtensionProperty](cmioextensionproperty.md)
+### Data Types
+- [typealias CMIOClassID](./cmioclassid.md)
+- [typealias CMIOControlID](./cmiocontrolid.md)
+- [typealias CMIODeviceGetSMPTETimeProc](./cmiodevicegetsmptetimeproc.md)
+- [typealias CMIODeviceID](./cmiodeviceid.md)
+- [typealias CMIODevicePropertyID](./cmiodevicepropertyid.md)
+- [typealias CMIODeviceStreamQueueAlteredProc](./cmiodevicestreamqueuealteredproc.md)
+- [typealias CMIOObjectID](./cmioobjectid.md)
+- [typealias CMIOObjectPropertyElement](./cmioobjectpropertyelement.md)
+- [typealias CMIOObjectPropertyListenerBlock](./cmioobjectpropertylistenerblock.md)
+- [typealias CMIOObjectPropertyListenerProc](./cmioobjectpropertylistenerproc.md)
+- [typealias CMIOObjectPropertyScope](./cmioobjectpropertyscope.md)
+- [typealias CMIOObjectPropertySelector](./cmioobjectpropertyselector.md)
+- [typealias CMIOStreamID](./cmiostreamid.md)
+- [typealias CMIOStreamScheduledOutputNotificationProc](./cmiostreamscheduledoutputnotificationproc.md)
+- [struct CMIOExtensionProperty](./cmioextensionproperty.md)
   A structure that defines the properties that providers, devices, and streams support.
 
 

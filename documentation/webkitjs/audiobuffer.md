@@ -1,7 +1,8 @@
 # AudioBuffer
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface AudioBuffer
 ```
 
 ## Topics
 
 ### Instance Properties
-- [duration](audiobuffer/1631167-duration.md)
-- [gain](audiobuffer/1633081-gain.md)
-- [length](audiobuffer/1633388-length.md)
-- [numberOfChannels](audiobuffer/1630820-numberofchannels.md)
-- [sampleRate](audiobuffer/1628949-samplerate.md)
+- [duration](./audiobuffer/api-1631167-duration.md)
+- [gain](./audiobuffer/api-1633081-gain.md)
+- [length](./audiobuffer/api-1633388-length.md)
+- [numberOfChannels](./audiobuffer/api-1630820-numberofchannels.md)
+- [sampleRate](./audiobuffer/api-1628949-samplerate.md)
 ### Instance Methods
-- [getChannelData](audiobuffer/1632939-getchanneldata.md)
+- [getChannelData](./audiobuffer/api-1632939-getchanneldata.md)
 
 
 ---

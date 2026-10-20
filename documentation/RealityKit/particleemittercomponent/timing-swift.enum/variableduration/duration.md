@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Base duration of time.
 

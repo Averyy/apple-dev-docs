@@ -1,7 +1,8 @@
 # globalTuning
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An adjustment for the tuning of all the played notes.
 
@@ -19,17 +20,22 @@ An adjustment for the tuning of all the played notes.
 var globalTuning: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float globalTuning;
+```
+
 #### Discussion
 
 The tuning unit is cents, and defaults to `0.0`. The range of valid values is `-2400` to `2400` cents.
 
 ## See Also
 
-- [var overallGain: Float](avaudiounitsampler/overallgain.md)
+### Getting and setting sampler values
+- [var overallGain: Float](./overallgain.md)
   An adjustment for the gain of all the played notes, in decibels.
-- [var stereoPan: Float](avaudiounitsampler/stereopan.md)
+- [var stereoPan: Float](./stereopan.md)
   An adjustment for the stereo panning of all the played notes.
-- [var masterGain: Float](avaudiounitsampler/mastergain.md)
+- [var masterGain: Float](./mastergain.md)
   An adjustment for the gain of all the played notes, in decibels.
 
 

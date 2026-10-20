@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMMCNumPowerStates](1645934-anonymous/kmmcnumpowerstates.md)
-- [kMMCPowerStateActive](1645934-anonymous/kmmcpowerstateactive.md)
-- [kMMCPowerStateIdle](1645934-anonymous/kmmcpowerstateidle.md)
-- [kMMCPowerStateSleep](1645934-anonymous/kmmcpowerstatesleep.md)
-- [kMMCPowerStateStandby](1645934-anonymous/kmmcpowerstatestandby.md)
-- [kMMCPowerStateSystemSleep](1645934-anonymous/kmmcpowerstatesystemsleep.md)
+- [kMMCNumPowerStates](./api-1645934-anonymous/kmmcnumpowerstates.md)
+- [kMMCPowerStateActive](./api-1645934-anonymous/kmmcpowerstateactive.md)
+- [kMMCPowerStateIdle](./api-1645934-anonymous/kmmcpowerstateidle.md)
+- [kMMCPowerStateSleep](./api-1645934-anonymous/kmmcpowerstatesleep.md)
+- [kMMCPowerStateStandby](./api-1645934-anonymous/kmmcpowerstatestandby.md)
+- [kMMCPowerStateSystemSleep](./api-1645934-anonymous/kmmcpowerstatesystemsleep.md)
 
 
 ---

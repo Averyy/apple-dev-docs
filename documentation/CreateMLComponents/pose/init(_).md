@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose from a body or hand pose observation.
 
@@ -25,7 +26,8 @@ init(_ observation: VNRecognizedPointsObservation) throws
 
 ## See Also
 
-- [init(from: [JointKey : JointPoint])](pose/init(from:)-8rvl5.md)
+### Creating a pose
+- [init(from: [JointKey : JointPoint])](./init%28from%29-8rvl5.md)
   Creates a pose from a dictionary of joint keypoints.
 
 

@@ -1,14 +1,15 @@
 # DTEntryIterator
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct OpaqueDTEntryIterator *DTEntryIterator;
 ```
 

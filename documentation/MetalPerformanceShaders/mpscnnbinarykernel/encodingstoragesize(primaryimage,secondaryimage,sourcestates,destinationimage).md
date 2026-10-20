@@ -1,7 +1,8 @@
 # encodingStorageSize(primaryImage:secondaryImage:sourceStates:destinationImage:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,22 +18,27 @@
 func encodingStorageSize(primaryImage: MPSImage, secondaryImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage?) -> Int
 ```
 
+```objc
+- (NSUInteger) encodingStorageSizeForPrimaryImage:(MPSImage *) primaryImage secondaryImage:(MPSImage *) secondaryImage sourceStates:(NSArray<MPSState *> *) sourceStates destinationImage:(MPSImage *) destinationImage;
+```
+
 ## See Also
 
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage) -> MPSImage](mpscnnbinarykernel/encode(commandbuffer:primaryimage:secondaryimage:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationImage: MPSImage)](mpscnnbinarykernel/encode(commandbuffer:primaryimage:secondaryimage:destinationimage:).md)
-- [func appendBatchBarrier() -> Bool](mpscnnbinarykernel/appendbatchbarrier.md)
-- [func batchEncodingStorageSize(primaryImage: [MPSImage], secondaryImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]?) -> Int](mpscnnbinarykernel/batchencodingstoragesize(primaryimage:secondaryimage:sourcestates:destinationimage:).md)
-- [func destinationImageDescriptor(forSourceImages: [MPSImage], sourceStates: [MPSState]?) -> MPSImageDescriptor](mpscnnbinarykernel/destinationimagedescriptor(forsourceimages:sourcestates:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationState: AutoreleasingUnsafeMutablePointer<MPSState?>, destinationStateIsTemporary: Bool) -> MPSImage](mpscnnbinarykernel/encode(commandbuffer:primaryimage:secondaryimage:destinationstate:destinationstateistemporary:).md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage]) -> [MPSImage]](mpscnnbinarykernel/encodebatch(commandbuffer:primaryimages:secondaryimages:).md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage], destinationImages: [MPSImage])](mpscnnbinarykernel/encodebatch(commandbuffer:primaryimages:secondaryimages:destinationimages:).md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage], destinationStates: AutoreleasingUnsafeMutablePointer<NSArray?>, destinationStateIsTemporary: Bool) -> [MPSImage]](mpscnnbinarykernel/encodebatch(commandbuffer:primaryimages:secondaryimages:destinationstates:destinationstateistemporary:).md)
-- [func isResultStateReusedAcrossBatch() -> Bool](mpscnnbinarykernel/isresultstatereusedacrossbatch.md)
-- [func resultState(primaryImage: MPSImage, secondaryImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?](mpscnnbinarykernel/resultstate(primaryimage:secondaryimage:sourcestates:destinationimage:).md)
-- [func resultStateBatch(primaryImage: [MPSImage], secondaryImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?](mpscnnbinarykernel/resultstatebatch(primaryimage:secondaryimage:sourcestates:destinationimage:).md)
-- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?](mpscnnbinarykernel/temporaryresultstate(commandbuffer:primaryimage:secondaryimage:sourcestates:destinationimage:).md)
-- [func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, primaryImage: [MPSImage], secondaryImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?](mpscnnbinarykernel/temporaryresultstatebatch(commandbuffer:primaryimage:secondaryimage:sourcestates:destinationimage:).md)
+### Instance Methods
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage) -> MPSImage](./encode%28commandbuffer,primaryimage,secondaryimage%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationImage: MPSImage)](./encode%28commandbuffer,primaryimage,secondaryimage,destinationimage%29.md)
+- [func appendBatchBarrier() -> Bool](./appendbatchbarrier%28%29.md)
+- [func batchEncodingStorageSize(primaryImage: [MPSImage], secondaryImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]?) -> Int](./batchencodingstoragesize%28primaryimage,secondaryimage,sourcestates,destinationimage%29.md)
+- [func destinationImageDescriptor(forSourceImages: [MPSImage], sourceStates: [MPSState]?) -> MPSImageDescriptor](./destinationimagedescriptor%28forsourceimages,sourcestates%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationState: AutoreleasingUnsafeMutablePointer<MPSState?>, destinationStateIsTemporary: Bool) -> MPSImage](./encode%28commandbuffer,primaryimage,secondaryimage,destinationstate,destinationstateistemporary%29.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage]) -> [MPSImage]](./encodebatch%28commandbuffer,primaryimages,secondaryimages%29.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage], destinationImages: [MPSImage])](./encodebatch%28commandbuffer,primaryimages,secondaryimages,destinationimages%29.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage], destinationStates: AutoreleasingUnsafeMutablePointer<NSArray?>, destinationStateIsTemporary: Bool) -> [MPSImage]](./encodebatch%28commandbuffer,primaryimages,secondaryimages,destinationstates,destinationstateistemporary%29.md)
+- [func isResultStateReusedAcrossBatch() -> Bool](./isresultstatereusedacrossbatch%28%29.md)
+- [func resultState(primaryImage: MPSImage, secondaryImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?](./resultstate%28primaryimage,secondaryimage,sourcestates,destinationimage%29.md)
+- [func resultStateBatch(primaryImage: [MPSImage], secondaryImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?](./resultstatebatch%28primaryimage,secondaryimage,sourcestates,destinationimage%29.md)
+- [func temporaryResultState(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, sourceStates: [MPSState]?, destinationImage: MPSImage) -> MPSState?](./temporaryresultstate%28commandbuffer,primaryimage,secondaryimage,sourcestates,destinationimage%29.md)
+- [func temporaryResultStateBatch(commandBuffer: any MTLCommandBuffer, primaryImage: [MPSImage], secondaryImage: [MPSImage], sourceStates: [[MPSState]]?, destinationImage: [MPSImage]) -> [MPSState]?](./temporaryresultstatebatch%28commandbuffer,primaryimage,secondaryimage,sourcestates,destinationimage%29.md)
 
 
 ---

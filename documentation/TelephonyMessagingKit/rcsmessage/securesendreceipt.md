@@ -1,7 +1,8 @@
 # RCSMessage.SecureSendReceipt
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the security context of an end-to-end encrypted message.
 
@@ -17,18 +18,18 @@ struct SecureSendReceipt
 ## Topics
 
 ### Inspecting receipt properties
-- [let id: UUID](rcsmessage/securesendreceipt/id.md)
+- [let id: UUID](./securesendreceipt/id.md)
   The identifier for the sent receipt.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

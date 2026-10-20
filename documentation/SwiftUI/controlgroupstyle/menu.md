@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A control group style that presents its content as a menu when the user presses the control, or as a submenu when nested within a larger menu.
 
@@ -20,19 +21,22 @@ A control group style that presents its content as a menu when the user presses 
 nonisolated static var menu: MenuControlGroupStyle { get }
 ```
 
+Available when `Self` is `MenuControlGroupStyle`.
+
 #### Discussion
 
-To apply this style to a control group, or to a view that contains control groups, use the [`controlGroupStyle(_:)`](view/controlgroupstyle(_:).md) modifier.
+To apply this style to a control group, or to a view that contains control groups, use the [`controlGroupStyle(_:)`](../view/controlgroupstyle%28_%29.md) modifier.
 
 ## See Also
 
-- [static var automatic: AutomaticControlGroupStyle](controlgroupstyle/automatic.md)
+### Getting built-in control group styles
+- [static var automatic: AutomaticControlGroupStyle](./automatic.md)
   The default control group style.
-- [static var compactMenu: CompactMenuControlGroupStyle](controlgroupstyle/compactmenu.md)
+- [static var compactMenu: CompactMenuControlGroupStyle](./compactmenu.md)
   A control group style that presents its content as a compact menu when the user presses the control, or as a submenu when nested within a larger menu.
-- [static var navigation: NavigationControlGroupStyle](controlgroupstyle/navigation.md)
+- [static var navigation: NavigationControlGroupStyle](./navigation.md)
   The navigation control group style.
-- [static var palette: PaletteControlGroupStyle](controlgroupstyle/palette.md)
+- [static var palette: PaletteControlGroupStyle](./palette.md)
   A control group style that presents its content as a palette.
 
 

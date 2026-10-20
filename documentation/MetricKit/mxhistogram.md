@@ -1,16 +1,19 @@
 # MXHistogram
 
 **Framework**: MetricKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing a histogram of data values of the same type of unit.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 12.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 12.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`Histogram`](./histogram.md) instead.
 
 ## Declaration
 
@@ -18,13 +21,17 @@ An object representing a histogram of data values of the same type of unit.
 class MXHistogram<UnitType> where UnitType : Unit
 ```
 
+```objc
+@interface MXHistogram : NSObject
+```
+
 #### Overview
 
 A *histogram* measures the number of times a data point for a variable falls into a specific range of possible values within a set of data. Usually, histograms are depicted as bar charts, in which each bar represents a range of values, and the height of each bar represents the number of times the value of the variable falls within a particular range. In this class, each bar is represented by a *bucket*.
 
-A bucket holds the results for a series of measured values, such as all the events occurring between 3 and 5 seconds. MetricKit uses fixed-width buckets that are device-independent with intervals that are based on the type of metric. Use the [`bucketStart`](mxhistogrambucket/bucketstart.md) and [`bucketEnd`](mxhistogrambucket/bucketend.md) properties to find the start and end of an interval.
+A bucket holds the results for a series of measured values, such as all the events occurring between 3 and 5 seconds. MetricKit uses fixed-width buckets that are device-independent with intervals that are based on the type of metric. Use the [`bucketStart`](./mxhistogrambucket/bucketstart.md) and [`bucketEnd`](./mxhistogrambucket/bucketend.md) properties to find the start and end of an interval.
 
-The returned results contain only buckets with at least one item so [`bucketEnumerator`](mxhistogram/bucketenumerator.md) may not return all intervals.
+The returned results contain only buckets with at least one item so [`bucketEnumerator`](./mxhistogram/bucketenumerator.md) may not return all intervals.
 
 For example, if the fixed width for the time to resume the app is 10 ms, then the sequence of buckets is:
 
@@ -35,56 +42,57 @@ If there’s data only in the 0…9 ms and 20…29 ms buckets, then the report s
 ## Topics
 
 ### Reading the buckets
-- [var bucketEnumerator: NSEnumerator](mxhistogram/bucketenumerator.md)
+- [var bucketEnumerator: NSEnumerator](./mxhistogram/bucketenumerator.md)
   An enumerator for the buckets containing the data in the histogram.
-- [var totalBucketCount: Int](mxhistogram/totalbucketcount.md)
+- [var totalBucketCount: Int](./mxhistogram/totalbucketcount.md)
   The total number of buckets in the histogram.
-- [class MXHistogramBucket](mxhistogrambucket.md)
+- [class MXHistogramBucket](./mxhistogrambucket.md)
   An object representing a bucket of data in a histogram.
 ### Initializers
-- [init?(coder: NSCoder)](mxhistogram/init(coder:).md)
+- [init?(coder: NSCoder)](./mxhistogram/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MXCallStackTree](mxcallstacktree.md)
+### Supporting types
+- [class MXCallStackTree](./mxcallstacktree.md)
   An object representing the call stack for an exception.
-- [class MXMetaData](mxmetadata.md)
+- [class MXMetaData](./mxmetadata.md)
   An object containing system-level information about the device.
-- [class MXAverage](mxaverage.md)
+- [class MXAverage](./mxaverage.md)
   A unit of measure for an average.
-- [class MXHistogramBucket](mxhistogrambucket.md)
+- [class MXHistogramBucket](./mxhistogrambucket.md)
   An object representing a bucket of data in a histogram.
-- [class MXDiagnostic](mxdiagnostic.md)
+- [class MXDiagnostic](./mxdiagnostic.md)
   An abstract data class for a diagnostic.
-- [class MXMetric](mxmetric.md)
+- [class MXMetric](./mxmetric.md)
   An abstract data class for a metric.
-- [struct MXError](mxerror.md)
+- [struct MXError](./mxerror.md)
   Error domain for error handling of app metrics.
-- [MXError.Code](mxerror/code.md)
+- [MXError.Code](./mxerror/code.md)
   Error codes for error values from app metrics.
-- [let MXErrorDomain: String](mxerrordomain.md)
+- [let MXErrorDomain: String](./mxerrordomain.md)
   Error domain for error values from app metrics.
-- [class MXCrashDiagnosticObjectiveCExceptionReason](mxcrashdiagnosticobjectivecexceptionreason.md)
+- [class MXCrashDiagnosticObjectiveCExceptionReason](./mxcrashdiagnosticobjectivecexceptionreason.md)
   An object that represents the exception reason for an uncaught ObjC exception.
-- [class MXSignpostRecord](mxsignpostrecord.md)
+- [class MXSignpostRecord](./mxsignpostrecord.md)
   An object representing the record for a signpost interval or event.
-- [class MXUnitAveragePixelLuminance](mxunitaveragepixelluminance.md)
+- [class MXUnitAveragePixelLuminance](./mxunitaveragepixelluminance.md)
   A unit of measure of pixel luminosity on an OLED display.
-- [class MXUnitSignalBars](mxunitsignalbars.md)
+- [class MXUnitSignalBars](./mxunitsignalbars.md)
   A unit of measure for the number of bars of cellular network connectivity.
 
 

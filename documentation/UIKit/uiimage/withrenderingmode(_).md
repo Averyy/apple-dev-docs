@@ -1,7 +1,8 @@
 # withRenderingMode(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new version of the image that uses the specified rendering mode.
 
@@ -9,7 +10,7 @@ Returns a new version of the image that uses the specified rendering mode.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Returns a new version of the image that uses the specified rendering mode.
 
 ```swift
 func withRenderingMode(_ renderingMode: UIImage.RenderingMode) -> UIImage
+```
+
+```objc
+- (UIImage *) imageWithRenderingMode:(UIImageRenderingMode) renderingMode;
 ```
 
 #### Return Value
@@ -29,29 +34,31 @@ A new image object with the specified rendering mode.
 
 ## See Also
 
-- [var renderingMode: UIImage.RenderingMode](uiimage/renderingmode-swift.property.md)
+### Related Documentation
+- [var renderingMode: UIImage.RenderingMode](./renderingmode-swift.property.md)
   A setting that determines how the app renders an image.
-- [func withConfiguration(UIImage.Configuration) -> UIImage](uiimage/withconfiguration(_:).md)
+### Changing the image attributes
+- [func withConfiguration(UIImage.Configuration) -> UIImage](./withconfiguration%28_%29.md)
   Returns a new version of the current image, replacing the current configuration attributes with the specified attributes.
-- [func applyingSymbolConfiguration(UIImage.SymbolConfiguration) -> UIImage?](uiimage/applyingsymbolconfiguration(_:).md)
+- [func applyingSymbolConfiguration(UIImage.SymbolConfiguration) -> UIImage?](./applyingsymbolconfiguration%28_%29.md)
   Returns a new version of the current image, applying the specified configuration attributes on top of the current attributes.
-- [func imageFlippedForRightToLeftLayoutDirection() -> UIImage](uiimage/imageflippedforrighttoleftlayoutdirection.md)
+- [func imageFlippedForRightToLeftLayoutDirection() -> UIImage](./imageflippedforrighttoleftlayoutdirection%28%29.md)
   Returns a new version of the current image that flips horizontally when it’s in a right-to-left layout.
-- [func withHorizontallyFlippedOrientation() -> UIImage](uiimage/withhorizontallyflippedorientation.md)
+- [func withHorizontallyFlippedOrientation() -> UIImage](./withhorizontallyflippedorientation%28%29.md)
   Returns a new version of the image that’s a mirror of the original image.
-- [func withAlignmentRectInsets(UIEdgeInsets) -> UIImage](uiimage/withalignmentrectinsets(_:).md)
+- [func withAlignmentRectInsets(UIEdgeInsets) -> UIImage](./withalignmentrectinsets%28_%29.md)
   Returns a new version of the image that uses the specified alignment insets.
-- [func resizableImage(withCapInsets: UIEdgeInsets) -> UIImage](uiimage/resizableimage(withcapinsets:).md)
+- [func resizableImage(withCapInsets: UIEdgeInsets) -> UIImage](./resizableimage%28withcapinsets%29.md)
   Returns a new version of the image with the specified cap insets.
-- [func resizableImage(withCapInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode) -> UIImage](uiimage/resizableimage(withcapinsets:resizingmode:).md)
+- [func resizableImage(withCapInsets: UIEdgeInsets, resizingMode: UIImage.ResizingMode) -> UIImage](./resizableimage%28withcapinsets,resizingmode%29.md)
   Returns a new version of the image with the specified cap insets and options.
-- [func imageWithoutBaseline() -> UIImage](uiimage/imagewithoutbaseline.md)
+- [func imageWithoutBaseline() -> UIImage](./imagewithoutbaseline%28%29.md)
   Creates a copy of the current image object without any baseline information.
-- [func withBaselineOffset(fromBottom: CGFloat) -> UIImage](uiimage/withbaselineoffset(frombottom:).md)
+- [func withBaselineOffset(fromBottom: CGFloat) -> UIImage](./withbaselineoffset%28frombottom%29.md)
   Creates a new image with a baseline at the specified offset from the bottom of the image.
-- [UIImage.Configuration](uiimage/configuration-swift.class.md)
+- [UIImage.Configuration](./configuration-swift.class.md)
   A configuration object that contains the traits that the system uses when selecting the current image variant.
-- [UIImage.SymbolConfiguration](uiimage/symbolconfiguration-swift.class.md)
+- [UIImage.SymbolConfiguration](./symbolconfiguration-swift.class.md)
   An object that contains the specific font, size, style, and weight attributes to apply to a symbol image.
 
 

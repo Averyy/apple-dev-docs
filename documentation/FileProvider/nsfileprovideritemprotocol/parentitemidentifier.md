@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The persistent identifier of the item’s parent folder.
@@ -19,15 +20,20 @@ The persistent identifier of the item’s parent folder.
 var parentItemIdentifier: NSFileProviderItemIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSFileProviderItemIdentifier parentItemIdentifier;
+```
+
 ## Mentions
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
+- [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
 
 ## See Also
 
-- [var isTrashed: Bool](nsfileprovideritemprotocol/istrashed.md)
+### Specifying Content Location
+- [var isTrashed: Bool](./istrashed.md)
   A Boolean value that indicates whether an item is in the trash.
-- [var symlinkTargetPath: String?](nsfileprovideritemprotocol/symlinktargetpath.md)
+- [var symlinkTargetPath: String?](./symlinktargetpath.md)
   The target of the symlink.
 
 

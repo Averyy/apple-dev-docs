@@ -1,7 +1,8 @@
 # currentItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current element of the search.
 
@@ -18,11 +19,16 @@ The current element of the search.
 var currentItem: UIAccessibilityCustomRotorItemResult { get set }
 ```
 
+```objc
+@property (nonatomic, retain) UIAccessibilityCustomRotorItemResult * currentItem;
+```
+
 ## See Also
 
-- [var searchDirection: UIAccessibilityCustomRotor.Direction](uiaccessibilitycustomrotorsearchpredicate/searchdirection.md)
+### Configuring search parameters
+- [var searchDirection: UIAccessibilityCustomRotor.Direction](./searchdirection.md)
   The direction in which to search.
-- [UIAccessibilityCustomRotor.Direction](uiaccessibilitycustomrotor/direction.md)
+- [UIAccessibilityCustomRotor.Direction](../uiaccessibilitycustomrotor/direction.md)
   Constants that indicate the search direction.
 
 

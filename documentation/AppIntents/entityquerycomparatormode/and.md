@@ -1,7 +1,8 @@
 # EntityQueryComparatorMode.and
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ case and
 
 ## See Also
 
-- [EntityQueryComparatorMode.or](entityquerycomparatormode/or.md)
+### Comparator modes
+- [EntityQueryComparatorMode.or](./or.md)
 
 
 ---

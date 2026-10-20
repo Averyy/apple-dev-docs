@@ -1,7 +1,8 @@
 # neutralValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value this slider will be filled from. This slider will be filled from its `neutralValue` to its current value. If `neutralValue` has not been explicitly set before, access to `neutralValue` will return `minValue`.
 
@@ -12,6 +13,10 @@ The value this slider will be filled from. This slider will be filled from its `
 
 ```swift
 var neutralValue: Double { get set }
+```
+
+```objc
+@property double neutralValue;
 ```
 
 

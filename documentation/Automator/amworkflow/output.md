@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output data that is provided by the last action in the workflow.
 
@@ -15,13 +16,18 @@ The output data that is provided by the last action in the workflow.
 var output: Any? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) id output;
+```
+
 #### Return Value
 
 The output for the for last action in the workflow.
 
 ## See Also
 
-- [var input: Any?](amworkflow/input.md)
+### Working with the Workflow’s Input and Output
+- [var input: Any?](./input.md)
   The input data that is passed to the first action in the workflow.
 
 

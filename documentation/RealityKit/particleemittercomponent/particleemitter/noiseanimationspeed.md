@@ -1,7 +1,8 @@
 # noiseAnimationSpeed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines how fast the noise field changes over time. Defaults to 0.
 

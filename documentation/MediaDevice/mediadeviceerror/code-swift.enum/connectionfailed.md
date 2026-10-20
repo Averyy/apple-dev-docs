@@ -1,7 +1,8 @@
 # MediaDeviceError.Code.connectionFailed
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Connection to the device failed.
 

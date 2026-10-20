@@ -1,7 +1,8 @@
 # OpenSettingsAction
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that presents the settings scene for an app.
 
@@ -17,7 +18,7 @@ An action that presents the settings scene for an app.
 
 #### Overview
 
-Use the [`openSettings`](environmentvalues/opensettings.md) environment value to get the instance of this structure for a given [`Environment`](environment.md). Then call the instance to open a window. You call the instance directly because it defines a [`callAsFunction()`](opensettingsaction/callasfunction().md) method that Swift calls when you call the instance.
+Use the [`openSettings`](./environmentvalues/opensettings.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to open a window. You call the instance directly because it defines a [`callAsFunction()`](./opensettingsaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 
 For example, you can define a button that opens the settings window to a particular tab:
 
@@ -71,22 +72,23 @@ enum SettingsTab: Int {
 ## Topics
 
 ### Instance Methods
-- [func callAsFunction()](opensettingsaction/callasfunction.md)
-  Opens the window associated to the [`Settings`](settings.md) scene defined by this app, if one exists.
+- [func callAsFunction()](./opensettingsaction/callasfunction%28%29.md)
+  Opens the window associated to the [`Settings`](./settings.md) scene defined by this app, if one exists.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Settings](settings.md)
+### Managing a settings window
+- [struct Settings](./settings.md)
   A scene that presents an interface for viewing and modifying an app’s settings.
-- [struct SettingsLink](settingslink.md)
+- [struct SettingsLink](./settingslink.md)
   A view that opens the Settings scene defined by an app.
-- [var openSettings: OpenSettingsAction](environmentvalues/opensettings.md)
+- [var openSettings: OpenSettingsAction](./environmentvalues/opensettings.md)
   A Settings presentation action stored in a view’s environment.
 
 

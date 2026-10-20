@@ -1,17 +1,22 @@
 # defaultFontSize
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default font size of the web view.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var defaultFontSize: Int32 { get set }
+```
+
+```objc
+@property (nonatomic) int defaultFontSize;
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ The font size specified by `size` should always be greater than zero.
 
 ## See Also
 
-- [var defaultFixedFontSize: Int32](webpreferences/defaultfixedfontsize.md)
+### Getting and Setting Font Sizes
+- [var defaultFixedFontSize: Int32](./defaultfixedfontsize.md)
   The default fixed font size of the web view.
-- [var minimumFontSize: Int32](webpreferences/minimumfontsize.md)
+- [var minimumFontSize: Int32](./minimumfontsize.md)
   The minimum font size of the web view.
-- [var minimumLogicalFontSize: Int32](webpreferences/minimumlogicalfontsize.md)
+- [var minimumLogicalFontSize: Int32](./minimumlogicalfontsize.md)
   The minimum logical font size of the web view.
 
 

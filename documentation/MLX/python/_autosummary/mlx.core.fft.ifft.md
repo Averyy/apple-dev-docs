@@ -6,39 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 # mlx.core.fft.ifft
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.fft.ifft.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.fft.ifft
-
- Table of contents 
-
-## Contents
-
-# mlx.core.fft.ifft
-
-**ifft(*a: array*, *n: int | None = None*, *axis: int = -1*, *norm: str = 'backward'*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**ifft(*a: array*, *n: int | None = None*, *axis: int = -1*, *norm: str = 'backward'*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : One dimensional inverse discrete Fourier Transform.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – The input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – The input array.
 **n** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Size of the transformed axis. The
 corresponding axis in the input is truncated or padded with
 zeros to match `n`. The default value is `a.shape[axis]`.
@@ -51,6 +24,4 @@ Returns:
 The inverse DFT of the input along the given axis.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

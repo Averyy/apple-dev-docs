@@ -1,7 +1,8 @@
 # axes(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the axes that the arrangement supports to the axes you provide.
 

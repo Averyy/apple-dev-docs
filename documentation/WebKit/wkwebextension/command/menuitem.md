@@ -1,7 +1,8 @@
 # menuItem
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A menu item representation of the web extension command for use in menus.
 
@@ -14,9 +15,30 @@ A menu item representation of the web extension command for use in menus.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+@NSCopying
+var menuItem: UIMenuElement { get }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 var menuItem: NSMenuItem { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, copy, readonly) UIMenuElement * menuItem;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSMenuItem * menuItem;
 ```
 
 #### Discussion

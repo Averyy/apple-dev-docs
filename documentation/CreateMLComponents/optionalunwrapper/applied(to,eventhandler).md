@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unwraps an optional element or throws if the value is `nil`.
 
@@ -26,7 +27,7 @@ The unwrapped value.
 
 #### Discussion
 
-> **Note**: `MissingValueError` if the input is `nil`.
+> **Throws**: `MissingValueError` if the input is `nil`.
 
 ## Parameters
 

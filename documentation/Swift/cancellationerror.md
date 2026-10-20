@@ -1,7 +1,8 @@
 # CancellationError
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that indicates a task was canceled.
 
@@ -27,28 +28,29 @@ This error is also thrown automatically by `Task.checkCancellation()`, if the cu
 ## Topics
 
 ### Initializers
-- [init()](cancellationerror/init.md)
+- [init()](./cancellationerror/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Error](error.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Error](./error.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [func cancel()](task/cancel.md)
+### Canceling Tasks
+- [func cancel()](./task/cancel%28%29.md)
   Cancels this task.
-- [var isCancelled: Bool](task/iscancelled-swift.property.md)
+- [var isCancelled: Bool](./task/iscancelled-swift.property.md)
   A Boolean value that indicates whether the task should stop executing.
-- [static var isCancelled: Bool](task/iscancelled-swift.type.property.md)
+- [static var isCancelled: Bool](./task/iscancelled-swift.type.property.md)
   A Boolean value that indicates whether the task should stop executing.
-- [static func checkCancellation() throws](task/checkcancellation.md)
+- [static func checkCancellation() throws](./task/checkcancellation%28%29.md)
   Throws an error if the task was canceled.
-- [func withTaskCancellationHandler<Return, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Return, onCancel: sending () -> Void) async throws(Failure) -> Return](withtaskcancellationhandler(operation:oncancel:).md)
+- [func withTaskCancellationHandler<Return, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Return, onCancel: sending () -> Void) async throws(Failure) -> Return](./withtaskcancellationhandler%28operation,oncancel%29.md)
   Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
-- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](withtaskcancellationhandler(operation:oncancel:isolation:).md)
+- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](./withtaskcancellationhandler%28operation,oncancel,isolation%29.md)
   Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 
 

@@ -1,7 +1,8 @@
 # errSecACLAddFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An ACL add operation failed.
 
@@ -18,6 +19,10 @@ An ACL add operation failed.
 
 ```swift
 var errSecACLAddFailed: OSStatus { get }
+```
+
+```c
+errSecACLAddFailed
 ```
 
 

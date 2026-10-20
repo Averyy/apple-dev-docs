@@ -1,7 +1,8 @@
 # GKPlayerAuthenticationDidChangeNotificationName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts after GameKit authenticates the local player.
 
@@ -26,7 +27,8 @@ The object property for this notification is a `GKLocalPlayer` object. Passing `
 
 ## See Also
 
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
+### GameKit
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](./gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 
 

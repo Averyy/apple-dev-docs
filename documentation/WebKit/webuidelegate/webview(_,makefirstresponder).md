@@ -1,17 +1,22 @@
 # webView(_:makeFirstResponder:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the first responder of a web view’s window to the specified view.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, makeFirstResponder responder: NSResponder!)
+```
+
+```objc
+- (void) webView:(WebView *) sender makeFirstResponder:(NSResponder *) responder;
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ You can ignore this message if `sender` is not yet attached to a window.
 
 ## See Also
 
-- [func webViewFirstResponder(WebView!) -> NSResponder!](webuidelegate/webviewfirstresponder(_:).md)
+### Working with the Responder Chain
+- [func webViewFirstResponder(WebView!) -> NSResponder!](./webviewfirstresponder%28_%29.md)
   Returns the first responder of the web view’s window.
 
 

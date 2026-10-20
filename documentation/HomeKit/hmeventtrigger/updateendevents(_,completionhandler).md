@@ -1,7 +1,8 @@
 # updateEndEvents(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the set of end events associated with the event trigger.
 
@@ -14,17 +15,30 @@ Updates the set of end events associated with the event trigger.
 ## Declaration
 
 ```swift
+func updateEndEvents(_ endEvents: [HMEvent], completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateEndEvents(_ endEvents: [HMEvent]) async throws
+```
+
+```objc
+- (void) updateEndEvents:(NSArray<HMEvent *> *) endEvents completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `endEvents`: An array of events that replaces the end events on the trigger.
-- `completion`: A block that executes after processing the request. The block takes the following parameter: - **error**: If the request was successful, the value of `error` is `nil`; otherwise, the value provides more information about the request status.
+- `completion`: A block that executes after processing the request.
+
+  The block takes the following parameter:
+
+  - **error**: If the request was successful, the value of `error` is `nil`; otherwise, the value provides more information about the request status.
 
 ## See Also
 
-- [var endEvents: [HMEvent]](hmeventtrigger/endevents.md)
+### Restoring the previous scene after an event
+- [var endEvents: [HMEvent]](./endevents.md)
   The events associated with the end of scene represented by this trigger.
 
 

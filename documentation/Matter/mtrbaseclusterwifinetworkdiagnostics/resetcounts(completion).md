@@ -1,7 +1,8 @@
 # resetCounts(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func resetCounts(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func resetCounts() async throws
+```
+
+```objc
+- (void) resetCountsWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

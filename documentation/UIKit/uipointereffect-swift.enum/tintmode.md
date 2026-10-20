@@ -1,7 +1,8 @@
 # UIPointerEffect.TintMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An effect that defines how to apply a tint to a view during a pointer interaction.
 
@@ -9,7 +10,7 @@ An effect that defines how to apply a tint to a view during a pointer interactio
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,20 +21,20 @@ enum TintMode
 ## Topics
 
 ### Tint Modes
-- [UIPointerEffect.TintMode.none](uipointereffect-swift.enum/tintmode/none.md)
+- [UIPointerEffect.TintMode.none](./tintmode/none.md)
   The view has no tint applied.
-- [UIPointerEffect.TintMode.overlay](uipointereffect-swift.enum/tintmode/overlay.md)
+- [UIPointerEffect.TintMode.overlay](./tintmode/overlay.md)
   The view has a tint overlay.
-- [UIPointerEffect.TintMode.underlay](uipointereffect-swift.enum/tintmode/underlay.md)
+- [UIPointerEffect.TintMode.underlay](./tintmode/underlay.md)
   The view has a tint underlay.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

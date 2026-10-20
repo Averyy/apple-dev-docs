@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The numeric value for this level that metric aggregation references.

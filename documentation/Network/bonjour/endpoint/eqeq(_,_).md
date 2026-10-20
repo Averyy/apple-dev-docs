@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Network  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Compare two endpoints for equality.
 

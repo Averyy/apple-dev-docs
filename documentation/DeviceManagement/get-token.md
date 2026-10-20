@@ -1,7 +1,8 @@
 # Get Token
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Gets a token from the server.
 
@@ -20,22 +21,22 @@ This request allows devices to fetch security-related tokens from the server and
 
 > **Note**:  The `GetBootstrapToken` request is a separate request specifically for the bootstrap token.
 
-##### Support Access Management for Managed Apple Accounts
+##### Support access management for Managed Apple Accounts
 
 For the service type `com.apple.maid`, the Apple Identity Service requests this token when a Managed Apple Account is signing in, and then uses it to verify that the Managed Apple Account belongs to the same organization as the MDM server that enrolled the device. The token is a JSON Web Token (JWT) per RFC 7519 with the following claims:
 
-- `iss`: A `String`, per RFC 7519 section 4.1.1, that the server sets to the system-generated server identifier (`server_uuid`) that [`AccountDetail`](accountdetail.md) returns.
+- `iss`: A `String`, per RFC 7519 section 4.1.1, that the server sets to the system-generated server identifier (`server_uuid`) that [`AccountDetail`](./accountdetail.md) returns.
 - `iat`: A `NumericDate`, per RFC 7519 section 4.1.6, that the server sets to the timestamp of the token generation. The Apple Identity Service uses this value to limit the time that the token is valid.
 - `jti`: A `String`, per RFC 7519 section 4.1.7, that the server sets to a unique identifier (a random UUID) for the JWT. The Apple Identity Service uses this value to ensure that it only uses the token once.
 - `service_type`: A `String` that the server sets to the value of the `TokenServiceType` key in the `CheckIn` request, which needs to be `com.apple.maid`.
 
 Sign the JWT using the server’s private key that corresponds to the RFC 3280 public key certificate that’s registered with Apple School Manager or Apple Business. The Apple Identity Service requires that the signing algorithm is “RS256” as defined in RFC 7518 section 3.1.
 
-##### Support Apple Watch Pairing
+##### Support Apple Watch pairing
 
 For the service type `com.apple.watch.pairing`, the MDM server requests this token to enroll an Apple Watch, with the request coming from the phone that’s paired to the watch. The format of the token is implementation-defined, but the phone and watch MDM servers need to use the same format. The purpose of this token is to confirm the pairing relationship of the watch to the phone, and to ensure that the phone is already enrolled in an MDM server that belongs to the same organization as the watch MDM server. Ensure that the token is cryptographically protected against tampering, spoofing, and replay attacks.
 
-##### Check in Availability
+##### Check-in availability
 
 |  |  |
 | --- | --- |
@@ -47,9 +48,9 @@ For the service type `com.apple.watch.pairing`, the MDM server requests this tok
 ## Topics
 
 ### Requests and responses
-- [object GetTokenRequest](gettokenrequest.md)
+- [object GetTokenRequest](./gettokenrequest.md)
   The get token request details.
-- [object GetTokenResponse](gettokenresponse.md)
+- [object GetTokenResponse](./gettokenresponse.md)
   The get token response details.
 
 ## Endpoint
@@ -58,23 +59,31 @@ For the service type `com.apple.watch.pairing`, the MDM server requests this tok
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm-checkin`  
+**Type**: `GetTokenRequest`
+
 The request object the system sends for the `GetToken` request.
+
+## Responses
+
+- `200` OK (`GetTokenResponse`, `application/xml`): The response object the server returns for the `GetToken` request.
 
 ## See Also
 
-- [Authenticate](authenticate.md)
+### Commands
+- [Authenticate](./authenticate.md)
   Authenticates a user during MDM payload installation.
-- [User Authenticate](user-authenticate.md)
+- [User Authenticate](./user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
-- [Check Out](check-out.md)
+- [Check Out](./check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
-- [Token Update](token-update.md)
+- [Token Update](./token-update.md)
   Updates the token for a device on the server.
-- [Get Bootstrap Token](get-bootstrap-token.md)
+- [Get Bootstrap Token](./get-bootstrap-token.md)
   Gets the bootstrap token from the server.
-- [Set Bootstrap Token](set-bootstrap-token.md)
+- [Set Bootstrap Token](./set-bootstrap-token.md)
   Sends the bootstrap token to the server.
-- [Return To Service](return-to-service.md)
+- [Return To Service](./return-to-service.md)
   Gets the return-to-service configuration from the server.
 
 

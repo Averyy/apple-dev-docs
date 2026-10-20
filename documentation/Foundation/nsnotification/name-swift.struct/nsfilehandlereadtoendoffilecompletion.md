@@ -1,7 +1,8 @@
 # NSFileHandleReadToEndOfFileCompletion
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the file handle reads all data in the file or, in a communications channel, until the other process signals the end of data.
 
@@ -20,9 +21,13 @@ Posted when the file handle reads all data in the file or, in a communications c
 static let NSFileHandleReadToEndOfFileCompletion: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSFileHandleReadToEndOfFileCompletionNotification;
+```
+
 #### Discussion
 
-It makes the data available to observers by putting it in the `userInfo` dictionary. To cause the posting of this notification, you must send either [`readToEndOfFileInBackgroundAndNotify()`](filehandle/readtoendoffileinbackgroundandnotify().md) or [`readToEndOfFileInBackgroundAndNotify(forModes:)`](filehandle/readtoendoffileinbackgroundandnotify(formodes:).md) to an appropriate `NSFileHandle` object.
+It makes the data available to observers by putting it in the `userInfo` dictionary. To cause the posting of this notification, you must send either [`readToEndOfFileInBackgroundAndNotify()`](../../filehandle/readtoendoffileinbackgroundandnotify%28%29.md) or [`readToEndOfFileInBackgroundAndNotify(forModes:)`](../../filehandle/readtoendoffileinbackgroundandnotify%28formodes%29.md) to an appropriate `NSFileHandle` object.
 
 The notification object is the `NSFileHandle` object that sent the notification. The `userInfo` dictionary contains the following information:
 
@@ -33,11 +38,12 @@ The notification object is the `NSFileHandle` object that sent the notification.
 
 ## See Also
 
-- [static let NSFileHandleConnectionAccepted: NSNotification.Name](nsnotification/name-swift.struct/nsfilehandleconnectionaccepted.md)
+### Working with notifications
+- [static let NSFileHandleConnectionAccepted: NSNotification.Name](./nsfilehandleconnectionaccepted.md)
   Posted when a file handle object establishes a socket connection between two processes, creates a file handle object for one end of the connection, and makes this object available to observers.
-- [static let NSFileHandleDataAvailable: NSNotification.Name](nsnotification/name-swift.struct/nsfilehandledataavailable.md)
+- [static let NSFileHandleDataAvailable: NSNotification.Name](./nsfilehandledataavailable.md)
   Posted when the file handle determines that data is currently available for reading in a file or at a communications channel.
-- [class let readCompletionNotification: NSNotification.Name](filehandle/readcompletionnotification.md)
+- [class let readCompletionNotification: NSNotification.Name](../../filehandle/readcompletionnotification.md)
   Posted when the file handle reads the data currently available in a file or at a communications channel.
 
 

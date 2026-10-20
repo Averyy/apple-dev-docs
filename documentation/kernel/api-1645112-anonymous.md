@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMirrorDefault](1645112-anonymous/kiomirrordefault.md)
-- [kIOMirrorForced](1645112-anonymous/kiomirrorforced.md)
+- [kIOMirrorDefault](./api-1645112-anonymous/kiomirrordefault.md)
+- [kIOMirrorForced](./api-1645112-anonymous/kiomirrorforced.md)
 
 
 ---

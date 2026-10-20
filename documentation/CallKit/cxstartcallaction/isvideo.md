@@ -1,7 +1,8 @@
 # isVideo
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the call is a video call.
 
@@ -18,11 +19,16 @@ A Boolean value that indicates whether the call is a video call.
 var isVideo: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isVideo) BOOL video;
+```
+
 ## See Also
 
-- [var contactIdentifier: String?](cxstartcallaction/contactidentifier.md)
+### Accessing Action Attributes
+- [var contactIdentifier: String?](./contactidentifier.md)
   The identifier for the call recipient.
-- [var handle: CXHandle](cxstartcallaction/handle.md)
+- [var handle: CXHandle](./handle.md)
   The handle of the call recipient.
 
 

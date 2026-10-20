@@ -1,7 +1,8 @@
 # UIViewController.Transition.ZoomOptions
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Options for a zoom transition.
 
@@ -18,41 +19,46 @@ Options for a zoom transition.
 class ZoomOptions
 ```
 
+```objc
+@interface UIZoomTransitionOptions : NSObject
+```
+
 ## Topics
 
 ### Setting options
-- [var alignmentRectProvider: ((UIViewController.Transition.ZoomOptions.AlignmentRectContext) -> CGRect?)?](uiviewcontroller/transition/zoomoptions/alignmentrectprovider.md)
+- [var alignmentRectProvider: ((UIViewController.Transition.ZoomOptions.AlignmentRectContext) -> CGRect?)?](./zoomoptions/alignmentrectprovider.md)
   A closure that returns the alignment rectangle for the starting and ending views.
-- [UIViewController.Transition.ZoomOptions.AlignmentRectContext](uiviewcontroller/transition/zoomoptions/alignmentrectcontext.md)
+- [UIViewController.Transition.ZoomOptions.AlignmentRectContext](./zoomoptions/alignmentrectcontext.md)
   An object that contains a zoom transition’s starting and ending views.
-- [var dimmingColor: UIColor?](uiviewcontroller/transition/zoomoptions/dimmingcolor.md)
+- [var dimmingColor: UIColor?](./zoomoptions/dimmingcolor.md)
   The dimming color.
-- [var dimmingVisualEffect: UIBlurEffect?](uiviewcontroller/transition/zoomoptions/dimmingvisualeffect.md)
+- [var dimmingVisualEffect: UIBlurEffect?](./zoomoptions/dimmingvisualeffect.md)
   The dimming visual effect.
 ### Accessing the animation state
-- [var interactiveDismissShouldBegin: ((UIViewController.Transition.ZoomOptions.InteractionContext) -> Bool)?](uiviewcontroller/transition/zoomoptions/interactivedismissshouldbegin.md)
+- [var interactiveDismissShouldBegin: ((UIViewController.Transition.ZoomOptions.InteractionContext) -> Bool)?](./zoomoptions/interactivedismissshouldbegin.md)
   A closure that determines whether an interactive dismissal can begin.
-- [UIViewController.Transition.ZoomOptions.InteractionContext](uiviewcontroller/transition/zoomoptions/interactioncontext.md)
+- [UIViewController.Transition.ZoomOptions.InteractionContext](./zoomoptions/interactioncontext.md)
   Data you can use to determine whether an interactive dismissal can begin.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [NSCopying](../../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [static func zoom(options: UIViewController.Transition.ZoomOptions?, sourceViewProvider: (UIViewController.Transition.ZoomSourceViewProviderContext) -> UIView?) -> Self](uiviewcontroller/transition/zoom(options:sourceviewprovider:).md)
+### Creating zoom transitions
+- [static func zoom(options: UIViewController.Transition.ZoomOptions?, sourceViewProvider: (UIViewController.Transition.ZoomSourceViewProviderContext) -> UIView?) -> Self](./zoom%28options,sourceviewprovider%29.md)
   Creates a zoom transition from the view that the source provider specifies.
-- [UIViewController.Transition.ZoomSourceViewProviderContext](uiviewcontroller/transition/zoomsourceviewprovidercontext.md)
+- [UIViewController.Transition.ZoomSourceViewProviderContext](./zoomsourceviewprovidercontext.md)
   A context object that contains references to the view controllers from a zoom transition.
 
 

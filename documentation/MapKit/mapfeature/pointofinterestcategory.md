@@ -1,7 +1,8 @@
 # pointOfInterestCategory
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point of interest category of the map feature.
 
@@ -11,7 +12,7 @@ The point of interest category of the map feature.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,17 +27,18 @@ If the feature doesn’t have a point of interest category, this value is `nil`.
 
 ## See Also
 
-- [var kind: MapFeature.FeatureKind](mapfeature/kind.md)
+### Accessing the feature’s properties
+- [var kind: MapFeature.FeatureKind](./kind.md)
   The kind of feature represented by the map feature.
-- [MapFeature.FeatureKind](mapfeature/featurekind.md)
+- [MapFeature.FeatureKind](./featurekind.md)
   The kind of feature represented by a map feature.
-- [var coordinate: CLLocationCoordinate2D](mapfeature/coordinate.md)
+- [var coordinate: CLLocationCoordinate2D](./coordinate.md)
   The coordinate of the map feature.
-- [var title: String?](mapfeature/title.md)
+- [var title: String?](./title.md)
   The title of the map feature.
-- [var backgroundColor: Color?](mapfeature/backgroundcolor.md)
+- [var backgroundColor: Color?](./backgroundcolor.md)
   The background color associated with the map feature.
-- [var image: Image?](mapfeature/image.md)
+- [var image: Image?](./image.md)
   An image associated with the map feature.
 
 

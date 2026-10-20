@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The result of the large binary object support check, resulting from a passkey registration response.
 
@@ -25,19 +26,20 @@ This type indicates whether the passkey provider that manages the passkey suppor
 ## Topics
 
 ### Accessing output properties
-- [var isSupported: Bool](asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/issupported.md)
+- [var isSupported: Bool](./asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/issupported.md)
   A Boolean value that indicates support for the large binary object extension.
 ### Using defined support values
-- [static var supported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/supported.md)
-- [static var unsupported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/unsupported.md)
+- [static var supported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](./asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/supported.md)
+- [static var unsupported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](./asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/unsupported.md)
 
 ## See Also
 
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](aspasskeyregistrationcredentialextensionoutput-swift.struct/largeblob.md)
+### Inspecting properties
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](./aspasskeyregistrationcredentialextensionoutput-swift.struct/largeblob.md)
   The output for a large binary object operation during passkey registration.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](aspasskeyregistrationcredentialextensionoutput-swift.struct/prf.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](./aspasskeyregistrationcredentialextensionoutput-swift.struct/prf.md)
   The outputs of the WebAuthn PRF extension in passkey registration requests.
-- [struct ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct.md)
+- [struct ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](./asauthorizationpublickeycredentialprfregistrationoutput-swift.struct.md)
   A type to represent outputs of the web authentication PRF extension, when requesting them during a registration.
 
 

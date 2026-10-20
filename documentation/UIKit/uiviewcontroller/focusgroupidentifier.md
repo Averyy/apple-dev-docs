@@ -1,7 +1,8 @@
 # focusGroupIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the focus group that the view controller belongs to.
 
@@ -15,6 +16,10 @@ The identifier of the focus group that the view controller belongs to.
 
 ```swift
 var focusGroupIdentifier: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * focusGroupIdentifier;
 ```
 
 

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses one of the array’s blit pass sample buffer attachment descriptor instances.
 
@@ -19,9 +20,13 @@ Accesses one of the array’s blit pass sample buffer attachment descriptor inst
 subscript(attachmentIndex: Int) -> MTLBlitPassSampleBufferAttachmentDescriptor! { get set }
 ```
 
+```objc
+- (MTLBlitPassSampleBufferAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
+```
+
 ## Parameters
 
-- `attachmentIndex`: An index of one of the array’s [`MTLBlitPassSampleBufferAttachmentDescriptor`](mtlblitpasssamplebufferattachmentdescriptor.md) instances.
+- `attachmentIndex`: An index of one of the array’s [`MTLBlitPassSampleBufferAttachmentDescriptor`](../mtlblitpasssamplebufferattachmentdescriptor.md) instances.
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSBCModePageFlexibleDisk_PIN_2_Mask](1645293-anonymous/ksbcmodepageflexibledisk_pin_2_mask.md)
-- [kSBCModePageFlexibleDisk_PIN_34_Mask](1645293-anonymous/ksbcmodepageflexibledisk_pin_34_mask.md)
+- [kSBCModePageFlexibleDisk_PIN_2_Mask](./api-1645293-anonymous/ksbcmodepageflexibledisk_pin_2_mask.md)
+- [kSBCModePageFlexibleDisk_PIN_34_Mask](./api-1645293-anonymous/ksbcmodepageflexibledisk_pin_34_mask.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # operatorType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The corresponding value is an `NSNumber` object representing a `NSPredicateOperatorType` constant.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static let operatorType: NSRuleEditor.PredicatePartKey
+```
+
+```c
+extern NSRuleEditorPredicatePartKey const NSRuleEditorPredicateOperatorType;
 ```
 
 #### Discussion
@@ -20,17 +25,18 @@ This value is required for a non-`nil` comparison predicate.
 
 ## See Also
 
-- [static let comparisonModifier: NSRuleEditor.PredicatePartKey](nsruleeditor/predicatepartkey/comparisonmodifier.md)
+### Predicate Part Keys
+- [static let comparisonModifier: NSRuleEditor.PredicatePartKey](./comparisonmodifier.md)
   The corresponding value is an `NSNumber` object representing a `NSComparisonPredicateModifier` constant the of the predicate.
-- [static let compoundType: NSRuleEditor.PredicatePartKey](nsruleeditor/predicatepartkey/compoundtype.md)
+- [static let compoundType: NSRuleEditor.PredicatePartKey](./compoundtype.md)
   The corresponding value is an `NSNumber` object representing a `NSCompoundPredicateType` constant.
-- [static let customSelector: NSRuleEditor.PredicatePartKey](nsruleeditor/predicatepartkey/customselector.md)
+- [static let customSelector: NSRuleEditor.PredicatePartKey](./customselector.md)
   The corresponding value is an `NSString` object representing a custom selector.
-- [static let leftExpression: NSRuleEditor.PredicatePartKey](nsruleeditor/predicatepartkey/leftexpression.md)
+- [static let leftExpression: NSRuleEditor.PredicatePartKey](./leftexpression.md)
   The corresponding value is an `NSExpression` object representing the left expression in the predicate.
-- [static let options: NSRuleEditor.PredicatePartKey](nsruleeditor/predicatepartkey/options.md)
+- [static let options: NSRuleEditor.PredicatePartKey](./options.md)
   The corresponding value is an `NSNumber` object representing an `NSComparisonPredicateOptions` bitfield.
-- [static let rightExpression: NSRuleEditor.PredicatePartKey](nsruleeditor/predicatepartkey/rightexpression.md)
+- [static let rightExpression: NSRuleEditor.PredicatePartKey](./rightexpression.md)
   The corresponding value is an `NSExpression` object representing the right expression in the predicate.
 
 

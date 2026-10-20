@@ -1,12 +1,15 @@
 # SecTransformSetAttributeAction(_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Requests a callback when an attribute is set.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,22 +17,30 @@ Requests a callback when an attribute is set.
 func SecTransformSetAttributeAction(_ ref: SecTransformImplementationRef, _ action: CFString, _ attribute: SecTransformStringOrAttribute?, _ newAction: @escaping SecTransformAttributeActionBlock) -> CFError?
 ```
 
+```c
+extern CFErrorRefSecTransformSetAttributeAction(SecTransformImplementationRef ref, CFStringRef action, SecTransformStringOrAttributeRef attribute, SecTransformAttributeActionBlock newAction);
+```
+
 #### Return Value
 
-An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the error’s memory when you are done with it.
+An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the error’s memory when you are done with it.
 
 #### Discussion
 
-The [`kSecTransformActionProcessData`](ksectransformactionprocessdata.md) action used with the [`SecTransformSetDataAction(_:_:_:)`](sectransformsetdataaction(_:_:_:).md) function is a special case of a [`SecTransformSetAttributeAction(_:_:_:_:)`](sectransformsetattributeaction(_:_:_:_:).md) action. If this is called on the input attribute then it will overwrite any [`kSecTransformActionProcessData`](ksectransformactionprocessdata.md) action.
+The [`kSecTransformActionProcessData`](./ksectransformactionprocessdata.md) action used with the [`SecTransformSetDataAction(_:_:_:)`](./sectransformsetdataaction%28_,_,_%29.md) function is a special case of a [`SecTransformSetAttributeAction(_:_:_:_:)`](./sectransformsetattributeaction%28_,_,_,_%29.md) action. If this is called on the input attribute then it will overwrite any [`kSecTransformActionProcessData`](./ksectransformactionprocessdata.md) action.
 
 You may call this function multiple times for either a named attribute or for all attributes when the attribute parameter is `NULL`. The last call takes precedence.
 
 ## Parameters
 
-- `ref`: A [`SecTransformImplementationRef`](sectransformimplementationref.md) that is bound to an instance of a custom transform.
-- `action`: The behavior to be set. Use [`kSecTransformActionAttributeNotification`](ksectransformactionattributenotification.md) to add a block that is called when an attribute is set. If the name is `NULL`, then the supplied block is called for all set attributes except for ones that have a specific block as a handler. Use [`kSecTransformActionAttributeValidation`](ksectransformactionattributevalidation.md) to add a block that is called to validate the input to an attribute.
+- `ref`: A [`SecTransformImplementationRef`](./sectransformimplementationref.md) that is bound to an instance of a custom transform.
+- `action`: The behavior to be set.
+
+  Use [`kSecTransformActionAttributeNotification`](./ksectransformactionattributenotification.md) to add a block that is called when an attribute is set. If the name is `NULL`, then the supplied block is called for all set attributes except for ones that have a specific block as a handler.
+
+  Use [`kSecTransformActionAttributeValidation`](./ksectransformactionattributevalidation.md) to add a block that is called to validate the input to an attribute.
 - `attribute`: The name of the attribute that will be handled. An attribute reference may also be given here. A `NULL` value indicates that the supplied action is for all attributes.
-- `newAction`: A [`SecTransformAttributeActionBlock`](sectransformattributeactionblock.md) which implements the behavior.
+- `newAction`: A [`SecTransformAttributeActionBlock`](./sectransformattributeactionblock.md) which implements the behavior.
 
 
 ---

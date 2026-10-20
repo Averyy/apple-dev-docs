@@ -1,7 +1,8 @@
 # init(onConnection:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the connection handler with a closure that accepts a Foundation XPC object.
 
@@ -21,11 +22,12 @@ Initializes the connection handler with a closure that accepts a Foundation XPC 
 
 #### Discussion
 
-Use this initializer if your app extension communicates with the host app using [`XPC`](https://developer.apple.com/documentation/foundation/xpc).
+Use this initializer if your app extension communicates with the host app using [Foundation XPC types](../../Foundation/xpc.md).
 
 ## See Also
 
-- [init(onSessionRequest: (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision)](connectionhandler/init(onsessionrequest:).md)
+### Initializing the connection handler
+- [init(onSessionRequest: (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision)](./init%28onsessionrequest%29.md)
   Initializes the connection handler with a closure that accepts an XPC session.
 
 

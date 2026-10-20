@@ -1,7 +1,8 @@
 # holes
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An index buffer identifying faces to be treated as holes in the mesh during surface subdivision.
 
@@ -19,6 +20,10 @@ An index buffer identifying faces to be treated as holes in the mesh during surf
 var holes: (any MDLMeshBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MDLMeshBuffer> holes;
+```
+
 #### Discussion
 
 This buffer contains integer values where each integer is the index of a face to be treated as a hole. For example, if there are two holes in a mesh, then this buffer has two entries.
@@ -27,7 +32,8 @@ Because the number of entries in this buffer is likely to be different than the 
 
 ## See Also
 
-- [var holeCount: Int](mdlsubmeshtopology/holecount.md)
+### Identifying Holes
+- [var holeCount: Int](./holecount.md)
   The number of entries in the holes buffer.
 
 

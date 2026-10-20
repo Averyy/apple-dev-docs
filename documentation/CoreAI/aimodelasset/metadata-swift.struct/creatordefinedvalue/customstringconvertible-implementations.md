@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Core AI
+**Framework**: Core AI  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](aimodelasset/metadata-swift.struct/creatordefinedvalue/description.md)
+- [var description: String](./description.md)
   A textual representation of the value.
 
 

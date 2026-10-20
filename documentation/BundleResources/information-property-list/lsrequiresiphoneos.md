@@ -1,7 +1,8 @@
 # LSRequiresIPhoneOS
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether the app must run in iOS.
 
@@ -9,20 +10,22 @@ A Boolean value indicating whether the app must run in iOS.
 - iOS 2.0+
 - iPadOS 2.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `LSRequiresIPhoneOS` (Application requires iPhone environment)
+- **Type**: boolean
 
 ## See Also
 
-- [LSMinimumSystemVersion](information-property-list/lsminimumsystemversion.md)
+### Operating system version
+- [LSMinimumSystemVersion](./lsminimumsystemversion.md)
   The minimum version of the operating system required for the app to run in macOS.
-- [LSMinimumSystemVersionByArchitecture](information-property-list/lsminimumsystemversionbyarchitecture.md)
+- [LSMinimumSystemVersionByArchitecture](./lsminimumsystemversionbyarchitecture.md)
   The minimum version of macOS required for the app to run on a set of architectures.
-- [MinimumOSVersion](information-property-list/minimumosversion.md)
+- [MinimumOSVersion](./minimumosversion.md)
   The minimum version of the operating system required for the app to run in iOS, iPadOS, tvOS, and watchOS.
-- [WKApplication](information-property-list/wkapplication.md)
-- [WKWatchKitApp](information-property-list/wkwatchkitapp.md)
+- [WKApplication](./wkapplication.md)
+- [WKWatchKitApp](./wkwatchkitapp.md)
   A Boolean value that indicates whether the bundle is a watchOS app.
 
 

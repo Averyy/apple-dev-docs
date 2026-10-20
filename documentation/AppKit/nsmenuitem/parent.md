@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item whose submenu contains the receiver.
 
@@ -14,11 +15,16 @@ The menu item whose submenu contains the receiver.
 unowned(unsafe) var parent: NSMenuItem? { get }
 ```
 
+```objc
+@property (assign, readonly, nullable) NSMenuItem * parentItem;
+```
+
 ## See Also
 
-- [var submenu: NSMenu?](nsmenuitem/submenu.md)
+### Managing submenus
+- [var submenu: NSMenu?](./submenu.md)
   The submenu of the menu item.
-- [var hasSubmenu: Bool](nsmenuitem/hassubmenu.md)
+- [var hasSubmenu: Bool](./hassubmenu.md)
   A Boolean value that indicates whether the menu item has a submenu.
 
 

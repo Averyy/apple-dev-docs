@@ -1,7 +1,8 @@
 # inputDeviceSet
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active set of `InputDevice`s on the entity.
 

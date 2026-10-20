@@ -1,7 +1,8 @@
 # wheel
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A date picker style that displays each component as columns in a scrollable wheel.
 
@@ -19,17 +20,20 @@ A date picker style that displays each component as columns in a scrollable whee
 @export(implementation) @preconcurrency static var wheel: WheelDatePickerStyle { get }
 ```
 
+Available when `Self` is `WheelDatePickerStyle`.
+
 ## See Also
 
-- [static var automatic: DefaultDatePickerStyle](datepickerstyle/automatic.md)
+### Getting built-in date picker styles
+- [static var automatic: DefaultDatePickerStyle](./automatic.md)
   The default style for date pickers.
-- [static var compact: CompactDatePickerStyle](datepickerstyle/compact.md)
+- [static var compact: CompactDatePickerStyle](./compact.md)
   A date picker style that displays the components in a compact, textual format.
-- [static var field: FieldDatePickerStyle](datepickerstyle/field.md)
+- [static var field: FieldDatePickerStyle](./field.md)
   A date picker style that displays the components in an editable field.
-- [static var graphical: GraphicalDatePickerStyle](datepickerstyle/graphical.md)
+- [static var graphical: GraphicalDatePickerStyle](./graphical.md)
   A date picker style that displays an interactive calendar or clock.
-- [static var stepperField: StepperFieldDatePickerStyle](datepickerstyle/stepperfield.md)
+- [static var stepperField: StepperFieldDatePickerStyle](./stepperfield.md)
   A system style that displays the components in an editable field, with adjoining stepper that can increment/decrement the selected component.
 
 

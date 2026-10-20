@@ -1,7 +1,8 @@
 # addressEntries
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of business’ address locations.
 
@@ -16,19 +17,20 @@ let addressEntries: [RCSService.Business.AddressEntry]
 
 ## See Also
 
-- [let communicationAddress: RCSService.Business.CommunicationAddress?](rcsservice/business/communicationaddress-swift.property.md)
+### Accessing business contact information
+- [let communicationAddress: RCSService.Business.CommunicationAddress?](./communicationaddress-swift.property.md)
   Communication details of business.
-- [RCSService.Business.CommunicationAddress](rcsservice/business/communicationaddress-swift.struct.md)
+- [RCSService.Business.CommunicationAddress](./communicationaddress-swift.struct.md)
   Structure containing a business’ communication details.
-- [RCSService.Business.AddressEntry](rcsservice/business/addressentry.md)
+- [RCSService.Business.AddressEntry](./addressentry.md)
   Structure containing address details provided by a business.
-- [let emailAddress: String?](rcsservice/business/emailaddress.md)
+- [let emailAddress: String?](./emailaddress.md)
   Service email address.
-- [let websiteURL: URL?](rcsservice/business/websiteurl.md)
+- [let websiteURL: URL?](./websiteurl.md)
   URL for business’ website.
-- [let verificationDetails: RCSService.Business.VerificationDetails?](rcsservice/business/verificationdetails-swift.property.md)
+- [let verificationDetails: RCSService.Business.VerificationDetails?](./verificationdetails-swift.property.md)
   Verification information about business.
-- [RCSService.Business.VerificationDetails](rcsservice/business/verificationdetails-swift.struct.md)
+- [RCSService.Business.VerificationDetails](./verificationdetails-swift.struct.md)
   Structure containing verification details of a business.
 
 

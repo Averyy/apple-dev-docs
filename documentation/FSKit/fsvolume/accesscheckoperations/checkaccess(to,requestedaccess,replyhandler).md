@@ -2,17 +2,26 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Checks whether the file system allows access to the given item.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+func checkAccess(to theItem: FSItem, requestedAccess access: FSVolume.AccessMask, replyHandler reply: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func checkAccess(to theItem: FSItem, requestedAccess access: FSVolume.AccessMask) async throws -> Bool
+```
+
+```objc
+- (void) checkAccessToItem:(FSItem *) theItem requestedAccess:(FSAccessMask) access replyHandler:(void (^)(BOOL shouldAllowAccess, NSError *error)) reply;
 ```
 
 ## Parameters
@@ -23,7 +32,8 @@ func checkAccess(to theItem: FSItem, requestedAccess access: FSVolume.AccessMask
 
 ## See Also
 
-- [FSVolume.AccessMask](fsvolume/accessmask.md)
+### Checking access
+- [FSVolume.AccessMask](../accessmask.md)
   A bitmask of access rights.
 
 

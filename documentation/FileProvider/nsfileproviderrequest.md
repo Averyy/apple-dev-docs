@@ -1,7 +1,8 @@
 # NSFileProviderRequest
 
 **Framework**: File Provider  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides information about the application requesting data from the File Provider extension.
 
@@ -18,39 +19,44 @@ An object that provides information about the application requesting data from t
 class NSFileProviderRequest
 ```
 
+```objc
+@interface NSFileProviderRequest : NSObject
+```
+
 ## Topics
 
 ### Accessing Application Information
-- [var domainVersion: NSFileProviderDomainVersion?](nsfileproviderrequest/domainversion.md)
+- [var domainVersion: NSFileProviderDomainVersion?](./nsfileproviderrequest/domainversion.md)
   The version of the domain for the request.
-- [var requestingExecutable: URL?](nsfileproviderrequest/requestingexecutable.md)
+- [var requestingExecutable: URL?](./nsfileproviderrequest/requestingexecutable.md)
   The URL of the requesting executable.
-- [var isFileViewerRequest: Bool](nsfileproviderrequest/isfileviewerrequest.md)
+- [var isFileViewerRequest: Bool](./nsfileproviderrequest/isfileviewerrequest.md)
   A Boolean value that indicates whether the request came from Finder or related system file browsers.
-- [var isSystemRequest: Bool](nsfileproviderrequest/issystemrequest.md)
+- [var isSystemRequest: Bool](./nsfileproviderrequest/issystemrequest.md)
   A Boolean value that indicates whether the request came from a system process.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct NSFileProviderItemFields](nsfileprovideritemfields.md)
+### Items and metadata
+- [struct NSFileProviderItemFields](./nsfileprovideritemfields.md)
   Fields that specify which of the item’s properties have changed.
-- [class NSFileProviderItemVersion](nsfileprovideritemversion.md)
+- [class NSFileProviderItemVersion](./nsfileprovideritemversion.md)
   The version of the item’s content and its metadata.
-- [protocol NSFileProviderItemDecorating](nsfileprovideritemdecorating.md)
+- [protocol NSFileProviderItemDecorating](./nsfileprovideritemdecorating.md)
   Support for decorating items.
-- [struct NSFileProviderItemDecorationIdentifier](nsfileprovideritemdecorationidentifier.md)
+- [struct NSFileProviderItemDecorationIdentifier](./nsfileprovideritemdecorationidentifier.md)
   A decoration identifier defined in the File Provider extension’s information property list.
 
 

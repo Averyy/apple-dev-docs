@@ -1,6 +1,8 @@
 # Capturing screen content in macOS
 
-**Framework**: ScreenCaptureKit
+**Framework**: ScreenCaptureKit  
+**Role**: Sample Code  
+**Download**: [CapturingScreenContentInMacOS.zip](https://docs-assets.developer.apple.com/published/9db8b3fae777/CapturingScreenContentInMacOS.zip)
 
 Stream desktop content like displays, apps, and windows by adopting screen capture in your app.
 
@@ -10,11 +12,11 @@ Stream desktop content like displays, apps, and windows by adopting screen captu
 
 #### Overview
 
-This sample shows how to add high-performance screen capture to your Mac app by using [`ScreenCaptureKit`](ScreenCaptureKit.md). The sample explores how to create content filters to capture the displays, apps, and windows you choose. It then shows how to configure your stream output, retrieve video frames and audio samples, and update a running stream.
+This sample shows how to add high-performance screen capture to your Mac app by using [ScreenCaptureKit](./ScreenCaptureKit.md). The sample explores how to create content filters to capture the displays, apps, and windows you choose. It then shows how to configure your stream output, retrieve video frames and audio samples, and update a running stream.
 
-> **Note**: This sample code project is associated with WWDC24 session 10088: [`Capture HDR content with ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10088/).
+> **Note**: This sample code project is associated with WWDC24 session 10088: [Capture HDR content with ScreenCaptureKit](https://developer.apple.com/wwdc24/10088/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run this sample app, you’ll need the following:
 
@@ -23,9 +25,9 @@ To run this sample app, you’ll need the following:
 
 The first time you run this sample, the system prompts you to grant the app Screen Recording permission. After you grant permission, you need to restart the app to enable capture.
 
-##### Create a Content Filter
+##### Create a content filter
 
-Displays, running apps, and windows are the shareable content on a device. The sample uses the [`SCShareableContent`](scshareablecontent.md) class to retrieve the items in the form of [`SCDisplay`](scdisplay.md), [`SCRunningApplication`](scrunningapplication.md), and [`SCWindow`](scwindow.md) objects respectively.
+Displays, running apps, and windows are the shareable content on a device. The sample uses the [`SCShareableContent`](./scshareablecontent.md) class to retrieve the items in the form of [`SCDisplay`](./scdisplay.md), [`SCRunningApplication`](./scrunningapplication.md), and [`SCWindow`](./scwindow.md) objects respectively.
 
 ```swift
 // Retrieve the available screen content to capture.
@@ -33,7 +35,7 @@ let availableContent = try await SCShareableContent.excludingDesktopWindows(fals
                                                                             onScreenWindowsOnly: true)
 ```
 
-Before the sample begins capture, it creates an [`SCContentFilter`](sccontentfilter.md) object to specify the content to capture. The sample provides two options that allow for capturing either a single window or an entire display. When the capture type is set to capture a window, the app creates a content filter that only includes that window.
+Before the sample begins capture, it creates an [`SCContentFilter`](./sccontentfilter.md) object to specify the content to capture. The sample provides two options that allow for capturing either a single window or an entire display. When the capture type is set to capture a window, the app creates a content filter that only includes that window.
 
 ```swift
 // Create a content filter that includes a single window.
@@ -57,9 +59,9 @@ filter = SCContentFilter(display: display,
                          exceptingWindows: [])
 ```
 
-##### Create a Stream Configuration
+##### Create a stream configuration
 
-An [`SCStreamConfiguration`](scstreamconfiguration.md) object provides properties to configure the stream’s output size, pixel format, audio capture settings, and more. The app’s configuration throttles frame updates to 60 fps, and configures the number of frames to keep in the queue at 5. Specifying more frames uses more memory, but may allow for processing frame data without stalling the display stream. The default value is 3 and shouldn’t exceed 8 frames.
+An [`SCStreamConfiguration`](./scstreamconfiguration.md) object provides properties to configure the stream’s output size, pixel format, audio capture settings, and more. The app’s configuration throttles frame updates to 60 fps, and configures the number of frames to keep in the queue at 5. Specifying more frames uses more memory, but may allow for processing frame data without stalling the display stream. The default value is 3 and shouldn’t exceed 8 frames.
 
 ```swift
 var streamConfig = SCStreamConfiguration()
@@ -93,9 +95,9 @@ streamConfig.minimumFrameInterval = CMTime(value: 1, timescale: 60)
 streamConfig.queueDepth = 5
 ```
 
-##### Start the Capture Session
+##### Start the capture session
 
-The sample uses the content filter and stream configuration to initialize a new instance of [`SCStream`](scstream.md). To retrieve audio and video sample data, the app adds stream outputs that capture media of the specified type. When the stream captures new sample buffers, it delivers them to its stream output object on the indicated dispatch queues.
+The sample uses the content filter and stream configuration to initialize a new instance of [`SCStream`](./scstream.md). To retrieve audio and video sample data, the app adds stream outputs that capture media of the specified type. When the stream captures new sample buffers, it delivers them to its stream output object on the indicated dispatch queues.
 
 ```swift
 stream = SCStream(filter: filter, configuration: configuration, delegate: streamOutput)
@@ -114,9 +116,9 @@ try await stream?.updateConfiguration(configuration)
 try await stream?.updateContentFilter(filter)
 ```
 
-##### Process the Output
+##### Process the output
 
-When a stream captures a new audio or video sample buffer, it calls the stream output’s [`stream(_:didOutputSampleBuffer:of:)`](scstreamoutput/stream(_:didoutputsamplebuffer:of:).md) method, passing it the captured data and an indicator of its type. The stream output evaluates and processes the sample buffer as shown below.
+When a stream captures a new audio or video sample buffer, it calls the stream output’s [`stream(_:didOutputSampleBuffer:of:)`](./scstreamoutput/stream%28_,didoutputsamplebuffer,of%29.md) method, passing it the captured data and an indicator of its type. The stream output evaluates and processes the sample buffer as shown below.
 
 ```swift
 func stream(_ stream: SCStream, didOutputSampleBuffer sampleBuffer: CMSampleBuffer, of outputType: SCStreamOutputType) {
@@ -134,7 +136,7 @@ func stream(_ stream: SCStream, didOutputSampleBuffer sampleBuffer: CMSampleBuff
 }
 ```
 
-##### Process a Video Sample Buffer
+##### Process a video sample buffer
 
 If the sample buffer contains video data, it retrieves the sample buffer attachments that describe the output video frame.
 
@@ -145,7 +147,7 @@ guard let attachmentsArray = CMSampleBufferGetSampleAttachmentsArray(sampleBuffe
       let attachments = attachmentsArray.first else { return nil }
 ```
 
-An [`SCStreamFrameInfo`](scstreamframeinfo.md) structure defines dictionary keys that the sample uses to retrieve metadata attached to a sample buffer. Metadata includes information about the frame’s display time, scale factor, status, and more. To determine whether a frame is available for processing, the sample inspects the status for [`SCFrameStatus.complete`](scframestatus/complete.md).
+An [`SCStreamFrameInfo`](./scstreamframeinfo.md) structure defines dictionary keys that the sample uses to retrieve metadata attached to a sample buffer. Metadata includes information about the frame’s display time, scale factor, status, and more. To determine whether a frame is available for processing, the sample inspects the status for [`SCFrameStatus.complete`](./scframestatus/complete.md).
 
 ```swift
 // Validate the status of the frame. If it isn't `.complete`, return nil.
@@ -154,7 +156,7 @@ guard let statusRawValue = attachments[SCStreamFrameInfo.status] as? Int,
       status == .complete else { return nil }
 ```
 
-The sample buffer wraps a [`CVPixelBuffer`](https://developer.apple.comhttps://developer.apple.com/documentation/corevideo/cvpixelbuffer) that’s backed by an [`IOSurface`](https://developer.apple.comhttps://developer.apple.com/documentation/iosurface). The sample casts the surface reference to an `IOSurface` that it later sets as the layer content of an [`NSView`](https://developer.apple.comhttps://developer.apple.com/documentation/appkit/nsview).
+The sample buffer wraps a [CVPixelBuffer](../CoreVideo/cvpixelbuffer.md) that’s backed by an [IOSurface](../IOSurface/IOSurface.md). The sample casts the surface reference to an `IOSurface` that it later sets as the layer content of an [NSView](../AppKit/nsview.md).
 
 ```swift
 // Get the pixel buffer that contains the image data.
@@ -178,9 +180,9 @@ let frame = CapturedFrame(surface: surface,
                           scaleFactor: scaleFactor)
 ```
 
-##### Process an Audio Sample Buffer
+##### Process an audio sample buffer
 
-If the sample buffer contains audio, it retrieves the data as an [`AudioBufferList`](https://developer.apple.comhttps://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) as shown below.
+If the sample buffer contains audio, it retrieves the data as an [AudioBufferList](../CoreAudioTypes/audiobufferlist.md) as shown below.
 
 ```swift
 private func handleAudio(for buffer: CMSampleBuffer) -> Void? {
@@ -195,15 +197,16 @@ private func handleAudio(for buffer: CMSampleBuffer) -> Void? {
 }
 ```
 
-The app retrieves the audio stream basic description that it uses to create an [`AVAudioFormat`](https://developer.apple.comhttps://developer.apple.com/documentation/avfaudio/avaudioformat). It then uses the format and the audio buffer list to create a new instance of [`AVAudioPCMBuffer`](https://developer.apple.comhttps://developer.apple.com/documentation/avfaudio/avaudiopcmbuffer). If you enable audio capture in the user interface, the sample uses the buffer to calculate average levels for the captured audio to display in a simple level meter.
+The app retrieves the audio stream basic description that it uses to create an [AVAudioFormat](../AVFAudio/avaudioformat.md). It then uses the format and the audio buffer list to create a new instance of [AVAudioPCMBuffer](../AVFAudio/avaudiopcmbuffer.md). If you enable audio capture in the user interface, the sample uses the buffer to calculate average levels for the captured audio to display in a simple level meter.
 
 ## See Also
 
-- [ScreenCaptureKit updates](../updates/screencapturekit.md)
+### Essentials
+- [ScreenCaptureKit updates](../Updates/screencapturekit.md)
   Learn about important changes to ScreenCaptureKit.
-- [Persistent Content Capture](../bundleresources/entitlements/com.apple.developer.persistent-content-capture.md)
+- [Persistent Content Capture](../BundleResources/entitlements/com.apple.developer.persistent-content-capture.md)
   A Boolean value that indicates whether a Virtual Network Computing (VNC) app needs persistent access to screen capture.
-- [Capturing screen content on iOS](capturing-screen-content-on-ios.md)
+- [Capturing screen content on iOS](./capturing-screen-content-on-ios.md)
   Record and share screen captures on iOS by presenting the system content-sharing picker.
 
 

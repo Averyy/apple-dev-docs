@@ -1,7 +1,8 @@
 # setBackIndicatorImage(_:transitionMaskImage:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the back button indicator image and its transition mask.
 
@@ -18,9 +19,13 @@ Sets the back button indicator image and its transition mask.
 func setBackIndicatorImage(_ backIndicatorImage: UIImage?, transitionMaskImage backIndicatorTransitionMaskImage: UIImage?)
 ```
 
+```objc
+- (void) setBackIndicatorImage:(UIImage *) backIndicatorImage transitionMaskImage:(UIImage *) backIndicatorTransitionMaskImage;
+```
+
 #### Discussion
 
-If you specify `nil` for either [`backIndicatorImage`](uinavigationbarappearance/backindicatorimage.md) or [`backIndicatorTransitionMaskImage`](uinavigationbarappearance/backindicatortransitionmaskimage.md), this method resets both images to their default values.
+If you specify `nil` for either [`backIndicatorImage`](./backindicatorimage.md) or [`backIndicatorTransitionMaskImage`](./backindicatortransitionmaskimage.md), this method resets both images to their default values.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ If you specify `nil` for either [`backIndicatorImage`](uinavigationbarappearance
 
 ## See Also
 
-- [var backButtonAppearance: UIBarButtonItemAppearance](uinavigationbarappearance/backbuttonappearance.md)
+### Configuring the Back button
+- [var backButtonAppearance: UIBarButtonItemAppearance](./backbuttonappearance.md)
   The appearance attributes for the back button.
-- [var backIndicatorImage: UIImage](uinavigationbarappearance/backindicatorimage.md)
+- [var backIndicatorImage: UIImage](./backindicatorimage.md)
   The image to display on the leading edge of the back button.
-- [var backIndicatorTransitionMaskImage: UIImage](uinavigationbarappearance/backindicatortransitionmaskimage.md)
+- [var backIndicatorTransitionMaskImage: UIImage](./backindicatortransitionmaskimage.md)
   The image for masking content flowing under the back indicator image during push and pop transitions.
 
 

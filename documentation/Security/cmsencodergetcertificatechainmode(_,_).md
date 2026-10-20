@@ -1,7 +1,8 @@
 # CMSEncoderGetCertificateChainMode(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains a constant that indicates which certificates are to be included in a signed CMS message.
 
@@ -14,18 +15,23 @@ Obtains a constant that indicates which certificates are to be included in a sig
 func CMSEncoderGetCertificateChainMode(_ cmsEncoder: CMSEncoder, _ chainModeOut: UnsafeMutablePointer<CMSCertificateChainMode>) -> OSStatus
 ```
 
+```c
+OSStatus CMSEncoderGetCertificateChainMode(CMSEncoderRef cmsEncoder, CMSCertificateChainMode *chainModeOut);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 
 - `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
-- `chainModeOut`: On return, a constant that indicates which certificate or certificates are to be included in the message. See [`CMSCertificateChainMode`](cmscertificatechainmode.md).
+- `chainModeOut`: On return, a constant that indicates which certificate or certificates are to be included in the message. See [`CMSCertificateChainMode`](./cmscertificatechainmode.md).
 
 ## See Also
 
-- [func CMSEncoderCreate(UnsafeMutablePointer<CMSEncoder?>) -> OSStatus](cmsencodercreate(_:).md)
+### Related Documentation
+- [func CMSEncoderCreate(UnsafeMutablePointer<CMSEncoder?>) -> OSStatus](./cmsencodercreate%28_%29.md)
   Creates a CMSEncoder reference.
 
 

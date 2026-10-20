@@ -1,7 +1,8 @@
 # userLogin
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The information used authenticate the user and log them in.
 

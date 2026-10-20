@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that identifies the shader function.
@@ -20,23 +21,28 @@ A string that identifies the shader function.
 var label: String? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSString * label;
+```
+
 #### Discussion
 
-Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtlfunction/device.md)
+### Identifying shader functions
+- [var device: any MTLDevice](./device.md)
   The device object that created the shader function.
-- [var functionType: MTLFunctionType](mtlfunction/functiontype.md)
+- [var functionType: MTLFunctionType](./functiontype.md)
   The shader function’s type.
-- [var name: String](mtlfunction/name.md)
+- [var name: String](./name.md)
   The function’s name.
-- [enum MTLFunctionType](mtlfunctiontype.md)
+- [enum MTLFunctionType](../mtlfunctiontype.md)
   The type of a top-level Metal Shading Language (MSL) function.
-- [var options: MTLFunctionOptions](mtlfunction/options.md)
+- [var options: MTLFunctionOptions](./options.md)
   The options that Metal used to compile this function.
-- [struct MTLFunctionOptions](mtlfunctionoptions.md)
+- [struct MTLFunctionOptions](../mtlfunctionoptions.md)
   Options that define how Metal compiles a GPU function.
 
 

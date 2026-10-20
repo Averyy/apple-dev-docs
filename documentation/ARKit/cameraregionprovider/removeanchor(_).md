@@ -1,7 +1,8 @@
 # removeAnchor(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a camera region anchor.
 
@@ -16,7 +17,7 @@ final func removeAnchor(_ anchor: CameraRegionAnchor) async throws
 
 #### Discussion
 
-> **Note**: `CameraRegionProvider.Error`
+> **Throws**: `CameraRegionProvider.Error`
 
 ## Parameters
 

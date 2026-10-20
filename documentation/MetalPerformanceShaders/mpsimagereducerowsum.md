@@ -1,7 +1,8 @@
 # MPSImageReduceRowSum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that returns the sum of all values for a row in an image.
 
@@ -19,43 +20,48 @@ A filter that returns the sum of all values for a row in an image.
 class MPSImageReduceRowSum
 ```
 
+```objc
+@interface MPSImageReduceRowSum : MPSImageReduceUnary
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsimagereducerowsum/init(device:).md)
+- [init(device: any MTLDevice)](./mpsimagereducerowsum/init%28device%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSImageReduceUnary](mpsimagereduceunary.md)
+- [MPSImageReduceUnary](./mpsimagereduceunary.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageReduceRowMax](mpsimagereducerowmax.md)
+### Image Reduction Filters
+- [class MPSImageReduceRowMax](./mpsimagereducerowmax.md)
   A filter that returns the maximum value for each row in an image.
-- [class MPSImageReduceRowMin](mpsimagereducerowmin.md)
+- [class MPSImageReduceRowMin](./mpsimagereducerowmin.md)
   A filter that returns the minimum value for each row in an image.
-- [class MPSImageReduceRowMean](mpsimagereducerowmean.md)
+- [class MPSImageReduceRowMean](./mpsimagereducerowmean.md)
   A filter that returns the mean value for each row in an image.
-- [class MPSImageReduceColumnMax](mpsimagereducecolumnmax.md)
+- [class MPSImageReduceColumnMax](./mpsimagereducecolumnmax.md)
   A filter that returns the maximum value for each column in an image.
-- [class MPSImageReduceColumnMin](mpsimagereducecolumnmin.md)
+- [class MPSImageReduceColumnMin](./mpsimagereducecolumnmin.md)
   A filter that returns the minimum value for each column in an image.
-- [class MPSImageReduceColumnSum](mpsimagereducecolumnsum.md)
+- [class MPSImageReduceColumnSum](./mpsimagereducecolumnsum.md)
   A filter that returns the sum of all values for a column in an image.
-- [class MPSImageReduceColumnMean](mpsimagereducecolumnmean.md)
+- [class MPSImageReduceColumnMean](./mpsimagereducecolumnmean.md)
   A filter that returns the mean value for each column in an image.
-- [class MPSImageReduceUnary](mpsimagereduceunary.md)
+- [class MPSImageReduceUnary](./mpsimagereduceunary.md)
   The base class for reduction filters that take a single source as input.
 
 

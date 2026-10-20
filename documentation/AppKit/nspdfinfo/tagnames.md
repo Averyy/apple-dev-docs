@@ -1,7 +1,8 @@
 # tagNames
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of tag names that should be applied to the PDF file after it’s created.
 
@@ -14,17 +15,22 @@ An array of tag names that should be applied to the PDF file after it’s create
 var tagNames: [String] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSString *> * tagNames;
+```
+
 ## See Also
 
-- [var url: URL?](nspdfinfo/url.md)
+### Specifying PDF Information
+- [var url: URL?](./url.md)
   The URL identifying the location at which the PDF file will be created.
-- [var isFileExtensionHidden: Bool](nspdfinfo/isfileextensionhidden.md)
+- [var isFileExtensionHidden: Bool](./isfileextensionhidden.md)
   A Boolean value that indicates whether the file extension should appear after the filename.
-- [var orientation: NSPrintInfo.PaperOrientation](nspdfinfo/orientation.md)
+- [var orientation: NSPrintInfo.PaperOrientation](./orientation.md)
   The paper orientation to use when exporting content as a PDF file.
-- [var paperSize: NSSize](nspdfinfo/papersize.md)
+- [var paperSize: NSSize](./papersize.md)
   The paper size to use when exporting content as a PDF file.
-- [var attributes: NSMutableDictionary](nspdfinfo/attributes.md)
+- [var attributes: NSMutableDictionary](./attributes.md)
   A dictionary of additional attributes that describe how to export content as a PDF file.
 
 

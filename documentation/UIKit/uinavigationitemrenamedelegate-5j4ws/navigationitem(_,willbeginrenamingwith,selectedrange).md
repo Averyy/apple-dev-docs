@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when the rename process starts.
@@ -10,7 +11,7 @@ Tells the delegate when the rename process starts.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -33,9 +34,15 @@ UIKit calls this method when the rename process begins. Implement this method to
 - `suggestedTitle`: The initial text to appear in the rename text field.
 - `selectedRange`: The selected range of the initial text in the rename text field.
 
+## Default Implementations
+
+### UINavigationItemRenameDelegate Implementations
+- [func navigationItem(UINavigationItem, willBeginRenamingWith: String, selectedRange: Range<String.Index>) -> (String, Range<String.Index>)](./navigationitem%28_,willbeginrenamingwith,selectedrange%29-396y6.md)
+
 ## See Also
 
-- [func navigationItem(UINavigationItem, didEndRenamingWith: String)](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md)
+### Handling the rename process
+- [func navigationItem(UINavigationItem, didEndRenamingWith: String)](./navigationitem%28_,didendrenamingwith%29.md)
   Tells the delegate when the rename process ends.
 
 

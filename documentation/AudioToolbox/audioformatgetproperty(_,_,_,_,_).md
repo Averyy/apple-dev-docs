@@ -1,7 +1,8 @@
 # AudioFormatGetProperty(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the value of an audio format property.
 
@@ -19,6 +20,10 @@ Gets the value of an audio format property.
 func AudioFormatGetProperty(_ inPropertyID: AudioFormatPropertyID, _ inSpecifierSize: UInt32, _ inSpecifier: UnsafeRawPointer?, _ ioPropertyDataSize: UnsafeMutablePointer<UInt32>?, _ outPropertyData: UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFormatGetProperty(AudioFormatPropertyID inPropertyID, UInt32 inSpecifierSize, const void *inSpecifier, UInt32 *ioPropertyDataSize, void *outPropertyData);
+```
+
 #### Return Value
 
 A result code. Returns `noErr` if successful.
@@ -27,11 +32,11 @@ A result code. Returns `noErr` if successful.
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 
-If you call this function to retrieve a value that is a Core Foundation object, then this function—despite the use of “Get” in its name—duplicates the object. You are responsible for releasing the object, as described in [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [`Memory Management Programming Guide for Core Foundation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
+If you call this function to retrieve a value that is a Core Foundation object, then this function—despite the use of “Get” in its name—duplicates the object. You are responsible for releasing the object, as described in [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
 
 ## Parameters
 
-- `inPropertyID`: An [`AudioFormatPropertyID`](audioformatpropertyid.md) constant. For a list of these constants, see [`Audio Format Property Identifiers`](1577853-audio-format-property-identifier.md).
+- `inPropertyID`: An [`AudioFormatPropertyID`](./audioformatpropertyid.md) constant. For a list of these constants, see [Audio Format Property Identifiers](./api-1577853-audio-format-property-identifier.md).
 - `inSpecifierSize`: The size of the specifier data.
 - `inSpecifier`: A buffer of data used as an input argument for querying some of the properties.
 - `ioPropertyDataSize`: On input, the size of the `outPropertyData` buffer. On output, the number of bytes written to the buffer.
@@ -39,7 +44,8 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 
 ## See Also
 
-- [func AudioFormatGetPropertyInfo(AudioFormatPropertyID, UInt32, UnsafeRawPointer?, UnsafeMutablePointer<UInt32>) -> OSStatus](audioformatgetpropertyinfo(_:_:_:_:).md)
+### Audio Format Services Functions
+- [func AudioFormatGetPropertyInfo(AudioFormatPropertyID, UInt32, UnsafeRawPointer?, UnsafeMutablePointer<UInt32>) -> OSStatus](./audioformatgetpropertyinfo%28_,_,_,_%29.md)
   Gets information about an audio format property.
 
 

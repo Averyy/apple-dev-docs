@@ -1,17 +1,22 @@
 # createContext()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the graphics context object used for drawing during the operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func createContext() -> NSGraphicsContext?
+```
+
+```objc
+- (NSGraphicsContext *) createContext;
 ```
 
 #### Return Value
@@ -24,9 +29,10 @@ Do not invoke this method directly—it is invoked before any output is generate
 
 ## See Also
 
-- [var context: NSGraphicsContext?](nsprintoperation/context.md)
+### Managing the Drawing Context
+- [var context: NSGraphicsContext?](./context.md)
   The graphics context object used for generating output.
-- [func destroyContext()](nsprintoperation/destroycontext.md)
+- [func destroyContext()](./destroycontext%28%29.md)
   Destroys the print operation’s graphics context.
 
 

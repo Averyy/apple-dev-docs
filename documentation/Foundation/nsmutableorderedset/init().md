@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated mutable ordered set.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated mutable ordered set.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A mutable ordered set.
@@ -30,7 +35,8 @@ This method is a designated initializer of `NSMutableOrderedSet`.
 
 ## See Also
 
-- [init(capacity: Int)](nsmutableorderedset/init(capacity:).md)
+### Creating a Mutable Ordered Set
+- [init(capacity: Int)](./init%28capacity%29.md)
   Returns an initialized mutable ordered set with a given initial capacity.
 
 

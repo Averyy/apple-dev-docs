@@ -1,7 +1,8 @@
 # isAudioZoomSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not audio zoom is supported.
 
@@ -16,6 +17,10 @@ Whether or not audio zoom is supported.
 
 ```swift
 var isAudioZoomSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isAudioZoomSupported) BOOL audioZoomSupported;
 ```
 
 #### Discussion

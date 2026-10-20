@@ -1,7 +1,8 @@
 # AppSchema.WhiteboardEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the whiteboard domain.
 
@@ -21,23 +22,24 @@ protocol WhiteboardEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var board: some AppSchemaEntity](appschema/whiteboardentity/board.md)
+- [var board: some AppSchemaEntity](./whiteboardentity/board.md)
   An entity schema for a board.
-- [var item: some AppSchemaEntity](appschema/whiteboardentity/item.md)
+- [var item: some AppSchemaEntity](./whiteboardentity/item.md)
   An entity schema for an item.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var board: some AppSchemaEntity](appschema/whiteboardentity/board.md)
+### Content and parameter types
+- [var board: some AppSchemaEntity](./whiteboardentity/board.md)
   An entity schema for a board.
-- [var item: some AppSchemaEntity](appschema/whiteboardentity/item.md)
+- [var item: some AppSchemaEntity](./whiteboardentity/item.md)
   An entity schema for an item.
 
 

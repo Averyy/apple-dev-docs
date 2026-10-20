@@ -1,7 +1,8 @@
 # makeTransformer()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a default-initialized transformer suitable for incremental fitting.
 
@@ -19,6 +20,8 @@ Creates a default-initialized transformer suitable for incremental fitting.
 ```swift
 func makeTransformer() -> LogisticRegressionClassifier<Scalar, Label>.Transformer
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
 
 
 ---

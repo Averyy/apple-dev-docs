@@ -1,7 +1,8 @@
 # BEExtensionProcess
 
 **Framework**: BrowserEngineKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A common protocol that creates XPC connections for an extension process.
 
@@ -16,29 +17,34 @@ A common protocol that creates XPC connections for an extension process.
 protocol BEExtensionProcess : NSObjectProtocol
 ```
 
+```objc
+@protocol BEExtensionProcess <NSObject>
+```
+
 #### Overview
 
-This protocol is common across extension processes for networking ([`BENetworkingProcess`](benetworkingprocess.md)), rendering ([`BERenderingProcess`](berenderingprocess.md)), and web content ([`BEWebContentProcess`](bewebcontentprocess.md)).
+This protocol is common across extension processes for networking ([`BENetworkingProcess`](./benetworkingprocess.md)), rendering ([`BERenderingProcess`](./berenderingprocess.md)), and web content ([`BEWebContentProcess`](./bewebcontentprocess.md)).
 
-Create an XPC connection for an extension process with the [`makeLibXPCConnectionError()`](beextensionprocess/makelibxpcconnectionerror().md) method. Stop an extension process with [`invalidate()`](beextensionprocess/invalidate().md).
+Create an XPC connection for an extension process with the [`makeLibXPCConnectionError()`](./beextensionprocess/makelibxpcconnectionerror%28%29.md) method. Stop an extension process with [`invalidate()`](./beextensionprocess/invalidate%28%29.md).
 
 ## Topics
 
-- [func invalidate()](beextensionprocess/invalidate.md)
+- [func invalidate()](./beextensionprocess/invalidate%28%29.md)
   Stops the extension process.
-- [func makeLibXPCConnectionError() throws -> xpc_connection_t](beextensionprocess/makelibxpcconnectionerror.md)
+- [func makeLibXPCConnectionError() throws -> xpc_connection_t](./beextensionprocess/makelibxpcconnectionerror%28%29.md)
   Creates a new libXPC connection to the extension process.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Managing the browser extension life cycle](managing-the-browser-extension-lifecycle.md)
+### Essentials
+- [Managing the browser extension life cycle](./managing-the-browser-extension-lifecycle.md)
   Coordinate helper processes to efficiently support your browser app.
-- [Using XPC to communicate with browser extensions](using-xpc-to-communicate-with-browser-extensions.md)
+- [Using XPC to communicate with browser extensions](./using-xpc-to-communicate-with-browser-extensions.md)
   Build interprocess communication between your host app and extensions.
 
 

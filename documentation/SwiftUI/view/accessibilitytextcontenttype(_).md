@@ -1,7 +1,8 @@
 # accessibilityTextContentType(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an accessibility text content type.
 
@@ -25,19 +26,20 @@ func accessibilityTextContentType(_ value: AccessibilityTextContentType) -> Modi
 
 Use this modifier to set the content type of this accessibility element. Assistive technologies can use this property to choose an appropriate way to output the text. For example, when encountering a source coding context, VoiceOver could choose to speak all punctuation.
 
-The default content type [`plain`](accessibilitytextcontenttype/plain.md).
+The default content type [`plain`](../accessibilitytextcontenttype/plain.md).
 
 ## Parameters
 
-- `value`: The accessibility content type from the available [`AccessibilityTextContentType`](accessibilitytextcontenttype.md) options.
+- `value`: The accessibility content type from the available [`AccessibilityTextContentType`](../accessibilitytextcontenttype.md) options.
 
 ## See Also
 
-- [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityheading(_:).md)
+### Describing content
+- [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityheading%28_%29.md)
   Sets the accessibility level of this heading.
-- [enum AccessibilityHeadingLevel](accessibilityheadinglevel.md)
+- [enum AccessibilityHeadingLevel](../accessibilityheadinglevel.md)
   The hierarchy of a heading in relation to other headings.
-- [struct AccessibilityTextContentType](accessibilitytextcontenttype.md)
+- [struct AccessibilityTextContentType](../accessibilitytextcontenttype.md)
   Textual context that assistive technologies can use to improve the presentation of spoken text.
 
 

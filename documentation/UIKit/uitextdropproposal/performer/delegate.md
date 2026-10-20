@@ -1,7 +1,8 @@
 # UITextDropProposal.Performer.delegate
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A performer type that indicates the delegate object is responsible for doing the drop operation.
 
@@ -17,13 +18,18 @@ A performer type that indicates the delegate object is responsible for doing the
 case delegate
 ```
 
+```c
+UITextDropPerformerDelegate
+```
+
 #### Discussion
 
-If this performer is used, the delegate must implement the [`textDroppableView(_:willPerformDrop:)`](uitextdropdelegate/textdroppableview(_:willperformdrop:).md) method. Otherwise, the text view handles the drop operation, which is the same behavior as specifying [`UITextDropProposal.Performer.view`](uitextdropproposal/performer/view.md) as the performer.
+If this performer is used, the delegate must implement the [`textDroppableView(_:willPerformDrop:)`](../../uitextdropdelegate/textdroppableview%28_,willperformdrop%29.md) method. Otherwise, the text view handles the drop operation, which is the same behavior as specifying [`UITextDropProposal.Performer.view`](./view.md) as the performer.
 
 ## See Also
 
-- [UITextDropProposal.Performer.view](uitextdropproposal/performer/view.md)
+### Performers
+- [UITextDropProposal.Performer.view](./view.md)
   A performer type that indicates that the text view is responsible for doing the drop operation.
 
 

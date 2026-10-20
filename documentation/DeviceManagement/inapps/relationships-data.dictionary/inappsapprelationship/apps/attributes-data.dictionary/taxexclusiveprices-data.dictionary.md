@@ -1,11 +1,12 @@
 # InApps.Relationships.InAppsAppRelationship.Apps.Attributes.TaxExclusivePrices
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.TaxExclusivePrices
 ```
 

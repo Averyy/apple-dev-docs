@@ -2,6 +2,7 @@
 
 **Framework**: HealthKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
@@ -11,7 +12,7 @@ Runs a one-shot query and asynchronously returns a snapshot of the current match
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,11 +23,11 @@ func result(for healthStore: HKHealthStore) async throws -> Self.Output
 
 ## Mentions
 
-- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
+- [Running Queries with Swift Concurrency](../running-queries-with-swift-concurrency.md)
 
 #### Discussion
 
-The adopting type’s [`Output`](hkasyncquery/output.md) associated type specifies the values that this method returns. For example, [`HKSampleQueryDescriptor`](hksamplequerydescriptor.md) returns an array of [`HKQuantitySample`](hkquantitysample.md) objects.
+The adopting type’s [`Output`](./output.md) associated type specifies the values that this method returns. For example, [`HKSampleQueryDescriptor`](../hksamplequerydescriptor.md) returns an array of [`HKQuantitySample`](../hkquantitysample.md) objects.
 
 ```swift
 let stepType = HKQuantityType(.stepCount)
@@ -45,7 +46,8 @@ let results = try await descriptor.result(for: store)
 
 ## See Also
 
-- [associatedtype Output](hkasyncquery/output.md)
+### Running Queries
+- [associatedtype Output](./output.md)
 
 
 ---

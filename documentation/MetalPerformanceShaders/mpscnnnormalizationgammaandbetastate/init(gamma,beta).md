@@ -1,7 +1,8 @@
 # init(gamma:beta:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init(gamma: any MTLBuffer, beta: any MTLBuffer)
+```
+
+```objc
+- (instancetype) initWithGamma:(id<MTLBuffer>) gamma beta:(id<MTLBuffer>) beta;
 ```
 
 

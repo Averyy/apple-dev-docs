@@ -1,7 +1,8 @@
 # kAXFloatingWindowSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A utility window.
 
@@ -12,6 +13,10 @@ A utility window.
 
 ```swift
 var kAXFloatingWindowSubrole: String { get }
+```
+
+```c
+#define kAXFloatingWindowSubrole
 ```
 
 

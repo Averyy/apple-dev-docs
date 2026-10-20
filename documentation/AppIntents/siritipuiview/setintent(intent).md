@@ -1,14 +1,15 @@
 # setIntent(intent:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an `AppIntent` for this view. This must be called before presenting the view.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

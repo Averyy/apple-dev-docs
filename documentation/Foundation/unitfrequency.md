@@ -1,7 +1,8 @@
 # UnitFrequency
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for frequency.
 
@@ -20,76 +21,81 @@ A unit of measure for frequency.
 class UnitFrequency
 ```
 
+```objc
+@interface NSUnitFrequency : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitFrequency`](unitfrequency.md) to represent specific quantities of frequency using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitFrequency`](./unitfrequency.md) to represent specific quantities of frequency using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Frequency
 
 Frequency is a quantity of occurrences for a repeating event over time. The SI unit for frequency is the hertz (Hz), which is a derived as one occurrence per second (`1 Hz = 1 / 1s`).
 
-The [`UnitFrequency`](unitfrequency.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`hertz`](unitfrequency/hertz.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients:
+The [`UnitFrequency`](./unitfrequency.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`hertz`](./unitfrequency/hertz.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients:
 
 | Name | Method | Symbol | Coefficient |
 | --- | --- | --- | --- |
-| Terahertz | [`terahertz`](unitfrequency/terahertz.md) | THz | `1e12` |
-| Gigahertz | [`gigahertz`](unitfrequency/gigahertz.md) | GHz | `1e9` |
-| Megahertz | [`megahertz`](unitfrequency/megahertz.md) | MHz | `1000000.0` |
-| Kilohertz | [`kilohertz`](unitfrequency/kilohertz.md) | kHz | `1000.0` |
-| Hertz | [`hertz`](unitfrequency/hertz.md) | Hz | `1` |
-| Millihertz | [`millihertz`](unitfrequency/millihertz.md) | mHz | `0.001` |
-| Microhertz | [`microhertz`](unitfrequency/microhertz.md) | µHz | `0.000001` |
-| Nanohertz | [`nanohertz`](unitfrequency/nanohertz.md) | nHz | `1e-9` |
+| Terahertz | [`terahertz`](./unitfrequency/terahertz.md) | THz | `1e12` |
+| Gigahertz | [`gigahertz`](./unitfrequency/gigahertz.md) | GHz | `1e9` |
+| Megahertz | [`megahertz`](./unitfrequency/megahertz.md) | MHz | `1000000.0` |
+| Kilohertz | [`kilohertz`](./unitfrequency/kilohertz.md) | kHz | `1000.0` |
+| Hertz | [`hertz`](./unitfrequency/hertz.md) | Hz | `1` |
+| Millihertz | [`millihertz`](./unitfrequency/millihertz.md) | mHz | `0.001` |
+| Microhertz | [`microhertz`](./unitfrequency/microhertz.md) | µHz | `0.000001` |
+| Nanohertz | [`nanohertz`](./unitfrequency/nanohertz.md) | nHz | `1e-9` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var terahertz: UnitFrequency](unitfrequency/terahertz.md)
+- [class var terahertz: UnitFrequency](./unitfrequency/terahertz.md)
   The terahertz unit of frequency.
-- [class var gigahertz: UnitFrequency](unitfrequency/gigahertz.md)
+- [class var gigahertz: UnitFrequency](./unitfrequency/gigahertz.md)
   The gigahertz unit of frequency.
-- [class var megahertz: UnitFrequency](unitfrequency/megahertz.md)
+- [class var megahertz: UnitFrequency](./unitfrequency/megahertz.md)
   The megahertz unit of frequency.
-- [class var kilohertz: UnitFrequency](unitfrequency/kilohertz.md)
+- [class var kilohertz: UnitFrequency](./unitfrequency/kilohertz.md)
   The kilohertz unit of frequency.
-- [class var hertz: UnitFrequency](unitfrequency/hertz.md)
+- [class var hertz: UnitFrequency](./unitfrequency/hertz.md)
   The hertz unit of frequency.
-- [class var millihertz: UnitFrequency](unitfrequency/millihertz.md)
+- [class var millihertz: UnitFrequency](./unitfrequency/millihertz.md)
   The millihertz unit of frequency.
-- [class var microhertz: UnitFrequency](unitfrequency/microhertz.md)
+- [class var microhertz: UnitFrequency](./unitfrequency/microhertz.md)
   The microhertz unit of frequency.
-- [class var nanohertz: UnitFrequency](unitfrequency/nanohertz.md)
+- [class var nanohertz: UnitFrequency](./unitfrequency/nanohertz.md)
   The nanohertz unit of frequency.
-- [class var framesPerSecond: UnitFrequency](unitfrequency/framespersecond.md)
+- [class var framesPerSecond: UnitFrequency](./unitfrequency/framespersecond.md)
   The frames per second unit of frequency.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitAcceleration](unitacceleration.md)
+### Time and Motion
+- [class UnitAcceleration](./unitacceleration.md)
   A unit of measure for acceleration.
-- [class UnitDuration](unitduration.md)
+- [class UnitDuration](./unitduration.md)
   A unit of measure for a duration of time.
-- [class UnitSpeed](unitspeed.md)
+- [class UnitSpeed](./unitspeed.md)
   A unit of measure for speed.
 
 

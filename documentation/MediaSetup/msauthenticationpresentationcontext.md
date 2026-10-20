@@ -1,7 +1,8 @@
 # MSAuthenticationPresentationContext
 
 **Framework**: Media Setup  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that provides media setup display information to the system.
 
@@ -17,24 +18,29 @@ A protocol that provides media setup display information to the system.
 protocol MSAuthenticationPresentationContext : NSObjectProtocol
 ```
 
+```objc
+@protocol MSAuthenticationPresentationContext <NSObject>
+```
+
 ## Topics
 
 ### Displaying the Media Setup View
-- [func presentationAnchor() -> MSPresentationAnchor?](msauthenticationpresentationcontext/presentationanchor.md)
+- [func presentationAnchor() -> MSPresentationAnchor?](./msauthenticationpresentationcontext/presentationanchor%28%29.md)
   A window that presents the system’s HomePod configuration view to the user.
-- [typealias MSPresentationAnchor](mspresentationanchor.md)
+- [typealias MSPresentationAnchor](./mspresentationanchor.md)
   A window that presents a Media Setup configuration view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var presentationContext: (any MSAuthenticationPresentationContext)?](mssetupsession/presentationcontext.md)
+### Presenting the Configuration View
+- [var presentationContext: (any MSAuthenticationPresentationContext)?](./mssetupsession/presentationcontext.md)
   A delegate that provides media setup display information to the system.
-- [func start() throws](mssetupsession/start.md)
+- [func start() throws](./mssetupsession/start%28%29.md)
   Initiates the service configuration process and sends the account details of the streaming media service to the user’s HomePod speakers.
 
 

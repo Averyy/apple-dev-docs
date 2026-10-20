@@ -1,7 +1,8 @@
 # needAuthenticator
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Need authenticator.
 
@@ -22,7 +23,7 @@ static var needAuthenticator: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ The corresponding C error is `ENEEDAUTH`.
 
 ## See Also
 
-- [static var authenticationError: Errno](errno/authenticationerror.md)
+### NFS Errors
+- [static var authenticationError: Errno](./authenticationerror.md)
   Authentication error.
-- [static var staleNFSFileHandle: Errno](errno/stalenfsfilehandle.md)
+- [static var staleNFSFileHandle: Errno](./stalenfsfilehandle.md)
   Stale NFS file handle.
 
 

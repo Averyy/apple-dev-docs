@@ -1,7 +1,8 @@
 # subject
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subject of the message.
 
@@ -12,6 +13,10 @@ The subject of the message.
 
 ```swift
 var subject: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * subject;
 ```
 
 #### Discussion

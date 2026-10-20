@@ -1,6 +1,7 @@
 # Creatives Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Create, retrieve, update, and delete ad creatives through these endpoints.
 
@@ -9,7 +10,7 @@ Create, retrieve, update, and delete ad creatives through these endpoints.
 
 #### Overview
 
-You create a [`Creative`](creative.md) object at the ad account level, and an [`Ad`](ad.md) object references it to define what users see when your ad serves. Since an ad creative lives at the ad account level, you can reuse the same one across multiple ads, even ads in different ad groups, instead of creating a new ad creative for each ad.
+You create a [`Creative`](./creative.md) object at the ad account level, and an [`Ad`](./ad.md) object references it to define what users see when your ad serves. Since an ad creative lives at the ad account level, you can reuse the same one across multiple ads, even ads in different ad groups, instead of creating a new ad creative for each ad.
 
 #### Use the Creatives Endpoints
 
@@ -17,11 +18,11 @@ Use these endpoints to create, retrieve, update, and delete ad creatives:
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/creatives` | [`Create an Ad Creative`](post-creatives.md) creates a new ad creative. |
-| `POST` | `/v1/creatives/query` | [`Query Ad Creatives`](post-creatives-query.md) retrieves ad creatives matching the specified filters. |
-| `GET` | `/v1/creatives/{id}` | [`Get an Ad Creative`](get-creatives-_id_.md) retrieves a single ad creative by its ID. |
-| `PUT` | `/v1/creatives/{id}` | [`Update an Ad Creative`](put-creatives-_id_.md) updates an existing ad creative. |
-| `DELETE` | `/v1/creatives/{id}` | [`Delete an Ad Creative`](delete-creatives-_id_.md) soft-deletes an ad creative by its ID. |
+| `POST` | `/v1/creatives` | [`Create an Ad Creative`](./post-creatives.md) creates a new ad creative. |
+| `POST` | `/v1/creatives/query` | [`Query Ad Creatives`](./post-creatives-query.md) retrieves ad creatives matching the specified filters. |
+| `GET` | `/v1/creatives/{id}` | [`Get an Ad Creative`](./get-creatives-_id_.md) retrieves a single ad creative by its ID. |
+| `PUT` | `/v1/creatives/{id}` | [`Update an Ad Creative`](./put-creatives-_id_.md) updates an existing ad creative. |
+| `DELETE` | `/v1/creatives/{id}` | [`Delete an Ad Creative`](./delete-creatives-_id_.md) soft-deletes an ad creative by its ID. |
 
 ##### Understand Creative Types
 
@@ -31,14 +32,14 @@ The `creativeType` field determines the ad creative’s content source, how the 
 | --- | --- | --- |
 | `DEFAULT_PRODUCT_PAGE` | System-rendered from the app’s default App Store listing | Default App Store product page |
 | `CUSTOM_PRODUCT_PAGE` | System-rendered from a custom product page in App Store Connect | Custom App Store product page |
-| `LOCAL_ADS_SEARCH_CREATIVE` | Brand location assets or logo assembled in [`Creative.CreativeSpec`](creative/creativespec-data.dictionary.md) | Apple Maps place card |
+| `LOCAL_ADS_SEARCH_CREATIVE` | Brand location assets or logo assembled in [`Creative.CreativeSpec`](./creative/creativespec-data.dictionary.md) | Apple Maps place card |
 
-##### Define the Pre Tap and Post Tap Experience
+##### Define the Pre-Tap and Post-Tap Experience
 
 Every ad creative has two distinct content areas, `creativeSpec` and `destination`, each with a separate responsibility:
 
 - **`creativeSpec`**: Defines the pre-tap experience, what users see before they interact with the ad. It contains the visual assets and copy rendered in the ad placement.
-- **`destination`**: Defines the post-tap experience, where users land after they tap the ad. The [`Destination`](destination.md) object specifies the `destinationType` and destination-specific parameters.
+- **`destination`**: Defines the post-tap experience, where users land after they tap the ad. The [`Destination`](./destination.md) object specifies the `destinationType` and destination-specific parameters.
 
 These two fields operate independently. For product page ad creatives, `creativeSpec` is intentionally empty because App Store Connect controls the pre-tap rendering. Only `destination` carries meaningful data. For Apple Maps ad creatives, `creativeSpec` contains the Apple Maps creative spec with the brand’s visual content and promotional text.
 
@@ -94,36 +95,37 @@ When `systemStatus` is `INVALID`, the `systemStatusReasons` array contains one o
 | `PENDING_ASSET_CHECKS` | Asset checks are in progress and the ad creative is awaiting the outcome. **Apple Maps ad creatives only**. |
 | `FAILED_ASSET_RATIO_COMPATIBILITY` | One or more assets don’t meet the required aspect ratio for the targeted placement. **Apple Maps ad creatives only**. |
 
-Each ad creative also carries an `eligibility` field of type [`CreativeEligibility`](creativeeligibility.md). The system returns eligibility data for ad creatives of every `creativeType`, including App Store product page ad creatives (`DEFAULT_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE`) and Apple Maps ad creatives (`LOCAL_ADS_SEARCH_CREATIVE`). It summarizes whether the ad creative meets the requirements to serve on each supported ad placement.
+Each ad creative also carries an `eligibility` field of type [`CreativeEligibility`](./creativeeligibility.md). The system returns eligibility data for ad creatives of every `creativeType`, including App Store product page ad creatives (`DEFAULT_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE`) and Apple Maps ad creatives (`LOCAL_ADS_SEARCH_CREATIVE`). It summarizes whether the ad creative meets the requirements to serve on each supported ad placement.
 
 ##### Query Ad Creatives
 
-The [`Query Ad Creatives`](post-creatives-query.md) endpoint supports filtering ad creatives by `creativeType`, `systemStatus`, `name`, and `eligibility.status` using dot-notation, with observed values `ELIGIBLE` and `INELIGIBLE`.
+The [`Query Ad Creatives`](./post-creatives-query.md) endpoint supports filtering ad creatives by `creativeType`, `systemStatus`, `name`, and `eligibility.status` using dot-notation, with observed values `ELIGIBLE` and `INELIGIBLE`.
 
 ##### Look Up Rejection Reasons
 
-For product page ad creatives (`DEFAULT_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE`), detailed rejection information is available as [`CreativeRejectionReason`](creativerejectionreason.md) records. These records are queried and fetched through endpoints documented under Apps > App Eligibility rather than under Creatives: see [`Query Rejection Reasons`](find-rejection-reasons.md) (`POST /v1/rejection-reasons/apps/query`) and [`Get Rejection Reasons`](gets-rejection-reasons-by-id.md) (`GET /v1/rejection-reasons/apps/{rejectionReasonId}`).
+For product page ad creatives (`DEFAULT_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE`), detailed rejection information is available as [`CreativeRejectionReason`](./creativerejectionreason.md) records. These records are queried and fetched through endpoints documented under Apps > App Eligibility rather than under Creatives: see [`Query Rejection Reasons`](./find-rejection-reasons.md) (`POST /v1/rejection-reasons/apps/query`) and [`Get Rejection Reasons`](./gets-rejection-reasons-by-id.md) (`GET /v1/rejection-reasons/apps/{rejectionReasonId}`).
 
-For Apple Maps ad creatives (`LOCAL_ADS_SEARCH_CREATIVE`), rejection information is available as policy assignment records instead, queried through the Brands endpoint: see [`Query Rejection Reasons for Brands`](query-policy-assignments-(rejection-reasons)-for-external-consumers.md) (`POST /v1/rejection-reasons/business-brands/query`), filtered by the brand’s `promotedObjectId`.
+For Apple Maps ad creatives (`LOCAL_ADS_SEARCH_CREATIVE`), rejection information is available as policy assignment records instead, queried through the Brands endpoint: see [`Query Rejection Reasons for Brands`](./query-policy-assignments-%28rejection-reasons%29-for-external-consumers.md) (`POST /v1/rejection-reasons/business-brands/query`), filtered by the brand’s `promotedObjectId`.
 
 ## Topics
 
-- [Create an Ad Creative](post-creatives.md)
+- [Create an Ad Creative](./post-creatives.md)
   Add a new ad creative that defines the visual presentation and tap destination for an ad.
-- [Query Ad Creatives](post-creatives-query.md)
+- [Query Ad Creatives](./post-creatives-query.md)
   Retrieve ad creatives that match structured filter, sort, and pagination criteria.
-- [Get an Ad Creative](get-creatives-_id_.md)
+- [Get an Ad Creative](./get-creatives-_id_.md)
   Fetch a single ad creative by its unique identifier.
-- [Update an Ad Creative](put-creatives-_id_.md)
+- [Update an Ad Creative](./put-creatives-_id_.md)
   Change an ad creative’s name or creative spec by its unique identifier.
-- [Delete an Ad Creative](delete-creatives-_id_.md)
+- [Delete an Ad Creative](./delete-creatives-_id_.md)
   Remove an ad creative by its unique identifier.
 
 ## See Also
 
-- [Ad Creatives Data Objects](creatives-data-objects.md)
+### Creatives
+- [Ad Creatives Data Objects](./creatives-data-objects.md)
   Reference the request and response payloads used by ad creative endpoints.
-- [Ad Creative Data Types](creative-data-types.md)
+- [Ad Creative Data Types](./creative-data-types.md)
   Look up the allowed values for creative type, status, and destination type fields.
 
 

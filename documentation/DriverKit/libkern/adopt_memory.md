@@ -1,17 +1,18 @@
 # adopt_memory
 
 **Framework**: DriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const adopt_memory_t adopt_memory;
 ```
 

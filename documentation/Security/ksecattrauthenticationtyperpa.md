@@ -1,7 +1,8 @@
 # kSecAttrAuthenticationTypeRPA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Remote Password authentication.
 
@@ -18,6 +19,10 @@ Remote Password authentication.
 
 ```swift
 let kSecAttrAuthenticationTypeRPA: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAuthenticationTypeRPA;
 ```
 
 

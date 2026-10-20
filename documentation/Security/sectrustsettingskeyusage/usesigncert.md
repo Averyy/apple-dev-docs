@@ -1,7 +1,8 @@
 # useSignCert
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key can be used to sign a certificate or verify a signature.
 
@@ -13,6 +14,10 @@ The key can be used to sign a certificate or verify a signature.
 
 ```swift
 static var useSignCert: SecTrustSettingsKeyUsage { get }
+```
+
+```c
+kSecTrustSettingsKeyUseSignCert
 ```
 
 

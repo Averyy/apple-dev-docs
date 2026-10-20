@@ -1,7 +1,8 @@
 # reorderingHandlers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diffable data source’s handlers for reordering items.
 
@@ -10,7 +11,7 @@ The diffable data source’s handlers for reordering items.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,13 @@ The diffable data source’s handlers for reordering items.
 @preconcurrency var reorderingHandlers: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.ReorderingHandlers { get set }
 ```
 
+Available when `SectionIdentifierType` conforms to `Hashable`, `SectionIdentifierType` conforms to `Sendable`, `ItemIdentifierType` conforms to `Hashable`, and `ItemIdentifierType` conforms to `Sendable`.
+
 #### Discussion
 
 Provide reordering handlers to support the reordering of items in your collection view.
 
-The system calls the [`didReorder`](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/didreorder.md) handler after a reordering transaction ([`NSDiffableDataSourceTransaction`](nsdiffabledatasourcetransaction-swift.struct.md)) occurs, so you can update your data backing store with information about the changes.
+The system calls the [`didReorder`](./reorderinghandlers-swift.struct/didreorder.md) handler after a reordering transaction ([`NSDiffableDataSourceTransaction`](../nsdiffabledatasourcetransaction-swift.struct.md)) occurs, so you can update your data backing store with information about the changes.
 
 ```swift
 // Allow every item to be reordered
@@ -48,11 +51,12 @@ dataSource.reorderingHandlers.didReorder = { [weak self] transaction in
 
 ## See Also
 
-- [UICollectionViewDiffableDataSource.ReorderingHandlers](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct.md)
+### Supporting reordering
+- [UICollectionViewDiffableDataSource.ReorderingHandlers](./reorderinghandlers-swift.struct.md)
   Handlers for reordering items.
-- [struct NSDiffableDataSourceTransaction](nsdiffabledatasourcetransaction-swift.struct.md)
+- [struct NSDiffableDataSourceTransaction](../nsdiffabledatasourcetransaction-swift.struct.md)
   A transaction that describes the changes after reordering the items in the view.
-- [struct NSDiffableDataSourceSectionTransaction](nsdiffabledatasourcesectiontransaction-swift.struct.md)
+- [struct NSDiffableDataSourceSectionTransaction](../nsdiffabledatasourcesectiontransaction-swift.struct.md)
   A transaction that describes the changes after reordering the items in a section.
 
 

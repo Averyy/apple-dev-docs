@@ -1,7 +1,8 @@
 # MPRemoteCommandHandlerStatus.deviceNotFound
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested command couldn’t execute because a required device isn’t available.
 
@@ -20,19 +21,24 @@ The requested command couldn’t execute because a required device isn’t avail
 case deviceNotFound
 ```
 
+```c
+MPRemoteCommandHandlerStatusDeviceNotFound
+```
+
 #### Discussion
 
 Commands that require a device to perform their action should return this status when the device is unavailable. For example, you’d return this status if your command requires headphones, but none are available.
 
 ## See Also
 
-- [MPRemoteCommandHandlerStatus.success](mpremotecommandhandlerstatus/success.md)
+### Constants
+- [MPRemoteCommandHandlerStatus.success](./success.md)
   The requested command executed successfully.
-- [MPRemoteCommandHandlerStatus.noSuchContent](mpremotecommandhandlerstatus/nosuchcontent.md)
+- [MPRemoteCommandHandlerStatus.noSuchContent](./nosuchcontent.md)
   The requested command couldn’t execute because its required content isn’t available.
-- [MPRemoteCommandHandlerStatus.noActionableNowPlayingItem](mpremotecommandhandlerstatus/noactionablenowplayingitem.md)
+- [MPRemoteCommandHandlerStatus.noActionableNowPlayingItem](./noactionablenowplayingitem.md)
   The requested command couldn’t execute because no Now Playing item is available.
-- [MPRemoteCommandHandlerStatus.commandFailed](mpremotecommandhandlerstatus/commandfailed.md)
+- [MPRemoteCommandHandlerStatus.commandFailed](./commandfailed.md)
   The requested command failed to execute.
 
 

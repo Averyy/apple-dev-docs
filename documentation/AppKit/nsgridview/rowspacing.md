@@ -1,7 +1,8 @@
 # rowSpacing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The row spacing for the grid view.
 
@@ -14,17 +15,22 @@ The row spacing for the grid view.
 var rowSpacing: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat rowSpacing;
+```
+
 ## See Also
 
-- [class let sizedForContent: CGFloat](nsgridview/sizedforcontent.md)
+### Managing Grid Spacing and Alignment
+- [class let sizedForContent: CGFloat](./sizedforcontent.md)
   The default value for row and column sizes.
-- [var columnSpacing: CGFloat](nsgridview/columnspacing.md)
+- [var columnSpacing: CGFloat](./columnspacing.md)
   The column spacing for the grid view.
-- [var rowAlignment: NSGridRow.Alignment](nsgridview/rowalignment.md)
+- [var rowAlignment: NSGridRow.Alignment](./rowalignment.md)
   The row alignment for the grid view.
-- [var xPlacement: NSGridCell.Placement](nsgridview/xplacement.md)
+- [var xPlacement: NSGridCell.Placement](./xplacement.md)
   The placement of the cell within the grid column.
-- [var yPlacement: NSGridCell.Placement](nsgridview/yplacement.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
   The placement of the cell within the grid row.
 
 

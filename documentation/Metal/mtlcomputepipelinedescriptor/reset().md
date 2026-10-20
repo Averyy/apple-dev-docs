@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets all compute pipeline descriptor properties to their default values.
 
@@ -17,6 +18,10 @@ Resets all compute pipeline descriptor properties to their default values.
 
 ```swift
 func reset()
+```
+
+```objc
+- (void) reset;
 ```
 
 

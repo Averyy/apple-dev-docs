@@ -1,7 +1,8 @@
 # init(importing:contentType:)
 
 **Framework**: Core Transferable  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Using the type’s `Transferable` conformance implementation, instantiates a value from the given file.
 
@@ -22,7 +23,7 @@ init(importing file: URL, contentType: UTType?) async throws
 
 #### Discussion
 
-The default implementation of this initializer is available to all types that conform to [`Transferable`](transferable.md) protocol.
+The default implementation of this initializer is available to all types that conform to [`Transferable`](../transferable.md) protocol.
 
 ## Parameters
 

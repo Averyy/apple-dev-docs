@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new priority structure from the given value.
 
@@ -23,7 +24,8 @@ init(_ rawValue: Float)
 
 ## See Also
 
-- [init(rawValue: Float)](nstouchbaritem/priority/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: Float)](./init%28rawvalue%29.md)
   Creates a new priority structure from the given raw value.
 
 

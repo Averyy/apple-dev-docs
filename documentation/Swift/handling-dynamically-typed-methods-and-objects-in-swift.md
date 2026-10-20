@@ -1,6 +1,7 @@
 # Handling Dynamically Typed Methods and Objects in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Cast instances of the Objective-C `id` type to a specific Swift type.
 
@@ -47,17 +48,18 @@ let myDate = lastRefreshDate as! String // Error
 
 ## See Also
 
-- [Objective-C and C Code Customization](objective-c-and-c-code-customization.md)
+### Language Interoperability with Objective-C and C
+- [Objective-C and C Code Customization](./objective-c-and-c-code-customization.md)
   Apply macros to your Objective-C APIs to customize how they’re imported into Swift.
-- [Migrating Your Objective-C Code to Swift](migrating-your-objective-c-code-to-swift.md)
+- [Migrating Your Objective-C Code to Swift](./migrating-your-objective-c-code-to-swift.md)
   Learn the recommended steps to migrate your code.
-- [Cocoa Design Patterns](cocoa-design-patterns.md)
+- [Cocoa Design Patterns](./cocoa-design-patterns.md)
   Adopt and interoperate with Cocoa design patterns in your Swift apps.
-- [Using Objective-C Runtime Features in Swift](using-objective-c-runtime-features-in-swift.md)
+- [Using Objective-C Runtime Features in Swift](./using-objective-c-runtime-features-in-swift.md)
   Use selectors and key paths to interact with dynamic Objective-C APIs.
-- [Imported C and Objective-C APIs](imported-c-and-objective-c-apis.md)
+- [Imported C and Objective-C APIs](./imported-c-and-objective-c-apis.md)
   Use native Swift syntax to interoperate with types and functions in C and Objective-C.
-- [Calling Objective-C APIs Asynchronously](calling-objective-c-apis-asynchronously.md)
+- [Calling Objective-C APIs Asynchronously](./calling-objective-c-apis-asynchronously.md)
   Learn how functions and methods that take a completion handler are converted to Swift asynchronous functions.
 
 

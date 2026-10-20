@@ -1,7 +1,8 @@
 # Album.RelevanceScore
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A score representing album relevance, used to rank albums when surfacing content.
 
@@ -10,7 +11,7 @@ A score representing album relevance, used to rank albums when surfacing content
 
 ## Declaration
 
-```swift
+```
 object Album.RelevanceScore
 ```
 
@@ -21,7 +22,7 @@ A higher score indicates higher relevance. For example, an album with a score of
 ## Topics
 
 ### Related objects
-- [object Album.RelevanceScore.StorefrontOverrides](album/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.md)
+- [object Album.RelevanceScore.StorefrontOverrides](./relevancescore-data.dictionary/storefrontoverrides-data.dictionary.md)
   A mapping of storefront country code to relevance score.
 
 ## Properties

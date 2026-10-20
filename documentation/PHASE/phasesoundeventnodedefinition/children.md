@@ -1,7 +1,8 @@
 # children
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of child sound event nodes.
 
@@ -19,9 +20,13 @@ An array of child sound event nodes.
 var children: [PHASESoundEventNodeDefinition] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<PHASESoundEventNodeDefinition *> * children;
+```
+
 #### Discussion
 
-To add children, use the add subtree functions of the derived class. For example, add children to a container node using [`addSubtree(_:)`](phasecontainernodedefinition/addsubtree(_:).md).
+To add children, use the add subtree functions of the derived class. For example, add children to a container node using [`addSubtree(_:)`](../phasecontainernodedefinition/addsubtree%28_%29.md).
 
 
 ---

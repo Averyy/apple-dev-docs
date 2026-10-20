@@ -1,7 +1,8 @@
 # cascadingReferenceFrame
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var cascadingReferenceFrame: NSRect { get }
+```
+
+```objc
+@property (readonly) NSRect cascadingReferenceFrame;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # AVCaptureEvent
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a user interaction with a system hardware button.
 
@@ -16,40 +17,45 @@ An object that describes a user interaction with a system hardware button.
 class AVCaptureEvent
 ```
 
+```objc
+@interface AVCaptureEvent : NSObject
+```
+
 #### Overview
 
-Inspect a capture event’s [`phase`](avcaptureevent/phase.md) to determine whether the event begins, ends, or is in a canceled state.
+Inspect a capture event’s [`phase`](./avcaptureevent/phase.md) to determine whether the event begins, ends, or is in a canceled state.
 
 ## Topics
 
 ### Inspecting the event
-- [var phase: AVCaptureEventPhase](avcaptureevent/phase.md)
+- [var phase: AVCaptureEventPhase](./avcaptureevent/phase.md)
   The current phase of a capture event.
-- [enum AVCaptureEventPhase](avcaptureeventphase.md)
+- [enum AVCaptureEventPhase](./avcaptureeventphase.md)
   Constants that indicate the phase of a system capture event.
 ### Playing a sound
-- [var shouldPlaySound: Bool](avcaptureevent/shouldplaysound.md)
+- [var shouldPlaySound: Bool](./avcaptureevent/shouldplaysound.md)
   A Boolean value that indicates whether you must play a sound manually.
-- [func play(AVCaptureEventSound) -> Bool](avcaptureevent/play(_:).md)
+- [func play(AVCaptureEventSound) -> Bool](./avcaptureevent/play%28_%29.md)
   Plays the specified capture sound through AirPods.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureEventInteraction](avcaptureeventinteraction.md)
+### Capture events
+- [class AVCaptureEventInteraction](./avcaptureeventinteraction.md)
   An object that registers handlers to respond to capture events from system hardware buttons.
-- [class AVCaptureEventSound](avcaptureeventsound.md)
+- [class AVCaptureEventSound](./avcaptureeventsound.md)
   A sound object for a capture event.
 
 

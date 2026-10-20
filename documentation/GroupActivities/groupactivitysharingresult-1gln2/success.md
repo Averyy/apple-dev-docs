@@ -1,7 +1,8 @@
 # GroupActivitySharingResult.success
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates the user wants to share the activity with the group.
 

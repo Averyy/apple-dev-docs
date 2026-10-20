@@ -1,7 +1,8 @@
 # utf8CString
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A contiguously stored null-terminated UTF-8 representation of the string.
 
@@ -38,9 +39,10 @@ bytes.withUnsafeBufferPointer { ptr in
 
 ## See Also
 
-- [func withCString<Result, E>((UnsafePointer<Int8>) throws(E) -> Result) throws(E) -> Result](string/withcstring(_:).md)
+### Getting C Strings
+- [func withCString<Result, E>((UnsafePointer<Int8>) throws(E) -> Result) throws(E) -> Result](./withcstring%28_%29.md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of UTF-8 code units.
-- [func withCString<Result, TargetEncoding, E>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result](string/withcstring(encodedas:_:).md)
+- [func withCString<Result, TargetEncoding, E>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result](./withcstring%28encodedas,_%29.md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of code units.
 
 

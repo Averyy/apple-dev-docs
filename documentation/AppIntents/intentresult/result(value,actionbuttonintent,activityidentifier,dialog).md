@@ -1,7 +1,8 @@
 # result(value:actionButtonIntent:activityIdentifier:dialog:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates the Intent finished performing with an `AppIntent` to continue with
 
@@ -11,7 +12,7 @@ Indicates the Intent finished performing with an `AppIntent` to continue with
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration

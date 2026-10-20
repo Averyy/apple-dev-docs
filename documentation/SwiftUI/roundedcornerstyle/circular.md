@@ -1,7 +1,8 @@
 # RoundedCornerStyle.circular
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Quarter-circle rounded rect corners.
 
@@ -22,7 +23,8 @@ case circular
 
 ## See Also
 
-- [RoundedCornerStyle.continuous](roundedcornerstyle/continuous.md)
+### Getting corner styles
+- [RoundedCornerStyle.continuous](./continuous.md)
   Continuous curvature rounded rect corners.
 
 

@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the tensor.
 
@@ -17,6 +18,10 @@ The shape of the tensor.
 
 ```swift
 var shape: [NSNumber]? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) MPSShape * shape;
 ```
 
 #### Discussion

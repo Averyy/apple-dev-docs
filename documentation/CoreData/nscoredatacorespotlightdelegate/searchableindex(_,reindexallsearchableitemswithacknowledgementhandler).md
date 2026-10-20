@@ -1,7 +1,8 @@
 # searchableIndex(_:reindexAllSearchableItemsWithAcknowledgementHandler:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reindexes all searchable items and clears any local state.
 
@@ -18,9 +19,13 @@ Reindexes all searchable items and clears any local state.
 func searchableIndex(_ searchableIndex: CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler acknowledgementHandler: @escaping () -> Void)
 ```
 
+```objc
+- (void) searchableIndex:(CSSearchableIndex *) searchableIndex reindexAllSearchableItemsWithAcknowledgementHandler:(void (^)()) acknowledgementHandler;
+```
+
 #### Discussion
 
-For more information, see [`searchableIndex(_:reindexAllSearchableItemsWithAcknowledgementHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindexdelegate/searchableindex(_:reindexallsearchableitemswithacknowledgementhandler:)).
+For more information, see [`searchableIndex(_:reindexAllSearchableItemsWithAcknowledgementHandler:)`](../../CoreSpotlight/cssearchableindexdelegate/searchableindex%28_,reindexallsearchableitemswithacknowledgementhandler%29.md).
 
 ## Parameters
 
@@ -29,9 +34,10 @@ For more information, see [`searchableIndex(_:reindexAllSearchableItemsWithAckno
 
 ## See Also
 
-- [static let indexDidUpdateNotification: Notification.Name](nscoredatacorespotlightdelegate/indexdidupdatenotification.md)
+### Updating the Index
+- [static let indexDidUpdateNotification: Notification.Name](./indexdidupdatenotification.md)
   The notification the delegate posts after Spotlight updates the index.
-- [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](nscoredatacorespotlightdelegate/searchableindex(_:reindexsearchableitemswithidentifiers:acknowledgementhandler:).md)
+- [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](./searchableindex%28_,reindexsearchableitemswithidentifiers,acknowledgementhandler%29.md)
   Reindexes the searchable items for the specified identifiers.
 
 

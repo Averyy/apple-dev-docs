@@ -1,7 +1,8 @@
 # PartialKeyPath
 
 **Framework**: Swift  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A partially type-erased key path, from a concrete root type to any resulting value type.
 
@@ -23,19 +24,20 @@ class PartialKeyPath<Root>
 ## Relationships
 
 ### Inherits From
-- [AnyKeyPath](anykeypath.md)
+- [AnyKeyPath](./anykeypath.md)
 ### Inherited By
-- [KeyPath](keypath.md)
+- [KeyPath](./keypath.md)
 ### Conforms To
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [Equatable](./equatable.md)
+- [Hashable](./hashable.md)
 
 ## See Also
 
-- [class KeyPath](keypath.md)
+### Key Paths
+- [class KeyPath](./keypath.md)
   A key path from a specific root type to a specific resulting value type.
-- [class AnyKeyPath](anykeypath.md)
+- [class AnyKeyPath](./anykeypath.md)
   A type-erased key path, from any root type to any resulting value type.
 
 

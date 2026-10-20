@@ -1,7 +1,8 @@
 # focusScope(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a focus scope that SwiftUI uses to limit default focus preferences.
 
@@ -23,7 +24,7 @@ A view that sets the namespace of descendants for default focus.
 
 #### Discussion
 
-The returned view gets associated with the provided namespace. Pass this namespace to [`prefersDefaultFocus(_:in:)`](view/prefersdefaultfocus(_:in:).md) and the [`resetFocus`](environmentvalues/resetfocus.md) function.
+The returned view gets associated with the provided namespace. Pass this namespace to [`prefersDefaultFocus(_:in:)`](./prefersdefaultfocus%28_,in%29.md) and the [`resetFocus`](../environmentvalues/resetfocus.md) function.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ The returned view gets associated with the provided namespace. Pass this namespa
 
 ## See Also
 
-- [func focusSection() -> some View](view/focussection.md)
+### Setting focus scope
+- [func focusSection() -> some View](./focussection%28%29.md)
   Indicates that the view’s frame and cohort of focusable descendants should be used to guide focus movement.
 
 

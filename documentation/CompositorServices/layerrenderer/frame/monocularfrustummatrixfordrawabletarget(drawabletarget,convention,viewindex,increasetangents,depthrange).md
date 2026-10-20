@@ -1,7 +1,8 @@
 # monocularFrustumMatrixForDrawableTarget(drawableTarget:convention:viewIndex:increaseTangents:depthRange:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the transform which can be used for monocular frustum culling for given view. A matrix to convert between the device coordinate space to normalized device coordinate space This should be acquired between starting and submitting a frame. Renderer should not utilize this transform for actual rendering output.
 

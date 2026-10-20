@@ -1,7 +1,8 @@
 # CWMutableConfiguration
 
 **Framework**: Core WLAN  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Encapsulates a mutable configuration for an AirPort WLAN interface.
 
@@ -14,56 +15,61 @@ Encapsulates a mutable configuration for an AirPort WLAN interface.
 class CWMutableConfiguration
 ```
 
+```objc
+@interface CWMutableConfiguration : CWConfiguration
+```
+
 #### Overview
 
-Use this class to change configuration settings or the preferred networks list. To commit configuration changes, use [`commitConfiguration(_:authorization:)`](cwinterface/commitconfiguration(_:authorization:).md).
+Use this class to change configuration settings or the preferred networks list. To commit configuration changes, use [`commitConfiguration(_:authorization:)`](./cwinterface/commitconfiguration%28_,authorization%29.md).
 
 ## Topics
 
 ### Configuring Preferred Networks
-- [var networkProfiles: NSOrderedSet](cwmutableconfiguration/networkprofiles.md)
+- [var networkProfiles: NSOrderedSet](./cwmutableconfiguration/networkprofiles.md)
   The preferred networks list.
 ### Configuring Settings
-- [var rememberJoinedNetworks: Bool](cwmutableconfiguration/rememberjoinednetworks.md)
+- [var rememberJoinedNetworks: Bool](./cwmutableconfiguration/rememberjoinednetworks.md)
   A Boolean value that determines whether to remember all joined Wi-Fi networks unless the user specifies otherwise when joining a particular Wi-Fi network.
-- [var requireAdministratorForAssociation: Bool](cwmutableconfiguration/requireadministratorforassociation.md)
+- [var requireAdministratorForAssociation: Bool](./cwmutableconfiguration/requireadministratorforassociation.md)
   A Boolean value that determines whether to require an administrator password to change networks.
-- [var requireAdministratorForPower: Bool](cwmutableconfiguration/requireadministratorforpower.md)
+- [var requireAdministratorForPower: Bool](./cwmutableconfiguration/requireadministratorforpower.md)
   A Boolean value that determines whether to require an administrator password to change the interface power state.
-- [var requireAdministratorForIBSSMode: Bool](cwmutableconfiguration/requireadministratorforibssmode.md)
+- [var requireAdministratorForIBSSMode: Bool](./cwmutableconfiguration/requireadministratorforibssmode.md)
   A Boolean value that determines whether to require an administrator password to create a computer-to-computer network.
 
 ## Relationships
 
 ### Inherits From
-- [CWConfiguration](cwconfiguration.md)
+- [CWConfiguration](./cwconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CWChannel](cwchannel.md)
+### Classes
+- [class CWChannel](./cwchannel.md)
   Encapsulates an IEEE 802.11 channel.
-- [class CWConfiguration](cwconfiguration.md)
+- [class CWConfiguration](./cwconfiguration.md)
   Encapsulates an immutable configuration for an AirPort WLAN interface.
-- [class CWInterface](cwinterface.md)
+- [class CWInterface](./cwinterface.md)
   Encapsulates an IEEE 802.11 interface.
-- [class CWMutableNetworkProfile](cwmutablenetworkprofile.md)
+- [class CWMutableNetworkProfile](./cwmutablenetworkprofile.md)
   Encapsulates a mutable network profile entry.
-- [class CWNetwork](cwnetwork.md)
+- [class CWNetwork](./cwnetwork.md)
   Encapsulates an IEEE 802.11 network, providing read-only accessors to various properties of the network.
-- [class CWNetworkProfile](cwnetworkprofile.md)
+- [class CWNetworkProfile](./cwnetworkprofile.md)
   Encapsulates an immutable network profile entry.
-- [class CWWiFiClient](cwwificlient.md)
+- [class CWWiFiClient](./cwwificlient.md)
   A wrapper around the entire Wi-Fi subsystem that you use to access interfaces and set up event notifications.
 
 

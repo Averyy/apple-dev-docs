@@ -1,7 +1,8 @@
 # recordWithIDWasDeletedBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when a record no longer exists.
 
@@ -11,7 +12,7 @@ The closure to execute when a record no longer exists.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -34,13 +35,14 @@ Set this property before you execute the operation or submit it to a queue.
 
 ## See Also
 
-- [var recordChangedBlock: ((CKRecord) -> Void)?](ckfetchrecordzonechangesoperation/recordchangedblock.md)
+### Processing the Zone Change Operation Results
+- [var recordChangedBlock: ((CKRecord) -> Void)?](./recordchangedblock.md)
   The closure to execute with the contents of a changed record.
-- [var recordZoneChangeTokensUpdatedBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?) -> Void)?](ckfetchrecordzonechangesoperation/recordzonechangetokensupdatedblock.md)
+- [var recordZoneChangeTokensUpdatedBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?) -> Void)?](./recordzonechangetokensupdatedblock.md)
   The closure to execute when the change token updates.
-- [var recordZoneFetchCompletionBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?, Bool, (any Error)?) -> Void)?](ckfetchrecordzonechangesoperation/recordzonefetchcompletionblock.md)
+- [var recordZoneFetchCompletionBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?, Bool, (any Error)?) -> Void)?](./recordzonefetchcompletionblock.md)
   The closure to execute when a record zone’s fetch finishes.
-- [var fetchRecordZoneChangesCompletionBlock: (((any Error)?) -> Void)?](ckfetchrecordzonechangesoperation/fetchrecordzonechangescompletionblock.md)
+- [var fetchRecordZoneChangesCompletionBlock: (((any Error)?) -> Void)?](./fetchrecordzonechangescompletionblock.md)
   The closure to execute when the operation finishes.
 
 

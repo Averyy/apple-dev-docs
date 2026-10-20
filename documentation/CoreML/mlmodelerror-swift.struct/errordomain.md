@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -20,7 +21,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let MLModelErrorDomain: String](mlmodelerrordomain.md)
+### Error Domain
+- [let MLModelErrorDomain: String](../mlmodelerrordomain.md)
   The domain for Core ML errors.
 
 

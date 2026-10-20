@@ -1,7 +1,8 @@
 # LinkMetadata.Specification
 
 **Framework**: Link Presentation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 26.4+

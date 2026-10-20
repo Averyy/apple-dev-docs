@@ -1,6 +1,8 @@
 # Displaying Human-Friendly Content
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: Sample Code  
+**Download**: [DisplayingHumanFriendlyContent.zip](https://docs-assets.developer.apple.com/published/5b02d7f59291/DisplayingHumanFriendlyContent.zip)
 
 Convert data into readable strings or Swift objects using formatters.
 
@@ -13,11 +15,12 @@ Convert data into readable strings or Swift objects using formatters.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC20 session [`10160: Formatters: Make Data Human-Friendly`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10160/)
+> **Note**: This sample code project is associated with WWDC20 session [10160: Formatters: Make Data Human-Friendly](https://developer.apple.com/videos/play/wwdc2020/10160/)
 
 ## See Also
 
-- [Building a Localized Food-Ordering App](building-a-localized-food-ordering-app.md)
+### Essentials
+- [Building a Localized Food-Ordering App](./building-a-localized-food-ordering-app.md)
   Format, style, and localize your app’s text for use in multiple languages with string formatting, attributed strings, and automatic grammar agreement.
 
 

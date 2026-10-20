@@ -1,16 +1,17 @@
 # failedToSendCommand
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sending a PTP command failed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ static var failedToSendCommand: ICReturnPTPDeviceError.Code { get }
 
 ## See Also
 
-- [ICReturnPTPDeviceError.Code](icreturnptpdeviceerror/code.md)
+### Error Codes
+- [ICReturnPTPDeviceError.Code](./code.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # label
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that provides the title of the group box.
 
@@ -20,7 +21,8 @@ let label: GroupBoxStyleConfiguration.Label
 
 ## See Also
 
-- [GroupBoxStyleConfiguration.Label](groupboxstyleconfiguration/label-swift.struct.md)
+### Configuring the label
+- [GroupBoxStyleConfiguration.Label](./label-swift.struct.md)
   A type-erased label of a group box.
 
 

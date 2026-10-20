@@ -1,7 +1,8 @@
 # aeBuildSyntaxBadEOF
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An unexpected end of format string was encountered.
 

@@ -1,7 +1,8 @@
 # SecAuthenticationType.any
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that any authentication type is acceptable.
 
@@ -13,6 +14,10 @@ Specifies that any authentication type is acceptable.
 
 ```swift
 case any
+```
+
+```c
+kSecAuthenticationTypeAny
 ```
 
 #### Discussion

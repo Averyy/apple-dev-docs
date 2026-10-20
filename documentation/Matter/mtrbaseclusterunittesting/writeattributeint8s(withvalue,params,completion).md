@@ -1,7 +1,8 @@
 # writeAttributeInt8s(withValue:params:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeInt8s(withValue value: NSNumber, params: MTRWriteParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeInt8s(withValue value: NSNumber, params: MTRWriteParams?) async throws
+```
+
+```objc
+- (void) writeAttributeInt8sWithValue:(NSNumber *) value params:(MTRWriteParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

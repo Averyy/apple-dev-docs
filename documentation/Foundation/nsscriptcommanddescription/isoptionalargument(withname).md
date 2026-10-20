@@ -1,7 +1,8 @@
 # isOptionalArgument(withName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the command argument identified by the specified argument key is an optional argument.
 
@@ -15,9 +16,13 @@ Returns a Boolean value that indicates whether the command argument identified b
 func isOptionalArgument(withName argumentName: String) -> Bool
 ```
 
+```objc
+- (BOOL) isOptionalArgumentWithName:(NSString *) argumentName;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified argument exists and is optional; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the specified argument exists and is optional; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -25,11 +30,12 @@ func isOptionalArgument(withName argumentName: String) -> Bool
 
 ## See Also
 
-- [func appleEventCodeForArgument(withName: String) -> FourCharCode](nsscriptcommanddescription/appleeventcodeforargument(withname:).md)
+### Getting Command Argument Information
+- [func appleEventCodeForArgument(withName: String) -> FourCharCode](./appleeventcodeforargument%28withname%29.md)
   Returns the Apple event code for the specified command argument of the receiver.
-- [var argumentNames: [String]](nsscriptcommanddescription/argumentnames.md)
+- [var argumentNames: [String]](./argumentnames.md)
   Returns the names (or keys) for all arguments of the receiver’s command.
-- [func typeForArgument(withName: String) -> String?](nsscriptcommanddescription/typeforargument(withname:).md)
+- [func typeForArgument(withName: String) -> String?](./typeforargument%28withname%29.md)
   Returns the type of the command argument identified by the specified key.
 
 

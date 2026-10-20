@@ -1,17 +1,24 @@
 # MPMovieSourceType.streaming
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 case streaming
+```
+
+```c
+MPMovieSourceTypeStreaming
 ```
 
 #### Discussion
@@ -20,8 +27,9 @@ The movie is a live or on-demand stream.
 
 ## See Also
 
-- [MPMovieSourceType.unknown](mpmoviesourcetype/unknown.md)
-- [MPMovieSourceType.file](mpmoviesourcetype/file.md)
+### Constants
+- [MPMovieSourceType.unknown](./unknown.md)
+- [MPMovieSourceType.file](./file.md)
 
 
 ---

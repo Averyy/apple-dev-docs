@@ -1,7 +1,8 @@
 # PresentationCommand.setCamera(_:)
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a command that specifies the camera ID for a specific frame during playback.
 

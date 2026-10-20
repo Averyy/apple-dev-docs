@@ -1,7 +1,8 @@
 # kSecAttrProtocolRTSPProxy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 RTSP proxy.
 
@@ -18,6 +19,10 @@ RTSP proxy.
 
 ```swift
 let kSecAttrProtocolRTSPProxy: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolRTSPProxy;
 ```
 
 

@@ -2,18 +2,23 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the image of a given button cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func insertNewButtonImage(_ newButtonImage: NSImage, in buttonCell: NSButtonCell)
+```
+
+```objc
+- (void) insertNewButtonImage:(NSImage *) newButtonImage in:(NSButtonCell *) buttonCell;
 ```
 
 #### Discussion
@@ -27,13 +32,14 @@ This method should perform application-specific manipulation of the image before
 
 ## See Also
 
-- [func setMode(NSColorPanel.Mode)](nscolorpickingdefault/setmode(_:).md)
+### Configuring Color Pickers
+- [func setMode(NSColorPanel.Mode)](./setmode%28_%29.md)
   Specifies the receiver’s mode.
-- [func provideNewButtonImage() -> NSImage](nscolorpickingdefault/providenewbuttonimage.md)
+- [func provideNewButtonImage() -> NSImage](./providenewbuttonimage%28%29.md)
   Provides the image of the button used to select the receiver in the color panel.
-- [func minContentSize() -> NSSize](nscolorpickingdefault/mincontentsize.md)
+- [func minContentSize() -> NSSize](./mincontentsize%28%29.md)
   Indicates the receiver’s minimum content size.
-- [func buttonToolTip() -> String](nscolorpickingdefault/buttontooltip.md)
+- [func buttonToolTip() -> String](./buttontooltip%28%29.md)
   Provides the toolbar button help tag.
 
 

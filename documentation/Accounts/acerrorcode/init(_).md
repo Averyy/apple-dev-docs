@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Accounts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new error code structure.
 
@@ -23,7 +24,8 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](acerrorcode/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Initializes a new error code structure.
 
 

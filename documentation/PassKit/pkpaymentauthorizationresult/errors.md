@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 List of errors in the Apple Pay sheet.
 
@@ -19,17 +20,22 @@ List of errors in the Apple Pay sheet.
 var errors: [any Error]! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) NSArray<NSError *> * errors;
+```
+
 #### Discussion
 
-If the Apple Pay sheet contains errors, you provide a [`PKPaymentAuthorizationStatus.failure`](pkpaymentauthorizationstatus/failure.md) status to [`PKPaymentAuthorizationResult`](pkpaymentauthorizationresult.md), and include the individual errors in this array. If there are no errors, you provide a [`PKPaymentAuthorizationStatus.success`](pkpaymentauthorizationstatus/success.md) status and leave the error array empty. Errors are of the standard type, [`NSError`](https://developer.apple.com/documentation/foundation/nserror). To create errors, you can either use the convenience methods found in [`PKPaymentRequest`](pkpaymentrequest.md), or create an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) using the domain, error codes, and user info from [`PKPaymentError`](pkpaymenterror.md).
+If the Apple Pay sheet contains errors, you provide a [`PKPaymentAuthorizationStatus.failure`](../pkpaymentauthorizationstatus/failure.md) status to [`PKPaymentAuthorizationResult`](../pkpaymentauthorizationresult.md), and include the individual errors in this array. If there are no errors, you provide a [`PKPaymentAuthorizationStatus.success`](../pkpaymentauthorizationstatus/success.md) status and leave the error array empty. Errors are of the standard type, [`NSError`](../../Foundation/nserror.md). To create errors, you can either use the convenience methods found in [`PKPaymentRequest`](../pkpaymentrequest.md), or create an [`NSError`](../../Foundation/nserror.md) using the domain, error codes, and user info from [`PKPaymentError`](../pkpaymenterror.md).
 
 Add the errors to the array in order of severity, with the most important error first.
 
 ## See Also
 
-- [var status: PKPaymentAuthorizationStatus](pkpaymentauthorizationresult/status.md)
+### Setting payment authorization status and errors
+- [var status: PKPaymentAuthorizationStatus](./status.md)
   Payment authorization general status.
-- [enum PKPaymentAuthorizationStatus](pkpaymentauthorizationstatus.md)
+- [enum PKPaymentAuthorizationStatus](../pkpaymentauthorizationstatus.md)
   General success and failure status for payment authorization.
 
 

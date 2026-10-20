@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/phrasecountgenerator/iterator.md)
+### Protocol requirements
+- [SFCustomLanguageModelData.PhraseCountGenerator.Iterator](./iterator.md)
 
 
 ---

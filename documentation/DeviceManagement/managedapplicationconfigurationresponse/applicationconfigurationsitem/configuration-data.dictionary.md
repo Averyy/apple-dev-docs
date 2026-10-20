@@ -1,7 +1,8 @@
 # ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains a managed app’s configuration items.
 
@@ -16,7 +17,7 @@ A dictionary that contains a managed app’s configuration items.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration
 ```
 

@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagIsNonMixable
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A flag to indicate whether the PCM format can’t mix.
 
@@ -10,17 +11,18 @@ A flag to indicate whether the PCM format can’t mix.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagIsNonMixable
 ```
 
 #### Discussion
 
-This flag is a synonym of [`FormatFlagIsNonMixable`](audiodriverkit/iouseraudioformatflags/formatflagisnonmixable.md).
+This flag is a synonym of [`FormatFlagIsNonMixable`](./formatflagisnonmixable.md).
 
 ## See Also
 
-- [FormatFlagIsNonMixable](audiodriverkit/iouseraudioformatflags/formatflagisnonmixable.md)
+### Mixability Flags
+- [FormatFlagIsNonMixable](./formatflagisnonmixable.md)
   A flag to indicate whether the format can’t mix.
 
 

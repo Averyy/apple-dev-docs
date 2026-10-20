@@ -1,17 +1,22 @@
 # setSupervisionTimeout(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the connection supervision timeout.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setSupervisionTimeout(_ timeout: UInt16) -> IOReturn
+```
+
+```objc
+- (IOReturn) setSupervisionTimeout:(UInt16) timeout;
 ```
 
 #### Return Value

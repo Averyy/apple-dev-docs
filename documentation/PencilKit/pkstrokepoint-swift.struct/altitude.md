@@ -1,7 +1,8 @@
 # altitude
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The altitude of this point in radians.
 
@@ -20,13 +21,14 @@ var altitude: CGFloat { get }
 
 ## Mentions
 
-- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+- [Importing Bézier path data into PencilKit](../importing-external-drawing-data-into-pencilkit.md)
 
 ## See Also
 
-- [var azimuth: CGFloat](pkstrokepoint-swift.struct/azimuth.md)
+### Getting the point’s touch data
+- [var azimuth: CGFloat](./azimuth.md)
   The azimuth of this point in radians.
-- [var force: CGFloat](pkstrokepoint-swift.struct/force.md)
+- [var force: CGFloat](./force.md)
   The amount of force applied by the touch.
 
 

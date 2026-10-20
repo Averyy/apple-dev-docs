@@ -1,7 +1,8 @@
 # Matrix4x4 (Float)
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A constant Matrix4x4 (Float) value.
 
@@ -19,37 +20,46 @@ A constant Matrix4x4 (Float) value.
 
 #### Parameter Types
 
+| Input | Type |
+| --- | --- |
+| `Value` | Matrix4x4f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Matrix4x4f |
+
 ## See Also
 
-- [Float](procedural/float.md)
+### Nodes
+- [Float](./float.md)
   A constant floating-point numeric value.
-- [Color3 (Float)](procedural/color3-(float).md)
+- [Color3 (Float)](./color3-%28float%29.md)
   A constant Color3 (Float) value.
-- [Color4 (Float)](procedural/color4-(float).md)
+- [Color4 (Float)](./color4-%28float%29.md)
   A constant Color4 (Float) value.
-- [Vector2 (Float)](procedural/vector2-(float).md)
+- [Vector2 (Float)](./vector2-%28float%29.md)
   A constant Vector2 (Float) value.
-- [Vector3 (Float)](procedural/vector3-(float).md)
+- [Vector3 (Float)](./vector3-%28float%29.md)
   A constant Vector3 (Float) value.
-- [Vector4 (Float)](procedural/vector4-(float).md)
+- [Vector4 (Float)](./vector4-%28float%29.md)
   A constant Vector4 (Float) value.
-- [Boolean](procedural/boolean.md)
+- [Boolean](./boolean.md)
   A constant boolean (true/false) value.
-- [Integer](procedural/integer.md)
+- [Integer](./integer.md)
   A constant integer numeric value.
-- [Matrix3x3 (Float)](procedural/matrix3x3-(float).md)
+- [Matrix3x3 (Float)](./matrix3x3-%28float%29.md)
   A constant Matrix3x3 (Float) value.
-- [String](procedural/string.md)
+- [String](./string.md)
   A constant string (text) value.
-- [Image File](procedural/image-file.md)
+- [Image File](./image-file.md)
   A constant path refering to an arbitrary image file on disk.
-- [Half](procedural/half.md)
+- [Half](./half.md)
   A constant half-precision floating-point numeric value.
-- [Vector2 (Half)](procedural/vector2-(half).md)
+- [Vector2 (Half)](./vector2-%28half%29.md)
   A constant half-precision floating-point Vector2 numeric value.
-- [Vector3 (Half)](procedural/vector3-(half).md)
+- [Vector3 (Half)](./vector3-%28half%29.md)
   A constant half-precision floating-point Vector3 numeric value.
-- [Vector4 (Half)](procedural/vector4-(half).md)
+- [Vector4 (Half)](./vector4-%28half%29.md)
   A constant half-precision floating-point Vector4 numeric value.
 
 

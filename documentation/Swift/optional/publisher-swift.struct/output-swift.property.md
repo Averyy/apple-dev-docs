@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output to deliver to each subscriber.
 

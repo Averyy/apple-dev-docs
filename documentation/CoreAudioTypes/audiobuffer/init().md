@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty audio buffer.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(mNumberChannels: UInt32, mDataByteSize: UInt32, mData: UnsafeMutableRawPointer?)](audiobuffer/init(mnumberchannels:mdatabytesize:mdata:).md)
+### Creating a Buffer
+- [init(mNumberChannels: UInt32, mDataByteSize: UInt32, mData: UnsafeMutableRawPointer?)](./init%28mnumberchannels,mdatabytesize,mdata%29.md)
   Creates an audio buffer with audio data.
 
 

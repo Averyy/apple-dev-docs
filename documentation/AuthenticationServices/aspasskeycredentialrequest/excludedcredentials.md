@@ -1,7 +1,8 @@
 # excludedCredentials
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of IDs that represent existing passkeys for the account, to prevent creation of duplicate passkeys.
 
@@ -16,6 +17,10 @@ A list of IDs that represent existing passkeys for the account, to prevent creat
 
 ```swift
 var excludedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<ASAuthorizationPlatformPublicKeyCredentialDescriptor *> * excludedCredentials;
 ```
 
 #### Discussion

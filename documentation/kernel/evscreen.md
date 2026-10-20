@@ -1,14 +1,15 @@
 # EVScreen
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef volatile _evScreen EVScreen;
 ```
 

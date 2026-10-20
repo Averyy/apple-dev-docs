@@ -1,7 +1,8 @@
 # NSFetchRequestExpression
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An expression that evaluates the result of a fetch request on a managed object context.
 
@@ -10,7 +11,7 @@ An expression that evaluates the result of a fetch request on a managed object c
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,58 +21,63 @@ An expression that evaluates the result of a fetch request on a managed object c
 class NSFetchRequestExpression
 ```
 
+```objc
+@interface NSFetchRequestExpression : NSExpression
+```
+
 #### Overview
 
-`NSFetchRequestExpression` inherits from [`NSExpression`](https://developer.apple.com/documentation/foundation/nsexpression), which provides most of the basic behavior. The first argument must be an expression which evaluates to an `NSFetchRequest` object, and the second must be an expression which evaluates to an `NSManagedObjectContext` object. If you simply want the count for the request, the `countOnly` argument should be [`true`](https://developer.apple.com/documentation/swift/true).
+`NSFetchRequestExpression` inherits from [`NSExpression`](../Foundation/nsexpression.md), which provides most of the basic behavior. The first argument must be an expression which evaluates to an `NSFetchRequest` object, and the second must be an expression which evaluates to an `NSManagedObjectContext` object. If you simply want the count for the request, the `countOnly` argument should be [`true`](../Swift/true.md).
 
 ## Topics
 
 ### Creating a Fetch Request Expression
-- [class func expression(forFetch: NSExpression, context: NSExpression, countOnly: Bool) -> NSExpression](nsfetchrequestexpression/expression(forfetch:context:countonly:).md)
+- [class func expression(forFetch: NSExpression, context: NSExpression, countOnly: Bool) -> NSExpression](./nsfetchrequestexpression/expression%28forfetch,context,countonly%29.md)
   Returns an expression which will evaluate to the result of executing a fetch request on a context.
 ### Examining a Fetch Request Expression
-- [var requestExpression: NSExpression](nsfetchrequestexpression/requestexpression.md)
+- [var requestExpression: NSExpression](./nsfetchrequestexpression/requestexpression.md)
   The expression for the receiver’s fetch request.
-- [var contextExpression: NSExpression](nsfetchrequestexpression/contextexpression.md)
+- [var contextExpression: NSExpression](./nsfetchrequestexpression/contextexpression.md)
   The expression for the receiver’s managed object context.
-- [var isCountOnlyRequest: Bool](nsfetchrequestexpression/iscountonlyrequest.md)
+- [var isCountOnlyRequest: Bool](./nsfetchrequestexpression/iscountonlyrequest.md)
   Returns a Boolean value that indicates whether the receiver represents a count-only fetch request.
 ### Constants
-- [var NSFetchRequestExpressionType: NSExpression.ExpressionType](nsfetchrequestexpressiontype.md)
+- [var NSFetchRequestExpressionType: NSExpression.ExpressionType](./nsfetchrequestexpressiontype.md)
   This constant specifies the fetch request expression type.
 
 ## Relationships
 
 ### Inherits From
-- [NSExpression](../foundation/nsexpression.md)
+- [NSExpression](../Foundation/nsexpression.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var predicate: NSPredicate?](nsfetchrequest/predicate.md)
+### Specifying Fetch Constraints
+- [var predicate: NSPredicate?](./nsfetchrequest/predicate.md)
   The predicate of the fetch request.
-- [var fetchLimit: Int](nsfetchrequest/fetchlimit.md)
+- [var fetchLimit: Int](./nsfetchrequest/fetchlimit.md)
   The fetch limit of the fetch request.
-- [var fetchOffset: Int](nsfetchrequest/fetchoffset.md)
+- [var fetchOffset: Int](./nsfetchrequest/fetchoffset.md)
   The fetch offset of the fetch request.
-- [var fetchBatchSize: Int](nsfetchrequest/fetchbatchsize.md)
+- [var fetchBatchSize: Int](./nsfetchrequest/fetchbatchsize.md)
   The batch size of the objects specified in the fetch request.
-- [var affectedStores: [NSPersistentStore]?](nsfetchrequest/affectedstores.md)
+- [var affectedStores: [NSPersistentStore]?](./nsfetchrequest/affectedstores.md)
   An array of persistent stores specified for the fetch request.
-- [class NSExpressionDescription](nsexpressiondescription.md)
+- [class NSExpressionDescription](./nsexpressiondescription.md)
   An object that describes an expression to include with a fetch request.
-- [class NSFetchedPropertyDescription](nsfetchedpropertydescription.md)
+- [class NSFetchedPropertyDescription](./nsfetchedpropertydescription.md)
   A description object used to define which properties are fetched from Core Data.
 
 

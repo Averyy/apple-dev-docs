@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language the model supports.
 
@@ -20,17 +21,22 @@ The language the model supports.
 var language: NLLanguage? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NLLanguage language;
+```
+
 ## See Also
 
-- [var revision: Int](nlmodelconfiguration/revision.md)
+### Accessing the configuration
+- [var revision: Int](./revision.md)
   The version of the Natural Language framework that trained the model.
-- [class func supportedRevisions(for: NLModel.ModelType) -> IndexSet](nlmodelconfiguration/supportedrevisions(for:).md)
+- [class func supportedRevisions(for: NLModel.ModelType) -> IndexSet](./supportedrevisions%28for%29.md)
   Returns the versions of the Natural Language framework the OS supports.
-- [class func currentRevision(for: NLModel.ModelType) -> Int](nlmodelconfiguration/currentrevision(for:).md)
+- [class func currentRevision(for: NLModel.ModelType) -> Int](./currentrevision%28for%29.md)
   Returns the current Natural Language framework version in the OS.
-- [var type: NLModel.ModelType](nlmodelconfiguration/type.md)
+- [var type: NLModel.ModelType](./type.md)
   The natural language model type of the model.
-- [NLModel.ModelType](nlmodel/modeltype.md)
+- [NLModel.ModelType](../nlmodel/modeltype.md)
   The different types of a natural language model.
 
 

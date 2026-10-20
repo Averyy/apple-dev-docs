@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the picker interface.
 
@@ -14,13 +15,18 @@ Closes the picker interface.
 func close()
 ```
 
+```objc
+- (void) close;
+```
+
 #### Discussion
 
-The [`sharingServicePicker(_:didChoose:)`](nssharingservicepickerdelegate/sharingservicepicker(_:didchoose:).md) method will be invoked if the [`delegate`](nssharingservicepicker/delegate.md) is set to `nil`.
+The [`sharingServicePicker(_:didChoose:)`](../nssharingservicepickerdelegate/sharingservicepicker%28_,didchoose%29.md) method will be invoked if the [`delegate`](./delegate.md) is set to `nil`.
 
 ## See Also
 
-- [func show(relativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge)](nssharingservicepicker/show(relativeto:of:preferrededge:).md)
+### Displaying the sharing service picker
+- [func show(relativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge)](./show%28relativeto,of,preferrededge%29.md)
   Shows the picker interface and populates it with the relevant sharing services.
 
 

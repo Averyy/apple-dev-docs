@@ -1,7 +1,8 @@
 # NSFoundationVersionNumber10_9
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Foundation version released in macOS 10.9.
 
@@ -20,37 +21,42 @@ Foundation version released in macOS 10.9.
 var NSFoundationVersionNumber10_9: Int32 { get }
 ```
 
+```c
+#define NSFoundationVersionNumber10_9
+```
+
 ## See Also
 
-- [var NSFoundationVersionNumber10_0: Double](nsfoundationversionnumber10_0.md)
+### macOS Version Numbers
+- [var NSFoundationVersionNumber10_0: Double](./nsfoundationversionnumber10_0.md)
   Foundation version released in macOS 10.0.
-- [var NSFoundationVersionNumber10_1: Double](nsfoundationversionnumber10_1.md)
+- [var NSFoundationVersionNumber10_1: Double](./nsfoundationversionnumber10_1.md)
   Foundation version released in macOS 10.1.
-- [var NSFoundationVersionNumber10_1_1: Double](nsfoundationversionnumber10_1_1.md)
+- [var NSFoundationVersionNumber10_1_1: Double](./nsfoundationversionnumber10_1_1.md)
   Foundation version released in macOS 10.1.1.
-- [var NSFoundationVersionNumber10_1_2: Double](nsfoundationversionnumber10_1_2.md)
+- [var NSFoundationVersionNumber10_1_2: Double](./nsfoundationversionnumber10_1_2.md)
   Foundation version released in macOS 10.1.2.
-- [var NSFoundationVersionNumber10_1_3: Double](nsfoundationversionnumber10_1_3.md)
+- [var NSFoundationVersionNumber10_1_3: Double](./nsfoundationversionnumber10_1_3.md)
   Foundation version released in macOS 10.1.3.
-- [var NSFoundationVersionNumber10_1_4: Double](nsfoundationversionnumber10_1_4.md)
+- [var NSFoundationVersionNumber10_1_4: Double](./nsfoundationversionnumber10_1_4.md)
   Foundation version released in macOS 10.1.4.
-- [var NSFoundationVersionNumber10_2: Double](nsfoundationversionnumber10_2.md)
+- [var NSFoundationVersionNumber10_2: Double](./nsfoundationversionnumber10_2.md)
   Foundation version released in macOS 10.2.
-- [var NSFoundationVersionNumber10_2_1: Double](nsfoundationversionnumber10_2_1.md)
+- [var NSFoundationVersionNumber10_2_1: Double](./nsfoundationversionnumber10_2_1.md)
   Foundation version released in macOS 10.2.1.
-- [var NSFoundationVersionNumber10_2_2: Double](nsfoundationversionnumber10_2_2.md)
+- [var NSFoundationVersionNumber10_2_2: Double](./nsfoundationversionnumber10_2_2.md)
   Foundation version released in macOS 10.2.2.
-- [var NSFoundationVersionNumber10_2_3: Double](nsfoundationversionnumber10_2_3.md)
+- [var NSFoundationVersionNumber10_2_3: Double](./nsfoundationversionnumber10_2_3.md)
   Foundation version released in macOS 10.2.3.
-- [var NSFoundationVersionNumber10_2_4: Double](nsfoundationversionnumber10_2_4.md)
+- [var NSFoundationVersionNumber10_2_4: Double](./nsfoundationversionnumber10_2_4.md)
   Foundation version released in macOS 10.2.4.
-- [var NSFoundationVersionNumber10_2_5: Double](nsfoundationversionnumber10_2_5.md)
+- [var NSFoundationVersionNumber10_2_5: Double](./nsfoundationversionnumber10_2_5.md)
   Foundation version released in macOS 10.2.5.
-- [var NSFoundationVersionNumber10_2_6: Double](nsfoundationversionnumber10_2_6.md)
+- [var NSFoundationVersionNumber10_2_6: Double](./nsfoundationversionnumber10_2_6.md)
   Foundation version released in macOS version 10.2.6.
-- [var NSFoundationVersionNumber10_2_7: Double](nsfoundationversionnumber10_2_7.md)
+- [var NSFoundationVersionNumber10_2_7: Double](./nsfoundationversionnumber10_2_7.md)
   Foundation version released in macOS 10.2.7.
-- [var NSFoundationVersionNumber10_2_8: Double](nsfoundationversionnumber10_2_8.md)
+- [var NSFoundationVersionNumber10_2_8: Double](./nsfoundationversionnumber10_2_8.md)
   Foundation version released in macOS 10.2.8.
 
 

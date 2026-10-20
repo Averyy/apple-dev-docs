@@ -1,7 +1,8 @@
 # destroy(options:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func destroy(options: IOUSBHostObjectDestroyOptions = [])
+```
+
+```objc
+- (void) destroyWithOptions:(IOUSBHostObjectDestroyOptions) options;
 ```
 
 #### Discussion

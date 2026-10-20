@@ -1,7 +1,8 @@
 # BindPath.Part.materialParameter(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A path component to name a material parameter to animate
 

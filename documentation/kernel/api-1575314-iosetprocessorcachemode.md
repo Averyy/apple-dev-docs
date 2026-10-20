@@ -1,14 +1,15 @@
 # IOSetProcessorCacheMode
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.7
 
 ## Declaration
 
-```swift
+```c
 IOReturn IOSetProcessorCacheMode(task_t task, IOVirtualAddress address, IOByteCount length, IOOptionBits cacheMode);
 ```
 

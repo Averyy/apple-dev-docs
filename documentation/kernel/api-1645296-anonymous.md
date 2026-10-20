@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSBCModePageCachingCode](1645296-anonymous/ksbcmodepagecachingcode.md)
-- [kSBCModePageFlexibleDiskCode](1645296-anonymous/ksbcmodepageflexiblediskcode.md)
-- [kSBCModePageFormatDeviceCode](1645296-anonymous/ksbcmodepageformatdevicecode.md)
-- [kSBCModePageRigidDiskGeometryCode](1645296-anonymous/ksbcmodepagerigiddiskgeometrycode.md)
+- [kSBCModePageCachingCode](./api-1645296-anonymous/ksbcmodepagecachingcode.md)
+- [kSBCModePageFlexibleDiskCode](./api-1645296-anonymous/ksbcmodepageflexiblediskcode.md)
+- [kSBCModePageFormatDeviceCode](./api-1645296-anonymous/ksbcmodepageformatdevicecode.md)
+- [kSBCModePageRigidDiskGeometryCode](./api-1645296-anonymous/ksbcmodepagerigiddiskgeometrycode.md)
 
 
 ---

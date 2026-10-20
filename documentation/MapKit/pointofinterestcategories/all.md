@@ -1,7 +1,8 @@
 # all
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of all points of interest categories, both included and excluded.
 
@@ -11,7 +12,7 @@ A list of all points of interest categories, both included and excluded.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static var all: PointOfInterestCategories { get }
 
 ## See Also
 
-- [static var excludingAll: PointOfInterestCategories](pointofinterestcategories/excludingall.md)
+### Categories to include or exclude
+- [static var excludingAll: PointOfInterestCategories](./excludingall.md)
   A list of point of interest categories to exclude from display on the map.
 
 

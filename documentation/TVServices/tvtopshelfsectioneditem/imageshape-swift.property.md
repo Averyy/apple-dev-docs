@@ -1,7 +1,8 @@
 # imageShape
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The aspect ratio of the item’s image.
 
@@ -14,13 +15,18 @@ The aspect ratio of the item’s image.
 var imageShape: TVTopShelfSectionedItem.ImageShape { get set }
 ```
 
+```objc
+@property (nonatomic) TVTopShelfSectionedItemImageShape imageShape;
+```
+
 #### Discussion
 
-Use this property to specify the shape of the image you use for the item. The image shape determines the dimensions to use when creating the image. For a list of possible values, see [`TVTopShelfSectionedItem.ImageShape`](tvtopshelfsectioneditem/imageshape-swift.enum.md).
+Use this property to specify the shape of the image you use for the item. The image shape determines the dimensions to use when creating the image. For a list of possible values, see [`TVTopShelfSectionedItem.ImageShape`](./imageshape-swift.enum.md).
 
 ## See Also
 
-- [TVTopShelfSectionedItem.ImageShape](tvtopshelfsectioneditem/imageshape-swift.enum.md)
+### Setting the Image Shape
+- [TVTopShelfSectionedItem.ImageShape](./imageshape-swift.enum.md)
   Constants indicating the aspect ratio of an image.
 
 

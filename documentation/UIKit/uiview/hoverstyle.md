@@ -1,7 +1,8 @@
 # hoverStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hover style for the view.
 
@@ -18,15 +19,20 @@ The hover style for the view.
 var hoverStyle: UIHoverStyle? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIHoverStyle * hoverStyle;
+```
+
 #### Discussion
 
 The value of this property defaults to `nil`, which indicates that the view doesn’t have any hover effect. Subclasses can configure this style to use a different default value.
 
 ## See Also
 
-- [class UIHoverStyle](uihoverstyle.md)
+### Managing the hover appearance
+- [class UIHoverStyle](../uihoverstyle.md)
   The hover style to apply to a view, including an effect and a shape to use for displaying that effect.
-- [class UIHoverEffectLayer](uihovereffectlayer.md)
+- [class UIHoverEffectLayer](../uihovereffectlayer.md)
   A layer type that can be used to apply a hover effect to its sublayers.
 
 

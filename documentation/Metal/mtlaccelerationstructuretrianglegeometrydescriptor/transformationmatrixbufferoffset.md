@@ -1,7 +1,8 @@
 # transformationMatrixBufferOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,10 +18,15 @@
 var transformationMatrixBufferOffset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger transformationMatrixBufferOffset;
+```
+
 ## See Also
 
-- [var transformationMatrixLayout: MTLMatrixLayout](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixlayout.md)
-- [var transformationMatrixBuffer: (any MTLBuffer)?](mtlaccelerationstructuretrianglegeometrydescriptor/transformationmatrixbuffer.md)
+### Configuring transformation data
+- [var transformationMatrixLayout: MTLMatrixLayout](./transformationmatrixlayout.md)
+- [var transformationMatrixBuffer: (any MTLBuffer)?](./transformationmatrixbuffer.md)
 
 
 ---

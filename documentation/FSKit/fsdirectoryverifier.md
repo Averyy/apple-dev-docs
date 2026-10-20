@@ -1,7 +1,8 @@
 # FSDirectoryVerifier
 
 **Framework**: FSKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 
@@ -14,40 +15,45 @@ A tool to detect whether the directory contents changed since the last call to e
 struct FSDirectoryVerifier
 ```
 
+```c
+typedef uint64_t FSDirectoryVerifier;
+```
+
 #### Overview
 
-Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md) defines the semantics of this value; it’s opaque to FSKit.
+Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](./fsvolume/operations/enumeratedirectory%28_,startingat,verifier,attributes,packer,replyhandler%29.md) defines the semantics of this value; it’s opaque to FSKit.
 
 ## Topics
 
 ### Initializing a verifier
-- [init(UInt64)](fsdirectoryverifier/init(_:).md)
-- [init(rawValue: UInt64)](fsdirectoryverifier/init(rawvalue:).md)
+- [init(UInt64)](./fsdirectoryverifier/init%28_%29.md)
+- [init(rawValue: UInt64)](./fsdirectoryverifier/init%28rawvalue%29.md)
 ### Using defined verifier values
-- [static let initial: FSDirectoryVerifier](fsdirectoryverifier/initial.md)
+- [static let initial: FSDirectoryVerifier](./fsdirectoryverifier/initial.md)
   The constant initial value for the directory-enumeration verifier.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func enumerateDirectory(FSItem, startingAt: FSDirectoryCookie, verifier: FSDirectoryVerifier, attributes: FSItem.GetAttributesRequest?, packer: FSDirectoryEntryPacker, context: FSContext, replyHandler: (FSEnumerateDirectoryResult?, (any Error)?) -> Void)](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md)
+### Inspecting directory contents
+- [func enumerateDirectory(FSItem, startingAt: FSDirectoryCookie, verifier: FSDirectoryVerifier, attributes: FSItem.GetAttributesRequest?, packer: FSDirectoryEntryPacker, context: FSContext, replyHandler: (FSEnumerateDirectoryResult?, (any Error)?) -> Void)](./fsvolume/handler/enumeratedirectory%28_,startingat,verifier,attributes,packer,context,replyhandler%29.md)
   Enumerates the contents of the given directory.
-- [struct FSDirectoryCookie](fsdirectorycookie.md)
+- [struct FSDirectoryCookie](./fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
-- [struct FSDirectoryCookie](fsdirectorycookie.md)
+- [struct FSDirectoryCookie](./fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
-- [class FSDirectoryEntryPacker](fsdirectoryentrypacker.md)
+- [class FSDirectoryEntryPacker](./fsdirectoryentrypacker.md)
   An object used to provide items during a directory enumeration.
-- [class FSEnumerateDirectoryResult](fsenumeratedirectoryresult.md)
+- [class FSEnumerateDirectoryResult](./fsenumeratedirectoryresult.md)
   The result of an enumerate-directory call.
 
 

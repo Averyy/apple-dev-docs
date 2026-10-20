@@ -1,7 +1,8 @@
 # bNumDeviceCaps
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of separate device capability descriptors in the binary object store.
 
@@ -10,17 +11,18 @@ The number of separate device capability descriptors in the binary object store.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bNumDeviceCaps;
 ```
 
 ## See Also
 
-- [bLength](iousbbosdescriptor/blength.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
   The size of the descriptor in bytes.
-- [bDescriptorType](iousbbosdescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [wTotalLength](iousbbosdescriptor/wtotallength.md)
+- [wTotalLength](./wtotallength.md)
   The length, in bytes, of the descriptor and all of its subdescriptors.
 
 

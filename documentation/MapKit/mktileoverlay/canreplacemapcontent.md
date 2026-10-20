@@ -1,7 +1,8 @@
 # canReplaceMapContent
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the tile content is fully opaque.
 
@@ -19,21 +20,26 @@ A Boolean value that indicates whether the tile content is fully opaque.
 var canReplaceMapContent: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL canReplaceMapContent;
+```
+
 #### Discussion
 
-If the tile content you provide can cover the entire drawing area with opaque content, set this property to [`true`](https://developer.apple.com/documentation/swift/true). Doing so serves as a hint to the map view that it doesn’t need to draw any additional content underneath your tiles. Set this property to [`false`](https://developer.apple.com/documentation/swift/false) if your tiles contain any transparency.
+If the tile content you provide can cover the entire drawing area with opaque content, set this property to [`true`](../../Swift/true.md). Doing so serves as a hint to the map view that it doesn’t need to draw any additional content underneath your tiles. Set this property to [`false`](../../Swift/false.md) if your tiles contain any transparency.
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var tileSize: CGSize](mktileoverlay/tilesize.md)
+### Accessing the tile attributes
+- [var tileSize: CGSize](./tilesize.md)
   The size (in pixels) of your tile images.
-- [var isGeometryFlipped: Bool](mktileoverlay/isgeometryflipped.md)
+- [var isGeometryFlipped: Bool](./isgeometryflipped.md)
   A Boolean value that indicates the orientation of tile indexes along the y-axis.
-- [var minimumZ: Int](mktileoverlay/minimumz.md)
+- [var minimumZ: Int](./minimumz.md)
   The minimum zoom level that the tiles of this overlay object support.
-- [var maximumZ: Int](mktileoverlay/maximumz.md)
+- [var maximumZ: Int](./maximumz.md)
   The maximum zoom level that the tiles of this overlay object support.
 
 

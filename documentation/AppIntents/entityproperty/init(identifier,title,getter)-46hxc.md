@@ -1,7 +1,8 @@
 # init(identifier:title:getter:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,8 @@
 ```swift
 convenience init<Entity>(identifier: String, title: LocalizedStringResource, getter: KeyPath<Entity, Value>) where Entity : AppEntity
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, `Value.ValueType` conforms to `Decodable`, and `Value.ValueType` conforms to `Encodable`.
 
 
 ---

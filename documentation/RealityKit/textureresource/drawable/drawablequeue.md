@@ -1,7 +1,8 @@
 # drawableQueue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The DrawableQueue that this Drawable is owned by
 
@@ -11,7 +12,7 @@ The DrawableQueue that this Drawable is owned by
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var drawableQueue: TextureResource.DrawableQueue { get }
 
 ## See Also
 
-- [var texture: any MTLTexture](textureresource/drawable/texture.md)
+### Working with a drawable
+- [var texture: any MTLTexture](./texture.md)
   A Metal texture object that contains the drawable’s contents.
-- [func present()](textureresource/drawable/present.md)
+- [func present()](./present%28%29.md)
   Presents the updated texture to the renderer as soon as possible.
 
 

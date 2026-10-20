@@ -1,7 +1,8 @@
 # CodableConfiguration
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper that makes a type codable, by supplying a configuration that provides additional information for serialization.
 
@@ -23,11 +24,11 @@ struct CodableConfiguration<T, ConfigurationProvider> where T : DecodableWithCon
 
 #### Overview
 
-[`CodableConfiguration`](codableconfiguration.md) allows you to create [`Codable`](https://developer.apple.com/documentation/swift/codable) types whose members don’t all conform to [`Codable`](https://developer.apple.com/documentation/swift/codable). For types that can’t support encoding and decoding by themselves but could become encodable and decodable with some statically-defined information, use the `@CodableConfiguration` wrapper. This lets you assign a configuration provider — a type that conforms to both [`EncodingConfigurationProviding`](encodingconfigurationproviding.md) and [`DecodingConfigurationProviding`](decodingconfigurationproviding.md) — to supply this data.
+[`CodableConfiguration`](./codableconfiguration.md) allows you to create [`Codable`](../Swift/codable.md) types whose members don’t all conform to [`Codable`](../Swift/codable.md). For types that can’t support encoding and decoding by themselves but could become encodable and decodable with some statically-defined information, use the `@CodableConfiguration` wrapper. This lets you assign a configuration provider — a type that conforms to both [`EncodingConfigurationProviding`](./encodingconfigurationproviding.md) and [`DecodingConfigurationProviding`](./decodingconfigurationproviding.md) — to supply this data.
 
-Limiting the [`CodableConfiguration`](codableconfiguration.md) to statically-defined information protects clients from loading unexpected data, similar to the protection provided by [`NSSecureCoding`](nssecurecoding.md).
+Limiting the [`CodableConfiguration`](./codableconfiguration.md) to statically-defined information protects clients from loading unexpected data, similar to the protection provided by [`NSSecureCoding`](./nssecurecoding.md).
 
-In the following example, the `Message` type uses `@CodableConfiguration` for an [`AttributedString`](attributedstring.md) property called `content`. While [`AttributedString`](attributedstring.md) does conform to [`Codable`](https://developer.apple.com/documentation/swift/codable), it can only encode its known attributes — those declared by the platform SDK — as part of this conformance. By adding a [`CodableConfiguration`](codableconfiguration.md) for the custom `MyAttributes` type, `Message` uses [`encode(to:configuration:)`](encodablewithconfiguration/encode(to:configuration:).md) when encoding `content`, which preserves the custom attributes.
+In the following example, the `Message` type uses `@CodableConfiguration` for an [`AttributedString`](./attributedstring.md) property called `content`. While [`AttributedString`](./attributedstring.md) does conform to [`Codable`](../Swift/codable.md), it can only encode its known attributes — those declared by the platform SDK — as part of this conformance. By adding a [`CodableConfiguration`](./codableconfiguration.md) for the custom `MyAttributes` type, `Message` uses [`encode(to:configuration:)`](./encodablewithconfiguration/encode%28to,configuration%29.md) when encoding `content`, which preserves the custom attributes.
 
 ```swift
 struct Message: Codable {
@@ -40,37 +41,38 @@ struct Message: Codable {
 ## Topics
 
 ### Creating a Codable Configuration
-- [init(wrappedValue: T)](codableconfiguration/init(wrappedvalue:).md)
+- [init(wrappedValue: T)](./codableconfiguration/init%28wrappedvalue%29.md)
   Creates a codable configuration wrapper for the given value.
-- [init(wrappedValue: T, from: ConfigurationProvider.Type)](codableconfiguration/init(wrappedvalue:from:)-46oo6.md)
+- [init(wrappedValue: T, from: ConfigurationProvider.Type)](./codableconfiguration/init%28wrappedvalue,from%29-46oo6.md)
   Creates a codable configuration wrapper for the given value, using the given configuration provider type.
-- [init(wrappedValue: T, from: KeyPath<AttributeScopes, ConfigurationProvider.Type>)](codableconfiguration/init(wrappedvalue:from:)-8mkxk.md)
+- [init(wrappedValue: T, from: KeyPath<AttributeScopes, ConfigurationProvider.Type>)](./codableconfiguration/init%28wrappedvalue,from%29-8mkxk.md)
   Creates a codable configuration wrapper for the given value, using given configuration provider type identified by key path.
 ### Accessing the Wrapped Value
-- [var wrappedValue: T](codableconfiguration/wrappedvalue.md)
+- [var wrappedValue: T](./codableconfiguration/wrappedvalue.md)
   The underlying value to make codable, using data from the configuration provider.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias CodableWithConfiguration](codablewithconfiguration.md)
+### Serializing Arbitrary Payloads
+- [typealias CodableWithConfiguration](./codablewithconfiguration.md)
   A type that can convert itself into and out of an external representation with the help of a configuration that handles encoding contained types.
-- [protocol DecodableWithConfiguration](decodablewithconfiguration.md)
+- [protocol DecodableWithConfiguration](./decodablewithconfiguration.md)
   A protocol for types that support decoding when supplied with an additional configuration type.
-- [protocol DecodingConfigurationProviding](decodingconfigurationproviding.md)
+- [protocol DecodingConfigurationProviding](./decodingconfigurationproviding.md)
   A protocol whose conformers provide a configuration instance to help decode types that don’t support encoding by themselves.
-- [protocol EncodableWithConfiguration](encodablewithconfiguration.md)
+- [protocol EncodableWithConfiguration](./encodablewithconfiguration.md)
   A protocol for types that support encoding when supplied with an additional configuration type.
-- [protocol EncodingConfigurationProviding](encodingconfigurationproviding.md)
+- [protocol EncodingConfigurationProviding](./encodingconfigurationproviding.md)
   A protocol whose conformers provide a configuration instance to help encode types that don’t support encoding by themselves.
 
 

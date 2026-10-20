@@ -1,7 +1,8 @@
 # aiff
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents data in AIFF audio format.
 
@@ -24,19 +25,20 @@ static var aiff: UTType { get }
 
 The identifier for this type is `public.aiff-audio`.
 
-This type conforms to a base type identified by `public.aifc-audio`, which in turn conforms to [`UTTypeAudio`](uttypeaudio.md).
+This type conforms to a base type identified by `public.aifc-audio`, which in turn conforms to [`UTTypeAudio`](../uttypeaudio.md).
 
 ## See Also
 
-- [static var mp3: UTType](uttype-swift.struct/mp3.md)
+### Audio
+- [static var mp3: UTType](./mp3.md)
   A type that represents MP3 audio.
-- [static var wav: UTType](uttype-swift.struct/wav.md)
+- [static var wav: UTType](./wav.md)
   A type that represents data in Microsoft Waveform Audio File Format.
-- [static var midi: UTType](uttype-swift.struct/midi.md)
+- [static var midi: UTType](./midi.md)
   A type that represents data in MIDI audio format.
-- [static var playlist: UTType](uttype-swift.struct/playlist.md)
+- [static var playlist: UTType](./playlist.md)
   A base type that represents a playlist.
-- [static var m3uPlaylist: UTType](uttype-swift.struct/m3uplaylist.md)
+- [static var m3uPlaylist: UTType](./m3uplaylist.md)
   A type that represents an M3U or M3U8 playlist.
 
 

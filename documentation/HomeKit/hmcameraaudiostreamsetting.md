@@ -1,7 +1,8 @@
 # HMCameraAudioStreamSetting
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The options associated with a camera’s audio stream.
 
@@ -19,35 +20,40 @@ The options associated with a camera’s audio stream.
 enum HMCameraAudioStreamSetting
 ```
 
+```c
+enum HMCameraAudioStreamSetting : NSUInteger;
+```
+
 ## Topics
 
 ### Configuring the Audio Stream
-- [HMCameraAudioStreamSetting.muted](hmcameraaudiostreamsetting/muted.md)
+- [HMCameraAudioStreamSetting.muted](./hmcameraaudiostreamsetting/muted.md)
   The setting that mutes both incoming and outgoing audio.
-- [HMCameraAudioStreamSetting.incomingAudioAllowed](hmcameraaudiostreamsetting/incomingaudioallowed.md)
+- [HMCameraAudioStreamSetting.incomingAudioAllowed](./hmcameraaudiostreamsetting/incomingaudioallowed.md)
   The setting that permits incoming audio.
-- [HMCameraAudioStreamSetting.bidirectionalAudioAllowed](hmcameraaudiostreamsetting/bidirectionalaudioallowed.md)
+- [HMCameraAudioStreamSetting.bidirectionalAudioAllowed](./hmcameraaudiostreamsetting/bidirectionalaudioallowed.md)
   The setting that permits both incoming and outgoing audio.
 ### Initializers
-- [init?(rawValue: UInt)](hmcameraaudiostreamsetting/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./hmcameraaudiostreamsetting/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var audioStreamSetting: HMCameraAudioStreamSetting](hmcamerastream/audiostreamsetting.md)
+### Configuring the audio stream
+- [var audioStreamSetting: HMCameraAudioStreamSetting](./hmcamerastream/audiostreamsetting.md)
   The stream’s current audio setting.
-- [func updateAudioStreamSetting(HMCameraAudioStreamSetting, completionHandler: ((any Error)?) -> Void)](hmcamerastream/updateaudiostreamsetting(_:completionhandler:).md)
+- [func updateAudioStreamSetting(HMCameraAudioStreamSetting, completionHandler: ((any Error)?) -> Void)](./hmcamerastream/updateaudiostreamsetting%28_,completionhandler%29.md)
   Updates an audio stream’s settings.
-- [func setAudioStreamSetting(HMCameraAudioStreamSetting)](hmcamerastream/setaudiostreamsetting(_:).md)
+- [func setAudioStreamSetting(HMCameraAudioStreamSetting)](./hmcamerastream/setaudiostreamsetting%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # errSecOCSPStatusUnrecognized
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) server does not recognize this certificate.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) server does not recognize this cer
 
 ```swift
 var errSecOCSPStatusUnrecognized: OSStatus { get }
+```
+
+```c
+errSecOCSPStatusUnrecognized
 ```
 
 

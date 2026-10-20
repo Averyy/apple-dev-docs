@@ -1,7 +1,8 @@
 # unregisterForLaunchOnCarKeyEvent()
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Unregister your app so it’s no longer relaunched in the background on CarKey events.
 

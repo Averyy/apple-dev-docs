@@ -1,7 +1,8 @@
 # CSSM_DL_DB_RECORD_EXTENDED_ATTRIBUTE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_DL_DB_RECORD_EXTENDED_ATTRIBUTE: UInt32 { get }
+```
+
+```c
+CSSM_DL_DB_RECORD_EXTENDED_ATTRIBUTE
 ```
 
 

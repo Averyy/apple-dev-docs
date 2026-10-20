@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifmedia_description {
     ...
 };
@@ -17,8 +17,8 @@ struct ifmedia_description {
 ## Topics
 
 ### Instance Properties
-- [ifmt_string](ifmedia_description/1385443-ifmt_string.md)
-- [ifmt_word](ifmedia_description/1385329-ifmt_word.md)
+- [ifmt_string](./ifmedia_description/api-1385443-ifmt_string.md)
+- [ifmt_word](./ifmedia_description/api-1385329-ifmt_word.md)
 
 
 ---

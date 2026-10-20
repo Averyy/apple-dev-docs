@@ -1,7 +1,8 @@
 # AddMediaIntentHandlingHandleInvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The result of handling an intent to add media items to a specified library or playlist.
 
@@ -10,7 +11,7 @@ The result of handling an intent to add media items to a specified library or pl
 
 ## Declaration
 
-```swift
+```
 object AddMediaIntentHandlingHandleInvocationResponse.Result
 ```
 

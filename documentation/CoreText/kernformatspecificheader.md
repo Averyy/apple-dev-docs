@@ -1,16 +1,17 @@
 # KernFormatSpecificHeader
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,42 +19,47 @@
 struct KernFormatSpecificHeader
 ```
 
+```c
+union KernFormatSpecificHeader;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](kernformatspecificheader/init.md)
-- [init(indexArray: KernIndexArrayHeader)](kernformatspecificheader/init(indexarray:).md)
-- [init(orderedList: KernOrderedListHeader)](kernformatspecificheader/init(orderedlist:).md)
-- [init(simpleArray: KernSimpleArrayHeader)](kernformatspecificheader/init(simplearray:).md)
-- [init(stateTable: KernStateHeader)](kernformatspecificheader/init(statetable:).md)
+- [init()](./kernformatspecificheader/init%28%29.md)
+- [init(indexArray: KernIndexArrayHeader)](./kernformatspecificheader/init%28indexarray%29.md)
+- [init(orderedList: KernOrderedListHeader)](./kernformatspecificheader/init%28orderedlist%29.md)
+- [init(simpleArray: KernSimpleArrayHeader)](./kernformatspecificheader/init%28simplearray%29.md)
+- [init(stateTable: KernStateHeader)](./kernformatspecificheader/init%28statetable%29.md)
 ### Instance Properties
-- [var indexArray: KernIndexArrayHeader](kernformatspecificheader/indexarray.md)
-- [var orderedList: KernOrderedListHeader](kernformatspecificheader/orderedlist.md)
-- [var simpleArray: KernSimpleArrayHeader](kernformatspecificheader/simplearray.md)
-- [var stateTable: KernStateHeader](kernformatspecificheader/statetable.md)
+- [var indexArray: KernIndexArrayHeader](./kernformatspecificheader/indexarray.md)
+- [var orderedList: KernOrderedListHeader](./kernformatspecificheader/orderedlist.md)
+- [var simpleArray: KernSimpleArrayHeader](./kernformatspecificheader/simplearray.md)
+- [var stateTable: KernStateHeader](./kernformatspecificheader/statetable.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AnchorPoint](anchorpoint.md)
-- [struct AnchorPointTable](anchorpointtable.md)
-- [struct AnkrTable](ankrtable.md)
-- [struct BslnFormat0Part](bslnformat0part.md)
-- [struct BslnFormat1Part](bslnformat1part.md)
-- [struct BslnFormat2Part](bslnformat2part.md)
-- [struct BslnFormat3Part](bslnformat3part.md)
-- [struct BslnFormatUnion](bslnformatunion.md)
-- [struct BslnTable](bslntable.md)
-- [struct FontVariation](fontvariation.md)
-- [struct JustDirectionTable](justdirectiontable.md)
-- [struct JustPCAction](justpcaction.md)
-- [struct JustPCActionSubrecord](justpcactionsubrecord.md)
-- [struct JustPCConditionalAddAction](justpcconditionaladdaction.md)
-- [struct JustPCDecompositionAction](justpcdecompositionaction.md)
+### Structures
+- [struct AnchorPoint](./anchorpoint.md)
+- [struct AnchorPointTable](./anchorpointtable.md)
+- [struct AnkrTable](./ankrtable.md)
+- [struct BslnFormat0Part](./bslnformat0part.md)
+- [struct BslnFormat1Part](./bslnformat1part.md)
+- [struct BslnFormat2Part](./bslnformat2part.md)
+- [struct BslnFormat3Part](./bslnformat3part.md)
+- [struct BslnFormatUnion](./bslnformatunion.md)
+- [struct BslnTable](./bslntable.md)
+- [struct FontVariation](./fontvariation.md)
+- [struct JustDirectionTable](./justdirectiontable.md)
+- [struct JustPCAction](./justpcaction.md)
+- [struct JustPCActionSubrecord](./justpcactionsubrecord.md)
+- [struct JustPCConditionalAddAction](./justpcconditionaladdaction.md)
+- [struct JustPCDecompositionAction](./justpcdecompositionaction.md)
 
 
 ---

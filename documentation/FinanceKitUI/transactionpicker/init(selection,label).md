@@ -1,7 +1,8 @@
 # init(selection:label:)
 
 **Framework**: FinanceKitUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker that selects a collection of transactions.
 

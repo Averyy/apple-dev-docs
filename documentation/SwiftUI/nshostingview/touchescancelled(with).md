@@ -1,7 +1,8 @@
 # touchesCancelled(with:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
@@ -15,9 +16,10 @@
 
 ## See Also
 
-- [func touchesBegan(with: NSEvent)](nshostingview/touchesbegan(with:).md)
-- [func touchesEnded(with: NSEvent)](nshostingview/touchesended(with:).md)
-- [func touchesMoved(with: NSEvent)](nshostingview/touchesmoved(with:).md)
+### Responding to touch events
+- [func touchesBegan(with: NSEvent)](./touchesbegan%28with%29.md)
+- [func touchesEnded(with: NSEvent)](./touchesended%28with%29.md)
+- [func touchesMoved(with: NSEvent)](./touchesmoved%28with%29.md)
 
 
 ---

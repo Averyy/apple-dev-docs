@@ -1,7 +1,8 @@
 # textViewWritingToolsDidEnd(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the current writing tools session ended.
 
@@ -17,9 +18,13 @@ Tells the delegate that the current writing tools session ended.
 optional func textViewWritingToolsDidEnd(_ textView: UITextView)
 ```
 
+```objc
+- (void) textViewWritingToolsDidEnd:(UITextView *) textView;
+```
+
 ## Mentions
 
-- [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Customizing Writing Tools behavior for UIKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
 #### Discussion
 
@@ -31,9 +36,10 @@ Use this method to undo any actions you took at the start of a writing tools ses
 
 ## See Also
 
-- [func textViewWritingToolsWillBegin(UITextView)](uitextviewdelegate/textviewwritingtoolswillbegin(_:).md)
+### Responding to writing tools interactions
+- [func textViewWritingToolsWillBegin(UITextView)](./textviewwritingtoolswillbegin%28_%29.md)
   Tells the delegate that an interaction with the writing tools interface is about to begin.
-- [func textView(UITextView, writingToolsIgnoredRangesInEnclosingRange: NSRange) -> [NSValue]](uitextviewdelegate/textview(_:writingtoolsignoredrangesinenclosingrange:).md)
+- [func textView(UITextView, writingToolsIgnoredRangesInEnclosingRange: NSRange) -> [NSValue]](./textview%28_,writingtoolsignoredrangesinenclosingrange%29.md)
   Asks the delegate to specify any ranges of text you want the writing tools to ignore.
 
 

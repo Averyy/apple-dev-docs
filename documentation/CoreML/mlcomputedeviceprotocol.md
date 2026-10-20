@@ -1,7 +1,8 @@
 # MLComputeDeviceProtocol
 
 **Framework**: Core ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that represents a compute device type.
 
@@ -20,24 +21,29 @@ An interface that represents a compute device type.
 protocol MLComputeDeviceProtocol : NSObjectProtocol
 ```
 
+```objc
+@protocol MLComputeDeviceProtocol <NSObject>
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [MLCPUComputeDevice](mlcpucomputedevice.md)
-- [MLGPUComputeDevice](mlgpucomputedevice.md)
-- [MLNeuralEngineComputeDevice](mlneuralenginecomputedevice.md)
+- [MLCPUComputeDevice](./mlcpucomputedevice.md)
+- [MLGPUComputeDevice](./mlgpucomputedevice.md)
+- [MLNeuralEngineComputeDevice](./mlneuralenginecomputedevice.md)
 
 ## See Also
 
-- [enum MLComputeDevice](mlcomputedevice.md)
+### Compute devices
+- [enum MLComputeDevice](./mlcomputedevice.md)
   Compute devices for framework operations.
-- [class MLCPUComputeDevice](mlcpucomputedevice.md)
+- [class MLCPUComputeDevice](./mlcpucomputedevice.md)
   An object that represents a CPU compute device.
-- [class MLGPUComputeDevice](mlgpucomputedevice.md)
+- [class MLGPUComputeDevice](./mlgpucomputedevice.md)
   An object that represents a GPU compute device.
-- [class MLNeuralEngineComputeDevice](mlneuralenginecomputedevice.md)
+- [class MLNeuralEngineComputeDevice](./mlneuralenginecomputedevice.md)
   An object that represents a Neural Engine compute device.
 
 

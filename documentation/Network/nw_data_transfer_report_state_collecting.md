@@ -1,7 +1,8 @@
 # nw_data_transfer_report_state_collecting
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data transfer report has been started but is still collecting data.
 
@@ -20,9 +21,14 @@ The data transfer report has been started but is still collecting data.
 var nw_data_transfer_report_state_collecting: nw_data_transfer_report_state_t { get }
 ```
 
+```c
+nw_data_transfer_report_state_collecting
+```
+
 ## See Also
 
-- [var nw_data_transfer_report_state_collected: nw_data_transfer_report_state_t](nw_data_transfer_report_state_collected.md)
+### Report States
+- [var nw_data_transfer_report_state_collected: nw_data_transfer_report_state_t](./nw_data_transfer_report_state_collected.md)
   The data transfer report has completed, and data can be examined.
 
 

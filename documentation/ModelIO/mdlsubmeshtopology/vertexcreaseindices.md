@@ -1,7 +1,8 @@
 # vertexCreaseIndices
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer containing vertex indices to be treated as creases during surface subdivision.
 
@@ -19,23 +20,28 @@ A buffer containing vertex indices to be treated as creases during surface subdi
 var vertexCreaseIndices: (any MDLMeshBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MDLMeshBuffer> vertexCreaseIndices;
+```
+
 #### Discussion
 
-Each of entry in this buffer identifies a vertex that is to be treated as a crease or point during surface subdivision. The buffer is sparse, containing only those vertex indices to be treated as creases. The corresponding entry in the [`vertexCreases`](mdlsubmeshtopology/vertexcreases.md) buffer provides a sharpness value for the crease.
+Each of entry in this buffer identifies a vertex that is to be treated as a crease or point during surface subdivision. The buffer is sparse, containing only those vertex indices to be treated as creases. The corresponding entry in the [`vertexCreases`](./vertexcreases.md) buffer provides a sharpness value for the crease.
 
 Because the number of entries in this buffer is likely to be different than the number of entries in any other vertex buffer, it shouldn’t be interleaved with other data in the mesh.
 
 ## See Also
 
-- [var edgeCreaseIndices: (any MDLMeshBuffer)?](mdlsubmeshtopology/edgecreaseindices.md)
+### Identifying Creases
+- [var edgeCreaseIndices: (any MDLMeshBuffer)?](./edgecreaseindices.md)
   A buffer containing vertex indices that describe edges to be treated as creases during surface subdivision.
-- [var edgeCreases: (any MDLMeshBuffer)?](mdlsubmeshtopology/edgecreases.md)
+- [var edgeCreases: (any MDLMeshBuffer)?](./edgecreases.md)
   A buffer containing sharpness values to be applied to edges during surface subdivision.
-- [var edgeCreaseCount: Int](mdlsubmeshtopology/edgecreasecount.md)
+- [var edgeCreaseCount: Int](./edgecreasecount.md)
   The number of entries in the edge creases buffers.
-- [var vertexCreases: (any MDLMeshBuffer)?](mdlsubmeshtopology/vertexcreases.md)
+- [var vertexCreases: (any MDLMeshBuffer)?](./vertexcreases.md)
   A buffer containing sharpness values to be applied to points during surface subdivision.
-- [var vertexCreaseCount: Int](mdlsubmeshtopology/vertexcreasecount.md)
+- [var vertexCreaseCount: Int](./vertexcreasecount.md)
   The number of entries in the vertex creases buffers.
 
 

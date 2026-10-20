@@ -1,7 +1,8 @@
 # pemArmour
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates the exported data should have PEM armor.
 
@@ -12,6 +13,10 @@ A flag that indicates the exported data should have PEM armor.
 
 ```swift
 static var pemArmour: SecItemImportExportFlags { get }
+```
+
+```c
+kSecItemPemArmour
 ```
 
 #### Discussion

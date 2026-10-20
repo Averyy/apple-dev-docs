@@ -1,7 +1,8 @@
 # XCTIssueReference.Severity.warning
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The severity level for an issue which should be noted but is not necessarily an error.
 
@@ -9,6 +10,10 @@ The severity level for an issue which should be noted but is not necessarily an 
 
 ```swift
 case warning
+```
+
+```c
+XCTIssueSeverityWarning
 ```
 
 #### Discussion

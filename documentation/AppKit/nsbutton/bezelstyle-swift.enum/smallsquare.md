@@ -1,12 +1,13 @@
 # NSButton.BezelStyle.smallSquare
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A simple square bezel style that can scale to any size.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,19 @@ A simple square bezel style that can scale to any size.
 case smallSquare
 ```
 
+```c
+NSBezelStyleSmallSquare
+```
+
 #### Discussion
 
 A square style button (sometimes referred to as a “gradient button”) initiates an action related to a view, like adding or removing rows in a table.
 
-![A screenshot of the open at login dialog. The dialog contains a title and message at the top, with a table underneath, and two square bezel style buttons in the lower left hand corner or a plus and minus sign beside each other.](/images/com.apple.appkit/media-4306762@2x.png)
+![A screenshot of the open at login dialog. The dialog contains a title and message at the top, with a table underneath, and two square bezel style buttons in the lower left hand corner or a plus and minus sign beside each other.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-4306762@2x.png)
 
 These small square buttons contain symbols or interface icons — not text — and you can configure them to behave like push buttons, toggles, or pop-up buttons. The buttons appear near their associated view — usually within or beneath it — so people know which view the buttons affect.
 
-Prefer using a symbol in a gradient button. [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/sf-symbols) provides a wide range of symbols that automatically receive appropriate coloring in their default state and in response to user interaction.
+Prefer using a symbol in a gradient button. [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) provides a wide range of symbols that automatically receive appropriate coloring in their default state and in response to user interaction.
 
 Avoid using labels to introduce gradient buttons. Because gradient buttons are closely connected with a specific view, their purpose is generally clear without the need for descriptive text.
 
@@ -42,7 +47,7 @@ button.image = [NSImage imageWithSystemSymbolName:@"plus" accessibilityDescripti
 button.bezelStyle = NSBezelStyleSmallSquare;
 ```
 
-For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
+For design guidance, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 
 
 ---

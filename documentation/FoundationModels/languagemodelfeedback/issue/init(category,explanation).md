@@ -1,7 +1,8 @@
 # init(category:explanation:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an issue.
 
@@ -26,7 +27,8 @@ init(category: LanguageModelFeedback.Issue.Category, explanation: String? = nil)
 
 ## See Also
 
-- [LanguageModelFeedback.Issue.Category](languagemodelfeedback/issue/category.md)
+### Creating an issue
+- [LanguageModelFeedback.Issue.Category](./category.md)
   Categories for model response issues.
 
 

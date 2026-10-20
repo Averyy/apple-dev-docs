@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time in seconds between the last press state change and the current time.
@@ -20,17 +21,22 @@ The time in seconds between the last press state change and the current time.
 var lastPressedStateLatency: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval lastPressedStateLatency;
+```
+
 #### Discussion
 
 Use this property as a minimum latency value that may not include latency that accrues on the device or when it transmits the event.
 
 ## See Also
 
-- [var isPressed: Bool](gcpressedstateinput/ispressed.md)
+### Getting change information
+- [var isPressed: Bool](./ispressed.md)
   A Boolean value that indicates whether the user presses the button.
-- [var lastPressedStateTimestamp: TimeInterval](gcpressedstateinput/lastpressedstatetimestamp.md)
+- [var lastPressedStateTimestamp: TimeInterval](./lastpressedstatetimestamp.md)
   The time of the most recent press state change.
-- [var pressedDidChangeHandler: ((any GCPhysicalInputElement, any GCPressedStateInput, Bool) -> Void)?](gcpressedstateinput/presseddidchangehandler.md)
+- [var pressedDidChangeHandler: ((any GCPhysicalInputElement, any GCPressedStateInput, Bool) -> Void)?](./presseddidchangehandler.md)
   The block that the profile calls when an element’s press state changes.
 
 

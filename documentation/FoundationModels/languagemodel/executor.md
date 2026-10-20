@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -20,7 +21,8 @@ associatedtype Executor : LanguageModelExecutor where Self == Self.Executor.Mode
 
 ## See Also
 
-- [var executorConfiguration: Self.Executor.Configuration](languagemodel/executorconfiguration.md)
+### Getting the executor configuration
+- [var executorConfiguration: Self.Executor.Configuration](./executorconfiguration.md)
   A configuration for an executor capable of running this model.
 
 

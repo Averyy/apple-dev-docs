@@ -1,17 +1,22 @@
 # recentAccessDate()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the date/time of the most recent access of the target device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func recentAccessDate() -> Date!
+```
+
+```objc
+- (NSDate *) recentAccessDate;
 ```
 
 #### Return Value

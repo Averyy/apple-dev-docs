@@ -1,7 +1,8 @@
 # kUSBHostPortTypeCaptive
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The captive port type.
 
@@ -10,7 +11,7 @@ The captive port type.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortTypeCaptive = kIOUSBHostPortTypeCaptive
 ```
 

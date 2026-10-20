@@ -1,7 +1,8 @@
 # MTLCounterSampleBufferError.Code.invalid
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates when a counter-sample buffer descriptor has at least one invalid property.
 
@@ -19,19 +20,24 @@ An error code that indicates when a counter-sample buffer descriptor has at leas
 case invalid
 ```
 
+```c
+MTLCounterSampleBufferErrorInvalid
+```
+
 #### Discussion
 
-This error applies to the [`MTLDevice`](mtldevice.md) protocol’s [`makeCounterSampleBuffer(descriptor:)`](mtldevice/makecountersamplebuffer(descriptor:).md) method and its [`MTLCounterSampleBufferDescriptor`](mtlcountersamplebufferdescriptor.md) parameter.
+This error applies to the [`MTLDevice`](../../mtldevice.md) protocol’s [`makeCounterSampleBuffer(descriptor:)`](../../mtldevice/makecountersamplebuffer%28descriptor%29.md) method and its [`MTLCounterSampleBufferDescriptor`](../../mtlcountersamplebufferdescriptor.md) parameter.
 
 ## See Also
 
-- [MTLCounterSampleBufferError.Code.outOfMemory](mtlcountersamplebuffererror-swift.struct/code/outofmemory.md)
+### Error codes
+- [MTLCounterSampleBufferError.Code.outOfMemory](./outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
-- [MTLCounterSampleBufferError.Code.internal](mtlcountersamplebuffererror-swift.struct/code/internal.md)
+- [MTLCounterSampleBufferError.Code.internal](./internal.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLCounterSampleBufferError.Code.outOfMemory](mtlcountersamplebuffererror-swift.struct/code/outofmemory.md)
+- [MTLCounterSampleBufferError.Code.outOfMemory](./outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to create a counter sample buffer.
-- [MTLCounterSampleBufferError.Code.internal](mtlcountersamplebuffererror-swift.struct/code/internal.md)
+- [MTLCounterSampleBufferError.Code.internal](./internal.md)
   An error code that indicates the Metal framework has an internal problem.
 
 

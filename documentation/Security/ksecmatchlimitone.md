@@ -1,7 +1,8 @@
 # kSecMatchLimitOne
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that corresponds to matching exactly one item.
 
@@ -20,9 +21,13 @@ A value that corresponds to matching exactly one item.
 let kSecMatchLimitOne: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchLimitOne;
+```
+
 #### Discussion
 
-Use this value with the [`kSecMatchLimit`](ksecmatchlimit.md) key.
+Use this value with the [`kSecMatchLimit`](./ksecmatchlimit.md) key.
 
 
 ---

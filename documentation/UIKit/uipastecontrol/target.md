@@ -1,7 +1,8 @@
 # target
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UI control that receives pasted content.
 
@@ -17,9 +18,13 @@ The UI control that receives pasted content.
 weak var target: (any UIPasteConfigurationSupporting)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIPasteConfigurationSupporting> target;
+```
+
 #### Discussion
 
-For example, you can assign this property a reference to a [`UITextView`](uitextview.md).
+For example, you can assign this property a reference to a [`UITextView`](../uitextview.md).
 
 
 ---

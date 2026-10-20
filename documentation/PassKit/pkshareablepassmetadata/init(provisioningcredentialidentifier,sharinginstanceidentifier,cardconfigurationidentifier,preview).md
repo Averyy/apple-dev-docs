@@ -1,19 +1,24 @@
 # init(provisioningCredentialIdentifier:sharingInstanceIdentifier:cardConfigurationIdentifier:preview:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(provisioningCredentialIdentifier credentialIdentifier: String, sharingInstanceIdentifier: String, cardConfigurationIdentifier templateIdentifier: String, preview: PKShareablePassMetadata.Preview)
+```
+
+```objc
+- (instancetype) initWithProvisioningCredentialIdentifier:(NSString *) credentialIdentifier sharingInstanceIdentifier:(NSString *) sharingInstanceIdentifier cardConfigurationIdentifier:(NSString *) templateIdentifier preview:(PKShareablePassMetadataPreview *) preview;
 ```
 
 

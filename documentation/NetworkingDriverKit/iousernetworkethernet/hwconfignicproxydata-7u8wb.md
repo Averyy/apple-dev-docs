@@ -1,14 +1,15 @@
 # hwConfigNicProxyData
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 20.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void hwConfigNicProxyData(offload_info_s *handoff);
 ```
 

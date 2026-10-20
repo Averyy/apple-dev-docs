@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new playlist metadata object with the designated name.
 
@@ -15,6 +16,10 @@ Creates a new playlist metadata object with the designated name.
 
 ```swift
 init(name: String)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name;
 ```
 
 ## Parameters

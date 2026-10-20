@@ -1,23 +1,28 @@
 # CTLineBoundsOptions
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for getting the bounds of a line of text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct CTLineBoundsOptions
+```
+
+```c
+enum CTLineBoundsOptions : CFOptionFlags;
 ```
 
 #### Overview
@@ -27,49 +32,50 @@ Passing `0` (no options) returns the typographic bounds, including typographic l
 ## Topics
 
 ### Line Bounds Options
-- [static var excludeTypographicLeading: CTLineBoundsOptions](ctlineboundsoptions/excludetypographicleading.md)
+- [static var excludeTypographicLeading: CTLineBoundsOptions](./ctlineboundsoptions/excludetypographicleading.md)
   An option to exclude typographic leading.
-- [static var excludeTypographicShifts: CTLineBoundsOptions](ctlineboundsoptions/excludetypographicshifts.md)
+- [static var excludeTypographicShifts: CTLineBoundsOptions](./ctlineboundsoptions/excludetypographicshifts.md)
   An option to ignore cross-stream shifts due to positioning, such as kerning or baseline alignment.
-- [static var includeLanguageExtents: CTLineBoundsOptions](ctlineboundsoptions/includelanguageextents.md)
+- [static var includeLanguageExtents: CTLineBoundsOptions](./ctlineboundsoptions/includelanguageextents.md)
   An option to include additional space based on common glyph sequences for various languages.
-- [static var useGlyphPathBounds: CTLineBoundsOptions](ctlineboundsoptions/useglyphpathbounds.md)
+- [static var useGlyphPathBounds: CTLineBoundsOptions](./ctlineboundsoptions/useglyphpathbounds.md)
   An option to use glyph path bounds rather than the default typographic bounds.
-- [static var useHangingPunctuation: CTLineBoundsOptions](ctlineboundsoptions/usehangingpunctuation.md)
+- [static var useHangingPunctuation: CTLineBoundsOptions](./ctlineboundsoptions/usehangingpunctuation.md)
   An option to enable hanging punctuation.
-- [static var useOpticalBounds: CTLineBoundsOptions](ctlineboundsoptions/useopticalbounds.md)
+- [static var useOpticalBounds: CTLineBoundsOptions](./ctlineboundsoptions/useopticalbounds.md)
   An option to use optical bounds.
 ### Initializers
-- [init(rawValue: CFOptionFlags)](ctlineboundsoptions/init(rawvalue:).md)
+- [init(rawValue: CFOptionFlags)](./ctlineboundsoptions/init%28rawvalue%29.md)
   Creates a line bound options enumeration with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum CTFontDescriptorMatchingState](ctfontdescriptormatchingstate.md)
+### Enumerations
+- [enum CTFontDescriptorMatchingState](./ctfontdescriptormatchingstate.md)
   Constants that track the progress of font descriptor matching.
-- [enum CTFontManagerAutoActivationSetting](ctfontmanagerautoactivationsetting.md)
+- [enum CTFontManagerAutoActivationSetting](./ctfontmanagerautoactivationsetting.md)
   Sets the auto-activation for the specified bundle identifier.
-- [enum CTFontManagerError](ctfontmanagererror.md)
+- [enum CTFontManagerError](./ctfontmanagererror.md)
   Errors that prevent unregistration of fonts for a specified font file URL.
-- [enum CTFontManagerScope](ctfontmanagerscope.md)
+- [enum CTFontManagerScope](./ctfontmanagerscope.md)
   Constants that define the scope for font registration.
-- [enum CTRubyAlignment](ctrubyalignment.md)
+- [enum CTRubyAlignment](./ctrubyalignment.md)
   Constants that specify how to align the ruby text and the base text relative to each other when they have different lengths.
-- [enum CTRubyOverhang](ctrubyoverhang.md)
+- [enum CTRubyOverhang](./ctrubyoverhang.md)
   Constants that specify whether, and on which side, ruby text can overhang adjacent text if it’s wider than the base text.
-- [enum CTRubyPosition](ctrubyposition.md)
+- [enum CTRubyPosition](./ctrubyposition.md)
   Constants that specify the position of the ruby text relative to to the base text.
 
 

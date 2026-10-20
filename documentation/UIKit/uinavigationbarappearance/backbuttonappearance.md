@@ -1,7 +1,8 @@
 # backButtonAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance attributes for the back button.
 
@@ -19,17 +20,22 @@ The appearance attributes for the back button.
 var backButtonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * backButtonAppearance;
+```
+
 #### Discussion
 
-If you don’t change the value of this property, the navigation bar applies the attributes from the [`buttonAppearance`](uinavigationbarappearance/buttonappearance.md) property.
+If you don’t change the value of this property, the navigation bar applies the attributes from the [`buttonAppearance`](./buttonappearance.md) property.
 
 ## See Also
 
-- [var backIndicatorImage: UIImage](uinavigationbarappearance/backindicatorimage.md)
+### Configuring the Back button
+- [var backIndicatorImage: UIImage](./backindicatorimage.md)
   The image to display on the leading edge of the back button.
-- [var backIndicatorTransitionMaskImage: UIImage](uinavigationbarappearance/backindicatortransitionmaskimage.md)
+- [var backIndicatorTransitionMaskImage: UIImage](./backindicatortransitionmaskimage.md)
   The image for masking content flowing under the back indicator image during push and pop transitions.
-- [func setBackIndicatorImage(UIImage?, transitionMaskImage: UIImage?)](uinavigationbarappearance/setbackindicatorimage(_:transitionmaskimage:).md)
+- [func setBackIndicatorImage(UIImage?, transitionMaskImage: UIImage?)](./setbackindicatorimage%28_,transitionmaskimage%29.md)
   Sets the back button indicator image and its transition mask.
 
 

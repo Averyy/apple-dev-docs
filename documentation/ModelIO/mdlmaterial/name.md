@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptive name for the material.
 
@@ -19,13 +20,18 @@ A descriptive name for the material.
 var name: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * name;
+```
+
 #### Discussion
 
-This name isn’t used in rendering, but it can be useful for debugging and organizing the materials used in a project. When you load materials from an asset file with the [`MDLAsset`](mdlasset.md) class, Model I/O uses names assigned in the asset file where supported by the file format.
+This name isn’t used in rendering, but it can be useful for debugging and organizing the materials used in a project. When you load materials from an asset file with the [`MDLAsset`](../mdlasset.md) class, Model I/O uses names assigned in the asset file where supported by the file format.
 
 ## See Also
 
-- [var materialFace: MDLMaterialFace](mdlmaterial/materialface.md)
+### Using a material
+- [var materialFace: MDLMaterialFace](./materialface.md)
   The surface of an object.
 
 

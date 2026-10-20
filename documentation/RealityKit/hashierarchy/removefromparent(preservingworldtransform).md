@@ -1,7 +1,8 @@
 # removeFromParent(preservingWorldTransform:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the entity from its current parent or from the scene if it is a root entity.
 
@@ -11,7 +12,7 @@ Removes the entity from its current parent or from the scene if it is a root ent
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,9 +23,9 @@ Removes the entity from its current parent or from the scene if it is a root ent
 
 #### Discussion
 
-This method behaves like the [`setParent(_:preservingWorldTransform:)`](hashierarchy/setparent(_:preservingworldtransform:).md) method with a value of `nil` for the `parent` parameter, except that method has no effect on root entities. A root entity is one that is stored in a scene’s [`anchors`](scene/anchors.md) collection.
+This method behaves like the [`setParent(_:preservingWorldTransform:)`](./setparent%28_,preservingworldtransform%29.md) method with a value of `nil` for the `parent` parameter, except that method has no effect on root entities. A root entity is one that is stored in a scene’s [`anchors`](../scene/anchors.md) collection.
 
-The [`children`](hashierarchy/children.md) collections of any modified parent entities are automatically updated as well.
+The [`children`](./children.md) collections of any modified parent entities are automatically updated as well.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ The [`children`](hashierarchy/children.md) collections of any modified parent en
 
 ## See Also
 
-- [var parent: Entity?](hashierarchy/parent.md)
+### Managing the parent
+- [var parent: Entity?](./parent.md)
   The parent entity.
-- [func setParent(Entity?, preservingWorldTransform: Bool)](hashierarchy/setparent(_:preservingworldtransform:).md)
+- [func setParent(Entity?, preservingWorldTransform: Bool)](./setparent%28_,preservingworldtransform%29.md)
   Attaches the entity as a child to the specified entity.
 
 

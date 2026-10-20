@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBAppleVendorID](3181761-anonymous/kiousbapplevendorid.md)
+- [kIOUSBAppleVendorID](./api-3181761-anonymous/kiousbapplevendorid.md)
 
 
 ---

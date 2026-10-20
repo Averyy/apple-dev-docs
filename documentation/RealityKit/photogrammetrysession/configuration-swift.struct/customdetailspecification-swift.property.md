@@ -1,7 +1,8 @@
 # customDetailSpecification
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines custom detail level specifications for a photogrammetry session with custom detail level.
 
@@ -19,7 +20,7 @@ var customDetailSpecification: PhotogrammetrySession.Configuration.CustomDetailS
 
 This property configures the characteristics of the model’s precision and characteristics, such as texture size and the types of texture maps.
 
-> ❗ **Important**: The system checks this property only when processing a request with the [`PhotogrammetrySession.Request.Detail.custom`](photogrammetrysession/request/detail/custom.md) detail set.
+> ❗ **Important**: The system checks this property only when processing a request with the [`PhotogrammetrySession.Request.Detail.custom`](../request/detail/custom.md) detail set.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(strings:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sequence of strings from a string array.
 
@@ -20,15 +21,20 @@ Creates a sequence of strings from a string array.
 convenience init(strings stringValues: [String])
 ```
 
+```objc
++ (instancetype) sequenceWithStringArray:(NSArray<NSString *> *) stringValues;
+```
+
 ## Parameters
 
 - `stringValues`: The array of strings for the sequence.
 
 ## See Also
 
-- [convenience init(int64s: [NSNumber])](mlsequence/init(int64s:).md)
+### Creating a sequence
+- [convenience init(int64s: [NSNumber])](./init%28int64s%29.md)
   Creates a sequence of integers from an array of numbers.
-- [convenience init(empty: MLFeatureType)](mlsequence/init(empty:).md)
+- [convenience init(empty: MLFeatureType)](./init%28empty%29.md)
   Creates an empty sequence of strings or integers.
 
 

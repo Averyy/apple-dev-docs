@@ -1,7 +1,8 @@
 # isWritingToolsActive
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var isWritingToolsActive: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isWritingToolsActive) BOOL writingToolsActive;
 ```
 
 

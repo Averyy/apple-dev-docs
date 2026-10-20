@@ -1,7 +1,8 @@
 # onDisappear(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform after this content disappears.
 

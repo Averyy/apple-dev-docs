@@ -1,7 +1,8 @@
 # NSUserNotificationCenterDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that enables customizing the behavior of the default notification center.
 
@@ -15,29 +16,34 @@ An interface that enables customizing the behavior of the default notification c
 protocol NSUserNotificationCenterDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSUserNotificationCenterDelegate <NSObject>
+```
+
 ## Topics
 
 ### User Notification Delivery Information
-- [func userNotificationCenter(NSUserNotificationCenter, didDeliver: NSUserNotification)](nsusernotificationcenterdelegate/usernotificationcenter(_:diddeliver:).md)
+- [func userNotificationCenter(NSUserNotificationCenter, didDeliver: NSUserNotification)](./nsusernotificationcenterdelegate/usernotificationcenter%28_,diddeliver%29.md)
   Sent to the delegate when a notification delivery date has arrived.
-- [func userNotificationCenter(NSUserNotificationCenter, didActivate: NSUserNotification)](nsusernotificationcenterdelegate/usernotificationcenter(_:didactivate:).md)
+- [func userNotificationCenter(NSUserNotificationCenter, didActivate: NSUserNotification)](./nsusernotificationcenterdelegate/usernotificationcenter%28_,didactivate%29.md)
   Sent to the delegate when a user clicks on a user notification presented by the user notification center.
 ### User Notification Display Override
-- [func userNotificationCenter(NSUserNotificationCenter, shouldPresent: NSUserNotification) -> Bool](nsusernotificationcenterdelegate/usernotificationcenter(_:shouldpresent:).md)
+- [func userNotificationCenter(NSUserNotificationCenter, shouldPresent: NSUserNotification) -> Bool](./nsusernotificationcenterdelegate/usernotificationcenter%28_,shouldpresent%29.md)
   Sent to the delegate when the user notification center has decided not to present your notification.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSUserNotification](nsusernotification.md)
+### User Notifications
+- [class NSUserNotification](./nsusernotification.md)
   A notification that can be scheduled for display in the notification center.
-- [class NSUserNotificationAction](nsusernotificationaction.md)
+- [class NSUserNotificationAction](./nsusernotificationaction.md)
   An action that the user can take in response to receiving a notification.
-- [class NSUserNotificationCenter](nsusernotificationcenter.md)
+- [class NSUserNotificationCenter](./nsusernotificationcenter.md)
   An object that delivers notifications from apps to the user.
 
 

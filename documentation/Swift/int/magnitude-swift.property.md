@@ -1,7 +1,8 @@
 # magnitude
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The magnitude of this value.
 
@@ -33,11 +34,12 @@ The global `abs(_:)` function provides more familiar syntax when you need to fin
 
 ## See Also
 
-- [typealias Magnitude](int/magnitude-swift.typealias.md)
+### Finding the Sign and Magnitude
+- [typealias Magnitude](./magnitude-swift.typealias.md)
   A type that can represent the absolute value of any possible value of this type.
-- [func abs<T>(T) -> T](abs(_:).md)
+- [func abs<T>(T) -> T](../abs%28_%29.md)
   Returns the absolute value of the given number.
-- [func signum() -> Int](int/signum.md)
+- [func signum() -> Int](./signum%28%29.md)
   Returns `-1` if this value is negative and `1` if it’s positive; otherwise, `0`.
 
 

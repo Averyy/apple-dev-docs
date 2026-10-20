@@ -1,7 +1,8 @@
 # DeviceFitStatus.unknown
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Device fit status is unknown.
 

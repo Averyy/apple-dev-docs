@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct btinfo_sc_load_info64 {
     ...
 };
@@ -17,9 +17,9 @@ struct btinfo_sc_load_info64 {
 ## Topics
 
 ### Instance Properties
-- [sharedCacheBaseAddress](btinfo_sc_load_info64/3943559-sharedcachebaseaddress.md)
-- [sharedCacheSlide](btinfo_sc_load_info64/3943560-sharedcacheslide.md)
-- [sharedCacheUUID](btinfo_sc_load_info64/3943561-sharedcacheuuid.md)
+- [sharedCacheBaseAddress](./btinfo_sc_load_info64/api-3943559-sharedcachebaseaddress.md)
+- [sharedCacheSlide](./btinfo_sc_load_info64/api-3943560-sharedcacheslide.md)
+- [sharedCacheUUID](./btinfo_sc_load_info64/api-3943561-sharedcacheuuid.md)
 
 
 ---

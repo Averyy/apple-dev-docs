@@ -1,20 +1,25 @@
 # EKError.Code.reminderAlarmContainsEmailOrUrl
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case reminderAlarmContainsEmailOrUrl
+```
+
+```c
+EKErrorReminderAlarmContainsEmailOrUrl
 ```
 
 

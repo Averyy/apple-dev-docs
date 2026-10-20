@@ -1,17 +1,22 @@
 # attachColorList(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Adds the list of `NSColor` objects specified to all the color pickers in the receiver that display color lists by invoking [`attachColorList(_:)`](nscolorpanel/attachcolorlist(_:).md) on all color pickers in the application.
+Adds the list of `NSColor` objects specified to all the color pickers in the receiver that display color lists by invoking [`attachColorList(_:)`](./attachcolorlist%28_%29.md) on all color pickers in the application.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func attachColorList(_ colorList: NSColorList)
+```
+
+```objc
+- (void) attachColorList:(NSColorList *) colorList;
 ```
 
 #### Discussion
@@ -24,8 +29,9 @@ An application should use this method to add an `NSColorList` saved with a docum
 
 ## See Also
 
-- [func detachColorList(NSColorList)](nscolorpanel/detachcolorlist(_:).md)
-  Removes the list of colors from all the color pickers in the receiver that display color lists by invoking [`detachColorList(_:)`](nscolorpanel/detachcolorlist(_:).md) on all color pickers in the application.
+### Managing color lists
+- [func detachColorList(NSColorList)](./detachcolorlist%28_%29.md)
+  Removes the list of colors from all the color pickers in the receiver that display color lists by invoking [`detachColorList(_:)`](./detachcolorlist%28_%29.md) on all color pickers in the application.
 
 
 ---

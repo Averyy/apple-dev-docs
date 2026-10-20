@@ -1,18 +1,19 @@
 # CGVector
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains a two-dimensional vector.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,45 +21,50 @@ A structure that contains a two-dimensional vector.
 struct CGVector
 ```
 
+```c
+struct CGVector;
+```
+
 ## Topics
 
 ### Special Values
-- [static var zero: CGVector](cgvector/zero.md)
-- [init()](cgvector/init.md)
+- [static var zero: CGVector](./cgvector/zero.md)
+- [init()](./cgvector/init%28%29.md)
   Creates a vector whose components are both zero.
 ### Geometric Properties
-- [var dx: Double](cgvector/dx.md)
+- [var dx: Double](./cgvector/dx.md)
   The x component of the vector.
-- [var dy: Double](cgvector/dy.md)
+- [var dy: Double](./cgvector/dy.md)
   The y component of the vector.
 ### Initializers
-- [init(dx: Double, dy: Double)](cgvector/init(dx:dy:)-1cr8k.md)
-- [init(dx: Double, dy: Double)](cgvector/init(dx:dy:)-57w7m.md)
-- [init(dx: Int, dy: Int)](cgvector/init(dx:dy:)-5dw92.md)
+- [init(dx: Double, dy: Double)](./cgvector/init%28dx,dy%29-1cr8k.md)
+- [init(dx: Double, dy: Double)](./cgvector/init%28dx,dy%29-57w7m.md)
+- [init(dx: Int, dy: Int)](./cgvector/init%28dx,dy%29-5dw92.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CGAffineTransform](cgaffinetransform.md)
-- [struct CGAffineTransformComponents](cgaffinetransformcomponents.md)
-- [struct CGFloat](cgfloat-swift.struct.md)
+### Structures
+- [struct CGAffineTransform](./cgaffinetransform.md)
+- [struct CGAffineTransformComponents](./cgaffinetransformcomponents.md)
+- [struct CGFloat](./cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
-- [struct CGPoint](cgpoint.md)
-- [struct CGRect](cgrect.md)
-- [struct CGSize](cgsize.md)
+- [struct CGPoint](./cgpoint.md)
+- [struct CGRect](./cgrect.md)
+- [struct CGSize](./cgsize.md)
   A structure that contains width and height values.
 
 

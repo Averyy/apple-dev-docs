@@ -1,7 +1,8 @@
 # predicateForWorkoutActivities(operatorType:quantityType:averageQuantity:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate for matching workout activities based the average value of an associated quantity type.
 
@@ -19,9 +20,13 @@ Returns a predicate for matching workout activities based the average value of a
 class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, quantityType: HKQuantityType, averageQuantity: HKQuantity) -> NSPredicate
 ```
 
+```objc
++ (NSPredicate *) predicateForWorkoutActivitiesWithOperatorType:(NSPredicateOperatorType) operatorType quantityType:(HKQuantityType *) quantityType averageQuantity:(HKQuantity *) averageQuantity;
+```
+
 #### Discussion
 
-Use this convenience method to create a predicate that matches workouts with the specified average quantity. To use this predicate, call [`predicateForWorkouts(activityPredicate:)`](hkquery/predicateforworkouts(activitypredicate:).md) to wrap this predicate inside a workout predicate. You can then use the workout predicate in your query.
+Use this convenience method to create a predicate that matches workouts with the specified average quantity. To use this predicate, call [`predicateForWorkouts(activityPredicate:)`](./predicateforworkouts%28activitypredicate%29.md) to wrap this predicate inside a workout predicate. You can then use the workout predicate in your query.
 
 The following sample creates a predicate for workout activities with an average heart rate of 150 bmp or higher.
 
@@ -44,27 +49,28 @@ HKQuery.predicateForWorkoutActivities(
 let workoutPredicate = HKQuery.predicateForWorkouts(activityPredicate: heartRatePredicate)
 ```
 
-For more information on how HealthKit calculates statistics for [`HKWorkoutActivity`](hkworkoutactivity.md) objects, see [`statistics(for:)`](hkworkoutactivity/statistics(for:).md).
+For more information on how HealthKit calculates statistics for [`HKWorkoutActivity`](../hkworkoutactivity.md) objects, see [`statistics(for:)`](../hkworkoutactivity/statistics%28for%29.md).
 
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the average quantity.
-- `quantityType`: The type of [`HKQuantitySample`](hkquantitysample.md) objects used to calculate the average quantity.
+- `quantityType`: The type of [`HKQuantitySample`](../hkquantitysample.md) objects used to calculate the average quantity.
 - `averageQuantity`: The target value for the average quantity.
 
 ## See Also
 
-- [class func predicateForWorkoutActivities(workoutActivityType: HKWorkoutActivityType) -> NSPredicate](hkquery/predicateforworkoutactivities(workoutactivitytype:).md)
+### Creating workout activity predicates
+- [class func predicateForWorkoutActivities(workoutActivityType: HKWorkoutActivityType) -> NSPredicate](./predicateforworkoutactivities%28workoutactivitytype%29.md)
   Returns a predicate for workout activities based on the type of activity performed.
-- [class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, duration: TimeInterval) -> NSPredicate](hkquery/predicateforworkoutactivities(operatortype:duration:).md)
+- [class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, duration: TimeInterval) -> NSPredicate](./predicateforworkoutactivities%28operatortype,duration%29.md)
   Returns a predicate for matching workout activities based on their duration.
-- [class func predicateForWorkoutActivities(start: Date?, end: Date?, options: HKQueryOptions) -> NSPredicate](hkquery/predicateforworkoutactivities(start:end:options:).md)
+- [class func predicateForWorkoutActivities(start: Date?, end: Date?, options: HKQueryOptions) -> NSPredicate](./predicateforworkoutactivities%28start,end,options%29.md)
   Returns a predicate for workout activities that occur between the start and end date.
-- [class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, quantityType: HKQuantityType, maximumQuantity: HKQuantity) -> NSPredicate](hkquery/predicateforworkoutactivities(operatortype:quantitytype:maximumquantity:).md)
+- [class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, quantityType: HKQuantityType, maximumQuantity: HKQuantity) -> NSPredicate](./predicateforworkoutactivities%28operatortype,quantitytype,maximumquantity%29.md)
   Returns a predicate for matching workout activities based the maximum value of an associated quantity type.
-- [class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, quantityType: HKQuantityType, minimumQuantity: HKQuantity) -> NSPredicate](hkquery/predicateforworkoutactivities(operatortype:quantitytype:minimumquantity:).md)
+- [class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, quantityType: HKQuantityType, minimumQuantity: HKQuantity) -> NSPredicate](./predicateforworkoutactivities%28operatortype,quantitytype,minimumquantity%29.md)
   Returns a predicate for matching workout activities based the minimum value of an associated quantity type.
-- [class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, quantityType: HKQuantityType, sumQuantity: HKQuantity) -> NSPredicate](hkquery/predicateforworkoutactivities(operatortype:quantitytype:sumquantity:).md)
+- [class func predicateForWorkoutActivities(operatorType: NSComparisonPredicate.Operator, quantityType: HKQuantityType, sumQuantity: HKQuantity) -> NSPredicate](./predicateforworkoutactivities%28operatortype,quantitytype,sumquantity%29.md)
   Returns a predicate for matching workout activities based the sum of an associated quantity type.
 
 

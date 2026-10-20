@@ -1,7 +1,8 @@
 # kUSBInformationDevicePortIsInTestModeBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The hub port that the USB device attaches to is in test mode.
 
@@ -10,7 +11,7 @@ The hub port that the USB device attaches to is in test mode.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDevicePortIsInTestModeBit = 8
 ```
 

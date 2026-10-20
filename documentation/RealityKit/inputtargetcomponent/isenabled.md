@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the component’s entity is enabled for input.
 

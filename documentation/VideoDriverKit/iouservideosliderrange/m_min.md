@@ -1,20 +1,22 @@
 # m_min
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t m_min;
 ```
 
 ## See Also
 
-- [m_max](iouservideosliderrange/m_max.md)
+### Accessing range limits
+- [m_max](./m_max.md)
 
 
 ---

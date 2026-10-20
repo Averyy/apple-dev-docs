@@ -1,7 +1,8 @@
 # flexible
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Sizes a button flexibly along its primary axis, filling its available space by expanding or compressing beyond its ideal size.
 

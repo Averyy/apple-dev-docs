@@ -1,7 +1,8 @@
 # SecuritySessionId
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that contains an authorization session identifier.
 
@@ -13,6 +14,10 @@ A type that contains an authorization session identifier.
 
 ```swift
 typealias SecuritySessionId = UInt32
+```
+
+```c
+typedef UInt32 SecuritySessionId;
 ```
 
 

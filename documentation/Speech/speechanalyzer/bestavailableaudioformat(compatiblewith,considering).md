@@ -1,7 +1,8 @@
 # bestAvailableAudioFormat(compatibleWith:considering:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves the best-quality audio format that the specified modules can work with, taking into account the natural format of the audio and assets installed on the device.
 
@@ -34,7 +35,8 @@ Use this method to set up an audio pipeline or pre-convert audio to a usable for
 
 ## See Also
 
-- [static func bestAvailableAudioFormat(compatibleWith: [any SpeechModule]) async -> AVAudioFormat?](speechanalyzer/bestavailableaudioformat(compatiblewith:).md)
+### Determining audio formats
+- [static func bestAvailableAudioFormat(compatibleWith: [any SpeechModule]) async -> AVAudioFormat?](./bestavailableaudioformat%28compatiblewith%29.md)
   Retrieves the best-quality audio format that the specified modules can work with, from assets installed on the device.
 
 

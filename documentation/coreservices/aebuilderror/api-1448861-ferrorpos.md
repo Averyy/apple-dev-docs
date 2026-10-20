@@ -1,7 +1,8 @@
 # fErrorPos
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The character position where the parser detectedthe error. 
 
@@ -13,6 +14,10 @@ The character position where the parser detectedthe error.
 
 ```swift
 var fErrorPos: UInt32
+```
+
+```c
+UInt32 fErrorPos;
 ```
 
 

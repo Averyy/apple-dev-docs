@@ -1,7 +1,8 @@
 # primaryAction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for the primary action.
 
@@ -32,15 +33,16 @@ In watchOS the system places the primary action beneath the navigation bar; the 
 
 ## See Also
 
-- [static let secondaryAction: ToolbarItemPlacement](toolbaritemplacement/secondaryaction.md)
+### Getting placement for specific actions
+- [static let secondaryAction: ToolbarItemPlacement](./secondaryaction.md)
   A placement for secondary actions.
-- [static let confirmationAction: ToolbarItemPlacement](toolbaritemplacement/confirmationaction.md)
+- [static let confirmationAction: ToolbarItemPlacement](./confirmationaction.md)
   A placement for confirmation actions in a modal interface.
-- [static let cancellationAction: ToolbarItemPlacement](toolbaritemplacement/cancellationaction.md)
+- [static let cancellationAction: ToolbarItemPlacement](./cancellationaction.md)
   A placement for cancellation actions in a modal interface.
-- [static let destructiveAction: ToolbarItemPlacement](toolbaritemplacement/destructiveaction.md)
+- [static let destructiveAction: ToolbarItemPlacement](./destructiveaction.md)
   A placement for destructive actions in a modal interface.
-- [static let navigation: ToolbarItemPlacement](toolbaritemplacement/navigation.md)
+- [static let navigation: ToolbarItemPlacement](./navigation.md)
   A placement for navigation actions.
 
 

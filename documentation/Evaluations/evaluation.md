@@ -1,7 +1,8 @@
 # Evaluation
 
 **Framework**: Evaluations  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines an evaluation.
 
@@ -22,8 +23,8 @@ protocol Evaluation : Sendable
 
 ## Mentions
 
-- [Designing effective evaluations](designing-effective-evaluations.md)
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Designing effective evaluations](./designing-effective-evaluations.md)
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
 
 #### Overview
 
@@ -58,75 +59,76 @@ struct MyEvaluation: Evaluation {
 ## Topics
 
 ### Providing data
-- [associatedtype Sample](evaluation/sample.md)
+- [associatedtype Sample](./evaluation/sample.md)
   The type of input samples in the evaluation dataset.
-- [associatedtype SampleLoader : Loader](evaluation/sampleloader.md)
+- [associatedtype SampleLoader : Loader](./evaluation/sampleloader.md)
   The type of the sample loader used to provide the evaluation dataset.
-- [var dataset: Self.SampleLoader](evaluation/dataset.md)
+- [var dataset: Self.SampleLoader](./evaluation/dataset.md)
   The evaluation dataset.
 ### Testing an intelligent feature
-- [associatedtype Subject : EvaluationSubject](evaluation/subject.md)
+- [associatedtype Subject : EvaluationSubject](./evaluation/subject.md)
   The type of subject the system under test produces.
-- [func subject(from: Self.Sample) async throws -> Self.Subject](evaluation/subject(from:).md)
+- [func subject(from: Self.Sample) async throws -> Self.Subject](./evaluation/subject%28from%29.md)
   Produces the subject of evaluation from a given sample.
-- [protocol EvaluationSubject](evaluationsubject.md)
+- [protocol EvaluationSubject](./evaluationsubject.md)
   A type that represents the output the system under test produces.
-- [struct ModelSubject](modelsubject.md)
+- [struct ModelSubject](./modelsubject.md)
   The subject type for language model evaluations.
-- [var name: String](evaluation/name.md)
+- [var name: String](./evaluation/name.md)
   The evaluation’s name in results. Defaults to the type name; override for a custom one.
 ### Scoring results
-- [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
+- [var evaluators: Self.Evaluators](./evaluation/evaluators-swift.property.md)
   The evaluators to apply to each sample and its corresponding subject.
-- [Evaluation.Evaluators](evaluation/evaluators-swift.typealias.md)
+- [Evaluation.Evaluators](./evaluation/evaluators-swift.typealias.md)
   The evaluator array type for this conformance.
-- [protocol EvaluatorProtocol](evaluatorprotocol.md)
+- [protocol EvaluatorProtocol](./evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
-- [struct EvaluatorsBuilder](evaluatorsbuilder.md)
+- [struct EvaluatorsBuilder](./evaluatorsbuilder.md)
   A result builder that enables declarative evaluator lists.
-- [func aggregateMetrics(using: inout MetricsAggregator)](evaluation/aggregatemetrics(using:).md)
+- [func aggregateMetrics(using: inout MetricsAggregator)](./evaluation/aggregatemetrics%28using%29.md)
   Aggregates the collected metric results.
 ### Running an evaluation
-- [struct EvaluationTrait](evaluationtrait.md)
+- [struct EvaluationTrait](./evaluationtrait.md)
   A test trait that runs an evaluation and records the result as attachments.
-- [struct EvaluationContext](evaluationcontext.md)
+- [struct EvaluationContext](./evaluationcontext.md)
   A context that provides the evaluation result within a test scope.
-- [struct EvaluationResult](evaluationresult.md)
+- [struct EvaluationResult](./evaluationresult.md)
   The results of running a model evaluation.
-- [func run(info: [String : String]) async throws -> EvaluationResult](evaluation/run(info:).md)
+- [func run(info: [String : String]) async throws -> EvaluationResult](./evaluation/run%28info%29.md)
   Runs the evaluation against the dataset and computes metric results.
 ### Inspecting detailed results
-- [var inputColumn: ResultColumn<Self.Sample>](evaluation/inputcolumn.md)
+- [var inputColumn: ResultColumn<Self.Sample>](./evaluation/inputcolumn.md)
   A typed column descriptor for the input samples in the detailed DataFrame.
-- [var responseColumn: ResultColumn<Self.Subject>](evaluation/responsecolumn.md)
+- [var responseColumn: ResultColumn<Self.Subject>](./evaluation/responsecolumn.md)
   A typed column descriptor for the model responses in the detailed DataFrame.
-- [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](evaluation/expectedcolumn.md)
+- [var expectedColumn: ResultColumn<Self.Sample.ExpectedValue>](./evaluation/expectedcolumn.md)
   A typed column descriptor for the expected values in the detailed DataFrame.
 ### Errors
-- [enum EvaluationError](evaluationerror.md)
+- [enum EvaluationError](./evaluationerror.md)
   Errors thrown during an evaluation run.
-- [enum EvaluatorError](evaluatorerror.md)
+- [enum EvaluatorError](./evaluatorerror.md)
   A value that describes why an evaluator failed while scoring a produced subject.
-- [enum SubjectInferenceError](subjectinferenceerror.md)
+- [enum SubjectInferenceError](./subjectinferenceerror.md)
   A value that describes a failure to produce a subject for a sample.
-- [enum EvaluationResultsError](evaluationresultserror.md)
+- [enum EvaluationResultsError](./evaluationresultserror.md)
   Errors the framework throws when parsing evaluation results.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+### Essentials
+- [Evaluating language model responses](./evaluating-language-model-responses.md)
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
-- [Designing effective evaluations](designing-effective-evaluations.md)
+- [Designing effective evaluations](./designing-effective-evaluations.md)
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
-- [Book Tracker: Using Evaluations to evaluate an intelligent feature](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
+- [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
   Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
-- [Evaluating a Core AI model](evaluating-a-core-ai-model.md)
+- [Evaluating a Core AI model](./evaluating-a-core-ai-model.md)
   Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
 
 

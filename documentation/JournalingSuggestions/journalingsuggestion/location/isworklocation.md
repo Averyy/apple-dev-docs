@@ -1,7 +1,8 @@
 # isWorkLocation
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean whether the location is the user’s inferred workplace.
 

@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized text that provides the notification’s secondary description.
 
@@ -19,15 +20,28 @@ The localized text that provides the notification’s secondary description.
 var subtitle: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readwrite) NSString * subtitle;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readwrite) NSString * subtitle;
+```
+
 #### Discussion
 
 Use this property to specify additional context about the purpose of the notification. Subtitles offer additional context in cases where the title alone isn’t clear. Subtitles aren’t displayed in all cases. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
 
 ## See Also
 
-- [var title: String](unmutablenotificationcontent/title.md)
+### Providing the primary content
+- [var title: String](./title.md)
   The localized text that provides the notification’s primary description.
-- [var body: String](unmutablenotificationcontent/body.md)
+- [var body: String](./body.md)
   The localized text that provides the notification’s main content.
 
 

@@ -1,7 +1,8 @@
 # errSecInputLengthError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An input length error occurred.
 
@@ -18,6 +19,10 @@ An input length error occurred.
 
 ```swift
 var errSecInputLengthError: OSStatus { get }
+```
+
+```c
+errSecInputLengthError
 ```
 
 

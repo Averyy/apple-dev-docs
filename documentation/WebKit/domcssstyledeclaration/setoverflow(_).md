@@ -1,7 +1,8 @@
 # setOverflow(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setOverflow(_ overflow: String!)
+```
+
+```objc
+- (void) setOverflow:(NSString *) overflow;
 ```
 
 

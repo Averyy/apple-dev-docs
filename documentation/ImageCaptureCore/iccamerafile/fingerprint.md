@@ -1,7 +1,8 @@
 # fingerprint
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var fingerprint: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * fingerprint;
 ```
 
 

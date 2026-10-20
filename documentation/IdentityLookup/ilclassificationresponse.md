@@ -1,7 +1,8 @@
 # ILClassificationResponse
 
 **Framework**: SMS and Call Reporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A response object that tells the system how to handle the reported communications.
 
@@ -17,45 +18,50 @@ A response object that tells the system how to handle the reported communication
 class ILClassificationResponse
 ```
 
+```objc
+@interface ILClassificationResponse : NSObject
+```
+
 #### Overview
 
-To work in areas where Wi-Fi connections and cellular data may be unreliable, the extension sends the response using an SMS message. As long as the action isn’t [`ILClassificationAction.none`](ilclassificationaction/none.md), the extension creates an SMS message to the number provided by the `ILClassificationExtensionSMSReportDestination` key in the extension’s `info.plist` file.
+To work in areas where Wi-Fi connections and cellular data may be unreliable, the extension sends the response using an SMS message. As long as the action isn’t [`ILClassificationAction.none`](./ilclassificationaction/none.md), the extension creates an SMS message to the number provided by the `ILClassificationExtensionSMSReportDestination` key in the extension’s `info.plist` file.
 
-The message’s body contains a JSON string with both the classification action and the contents of the user info dictionary. For more information, see [`JSONSerialization`](https://developer.apple.com/documentation/foundation/jsonserialization).
+The message’s body contains a JSON string with both the classification action and the contents of the user info dictionary. For more information, see [`JSONSerialization`](../Foundation/jsonserialization.md).
 
 ## Topics
 
 ### Creating Responses
-- [init(action: ILClassificationAction)](ilclassificationresponse/init(action:).md)
+- [init(action: ILClassificationAction)](./ilclassificationresponse/init%28action%29.md)
   Creates a new response using the provided classification.
 ### Accessing Data
-- [var action: ILClassificationAction](ilclassificationresponse/action.md)
+- [var action: ILClassificationAction](./ilclassificationresponse/action.md)
   A classification that determines what action the system takes.
-- [var userInfo: [String : Any]?](ilclassificationresponse/userinfo.md)
+- [var userInfo: [String : Any]?](./ilclassificationresponse/userinfo.md)
   JSON data included in a response sent over the network.
-- [var userString: String?](ilclassificationresponse/userstring.md)
+- [var userString: String?](./ilclassificationresponse/userstring.md)
   Text included in a response sent over SMS.
 ### Initializers
-- [init(classificationAction: ILClassificationAction)](ilclassificationresponse/init(classificationaction:).md)
-- [init?(coder: NSCoder)](ilclassificationresponse/init(coder:).md)
+- [init(classificationAction: ILClassificationAction)](./ilclassificationresponse/init%28classificationaction%29.md)
+- [init?(coder: NSCoder)](./ilclassificationresponse/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [enum ILClassificationAction](ilclassificationaction.md)
+### Responses
+- [enum ILClassificationAction](./ilclassificationaction.md)
   The actions the system can take in response to the reported communication.
 
 

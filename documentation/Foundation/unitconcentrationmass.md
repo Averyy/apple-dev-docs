@@ -1,7 +1,8 @@
 # UnitConcentrationMass
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for concentration of mass.
 
@@ -20,55 +21,60 @@ A unit of measure for concentration of mass.
 class UnitConcentrationMass
 ```
 
+```objc
+@interface NSUnitConcentrationMass : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitConcentrationMass`](unitconcentrationmass.md) to represent specific quantities of concentration using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitConcentrationMass`](./unitconcentrationmass.md) to represent specific quantities of concentration using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Concentration of Mass
 
 Concentration is the abundance of a constituent within a volume. Concentration can be expressed by SI derived units in terms of kilograms per cubic meter (kg/m3).
 
-The [`UnitConcentrationMass`](unitconcentrationmass.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`gramsPerLiter`](unitconcentrationmass/gramsperliter.md), and provides the following units, which are initialized using [`UnitConverterLinear`](unitconverterlinear.md) converters with the specified coefficients:
+The [`UnitConcentrationMass`](./unitconcentrationmass.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`gramsPerLiter`](./unitconcentrationmass/gramsperliter.md), and provides the following units, which are initialized using [`UnitConverterLinear`](./unitconverterlinear.md) converters with the specified coefficients:
 
 | Name | Method | Symbol | Coefficient |
 | --- | --- | --- | --- |
-| Grams Per Liter | [`gramsPerLiter`](unitconcentrationmass/gramsperliter.md) | g/L | `1` |
-| Milligrams Per Deciliter | [`milligramsPerDeciliter`](unitconcentrationmass/milligramsperdeciliter.md) | mg/dL | `0.01` |
-| Millimoles Per Liter | [`millimolesPerLiter(withGramsPerMole:)`](unitconcentrationmass/millimolesperliter(withgramspermole:).md) | mmol/L | `18 * gramsPerMole` |
+| Grams Per Liter | [`gramsPerLiter`](./unitconcentrationmass/gramsperliter.md) | g/L | `1` |
+| Milligrams Per Deciliter | [`milligramsPerDeciliter`](./unitconcentrationmass/milligramsperdeciliter.md) | mg/dL | `0.01` |
+| Millimoles Per Liter | [`millimolesPerLiter(withGramsPerMole:)`](./unitconcentrationmass/millimolesperliter%28withgramspermole%29.md) | mmol/L | `18 * gramsPerMole` |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var gramsPerLiter: UnitConcentrationMass](unitconcentrationmass/gramsperliter.md)
+- [class var gramsPerLiter: UnitConcentrationMass](./unitconcentrationmass/gramsperliter.md)
   The grams per liter unit of concentration.
-- [class var milligramsPerDeciliter: UnitConcentrationMass](unitconcentrationmass/milligramsperdeciliter.md)
+- [class var milligramsPerDeciliter: UnitConcentrationMass](./unitconcentrationmass/milligramsperdeciliter.md)
   The milligrams per deciliter unit of concentration.
-- [class func millimolesPerLiter(withGramsPerMole: Double) -> UnitConcentrationMass](unitconcentrationmass/millimolesperliter(withgramspermole:).md)
+- [class func millimolesPerLiter(withGramsPerMole: Double) -> UnitConcentrationMass](./unitconcentrationmass/millimolesperliter%28withgramspermole%29.md)
   Returns the millimoles per liter unit with the specified number of grams per mole.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UnitDispersion](unitdispersion.md)
+### Concentration and Dispersion
+- [class UnitDispersion](./unitdispersion.md)
   A unit of measure for specific quantities of dispersion.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A placeholder for the type that adopts this protocol.
@@ -12,7 +13,7 @@ A placeholder for the type that adopts this protocol.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

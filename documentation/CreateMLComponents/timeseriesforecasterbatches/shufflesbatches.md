@@ -1,7 +1,8 @@
 # shufflesBatches
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether to shuffle the batches.
 
@@ -22,15 +23,16 @@ var shufflesBatches: Bool
 
 ## See Also
 
-- [let annotations: MLShapedArray<Scalar>](timeseriesforecasterbatches/annotations.md)
+### Inspecting a time series forecaster batch
+- [let annotations: MLShapedArray<Scalar>](./annotations.md)
   The original annotations.
-- [let batchSize: Int](timeseriesforecasterbatches/batchsize.md)
+- [let batchSize: Int](./batchsize.md)
   The batch size.
-- [let features: MLShapedArray<Scalar>](timeseriesforecasterbatches/features.md)
+- [let features: MLShapedArray<Scalar>](./features.md)
   The original features.
-- [let forecastWindowSize: Int](timeseriesforecasterbatches/forecastwindowsize.md)
+- [let forecastWindowSize: Int](./forecastwindowsize.md)
   The prediction sample count.
-- [let inputWindowSize: Int](timeseriesforecasterbatches/inputwindowsize.md)
+- [let inputWindowSize: Int](./inputwindowsize.md)
   The input sample count.
 
 

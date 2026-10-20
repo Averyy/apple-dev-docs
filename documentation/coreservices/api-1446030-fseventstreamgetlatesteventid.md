@@ -1,7 +1,8 @@
 # FSEventStreamGetLatestEventId(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,7 +14,11 @@
 func FSEventStreamGetLatestEventId(_ streamRef: ConstFSEventStreamRef) -> FSEventStreamEventId
 ```
 
-#### Return_value
+```c
+FSEventStreamEventId FSEventStreamGetLatestEventId(ConstFSEventStreamRef streamRef);
+```
+
+#### Return Value
 
 The sinceWhen attribute of the stream.
 

@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfacePlaybackState.scanning
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the source is scanning forward or backward at an accelerated rate.
 
@@ -14,6 +15,10 @@ Indicates the source is scanning forward or backward at an accelerated rate.
 
 ```swift
 case scanning
+```
+
+```c
+AVPlaybackUserInterfacePlaybackStateScanning
 ```
 
 

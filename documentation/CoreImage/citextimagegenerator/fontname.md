@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The name of the font to use for the generated text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The name of the font to use for the generated text.
 var fontName: String { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSString * fontName;
+```
+
 ## See Also
 
-- [var fontSize: Float](citextimagegenerator/fontsize.md)
+### Instance Properties
+- [var fontSize: Float](./fontsize.md)
   The size of the font to use for the generated text.
-- [var scaleFactor: Float](citextimagegenerator/scalefactor.md)
+- [var scaleFactor: Float](./scalefactor.md)
   The scale of the font to use for the generated text.
-- [var text: String](citextimagegenerator/text.md)
+- [var text: String](./text.md)
   The text to render.
-- [var padding: Float](citextimagegenerator/padding.md)
+- [var padding: Float](./padding.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # update
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Manually triggers the update process.
 
@@ -11,15 +12,16 @@ Manually triggers the update process.
 
 ## Declaration
 
-```swift
+```
 void update();
 ```
 
 ## See Also
 
-- [add](domapplicationcache/1804703-add.md)
+### Updating the Cache
+- [add](./api-1804703-add.md)
   Forthcoming
-- [swapCache](domapplicationcache/1633375-swapcache.md)
+- [swapCache](./api-1633375-swapcache.md)
   Replaces the active cache with the latest version.
 
 

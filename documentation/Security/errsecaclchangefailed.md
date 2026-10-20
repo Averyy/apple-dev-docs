@@ -1,7 +1,8 @@
 # errSecACLChangeFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An ACL change operation failed.
 
@@ -18,6 +19,10 @@ An ACL change operation failed.
 
 ```swift
 var errSecACLChangeFailed: OSStatus { get }
+```
+
+```c
+errSecACLChangeFailed
 ```
 
 

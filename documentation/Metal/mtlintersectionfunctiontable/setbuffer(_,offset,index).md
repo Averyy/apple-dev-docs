@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets a buffer for the intersection functions.
@@ -20,19 +21,24 @@ Sets a buffer for the intersection functions.
 func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
 ```
 
+```objc
+- (void) setBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
-- `buffer`: The [`MTLBuffer`](mtlbuffer.md) object to set in the argument table.
+- `buffer`: The [`MTLBuffer`](../mtlbuffer.md) object to set in the argument table.
 - `offset`: Where the data begins, in bytes, from the start of the buffer.
 - `index`: An index in the function table’s buffer argument table.
 
 ## See Also
 
-- [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlintersectionfunctiontable/setbuffers(_:offsets:range:).md)
+### Specifying arguments for intersection functions
+- [func setBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./setbuffers%28_,offsets,range%29.md)
   Sets a range of buffers for the intersection functions.
-- [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](mtlintersectionfunctiontable/setvisiblefunctiontable(_:bufferindex:).md)
+- [func setVisibleFunctionTable((any MTLVisibleFunctionTable)?, bufferIndex: Int)](./setvisiblefunctiontable%28_,bufferindex%29.md)
   Sets a visible function table for the intersection functions.
-- [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](mtlintersectionfunctiontable/setvisiblefunctiontables(_:bufferrange:).md)
+- [func setVisibleFunctionTables([(any MTLVisibleFunctionTable)?], bufferRange: Range<Int>)](./setvisiblefunctiontables%28_,bufferrange%29.md)
   Sets a range of visible function tables for the intersection functions.
 
 

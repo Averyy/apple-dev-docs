@@ -1,7 +1,8 @@
 # accessibilityHeading(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the accessibility level of this heading.
 
@@ -23,19 +24,20 @@ func accessibilityHeading(_ level: AccessibilityHeadingLevel) -> Text
 
 #### Discussion
 
-Use this modifier to set the level of this heading in relation to other headings. The system speaks the level number of levels [`AccessibilityHeadingLevel.h1`](accessibilityheadinglevel/h1.md) through [`AccessibilityHeadingLevel.h6`](accessibilityheadinglevel/h6.md) alongside the text.
+Use this modifier to set the level of this heading in relation to other headings. The system speaks the level number of levels [`AccessibilityHeadingLevel.h1`](../accessibilityheadinglevel/h1.md) through [`AccessibilityHeadingLevel.h6`](../accessibilityheadinglevel/h6.md) alongside the text.
 
-The default heading level if you don’t use this modifier is [`AccessibilityHeadingLevel.unspecified`](accessibilityheadinglevel/unspecified.md).
+The default heading level if you don’t use this modifier is [`AccessibilityHeadingLevel.unspecified`](../accessibilityheadinglevel/unspecified.md).
 
 ## Parameters
 
-- `level`: The heading level to associate with this element from the available [`AccessibilityHeadingLevel`](accessibilityheadinglevel.md) levels.
+- `level`: The heading level to associate with this element from the available [`AccessibilityHeadingLevel`](../accessibilityheadinglevel.md) levels.
 
 ## See Also
 
-- [func accessibilityLabel(_:)](text/accessibilitylabel(_:).md)
+### Providing accessibility information
+- [func accessibilityLabel(_:)](./accessibilitylabel%28_%29.md)
   Adds a label to the view that describes its contents.
-- [func accessibilityTextContentType(AccessibilityTextContentType) -> Text](text/accessibilitytextcontenttype(_:).md)
+- [func accessibilityTextContentType(AccessibilityTextContentType) -> Text](./accessibilitytextcontenttype%28_%29.md)
   Sets an accessibility text content type.
 
 

@@ -1,7 +1,8 @@
 # namespaceComponents
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token split into its namespace components, separated by `:`.
 
@@ -21,8 +22,9 @@ var namespaceComponents: [USDToken] { get }
 
 ## See Also
 
-- [var string: String](usdtoken/string.md)
-- [var isEmpty: Bool](usdtoken/isempty.md)
+### Inspecting the token
+- [var string: String](./string.md)
+- [var isEmpty: Bool](./isempty.md)
 
 
 ---

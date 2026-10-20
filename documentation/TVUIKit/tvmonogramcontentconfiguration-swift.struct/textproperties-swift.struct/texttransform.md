@@ -1,7 +1,8 @@
 # TVMonogramContentConfiguration.TextProperties.TextTransform
 
 **Framework**: TVUIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the transform to apply to the text.
 
@@ -17,26 +18,27 @@ enum TextTransform
 ## Topics
 
 ### Text Transforms
-- [TVMonogramContentConfiguration.TextProperties.TextTransform.none](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/none.md)
+- [TVMonogramContentConfiguration.TextProperties.TextTransform.none](./texttransform/none.md)
   An option with no transform.
-- [TVMonogramContentConfiguration.TextProperties.TextTransform.capitalized](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/capitalized.md)
+- [TVMonogramContentConfiguration.TextProperties.TextTransform.capitalized](./texttransform/capitalized.md)
   A transform for displaying the text with the first character capitalized.
-- [TVMonogramContentConfiguration.TextProperties.TextTransform.lowercase](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/lowercase.md)
+- [TVMonogramContentConfiguration.TextProperties.TextTransform.lowercase](./texttransform/lowercase.md)
   A transform for displaying the text in all lowercase characters.
-- [TVMonogramContentConfiguration.TextProperties.TextTransform.uppercase](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/uppercase.md)
+- [TVMonogramContentConfiguration.TextProperties.TextTransform.uppercase](./texttransform/uppercase.md)
   A transform for displaying the text in all uppercase characters.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var font: UIFont](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/font.md)
+### Configuring Text Properties
+- [var font: UIFont](./font.md)
   The font for the text.
-- [var color: UIColor](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/color.md)
+- [var color: UIColor](./color.md)
   The color of the text.
 
 

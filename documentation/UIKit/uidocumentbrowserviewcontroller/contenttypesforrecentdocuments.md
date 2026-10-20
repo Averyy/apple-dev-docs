@@ -1,7 +1,8 @@
 # contentTypesForRecentDocuments
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Content types for browsing recent documents.
 
@@ -17,19 +18,24 @@ Content types for browsing recent documents.
 var contentTypesForRecentDocuments: [UTType] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<UTType *> * contentTypesForRecentDocuments;
+```
+
 #### Discussion
 
-The default list is the same as the list of content types you provide to the initializer, or the types you define in [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) in the app’s `Info.plist` file.
+The default list is the same as the list of content types you provide to the initializer, or the types you define in [`CFBundleDocumentTypes`](../../BundleResources/information-property-list/cfbundledocumenttypes.md) in the app’s `Info.plist` file.
 
 You can define a subset of these types using the `UIDocumentBrowserRecentDocumentContentTypes` key in the app’s `Info.plist` file.
 
 ## See Also
 
-- [var allowsDocumentCreation: Bool](uidocumentbrowserviewcontroller/allowsdocumentcreation.md)
+### Configuring a document browser
+- [var allowsDocumentCreation: Bool](./allowsdocumentcreation.md)
   A Boolean value that determines whether the document browser can create new documents.
-- [var allowsPickingMultipleItems: Bool](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md)
+- [var allowsPickingMultipleItems: Bool](./allowspickingmultipleitems.md)
   A Boolean value that determines whether the user can select and open more than one document at a time.
-- [func revealDocument(at: URL, importIfNeeded: Bool, completion: ((URL?, (any Error)?) -> Void)?)](uidocumentbrowserviewcontroller/revealdocument(at:importifneeded:completion:).md)
+- [func revealDocument(at: URL, importIfNeeded: Bool, completion: ((URL?, (any Error)?) -> Void)?)](./revealdocument%28at,importifneeded,completion%29.md)
   Reveals, and optionally imports, the document at the provided URL.
 
 

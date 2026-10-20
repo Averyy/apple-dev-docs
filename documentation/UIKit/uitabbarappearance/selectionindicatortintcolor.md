@@ -1,7 +1,8 @@
 # selectionIndicatorTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the selection indicator image.
 
@@ -19,17 +20,22 @@ The tint color to apply to the selection indicator image.
 var selectionIndicatorTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIColor * selectionIndicatorTintColor;
+```
+
 #### Discussion
 
-UIKit combines the color in this property with the image in the [`selectionIndicatorImage`](uitabbarappearance/selectionindicatorimage.md) to create the final appearance for the selected item. If you supplied a template image in [`selectionIndicatorImage`](uitabbarappearance/selectionindicatorimage.md), UIKit uses this color to tint that image. If [`selectionIndicatorImage`](uitabbarappearance/selectionindicatorimage.md) is `nil`, UIKit provides a default selection indicator image that accepts your tint color. If this property is `nil` or contains a clear color, UIKit doesn’t display a selection indicator.
+UIKit combines the color in this property with the image in the [`selectionIndicatorImage`](./selectionindicatorimage.md) to create the final appearance for the selected item. If you supplied a template image in [`selectionIndicatorImage`](./selectionindicatorimage.md), UIKit uses this color to tint that image. If [`selectionIndicatorImage`](./selectionindicatorimage.md) is `nil`, UIKit provides a default selection indicator image that accepts your tint color. If this property is `nil` or contains a clear color, UIKit doesn’t display a selection indicator.
 
-If the image you supplied in [`selectionIndicatorImage`](uitabbarappearance/selectionindicatorimage.md) isn’t a template image, UIKit ignores the value in this property and displays your image as is.
+If the image you supplied in [`selectionIndicatorImage`](./selectionindicatorimage.md) isn’t a template image, UIKit ignores the value in this property and displays your image as is.
 
 The default value of this property is `nil`.
 
 ## See Also
 
-- [var selectionIndicatorImage: UIImage?](uitabbarappearance/selectionindicatorimage.md)
+### Specifying the selection appearance
+- [var selectionIndicatorImage: UIImage?](./selectionindicatorimage.md)
   The image to draw for the selected item.
 
 

@@ -8,14 +8,15 @@
 
 ## Declaration
 
-```swift
+```c
 int w_status;
 ```
 
 ## See Also
 
-- [w_S](wait/1584948-w_s.md)
-- [w_T](wait/1584953-w_t.md)
+### Miscellaneous
+- [w_S](./api-1584948-w_s.md)
+- [w_T](./api-1584953-w_t.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # cblas_srotmg(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates a modified Givens rotation matrix.
 
@@ -20,6 +21,10 @@ Generates a modified Givens rotation matrix.
 func cblas_srotmg(_ D1: UnsafeMutablePointer<Float>, _ D2: UnsafeMutablePointer<Float>, _ B1: UnsafeMutablePointer<Float>, _ B2: Float, _ P: UnsafeMutablePointer<Float>)
 ```
 
+```c
+void cblas_srotmg(float *D1, float *D2, float *B1, const float B2, float *P);
+```
+
 #### Discussion
 
 The resulting matrix zeroes the second component of the vector `(sqrt(D1)*B1, sqrt(SD2)*B2)`.
@@ -32,42 +37,55 @@ The resulting matrix zeroes the second component of the vector `(sqrt(D1)*B1, sq
 - `D2`: Scaling factor `D2`.
 - `B1`: Scaling factor `B1`.
 - `B2`: Scaling factor `B2`.
-- `P`: A 5-element vector: - **`P[0]`**: Flag value that defines the form of matrix `H`. `-2.0`: matrix `H` contains the identity matrix. `-1.0`: matrix `H` is identical to matrix `SH` (defined by the remaining values in the vector). `0.0`: `H[1,2]` and `H[2,1]` are obtained from matrix `SH`. The remaining values are both `1.0`. `1.0`: `H[1,1]` and `H[2,2]` are obtained from matrix `SH`. `H[1,2]` is 1.0. `H[2,1]` is -1.0. - **`P[1]`**: Contains `SH[1,1]`.
-- **`P[2]`**: Contains `SH[2,1]`.
-- **`P[3]`**: Contains `SH[1,2]`.
-- **`P[4]`**: Contains `SH[2,2]`.
+- `P`: A 5-element vector:
+
+  - **`P[0]`**: Flag value that defines the form of matrix `H`.
+
+  `-2.0`: matrix `H` contains the identity matrix.
+
+  `-1.0`: matrix `H` is identical to matrix `SH` (defined by the remaining values in the vector).
+
+  `0.0`: `H[1,2]` and `H[2,1]` are obtained from matrix `SH`. The remaining values are both `1.0`.
+
+  `1.0`: `H[1,1]` and `H[2,2]` are obtained from matrix `SH`. `H[1,2]` is 1.0. `H[2,1]` is -1.0.
+
+  - **`P[1]`**: Contains `SH[1,1]`.
+  - **`P[2]`**: Contains `SH[2,1]`.
+  - **`P[3]`**: Contains `SH[1,2]`.
+  - **`P[4]`**: Contains `SH[2,2]`.
 
 ## See Also
 
-- [func cblas_sasum(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Float](cblas_sasum(_:_:_:).md)
+### Single-precision float matrix functions
+- [func cblas_sasum(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Float](./cblas_sasum%28_,_,_%29.md)
   Computes the sum of the absolute values of elements in a vector (single-precision).
-- [func cblas_saxpy(__LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_saxpy(_:_:_:_:_:_:).md)
+- [func cblas_saxpy(__LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_saxpy%28_,_,_,_,_,_%29.md)
   Computes a constant times a vector plus a vector (single-precision).
-- [func cblas_scopy(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_scopy(_:_:_:_:_:).md)
+- [func cblas_scopy(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_scopy%28_,_,_,_,_%29.md)
   Copies a vector to another vector (single-precision).
-- [func cblas_sgbmv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_sgbmv(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_sgbmv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_sgbmv%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Scales a general band matrix, then multiplies by a vector, then adds a vector (single precision).
-- [func cblas_sgemm(CBLAS_ORDER, CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_sgemm(CBLAS_ORDER, CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_sgemm%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies two matrices (single-precision).
-- [func cblas_sgemv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_sgemv(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_sgemv(CBLAS_ORDER, CBLAS_TRANSPOSE, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_sgemv%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies a single-precision matrix by a vector.
-- [func cblas_sger(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_sger(_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_sger(CBLAS_ORDER, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_sger%28_,_,_,_,_,_,_,_,_,_%29.md)
   Multiplies vector X by the transpose of vector Y, then adds matrix A (single precison).
-- [func cblas_snrm2(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Float](cblas_snrm2(_:_:_:).md)
+- [func cblas_snrm2(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Float](./cblas_snrm2%28_,_,_%29.md)
   Computes the L2 norm (Euclidian length) of a vector (single precision).
-- [func cblas_srot(__LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int, Float, Float)](cblas_srot(_:_:_:_:_:_:_:).md)
+- [func cblas_srot(__LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int, Float, Float)](./cblas_srot%28_,_,_,_,_,_,_%29.md)
   Applies a Givens rotation matrix to a pair of vectors.
-- [func cblas_srotg(UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>)](cblas_srotg(_:_:_:_:).md)
+- [func cblas_srotg(UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>)](./cblas_srotg%28_,_,_,_%29.md)
   Constructs a Givens rotation matrix.
-- [func cblas_srotm(__LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int, UnsafePointer<Float>)](cblas_srotm(_:_:_:_:_:_:).md)
+- [func cblas_srotm(__LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?, __LAPACK_int, UnsafePointer<Float>)](./cblas_srotm%28_,_,_,_,_,_%29.md)
   Applies a modified Givens transformation (single precision).
-- [func cblas_ssbmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_ssbmv(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_ssbmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_ssbmv%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Scales a symmetric band matrix, then multiplies by a vector, then adds a vector (single-precision).
-- [func cblas_sscal(__LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_sscal(_:_:_:_:).md)
+- [func cblas_sscal(__LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_sscal%28_,_,_,_%29.md)
   Multiplies each element of a vector by a constant (single-precision).
-- [func cblas_sspmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, Float, UnsafePointer<Float>?, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](cblas_sspmv(_:_:_:_:_:_:_:_:_:_:).md)
+- [func cblas_sspmv(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, Float, UnsafePointer<Float>?, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](./cblas_sspmv%28_,_,_,_,_,_,_,_,_,_%29.md)
   Scales a packed symmetric matrix, then multiplies by a vector, then scales and adds another vector (single precision).
-- [func cblas_sspr(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?)](cblas_sspr(_:_:_:_:_:_:_:).md)
+- [func cblas_sspr(CBLAS_ORDER, CBLAS_UPLO, __LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafeMutablePointer<Float>?)](./cblas_sspr%28_,_,_,_,_,_,_%29.md)
   Rank one update: adds a packed symmetric matrix to the product of a scaling factor, a vector, and its transpose (single precision).
 
 

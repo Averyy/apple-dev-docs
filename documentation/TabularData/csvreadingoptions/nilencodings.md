@@ -1,7 +1,8 @@
 # nilEncodings
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of strings that stores acceptable spellings for empty values.
 

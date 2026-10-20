@@ -1,7 +1,8 @@
 # kMTAudioProcessingTapFlag_StartOfStream
 
 **Framework**: Media Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Signifies that the source audio is the beginning of a continuous stream.
 
@@ -19,13 +20,18 @@ Signifies that the source audio is the beginning of a continuous stream.
 var kMTAudioProcessingTapFlag_StartOfStream: MTAudioProcessingTapFlags { get }
 ```
 
+```c
+kMTAudioProcessingTapFlag_StartOfStream
+```
+
 #### Discussion
 
-Returned from [`MTAudioProcessingTapGetSourceAudio(_:_:_:_:_:_:)`](mtaudioprocessingtapgetsourceaudio(_:_:_:_:_:_:).md).
+Returned from [`MTAudioProcessingTapGetSourceAudio(_:_:_:_:_:_:)`](./mtaudioprocessingtapgetsourceaudio%28_,_,_,_,_,_%29.md).
 
 ## See Also
 
-- [var kMTAudioProcessingTapFlag_EndOfStream: MTAudioProcessingTapFlags](kmtaudioprocessingtapflag_endofstream.md)
+### Flags
+- [var kMTAudioProcessingTapFlag_EndOfStream: MTAudioProcessingTapFlags](./kmtaudioprocessingtapflag_endofstream.md)
   Signifies that the source audio is past the end of stream.
 
 

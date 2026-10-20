@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The safe area remains unchanged as bars minimize.
 
@@ -18,9 +19,10 @@ static let disabled: ToolbarMinimizationSafeAreaAdjustment
 
 ## See Also
 
-- [static let automatic: ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment/automatic.md)
+### Minimization adjustment options
+- [static let automatic: ToolbarMinimizationSafeAreaAdjustment](./automatic.md)
   The system determines the safe area adjustment.
-- [static let enabled: ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment/enabled.md)
+- [static let enabled: ToolbarMinimizationSafeAreaAdjustment](./enabled.md)
   The safe area adjusts interactively as bars minimize.
 
 

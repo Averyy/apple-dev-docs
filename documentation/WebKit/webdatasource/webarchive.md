@@ -1,12 +1,13 @@
 # webArchive
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A web archive representing the data source, its subresources, and subframes.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A web archive representing the data source, its subresources, and subframes.
 var webArchive: WebArchive! { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) WebArchive * webArchive;
+```
+
 #### Discussion
 
-In the case of HTML, if the current content is preferred, then send [`webArchive`](webdatasource/webarchive.md) to the appropriate DOM object.
+In the case of HTML, if the current content is preferred, then send [`webArchive`](./webarchive.md) to the appropriate DOM object.
 
 ## See Also
 
-- [var mainResource: WebResource!](webdatasource/mainresource.md)
+### Related Documentation
+- [var mainResource: WebResource!](./mainresource.md)
   A`WebResource` object representing the data source.
 
 

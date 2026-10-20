@@ -1,7 +1,8 @@
 # cmProfileIterateDataVersion3
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Added MD5 digest
 

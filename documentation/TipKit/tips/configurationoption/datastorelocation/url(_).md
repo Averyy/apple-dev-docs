@@ -1,7 +1,8 @@
 # url(_:)
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Configuration option for persisting tips at a custom on-disk location.
 

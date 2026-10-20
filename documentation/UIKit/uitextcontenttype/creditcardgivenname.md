@@ -1,7 +1,8 @@
 # creditCardGivenName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as a first name on a credit card.
 
@@ -18,25 +19,30 @@ A property that defines the content in a text input area as a first name on a cr
 static let creditCardGivenName: UITextContentType
 ```
 
+```c
+extern UITextContentType const UITextContentTypeCreditCardGivenName;
+```
+
 ## See Also
 
-- [static let creditCardNumber: UITextContentType](uitextcontenttype/creditcardnumber.md)
+### Accepting payment
+- [static let creditCardNumber: UITextContentType](./creditcardnumber.md)
   A property that defines the content in a text input area as a credit card number.
-- [static let creditCardExpiration: UITextContentType](uitextcontenttype/creditcardexpiration.md)
+- [static let creditCardExpiration: UITextContentType](./creditcardexpiration.md)
   A property that defines the content in a text input area as an expiration date on a credit card.
-- [static let creditCardExpirationMonth: UITextContentType](uitextcontenttype/creditcardexpirationmonth.md)
+- [static let creditCardExpirationMonth: UITextContentType](./creditcardexpirationmonth.md)
   A property that defines the content in a text input area as the month component of an expiration date on a credit card.
-- [static let creditCardExpirationYear: UITextContentType](uitextcontenttype/creditcardexpirationyear.md)
+- [static let creditCardExpirationYear: UITextContentType](./creditcardexpirationyear.md)
   A property that defines the content in a text input area as the year component of an expiration date on a credit card.
-- [static let creditCardSecurityCode: UITextContentType](uitextcontenttype/creditcardsecuritycode.md)
+- [static let creditCardSecurityCode: UITextContentType](./creditcardsecuritycode.md)
   A property that defines the content in a text input area as a credit card security code.
-- [static let creditCardType: UITextContentType](uitextcontenttype/creditcardtype.md)
+- [static let creditCardType: UITextContentType](./creditcardtype.md)
   A property that defines the content in a text input area as a credit card type.
-- [static let creditCardName: UITextContentType](uitextcontenttype/creditcardname.md)
+- [static let creditCardName: UITextContentType](./creditcardname.md)
   A property that defines the content in a text input area as a name on a credit card.
-- [static let creditCardMiddleName: UITextContentType](uitextcontenttype/creditcardmiddlename.md)
+- [static let creditCardMiddleName: UITextContentType](./creditcardmiddlename.md)
   A property that defines the content in a text input area as a middle name on a credit card.
-- [static let creditCardFamilyName: UITextContentType](uitextcontenttype/creditcardfamilyname.md)
+- [static let creditCardFamilyName: UITextContentType](./creditcardfamilyname.md)
   A property that defines the content in a text input area as a family name, or last name, on a credit card.
 
 

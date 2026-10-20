@@ -1,7 +1,8 @@
 # pkcs12
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents Public Key Cryptography Standard (PKCS) 12 data.
 
@@ -24,11 +25,12 @@ static var pkcs12: UTType { get }
 
 The identifier for this type is `com.rsa.pkcs-12`.
 
-This type conforms to [`UTTypeData`](uttypedata.md).
+This type conforms to [`UTTypeData`](../uttypedata.md).
 
 ## See Also
 
-- [static var x509Certificate: UTType](uttype-swift.struct/x509certificate.md)
+### Cryptographic files
+- [static var x509Certificate: UTType](./x509certificate.md)
   A type that represents an X.509 certificate.
 
 

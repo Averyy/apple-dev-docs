@@ -1,18 +1,21 @@
 # CBError.Code.unkownDevice
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A misspelled version of the unknown device error code.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 9.0+ - Deprecated in 13.0
+- iPadOS 9.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.13+ - Deprecated in 10.15
+- tvOS 9.0+ - Deprecated in 13.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 6.0
+
+> **Deprecated**: Use [`unknownDevice`](./unknowndevice.md) instead.
 
 ## Declaration
 
@@ -20,35 +23,40 @@ A misspelled version of the unknown device error code.
 case unkownDevice
 ```
 
+```c
+CBErrorUnkownDevice
+```
+
 ## See Also
 
-- [CBError.Code.unknown](cberror-swift.struct/code/unknown.md)
+### Error Codes
+- [CBError.Code.unknown](./unknown.md)
   An unknown error occurred.
-- [CBError.Code.invalidParameters](cberror-swift.struct/code/invalidparameters.md)
+- [CBError.Code.invalidParameters](./invalidparameters.md)
   The specified parameters are invalid.
-- [CBError.Code.invalidHandle](cberror-swift.struct/code/invalidhandle.md)
+- [CBError.Code.invalidHandle](./invalidhandle.md)
   The specified attribute handle is invalid.
-- [CBError.Code.notConnected](cberror-swift.struct/code/notconnected.md)
+- [CBError.Code.notConnected](./notconnected.md)
   The device isn’t currently connected.
-- [CBError.Code.outOfSpace](cberror-swift.struct/code/outofspace.md)
+- [CBError.Code.outOfSpace](./outofspace.md)
   The device has run out of space to complete the intended operation.
-- [CBError.Code.operationCancelled](cberror-swift.struct/code/operationcancelled.md)
+- [CBError.Code.operationCancelled](./operationcancelled.md)
   The error represents a canceled operation.
-- [CBError.Code.connectionTimeout](cberror-swift.struct/code/connectiontimeout.md)
+- [CBError.Code.connectionTimeout](./connectiontimeout.md)
   The connection timed out.
-- [CBError.Code.peripheralDisconnected](cberror-swift.struct/code/peripheraldisconnected.md)
+- [CBError.Code.peripheralDisconnected](./peripheraldisconnected.md)
   The peripheral disconnected.
-- [CBError.Code.uuidNotAllowed](cberror-swift.struct/code/uuidnotallowed.md)
+- [CBError.Code.uuidNotAllowed](./uuidnotallowed.md)
   The specified UUID isn’t permitted.
-- [CBError.Code.alreadyAdvertising](cberror-swift.struct/code/alreadyadvertising.md)
+- [CBError.Code.alreadyAdvertising](./alreadyadvertising.md)
   The peripheral is already advertising.
-- [CBError.Code.connectionFailed](cberror-swift.struct/code/connectionfailed.md)
+- [CBError.Code.connectionFailed](./connectionfailed.md)
   The connection failed.
-- [CBError.Code.connectionLimitReached](cberror-swift.struct/code/connectionlimitreached.md)
+- [CBError.Code.connectionLimitReached](./connectionlimitreached.md)
   The device already has the maximum number of connections.
-- [CBError.Code.operationNotSupported](cberror-swift.struct/code/operationnotsupported.md)
+- [CBError.Code.operationNotSupported](./operationnotsupported.md)
   The operation isn’t supported.
-- [static var unknownDevice: CBError.Code](cberror-swift.struct/code/unknowndevice.md)
+- [static var unknownDevice: CBError.Code](./unknowndevice.md)
   The device is unknown.
 
 

@@ -1,7 +1,8 @@
 # PKPaymentSummaryItemType
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the type of the payment summary item, such as final or pending.
 
@@ -19,33 +20,38 @@ Constants that describe the type of the payment summary item, such as final or p
 enum PKPaymentSummaryItemType
 ```
 
+```c
+enum PKPaymentSummaryItemType : NSUInteger;
+```
+
 ## Topics
 
 ### Payment summary item types
-- [PKPaymentSummaryItemType.final](pkpaymentsummaryitemtype/final.md)
+- [PKPaymentSummaryItemType.final](./pkpaymentsummaryitemtype/final.md)
   A summary item that represents a known, final cost.
-- [PKPaymentSummaryItemType.pending](pkpaymentsummaryitemtype/pending.md)
+- [PKPaymentSummaryItemType.pending](./pkpaymentsummaryitemtype/pending.md)
   A summary item that represents an estimated or unknown cost.
 ### Initializers
-- [init?(rawValue: UInt)](pkpaymentsummaryitemtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./pkpaymentsummaryitemtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var label: String](pkpaymentsummaryitem/label.md)
+### Describing summary items
+- [var label: String](./pkpaymentsummaryitem/label.md)
   A short, localized description of the item.
-- [var amount: NSDecimalNumber](pkpaymentsummaryitem/amount.md)
+- [var amount: NSDecimalNumber](./pkpaymentsummaryitem/amount.md)
   The summary item’s amount.
-- [var type: PKPaymentSummaryItemType](pkpaymentsummaryitem/type.md)
+- [var type: PKPaymentSummaryItemType](./pkpaymentsummaryitem/type.md)
   The summary item’s type that indicates whether the amount is final.
 
 

@@ -1,21 +1,23 @@
 # copysignl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double copysignl(long double, long double);
 ```
 
 ## See Also
 
-- [copysign](1557306-copysign.md)
-- [copysignf](1557234-copysignf.md)
+### Copy Sign
+- [copysign](./api-1557306-copysign.md)
+- [copysignf](./api-1557234-copysignf.md)
 
 
 ---

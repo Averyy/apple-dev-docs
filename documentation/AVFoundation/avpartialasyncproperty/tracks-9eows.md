@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tracks that a composition contains.
 
@@ -20,13 +21,16 @@ The tracks that a composition contains.
 static var tracks: AVAsyncProperty<Root, [AVCompositionTrack]> { get }
 ```
 
+Available when `Root` inherits `AVComposition`.
+
 ## See Also
 
-- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVCompositionTrack?, (any Error)?) -> Void)](avcomposition/loadtrack(withtrackid:completionhandler:).md)
+### Loading tracks
+- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVCompositionTrack?, (any Error)?) -> Void)](../avcomposition/loadtrack%28withtrackid,completionhandler%29.md)
   Loads a track that contains the specified identifier.
-- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVCompositionTrack]?, (any Error)?) -> Void)](avcomposition/loadtracks(withmediatype:completionhandler:).md)
+- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVCompositionTrack]?, (any Error)?) -> Void)](../avcomposition/loadtracks%28withmediatype,completionhandler%29.md)
   Loads tracks that contain media of a specified type.
-- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVCompositionTrack]?, (any Error)?) -> Void)](avcomposition/loadtracks(withmediacharacteristic:completionhandler:).md)
+- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVCompositionTrack]?, (any Error)?) -> Void)](../avcomposition/loadtracks%28withmediacharacteristic,completionhandler%29.md)
   Loads tracks that contain media of a specified characteristic.
 
 

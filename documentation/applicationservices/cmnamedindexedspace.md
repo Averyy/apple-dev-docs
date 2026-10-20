@@ -1,7 +1,8 @@
 # cmNamedIndexedSpace
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A named indexed color space.
 

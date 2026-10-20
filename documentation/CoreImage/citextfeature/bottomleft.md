@@ -1,7 +1,8 @@
 # bottomLeft
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image coordinate of the lower-left corner of the detected text.
 
@@ -19,13 +20,18 @@ The image coordinate of the lower-left corner of the detected text.
 var bottomLeft: CGPoint { get }
 ```
 
+```objc
+@property (readonly) CGPoint bottomLeft;
+```
+
 ## See Also
 
-- [var bottomRight: CGPoint](citextfeature/bottomright.md)
+### Identifying the Corners of a Detected Text Region
+- [var bottomRight: CGPoint](./bottomright.md)
   The image coordinate of the lower-right corner of the detected text.
-- [var topLeft: CGPoint](citextfeature/topleft.md)
+- [var topLeft: CGPoint](./topleft.md)
   The image coordinate of the upper-left corner of the detected text.
-- [var topRight: CGPoint](citextfeature/topright.md)
+- [var topRight: CGPoint](./topright.md)
   The image coordinate of the upper-right corner of the detected text.
 
 

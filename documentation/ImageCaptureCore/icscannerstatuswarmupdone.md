@@ -1,7 +1,8 @@
 # ICScannerStatusWarmUpDone
 
 **Framework**: ImageCaptureCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A nonlocalized notification string to indicate that the scanner has warmed up.
 
@@ -14,11 +15,16 @@ A nonlocalized notification string to indicate that the scanner has warmed up.
 let ICScannerStatusWarmUpDone: String
 ```
 
+```c
+extern NSString * const ICScannerStatusWarmUpDone;
+```
+
 ## See Also
 
-- [let ICScannerStatusRequestsOverviewScan: String](icscannerstatusrequestsoverviewscan.md)
+### Scanner States
+- [let ICScannerStatusRequestsOverviewScan: String](./icscannerstatusrequestsoverviewscan.md)
   A nonlocalized notification string to indicate that the scanner is requesting an overview scan.
-- [let ICScannerStatusWarmingUp: String](icscannerstatuswarmingup.md)
+- [let ICScannerStatusWarmingUp: String](./icscannerstatuswarmingup.md)
   A nonlocalized notification string to indicate that the scanner is warming up.
 
 

@@ -1,6 +1,7 @@
 # Creating a Complex, Layered Header
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Layer a title and heading in front of an image, with their colors optimized for legibility.
 
@@ -12,23 +13,23 @@ In this second article, you’ll add more code to the same article to modify the
 
 **On this page, you’ll learn how to create a more complex layered header.**
 
-##### Move Title and Heading Text Into the Header
+##### Move Title and Heading Text into the Header
 
 First, you need to layer title and heading information in front of the header’s image fill. You’ll move `heading1`, `divider`, and `title` components from the second section of the article into the `header` component.
 
-This image shows the heading and title before they have been lightened for legibility; you’ll lighten this text in [`Define a Light Text Style for Heading Text`](creating-a-complex-layered-header#Define-a-Light-Text-Style-for-Heading-Text.md).
+This image shows the heading and title before they have been lightened for legibility; you’ll lighten this text in [Define a Light Text Style for Heading Text](./creating-a-complex-layered-header.md#Define-a-Light-Text-Style-for-Heading-Text).
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading layered in front of a header image.](/images/com.apple.applenews/media-3627616@2x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading layered in front of a header image.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3627616@2x.png)
 
-1. Open the `article.json` file that you completed in [`Adding Parallax Behavior`](adding-parallax-behavior.md), or open `Desktop/News_Design_Tutorial/News_Design_Tutorial_Advanced_Article_1/article.json`.
+1. Open the `article.json` file that you completed in [Adding Parallax Behavior](./adding-parallax-behavior.md), or open `Desktop/News_Design_Tutorial/News_Design_Tutorial_Advanced_Article_1/article.json`.
 2. In the `article.json` file (not the example code below), cut the first three components inside the second section to your clipboard. The code you are cutting begins with the opening bracket (`{`) before `"role": "heading1",` and ends with the closing bracket and comma  (`},`) that end the `title` component.
 3. Paste the components inside the `components` array in your article’s header, after the opening square bracket (`[`) that comes a few lines after this line: `"role": "header",`
 
-Your code should look like the example code [`Moving Components: Result`](creating-a-complex-layered-header#Moving-Components-Result.md).
+Your code should look like the example code [Moving Components: Result](./creating-a-complex-layered-header.md#Moving-Components-Result).
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that the title is layered in front of the header as shown in the previous figure.
 
-###### Moving Components Result
+###### Moving Components: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -103,15 +104,15 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ##### Create More Space Above the Intro Component
 
-When you moved your title in [`Move Title and Heading Text into the Header`](creating-a-complex-layered-header#Move-Title-and-Heading-Text-into-the-Header.md), the spacing around your `intro` component changed. You can use an already defined `ComponentLayout` object to create more space above the `intro` component.
+When you moved your title in [Move Title and Heading Text into the Header](./creating-a-complex-layered-header.md#Move-Title-and-Heading-Text-into-the-Header), the spacing around your `intro` component changed. You can use an already defined `ComponentLayout` object to create more space above the `intro` component.
 
 To create additional space, in your `article.json` file, inside the `intro` component, change the value of `layout` from `"halfMarginBelowLayout"` to `"halfMarginBothLayout"`.
 
-Your code should look like the example code [`Intro ComponentLayout Object: Result`](creating-a-complex-layered-header#Intro-ComponentLayout-Object-Result.md).
+Your code should look like the example code [Intro ComponentLayout Object: Result](./creating-a-complex-layered-header.md#Intro-ComponentLayout-Object-Result).
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see the adjustment to the `intro` component’s position.
 
-###### Intro Componentlayout Object Result
+###### Intro ComponentLayout Object: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -150,19 +151,19 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ##### Anchor the Title to the Bottom of the Header
 
-If you anchor multiple child components to the same side of the parent, the children will stack as in the following figure. This image shows the heading and title before they have been lightened for legibility; you’ll lighten this text in [`Use the Dark Background and Light Text`](creating-a-complex-layered-header#Use-the-Dark-Background-and-Light-Text.md).
+If you anchor multiple child components to the same side of the parent, the children will stack as in the following figure. This image shows the heading and title before they have been lightened for legibility; you’ll lighten this text in [Use the Dark Background and Light Text](./creating-a-complex-layered-header.md#Use-the-Dark-Background-and-Light-Text).
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading within a container that is layered in front of a header image and anchored to the bottom of the header.](/images/com.apple.applenews/media-3627615@2x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading within a container that is layered in front of a header image and anchored to the bottom of the header.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3627615@2x.png)
 
 1. In your working `article.json` file, delete the contents of the `components` array inside your `header` component.
-2. Copy the example code [`Header Contents: Copy This Code`](creating-a-complex-layered-header#Header-Contents-Copy-This-Code.md).
+2. Copy the example code [Header Contents: Copy This Code](./creating-a-complex-layered-header.md#Header-Contents-Copy-This-Code).
 3. Paste the code inside the now-empty `components` array of the header, where you deleted content in step 1. Make sure to paste inside the square brackets (`[]`).
 
-Your code should look like the example code [`Header Contents: Result`](creating-a-complex-layered-header#Header-Contents-Result.md).
+Your code should look like the example code [Header Contents: Result](./creating-a-complex-layered-header.md#Header-Contents-Result).
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that the article title information is anchored to the bottom of the header.
 
-###### Header Contents Copy This Code
+###### Header Contents: Copy This Code
 
 ```json
             {
@@ -211,7 +212,7 @@ After you make this change in your code, you can preview your working `article.j
             }
 ```
 
-###### Header Contents Result
+###### Header Contents: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -298,14 +299,14 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 To add contrast to your title and heading text, you can adjust the text color and the background of the text’s parent container. You’ll set the title container background to a gradient that fades from transparent at the top to black at the bottom.
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading within a container with a contrasting background color. The container is layered in front of a header image and anchored to the bottom of the header.](/images/com.apple.applenews/media-3627614@2x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading within a container with a contrasting background color. The container is layered in front of a header image and anchored to the bottom of the header.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3627614@2x.png)
 
-1. Copy the example code [`scrimBackgroundStyle: Copy This Code`](creating-a-complex-layered-header#scrimBackgroundStyle-Copy-This-Code.md).
+1. Copy the example code [scrimBackgroundStyle: Copy This Code](./creating-a-complex-layered-header.md#scrimBackgroundStyle-Copy-This-Code).
 2. Paste the code between the closing brace (`}`) of the last `ComponentStyle` object and the closing brace for the whole `componentStyles` property.
 
-Your code should look like the example code [`scrimBackgroundStyle: Result`](creating-a-complex-layered-header#scrimBackgroundStyle-Result.md).
+Your code should look like the example code [scrimBackgroundStyle: Result](./creating-a-complex-layered-header.md#scrimBackgroundStyle-Result).
 
-###### Scrimbackgroundstyle Copy This Code
+###### scrimBackgroundStyle: Copy This Code
 
 ```json
 ,
@@ -324,7 +325,7 @@ Your code should look like the example code [`scrimBackgroundStyle: Result`](cre
     }
 ```
 
-###### Scrimbackgroundstyle Result
+###### scrimBackgroundStyle: Result
 
 ```json
 {
@@ -353,12 +354,12 @@ Your code should look like the example code [`scrimBackgroundStyle: Result`](cre
 
 Before you can lighten the text of the heading, you must define a new `ComponentTextStyle` object.
 
-1. Copy the example code [`heading1Light: Copy This Code`](creating-a-complex-layered-header#heading1Light-Copy-This-Code.md).
+1. Copy the example code [heading1Light: Copy This Code](./creating-a-complex-layered-header.md#heading1Light-Copy-This-Code).
 2. Paste the code inside the `ArticleDocument.componentTextStyles` object in your `article.json` file, after the closing brace (`}`) of the last `ComponentTextStyle` object and before the closing brace for the whole `componentTextStyles` property.
 
-Your code should look like the example code [`heading1Light: Result`](creating-a-complex-layered-header#heading1Light-Result.md).
+Your code should look like the example code [heading1Light: Result](./creating-a-complex-layered-header.md#heading1Light-Result).
 
-###### Heading1light Copy This Code
+###### heading1Light: Copy This Code
 
 ```json
 ,
@@ -367,7 +368,7 @@ Your code should look like the example code [`heading1Light: Result`](creating-a
     }
 ```
 
-###### Heading1light Result
+###### heading1Light: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -389,12 +390,12 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 Now you can add references to the `scrimBackgroundStyle` and `heading1Light` objects.
 
-1. In your `article.json` file, inside the `header` component’s child container, add a property named `style` with a value of `"scrimBackgroundStyle"`, as in the example code [`Dark Background and Light Text: Result`](creating-a-complex-layered-header#Dark-Background-and-Light-Text-Result.md).
-2. In your `article.json file`, inside both the `heading1` component and the `title` component, add a property named `textStyle` with a value of `"heading1Light"`, as in the example code [`Dark Background and Light Text: Result`](creating-a-complex-layered-header#Dark-Background-and-Light-Text-Result.md).
+1. In your `article.json` file, inside the `header` component’s child container, add a property named `style` with a value of `"scrimBackgroundStyle"`, as in the example code [Dark Background and Light Text: Result](./creating-a-complex-layered-header.md#Dark-Background-and-Light-Text-Result).
+2. In your `article.json file`, inside both the `heading1` component and the `title` component, add a property named `textStyle` with a value of `"heading1Light"`, as in the example code [Dark Background and Light Text: Result](./creating-a-complex-layered-header.md#Dark-Background-and-Light-Text-Result).
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see the optimized styling of your header.
 
-###### Dark Background and Light Text Result
+###### Dark Background and Light Text: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -455,45 +456,47 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ##### Previous
 
-[`Viewing the Finished Article for Advanced Design Tutorial 1`](viewing-the-finished-article-for-advanced-design-tutorial-1.md)
+[Viewing the Finished Article for Advanced Design Tutorial 1](./viewing-the-finished-article-for-advanced-design-tutorial-1.md)
 
 ##### Next
 
-[`Creating a Floating Caption`](creating-a-floating-caption.md)
+[Creating a Floating Caption](./creating-a-floating-caption.md)
 
 ## See Also
 
-- [Positioning the Content in Your Article](positioning-the-content-in-your-article.md)
+### Related Documentation
+- [Positioning the Content in Your Article](./positioning-the-content-in-your-article.md)
   Align article components with columns in your layout.
-- [Nesting Components in an Article](nesting-components-in-an-article.md)
+- [Nesting Components in an Article](./nesting-components-in-an-article.md)
   Use container components to create the component hierarchies you need for special article designs.
-- [Applying a Background to a Component](applying-a-background-to-a-component.md)
+- [Applying a Background to a Component](./applying-a-background-to-a-component.md)
   Change the appearance of the backgrounds in your article.
-- [Defining and Applying Text Styles](defining-and-applying-text-styles.md)
+- [Defining and Applying Text Styles](./defining-and-applying-text-styles.md)
   Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
-- [object Header](../applenewsformat/header.md)
+- [object Header](https://developer.apple.com/documentation/applenewsformat/header)
   The component for defining the top area of an article, chapter, or section.
-- [object LinearGradientFill](../applenewsformat/lineargradientfill.md)
+- [object LinearGradientFill](https://developer.apple.com/documentation/applenewsformat/lineargradientfill)
   The object for displaying a linear gradient as a component background.
-- [object ComponentLayout](../applenewsformat/componentlayout.md)
+- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
   The object for defining the positioning for a specific component within the article’s column system.
-- [object ComponentTextStyle](../applenewsformat/componenttextstyle.md)
+- [object ComponentTextStyle](https://developer.apple.com/documentation/applenewsformat/componenttextstyle)
   The object for defining the style for a text component, including spacing, alignment, and drop caps.
-- [object ComponentStyle](../applenewsformat/componentstyle.md)
+- [object ComponentStyle](https://developer.apple.com/documentation/applenewsformat/componentstyle)
   The object for setting style properties for components, including background color and fill, borders, and table styles.
-- [Creating a Floating Caption](creating-a-floating-caption.md)
+### Advanced Design Tutorial 2: Layout and Positioning
+- [Creating a Floating Caption](./creating-a-floating-caption.md)
   Position a caption in the wide right margin of your article.
-- [Creating an Inset Pull Quote](creating-an-inset-pull-quote.md)
+- [Creating an Inset Pull Quote](./creating-an-inset-pull-quote.md)
   Wrap article body text around an inset pull quote.
-- [Creating an Inset Photo](creating-an-inset-photo.md)
+- [Creating an Inset Photo](./creating-an-inset-photo.md)
   Wrap article body text around an inset photo.
-- [Adding Color to Text Ranges](adding-color-to-text-ranges.md)
+- [Adding Color to Text Ranges](./adding-color-to-text-ranges.md)
   Create text in color by using HTML to refer to TextStyle objects.
-- [Adding Animations](adding-animations.md)
+- [Adding Animations](./adding-animations.md)
   Use animations to affect how parts of your article come into view the first time they appear.
-- [Adding a Scene](adding-a-scene.md)
+- [Adding a Scene](./adding-a-scene.md)
   Control how the article’s opening section comes into view.
-- [Viewing the Finished Article for Advanced Design Tutorial 2](viewing-the-finished-article-for-advanced-design-tutorial-2.md)
+- [Viewing the Finished Article for Advanced Design Tutorial 2](./viewing-the-finished-article-for-advanced-design-tutorial-2.md)
   See the full JSON code from this tutorial.
 
 

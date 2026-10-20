@@ -1,7 +1,8 @@
 # contentMarginsRemoved(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures whether the content margins are removed.
 

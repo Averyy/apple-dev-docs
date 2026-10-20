@@ -1,7 +1,8 @@
 # audioStreamSetting
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stream’s current audio setting.
 
@@ -19,12 +20,17 @@ The stream’s current audio setting.
 var audioStreamSetting: HMCameraAudioStreamSetting { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) HMCameraAudioStreamSetting audioStreamSetting;
+```
+
 ## See Also
 
-- [func updateAudioStreamSetting(HMCameraAudioStreamSetting, completionHandler: ((any Error)?) -> Void)](hmcamerastream/updateaudiostreamsetting(_:completionhandler:).md)
+### Configuring the audio stream
+- [func updateAudioStreamSetting(HMCameraAudioStreamSetting, completionHandler: ((any Error)?) -> Void)](./updateaudiostreamsetting%28_,completionhandler%29.md)
   Updates an audio stream’s settings.
-- [func setAudioStreamSetting(HMCameraAudioStreamSetting)](hmcamerastream/setaudiostreamsetting(_:).md)
-- [enum HMCameraAudioStreamSetting](hmcameraaudiostreamsetting.md)
+- [func setAudioStreamSetting(HMCameraAudioStreamSetting)](./setaudiostreamsetting%28_%29.md)
+- [enum HMCameraAudioStreamSetting](../hmcameraaudiostreamsetting.md)
   The options associated with a camera’s audio stream.
 
 

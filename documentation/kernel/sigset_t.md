@@ -1,14 +1,15 @@
 # sigset_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef __darwin_sigset_t sigset_t;
 ```
 

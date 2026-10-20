@@ -1,7 +1,8 @@
 # AnimationLibraryComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that represents a collection of animations that an entity can play.
 
@@ -23,7 +24,7 @@ struct AnimationLibraryComponent
 
 You use an `AnimationLibraryComponent` to access an entity’s animation resources. You can store animations with an entity by packaging them together into a `.reality` file. You can do this with Reality Composer Pro or by building a custom tool.
 
-##### Create an Animation Library with Reality Composer Pro
+##### Create an animation library with Reality Composer Pro
 
 Follow these steps to create an animation library for an entity:
 
@@ -46,12 +47,12 @@ if let walkAnimation = animationLibrary.animations["walk"] {
 }
 ```
 
-##### Create an Animation Library By Building Your Own Tool
+##### Create an animation library by building your own tool
 
 If you need to build a custom tool to create `.reality` files, you can use RealityKit to programmatically create an animation library by following these steps:
 
-1. Load an animation entity with [`init(named:in:)`](entity/init(named:in:).md).
-2. Retrieve the entity’s animation resources from its [`availableAnimations`](entity/availableanimations.md) property.
+1. Load an animation entity with [`init(named:in:)`](./entity/init%28named,in%29.md).
+2. Retrieve the entity’s animation resources from its [`availableAnimations`](./entity/availableanimations.md) property.
 3. Add the animations to an animation library.
 
 The following example shows how you can set up an animation library:
@@ -82,59 +83,60 @@ robot.components.set(animationLibrary)
 robot.write(to: fileURL)
 ```
 
-To play one of the animations in your app, create an entity from the `.reality` file and then call its [`playAnimation(_:transitionDuration:startsPaused:)`](entity/playanimation(_:transitionduration:startspaused:).md) method.
+To play one of the animations in your app, create an entity from the `.reality` file and then call its [`playAnimation(_:transitionDuration:startsPaused:)`](./entity/playanimation%28_,transitionduration,startspaused%29.md) method.
 
 ## Topics
 
 ### Creating an animation library component
-- [init()](animationlibrarycomponent/init.md)
+- [init()](./animationlibrarycomponent/init%28%29.md)
   Creates an empty animation library.
-- [init(animations: [String : AnimationResource])](animationlibrarycomponent/init(animations:).md)
+- [init(animations: [String : AnimationResource])](./animationlibrarycomponent/init%28animations%29.md)
   Creates an animation library from a dictionary that associates an animation’s data with its name.
-- [init(dictionaryLiteral: (String, AnimationResource)...)](animationlibrarycomponent/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (String, AnimationResource)...)](./animationlibrarycomponent/init%28dictionaryliteral%29.md)
   Creates an animation library from a variadic list of key-value pairs.
 ### Accessing animations
-- [var animations: AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animations.md)
+- [var animations: AnimationLibraryComponent.AnimationCollection](./animationlibrarycomponent/animations.md)
   The collection of animations an entity can play.
-- [var unkeyedResources: [AnimationResource]?](animationlibrarycomponent/unkeyedresources.md)
+- [var unkeyedResources: [AnimationResource]?](./animationlibrarycomponent/unkeyedresources.md)
   The library’s animation resources that don’t have a queryable name.
-- [var defaultAnimation: AnimationResource?](animationlibrarycomponent/defaultanimation.md)
+- [var defaultAnimation: AnimationResource?](./animationlibrarycomponent/defaultanimation.md)
   The default animation resource.
-- [var defaultKey: String?](animationlibrarycomponent/defaultkey.md)
+- [var defaultKey: String?](./animationlibrarycomponent/defaultkey.md)
   The name of the default animation resource.
 ### Managing references to animations
-- [func removeAll(resource: AnimationResource)](animationlibrarycomponent/removeall(resource:).md)
+- [func removeAll(resource: AnimationResource)](./animationlibrarycomponent/removeall%28resource%29.md)
   Removes all the component’s references to an animation resource.
 ### Configuring default playback
-- [var automaticallyPlaysDefaultAnimation: Bool](animationlibrarycomponent/automaticallyplaysdefaultanimation.md)
+- [var automaticallyPlaysDefaultAnimation: Bool](./animationlibrarycomponent/automaticallyplaysdefaultanimation.md)
   Whether to automatically play the default animation when the entity is added to a scene and enabled. Default value is false, meaning the default animation will not be automatically played by default. This value can only be set when initializing `AnimationLibraryComponent`
-- [init(automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(automaticallyplaysdefaultanimation:).md)
+- [init(automaticallyPlaysDefaultAnimation: Bool)](./animationlibrarycomponent/init%28automaticallyplaysdefaultanimation%29.md)
   Creates an empty animation library.
-- [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(animations:automaticallyplaysdefaultanimation:).md)
+- [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](./animationlibrarycomponent/init%28animations,automaticallyplaysdefaultanimation%29.md)
   Creates an animation library from a dictionary that associates an animation’s data with its name.
 ### Structures
-- [AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animationcollection.md)
+- [AnimationLibraryComponent.AnimationCollection](./animationlibrarycomponent/animationcollection.md)
   A collection of animations an entity can play.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
+- [Component](./component.md)
+- [ExpressibleByDictionaryLiteral](../Swift/expressiblebydictionaryliteral.md)
 
 ## See Also
 
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+### Animation playback
+- [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
   Invoke implicit animations by setting the entity’s desired end state.
-- [class AnimationResource](animationresource.md)
+- [class AnimationResource](./animationresource.md)
   An animation for the properties of scenes or entities.
-- [AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animationcollection.md)
+- [AnimationLibraryComponent.AnimationCollection](./animationlibrarycomponent/animationcollection.md)
   A collection of animations an entity can play.
-- [enum AnimationEvents](animationevents.md)
+- [enum AnimationEvents](./animationevents.md)
   Notable milestones that the framework signals during animation playback.
-- [class AnimationPlaybackController](animationplaybackcontroller.md)
+- [class AnimationPlaybackController](./animationplaybackcontroller.md)
   A controller that manages animation playback.
-- [enum AnimationRepeatMode](animationrepeatmode.md)
+- [enum AnimationRepeatMode](./animationrepeatmode.md)
   Options that determine whether an animation replays after completion.
 
 

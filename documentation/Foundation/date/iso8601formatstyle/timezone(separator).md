@@ -1,7 +1,8 @@
 # timeZone(separator:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the ISO 8601 date format style to include the time zone in the formatted output.
 
@@ -26,9 +27,9 @@ An ISO 8601 date format style modified to include the time zone.
 
 #### Discussion
 
-The default [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) doesn’t include the time zone.
+The default [`Date.ISO8601FormatStyle`](../iso8601formatstyle.md) doesn’t include the time zone.
 
-For more information about formatting dates, see the [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see the [`Date.FormatStyle`](../formatstyle.md).
 
 ## Parameters
 
@@ -36,11 +37,12 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 
 ## See Also
 
-- [func time(includingFractionalSeconds: Bool) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/time(includingfractionalseconds:).md)
+### Modifying Times in an ISO 8601 Format Style
+- [func time(includingFractionalSeconds: Bool) -> Date.ISO8601FormatStyle](./time%28includingfractionalseconds%29.md)
   Modifies the ISO 8601 date format style to include the time in the formatted output.
-- [func timeSeparator(Date.ISO8601FormatStyle.TimeSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/timeseparator(_:).md)
+- [func timeSeparator(Date.ISO8601FormatStyle.TimeSeparator) -> Date.ISO8601FormatStyle](./timeseparator%28_%29.md)
   Modifies the ISO 8601 date format style to use the specified time separator.
-- [func timeZoneSeparator(Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/timezoneseparator(_:).md)
+- [func timeZoneSeparator(Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle](./timezoneseparator%28_%29.md)
   Modifies the ISO 8601 date format style to use the specified time zone separator.
 
 

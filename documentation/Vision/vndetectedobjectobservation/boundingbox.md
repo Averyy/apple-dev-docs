@@ -1,7 +1,8 @@
 # boundingBox
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding box of the object that the request detects.
 
@@ -17,6 +18,10 @@ The bounding box of the object that the request detects.
 
 ```swift
 var boundingBox: CGRect { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CGRect boundingBox;
 ```
 
 #### Discussion

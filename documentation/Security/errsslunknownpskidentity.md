@@ -1,7 +1,8 @@
 # errSSLUnknownPSKIdentity
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unknown PSK identity.
 
@@ -18,6 +19,10 @@ Unknown PSK identity.
 
 ```swift
 var errSSLUnknownPSKIdentity: OSStatus { get }
+```
+
+```c
+errSSLUnknownPSKIdentity
 ```
 
 

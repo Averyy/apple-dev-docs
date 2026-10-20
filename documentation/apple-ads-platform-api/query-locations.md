@@ -1,7 +1,8 @@
 # Query for Locations
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a paginated list of business locations using filters and sorting.
 
@@ -14,7 +15,7 @@ This endpoint retrieves a paginated list of physical business locations associat
 
 Locations are registered entities that represent physical places of business, such as retail stores, restaurants, and service centers. An empty request body returns all locations with default pagination. Filter by `brandId` to retrieve locations for a specific brand.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -29,11 +30,11 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `address.postalCode` | string | `EQUALS`, `IN` |  | Filter by postal or ZIP code. |
 | `eligibility.status` | string (enum) | `EQUALS`, `IN` |  | Filter by eligibility status: `ELIGIBLE`, `INELIGIBLE`, `LIMITED`, `PENDING`, `UNDEFINED`. |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Request Body
 
-See [`QueryRequest`](queryrequest.md).
+See [`QueryRequest`](./queryrequest.md).
 
 Each location record returned by this endpoint includes the following fields:
 
@@ -318,11 +319,28 @@ Search for locations by name prefix, sorted alphabetically.
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`LocationQueryResponse`, `application/json`)
+- `400` Bad Request (`LocationQueryResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Get a Location](get-location-by-id.md)
+- [Get a Location](./get-location-by-id.md)
   Retrieve a single business location by its unique identifier.
 
 

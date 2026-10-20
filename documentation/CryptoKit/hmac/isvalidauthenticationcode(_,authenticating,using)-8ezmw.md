@@ -1,7 +1,8 @@
 # isValidAuthenticationCode(_:authenticating:using:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value indicating whether the given message authentication code is valid for a block of data.
 
@@ -32,9 +33,10 @@ A Boolean value that’s `true` if the message authentication code is valid for 
 
 ## See Also
 
-- [static func isValidAuthenticationCode(HMAC<H>.MAC, authenticating: UnsafeRawBufferPointer, using: SymmetricKey) -> Bool](hmac/isvalidauthenticationcode(_:authenticating:using:)-5jbc8.md)
+### Checking an authentication code
+- [static func isValidAuthenticationCode(HMAC<H>.MAC, authenticating: UnsafeRawBufferPointer, using: SymmetricKey) -> Bool](./isvalidauthenticationcode%28_,authenticating,using%29-5jbc8.md)
   Returns a Boolean value indicating whether the given message authentication code is valid for a block of data stored in a buffer.
-- [static func isValidAuthenticationCode<C, D>(C, authenticating: D, using: SymmetricKey) -> Bool](hmac/isvalidauthenticationcode(_:authenticating:using:)-5ilt9.md)
+- [static func isValidAuthenticationCode<C, D>(C, authenticating: D, using: SymmetricKey) -> Bool](./isvalidauthenticationcode%28_,authenticating,using%29-5ilt9.md)
   Returns a Boolean value indicating whether the given message authentication code represented as contiguous bytes is valid for a block of data.
 
 

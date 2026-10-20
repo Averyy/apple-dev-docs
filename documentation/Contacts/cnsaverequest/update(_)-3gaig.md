@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates an existing contact in the contact store.
 
@@ -18,6 +19,10 @@ Updates an existing contact in the contact store.
 func update(_ contact: CNMutableContact)
 ```
 
+```objc
+- (void) updateContact:(CNMutableContact *) contact;
+```
+
 #### Discussion
 
 The contact to be updated must already exist in the contact store. If it does not, the update request fails, the `CNErrorCodeRecordDoesNotExist` error occurs, and the `CNErrorUserInfoAffectedRecordsKey` array is updated to contain the object. Note that the contact may be modified when the save request is executing.
@@ -28,9 +33,10 @@ The contact to be updated must already exist in the contact store. If it does no
 
 ## See Also
 
-- [func add(CNMutableContact, toContainerWithIdentifier: String?)](cnsaverequest/add(_:tocontainerwithidentifier:)-7eut4.md)
+### Saving contact changes
+- [func add(CNMutableContact, toContainerWithIdentifier: String?)](./add%28_,tocontainerwithidentifier%29-7eut4.md)
   Adds the specified contact to the contact store.
-- [func delete(CNMutableContact)](cnsaverequest/delete(_:)-8m1tc.md)
+- [func delete(CNMutableContact)](./delete%28_%29-8m1tc.md)
   Deletes a contact from the contact store.
 
 

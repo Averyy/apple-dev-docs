@@ -1,7 +1,8 @@
 # dataStart
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, from the start of the data to where vertex attribute information begins.
 
@@ -19,11 +20,16 @@ The offset, in bytes, from the start of the data to where vertex attribute infor
 var dataStart: UnsafeMutableRawPointer { get set }
 ```
 
+```objc
+@property (nonatomic) void * dataStart;
+```
+
 ## See Also
 
-- [var stride: Int](mdlvertexattributedata/stride.md)
+### Accessing Data for a Vertex Attribute
+- [var stride: Int](./stride.md)
   The stride, in bytes, between vertex information for consecutive vertices in the data.
-- [var format: MDLVertexFormat](mdlvertexattributedata/format.md)
+- [var format: MDLVertexFormat](./format.md)
   The format of per-vertex data for the attribute.
 
 

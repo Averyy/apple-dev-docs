@@ -1,7 +1,8 @@
 # SSLAuthenticate
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The flags that represent the requirements for client-side authentication.
 
@@ -15,27 +16,31 @@ The flags that represent the requirements for client-side authentication.
 enum SSLAuthenticate
 ```
 
+```c
+enum SSLAuthenticate : int;
+```
+
 ## Topics
 
 ### Constants
-- [SSLAuthenticate.neverAuthenticate](sslauthenticate/neverauthenticate.md)
+- [SSLAuthenticate.neverAuthenticate](./sslauthenticate/neverauthenticate.md)
   Indicates that client-side authentication is not required. (Default.)
-- [SSLAuthenticate.alwaysAuthenticate](sslauthenticate/alwaysauthenticate.md)
+- [SSLAuthenticate.alwaysAuthenticate](./sslauthenticate/alwaysauthenticate.md)
   Indicates that client-side authentication is required.
-- [SSLAuthenticate.tryAuthenticate](sslauthenticate/tryauthenticate.md)
+- [SSLAuthenticate.tryAuthenticate](./sslauthenticate/tryauthenticate.md)
   Indicates that client-side authentication should be attempted. There is no error if the client doesn’t have a certificate.
 ### Initializers
-- [init?(rawValue: Int32)](sslauthenticate/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./sslauthenticate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

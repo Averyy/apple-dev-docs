@@ -1,7 +1,8 @@
 # closeOnFork
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that forking a program closes the file.
 

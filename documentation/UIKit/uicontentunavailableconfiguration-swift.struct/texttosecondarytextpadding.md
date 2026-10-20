@@ -1,7 +1,8 @@
 # textToSecondaryTextPadding
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The padding between the primary and secondary text.
 
@@ -10,7 +11,7 @@ The padding between the primary and secondary text.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

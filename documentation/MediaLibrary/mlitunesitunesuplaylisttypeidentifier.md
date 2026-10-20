@@ -1,13 +1,16 @@
 # MLiTunesiTunesUPlaylistTypeIdentifier
 
 **Framework**: Media Library  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The media group that represents the iTunes U playlist in iTunes.
 
 **Availability**:
 - Mac Catalyst 13.0+
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.15
+
+> **Deprecated**: MediaLibrary.framework will be removed in a future OS version. Use Photos.framework or iTunesLibrary.framework instead.
 
 ## Declaration
 
@@ -15,31 +18,36 @@ The media group that represents the iTunes U playlist in iTunes.
 let MLiTunesiTunesUPlaylistTypeIdentifier: String
 ```
 
+```c
+extern NSString * const MLiTunesiTunesUPlaylistTypeIdentifier;
+```
+
 ## See Also
 
-- [let MLiTunesRootGroupTypeIdentifier: String](mlitunesrootgrouptypeidentifier.md)
+### Constants
+- [let MLiTunesRootGroupTypeIdentifier: String](./mlitunesrootgrouptypeidentifier.md)
   The root media group for iTunes.
-- [let MLiTunesPlaylistTypeIdentifier: String](mlitunesplaylisttypeidentifier.md)
+- [let MLiTunesPlaylistTypeIdentifier: String](./mlitunesplaylisttypeidentifier.md)
   A media group that represents a user-created playlist in iTunes.
-- [let MLiTunesSmartPlaylistTypeIdentifier: String](mlitunessmartplaylisttypeidentifier.md)
+- [let MLiTunesSmartPlaylistTypeIdentifier: String](./mlitunessmartplaylisttypeidentifier.md)
   A media group that represents a smart playlist in iTunes.
-- [let MLiTunesGeniusPlaylistTypeIdentifier: String](mlitunesgeniusplaylisttypeidentifier.md)
+- [let MLiTunesGeniusPlaylistTypeIdentifier: String](./mlitunesgeniusplaylisttypeidentifier.md)
   A media group that represents a genius playlist in iTunes.
-- [let MLiTunesSavedGeniusPlaylistTypeIdentifier: String](mlitunessavedgeniusplaylisttypeidentifier.md)
+- [let MLiTunesSavedGeniusPlaylistTypeIdentifier: String](./mlitunessavedgeniusplaylisttypeidentifier.md)
   A media group that represents a saved genius playlist in iTunes.
-- [let MLiTunesFolderPlaylistTypeIdentifier: String](mlitunesfolderplaylisttypeidentifier.md)
+- [let MLiTunesFolderPlaylistTypeIdentifier: String](./mlitunesfolderplaylisttypeidentifier.md)
   A media group that represents a folder in iTunes.
-- [let MLiTunesAudioBooksPlaylistTypeIdentifier: String](mlitunesaudiobooksplaylisttypeidentifier.md)
+- [let MLiTunesAudioBooksPlaylistTypeIdentifier: String](./mlitunesaudiobooksplaylisttypeidentifier.md)
   The media group that represents the Audio Books playlist in iTunes.
-- [let MLiTunesMoviesPlaylistTypeIdentifier: String](mlitunesmoviesplaylisttypeidentifier.md)
+- [let MLiTunesMoviesPlaylistTypeIdentifier: String](./mlitunesmoviesplaylisttypeidentifier.md)
   The media group that represents the Movies playlist in iTunes.
-- [let MLiTunesMusicPlaylistTypeIdentifier: String](mlitunesmusicplaylisttypeidentifier.md)
+- [let MLiTunesMusicPlaylistTypeIdentifier: String](./mlitunesmusicplaylisttypeidentifier.md)
   The media group that represents the Music playlist in iTunes.
-- [let MLiTunesPodcastPlaylistTypeIdentifier: String](mlitunespodcastplaylisttypeidentifier.md)
+- [let MLiTunesPodcastPlaylistTypeIdentifier: String](./mlitunespodcastplaylisttypeidentifier.md)
   The media group that represents the Podcast playlist in iTunes.
-- [let MLiTunesPurchasedPlaylistTypeIdentifier: String](mlitunespurchasedplaylisttypeidentifier.md)
+- [let MLiTunesPurchasedPlaylistTypeIdentifier: String](./mlitunespurchasedplaylisttypeidentifier.md)
   The media group that represents the Purchased playlist in iTunes.
-- [let MLiTunesTVShowsPlaylistTypeIdentifier: String](mlitunestvshowsplaylisttypeidentifier.md)
+- [let MLiTunesTVShowsPlaylistTypeIdentifier: String](./mlitunestvshowsplaylisttypeidentifier.md)
   The media group that represents the TV Shows playlist in iTunes.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of modifier to use after being resolved.
@@ -23,7 +24,8 @@ associatedtype ResolvedModifier : ViewModifier
 
 ## See Also
 
-- [func resolve(in: EnvironmentValues) -> Self.ResolvedModifier](environmentalmodifier/resolve(in:).md)
+### Resolving a modifier
+- [func resolve(in: EnvironmentValues) -> Self.ResolvedModifier](./resolve%28in%29.md)
   Resolve to a concrete modifier in the given `environment`.
 
 

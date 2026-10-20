@@ -1,7 +1,8 @@
 # drawableSize
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in pixels, of textures for rendering layer content.
 
@@ -19,17 +20,22 @@ The size, in pixels, of textures for rendering layer content.
 var drawableSize: CGSize { get set }
 ```
 
+```objc
+@property CGSize drawableSize;
+```
+
 #### Discussion
 
-By default, a layer creates textures sized to match its content—that is, this property’s value is the layer’s [`bounds`](calayer/bounds.md) size multiplied by its [`contentsScale`](calayer/contentsscale.md) factor.
+By default, a layer creates textures sized to match its content—that is, this property’s value is the layer’s [`bounds`](../calayer/bounds.md) size multiplied by its [`contentsScale`](../calayer/contentsscale.md) factor.
 
 ## See Also
 
-- [var pixelFormat: MTLPixelFormat](cametallayer/pixelformat.md)
+### Configuring the Layer’s Drawable Objects
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The pixel format of the layer’s textures.
-- [var colorspace: CGColorSpace?](cametallayer/colorspace.md)
+- [var colorspace: CGColorSpace?](./colorspace.md)
   The color space of the rendered content.
-- [var framebufferOnly: Bool](cametallayer/framebufferonly.md)
+- [var framebufferOnly: Bool](./framebufferonly.md)
   A Boolean value that determines whether the layer’s textures are used only for rendering.
 
 

@@ -1,12 +1,13 @@
 # textShouldBeginEditing(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests permission to begin editing a text object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Requests permission to begin editing a text object.
 func textShouldBeginEditing(_ textObject: NSText) -> Bool
 ```
 
+```objc
+- (BOOL) textShouldBeginEditing:(NSText *) textObject;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if editing can begin; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if editing can begin; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the text field isn’t editable, this method returns [`false`](https://developer.apple.com/documentation/swift/false) immediately. If the text field is editable and its delegate responds to [`control(_:textShouldBeginEditing:)`](nscontroltexteditingdelegate/control(_:textshouldbeginediting:).md), this method invokes that method and returns the result. Otherwise, it returns [`true`](https://developer.apple.com/documentation/swift/true) to allow editing to occur. See [`NSControl`](nscontrol.md) for more information about the text delegate method.
+If the text field isn’t editable, this method returns [`false`](../../Swift/false.md) immediately. If the text field is editable and its delegate responds to [`control(_:textShouldBeginEditing:)`](../nscontroltexteditingdelegate/control%28_,textshouldbeginediting%29.md), this method invokes that method and returns the result. Otherwise, it returns [`true`](../../Swift/true.md) to allow editing to occur. See [`NSControl`](../nscontrol.md) for more information about the text delegate method.
 
 ## Parameters
 
@@ -28,13 +33,14 @@ If the text field isn’t editable, this method returns [`false`](https://develo
 
 ## See Also
 
-- [func textDidBeginEditing(Notification)](nstextfield/textdidbeginediting(_:).md)
+### Implementing delegate methods
+- [func textDidBeginEditing(Notification)](./textdidbeginediting%28_%29.md)
   Posts a notification to the default notification center that the text is about to go into edit mode.
-- [func textDidChange(Notification)](nstextfield/textdidchange(_:).md)
+- [func textDidChange(Notification)](./textdidchange%28_%29.md)
   Posts a notification when the text changes, and forwards the message to the text field’s cell if it responds.
-- [func textShouldEndEditing(NSText) -> Bool](nstextfield/textshouldendediting(_:).md)
+- [func textShouldEndEditing(NSText) -> Bool](./textshouldendediting%28_%29.md)
   Performs validation on the text field’s new value.
-- [func textDidEndEditing(Notification)](nstextfield/textdidendediting(_:).md)
+- [func textDidEndEditing(Notification)](./textdidendediting%28_%29.md)
   Posts a notification when the text is no longer in edit mode.
 
 

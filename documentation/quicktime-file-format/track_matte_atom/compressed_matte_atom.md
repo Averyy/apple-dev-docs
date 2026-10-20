@@ -1,19 +1,21 @@
 # Compressed matte atom
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An atom that specifies the image description structure and the matte data associated with a particular matte atom.
 
 #### Overview
 
-See [`Compressed matte atom`](compressed_matte_atom.md).
+See [`Compressed matte atom`](../compressed_matte_atom.md).
 
 ## See Also
 
-- [Size](track_matte_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this track matte atom.
-- [Type](track_matte_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

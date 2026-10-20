@@ -1,7 +1,8 @@
 # EntityStringQuery
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that locates entities using arbitrary string input.
 
@@ -11,7 +12,7 @@ An interface that locates entities using arbitrary string input.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,26 +23,26 @@ protocol EntityStringQuery : EntityQuery
 
 ## Mentions
 
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 #### Overview
 
-EntityStringQuery adds to a [`EntityQuery`](entityquery.md) the ability to query instances by `String`. The `String` value against which entities are matched typically represents the name a user would use to refer to a particular instance.
+EntityStringQuery adds to a [`EntityQuery`](./entityquery.md) the ability to query instances by `String`. The `String` value against which entities are matched typically represents the name a user would use to refer to a particular instance.
 
 ## Topics
 
 ### Searching for entities
-- [func entities(matching: String) async throws -> Self.Result](entitystringquery/entities(matching:).md)
+- [func entities(matching: String) async throws -> Self.Result](./entitystringquery/entities%28matching%29.md)
   Retrieves instances by string.
 
 ## Relationships
 
 ### Inherits From
-- [DynamicOptionsProvider](dynamicoptionsprovider.md)
-- [EntityQuery](entityquery.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicOptionsProvider](./dynamicoptionsprovider.md)
+- [EntityQuery](./entityquery.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

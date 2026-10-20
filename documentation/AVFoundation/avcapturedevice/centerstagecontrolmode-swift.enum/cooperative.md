@@ -1,7 +1,8 @@
 # AVCaptureDevice.CenterStageControlMode.cooperative
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A user and app cooperatively share control of Center Stage.
 
@@ -18,15 +19,20 @@ A user and app cooperatively share control of Center Stage.
 case cooperative
 ```
 
+```c
+AVCaptureCenterStageControlModeCooperative
+```
+
 #### Discussion
 
-In this mode, it’s your app’s responsibilitiy to honor user intent and make center stage active when they request. Because the user can change the enabled state through Control Center, key-value observe the [`isCenterStageEnabled`](avcapturedevice/iscenterstageenabled.md) property value and update your app state appropriately.
+In this mode, it’s your app’s responsibilitiy to honor user intent and make center stage active when they request. Because the user can change the enabled state through Control Center, key-value observe the [`isCenterStageEnabled`](../iscenterstageenabled.md) property value and update your app state appropriately.
 
 ## See Also
 
-- [AVCaptureDevice.CenterStageControlMode.user](avcapturedevice/centerstagecontrolmode-swift.enum/user.md)
+### Control modes
+- [AVCaptureDevice.CenterStageControlMode.user](./user.md)
   The user controls Center Stage.
-- [AVCaptureDevice.CenterStageControlMode.app](avcapturedevice/centerstagecontrolmode-swift.enum/app.md)
+- [AVCaptureDevice.CenterStageControlMode.app](./app.md)
   The app controls Center Stage.
 
 

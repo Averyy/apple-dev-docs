@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a generate person segmentation request.
 
@@ -19,9 +20,14 @@ Creates a generate person segmentation request.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(completionHandler: VNRequestCompletionHandler?)](vngeneratepersonsegmentationrequest/init(completionhandler:).md)
+### Creating a Request
+- [init(completionHandler: VNRequestCompletionHandler?)](./init%28completionhandler%29.md)
   Creates a generate person segmentation request with a completion handler.
 
 

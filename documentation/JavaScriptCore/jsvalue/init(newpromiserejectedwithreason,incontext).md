@@ -1,7 +1,8 @@
 # init(newPromiseRejectedWithReason:inContext:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

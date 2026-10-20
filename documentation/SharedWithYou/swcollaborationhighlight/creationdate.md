@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date the system creates this file.
 
@@ -18,13 +19,18 @@ The date the system creates this file.
 var creationDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDate * creationDate;
+```
+
 ## See Also
 
-- [var collaborationIdentifier: String](swcollaborationhighlight/collaborationidentifier.md)
+### Accessing collaboration attributes
+- [var collaborationIdentifier: String](./collaborationidentifier.md)
   A unique identifier that the app hosting the collaboration provides.
-- [var contentType: UTType](swcollaborationhighlight/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The UTI type for this collaboration highlight.
-- [var title: String?](swcollaborationhighlight/title.md)
+- [var title: String?](./title.md)
   The title of the collaboration highlight.
 
 

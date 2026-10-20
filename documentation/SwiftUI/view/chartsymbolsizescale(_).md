@@ -1,7 +1,8 @@
 # chartSymbolSizeScale(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the symbol size scale for charts.
 
@@ -27,17 +28,18 @@ func chartSymbolSizeScale<DataValue>(_ mapping: KeyValuePairs<DataValue, CGFloat
 
 ## See Also
 
-- [func chartSymbolSizeScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](view/chartsymbolsizescale(domain:range:type:).md)
+### Symbol size scales
+- [func chartSymbolSizeScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](./chartsymbolsizescale%28domain,range,type%29.md)
   Configures the symbol size scale for charts.
-- [func chartSymbolSizeScale<Domain>(domain: Domain, type: ScaleType?) -> some View](view/chartsymbolsizescale(domain:type:).md)
+- [func chartSymbolSizeScale<Domain>(domain: Domain, type: ScaleType?) -> some View](./chartsymbolsizescale%28domain,type%29.md)
   Configures the symbol size scale for charts.
-- [func chartSymbolSizeScale<Domain>(domain: Domain, mapping: (Domain.Element) -> CGFloat) -> some View](view/chartsymbolsizescale(domain:mapping:).md)
+- [func chartSymbolSizeScale<Domain>(domain: Domain, mapping: (Domain.Element) -> CGFloat) -> some View](./chartsymbolsizescale%28domain,mapping%29.md)
   Configures the symbol size scale for charts.
-- [func chartSymbolSizeScale<DataValue>(mapping: (DataValue) -> CGFloat) -> some View](view/chartsymbolsizescale(mapping:).md)
+- [func chartSymbolSizeScale<DataValue>(mapping: (DataValue) -> CGFloat) -> some View](./chartsymbolsizescale%28mapping%29.md)
   Configures the symbol size scale for charts.
-- [func chartSymbolSizeScale<Range>(range: Range, type: ScaleType?) -> some View](view/chartsymbolsizescale(range:type:).md)
+- [func chartSymbolSizeScale<Range>(range: Range, type: ScaleType?) -> some View](./chartsymbolsizescale%28range,type%29.md)
   Configures the symbol size scale for charts.
-- [func chartSymbolSizeScale(type: ScaleType?) -> some View](view/chartsymbolsizescale(type:).md)
+- [func chartSymbolSizeScale(type: ScaleType?) -> some View](./chartsymbolsizescale%28type%29.md)
   Configures the symbol size scale for charts.
 
 

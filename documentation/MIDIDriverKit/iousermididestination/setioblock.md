@@ -1,23 +1,25 @@
 # SetIOBlock
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetIOBlock(MIDIIOBlock block);
 ```
 
 ## See Also
 
-- [GetBaseClassID](iousermididestination/getbaseclassid.md)
-- [GetClassID](iousermididestination/getclassid.md)
-- [free](iousermididestination/free.md)
-- [init](iousermididestination/init.md)
+### Instance Methods
+- [GetBaseClassID](./getbaseclassid.md)
+- [GetClassID](./getclassid.md)
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

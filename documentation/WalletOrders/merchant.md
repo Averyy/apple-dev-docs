@@ -1,7 +1,8 @@
 # Merchant
 
 **Framework**: Wallet Orders  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The merchant associated with the order.
 
@@ -12,53 +13,54 @@ The merchant associated with the order.
 
 ## Declaration
 
-```swift
+```
 object Merchant
 ```
 
 ## Properties
 
 - `address` (Address): The contact address of the merchant.
-- `businessChatURL` (uri): An Apple Messages for Business URL the customer uses to contact the merchant. For more information, see [`Starting a Message from a URL`](https://developer.apple.comhttps://register.apple.com/resources/messages/messaging-documentation/message-with-customers#starting-a-message-from-a-url).
+- `businessChatURL` (uri): An Apple Messages for Business URL the customer uses to contact the merchant. For more information, see [Starting a Message from a URL](https://register.apple.com/resources/messages/messaging-documentation/message-with-customers#starting-a-message-from-a-url).
 - `contactURL` (uri): The URL where the customer can contact the merchant.
 - `displayName` (string) *(required)*: The localized display name of the merchant.
 - `emailAddress` (string): The email address where the customer can contact the merchant.
 - `logo` (string): The name for an image representing the merchant’s logo.
-- `merchantIdentifier` (string) *(required)*: The Apple Merchant Identifier for this merchant, generated at [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com).
+- `merchantIdentifier` (string) *(required)*: The Apple Merchant Identifier for this merchant, generated at [developer.apple.com](https://developer.apple.com).
 - `phoneNumber` (string): The telephone number where the customer can contact the merchant.
 - `url` (uri) *(required)*: The URL for the merchant’s website or landing page.
 
 ## See Also
 
-- [object Customer](customer.md)
+### Supporting objects
+- [object Customer](./customer.md)
   The details of the order’s customer.
-- [object Address](address.md)
+- [object Address](./address.md)
   The physical address for an order.
-- [object Application](application.md)
+- [object Application](./application.md)
   The details of an app in the App Store.
-- [object Barcode](barcode.md)
+- [object Barcode](./barcode.md)
   The details of a barcode for an order.
-- [object CurrencyAmount](currencyamount.md)
+- [object CurrencyAmount](./currencyamount.md)
   An amount of money.
-- [object LineItem](lineitem.md)
+- [object LineItem](./lineitem.md)
   An item associated with the order.
-- [object Location](location.md)
+- [object Location](./location.md)
   A geographic location.
-- [object OrderIdentifiers](orderidentifiers.md)
+- [object OrderIdentifiers](./orderidentifiers.md)
   The unique identifiers associated with orders.
-- [object OrderProvider](orderprovider.md)
+- [object OrderProvider](./orderprovider.md)
   Information about the platform providing the order data.
-- [object Payment](payment.md)
+- [object Payment](./payment.md)
   The payment information associated with the order.
-- [object Payment.SummaryItems](payment/summaryitems-data.dictionary.md)
+- [object Payment.SummaryItems](./payment/summaryitems-data.dictionary.md)
   A breakdown of the total payment.
-- [object PaymentMethod](paymentmethod.md)
+- [object PaymentMethod](./paymentmethod.md)
   The payment method for the transaction.
-- [object PaymentTransaction](paymenttransaction.md)
+- [object PaymentTransaction](./paymenttransaction.md)
   The details about a payment transaction.
-- [object PickupFulfillment](pickupfulfillment.md)
+- [object PickupFulfillment](./pickupfulfillment.md)
   The details of a pickup order.
-- [object Return](return.md)
+- [object Return](./return.md)
   The details of a return order.
 
 

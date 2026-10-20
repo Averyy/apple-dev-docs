@@ -1,7 +1,8 @@
 # parentJoint
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The joint that’s connected to this joint and more closely connected to the base of the skeleton.
 
@@ -16,7 +17,8 @@ var parentJoint: HandSkeleton.Joint? { get }
 
 ## See Also
 
-- [var name: HandSkeleton.JointName](handskeleton/joint/name.md)
+### Inspecting hand joints
+- [var name: HandSkeleton.JointName](./name.md)
   A name that uniquely identifies this joint among others on the same skeleton.
 
 

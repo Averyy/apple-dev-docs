@@ -1,7 +1,8 @@
 # style
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance to use when displaying items in the top shelf interface.
 
@@ -14,9 +15,14 @@ The appearance to use when displaying items in the top shelf interface.
 var style: TVTopShelfCarouselContent.Style { get }
 ```
 
+```objc
+@property (nonatomic, readonly) TVTopShelfCarouselContentStyle style;
+```
+
 ## See Also
 
-- [TVTopShelfCarouselContent.Style](tvtopshelfcarouselcontent/style-swift.enum.md)
+### Getting the Item Style
+- [TVTopShelfCarouselContent.Style](./style-swift.enum.md)
   Constants indicating how you want items to appear in the top shelf interface.
 
 

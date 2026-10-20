@@ -1,7 +1,8 @@
 # kAERemoteProcessURLKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Use this key to obtain the full URL to the remote process, as a `CFURLRef`.
 
@@ -12,6 +13,10 @@ Use this key to obtain the full URL to the remote process, as a `CFURLRef`.
 
 ```swift
 let kAERemoteProcessURLKey: CFString!
+```
+
+```c
+const CFStringRef kAERemoteProcessURLKey;
 ```
 
 

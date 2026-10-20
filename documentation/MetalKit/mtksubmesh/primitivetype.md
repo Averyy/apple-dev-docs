@@ -1,7 +1,8 @@
 # primitiveType
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primitive type with which to draw the submesh object.
 
@@ -19,17 +20,22 @@ The primitive type with which to draw the submesh object.
 var primitiveType: MTLPrimitiveType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLPrimitiveType primitiveType;
+```
+
 #### Discussion
 
-Use this value for the `primitiveType` parameter in a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](https://developer.apple.com/documentation/metal/mtlrendercommandencoder/drawindexedprimitives(type:indexcount:indextype:indexbuffer:indexbufferoffset:)).
+Use this value for the `primitiveType` parameter in a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](../../Metal/mtlrendercommandencoder/drawindexedprimitives%28type,indexcount,indextype,indexbuffer,indexbufferoffset%29.md).
 
 ## See Also
 
-- [var indexBuffer: MTKMeshBuffer](mtksubmesh/indexbuffer.md)
+### Properties used to Draw Indexed Primitives
+- [var indexBuffer: MTKMeshBuffer](./indexbuffer.md)
   The index buffer used to render the submesh object.
-- [var indexCount: Int](mtksubmesh/indexcount.md)
+- [var indexCount: Int](./indexcount.md)
   The number of indices in the index buffer.
-- [var indexType: MTLIndexType](mtksubmesh/indextype.md)
+- [var indexType: MTLIndexType](./indextype.md)
   The type of index data in the index buffer.
 
 

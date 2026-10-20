@@ -1,7 +1,8 @@
 # CSVType.data
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A binary data type.
 

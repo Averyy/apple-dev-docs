@@ -1,7 +1,8 @@
 # ObservationTracking.Event.Kind
 
 **Framework**: Observation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,17 +22,17 @@ struct Kind
 ## Topics
 
 ### Type Properties
-- [static var `deinit`: ObservationTracking.Event.Kind](observationtracking/event/kind-swift.struct/deinit.md)
-- [static var didSet: ObservationTracking.Event.Kind](observationtracking/event/kind-swift.struct/didset.md)
-- [static var initial: ObservationTracking.Event.Kind](observationtracking/event/kind-swift.struct/initial.md)
-- [static var willSet: ObservationTracking.Event.Kind](observationtracking/event/kind-swift.struct/willset.md)
+- [static var `deinit`: ObservationTracking.Event.Kind](./kind-swift.struct/deinit.md)
+- [static var didSet: ObservationTracking.Event.Kind](./kind-swift.struct/didset.md)
+- [static var initial: ObservationTracking.Event.Kind](./kind-swift.struct/initial.md)
+- [static var willSet: ObservationTracking.Event.Kind](./kind-swift.struct/willset.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

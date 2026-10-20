@@ -1,12 +1,13 @@
 # webView(_:shouldDelete:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the user should be allowed to delete a range of content.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns whether the user should be allowed to delete a range of content.
 optional func webView(_ webView: WebView!, shouldDelete range: DOMRange!) -> Bool
 ```
 
+```objc
+- (BOOL) webView:(WebView *) webView shouldDeleteDOMRange:(DOMRange *) range;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user should be allowed to delete the content specified by `range`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the user should be allowed to delete the content specified by `range`; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method may perform an alternate action—for example, delete a different range—and return [`false`](https://developer.apple.com/documentation/swift/false).
+This method may perform an alternate action—for example, delete a different range—and return [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ This method may perform an alternate action—for example, delete a different ra
 
 ## See Also
 
-- [func webViewDidChange(Notification!)](webeditingdelegate/webviewdidchange(_:).md)
+### Related Documentation
+- [func webViewDidChange(Notification!)](./webviewdidchange%28_%29.md)
   Sent by the default notification center when the user changes content in the web view.
 
 

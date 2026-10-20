@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagIsSignedInteger
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Synonym for `FormatFlagIsSignedInteger`.
 
@@ -10,17 +11,18 @@ Synonym for `FormatFlagIsSignedInteger`.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagIsSignedInteger
 ```
 
 ## See Also
 
-- [FormatFlagIsFloat](videodriverkit/iouservideoformatflags/formatflagisfloat.md)
+### Numeric representation flags
+- [FormatFlagIsFloat](./formatflagisfloat.md)
   Set for floating point, clear for integer.
-- [LinearPCMFormatFlagIsFloat](videodriverkit/iouservideoformatflags/linearpcmformatflagisfloat.md)
+- [LinearPCMFormatFlagIsFloat](./linearpcmformatflagisfloat.md)
   Synonym for `FormatFlagIsFloat`.
-- [FormatFlagIsSignedInteger](videodriverkit/iouservideoformatflags/formatflagissignedinteger.md)
+- [FormatFlagIsSignedInteger](./formatflagissignedinteger.md)
   Set for signed integer, clear for unsigned integer.
 
 

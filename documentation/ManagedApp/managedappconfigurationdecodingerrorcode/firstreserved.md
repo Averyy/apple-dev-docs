@@ -1,7 +1,8 @@
 # firstReserved
 
 **Framework**: ManagedApp  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code for the start of the range of reserved error codes.
 

@@ -1,7 +1,8 @@
 # SearchFieldPlacement.NavigationBarDrawerDisplayMode
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mode that determines when to display a search field that appears in a navigation bar.
 
@@ -20,16 +21,16 @@ struct NavigationBarDrawerDisplayMode
 ## Topics
 
 ### Getting display modes
-- [static let always: SearchFieldPlacement.NavigationBarDrawerDisplayMode](searchfieldplacement/navigationbardrawerdisplaymode/always.md)
+- [static let always: SearchFieldPlacement.NavigationBarDrawerDisplayMode](./navigationbardrawerdisplaymode/always.md)
   Always display the search field regardless of the scroll activity.
-- [static let automatic: SearchFieldPlacement.NavigationBarDrawerDisplayMode](searchfieldplacement/navigationbardrawerdisplaymode/automatic.md)
+- [static let automatic: SearchFieldPlacement.NavigationBarDrawerDisplayMode](./navigationbardrawerdisplaymode/automatic.md)
   Enable hiding the search field in response to scrolling.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

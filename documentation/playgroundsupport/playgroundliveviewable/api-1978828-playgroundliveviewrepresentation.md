@@ -2,6 +2,7 @@
 
 **Framework**: Playground Support  
 **Kind**: intfp  
+**Role**: Instance Property  
 **Required**: Yes
 
 The view or view controller used to render and manage the live view.
@@ -17,7 +18,7 @@ The view or view controller used to render and manage the live view.
 var playgroundLiveViewRepresentation: PlaygroundLiveViewRepresentation { get }
 ```
 
-#### Return_value
+#### Return Value
 
 A view or view controller able to render and manage the live view. View controllers are preferred.
 
@@ -25,7 +26,7 @@ A view or view controller able to render and manage the live view. View controll
 
 #### Discussion
 
-The value returned by [`playgroundLiveViewRepresentation`](playgroundliveviewable/1978828-playgroundliveviewrepresentation.md) can be different each time the property is accessed.
+The value returned by [`playgroundLiveViewRepresentation`](./api-1978828-playgroundliveviewrepresentation.md) can be different each time the property is accessed.
 
 
 ---

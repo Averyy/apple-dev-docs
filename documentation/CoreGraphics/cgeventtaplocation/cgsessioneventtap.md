@@ -1,13 +1,14 @@
 # CGEventTapLocation.cgSessionEventTap
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that an event tap is placed at the point where HID system and remote control events enter a login session.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Specifies that an event tap is placed at the point where HID system and remote c
 case cgSessionEventTap
 ```
 
+```c
+kCGSessionEventTap
+```
+
 ## See Also
 
-- [CGEventTapLocation.cghidEventTap](cgeventtaplocation/cghideventtap.md)
+### Constants
+- [CGEventTapLocation.cghidEventTap](./cghideventtap.md)
   Specifies that an event tap is placed at the point where HID system events enter the window server.
-- [CGEventTapLocation.cgAnnotatedSessionEventTap](cgeventtaplocation/cgannotatedsessioneventtap.md)
+- [CGEventTapLocation.cgAnnotatedSessionEventTap](./cgannotatedsessioneventtap.md)
   Specifies that an event tap is placed at the point where session events have been annotated to flow to an application.
 
 

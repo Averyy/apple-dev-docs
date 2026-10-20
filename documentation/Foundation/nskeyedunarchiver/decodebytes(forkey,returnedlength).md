@@ -1,7 +1,8 @@
 # decodeBytes(forKey:returnedLength:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes a stream of bytes associated with a given key.
 
@@ -20,6 +21,10 @@ Decodes a stream of bytes associated with a given key.
 func decodeBytes(forKey key: String, returnedLength lengthp: UnsafeMutablePointer<Int>?) -> UnsafePointer<UInt8>?
 ```
 
+```objc
+- (const uint8_t *) decodeBytesForKey:(NSString *) key returnedLength:(NSUInteger *) lengthp;
+```
+
 #### Return Value
 
 The stream of bytes associated with the key `key`. Returns `NULL` if `key` does not exist.
@@ -35,29 +40,31 @@ The returned value is a pointer to a temporary buffer owned by the receiver. The
 
 ## See Also
 
-- [func encodeBytes(UnsafePointer<UInt8>?, length: Int, forKey: String)](nskeyedarchiver/encodebytes(_:length:forkey:).md)
+### Related Documentation
+- [func encodeBytes(UnsafePointer<UInt8>?, length: Int, forKey: String)](../nskeyedarchiver/encodebytes%28_,length,forkey%29.md)
   Encodes a given number of bytes from a given C array of bytes and associates them with a key.
-- [func containsValue(forKey: String) -> Bool](nskeyedunarchiver/containsvalue(forkey:).md)
+### Decoding Data
+- [func containsValue(forKey: String) -> Bool](./containsvalue%28forkey%29.md)
   Returns a Boolean value that indicates whether the archive contains a value for a given key within the current decoding scope.
-- [func decodeDecodable<T>(T.Type, forKey: String) -> T?](nskeyedunarchiver/decodedecodable(_:forkey:).md)
+- [func decodeDecodable<T>(T.Type, forKey: String) -> T?](./decodedecodable%28_,forkey%29.md)
   Decodes a decodable value associated with a given key.
-- [func decodeTopLevelDecodable<T>(T.Type, forKey: String) throws -> T?](nskeyedunarchiver/decodetopleveldecodable(_:forkey:).md)
+- [func decodeTopLevelDecodable<T>(T.Type, forKey: String) throws -> T?](./decodetopleveldecodable%28_,forkey%29.md)
   Decodes a top-level decodable value associated with a given key.
-- [func decodeBool(forKey: String) -> Bool](nskeyedunarchiver/decodebool(forkey:).md)
+- [func decodeBool(forKey: String) -> Bool](./decodebool%28forkey%29.md)
   Decodes a Boolean value associated with a given key.
-- [func decodeDouble(forKey: String) -> Double](nskeyedunarchiver/decodedouble(forkey:).md)
+- [func decodeDouble(forKey: String) -> Double](./decodedouble%28forkey%29.md)
   Decodes a double-precision floating-point value associated with a given key.
-- [func decodeFloat(forKey: String) -> Float](nskeyedunarchiver/decodefloat(forkey:).md)
+- [func decodeFloat(forKey: String) -> Float](./decodefloat%28forkey%29.md)
   Decodes a single-precision floating-point value associated with a given key.
-- [func decodeInt32(forKey: String) -> Int32](nskeyedunarchiver/decodeint32(forkey:).md)
+- [func decodeInt32(forKey: String) -> Int32](./decodeint32%28forkey%29.md)
   Decodes a 32-bit integer value associated with a given key.
-- [func decodeInt64(forKey: String) -> Int64](nskeyedunarchiver/decodeint64(forkey:).md)
+- [func decodeInt64(forKey: String) -> Int64](./decodeint64%28forkey%29.md)
   Decodes a 64-bit integer value associated with a given key.
-- [func decodeObject(forKey: String) -> Any?](nskeyedunarchiver/decodeobject(forkey:).md)
+- [func decodeObject(forKey: String) -> Any?](./decodeobject%28forkey%29.md)
   Decodes and returns an object associated with a given key.
-- [func finishDecoding()](nskeyedunarchiver/finishdecoding.md)
+- [func finishDecoding()](./finishdecoding%28%29.md)
   Tells the receiver that you are finished decoding objects.
-- [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](nskeyedunarchiver/decodingfailurepolicy.md)
+- [var decodingFailurePolicy: NSCoder.DecodingFailurePolicy](./decodingfailurepolicy.md)
   The action to take when this unarchiver fails to decode an entry.
 
 

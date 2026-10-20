@@ -1,7 +1,8 @@
 # hex
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard hexadecimal format for floating-point values.
 
@@ -11,7 +12,7 @@ The standard hexadecimal format for floating-point values.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ static var hex: OSLogFloatFormatting { get }
 
 ## Mentions
 
-- [Generating Log Messages from Your Code](generating-log-messages-from-your-code.md)
+- [Generating Log Messages from Your Code](../generating-log-messages-from-your-code.md)
 
 ## See Also
 
-- [static var fixed: OSLogFloatFormatting](oslogfloatformatting/fixed.md)
+### Getting the Standard Formats
+- [static var fixed: OSLogFloatFormatting](./fixed.md)
   The standard fixed-point format option.
-- [static var exponential: OSLogFloatFormatting](oslogfloatformatting/exponential.md)
+- [static var exponential: OSLogFloatFormatting](./exponential.md)
   The standard exponential format option.
-- [static var hybrid: OSLogFloatFormatting](oslogfloatformatting/hybrid.md)
+- [static var hybrid: OSLogFloatFormatting](./hybrid.md)
   A hybrid option that changes the format according to the size of the number.
 
 

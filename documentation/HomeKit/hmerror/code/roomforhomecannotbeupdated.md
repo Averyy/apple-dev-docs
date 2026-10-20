@@ -1,7 +1,8 @@
 # HMError.Code.roomForHomeCannotBeUpdated
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to change the room that represents the entire home.
 
@@ -19,11 +20,16 @@ An attempt to change the room that represents the entire home.
 case roomForHomeCannotBeUpdated
 ```
 
+```c
+HMErrorCodeRoomForHomeCannotBeUpdated
+```
+
 ## See Also
 
-- [HMError.Code.maximumAccessoriesOfTypeInHome](hmerror/code/maximumaccessoriesoftypeinhome.md)
+### Home and room errors
+- [HMError.Code.maximumAccessoriesOfTypeInHome](./maximumaccessoriesoftypeinhome.md)
   The home already has the maximum number of accessories of the given type.
-- [HMError.Code.roomForHomeCannotBeInZone](hmerror/code/roomforhomecannotbeinzone.md)
+- [HMError.Code.roomForHomeCannotBeInZone](./roomforhomecannotbeinzone.md)
   An attempt to add the room that represents the entire home to a zone.
 
 

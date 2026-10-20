@@ -1,7 +1,8 @@
 # move()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves and returns the referenced instance, returning the pointer’s memory to an uninitialized state.
 

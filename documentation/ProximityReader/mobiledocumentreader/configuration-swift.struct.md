@@ -1,7 +1,8 @@
 # MobileDocumentReader.Configuration
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the configuration of the mobile document reader.
 
@@ -23,20 +24,21 @@ Use the reader’s configuration to generate a reader token on your server.
 ## Topics
 
 ### Instance Properties
-- [let readerInstanceIdentifier: String](mobiledocumentreader/configuration-swift.struct/readerinstanceidentifier.md)
+- [let readerInstanceIdentifier: String](./configuration-swift.struct/readerinstanceidentifier.md)
   The unique identifier for the mobile document reader instance.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var configuration: MobileDocumentReader.Configuration](mobiledocumentreader/configuration-swift.property.md)
+### Retrieving the reader configuration
+- [var configuration: MobileDocumentReader.Configuration](./configuration-swift.property.md)
   The configuration of the mobile document reader.
 
 

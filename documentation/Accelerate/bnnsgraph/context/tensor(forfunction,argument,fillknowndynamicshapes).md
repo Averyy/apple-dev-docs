@@ -1,7 +1,8 @@
 # tensor(forFunction:argument:fillKnownDynamicShapes:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an unallocated tensor for a given function argument.
 
@@ -11,7 +12,7 @@ Returns an unallocated tensor for a given function argument.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -24,11 +25,12 @@ func tensor(forFunction function: String? = nil, argument: String, fillKnownDyna
 
 - `function`: The function. Specify as `nil` if the graph only contains one function.
 - `argument`: The name of the input or output argument.
-- `fillKnownDynamicShapes`: A Boolean value that specifies whether the function should replace any dynamic shapes for the next execution of the context. BNNS derives these shapes either from the default shapes in the source model, or from preceding calls to [`setDynamicShapes(_:forFunction:)`](bnnsgraph/context/setdynamicshapes(_:forfunction:).md) or `/Accelerate/BNNSGraph/Context/setBatchSize(_:forFunction:)`. If BNNS is unable to derive the shapes, the function sets the dimensions to `-1`.
+- `fillKnownDynamicShapes`: A Boolean value that specifies whether the function should replace any dynamic shapes for the next execution of the context. BNNS derives these shapes either from the default shapes in the source model, or from preceding calls to [`setDynamicShapes(_:forFunction:)`](./setdynamicshapes%28_,forfunction%29.md) or `/Accelerate/BNNSGraph/Context/setBatchSize(_:forFunction:)`. If BNNS is unable to derive the shapes, the function sets the dimensions to `-1`.
 
 ## See Also
 
-- [func BNNSGraphContextGetTensor(bnns_graph_context_t, UnsafePointer<CChar>?, UnsafePointer<CChar>, Bool, UnsafeMutablePointer<BNNSTensor>) -> Int32](bnnsgraphcontextgettensor(_:_:_:_:_:).md)
+### Related Documentation
+- [func BNNSGraphContextGetTensor(bnns_graph_context_t, UnsafePointer<CChar>?, UnsafePointer<CChar>, Bool, UnsafeMutablePointer<BNNSTensor>) -> Int32](../../bnnsgraphcontextgettensor%28_,_,_,_,_%29.md)
   Sets the properties of a tensor for the specified function argument.
 
 

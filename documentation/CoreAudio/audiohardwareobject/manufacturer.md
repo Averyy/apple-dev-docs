@@ -1,12 +1,13 @@
 # manufacturer
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A String that contains the human readable name of the manufacturer of the hardware the object is a part of.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

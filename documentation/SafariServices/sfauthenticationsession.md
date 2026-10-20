@@ -1,19 +1,26 @@
 # SFAuthenticationSession
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that manages sharing a one-time login between Safari and an app, which can also provide automatic login for associated apps.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
+- iOS 11.0+ - Deprecated in 12.0 (renamed: ASWebAuthenticationSession)
+- iPadOS 11.0+ - Deprecated in 12.0 (renamed: ASWebAuthenticationSession)
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) instead.
 
 ## Declaration
 
 ```swift
 class SFAuthenticationSession
+```
+
+```objc
+@interface SFAuthenticationSession : NSObject
 ```
 
 #### Overview
@@ -36,41 +43,42 @@ The dismiss button in `SFAuthenticationSession` always says Cancel. Applications
 ## Topics
 
 ### Type Aliases
-- [SFAuthenticationSession.CompletionHandler](sfauthenticationsession/completionhandler.md)
+- [SFAuthenticationSession.CompletionHandler](./sfauthenticationsession/completionhandler.md)
   The completion handler for an authentication session when the user cancels or finishes the login.
 ### Initializers
-- [init(url: URL, callbackURLScheme: String?, completionHandler: SFAuthenticationSession.CompletionHandler)](sfauthenticationsession/init(url:callbackurlscheme:completionhandler:)-55qgp.md)
+- [init(url: URL, callbackURLScheme: String?, completionHandler: SFAuthenticationSession.CompletionHandler)](./sfauthenticationsession/init%28url,callbackurlscheme,completionhandler%29-55qgp.md)
   Initializes the SFAuthenticationSession in an application.
-- [init(URL: URL, callbackURLScheme: String?, completionHandler: SFAuthenticationSession.CompletionHandler)](sfauthenticationsession/init(url:callbackurlscheme:completionhandler:)-7iwvl.md)
+- [init(URL: URL, callbackURLScheme: String?, completionHandler: SFAuthenticationSession.CompletionHandler)](./sfauthenticationsession/init%28url,callbackurlscheme,completionhandler%29-7iwvl.md)
 ### Instance Methods
-- [func cancel()](sfauthenticationsession/cancel.md)
+- [func cancel()](./sfauthenticationsession/cancel%28%29.md)
   Cancels the currently running session when the consent dialog is up or when the webpage is up. This is how applications stop the login process.
-- [func start() -> Bool](sfauthenticationsession/start.md)
+- [func start() -> Bool](./sfauthenticationsession/start%28%29.md)
   Starts the session after initializing an instance of SFAuthenticationSession. This will trigger the consent dialog.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [let SFContentBlockerErrorDomain: String](sfcontentblockererrordomain.md)
+### Deprecated
+- [let SFContentBlockerErrorDomain: String](./sfcontentblockererrordomain.md)
   The domain for content blocker errors.
-- [enum SFContentBlockerErrorCode](sfcontentblockererrorcode.md)
+- [enum SFContentBlockerErrorCode](./sfcontentblockererrorcode.md)
   Messages that describe a content blocker error.
-- [struct SFAuthenticationError](sfauthenticationerror-swift.struct.md)
+- [struct SFAuthenticationError](./sfauthenticationerror-swift.struct.md)
   An authentication error.
-- [SFAuthenticationError.Code](sfauthenticationerror-swift.struct/code.md)
+- [SFAuthenticationError.Code](./sfauthenticationerror-swift.struct/code.md)
   Messages that describe an authentication error.
-- [let SFAuthenticationErrorDomain: String](sfauthenticationerrordomain.md)
+- [let SFAuthenticationErrorDomain: String](./sfauthenticationerrordomain.md)
   The domain for authentication errors.
 
 

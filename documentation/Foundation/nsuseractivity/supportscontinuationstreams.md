@@ -1,7 +1,8 @@
 # supportsContinuationStreams
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the continuing app can request streams to be opened back to the originating app.
 
@@ -20,13 +21,18 @@ A Boolean value that determines whether the continuing app can request streams t
 var supportsContinuationStreams: Bool { get set }
 ```
 
+```objc
+@property BOOL supportsContinuationStreams;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the continuing app can connect back to the originating app for more information using streams. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). It can dynamically be set to [`true`](https://developer.apple.com/documentation/swift/true) to selectively support continuation streams based on the state of the user activity.
+If the value of this property is [`true`](../../Swift/true.md), the continuing app can connect back to the originating app for more information using streams. The default value of this property is [`false`](../../Swift/false.md). It can dynamically be set to [`true`](../../Swift/true.md) to selectively support continuation streams based on the state of the user activity.
 
 ## See Also
 
-- [func getContinuationStreams(completionHandler: (InputStream?, OutputStream?, (any Error)?) -> Void)](nsuseractivity/getcontinuationstreams(completionhandler:).md)
+### Working with continuation streams
+- [func getContinuationStreams(completionHandler: (InputStream?, OutputStream?, (any Error)?) -> Void)](./getcontinuationstreams%28completionhandler%29.md)
   Requests streams back to the originating app.
 
 

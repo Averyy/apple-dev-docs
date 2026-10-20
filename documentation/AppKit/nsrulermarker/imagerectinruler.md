@@ -1,17 +1,22 @@
 # imageRectInRuler
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle occupied by the receiver’s image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var imageRectInRuler: NSRect { get }
+```
+
+```objc
+@property (readonly) NSRect imageRectInRuler;
 ```
 
 #### Discussion
@@ -20,13 +25,15 @@ The rectangle occupied by the receiver’s image, in the ruler view’s coordina
 
 ## See Also
 
-- [func draw(NSRect)](nsrulermarker/draw(_:).md)
+### Related Documentation
+- [func draw(NSRect)](./draw%28_%29.md)
   Draws the receiver’s image that appears in the supplied rectangle.
-- [var image: NSImage](nsrulermarker/image.md)
+### Setting the image
+- [var image: NSImage](./image.md)
   The receiver’s image.
-- [var imageOrigin: NSPoint](nsrulermarker/imageorigin.md)
+- [var imageOrigin: NSPoint](./imageorigin.md)
   The point in the receiver’s image that is positioned at the receiver’s location on the ruler view.
-- [var thicknessRequiredInRuler: CGFloat](nsrulermarker/thicknessrequiredinruler.md)
+- [var thicknessRequiredInRuler: CGFloat](./thicknessrequiredinruler.md)
   The amount of the receiver’s image that’s displayed above or to the left of the ruler view’s baseline.
 
 

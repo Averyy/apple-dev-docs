@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Transfer ownership of an existing unmanaged Mach port right into a `Mach.Port` by name.
 

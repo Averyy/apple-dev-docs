@@ -1,7 +1,8 @@
 # kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether VideoToolbox uses a hardware-accelerated video decoder, if available.
 
@@ -19,15 +20,20 @@ A Boolean value indicating whether VideoToolbox uses a hardware-accelerated vide
 let kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder: CFString
 ```
 
+```c
+extern CFStringRef const kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder;
+```
+
 #### Discussion
 
-You set this key in the `decoderSpecification` passed in to [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](vtdecompressionsessioncreate(allocator:formatdescription:decoderspecification:imagebufferattributes:outputcallback:decompressionsessionout:).md).  Set it to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) to allow hardware-accelerated decoding.  To specifically prevent hardware-accelerated decoding, set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse). This property is useful for clients doing realtime decode operations because it allows VideoToolbox to choose the optimal decoding path.
+You set this key in the `decoderSpecification` passed in to [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](./vtdecompressionsessioncreate%28allocator,formatdescription,decoderspecification,imagebufferattributes,outputcallback,decompressionsessionout%29.md).  Set it to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) to allow hardware-accelerated decoding.  To specifically prevent hardware-accelerated decoding, set this property to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). This property is useful for clients doing realtime decode operations because it allows VideoToolbox to choose the optimal decoding path.
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder: CFString](kvtdecompressionpropertykey_usinghardwareacceleratedvideodecoder.md)
+### Hardware Acceleration
+- [let kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder: CFString](./kvtdecompressionpropertykey_usinghardwareacceleratedvideodecoder.md)
   Indicates if a hardware-accelerated video decoder is being used.
-- [let kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder: CFString](kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder.md)
+- [let kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder: CFString](./kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder.md)
   A Boolean value indicating whether to require hardware-accelerated decoding.
 
 

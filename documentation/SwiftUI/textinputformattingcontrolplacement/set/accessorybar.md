@@ -1,7 +1,8 @@
 # accessoryBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Text formatting controls placed beneath the window toolbar on macOS.
 

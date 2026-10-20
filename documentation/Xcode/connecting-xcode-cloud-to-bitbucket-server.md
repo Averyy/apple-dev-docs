@@ -1,6 +1,7 @@
 # Connecting Xcode Cloud to Bitbucket Server
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Allow Xcode Cloud to access your Bitbucket Server repository.
 
@@ -8,12 +9,12 @@ Allow Xcode Cloud to access your Bitbucket Server repository.
 
 When you first configure your project or workspace to use Xcode Cloud, you need to allow Xcode Cloud to access your Git repository. It uses this access to automatically build and test your code when you make changes to the codebase.
 
-The person who first configures a project or workspace to Xcode Cloud must have the *administrator* permission for its repository on Bitbucket Server. If you don’t have this permission, see [`Connect Xcode Cloud to an admin-managed Git repository`](configuring-xcode-cloud-for-your-team#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository.md).
+The person who first configures a project or workspace to Xcode Cloud must have the *administrator* permission for its repository on Bitbucket Server. If you don’t have this permission, see [Connect Xcode Cloud to an admin-managed Git repository](./configuring-xcode-cloud-for-your-team.md#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository).
 
-To allow Xcode Cloud to access your repository on [`Bitbucket Server`](https://developer.apple.comhttps://bitbucket.org/product/enterprise):
+To allow Xcode Cloud to access your repository on [Bitbucket Server](https://bitbucket.org/product/enterprise):
 
-1. Configure your project or workspace to use Xcode Cloud and create your first workflow as described in [`Configuring your first Xcode Cloud workflow`](configuring-your-first-xcode-cloud-workflow.md). Xcode analyzes your project to learn which SCM provider you use and then displays the URL of your Bitbucket Server host on the Grant Access to Your Source Code sheet.
-2. Click Grant Access. Xcode opens your browser and takes you to the [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com) website.
+1. Configure your project or workspace to use Xcode Cloud and create your first workflow as described in [Configuring your first Xcode Cloud workflow](./configuring-your-first-xcode-cloud-workflow.md). Xcode analyzes your project to learn which SCM provider you use and then displays the URL of your Bitbucket Server host on the Grant Access to Your Source Code sheet.
+2. Click Grant Access. Xcode opens your browser and takes you to the [App Store Connect](https://appstoreconnect.apple.com) website.
 3. Enter the host name of your Bitbucket Server instance on the App Store Connect website. When it analyzes your project, Xcode Cloud learns the host name of your Bitbucket Server instance and fills the corresponding field on the website for you.
 4. Check if the entered host name is correct (for example, make sure it contains a required port) and click Register.
 5. Click “your Bitbucket Server host”. This opens your Bitbucket Server instance and displays your account’s “Personal access tokens” section. Don’t close the tab or window that displays the Xcode Cloud webpage.
@@ -29,7 +30,8 @@ To allow Xcode Cloud to access your repository on [`Bitbucket Server`](https://d
 
 ## See Also
 
-- [Connecting Xcode Cloud to Bitbucket Cloud](connecting-xcode-cloud-to-bitbucket-cloud.md)
+### Bitbucket Cloud and Bitbucket Server
+- [Connecting Xcode Cloud to Bitbucket Cloud](./connecting-xcode-cloud-to-bitbucket-cloud.md)
   Allow Xcode Cloud to access your Bitbucket Cloud repository.
 
 

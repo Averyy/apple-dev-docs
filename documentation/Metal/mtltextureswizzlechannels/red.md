@@ -1,7 +1,8 @@
 # red
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data copied to the first output channel.
 
@@ -19,13 +20,18 @@ The data copied to the first output channel.
 var red: MTLTextureSwizzle
 ```
 
+```c
+MTLTextureSwizzle red;
+```
+
 ## See Also
 
-- [var green: MTLTextureSwizzle](mtltextureswizzlechannels/green.md)
+### Specifying swizzle values
+- [var green: MTLTextureSwizzle](./green.md)
   The data copied to the second output channel.
-- [var blue: MTLTextureSwizzle](mtltextureswizzlechannels/blue.md)
+- [var blue: MTLTextureSwizzle](./blue.md)
   The data copied to the third output channel.
-- [var alpha: MTLTextureSwizzle](mtltextureswizzlechannels/alpha.md)
+- [var alpha: MTLTextureSwizzle](./alpha.md)
   The data copied to the fourth output channel.
 
 

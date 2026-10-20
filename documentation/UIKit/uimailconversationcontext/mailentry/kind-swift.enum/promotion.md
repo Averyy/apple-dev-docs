@@ -1,7 +1,8 @@
 # UIMailConversationContext.MailEntry.Kind.promotion
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The email contains a promotional offer.
 
@@ -16,17 +17,22 @@ The email contains a promotional offer.
 case promotion
 ```
 
+```c
+UIMailConversationEntryKindPromotion
+```
+
 ## See Also
 
-- [UIMailConversationContext.MailEntry.Kind.news](uimailconversationcontext/mailentry/kind-swift.enum/news.md)
+### Kinds of email
+- [UIMailConversationContext.MailEntry.Kind.news](./news.md)
   The email is related to news or current events.
-- [UIMailConversationContext.MailEntry.Kind.none](uimailconversationcontext/mailentry/kind-swift.enum/none.md)
+- [UIMailConversationContext.MailEntry.Kind.none](./none.md)
   The email does not fit in a specific category.
-- [UIMailConversationContext.MailEntry.Kind.personal](uimailconversationcontext/mailentry/kind-swift.enum/personal.md)
+- [UIMailConversationContext.MailEntry.Kind.personal](./personal.md)
   The email is personal correspondence.
-- [UIMailConversationContext.MailEntry.Kind.social](uimailconversationcontext/mailentry/kind-swift.enum/social.md)
+- [UIMailConversationContext.MailEntry.Kind.social](./social.md)
   The email is related to social media.
-- [UIMailConversationContext.MailEntry.Kind.transaction](uimailconversationcontext/mailentry/kind-swift.enum/transaction.md)
+- [UIMailConversationContext.MailEntry.Kind.transaction](./transaction.md)
   The email is related to a purchase or transaction.
 
 

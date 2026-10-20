@@ -1,7 +1,8 @@
 # parentIdentifier
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique alphanumeric value that identifies the object’s parent object or surface.
 
@@ -22,13 +23,14 @@ For example, the parent of a sink is the storage area in which the sink resides.
 
 ## See Also
 
-- [var identifier: UUID](capturedroom/object/identifier.md)
+### Identifying an object
+- [var identifier: UUID](./identifier.md)
   A unique alphanumeric value that the framework assigns the object.
-- [var category: CapturedRoom.Object.Category](capturedroom/object/category-swift.property.md)
+- [var category: CapturedRoom.Object.Category](./category-swift.property.md)
   A classification that the captured room assigns the object.
-- [CapturedRoom.Object.Category](capturedroom/object/category-swift.enum.md)
+- [CapturedRoom.Object.Category](./category-swift.enum.md)
   Classifications of an object in a captured room.
-- [var confidence: CapturedRoom.Confidence](capturedroom/object/confidence.md)
+- [var confidence: CapturedRoom.Confidence](./confidence.md)
   A level of certainty in the object’s category.
 
 

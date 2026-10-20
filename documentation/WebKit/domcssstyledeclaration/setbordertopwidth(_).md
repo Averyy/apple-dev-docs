@@ -1,7 +1,8 @@
 # setBorderTopWidth(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setBorderTopWidth(_ borderTopWidth: String!)
+```
+
+```objc
+- (void) setBorderTopWidth:(NSString *) borderTopWidth;
 ```
 
 

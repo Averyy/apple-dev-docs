@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the activity item.
 
@@ -18,13 +19,18 @@ An identifier for the activity item.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
 Use a string that’s unique among the activity items attached to a particular activity.
 
 ## See Also
 
-- [var title: String](clsactivityitem/title.md)
+### Accessing Activity Item Information
+- [var title: String](./title.md)
   A human readable name for the activity item.
 
 

@@ -1,7 +1,8 @@
 # GLhalf
 
 **Framework**: OpenGL ES  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias GLhalf = UInt16
+```
+
+```c
+typedef uint16_t GLhalf;
 ```
 
 

@@ -1,7 +1,8 @@
 # GKTurnBasedMatch.Status
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The states of a match from when it’s created to when it ends.
 
@@ -20,47 +21,52 @@ The states of a match from when it’s created to when it ends.
 enum Status
 ```
 
+```c
+enum GKTurnBasedMatchStatus : NSInteger;
+```
+
 ## Topics
 
 ### Match Statuses
-- [GKTurnBasedMatch.Status.unknown](gkturnbasedmatch/status-swift.enum/unknown.md)
+- [GKTurnBasedMatch.Status.unknown](./status-swift.enum/unknown.md)
   A match that is in an unknown state.
-- [GKTurnBasedMatch.Status.open](gkturnbasedmatch/status-swift.enum/open.md)
+- [GKTurnBasedMatch.Status.open](./status-swift.enum/open.md)
   A match that participants are actively playing.
-- [GKTurnBasedMatch.Status.ended](gkturnbasedmatch/status-swift.enum/ended.md)
+- [GKTurnBasedMatch.Status.ended](./status-swift.enum/ended.md)
   A match that finishes.
-- [GKTurnBasedMatch.Status.matching](gkturnbasedmatch/status-swift.enum/matching.md)
+- [GKTurnBasedMatch.Status.matching](./status-swift.enum/matching.md)
   A match with empty slots that Game Center is actively filling.
 ### Initializers
-- [init?(rawValue: Int)](gkturnbasedmatch/status-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./status-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var matchID: String](gkturnbasedmatch/matchid.md)
+### Retrieving Match Details
+- [var matchID: String](./matchid.md)
   A unique identifier for the turn-based match.
-- [var creationDate: Date](gkturnbasedmatch/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The date that Game Center created the match.
-- [var participants: [GKTurnBasedParticipant]](gkturnbasedmatch/participants.md)
+- [var participants: [GKTurnBasedParticipant]](./participants.md)
   The players that participate in a turn-based match.
-- [var currentParticipant: GKTurnBasedParticipant?](gkturnbasedmatch/currentparticipant.md)
+- [var currentParticipant: GKTurnBasedParticipant?](./currentparticipant.md)
   The participant whose turn it is.
-- [var status: GKTurnBasedMatch.Status](gkturnbasedmatch/status-swift.property.md)
+- [var status: GKTurnBasedMatch.Status](./status-swift.property.md)
   The state of the match, such as whether the match is open or has ended.
-- [var matchData: Data?](gkturnbasedmatch/matchdata.md)
+- [var matchData: Data?](./matchdata.md)
   The game-specific data that you store in Game Center and pass between participants through a match object.
-- [var matchDataMaximumSize: Int](gkturnbasedmatch/matchdatamaximumsize.md)
+- [var matchDataMaximumSize: Int](./matchdatamaximumsize.md)
   The maximum size of the match data.
-- [func loadMatchData(completionHandler: ((Data?, (any Error)?) -> Void)?)](gkturnbasedmatch/loadmatchdata(completionhandler:).md)
+- [func loadMatchData(completionHandler: ((Data?, (any Error)?) -> Void)?)](./loadmatchdata%28completionhandler%29.md)
   Fetches your game-specific data that you store in Game Center when ending a turn, saving a turn, or leaving a match.
 
 

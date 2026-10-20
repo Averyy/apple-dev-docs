@@ -1,7 +1,8 @@
 # cameraOverrides
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current camera params which would override static metadata to use when rendering playback for the PTS specified in the last call to the update method.
 

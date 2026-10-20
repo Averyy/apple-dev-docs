@@ -1,17 +1,20 @@
 # kMCSessionMinimumNumberOfPeers
 
 **Framework**: Multipeer Connectivity  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The minimum number of peers that a session can support, including the local peer.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 27.0
+- iPadOS 7.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use Network Framework instead
 
 ## Declaration
 
@@ -19,11 +22,16 @@ The minimum number of peers that a session can support, including the local peer
 let kMCSessionMinimumNumberOfPeers: Int
 ```
 
+```c
+extern const NSUInteger kMCSessionMinimumNumberOfPeers;
+```
+
 ## See Also
 
-- [let MCErrorDomain: String](mcerrordomain.md)
+### Constants
+- [let MCErrorDomain: String](./mcerrordomain.md)
   The `NSError` domain constant. If the `domain` value for an `NSError` object is equal to `MCErrorDomain`, then the error was produced by the Multipeer Connectivity framework itself, as opposed to a lower-level framework on which it depends.
-- [let kMCSessionMaximumNumberOfPeers: Int](kmcsessionmaximumnumberofpeers.md)
+- [let kMCSessionMaximumNumberOfPeers: Int](./kmcsessionmaximumnumberofpeers.md)
   The maximum number of peers that a session can support, including the local peer.
 
 

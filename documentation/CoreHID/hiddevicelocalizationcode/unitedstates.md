@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.unitedStates
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to US in the HID specification.
 

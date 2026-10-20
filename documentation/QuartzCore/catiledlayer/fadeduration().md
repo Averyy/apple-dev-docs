@@ -1,7 +1,8 @@
 # fadeDuration()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The time, in seconds, that newly added images take to “fade-in” to the rendered representation of the tiled layer.
 
@@ -19,13 +20,18 @@ The time, in seconds, that newly added images take to “fade-in” to the rende
 class func fadeDuration() -> CFTimeInterval
 ```
 
+```objc
++ (CFTimeInterval) fadeDuration;
+```
+
 #### Discussion
 
 The default implementation returns 0.25 seconds.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

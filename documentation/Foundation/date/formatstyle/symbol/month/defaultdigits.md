@@ -1,7 +1,8 @@
 # defaultDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Custom month format style showing the minimum number of digits that represents the numeric month.
 
@@ -26,13 +27,14 @@ This style represents the month like `1` or `12`.
 
 ## See Also
 
-- [static var abbreviated: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/abbreviated.md)
+### Modifying a Month
+- [static var abbreviated: Date.FormatStyle.Symbol.Month](./abbreviated.md)
   The abbreviated representation of a month.
-- [static var narrow: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/narrow.md)
+- [static var narrow: Date.FormatStyle.Symbol.Month](./narrow.md)
   The shortest representation of a month.
-- [static var twoDigits: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Month](./twodigits.md)
   The custom month format style that uses two digits to represent the numeric month.
-- [static var wide: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.Month](./wide.md)
   The full representation of a month.
 
 

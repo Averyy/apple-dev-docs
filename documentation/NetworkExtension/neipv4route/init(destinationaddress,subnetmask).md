@@ -1,9 +1,10 @@
 # init(destinationAddress:subnetMask:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initialize the [`NEIPv4Route`](neipv4route.md) object.
+Initialize the [`NEIPv4Route`](../neipv4route.md) object.
 
 **Availability**:
 - iOS 9.0+
@@ -19,6 +20,10 @@ Initialize the [`NEIPv4Route`](neipv4route.md) object.
 init(destinationAddress address: String, subnetMask: String)
 ```
 
+```objc
+- (instancetype) initWithDestinationAddress:(NSString *) address subnetMask:(NSString *) subnetMask;
+```
+
 ## Parameters
 
 - `address`: An IPv4 address string. This string is combined with `subnetMask` to specify the destination network of the route.
@@ -26,7 +31,8 @@ init(destinationAddress address: String, subnetMask: String)
 
 ## See Also
 
-- [class func `default`() -> NEIPv4Route](neipv4route/default.md)
+### Creating an IPv4 Route
+- [class func `default`() -> NEIPv4Route](./default%28%29.md)
   A convenience method for creating the default IPv4 route.
 
 

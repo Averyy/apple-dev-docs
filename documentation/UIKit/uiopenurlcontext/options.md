@@ -1,7 +1,8 @@
 # options
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information for determining how to open the URL.
 
@@ -18,11 +19,16 @@ Additional information for determining how to open the URL.
 var options: UIScene.OpenURLOptions { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UISceneOpenURLOptions * options;
+```
+
 ## See Also
 
-- [var url: URL](uiopenurlcontext/url.md)
+### Getting the URL
+- [var url: URL](./url.md)
   The URL to open.
-- [UIScene.OpenURLOptions](uiscene/openurloptions.md)
+- [UIScene.OpenURLOptions](../uiscene/openurloptions.md)
   Options that UIKit provides when asking your app to open a URL.
 
 

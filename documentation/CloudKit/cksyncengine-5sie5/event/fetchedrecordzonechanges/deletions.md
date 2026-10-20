@@ -1,7 +1,8 @@
 # deletions
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fetched record zone deletions.
 
@@ -11,7 +12,7 @@ The fetched record zone deletions.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ let deletions: [CKDatabase.RecordZoneChange.Deletion]
 
 ## See Also
 
-- [let modifications: [CKDatabase.RecordZoneChange.Modification]](cksyncengine-5sie5/event/fetchedrecordzonechanges/modifications.md)
+### Accessing changes
+- [let modifications: [CKDatabase.RecordZoneChange.Modification]](./modifications.md)
   The fetched record modifications.
 
 

@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: Evaluations
+**Framework**: Evaluations  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](aggregationoperation/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Decodes an operation from a keyed container, reconstructing the metric from its name.
 
 

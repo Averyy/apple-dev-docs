@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Wraps a single evaluator expression into the builder pipeline.
 

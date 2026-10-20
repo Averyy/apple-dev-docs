@@ -1,7 +1,8 @@
 # media(_:as:)
 
 **Framework**: Link Presentation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the media data of this metadata for an attachment as the specified Transferable type if possible.
 

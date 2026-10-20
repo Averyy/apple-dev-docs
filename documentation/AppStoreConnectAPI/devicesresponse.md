@@ -1,7 +1,8 @@
 # DevicesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list registered devices.
 
@@ -10,7 +11,7 @@ The response body for endpoints that list registered devices.
 
 ## Declaration
 
-```swift
+```
 object DevicesResponse
 ```
 
@@ -22,17 +23,19 @@ object DevicesResponse
 
 ## See Also
 
-- [List devices](get-v1-devices.md)
+### Related Documentation
+- [List devices](./get-v1-devices.md)
   Find and list devices registered to your team.
-- [object Device](device.md)
+### Objects
+- [object Device](./device.md)
   A physical Apple device registered in your developer account for testing, identified by its UDID and device type.
-- [object DevicesWithoutIncludesResponse](deviceswithoutincludesresponse.md)
+- [object DevicesWithoutIncludesResponse](./deviceswithoutincludesresponse.md)
   A response containing a list of registered devices, without related resources.
-- [object DeviceCreateRequest](devicecreaterequest.md)
+- [object DeviceCreateRequest](./devicecreaterequest.md)
   The request body you use to create a Device.
-- [object DeviceUpdateRequest](deviceupdaterequest.md)
+- [object DeviceUpdateRequest](./deviceupdaterequest.md)
   The request body you use to update a Device.
-- [object DeviceResponse](deviceresponse.md)
+- [object DeviceResponse](./deviceresponse.md)
   The response body for endpoints that create, read, or modify a single registered device.
 
 

@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kATSFontAutoActivationAsk: Int](katsfontautoactivationask.md)
-- [var kATSFontAutoActivationDefault: Int](katsfontautoactivationdefault.md)
-- [var kATSFontAutoActivationDisabled: Int](katsfontautoactivationdisabled.md)
-- [var kATSFontAutoActivationEnabled: Int](katsfontautoactivationenabled.md)
+- [var kATSFontAutoActivationAsk: Int](../katsfontautoactivationask.md)
+- [var kATSFontAutoActivationDefault: Int](../katsfontautoactivationdefault.md)
+- [var kATSFontAutoActivationDisabled: Int](../katsfontautoactivationdisabled.md)
+- [var kATSFontAutoActivationEnabled: Int](../katsfontautoactivationenabled.md)
 
 
 ---

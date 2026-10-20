@@ -1,7 +1,8 @@
 # textSelector
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the text the style attributes apply to.
 
@@ -17,6 +18,10 @@ A string that identifies the text the style attributes apply to.
 
 ```swift
 var textSelector: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * textSelector;
 ```
 
 #### Discussion
@@ -48,11 +53,12 @@ playerItem.textStyleRules = [
 ].compactMap { $0 }
 ```
 
-When this property is `nil`, the attributes act as defaults for all of the item’s text. Rules apply only where the media resource doesn’t supply equivalent styling of its own; see [`textStyleRules`](avplayeritem/textstylerules.md).
+When this property is `nil`, the attributes act as defaults for all of the item’s text. Rules apply only where the media resource doesn’t supply equivalent styling of its own; see [`textStyleRules`](../avplayeritem/textstylerules.md).
 
 ## See Also
 
-- [var textMarkupAttributes: [String : Any]](avtextstylerule/textmarkupattributes.md)
+### Accessing the style attributes
+- [var textMarkupAttributes: [String : Any]](./textmarkupattributes.md)
   A dictionary of text style attributes to apply to the text.
 
 

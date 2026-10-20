@@ -1,14 +1,15 @@
 # kIOPMCapabilitiesMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOPMCapabilitiesMask = kIOPMPowerOn | kIOPMDeviceUsable |
 	    kIOPMMaxPerformance | kIOPMContextRetained |
 	    kIOPMConfigRetained | kIOPMSleepCapability |

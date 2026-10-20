@@ -1,7 +1,8 @@
 # preloadedLibraries
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dynamic libraries that contain precompiled shader functions you want to link.
 
@@ -19,9 +20,14 @@ The dynamic libraries that contain precompiled shader functions you want to link
 var preloadedLibraries: [any MTLDynamicLibrary] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<id<MTLDynamicLibrary>> * preloadedLibraries;
+```
+
 ## See Also
 
-- [var insertLibraries: [any MTLDynamicLibrary]?](mtlcomputepipelinedescriptor/insertlibraries.md)
+### Loading dynamic libraries to link at runtime
+- [var insertLibraries: [any MTLDynamicLibrary]?](./insertlibraries.md)
   The dynamic libraries that contain precompiled shader functions you want to link.
 
 

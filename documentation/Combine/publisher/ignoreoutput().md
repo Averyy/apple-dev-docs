@@ -1,7 +1,8 @@
 # ignoreOutput()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ignores all upstream elements, but passes along the upstream publisher’s completion state (finished or failed).
 
@@ -26,9 +27,9 @@ A publisher that ignores all upstream elements.
 
 #### Discussion
 
-Use the [`ignoreOutput()`](publisher/ignoreoutput().md) operator to determine if a publisher is able to complete successfully or would fail.
+Use the [`ignoreOutput()`](./ignoreoutput%28%29.md) operator to determine if a publisher is able to complete successfully or would fail.
 
-In the example below, the array publisher (`numbers`) delivers the first five of its elements successfully, as indicated by the [`ignoreOutput()`](publisher/ignoreoutput().md) operator. The operator consumes, but doesn’t republish the elements downstream. However, the sixth element, `0`, causes the error throwing closure to catch a `NoZeroValuesAllowedError` that terminates the stream.
+In the example below, the array publisher (`numbers`) delivers the first five of its elements successfully, as indicated by the [`ignoreOutput()`](./ignoreoutput%28%29.md) operator. The operator consumes, but doesn’t republish the elements downstream. However, the sixth element, `0`, causes the error throwing closure to catch a `NoZeroValuesAllowedError` that terminates the stream.
 
 ```swift
 struct NoZeroValuesAllowedError: Error {}
@@ -45,21 +46,22 @@ cancellable = numbers.publisher
 // Prints: "completion: failure(NoZeroValuesAllowedError())"
 ```
 
-The output type of this publisher is [`Never`](https://developer.apple.com/documentation/swift/never).
+The output type of this publisher is [`Never`](../../Swift/never.md).
 
 ## See Also
 
-- [func collect() -> Publishers.Collect<Self>](publisher/collect.md)
+### Reducing elements
+- [func collect() -> Publishers.Collect<Self>](./collect%28%29.md)
   Collects all received elements, and emits a single array of the collection when the upstream publisher finishes.
-- [func collect(Int) -> Publishers.CollectByCount<Self>](publisher/collect(_:).md)
+- [func collect(Int) -> Publishers.CollectByCount<Self>](./collect%28_%29.md)
   Collects up to the specified number of elements, and then emits a single array of the collection.
-- [func collect<S>(Publishers.TimeGroupingStrategy<S>, options: S.SchedulerOptions?) -> Publishers.CollectByTime<Self, S>](publisher/collect(_:options:).md)
+- [func collect<S>(Publishers.TimeGroupingStrategy<S>, options: S.SchedulerOptions?) -> Publishers.CollectByTime<Self, S>](./collect%28_,options%29.md)
   Collects elements by a given time-grouping strategy, and emits a single array of the collection.
-- [Publishers.TimeGroupingStrategy](publishers/timegroupingstrategy.md)
+- [Publishers.TimeGroupingStrategy](../publishers/timegroupingstrategy.md)
   A strategy for collecting received elements.
-- [func reduce<T>(T, (T, Self.Output) -> T) -> Publishers.Reduce<Self, T>](publisher/reduce(_:_:).md)
+- [func reduce<T>(T, (T, Self.Output) -> T) -> Publishers.Reduce<Self, T>](./reduce%28_,_%29.md)
   Applies a closure that collects each element of a stream and publishes a final result upon completion.
-- [func tryReduce<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryReduce<Self, T>](publisher/tryreduce(_:_:).md)
+- [func tryReduce<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryReduce<Self, T>](./tryreduce%28_,_%29.md)
   Applies an error-throwing closure that collects each element of a stream and publishes a final result upon completion.
 
 

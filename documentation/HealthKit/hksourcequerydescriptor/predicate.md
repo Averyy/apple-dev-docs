@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate that limits the data used by the query.
 
@@ -10,7 +11,7 @@ A predicate that limits the data used by the query.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # BundleIdCapability
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An entitlement or service (such as Push Notifications or In-App Purchases) enabled for a registered bundle ID.
 
@@ -10,14 +11,14 @@ An entitlement or service (such as Push Notifications or In-App Purchases) enabl
 
 ## Declaration
 
-```swift
+```
 object BundleIdCapability
 ```
 
 ## Topics
 
 ### Objects
-- [object BundleIdCapability.Attributes](bundleidcapability/attributes-data.dictionary.md)
+- [object BundleIdCapability.Attributes](./bundleidcapability/attributes-data.dictionary.md)
   Attributes that describe a Bundle ID Capabilities resource.
 
 ## Properties
@@ -27,23 +28,26 @@ object BundleIdCapability
 - `links` (ResourceLinks): Navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `bundleIdCapabilities`
+
 ## See Also
 
-- [object BundleIdCapabilityCreateRequest](bundleidcapabilitycreaterequest.md)
+### Object and Data Types
+- [object BundleIdCapabilityCreateRequest](./bundleidcapabilitycreaterequest.md)
   The request body you use to create a Bundle ID Capability.
-- [object BundleIdCapabilityUpdateRequest](bundleidcapabilityupdaterequest.md)
+- [object BundleIdCapabilityUpdateRequest](./bundleidcapabilityupdaterequest.md)
   The request body you use to update a Bundle ID Capability.
-- [object BundleIdCapabilityResponse](bundleidcapabilityresponse.md)
+- [object BundleIdCapabilityResponse](./bundleidcapabilityresponse.md)
   The response body for endpoints that enable or modify a capability for a bundle ID.
-- [object BundleIdCapabilitiesResponse](bundleidcapabilitiesresponse.md)
+- [object BundleIdCapabilitiesResponse](./bundleidcapabilitiesresponse.md)
   The response body for endpoints that list capabilities enabled for a bundle ID.
-- [object BundleIdCapabilitiesWithoutIncludesResponse](bundleidcapabilitieswithoutincludesresponse.md)
+- [object BundleIdCapabilitiesWithoutIncludesResponse](./bundleidcapabilitieswithoutincludesresponse.md)
   A response containing a list of bundle ID capabilities, without related resources.
-- [object CapabilityOption](capabilityoption.md)
+- [object CapabilityOption](./capabilityoption.md)
   An option within a capability setting.
-- [object CapabilitySetting](capabilitysetting.md)
+- [object CapabilitySetting](./capabilitysetting.md)
   An object that represents a capability setting for an app.
-- [type CapabilityType](capabilitytype.md)
+- [type CapabilityType](./capabilitytype.md)
   String that represents an app’s capability type.
 
 

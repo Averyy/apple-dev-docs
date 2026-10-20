@@ -1,7 +1,8 @@
 # init(directory:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a directory share with a directory that you specify on the host.
 
@@ -12,6 +13,10 @@ Creates a directory share with a directory that you specify on the host.
 
 ```swift
 init(directory: VZSharedDirectory)
+```
+
+```objc
+- (instancetype) initWithDirectory:(VZSharedDirectory *) directory;
 ```
 
 #### Discussion

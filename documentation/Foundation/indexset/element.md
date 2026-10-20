@@ -1,7 +1,8 @@
 # IndexSet.Element
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the type that an index set holds.
 

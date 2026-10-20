@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount of memory, in byes, a resource consumes, such as for a buffer, texture, or heap.
@@ -18,6 +19,10 @@ The amount of memory, in byes, a resource consumes, such as for a buffer, textur
 
 ```swift
 var allocatedSize: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger allocatedSize;
 ```
 
 

@@ -1,7 +1,8 @@
 # allSupported
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of currently supported transport types.
 
@@ -17,29 +18,34 @@ An array of currently supported transport types.
 static var allSupported: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport] { get }
 ```
 
+```c
+NSArray<NSString *> *ASAuthorizationAllSupportedPublicKeyCredentialDescriptorTransports();
+```
+
 ## See Also
 
-- [protocol ASPublicKeyCredential](aspublickeycredential.md)
+### Request configuration
+- [protocol ASPublicKeyCredential](../../aspublickeycredential.md)
   An interface that defines the properties of the public key.
-- [class ASAuthorizationPublicKeyCredentialParameters](asauthorizationpublickeycredentialparameters.md)
+- [class ASAuthorizationPublicKeyCredentialParameters](../../asauthorizationpublickeycredentialparameters.md)
   An object that provides required parameters for the credential during registration.
-- [struct ASCOSEAlgorithmIdentifier](ascosealgorithmidentifier.md)
+- [struct ASCOSEAlgorithmIdentifier](../../ascosealgorithmidentifier.md)
   An identifier for the algorithm that a credential’s key pair uses.
-- [struct ASCOSEEllipticCurveIdentifier](ascoseellipticcurveidentifier.md)
+- [struct ASCOSEEllipticCurveIdentifier](../../ascoseellipticcurveidentifier.md)
   A structure that contains the elliptic curve identifier.
-- [struct ASAuthorizationPublicKeyCredentialAttestationKind](asauthorizationpublickeycredentialattestationkind.md)
+- [struct ASAuthorizationPublicKeyCredentialAttestationKind](../../asauthorizationpublickeycredentialattestationkind.md)
   A structure that defines the types of attestations a developer can request.
-- [struct ASAuthorizationPublicKeyCredentialResidentKeyPreference](asauthorizationpublickeycredentialresidentkeypreference.md)
+- [struct ASAuthorizationPublicKeyCredentialResidentKeyPreference](../../asauthorizationpublickeycredentialresidentkeypreference.md)
   A structure that specifies the relying party’s preference for resident key storage.
-- [struct ASAuthorizationPublicKeyCredentialUserVerificationPreference](asauthorizationpublickeycredentialuserverificationpreference.md)
+- [struct ASAuthorizationPublicKeyCredentialUserVerificationPreference](../../asauthorizationpublickeycredentialuserverificationpreference.md)
   A structure that defines the relying party’s user verification preference.
-- [protocol ASAuthorizationPublicKeyCredentialDescriptor](asauthorizationpublickeycredentialdescriptor.md)
+- [protocol ASAuthorizationPublicKeyCredentialDescriptor](../../asauthorizationpublickeycredentialdescriptor.md)
   An interface that defines the credential identifier.
-- [class ASAuthorizationPlatformPublicKeyCredentialDescriptor](asauthorizationplatformpublickeycredentialdescriptor.md)
+- [class ASAuthorizationPlatformPublicKeyCredentialDescriptor](../../asauthorizationplatformpublickeycredentialdescriptor.md)
   An object that holds the credential.
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor](asauthorizationsecuritykeypublickeycredentialdescriptor.md)
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor](../../asauthorizationsecuritykeypublickeycredentialdescriptor.md)
   An object that holds public key credential transport information.
-- [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](../transport.md)
   A structure that defines the security key credential transport type.
 
 

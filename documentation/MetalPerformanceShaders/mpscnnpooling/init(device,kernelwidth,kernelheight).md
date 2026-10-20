@@ -1,7 +1,8 @@
 # init(device:kernelWidth:kernelHeight:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a pooling filter.
 
@@ -19,21 +20,30 @@ Initializes a pooling filter.
 convenience init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight;
+```
+
 #### Return Value
 
-A valid [`MPSCNNPooling`](mpscnnpooling.md) object or `nil`, if failure.
+A valid [`MPSCNNPooling`](../mpscnnpooling.md) object or `nil`, if failure.
 
 ## Parameters
 
 - `device`: The device the kernel will run on.
-- `kernelWidth`: The width of the kernel. This value can be odd or even.
-- `kernelHeight`: The height of the kernel. This value can be odd or even.
+- `kernelWidth`: The width of the kernel.
+
+  This value can be odd or even.
+- `kernelHeight`: The height of the kernel.
+
+  This value can be odd or even.
 
 ## See Also
 
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpooling/init(coder:device:).md)
+### Instance Methods
+- [init?(coder: NSCoder, device: any MTLDevice)](./init%28coder,device%29.md)
   Initializes a pooling filter.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpooling/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](./init%28device,kernelwidth,kernelheight,strideinpixelsx,strideinpixelsy%29.md)
   Initializes a pooling filter.
 
 

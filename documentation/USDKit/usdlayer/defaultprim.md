@@ -1,7 +1,8 @@
 # defaultPrim
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the layer’s default prim — the prim referenced when this layer is included as a reference or payload without specifying a target. `nil` if not authored.
 
@@ -21,9 +22,10 @@ var defaultPrim: USDToken? { get nonmutating set }
 
 ## See Also
 
-- [var subLayerPaths: [USDLayer.AssetPath]](usdlayer/sublayerpaths.md)
+### Composing the scene
+- [var subLayerPaths: [USDLayer.AssetPath]](./sublayerpaths.md)
   The asset paths of the layer’s sublayers, ordered from strongest to weakest opinion.
-- [USDLayer.AssetPath](usdlayer/assetpath.md)
+- [USDLayer.AssetPath](./assetpath.md)
   A reference to an external asset such as a texture, audio file, or USD layer.
 
 

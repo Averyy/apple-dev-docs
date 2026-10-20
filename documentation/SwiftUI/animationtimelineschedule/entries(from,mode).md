@@ -1,7 +1,8 @@
 # entries(from:mode:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns entries at the frequency of the animation schedule.
 

@@ -1,7 +1,8 @@
 # azimuth
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base angle of the ink.
 
@@ -16,6 +17,10 @@ The base angle of the ink.
 
 ```swift
 var azimuth: CGFloat { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGFloat azimuth;
 ```
 
 

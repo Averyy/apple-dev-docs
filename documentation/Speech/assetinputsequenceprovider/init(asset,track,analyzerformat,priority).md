@@ -1,7 +1,8 @@
 # init(asset:track:analyzerFormat:priority:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an input sequence provider.
 
@@ -28,9 +29,10 @@ init(asset: AVAsset, track: AVAssetTrack, analyzerFormat: AVAudioFormat, priorit
 
 ## See Also
 
-- [static func provider(from: AVAsset, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> AssetInputSequenceProvider](assetinputsequenceprovider/provider(from:compatiblewith:priority:).md)
+### Creating a provider
+- [static func provider(from: AVAsset, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> AssetInputSequenceProvider](./provider%28from,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from the first track of an asset or file.
-- [static func provider(from: AVAsset, track: AVAssetTrack, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> AssetInputSequenceProvider](assetinputsequenceprovider/provider(from:track:compatiblewith:priority:).md)
+- [static func provider(from: AVAsset, track: AVAssetTrack, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> AssetInputSequenceProvider](./provider%28from,track,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from a track of an asset.
 
 

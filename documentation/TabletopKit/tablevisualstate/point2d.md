@@ -1,7 +1,8 @@
 # TableVisualState.Point2D
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a point on the XZ plane.
 
@@ -17,34 +18,35 @@ struct Point2D
 ## Topics
 
 ### Creating 2D point states
-- [init()](tablevisualstate/point2d/init.md)
-- [init(projecting: Point3D)](tablevisualstate/point2d/init(projecting:).md)
+- [init()](./point2d/init%28%29.md)
+- [init(projecting: Point3D)](./point2d/init%28projecting%29.md)
   Initializes this point as the projection of the given 3D point on the XZ plane
-- [init(x: Double, z: Double)](tablevisualstate/point2d/init(x:z:).md)
+- [init(x: Double, z: Double)](./point2d/init%28x,z%29.md)
 ### Getting 2D point properties
-- [var x: Double](tablevisualstate/point2d/x.md)
-- [var z: Double](tablevisualstate/point2d/z.md)
-- [static let zero: TableVisualState.Point2D](tablevisualstate/point2d/zero.md)
+- [var x: Double](./point2d/x.md)
+- [var z: Double](./point2d/z.md)
+- [static let zero: TableVisualState.Point2D](./point2d/zero.md)
 ### Default Implementations
-- [Decodable Implementations](tablevisualstate/point2d/decodable-implementations.md)
-- [Encodable Implementations](tablevisualstate/point2d/encodable-implementations.md)
+- [Decodable Implementations](./point2d/decodable-implementations.md)
+- [Encodable Implementations](./point2d/encodable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TableVisualState.Pose2D](tablevisualstate/pose2d.md)
+### Representing 2D states
+- [TableVisualState.Pose2D](./pose2d.md)
   An object that represents a 2D position and orientation on the XZ plane.
 
 

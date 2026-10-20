@@ -1,9 +1,10 @@
 # sections
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The sections computed from the current results, grouped by [`sectionBy`](resultsobserver/sectionby.md).
+The sections computed from the current results, grouped by [`sectionBy`](./sectionby.md).
 
 **Availability**:
 - iOS 27.0+
@@ -22,21 +23,22 @@ final var sections: SectionedResults<Element, SectionTitle>? { get set }
 
 #### Discussion
 
-Returns `nil` if this observer was created without a `sectionBy` key path (i.e. `SectionTitle == Never`). When sectioning is enabled, returns a [`SectionedResults`](sectionedresults.md) of sections ordered by their first appearance in the sorted results.
+Returns `nil` if this observer was created without a `sectionBy` key path (i.e. `SectionTitle == Never`). When sectioning is enabled, returns a [`SectionedResults`](../sectionedresults.md) of sections ordered by their first appearance in the sorted results.
 
-The `sectionBy` key path is automatically prepended as the first sort descriptor at initialization, and re-prepended if [`sortBy`](resultsobserver/sortby.md) is mutated, ensuring results are always contiguous within each section.
+The `sectionBy` key path is automatically prepended as the first sort descriptor at initialization, and re-prepended if [`sortBy`](./sortby.md) is mutated, ensuring results are always contiguous within each section.
 
 ## See Also
 
-- [var fetchDescriptor: FetchDescriptor<Element>](resultsobserver/fetchdescriptor.md)
+### Accessing observer properties
+- [var fetchDescriptor: FetchDescriptor<Element>](./fetchdescriptor.md)
   The fetch descriptor used to query the model context.
-- [var filterBy: Predicate<Element>?](resultsobserver/filterby.md)
+- [var filterBy: Predicate<Element>?](./filterby.md)
   The predicate used to filter which models are included in the results.
-- [let modelContext: ModelContext](resultsobserver/modelcontext.md)
+- [let modelContext: ModelContext](./modelcontext.md)
   The model context from which models are fetched.
-- [var sortBy: [SortDescriptor<Element>]](resultsobserver/sortby.md)
+- [var sortBy: [SortDescriptor<Element>]](./sortby.md)
   The sort descriptors used to order the results.
-- [var sectionBy: PartialKeyPath<Element>?](resultsobserver/sectionby.md)
+- [var sectionBy: PartialKeyPath<Element>?](./sectionby.md)
   The key path on the element used to determine section grouping.
 
 

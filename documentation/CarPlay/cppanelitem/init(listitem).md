@@ -1,7 +1,8 @@
 # init(listItem:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the item using a list item.
 
@@ -16,13 +17,17 @@ Initialize the item using a list item.
 init(listItem: CPListItem)
 ```
 
+```objc
+- (instancetype) initWithListItem:(CPListItem *) listItem;
+```
+
 #### Return Value
 
 A panel item configured with the specified list item.
 
 ## Parameters
 
-- `listItem`: The list item with the information to display. The [`CPListItem`](cplistitem.md) type supports primary and secondary text and images.
+- `listItem`: The list item with the information to display. The [`CPListItem`](../cplistitem.md) type supports primary and secondary text and images.
 
 
 ---

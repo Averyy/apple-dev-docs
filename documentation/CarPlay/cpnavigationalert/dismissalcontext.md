@@ -1,7 +1,8 @@
 # CPNavigationAlert.DismissalContext
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A set of reasons for dismissing a navigation alert.
 
@@ -16,37 +17,42 @@ A set of reasons for dismissing a navigation alert.
 enum DismissalContext
 ```
 
+```c
+enum CPNavigationAlertDismissalContext : NSUInteger;
+```
+
 ## Topics
 
 ### Dismissal Reasons
-- [CPNavigationAlert.DismissalContext.timeout](cpnavigationalert/dismissalcontext/timeout.md)
+- [CPNavigationAlert.DismissalContext.timeout](./dismissalcontext/timeout.md)
   The system dismissed the navigation alert due to a timeout.
-- [CPNavigationAlert.DismissalContext.systemDismissed](cpnavigationalert/dismissalcontext/systemdismissed.md)
+- [CPNavigationAlert.DismissalContext.systemDismissed](./dismissalcontext/systemdismissed.md)
   The system dismissed the navigation alert.
-- [CPNavigationAlert.DismissalContext.userDismissed](cpnavigationalert/dismissalcontext/userdismissed.md)
+- [CPNavigationAlert.DismissalContext.userDismissed](./dismissalcontext/userdismissed.md)
   The user dismissed the navigation alert.
 ### Initializers
-- [init?(rawValue: UInt)](cpnavigationalert/dismissalcontext/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./dismissalcontext/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func mapTemplate(CPMapTemplate, willShow: CPNavigationAlert)](cpmaptemplatedelegate/maptemplate(_:willshow:).md)
+### Handling Navigation Alerts
+- [func mapTemplate(CPMapTemplate, willShow: CPNavigationAlert)](../cpmaptemplatedelegate/maptemplate%28_,willshow%29.md)
   Tells the delegate that the system will show the navigation alert.
-- [func mapTemplate(CPMapTemplate, didShow: CPNavigationAlert)](cpmaptemplatedelegate/maptemplate(_:didshow:).md)
+- [func mapTemplate(CPMapTemplate, didShow: CPNavigationAlert)](../cpmaptemplatedelegate/maptemplate%28_,didshow%29.md)
   Tells the delegate that the system showed the navigation alert.
-- [func mapTemplate(CPMapTemplate, willDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](cpmaptemplatedelegate/maptemplate(_:willdismiss:dismissalcontext:).md)
+- [func mapTemplate(CPMapTemplate, willDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](../cpmaptemplatedelegate/maptemplate%28_,willdismiss,dismissalcontext%29.md)
   Tells the delegate that the system is preparing to dismiss the navigation alert.
-- [func mapTemplate(CPMapTemplate, didDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](cpmaptemplatedelegate/maptemplate(_:diddismiss:dismissalcontext:).md)
+- [func mapTemplate(CPMapTemplate, didDismiss: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)](../cpmaptemplatedelegate/maptemplate%28_,diddismiss,dismissalcontext%29.md)
   Tells the delegate that the system dismissed the navigation alert.
 
 

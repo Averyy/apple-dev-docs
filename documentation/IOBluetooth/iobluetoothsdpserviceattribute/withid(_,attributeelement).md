@@ -1,17 +1,22 @@
 # withID(_:attributeElement:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new service attribute with the given ID and data element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withID(_ newAttributeID: BluetoothSDPServiceAttributeID, attributeElement: IOBluetoothSDPDataElement!) -> Self!
+```
+
+```objc
++ (instancetype) withID:(BluetoothSDPServiceAttributeID) newAttributeID attributeElement:(IOBluetoothSDPDataElement *) attributeElement;
 ```
 
 #### Return Value

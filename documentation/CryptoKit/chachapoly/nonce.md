@@ -1,7 +1,8 @@
 # ChaChaPoly.Nonce
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value used once during a cryptographic operation and then discarded.
 
@@ -27,29 +28,29 @@ Don’t reuse the same nonce for multiple calls to encryption APIs. It’s criti
 ## Topics
 
 ### Creating a nonce
-- [init()](chachapoly/nonce/init.md)
+- [init()](./nonce/init%28%29.md)
   Creates a new random nonce.
-- [init<D>(data: D) throws](chachapoly/nonce/init(data:).md)
+- [init<D>(data: D) throws](./nonce/init%28data%29.md)
   Creates a nonce from the given data.
 ### Iterating over a nonce’s bytes
-- [func makeIterator() -> Array<UInt8>.Iterator](chachapoly/nonce/makeiterator.md)
+- [func makeIterator() -> Array<UInt8>.Iterator](./nonce/makeiterator%28%29.md)
   Returns an iterator over the elements of the nonce.
 ### Initializers
-- [init(copying: RawSpan) throws](chachapoly/nonce/init(copying:).md)
+- [init(copying: RawSpan) throws](./nonce/init%28copying%29.md)
   Creates a nonce from the given data.
 ### Instance Properties
-- [var bytes: RawSpan](chachapoly/nonce/bytes.md)
+- [var bytes: RawSpan](./nonce/bytes.md)
   The bytes stored in the nonce.
-- [var count: Int](chachapoly/nonce/count.md)
+- [var count: Int](./nonce/count.md)
   The number of bytes stored in the nonce.
 
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [ContiguousBytes](../../Foundation/contiguousbytes.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

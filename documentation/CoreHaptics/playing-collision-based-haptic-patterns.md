@@ -1,6 +1,8 @@
 # Playing Collision-Based Haptic Patterns
 
-**Framework**: Core Haptics
+**Framework**: Core Haptics  
+**Role**: Sample Code  
+**Download**: [PlayingCollisionBasedHapticPatterns.zip](https://docs-assets.developer.apple.com/published/fd8a00b4273b/PlayingCollisionBasedHapticPatterns.zip)
 
 Play a custom haptic pattern whose strength depends on an object’s collision speed.
 
@@ -20,7 +22,7 @@ Although the sample app uses UIKit Dynamics and UIKit for simplicity and familia
 
 ##### Configure the App to Play Haptics
 
-Check for device compatibility and set up an instance of [`CHHapticEngine`](chhapticengine.md), as the sample demonstrates when you launch the app.
+Check for device compatibility and set up an instance of [`CHHapticEngine`](./chhapticengine.md), as the sample demonstrates when you launch the app.
 
 ```swift
 // Create and configure a haptic engine.
@@ -31,11 +33,11 @@ do {
 }
 ```
 
-See [`Preparing your app to play haptics`](preparing-your-app-to-play-haptics.md) for more information about setting up the engine.
+See [Preparing your app to play haptics](./preparing-your-app-to-play-haptics.md) for more information about setting up the engine.
 
-##### Define the Objects in Uikit Dynamics
+##### Define the Objects in UIKit Dynamics
 
-Express the walls as boundaries in a [`UICollisionBehavior`](https://developer.apple.com/documentation/uikit/uicollisionbehavior) with the sphere.
+Express the walls as boundaries in a [`UICollisionBehavior`](../UIKit/uicollisionbehavior.md) with the sphere.
 
 ```swift
 wallCollisions = UICollisionBehavior(items: [sphereView])
@@ -70,7 +72,7 @@ wallCollisions.addBoundary(withIdentifier: NSString("bottomWall"),
                            to: lowerLeft)
 ```
 
-Each bounce against the wall is a dynamic item behavior, which lets you tweak the elasticity to match the haptic effect. An animator of class [`UIDynamicAnimator`](https://developer.apple.com/documentation/uikit/uidynamicanimator) ties together all of these dynamic objects with gravity.
+Each bounce against the wall is a dynamic item behavior, which lets you tweak the elasticity to match the haptic effect. An animator of class [`UIDynamicAnimator`](../UIKit/uidynamicanimator.md) ties together all of these dynamic objects with gravity.
 
 ```swift
 animator = UIDynamicAnimator(referenceView: view)
@@ -106,7 +108,7 @@ manager.startDeviceMotionUpdates(to: motionQueue) { deviceMotion, error in
 
 ##### Play Variable Haptic Patterns on Collision
 
-When the sphere collides with a wall, the dynamics framework sends a callback to its delegate. `ViewController` implements this delegate, [`UICollisionBehaviorDelegate`](https://developer.apple.com/documentation/uikit/uicollisionbehaviordelegate), to respond to collisions.
+When the sphere collides with a wall, the dynamics framework sends a callback to its delegate. `ViewController` implements this delegate, [`UICollisionBehaviorDelegate`](../UIKit/uicollisionbehaviordelegate.md), to respond to collisions.
 
 To vary the haptic at the point of collision, check the sphere’s velocity and map it to a normalized (0 to 1) intensity and sharpness value, as follows:
 
@@ -140,7 +142,7 @@ Starting the player plays the haptic.
 try hapticPlayer?.start(atTime: CHHapticTimeImmediate)
 ```
 
-##### Synthesize Audio to Play with the Haptic
+##### Synthesize Audio to Play With the Haptic
 
 In addition to playing haptic patterns, the haptic engine also synthesizes audio. The engine in HapticBounce plays this audio by adding an audio event to the same haptic player as the haptic event, as follows:
 
@@ -159,17 +161,18 @@ Instead of adjusting haptic intensity and sharpness based on the sphere’s velo
 
 ## See Also
 
-- [Delivering Rich App Experiences with Haptics](delivering-rich-app-experiences-with-haptics.md)
+### Programmatic haptics
+- [Delivering Rich App Experiences with Haptics](./delivering-rich-app-experiences-with-haptics.md)
   Enhance your app’s experience by incorporating haptic and sound feedback into key interactive moments.
-- [Updating Continuous and Transient Haptic Parameters in Real Time](updating-continuous-and-transient-haptic-parameters-in-real-time.md)
+- [Updating Continuous and Transient Haptic Parameters in Real Time](./updating-continuous-and-transient-haptic-parameters-in-real-time.md)
   Generate continuous and transient haptic patterns in response to user touch.
-- [class CHHapticEvent](chhapticevent.md)
+- [class CHHapticEvent](./chhapticevent.md)
   An object that describes a single haptic or audio event.
-- [class CHHapticEventParameter](chhapticeventparameter.md)
+- [class CHHapticEventParameter](./chhapticeventparameter.md)
   A static parameter value that represents a single property of the haptic pattern.
-- [class CHHapticDynamicParameter](chhapticdynamicparameter.md)
+- [class CHHapticDynamicParameter](./chhapticdynamicparameter.md)
   A value that you send to a haptic pattern player to alter a property value during playback.
-- [class CHHapticParameterCurve](chhapticparametercurve.md)
+- [class CHHapticParameterCurve](./chhapticparametercurve.md)
   A curve that you send to a haptic pattern player to alter a property value gradually during playback.
 
 

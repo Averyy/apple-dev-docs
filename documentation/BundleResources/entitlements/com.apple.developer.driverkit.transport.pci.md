@@ -1,16 +1,18 @@
 # com.apple.developer.driverkit.transport.pci
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 An array of PCI device descriptors that your custom driver supports.
 
 **Availability**:
 - macOS 10.15.4+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `com.apple.developer.driverkit.transport.pci`
+- **Type**: array of dictionary 
 
 #### Discussion
 
@@ -31,30 +33,31 @@ Examples:
 ## Topics
 
 ### Identifying PCI Devices
-- [IOPCIMatch](entitlements/com.apple.developer.driverkit.transport.pci/iopcimatch.md)
+- [IOPCIMatch](./com.apple.developer.driverkit.transport.pci/iopcimatch.md)
   A key to match PCI devices by vendor and device ID registers or subsystem registers.
-- [IOPCIPrimaryMatch](entitlements/com.apple.developer.driverkit.transport.pci/iopciprimarymatch.md)
+- [IOPCIPrimaryMatch](./com.apple.developer.driverkit.transport.pci/iopciprimarymatch.md)
   A key to match PCI devices by vendor and device ID registers.
-- [IOPCISecondaryMatch](entitlements/com.apple.developer.driverkit.transport.pci/iopcisecondarymatch.md)
+- [IOPCISecondaryMatch](./com.apple.developer.driverkit.transport.pci/iopcisecondarymatch.md)
   A key to match PCI devices by subsystem vendor ID and device ID registers.
-- [IOPCIClassMatch](entitlements/com.apple.developer.driverkit.transport.pci/iopciclassmatch.md)
+- [IOPCIClassMatch](./com.apple.developer.driverkit.transport.pci/iopciclassmatch.md)
   A key to match PCI devices by class code register.
 
 ## See Also
 
-- [DriverKit Audio Family](entitlements/com.apple.developer.driverkit.family.audio.md)
+### DriverKit family entitlements
+- [DriverKit Audio Family](./com.apple.developer.driverkit.family.audio.md)
   A Boolean value that indicates whether the device supports audio functionality.
-- [com.apple.developer.driverkit.family.block-storage-device](entitlements/com.apple.developer.driverkit.family.block-storage-device.md)
+- [com.apple.developer.driverkit.family.block-storage-device](./com.apple.developer.driverkit.family.block-storage-device.md)
   A Boolean value that indicates whether to match the driver against block storage devices that use custom drivers.
-- [com.apple.developer.driverkit.family.midi](entitlements/com.apple.developer.driverkit.family.midi.md)
+- [com.apple.developer.driverkit.family.midi](./com.apple.developer.driverkit.family.midi.md)
   A Boolean value that indicates whether to match the driver against devices that support MIDI.
-- [com.apple.developer.driverkit.family.networking](entitlements/com.apple.developer.driverkit.family.networking.md)
+- [com.apple.developer.driverkit.family.networking](./com.apple.developer.driverkit.family.networking.md)
   A Boolean value that indicates whether to match the driver against devices that communicate using networking protocols.
-- [com.apple.developer.driverkit.family.scsicontroller](entitlements/com.apple.developer.driverkit.family.scsicontroller.md)
+- [com.apple.developer.driverkit.family.scsicontroller](./com.apple.developer.driverkit.family.scsicontroller.md)
   A Boolean value that indicates whether to match the driver against devices with SCSI controllers.
-- [com.apple.developer.driverkit.family.serial](entitlements/com.apple.developer.driverkit.family.serial.md)
+- [com.apple.developer.driverkit.family.serial](./com.apple.developer.driverkit.family.serial.md)
   A Boolean value that indicates whether to match the driver against devices with serial communication interfaces.
-- [com.apple.developer.driverkit.transport.usb](entitlements/com.apple.developer.driverkit.transport.usb.md)
+- [com.apple.developer.driverkit.transport.usb](./com.apple.developer.driverkit.transport.usb.md)
   An array of dictionaries that identify the USB devices the driver supports.
 
 

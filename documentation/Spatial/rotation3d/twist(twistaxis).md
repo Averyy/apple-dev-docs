@@ -1,7 +1,8 @@
 # twist(twistAxis:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the twist component of the rotation’s swing-twist decomposition for a given twist axis.
 
@@ -20,6 +21,10 @@ Returns the twist component of the rotation’s swing-twist decomposition for a 
 func twist(twistAxis: RotationAxis3D) -> Rotation3D
 ```
 
+```c
+static SPRotation3D SPRotation3DTwist(SPRotation3D rotation, SPRotationAxis3D twistAxis);
+```
+
 #### Return Value
 
 The twist component of the rotation’s swing-twist decomposition for a given twist axis.
@@ -30,11 +35,12 @@ The twist component of the rotation’s swing-twist decomposition for a given tw
 
 ## See Also
 
-- [func swing(twistAxis: RotationAxis3D) -> Rotation3D](rotation3d/swing(twistaxis:).md)
+### Decomposing a 3D rotation structure
+- [func swing(twistAxis: RotationAxis3D) -> Rotation3D](./swing%28twistaxis%29.md)
   Returns the swing component of the rotation’s swing-twist decomposition for a given twist axis.
-- [func swingTwist(twistAxis: RotationAxis3D) -> (swing: Rotation3D, twist: Rotation3D)](rotation3d/swingtwist(twistaxis:).md)
+- [func swingTwist(twistAxis: RotationAxis3D) -> (swing: Rotation3D, twist: Rotation3D)](./swingtwist%28twistaxis%29.md)
   Returns the rotation’s swing-twist decomposition for a given twist axis.
-- [func swing(twistAxis: RotationAxis3D) -> Rotation3D](rotation3d/swing(twistaxis:).md)
+- [func swing(twistAxis: RotationAxis3D) -> Rotation3D](./swing%28twistaxis%29.md)
   Returns the swing component of the rotation’s swing-twist decomposition for a given twist axis.
 
 

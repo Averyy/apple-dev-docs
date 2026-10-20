@@ -1,7 +1,8 @@
 # HIShapeCreateCopy(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateCopy(_ inShape: HIShape!) -> Unmanaged<HIShape>!
+```
+
+```c
+HIShapeRef HIShapeCreateCopy(HIShapeRef inShape);
 ```
 
 

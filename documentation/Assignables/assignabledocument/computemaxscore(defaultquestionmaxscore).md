@@ -1,7 +1,8 @@
 # computeMaxScore(defaultQuestionMaxScore:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the maximum possible score for this `AssignableDocument` as defined by each individual question’s `maxScore`.
 
@@ -9,7 +10,7 @@ Computes the maximum possible score for this `AssignableDocument` as defined by 
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

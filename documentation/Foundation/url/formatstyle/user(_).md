@@ -1,7 +1,8 @@
 # user(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies a format style to display a URL’s user component in accordance with the provided option.
 
@@ -22,7 +23,7 @@ func user(_ strategy: URL.FormatStyle.ComponentDisplayOption = .never) -> URL.Fo
 
 #### Return Value
 
-A modified [`URL.FormatStyle`](url/formatstyle.md) that incorporates the specified behavior.
+A modified [`URL.FormatStyle`](../formatstyle.md) that incorporates the specified behavior.
 
 ## Parameters
 
@@ -30,23 +31,24 @@ A modified [`URL.FormatStyle`](url/formatstyle.md) that incorporates the specifi
 
 ## See Also
 
-- [func scheme(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/scheme(_:).md)
+### Customizing style behavior
+- [func scheme(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./scheme%28_%29.md)
   Modifies a format style to display a URL’s scheme component in accordance with the provided option.
-- [func password(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/password(_:).md)
+- [func password(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./password%28_%29.md)
   Modifies a format style to display a URL’s password component in accordance with the provided option.
-- [func host(URL.FormatStyle.HostDisplayOption) -> URL.FormatStyle](url/formatstyle/host(_:).md)
+- [func host(URL.FormatStyle.HostDisplayOption) -> URL.FormatStyle](./host%28_%29.md)
   Modifies a format style to display a URL’s host component in accordance with the provided option.
-- [URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption.md)
+- [URL.FormatStyle.HostDisplayOption](./hostdisplayoption.md)
   A type that indicates whether a formatted URL should include the host component.
-- [func port(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/port(_:).md)
+- [func port(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./port%28_%29.md)
   Modifies a format style to display a URL’s port component in accordance with the provided option.
-- [func path(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/path(_:).md)
+- [func path(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./path%28_%29.md)
   Modifies a format style to display a URL’s path component in accordance with the provided option.
-- [func query(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/query(_:).md)
+- [func query(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./query%28_%29.md)
   Modifies a format style to display a URL’s query component in accordance with the provided option.
-- [func fragment(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/fragment(_:).md)
+- [func fragment(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](./fragment%28_%29.md)
   Modifies a format style to display a URL’s fragment component in accordance with the provided option.
-- [URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption.md)
+- [URL.FormatStyle.ComponentDisplayOption](./componentdisplayoption.md)
   A type that indicates whether a formatted URL should include a component.
 
 

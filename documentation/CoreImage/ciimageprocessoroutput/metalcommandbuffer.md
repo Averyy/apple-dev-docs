@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns a Metal command buffer object that can be used for encoding commands.
@@ -20,13 +21,18 @@ Returns a Metal command buffer object that can be used for encoding commands.
 var metalCommandBuffer: (any MTLCommandBuffer)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<MTLCommandBuffer> metalCommandBuffer;
+```
+
 ## See Also
 
-- [var region: CGRect](ciimageprocessoroutput/region.md)
+### Getting Supplemental Information for Image Processing
+- [var region: CGRect](./region.md)
   The rectangular region of the output image that your Core Image Processor Kernel must provide.
-- [var bytesPerRow: Int](ciimageprocessoroutput/bytesperrow.md)
+- [var bytesPerRow: Int](./bytesperrow.md)
   The bytes per row of the CPU memory that your Core Image Processor Kernel can write pixels to.
-- [var format: CIFormat](ciimageprocessoroutput/format.md)
+- [var format: CIFormat](./format.md)
   The pixel format of the CPU memory that your Core Image Processor Kernel can write pixels to.
 
 

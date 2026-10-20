@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared context menu system.
 
@@ -16,6 +17,10 @@ The shared context menu system.
 
 ```swift
 class var shared: UIContextMenuSystem { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UIContextMenuSystem * sharedSystem;
 ```
 
 

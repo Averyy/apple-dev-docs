@@ -1,7 +1,8 @@
 # errSecUnknownQualifiedCertStatement
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unknown qualified certificate statement was detected.
 
@@ -18,6 +19,10 @@ An unknown qualified certificate statement was detected.
 
 ```swift
 var errSecUnknownQualifiedCertStatement: OSStatus { get }
+```
+
+```c
+errSecUnknownQualifiedCertStatement
 ```
 
 

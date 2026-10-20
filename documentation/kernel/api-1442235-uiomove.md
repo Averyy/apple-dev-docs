@@ -1,14 +1,15 @@
 # uiomove
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int uiomove(const char *cp, int n, struct uio *uio);
 ```
 

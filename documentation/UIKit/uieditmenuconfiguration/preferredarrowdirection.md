@@ -1,7 +1,8 @@
 # preferredArrowDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred direction the arrow of the edit menu is pointing.
 
@@ -17,15 +18,20 @@ The preferred direction the arrow of the edit menu is pointing.
 var preferredArrowDirection: UIEditMenuArrowDirection { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIEditMenuArrowDirection preferredArrowDirection;
+```
+
 #### Discussion
 
-The default, [`UIEditMenuArrowDirection.automatic`](uieditmenuarrowdirection/automatic.md), is an arrow pointing up or down at the object of focus, based on its location in the screen.
+The default, [`UIEditMenuArrowDirection.automatic`](../uieditmenuarrowdirection/automatic.md), is an arrow pointing up or down at the object of focus, based on its location in the screen.
 
 ## See Also
 
-- [enum UIEditMenuArrowDirection](uieditmenuarrowdirection.md)
+### Configuring the menu
+- [enum UIEditMenuArrowDirection](../uieditmenuarrowdirection.md)
   Constants that describe the direction the arrow of the edit menu is pointing.
-- [var sourcePoint: CGPoint](uieditmenuconfiguration/sourcepoint.md)
+- [var sourcePoint: CGPoint](./sourcepoint.md)
   The source location of the interaction.
 
 

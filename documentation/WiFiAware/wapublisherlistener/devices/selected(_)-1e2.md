@@ -1,7 +1,8 @@
 # selected(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Includes only the preselected paired devices in the provided list.
 
@@ -26,9 +27,10 @@ A new `Devices` including the selected devices.
 
 ## See Also
 
-- [static func selected(WAPairedDevice.Devices) -> WAPublisherListener.Devices](wapublisherlistener/devices/selected(_:)-56vig.md)
+### Selecting specific devices
+- [static func selected(WAPairedDevice.Devices) -> WAPublisherListener.Devices](./selected%28_%29-56vig.md)
   Includes only the preselected paired devices in the provided dictionary.
-- [static let userSpecifiedDevices: WAPublisherListener.Devices](wapublisherlistener/devices/userspecifieddevices.md)
+- [static let userSpecifiedDevices: WAPublisherListener.Devices](./userspecifieddevices.md)
   Includes only new devices the user pairs via DeviceDiscoveryUI’s `DevicePairingView()`.
 
 

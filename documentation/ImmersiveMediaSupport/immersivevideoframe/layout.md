@@ -1,7 +1,8 @@
 # layout
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Video layout associated with the video frame pixel buffers.
 

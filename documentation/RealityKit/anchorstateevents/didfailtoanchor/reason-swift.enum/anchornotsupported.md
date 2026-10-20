@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidFailToAnchor.Reason.anchorNotSupported
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 anchor fails because the anchor type is not supported by the hardware configuration
 

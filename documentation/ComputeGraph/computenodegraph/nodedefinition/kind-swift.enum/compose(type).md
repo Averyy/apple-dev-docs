@@ -1,7 +1,8 @@
 # ComputeNodeGraph.NodeDefinition.Kind.compose(type:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A node which composes a structure or vector type from its components
 
@@ -12,7 +13,7 @@ A node which composes a structure or vector type from its components
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

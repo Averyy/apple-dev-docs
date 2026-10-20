@@ -1,7 +1,8 @@
 # Gradient.ColorSpace
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A method of interpolating between the colors in a gradient.
 
@@ -23,22 +24,23 @@ struct ColorSpace
 ## Topics
 
 ### Getting an interpolation method
-- [static let device: Gradient.ColorSpace](gradient/colorspace/device.md)
+- [static let device: Gradient.ColorSpace](./colorspace/device.md)
   Interpolates gradient colors in the output color space.
-- [static let perceptual: Gradient.ColorSpace](gradient/colorspace/perceptual.md)
+- [static let perceptual: Gradient.ColorSpace](./colorspace/perceptual.md)
   Interpolates gradient colors in a perceptual color space.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func colorSpace(Gradient.ColorSpace) -> AnyGradient](gradient/colorspace(_:).md)
+### Working with color spaces
+- [func colorSpace(Gradient.ColorSpace) -> AnyGradient](./colorspace%28_%29.md)
   Returns a version of the gradient that will use a specified color space for interpolating between its colors.
 
 

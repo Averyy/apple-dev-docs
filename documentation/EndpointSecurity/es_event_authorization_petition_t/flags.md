@@ -1,16 +1,21 @@
 # flags
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var flags: UInt32
+```
+
+```c
+uint32_t flags;
 ```
 
 

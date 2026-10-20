@@ -1,7 +1,8 @@
 # MTLResourceViewPool
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Contains views over resources of a specific type, and allows you to manage those views.
 
@@ -19,35 +20,40 @@ Contains views over resources of a specific type, and allows you to manage those
 protocol MTLResourceViewPool : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLResourceViewPool <NSObject>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var baseResourceID: MTLResourceID](mtlresourceviewpool/baseresourceid.md)
+- [var baseResourceID: MTLResourceID](./mtlresourceviewpool/baseresourceid.md)
   Obtains the resource ID corresponding to the resource view at index 0 in this resource view pool.
-- [var device: any MTLDevice](mtlresourceviewpool/device.md)
+- [var device: any MTLDevice](./mtlresourceviewpool/device.md)
   Obtains a reference to the GPU device this pool belongs to.
-- [var label: String?](mtlresourceviewpool/label.md)
+- [var label: String?](./mtlresourceviewpool/label.md)
   Queries the optional debug label of this resource view pool.
-- [var resourceViewCount: Int](mtlresourceviewpool/resourceviewcount.md)
+- [var resourceViewCount: Int](./mtlresourceviewpool/resourceviewcount.md)
   Queries the number of resource views that this pool contains.
 ### Instance Methods
-- [func copyResourceViews(sourcePool: any MTLResourceViewPool, sourceRange: Range<Int>, destinationIndex: Int) -> MTLResourceID](mtlresourceviewpool/copyresourceviews(sourcepool:sourcerange:destinationindex:).md)
+- [func copyResourceViews(sourcePool: any MTLResourceViewPool, sourceRange: Range<Int>, destinationIndex: Int) -> MTLResourceID](./mtlresourceviewpool/copyresourceviews%28sourcepool,sourcerange,destinationindex%29.md)
   Copies a range of resource views from a source view pool to a destination location in this view pool.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [MTLTextureViewPool](mtltextureviewpool.md)
+- [MTLTextureViewPool](./mtltextureviewpool.md)
 
 ## See Also
 
-- [class MTLResourceViewPoolDescriptor](mtlresourceviewpooldescriptor.md)
+### View pools
+- [class MTLResourceViewPoolDescriptor](./mtlresourceviewpooldescriptor.md)
   Provides parameters for creating a resource view pool.
-- [protocol MTLTextureViewPool](mtltextureviewpool.md)
+- [protocol MTLTextureViewPool](./mtltextureviewpool.md)
   A pool of lightweight texture views.
-- [class MTLTextureViewDescriptor](mtltextureviewdescriptor.md)
+- [class MTLTextureViewDescriptor](./mtltextureviewdescriptor.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # sourceDomain
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source of a web ad.
 
@@ -16,19 +17,24 @@ The source of a web ad.
 var sourceDomain: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * sourceDomain;
+```
+
 #### Discussion
 
-This postback value indicates the `source_domain` of the corresponding [`AdImpressionRequest`](https://developer.apple.com/documentation/skadnetworkforwebads/adimpressionrequest).
+This postback value indicates the `source_domain` of the corresponding [`AdImpressionRequest`](../../SKAdNetworkforWebAds/adimpressionrequest.md).
 
 ## See Also
 
-- [var adNetworkIdentifier: String](skadtestpostback/adnetworkidentifier.md)
+### Getting advertisement information
+- [var adNetworkIdentifier: String](./adnetworkidentifier.md)
   A string that represents the advertising network’s unique identifier.
-- [var appStoreItemIdentifier: Int](skadtestpostback/appstoreitemidentifier.md)
+- [var appStoreItemIdentifier: Int](./appstoreitemidentifier.md)
   The item identifier of the app that this ad impression advertises.
-- [var sourceAppStoreItemIdentifier: Int](skadtestpostback/sourceappstoreitemidentifier.md)
+- [var sourceAppStoreItemIdentifier: Int](./sourceappstoreitemidentifier.md)
   The item identifier of the app that displays the ad.
-- [var sourceIdentifier: String?](skadtestpostback/sourceidentifier.md)
+- [var sourceIdentifier: String?](./sourceidentifier.md)
   A string that identifies an ad campaign.
 
 

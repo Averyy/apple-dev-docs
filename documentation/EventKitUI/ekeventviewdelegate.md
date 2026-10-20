@@ -1,7 +1,8 @@
 # EKEventViewDelegate
 
 **Framework**: EventKit UI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Delegates used to display details for calendar events.
 
@@ -17,26 +18,31 @@ Delegates used to display details for calendar events.
 protocol EKEventViewDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol EKEventViewDelegate <NSObject>
+```
+
 #### Overview
 
-Delegates of an [`EKEventViewController`](ekeventviewcontroller.md) object conform to this protocol. Notifies the event view controller’s delegate when closing the event view controller. It is your responsibility to close the event view controller and perform any additional tasks within this protocol’s method.
+Delegates of an [`EKEventViewController`](./ekeventviewcontroller.md) object conform to this protocol. Notifies the event view controller’s delegate when closing the event view controller. It is your responsibility to close the event view controller and perform any additional tasks within this protocol’s method.
 
 ## Topics
 
 ### Responding to the Interface’s Dismissal
-- [enum EKEventViewAction](ekeventviewaction.md)
+- [enum EKEventViewAction](./ekeventviewaction.md)
   Describes the action taken to close the event view controller.
-- [func eventViewController(EKEventViewController, didCompleteWith: EKEventViewAction)](ekeventviewdelegate/eventviewcontroller(_:didcompletewith:).md)
+- [func eventViewController(EKEventViewController, didCompleteWith: EKEventViewAction)](./ekeventviewdelegate/eventviewcontroller%28_,didcompletewith%29.md)
   Invoked when closing the event view controller.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any EKEventViewDelegate)?](ekeventviewcontroller/delegate.md)
+### Dismissing the Event Interface
+- [var delegate: (any EKEventViewDelegate)?](./ekeventviewcontroller/delegate.md)
   The event view controller’s delegate.
 
 

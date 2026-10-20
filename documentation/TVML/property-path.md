@@ -1,6 +1,7 @@
 # {property-path}
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Compares a value from a JSON file to a specified value to find out if they are equal.
 

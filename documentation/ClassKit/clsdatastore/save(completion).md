@@ -1,7 +1,8 @@
 # save(completion:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves any changes you’ve made in the data store.
 
@@ -15,18 +16,30 @@ Saves any changes you’ve made in the data store.
 ## Declaration
 
 ```swift
+func save(completion: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func save() async throws
+```
+
+```objc
+- (void) saveWithCompletion:(void (^)(NSError *error)) completion;
 ```
 
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](../recording-student-progress.md)
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func save() async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func save() async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 > ❗ **Important**:  ClassKit calls your completion handler on an arbitrary thread. If you need to do work on a particular thread from inside the handler, dispatch that work to the appropriate queue.
 

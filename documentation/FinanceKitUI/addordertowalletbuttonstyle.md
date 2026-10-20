@@ -1,7 +1,8 @@
 # AddOrderToWalletButtonStyle
 
 **Framework**: FinanceKitUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that determine the style of an Add Order to Apple Wallet button.
 
@@ -19,22 +20,24 @@ struct AddOrderToWalletButtonStyle
 ## Topics
 
 ### Type Properties
-- [static let black: AddOrderToWalletButtonStyle](addordertowalletbuttonstyle/black.md)
+- [static let black: AddOrderToWalletButtonStyle](./addordertowalletbuttonstyle/black.md)
   A black button with white lettering.
-- [static let blackOutline: AddOrderToWalletButtonStyle](addordertowalletbuttonstyle/blackoutline.md)
+- [static let blackOutline: AddOrderToWalletButtonStyle](./addordertowalletbuttonstyle/blackoutline.md)
   A black button with a light outline.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AddOrderToWalletButton](addordertowalletbutton.md)
+### Related Documentation
+- [struct AddOrderToWalletButton](./addordertowalletbutton.md)
   A button you use to add an order to a person’s Apple Wallet.
-- [struct AddOrderToWalletButton](addordertowalletbutton.md)
+### Adding an order to Apple Wallet
+- [struct AddOrderToWalletButton](./addordertowalletbutton.md)
   A button you use to add an order to a person’s Apple Wallet.
 
 

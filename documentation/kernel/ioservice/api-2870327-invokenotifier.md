@@ -1,14 +1,15 @@
 # invokeNotifier
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```cpp
 bool invokeNotifier(class _IOServiceNotifier *notify);
 ```
 

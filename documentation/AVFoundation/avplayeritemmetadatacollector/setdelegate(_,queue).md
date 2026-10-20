@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the delegate and a dispatch queue on which the delegate will be called.
 
@@ -20,18 +21,23 @@ Sets the delegate and a dispatch queue on which the delegate will be called.
 func setDelegate(_ delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?, queue delegateQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<AVPlayerItemMetadataCollectorPushDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
+```
+
 ## Parameters
 
-- `delegate`: An object conforming to [`AVPlayerItemMetadataCollectorPushDelegate`](avplayeritemmetadatacollectorpushdelegate.md) protocol.
+- `delegate`: An object conforming to [`AVPlayerItemMetadataCollectorPushDelegate`](../avplayeritemmetadatacollectorpushdelegate.md) protocol.
 - `delegateQueue`: A dispatch queue on which all delegate methods will be called.
 
 ## See Also
 
-- [var delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?](avplayeritemmetadatacollector/delegate.md)
+### Accessing the delegate and callback queue
+- [var delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?](./delegate.md)
   Accesses the metadata collector’s delegate object.
-- [protocol AVPlayerItemMetadataCollectorPushDelegate](avplayeritemmetadatacollectorpushdelegate.md)
+- [protocol AVPlayerItemMetadataCollectorPushDelegate](../avplayeritemmetadatacollectorpushdelegate.md)
   A protocol you implement to receive metadata callbacks from a player item metadata collector.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemmetadatacollector/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which the delegate’s methods are called.
 
 

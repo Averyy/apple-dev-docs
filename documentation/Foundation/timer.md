@@ -1,7 +1,8 @@
 # Timer
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A timer that fires after a certain time interval has elapsed, sending a specified message to a target object.
 
@@ -20,15 +21,19 @@ A timer that fires after a certain time interval has elapsed, sending a specifie
 class Timer
 ```
 
+```objc
+@interface NSTimer : NSObject
+```
+
 #### Overview
 
 Timers work in conjunction with run loops. Run loops maintain strong references to their timers, so you don’t have to maintain your own strong reference to a timer after you have added it to a run loop.
 
-To use a timer effectively, you should be aware of how run loops operate. See [`Threading Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i) for more information.
+To use a timer effectively, you should be aware of how run loops operate. See [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i) for more information.
 
-A timer is not a real-time mechanism. If a timer’s firing time occurs during a long run loop callout or while the run loop is in a mode that isn’t monitoring the timer, the timer doesn’t fire until the next time the run loop checks the timer. Therefore, the actual time at which a timer fires can be significantly later. See also [`Timer Tolerance`](timer#Timer-Tolerance.md).
+A timer is not a real-time mechanism. If a timer’s firing time occurs during a long run loop callout or while the run loop is in a mode that isn’t monitoring the timer, the timer doesn’t fire until the next time the run loop checks the timer. Therefore, the actual time at which a timer fires can be significantly later. See also [Timer Tolerance](./timer.md#Timer-Tolerance).
 
-[`Timer`](timer.md) is toll-free bridged with its Core Foundation counterpart, [`CFRunLoopTimer`](https://developer.apple.com/documentation/corefoundation/cfrunlooptimer).  See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+[`Timer`](./timer.md) is toll-free bridged with its Core Foundation counterpart, [`CFRunLoopTimer`](../CoreFoundation/cfrunlooptimer.md).  See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ##### Comparing Repeating and Nonrepeating Timers
 
@@ -36,7 +41,7 @@ You specify whether a timer is repeating or nonrepeating at creation time. A non
 
 ##### Timer Tolerance
 
-In iOS 7 and later and macOS 10.9 and later, you can specify a tolerance for a timer ([`tolerance`](timer/tolerance.md)). This flexibility in when a timer fires improves the system’s ability to optimize for increased power savings and responsiveness. The timer may fire at any time between its scheduled fire date and the scheduled fire date plus the tolerance. The timer doesn’t fire before the scheduled fire date. For repeating timers, the next fire date is calculated from the original fire date regardless of tolerance applied at individual fire times, to avoid drift. The default value is zero, which means no additional tolerance is applied. The system reserves the right to apply a small amount of tolerance to certain timers regardless of the value of the [`tolerance`](timer/tolerance.md) property.
+In iOS 7 and later and macOS 10.9 and later, you can specify a tolerance for a timer ([`tolerance`](./timer/tolerance.md)). This flexibility in when a timer fires improves the system’s ability to optimize for increased power savings and responsiveness. The timer may fire at any time between its scheduled fire date and the scheduled fire date plus the tolerance. The timer doesn’t fire before the scheduled fire date. For repeating timers, the next fire date is calculated from the original fire date regardless of tolerance applied at individual fire times, to avoid drift. The default value is zero, which means no additional tolerance is applied. The system reserves the right to apply a small amount of tolerance to certain timers regardless of the value of the [`tolerance`](./timer/tolerance.md) property.
 
 As the user of the timer, you can determine the appropriate tolerance for a timer. A general rule, set the tolerance to at least 10% of the interval, for a repeating timer. Even a small amount of tolerance has significant positive impact on the power usage of your application. The system may enforce a maximum value for the tolerance.
 
@@ -44,79 +49,80 @@ As the user of the timer, you can determine the appropriate tolerance for a time
 
 You can register a timer in only one run loop at a time, although it can be added to multiple run loop modes within that run loop. There are three ways to create a timer:
 
-- Use the [`scheduledTimer(timeInterval:invocation:repeats:)`](timer/scheduledtimer(timeinterval:invocation:repeats:).md) or [`scheduledTimer(timeInterval:target:selector:userInfo:repeats:)`](timer/scheduledtimer(timeinterval:target:selector:userinfo:repeats:).md) class method to create the timer and schedule it on the current run loop in the default mode.
-- Use the [`init(timeInterval:invocation:repeats:)`](timer/init(timeinterval:invocation:repeats:).md) or [`init(timeInterval:target:selector:userInfo:repeats:)`](timer/init(timeinterval:target:selector:userinfo:repeats:).md) class method to create the timer object without scheduling it on a run loop. (After creating it, you must add the timer to a run loop manually by calling the [`add(_:forMode:)`](runloop/add(_:formode:)-392ag.md) method of the corresponding [`RunLoop`](runloop.md) object.)
-- Allocate the timer and initialize it using the [`init(fireAt:interval:target:selector:userInfo:repeats:)`](timer/init(fireat:interval:target:selector:userinfo:repeats:).md) method. (After creating it, you must add the timer to a run loop manually by calling the [`add(_:forMode:)`](runloop/add(_:formode:)-392ag.md) method of the corresponding [`RunLoop`](runloop.md) object.)
+- Use the [`scheduledTimer(timeInterval:invocation:repeats:)`](./timer/scheduledtimer%28timeinterval,invocation,repeats%29.md) or [`scheduledTimer(timeInterval:target:selector:userInfo:repeats:)`](./timer/scheduledtimer%28timeinterval,target,selector,userinfo,repeats%29.md) class method to create the timer and schedule it on the current run loop in the default mode.
+- Use the [`init(timeInterval:invocation:repeats:)`](./timer/init%28timeinterval,invocation,repeats%29.md) or [`init(timeInterval:target:selector:userInfo:repeats:)`](./timer/init%28timeinterval,target,selector,userinfo,repeats%29.md) class method to create the timer object without scheduling it on a run loop. (After creating it, you must add the timer to a run loop manually by calling the [`add(_:forMode:)`](./runloop/add%28_,formode%29-392ag.md) method of the corresponding [`RunLoop`](./runloop.md) object.)
+- Allocate the timer and initialize it using the [`init(fireAt:interval:target:selector:userInfo:repeats:)`](./timer/init%28fireat,interval,target,selector,userinfo,repeats%29.md) method. (After creating it, you must add the timer to a run loop manually by calling the [`add(_:forMode:)`](./runloop/add%28_,formode%29-392ag.md) method of the corresponding [`RunLoop`](./runloop.md) object.)
 
-Once scheduled on a run loop, the timer fires at the specified interval until it is invalidated. A nonrepeating timer invalidates itself immediately after it fires. However, for a repeating timer, you must invalidate the timer object yourself by calling its [`invalidate()`](timer/invalidate().md) method. Calling this method requests the removal of the timer from the current run loop; as a result, you should always call the [`invalidate()`](timer/invalidate().md) method from the same thread on which the timer was installed. Invalidating the timer immediately disables it so that it no longer affects the run loop. The run loop then removes the timer (and the strong reference it had to the timer), either just before the [`invalidate()`](timer/invalidate().md) method returns or at some later point. Once invalidated, timer objects cannot be reused.
+Once scheduled on a run loop, the timer fires at the specified interval until it is invalidated. A nonrepeating timer invalidates itself immediately after it fires. However, for a repeating timer, you must invalidate the timer object yourself by calling its [`invalidate()`](./timer/invalidate%28%29.md) method. Calling this method requests the removal of the timer from the current run loop; as a result, you should always call the [`invalidate()`](./timer/invalidate%28%29.md) method from the same thread on which the timer was installed. Invalidating the timer immediately disables it so that it no longer affects the run loop. The run loop then removes the timer (and the strong reference it had to the timer), either just before the [`invalidate()`](./timer/invalidate%28%29.md) method returns or at some later point. Once invalidated, timer objects cannot be reused.
 
-After a repeating timer fires, it schedules the next firing for the nearest future date that is an integer multiple of the timer interval after the last scheduled fire date, within the specified [`tolerance`](timer/tolerance.md). If the time taken to call out to perform a selector or invocation is longer than the specified interval, the timer schedules only the next firing; that is, the timer doesn’t attempt to compensate for any missed firings that would have occurred while calling the specified selector or invocation.
+After a repeating timer fires, it schedules the next firing for the nearest future date that is an integer multiple of the timer interval after the last scheduled fire date, within the specified [`tolerance`](./timer/tolerance.md). If the time taken to call out to perform a selector or invocation is longer than the specified interval, the timer schedules only the next firing; that is, the timer doesn’t attempt to compensate for any missed firings that would have occurred while calling the specified selector or invocation.
 
 ##### Subclassing Notes
 
-Do not subclass [`Timer`](timer.md).
+Do not subclass [`Timer`](./timer.md).
 
 ## Topics
 
 ### Creating a Timer
-- [class func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void) -> Timer](timer/scheduledtimer(withtimeinterval:repeats:block:).md)
+- [class func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void) -> Timer](./timer/scheduledtimer%28withtimeinterval,repeats,block%29.md)
   Creates a timer and schedules it on the current run loop in the default mode.
-- [class func scheduledTimer(timeInterval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool) -> Timer](timer/scheduledtimer(timeinterval:target:selector:userinfo:repeats:).md)
+- [class func scheduledTimer(timeInterval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool) -> Timer](./timer/scheduledtimer%28timeinterval,target,selector,userinfo,repeats%29.md)
   Creates a timer and schedules it on the current run loop in the default mode.
-- [class func scheduledTimer(timeInterval: TimeInterval, invocation: NSInvocation, repeats: Bool) -> Timer](timer/scheduledtimer(timeinterval:invocation:repeats:).md)
+- [class func scheduledTimer(timeInterval: TimeInterval, invocation: NSInvocation, repeats: Bool) -> Timer](./timer/scheduledtimer%28timeinterval,invocation,repeats%29.md)
   Creates a new timer and schedules it on the current run loop in the default mode.
-- [init(timeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](timer/init(timeinterval:repeats:block:).md)
+- [init(timeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](./timer/init%28timeinterval,repeats,block%29.md)
   Initializes a timer object with the specified time interval and block.
-- [init(timeInterval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](timer/init(timeinterval:target:selector:userinfo:repeats:).md)
+- [init(timeInterval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](./timer/init%28timeinterval,target,selector,userinfo,repeats%29.md)
   Initializes a timer object with the specified object and selector.
-- [init(timeInterval: TimeInterval, invocation: NSInvocation, repeats: Bool)](timer/init(timeinterval:invocation:repeats:).md)
+- [init(timeInterval: TimeInterval, invocation: NSInvocation, repeats: Bool)](./timer/init%28timeinterval,invocation,repeats%29.md)
   Initializes a timer object with the specified invocation object.
-- [convenience init(fire: Date, interval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](timer/init(fire:interval:repeats:block:).md)
+- [convenience init(fire: Date, interval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](./timer/init%28fire,interval,repeats,block%29.md)
   Initializes a timer for the specified date and time interval with the specified block.
-- [init(fireAt: Date, interval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](timer/init(fireat:interval:target:selector:userinfo:repeats:).md)
+- [init(fireAt: Date, interval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](./timer/init%28fireat,interval,target,selector,userinfo,repeats%29.md)
   Initializes a timer using the specified object and selector.
 ### Firing a Timer
-- [func fire()](timer/fire.md)
+- [func fire()](./timer/fire%28%29.md)
   Causes the timer’s message to be sent to its target.
 ### Stopping a Timer
-- [func invalidate()](timer/invalidate.md)
+- [func invalidate()](./timer/invalidate%28%29.md)
   Stops the timer from ever firing again and requests its removal from its run loop.
 ### Retrieving Timer Information
-- [var isValid: Bool](timer/isvalid.md)
+- [var isValid: Bool](./timer/isvalid.md)
   A Boolean value that indicates whether the timer is currently valid.
-- [var fireDate: Date](timer/firedate.md)
+- [var fireDate: Date](./timer/firedate.md)
   The date at which the timer will fire.
-- [var timeInterval: TimeInterval](timer/timeinterval.md)
+- [var timeInterval: TimeInterval](./timer/timeinterval.md)
   The timer’s time interval, in seconds.
-- [var userInfo: Any?](timer/userinfo.md)
+- [var userInfo: Any?](./timer/userinfo.md)
   The receiver’s `userInfo` object.
 ### Configuring Firing Tolerance
-- [var tolerance: TimeInterval](timer/tolerance.md)
+- [var tolerance: TimeInterval](./timer/tolerance.md)
   The amount of time after the scheduled fire date that the timer may fire.
 ### Firing Messages as a Combine Publisher
-- [static func publish(every: TimeInterval, tolerance: TimeInterval?, on: RunLoop, in: RunLoop.Mode, options: RunLoop.SchedulerOptions?) -> Timer.TimerPublisher](timer/publish(every:tolerance:on:in:options:).md)
+- [static func publish(every: TimeInterval, tolerance: TimeInterval?, on: RunLoop, in: RunLoop.Mode, options: RunLoop.SchedulerOptions?) -> Timer.TimerPublisher](./timer/publish%28every,tolerance,on,in,options%29.md)
   Returns a publisher that repeatedly emits the current date on the given interval.
-- [Timer.TimerPublisher](timer/timerpublisher.md)
+- [Timer.TimerPublisher](./timer/timerpublisher.md)
   A publisher that repeatedly emits the current date on a given interval.
 ### Initializers
-- [convenience init(fireDate: Date, interval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](timer/init(firedate:interval:repeats:block:).md)
-- [init(fireDate: Date, interval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](timer/init(firedate:interval:target:selector:userinfo:repeats:).md)
+- [convenience init(fireDate: Date, interval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](./timer/init%28firedate,interval,repeats,block%29.md)
+- [init(fireDate: Date, interval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](./timer/init%28firedate,interval,target,selector,userinfo,repeats%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class RunLoop](runloop.md)
+### Run Loop Scheduling
+- [class RunLoop](./runloop.md)
   The programmatic interface to objects that manage input sources.
 
 

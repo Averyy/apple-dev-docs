@@ -1,7 +1,8 @@
 # splatResource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The splat data and rendering options the component displays.
 

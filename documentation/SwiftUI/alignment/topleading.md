@@ -1,7 +1,8 @@
 # topLeading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the top and leading edges of the view.
 
@@ -22,15 +23,16 @@ static let topLeading: Alignment
 
 #### Discussion
 
-This alignment combines the [`leading`](horizontalalignment/leading.md) horizontal guide and the [`top`](verticalalignment/top.md) vertical guide:
+This alignment combines the [`leading`](../horizontalalignment/leading.md) horizontal guide and the [`top`](../verticalalignment/top.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-topLeading-1-iOS@2x.png)
+![A square that’s divided into four equal quadrants. The upper-](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Alignment-topLeading-1-iOS@2x.png)
 
 ## See Also
 
-- [static let top: Alignment](alignment/top.md)
+### Getting top guides
+- [static let top: Alignment](./top.md)
   A guide that marks the top edge of the view.
-- [static let topTrailing: Alignment](alignment/toptrailing.md)
+- [static let topTrailing: Alignment](./toptrailing.md)
   A guide that marks the top and trailing edges of the view.
 
 

@@ -1,14 +1,15 @@
 # vfe_reserv
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 void *vfe_reserv[2];
 ```
 

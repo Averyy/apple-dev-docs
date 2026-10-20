@@ -1,7 +1,8 @@
 # preferred(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An explicit tint color that the system can override.
 
@@ -22,7 +23,7 @@ static func preferred(_ tint: Color) -> ListItemTint
 
 #### Discussion
 
-On macOS, the system can override this tint with the person’s chosen accent color when one is set. Use [`fixed(_:)`](listitemtint/fixed(_:).md) to prevent the system from overriding the tint.
+On macOS, the system can override this tint with the person’s chosen accent color when one is set. Use [`fixed(_:)`](./fixed%28_%29.md) to prevent the system from overriding the tint.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ On macOS, the system can override this tint with the person’s chosen accent co
 
 ## See Also
 
-- [static let monochrome: ListItemTint](listitemtint/monochrome.md)
+### Getting list item tint options
+- [static let monochrome: ListItemTint](./monochrome.md)
   A standard grayscale tint effect.
-- [static func fixed(Color) -> ListItemTint](listitemtint/fixed(_:).md)
+- [static func fixed(Color) -> ListItemTint](./fixed%28_%29.md)
   An explicit tint color.
 
 

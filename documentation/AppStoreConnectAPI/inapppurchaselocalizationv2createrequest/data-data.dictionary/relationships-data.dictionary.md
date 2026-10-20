@@ -1,7 +1,8 @@
 # InAppPurchaseLocalizationV2CreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseLocalizationV2CreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseLocalizationV2CreateRequest.Data.Relationships.Version](inapppurchaselocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary.md)
+- [object InAppPurchaseLocalizationV2CreateRequest.Data.Relationships.Version](./relationships-data.dictionary/version-data.dictionary.md)
   The In-App Purchase version to associate with the new In-App Purchase localization.
 
 ## Properties
@@ -26,7 +27,8 @@ object InAppPurchaseLocalizationV2CreateRequest.Data.Relationships
 
 ## See Also
 
-- [object InAppPurchaseLocalizationV2CreateRequest.Data.Attributes](inapppurchaselocalizationv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object InAppPurchaseLocalizationV2CreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an In-App Purchase localization create request resource.
 
 

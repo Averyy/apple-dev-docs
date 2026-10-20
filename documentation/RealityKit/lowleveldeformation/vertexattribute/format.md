@@ -1,7 +1,8 @@
 # format
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the vertex attribute.
 

@@ -1,7 +1,8 @@
 # createRootCertificate(_:issuerID:fabricID:validityPeriod:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.6+
@@ -16,6 +17,10 @@
 
 ```swift
 class func createRootCertificate(_ keypair: any MTRKeypair, issuerID: NSNumber?, fabricID: NSNumber?, validityPeriod: DateInterval) throws -> Data
+```
+
+```objc
++ (MTRCertificateDERBytes) createRootCertificate:(id<MTRKeypair>) keypair issuerID:(NSNumber *) issuerID fabricID:(NSNumber *) fabricID validityPeriod:(NSDateInterval *) validityPeriod error:(NSError **) error;
 ```
 
 

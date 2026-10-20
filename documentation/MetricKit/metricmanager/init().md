@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MetricKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `MetricManager` instance without state reporting domains.
 
@@ -26,13 +27,14 @@ Use this initializer when you only need interval-based metric data and diagnosti
 let manager = MetricManager()
 ```
 
-To receive metrics segmented by app state, use [`init(enabledStateReportingDomains:)`](metricmanager/init(enabledstatereportingdomains:).md) instead.
+To receive metrics segmented by app state, use [`init(enabledStateReportingDomains:)`](./init%28enabledstatereportingdomains%29.md) instead.
 
 ## See Also
 
-- [init(enabledStateReportingDomains: Set<StateReportingDomain>)](metricmanager/init(enabledstatereportingdomains:).md)
+### Initialization
+- [init(enabledStateReportingDomains: Set<StateReportingDomain>)](./init%28enabledstatereportingdomains%29.md)
   Creates a new `MetricManager` instance with state reporting domains enabled for metrics aggregation.
-- [var enabledStateReportingDomains: Set<StateReportingDomain>](metricmanager/enabledstatereportingdomains.md)
+- [var enabledStateReportingDomains: Set<StateReportingDomain>](./enabledstatereportingdomains.md)
   StateReporting domains enabled for metrics aggregation
 
 

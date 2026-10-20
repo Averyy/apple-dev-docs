@@ -1,6 +1,7 @@
 # value
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies the value used for a fillable element.
 
@@ -8,26 +9,27 @@ Specifies the value used for a fillable element.
 
 Use the `value` attribute to set the amount of area that is filled in, as a percentage.
 
-##### Values for Value
+##### Values for value
 
 - **Float**: The amount of area that is filled in, as a percentage. This can be a value between `0.0` and `1.0`, with `1.0` being equal to 100%.
 
-##### Elements That Use Value
+##### Elements that Use value
 
-- [`progressBar`](progressbar.md)
-- [`ratingBadge`](ratingbadge.md)
+- [progressBar](./progressbar.md)
+- [ratingBadge](./ratingbadge.md)
 
 ## See Also
 
-- [aspectFill](aspectfill.md)
+### Image Display
+- [aspectFill](./aspectfill.md)
   Stretches an image to fill the containing bounding box.
-- [contentsMode](contentsmode.md)
+- [contentsMode](./contentsmode.md)
   Specifies how an image is expanded to fill its containing element.
-- [opaque](opaque.md)
+- [opaque](./opaque.md)
   Indicates whether an image has a transparent background.
-- [mode](mode.md)
+- [mode](./mode.md)
   Specifies how an image is displayed.
-- [type](type.md)
+- [type](./type.md)
   Specifies how a badge is drawn.
 
 

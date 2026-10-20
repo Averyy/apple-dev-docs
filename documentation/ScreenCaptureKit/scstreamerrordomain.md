@@ -1,7 +1,8 @@
 # SCStreamErrorDomain
 
 **Framework**: ScreenCaptureKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string representation of the error domain.
 
@@ -19,9 +20,14 @@ A string representation of the error domain.
 let SCStreamErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const SCStreamErrorDomain;
+```
+
 ## See Also
 
-- [struct SCStreamError](scstreamerror.md)
+### Stream errors (Swift)
+- [struct SCStreamError](./scstreamerror.md)
   An instance representing a ScreenCaptureKit framework error.
 
 

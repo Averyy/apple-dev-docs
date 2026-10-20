@@ -1,7 +1,8 @@
 # location(ofTouch:in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of one of the gesture’s touches in the local coordinate system of a given view.
 
@@ -9,7 +10,7 @@ Returns the location of one of the gesture’s touches in the local coordinate s
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,20 +19,25 @@ Returns the location of one of the gesture’s touches in the local coordinate s
 func location(ofTouch touchIndex: Int, in view: UIView?) -> CGPoint
 ```
 
+```objc
+- (CGPoint) locationOfTouch:(NSUInteger) touchIndex inView:(UIView *) view;
+```
+
 #### Return Value
 
 A point in the local coordinate system of `view` that identifies the location of the touch. If `nil` is specified for `view`, the method returns the touch location in the window’s base coordinate system.
 
 ## Parameters
 
-- `touchIndex`: The index of a [`UITouch`](uitouch.md) object in a private array maintained by the receiver. This touch object represents a touch of the current gesture.
-- `view`: A [`UIView`](uiview.md) object on which the gesture took place. Specify `nil` to indicate the window.
+- `touchIndex`: The index of a [`UITouch`](../uitouch.md) object in a private array maintained by the receiver. This touch object represents a touch of the current gesture.
+- `view`: A [`UIView`](../uiview.md) object on which the gesture took place. Specify `nil` to indicate the window.
 
 ## See Also
 
-- [func location(in: UIView?) -> CGPoint](uigesturerecognizer/location(in:).md)
+### Getting the touches and location of a gesture
+- [func location(in: UIView?) -> CGPoint](./location%28in%29.md)
   Returns the point computed as the location in a given view of the gesture represented by the gesture recognizer.
-- [var numberOfTouches: Int](uigesturerecognizer/numberoftouches.md)
+- [var numberOfTouches: Int](./numberoftouches.md)
   The number of touches involved in the gesture represented by the gesture recognizer.
 
 

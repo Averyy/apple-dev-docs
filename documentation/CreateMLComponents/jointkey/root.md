@@ -1,7 +1,8 @@
 # root
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with root joint in a body pose.
 

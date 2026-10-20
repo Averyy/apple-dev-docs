@@ -1,7 +1,8 @@
 # CFNetServiceRegisterFlags
 
 **Framework**: CFNetwork  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options to use when registering a service on the network.
 
@@ -19,58 +20,63 @@ Options to use when registering a service on the network.
 struct CFNetServiceRegisterFlags
 ```
 
+```c
+enum CFNetServiceRegisterFlags : CFOptionFlags;
+```
+
 ## Topics
 
 ### Creating Register Flags
-- [init(rawValue: CFOptionFlags)](cfnetserviceregisterflags/init(rawvalue:).md)
+- [init(rawValue: CFOptionFlags)](./cfnetserviceregisterflags/init%28rawvalue%29.md)
   Initializes a flag value with the specified bitfield.
 ### Constants
-- [static var noAutoRename: CFNetServiceRegisterFlags](cfnetserviceregisterflags/noautorename.md)
+- [static var noAutoRename: CFNetServiceRegisterFlags](./cfnetserviceregisterflags/noautorename.md)
   Causes registrations to fail if a name conflict occurs.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [class CFNetService](cfnetservice.md)
+### Network Services
+- [class CFNetService](./cfnetservice.md)
   An opaque reference representing a CFNetService.
-- [class CFNetServiceBrowser](cfnetservicebrowser.md)
+- [class CFNetServiceBrowser](./cfnetservicebrowser.md)
   An opaque reference representing a CFNetServiceBrowser.
-- [struct CFNetServiceBrowserFlags](cfnetservicebrowserflags.md)
+- [struct CFNetServiceBrowserFlags](./cfnetservicebrowserflags.md)
   Flags that the system passes to net service browser callbacks.
-- [class CFNetServiceMonitor](cfnetservicemonitor.md)
+- [class CFNetServiceMonitor](./cfnetservicemonitor.md)
   An opaque reference for a service monitor.
-- [enum CFNetServiceMonitorType](cfnetservicemonitortype.md)
+- [enum CFNetServiceMonitorType](./cfnetservicemonitortype.md)
   Record type specifier used to tell a service monitor the type of record changes to watch for.
-- [struct CFNetServiceClientContext](cfnetserviceclientcontext.md)
+- [struct CFNetServiceClientContext](./cfnetserviceclientcontext.md)
   A structure provided when a CFNetService is associated with a callback function or when a CFNetServiceBrowser is created.
-- [enum CFNetServicesError](cfnetserviceserror.md)
+- [enum CFNetServicesError](./cfnetserviceserror.md)
   Error codes that may be returned by CFNetServices functions or passed to CFNetServices callback functions.
-- [func CFNetServiceBrowserInvalidate(CFNetServiceBrowser)](cfnetservicebrowserinvalidate(_:).md)
+- [func CFNetServiceBrowserInvalidate(CFNetServiceBrowser)](./cfnetservicebrowserinvalidate%28_%29.md)
   Invalidates an instance of a Network Service browser object.
-- [func CFNetServiceBrowserScheduleWithRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](cfnetservicebrowserschedulewithrunloop(_:_:_:).md)
+- [func CFNetServiceBrowserScheduleWithRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](./cfnetservicebrowserschedulewithrunloop%28_,_,_%29.md)
   Schedules a CFNetServiceBrowser on a run loop.
-- [func CFNetServiceBrowserCreate(CFAllocator?, CFNetServiceBrowserClientCallBack, UnsafeMutablePointer<CFNetServiceClientContext>) -> Unmanaged<CFNetServiceBrowser>](cfnetservicebrowsercreate(_:_:_:).md)
+- [func CFNetServiceBrowserCreate(CFAllocator?, CFNetServiceBrowserClientCallBack, UnsafeMutablePointer<CFNetServiceClientContext>) -> Unmanaged<CFNetServiceBrowser>](./cfnetservicebrowsercreate%28_,_,_%29.md)
   Creates an instance of a Network Service browser object.
-- [func CFNetServiceBrowserGetTypeID() -> CFTypeID](cfnetservicebrowsergettypeid().md)
+- [func CFNetServiceBrowserGetTypeID() -> CFTypeID](./cfnetservicebrowsergettypeid%28%29.md)
   Gets the Core Foundation type identifier for the Network Service browser object.
-- [func CFNetServiceBrowserSearchForDomains(CFNetServiceBrowser, Bool, UnsafeMutablePointer<CFStreamError>?) -> Bool](cfnetservicebrowsersearchfordomains(_:_:_:).md)
+- [func CFNetServiceBrowserSearchForDomains(CFNetServiceBrowser, Bool, UnsafeMutablePointer<CFStreamError>?) -> Bool](./cfnetservicebrowsersearchfordomains%28_,_,_%29.md)
   Searches for domains.
-- [func CFNetServiceBrowserSearchForServices(CFNetServiceBrowser, CFString, CFString, UnsafeMutablePointer<CFStreamError>?) -> Bool](cfnetservicebrowsersearchforservices(_:_:_:_:).md)
+- [func CFNetServiceBrowserSearchForServices(CFNetServiceBrowser, CFString, CFString, UnsafeMutablePointer<CFStreamError>?) -> Bool](./cfnetservicebrowsersearchforservices%28_,_,_,_%29.md)
   Searches a domain for services of a specified type.
-- [func CFNetServiceBrowserStopSearch(CFNetServiceBrowser, UnsafeMutablePointer<CFStreamError>?)](cfnetservicebrowserstopsearch(_:_:).md)
+- [func CFNetServiceBrowserStopSearch(CFNetServiceBrowser, UnsafeMutablePointer<CFStreamError>?)](./cfnetservicebrowserstopsearch%28_,_%29.md)
   Stops a search for domains or services.
-- [func CFNetServiceBrowserUnscheduleFromRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](cfnetservicebrowserunschedulefromrunloop(_:_:_:).md)
+- [func CFNetServiceBrowserUnscheduleFromRunLoop(CFNetServiceBrowser, CFRunLoop, CFString)](./cfnetservicebrowserunschedulefromrunloop%28_,_,_%29.md)
   Unschedules a CFNetServiceBrowser from a run loop and mode.
 
 

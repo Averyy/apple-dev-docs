@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate to match contacts against.
 
@@ -20,9 +21,21 @@ The predicate to match contacts against.
 var predicate: NSPredicate? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSPredicate * predicate;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSPredicate * predicate;
+```
+
 #### Discussion
 
-Set the value of this property to `nil` to match all contacts or use the search predicates in [`CNContact`](cncontact.md). Compound predicates are not supported.
+Set the value of this property to `nil` to match all contacts or use the search predicates in [`CNContact`](../cncontact.md). Compound predicates are not supported.
 
 
 ---

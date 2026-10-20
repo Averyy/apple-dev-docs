@@ -1,7 +1,8 @@
 # FileHandle.ReadToEndOfFileCompletionMessage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message a file handle sends when it reads all data in a file, or another process in a communication channel signals the end of the data.
 
@@ -22,35 +23,36 @@ struct ReadToEndOfFileCompletionMessage
 
 #### Overview
 
-Before adding an observer for this message type, call either [`readToEndOfFileInBackgroundAndNotify()`](filehandle/readtoendoffileinbackgroundandnotify().md) or [`readToEndOfFileInBackgroundAndNotify(forModes:)`](filehandle/readtoendoffileinbackgroundandnotify(formodes:).md) on an appropriate [`FileHandle`](filehandle.md) object.
+Before adding an observer for this message type, call either [`readToEndOfFileInBackgroundAndNotify()`](./readtoendoffileinbackgroundandnotify%28%29.md) or [`readToEndOfFileInBackgroundAndNotify(forModes:)`](./readtoendoffileinbackgroundandnotify%28formodes%29.md) on an appropriate [`FileHandle`](../filehandle.md) object.
 
-Observe this message with the identifier [`readToEndOfFileCompletion`](notificationcenter/messageidentifier/readtoendoffilecompletion.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`FileHandle`](filehandle.md).
+Observe this message with the identifier [`readToEndOfFileCompletion`](../notificationcenter/messageidentifier/readtoendoffilecompletion.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`FileHandle`](../filehandle.md).
 
-This message interoperates with the notification [`NSFileHandleReadToEndOfFileCompletion`](nsnotification/name-swift.struct/nsfilehandlereadtoendoffilecompletion.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
+This message interoperates with the notification [`NSFileHandleReadToEndOfFileCompletion`](../nsnotification/name-swift.struct/nsfilehandlereadtoendoffilecompletion.md). The system notifies observers of the message when the [`NotificationCenter`](../notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 
 ### Creating a message
-- [init(dataItem: Result<Data, POSIXError>)](filehandle/readtoendoffilecompletionmessage/init(dataitem:).md)
+- [init(dataItem: Result<Data, POSIXError>)](./readtoendoffilecompletionmessage/init%28dataitem%29.md)
   Creates a message that indicates a file handle reached the end of a file or the data.
 ### Working with message properties
-- [var dataItem: Result<Data, POSIXError>](filehandle/readtoendoffilecompletionmessage/dataitem.md)
+- [var dataItem: Result<Data, POSIXError>](./readtoendoffilecompletionmessage/dataitem.md)
   A result that contains either the data read or an error.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FileHandle.ConnectionAcceptedMessage](filehandle/connectionacceptedmessage.md)
+### Working with notification messages
+- [FileHandle.ConnectionAcceptedMessage](./connectionacceptedmessage.md)
   A message a file handle sends when it creates a socket connection between two processes and creates a file handle for one end of the connection.
-- [FileHandle.DataAvailableMessage](filehandle/dataavailablemessage.md)
+- [FileHandle.DataAvailableMessage](./dataavailablemessage.md)
   A message a file handle sends when it determines data is available for reading from a file or communications channel.
-- [FileHandle.ReadCompletionMessage](filehandle/readcompletionmessage.md)
+- [FileHandle.ReadCompletionMessage](./readcompletionmessage.md)
   A message a file handle sends when it reads the data currently available in a file or a communication channel.
 
 

@@ -1,7 +1,8 @@
 # autosaveName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name to use when the system automatically saves the split view’s divider configuration.
 
@@ -14,13 +15,18 @@ The name to use when the system automatically saves the split view’s divider c
 var autosaveName: NSSplitView.AutosaveName? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSSplitViewAutosaveName autosaveName;
+```
+
 #### Discussion
 
 If this property’s value is `nil` or empty, autosaving doesn’t occur.
 
 ## See Also
 
-- [NSSplitView.AutosaveName](nssplitview/autosavename-swift.typealias.md)
+### Saving Subview Positions
+- [NSSplitView.AutosaveName](./autosavename-swift.typealias.md)
   The type that specifies the split view’s autosave name.
 
 

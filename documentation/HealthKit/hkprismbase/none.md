@@ -1,7 +1,8 @@
 # HKPrismBase.none
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No prism correction.
 
@@ -19,15 +20,20 @@ No prism correction.
 case none
 ```
 
+```c
+HKPrismBaseNone
+```
+
 ## See Also
 
-- [HKPrismBase.up](hkprismbase/up.md)
+### Prism Base
+- [HKPrismBase.up](./up.md)
   The prism’s base is at the top of the lens.
-- [HKPrismBase.down](hkprismbase/down.md)
+- [HKPrismBase.down](./down.md)
   The prism’s base is at the bottom of the lens.
-- [HKPrismBase.in](hkprismbase/in.md)
+- [HKPrismBase.in](./in.md)
   The prism base is on the inside edge of the lens.
-- [HKPrismBase.out](hkprismbase/out.md)
+- [HKPrismBase.out](./out.md)
   The prism base is on the outside edge of the lens.
 
 

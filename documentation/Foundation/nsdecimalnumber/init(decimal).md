@@ -1,7 +1,8 @@
 # init(decimal:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a decimal number to represent a given decimal.
 
@@ -20,6 +21,10 @@ Initializes a decimal number to represent a given decimal.
 init(decimal dcm: Decimal)
 ```
 
+```objc
+- (instancetype) initWithDecimal:(NSDecimal) dcm;
+```
+
 #### Return Value
 
 An `NSDecimalNumber` object initialized to represent `dcm`.
@@ -34,11 +39,12 @@ This method is the designated initializer for `NSDecimalNumber`.
 
 ## See Also
 
-- [convenience init(mantissa: UInt64, exponent: Int16, isNegative: Bool)](nsdecimalnumber/init(mantissa:exponent:isnegative:).md)
+### Initializing a Decimal Number
+- [convenience init(mantissa: UInt64, exponent: Int16, isNegative: Bool)](./init%28mantissa,exponent,isnegative%29.md)
   Initializes a decimal number using the given mantissa, exponent, and sign.
-- [convenience init(string: String?)](nsdecimalnumber/init(string:).md)
+- [convenience init(string: String?)](./init%28string%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string.
-- [convenience init(string: String?, locale: Any?)](nsdecimalnumber/init(string:locale:).md)
+- [convenience init(string: String?, locale: Any?)](./init%28string,locale%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string, interpreted using a given locale.
 
 

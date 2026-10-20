@@ -1,7 +1,8 @@
 # configurationData
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The serialized device-specific configuration.
 
@@ -12,6 +13,10 @@ The serialized device-specific configuration.
 
 ```swift
 var configurationData: Data { get }
+```
+
+```objc
+@property (copy, readonly) NSData * configurationData;
 ```
 
 

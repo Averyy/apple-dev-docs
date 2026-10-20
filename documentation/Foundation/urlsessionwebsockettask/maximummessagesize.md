@@ -1,7 +1,8 @@
 # maximumMessageSize
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of bytes to buffer before the receive call fails with an error.
 
@@ -20,17 +21,22 @@ The maximum number of bytes to buffer before the receive call fails with an erro
 var maximumMessageSize: Int { get set }
 ```
 
+```objc
+@property NSInteger maximumMessageSize;
+```
+
 #### Discussion
 
 This value includes the sum of all bytes from continuation frames. Receive calls will fail once the task reaches this limit.
 
 ## See Also
 
-- [func send(URLSessionWebSocketTask.Message, completionHandler: ((any Error)?) -> Void)](urlsessionwebsockettask/send(_:completionhandler:).md)
+### Sending and receiving data
+- [func send(URLSessionWebSocketTask.Message, completionHandler: ((any Error)?) -> Void)](./send%28_,completionhandler%29.md)
   Sends a WebSocket message, receiving the result in a completion handler.
-- [URLSessionWebSocketTask.Message](urlsessionwebsockettask/message.md)
+- [URLSessionWebSocketTask.Message](./message.md)
   An enumeration of the types of messages sent and received.
-- [func receive(completionHandler: (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)](urlsessionwebsockettask/receive(completionhandler:).md)
+- [func receive(completionHandler: (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)](./receive%28completionhandler%29.md)
   Reads a WebSocket message once all the frames of the message are available.
 
 

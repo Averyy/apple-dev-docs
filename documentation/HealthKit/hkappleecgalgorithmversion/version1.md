@@ -1,7 +1,8 @@
 # HKAppleECGAlgorithmVersion.version1
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The version 1 algorithm.
 
@@ -19,9 +20,14 @@ The version 1 algorithm.
 case version1
 ```
 
+```c
+HKAppleECGAlgorithmVersion1
+```
+
 ## See Also
 
-- [HKAppleECGAlgorithmVersion.version2](hkappleecgalgorithmversion/version2.md)
+### Versions
+- [HKAppleECGAlgorithmVersion.version2](./version2.md)
   The version 2 algorithm.
 
 

@@ -1,7 +1,8 @@
 # saveCredentialIdentities(_:completion:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Save the supplied credential identities to the store.
 
@@ -15,14 +16,22 @@ Save the supplied credential identities to the store.
 ## Declaration
 
 ```swift
+func saveCredentialIdentities(_ credentialIdentities: [any ASCredentialIdentity], completion: (@Sendable (Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func saveCredentialIdentities(_ credentialIdentities: [any ASCredentialIdentity]) async throws
+```
+
+```objc
+- (void) saveCredentialIdentityEntries:(NSArray<id<ASCredentialIdentity>> *) credentialIdentities completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
 
 Call this method if the credential store supports incremental updates to add new credential identities. Otherwise, call this method passing all credential identities. If any of the credential identities in the `credentialIdentities` array already exist in the store, this method overwrites them with the values in the array.
 
-On failure, this method calls the callback with an error with domain [`ASCredentialIdentityStoreErrorDomain`](ascredentialidentitystoreerrordomain.md) and doesn’t save any of the objects in `credentialIdentities` to the store.
+On failure, this method calls the callback with an error with domain [`ASCredentialIdentityStoreErrorDomain`](../ascredentialidentitystoreerrordomain.md) and doesn’t save any of the objects in `credentialIdentities` to the store.
 
 ## Parameters
 
@@ -31,17 +40,18 @@ On failure, this method calls the callback with an error with domain [`ASCredent
 
 ## See Also
 
-- [func replaceCredentialIdentities([any ASCredentialIdentity], completion: ((Bool, (any Error)?) -> Void)?)](ascredentialidentitystore/replacecredentialidentities(_:completion:).md)
+### Adding and removing credential identities
+- [func replaceCredentialIdentities([any ASCredentialIdentity], completion: ((Bool, (any Error)?) -> Void)?)](./replacecredentialidentities%28_,completion%29.md)
   Replaces existing credential identities with new credential identities.
-- [func removeAllCredentialIdentities(((Bool, (any Error)?) -> Void)?)](ascredentialidentitystore/removeallcredentialidentities(_:).md)
+- [func removeAllCredentialIdentities(((Bool, (any Error)?) -> Void)?)](./removeallcredentialidentities%28_%29.md)
   Removes all existing credential identities from the store.
-- [func removeCredentialIdentities([any ASCredentialIdentity], completion: ((Bool, (any Error)?) -> Void)?)](ascredentialidentitystore/removecredentialidentities(_:completion:)-67lcw.md)
+- [func removeCredentialIdentities([any ASCredentialIdentity], completion: ((Bool, (any Error)?) -> Void)?)](./removecredentialidentities%28_,completion%29-67lcw.md)
   Remove the given credential identities from the store.
-- [protocol ASCredentialIdentity](ascredentialidentity.md)
+- [protocol ASCredentialIdentity](../ascredentialidentity.md)
   A protocol that credential identity classes conform to that uniquely identifies credentials.
-- [class ASPasskeyCredentialIdentity](aspasskeycredentialidentity.md)
+- [class ASPasskeyCredentialIdentity](../aspasskeycredentialidentity.md)
   A description that uniquely identifies a particular passkey credential.
-- [class ASPasswordCredentialIdentity](aspasswordcredentialidentity.md)
+- [class ASPasswordCredentialIdentity](../aspasswordcredentialidentity.md)
   A description that uniquely identifies a particular password credential.
 
 

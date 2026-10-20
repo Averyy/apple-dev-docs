@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies the tool in the picker.
 
@@ -23,7 +24,8 @@ For example, you might use the name `com.example.example-company.custom-tool`. I
 
 ## See Also
 
-- [var name: String](pktoolpickercustomitem/configuration-swift.struct/name.md)
+### Identifying the custom tool
+- [var name: String](./name.md)
   A short string to show as the name of the tool in the UI.
 
 

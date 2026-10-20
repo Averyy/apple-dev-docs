@@ -1,7 +1,8 @@
 # isExplicitContent
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the list item displays its explicit content indicator.
 
@@ -16,19 +17,24 @@ A Boolean value that determines whether the list item displays its explicit cont
 var isExplicitContent: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isExplicitContent) BOOL explicitContent;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the list item displays an explicit content indicator beside its primary text. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](../../Swift/true.md), the list item displays an explicit content indicator beside its primary text. The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isPlaying: Bool](cplistitem/isplaying.md)
+### Managing Playback Information
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that determines whether the list item displays its Now Playing indicator.
-- [var playingIndicatorLocation: CPListItemPlayingIndicatorLocation](cplistitem/playingindicatorlocation.md)
+- [var playingIndicatorLocation: CPListItemPlayingIndicatorLocation](./playingindicatorlocation.md)
   The location where the list item displays its Now Playing indicator.
-- [enum CPListItemPlayingIndicatorLocation](cplistitemplayingindicatorlocation.md)
+- [enum CPListItemPlayingIndicatorLocation](../cplistitemplayingindicatorlocation.md)
   The locations where a list item can display the Now Playing indicator.
-- [var playbackProgress: CGFloat](cplistitem/playbackprogress.md)
+- [var playbackProgress: CGFloat](./playbackprogress.md)
   The playback progress status for the content that the list item represents.
 
 

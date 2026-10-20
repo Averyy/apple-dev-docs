@@ -1,7 +1,8 @@
 # process(_:localization:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies a platform-specific rules to the resource at the given path.
 
@@ -24,7 +25,7 @@ Use the `process` rule to process resources at the given path according to the p
 
 If the given path represents a directory, Swift Package Manager applies the process rule recursively to each file in the directory.
 
-If possible, use this rule instead of [`copy(_:)`](resource/copy(_:).md).
+If possible, use this rule instead of [`copy(_:)`](./copy%28_%29.md).
 
 ## Parameters
 
@@ -33,11 +34,12 @@ If possible, use this rule instead of [`copy(_:)`](resource/copy(_:).md).
 
 ## See Also
 
-- [Resource.Localization](resource/localization.md)
+### Applying Rules
+- [Resource.Localization](./localization.md)
   Defines the explicit type of localization for resources.
-- [static func copy(String) -> Resource](resource/copy(_:).md)
+- [static func copy(String) -> Resource](./copy%28_%29.md)
   Applies the copy rule to a resource at the given path.
-- [static func embedInCode(String) -> Resource](resource/embedincode(_:).md)
+- [static func embedInCode(String) -> Resource](./embedincode%28_%29.md)
   Applies the embed rule to a resource at the given path.
 
 

@@ -1,7 +1,8 @@
 # GL_CLAMP_TO_EDGE
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_CLAMP_TO_EDGE: Int32 { get }
+```
+
+```c
+#define GL_CLAMP_TO_EDGE
 ```
 
 

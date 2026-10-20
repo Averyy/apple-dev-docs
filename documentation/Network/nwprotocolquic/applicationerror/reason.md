@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The QUIC application error reason.
 
@@ -22,7 +23,8 @@ let reason: String?
 
 ## See Also
 
-- [let code: UInt64](nwprotocolquic/applicationerror/code.md)
+### Inspecting Application Errors
+- [let code: UInt64](./code.md)
   The QUIC application error code.
 
 

@@ -1,7 +1,8 @@
 # isSearching
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the search is in progress.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the search is in progress.
 var isSearching: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSearching) BOOL searching;
+```
+
 #### Discussion
 
-The search object sets the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) when you initiate a search. It remains in that state until the search object delivers search results (or an appropriate error), at which time the search object sets the value of the property to [`false`](https://developer.apple.com/documentation/swift/false).
+The search object sets the value of this property to [`true`](../../Swift/true.md) when you initiate a search. It remains in that state until the search object delivers search results (or an appropriate error), at which time the search object sets the value of the property to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func start(completionHandler: (MKLocalSearch.Response?, (any Error)?) -> Void)](mklocalsearch/start(completionhandler:).md)
+### Performing the search
+- [func start(completionHandler: (MKLocalSearch.Response?, (any Error)?) -> Void)](./start%28completionhandler%29.md)
   Starts the search and delivers the results to the specified completion handler.
-- [MKLocalSearch.CompletionHandler](mklocalsearch/completionhandler.md)
+- [MKLocalSearch.CompletionHandler](./completionhandler.md)
   A completion handler block for a search operation.
-- [func cancel()](mklocalsearch/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels an in-progress search operation.
 
 

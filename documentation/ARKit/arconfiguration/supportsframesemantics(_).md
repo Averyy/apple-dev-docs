@@ -1,7 +1,8 @@
 # supportsFrameSemantics(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Checks whether a particular feature is supported.
 
@@ -15,15 +16,19 @@ Checks whether a particular feature is supported.
 class func supportsFrameSemantics(_ frameSemantics: ARConfiguration.FrameSemantics) -> Bool
 ```
 
+```objc
++ (BOOL) supportsFrameSemantics:(ARFrameSemantics) frameSemantics;
+```
+
 #### Return Value
 
 A boolean value that indicates whether the device supports the argument frame semantics.
 
 #### Discussion
 
-Call this function before attempting to enable a frame semantic on your app’s configuration. For example, if you call `supportsFrameSemantic(.sceneDepth)` on [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md), the function returns [`true`](https://developer.apple.com/documentation/swift/true) on devices that support the LiDAR scanner’s depth buffer.
+Call this function before attempting to enable a frame semantic on your app’s configuration. For example, if you call `supportsFrameSemantic(.sceneDepth)` on [`ARWorldTrackingConfiguration`](../arworldtrackingconfiguration.md), the function returns [`true`](../../Swift/true.md) on devices that support the LiDAR scanner’s depth buffer.
 
-> ⚠️ **Warning**:  Do not call this function on the superclass, [`ARConfiguration`](arconfiguration.md). Only configuration subclasses support frame semantics, such as those listed in `Choose your session's configuration`.
+> ⚠️ **Warning**:  Do not call this function on the superclass, [`ARConfiguration`](../arconfiguration.md). Only configuration subclasses support frame semantics, such as those listed in `Choose your session's configuration`.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ Call this function before attempting to enable a frame semantic on your app’s 
 
 ## See Also
 
-- [var frameSemantics: ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.property.md)
+### Enabling frame features
+- [var frameSemantics: ARConfiguration.FrameSemantics](./framesemantics-swift.property.md)
   The set of active semantics on the frame.
-- [ARConfiguration.FrameSemantics](arconfiguration/framesemantics-swift.struct.md)
+- [ARConfiguration.FrameSemantics](./framesemantics-swift.struct.md)
   Types of optional frame features you can enable in your app.
 
 

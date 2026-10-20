@@ -1,10 +1,11 @@
 # CAClockMessage
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,34 +13,39 @@
 enum CAClockMessage
 ```
 
+```c
+enum CAClockMessage : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [CAClockMessage.armed](caclockmessage/armed.md)
-- [CAClockMessage.disarmed](caclockmessage/disarmed.md)
-- [CAClockMessage.propertyChanged](caclockmessage/propertychanged.md)
-- [CAClockMessage.startTimeSet](caclockmessage/starttimeset.md)
-- [CAClockMessage.started](caclockmessage/started.md)
-- [CAClockMessage.stopped](caclockmessage/stopped.md)
-- [CAClockMessage.wrongSMPTEFormat](caclockmessage/wrongsmpteformat.md)
+- [CAClockMessage.armed](./caclockmessage/armed.md)
+- [CAClockMessage.disarmed](./caclockmessage/disarmed.md)
+- [CAClockMessage.propertyChanged](./caclockmessage/propertychanged.md)
+- [CAClockMessage.startTimeSet](./caclockmessage/starttimeset.md)
+- [CAClockMessage.started](./caclockmessage/started.md)
+- [CAClockMessage.stopped](./caclockmessage/stopped.md)
+- [CAClockMessage.wrongSMPTEFormat](./caclockmessage/wrongsmpteformat.md)
 ### Initializers
-- [init?(rawValue: UInt32)](caclockmessage/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./caclockmessage/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func CAClockAddListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](caclockaddlistener(_:_:_:).md)
-- [func CAClockRemoveListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](caclockremovelistener(_:_:_:).md)
-- [typealias CAClockListenerProc](caclocklistenerproc.md)
+### Adding and Removing Listeners
+- [func CAClockAddListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](./caclockaddlistener%28_,_,_%29.md)
+- [func CAClockRemoveListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](./caclockremovelistener%28_,_,_%29.md)
+- [typealias CAClockListenerProc](./caclocklistenerproc.md)
 
 
 ---

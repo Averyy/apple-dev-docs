@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly allocated scrubber object with the specified frame rectangle.
 
@@ -14,9 +15,14 @@ Initializes and returns a newly allocated scrubber object with the specified fra
 init(frame frameRect: NSRect)
 ```
 
+```objc
+- (instancetype) initWithFrame:(NSRect) frameRect;
+```
+
 ## See Also
 
-- [init(coder: NSCoder)](nsscrubber/init(coder:).md)
+### Initializing a scrubber
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Initializes and returns a newly allocated scrubber object from a storyboard or nib file.
 
 

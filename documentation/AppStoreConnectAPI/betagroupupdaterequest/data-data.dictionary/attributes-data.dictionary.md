@@ -1,7 +1,8 @@
 # BetaGroupUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the beta group update request.
 
@@ -10,13 +11,13 @@ Attributes whose values you’re changing as part of the beta group update reque
 
 ## Declaration
 
-```swift
+```
 object BetaGroupUpdateRequest.Data.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 1.6 release notes](app-store-connect-api-1-6-release-notes.md)
+- [App Store Connect API 1.6 release notes](../../app-store-connect-api-1-6-release-notes.md)
 
 ## Properties
 

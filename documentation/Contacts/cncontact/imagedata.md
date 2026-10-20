@@ -1,7 +1,8 @@
 # imageData
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The profile picture of a contact.
 
@@ -19,15 +20,28 @@ The profile picture of a contact.
 var imageData: Data? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * imageData;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSData * imageData;
+```
+
 #### Discussion
 
 It is recommended that you fetch this property only when you need to access its value, such as when you need to display the contact’s profile picture.
 
 ## See Also
 
-- [var thumbnailImageData: Data?](cncontact/thumbnailimagedata.md)
+### Getting Contact Images
+- [var thumbnailImageData: Data?](./thumbnailimagedata.md)
   The thumbnail version of the contact’s profile picture.
-- [var imageDataAvailable: Bool](cncontact/imagedataavailable.md)
+- [var imageDataAvailable: Bool](./imagedataavailable.md)
   A Boolean indicating whether a contact has a profile picture.
 
 

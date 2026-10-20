@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the command.
 
@@ -20,13 +21,14 @@ var duration: CMTime
 
 ## See Also
 
-- [var cameraID: String](setcameracommand/cameraid.md)
+### Instance Properties
+- [var cameraID: String](./cameraid.md)
   The camera ID to use for the duration of this command.
-- [var id: Int](setcameracommand/id.md)
+- [var id: Int](./id.md)
   A unique command ID for the entire immersive media file.
-- [var offset: CMTime?](setcameracommand/offset.md)
+- [var offset: CMTime?](./offset.md)
   Reserved for later use.
-- [var time: CMTime](setcameracommand/time.md)
+- [var time: CMTime](./time.md)
   The time this command starts during playback.
 
 

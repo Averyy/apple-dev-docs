@@ -1,7 +1,8 @@
 # NEIPv4Route
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The settings for an IPv4 route.
 
@@ -19,45 +20,50 @@ The settings for an IPv4 route.
 class NEIPv4Route
 ```
 
+```objc
+@interface NEIPv4Route : NSObject
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
 ## Topics
 
 ### Creating an IPv4 Route
-- [init(destinationAddress: String, subnetMask: String)](neipv4route/init(destinationaddress:subnetmask:).md)
-  Initialize the [`NEIPv4Route`](neipv4route.md) object.
-- [class func `default`() -> NEIPv4Route](neipv4route/default.md)
+- [init(destinationAddress: String, subnetMask: String)](./neipv4route/init%28destinationaddress,subnetmask%29.md)
+  Initialize the [`NEIPv4Route`](./neipv4route.md) object.
+- [class func `default`() -> NEIPv4Route](./neipv4route/default%28%29.md)
   A convenience method for creating the default IPv4 route.
 ### Accessing IPv4 Route Properties
-- [var destinationAddress: String](neipv4route/destinationaddress.md)
+- [var destinationAddress: String](./neipv4route/destinationaddress.md)
   The destination network address of the route.
-- [var destinationSubnetMask: String](neipv4route/destinationsubnetmask.md)
+- [var destinationSubnetMask: String](./neipv4route/destinationsubnetmask.md)
   The destination network mask of the route.
-- [var gatewayAddress: String?](neipv4route/gatewayaddress.md)
+- [var gatewayAddress: String?](./neipv4route/gatewayaddress.md)
   The address of the next-hop gateway of the route.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var includedRoutes: [NEIPv4Route]?](neipv4settings/includedroutes.md)
+### Routing network traffic
+- [var includedRoutes: [NEIPv4Route]?](./neipv4settings/includedroutes.md)
   The IPv4 network traffic that the system routes to the TUN interface.
-- [var excludedRoutes: [NEIPv4Route]?](neipv4settings/excludedroutes.md)
+- [var excludedRoutes: [NEIPv4Route]?](./neipv4settings/excludedroutes.md)
   The IPv4 network traffic that the system routes to the primary physical interface, not the TUN interface.
 
 

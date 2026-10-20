@@ -1,7 +1,8 @@
 # radiusBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns a reference to a buffer containing the curve radius for each control point.
 
@@ -19,11 +20,15 @@ Assigns a reference to a buffer containing the curve radius for each control poi
 var radiusBuffer: MTL4BufferRange { get set }
 ```
 
+```objc
+@property (nonatomic) MTL4BufferRange radiusBuffer;
+```
+
 #### Discussion
 
-Metal interpolates curve radii according to the basis function you specify via [`curveBasis`](mtl4accelerationstructurecurvegeometrydescriptor/curvebasis.md).
+Metal interpolates curve radii according to the basis function you specify via [`curveBasis`](./curvebasis.md).
 
-You are responsible for ensuring the type of each radius matches the type property [`radiusFormat`](mtl4accelerationstructurecurvegeometrydescriptor/radiusformat.md) specifies, that each radius is at least zero, and that the buffer address of the range is not zero.
+You are responsible for ensuring the type of each radius matches the type property [`radiusFormat`](./radiusformat.md) specifies, that each radius is at least zero, and that the buffer address of the range is not zero.
 
 
 ---

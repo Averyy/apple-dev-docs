@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the collection, suitable for debugging.
 

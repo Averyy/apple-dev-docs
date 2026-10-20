@@ -1,7 +1,8 @@
 # chooseIdentityPanelShowHelp(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implements custom help behavior for the modal panel.
 
@@ -14,9 +15,13 @@ Implements custom help behavior for the modal panel.
 func chooseIdentityPanelShowHelp(_ sender: SFChooseIdentityPanel!) -> Bool
 ```
 
+```objc
+- (BOOL) chooseIdentityPanelShowHelp:(SFChooseIdentityPanel *) sender;
+```
+
 #### Discussion
 
-You can use this delegate method to implement custom help if you call the [`setShowsHelp(_:)`](https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/setshowshelp(_:)) method to display a help button in the sheet or panel. If you are not implementing custom help, do not implement this method.
+You can use this delegate method to implement custom help if you call the [`setShowsHelp(_:)`](../../SecurityInterface/sfchooseidentitypanel/setshowshelp%28_%29.md) method to display a help button in the sheet or panel. If you are not implementing custom help, do not implement this method.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ You can use this delegate method to implement custom help if you call the [`setS
 
 ## See Also
 
-- [func setShowsHelp(Bool)](../securityinterface/sfchooseidentitypanel/setshowshelp(_:).md)
+### Related Documentation
+- [func setShowsHelp(Bool)](../../SecurityInterface/sfchooseidentitypanel/setshowshelp%28_%29.md)
   Displays a Help button in the sheet or panel.
-- [var delegate: (any NSWindowDelegate)?](../appkit/nswindow/delegate.md)
+- [var delegate: (any NSWindowDelegate)?](../../AppKit/nswindow/delegate.md)
   The window’s delegate.
 
 

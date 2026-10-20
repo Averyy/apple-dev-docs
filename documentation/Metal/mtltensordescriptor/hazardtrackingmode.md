@@ -1,7 +1,8 @@
 # hazardTrackingMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that configures the hazard tracking of tensors you create with this descriptor.
 
@@ -19,9 +20,13 @@ A value that configures the hazard tracking of tensors you create with this desc
 var hazardTrackingMode: MTLHazardTrackingMode { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLHazardTrackingMode hazardTrackingMode;
+```
+
 #### Discussion
 
-The default value of this property is [`MTLHazardTrackingMode.default`](mtlhazardtrackingmode/default.md).
+The default value of this property is [`MTLHazardTrackingMode.default`](../mtlhazardtrackingmode/default.md).
 
 
 ---

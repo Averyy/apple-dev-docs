@@ -1,7 +1,8 @@
 # transportControlsSpeed
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current playback speed.
 
@@ -12,6 +13,10 @@ The current playback speed.
 
 ```swift
 var transportControlsSpeed: AVCaptureDevice.TransportControlsSpeed { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVCaptureDeviceTransportControlsSpeed transportControlsSpeed;
 ```
 
 #### Discussion
@@ -29,15 +34,16 @@ This property is key-value observable.
 
 ## See Also
 
-- [var transportControlsSupported: Bool](avcapturedevice/transportcontrolssupported.md)
+### Controlling transport behavior
+- [var transportControlsSupported: Bool](./transportcontrolssupported.md)
   A Boolean value that indicates whether the device supports transport control commands.
-- [var transportControlsPlaybackMode: AVCaptureDevice.TransportControlsPlaybackMode](avcapturedevice/transportcontrolsplaybackmode-swift.property.md)
+- [var transportControlsPlaybackMode: AVCaptureDevice.TransportControlsPlaybackMode](./transportcontrolsplaybackmode-swift.property.md)
   The current playback mode.
-- [func setTransportControlsPlaybackMode(AVCaptureDevice.TransportControlsPlaybackMode, speed: AVCaptureDevice.TransportControlsSpeed)](avcapturedevice/settransportcontrolsplaybackmode(_:speed:).md)
+- [func setTransportControlsPlaybackMode(AVCaptureDevice.TransportControlsPlaybackMode, speed: AVCaptureDevice.TransportControlsSpeed)](./settransportcontrolsplaybackmode%28_,speed%29.md)
   Sets the transport control’s playback mode and speed.
-- [AVCaptureDevice.TransportControlsPlaybackMode](avcapturedevice/transportcontrolsplaybackmode-swift.enum.md)
+- [AVCaptureDevice.TransportControlsPlaybackMode](./transportcontrolsplaybackmode-swift.enum.md)
   Constants that indicate the transport control’s current mode of playback, if it has one.
-- [AVCaptureDevice.TransportControlsSpeed](avcapturedevice/transportcontrolsspeed-swift.typealias.md)
+- [AVCaptureDevice.TransportControlsSpeed](./transportcontrolsspeed-swift.typealias.md)
   A constant that specifies speed of transport controls.
 
 

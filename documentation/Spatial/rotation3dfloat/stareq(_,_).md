@@ -1,7 +1,8 @@
 # *=(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Calculates the product of two rotations and stores the result in the left-hand-side variable.
 

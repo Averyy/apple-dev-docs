@@ -1,7 +1,8 @@
 # commandDefinitions
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of command definitions used by Xcode to associate command names with their implementation in an extension.
 
@@ -14,13 +15,18 @@ The array of command definitions used by Xcode to associate command names with t
 optional var commandDefinitions: [[XCSourceEditorCommandDefinitionKey : Any]] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSDictionary<NSString *,id> *> * commandDefinitions;
+```
+
 #### Discussion
 
 Implement this property when you need to override the command definitions specified in your extension target’s Info.plist file. There are no guarantees about the thread or queue on which this property is accessed.
 
 ## See Also
 
-- [struct XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey.md)
+### Related Documentation
+- [struct XCSourceEditorCommandDefinitionKey](../xcsourceeditorcommanddefinitionkey.md)
   A key in the dictionary that defines a source editor command.
 
 

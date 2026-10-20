@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 People can’t interact with the view behind a presentation.
 
@@ -22,11 +23,12 @@ static var disabled: PresentationBackgroundInteraction { get }
 
 ## See Also
 
-- [static var automatic: PresentationBackgroundInteraction](presentationbackgroundinteraction/automatic.md)
+### Getting interaction types
+- [static var automatic: PresentationBackgroundInteraction](./automatic.md)
   The default background interaction for the presentation.
-- [static var enabled: PresentationBackgroundInteraction](presentationbackgroundinteraction/enabled.md)
+- [static var enabled: PresentationBackgroundInteraction](./enabled.md)
   People can interact with the view behind a presentation.
-- [static func enabled(upThrough: PresentationDetent) -> PresentationBackgroundInteraction](presentationbackgroundinteraction/enabled(upthrough:).md)
+- [static func enabled(upThrough: PresentationDetent) -> PresentationBackgroundInteraction](./enabled%28upthrough%29.md)
   People can interact with the view behind a presentation up through a specified detent.
 
 

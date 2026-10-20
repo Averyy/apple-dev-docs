@@ -1,14 +1,15 @@
 # kSSCSeqCmd_PREVENT_ALLOW_MEDIUM_REMOVAL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSSCSeqCmd_PREVENT_ALLOW_MEDIUM_REMOVAL = 0x1E
 ```
 

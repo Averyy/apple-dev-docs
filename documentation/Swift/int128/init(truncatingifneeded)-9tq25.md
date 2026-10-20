@@ -1,7 +1,8 @@
 # init(truncatingIfNeeded:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from the bit pattern of the given instance by sign-extending or truncating to fit this type.
 

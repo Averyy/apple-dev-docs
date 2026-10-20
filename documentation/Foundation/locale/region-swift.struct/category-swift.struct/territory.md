@@ -1,7 +1,8 @@
 # territory
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Category representing a territory.
 

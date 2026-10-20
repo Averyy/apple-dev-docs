@@ -1,7 +1,8 @@
 # filterString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string of text to filter the results against.
 
@@ -12,6 +13,10 @@ A string of text to filter the results against.
 
 ```swift
 var filterString: String { get set }
+```
+
+```objc
+@property (copy) NSString * filterString;
 ```
 
 

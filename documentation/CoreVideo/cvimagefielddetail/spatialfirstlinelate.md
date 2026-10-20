@@ -1,7 +1,8 @@
 # CVImageFieldDetail.spatialFirstLineLate
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image buffer contains interleaved fields. The first line of image data corresponds to the first bottom, even-numbered, field.
 

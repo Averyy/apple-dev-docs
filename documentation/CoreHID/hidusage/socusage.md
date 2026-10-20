@@ -1,7 +1,8 @@
 # HIDUsage.SOCUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,29 +16,29 @@ enum SOCUsage
 ## Topics
 
 ### Enumeration Cases
-- [HIDUsage.SOCUsage.fileOffsetInBytes](hidusage/socusage/fileoffsetinbytes.md)
-- [HIDUsage.SOCUsage.filePayload](hidusage/socusage/filepayload.md)
-- [HIDUsage.SOCUsage.filePayloadContainsLastBytes](hidusage/socusage/filepayloadcontainslastbytes.md)
-- [HIDUsage.SOCUsage.filePayloadSizeInBytes](hidusage/socusage/filepayloadsizeinbytes.md)
-- [HIDUsage.SOCUsage.fileTransferSizeMaxInBytes](hidusage/socusage/filetransfersizemaxinbytes.md)
-- [HIDUsage.SOCUsage.fileTransferStop](hidusage/socusage/filetransferstop.md)
-- [HIDUsage.SOCUsage.fileTransferTillEnd](hidusage/socusage/filetransfertillend.md)
-- [HIDUsage.SOCUsage.firmwareFileId](hidusage/socusage/firmwarefileid.md)
-- [HIDUsage.SOCUsage.firmwareTransfer](hidusage/socusage/firmwaretransfer.md)
-- [HIDUsage.SOCUsage.socControl](hidusage/socusage/soccontrol.md)
+- [HIDUsage.SOCUsage.fileOffsetInBytes](./socusage/fileoffsetinbytes.md)
+- [HIDUsage.SOCUsage.filePayload](./socusage/filepayload.md)
+- [HIDUsage.SOCUsage.filePayloadContainsLastBytes](./socusage/filepayloadcontainslastbytes.md)
+- [HIDUsage.SOCUsage.filePayloadSizeInBytes](./socusage/filepayloadsizeinbytes.md)
+- [HIDUsage.SOCUsage.fileTransferSizeMaxInBytes](./socusage/filetransfersizemaxinbytes.md)
+- [HIDUsage.SOCUsage.fileTransferStop](./socusage/filetransferstop.md)
+- [HIDUsage.SOCUsage.fileTransferTillEnd](./socusage/filetransfertillend.md)
+- [HIDUsage.SOCUsage.firmwareFileId](./socusage/firmwarefileid.md)
+- [HIDUsage.SOCUsage.firmwareTransfer](./socusage/firmwaretransfer.md)
+- [HIDUsage.SOCUsage.socControl](./socusage/soccontrol.md)
 ### Type Properties
-- [static let page: UInt16](hidusage/socusage/page.md)
+- [static let page: UInt16](./socusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(probeGroup:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a diffuse light probe receiver component.
 
@@ -21,7 +22,7 @@ init(probeGroup: Entity)
 
 ## Parameters
 
-- `probeGroup`: An entity with a [`DiffuseLightProbeGroupComponent`](diffuselightprobegroupcomponent.md) attached.
+- `probeGroup`: An entity with a [`DiffuseLightProbeGroupComponent`](../diffuselightprobegroupcomponent.md) attached.
 
 
 ---

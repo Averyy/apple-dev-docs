@@ -1,23 +1,28 @@
 # CFTypeID
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for unique, constant integer values that identify particular Core Foundation opaque types.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CFTypeID = UInt
+```
+
+```c
+typedef unsigned long CFTypeID;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ Because the value for a type ID can change from release to release, your code sh
 
 ## See Also
 
-- [typealias CFHashCode](cfhashcode.md)
+### Data Types
+- [typealias CFHashCode](./cfhashcode.md)
   A type for hash codes returned by the `CFHash` function.
 
 

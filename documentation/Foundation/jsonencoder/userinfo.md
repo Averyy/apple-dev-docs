@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary you use to customize the encoding process by providing contextual information.
 
@@ -23,13 +24,14 @@ var userInfo: [CodingUserInfoKey : any Sendable] { get set }
 
 ## See Also
 
-- [var outputFormatting: JSONEncoder.OutputFormatting](jsonencoder/outputformatting-swift.property.md)
+### Customizing Encoding
+- [var outputFormatting: JSONEncoder.OutputFormatting](./outputformatting-swift.property.md)
   A value that determines the readability, size, and element order of the encoded JSON object.
-- [JSONEncoder.OutputFormatting](jsonencoder/outputformatting-swift.struct.md)
+- [JSONEncoder.OutputFormatting](./outputformatting-swift.struct.md)
   The output formatting options that determine the readability, size, and element order of an encoded JSON object.
-- [var keyEncodingStrategy: JSONEncoder.KeyEncodingStrategy](jsonencoder/keyencodingstrategy-swift.property.md)
+- [var keyEncodingStrategy: JSONEncoder.KeyEncodingStrategy](./keyencodingstrategy-swift.property.md)
   A value that determines how to encode a  type’s coding keys as JSON keys.
-- [JSONEncoder.KeyEncodingStrategy](jsonencoder/keyencodingstrategy-swift.enum.md)
+- [JSONEncoder.KeyEncodingStrategy](./keyencodingstrategy-swift.enum.md)
   The values that determine how to encode a type’s coding keys as JSON keys.
 
 

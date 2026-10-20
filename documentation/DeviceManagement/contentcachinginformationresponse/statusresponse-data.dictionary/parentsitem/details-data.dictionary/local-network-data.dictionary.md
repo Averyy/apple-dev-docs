@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.StatusResponse.ParentsItem.Details.Local-network
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes the parent content cache’s connection to its local network.
 
@@ -10,7 +11,7 @@ A dictionary that describes the parent content cache’s connection to its local
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details.Local-network
 ```
 
@@ -19,9 +20,12 @@ object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details.Loca
 - `speed` (integer): The transfer speed, in megabits per second, of the parent content cache’s connection to its local network.
 - `wired` (boolean): If `true`, the parent content cache has a wired connection to its local network. If `false`, it has a wireless connection; for example, Wi-Fi.
 
+  **Default**: `false`
+
 ## See Also
 
-- [object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details.Capabilities](contentcachinginformationresponse/statusresponse-data.dictionary/parentsitem/details-data.dictionary/capabilities-data.dictionary.md)
+### Objects
+- [object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details.Capabilities](./capabilities-data.dictionary.md)
   A dictionary that describes the capabilities of the parent content cache.
 
 

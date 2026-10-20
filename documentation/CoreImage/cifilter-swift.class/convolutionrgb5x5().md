@@ -1,7 +1,8 @@
 # convolutionRGB5X5()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies a convolution 5 x 5 filter to the `RGB` components of an image.
 
@@ -19,16 +20,20 @@ Applies a convolution 5 x 5 filter to the `RGB` components of an image.
 class func convolutionRGB5X5() -> any CIFilter & CIConvolution
 ```
 
+```objc
++ (CIFilter<CIConvolution> *) convolutionRGB5X5Filter;
+```
+
 #### Return Value
 
-This method applies a 5 x 5 convolution to the `RGB` components image. The effect uses a 5 x 5 area surrounding an input pixel, the pixel itself, and those within a distance of two pixels horizontally and vertically. The effect repeats this for every pixel within the image. The work area is then combined with the weight property vector to produce the processed image. This filter differs from the [`convolution5X5()`](cifilter-swift.class/convolution5x5().md) filter, which processes all of the color components including the alpha component.
+This method applies a 5 x 5 convolution to the `RGB` components image. The effect uses a 5 x 5 area surrounding an input pixel, the pixel itself, and those within a distance of two pixels horizontally and vertically. The effect repeats this for every pixel within the image. The work area is then combined with the weight property vector to produce the processed image. This filter differs from the [`convolution5X5()`](./convolution5x5%28%29.md) filter, which processes all of the color components including the alpha component.
 
 #### Discussion
 
 The convolution-RGB 5 x 5 filter uses the following properties:
 
-- **`inputImage`**: A [`CIImage`](ciimage.md) containing the image to process.
-- **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
+- **`inputImage`**: A [`CIImage`](../ciimage.md) containing the image to process.
+- **`weights`**: A [`CIVector`](../civector.md) representing the convolution kernel.
 - **`bias`**: A `float` representing the value that’s added to each output pixel.
 
 > **Note**:  When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
@@ -53,27 +58,28 @@ func convolutionRGB5X5(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 5 x 5 box blur convolution kernel. Fine detail in the image is now blurred.](/images/com.apple.coreimage/media-4407325@2x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 5 x 5 box blur convolution kernel. Fine detail in the image is now blurred.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-4407325@2x.png)
 
 ## See Also
 
-- [class func convolution3X3() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution3x3.md)
+### Filters
+- [class func convolution3X3() -> any CIFilter & CIConvolution](./convolution3x3%28%29.md)
   Applies a convolution 3 x 3 filter to the `RGBA` components of an image.
-- [class func convolution5X5() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution5x5.md)
+- [class func convolution5X5() -> any CIFilter & CIConvolution](./convolution5x5%28%29.md)
   Applies a convolution 5 x 5 filter to the `RGBA` components image.
-- [class func convolution7X7() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution7x7.md)
+- [class func convolution7X7() -> any CIFilter & CIConvolution](./convolution7x7%28%29.md)
   Applies a convolution 7 x 7 filter to the `RGBA` color components of an image.
-- [class func convolution9Horizontal() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution9horizontal.md)
+- [class func convolution9Horizontal() -> any CIFilter & CIConvolution](./convolution9horizontal%28%29.md)
   Applies a convolution-9 horizontal filter to the `RGBA` components of an image.
-- [class func convolution9Vertical() -> any CIFilter & CIConvolution](cifilter-swift.class/convolution9vertical.md)
+- [class func convolution9Vertical() -> any CIFilter & CIConvolution](./convolution9vertical%28%29.md)
   Applies a convolution-9 vertical filter to the `RGBA` components of an image.
-- [class func convolutionRGB3X3() -> any CIFilter & CIConvolution](cifilter-swift.class/convolutionrgb3x3.md)
+- [class func convolutionRGB3X3() -> any CIFilter & CIConvolution](./convolutionrgb3x3%28%29.md)
   Applies a convolution 3 x 3 filter to the `RGB` components of an image.
-- [class func convolutionRGB7X7() -> any CIFilter & CIConvolution](cifilter-swift.class/convolutionrgb7x7.md)
+- [class func convolutionRGB7X7() -> any CIFilter & CIConvolution](./convolutionrgb7x7%28%29.md)
   Applies a convolution 7 x 7 filter to the RGB components of an image.
-- [class func convolutionRGB9Horizontal() -> any CIFilter & CIConvolution](cifilter-swift.class/convolutionrgb9horizontal.md)
+- [class func convolutionRGB9Horizontal() -> any CIFilter & CIConvolution](./convolutionrgb9horizontal%28%29.md)
   Applies a convolution 9 x 1 filter to the RGB components of an image.
-- [class func convolutionRGB9Vertical() -> any CIFilter & CIConvolution](cifilter-swift.class/convolutionrgb9vertical.md)
+- [class func convolutionRGB9Vertical() -> any CIFilter & CIConvolution](./convolutionrgb9vertical%28%29.md)
   Applies a convolution 1 x 9 filter to the RGB components of an image.
 
 

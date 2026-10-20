@@ -1,7 +1,8 @@
 # kAXTabGroupRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A tab view.
 
@@ -12,6 +13,10 @@ A tab view.
 
 ```swift
 var kAXTabGroupRole: String { get }
+```
+
+```c
+#define kAXTabGroupRole
 ```
 
 

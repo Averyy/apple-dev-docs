@@ -1,7 +1,8 @@
 # GameCenterAchievementImage.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementImage.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementImage.Relationships.GameCenterAchievementLocalization](gamecenterachievementimage/relationships-data.dictionary/gamecenterachievementlocalization-data.dictionary.md)
+- [object GameCenterAchievementImage.Relationships.GameCenterAchievementLocalization](./relationships-data.dictionary/gamecenterachievementlocalization-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object GameCenterAchievementImage.Relationships
 
 ## See Also
 
-- [object GameCenterAchievementImage.Attributes](gamecenterachievementimage/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementImage.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a achievement resource.
 
 

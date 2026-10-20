@@ -1,17 +1,22 @@
 # publicID
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publicID string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var publicID: Unmanaged<CFString>!
+```
+
+```c
+CFStringRef publicID;
 ```
 
 

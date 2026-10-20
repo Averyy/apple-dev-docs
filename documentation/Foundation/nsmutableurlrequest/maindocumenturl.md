@@ -1,7 +1,8 @@
 # mainDocumentURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main document URL.
 
@@ -20,6 +21,10 @@ The main document URL.
 var mainDocumentURL: URL? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSURL * mainDocumentURL;
+```
+
 #### Discussion
 
 The caller should set the main document URL to an appropriate main document, if known. For example, when loading a web page the URL of the HTML document for the top-level frame would be appropriate. This URL will be used for the “only from same domain as main document” cookie accept policy.
@@ -28,13 +33,14 @@ The caller should set the main document URL to an appropriate main document, if 
 
 ## See Also
 
-- [var httpMethod: String](nsmutableurlrequest/httpmethod.md)
+### Accessing request components
+- [var httpMethod: String](./httpmethod.md)
   The HTTP request method.
-- [var url: URL?](nsmutableurlrequest/url.md)
+- [var url: URL?](./url.md)
   The URL being requested.
-- [var httpBody: Data?](nsmutableurlrequest/httpbody.md)
+- [var httpBody: Data?](./httpbody.md)
   The request body.
-- [var httpBodyStream: InputStream?](nsmutableurlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./httpbodystream.md)
   The request body as an input stream.
 
 

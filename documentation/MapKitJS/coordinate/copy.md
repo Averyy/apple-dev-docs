@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the coordinate.
 
@@ -10,7 +11,7 @@ Returns a copy of the coordinate.
 
 ## Declaration
 
-```swift
+```
 copy(): Coordinate;
 ```
 
@@ -20,11 +21,12 @@ A copy of the coordinate.
 
 ## See Also
 
-- [equals(anotherCoordinate)](coordinate/equals.md)
+### Comparing, copying, and converting coordinates
+- [equals(anotherCoordinate)](./equals.md)
   Returns a Boolean value indicating whether two coordinates are equal.
-- [toMapPoint()](coordinate/tomappoint.md)
+- [toMapPoint()](./tomappoint.md)
   Returns the map point that corresponds to the coordinate.
-- [toUnwrappedMapPoint()](coordinate/tounwrappedmappoint.md)
+- [toUnwrappedMapPoint()](./tounwrappedmappoint.md)
   Returns the unwrapped map point that corresponds to the coordinate.
 
 

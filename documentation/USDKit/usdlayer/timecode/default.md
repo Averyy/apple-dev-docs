@@ -1,7 +1,8 @@
 # default
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default time code (0.0).
 

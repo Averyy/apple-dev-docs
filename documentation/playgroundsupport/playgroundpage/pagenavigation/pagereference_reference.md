@@ -1,7 +1,8 @@
 # PlaygroundPage.PageNavigation.pageReference(reference:)
 
 **Framework**: Playground Support  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 **Availability**:
 - Xcode 10.2+

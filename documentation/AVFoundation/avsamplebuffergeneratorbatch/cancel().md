@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels any I/O for this batch.
 
@@ -18,6 +19,10 @@ Cancels any I/O for this batch.
 
 ```swift
 func cancel()
+```
+
+```objc
+- (void) cancel;
 ```
 
 #### Discussion

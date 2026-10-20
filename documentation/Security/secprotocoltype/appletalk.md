@@ -1,7 +1,8 @@
 # SecProtocolType.appleTalk
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates AFP over AppleTalk.
 
@@ -13,6 +14,10 @@ Indicates AFP over AppleTalk.
 
 ```swift
 case appleTalk
+```
+
+```c
+kSecProtocolTypeAppleTalk
 ```
 
 

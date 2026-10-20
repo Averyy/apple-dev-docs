@@ -1,7 +1,8 @@
 # ManagedPackageLibrary
 
 **Framework**: ManagedAppDistribution  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a library of managed packages.
 
@@ -18,20 +19,20 @@ final class ManagedPackageLibrary
 ## Topics
 
 ### Structures
-- [ManagedPackageLibrary.ManagedPackages](managedpackagelibrary/managedpackages.md)
+- [ManagedPackageLibrary.ManagedPackages](./managedpackagelibrary/managedpackages.md)
   An array of managed apps that updates as apps become available or unavailable.
 ### Instance Properties
-- [var availablePackages: ManagedPackageLibrary.ManagedPackages](managedpackagelibrary/availablepackages.md)
+- [var availablePackages: ManagedPackageLibrary.ManagedPackages](./managedpackagelibrary/availablepackages.md)
   The current managed apps available to this device.
 ### Type Properties
-- [static let currentDistributor: ManagedPackageLibrary](managedpackagelibrary/currentdistributor.md)
+- [static let currentDistributor: ManagedPackageLibrary](./managedpackagelibrary/currentdistributor.md)
   The library provider for managed apps on this device.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

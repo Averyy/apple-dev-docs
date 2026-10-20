@@ -1,7 +1,8 @@
 # export(to:as:isolation:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the asset to the output location in the specified file type.
 
@@ -22,15 +23,15 @@ final func export(to url: URL, as fileType: AVFileType, isolation: isolated (any
 
 #### Discussion
 
-This method throws an error if you cancel the export or you specify a file type value that isn’t contained in the session’s [`supportedFileTypes`](avassetexportsession/supportedfiletypes.md).
+This method throws an error if you cancel the export or you specify a file type value that isn’t contained in the session’s [`supportedFileTypes`](./supportedfiletypes.md).
 
-You can monitor the status of an export by calling the [`states(updateInterval:)`](avassetexportsession/states(updateinterval:).md) method.
+You can monitor the status of an export by calling the [`states(updateInterval:)`](./states%28updateinterval%29.md) method.
 
-> **Note**:  You can cancel an in-progress export by calling [`cancel()`](https://developer.apple.com/documentation/swift/task/cancel()) on the [`Task`](https://developer.apple.com/documentation/swift/task) or parent task that initiated the operation.
+> **Note**:  You can cancel an in-progress export by calling [`cancel()`](../../Swift/task/cancel%28%29.md) on the [`Task`](../../Swift/task.md) or parent task that initiated the operation.
 
 ## Parameters
 
-- `url`: An output location to write the exported media. You can use the [`preferredFilenameExtension`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/preferredfilenameextension) property of [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct) to determine an appropriate file extension for the specified file type.
+- `url`: An output location to write the exported media. You can use the [`preferredFilenameExtension`](../../UniformTypeIdentifiers/uttype-swift.struct/preferredfilenameextension.md) property of [`UTType`](../../UniformTypeIdentifiers/uttype-swift.struct.md) to determine an appropriate file extension for the specified file type.
 - `fileType`: The type of file for the session to write.
 - `isolation`: The isolation context.
 

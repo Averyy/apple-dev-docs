@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType.bonus
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment contains bonus content, such as a post-credits scene or supplemental material.
 
@@ -14,6 +15,10 @@ The segment contains bonus content, such as a post-credits scene or supplemental
 
 ```swift
 case bonus
+```
+
+```c
+AVPlaybackUserInterfaceTimelineSegmentTypeBonus
 ```
 
 

@@ -1,7 +1,8 @@
 # fetchDataRecords(ofTypes:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the specified types of records from the data store.
 
@@ -15,7 +16,15 @@ Fetches the specified types of records from the data store.
 ## Declaration
 
 ```swift
+func fetchDataRecords(ofTypes dataTypes: Set<String>, completionHandler: @escaping @MainActor @Sendable ([WKWebsiteDataRecord]) -> Void)
+```
+
+```swift
 func dataRecords(ofTypes dataTypes: Set<String>) async -> [WKWebsiteDataRecord]
+```
+
+```objc
+- (void) fetchDataRecordsOfTypes:(NSSet<NSString *> *) dataTypes completionHandler:(void (^)(NSArray<WKWebsiteDataRecord *> *)) completionHandler;
 ```
 
 #### Discussion
@@ -24,12 +33,15 @@ Call this method to retrieve information about the types of data that the websit
 
 ## Parameters
 
-- `dataTypes`: The types of records to fetch. For a list of all possible types, see [`Data Store Record Types`](data-store-record-types.md). To specify all types, specify the set returned by the [`allWebsiteDataTypes()`](wkwebsitedatastore/allwebsitedatatypes().md) method.
-- `completionHandler`: The completion handler block to execute asynchronously with the results. This block has no return value and takes the following parameter: - **dataRecordArray**: An array of [`WKWebsiteDataRecord`](wkwebsitedatarecord.md) objects. Each object in this array corresponds to data for one of the requested types. If no records of the requested types exist, this array is empty.
+- `dataTypes`: The types of records to fetch. For a list of all possible types, see [Data Store Record Types](../data-store-record-types.md). To specify all types, specify the set returned by the [`allWebsiteDataTypes()`](./allwebsitedatatypes%28%29.md) method.
+- `completionHandler`: The completion handler block to execute asynchronously with the results. This block has no return value and takes the following parameter:
+
+  - **dataRecordArray**: An array of [`WKWebsiteDataRecord`](../wkwebsitedatarecord.md) objects. Each object in this array corresponds to data for one of the requested types. If no records of the requested types exist, this array is empty.
 
 ## See Also
 
-- [class func allWebsiteDataTypes() -> Set<String>](wkwebsitedatastore/allwebsitedatatypes.md)
+### Retrieving specific types of data
+- [class func allWebsiteDataTypes() -> Set<String>](./allwebsitedatatypes%28%29.md)
   Returns the set of all the available data types.
 
 

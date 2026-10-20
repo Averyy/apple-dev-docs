@@ -1,12 +1,13 @@
 # NSApplication.TerminateReply
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that determine whether an app should terminate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,34 +15,39 @@ Constants that determine whether an app should terminate.
 enum TerminateReply
 ```
 
+```c
+enum NSApplicationTerminateReply : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSApplication.TerminateReply.terminateNow](nsapplication/terminatereply/terminatenow.md)
+- [NSApplication.TerminateReply.terminateNow](./terminatereply/terminatenow.md)
   It is OK to proceed with termination.
-- [NSApplication.TerminateReply.terminateCancel](nsapplication/terminatereply/terminatecancel.md)
+- [NSApplication.TerminateReply.terminateCancel](./terminatereply/terminatecancel.md)
   The app should not be terminated.
-- [NSApplication.TerminateReply.terminateLater](nsapplication/terminatereply/terminatelater.md)
+- [NSApplication.TerminateReply.terminateLater](./terminatereply/terminatelater.md)
 ### Initializers
-- [init?(rawValue: UInt)](nsapplication/terminatereply/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./terminatereply/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func applicationShouldTerminate(NSApplication) -> NSApplication.TerminateReply](nsapplicationdelegate/applicationshouldterminate(_:).md)
+### Terminating Applications
+- [func applicationShouldTerminate(NSApplication) -> NSApplication.TerminateReply](../nsapplicationdelegate/applicationshouldterminate%28_%29.md)
   Returns a value that indicates if the app should terminate.
-- [func applicationShouldTerminateAfterLastWindowClosed(NSApplication) -> Bool](nsapplicationdelegate/applicationshouldterminateafterlastwindowclosed(_:).md)
+- [func applicationShouldTerminateAfterLastWindowClosed(NSApplication) -> Bool](../nsapplicationdelegate/applicationshouldterminateafterlastwindowclosed%28_%29.md)
   Returns a Boolean value that indicates if the app terminates once the last window closes.
-- [func applicationWillTerminate(Notification)](nsapplicationdelegate/applicationwillterminate(_:).md)
+- [func applicationWillTerminate(Notification)](../nsapplicationdelegate/applicationwillterminate%28_%29.md)
   Tells the delegate that the app is about to terminate.
 
 

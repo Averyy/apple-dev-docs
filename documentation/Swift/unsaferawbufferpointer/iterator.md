@@ -1,7 +1,8 @@
 # UnsafeRawBufferPointer.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator over the bytes viewed by a raw buffer pointer.
 
@@ -24,17 +25,17 @@ struct Iterator
 ## Topics
 
 ### Default Implementations
-- [IteratorProtocol Implementations](unsaferawbufferpointer/iterator/iteratorprotocol-implementations.md)
-- [Sequence Implementations](unsaferawbufferpointer/iterator/sequence-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
+- [Sequence Implementations](./iterator/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sequence](sequence.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sequence](../sequence.md)
 
 
 ---

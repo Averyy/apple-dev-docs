@@ -1,9 +1,10 @@
 # samplePredicates
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A dictionary whose keys are [`HKSampleType`](hksampletype.md) instances and whose values are [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) instances.
+A dictionary whose keys are [`HKSampleType`](../hksampletype.md) instances and whose values are [`NSPredicate`](../../Foundation/nspredicate.md) instances.
 
 **Availability**:
 - iOS 8.0+
@@ -19,13 +20,18 @@ A dictionary whose keys are [`HKSampleType`](hksampletype.md) instances and whos
 var samplePredicates: [HKSampleType : NSPredicate]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<__kindof HKSampleType *,NSPredicate *> * samplePredicates;
+```
+
 #### Discussion
 
-The query uses this dictionary to perform complex tests against the correlation’s contents. For more information, see [`init(type:predicate:samplePredicates:completion:)`](hkcorrelationquery/init(type:predicate:samplepredicates:completion:).md).
+The query uses this dictionary to perform complex tests against the correlation’s contents. For more information, see [`init(type:predicate:samplePredicates:completion:)`](./init%28type,predicate,samplepredicates,completion%29.md).
 
 ## See Also
 
-- [var correlationType: HKCorrelationType](hkcorrelationquery/correlationtype.md)
+### Getting Property Data
+- [var correlationType: HKCorrelationType](./correlationtype.md)
   The type of correlation to search for.
 
 

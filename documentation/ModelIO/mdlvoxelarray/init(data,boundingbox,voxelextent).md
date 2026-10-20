@@ -1,7 +1,8 @@
 # init(data:boundingBox:voxelExtent:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a voxel array with the specified voxel data.
 
@@ -19,6 +20,10 @@ Initializes a voxel array with the specified voxel data.
 init(data voxelData: Data, boundingBox: MDLAxisAlignedBoundingBox, voxelExtent: Float)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) voxelData boundingBox:(MDLAxisAlignedBoundingBox) boundingBox voxelExtent:(float) voxelExtent;
+```
+
 #### Return Value
 
 A new voxel array.
@@ -29,15 +34,16 @@ The `boundingBox` parameter relates the integer grid of the newly created voxel 
 
 ## Parameters
 
-- `voxelData`: A data object containing an array of [`MDLVoxelIndex`](mdlvoxelindex.md) values, each of which describes the locations of voxels within the specified volume as well as their volumetric relationship to the object modeled by the voxel array.
+- `voxelData`: A data object containing an array of [`MDLVoxelIndex`](../mdlvoxelindex.md) values, each of which describes the locations of voxels within the specified volume as well as their volumetric relationship to the object modeled by the voxel array.
 - `boundingBox`: The extent of the voxel array’s volume in world coordinate space.
 - `voxelExtent`: The size of a single voxel in world coordinate space.
 
 ## See Also
 
-- [init(asset: MDLAsset, divisions: Int32, interiorShells: Int32, exteriorShells: Int32, patchRadius: Float)](mdlvoxelarray/init(asset:divisions:interiorshells:exteriorshells:patchradius:).md)
+### Creating a Voxel Array
+- [init(asset: MDLAsset, divisions: Int32, interiorShells: Int32, exteriorShells: Int32, patchRadius: Float)](./init%28asset,divisions,interiorshells,exteriorshells,patchradius%29.md)
   Initializes a voxel array that models the volume of 3D objects in the specified asset and creates the specified number of voxel shells.
-- [init(asset: MDLAsset, divisions: Int32, interiorNBWidth: Float, exteriorNBWidth: Float, patchRadius: Float)](mdlvoxelarray/init(asset:divisions:interiornbwidth:exteriornbwidth:patchradius:).md)
+- [init(asset: MDLAsset, divisions: Int32, interiorNBWidth: Float, exteriorNBWidth: Float, patchRadius: Float)](./init%28asset,divisions,interiornbwidth,exteriornbwidth,patchradius%29.md)
   Initializes a voxel array that models the volume of 3D objects in the specified asset, creating voxel shells for the specified distances from the object’s surface.
 
 

@@ -1,7 +1,8 @@
 # init(isEnabled:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scene accessory that presents non-interactive content on an external display with a binding for programmatic enablement.
 

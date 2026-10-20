@@ -1,7 +1,8 @@
 # init(bytes:deallocator:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a buffer map object to manage access to the specified memory.
 
@@ -19,6 +20,10 @@ Initializes a buffer map object to manage access to the specified memory.
 init(bytes: UnsafeMutableRawPointer, deallocator: (() -> Void)? = nil)
 ```
 
+```objc
+- (instancetype) initWithBytes:(void *) bytes deallocator:(void (^)()) deallocator;
+```
+
 #### Return Value
 
 A new buffer map object.
@@ -26,7 +31,9 @@ A new buffer map object.
 ## Parameters
 
 - `bytes`: A pointer to the data buffer to be managed by the buffer map.
-- `deallocator`: Model I/O calls this block when the buffer map object is deallocated. Use this block to unmap a shared buffer or perform other cleanup tasks. The block has no parameters and no return value.
+- `deallocator`: Model I/O calls this block when the buffer map object is deallocated. Use this block to unmap a shared buffer or perform other cleanup tasks.
+
+  The block has no parameters and no return value.
 
 
 ---

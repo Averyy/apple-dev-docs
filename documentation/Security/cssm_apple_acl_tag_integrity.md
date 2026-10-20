@@ -1,7 +1,8 @@
 # CSSM_APPLE_ACL_TAG_INTEGRITY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_APPLE_ACL_TAG_INTEGRITY: String { get }
+```
+
+```c
+#define CSSM_APPLE_ACL_TAG_INTEGRITY
 ```
 
 

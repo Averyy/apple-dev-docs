@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptor that the picker uses to determine which discovered accessories to display.
 
@@ -16,9 +17,13 @@ A descriptor that the picker uses to determine which discovered accessories to d
 var descriptor: ASDiscoveryDescriptor { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) ASDiscoveryDescriptor * descriptor;
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # deviceID
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A universally unique device identifier value.
 
@@ -15,11 +16,16 @@ A universally unique device identifier value.
 var deviceID: UUID { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSUUID * deviceID;
+```
+
 ## See Also
 
-- [var localizedName: String](cmioextensiondevice/localizedname.md)
+### Identifying a Device
+- [var localizedName: String](./localizedname.md)
   A localized name for a device.
-- [var legacyDeviceID: String](cmioextensiondevice/legacydeviceid.md)
+- [var legacyDeviceID: String](./legacydeviceid.md)
   A legacy device identifier.
 
 

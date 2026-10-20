@@ -1,7 +1,8 @@
 # instrumentClusterController(_:didChangeSpeedLimitSetting:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.4+
@@ -14,13 +15,18 @@
 optional func instrumentClusterController(_ instrumentClusterController: CPInstrumentClusterController, didChangeSpeedLimitSetting speedLimitSetting: CPInstrumentClusterSetting)
 ```
 
+```objc
+- (void) instrumentClusterController:(CPInstrumentClusterController *) instrumentClusterController didChangeSpeedLimitSetting:(CPInstrumentClusterSetting) speedLimitSetting;
+```
+
 ## See Also
 
-- [func instrumentClusterController(CPInstrumentClusterController, didChangeCompassSetting: CPInstrumentClusterSetting)](cpinstrumentclustercontrollerdelegate/instrumentclustercontroller(_:didchangecompasssetting:).md)
-- [func instrumentClusterControllerDidConnect(UIWindow)](cpinstrumentclustercontrollerdelegate/instrumentclustercontrollerdidconnect(_:).md)
-- [func instrumentClusterControllerDidDisconnectWindow(UIWindow)](cpinstrumentclustercontrollerdelegate/instrumentclustercontrollerdiddisconnectwindow(_:).md)
-- [func instrumentClusterControllerDidZoom(in: CPInstrumentClusterController)](cpinstrumentclustercontrollerdelegate/instrumentclustercontrollerdidzoom(in:).md)
-- [func instrumentClusterControllerDidZoomOut(CPInstrumentClusterController)](cpinstrumentclustercontrollerdelegate/instrumentclustercontrollerdidzoomout(_:).md)
+### Instance Methods
+- [func instrumentClusterController(CPInstrumentClusterController, didChangeCompassSetting: CPInstrumentClusterSetting)](./instrumentclustercontroller%28_,didchangecompasssetting%29.md)
+- [func instrumentClusterControllerDidConnect(UIWindow)](./instrumentclustercontrollerdidconnect%28_%29.md)
+- [func instrumentClusterControllerDidDisconnectWindow(UIWindow)](./instrumentclustercontrollerdiddisconnectwindow%28_%29.md)
+- [func instrumentClusterControllerDidZoom(in: CPInstrumentClusterController)](./instrumentclustercontrollerdidzoom%28in%29.md)
+- [func instrumentClusterControllerDidZoomOut(CPInstrumentClusterController)](./instrumentclustercontrollerdidzoomout%28_%29.md)
 
 
 ---

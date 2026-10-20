@@ -1,7 +1,8 @@
 # RoomCaptureSession.CaptureError.internalError
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates when the framework encounters an unexpected error case.
 
@@ -18,15 +19,16 @@ case internalError
 
 ## See Also
 
-- [RoomCaptureSession.CaptureError.deviceNotSupported](roomcapturesession/captureerror/devicenotsupported.md)
+### Identifying the error cause
+- [RoomCaptureSession.CaptureError.deviceNotSupported](./devicenotsupported.md)
   An error that indicates that the framework doesn’t support the user’s device.
-- [RoomCaptureSession.CaptureError.deviceTooHot](roomcapturesession/captureerror/devicetoohot.md)
+- [RoomCaptureSession.CaptureError.deviceTooHot](./devicetoohot.md)
   An error that indicates when the device thermal metrics surpass the framework’s limitations.
-- [RoomCaptureSession.CaptureError.exceedSceneSizeLimit](roomcapturesession/captureerror/exceedscenesizelimit.md)
+- [RoomCaptureSession.CaptureError.exceedSceneSizeLimit](./exceedscenesizelimit.md)
   An error that indicates when the scene size grows past the framework’s limitations.
-- [RoomCaptureSession.CaptureError.invalidARConfiguration](roomcapturesession/captureerror/invalidarconfiguration.md)
+- [RoomCaptureSession.CaptureError.invalidARConfiguration](./invalidarconfiguration.md)
   An error that indicates when the ARKit session runs an unsupported configuration.
-- [RoomCaptureSession.CaptureError.worldTrackingFailure](roomcapturesession/captureerror/worldtrackingfailure.md)
+- [RoomCaptureSession.CaptureError.worldTrackingFailure](./worldtrackingfailure.md)
   An error that indicates an issue with the underlying ARKit session.
 
 

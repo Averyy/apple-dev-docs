@@ -1,7 +1,8 @@
 # CNCinematicCapability.renderable
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The cinematic asset can be used without preprocessing
 
@@ -16,6 +17,10 @@ The cinematic asset can be used without preprocessing
 
 ```swift
 case renderable
+```
+
+```c
+CNCinematicCapabilityRenderable
 ```
 
 

@@ -14,7 +14,7 @@ Arrays are ordered collections of values.
 Sets are unordered collections of unique values.
 Dictionaries are unordered collections of key-value associations.
 
-![](CollectionTypes_intro)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/CollectionTypes_intro@2x.png)
 
 Arrays, sets, and dictionaries in Swift are always clear about
 the types of values and keys that they can store.
@@ -609,7 +609,7 @@ for (index, value) in shoppingList.enumerated() {
   ```
 -->
 
-For more about the `for`-`in` loop, see [For In Loops](ControlFlow.md#For-In-Loops).
+For more about the `for`-`in` loop, see [For-In Loops](ControlFlow.md#For-In-Loops).
 
 ## Sets
 
@@ -899,7 +899,7 @@ for genre in favoriteGenres {
   ```
 -->
 
-For more about the `for`-`in` loop, see [For In Loops](ControlFlow.md#For-In-Loops).
+For more about the `for`-`in` loop, see [For-In Loops](ControlFlow.md#For-In-Loops).
 
 Swift's `Set` type doesn't have a defined ordering.
 To iterate over the values of a set in a specific order,
@@ -941,7 +941,7 @@ or determining whether two sets contain all, some, or none of the same values.
 The illustration below depicts two sets --- `a` and `b` ---
 with the results of various set operations represented by the shaded regions.
 
-![](setVennDiagram)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/setVennDiagram@2x.png)
 
 - Use the `intersection(_:)` method to create a new set with only the values common to both sets.
 - Use the `symmetricDifference(_:)` method to create a new set with values in either set, but not both.
@@ -1006,7 +1006,7 @@ because all elements in `b` are also contained by `a`.
 Set `b` and set `c` are *disjoint* with one another,
 because they share no elements in common.
 
-![](setEulerDiagram)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/setEulerDiagram@2x.png)
 
 - Use the “is equal” operator (`==`) to determine whether two sets contain all of the same values.
 - Use the `isSubset(of:)` method to determine whether all of the values of a set are contained in the specified set.
@@ -1449,7 +1449,7 @@ for (airportCode, airportName) in airports {
   ```
 -->
 
-For more about the `for`-`in` loop, see [For In Loops](ControlFlow.md#For-In-Loops).
+For more about the `for`-`in` loop, see [For-In Loops](ControlFlow.md#For-In-Loops).
 
 You can also retrieve an iterable collection of a dictionary's keys or values
 by accessing its `keys` and `values` properties:

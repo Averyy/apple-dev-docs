@@ -1,7 +1,8 @@
 # loading
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the loading state changed.
 
@@ -16,6 +17,10 @@ Indicates the loading state changed.
 
 ```swift
 static var loading: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesLoading
 ```
 
 

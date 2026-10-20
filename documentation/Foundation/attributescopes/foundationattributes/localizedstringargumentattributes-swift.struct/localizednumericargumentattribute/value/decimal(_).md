@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.decimal(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A decimal value.
 
@@ -22,15 +23,16 @@ case decimal(Decimal)
 
 ## Parameters
 
-- `decimal`: The attribute value, as a [`Decimal`](decimal.md).
+- `decimal`: The attribute value, as a [`Decimal`](../../../../../decimal.md).
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.uint(_:)](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/value/uint(_:).md)
+### Value cases
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.uint(_:)](./uint%28_%29.md)
   An unsigned integer value.
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.int(_:)](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/value/int(_:).md)
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.int(_:)](./int%28_%29.md)
   A signed integer value.
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.double(_:)](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/value/double(_:).md)
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value.double(_:)](./double%28_%29.md)
   A double-precision floating point value.
 
 

@@ -1,7 +1,8 @@
 # GLKViewDrawableColorFormat.SRGBA8888
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An sRGBA8888 format.
 
@@ -16,11 +17,16 @@ An sRGBA8888 format.
 case SRGBA8888
 ```
 
+```c
+GLKViewDrawableColorFormatSRGBA8888
+```
+
 ## See Also
 
-- [GLKViewDrawableColorFormat.RGBA8888](glkviewdrawablecolorformat/rgba8888.md)
+### Constants
+- [GLKViewDrawableColorFormat.RGBA8888](./rgba8888.md)
   An RGBA8888 format.
-- [GLKViewDrawableColorFormat.RGB565](glkviewdrawablecolorformat/rgb565.md)
+- [GLKViewDrawableColorFormat.RGB565](./rgb565.md)
   An RGB565 format.
 
 

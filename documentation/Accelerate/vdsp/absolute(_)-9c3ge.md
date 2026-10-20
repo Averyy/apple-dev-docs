@@ -1,7 +1,8 @@
 # absolute(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the absolute value of each element in the supplied double-precision vector.
 
@@ -11,7 +12,7 @@ Returns the absolute value of each element in the supplied double-precision vect
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -39,11 +40,12 @@ For example, the following code calculates the absolute values of the elements o
 
 ## See Also
 
-- [static func absolute<U>(U) -> [Float]](vdsp/absolute(_:)-5ehc1.md)
+### Vector absolute functions
+- [static func absolute<U>(U) -> [Float]](./absolute%28_%29-5ehc1.md)
   Returns the absolute value of each element in the supplied single-precision vector.
-- [static func absolute<U, V>(U, result: inout V)](vdsp/absolute(_:result:)-4pigo.md)
+- [static func absolute<U, V>(U, result: inout V)](./absolute%28_,result%29-4pigo.md)
   Calculates the absolute value of each element in the supplied single-precision vector.
-- [static func absolute<U, V>(U, result: inout V)](vdsp/absolute(_:result:)-657bd.md)
+- [static func absolute<U, V>(U, result: inout V)](./absolute%28_,result%29-657bd.md)
   Calculates the absolute value of each element in the supplied double-precision vector.
 
 

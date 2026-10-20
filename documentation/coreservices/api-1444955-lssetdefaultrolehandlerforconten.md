@@ -1,7 +1,8 @@
 # LSSetDefaultRoleHandlerForContentType(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the user’s preferred default handler for the specified content type in the specified roles.
 
@@ -15,33 +16,38 @@ Sets the user’s preferred default handler for the specified content type in th
 func LSSetDefaultRoleHandlerForContentType(_ inContentType: CFString, _ inRole: LSRolesMask, _ inHandlerBundleID: CFString) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus LSSetDefaultRoleHandlerForContentType(CFStringRef inContentType, LSRolesMask inRole, CFStringRef inHandlerBundleID);
+```
 
-A result code; see [`Result Codes`](launch_services#1661359.md).
+#### Return Value
+
+A result code; see [Result Codes](./launch_services.md#1661359).
 
 #### Discussion
 
-Call [`LSCopyDefaultRoleHandlerForContentType(_:_:)`](1449868-lscopydefaultrolehandlerforconte.md) to get the current setting of the user’s preferred default handler for a specified content type.
+Call [`LSCopyDefaultRoleHandlerForContentType(_:_:)`](./api-1449868-lscopydefaultrolehandlerforconte.md) to get the current setting of the user’s preferred default handler for a specified content type.
 
-##### 1676309
+##### Version-Notes
 
 Thread-safe since OS X v10.4.
 
 ## Parameters
 
 - `inContentType`: The content type for which the default role handler is being set. The content type is a uniform type identifier.
-- `inRole`: The roles for which the default role handler is being set. Pass `kLSRolesAll` to specify all roles. For additional possible values, see [`LSRolesMask`](lsrolesmask.md).
+- `inRole`: The roles for which the default role handler is being set. Pass `kLSRolesAll` to specify all roles. For additional possible values, see [`LSRolesMask`](./lsrolesmask.md).
 - `inHandlerBundleID`: The bundle identifier that is to be set as the default handler for the specified content type and roles.
 
 ## See Also
 
-- [func LSCopyAllRoleHandlersForContentType(CFString, LSRolesMask) -> Unmanaged<CFArray>?](1448020-lscopyallrolehandlersforcontentt.md)
+### Working with Role Handlers
+- [func LSCopyAllRoleHandlersForContentType(CFString, LSRolesMask) -> Unmanaged<CFArray>?](./api-1448020-lscopyallrolehandlersforcontentt.md)
   Locates an array of bundle identifiers for apps capable of handling a specified content type with the specified roles.
-- [func LSCopyDefaultRoleHandlerForContentType(CFString, LSRolesMask) -> Unmanaged<CFString>?](1449868-lscopydefaultrolehandlerforconte.md)
+- [func LSCopyDefaultRoleHandlerForContentType(CFString, LSRolesMask) -> Unmanaged<CFString>?](./api-1449868-lscopydefaultrolehandlerforconte.md)
   Returns the bundle identifier of the user’s preferred default handler for the specified content type with the specified role.
-- [func LSSetDefaultHandlerForURLScheme(CFString, CFString) -> OSStatus](1447760-lssetdefaulthandlerforurlscheme.md)
+- [func LSSetDefaultHandlerForURLScheme(CFString, CFString) -> OSStatus](./api-1447760-lssetdefaulthandlerforurlscheme.md)
   Sets the user’s preferred default handler for the specified URL scheme.
-- [struct LSRolesMask](lsrolesmask.md)
+- [struct LSRolesMask](./lsrolesmask.md)
   The specification that sets the desired role or roles for an app to claim for an item or a family of items.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: DiskImageKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The URL of the disk image to open.

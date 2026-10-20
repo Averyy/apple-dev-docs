@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.chineseZhuyin
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Taiwan in the HID specification.
 

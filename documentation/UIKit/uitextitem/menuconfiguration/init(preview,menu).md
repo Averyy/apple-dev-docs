@@ -1,7 +1,8 @@
 # init(preview:menu:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text item menu configuration with the specified menu and preview.
 
@@ -9,7 +10,7 @@ Creates a text item menu configuration with the specified menu and preview.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ Creates a text item menu configuration with the specified menu and preview.
 
 ## See Also
 
-- [UITextItem.MenuConfiguration.Preview](uitextitem/menuconfiguration/preview.md)
+### Creating a menu configuration
+- [UITextItem.MenuConfiguration.Preview](./preview.md)
   Constants that indicate what type of preview to display alongside the text item’s menu.
 
 

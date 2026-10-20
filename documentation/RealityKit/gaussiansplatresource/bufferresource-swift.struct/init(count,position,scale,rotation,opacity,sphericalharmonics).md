@@ -1,7 +1,8 @@
 # init(count:position:scale:rotation:opacity:sphericalHarmonics:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a buffer resource from descriptors for each per-splat property.
 
@@ -21,7 +22,7 @@ init(count: Int, position: GaussianSplatResource.BufferDescriptor, scale: Gaussi
 
 #### Discussion
 
-> **Note**: An error if a descriptor is invalid or its buffer is too small for the splat count, or if the count exceeds the maximum the platform supports.
+> **Throws**: An error if a descriptor is invalid or its buffer is too small for the splat count, or if the count exceeds the maximum the platform supports.
 
 ## Parameters
 

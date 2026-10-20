@@ -1,6 +1,7 @@
 # CoreWLANTypes.h
 
-**Framework**: Core WLAN
+**Framework**: Core WLAN  
+**Role**: API Collection
 
 ##### Included Headers
 
@@ -9,26 +10,27 @@
 ## Topics
 
 ### Constants
-- [enum CWChannelBand](cwchannelband.md)
+- [enum CWChannelBand](./cwchannelband.md)
   CoreWLAN channel bands.
-- [enum CWChannelWidth](cwchannelwidth.md)
+- [enum CWChannelWidth](./cwchannelwidth.md)
   CoreWLAN channel widths.
-- [struct CWCipherKeyFlags](cwcipherkeyflags.md)
+- [struct CWCipherKeyFlags](./cwcipherkeyflags.md)
   Cipher key flags.
-- [enum CWErr](cwerr.md)
-- [enum CWIBSSModeSecurity](cwibssmodesecurity.md)
+- [enum CWErr](./cwerr.md)
+- [enum CWIBSSModeSecurity](./cwibssmodesecurity.md)
   IBSS mode security types.
-- [enum CWPHYMode](cwphymode.md)
+- [enum CWPHYMode](./cwphymode.md)
   CoreWLAN physical layer modes.
-- [enum CWSecurity](cwsecurity.md)
+- [enum CWSecurity](./cwsecurity.md)
   CoreWLAN security types.
 
 ## See Also
 
-- [CoreWLANConstants.h](corewlanconstants-h.md)
-- [CoreWLANUtil.h](corewlanutil-h.md)
-- [CoreWLAN Enumerations](corewlan-enumerations.md)
-- [CoreWLAN Functions](corewlan-functions.md)
+### Reference
+- [CoreWLANConstants.h](./corewlanconstants-h.md)
+- [CoreWLANUtil.h](./corewlanutil-h.md)
+- [CoreWLAN Enumerations](./corewlan-enumerations.md)
+- [CoreWLAN Functions](./corewlan-functions.md)
 
 
 ---

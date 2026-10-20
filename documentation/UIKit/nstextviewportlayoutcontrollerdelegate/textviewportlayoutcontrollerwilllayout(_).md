@@ -1,7 +1,8 @@
 # textViewportLayoutControllerWillLayout(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls before the text viewport layout controller starts its layout process.
 
@@ -18,19 +19,24 @@ The method the framework calls before the text viewport layout controller starts
 optional func textViewportLayoutControllerWillLayout(_ textViewportLayoutController: NSTextViewportLayoutController)
 ```
 
+```objc
+- (void) textViewportLayoutControllerWillLayout:(NSTextViewportLayoutController *) textViewportLayoutController;
+```
+
 ## Parameters
 
-- `textViewportLayoutController`: The [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md).
+- `textViewportLayoutController`: The [`NSTextViewportLayoutController`](../nstextviewportlayoutcontroller.md).
 
 ## See Also
 
-- [func textViewportLayoutController(NSTextViewportLayoutController, configureRenderingSurfaceFor: NSTextLayoutFragment)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:configurerenderingsurfacefor:).md)
+### Responding to changes in the viewport
+- [func textViewportLayoutController(NSTextViewportLayoutController, configureRenderingSurfaceFor: NSTextLayoutFragment)](./textviewportlayoutcontroller%28_,configurerenderingsurfacefor%29.md)
   The method the framework calls when the layout controller lays out a text layout fragment in the UI.
-- [func textViewportLayoutControllerDidLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerdidlayout(_:).md)
+- [func textViewportLayoutControllerDidLayout(NSTextViewportLayoutController)](./textviewportlayoutcontrollerdidlayout%28_%29.md)
   The method the framework calls when the text viewport layout controller finishes its layout process.
-- [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
+- [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](./textviewportlayoutcontrollerreceivedsetneedslayout%28_%29.md)
   Triggers relayout of the view.
-- [func viewportBounds(for: NSTextViewportLayoutController) -> CGRect](nstextviewportlayoutcontrollerdelegate/viewportbounds(for:).md)
+- [func viewportBounds(for: NSTextViewportLayoutController) -> CGRect](./viewportbounds%28for%29.md)
   Returns the current viewport, which is the view visible bounds plus the overdraw area.
 
 

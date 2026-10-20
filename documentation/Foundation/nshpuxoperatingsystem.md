@@ -1,7 +1,8 @@
 # NSHPUXOperatingSystem
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates the HP UX operating system.
 
@@ -20,19 +21,24 @@ Indicates the HP UX operating system.
 var NSHPUXOperatingSystem: Int { get }
 ```
 
+```c
+NSHPUXOperatingSystem
+```
+
 ## See Also
 
-- [var NSMACHOperatingSystem: Int](nsmachoperatingsystem.md)
+### Constants
+- [var NSMACHOperatingSystem: Int](./nsmachoperatingsystem.md)
   Indicates the macOS operating system.
-- [var NSOSF1OperatingSystem: Int](nsosf1operatingsystem.md)
+- [var NSOSF1OperatingSystem: Int](./nsosf1operatingsystem.md)
   Indicates the OSF/1 operating system.
-- [var NSSolarisOperatingSystem: Int](nssolarisoperatingsystem.md)
+- [var NSSolarisOperatingSystem: Int](./nssolarisoperatingsystem.md)
   Indicates the Solaris operating system.
-- [var NSSunOSOperatingSystem: Int](nssunosoperatingsystem.md)
+- [var NSSunOSOperatingSystem: Int](./nssunosoperatingsystem.md)
   Indicates the Sun OS operating system.
-- [var NSWindows95OperatingSystem: Int](nswindows95operatingsystem.md)
+- [var NSWindows95OperatingSystem: Int](./nswindows95operatingsystem.md)
   Indicates the Windows 95 operating system.
-- [var NSWindowsNTOperatingSystem: Int](nswindowsntoperatingsystem.md)
+- [var NSWindowsNTOperatingSystem: Int](./nswindowsntoperatingsystem.md)
   Indicates the Windows NT operating system.
 
 

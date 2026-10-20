@@ -1,7 +1,8 @@
 # levels
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of domain levels to preserve when parsing.
 
@@ -25,11 +26,12 @@ Use a value of `0` to keep all domain levels.
 
 ## See Also
 
-- [var excluded: Bool](neurlfiltermanager/parsingconfiguration/domainoptions/excluded.md)
+### Working with domain options
+- [var excluded: Bool](./excluded.md)
   A Boolean value that indicates whether to exclude the domain component from URL parsing.
-- [var stripWWW: Bool](neurlfiltermanager/parsingconfiguration/domainoptions/stripwww.md)
+- [var stripWWW: Bool](./stripwww.md)
   A Boolean value that indicates whether to strip the `www` subdomain when parsing.
-- [var enumerateHierarchy: Bool](neurlfiltermanager/parsingconfiguration/domainoptions/enumeratehierarchy.md)
+- [var enumerateHierarchy: Bool](./enumeratehierarchy.md)
   A Boolean value that indicates whether the parser walks the domain hierarchy for matching.
 
 

@@ -1,7 +1,8 @@
 # FileEntityIdentifier
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier for an app entity that refers to a document or other file.
 
@@ -23,46 +24,47 @@ struct FileEntityIdentifier
 ## Topics
 
 ### Instance Properties
-- [var draftIdentifier: String?](fileentityidentifier/draftidentifier.md)
+- [var draftIdentifier: String?](./fileentityidentifier/draftidentifier.md)
   The document draft identifier, if the document hasn’t been materialized on disk yet.
-- [var fileURL: URL?](fileentityidentifier/fileurl.md)
+- [var fileURL: URL?](./fileentityidentifier/fileurl.md)
   A URL that locates a file saved to disk.
-- [var isDraft: Bool](fileentityidentifier/isdraft.md)
+- [var isDraft: Bool](./fileentityidentifier/isdraft.md)
   Indicates whether this identifier represents a document draft.
 ### Type Methods
-- [static func draft(identifier: String) -> FileEntityIdentifier](fileentityidentifier/draft(identifier:).md)
+- [static func draft(identifier: String) -> FileEntityIdentifier](./fileentityidentifier/draft%28identifier%29.md)
   Creates and returns an identifier for a draft document.
-- [static func file(url: URL) throws -> FileEntityIdentifier](fileentityidentifier/file(url:).md)
+- [static func file(url: URL) throws -> FileEntityIdentifier](./fileentityidentifier/file%28url%29.md)
   Creates and returns an identifier with the provided URL to the file on disk.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [EntityIdentifierConvertible](entityidentifierconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [EntityIdentifierConvertible](./entityidentifierconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct EntityIdentifier](entityidentifier.md)
+### Entity identity
+- [struct EntityIdentifier](./entityidentifier.md)
   A type that uniquely identifies a specific instance of an app entity.
-- [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
+- [protocol EntityIdentifierConvertible](./entityidentifierconvertible.md)
   An interface for converting between an entity’s identifier and its string representation.
-- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
+- [protocol PersistentlyIdentifiable](./persistentlyidentifiable.md)
   Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
-- [struct SyncableEntityIdentifier](syncableentityidentifier.md)
+- [struct SyncableEntityIdentifier](./syncableentityidentifier.md)
   A type-safe wrapper you use to specify different local and stable identifiers for an entity.
-- [struct AttributedEntityIdentifier](attributedentityidentifier.md)
+- [struct AttributedEntityIdentifier](./attributedentityidentifier.md)
   A unique identifier for an app entity instance within an application.
-- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+- [struct AttributedTypeIdentifier](./attributedtypeidentifier.md)
   A unique identifier for an app entity or transient app entity type within an application bundle.
-- [protocol AppEntityAnnotatable](appentityannotatable.md)
+- [protocol AppEntityAnnotatable](./appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
 
 

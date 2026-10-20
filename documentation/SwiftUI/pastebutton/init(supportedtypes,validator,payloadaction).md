@@ -1,12 +1,15 @@
 # init(supportedTypes:validator:payloadAction:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Paste button that accepts specific types of data from the pasteboard, performing a custom validation of the data before sending it to your app.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use the [`init(supportedContentTypes:validator:payloadAction:)`](./init%28supportedcontenttypes,validator,payloadaction%29.md) initializer instead.
 
 ## Declaration
 
@@ -27,9 +30,10 @@ Set the contents of `supportedTypes` in order of your app’s preference for its
 
 ## See Also
 
-- [init(supportedTypes: [String], payloadAction: ([NSItemProvider]) -> Void)](pastebutton/init(supportedtypes:payloadaction:).md)
+### Deprecated
+- [init(supportedTypes: [String], payloadAction: ([NSItemProvider]) -> Void)](./init%28supportedtypes,payloadaction%29.md)
   Creates a Paste button that accepts specific types of data from the pasteboard.
-- [init<Payload>(supportedContentTypes: [UTType], validator: ([NSItemProvider]) -> Payload?, payloadAction: (Payload) -> Void)](pastebutton/init(supportedcontenttypes:validator:payloadaction:).md)
+- [init<Payload>(supportedContentTypes: [UTType], validator: ([NSItemProvider]) -> Payload?, payloadAction: (Payload) -> Void)](./init%28supportedcontenttypes,validator,payloadaction%29.md)
   Creates a Paste button that accepts specific types of data from the pasteboard, performing a custom validation of the data before sending it to your app.
 
 

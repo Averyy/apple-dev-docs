@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.SortOrder.unsorted
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles are not sorted; they may be rendered in any order.
 

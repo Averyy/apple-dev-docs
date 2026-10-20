@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIODisplayMaxPowerState](1638748-anonymous/kiodisplaymaxpowerstate.md)
-- [kIODisplayNumPowerStates](1638748-anonymous/kiodisplaynumpowerstates.md)
+- [kIODisplayMaxPowerState](./api-1638748-anonymous/kiodisplaymaxpowerstate.md)
+- [kIODisplayNumPowerStates](./api-1638748-anonymous/kiodisplaynumpowerstates.md)
 
 
 ---

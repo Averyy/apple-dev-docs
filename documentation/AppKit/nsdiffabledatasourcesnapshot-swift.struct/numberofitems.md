@@ -1,7 +1,8 @@
 # numberOfItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items in the snapshot.
 
@@ -16,9 +17,10 @@ var numberOfItems: Int { get }
 
 ## See Also
 
-- [var numberOfSections: Int](nsdiffabledatasourcesnapshot-swift.struct/numberofsections.md)
+### Getting Item and Section Metrics
+- [var numberOfSections: Int](./numberofsections.md)
   The number of sections in the snapshot.
-- [func numberOfItems(inSection: SectionIdentifierType) -> Int](nsdiffabledatasourcesnapshot-swift.struct/numberofitems(insection:).md)
+- [func numberOfItems(inSection: SectionIdentifierType) -> Int](./numberofitems%28insection%29.md)
   Returns the number of items in the specified section of the snapshot.
 
 

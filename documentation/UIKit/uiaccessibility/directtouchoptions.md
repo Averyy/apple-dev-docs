@@ -1,7 +1,8 @@
 # UIAccessibility.DirectTouchOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that configure how VoiceOver produces audio for direct touch areas.
 
@@ -19,6 +20,10 @@ Constants that configure how VoiceOver produces audio for direct touch areas.
 struct DirectTouchOptions
 ```
 
+```c
+enum UIAccessibilityDirectTouchOptions : NSUInteger;
+```
+
 #### Overview
 
 *Direct touch areas* are regions of the screen where VoiceOver passes gestures directly to the app instead of interpreting them as VoiceOver commands.
@@ -33,40 +38,41 @@ If an element doesn’t use `UIAccessibility.DirectTouchOptions`, VoiceOver spea
 
 Specify `DirectTouchOptions` to customize VoiceOver regions using these two constants:
 
-- Use [`silentOnTouch`](https://developer.apple.com/documentation/swiftui/accessibilitydirecttouchoptions/silentontouch) to ensure VoiceOver is silent when a person touches the direct touch area. In this region, the app produces its own audio feedback without conflicting with VoiceOver audio.
-- Use [`requiresActivation`](https://developer.apple.com/documentation/swiftui/accessibilitydirecttouchoptions/requiresactivation) to ensure a person interacts with the user interface element before a touch passes through to the element. This is useful for scenarios where an errant touch may produce undesired input, such as a signature field.
+- Use [`silentOnTouch`](../../SwiftUI/accessibilitydirecttouchoptions/silentontouch.md) to ensure VoiceOver is silent when a person touches the direct touch area. In this region, the app produces its own audio feedback without conflicting with VoiceOver audio.
+- Use [`requiresActivation`](../../SwiftUI/accessibilitydirecttouchoptions/requiresactivation.md) to ensure a person interacts with the user interface element before a touch passes through to the element. This is useful for scenarios where an errant touch may produce undesired input, such as a signature field.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](uiaccessibility/directtouchoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./directtouchoptions/init%28rawvalue%29.md)
   Creates a new direct touch options structure using an unsigned integer.
 ### Type Properties
-- [static var requiresActivation: UIAccessibility.DirectTouchOptions](uiaccessibility/directtouchoptions/requiresactivation.md)
+- [static var requiresActivation: UIAccessibility.DirectTouchOptions](./directtouchoptions/requiresactivation.md)
   Inhibits passthrough to the direct touch area until a person double-taps the element.
-- [static var silentOnTouch: UIAccessibility.DirectTouchOptions](uiaccessibility/directtouchoptions/silentontouch.md)
+- [static var silentOnTouch: UIAccessibility.DirectTouchOptions](./directtouchoptions/silentontouch.md)
   Allows a direct touch area to immediately receive touch events without triggering VoiceOver audio.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var accessibilityCustomRotors: [UIAccessibilityCustomRotor]?](../objectivec/nsobject-swift.class/accessibilitycustomrotors.md)
-- [var accessibilityElementsHidden: Bool](../objectivec/nsobject-swift.class/accessibilityelementshidden.md)
-- [var accessibilityRespondsToUserInteraction: Bool](../objectivec/nsobject-swift.class/accessibilityrespondstouserinteraction.md)
-- [var accessibilityViewIsModal: Bool](../objectivec/nsobject-swift.class/accessibilityviewismodal.md)
-- [var shouldGroupAccessibilityChildren: Bool](../objectivec/nsobject-swift.class/shouldgroupaccessibilitychildren.md)
-- [var accessibilityDirectTouchOptions: UIAccessibility.DirectTouchOptions](../objectivec/nsobject-swift.class/accessibilitydirecttouchoptions.md)
+### Configuring behavior
+- [var accessibilityCustomRotors: [UIAccessibilityCustomRotor]?](../../ObjectiveC/nsobject-swift.class/accessibilitycustomrotors.md)
+- [var accessibilityElementsHidden: Bool](../../ObjectiveC/nsobject-swift.class/accessibilityelementshidden.md)
+- [var accessibilityRespondsToUserInteraction: Bool](../../ObjectiveC/nsobject-swift.class/accessibilityrespondstouserinteraction.md)
+- [var accessibilityViewIsModal: Bool](../../ObjectiveC/nsobject-swift.class/accessibilityviewismodal.md)
+- [var shouldGroupAccessibilityChildren: Bool](../../ObjectiveC/nsobject-swift.class/shouldgroupaccessibilitychildren.md)
+- [var accessibilityDirectTouchOptions: UIAccessibility.DirectTouchOptions](../../ObjectiveC/nsobject-swift.class/accessibilitydirecttouchoptions.md)
 
 
 ---

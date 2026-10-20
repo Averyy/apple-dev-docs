@@ -1,7 +1,8 @@
 # severity
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The severity of the issue.
 
@@ -9,6 +10,10 @@ The severity of the issue.
 
 ```swift
 var severity: XCTIssueReference.Severity { get }
+```
+
+```objc
+@property (readonly) XCTIssueSeverity severity;
 ```
 
 

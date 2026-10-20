@@ -1,7 +1,8 @@
 # canCollapse
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether a user interaction can collapse the child view controller that corresponds to the split view item.
 
@@ -14,21 +15,26 @@ A Boolean value that determines whether a user interaction can collapse the chil
 var canCollapse: Bool { get set }
 ```
 
+```objc
+@property BOOL canCollapse;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isCollapsed: Bool](nssplitviewitem/iscollapsed.md)
+### Collapsing and expanding the item
+- [var isCollapsed: Bool](./iscollapsed.md)
   A Boolean value that determines whether the child view controller that corresponds to the split view item is in a collapsed state in the split view controller.
-- [var collapseBehavior: NSSplitViewItem.CollapseBehavior](nssplitviewitem/collapsebehavior-swift.property.md)
+- [var collapseBehavior: NSSplitViewItem.CollapseBehavior](./collapsebehavior-swift.property.md)
   The resizing behavior when the split view item toggles its collapsed state.
-- [NSSplitViewItem.CollapseBehavior](nssplitviewitem/collapsebehavior-swift.enum.md)
+- [NSSplitViewItem.CollapseBehavior](./collapsebehavior-swift.enum.md)
   Constants that describe the split view item’s collapsing behavior.
-- [var isSpringLoaded: Bool](nssplitviewitem/isspringloaded.md)
+- [var isSpringLoaded: Bool](./isspringloaded.md)
   A Boolean value that determines whether the split view item can temporarily expand during a drag.
-- [var canCollapseFromWindowResize: Bool](nssplitviewitem/cancollapsefromwindowresize.md)
+- [var canCollapseFromWindowResize: Bool](./cancollapsefromwindowresize.md)
   A Boolean value that determines whether a window resize can collapse the child view controller that corresponds to the split view item.
 
 

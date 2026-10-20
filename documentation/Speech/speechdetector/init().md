@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a speech detector with default settings.
 
@@ -21,15 +22,16 @@ convenience init()
 
 #### Discussion
 
-The default settings enable the VAD model with a value of [`SpeechDetector.SensitivityLevel.medium`](speechdetector/sensitivitylevel/medium.md) and do not report the VAD model’s moment-to-moment results in its result sequence.
+The default settings enable the VAD model with a value of [`SpeechDetector.SensitivityLevel.medium`](./sensitivitylevel/medium.md) and do not report the VAD model’s moment-to-moment results in its result sequence.
 
 ## See Also
 
-- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](speechdetector/init(detectionoptions:reportresults:).md)
+### Creating a detector
+- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](./init%28detectionoptions,reportresults%29.md)
   Creates a speech detector.
-- [SpeechDetector.DetectionOptions](speechdetector/detectionoptions.md)
+- [SpeechDetector.DetectionOptions](./detectionoptions.md)
   Allows clients to customize an instance of a speech detector.
-- [SpeechDetector.SensitivityLevel](speechdetector/sensitivitylevel.md)
+- [SpeechDetector.SensitivityLevel](./sensitivitylevel.md)
   Determines how “aggressive” the voice activity detection (VAD) model will be.
 
 

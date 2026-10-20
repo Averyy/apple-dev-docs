@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale to use to look up the localized string from the string resource.
 
@@ -22,19 +23,20 @@ var locale: Locale
 
 #### Discussion
 
-To perform localization in a different locale, change this value before passing it to a [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](attributedstring.md) initializer that takes a [`LocalizedStringResource`](localizedstringresource.md).
+To perform localization in a different locale, change this value before passing it to a [`String`](../../Swift/string.md) or [`AttributedString`](../attributedstring.md) initializer that takes a [`LocalizedStringResource`](../localizedstringresource.md).
 
 ## See Also
 
-- [let key: String](localizedstringresource/key.md)
+### Accessing resource properties
+- [let key: String](./key.md)
   The key to use to look up a localized string.
-- [let defaultValue: String.LocalizationValue](localizedstringresource/defaultvalue.md)
+- [let defaultValue: String.LocalizationValue](./defaultvalue.md)
   The resource’s default value.
-- [let table: String?](localizedstringresource/table.md)
+- [let table: String?](./table.md)
   The name of the table containing the key-value pairs.
-- [var bundle: LocalizedStringResource.BundleDescription](localizedstringresource/bundle.md)
+- [var bundle: LocalizedStringResource.BundleDescription](./bundle.md)
   The bundle containing the table’s strings file.
-- [LocalizedStringResource.BundleDescription](localizedstringresource/bundledescription.md)
+- [LocalizedStringResource.BundleDescription](./bundledescription.md)
   The location of a bundle to use for looking up localized strings, such as the main bundle, or a bundle at a specific file URL.
 
 

@@ -1,7 +1,8 @@
 # init(title:action:modifierFlags:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a command alternative with the specified title, action, and modifier flags.
 
@@ -18,6 +19,10 @@ Creates a command alternative with the specified title, action, and modifier fla
 convenience init(title: String, action: Selector, modifierFlags: UIKeyModifierFlags)
 ```
 
+```objc
++ (instancetype) alternateWithTitle:(NSString *) title action:(SEL) action modifierFlags:(UIKeyModifierFlags) modifierFlags;
+```
+
 #### Return Value
 
 A command alternative object.
@@ -26,11 +31,12 @@ A command alternative object.
 
 - `title`: The command alternative’s title.
 - `action`: The action to take after a person selects the alternative command.
-- `modifierFlags`: The bit mask of modifier keys that a person must press. You can use this parameter to specify which modifier keys (Command, Option, and so on) a person must also press. You may specify more than one modifier key. For a list of possible values, see [`UIKeyModifierFlags`](uikeymodifierflags.md).
+- `modifierFlags`: The bit mask of modifier keys that a person must press. You can use this parameter to specify which modifier keys (Command, Option, and so on) a person must also press. You may specify more than one modifier key. For a list of possible values, see [`UIKeyModifierFlags`](../uikeymodifierflags.md).
 
 ## See Also
 
-- [init?(coder: NSCoder)](uicommandalternate/init(coder:).md)
+### Creating a command alternative
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a command alternative from data in an unarchiver.
 
 

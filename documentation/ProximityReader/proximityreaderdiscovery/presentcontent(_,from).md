@@ -1,7 +1,8 @@
 # presentContent(_:from:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a sheet that teaches merchants how to use the specified feature.
 
@@ -18,13 +19,13 @@ final func presentContent(_ content: ProximityReaderDiscovery.Content, from view
 
 #### Discussion
 
-> **Note**: This method throws a [`ProximityReaderDiscovery.ContentError`](proximityreaderdiscovery/contenterror.md) if the sheet fails to appear.
+> **Throws**: This method throws a [`ProximityReaderDiscovery.ContentError`](./contenterror.md) if the sheet fails to appear.
 
-Call this method when you want to display information about how to use [`ProximityReader`](ProximityReader.md) features on a merchant’s iPhone.  For example, you might use this method to display instructions for how the merchant uses Tap to Pay on iPhone. This method presents the requested information in a sheet on top of your app’s UI, which remains on-screen until the person dismiss it or an error occurs.
+Call this method when you want to display information about how to use [ProximityReader](../ProximityReader.md) features on a merchant’s iPhone.  For example, you might use this method to display instructions for how the merchant uses Tap to Pay on iPhone. This method presents the requested information in a sheet on top of your app’s UI, which remains on-screen until the person dismiss it or an error occurs.
 
 ## Parameters
 
-- `content`: The topic to teach. You can get a list of available topics from the [`contentList`](proximityreaderdiscovery/contentlist.md) property or fetch a topic for a specific subject using the [`content(for:)`](proximityreaderdiscovery/content(for:).md) method.
+- `content`: The topic to teach. You can get a list of available topics from the [`contentList`](./contentlist.md) property or fetch a topic for a specific subject using the [`content(for:)`](./content%28for%29.md) method.
 - `viewController`: The view controller to use when presenting the sheet. Specify a currently visible view controller in your app.
 
 

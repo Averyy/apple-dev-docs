@@ -1,7 +1,8 @@
 # language
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The language ID to use when fetching points of interest.
 
@@ -10,7 +11,7 @@ The language ID to use when fetching points of interest.
 
 ## Declaration
 
-```swift
+```
 language?: string;
 ```
 

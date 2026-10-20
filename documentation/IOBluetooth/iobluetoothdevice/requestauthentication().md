@@ -1,17 +1,22 @@
 # requestAuthentication()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the existing baseband connection be authenticated.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func requestAuthentication() -> IOReturn
+```
+
+```objc
+- (IOReturn) requestAuthentication;
 ```
 
 #### Return Value

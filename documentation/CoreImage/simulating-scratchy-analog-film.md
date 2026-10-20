@@ -1,25 +1,26 @@
 # Simulating Scratchy Analog Film
 
-**Framework**: Core Image
+**Framework**: Core Image  
+**Role**: Article
 
 Degrade the quality of an image to make it look like dated, analog film.
 
 #### Overview
 
-The [`sepiaTone()`](cifilter-swift.class/sepiatone().md) filter changes the tint of an image to a reddish-brownish hue resembling old analog photographs. You can enhance the effect by applying random specks and scratches.
+The [`sepiaTone()`](./cifilter-swift.class/sepiatone%28%29.md) filter changes the tint of an image to a reddish-brownish hue resembling old analog photographs. You can enhance the effect by applying random specks and scratches.
 
-![Compositing scratchy analog film by compositing results from CIFilter objects](/images/com.apple.coreimage/media-2959650@2x.png)
+![Compositing scratchy analog film by compositing results from CIFilter objects](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2959650@2x.png)
 
 The following steps leverage built-in Core Image filters to tint and texture an image to look as if it were analog film:
 
-1. Apply the [`sepiaTone()`](cifilter-swift.class/sepiatone().md) filter.
+1. Apply the [`sepiaTone()`](./cifilter-swift.class/sepiatone%28%29.md) filter.
 2. Create randomly varying white specks to simulate grain.
 3. Create randomly varying dark scratches to simulate scratchy film.
 4. Composite the speckle image and scratches onto the sepia-toned image.
 
 ##### Apply the Sepia Tone Filter to the Original Image
 
-Tint the original image by applying the [`sepiaTone()`](cifilter-swift.class/sepiatone().md) filter.
+Tint the original image by applying the [`sepiaTone()`](./cifilter-swift.class/sepiatone%28%29.md) filter.
 
 ```swift
 CIFilter<CISepiaTone> *sepiaFilter = CIFilter.sepiaToneFilter;
@@ -28,11 +29,11 @@ sepiaFilter.intensity = 1.0;
 CIImage *sepiaCIImage = sepiaFilter.outputImage;
 ```
 
-##### Simulate Grain By Creating Randomly Varying Specks
+##### Simulate Grain by Creating Randomly Varying Specks
 
-You can use the output of the [`randomGenerator()`](cifilter-swift.class/randomgenerator().md) filter to generate images containing random noise. Even though the noise pattern isn’t customizable in size, you can extend and crop it to fit the image.
+You can use the output of the [`randomGenerator()`](./cifilter-swift.class/randomgenerator%28%29.md) filter to generate images containing random noise. Even though the noise pattern isn’t customizable in size, you can extend and crop it to fit the image.
 
-> **Note**:  The image output from [`randomGenerator()`](cifilter-swift.class/randomgenerator().md) is always the same; even if you reseed your random number generator, the image output from this filter is always the same 512x512 pattern. However, it’s suitable for giving the appearance of randomness. For truly random noise generation, see [`GameplayKit`](https://developer.apple.com/documentation/gameplaykit).
+> **Note**:  The image output from [`randomGenerator()`](./cifilter-swift.class/randomgenerator%28%29.md) is always the same; even if you reseed your random number generator, the image output from this filter is always the same 512x512 pattern. However, it’s suitable for giving the appearance of randomness. For truly random noise generation, see [GameplayKit](../GameplayKit/GameplayKit.md).
 
 The filter takes no inputs.
 
@@ -41,7 +42,7 @@ CIFilter<CIRandomGenerator> *colorNoise = CIFilter.randomGeneratorFilter;
 CIImage* noiseImage = colorNoise.outputImage;
 ```
 
-Next, apply a whitening effect by chaining the noise output to a [`colorMatrix()`](cifilter-swift.class/colormatrix().md) filter. This built-in filter multiplies the noise color values individually and applies a bias to each component. For white grain, apply whitening to the y-component of RGB and no bias.
+Next, apply a whitening effect by chaining the noise output to a [`colorMatrix()`](./cifilter-swift.class/colormatrix%28%29.md) filter. This built-in filter multiplies the noise color values individually and applies a bias to each component. For white grain, apply whitening to the y-component of RGB and no bias.
 
 ```swift
 CIVector *whitenVector = [CIVector vectorWithX:0 Y:1 Z:0 W:0];
@@ -59,9 +60,9 @@ CIImage *whiteSpecks = whiteningFilter.outputImage;
 
 The `whiteSpecks` resulting from this filter have the appearance of spotty grain when viewed as an image.
 
-![Image of white dots on a transaprent background, used to simulate grain on an old photo](/images/com.apple.coreimage/media-2960179@2x.png)
+![Image of white dots on a transaprent background, used to simulate grain on an old photo](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2960179@2x.png)
 
-Create the grainy image by compositing the whitened noise as input over the sepia-toned source image using the [`sourceOverCompositing()`](cifilter-swift.class/sourceovercompositing().md) filter.
+Create the grainy image by compositing the whitened noise as input over the sepia-toned source image using the [`sourceOverCompositing()`](./cifilter-swift.class/sourceovercompositing%28%29.md) filter.
 
 ```swift
 CIFilter<CICompositeOperation> *speckCompositor = CIFilter.sourceOverCompositingFilter;
@@ -70,11 +71,11 @@ speckCompositor.backgroundImage = sepiaCIImage;
 CIImage *speckledImage = speckCompositor.outputImage;
 ```
 
-##### Simulate Scratch By Scaling Randomly Varying Noise
+##### Simulate Scratch by Scaling Randomly Varying Noise
 
-The process for applying random-looking scratches is the same as the technique used in the white grain: color the output of the [`randomGenerator()`](cifilter-swift.class/randomgenerator().md) filter.
+The process for applying random-looking scratches is the same as the technique used in the white grain: color the output of the [`randomGenerator()`](./cifilter-swift.class/randomgenerator%28%29.md) filter.
 
-To make the speckle resemble scratches, scale the random noise output vertically by applying a scaling [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform).
+To make the speckle resemble scratches, scale the random noise output vertically by applying a scaling [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md).
 
 ```swift
 CGAffineTransform verticalScale = CGAffineTransformMakeScale(1.5, 25);
@@ -96,7 +97,7 @@ darkeningFilter.biasVector = darkenBias;
 CIImage* randomScratches = darkeningFilter.outputImage;
 ```
 
-The resulting scratches are cyan, so grayscale them using the [`minimumComponent()`](cifilter-swift.class/minimumcomponent().md) filter, which takes the minimum of the RGB values to produce a grayscale image.
+The resulting scratches are cyan, so grayscale them using the [`minimumComponent()`](./cifilter-swift.class/minimumcomponent%28%29.md) filter, which takes the minimum of the RGB values to produce a grayscale image.
 
 ```swift
 CIFilter<CIMinimumComponent> *grayscaleFilter = CIFilter.minimumComponentFilter;
@@ -106,11 +107,11 @@ CIImage *darkScratches = grayscaleFilter.outputImage;
 
 The grayscale filter produces random lines that resemble dark scratches.
 
-![Image of black lines on a white background, used to simulate scratches on an old photo](/images/com.apple.coreimage/media-2960180@2x.png)
+![Image of black lines on a white background, used to simulate scratches on an old photo](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2960180@2x.png)
 
 ##### Composite the Specks and Scratches to the Sepia Image
 
-Now that the components are set, you can add the scratches to the grainy sepia image produced earlier.  However, unlike the grainy texture, the scratches impact the image multiplicatively.  Instead of the [`sourceOverCompositing()`](cifilter-swift.class/sourceovercompositing().md) filter, which composites source over background, use the [`multiplyCompositing()`](cifilter-swift.class/multiplycompositing().md) filter to compose the scratches multiplicatively.  Set the scratched image as the filter’s input image, and tab the speckle-composited sepia image as the input background image.
+Now that the components are set, you can add the scratches to the grainy sepia image produced earlier.  However, unlike the grainy texture, the scratches impact the image multiplicatively.  Instead of the [`sourceOverCompositing()`](./cifilter-swift.class/sourceovercompositing%28%29.md) filter, which composites source over background, use the [`multiplyCompositing()`](./cifilter-swift.class/multiplycompositing%28%29.md) filter to compose the scratches multiplicatively.  Set the scratched image as the filter’s input image, and tab the speckle-composited sepia image as the input background image.
 
 ```swift
 CIFilter<CICompositeOperation> *oldFilmCompositor = CIFilter.multiplyCompositingFilter;
@@ -127,15 +128,16 @@ CIImage* finalImage = [oldFilmImage imageByCroppingToRect:inputImage.extent];
 
 The cropped image represents the final result: a sepia-toned image with simulated grain and scratches composited to give it an analog film appearance.
 
-![Sepia-toned image of fruit augmented with speckle grain and dark scratches.](/images/com.apple.coreimage/media-2959656@2x.png)
+![Sepia-toned image of fruit augmented with speckle grain and dark scratches.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2959656@2x.png)
 
 ## See Also
 
-- [Applying a Chroma Key Effect](applying-a-chroma-key-effect.md)
+### Filter Recipes
+- [Applying a Chroma Key Effect](./applying-a-chroma-key-effect.md)
   Replace a color in one image with the background from another.
-- [Selectively Focusing on an Image](selectively-focusing-on-an-image.md)
+- [Selectively Focusing on an Image](./selectively-focusing-on-an-image.md)
   Focus on a part of an image by applying Gaussian blur and gradient masks.
-- [Customizing Image Transitions](customizing-image-transitions.md)
+- [Customizing Image Transitions](./customizing-image-transitions.md)
   Transition between images in creative ways using Core Image filters.
 
 

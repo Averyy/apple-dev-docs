@@ -1,23 +1,26 @@
 # GameCenterEnabledVersionCompatibleVersionsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the response body.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 3.0
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterEnabledVersions`
 
 
 ---

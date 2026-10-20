@@ -1,7 +1,8 @@
 # textureCoordinates3
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Buffer of texture coordinates set 3, if any.
 
@@ -21,17 +22,18 @@ var textureCoordinates3: MeshBuffers.TextureCoordinates? { get set }
 
 ## See Also
 
-- [var textureCoordinates1: MeshBuffers.TextureCoordinates?](meshbuffercontainer/texturecoordinates1.md)
+### Accessing texture coordinates
+- [var textureCoordinates1: MeshBuffers.TextureCoordinates?](./texturecoordinates1.md)
   Buffer of texture coordinates set 1, if any.
-- [var textureCoordinates2: MeshBuffers.TextureCoordinates?](meshbuffercontainer/texturecoordinates2.md)
+- [var textureCoordinates2: MeshBuffers.TextureCoordinates?](./texturecoordinates2.md)
   Buffer of texture coordinates set 2, if any.
-- [var textureCoordinates4: MeshBuffers.TextureCoordinates?](meshbuffercontainer/texturecoordinates4.md)
+- [var textureCoordinates4: MeshBuffers.TextureCoordinates?](./texturecoordinates4.md)
   Buffer of texture coordinates set 4, if any.
-- [var textureCoordinates5: MeshBuffers.TextureCoordinates?](meshbuffercontainer/texturecoordinates5.md)
+- [var textureCoordinates5: MeshBuffers.TextureCoordinates?](./texturecoordinates5.md)
   Buffer of texture coordinates set 5, if any.
-- [var textureCoordinates6: MeshBuffers.TextureCoordinates?](meshbuffercontainer/texturecoordinates6.md)
+- [var textureCoordinates6: MeshBuffers.TextureCoordinates?](./texturecoordinates6.md)
   Buffer of texture coordinates set 6, if any.
-- [var textureCoordinates7: MeshBuffers.TextureCoordinates?](meshbuffercontainer/texturecoordinates7.md)
+- [var textureCoordinates7: MeshBuffers.TextureCoordinates?](./texturecoordinates7.md)
   Buffer of texture coordinates set 7, if any.
 
 

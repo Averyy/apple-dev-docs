@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of additional information that was sent with the file.
 
@@ -18,13 +19,18 @@ A dictionary of additional information that was sent with the file.
 var metadata: [String : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDictionary<NSString *,id> * metadata;
+```
+
 #### Discussion
 
 The keys of the dictionary are strings. The values are property-list object types.
 
 ## See Also
 
-- [var fileURL: URL](wcsessionfile/fileurl.md)
+### Getting the File Information
+- [var fileURL: URL](./fileurl.md)
   The URL of the file that was received.
 
 

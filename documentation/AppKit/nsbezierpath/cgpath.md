@@ -1,7 +1,8 @@
 # cgPath
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
@@ -12,17 +13,22 @@
 var cgPath: CGPath { get set }
 ```
 
+```objc
+@property (nonnull) CGPathRef CGPath;
+```
+
 ## See Also
 
-- [var elementCount: Int](nsbezierpath/elementcount.md)
+### Accessing Elements of a Path
+- [var elementCount: Int](./elementcount.md)
   The total number of path elements in the path.
-- [func element(at: Int) -> NSBezierPath.ElementType](nsbezierpath/element(at:).md)
+- [func element(at: Int) -> NSBezierPath.ElementType](./element%28at%29.md)
   Returns the type of path element at the specified index.
-- [func element(at: Int, associatedPoints: NSPointArray?) -> NSBezierPath.ElementType](nsbezierpath/element(at:associatedpoints:).md)
+- [func element(at: Int, associatedPoints: NSPointArray?) -> NSBezierPath.ElementType](./element%28at,associatedpoints%29.md)
   Gets the element type and (and optionally) the associated points for the path element at the specified index.
-- [func removeAllPoints()](nsbezierpath/removeallpoints.md)
+- [func removeAllPoints()](./removeallpoints%28%29.md)
   Removes all path elements from the path, effectively clearing the path.
-- [func setAssociatedPoints(NSPointArray?, at: Int)](nsbezierpath/setassociatedpoints(_:at:).md)
+- [func setAssociatedPoints(NSPointArray?, at: Int)](./setassociatedpoints%28_,at%29.md)
   Changes the points associated with the specified path element.
 
 

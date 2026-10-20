@@ -1,7 +1,8 @@
 # CryptoKitError
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 General cryptography errors used by CryptoKit.
 
@@ -23,33 +24,34 @@ enum CryptoKitError
 ## Topics
 
 ### Reporting errors
-- [CryptoKitError.incorrectKeySize](cryptokiterror/incorrectkeysize.md)
+- [CryptoKitError.incorrectKeySize](./cryptokiterror/incorrectkeysize.md)
   The key size is incorrect.
-- [CryptoKitError.invalidParameter](cryptokiterror/invalidparameter.md)
+- [CryptoKitError.invalidParameter](./cryptokiterror/invalidparameter.md)
   The parameter is invalid.
-- [CryptoKitError.incorrectParameterSize](cryptokiterror/incorrectparametersize.md)
+- [CryptoKitError.incorrectParameterSize](./cryptokiterror/incorrectparametersize.md)
   The parameter size is incorrect.
-- [CryptoKitError.underlyingCoreCryptoError(error:)](cryptokiterror/underlyingcorecryptoerror(error:).md)
+- [CryptoKitError.underlyingCoreCryptoError(error:)](./cryptokiterror/underlyingcorecryptoerror%28error%29.md)
   The underlying corecrypto library is unable to complete the requested action.
-- [CryptoKitError.authenticationFailure](cryptokiterror/authenticationfailure.md)
+- [CryptoKitError.authenticationFailure](./cryptokiterror/authenticationfailure.md)
   The authentication tag or signature is incorrect.
-- [CryptoKitError.wrapFailure](cryptokiterror/wrapfailure.md)
+- [CryptoKitError.wrapFailure](./cryptokiterror/wrapfailure.md)
   The framework can’t wrap the specified key.
-- [CryptoKitError.unwrapFailure](cryptokiterror/unwrapfailure.md)
+- [CryptoKitError.unwrapFailure](./cryptokiterror/unwrapfailure.md)
   The framework can’t unwrap the specified key.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CryptoKitASN1Error](cryptokitasn1error.md)
+### Errors
+- [enum CryptoKitASN1Error](./cryptokitasn1error.md)
   Errors from decoding ASN.1 content.
 
 

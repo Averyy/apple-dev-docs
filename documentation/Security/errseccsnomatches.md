@@ -1,7 +1,8 @@
 # errSecCSNoMatches
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No matches were found for a search or update operation.
 
@@ -13,6 +14,10 @@ No matches were found for a search or update operation.
 
 ```swift
 var errSecCSNoMatches: OSStatus { get }
+```
+
+```c
+errSecCSNoMatches
 ```
 
 

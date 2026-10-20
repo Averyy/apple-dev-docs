@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Service Management  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that describes registration or authorization state of the service.
 
@@ -15,9 +16,14 @@ A property that describes registration or authorization state of the service.
 var status: SMAppService.Status { get }
 ```
 
+```objc
+@property (readonly) SMAppServiceStatus status;
+```
+
 ## See Also
 
-- [SMAppService.Status](smappservice/status-swift.enum.md)
+### Getting the state of the service
+- [SMAppService.Status](./status-swift.enum.md)
   Constants that describe the registration or authorization status of a helper executable.
 
 

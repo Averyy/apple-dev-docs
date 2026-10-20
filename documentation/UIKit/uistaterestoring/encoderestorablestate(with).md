@@ -1,16 +1,17 @@
 # encodeRestorableState(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes state-related information for the object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Encodes state-related information for the object.
 optional func encodeRestorableState(with coder: NSCoder)
 ```
 
+```objc
+- (void) encodeRestorableStateWithCoder:(NSCoder *) coder;
+```
+
 ## Mentions
 
-- [About the UI preservation process](about-the-ui-preservation-process.md)
+- [About the UI preservation process](../about-the-ui-preservation-process.md)
 
 #### Discussion
 
@@ -36,9 +41,10 @@ It is strongly recommended that you call `super` at some point during your imple
 
 ## See Also
 
-- [func decodeRestorableState(with: NSCoder)](uistaterestoring/decoderestorablestate(with:).md)
+### Encoding and decoding the object
+- [func decodeRestorableState(with: NSCoder)](./decoderestorablestate%28with%29.md)
   Decodes and restores state-related information for the object.
-- [func applicationFinishedRestoringState()](uistaterestoring/applicationfinishedrestoringstate.md)
+- [func applicationFinishedRestoringState()](./applicationfinishedrestoringstate%28%29.md)
   Called after all objects have had a chance to decode their state.
 
 

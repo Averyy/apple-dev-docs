@@ -1,7 +1,8 @@
 # Assign individual testers to a build
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Enable a beta tester who is not a part of a beta group to test a build.
 
@@ -14,15 +15,34 @@ Enable a beta tester who is not a part of a beta group to test a build.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `BuildIndividualTestersLinkagesRequest`
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Add access for beta groups to a build](post-v1-builds-_id_-relationships-betagroups.md)
+### Adding and Removing Build Access
+- [Add access for beta groups to a build](./post-v1-builds-_id_-relationships-betagroups.md)
   Add or create a beta group to a build to enable testing.
-- [Remove access for beta groups to a build](delete-v1-builds-_id_-relationships-betagroups.md)
+- [Remove access for beta groups to a build](./delete-v1-builds-_id_-relationships-betagroups.md)
   Remove access to a specific build for all beta testers in one or more beta groups.
-- [Remove individual testers from a build](delete-v1-builds-_id_-relationships-individualtesters.md)
+- [Remove individual testers from a build](./delete-v1-builds-_id_-relationships-individualtesters.md)
   Remove access to test a specific build from one or more individually assigned testers.
 
 

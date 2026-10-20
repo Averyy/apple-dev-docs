@@ -1,7 +1,8 @@
 # source
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Source for an accessory if creating it failed.
 

@@ -1,9 +1,10 @@
 # CGPathFillRule
 
 **Framework**: Core Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Rules for determining which regions are interior to a path, used by the [`fillPath(using:)`](cgcontext/fillpath(using:).md) and [`clip(using:)`](cgcontext/clip(using:).md) methods.
+Rules for determining which regions are interior to a path, used by the [`fillPath(using:)`](./cgcontext/fillpath%28using%29.md) and [`clip(using:)`](./cgcontext/clip%28using%29.md) methods.
 
 **Availability**:
 - iOS 7.0+
@@ -27,23 +28,24 @@ When filling a path, regions that a fill rule defines as interior to the path ar
 ## Topics
 
 ### Enumeration Cases
-- [CGPathFillRule.evenOdd](cgpathfillrule/evenodd.md)
+- [CGPathFillRule.evenOdd](./cgpathfillrule/evenodd.md)
   A rule that considers a region to be interior to a path based on the number of times it is enclosed by path elements.
-- [CGPathFillRule.winding](cgpathfillrule/winding.md)
+- [CGPathFillRule.winding](./cgpathfillrule/winding.md)
   A rule that considers a region to be interior to a path if the winding number for that region is nonzero.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [enum CGTextEncoding](cgtextencoding.md)
+### Constants
+- [enum CGTextEncoding](./cgtextencoding.md)
   Text encodings for fonts.
 
 

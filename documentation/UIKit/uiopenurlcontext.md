@@ -1,7 +1,8 @@
 # UIOpenURLContext
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A system-provided object that contains the information you need to open a single URL.
 
@@ -19,36 +20,41 @@ A system-provided object that contains the information you need to open a single
 class UIOpenURLContext
 ```
 
+```objc
+@interface UIOpenURLContext : NSObject
+```
+
 #### Overview
 
-UIKit provides a [`UIOpenURLContext`](uiopenurlcontext.md) object when your app receives a URL to open, such as in your implementation of [`scene(_:openURLContexts:)`](uiscenedelegate/scene(_:openurlcontexts:).md). The object contains the URL itself and any options needed to handle the URL correctly. Don’t create [`UIOpenURLContext`](uiopenurlcontext.md) objects yourself.
+UIKit provides a [`UIOpenURLContext`](./uiopenurlcontext.md) object when your app receives a URL to open, such as in your implementation of [`scene(_:openURLContexts:)`](./uiscenedelegate/scene%28_,openurlcontexts%29.md). The object contains the URL itself and any options needed to handle the URL correctly. Don’t create [`UIOpenURLContext`](./uiopenurlcontext.md) objects yourself.
 
 ## Topics
 
 ### Getting the URL
-- [var url: URL](uiopenurlcontext/url.md)
+- [var url: URL](./uiopenurlcontext/url.md)
   The URL to open.
-- [var options: UIScene.OpenURLOptions](uiopenurlcontext/options.md)
+- [var options: UIScene.OpenURLOptions](./uiopenurlcontext/options.md)
   Additional information for determining how to open the URL.
-- [UIScene.OpenURLOptions](uiscene/openurloptions.md)
+- [UIScene.OpenURLOptions](./uiscene/openurloptions.md)
   Options that UIKit provides when asking your app to open a URL.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [UIScene.OpenExternalURLOptions](uiscene/openexternalurloptions.md)
+### URL management
+- [UIScene.OpenExternalURLOptions](./uiscene/openexternalurloptions.md)
   Options you specify when asking a scene to open a URL.
 
 

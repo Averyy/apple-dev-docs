@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The indices that are valid for subscripting the collection, in ascending order.
@@ -35,17 +36,27 @@ while i != c.endIndex {
 // c == MyFancyCollection([2, 4, 6, 8, 10])
 ```
 
+## Default Implementations
+
+### BidirectionalCollection Implementations
+- [var indices: Range<Self.Index>](../bidirectionalcollection/indices-4jyvu.md)
+  The indices that are valid for subscripting the collection, in ascending order.
+### Collection Implementations
+- [var indices: DefaultIndices<Self>](./indices-wkbb.md)
+  The indices that are valid for subscripting the collection, in ascending order.
+
 ## See Also
 
-- [var startIndex: Self.Index](collection/startindex.md)
+### Manipulating Indices
+- [var startIndex: Self.Index](./startindex.md)
   The position of the first element in a nonempty collection.
-- [var endIndex: Self.Index](collection/endindex.md)
+- [var endIndex: Self.Index](./endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [func index(after: Self.Index) -> Self.Index](collection/index(after:).md)
+- [func index(after: Self.Index) -> Self.Index](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func formIndex(inout Self.Index, offsetBy: Int)](collection/formindex(_:offsetby:)-393pr.md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./formindex%28_,offsetby%29-393pr.md)
   Offsets the given index by the specified distance.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](collection/formindex(_:offsetby:limitedby:)-6jwra.md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./formindex%28_,offsetby,limitedby%29-6jwra.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
 
 

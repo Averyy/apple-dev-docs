@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the audio file.
 
@@ -20,17 +21,22 @@ The URL of the audio file.
 var url: URL? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURL * url;
+```
+
 #### Discussion
 
-This property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if you don’t create the player with a URL.
+This property is [`nil`](../../ObjectiveC/nil-227m0.md) if you don’t create the player with a URL.
 
 ## See Also
 
-- [var data: Data?](avaudioplayer/data.md)
+### Inspecting the audio data
+- [var data: Data?](./data.md)
   The audio data associated with the player.
-- [var format: AVAudioFormat](avaudioplayer/format.md)
+- [var format: AVAudioFormat](./format.md)
   The format of the player’s audio data.
-- [var settings: [String : Any]](avaudioplayer/settings.md)
+- [var settings: [String : Any]](./settings.md)
   A dictionary that provides information about the player’s audio data.
 
 

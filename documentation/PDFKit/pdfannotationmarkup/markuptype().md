@@ -1,12 +1,13 @@
 # markupType()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the markup style.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,11 +15,17 @@ Gets the markup style.
 func markupType() -> PDFMarkupType
 ```
 
+```objc
+- (PDFMarkupType) markupType;
+```
+
 ## See Also
 
-- [enum PDFMarkupType](pdfmarkuptype.md)
+### Related Documentation
+- [enum PDFMarkupType](../pdfmarkuptype.md)
   The styles available for markup annotations in PDFKit.
-- [func setMarkupType(PDFMarkupType)](pdfannotationmarkup/setmarkuptype(_:).md)
+### Working with Markup Style
+- [func setMarkupType(PDFMarkupType)](./setmarkuptype%28_%29.md)
   Sets the markup style.
 
 

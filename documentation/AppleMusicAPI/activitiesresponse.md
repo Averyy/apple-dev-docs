@@ -1,7 +1,8 @@
 # ActivitiesResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a request for activities.
 
@@ -10,17 +11,18 @@ The response to a request for activities.
 
 ## Declaration
 
-```swift
+```
 object ActivitiesResponse
 ```
 
 ## Properties
 
-- `data` ([Activities]) *(required)*: The [`Activities`](activities.md) included in the response for the request.
+- `data` ([Activities]) *(required)*: The [`Activities`](./activities.md) included in the response for the request.
 
 ## See Also
 
-- [object Activities](activities.md)
+### Handling the Response
+- [object Activities](./activities.md)
   A resource object that represents an activity curator.
 
 

@@ -1,7 +1,8 @@
 # assistant
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for types you use for assistant functionality.
 
@@ -15,6 +16,8 @@ Assistant schema conformance for types you use for assistant functionality.
 ```swift
 static var assistant: some AssistantSchemas.AssistantIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

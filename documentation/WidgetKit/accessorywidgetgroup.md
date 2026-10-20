@@ -1,7 +1,8 @@
 # AccessoryWidgetGroup
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view type that has a label at the top and three content views masked with a circle or rounded square.
 
@@ -43,55 +44,56 @@ You can change the shape with which the content views are masked using the `.acc
 ## Topics
 
 ### Creating an accessory widget group
-- [init(some StringProtocol, content: () -> Content)](accessorywidgetgroup/init(_:content:)-3ij0e.md)
+- [init(some StringProtocol, content: () -> Content)](./accessorywidgetgroup/init%28_,content%29-3ij0e.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a string.
-- [init(LocalizedStringResource, content: () -> Content)](accessorywidgetgroup/init(_:content:)-75rkg.md)
+- [init(LocalizedStringResource, content: () -> Content)](./accessorywidgetgroup/init%28_,content%29-75rkg.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string resource.
-- [init(LocalizedStringKey, content: () -> Content)](accessorywidgetgroup/init(_:content:)-nb0.md)
+- [init(LocalizedStringKey, content: () -> Content)](./accessorywidgetgroup/init%28_,content%29-nb0.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string key.
-- [init(LocalizedStringResource, image: ImageResource, content: () -> Content)](accessorywidgetgroup/init(_:image:content:)-385rt.md)
+- [init(LocalizedStringResource, image: ImageResource, content: () -> Content)](./accessorywidgetgroup/init%28_,image,content%29-385rt.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string resource and image resource.
-- [init(LocalizedStringKey, image: ImageResource, content: () -> Content)](accessorywidgetgroup/init(_:image:content:)-50iyk.md)
+- [init(LocalizedStringKey, image: ImageResource, content: () -> Content)](./accessorywidgetgroup/init%28_,image,content%29-50iyk.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string key and image resource.
-- [init(some StringProtocol, image: ImageResource, content: () -> Content)](accessorywidgetgroup/init(_:image:content:)-66iys.md)
+- [init(some StringProtocol, image: ImageResource, content: () -> Content)](./accessorywidgetgroup/init%28_,image,content%29-66iys.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a string and image resource.
-- [init(LocalizedStringResource, systemImage: String, content: () -> Content)](accessorywidgetgroup/init(_:systemimage:content:)-3mynu.md)
+- [init(LocalizedStringResource, systemImage: String, content: () -> Content)](./accessorywidgetgroup/init%28_,systemimage,content%29-3mynu.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string resource and a system image name.
-- [init(LocalizedStringKey, systemImage: String, content: () -> Content)](accessorywidgetgroup/init(_:systemimage:content:)-54h9w.md)
+- [init(LocalizedStringKey, systemImage: String, content: () -> Content)](./accessorywidgetgroup/init%28_,systemimage,content%29-54h9w.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string key and a system image name.
-- [init(some StringProtocol, systemImage: String, content: () -> Content)](accessorywidgetgroup/init(_:systemimage:content:)-7rnqc.md)
+- [init(some StringProtocol, systemImage: String, content: () -> Content)](./accessorywidgetgroup/init%28_,systemimage,content%29-7rnqc.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a string and system image name.
-- [init(label: () -> Label, content: () -> Content)](accessorywidgetgroup/init(label:content:).md)
+- [init(label: () -> Label, content: () -> Content)](./accessorywidgetgroup/init%28label,content%29.md)
   Creates an AccessoryWidgetGroup composed of a label and three circular or rounded square contents with equal spacing and vertical alignment.
 ### Styling an accessory widget group
-- [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
+- [struct AccessoryWidgetGroupStyle](./accessorywidgetgroupstyle.md)
   The style for an accessory widget group view.
 
 ## Relationships
 
 ### Conforms To
-- [View](../swiftui/view.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
+### Accessory and watchOS widgets
+- [Creating accessory widgets and watch complications](./creating-accessory-widgets-and-watch-complications.md)
   Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
-- [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
+- [struct AccessoryWidgetGroupStyle](./accessorywidgetgroupstyle.md)
   The style for an accessory widget group view.
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 - [func widgetCurvesContent(Bool) -> some View
-](../swiftui/view/widgetcurvescontent(_:).md)
+](../SwiftUI/view/widgetcurvescontent%28_%29.md)
   Displays the widget’s content along a curve if the context allows it.
-- [func widgetLabel(_:)](../swiftui/view/widgetlabel(_:).md)
+- [func widgetLabel(_:)](../SwiftUI/view/widgetlabel%28_%29.md)
   Returns a localized text label that displays additional content outside the accessory family widget’s main SwiftUI view.
 - [func widgetLabel<Label>(label: () -> Label) -> some View
-](../swiftui/view/widgetlabel(label:).md)
+](../SwiftUI/view/widgetlabel%28label%29.md)
   Creates a label for displaying additional content outside an accessory family widget’s main SwiftUI view.
-- [var showsWidgetLabel: Bool](../swiftui/environmentvalues/showswidgetlabel.md)
+- [var showsWidgetLabel: Bool](../SwiftUI/environmentvalues/showswidgetlabel.md)
   A Boolean value that indicates whether an accessory family widget can display an accessory label.
 - [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View
-](../swiftui/view/accessorywidgetgroupstyle(_:).md)
+](../SwiftUI/view/accessorywidgetgroupstyle%28_%29.md)
   The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
 
 

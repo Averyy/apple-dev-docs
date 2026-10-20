@@ -1,7 +1,8 @@
 # flatten2D(_:axisTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a flatten2D operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a flatten2D operation and returns the result tensor.
 
 ```swift
 func flatten2D(_ tensor: MPSGraphTensor, axisTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) flatten2DTensor:(MPSGraphTensor *) tensor axisTensor:(MPSGraphTensor *) axisTensor name:(NSString *) name;
 ```
 
 #### Return Value

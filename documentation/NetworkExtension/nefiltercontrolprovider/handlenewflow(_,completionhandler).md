@@ -1,7 +1,8 @@
 # handleNewFlow(_:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle a request for new filtering rules.
 
@@ -14,7 +15,15 @@ Handle a request for new filtering rules.
 ## Declaration
 
 ```swift
+func handleNewFlow(_ flow: NEFilterFlow, completionHandler: @escaping @Sendable (NEFilterControlVerdict) -> Void)
+```
+
+```swift
 func handleNewFlow(_ flow: NEFilterFlow) async -> NEFilterControlVerdict
+```
+
+```objc
+- (void) handleNewFlow:(NEFilterFlow *) flow completionHandler:(void (^)(NEFilterControlVerdict *)) completionHandler;
 ```
 
 #### Discussion
@@ -32,7 +41,8 @@ NEFilterControlProvider subclasses must override this method.
 
 ## See Also
 
-- [func notifyRulesChanged()](nefiltercontrolprovider/notifyruleschanged.md)
+### Handling requests for new rules
+- [func notifyRulesChanged()](./notifyruleschanged%28%29.md)
   Notify the Filter Data Provider that the filtering rules have changed on disk.
 
 

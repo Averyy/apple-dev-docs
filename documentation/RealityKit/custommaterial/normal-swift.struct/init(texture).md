@@ -1,7 +1,8 @@
 # init(texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an object from a specified texture.
 
@@ -22,7 +23,7 @@ init(texture: CustomMaterial.Texture? = nil)
 
 This initializer creates an object from a normal map texture. *Normal mapping* is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher-resolution version of the same 3D object. A normal map stores each vector in the image by storing the vectors’ `X`, `Y`, and `Z` values as the `R`, `G`, and `B` components of the corresponding pixel in the UV-mapped image.
 
-To render an entity using a normal map, set [`lightingModel`](custommaterial/lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](custommaterial/lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md), and call `params.surface().set_normal()` from its surface shader.
+To render an entity using a normal map, set [`lightingModel`](../lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](../lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](../lightingmodel-swift.enum/clearcoat.md), and call `params.surface().set_normal()` from its surface shader.
 
 The following Metal code demonstrates how to sample and use a value from the normal map in your surface shader function:
 
@@ -48,7 +49,8 @@ The following Metal code demonstrates how to sample and use a value from the nor
 
 ## See Also
 
-- [init(PhysicallyBasedMaterial.Normal)](custommaterial/normal-swift.struct/init(_:).md)
+### Creating a normal object
+- [init(PhysicallyBasedMaterial.Normal)](./init%28_%29.md)
   Creates an object containing surface details for an entity from a custom material’s normal property.
 
 

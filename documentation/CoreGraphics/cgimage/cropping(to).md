@@ -1,7 +1,8 @@
 # cropping(to:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a bitmap image using the data contained within a subregion of an existing bitmap image.
 
@@ -10,7 +11,7 @@ Creates a bitmap image using the data contained within a subregion of an existin
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,25 +21,29 @@ Creates a bitmap image using the data contained within a subregion of an existin
 func cropping(to rect: CGRect) -> CGImage?
 ```
 
+```c
+extern CGImageRefCGImageCreateWithImageInRect(CGImageRef image, CGRect rect);
+```
+
 #### Return Value
 
-A [`CGImage`](cgimage.md) object that specifies a subimage of the image. If the `rect` parameter defines an area that is not in the image, returns `NULL`.
+A [`CGImage`](../cgimage.md) object that specifies a subimage of the image. If the `rect` parameter defines an area that is not in the image, returns `NULL`.
 
 #### Discussion
 
 Cropping removes content around the designated rectangle; it cuts out the desired area of the input image and returns an image of the cropped size.
 
-![Butterfly photo with background cropped out](/images/com.apple.coregraphics/media-2951298@2x.png)
+![Butterfly photo with background cropped out](https://developer.apple.com/tutorials/images/com.apple.coregraphics/media-2951298@2x.png)
 
-[`cropping(to:)`](cgimage/cropping(to:).md) performs the following tasks to create the subimage:
+[`cropping(to:)`](./cropping%28to%29.md) performs the following tasks to create the subimage:
 
-- It calls the [`CGRectIntegral(_:)`](cgrectintegral(_:).md) function to adjust the `rect` parameter to integral bounds.
+- It calls the [`CGRectIntegral(_:)`](../cgrectintegral%28_%29.md) function to adjust the `rect` parameter to integral bounds.
 - It intersects the `rect` with a rectangle whose origin is `(0,0)` and size is equal to the size of the image specified by the `image` parameter.
 - It reads the pixels within the resulting rectangle, treating the first pixel within as the origin of the subimage.
 
 If `W` and `H` are the width and height of image, respectively, then the point `(0,0)` corresponds to the first pixel of the image data. The point `(W–1, 0)` is the last pixel of the first row of the image data, while `(0, H–1)` is the first pixel of the last row of the image data and `(W–1, H–1)` is the last pixel of the last row of the image data.
 
-> ❗ **Important**:  Be sure to specify the subrectangle’s coordinates relative to the original image’s full size, even if the [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) shows only a scaled version.
+> ❗ **Important**:  Be sure to specify the subrectangle’s coordinates relative to the original image’s full size, even if the [`UIImageView`](../../UIKit/uiimageview.md) shows only a scaled version.
 
 The resulting image retains a reference to the original image, which means you may release the original image after calling this function.  In Swift, you do not need to release the original image reference explicitly.
 
@@ -101,7 +106,7 @@ The resulting image retains a reference to the original image, which means you m
 }
 ```
 
-If you already use [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), or if you are post-processing images as [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) data in Core Image, such as chaining together multiple filters to the cropped result, it may be more efficient to crop [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) directly in the Core Image framework using the `CICrop` filter; in this case, use the convenience function [`cropped(to:)`](https://developer.apple.com/documentation/coreimage/ciimage/cropped(to:)).
+If you already use [`CIImage`](../../CoreImage/ciimage.md), or if you are post-processing images as [`CIImage`](../../CoreImage/ciimage.md) data in Core Image, such as chaining together multiple filters to the cropped result, it may be more efficient to crop [`CIImage`](../../CoreImage/ciimage.md) directly in the Core Image framework using the `CICrop` filter; in this case, use the convenience function [`cropped(to:)`](../../CoreImage/ciimage/cropped%28to%29.md).
 
 ## Parameters
 
@@ -109,9 +114,10 @@ If you already use [`CIImage`](https://developer.apple.com/documentation/coreima
 
 ## See Also
 
-- [func masking(CGImage) -> CGImage?](cgimage/masking(_:).md)
+### Creating images by modifying an image
+- [func masking(CGImage) -> CGImage?](./masking%28_%29.md)
   Creates a bitmap image from an existing image and an image mask.
-- [func copy(maskingColorComponents: [CGFloat]) -> CGImage?](cgimage/copy(maskingcolorcomponents:).md)
+- [func copy(maskingColorComponents: [CGFloat]) -> CGImage?](./copy%28maskingcolorcomponents%29.md)
 
 
 ---

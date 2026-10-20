@@ -1,7 +1,8 @@
 # kFemale
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Female voice.
 

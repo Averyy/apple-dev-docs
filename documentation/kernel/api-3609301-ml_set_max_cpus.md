@@ -1,14 +1,15 @@
 # ml_set_max_cpus
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_set_max_cpus(unsigned int max_cpus);
 ```
 

@@ -1,7 +1,8 @@
 # writeAttributeCharString(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeCharString(withValue value: String, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeCharString(withValue value: String) async throws
+```
+
+```objc
+- (void) writeAttributeCharStringWithValue:(NSString *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

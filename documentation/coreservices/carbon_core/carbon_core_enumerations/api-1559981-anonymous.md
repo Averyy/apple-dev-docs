@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var noMaskFoundErr: Int](nomaskfounderr.md)
+- [var noMaskFoundErr: Int](../../nomaskfounderr.md)
 
 
 ---

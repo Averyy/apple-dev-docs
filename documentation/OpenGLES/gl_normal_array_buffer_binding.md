@@ -1,7 +1,8 @@
 # GL_NORMAL_ARRAY_BUFFER_BINDING
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_NORMAL_ARRAY_BUFFER_BINDING: Int32 { get }
+```
+
+```c
+#define GL_NORMAL_ARRAY_BUFFER_BINDING
 ```
 
 

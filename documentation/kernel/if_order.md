@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_order {
     ...
 };
@@ -17,9 +17,9 @@ struct if_order {
 ## Topics
 
 ### Instance Properties
-- [ifo_count](if_order/3943782-ifo_count.md)
-- [ifo_ordered_indices](if_order/3943783-ifo_ordered_indices.md)
-- [ifo_reserved](if_order/3943784-ifo_reserved.md)
+- [ifo_count](./if_order/api-3943782-ifo_count.md)
+- [ifo_ordered_indices](./if_order/api-3943783-ifo_ordered_indices.md)
+- [ifo_reserved](./if_order/api-3943784-ifo_reserved.md)
 
 
 ---

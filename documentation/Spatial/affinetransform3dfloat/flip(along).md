@@ -1,7 +1,8 @@
 # flip(along:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flips the transform along the specified axis.
 

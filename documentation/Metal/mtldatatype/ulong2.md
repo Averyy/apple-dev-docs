@@ -1,7 +1,8 @@
 # MTLDataType.ulong2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 64-bit, unsigned integer values.
 
@@ -19,21 +20,26 @@ A two-component vector with 64-bit, unsigned integer values.
 case ulong2
 ```
 
+```c
+MTLDataTypeULong2
+```
+
 ## See Also
 
-- [MTLDataType.long](mtldatatype/long.md)
+### 64-bit integer types
+- [MTLDataType.long](./long.md)
   A 64-bit, signed integer value.
-- [MTLDataType.long2](mtldatatype/long2.md)
+- [MTLDataType.long2](./long2.md)
   A two-component vector with 64-bit, signed integer values.
-- [MTLDataType.long3](mtldatatype/long3.md)
+- [MTLDataType.long3](./long3.md)
   A three-component vector with 64-bit, signed integer values.
-- [MTLDataType.long4](mtldatatype/long4.md)
+- [MTLDataType.long4](./long4.md)
   A four-component vector with 64-bit, signed integer values.
-- [MTLDataType.ulong](mtldatatype/ulong.md)
+- [MTLDataType.ulong](./ulong.md)
   A 64-bit, unsigned integer value.
-- [MTLDataType.ulong3](mtldatatype/ulong3.md)
+- [MTLDataType.ulong3](./ulong3.md)
   A three-component vector with 64-bit, unsigned integer values.
-- [MTLDataType.ulong4](mtldatatype/ulong4.md)
+- [MTLDataType.ulong4](./ulong4.md)
   A four-component vector with 64-bit, unsigned integer values.
 
 

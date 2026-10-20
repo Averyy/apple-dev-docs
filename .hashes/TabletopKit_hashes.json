@@ -581,7 +581,7 @@
       "hash": "036b36f165d10af6ef640ea5cc8f42358d76e61e320b286f25c7c1f088955a97"
     },
     "https://developer.apple.com/documentation/tabletopkit/moveequipmentaction/order-swift.enum/first": {
-      "etag": "\"1e66-65d55e0c7bc02\"",
+      "etag": "\"1e66-65d55e0c7bc02-df\"",
       "file_path": "documentation/TabletopKit/moveequipmentaction/order-swift.enum/first.md",
       "hash": "39bf3831a41b465797b5f2ec18d274097da32579a22f13028bea2119671bc43e"
     },
@@ -3726,7 +3726,7 @@
       "hash": "036b36f165d10af6ef640ea5cc8f42358d76e61e320b286f25c7c1f088955a97"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabletopkit/moveequipmentaction/order-swift.enum/first.json": {
-      "etag": "\"1e66-65d55e0c7bc02\"",
+      "etag": "\"1e66-65d55e0c7bc02-df\"",
       "file_path": "documentation/TabletopKit/moveequipmentaction/order-swift.enum/first.md",
       "hash": "39bf3831a41b465797b5f2ec18d274097da32579a22f13028bea2119671bc43e"
     },
@@ -6292,6 +6292,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1258
   }
 }

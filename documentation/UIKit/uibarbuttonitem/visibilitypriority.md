@@ -1,7 +1,8 @@
 # visibilityPriority
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Visibility priority for this item when placed in a button bar.
 
@@ -16,6 +17,10 @@ Visibility priority for this item when placed in a button bar.
 
 ```swift
 var visibilityPriority: UIBarButtonItemVisibilityPriority { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) UIBarButtonItemVisibilityPriority visibilityPriority;
 ```
 
 #### Discussion

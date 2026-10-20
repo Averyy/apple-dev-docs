@@ -1,7 +1,8 @@
 # rateLimited
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates your app requested its status too frequently.
 
@@ -17,7 +18,8 @@ static var rateLimited: UIApplication.CategoryDefaultError.Code { get }
 
 ## See Also
 
-- [static var errorDomain: String](uiapplication/categorydefaulterror/errordomain.md)
+### Errors when discovering if an app is the default in a category
+- [static var errorDomain: String](./errordomain.md)
   A string that indicates that an error happened when the system attempted to determine if your app is the default in a category.
 
 

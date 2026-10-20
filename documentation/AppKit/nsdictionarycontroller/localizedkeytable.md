@@ -1,7 +1,8 @@
 # localizedKeyTable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 the strings file used to localize key names.
 
@@ -14,9 +15,14 @@ the strings file used to localize key names.
 var localizedKeyTable: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * localizedKeyTable;
+```
+
 ## See Also
 
-- [var localizedKeyDictionary: [String : String]](nsdictionarycontroller/localizedkeydictionary.md)
+### Localizing Key Names
+- [var localizedKeyDictionary: [String : String]](./localizedkeydictionary.md)
   The localized key names that are displayed by the receiver in place of the key names.
 
 

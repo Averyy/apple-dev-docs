@@ -1,24 +1,26 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 ## See Also
 
-- [free](iodmacommand/free.md)
-- [Create](iodmacommand/create.md)
+### Creating a DMA Command
+- [free](./free.md)
+- [Create](./create.md)
 
 
 ---

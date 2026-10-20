@@ -1,7 +1,8 @@
 # apply(directory:path:flags:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies extended attributes to a filesystem object.
 
@@ -11,7 +12,7 @@ Applies extended attributes to a filesystem object.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # linear(weight:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a linear transformation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a linear transformation operation to the current graph.
 ```swift
 func linear(weight: some BNNSGraph.Builder.OperationParameter<T>) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

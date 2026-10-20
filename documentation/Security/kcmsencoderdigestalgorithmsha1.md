@@ -1,7 +1,8 @@
 # kCMSEncoderDigestAlgorithmSHA1
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let kCMSEncoderDigestAlgorithmSHA1: CFString
+```
+
+```c
+extern CFStringRef const kCMSEncoderDigestAlgorithmSHA1;
 ```
 
 

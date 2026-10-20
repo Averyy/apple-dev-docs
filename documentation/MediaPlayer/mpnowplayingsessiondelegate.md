@@ -1,7 +1,8 @@
 # MPNowPlayingSessionDelegate
 
 **Framework**: Media Player  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the delegate interface for a Now Playing session.
 
@@ -18,22 +19,27 @@ A protocol that defines the delegate interface for a Now Playing session.
 protocol MPNowPlayingSessionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MPNowPlayingSessionDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to state changes
-- [func nowPlayingSessionDidChangeActive(MPNowPlayingSession)](mpnowplayingsessiondelegate/nowplayingsessiondidchangeactive(_:).md)
+- [func nowPlayingSessionDidChangeActive(MPNowPlayingSession)](./mpnowplayingsessiondelegate/nowplayingsessiondidchangeactive%28_%29.md)
   Tells the delegate that the session changed its active status.
-- [func nowPlayingSessionDidChangeCanBecomeActive(MPNowPlayingSession)](mpnowplayingsessiondelegate/nowplayingsessiondidchangecanbecomeactive(_:).md)
+- [func nowPlayingSessionDidChangeCanBecomeActive(MPNowPlayingSession)](./mpnowplayingsessiondelegate/nowplayingsessiondidchangecanbecomeactive%28_%29.md)
   Tells the delegate that the session is eligible to become active.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any MPNowPlayingSessionDelegate)?](mpnowplayingsession/delegate.md)
+### Accessing the delegate object
+- [var delegate: (any MPNowPlayingSessionDelegate)?](./mpnowplayingsession/delegate.md)
   The Now Playing session’s delegate object.
 
 

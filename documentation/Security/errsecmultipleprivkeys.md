@@ -1,7 +1,8 @@
 # errSecMultiplePrivKeys
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attempt was made to import multiple private keys.
 
@@ -18,6 +19,10 @@ An attempt was made to import multiple private keys.
 
 ```swift
 var errSecMultiplePrivKeys: OSStatus { get }
+```
+
+```c
+errSecMultiplePrivKeys
 ```
 
 

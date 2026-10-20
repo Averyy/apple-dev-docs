@@ -1,7 +1,8 @@
 # stroke(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Paints a rectangular path using the currently selected stroke color.
 
@@ -18,11 +19,15 @@ Paints a rectangular path using the currently selected stroke color.
 func stroke(_ rect: CGRect)
 ```
 
+```objc
+- (void) strokeRect:(CGRect) rect;
+```
+
 #### Discussion
 
-Before calling this method, select the stroke color with the [`setStroke()`](uicolor/setstroke().md) method on an instance of [`UIColor`](uicolor.md).
+Before calling this method, select the stroke color with the [`setStroke()`](../uicolor/setstroke%28%29.md) method on an instance of [`UIColor`](../uicolor.md).
 
-For an example of how to use this method, see [`Creating an image with an image renderer`](uigraphicsimagerenderer#Creating-an-image-with-an-image-renderer.md) in [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md).
+For an example of how to use this method, see [Creating an image with an image renderer](../uigraphicsimagerenderer.md#Creating-an-image-with-an-image-renderer) in [`UIGraphicsImageRenderer`](../uigraphicsimagerenderer.md).
 
 ## Parameters
 
@@ -30,11 +35,12 @@ For an example of how to use this method, see [`Creating an image with an image 
 
 ## See Also
 
-- [func stroke(CGRect, blendMode: CGBlendMode)](uigraphicsrenderercontext/stroke(_:blendmode:).md)
+### Drawing content
+- [func stroke(CGRect, blendMode: CGBlendMode)](./stroke%28_,blendmode%29.md)
   Paints a rectangular path using the currently selected stroke color and specified blend mode.
-- [func fill(CGRect, blendMode: CGBlendMode)](uigraphicsrenderercontext/fill(_:blendmode:).md)
+- [func fill(CGRect, blendMode: CGBlendMode)](./fill%28_,blendmode%29.md)
   Paints a rectangular area with the currently selected fill color using the supplied blend mode.
-- [func fill(CGRect)](uigraphicsrenderercontext/fill(_:).md)
+- [func fill(CGRect)](./fill%28_%29.md)
   Paints a rectangular area with the currently selected fill color.
 
 

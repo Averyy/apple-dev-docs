@@ -1,7 +1,8 @@
 # FSEventStreamShow(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -11,6 +12,10 @@
 
 ```swift
 func FSEventStreamShow(_ streamRef: ConstFSEventStreamRef)
+```
+
+```c
+void FSEventStreamShow(ConstFSEventStreamRef streamRef);
 ```
 
 #### Discussion

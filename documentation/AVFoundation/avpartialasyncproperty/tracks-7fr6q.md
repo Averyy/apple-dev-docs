@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tracks that a movie contains.
 
@@ -19,13 +20,16 @@ The tracks that a movie contains.
 static var tracks: AVAsyncProperty<Root, [AVFragmentedMovieTrack]> { get }
 ```
 
+Available when `Root` inherits `AVFragmentedMovie`.
+
 ## See Also
 
-- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVFragmentedMovieTrack?, (any Error)?) -> Void)](avfragmentedmovie/loadtrack(withtrackid:completionhandler:).md)
+### Loading tracks
+- [func loadTrack(withTrackID: CMPersistentTrackID, completionHandler: (AVFragmentedMovieTrack?, (any Error)?) -> Void)](../avfragmentedmovie/loadtrack%28withtrackid,completionhandler%29.md)
   Loads a track that contains the specified identifier.
-- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVFragmentedMovieTrack]?, (any Error)?) -> Void)](avfragmentedmovie/loadtracks(withmediatype:completionhandler:).md)
+- [func loadTracks(withMediaType: AVMediaType, completionHandler: ([AVFragmentedMovieTrack]?, (any Error)?) -> Void)](../avfragmentedmovie/loadtracks%28withmediatype,completionhandler%29.md)
   Loads tracks that contain media of a specified type.
-- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVFragmentedMovieTrack]?, (any Error)?) -> Void)](avfragmentedmovie/loadtracks(withmediacharacteristic:completionhandler:).md)
+- [func loadTracks(withMediaCharacteristic: AVMediaCharacteristic, completionHandler: ([AVFragmentedMovieTrack]?, (any Error)?) -> Void)](../avfragmentedmovie/loadtracks%28withmediacharacteristic,completionhandler%29.md)
   Loads tracks that contain media of a specified characteristic.
 
 

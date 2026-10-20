@@ -1,7 +1,8 @@
 # photos
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of enum schemas in the photos domain.
 
@@ -17,6 +18,8 @@ The collection of enum schemas in the photos domain.
 ```swift
 static var photos: some AppSchema.PhotosEnum { get }
 ```
+
+Available when `Self` is `AppSchema.Enum`.
 
 
 ---

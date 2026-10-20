@@ -1,7 +1,8 @@
 # commitmentInfo
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,7 +21,7 @@ let commitmentInfo: Transaction.CommitmentInfo?
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 
 ---

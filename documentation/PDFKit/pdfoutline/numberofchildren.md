@@ -1,7 +1,8 @@
 # numberOfChildren
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the number of child outline objects in the outline.
 
@@ -19,15 +20,20 @@ Returns the number of child outline objects in the outline.
 var numberOfChildren: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger numberOfChildren;
+```
+
 ## See Also
 
-- [var document: PDFDocument?](pdfoutline/document.md)
+### Getting Information About an Outline
+- [var document: PDFDocument?](./document.md)
   Returns the document with which the outline is associated.
-- [var parent: PDFOutline?](pdfoutline/parent.md)
+- [var parent: PDFOutline?](./parent.md)
   Returns the parent outline object of the outline (returns `NULL` if called on the root outline object).
-- [func child(at: Int) -> PDFOutline?](pdfoutline/child(at:).md)
+- [func child(at: Int) -> PDFOutline?](./child%28at%29.md)
   Returns the child outline object at the specified index.
-- [var index: Int](pdfoutline/index.md)
+- [var index: Int](./index.md)
   Returns the index of the outline.
 
 

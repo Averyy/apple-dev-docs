@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDVDRZoneInfoAddressTypeBorderNumber](1646173-anonymous/kdvdrzoneinfoaddresstypebordernumber.md)
-- [kDVDRZoneInfoAddressTypeLBA](1646173-anonymous/kdvdrzoneinfoaddresstypelba.md)
-- [kDVDRZoneInfoAddressTypeRZoneNumber](1646173-anonymous/kdvdrzoneinfoaddresstyperzonenumber.md)
+- [kDVDRZoneInfoAddressTypeBorderNumber](./api-1646173-anonymous/kdvdrzoneinfoaddresstypebordernumber.md)
+- [kDVDRZoneInfoAddressTypeLBA](./api-1646173-anonymous/kdvdrzoneinfoaddresstypelba.md)
+- [kDVDRZoneInfoAddressTypeRZoneNumber](./api-1646173-anonymous/kdvdrzoneinfoaddresstyperzonenumber.md)
 
 
 ---

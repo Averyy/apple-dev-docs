@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate when the rename process ends.
@@ -10,7 +11,7 @@ Tells the delegate when the rename process ends.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -32,7 +33,8 @@ UIKit updates the navigation item’s title automatically. However, if you want 
 
 ## See Also
 
-- [func navigationItem(UINavigationItem, willBeginRenamingWith: String, selectedRange: Range<String.Index>) -> (String, Range<String.Index>)](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:willbeginrenamingwith:selectedrange:).md)
+### Handling the rename process
+- [func navigationItem(UINavigationItem, willBeginRenamingWith: String, selectedRange: Range<String.Index>) -> (String, Range<String.Index>)](./navigationitem%28_,willbeginrenamingwith,selectedrange%29.md)
   Tells the delegate when the rename process starts.
 
 

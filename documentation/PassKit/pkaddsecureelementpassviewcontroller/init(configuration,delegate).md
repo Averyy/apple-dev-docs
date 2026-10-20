@@ -1,7 +1,8 @@
 # init(configuration:delegate:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view controller using the specified pass configuration.
 
@@ -17,9 +18,13 @@ Creates a view controller using the specified pass configuration.
 init?(configuration: PKAddSecureElementPassConfiguration, delegate: (any PKAddSecureElementPassViewControllerDelegate)?)
 ```
 
+```objc
+- (instancetype) initWithConfiguration:(PKAddSecureElementPassConfiguration *) configuration delegate:(id<PKAddSecureElementPassViewControllerDelegate>) delegate;
+```
+
 #### Discussion
 
-The delegate must adopt the [`PKAddSecureElementPassViewControllerDelegate`](pkaddsecureelementpassviewcontrollerdelegate.md) protocol. The view controller doesn’t retain the delegate.
+The delegate must adopt the [`PKAddSecureElementPassViewControllerDelegate`](../pkaddsecureelementpassviewcontrollerdelegate.md) protocol. The view controller doesn’t retain the delegate.
 
 ## Parameters
 

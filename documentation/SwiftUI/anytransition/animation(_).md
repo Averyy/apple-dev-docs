@@ -1,7 +1,8 @@
 # animation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches an animation to this transition.
 
@@ -22,9 +23,10 @@ func animation(_ animation: Animation?) -> AnyTransition
 
 ## See Also
 
-- [static func asymmetric(insertion: AnyTransition, removal: AnyTransition) -> AnyTransition](anytransition/asymmetric(insertion:removal:).md)
+### Combining and configuring transitions
+- [static func asymmetric(insertion: AnyTransition, removal: AnyTransition) -> AnyTransition](./asymmetric%28insertion,removal%29.md)
   Provides a composite transition that uses a different transition for insertion versus removal.
-- [func combined(with: AnyTransition) -> AnyTransition](anytransition/combined(with:).md)
+- [func combined(with: AnyTransition) -> AnyTransition](./combined%28with%29.md)
   Combines this transition with another, returning a new transition that is the result of both transitions being applied.
 
 

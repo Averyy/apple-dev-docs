@@ -1,7 +1,8 @@
 # extent
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle that specifies the extent of the image.
 
@@ -10,7 +11,7 @@ A rectangle that specifies the extent of the image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,21 @@ A rectangle that specifies the extent of the image.
 var extent: CGRect { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) CGRect extent;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) CGRect extent;
+```
+
 ## Mentions
 
-- [Selectively Focusing on an Image](selectively-focusing-on-an-image.md)
+- [Selectively Focusing on an Image](../selectively-focusing-on-an-image.md)
 
 #### Discussion
 
@@ -29,15 +42,16 @@ This rectangle specifies the extent of the image in working space coordinates.
 
 ## See Also
 
-- [var definition: CIFilterShape](ciimage/definition.md)
+### Getting Image Information
+- [var definition: CIFilterShape](./definition.md)
   Returns a filter shape object that represents the domain of definition of the image.
-- [var properties: [String : Any]](ciimage/properties.md)
+- [var properties: [String : Any]](./properties.md)
   Returns the metadata properties dictionary of the image.
-- [var url: URL?](ciimage/url.md)
+- [var url: URL?](./url.md)
   The URL from which the image was loaded.
-- [var colorSpace: CGColorSpace?](ciimage/colorspace.md)
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   The color space of the image.
-- [func orientationTransform(forExifOrientation: Int32) -> CGAffineTransform](ciimage/orientationtransform(forexiforientation:).md)
+- [func orientationTransform(forExifOrientation: Int32) -> CGAffineTransform](./orientationtransform%28forexiforientation%29.md)
   Returns the transformation needed to reorient the image to the specified orientation.
 
 

@@ -1,7 +1,8 @@
 # numberOfStalls
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of playback stalls encountered.
 
@@ -20,6 +21,10 @@ The total number of playback stalls encountered.
 var numberOfStalls: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger numberOfStalls;
+```
+
 #### Discussion
 
 The property corresponds to “c-stalls”.
@@ -30,25 +35,26 @@ This property is not compatible with key-value observing.
 
 ## See Also
 
-- [var playbackStartDate: Date?](avplayeritemaccesslogevent/playbackstartdate.md)
+### Getting playback-related log events
+- [var playbackStartDate: Date?](./playbackstartdate.md)
   The date and time at which playback began for this event.
-- [var playbackSessionID: String?](avplayeritemaccesslogevent/playbacksessionid.md)
+- [var playbackSessionID: String?](./playbacksessionid.md)
   A GUID that identifies the playback session.
-- [var playbackStartOffset: TimeInterval](avplayeritemaccesslogevent/playbackstartoffset.md)
+- [var playbackStartOffset: TimeInterval](./playbackstartoffset.md)
   The offset, in seconds, in the playlist where the last uninterrupted period of playback began.
-- [var playbackType: String?](avplayeritemaccesslogevent/playbacktype.md)
+- [var playbackType: String?](./playbacktype.md)
   The playback type.
-- [var startupTime: TimeInterval](avplayeritemaccesslogevent/startuptime.md)
+- [var startupTime: TimeInterval](./startuptime.md)
   The accumulated duration, in seconds, until the player item is ready to play.
-- [var durationWatched: TimeInterval](avplayeritemaccesslogevent/durationwatched.md)
+- [var durationWatched: TimeInterval](./durationwatched.md)
   The accumulated duration, in seconds, of the media played.
-- [var numberOfDroppedVideoFrames: Int](avplayeritemaccesslogevent/numberofdroppedvideoframes.md)
+- [var numberOfDroppedVideoFrames: Int](./numberofdroppedvideoframes.md)
   The total number of dropped video frames
-- [var numberOfSegmentsDownloaded: Int](avplayeritemaccesslogevent/numberofsegmentsdownloaded.md)
+- [var numberOfSegmentsDownloaded: Int](./numberofsegmentsdownloaded.md)
   A count of the media segments downloaded from the server to this client.
-- [var segmentsDownloadedDuration: TimeInterval](avplayeritemaccesslogevent/segmentsdownloadedduration.md)
+- [var segmentsDownloadedDuration: TimeInterval](./segmentsdownloadedduration.md)
   The accumulated duration, in seconds, of the media segments downloaded.
-- [var downloadOverdue: Int](avplayeritemaccesslogevent/downloadoverdue.md)
+- [var downloadOverdue: Int](./downloadoverdue.md)
   The total number of times that downloading the segments took too long.
 
 

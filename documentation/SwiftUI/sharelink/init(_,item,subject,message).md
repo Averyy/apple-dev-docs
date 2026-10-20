@@ -1,7 +1,8 @@
 # init(_:item:subject:message:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance, with a custom label, that presents the share interface.
 
@@ -20,6 +21,45 @@ Creates an instance, with a custom label, that presents the share interface.
 nonisolated init(_ titleResource: LocalizedStringResource, item: String, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<String>
 ```
 
+Available when `Data` conforms to `RandomAccessCollection`, `PreviewImage` is `Never`, `PreviewIcon` is `Never`, `Label` is `DefaultShareLinkLabel`, and `Data.Element` conforms to `Transferable`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, item: URL, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<URL>
+```
+
+```swift
+nonisolated
+init(_ title: Text, item: String, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<String>
+```
+
+```swift
+nonisolated
+init(_ title: Text, item: URL, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<URL>
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, item: String, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<String>
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, item: URL, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<URL>
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, item: String, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<String>, S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, item: URL, subject: Text? = nil, message: Text? = nil) where Data == CollectionOfOne<URL>, S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: A resource for the title of the share action.
@@ -29,9 +69,10 @@ nonisolated init(_ titleResource: LocalizedStringResource, item: String, subject
 
 ## See Also
 
-- [init(item:subject:message:)](sharelink/init(item:subject:message:).md)
+### Sharing an item
+- [init(item:subject:message:)](./init%28item,subject,message%29.md)
   Creates an instance that presents the share interface.
-- [init(item:subject:message:label:)](sharelink/init(item:subject:message:label:).md)
+- [init(item:subject:message:label:)](./init%28item,subject,message,label%29.md)
   Creates an instance that presents the share interface.
 
 

@@ -1,7 +1,8 @@
 # ResourcesExportingWithOptions
 
 **Framework**: AppMigrationKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for exporting transportable resources in an archive format.
 
@@ -23,41 +24,42 @@ Only use this approach when your app’s files require no changes before exporti
 
 During export, the system prevents launching your app and any of its extensions. This ensures the migration system has exclusive access to the app contents. The export process may also archive, compress, or de-duplicate the files during transport.
 
-Make continuous progress while exporting by repeatedly calling the archiver’s [`appendItem(at:pathInArchive:)`](resourcesarchiver/appenditem(at:pathinarchive:).md) method as each resource is ready. If the framework determines that your extension is hung, it may terminate the extension without migrating the app’s data to the destination.
+Make continuous progress while exporting by repeatedly calling the archiver’s [`appendItem(at:pathInArchive:)`](./resourcesarchiver/appenditem%28at,pathinarchive%29.md) method as each resource is ready. If the framework determines that your extension is hung, it may terminate the extension without migrating the app’s data to the destination.
 
 ## Topics
 
 ### Exporting resources
-- [func exportResources(to: sending ResourcesArchiver, request: MigrationRequestWithOptions<Self.OptionsType>) async throws](resourcesexportingwithoptions/exportresources(to:request:).md)
+- [func exportResources(to: sending ResourcesArchiver, request: MigrationRequestWithOptions<Self.OptionsType>) async throws](./resourcesexportingwithoptions/exportresources%28to,request%29.md)
   Exports resources from the app, in response to a request from the migration system.
-- [class ResourcesArchiver](resourcesarchiver.md)
+- [class ResourcesArchiver](./resourcesarchiver.md)
   An object your app uses to archive resources during an export operation.
-- [struct MigrationRequestWithOptions](migrationrequestwithoptions.md)
+- [struct MigrationRequestWithOptions](./migrationrequestwithoptions.md)
   An object that exposes properties of the migration request.
 ### Declaring resource properties
-- [var resourcesSizeEstimate: Int](resourcesexportingwithoptions/resourcessizeestimate.md)
+- [var resourcesSizeEstimate: Int](./resourcesexportingwithoptions/resourcessizeestimate.md)
   The estimated size of all resources to export, in bytes.
-- [var resourcesVersion: String](resourcesexportingwithoptions/resourcesversion.md)
+- [var resourcesVersion: String](./resourcesexportingwithoptions/resourcesversion.md)
   A property that identifies the version of the format the export uses.
-- [var resourcesCompressible: Bool](resourcesexportingwithoptions/resourcescompressible.md)
+- [var resourcesCompressible: Bool](./resourcesexportingwithoptions/resourcescompressible.md)
   A property that indicates whether the archiver attempts to compress the resources passed to it.
 ### Declaring export options
-- [associatedtype OptionsType : CaseIterable, Hashable, RawRepresentable, Sendable](resourcesexportingwithoptions/optionstype.md)
+- [associatedtype OptionsType : CaseIterable, Hashable, RawRepresentable, Sendable](./resourcesexportingwithoptions/optionstype.md)
   A type that indicates the options supported by the destination device.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [AppMigrationExtension](appmigrationextension.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [AppMigrationExtension](./appmigrationextension.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [ResourcesExporting](resourcesexporting.md)
+- [ResourcesExporting](./resourcesexporting.md)
 
 ## See Also
 
-- [protocol ResourcesExporting](resourcesexporting.md)
+### Export operations
+- [protocol ResourcesExporting](./resourcesexporting.md)
   A protocol for exporting transportable resources in a streaming archive format when the destination platform doesn’t require special migration options.
 
 

@@ -1,7 +1,8 @@
 # influenceWeights
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Influence weights (0.0–1.0) corresponding 1:1 with `influenceJointIndices`.
 

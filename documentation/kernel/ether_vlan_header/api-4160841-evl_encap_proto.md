@@ -1,14 +1,15 @@
 # evl_encap_proto
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 u_int16_t evl_encap_proto;
 ```
 

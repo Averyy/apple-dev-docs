@@ -1,7 +1,8 @@
 # typesForTopResults
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of requested types for top results.
 

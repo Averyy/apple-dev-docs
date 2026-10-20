@@ -1,7 +1,8 @@
 # GCMotionValueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The signature for the block that the profile calls when an element’s value changes.
 
@@ -19,13 +20,18 @@ The signature for the block that the profile calls when an element’s value cha
 typealias GCMotionValueChangedHandler = (GCMotion) -> Void
 ```
 
+```c
+typedef void (^)(GCMotion *) GCMotionValueChangedHandler;
+```
+
 ## Parameters
 
 - `motion`: The profile with the element values that change.
 
 ## See Also
 
-- [var valueChangedHandler: GCMotionValueChangedHandler?](gcmotion/valuechangedhandler.md)
+### Receiving a Callback When Input Values Change
+- [var valueChangedHandler: GCMotionValueChangedHandler?](./gcmotion/valuechangedhandler.md)
   The block that the profile calls when an element’s value changes.
 
 

@@ -1,7 +1,8 @@
 # seatIDsInTurn
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IDs of the seats that are part of the current turn.
 

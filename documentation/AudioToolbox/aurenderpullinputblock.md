@@ -1,22 +1,27 @@
 # AURenderPullInputBlock
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block to supply audio input to a render block.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AURenderPullInputBlock = (UnsafeMutablePointer<AudioUnitRenderActionFlags>, UnsafePointer<AudioTimeStamp>, AUAudioFrameCount, Int, UnsafeMutablePointer<AudioBufferList>) -> AUAudioUnitStatus
+```
+
+```c
+typedef int (^)(enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, long, struct AudioBufferList *) __attribute__((nonblocking)) AURenderPullInputBlock;
 ```
 
 #### Discussion
@@ -35,27 +40,28 @@ The block takes the following parameters:
 
 ## See Also
 
-- [struct ScheduledAudioFileRegion](scheduledaudiofileregion.md)
-- [struct ScheduledAudioSlice](scheduledaudioslice.md)
-- [typealias ScheduledAudioFileRegionCompletionProc](scheduledaudiofileregioncompletionproc.md)
-- [typealias ScheduledAudioSliceCompletionProc](scheduledaudioslicecompletionproc.md)
-- [typealias MIDIChannelNumber](midichannelnumber.md)
+### Audio Unit Types
+- [struct ScheduledAudioFileRegion](./scheduledaudiofileregion.md)
+- [struct ScheduledAudioSlice](./scheduledaudioslice.md)
+- [typealias ScheduledAudioFileRegionCompletionProc](./scheduledaudiofileregioncompletionproc.md)
+- [typealias ScheduledAudioSliceCompletionProc](./scheduledaudioslicecompletionproc.md)
+- [typealias MIDIChannelNumber](./midichannelnumber.md)
   MIDI Channel, 0~15 (channels 1 through 16, respectively).
-- [typealias AUAudioObjectID](auaudioobjectid.md)
-- [typealias AUMIDICIProfileChangedBlock](aumidiciprofilechangedblock.md)
-- [typealias AUAudioChannelCount](auaudiochannelcount.md)
+- [typealias AUAudioObjectID](./auaudioobjectid.md)
+- [typealias AUMIDICIProfileChangedBlock](./aumidiciprofilechangedblock.md)
+- [typealias AUAudioChannelCount](./auaudiochannelcount.md)
   A number of audio channels.
-- [typealias AUAudioFrameCount](auaudioframecount.md)
+- [typealias AUAudioFrameCount](./auaudioframecount.md)
   A number of audio sample frames.
-- [typealias AUAudioUnitStatus](auaudiounitstatus.md)
+- [typealias AUAudioUnitStatus](./auaudiounitstatus.md)
   A result code returned from an audio unit’s render function.
-- [typealias AUEventListenerProc](aueventlistenerproc.md)
-- [typealias AUEventListenerRef](aueventlistenerref.md)
-- [typealias AUEventSampleTime](aueventsampletime.md)
+- [typealias AUEventListenerProc](./aueventlistenerproc.md)
+- [typealias AUEventListenerRef](./aueventlistenerref.md)
+- [typealias AUEventSampleTime](./aueventsampletime.md)
   Expresses time as a sample count.
-- [typealias AUImplementorValueObserver](auimplementorvalueobserver.md)
+- [typealias AUImplementorValueObserver](./auimplementorvalueobserver.md)
   A block called to notify the audio unit implementation of changes to a parameter value.
-- [typealias AUImplementorValueProvider](auimplementorvalueprovider.md)
+- [typealias AUImplementorValueProvider](./auimplementorvalueprovider.md)
   A block called to fetch a parameter’s current value from the audio unit implementation.
 
 

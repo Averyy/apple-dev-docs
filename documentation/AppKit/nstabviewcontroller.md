@@ -1,7 +1,8 @@
 # NSTabViewController
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container view controller that manages a tab view interface, which organizes multiple pages of content but displays only one page at a time.
 
@@ -14,93 +15,98 @@ A container view controller that manages a tab view interface, which organizes m
 class NSTabViewController
 ```
 
+```objc
+@interface NSTabViewController : NSViewController
+```
+
 #### Overview
 
-Each page of content is managed by a separate child view controller. Navigation between child view controllers is accomplished with the help of an [`NSTabView`](nstabview.md) object, which the tab view controller manages. When the user selects a new tab, the tab view controller displays the content associated with the associated child view controller, replacing the previous content.
+Each page of content is managed by a separate child view controller. Navigation between child view controllers is accomplished with the help of an [`NSTabView`](./nstabview.md) object, which the tab view controller manages. When the user selects a new tab, the tab view controller displays the content associated with the associated child view controller, replacing the previous content.
 
-Each tab is represented by an [`NSTabViewItem`](nstabviewitem.md) object, which contains the name of the tab and stores a pointer to the child view controller that manages the tab’s content. Normally, you configure the tab view items at design time using Interface Builder, but you can also add them programmatically using the methods of this class. Always assign a child view controller to new tab view items before adding those items to the tab view interface.
+Each tab is represented by an [`NSTabViewItem`](./nstabviewitem.md) object, which contains the name of the tab and stores a pointer to the child view controller that manages the tab’s content. Normally, you configure the tab view items at design time using Interface Builder, but you can also add them programmatically using the methods of this class. Always assign a child view controller to new tab view items before adding those items to the tab view interface.
 
-Another way to add tabs programmatically is to add child view controllers directly to the tab view controller. When you call the [`addChild(_:)`](nsviewcontroller/addchild(_:).md) or [`insertChild(_:at:)`](nsviewcontroller/insertchild(_:at:).md) method of this class, the tab view controller automatically creates a default [`NSTabViewItem`](nstabviewitem.md) object for the specified view controller. You can fetch the newly created item using the [`tabViewItem(for:)`](nstabviewcontroller/tabviewitem(for:).md) method and configure it. Removing a child view controller with the [`removeChild(at:)`](nsviewcontroller/removechild(at:).md) method similarly removes the corresponding tab view item.
+Another way to add tabs programmatically is to add child view controllers directly to the tab view controller. When you call the [`addChild(_:)`](./nsviewcontroller/addchild%28_%29.md) or [`insertChild(_:at:)`](./nsviewcontroller/insertchild%28_,at%29.md) method of this class, the tab view controller automatically creates a default [`NSTabViewItem`](./nstabviewitem.md) object for the specified view controller. You can fetch the newly created item using the [`tabViewItem(for:)`](./nstabviewcontroller/tabviewitem%28for%29.md) method and configure it. Removing a child view controller with the [`removeChild(at:)`](./nsviewcontroller/removechild%28at%29.md) method similarly removes the corresponding tab view item.
 
 The tab view controller lazily loads the views associated with each child view controller, creating them only after the corresponding tab is selected. When the tab view controller’s view is first displayed, only the view for the initially selected tab is loaded.
 
-The [`tabStyle`](nstabviewcontroller/tabstyle-swift.property.md) property determines the appearance of the tab controls. A tab view controller can display a segmented control or display tabs in the window’s toolbar. You can also provide your own control for displaying tabs. The tab view controller automatically coordinates interactions between designated control and the corresponding [`tabView`](nstabviewcontroller/tabview.md) object.
+The [`tabStyle`](./nstabviewcontroller/tabstyle-swift.property.md) property determines the appearance of the tab controls. A tab view controller can display a segmented control or display tabs in the window’s toolbar. You can also provide your own control for displaying tabs. The tab view controller automatically coordinates interactions between designated control and the corresponding [`tabView`](./nstabviewcontroller/tabview.md) object.
 
 ## Topics
 
 ### Configuring the Tab View
-- [var tabStyle: NSTabViewController.TabStyle](nstabviewcontroller/tabstyle-swift.property.md)
+- [var tabStyle: NSTabViewController.TabStyle](./nstabviewcontroller/tabstyle-swift.property.md)
   The style used to display the tabs.
-- [var tabView: NSTabView](nstabviewcontroller/tabview.md)
+- [var tabView: NSTabView](./nstabviewcontroller/tabview.md)
   The tab view that manages the views of the interface.
-- [var transitionOptions: NSViewController.TransitionOptions](nstabviewcontroller/transitionoptions.md)
+- [var transitionOptions: NSViewController.TransitionOptions](./nstabviewcontroller/transitionoptions.md)
   The animation options to use when switching between tabs.
-- [var canPropagateSelectedChildViewControllerTitle: Bool](nstabviewcontroller/canpropagateselectedchildviewcontrollertitle.md)
+- [var canPropagateSelectedChildViewControllerTitle: Bool](./nstabviewcontroller/canpropagateselectedchildviewcontrollertitle.md)
   A Boolean value indicating whether the tab view controller gets its title from the selected child view controller.
 ### Managing Tab View Items
-- [var tabViewItems: [NSTabViewItem]](nstabviewcontroller/tabviewitems.md)
+- [var tabViewItems: [NSTabViewItem]](./nstabviewcontroller/tabviewitems.md)
   The array of tab view items used to manage each of the child view controllers.
-- [func tabViewItem(for: NSViewController) -> NSTabViewItem?](nstabviewcontroller/tabviewitem(for:).md)
+- [func tabViewItem(for: NSViewController) -> NSTabViewItem?](./nstabviewcontroller/tabviewitem%28for%29.md)
   Returns the tab view item for the specified child view controller.
-- [func addTabViewItem(NSTabViewItem)](nstabviewcontroller/addtabviewitem(_:).md)
+- [func addTabViewItem(NSTabViewItem)](./nstabviewcontroller/addtabviewitem%28_%29.md)
   Adds the specified tab to the end of the tab view controller’s list of tabs.
-- [func insertTabViewItem(NSTabViewItem, at: Int)](nstabviewcontroller/inserttabviewitem(_:at:).md)
+- [func insertTabViewItem(NSTabViewItem, at: Int)](./nstabviewcontroller/inserttabviewitem%28_,at%29.md)
   Inserts a tab view into the tab view controller’s list of tabs.
-- [func removeTabViewItem(NSTabViewItem)](nstabviewcontroller/removetabviewitem(_:).md)
+- [func removeTabViewItem(NSTabViewItem)](./nstabviewcontroller/removetabviewitem%28_%29.md)
   Removes the specified tab view item from the tab view controller.
-- [var selectedTabViewItemIndex: Int](nstabviewcontroller/selectedtabviewitemindex.md)
+- [var selectedTabViewItemIndex: Int](./nstabviewcontroller/selectedtabviewitemindex.md)
   The index of the selected tab.
 ### Responding to Tab View Events
-- [func viewDidLoad()](nstabviewcontroller/viewdidload.md)
+- [func viewDidLoad()](./nstabviewcontroller/viewdidload%28%29.md)
   Called after the view controller’s view has been loaded into memory.
-- [func tabView(NSTabView, shouldSelect: NSTabViewItem?) -> Bool](nstabviewcontroller/tabview(_:shouldselect:).md)
+- [func tabView(NSTabView, shouldSelect: NSTabViewItem?) -> Bool](./nstabviewcontroller/tabview%28_,shouldselect%29.md)
   Asks the tab view controller if the specified tab should be selected.
-- [func tabView(NSTabView, willSelect: NSTabViewItem?)](nstabviewcontroller/tabview(_:willselect:).md)
+- [func tabView(NSTabView, willSelect: NSTabViewItem?)](./nstabviewcontroller/tabview%28_,willselect%29.md)
   Informs the tab view controller that the specified tab is about to be selected.
-- [func tabView(NSTabView, didSelect: NSTabViewItem?)](nstabviewcontroller/tabview(_:didselect:).md)
+- [func tabView(NSTabView, didSelect: NSTabViewItem?)](./nstabviewcontroller/tabview%28_,didselect%29.md)
   Informs the tab view controller that the specified tab was selected.
 ### Responding to Toolbar Events
-- [func toolbar(NSToolbar, itemForItemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar: Bool) -> NSToolbarItem?](nstabviewcontroller/toolbar(_:itemforitemidentifier:willbeinsertedintotoolbar:).md)
+- [func toolbar(NSToolbar, itemForItemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar: Bool) -> NSToolbarItem?](./nstabviewcontroller/toolbar%28_,itemforitemidentifier,willbeinsertedintotoolbar%29.md)
   Returns the toolbar item for the specified identifier.
-- [func toolbarAllowedItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](nstabviewcontroller/toolbaralloweditemidentifiers(_:).md)
+- [func toolbarAllowedItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](./nstabviewcontroller/toolbaralloweditemidentifiers%28_%29.md)
   Returns the array of identifier strings for the allowed toolbar items.
-- [func toolbarDefaultItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](nstabviewcontroller/toolbardefaultitemidentifiers(_:).md)
+- [func toolbarDefaultItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](./nstabviewcontroller/toolbardefaultitemidentifiers%28_%29.md)
   Returns the array of identifier strings for the default toolbar items.
-- [func toolbarSelectableItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](nstabviewcontroller/toolbarselectableitemidentifiers(_:).md)
+- [func toolbarSelectableItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](./nstabviewcontroller/toolbarselectableitemidentifiers%28_%29.md)
   Returns the array of identifier strings for the selectable toolbar items
 ### Constants
-- [NSTabViewController.TabStyle](nstabviewcontroller/tabstyle-swift.enum.md)
+- [NSTabViewController.TabStyle](./nstabviewcontroller/tabstyle-swift.enum.md)
   Tab control style options for a tab view controller.
 
 ## Relationships
 
 ### Inherits From
-- [NSViewController](nsviewcontroller.md)
+- [NSViewController](./nsviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](nseditor.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](nssegueperforming.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTabViewDelegate](nstabviewdelegate.md)
-- [NSToolbarDelegate](nstoolbardelegate.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](./nseditor.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](./nssegueperforming.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTabViewDelegate](./nstabviewdelegate.md)
+- [NSToolbarDelegate](./nstoolbardelegate.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSTabView](nstabview.md)
+### Tab View Interface
+- [class NSTabView](./nstabview.md)
   A multipage interface that displays one page at a time.
-- [class NSTabViewItem](nstabviewitem.md)
+- [class NSTabViewItem](./nstabviewitem.md)
   An item in a tab view.
 
 

@@ -1,7 +1,8 @@
 # DOMPoint
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,24 +10,24 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMPoint
 ```
 
 ## Topics
 
 ### Instance Properties
-- [w](dompoint/2871083-w.md)
-- [x](dompoint/2871455-x.md)
-- [y](dompoint/2871391-y.md)
-- [z](dompoint/2871114-z.md)
+- [w](./dompoint/api-2871083-w.md)
+- [x](./dompoint/api-2871455-x.md)
+- [y](./dompoint/api-2871391-y.md)
+- [z](./dompoint/api-2871114-z.md)
 ### Type Methods
-- [fromPoint](dompoint/2871280-frompoint.md)
+- [fromPoint](./dompoint/api-2871280-frompoint.md)
 
 ## Relationships
 
 ### Inherits From
-- [DOMPointReadOnly](dompointreadonly.md)
+- [DOMPointReadOnly](./dompointreadonly.md)
 
 
 ---

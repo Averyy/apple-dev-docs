@@ -1,7 +1,8 @@
 # UITabBar
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 Tab bar visibility and configuration during launch.
 
@@ -9,27 +10,29 @@ Tab bar visibility and configuration during launch.
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `UITabBar`
+- **Type**: dictionary
 
 #### Discussion
 
-When you provide a dictionary for this key, the system displays a tab bar during launch. You can optionally set the dictionary’s [`UIImageName`](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uitabbar/uiimagename.md) key to define a custom image for the tab bar.
+When you provide a dictionary for this key, the system displays a tab bar during launch. You can optionally set the dictionary’s [`UIImageName`](./uitabbar/uiimagename.md) key to define a custom image for the tab bar.
 
 Omit this key if you don’t want to display a tab bar during launch.
 
 ## Topics
 
 ### Optional Image
-- [UIImageName](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uitabbar/uiimagename.md)
+- [UIImageName](./uitabbar/uiimagename.md)
   A custom image that replaces the tab bar during launch.
 
 ## See Also
 
-- [UINavigationBar](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uinavigationbar.md)
+### Border Elements
+- [UINavigationBar](./uinavigationbar.md)
   Navigation bar visibility and configuration during launch.
-- [UIToolbar](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uitoolbar.md)
+- [UIToolbar](./uitoolbar.md)
   Toolbar visibility and configuration during launch.
 
 

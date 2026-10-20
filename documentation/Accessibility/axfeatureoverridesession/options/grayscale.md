@@ -1,7 +1,8 @@
 # grayscale
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.2+
@@ -11,6 +12,10 @@
 
 ```swift
 static var grayscale: AXFeatureOverrideSession.Options { get }
+```
+
+```c
+AXFeatureOverrideSessionOptionsGrayscale
 ```
 
 

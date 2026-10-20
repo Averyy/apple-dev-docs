@@ -1,10 +1,11 @@
 # BluetoothLEScanDuplicateFilterDisable
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var BluetoothLEScanDuplicateFilterDisable: BluetoothLEScanDuplicateFilter { get }
 ```
 
+```c
+BluetoothLEScanDuplicateFilterDisable
+```
+
 ## See Also
 
-- [var BluetoothLEScanDuplicateFilterEnable: BluetoothLEScanDuplicateFilter](bluetoothlescanduplicatefilterenable.md)
+### Constants
+- [var BluetoothLEScanDuplicateFilterEnable: BluetoothLEScanDuplicateFilter](./bluetoothlescanduplicatefilterenable.md)
 
 
 ---

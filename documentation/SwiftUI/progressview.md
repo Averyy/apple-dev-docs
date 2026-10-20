@@ -1,7 +1,8 @@
 # ProgressView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that shows the progress toward completion of a task.
 
@@ -23,7 +24,7 @@ struct ProgressView<Label, CurrentValueLabel> where Label : View, CurrentValueLa
 
 ## Mentions
 
-- [Declaring a custom view](declaring-a-custom-view.md)
+- [Declaring a custom view](./declaring-a-custom-view.md)
 
 #### Overview
 
@@ -46,7 +47,7 @@ struct LinearProgressDemoView: View {
 }
 ```
 
-![A horizontal bar that represents progress, with a More button](/images/com.apple.SwiftUI/ProgressView-1-macOS@2x.png)
+![A horizontal bar that represents progress, with a More button](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ProgressView-1-macOS@2x.png)
 
 To create an indeterminate progress view, use an initializer that doesn’t take a progress value:
 
@@ -56,9 +57,9 @@ var body: some View {
 }
 ```
 
-![An indeterminate progress view, presented as a spinning set of gray lines](/images/com.apple.SwiftUI/ProgressView-2-macOS@2x.png)
+![An indeterminate progress view, presented as a spinning set of gray lines](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ProgressView-2-macOS@2x.png)
 
-You can also create a progress view that covers a closed range of [`Date`](https://developer.apple.com/documentation/foundation/date) values. As long as the current date is within the range, the progress view automatically updates, filling or depleting the progress view as it nears the end of the range. The following example shows a five-minute timer whose start time is that of the progress view’s initialization:
+You can also create a progress view that covers a closed range of [`Date`](../Foundation/date.md) values. As long as the current date is within the range, the progress view automatically updates, filling or depleting the progress view as it nears the end of the range. The following example shows a five-minute timer whose start time is that of the progress view’s initialization:
 
 ```swift
 struct DateRelativeProgressDemoView: View {
@@ -72,11 +73,11 @@ struct DateRelativeProgressDemoView: View {
 }
 ```
 
-![A horizontal progress view that shows a bar partially filled with as it](/images/com.apple.SwiftUI/ProgressView-3-macOS@2x.png)
+![A horizontal progress view that shows a bar partially filled with as it](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ProgressView-3-macOS@2x.png)
 
-##### Styling Progress Views
+##### Styling progress views
 
-You can customize the appearance and interaction of progress views by creating styles that conform to the [`ProgressViewStyle`](progressviewstyle.md) protocol. To set a specific style for all progress view instances within a view, use the [`progressViewStyle(_:)`](view/progressviewstyle(_:).md) modifier. In the following example, a custom style adds a rounded pink border to all progress views within the enclosing [`VStack`](vstack.md):
+You can customize the appearance and interaction of progress views by creating styles that conform to the [`ProgressViewStyle`](./progressviewstyle.md) protocol. To set a specific style for all progress view instances within a view, use the [`progressViewStyle(_:)`](./view/progressviewstyle%28_%29.md) modifier. In the following example, a custom style adds a rounded pink border to all progress views within the enclosing [`VStack`](./vstack.md):
 
 ```swift
 struct BorderedProgressViews: View {
@@ -99,9 +100,9 @@ struct PinkBorderedProgressViewStyle: ProgressViewStyle {
 }
 ```
 
-![Two horizontal progress views, one at 25 percent complete and the other at 75 percent,](/images/com.apple.SwiftUI/ProgressView-4-macOS@2x.png)
+![Two horizontal progress views, one at 25 percent complete and the other at 75 percent,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ProgressView-4-macOS@2x.png)
 
-SwiftUI provides two built-in progress view styles, [`linear`](progressviewstyle/linear.md) and [`circular`](progressviewstyle/circular.md), as well as an automatic style that defaults to the most appropriate style in the current context. The following example shows a circular progress view that starts at 60 percent completed.
+SwiftUI provides two built-in progress view styles, [`linear`](./progressviewstyle/linear.md) and [`circular`](./progressviewstyle/circular.md), as well as an automatic style that defaults to the most appropriate style in the current context. The following example shows a circular progress view that starts at 60 percent completed.
 
 ```swift
 struct CircularProgressDemoView: View {
@@ -116,59 +117,60 @@ struct CircularProgressDemoView: View {
 }
 ```
 
-![A ring shape, filled to 60 percent completion with a blue](/images/com.apple.SwiftUI/ProgressView-5-macOS@2x.png)
+![A ring shape, filled to 60 percent completion with a blue](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ProgressView-5-macOS@2x.png)
 
 On platforms other than macOS, the circular style may appear as an indeterminate indicator instead.
 
 ## Topics
 
 ### Creating an indeterminate progress view
-- [init()](progressview/init.md)
+- [init()](./progressview/init%28%29.md)
   Creates a progress view for showing indeterminate progress, without a label.
-- [init(label: () -> Label)](progressview/init(label:).md)
+- [init(label: () -> Label)](./progressview/init%28label%29.md)
   Creates a progress view for showing indeterminate progress that displays a custom label.
-- [init(LocalizedStringKey)](progressview/init(_:)-6k5se.md)
+- [init(LocalizedStringKey)](./progressview/init%28_%29-6k5se.md)
   Creates a progress view for showing indeterminate progress that generates its label from a localized string.
-- [init<S>(S)](progressview/init(_:)-3q5nf.md)
+- [init<S>(S)](./progressview/init%28_%29-3q5nf.md)
   Creates a progress view for showing indeterminate progress that generates its label from a string.
 ### Creating a determinate progress view
-- [init(Progress)](progressview/init(_:)-l5vj.md)
+- [init(Progress)](./progressview/init%28_%29-l5vj.md)
   Creates a progress view for visualizing the given progress instance.
-- [init<V>(value: V?, total: V)](progressview/init(value:total:).md)
+- [init<V>(value: V?, total: V)](./progressview/init%28value,total%29.md)
   Creates a progress view for showing determinate progress.
-- [init(_:value:total:)](progressview/init(_:value:total:).md)
+- [init(_:value:total:)](./progressview/init%28_,value,total%29.md)
   Creates a progress view for showing determinate progress that generates its label from a localized string resource.
-- [init<V>(value: V?, total: V, label: () -> Label)](progressview/init(value:total:label:).md)
+- [init<V>(value: V?, total: V, label: () -> Label)](./progressview/init%28value,total,label%29.md)
   Creates a progress view for showing determinate progress, with a custom label.
-- [init<V>(value: V?, total: V, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](progressview/init(value:total:label:currentvaluelabel:).md)
+- [init<V>(value: V?, total: V, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](./progressview/init%28value,total,label,currentvaluelabel%29.md)
   Creates a progress view for showing determinate progress, with a custom label.
 ### Create a progress view spanning a date range
-- [init(timerInterval: ClosedRange<Date>, countsDown: Bool)](progressview/init(timerinterval:countsdown:).md)
+- [init(timerInterval: ClosedRange<Date>, countsDown: Bool)](./progressview/init%28timerinterval,countsdown%29.md)
   Creates a progress view for showing continuous progress as time passes.
-- [init(timerInterval: ClosedRange<Date>, countsDown: Bool, label: () -> Label)](progressview/init(timerinterval:countsdown:label:).md)
+- [init(timerInterval: ClosedRange<Date>, countsDown: Bool, label: () -> Label)](./progressview/init%28timerinterval,countsdown,label%29.md)
   Creates a progress view for showing continuous progress as time passes, with a descriptive label.
-- [init(timerInterval: ClosedRange<Date>, countsDown: Bool, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](progressview/init(timerinterval:countsdown:label:currentvaluelabel:).md)
+- [init(timerInterval: ClosedRange<Date>, countsDown: Bool, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](./progressview/init%28timerinterval,countsdown,label,currentvaluelabel%29.md)
   Creates a progress view for showing continuous progress as time passes, with descriptive and current progress labels.
 ### Initializers
-- [init(_:)](progressview/init(_:).md)
+- [init(_:)](./progressview/init%28_%29.md)
   Creates a progress view for showing indeterminate progress that generates its label from a localized string resource.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Gauge](gauge.md)
+### Indicating a value
+- [struct Gauge](./gauge.md)
   A view that shows a value within a range.
-- [func gaugeStyle<S>(S) -> some View](view/gaugestyle(_:).md)
+- [func gaugeStyle<S>(S) -> some View](./view/gaugestyle%28_%29.md)
   Sets the style for gauges within this view.
-- [func progressViewStyle<S>(S) -> some View](view/progressviewstyle(_:).md)
+- [func progressViewStyle<S>(S) -> some View](./view/progressviewstyle%28_%29.md)
   Sets the style for progress views in this view.
-- [struct DefaultDateProgressLabel](defaultdateprogresslabel.md)
+- [struct DefaultDateProgressLabel](./defaultdateprogresslabel.md)
   The default type of the current value label when used by a date-relative progress view.
-- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+- [struct DefaultButtonLabel](./defaultbuttonlabel.md)
   The default label to use for a button.
 
 

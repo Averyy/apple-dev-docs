@@ -1,7 +1,8 @@
 # scheduled
 
 **Framework**: RelevanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A hint that tells the system to treat a widget with increased priority because it displays important content or requires action.
 
@@ -22,9 +23,10 @@ static var scheduled: RelevantContext.DateKind { get }
 
 ## See Also
 
-- [static var `default`: RelevantContext.DateKind](relevantcontext/datekind/default.md)
+### Date types
+- [static var `default`: RelevantContext.DateKind](./default.md)
   A hint that tells the system to treat a widget with default priority.
-- [static var informational: RelevantContext.DateKind](relevantcontext/datekind/informational.md)
+- [static var informational: RelevantContext.DateKind](./informational.md)
   A hint that tells the system to treat a widget with slightly lower priority because it displays content and doesn’t require an action.
 
 

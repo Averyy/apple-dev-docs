@@ -1,7 +1,8 @@
 # ArchiveCompression
 
 **Framework**: Apple Archive  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe compression algorithms.
 
@@ -11,7 +12,7 @@ Constants that describe compression algorithms.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,60 +24,61 @@ struct ArchiveCompression
 ## Topics
 
 ### Type Properties
-- [static let none: ArchiveCompression](archivecompression/none.md)
+- [static let none: ArchiveCompression](./archivecompression/none.md)
   A constant that represents no compression.
-- [static let lzfse: ArchiveCompression](archivecompression/lzfse.md)
+- [static let lzfse: ArchiveCompression](./archivecompression/lzfse.md)
   The LZFSE compression algorithm, that’s recommended for use on Apple platforms.
-- [static let lz4: ArchiveCompression](archivecompression/lz4.md)
+- [static let lz4: ArchiveCompression](./archivecompression/lz4.md)
   The LZ4 compression algorithm, that’s recommended for fast compression.
-- [static let lzma: ArchiveCompression](archivecompression/lzma.md)
+- [static let lzma: ArchiveCompression](./archivecompression/lzma.md)
   The LZMA compression algorithm, that’s recommended for high-compression ratio.
-- [static let zlib: ArchiveCompression](archivecompression/zlib.md)
+- [static let zlib: ArchiveCompression](./archivecompression/zlib.md)
   The zlib compression algorithm, that’s recommended for cross-platform compression.
-- [static let lzbitmap: ArchiveCompression](archivecompression/lzbitmap.md)
-- [static let lzraven: ArchiveCompression](archivecompression/lzraven.md)
+- [static let lzbitmap: ArchiveCompression](./archivecompression/lzbitmap.md)
+- [static let lzraven: ArchiveCompression](./archivecompression/lzraven.md)
 ### Initializers
-- [init(algo: Algorithm)](archivecompression/init(algo:).md)
+- [init(algo: Algorithm)](./archivecompression/init%28algo%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [func decryptAttributes() -> Bool](archiveencryptioncontext/decryptattributes.md)
+### Getting and setting encryption context properties
+- [func decryptAttributes() -> Bool](./archiveencryptioncontext/decryptattributes%28%29.md)
   Validates decryption keys, collects archive attributes, and updates the context with decrypted archive attributes.
-- [var archiveIdentifier: Data?](archiveencryptioncontext/archiveidentifier.md)
+- [var archiveIdentifier: Data?](./archiveencryptioncontext/archiveidentifier.md)
   An optional set of data that represents the archive identifier.
-- [var authData: Data?](archiveencryptioncontext/authdata.md)
+- [var authData: Data?](./archiveencryptioncontext/authdata.md)
   An optional, unencrypted set of data that’s stored in the archive prologue.
-- [var checksumMode: ArchiveEncryptionContext.ChecksumMode](archiveencryptioncontext/checksummode-swift.property.md)
+- [var checksumMode: ArchiveEncryptionContext.ChecksumMode](./archiveencryptioncontext/checksummode-swift.property.md)
   The checksum mode, such as the 256-bit SHA-256 checksum.
-- [ArchiveEncryptionContext.ChecksumMode](archiveencryptioncontext/checksummode-swift.struct.md)
+- [ArchiveEncryptionContext.ChecksumMode](./archiveencryptioncontext/checksummode-swift.struct.md)
   Constants that describe the checksum modes of an encryption context.
-- [var containerSize: Int](archiveencryptioncontext/containersize.md)
+- [var containerSize: Int](./archiveencryptioncontext/containersize.md)
   The size of the compressed and encrypted archive.
-- [var encryptionMode: ArchiveEncryptionContext.EncryptionMode](archiveencryptioncontext/encryptionmode-swift.property.md)
+- [var encryptionMode: ArchiveEncryptionContext.EncryptionMode](./archiveencryptioncontext/encryptionmode-swift.property.md)
   The encryption mode, such as symmetric key encryption.
-- [ArchiveEncryptionContext.EncryptionMode](archiveencryptioncontext/encryptionmode-swift.struct.md)
+- [ArchiveEncryptionContext.EncryptionMode](./archiveencryptioncontext/encryptionmode-swift.struct.md)
   Constants that describe the checksum modes of an encryption context.
-- [var compressionAlgorithm: ArchiveCompression](archiveencryptioncontext/compressionalgorithm.md)
+- [var compressionAlgorithm: ArchiveCompression](./archiveencryptioncontext/compressionalgorithm.md)
   The compression algorithm, such as LZFSE.
-- [var compressionBlockSize: Int](archiveencryptioncontext/compressionblocksize.md)
+- [var compressionBlockSize: Int](./archiveencryptioncontext/compressionblocksize.md)
   The compression block size that defines the size of the blocks, in bytes, that the context splits data into.
-- [var paddingSize: Int](archiveencryptioncontext/paddingsize.md)
+- [var paddingSize: Int](./archiveencryptioncontext/paddingsize.md)
   An integer value that, if not zero, specifies that the size of the final archive is a multiple of the padding size.
-- [var profile: ArchiveEncryptionContext.Profile](archiveencryptioncontext/profile-swift.property.md)
+- [var profile: ArchiveEncryptionContext.Profile](./archiveencryptioncontext/profile-swift.property.md)
   The profile of the archve.
-- [ArchiveEncryptionContext.Profile](archiveencryptioncontext/profile-swift.struct.md)
+- [ArchiveEncryptionContext.Profile](./archiveencryptioncontext/profile-swift.struct.md)
   Constants that describe the profile of an encryption context.
-- [var rawSize: Int](archiveencryptioncontext/rawsize.md)
+- [var rawSize: Int](./archiveencryptioncontext/rawsize.md)
   The size of the archive raw data.
-- [var signatureEncryptionKey: SymmetricKey?](archiveencryptioncontext/signatureencryptionkey.md)
+- [var signatureEncryptionKey: SymmetricKey?](./archiveencryptioncontext/signatureencryptionkey.md)
   The signature encryption key that the context requires to sign an encrypted archive.
 
 

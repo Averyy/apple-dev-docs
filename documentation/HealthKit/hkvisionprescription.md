@@ -1,7 +1,8 @@
 # HKVisionPrescription
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sample that stores a vision prescription.
 
@@ -19,13 +20,17 @@ A sample that stores a vision prescription.
 class HKVisionPrescription
 ```
 
+```objc
+@interface HKVisionPrescription : HKSample
+```
+
 #### Overview
 
 Use this class to create an image-only prescription. Here, you attach the prescription as an image or PDF to a simple sample. The sample contains only basic information about the prescription, such as the issue and expiration dates. To see the prescription data, people must view the attached image or PDF.
 
 > ❗ **Important**:  Some regions may require an image of the original prescription to validate the prescription record.
 
-To create an image-only prescription, start by creating an [`HKVisionPrescription`](hkvisionprescription.md) sample object.
+To create an image-only prescription, start by creating an [`HKVisionPrescription`](./hkvisionprescription.md) sample object.
 
 ```swift
 // Create a minimal prescription sample that just holds an image attachment.
@@ -66,58 +71,59 @@ do {
 }
 ```
 
-For more information about adding images or pdfs as attachments, see [`HKAttachmentStore`](hkattachmentstore.md). To create a vision prescription sample that contains the full data for the prescription, use [`HKGlassesPrescription`](hkglassesprescription.md) or [`HKContactsPrescription`](hkcontactsprescription.md) instead.
+For more information about adding images or pdfs as attachments, see [`HKAttachmentStore`](./hkattachmentstore.md). To create a vision prescription sample that contains the full data for the prescription, use [`HKGlassesPrescription`](./hkglassesprescription.md) or [`HKContactsPrescription`](./hkcontactsprescription.md) instead.
 
 ## Topics
 
 ### Creating vision prescription samples
-- [convenience init(type: HKVisionPrescriptionType, dateIssued: Date, expirationDate: Date?, device: HKDevice?, metadata: [String : Any]?)](hkvisionprescription/init(type:dateissued:expirationdate:device:metadata:).md)
+- [convenience init(type: HKVisionPrescriptionType, dateIssued: Date, expirationDate: Date?, device: HKDevice?, metadata: [String : Any]?)](./hkvisionprescription/init%28type,dateissued,expirationdate,device,metadata%29.md)
   Creates a new vision prescription sample.
 ### Accessing the prescription data
-- [var prescriptionType: HKVisionPrescriptionType](hkvisionprescription/prescriptiontype.md)
+- [var prescriptionType: HKVisionPrescriptionType](./hkvisionprescription/prescriptiontype.md)
   The type of vision prescription.
-- [enum HKVisionPrescriptionType](hkvisionprescriptiontype.md)
+- [enum HKVisionPrescriptionType](./hkvisionprescriptiontype.md)
   The type of vision prescription, for example a prescription for glasses or for contacts.
-- [var dateIssued: Date](hkvisionprescription/dateissued.md)
+- [var dateIssued: Date](./hkvisionprescription/dateissued.md)
   The date when the doctor issued the prescription.
-- [var expirationDate: Date?](hkvisionprescription/expirationdate.md)
+- [var expirationDate: Date?](./hkvisionprescription/expirationdate.md)
   The date when the prescription expires.
 
 ## Relationships
 
 ### Inherits From
-- [HKSample](hksample.md)
+- [HKSample](./hksample.md)
 ### Inherited By
-- [HKContactsPrescription](hkcontactsprescription.md)
-- [HKGlassesPrescription](hkglassesprescription.md)
+- [HKContactsPrescription](./hkcontactsprescription.md)
+- [HKGlassesPrescription](./hkglassesprescription.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKGlassesPrescription](hkglassesprescription.md)
+### Vision prescriptions
+- [class HKGlassesPrescription](./hkglassesprescription.md)
   A sample that stores a prescription for glasses.
-- [class HKContactsPrescription](hkcontactsprescription.md)
+- [class HKContactsPrescription](./hkcontactsprescription.md)
   A sample that store a prescription for contacts.
-- [class HKGlassesLensSpecification](hkglasseslensspecification.md)
+- [class HKGlassesLensSpecification](./hkglasseslensspecification.md)
   An object that contains the glasses prescription data for one eye.
-- [class HKContactsLensSpecification](hkcontactslensspecification.md)
+- [class HKContactsLensSpecification](./hkcontactslensspecification.md)
   An object that contains the contacts prescription data for one eye.
-- [class HKLensSpecification](hklensspecification.md)
+- [class HKLensSpecification](./hklensspecification.md)
   An abstract superclass for lens specifications.
-- [class HKVisionPrism](hkvisionprism.md)
+- [class HKVisionPrism](./hkvisionprism.md)
   Prescription data for eye alignment.
-- [class HKPrescriptionType](hkprescriptiontype.md)
+- [class HKPrescriptionType](./hkprescriptiontype.md)
   A type that identifies samples that store a prescription.
 
 

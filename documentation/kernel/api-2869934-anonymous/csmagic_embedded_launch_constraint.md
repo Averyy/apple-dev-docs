@@ -1,14 +1,15 @@
 # CSMAGIC_EMBEDDED_LAUNCH_CONSTRAINT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 CSMAGIC_EMBEDDED_LAUNCH_CONSTRAINT = 0xfade8181
 ```
 

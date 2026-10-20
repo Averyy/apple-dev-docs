@@ -1,7 +1,8 @@
 # MDItemCopyAttributes(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the values of the specified attributes in the metadata item.
 
@@ -14,7 +15,11 @@ Returns the values of the specified attributes in the metadata item.
 func MDItemCopyAttributes(_ item: MDItem!, _ names: CFArray!) -> CFDictionary!
 ```
 
-#### Return_value
+```c
+CFDictionaryRef MDItemCopyAttributes(MDItemRef item, CFArrayRef names);
+```
+
+#### Return Value
 
 A CFDictionary containing keys for the requested attribute names, and the corresponding values. If an attribute does not exist, or the attribute is unreadable, there will be no key-value pair for it in the dictionary. Returns `NULL` on failure.
 
@@ -25,9 +30,10 @@ A CFDictionary containing keys for the requested attribute names, and the corres
 
 ## See Also
 
-- [func MDItemCopyAttribute(MDItem!, CFString!) -> CFTypeRef!](1427080-mditemcopyattribute.md)
+### Retrieving Metadata Attributes 
+- [func MDItemCopyAttribute(MDItem!, CFString!) -> CFTypeRef!](./api-1427080-mditemcopyattribute.md)
   Returns the value of the specified attribute in the metadata item.
-- [func MDItemCopyAttributeNames(MDItem!) -> CFArray!](1427066-mditemcopyattributenames.md)
+- [func MDItemCopyAttributeNames(MDItem!) -> CFArray!](./api-1427066-mditemcopyattributenames.md)
   Returns an array containing the attribute names existing in the metadata item.
 
 

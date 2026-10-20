@@ -1,7 +1,8 @@
 # NSDiffableDataSourceSectionTransaction
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transaction that describes the changes after reordering the items in a section.
 
@@ -10,7 +11,7 @@ A transaction that describes the changes after reordering the items in a section
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,28 +23,29 @@ struct NSDiffableDataSourceSectionTransaction<SectionIdentifierType, ItemIdentif
 ## Topics
 
 ### Accessing a transaction’s information
-- [var sectionIdentifier: SectionIdentifierType](nsdiffabledatasourcesectiontransaction-swift.struct/sectionidentifier.md)
+- [var sectionIdentifier: SectionIdentifierType](./nsdiffabledatasourcesectiontransaction-swift.struct/sectionidentifier.md)
   The identifier of the section for the transaction.
-- [var initialSnapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](nsdiffabledatasourcesectiontransaction-swift.struct/initialsnapshot.md)
+- [var initialSnapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](./nsdiffabledatasourcesectiontransaction-swift.struct/initialsnapshot.md)
   The section snapshot before the transaction occured.
-- [var finalSnapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](nsdiffabledatasourcesectiontransaction-swift.struct/finalsnapshot.md)
+- [var finalSnapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](./nsdiffabledatasourcesectiontransaction-swift.struct/finalsnapshot.md)
   The section snapshot after the transaction occured.
-- [var difference: CollectionDifference<ItemIdentifierType>](nsdiffabledatasourcesectiontransaction-swift.struct/difference.md)
+- [var difference: CollectionDifference<ItemIdentifierType>](./nsdiffabledatasourcesectiontransaction-swift.struct/difference.md)
   A collection of insertions and removals that describe the difference between initial and final section snapshots.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var reorderingHandlers: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.ReorderingHandlers](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.property.md)
+### Supporting reordering
+- [var reorderingHandlers: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.ReorderingHandlers](./uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.property.md)
   The diffable data source’s handlers for reordering items.
-- [UICollectionViewDiffableDataSource.ReorderingHandlers](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct.md)
+- [UICollectionViewDiffableDataSource.ReorderingHandlers](./uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct.md)
   Handlers for reordering items.
-- [struct NSDiffableDataSourceTransaction](nsdiffabledatasourcetransaction-swift.struct.md)
+- [struct NSDiffableDataSourceTransaction](./nsdiffabledatasourcetransaction-swift.struct.md)
   A transaction that describes the changes after reordering the items in the view.
 
 

@@ -1,12 +1,13 @@
 # NSPrintOperation.PageOrder
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the page order.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,41 +15,46 @@ Constants that specify the page order.
 enum PageOrder
 ```
 
+```c
+enum NSPrintingPageOrder : NSInteger;
+```
+
 #### Overview
 
-These constants are used by [`pageOrder`](nsprintoperation/pageorder-swift.property.md) and [`pageOrder`](nsprintoperation/pageorder-swift.property.md).
+These constants are used by [`pageOrder`](./pageorder-swift.property.md) and [`pageOrder`](./pageorder-swift.property.md).
 
 ## Topics
 
 ### Constants
-- [NSPrintOperation.PageOrder.ascendingPageOrder](nsprintoperation/pageorder-swift.enum/ascendingpageorder.md)
+- [NSPrintOperation.PageOrder.ascendingPageOrder](./pageorder-swift.enum/ascendingpageorder.md)
   Ascending (back to front) page order.
-- [NSPrintOperation.PageOrder.descendingPageOrder](nsprintoperation/pageorder-swift.enum/descendingpageorder.md)
+- [NSPrintOperation.PageOrder.descendingPageOrder](./pageorder-swift.enum/descendingpageorder.md)
   Descending (front to back) page order.
-- [NSPrintOperation.PageOrder.specialPageOrder](nsprintoperation/pageorder-swift.enum/specialpageorder.md)
+- [NSPrintOperation.PageOrder.specialPageOrder](./pageorder-swift.enum/specialpageorder.md)
   The spooler does not rearrange pages—they are printed in the order received by the spooler.
-- [NSPrintOperation.PageOrder.unknownPageOrder](nsprintoperation/pageorder-swift.enum/unknownpageorder.md)
+- [NSPrintOperation.PageOrder.unknownPageOrder](./pageorder-swift.enum/unknownpageorder.md)
   No page order specified.
 ### Initializers
-- [init?(rawValue: Int)](nsprintoperation/pageorder-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pageorder-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var currentPage: Int](nsprintoperation/currentpage.md)
+### Managing Page Information
+- [var currentPage: Int](./currentpage.md)
   The current page number being printed.
-- [var pageRange: NSRange](nsprintoperation/pagerange.md)
+- [var pageRange: NSRange](./pagerange.md)
   The range of pages associated with the print operation.
-- [var pageOrder: NSPrintOperation.PageOrder](nsprintoperation/pageorder-swift.property.md)
+- [var pageOrder: NSPrintOperation.PageOrder](./pageorder-swift.property.md)
   The print order for the pages of the operation.
 
 

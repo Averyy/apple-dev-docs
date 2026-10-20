@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transform applied to the created entity.
 
@@ -19,7 +20,8 @@ var transform: Transform
 
 ## See Also
 
-- [var bounds: BoundingBox](photogrammetrysession/request/geometry/bounds.md)
+### Accessing geometry data
+- [var bounds: BoundingBox](./bounds.md)
   The bounding box for the created entity.
 
 

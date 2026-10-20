@@ -1,14 +1,15 @@
 # session
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session information.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,11 +23,12 @@ An electric vehicle between charging or discharging sessions can be idling and l
 
 ## See Also
 
-- [let id: UUID](electricvehicleloadevent/id.md)
+### Getting load event information
+- [let id: UUID](./id.md)
   The unique identifier of the electrical load event.
-- [let timestamp: Date](electricvehicleloadevent/timestamp.md)
+- [let timestamp: Date](./timestamp.md)
   The timestamp for when the event occurred.
-- [ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.struct.md)
+- [ElectricVehicleLoadEvent.Session](./session-swift.struct.md)
   A session that tracks the event.
 
 

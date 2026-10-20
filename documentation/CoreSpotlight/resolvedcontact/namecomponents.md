@@ -1,7 +1,8 @@
 # nameComponents
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact’s names as a set of structured name components.
 
@@ -20,13 +21,14 @@ var nameComponents: [PersonNameComponents]
 
 #### Discussion
 
-Specify each distinct name as a separate [`PersonNameComponents`](https://developer.apple.com/documentation/foundation/personnamecomponents) type in the array.
+Specify each distinct name as a separate [`PersonNameComponents`](../../Foundation/personnamecomponents.md) type in the array.
 
 ## See Also
 
-- [var displayName: String](resolvedcontact/displayname.md)
+### Specifying the person’s name
+- [var displayName: String](./displayname.md)
   The name your app displays for the contact.
-- [var names: [String]](resolvedcontact/names.md)
+- [var names: [String]](./names.md)
   Alternate names you use to refer to the contact.
 
 

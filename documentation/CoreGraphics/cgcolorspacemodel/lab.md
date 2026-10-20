@@ -1,18 +1,19 @@
 # CGColorSpaceModel.lab
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Lab color space model.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ A Lab color space model.
 case lab
 ```
 
+```c
+kCGColorSpaceModelLab
+```
+
 ## See Also
 
-- [CGColorSpaceModel.unknown](cgcolorspacemodel/unknown.md)
+### Constants
+- [CGColorSpaceModel.unknown](./unknown.md)
   An unknown color space model.
-- [CGColorSpaceModel.monochrome](cgcolorspacemodel/monochrome.md)
+- [CGColorSpaceModel.monochrome](./monochrome.md)
   A monochrome color space model.
-- [CGColorSpaceModel.rgb](cgcolorspacemodel/rgb.md)
+- [CGColorSpaceModel.rgb](./rgb.md)
   An RGB color space model.
-- [CGColorSpaceModel.cmyk](cgcolorspacemodel/cmyk.md)
+- [CGColorSpaceModel.cmyk](./cmyk.md)
   A CMYK color space model.
-- [CGColorSpaceModel.deviceN](cgcolorspacemodel/devicen.md)
+- [CGColorSpaceModel.deviceN](./devicen.md)
   A DeviceN color space model.
-- [CGColorSpaceModel.indexed](cgcolorspacemodel/indexed.md)
+- [CGColorSpaceModel.indexed](./indexed.md)
   An indexed color space model.
-- [CGColorSpaceModel.pattern](cgcolorspacemodel/pattern.md)
+- [CGColorSpaceModel.pattern](./pattern.md)
   A pattern color space model.
-- [CGColorSpaceModel.XYZ](cgcolorspacemodel/xyz.md)
+- [CGColorSpaceModel.XYZ](./xyz.md)
   An XYZ color space model.
 
 

@@ -1,7 +1,8 @@
 # VZEFIBootLoader
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The boot loader configuration the system uses to boot guest-operating systems that expect an Extensible Firmware Interface (EFI) ROM.
 
@@ -14,43 +15,49 @@ The boot loader configuration the system uses to boot guest-operating systems th
 class VZEFIBootLoader
 ```
 
+```objc
+@interface VZEFIBootLoader : VZBootLoader
+```
+
 ## Topics
 
 ### Creating an EFI boot loader
-- [init()](vzefibootloader/init.md)
+- [init()](./vzefibootloader/init%28%29.md)
   Creates a new EFI boot loader.
 ### Working with secure boot configurations
-- [class VZEFISignatureDatabaseConfiguration](vzefisignaturedatabaseconfiguration.md)
+- [class VZEFISignatureDatabaseConfiguration](./vzefisignaturedatabaseconfiguration.md)
   A container for Unified Extensible Firmware Interface (UEFI) Secure Boot signature lists.
-- [class VZEFISignatureList](vzefisignaturelist.md)
+- [class VZEFISignatureList](./vzefisignaturelist.md)
   A class that represents a Unified Extensible Firmware Interface (UEFI) signature list.
-- [enum VZEFISignature](vzefisignature-swift.enum.md)
+- [enum VZEFISignature](./vzefisignature-swift.enum.md)
 ### Accessing the boot loader’s EFI variables
-- [var variableStore: VZEFIVariableStore?](vzefibootloader/variablestore.md)
+- [var variableStore: VZEFIVariableStore?](./vzefibootloader/variablestore.md)
   The boot loader’s EFI variable store.
 
 ## Relationships
 
 ### Inherits From
-- [VZBootLoader](vzbootloader.md)
+- [VZBootLoader](./vzbootloader.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMacOSBootLoader](vzmacosbootloader.md)
+### Related Documentation
+- [class VZMacOSBootLoader](./vzmacosbootloader.md)
   An object that loads and configures a boot loader for running macOS on Apple silicon as a guest system of your VM.
-- [class VZBootLoader](vzbootloader.md)
+### Boot loaders
+- [class VZBootLoader](./vzbootloader.md)
   The base class that defines the management of the initial process of the guest system.
-- [class VZLinuxBootLoader](vzlinuxbootloader.md)
+- [class VZLinuxBootLoader](./vzlinuxbootloader.md)
   An object that loads and configures a Linux kernel as the guest system of your VM.
-- [class VZEFIVariableStore](vzefivariablestore.md)
+- [class VZEFIVariableStore](./vzefivariablestore.md)
   An object that represents the Extensible Firmware Interface (EFI) variable store that contains NVRAM variables the EFI exposes.
 
 

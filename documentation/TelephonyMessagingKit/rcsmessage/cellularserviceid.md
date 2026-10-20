@@ -1,7 +1,8 @@
 # cellularServiceID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cellular service identifier associated with the message.
 
@@ -16,17 +17,18 @@ let cellularServiceID: CellularServiceID
 
 ## See Also
 
-- [struct CellularServiceID](cellularserviceid.md)
+### Accessing message properties
+- [struct CellularServiceID](../cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [let handle: RCSHandle](rcsmessage/handle.md)
+- [let handle: RCSHandle](./handle.md)
   The handle associated with the sender or receiver of the message.
-- [enum RCSHandle](rcshandle.md)
+- [enum RCSHandle](../rcshandle.md)
   An enumeration that represents an RCS destination or sender.
-- [let id: RCSMessageID](rcsmessage/id.md)
+- [let id: RCSMessageID](./id.md)
   A message identifier for the message.
-- [struct RCSMessageID](rcsmessageid.md)
+- [struct RCSMessageID](../rcsmessageid.md)
   A structure that represents an RCS message identifier.
-- [let originalID: RCSMessageID?](rcsmessage/originalid.md)
+- [let originalID: RCSMessageID?](./originalid.md)
   The original message ID of this message.
 
 

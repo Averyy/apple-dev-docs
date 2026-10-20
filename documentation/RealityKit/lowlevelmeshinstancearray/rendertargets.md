@@ -1,7 +1,8 @@
 # renderTargets
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of render target descriptors this array is compatible with.
 

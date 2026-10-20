@@ -1,7 +1,8 @@
 # mediaPlayingPaused()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system that the Notification Content app extension stopped playing a media file.
 
@@ -18,13 +19,18 @@ Tells the system that the Notification Content app extension stopped playing a m
 func mediaPlayingPaused()
 ```
 
+```objc
+- (void) mediaPlayingPaused;
+```
+
 #### Discussion
 
-In your Notification Content app extension code, call this method when you programmatically stop playing a media file. When called, the system updates the appearance of the media playback button displayed in the notification content extension’s interface. For more information about implementing a notification content extension, see [`UNNotificationContentExtension`](https://developer.apple.com/documentation/usernotificationsui/unnotificationcontentextension).
+In your Notification Content app extension code, call this method when you programmatically stop playing a media file. When called, the system updates the appearance of the media playback button displayed in the notification content extension’s interface. For more information about implementing a notification content extension, see [`UNNotificationContentExtension`](../../UserNotificationsUI/unnotificationcontentextension.md).
 
 ## See Also
 
-- [func mediaPlayingStarted()](nsextensioncontext/mediaplayingstarted.md)
+### Controlling media playback in notification content extensions
+- [func mediaPlayingStarted()](./mediaplayingstarted%28%29.md)
   Tells the system that the Notification Content app extension began playing a media file.
 
 

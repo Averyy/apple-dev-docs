@@ -1,7 +1,8 @@
 # init(array:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated array by placing in it the objects contained in a given array.
 

@@ -1,7 +1,8 @@
 # IODataQueue
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A generic queue designed to pass data from the kernel to a user process.
 
@@ -10,7 +11,7 @@ A generic queue designed to pass data from the kernel to a user process.
 
 ## Declaration
 
-```swift
+```cpp
 class IODataQueue : OSObject
 ```
 
@@ -29,44 +30,45 @@ In order to make the data queue memory available to a user process, the method g
 ## Topics
 
 ### Miscellaneous
-- [enqueue](iodataqueue/1810927-enqueue.md)
+- [enqueue](./iodataqueue/api-1810927-enqueue.md)
   Enqueues a new entry on the queue.
-- [getMemoryDescriptor](iodataqueue/1810939-getmemorydescriptor.md)
+- [getMemoryDescriptor](./iodataqueue/api-1810939-getmemorydescriptor.md)
   Returns a memory descriptor covering the IODataQueueMemory region.
-- [initWithCapacity](iodataqueue/1810950-initwithcapacity.md)
+- [initWithCapacity](./iodataqueue/api-1810950-initwithcapacity.md)
   Initializes an IODataQueue instance with the capacity specified in the size parameter.
-- [initWithEntries](iodataqueue/1810963-initwithentries.md)
+- [initWithEntries](./iodataqueue/api-1810963-initwithentries.md)
   Initializes an IODataQueue instance with the specified number of entries of the given size.
-- [sendDataAvailableNotification](iodataqueue/1810980-senddataavailablenotification.md)
+- [sendDataAvailableNotification](./iodataqueue/api-1810980-senddataavailablenotification.md)
   Sends a dataAvailableNotification message to the specified mach port.
-- [setNotificationPort](iodataqueue/1810994-setnotificationport.md)
+- [setNotificationPort](./iodataqueue/api-1810994-setnotificationport.md)
   Creates a simple mach message targeting the mach port specified in port.
-- [withCapacity](iodataqueue/1811001-withcapacity.md)
+- [withCapacity](./iodataqueue/api-1811001-withcapacity.md)
   Static method that creates a new IODataQueue instance with the capacity specified in the size parameter.
-- [withEntries](iodataqueue/1811020-withentries.md)
+- [withEntries](./iodataqueue/api-1811020-withentries.md)
   Static method that creates a new IODataQueue instance with the specified number of entries of the given size.
 ### Instance Methods
-- [- enqueue](iodataqueue/1586520-enqueue.md)
-- [- free](iodataqueue/1586519-free.md)
-- [- getMemoryDescriptor](iodataqueue/1586526-getmemorydescriptor.md)
-- [- getMetaClass](iodataqueue/1586530-getmetaclass.md)
-- [- initWithCapacity](iodataqueue/1586525-initwithcapacity.md)
-- [- initWithEntries](iodataqueue/1586528-initwithentries.md)
-- [- sendDataAvailableNotification](iodataqueue/1586529-senddataavailablenotification.md)
-- [- setNotificationPort](iodataqueue/1586527-setnotificationport.md)
+- [- enqueue](./iodataqueue/api-1586520-enqueue.md)
+- [- free](./iodataqueue/api-1586519-free.md)
+- [- getMemoryDescriptor](./iodataqueue/api-1586526-getmemorydescriptor.md)
+- [- getMetaClass](./iodataqueue/api-1586530-getmetaclass.md)
+- [- initWithCapacity](./iodataqueue/api-1586525-initwithcapacity.md)
+- [- initWithEntries](./iodataqueue/api-1586528-initwithentries.md)
+- [- sendDataAvailableNotification](./iodataqueue/api-1586529-senddataavailablenotification.md)
+- [- setNotificationPort](./iodataqueue/api-1586527-setnotificationport.md)
 ### Type Methods
-- [+ withCapacity](iodataqueue/1586522-withcapacity.md)
-- [+ withEntries](iodataqueue/1586523-withentries.md)
+- [+ withCapacity](./iodataqueue/api-1586522-withcapacity.md)
+- [+ withEntries](./iodataqueue/api-1586523-withentries.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IODataQueueDispatchSource](iodataqueuedispatchsource.md)
-- [IODataQueueDispatchSourceInterface](iodataqueuedispatchsourceinterface.md)
+### Data Queues
+- [IODataQueueDispatchSource](./iodataqueuedispatchsource.md)
+- [IODataQueueDispatchSourceInterface](./iodataqueuedispatchsourceinterface.md)
 
 
 ---

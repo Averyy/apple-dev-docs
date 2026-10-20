@@ -1,7 +1,8 @@
 # SRWristTemperature
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The temperature of the user’s wrist while the user sleeps.
 
@@ -16,45 +17,50 @@ The temperature of the user’s wrist while the user sleeps.
 class SRWristTemperature
 ```
 
+```objc
+@interface SRWristTemperature : NSObject
+```
+
 #### Overview
 
-The [`wristTemperature`](srsensor/wristtemperature.md) sensor provides this class as its [`sample`](srfetchresult/sample.md) type.
+The [`wristTemperature`](./srsensor/wristtemperature.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 
 ## Topics
 
 ### Getting temperature information
-- [var timestamp: Date](srwristtemperature/timestamp.md)
+- [var timestamp: Date](./srwristtemperature/timestamp.md)
   The date and time when the device records the temperature.
-- [var value: Measurement<UnitTemperature>](srwristtemperature/value.md)
+- [var value: Measurement<UnitTemperature>](./srwristtemperature/value.md)
   The temperature sensor value in celsius.
-- [var errorEstimate: Measurement<UnitTemperature>](srwristtemperature/errorestimate.md)
+- [var errorEstimate: Measurement<UnitTemperature>](./srwristtemperature/errorestimate.md)
   An estimate of the amount of error in the temperature measurement.
 ### Determining the accuracy
-- [var condition: SRWristTemperature.Condition](srwristtemperature/condition-swift.property.md)
+- [var condition: SRWristTemperature.Condition](./srwristtemperature/condition-swift.property.md)
   The condition of the measurement that impacts its accuracy.
-- [SRWristTemperature.Condition](srwristtemperature/condition-swift.struct.md)
+- [SRWristTemperature.Condition](./srwristtemperature/condition-swift.struct.md)
   The user activities with the watch that can impact the temperature measurement.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SRWristTemperatureSession](srwristtemperaturesession.md)
+### Recording wrist temperatures
+- [class SRWristTemperatureSession](./srwristtemperaturesession.md)
   An object that represents wrist temperatures that a device records during a period of time.
 
 

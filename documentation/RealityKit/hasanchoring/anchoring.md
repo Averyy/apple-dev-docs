@@ -1,7 +1,8 @@
 # anchoring
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The component that describes how the virtual content is anchored to the real world.
 
@@ -11,7 +12,7 @@ The component that describes how the virtual content is anchored to the real wor
 - Mac Catalyst 14.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

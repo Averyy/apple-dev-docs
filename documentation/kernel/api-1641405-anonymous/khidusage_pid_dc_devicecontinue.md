@@ -1,14 +1,15 @@
 # kHIDUsage_PID_DC_DeviceContinue
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PID_DC_DeviceContinue = 0x9C
 ```
 

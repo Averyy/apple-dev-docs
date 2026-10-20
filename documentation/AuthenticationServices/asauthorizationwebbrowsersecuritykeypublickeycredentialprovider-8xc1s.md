@@ -1,7 +1,8 @@
 # ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialProvider
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for creating passkey requests.
 
@@ -20,15 +21,15 @@ protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialProvider
 ## Topics
 
 ### Creating credential assertion requests
-- [func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientData) -> ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s/createcredentialassertionrequest(clientdata:).md)
+- [func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientData) -> ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](./asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s/createcredentialassertionrequest%28clientdata%29.md)
   Creates a credential assertion request for authenticating to the relying party.
-- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s/createcredentialregistrationrequest(clientdata:displayname:name:userid:).md)
+- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](./asauthorizationwebbrowsersecuritykeypublickeycredentialprovider-8xc1s/createcredentialregistrationrequest%28clientdata,displayname,name,userid%29.md)
   Creates a credential registration request for registering a new password with the relying party.
 
 ## Relationships
 
 ### Conforming Types
-- [ASAuthorizationSecurityKeyPublicKeyCredentialProvider](asauthorizationsecuritykeypublickeycredentialprovider.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialProvider](./asauthorizationsecuritykeypublickeycredentialprovider.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ColorSyncProfileContainsHeadroomAdaptiveGainCurve(_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether a profile contains a Headroom Adaptive Gain Curve tag.
 
@@ -18,6 +19,10 @@ Returns whether a profile contains a Headroom Adaptive Gain Curve tag.
 
 ```swift
 func ColorSyncProfileContainsHeadroomAdaptiveGainCurve(_ profile: ColorSyncProfile) -> Bool
+```
+
+```c
+extern bool ColorSyncProfileContainsHeadroomAdaptiveGainCurve(ColorSyncProfileRef profile);
 ```
 
 #### Return Value

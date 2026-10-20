@@ -1,7 +1,8 @@
 # attributedSubtitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,11 +18,12 @@
 
 ## See Also
 
-- [var subtitle: String?](uinavigationitem/subtitle.md)
+### Configuring the subtitle
+- [var subtitle: String?](./subtitle.md)
   A string to display as the subtitle in the navigation bar.
-- [var largeSubtitle: String?](uinavigationitem/largesubtitle.md)
+- [var largeSubtitle: String?](./largesubtitle.md)
   String to be rendered below the large title.
-- [var largeAttributedSubtitle: AttributedString?](uinavigationitem/largeattributedsubtitle-4z2gx.md)
+- [var largeAttributedSubtitle: AttributedString?](./largeattributedsubtitle-4z2gx.md)
 
 
 ---

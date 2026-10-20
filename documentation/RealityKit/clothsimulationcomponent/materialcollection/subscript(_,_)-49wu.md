@@ -1,7 +1,8 @@
 # subscript(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a body material by name, returning `nil` if the name is absent or the material is not a body material.
 
@@ -16,9 +17,16 @@ Accesses a body material by name, returning `nil` if the name is absent or the m
 subscript(name: String, type: ClothBodyMaterial.Type) -> ClothBodyMaterial? { get set }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(name: String, type: ClothColliderMaterial.Type) -> ClothColliderMaterial? { get set }
+```
+
 ## See Also
 
-- [subscript(String, ClothColliderMaterial.Type) -> ClothColliderMaterial?](clothsimulationcomponent/materialcollection/subscript(_:_:)-8ncq4.md)
+### Accessing materials
+- [subscript(String, ClothColliderMaterial.Type) -> ClothColliderMaterial?](./subscript%28_,_%29-8ncq4.md)
   Accesses a collider material by name, returning `nil` if the name is absent or the material is not a collider material.
 
 

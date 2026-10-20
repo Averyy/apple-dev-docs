@@ -1,7 +1,8 @@
 # TCControlContents.DpadElementStyle
 
 **Framework**: Touch Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the visual style of the individual up/down/left/right elements of a direction pad.
 
@@ -16,31 +17,36 @@ Defines the visual style of the individual up/down/left/right elements of a dire
 enum DpadElementStyle
 ```
 
+```c
+enum TCControlContentsDpadElementStyle : NSInteger;
+```
+
 ## Topics
 
 ### Styles
-- [TCControlContents.DpadElementStyle.circle](tccontrolcontents/dpadelementstyle/circle.md)
+- [TCControlContents.DpadElementStyle.circle](./dpadelementstyle/circle.md)
   A circular direction pad style.
-- [TCControlContents.DpadElementStyle.pentagon](tccontrolcontents/dpadelementstyle/pentagon.md)
+- [TCControlContents.DpadElementStyle.pentagon](./dpadelementstyle/pentagon.md)
   A pentagon direction pad style.
 ### Creating an element style
-- [init?(rawValue: Int)](tccontrolcontents/dpadelementstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./dpadelementstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TCControlContents.ButtonShape](tccontrolcontents/buttonshape.md)
+### System content
+- [TCControlContents.ButtonShape](./buttonshape.md)
   Defines the visual shape of a button.
-- [TCControlContents.DpadDirection](tccontrolcontents/dpaddirection.md)
+- [TCControlContents.DpadDirection](./dpaddirection.md)
   Defines the direction of a direction pad visual.
 
 

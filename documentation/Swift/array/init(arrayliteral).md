@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an array from the given array literal.
 
@@ -36,7 +37,8 @@ let ingredients = ["cocoa beans", "sugar", "cocoa butter", "salt"]
 
 ## See Also
 
-- [var hashValue: Int](array/hashvalue.md)
+### Infrequently Used Functionality
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

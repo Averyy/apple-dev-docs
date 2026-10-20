@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the metrics with more predicted and ground truth label pairs.
 
@@ -26,7 +27,8 @@ mutating func add(_ pairs: some Sequence<(predicted: Label, label: Label)>)
 
 ## See Also
 
-- [func add(predicted: some Sequence<Label>, groundTruth: some Sequence<Label>)](classificationmetrics/add(predicted:groundtruth:).md)
+### Updating the metrics
+- [func add(predicted: some Sequence<Label>, groundTruth: some Sequence<Label>)](./add%28predicted,groundtruth%29.md)
   Updates the metrics with more predicted and ground truth labels.
 
 

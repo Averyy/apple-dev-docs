@@ -1,7 +1,8 @@
 # cssm_parsed_cert
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,24 @@
 struct cssm_parsed_cert
 ```
 
+```c
+struct cssm_parsed_cert;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_parsed_cert-swift.struct/init.md)
-- [init(CertType: CSSM_CERT_TYPE, ParsedCertFormat: CSSM_CERT_PARSE_FORMAT, ParsedCert: UnsafeMutableRawPointer!)](cssm_parsed_cert-swift.struct/init(certtype:parsedcertformat:parsedcert:).md)
+- [init()](./cssm_parsed_cert-swift.struct/init%28%29.md)
+- [init(CertType: CSSM_CERT_TYPE, ParsedCertFormat: CSSM_CERT_PARSE_FORMAT, ParsedCert: UnsafeMutableRawPointer!)](./cssm_parsed_cert-swift.struct/init%28certtype,parsedcertformat,parsedcert%29.md)
 ### Instance Properties
-- [var CertType: CSSM_CERT_TYPE](cssm_parsed_cert-swift.struct/certtype.md)
-- [var ParsedCert: UnsafeMutableRawPointer!](cssm_parsed_cert-swift.struct/parsedcert.md)
-- [var ParsedCertFormat: CSSM_CERT_PARSE_FORMAT](cssm_parsed_cert-swift.struct/parsedcertformat.md)
+- [var CertType: CSSM_CERT_TYPE](./cssm_parsed_cert-swift.struct/certtype.md)
+- [var ParsedCert: UnsafeMutableRawPointer!](./cssm_parsed_cert-swift.struct/parsedcert.md)
+- [var ParsedCertFormat: CSSM_CERT_PARSE_FORMAT](./cssm_parsed_cert-swift.struct/parsedcertformat.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

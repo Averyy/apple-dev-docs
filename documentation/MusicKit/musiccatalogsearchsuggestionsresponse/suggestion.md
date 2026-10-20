@@ -1,7 +1,8 @@
 # MusicCatalogSearchSuggestionsResponse.Suggestion
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An item that represents a suggestion in the search suggestions response.
 
@@ -23,27 +24,27 @@ struct Suggestion
 ## Topics
 
 ### Instance Properties
-- [let displayTerm: String](musiccatalogsearchsuggestionsresponse/suggestion/displayterm.md)
+- [let displayTerm: String](./suggestion/displayterm.md)
   A term to display to the user to select from.
-- [var id: String](musiccatalogsearchsuggestionsresponse/suggestion/id.md)
+- [var id: String](./suggestion/id.md)
   The unique identifier for the suggestion.
-- [let searchTerm: String](musiccatalogsearchsuggestionsresponse/suggestion/searchterm.md)
+- [let searchTerm: String](./suggestion/searchterm.md)
   The term to use as a search input when using this suggestion.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

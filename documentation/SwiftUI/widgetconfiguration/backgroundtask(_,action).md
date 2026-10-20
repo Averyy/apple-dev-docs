@@ -1,7 +1,8 @@
 # backgroundTask(_:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the given action when the system provides a background task.
 
@@ -22,7 +23,7 @@ func backgroundTask<D, R>(_ task: BackgroundTask<D, R>, action: @escaping @Senda
 
 #### Discussion
 
-When the system wakes your app or extension for one or more background tasks, it will call any actions associated with matching tasks. When your async actions return, the system will put your app back into a suspended state. In Widget Extensions, this modifier can be used to handle URL Session background tasks with [`urlSession`](backgroundtask/urlsession.md).
+When the system wakes your app or extension for one or more background tasks, it will call any actions associated with matching tasks. When your async actions return, the system will put your app back into a suspended state. In Widget Extensions, this modifier can be used to handle URL Session background tasks with [`urlSession`](../backgroundtask/urlsession.md).
 
 ## Parameters
 
@@ -31,7 +32,8 @@ When the system wakes your app or extension for one or more background tasks, it
 
 ## See Also
 
-- [func onBackgroundURLSessionEvents(matching:_:)](widgetconfiguration/onbackgroundurlsessionevents(matching:_:).md)
+### Managing background tasks
+- [func onBackgroundURLSessionEvents(matching:_:)](./onbackgroundurlsessionevents%28matching,_%29.md)
   Adds an action to perform when events related to a URL session identified by a closure are waiting to be processed.
 
 

@@ -1,7 +1,8 @@
 # httpMethod
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HTTP request method.
 
@@ -20,21 +21,27 @@ The HTTP request method.
 var httpMethod: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * HTTPMethod;
+```
+
 #### Discussion
 
 The default HTTP method is “GET”.
 
 ## See Also
 
-- [var httpMethod: String](nsmutableurlrequest/httpmethod.md)
+### Related Documentation
+- [var httpMethod: String](../nsmutableurlrequest/httpmethod.md)
   The HTTP request method.
-- [var url: URL?](nsurlrequest/url.md)
+### Accessing request components
+- [var url: URL?](./url.md)
   The URL being requested.
-- [var httpBody: Data?](nsurlrequest/httpbody.md)
+- [var httpBody: Data?](./httpbody.md)
   The request body.
-- [var httpBodyStream: InputStream?](nsurlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./httpbodystream.md)
   The request body as an input stream.
-- [var mainDocumentURL: URL?](nsurlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./maindocumenturl.md)
   The main document URL associated with the request.
 
 

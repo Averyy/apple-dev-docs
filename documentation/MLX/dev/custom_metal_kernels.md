@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/dev/custom_metal_kernels.html
 
 # Custom Metal Kernels
 
-**
-
-- [.rst](../_sources/dev/custom_metal_kernels.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Custom Metal Kernels
-
- Table of contents 
-
-## Contents
-
-# Custom Metal Kernels
-
 MLX supports writing custom Metal kernels through the Python and C++ APIs.
 
 ## Simple Example
@@ -71,7 +44,7 @@ assert mx.allclose(b, mx.exp(a))
 
 Every time you make a kernel, a new Metal library is created and possibly
 JIT compiled. To reduce the overhead from that, build the kernel once with
-[fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.html#mlx.core.fast.metal_kernel) and then use it many times.
+[fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.md#mlx.core.fast.metal_kernel) and then use it many times.
 
 Note
 
@@ -116,11 +89,11 @@ function. This means we will launch `mx.prod(grid)` threads, subdivided into
 dimension should be less than or equal to the corresponding grid dimension.
 
 Passing `verbose=True` when calling the kernel returned by
-[fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.html#mlx.core.fast.metal_kernel) will print the generated code for debugging purposes.
+[fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.md#mlx.core.fast.metal_kernel) will print the generated code for debugging purposes.
 
 ## Math Mode
 
-By default [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.html#mlx.core.fast.metal_kernel) compiles kernels with
+By default [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.md#mlx.core.fast.metal_kernel) compiles kernels with
 `compile_options={"math_mode": "safe"}` so special values follow IEEE
 behavior, for example `exp(-inf) == 0`. This is important for kernels such as
 masked softmax where causal or sliding-window masks depend on exponentiating
@@ -142,13 +115,13 @@ kernel = mx.fast.metal_kernel(
 
 ## Using Shape/Strides
 
-[fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.html#mlx.core.fast.metal_kernel) supports an argument `ensure_row_contiguous` which
+[fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.md#mlx.core.fast.metal_kernel) supports an argument `ensure_row_contiguous` which
 is `True` by default. This will copy the array inputs if needed
 before the kernel is launched to ensure that the memory layout is row
 contiguous.  Generally this makes writing the kernel easier, since we don’t
 have to worry about gaps or the ordering of the dims when indexing.
 
-If we want to avoid this copy, [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.html#mlx.core.fast.metal_kernel) automatically passes
+If we want to avoid this copy, [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.md#mlx.core.fast.metal_kernel) automatically passes
 `a_shape`, `a_strides` and `a_ndim` for each input array `a` if any are
 present in `source`. We can then use MLX’s built in indexing utils to fetch
 the right elements for each thread.
@@ -241,7 +214,7 @@ def grid_sample_ref(x, grid):
     return output
 ```
 
-Now let’s use [custom_function()](../python/_autosummary/mlx.core.custom_function.html#mlx.core.custom_function) together with [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.html#mlx.core.fast.metal_kernel)
+Now let’s use [custom_function()](../python/_autosummary/mlx.core.custom_function.md#mlx.core.custom_function) together with [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.md#mlx.core.fast.metal_kernel)
 to write a fast GPU kernel for both the forward and backward passes.
 
 First we’ll implement the forward pass as a fused kernel:
@@ -340,11 +313,11 @@ On an M1 Max, we see a big performance improvement:
 
 ## Grid Sample VJP
 
-Since we decorated `grid_sample` with [custom_function()](../python/_autosummary/mlx.core.custom_function.html#mlx.core.custom_function), we can now
+Since we decorated `grid_sample` with [custom_function()](../python/_autosummary/mlx.core.custom_function.md#mlx.core.custom_function), we can now
 define its custom vjp transform so MLX can differentiate it.
 
 The backwards pass requires atomically updating `x_grad`/`grid_grad` and so
-requires a few extra [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.html#mlx.core.fast.metal_kernel) features:
+requires a few extra [fast.metal_kernel()](../python/_autosummary/mlx.core.fast.metal_kernel.md#mlx.core.fast.metal_kernel) features:
 
 - `init_value=0`Initialize all of the kernel’s outputs to this value before it runs. This allows us to update only part of the output arrays with the kernel.
 - `atomic_outputs=True`Designate all of the kernel outputs as `atomic` in the function signature.
@@ -482,5 +455,3 @@ def grid_sample_vjp(primals, cotangent, _):
 There’s an even larger speed up for the vjp:
 
 `676.4ms -> 16.7ms => 40x speed up`
-
-** Contents

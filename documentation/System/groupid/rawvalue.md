@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw C `gid_t`.
 

@@ -1,7 +1,8 @@
 # OSLogEntry.StoreCategory.longTerm30
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The entry was tagged with a hint indicating the system should try to preserve it for approximately 30 days.
 
@@ -20,27 +21,32 @@ The entry was tagged with a hint indicating the system should try to preserve it
 case longTerm30
 ```
 
+```c
+OSLogEntryStoreCategoryLongTerm30
+```
+
 #### Discussion
 
 It was persisted in the filesystem-backed date store, and rotation of these entries was based on both time and space considerations.
 
 ## See Also
 
-- [OSLogEntry.StoreCategory.undefined](oslogentry/storecategory-swift.enum/undefined.md)
+### Constants
+- [OSLogEntry.StoreCategory.undefined](./undefined.md)
   This entry’s purpose is unknown.
-- [OSLogEntry.StoreCategory.metadata](oslogentry/storecategory-swift.enum/metadata.md)
+- [OSLogEntry.StoreCategory.metadata](./metadata.md)
   This entry was generated as information about the other entries or about the sequence of entries as a whole.
-- [OSLogEntry.StoreCategory.shortTerm](oslogentry/storecategory-swift.enum/shortterm.md)
+- [OSLogEntry.StoreCategory.shortTerm](./shortterm.md)
   This entry was not intended to be long-lived, and was captured in the ring buffer.
-- [OSLogEntry.StoreCategory.longTermAuto](oslogentry/storecategory-swift.enum/longtermauto.md)
+- [OSLogEntry.StoreCategory.longTermAuto](./longtermauto.md)
   The entry was tagged with a hint indicating the system should try to preserve it based on the amount of space available.
-- [OSLogEntry.StoreCategory.longTerm1](oslogentry/storecategory-swift.enum/longterm1.md)
+- [OSLogEntry.StoreCategory.longTerm1](./longterm1.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 1 day.
-- [OSLogEntry.StoreCategory.longTerm3](oslogentry/storecategory-swift.enum/longterm3.md)
+- [OSLogEntry.StoreCategory.longTerm3](./longterm3.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 3 days.
-- [OSLogEntry.StoreCategory.longTerm7](oslogentry/storecategory-swift.enum/longterm7.md)
+- [OSLogEntry.StoreCategory.longTerm7](./longterm7.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 7 days.
-- [OSLogEntry.StoreCategory.longTerm14](oslogentry/storecategory-swift.enum/longterm14.md)
+- [OSLogEntry.StoreCategory.longTerm14](./longterm14.md)
   The entry was tagged with a hint indicating the system should try to preserve it for approximately 14 days.
 
 

@@ -1,7 +1,8 @@
 # hasAttitude
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the controller provides attitude data.
 
@@ -19,19 +20,25 @@ A Boolean value that indicates whether the controller provides attitude data.
 var hasAttitude: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasAttitude;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the controller provides attitude data; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the controller provides attitude data; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var attitude: GCQuaternion](gcmotion/attitude.md)
+### Related Documentation
+- [var attitude: GCQuaternion](./attitude.md)
   The attitude of the controller.
-- [var hasRotationRate: Bool](gcmotion/hasrotationrate.md)
+### Verifying Capabilities
+- [var hasRotationRate: Bool](./hasrotationrate.md)
   A Boolean value that indicates whether the controller provides rotation data.
-- [var hasGravityAndUserAcceleration: Bool](gcmotion/hasgravityanduseracceleration.md)
+- [var hasGravityAndUserAcceleration: Bool](./hasgravityanduseracceleration.md)
   A Boolean value that indicates whether the controller provides gravity and user acceleration data.
-- [var hasAttitudeAndRotationRate: Bool](gcmotion/hasattitudeandrotationrate.md)
+- [var hasAttitudeAndRotationRate: Bool](./hasattitudeandrotationrate.md)
   A Boolean value that indicates whether the controller provides attitude and rotation data.
 
 

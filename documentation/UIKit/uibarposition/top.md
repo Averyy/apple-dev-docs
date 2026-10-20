@@ -1,7 +1,8 @@
 # UIBarPosition.top
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the bar is at the top of its containing view.
 
@@ -9,7 +10,7 @@ Specifies that the bar is at the top of its containing view.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ Specifies that the bar is at the top of its containing view.
 case top
 ```
 
+```c
+UIBarPositionTop
+```
+
 #### Discussion
 
 The system uses this as a hint to draw directional decoration accordingly. For example, any shadow would be drawn below the bar.
 
-Instances of [`UIToolbar`](uitoolbar.md) do not appear with this position on iPhone, but they can on iPad.
+Instances of [`UIToolbar`](../uitoolbar.md) do not appear with this position on iPhone, but they can on iPad.
 
 ## See Also
 
-- [UIBarPosition.any](uibarposition/any.md)
+### Constants
+- [UIBarPosition.any](./any.md)
   Specifies that the position is unspecified.
-- [UIBarPosition.bottom](uibarposition/bottom.md)
+- [UIBarPosition.bottom](./bottom.md)
   Specifies that the bar is at the bottom of its containing view.
-- [UIBarPosition.topAttached](uibarposition/topattached.md)
+- [UIBarPosition.topAttached](./topattached.md)
   Specifies that the bar is at the top of the screen, as well as its containing view.
 
 

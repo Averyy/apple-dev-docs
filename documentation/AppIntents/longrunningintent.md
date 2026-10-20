@@ -1,7 +1,8 @@
 # LongRunningIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface you use to extend the background execution time of an app intent that performs a long-running task.
 
@@ -22,15 +23,15 @@ protocol LongRunningIntent : ProgressReportingIntent
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
+- [Creating your first app intent](./creating-your-first-app-intent.md)
 
 #### Overview
 
 This protocol allows an app intent to run for an extended period of time in the background. When a task runs in the background, the system traditionally gives it up to 30 seconds to finish its task. For some types of tasks, this amount of time can be insufficient to complete the task. For example, file operations, data synchronization, machine learning inference, and data processing tasks can take longer if they operate on a sufficiently large amount of data. If your app intent performs a task that might exceed the built-in time limits, incorporate this protocol and use its methods to perform that task.
 
-In the implementation of your app intent, place the code for your task inside one of the methods this protocol offers. The methods of this protocol work with the system to extend the amount of time your code has to run. While your code runs, the system requires you to report progress regularly, which you do using the [`progress`](progressreportingintent/progress.md) property of the inherited [`ProgressReportingIntent`](progressreportingintent.md) protocol. If you don’t update this property regularly, the system can cancel the background runtime extension and end your task prematurely.
+In the implementation of your app intent, place the code for your task inside one of the methods this protocol offers. The methods of this protocol work with the system to extend the amount of time your code has to run. While your code runs, the system requires you to report progress regularly, which you do using the [`progress`](./progressreportingintent/progress.md) property of the inherited [`ProgressReportingIntent`](./progressreportingintent.md) protocol. If you don’t update this property regularly, the system can cancel the background runtime extension and end your task prematurely.
 
-The following example shows the implementation of an app intent that uploads a file. The implementation uploads the file in chunks, and updates the [`progress`](progressreportingintent/progress.md) property after each chunk.
+The following example shows the implementation of an app intent that uploads a file. The implementation uploads the file in chunks, and updates the [`progress`](./progressreportingintent/progress.md) property after each chunk.
 
 ```swift
 struct UploadFileIntent: LongRunningIntent {
@@ -69,31 +70,32 @@ struct UploadFileIntent: LongRunningIntent {
 ## Topics
 
 ### Performing background tasks
-- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T) async throws -> T](longrunningintent/performbackgroundtask(options:operation:).md)
+- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T) async throws -> T](./longrunningintent/performbackgroundtask%28options,operation%29.md)
   Runs an operation in the background with an extended amount of time.
-- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T, onCancel: (IntentCancellationReason) -> Void) async throws -> T](longrunningintent/performbackgroundtask(options:operation:oncancel:).md)
+- [func performBackgroundTask<T>(options: LongRunningTaskOptions, operation: () async throws -> T, onCancel: (IntentCancellationReason) -> Void) async throws -> T](./longrunningintent/performbackgroundtask%28options,operation,oncancel%29.md)
   Runs an operation in the background and provides a way to cancel the operation before it finishes.
-- [struct LongRunningTaskOptions](longrunningtaskoptions.md)
+- [struct LongRunningTaskOptions](./longrunningtaskoptions.md)
   Options for configuring long-running tasks.
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [ProgressReportingIntent](progressreportingintent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [ProgressReportingIntent](./progressreportingintent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol UndoableIntent](undoableintent.md)
+### Add-on behaviors
+- [protocol UndoableIntent](./undoableintent.md)
   An interface you use to register undoable actions in your app intent code.
-- [protocol CancellableIntent](cancellableintent.md)
+- [protocol CancellableIntent](./cancellableintent.md)
   An interface to support the graceful cancellation of your app intent’s task.
-- [protocol PredictableIntent](predictableintent.md)
+- [protocol PredictableIntent](./predictableintent.md)
   An interface that indicates the system can suggest the intent as a potential action to run.
-- [struct IntentPrediction](intentprediction.md)
+- [struct IntentPrediction](./intentprediction.md)
   A prediction for an app intent that the system might display to someone when it’s relevant.
 
 

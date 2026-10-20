@@ -1,7 +1,8 @@
 # Error.Source
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The Source object represents the source of an error.
 
@@ -10,7 +11,7 @@ The Source object represents the source of an error.
 
 ## Declaration
 
-```swift
+```
 object Error.Source
 ```
 

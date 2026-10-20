@@ -1,7 +1,8 @@
 # getIntersectionList
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 NodeList getIntersectionList(
     SVGRect rect, 
     optional SVGElement? referenceElement

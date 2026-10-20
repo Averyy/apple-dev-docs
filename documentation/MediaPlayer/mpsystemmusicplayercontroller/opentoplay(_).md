@@ -2,6 +2,7 @@
 
 **Framework**: Media Player  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Opens the Music app and plays the designated videos.
@@ -17,6 +18,10 @@ Opens the Music app and plays the designated videos.
 
 ```swift
 func openToPlay(_ queueDescriptor: MPMusicPlayerQueueDescriptor)
+```
+
+```objc
+- (void) openToPlayQueueDescriptor:(MPMusicPlayerQueueDescriptor *) queueDescriptor;
 ```
 
 #### Discussion

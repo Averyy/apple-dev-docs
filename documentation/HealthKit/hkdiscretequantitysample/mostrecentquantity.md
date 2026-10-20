@@ -1,7 +1,8 @@
 # mostRecentQuantity
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent quantity contained by the sample.
 
@@ -20,19 +21,24 @@ The most recent quantity contained by the sample.
 var mostRecentQuantity: HKQuantity { get }
 ```
 
+```objc
+@property (copy, readonly) HKQuantity * mostRecentQuantity;
+```
+
 #### Discussion
 
-The sample sorts its contained quantities based on the [`startDate`](https://developer.apple.com/documentation/foundation/nsdateinterval/startdate) property for the quantity’s date interval.
+The sample sorts its contained quantities based on the [`startDate`](../../Foundation/nsdateinterval/startdate.md) property for the quantity’s date interval.
 
 ## See Also
 
-- [var averageQuantity: HKQuantity](hkdiscretequantitysample/averagequantity.md)
+### Accessing Calculated Values
+- [var averageQuantity: HKQuantity](./averagequantity.md)
   The average of all quantities contained by the sample.
-- [var maximumQuantity: HKQuantity](hkdiscretequantitysample/maximumquantity.md)
+- [var maximumQuantity: HKQuantity](./maximumquantity.md)
   The maximum quantity contained by the sample.
-- [var minimumQuantity: HKQuantity](hkdiscretequantitysample/minimumquantity.md)
+- [var minimumQuantity: HKQuantity](./minimumquantity.md)
   The minimum value contained by the sample.
-- [var mostRecentQuantityDateInterval: DateInterval](hkdiscretequantitysample/mostrecentquantitydateinterval.md)
+- [var mostRecentQuantityDateInterval: DateInterval](./mostrecentquantitydateinterval.md)
   The date interval for the most recent quantity contained by the sample.
 
 

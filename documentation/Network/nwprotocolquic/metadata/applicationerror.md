@@ -1,7 +1,8 @@
 # applicationError
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The QUIC application error code to send for the connection, or received from the peer.
 
@@ -22,9 +23,10 @@ var applicationError: NWProtocolQUIC.ApplicationError { get set }
 
 ## See Also
 
-- [NWProtocolQUIC.ApplicationError](nwprotocolquic/applicationerror.md)
+### Handling Errors
+- [NWProtocolQUIC.ApplicationError](../applicationerror.md)
   A QUIC application error code.
-- [var streamApplicationErrorCode: UInt64](nwprotocolquic/metadata/streamapplicationerrorcode.md)
+- [var streamApplicationErrorCode: UInt64](./streamapplicationerrorcode.md)
   The QUIC application error code to send for the stream, or received from the peer.
 
 

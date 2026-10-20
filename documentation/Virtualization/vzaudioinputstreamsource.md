@@ -1,7 +1,8 @@
 # VZAudioInputStreamSource
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for an audio input stream source.
 
@@ -14,33 +15,38 @@ The base class for an audio input stream source.
 class VZAudioInputStreamSource
 ```
 
+```objc
+@interface VZAudioInputStreamSource : NSObject
+```
+
 #### Overview
 
 An audio input stream source defines how th guest produces audio input data on the host system.
 
-Don’t instantiate `VZAudioInputStreamSource` directly, use one of its subclasses such as [`VZHostAudioInputStreamSource`](vzhostaudioinputstreamsource.md) instead.
+Don’t instantiate `VZAudioInputStreamSource` directly, use one of its subclasses such as [`VZHostAudioInputStreamSource`](./vzhostaudioinputstreamsource.md) instead.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZHostAudioInputStreamSource](vzhostaudioinputstreamsource.md)
+- [VZHostAudioInputStreamSource](./vzhostaudioinputstreamsource.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZHostAudioOutputStreamSink](vzhostaudiooutputstreamsink.md)
+### Audio streams
+- [class VZHostAudioOutputStreamSink](./vzhostaudiooutputstreamsink.md)
   Host audio output stream sink plays audio to the host system’s default output device.
-- [class VZHostAudioInputStreamSource](vzhostaudioinputstreamsource.md)
+- [class VZHostAudioInputStreamSource](./vzhostaudioinputstreamsource.md)
   The host audio input stream source that provides audio from the host system’s default input device.
-- [class VZAudioOutputStreamSink](vzaudiooutputstreamsink.md)
+- [class VZAudioOutputStreamSink](./vzaudiooutputstreamsink.md)
   The base class for an audio output stream sink.
 
 

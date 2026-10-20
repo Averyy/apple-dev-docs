@@ -1,23 +1,25 @@
 # copyCollection
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual OSCollectionPtr copyCollection(OSDictionary *cycleDict) const;
 ```
 
 ## See Also
 
-- [OSCollectionPtr](oscollectionptr.md)
+### Copying the Collection
+- [OSCollectionPtr](../oscollectionptr.md)
 
 
 ---

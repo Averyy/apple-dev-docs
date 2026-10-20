@@ -1,7 +1,8 @@
 # LiveAssistanceLaunchReason.signIn
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A launch reason that indicates the person using the extension isn’t signed into the VRS provider service.
 
@@ -20,7 +21,8 @@ case signIn
 
 ## See Also
 
-- [LiveAssistanceLaunchReason.additionalInfo](liveassistancelaunchreason/additionalinfo.md)
+### Working with launch reasons
+- [LiveAssistanceLaunchReason.additionalInfo](./additionalinfo.md)
   A launch reason that indicates the person using the extension needs to provide some information not related to authentication.
 
 

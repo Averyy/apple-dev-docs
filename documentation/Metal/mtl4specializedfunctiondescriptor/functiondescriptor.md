@@ -1,7 +1,8 @@
 # functionDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides a descriptor that corresponds to a base function that the specialization applies to.
 
@@ -18,6 +19,10 @@ Provides a descriptor that corresponds to a base function that the specializatio
 ```swift
 @NSCopying
 var functionDescriptor: MTL4FunctionDescriptor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * functionDescriptor;
 ```
 
 

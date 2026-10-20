@@ -1,17 +1,18 @@
 # init(size:align:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance initialized to the given values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ init(size: Int, align: Int)
 
 ## See Also
 
-- [init()](mtlsizeandalign/init.md)
+### Creating instances
+- [init()](./init%28%29.md)
   Creates a default instance.
 
 

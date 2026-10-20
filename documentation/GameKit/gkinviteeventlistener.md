@@ -1,7 +1,8 @@
 # GKInviteEventListener
 
 **Framework**: GameKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that handles invite events from Game Center.
 
@@ -20,56 +21,61 @@ A protocol that handles invite events from Game Center.
 protocol GKInviteEventListener
 ```
 
+```objc
+@protocol GKInviteEventListener
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding multiple players for a game](./finding-multiple-players-for-a-game.md)
 
 #### Overview
 
-Implement the methods in the [`GKInviteEventListener`](gkinviteeventlistener.md) protocol to accept invitations from other players or handle when other players accept invitations from the local player.
+Implement the methods in the [`GKInviteEventListener`](./gkinviteeventlistener.md) protocol to accept invitations from other players or handle when other players accept invitations from the local player.
 
-Adopt the [`GKLocalPlayerListener`](gklocalplayerlistener.md) protocol to listen for and handle a variety of Game Center events for player accounts instead of the individual [`GKChallengeListener`](gkchallengelistener.md), [`GKInviteEventListener`](gkinviteeventlistener.md), [`GKSavedGameListener`](gksavedgamelistener.md), and [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md) protocols.
+Adopt the [`GKLocalPlayerListener`](./gklocalplayerlistener.md) protocol to listen for and handle a variety of Game Center events for player accounts instead of the individual [`GKChallengeListener`](./gkchallengelistener.md), [`GKInviteEventListener`](./gkinviteeventlistener.md), [`GKSavedGameListener`](./gksavedgamelistener.md), and [`GKTurnBasedEventListener`](./gkturnbasedeventlistener.md) protocols.
 
-For details, see [`Finding multiple players for a game`](finding-multiple-players-for-a-game.md).
+For details, see [Finding multiple players for a game](./finding-multiple-players-for-a-game.md).
 
 ## Topics
 
 ### Starting a New Match
-- [func player(GKPlayer, didAccept: GKInvite)](gkinviteeventlistener/player(_:didaccept:).md)
+- [func player(GKPlayer, didAccept: GKInvite)](./gkinviteeventlistener/player%28_,didaccept%29.md)
   Handles the event when the local player accepts an invitation from another player.
-- [func player(GKPlayer, didRequestMatchWithRecipients: [GKPlayer])](gkinviteeventlistener/player(_:didrequestmatchwithrecipients:).md)
+- [func player(GKPlayer, didRequestMatchWithRecipients: [GKPlayer])](./gkinviteeventlistener/player%28_,didrequestmatchwithrecipients%29.md)
   Handles the event when the local player sends other players an invitation to join a match.
-- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](gkinviteeventlistener/player(_:didrequestmatchwithplayers:).md)
+- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](./gkinviteeventlistener/player%28_,didrequestmatchwithplayers%29.md)
   Handles the event when the local player sends other players an invitation to join a match.
 
 ## Relationships
 
 ### Inherited By
-- [GKLocalPlayerListener](gklocalplayerlistener.md)
+- [GKLocalPlayerListener](./gklocalplayerlistener.md)
 
 ## See Also
 
-- [Creating real-time games](creating-real-time-games.md)
+### Real-time games
+- [Creating real-time games](./creating-real-time-games.md)
   Develop games where multiple players interact in real time.
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding multiple players for a game](./finding-multiple-players-for-a-game.md)
   Discover and invite other players to participate in a real-time game.
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](./exchanging-data-between-players-in-real-time-games.md)
   Send data between players in a real-time multiplayer game.
-- [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
+- [Adding voice chat to multiplayer games](./adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding players for custom server-based games](./finding-players-for-custom-server-based-games.md)
   Connect players to your custom server-hosted games by creating game sessions with hosted matches.
-- [Matchmaking rules](matchmaking-rules.md)
+- [Matchmaking rules](./matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
-- [class GKMatchRequest](gkmatchrequest.md)
+- [class GKMatchRequest](./gkmatchrequest.md)
   An object that encapsulates the parameters to create a real-time or turn-based match.
-- [class GKMatchmaker](gkmatchmaker.md)
+- [class GKMatchmaker](./gkmatchmaker.md)
   An object that creates matches with other players without presenting an interface to the players.
-- [class GKMatchmakerViewController](gkmatchmakerviewcontroller.md)
+- [class GKMatchmakerViewController](./gkmatchmakerviewcontroller.md)
   An interface that allows a player to invite other players to a real-time game and automatch to fill any empty slots.
-- [class GKInvite](gkinvite.md)
+- [class GKInvite](./gkinvite.md)
   An invitation to join a match sent to the local player from another player.
-- [class GKMatch](gkmatch.md)
+- [class GKMatch](./gkmatch.md)
   A peer-to-peer network between a group of players that sign into Game Center.
 
 

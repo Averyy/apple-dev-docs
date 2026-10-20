@@ -1,7 +1,8 @@
 # init(verifier:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a result for an directory enumeration operation.
 
@@ -14,6 +15,10 @@ Creates a result for an directory enumeration operation.
 init?(verifier currentVerifier: UInt64)
 ```
 
+```objc
+- (instancetype) initWithVerifier:(FSDirectoryVerifier) currentVerifier;
+```
+
 #### Return Value
 
 A populated result instance, or `nil` if validation fails.
@@ -24,9 +29,10 @@ A populated result instance, or `nil` if validation fails.
 
 ## See Also
 
-- [struct FSDirectoryVerifier](fsdirectoryverifier.md)
+### Creating an enumerate-directory result
+- [struct FSDirectoryVerifier](../fsdirectoryverifier.md)
   A tool to detect whether the directory contents changed since the last call to enumerate a directory.
-- [struct FSDirectoryVerifier](fsdirectoryverifier.md)
+- [struct FSDirectoryVerifier](../fsdirectoryverifier.md)
   A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 
 

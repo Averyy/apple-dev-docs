@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element to match in the upstream publisher.
 
@@ -22,7 +23,8 @@ let output: Upstream.Output
 
 ## See Also
 
-- [let upstream: Upstream](publishers/contains/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

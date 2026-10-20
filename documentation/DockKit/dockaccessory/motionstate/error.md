@@ -1,7 +1,8 @@
 # error
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error, if any.
 
@@ -19,11 +20,12 @@ let error: (any Error)?
 
 ## See Also
 
-- [let angularPositions: Vector3D](dockaccessory/motionstate/angularpositions.md)
+### Getting properties
+- [let angularPositions: Vector3D](./angularpositions.md)
   The angles of the axes, in radians.
-- [let angularVelocities: Vector3D](dockaccessory/motionstate/angularvelocities.md)
+- [let angularVelocities: Vector3D](./angularvelocities.md)
   The angular velocity of each axis of rotation in radians.
-- [let timestamp: TimeInterval](dockaccessory/motionstate/timestamp.md)
+- [let timestamp: TimeInterval](./timestamp.md)
   The current time, in UNIX epoch.
 
 

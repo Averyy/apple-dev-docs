@@ -1,7 +1,8 @@
 # init(wrappedValue:_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property that can save and restore an integer, transforming it to a `RawRepresentable` data type.
 
@@ -18,6 +19,48 @@ Creates a property that can save and restore an integer, transforming it to a `R
 
 ```swift
 init(wrappedValue: Value, _ key: String) where Value : RawRepresentable, Value.RawValue == Int
+```
+
+**Other overloads**:
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value : RawRepresentable, Value.RawValue == String
+```
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value == Bool
+```
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value == Data
+```
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value == Date
+```
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value == Double
+```
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value == Int
+```
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value == PersistentIdentifier
+```
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value == String
+```
+
+```swift
+init(wrappedValue: Value, _ key: String) where Value == URL
+```
+
+```swift
+init<RowValue>(wrappedValue: Value = TableColumnCustomization<RowValue>(), _ key: String) where Value == TableColumnCustomization<RowValue>, RowValue : Identifiable
 ```
 
 #### Discussion
@@ -43,7 +86,8 @@ struct MyView: View {
 
 ## See Also
 
-- [init(_:)](scenestorage/init(_:).md)
+### Storing a value
+- [init(_:)](./init%28_%29.md)
   Creates a property that can save and restore an Optional boolean.
 
 

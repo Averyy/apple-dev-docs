@@ -1,7 +1,8 @@
 # HMPresenceEventType.everyEntry
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Triggers the event every time a user enters the home.
 
@@ -19,17 +20,22 @@ Triggers the event every time a user enters the home.
 case everyEntry
 ```
 
+```c
+HMPresenceEventTypeEveryEntry
+```
+
 #### Discussion
 
 This presence type cannot be used as a predicate.
 
 ## See Also
 
-- [HMPresenceEventType.everyExit](hmpresenceeventtype/everyexit.md)
+### Specifying presence type
+- [HMPresenceEventType.everyExit](./everyexit.md)
   Triggers the event every time a user leaves the home.
-- [HMPresenceEventType.firstEntry](hmpresenceeventtype/firstentry.md)
+- [HMPresenceEventType.firstEntry](./firstentry.md)
   Triggers an event for the first user entering the home.
-- [HMPresenceEventType.lastExit](hmpresenceeventtype/lastexit.md)
+- [HMPresenceEventType.lastExit](./lastexit.md)
   Triggers an event when the last user leaves the home.
 
 

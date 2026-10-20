@@ -1,7 +1,8 @@
 # ecdsaSignatureMessageX962SHA512
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,9 +19,13 @@
 static let ecdsaSignatureMessageX962SHA512: SecKeyAlgorithm
 ```
 
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECDSASignatureMessageX962SHA512;
+```
+
 ## Mentions
 
-- [Signing and Verifying](signing-and-verifying.md)
+- [Signing and Verifying](../signing-and-verifying.md)
 
 
 ---

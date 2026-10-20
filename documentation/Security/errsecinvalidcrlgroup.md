@@ -1,7 +1,8 @@
 # errSecInvalidCRLGroup
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid certificate revocation list group was detected.
 
@@ -18,6 +19,10 @@ An invalid certificate revocation list group was detected.
 
 ```swift
 var errSecInvalidCRLGroup: OSStatus { get }
+```
+
+```c
+errSecInvalidCRLGroup
 ```
 
 

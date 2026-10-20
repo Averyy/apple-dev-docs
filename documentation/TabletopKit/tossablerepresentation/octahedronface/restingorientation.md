@@ -1,7 +1,8 @@
 # restingOrientation
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides the resting orientation for when this face is in contact with the table.
 

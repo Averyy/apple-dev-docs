@@ -1,7 +1,8 @@
 # currentPersistentHistoryToken(fromStores:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a single persistent history token representing all of the specified stores.
 
@@ -20,6 +21,10 @@ Returns a single persistent history token representing all of the specified stor
 func currentPersistentHistoryToken(fromStores stores: [Any]?) -> NSPersistentHistoryToken?
 ```
 
+```objc
+- (NSPersistentHistoryToken *) currentPersistentHistoryTokenFromStores:(NSArray *) stores;
+```
+
 #### Return Value
 
 A persistent history token, or `nil` if the coordinator can’t create one.
@@ -34,7 +39,8 @@ If you specify `nil` or provide an empty array, the coordinator attempts to crea
 
 ## See Also
 
-- [let NSPersistentHistoryTrackingKey: String](nspersistenthistorytrackingkey.md)
+### Maintaining a record of changes
+- [let NSPersistentHistoryTrackingKey: String](../nspersistenthistorytrackingkey.md)
   The key you use to enable persistent history tracking.
 
 

@@ -1,7 +1,8 @@
 # List all beta feedback screenshot submission ids for an app
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of beta feedback screenshot submissions for a specific app.
 
@@ -18,15 +19,33 @@ List All Introductory Offer Resource IDs for an Auto-Renewable Subscription,Get 
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
 - `limit` (integer): The maximum number of beta feedback screenshot submission resource identifiers to return.
+
+  **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`AppBetaFeedbackScreenshotSubmissionsLinkagesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List All Beta Feedback Screenshot Submissions for an App](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)
+### Reading and deleting beta feedback screenshot submissions
+- [List All Beta Feedback Screenshot Submissions for an App](./get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)
   Get beta feedback screenshot submissions for a specific app.
-- [Read a Beta Feedback Screenshot Submission](get-v1-betafeedbackscreenshotsubmissions-_id_.md)
+- [Read a Beta Feedback Screenshot Submission](./get-v1-betafeedbackscreenshotsubmissions-_id_.md)
   Get information for a specific beta feedback screenshot submission.
-- [Delete a Beta Feedback Screenshot Submission](delete-v1-betafeedbackscreenshotsubmissions-_id_.md)
+- [Delete a Beta Feedback Screenshot Submission](./delete-v1-betafeedbackscreenshotsubmissions-_id_.md)
   Delete a beta feedback screenshot submission from your app.
 
 

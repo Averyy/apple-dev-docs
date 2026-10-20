@@ -1,7 +1,8 @@
 # init(authorizationButtonType:authorizationButtonStyle:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Sign In with Apple authorization button with the given type and style.
 
@@ -19,14 +20,19 @@ Creates a new Sign In with Apple authorization button with the given type and st
 init(authorizationButtonType type: ASAuthorizationAppleIDButton.ButtonType, authorizationButtonStyle style: ASAuthorizationAppleIDButton.Style)
 ```
 
+```objc
+- (instancetype) initWithAuthorizationButtonType:(ASAuthorizationAppleIDButtonType) type authorizationButtonStyle:(ASAuthorizationAppleIDButtonStyle) style;
+```
+
 ## Parameters
 
-- `type`: The type of the button. Use one of the values from [`ASAuthorizationAppleIDButton.ButtonType`](asauthorizationappleidbutton/buttontype.md).
-- `style`: The style of the button. Use one of the values from [`ASAuthorizationAppleIDButton.Style`](asauthorizationappleidbutton/style.md).
+- `type`: The type of the button. Use one of the values from [`ASAuthorizationAppleIDButton.ButtonType`](./buttontype.md).
+- `style`: The style of the button. Use one of the values from [`ASAuthorizationAppleIDButton.Style`](./style.md).
 
 ## See Also
 
-- [convenience init(type: ASAuthorizationAppleIDButton.ButtonType, style: ASAuthorizationAppleIDButton.Style)](asauthorizationappleidbutton/init(type:style:).md)
+### Initializers
+- [convenience init(type: ASAuthorizationAppleIDButton.ButtonType, style: ASAuthorizationAppleIDButton.Style)](./init%28type,style%29.md)
   Creates a new Sign In with Apple authorization button with the given type and style.
 
 

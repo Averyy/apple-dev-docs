@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Calculates the shapes of the output of this layer for the given input shapes.
@@ -21,9 +22,13 @@ Calculates the shapes of the output of this layer for the given input shapes.
 func outputShapes(forInputShapes inputShapes: [[NSNumber]]) throws -> [[NSNumber]]
 ```
 
+```objc
+- (NSArray<NSArray<NSNumber *> *> *) outputShapesForInputShapes:(NSArray<NSArray<NSNumber *> *> *) inputShapes error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Creating and Integrating a Model with Custom Layers](creating-and-integrating-a-model-with-custom-layers.md)
+- [Creating and Integrating a Model with Custom Layers](../creating-and-integrating-a-model-with-custom-layers.md)
 
 #### Return Value
 
@@ -31,9 +36,9 @@ The shapes of the output for the given input shapes.
 
 #### Discussion
 
-Implement this method to define the layer’s interface with the rest of the network. It will be called at least once at load time and any time the size of the inputs changes in a call to [`prediction(from:)`](mlmodel/prediction(from:)-9y2aa.md).
+Implement this method to define the layer’s interface with the rest of the network. It will be called at least once at load time and any time the size of the inputs changes in a call to [`prediction(from:)`](../mlmodel/prediction%28from%29-9y2aa.md).
 
-This method consumes and returns arrays of shapes, for inputs and outputs of the custom layer, respectively. See the [`Core ML Neural Network specification`](https://developer.apple.comhttps://mlmodel.readme.io/reference/neuralnetwork) for more details about shapes and how layers use them.
+This method consumes and returns arrays of shapes, for inputs and outputs of the custom layer, respectively. See the [Core ML Neural Network specification](https://mlmodel.readme.io/reference/neuralnetwork) for more details about shapes and how layers use them.
 
 ## Parameters
 
@@ -41,7 +46,8 @@ This method consumes and returns arrays of shapes, for inputs and outputs of the
 
 ## See Also
 
-- [func setWeightData([Data]) throws](mlcustomlayer/setweightdata(_:).md)
+### Integrating a layer
+- [func setWeightData([Data]) throws](./setweightdata%28_%29.md)
   Assigns the weights for the connections within the layer.
 
 

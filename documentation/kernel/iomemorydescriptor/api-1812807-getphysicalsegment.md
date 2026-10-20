@@ -7,7 +7,7 @@ Break a memory descriptor into its physically contiguous segments.
 
 ## Declaration
 
-```swift
+```cpp
 #ifdef __LP64__
  virtual addr64_t getPhysicalSegment(
  IOByteCount offset, 
@@ -22,7 +22,7 @@ virtual addr64_t getPhysicalSegment(
 /* !__LP64__ */
 ```
 
-#### Return_value
+#### Return Value
 
 A physical address, or zero if the offset is beyond the length of the memory.
 
@@ -38,15 +38,16 @@ This method returns the physical address of the byte at the given offset into th
 
 ## See Also
 
-- [getPageCounts](iomemorydescriptor/1812787-getpagecounts.md)
+### Getting the Memory Pages
+- [getPageCounts](./api-1812787-getpagecounts.md)
   Retrieve the number of resident and/or dirty pages encompassed by a memory descriptor.
-- [- getPageCounts](iomemorydescriptor/1441992-getpagecounts.md)
+- [- getPageCounts](./api-1441992-getpagecounts.md)
   Retrieve the number of resident and/or dirty pages encompassed by a memory descriptor.
-- [getPhysicalAddress](iomemorydescriptor/1812795-getphysicaladdress.md)
+- [getPhysicalAddress](./api-1812795-getphysicaladdress.md)
   Return the physical address of the first byte in the memory.
-- [- getPhysicalAddress](iomemorydescriptor/1441916-getphysicaladdress.md)
+- [- getPhysicalAddress](./api-1441916-getphysicaladdress.md)
   Return the physical address of the first byte in the memory.
-- [- getPhysicalSegment](iomemorydescriptor/1442068-getphysicalsegment.md)
+- [- getPhysicalSegment](./api-1442068-getphysicalsegment.md)
   Break a memory descriptor into its physically contiguous segments.
 
 

@@ -1,7 +1,8 @@
 # speed(_:unit:metric:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new speed alert for the provided range.
 
@@ -18,6 +19,8 @@ Creates a new speed alert for the provided range.
 static func speed(_ range: ClosedRange<Double>, unit: UnitSpeed, metric: WorkoutAlertMetric = .current) -> Self
 ```
 
+Available when `Self` is `SpeedRangeAlert`.
+
 ## Parameters
 
 - `range`: A closed range of speed values.
@@ -26,11 +29,12 @@ static func speed(_ range: ClosedRange<Double>, unit: UnitSpeed, metric: Workout
 
 ## See Also
 
-- [struct SpeedRangeAlert](speedrangealert.md)
+### Creating speed alerts
+- [struct SpeedRangeAlert](../speedrangealert.md)
   An alert for a range of speed values.
-- [static func speed(Double, unit: UnitSpeed, metric: WorkoutAlertMetric) -> Self](workoutalert/speed(_:unit:metric:)-4zald.md)
+- [static func speed(Double, unit: UnitSpeed, metric: WorkoutAlertMetric) -> Self](./speed%28_,unit,metric%29-4zald.md)
   Creates a new speed threshold alert.
-- [struct SpeedThresholdAlert](speedthresholdalert.md)
+- [struct SpeedThresholdAlert](../speedthresholdalert.md)
   An alert for a speed threshold.
 
 

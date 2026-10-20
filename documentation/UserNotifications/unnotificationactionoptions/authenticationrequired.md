@@ -1,7 +1,8 @@
 # authenticationRequired
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The action can be performed only on an unlocked device.
 
@@ -19,15 +20,20 @@ The action can be performed only on an unlocked device.
 static var authenticationRequired: UNNotificationActionOptions { get }
 ```
 
+```c
+UNNotificationActionOptionAuthenticationRequired
+```
+
 #### Discussion
 
 When the user selects an action with this option, the system prompts the user to unlock the device. After unlocking, the system notifies your app of the selected action. You might use option to perform actions that require accessing data that is encrypted while the device is locked.
 
 ## See Also
 
-- [static var destructive: UNNotificationActionOptions](unnotificationactionoptions/destructive.md)
+### Constants
+- [static var destructive: UNNotificationActionOptions](./destructive.md)
   The action performs a destructive task.
-- [static var foreground: UNNotificationActionOptions](unnotificationactionoptions/foreground.md)
+- [static var foreground: UNNotificationActionOptions](./foreground.md)
   The action causes the app to launch in the foreground.
 
 

@@ -1,10 +1,11 @@
 # IOBluetoothSMSMode.text
 
 **Framework**: IOBluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 case text
 ```
 
+```c
+IOBluetoothSMSModeText
+```
+
 ## See Also
 
-- [IOBluetoothSMSMode.PDU](iobluetoothsmsmode/pdu.md)
+### Enumeration Cases
+- [IOBluetoothSMSMode.PDU](./pdu.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # concatenating(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a pose that represents the concatenation of a scaled pose and a pose.
 
@@ -11,7 +12,7 @@ Returns a pose that represents the concatenation of a scaled pose and a pose.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ func concatenating(_ transform: ScaledPose3D) -> ScaledPose3D
 
 ## See Also
 
-- [func concatenating(Pose3D) -> Pose3D](pose3d/concatenating(_:)-6dd2s.md)
+### Transforming a 3D pose structure
+- [func concatenating(Pose3D) -> Pose3D](./concatenating%28_%29-6dd2s.md)
   Returns a pose that represents the concatenation of two poses.
-- [func flip(along: Axis3D)](pose3d/flip(along:).md)
+- [func flip(along: Axis3D)](./flip%28along%29.md)
   Flips a pose along the specified axis.
-- [func flipped(along: Axis3D) -> Pose3D](pose3d/flipped(along:).md)
+- [func flipped(along: Axis3D) -> Pose3D](./flipped%28along%29.md)
   Returns a pose that results from flipping it along the specified axis.
-- [func rotated(by: simd_quatd) -> Pose3D](pose3d/rotated(by:)-10k2a.md)
+- [func rotated(by: simd_quatd) -> Pose3D](./rotated%28by%29-10k2a.md)
   Returns a pose that results from rotating with the specified quaternion.
-- [func rotated(by: Rotation3D) -> Pose3D](pose3d/rotated(by:)-377u.md)
+- [func rotated(by: Rotation3D) -> Pose3D](./rotated%28by%29-377u.md)
   Returns a pose that results from applying the specified rotation.
 
 

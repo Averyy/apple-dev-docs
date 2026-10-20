@@ -1,7 +1,8 @@
 # WebAuthenticationSession
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A SwiftUI environment value that views use to authenticate someone using a web service.
 
@@ -23,11 +24,11 @@ struct WebAuthenticationSession
 
 #### Overview
 
-You access an instance of this type by using the SwiftUI [`Environment`](https://developer.apple.com/documentation/swiftui/environment) property wrapper and specifying [`webAuthenticationSession`](https://developer.apple.com/documentation/swiftui/environmentvalues/webauthenticationsession) as the environment value.
+You access an instance of this type by using the SwiftUI [`Environment`](../SwiftUI/environment.md) property wrapper and specifying [`webAuthenticationSession`](../SwiftUI/environmentvalues/webauthenticationsession.md) as the environment value.
 
-To begin an authentication session and display the browser, call [`authenticate(using:callbackURLScheme:preferredBrowserSession:)`](webauthenticationsession/authenticate(using:callbackurlscheme:preferredbrowsersession:).md). For example, when someone taps a button, the web service authenticates that person and then the authentication provider redirects the browser to a URL it constructs using the app’s custom callback scheme. The browser detects that redirect, dismisses itself, and returns the complete URL to the awaiting caller.
+To begin an authentication session and display the browser, call [`authenticate(using:callbackURLScheme:preferredBrowserSession:)`](./webauthenticationsession/authenticate%28using,callbackurlscheme,preferredbrowsersession%29.md). For example, when someone taps a button, the web service authenticates that person and then the authentication provider redirects the browser to a URL it constructs using the app’s custom callback scheme. The browser detects that redirect, dismisses itself, and returns the complete URL to the awaiting caller.
 
-The following example shows how to use a SwiftUI [`Button`](https://developer.apple.com/documentation/swiftui/button) to invoke a session:
+The following example shows how to use a SwiftUI [`Button`](../SwiftUI/button.md) to invoke a session:
 
 ```swift
 struct WebAuthenticationSessionExample: View {
@@ -68,35 +69,36 @@ let token = queryItems?.filter({ $0.name == "token" }).first?.value
 ## Topics
 
 ### Authenticating a session
-- [func authenticate(using: URL, callback: ASWebAuthenticationSession.Callback, preferredBrowserSession: WebAuthenticationSession.BrowserSession?, additionalHeaderFields: [String : String]) async throws -> URL](webauthenticationsession/authenticate(using:callback:preferredbrowsersession:additionalheaderfields:).md)
+- [func authenticate(using: URL, callback: ASWebAuthenticationSession.Callback, preferredBrowserSession: WebAuthenticationSession.BrowserSession?, additionalHeaderFields: [String : String]) async throws -> URL](./webauthenticationsession/authenticate%28using,callback,preferredbrowsersession,additionalheaderfields%29.md)
   Begins a web authentication session.
-- [WebAuthenticationSession.BrowserSession](webauthenticationsession/browsersession.md)
+- [WebAuthenticationSession.BrowserSession](./webauthenticationsession/browsersession.md)
   Describes the preferred browser session behavior.
-- [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
+- [ASWebAuthenticationSession.Callback](./aswebauthenticationsession/callback.md)
   An object for evaluating navigation events in an authentication session.
 ### Deprecated methods
-- [func authenticate(using: URL, callbackURLScheme: String, preferredBrowserSession: WebAuthenticationSession.BrowserSession?) async throws -> URL](webauthenticationsession/authenticate(using:callbackurlscheme:preferredbrowsersession:).md)
+- [func authenticate(using: URL, callbackURLScheme: String, preferredBrowserSession: WebAuthenticationSession.BrowserSession?) async throws -> URL](./webauthenticationsession/authenticate%28using,callbackurlscheme,preferredbrowsersession%29.md)
   Begins a web authentication session.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+### Web authentication sessions
+- [Authenticating a User Through a Web Service](./authenticating-a-user-through-a-web-service.md)
   Use a web authentication session to authenticate a user in your app.
-- [Securing Logins with iCloud Keychain Verification Codes](securing-logins-with-icloud-keychain-verification-codes.md)
+- [Securing Logins with iCloud Keychain Verification Codes](./securing-logins-with-icloud-keychain-verification-codes.md)
   Use time-based codes generated on-device for a secure authentication experience.
-- [class ASWebAuthenticationSession](aswebauthenticationsession.md)
+- [class ASWebAuthenticationSession](./aswebauthenticationsession.md)
   A session that an app uses to authenticate a user through a web service.
-- [Supporting Single Sign-On in a Web Browser App](supporting-single-sign-on-in-a-web-browser-app.md)
+- [Supporting Single Sign-On in a Web Browser App](./supporting-single-sign-on-in-a-web-browser-app.md)
   Extend your web browser app to handle web authentication requests from other apps.
-- [class ASWebAuthenticationSessionWebBrowserSessionManager](aswebauthenticationsessionwebbrowsersessionmanager.md)
+- [class ASWebAuthenticationSessionWebBrowserSessionManager](./aswebauthenticationsessionwebbrowsersessionmanager.md)
   A session manager that mediates sharing data between an app and a web browser.
-- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
+- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../BundleResources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
   A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
 
 

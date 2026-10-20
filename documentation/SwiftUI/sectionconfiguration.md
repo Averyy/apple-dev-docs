@@ -1,7 +1,8 @@
 # SectionConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the contents of a section.
 
@@ -45,34 +46,35 @@ Here, we want to create one view for `PinboardSectionsLayout` to place per secti
 ## Topics
 
 ### Structures
-- [SectionConfiguration.Actions](sectionconfiguration/actions-swift.struct.md)
+- [SectionConfiguration.Actions](./sectionconfiguration/actions-swift.struct.md)
   The type-erased actions of a section.
-- [SectionConfiguration.ID](sectionconfiguration/id-swift.struct.md)
+- [SectionConfiguration.ID](./sectionconfiguration/id-swift.struct.md)
   A unique identifier for a section.
 ### Instance Properties
-- [var actions: SectionConfiguration.Actions](sectionconfiguration/actions-swift.property.md)
+- [var actions: SectionConfiguration.Actions](./sectionconfiguration/actions-swift.property.md)
   Custom actions associated with a section.
-- [var containerValues: ContainerValues](sectionconfiguration/containervalues.md)
+- [var containerValues: ContainerValues](./sectionconfiguration/containervalues.md)
   The container values associated with the given section.
-- [var content: SubviewsCollection](sectionconfiguration/content.md)
+- [var content: SubviewsCollection](./sectionconfiguration/content.md)
   The contents of the section body.
-- [var footer: SubviewsCollection](sectionconfiguration/footer.md)
+- [var footer: SubviewsCollection](./sectionconfiguration/footer.md)
   The contents of the section footer.
-- [var header: SubviewsCollection](sectionconfiguration/header.md)
+- [var header: SubviewsCollection](./sectionconfiguration/header.md)
   The contents of the section header.
-- [var id: SectionConfiguration.ID](sectionconfiguration/id-swift.property.md)
+- [var id: SectionConfiguration.ID](./sectionconfiguration/id-swift.property.md)
   A unique identifier representing the section.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [struct Section](section.md)
+### Organizing views into sections
+- [struct Section](./section.md)
   A container view that you can use to add hierarchy within certain views.
-- [struct SectionCollection](sectioncollection.md)
+- [struct SectionCollection](./sectioncollection.md)
   An opaque collection representing the sections of view.
 
 

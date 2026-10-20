@@ -1,7 +1,8 @@
 # TableType
 
 **Framework**: RoomPlan  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of table the framework identifies in a captured room.
 
@@ -18,32 +19,33 @@ enum TableType
 
 #### Overview
 
-When the framework observes a table in the physical environment during a scan, it chooses a type among these options that best matches the table’s look. The framework adds that instance of this enum to the [`attributes`](capturedroom/object/attributes.md) array for the object (see [`objects`](capturedroom/objects.md)) that represents the table in the captured room.
+When the framework observes a table in the physical environment during a scan, it chooses a type among these options that best matches the table’s look. The framework adds that instance of this enum to the [`attributes`](./capturedroom/object/attributes.md) array for the object (see [`objects`](./capturedroom/objects.md)) that represents the table in the captured room.
 
 ## Topics
 
 ### Choosing a chair type
-- [TableType.dining](tabletype/dining.md)
+- [TableType.dining](./tabletype/dining.md)
   A table top for the purpose of dining.
-- [TableType.coffee](tabletype/coffee.md)
+- [TableType.coffee](./tabletype/coffee.md)
   A table top that resembles a coffee table.
-- [TableType.unidentified](tabletype/unidentified.md)
+- [TableType.unidentified](./tabletype/unidentified.md)
   An uncategorized table top.
 
 ## Relationships
 
 ### Conforms To
-- [CapturedRoomAttribute](capturedroomattribute.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CapturedRoomAttribute](./capturedroomattribute.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum TableShapeType](tableshapetype.md)
+### Describing tables
+- [enum TableShapeType](./tableshapetype.md)
   Different table shapes that the framework identifies in a captured room.
 
 

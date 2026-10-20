@@ -1,7 +1,8 @@
 # update(_:with:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a transformer with a new sequence of examples.
 
@@ -28,15 +29,16 @@ func update<InputSequence>(_ transformer: inout Estimator.Transformer, with inpu
 
 ## See Also
 
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](updatableestimatortosupervisedadaptor/fitted(to:eventhandler:).md)
+### Fitting and Updating
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a transformer to a sequence of examples, ignoring the annotations and the validation.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](updatableestimatortosupervisedadaptor/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./fitted%28to,validateon,eventhandler%29.md)
   Fits a transformer to a sequence of examples.
-- [func makeTransformer() -> Estimator.Transformer](updatableestimatortosupervisedadaptor/maketransformer.md)
+- [func makeTransformer() -> Estimator.Transformer](./maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update<InputSequence, Validation>(inout Estimator.Transformer, with: InputSequence, validateOn: Validation, eventHandler: EventHandler?) async throws](updatableestimatortosupervisedadaptor/update(_:with:validateon:eventhandler:).md)
+- [func update<InputSequence, Validation>(inout Estimator.Transformer, with: InputSequence, validateOn: Validation, eventHandler: EventHandler?) async throws](./update%28_,with,validateon,eventhandler%29.md)
   Fits a transformer to a sequence of examples while validating with a validation sequence.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

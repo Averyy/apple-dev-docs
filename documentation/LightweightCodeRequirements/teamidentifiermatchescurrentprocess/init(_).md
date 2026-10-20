@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a constraint that tests whether a process’s team identifier matches the current process’s team identifier.
 

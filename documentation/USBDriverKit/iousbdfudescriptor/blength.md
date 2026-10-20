@@ -1,23 +1,25 @@
 # bLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbdfudescriptor/bdescriptortype.md)
-- [bmAttributes](iousbdfudescriptor/bmattributes.md)
-- [wDetachTimeout](iousbdfudescriptor/wdetachtimeout.md)
-- [wTransferSize](iousbdfudescriptor/wtransfersize.md)
+### Accessing the Descriptor Properties
+- [bDescriptorType](./bdescriptortype.md)
+- [bmAttributes](./bmattributes.md)
+- [wDetachTimeout](./wdetachtimeout.md)
+- [wTransferSize](./wtransfersize.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(style:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activity indicator.
 
@@ -9,7 +10,7 @@ Creates an activity indicator.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ Creates an activity indicator.
 init(style: UIActivityIndicatorView.Style)
 ```
 
+```objc
+- (instancetype) initWithActivityIndicatorStyle:(UIActivityIndicatorViewStyle) style;
+```
+
 #### Return Value
 
-An initialized [`UIActivityIndicatorView`](uiactivityindicatorview.md) object.
+An initialized [`UIActivityIndicatorView`](../uiactivityindicatorview.md) object.
 
 #### Discussion
 
-[`UIActivityIndicatorView`](uiactivityindicatorview.md) sizes the returned instance according to the specified `style`. You can set and retrieve the style of an activity indicator through the [`style`](uiactivityindicatorview/style-swift.property.md) property.
+[`UIActivityIndicatorView`](../uiactivityindicatorview.md) sizes the returned instance according to the specified `style`. You can set and retrieve the style of an activity indicator through the [`style`](./style-swift.property.md) property.
 
 ## Parameters
 
-- `style`: A constant that specifies the style of the object to be created. See [`UIActivityIndicatorView.Style`](uiactivityindicatorview/style-swift.enum.md) for descriptions of the style constants.
+- `style`: A constant that specifies the style of the object to be created. See [`UIActivityIndicatorView.Style`](./style-swift.enum.md) for descriptions of the style constants.
 
 ## See Also
 
-- [init(frame: CGRect)](uiactivityindicatorview/init(frame:).md)
+### Creating an activity indicator
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates an activity indicator with the specified frame rectangle.
-- [init(coder: NSCoder)](uiactivityindicatorview/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates an activity indicator from data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # driversLicenseData(retaining:notRetaining:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request which retrieves elements from the holder and returns the validated document elements.
 
@@ -16,9 +17,12 @@ A request which retrieves elements from the holder and returns the validated doc
 static func driversLicenseData(retaining retainedElements: [MobileDriversLicenseDataRequest.Element], notRetaining nonRetainedElements: [MobileDriversLicenseDataRequest.Element]) -> Self
 ```
 
+Available when `Self` is `MobileDriversLicenseDataRequest`.
+
 ## See Also
 
-- [struct MobileDriversLicenseDataRequest](mobiledriverslicensedatarequest.md)
+### Mobile driver’s license data request
+- [struct MobileDriversLicenseDataRequest](../mobiledriverslicensedatarequest.md)
   A mobile driver’s license request that retrieves elements from the holder and returns the validated document elements.
 
 

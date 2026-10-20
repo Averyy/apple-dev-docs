@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the accessibility element’s children in the accessibility hierarchy.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func accessibilityChildren() -> [Any]?
+```
+
+```objc
+- (NSArray *) accessibilityChildren;
 ```
 
 #### Return Value
@@ -21,21 +26,23 @@ An array that contains references to this element’s children in the accessibil
 
 #### Discussion
 
-This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityChildren`](nsaccessibility-c.protocol/accessibilitychildren.md) property.
+This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityChildren`](../nsaccessibility-c.protocol/accessibilitychildren.md) property.
 
 ## See Also
 
-- [func accessibilityAddChildElement(NSAccessibilityElement)](nsaccessibilityelement-swift.class/accessibilityaddchildelement(_:).md)
+### Related Documentation
+- [func accessibilityAddChildElement(NSAccessibilityElement)](../nsaccessibilityelement-swift.class/accessibilityaddchildelement%28_%29.md)
   Adds a child to the accessibility element in the accessibility hierarchy.
-- [static func unignoredChildrenForOnlyChild(from: Any) -> [Any]](nsaccessibility-swift.struct/unignoredchildrenforonlychild(from:).md)
+- [static func unignoredChildrenForOnlyChild(from: Any) -> [Any]](../nsaccessibility-swift.struct/unignoredchildrenforonlychild%28from%29.md)
   Returns a list of unignored accessibility objects, descending the hierarchy, if necessary.
-- [static func unignoredChildren(from: [Any]) -> [Any]](nsaccessibility-swift.struct/unignoredchildren(from:).md)
+- [static func unignoredChildren(from: [Any]) -> [Any]](../nsaccessibility-swift.struct/unignoredchildren%28from%29.md)
   Returns a list of unignored accessibility objects, descending the hierarchy, if necessary.
-- [var accessibilityFocusedUIElement: Any](nsaccessibilitylayoutarea/accessibilityfocuseduielement.md)
+### Supporting Accessibility
+- [var accessibilityFocusedUIElement: Any](./accessibilityfocuseduielement.md)
   The child accessibility element with the current focus.
-- [func accessibilityLabel() -> String](nsaccessibilitylayoutarea/accessibilitylabel.md)
+- [func accessibilityLabel() -> String](./accessibilitylabel%28%29.md)
   Returns a short description of the layout area.
-- [func accessibilitySelectedChildren() -> [Any]?](nsaccessibilitylayoutarea/accessibilityselectedchildren.md)
+- [func accessibilitySelectedChildren() -> [Any]?](./accessibilityselectedchildren%28%29.md)
   Returns the layout area’s currently selected children.
 
 

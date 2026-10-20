@@ -1,7 +1,8 @@
 # vImageCVImageFormat_CreateWithCVPixelBuffer(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates the description of the image encoding in an existing Core Video pixel buffer.
 
@@ -20,13 +21,17 @@ Creates the description of the image encoding in an existing Core Video pixel bu
 func vImageCVImageFormat_CreateWithCVPixelBuffer(_ buffer: CVPixelBuffer!) -> Unmanaged<vImageCVImageFormat>!
 ```
 
+```c
+vImageCVImageFormatRefvImageCVImageFormat_CreateWithCVPixelBuffer(CVPixelBufferRef buffer);
+```
+
 ## Mentions
 
-- [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
+- [Converting chroma-subsampled images](./converting-chroma-subsampled-images.md)
 
 #### Return Value
 
-A [`vImageCVImageFormat`](vimagecvimageformat.md) instance that describes the specified pixel buffer’s pixel format.
+A [`vImageCVImageFormat`](./vimagecvimageformat.md) instance that describes the specified pixel buffer’s pixel format.
 
 ## Parameters
 
@@ -34,13 +39,15 @@ A [`vImageCVImageFormat`](vimagecvimageformat.md) instance that describes the sp
 
 ## See Also
 
-- [static func make(buffer: CVPixelBuffer) -> vImageCVImageFormat?](vimagecvimageformat/make(buffer:).md)
+### Related Documentation
+- [static func make(buffer: CVPixelBuffer) -> vImageCVImageFormat?](./vimagecvimageformat/make%28buffer%29.md)
   Creates the description of the image encoding in an existing Core Video pixel buffer.
-- [class vImageCVImageFormat](vimagecvimageformat.md)
+### Creating Core Video image formats
+- [class vImageCVImageFormat](./vimagecvimageformat.md)
   A mutable description of image encoding in a Core Video pixel buffer.
-- [class vImageConstCVImageFormat](vimageconstcvimageformat.md)
+- [class vImageConstCVImageFormat](./vimageconstcvimageformat.md)
   An immutable description of image encoding in a Core Video pixel buffer.
-- [func vImageCVImageFormat_Create(UInt32, UnsafePointer<vImage_ARGBToYpCbCrMatrix>!, CFString!, CGColorSpace!, Int32) -> Unmanaged<vImageCVImageFormat>!](vimagecvimageformat_create(_:_:_:_:_:).md)
+- [func vImageCVImageFormat_Create(UInt32, UnsafePointer<vImage_ARGBToYpCbCrMatrix>!, CFString!, CGColorSpace!, Int32) -> Unmanaged<vImageCVImageFormat>!](./vimagecvimageformat_create%28_,_,_,_,_%29.md)
   Creates the description of image encoding in a Core Video pixel buffer from the specified properties.
 
 

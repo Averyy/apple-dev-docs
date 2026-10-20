@@ -1,7 +1,8 @@
 # flushCache()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flushes all cached data, such as TLS session state, created by connections associated with the privacy context.
 
@@ -26,11 +27,12 @@ Flushing the cache may be asynchronous, which means that it will take effect sho
 
 ## See Also
 
-- [init(description: String)](nwparameters/privacycontext/init(description:).md)
+### Configuring Custom Privacy Settings
+- [init(description: String)](./init%28description%29.md)
   Initializes a privacy context with a description string.
-- [static let `default`: NWParameters.PrivacyContext](nwparameters/privacycontext/default.md)
+- [static let `default`: NWParameters.PrivacyContext](./default.md)
   The privacy context that applies to all connections that do not use a custom context.
-- [func disableLogging()](nwparameters/privacycontext/disablelogging.md)
+- [func disableLogging()](./disablelogging%28%29.md)
   Disables system logging of connection activity.
 
 

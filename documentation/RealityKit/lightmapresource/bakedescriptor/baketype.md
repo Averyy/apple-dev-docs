@@ -1,7 +1,8 @@
 # bakeType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,9 +20,10 @@ var bakeType: LightmapResource.BakeType { get }
 
 ## See Also
 
-- [case finalShadedColor(LightmapResource.FinalShadedColorBakeDescriptor)](lightmapresource/bakedescriptor/finalshadedcolor(_:).md)
-- [case indirectDiffuseIrradiance(LightmapResource.IndirectDiffuseIrradianceBakeDescriptor)](lightmapresource/bakedescriptor/indirectdiffuseirradiance(_:).md)
-- [case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)](lightmapresource/bakedescriptor/ambientocclusion(_:).md)
+### Specifying the bake type
+- [case finalShadedColor(LightmapResource.FinalShadedColorBakeDescriptor)](./finalshadedcolor%28_%29.md)
+- [case indirectDiffuseIrradiance(LightmapResource.IndirectDiffuseIrradianceBakeDescriptor)](./indirectdiffuseirradiance%28_%29.md)
+- [case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)](./ambientocclusion%28_%29.md)
 
 
 ---

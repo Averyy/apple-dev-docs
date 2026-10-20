@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentV2UpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app store version experiment v2update request.
 
@@ -10,21 +11,21 @@ The request body you use to update an app store version experiment v2update requ
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentV2UpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentV2UpdateRequest.Data.Attributes](appstoreversionexperimentv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppStoreVersionExperimentV2UpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an app store version experiment v2update request resource.
 
 ## Properties
 
 - `attributes` (AppStoreVersionExperimentV2UpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperiments`
 
 
 ---

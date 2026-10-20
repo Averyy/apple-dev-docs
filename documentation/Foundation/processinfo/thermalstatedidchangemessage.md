@@ -1,7 +1,8 @@
 # ProcessInfo.ThermalStateDidChangeMessage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message the system sends when the device’s thermal state changes.
 
@@ -22,28 +23,29 @@ struct ThermalStateDidChangeMessage
 
 #### Overview
 
-To observe this message, access the [`thermalState`](processinfo/thermalstate-swift.property.md) property prior to adding your observer.
+To observe this message, access the [`thermalState`](./thermalstate-swift.property.md) property prior to adding your observer.
 
-Observe this message with the identifier [`thermalStateDidChange`](notificationcenter/messageidentifier/thermalstatedidchange.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`ProcessInfo`](processinfo.md).
+Observe this message with the identifier [`thermalStateDidChange`](../notificationcenter/messageidentifier/thermalstatedidchange.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`ProcessInfo`](../processinfo.md).
 
-This message interoperates with the notification [`thermalStateDidChangeNotification`](processinfo/thermalstatedidchangenotification.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
+This message interoperates with the notification [`thermalStateDidChangeNotification`](./thermalstatedidchangenotification.md). The system notifies observers of the message when the [`NotificationCenter`](../notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 
 ### Creating a message
-- [init()](processinfo/thermalstatedidchangemessage/init.md)
+- [init()](./thermalstatedidchangemessage/init%28%29.md)
   Creates a message about a thermal state change.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ProcessInfo.PowerStateDidChangeMessage](processinfo/powerstatedidchangemessage.md)
+### Working with notification messsages
+- [ProcessInfo.PowerStateDidChangeMessage](./powerstatedidchangemessage.md)
   A message the system sends when the device’s power state changes.
 
 

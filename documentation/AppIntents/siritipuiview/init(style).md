@@ -1,14 +1,15 @@
 # init(style:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A view that displays the phrase for an App Shortcut.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

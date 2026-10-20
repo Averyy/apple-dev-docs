@@ -1,14 +1,15 @@
 # kIOPCIAGP8Capability
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOPCIAGP8Capability = kIOPCICapabilityIDAGP8
 ```
 

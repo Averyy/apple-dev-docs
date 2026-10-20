@@ -1,21 +1,22 @@
 # BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion.Data](backgroundassetversionappstorerelease/relationships-data.dictionary/backgroundassetversion-data.dictionary/data-data.dictionary.md)
+- [object BackgroundAssetVersionAppStoreRelease.Relationships.BackgroundAssetVersion.Data](./backgroundassetversion-data.dictionary/data-data.dictionary.md)
   The request body you use to update a background asset version app store release.
 
 ## Properties

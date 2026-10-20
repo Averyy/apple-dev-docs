@@ -1,7 +1,8 @@
 # MTRDeviceEnergyManagementOptOutState
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTRDeviceEnergyManagementOptOutState
 ```
 
+```c
+enum MTRDeviceEnergyManagementOptOutState : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDeviceEnergyManagementOptOutState.gridOptOut](mtrdeviceenergymanagementoptoutstate/gridoptout.md)
-- [MTRDeviceEnergyManagementOptOutState.localOptOut](mtrdeviceenergymanagementoptoutstate/localoptout.md)
-- [MTRDeviceEnergyManagementOptOutState.noOptOut](mtrdeviceenergymanagementoptoutstate/nooptout.md)
-- [MTRDeviceEnergyManagementOptOutState.optOut](mtrdeviceenergymanagementoptoutstate/optout.md)
+- [MTRDeviceEnergyManagementOptOutState.gridOptOut](./mtrdeviceenergymanagementoptoutstate/gridoptout.md)
+- [MTRDeviceEnergyManagementOptOutState.localOptOut](./mtrdeviceenergymanagementoptoutstate/localoptout.md)
+- [MTRDeviceEnergyManagementOptOutState.noOptOut](./mtrdeviceenergymanagementoptoutstate/nooptout.md)
+- [MTRDeviceEnergyManagementOptOutState.optOut](./mtrdeviceenergymanagementoptoutstate/optout.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdeviceenergymanagementoptoutstate/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdeviceenergymanagementoptoutstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

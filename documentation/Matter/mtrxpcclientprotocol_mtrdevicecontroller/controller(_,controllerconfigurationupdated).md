@@ -1,7 +1,8 @@
 # controller(_:controllerConfigurationUpdated:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.3+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func controller(_ controller: UUID, controllerConfigurationUpdated configuration: [AnyHashable : Any])
+```
+
+```objc
+- (void) controller:(NSUUID *) controller controllerConfigurationUpdated:(NSDictionary *) configuration;
 ```
 
 

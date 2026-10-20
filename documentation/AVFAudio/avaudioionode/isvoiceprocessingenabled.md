@@ -1,7 +1,8 @@
 # isVoiceProcessingEnabled
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether voice processing is in an enabled state.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates whether voice processing is in an enabled state.
 var isVoiceProcessingEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVoiceProcessingEnabled) BOOL voiceProcessingEnabled;
+```
+
 ## See Also
 
-- [func setVoiceProcessingEnabled(Bool) throws](avaudioionode/setvoiceprocessingenabled(_:).md)
+### Enabling voice processing
+- [func setVoiceProcessingEnabled(Bool) throws](./setvoiceprocessingenabled%28_%29.md)
   Enables or disables voice processing on the I/O node.
 
 

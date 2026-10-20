@@ -1,7 +1,8 @@
 # formatIDs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio formats of the renditions present in the variant.
 
@@ -23,9 +24,10 @@ var formatIDs: [AudioFormatID] { get }
 
 ## See Also
 
-- [func renditionSpecificAttributes(for: AVMediaSelectionOption) -> AVAssetVariant.AudioAttributes.RenditionSpecificAttributes?](avassetvariant/audioattributes-swift.class/renditionspecificattributes(for:).md)
+### Inspecting audio attributes
+- [func renditionSpecificAttributes(for: AVMediaSelectionOption) -> AVAssetVariant.AudioAttributes.RenditionSpecificAttributes?](./renditionspecificattributes%28for%29.md)
   Returns specific attributes for the media option.
-- [AVAssetVariant.AudioAttributes.RenditionSpecificAttributes](avassetvariant/audioattributes-swift.class/renditionspecificattributes.md)
+- [AVAssetVariant.AudioAttributes.RenditionSpecificAttributes](./renditionspecificattributes.md)
   An object that represents attributes specific to a particular rendition.
 
 

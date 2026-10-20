@@ -1,7 +1,8 @@
 # batteryState
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The battery state for the device.
 
@@ -17,19 +18,24 @@ The battery state for the device.
 var batteryState: UIDevice.BatteryState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIDeviceBatteryState batteryState;
+```
+
 #### Discussion
 
-The value for [`batteryState`](uidevice/batterystate-swift.property.md) is one of the constants in [`UIDevice.BatteryState`](uidevice/batterystate-swift.enum.md).
+The value for [`batteryState`](./batterystate-swift.property.md) is one of the constants in [`UIDevice.BatteryState`](./batterystate-swift.enum.md).
 
-If battery monitoring is not enabled, the value of this property is [`UIDevice.BatteryState.unknown`](uidevice/batterystate-swift.enum/unknown.md).
+If battery monitoring is not enabled, the value of this property is [`UIDevice.BatteryState.unknown`](./batterystate-swift.enum/unknown.md).
 
 ## See Also
 
-- [var batteryLevel: Float](uidevice/batterylevel.md)
+### Getting the device battery state
+- [var batteryLevel: Float](./batterylevel.md)
   The battery charge level for the device.
-- [var isBatteryMonitoringEnabled: Bool](uidevice/isbatterymonitoringenabled.md)
+- [var isBatteryMonitoringEnabled: Bool](./isbatterymonitoringenabled.md)
   A Boolean value that indicates whether battery monitoring is enabled.
-- [UIDevice.BatteryState](uidevice/batterystate-swift.enum.md)
+- [UIDevice.BatteryState](./batterystate-swift.enum.md)
   Constants that describe the battery power state of the device.
 
 

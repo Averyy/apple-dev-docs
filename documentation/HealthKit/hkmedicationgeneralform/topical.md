@@ -1,22 +1,27 @@
 # topical
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The medication is applied topically in a form that wasn’t specified.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static let topical: HKMedicationGeneralForm
+```
+
+```c
+extern HKMedicationGeneralForm const HKMedicationGeneralFormTopical;
 ```
 
 

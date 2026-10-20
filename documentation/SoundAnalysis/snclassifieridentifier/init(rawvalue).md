@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Sound Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an identifier for a sound classifier.
 
@@ -22,7 +23,7 @@ init(rawValue: String)
 
 #### Discussion
 
-Don’t create an identifier directly. Use a type property, such as [`version1`](snclassifieridentifier/version1.md), instead.
+Don’t create an identifier directly. Use a type property, such as [`version1`](./version1.md), instead.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # KEM.Errors.publicKeyMismatchDuringInitialization
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The public key CryptoKit receives when it initializes a key encapsulation operation doesn’t match the expected value.
 

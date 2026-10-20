@@ -1,7 +1,8 @@
 # GameCenterGroup.Relationships.GameCenterChallenges
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the Game Center Challenges related to a group.
 
@@ -10,14 +11,14 @@ The data and links that describe the Game Center Challenges related to a group.
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroup.Relationships.GameCenterChallenges
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterGroup.Relationships.GameCenterChallenges.Data](gamecentergroup/relationships-data.dictionary/gamecenterchallenges-data.dictionary/data-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterChallenges.Data](./gamecenterchallenges-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

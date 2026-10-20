@@ -1,7 +1,8 @@
 # ICDeviceLocationTypeMask.local
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mask for detecting a local device, such as USB or FireWire.
 
@@ -18,15 +19,20 @@ A mask for detecting a local device, such as USB or FireWire.
 case local
 ```
 
+```c
+ICDeviceLocationTypeMaskLocal
+```
+
 ## See Also
 
-- [ICDeviceLocationTypeMask.bluetooth](icdevicelocationtypemask/bluetooth.md)
+### Constants
+- [ICDeviceLocationTypeMask.bluetooth](./bluetooth.md)
   A mask for detecting a paired Bluetooth device.
-- [ICDeviceLocationTypeMask.bonjour](icdevicelocationtypemask/bonjour.md)
+- [ICDeviceLocationTypeMask.bonjour](./bonjour.md)
   A mask for detecting a network device that publishes a Bonjour service.
-- [ICDeviceLocationTypeMask.remote](icdevicelocationtypemask/remote.md)
+- [ICDeviceLocationTypeMask.remote](./remote.md)
   A mask for detecting a remote device, such as a shared, Bonjour, or Bluetooth device.
-- [ICDeviceLocationTypeMask.shared](icdevicelocationtypemask/shared.md)
+- [ICDeviceLocationTypeMask.shared](./shared.md)
   A mask for detecting a device shared by another Mac host.
 
 

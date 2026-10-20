@@ -1,7 +1,8 @@
 # LivePhotosKit.Player
 
 **Framework**: LivePhotosKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates `LivePhotosKit.Player` objects.
 
@@ -10,7 +11,7 @@ Creates `LivePhotosKit.Player` objects.
 
 ## Declaration
 
-```swift
+```
 new targetElement(
 	HTMLElement targetElement,
 	Object options

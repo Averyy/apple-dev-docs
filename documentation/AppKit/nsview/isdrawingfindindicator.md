@@ -1,7 +1,8 @@
 # isDrawingFindIndicator
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the view or one of its ancestors is being drawn for a find indicator.
 
@@ -14,9 +15,13 @@ A Boolean value indicating whether the view or one of its ancestors is being dra
 var isDrawingFindIndicator: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isDrawingFindIndicator) BOOL drawingFindIndicator;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the view contents are being drawn so that they are easily readable against the find indicator background. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) when the view contents are being drawn so that they are easily readable against the find indicator background. The default value of this property is [`false`](../../Swift/false.md).
 
 
 ---

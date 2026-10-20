@@ -1,7 +1,8 @@
 # setScale
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 3.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void setScale(
     unrestricted float sx, 
     unrestricted float sy

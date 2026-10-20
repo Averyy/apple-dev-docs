@@ -1,7 +1,8 @@
 # UserUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the update request.
 
@@ -10,7 +11,7 @@ Attributes whose values you’re changing as part of the update request.
 
 ## Declaration
 
-```swift
+```
 object UserUpdateRequest.Data.Attributes
 ```
 
@@ -22,9 +23,11 @@ object UserUpdateRequest.Data.Attributes
 
 ## See Also
 
-- [Users](users.md)
+### Related Documentation
+- [Users](../../users.md)
   Manage users on your App Store Connect team.
-- [object UserUpdateRequest.Data.Relationships](userupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object UserUpdateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

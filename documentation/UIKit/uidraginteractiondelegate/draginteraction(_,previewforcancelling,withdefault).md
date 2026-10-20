@@ -1,7 +1,8 @@
 # dragInteraction(_:previewForCancelling:withDefault:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the targeted drag item preview to show during the cancellation animation.
 
@@ -17,11 +18,15 @@ Asks the delegate for the targeted drag item preview to show during the cancella
 optional func dragInteraction(_ interaction: UIDragInteraction, previewForCancelling item: UIDragItem, withDefault defaultPreview: UITargetedDragPreview) -> UITargetedDragPreview?
 ```
 
+```objc
+- (UITargetedDragPreview *) dragInteraction:(UIDragInteraction *) interaction previewForCancellingItem:(UIDragItem *) item withDefault:(UITargetedDragPreview *) defaultPreview;
+```
+
 #### Return Value
 
 - The default preview provided by the system.
 - A targeted drag item preview you create.
-- The preview returned after moving to a new preview target (using the `defaultPreview`’s [`retargetedPreview(with:)`](uitargeteddragpreview/retargetedpreview(with:).md) method).
+- The preview returned after moving to a new preview target (using the `defaultPreview`’s [`retargetedPreview(with:)`](../uitargeteddragpreview/retargetedpreview%28with%29.md) method).
 - `nil` to fade the preview that is currently displayed to the user, which is the same behavior as not implementing this method.
 
 #### Discussion
@@ -38,9 +43,10 @@ When you return a preview, the system shows it during the cancellation animation
 
 ## See Also
 
-- [func dragInteraction(UIDragInteraction, previewForLifting: UIDragItem, session: any UIDragSession) -> UITargetedDragPreview?](uidraginteractiondelegate/draginteraction(_:previewforlifting:session:).md)
+### Providing drag previews
+- [func dragInteraction(UIDragInteraction, previewForLifting: UIDragItem, session: any UIDragSession) -> UITargetedDragPreview?](./draginteraction%28_,previewforlifting,session%29.md)
   Asks the delegate for the targeted drag item preview that will appear during the lift animation.
-- [func dragInteraction(UIDragInteraction, prefersFullSizePreviewsFor: any UIDragSession) -> Bool](uidraginteractiondelegate/draginteraction(_:prefersfullsizepreviewsfor:).md)
+- [func dragInteraction(UIDragInteraction, prefersFullSizePreviewsFor: any UIDragSession) -> Bool](./draginteraction%28_,prefersfullsizepreviewsfor%29.md)
   Asks the delegate whether the preview should appear in its original size or a scaled size.
 
 

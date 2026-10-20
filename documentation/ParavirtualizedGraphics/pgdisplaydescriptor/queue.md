@@ -1,7 +1,8 @@
 # queue
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue that the framework uses when dispatching messages to any of the display’s registered handlers.
 
@@ -13,6 +14,10 @@ The queue that the framework uses when dispatching messages to any of the displa
 
 ```swift
 var queue: dispatch_queue_t? { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nullable) dispatch_queue_t queue;
 ```
 
 #### Discussion

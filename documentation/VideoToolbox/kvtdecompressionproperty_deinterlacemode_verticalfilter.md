@@ -1,7 +1,8 @@
 # kVTDecompressionProperty_DeinterlaceMode_VerticalFilter
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A vertical filter deinterlace mode.
 
@@ -19,13 +20,18 @@ A vertical filter deinterlace mode.
 let kVTDecompressionProperty_DeinterlaceMode_VerticalFilter: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionProperty_DeinterlaceMode_VerticalFilter;
+```
+
 #### Discussion
 
 Applies a 0.25-0.50-0.25 vertical filter to individual interlaced frames. This is the default mode.
 
 ## See Also
 
-- [let kVTDecompressionProperty_DeinterlaceMode_Temporal: CFString](kvtdecompressionproperty_deinterlacemode_temporal.md)
+### Deinterlace Modes
+- [let kVTDecompressionProperty_DeinterlaceMode_Temporal: CFString](./kvtdecompressionproperty_deinterlacemode_temporal.md)
   A temporal deinterlace mode.
 
 

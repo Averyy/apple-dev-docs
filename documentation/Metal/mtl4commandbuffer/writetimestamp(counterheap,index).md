@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes a GPU timestamp into the given counter heap.
@@ -20,16 +21,20 @@ Writes a GPU timestamp into the given counter heap.
 func writeTimestamp(counterHeap: any MTL4CounterHeap, index: Int)
 ```
 
+```objc
+- (void) writeTimestampIntoHeap:(id<MTL4CounterHeap>) counterHeap atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 This method captures a timestamp after work prior to this command in the command buffer is complete. Work after this call may or may not have started.
 
-You are responsible for ensuring the `counterHeap` is of type [`MTL4CounterHeapType.timestamp`](mtl4counterheaptype/timestamp.md).
+You are responsible for ensuring the `counterHeap` is of type [`MTL4CounterHeapType.timestamp`](../mtl4counterheaptype/timestamp.md).
 
 ## Parameters
 
-- `counterHeap`: [`MTL4CounterHeap`](mtl4counterheap.md) to write the timestamp into.
-- `index`: The index within the [`MTL4CounterHeap`](mtl4counterheap.md) that Metal writes the timestamp to.
+- `counterHeap`: [`MTL4CounterHeap`](../mtl4counterheap.md) to write the timestamp into.
+- `index`: The index within the [`MTL4CounterHeap`](../mtl4counterheap.md) that Metal writes the timestamp to.
 
 
 ---

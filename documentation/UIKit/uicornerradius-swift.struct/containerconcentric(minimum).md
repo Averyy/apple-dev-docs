@@ -1,7 +1,8 @@
 # containerConcentric(minimum:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A dynamic corner radius calculated using the geometry of the view and its container limited to a minimum radius.
 
@@ -24,7 +25,8 @@ static func containerConcentric(minimum: CGFloat? = nil) -> UICornerRadius
 
 ## See Also
 
-- [static func fixed(Double) -> UICornerRadius](uicornerradius-swift.struct/fixed(_:).md)
+### Defining a radius
+- [static func fixed(Double) -> UICornerRadius](./fixed%28_%29.md)
   Creates a radius that represents a fixed corner radius in points.
 
 

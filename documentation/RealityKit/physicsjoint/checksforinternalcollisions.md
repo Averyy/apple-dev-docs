@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean that indicates whether the joint checks and reports collisions between the two entity instances.
@@ -22,7 +23,7 @@ var checksForInternalCollisions: Bool { get }
 
 #### Discussion
 
-> **Note**: This does not affect how collisions of the two entities referenced in [`pin0`](physicsjoint/pin0.md) and [`pin1`](physicsjoint/pin1.md) interact with other entities.
+> **Note**: This does not affect how collisions of the two entities referenced in [`pin0`](./pin0.md) and [`pin1`](./pin1.md) interact with other entities.
 
 
 ---

@@ -1,7 +1,8 @@
 # reply(_:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a reply to the originator of the message.
 
@@ -11,7 +12,7 @@ Sends a reply to the originator of the message.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func reply<Message>(_ object: Message) where Message : Encodable
 
 #### Discussion
 
-When a listener receives an [`XPCReceivedMessage`](xpcreceivedmessage.md), the message keeps track of the client that sent it. This function sends the specified reply message back to the originating client.
+When a listener receives an [`XPCReceivedMessage`](../xpcreceivedmessage.md), the message keeps track of the client that sent it. This function sends the specified reply message back to the originating client.
 
 Don’t call this function more than once on a single message, and don’t call it on a message that wasn’t received from a client. Calling it more than once or sending a reply using a message that wasn’t received triggers an API misuse crash.
 
@@ -32,9 +33,10 @@ Don’t call this function more than once on a single message, and don’t call 
 
 ## See Also
 
-- [var expectsReply: Bool](xpcreceivedmessage/expectsreply.md)
+### Replying to messages
+- [var expectsReply: Bool](./expectsreply.md)
   A Boolean value that indicates if the client that sent the message expects a reply.
-- [func handoffReply(to: DispatchQueue, () -> Void) -> (any Encodable)?](xpcreceivedmessage/handoffreply(to:_:).md)
+- [func handoffReply(to: DispatchQueue, () -> Void) -> (any Encodable)?](./handoffreply%28to,_%29.md)
   Informs the system when message processing and response continues in a separate dispatch queue.
 
 

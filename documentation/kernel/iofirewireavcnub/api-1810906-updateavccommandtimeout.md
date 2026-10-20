@@ -7,17 +7,18 @@ By default, AVCCommands timeout 10 seconds after receiving an Interim response. 
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn updateAVCCommandTimeout() = 0;
 ```
 
 ## See Also
 
-- [AVCCommand](iofirewireavcnub/1810816-avccommand.md)
+### Miscellaneous
+- [AVCCommand](./api-1810816-avccommand.md)
   Sends an AVC command to the device and stores the response.
-- [AVCCommandInGeneration](iofirewireavcnub/1810846-avccommandingeneration.md)
+- [AVCCommandInGeneration](./api-1810846-avccommandingeneration.md)
   Sends an AVC command to the device and stores the response. The command must complete in the specified FireWire bus generation otherwise kIOFireWireBusReset is returned.
-- [getDevice](iofirewireavcnub/1810878-getdevice.md)
+- [getDevice](./api-1810878-getdevice.md)
   Returns the FireWire device nub that is this object's provider .
 
 

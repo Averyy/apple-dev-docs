@@ -1,7 +1,8 @@
 # init(name:vectorFloat2:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -18,13 +19,18 @@
 init(name: String, vectorFloat2 value: vector_float2)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name vectorFloat2:(vector_float2) value;
+```
+
 ## See Also
 
-- [init(name: String, matrixFloat2x2: matrix_float2x2)](skuniform/init(name:matrixfloat2x2:).md)
-- [init(name: String, matrixFloat3x3: matrix_float3x3)](skuniform/init(name:matrixfloat3x3:).md)
-- [init(name: String, matrixFloat4x4: matrix_float4x4)](skuniform/init(name:matrixfloat4x4:).md)
-- [init(name: String, vectorFloat3: vector_float3)](skuniform/init(name:vectorfloat3:).md)
-- [init(name: String, vectorFloat4: vector_float4)](skuniform/init(name:vectorfloat4:).md)
+### Initializers
+- [init(name: String, matrixFloat2x2: matrix_float2x2)](./init%28name,matrixfloat2x2%29.md)
+- [init(name: String, matrixFloat3x3: matrix_float3x3)](./init%28name,matrixfloat3x3%29.md)
+- [init(name: String, matrixFloat4x4: matrix_float4x4)](./init%28name,matrixfloat4x4%29.md)
+- [init(name: String, vectorFloat3: vector_float3)](./init%28name,vectorfloat3%29.md)
+- [init(name: String, vectorFloat4: vector_float4)](./init%28name,vectorfloat4%29.md)
 
 
 ---

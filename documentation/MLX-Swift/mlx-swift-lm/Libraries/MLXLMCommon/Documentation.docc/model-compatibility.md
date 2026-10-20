@@ -176,4 +176,4 @@ matching Swift implementation is added:
 - Repositories without a supported `model_type`.
 - Repositories that require custom Python preprocessing not implemented in Swift.
 
-For implementing a new architecture, see <doc:porting> and <doc:developing>.
+For implementing a new architecture, see [Porting Models](porting.md) and [Developing mlx-swift-lm](developing.md).

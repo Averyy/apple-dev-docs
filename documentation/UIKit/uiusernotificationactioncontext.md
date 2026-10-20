@@ -1,14 +1,17 @@
 # UIUserNotificationActionContext
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the amount of space available for displaying actions in a notification.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 10.0
+- iPadOS 8.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIUserNotificationCategory`](./uiusernotificationcategory.md).
 
 ## Declaration
 
@@ -16,25 +19,29 @@ Constants indicating the amount of space available for displaying actions in a n
 enum UIUserNotificationActionContext
 ```
 
+```c
+enum UIUserNotificationActionContext : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIUserNotificationActionContext.default](uiusernotificationactioncontext/default.md)
+- [UIUserNotificationActionContext.default](./uiusernotificationactioncontext/default.md)
   The default context for displaying the alert.
-- [UIUserNotificationActionContext.minimal](uiusernotificationactioncontext/minimal.md)
+- [UIUserNotificationActionContext.minimal](./uiusernotificationactioncontext/minimal.md)
   A notification where space is minimal.
 ### Initializers
-- [init?(rawValue: UInt)](uiusernotificationactioncontext/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./uiusernotificationactioncontext/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

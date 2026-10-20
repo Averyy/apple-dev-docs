@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activity indicator with the specified frame rectangle.
 
@@ -9,7 +10,7 @@ Creates an activity indicator with the specified frame rectangle.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Creates an activity indicator with the specified frame rectangle.
 init(frame: CGRect)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame;
+```
+
 ## Parameters
 
 - `frame`: The frame rectangle for the view, specified in points.
 
 ## See Also
 
-- [init(style: UIActivityIndicatorView.Style)](uiactivityindicatorview/init(style:).md)
+### Creating an activity indicator
+- [init(style: UIActivityIndicatorView.Style)](./init%28style%29.md)
   Creates an activity indicator.
-- [init(coder: NSCoder)](uiactivityindicatorview/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates an activity indicator from data in an unarchiver.
 
 

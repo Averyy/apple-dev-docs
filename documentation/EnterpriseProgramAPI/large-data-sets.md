@@ -1,18 +1,19 @@
 # Large Data Sets
 
-**Framework**: Enterprise Program API
+**Framework**: Enterprise Program API  
+**Role**: API Collection
 
 Retrieve large data sets with paging information.
 
 ## Topics
 
 ### Objects
-- [object PagedDocumentLinks](pageddocumentlinks.md)
+- [object PagedDocumentLinks](./pageddocumentlinks.md)
   Links related to the response document, including paging links.
-- [object PagingInformation](paginginformation.md)
+- [object PagingInformation](./paginginformation.md)
   Paging information for data responses.
-- [object ResourceLinks](resourcelinks.md)
-- [object DocumentLinks](documentlinks.md)
+- [object ResourceLinks](./resourcelinks.md)
+- [object DocumentLinks](./documentlinks.md)
 
 
 ---

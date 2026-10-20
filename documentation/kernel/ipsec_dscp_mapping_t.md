@@ -1,14 +1,15 @@
 # ipsec_dscp_mapping_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum ipsec_dscp_mapping_t : unsigned int {
     ...
 } ipsec_dscp_mapping_t;
@@ -17,8 +18,8 @@ typedef enum ipsec_dscp_mapping_t : unsigned int {
 ## Topics
 
 ### Constants
-- [IPSEC_DSCP_MAPPING_COPY](ipsec_dscp_mapping_t/ipsec_dscp_mapping_copy.md)
-- [IPSEC_DSCP_MAPPING_LEGACY](ipsec_dscp_mapping_t/ipsec_dscp_mapping_legacy.md)
+- [IPSEC_DSCP_MAPPING_COPY](./ipsec_dscp_mapping_t/ipsec_dscp_mapping_copy.md)
+- [IPSEC_DSCP_MAPPING_LEGACY](./ipsec_dscp_mapping_t/ipsec_dscp_mapping_legacy.md)
 
 
 ---

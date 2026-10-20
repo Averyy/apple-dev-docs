@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinatorTextAnimationDebugDescription(_:)
 
 **Framework**: UIKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.2+
@@ -15,13 +16,18 @@
 func UIWritingToolsCoordinatorTextAnimationDebugDescription(_ animationType: UIWritingToolsCoordinator.TextAnimation) -> String
 ```
 
+```c
+extern NSString *UIWritingToolsCoordinatorTextAnimationDebugDescription(UIWritingToolsCoordinatorTextAnimation animationType);
+```
+
 ## See Also
 
-- [func UIDeviceOrientationIsLandscape(UIDeviceOrientation) -> Bool](uideviceorientationislandscape(_:).md)
-- [func UIDeviceOrientationIsPortrait(UIDeviceOrientation) -> Bool](uideviceorientationisportrait(_:).md)
-- [func UIDeviceOrientationIsValidInterfaceOrientation(UIDeviceOrientation) -> Bool](uideviceorientationisvalidinterfaceorientation(_:).md)
-- [func UIInterfaceOrientationIsLandscape(UIInterfaceOrientation) -> Bool](uiinterfaceorientationislandscape(_:).md)
-- [func UIInterfaceOrientationIsPortrait(UIInterfaceOrientation) -> Bool](uiinterfaceorientationisportrait(_:).md)
+### Functions
+- [func UIDeviceOrientationIsLandscape(UIDeviceOrientation) -> Bool](./uideviceorientationislandscape%28_%29.md)
+- [func UIDeviceOrientationIsPortrait(UIDeviceOrientation) -> Bool](./uideviceorientationisportrait%28_%29.md)
+- [func UIDeviceOrientationIsValidInterfaceOrientation(UIDeviceOrientation) -> Bool](./uideviceorientationisvalidinterfaceorientation%28_%29.md)
+- [func UIInterfaceOrientationIsLandscape(UIInterfaceOrientation) -> Bool](./uiinterfaceorientationislandscape%28_%29.md)
+- [func UIInterfaceOrientationIsPortrait(UIInterfaceOrientation) -> Bool](./uiinterfaceorientationisportrait%28_%29.md)
 
 
 ---

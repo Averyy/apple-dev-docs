@@ -1,7 +1,8 @@
 # setInterstitialMediaSelectionCriteria(_:forMediaCharacteristic:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets media selection on interstitials for this asset
 
@@ -20,6 +21,10 @@ Sets media selection on interstitials for this asset
 func setInterstitialMediaSelectionCriteria(_ criteria: [AVPlayerMediaSelectionCriteria], forMediaCharacteristic mediaCharacteristic: AVMediaCharacteristic)
 ```
 
+```objc
+- (void) setInterstitialMediaSelectionCriteria:(NSArray<AVPlayerMediaSelectionCriteria *> *) criteria forMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
+```
+
 #### Discussion
 
 Typically, interstitial assets have not been discovered when the main download is initiated. This method allows the user to specify AVMediaSelectionCriteria for all interstitials that are discovered. Each AVPlayerMediaSelectionCriteria in the array of criteria specfies a set of criteria for a variant to download.
@@ -31,17 +36,18 @@ Typically, interstitial assets have not been discovered when the main download i
 
 ## See Also
 
-- [var artworkData: Data?](avassetdownloadconfiguration/artworkdata.md)
+### Accessing configuration details
+- [var artworkData: Data?](./artworkdata.md)
   A data value that represents the asset’s artwork.
-- [var primaryContentConfiguration: AVAssetDownloadContentConfiguration](avassetdownloadconfiguration/primarycontentconfiguration.md)
+- [var primaryContentConfiguration: AVAssetDownloadContentConfiguration](./primarycontentconfiguration.md)
   The configuration for the primary content that the task downloads.
-- [var auxiliaryContentConfigurations: [AVAssetDownloadContentConfiguration]](avassetdownloadconfiguration/auxiliarycontentconfigurations.md)
+- [var auxiliaryContentConfigurations: [AVAssetDownloadContentConfiguration]](./auxiliarycontentconfigurations.md)
   The configuration for the auxiliary content that the task downloads.
-- [class AVAssetDownloadContentConfiguration](avassetdownloadcontentconfiguration.md)
+- [class AVAssetDownloadContentConfiguration](../avassetdownloadcontentconfiguration.md)
   A configuration object that contains variant qualifiers and media options.
-- [var optimizesAuxiliaryContentConfigurations: Bool](avassetdownloadconfiguration/optimizesauxiliarycontentconfigurations.md)
+- [var optimizesAuxiliaryContentConfigurations: Bool](./optimizesauxiliarycontentconfigurations.md)
   A Boolean value that indicates whether the task optimizes auxiliary content selection.
-- [var downloadsInterstitialAssets: Bool](avassetdownloadconfiguration/downloadsinterstitialassets.md)
+- [var downloadsInterstitialAssets: Bool](./downloadsinterstitialassets.md)
   Download interstitial assets as listed in the index file. False by default.
 
 

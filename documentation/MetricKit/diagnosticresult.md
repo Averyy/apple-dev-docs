@@ -1,7 +1,8 @@
 # DiagnosticResult
 
 **Framework**: MetricKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents a single diagnostic event from a diagnostic report.
 
@@ -20,14 +21,14 @@ enum DiagnosticResult
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
-`DiagnosticResult` unifies all diagnostic event types into a single enum. Each associated value is a typed diagnostic struct that carries a [`CallStackTree`](callstacktree.md) and additional event-specific properties such as hang duration, total CPU time, or launch duration.
+`DiagnosticResult` unifies all diagnostic event types into a single enum. Each associated value is a typed diagnostic struct that carries a [`CallStackTree`](./callstacktree.md) and additional event-specific properties such as hang duration, total CPU time, or launch duration.
 
-Access the result through [`result`](diagnosticreport/result.md) after iterating over [`diagnosticReports`](metricmanager/diagnosticreports.md). Switch over the result to handle each diagnostic type:
+Access the result through [`result`](./diagnosticreport/result.md) after iterating over [`diagnosticReports`](./metricmanager/diagnosticreports.md). Switch over the result to handle each diagnostic type:
 
 ```swift
 for await report in manager.diagnosticReports {
@@ -51,44 +52,45 @@ for await report in manager.diagnosticReports {
 ## Topics
 
 ### Call stack
-- [struct CallStackTree](callstacktree.md)
+- [struct CallStackTree](./callstacktree.md)
   A tree structure representing a collection of call stacks captured during a diagnostic event.
 ### Diagnostic results
-- [struct CrashDiagnostic](crashdiagnostic.md)
+- [struct CrashDiagnostic](./crashdiagnostic.md)
   A diagnostic report that describes a crash that occurred.
-- [struct HangDiagnostic](hangdiagnostic.md)
+- [struct HangDiagnostic](./hangdiagnostic.md)
   A diagnostic for an app that was too busy to handle user input responsively.
-- [struct CPUExceptionDiagnostic](cpuexceptiondiagnostic.md)
+- [struct CPUExceptionDiagnostic](./cpuexceptiondiagnostic.md)
   A diagnostic for a fatal or nonfatal CPU exception.
-- [struct DiskWriteExceptionDiagnostic](diskwriteexceptiondiagnostic.md)
+- [struct DiskWriteExceptionDiagnostic](./diskwriteexceptiondiagnostic.md)
   A diagnostic for a disk write exception.
-- [struct AppLaunchDiagnostic](applaunchdiagnostic.md)
+- [struct AppLaunchDiagnostic](./applaunchdiagnostic.md)
   A diagnostic report for an app launch.
-- [struct MemoryExceptionDiagnostic](memoryexceptiondiagnostic.md)
+- [struct MemoryExceptionDiagnostic](./memoryexceptiondiagnostic.md)
   A diagnostic MetricKit generates when your app or extension terminates because it exceeds the memory limit.
 ### Enumeration Cases
-- [case appLaunch(AppLaunchDiagnostic)](diagnosticresult/applaunch(_:).md)
-- [case cpuException(CPUExceptionDiagnostic)](diagnosticresult/cpuexception(_:).md)
-- [case crash(CrashDiagnostic)](diagnosticresult/crash(_:).md)
-- [case diskWriteException(DiskWriteExceptionDiagnostic)](diagnosticresult/diskwriteexception(_:).md)
-- [DiagnosticResult.hang(_:)](diagnosticresult/hang(_:).md)
-- [case memoryException(MemoryExceptionDiagnostic)](diagnosticresult/memoryexception(_:).md)
+- [case appLaunch(AppLaunchDiagnostic)](./diagnosticresult/applaunch%28_%29.md)
+- [case cpuException(CPUExceptionDiagnostic)](./diagnosticresult/cpuexception%28_%29.md)
+- [case crash(CrashDiagnostic)](./diagnosticresult/crash%28_%29.md)
+- [case diskWriteException(DiskWriteExceptionDiagnostic)](./diagnosticresult/diskwriteexception%28_%29.md)
+- [DiagnosticResult.hang(_:)](./diagnosticresult/hang%28_%29.md)
+- [case memoryException(MemoryExceptionDiagnostic)](./diagnosticresult/memoryexception%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MetricResult](metricresult.md)
+### Result types
+- [enum MetricResult](./metricresult.md)
   An enumeration that represents a single metric value from a metric report entry.
-- [struct MetricGroup](metricgroup.md)
+- [struct MetricGroup](./metricgroup.md)
   A value that identifies the category a metric belongs to.
 
 

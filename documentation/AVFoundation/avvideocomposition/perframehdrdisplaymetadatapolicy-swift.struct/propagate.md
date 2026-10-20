@@ -1,7 +1,8 @@
 # propagate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A policy that passes HDR metadata through, if present on the composed frame.
 
@@ -18,9 +19,14 @@ A policy that passes HDR metadata through, if present on the composed frame.
 static let propagate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy
 ```
 
+```c
+extern AVVideoCompositionPerFrameHDRDisplayMetadataPolicy const AVVideoCompositionPerFrameHDRDisplayMetadataPolicyPropagate;
+```
+
 ## See Also
 
-- [static let generate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct/generate.md)
+### Policies
+- [static let generate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](./generate.md)
   A video composition may generate HDR metadata and attach it to the rendered frame.
 
 

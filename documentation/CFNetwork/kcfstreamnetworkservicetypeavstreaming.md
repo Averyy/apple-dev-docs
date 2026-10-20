@@ -1,7 +1,8 @@
 # kCFStreamNetworkServiceTypeAVStreaming
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A multimedia audio and video streaming service.
 
@@ -19,19 +20,24 @@ A multimedia audio and video streaming service.
 let kCFStreamNetworkServiceTypeAVStreaming: CFString
 ```
 
+```c
+extern CFStringRef const kCFStreamNetworkServiceTypeAVStreaming;
+```
+
 ## See Also
 
-- [let kCFHTTPVersion3_0: CFString](kcfhttpversion3_0.md)
+### Constants
+- [let kCFHTTPVersion3_0: CFString](./kcfhttpversion3_0.md)
   HTTP version 3.0.
-- [let kCFStreamNetworkServiceTypeResponsiveAV: CFString](kcfstreamnetworkservicetyperesponsiveav.md)
+- [let kCFStreamNetworkServiceTypeResponsiveAV: CFString](./kcfstreamnetworkservicetyperesponsiveav.md)
   A responsive, time-sensitive, multimedia audio and video service.
-- [let kCFStreamNetworkServiceTypeResponsiveData: CFString](kcfstreamnetworkservicetyperesponsivedata.md)
+- [let kCFStreamNetworkServiceTypeResponsiveData: CFString](./kcfstreamnetworkservicetyperesponsivedata.md)
   A responsive, time-sensitive data service.
-- [let kCFStreamPropertyAllowConstrainedNetworkAccess: CFString](kcfstreampropertyallowconstrainednetworkaccess.md)
+- [let kCFStreamPropertyAllowConstrainedNetworkAccess: CFString](./kcfstreampropertyallowconstrainednetworkaccess.md)
   A Boolean value that indicates whether connections may use the network when the user has specified Low Data Mode.
-- [let kCFStreamPropertyAllowExpensiveNetworkAccess: CFString](kcfstreampropertyallowexpensivenetworkaccess.md)
+- [let kCFStreamPropertyAllowExpensiveNetworkAccess: CFString](./kcfstreampropertyallowexpensivenetworkaccess.md)
   A Boolean value that indicates whether connections may use a network interface that the system considers expensive.
-- [let kCFStreamPropertyConnectionIsExpensive: CFString](kcfstreampropertyconnectionisexpensive.md)
+- [let kCFStreamPropertyConnectionIsExpensive: CFString](./kcfstreampropertyconnectionisexpensive.md)
   A Boolean value that indicates if the connection is using a network interface that the system considers expensive.
 
 

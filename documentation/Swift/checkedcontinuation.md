@@ -1,7 +1,8 @@
 # CheckedContinuation
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
 
@@ -33,48 +34,49 @@ Resuming from a continuation more than once is undefined behavior. Never resumin
 ## Topics
 
 ### Initializers
-- [init(consuming Continuation<T, E>, function: String)](checkedcontinuation/init(_:function:).md)
-  Convert a non-copyable continuation to a [`CheckedContinuation`](checkedcontinuation.md)
-- [init(continuation: UnsafeContinuation<T, E>, function: String)](checkedcontinuation/init(continuation:function:).md)
+- [init(consuming Continuation<T, E>, function: String)](./checkedcontinuation/init%28_,function%29.md)
+  Convert a non-copyable continuation to a [`CheckedContinuation`](./checkedcontinuation.md)
+- [init(continuation: UnsafeContinuation<T, E>, function: String)](./checkedcontinuation/init%28continuation,function%29.md)
   Creates a checked continuation from an unsafe continuation.
 ### Instance Methods
-- [func resume()](checkedcontinuation/resume.md)
+- [func resume()](./checkedcontinuation/resume%28%29.md)
   Resume the task awaiting the continuation by having it return normally from its suspension point.
-- [func resume(returning: sending T)](checkedcontinuation/resume(returning:).md)
+- [func resume(returning: sending T)](./checkedcontinuation/resume%28returning%29.md)
   Resume the task awaiting the continuation by having it return normally from its suspension point.
-- [func resume(throwing: E)](checkedcontinuation/resume(throwing:).md)
+- [func resume(throwing: E)](./checkedcontinuation/resume%28throwing%29.md)
   Resume the task awaiting the continuation by having it throw an error from its suspension point.
-- [func resume(with: sending Result<T, E>)](checkedcontinuation/resume(with:)-3gh60.md)
+- [func resume(with: sending Result<T, E>)](./checkedcontinuation/resume%28with%29-3gh60.md)
   Resume the task awaiting the continuation by having it either return normally or throw an error based on the state of the given `Result` value.
-- [func resume<Er>(with: sending Result<T, Er>)](checkedcontinuation/resume(with:)-5n1a5.md)
+- [func resume<Er>(with: sending Result<T, Er>)](./checkedcontinuation/resume%28with%29-5n1a5.md)
   Resume the task awaiting the continuation by having it either return normally or throw an error based on the state of the given `Result` value.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct Continuation](continuation.md)
+### Continuations
+- [struct Continuation](./continuation.md)
   A mechanism to interface between synchronous and asynchronous code, which enforces that the continuation is resumed exactly once.
-- [func withContinuation<Success>(of: Success.Type, (consuming Continuation<Success, Never>) -> Void) async -> sending Success](withcontinuation(of:_:).md)
+- [func withContinuation<Success>(of: Success.Type, (consuming Continuation<Success, Never>) -> Void) async -> sending Success](./withcontinuation%28of,_%29.md)
   Invokes the passed in closure with a non-copyable continuation for the current task.
-- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](withcontinuation(of:throwing:_:).md)
+- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](./withcontinuation%28of,throwing,_%29.md)
   Invokes the passed in closure with a non-copyable continuation for the current task.
-- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(function:_:).md)
+- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](./withcheckedcontinuation%28function,_%29.md)
   Invokes the passed in closure with a checked continuation for the current task.
-- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(function:_:)-13yf6.md)
-- [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](withcheckedthrowingcontinuation(function:_:)-2k46m.md)
+- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](./withcheckedthrowingcontinuation%28function,_%29-13yf6.md)
+- [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](./withcheckedthrowingcontinuation%28function,_%29-2k46m.md)
   Invokes the passed in closure with a checked continuation for the current task.
-- [struct UnsafeContinuation](unsafecontinuation.md)
+- [struct UnsafeContinuation](./unsafecontinuation.md)
   A mechanism to interface between synchronous and asynchronous code, without correctness checking.
-- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
+- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](./withunsafecontinuation%28_%29.md)
   Invokes the passed in closure with a unsafe continuation for the current task.
-- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](withunsafethrowingcontinuation(_:)-32nwt.md)
+- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](./withunsafethrowingcontinuation%28_%29-32nwt.md)
   Invokes the passed in closure with a unsafe continuation for the current task.
-- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
+- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](./withunsafethrowingcontinuation%28_%29-7zhvy.md)
 
 
 ---

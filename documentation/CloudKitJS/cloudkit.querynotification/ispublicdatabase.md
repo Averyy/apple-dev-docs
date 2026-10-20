@@ -1,7 +1,8 @@
 # isPublicDatabase
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Boolean value indicating whether the notification is from the public database.
 
@@ -10,7 +11,7 @@ Boolean value indicating whether the notification is from the public database.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean isPublicDatabase;
 ```
 
@@ -20,11 +21,12 @@ readonly attribute Boolean isPublicDatabase;
 
 ## See Also
 
-- [queryNotificationReason](cloudkit.querynotification/querynotificationreason.md)
+### Getting Record Changes
+- [queryNotificationReason](./querynotificationreason.md)
   The reason for the query notification.
-- [recordName](cloudkit.querynotification/recordname.md)
+- [recordName](./recordname.md)
   The name of the record that was created, deleted, or updated.
-- [recordFields](cloudkit.querynotification/recordfields.md)
+- [recordFields](./recordfields.md)
   A dictionary representation of the fields that changed in the record.
 
 

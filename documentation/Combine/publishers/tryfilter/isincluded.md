@@ -1,7 +1,8 @@
 # isIncluded
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error-throwing closure that indicates whether this filter should republish an element.
 
@@ -22,7 +23,8 @@ let isIncluded: (Upstream.Output) throws -> Bool
 
 ## See Also
 
-- [let upstream: Upstream](publishers/tryfilter/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

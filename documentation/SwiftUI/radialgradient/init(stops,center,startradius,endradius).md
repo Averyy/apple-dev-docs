@@ -1,7 +1,8 @@
 # init(stops:center:startRadius:endRadius:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a radial gradient from a collection of color stops.
 
@@ -23,9 +24,10 @@ nonisolated init(stops: [Gradient.Stop], center: UnitPoint, startRadius: CGFloat
 
 ## See Also
 
-- [init(gradient: Gradient, center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](radialgradient/init(gradient:center:startradius:endradius:).md)
+### Creating a radial gradient
+- [init(gradient: Gradient, center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](./init%28gradient,center,startradius,endradius%29.md)
   Creates a radial gradient from a base gradient.
-- [init(colors: [Color], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](radialgradient/init(colors:center:startradius:endradius:).md)
+- [init(colors: [Color], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)](./init%28colors,center,startradius,endradius%29.md)
   Creates a radial gradient from a collection of colors.
 
 

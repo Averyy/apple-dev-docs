@@ -1,7 +1,8 @@
 # zoomFactorsOutsideOfVideoZoomRangesForDepthDeliverySupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format supports zoom factors outside the range supported for depth delivery.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates whether the format supports zoom factors outside 
 var zoomFactorsOutsideOfVideoZoomRangesForDepthDeliverySupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL zoomFactorsOutsideOfVideoZoomRangesForDepthDeliverySupported;
+```
+
 #### Discussion
 
-Setting a zoom factor outside the range defined by the [`supportedVideoZoomFactorsForDepthDataDelivery`](avcapturedevice/format/supportedvideozoomfactorsfordepthdatadelivery.md) property results in the system suspending depth data delivery. It resumes delivery when you set the zoom factor back to a supported value.
+Setting a zoom factor outside the range defined by the [`supportedVideoZoomFactorsForDepthDataDelivery`](./supportedvideozoomfactorsfordepthdatadelivery.md) property results in the system suspending depth data delivery. It resumes delivery when you set the zoom factor back to a supported value.
 
 ## See Also
 
-- [var systemRecommendedVideoZoomRange: ClosedRange<CGFloat>?](avcapturedevice/format/systemrecommendedvideozoomrange.md)
+### Determining zoom capabilities
+- [var systemRecommendedVideoZoomRange: ClosedRange<CGFloat>?](./systemrecommendedvideozoomrange.md)
   The system’s recommended zoom range for this device format.
-- [var videoMaxZoomFactor: CGFloat](avcapturedevice/format/videomaxzoomfactor.md)
+- [var videoMaxZoomFactor: CGFloat](./videomaxzoomfactor.md)
   A maximum zoom factor the format allows.
-- [var videoZoomFactorUpscaleThreshold: CGFloat](avcapturedevice/format/videozoomfactorupscalethreshold.md)
+- [var videoZoomFactorUpscaleThreshold: CGFloat](./videozoomfactorupscalethreshold.md)
   A threshold at which the system upscales pixel data.
-- [var secondaryNativeResolutionZoomFactors: [CGFloat]](avcapturedevice/format/secondarynativeresolutionzoomfactors.md)
+- [var secondaryNativeResolutionZoomFactors: [CGFloat]](./secondarynativeresolutionzoomfactors.md)
   The zoom factors at which this device transitions to secondary native resolution modes.
-- [var supportedVideoZoomRangesForDepthDataDelivery: [ClosedRange<CGFloat>]](avcapturedevice/format/supportedvideozoomrangesfordepthdatadelivery.md)
+- [var supportedVideoZoomRangesForDepthDataDelivery: [ClosedRange<CGFloat>]](./supportedvideozoomrangesfordepthdatadelivery.md)
   The zoom ranges that support the delivery of depth data.
 
 

@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A substring’s past-the-end position — the position one greater than the last valid subscript argument.
 

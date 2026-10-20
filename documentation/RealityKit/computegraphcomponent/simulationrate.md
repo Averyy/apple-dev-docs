@@ -1,7 +1,8 @@
 # simulationRate
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which the simulation updates.
 

@@ -1,7 +1,8 @@
 # Date.IntervalFormatStyle.TimeStyle
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that defines time styles that vary in length or in their included components.
 
@@ -22,7 +23,7 @@ typealias TimeStyle = Date.FormatStyle.TimeStyle
 
 #### Discussion
 
-The exact format depends on the locale. Possible time styles include: [`omitted`](date/formatstyle/timestyle/omitted.md), [`shortened`](date/formatstyle/timestyle/shortened.md), [`standard`](date/formatstyle/timestyle/standard.md), and [`complete`](date/formatstyle/timestyle/complete.md).
+The exact format depends on the locale. Possible time styles include: [`omitted`](../formatstyle/timestyle/omitted.md), [`shortened`](../formatstyle/timestyle/shortened.md), [`standard`](../formatstyle/timestyle/standard.md), and [`complete`](../formatstyle/timestyle/complete.md).
 
 The following code sample shows a variety of time style format results using the `en_US` locale.
 
@@ -57,9 +58,10 @@ if let today = Calendar.current.date(byAdding: .day, value: -120, to: Date()),
 
 ## See Also
 
-- [Date.IntervalFormatStyle.DateStyle](date/intervalformatstyle/datestyle.md)
+### Supporting Types
+- [Date.IntervalFormatStyle.DateStyle](./datestyle.md)
   The type that defines date interval styles that vary in length or in their included components.
-- [Date.IntervalFormatStyle.Symbol](date/intervalformatstyle/symbol.md)
+- [Date.IntervalFormatStyle.Symbol](./symbol.md)
   The type that supports customizing formatting templates using the date format style’s modifier functions, and constructing fixed-pattern date format strings.
 
 

@@ -1,7 +1,8 @@
 # transaction
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transaction value if the task is successful.
 
@@ -20,13 +21,16 @@ The transaction value if the task is successful.
 var transaction: VerificationResult<Transaction>? { get }
 ```
 
+Available when `Value` is `VerificationResult<Transaction>?`.
+
 #### Discussion
 
-Use [`transaction`](entitlementtaskstate/transaction.md) as a convenience to access the transaction value in code that doesn’t depend on the reason a transaction isn’t available. The value is `nil` while the transaction is loading, if it fails to load for any reason, or if the customer isn’t entitled to the product.
+Use [`transaction`](./transaction.md) as a convenience to access the transaction value in code that doesn’t depend on the reason a transaction isn’t available. The value is `nil` while the transaction is loading, if it fails to load for any reason, or if the customer isn’t entitled to the product.
 
 ## See Also
 
-- [var value: Value?](entitlementtaskstate/value.md)
+### Getting the transaction with the entitlement
+- [var value: Value?](./value.md)
   The entitlement value if the task is successful.
 
 

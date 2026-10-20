@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the pipeline buffer descriptor at the specified array index.
 
@@ -17,6 +18,10 @@ Returns the pipeline buffer descriptor at the specified array index.
 
 ```swift
 subscript(bufferIndex: Int) -> MTLPipelineBufferDescriptor! { get set }
+```
+
+```objc
+- (MTLPipelineBufferDescriptor *) objectAtIndexedSubscript:(NSUInteger) bufferIndex;
 ```
 
 #### Return Value

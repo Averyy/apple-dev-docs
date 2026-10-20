@@ -1,7 +1,8 @@
 # cocoaVersionDocumentAttribute
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The version of Cocoa that created the file.
 
@@ -16,13 +17,21 @@ The version of Cocoa that created the file.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+static let cocoaVersionDocumentAttribute: NSAttributedString.DocumentAttributeKey
+```
+
+*macOS*
+
 ```swift
 static let cocoaVersion: NSAttributedString.DocumentAttributeKey
 ```
 
 #### Discussion
 
-The value of this attribute is an [`NSNumber`](nsnumber.md) object containing a float. For RTF files only, stores the version of Cocoa with which the file was created. Absence of this value indicates RTF file not created by Cocoa or its predecessors.
+The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing a float. For RTF files only, stores the version of Cocoa with which the file was created. Absence of this value indicates RTF file not created by Cocoa or its predecessors.
 
 Values less than `100` are pre–macOS; `100` is macOS 10.0 or 10.1; `102` is macOS 10.2 and 10.3; values greater than `102` correspond to values of `NSAppKitVersionNumber` in macOS 10.4 and later.
 
@@ -30,35 +39,36 @@ The string constant in macOS 10.3 and earlier is `@"CocoaRTFVersion"`.
 
 ## See Also
 
-- [static let author: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/author.md)
+### Getting document metadata keys
+- [static let author: NSAttributedString.DocumentAttributeKey](./author.md)
   The author of the document.
-- [static let category: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/category.md)
+- [static let category: NSAttributedString.DocumentAttributeKey](./category.md)
   The document’s category.
-- [static let characterEncoding: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/characterencoding.md)
+- [static let characterEncoding: NSAttributedString.DocumentAttributeKey](./characterencoding.md)
   The string encoding for the document.
-- [static let comment: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/comment.md)
+- [static let comment: NSAttributedString.DocumentAttributeKey](./comment.md)
   The document comments.
-- [static let company: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/company.md)
+- [static let company: NSAttributedString.DocumentAttributeKey](./company.md)
   The company or organization name associated with the document.
-- [static let converted: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/converted.md)
+- [static let converted: NSAttributedString.DocumentAttributeKey](./converted.md)
   A value that indicates whether a filter service converted the file.
-- [static let copyright: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/copyright.md)
+- [static let copyright: NSAttributedString.DocumentAttributeKey](./copyright.md)
   The document’s copyright information.
-- [static let creationTime: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/creationtime.md)
+- [static let creationTime: NSAttributedString.DocumentAttributeKey](./creationtime.md)
   The creation date of the document.
-- [static let editor: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/editor.md)
+- [static let editor: NSAttributedString.DocumentAttributeKey](./editor.md)
   The name of person who last edited the document.
-- [static let keywords: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/keywords.md)
+- [static let keywords: NSAttributedString.DocumentAttributeKey](./keywords.md)
   The document keywords.
-- [static let manager: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/manager.md)
+- [static let manager: NSAttributedString.DocumentAttributeKey](./manager.md)
   The name of the author’s manager.
-- [static let modificationTime: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/modificationtime.md)
+- [static let modificationTime: NSAttributedString.DocumentAttributeKey](./modificationtime.md)
   The modification date of the document.
-- [static let readOnly: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/readonly.md)
+- [static let readOnly: NSAttributedString.DocumentAttributeKey](./readonly.md)
   An indication of whether the document is read-only.
-- [static let subject: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/subject.md)
+- [static let subject: NSAttributedString.DocumentAttributeKey](./subject.md)
   The subject of the document.
-- [static let title: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/title.md)
+- [static let title: NSAttributedString.DocumentAttributeKey](./title.md)
   The document title.
 
 

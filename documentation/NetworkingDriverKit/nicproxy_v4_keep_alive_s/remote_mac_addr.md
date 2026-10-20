@@ -1,14 +1,15 @@
 # remote_mac_addr
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 ether_addr_t remote_mac_addr;
 ```
 

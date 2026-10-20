@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct bpf_stat {
     ...
 };
@@ -17,8 +17,8 @@ struct bpf_stat {
 ## Topics
 
 ### Instance Properties
-- [bs_drop](bpf_stat/1589513-bs_drop.md)
-- [bs_recv](bpf_stat/1589546-bs_recv.md)
+- [bs_drop](./bpf_stat/api-1589513-bs_drop.md)
+- [bs_recv](./bpf_stat/api-1589546-bs_recv.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UIFocusHaloEffect.Position
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe positions for drawing the halo focus effect.
 
@@ -17,33 +18,38 @@ Constants that describe positions for drawing the halo focus effect.
 enum Position
 ```
 
+```c
+enum UIFocusHaloEffectPosition : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIFocusHaloEffect.Position.automatic](uifocushaloeffect/position-swift.enum/automatic.md)
+- [UIFocusHaloEffect.Position.automatic](./position-swift.enum/automatic.md)
   A constant that automatically chooses a position for drawing the halo effect depending on the focus item and its containing view hierarchy.
-- [UIFocusHaloEffect.Position.outside](uifocushaloeffect/position-swift.enum/outside.md)
+- [UIFocusHaloEffect.Position.outside](./position-swift.enum/outside.md)
   A constant that draws the halo effect around the shape.
-- [UIFocusHaloEffect.Position.inside](uifocushaloeffect/position-swift.enum/inside.md)
+- [UIFocusHaloEffect.Position.inside](./position-swift.enum/inside.md)
   A constant that draws the halo effect inside the shape.
 ### Initializers
-- [init?(rawValue: Int)](uifocushaloeffect/position-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./position-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIFocusEffect](uifocuseffect.md)
+### Focus effects
+- [class UIFocusEffect](../uifocuseffect.md)
   The base class for defining a visual focus effect.
-- [class UIFocusHaloEffect](uifocushaloeffect.md)
+- [class UIFocusHaloEffect](../uifocushaloeffect.md)
   A visual focus effect that draws a halo around the focus item.
 
 

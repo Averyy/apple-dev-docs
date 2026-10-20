@@ -1,7 +1,8 @@
 # CTTypesetterSuggestClusterBreakWithOffset(_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Suggests a cluster line breakpoint based on the specified width and line offset.
 
@@ -20,9 +21,13 @@ Suggests a cluster line breakpoint based on the specified width and line offset.
 func CTTypesetterSuggestClusterBreakWithOffset(_ typesetter: CTTypesetter, _ startIndex: CFIndex, _ width: Double, _ offset: Double) -> CFIndex
 ```
 
+```c
+extern CFIndex CTTypesetterSuggestClusterBreakWithOffset(CTTypesetterRef typesetter, CFIndex startIndex, double width, double offset);
+```
+
 #### Return Value
 
-A count of the characters from `startIndex` that would cause the cluster break. The value returned can be used to construct a character range for [`CTTypesetterCreateLine(_:_:)`](cttypesettercreateline(_:_:).md).
+A count of the characters from `startIndex` that would cause the cluster break. The value returned can be used to construct a character range for [`CTTypesetterCreateLine(_:_:)`](./cttypesettercreateline%28_,_%29.md).
 
 #### Discussion
 
@@ -37,11 +42,12 @@ This cluster break is similar to a character break, except that it does not brea
 
 ## See Also
 
-- [func CTTypesetterSuggestLineBreak(CTTypesetter, CFIndex, Double) -> CFIndex](cttypesettersuggestlinebreak(_:_:_:).md)
+### Breaking Lines
+- [func CTTypesetterSuggestLineBreak(CTTypesetter, CFIndex, Double) -> CFIndex](./cttypesettersuggestlinebreak%28_,_,_%29.md)
   Suggests a contextual line breakpoint based on the width provided.
-- [func CTTypesetterSuggestLineBreakWithOffset(CTTypesetter, CFIndex, Double, Double) -> CFIndex](cttypesettersuggestlinebreakwithoffset(_:_:_:_:).md)
+- [func CTTypesetterSuggestLineBreakWithOffset(CTTypesetter, CFIndex, Double, Double) -> CFIndex](./cttypesettersuggestlinebreakwithoffset%28_,_,_,_%29.md)
   Suggests a contextual line breakpoint based on the width provided and the specified offset.
-- [func CTTypesetterSuggestClusterBreak(CTTypesetter, CFIndex, Double) -> CFIndex](cttypesettersuggestclusterbreak(_:_:_:).md)
+- [func CTTypesetterSuggestClusterBreak(CTTypesetter, CFIndex, Double) -> CFIndex](./cttypesettersuggestclusterbreak%28_,_,_%29.md)
   Suggests a cluster line breakpoint based on the width provided.
 
 

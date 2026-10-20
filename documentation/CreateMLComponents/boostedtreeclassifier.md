@@ -1,7 +1,8 @@
 # BoostedTreeClassifier
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A gradient boosted decision tree classifier.
 
@@ -23,63 +24,64 @@ struct BoostedTreeClassifier<Label> where Label : Comparable, Label : Decodable,
 ## Topics
 
 ### Creating a classifier
-- [init(labels: Set<Label?>, annotationColumnName: String, featureColumnNames: [String], configuration: BoostedTreeConfiguration)](boostedtreeclassifier/init(labels:annotationcolumnname:featurecolumnnames:configuration:).md)
+- [init(labels: Set<Label?>, annotationColumnName: String, featureColumnNames: [String], configuration: BoostedTreeConfiguration)](./boostedtreeclassifier/init%28labels,annotationcolumnname,featurecolumnnames,configuration%29.md)
   Creates a boosted tree classifier.
 ### Getting the properties
-- [var annotationColumnID: ColumnID<Label>](boostedtreeclassifier/annotationcolumnid.md)
+- [var annotationColumnID: ColumnID<Label>](./boostedtreeclassifier/annotationcolumnid.md)
   The annotation column identifier.
-- [var featureColumnNames: [String]](boostedtreeclassifier/featurecolumnnames.md)
+- [var featureColumnNames: [String]](./boostedtreeclassifier/featurecolumnnames.md)
   The names of the columns containing feature values.
-- [var configuration: BoostedTreeConfiguration](boostedtreeclassifier/configuration.md)
+- [var configuration: BoostedTreeConfiguration](./boostedtreeclassifier/configuration.md)
   Boosted tree configuration.
-- [var labels: Set<Label?>](boostedtreeclassifier/labels.md)
+- [var labels: Set<Label?>](./boostedtreeclassifier/labels.md)
   The set of possible labels.
 ### Fitting the classifier
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> TreeClassifierModel<Label>](boostedtreeclassifier/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> TreeClassifierModel<Label>](./boostedtreeclassifier/fitted%28to,validateon,eventhandler%29.md)
   Fits a boosted tree classifier model to a collection of examples.
-- [BoostedTreeClassifier.Annotation](boostedtreeclassifier/annotation.md)
+- [BoostedTreeClassifier.Annotation](./boostedtreeclassifier/annotation.md)
   The annotation type.
-- [BoostedTreeClassifier.Transformer](boostedtreeclassifier/transformer.md)
+- [BoostedTreeClassifier.Transformer](./boostedtreeclassifier/transformer.md)
   The transformer type created by this estimator.
 ### Encoding the classifier labels
-- [func encodeLabels(some Collection<Optional<Label>>) throws -> (labels: [String?], encoded: [Int])](boostedtreeclassifier/encodelabels(_:).md)
+- [func encodeLabels(some Collection<Optional<Label>>) throws -> (labels: [String?], encoded: [Int])](./boostedtreeclassifier/encodelabels%28_%29.md)
 ### Default Implementations
-- [UpdatableSupervisedTabularEstimator Implementations](boostedtreeclassifier/updatablesupervisedtabularestimator-implementations.md)
+- [UpdatableSupervisedTabularEstimator Implementations](./boostedtreeclassifier/updatablesupervisedtabularestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedTabularEstimator](supervisedtabularestimator.md)
-- [UpdatableSupervisedTabularEstimator](updatablesupervisedtabularestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedTabularEstimator](./supervisedtabularestimator.md)
+- [UpdatableSupervisedTabularEstimator](./updatablesupervisedtabularestimator.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifier](logisticregressionclassifier.md)
+- [struct LogisticRegressionClassifier](./logisticregressionclassifier.md)
   A logistic regression classifier.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeConfiguration](boostedtreeconfiguration.md)
+- [struct BoostedTreeConfiguration](./boostedtreeconfiguration.md)
   A boosted tree configuration.
-- [struct FullyConnectedNetworkClassifier](fullyconnectednetworkclassifier.md)
+- [struct FullyConnectedNetworkClassifier](./fullyconnectednetworkclassifier.md)
   A classifier that uses a fully connected network.
-- [struct FullyConnectedNetworkClassifierModel](fullyconnectednetworkclassifiermodel.md)
+- [struct FullyConnectedNetworkClassifierModel](./fullyconnectednetworkclassifiermodel.md)
   A classifier model that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifierModel](fullyconnectednetworkmultilabelclassifiermodel.md)
+- [struct FullyConnectedNetworkMultiLabelClassifierModel](./fullyconnectednetworkmultilabelclassifiermodel.md)
   A multi-label classifier model that uses a fully-connected network.
-- [struct FullyConnectedNetworkConfiguration](fullyconnectednetworkconfiguration.md)
+- [struct FullyConnectedNetworkConfiguration](./fullyconnectednetworkconfiguration.md)
   A fully connected network configuration.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifier](timeseriesclassifier.md)
-- [struct TimeSeriesClassifierConfiguration](timeseriesclassifierconfiguration.md)
+- [struct TimeSeriesClassifier](./timeseriesclassifier.md)
+- [struct TimeSeriesClassifierConfiguration](./timeseriesclassifierconfiguration.md)
   The configuration for a time-series classifier.
 
 

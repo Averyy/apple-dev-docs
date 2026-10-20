@@ -1,9 +1,10 @@
 # destinationFrames
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Array of [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frames for processors which may output more than one processed frame.
+Array of [`VTFrameProcessorFrame`](../vtframeprocessorframe.md) that contains the destination frames for processors which may output more than one processed frame.
 
 **Availability**:
 - iOS 26.0+
@@ -21,10 +22,11 @@ var destinationFrames: [VTFrameProcessorFrame]? { get }
 
 ## See Also
 
-- [var sourceFrame: VTFrameProcessorFrame](vtframeprocessorparameters/sourceframe.md)
+### Inspecting the parameters
+- [var sourceFrame: VTFrameProcessorFrame](./sourceframe.md)
   A processor frame that contains the current source frame to use for all processing features.
-- [var destinationFrame: VTFrameProcessorFrame?](vtframeprocessorparameters/destinationframe-5suam.md)
-  [`VTFrameProcessorFrame`](vtframeprocessorframe.md) that contains the destination frame for processors which output a single processed frame.
+- [var destinationFrame: VTFrameProcessorFrame?](./destinationframe-5suam.md)
+  [`VTFrameProcessorFrame`](../vtframeprocessorframe.md) that contains the destination frame for processors which output a single processed frame.
 
 
 ---

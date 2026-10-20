@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration for creating a list layout.
 
@@ -10,7 +11,7 @@ A configuration for creating a list layout.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ struct UICollectionLayoutListConfiguration
 
 #### Overview
 
-Use this configuration to create a list section for a compositional layout ([`UICollectionViewCompositionalLayout`](uicollectionviewcompositionallayout.md)), or a layout containing only list sections. The following example shows how to create a compositional layout that contains only list sections by applying the same configuration to each section in the list layout:
+Use this configuration to create a list section for a compositional layout ([`UICollectionViewCompositionalLayout`](./uicollectionviewcompositionallayout.md)), or a layout containing only list sections. The following example shows how to create a compositional layout that contains only list sections by applying the same configuration to each section in the list layout:
 
 ```swift
 let configuration = UICollectionLayoutListConfiguration(appearance: .sidebar)
@@ -45,55 +46,57 @@ let layout = UICollectionViewCompositionalLayout() { sectionIndex, layoutEnviron
 ## Topics
 
 ### Creating a list layout configuration
-- [init(appearance: UICollectionLayoutListConfiguration.Appearance)](uicollectionlayoutlistconfiguration-swift.struct/init(appearance:).md)
+- [init(appearance: UICollectionLayoutListConfiguration.Appearance)](./uicollectionlayoutlistconfiguration-swift.struct/init%28appearance%29.md)
   Creates a list layout configuration with the specified appearance.
 ### Configuring appearance
-- [var appearance: UICollectionLayoutListConfiguration.Appearance](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.property.md)
+- [var appearance: UICollectionLayoutListConfiguration.Appearance](./uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.property.md)
   The overall appearance of the list.
-- [var backgroundColor: UIColor?](uicollectionlayoutlistconfiguration-swift.struct/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./uicollectionlayoutlistconfiguration-swift.struct/backgroundcolor.md)
   The background color of the list.
-- [UICollectionLayoutListConfiguration.Appearance](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum.md)
+- [UICollectionLayoutListConfiguration.Appearance](./uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum.md)
   Constants that describe the appearance of the list.
 ### Configuring separators
-- [var showsSeparators: Bool](uicollectionlayoutlistconfiguration-swift.struct/showsseparators.md)
+- [var showsSeparators: Bool](./uicollectionlayoutlistconfiguration-swift.struct/showsseparators.md)
   A Boolean value that determines whether the list shows separators between cells.
-- [var separatorConfiguration: UIListSeparatorConfiguration](uicollectionlayoutlistconfiguration-swift.struct/separatorconfiguration.md)
+- [var separatorConfiguration: UIListSeparatorConfiguration](./uicollectionlayoutlistconfiguration-swift.struct/separatorconfiguration.md)
   The section’s preferred configuration for list separators.
-- [struct UIListSeparatorConfiguration](uilistseparatorconfiguration-swift.struct.md)
+- [struct UIListSeparatorConfiguration](./uilistseparatorconfiguration-swift.struct.md)
   A configuration that controls the list separator appearance in a list section.
-- [var itemSeparatorHandler: UICollectionLayoutListConfiguration.ItemSeparatorHandler?](uicollectionlayoutlistconfiguration-swift.struct/itemseparatorhandler-swift.property.md)
+- [var itemSeparatorHandler: UICollectionLayoutListConfiguration.ItemSeparatorHandler?](./uicollectionlayoutlistconfiguration-swift.struct/itemseparatorhandler-swift.property.md)
   The closure that provides granular control over the list separator appearance of each item.
-- [UICollectionLayoutListConfiguration.ItemSeparatorHandler](uicollectionlayoutlistconfiguration-swift.struct/itemseparatorhandler-swift.typealias.md)
+- [UICollectionLayoutListConfiguration.ItemSeparatorHandler](./uicollectionlayoutlistconfiguration-swift.struct/itemseparatorhandler-swift.typealias.md)
   A closure that provides granular control over list separator appearance.
 ### Configuring headers and footers
-- [var headerMode: UICollectionLayoutListConfiguration.HeaderMode](uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.property.md)
+- [var headerMode: UICollectionLayoutListConfiguration.HeaderMode](./uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.property.md)
   The type of header to use for the list.
-- [var footerMode: UICollectionLayoutListConfiguration.FooterMode](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.property.md)
+- [var footerMode: UICollectionLayoutListConfiguration.FooterMode](./uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.property.md)
   The type of footer to use for the list.
-- [UICollectionLayoutListConfiguration.HeaderMode](uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.enum.md)
+- [UICollectionLayoutListConfiguration.HeaderMode](./uicollectionlayoutlistconfiguration-swift.struct/headermode-swift.enum.md)
   Constants that describe the list’s header mode.
-- [UICollectionLayoutListConfiguration.FooterMode](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.enum.md)
+- [UICollectionLayoutListConfiguration.FooterMode](./uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.enum.md)
   Constants that describe the list’s footer mode.
-- [var headerTopPadding: CGFloat?](uicollectionlayoutlistconfiguration-swift.struct/headertoppadding.md)
+- [var headerTopPadding: CGFloat?](./uicollectionlayoutlistconfiguration-swift.struct/headertoppadding.md)
   The amount of padding above each section header.
 ### Customizing swipe actions
-- [var leadingSwipeActionsConfigurationProvider: UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider?](uicollectionlayoutlistconfiguration-swift.struct/leadingswipeactionsconfigurationprovider.md)
+- [var leadingSwipeActionsConfigurationProvider: UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider?](./uicollectionlayoutlistconfiguration-swift.struct/leadingswipeactionsconfigurationprovider.md)
   The closure that provides the set of actions to display when swiping on the leading edge of the cell.
-- [var trailingSwipeActionsConfigurationProvider: UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider?](uicollectionlayoutlistconfiguration-swift.struct/trailingswipeactionsconfigurationprovider.md)
+- [var trailingSwipeActionsConfigurationProvider: UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider?](./uicollectionlayoutlistconfiguration-swift.struct/trailingswipeactionsconfigurationprovider.md)
   The closure that provides the set of actions to display when swiping on the trailing edge of the cell.
-- [UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider](uicollectionlayoutlistconfiguration-swift.struct/swipeactionsconfigurationprovider.md)
+- [UICollectionLayoutListConfiguration.SwipeActionsConfigurationProvider](./uicollectionlayoutlistconfiguration-swift.struct/swipeactionsconfigurationprovider.md)
   A closure that configures the swipe actions for a cell.
 ### Managing content-hugging behavior
-- [var contentHuggingElements: UICollectionLayoutListConfiguration.ContentHuggingElements](uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.property.md)
+- [var contentHuggingElements: UICollectionLayoutListConfiguration.ContentHuggingElements](./uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.property.md)
   A setting that determines which type of items tightly hug their content.
-- [UICollectionLayoutListConfiguration.ContentHuggingElements](uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.struct.md)
+- [UICollectionLayoutListConfiguration.ContentHuggingElements](./uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.struct.md)
   Constants that determine which types of items in a collection view tightly hug their content.
 
 ## See Also
 
-- [static func list(using: UICollectionLayoutListConfiguration, layoutEnvironment: any NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection](nscollectionlayoutsection/list(using:layoutenvironment:).md)
+### Related Documentation
+- [static func list(using: UICollectionLayoutListConfiguration, layoutEnvironment: any NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection](./nscollectionlayoutsection/list%28using,layoutenvironment%29.md)
   Creates a list section with the specified list configuration and layout environment.
-- [static func list(using: UICollectionLayoutListConfiguration) -> UICollectionViewCompositionalLayout](uicollectionviewcompositionallayout/list(using:).md)
+### Creating a list layout
+- [static func list(using: UICollectionLayoutListConfiguration) -> UICollectionViewCompositionalLayout](./uicollectionviewcompositionallayout/list%28using%29.md)
   Creates a compositional layout that contains only list sections of the specified configuration.
 
 

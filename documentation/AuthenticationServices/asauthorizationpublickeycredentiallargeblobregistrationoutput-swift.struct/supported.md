@@ -1,7 +1,8 @@
 # supported
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,7 +19,8 @@ static var supported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOut
 
 ## See Also
 
-- [static var unsupported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](asauthorizationpublickeycredentiallargeblobregistrationoutput-swift.struct/unsupported.md)
+### Using defined support values
+- [static var unsupported: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput](./unsupported.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # insert(moving:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the elements of a fully initialized buffer into this array, starting at the specified position, and leaving the buffer uninitialized.
 
@@ -24,7 +25,7 @@ mutating func insert(moving items: UnsafeMutableBufferPointer<Element>, at index
 
 If the array does not have sufficient capacity to hold all elements, then this reallocates storage to extend its capacity, using a geometric growth rate.
 
-> **Note**: O(`self.count` + `items.count`)
+> **Complexity**: O(`self.count` + `items.count`)
 
 ## Parameters
 

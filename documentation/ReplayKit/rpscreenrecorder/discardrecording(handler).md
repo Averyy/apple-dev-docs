@@ -1,17 +1,20 @@
 # discardRecording(handler:)
 
 **Framework**: ReplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Discards the current recording.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 27.0
+- iPadOS 9.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use ScreenCaptureKit SCStream with SCRecordingOutput instead
 
 ## Declaration
 
@@ -19,9 +22,13 @@ Discards the current recording.
 func discardRecording(handler: @escaping () -> Void)
 ```
 
+```objc
+- (void) discardRecordingWithHandler:(void (^)()) handler;
+```
+
 #### Discussion
 
-[`discardRecording(handler:)`](rpscreenrecorder/discardrecording(handler:).md) can only be called after the handler block in [`stopRecording(handler:)`](rpscreenrecorder/stoprecording(handler:).md) has been called. Use the `handler` block to do any required cleanup, including setting any `RPPreviewScreenController` references to `nil`.
+[`discardRecording(handler:)`](./discardrecording%28handler%29.md) can only be called after the handler block in [`stopRecording(handler:)`](./stoprecording%28handler%29.md) has been called. Use the `handler` block to do any required cleanup, including setting any `RPPreviewScreenController` references to `nil`.
 
 ## Parameters
 
@@ -29,19 +36,20 @@ func discardRecording(handler: @escaping () -> Void)
 
 ## See Also
 
-- [func startRecording(handler: (((any Error)?) -> Void)?)](rpscreenrecorder/startrecording(handler:).md)
+### Controlling App Recording
+- [func startRecording(handler: (((any Error)?) -> Void)?)](./startrecording%28handler%29.md)
   Starts recording the app display.
-- [func stopRecording(handler: ((RPPreviewViewController?, (any Error)?) -> Void)?)](rpscreenrecorder/stoprecording(handler:).md)
+- [func stopRecording(handler: ((RPPreviewViewController?, (any Error)?) -> Void)?)](./stoprecording%28handler%29.md)
   Stops the current recording.
-- [func stopRecording(withOutput: URL, completionHandler: (((any Error)?) -> Void)?)](rpscreenrecorder/stoprecording(withoutput:completionhandler:).md)
+- [func stopRecording(withOutput: URL, completionHandler: (((any Error)?) -> Void)?)](./stoprecording%28withoutput,completionhandler%29.md)
   Stops the current recording and writes the movie to the specified output URL.
-- [func startCapture(handler: ((CMSampleBuffer, RPSampleBufferType, (any Error)?) -> Void)?, completionHandler: (((any Error)?) -> Void)?)](rpscreenrecorder/startcapture(handler:completionhandler:).md)
+- [func startCapture(handler: ((CMSampleBuffer, RPSampleBufferType, (any Error)?) -> Void)?, completionHandler: (((any Error)?) -> Void)?)](./startcapture%28handler,completionhandler%29.md)
   Starts screen and audio capture.
-- [enum RPSampleBufferType](rpsamplebuffertype.md)
+- [enum RPSampleBufferType](../rpsamplebuffertype.md)
   The type of media clip sample being buffered.
-- [func stopCapture(handler: (((any Error)?) -> Void)?)](rpscreenrecorder/stopcapture(handler:).md)
+- [func stopCapture(handler: (((any Error)?) -> Void)?)](./stopcapture%28handler%29.md)
   Stops screen capture
-- [func startRecording(withMicrophoneEnabled: Bool, handler: (((any Error)?) -> Void)?)](rpscreenrecorder/startrecording(withmicrophoneenabled:handler:).md)
+- [func startRecording(withMicrophoneEnabled: Bool, handler: (((any Error)?) -> Void)?)](./startrecording%28withmicrophoneenabled,handler%29.md)
   Starts recording the app’s audio and video.
 
 

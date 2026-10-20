@@ -1,7 +1,8 @@
 # removeCamera(id:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an immersive camera definition from the venue descriptor.
 
@@ -24,11 +25,12 @@ final func removeCamera(id: String) throws
 
 ## See Also
 
-- [var cameras: [ImmersiveCamera]](venuedescriptor/cameras.md)
+### Configuring cameras
+- [var cameras: [ImmersiveCamera]](./cameras.md)
   An array of all the immersive cameras contained in the venue descriptor (both original and dynamic).
-- [func addCamera(ImmersiveCamera) throws](venuedescriptor/addcamera(_:).md)
+- [func addCamera(ImmersiveCamera) throws](./addcamera%28_%29.md)
   Adds a new immersive camera definition to the venue descriptor.
-- [func cameraViewModel(for: String) -> ImmersiveCameraViewModel?](venuedescriptor/cameraviewmodel(for:).md)
+- [func cameraViewModel(for: String) -> ImmersiveCameraViewModel?](./cameraviewmodel%28for%29.md)
   Returns the camera view model for the given immersive camera identifier.
 
 

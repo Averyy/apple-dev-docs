@@ -1,7 +1,8 @@
 # MTLTensorDataType.float16
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A half-precision floating point data type.
 
@@ -17,6 +18,10 @@ A half-precision floating point data type.
 
 ```swift
 case float16
+```
+
+```c
+MTLTensorDataTypeFloat16
 ```
 
 

@@ -1,7 +1,8 @@
 # predicate(forMerchantCategoryCodes:)
 
 **Framework**: FinanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A predicate that returns transactions that match any of the provided merchant category codes.
 
@@ -21,9 +22,10 @@ static func predicate(forMerchantCategoryCodes merchantCategoryCodes: [MerchantC
 
 ## See Also
 
-- [static func predicate(forStatuses: [TransactionStatus]) -> Predicate<Transaction>](transactionquery/predicate(forstatuses:).md)
+### Type Methods
+- [static func predicate(forStatuses: [TransactionStatus]) -> Predicate<Transaction>](./predicate%28forstatuses%29.md)
   Returns a predicate that matches any of the provided transaction statuses.
-- [static func predicate(forTransactionTypes: [TransactionType]) -> Predicate<Transaction>](transactionquery/predicate(fortransactiontypes:).md)
+- [static func predicate(forTransactionTypes: [TransactionType]) -> Predicate<Transaction>](./predicate%28fortransactiontypes%29.md)
   Returns a predicate that matches any of the provided transaction types.
 
 

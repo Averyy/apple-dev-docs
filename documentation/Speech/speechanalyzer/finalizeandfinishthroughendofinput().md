@@ -1,7 +1,8 @@
 # finalizeAndFinishThroughEndOfInput()
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finishes analysis after an audio input sequence has been terminated and fully consumed and the modules’ results are finalized.
 
@@ -21,21 +22,22 @@ final func finalizeAndFinishThroughEndOfInput() async throws
 
 #### Discussion
 
-This method waits until the input sequence has been terminated and fully consumed, then finalizes like [`finalize(through:)`](speechanalyzer/finalize(through:).md) and finishes analysis like [`finish(after:)`](speechanalyzer/finish(after:).md).
+This method waits until the input sequence has been terminated and fully consumed, then finalizes like [`finalize(through:)`](./finalize%28through%29.md) and finishes analysis like [`finish(after:)`](./finish%28after%29.md).
 
 If there is no input sequence, this method waits until there is an input sequence and the sequence terminates. If the input sequence is replaced using one of the `start` methods, this method continues waiting for the replacement input sequence to terminate.
 
 This method is primarily useful for autonomous analysis started via one of the `start` methods or a similar initializer.
 
-> **Note**: `CancellationError` if analysis is finished early before the end of input
+> **Throws**: `CancellationError` if analysis is finished early before the end of input
 
 ## See Also
 
-- [func cancelAndFinishNow() async](speechanalyzer/cancelandfinishnow.md)
+### Finishing analysis
+- [func cancelAndFinishNow() async](./cancelandfinishnow%28%29.md)
   Finishes analysis immediately.
-- [func finalizeAndFinish(through: CMTime) async throws](speechanalyzer/finalizeandfinish(through:).md)
+- [func finalizeAndFinish(through: CMTime) async throws](./finalizeandfinish%28through%29.md)
   Finishes analysis after finalizing results for a given time-code.
-- [func finish(after: CMTime) async throws](speechanalyzer/finish(after:).md)
+- [func finish(after: CMTime) async throws](./finish%28after%29.md)
   Finishes analysis once input for a given time is consumed.
 
 

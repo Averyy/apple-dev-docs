@@ -1,7 +1,8 @@
 # unwindAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action method associated with the unwind segue.
 
@@ -18,15 +19,20 @@ The action method associated with the unwind segue.
 var unwindAction: Selector { get }
 ```
 
+```objc
+@property (readonly) SEL unwindAction;
+```
+
 #### Discussion
 
 Each unwind segue has an associated action method. The view controller that’s the destination of the unwind segue must implement this action method.
 
 ## See Also
 
-- [var source: UIViewController](uistoryboardunwindseguesource/source.md)
+### Getting the unwind segue attributes
+- [var source: UIViewController](./source.md)
   The view controller being dismissed by the unwind segue.
-- [var sender: Any?](uistoryboardunwindseguesource/sender.md)
+- [var sender: Any?](./sender.md)
   The object that performed the unwind action.
 
 

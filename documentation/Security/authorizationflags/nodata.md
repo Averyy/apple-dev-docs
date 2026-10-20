@@ -1,7 +1,8 @@
 # noData
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Private flag. Do not use.
 
@@ -13,6 +14,10 @@ Private flag. Do not use.
 
 ```swift
 static var noData: AuthorizationFlags { get }
+```
+
+```c
+kAuthorizationFlagNoData
 ```
 
 

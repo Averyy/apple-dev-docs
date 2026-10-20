@@ -1,7 +1,8 @@
 # TableSeatIdentifier
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for seats.
 
@@ -21,32 +22,33 @@ The seat identifier needs to be unique across all instances of the same tabletop
 ## Topics
 
 ### Creating seat identifiers
-- [init(Int)](tableseatidentifier/init(_:).md)
+- [init(Int)](./tableseatidentifier/init%28_%29.md)
 ### Getting identifier values
-- [let rawValue: Int](tableseatidentifier/rawvalue.md)
+- [let rawValue: Int](./tableseatidentifier/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct TableState](tablestate.md)
+### Seats
+- [struct TableState](./tablestate.md)
   The state of the table that can be queried and modified.
-- [protocol TableSeat](tableseat.md)
+- [protocol TableSeat](./tableseat.md)
   A protocol for seats at the table that players occupy.
-- [protocol EntityTableSeat](entitytableseat.md)
+- [protocol EntityTableSeat](./entitytableseat.md)
   A protocol for seats at the table that you render using RealityKit.
-- [struct TableSeatState](tableseatstate.md)
+- [struct TableSeatState](./tableseatstate.md)
   The data associated with a seat that a player occupies.
-- [protocol SeatState](seatstate.md)
+- [protocol SeatState](./seatstate.md)
   A protocol for seat data that TabletopKit syncs between players.
 
 

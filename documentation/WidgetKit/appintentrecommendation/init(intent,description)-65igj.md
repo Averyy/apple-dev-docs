@@ -1,7 +1,8 @@
 # init(intent:description:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets.
 
@@ -30,9 +31,10 @@ init(intent: Intent, description: Text)
 
 ## See Also
 
-- [init(intent: Intent, description: LocalizedStringKey)](appintentrecommendation/init(intent:description:)-2p4dh.md)
+### Creating a recommended widget configuration
+- [init(intent: Intent, description: LocalizedStringKey)](./init%28intent,description%29-2p4dh.md)
   Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets with a localized description.
-- [init(intent: Intent, description: some StringProtocol)](appintentrecommendation/init(intent:description:)-7zn32.md)
+- [init(intent: Intent, description: some StringProtocol)](./init%28intent,description%29-7zn32.md)
   Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets.
 
 

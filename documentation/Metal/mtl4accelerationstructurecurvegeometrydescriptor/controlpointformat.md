@@ -1,7 +1,8 @@
 # controlPointFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Declares the format of the control points the control point buffer references.
 
@@ -17,6 +18,10 @@ Declares the format of the control points the control point buffer references.
 
 ```swift
 var controlPointFormat: MTLAttributeFormat { get set }
+```
+
+```objc
+@property (nonatomic) MTLAttributeFormat controlPointFormat;
 ```
 
 #### Discussion

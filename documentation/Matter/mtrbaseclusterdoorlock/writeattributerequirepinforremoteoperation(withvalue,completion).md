@@ -1,7 +1,8 @@
 # writeAttributeRequirePINforRemoteOperation(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeRequirePINforRemoteOperation(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeRequirePINforRemoteOperation(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeRequirePINforRemoteOperationWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

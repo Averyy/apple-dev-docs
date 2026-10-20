@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 14.0+

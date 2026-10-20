@@ -1,7 +1,8 @@
 # AsyncIO
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enqueues an asynchronous request on a bulk or interrupt endpoint.
 
@@ -10,13 +11,13 @@ Enqueues an asynchronous request on a bulk or interrupt endpoint.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t AsyncIO(IOMemoryDescriptor *dataBuffer, uint32_t dataBufferLength, OSAction *completion, uint32_t completionTimeoutMs);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -31,9 +32,10 @@ This method performs an appropriate USB I/O request on the device and notifies y
 
 ## See Also
 
-- [IO](iousbhostpipe/io.md)
+### Interacting with Bulk and Interrupt Endpoints
+- [IO](./io.md)
   Performs a synchronous request on a bulk or interrupt endpoint.
-- [CompleteAsyncIO](iousbhostpipe/completeasyncio.md)
+- [CompleteAsyncIO](./completeasyncio.md)
   Handles the completion of an asynchronous I/O request.
 
 

@@ -1,7 +1,8 @@
 # isDisabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view is in a disabled state.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the view is in a disabled state.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var isDisabled: Bool { get set }
 
 ## See Also
 
-- [var isSelected: Bool](uiviewconfigurationstate-swift.struct/isselected.md)
+### Managing view configuration states
+- [var isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the view is in a selected state.
-- [var isHighlighted: Bool](uiviewconfigurationstate-swift.struct/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the view is in a highlighted state.
-- [var isFocused: Bool](uiviewconfigurationstate-swift.struct/isfocused.md)
+- [var isFocused: Bool](./isfocused.md)
   A Boolean value that indicates whether the view is in a focused state.
-- [var isPinned: Bool](uiviewconfigurationstate-swift.struct/ispinned.md)
+- [var isPinned: Bool](./ispinned.md)
   A Boolean value that indicates whether the view is in a pinned state.
 
 

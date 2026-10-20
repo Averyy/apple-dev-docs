@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -14,11 +15,16 @@
 var flags: SRElectrocardiogramData.Flags { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) SRElectrocardiogramDataFlags flags;
+```
+
 ## See Also
 
-- [SRElectrocardiogramData.Flags](srelectrocardiogramdata/flags-swift.struct.md)
+### Getting electrocardiogram details
+- [SRElectrocardiogramData.Flags](./flags-swift.struct.md)
   Sensor context or events that occur during a sample ECG data reading.
-- [var value: Measurement<UnitElectricPotentialDifference>](srelectrocardiogramdata/value.md)
+- [var value: Measurement<UnitElectricPotentialDifference>](./value.md)
   The electrocardiogram data in microvolts.
 
 

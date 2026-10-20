@@ -1,7 +1,8 @@
 # errSecCSRevokedNotarization
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Notarization indicates this code has been revoked.
 
@@ -13,6 +14,10 @@ Notarization indicates this code has been revoked.
 
 ```swift
 var errSecCSRevokedNotarization: OSStatus { get }
+```
+
+```c
+errSecCSRevokedNotarization
 ```
 
 

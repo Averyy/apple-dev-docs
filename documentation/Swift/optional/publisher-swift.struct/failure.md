@@ -1,7 +1,8 @@
 # Optional.Publisher.Failure
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of error this publisher might publish.
 
@@ -26,7 +27,8 @@ The optional publisher never produces errors.
 
 ## See Also
 
-- [Optional.Publisher.Output](optional/publisher-swift.struct/output-swift.typealias.md)
+### Declaring Publisher Topography
+- [Optional.Publisher.Output](./output-swift.typealias.md)
   The kind of value published by this publisher.
 
 

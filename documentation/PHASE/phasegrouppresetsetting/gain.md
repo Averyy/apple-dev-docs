@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The volume of audio playback.
 
@@ -19,13 +20,18 @@ The volume of audio playback.
 var gain: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double gain;
+```
+
 #### Discussion
 
-The framework sets the value to the [`init(gain:rate:gainCurveType:rateCurveType:)`](phasegrouppresetsetting/init(gain:rate:gaincurvetype:ratecurvetype:).md) parameter, clamped to the range between `0` and `1`. A value of `0` silences the audio and `1` doesn’t modify the audio’s original volume.
+The framework sets the value to the [`init(gain:rate:gainCurveType:rateCurveType:)`](./init%28gain,rate,gaincurvetype,ratecurvetype%29.md) parameter, clamped to the range between `0` and `1`. A value of `0` silences the audio and `1` doesn’t modify the audio’s original volume.
 
 ## See Also
 
-- [var gainCurveType: PHASECurveType](phasegrouppresetsetting/gaincurvetype.md)
+### Setting Loudness
+- [var gainCurveType: PHASECurveType](./gaincurvetype.md)
   A rate of change for the setting’s volume.
 
 

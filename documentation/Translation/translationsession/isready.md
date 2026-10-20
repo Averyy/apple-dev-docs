@@ -1,7 +1,8 @@
 # isReady
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value that indicates whether the system has installed the source and target languages of the session and is ready to begin translation.
 
@@ -21,15 +22,16 @@ var isReady: Bool { get async }
 
 Use this property to check whether a translation is likely to succeed. In a session that can request downloads, it prompts the person to approve downloads if languages aren’t ready yet. In a session that can’t request downloads, it will throw an error if the person calls any functions when languages aren’t ready.
 
-If languages aren’t installed, attach a [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:))  or a [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action:))  function to a SwiftUI View. Then, call either [`prepareTranslation()`](translationsession/preparetranslation().md) or one of the translate functions so the system prompts the person to approve the language downloads.
+If languages aren’t installed, attach a [`translationTask(_:action:)`](../../SwiftUI/view/translationtask%28_,action%29.md)  or a [`translationTask(source:target:action:)`](../../SwiftUI/view/translationtask%28source,target,action%29.md)  function to a SwiftUI View. Then, call either [`prepareTranslation()`](./preparetranslation%28%29.md) or one of the translate functions so the system prompts the person to approve the language downloads.
 
 > **Note**: This value returns whether the languages are currently installed. The person or system can still delete the downloaded languages after calling this, so make sure you handle the appropriate errors when calling one of the translate functions.
 
 ## See Also
 
-- [var canRequestDownloads: Bool](translationsession/canrequestdownloads.md)
+### Accessing the session properties
+- [var canRequestDownloads: Bool](./canrequestdownloads.md)
   A boolean value that indicates whether a translation session can request language downloads.
-- [var preferredStrategy: TranslationSession.Strategy](translationsession/preferredstrategy.md)
+- [var preferredStrategy: TranslationSession.Strategy](./preferredstrategy.md)
   The preferred translation strategy configured for the session.
 
 

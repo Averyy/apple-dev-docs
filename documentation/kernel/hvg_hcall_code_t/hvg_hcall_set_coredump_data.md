@@ -1,14 +1,15 @@
 # HVG_HCALL_SET_COREDUMP_DATA
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 HVG_HCALL_SET_COREDUMP_DATA
 ```
 

@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range of the caption group.
 
@@ -17,9 +18,14 @@ The time range of the caption group.
 var timeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTimeRange timeRange;
+```
+
 ## See Also
 
-- [var captions: [AVCaption]](avcaptiongroup/captions.md)
+### Inspecting the caption group
+- [var captions: [AVCaption]](./captions.md)
   The captions associated with the caption group.
 
 

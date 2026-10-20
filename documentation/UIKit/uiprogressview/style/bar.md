@@ -1,15 +1,16 @@
 # UIProgressView.Style.bar
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The style of progress view that is used in a toolbar.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@ The style of progress view that is used in a toolbar.
 case bar
 ```
 
+```c
+UIProgressViewStyleBar
+```
+
 ## See Also
 
-- [UIProgressView.Style.default](uiprogressview/style/default.md)
+### Constants
+- [UIProgressView.Style.default](./default.md)
   The standard progress-view style.
 
 

@@ -1,7 +1,8 @@
 # titleText
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -18,11 +19,16 @@
 static let titleText: CGPDFTagProperty
 ```
 
+```c
+extern CGPDFTagProperty const kCGPDFTagPropertyTitleText;
+```
+
 ## See Also
 
-- [static let actualText: CGPDFTagProperty](cgpdftagproperty/actualtext.md)
-- [static let alternativeText: CGPDFTagProperty](cgpdftagproperty/alternativetext.md)
-- [static let languageText: CGPDFTagProperty](cgpdftagproperty/languagetext.md)
+### Type Properties
+- [static let actualText: CGPDFTagProperty](./actualtext.md)
+- [static let alternativeText: CGPDFTagProperty](./alternativetext.md)
+- [static let languageText: CGPDFTagProperty](./languagetext.md)
 
 
 ---

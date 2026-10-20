@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBLinkScramblerAlternate](1645132-anonymous/kiofblinkscrambleralternate.md)
-- [kIOFBLinkScramblerNormal](1645132-anonymous/kiofblinkscramblernormal.md)
+- [kIOFBLinkScramblerAlternate](./api-1645132-anonymous/kiofblinkscrambleralternate.md)
+- [kIOFBLinkScramblerNormal](./api-1645132-anonymous/kiofblinkscramblernormal.md)
 
 
 ---

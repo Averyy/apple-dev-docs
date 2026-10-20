@@ -1,7 +1,8 @@
 # encodedPixels
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that applies neither pixel aspect ratio nor clean aperture.
 
@@ -19,15 +20,20 @@ A mode that applies neither pixel aspect ratio nor clean aperture.
 static let encodedPixels: AVAssetImageGenerator.ApertureMode
 ```
 
+```c
+extern AVAssetImageGeneratorApertureMode const AVAssetImageGeneratorApertureModeEncodedPixels;
+```
+
 #### Discussion
 
 The image isn’t cropped to the clean aperture region and isn’t scaled according to the pixel aspect ratio. It displays the image according to its encoded dimensions.
 
 ## See Also
 
-- [static let cleanAperture: AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct/cleanaperture.md)
+### Aperture modes
+- [static let cleanAperture: AVAssetImageGenerator.ApertureMode](./cleanaperture.md)
   A mode that applies both pixel aspect ratio and clean aperture.
-- [static let productionAperture: AVAssetImageGenerator.ApertureMode](avassetimagegenerator/aperturemode-swift.struct/productionaperture.md)
+- [static let productionAperture: AVAssetImageGenerator.ApertureMode](./productionaperture.md)
   A mode that applies only pixel aspect ratio.
 
 

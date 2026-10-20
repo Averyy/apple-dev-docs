@@ -1,7 +1,8 @@
 # resize(_:sizeTensor:mode:centerResult:alignCorners:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a Resize operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a Resize operation and returns the result tensor.
 
 ```swift
 func resize(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTensor, mode: MPSGraphResizeMode, centerResult: Bool, alignCorners: Bool, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) resizeTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size mode:(MPSGraphResizeMode) mode centerResult:(BOOL) centerResult alignCorners:(BOOL) alignCorners name:(NSString *) name;
 ```
 
 #### Return Value

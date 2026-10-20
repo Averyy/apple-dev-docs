@@ -1,7 +1,8 @@
 # init(senselSitingOffsets:blackLevel:whiteLevel:whiteBalanceCCT:whiteBalanceRedFactor:whiteBalanceBlueFactor:colorMatrix:gainFactor:recommendedCrop:extensions:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

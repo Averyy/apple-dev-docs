@@ -1,7 +1,8 @@
 # CopyStringDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a descriptor from the device in the specified language.
 
@@ -10,7 +11,7 @@ Returns a descriptor from the device in the specified language.
 
 ## Declaration
 
-```swift
+```cpp
 virtual const IOUSBStringDescriptor * CopyStringDescriptor(uint8_t index, uint16_t languageID);
 ```
 
@@ -25,15 +26,16 @@ This method uses a `GET_DESCRIPTOR` control request (USB 2.0, section 9.4.3) to 
 ## Parameters
 
 - `index`: The descriptor’s index value.
-- `languageID`: The descriptor’s language ID. You can get the current list of valid language IDs at [`https://www.usb.org/`](https://developer.apple.comhttps://www.usb.org/).
+- `languageID`: The descriptor’s language ID. You can get the current list of valid language IDs at [https://www.usb.org/](https://www.usb.org/).
 
 ## See Also
 
-- [CopyConfigurationDescriptor](iousbhostinterface/copyconfigurationdescriptor.md)
+### Getting Interface-Related Descriptors
+- [CopyConfigurationDescriptor](./copyconfigurationdescriptor.md)
   Retrieves the parent configuration descriptor for this interface.
-- [GetInterfaceDescriptor](iousbhostinterface/getinterfacedescriptor.md)
+- [GetInterfaceDescriptor](./getinterfacedescriptor.md)
   Returns the version of the interface descriptor that is associated with the specified configuration.
-- [CopyStringDescriptor](iousbhostinterface/copystringdescriptor-8k65j.md)
+- [CopyStringDescriptor](./copystringdescriptor-8k65j.md)
   Returns a string descriptor from the device.
 
 

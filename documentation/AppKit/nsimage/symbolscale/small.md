@@ -1,7 +1,8 @@
 # NSImage.SymbolScale.small
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The symbol uses the small scale variant.
 
@@ -14,15 +15,20 @@ The symbol uses the small scale variant.
 case small
 ```
 
+```c
+NSImageSymbolScaleSmall
+```
+
 #### Discussion
 
-This scale is approximately 20% smaller than the [`NSImage.SymbolScale.medium`](nsimage/symbolscale/medium.md) scale.
+This scale is approximately 20% smaller than the [`NSImage.SymbolScale.medium`](./medium.md) scale.
 
 ## See Also
 
-- [NSImage.SymbolScale.medium](nsimage/symbolscale/medium.md)
+### Constants
+- [NSImage.SymbolScale.medium](./medium.md)
   The symbol uses the default medium scale variant.
-- [NSImage.SymbolScale.large](nsimage/symbolscale/large.md)
+- [NSImage.SymbolScale.large](./large.md)
   The symbol uses the large scale variant.
 
 

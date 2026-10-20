@@ -1,7 +1,8 @@
 # buildDataFrame(_:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Builds a data frame containing a labels column and a probability distribution column.
 

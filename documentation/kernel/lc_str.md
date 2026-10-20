@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 union lc_str {
     ...
 };
@@ -17,7 +17,7 @@ union lc_str {
 ## Topics
 
 ### Miscellaneous
-- [offset](lc_str/1525282-offset.md)
+- [offset](./lc_str/api-1525282-offset.md)
   A long integer. A byte offset from the start of the load command that contains this string to the start of the string data.
 
 

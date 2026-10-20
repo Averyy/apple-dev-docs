@@ -1,7 +1,8 @@
 # materials
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of materials that cloth colliders and cloth bodies can use in this simulation.
 
@@ -18,13 +19,14 @@ var materials: ClothSimulationComponent.MaterialCollection
 
 #### Discussion
 
-Cloth bodies and colliders can refer to these materials by specifying the material name via [`materialNames`](clothbodycomponent/materialnames.md) and [`materialNames`](clothcollidercomponent/materialnames.md).
+Cloth bodies and colliders can refer to these materials by specifying the material name via [`materialNames`](../clothbodycomponent/materialnames.md) and [`materialNames`](../clothcollidercomponent/materialnames.md).
 
 ## See Also
 
-- [ClothSimulationComponent.MaterialCollection](clothsimulationcomponent/materialcollection.md)
+### Assigning materials
+- [ClothSimulationComponent.MaterialCollection](./materialcollection.md)
   A collection of materials.
-- [ClothSimulationComponent.Material](clothsimulationcomponent/material.md)
+- [ClothSimulationComponent.Material](./material.md)
   A material that represents a cloth body or collider material.
 
 

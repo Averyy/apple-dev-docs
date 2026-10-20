@@ -1,7 +1,8 @@
 # isConnected
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system has a connection to the external storage device.
 
@@ -18,20 +19,25 @@ A Boolean value that indicates whether the system has a connection to the extern
 var isConnected: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isConnected) BOOL connected;
+```
+
 ## See Also
 
-- [var displayName: String?](avexternalstoragedevice/displayname.md)
+### Inspecting a storage device
+- [var displayName: String?](./displayname.md)
   The name of an external storage device that’s appropriate for a user interface.
-- [var uuid: UUID?](avexternalstoragedevice/uuid.md)
+- [var uuid: UUID?](./uuid.md)
   The external storage device’s unique identifier.
-- [var freeSize: Int](avexternalstoragedevice/freesize.md)
+- [var freeSize: Int](./freesize.md)
   The amount of free storage space, in bytes, that’s available on the external storage device.
-- [var totalSize: Int](avexternalstoragedevice/totalsize.md)
+- [var totalSize: Int](./totalsize.md)
   The total amount of storage space, in bytes, that’s available on the external storage device.
-- [var isNotRecommendedForCaptureUse: Bool](avexternalstoragedevice/isnotrecommendedforcaptureuse.md)
+- [var isNotRecommendedForCaptureUse: Bool](./isnotrecommendedforcaptureuse.md)
   A Boolean value that indicates whether the external storage device is suitable for camera capture.
-- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](avexternalstoragedevice/reasonsnotrecommendedforcaptureuse.md)
-- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse.md)
+- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](./reasonsnotrecommendedforcaptureuse.md)
+- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](./reasonnotrecommendedforcaptureuse.md)
 
 
 ---

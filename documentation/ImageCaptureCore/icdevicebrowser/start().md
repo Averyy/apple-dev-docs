@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to start looking for devices.
 
@@ -18,21 +19,26 @@ Tells the delegate to start looking for devices.
 func start()
 ```
 
+```objc
+- (void) start;
+```
+
 #### Discussion
 
-Set the [`delegate`](icdevicebrowser/delegate.md) before calling this method; otherwise, the method call is ignored.
+Set the [`delegate`](./delegate.md) before calling this method; otherwise, the method call is ignored.
 
 ## See Also
 
-- [var isBrowsing: Bool](icdevicebrowser/isbrowsing.md)
+### Browsing Devices
+- [var isBrowsing: Bool](./isbrowsing.md)
   A Boolean value indicating whether the device browser is browsing for devices.
-- [var devices: [ICDevice]?](icdevicebrowser/devices.md)
+- [var devices: [ICDevice]?](./devices.md)
   All devices found by the browser.
-- [class ICDevice](icdevice.md)
+- [class ICDevice](../icdevice.md)
   An abstract object that represents a device.
-- [var browsedDeviceTypeMask: ICDeviceTypeMask](icdevicebrowser/browseddevicetypemask.md)
+- [var browsedDeviceTypeMask: ICDeviceTypeMask](./browseddevicetypemask.md)
   A mask whose set bits indicate the type of devices being browsed after the delegate receives the start message.
-- [func stop()](icdevicebrowser/stop.md)
+- [func stop()](./stop%28%29.md)
   Tells the delegate to stop looking for devices.
 
 

@@ -1,7 +1,8 @@
 # MLModelClassifierAdaptor.Label.string(_:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The label is string type.
 
@@ -22,7 +23,8 @@ case string(String)
 
 ## See Also
 
-- [MLModelClassifierAdaptor.Label.int(_:)](mlmodelclassifieradaptor/label/int(_:).md)
+### Label types
+- [MLModelClassifierAdaptor.Label.int(_:)](./int%28_%29.md)
   The label is integer type.
 
 

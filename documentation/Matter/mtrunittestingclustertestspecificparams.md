@@ -1,7 +1,8 @@
 # MTRUnitTestingClusterTestSpecificParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,26 +19,30 @@
 class MTRUnitTestingClusterTestSpecificParams
 ```
 
+```objc
+@interface MTRUnitTestingClusterTestSpecificParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var serverSideProcessingTimeout: NSNumber?](mtrunittestingclustertestspecificparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrunittestingclustertestspecificparams/timedinvoketimeoutms.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrunittestingclustertestspecificparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrunittestingclustertestspecificparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTestClusterClusterTestSpecificParams](mtrtestclusterclustertestspecificparams.md)
+- [MTRTestClusterClusterTestSpecificParams](./mtrtestclusterclustertestspecificparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

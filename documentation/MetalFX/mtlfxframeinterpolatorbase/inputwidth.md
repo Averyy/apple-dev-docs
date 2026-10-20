@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width, in pixels, of the input depth and motion texture for the frame interpolator.
@@ -17,6 +18,10 @@ The width, in pixels, of the input depth and motion texture for the frame interp
 
 ```swift
 var inputWidth: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger inputWidth;
 ```
 
 

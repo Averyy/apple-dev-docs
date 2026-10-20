@@ -1,7 +1,8 @@
 # TextFieldStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A specification for the appearance and interaction of a text field.
 
@@ -23,53 +24,54 @@ protocol TextFieldStyle
 ## Topics
 
 ### Getting built-in text field styles
-- [static var automatic: DefaultTextFieldStyle](textfieldstyle/automatic.md)
+- [static var automatic: DefaultTextFieldStyle](./textfieldstyle/automatic.md)
   The default text field style, based on the text field’s context.
-- [static var bordered: BorderedTextFieldStyle](textfieldstyle/bordered.md)
-  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
-- [static var plain: PlainTextFieldStyle](textfieldstyle/plain.md)
+- [static var bordered: BorderedTextFieldStyle](./textfieldstyle/bordered.md)
+  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](./view/textinputbordershape%28_%29.md) modifier.
+- [static var plain: PlainTextFieldStyle](./textfieldstyle/plain.md)
   A text field style with no decoration.
 ### Supporting types
-- [struct BorderedTextFieldStyle](borderedtextfieldstyle.md)
+- [struct BorderedTextFieldStyle](./borderedtextfieldstyle.md)
   A text field style with a system-defined border.
-- [struct DefaultTextFieldStyle](defaulttextfieldstyle.md)
+- [struct DefaultTextFieldStyle](./defaulttextfieldstyle.md)
   The default text field style, based on the text field’s context.
-- [struct PlainTextFieldStyle](plaintextfieldstyle.md)
+- [struct PlainTextFieldStyle](./plaintextfieldstyle.md)
   A text field style with no decoration.
 ### Deprecated
-- [static var roundedBorder: RoundedBorderTextFieldStyle](textfieldstyle/roundedborder.md)
+- [static var roundedBorder: RoundedBorderTextFieldStyle](./textfieldstyle/roundedborder.md)
   A text field style with a system-defined rounded border.
-- [static var squareBorder: SquareBorderTextFieldStyle](textfieldstyle/squareborder.md)
+- [static var squareBorder: SquareBorderTextFieldStyle](./textfieldstyle/squareborder.md)
   A text field style with a system-defined square border.
-- [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)
+- [struct RoundedBorderTextFieldStyle](./roundedbordertextfieldstyle.md)
   A text field style with a system-defined rounded border.
-- [struct SquareBorderTextFieldStyle](squarebordertextfieldstyle.md)
+- [struct SquareBorderTextFieldStyle](./squarebordertextfieldstyle.md)
   A text field style with a system-defined square border.
 
 ## Relationships
 
 ### Conforming Types
-- [BorderedTextFieldStyle](borderedtextfieldstyle.md)
-- [DefaultTextFieldStyle](defaulttextfieldstyle.md)
-- [PlainTextFieldStyle](plaintextfieldstyle.md)
-- [RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)
-- [SquareBorderTextFieldStyle](squarebordertextfieldstyle.md)
+- [BorderedTextFieldStyle](./borderedtextfieldstyle.md)
+- [DefaultTextFieldStyle](./defaulttextfieldstyle.md)
+- [PlainTextFieldStyle](./plaintextfieldstyle.md)
+- [RoundedBorderTextFieldStyle](./roundedbordertextfieldstyle.md)
+- [SquareBorderTextFieldStyle](./squarebordertextfieldstyle.md)
 
 ## See Also
 
-- [func labelStyle<S>(S) -> some View](view/labelstyle(_:).md)
+### Styling views that display text
+- [func labelStyle<S>(S) -> some View](./view/labelstyle%28_%29.md)
   Sets the style for labels within this view.
-- [protocol LabelStyle](labelstyle.md)
+- [protocol LabelStyle](./labelstyle.md)
   A type that applies a custom appearance to all labels within a view.
-- [struct LabelStyleConfiguration](labelstyleconfiguration.md)
+- [struct LabelStyleConfiguration](./labelstyleconfiguration.md)
   The properties of a label.
-- [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
+- [func textFieldStyle<S>(S) -> some View](./view/textfieldstyle%28_%29.md)
   Sets the style for text fields within this view.
-- [func textEditorStyle(some TextEditorStyle) -> some View](view/texteditorstyle(_:).md)
+- [func textEditorStyle(some TextEditorStyle) -> some View](./view/texteditorstyle%28_%29.md)
   Sets the style for text editors within this view.
-- [protocol TextEditorStyle](texteditorstyle.md)
+- [protocol TextEditorStyle](./texteditorstyle.md)
   A specification for the appearance and interaction of a text editor.
-- [struct TextEditorStyleConfiguration](texteditorstyleconfiguration.md)
+- [struct TextEditorStyleConfiguration](./texteditorstyleconfiguration.md)
   The properties of a text editor.
 
 

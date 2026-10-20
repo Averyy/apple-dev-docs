@@ -1,7 +1,8 @@
 # HIDDeviceError.notPermitted
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The client isn’t permitted to make this request with the provided arguments.
 

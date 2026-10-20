@@ -1,7 +1,8 @@
 # init(configuration:resources:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a standalone render context using resources prepared ahead of time.
 
@@ -19,9 +20,9 @@ init(configuration: LowLevelRenderContextStandalone.Configuration, resources: Lo
 
 #### Discussion
 
-Prefer this overload when sharing the same resources across multiple render contexts. To create a single context without prepared resources, use [`init(configuration:)`](lowlevelrendercontextstandalone/init(configuration:).md) instead.
+Prefer this overload when sharing the same resources across multiple render contexts. To create a single context without prepared resources, use [`init(configuration:)`](./init%28configuration%29.md) instead.
 
-> **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the context cannot be created.
+> **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if the context cannot be created.
 
 ## Parameters
 
@@ -30,11 +31,12 @@ Prefer this overload when sharing the same resources across multiple render cont
 
 ## See Also
 
-- [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](lowlevelrendercontextstandalone/init(configuration:).md)
+### Creating a render context
+- [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](./init%28configuration%29.md)
   Creates a standalone render context, asynchronously preparing required resources.
-- [LowLevelRenderContextStandalone.Configuration](lowlevelrendercontextstandalone/configuration.md)
+- [LowLevelRenderContextStandalone.Configuration](./configuration.md)
   Configuration for creating a standalone render context backed by a Metal device.
-- [LowLevelRenderContextStandalone.Resources](lowlevelrendercontextstandalone/resources.md)
+- [LowLevelRenderContextStandalone.Resources](./resources.md)
   Resources needed for a render context
 
 

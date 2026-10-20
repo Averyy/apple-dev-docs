@@ -1,7 +1,8 @@
 # write(_:)
 
 **Framework**: Compression  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes data to the output filter.
 
@@ -11,7 +12,7 @@ Writes data to the output filter.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ func write<D>(_ data: D?) throws where D : DataProtocol
 
 ## See Also
 
-- [func finalize() throws](outputfilter/finalize.md)
+### Instance Methods
+- [func finalize() throws](./finalize%28%29.md)
   Finalizes the stream by flushing all the remaining data in the stream.
 
 

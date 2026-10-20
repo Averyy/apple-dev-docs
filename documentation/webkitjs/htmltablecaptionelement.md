@@ -1,7 +1,8 @@
 # HTMLTableCaptionElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLTableCaptionElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [align](htmltablecaptionelement/1631567-align.md)
+- [align](./htmltablecaptionelement/api-1631567-align.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

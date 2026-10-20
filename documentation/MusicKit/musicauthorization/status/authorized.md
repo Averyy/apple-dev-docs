@@ -1,7 +1,8 @@
 # MusicAuthorization.Status.authorized
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user granted permission for the current app to use MusicKit.
 

@@ -1,14 +1,15 @@
 # BEGestureType.imPhraseBoundaryDrag
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A gesture for dragging to adjust input method phrase boundaries.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -18,9 +19,14 @@ A gesture for dragging to adjust input method phrase boundaries.
 case imPhraseBoundaryDrag
 ```
 
+```c
+BEGestureTypeIMPhraseBoundaryDrag
+```
+
 ## See Also
 
-- [BEGestureType.twoFingerRangedSelectGesture](begesturetype/twofingerrangedselectgesture.md)
+### Selection and range gestures
+- [BEGestureType.twoFingerRangedSelectGesture](./twofingerrangedselectgesture.md)
   A gesture to select a range of text with two fingers.
 
 

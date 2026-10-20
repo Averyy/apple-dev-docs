@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the command.
 
@@ -20,11 +21,12 @@ var duration: CMTime
 
 ## See Also
 
-- [var id: Int](shotflopcommand/id.md)
+### Instance Properties
+- [var id: Int](./id.md)
   A unique command ID for the immersive media file.
-- [var offset: CMTime?](shotflopcommand/offset.md)
+- [var offset: CMTime?](./offset.md)
   The offset from the start time of this command.
-- [var time: CMTime](shotflopcommand/time.md)
+- [var time: CMTime](./time.md)
   The time this command starts during playback.
 
 

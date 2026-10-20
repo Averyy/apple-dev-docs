@@ -1,7 +1,8 @@
 # keyTransactionIDAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Transaction ID identifying a series of Apple events that are part of one transaction.
 

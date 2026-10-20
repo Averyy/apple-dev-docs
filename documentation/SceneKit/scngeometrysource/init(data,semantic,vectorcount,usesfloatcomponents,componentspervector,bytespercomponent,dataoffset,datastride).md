@@ -1,23 +1,28 @@
 # init(data:semantic:vectorCount:usesFloatComponents:componentsPerVector:bytesPerComponent:dataOffset:dataStride:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a geometry source from the specified data and options.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 convenience init(data: Data, semantic: SCNGeometrySource.Semantic, vectorCount: Int, usesFloatComponents floatComponents: Bool, componentsPerVector: Int, bytesPerComponent: Int, dataOffset offset: Int, dataStride stride: Int)
+```
+
+```objc
++ (instancetype) geometrySourceWithData:(NSData *) data semantic:(SCNGeometrySourceSemantic) semantic vectorCount:(NSInteger) vectorCount floatComponents:(BOOL) floatComponents componentsPerVector:(NSInteger) componentsPerVector bytesPerComponent:(NSInteger) bytesPerComponent dataOffset:(NSInteger) offset dataStride:(NSInteger) stride;
 ```
 
 #### Return Value
@@ -26,16 +31,16 @@ A new geometry source object.
 
 #### Discussion
 
-A geometry source’s data is an array of vectors, each of which represents a particular attribute (or semantic) of a vertex in the geometry. The other parameters determine how SceneKit interprets this data. For example, an array of vertex positions may have three 32-bit floating-point components per vector, but an array of texture coordinates may have two 8-bit integer coponents per vector. You can use the `offset` and `stride` parameters together to interleave data for multiple geometry sources in the same array, improving rendering performance. See [`SCNGeometrySource`](scngeometrysource.md) for details.
+A geometry source’s data is an array of vectors, each of which represents a particular attribute (or semantic) of a vertex in the geometry. The other parameters determine how SceneKit interprets this data. For example, an array of vertex positions may have three 32-bit floating-point components per vector, but an array of texture coordinates may have two 8-bit integer coponents per vector. You can use the `offset` and `stride` parameters together to interleave data for multiple geometry sources in the same array, improving rendering performance. See [`SCNGeometrySource`](../scngeometrysource.md) for details.
 
-To create a custom [`SCNGeometry`](scngeometry.md) object from the geometry source, use the [`init(sources:elements:)`](scngeometry/init(sources:elements:).md) method.
+To create a custom [`SCNGeometry`](../scngeometry.md) object from the geometry source, use the [`init(sources:elements:)`](../scngeometry/init%28sources,elements%29.md) method.
 
 ## Parameters
 
 - `data`: The data for the geometry source.
 - `semantic`: The semantic value (or attribute) that the geometry source describes for each vertex. See Geometry Semantic Identifiers for available values.
 - `vectorCount`: The number of geometry source vectors.
-- `floatComponents`: A Boolean value that indicates whether vector components are floating-point values. Specify [`true`](https://developer.apple.com/documentation/swift/true) for floating-point values, or [`false`](https://developer.apple.com/documentation/swift/false) for integer values.
+- `floatComponents`: A Boolean value that indicates whether vector components are floating-point values. Specify [`true`](../../Swift/true.md) for floating-point values, or [`false`](../../Swift/false.md) for integer values.
 - `componentsPerVector`: The number of scalar components in each vector.
 - `bytesPerComponent`: The size, in bytes, of each vector component.
 - `offset`: The offset, in bytes, from the beginning of the data to the first vector component to be used in the geometry source.
@@ -43,11 +48,12 @@ To create a custom [`SCNGeometry`](scngeometry.md) object from the geometry sour
 
 ## See Also
 
-- [convenience init(vertices: [SCNVector3])](scngeometrysource/init(vertices:).md)
+### Creating Geometry Sources
+- [convenience init(vertices: [SCNVector3])](./init%28vertices%29.md)
   Creates a geometry source from an array of vertex positions.
-- [convenience init(normals: [SCNVector3])](scngeometrysource/init(normals:).md)
+- [convenience init(normals: [SCNVector3])](./init%28normals%29.md)
   Creates a geometry source from an array of normal vectors.
-- [convenience init(textureCoordinates: [CGPoint])](scngeometrysource/init(texturecoordinates:).md)
+- [convenience init(textureCoordinates: [CGPoint])](./init%28texturecoordinates%29.md)
   Creates a geometry source from an array of texture coordinate points.
 
 

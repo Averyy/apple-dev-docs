@@ -1,7 +1,8 @@
 # HKPredicateKeyPathClinicalRecordFHIRResourceType
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing the resource type of a Fast Healthcare Interoperability Resources (FHIR) record.
 
@@ -18,9 +19,14 @@ The key path for accessing the resource type of a Fast Healthcare Interoperabili
 let HKPredicateKeyPathClinicalRecordFHIRResourceType: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathClinicalRecordFHIRResourceType;
+```
+
 ## See Also
 
-- [let HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier: String](hkpredicatekeypathclinicalrecordfhirresourceidentifier.md)
+### Clinical record keys
+- [let HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier: String](./hkpredicatekeypathclinicalrecordfhirresourceidentifier.md)
   The key path for accessing the clinical record’s Fast Healthcare Interoperability Resources (FHIR) identifier.
 
 

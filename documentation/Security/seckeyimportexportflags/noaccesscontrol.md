@@ -1,7 +1,8 @@
 # noAccessControl
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates imported private keys have no access object attached to them.
 
@@ -14,9 +15,13 @@ A flag that indicates imported private keys have no access object attached to th
 static var noAccessControl: SecKeyImportExportFlags { get }
 ```
 
+```c
+kSecKeyNoAccessControl
+```
+
 #### Discussion
 
-In the absence of both this bit and the [`accessRef`](secitemimportexportkeyparameters/accessref.md) field in the [`SecItemImportExportKeyParameters`](secitemimportexportkeyparameters.md) structure, imported private keys receive default access controls.
+In the absence of both this bit and the [`accessRef`](../secitemimportexportkeyparameters/accessref.md) field in the [`SecItemImportExportKeyParameters`](../secitemimportexportkeyparameters.md) structure, imported private keys receive default access controls.
 
 
 ---

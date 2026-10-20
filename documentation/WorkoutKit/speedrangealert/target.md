@@ -1,7 +1,8 @@
 # target
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target range of speed measurements.
 
@@ -20,9 +21,10 @@ var target: ClosedRange<Measurement<UnitSpeed>>
 
 ## See Also
 
-- [var targetQuantityLowerBound: HKQuantity](speedrangealert/targetquantitylowerbound.md)
+### Accessing alert data
+- [var targetQuantityLowerBound: HKQuantity](./targetquantitylowerbound.md)
   The target range’s lower bounds.
-- [var targetQuantityUpperBound: HKQuantity](speedrangealert/targetquantityupperbound.md)
+- [var targetQuantityUpperBound: HKQuantity](./targetquantityupperbound.md)
   The target range’s upper bounds.
 
 

@@ -1,7 +1,8 @@
 # WeatherMetadata
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that provides additional weather information.
 
@@ -27,33 +28,34 @@ Metadata information includes the location, date of the request, the date the da
 ## Topics
 
 ### Getting the properties
-- [var date: Date](weathermetadata/date.md)
+- [var date: Date](./weathermetadata/date.md)
   The time of the weather data request.
-- [var expirationDate: Date](weathermetadata/expirationdate.md)
+- [var expirationDate: Date](./weathermetadata/expirationdate.md)
   The time the weather data expires.
-- [var location: CLLocation](weathermetadata/location.md)
+- [var location: CLLocation](./weathermetadata/location.md)
   The location of the request.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WeatherQuery](weatherquery.md)
+### Requests
+- [struct WeatherQuery](./weatherquery.md)
   A structure that encapsulates a generic weather dataset request.
-- [struct CurrentWeather](currentweather.md)
+- [struct CurrentWeather](./currentweather.md)
   A structure that describes the current conditions observed at a location.
-- [struct WeatherAttribution](weatherattribution.md)
+- [struct WeatherAttribution](./weatherattribution.md)
   A structure that  defines the necessary information for attributing a weather data provider.
-- [enum WeatherSeverity](weatherseverity.md)
+- [enum WeatherSeverity](./weatherseverity.md)
   A description of the severity of the severe weather event.
 
 

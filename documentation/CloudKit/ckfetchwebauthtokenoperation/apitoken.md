@@ -1,7 +1,8 @@
 # apiToken
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The API token that allows access to an app’s container.
 
@@ -20,9 +21,14 @@ The API token that allows access to an app’s container.
 var apiToken: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * APIToken;
+```
+
 ## See Also
 
-- [var fetchWebAuthTokenCompletionBlock: ((String?, (any Error)?) -> Void)?](ckfetchwebauthtokenoperation/fetchwebauthtokencompletionblock.md)
+### Managing the Operation’s Configuration
+- [var fetchWebAuthTokenCompletionBlock: ((String?, (any Error)?) -> Void)?](./fetchwebauthtokencompletionblock.md)
   The block to execute when the operation finishes.
 
 

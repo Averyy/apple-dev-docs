@@ -1,7 +1,8 @@
 # isEdgeLightActive
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A class property indicating whether the edge light UI is actively being shown on a screen.
 
@@ -16,6 +17,10 @@ A class property indicating whether the edge light UI is actively being shown on
 
 ```swift
 class var isEdgeLightActive: Bool { get }
+```
+
+```objc
+@property (class, readonly, getter=isEdgeLightActive) BOOL edgeLightActive;
 ```
 
 #### Discussion

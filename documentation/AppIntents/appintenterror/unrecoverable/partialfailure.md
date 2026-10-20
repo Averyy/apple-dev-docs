@@ -1,7 +1,8 @@
 # partialFailure
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Not every action was completed.
 

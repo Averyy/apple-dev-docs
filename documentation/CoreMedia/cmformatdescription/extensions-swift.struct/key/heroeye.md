@@ -1,7 +1,8 @@
 # heroEye
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates which of the two eyes should be used as the primary when rendering in 2D. It is usually perpendicular to the target image surface.
 

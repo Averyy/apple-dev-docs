@@ -1,7 +1,8 @@
 # usage
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HID specification compliant usage for this collection.
 
@@ -16,7 +17,7 @@ var usage: HIDUsage
 
 #### Discussion
 
-See [`HIDUsage`](hidusage.md) for more details.
+See [`HIDUsage`](../hidusage.md) for more details.
 
 
 ---

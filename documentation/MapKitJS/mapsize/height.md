@@ -1,7 +1,8 @@
 # height
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the map size in map units.
 
@@ -10,13 +11,14 @@ The height of the map size in map units.
 
 ## Declaration
 
-```swift
+```
 height: number;
 ```
 
 ## See Also
 
-- [width](mapsize/width.md)
+### Defining a map size
+- [width](./width.md)
   The width of the map size in map units.
 
 

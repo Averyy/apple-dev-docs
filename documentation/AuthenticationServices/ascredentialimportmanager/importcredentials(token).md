@@ -1,7 +1,8 @@
 # importCredentials(token:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins the credential import process.
 
@@ -24,17 +25,18 @@ The credential data exported from the source app.
 
 #### Discussion
 
-When a person chooses your app to receive credentials exported from another app, the system launches your app using an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) of type `ASCredentialExchangeActivityType`. Handle this in your app delegate for AppKit/UIKit or the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/swiftui/view/oncontinueuseractivity(_:perform:)) modifier for SwiftUI. The `NSUserActivity` you receive contains a single [`UUID`](https://developer.apple.com/documentation/foundation/uuid) object in its `userInfo` field with the key `ASCredentialImportToken`; pass this UUID as the `token` parameter to this method.
+When a person chooses your app to receive credentials exported from another app, the system launches your app using an [`NSUserActivity`](../../Foundation/nsuseractivity.md) of type `ASCredentialExchangeActivityType`. Handle this in your app delegate for AppKit/UIKit or the [`onContinueUserActivity(_:perform:)`](../../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md) modifier for SwiftUI. The `NSUserActivity` you receive contains a single [`UUID`](../../Foundation/uuid.md) object in its `userInfo` field with the key `ASCredentialImportToken`; pass this UUID as the `token` parameter to this method.
 
 This method throws an error if the import can’t proceed, which happens if the token doesn’t match what the system expects, indicating an app other than the one the export was meant for.
 
 ## Parameters
 
-- `token`: The UUID token that the system provided in the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) when launching the app.
+- `token`: The UUID token that the system provided in the [`NSUserActivity`](../../Foundation/nsuseractivity.md) when launching the app.
 
 ## See Also
 
-- [struct ASExportedCredentialData](asexportedcredentialdata.md)
+### Importing credentials
+- [struct ASExportedCredentialData](../asexportedcredentialdata.md)
   A container for credential data that your app provides to an exporter or receives from an importer.
 
 

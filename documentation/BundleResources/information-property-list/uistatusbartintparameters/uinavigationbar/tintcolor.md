@@ -1,7 +1,8 @@
 # TintColor
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The tint color to apply to the background of the navigation bar.
 
@@ -12,9 +13,10 @@ The tint color to apply to the background of the navigation bar.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `TintColor`
+- **Type**: dictionary
 
 #### Discussion
 
@@ -26,9 +28,9 @@ The possible dictionary keys and values are:
 
 ## Properties
 
-- `Blue` (number)
-- `Green` (number)
-- `Red` (number)
+- `Blue` (number): **Default**: `0.0`
+- `Green` (number): **Default**: `0.0`
+- `Red` (number): **Default**: `0.0`
 
 
 ---

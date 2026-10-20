@@ -1,7 +1,8 @@
 # CMTimeRangeContainsTime(_:time:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether a time range contains a time.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether a time range contains a time.
 func CMTimeRangeContainsTime(_ range: CMTimeRange, time: CMTime) -> Bool
 ```
 
+```c
+extern Boolean CMTimeRangeContainsTime(CMTimeRange range, CMTime time);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `range` contains the `time` value; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if `range` contains the `time` value; otherwise, [`false`](../Swift/false.md).
 
 ## Parameters
 
@@ -31,9 +36,10 @@ func CMTimeRangeContainsTime(_ range: CMTimeRange, time: CMTime) -> Bool
 
 ## See Also
 
-- [func CMTimeRangeEqual(CMTimeRange, CMTimeRange) -> Bool](cmtimerangeequal(_:_:).md)
+### Comparing Time Ranges
+- [func CMTimeRangeEqual(CMTimeRange, CMTimeRange) -> Bool](./cmtimerangeequal%28_,_%29.md)
   Returns a Boolean value that indicates whether two time ranges are equal.
-- [func CMTimeRangeContainsTimeRange(CMTimeRange, otherRange: CMTimeRange) -> Bool](cmtimerangecontainstimerange(_:otherrange:).md)
+- [func CMTimeRangeContainsTimeRange(CMTimeRange, otherRange: CMTimeRange) -> Bool](./cmtimerangecontainstimerange%28_,otherrange%29.md)
   Returns a Boolean value that indicates whether a time range contains another time range.
 
 

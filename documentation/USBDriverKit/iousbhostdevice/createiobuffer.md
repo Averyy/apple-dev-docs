@@ -1,7 +1,8 @@
 # CreateIOBuffer
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allocates a buffer for use during I/O operations.
 
@@ -10,17 +11,17 @@ Allocates a buffer for use during I/O operations.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CreateIOBuffer(IOOptionBits options, uint64_t capacity, IOBufferMemoryDescriptor **buffer);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-This method allocates an [`IOBufferMemoryDescriptor`](https://developer.apple.com/documentation/driverkit/iobuffermemorydescriptor) optimized for use by the underlying controller hardware. A buffer allocated by this method isn’t bounced to perform DMA operations.
+This method allocates an [`IOBufferMemoryDescriptor`](../../DriverKit/iobuffermemorydescriptor.md) optimized for use by the underlying controller hardware. A buffer allocated by this method isn’t bounced to perform DMA operations.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # kAEReopenApplication
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Event that reopens an application. Sent, for example, when your application is running and a user clicks your application icon in the Dock.
 

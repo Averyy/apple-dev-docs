@@ -1,6 +1,7 @@
 # Managing Keywords and Negative Keywords
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: Article
 
 Create and manage keywords and negative keywords for ad groups and campaigns.
 
@@ -17,16 +18,16 @@ The following endpoints create, retrieve, update, and delete keywords and negati
 
 | Method | Path | Description |
 | --- | --- | --- |
-| `POST` | `/v1/keywords` | [`Create a Keyword`](post-keywords.md) creates a keyword. |
-| `POST` | `/v1/keywords/query` | [`Query Keywords`](post-keywords-query.md) retrieves keywords matching the specified filters. |
-| `GET` | `/v1/keywords/{id}` | [`Get a Keyword`](get-keywords-_id_.md) retrieves a single keyword by its ID. |
-| `PUT` | `/v1/keywords/{id}` | [`Update a Keyword`](put-keywords-_id_.md) updates an existing keyword. |
-| `DELETE` | `/v1/keywords/{id}` | [`Delete a Keyword`](delete-keywords-_id_.md) soft-deletes a keyword by its ID. |
-| `POST` | `/v1/negative-keywords` | [`Create a Negative Keyword`](post-negative-keywords.md) creates a negative keyword. |
-| `POST` | `/v1/negative-keywords/query` | [`Query Negative Keywords`](post-negative-keywords-query.md) retrieves negative keywords matching the specified filters. |
-| `GET` | `/v1/negative-keywords/{id}` | [`Get a Negative Keyword`](get-negative-keywords-_id_.md) retrieves a single negative keyword by its ID. |
-| `PUT` | `/v1/negative-keywords/{id}` | [`Update a Negative Keyword`](put-negative-keywords-_id_.md) updates an existing negative keyword. |
-| `DELETE` | `/v1/negative-keywords/{id}` | [`Delete a Negative Keyword`](delete-negative-keywords-_id_.md) soft-deletes a negative keyword by its ID. |
+| `POST` | `/v1/keywords` | [`Create a Keyword`](./post-keywords.md) creates a keyword. |
+| `POST` | `/v1/keywords/query` | [`Query Keywords`](./post-keywords-query.md) retrieves keywords matching the specified filters. |
+| `GET` | `/v1/keywords/{id}` | [`Get a Keyword`](./get-keywords-_id_.md) retrieves a single keyword by its ID. |
+| `PUT` | `/v1/keywords/{id}` | [`Update a Keyword`](./put-keywords-_id_.md) updates an existing keyword. |
+| `DELETE` | `/v1/keywords/{id}` | [`Delete a Keyword`](./delete-keywords-_id_.md) soft-deletes a keyword by its ID. |
+| `POST` | `/v1/negative-keywords` | [`Create a Negative Keyword`](./post-negative-keywords.md) creates a negative keyword. |
+| `POST` | `/v1/negative-keywords/query` | [`Query Negative Keywords`](./post-negative-keywords-query.md) retrieves negative keywords matching the specified filters. |
+| `GET` | `/v1/negative-keywords/{id}` | [`Get a Negative Keyword`](./get-negative-keywords-_id_.md) retrieves a single negative keyword by its ID. |
+| `PUT` | `/v1/negative-keywords/{id}` | [`Update a Negative Keyword`](./put-negative-keywords-_id_.md) updates an existing negative keyword. |
+| `DELETE` | `/v1/negative-keywords/{id}` | [`Delete a Negative Keyword`](./delete-negative-keywords-_id_.md) soft-deletes a negative keyword by its ID. |
 
 ##### Configure a Keyword
 
@@ -35,12 +36,12 @@ A keyword belongs to an ad group and associates a search term with a bid. When a
 Each keyword requires:
 
 - `text`: The keyword term to target. For `CATEGORY` match type on Maps campaigns, this must be a Maps business category identifier (for example, `dining.restaurant`).
-- `matchType`: How the keyword matches user queries. The `EXACT` and `BROAD` types apply to App Store campaigns using the Search results placement. The `PHRASE` and `CATEGORY` types apply to Apple Maps campaigns. See [`KeywordMatchType`](keywordmatchtype.md).
+- `matchType`: How the keyword matches user queries. The `EXACT` and `BROAD` types apply to App Store campaigns using the Search results placement. The `PHRASE` and `CATEGORY` types apply to Apple Maps campaigns. See [`KeywordMatchType`](./keywordmatchtype.md).
 - `adGroupId`: The ad group this keyword belongs to.
 
-The `bid` field is optional on create. When provided, it overrides the ad group’s [`BidStrategy`](bidstrategy.md) `bid` for that specific keyword. Maximize Conversions bid strategy campaigns don’t use the `bid` field.
+The `bid` field is optional on create. When provided, it overrides the ad group’s [`BidStrategy`](./bidstrategy.md) `bid` for that specific keyword. Maximize Conversions bid strategy campaigns don’t use the `bid` field.
 
-To enable or pause individual keywords without removing them, use [`KeywordStatus`](keywordstatus.md). A paused keyword remains in the ad group but doesn’t participate in auctions.
+To enable or pause individual keywords without removing them, use [`KeywordStatus`](./keywordstatus.md). A paused keyword remains in the ad group but doesn’t participate in auctions.
 
 ##### Configure a Negative Keyword
 
@@ -60,25 +61,26 @@ The `matchType` field controls how a keyword’s text matches a user’s search 
 | `BROAD` | App Store (Search results) | Matches the keyword and close variants, including misspellings, synonyms, and related terms. Maximizes reach. |
 | `EXACT` | App Store (Search results) | Matches the keyword term precisely. Gives the most control over which queries trigger the ad. |
 | `PHRASE` | Maps | Matches the keyword and close variants within Maps search, allowing flexibility while staying focused on the search intent. |
-| `CATEGORY` | Maps | Matches user searches to a Maps business category (for example, `dining.restaurant`, `shopping.clothing`). Use category identifiers from the [`Query Business Categories`](query-categories.md) endpoint. |
+| `CATEGORY` | Maps | Matches user searches to a Maps business category (for example, `dining.restaurant`, `shopping.clothing`). Use category identifiers from the [`Query Business Categories`](./query-categories.md) endpoint. |
 
 Use `BROAD` as the recommended starting point for Search results campaigns on the App Store when you’re building out a keyword list. To control spend on specific high-value terms, use `EXACT`. For Maps campaigns, use `CATEGORY` to reach users searching for a type of business rather than a specific name.
 
 ##### Perform Bulk Operations
 
-For bulk create, update, and delete across keywords and negative keywords, see [`Bulk Operations Endpoints`](bulk-operations-endpoints.md).
+For bulk create, update, and delete across keywords and negative keywords, see [Bulk Operations Endpoints](./bulk-operations-endpoints.md).
 
 ## See Also
 
-- [Keywords Endpoints](keywords-endpoints.md)
+### Keywords
+- [Keywords Endpoints](./keywords-endpoints.md)
   Create, retrieve, update, query, and delete the keywords that match your ad group’s ads to searches.
-- [Negative Keywords Endpoints](negative-keywords-endpoints.md)
+- [Negative Keywords Endpoints](./negative-keywords-endpoints.md)
   Create, retrieve, update, query, and delete negative keywords that block ads for unwanted searches.
-- [Keywords Data Objects](keywords-data-objects.md)
+- [Keywords Data Objects](./keywords-data-objects.md)
   Build keyword create and update requests, and read keyword responses and query results.
-- [Negative Keywords Data Objects](negative-keywords-objects.md)
+- [Negative Keywords Data Objects](./negative-keywords-objects.md)
   Build negative keyword create and update requests, and read responses and query results.
-- [Keywords Shared Data Types](keywords-shared-data-types.md)
+- [Keywords Shared Data Types](./keywords-shared-data-types.md)
   Set the status and match type of keywords and negative keywords, and interpret a keyword’s display status.
 
 

@@ -1,25 +1,27 @@
 # flags
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint64_t flags;
 ```
 
 ## See Also
 
-- [msgid](iorpcmessage/msgid.md)
-- [objectRefs](iorpcmessage/objectrefs.md)
-- [objects](iorpcmessage/objects.md)
+### Getting the Properties
+- [msgid](./msgid.md)
+- [objectRefs](./objectrefs.md)
+- [objects](./objects.md)
 
 
 ---

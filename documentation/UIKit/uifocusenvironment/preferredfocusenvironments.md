@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of focus environments, ordered by priority, to which this environment prefers focus to be directed during a focus update.
@@ -19,13 +20,18 @@ An array of focus environments, ordered by priority, to which this environment p
 var preferredFocusEnvironments: [any UIFocusEnvironment] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<id<UIFocusEnvironment>> * preferredFocusEnvironments;
+```
+
 #### Discussion
 
 The preferred focus environments listed in this property define where to search for the default focused item in an environment, such as when focus updates programmatically. Starting from the target environment, each preferred focus environment is recursively searched in the order it appears in the array until an eligible, focusable item is found. Preferred focus environments can include focusable and nonfocusable items, in addition to nonitem environments. Returning an empty array is equivalent to returning an array containing only `self`.
 
 ## See Also
 
-- [var preferredFocusedView: UIView?](uifocusenvironment/preferredfocusedview.md)
+### Controlling user-generated focus movements
+- [var preferredFocusedView: UIView?](./preferredfocusedview.md)
   Specifies the view that should be focused if this environment is focused.
 
 

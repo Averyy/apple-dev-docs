@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kATAEnableMultiWordDMAModeMask](1646130-anonymous/kataenablemultiworddmamodemask.md)
-- [kATAEnablePIOModeMask](1646130-anonymous/kataenablepiomodemask.md)
-- [kATAEnableUltraDMAModeMask](1646130-anonymous/kataenableultradmamodemask.md)
+- [kATAEnableMultiWordDMAModeMask](./api-1646130-anonymous/kataenablemultiworddmamodemask.md)
+- [kATAEnablePIOModeMask](./api-1646130-anonymous/kataenablepiomodemask.md)
+- [kATAEnableUltraDMAModeMask](./api-1646130-anonymous/kataenableultradmamodemask.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # readAttributeTxDirectMaxRetryExpiryCount(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeTxDirectMaxRetryExpiryCount(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeTxDirectMaxRetryExpiryCountWithParams:(MTRReadParams *) params;
 ```
 
 

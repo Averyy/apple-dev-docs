@@ -1,7 +1,8 @@
 # AVSpatialCaptureDiscomfortReason
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicate the suitability of the current scene to create a comfortable viewing experience.
 
@@ -18,29 +19,34 @@ Constants that indicate the suitability of the current scene to create a comfort
 struct AVSpatialCaptureDiscomfortReason
 ```
 
+```c
+typedef NSString * AVSpatialCaptureDiscomfortReason;
+```
+
 ## Topics
 
 ### Discomfort reasons
-- [static let notEnoughLight: AVSpatialCaptureDiscomfortReason](avspatialcapturediscomfortreason/notenoughlight.md)
+- [static let notEnoughLight: AVSpatialCaptureDiscomfortReason](./avspatialcapturediscomfortreason/notenoughlight.md)
   A value that indicates the lighting of the current scene isn’t bright enough.
-- [static let subjectTooClose: AVSpatialCaptureDiscomfortReason](avspatialcapturediscomfortreason/subjecttooclose.md)
+- [static let subjectTooClose: AVSpatialCaptureDiscomfortReason](./avspatialcapturediscomfortreason/subjecttooclose.md)
   A value that indicates the focus point of the current scene is too close.
 ### Initializers
-- [init(rawValue: String)](avspatialcapturediscomfortreason/init(rawvalue:).md)
+- [init(rawValue: String)](./avspatialcapturediscomfortreason/init%28rawvalue%29.md)
   Creates a discomfort reason with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var spatialCaptureDiscomfortReasons: Set<AVSpatialCaptureDiscomfortReason>](avcapturedevice/spatialcapturediscomfortreasons.md)
+### Supporting spatial capture
+- [var spatialCaptureDiscomfortReasons: Set<AVSpatialCaptureDiscomfortReason>](./avcapturedevice/spatialcapturediscomfortreasons.md)
   Reasons why current environmental conditions aren’t suitable to capturing spatial videos that are comfortable to view.
 
 

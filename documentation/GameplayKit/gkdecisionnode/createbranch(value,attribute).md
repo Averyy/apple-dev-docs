@@ -1,7 +1,8 @@
 # createBranch(value:attribute:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a child node that the decision tree should use when the current node’s attribute has the specified value.
 
@@ -19,6 +20,10 @@ Creates a child node that the decision tree should use when the current node’s
 func createBranch(value: NSNumber, attribute: any NSObjectProtocol) -> Self
 ```
 
+```objc
+- (instancetype) createBranchWithValue:(NSNumber *) value attribute:(id<NSObject>) attribute;
+```
+
 #### Return Value
 
 The newly created child node.
@@ -27,7 +32,7 @@ The newly created child node.
 
 Use this method to specify a possible result of testing this node’s attribute (that is, an answer for this node’s question). The `attribute` parameter an have either of two kinds of values: if this test produces the decision tree’s final result (or action), the value identifies that action; if the next step in the decision tree is to be another question, the value identifies the next attribute to test (or question to ask).
 
-The `value` parameter is a specific value for this node’s attribute, so this method is useful for questions that must have one of a few specific answers. (If a question has many possible answers, see the [`createBranch(predicate:attribute:)`](gkdecisionnode/createbranch(predicate:attribute:).md) method instead.) For example, a strategy combat game might use this method to choose an attack based on the type of opponent:
+The `value` parameter is a specific value for this node’s attribute, so this method is useful for questions that must have one of a few specific answers. (If a question has many possible answers, see the [`createBranch(predicate:attribute:)`](./createbranch%28predicate,attribute%29.md) method instead.) For example, a strategy combat game might use this method to choose an attack based on the type of opponent:
 
 **Swift**:
 
@@ -69,9 +74,10 @@ GKDecisionNode *root = tree.rootNode;
 
 ## See Also
 
-- [func createBranch(predicate: NSPredicate, attribute: any NSObjectProtocol) -> Self](gkdecisionnode/createbranch(predicate:attribute:).md)
+### Creating Child Nodes for Decision Branches
+- [func createBranch(predicate: NSPredicate, attribute: any NSObjectProtocol) -> Self](./createbranch%28predicate,attribute%29.md)
   Creates a child node that the decision tree should use when the current node’s attribute satisfies the specified predicate.
-- [func createBranch(weight: Int, attribute: any NSObjectProtocol) -> Self](gkdecisionnode/createbranch(weight:attribute:).md)
+- [func createBranch(weight: Int, attribute: any NSObjectProtocol) -> Self](./createbranch%28weight,attribute%29.md)
   Creates a child node that the decision tree should use as the result of a random choice, biased by the specified weight.
 
 

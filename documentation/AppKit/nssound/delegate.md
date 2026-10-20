@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sound’s delegate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,10 +15,15 @@ The sound’s delegate.
 weak var delegate: (any NSSoundDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSSoundDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSSoundDelegate](nssounddelegate.md)
-  A set of optional methods implemented by delegates of [`NSSound`](nssound.md) objects.
+### Detecting When a Sound Finishes Playing
+- [protocol NSSoundDelegate](../nssounddelegate.md)
+  A set of optional methods implemented by delegates of [`NSSound`](../nssound.md) objects.
 
 
 ---

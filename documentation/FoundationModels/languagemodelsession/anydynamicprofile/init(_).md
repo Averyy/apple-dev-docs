@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance from the dynamic profile you specify.
 
@@ -25,7 +26,8 @@ init(_ dynamicProfile: any LanguageModelSession.DynamicProfile)
 
 ## See Also
 
-- [init(erasing: some LanguageModelSession.DynamicProfile)](languagemodelsession/anydynamicprofile/init(erasing:).md)
+### Creating an instance
+- [init(erasing: some LanguageModelSession.DynamicProfile)](./init%28erasing%29.md)
   Creates an instance from the dynamic profile you specify.
 
 

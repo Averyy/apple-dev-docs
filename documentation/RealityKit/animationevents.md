@@ -1,7 +1,8 @@
 # AnimationEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Notable milestones that the framework signals during animation playback.
 
@@ -11,7 +12,7 @@ Notable milestones that the framework signals during animation playback.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -48,25 +49,26 @@ entitySubscription = view.scene.publisher(for:
 ## Topics
 
 ### Recognizing animation events
-- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted.md)
+- [AnimationEvents.PlaybackStarted](./animationevents/playbackstarted.md)
   The event raised when an animation has been started.
-- [AnimationEvents.PlaybackCompleted](animationevents/playbackcompleted.md)
+- [AnimationEvents.PlaybackCompleted](./animationevents/playbackcompleted.md)
   The event raised when an animation reaches the end of its duration.
-- [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)
+- [AnimationEvents.PlaybackLooped](./animationevents/playbacklooped.md)
   The event raised when an animation loops.
-- [AnimationEvents.PlaybackTerminated](animationevents/playbackterminated.md)
+- [AnimationEvents.PlaybackTerminated](./animationevents/playbackterminated.md)
   The event raised when an animation has been terminated, regardless of whether it ran to completion.
 ### Recognizing skeletal events
-- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete.md)
+- [AnimationEvents.SkeletalPoseUpdateComplete](./animationevents/skeletalposeupdatecomplete.md)
   Raised immediately after the SkeletalPoseSystem has been updated.
 ### Recognizing root motion events
-- [AnimationEvents.RootMotionDidUpdate](animationevents/rootmotiondidupdate.md)
+- [AnimationEvents.RootMotionDidUpdate](./animationevents/rootmotiondidupdate.md)
   The event raised each frame when a new root motion delta is produced for an entity.
 
 ## See Also
 
-- [enum CollisionEvents](collisionevents.md)
-- [enum PhysicsSimulationEvents](physicssimulationevents.md)
+### Physics and motion events
+- [enum CollisionEvents](./collisionevents.md)
+- [enum PhysicsSimulationEvents](./physicssimulationevents.md)
   Types of events that fire during physics simulations
 
 

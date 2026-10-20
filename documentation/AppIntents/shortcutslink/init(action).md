@@ -1,7 +1,8 @@
 # init(action:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a link that launches Shortcuts and then executes the specified closure.
 
@@ -9,7 +10,7 @@ Creates a link that launches Shortcuts and then executes the specified closure.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

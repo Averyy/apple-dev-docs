@@ -1,7 +1,8 @@
 # addIncludedPoint(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Refines the mask with a point that is part of the desired segmentation. Throws an error if the total number of added points exceeds the limit. (13 points when seedPoint or seedScribbleBuffer was used, or 11 points when seedBox was used)
 
@@ -21,11 +22,12 @@ final func addIncludedPoint(_ point: NormalizedPoint) throws
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 ## See Also
 
-- [func addExcludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addexcludedpoint(_:).md)
+### Updating the mask
+- [func addExcludedPoint(NormalizedPoint) throws](./addexcludedpoint%28_%29.md)
   Refines the mask with a point that is excluded from the desired segmentation. Throws an error if the total number of added points exceeds the limit. (13 points when seedPoint or seedScribbleBuffer was used, or 11 points when seedBox was used)
 
 

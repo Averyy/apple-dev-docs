@@ -1,23 +1,30 @@
 # fetchWebAuthTokenCompletionBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to execute when the operation finishes.
 
 **Availability**:
-- iOS 9.2+
-- iPadOS 9.2+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 9.1+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 9.2+ - Deprecated in 15.0
+- iPadOS 9.2+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS 10.11+ - Deprecated in 12.0
+- tvOS 9.1+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use fetchWebAuthTokenResultBlock instead
 
 ## Declaration
 
 ```swift
 var fetchWebAuthTokenCompletionBlock: ((String?, (any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^fetchWebAuthTokenCompletionBlock)(NSString *webAuthToken, NSError *operationError);
 ```
 
 #### Discussion
@@ -31,7 +38,8 @@ The operation executes this closure only once. You must provide a closure capabl
 
 ## See Also
 
-- [var apiToken: String?](ckfetchwebauthtokenoperation/apitoken.md)
+### Managing the Operation’s Configuration
+- [var apiToken: String?](./apitoken.md)
   The API token that allows access to an app’s container.
 
 

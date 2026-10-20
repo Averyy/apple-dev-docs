@@ -1,23 +1,26 @@
 # GameCenterAchievementLocalizationUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a achievement.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.0+ - Deprecated in 4.3
+
+> **Deprecated**: This object is deprecated. Use [`GameCenterAchievementLocalizationV2UpdateRequest`](./gamecenterachievementlocalizationv2updaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementLocalizationUpdateRequest.Data](gamecenterachievementlocalizationupdaterequest/data-data.dictionary.md)
+- [object GameCenterAchievementLocalizationUpdateRequest.Data](./gamecenterachievementlocalizationupdaterequest/data-data.dictionary.md)
   The request body you use to update a achievement.
 
 ## Properties
@@ -26,29 +29,30 @@ object GameCenterAchievementLocalizationUpdateRequest
 
 ## See Also
 
-- [object GameCenterAchievementLocalizationV2](gamecenterachievementlocalizationv2.md)
+### Objects
+- [object GameCenterAchievementLocalizationV2](./gamecenterachievementlocalizationv2.md)
   The data structure that represents a Game Center achievement localization v2 resource.
-- [object GameCenterAchievementLocalizationV2CreateRequest](gamecenterachievementlocalizationv2createrequest.md)
+- [object GameCenterAchievementLocalizationV2CreateRequest](./gamecenterachievementlocalizationv2createrequest.md)
   The request body you use to create a Game Center achievement localization v2.
-- [object GameCenterAchievementLocalizationV2Response](gamecenterachievementlocalizationv2response.md)
+- [object GameCenterAchievementLocalizationV2Response](./gamecenterachievementlocalizationv2response.md)
   A response that contains a single Game Center achievement localization v2 resource.
-- [object GameCenterAchievementLocalizationV2UpdateRequest](gamecenterachievementlocalizationv2updaterequest.md)
+- [object GameCenterAchievementLocalizationV2UpdateRequest](./gamecenterachievementlocalizationv2updaterequest.md)
   The request body you use to update a Game Center achievement localization v2.
-- [object GameCenterAchievementLocalizationsV2Response](gamecenterachievementlocalizationsv2response.md)
+- [object GameCenterAchievementLocalizationsV2Response](./gamecenterachievementlocalizationsv2response.md)
   A response that contains a single Game Center achievement localization v2 resource.
-- [object GameCenterAchievementLocalizationV2ImageLinkageResponse](gamecenterachievementlocalizationv2imagelinkageresponse.md)
+- [object GameCenterAchievementLocalizationV2ImageLinkageResponse](./gamecenterachievementlocalizationv2imagelinkageresponse.md)
   A response that contains a single Game Center achievement localization v2 image linkage resource.
-- [object GameCenterAchievementLocalization](gamecenterachievementlocalization.md)
+- [object GameCenterAchievementLocalization](./gamecenterachievementlocalization.md)
   The localized name, description, and badge image for a Game Center achievement in a specific language.
-- [object GameCenterAchievementLocalizationCreateRequest](gamecenterachievementlocalizationcreaterequest.md)
+- [object GameCenterAchievementLocalizationCreateRequest](./gamecenterachievementlocalizationcreaterequest.md)
   The request body you use to create a Game Center achievement localization.
-- [object GameCenterAchievementLocalizationResponse](gamecenterachievementlocalizationresponse.md)
+- [object GameCenterAchievementLocalizationResponse](./gamecenterachievementlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center achievement localization.
-- [object GameCenterAchievementLocalizationsResponse](gamecenterachievementlocalizationsresponse.md)
+- [object GameCenterAchievementLocalizationsResponse](./gamecenterachievementlocalizationsresponse.md)
   The response body for endpoints that list Game Center achievement localizations.
-- [object GameCenterAchievementLocalizationGameCenterAchievementImageLinkageResponse](gamecenterachievementlocalizationgamecenterachievementimagelinkageresponse.md)
-- [object GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse](gamecenterachievementlocalizationgamecenterachievementlinkageresponse.md)
-- [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)
+- [object GameCenterAchievementLocalizationGameCenterAchievementImageLinkageResponse](./gamecenterachievementlocalizationgamecenterachievementimagelinkageresponse.md)
+- [object GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse](./gamecenterachievementlocalizationgamecenterachievementlinkageresponse.md)
+- [object GameCenterAchievementLocalizationsLinkagesResponse](./gamecenterachievementlocalizationslinkagesresponse.md)
 
 
 ---

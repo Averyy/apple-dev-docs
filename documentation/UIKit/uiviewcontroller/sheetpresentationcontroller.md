@@ -1,7 +1,8 @@
 # sheetPresentationController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sheet presentation controller for the view controller.
 
@@ -17,29 +18,34 @@ The sheet presentation controller for the view controller.
 var sheetPresentationController: UISheetPresentationController? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UISheetPresentationController * sheetPresentationController;
+```
+
 #### Discussion
 
-If [`modalPresentationStyle`](uiviewcontroller/modalpresentationstyle.md) is [`UIModalPresentationStyle.pageSheet`](uimodalpresentationstyle/pagesheet.md) or [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md), this property contains a sheet presentation controller instance. Access this instance to customize or adjust the sheet before or after it presents.
+If [`modalPresentationStyle`](./modalpresentationstyle.md) is [`UIModalPresentationStyle.pageSheet`](../uimodalpresentationstyle/pagesheet.md) or [`UIModalPresentationStyle.formSheet`](../uimodalpresentationstyle/formsheet.md), this property contains a sheet presentation controller instance. Access this instance to customize or adjust the sheet before or after it presents.
 
-If [`modalPresentationStyle`](uiviewcontroller/modalpresentationstyle.md) has a value other than [`UIModalPresentationStyle.pageSheet`](uimodalpresentationstyle/pagesheet.md) or [`UIModalPresentationStyle.formSheet`](uimodalpresentationstyle/formsheet.md), the value of this property is `nil`.
+If [`modalPresentationStyle`](./modalpresentationstyle.md) has a value other than [`UIModalPresentationStyle.pageSheet`](../uimodalpresentationstyle/pagesheet.md) or [`UIModalPresentationStyle.formSheet`](../uimodalpresentationstyle/formsheet.md), the value of this property is `nil`.
 
 ## See Also
 
-- [var transitioningDelegate: (any UIViewControllerTransitioningDelegate)?](uiviewcontroller/transitioningdelegate.md)
+### Adding a custom transition or presentation
+- [var transitioningDelegate: (any UIViewControllerTransitioningDelegate)?](./transitioningdelegate.md)
   The delegate object that provides transition animator, interactive controller, and custom presentation controller objects.
-- [var transitionCoordinator: (any UIViewControllerTransitionCoordinator)?](uiviewcontroller/transitioncoordinator.md)
+- [var transitionCoordinator: (any UIViewControllerTransitionCoordinator)?](./transitioncoordinator.md)
   Returns the active transition coordinator object.
-- [func targetViewController(forAction: Selector, sender: Any?) -> UIViewController?](uiviewcontroller/targetviewcontroller(foraction:sender:).md)
+- [func targetViewController(forAction: Selector, sender: Any?) -> UIViewController?](./targetviewcontroller%28foraction,sender%29.md)
   Returns the view controller that responds to the action.
-- [var presentationController: UIPresentationController?](uiviewcontroller/presentationcontroller.md)
+- [var presentationController: UIPresentationController?](./presentationcontroller.md)
   The presentation controller that’s managing the current view controller.
-- [var popoverPresentationController: UIPopoverPresentationController?](uiviewcontroller/popoverpresentationcontroller.md)
+- [var popoverPresentationController: UIPopoverPresentationController?](./popoverpresentationcontroller.md)
   The nearest popover presentation controller that is managing the current view controller.
-- [var activePresentationController: UIPresentationController?](uiviewcontroller/activepresentationcontroller.md)
+- [var activePresentationController: UIPresentationController?](./activepresentationcontroller.md)
   The presentation controller that’s managing the view controller.
-- [var restoresFocusAfterTransition: Bool](uiviewcontroller/restoresfocusaftertransition.md)
+- [var restoresFocusAfterTransition: Bool](./restoresfocusaftertransition.md)
   A Boolean value that indicates whether an item that previously was focused should again become focused when the item’s view controller becomes visible and focusable.
-- [Customizing and resizing sheets in UIKit](customizing-and-resizing-sheets-in-uikit.md)
+- [Customizing and resizing sheets in UIKit](../customizing-and-resizing-sheets-in-uikit.md)
   Discover how to create a layered and customized sheet experience in UIKit.
 
 

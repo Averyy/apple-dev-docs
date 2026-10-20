@@ -1,14 +1,15 @@
 # tcpi_if_wired
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 u_int16_t tcpi_if_wired:1;
 ```
 

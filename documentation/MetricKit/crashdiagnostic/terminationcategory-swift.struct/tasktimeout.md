@@ -1,7 +1,8 @@
 # taskTimeout
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The app was terminated for exceeding the allocated time for a background task.
 
@@ -20,19 +21,20 @@ static let taskTimeout: CrashDiagnostic.TerminationCategory
 
 #### Discussion
 
-Corresponds to [`taskTimeoutTerminationCount`](backgroundterminationmetric/tasktimeoutterminationcount.md).
+Corresponds to [`taskTimeoutTerminationCount`](../../backgroundterminationmetric/tasktimeoutterminationcount.md).
 
 ## See Also
 
-- [static let badAccess: CrashDiagnostic.TerminationCategory](crashdiagnostic/terminationcategory-swift.struct/badaccess.md)
+### Termination categories
+- [static let badAccess: CrashDiagnostic.TerminationCategory](./badaccess.md)
   The app was terminated for attempting an invalid memory access.
-- [static let abnormal: CrashDiagnostic.TerminationCategory](crashdiagnostic/terminationcategory-swift.struct/abnormal.md)
+- [static let abnormal: CrashDiagnostic.TerminationCategory](./abnormal.md)
   The app terminated abnormally, typically due to an uncaught exception or call to `abort()`.
-- [static let illegalInstruction: CrashDiagnostic.TerminationCategory](crashdiagnostic/terminationcategory-swift.struct/illegalinstruction.md)
+- [static let illegalInstruction: CrashDiagnostic.TerminationCategory](./illegalinstruction.md)
   The app was terminated for executing an illegal or undefined instruction.
-- [static let watchdog: CrashDiagnostic.TerminationCategory](crashdiagnostic/terminationcategory-swift.struct/watchdog.md)
+- [static let watchdog: CrashDiagnostic.TerminationCategory](./watchdog.md)
   The app was terminated by the system watchdog for failing to respond in time.
-- [static let fileLock: CrashDiagnostic.TerminationCategory](crashdiagnostic/terminationcategory-swift.struct/filelock.md)
+- [static let fileLock: CrashDiagnostic.TerminationCategory](./filelock.md)
   The app was terminated while suspended for holding file locks.
 
 

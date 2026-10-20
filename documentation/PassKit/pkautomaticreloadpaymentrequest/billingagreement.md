@@ -1,7 +1,8 @@
 # billingAgreement
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized billing agreement that the payment sheet displays to the user before the user authorizes the payment.
 
@@ -18,19 +19,24 @@ A localized billing agreement that the payment sheet displays to the user before
 var billingAgreement: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * billingAgreement;
+```
+
 #### Discussion
 
-The merchant may provide an optional, localized [`billingAgreement`](pkautomaticreloadpaymentrequest/billingagreement.md) string. The maximum length of the [`billingAgreement`](pkautomaticreloadpaymentrequest/billingagreement.md) string is 500 characters.
+The merchant may provide an optional, localized [`billingAgreement`](./billingagreement.md) string. The maximum length of the [`billingAgreement`](./billingagreement.md) string is 500 characters.
 
 You may use this string to include information about the reload threshold amount or other reload conditions, for example, or information on how the user can cancel payments. This string isn’t intended to replace any payment terms that you provide outside of the Apple Pay payment sheet.
 
 > ❗ **Important**:  You’re responsible to ensure that your use of this framework, including your billing agreement, is compliant with applicable legal requirements.
 
-The Apple Pay payment sheet displays the text of the [`billingAgreement`](pkautomaticreloadpaymentrequest/billingagreement.md) string; however, long [`billingAgreement`](pkautomaticreloadpaymentrequest/billingagreement.md) strings that don’t fit on the payment sheet screen appear truncated with an ellipsis. Users can select the Billing Details on the payment sheet to read the full text of the [`billingAgreement`](pkautomaticreloadpaymentrequest/billingagreement.md) string, up to the maximum 500 characters.
+The Apple Pay payment sheet displays the text of the [`billingAgreement`](./billingagreement.md) string; however, long [`billingAgreement`](./billingagreement.md) strings that don’t fit on the payment sheet screen appear truncated with an ellipsis. Users can select the Billing Details on the payment sheet to read the full text of the [`billingAgreement`](./billingagreement.md) string, up to the maximum 500 characters.
 
 ## See Also
 
-- [var paymentDescription: String](pkautomaticreloadpaymentrequest/paymentdescription.md)
+### Describing an automatic reload payment
+- [var paymentDescription: String](./paymentdescription.md)
   A description that you provide of the automatic reload payment and that Apple Pay displays to the user in the payment sheet.
 
 

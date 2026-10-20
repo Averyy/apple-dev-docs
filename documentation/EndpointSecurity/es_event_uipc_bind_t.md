@@ -1,13 +1,14 @@
 # es_event_uipc_bind_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for an event that indicates the binding of a socket to a path.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,28 +16,33 @@ A type for an event that indicates the binding of a socket to a path.
 struct es_event_uipc_bind_t
 ```
 
+```c
+typedef struct { ... } es_event_uipc_bind_t;
+```
+
 ## Topics
 
 ### Inspecting Event Properties
-- [var dir: UnsafeMutablePointer<es_file_t>](es_event_uipc_bind_t/dir.md)
+- [var dir: UnsafeMutablePointer<es_file_t>](./es_event_uipc_bind_t/dir.md)
   The directory containing the socket file.
-- [var filename: es_string_token_t](es_event_uipc_bind_t/filename.md)
+- [var filename: es_string_token_t](./es_event_uipc_bind_t/filename.md)
   The name of the socket file.
-- [var mode: mode_t](es_event_uipc_bind_t/mode.md)
+- [var mode: mode_t](./es_event_uipc_bind_t/mode.md)
   The mode of the socket file.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_uipc_bind_t/reserved.md)
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_event_uipc_bind_t/reserved.md)
   An unused field reserved for future use.
 ### Initializers
-- [init(dir: UnsafeMutablePointer<es_file_t>, filename: es_string_token_t, mode: mode_t, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](es_event_uipc_bind_t/init(dir:filename:mode:reserved:).md)
+- [init(dir: UnsafeMutablePointer<es_file_t>, filename: es_string_token_t, mode: mode_t, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](./es_event_uipc_bind_t/init%28dir,filename,mode,reserved%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct es_event_uipc_connect_t](es_event_uipc_connect_t.md)
+### Socket Event Types
+- [struct es_event_uipc_connect_t](./es_event_uipc_connect_t.md)
   A type for an event that indicates the connection of a socket.
 
 

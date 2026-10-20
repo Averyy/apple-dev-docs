@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the `Int` instance.
 
@@ -22,9 +23,10 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-- [var description: String](int/description.md)
+### Describing an Integer
+- [var description: String](./description.md)
   A textual representation of this value.
-- [func hash(into: inout Hasher)](int/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

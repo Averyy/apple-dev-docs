@@ -1,7 +1,8 @@
 # mainFrameNavigation
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var mainFrameNavigation: WKNavigation? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) WKNavigation * mainFrameNavigation;
 ```
 
 #### Discussion

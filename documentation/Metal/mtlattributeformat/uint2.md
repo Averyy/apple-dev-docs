@@ -1,7 +1,8 @@
 # MTLAttributeFormat.uint2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 32-bit, unsigned integer values.
 
@@ -19,21 +20,26 @@ A two-component vector with 32-bit, unsigned integer values.
 case uint2
 ```
 
+```c
+MTLAttributeFormatUInt2
+```
+
 ## See Also
 
-- [MTLAttributeFormat.int](mtlattributeformat/int.md)
+### 32-bit integer formats
+- [MTLAttributeFormat.int](./int.md)
   A 32-bit, signed integer value.
-- [MTLAttributeFormat.int2](mtlattributeformat/int2.md)
+- [MTLAttributeFormat.int2](./int2.md)
   A two-component vector with 32-bit, signed integer values.
-- [MTLAttributeFormat.int3](mtlattributeformat/int3.md)
+- [MTLAttributeFormat.int3](./int3.md)
   A three-component vector with 32-bit, signed integer values.
-- [MTLAttributeFormat.int4](mtlattributeformat/int4.md)
+- [MTLAttributeFormat.int4](./int4.md)
   A four-component vector with 32-bit, signed integer values.
-- [MTLAttributeFormat.uint](mtlattributeformat/uint.md)
+- [MTLAttributeFormat.uint](./uint.md)
   A 32-bit, unsigned integer value.
-- [MTLAttributeFormat.uint3](mtlattributeformat/uint3.md)
+- [MTLAttributeFormat.uint3](./uint3.md)
   A three-component vector with 32-bit, unsigned integer values.
-- [MTLAttributeFormat.uint4](mtlattributeformat/uint4.md)
+- [MTLAttributeFormat.uint4](./uint4.md)
   A four-component vector with 32-bit, unsigned integer values.
 
 

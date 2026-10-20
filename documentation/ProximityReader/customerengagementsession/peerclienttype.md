@@ -1,7 +1,8 @@
 # CustomerEngagementSession.PeerClientType
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that indicates the type of connected peer client.
 
@@ -19,26 +20,27 @@ enum PeerClientType
 ## Topics
 
 ### Enumeration Cases
-- [CustomerEngagementSession.PeerClientType.localWireless](customerengagementsession/peerclienttype/localwireless.md)
+- [CustomerEngagementSession.PeerClientType.localWireless](./peerclienttype/localwireless.md)
   This case indicates a peer client connection using a direct local wireless connection.
-- [CustomerEngagementSession.PeerClientType.none](customerengagementsession/peerclienttype/none.md)
+- [CustomerEngagementSession.PeerClientType.none](./peerclienttype/none.md)
   This case indicates no peer client connection.
-- [CustomerEngagementSession.PeerClientType.web](customerengagementsession/peerclienttype/web.md)
+- [CustomerEngagementSession.PeerClientType.web](./peerclienttype/web.md)
   This case indicates a peer web application client connection via a server relay.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CustomerEngagementSession.CustomerConfiguration](customerengagementsession/customerconfiguration-swift.struct.md)
+### Getting customer configuration
+- [CustomerEngagementSession.CustomerConfiguration](./customerconfiguration-swift.struct.md)
   A structure that contains configuration details for the connected customer device.
-- [var customerConfiguration: CustomerEngagementSession.CustomerConfiguration?](customerengagementsession/customerconfiguration-swift.property.md)
+- [var customerConfiguration: CustomerEngagementSession.CustomerConfiguration?](./customerconfiguration-swift.property.md)
   A structure containing configuration information of the customer device.
 
 

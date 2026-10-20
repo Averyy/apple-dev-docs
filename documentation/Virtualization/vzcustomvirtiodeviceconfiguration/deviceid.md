@@ -1,7 +1,8 @@
 # deviceID
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Virtio device ID of the device.
 
@@ -12,6 +13,10 @@ The Virtio device ID of the device.
 
 ```swift
 var deviceID: UInt16 { get set }
+```
+
+```objc
+@property (readwrite) uint16_t deviceID;
 ```
 
 

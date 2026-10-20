@@ -1,7 +1,8 @@
 # values
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metric values for this entry.
 
@@ -19,7 +20,7 @@ let values: [MetricResult]
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # getPageScanPeriodMode()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the value of the page scan period mode for the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getPageScanPeriodMode() -> BluetoothPageScanPeriodMode
+```
+
+```objc
+- (BluetoothPageScanPeriodMode) getPageScanPeriodMode;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # source
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The script’s source code.
 
@@ -18,13 +19,18 @@ The script’s source code.
 var source: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * source;
+```
+
 ## See Also
 
-- [var injectionTime: WKUserScriptInjectionTime](wkuserscript/injectiontime.md)
+### Inspecting Script Information
+- [var injectionTime: WKUserScriptInjectionTime](./injectiontime.md)
   The time at which to inject the script into the webpage.
-- [enum WKUserScriptInjectionTime](wkuserscriptinjectiontime.md)
+- [enum WKUserScriptInjectionTime](../wkuserscriptinjectiontime.md)
   Constants for the times at which to inject script content into a webpage.
-- [var isForMainFrameOnly: Bool](wkuserscript/isformainframeonly.md)
+- [var isForMainFrameOnly: Bool](./isformainframeonly.md)
   A Boolean value that indicates whether to inject the script into the main frame or all frames.
 
 

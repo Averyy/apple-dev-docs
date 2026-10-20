@@ -1,7 +1,8 @@
 # CoreSpotlightActionTitle
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The user-visible string that Spotlight displays as the title of the action.
 
@@ -10,15 +11,17 @@ The user-visible string that Spotlight displays as the title of the action.
 - iPadOS 15.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CoreSpotlightActionTitle`
+- **Type**: string
 
 ## See Also
 
-- [CoreSpotlightActionSymbolImage](information-property-list/corespotlightactions/corespotlightactionsymbolimage.md)
+### Action Properties
+- [CoreSpotlightActionSymbolImage](./corespotlightactionsymbolimage.md)
   The name of a SF Symbol to display next to the action’s title.
-- [CoreSpotlightActionIdentifier](information-property-list/corespotlightactions/corespotlightactionidentifier.md)
+- [CoreSpotlightActionIdentifier](./corespotlightactionidentifier.md)
   A string an app defines to identify the action.
 
 

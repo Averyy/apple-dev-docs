@@ -1,7 +1,8 @@
 # write(to:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the word embedding as a Core ML model file at the specified URL.
 
@@ -21,7 +22,8 @@ func write(to fileURL: URL, metadata: MLModelMetadata? = nil) throws
 
 ## See Also
 
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlwordembedding/write(tofile:metadata:).md)
+### Saving a word embedding
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./write%28tofile,metadata%29.md)
   Exports the word embedding as a Core ML model file at the specified file path.
 
 

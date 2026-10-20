@@ -1,7 +1,8 @@
 # init(paymentDescription:deferredBilling:managementURL:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a deferred payment request with the payment description, deferred billing summary, and management URL you provide.
 
@@ -16,6 +17,10 @@ Creates a deferred payment request with the payment description, deferred billin
 
 ```swift
 init(paymentDescription: String, deferredBilling: PKDeferredPaymentSummaryItem, managementURL: URL)
+```
+
+```objc
+- (instancetype) initWithPaymentDescription:(NSString *) paymentDescription deferredBilling:(PKDeferredPaymentSummaryItem *) deferredBilling managementURL:(NSURL *) managementURL;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # primitive
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-primitive identifier used with barycentric coordinates.
 

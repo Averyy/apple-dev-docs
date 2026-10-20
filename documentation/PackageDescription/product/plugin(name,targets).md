@@ -1,7 +1,8 @@
 # plugin(name:targets:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Defines a product that vends a package plugin target for use by clients of the package.
 
@@ -29,7 +30,8 @@ It is not necessary to define a product for a plugin that is only used within th
 
 ## See Also
 
-- [Product.Plugin](product/plugin.md)
+### Creating a Plugin Product
+- [Product.Plugin](./plugin.md)
   The plug-in product of a Swift package.
 
 

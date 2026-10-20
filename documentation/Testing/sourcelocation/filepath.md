@@ -1,7 +1,8 @@
 # filePath
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path to the source file.
 

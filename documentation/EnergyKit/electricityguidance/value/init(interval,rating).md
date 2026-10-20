@@ -1,14 +1,15 @@
 # init(interval:rating:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interval with the specified date and rating.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -23,9 +24,10 @@ init(interval: DateInterval, rating: Double)
 
 ## See Also
 
-- [let interval: DateInterval](electricityguidance/value/interval.md)
+### Creating a date interval
+- [let interval: DateInterval](./interval.md)
   The interval to which the electrical guidance applies.
-- [let rating: Double](electricityguidance/value/rating.md)
+- [let rating: Double](./rating.md)
   The relative impact of using electricity during this period of time.
 
 

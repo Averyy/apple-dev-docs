@@ -1,7 +1,8 @@
 # UIPointerRegion
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A rectangular region that interacts with pointer movements.
 
@@ -18,36 +19,41 @@ A rectangular region that interacts with pointer movements.
 class UIPointerRegion
 ```
 
+```objc
+@interface UIPointerRegion : NSObject
+```
+
 ## Topics
 
 ### Creating a region
-- [convenience init(rect: CGRect, identifier: AnyHashable?)](uipointerregion/init(rect:identifier:).md)
+- [convenience init(rect: CGRect, identifier: AnyHashable?)](./uipointerregion/init%28rect,identifier%29.md)
   Creates a pointer region with the specified rectangle and optional identifier.
 ### Configuring a region
-- [var rect: CGRect](uipointerregion/rect.md)
+- [var rect: CGRect](./uipointerregion/rect.md)
   The rectangle bounds of the region.
-- [var identifier: AnyHashable?](uipointerregion/identifier-1tw1m.md)
+- [var identifier: AnyHashable?](./uipointerregion/identifier-1tw1m.md)
   An optional identifier for the region.
-- [var latchingAxes: UIAxis](uipointerregion/latchingaxes.md)
+- [var latchingAxes: UIAxis](./uipointerregion/latchingaxes.md)
   Axes along which the region latches after a primary click.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPointerRegionRequest](uipointerregionrequest.md)
+### Pointer region
+- [class UIPointerRegionRequest](./uipointerregionrequest.md)
   An object to describe the pointer’s location in the interaction’s view.
 
 

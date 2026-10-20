@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kVideoBusTypeDisplayPort](1644552-anonymous/kvideobustypedisplayport.md)
-- [kVideoBusTypeI2C](1644552-anonymous/kvideobustypei2c.md)
-- [kVideoBusTypeInvalid](1644552-anonymous/kvideobustypeinvalid.md)
+- [kVideoBusTypeDisplayPort](./api-1644552-anonymous/kvideobustypedisplayport.md)
+- [kVideoBusTypeI2C](./api-1644552-anonymous/kvideobustypei2c.md)
+- [kVideoBusTypeInvalid](./api-1644552-anonymous/kvideobustypeinvalid.md)
 
 
 ---

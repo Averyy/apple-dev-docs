@@ -2,6 +2,7 @@
 
 **Framework**: Video Toolbox  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A dictionary of pixel buffer attributes that define which output frames passed to the processor must conform to.
@@ -20,9 +21,14 @@ A dictionary of pixel buffer attributes that define which output frames passed t
 var destinationPixelBufferAttributes: [String : any Sendable] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * destinationPixelBufferAttributes;
+```
+
 ## See Also
 
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtframeprocessorconfiguration/sourcepixelbufferattributes.md)
+### Inspecting pixel buffer attributes
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes that define what the source and reference frames passed to the processor must conform to.
 
 

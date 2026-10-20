@@ -1,7 +1,8 @@
 # wpa3Personal
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var wpa3Personal: MTRNetworkCommissioningWiFiSecurityBitmap { get }
+```
+
+```c
+MTRNetworkCommissioningWiFiSecurityBitmapWPA3Personal
 ```
 
 

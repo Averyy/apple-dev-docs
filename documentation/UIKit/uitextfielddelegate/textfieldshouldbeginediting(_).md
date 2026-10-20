@@ -1,7 +1,8 @@
 # textFieldShouldBeginEditing(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to begin editing in the specified text field.
 
@@ -9,7 +10,7 @@ Asks the delegate whether to begin editing in the specified text field.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,19 @@ Asks the delegate whether to begin editing in the specified text field.
 optional func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
 ```
 
+```objc
+- (BOOL) textFieldShouldBeginEditing:(UITextField *) textField;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if editing should begin or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](../../Swift/true.md) if editing should begin or [`false`](../../Swift/false.md) if it should not.
 
 #### Discussion
 
-The text field calls this method when the user performs an action that would normally initiate the editing of the text field’s text. Implement this method if you want to prevent editing from happening in some situations. For example, you could use this method to prevent the user from editing the text field’s contents more than once. Most of the time, you should return [`true`](https://developer.apple.com/documentation/swift/true) to allow editing to proceed.
+The text field calls this method when the user performs an action that would normally initiate the editing of the text field’s text. Implement this method if you want to prevent editing from happening in some situations. For example, you could use this method to prevent the user from editing the text field’s contents more than once. Most of the time, you should return [`true`](../../Swift/true.md) to allow editing to proceed.
 
-If you do not implement this method, the text field acts as if this method had returned [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method, the text field acts as if this method had returned [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -34,15 +39,16 @@ If you do not implement this method, the text field acts as if this method had r
 
 ## See Also
 
-- [func textFieldDidBeginEditing(UITextField)](uitextfielddelegate/textfielddidbeginediting(_:).md)
+### Managing editing
+- [func textFieldDidBeginEditing(UITextField)](./textfielddidbeginediting%28_%29.md)
   Tells the delegate when editing begins in the specified text field.
-- [func textFieldShouldEndEditing(UITextField) -> Bool](uitextfielddelegate/textfieldshouldendediting(_:).md)
+- [func textFieldShouldEndEditing(UITextField) -> Bool](./textfieldshouldendediting%28_%29.md)
   Asks the delegate whether to stop editing in the specified text field.
-- [func textFieldDidEndEditing(UITextField, reason: UITextField.DidEndEditingReason)](uitextfielddelegate/textfielddidendediting(_:reason:).md)
+- [func textFieldDidEndEditing(UITextField, reason: UITextField.DidEndEditingReason)](./textfielddidendediting%28_,reason%29.md)
   Tells the delegate when editing stops for the specified text field, and the reason it stopped.
-- [func textFieldDidEndEditing(UITextField)](uitextfielddelegate/textfielddidendediting(_:).md)
+- [func textFieldDidEndEditing(UITextField)](./textfielddidendediting%28_%29.md)
   Tells the delegate when editing stops for the specified text field.
-- [UITextField.DidEndEditingReason](uitextfield/didendeditingreason.md)
+- [UITextField.DidEndEditingReason](../uitextfield/didendeditingreason.md)
   Constants that indicate the reason for ending editing in a text field.
 
 

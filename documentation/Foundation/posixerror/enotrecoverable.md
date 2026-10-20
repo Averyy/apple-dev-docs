@@ -1,7 +1,8 @@
 # ENOTRECOVERABLE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 State not recoverable.
 

@@ -1,7 +1,8 @@
 # init
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the service.
 
@@ -10,7 +11,7 @@ Handles the basic initialization of the service.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -20,19 +21,20 @@ virtual bool init();
 
 #### Discussion
 
-The system calls this method shortly after it instantiates your `IOUserUSBSerial` subclass, and before it calls the [`Start`](https://developer.apple.com/documentation/serialdriverkit/iouserserial/start) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
+The system calls this method shortly after it instantiates your `IOUserUSBSerial` subclass, and before it calls the [`Start`](../../SerialDriverKit/iouserserial/start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
 
 Always call `super` at the beginning of your implementation of this method.
 
 ## See Also
 
-- [Start](iouserusbserial/start.md)
+### Configuring the Service
+- [Start](./start.md)
   Starts the service for the specified provider.
-- [Stop](iouserusbserial/stop.md)
+- [Stop](./stop.md)
   Stops the service that matches the specified provider.
-- [free](iouserusbserial/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
-- [initWith](iouserusbserial/initwith.md)
+- [initWith](./initwith.md)
   Initializes the private data structures associated with this class.
 
 

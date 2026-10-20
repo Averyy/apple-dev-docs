@@ -1,23 +1,28 @@
 # CFCharacterSetAddCharactersInRange(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a given range to a character set.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFCharacterSetAddCharactersInRange(_ theSet: CFMutableCharacterSet!, _ theRange: CFRange)
+```
+
+```c
+extern void CFCharacterSetAddCharactersInRange(CFMutableCharacterSetRef theSet, CFRange theRange);
 ```
 
 ## Parameters
@@ -27,7 +32,8 @@ func CFCharacterSetAddCharactersInRange(_ theSet: CFMutableCharacterSet!, _ theR
 
 ## See Also
 
-- [func CFCharacterSetAddCharactersInString(CFMutableCharacterSet!, CFString!)](cfcharactersetaddcharactersinstring(_:_:).md)
+### Adding Characters
+- [func CFCharacterSetAddCharactersInString(CFMutableCharacterSet!, CFString!)](./cfcharactersetaddcharactersinstring%28_,_%29.md)
   Adds the characters in a given string to a character set.
 
 

@@ -1,18 +1,19 @@
 # y
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location on the y-axis, in meters.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The location on the y-axis, in meters.
 var y: Float
 ```
 
+```c
+float y;
+```
+
 ## See Also
 
-- [var x: Float](avaudio3dpoint/x.md)
+### Getting point properties
+- [var x: Float](./x.md)
   The location on the x-axis, in meters.
-- [var z: Float](avaudio3dpoint/z.md)
+- [var z: Float](./z.md)
   The location on the z-axis, in meters.
 
 

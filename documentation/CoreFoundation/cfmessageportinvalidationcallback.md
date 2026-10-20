@@ -1,18 +1,19 @@
 # CFMessagePortInvalidationCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback invoked when a CFMessagePort object is invalidated.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,20 +21,25 @@ Callback invoked when a CFMessagePort object is invalidated.
 typealias CFMessagePortInvalidationCallBack = (CFMessagePort?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFMessagePort *, void *) CFMessagePortInvalidationCallBack;
+```
+
 #### Discussion
 
 Your callback should free any resources allocated for `ms`.
 
-You specify this callback with [`CFMessagePortSetInvalidationCallBack(_:_:)`](cfmessageportsetinvalidationcallback(_:_:).md).
+You specify this callback with [`CFMessagePortSetInvalidationCallBack(_:_:)`](./cfmessageportsetinvalidationcallback%28_,_%29.md).
 
 ## Parameters
 
 - `ms`: The message port that has been invalidated.
-- `info`: The `info` member of the [`CFMessagePortContext`](cfmessageportcontext.md) structure that was used when creating `ms`, if `ms` is a local port; `NULL` if `ms` is a remote port.
+- `info`: The `info` member of the [`CFMessagePortContext`](./cfmessageportcontext.md) structure that was used when creating `ms`, if `ms` is a local port; `NULL` if `ms` is a remote port.
 
 ## See Also
 
-- [typealias CFMessagePortCallBack](cfmessageportcallback.md)
+### Callbacks
+- [typealias CFMessagePortCallBack](./cfmessageportcallback.md)
   Callback invoked to process a message received on a CFMessagePort object.
 
 

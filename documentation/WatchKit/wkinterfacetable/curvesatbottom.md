@@ -1,7 +1,8 @@
 # curvesAtBottom
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the rows shrink to match the curved corners at the bottom of the screen.
 
@@ -14,15 +15,20 @@ A Boolean value that determines whether the rows shrink to match the curved corn
 var curvesAtBottom: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL curvesAtBottom;
+```
+
 #### Discussion
 
-Defaults to [`false`](https://developer.apple.com/documentation/swift/false). If [`true`](https://developer.apple.com/documentation/swift/true), table rows near the bottom of the screen shrink so that the curved corners don’t clip them. This property has no effect on Apple Watch Series 3 or earlier.
+Defaults to [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), table rows near the bottom of the screen shrink so that the curved corners don’t clip them. This property has no effect on Apple Watch Series 3 or earlier.
 
 ## See Also
 
-- [func scrollToRow(at: Int)](wkinterfacetable/scrolltorow(at:).md)
+### Scrolling
+- [func scrollToRow(at: Int)](./scrolltorow%28at%29.md)
   Scrolls the row at the specified index into view.
-- [var curvesAtTop: Bool](wkinterfacetable/curvesattop.md)
+- [var curvesAtTop: Bool](./curvesattop.md)
   A Boolean value that determines whether the rows shrink to match the curved corners at the top of the screen.
 
 

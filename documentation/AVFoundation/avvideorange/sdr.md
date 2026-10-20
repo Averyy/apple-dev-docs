@@ -1,7 +1,8 @@
 # sdr
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates standard-dynamic-range (SDR) video.
 
@@ -20,11 +21,16 @@ Indicates standard-dynamic-range (SDR) video.
 static let sdr: AVVideoRange
 ```
 
+```c
+extern AVVideoRange const AVVideoRangeSDR;
+```
+
 ## See Also
 
-- [static let pq: AVVideoRange](avvideorange/pq.md)
+### Video ranges
+- [static let pq: AVVideoRange](./pq.md)
   Indicates Perceptual Quantizer (PQ) high-dynamic-range video.
-- [static let hlg: AVVideoRange](avvideorange/hlg.md)
+- [static let hlg: AVVideoRange](./hlg.md)
   Indicates Hybrid-Log Gamma (HLG) high-dynamic-range video.
 
 

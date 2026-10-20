@@ -1,7 +1,8 @@
 # count()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes the number of elements received from the upstream publisher.
 
@@ -26,7 +27,7 @@ A publisher that consumes all elements until the upstream publisher finishes, th
 
 #### Discussion
 
-Use [`count()`](publisher/count().md) to determine the number of elements received from the upstream publisher before it completes:
+Use [`count()`](./count%28%29.md) to determine the number of elements received from the upstream publisher before it completes:
 
 ```swift
 let numbers = (0...10)
@@ -39,17 +40,18 @@ cancellable = numbers.publisher
 
 ## See Also
 
-- [func max() -> Publishers.Comparison<Self>](publisher/max.md)
+### Applying mathematical operations on elements
+- [func max() -> Publishers.Comparison<Self>](./max%28%29.md)
   Publishes the maximum value received from the upstream publisher, after it finishes.
-- [func max(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](publisher/max(by:).md)
+- [func max(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](./max%28by%29.md)
   Publishes the maximum value received from the upstream publisher, using the provided ordering closure.
-- [func tryMax(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](publisher/trymax(by:).md)
+- [func tryMax(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](./trymax%28by%29.md)
   Publishes the maximum value received from the upstream publisher, using the provided error-throwing closure to order the items.
-- [func min() -> Publishers.Comparison<Self>](publisher/min.md)
+- [func min() -> Publishers.Comparison<Self>](./min%28%29.md)
   Publishes the minimum value received from the upstream publisher, after it finishes.
-- [func min(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](publisher/min(by:).md)
+- [func min(by: (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>](./min%28by%29.md)
   Publishes the minimum value received from the upstream publisher, after it finishes.
-- [func tryMin(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](publisher/trymin(by:).md)
+- [func tryMin(by: (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>](./trymin%28by%29.md)
   Publishes the minimum value received from the upstream publisher, using the provided error-throwing closure to order the items.
 
 

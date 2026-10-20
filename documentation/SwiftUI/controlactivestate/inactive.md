@@ -1,10 +1,13 @@
 # ControlActiveState.inactive
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use `EnvironmentValues.appearsActive` instead.
 
 ## Declaration
 
@@ -14,8 +17,9 @@ case inactive
 
 ## See Also
 
-- [ControlActiveState.key](controlactivestate/key.md)
-- [ControlActiveState.active](controlactivestate/active.md)
+### Getting control active states
+- [ControlActiveState.key](./key.md)
+- [ControlActiveState.active](./active.md)
 
 
 ---

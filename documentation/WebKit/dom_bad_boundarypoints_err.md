@@ -1,10 +1,11 @@
 # DOM_BAD_BOUNDARYPOINTS_ERR
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var DOM_BAD_BOUNDARYPOINTS_ERR: DOMRangeExceptionCode { get }
 ```
 
+```c
+DOM_BAD_BOUNDARYPOINTS_ERR
+```
+
 ## See Also
 
-- [var DOM_INVALID_NODE_TYPE_ERR: DOMRangeExceptionCode](dom_invalid_node_type_err.md)
+### Constants
+- [var DOM_INVALID_NODE_TYPE_ERR: DOMRangeExceptionCode](./dom_invalid_node_type_err.md)
 
 
 ---

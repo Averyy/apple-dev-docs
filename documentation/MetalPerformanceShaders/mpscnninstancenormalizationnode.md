@@ -1,7 +1,8 @@
 # MPSCNNInstanceNormalizationNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of an instance normalization kernel.
 
@@ -19,49 +20,54 @@ A representation of an instance normalization kernel.
 class MPSCNNInstanceNormalizationNode
 ```
 
+```objc
+@interface MPSCNNInstanceNormalizationNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, dataSource: any MPSCNNInstanceNormalizationDataSource)](mpscnninstancenormalizationnode/init(source:datasource:).md)
+- [init(source: MPSNNImageNode, dataSource: any MPSCNNInstanceNormalizationDataSource)](./mpscnninstancenormalizationnode/init%28source,datasource%29.md)
 ### Instance Properties
-- [var trainingStyle: MPSNNTrainingStyle](mpscnninstancenormalizationnode/trainingstyle.md)
+- [var trainingStyle: MPSNNTrainingStyle](./mpscnninstancenormalizationnode/trainingstyle.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSNNTrainableNode](mpsnntrainablenode.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSNNTrainableNode](./mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNCrossChannelNormalizationNode](mpscnncrosschannelnormalizationnode.md)
+### Normalization Layer Nodes
+- [class MPSCNNCrossChannelNormalizationNode](./mpscnncrosschannelnormalizationnode.md)
   A representation of a normalization kernel across feature channels.
-- [class MPSCNNLocalContrastNormalizationNode](mpscnnlocalcontrastnormalizationnode.md)
+- [class MPSCNNLocalContrastNormalizationNode](./mpscnnlocalcontrastnormalizationnode.md)
   A representation of a local-contrast normalization kernel.
-- [class MPSCNNSpatialNormalizationNode](mpscnnspatialnormalizationnode.md)
+- [class MPSCNNSpatialNormalizationNode](./mpscnnspatialnormalizationnode.md)
   A representation of a spatial normalization kernel.
-- [class MPSCNNBatchNormalizationGradientNode](mpscnnbatchnormalizationgradientnode.md)
+- [class MPSCNNBatchNormalizationGradientNode](./mpscnnbatchnormalizationgradientnode.md)
   A representation of a gradient batch normalization kernel.
-- [class MPSCNNBatchNormalizationNode](mpscnnbatchnormalizationnode.md)
+- [class MPSCNNBatchNormalizationNode](./mpscnnbatchnormalizationnode.md)
   A representation of a batch normalization kernel.
-- [protocol MPSCNNBatchNormalizationDataSource](mpscnnbatchnormalizationdatasource.md)
+- [protocol MPSCNNBatchNormalizationDataSource](./mpscnnbatchnormalizationdatasource.md)
   A protocol that defines methods that a batch normalization state uses to initialize scale factors, bias terms, and batch statistics.
-- [class MPSCNNInstanceNormalizationGradientNode](mpscnninstancenormalizationgradientnode.md)
+- [class MPSCNNInstanceNormalizationGradientNode](./mpscnninstancenormalizationgradientnode.md)
   A representation of a gradient instance normalization kernel.
-- [protocol MPSCNNInstanceNormalizationDataSource](mpscnninstancenormalizationdatasource.md)
+- [protocol MPSCNNInstanceNormalizationDataSource](./mpscnninstancenormalizationdatasource.md)
   A protocol that defines methods that an instance normalization uses to initialize scale factors and bias terms.
-- [class MPSCNNLocalContrastNormalizationGradientNode](mpscnnlocalcontrastnormalizationgradientnode.md)
+- [class MPSCNNLocalContrastNormalizationGradientNode](./mpscnnlocalcontrastnormalizationgradientnode.md)
   A representation of a gradient local-contrast normalization kernel.
-- [class MPSCNNSpatialNormalizationGradientNode](mpscnnspatialnormalizationgradientnode.md)
+- [class MPSCNNSpatialNormalizationGradientNode](./mpscnnspatialnormalizationgradientnode.md)
   A representation of a gradient spatial normalization kernel.
-- [class MPSCNNNormalizationNode](mpscnnnormalizationnode.md)
+- [class MPSCNNNormalizationNode](./mpscnnnormalizationnode.md)
   Virtual base class for CNN normalization nodes.
 
 

@@ -1,7 +1,8 @@
 # activate()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies settings to the designated groups.
 
@@ -19,13 +20,18 @@ Applies settings to the designated groups.
 func activate()
 ```
 
+```objc
+- (void) activate;
+```
+
 #### Discussion
 
-When you call this function, the framework assigns the group preset as the engine’s [`activeGroupPreset`](phaseengine/activegrouppreset.md) and deactivates the previous assignee, as needed. The settings take effect according to [`timeToTarget`](phasegrouppreset/timetotarget.md).
+When you call this function, the framework assigns the group preset as the engine’s [`activeGroupPreset`](../phaseengine/activegrouppreset.md) and deactivates the previous assignee, as needed. The settings take effect according to [`timeToTarget`](./timetotarget.md).
 
 ## See Also
 
-- [func activate(timeToTargetOverride: Double)](phasegrouppreset/activate(timetotargetoverride:).md)
+### Activating a Group Preset
+- [func activate(timeToTargetOverride: Double)](./activate%28timetotargetoverride%29.md)
   Applies settings with an overriden fade duration.
 
 

@@ -1,7 +1,8 @@
 # ASAuthorizationPlatformPublicKeyCredentialProvider
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mechanism for providing public key credential requests to an app or service with iCloud Keychain.
 
@@ -19,9 +20,13 @@ A mechanism for providing public key credential requests to an app or service wi
 class ASAuthorizationPlatformPublicKeyCredentialProvider
 ```
 
+```objc
+@interface ASAuthorizationPlatformPublicKeyCredentialProvider : NSObject
+```
+
 ## Mentions
 
-- [Supporting passkeys](supporting-passkeys.md)
+- [Supporting passkeys](./supporting-passkeys.md)
 
 #### Overview
 
@@ -30,38 +35,39 @@ The credential provider accesses public-private key pairs stored in iCloud Keych
 ## Topics
 
 ### Creating the provider
-- [init(relyingPartyIdentifier: String)](asauthorizationplatformpublickeycredentialprovider/init(relyingpartyidentifier:).md)
+- [init(relyingPartyIdentifier: String)](./asauthorizationplatformpublickeycredentialprovider/init%28relyingpartyidentifier%29.md)
   Creates the object with a relying party identifier.
 ### Creating the request
-- [var relyingPartyIdentifier: String](asauthorizationplatformpublickeycredentialprovider/relyingpartyidentifier.md)
+- [var relyingPartyIdentifier: String](./asauthorizationplatformpublickeycredentialprovider/relyingpartyidentifier.md)
   The domain name of the service to register or authorize against.
-- [func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationplatformpublickeycredentialprovider/createcredentialassertionrequest(challenge:).md)
+- [func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](./asauthorizationplatformpublickeycredentialprovider/createcredentialassertionrequest%28challenge%29.md)
   Creates an assertion request with a challenge.
-- [func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationplatformpublickeycredentialprovider/createcredentialregistrationrequest(challenge:name:userid:).md)
+- [func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./asauthorizationplatformpublickeycredentialprovider/createcredentialregistrationrequest%28challenge,name,userid%29.md)
   Creates a registration request with a challenge, name, and user ID.
-- [func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationplatformpublickeycredentialprovider/createcredentialregistrationrequest(challenge:name:userid:requeststyle:).md)
+- [func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./asauthorizationplatformpublickeycredentialprovider/createcredentialregistrationrequest%28challenge,name,userid,requeststyle%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [ASAuthorizationProvider](asauthorizationprovider.md)
-- [ASAuthorizationWebBrowserPlatformPublicKeyCredentialProvider](asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ASAuthorizationProvider](./asauthorizationprovider.md)
+- [ASAuthorizationWebBrowserPlatformPublicKeyCredentialProvider](./asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialProvider](asauthorizationsecuritykeypublickeycredentialprovider.md)
+### Credential providers
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialProvider](./asauthorizationsecuritykeypublickeycredentialprovider.md)
   A mechanism for providing public key credential requests to an app or service with a physical security key.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new libXPC connection to the extension process.
@@ -17,6 +18,10 @@ Creates a new libXPC connection to the extension process.
 func makeLibXPCConnectionError() throws -> xpc_connection_t
 ```
 
+```objc
+- (xpc_connection_t) makeLibXPCConnectionError:(NSError **) error;
+```
+
 #### Return Value
 
 The connection object representing the created libXPC connection or `nil`.
@@ -27,7 +32,7 @@ This method creates a connection to the extension process and returns it. If it 
 
 ## See Also
 
-- [func invalidate()](beextensionprocess/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Stops the extension process.
 
 

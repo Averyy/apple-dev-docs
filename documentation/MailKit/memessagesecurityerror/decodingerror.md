@@ -1,7 +1,8 @@
 # decodingError
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 12.0+
@@ -14,7 +15,8 @@ static var decodingError: MEMessageSecurityError.Code { get }
 
 ## See Also
 
-- [static var encodingError: MEMessageSecurityError.Code](memessagesecurityerror/encodingerror.md)
+### Type Properties
+- [static var encodingError: MEMessageSecurityError.Code](./encodingerror.md)
 
 
 ---

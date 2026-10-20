@@ -1,7 +1,8 @@
 # reset(roundingBackwardsFrom:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reset to the nearest scalar-aligned code unit offset `<= i`.
 
@@ -34,7 +35,7 @@ let string = "Hello 🌍"
 printScalarAfterReset(string)
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

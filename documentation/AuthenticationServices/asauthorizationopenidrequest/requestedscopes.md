@@ -1,7 +1,8 @@
 # requestedScopes
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact information to be requested from the user during authentication.
 
@@ -20,9 +21,14 @@ The contact information to be requested from the user during authentication.
 var requestedScopes: [ASAuthorization.Scope]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSString *> * requestedScopes;
+```
+
 ## See Also
 
-- [ASAuthorization.Scope](asauthorization/scope.md)
+### Setting the Scope
+- [ASAuthorization.Scope](../asauthorization/scope.md)
   The kinds of contact information that can be requested from the user.
 
 

@@ -1,7 +1,8 @@
 # init(value:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates new counting semaphore with an initial value.
 
@@ -10,7 +11,7 @@ Creates new counting semaphore with an initial value.
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates new counting semaphore with an initial value.
 
 ```swift
 init(value: Int)
+```
+
+```c
+extern dispatch_semaphore_tdispatch_semaphore_create(intptr_t value);
 ```
 
 #### Return Value
@@ -28,7 +33,7 @@ The newly created semaphore.
 
 Passing zero for the value is useful for when two threads need to reconcile the completion of a particular event. Passing a value greater than zero is useful for managing a finite pool of resources, where the pool size is equal to the value.
 
-> ❗ **Important**:  Calls to [`signal()`](dispatchsemaphore/signal().md) must be balanced with calls to [`wait()`](dispatchsemaphore/wait().md). Attempting to dispose of a semaphore with a count lower than `value` causes an `EXC_BAD_INSTRUCTION` exception.
+> ❗ **Important**:  Calls to [`signal()`](./signal%28%29.md) must be balanced with calls to [`wait()`](./wait%28%29.md). Attempting to dispose of a semaphore with a count lower than `value` causes an `EXC_BAD_INSTRUCTION` exception.
 
 ## Parameters
 

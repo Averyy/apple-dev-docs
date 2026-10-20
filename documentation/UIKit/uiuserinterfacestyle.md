@@ -1,7 +1,8 @@
 # UIUserInterfaceStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the interface style for the app.
 
@@ -18,39 +19,44 @@ Constants that indicate the interface style for the app.
 enum UIUserInterfaceStyle
 ```
 
+```c
+enum UIUserInterfaceStyle : NSInteger;
+```
+
 ## Topics
 
 ### Interface styles
-- [UIUserInterfaceStyle.unspecified](uiuserinterfacestyle/unspecified.md)
+- [UIUserInterfaceStyle.unspecified](./uiuserinterfacestyle/unspecified.md)
   An unspecified interface style.
-- [UIUserInterfaceStyle.light](uiuserinterfacestyle/light.md)
+- [UIUserInterfaceStyle.light](./uiuserinterfacestyle/light.md)
   The light interface style.
-- [UIUserInterfaceStyle.dark](uiuserinterfacestyle/dark.md)
+- [UIUserInterfaceStyle.dark](./uiuserinterfacestyle/dark.md)
   The dark interface style.
 ### Initializers
-- [init(ColorScheme?)](uiuserinterfacestyle/init(_:).md)
+- [init(ColorScheme?)](./uiuserinterfacestyle/init%28_%29.md)
   Creates a user interface style from the specified SwiftUI color scheme.
-- [init?(rawValue: Int)](uiuserinterfacestyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiuserinterfacestyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uiviewcontroller/overrideuserinterfacestyle.md)
+### Adjusting the interface style
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./uiviewcontroller/overrideuserinterfacestyle.md)
   The user interface style adopted by the view controller and all of its children.
-- [var preferredUserInterfaceStyle: UIUserInterfaceStyle](uiviewcontroller/preferreduserinterfacestyle.md)
+- [var preferredUserInterfaceStyle: UIUserInterfaceStyle](./uiviewcontroller/preferreduserinterfacestyle.md)
   The preferred interface style for this view controller.
-- [var childViewControllerForUserInterfaceStyle: UIViewController?](uiviewcontroller/childviewcontrollerforuserinterfacestyle.md)
+- [var childViewControllerForUserInterfaceStyle: UIViewController?](./uiviewcontroller/childviewcontrollerforuserinterfacestyle.md)
   The child view controller that supports the preferred user interface style.
-- [func setNeedsUserInterfaceAppearanceUpdate()](uiviewcontroller/setneedsuserinterfaceappearanceupdate.md)
+- [func setNeedsUserInterfaceAppearanceUpdate()](./uiviewcontroller/setneedsuserinterfaceappearanceupdate%28%29.md)
   Notifies the view controller that a change occurred that might affect the preferred interface style.
 
 

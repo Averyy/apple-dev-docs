@@ -1,7 +1,8 @@
 # callAsFunction(_:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a permission question to a parent or guardian.
 

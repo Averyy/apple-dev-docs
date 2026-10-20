@@ -1,7 +1,8 @@
 # preferredFramesPerSecond
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation frame rate that the view uses to render its scene.
 
@@ -19,6 +20,10 @@ The animation frame rate that the view uses to render its scene.
 var preferredFramesPerSecond: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger preferredFramesPerSecond;
+```
+
 #### Discussion
 
 When your application sets its preferred frame rate, the view chooses a frame rate as close to that as possible based on the capabilities of the screen the view is displayed on. The actual frame rate chosen is usually a factor of the maximum refresh rate of the screen to provide a consistent frame rate. For example, if the maximum refresh rate of the screen is 60 frames per second, that is also the highest frame rate the view sets as the actual frame rate. However, if you ask for a lower frame rate, the view might choose 30, 20, or 15 frames per second, or another rate, as the actual frame rate.
@@ -29,15 +34,16 @@ The default value is 60 frames per second.
 
 ## See Also
 
-- [var isPaused: Bool](skview/ispaused.md)
+### Controlling the Timing of a Scene’s Rendering
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the view’s scene animations are paused.
-- [var delegate: (any SKViewDelegate)?](skview/delegate.md)
+- [var delegate: (any SKViewDelegate)?](./delegate.md)
   A delegate that allows dynamic control of the view’s render rate.
-- [protocol SKViewDelegate](skviewdelegate.md)
+- [protocol SKViewDelegate](../skviewdelegate.md)
   Methods to take custom control over the view’s render rate.
-- [var frameInterval: Int](skview/frameinterval.md)
+- [var frameInterval: Int](./frameinterval.md)
   The number of frames that must pass before the scene is called to update its contents.
-- [var preferredFrameRate: Float](skview/preferredframerate.md)
+- [var preferredFrameRate: Float](./preferredframerate.md)
 
 
 ---

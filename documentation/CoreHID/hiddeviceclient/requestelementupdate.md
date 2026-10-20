@@ -1,7 +1,8 @@
 # HIDDeviceClient.RequestElementUpdate
 
 **Framework**: Core HID  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request to pull the current value from a list of HID elements
 
@@ -16,39 +17,40 @@ struct RequestElementUpdate
 
 ## Mentions
 
-- [Communicating with human interface devices](communicatingwithhiddevices.md)
+- [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
 #### Overview
 
-Provide this structure to [`updateElements(_:timeout:)`](hiddeviceclient/updateelements(_:timeout:).md) to request the current values for a list of elements. In most cases, this triggers a get report request to the device for all of the reports containing elements in the provided element list.
+Provide this structure to [`updateElements(_:timeout:)`](./updateelements%28_,timeout%29.md) to request the current values for a list of elements. In most cases, this triggers a get report request to the device for all of the reports containing elements in the provided element list.
 
 ## Topics
 
 ### Initializers
-- [init(elements: [HIDElement], pollDevice: Bool)](hiddeviceclient/requestelementupdate/init(elements:polldevice:).md)
+- [init(elements: [HIDElement], pollDevice: Bool)](./requestelementupdate/init%28elements,polldevice%29.md)
   Creates a request element update.
 ### Instance Properties
-- [var elements: [HIDElement]](hiddeviceclient/requestelementupdate/elements.md)
+- [var elements: [HIDElement]](./requestelementupdate/elements.md)
   The elements used to request updates.
-- [var pollDevice: Bool](hiddeviceclient/requestelementupdate/polldevice.md)
+- [var pollDevice: Bool](./requestelementupdate/polldevice.md)
   Whether the device should be polled for new updates.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [HIDElementUpdate](hidelementupdate.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [HIDElementUpdate](../hidelementupdate.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func updateElements([any HIDElementUpdate], timeout: Duration?) async -> HIDDeviceClient.HIDElementUpdateResult](hiddeviceclient/updateelements(_:timeout:).md)
+### Update element values
+- [func updateElements([any HIDElementUpdate], timeout: Duration?) async -> HIDDeviceClient.HIDElementUpdateResult](./updateelements%28_,timeout%29.md)
   Provide new update values for, or request current values from, lists of elements.
-- [HIDDeviceClient.ProvideElementUpdate](hiddeviceclient/provideelementupdate.md)
+- [HIDDeviceClient.ProvideElementUpdate](./provideelementupdate.md)
   A structure that provides values for a list of HID elements.
-- [HIDDeviceClient.HIDElementUpdateResult](hiddeviceclient/hidelementupdateresult.md)
+- [HIDDeviceClient.HIDElementUpdateResult](./hidelementupdateresult.md)
   A class to hold the results of an element update.
 
 

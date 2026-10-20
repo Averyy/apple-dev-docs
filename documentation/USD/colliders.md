@@ -1,6 +1,7 @@
 # colliders
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 A list of prims that interact with objects to create a collision.
 
@@ -16,9 +17,10 @@ rel colliders
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
 
 

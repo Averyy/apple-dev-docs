@@ -1,7 +1,8 @@
 # distance(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance from this value to the given value, expressed as a stride.
 

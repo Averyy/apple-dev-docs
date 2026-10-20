@@ -1,7 +1,8 @@
 # VSAccountAccessStatus.restricted
 
 **Framework**: Video Subscriber Account  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app isn’t allowed to access subscription information.
 
@@ -9,7 +10,7 @@ The app isn’t allowed to access subscription information.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,17 +20,22 @@ The app isn’t allowed to access subscription information.
 case restricted
 ```
 
+```c
+VSAccountAccessStatusRestricted
+```
+
 #### Discussion
 
 This status can result if parental controls prohibit the user from allowing access.
 
 ## See Also
 
-- [VSAccountAccessStatus.denied](vsaccountaccessstatus/denied.md)
+### Statuses
+- [VSAccountAccessStatus.denied](./denied.md)
   The user denied the app access to subscription information.
-- [VSAccountAccessStatus.granted](vsaccountaccessstatus/granted.md)
+- [VSAccountAccessStatus.granted](./granted.md)
   The user allowed the app to access subscription information.
-- [VSAccountAccessStatus.notDetermined](vsaccountaccessstatus/notdetermined.md)
+- [VSAccountAccessStatus.notDetermined](./notdetermined.md)
   The user hasn’t chosen whether to allow the app to access subscription information.
 
 

@@ -1,7 +1,8 @@
 # MusicTokenRequestError.privacyAcknowledgementRequired
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when the user needs to acknowledge the most recent privacy policy.
 

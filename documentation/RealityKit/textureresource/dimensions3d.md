@@ -1,7 +1,8 @@
 # TextureResource.Dimensions3D
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The dimensions of the 3D texture.
 
@@ -26,16 +27,16 @@ This specifies the width, height, and depth of the 3D texture
 ## Topics
 
 ### Creating the 3D dimensions
-- [static func dimensions(width: Int, height: Int, depth: Int) -> TextureResource.Dimensions3D](textureresource/dimensions3d/dimensions(width:height:depth:).md)
+- [static func dimensions(width: Int, height: Int, depth: Int) -> TextureResource.Dimensions3D](./dimensions3d/dimensions%28width,height,depth%29.md)
   Specifies the dimensions of the 3D texture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

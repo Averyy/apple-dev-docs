@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message describing what error occurred.
 
@@ -22,11 +23,12 @@ var errorDescription: String? { get }
 
 ## See Also
 
-- [var failureReason: String?](weathererror/failurereason.md)
+### Getting the error properties
+- [var failureReason: String?](./failurereason.md)
   A localized message describing the reason for the failure.
-- [var helpAnchor: String?](weathererror/helpanchor.md)
+- [var helpAnchor: String?](./helpanchor.md)
   A localized message providing text if the user requests help.
-- [var recoverySuggestion: String?](weathererror/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./recoverysuggestion.md)
   A localized message describing how to recover from the failure.
 
 

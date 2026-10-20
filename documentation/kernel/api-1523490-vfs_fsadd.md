@@ -1,7 +1,8 @@
 # vfs_fsadd
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Register a filesystem with VFS.
 
@@ -10,11 +11,11 @@ Register a filesystem with VFS.
 
 ## Declaration
 
-```swift
+```c
 int vfs_fsadd(struct vfs_fsentry *vfe, vfstable_t *handle);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success, else an error code.
 

@@ -1,7 +1,8 @@
 # requestingScene
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene object that requested the activation of a different scene.
 
@@ -16,6 +17,10 @@ The scene object that requested the activation of a different scene.
 
 ```swift
 var requestingScene: UIScene? { get set }
+```
+
+```objc
+@property (nonatomic, strong, readwrite, nullable) UIScene * requestingScene;
 ```
 
 

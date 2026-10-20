@@ -1,7 +1,8 @@
 # init(markerFormat:options:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized text list.
 
@@ -12,6 +13,10 @@ Returns an initialized text list.
 
 ```swift
 convenience init(markerFormat: NSTextList.MarkerFormat, options: Int)
+```
+
+```objc
+- (instancetype) initWithMarkerFormat:(NSTextListMarkerFormat) markerFormat options:(NSUInteger) options;
 ```
 
 #### Return Value
@@ -47,9 +52,10 @@ Thus, for example, `@"({decimal})"` would specify the format for a list numbered
 
 ## See Also
 
-- [init?(coder: NSCoder)](nstextlist/init(coder:).md)
+### Creating a text list
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes and returns a newly allocated text list item.
-- [init(markerFormat: NSTextList.MarkerFormat, options: NSTextList.Options, startingItemNumber: Int)](nstextlist/init(markerformat:options:startingitemnumber:).md)
+- [init(markerFormat: NSTextList.MarkerFormat, options: NSTextList.Options, startingItemNumber: Int)](./init%28markerformat,options,startingitemnumber%29.md)
   Returns a new text list with the format, options, and starting item number you provide.
 
 

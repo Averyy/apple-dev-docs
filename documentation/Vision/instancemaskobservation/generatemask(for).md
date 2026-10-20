@@ -1,7 +1,8 @@
 # generateMask(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a low-resolution mask from the instances you specify.
 
@@ -30,9 +31,10 @@ The pixel buffer that contains the mask.
 
 ## See Also
 
-- [func generateMaskedImage(for: IndexSet, imageFrom: ImageRequestHandler, croppedToInstancesExtent: Bool) throws -> CVPixelBuffer](instancemaskobservation/generatemaskedimage(for:imagefrom:croppedtoinstancesextent:).md)
+### Generating a mask
+- [func generateMaskedImage(for: IndexSet, imageFrom: ImageRequestHandler, croppedToInstancesExtent: Bool) throws -> CVPixelBuffer](./generatemaskedimage%28for,imagefrom,croppedtoinstancesextent%29.md)
   Creates a high-resolution image with everything except for the instances you specify masked out.
-- [func generateScaledMask(for: IndexSet, scaledToImageFrom: ImageRequestHandler) throws -> CVPixelBuffer](instancemaskobservation/generatescaledmask(for:scaledtoimagefrom:).md)
+- [func generateScaledMask(for: IndexSet, scaledToImageFrom: ImageRequestHandler) throws -> CVPixelBuffer](./generatescaledmask%28for,scaledtoimagefrom%29.md)
   Creates a high-resolution mask representing a combination of the instances you specify.
 
 

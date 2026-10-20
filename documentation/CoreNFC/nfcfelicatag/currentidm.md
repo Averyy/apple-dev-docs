@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The manufacturer identifier for the system currently selected by the reader session.
@@ -17,13 +18,18 @@ The manufacturer identifier for the system currently selected by the reader sess
 var currentIDm: Data { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) NSData * currentIDm;
+```
+
 #### Discussion
 
-The reader session updates [`currentIDm`](nfcfelicatag/currentidm.md) each time your app calls the [`polling(systemCode:requestCode:timeSlot:completionHandler:)`](nfcfelicatag/polling(systemcode:requestcode:timeslot:completionhandler:).md) method. The data contained in [`currentIDm`](nfcfelicatag/currentidm.md) is empty when the system selection fails.
+The reader session updates [`currentIDm`](./currentidm.md) each time your app calls the [`polling(systemCode:requestCode:timeSlot:completionHandler:)`](./polling%28systemcode,requestcode,timeslot,completionhandler%29.md) method. The data contained in [`currentIDm`](./currentidm.md) is empty when the system selection fails.
 
 ## See Also
 
-- [var currentSystemCode: Data](nfcfelicatag/currentsystemcode.md)
+### Getting Current Information
+- [var currentSystemCode: Data](./currentsystemcode.md)
   The system code most recently selected by the reader session during a polling sequence.
 
 

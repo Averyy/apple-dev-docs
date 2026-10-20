@@ -1,7 +1,8 @@
 # kSecAttrSecurityDomain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string indicating the item’s security domain.
 
@@ -20,9 +21,13 @@ A key whose value is a string indicating the item’s security domain.
 let kSecAttrSecurityDomain: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrSecurityDomain;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and represents the Internet security domain. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and represents the Internet security domain. Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 
 
 ---

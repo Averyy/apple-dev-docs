@@ -1,14 +1,15 @@
 # tcpi_tfo_heuristics_disable
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t tcpi_tfo_heuristics_disable:1;
 ```
 

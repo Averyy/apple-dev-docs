@@ -1,7 +1,8 @@
 # menuDidClose(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked after a menu closed.
 
@@ -15,6 +16,10 @@ Invoked after a menu closed.
 optional func menuDidClose(_ menu: NSMenu)
 ```
 
+```objc
+- (void) menuDidClose:(NSMenu *) menu;
+```
+
 #### Discussion
 
 Don’t modify the structure of the menu or the menu items during this method.
@@ -25,7 +30,8 @@ Don’t modify the structure of the menu or the menu items during this method.
 
 ## See Also
 
-- [func menuWillOpen(NSMenu)](nsmenudelegate/menuwillopen(_:).md)
+### Handling Open and Close Events
+- [func menuWillOpen(NSMenu)](./menuwillopen%28_%29.md)
   Invoked when a menu is about to open.
 
 

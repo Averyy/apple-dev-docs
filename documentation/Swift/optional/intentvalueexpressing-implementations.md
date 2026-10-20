@@ -1,11 +1,12 @@
 # IntentValueExpressing Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func makeExpression() -> IntentValueExpression](optional/makeexpression.md)
+- [func makeExpression() -> IntentValueExpression](./makeexpression%28%29.md)
   Creates an expression that represents this optional intent value.
 
 

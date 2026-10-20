@@ -1,7 +1,8 @@
 # tlsConfiguration
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration to use for Transport Layer Security (TLS).
 

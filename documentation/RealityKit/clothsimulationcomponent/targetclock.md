@@ -1,7 +1,8 @@
 # targetClock
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clock that this simulation attempts to follow.
 
@@ -18,13 +19,14 @@ var targetClock: CMClockOrTimebase { get set }
 
 #### Discussion
 
-The tempo of this clock can be adjusted to slow down or completely pause the simulation. The simulation may not be able to perfectly follow the target clock due to [`maximumStepsPerUpdate`](clothsimulationcomponent/maximumstepsperupdate-swift.property.md).
+The tempo of this clock can be adjusted to slow down or completely pause the simulation. The simulation may not be able to perfectly follow the target clock due to [`maximumStepsPerUpdate`](./maximumstepsperupdate-swift.property.md).
 
 Defaults to the RealityKit engine clock.
 
 ## See Also
 
-- [var simulationClock: CMClockOrTimebase](clothsimulationcomponent/simulationclock.md)
+### Synchronizing the clock
+- [var simulationClock: CMClockOrTimebase](./simulationclock.md)
   The clock that tracks the pace of this simulation.
 
 

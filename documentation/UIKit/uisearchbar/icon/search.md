@@ -1,21 +1,26 @@
 # UISearchBar.Icon.search
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the search icon.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case search
+```
+
+```c
+UISearchBarIconSearch
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ By default, the corresponding icon is a magnifying glass.
 
 ## See Also
 
-- [UISearchBar.Icon.clear](uisearchbar/icon/clear.md)
+### Constants
+- [UISearchBar.Icon.clear](./clear.md)
   Identifies the clear action icon.
-- [UISearchBar.Icon.bookmark](uisearchbar/icon/bookmark.md)
+- [UISearchBar.Icon.bookmark](./bookmark.md)
   Identifies the bookmarks icon.
-- [UISearchBar.Icon.resultsList](uisearchbar/icon/resultslist.md)
+- [UISearchBar.Icon.resultsList](./resultslist.md)
   Identifies the results list icon.
 
 

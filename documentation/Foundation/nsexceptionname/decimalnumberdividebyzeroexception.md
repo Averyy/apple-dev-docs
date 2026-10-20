@@ -1,7 +1,8 @@
 # decimalNumberDivideByZeroException
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The exception raised on divide by zero.
 
@@ -20,13 +21,18 @@ The exception raised on divide by zero.
 static let decimalNumberDivideByZeroException: NSExceptionName
 ```
 
+```c
+extern NSExceptionName const NSDecimalNumberDivideByZeroException;
+```
+
 ## See Also
 
-- [static let decimalNumberExactnessException: NSExceptionName](nsexceptionname/decimalnumberexactnessexception.md)
+### Recognizing Exceptions
+- [static let decimalNumberExactnessException: NSExceptionName](./decimalnumberexactnessexception.md)
   The exception raised if there is an exactness error.
-- [static let decimalNumberOverflowException: NSExceptionName](nsexceptionname/decimalnumberoverflowexception.md)
+- [static let decimalNumberOverflowException: NSExceptionName](./decimalnumberoverflowexception.md)
   The exception raised on overflow.
-- [static let decimalNumberUnderflowException: NSExceptionName](nsexceptionname/decimalnumberunderflowexception.md)
+- [static let decimalNumberUnderflowException: NSExceptionName](./decimalnumberunderflowexception.md)
   The exception raised on underflow.
 
 

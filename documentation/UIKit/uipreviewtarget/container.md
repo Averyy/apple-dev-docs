@@ -1,7 +1,8 @@
 # container
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container for the view being animated.
 
@@ -18,11 +19,16 @@ The container for the view being animated.
 var container: UIView { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIView * container;
+```
+
 ## See Also
 
-- [var center: CGPoint](uipreviewtarget/center.md)
+### Getting the target attributes
+- [var center: CGPoint](./center.md)
   The point in the containing view at which to place the center of the view being animated.
-- [var transform: CGAffineTransform](uipreviewtarget/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   An affine transform to apply to the view being animated.
 
 

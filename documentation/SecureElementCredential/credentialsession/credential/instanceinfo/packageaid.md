@@ -1,7 +1,8 @@
 # packageAID
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the package you use to install the instance.
 
@@ -21,9 +22,10 @@ You can use the version encoded in this identifier to determine the version of t
 
 ## See Also
 
-- [let instanceAID: Data](credentialsession/credential/instanceinfo/instanceaid.md)
+### Inspecting instance identifiers
+- [let instanceAID: Data](./instanceaid.md)
   The unique identifier for the applet instance.
-- [let moduleAID: Data](credentialsession/credential/instanceinfo/moduleaid.md)
+- [let moduleAID: Data](./moduleaid.md)
   The module identifier of the package with which this instance is associated.
 
 

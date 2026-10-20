@@ -1,7 +1,8 @@
 # init(frame:configuration:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a web view and initializes it with the specified frame and configuration data.
 
@@ -18,6 +19,10 @@ Creates a web view and initializes it with the specified frame and configuration
 init(frame: CGRect, configuration: WKWebViewConfiguration)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame configuration:(WKWebViewConfiguration *) configuration;
+```
+
 #### Return Value
 
 An initialized web view, or `nil` if the view couldn’t be initialized.
@@ -26,18 +31,19 @@ An initialized web view, or `nil` if the view couldn’t be initialized.
 
 This method is the designated initializer for the class. Use this method to create a web view that requires custom configuration. For example, use it when you need to specify custom cookies or content filters for the web content.
 
-To create a web view with default configuration values, call the inherited [`init(frame:)`](https://developer.apple.com/documentation/uikit/uiview/init(frame:)) method.
+To create a web view with default configuration values, call the inherited [`init(frame:)`](../../UIKit/uiview/init%28frame%29.md) method.
 
 ## Parameters
 
 - `frame`: The frame rectangle for the new web view.
-- `configuration`: The configuration of the new web view. This method saves a copy of your configuration object. Changes you make to your original object after calling this method have no effect on the web view’s configuration. For a list of configuration options and their default values, see [`WKWebViewConfiguration`](wkwebviewconfiguration.md).
+- `configuration`: The configuration of the new web view. This method saves a copy of your configuration object. Changes you make to your original object after calling this method have no effect on the web view’s configuration. For a list of configuration options and their default values, see [`WKWebViewConfiguration`](../wkwebviewconfiguration.md).
 
 ## See Also
 
-- [init?(coder: NSCoder)](wkwebview/init(coder:).md)
+### Creating a web view
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns an object initialized from data in the specified coder object.
-- [var configuration: WKWebViewConfiguration](wkwebview/configuration.md)
+- [var configuration: WKWebViewConfiguration](./configuration.md)
   The object that contains the configuration details for the web view.
 
 

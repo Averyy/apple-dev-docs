@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct fs_snapshot_root_args {
     ...
 };
@@ -17,7 +17,7 @@ struct fs_snapshot_root_args {
 ## Topics
 
 ### Instance Properties
-- [sr_cnp](fs_snapshot_root_args/2863841-sr_cnp.md)
+- [sr_cnp](./fs_snapshot_root_args/api-2863841-sr_cnp.md)
 
 
 ---

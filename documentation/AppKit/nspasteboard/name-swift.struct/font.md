@@ -1,7 +1,8 @@
 # font
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pasteboard that holds font and character information and supports Copy Font and Paste Font commands that the text editor may implement.
 
@@ -14,15 +15,20 @@ The pasteboard that holds font and character information and supports Copy Font 
 static let font: NSPasteboard.Name
 ```
 
+```c
+extern NSPasteboardName NSPasteboardNameFont;
+```
+
 ## See Also
 
-- [static let drag: NSPasteboard.Name](nspasteboard/name-swift.struct/drag.md)
+### Named Pasteboards
+- [static let drag: NSPasteboard.Name](./drag.md)
   The pasteboard that stores data to move as the result of a drag operation.
-- [static let find: NSPasteboard.Name](nspasteboard/name-swift.struct/find.md)
+- [static let find: NSPasteboard.Name](./find.md)
   The pasteboard that holds information about the current state of the active application’s find panel.
-- [static let general: NSPasteboard.Name](nspasteboard/name-swift.struct/general.md)
+- [static let general: NSPasteboard.Name](./general.md)
   The pasteboard you use to perform ordinary cut, copy, and paste operations.
-- [static let ruler: NSPasteboard.Name](nspasteboard/name-swift.struct/ruler.md)
+- [static let ruler: NSPasteboard.Name](./ruler.md)
   The pasteboard that holds information about paragraph formats and supports the Copy Ruler and Paste Ruler commands that the text editor may implement.
 
 

@@ -1,7 +1,8 @@
 # extendedPixels
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the amount of extended pixel padding in the pixel buffer.
 

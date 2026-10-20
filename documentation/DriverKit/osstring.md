@@ -1,19 +1,20 @@
 # OSString
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for managing an array of characters.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class OSString;
 ```
 
@@ -30,63 +31,64 @@ OSString is immutable.
 ## Topics
 
 ### Creating a String
-- [withString](osstring/withstring.md)
+- [withString](./osstring/withstring.md)
   Allocates an OSString object with a copy of an OString object.
-- [withCString](osstring/withcstring-4wsql.md)
+- [withCString](./osstring/withcstring-4wsql.md)
   Allocates an OSString object with a copy of a c-string.
-- [withCString](osstring/withcstring-721oh.md)
+- [withCString](./osstring/withcstring-721oh.md)
   Allocates an OSString object with a copy of a c-string, up to a given length.
-- [withCStringNoCopy](osstring/withcstringnocopy.md)
+- [withCStringNoCopy](./osstring/withcstringnocopy.md)
   Allocates an OSString object with a copy of a c-string.
-- [OSStringCreate](osstringcreate.md)
-- [free](osstring/free.md)
+- [OSStringCreate](./osstringcreate.md)
+- [free](./osstring/free.md)
 ### Getting a C String
-- [getCStringNoCopy](osstring/getcstringnocopy.md)
+- [getCStringNoCopy](./osstring/getcstringnocopy.md)
   Returns a pointer to the OSString object’s internal data buffer.
-- [OSStringGetStringPtr](osstringgetstringptr.md)
-- [OSStringPtr](osstringptr.md)
+- [OSStringGetStringPtr](./osstringgetstringptr.md)
+- [OSStringPtr](./osstringptr.md)
 ### Inspecting a String
-- [getLength](osstring/getlength.md)
+- [getLength](./osstring/getlength.md)
   Returns length of string not including null terminator.
-- [OSStringGetLength](osstringgetlength.md)
+- [OSStringGetLength](./osstringgetlength.md)
 ### Comparing Strings
-- [isEqualTo](osstring/isequalto-1uq1f.md)
+- [isEqualTo](./osstring/isequalto-1uq1f.md)
   Compares the string with an OSData.
-- [isEqualTo](osstring/isequalto-712xj.md)
+- [isEqualTo](./osstring/isequalto-712xj.md)
   Compares the string with an OSObject
-- [isEqualTo](osstring/isequalto-5paj5.md)
+- [isEqualTo](./osstring/isequalto-5paj5.md)
   Compares the string with an OSString.
-- [isEqualTo](osstring/isequalto-2rg80.md)
+- [isEqualTo](./osstring/isequalto-2rg80.md)
   Compares the string with a c-string.
 
 ## Relationships
 
 ### Inherits From
-- [OSContainer](oscontainer.md)
+- [OSContainer](./oscontainer.md)
 
 ## See Also
 
-- [OSArray](osarray.md)
+### Registry data types
+- [OSArray](./osarray.md)
   A container for an ordered, random-access collection of objects.
-- [OSDictionary](osdictionary.md)
+- [OSDictionary](./osdictionary.md)
   A container for a collection with elements that are key-value pairs.
-- [OSBoolean](osboolean.md)
+- [OSBoolean](./osboolean.md)
   A container for a true or false value.
-- [OSData](osdata.md)
+- [OSData](./osdata.md)
   A container for untyped data.
-- [OSNumber](osnumber.md)
+- [OSNumber](./osnumber.md)
   A container for an integer value.
-- [OSSerialization](osserialization.md)
+- [OSSerialization](./osserialization.md)
   A container for one or more objects, serialized in a binary data format that is suitable for messaging.
-- [OSCollection](oscollection.md)
+- [OSCollection](./oscollection.md)
   The base class for DriverKit collection objects.
-- [OSContainer](oscontainer.md)
+- [OSContainer](./oscontainer.md)
   The base class for DriverKit data objects.
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
   The base class for DriverKit objects
-- [OSSymbol](ossymbol.md)
+- [OSSymbol](./ossymbol.md)
   A container for managing an array of characters.
-- [IOFixed](iofixed.md)
+- [IOFixed](./iofixed.md)
   A fixed-point number.
 
 

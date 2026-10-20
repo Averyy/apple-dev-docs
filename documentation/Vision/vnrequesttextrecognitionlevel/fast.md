@@ -1,7 +1,8 @@
 # VNRequestTextRecognitionLevel.fast
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Fast text recognition returns results more quickly at the expense of accuracy.
 
@@ -11,13 +12,18 @@ Fast text recognition returns results more quickly at the expense of accuracy.
 case fast
 ```
 
+```c
+VNRequestTextRecognitionLevelFast
+```
+
 ## Mentions
 
-- [Recognizing Text in Images](recognizing-text-in-images.md)
+- [Recognizing Text in Images](../recognizing-text-in-images.md)
 
 ## See Also
 
-- [VNRequestTextRecognitionLevel.accurate](vnrequesttextrecognitionlevel/accurate.md)
+### Recognition Levels
+- [VNRequestTextRecognitionLevel.accurate](./accurate.md)
   Accurate text recognition takes more time to produce a more comprehensive result.
 
 

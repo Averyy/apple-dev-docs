@@ -1,7 +1,8 @@
 # nanoseconds
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The nanosecond unit of duration.
 
@@ -21,19 +22,24 @@ The nanosecond unit of duration.
 class var nanoseconds: UnitDuration { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitDuration * nanoseconds;
+```
+
 ## See Also
 
-- [class var hours: UnitDuration](unitduration/hours.md)
+### Accessing Predefined Units
+- [class var hours: UnitDuration](./hours.md)
   The hour unit of duration.
-- [class var minutes: UnitDuration](unitduration/minutes.md)
+- [class var minutes: UnitDuration](./minutes.md)
   The minute unit of duration.
-- [class var seconds: UnitDuration](unitduration/seconds.md)
+- [class var seconds: UnitDuration](./seconds.md)
   The second unit of duration.
-- [class var milliseconds: UnitDuration](unitduration/milliseconds.md)
+- [class var milliseconds: UnitDuration](./milliseconds.md)
   The millisecond unit of duration.
-- [class var microseconds: UnitDuration](unitduration/microseconds.md)
+- [class var microseconds: UnitDuration](./microseconds.md)
   The microsecond unit of duration.
-- [class var picoseconds: UnitDuration](unitduration/picoseconds.md)
+- [class var picoseconds: UnitDuration](./picoseconds.md)
   The picosecond unit of duration.
 
 

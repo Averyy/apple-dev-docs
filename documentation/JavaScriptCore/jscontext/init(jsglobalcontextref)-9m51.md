@@ -1,7 +1,8 @@
 # init(JSGlobalContextRef:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a JavaScript context object from the equivalent C representation.
 
@@ -33,7 +34,8 @@ See `JSContextRef` for the C JavaScriptCore API.
 
 ## See Also
 
-- [var jsGlobalContextRef: JSGlobalContextRef!](jscontext/jsglobalcontextref.md)
+### Working with the C JavaScriptCore API
+- [var jsGlobalContextRef: JSGlobalContextRef!](./jsglobalcontextref.md)
   Returns the C representation of the JavaScript context.
 
 

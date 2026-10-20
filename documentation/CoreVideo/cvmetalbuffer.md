@@ -1,7 +1,8 @@
 # CVMetalBuffer
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 4.0+
@@ -15,6 +16,10 @@
 
 ```swift
 typealias CVMetalBuffer = CVBuffer
+```
+
+```c
+typedef CVBufferRef CVMetalBufferRef;
 ```
 
 #### Discussion

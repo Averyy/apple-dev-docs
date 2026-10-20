@@ -1,24 +1,26 @@
 # EndWait
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t EndWait(OSActionWaitToken *token);
 ```
 
 ## See Also
 
-- [Wait](osaction/wait.md)
-- [WillWait](osaction/willwait.md)
+### Instance Methods
+- [Wait](./wait.md)
+- [WillWait](./willwait.md)
 
 
 ---

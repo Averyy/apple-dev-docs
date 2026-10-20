@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a Metal dynamic library instance from a Metal library instance.
@@ -20,25 +21,30 @@ Creates a Metal dynamic library instance from a Metal library instance.
 func makeDynamicLibrary(library: any MTLLibrary) throws -> any MTLDynamicLibrary
 ```
 
+```objc
+- (id<MTLDynamicLibrary>) newDynamicLibrary:(id<MTLLibrary>) library error:(NSError **) error;
+```
+
 #### Return Value
 
-A new [`MTLDynamicLibrary`](mtldynamiclibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
+A new [`MTLDynamicLibrary`](../mtldynamiclibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
 ## Parameters
 
-- `library`: An [`MTLLibrary`](mtllibrary.md) instance.
+- `library`: An [`MTLLibrary`](../mtllibrary.md) instance.
 
 ## See Also
 
-- [var supportsDynamicLibraries: Bool](mtldevice/supportsdynamiclibraries.md)
+### Creating dynamic shader libraries
+- [var supportsDynamicLibraries: Bool](./supportsdynamiclibraries.md)
   A Boolean value that indicates whether the GPU device can create and use dynamic libraries in compute pipelines.
-- [var supportsRenderDynamicLibraries: Bool](mtldevice/supportsrenderdynamiclibraries.md)
+- [var supportsRenderDynamicLibraries: Bool](./supportsrenderdynamiclibraries.md)
   A Boolean value that indicates whether the GPU device can create and use dynamic libraries in render pipelines.
-- [func makeDynamicLibrary(url: URL) throws -> any MTLDynamicLibrary](mtldevice/makedynamiclibrary(url:).md)
+- [func makeDynamicLibrary(url: URL) throws -> any MTLDynamicLibrary](./makedynamiclibrary%28url%29.md)
   Creates a Metal dynamic library instance that contains the functions in the Metal library file at a URL.
-- [MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/code.md)
+- [MTLDynamicLibraryError.Code](../mtldynamiclibraryerror-swift.struct/code.md)
   Error codes that Metal can generate when creating dynamic libraries.
-- [let MTLDynamicLibraryDomain: String](mtldynamiclibrarydomain.md)
+- [let MTLDynamicLibraryDomain: String](../mtldynamiclibrarydomain.md)
   The domain for Metal dynamic library errors.
 
 

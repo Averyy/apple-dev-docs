@@ -1,7 +1,8 @@
 # outputFeatureChannels
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 var outputFeatureChannels: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger outputFeatureChannels;
+```
+
 ## See Also
 
-- [var inputFeatureChannels: Int](mpscnnbinaryconvolution/inputfeaturechannels.md)
+### Instance Properties
+- [var inputFeatureChannels: Int](./inputfeaturechannels.md)
 
 
 ---

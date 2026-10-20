@@ -1,7 +1,8 @@
 # HandAnchor.Chirality.right
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A right hand.
 
@@ -16,7 +17,8 @@ case right
 
 ## See Also
 
-- [HandAnchor.Chirality.left](handanchor/chirality-swift.enum/left.md)
+### Getting hand chirality
+- [HandAnchor.Chirality.left](./left.md)
   A left hand.
 
 

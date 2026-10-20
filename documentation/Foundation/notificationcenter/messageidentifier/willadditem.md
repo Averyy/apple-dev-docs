@@ -1,7 +1,8 @@
 # willAddItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 27.0+
@@ -12,6 +13,8 @@
 ```swift
 static var willAddItem: NotificationCenter.BaseMessageIdentifier<NSToolbar.WillAddItemMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSToolbar.WillAddItemMessage>`.
 
 
 ---

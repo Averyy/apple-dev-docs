@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells your delegate to incorporate the drop data into the collection view.
@@ -18,13 +19,17 @@ Tells your delegate to incorporate the drop data into the collection view.
 func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: any UICollectionViewDropCoordinator)
 ```
 
+```objc
+- (void) collectionView:(UICollectionView *) collectionView performDropWithCoordinator:(id<UICollectionViewDropCoordinator>) coordinator;
+```
+
 ## Mentions
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
+- [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 
 #### Discussion
 
-Use this method to accept the dropped content and integrate it into your collection view. In your implementation, iterate over the [`items`](uicollectionviewdropcoordinator/items.md) property of the `coordinator` object and fetch the data from each [`UIDragItem`](uidragitem.md). Incorporate the data into your collection view’s data source and update the collection view itself by inserting any needed items. When incorporating items, use the methods of the `coordinator` object to animate the transition from the drag item’s preview to the corresponding item in your collection view. For items that you incorporate immediately, you can use the [`drop(_:to:)`](uicollectionviewdropcoordinator/drop(_:to:)-7w5rn.md) or [`drop(_:toItemAt:)`](uicollectionviewdropcoordinator/drop(_:toitemat:).md) method to perform the animation.
+Use this method to accept the dropped content and integrate it into your collection view. In your implementation, iterate over the [`items`](../uicollectionviewdropcoordinator/items.md) property of the `coordinator` object and fetch the data from each [`UIDragItem`](../uidragitem.md). Incorporate the data into your collection view’s data source and update the collection view itself by inserting any needed items. When incorporating items, use the methods of the `coordinator` object to animate the transition from the drag item’s preview to the corresponding item in your collection view. For items that you incorporate immediately, you can use the [`drop(_:to:)`](../uicollectionviewdropcoordinator/drop%28_,to%29-7w5rn.md) or [`drop(_:toItemAt:)`](../uicollectionviewdropcoordinator/drop%28_,toitemat%29.md) method to perform the animation.
 
 ## Parameters
 

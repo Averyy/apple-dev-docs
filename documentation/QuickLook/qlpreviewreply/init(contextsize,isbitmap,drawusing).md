@@ -1,7 +1,8 @@
 # init(contextSize:isBitmap:drawUsing:)
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+

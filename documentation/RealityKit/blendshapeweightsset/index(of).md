@@ -1,7 +1,8 @@
 # index(of:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index where the specified blend shape weights data appears in the collection.
 

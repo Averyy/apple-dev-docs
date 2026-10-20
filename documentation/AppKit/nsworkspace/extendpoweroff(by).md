@@ -1,17 +1,22 @@
 # extendPowerOff(by:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the system wait for the specified amount of time before turning off the power or logging out the user.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func extendPowerOff(by requested: Int) -> Int
+```
+
+```objc
+- (NSInteger) extendPowerOffBy:(NSInteger) requested;
 ```
 
 #### Return Value

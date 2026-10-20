@@ -1,7 +1,8 @@
 # NSData.ReadingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for methods used to read data objects.
 
@@ -20,46 +21,51 @@ Options for methods used to read data objects.
 struct ReadingOptions
 ```
 
+```c
+enum NSDataReadingOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](nsdata/readingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./readingoptions/init%28rawvalue%29.md)
 ### Constants
-- [static var mappedIfSafe: NSData.ReadingOptions](nsdata/readingoptions/mappedifsafe.md)
+- [static var mappedIfSafe: NSData.ReadingOptions](./readingoptions/mappedifsafe.md)
   A hint indicating the file should be mapped into virtual memory, if possible and safe.
-- [static var uncached: NSData.ReadingOptions](nsdata/readingoptions/uncached.md)
+- [static var uncached: NSData.ReadingOptions](./readingoptions/uncached.md)
   A hint indicating the file should not be stored in the file-system caches.
-- [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
+- [static var alwaysMapped: NSData.ReadingOptions](./readingoptions/alwaysmapped.md)
   Hint to map the file in if possible.
 ### Legacy Constants
-- [static var dataReadingMapped: NSData.ReadingOptions](nsdata/readingoptions/datareadingmapped.md)
-  Deprecated name for [`mappedIfSafe`](nsdata/readingoptions/mappedifsafe.md).
-- [static var mappedRead: NSData.ReadingOptions](nsdata/readingoptions/mappedread.md)
-  Deprecated name for [`dataReadingMapped`](nsdata/readingoptions/datareadingmapped.md).
-- [static var uncachedRead: NSData.ReadingOptions](nsdata/readingoptions/uncachedread.md)
-  Deprecated name for [`uncached`](nsdata/readingoptions/uncached.md).
+- [static var dataReadingMapped: NSData.ReadingOptions](./readingoptions/datareadingmapped.md)
+  Deprecated name for [`mappedIfSafe`](./readingoptions/mappedifsafe.md).
+- [static var mappedRead: NSData.ReadingOptions](./readingoptions/mappedread.md)
+  Deprecated name for [`dataReadingMapped`](./readingoptions/datareadingmapped.md).
+- [static var uncachedRead: NSData.ReadingOptions](./readingoptions/uncachedread.md)
+  Deprecated name for [`uncached`](./readingoptions/uncached.md).
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init?(contentsOfFile: String)](nsdata/init(contentsoffile:).md)
+### Reading Data from a File
+- [init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Initializes a data object with the content of the file at a given path.
-- [init(contentsOfFile: String, options: NSData.ReadingOptions) throws](nsdata/init(contentsoffile:options:).md)
+- [init(contentsOfFile: String, options: NSData.ReadingOptions) throws](./init%28contentsoffile,options%29.md)
   Initializes a data object with the content of the file at a given path.
-- [init?(contentsOfMappedFile: String)](nsdata/init(contentsofmappedfile:).md)
+- [init?(contentsOfMappedFile: String)](./init%28contentsofmappedfile%29.md)
   Initializes a data object with the contents of the mapped file specified by a given path.
-- [class func dataWithContentsOfMappedFile(String) -> Any?](nsdata/datawithcontentsofmappedfile(_:).md)
+- [class func dataWithContentsOfMappedFile(String) -> Any?](./datawithcontentsofmappedfile%28_%29.md)
   Creates a data object from the mapped file at a given path.
 
 

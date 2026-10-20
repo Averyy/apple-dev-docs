@@ -1,7 +1,8 @@
 # source
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant device that sent the message.
 

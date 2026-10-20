@@ -1,7 +1,8 @@
 # AVPlayerItemSegment.SegmentType
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the type of segment.
 
@@ -20,29 +21,34 @@ Constants that specify the type of segment.
 enum SegmentType
 ```
 
+```c
+enum AVPlayerItemSegmentType : NSInteger;
+```
+
 ## Topics
 
 ### Segment types
-- [AVPlayerItemSegment.SegmentType.primary](avplayeritemsegment/segmenttype-swift.enum/primary.md)
+- [AVPlayerItemSegment.SegmentType.primary](./segmenttype-swift.enum/primary.md)
   A segment that represents playback of a primary item.
-- [AVPlayerItemSegment.SegmentType.interstitial](avplayeritemsegment/segmenttype-swift.enum/interstitial.md)
+- [AVPlayerItemSegment.SegmentType.interstitial](./segmenttype-swift.enum/interstitial.md)
   A segment that represents playback of an interstitial event.
 ### Initializers
-- [init?(rawValue: Int)](avplayeritemsegment/segmenttype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./segmenttype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var segmentType: AVPlayerItemSegment.SegmentType](avplayeritemsegment/segmenttype-swift.property.md)
+### Identifying the type
+- [var segmentType: AVPlayerItemSegment.SegmentType](./segmenttype-swift.property.md)
   The type content this segment represents.
 
 

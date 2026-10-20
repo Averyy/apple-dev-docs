@@ -1,7 +1,8 @@
 # DDError.Code
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes that identify errors that can occur during the framework’s use.
 
@@ -9,7 +10,7 @@ Codes that identify errors that can occur during the framework’s use.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,53 +19,58 @@ Codes that identify errors that can occur during the framework’s use.
 enum Code
 ```
 
+```c
+enum DDErrorCode : NSInteger;
+```
+
 #### Overview
 
-The system returns one of these codes to describe a completed operation by invoking a [`DDErrorHandler`](dderrorhandler.md) that the client provides.
+The system returns one of these codes to describe a completed operation by invoking a [`DDErrorHandler`](../dderrorhandler.md) that the client provides.
 
 ## Topics
 
 ### Errors
-- [DDError.Code.success](dderror/code/success.md)
+- [DDError.Code.success](./code/success.md)
   An error that indicates an operation succeeds.
-- [DDError.Code.unknown](dderror/code/unknown.md)
+- [DDError.Code.unknown](./code/unknown.md)
   An error that indicates an uncategorized problem.
-- [DDError.Code.badParameter](dderror/code/badparameter.md)
+- [DDError.Code.badParameter](./code/badparameter.md)
   An error that indicates the framework doesn’t support a parameter that the extension provides.
-- [DDError.Code.unsupported](dderror/code/unsupported.md)
+- [DDError.Code.unsupported](./code/unsupported.md)
   An error that indicates an unsupported configuration.
-- [DDError.Code.timeout](dderror/code/timeout.md)
+- [DDError.Code.timeout](./code/timeout.md)
   An error that indicates a timeout occurs.
-- [DDError.Code.internal](dderror/code/internal.md)
+- [DDError.Code.internal](./code/internal.md)
   An error that indicates a problem of internal origin.
-- [DDError.Code.missingEntitlement](dderror/code/missingentitlement.md)
+- [DDError.Code.missingEntitlement](./code/missingentitlement.md)
   An error that indicates that the app extension lacks a required entitlement.
-- [DDError.Code.permission](dderror/code/permission.md)
+- [DDError.Code.permission](./code/permission.md)
   An error that indicates the app extension lacks necessary permissions.
-- [DDError.Code.next](dderror/code/next.md)
+- [DDError.Code.next](./code/next.md)
   An error the framework reserves for future use.
 ### Initializers
-- [init?(rawValue: Int)](dderror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DDError](dderror.md)
+### Errors
+- [struct DDError](../dderror.md)
   An error that the framework reports.
-- [typealias DDErrorHandler](dderrorhandler.md)
+- [typealias DDErrorHandler](../dderrorhandler.md)
   A function that executes code you provide when an operation returns an error or completes successfully.
-- [typealias DDErrorOutType](dderrorouttype.md)
+- [typealias DDErrorOutType](../dderrorouttype.md)
   A type for framework functions that return error references.
-- [let DDErrorDomain: String](dderrordomain.md)
+- [let DDErrorDomain: String](../dderrordomain.md)
   A unique error domain for the framework.
 
 

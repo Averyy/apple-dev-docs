@@ -1,6 +1,7 @@
 # Synchronizing events between a GPU and the CPU
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Use shareable events to synchronize your app’s work between a GPU and the CPU.
 
@@ -8,13 +9,13 @@ Use shareable events to synchronize your app’s work between a GPU and the CPU.
 
 A shared event has methods and properties that let your app execute code when the event is triggered, or update the event’s value.
 
-Call the [`notify(_:atValue:block:)`](mtlsharedevent/notify(_:atvalue:block:).md) method to register a notification handler that listens for changes to a shared event’s value. When some other action signals the event to give it a new value that is equal or larger than this value, such as when you signal the event from a command you sent to the GPU, the notification handler executes the block of code that you provided.
+Call the [`notify(_:atValue:block:)`](./mtlsharedevent/notify%28_,atvalue,block%29.md) method to register a notification handler that listens for changes to a shared event’s value. When some other action signals the event to give it a new value that is equal or larger than this value, such as when you signal the event from a command you sent to the GPU, the notification handler executes the block of code that you provided.
 
-Set the shared event’s  [`signaledValue`](mtlsharedevent/signaledvalue.md) property to signal the event from the CPU. The value is only updated if you set a value larger than the current value stored in the event. Setting the value unblocks any commands waiting on a value equal to or smaller than the new value, and similarly triggers any CPU-based notifications.
+Set the shared event’s  [`signaledValue`](./mtlsharedevent/signaledvalue.md) property to signal the event from the CPU. The value is only updated if you set a value larger than the current value stored in the event. Setting the value unblocks any commands waiting on a value equal to or smaller than the new value, and similarly triggers any CPU-based notifications.
 
 The following figure and code show a shareable event that synchronizes GPU work and CPU work.
 
-![Timeline diagram that shows shareable synchronization events for a GPU and the CPU, and the work that the GPU and CPU do.](/images/com.apple.metal/synchronizing-events-between-a-gpu-and-the-cpu-1@2x.png)
+![Timeline diagram that shows shareable synchronization events for a GPU and the CPU, and the work that the GPU and CPU do.](https://developer.apple.com/tutorials/images/com.apple.metal/synchronizing-events-between-a-gpu-and-the-cpu-1@2x.png)
 
 **Swift**:
 
@@ -112,23 +113,24 @@ When the function commits the command buffer, the following actions occur:
 
 ## See Also
 
-- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+### Synchronizing with events
+- [Implementing a multistage image filter using heaps and events](./implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [About synchronization events](about-synchronization-events.md)
+- [About synchronization events](./about-synchronization-events.md)
   Synchronize access to resources in your app by signaling events.
-- [Synchronizing events within a single device](synchronizing-events-within-a-single-device.md)
+- [Synchronizing events within a single device](./synchronizing-events-within-a-single-device.md)
   Use nonshareable events to synchronize your app’s work within a single device.
-- [Synchronizing events across multiple devices or processes](synchronizing-events-across-multiple-devices-or-processes.md)
+- [Synchronizing events across multiple devices or processes](./synchronizing-events-across-multiple-devices-or-processes.md)
   Use shareable events to synchronize your app’s work across multiple devices or processes.
-- [protocol MTLEvent](mtlevent.md)
+- [protocol MTLEvent](./mtlevent.md)
   A type that synchronizes memory operations to one or more resources within a single Metal device.
-- [protocol MTLSharedEvent](mtlsharedevent.md)
+- [protocol MTLSharedEvent](./mtlsharedevent.md)
   A type that synchronizes memory operations to one or more resources across multiple CPUs, GPUs, and processes.
-- [class MTLSharedEventHandle](mtlsharedeventhandle.md)
+- [class MTLSharedEventHandle](./mtlsharedeventhandle.md)
   An instance you use to recreate a shareable event.
-- [class MTLSharedEventListener](mtlsharedeventlistener.md)
+- [class MTLSharedEventListener](./mtlsharedeventlistener.md)
   A listener for shareable event notifications.
-- [typealias MTLSharedEventNotificationBlock](mtlsharedeventnotificationblock.md)
+- [typealias MTLSharedEventNotificationBlock](./mtlsharedeventnotificationblock.md)
   A block of code invoked after a shareable event’s signal value equals or exceeds a given value.
 
 

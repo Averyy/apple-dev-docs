@@ -1,6 +1,7 @@
 # Managing metadata in your app by using locale shortcodes
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Optimize your app’s user experience by adding localized metadata with App Store Connect API.
 

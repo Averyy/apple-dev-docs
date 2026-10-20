@@ -1,7 +1,8 @@
 # AVDepthData.Quality
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values indicating the overall quality of a depth data map.
 
@@ -19,35 +20,40 @@ Values indicating the overall quality of a depth data map.
 enum Quality
 ```
 
+```c
+enum AVDepthDataQuality : NSInteger;
+```
+
 ## Topics
 
 ### Depth quality values
-- [AVDepthData.Quality.low](avdepthdata/quality/low.md)
+- [AVDepthData.Quality.low](./quality/low.md)
   The depth map is a poor candidate for rendering high-quality depth effects or reconstructing a 3D scene.
-- [AVDepthData.Quality.high](avdepthdata/quality/high.md)
+- [AVDepthData.Quality.high](./quality/high.md)
   The depth map is a good candidate for rendering high-quality depth effects or reconstructing a 3D scene.
 ### Initializers
-- [init?(rawValue: Int)](avdepthdata/quality/init(rawvalue:).md)
+- [init?(rawValue: Int)](./quality/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isDepthDataFiltered: Bool](avdepthdata/isdepthdatafiltered.md)
+### Evaluating depth data
+- [var isDepthDataFiltered: Bool](./isdepthdatafiltered.md)
   A Boolean value indicating whether the depth map contains temporally smoothed data.
-- [var depthDataAccuracy: AVDepthData.Accuracy](avdepthdata/depthdataaccuracy.md)
+- [var depthDataAccuracy: AVDepthData.Accuracy](./depthdataaccuracy.md)
   The general accuracy of depth data map values.
-- [AVDepthData.Accuracy](avdepthdata/accuracy.md)
+- [AVDepthData.Accuracy](./accuracy.md)
   Values indicating the general accuracy of a depth data map.
-- [var depthDataQuality: AVDepthData.Quality](avdepthdata/depthdataquality.md)
+- [var depthDataQuality: AVDepthData.Quality](./depthdataquality.md)
   The overall quality of the depth map.
 
 

@@ -1,7 +1,8 @@
 # NSVisualEffectView.BlendingMode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify whether the visual effect view blends with what’s either behind or within the window.
 
@@ -14,33 +15,38 @@ Constants that specify whether the visual effect view blends with what’s eithe
 enum BlendingMode
 ```
 
+```c
+enum NSVisualEffectBlendingMode : NSInteger;
+```
+
 ## Topics
 
 ### Blend Modes
-- [NSVisualEffectView.BlendingMode.behindWindow](nsvisualeffectview/blendingmode-swift.enum/behindwindow.md)
+- [NSVisualEffectView.BlendingMode.behindWindow](./blendingmode-swift.enum/behindwindow.md)
   A mode that blends and blurs the visual effect view with the contents behind the window, such as the desktop or other windows.
-- [NSVisualEffectView.BlendingMode.withinWindow](nsvisualeffectview/blendingmode-swift.enum/withinwindow.md)
+- [NSVisualEffectView.BlendingMode.withinWindow](./blendingmode-swift.enum/withinwindow.md)
   A mode that blends and blurs the visual effect view with contents behind the view in the current window only.
 ### Initializers
-- [init?(rawValue: Int)](nsvisualeffectview/blendingmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./blendingmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var blendingMode: NSVisualEffectView.BlendingMode](nsvisualeffectview/blendingmode-swift.property.md)
+### Specifying the Effect Appearance
+- [var blendingMode: NSVisualEffectView.BlendingMode](./blendingmode-swift.property.md)
   A value indicating how the view’s contents blend with the surrounding content.
-- [var isEmphasized: Bool](nsvisualeffectview/isemphasized.md)
+- [var isEmphasized: Bool](./isemphasized.md)
   A Boolean value indicating whether to emphasize the look of the material.
-- [var interiorBackgroundStyle: NSView.BackgroundStyle](nsvisualeffectview/interiorbackgroundstyle.md)
+- [var interiorBackgroundStyle: NSView.BackgroundStyle](./interiorbackgroundstyle.md)
   The view’s interior background style.
 
 

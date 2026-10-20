@@ -1,7 +1,8 @@
 # TranslationError
 
 **Framework**: Translation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Error codes describing why the framework can’t perform a translation.
 
@@ -20,39 +21,39 @@ struct TranslationError
 ## Topics
 
 ### Handling general errors
-- [static let nothingToTranslate: TranslationError](translationerror/nothingtotranslate.md)
+- [static let nothingToTranslate: TranslationError](./translationerror/nothingtotranslate.md)
   No content to translate.
-- [static let unableToIdentifyLanguage: TranslationError](translationerror/unabletoidentifylanguage.md)
+- [static let unableToIdentifyLanguage: TranslationError](./translationerror/unabletoidentifylanguage.md)
   The framework can’t identify the source language automatically.
-- [static let internalError: TranslationError](translationerror/internalerror.md)
+- [static let internalError: TranslationError](./translationerror/internalerror.md)
   An error occurred internal to the translation engine.
-- [static let alreadyCancelled: TranslationError](translationerror/alreadycancelled.md)
+- [static let alreadyCancelled: TranslationError](./translationerror/alreadycancelled.md)
   An error describing a translation session that you’ve cancelled before, which prevents the session from producing additional results.
-- [static let notInstalled: TranslationError](translationerror/notinstalled.md)
+- [static let notInstalled: TranslationError](./translationerror/notinstalled.md)
   The device doesn’t have the necessary languages downloaded to perform a translation and the session can’t request the person to download them.
 ### Handling unsupported errors
-- [static let unsupportedSourceLanguage: TranslationError](translationerror/unsupportedsourcelanguage.md)
+- [static let unsupportedSourceLanguage: TranslationError](./translationerror/unsupportedsourcelanguage.md)
   The framework doesn’t support the specified or detected source language.
-- [static let unsupportedTargetLanguage: TranslationError](translationerror/unsupportedtargetlanguage.md)
+- [static let unsupportedTargetLanguage: TranslationError](./translationerror/unsupportedtargetlanguage.md)
   The framework doesn’t support the specified or chosen target language.
-- [static let unsupportedLanguagePairing: TranslationError](translationerror/unsupportedlanguagepairing.md)
+- [static let unsupportedLanguagePairing: TranslationError](./translationerror/unsupportedlanguagepairing.md)
   The framework doesn’t support the specified source and target language pairing.
 ### Describing errors
-- [var errorDescription: String?](translationerror/errordescription.md)
+- [var errorDescription: String?](./translationerror/errordescription.md)
   A localized message describing the error.
-- [var failureReason: String?](translationerror/failurereason.md)
+- [var failureReason: String?](./translationerror/failurereason.md)
   A localized message describing the reason for the failure.
 ### Comparing errors
-- [static func ~= (TranslationError, any Error) -> Bool](translationerror/~=(_:_:).md)
+- [static func ~= (TranslationError, any Error) -> Bool](./translationerror/tildeeq%28_,_%29.md)
   This operator allows you to check for a given value of a translation error and handle each error case.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

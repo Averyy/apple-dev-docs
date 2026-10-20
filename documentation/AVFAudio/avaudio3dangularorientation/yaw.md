@@ -1,23 +1,28 @@
 # yaw
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The side-to-side movement of the listener’s head.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var yaw: Float
+```
+
+```c
+float yaw;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ The yaw axis describes the side-to-side movement of the listener’s head, and i
 
 ## See Also
 
-- [var pitch: Float](avaudio3dangularorientation/pitch.md)
+### Getting angular orientation properties
+- [var pitch: Float](./pitch.md)
   The up-and-down movement of the listener’s head.
-- [var roll: Float](avaudio3dangularorientation/roll.md)
+- [var roll: Float](./roll.md)
   The tilt of the listener’s head.
 
 

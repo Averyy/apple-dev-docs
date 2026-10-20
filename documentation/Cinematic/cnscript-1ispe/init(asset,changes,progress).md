@@ -1,14 +1,15 @@
 # init(asset:changes:progress:)
 
 **Framework**: Cinematic  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Cinematic script based on a movie and applying changes to the movie.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

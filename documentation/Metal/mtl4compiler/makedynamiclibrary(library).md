@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new dynamic library from a library containing Metal IR code synchronously.
@@ -20,6 +21,10 @@ Creates a new dynamic library from a library containing Metal IR code synchronou
 func makeDynamicLibrary(library: any MTLLibrary) throws -> any MTLDynamicLibrary
 ```
 
+```objc
+- (id<MTLDynamicLibrary>) newDynamicLibrary:(id<MTLLibrary>) library error:(NSError **) error;
+```
+
 #### Return Value
 
 A new dynamic Metal library upon success, `nil` otherwise.
@@ -27,6 +32,12 @@ A new dynamic Metal library upon success, `nil` otherwise.
 ## Parameters
 
 - `library`: A library from which this compiler creates the new a dynamic library
+
+## Default Implementations
+
+### MTL4Compiler Implementations
+- [func makeDynamicLibrary(library: any MTLLibrary) async throws -> any MTLDynamicLibrary](./makedynamiclibrary%28library%29-7f4yz.md)
+  Creates a dynamic library asynchronously.
 
 
 ---

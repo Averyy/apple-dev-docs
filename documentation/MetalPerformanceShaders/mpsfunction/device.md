@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var device: any MTLDevice { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) id<MTLDevice> device;
 ```
 
 #### Discussion

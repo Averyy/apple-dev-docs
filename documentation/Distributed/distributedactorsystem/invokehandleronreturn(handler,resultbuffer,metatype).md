@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Implementation synthesized by the compiler. Not intended to be invoked explicitly from user code!
@@ -12,7 +13,7 @@ Implementation synthesized by the compiler. Not intended to be invoked explicitl
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

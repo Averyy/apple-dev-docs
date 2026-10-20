@@ -1,7 +1,8 @@
 # UIUserInterfaceIdiom.vision
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interface designed for visionOS and Apple Vision Pro.
 
@@ -18,9 +19,13 @@ An interface designed for visionOS and Apple Vision Pro.
 case vision
 ```
 
+```c
+UIUserInterfaceIdiomVision
+```
+
 #### Discussion
 
-If your app has existing code that runs in the [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md) idiom, you might want to reuse the same code in the [`UIUserInterfaceIdiom.vision`](uiuserinterfaceidiom/vision.md) idiom. The following code shows how to check for these idioms:
+If your app has existing code that runs in the [`UIUserInterfaceIdiom.pad`](./pad.md) idiom, you might want to reuse the same code in the [`UIUserInterfaceIdiom.vision`](./vision.md) idiom. The following code shows how to check for these idioms:
 
 ```swift
 if idiom == .pad || idiom == .vision {
@@ -32,17 +37,18 @@ if idiom == .pad || idiom == .vision {
 
 ## See Also
 
-- [UIUserInterfaceIdiom.unspecified](uiuserinterfaceidiom/unspecified.md)
+### Idioms
+- [UIUserInterfaceIdiom.unspecified](./unspecified.md)
   An unspecified idiom.
-- [UIUserInterfaceIdiom.phone](uiuserinterfaceidiom/phone.md)
+- [UIUserInterfaceIdiom.phone](./phone.md)
   An interface designed for iPhone and iPod touch.
-- [UIUserInterfaceIdiom.pad](uiuserinterfaceidiom/pad.md)
+- [UIUserInterfaceIdiom.pad](./pad.md)
   An interface designed for iPad.
-- [UIUserInterfaceIdiom.tv](uiuserinterfaceidiom/tv.md)
+- [UIUserInterfaceIdiom.tv](./tv.md)
   An interface designed for tvOS and Apple TV.
-- [UIUserInterfaceIdiom.carPlay](uiuserinterfaceidiom/carplay.md)
+- [UIUserInterfaceIdiom.carPlay](./carplay.md)
   An interface designed for an in-car experience.
-- [UIUserInterfaceIdiom.mac](uiuserinterfaceidiom/mac.md)
+- [UIUserInterfaceIdiom.mac](./mac.md)
   An interface designed for the Mac.
 
 

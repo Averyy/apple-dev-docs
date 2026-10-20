@@ -1,7 +1,8 @@
 # extensions
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var extensions: UnsafeMutablePointer<__CE_DataAndType>!
+```
+
+```c
+CE_DataAndType * extensions;
 ```
 
 

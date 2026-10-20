@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOStorageOptionForceUnitAccess](1644747-anonymous/kiostorageoptionforceunitaccess.md)
-- [kIOStorageOptionIsEncrypted](1644747-anonymous/kiostorageoptionisencrypted.md)
-- [kIOStorageOptionIsStatic](1644747-anonymous/kiostorageoptionisstatic.md)
-- [kIOStorageOptionNone](1644747-anonymous/kiostorageoptionnone.md)
-- [kIOStorageOptionReserved](1644747-anonymous/kiostorageoptionreserved.md)
+- [kIOStorageOptionForceUnitAccess](./api-1644747-anonymous/kiostorageoptionforceunitaccess.md)
+- [kIOStorageOptionIsEncrypted](./api-1644747-anonymous/kiostorageoptionisencrypted.md)
+- [kIOStorageOptionIsStatic](./api-1644747-anonymous/kiostorageoptionisstatic.md)
+- [kIOStorageOptionNone](./api-1644747-anonymous/kiostorageoptionnone.md)
+- [kIOStorageOptionReserved](./api-1644747-anonymous/kiostorageoptionreserved.md)
 
 
 ---

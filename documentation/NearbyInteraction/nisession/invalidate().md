@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops a running session.
 
@@ -17,15 +18,20 @@ Stops a running session.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
-When an app calls this function, NI invokes [`session(_:didRemove:reason:)`](nisessiondelegate/session(_:didremove:reason:).md) on the peer’s side and passes in the `reason` [`NINearbyObject.RemovalReason.peerEnded`](ninearbyobject/removalreason/peerended.md). The app can’t restart invalid sessions.
+When an app calls this function, NI invokes [`session(_:didRemove:reason:)`](../nisessiondelegate/session%28_,didremove,reason%29.md) on the peer’s side and passes in the `reason` [`NINearbyObject.RemovalReason.peerEnded`](../ninearbyobject/removalreason/peerended.md). The app can’t restart invalid sessions.
 
 ## See Also
 
-- [var delegate: (any NISessionDelegate)?](nisession/delegate.md)
+### Managing life cycle
+- [var delegate: (any NISessionDelegate)?](./delegate.md)
   An object that the framework notifies of session events.
-- [func pause()](nisession/pause.md)
+- [func pause()](./pause%28%29.md)
   Stops sending distance and direction updates to the peer.
 
 

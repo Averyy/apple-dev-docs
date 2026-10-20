@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of tag-format pairs in the respective arrays.
 
@@ -12,6 +13,10 @@ The number of tag-format pairs in the respective arrays.
 
 ```swift
 var count: UInt32
+```
+
+```c
+UInt32 count;
 ```
 
 

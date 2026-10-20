@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that a calendar view asks for selectable dates and informs of changes to the selection of multiple dates.
 
@@ -17,9 +18,14 @@ A delegate object that a calendar view asks for selectable dates and informs of 
 weak var delegate: (any UICalendarSelectionMultiDateDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UICalendarSelectionMultiDateDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UICalendarSelectionMultiDateDelegate](uicalendarselectionmultidatedelegate.md)
+### Setting the selection delegate
+- [protocol UICalendarSelectionMultiDateDelegate](../uicalendarselectionmultidatedelegate.md)
   A set of methods you implement to provide selectable dates and handle changes to the selection of multiple dates.
 
 

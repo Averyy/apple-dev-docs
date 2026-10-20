@@ -1,22 +1,24 @@
 # free
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the network packet.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [init](iousernetworkpacket/init.md)
+### Configuring the Network Packet
+- [init](./init.md)
   Initializes the network packet object.
 
 

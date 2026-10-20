@@ -1,7 +1,8 @@
 # paymentDescription
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the recurring payment that Apple Pay displays to the user in the payment sheet.
 
@@ -11,13 +12,14 @@ A description of the recurring payment that Apple Pay displays to the user in th
 
 ## Declaration
 
-```swift
+```
 required DOMString paymentDescription;
 ```
 
 ## See Also
 
-- [billingAgreement](applepayrecurringpaymentrequest/billingagreement.md)
+### Describing the recurring payment
+- [billingAgreement](./billingagreement.md)
   A localized billing agreement that the payment sheet displays to the user before the user authorizes the payment.
 
 

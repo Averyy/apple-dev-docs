@@ -1,7 +1,8 @@
 # shippingContact
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prepopulated shipping address.
 
@@ -19,21 +20,26 @@ A prepopulated shipping address.
 var shippingContact: PKContact? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PKContact * shippingContact;
+```
+
 ## Mentions
 
-- [Displaying a Read-Only Pickup Address](displaying-a-read-only-pickup-address.md)
+- [Displaying a Read-Only Pickup Address](../displaying-a-read-only-pickup-address.md)
 
 #### Discussion
 
-If you have an up-to-date shipping address on file, you can set this property to that address. This shipping address appears in the payment sheet. When the framework presents the [`PKPaymentAuthorizationViewController`](pkpaymentauthorizationviewcontroller.md), the user can either keep the address you specified or enter a different address.
+If you have an up-to-date shipping address on file, you can set this property to that address. This shipping address appears in the payment sheet. When the framework presents the [`PKPaymentAuthorizationViewController`](../pkpaymentauthorizationviewcontroller.md), the user can either keep the address you specified or enter a different address.
 
-Note that a [`PKContact`](pkcontact.md) object that represents a shipping contact contains information for only the [`postalAddress`](pkcontact/postaladdress.md), [`emailAddress`](pkcontact/emailaddress.md), and [`phoneNumber`](pkcontact/phonenumber.md) properties. The framework sets all other properties in the object to `nil`.
+Note that a [`PKContact`](../pkcontact.md) object that represents a shipping contact contains information for only the [`postalAddress`](../pkcontact/postaladdress.md), [`emailAddress`](../pkcontact/emailaddress.md), and [`phoneNumber`](../pkcontact/phonenumber.md) properties. The framework sets all other properties in the object to `nil`.
 
 ## See Also
 
-- [var billingContact: PKContact?](pkpaymentrequest/billingcontact.md)
+### Providing known contact information
+- [var billingContact: PKContact?](./billingcontact.md)
   A prepopulated billing address.
-- [class PKContact](pkcontact.md)
+- [class PKContact](../pkcontact.md)
   An object that encapsulates contact information needed for billing and shipping.
 
 

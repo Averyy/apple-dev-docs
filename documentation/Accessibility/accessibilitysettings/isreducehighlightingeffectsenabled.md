@@ -1,7 +1,8 @@
 # isReduceHighlightingEffectsEnabled
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var isReduceHighlightingEffectsEnabled: Bool { get }
+```
+
+```c
+extern BOOL AXReduceHighlightingEffectsEnabled();
 ```
 
 

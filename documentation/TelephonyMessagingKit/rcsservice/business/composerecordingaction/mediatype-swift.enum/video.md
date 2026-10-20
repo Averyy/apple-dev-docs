@@ -1,7 +1,8 @@
 # RCSService.Business.ComposeRecordingAction.MediaType.video
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Compose a video message.
 
@@ -16,7 +17,8 @@ case video
 
 ## See Also
 
-- [RCSService.Business.ComposeRecordingAction.MediaType.audio](rcsservice/business/composerecordingaction/mediatype-swift.enum/audio.md)
+### Acccessing media types
+- [RCSService.Business.ComposeRecordingAction.MediaType.audio](./audio.md)
   Compose an audio message.
 
 

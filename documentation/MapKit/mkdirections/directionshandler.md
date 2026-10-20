@@ -1,23 +1,28 @@
 # MKDirections.DirectionsHandler
 
 **Framework**: MapKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block to use for processing the requested route information.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias DirectionsHandler = (MKDirections.Response?, (any Error)?) -> Void
+```
+
+```c
+typedef void (^)(MKDirectionsResponse *, NSError *) MKDirectionsHandler;
 ```
 
 #### Discussion
@@ -31,9 +36,10 @@ The implementation of your block needs to check for a value in the `error` param
 
 ## See Also
 
-- [func calculate(completionHandler: (MKDirections.Response?, (any Error)?) -> Void)](mkdirections/calculate(completionhandler:).md)
+### Getting the directions
+- [func calculate(completionHandler: (MKDirections.Response?, (any Error)?) -> Void)](./calculate%28completionhandler%29.md)
   Begins calculating the requested route information asynchronously.
-- [MKDirections.Response](mkdirections/response.md)
+- [MKDirections.Response](./response.md)
   The route information that Apple servers return in response to your request for directions.
 
 

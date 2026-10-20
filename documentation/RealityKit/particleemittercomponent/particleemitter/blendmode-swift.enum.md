@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.BlendMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for combining source and destination pixel colors when compositing particles during rendering, used by the blendMode property.
 
@@ -22,20 +23,20 @@ enum BlendMode
 ## Topics
 
 ### Enumeration Cases
-- [ParticleEmitterComponent.ParticleEmitter.BlendMode.additive](particleemittercomponent/particleemitter/blendmode-swift.enum/additive.md)
+- [ParticleEmitterComponent.ParticleEmitter.BlendMode.additive](./blendmode-swift.enum/additive.md)
   The source and destination colors are added together.
-- [ParticleEmitterComponent.ParticleEmitter.BlendMode.alpha](particleemittercomponent/particleemitter/blendmode-swift.enum/alpha.md)
+- [ParticleEmitterComponent.ParticleEmitter.BlendMode.alpha](./blendmode-swift.enum/alpha.md)
   The source and destination colors are blended by multiplying the source alpha value.
-- [ParticleEmitterComponent.ParticleEmitter.BlendMode.opaque](particleemittercomponent/particleemitter/blendmode-swift.enum/opaque.md)
+- [ParticleEmitterComponent.ParticleEmitter.BlendMode.opaque](./blendmode-swift.enum/opaque.md)
   The particle fully occludes anything drawn before it.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

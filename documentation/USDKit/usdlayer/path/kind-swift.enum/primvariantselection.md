@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind.primVariantSelection
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The path is a variant selection.
 

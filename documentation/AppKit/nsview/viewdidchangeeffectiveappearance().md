@@ -1,7 +1,8 @@
 # viewDidChangeEffectiveAppearance()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the view that its effective appearance changed.
 
@@ -14,9 +15,14 @@ Informs the view that its effective appearance changed.
 func viewDidChangeEffectiveAppearance()
 ```
 
+```objc
+- (void) viewDidChangeEffectiveAppearance;
+```
+
 ## See Also
 
-- [func viewDidChangeBackingProperties()](nsview/viewdidchangebackingproperties.md)
+### Responding to Appearance Changes
+- [func viewDidChangeBackingProperties()](./viewdidchangebackingproperties%28%29.md)
   Responds when the view’s backing store properties change.
 
 

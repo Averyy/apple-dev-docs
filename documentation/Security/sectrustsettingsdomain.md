@@ -1,7 +1,8 @@
 # SecTrustSettingsDomain
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The trust settings domains.
 
@@ -15,27 +16,31 @@ The trust settings domains.
 enum SecTrustSettingsDomain
 ```
 
+```c
+enum SecTrustSettingsDomain : uint32_t;
+```
+
 ## Topics
 
 ### Constants
-- [SecTrustSettingsDomain.user](sectrustsettingsdomain/user.md)
+- [SecTrustSettingsDomain.user](./sectrustsettingsdomain/user.md)
   Per-user trust settings.
-- [SecTrustSettingsDomain.admin](sectrustsettingsdomain/admin.md)
+- [SecTrustSettingsDomain.admin](./sectrustsettingsdomain/admin.md)
   Locally administered, system-wide trust settings.
-- [SecTrustSettingsDomain.system](sectrustsettingsdomain/system.md)
+- [SecTrustSettingsDomain.system](./sectrustsettingsdomain/system.md)
   System trust settings.
 ### Initializers
-- [init?(rawValue: UInt32)](sectrustsettingsdomain/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./sectrustsettingsdomain/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

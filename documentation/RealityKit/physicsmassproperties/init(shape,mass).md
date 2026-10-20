@@ -1,7 +1,8 @@
 # init(shape:mass:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the mass properties for a solid shape with the specified mass.
 
@@ -11,7 +12,7 @@ Creates the mass properties for a solid shape with the specified mass.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,11 +28,12 @@ Creates the mass properties for a solid shape with the specified mass.
 
 ## See Also
 
-- [init()](physicsmassproperties/init.md)
+### Creating custom mass properties
+- [init()](./init%28%29.md)
   Creates a mass properties instance with default settings.
-- [init(mass: Float, inertia: SIMD3<Float>, centerOfMass: (position: SIMD3<Float>, orientation: simd_quatf))](physicsmassproperties/init(mass:inertia:centerofmass:).md)
+- [init(mass: Float, inertia: SIMD3<Float>, centerOfMass: (position: SIMD3<Float>, orientation: simd_quatf))](./init%28mass,inertia,centerofmass%29.md)
   Creates a mass properties instance with the given settings.
-- [init(shape: ShapeResource, density: Float)](physicsmassproperties/init(shape:density:).md)
+- [init(shape: ShapeResource, density: Float)](./init%28shape,density%29.md)
   Creates the mass properties for a solid shape with the specified density.
 
 

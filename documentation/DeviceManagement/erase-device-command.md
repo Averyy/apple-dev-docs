@@ -1,7 +1,8 @@
 # Erase Device
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Remotely and immediately erase a device.
 
@@ -16,7 +17,7 @@ Remotely and immediately erase a device.
 
 ## Mentions
 
-- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+- [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
 #### Discussion
 
@@ -24,7 +25,7 @@ This command allows the server to immediately erase a device, even a locked devi
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowDeviceErase |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -78,9 +79,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object EraseDeviceCommand](erasedevicecommand.md)
+- [object EraseDeviceCommand](./erasedevicecommand.md)
   The command to remotely and immediately erase a device.
-- [object EraseDeviceResponse](erasedeviceresponse.md)
+- [object EraseDeviceResponse](./erasedeviceresponse.md)
   A response from the device after it processes the command to remotely and immediately erase a device.
 
 ## Endpoint
@@ -89,15 +90,23 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `EraseDeviceCommand`
+
 The request object the server returns for the Erase Device Command.
+
+## Responses
+
+- `200` OK (`EraseDeviceResponse`, `application/xml`): The response object the system returns for the Erase Device Command.
 
 ## See Also
 
-- [Device Lock](device-lock-command.md)
+### Device state
+- [Device Lock](./device-lock-command.md)
   Remotely and immediately lock a device.
-- [Restart Device](restart-device-command.md)
+- [Restart Device](./restart-device-command.md)
   Remotely and immediately restart a device.
-- [Shut Down Device](shut-down-device-command.md)
+- [Shut Down Device](./shut-down-device-command.md)
   Remotely and immediately shut down a device.
 
 

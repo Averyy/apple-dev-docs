@@ -1,7 +1,8 @@
 # kCGImagePropertyNamedColorSpace
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the image’s color space.
 
@@ -20,15 +21,20 @@ The name of the image’s color space.
 let kCGImagePropertyNamedColorSpace: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyNamedColorSpace;
+```
+
 #### Discussion
 
-The value of this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring).
+The value of this key is a [`CFString`](../CoreFoundation/cfstring.md).
 
 ## See Also
 
-- [let kCGImagePropertyHEICSCanvasPixelHeight: CFString](kcgimagepropertyheicscanvaspixelheight.md)
+### Image Properties
+- [let kCGImagePropertyHEICSCanvasPixelHeight: CFString](./kcgimagepropertyheicscanvaspixelheight.md)
   The height of the main image, in pixels.
-- [let kCGImagePropertyHEICSCanvasPixelWidth: CFString](kcgimagepropertyheicscanvaspixelwidth.md)
+- [let kCGImagePropertyHEICSCanvasPixelWidth: CFString](./kcgimagepropertyheicscanvaspixelwidth.md)
   The width of the main image, in pixels.
 
 

@@ -1,7 +1,8 @@
 # hasMinimumPrecision(_:forRecall:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the observation has a minimum precision value for a specific recall.
 
@@ -42,7 +43,8 @@ A high-recall filter retains a much broader range of observations, but can resul
 
 ## See Also
 
-- [func hasMinimumRecall(Float, forPrecision: Float) -> Bool](classificationobservation/hasminimumrecall(_:forprecision:).md)
+### Determining precision and recall
+- [func hasMinimumRecall(Float, forPrecision: Float) -> Bool](./hasminimumrecall%28_,forprecision%29.md)
   Determines whether the observation has a minimum recall value for a specific precision.
 
 

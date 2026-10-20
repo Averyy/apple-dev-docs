@@ -1,7 +1,8 @@
 # Zip2Sequence.Stream1
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 typealias Stream1 = Sequence1.Iterator
 ```
+
+Available when `Sequence1` conforms to `Sequence` and `Sequence2` conforms to `Sequence`.
 
 
 ---

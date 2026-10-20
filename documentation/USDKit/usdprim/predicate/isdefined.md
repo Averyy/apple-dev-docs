@@ -1,7 +1,8 @@
 # isDefined
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 True if the prim and all its ancestors have a `def` specifier.
 

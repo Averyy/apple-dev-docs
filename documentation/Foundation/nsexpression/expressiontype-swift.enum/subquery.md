@@ -1,7 +1,8 @@
 # NSExpression.ExpressionType.subquery
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An expression that filters a collection using a subpredicate.
 
@@ -20,31 +21,36 @@ An expression that filters a collection using a subpredicate.
 case subquery
 ```
 
+```c
+NSSubqueryExpressionType
+```
+
 ## See Also
 
-- [NSExpression.ExpressionType.constantValue](nsexpression/expressiontype-swift.enum/constantvalue.md)
+### Constants
+- [NSExpression.ExpressionType.constantValue](./constantvalue.md)
   An expression that always returns the same value.
-- [NSExpression.ExpressionType.evaluatedObject](nsexpression/expressiontype-swift.enum/evaluatedobject.md)
+- [NSExpression.ExpressionType.evaluatedObject](./evaluatedobject.md)
   An expression that always returns the parameter object itself.
-- [NSExpression.ExpressionType.variable](nsexpression/expressiontype-swift.enum/variable.md)
+- [NSExpression.ExpressionType.variable](./variable.md)
   An expression that always returns whatever value is associated with the key specified by ‘variable’ in the bindings dictionary.
-- [NSExpression.ExpressionType.keyPath](nsexpression/expressiontype-swift.enum/keypath.md)
+- [NSExpression.ExpressionType.keyPath](./keypath.md)
   An expression that returns something that can be used as a key path.
-- [NSExpression.ExpressionType.function](nsexpression/expressiontype-swift.enum/function.md)
+- [NSExpression.ExpressionType.function](./function.md)
   An expression that returns the result of evaluating a function.
-- [NSExpression.ExpressionType.unionSet](nsexpression/expressiontype-swift.enum/unionset.md)
+- [NSExpression.ExpressionType.unionSet](./unionset.md)
   An expression that creates a union of the results of two nested expressions.
-- [NSExpression.ExpressionType.intersectSet](nsexpression/expressiontype-swift.enum/intersectset.md)
+- [NSExpression.ExpressionType.intersectSet](./intersectset.md)
   An expression that creates an intersection of the results of two nested expressions.
-- [NSExpression.ExpressionType.minusSet](nsexpression/expressiontype-swift.enum/minusset.md)
+- [NSExpression.ExpressionType.minusSet](./minusset.md)
   An expression that combines two nested expression results by set subtraction.
-- [NSExpression.ExpressionType.aggregate](nsexpression/expressiontype-swift.enum/aggregate.md)
+- [NSExpression.ExpressionType.aggregate](./aggregate.md)
   An expression that defines an aggregate of `NSExpression` objects.
-- [NSExpression.ExpressionType.anyKey](nsexpression/expressiontype-swift.enum/anykey.md)
+- [NSExpression.ExpressionType.anyKey](./anykey.md)
   An expression that represents any key.
-- [NSExpression.ExpressionType.block](nsexpression/expressiontype-swift.enum/block.md)
+- [NSExpression.ExpressionType.block](./block.md)
   An expression that uses a Block.
-- [NSExpression.ExpressionType.conditional](nsexpression/expressiontype-swift.enum/conditional.md)
+- [NSExpression.ExpressionType.conditional](./conditional.md)
   A conditional expression that evaluates a predicate to determine which expression to return.
 
 

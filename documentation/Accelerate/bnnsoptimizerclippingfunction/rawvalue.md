@@ -1,18 +1,19 @@
 # rawValue
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding value of the raw type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,17 +23,18 @@ var rawValue: UInt32
 
 ## See Also
 
-- [init(UInt32)](bnnsoptimizerclippingfunction/init(_:).md)
+### Clipping Functions
+- [init(UInt32)](./init%28_%29.md)
   Creates a new instance with the specified raw value.
-- [init(rawValue: UInt32)](bnnsoptimizerclippingfunction/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [var BNNSOptimizerClippingNone: BNNSOptimizerClippingFunction](bnnsoptimizerclippingnone.md)
+- [var BNNSOptimizerClippingNone: BNNSOptimizerClippingFunction](../bnnsoptimizerclippingnone.md)
   A constant that specifes no clipping.
-- [var BNNSOptimizerClippingByValue: BNNSOptimizerClippingFunction](bnnsoptimizerclippingbyvalue.md)
+- [var BNNSOptimizerClippingByValue: BNNSOptimizerClippingFunction](../bnnsoptimizerclippingbyvalue.md)
   A constant that specifes clipping to minimum and maximum values.
-- [var BNNSOptimizerClippingByNorm: BNNSOptimizerClippingFunction](bnnsoptimizerclippingbynorm.md)
+- [var BNNSOptimizerClippingByNorm: BNNSOptimizerClippingFunction](../bnnsoptimizerclippingbynorm.md)
   A constant that specifes clipping to a maximum Euclidean norm.
-- [var BNNSOptimizerClippingByGlobalNorm: BNNSOptimizerClippingFunction](bnnsoptimizerclippingbyglobalnorm.md)
+- [var BNNSOptimizerClippingByGlobalNorm: BNNSOptimizerClippingFunction](../bnnsoptimizerclippingbyglobalnorm.md)
   A constant that specifes clipping to a maximum global Euclidean norm.
 
 

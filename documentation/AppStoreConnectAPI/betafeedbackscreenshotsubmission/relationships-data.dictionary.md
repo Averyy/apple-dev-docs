@@ -1,7 +1,8 @@
 # BetaFeedbackScreenshotSubmission.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BetaFeedbackScreenshotSubmission.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaFeedbackScreenshotSubmission.Relationships.Build](betafeedbackscreenshotsubmission/relationships-data.dictionary/build-data.dictionary.md)
-- [object BetaFeedbackScreenshotSubmission.Relationships.Tester](betafeedbackscreenshotsubmission/relationships-data.dictionary/tester-data.dictionary.md)
+- [object BetaFeedbackScreenshotSubmission.Relationships.Build](./relationships-data.dictionary/build-data.dictionary.md)
+- [object BetaFeedbackScreenshotSubmission.Relationships.Tester](./relationships-data.dictionary/tester-data.dictionary.md)
 
 ## Properties
 

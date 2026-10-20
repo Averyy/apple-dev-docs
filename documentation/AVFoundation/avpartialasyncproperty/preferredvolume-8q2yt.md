@@ -1,7 +1,8 @@
 # preferredVolume
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The track’s volume preference for playing its audible media.
 
@@ -20,15 +21,18 @@ The track’s volume preference for playing its audible media.
 static var preferredVolume: AVAsyncProperty<Root, Float> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 The preferred volume for an audio track is typically, but not always, `1.0`. For nonaudible tracks, the value is `0.0`.
 
 ## See Also
 
-- [static var hasAudioSampleDependencies: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/hasaudiosampledependencies.md)
+### Loading audible characteristics
+- [static var hasAudioSampleDependencies: AVAsyncProperty<Root, Bool>](./hasaudiosampledependencies.md)
   A Boolean value that indicates whether the track has sample dependencies.
 
 

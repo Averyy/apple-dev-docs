@@ -1,7 +1,8 @@
 # productID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product identifier of the promoted Apple In-App Purchase.
 

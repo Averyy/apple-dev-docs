@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a null value for the given key.
@@ -23,7 +24,7 @@ mutating func encodeNil(forKey key: Self.Key) throws
 
 #### Discussion
 
-> **Note**: `EncodingError.invalidValue` if a null value is invalid in the current context for this format.
+> **Throws**: `EncodingError.invalidValue` if a null value is invalid in the current context for this format.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # signature()
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the audio buffer into a signature.
 
@@ -20,15 +21,20 @@ Converts the audio buffer into a signature.
 func signature() -> SHSignature
 ```
 
+```objc
+- (SHSignature *) signature;
+```
+
 #### Return Value
 
 A signature that ShazamKit generates from the audio buffer.
 
 ## See Also
 
-- [func append(AVAudioPCMBuffer, at: AVAudioTime?) throws](shsignaturegenerator/append(_:at:).md)
+### Generating a signature from audio
+- [func append(AVAudioPCMBuffer, at: AVAudioTime?) throws](./append%28_,at%29.md)
   Adds audio to the generator.
-- [Generating a signature from an audio buffer](generating-a-signature-from-an-audio-buffer.md)
+- [Generating a signature from an audio buffer](../generating-a-signature-from-an-audio-buffer.md)
   Create a signature from an audio file or the microphone for a reference track in a custom catalog, or for matching tracks in a catalog.
 
 

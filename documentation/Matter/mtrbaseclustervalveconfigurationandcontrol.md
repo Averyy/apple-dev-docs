@@ -1,7 +1,8 @@
 # MTRBaseClusterValveConfigurationAndControl
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,80 +19,84 @@
 class MTRBaseClusterValveConfigurationAndControl
 ```
 
+```objc
+@interface MTRBaseClusterValveConfigurationAndControl : MTRGenericBaseCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclustervalveconfigurationandcontrol/init(device:endpointid:queue:).md)
+- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrbaseclustervalveconfigurationandcontrol/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func close(completion: ((any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/close(completion:).md)
-- [func close(with: MTRValveConfigurationAndControlClusterCloseParams?, completion: ((any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/close(with:completion:).md)
-- [func open(completion: ((any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/open(completion:).md)
-- [func open(with: MTRValveConfigurationAndControlClusterOpenParams?, completion: ((any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/open(with:completion:).md)
-- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeacceptedcommandlist(completion:).md)
-- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeattributelist(completion:).md)
-- [func readAttributeAutoCloseTime(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeautoclosetime(completion:).md)
-- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeclusterrevision(completion:).md)
-- [func readAttributeCurrentLevel(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributecurrentlevel(completion:).md)
-- [func readAttributeCurrentState(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributecurrentstate(completion:).md)
-- [func readAttributeDefaultOpenDuration(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributedefaultopenduration(completion:).md)
-- [func readAttributeDefaultOpenLevel(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributedefaultopenlevel(completion:).md)
-- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributefeaturemap(completion:).md)
-- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributegeneratedcommandlist(completion:).md)
-- [func readAttributeLevelStep(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributelevelstep(completion:).md)
-- [func readAttributeOpenDuration(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeopenduration(completion:).md)
-- [func readAttributeRemainingDuration(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeremainingduration(completion:).md)
-- [func readAttributeTargetLevel(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributetargetlevel(completion:).md)
-- [func readAttributeTargetState(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributetargetstate(completion:).md)
-- [func readAttributeValveFault(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributevalvefault(completion:).md)
-- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAutoCloseTime(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributeautoclosetime(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributeclusterrevision(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeCurrentLevel(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributecurrentlevel(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeCurrentState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributecurrentstate(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeDefaultOpenDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributedefaultopenduration(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeDefaultOpenLevel(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributedefaultopenlevel(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributefeaturemap(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributegeneratedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeLevelStep(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributelevelstep(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeOpenDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributeopenduration(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeRemainingDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributeremainingduration(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeTargetLevel(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributetargetlevel(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeTargetState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributetargetstate(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeValveFault(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/subscribeattributevalvefault(with:subscriptionestablished:reporthandler:).md)
-- [func writeAttributeDefaultOpenDuration(withValue: NSNumber?, completion: ((any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/writeattributedefaultopenduration(withvalue:completion:).md)
-- [func writeAttributeDefaultOpenDuration(withValue: NSNumber?, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/writeattributedefaultopenduration(withvalue:params:completion:).md)
-- [func writeAttributeDefaultOpenLevel(withValue: NSNumber, completion: ((any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/writeattributedefaultopenlevel(withvalue:completion:).md)
-- [func writeAttributeDefaultOpenLevel(withValue: NSNumber, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/writeattributedefaultopenlevel(withvalue:params:completion:).md)
+- [func close(completion: ((any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/close%28completion%29.md)
+- [func close(with: MTRValveConfigurationAndControlClusterCloseParams?, completion: ((any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/close%28with,completion%29.md)
+- [func open(completion: ((any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/open%28completion%29.md)
+- [func open(with: MTRValveConfigurationAndControlClusterOpenParams?, completion: ((any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/open%28with,completion%29.md)
+- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeacceptedcommandlist%28completion%29.md)
+- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeattributelist%28completion%29.md)
+- [func readAttributeAutoCloseTime(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeautoclosetime%28completion%29.md)
+- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeclusterrevision%28completion%29.md)
+- [func readAttributeCurrentLevel(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributecurrentlevel%28completion%29.md)
+- [func readAttributeCurrentState(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributecurrentstate%28completion%29.md)
+- [func readAttributeDefaultOpenDuration(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributedefaultopenduration%28completion%29.md)
+- [func readAttributeDefaultOpenLevel(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributedefaultopenlevel%28completion%29.md)
+- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributefeaturemap%28completion%29.md)
+- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributegeneratedcommandlist%28completion%29.md)
+- [func readAttributeLevelStep(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributelevelstep%28completion%29.md)
+- [func readAttributeOpenDuration(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeopenduration%28completion%29.md)
+- [func readAttributeRemainingDuration(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeremainingduration%28completion%29.md)
+- [func readAttributeTargetLevel(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributetargetlevel%28completion%29.md)
+- [func readAttributeTargetState(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributetargetstate%28completion%29.md)
+- [func readAttributeValveFault(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributevalvefault%28completion%29.md)
+- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributeacceptedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributeattributelist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAutoCloseTime(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributeautoclosetime%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributeclusterrevision%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeCurrentLevel(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributecurrentlevel%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeCurrentState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributecurrentstate%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeDefaultOpenDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributedefaultopenduration%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeDefaultOpenLevel(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributedefaultopenlevel%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributefeaturemap%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributegeneratedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeLevelStep(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributelevelstep%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeOpenDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributeopenduration%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeRemainingDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributeremainingduration%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeTargetLevel(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributetargetlevel%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeTargetState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributetargetstate%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeValveFault(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/subscribeattributevalvefault%28with,subscriptionestablished,reporthandler%29.md)
+- [func writeAttributeDefaultOpenDuration(withValue: NSNumber?, completion: ((any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/writeattributedefaultopenduration%28withvalue,completion%29.md)
+- [func writeAttributeDefaultOpenDuration(withValue: NSNumber?, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/writeattributedefaultopenduration%28withvalue,params,completion%29.md)
+- [func writeAttributeDefaultOpenLevel(withValue: NSNumber, completion: ((any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/writeattributedefaultopenlevel%28withvalue,completion%29.md)
+- [func writeAttributeDefaultOpenLevel(withValue: NSNumber, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/writeattributedefaultopenlevel%28withvalue,params,completion%29.md)
 ### Type Methods
-- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeattributelist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeAutoCloseTime(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeautoclosetime(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeclusterrevision(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeCurrentLevel(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributecurrentlevel(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeCurrentState(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributecurrentstate(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeDefaultOpenDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributedefaultopenduration(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeDefaultOpenLevel(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributedefaultopenlevel(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributefeaturemap(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributegeneratedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeLevelStep(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributelevelstep(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeOpenDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeopenduration(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeRemainingDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributeremainingduration(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeTargetLevel(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributetargetlevel(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeTargetState(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributetargetstate(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeValveFault(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustervalveconfigurationandcontrol/readattributevalvefault(withclusterstatecache:endpoint:queue:completion:).md)
+- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeacceptedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeattributelist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeAutoCloseTime(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeautoclosetime%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeclusterrevision%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeCurrentLevel(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributecurrentlevel%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeCurrentState(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributecurrentstate%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeDefaultOpenDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributedefaultopenduration%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeDefaultOpenLevel(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributedefaultopenlevel%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributefeaturemap%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributegeneratedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeLevelStep(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributelevelstep%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeOpenDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeopenduration%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeRemainingDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributeremainingduration%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeTargetLevel(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributetargetlevel%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeTargetState(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributetargetstate%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeValveFault(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustervalveconfigurationandcontrol/readattributevalvefault%28withclusterstatecache,endpoint,queue,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericBaseCluster](mtrgenericbasecluster.md)
+- [MTRGenericBaseCluster](./mtrgenericbasecluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

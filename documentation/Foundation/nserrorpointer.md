@@ -1,7 +1,8 @@
 # NSErrorPointer
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -20,8 +21,9 @@ typealias NSErrorPointer = AutoreleasingUnsafeMutablePointer<NSError?>?
 
 ## See Also
 
-- [typealias ErrorPointer](errorpointer.md)
-- [typealias NSErrorDomain](nserrordomain.md)
+### Supporting Types
+- [typealias ErrorPointer](./errorpointer.md)
+- [typealias NSErrorDomain](./nserrordomain.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: Quick Look UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview view with the provided frame.
 
@@ -14,13 +15,17 @@ Creates a preview view with the provided frame.
 init!(frame: NSRect)
 ```
 
+```objc
+- (id) initWithFrame:(NSRect) frame;
+```
+
 #### Return Value
 
 Returns a `QLPreviewView` object with the designated frame and the default style.
 
 #### Discussion
 
-Calling this method is equivalent to calling [`init(frame:style:)`](qlpreviewview/init(frame:style:).md) with the `style` parameter being [`QLPreviewViewStyle.normal`](qlpreviewviewstyle/normal.md).
+Calling this method is equivalent to calling [`init(frame:style:)`](./init%28frame,style%29.md) with the `style` parameter being [`QLPreviewViewStyle.normal`](../qlpreviewviewstyle/normal.md).
 
 ## Parameters
 
@@ -28,9 +33,10 @@ Calling this method is equivalent to calling [`init(frame:style:)`](qlpreviewvie
 
 ## See Also
 
-- [init!(frame: NSRect, style: QLPreviewViewStyle)](qlpreviewview/init(frame:style:).md)
+### Creating a Preview View
+- [init!(frame: NSRect, style: QLPreviewViewStyle)](./init%28frame,style%29.md)
   Creates a preview view with the provided frame and style.
-- [enum QLPreviewViewStyle](qlpreviewviewstyle.md)
+- [enum QLPreviewViewStyle](../qlpreviewviewstyle.md)
   Styles for a Preview View.
 
 

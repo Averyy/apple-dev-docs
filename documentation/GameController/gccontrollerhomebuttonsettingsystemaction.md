@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingSystemAction
 
 **Framework**: Game Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 How the system responds to a press of the game controller Home button outside of contexts where an action of the front-most app takes priority.
 
@@ -18,29 +19,33 @@ How the system responds to a press of the game controller Home button outside of
 enum GCControllerHomeButtonSettingSystemAction
 ```
 
+```c
+enum GCControllerHomeButtonSettingSystemAction : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [GCControllerHomeButtonSettingSystemAction.disabled](gccontrollerhomebuttonsettingsystemaction/disabled.md)
+- [GCControllerHomeButtonSettingSystemAction.disabled](./gccontrollerhomebuttonsettingsystemaction/disabled.md)
   System response to the game controller Home button press is disabled.
-- [GCControllerHomeButtonSettingSystemAction.openCurrentApplication](gccontrollerhomebuttonsettingsystemaction/opencurrentapplication.md)
+- [GCControllerHomeButtonSettingSystemAction.openCurrentApplication](./gccontrollerhomebuttonsettingsystemaction/opencurrentapplication.md)
   The controller home button system action opens the current application.
-- [GCControllerHomeButtonSettingSystemAction.other](gccontrollerhomebuttonsettingsystemaction/other.md)
+- [GCControllerHomeButtonSettingSystemAction.other](./gccontrollerhomebuttonsettingsystemaction/other.md)
   The controller home button system action performs some other action.
-- [GCControllerHomeButtonSettingSystemAction.unavailable](gccontrollerhomebuttonsettingsystemaction/unavailable.md)
+- [GCControllerHomeButtonSettingSystemAction.unavailable](./gccontrollerhomebuttonsettingsystemaction/unavailable.md)
   The setting value could not be retrieved.
 ### Initializers
-- [init?(rawValue: Int)](gccontrollerhomebuttonsettingsystemaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./gccontrollerhomebuttonsettingsystemaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

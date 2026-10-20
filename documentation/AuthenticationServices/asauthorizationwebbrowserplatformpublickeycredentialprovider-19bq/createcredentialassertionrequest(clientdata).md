@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Create a credential assertion request, for authenticating to the relying party.
@@ -20,7 +21,7 @@ func createCredentialAssertionRequest(clientData: ASPublicKeyCredentialClientDat
 
 #### Return Value
 
-The credential assertion request, that you pass to [`ASAuthorizationController`](asauthorizationcontroller.md).
+The credential assertion request, that you pass to [`ASAuthorizationController`](../asauthorizationcontroller.md).
 
 ## Parameters
 
@@ -28,9 +29,10 @@ The credential assertion request, that you pass to [`ASAuthorizationController`]
 
 ## See Also
 
-- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest(clientdata:name:userid:).md)
+### Creating requests
+- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./createcredentialregistrationrequest%28clientdata,name,userid%29.md)
   Create a credential registration request, for registering a new passkey with the relying party.
-- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowserplatformpublickeycredentialprovider-19bq/createcredentialregistrationrequest(clientdata:name:userid:requeststyle:).md)
+- [func createCredentialRegistrationRequest(clientData: ASPublicKeyCredentialClientData, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./createcredentialregistrationrequest%28clientdata,name,userid,requeststyle%29.md)
 
 
 ---

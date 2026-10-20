@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerNikonDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image from a Nikon camera.
 
@@ -18,6 +19,10 @@ A dictionary of key-value pairs for an image from a Nikon camera.
 
 ```swift
 let kCGImagePropertyMakerNikonDictionary: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyMakerNikonDictionary;
 ```
 
 

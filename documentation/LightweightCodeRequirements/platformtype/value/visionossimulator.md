@@ -1,7 +1,8 @@
 # visionOSSimulator
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The platform type for code running in the visionOS Simulator.
 

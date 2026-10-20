@@ -1,7 +1,8 @@
 # outline
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -18,9 +19,14 @@
 var outline: CFDictionary? { get }
 ```
 
+```c
+extern CFDictionaryRefCGPDFDocumentGetOutline(CGPDFDocumentRef document);
+```
+
 ## See Also
 
-- [var accessPermissions: CGPDFAccessPermissions](cgpdfdocument/accesspermissions.md)
+### Instance Properties
+- [var accessPermissions: CGPDFAccessPermissions](./accesspermissions.md)
 
 
 ---

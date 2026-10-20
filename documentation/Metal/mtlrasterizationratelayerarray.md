@@ -1,7 +1,8 @@
 # MTLRasterizationRateLayerArray
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Descriptions for the rasterization rates to apply to the set of layers in a rate map.
 
@@ -19,35 +20,40 @@ Descriptions for the rasterization rates to apply to the set of layers in a rate
 class MTLRasterizationRateLayerArray
 ```
 
+```objc
+@interface MTLRasterizationRateLayerArray : NSObject
+```
+
 ## Topics
 
 ### Accessing members of the array
-- [subscript(Int) -> MTLRasterizationRateLayerDescriptor?](mtlrasterizationratelayerarray/subscript(_:).md)
+- [subscript(Int) -> MTLRasterizationRateLayerDescriptor?](./mtlrasterizationratelayerarray/subscript%28_%29.md)
   Retrieves the sample value at the specified index.
-- [class MTLRasterizationRateLayerDescriptor](mtlrasterizationratelayerdescriptor.md)
+- [class MTLRasterizationRateLayerDescriptor](./mtlrasterizationratelayerdescriptor.md)
   The minimum rasterization rates to apply to sections of a layer in the render target.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var layerCount: Int](mtlrasterizationratemapdescriptor/layercount.md)
+### Configuring the rate map layers
+- [var layerCount: Int](./mtlrasterizationratemapdescriptor/layercount.md)
   The number of layers in the rate map.
-- [func layer(at: Int) -> MTLRasterizationRateLayerDescriptor?](mtlrasterizationratemapdescriptor/layer(at:).md)
+- [func layer(at: Int) -> MTLRasterizationRateLayerDescriptor?](./mtlrasterizationratemapdescriptor/layer%28at%29.md)
   Returns the layer description for a layer in the rate map.
-- [func setLayer(MTLRasterizationRateLayerDescriptor?, at: Int)](mtlrasterizationratemapdescriptor/setlayer(_:at:).md)
+- [func setLayer(MTLRasterizationRateLayerDescriptor?, at: Int)](./mtlrasterizationratemapdescriptor/setlayer%28_,at%29.md)
   Sets a configuration for a layer rate map.
-- [var layers: MTLRasterizationRateLayerArray](mtlrasterizationratemapdescriptor/layers.md)
+- [var layers: MTLRasterizationRateLayerArray](./mtlrasterizationratemapdescriptor/layers.md)
   The rasterization rates for one or more layers in the rate map.
 
 

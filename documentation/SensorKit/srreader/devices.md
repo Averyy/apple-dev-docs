@@ -1,7 +1,8 @@
 # devices
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns device information for all devices that have stored data for the given sensor in SensorKit
 
@@ -22,7 +23,7 @@ An array of `SRDevice` objects representing available sensor devices
 
 #### Discussion
 
-> **Note**: An error if the request failed
+> **Throws**: An error if the request failed
 
 #### Example
 

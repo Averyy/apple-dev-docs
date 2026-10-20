@@ -1,7 +1,8 @@
 # isAdditive
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the animation system additively blends the action’s output with the base value.
 

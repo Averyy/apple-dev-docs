@@ -1,7 +1,8 @@
 # subscribe(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches the specified subscriber to this publisher.
 
@@ -22,7 +23,7 @@ func subscribe<S>(_ subscriber: S) where S : Subscriber, Self.Failure == S.Failu
 
 #### Discussion
 
-Always call this function instead of [`receive(subscriber:)`](publisher/receive(subscriber:).md). Adopters of [`Publisher`](publisher.md) must implement [`receive(subscriber:)`](publisher/receive(subscriber:).md). The implementation of [`subscribe(_:)`](publisher/subscribe(_:)-4u8kn.md) provided by [`Publisher`](publisher.md) calls through to [`receive(subscriber:)`](publisher/receive(subscriber:).md).
+Always call this function instead of [`receive(subscriber:)`](./receive%28subscriber%29.md). Adopters of [`Publisher`](../publisher.md) must implement [`receive(subscriber:)`](./receive%28subscriber%29.md). The implementation of [`subscribe(_:)`](./subscribe%28_%29-4u8kn.md) provided by [`Publisher`](../publisher.md) calls through to [`receive(subscriber:)`](./receive%28subscriber%29.md).
 
 ## Parameters
 
@@ -30,9 +31,10 @@ Always call this function instead of [`receive(subscriber:)`](publisher/receive(
 
 ## See Also
 
-- [func receive<S>(subscriber: S)](publisher/receive(subscriber:).md)
+### Working with subscribers
+- [func receive<S>(subscriber: S)](./receive%28subscriber%29.md)
   Attaches the specified subscriber to this publisher.
-- [func subscribe<S>(S) -> AnyCancellable](publisher/subscribe(_:)-3fk20.md)
+- [func subscribe<S>(S) -> AnyCancellable](./subscribe%28_%29-3fk20.md)
   Attaches the specified subject to this publisher.
 
 

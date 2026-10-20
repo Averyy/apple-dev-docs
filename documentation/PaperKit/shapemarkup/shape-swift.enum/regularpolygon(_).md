@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.regularPolygon(_:)
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A regular polygon with equal sides and angles.
 

@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](unicode/scalar/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   An escaped textual representation of the Unicode scalar, suitable for debugging.
 
 

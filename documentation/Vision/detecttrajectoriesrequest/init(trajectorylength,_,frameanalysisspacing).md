@@ -1,7 +1,8 @@
 # init(trajectoryLength:_:frameAnalysisSpacing:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trajectory-detection request.
 

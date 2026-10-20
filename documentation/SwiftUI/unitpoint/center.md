@@ -1,7 +1,8 @@
 # center
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point that’s centered in a view.
 
@@ -22,13 +23,14 @@ static let center: UnitPoint
 
 #### Discussion
 
-This point occupies the position where the horizontal and vertical alignment guides intersect for [`center`](alignment/center.md) alignment.
+This point occupies the position where the horizontal and vertical alignment guides intersect for [`center`](../alignment/center.md) alignment.
 
 ## See Also
 
-- [static let leading: UnitPoint](unitpoint/leading.md)
+### Getting middle points
+- [static let leading: UnitPoint](./leading.md)
   A point that’s centered vertically on the leading edge of a view.
-- [static let trailing: UnitPoint](unitpoint/trailing.md)
+- [static let trailing: UnitPoint](./trailing.md)
   A point that’s centered vertically on the trailing edge of a view.
 
 

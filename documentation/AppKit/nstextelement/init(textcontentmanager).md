@@ -1,7 +1,8 @@
 # init(textContentManager:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new text element with the content manager you provide.
 
@@ -14,9 +15,13 @@ Creates a new text element with the content manager you provide.
 init(textContentManager: NSTextContentManager?)
 ```
 
+```objc
+- (instancetype) initWithTextContentManager:(NSTextContentManager *) textContentManager;
+```
+
 ## Parameters
 
-- `textContentManager`: The [`NSTextContentManager`](nstextcontentmanager.md) to apply to this text element.
+- `textContentManager`: The [`NSTextContentManager`](../nstextcontentmanager.md) to apply to this text element.
 
 
 ---

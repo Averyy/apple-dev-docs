@@ -1,7 +1,8 @@
 # init(disabledMode:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 init(disabledMode: NSSharingCollaborationMode)
+```
+
+```objc
+- (instancetype) initWithDisabledMode:(NSSharingCollaborationMode) disabledMode;
 ```
 
 ## Parameters

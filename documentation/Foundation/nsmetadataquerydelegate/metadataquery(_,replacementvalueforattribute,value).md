@@ -1,7 +1,8 @@
 # metadataQuery(_:replacementValueForAttribute:value:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a different value for a given attribute and value.
 
@@ -20,6 +21,10 @@ Returns a different value for a given attribute and value.
 optional func metadataQuery(_ query: NSMetadataQuery, replacementValueForAttribute attrName: String, value attrValue: Any) -> Any
 ```
 
+```objc
+- (id) metadataQuery:(NSMetadataQuery *) query replacementValueForAttribute:(NSString *) attrName value:(id) attrValue;
+```
+
 #### Return Value
 
 Object that replaces the value of `attrName` in the result object
@@ -36,7 +41,8 @@ The delegate implementation of this method could convert specific query attribut
 
 ## See Also
 
-- [func metadataQuery(NSMetadataQuery, replacementObjectForResultObject: NSMetadataItem) -> Any](nsmetadataquerydelegate/metadataquery(_:replacementobjectforresultobject:).md)
+### Getting Query Results
+- [func metadataQuery(NSMetadataQuery, replacementObjectForResultObject: NSMetadataItem) -> Any](./metadataquery%28_,replacementobjectforresultobject%29.md)
   Returns a different object for a given query result object.
 
 

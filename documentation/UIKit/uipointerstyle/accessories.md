@@ -1,7 +1,8 @@
 # accessories
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Accessories to display alongside the pointer.
 
@@ -17,13 +18,18 @@ Accessories to display alongside the pointer.
 var accessories: [UIPointerAccessory] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<UIPointerAccessory *> * accessories;
+```
+
 #### Discussion
 
 This property supports up to four pointer accessories. The system animates between neighboring or similar accessories.
 
 ## See Also
 
-- [class UIPointerAccessory](uipointeraccessory.md)
+### Specifying pointer accessories
+- [class UIPointerAccessory](../uipointeraccessory.md)
   Constants that describe accessories to display alongside the primary pointer.
 
 

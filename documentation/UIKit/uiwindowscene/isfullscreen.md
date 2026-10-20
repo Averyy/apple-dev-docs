@@ -1,7 +1,8 @@
 # isFullScreen
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window scene is full screen or windowed.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the window scene is full screen or window
 var isFullScreen: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isFullScreen) BOOL fullScreen;
+```
+
 #### Discussion
 
 The system only supports this property in Mac Catalyst apps.
 
 ## See Also
 
-- [var windowingBehaviors: UISceneWindowingBehaviors?](uiwindowscene/windowingbehaviors.md)
+### Determining window behaviors
+- [var windowingBehaviors: UISceneWindowingBehaviors?](./windowingbehaviors.md)
   An object that specifies the behaviors of the window.
-- [class UISceneWindowingBehaviors](uiscenewindowingbehaviors.md)
+- [class UISceneWindowingBehaviors](../uiscenewindowingbehaviors.md)
   An object with properties that determine the behavior of a window.
 
 

@@ -1,6 +1,7 @@
 # Identifying the Source of Blocked Connections
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Figure out why App Transport Security denies a network connection.
 
@@ -8,10 +9,10 @@ Figure out why App Transport Security denies a network connection.
 
 If your app experiences connectivity problems that you think might be related to App Transport Security (ATS), be sure that:
 
-- You’re using high-level network frameworks and secure URLs, as described in [`Prefer High-Level Frameworks in Your App`](preventing-insecure-network-connections#Prefer-High-Level-Frameworks-in-Your-App.md).
+- You’re using high-level network frameworks and secure URLs, as described in [Prefer High-Level Frameworks in Your App](./preventing-insecure-network-connections.md#Prefer-High-Level-Frameworks-in-Your-App).
 - Your server is properly configured. Use the `nscurl` command line tool on your Mac to check how the server’s configuration affects ATS behavior.
 
-##### Check Combinations of Ats Exceptions
+##### Check Combinations of ATS Exceptions
 
 The `nscurl` command accepts the `--ats-diagnostics` flag that asks it to check how a particular server responds to combinations of ATS exceptions. For example, you can test the canonical example web site:
 
@@ -19,7 +20,7 @@ The `nscurl` command accepts the `--ats-diagnostics` flag that asks it to check 
 $ /usr/bin/nscurl --ats-diagnostics --verbose https://example.com
 ```
 
-In addition to running with no exceptions at all, the tool tests the global exception keys in [`NSAppTransportSecurity`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity), as well as a variety of combinations of the exception domain keys [`NSExceptionMinimumTLSVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionminimumtlsversion), [`NSExceptionRequiresForwardSecrecy`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionrequiresforwardsecrecy), [`NSExceptionAllowsInsecureHTTPLoads`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionallowsinsecurehttploads), and [`NSExceptionRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionrequiresniaptlspackageversion). `nscurl` outputs the results of all these tests to the terminal:
+In addition to running with no exceptions at all, the tool tests the global exception keys in [`NSAppTransportSecurity`](../BundleResources/information-property-list/nsapptransportsecurity.md), as well as a variety of combinations of the exception domain keys [`NSExceptionMinimumTLSVersion`](../BundleResources/information-property-list/nsexceptionminimumtlsversion.md), [`NSExceptionRequiresForwardSecrecy`](../BundleResources/information-property-list/nsexceptionrequiresforwardsecrecy.md), [`NSExceptionAllowsInsecureHTTPLoads`](../BundleResources/information-property-list/nsexceptionallowsinsecurehttploads.md), and [`NSExceptionRequiresNIAPTLSPackageVersion`](../BundleResources/information-property-list/nsexceptionrequiresniaptlspackageversion.md). `nscurl` outputs the results of all these tests to the terminal:
 
 ```console
 Starting ATS Diagnostics
@@ -74,9 +75,9 @@ Error : Error Domain=NSURLErrorDomain Code=-1202 "The certificate for this serve
 ...
 ```
 
-When you see this failure, check that your certificate meets the default server trust evaluation requirements described in [`Ensure the Network Server Meets Minimum Requirements`](preventing-insecure-network-connections#Ensure-the-Network-Server-Meets-Minimum-Requirements.md). For example, make sure the certificate matches the DNS name of the server and that the certificate isn’t expired.
+When you see this failure, check that your certificate meets the default server trust evaluation requirements described in [Ensure the Network Server Meets Minimum Requirements](./preventing-insecure-network-connections.md#Ensure-the-Network-Server-Meets-Minimum-Requirements). For example, make sure the certificate matches the DNS name of the server and that the certificate isn’t expired.
 
-##### Consider Specific Ats Exceptions
+##### Consider Specific ATS Exceptions
 
 If the ATS default test fails but the arbitrary loads test passes, you might need to reconfigure your server. Use the remaining tests to help pinpoint the problem. For example, consider the test with the following exceptions dictionary:
 
@@ -90,7 +91,7 @@ If the ATS default test fails but the arbitrary loads test passes, you might nee
 }
 ```
 
-If simply disabling forward secrecy results in a passing test, you need to reconfigure your server to support perfect forward secrecy (PFS) through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange. If you can’t do that, you might need to add the [`NSExceptionRequiresForwardSecrecy`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionrequiresforwardsecrecy) exception to your app instead, as described in doc:preventing-insecure-network-connections#Configure-Exceptions-Only-When-Needed;-Prefer-Server-Fixes.
+If simply disabling forward secrecy results in a passing test, you need to reconfigure your server to support perfect forward secrecy (PFS) through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange. If you can’t do that, you might need to add the [`NSExceptionRequiresForwardSecrecy`](../BundleResources/information-property-list/nsexceptionrequiresforwardsecrecy.md) exception to your app instead, as described in doc:preventing-insecure-network-connections#Configure-Exceptions-Only-When-Needed;-Prefer-Server-Fixes.
 
 
 ---

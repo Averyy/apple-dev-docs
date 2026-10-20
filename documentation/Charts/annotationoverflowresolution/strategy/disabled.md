@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Places the annotation “as-is”.
 

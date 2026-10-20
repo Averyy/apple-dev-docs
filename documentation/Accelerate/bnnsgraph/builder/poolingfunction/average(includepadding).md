@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.PoolingFunction.average(includePadding:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A function for pooling that computes the average of each element in the pooling kernel.
 

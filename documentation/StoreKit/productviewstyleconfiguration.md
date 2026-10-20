@@ -1,7 +1,8 @@
 # ProductViewStyleConfiguration
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of an Apple In-App Purchase product for use by custom product view styles.
 
@@ -22,38 +23,39 @@ struct ProductViewStyleConfiguration
 
 #### Overview
 
-Use the `ProductViewStyleConfiguration` to create a custom [`ProductViewStyle`](productviewstyle.md).
+Use the `ProductViewStyleConfiguration` to create a custom [`ProductViewStyle`](./productviewstyle.md).
 
 ## Topics
 
 ### Getting a product’s information
-- [var product: Product?](productviewstyleconfiguration/product.md)
+- [var product: Product?](./productviewstyleconfiguration/product.md)
   The Apple In-App Purchase product to merchandise.
-- [let state: Product.TaskState](productviewstyleconfiguration/state.md)
+- [let state: Product.TaskState](./productviewstyleconfiguration/state.md)
   The product task state that indicates the product’s loading phase.
-- [let hasCurrentEntitlement: Bool](productviewstyleconfiguration/hascurrententitlement.md)
+- [let hasCurrentEntitlement: Bool](./productviewstyleconfiguration/hascurrententitlement.md)
   A Boolean value that indicates whether an Apple In-App Purchase transaction exists for the product.
 ### Getting a product view’s icon
-- [let icon: ProductViewStyleConfiguration.Icon](productviewstyleconfiguration/icon-swift.property.md)
+- [let icon: ProductViewStyleConfiguration.Icon](./productviewstyleconfiguration/icon-swift.property.md)
   A decorative view for merchandising the product.
-- [ProductViewStyleConfiguration.Icon](productviewstyleconfiguration/icon-swift.struct.md)
+- [ProductViewStyleConfiguration.Icon](./productviewstyleconfiguration/icon-swift.struct.md)
   A type-erased icon of an Apple In-App Purchase product.
 ### Getting a product’s description visibility
-- [let descriptionVisibility: Visibility](productviewstyleconfiguration/descriptionvisibility.md)
+- [let descriptionVisibility: Visibility](./productviewstyleconfiguration/descriptionvisibility.md)
   The visibility of product descriptions.
 ### Initiating a purchase
-- [func purchase()](productviewstyleconfiguration/purchase.md)
+- [func purchase()](./productviewstyleconfiguration/purchase%28%29.md)
   Initiates a purchase action for the product.
 
 ## See Also
 
+### Styling product views
 - [func productViewStyle(some ProductViewStyle) -> some View
-](../swiftui/view/productviewstyle(_:).md)
+](../SwiftUI/view/productviewstyle%28_%29.md)
   Sets the style for In-App Purchase product views within a view.
 - [func productIconBorder() -> some View
-](../swiftui/view/producticonborder.md)
+](../SwiftUI/view/producticonborder%28%29.md)
   Adds a standard border to an in-app purchase product’s icon .
-- [protocol ProductViewStyle](productviewstyle.md)
+- [protocol ProductViewStyle](./productviewstyle.md)
   A type that specifies the appearance and interaction of Apple In-App Purchase products within the view hierarchy.
 
 

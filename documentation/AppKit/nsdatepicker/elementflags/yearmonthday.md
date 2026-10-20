@@ -1,10 +1,11 @@
 # yearMonthDay
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 static var yearMonthDay: NSDatePicker.ElementFlags { get }
 ```
 
+```c
+NSDatePickerElementFlagYearMonthDay
+```
+
 ## See Also
 
-- [static var era: NSDatePicker.ElementFlags](nsdatepicker/elementflags/era.md)
-- [static var hourMinute: NSDatePicker.ElementFlags](nsdatepicker/elementflags/hourminute.md)
-- [static var hourMinuteSecond: NSDatePicker.ElementFlags](nsdatepicker/elementflags/hourminutesecond.md)
-- [static var timeZone: NSDatePicker.ElementFlags](nsdatepicker/elementflags/timezone.md)
-- [static var yearMonth: NSDatePicker.ElementFlags](nsdatepicker/elementflags/yearmonth.md)
+### Constants
+- [static var era: NSDatePicker.ElementFlags](./era.md)
+- [static var hourMinute: NSDatePicker.ElementFlags](./hourminute.md)
+- [static var hourMinuteSecond: NSDatePicker.ElementFlags](./hourminutesecond.md)
+- [static var timeZone: NSDatePicker.ElementFlags](./timezone.md)
+- [static var yearMonth: NSDatePicker.ElementFlags](./yearmonth.md)
 
 
 ---

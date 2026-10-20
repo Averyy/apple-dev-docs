@@ -2,6 +2,7 @@
 
 **Framework**: Group Activities  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A description of the activity, and optional image to display to the user.
@@ -26,7 +27,8 @@ The system accesses this property when it’s ready to invite other participants
 
 ## See Also
 
-- [static var activityIdentifier: String](groupactivity/activityidentifier.md)
+### Specifying the activity details
+- [static var activityIdentifier: String](./activityidentifier.md)
   An app-defined string that uniquely identifies the activity.
 
 

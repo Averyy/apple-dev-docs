@@ -1,7 +1,8 @@
 # Response
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Base response wrapper used by all response types.
 
@@ -10,7 +11,7 @@ Base response wrapper used by all response types.
 
 ## Declaration
 
-```swift
+```
 object Response
 ```
 
@@ -32,13 +33,13 @@ The `Response` object is the base response wrapper used across all response type
 ## Topics
 
 ### Dictionaries
-- [object Response.Result](response/result-data.dictionary.md)
+- [object Response.Result](./response/result-data.dictionary.md)
   Placeholder for the response payload, whose actual shape depends on each endpoint’s concrete result type.
 
 ## Properties
 
-- `result` (Response.Result): The response payload. Type depends on the specific response subtype. See [`Response.Result`](response/result-data.dictionary.md). Absent when the request fails.
-- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](error.md).
+- `result` (Response.Result): The response payload. Type depends on the specific response subtype. See [`Response.Result`](./response/result-data.dictionary.md). Absent when the request fails.
+- `error` (Error): Error details if the request failed. Absent on success. See [`Error`](./error.md).
 
 
 ---

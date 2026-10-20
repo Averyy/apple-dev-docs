@@ -1,7 +1,8 @@
 # beginSheet(forDirectory:file:modalFor:modalDelegate:didEnd:contextInfo:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a sheet that allows a user to create a new keychain.
 
@@ -12,6 +13,10 @@ Displays a sheet that allows a user to create a new keychain.
 
 ```swift
 func beginSheet(forDirectory path: String!, file name: String!, modalFor docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!)
+```
+
+```objc
+- (void) beginSheetForDirectory:(NSString *) path file:(NSString *) name modalForWindow:(NSWindow *) docWindow modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion
@@ -27,12 +32,12 @@ The delegate method has the following signature:
 The parameters for the delegate method are:
 
 - **`sheet`**: The window to which the sheet was attached.
-- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelokbutton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelcancelbutton).
-- **`contextInfo`**: Client-defined contextual data that is passed in the `contextInfo` parameter of the [`beginSheet(forDirectory:file:modalFor:modalDelegate:didEnd:contextInfo:)`](sfkeychainsavepanel/beginsheet(fordirectory:file:modalfor:modaldelegate:didend:contextinfo:).md) method.
+- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](../../AppKit/nsfilehandlingpanelokbutton.md) or [`NSFileHandlingPanelCancelButton`](../../AppKit/nsfilehandlingpanelcancelbutton.md).
+- **`contextInfo`**: Client-defined contextual data that is passed in the `contextInfo` parameter of the [`beginSheet(forDirectory:file:modalFor:modalDelegate:didEnd:contextInfo:)`](./beginsheet%28fordirectory,file,modalfor,modaldelegate,didend,contextinfo%29.md) method.
 
 The delegate method may dismiss the keychain settings sheet itself; if it does not, the sheet is dismissed on return from the `beginSheetForDirectory:...` method.
 
-Use the [`keychain()`](sfkeychainsavepanel/keychain().md) method to obtain the keychain created by the user.
+Use the [`keychain()`](./keychain%28%29.md) method to obtain the keychain created by the user.
 
 ## Parameters
 
@@ -45,13 +50,15 @@ Use the [`keychain()`](sfkeychainsavepanel/keychain().md) method to obtain the k
 
 ## See Also
 
-- [func keychain() -> Unmanaged<SecKeychain>!](sfkeychainsavepanel/keychain.md)
+### Related Documentation
+- [func keychain() -> Unmanaged<SecKeychain>!](./keychain%28%29.md)
   Returns the keychain created by the keychain save panel.
-- [func runModal(forDirectory: String!, file: String!) -> Int](sfkeychainsavepanel/runmodal(fordirectory:file:).md)
+- [func runModal(forDirectory: String!, file: String!) -> Int](./runmodal%28fordirectory,file%29.md)
   Displays a panel that allows a user to create a new keychain.
-- [func setPassword(String!)](sfkeychainsavepanel/setpassword(_:).md)
+### Displaying a Sheet or Panel
+- [func setPassword(String!)](./setpassword%28_%29.md)
   Specifies the password for the keychain that will be created.
-- [func runModal(forDirectory: String!, file: String!) -> Int](sfkeychainsavepanel/runmodal(fordirectory:file:).md)
+- [func runModal(forDirectory: String!, file: String!) -> Int](./runmodal%28fordirectory,file%29.md)
   Displays a panel that allows a user to create a new keychain.
 
 

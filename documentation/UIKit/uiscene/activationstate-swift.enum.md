@@ -1,7 +1,8 @@
 # UIScene.ActivationState
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the foreground or background execution state of your app.
 
@@ -18,37 +19,42 @@ Constants that indicate the foreground or background execution state of your app
 enum ActivationState
 ```
 
+```c
+enum UISceneActivationState : NSInteger;
+```
+
 ## Topics
 
 ### Scene States
-- [UIScene.ActivationState.unattached](uiscene/activationstate-swift.enum/unattached.md)
+- [UIScene.ActivationState.unattached](./activationstate-swift.enum/unattached.md)
   A state that indicates that the scene is not currently connected to your app.
-- [UIScene.ActivationState.foregroundInactive](uiscene/activationstate-swift.enum/foregroundinactive.md)
+- [UIScene.ActivationState.foregroundInactive](./activationstate-swift.enum/foregroundinactive.md)
   A state that indicates that the scene is running in the foreground but is not receiving events.
-- [UIScene.ActivationState.foregroundActive](uiscene/activationstate-swift.enum/foregroundactive.md)
+- [UIScene.ActivationState.foregroundActive](./activationstate-swift.enum/foregroundactive.md)
   A state that indicates that the scene is running in the foreground and is currently receiving events.
-- [UIScene.ActivationState.background](uiscene/activationstate-swift.enum/background.md)
+- [UIScene.ActivationState.background](./activationstate-swift.enum/background.md)
   A state that indicates that the scene is running in the background and is not onscreen.
 ### Initializers
-- [init?(rawValue: Int)](uiscene/activationstate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./activationstate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var activationState: UIScene.ActivationState](uiscene/activationstate-swift.property.md)
+### Getting the scene attributes
+- [var activationState: UIScene.ActivationState](./activationstate-swift.property.md)
   The current execution state of the scene.
-- [var title: String!](uiscene/title.md)
+- [var title: String!](./title.md)
   A user-visible string you supply to help users differentiate among your app’s scenes.
-- [var subtitle: String](uiscene/subtitle.md)
+- [var subtitle: String](./subtitle.md)
   A string that the app displays in the title bar of a window when running in macOS.
 
 

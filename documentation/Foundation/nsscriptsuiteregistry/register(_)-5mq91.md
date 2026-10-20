@@ -1,7 +1,8 @@
 # register(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers command description `commandDesc` for use by Cocoa’s built-in scripting support by storing it in a per-suite internal dictionary under the command name.
 
@@ -15,19 +16,25 @@ Registers command description `commandDesc` for use by Cocoa’s built-in script
 func register(_ commandDescription: NSScriptCommandDescription)
 ```
 
+```objc
+- (void) registerCommandDescription:(NSScriptCommandDescription *) commandDescription;
+```
+
 #### Discussion
 
-Also registers with the single, shared instance of [`NSAppleEventManager`](nsappleeventmanager.md) to handle incoming Apple events that should be handled by the command.
+Also registers with the single, shared instance of [`NSAppleEventManager`](../nsappleeventmanager.md) to handle incoming Apple events that should be handled by the command.
 
 ## See Also
 
-- [func register(NSScriptClassDescription)](nsscriptsuiteregistry/register(_:)-9aplw.md)
+### Related Documentation
+- [func register(NSScriptClassDescription)](./register%28_%29-9aplw.md)
   Registers class description `classDescription` for use by Cocoa’s built-in scripting support by storing it in a per-suite internal dictionary under the class name.
-- [func loadSuite(with: [AnyHashable : Any], from: Bundle)](nsscriptsuiteregistry/loadsuite(with:from:).md)
+- [func loadSuite(with: [AnyHashable : Any], from: Bundle)](./loadsuite%28with,from%29.md)
   Loads the suite definition encapsulated in `dictionary`; previously, this suite definition was parsed from a `.scriptSuite` property list contained in a framework or in `bundle`.
-- [func commandDescriptions(inSuite: String) -> [String : NSScriptCommandDescription]?](nsscriptsuiteregistry/commanddescriptions(insuite:).md)
+### Getting and Registering Command Descriptions
+- [func commandDescriptions(inSuite: String) -> [String : NSScriptCommandDescription]?](./commanddescriptions%28insuite%29.md)
   Returns the command descriptions contained in the suite identified by `suiteName`.
-- [func commandDescription(withAppleEventClass: FourCharCode, andAppleEventCode: FourCharCode) -> NSScriptCommandDescription?](nsscriptsuiteregistry/commanddescription(withappleeventclass:andappleeventcode:).md)
+- [func commandDescription(withAppleEventClass: FourCharCode, andAppleEventCode: FourCharCode) -> NSScriptCommandDescription?](./commanddescription%28withappleeventclass,andappleeventcode%29.md)
   Returns the command description identified by a suite’s four-character Apple event code of the class (`eventClass`) and the four-character Apple event code of the command (`commandCode`).
 
 

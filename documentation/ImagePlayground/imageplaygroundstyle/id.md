@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text-based description of the style option.
 

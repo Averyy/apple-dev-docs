@@ -1,7 +1,8 @@
 # centers
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to place graph nodes at the center of each polygon in the generated mesh.
 
@@ -19,11 +20,16 @@ An option to place graph nodes at the center of each polygon in the generated me
 static var centers: GKMeshGraphTriangulationMode { get }
 ```
 
+```c
+GKMeshGraphTriangulationModeCenters
+```
+
 ## See Also
 
-- [static var vertices: GKMeshGraphTriangulationMode](gkmeshgraphtriangulationmode/vertices.md)
+### Constants
+- [static var vertices: GKMeshGraphTriangulationMode](./vertices.md)
   An option to place graph nodes at each vertex in the generated mesh.
-- [static var edgeMidpoints: GKMeshGraphTriangulationMode](gkmeshgraphtriangulationmode/edgemidpoints.md)
+- [static var edgeMidpoints: GKMeshGraphTriangulationMode](./edgemidpoints.md)
   An option to place graph nodes at the midpoint of each in the generated mesh.
 
 

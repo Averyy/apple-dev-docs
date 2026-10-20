@@ -1,7 +1,8 @@
 # PKPassLibraryDidChange
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that PassKit posts when the pass library changes.
 
@@ -19,13 +20,18 @@ A notification that PassKit posts when the pass library changes.
 static let PKPassLibraryDidChange: PKPassLibraryNotificationName
 ```
 
+```c
+extern PKPassLibraryNotificationName const PKPassLibraryDidChangeNotification;
+```
+
 #### Discussion
 
-PassKit posts this notification on an arbitary queue, and only does so if an instance of `PKPassLibrary` exists. The notification’s user info dictionary describes the changes. See [`PKPassLibrary`](pkpasslibrary.md) for the keys it uses.
+PassKit posts this notification on an arbitary queue, and only does so if an instance of `PKPassLibrary` exists. The notification’s user info dictionary describes the changes. See [`PKPassLibrary`](../pkpasslibrary.md) for the keys it uses.
 
 ## See Also
 
-- [static let PKPassLibraryRemotePaymentPassesDidChange: PKPassLibraryNotificationName](pkpasslibrarynotificationname/pkpasslibraryremotepaymentpassesdidchange.md)
+### Notification names
+- [static let PKPassLibraryRemotePaymentPassesDidChange: PKPassLibraryNotificationName](./pkpasslibraryremotepaymentpassesdidchange.md)
   A notification that PassKit posts when it adds or removes a pass on a paired remote device.
 
 

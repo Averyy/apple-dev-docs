@@ -1,99 +1,100 @@
 # Deprecated symbols
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 #### Overview
 
-[`AVAsset`](avasset.md) doesn’t support using its synchronous property accessors that can block the calling thread. Instead, use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to load [`AVAsyncProperty`](avasyncproperty.md) values asynchronously.
+[`AVAsset`](./avasset.md) doesn’t support using its synchronous property accessors that can block the calling thread. Instead, use the [`load(_:isolation:)`](./avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to load [`AVAsyncProperty`](./avasyncproperty.md) values asynchronously.
 
 ## Topics
 
 ### Accessing duration and timing
-- [var duration: CMTime](avasset/duration.md)
+- [var duration: CMTime](./avasset/duration.md)
   A time value that indicates the asset’s duration.
-- [var providesPreciseDurationAndTiming: Bool](avasset/providesprecisedurationandtiming.md)
+- [var providesPreciseDurationAndTiming: Bool](./avasset/providesprecisedurationandtiming.md)
   A Boolean value that indicates whether the asset provides precise duration and timing.
-- [var minimumTimeOffsetFromLive: CMTime](avasset/minimumtimeoffsetfromlive.md)
+- [var minimumTimeOffsetFromLive: CMTime](./avasset/minimumtimeoffsetfromlive.md)
   A time value that indicates how closely playback follows the latest live stream content.
 ### Accessing tracks
-- [var tracks: [AVAssetTrack]](avasset/tracks.md)
+- [var tracks: [AVAssetTrack]](./avasset/tracks.md)
   The tracks an asset contains.
-- [func track(withTrackID: CMPersistentTrackID) -> AVAssetTrack?](avasset/track(withtrackid:).md)
+- [func track(withTrackID: CMPersistentTrackID) -> AVAssetTrack?](./avasset/track%28withtrackid%29.md)
   Returns a track that contains the specified identifier.
-- [func tracks(withMediaType: AVMediaType) -> [AVAssetTrack]](avasset/tracks(withmediatype:).md)
+- [func tracks(withMediaType: AVMediaType) -> [AVAssetTrack]](./avasset/tracks%28withmediatype%29.md)
   Returns tracks that contain media of a specified type.
-- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVAssetTrack]](avasset/tracks(withmediacharacteristic:).md)
+- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVAssetTrack]](./avasset/tracks%28withmediacharacteristic%29.md)
   Returns an array of asset tracks matching the specified media characteristic.
-- [func unusedTrackID() -> CMPersistentTrackID](avasset/unusedtrackid.md)
+- [func unusedTrackID() -> CMPersistentTrackID](./avasset/unusedtrackid%28%29.md)
   Returns an identifier that no other tracks in the asset use.
 ### Accessing track groups
-- [var trackGroups: [AVAssetTrackGroup]](avasset/trackgroups.md)
+- [var trackGroups: [AVAssetTrackGroup]](./avasset/trackgroups.md)
   The track groups an asset contains.
 ### Accessing metadata
-- [var metadata: [AVMetadataItem]](avasset/metadata.md)
+- [var metadata: [AVMetadataItem]](./avasset/metadata.md)
   An array of metadata items for all metadata identifiers for which a value is available.
-- [var commonMetadata: [AVMetadataItem]](avasset/commonmetadata.md)
+- [var commonMetadata: [AVMetadataItem]](./avasset/commonmetadata.md)
   The metadata items an asset contains for common metadata identifiers that provide a value.
-- [var availableMetadataFormats: [AVMetadataFormat]](avasset/availablemetadataformats.md)
+- [var availableMetadataFormats: [AVMetadataFormat]](./avasset/availablemetadataformats.md)
   The metadata formats this asset contains.
-- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avasset/metadata(forformat:).md)
+- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](./avasset/metadata%28forformat%29.md)
   Returns an array of metadata items from the container with the specified format.
-- [var creationDate: AVMetadataItem?](avasset/creationdate.md)
+- [var creationDate: AVMetadataItem?](./avasset/creationdate.md)
   A metadata item that indicates the asset’s creation date.
-- [var lyrics: String?](avasset/lyrics.md)
+- [var lyrics: String?](./avasset/lyrics.md)
   The lyrics of the asset in a language suitable for the current locale.
 ### Accessing suitability
-- [var isPlayable: Bool](avasset/isplayable.md)
+- [var isPlayable: Bool](./avasset/isplayable.md)
   A Boolean value that indicates whether the asset has playable content.
-- [var isExportable: Bool](avasset/isexportable.md)
+- [var isExportable: Bool](./avasset/isexportable.md)
   A Boolean value that indicates whether you can export this asset using an export session.
-- [var isReadable: Bool](avasset/isreadable.md)
+- [var isReadable: Bool](./avasset/isreadable.md)
   A Boolean value that indicates whether you can extract the asset’s media data using an asset reader.
-- [var isComposable: Bool](avasset/iscomposable.md)
+- [var isComposable: Bool](./avasset/iscomposable.md)
   A Boolean value that indicates whether you can use the asset as a segment of a composition track.
-- [var isCompatibleWithAirPlayVideo: Bool](avasset/iscompatiblewithairplayvideo.md)
+- [var isCompatibleWithAirPlayVideo: Bool](./avasset/iscompatiblewithairplayvideo.md)
   A Boolean value that indicates whether the asset is compatible with AirPlay Video.
-- [var isCompatibleWithSavedPhotosAlbum: Bool](avasset/iscompatiblewithsavedphotosalbum.md)
+- [var isCompatibleWithSavedPhotosAlbum: Bool](./avasset/iscompatiblewithsavedphotosalbum.md)
   A Boolean value that indicates whether you can write the asset to the Saved Photos album.
 ### Accessing asset preferences
-- [var preferredRate: Float](avasset/preferredrate.md)
+- [var preferredRate: Float](./avasset/preferredrate.md)
   The asset’s rate preference for playing its media.
-- [var preferredVolume: Float](avasset/preferredvolume.md)
+- [var preferredVolume: Float](./avasset/preferredvolume.md)
   The asset’s volume preference for playing its audible media.
-- [var preferredTransform: CGAffineTransform](avasset/preferredtransform.md)
+- [var preferredTransform: CGAffineTransform](./avasset/preferredtransform.md)
   The asset’s transform preference to apply to its visual content during presentation or processing.
-- [var preferredDisplayCriteria: AVDisplayCriteria](avasset/preferreddisplaycriteria.md)
+- [var preferredDisplayCriteria: AVDisplayCriteria](./avasset/preferreddisplaycriteria.md)
   The asset’s display mode preference for optimal playback of its content.
-- [var preferredMediaSelection: AVMediaSelection](avasset/preferredmediaselection.md)
+- [var preferredMediaSelection: AVMediaSelection](./avasset/preferredmediaselection.md)
   The default media selections for this asset’s media selection groups.
 ### Accessing media selections
-- [var allMediaSelections: [AVMediaSelection]](avasset/allmediaselections.md)
+- [var allMediaSelections: [AVMediaSelection]](./avasset/allmediaselections.md)
   The array of available media selections for this asset.
-- [var availableMediaCharacteristicsWithMediaSelectionOptions: [AVMediaCharacteristic]](avasset/availablemediacharacteristicswithmediaselectionoptions.md)
+- [var availableMediaCharacteristicsWithMediaSelectionOptions: [AVMediaCharacteristic]](./avasset/availablemediacharacteristicswithmediaselectionoptions.md)
   An array of media characteristics for which a media selection option is available.
-- [func mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristic) -> AVMediaSelectionGroup?](avasset/mediaselectiongroup(formediacharacteristic:).md)
+- [func mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristic) -> AVMediaSelectionGroup?](./avasset/mediaselectiongroup%28formediacharacteristic%29.md)
   Returns a media selection group that contains one or more options with the specified media characteristic.
 ### Accessing chapter metadata
-- [var availableChapterLocales: [Locale]](avasset/availablechapterlocales.md)
+- [var availableChapterLocales: [Locale]](./avasset/availablechapterlocales.md)
   The locales of the asset’s chapter metadata.
-- [func chapterMetadataGroups(withTitleLocale: Locale, containingItemsWithCommonKeys: [AVMetadataKey]?) -> [AVTimedMetadataGroup]](avasset/chaptermetadatagroups(withtitlelocale:containingitemswithcommonkeys:).md)
+- [func chapterMetadataGroups(withTitleLocale: Locale, containingItemsWithCommonKeys: [AVMetadataKey]?) -> [AVTimedMetadataGroup]](./avasset/chaptermetadatagroups%28withtitlelocale,containingitemswithcommonkeys%29.md)
   Returns an array of chapters that contain the specified title locale and common keys.
-- [func chapterMetadataGroups(bestMatchingPreferredLanguages: [String]) -> [AVTimedMetadataGroup]](avasset/chaptermetadatagroups(bestmatchingpreferredlanguages:).md)
+- [func chapterMetadataGroups(bestMatchingPreferredLanguages: [String]) -> [AVTimedMetadataGroup]](./avasset/chaptermetadatagroups%28bestmatchingpreferredlanguages%29.md)
   Returns an array of chapters with a locale that best matches the list of preferred languages.
 ### Accessing content protections
-- [var hasProtectedContent: Bool](avasset/hasprotectedcontent.md)
+- [var hasProtectedContent: Bool](./avasset/hasprotectedcontent.md)
   A Boolean value that indicates whether the asset contains protected content.
 ### Accessing fragment support
-- [var canContainFragments: Bool](avasset/cancontainfragments.md)
+- [var canContainFragments: Bool](./avasset/cancontainfragments.md)
   A Boolean value that indicates whether you can extend the asset by fragments.
-- [var containsFragments: Bool](avasset/containsfragments.md)
+- [var containsFragments: Bool](./avasset/containsfragments.md)
   A Boolean value that indicates whether at least one movie fragment extends the asset.
-- [var overallDurationHint: CMTime](avasset/overalldurationhint.md)
+- [var overallDurationHint: CMTime](./avasset/overalldurationhint.md)
   The total duration of fragments that currently exist, or may exist in the future.
 ### Inspecting visual attributes
-- [var naturalSize: CGSize](avasset/naturalsize.md)
+- [var naturalSize: CGSize](./avasset/naturalsize.md)
   The encoded or authored size of the visual portion of the asset.
 
 

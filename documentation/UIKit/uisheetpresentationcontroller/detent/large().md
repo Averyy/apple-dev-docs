@@ -1,7 +1,8 @@
 # large()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a system detent for a sheet at full height.
 
@@ -16,9 +17,14 @@ Creates a system detent for a sheet at full height.
 class func large() -> Self
 ```
 
+```objc
++ (instancetype) largeDetent;
+```
+
 ## See Also
 
-- [class func medium() -> Self](uisheetpresentationcontroller/detent/medium.md)
+### Creating a system detent
+- [class func medium() -> Self](./medium%28%29.md)
   Creates a system detent for a sheet that’s approximately half the height of the screen, and is inactive in compact height.
 
 

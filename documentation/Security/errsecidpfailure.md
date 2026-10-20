@@ -1,7 +1,8 @@
 # errSecIDPFailure
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The issuing distribution point is not valid.
 
@@ -18,6 +19,10 @@ The issuing distribution point is not valid.
 
 ```swift
 var errSecIDPFailure: OSStatus { get }
+```
+
+```c
+errSecIDPFailure
 ```
 
 

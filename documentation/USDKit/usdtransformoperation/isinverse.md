@@ -1,7 +1,8 @@
 # isInverse
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this is an inverse operation.
 

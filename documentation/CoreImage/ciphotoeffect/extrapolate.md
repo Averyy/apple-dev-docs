@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Extrapolate for RGB values outside of the range 0.0 to 1.0.
@@ -20,9 +21,14 @@ Extrapolate for RGB values outside of the range 0.0 to 1.0.
 var extrapolate: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) bool extrapolate;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](ciphotoeffect/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

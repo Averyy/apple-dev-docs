@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the transformer and optimizer to an encoder.
 
@@ -27,11 +28,12 @@ func encodeWithOptimizer(_ transformer: UpdatableEstimatorToSupervisedAdaptor<Es
 
 ## See Also
 
-- [func encode(UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](updatableestimatortosupervisedadaptor/encode(_:to:).md)
+### Encoding and decoding
+- [func encode(UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, to: inout any EstimatorEncoder) throws](./encode%28_,to%29.md)
   Does nothing since this estimator uses a pre-defined transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](updatableestimatortosupervisedadaptor/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./decode%28from%29.md)
   Returns the pre-defined transformer.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](updatableestimatortosupervisedadaptor/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer](./decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer.
 
 

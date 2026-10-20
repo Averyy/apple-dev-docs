@@ -1,36 +1,38 @@
 # IOSCSILogicalUnitNub
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```cpp
 class IOSCSILogicalUnitNub : IOSCSIPeripheralDeviceNub
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- ExecuteCommand](ioscsilogicalunitnub/1569620-executecommand.md)
-- [- GetLogicalUnitNumber](ioscsilogicalunitnub/1569612-getlogicalunitnumber.md)
-- [- SetLogicalUnitNumber](ioscsilogicalunitnub/1569644-setlogicalunitnumber.md)
-- [- getMetaClass](ioscsilogicalunitnub/1569618-getmetaclass.md)
+- [- ExecuteCommand](./ioscsilogicalunitnub/api-1569620-executecommand.md)
+- [- GetLogicalUnitNumber](./ioscsilogicalunitnub/api-1569612-getlogicalunitnumber.md)
+- [- SetLogicalUnitNumber](./ioscsilogicalunitnub/api-1569644-setlogicalunitnumber.md)
+- [- getMetaClass](./ioscsilogicalunitnub/api-1569618-getmetaclass.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOSCSIPeripheralDeviceNub](ioscsiperipheraldevicenub.md)
+- [IOSCSIPeripheralDeviceNub](./ioscsiperipheraldevicenub.md)
 
 ## See Also
 
-- [IOSCSIParallelInterfaceController](ioscsiparallelinterfacecontroller.md)
+### Multimedia Devices
+- [IOSCSIParallelInterfaceController](./ioscsiparallelinterfacecontroller.md)
   Class that represents a SCSI Host Bus Adapter.
-- [IOSCSIPeripheralDeviceType05](ioscsiperipheraldevicetype05.md)
-- [IOSCSIMultimediaCommandsDevice](ioscsimultimediacommandsdevice.md)
+- [IOSCSIPeripheralDeviceType05](./ioscsiperipheraldevicetype05.md)
+- [IOSCSIMultimediaCommandsDevice](./ioscsimultimediacommandsdevice.md)
 
 
 ---

@@ -1,12 +1,15 @@
 # TVViewElementStyleType.double
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) value.
+An [`NSNumber`](../../Foundation/nsnumber.md) value.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,20 +17,25 @@ An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) v
 case double
 ```
 
+```c
+TVViewElementStyleTypeDouble
+```
+
 ## See Also
 
-- [TVViewElementStyleType.integer](tvviewelementstyletype/integer.md)
-  An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) value.
-- [TVViewElementStyleType.point](tvviewelementstyletype/point.md)
-  A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) value.
-- [TVViewElementStyleType.string](tvviewelementstyletype/string.md)
-  A [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) value.
-- [TVViewElementStyleType.color](tvviewelementstyletype/color.md)
-  A [`TVColor`](tvcolor.md) value.
-- [TVViewElementStyleType.URL](tvviewelementstyletype/url.md)
-  A [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) value.
-- [TVViewElementStyleType.edgeInsets](tvviewelementstyletype/edgeinsets.md)
-  An [`UIEdgeInsets`](https://developer.apple.com/documentation/uikit/uiedgeinsets) value.
+### Constants
+- [TVViewElementStyleType.integer](./integer.md)
+  An [`NSNumber`](../../Foundation/nsnumber.md) value.
+- [TVViewElementStyleType.point](./point.md)
+  A [`CGPoint`](../../CoreFoundation/cgpoint.md) value.
+- [TVViewElementStyleType.string](./string.md)
+  A [`NSString`](../../Foundation/nsstring.md) value.
+- [TVViewElementStyleType.color](./color.md)
+  A [`TVColor`](../tvcolor.md) value.
+- [TVViewElementStyleType.URL](./url.md)
+  A [`NSURL`](../../Foundation/nsurl.md) value.
+- [TVViewElementStyleType.edgeInsets](./edgeinsets.md)
+  An [`UIEdgeInsets`](../../UIKit/uiedgeinsets.md) value.
 
 
 ---

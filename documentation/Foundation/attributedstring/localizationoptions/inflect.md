@@ -1,7 +1,8 @@
 # inflect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether attributes for automatic grammar agreement and formatting should be processed upon loading the string. Default value is `true`.
 

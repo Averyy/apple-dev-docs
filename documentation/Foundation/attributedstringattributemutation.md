@@ -1,7 +1,8 @@
 # AttributedStringAttributeMutation
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines in-place mutations for attributes in an attributed string.
 
@@ -23,31 +24,32 @@ protocol AttributedStringAttributeMutation
 ## Topics
 
 ### Mutating the String’s Attributes
-- [func setAttributes(AttributeContainer)](attributedstringattributemutation/setattributes(_:).md)
+- [func setAttributes(AttributeContainer)](./attributedstringattributemutation/setattributes%28_%29.md)
   Sets the attributed string’s attributes to those in a specified attribute container.
-- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstringattributemutation/mergeattributes(_:mergepolicy:).md)
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](./attributedstringattributemutation/mergeattributes%28_,mergepolicy%29.md)
   Merges the attributed string’s attributes with those in a specified attribute container.
-- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstringattributemutation/replaceattributes(_:with:).md)
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](./attributedstringattributemutation/replaceattributes%28_,with%29.md)
   Replaces the attributed string’s attributes with those in a specified attribute container.
 
 ## Relationships
 
 ### Inherited By
-- [AttributedStringProtocol](attributedstringprotocol.md)
+- [AttributedStringProtocol](./attributedstringprotocol.md)
 ### Conforming Types
-- [AttributedString](attributedstring.md)
-- [AttributedSubstring](attributedsubstring.md)
-- [DiscontiguousAttributedSubstring](discontiguousattributedsubstring.md)
+- [AttributedString](./attributedstring.md)
+- [AttributedSubstring](./attributedsubstring.md)
+- [DiscontiguousAttributedSubstring](./discontiguousattributedsubstring.md)
 
 ## See Also
 
-- [func setAttributes(AttributeContainer)](attributedstring/setattributes(_:).md)
+### Applying and Modifying Attributes
+- [func setAttributes(AttributeContainer)](./attributedstring/setattributes%28_%29.md)
   Sets the attributed string’s attributes to those in a specified attribute container.
-- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstring/mergeattributes(_:mergepolicy:).md)
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](./attributedstring/mergeattributes%28_,mergepolicy%29.md)
   Merges the attributed string’s attributes with those in a specified attribute container.
-- [AttributedString.AttributeMergePolicy](attributedstring/attributemergepolicy.md)
+- [AttributedString.AttributeMergePolicy](./attributedstring/attributemergepolicy.md)
   An enumeration of behaviors to apply when merging attributes.
-- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstring/replaceattributes(_:with:).md)
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](./attributedstring/replaceattributes%28_,with%29.md)
   Replaces occurrences of attributes in one attribute container with those in another attribute container.
 
 

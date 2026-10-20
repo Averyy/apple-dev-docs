@@ -1,7 +1,8 @@
 # HierarchicalShapeStyleModifier
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Styles that you can apply to hierarchical shapes.
 
@@ -24,41 +25,42 @@ struct HierarchicalShapeStyleModifier<Base> where Base : ShapeStyle
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ShapeStyle](./shapestyle.md)
 
 ## See Also
 
-- [struct AngularGradient](angulargradient.md)
+### Supporting types
+- [struct AngularGradient](./angulargradient.md)
   An angular gradient.
-- [struct EllipticalGradient](ellipticalgradient.md)
+- [struct EllipticalGradient](./ellipticalgradient.md)
   A radial gradient that draws an ellipse.
-- [struct LinearGradient](lineargradient.md)
+- [struct LinearGradient](./lineargradient.md)
   A linear gradient.
-- [struct RadialGradient](radialgradient.md)
+- [struct RadialGradient](./radialgradient.md)
   A radial gradient.
-- [struct Material](material.md)
+- [struct Material](./material.md)
   A background material type.
-- [struct ImagePaint](imagepaint.md)
+- [struct ImagePaint](./imagepaint.md)
   A shape style that fills a shape by repeating a region of an image.
-- [struct HierarchicalShapeStyle](hierarchicalshapestyle.md)
+- [struct HierarchicalShapeStyle](./hierarchicalshapestyle.md)
   A shape style that maps to one of the numbered content styles.
-- [struct ForegroundStyle](foregroundstyle.md)
+- [struct ForegroundStyle](./foregroundstyle.md)
   The foreground style in the current context.
-- [struct BackgroundStyle](backgroundstyle.md)
+- [struct BackgroundStyle](./backgroundstyle.md)
   The background style in the current context.
-- [struct SelectionShapeStyle](selectionshapestyle.md)
+- [struct SelectionShapeStyle](./selectionshapestyle.md)
   A style used to visually indicate selection following platform conventional colors and behaviors.
-- [struct SeparatorShapeStyle](separatorshapestyle.md)
+- [struct SeparatorShapeStyle](./separatorshapestyle.md)
   A style appropriate for foreground separator or border lines.
-- [struct TintShapeStyle](tintshapestyle.md)
+- [struct TintShapeStyle](./tintshapestyle.md)
   A style that reflects the current tint color.
-- [struct FillShapeStyle](fillshapestyle.md)
+- [struct FillShapeStyle](./fillshapestyle.md)
   A shape style that displays one of the overlay fills.
-- [struct LinkShapeStyle](linkshapestyle.md)
+- [struct LinkShapeStyle](./linkshapestyle.md)
   A style appropriate for links.
-- [struct PlaceholderTextShapeStyle](placeholdertextshapestyle.md)
+- [struct PlaceholderTextShapeStyle](./placeholdertextshapestyle.md)
   A style appropriate for placeholder text.
 
 

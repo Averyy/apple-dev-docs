@@ -1,14 +1,17 @@
 # view
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view containing the movie content and controls.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
@@ -16,19 +19,24 @@ The view containing the movie content and controls.
 var view: UIView! { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIView * view;
+```
+
 #### Discussion
 
 This property contains the view used for presenting the video content. This view incorporates all the background, content, and controls needed to display movies. You can incorporate this view into your own view hierarchies or present it by itself using a view controller.
 
-To embed the view into your own view hierarchies, add it as a subview to one of your existing views. A good place to do this is in the [`loadView()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/loadview()) or [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()) method of the custom view controller that presents your view hierarchy. You are free to change the view’s [`frame`](https://developer.apple.com/documentation/uikit/uiview/frame) rectangle to accommodate the space available in your view hierarchy. The movie player uses the value in the [`scalingMode`](mpmovieplayercontroller/scalingmode.md) property to scale the movie content to match the frame you specify.
+To embed the view into your own view hierarchies, add it as a subview to one of your existing views. A good place to do this is in the [`loadView()`](../../UIKit/uiviewcontroller/loadview%28%29.md) or [`viewDidLoad()`](../../UIKit/uiviewcontroller/viewdidload%28%29.md) method of the custom view controller that presents your view hierarchy. You are free to change the view’s [`frame`](../../UIKit/uiview/frame.md) rectangle to accommodate the space available in your view hierarchy. The movie player uses the value in the [`scalingMode`](./scalingmode.md) property to scale the movie content to match the frame you specify.
 
-If you want to present the view by itself—that is, without embedding it in an existing view hierarchy—you can use an instance of the [`MPMoviePlayerViewController`](mpmovieplayerviewcontroller.md) class to manage the presentation of the view. That class works directly with the movie player controller to present the view by itself.
+If you want to present the view by itself—that is, without embedding it in an existing view hierarchy—you can use an instance of the [`MPMoviePlayerViewController`](../mpmovieplayerviewcontroller.md) class to manage the presentation of the view. That class works directly with the movie player controller to present the view by itself.
 
 You can add subviews to the view in this property. You might do this in cases where you want to display custom playback controls or add other custom content that is relevant to your app.
 
 ## See Also
 
-- [var backgroundView: UIView!](mpmovieplayercontroller/backgroundview.md)
+### Accessing the view
+- [var backgroundView: UIView!](./backgroundview.md)
   A customizable view that is displayed behind the movie content.
 
 

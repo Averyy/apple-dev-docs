@@ -1,7 +1,8 @@
 # onBetterPathUpdate(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A better path being available indicates that the system thinks there is a preferred path or interface to use, compared to the one this connection is actively using. As an example, the connection is established over an expensive cellular interface and an unmetered Wi-Fi interface is now available.
 
@@ -20,6 +21,8 @@ A better path being available indicates that the system thinks there is a prefer
 @discardableResult
 func onBetterPathUpdate(_ handler: @escaping @isolated(any) @Sendable (Self, Bool) -> Void) -> Self
 ```
+
+Available when `ApplicationProtocol` is `QUICStream`.
 
 #### Discussion
 

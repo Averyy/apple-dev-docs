@@ -1,34 +1,36 @@
 # CreateMapping
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CreateMapping(uint64_t options, uint64_t address, uint64_t offset, uint64_t length, uint64_t alignment, IOMemoryMap **map, OSDispatchMethod supermethod);
 ```
 
 ## See Also
 
-- [reserved](iomemorydescriptor/reserved.md)
-- [+ initialize](iomemorydescriptor/1441798-initialize.md)
-- [- Dispatch](iomemorydescriptor/3180641-dispatch.md)
-- [+ CreateMapping_Invoke](iomemorydescriptor/3174976-createmapping_invoke.md)
-- [- populateDevicePager](iomemorydescriptor/1442017-populatedevicepager.md)
-- [- CreateMapping_Impl](iomemorydescriptor/3174975-createmapping_impl.md)
-- [- Map](iomemorydescriptor/3180643-map.md)
+### Managing Internal Structures
+- [reserved](./reserved.md)
+- [+ initialize](./api-1441798-initialize.md)
+- [- Dispatch](./api-3180641-dispatch.md)
+- [+ CreateMapping_Invoke](./api-3174976-createmapping_invoke.md)
+- [- populateDevicePager](./api-1442017-populatedevicepager.md)
+- [- CreateMapping_Impl](./api-3174975-createmapping_impl.md)
+- [- Map](./api-3180643-map.md)
   Maps memory internally. 
-- [- addMapping](iomemorydescriptor/1442013-addmapping.md)
-- [- removeMapping](iomemorydescriptor/1441778-removemapping.md)
-- [- makeMapping](iomemorydescriptor/1441923-makemapping.md)
-- [- doMap](iomemorydescriptor/1441941-domap.md)
-- [- doUnmap](iomemorydescriptor/1441883-dounmap.md)
-- [- handleFault](iomemorydescriptor/1441782-handlefault.md)
-- [- redirect](iomemorydescriptor/1441871-redirect.md)
+- [- addMapping](./api-1442013-addmapping.md)
+- [- removeMapping](./api-1441778-removemapping.md)
+- [- makeMapping](./api-1441923-makemapping.md)
+- [- doMap](./api-1441941-domap.md)
+- [- doUnmap](./api-1441883-dounmap.md)
+- [- handleFault](./api-1441782-handlefault.md)
+- [- redirect](./api-1441871-redirect.md)
 
 
 ---

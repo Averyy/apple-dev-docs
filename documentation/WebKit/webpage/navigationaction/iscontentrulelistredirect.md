@@ -1,7 +1,8 @@
 # isContentRuleListRedirect
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not the navigation is a redirect from a content rule list.
 

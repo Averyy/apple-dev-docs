@@ -1,7 +1,8 @@
 # init(title:pauseButton:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a countdown with an optional pause button.
 
@@ -23,9 +24,10 @@ init(title: LocalizedStringResource, pauseButton: AlarmButton? = nil)
 
 ## See Also
 
-- [var pauseButton: AlarmButton?](alarmpresentation/countdown-swift.struct/pausebutton.md)
+### Creates a pause button
+- [var pauseButton: AlarmButton?](./pausebutton.md)
   The pause button for a countdown timer.
-- [var title: LocalizedStringResource](alarmpresentation/countdown-swift.struct/title.md)
+- [var title: LocalizedStringResource](./title.md)
   The title of the countdown.
 
 

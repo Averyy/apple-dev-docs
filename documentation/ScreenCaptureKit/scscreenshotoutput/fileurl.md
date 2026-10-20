@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL property that specifies the location of the saved image.
 
@@ -13,6 +14,10 @@ A URL property that specifies the location of the saved image.
 
 ```swift
 unowned(unsafe) var fileURL: NSURL? { get set }
+```
+
+```objc
+@property (nonatomic, assign, nullable) NSURL * fileURL;
 ```
 
 #### Discussion

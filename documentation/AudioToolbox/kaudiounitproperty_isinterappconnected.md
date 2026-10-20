@@ -1,15 +1,16 @@
 # kAudioUnitProperty_IsInterAppConnected
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioUnitProperty_IsInterAppConnected: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitProperty_IsInterAppConnected
+```
+
 ## See Also
 
-- [var kAudioUnitProperty_PeerURL: AudioUnitPropertyID](kaudiounitproperty_peerurl.md)
-- [var kAudioUnitProperty_RemoteControlEventListener: AudioUnitPropertyID](kaudiounitproperty_remotecontroleventlistener.md)
+### Constants
+- [var kAudioUnitProperty_PeerURL: AudioUnitPropertyID](./kaudiounitproperty_peerurl.md)
+- [var kAudioUnitProperty_RemoteControlEventListener: AudioUnitPropertyID](./kaudiounitproperty_remotecontroleventlistener.md)
 
 
 ---

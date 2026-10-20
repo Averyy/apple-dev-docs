@@ -1,7 +1,8 @@
 # books
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for types you use to describe books.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for types you use to describe books.
 ```swift
 static var books: some AssistantSchemas.BooksEnum { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EnumSchema`.
 
 
 ---

@@ -1,7 +1,8 @@
 # results
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The results from an autocomplete request.
 
@@ -10,17 +11,18 @@ The results from an autocomplete request.
 
 ## Declaration
 
-```swift
+```
 results: SearchAutocompleteResult[];
 ```
 
 #### Discussion
 
-This property contains an array of [`SearchAutocompleteResult`](searchautocompleteresult.md) objects corresponding to the [`query`](searchautocompleteresponse/query.md).
+This property contains an array of [`SearchAutocompleteResult`](../searchautocompleteresult.md) objects corresponding to the [`query`](./query.md).
 
 ## See Also
 
-- [query](searchautocompleteresponse/query.md)
+### Response
+- [query](./query.md)
   The query string used to perform the autocomplete request.
 
 

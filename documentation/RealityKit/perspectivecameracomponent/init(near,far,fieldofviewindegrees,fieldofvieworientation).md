@@ -1,7 +1,8 @@
 # init(near:far:fieldOfViewInDegrees:fieldOfViewOrientation:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a perspective camera component from near and far clipping planes, a field of view, and an orientation.
 
@@ -28,7 +29,8 @@ init(near: Float = 0.01, far: Float = .infinity, fieldOfViewInDegrees: Float = 6
 
 ## See Also
 
-- [init(near: Float, far: Float, fieldOfViewInDegrees: Float)](perspectivecameracomponent/init(near:far:fieldofviewindegrees:).md)
+### Creating a camera component
+- [init(near: Float, far: Float, fieldOfViewInDegrees: Float)](./init%28near,far,fieldofviewindegrees%29.md)
   Creates a perspective camera component from near and far clipping planes and a field of view.
 
 

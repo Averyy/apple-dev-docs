@@ -1,12 +1,15 @@
 # fullScreenButton
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The fullscreen icon button.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 10.12
+
+> **Deprecated**: The standard window button for NSWindowFullScreenButton is always nil; use NSWindowZoomButton instead
 
 ## Declaration
 
@@ -14,19 +17,24 @@ The fullscreen icon button.
 static var fullScreenButton: NSWindow.ButtonType { get }
 ```
 
+```c
+static const NSWindowButton NSWindowFullScreenButton;
+```
+
 ## See Also
 
-- [NSWindow.ButtonType.closeButton](nswindow/buttontype/closebutton.md)
+### Constants
+- [NSWindow.ButtonType.closeButton](./closebutton.md)
   The close button.
-- [NSWindow.ButtonType.miniaturizeButton](nswindow/buttontype/miniaturizebutton.md)
+- [NSWindow.ButtonType.miniaturizeButton](./miniaturizebutton.md)
   The minimize button.
-- [NSWindow.ButtonType.zoomButton](nswindow/buttontype/zoombutton.md)
+- [NSWindow.ButtonType.zoomButton](./zoombutton.md)
   The zoom button.
-- [NSWindow.ButtonType.toolbarButton](nswindow/buttontype/toolbarbutton.md)
+- [NSWindow.ButtonType.toolbarButton](./toolbarbutton.md)
   The toolbar button.
-- [NSWindow.ButtonType.documentIconButton](nswindow/buttontype/documenticonbutton.md)
+- [NSWindow.ButtonType.documentIconButton](./documenticonbutton.md)
   The document icon button.
-- [NSWindow.ButtonType.documentVersionsButton](nswindow/buttontype/documentversionsbutton.md)
+- [NSWindow.ButtonType.documentVersionsButton](./documentversionsbutton.md)
   The document versions button.
 
 

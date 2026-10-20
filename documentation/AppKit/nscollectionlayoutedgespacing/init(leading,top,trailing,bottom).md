@@ -1,7 +1,8 @@
 # init(leading:top:trailing:bottom:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an edge spacing object with the specified leading, top, trailing, and bottom spacing.
 
@@ -12,6 +13,10 @@ Creates an edge spacing object with the specified leading, top, trailing, and bo
 
 ```swift
 convenience init(leading: NSCollectionLayoutSpacing?, top: NSCollectionLayoutSpacing?, trailing: NSCollectionLayoutSpacing?, bottom: NSCollectionLayoutSpacing?)
+```
+
+```objc
++ (instancetype) spacingForLeading:(NSCollectionLayoutSpacing *) leading top:(NSCollectionLayoutSpacing *) top trailing:(NSCollectionLayoutSpacing *) trailing bottom:(NSCollectionLayoutSpacing *) bottom;
 ```
 
 

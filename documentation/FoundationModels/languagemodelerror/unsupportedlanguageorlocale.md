@@ -1,7 +1,8 @@
 # LanguageModelError.UnsupportedLanguageOrLocale
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about an unsupported language or locale.
 
@@ -22,25 +23,26 @@ struct UnsupportedLanguageOrLocale
 ## Topics
 
 ### Creating an error instance
-- [init(languageCode: Locale.LanguageCode, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/unsupportedlanguageorlocale/init(languagecode:debugdescription:metadata:).md)
+- [init(languageCode: Locale.LanguageCode, debugDescription: String, metadata: [String : any Sendable])](./unsupportedlanguageorlocale/init%28languagecode,debugdescription,metadata%29.md)
   Creates information describing a language or locale the model doesn’t support.
 ### Inspecting unsupported language or locale errors
-- [var metadata: [String : any Sendable]](languagemodelerror/unsupportedlanguageorlocale/metadata.md)
+- [var metadata: [String : any Sendable]](./unsupportedlanguageorlocale/metadata.md)
   Additional information about the failure, keyed by name.
-- [var languageCode: Locale.LanguageCode](languagemodelerror/unsupportedlanguageorlocale/languagecode.md)
+- [var languageCode: Locale.LanguageCode](./unsupportedlanguageorlocale/languagecode.md)
   The language code that the model doesn’t support.
-- [var debugDescription: String](languagemodelerror/unsupportedlanguageorlocale/debugdescription.md)
+- [var debugDescription: String](./unsupportedlanguageorlocale/debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case unsupportedLanguageOrLocale(LanguageModelError.UnsupportedLanguageOrLocale)](languagemodelerror/unsupportedlanguageorlocale(_:).md)
+### Language unsupported error
+- [case unsupportedLanguageOrLocale(LanguageModelError.UnsupportedLanguageOrLocale)](./unsupportedlanguageorlocale%28_%29.md)
   The model was prompted to respond in a language that it does not support.
 
 

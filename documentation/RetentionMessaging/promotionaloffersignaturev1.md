@@ -1,7 +1,8 @@
 # promotionalOfferSignatureV1
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The promotional-offer signature you generate using an earlier signature version.
 
@@ -10,17 +11,17 @@ The promotional-offer signature you generate using an earlier signature version.
 
 ## Declaration
 
-```swift
+```
 object promotionalOfferSignatureV1
 ```
 
 #### Discussion
 
-To provide a promotional-offer retention message, you need to cryptographically sign the offer and include it in the [`promotionalOffer`](promotionaloffer.md) parameter of your [`RealtimeResponseBody`](realtimeresponsebody.md) response.
+To provide a promotional-offer retention message, you need to cryptographically sign the offer and include it in the [`promotionalOffer`](./promotionaloffer.md) parameter of your [`RealtimeResponseBody`](./realtimeresponsebody.md) response.
 
-> 💡 **Tip**: For a simpler implementation, use [`promotionalOfferSignatureV2`](promotionaloffersignaturev2.md) instead.
+> 💡 **Tip**: For a simpler implementation, use [`promotionalOfferSignatureV2`](./promotionaloffersignaturev2.md) instead.
 
-For instructions on generating the `encodedSignature` for the `promotionalOfferSignatureV1`, see [`Generating a signature for promotional offers`](https://developer.apple.com/documentation/storekit/generating-a-signature-for-promotional-offers).
+For instructions on generating the `encodedSignature` for the `promotionalOfferSignatureV1`, see [Generating a signature for promotional offers](../StoreKit/generating-a-signature-for-promotional-offers.md).
 
 ## Properties
 

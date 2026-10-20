@@ -1,7 +1,8 @@
 # NSPersistentStoreOSCompatibility
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Key to represent the earliest version of the operation system that the persistent store supports.
 
@@ -10,7 +11,7 @@ Key to represent the earliest version of the operation system that the persisten
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Key to represent the earliest version of the operation system that the persisten
 
 ```swift
 let NSPersistentStoreOSCompatibility: String
+```
+
+```c
+extern NSString * const NSPersistentStoreOSCompatibility;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ Backward compatibility may preclude some features.
 
 ## See Also
 
-- [let NSStoreModelVersionHashesKey: String](nsstoremodelversionhasheskey.md)
+### Constants
+- [let NSStoreModelVersionHashesKey: String](./nsstoremodelversionhasheskey.md)
   Key to represent the version hash information for the model used to create the store.
-- [let NSStoreModelVersionIdentifiersKey: String](nsstoremodelversionidentifierskey.md)
+- [let NSStoreModelVersionIdentifiersKey: String](./nsstoremodelversionidentifierskey.md)
   Key to represent the version identifiers for the model used to create the store.
 
 

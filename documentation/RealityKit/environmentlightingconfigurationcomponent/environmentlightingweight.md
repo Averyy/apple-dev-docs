@@ -1,7 +1,8 @@
 # environmentLightingWeight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that controls the environment-lighting contribution to an entity’s lighting.
 

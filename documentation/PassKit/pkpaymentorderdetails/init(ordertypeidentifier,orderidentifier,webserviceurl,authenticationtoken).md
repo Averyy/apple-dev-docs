@@ -1,7 +1,8 @@
 # init(orderTypeIdentifier:orderIdentifier:webServiceURL:authenticationToken:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a payment order details object with the identifier, web service URL, and authentication token you provide.
 
@@ -16,6 +17,10 @@ Initializes a payment order details object with the identifier, web service URL,
 
 ```swift
 init(orderTypeIdentifier: String, orderIdentifier: String, webServiceURL: URL, authenticationToken: String)
+```
+
+```objc
+- (instancetype) initWithOrderTypeIdentifier:(NSString *) orderTypeIdentifier orderIdentifier:(NSString *) orderIdentifier webServiceURL:(NSURL *) webServiceURL authenticationToken:(NSString *) authenticationToken;
 ```
 
 ## Parameters

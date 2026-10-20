@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The pointer argument’s element type.
@@ -12,7 +13,7 @@ The pointer argument’s element type.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration

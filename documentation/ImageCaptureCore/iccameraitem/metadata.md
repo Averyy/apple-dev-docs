@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s metadata.
 
@@ -18,19 +19,24 @@ The item’s metadata.
 var metadata: [AnyHashable : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDictionary * metadata;
+```
+
 #### Discussion
 
-The value of this property is `nil` unless a [`requestMetadata()`](iccameraitem/requestmetadata().md) message is sent to this object.
+The value of this property is `nil` unless a [`requestMetadata()`](./requestmetadata%28%29.md) message is sent to this object.
 
 ## See Also
 
-- [func requestMetadata()](iccameraitem/requestmetadata.md)
+### Requesting Metadata
+- [func requestMetadata()](./requestmetadata%28%29.md)
   Requests metadata for the item.
-- [var metadataIfAvailable: [String : Any]?](iccameraitem/metadataifavailable.md)
+- [var metadataIfAvailable: [String : Any]?](./metadataifavailable.md)
   The item’s metadata if it is readily available.
-- [func flushMetadataCache()](iccameraitem/flushmetadatacache.md)
+- [func flushMetadataCache()](./flushmetadatacache%28%29.md)
   Deletes the item’s cached metadata.
-- [struct ICCameraItemMetadataOption](iccameraitemmetadataoption.md)
+- [struct ICCameraItemMetadataOption](../iccameraitemmetadataoption.md)
   An option for the item’s metadata.
 
 

@@ -1,7 +1,8 @@
 # nw_report_resolution_source_cache
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The DNS response was retrieved from a local cache.
 
@@ -20,11 +21,16 @@ The DNS response was retrieved from a local cache.
 var nw_report_resolution_source_cache: nw_report_resolution_source_t { get }
 ```
 
+```c
+nw_report_resolution_source_cache
+```
+
 ## See Also
 
-- [var nw_report_resolution_source_query: nw_report_resolution_source_t](nw_report_resolution_source_query.md)
+### Resolution Sources
+- [var nw_report_resolution_source_query: nw_report_resolution_source_t](./nw_report_resolution_source_query.md)
   The DNS response was received from the network.
-- [var nw_report_resolution_source_expired_cache: nw_report_resolution_source_t](nw_report_resolution_source_expired_cache.md)
+- [var nw_report_resolution_source_expired_cache: nw_report_resolution_source_t](./nw_report_resolution_source_expired_cache.md)
   The DNS response had expired and was retrieved from a local cache.
 
 

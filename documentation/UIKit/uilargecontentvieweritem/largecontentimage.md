@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An image that represents an item to display in the large content viewer.
@@ -18,19 +19,24 @@ An image that represents an item to display in the large content viewer.
 var largeContentImage: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIImage * largeContentImage;
+```
+
 #### Discussion
 
-To present content in the large content viewer, you can provide either [`largeContentTitle`](uilargecontentvieweritem/largecontenttitle.md) or [`largeContentImage`](uilargecontentvieweritem/largecontentimage.md), or both.
+To present content in the large content viewer, you can provide either [`largeContentTitle`](./largecontenttitle.md) or [`largeContentImage`](./largecontentimage.md), or both.
 
 This property defaults to an appropriate value for UIKit classes, otherwise `nil`.
 
 ## See Also
 
-- [var largeContentTitle: String?](uilargecontentvieweritem/largecontenttitle.md)
+### Configuring display properties
+- [var largeContentTitle: String?](./largecontenttitle.md)
   A string that describes an item to display in the large content viewer.
-- [var largeContentImageInsets: UIEdgeInsets](uilargecontentvieweritem/largecontentimageinsets.md)
+- [var largeContentImageInsets: UIEdgeInsets](./largecontentimageinsets.md)
   Insets to adjust the position of the item’s image so it appears visually centered in the large content viewer.
-- [var scalesLargeContentImage: Bool](uilargecontentvieweritem/scaleslargecontentimage.md)
+- [var scalesLargeContentImage: Bool](./scaleslargecontentimage.md)
   A Boolean value that indicates whether the view scales the item’s image to a larger size or not.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the ECG session.
 
@@ -16,15 +17,20 @@ A unique identifier for the ECG session.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var sessionGuidance: SRElectrocardiogramSession.SessionGuidance](srelectrocardiogramsession/sessionguidance-swift.property.md)
+### Getting session information
+- [var sessionGuidance: SRElectrocardiogramSession.SessionGuidance](./sessionguidance-swift.property.md)
   The type of session used to record the sample.
-- [SRElectrocardiogramSession.SessionGuidance](srelectrocardiogramsession/sessionguidance-swift.enum.md)
+- [SRElectrocardiogramSession.SessionGuidance](./sessionguidance-swift.enum.md)
   The type of session guidance used to record a ECG sample.
-- [var state: SRElectrocardiogramSession.State](srelectrocardiogramsession/state-swift.property.md)
+- [var state: SRElectrocardiogramSession.State](./state-swift.property.md)
   The state of the session used to record the sample.
-- [SRElectrocardiogramSession.State](srelectrocardiogramsession/state-swift.enum.md)
+- [SRElectrocardiogramSession.State](./state-swift.enum.md)
   The state of a session used to record a ECG sample.
 
 

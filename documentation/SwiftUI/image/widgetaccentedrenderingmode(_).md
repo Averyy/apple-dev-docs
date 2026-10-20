@@ -1,7 +1,8 @@
 # widgetAccentedRenderingMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
 

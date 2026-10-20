@@ -1,7 +1,8 @@
 # webURL
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key to access the web URL property of a media item.
 
@@ -20,9 +21,14 @@ The key to access the web URL property of a media item.
 static let webURL: SHMediaItemProperty
 ```
 
+```c
+extern SHMediaItemProperty const SHMediaItemWebURL;
+```
+
 ## See Also
 
-- [static let shazamID: SHMediaItemProperty](shmediaitemproperty/shazamid.md)
+### Shazam music catalog property keys
+- [static let shazamID: SHMediaItemProperty](./shazamid.md)
   The key to access the Shazam ID property of a media item.
 
 

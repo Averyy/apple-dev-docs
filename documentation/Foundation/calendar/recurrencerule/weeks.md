@@ -1,7 +1,8 @@
 # weeks
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On which weeks of the year the event should occur.
 

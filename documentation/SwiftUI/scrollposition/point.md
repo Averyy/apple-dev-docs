@@ -1,7 +1,8 @@
 # point
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The positioned point of the scroll view if configured to be in that position.
 

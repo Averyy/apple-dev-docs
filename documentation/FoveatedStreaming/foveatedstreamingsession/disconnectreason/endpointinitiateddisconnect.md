@@ -1,7 +1,8 @@
 # endpointInitiatedDisconnect
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A disconnect command was initiated by the remote endpoint.
 

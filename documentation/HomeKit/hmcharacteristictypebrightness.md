@@ -1,7 +1,8 @@
 # HMCharacteristicTypeBrightness
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The brightness of a light.
 
@@ -19,19 +20,24 @@ The brightness of a light.
 let HMCharacteristicTypeBrightness: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeBrightness;
+```
+
 #### Discussion
 
 The corresponding value is an integer representing a percentage of the maximum brightness.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentLightLevel: String](hmcharacteristictypecurrentlightlevel.md)
+### Light
+- [let HMCharacteristicTypeCurrentLightLevel: String](./hmcharacteristictypecurrentlightlevel.md)
   The current light level.
-- [let HMCharacteristicTypeHue: String](hmcharacteristictypehue.md)
+- [let HMCharacteristicTypeHue: String](./hmcharacteristictypehue.md)
   The hue of the color used by a light.
-- [let HMCharacteristicTypeSaturation: String](hmcharacteristictypesaturation.md)
+- [let HMCharacteristicTypeSaturation: String](./hmcharacteristictypesaturation.md)
   The saturation of the color used by a light.
-- [let HMCharacteristicTypeColorTemperature: String](hmcharacteristictypecolortemperature.md)
+- [let HMCharacteristicTypeColorTemperature: String](./hmcharacteristictypecolortemperature.md)
   The color temperature of a light.
 
 

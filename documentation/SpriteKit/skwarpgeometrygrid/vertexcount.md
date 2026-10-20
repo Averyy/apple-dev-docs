@@ -1,7 +1,8 @@
 # vertexCount
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object’s total number of vertices.
 
@@ -20,15 +21,20 @@ The object’s total number of vertices.
 var vertexCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger vertexCount;
+```
+
 #### Discussion
 
 The number of vertices is the same as `(```numberOfColumns`` `+ 1) * (```numberOfRows`` `+ 1)`.
 
 ## See Also
 
-- [var numberOfColumns: Int](skwarpgeometrygrid/numberofcolumns.md)
+### Accessing or Setting Warp Geometry Grid Size
+- [var numberOfColumns: Int](./numberofcolumns.md)
   The object’s number of columns.
-- [var numberOfRows: Int](skwarpgeometrygrid/numberofrows.md)
+- [var numberOfRows: Int](./numberofrows.md)
   The object’s number of rows.
 
 

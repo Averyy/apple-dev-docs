@@ -1,7 +1,8 @@
 # CreativeUpdate.CreativeSpec
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The creative spec fields that can be updated after creation.
 
@@ -10,13 +11,13 @@ The creative spec fields that can be updated after creation.
 
 ## Declaration
 
-```swift
+```
 object CreativeUpdate.CreativeSpec
 ```
 
 #### Discussion
 
-See [`CreativeCreate.CreativeSpec`](creativecreate/creativespec-data.dictionary.md) for the full field reference.
+See [`CreativeCreate.CreativeSpec`](../creativecreate/creativespec-data.dictionary.md) for the full field reference.
 
 
 ---

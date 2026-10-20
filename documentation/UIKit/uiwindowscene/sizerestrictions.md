@@ -1,7 +1,8 @@
 # sizeRestrictions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum and maximum size of the app’s windows.
 
@@ -18,15 +19,20 @@ The minimum and maximum size of the app’s windows.
 var sizeRestrictions: UISceneSizeRestrictions? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UISceneSizeRestrictions * sizeRestrictions;
+```
+
 #### Discussion
 
 When the value of this property is not `nil`, use it to change the default minimum and maximum window sizes for your app. If the value of this property is `nil,` the system doesn’t allow you to set window size restrictions.
 
 ## See Also
 
-- [var traitCollection: UITraitCollection](uiwindowscene/traitcollection.md)
+### Getting the interface attributes
+- [var traitCollection: UITraitCollection](./traitcollection.md)
   The traits that describe the current environment of the scene.
-- [class UISceneSizeRestrictions](uiscenesizerestrictions.md)
+- [class UISceneSizeRestrictions](../uiscenesizerestrictions.md)
   An object that specifies the minimum and maximum sizes for resizable windows.
 
 

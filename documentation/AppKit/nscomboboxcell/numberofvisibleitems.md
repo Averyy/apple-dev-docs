@@ -1,12 +1,13 @@
 # numberOfVisibleItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of items visible in the pop-up list at any one time.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ The maximum number of items visible in the pop-up list at any one time.
 var numberOfVisibleItems: Int { get set }
 ```
 
+```objc
+@property NSInteger numberOfVisibleItems;
+```
+
 ## See Also
 
-- [var numberOfItems: Int](nscomboboxcell/numberofitems.md)
+### Related Documentation
+- [var numberOfItems: Int](./numberofitems.md)
   The total number of items in the pop-up list.
-- [var hasVerticalScroller: Bool](nscomboboxcell/hasverticalscroller.md)
+### Setting Display Attributes
+- [var hasVerticalScroller: Bool](./hasverticalscroller.md)
   A Boolean value that indicates if the combo box displays a vertical scroller.
-- [var isButtonBordered: Bool](nscomboboxcell/isbuttonbordered.md)
+- [var isButtonBordered: Bool](./isbuttonbordered.md)
   A Boolean value that indicates whether the combo box button displays a border.
-- [var intercellSpacing: NSSize](nscomboboxcell/intercellspacing.md)
+- [var intercellSpacing: NSSize](./intercellspacing.md)
   The spacing between cells in the combo box’s pop-up list.
-- [var itemHeight: CGFloat](nscomboboxcell/itemheight.md)
+- [var itemHeight: CGFloat](./itemheight.md)
   The height of each item in the combo box’s pop-up list.
 
 

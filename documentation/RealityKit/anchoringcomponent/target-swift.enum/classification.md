@@ -1,7 +1,8 @@
 # AnchoringComponent.Target.Classification
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines types of real-world surfaces to seek as targets.
 
@@ -11,7 +12,7 @@ Defines types of real-world surfaces to seek as targets.
 - Mac Catalyst 14.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,34 +23,35 @@ struct Classification
 ## Topics
 
 ### Classifying a target
-- [static let wall: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/wall.md)
+- [static let wall: AnchoringComponent.Target.Classification](./classification/wall.md)
   Look for walls.
-- [static let floor: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/floor.md)
+- [static let floor: AnchoringComponent.Target.Classification](./classification/floor.md)
   Look for floors.
-- [static let ceiling: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/ceiling.md)
+- [static let ceiling: AnchoringComponent.Target.Classification](./classification/ceiling.md)
   Look for ceilings.
-- [static let table: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/table.md)
+- [static let table: AnchoringComponent.Target.Classification](./classification/table.md)
   Look for tables.
-- [static let seat: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/seat.md)
+- [static let seat: AnchoringComponent.Target.Classification](./classification/seat.md)
   Look for seats.
-- [static let any: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/any.md)
+- [static let any: AnchoringComponent.Target.Classification](./classification/any.md)
   Look for any kind of surface.
 ### Creating a target classification instance
-- [static let any: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/any.md)
+- [static let any: AnchoringComponent.Target.Classification](./classification/any.md)
   Look for any kind of surface.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 ## See Also
 
-- [AnchoringComponent.Target.Alignment](anchoringcomponent/target-swift.enum/alignment.md)
+### Surface anchor characterization
+- [AnchoringComponent.Target.Alignment](./alignment.md)
   Defines the alignment of real-world surfaces to seek as targets.
 
 

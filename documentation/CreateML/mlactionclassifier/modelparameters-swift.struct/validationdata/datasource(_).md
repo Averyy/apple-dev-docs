@@ -1,7 +1,8 @@
 # MLActionClassifier.ModelParameters.ValidationData.dataSource(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A validation dataset represented by a data source.
 
@@ -16,9 +17,10 @@ case dataSource(MLActionClassifier.DataSource)
 
 ## See Also
 
-- [MLActionClassifier.ModelParameters.ValidationData.split(strategy:)](mlactionclassifier/modelparameters-swift.struct/validationdata/split(strategy:).md)
+### Designating validation data
+- [MLActionClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   A validation dataset derived by randomly selecting a portion of the action classifier’s training dataset using the split strategy.
-- [MLActionClassifier.ModelParameters.ValidationData.none](mlactionclassifier/modelparameters-swift.struct/validationdata/none.md)
+- [MLActionClassifier.ModelParameters.ValidationData.none](./none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 

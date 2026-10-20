@@ -1,7 +1,8 @@
 # encapsulatedKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encapsulated symmetric key that the recipient uses to decrypt messages.
 

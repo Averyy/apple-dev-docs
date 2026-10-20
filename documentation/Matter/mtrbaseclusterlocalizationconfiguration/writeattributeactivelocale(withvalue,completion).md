@@ -1,7 +1,8 @@
 # writeAttributeActiveLocale(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeActiveLocale(withValue value: String, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeActiveLocale(withValue value: String) async throws
+```
+
+```objc
+- (void) writeAttributeActiveLocaleWithValue:(NSString *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

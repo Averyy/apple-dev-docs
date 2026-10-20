@@ -1,7 +1,8 @@
 # CMSampleBuffer.SampleProperties
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a sample in the sample buffer.
 
@@ -22,26 +23,26 @@ struct SampleProperties
 
 #### Overview
 
-Each sample buffer holds a [`CMSampleBuffer.SamplePropertiesCollection`](cmsamplebuffer/samplepropertiescollection.md) which provides this sample information for each sample in the sample buffer.
+Each sample buffer holds a [`CMSampleBuffer.SamplePropertiesCollection`](./samplepropertiescollection.md) which provides this sample information for each sample in the sample buffer.
 
 ## Topics
 
 ### Initializers
-- [init(size: Int?, timing: CMSampleTimingInfo, attachments: CMSampleBuffer.SampleAttachments)](cmsamplebuffer/sampleproperties/init(size:timing:attachments:).md)
+- [init(size: Int?, timing: CMSampleTimingInfo, attachments: CMSampleBuffer.SampleAttachments)](./sampleproperties/init%28size,timing,attachments%29.md)
 ### Instance Properties
-- [var attachments: CMSampleBuffer.SampleAttachments](cmsamplebuffer/sampleproperties/attachments.md)
+- [var attachments: CMSampleBuffer.SampleAttachments](./sampleproperties/attachments.md)
   Attachments of the sample.
-- [var size: Int?](cmsamplebuffer/sampleproperties/size.md)
+- [var size: Int?](./sampleproperties/size.md)
   Size in bytes of the sample.
-- [var timing: CMSampleTimingInfo](cmsamplebuffer/sampleproperties/timing.md)
+- [var timing: CMSampleTimingInfo](./sampleproperties/timing.md)
   Timing information of the sample.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

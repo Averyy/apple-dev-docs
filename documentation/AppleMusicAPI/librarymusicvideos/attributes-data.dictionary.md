@@ -1,7 +1,8 @@
 # LibraryMusicVideos.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for the library music videos resource type.
 
@@ -10,7 +11,7 @@ The attributes for the library music videos resource type.
 
 ## Declaration
 
-```swift
+```
 object LibraryMusicVideos.Attributes
 ```
 
@@ -20,6 +21,8 @@ object LibraryMusicVideos.Attributes
 - `artistName` (string) *(required)*: The artist’s name.
 - `artwork` (Artwork) *(required)*: The artwork for the music video’s associated album.
 - `contentRating` (string): The Recording Industry Association of America (RIAA) rating of the content. The possible values for this rating are `clean` and `explicit`. No value means no rating.
+
+  **Allowed Values**: `clean`, `explicit`
 - `durationInMillis` (integer) *(required)*: The duration of the music video in milliseconds.
 - `genreNames` ([string]) *(required)*: The names of the genres associated with this music video.
 - `inFavorites` (boolean): Whether the catalog resource ID is in the person’s favorites.
@@ -30,7 +33,8 @@ object LibraryMusicVideos.Attributes
 
 ## See Also
 
-- [object LibraryMusicVideos.Relationships](librarymusicvideos/relationships-data.dictionary.md)
+### Related Objects
+- [object LibraryMusicVideos.Relationships](./relationships-data.dictionary.md)
   The relationships from library music videos to other resources.
 
 

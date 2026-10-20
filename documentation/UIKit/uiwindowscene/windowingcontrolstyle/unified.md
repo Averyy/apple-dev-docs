@@ -1,7 +1,8 @@
 # unified
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Windowing controls will appear as part of the scene’s content
 
@@ -14,6 +15,10 @@ Windowing controls will appear as part of the scene’s content
 
 ```swift
 class var unified: UIWindowScene.WindowingControlStyle { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UISceneWindowingControlStyle * unifiedStyle;
 ```
 
 

@@ -1,7 +1,8 @@
 # readAttributeMaxHeatSetpointLimit(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMaxHeatSetpointLimit(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMaxHeatSetpointLimit() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMaxHeatSetpointLimitWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

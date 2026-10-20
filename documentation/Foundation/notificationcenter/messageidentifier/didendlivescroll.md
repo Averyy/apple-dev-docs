@@ -1,7 +1,8 @@
 # didEndLiveScroll
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didEndLiveScroll: NotificationCenter.BaseMessageIdentifier<NSScrollView.DidEndLiveScrollMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSScrollView.DidEndLiveScrollMessage>`.
 
 
 ---

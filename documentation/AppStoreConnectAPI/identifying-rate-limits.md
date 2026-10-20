@@ -1,6 +1,7 @@
 # Identifying Rate Limits
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Recognize the rate limits that REST API responses provide and handle them in your code.
 
@@ -8,7 +9,7 @@ Recognize the rate limits that REST API responses provide and handle them in you
 
 The App Store Connect API limits the volume of requests that you can submit within a specified timeframe. The limits apply to requests you send using the same API key.
 
-##### Identify Limits Provided in the Http Header
+##### Identify Limits Provided in the HTTP Header
 
 The API presents rate limits to users in an HTTP header. Every response from the API includes an `X-Rate-Limit` HTTP header. Its value has the form:
 
@@ -27,7 +28,7 @@ The time frame is a “rolling hour.” At any moment, the `user-hour-rem` value
 
 ##### Interpret the Error Response
 
-If you exceed a per-hour limit, the API rejects requests with an HTTP 429 response, with the `RATE_LIMIT_EXCEEDED` error code. See [`About the HTTP Status Code`](about-the-http-status-code.md) for more information.
+If you exceed a per-hour limit, the API rejects requests with an HTTP 429 response, with the `RATE_LIMIT_EXCEEDED` error code. See [About the HTTP Status Code](./about-the-http-status-code.md) for more information.
 
 ##### Handle Exceeded Limits Gracefully
 
@@ -38,15 +39,16 @@ Consider rate limits as you integrate the API:
 
 ## See Also
 
-- [Creating API Keys for App Store Connect API](creating-api-keys-for-app-store-connect-api.md)
+### Essentials
+- [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md)
   Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
-- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
+- [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md)
   Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
-- [Revoking API Keys](revoking-api-keys.md)
+- [Revoking API Keys](./revoking-api-keys.md)
   Revoke unused, lost, or compromised private keys.
-- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
+- [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md)
   Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
-- [App Store Connect API Release Notes](app-store-connect-api-release-notes.md)
+- [App Store Connect API Release Notes](./app-store-connect-api-release-notes.md)
   Learn about new features and updates in the App Store Connect API.
 
 

@@ -1,7 +1,8 @@
 # allowsSelfSizing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the input view is responsible for its own size.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether the input view is responsible for its own
 var allowsSelfSizing: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsSelfSizing;
+```
+
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false) (the default), UIKit determines an appropriate size of the input view based on its current layout. When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), UIKit honors the value returned by the [`systemLayoutSizeFitting(_:)`](uiview/systemlayoutsizefitting(_:).md) method of the input view.
+When the value of this property is [`false`](../../Swift/false.md) (the default), UIKit determines an appropriate size of the input view based on its current layout. When the value of this property is [`true`](../../Swift/true.md), UIKit honors the value returned by the [`systemLayoutSizeFitting(_:)`](../uiview/systemlayoutsizefitting%28_%29.md) method of the input view.
 
 
 ---

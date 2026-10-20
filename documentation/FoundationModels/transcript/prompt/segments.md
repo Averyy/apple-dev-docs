@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Ordered prompt segments.
 
@@ -21,15 +22,16 @@ var segments: [Transcript.Segment]
 
 ## See Also
 
-- [var id: String](transcript/prompt/id.md)
+### Inspecting a prompt
+- [var id: String](./id.md)
   The identifier of the prompt.
-- [var responseFormat: Transcript.ResponseFormat?](transcript/prompt/responseformat.md)
+- [var responseFormat: Transcript.ResponseFormat?](./responseformat.md)
   An optional response format that describes the desired output structure.
-- [var options: GenerationOptions](transcript/prompt/options.md)
+- [var options: GenerationOptions](./options.md)
   Generation options associated with the prompt.
-- [var contextOptions: ContextOptions](transcript/prompt/contextoptions.md)
+- [var contextOptions: ContextOptions](./contextoptions.md)
   Configuration of the prompt.
-- [var metadata: [String : GeneratedContent]](transcript/prompt/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata provided as part of this prompt.
 
 

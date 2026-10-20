@@ -1,7 +1,8 @@
 # BGTaskScheduler.Error.Code.unavailable
 
 **Framework**: Background Tasks  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A task scheduling error that indicates the app or extension can’t schedule background work.
 
@@ -18,21 +19,26 @@ A task scheduling error that indicates the app or extension can’t schedule bac
 case unavailable
 ```
 
+```c
+BGTaskSchedulerErrorCodeUnavailable
+```
+
 #### Discussion
 
 This error usually occurs for one of three reasons:
 
 - A person disabled background refresh in settings.
 - The app runs on Simulator which doesn’t support background processing.
-- The extension either didn’t set [`RequestsOpenAccess`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/requestsopenaccess) to `YES` in [`The Info.plist File`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22), or a person didn’t grant open access.
+- The extension either didn’t set [`RequestsOpenAccess`](../../../../BundleResources/information-property-list/nsextension/nsextensionattributes/requestsopenaccess.md) to `YES` in [The Info.plist File](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22), or a person didn’t grant open access.
 
 ## See Also
 
-- [BGTaskScheduler.Error.Code.notPermitted](bgtaskscheduler/error/code/notpermitted.md)
+### Identifying an error
+- [BGTaskScheduler.Error.Code.notPermitted](./notpermitted.md)
   A task scheduling error that indicates the app isn’t permitted to launch the task.
-- [BGTaskScheduler.Error.Code.tooManyPendingTaskRequests](bgtaskscheduler/error/code/toomanypendingtaskrequests.md)
+- [BGTaskScheduler.Error.Code.tooManyPendingTaskRequests](./toomanypendingtaskrequests.md)
   A task scheduling error that indicates there are too many pending tasks of the type requested.
-- [BGTaskScheduler.Error.Code.immediateRunIneligible](bgtaskscheduler/error/code/immediaterunineligible.md)
+- [BGTaskScheduler.Error.Code.immediateRunIneligible](./immediaterunineligible.md)
   A task scheduling error that indicates a task request didn’t run immediately due to system conditions.
 
 

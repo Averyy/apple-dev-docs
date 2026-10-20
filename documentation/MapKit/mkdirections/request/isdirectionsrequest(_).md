@@ -1,7 +1,8 @@
 # isDirectionsRequest(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the specified URL contains a directions request.
 
@@ -10,7 +11,7 @@ Returns a Boolean value that indicates whether the specified URL contains a dire
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the specified URL contains a dire
 class func isDirectionsRequest(_ url: URL) -> Bool
 ```
 
+```objc
++ (BOOL) isDirectionsRequestURL:(NSURL *) url;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the URL contains a directions request that your app needs to display to the user, or [`false`](https://developer.apple.com/documentation/swift/false) if it doesn’t.
+[`true`](../../../Swift/true.md) if the URL contains a directions request that your app needs to display to the user, or [`false`](../../../Swift/false.md) if it doesn’t.
 
 ## Parameters
 
@@ -30,8 +35,10 @@ class func isDirectionsRequest(_ url: URL) -> Bool
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [init(contentsOfURL: URL)](mkdirections/request/init(contentsofurl:).md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating a directions request object
+- [init(contentsOfURL: URL)](./init%28contentsofurl%29.md)
   Creates and returns a directions request object using the specified URL.
 
 

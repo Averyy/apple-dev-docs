@@ -1,7 +1,8 @@
 # acceleration
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The acceleration that the user is giving to the device. 
 
@@ -10,7 +11,7 @@ The acceleration that the user is giving to the device.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Acceleration acceleration;
 ```
 
@@ -24,17 +25,18 @@ The acceleration data are expressed in m/s^2 and use the following `x`, `y`, and
 
 This property is `null` if the device cannot provide the user acceleration—that is, if the device does not have a gyroscope. 
 
-Use the [`accelerationIncludingGravity`](devicemotionevent/1629110-accelerationincludinggravity.md) property to get the total acceleration.
+Use the [`accelerationIncludingGravity`](./api-1629110-accelerationincludinggravity.md) property to get the total acceleration.
 
 > **Note**: If the device does not have a gyroscope, then you may need to implement your own gravity direction detection using a low pass filter.
 
 ## See Also
 
-- [accelerationIncludingGravity](devicemotionevent/1629110-accelerationincludinggravity.md)
+### Getting Motion Event Properties
+- [accelerationIncludingGravity](./api-1629110-accelerationincludinggravity.md)
   The total acceleration of the device, which includes the user acceleration and the gravity.
-- [interval](devicemotionevent/1632148-interval.md)
+- [interval](./api-1632148-interval.md)
   The interval in milliseconds since the last device motion event.
-- [rotationRate](devicemotionevent/1634377-rotationrate.md)
+- [rotationRate](./api-1634377-rotationrate.md)
   The rotation rate of the device.
 
 

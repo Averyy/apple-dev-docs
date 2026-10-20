@@ -1,7 +1,8 @@
 # assetIDs
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Version-aware identifiers for all assets used to generate this response.
 
@@ -21,9 +22,10 @@ var assetIDs: [String]
 
 ## See Also
 
-- [var segments: [Transcript.Segment]](transcript/response/segments.md)
+### Inspecting a response
+- [var segments: [Transcript.Segment]](./segments.md)
   Ordered response segments.
-- [var metadata: [String : GeneratedContent]](transcript/response/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata associated with generating the response.
 
 

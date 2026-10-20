@@ -1,7 +1,8 @@
 # rssiValue()
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The current aggregate received signal strength indication (RSSI) measurement (dBm) for the interface.
 
@@ -14,41 +15,46 @@ The current aggregate received signal strength indication (RSSI) measurement (dB
 func rssiValue() -> Int
 ```
 
+```objc
+- (NSInteger) rssiValue;
+```
+
 #### Discussion
 
 Dynamically queries the interface for the current aggregate RSSI measurement. Returns 0 in the case of an error, or if the interface is not participating in a network.
 
 ## See Also
 
-- [func activePHYMode() -> CWPHYMode](cwinterface/activephymode.md)
+### Instance Methods
+- [func activePHYMode() -> CWPHYMode](./activephymode%28%29.md)
   The current active PHY modes for the interface.
-- [func bssid() -> String?](cwinterface/bssid.md)
+- [func bssid() -> String?](./bssid%28%29.md)
   The current basic service set identifier (BSSID) for the interface, returned as a UTF-8 string.
-- [func cachedScanResults() -> Set<CWNetwork>?](cwinterface/cachedscanresults.md)
+- [func cachedScanResults() -> Set<CWNetwork>?](./cachedscanresults%28%29.md)
   The networks currently in the scan cache for the WLAN interface.
-- [func configuration() -> CWConfiguration?](cwinterface/configuration.md)
+- [func configuration() -> CWConfiguration?](./configuration%28%29.md)
   The current configuration for the given WLAN interface.
-- [func countryCode() -> String?](cwinterface/countrycode.md)
+- [func countryCode() -> String?](./countrycode%28%29.md)
   The current country code (ISO/IEC 3166-1:1997) for the interface.
-- [func hardwareAddress() -> String?](cwinterface/hardwareaddress.md)
+- [func hardwareAddress() -> String?](./hardwareaddress%28%29.md)
   The hardware media access control (MAC) address for the interface, returned as a UTF-8 string.
-- [func interfaceMode() -> CWInterfaceMode](cwinterface/interfacemode.md)
+- [func interfaceMode() -> CWInterfaceMode](./interfacemode%28%29.md)
   The current mode for the interface.
-- [func noiseMeasurement() -> Int](cwinterface/noisemeasurement.md)
+- [func noiseMeasurement() -> Int](./noisemeasurement%28%29.md)
   The current aggregate noise measurement (dBm) for the interface.
-- [func powerOn() -> Bool](cwinterface/poweron.md)
+- [func powerOn() -> Bool](./poweron%28%29.md)
   The interface power state is set to “ON”.
-- [func scanForNetworks(withName: String?, includeHidden: Bool) throws -> Set<CWNetwork>](cwinterface/scanfornetworks(withname:includehidden:).md)
+- [func scanForNetworks(withName: String?, includeHidden: Bool) throws -> Set<CWNetwork>](./scanfornetworks%28withname,includehidden%29.md)
   Scans for networks with the name you specify, optionally including hidden networks.
-- [func scanForNetworks(withSSID: Data?, includeHidden: Bool) throws -> Set<CWNetwork>](cwinterface/scanfornetworks(withssid:includehidden:).md)
+- [func scanForNetworks(withSSID: Data?, includeHidden: Bool) throws -> Set<CWNetwork>](./scanfornetworks%28withssid,includehidden%29.md)
   Scans for networks with the SSID you specify, optionally including hidden networks.
-- [func security() -> CWSecurity](cwinterface/security.md)
+- [func security() -> CWSecurity](./security%28%29.md)
   The current security mode for the interface.
-- [func serviceActive() -> Bool](cwinterface/serviceactive.md)
+- [func serviceActive() -> Bool](./serviceactive%28%29.md)
   The interface has its corresponding network service enabled.
-- [func ssid() -> String?](cwinterface/ssid.md)
+- [func ssid() -> String?](./ssid%28%29.md)
   The current service set identifier (SSID) for the interface, encoded as a string.
-- [func ssidData() -> Data?](cwinterface/ssiddata.md)
+- [func ssidData() -> Data?](./ssiddata%28%29.md)
   The current service set identifier (SSID) for the interface, returned as data.
 
 

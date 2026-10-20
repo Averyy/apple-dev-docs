@@ -1,7 +1,8 @@
 # mipmapLevelCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of mipmap levels for the texture.
 

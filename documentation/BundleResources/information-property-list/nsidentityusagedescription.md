@@ -1,7 +1,8 @@
 # NSIdentityUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting identity information.
 
@@ -10,21 +11,23 @@ A message that tells people why the app is requesting identity information.
 - iPadOS 16.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSIdentityUsageDescription` (Privacy - Identity Usage Description)
+- **Type**: string
 
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access identity information from Wallet.
 
-For more information about requesting identity information, see [`Requesting identity data from a Wallet pass`](https://developer.apple.com/documentation/passkit/requesting-identity-data-from-a-wallet-pass). For design guidance, see [`Human Interface Guidelines > Technologies > Wallet`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/technologies/wallet#identity-verification).
+For more information about requesting identity information, see [Requesting identity data from a Wallet pass](../../PassKit/requesting-identity-data-from-a-wallet-pass.md). For design guidance, see [Human Interface Guidelines > Technologies > Wallet](https://developer.apple.com/design/human-interface-guidelines/technologies/wallet#identity-verification).
 
 ## See Also
 
-- [NSFinancialDataUsageDescription](information-property-list/nsfinancialdatausagedescription.md)
+### Wallet
+- [NSFinancialDataUsageDescription](./nsfinancialdatausagedescription.md)
   A message that tells people why the app is requesting access to financial data stored in Wallet.
-- [NSIdentityUsageDescriptionDictionary](information-property-list/nsidentityusagedescriptiondictionary.md)
+- [NSIdentityUsageDescriptionDictionary](./nsidentityusagedescriptiondictionary.md)
   A dictionary that contains messages that explain why your app is requesting identity information.
 
 

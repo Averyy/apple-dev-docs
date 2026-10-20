@@ -1,7 +1,8 @@
 # write(_:to:overwrite:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the encoded transformer to a file.
 
@@ -28,7 +29,8 @@ func write(_ transformer: Self.Transformer, to url: URL, overwrite: Bool = true)
 
 ## See Also
 
-- [func read(from: URL) throws -> Self.Transformer](estimator/read(from:).md)
+### Reading and writing
+- [func read(from: URL) throws -> Self.Transformer](./read%28from%29.md)
   Reads the encoded transformer from a file.
 
 

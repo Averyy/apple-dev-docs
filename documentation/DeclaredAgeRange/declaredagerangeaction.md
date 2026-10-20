@@ -1,7 +1,8 @@
 # DeclaredAgeRangeAction
 
 **Framework**: Declared Age Range  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that requests a person’s age range.
 
@@ -24,12 +25,13 @@ Use `DeclaredAgeRangeAction` in SwiftUI views to request age ranges without manu
 ## Topics
 
 ### Requesting the age range
-- [func callAsFunction(ageGates: Int, Int?, Int?) async throws -> AgeRangeService.Response](declaredagerangeaction/callasfunction(agegates:_:_:).md)
+- [func callAsFunction(ageGates: Int, Int?, Int?) async throws -> AgeRangeService.Response](./declaredagerangeaction/callasfunction%28agegates,_,_%29.md)
   Returns a response indicating whether the person shared their age range.
 
 ## See Also
 
-- [struct AgeRangeService](agerangeservice.md)
+### Age range requests
+- [struct AgeRangeService](./agerangeservice.md)
   A request for the age range of a person logged onto the current device.
 
 

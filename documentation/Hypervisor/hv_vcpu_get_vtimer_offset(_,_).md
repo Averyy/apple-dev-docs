@@ -1,7 +1,8 @@
 # hv_vcpu_get_vtimer_offset(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the vTimer offset for the vCPU ID you specify.
 
@@ -14,9 +15,13 @@ Returns the vTimer offset for the vCPU ID you specify.
 func hv_vcpu_get_vtimer_offset(_ vcpu: hv_vcpu_t, _ vtimer_offset: UnsafeMutablePointer<UInt64>) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vcpu_get_vtimer_offset(hv_vcpu_t vcpu, uint64_t *vtimer_offset);
+```
+
 #### Return Value
 
-`0` on success, or an error code of the type [`hv_return_t`](hv_return_t.md).
+`0` on success, or an error code of the type [`hv_return_t`](./hv_return_t.md).
 
 #### Discussion
 
@@ -29,11 +34,12 @@ This corresponds to the value of the `CNTVOFF_EL2` register.
 
 ## See Also
 
-- [func hv_vcpu_get_vtimer_mask(hv_vcpu_t, UnsafeMutablePointer<Bool>) -> hv_return_t](hv_vcpu_get_vtimer_mask(_:_:).md)
+### Timer functions
+- [func hv_vcpu_get_vtimer_mask(hv_vcpu_t, UnsafeMutablePointer<Bool>) -> hv_return_t](./hv_vcpu_get_vtimer_mask%28_,_%29.md)
   Gets the virtual timer mask.
-- [func hv_vcpu_set_vtimer_mask(hv_vcpu_t, Bool) -> hv_return_t](hv_vcpu_set_vtimer_mask(_:_:).md)
+- [func hv_vcpu_set_vtimer_mask(hv_vcpu_t, Bool) -> hv_return_t](./hv_vcpu_set_vtimer_mask%28_,_%29.md)
   Sets or clears the virtual timer mask.
-- [func hv_vcpu_set_vtimer_offset(hv_vcpu_t, UInt64) -> hv_return_t](hv_vcpu_set_vtimer_offset(_:_:).md)
+- [func hv_vcpu_set_vtimer_offset(hv_vcpu_t, UInt64) -> hv_return_t](./hv_vcpu_set_vtimer_offset%28_,_%29.md)
   Sets the vTimer offset to a value that you provide.
 
 

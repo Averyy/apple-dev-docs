@@ -1,7 +1,8 @@
 # multipleRoutesDetected
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the object detects more than one playback route.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether the object detects more than one playback
 var multipleRoutesDetected: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL multipleRoutesDetected;
+```
+
 #### Discussion
 
-The system posts a [`AVRouteDetectorMultipleRoutesDetectedDidChangeNotification`](avroutedetectormultipleroutesdetecteddidchangenotification.md) notification when this property value changes.
+The system posts a [`AVRouteDetectorMultipleRoutesDetectedDidChangeNotification`](../avroutedetectormultipleroutesdetecteddidchangenotification.md) notification when this property value changes.
 
 ## See Also
 
-- [var isRouteDetectionEnabled: Bool](avroutedetector/isroutedetectionenabled.md)
+### Detecting routes
+- [var isRouteDetectionEnabled: Bool](./isroutedetectionenabled.md)
   A Boolean value that indicates whether route detection is in an enabled state.
-- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/avroutedetectormultipleroutesdetecteddidchange.md)
+- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/avroutedetectormultipleroutesdetecteddidchange.md)
   A notification the system posts when changes occur to its detected routes.
 
 

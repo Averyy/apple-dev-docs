@@ -1,7 +1,8 @@
 # init(firstValue:secondValue:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pair of numbers with the given values.
 
@@ -17,6 +18,10 @@ Creates a pair of numbers with the given values.
 
 ```swift
 init(firstValue first: Double, secondValue second: Double)
+```
+
+```objc
+- (instancetype) initWithFirstValue:(double) first secondValue:(double) second;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(trainingData:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image classifier with a training dataset represented by a data source.
 
@@ -25,9 +26,15 @@ init(trainingData: MLImageClassifier.DataSource, parameters: MLImageClassifier.M
         )) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: [String : [URL]], parameters: MLImageClassifier.ModelParameters = ModelParameters(validationData: nil)) throws
+```
+
 #### Discussion
 
-When you create an [`MLImageClassifier`](mlimageclassifier.md) instance, initialize it with an [`MLImageClassifier.ModelParameters`](mlimageclassifier/modelparameters-swift.struct.md) structure. This allows you to configure the image classifier training process. For example, you can explicitly define the validation dataset instead of allowing the model to choose a random selection of your training data. Alternatively, as shown in the following example, set `validationData` to `nil` to allow the classifier to choose the validation data for you from among your training data. This lets you set other parameters—like maximum iterations and augmentation options—to values other than the default.
+When you create an [`MLImageClassifier`](../mlimageclassifier.md) instance, initialize it with an [`MLImageClassifier.ModelParameters`](./modelparameters-swift.struct.md) structure. This allows you to configure the image classifier training process. For example, you can explicitly define the validation dataset instead of allowing the model to choose a random selection of your training data. Alternatively, as shown in the following example, set `validationData` to `nil` to allow the classifier to choose the validation data for you from among your training data. This lets you set other parameters—like maximum iterations and augmentation options—to values other than the default.
 
 ```swift
 let parameters = MLImageClassifier.ModelParameters(
@@ -52,12 +59,12 @@ if let downloads = FileManager.default.urls(for: .downloadsDirectory, in: .userD
 
 Training begins immediately.
 
-> **Note**: If you represent your training data with a dictionary of strings and corresponding URL arrays, use [`init(trainingData:parameters:)`](mlimageclassifier/init(trainingdata:parameters:)-7j4w6.md) instead.
+> **Note**: If you represent your training data with a dictionary of strings and corresponding URL arrays, use [`init(trainingData:parameters:)`](./init%28trainingdata,parameters%29-7j4w6.md) instead.
 
 ## Parameters
 
 - `trainingData`: A set of labeled images the task uses to train the image classifier model, contained in a data source.
-- `parameters`: An [`MLImageClassifier.ModelParameters`](mlimageclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `parameters`: An [`MLImageClassifier.ModelParameters`](./modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

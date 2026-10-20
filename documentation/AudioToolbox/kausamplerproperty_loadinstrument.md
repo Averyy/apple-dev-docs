@@ -1,15 +1,16 @@
 # kAUSamplerProperty_LoadInstrument
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kAUSamplerProperty_LoadInstrument: AudioUnitPropertyID { get }
 ```
 
+```c
+kAUSamplerProperty_LoadInstrument
+```
+
 ## See Also
 
-- [var kAUSamplerProperty_LoadAudioFiles: AudioUnitPropertyID](kausamplerproperty_loadaudiofiles.md)
+### Constants
+- [var kAUSamplerProperty_LoadAudioFiles: AudioUnitPropertyID](./kausamplerproperty_loadaudiofiles.md)
 
 
 ---

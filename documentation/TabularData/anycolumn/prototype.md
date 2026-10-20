@@ -1,7 +1,8 @@
 # prototype
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prototype that creates type-erased columns with the same underlying type as the column slice.
 
@@ -22,7 +23,7 @@ var prototype: any AnyColumnPrototype { get }
 
 #### Discussion
 
-Use a type-erased column prototype to create new columns of the same type as the slice’s parent column without explicitly knowing what type it is, by calling the `prototype` property’s [`makeColumn(capacity:)`](anycolumnprototype/makecolumn(capacity:).md) method.
+Use a type-erased column prototype to create new columns of the same type as the slice’s parent column without explicitly knowing what type it is, by calling the `prototype` property’s [`makeColumn(capacity:)`](../anycolumnprototype/makecolumn%28capacity%29.md) method.
 
 ```swift
 // Get a type-erased column.

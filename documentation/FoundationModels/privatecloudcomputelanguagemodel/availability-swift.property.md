@@ -1,7 +1,8 @@
 # availability
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The availability of the language model.
 
@@ -21,13 +22,14 @@ final var availability: PrivateCloudComputeLanguageModel.Availability { get }
 
 ## Mentions
 
-- [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Adding server-side intelligence with Private Cloud Compute](../adding-server-side-intelligence-with-private-cloud-compute.md)
 
 ## See Also
 
-- [var isAvailable: Bool](privatecloudcomputelanguagemodel/isavailable.md)
+### Inspecting the availability
+- [var isAvailable: Bool](./isavailable.md)
   A Boolean value that indicates whether the system is entirely ready.
-- [PrivateCloudComputeLanguageModel.Availability](privatecloudcomputelanguagemodel/availability-swift.enum.md)
+- [PrivateCloudComputeLanguageModel.Availability](./availability-swift.enum.md)
   The availability status for a specific PCC language model.
 
 

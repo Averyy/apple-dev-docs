@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.ID
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque identifier for a given network.
 
@@ -19,16 +20,17 @@ struct ID
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var id: WINetworkSharingProvider.Network.ID](winetworksharingprovider/network/id-swift.property.md)
+### Identifying a network
+- [var id: WINetworkSharingProvider.Network.ID](./id-swift.property.md)
   A stable identifier that uniquely identifies this network.
 
 

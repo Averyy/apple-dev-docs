@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a given object is present in the array.
 
@@ -20,15 +21,19 @@ Returns a Boolean value that indicates whether a given object is present in the 
 func contains(_ anObject: Any) -> Bool
 ```
 
+```objc
+- (BOOL) containsObject:(ObjectType) anObject;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `anObject` is present in the array, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `anObject` is present in the array, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Starting at index `0`, each element of the array is checked for equality with `anObject` until a match is found or the end of the array is reached.  Objects are considered equal if [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) returns [`true`](https://developer.apple.com/documentation/swift/true).
+Starting at index `0`, each element of the array is checked for equality with `anObject` until a match is found or the end of the array is reached.  Objects are considered equal if [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) returns [`true`](../../Swift/true.md).
 
-To determine if the array contains a particular instance of an object, you can test for identity rather than equality by calling the [`indexOfObjectIdentical(to:)`](nsarray/indexofobjectidentical(to:).md) method and comparing the return value to [`NSNotFound`](nsnotfound-9t5v2.md).
+To determine if the array contains a particular instance of an object, you can test for identity rather than equality by calling the [`indexOfObjectIdentical(to:)`](./indexofobjectidentical%28to%29.md) method and comparing the return value to [`NSNotFound`](../nsnotfound-9t5v2.md).
 
 ## Parameters
 
@@ -36,25 +41,27 @@ To determine if the array contains a particular instance of an object, you can t
 
 ## See Also
 
-- [func indexOfObjectIdentical(to: Any) -> Int](nsarray/indexofobjectidentical(to:).md)
+### Related Documentation
+- [func indexOfObjectIdentical(to: Any) -> Int](./indexofobjectidentical%28to%29.md)
   Returns the lowest index whose corresponding array value is identical to a given object.
-- [func index(of: Any) -> Int](nsarray/index(of:).md)
+- [func index(of: Any) -> Int](./index%28of%29.md)
   Returns the lowest index whose corresponding array value is equal to a given object.
-- [var count: Int](nsarray/count.md)
+### Querying an Array
+- [var count: Int](./count.md)
   The number of objects in the array.
-- [var firstObject: Any?](nsarray/firstobject.md)
+- [var firstObject: Any?](./firstobject.md)
   The first object in the array.
-- [var lastObject: Any?](nsarray/lastobject.md)
+- [var lastObject: Any?](./lastobject.md)
   The last object in the array.
-- [func object(at: Int) -> Any](nsarray/object(at:).md)
+- [func object(at: Int) -> Any](./object%28at%29.md)
   Returns the object located at the specified index.
-- [subscript(Int) -> Any](nsarray/subscript(_:).md)
+- [subscript(Int) -> Any](./subscript%28_%29.md)
   Returns the object at the specified index.
-- [func objects(at: IndexSet) -> [Any]](nsarray/objects(at:).md)
+- [func objects(at: IndexSet) -> [Any]](./objects%28at%29.md)
   Returns an array containing the objects in the array at the indexes specified by a given index set.
-- [func objectEnumerator() -> NSEnumerator](nsarray/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the array.
-- [func reverseObjectEnumerator() -> NSEnumerator](nsarray/reverseobjectenumerator.md)
+- [func reverseObjectEnumerator() -> NSEnumerator](./reverseobjectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the array, in reverse order.
 
 

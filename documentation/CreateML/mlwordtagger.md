@@ -1,7 +1,8 @@
 # MLWordTagger
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A word-tagging model you train to classify natural language text at the word level.
 
@@ -16,91 +17,92 @@ struct MLWordTagger
 
 ## Mentions
 
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](./creating-a-word-tagger-model.md)
 
 #### Overview
 
-Use an [`MLWordTagger`](mlwordtagger.md) to create a custom word tagger to identify content that’s relevant for your app, like product names and points of interest.
+Use an [`MLWordTagger`](./mlwordtagger.md) to create a custom word tagger to identify content that’s relevant for your app, like product names and points of interest.
 
-To use your custom word tagger in the [`Natural Language`](https://developer.apple.com/documentation/naturallanguage) framework, save it to a model file and import it into an [`NLModel`](https://developer.apple.com/documentation/naturallanguage/nlmodel). Then add your custom [`NLModel`](https://developer.apple.com/documentation/naturallanguage/nlmodel) to an [`NLTagger`](https://developer.apple.com/documentation/naturallanguage/nltagger) with its [`setModels(_:forTagScheme:)`](https://developer.apple.com/documentation/naturallanguage/nltagger/setmodels(_:fortagscheme:)) method.
+To use your custom word tagger in the [Natural Language](../NaturalLanguage/NaturalLanguage.md) framework, save it to a model file and import it into an [`NLModel`](../NaturalLanguage/nlmodel.md). Then add your custom [`NLModel`](../NaturalLanguage/nlmodel.md) to an [`NLTagger`](../NaturalLanguage/nltagger.md) with its [`setModels(_:forTagScheme:)`](../NaturalLanguage/nltagger/setmodels%28_,fortagscheme%29.md) method.
 
 ## Topics
 
 ### Creating and training a word tagger
-- [init(trainingData: [(tokens: [MLWordTagger.Token], labels: [String])], parameters: MLWordTagger.ModelParameters) throws](mlwordtagger/init(trainingdata:parameters:).md)
+- [init(trainingData: [(tokens: [MLWordTagger.Token], labels: [String])], parameters: MLWordTagger.ModelParameters) throws](./mlwordtagger/init%28trainingdata,parameters%29.md)
   Creates a word tagger.
-- [init(trainingData:tokenColumn:labelColumn:parameters:)](mlwordtagger/init(trainingdata:tokencolumn:labelcolumn:parameters:).md)
+- [init(trainingData:tokenColumn:labelColumn:parameters:)](./mlwordtagger/init%28trainingdata,tokencolumn,labelcolumn,parameters%29.md)
   Creates a word tagger.
-- [MLWordTagger.Token](mlwordtagger/token.md)
+- [MLWordTagger.Token](./mlwordtagger/token.md)
   The token type of a word tagger, which is a string.
-- [MLWordTagger.ModelParameters](mlwordtagger/modelparameters-swift.struct.md)
+- [MLWordTagger.ModelParameters](./mlwordtagger/modelparameters-swift.struct.md)
   Parameters that specify model training parameters and validation data.
-- [let modelParameters: MLWordTagger.ModelParameters](mlwordtagger/modelparameters-swift.property.md)
+- [let modelParameters: MLWordTagger.ModelParameters](./mlwordtagger/modelparameters-swift.property.md)
   The configuration parameters that the word tagger used for training during initialization.
 ### Evaluating a word tagger
-- [func evaluation(on:tokenColumn:labelColumn:)](mlwordtagger/evaluation(on:tokencolumn:labelcolumn:).md)
+- [func evaluation(on:tokenColumn:labelColumn:)](./mlwordtagger/evaluation%28on,tokencolumn,labelcolumn%29.md)
   Computes evaluation metrics.
-- [func evaluation(on: [(tokens: [MLWordTagger.Token], labels: [String])]) -> MLWordTaggerMetrics](mlwordtagger/evaluation(on:).md)
+- [func evaluation(on: [(tokens: [MLWordTagger.Token], labels: [String])]) -> MLWordTaggerMetrics](./mlwordtagger/evaluation%28on%29.md)
   Computes evaluation metrics.
-- [let trainingMetrics: MLWordTaggerMetrics](mlwordtagger/trainingmetrics.md)
+- [let trainingMetrics: MLWordTaggerMetrics](./mlwordtagger/trainingmetrics.md)
   Measurements of the tagger’s performance on the training data set.
-- [let validationMetrics: MLWordTaggerMetrics](mlwordtagger/validationmetrics.md)
+- [let validationMetrics: MLWordTaggerMetrics](./mlwordtagger/validationmetrics.md)
   Measurements of the tagger’s performance on the validation data set.
-- [struct MLWordTaggerMetrics](mlwordtaggermetrics.md)
+- [struct MLWordTaggerMetrics](./mlwordtaggermetrics.md)
   Metrics you use to evaluate a word tagger’s performance.
 ### Testing a word tagger
-- [func prediction(from:)](mlwordtagger/prediction(from:).md)
+- [func prediction(from:)](./mlwordtagger/prediction%28from%29.md)
   Predicts a tag for the input string.
-- [func predictions(from:)](mlwordtagger/predictions(from:).md)
+- [func predictions(from:)](./mlwordtagger/predictions%28from%29.md)
   Predicts sequences of labels, token locations, and token lengths from the input strings.
-- [func predictionWithConfidence(from:)](mlwordtagger/predictionwithconfidence(from:).md)
+- [func predictionWithConfidence(from:)](./mlwordtagger/predictionwithconfidence%28from%29.md)
   Predicts tags and confidence scores for the input string. Predicts tags and confidence scores for the input string.
 ### Saving a word tagger
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlwordtagger/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mlwordtagger/write%28to,metadata%29.md)
   Exports the word tagger as a Core ML model file at the specified URL.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlwordtagger/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mlwordtagger/write%28tofile,metadata%29.md)
   Exports the word tagger as a Core ML model file at the specified file path.
 ### Describing a word tagger
-- [var model: MLModel](mlwordtagger/model.md)
+- [var model: MLModel](./mlwordtagger/model.md)
   The underlying Core ML model of the word tagger.
-- [var description: String](mlwordtagger/description.md)
+- [var description: String](./mlwordtagger/description.md)
   A text representation of the word tagger.
-- [var debugDescription: String](mlwordtagger/debugdescription.md)
+- [var debugDescription: String](./mlwordtagger/debugdescription.md)
   A text representation of the word tagger that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlwordtagger/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlwordtagger/playgrounddescription.md)
   A description of the word tagger in a playground.
 ### Supporting types
-- [MLWordTagger.FeatureExtractorType](mlwordtagger/featureextractortype.md)
+- [MLWordTagger.FeatureExtractorType](./mlwordtagger/featureextractortype.md)
   The feature extractors that are available to train a word tagger using with the transfer-learning algorithm option.
-- [MLWordTagger.ModelAlgorithmType](mlwordtagger/modelalgorithmtype.md)
+- [MLWordTagger.ModelAlgorithmType](./mlwordtagger/modelalgorithmtype.md)
   The algorithm type.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlwordtagger/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlwordtagger/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlwordtagger/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlwordtagger/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlwordtagger/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlwordtagger/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+### Text models
+- [Creating a text classifier model](./creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](./creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
-- [struct MLTextClassifier](mltextclassifier.md)
+- [struct MLTextClassifier](./mltextclassifier.md)
   A model you train to classify natural language text.
-- [struct MLGazetteer](mlgazetteer.md)
+- [struct MLGazetteer](./mlgazetteer.md)
   A collection of terms and their labels, which augments a tagger that analyzes natural language text.
-- [struct MLWordEmbedding](mlwordembedding.md)
+- [struct MLWordEmbedding](./mlwordembedding.md)
   A map of strings in a vector space that enable your app to find similar strings by looking at a string’s neighbors.
 
 

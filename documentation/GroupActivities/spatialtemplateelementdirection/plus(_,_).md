@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Group Activities  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Adds the y-axis rotations for the specified values together and returns a new structure with the result.
 

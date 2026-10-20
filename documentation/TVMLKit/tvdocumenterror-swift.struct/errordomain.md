@@ -1,10 +1,13 @@
 # errorDomain
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- tvOS 13.0+
+- tvOS 13.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 

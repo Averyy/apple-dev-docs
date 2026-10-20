@@ -1,7 +1,8 @@
 # GCRacingWheel.DidConnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a racing wheel accessory connects to the device.
 
@@ -19,7 +20,7 @@ struct DidConnectMessage
 
 Use the `.didConnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCRacingWheel.self, for: .didConnect) { message in
    let racingWheel = message.racingWheel
 }
@@ -30,16 +31,16 @@ Connections of controller accessories will be reflected in the `controllers` arr
 ## Topics
 
 ### Initializers
-- [init(racingWheel: GCRacingWheel)](gcracingwheel/didconnectmessage/init(racingwheel:).md)
+- [init(racingWheel: GCRacingWheel)](./didconnectmessage/init%28racingwheel%29.md)
 ### Instance Properties
-- [var racingWheel: GCRacingWheel](gcracingwheel/didconnectmessage/racingwheel.md)
+- [var racingWheel: GCRacingWheel](./didconnectmessage/racingwheel.md)
   The racing wheel object that connected to the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

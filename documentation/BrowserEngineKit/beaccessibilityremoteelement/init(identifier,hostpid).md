@@ -1,7 +1,8 @@
 # init(identifier:hostPid:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and registers a remote element.
 
@@ -14,6 +15,10 @@ Initializes and registers a remote element.
 
 ```swift
 init(identifier: String, hostPid: pid_t)
+```
+
+```objc
+- (id) initWithIdentifier:(NSString *) identifier hostPid:(pid_t) hostPid;
 ```
 
 #### Discussion

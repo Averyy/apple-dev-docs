@@ -1,7 +1,8 @@
 # base
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier for the part that contains the base PDF upon which this document is built.
 
@@ -9,7 +10,7 @@ The identifier for the part that contains the base PDF upon which this document 
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,14 @@ static let base: MergeablePartsContainerPartID
 
 ## See Also
 
-- [static let all: [MergeablePartsContainerPartID]](assignabledocument/partids-swift.enum/all.md)
+### Layer types
+- [static let all: [MergeablePartsContainerPartID]](./all.md)
   All part IDs containable by this document.
-- [static let authors: MergeablePartsContainerPartID](assignabledocument/partids-swift.enum/authors.md)
+- [static let authors: MergeablePartsContainerPartID](./authors.md)
   The identifier for the part that stores authorship information.
-- [static let instructionMarkup: MergeablePartsContainerPartID](assignabledocument/partids-swift.enum/instructionmarkup.md)
+- [static let instructionMarkup: MergeablePartsContainerPartID](./instructionmarkup.md)
   The identifier for the part that stores markup intended to provide additional instructions to takers of the assignable.
-- [static let questionBoxes: MergeablePartsContainerPartID](assignabledocument/partids-swift.enum/questionboxes.md)
+- [static let questionBoxes: MergeablePartsContainerPartID](./questionboxes.md)
   The identifier for the part that stores question definitions.
 
 

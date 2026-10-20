@@ -1,7 +1,8 @@
 # BackgroundAssetUploadFileCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetUploadFileCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetUploadFileCreateRequest.Data.Relationships.BackgroundAssetVersion](backgroundassetuploadfilecreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
+- [object BackgroundAssetUploadFileCreateRequest.Data.Relationships.BackgroundAssetVersion](./relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
   The data that describes the  file related to a prefix.
 
 ## Properties

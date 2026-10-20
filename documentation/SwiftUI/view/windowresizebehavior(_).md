@@ -1,7 +1,8 @@
 # windowResizeBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the resize functionality for the window enclosing `self`.
 
@@ -17,7 +18,7 @@ func windowResizeBehavior(_ behavior: WindowInteractionBehavior) -> some View
 
 #### Discussion
 
-By default, the window resizability functionality is determined by the scene, as well as any modifiers applied to it. Additionally, when using the [`windowResizability(_:)`](scene/windowresizability(_:).md) modifier, the minimum and maximum size of the window’s contents will also determine the resizability behavior.
+By default, the window resizability functionality is determined by the scene, as well as any modifiers applied to it. Additionally, when using the [`windowResizability(_:)`](../scene/windowresizability%28_%29.md) modifier, the minimum and maximum size of the window’s contents will also determine the resizability behavior.
 
 You can use this modifier to override the default behavior.
 
@@ -43,23 +44,24 @@ struct MyApp: App {
 
 ## See Also
 
-- [struct WindowManagerRole](windowmanagerrole.md)
+### Managing window behavior
+- [struct WindowManagerRole](../windowmanagerrole.md)
   Options for defining how a scene’s windows behave when used within a managed window context, such as full screen mode and Stage Manager.
-- [func windowManagerRole(WindowManagerRole) -> some Scene](scene/windowmanagerrole(_:).md)
+- [func windowManagerRole(WindowManagerRole) -> some Scene](../scene/windowmanagerrole%28_%29.md)
   Configures the role for windows derived from `self` when participating in a managed window context, such as full screen or Stage Manager.
-- [struct WindowInteractionBehavior](windowinteractionbehavior.md)
+- [struct WindowInteractionBehavior](../windowinteractionbehavior.md)
   Options for enabling and disabling window interaction behaviors.
-- [func windowDismissBehavior(WindowInteractionBehavior) -> some View](view/windowdismissbehavior(_:).md)
+- [func windowDismissBehavior(WindowInteractionBehavior) -> some View](./windowdismissbehavior%28_%29.md)
   Configures the dismiss functionality for the window enclosing `self`.
-- [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](view/windowfullscreenbehavior(_:).md)
+- [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](./windowfullscreenbehavior%28_%29.md)
   Configures the full screen functionality for the window enclosing `self`.
-- [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](view/windowminimizebehavior(_:).md)
+- [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](./windowminimizebehavior%28_%29.md)
   Configures the minimize functionality for the window enclosing `self`.
-- [func windowBackgroundDragBehavior(WindowInteractionBehavior) -> some Scene](scene/windowbackgrounddragbehavior(_:).md)
+- [func windowBackgroundDragBehavior(WindowInteractionBehavior) -> some Scene](../scene/windowbackgrounddragbehavior%28_%29.md)
   Configures the behavior of dragging a window by its background.
-- [func allowsWindowActivationEvents() -> some View](view/allowswindowactivationevents.md)
+- [func allowsWindowActivationEvents() -> some View](./allowswindowactivationevents%28%29.md)
   Configures gestures in this view hierarchy to handle events that activate the containing window.
-- [func allowsWindowActivationEvents(Bool?) -> some View](view/allowswindowactivationevents(_:).md)
+- [func allowsWindowActivationEvents(Bool?) -> some View](./allowswindowactivationevents%28_%29.md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 
 

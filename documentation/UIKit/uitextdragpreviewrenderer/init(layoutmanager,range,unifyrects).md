@@ -1,7 +1,8 @@
 # init(layoutManager:range:unifyRects:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized renderer of a text drag preview with the specified layout manager, range, and rectangle detection behavior.
 
@@ -17,6 +18,10 @@ Returns an initialized renderer of a text drag preview with the specified layout
 init(layoutManager: NSLayoutManager, range: NSRange, unifyRects: Bool)
 ```
 
+```objc
+- (instancetype) initWithLayoutManager:(NSLayoutManager *) layoutManager range:(NSRange) range unifyRects:(BOOL) unifyRects;
+```
+
 #### Return Value
 
 A renderer of a text drag preview using the specified layout manager, range, and detection behavior.
@@ -25,11 +30,12 @@ A renderer of a text drag preview using the specified layout manager, range, and
 
 - `layoutManager`: The layout manager that renders the preview.
 - `range`: The range to render the preview.
-- `unifyRects`: A Boolean value that indicates whether the vertical position and height of the detection rectangles adjust to touch each other. If `true`, the [`firstLineRect`](uitextdragpreviewrenderer/firstlinerect.md), [`bodyRect`](uitextdragpreviewrenderer/bodyrect.md), and [`lastLineRect`](uitextdragpreviewrenderer/lastlinerect.md) properties adjust; otherwise, they don’t. The default value is `true`.
+- `unifyRects`: A Boolean value that indicates whether the vertical position and height of the detection rectangles adjust to touch each other. If `true`, the [`firstLineRect`](./firstlinerect.md), [`bodyRect`](./bodyrect.md), and [`lastLineRect`](./lastlinerect.md) properties adjust; otherwise, they don’t. The default value is `true`.
 
 ## See Also
 
-- [convenience init(layoutManager: NSLayoutManager, range: NSRange)](uitextdragpreviewrenderer/init(layoutmanager:range:).md)
+### Initializing a text drag preview renderer
+- [convenience init(layoutManager: NSLayoutManager, range: NSRange)](./init%28layoutmanager,range%29.md)
   Initializes and returns a text drag preview renderer with the specified layout managers and range to render the text drag preview.
 
 

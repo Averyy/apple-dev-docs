@@ -1,7 +1,8 @@
 # estimatesSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 When enumerating, tell the layout fragments to estimate their size.
 
@@ -14,13 +15,18 @@ When enumerating, tell the layout fragments to estimate their size.
 static var estimatesSize: NSTextLayoutFragment.EnumerationOptions { get }
 ```
 
+```c
+NSTextLayoutFragmentEnumerationOptionsEstimatesSize
+```
+
 ## See Also
 
-- [static var ensuresExtraLineFragment: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/ensuresextralinefragment.md)
+### Layout fragment characteristics
+- [static var ensuresExtraLineFragment: NSTextLayoutFragment.EnumerationOptions](./ensuresextralinefragment.md)
   Synthesize the extra line fragment when necessary.
-- [static var ensuresLayout: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/ensureslayout.md)
+- [static var ensuresLayout: NSTextLayoutFragment.EnumerationOptions](./ensureslayout.md)
   When enumerating, tell the layout fragments to layout their contents.
-- [static var reverse: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/reverse.md)
+- [static var reverse: NSTextLayoutFragment.EnumerationOptions](./reverse.md)
   Causes the enumeration to start from the last element.
 
 

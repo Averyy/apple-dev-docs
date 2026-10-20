@@ -1,7 +1,8 @@
 # isTriviallyIdentical(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether two instances refer to the same memory region.
 
@@ -28,7 +29,7 @@ Whether `self` and `other` reference the same region in memory.
 
 Two spans are identical if they reference the same starting address and have the same number of elements.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

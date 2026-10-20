@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Subscript interface for the feature provider to pass through to the dictionary.
 
@@ -20,9 +21,14 @@ Subscript interface for the feature provider to pass through to the dictionary.
 subscript(featureName: String) -> MLFeatureValue? { get }
 ```
 
+```objc
+- (MLFeatureValue *) objectForKeyedSubscript:(NSString *) featureName;
+```
+
 ## See Also
 
-- [var dictionary: [String : MLFeatureValue]](mldictionaryfeatureprovider/dictionary.md)
+### Accessing the features
+- [var dictionary: [String : MLFeatureValue]](./dictionary.md)
   The backing dictionary.
 
 

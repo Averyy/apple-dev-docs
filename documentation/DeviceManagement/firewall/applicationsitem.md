@@ -1,7 +1,8 @@
 # Firewall.ApplicationsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary of details for apps.
 
@@ -10,7 +11,7 @@ A dictionary of details for apps.
 
 ## Declaration
 
-```swift
+```
 object Firewall.ApplicationsItem
 ```
 

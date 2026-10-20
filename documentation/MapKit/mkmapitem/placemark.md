@@ -1,18 +1,21 @@
 # placemark
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The placemark object containing the location information.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS 9.2+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 6.0+ - Deprecated in 26.0
+- iPadOS 6.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.9+ - Deprecated in 26.0
+- tvOS 9.2+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 2.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use location, address and addressRepresentations instead
 
 ## Declaration
 
@@ -20,29 +23,34 @@ The placemark object containing the location information.
 var placemark: MKPlacemark { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKPlacemark * placemark;
+```
+
 #### Discussion
 
-If you create the map item using the [`forCurrentLocation()`](mkmapitem/forcurrentlocation().md) method, the value of this property is `nil` and the [`isCurrentLocation`](mkmapitem/iscurrentlocation.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+If you create the map item using the [`forCurrentLocation()`](./forcurrentlocation%28%29.md) method, the value of this property is `nil` and the [`isCurrentLocation`](./iscurrentlocation.md) property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [MKMapItem.Identifier](mkmapitem/identifier-swift.class.md)
+### Accessing the map item attributes
+- [MKMapItem.Identifier](./identifier-swift.class.md)
   A unique identifier for a place.
-- [var alternateIdentifiers: Set<MKMapItem.Identifier>](mkmapitem/alternateidentifiers.md)
+- [var alternateIdentifiers: Set<MKMapItem.Identifier>](./alternateidentifiers.md)
   A set of alternative identifiers for a place.
-- [var identifier: MKMapItem.Identifier?](mkmapitem/identifier-swift.property.md)
+- [var identifier: MKMapItem.Identifier?](./identifier-swift.property.md)
   A unique identifier for a place.
-- [var isCurrentLocation: Bool](mkmapitem/iscurrentlocation.md)
+- [var isCurrentLocation: Bool](./iscurrentlocation.md)
   A Boolean value that indicates whether the map item represents the user’s location.
-- [var name: String?](mkmapitem/name.md)
+- [var name: String?](./name.md)
   The descriptive name associated with the map item.
-- [var pointOfInterestCategory: MKPointOfInterestCategory?](mkmapitem/pointofinterestcategory.md)
+- [var pointOfInterestCategory: MKPointOfInterestCategory?](./pointofinterestcategory.md)
   The point-of-interest category for the map item.
-- [var phoneNumber: String?](mkmapitem/phonenumber.md)
+- [var phoneNumber: String?](./phonenumber.md)
   The phone number associated with a business at the specified location.
-- [var timeZone: TimeZone?](mkmapitem/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone of the specified location.
-- [var url: URL?](mkmapitem/url.md)
+- [var url: URL?](./url.md)
   The URL associated with the specified location.
 
 

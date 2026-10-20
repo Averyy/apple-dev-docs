@@ -2,18 +2,19 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the target to invoke a client-supplied block in order to gather sample buffers for playback.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 11.0+ - Deprecated in 27.0
+- iPadOS 11.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.13+ - Deprecated in 27.0
+- tvOS 11.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 4.0+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -21,9 +22,13 @@ Tells the target to invoke a client-supplied block in order to gather sample buf
 func requestMediaDataWhenReady(on queue: dispatch_queue_t, using block: @escaping @Sendable () -> Void)
 ```
 
+```objc
+- (void) requestMediaDataWhenReadyOnQueue:(dispatch_queue_t) queue usingBlock:(void (^)()) block;
+```
+
 #### Discussion
 
-When this method is called multiple times, only the last call is implemented. Pair each call to [`requestMediaDataWhenReady(on:using:)`](avqueuedsamplebufferrendering/requestmediadatawhenready(on:using:).md) with a corresponding call to [`stopRequestingMediaData()`](avqueuedsamplebufferrendering/stoprequestingmediadata().md). Releasing the `AVQueuedSampleBufferRendering` object without a call to `stopRequestingMediaData` results in undefined behavior.
+When this method is called multiple times, only the last call is implemented. Pair each call to [`requestMediaDataWhenReady(on:using:)`](./requestmediadatawhenready%28on,using%29.md) with a corresponding call to [`stopRequestingMediaData()`](./stoprequestingmediadata%28%29.md). Releasing the `AVQueuedSampleBufferRendering` object without a call to `stopRequestingMediaData` results in undefined behavior.
 
 ## Parameters
 
@@ -32,12 +37,13 @@ When this method is called multiple times, only the last call is implemented. Pa
 
 ## See Also
 
-- [var isReadyForMoreMediaData: Bool](avqueuedsamplebufferrendering/isreadyformoremediadata.md)
+### Requesting media
+- [var isReadyForMoreMediaData: Bool](./isreadyformoremediadata.md)
   A Boolean value that indicates whether the receiver is able to accept more sample buffers.
-- [func enqueue(CMSampleBuffer)](avqueuedsamplebufferrendering/enqueue(_:).md)
+- [func enqueue(CMSampleBuffer)](./enqueue%28_%29.md)
   Sends a sample buffer to the queue for rendering.
-- [func stopRequestingMediaData()](avqueuedsamplebufferrendering/stoprequestingmediadata.md)
-  Cancels any current [`requestMediaDataWhenReady(on:using:)`](avqueuedsamplebufferrendering/requestmediadatawhenready(on:using:).md) call.
+- [func stopRequestingMediaData()](./stoprequestingmediadata%28%29.md)
+  Cancels any current [`requestMediaDataWhenReady(on:using:)`](./requestmediadatawhenready%28on,using%29.md) call.
 
 
 ---

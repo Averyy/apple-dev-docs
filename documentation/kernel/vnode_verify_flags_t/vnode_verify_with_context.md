@@ -1,14 +1,15 @@
 # VNODE_VERIFY_WITH_CONTEXT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 VNODE_VERIFY_WITH_CONTEXT
 ```
 

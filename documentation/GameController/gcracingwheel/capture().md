@@ -1,7 +1,8 @@
 # capture()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a snapshot of the racing wheel with its current element values.
 
@@ -15,13 +16,18 @@ Returns a snapshot of the racing wheel with its current element values.
 func capture() -> GCRacingWheel
 ```
 
+```objc
+- (GCRacingWheel *) capture;
+```
+
 #### Return Value
 
 A snapshot of the racing wheel.
 
 ## See Also
 
-- [var isSnapshot: Bool](gcracingwheel/issnapshot.md)
+### Creating snapshots
+- [var isSnapshot: Bool](./issnapshot.md)
   A Boolean value that indicates whether the object is a snapshot of a racing wheel.
 
 

@@ -1,7 +1,8 @@
 # setColor(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the color of the slider bar.
 
@@ -14,15 +15,20 @@ Sets the color of the slider bar.
 func setColor(_ color: UIColor?)
 ```
 
+```objc
+- (void) setColor:(UIColor *) color;
+```
+
 ## Parameters
 
 - `color`: The custom color to be applied to the slider bar. Specifying `nil` removes the custom color and returns the slider to the color specified in the storyboard file. The default slider bar color is green.
 
 ## See Also
 
-- [func setValue(Float)](wkinterfaceslider/setvalue(_:).md)
+### Setting the Slider Value
+- [func setValue(Float)](./setvalue%28_%29.md)
   Changes the value of the slider.
-- [func setNumberOfSteps(Int)](wkinterfaceslider/setnumberofsteps(_:).md)
+- [func setNumberOfSteps(Int)](./setnumberofsteps%28_%29.md)
   Sets the number of steps for the slider.
 
 

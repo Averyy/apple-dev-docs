@@ -21,9 +21,9 @@ Users can navigate left and right to move between `menuBar` elements. Here’s a
 </menuBarTemplate>
 ```
 
-You can also add view elements to the left and right sides of the menu bar. The left `leadingAccessoryView` and right `trailingAccessoryView` can be any simple element, including [`Display Elements`](display-elements.md), [`Multimedia Elements`](multimedia-elements.md), and [`Text Elements`](text-elements.md). Accessory views can also be row elements.
+You can also add view elements to the left and right sides of the menu bar. The left `leadingAccessoryView` and right `trailingAccessoryView` can be any simple element, including [Display Elements](./display-elements.md), [Multimedia Elements](./multimedia-elements.md), and [Text Elements](./text-elements.md). Accessory views can also be row elements.
 
-To add the equivalent of a [`leadingAccessoryView`](https://developer.apple.com/documentation/uikit/uitabbar/leadingaccessoryview), add any supported element before the [`menuBar`](menubar.md) opening tag, as shown here:
+To add the equivalent of a [`leadingAccessoryView`](../UIKit/uitabbar/leadingaccessoryview.md), add any supported element before the [menuBar](./menubar.md) opening tag, as shown here:
 
 ```xml
 <menuBarTemplate>
@@ -36,7 +36,7 @@ To add the equivalent of a [`leadingAccessoryView`](https://developer.apple.com/
 </menuBarTemplate>
 ```
 
-To add the equivalent of a [`trailingAccessoryView`](https://developer.apple.com/documentation/uikit/uitabbar/trailingaccessoryview), add any supported element after the [`menuBar`](menubar.md) closing tag, as shown here:
+To add the equivalent of a [`trailingAccessoryView`](../UIKit/uitabbar/trailingaccessoryview.md), add any supported element after the [menuBar](./menubar.md) closing tag, as shown here:
 
 ```xml
 <menuBarTemplate>
@@ -49,44 +49,45 @@ To add the equivalent of a [`trailingAccessoryView`](https://developer.apple.com
 </menuBarTemplate>
 ```
 
-##### Subelements of Menubar
+##### Subelements of menuBar
 
-- [`menuItem`](menuitem.md)
-- [`section`](section.md)
+- [menuItem](./menuitem.md)
+- [section](./section.md)
 
-##### Elements That Use Menubar
+##### Elements that Use menuBar
 
-- [`mainTemplate`](maintemplate.md)
-- [`menuBarTemplate`](menubartemplate.md)
+- [mainTemplate](./maintemplate.md)
+- [menuBarTemplate](./menubartemplate.md)
 
 ## Topics
 
 ### Valid TVML Style
-- [tv-tint-color](tv-tint-color.md)
+- [tv-tint-color](./tv-tint-color.md)
   Sets the tint color for an element.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [menuItem](menuitem.md)
+### Bar Elements
+- [menuItem](./menuitem.md)
   Displays a label for an item.
-- [nowPlayingMenuItem](nowplayingmenuitem.md)
+- [nowPlayingMenuItem](./nowplayingmenuitem.md)
   Displays information about currently playing audio.
-- [segmentBar](segmentbar.md)
+- [segmentBar](./segmentbar.md)
   Displays a list of segment bar items.
-- [segmentBarHeader](segmentbarheader.md)
+- [segmentBarHeader](./segmentbarheader.md)
   Displays information above a segment bar.
-- [segmentBarItem](segmentbaritem.md)
+- [segmentBarItem](./segmentbaritem.md)
   Provides titles inside of a segment bar.
-- [tumblerBar](tumblerbar.md)
+- [tumblerBar](./tumblerbar.md)
   Displays a list of `tumblerItem` elements.
-- [tumblerItem](tumbleritem.md)
+- [tumblerItem](./tumbleritem.md)
   Contains title information for a tumbler header.
 
 

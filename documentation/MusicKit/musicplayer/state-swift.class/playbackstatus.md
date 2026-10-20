@@ -1,7 +1,8 @@
 # playbackStatus
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current playback status of the music player.
 

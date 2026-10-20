@@ -1,7 +1,8 @@
 # CAClockGetProperty(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -12,12 +13,17 @@
 func CAClockGetProperty(_ inCAClock: CAClockRef, _ inPropertyID: CAClockPropertyID, _ ioPropertyDataSize: UnsafeMutablePointer<UInt32>, _ outPropertyData: UnsafeMutableRawPointer) -> OSStatus
 ```
 
+```c
+extern OSStatus CAClockGetProperty(CAClockRef inCAClock, CAClockPropertyID inPropertyID, UInt32 *ioPropertyDataSize, void *outPropertyData);
+```
+
 ## See Also
 
-- [func CAClockGetPropertyInfo(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](caclockgetpropertyinfo(_:_:_:_:).md)
-- [func CAClockSetProperty(CAClockRef, CAClockPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](caclocksetproperty(_:_:_:_:).md)
-- [enum CAClockPropertyID](caclockpropertyid.md)
-- [enum CAClockSyncMode](caclocksyncmode.md)
+### Accessing Clock Properties
+- [func CAClockGetPropertyInfo(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./caclockgetpropertyinfo%28_,_,_,_%29.md)
+- [func CAClockSetProperty(CAClockRef, CAClockPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./caclocksetproperty%28_,_,_,_%29.md)
+- [enum CAClockPropertyID](./caclockpropertyid.md)
+- [enum CAClockSyncMode](./caclocksyncmode.md)
 
 
 ---

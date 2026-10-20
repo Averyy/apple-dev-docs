@@ -1,7 +1,8 @@
 # AESizeOfNthItem(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the data size and descriptor type of the descriptor at a specified position in a descriptor list.
 
@@ -14,9 +15,13 @@ Gets the data size and descriptor type of the descriptor at a specified position
 func AESizeOfNthItem(_ theAEDescList: UnsafePointer<AEDescList>!, _ index: Int, _ typeCode: UnsafeMutablePointer<DescType>!, _ dataSize: UnsafeMutablePointer<Size>!) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AESizeOfNthItem(const AEDescList *theAEDescList, long index, DescType *typeCode, Size *dataSize);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
@@ -24,16 +29,17 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: A pointer to the descriptor list containing the descriptor. See [`AEDescList`](aedesclist.md).
+- `theAEDescList`: A pointer to the descriptor list containing the descriptor. See [`AEDescList`](./aedesclist.md).
 - `index`: A one-based positive integer indicating the position of the descriptor to get the data size for. `AESizeOfNthItem` returns an error if you pass zero, a negative number, or a value that is out of range.
-- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the descriptor. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the descriptor. For a list of AppleScript’s predefined descriptor types, see [Descriptor Type Constants](./apple_events/api-1542788-descriptor_type_constants.md). See [`DescType`](./desctype.md).
 - `dataSize`: A pointer to a size variable. On return, the length (in bytes) of the data in the descriptor.
 
 ## See Also
 
-- [func AESizeOfAttribute(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](1445764-aesizeofattribute.md)
+### Getting the Sizes and Descriptor Types of Descriptors
+- [func AESizeOfAttribute(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](./api-1445764-aesizeofattribute.md)
   Gets the size and descriptor type of an Apple event attribute from a descriptor of type `AppleEvent`.
-- [func AESizeOfParam(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](1449998-aesizeofparam.md)
+- [func AESizeOfParam(UnsafePointer<AppleEvent>!, AEKeyword, UnsafeMutablePointer<DescType>!, UnsafeMutablePointer<Size>!) -> OSErr](./api-1449998-aesizeofparam.md)
   Gets the size and descriptor type of an Apple event parameter from a descriptor of type `AERecord` or `AppleEvent`.
 
 

@@ -1,7 +1,8 @@
 # update(repeating:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update every element of this span to the given value.
 

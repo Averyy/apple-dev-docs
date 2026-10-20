@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.TextualContextAttribute.TextualContext.console
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text used for input, like in the Terminal app.
 

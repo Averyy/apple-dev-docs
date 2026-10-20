@@ -1,7 +1,8 @@
 # accessibilityValue(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a textual description of the value that the view contains.
 
@@ -21,6 +22,23 @@ Adds a textual description of the value that the view contains.
 nonisolated func accessibilityValue(_ valueResource: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityValue(_ valueDescription: Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityValue(_ valueKey: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityValue<S>(_ value: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier> where S : StringProtocol
+```
+
 #### Discussion
 
 Use this method to describe the value represented by a view, but only if that’s different than the view’s label. For example, for a slider that you label as “Volume” using accessibilityLabel(), you can provide the current volume setting, like “60%”, using accessibilityValue().
@@ -32,7 +50,8 @@ Use this method to describe the value represented by a view, but only if that’
 
 ## See Also
 
-- [func accessibilityValue(_:)](view/accessibilityvalue(_:).md)
+### Describing values
+- [func accessibilityValue(_:)](./accessibilityvalue%28_%29.md)
   Adds a textual description of the value that the view contains.
 
 

@@ -1,7 +1,8 @@
 # AVCaptureExternalDisplayConfigurator
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configurator class allowing you to configure properties of an external display to match the camera’s active video format.
 
@@ -18,52 +19,57 @@ A configurator class allowing you to configure properties of an external display
 class AVCaptureExternalDisplayConfigurator
 ```
 
+```objc
+@interface AVCaptureExternalDisplayConfigurator : NSObject
+```
+
 #### Overview
 
-An [`AVCaptureExternalDisplayConfigurator`](avcaptureexternaldisplayconfigurator.md) allows you to configure a connected external display to output a clean feed using a `CALayer`. Using the configurator, you can opt into automatic adjustment of the external display’s color space and / or frame rate to match your device’s capture configuration. These adjustments are only applied to the external display, not to the device.
+An [`AVCaptureExternalDisplayConfigurator`](./avcaptureexternaldisplayconfigurator.md) allows you to configure a connected external display to output a clean feed using a `CALayer`. Using the configurator, you can opt into automatic adjustment of the external display’s color space and / or frame rate to match your device’s capture configuration. These adjustments are only applied to the external display, not to the device.
 
-> **Note**: Not all displays support the same configuration options as the device’s capture formats. Your adjustments to the external display are applied with utmost effort to accurately represent the capture device. When your capture device’s [`activeFormat`](avcapturedevice/activeformat.md) is unavailable on the external display, the configurator automatically chooses the closest available format.
+> **Note**: Not all displays support the same configuration options as the device’s capture formats. Your adjustments to the external display are applied with utmost effort to accurately represent the capture device. When your capture device’s [`activeFormat`](./avcapturedevice/activeformat.md) is unavailable on the external display, the configurator automatically chooses the closest available format.
 
 ## Topics
 
 ### Determining configuration support
-- [class var isMatchingFrameRateSupported: Bool](avcaptureexternaldisplayconfigurator/ismatchingframeratesupported.md)
+- [class var isMatchingFrameRateSupported: Bool](./avcaptureexternaldisplayconfigurator/ismatchingframeratesupported.md)
   Whether the external display supports matching frame rate to a capture device.
-- [class var isPreferredResolutionSupported: Bool](avcaptureexternaldisplayconfigurator/ispreferredresolutionsupported.md)
+- [class var isPreferredResolutionSupported: Bool](./avcaptureexternaldisplayconfigurator/ispreferredresolutionsupported.md)
   Whether the external display supports configuration to your preferred resolution.
-- [class var isBypassingColorSpaceConversionSupported: Bool](avcaptureexternaldisplayconfigurator/isbypassingcolorspaceconversionsupported.md)
+- [class var isBypassingColorSpaceConversionSupported: Bool](./avcaptureexternaldisplayconfigurator/isbypassingcolorspaceconversionsupported.md)
   Whether the external display supports bypassing color space conversion.
 ### Creating an external display configurator
-- [init(device: AVCaptureDevice, previewLayer: CALayer, configuration: AVCaptureExternalDisplayConfiguration)](avcaptureexternaldisplayconfigurator/init(device:previewlayer:configuration:).md)
+- [init(device: AVCaptureDevice, previewLayer: CALayer, configuration: AVCaptureExternalDisplayConfiguration)](./avcaptureexternaldisplayconfigurator/init%28device,previewlayer,configuration%29.md)
   An external display configurator instance that attempts to synchronize the preview layer configuration with the device capture configuration.
 ### Inspecting the configurator
-- [var activeExternalDisplayFrameRate: Double](avcaptureexternaldisplayconfigurator/activeexternaldisplayframerate.md)
+- [var activeExternalDisplayFrameRate: Double](./avcaptureexternaldisplayconfigurator/activeexternaldisplayframerate.md)
   The currently configured frame rate on the external display that’s displaying the preview layer.
-- [var device: AVCaptureDevice?](avcaptureexternaldisplayconfigurator/device.md)
+- [var device: AVCaptureDevice?](./avcaptureexternaldisplayconfigurator/device.md)
   The device for which the coordinator configures the preview layer.
-- [var isActive: Bool](avcaptureexternaldisplayconfigurator/isactive.md)
+- [var isActive: Bool](./avcaptureexternaldisplayconfigurator/isactive.md)
   This property tells you whether the configurator is actively configuring the external display.
-- [var previewLayer: CALayer?](avcaptureexternaldisplayconfigurator/previewlayer.md)
+- [var previewLayer: CALayer?](./avcaptureexternaldisplayconfigurator/previewlayer.md)
   The layer for which the configurator adjusts display properties to match the device’s state.
 ### Stopping configuration
-- [func stop()](avcaptureexternaldisplayconfigurator/stop.md)
+- [func stop()](./avcaptureexternaldisplayconfigurator/stop%28%29.md)
   Forces the external display configurator to asynchronously stop configuring the external display.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureExternalDisplayConfiguration](avcaptureexternaldisplayconfiguration.md)
+### External display output
+- [class AVCaptureExternalDisplayConfiguration](./avcaptureexternaldisplayconfiguration.md)
   A class you use to specify a configuration to your external display configurator.
 
 

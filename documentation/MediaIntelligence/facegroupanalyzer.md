@@ -1,7 +1,8 @@
 # FaceGroupAnalyzer
 
 **Framework**: Media Intelligence  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that detects faces in images and groups them by person.
 
@@ -21,83 +22,84 @@ final class FaceGroupAnalyzer
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](./detecting-and-grouping-faces-in-images.md)
 
 #### Overview
 
-[`FaceGroupAnalyzer`](facegroupanalyzer.md) is the central object in the face analysis pipeline. It detects faces in images, stores their data persistently in a working directory you choose, and clusters the faces into groups called *entities*, where each entity represents a distinct person.
+[`FaceGroupAnalyzer`](./facegroupanalyzer.md) is the central object in the face analysis pipeline. It detects faces in images, stores their data persistently in a working directory you choose, and clusters the faces into groups called *entities*, where each entity represents a distinct person.
 
-The analyzer stores all face data and cluster assignments in the directory you pass to [`init(workingDirectory:)`](facegroupanalyzer/init(workingdirectory:).md). This directory persists between app launches, so subsequent runs resume from where the previous session ended. Call [`purge(workingDirectory:)`](facegroupanalyzer/purge(workingdirectory:).md) to remove all data from the directory.
+The analyzer stores all face data and cluster assignments in the directory you pass to [`init(workingDirectory:)`](./facegroupanalyzer/init%28workingdirectory%29.md). This directory persists between app launches, so subsequent runs resume from where the previous session ended. Call [`purge(workingDirectory:)`](./facegroupanalyzer/purge%28workingdirectory%29.md) to remove all data from the directory.
 
-Use [`identifyFaces(in:)`](facegroupanalyzer/identifyfaces(in:).md) to detect and match faces in images without storing anything. This is useful for recognizing people in new images against an existing gallery without modifying the analyzer’s data.
+Use [`identifyFaces(in:)`](./facegroupanalyzer/identifyfaces%28in%29.md) to detect and match faces in images without storing anything. This is useful for recognizing people in new images against an existing gallery without modifying the analyzer’s data.
 
 ## Topics
 
 ### Creating an analyzer
-- [init(workingDirectory: URL) throws](facegroupanalyzer/init(workingdirectory:).md)
+- [init(workingDirectory: URL) throws](./facegroupanalyzer/init%28workingdirectory%29.md)
   Creates a face group analyzer at the specified directory.
 ### Managing assets
-- [let workingDirectory: URL](facegroupanalyzer/workingdirectory.md)
+- [let workingDirectory: URL](./facegroupanalyzer/workingdirectory.md)
   A directory where the analyzer stores its face data and metadata.
 - [func insertOrUpdateAssets([MediaIntelligenceImageAsset]) async throws -> some AsyncSequence<(assetID: MediaIntelligenceImageAsset.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
-](facegroupanalyzer/insertorupdateassets(_:).md)
+](./facegroupanalyzer/insertorupdateassets%28_%29.md)
   Adds or replaces image assets in the analyzer.
-- [func deleteAssets([MediaIntelligenceImageAsset.ID]) async throws](facegroupanalyzer/deleteassets(_:).md)
+- [func deleteAssets([MediaIntelligenceImageAsset.ID]) async throws](./facegroupanalyzer/deleteassets%28_%29.md)
   Removes the specified assets and their associated face data.
-- [func deleteAllAssets() async throws](facegroupanalyzer/deleteallassets.md)
+- [func deleteAllAssets() async throws](./facegroupanalyzer/deleteallassets%28%29.md)
   Removes all assets and their associated face data from the analyzer.
-- [static func purge(workingDirectory: URL) async throws](facegroupanalyzer/purge(workingdirectory:).md)
+- [static func purge(workingDirectory: URL) async throws](./facegroupanalyzer/purge%28workingdirectory%29.md)
   Removes all analyzer data from the specified directory.
 ### Updating the gallery
-- [var state: FaceGroupAnalyzer.State](facegroupanalyzer/state-swift.property.md)
+- [var state: FaceGroupAnalyzer.State](./facegroupanalyzer/state-swift.property.md)
   A value describing the current processing state of the analyzer.
-- [FaceGroupAnalyzer.State](facegroupanalyzer/state-swift.enum.md)
+- [FaceGroupAnalyzer.State](./facegroupanalyzer/state-swift.enum.md)
   The current processing state of a face group analyzer.
-- [func update(subprogress: consuming Subprogress?) async throws](facegroupanalyzer/update(subprogress:).md)
+- [func update(subprogress: consuming Subprogress?) async throws](./facegroupanalyzer/update%28subprogress%29.md)
   Clusters faces into entities and updates their assignments.
 ### Retrieving faces and entities
-- [var allFaces: some AsyncSequence<FaceGroupAnalyzer.Face, any Error>](facegroupanalyzer/allfaces.md)
+- [var allFaces: some AsyncSequence<FaceGroupAnalyzer.Face, any Error>](./facegroupanalyzer/allfaces.md)
   An async sequence of all faces in the analyzer.
-- [var allFacesByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>](facegroupanalyzer/allfacesbyentityid.md)
+- [var allFacesByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>](./facegroupanalyzer/allfacesbyentityid.md)
   An async sequence of all faces, grouped by entity.
-- [var allEntities: some AsyncSequence<FaceGroupAnalyzer.Entity, any Error>](facegroupanalyzer/allentities.md)
+- [var allEntities: some AsyncSequence<FaceGroupAnalyzer.Entity, any Error>](./facegroupanalyzer/allentities.md)
   An async sequence of all entities in the analyzer.
-- [var allAssetIDs: some AsyncSequence<MediaIntelligenceImageAsset.ID, any Error>](facegroupanalyzer/allassetids.md)
+- [var allAssetIDs: some AsyncSequence<MediaIntelligenceImageAsset.ID, any Error>](./facegroupanalyzer/allassetids.md)
   An async sequence of all asset identifiers in the analyzer.
-- [var allAssetIDsByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, assetIDs: Array<MediaIntelligenceImageAsset.ID>), any Error>](facegroupanalyzer/allassetidsbyentityid.md)
+- [var allAssetIDsByEntityID: some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, assetIDs: Array<MediaIntelligenceImageAsset.ID>), any Error>](./facegroupanalyzer/allassetidsbyentityid.md)
   An async sequence of all asset identifiers, grouped by entity.
-- [FaceGroupAnalyzer.Face](facegroupanalyzer/face.md)
+- [FaceGroupAnalyzer.Face](./facegroupanalyzer/face.md)
   A face detected in an image asset.
-- [FaceGroupAnalyzer.Entity](facegroupanalyzer/entity.md)
+- [FaceGroupAnalyzer.Entity](./facegroupanalyzer/entity.md)
   A cluster of faces that belong to the same person.
 ### Fetching and identifying faces
 - [func fetchFaces([FaceGroupAnalyzer.Face.ID]) throws -> some AsyncSequence<FaceGroupAnalyzer.Face, any Error>
-](facegroupanalyzer/fetchfaces(_:).md)
+](./facegroupanalyzer/fetchfaces%28_%29.md)
   Returns the faces with the specified identifiers.
 - [func fetchFaces(for: [FaceGroupAnalyzer.Entity.ID]) throws -> some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
-](facegroupanalyzer/fetchfaces(for:).md)
+](./facegroupanalyzer/fetchfaces%28for%29.md)
   Returns the faces belonging to the specified entities.
 - [func fetchFaces(in: [MediaIntelligenceImageAsset.ID]) throws -> some AsyncSequence<(assetID: MediaIntelligenceImageAsset.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
-](facegroupanalyzer/fetchfaces(in:).md)
+](./facegroupanalyzer/fetchfaces%28in%29.md)
   Returns the faces from the specified assets.
 - [func fetchAssetIDs(for: [FaceGroupAnalyzer.Entity.ID]) throws -> some AsyncSequence<(entityID: FaceGroupAnalyzer.Entity.ID, assetIDs: Array<MediaIntelligenceImageAsset.ID>), any Error>
-](facegroupanalyzer/fetchassetids(for:).md)
+](./facegroupanalyzer/fetchassetids%28for%29.md)
   Returns the asset identifiers for the specified entities.
 - [func identifyFaces(in: [MediaIntelligenceImageAsset]) async throws -> some AsyncSequence<(assetID: MediaIntelligenceImageAsset.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
-](facegroupanalyzer/identifyfaces(in:).md)
+](./facegroupanalyzer/identifyfaces%28in%29.md)
   Detects and identifies faces without modifying the analyzer’s data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+### Image analysis
+- [Detecting and grouping faces in images](./detecting-and-grouping-faces-in-images.md)
   Organize photos by person using on-device face detection.
-- [struct MediaIntelligenceImageAsset](mediaintelligenceimageasset.md)
+- [struct MediaIntelligenceImageAsset](./mediaintelligenceimageasset.md)
   An image asset to analyze.
 
 

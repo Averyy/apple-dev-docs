@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Arguments to pass to the invoked tool.
 
@@ -21,9 +22,10 @@ var arguments: GeneratedContent { get set }
 
 ## See Also
 
-- [var toolName: String](transcript/toolcall/toolname.md)
+### Inspecting a tool call
+- [var toolName: String](./toolname.md)
   The name of the tool being invoked.
-- [var metadata: [String : GeneratedContent]](transcript/toolcall/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata produced by the model while generating this tool call.
 
 

@@ -1,14 +1,15 @@
 # ml_cpu_up
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_cpu_up(void);
 ```
 

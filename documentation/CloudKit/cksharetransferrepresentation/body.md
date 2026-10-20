@@ -1,7 +1,8 @@
 # body
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transfer representation for the share item.
 
@@ -10,7 +11,7 @@ The transfer representation for the share item.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var body: some TransferRepresentation { get }
 
 ## See Also
 
-- [CKShareTransferRepresentation.ExportedShare](cksharetransferrepresentation/exportedshare.md)
+### Accessing transfer representation attributes
+- [CKShareTransferRepresentation.ExportedShare](./exportedshare.md)
   An intermediate structure that returns an existing share or prepares a new one if it doesn’t exist.
 
 

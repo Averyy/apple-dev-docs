@@ -1,7 +1,8 @@
 # isEnvironmentTexturingEnabled
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enable or disable environment texturing.
 
@@ -13,6 +14,10 @@ Enable or disable environment texturing.
 
 ```swift
 var isEnvironmentTexturingEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isEnvironmentTexturingEnabled) BOOL environmentTexturingEnabled;
 ```
 
 #### Discussion

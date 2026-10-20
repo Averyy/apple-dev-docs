@@ -1,7 +1,8 @@
 # PluginPermission.allowNetworkConnections(scope:reason:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Create a permission to make network connections.
 
@@ -25,7 +26,8 @@ The command plug-in requires permission to make network connections. The `reason
 
 ## See Also
 
-- [PluginPermission.writeToPackageDirectory(reason:)](pluginpermission/writetopackagedirectory(reason:).md)
+### Create a permission
+- [PluginPermission.writeToPackageDirectory(reason:)](./writetopackagedirectory%28reason%29.md)
   Create a permission to modify files in the package’s directory.
 
 

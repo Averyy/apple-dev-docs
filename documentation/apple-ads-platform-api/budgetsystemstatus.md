@@ -1,7 +1,8 @@
 # BudgetSystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The system-derived operational state of a budget order.
 
@@ -10,9 +11,14 @@ The system-derived operational state of a budget order.
 
 ## Declaration
 
-```swift
+```
 string BudgetSystemStatus
 ```
+
+## Possible Values
+
+- `ACTIVE`: The budget is active. Campaigns assigned to this budget can draw spend against it.
+- `INACTIVE`: The budget is not currently active. No spend will be drawn until the underlying condition is resolved.
 
 #### Discussion
 
@@ -20,9 +26,9 @@ The `BudgetSystemStatus` is a read-only, system-computed field on budget objects
 
 ## See Also
 
-- [type PaymentModel](paymentmodel.md)
+- [type PaymentModel](./paymentmodel.md)
   Enumeration of billing models that determine payment method and budget availability for an ad account.
-- [type BudgetSystemStatusReason](budgetsystemstatusreason.md)
+- [type BudgetSystemStatusReason](./budgetsystemstatusreason.md)
   A reason code that explains why a budget or budget order has its current system status.
 
 

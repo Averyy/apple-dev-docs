@@ -1,15 +1,20 @@
 # boot_state
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var boot_state: hv_boot_state
+```
+
+```c
+enum hv_boot_state boot_state;
 ```
 
 

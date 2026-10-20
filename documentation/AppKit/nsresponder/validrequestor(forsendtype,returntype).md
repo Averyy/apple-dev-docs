@@ -1,12 +1,13 @@
 # validRequestor(forSendType:returnType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overridden by subclasses to determine what services are available.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,10 +15,14 @@ Overridden by subclasses to determine what services are available.
 func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?
 ```
 
+```objc
+- (id) validRequestorForSendType:(NSPasteboardType) sendType returnType:(NSPasteboardType) returnType;
+```
+
 ## Mentions
 
-- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
-- [Supporting Continuity Camera in Your Mac App](supporting-continuity-camera-in-your-mac-app.md)
+- [Supporting Writing Tools via the pasteboard](../supporting-writing-tools-via-the-pasteboard.md)
+- [Supporting Continuity Camera in Your Mac App](../supporting-continuity-camera-in-your-mac-app.md)
 
 #### Return Value
 
@@ -36,11 +41,12 @@ Either `sendType` or `returnType`—but not both—may be empty. If `sendType` i
 
 ## See Also
 
-- [func readSelection(from: NSPasteboard) -> Bool](nsservicesmenurequestor/readselection(from:).md)
+### Related Documentation
+- [func readSelection(from: NSPasteboard) -> Bool](../nsservicesmenurequestor/readselection%28from%29.md)
   Reads data from the pasteboard and uses it to replace the current selection.
-- [func registerServicesMenuSendTypes([NSPasteboard.PasteboardType], returnTypes: [NSPasteboard.PasteboardType])](nsapplication/registerservicesmenusendtypes(_:returntypes:).md)
+- [func registerServicesMenuSendTypes([NSPasteboard.PasteboardType], returnTypes: [NSPasteboard.PasteboardType])](../nsapplication/registerservicesmenusendtypes%28_,returntypes%29.md)
   Registers the pasteboard types the receiver can send and receive in response to service requests.
-- [func writeSelection(to: NSPasteboard, types: [NSPasteboard.PasteboardType]) -> Bool](nsservicesmenurequestor/writeselection(to:types:).md)
+- [func writeSelection(to: NSPasteboard, types: [NSPasteboard.PasteboardType]) -> Bool](../nsservicesmenurequestor/writeselection%28to,types%29.md)
   Writes the current selection to the pasteboard.
 
 

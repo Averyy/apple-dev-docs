@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Device Activity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new monitor instance implemented by subclasses.
 

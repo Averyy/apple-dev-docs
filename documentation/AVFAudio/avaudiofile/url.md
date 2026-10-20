@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the audio file.
 
@@ -20,23 +21,28 @@ The location of the audio file.
 var url: URL { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSURL * url;
+```
+
 ## See Also
 
-- [var fileFormat: AVAudioFormat](avaudiofile/fileformat.md)
+### Getting audio file properties
+- [var fileFormat: AVAudioFormat](./fileformat.md)
   The on-disk format of the file.
-- [var processingFormat: AVAudioFormat](avaudiofile/processingformat.md)
+- [var processingFormat: AVAudioFormat](./processingformat.md)
   The processing format of the file.
-- [var length: AVAudioFramePosition](avaudiofile/length.md)
+- [var length: AVAudioFramePosition](./length.md)
   The number of sample frames in the file.
-- [typealias AVAudioFramePosition](avaudioframeposition.md)
+- [typealias AVAudioFramePosition](../avaudioframeposition.md)
   A position in an audio file or stream.
-- [var framePosition: AVAudioFramePosition](avaudiofile/frameposition.md)
+- [var framePosition: AVAudioFramePosition](./frameposition.md)
   The position in the file where the next read or write operation occurs.
-- [typealias AVAudioFrameCount](avaudioframecount.md)
+- [typealias AVAudioFrameCount](../avaudioframecount.md)
   A number of audio sample frames.
-- [let AVAudioFileTypeKey: String](avaudiofiletypekey.md)
+- [let AVAudioFileTypeKey: String](../avaudiofiletypekey.md)
   A string that indicates the audio file type.
-- [var isOpen: Bool](avaudiofile/isopen.md)
+- [var isOpen: Bool](./isopen.md)
   A Boolean value that indicates whether the file is open.
 
 

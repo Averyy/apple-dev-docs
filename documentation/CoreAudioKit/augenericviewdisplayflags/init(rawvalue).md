@@ -1,10 +1,11 @@
 # init(rawValue:)
 
 **Framework**: CoreAudioKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

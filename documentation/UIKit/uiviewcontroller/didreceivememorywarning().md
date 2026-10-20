@@ -1,7 +1,8 @@
 # didReceiveMemoryWarning()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the view controller when the app receives a memory warning.
 
@@ -9,7 +10,7 @@ Sent to the view controller when the app receives a memory warning.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Sent to the view controller when the app receives a memory warning.
 func didReceiveMemoryWarning()
 ```
 
+```objc
+- (void) didReceiveMemoryWarning;
+```
+
 ## Mentions
 
-- [Responding to memory warnings](responding-to-memory-warnings.md)
+- [Responding to memory warnings](../responding-to-memory-warnings.md)
 
 #### Discussion
 

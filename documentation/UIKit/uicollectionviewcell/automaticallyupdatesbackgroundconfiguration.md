@@ -1,7 +1,8 @@
 # automaticallyUpdatesBackgroundConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the cell automatically updates its background configuration when its state changes.
 
@@ -18,21 +19,26 @@ A Boolean value that determines whether the cell automatically updates its backg
 var automaticallyUpdatesBackgroundConfiguration: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL automaticallyUpdatesBackgroundConfiguration;
+```
+
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), the cell automatically calls `updated(for:)` on its [`backgroundConfiguration`](uicollectionviewcell/backgroundconfiguration-39dc0.md) when the cell’s [`configurationState`](uicollectionviewcell/configurationstate-4269k.md) changes, and applies the updated configuration back to the cell. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When this value is [`true`](../../Swift/true.md), the cell automatically calls `updated(for:)` on its [`backgroundConfiguration`](./backgroundconfiguration-39dc0.md) when the cell’s [`configurationState`](./configurationstate-4269k.md) changes, and applies the updated configuration back to the cell. The default value is [`true`](../../Swift/true.md).
 
-If you override [`updateConfiguration(using:)`](uicollectionviewcell/updateconfiguration(using:).md) to manually update and customize the background configuration, disable automatic updates by setting this property to [`false`](https://developer.apple.com/documentation/swift/false).
+If you override [`updateConfiguration(using:)`](./updateconfiguration%28using%29.md) to manually update and customize the background configuration, disable automatic updates by setting this property to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func defaultBackgroundConfiguration() -> UIBackgroundConfiguration](uicollectionviewcell/defaultbackgroundconfiguration.md)
+### Configuring the background
+- [func defaultBackgroundConfiguration() -> UIBackgroundConfiguration](./defaultbackgroundconfiguration%28%29.md)
   Retrieves a background configuration with system default values.
-- [var backgroundConfiguration: UIBackgroundConfiguration?](uicollectionviewcell/backgroundconfiguration-rgj4.md)
+- [var backgroundConfiguration: UIBackgroundConfiguration?](./backgroundconfiguration-rgj4.md)
   The current background configuration of the cell.
-- [var backgroundView: UIView?](uicollectionviewcell/backgroundview.md)
+- [var backgroundView: UIView?](./backgroundview.md)
   The view that displays behind the cell’s other content.
-- [var selectedBackgroundView: UIView?](uicollectionviewcell/selectedbackgroundview.md)
+- [var selectedBackgroundView: UIView?](./selectedbackgroundview.md)
   The view that displays just above the background view for a selected cell.
 
 

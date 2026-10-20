@@ -1,7 +1,8 @@
 # subscript(rawAttachment:)
 
 **Framework**: Core Media  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get or set a custom attachment value. The value must be a plist type.
 

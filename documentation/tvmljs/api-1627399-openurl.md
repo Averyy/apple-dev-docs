@@ -1,7 +1,8 @@
 # openURL
 
 **Framework**: TVMLKit JS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Opens a deep link into another app.
 
@@ -10,7 +11,7 @@ Opens a deep link into another app.
 
 ## Declaration
 
-```swift
+```
 void openURL(
     in String url
 );
@@ -26,11 +27,12 @@ Invoking this method with a valid URL launches the handling application.
 
 ## See Also
 
-- [UUID](1627409-uuid.md)
+### Manipulating the Document
+- [UUID](./api-1627409-uuid.md)
   Generates a unique UUID.
-- [getActiveDocument](1627314-getactivedocument.md)
+- [getActiveDocument](./api-1627314-getactivedocument.md)
   Retrieves the currently active document.
-- [canOpenURL](2123042-canopenurl.md)
+- [canOpenURL](./api-2123042-canopenurl.md)
   Determines if a deep-link to another app can be opened.
 
 

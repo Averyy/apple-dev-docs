@@ -1,7 +1,8 @@
 # MTKModelError
 
 **Framework**: MetalKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants used to declare Model Errors.
 
@@ -19,24 +20,28 @@ Constants used to declare Model Errors.
 struct MTKModelError
 ```
 
+```c
+typedef NSString * MTKModelError;
+```
+
 ## Topics
 
 ### Initializing a Raw Constant
-- [init(rawValue: String)](mtkmodelerror/init(rawvalue:).md)
+- [init(rawValue: String)](./mtkmodelerror/init%28rawvalue%29.md)
 ### Finding Model Error Constants
-- [static let domain: MTKModelError](mtkmodelerror/domain.md)
+- [static let domain: MTKModelError](./mtkmodelerror/domain.md)
   The error domain used by MetalKit when returning mesh initialization errors.
-- [static let key: MTKModelError](mtkmodelerror/key.md)
-  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
+- [static let key: MTKModelError](./mtkmodelerror/key.md)
+  The key used to retrieve an error string from an error object’s [`userInfo`](../Foundation/nserror/userinfo.md) dictionary.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

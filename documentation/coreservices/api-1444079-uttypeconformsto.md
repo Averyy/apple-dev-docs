@@ -1,7 +1,8 @@
 # UTTypeConformsTo(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether a uniform type identifier conforms to another uniform type identifier.
 
@@ -20,7 +21,11 @@ Returns whether a uniform type identifier conforms to another uniform type ident
 func UTTypeConformsTo(_ inUTI: CFString, _ inConformsToUTI: CFString) -> Bool
 ```
 
-#### Return_value
+```c
+Boolean UTTypeConformsTo(CFStringRef inUTI, CFStringRef inConformsToUTI);
+```
+
+#### Return Value
 
 Returns `true` if the uniform type identifier is equal to or conforms to the second type.
 

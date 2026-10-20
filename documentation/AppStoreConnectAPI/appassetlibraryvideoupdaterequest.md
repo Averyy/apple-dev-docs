@@ -1,7 +1,8 @@
 # AppAssetLibraryVideoUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app asset library video.
 
@@ -10,14 +11,14 @@ The request body you use to update an app asset library video.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryVideoUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryVideoUpdateRequest.Data](appassetlibraryvideoupdaterequest/data-data.dictionary.md)
+- [object AppAssetLibraryVideoUpdateRequest.Data](./appassetlibraryvideoupdaterequest/data-data.dictionary.md)
   The request body you use to update an app asset library video.
 
 ## Properties
@@ -26,15 +27,16 @@ object AppAssetLibraryVideoUpdateRequest
 
 ## See Also
 
-- [type AppAssetLibraryMediaType](appassetlibrarymediatype.md)
+### Objects and types
+- [type AppAssetLibraryMediaType](./appassetlibrarymediatype.md)
   String that represents the media type of an app asset library asset.
-- [object AppAssetLibraryVideo](appassetlibraryvideo.md)
+- [object AppAssetLibraryVideo](./appassetlibraryvideo.md)
   A video asset uploaded to an app’s asset library that you can reuse across App Store surfaces through placements.
-- [object AppAssetLibraryVideoCreateRequest](appassetlibraryvideocreaterequest.md)
+- [object AppAssetLibraryVideoCreateRequest](./appassetlibraryvideocreaterequest.md)
   The request body you use to create an app asset library video.
-- [object AppAssetLibraryVideoResponse](appassetlibraryvideoresponse.md)
+- [object AppAssetLibraryVideoResponse](./appassetlibraryvideoresponse.md)
   The response body for endpoints that create, read, or modify an app asset library video.
-- [object AppAssetLibraryVideoPlacementsLinkagesResponse](appassetlibraryvideoplacementslinkagesresponse.md)
+- [object AppAssetLibraryVideoPlacementsLinkagesResponse](./appassetlibraryvideoplacementslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 
 

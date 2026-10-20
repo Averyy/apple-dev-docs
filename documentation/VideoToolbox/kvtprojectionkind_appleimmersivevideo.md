@@ -1,7 +1,8 @@
 # kVTProjectionKind_AppleImmersiveVideo
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 let kVTProjectionKind_AppleImmersiveVideo: CFString
+```
+
+```c
+extern CFStringRef const kVTProjectionKind_AppleImmersiveVideo;
 ```
 
 

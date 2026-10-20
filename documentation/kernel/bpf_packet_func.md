@@ -1,18 +1,19 @@
 # bpf_packet_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*bpf_packet_func)(ifnet_t interface, mbuf_t data);
 ```
 
-#### Return_value
+#### Return Value
 
 An errno value or zero upon success.
 

@@ -1,15 +1,20 @@
 # rfcommChannelFlowControlChanged(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func rfcommChannelFlowControlChanged(_ rfcommChannel: IOBluetoothRFCOMMChannel!)
+```
+
+```objc
+- (void) rfcommChannelFlowControlChanged:(IOBluetoothRFCOMMChannel *) rfcommChannel;
 ```
 
 

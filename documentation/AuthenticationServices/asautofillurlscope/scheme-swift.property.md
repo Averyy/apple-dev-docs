@@ -1,7 +1,8 @@
 # scheme
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scheme subcomponent of the URL.
 

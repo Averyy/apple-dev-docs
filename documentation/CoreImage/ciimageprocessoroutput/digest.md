@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A 64-bit digest that uniquely describes the contents of the output of a processor.
@@ -18,6 +19,10 @@ A 64-bit digest that uniquely describes the contents of the output of a processo
 
 ```swift
 var digest: UInt64 { get }
+```
+
+```objc
+@property (nonatomic, readonly) uint64_t digest;
 ```
 
 #### Discussion

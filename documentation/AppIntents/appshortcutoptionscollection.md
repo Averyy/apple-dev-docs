@@ -1,7 +1,8 @@
 # AppShortcutOptionsCollection
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a collection of options for parameters of an App Shortcut.
 
@@ -11,7 +12,7 @@ Represents a collection of options for parameters of an App Shortcut.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,19 +24,20 @@ struct AppShortcutOptionsCollection<Provider> where Provider : DynamicOptionsPro
 ## Topics
 
 ### Initializers
-- [init(Provider, title: LocalizedStringResource, systemImageName: String?)](appshortcutoptionscollection/init(_:title:systemimagename:).md)
+- [init(Provider, title: LocalizedStringResource, systemImageName: String?)](./appshortcutoptionscollection/init%28_,title,systemimagename%29.md)
   Initializes a collection of options for App Shortcuts with the specified parameters.
 
 ## Relationships
 
 ### Conforms To
-- [AppShortcutOptionsCollectionProtocol](appshortcutoptionscollectionprotocol.md)
+- [AppShortcutOptionsCollectionProtocol](./appshortcutoptionscollectionprotocol.md)
 
 ## See Also
 
-- [protocol AppShortcutOptionsCollectionProtocol](appshortcutoptionscollectionprotocol.md)
-- [protocol AppShortcutOptionsCollectionSpecification](appshortcutoptionscollectionspecification.md)
-- [enum AppShortcutOptionsCollectionSpecificationBuilder](appshortcutoptionscollectionspecificationbuilder.md)
+### App Shortcut options
+- [protocol AppShortcutOptionsCollectionProtocol](./appshortcutoptionscollectionprotocol.md)
+- [protocol AppShortcutOptionsCollectionSpecification](./appshortcutoptionscollectionspecification.md)
+- [enum AppShortcutOptionsCollectionSpecificationBuilder](./appshortcutoptionscollectionspecificationbuilder.md)
 
 
 ---

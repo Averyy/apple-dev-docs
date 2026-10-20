@@ -1,7 +1,8 @@
 # CPTemplateApplicationDashboardScene
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A CarPlay scene that controls your app’s dashboard navigation window.
 
@@ -16,11 +17,15 @@ A CarPlay scene that controls your app’s dashboard navigation window.
 class CPTemplateApplicationDashboardScene
 ```
 
+```objc
+@interface CPTemplateApplicationDashboardScene : UIScene
+```
+
 #### Overview
 
-A dashboard scene manages the display of your navigation app’s dashboard window on the CarPlay Dashboard, and notifies its delegate—an object that conforms to [`CPTemplateApplicationDashboardSceneDelegate`](cptemplateapplicationdashboardscenedelegate.md)—about scene life-cycle events. Use the dashboard controller the scene provides to supply shortcut buttons to display when there’s no active navigation session, further customizing you app’s presence on the CarPlay Dashboard.
+A dashboard scene manages the display of your navigation app’s dashboard window on the CarPlay Dashboard, and notifies its delegate—an object that conforms to [`CPTemplateApplicationDashboardSceneDelegate`](./cptemplateapplicationdashboardscenedelegate.md)—about scene life-cycle events. Use the dashboard controller the scene provides to supply shortcut buttons to display when there’s no active navigation session, further customizing you app’s presence on the CarPlay Dashboard.
 
-You don’t create an instance of the dashboard scene directly. Instead, you specify the name of the class as part of the CarPlay Dashboard scene configuration that you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)) method.
+You don’t create an instance of the dashboard scene directly. Instead, you specify the name of the class as part of the CarPlay Dashboard scene configuration that you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](../UIKit/uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) method.
 
 ```plist
 <key>CPTemplateApplicationDashboardSceneSessionRoleApplication</key>
@@ -40,49 +45,50 @@ You don’t create an instance of the dashboard scene directly. Instead, you spe
 ## Topics
 
 ### Responding to the Dashboard Scene Life Cycle
-- [var delegate: (any CPTemplateApplicationDashboardSceneDelegate)?](cptemplateapplicationdashboardscene/delegate.md)
+- [var delegate: (any CPTemplateApplicationDashboardSceneDelegate)?](./cptemplateapplicationdashboardscene/delegate.md)
   The object that receives the dashboard scene’s life-cycle events.
-- [protocol CPTemplateApplicationDashboardSceneDelegate](cptemplateapplicationdashboardscenedelegate.md)
+- [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
   The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
 ### Accessing the Dashboard Controller
-- [var dashboardController: CPDashboardController](cptemplateapplicationdashboardscene/dashboardcontroller.md)
+- [var dashboardController: CPDashboardController](./cptemplateapplicationdashboardscene/dashboardcontroller.md)
   The controller that manages the dashboard scene’s shortcut buttons.
-- [class CPDashboardController](cpdashboardcontroller.md)
+- [class CPDashboardController](./cpdashboardcontroller.md)
   A controller that provides shortcut buttons for the CarPlay Dashboard.
 ### Accessing the Dashboard Window
-- [var dashboardWindow: UIWindow](cptemplateapplicationdashboardscene/dashboardwindow.md)
+- [var dashboardWindow: UIWindow](./cptemplateapplicationdashboardscene/dashboardwindow.md)
   The window that belongs to the dashboard scene.
 
 ## Relationships
 
 ### Inherits From
-- [UIScene](../uikit/uiscene.md)
+- [UIScene](../UIKit/uiscene.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Integrating CarPlay with Your Navigation App](integrating-carplay-with-your-navigation-app.md)
+### Navigation
+- [Integrating CarPlay with Your Navigation App](./integrating-carplay-with-your-navigation-app.md)
   Configure your navigation app to work with CarPlay by displaying your custom map and directions.
-- [protocol CPTemplateApplicationDashboardSceneDelegate](cptemplateapplicationdashboardscenedelegate.md)
+- [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
   The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
-- [class CPMapTemplate](cpmaptemplate.md)
+- [class CPMapTemplate](./cpmaptemplate.md)
   A template that displays a navigation overlay that your app draws on the map.
-- [class CPSearchTemplate](cpsearchtemplate.md)
+- [class CPSearchTemplate](./cpsearchtemplate.md)
   A template that provides the ability to search for a destination and see a list of search results.
-- [class CPVoiceControlTemplate](cpvoicecontroltemplate.md)
+- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
   A template that displays a voice control indicator during audio input.
 
 

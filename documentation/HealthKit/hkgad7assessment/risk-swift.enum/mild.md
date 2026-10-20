@@ -1,7 +1,8 @@
 # HKGAD7Assessment.Risk.mild
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case mild
+```
+
+```c
+HKGAD7AssessmentRiskMild
 ```
 
 

@@ -1,7 +1,8 @@
 # init(pressureBehavior:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a pressure configuration object with a specified pressure behavior.
 
@@ -12,6 +13,10 @@ Initializes a pressure configuration object with a specified pressure behavior.
 
 ```swift
 init(pressureBehavior: NSEvent.PressureBehavior)
+```
+
+```objc
+- (instancetype) initWithPressureBehavior:(NSPressureBehavior) pressureBehavior;
 ```
 
 #### Return Value
@@ -28,9 +33,11 @@ The initialized pressure configuration object is used to change the behavior and
 
 ## See Also
 
-- [NSEvent.PressureBehavior](nsevent/pressurebehavior-swift.enum.md)
+### Related Documentation
+- [NSEvent.PressureBehavior](../nsevent/pressurebehavior-swift.enum.md)
   These constants describe the behavior and progression of a pressure gesture.
-- [func set()](nspressureconfiguration/set.md)
+### Creating a Pressure Configuration Object
+- [func set()](./set%28%29.md)
   Changes the pressure configuration of the trackpad to the initialized pressure configuration.
 
 

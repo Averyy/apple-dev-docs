@@ -1,24 +1,26 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 ## See Also
 
-- [Create](iouserserver/create.md)
-- [free](iouserserver/free.md)
+### Configuring the User Server
+- [Create](./create.md)
+- [free](./free.md)
 
 
 ---

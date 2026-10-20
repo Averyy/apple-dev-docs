@@ -1,7 +1,8 @@
 # sizeInBytes
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the data that this event contains.
 
@@ -17,6 +18,10 @@ The size of the data that this event contains.
 
 ```swift
 var sizeInBytes: UInt32 { get }
+```
+
+```objc
+@property (readonly) UInt32 sizeInBytes;
 ```
 
 

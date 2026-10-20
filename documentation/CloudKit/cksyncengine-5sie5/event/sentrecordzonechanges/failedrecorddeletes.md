@@ -1,7 +1,8 @@
 # failedRecordDeletes
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifiers of the records CloudKit is unable to delete, and the reasons why.
 
@@ -11,7 +12,7 @@ The unique identifiers of the records CloudKit is unable to delete, and the reas
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let failedRecordDeletes: [CKRecord.ID : CKError]
 
 ## See Also
 
-- [let failedRecordSaves: [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave]](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsaves.md)
+### Accessing failed changes
+- [let failedRecordSaves: [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave]](./failedrecordsaves.md)
   The records that CloudKit is unable to modify.
-- [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave.md)
+- [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave](./failedrecordsave.md)
   A type that describes an unsuccessful attempt to modify a single record.
 
 

@@ -1,7 +1,8 @@
 # ManagedAppLibrary.ManagedApps.Element
 
 **Framework**: ManagedAppDistribution  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element this asynchronous sequence produces.
 
@@ -20,9 +21,10 @@ typealias Element = ManagedAppLibrary.ManagedApps.AsyncIterator.Element
 
 ## See Also
 
-- [ManagedAppLibrary.ManagedApps.AsyncIterator](managedapplibrary/managedapps/asynciterator.md)
+### Obtaining managed apps
+- [ManagedAppLibrary.ManagedApps.AsyncIterator](./asynciterator.md)
   The iterator for managed apps.
-- [func makeAsyncIterator() -> ManagedAppLibrary.ManagedApps.AsyncIterator](managedapplibrary/managedapps/makeasynciterator.md)
+- [func makeAsyncIterator() -> ManagedAppLibrary.ManagedApps.AsyncIterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
 
 

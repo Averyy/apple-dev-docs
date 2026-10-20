@@ -1,6 +1,8 @@
 # Filtering and sorting persistent data
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: Sample Code  
+**Download**: [SwiftDataLocalDataCacheSample.zip](https://docs-assets.developer.apple.com/published/5e964e0daa88/SwiftDataLocalDataCacheSample.zip)
 
 Manage data store presentation using predicates and dynamic queries.
 
@@ -17,11 +19,17 @@ This sample app displays a list of earthquakes, showing the time, location, and 
 
 The app uses SwiftData to store and manage the earthquake data, and relies on dynamic queries to present the data in different ways. For example, people can select which day’s earthquakes to display, sort the earthquakes by magnitude or time in forward or reverse order, and filter by location name.
 
-> **Note**: To learn how the app retrieves and stores earthquake data, see [`Maintaining a local copy of server data`](maintaining-a-local-copy-of-server-data.md).
+![A screenshot of the sample app running on an iPhone 14 Pro. The app's list view shows a list of earthquakes. Text in the bottom toolbar on the left indicates that there are 145 earthquakes in the list out of 9,738 total stored earthquakes. A date picker in the bottom toolbar on the right is activate and displays a calendar for selecting a date. The date August 21, 2023 is currently highlighted in the date picker's calendar. The top toolbar has a sort button and a trash button.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/Filtering-and-sorting-persistent-data-1@2x.png)
 
-##### Read the Entire Collection with a Simple Query
+![A screenshot of the sample app running on an iPhone 14 Pro. The app's list view shows a list of earthquakes. Text in the bottom toolbar on the left indicates that there are 145 earthquakes in the list out of 9,738 total stored earthquakes. A date picker in the bottom toolbar on the right is inactivate and displays the date August 21, 2023. A sort button in the top toolbar on the right is selected and displays a popover with the items Forward, Reverse, Time, and Magnitude. The items Reverse and Time both have a checkmark. The top toolbar also has a trash button.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/Filtering-and-sorting-persistent-data-2@2x.png)
 
-The app’s `ContentView` fetches a complete list of earthquakes by applying the [`Query`](query.md) macro to its `quakes` property:
+![A screenshot of the sample app running on an iPhone 14 Pro. The app's list view shows a list of 3 earthquakes. Text in the bottom toolbar on the left indicates that there are three earthquakes in the list out of 9,738 total stored earthquakes. A date picker in the bottom toolbar on the right is inactivate and displays the date August 21, 2023. A search field appears at the top of the display and contains the text Nevada. All of the items visible in the list have the text Nevada in their location names.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/Filtering-and-sorting-persistent-data-3@2x.png)
+
+> **Note**: To learn how the app retrieves and stores earthquake data, see [Maintaining a local copy of server data](./maintaining-a-local-copy-of-server-data.md).
+
+##### Read the entire collection with a simple query
+
+The app’s `ContentView` fetches a complete list of earthquakes by applying the [`Query`](./query.md) macro to its `quakes` property:
 
 ```swift
 @Query private var quakes: [Quake]
@@ -34,7 +42,7 @@ The query macro injects code that keeps the array of earthquake instances synchr
 .navigationSubtitle(quakes[selectedId]?.fullDate ?? "")
 ```
 
-The above code relies on a subscript method that the app defines in an extension of [`Array`](https://developer.apple.com/documentation/swift/array):
+The above code relies on a subscript method that the app defines in an extension of [`Array`](../Swift/array.md):
 
 ```swift
 extension Array where Element: Quake {
@@ -44,13 +52,13 @@ extension Array where Element: Quake {
 }
 ```
 
-The subscript definition relies on the fact that model objects — types attributed with the [`Model()`](model().md) macro, like `Quake` — automatically conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, which means that each earthquake instance has a unique `id` parameter. When someone selects an earthquake in the list or map view, the app sets `selectedId` to the selected earthquake’s identifier.
+The subscript definition relies on the fact that model objects — types attributed with the [`Model()`](./model%28%29.md) macro, like `Quake` — automatically conform to the [`Identifiable`](../Swift/identifiable.md) protocol, which means that each earthquake instance has a unique `id` parameter. When someone selects an earthquake in the list or map view, the app sets `selectedId` to the selected earthquake’s identifier.
 
-##### Add a Sort Parameter to Order Data
+##### Add a sort parameter to order data
 
 The map view draws circles to represent quakes at particular locations, using a size for the circle that corresponds to the earthquake’s magnitude. To keep the circles visible when several overlap, `MapView` sorts its query by magnitude so that the map draws larger circles behind smaller ones.
 
-![A screenshot of the sample app running on an iPhone 14 Pro.](/images/com.apple.SwiftData/Filtering-and-sorting-persistent-data-4@2x.png)
+![A screenshot of the sample app running on an iPhone 14 Pro.](https://developer.apple.com/tutorials/images/com.apple.SwiftData/Filtering-and-sorting-persistent-data-4@2x.png)
 
 It introduces the sorting by adding parameters to the query macro:
 
@@ -73,14 +81,14 @@ Map(selection: $selectedIdMap) {
 
 > **Note**: The app binds `selectedIdMap` to the map’s selection input and manually synchronizes this with the main `selectedId` value that’s used elsewhere in code. Keeping separate selection values enables the app to detect changes driven from the map and then scroll the list to match.
 
-##### Define a Filter Using a Predicate
+##### Define a filter using a predicate
 
 To ensure that the app’s interface remains approachable, the app limits how many earthquakes it displays based on:
 
 - **A date** — To avoid overwhelming the map with too many markers, the app displays only one day’s worth of earthquakes at a time. People can choose which day to view.
 - **A location name** — To enable people to focus on specific earthquakes, people can enter text in a search field that the app matches against earthquake location names.
 
-To implement this filtering, the app defines a static method that returns a [`Predicate`](https://developer.apple.com/documentation/foundation/predicate) that takes into account both a search date and search text:
+To implement this filtering, the app defines a static method that returns a [`Predicate`](../Foundation/predicate.md) that takes into account both a search date and search text:
 
 ```swift
 static func predicate(
@@ -101,7 +109,7 @@ static func predicate(
 
 The app applies this predicate to the queries it creates dynamically, as the next section describes. By defining the predicate once in a central location, queries in multiple views can use it. This makes it easy to synchronize related views, like the list and map views, when the views have distinct queries.
 
-##### Update a Query Dynamically
+##### Update a query dynamically
 
 When someone selects a new date or changes the search text, the app needs to update the query to match. The map view achieves this by providing an initializer with `searchDate` and `searchText` inputs, and rebuilding the stored query using those values:
 
@@ -154,13 +162,14 @@ These two initializers have different sorting constraints to match the needs of 
 
 ## See Also
 
-- [macro Query()](query().md)
+### Model fetch
+- [macro Query()](./query%28%29.md)
   Fetches all instances of the attached model type.
-- [Additional query macros](additionalquerymacros.md)
+- [Additional query macros](./additionalquerymacros.md)
   Supplementary macros that enable you to narrow query results and tell SwiftData how to sort, order, and section those results.
-- [struct Query](query.md)
+- [struct Query](./query.md)
   A type that fetches models using the specified criteria, and manages those models so they remain in sync with the underlying data.
-- [struct FetchDescriptor](fetchdescriptor.md)
+- [struct FetchDescriptor](./fetchdescriptor.md)
   A type that describes the criteria, sort order, and any additional configuration to use when performing a fetch.
 
 

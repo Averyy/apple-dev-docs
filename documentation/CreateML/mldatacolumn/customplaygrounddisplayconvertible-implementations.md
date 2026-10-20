@@ -1,11 +1,12 @@
 # CustomPlaygroundDisplayConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var playgroundDescription: Any](mldatacolumn/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the column shown in a playground.
 
 

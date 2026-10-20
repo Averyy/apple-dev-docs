@@ -1,7 +1,8 @@
 # tryMap(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,9 +19,12 @@
 func tryMap<T>(_ transform: @escaping (Output) throws -> T) -> Publishers.TryMap<Upstream, T>
 ```
 
+Available when `Upstream` conforms to `Publisher`.
+
 ## See Also
 
-- [func map<T>((Output) -> T) -> Publishers.Map<Upstream, T>](publishers/map/map(_:).md)
+### Mapping elements
+- [func map<T>((Output) -> T) -> Publishers.Map<Upstream, T>](./map%28_%29.md)
 
 
 ---

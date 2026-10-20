@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius determines how many pixels are used to create the blur. The larger the radius, the blurrier the result.
 

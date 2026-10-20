@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the cell hides the accessory.
 
@@ -9,7 +10,7 @@ A Boolean value that determines whether the cell hides the accessory.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,9 +26,10 @@ Use this property to achieve a consistent layout across cells when some cells sh
 
 ## See Also
 
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/popupmenuoptions/reservedlayoutwidth.md)
+### Accessing configuration options
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/popupmenuoptions/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the accessory.
 
 

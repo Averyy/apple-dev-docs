@@ -1,7 +1,8 @@
 # imageBatch(for:imageDescriptor:kernel:count:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -17,9 +18,14 @@
 optional func imageBatch(for cmdBuf: any MTLCommandBuffer, imageDescriptor descriptor: MPSImageDescriptor, kernel: MPSKernel, count: Int) -> [MPSImage]
 ```
 
+```objc
+- (MPSImageBatch *) imageBatchForCommandBuffer:(id<MTLCommandBuffer>) cmdBuf imageDescriptor:(MPSImageDescriptor *) descriptor kernel:(MPSKernel *) kernel count:(NSUInteger) count;
+```
+
 ## See Also
 
-- [func image(for: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor, kernel: MPSKernel) -> MPSImage](mpsimageallocator/image(for:imagedescriptor:kernel:).md)
+### Instance Methods
+- [func image(for: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor, kernel: MPSKernel) -> MPSImage](./image%28for,imagedescriptor,kernel%29.md)
 
 
 ---

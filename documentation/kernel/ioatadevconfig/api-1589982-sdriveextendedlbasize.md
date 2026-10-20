@@ -1,14 +1,15 @@
 # sDriveExtendedLBASize
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 static UInt32 sDriveExtendedLBASize(UInt32 *lbaHi, UInt32 *lbaLo, const UInt16 *identifyData);
 ```
 

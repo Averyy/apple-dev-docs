@@ -1,18 +1,21 @@
 # SKPaymentTransactionState
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values representing the state of a transaction.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 3.0+ - Deprecated in 18.0
+- iPadOS 3.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.7+ - Deprecated in 15.0
+- tvOS - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use PurchaseResult from Product.purchase(confirmIn:options:).
 
 ## Declaration
 
@@ -20,35 +23,40 @@ Values representing the state of a transaction.
 enum SKPaymentTransactionState
 ```
 
+```c
+enum SKPaymentTransactionState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SKPaymentTransactionState.purchasing](skpaymenttransactionstate/purchasing.md)
+- [SKPaymentTransactionState.purchasing](./skpaymenttransactionstate/purchasing.md)
   A transaction that is being processed by the App Store.
-- [SKPaymentTransactionState.purchased](skpaymenttransactionstate/purchased.md)
+- [SKPaymentTransactionState.purchased](./skpaymenttransactionstate/purchased.md)
   A successfully processed transaction.
-- [SKPaymentTransactionState.failed](skpaymenttransactionstate/failed.md)
+- [SKPaymentTransactionState.failed](./skpaymenttransactionstate/failed.md)
   A failed transaction.
-- [SKPaymentTransactionState.restored](skpaymenttransactionstate/restored.md)
+- [SKPaymentTransactionState.restored](./skpaymenttransactionstate/restored.md)
   A transaction that restores content previously purchased by the user.
-- [SKPaymentTransactionState.deferred](skpaymenttransactionstate/deferred.md)
+- [SKPaymentTransactionState.deferred](./skpaymenttransactionstate/deferred.md)
   A transaction that is in the queue, but its final status is pending external action such as Ask to Buy.
 ### Initializers
-- [init?(rawValue: Int)](skpaymenttransactionstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./skpaymenttransactionstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var transactionState: SKPaymentTransactionState](skpaymenttransaction/transactionstate.md)
+### Getting Transaction State
+- [var transactionState: SKPaymentTransactionState](./skpaymenttransaction/transactionstate.md)
   The current state of the transaction.
 
 

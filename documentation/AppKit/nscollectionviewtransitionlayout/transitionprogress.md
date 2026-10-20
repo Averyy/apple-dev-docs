@@ -1,7 +1,8 @@
 # transitionProgress
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The completion percentage of the transition.
 
@@ -14,17 +15,22 @@ The completion percentage of the transition.
 var transitionProgress: CGFloat { get set }
 ```
 
+```objc
+@property (assign) CGFloat transitionProgress;
+```
+
 #### Discussion
 
-During the transition, set the value of this property periodically and call the [`invalidateLayout()`](nscollectionviewlayout/invalidatelayout().md) method to force the collection view to update item positions. For example, when driving a transition using a gesture recognizer, you can set this property from the handler method of your gesture recognizer.
+During the transition, set the value of this property periodically and call the [`invalidateLayout()`](../nscollectionviewlayout/invalidatelayout%28%29.md) method to force the collection view to update item positions. For example, when driving a transition using a gesture recognizer, you can set this property from the handler method of your gesture recognizer.
 
 ## See Also
 
-- [func updateValue(CGFloat, forAnimatedKey: NSCollectionViewTransitionLayout.AnimatedKey)](nscollectionviewtransitionlayout/updatevalue(_:foranimatedkey:).md)
+### Updating the Transition Information
+- [func updateValue(CGFloat, forAnimatedKey: NSCollectionViewTransitionLayout.AnimatedKey)](./updatevalue%28_,foranimatedkey%29.md)
   Sets the value of a key whose value you use during the animation.
-- [func value(forAnimatedKey: NSCollectionViewTransitionLayout.AnimatedKey) -> CGFloat](nscollectionviewtransitionlayout/value(foranimatedkey:).md)
+- [func value(forAnimatedKey: NSCollectionViewTransitionLayout.AnimatedKey) -> CGFloat](./value%28foranimatedkey%29.md)
   Returns the most recently set value for the specified key.
-- [NSCollectionViewTransitionLayout.AnimatedKey](nscollectionviewtransitionlayout/animatedkey.md)
+- [NSCollectionViewTransitionLayout.AnimatedKey](./animatedkey.md)
 
 
 ---

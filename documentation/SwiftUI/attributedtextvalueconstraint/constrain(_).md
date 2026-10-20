@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Enforce constraints on the attribute.
@@ -23,9 +24,9 @@ func constrain(_ container: inout Self.Attributes)
 
 #### Discussion
 
-A function that transforms the [`AttributeKey`](attributedtextvalueconstraint/attributekey.md) on the given `container` so it represents a formatting that the conforming type defines to be valid.
+A function that transforms the [`AttributeKey`](./attributekey.md) on the given `container` so it represents a formatting that the conforming type defines to be valid.
 
-This function can generally read any attribute on `container` and it will produce a value that has been constrained by all [`AttributedTextValueConstraint`](attributedtextvalueconstraint.md) listed in the associated text formatting definition above the constraint reading the attribute.
+This function can generally read any attribute on `container` and it will produce a value that has been constrained by all [`AttributedTextValueConstraint`](../attributedtextvalueconstraint.md) listed in the associated text formatting definition above the constraint reading the attribute.
 
 Consider the following example:
 
@@ -46,7 +47,7 @@ struct NoEqualForegroundAndBackground: AttributedTextValueConstraint {
 }
 ```
 
-When this constrain function accesses `container.foregroundColor`, the system establishes that the background color depends on the foreground color. At that time, it checks if the [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) this constraint is part of defines constraints on the foreground color *above* `NoEqualForegroundAndBackground` and applies them. Thus, when the access to `container.foregroundColor` returns, this function reads the constrained value.
+When this constrain function accesses `container.foregroundColor`, the system establishes that the background color depends on the foreground color. At that time, it checks if the [`AttributedTextFormattingDefinition`](../attributedtextformattingdefinition.md) this constraint is part of defines constraints on the foreground color *above* `NoEqualForegroundAndBackground` and applies them. Thus, when the access to `container.foregroundColor` returns, this function reads the constrained value.
 
 
 ---

@@ -1,7 +1,8 @@
 # operation
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operation responsible for creating this tensor.
 
@@ -17,6 +18,10 @@ The operation responsible for creating this tensor.
 
 ```swift
 var operation: MPSGraphOperation { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) MPSGraphOperation * operation;
 ```
 
 

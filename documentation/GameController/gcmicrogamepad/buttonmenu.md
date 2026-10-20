@@ -1,7 +1,8 @@
 # buttonMenu
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu face button that players use to enter the main menu and pause the game.
 
@@ -19,11 +20,16 @@ The menu face button that players use to enter the main menu and pause the game.
 var buttonMenu: GCControllerButtonInput { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerButtonInput * buttonMenu;
+```
+
 ## See Also
 
-- [var buttonA: GCControllerButtonInput](gcmicrogamepad/buttona.md)
+### Getting face button inputs
+- [var buttonA: GCControllerButtonInput](./buttona.md)
   The button that the user activates by pressing harder on the touchpad.
-- [var buttonX: GCControllerButtonInput](gcmicrogamepad/buttonx.md)
+- [var buttonX: GCControllerButtonInput](./buttonx.md)
   The second face button element.
 
 

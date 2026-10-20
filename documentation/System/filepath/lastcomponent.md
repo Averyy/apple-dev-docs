@@ -1,7 +1,8 @@
 # lastComponent
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the final component of the path. Returns `nil` if the path is empty or only contains a root.
 
@@ -26,18 +27,22 @@ Note: Even if the final component is a special directory (`.` or `..`), it will 
 
 Examples:
 
-- Unix: - `/usr/local/bin/ => bin`
-- `/tmp/foo.txt    => foo.txt`
-- `/tmp/foo.txt/.. => ..`
-- `/tmp/foo.txt/.  => .`
-- `/               => nil`
-- Windows: - `C:\Users\                    => Users`
-- `C:Users\                     => Users`
-- `C:\                          => nil`
-- `\Users\                      => Users`
-- `\\?\UNC\server\share\bar.exe => bar.exe`
-- `\\server\share               => nil`
-- `\\?\UNC\server\share\        => nil`
+- Unix:
+
+  - `/usr/local/bin/ => bin`
+  - `/tmp/foo.txt    => foo.txt`
+  - `/tmp/foo.txt/.. => ..`
+  - `/tmp/foo.txt/.  => .`
+  - `/               => nil`
+- Windows:
+
+  - `C:\Users\                    => Users`
+  - `C:Users\                     => Users`
+  - `C:\                          => nil`
+  - `\Users\                      => Users`
+  - `\\?\UNC\server\share\bar.exe => bar.exe`
+  - `\\server\share               => nil`
+  - `\\?\UNC\server\share\        => nil`
 
 
 ---

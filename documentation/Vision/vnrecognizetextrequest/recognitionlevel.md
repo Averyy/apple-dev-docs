@@ -1,7 +1,8 @@
 # recognitionLevel
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that determines whether the request prioritizes accuracy or speed in text recognition.
 
@@ -19,19 +20,24 @@ A value that determines whether the request prioritizes accuracy or speed in tex
 var recognitionLevel: VNRequestTextRecognitionLevel { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) VNRequestTextRecognitionLevel recognitionLevel;
+```
+
 ## Mentions
 
-- [Recognizing Text in Images](recognizing-text-in-images.md)
+- [Recognizing Text in Images](../recognizing-text-in-images.md)
 
 #### Discussion
 
-The recognition level determines which techniques the request uses during the text recognition. Set this value to [`VNRequestTextRecognitionLevel.fast`](vnrequesttextrecognitionlevel/fast.md) to prioritize speed over accuracy, and to [`VNRequestTextRecognitionLevel.accurate`](vnrequesttextrecognitionlevel/accurate.md) for longer, more computationally intensive recognition.
+The recognition level determines which techniques the request uses during the text recognition. Set this value to [`VNRequestTextRecognitionLevel.fast`](../vnrequesttextrecognitionlevel/fast.md) to prioritize speed over accuracy, and to [`VNRequestTextRecognitionLevel.accurate`](../vnrequesttextrecognitionlevel/accurate.md) for longer, more computationally intensive recognition.
 
 ## See Also
 
-- [var minimumTextHeight: Float](vnrecognizetextrequest/minimumtextheight.md)
+### Customizing Recognition Constraints
+- [var minimumTextHeight: Float](./minimumtextheight.md)
   The minimum height, relative to the image height, of the text to recognize.
-- [enum VNRequestTextRecognitionLevel](vnrequesttextrecognitionlevel.md)
+- [enum VNRequestTextRecognitionLevel](../vnrequesttextrecognitionlevel.md)
   Constants that identify the performance and accuracy of the text recognition.
 
 

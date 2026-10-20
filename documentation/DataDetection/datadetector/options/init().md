@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: DataDetection  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new data detector.
 

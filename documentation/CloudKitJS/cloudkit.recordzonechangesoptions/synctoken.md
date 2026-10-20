@@ -1,7 +1,8 @@
 # syncToken
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identifies a point in the zone’s change history. The first time you get record changes, omit this key and if `moreComing` is `true` in the response, use the `syncToken` in the response in the next request until `moreComing` is `false`. Otherwise, get the current sync token by fetching a zone.
 
@@ -10,7 +11,7 @@ Identifies a point in the zone’s change history. The first time you get record
 
 ## Declaration
 
-```swift
+```
 attribute String syncToken;
 ```
 

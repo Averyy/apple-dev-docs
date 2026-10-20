@@ -1,7 +1,8 @@
 # wrappedSum()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the sum of the scalars in the vector, computed with wrapping addition.
 
@@ -19,6 +20,8 @@ Returns the sum of the scalars in the vector, computed with wrapping addition.
 ```swift
 func wrappedSum() -> Self.Scalar
 ```
+
+Available when `Scalar` conforms to `FixedWidthInteger`.
 
 #### Discussion
 

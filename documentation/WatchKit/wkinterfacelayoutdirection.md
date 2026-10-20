@@ -1,7 +1,8 @@
 # WKInterfaceLayoutDirection
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the directional flow of the user interface.
 
@@ -14,33 +15,38 @@ Specifies the directional flow of the user interface.
 enum WKInterfaceLayoutDirection
 ```
 
+```c
+enum WKInterfaceLayoutDirection : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKInterfaceLayoutDirection.leftToRight](wkinterfacelayoutdirection/lefttoright.md)
+- [WKInterfaceLayoutDirection.leftToRight](./wkinterfacelayoutdirection/lefttoright.md)
   The layout direction is left-to-right.
-- [WKInterfaceLayoutDirection.rightToLeft](wkinterfacelayoutdirection/righttoleft.md)
+- [WKInterfaceLayoutDirection.rightToLeft](./wkinterfacelayoutdirection/righttoleft.md)
   The layout direction right-to-left. This value is appropriate when your app is running with localizations such as Arabic or Hebrew that should have the user interface layout origin on the right edge of the coordinate system.
 ### Initializers
-- [init?(rawValue: Int)](wkinterfacelayoutdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkinterfacelayoutdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var layoutDirection: WKInterfaceLayoutDirection](wkinterfacedevice/layoutdirection.md)
+### Accessing the Layout Direction
+- [var layoutDirection: WKInterfaceLayoutDirection](./wkinterfacedevice/layoutdirection.md)
   The layout direction of the user interface.
-- [class func interfaceLayoutDirection(for: WKInterfaceSemanticContentAttribute) -> WKInterfaceLayoutDirection](wkinterfacedevice/interfacelayoutdirection(for:).md)
+- [class func interfaceLayoutDirection(for: WKInterfaceSemanticContentAttribute) -> WKInterfaceLayoutDirection](./wkinterfacedevice/interfacelayoutdirection%28for%29.md)
   Returns the user interface direction for the given semantic content attribute.
-- [enum WKInterfaceSemanticContentAttribute](wkinterfacesemanticcontentattribute.md)
+- [enum WKInterfaceSemanticContentAttribute](./wkinterfacesemanticcontentattribute.md)
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
 
 

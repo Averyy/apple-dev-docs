@@ -1,7 +1,8 @@
 # ByteCountFormatter.CountStyle
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies display of file or storage byte counts. The display style is platform specific.
 
@@ -20,33 +21,38 @@ Specifies display of file or storage byte counts. The display style is platform 
 enum CountStyle
 ```
 
+```c
+enum NSByteCountFormatterCountStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [ByteCountFormatter.CountStyle.file](bytecountformatter/countstyle-swift.enum/file.md)
+- [ByteCountFormatter.CountStyle.file](./countstyle-swift.enum/file.md)
   Specifies display of file byte counts. The actual behavior for this is platform-specific; in macOS 10.8, this uses the decimal style, but that may change over time.
-- [ByteCountFormatter.CountStyle.memory](bytecountformatter/countstyle-swift.enum/memory.md)
+- [ByteCountFormatter.CountStyle.memory](./countstyle-swift.enum/memory.md)
   Specifies display of memory byte counts. The actual behavior for this is platform-specific; in macOS 10.8, this uses the binary style, but that may change over time.
-- [ByteCountFormatter.CountStyle.decimal](bytecountformatter/countstyle-swift.enum/decimal.md)
-  Causes 1000 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.CountStyle.file`](bytecountformatter/countstyle-swift.enum/file.md) or [`ByteCountFormatter.CountStyle.memory`](bytecountformatter/countstyle-swift.enum/memory.md) in most cases.
-- [ByteCountFormatter.CountStyle.binary](bytecountformatter/countstyle-swift.enum/binary.md)
-  Causes 1024 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.CountStyle.file`](bytecountformatter/countstyle-swift.enum/file.md) or [`ByteCountFormatter.CountStyle.memory`](bytecountformatter/countstyle-swift.enum/memory.md) in most cases.
+- [ByteCountFormatter.CountStyle.decimal](./countstyle-swift.enum/decimal.md)
+  Causes 1000 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.CountStyle.file`](./countstyle-swift.enum/file.md) or [`ByteCountFormatter.CountStyle.memory`](./countstyle-swift.enum/memory.md) in most cases.
+- [ByteCountFormatter.CountStyle.binary](./countstyle-swift.enum/binary.md)
+  Causes 1024 bytes to be shown as 1 KB. It is better to use [`ByteCountFormatter.CountStyle.file`](./countstyle-swift.enum/file.md) or [`ByteCountFormatter.CountStyle.memory`](./countstyle-swift.enum/memory.md) in most cases.
 ### Initializers
-- [init?(rawValue: Int)](bytecountformatter/countstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./countstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ByteCountFormatter.Units](bytecountformatter/units.md)
+### Constants
+- [ByteCountFormatter.Units](./units.md)
   Specifies the units appropriate for the formatter to display. Specifying any units explicitly causes just those units to be used in showing the number.
 
 

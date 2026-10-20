@@ -1,7 +1,8 @@
 # canAddEdge(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether an edge can be added to the graph.
 

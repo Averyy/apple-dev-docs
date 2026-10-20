@@ -1436,9 +1436,8 @@
       "hash": "32738a7cae6b9759578d4bbb96443c6ca9a81103a82060c800355f6292fc7c9d"
     },
     "https://developer.apple.com/documentation/accessibility/integrating_accessibility_into_your_app": {
-      "etag": "W/\"181b91a1024fee5bd66da9b68bfa058d\"",
       "file_path": "documentation/Accessibility/integrating_accessibility_into_your_app.md",
-      "hash": "9d98d9f0dcd9320509d563fb1499c2fb004d0b0e5c617d9a862eb2a8d4f3ebfa"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/accessibility/mobility": {
       "etag": "\"32c1-659026c3cabfd-df\"",
@@ -2956,9 +2955,8 @@
       "hash": "32738a7cae6b9759578d4bbb96443c6ca9a81103a82060c800355f6292fc7c9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/integrating_accessibility_into_your_app.json": {
-      "etag": "W/\"181b91a1024fee5bd66da9b68bfa058d\"",
       "file_path": "documentation/Accessibility/integrating_accessibility_into_your_app.md",
-      "hash": "9d98d9f0dcd9320509d563fb1499c2fb004d0b0e5c617d9a862eb2a8d4f3ebfa"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/mobility.json": {
       "etag": "\"32c1-659026c3cabfd-df\"",
@@ -3042,6 +3040,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 608
   }
 }

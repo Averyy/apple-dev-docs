@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,21 +18,21 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBDeviceCountExceededNotificationType](1646362-anonymous/kusbdevicecountexceedednotificationtype.md)
-- [kUSBEndpointCountExceededNotificationType](1646362-anonymous/kusbendpointcountexceedednotificationtype.md)
-- [kUSBGangOverCurrentNotificationType](1646362-anonymous/kusbgangovercurrentnotificationtype.md)
-- [kUSBHubCountExceededNotificationType](1646362-anonymous/kusbhubcountexceedednotificationtype.md)
-- [kUSBIndividualOverCurrentNotificationType](1646362-anonymous/kusbindividualovercurrentnotificationtype.md)
-- [kUSBNoUserNotificationType](1646362-anonymous/kusbnousernotificationtype.md)
-- [kUSBNotEnoughPowerNoACNotificationType](1646362-anonymous/kusbnotenoughpowernoacnotificationtype.md)
-- [kUSBNotEnoughPowerNotificationType](1646362-anonymous/kusbnotenoughpowernotificationtype.md)
-- [kUSBTDMLowBatteryType](1646362-anonymous/kusbtdmlowbatterytype.md)
-- [kUSBUnsupportedNotificationType](1646362-anonymous/kusbunsupportednotificationtype.md)
-- [kUSBiOSDeviceNotEnoughPowerNotificationType](1646362-anonymous/kusbiosdevicenotenoughpowernotificationtype.md)
-- [kUSBCTBNotEnoughPowerNotificationType](1646362-anonymous/kusbctbnotenoughpowernotificationtype.md)
-- [kUSBCTBUnsupportedNotificationType](1646362-anonymous/kusbctbunsupportednotificationtype.md)
-- [kUSBCUnsupportedTBCableNotificationType](1646362-anonymous/kusbcunsupportedtbcablenotificationtype.md)
-- [kUSBCUnsupportedTBPortNotificationType](1646362-anonymous/kusbcunsupportedtbportnotificationtype.md)
+- [kUSBDeviceCountExceededNotificationType](./api-1646362-anonymous/kusbdevicecountexceedednotificationtype.md)
+- [kUSBEndpointCountExceededNotificationType](./api-1646362-anonymous/kusbendpointcountexceedednotificationtype.md)
+- [kUSBGangOverCurrentNotificationType](./api-1646362-anonymous/kusbgangovercurrentnotificationtype.md)
+- [kUSBHubCountExceededNotificationType](./api-1646362-anonymous/kusbhubcountexceedednotificationtype.md)
+- [kUSBIndividualOverCurrentNotificationType](./api-1646362-anonymous/kusbindividualovercurrentnotificationtype.md)
+- [kUSBNoUserNotificationType](./api-1646362-anonymous/kusbnousernotificationtype.md)
+- [kUSBNotEnoughPowerNoACNotificationType](./api-1646362-anonymous/kusbnotenoughpowernoacnotificationtype.md)
+- [kUSBNotEnoughPowerNotificationType](./api-1646362-anonymous/kusbnotenoughpowernotificationtype.md)
+- [kUSBTDMLowBatteryType](./api-1646362-anonymous/kusbtdmlowbatterytype.md)
+- [kUSBUnsupportedNotificationType](./api-1646362-anonymous/kusbunsupportednotificationtype.md)
+- [kUSBiOSDeviceNotEnoughPowerNotificationType](./api-1646362-anonymous/kusbiosdevicenotenoughpowernotificationtype.md)
+- [kUSBCTBNotEnoughPowerNotificationType](./api-1646362-anonymous/kusbctbnotenoughpowernotificationtype.md)
+- [kUSBCTBUnsupportedNotificationType](./api-1646362-anonymous/kusbctbunsupportednotificationtype.md)
+- [kUSBCUnsupportedTBCableNotificationType](./api-1646362-anonymous/kusbcunsupportedtbcablenotificationtype.md)
+- [kUSBCUnsupportedTBPortNotificationType](./api-1646362-anonymous/kusbcunsupportedtbportnotificationtype.md)
 
 
 ---

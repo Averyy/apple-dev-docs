@@ -1,7 +1,8 @@
 # numDocs
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of elements in the array specifiedby the `itemRefs` field.The value of this field can be `0`,in which case the application designated by `appRef` islaunched without opening any items.
 
@@ -12,6 +13,10 @@ The number of elements in the array specifiedby the `itemRefs` field.The value o
 
 ```swift
 var numDocs: Int
+```
+
+```c
+ItemCount numDocs;
 ```
 
 

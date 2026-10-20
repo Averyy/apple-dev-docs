@@ -1,17 +1,22 @@
 # init(id:attributeElementValue:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new service attribute with the given ID and element value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!(id newAttributeID: BluetoothSDPServiceAttributeID, attributeElementValue: NSObject!)
+```
+
+```objc
+- (instancetype) initWithID:(BluetoothSDPServiceAttributeID) newAttributeID attributeElementValue:(NSObject *) attributeElementValue;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ See +[IOBluetoothSDPDataElement withElementValue:] for a description of the type
 
 ## See Also
 
-- [init!(id: BluetoothSDPServiceAttributeID, attributeElement: IOBluetoothSDPDataElement!)](iobluetoothsdpserviceattribute/init(id:attributeelement:)-7oebi.md)
+### Initializers
+- [init!(id: BluetoothSDPServiceAttributeID, attributeElement: IOBluetoothSDPDataElement!)](./init%28id,attributeelement%29-7oebi.md)
   Initializes a new service attribute with the given ID and data element.
 
 

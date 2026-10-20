@@ -1,7 +1,8 @@
 # readOnly
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A read-only buffer.
 
@@ -20,11 +21,15 @@ A read-only buffer.
 static var readOnly: CVPixelBufferLockFlags { get }
 ```
 
+```c
+kCVPixelBufferLock_ReadOnly
+```
+
 #### Discussion
 
 Set this flag if you don’t plan to modify buffer data while holding the lock. Setting this flag improves performance by preventing Core Video from invalidating  existing caches of the buffer’s contents.
 
-> ❗ **Important**:  If you pass this flag to the [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) function, you must also pass it to the [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md) function.
+> ❗ **Important**:  If you pass this flag to the [`CVPixelBufferLockBaseAddress(_:_:)`](../cvpixelbufferlockbaseaddress%28_,_%29.md) function, you must also pass it to the [`CVPixelBufferUnlockBaseAddress(_:_:)`](../cvpixelbufferunlockbaseaddress%28_,_%29.md) function.
 
 
 ---

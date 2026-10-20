@@ -1,7 +1,8 @@
 # printerPickerControllerDidSelectPrinter(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a printer was selected.
 
@@ -17,9 +18,13 @@ Tells the delegate that a printer was selected.
 optional func printerPickerControllerDidSelectPrinter(_ printerPickerController: UIPrinterPickerController)
 ```
 
+```objc
+- (void) printerPickerControllerDidSelectPrinter:(UIPrinterPickerController *) printerPickerController;
+```
+
 #### Discussion
 
-Implement this method if you want your delegate to be notified of the selected printer. The selected printer can be either one that the user selected or the initially selected printer that you specified when creating your [`UIPrinterPickerController`](uiprinterpickercontroller.md) object.
+Implement this method if you want your delegate to be notified of the selected printer. The selected printer can be either one that the user selected or the initially selected printer that you specified when creating your [`UIPrinterPickerController`](../uiprinterpickercontroller.md) object.
 
 ## Parameters
 

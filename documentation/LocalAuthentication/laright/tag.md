@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer you use to identify a right.
 
@@ -18,15 +19,20 @@ An integer you use to identify a right.
 var tag: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger tag;
+```
+
 ## See Also
 
-- [init()](laright/init.md)
+### Authorizing a right
+- [init()](./init%28%29.md)
   Creates a right using the default authorization requirements.
-- [init(requirement: LAAuthenticationRequirement)](laright/init(requirement:).md)
+- [init(requirement: LAAuthenticationRequirement)](./init%28requirement%29.md)
   Creates a right with the authentication requirements you supply.
-- [func authorize(localizedReason: String, completion: ((any Error)?) -> Void)](laright/authorize(localizedreason:completion:).md)
+- [func authorize(localizedReason: String, completion: ((any Error)?) -> Void)](./authorize%28localizedreason,completion%29.md)
   Performs an authorization on the right.
-- [func authorize(localizedReason: String, in: LAPresentationContext, completion: ((any Error)?) -> Void)](laright/authorize(localizedreason:in:completion:).md)
+- [func authorize(localizedReason: String, in: LAPresentationContext, completion: ((any Error)?) -> Void)](./authorize%28localizedreason,in,completion%29.md)
   Performs an authorization on the right with a window context you supply.
 
 

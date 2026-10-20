@@ -1,7 +1,8 @@
 # ParameterSummaryCaseBuilder
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A result builder that allows you to declaratively describe the cases of a switch statement in a parameter summary.
 
@@ -11,7 +12,7 @@ A result builder that allows you to declaratively describe the cases of a switch
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,33 +25,34 @@ enum ParameterSummaryCaseBuilder<Intent, Value> where Intent : AppIntent, Value 
 ## Topics
 
 ### Building switch statement cases
-- [static func buildBlock<C0, DefaultSummary>(C0, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:).md)
-- [static func buildBlock<C0, C1, DefaultSummary>(C0, C1, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, DefaultSummary>(C0, C1, C2, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, DefaultSummary>(C0, C1, C2, C3, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, DefaultSummary>(C0, C1, C2, C3, C4, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, DefaultSummary>(C0, C1, C2, C3, C4, C5, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](parametersummarycasebuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [struct ParameterSummaryTupleCaseCondition](parametersummarytuplecasecondition.md)
+- [static func buildBlock<C0, DefaultSummary>(C0, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_%29.md)
+- [static func buildBlock<C0, C1, DefaultSummary>(C0, C1, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, DefaultSummary>(C0, C1, C2, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, DefaultSummary>(C0, C1, C2, C3, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, DefaultSummary>(C0, C1, C2, C3, C4, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, DefaultSummary>(C0, C1, C2, C3, C4, C5, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, DefaultSummary>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>) -> ParameterSummaryTupleCaseCondition<Intent, Value, (C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, ParameterSummaryDefaultCaseCondition<Intent, Value, DefaultSummary>)>](./parametersummarycasebuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [struct ParameterSummaryTupleCaseCondition](./parametersummarytuplecasecondition.md)
   A type that represents a collection of case conditions for a specific switch statement.
 ### Type Methods
-- [static func buildExpression<C0>(C0) -> C0](parametersummarycasebuilder/buildexpression(_:).md)
+- [static func buildExpression<C0>(C0) -> C0](./parametersummarycasebuilder/buildexpression%28_%29.md)
 
 ## See Also
 
-- [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-4vxvs.md)
+### Creating a switch condition
+- [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](./parametersummaryswitchcondition/init%28_,_%29-4vxvs.md)
   Initializes a parameter summary Switch statement over widget family.
-- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-6cdw3.md)
+- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](./parametersummaryswitchcondition/init%28_,_%29-6cdw3.md)
   Creates a `Switch` statement that branches based on union value parameter cases.
-- [ParameterSummarySwitchCondition.WidgetFamily](parametersummaryswitchcondition/widgetfamily.md)
+- [ParameterSummarySwitchCondition.WidgetFamily](./parametersummaryswitchcondition/widgetfamily.md)
   An enum that represents a parameter summary Switch statement over widget family.
 
 

@@ -1,7 +1,8 @@
 # LibraryContentBuilder
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A function builder for generating arrays of library items without requiring full array literal syntax.
 
@@ -23,7 +24,7 @@ struct LibraryContentBuilder
 
 #### Overview
 
-Use the library content function builder to simplify the implementation of protocol requirements from you which provide arrays of library items. For example, without the builder, you would have to explicitly put items in an array in a [`views`](librarycontentprovider/views.md) implementation:
+Use the library content function builder to simplify the implementation of protocol requirements from you which provide arrays of library items. For example, without the builder, you would have to explicitly put items in an array in a [`views`](./librarycontentprovider/views.md) implementation:
 
 ```swift
 struct LibraryViewContent: LibraryContentProvider {
@@ -62,9 +63,9 @@ struct LibraryViewContent: LibraryContentProvider {
 ## Topics
 
 ### Type Methods
-- [static func buildBlock([LibraryItem]...) -> [LibraryItem]](librarycontentbuilder/buildblock(_:).md)
-- [static func buildExpression(LibraryItem) -> [LibraryItem]](librarycontentbuilder/buildexpression(_:)-8x2oz.md)
-- [static func buildExpression([LibraryItem]) -> [LibraryItem]](librarycontentbuilder/buildexpression(_:)-90ip4.md)
+- [static func buildBlock([LibraryItem]...) -> [LibraryItem]](./librarycontentbuilder/buildblock%28_%29.md)
+- [static func buildExpression(LibraryItem) -> [LibraryItem]](./librarycontentbuilder/buildexpression%28_%29-8x2oz.md)
+- [static func buildExpression([LibraryItem]) -> [LibraryItem]](./librarycontentbuilder/buildexpression%28_%29-90ip4.md)
 
 
 ---

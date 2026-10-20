@@ -1,7 +1,8 @@
 # Track IDs
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A list of track ID values (32-bit integers) specifying the related tracks.
 
@@ -11,9 +12,10 @@ Note that this is one case where track ID values can be set to `0`. Unused entri
 
 ## See Also
 
-- [Size](track_reference_type_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this track reference type atom.
-- [Type](track_reference_type_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

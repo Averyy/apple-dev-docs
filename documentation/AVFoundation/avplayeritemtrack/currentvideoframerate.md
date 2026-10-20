@@ -1,7 +1,8 @@
 # currentVideoFrameRate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current frame rate of the video track as it plays.
 
@@ -20,17 +21,22 @@ nonisolated
 var currentVideoFrameRate: Float { get }
 ```
 
+```objc
+@property (readonly) float currentVideoFrameRate;
+```
+
 #### Discussion
 
-If the media type of the [`assetTrack`](avplayeritemtrack/assettrack.md) is [`video`](avmediatype/video.md), the property indicates the current frame rate of the track as it plays, in frames per second. If the item isn’t playing, or if the media type of the track isn’t video, the value of this property is `0.0`.
+If the media type of the [`assetTrack`](./assettrack.md) is [`video`](../avmediatype/video.md), the property indicates the current frame rate of the track as it plays, in frames per second. If the item isn’t playing, or if the media type of the track isn’t video, the value of this property is `0.0`.
 
 This property isn’t key-value observable.
 
 ## See Also
 
-- [var videoFieldMode: String?](avplayeritemtrack/videofieldmode.md)
+### Configuring video properties
+- [var videoFieldMode: String?](./videofieldmode.md)
   A mode that specifies the handling of video frames that contain multiple fields.
-- [let AVPlayerItemTrackVideoFieldModeDeinterlaceFields: String](avplayeritemtrackvideofieldmodedeinterlacefields.md)
+- [let AVPlayerItemTrackVideoFieldModeDeinterlaceFields: String](../avplayeritemtrackvideofieldmodedeinterlacefields.md)
   A video field mode that requests deinterlacing of video fields.
 
 

@@ -1,7 +1,8 @@
 # MTRMessagesMessageControlBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,28 +19,32 @@
 struct MTRMessagesMessageControlBitmap
 ```
 
+```c
+enum MTRMessagesMessageControlBitmap : uint8_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt8)](mtrmessagesmessagecontrolbitmap/init(rawvalue:).md)
+- [init(rawValue: UInt8)](./mtrmessagesmessagecontrolbitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var confirmationRequired: MTRMessagesMessageControlBitmap](mtrmessagesmessagecontrolbitmap/confirmationrequired.md)
-- [static var messageConfirmed: MTRMessagesMessageControlBitmap](mtrmessagesmessagecontrolbitmap/messageconfirmed.md)
-- [static var messageProtected: MTRMessagesMessageControlBitmap](mtrmessagesmessagecontrolbitmap/messageprotected.md)
-- [static var replyMessage: MTRMessagesMessageControlBitmap](mtrmessagesmessagecontrolbitmap/replymessage.md)
-- [static var responseRequired: MTRMessagesMessageControlBitmap](mtrmessagesmessagecontrolbitmap/responserequired.md)
+- [static var confirmationRequired: MTRMessagesMessageControlBitmap](./mtrmessagesmessagecontrolbitmap/confirmationrequired.md)
+- [static var messageConfirmed: MTRMessagesMessageControlBitmap](./mtrmessagesmessagecontrolbitmap/messageconfirmed.md)
+- [static var messageProtected: MTRMessagesMessageControlBitmap](./mtrmessagesmessagecontrolbitmap/messageprotected.md)
+- [static var replyMessage: MTRMessagesMessageControlBitmap](./mtrmessagesmessagecontrolbitmap/replymessage.md)
+- [static var responseRequired: MTRMessagesMessageControlBitmap](./mtrmessagesmessagecontrolbitmap/responserequired.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

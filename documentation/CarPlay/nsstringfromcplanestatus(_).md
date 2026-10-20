@@ -1,7 +1,8 @@
 # NSStringFromCPLaneStatus(_:)
 
 **Framework**: CarPlay  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.4+
@@ -12,6 +13,10 @@
 
 ```swift
 func NSStringFromCPLaneStatus(_ laneStatus: CPLaneStatus) -> String!
+```
+
+```c
+NSString *NSStringFromCPLaneStatus(CPLaneStatus laneStatus);
 ```
 
 

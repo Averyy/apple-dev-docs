@@ -1,7 +1,8 @@
 # init(receiverBlock:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio sink node with a block that receives audio data.
 
@@ -20,6 +21,10 @@ Creates an audio sink node with a block that receives audio data.
 init(receiverBlock block: @escaping AVAudioSinkNodeReceiverBlock)
 ```
 
+```objc
+- (instancetype) initWithReceiverBlock:(AVAudioSinkNodeReceiverBlock) block;
+```
+
 #### Discussion
 
 When connecting the audio sink node to another node, the system uses the connection format to set the audio format for the input bus.
@@ -34,7 +39,8 @@ When receiving data, the system sets the audio format using the node’s input f
 
 ## See Also
 
-- [typealias AVAudioSinkNodeReceiverBlock](avaudiosinknodereceiverblock.md)
+### Creating an audio sink node
+- [typealias AVAudioSinkNodeReceiverBlock](../avaudiosinknodereceiverblock.md)
   A block that receives audio data from an audio sink node.
 
 

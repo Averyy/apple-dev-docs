@@ -1,7 +1,8 @@
 # loadedTimeRanges
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -21,8 +22,9 @@ var loadedTimeRanges: [CMTimeRange] { get }
 
 ## See Also
 
-- [var timeTaken: TimeInterval](avmetricplayeritemlikelytokeepupevent/timetaken.md)
-- [var variant: AVAssetVariant?](avmetricplayeritemlikelytokeepupevent/variant.md)
+### Inspecting the event
+- [var timeTaken: TimeInterval](./timetaken.md)
+- [var variant: AVAssetVariant?](./variant.md)
 
 
 ---

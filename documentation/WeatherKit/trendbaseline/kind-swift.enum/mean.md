@@ -1,7 +1,8 @@
 # TrendBaseline.Kind.mean
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The baseline value is a mean (or average) of other values.
 

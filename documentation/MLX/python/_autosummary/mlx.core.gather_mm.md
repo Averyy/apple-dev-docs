@@ -6,39 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ga
 
 # mlx.core.gather_mm
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.gather_mm.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.gather_mm
-
- Table of contents 
-
-## Contents
-
-# mlx.core.gather_mm
-
-**gather_mm(*a: array*, *b: array*, */*, *lhs_indices: array | None = None*, *rhs_indices: array | None = None*, ***, *sorted_indices: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**gather_mm(*a: array*, *b: array*, */*, *lhs_indices: array | None = None*, *rhs_indices: array | None = None*, ***, *sorted_indices: bool = False*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Matrix multiplication with matrix-level gather.
 Performs a gather of the operands with the given indices followed by a
 (possibly batched) matrix multiplication of two arrays.  This operation
-is more efficient than explicitly applying a [take()](mlx.core.take.html#mlx.core.take) followed by a
-[matmul()](mlx.core.matmul.html#mlx.core.matmul).
+is more efficient than explicitly applying a [take()](mlx.core.take.md#mlx.core.take) followed by a
+[matmul()](mlx.core.matmul.md#mlx.core.matmul).
 The indices `lhs_indices` and `rhs_indices` contain flat indices
 along the batch dimensions (i.e. all but the last two dimensions) of
 `a` and `b` respectively.
@@ -51,10 +24,10 @@ flag can be passed for a possible faster implementation.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**b** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
-**lhs_indices** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Integer indices for `a`. Default: `None`
-**rhs_indices** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Integer indices for `b`. Default: `None`
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+**lhs_indices** ([array](mlx.core.array.md#mlx.core.array)*, **optional*) – Integer indices for `a`. Default: `None`
+**rhs_indices** ([array](mlx.core.array.md#mlx.core.array)*, **optional*) – Integer indices for `b`. Default: `None`
 **sorted_indices** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – May allow a faster implementation
 if the passed indices are sorted. Default: `False`.
 
@@ -62,6 +35,4 @@ Returns:
 The output array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

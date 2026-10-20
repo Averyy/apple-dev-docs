@@ -5,14 +5,14 @@
 ## Topics
 
 ### Constants
-- [var kCollateAttributesNotFoundErr: Int](kcollateattributesnotfounderr.md)
-- [var kCollateBufferTooSmall: Int](kcollatebuffertoosmall.md)
-- [var kCollateInvalidChar: Int](kcollateinvalidchar.md)
-- [var kCollateInvalidCollationRef: Int](kcollateinvalidcollationref.md)
-- [var kCollateInvalidOptions: Int](kcollateinvalidoptions.md)
-- [var kCollateMissingUnicodeTableErr: Int](kcollatemissingunicodetableerr.md)
-- [var kCollatePatternNotFoundErr: Int](kcollatepatternnotfounderr.md)
-- [var kCollateUnicodeConvertFailedErr: Int](kcollateunicodeconvertfailederr.md)
+- [var kCollateAttributesNotFoundErr: Int](../../kcollateattributesnotfounderr.md)
+- [var kCollateBufferTooSmall: Int](../../kcollatebuffertoosmall.md)
+- [var kCollateInvalidChar: Int](../../kcollateinvalidchar.md)
+- [var kCollateInvalidCollationRef: Int](../../kcollateinvalidcollationref.md)
+- [var kCollateInvalidOptions: Int](../../kcollateinvalidoptions.md)
+- [var kCollateMissingUnicodeTableErr: Int](../../kcollatemissingunicodetableerr.md)
+- [var kCollatePatternNotFoundErr: Int](../../kcollatepatternnotfounderr.md)
+- [var kCollateUnicodeConvertFailedErr: Int](../../kcollateunicodeconvertfailederr.md)
 
 
 ---

@@ -1,15 +1,20 @@
 # rfcommChannelClosed(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func rfcommChannelClosed(_ rfcommChannel: IOBluetoothRFCOMMChannel!)
+```
+
+```objc
+- (void) rfcommChannelClosed:(IOBluetoothRFCOMMChannel *) rfcommChannel;
 ```
 
 

@@ -1,17 +1,22 @@
 # searchType
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Set the devices that are found.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var searchType: IOBluetoothDeviceSearchTypes { get set }
+```
+
+```objc
+@property (assign) IOBluetoothDeviceSearchTypes searchType;
 ```
 
 #### Discussion

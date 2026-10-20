@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that the protocol implementation has created a response object for the request.
@@ -19,6 +20,10 @@ Tells the client that the protocol implementation has created a response object 
 
 ```swift
 func urlProtocol(_ protocol: URLProtocol, didReceive response: URLResponse, cacheStoragePolicy policy: URLCache.StoragePolicy)
+```
+
+```objc
+- (void) URLProtocol:(NSURLProtocol *) protocol didReceiveResponse:(NSURLResponse *) response cacheStoragePolicy:(NSURLCacheStoragePolicy) policy;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # UICellAccessory.OutlineDisclosureOptions.Style.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system automatically determines the style depending on whether the cell’s configuration is as a section header.
 
@@ -9,7 +10,7 @@ The system automatically determines the style depending on whether the cell’s 
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ case automatic
 
 ## See Also
 
-- [UICellAccessory.OutlineDisclosureOptions.Style.cell](uicellaccessory-swift.struct/outlinedisclosureoptions/style-swift.enum/cell.md)
+### Constants
+- [UICellAccessory.OutlineDisclosureOptions.Style.cell](./cell.md)
   The style to use for a selectable cell with nested children.
-- [UICellAccessory.OutlineDisclosureOptions.Style.header](uicellaccessory-swift.struct/outlinedisclosureoptions/style-swift.enum/header.md)
+- [UICellAccessory.OutlineDisclosureOptions.Style.header](./header.md)
   The style to use for a section header.
 
 

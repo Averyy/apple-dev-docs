@@ -1,7 +1,8 @@
 # contextMenuInteraction(_:willDisplayMenuFor:animator:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when a menu display begins.
 
@@ -18,6 +19,10 @@ Informs the delegate when a menu display begins.
 optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, willDisplayMenuFor configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)
 ```
 
+```objc
+- (void) contextMenuInteraction:(UIContextMenuInteraction *) interaction willDisplayMenuForConfiguration:(UIContextMenuConfiguration *) configuration animator:(id<UIContextMenuInteractionAnimating>) animator;
+```
+
 ## Parameters
 
 - `interaction`: The interaction object that triggered the interaction.
@@ -26,9 +31,10 @@ optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, wi
 
 ## See Also
 
-- [func contextMenuInteraction(UIContextMenuInteraction, willEndFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](uicontextmenuinteractiondelegate/contextmenuinteraction(_:willendfor:animator:).md)
+### Handling animations
+- [func contextMenuInteraction(UIContextMenuInteraction, willEndFor: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)](./contextmenuinteraction%28_,willendfor,animator%29.md)
   Informs the delegate when a menu display ends.
-- [protocol UIContextMenuInteractionAnimating](uicontextmenuinteractionanimating.md)
+- [protocol UIContextMenuInteractionAnimating](../uicontextmenuinteractionanimating.md)
   Methods adopted by system-supplied animator objects when interacting with context menus.
 
 

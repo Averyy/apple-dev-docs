@@ -1,24 +1,26 @@
 # Address Space Types
 
-**Framework**: Hypervisor
+**Framework**: Hypervisor  
+**Role**: API Collection
 
 ## Topics
 
 ### Types
-- [var HV_VM_SPACE_DEFAULT: Int](hv_vm_space_default.md)
+- [var HV_VM_SPACE_DEFAULT: Int](./hv_vm_space_default.md)
   The value that represents the default VM address space.
 
 ## See Also
 
-- [typealias hv_uvaddr_t](hv_uvaddr_t.md)
+### Common types
+- [typealias hv_uvaddr_t](./hv_uvaddr_t.md)
   The type of a user virtual address.
-- [typealias hv_gpaddr_t](hv_gpaddr_t.md)
+- [typealias hv_gpaddr_t](./hv_gpaddr_t.md)
   The type of a guest physical address (GPA).
-- [typealias hv_memory_flags_t](hv_memory_flags_t.md)
+- [typealias hv_memory_flags_t](./hv_memory_flags_t.md)
   The permissions for guest physical memory regions.
-- [Memory Permissions](1447309-memory_permissions-enum.md)
+- [Memory Permissions](./api-1447309-memory_permissions-enum.md)
   Enumeration values that describe memory permissions.
-- [typealias hv_vm_space_t](hv_vm_space_t.md)
+- [typealias hv_vm_space_t](./hv_vm_space_t.md)
   The type of a guest-address space.
 
 

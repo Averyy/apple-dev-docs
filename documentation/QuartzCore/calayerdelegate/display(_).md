@@ -1,7 +1,8 @@
 # display(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to implement the display process.
 
@@ -19,11 +20,15 @@ Tells the delegate to implement the display process.
 optional func display(_ layer: CALayer)
 ```
 
+```objc
+- (void) displayLayer:(CALayer *) layer;
+```
+
 #### Discussion
 
-The [`display(_:)`](calayerdelegate/display(_:).md) delegate method is called when the layer is marked for its content to be reloaded, typically initiated by the [`setNeedsDisplay()`](calayer/setneedsdisplay().md) method. The typical technique for updating is to set the layer’s `contents` property.
+The [`display(_:)`](./display%28_%29.md) delegate method is called when the layer is marked for its content to be reloaded, typically initiated by the [`setNeedsDisplay()`](../calayer/setneedsdisplay%28%29.md) method. The typical technique for updating is to set the layer’s `contents` property.
 
-The following code shows how you can create a class named `LayerDelegate` that implements [`CALayerDelegate`](calayerdelegate.md) and sets it as a layer’s (named `sublayer`) delegate. When [`setNeedsDisplay()`](calayer/setneedsdisplay().md) is called on `sublayer`, the delegate’s [`display(_:)`](calayerdelegate/display(_:).md) replaces its contents with a specified image.
+The following code shows how you can create a class named `LayerDelegate` that implements [`CALayerDelegate`](../calayerdelegate.md) and sets it as a layer’s (named `sublayer`) delegate. When [`setNeedsDisplay()`](../calayer/setneedsdisplay%28%29.md) is called on `sublayer`, the delegate’s [`display(_:)`](./display%28_%29.md) replaces its contents with a specified image.
 
 ```swift
 let delegate = LayerDelegate()
@@ -51,9 +56,10 @@ class LayerDelegate: NSObject, CALayerDelegate {
 
 ## See Also
 
-- [func draw(CALayer, in: CGContext)](calayerdelegate/draw(_:in:).md)
+### Providing the Layer’s Content
+- [func draw(CALayer, in: CGContext)](./draw%28_,in%29.md)
   Tells the delegate to implement the display process using the layer’s context.
-- [func layerWillDraw(CALayer)](calayerdelegate/layerwilldraw(_:).md)
+- [func layerWillDraw(CALayer)](./layerwilldraw%28_%29.md)
   Notifies the delegate of an imminent draw.
 
 

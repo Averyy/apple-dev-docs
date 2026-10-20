@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sigstack {
     ...
 };
@@ -17,8 +17,8 @@ struct sigstack {
 ## Topics
 
 ### Instance Properties
-- [ss_onstack](sigstack/1591566-ss_onstack.md)
-- [ss_sp](sigstack/1591479-ss_sp.md)
+- [ss_onstack](./sigstack/api-1591566-ss_onstack.md)
+- [ss_sp](./sigstack/api-1591479-ss_sp.md)
 
 
 ---

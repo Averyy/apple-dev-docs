@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the speech synthesizer.
 
@@ -10,7 +11,7 @@ The delegate object for the speech synthesizer.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ The delegate object for the speech synthesizer.
 weak var delegate: (any AVSpeechSynthesizerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<AVSpeechSynthesizerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol AVSpeechSynthesizerDelegate](avspeechsynthesizerdelegate.md)
+### Managing the delegate
+- [protocol AVSpeechSynthesizerDelegate](../avspeechsynthesizerdelegate.md)
   A delegate protocol that contains optional methods you can implement to respond to events that occur during speech synthesis.
 
 

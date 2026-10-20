@@ -1,16 +1,17 @@
 # kAppleSoftwareAudioCodecManufacturer
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A software-based audio codec supplied by Apple Inc.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ A software-based audio codec supplied by Apple Inc.
 var kAppleSoftwareAudioCodecManufacturer: UInt32 { get }
 ```
 
+```c
+kAppleSoftwareAudioCodecManufacturer
+```
+
 ## See Also
 
-- [var kAppleHardwareAudioCodecManufacturer: UInt32](kapplehardwareaudiocodecmanufacturer.md)
+### Constants
+- [var kAppleHardwareAudioCodecManufacturer: UInt32](./kapplehardwareaudiocodecmanufacturer.md)
   A hardware-based audio codec supplied by Apple Inc.
 
 

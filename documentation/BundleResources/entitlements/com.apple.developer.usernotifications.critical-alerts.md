@@ -1,7 +1,8 @@
 # Critical Alerts
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that permits an app to receive critical alert notifications.
 
@@ -14,25 +15,29 @@ An entitlement that permits an app to receive critical alert notifications.
 - visionOS 1.0+
 - watchOS 5.0+
 
+## Details
+
+- **Name**: `com.apple.developer.usernotifications.critical-alerts`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `true`
 
 #### Discussion
 
-If your app has this entitlement, then it can request [`criticalAlert`](https://developer.apple.com/documentation/usernotifications/unauthorizationoptions/criticalalert) authorization to receive push notifications that cause the system to play a sound even when the app is locked, muted, or a person uses Do Not Disturb focus. Your app can specify a custom sound and volume for critical alerts.
+If your app has this entitlement, then it can request [`criticalAlert`](../../UserNotifications/unauthorizationoptions/criticalalert.md) authorization to receive push notifications that cause the system to play a sound even when the app is locked, muted, or a person uses Do Not Disturb focus. Your app can specify a custom sound and volume for critical alerts.
 
-To request this entitlement for your app, [`fill out the request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/notifications-critical-alerts-entitlement/).
+To request this entitlement for your app, [fill out the request form](https://developer.apple.com/contact/request/notifications-critical-alerts-entitlement/).
 
 ## See Also
 
-- [APS Environment Entitlement](entitlements/aps-environment.md)
+### Notifications
+- [APS Environment Entitlement](./aps-environment.md)
   The environment for push notifications.
-- [APS Environment (macOS) Entitlement](entitlements/com.apple.developer.aps-environment.md)
+- [APS Environment (macOS) Entitlement](./com.apple.developer.aps-environment.md)
   The environment for push notifications in macOS apps.
-- [com.apple.developer.usernotifications.filtering](entitlements/com.apple.developer.usernotifications.filtering.md)
+- [com.apple.developer.usernotifications.filtering](./com.apple.developer.usernotifications.filtering.md)
   Enable receiving notifications without displaying the notification to the user.
 
 

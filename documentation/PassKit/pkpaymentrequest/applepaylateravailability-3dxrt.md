@@ -1,7 +1,8 @@
 # applePayLaterAvailability
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether Apple Pay Later is available for a transaction.
 
@@ -10,8 +11,8 @@ A value that indicates whether Apple Pay Later is available for a transaction.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
-- watchOS ?+
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -31,11 +32,12 @@ Ensure you select the correct mode that matches your requirement, because the fr
 
 ## See Also
 
-- [PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-swift.enum.md)
+### Deprecated
+- [PKPaymentRequest.ApplePayLaterAvailability](./applepaylateravailability-swift.enum.md)
   Values you use to enable or disable Apple Pay Later for a specific transaction.
-- [struct PKAddressField](pkaddressfield.md)
+- [struct PKAddressField](../pkaddressfield.md)
   Billing or shipping address fields.
-- [enum PKApplePayLaterAvailability](pkapplepaylateravailability.md)
+- [enum PKApplePayLaterAvailability](../pkapplepaylateravailability.md)
   Values you use to enable or disable Apple Pay Later for a specific transaction.
 
 

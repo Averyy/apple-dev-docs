@@ -1,7 +1,8 @@
 # paddingBitPattern
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The padding bit pattern.
 
@@ -11,8 +12,10 @@ The padding bit pattern.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ var paddingBitPattern: UInt32 { get }
 
 ## See Also
 
-- [var bnnsPaddingMode: BNNSPaddingMode](bnns/paddingmode/bnnspaddingmode.md)
+### Instance Properties
+- [var bnnsPaddingMode: BNNSPaddingMode](./bnnspaddingmode.md)
   The underlying padding mode structure.
 
 

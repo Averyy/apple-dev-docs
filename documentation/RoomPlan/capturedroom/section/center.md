@@ -1,7 +1,8 @@
 # center
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center position of a section.
 
@@ -18,7 +19,8 @@ var center: simd_float3 { get }
 
 ## See Also
 
-- [var story: Int](capturedroom/section/story.md)
+### Locating a section
+- [var story: Int](./story.md)
   The story, floor number, or level on which the section resides in a structure.
 
 

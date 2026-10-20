@@ -1,7 +1,8 @@
 # kSecCFErrorArchitecture
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string containing the name of the architecture that is causing the problem.
 
@@ -13,6 +14,10 @@ A key whose value is a string containing the name of the architecture that is ca
 
 ```swift
 let kSecCFErrorArchitecture: CFString
+```
+
+```c
+extern CFStringRef const kSecCFErrorArchitecture;
 ```
 
 

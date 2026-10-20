@@ -1,14 +1,15 @@
 # TicklePowerManager
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 bool TicklePowerManager(UInt32 maxPowerState);
 ```
 

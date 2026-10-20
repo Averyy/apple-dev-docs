@@ -1,7 +1,8 @@
 # MediaPlaybackSnapshot.PlaybackState
 
 **Framework**: Now Playing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The current playback state of a Now Playing session.
 
@@ -27,23 +28,23 @@ Use this type to inform the system about the current state of media playback in 
 ## Topics
 
 ### Enumeration Cases
-- [MediaPlaybackSnapshot.PlaybackState.buffering](mediaplaybacksnapshot/playbackstate/buffering.md)
+- [MediaPlaybackSnapshot.PlaybackState.buffering](./playbackstate/buffering.md)
   Playback is buffering content.
-- [MediaPlaybackSnapshot.PlaybackState.interrupted](mediaplaybacksnapshot/playbackstate/interrupted.md)
+- [MediaPlaybackSnapshot.PlaybackState.interrupted](./playbackstate/interrupted.md)
   Playback was interrupted by the system.
-- [MediaPlaybackSnapshot.PlaybackState.paused](mediaplaybacksnapshot/playbackstate/paused.md)
+- [MediaPlaybackSnapshot.PlaybackState.paused](./playbackstate/paused.md)
   Playback is paused.
-- [MediaPlaybackSnapshot.PlaybackState.playing(rate:)](mediaplaybacksnapshot/playbackstate/playing(rate:).md)
+- [MediaPlaybackSnapshot.PlaybackState.playing(rate:)](./playbackstate/playing%28rate%29.md)
   Content is currently playing.
-- [MediaPlaybackSnapshot.PlaybackState.stopped](mediaplaybacksnapshot/playbackstate/stopped.md)
+- [MediaPlaybackSnapshot.PlaybackState.stopped](./playbackstate/stopped.md)
   Playback is stopped.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isRunning
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the controller’s workflow is currently running.
 
@@ -15,15 +16,20 @@ A Boolean value that indicates whether the controller’s workflow is currently 
 var isRunning: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRunning) BOOL running;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the controller’s workflow is currently running; [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Use `isRunning:` to determine whether the receiver’s workflow is currently running.
+[`true`](../../Swift/true.md) if the controller’s workflow is currently running; [`false`](../../Swift/false.md) otherwise. Use `isRunning:` to determine whether the receiver’s workflow is currently running.
 
 ## See Also
 
-- [var canRun: Bool](amworkflowcontroller/canrun.md)
+### Getting Workflow Information
+- [var canRun: Bool](./canrun.md)
   A Boolean value that indicates whether the controller’s workflow is able to run.
-- [var isPaused: Bool](amworkflowcontroller/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the controller’s workflow is currently paused.
 
 

@@ -1,7 +1,8 @@
 # applePayLaterAvailability
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether Apple Pay Later is available for a transaction.
 
@@ -9,9 +10,11 @@ A value that indicates whether Apple Pay Later is available for a transaction.
 - Safari Desktop 10.0+
 - Safari Mobile 10.0+
 
+> **Deprecated**: Apple Pay Later is deprecated.
+
 ## Declaration
 
-```swift
+```
 ApplePayLaterAvailability applePayLaterAvailability;
 ```
 
@@ -25,7 +28,8 @@ Ensure you select the correct mode that matches your requirement, because the fr
 
 ## See Also
 
-- [ApplePayLaterAvailability](applepaylateravailability.md)
+### Setting the Apple Pay Later mode
+- [ApplePayLaterAvailability](../applepaylateravailability.md)
   Values you use to enable or disable Apple Pay Later for a specific transaction.
 
 

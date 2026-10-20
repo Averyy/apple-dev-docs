@@ -1,7 +1,8 @@
 # numberOfLoops
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of times the track’s loop repeats.
 
@@ -19,15 +20,20 @@ The number of times the track’s loop repeats.
 var numberOfLoops: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger numberOfLoops;
+```
+
 #### Discussion
 
-Use the value [`AVMusicTrackLoopCount.forever`](avmusictrackloopcount/forever.md) to loop the track forever. Otherwise, valid values start at `1`.
+Use the value [`AVMusicTrackLoopCount.forever`](../avmusictrackloopcount/forever.md) to loop the track forever. Otherwise, valid values start at `1`.
 
 ## See Also
 
-- [var isLoopingEnabled: Bool](avmusictrack/isloopingenabled.md)
+### Configuring the looping state
+- [var isLoopingEnabled: Bool](./isloopingenabled.md)
   A Boolean value that indicates whether the track is in a looping state.
-- [var loopRange: AVBeatRange](avmusictrack/looprange.md)
+- [var loopRange: AVBeatRange](./looprange.md)
   The timestamp range for the loop, in beats.
 
 

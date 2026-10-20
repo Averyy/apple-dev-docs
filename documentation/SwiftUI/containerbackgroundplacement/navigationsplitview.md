@@ -1,9 +1,10 @@
 # navigationSplitView
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-A background placement behind the content of a [`NavigationSplitView`](navigationsplitview.md).
+A background placement behind the content of a [`NavigationSplitView`](../navigationsplitview.md).
 
 **Availability**:
 - iOS 18.0+

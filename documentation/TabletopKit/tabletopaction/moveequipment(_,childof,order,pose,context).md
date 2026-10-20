@@ -1,7 +1,8 @@
 # moveEquipment(_:childOf:order:pose:context:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - visionOS 2.0+
@@ -12,9 +13,12 @@
 static func moveEquipment(_ equipment: some Equipment, childOf parent: any Equipment, order: MoveEquipmentAction.Order? = nil, pose: TableVisualState.Pose2D? = nil, context: UInt64 = 0) -> Self
 ```
 
+Available when `Self` is `MoveEquipmentAction`.
+
 ## See Also
 
-- [static func moveEquipment(matching: EquipmentIdentifier, childOf: EquipmentIdentifier, order: MoveEquipmentAction.Order?, pose: TableVisualState.Pose2D?, context: UInt64) -> Self](tabletopaction/moveequipment(matching:childof:order:pose:context:).md)
+### Moving equipment
+- [static func moveEquipment(matching: EquipmentIdentifier, childOf: EquipmentIdentifier, order: MoveEquipmentAction.Order?, pose: TableVisualState.Pose2D?, context: UInt64) -> Self](./moveequipment%28matching,childof,order,pose,context%29.md)
 
 
 ---

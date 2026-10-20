@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a texture sampler, allowing compute kernels to use it for sampling textures on the GPU.
@@ -11,7 +12,7 @@ Encodes a texture sampler, allowing compute kernels to use it for sampling textu
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,18 +21,23 @@ Encodes a texture sampler, allowing compute kernels to use it for sampling textu
 func setSamplerState(_ sampler: (any MTLSamplerState)?, index: Int)
 ```
 
+```objc
+- (void) setSamplerState:(id<MTLSamplerState>) sampler atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
-- `sampler`: An [`MTLSamplerState`](mtlsamplerstate.md) instance to bind to the sampler argument table.
+- `sampler`: An [`MTLSamplerState`](../mtlsamplerstate.md) instance to bind to the sampler argument table.
 - `index`: The index in the sampler argument table to bind the sampler to.
 
 ## See Also
 
-- [func setSamplerState((any MTLSamplerState)?, lodMinClamp: Float, lodMaxClamp: Float, index: Int)](mtlcomputecommandencoder/setsamplerstate(_:lodminclamp:lodmaxclamp:index:).md)
+### Binding texture samplers
+- [func setSamplerState((any MTLSamplerState)?, lodMinClamp: Float, lodMaxClamp: Float, index: Int)](./setsamplerstate%28_,lodminclamp,lodmaxclamp,index%29.md)
   Encodes a texture sampler with a custom level of detail clamping, allowing compute kernels to use it for sampling textures on the GPU.
-- [func setSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](mtlcomputecommandencoder/setsamplerstates(_:range:).md)
+- [func setSamplerStates([(any MTLSamplerState)?], range: Range<Int>)](./setsamplerstates%28_,range%29.md)
   Encodes multiple texture samplers to the sampler argument table, allowing compute kernels to use them for sampling textures on the GPU.
-- [func setSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](mtlcomputecommandencoder/setsamplerstates(_:lodminclamps:lodmaxclamps:range:).md)
+- [func setSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./setsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Encodes multiple texture samplers for the compute function, specifying clamp values for the level of detail of each sampler.
 
 

@@ -1,7 +1,8 @@
 # managementURL
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to a web page where the user can manage and delete the payment method for the automatic reload payment.
 
@@ -18,15 +19,20 @@ A URL to a web page where the user can manage and delete the payment method for 
 var managementURL: URL { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSURL * managementURL;
+```
+
 #### Discussion
 
 When users remove a payment method, the system deletes the associated Apple Pay merchant token.
 
-> **Note**:  It’s a best practice to use a universal link for this URL. Using a universal link, the same link can direct a person to a page in the app (if they’ve installed the app) or to a page on the merchant’s web site. For more information on adopting universal links, see [`Universal links`](https://developer.apple.comhttps://developer.apple.com/ios/universal-links/).
+> **Note**:  It’s a best practice to use a universal link for this URL. Using a universal link, the same link can direct a person to a page in the app (if they’ve installed the app) or to a page on the merchant’s web site. For more information on adopting universal links, see [Universal links](https://developer.apple.com/ios/universal-links/).
 
 ## See Also
 
-- [var tokenNotificationURL: URL?](pkautomaticreloadpaymentrequest/tokennotificationurl.md)
+### Managing payment tokens
+- [var tokenNotificationURL: URL?](./tokennotificationurl.md)
   A URL you provide to receive life-cycle notifications from the Apple Pay servers about the Apple Pay merchant token for the automatic reload payment.
 
 

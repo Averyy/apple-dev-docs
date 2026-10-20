@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of data this value contains.
 
@@ -20,9 +21,10 @@ var kind: InferenceValue.Kind { get }
 
 ## See Also
 
-- [var ndArray: NDArray?](inferencevalue/ndarray.md)
+### Inspecting a value
+- [var ndArray: NDArray?](./ndarray.md)
   The array that the value wraps.
-- [var pixelBuffer: CVMutablePixelBuffer?](inferencevalue/pixelbuffer.md)
+- [var pixelBuffer: CVMutablePixelBuffer?](./pixelbuffer.md)
   Consume this value to access the underlying pixel buffer.
 
 

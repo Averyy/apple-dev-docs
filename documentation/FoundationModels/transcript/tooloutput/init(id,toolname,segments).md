@@ -1,7 +1,8 @@
 # init(id:toolName:segments:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tool output that provides the result of a tool call back to the model.
 

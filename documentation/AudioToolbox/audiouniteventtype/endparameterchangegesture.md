@@ -1,15 +1,16 @@
 # AudioUnitEventType.endParameterChangeGesture
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 case endParameterChangeGesture
 ```
 
+```c
+kAudioUnitEvent_EndParameterChangeGesture
+```
+
 ## See Also
 
-- [AudioUnitEventType.beginParameterChangeGesture](audiouniteventtype/beginparameterchangegesture.md)
-- [AudioUnitEventType.parameterValueChange](audiouniteventtype/parametervaluechange.md)
-- [AudioUnitEventType.propertyChange](audiouniteventtype/propertychange.md)
+### Constants
+- [AudioUnitEventType.beginParameterChangeGesture](./beginparameterchangegesture.md)
+- [AudioUnitEventType.parameterValueChange](./parametervaluechange.md)
+- [AudioUnitEventType.propertyChange](./propertychange.md)
 
 
 ---

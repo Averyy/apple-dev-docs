@@ -2,6 +2,7 @@
 
 **Framework**: Network Extension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prepares the filter to stop, in response to a call from the framework.
@@ -20,15 +21,16 @@ func stop(reason: NEProviderStopReason) async throws
 
 #### Discussion
 
-Override this method in your conformance to [`NEURLFilterControlProvider`](neurlfiltercontrolprovider.md) and perform whatever steps are necessary to prepare for the URL filter stopping.
+Override this method in your conformance to [`NEURLFilterControlProvider`](../neurlfiltercontrolprovider.md) and perform whatever steps are necessary to prepare for the URL filter stopping.
 
 ## Parameters
 
-- `reason`: An [`NEProviderStopReason`](neproviderstopreason.md) that indicates why the framework is stopping the filter.
+- `reason`: An [`NEProviderStopReason`](../neproviderstopreason.md) that indicates why the framework is stopping the filter.
 
 ## See Also
 
-- [func start() async throws](neurlfiltercontrolprovider/start.md)
+### Starting and stopping the provider
+- [func start() async throws](./start%28%29.md)
   Prepares the filter to start, in response to a call from the framework.
 
 

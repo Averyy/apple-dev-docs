@@ -1,7 +1,8 @@
 # WKWebsiteDataRecord
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A record of the data that a particular website stores persistently.
 
@@ -19,47 +20,52 @@ A record of the data that a particular website stores persistently.
 class WKWebsiteDataRecord
 ```
 
+```objc
+@interface WKWebsiteDataRecord : NSObject
+```
+
 #### Overview
 
-Use [`WKWebsiteDataRecord`](wkwebsitedatarecord.md) objects to discover the types of information that a website stores. Records identify the data types a website stores, but don’t identify the actual data. You might use this information to help the user manage website data. For example, Safari provides a way for users to view and remove website data. The domain name of each record contains the website’s domain name and suffix.
+Use [`WKWebsiteDataRecord`](./wkwebsitedatarecord.md) objects to discover the types of information that a website stores. Records identify the data types a website stores, but don’t identify the actual data. You might use this information to help the user manage website data. For example, Safari provides a way for users to view and remove website data. The domain name of each record contains the website’s domain name and suffix.
 
-You don’t create [`WKWebsiteDataRecord`](wkwebsitedatarecord.md) objects directly. WebKit creates these records and stores them in the web view’s data store. Use the [`fetchDataRecords(ofTypes:completionHandler:)`](wkwebsitedatastore/fetchdatarecords(oftypes:completionhandler:).md) of that data store to retrieve the current record objects. You also use that object to remove unwanted records.
+You don’t create [`WKWebsiteDataRecord`](./wkwebsitedatarecord.md) objects directly. WebKit creates these records and stores them in the web view’s data store. Use the [`fetchDataRecords(ofTypes:completionHandler:)`](./wkwebsitedatastore/fetchdatarecords%28oftypes,completionhandler%29.md) of that data store to retrieve the current record objects. You also use that object to remove unwanted records.
 
 ## Topics
 
 ### Getting the Record Information
-- [var displayName: String](wkwebsitedatarecord/displayname.md)
+- [var displayName: String](./wkwebsitedatarecord/displayname.md)
   The display name for the data record.
 ### Getting the Data Type
-- [var dataTypes: Set<String>](wkwebsitedatarecord/datatypes.md)
+- [var dataTypes: Set<String>](./wkwebsitedatarecord/datatypes.md)
   The types of data associated with the record.
-- [Data Store Record Types](data-store-record-types.md)
+- [Data Store Record Types](./data-store-record-types.md)
   Explore the constants that identify the types of data that websites store.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKWebsiteDataStore](wkwebsitedatastore.md)
+### Web data management
+- [class WKWebsiteDataStore](./wkwebsitedatastore.md)
   An object that manages cookies, disk and memory caches, and other types of data for a web view.
-- [class WKHTTPCookieStore](wkhttpcookiestore.md)
+- [class WKHTTPCookieStore](./wkhttpcookiestore.md)
   An object that manages the HTTP cookies associated with a particular web view.
-- [protocol WKURLSchemeHandler](wkurlschemehandler.md)
+- [protocol WKURLSchemeHandler](./wkurlschemehandler.md)
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
-- [protocol WKURLSchemeTask](wkurlschemetask.md)
+- [protocol WKURLSchemeTask](./wkurlschemetask.md)
   An interface that WebKit uses to request custom resources from your app.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
 
 

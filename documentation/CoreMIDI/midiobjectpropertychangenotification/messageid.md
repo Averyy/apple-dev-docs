@@ -1,18 +1,19 @@
 # messageID
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The message type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The message type.
 var messageID: MIDINotificationMessageID
 ```
 
+```c
+MIDINotificationMessageID messageID;
+```
+
 ## See Also
 
-- [var messageSize: UInt32](midiobjectpropertychangenotification/messagesize.md)
+### Inspecting the Notification
+- [var messageSize: UInt32](./messagesize.md)
   The message size.
-- [var object: MIDIObjectRef](midiobjectpropertychangenotification/object.md)
+- [var object: MIDIObjectRef](./object.md)
   The object whose property changed.
-- [var objectType: MIDIObjectType](midiobjectpropertychangenotification/objecttype.md)
+- [var objectType: MIDIObjectType](./objecttype.md)
   The object type.
-- [var propertyName: Unmanaged<CFString>](midiobjectpropertychangenotification/propertyname.md)
+- [var propertyName: Unmanaged<CFString>](./propertyname.md)
   The name of the modified property.
 
 

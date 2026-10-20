@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a context menu configuration.
 
@@ -13,6 +14,10 @@ Creates a context menu configuration.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

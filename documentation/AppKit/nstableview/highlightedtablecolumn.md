@@ -1,17 +1,22 @@
 # highlightedTableColumn
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The column highlighted in the table.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var highlightedTableColumn: NSTableColumn? { get set }
+```
+
+```objc
+@property (weak, nullable) NSTableColumn * highlightedTableColumn;
 ```
 
 #### Discussion

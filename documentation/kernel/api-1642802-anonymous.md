@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWPhyConfigurationGapCnt](1642802-anonymous/kfwphyconfigurationgapcnt.md)
-- [kFWPhyConfigurationGapCntPhase](1642802-anonymous/kfwphyconfigurationgapcntphase.md)
-- [kFWPhyConfigurationR](1642802-anonymous/kfwphyconfigurationr.md)
-- [kFWPhyConfigurationT](1642802-anonymous/kfwphyconfigurationt.md)
+- [kFWPhyConfigurationGapCnt](./api-1642802-anonymous/kfwphyconfigurationgapcnt.md)
+- [kFWPhyConfigurationGapCntPhase](./api-1642802-anonymous/kfwphyconfigurationgapcntphase.md)
+- [kFWPhyConfigurationR](./api-1642802-anonymous/kfwphyconfigurationr.md)
+- [kFWPhyConfigurationT](./api-1642802-anonymous/kfwphyconfigurationt.md)
 
 
 ---

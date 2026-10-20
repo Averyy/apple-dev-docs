@@ -1,23 +1,24 @@
 # handleReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles an asynchronous report received from the HID device.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t handleReport(uint64_t timestamp, IOMemoryDescriptor *report, uint32_t reportLength, IOHIDReportType reportType, IOOptionBits options);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -31,13 +32,14 @@ The default implementation of this method parses the report data and notifies at
 
 ## See Also
 
-- [getReport](iohiddevice/getreport.md)
+### Processing Device Reports
+- [getReport](./getreport.md)
   Gets a report from the HID device.
-- [setReport](iohiddevice/setreport.md)
+- [setReport](./setreport.md)
   Sends a report to the HID device.
-- [CompleteReport](iohiddevice/completereport.md)
+- [CompleteReport](./completereport.md)
   Completes all async requests made when getting or setting a report.
-- [Report Options](report-options-enum.md)
+- [Report Options](../report-options-enum.md)
   The enumerated report options.
 
 

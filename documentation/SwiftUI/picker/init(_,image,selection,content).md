@@ -1,7 +1,8 @@
 # init(_:image:selection:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker that generates its label from a localized string resource and image resource
 
@@ -21,9 +22,23 @@ Creates a picker that generates its label from a localized string resource and i
 nonisolated init(_ titleResource: LocalizedStringResource, image: ImageResource, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content)
 ```
 
+Available when `Label` is `Label<Text, Image>`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, image: ImageResource, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, image: ImageResource, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 
@@ -34,11 +49,12 @@ This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](t
 
 ## See Also
 
-- [init(_:image:sources:selection:content:)](picker/init(_:image:sources:selection:content:).md)
+### Creating a picker with an image label
+- [init(_:image:sources:selection:content:)](./init%28_,image,sources,selection,content%29.md)
   Creates a picker that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:selection:content:)](picker/init(_:systemimage:selection:content:).md)
+- [init(_:systemImage:selection:content:)](./init%28_,systemimage,selection,content%29.md)
   Creates a picker that generates its label from a localized string key and system image.
-- [init(_:systemImage:sources:selection:content:)](picker/init(_:systemimage:sources:selection:content:).md)
+- [init(_:systemImage:sources:selection:content:)](./init%28_,systemimage,sources,selection,content%29.md)
   Creates a picker bound to a collection of bindings that generates its label from a string.
 
 

@@ -1,7 +1,8 @@
 # pdfData(actions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a PDF from a set of drawing instructions and returns it as a data object.
 
@@ -18,25 +19,30 @@ Creates a PDF from a set of drawing instructions and returns it as a data object
 func pdfData(actions: (UIGraphicsPDFRendererContext) -> Void) -> Data
 ```
 
+```objc
+- (NSData *) PDFDataWithActions:(UIGraphicsPDFDrawingActions) actions;
+```
+
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/foundation/data) object that contains the encoded PDF.
+A [`Data`](../../Foundation/data.md) object that contains the encoded PDF.
 
 #### Discussion
 
-You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting PDF encoded in a [`Data`](https://developer.apple.com/documentation/foundation/data) object.
+You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting PDF encoded in a [`Data`](../../Foundation/data.md) object.
 
 You can call this method repeatedly to create multiple PDFs, each of which has identical dimensions and format.
 
 ## Parameters
 
-- `actions`: A [`UIGraphicsPDFRenderer.DrawingActions`](uigraphicspdfrenderer/drawingactions.md) block that, when invoked by the renderer, executes a set of drawing instructions to create the output PDF.
+- `actions`: A [`UIGraphicsPDFRenderer.DrawingActions`](./drawingactions.md) block that, when invoked by the renderer, executes a set of drawing instructions to create the output PDF.
 
 ## See Also
 
-- [func writePDF(to: URL, withActions: (UIGraphicsPDFRendererContext) -> Void) throws](uigraphicspdfrenderer/writepdf(to:withactions:).md)
+### Managing the PDF data
+- [func writePDF(to: URL, withActions: (UIGraphicsPDFRendererContext) -> Void) throws](./writepdf%28to,withactions%29.md)
   Creates a PDF from a set of drawing instructions and saves it to a specified URL.
-- [UIGraphicsPDFRenderer.DrawingActions](uigraphicspdfrenderer/drawingactions.md)
+- [UIGraphicsPDFRenderer.DrawingActions](./drawingactions.md)
   A closure for drawing PDF content.
 
 

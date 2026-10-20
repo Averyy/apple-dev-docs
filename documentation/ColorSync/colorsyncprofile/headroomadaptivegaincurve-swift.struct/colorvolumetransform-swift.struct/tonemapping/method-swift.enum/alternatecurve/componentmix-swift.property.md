@@ -1,7 +1,8 @@
 # componentMix
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How the framework derives the scalar driving signal from each RGB pixel.
 

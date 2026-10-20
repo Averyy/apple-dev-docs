@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Accesses the feature value given the feature’s name.
@@ -21,6 +22,10 @@ Accesses the feature value given the feature’s name.
 func featureValue(for featureName: String) -> MLFeatureValue?
 ```
 
+```objc
+- (MLFeatureValue *) featureValueForName:(NSString *) featureName;
+```
+
 #### Return Value
 
 The value of the feature, or nil if no value exists for that name.
@@ -31,7 +36,8 @@ The value of the feature, or nil if no value exists for that name.
 
 ## See Also
 
-- [var featureNames: Set<String>](mlfeatureprovider/featurenames.md)
+### Accessing values
+- [var featureNames: Set<String>](./featurenames.md)
   The set of valid feature names.
 
 

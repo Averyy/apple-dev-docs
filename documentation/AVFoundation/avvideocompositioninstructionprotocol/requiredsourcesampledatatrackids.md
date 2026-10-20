@@ -1,7 +1,8 @@
 # requiredSourceSampleDataTrackIDs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of the sample data tracks the instruction requires to compose frames.
 
@@ -19,15 +20,20 @@ The identifiers of the sample data tracks the instruction requires to compose fr
 optional var requiredSourceSampleDataTrackIDs: [NSNumber] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSNumber *> * requiredSourceSampleDataTrackIDs;
+```
+
 #### Discussion
 
 An empty array indicates the instruction requires no sample data.
 
 ## See Also
 
-- [var passthroughTrackID: CMPersistentTrackID](avvideocompositioninstructionprotocol/passthroughtrackid.md)
+### Getting track ID settings
+- [var passthroughTrackID: CMPersistentTrackID](./passthroughtrackid.md)
   An identifier of a source track to pass through without compositing.
-- [var requiredSourceTrackIDs: [NSValue]?](avvideocompositioninstructionprotocol/requiredsourcetrackids.md)
+- [var requiredSourceTrackIDs: [NSValue]?](./requiredsourcetrackids.md)
   The identifiers of the video tracks the instruction requires to compose frames.
 
 

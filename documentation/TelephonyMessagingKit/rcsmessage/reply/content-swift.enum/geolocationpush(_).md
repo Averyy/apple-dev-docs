@@ -1,7 +1,8 @@
 # RCSMessage.Reply.Content.geolocationPush(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for geolocation push content.
 

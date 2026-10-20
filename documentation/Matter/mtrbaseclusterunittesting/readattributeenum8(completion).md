@@ -1,7 +1,8 @@
 # readAttributeEnum8(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeEnum8(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeEnum8() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeEnum8WithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

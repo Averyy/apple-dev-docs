@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides the relative ordering of two elements based on the sort order of the comparator.
@@ -32,7 +33,8 @@ The relative ordering between the two elements according to the sort order of th
 
 ## See Also
 
-- [associatedtype Compared](sortcomparator/compared.md)
+### Using a Comparator
+- [associatedtype Compared](./compared.md)
   A type that the sort comparator can compare.
 
 

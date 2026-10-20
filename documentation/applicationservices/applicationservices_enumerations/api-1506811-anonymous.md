@@ -5,13 +5,13 @@
 ## Topics
 
 ### Constants
-- [var kPMPaperTypeCoated: Int](kpmpapertypecoated.md)
-- [var kPMPaperTypeGlossy: Int](kpmpapertypeglossy.md)
-- [var kPMPaperTypePlain: Int](kpmpapertypeplain.md)
-- [var kPMPaperTypePremium: Int](kpmpapertypepremium.md)
-- [var kPMPaperTypeTShirt: Int](kpmpapertypetshirt.md)
-- [var kPMPaperTypeTransparency: Int](kpmpapertypetransparency.md)
-- [var kPMPaperTypeUnknown: Int](kpmpapertypeunknown.md)
+- [var kPMPaperTypeCoated: Int](../kpmpapertypecoated.md)
+- [var kPMPaperTypeGlossy: Int](../kpmpapertypeglossy.md)
+- [var kPMPaperTypePlain: Int](../kpmpapertypeplain.md)
+- [var kPMPaperTypePremium: Int](../kpmpapertypepremium.md)
+- [var kPMPaperTypeTShirt: Int](../kpmpapertypetshirt.md)
+- [var kPMPaperTypeTransparency: Int](../kpmpapertypetransparency.md)
+- [var kPMPaperTypeUnknown: Int](../kpmpapertypeunknown.md)
 
 
 ---

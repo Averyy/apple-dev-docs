@@ -1,17 +1,22 @@
 # menu(for:in:of:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the menu associated with the cell and related to the specified event and frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func menu(for event: NSEvent, in cellFrame: NSRect, of view: NSView) -> NSMenu?
+```
+
+```objc
+- (NSMenu *) menuForEvent:(NSEvent *) event inRect:(NSRect) cellFrame ofView:(NSView *) view;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ The menu associated with the cell and event parameters, or `nil` if no menu is s
 
 #### Discussion
 
-This method is usually invoked by the [`NSControl`](nscontrol.md) object (`aView`) managing the receiver. The default implementation gets the value of the [`menu`](nscell/menu.md) property and returns `nil` if no menu has been set. Subclasses can override to customize the returned menu according to the event received and the area in which the mouse event occurs.
+This method is usually invoked by the [`NSControl`](../nscontrol.md) object (`aView`) managing the receiver. The default implementation gets the value of the [`menu`](./menu.md) property and returns `nil` if no menu has been set. Subclasses can override to customize the returned menu according to the event received and the area in which the mouse event occurs.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ This method is usually invoked by the [`NSControl`](nscontrol.md) object (`aView
 
 ## See Also
 
-- [class var defaultMenu: NSMenu?](nscell/defaultmenu.md)
+### Managing Menus
+- [class var defaultMenu: NSMenu?](./defaultmenu.md)
   Returns the default menu for instances of the cell.
-- [var menu: NSMenu?](nscell/menu.md)
+- [var menu: NSMenu?](./menu.md)
   The cell’s contextual menu.
 
 

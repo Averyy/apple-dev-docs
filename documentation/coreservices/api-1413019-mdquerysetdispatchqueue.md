@@ -1,7 +1,8 @@
 # MDQuerySetDispatchQueue(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the dispatch queue on which query results will be delivered by MDQueryExecute.
 
@@ -14,11 +15,15 @@ Sets the dispatch queue on which query results will be delivered by MDQueryExecu
 func MDQuerySetDispatchQueue(_ query: MDQuery!, _ queue: dispatch_queue_t!)
 ```
 
+```c
+void MDQuerySetDispatchQueue(MDQueryRef query, dispatch_queue_t queue);
+```
+
 #### Discussion
 
-It is not advisable to change set dispatch queue after [`MDQueryExecute(_:_:)`](1413099-mdqueryexecute.md) has been called with the query. 
+It is not advisable to change set dispatch queue after [`MDQueryExecute(_:_:)`](./api-1413099-mdqueryexecute.md) has been called with the query. 
 
-Setting the dispatch queue for a synchronous query ([`kMDQuerySynchronous`](kmdquerysynchronous.md)) has no effect.
+Setting the dispatch queue for a synchronous query ([`kMDQuerySynchronous`](./kmdquerysynchronous.md)) has no effect.
 
 ## Parameters
 
@@ -27,11 +32,12 @@ Setting the dispatch queue for a synchronous query ([`kMDQuerySynchronous`](kmdq
 
 ## See Also
 
-- [func MDQueryCreate(CFAllocator!, CFString!, CFArray!, CFArray!) -> MDQuery!](1413029-mdquerycreate.md)
+### Creating Queries
+- [func MDQueryCreate(CFAllocator!, CFString!, CFArray!, CFArray!) -> MDQuery!](./api-1413029-mdquerycreate.md)
   Creates a new query instance.
-- [func MDQueryCreateSubset(CFAllocator!, MDQuery!, CFString!, CFArray!, CFArray!) -> MDQuery!](1413027-mdquerycreatesubset.md)
+- [func MDQueryCreateSubset(CFAllocator!, MDQuery!, CFString!, CFArray!, CFArray!) -> MDQuery!](./api-1413027-mdquerycreatesubset.md)
   Creates a new query that is a subset of the specified parentquery.
-- [func MDQuerySetSearchScope(MDQuery!, CFArray!, OptionBits)](1413048-mdquerysetsearchscope.md)
+- [func MDQuerySetSearchScope(MDQuery!, CFArray!, OptionBits)](./api-1413048-mdquerysetsearchscope.md)
   Sets the search scope for a query instance.
 
 

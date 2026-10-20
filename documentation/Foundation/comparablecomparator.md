@@ -1,7 +1,8 @@
 # ComparableComparator
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A comparator that compares types according to their conformance to the comparable protocol.
 
@@ -22,41 +23,42 @@ struct ComparableComparator<Compared> where Compared : Comparable
 
 #### Overview
 
-The comparator uses the relevant type’s [`Comparable`](https://developer.apple.com/documentation/swift/comparable) implementation to compare instances.
+The comparator uses the relevant type’s [`Comparable`](../Swift/comparable.md) implementation to compare instances.
 
 ## Topics
 
 ### Using a Comparator
-- [func compare(Compared, Compared) -> ComparisonResult](comparablecomparator/compare(_:_:).md)
+- [func compare(Compared, Compared) -> ComparisonResult](./comparablecomparator/compare%28_,_%29.md)
   Provides the relative ordering of two elements.
 ### Inspecting a Comparator
-- [var order: SortOrder](comparablecomparator/order.md)
+- [var order: SortOrder](./comparablecomparator/order.md)
   The sort order that the comparator uses to compare.
 ### Initializers
-- [init(order: SortOrder)](comparablecomparator/init(order:).md)
+- [init(order: SortOrder)](./comparablecomparator/init%28order%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SortComparator](sortcomparator.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SortComparator](./sortcomparator.md)
 
 ## See Also
 
-- [class NSSortDescriptor](nssortdescriptor.md)
+### Sorting
+- [class NSSortDescriptor](./nssortdescriptor.md)
   An immutable description of how to order a collection of objects according to a property common to all the objects.
-- [enum ComparisonResult](comparisonresult.md)
+- [enum ComparisonResult](./comparisonresult.md)
   Constants that indicate sort order.
-- [struct SortDescriptor](sortdescriptor.md)
+- [struct SortDescriptor](./sortdescriptor.md)
   A serializable description of how to sort numerics and strings.
-- [protocol SortComparator](sortcomparator.md)
+- [protocol SortComparator](./sortcomparator.md)
   A comparison algorithm for a specified type.
-- [struct KeyPathComparator](keypathcomparator.md)
+- [struct KeyPathComparator](./keypathcomparator.md)
   A comparator that uses another sort comparator to provide the comparison of values at a key path.
-- [enum SortOrder](sortorder.md)
+- [enum SortOrder](./sortorder.md)
   The orderings that you can perform sorts with.
 
 

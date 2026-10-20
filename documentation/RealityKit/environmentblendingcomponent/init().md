@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the component using the `default` blending mode.
 

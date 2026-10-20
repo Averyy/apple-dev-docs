@@ -1,7 +1,8 @@
 # currencyCode
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ISO 4217 code that indicates the currency type.
 
@@ -18,15 +19,16 @@ let currencyCode: String
 
 ## See Also
 
-- [let amount: Decimal](paymentcardtransactionrequest/amount.md)
+### Getting the transaction details
+- [let amount: Decimal](./amount.md)
   The amount of the purchase or refund in the specified currency.
-- [let type: PaymentCardTransactionRequest.TransactionType](paymentcardtransactionrequest/type.md)
+- [let type: PaymentCardTransactionRequest.TransactionType](./type.md)
   The type of transaction, either a purchase or a refund.
-- [PaymentCardTransactionRequest.TransactionType](paymentcardtransactionrequest/transactiontype.md)
+- [PaymentCardTransactionRequest.TransactionType](./transactiontype.md)
   The type of transaction to perform.
-- [var transactionDescription: PaymentCardTransactionRequest.TransactionAmountDescription?](paymentcardtransactionrequest/transactiondescription.md)
+- [var transactionDescription: PaymentCardTransactionRequest.TransactionAmountDescription?](./transactiondescription.md)
   An optional description of the current transaction meant to provide more context, such as a recurring payment being setup or a surcharge applied.
-- [PaymentCardTransactionRequest.TransactionAmountDescription](paymentcardtransactionrequest/transactionamountdescription.md)
+- [PaymentCardTransactionRequest.TransactionAmountDescription](./transactionamountdescription.md)
   Values that provide additional information about the transaction amount.
 
 

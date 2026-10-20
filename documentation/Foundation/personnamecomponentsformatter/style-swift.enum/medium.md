@@ -1,7 +1,8 @@
 # PersonNameComponentsFormatter.Style.medium
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,16 +19,21 @@
 case medium
 ```
 
+```c
+NSPersonNameComponentsFormatterStyleMedium
+```
+
 #### Discussion
 
-Equivalent to [`PersonNameComponentsFormatter.Style.default`](personnamecomponentsformatter/style-swift.enum/default.md).
+Equivalent to [`PersonNameComponentsFormatter.Style.default`](./default.md).
 
 ## See Also
 
-- [PersonNameComponentsFormatter.Style.default](personnamecomponentsformatter/style-swift.enum/default.md)
-- [PersonNameComponentsFormatter.Style.short](personnamecomponentsformatter/style-swift.enum/short.md)
-- [PersonNameComponentsFormatter.Style.long](personnamecomponentsformatter/style-swift.enum/long.md)
-- [PersonNameComponentsFormatter.Style.abbreviated](personnamecomponentsformatter/style-swift.enum/abbreviated.md)
+### Constants
+- [PersonNameComponentsFormatter.Style.default](./default.md)
+- [PersonNameComponentsFormatter.Style.short](./short.md)
+- [PersonNameComponentsFormatter.Style.long](./long.md)
+- [PersonNameComponentsFormatter.Style.abbreviated](./abbreviated.md)
 
 
 ---

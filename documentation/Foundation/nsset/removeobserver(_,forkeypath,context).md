@@ -1,7 +1,8 @@
 # removeObserver(_:forKeyPath:context:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises an exception.
 
@@ -20,6 +21,10 @@ Raises an exception.
 func removeObserver(_ observer: NSObject, forKeyPath keyPath: String, context: UnsafeMutableRawPointer?)
 ```
 
+```objc
+- (void) removeObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath context:(void *) context;
+```
+
 #### Discussion
 
 `NSSet` objects are not observable, so this method raises an exception when invoked on an `NSSet` object. Instead of observing a set, observe the unordered to-many relationship for which the set is the collection of related objects.
@@ -28,13 +33,14 @@ func removeObserver(_ observer: NSObject, forKeyPath keyPath: String, context: U
 
 - `observer`: The object to remove as an observer.
 - `keyPath`: A key-path, relative to the set, for which `observer` is registered to receive KVO change notifications. This value must not be `nil`.
-- `context`: Arbitrary data that is passed to `observer` in [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/observevalue(forkeypath:of:change:context:)).
+- `context`: Arbitrary data that is passed to `observer` in [`observeValue(forKeyPath:of:change:context:)`](../../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md).
 
 ## See Also
 
-- [func addObserver(NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](nsset/addobserver(_:forkeypath:options:context:).md)
+### Key-Value Observing
+- [func addObserver(NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](./addobserver%28_,forkeypath,options,context%29.md)
   Raises an exception.
-- [func removeObserver(NSObject, forKeyPath: String)](nsset/removeobserver(_:forkeypath:).md)
+- [func removeObserver(NSObject, forKeyPath: String)](./removeobserver%28_,forkeypath%29.md)
   Raises an exception.
 
 

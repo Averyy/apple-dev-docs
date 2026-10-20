@@ -1,7 +1,8 @@
 # outlineView(_:isGroupItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean that indicates whether a given row should be drawn in the “group row” style.
 
@@ -15,9 +16,13 @@ Returns a Boolean that indicates whether a given row should be drawn in the “g
 optional func outlineView(_ outlineView: NSOutlineView, isGroupItem item: Any) -> Bool
 ```
 
+```objc
+- (BOOL) outlineView:(NSOutlineView *) outlineView isGroupItem:(id) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to indicate a particular row should have the “group row” style drawn for that row, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) to indicate a particular row should have the “group row” style drawn for that row, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 

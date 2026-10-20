@@ -1,7 +1,8 @@
 # keyboardAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A button that appears next to the text preview in the keyboard in visionOS.
 
@@ -12,6 +13,10 @@ A button that appears next to the text preview in the keyboard in visionOS.
 
 ```swift
 var keyboardAction: UIBarButtonItem? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIBarButtonItem * keyboardActionButtonItem;
 ```
 
 

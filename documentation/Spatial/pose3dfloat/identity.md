@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identity pose.
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The page controller’s delegate object.
 
@@ -15,13 +16,18 @@ The page controller’s delegate object.
 weak var delegate: (any NSPageControllerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSPageControllerDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must conform to the [`NSPageControllerDelegate`](nspagecontrollerdelegate.md) protocol.
+The delegate must conform to the [`NSPageControllerDelegate`](../nspagecontrollerdelegate.md) protocol.
 
 ## See Also
 
-- [protocol NSPageControllerDelegate](nspagecontrollerdelegate.md)
+### Customizing the Paged Interface Behavior
+- [protocol NSPageControllerDelegate](../nspagecontrollerdelegate.md)
   The `NSPageControllerDelegate` protocol allows you to customize the behavior of instances of the NSPageController class.
 
 

@@ -1,7 +1,8 @@
 # wheelchairUse
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A characteristic identifier for the user’s use of a wheelchair.
 
@@ -19,21 +20,27 @@ A characteristic identifier for the user’s use of a wheelchair.
 static let wheelchairUse: HKCharacteristicTypeIdentifier
 ```
 
+```c
+extern HKCharacteristicTypeIdentifier const HKCharacteristicTypeIdentifierWheelchairUse;
+```
+
 ## See Also
 
-- [class HKCharacteristicType](hkcharacteristictype.md)
+### Related Documentation
+- [class HKCharacteristicType](../hkcharacteristictype.md)
   A type that represents data that doesn’t typically change over time.
-- [struct HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier.md)
+- [struct HKCharacteristicTypeIdentifier](../hkcharacteristictypeidentifier.md)
   The identifiers that create characteristic type objects.
-- [static let activityMoveMode: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/activitymovemode.md)
+### Characteristic identifiers
+- [static let activityMoveMode: HKCharacteristicTypeIdentifier](./activitymovemode.md)
   A characteristic identifier for the user’s activity mode.
-- [static let biologicalSex: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/biologicalsex.md)
+- [static let biologicalSex: HKCharacteristicTypeIdentifier](./biologicalsex.md)
   A characteristic type identifier for the user’s sex.
-- [static let bloodType: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/bloodtype.md)
+- [static let bloodType: HKCharacteristicTypeIdentifier](./bloodtype.md)
   A characteristic type identifier for the user’s blood type.
-- [static let dateOfBirth: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/dateofbirth.md)
+- [static let dateOfBirth: HKCharacteristicTypeIdentifier](./dateofbirth.md)
   A characteristic type identifier for the user’s date of birth.
-- [static let fitzpatrickSkinType: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/fitzpatrickskintype.md)
+- [static let fitzpatrickSkinType: HKCharacteristicTypeIdentifier](./fitzpatrickskintype.md)
   A characteristic type identifier for the user’s skin type.
 
 

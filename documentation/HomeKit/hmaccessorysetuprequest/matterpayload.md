@@ -1,7 +1,8 @@
 # matterPayload
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
@@ -12,6 +13,10 @@
 
 ```swift
 var matterPayload: MTRSetupPayload? { get set }
+```
+
+```objc
+@property (strong, nullable) MTRSetupPayload * matterPayload;
 ```
 
 

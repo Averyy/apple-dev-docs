@@ -1,7 +1,8 @@
 # memberAnnotations
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The annotations that the cluster contains.
 
@@ -17,6 +18,10 @@ The annotations that the cluster contains.
 
 ```swift
 var memberAnnotations: [any MKAnnotation] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<id<MKAnnotation>> * memberAnnotations;
 ```
 
 

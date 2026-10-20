@@ -1,7 +1,8 @@
 # restart()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restarts a connection that is in the waiting state.
 
@@ -26,11 +27,12 @@ Restart a connection when it is in the waiting state and you have reason to beli
 
 ## See Also
 
-- [convenience init(host: NWEndpoint.Host, port: NWEndpoint.Port, using: NWParameters)](nwconnection/init(host:port:using:).md)
+### Creating Connections
+- [convenience init(host: NWEndpoint.Host, port: NWEndpoint.Port, using: NWParameters)](./init%28host,port,using%29.md)
   Initializes a new connection to a host and port.
-- [init(to: NWEndpoint, using: NWParameters)](nwconnection/init(to:using:).md)
+- [init(to: NWEndpoint, using: NWParameters)](./init%28to,using%29.md)
   Initializes a new connection to a remote endpoint.
-- [func start(queue: DispatchQueue)](nwconnection/start(queue:).md)
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Starts establishing a connection, and sets the queue on which to deliver all connection events.
 
 

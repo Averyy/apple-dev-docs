@@ -1,7 +1,8 @@
 # SecProtocolType.SMB
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates SMB.
 
@@ -13,6 +14,10 @@ Indicates SMB.
 
 ```swift
 case SMB
+```
+
+```c
+kSecProtocolTypeSMB
 ```
 
 

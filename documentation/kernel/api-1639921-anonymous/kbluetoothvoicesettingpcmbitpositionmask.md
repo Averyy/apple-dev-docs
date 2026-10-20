@@ -1,14 +1,15 @@
 # kBluetoothVoiceSettingPCMBitPositionMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothVoiceSettingPCMBitPositionMask = 0x01C
 ```
 

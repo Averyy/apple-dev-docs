@@ -1,6 +1,7 @@
 # Debugging a custom kernel extension
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Article
 
 Configure your system to enable the debugging of custom kernel extensions from a second Mac.
 
@@ -26,7 +27,7 @@ To use the KDK to perform two-machine debugging:
 4. Install the KDK on both Mac computers.
 5. Install your kext (and the appropriate kernel) on the computer you want to debug.
 
-The KDK includes instructions on how to install the custom kernels you use during debugging. It also provides detailed instructions for setting up the connection between your computers. For more information, sign in and download the appropriate KDK from [`https://developer.apple.com/download/more/`](https://developer.apple.comhttps://developer.apple.com/download/more/).
+The KDK includes instructions on how to install the custom kernels you use during debugging. It also provides detailed instructions for setting up the connection between your computers. For more information, sign in and download the appropriate KDK from [https://developer.apple.com/download/more/](https://developer.apple.com/download/more/).
 
 ##### Debug the Kext
 
@@ -48,7 +49,8 @@ For more information about two-machine debugging, see the KDK Readme file locate
 
 ## See Also
 
-- [Installing a custom kernel extension](installing-a-custom-kernel-extension.md)
+### Kernel and drivers
+- [Installing a custom kernel extension](./installing-a-custom-kernel-extension.md)
   Install kernel extensions using a custom installer package, and help users understand the installation process.
 
 

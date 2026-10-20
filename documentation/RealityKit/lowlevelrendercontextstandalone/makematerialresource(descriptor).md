@@ -1,9 +1,10 @@
 # makeMaterialResource(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Synchronous variant of [`makeMaterialResource(descriptor:)`](lowlevelrendercontextstandalone/makematerialresource(descriptor:).md). Blocks the current thread until compilation completes.
+Synchronous variant of [`makeMaterialResource(descriptor:)`](./makematerialresource%28descriptor%29.md). Blocks the current thread until compilation completes.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,13 @@ Synchronous variant of [`makeMaterialResource(descriptor:)`](lowlevelrenderconte
 
 ```swift
 final func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) throws -> sending LowLevelMaterialResource
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) final func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource
 ```
 
 

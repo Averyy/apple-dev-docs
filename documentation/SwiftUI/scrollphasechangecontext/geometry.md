@@ -1,7 +1,8 @@
 # geometry
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geometry of the scroll view at the time of the scroll phase change.
 

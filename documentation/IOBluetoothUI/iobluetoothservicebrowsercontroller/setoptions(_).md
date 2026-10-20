@@ -1,7 +1,8 @@
 # setOptions(_:)
 
 **Framework**: IOBluetooth UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modify the options for the window controller.
 
@@ -14,6 +15,10 @@ Modify the options for the window controller.
 func setOptions(_ inOptions: IOBluetoothServiceBrowserControllerOptions)
 ```
 
+```objc
+- (void) setOptions:(IOBluetoothServiceBrowserControllerOptions) inOptions;
+```
+
 #### Discussion
 
 This method will set the options for the browser to new values.
@@ -24,35 +29,36 @@ This method will set the options for the browser to new values.
 
 ## See Also
 
-- [func addAllowedUUID(IOBluetoothSDPUUID!)](iobluetoothservicebrowsercontroller/addalloweduuid(_:).md)
+### Instance Methods
+- [func addAllowedUUID(IOBluetoothSDPUUID!)](./addalloweduuid%28_%29.md)
   Adds a UUID to the list of UUIDs that are used to validate the user’s selection.
-- [func addAllowedUUIDArray([Any]!)](iobluetoothservicebrowsercontroller/addalloweduuidarray(_:).md)
+- [func addAllowedUUIDArray([Any]!)](./addalloweduuidarray%28_%29.md)
   Adds an array of UUIDs to the list of UUIDs that are used to validate the user’s selection.
-- [func beginSheetModal(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!) -> IOReturn](iobluetoothservicebrowsercontroller/beginsheetmodal(for:modaldelegate:didend:contextinfo:).md)
+- [func beginSheetModal(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!) -> IOReturn](./beginsheetmodal%28for,modaldelegate,didend,contextinfo%29.md)
   Runs the service browser panel as a sheet on the target window.
-- [func clearAllowedUUIDs()](iobluetoothservicebrowsercontroller/clearalloweduuids.md)
+- [func clearAllowedUUIDs()](./clearalloweduuids%28%29.md)
   Resets the controller back to the default state where it will accept any device the user selects.
-- [func getDescriptionText() -> String!](iobluetoothservicebrowsercontroller/getdescriptiontext.md)
+- [func getDescriptionText() -> String!](./getdescriptiontext%28%29.md)
   Returns the description text that appears in the device selector panel.
-- [func getOptions() -> IOBluetoothServiceBrowserControllerOptions](iobluetoothservicebrowsercontroller/getoptions.md)
+- [func getOptions() -> IOBluetoothServiceBrowserControllerOptions](./getoptions%28%29.md)
   Returns the option bits that control the panel’s behavior.
-- [func getPrompt() -> String!](iobluetoothservicebrowsercontroller/getprompt.md)
+- [func getPrompt() -> String!](./getprompt%28%29.md)
   Returns the title of the default/select button in the device selector panel.
-- [func getRef() -> Unmanaged<IOBluetoothServiceBrowserControllerRef>!](iobluetoothservicebrowsercontroller/getref.md)
+- [func getRef() -> Unmanaged<IOBluetoothServiceBrowserControllerRef>!](./getref%28%29.md)
   Returns an IOBluetoothServiceBrowserControllerRef representation of the target IOBluetoothServiceBrowserController object.
-- [func getResults() -> [Any]!](iobluetoothservicebrowsercontroller/getresults.md)
+- [func getResults() -> [Any]!](./getresults%28%29.md)
   Returns the result of the user’s selection.
-- [func getSearchAttributes() -> UnsafePointer<IOBluetoothDeviceSearchAttributes>!](iobluetoothservicebrowsercontroller/getsearchattributes.md)
+- [func getSearchAttributes() -> UnsafePointer<IOBluetoothDeviceSearchAttributes>!](./getsearchattributes%28%29.md)
   Returns the search attributes that control the panel’s search/inquiry behavior.
-- [func getTitle() -> String!](iobluetoothservicebrowsercontroller/gettitle.md)
+- [func getTitle() -> String!](./gettitle%28%29.md)
   Returns the title of the device selector panel.
-- [func runModal() -> Int32](iobluetoothservicebrowsercontroller/runmodal.md)
+- [func runModal() -> Int32](./runmodal%28%29.md)
   Runs the service browser panel in a modal session to allow the user to select a service on a Bluetooth device.
-- [func setDescriptionText(String!)](iobluetoothservicebrowsercontroller/setdescriptiontext(_:).md)
+- [func setDescriptionText(String!)](./setdescriptiontext%28_%29.md)
   Sets the description text that appears in the device selector panel.
-- [func setPrompt(String!)](iobluetoothservicebrowsercontroller/setprompt(_:).md)
+- [func setPrompt(String!)](./setprompt%28_%29.md)
   Sets the title of the default/select button in the device selector panel.
-- [func setSearchAttributes(UnsafePointer<IOBluetoothDeviceSearchAttributes>!)](iobluetoothservicebrowsercontroller/setsearchattributes(_:).md)
+- [func setSearchAttributes(UnsafePointer<IOBluetoothDeviceSearchAttributes>!)](./setsearchattributes%28_%29.md)
   Sets the search attributes that control the panel’s search/inquiry behavior.
 
 

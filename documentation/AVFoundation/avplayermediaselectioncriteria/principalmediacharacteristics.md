@@ -1,7 +1,8 @@
 # principalMediaCharacteristics
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of media characteristics that are essential to select when choosing media with a particular characteristic.
 
@@ -20,6 +21,10 @@ An array of media characteristics that are essential to select when choosing med
 var principalMediaCharacteristics: [AVMediaCharacteristic]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSArray<NSString *> * principalMediaCharacteristics;
+```
+
 #### Discussion
 
 If no option matches the principal media characteristics, the system chooses the default option in the group as the best match.
@@ -30,9 +35,10 @@ When making automatic selections, a player item treats principal media character
 
 ## See Also
 
-- [var preferredLanguages: [String]?](avplayermediaselectioncriteria/preferredlanguages.md)
+### Retrieving selection criteria settings
+- [var preferredLanguages: [String]?](./preferredlanguages.md)
   An array of language identifiers in preferred order.
-- [var preferredMediaCharacteristics: [AVMediaCharacteristic]?](avplayermediaselectioncriteria/preferredmediacharacteristics.md)
+- [var preferredMediaCharacteristics: [AVMediaCharacteristic]?](./preferredmediacharacteristics.md)
   An array of media characteristics in preferred order.
 
 

@@ -1,7 +1,8 @@
 # cancelPerform(_:target:argument:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the sending of a previously scheduled message.
 
@@ -20,9 +21,13 @@ Cancels the sending of a previously scheduled message.
 func cancelPerform(_ aSelector: Selector, target: Any, argument arg: Any?)
 ```
 
+```objc
+- (void) cancelPerformSelector:(SEL) aSelector target:(id) target argument:(id) arg;
+```
+
 #### Discussion
 
-You can use this method to cancel a message previously scheduled using the [`perform(_:target:argument:order:modes:)`](runloop/perform(_:target:argument:order:modes:).md) method. The parameters identify the message you want to cancel and must match those originally specified when the selector was scheduled. This method removes the perform request from all modes of the run loop.
+You can use this method to cancel a message previously scheduled using the [`perform(_:target:argument:order:modes:)`](./perform%28_,target,argument,order,modes%29.md) method. The parameters identify the message you want to cancel and must match those originally specified when the selector was scheduled. This method removes the perform request from all modes of the run loop.
 
 ## Parameters
 
@@ -32,13 +37,14 @@ You can use this method to cancel a message previously scheduled using the [`per
 
 ## See Also
 
-- [func perform(() -> Void)](runloop/perform(_:).md)
+### Scheduling and Canceling Tasks
+- [func perform(() -> Void)](./perform%28_%29.md)
   Schedules a block that the run loop invokes.
-- [func perform(inModes: [RunLoop.Mode], block: () -> Void)](runloop/perform(inmodes:block:).md)
+- [func perform(inModes: [RunLoop.Mode], block: () -> Void)](./perform%28inmodes,block%29.md)
   Schedules a block that the run loop invokes when it’s running in any of the specified modes.
-- [func perform(Selector, target: Any, argument: Any?, order: Int, modes: [RunLoop.Mode])](runloop/perform(_:target:argument:order:modes:).md)
+- [func perform(Selector, target: Any, argument: Any?, order: Int, modes: [RunLoop.Mode])](./perform%28_,target,argument,order,modes%29.md)
   Schedules the sending of a message on the receiver.
-- [func cancelPerformSelectors(withTarget: Any)](runloop/cancelperformselectors(withtarget:).md)
+- [func cancelPerformSelectors(withTarget: Any)](./cancelperformselectors%28withtarget%29.md)
   Cancels all outstanding ordered performs scheduled with a given target.
 
 

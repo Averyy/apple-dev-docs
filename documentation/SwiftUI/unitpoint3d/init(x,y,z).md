@@ -1,7 +1,8 @@
 # init(x:y:z:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3D unit point with the specified offsets.
 
@@ -26,7 +27,8 @@ Values outside the range `[0, 1]` project to points outside of a view.
 
 ## See Also
 
-- [init()](unitpoint3d/init.md)
+### Creating a point
+- [init()](./init%28%29.md)
   Creates a 3D unit point at the origin.
 
 

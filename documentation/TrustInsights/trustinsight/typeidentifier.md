@@ -2,6 +2,7 @@
 
 **Framework**: Trust Insights  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The identifier string for the type of insight this represents.

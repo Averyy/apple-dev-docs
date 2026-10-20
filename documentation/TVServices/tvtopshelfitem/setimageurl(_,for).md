@@ -1,7 +1,8 @@
 # setImageURL(_:for:)
 
 **Framework**: TV Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates an image with the current item.
 
@@ -12,6 +13,10 @@ Associates an image with the current item.
 
 ```swift
 func setImageURL(_ imageURL: URL?, for traits: TVTopShelfItem.ImageTraits)
+```
+
+```objc
+- (void) setImageURL:(NSURL *) imageURL forTraits:(TVTopShelfItemImageTraits) traits;
 ```
 
 #### Discussion
@@ -27,9 +32,10 @@ The system always chooses the image whose traits match the target device.
 
 ## See Also
 
-- [func imageURL(for: TVTopShelfItem.ImageTraits) -> URL?](tvtopshelfitem/imageurl(for:).md)
+### Providing an Image for the Item
+- [func imageURL(for: TVTopShelfItem.ImageTraits) -> URL?](./imageurl%28for%29.md)
   Returns an image associated with the current item.
-- [TVTopShelfItem.ImageTraits](tvtopshelfitem/imagetraits.md)
+- [TVTopShelfItem.ImageTraits](./imagetraits.md)
   Constants describing the image format.
 
 

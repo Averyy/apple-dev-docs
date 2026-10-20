@@ -1,7 +1,8 @@
 # base
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type-erased scroll target behavior.
 

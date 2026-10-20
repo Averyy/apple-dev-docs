@@ -1,7 +1,8 @@
 # init(pin0:pin1:linearLimit:checksForInternalCollisions:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new prismatic joint.
 
@@ -24,7 +25,7 @@ init(pin0: GeometricPin, pin1: GeometricPin, linearLimit: ClosedRange<Float>? = 
 - `pin0`: The local position and orientation on the first entity.
 - `pin1`: The local position and orientation on the second entity.
 - `linearLimit`: A limit of the the translation of `pin1` from `pin0` in the direction of the x-axis of `pin0`.
-- `checksForInternalCollisions`: A Boolean that indicates whether the joint checks for collisions between the two [`Entity`](entity.md) instances.
+- `checksForInternalCollisions`: A Boolean that indicates whether the joint checks for collisions between the two [`Entity`](../entity.md) instances.
 
 
 ---

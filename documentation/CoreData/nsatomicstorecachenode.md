@@ -1,7 +1,8 @@
 # NSAtomicStoreCacheNode
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A concrete class that you use to represent basic nodes in a Core Data atomic store.
 
@@ -10,7 +11,7 @@ A concrete class that you use to represent basic nodes in a Core Data atomic sto
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ A concrete class that you use to represent basic nodes in a Core Data atomic sto
 
 ```swift
 class NSAtomicStoreCacheNode
+```
+
+```objc
+@interface NSAtomicStoreCacheNode : NSObject
 ```
 
 #### Overview
@@ -29,51 +34,52 @@ You can subclass `NSAtomicStoreCacheNode` to provide custom behavior.
 ## Topics
 
 ### Initializing a Cache Node
-- [init(objectID: NSManagedObjectID)](nsatomicstorecachenode/init(objectid:).md)
+- [init(objectID: NSManagedObjectID)](./nsatomicstorecachenode/init%28objectid%29.md)
   Returns a cache node for the given managed object ID.
 ### Managing Node Data
-- [var objectID: NSManagedObjectID](nsatomicstorecachenode/objectid.md)
+- [var objectID: NSManagedObjectID](./nsatomicstorecachenode/objectid.md)
   The managed object ID of the node.
-- [var propertyCache: NSMutableDictionary?](nsatomicstorecachenode/propertycache.md)
+- [var propertyCache: NSMutableDictionary?](./nsatomicstorecachenode/propertycache.md)
   The property cache dictionary of the node.
-- [func value(forKey: String) -> Any?](nsatomicstorecachenode/value(forkey:).md)
+- [func value(forKey: String) -> Any?](./nsatomicstorecachenode/value%28forkey%29.md)
   Returns the value for a given key.
-- [func setValue(Any?, forKey: String)](nsatomicstorecachenode/setvalue(_:forkey:).md)
+- [func setValue(Any?, forKey: String)](./nsatomicstorecachenode/setvalue%28_,forkey%29.md)
   Sets the value for the given key.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPersistentStoreCoordinator](nspersistentstorecoordinator.md)
+### Store Coordination
+- [class NSPersistentStoreCoordinator](./nspersistentstorecoordinator.md)
   An object that enables an app’s contexts and the underlying persistent stores to work together.
-- [class NSPersistentStore](nspersistentstore.md)
+- [class NSPersistentStore](./nspersistentstore.md)
   The abstract base class for all Core Data persistent stores.
-- [class NSPersistentStoreDescription](nspersistentstoredescription.md)
+- [class NSPersistentStoreDescription](./nspersistentstoredescription.md)
   A description object used to create and load a persistent store.
-- [class NSPersistentStoreRequest](nspersistentstorerequest.md)
+- [class NSPersistentStoreRequest](./nspersistentstorerequest.md)
   Criteria used to retrieve data from or save data to a persistent store.
-- [class NSPersistentStoreResult](nspersistentstoreresult.md)
+- [class NSPersistentStoreResult](./nspersistentstoreresult.md)
   The abstract base class for results returned from a persistent store coordinator.
-- [class NSPersistentStoreAsynchronousResult](nspersistentstoreasynchronousresult.md)
+- [class NSPersistentStoreAsynchronousResult](./nspersistentstoreasynchronousresult.md)
   A concrete class used to represent the results of an asynchronous request.
-- [class NSSaveChangesRequest](nssavechangesrequest.md)
+- [class NSSaveChangesRequest](./nssavechangesrequest.md)
   An encapsulation of a collection of changes to be made by an object store in response to a save operation on a managed object context.
-- [class NSAtomicStore](nsatomicstore.md)
+- [class NSAtomicStore](./nsatomicstore.md)
   An abstract superclass that you subclass to create a Core Data atomic store.
-- [class NSIncrementalStore](nsincrementalstore.md)
+- [class NSIncrementalStore](./nsincrementalstore.md)
   An abstract superclass defining the API through which Core Data communicates with a store.
-- [class NSIncrementalStoreNode](nsincrementalstorenode.md)
+- [class NSIncrementalStoreNode](./nsincrementalstorenode.md)
   A concrete class used to represent basic nodes in a Core Data incremental store.
 
 

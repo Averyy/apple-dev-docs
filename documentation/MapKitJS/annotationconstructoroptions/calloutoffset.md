@@ -1,7 +1,8 @@
 # calloutOffset
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The offset, in CSS pixels, of a callout from the top center of the element.
 
@@ -10,7 +11,7 @@ The offset, in CSS pixels, of a callout from the top center of the element.
 
 ## Declaration
 
-```swift
+```
 calloutOffset?: DOMPoint;
 ```
 
@@ -22,9 +23,10 @@ To choose a different placement, provide an offset point where positive x values
 
 ## See Also
 
-- [callout](annotationconstructoroptions/callout.md)
+### Creating callouts
+- [callout](./callout.md)
   A delegate that enables you to customize the annotation’s callout.
-- [calloutEnabled](annotationconstructoroptions/calloutenabled.md)
+- [calloutEnabled](./calloutenabled.md)
   A Boolean value that determines whether the map shows a callout.
 
 

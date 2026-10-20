@@ -1,6 +1,7 @@
 # Core Services
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: Framework
 
 Access and manage key operating system services, such as launch and identity services.
 
@@ -20,25 +21,25 @@ This collection of documents provides the API reference for the Core Services fr
 ## Topics
 
 ### Reference
-- [Apple Events](apple_events.md)
+- [Apple Events](./apple_events.md)
   Communicate messages across process boundaries that can be performed and responded to with a reply event.
-- [Backup Core](backup_core.md)
+- [Backup Core](./backup_core.md)
   Access low-level details about file and folder settings used by the macOS Backup utility. 
-- [Dictionary Services](dictionary_services.md)
+- [Dictionary Services](./dictionary_services.md)
   Look for words and phrases in system dictionaries.
-- [File System Events](file_system_events.md)
+- [File System Events](./file_system_events.md)
   Get notifications when the contents of a directory hierarchy change.
-- [Launch Services](launch_services.md)
+- [Launch Services](./launch_services.md)
   Launch and open documents in other apps from your current app process.
-- [File Metadata](file_metadata.md)
+- [File Metadata](./file_metadata.md)
   Search for files based on data that is part of the file or file system.
-- [OS Services](os_services.md)
+- [OS Services](./os_services.md)
   Interact with operating system services, including user and group accounts and power management.
-- [Search Kit](search_kit.md)
+- [Search Kit](./search_kit.md)
   Index and search natural language documents.
-- [Carbon Core](carbon_core.md)
+- [Carbon Core](./carbon_core.md)
   Interact with legacy technologies.
-- [Core Services Constants](core_services_constants.md)
+- [Core Services Constants](./core_services_constants.md)
 
 
 ---

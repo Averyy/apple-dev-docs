@@ -1,7 +1,8 @@
 # MIDIObjectRemoveProperty(_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes an object’s property.
 
@@ -18,6 +19,10 @@ Removes an object’s property.
 func MIDIObjectRemoveProperty(_ obj: MIDIObjectRef, _ propertyID: CFString) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIObjectRemoveProperty(MIDIObjectRef obj, CFStringRef propertyID);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
@@ -29,23 +34,24 @@ An `OSStatus` result code.
 
 ## See Also
 
-- [func MIDIObjectGetProperties(MIDIObjectRef, UnsafeMutablePointer<Unmanaged<CFPropertyList>?>, Bool) -> OSStatus](midiobjectgetproperties(_:_:_:).md)
+### Property Accessors
+- [func MIDIObjectGetProperties(MIDIObjectRef, UnsafeMutablePointer<Unmanaged<CFPropertyList>?>, Bool) -> OSStatus](./midiobjectgetproperties%28_,_,_%29.md)
   Returns all properties of an object.
-- [func MIDIObjectGetStringProperty(MIDIObjectRef, CFString, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](midiobjectgetstringproperty(_:_:_:).md)
+- [func MIDIObjectGetStringProperty(MIDIObjectRef, CFString, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./midiobjectgetstringproperty%28_,_,_%29.md)
   Gets an object’s string-type property.
-- [func MIDIObjectSetStringProperty(MIDIObjectRef, CFString, CFString) -> OSStatus](midiobjectsetstringproperty(_:_:_:).md)
+- [func MIDIObjectSetStringProperty(MIDIObjectRef, CFString, CFString) -> OSStatus](./midiobjectsetstringproperty%28_,_,_%29.md)
   Sets an object’s string-type property.
-- [func MIDIObjectGetIntegerProperty(MIDIObjectRef, CFString, UnsafeMutablePointer<Int32>) -> OSStatus](midiobjectgetintegerproperty(_:_:_:).md)
+- [func MIDIObjectGetIntegerProperty(MIDIObjectRef, CFString, UnsafeMutablePointer<Int32>) -> OSStatus](./midiobjectgetintegerproperty%28_,_,_%29.md)
   Gets an object’s integer-type property.
-- [func MIDIObjectSetIntegerProperty(MIDIObjectRef, CFString, Int32) -> OSStatus](midiobjectsetintegerproperty(_:_:_:).md)
+- [func MIDIObjectSetIntegerProperty(MIDIObjectRef, CFString, Int32) -> OSStatus](./midiobjectsetintegerproperty%28_,_,_%29.md)
   Sets an object’s integer-type property.
-- [func MIDIObjectGetDataProperty(MIDIObjectRef, CFString, UnsafeMutablePointer<Unmanaged<CFData>?>) -> OSStatus](midiobjectgetdataproperty(_:_:_:).md)
+- [func MIDIObjectGetDataProperty(MIDIObjectRef, CFString, UnsafeMutablePointer<Unmanaged<CFData>?>) -> OSStatus](./midiobjectgetdataproperty%28_,_,_%29.md)
   Gets an object’s data-type property.
-- [func MIDIObjectSetDataProperty(MIDIObjectRef, CFString, CFData) -> OSStatus](midiobjectsetdataproperty(_:_:_:).md)
+- [func MIDIObjectSetDataProperty(MIDIObjectRef, CFString, CFData) -> OSStatus](./midiobjectsetdataproperty%28_,_,_%29.md)
   Sets an object’s data-type property.
-- [func MIDIObjectGetDictionaryProperty(MIDIObjectRef, CFString, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](midiobjectgetdictionaryproperty(_:_:_:).md)
+- [func MIDIObjectGetDictionaryProperty(MIDIObjectRef, CFString, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](./midiobjectgetdictionaryproperty%28_,_,_%29.md)
   Gets an object’s dictionary-type property.
-- [func MIDIObjectSetDictionaryProperty(MIDIObjectRef, CFString, CFDictionary) -> OSStatus](midiobjectsetdictionaryproperty(_:_:_:).md)
+- [func MIDIObjectSetDictionaryProperty(MIDIObjectRef, CFString, CFDictionary) -> OSStatus](./midiobjectsetdictionaryproperty%28_,_,_%29.md)
   Sets an object’s dictionary-type property.
 
 

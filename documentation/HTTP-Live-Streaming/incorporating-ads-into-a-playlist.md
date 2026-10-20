@@ -1,6 +1,7 @@
 # Incorporating Ads into a Playlist
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Add branding or ads to a playlist.
 
@@ -52,7 +53,8 @@ These are the tags used in the ads playlist example:
 
 ## See Also
 
-- [Adding alternate media to a playlist](adding-alternate-media-to-a-playlist.md)
+### Modified playlists
+- [Adding alternate media to a playlist](./adding-alternate-media-to-a-playlist.md)
   Specify Rendition Playlists that can override the main presentation.
 
 

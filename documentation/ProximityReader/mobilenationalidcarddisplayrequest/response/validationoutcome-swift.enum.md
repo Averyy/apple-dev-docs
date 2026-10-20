@@ -1,7 +1,8 @@
 # MobileNationalIDCardDisplayRequest.Response.ValidationOutcome
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents how the user validates the mobile document response.
 
@@ -19,20 +20,20 @@ enum ValidationOutcome
 ## Topics
 
 ### Enumeration Cases
-- [MobileNationalIDCardDisplayRequest.Response.ValidationOutcome.approved](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/approved.md)
+- [MobileNationalIDCardDisplayRequest.Response.ValidationOutcome.approved](./validationoutcome-swift.enum/approved.md)
   A message that indicates the user approved the document response.
-- [MobileNationalIDCardDisplayRequest.Response.ValidationOutcome.dismissed](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/dismissed.md)
+- [MobileNationalIDCardDisplayRequest.Response.ValidationOutcome.dismissed](./validationoutcome-swift.enum/dismissed.md)
   A message that indicates the user didn’t explicitly approve or reject the document response.
-- [MobileNationalIDCardDisplayRequest.Response.ValidationOutcome.rejected](mobilenationalidcarddisplayrequest/response/validationoutcome-swift.enum/rejected.md)
+- [MobileNationalIDCardDisplayRequest.Response.ValidationOutcome.rejected](./validationoutcome-swift.enum/rejected.md)
   A message that indicates the user rejected the document response.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

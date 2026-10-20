@@ -1,7 +1,8 @@
 # addOpacityRamp(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an opacity ramp to apply during a specified time range.
 
@@ -21,9 +22,10 @@ mutating func addOpacityRamp(_ ramp: AVVideoCompositionLayerInstruction.OpacityR
 
 ## See Also
 
-- [func setOpacity(Float, at: CMTime)](avvideocompositionlayerinstruction/configuration/setopacity(_:at:).md)
+### Configuring the opacity
+- [func setOpacity(Float, at: CMTime)](./setopacity%28_,at%29.md)
   Sets the opacity value at a specific time within the time range of the instruction.
-- [func opacityRamp(at: CMTime) -> AVVideoCompositionLayerInstruction.OpacityRamp?](avvideocompositionlayerinstruction/configuration/opacityramp(at:).md)
+- [func opacityRamp(at: CMTime) -> AVVideoCompositionLayerInstruction.OpacityRamp?](./opacityramp%28at%29.md)
   Obtains the opacity ramp that includes a specified time.
 
 

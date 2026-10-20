@@ -1,7 +1,8 @@
 # NSSupportsLiveActivitiesFrequentUpdates
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether an app can update its Live Activities frequently.
 
@@ -9,9 +10,10 @@ A Boolean value that indicates whether an app can update its Live Activities fre
 - iOS 16.2+
 - iPadOS 16.2+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSSupportsLiveActivitiesFrequentUpdates` (Supports Live Activities Frequent Updates)
+- **Type**: boolean
 
 #### Discussion
 
@@ -19,7 +21,8 @@ Set the corresponding value to `true` to enable your Live Activities to receive 
 
 ## See Also
 
-- [NSSupportsLiveActivities](information-property-list/nssupportsliveactivities.md)
+### Live Activities
+- [NSSupportsLiveActivities](./nssupportsliveactivities.md)
   A Boolean value that indicates whether an app supports Live Activities.
 
 

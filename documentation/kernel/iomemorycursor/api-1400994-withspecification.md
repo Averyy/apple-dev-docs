@@ -1,14 +1,15 @@
 # withSpecification
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<IOMemoryCursor> withSpecification(SegmentFunction outSegFunc, IOPhysicalLength maxSegmentSize, IOPhysicalLength maxTransferSize, IOPhysicalLength alignment);
 ```
 

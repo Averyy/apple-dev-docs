@@ -1,7 +1,8 @@
 # errSecInvalidSubServiceID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid sub-service ID was detected.
 
@@ -18,6 +19,10 @@ An invalid sub-service ID was detected.
 
 ```swift
 var errSecInvalidSubServiceID: OSStatus { get }
+```
+
+```c
+errSecInvalidSubServiceID
 ```
 
 

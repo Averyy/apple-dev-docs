@@ -1,7 +1,8 @@
 # NSMetadataQueryResultContentRelevanceAttribute
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 5.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let NSMetadataQueryResultContentRelevanceAttribute: String
+```
+
+```c
+extern NSString * const NSMetadataQueryResultContentRelevanceAttribute;
 ```
 
 #### Discussion

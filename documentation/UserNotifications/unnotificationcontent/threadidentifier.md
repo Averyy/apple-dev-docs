@@ -1,7 +1,8 @@
 # threadIdentifier
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier that groups related notifications.
 
@@ -19,17 +20,30 @@ The identifier that groups related notifications.
 var threadIdentifier: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * threadIdentifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * threadIdentifier;
+```
+
 #### Discussion
 
 For remote notifications, the system sets this property to the value of the `thread-id` key in the `aps` dictionary.
 
 ## See Also
 
-- [var categoryIdentifier: String](unnotificationcontent/categoryidentifier.md)
+### Retrieving group information
+- [var categoryIdentifier: String](./categoryidentifier.md)
   The identifier of the notification’s category.
-- [var summaryArgument: String](unnotificationcontent/summaryargument.md)
+- [var summaryArgument: String](./summaryargument.md)
   The text the system adds to the notification summary to provide additional context.
-- [var summaryArgumentCount: Int](unnotificationcontent/summaryargumentcount.md)
+- [var summaryArgumentCount: Int](./summaryargumentcount.md)
   The number the system adds to the notification summary when the notification represents multiple items.
 
 

@@ -1,7 +1,8 @@
 # ceiling
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Look for ceilings.
 
@@ -11,7 +12,7 @@ Look for ceilings.
 - Mac Catalyst 14.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ static let ceiling: AnchoringComponent.Target.Classification
 
 ## See Also
 
-- [static let wall: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/wall.md)
+### Classifying a target
+- [static let wall: AnchoringComponent.Target.Classification](./wall.md)
   Look for walls.
-- [static let floor: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/floor.md)
+- [static let floor: AnchoringComponent.Target.Classification](./floor.md)
   Look for floors.
-- [static let table: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/table.md)
+- [static let table: AnchoringComponent.Target.Classification](./table.md)
   Look for tables.
-- [static let seat: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/seat.md)
+- [static let seat: AnchoringComponent.Target.Classification](./seat.md)
   Look for seats.
-- [static let any: AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification/any.md)
+- [static let any: AnchoringComponent.Target.Classification](./any.md)
   Look for any kind of surface.
 
 

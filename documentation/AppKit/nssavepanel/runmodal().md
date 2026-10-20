@@ -1,17 +1,22 @@
 # runModal()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the panel and begins its event loop with the current working (or last-selected) directory as the default starting point.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func runModal() -> NSApplication.ModalResponse
+```
+
+```objc
+- (NSModalResponse) runModal;
 ```
 
 #### Return Value
@@ -20,17 +25,19 @@ func runModal() -> NSApplication.ModalResponse
 
 #### Discussion
 
-This method invokes `NSApplication`’s [`runModal(for:)`](nsapplication/runmodal(for:).md) method with `self` as the argument.
+This method invokes `NSApplication`’s [`runModal(for:)`](../nsapplication/runmodal%28for%29.md) method with `self` as the argument.
 
 ## See Also
 
-- [func runModal(for: NSWindow) -> NSApplication.ModalResponse](nsapplication/runmodal(for:).md)
+### Related Documentation
+- [func runModal(for: NSWindow) -> NSApplication.ModalResponse](../nsapplication/runmodal%28for%29.md)
   Starts a modal event loop for the specified window.
-- [func beginSheetModal(for: NSWindow, completionHandler: (NSApplication.ModalResponse) -> Void)](nssavepanel/beginsheetmodal(for:completionhandler:).md)
+### Showing the Panel
+- [func beginSheetModal(for: NSWindow, completionHandler: (NSApplication.ModalResponse) -> Void)](./beginsheetmodal%28for,completionhandler%29.md)
   Presents the panel as a sheet modal to the specified window.
-- [func begin(completionHandler: (NSApplication.ModalResponse) -> Void)](nssavepanel/begin(completionhandler:).md)
+- [func begin(completionHandler: (NSApplication.ModalResponse) -> Void)](./begin%28completionhandler%29.md)
   Presents the panel as a modeless window.
-- [func validateVisibleColumns()](nssavepanel/validatevisiblecolumns.md)
+- [func validateVisibleColumns()](./validatevisiblecolumns%28%29.md)
   Validates and reloads the browser columns visible in the panel.
 
 

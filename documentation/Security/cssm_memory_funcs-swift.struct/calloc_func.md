@@ -1,7 +1,8 @@
 # calloc_func
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var calloc_func: CSSM_CALLOC!
+```
+
+```c
+CSSM_CALLOC calloc_func;
 ```
 
 

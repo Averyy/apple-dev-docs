@@ -1,7 +1,8 @@
 # NSFileProviderTestingOperationType.creation
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Propagates the creation of a source item to the target location.
 
@@ -18,21 +19,26 @@ Propagates the creation of a source item to the target location.
 case creation
 ```
 
+```c
+NSFileProviderTestingOperationTypeCreation
+```
+
 ## See Also
 
-- [NSFileProviderTestingOperationType.childrenEnumeration](nsfileprovidertestingoperationtype/childrenenumeration.md)
+### Types
+- [NSFileProviderTestingOperationType.childrenEnumeration](./childrenenumeration.md)
   Lists an item’s content.
-- [NSFileProviderTestingOperationType.collisionResolution](nsfileprovidertestingoperationtype/collisionresolution.md)
+- [NSFileProviderTestingOperationType.collisionResolution](./collisionresolution.md)
   Resolves a collision by renaming the new item.
-- [NSFileProviderTestingOperationType.contentFetch](nsfileprovidertestingoperationtype/contentfetch.md)
+- [NSFileProviderTestingOperationType.contentFetch](./contentfetch.md)
   Fetches an item’s content.
-- [NSFileProviderTestingOperationType.deletion](nsfileprovidertestingoperationtype/deletion.md)
+- [NSFileProviderTestingOperationType.deletion](./deletion.md)
   Propagates the deletion of the source item from the target location.
-- [NSFileProviderTestingOperationType.ingestion](nsfileprovidertestingoperationtype/ingestion.md)
+- [NSFileProviderTestingOperationType.ingestion](./ingestion.md)
   Alerts the system to changes to either the local or remote storage.
-- [NSFileProviderTestingOperationType.lookup](nsfileprovidertestingoperationtype/lookup.md)
+- [NSFileProviderTestingOperationType.lookup](./lookup.md)
   Looks up an item.
-- [NSFileProviderTestingOperationType.modification](nsfileprovidertestingoperationtype/modification.md)
+- [NSFileProviderTestingOperationType.modification](./modification.md)
   Propagates a change from the source item to the target location.
 
 

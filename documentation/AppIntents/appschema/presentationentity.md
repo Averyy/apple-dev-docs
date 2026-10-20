@@ -1,7 +1,8 @@
 # AppSchema.PresentationEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the presentation domain.
 
@@ -21,27 +22,28 @@ protocol PresentationEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var document: some AppSchemaEntity](appschema/presentationentity/document.md)
+- [var document: some AppSchemaEntity](./presentationentity/document.md)
   An entity schema for a document.
-- [var slide: some AppSchemaEntity](appschema/presentationentity/slide.md)
+- [var slide: some AppSchemaEntity](./presentationentity/slide.md)
   An entity schema for a slide.
-- [var template: some AppSchemaEntity](appschema/presentationentity/template.md)
+- [var template: some AppSchemaEntity](./presentationentity/template.md)
   An entity schema for a template.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var document: some AppSchemaEntity](appschema/presentationentity/document.md)
+### Content and parameter types
+- [var document: some AppSchemaEntity](./presentationentity/document.md)
   An entity schema for a document.
-- [var slide: some AppSchemaEntity](appschema/presentationentity/slide.md)
+- [var slide: some AppSchemaEntity](./presentationentity/slide.md)
   An entity schema for a slide.
-- [var template: some AppSchemaEntity](appschema/presentationentity/template.md)
+- [var template: some AppSchemaEntity](./presentationentity/template.md)
   An entity schema for a template.
 
 

@@ -1,7 +1,8 @@
 # imageScale(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales images within the view according to one of the relative sizes available including small, medium, and large images sizes.
 
@@ -46,7 +47,7 @@ VStack {
 }
 ```
 
-![A view showing small, medium, and large hearts rendered at a size](/images/com.apple.SwiftUI/SwiftUI-View-imageScale@2x.png)
+![A view showing small, medium, and large hearts rendered at a size](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-imageScale@2x.png)
 
 ## Parameters
 
@@ -54,15 +55,16 @@ VStack {
 
 ## See Also
 
-- [Fitting images into available space](fitting-images-into-available-space.md)
+### Configuring an image
+- [Fitting images into available space](../fitting-images-into-available-space.md)
   Adjust the size and shape of images in your app’s user interface by applying view modifiers.
-- [var imageScale: Image.Scale](environmentvalues/imagescale.md)
+- [var imageScale: Image.Scale](../environmentvalues/imagescale.md)
   The image scale for this environment.
-- [Image.Scale](image/scale.md)
+- [Image.Scale](../image/scale.md)
   A scale to apply to vector images relative to text.
-- [Image.Orientation](image/orientation.md)
+- [Image.Orientation](../image/orientation.md)
   The orientation of an image.
-- [Image.ResizingMode](image/resizingmode.md)
+- [Image.ResizingMode](../image/resizingmode.md)
   The modes that SwiftUI uses to resize an image to fit within its containing view.
 
 

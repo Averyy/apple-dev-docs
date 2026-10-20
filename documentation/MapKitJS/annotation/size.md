@@ -1,7 +1,8 @@
 # size
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired dimensions of the annotation, in CSS pixels.
 
@@ -10,7 +11,7 @@ The desired dimensions of the annotation, in CSS pixels.
 
 ## Declaration
 
-```swift
+```
 get size(): Size | null;
 set size(value: Size);
 ```
@@ -27,17 +28,18 @@ If supplied, indicates the desired size of the annotation in CSS pixels. The val
 
 ## See Also
 
-- [coordinate](annotation/coordinate.md)
+### Getting and setting annotation appearance
+- [coordinate](./coordinate.md)
   The annotation’s coordinate.
-- [anchorOffset](annotation/anchoroffset.md)
+- [anchorOffset](./anchoroffset.md)
   An offset that changes the annotation’s default anchor point.
-- [appearanceAnimation](annotation/appearanceanimation.md)
+- [appearanceAnimation](./appearanceanimation.md)
   A CSS animation that runs when the annotation appears on the map.
-- [displayPriority](annotation/displaypriority-data.property.md)
+- [displayPriority](./displaypriority-data.property.md)
   A numeric hint that the map uses to prioritize how it displays annotations.
-- [padding](annotation/padding.md)
+- [padding](./padding.md)
   Spacing to add around the annotation when showing items.
-- [visible](annotation/visible.md)
+- [visible](./visible.md)
   A Boolean value that determines whether the annotation is visible or hidden.
 
 

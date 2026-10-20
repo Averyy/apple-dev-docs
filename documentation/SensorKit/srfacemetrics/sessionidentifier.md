@@ -1,7 +1,8 @@
 # sessionIdentifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the camera session.
 
@@ -16,13 +17,18 @@ An identifier for the camera session.
 var sessionIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * sessionIdentifier;
+```
+
 ## See Also
 
-- [var context: SRFaceMetrics.Context](srfacemetrics/context-swift.property.md)
+### Getting session information
+- [var context: SRFaceMetrics.Context](./context-swift.property.md)
   The context of the system during the camera session.
-- [SRFaceMetrics.Context](srfacemetrics/context-swift.struct.md)
+- [SRFaceMetrics.Context](./context-swift.struct.md)
   The context of the system during the camera session.
-- [var version: String](srfacemetrics/version.md)
+- [var version: String](./version.md)
   The version of the algorithm that the system uses to generate the face metrics and analytics.
 
 

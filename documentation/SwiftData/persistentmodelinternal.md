@@ -1,6 +1,7 @@
 # Internal symbols
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: API Collection
 
 Restricted-use symbols that the framework requires for macro expansion and other internal tasks.
 
@@ -11,7 +12,7 @@ Restricted-use symbols that the framework requires for macro expansion and other
 ## Topics
 
 ### Storage
-- [protocol BackingData](backingdata.md)
+- [protocol BackingData](./backingdata.md)
   An interface for providing in-memory storage for a persistent model.
 
 

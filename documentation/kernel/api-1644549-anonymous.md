@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kConvolved](1644549-anonymous/kconvolved.md)
-- [kConvolvedMask](1644549-anonymous/kconvolvedmask.md)
-- [kLiveVideoPassThru](1644549-anonymous/klivevideopassthru.md)
-- [kLiveVideoPassThruMask](1644549-anonymous/klivevideopassthrumask.md)
+- [kConvolved](./api-1644549-anonymous/kconvolved.md)
+- [kConvolvedMask](./api-1644549-anonymous/kconvolvedmask.md)
+- [kLiveVideoPassThru](./api-1644549-anonymous/klivevideopassthru.md)
+- [kLiveVideoPassThruMask](./api-1644549-anonymous/klivevideopassthrumask.md)
 
 
 ---

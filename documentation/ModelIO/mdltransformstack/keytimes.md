@@ -1,7 +1,8 @@
 # keyTimes
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var keyTimes: [NSNumber] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSNumber *> * keyTimes;
 ```
 
 

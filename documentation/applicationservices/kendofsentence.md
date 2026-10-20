@@ -1,7 +1,8 @@
 # kEndOfSentence
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Speech should be paused or stopped at the end of the sentence.
 

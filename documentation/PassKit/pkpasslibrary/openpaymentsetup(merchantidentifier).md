@@ -1,7 +1,8 @@
 # openPaymentSetup(merchantIdentifier:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -14,6 +15,10 @@
 
 ```swift
 func openPaymentSetup(merchantIdentifier: String)
+```
+
+```objc
+- (void) openPaymentSetupWithMerchantIdentifier:(NSString *) merchantIdentifier;
 ```
 
 

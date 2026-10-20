@@ -1,7 +1,8 @@
 # init(bitmapRepresentation:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a character set containing characters determined by a given bitmap representation.
 
@@ -18,6 +19,10 @@ Returns a character set containing characters determined by a given bitmap repre
 
 ```swift
 init(bitmapRepresentation data: Data)
+```
+
+```objc
++ (NSCharacterSet *) characterSetWithBitmapRepresentation:(NSData *) data;
 ```
 
 #### Return Value
@@ -49,9 +54,10 @@ bitmapRep[n >> 3] &= ~(((unsigned int)1) << (n & 7));
 
 ## See Also
 
-- [init?(contentsOfFile: String)](nscharacterset/init(contentsoffile:).md)
+### Creating and Managing Character Sets as Bitmap Representations
+- [init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Returns a character set read from the bitmap representation stored in the file a given path.
-- [var bitmapRepresentation: Data](nscharacterset/bitmaprepresentation.md)
+- [var bitmapRepresentation: Data](./bitmaprepresentation.md)
   An `NSData` object encoding the receiver in binary format.
 
 

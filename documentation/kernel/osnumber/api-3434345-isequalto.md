@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares the string with an OSObject
 
@@ -11,11 +12,11 @@ Compares the string with an OSObject
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isEqualTo(const OSMetaClassBase *anObject);
 ```
 
-#### Return_value
+#### Return Value
 
 true iff the object is of class OSNumber isEqualTo() returns true.
 
@@ -29,7 +30,8 @@ If the object is of class OSNumber, the result of isEqualTo(const OSNumber * aDa
 
 ## See Also
 
-- [- isEqualTo](osnumber/3180922-isequalto.md)
+### Comparing Numbers
+- [- isEqualTo](./api-3180922-isequalto.md)
   Compares the number with an OSNumber.
 
 

@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type that contains all unavailable anchor capabilities.
 

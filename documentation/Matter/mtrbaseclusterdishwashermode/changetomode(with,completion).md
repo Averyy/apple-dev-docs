@@ -1,7 +1,8 @@
 # changeToMode(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command ChangeToMode
 
@@ -17,7 +18,15 @@ Command ChangeToMode
 ## Declaration
 
 ```swift
+func changeToMode(with params: MTRDishwasherModeClusterChangeToModeParams, completion: @escaping @Sendable (MTRDishwasherModeClusterChangeToModeResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func changeToMode(with params: MTRDishwasherModeClusterChangeToModeParams) async throws -> MTRDishwasherModeClusterChangeToModeResponseParams
+```
+
+```objc
+- (void) changeToModeWithParams:(MTRDishwasherModeClusterChangeToModeParams *) params completion:(void (^)(MTRDishwasherModeClusterChangeToModeResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

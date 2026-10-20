@@ -1,7 +1,8 @@
 # init(type:value:start:end:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a newly instantiated category sample.
 
@@ -17,6 +18,10 @@ Creates a newly instantiated category sample.
 
 ```swift
 convenience init(type: HKCategoryType, value: Int, start startDate: Date, end endDate: Date)
+```
+
+```objc
++ (instancetype) categorySampleWithType:(HKCategoryType *) type value:(NSInteger) value startDate:(NSDate *) startDate endDate:(NSDate *) endDate;
 ```
 
 #### Return Value
@@ -56,26 +61,28 @@ HKCategorySample *categorySample =
 
 ## Parameters
 
-- `type`: The category type for this sample. For a complete list, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
-- `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
-- `startDate`: The start date for the sample. This must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
-- `endDate`: The end date for the sample. This must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
+- `type`: The category type for this sample. For a complete list, see [`HKCategoryTypeIdentifier`](../hkcategorytypeidentifier.md).
+- `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see [`HKCategoryTypeIdentifier`](../hkcategorytypeidentifier.md).
+- `startDate`: The start date for the sample. This must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
+- `endDate`: The end date for the sample. This must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
 
 ## See Also
 
-- [var value: Int](hkcategorysample/value.md)
+### Related Documentation
+- [var value: Int](./value.md)
   The category value for this sample.
-- [class func categoryType(forIdentifier: HKCategoryTypeIdentifier) -> HKCategoryType?](hkobjecttype/categorytype(foridentifier:).md)
+- [class func categoryType(forIdentifier: HKCategoryTypeIdentifier) -> HKCategoryType?](../hkobjecttype/categorytype%28foridentifier%29.md)
   Returns the shared category type for the provided identifier.
-- [var endDate: Date](hksample/enddate.md)
+- [var endDate: Date](../hksample/enddate.md)
   The sample’s end date.
-- [var categoryType: HKCategoryType](hkcategorysample/categorytype.md)
+- [var categoryType: HKCategoryType](./categorytype.md)
   The category type for this sample.
-- [var startDate: Date](hksample/startdate.md)
+- [var startDate: Date](../hksample/startdate.md)
   The sample’s start date.
-- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, metadata: [String : Any]?)](hkcategorysample/init(type:value:start:end:metadata:).md)
+### Creating Category Samples
+- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, metadata: [String : Any]?)](./init%28type,value,start,end,metadata%29.md)
   Creates a newly instantiated category sample with the provided metadata.
-- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](hkcategorysample/init(type:value:start:end:device:metadata:).md)
+- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](./init%28type,value,start,end,device,metadata%29.md)
   Creates a newly instantiated category sample including the provided device and metadata.
 
 

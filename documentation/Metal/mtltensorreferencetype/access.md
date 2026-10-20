@@ -1,7 +1,8 @@
 # access
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the read/write permissions of the tensor.
 
@@ -17,6 +18,10 @@ A value that represents the read/write permissions of the tensor.
 
 ```swift
 var access: MTLBindingAccess { get }
+```
+
+```objc
+@property (readonly) MTLBindingAccess access;
 ```
 
 

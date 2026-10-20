@@ -1,7 +1,8 @@
 # contrastAdjustment
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount by which to adjust the image contrast.
 
@@ -28,11 +29,12 @@ This property supports a value range from `0.0` to `3.0`.
 
 ## See Also
 
-- [var contrastPivot: Float?](detectcontoursrequest/contrastpivot.md)
+### Configuring a request
+- [var contrastPivot: Float?](./contrastpivot.md)
   The pixel value to use as a pivot for the contrast.
-- [var detectsDarkOnLight: Bool](detectcontoursrequest/detectsdarkonlight.md)
+- [var detectsDarkOnLight: Bool](./detectsdarkonlight.md)
   A Boolean value that indicates whether the request detects a dark object on a light background to aid in detection.
-- [var maximumImageDimension: Int](detectcontoursrequest/maximumimagedimension.md)
+- [var maximumImageDimension: Int](./maximumimagedimension.md)
   The maximum image dimension to use for contour detection.
 
 

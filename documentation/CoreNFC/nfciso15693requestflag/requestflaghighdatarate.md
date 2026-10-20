@@ -1,14 +1,15 @@
 # RequestFlagHighDataRate
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A bit mask value that turns on the high data rate flag.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
+- iOS 11.0+ - Deprecated in 14.0 (renamed: NFCISO15693RequestFlag.highDataRate)
+- iPadOS 11.0+ - Deprecated in 14.0 (renamed: NFCISO15693RequestFlag.highDataRate)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: NFCISO15693RequestFlag.highDataRate)
 
 ## Declaration
 
@@ -16,17 +17,22 @@ A bit mask value that turns on the high data rate flag.
 static var RequestFlagHighDataRate: NFCISO15693RequestFlag { get }
 ```
 
+```c
+RequestFlagHighDataRate
+```
+
 ## See Also
 
-- [static var RequestFlagDualSubCarriers: NFCISO15693RequestFlag](nfciso15693requestflag/requestflagdualsubcarriers.md)
+### Request Flags
+- [static var RequestFlagDualSubCarriers: NFCISO15693RequestFlag](./requestflagdualsubcarriers.md)
   A bit mask value that turns on the subcarrier flag.
-- [static var RequestFlagProtocolExtension: NFCISO15693RequestFlag](nfciso15693requestflag/requestflagprotocolextension.md)
+- [static var RequestFlagProtocolExtension: NFCISO15693RequestFlag](./requestflagprotocolextension.md)
   A bit mask value that turns on the protocol extension flag.
-- [static var RequestFlagSelect: NFCISO15693RequestFlag](nfciso15693requestflag/requestflagselect.md)
+- [static var RequestFlagSelect: NFCISO15693RequestFlag](./requestflagselect.md)
   A bit mask value that turns on the select flag.
-- [static var RequestFlagAddress: NFCISO15693RequestFlag](nfciso15693requestflag/requestflagaddress.md)
+- [static var RequestFlagAddress: NFCISO15693RequestFlag](./requestflagaddress.md)
   A bit mask value that turns on the address flag.
-- [static var RequestFlagOption: NFCISO15693RequestFlag](nfciso15693requestflag/requestflagoption.md)
+- [static var RequestFlagOption: NFCISO15693RequestFlag](./requestflagoption.md)
   A bit mask value that turns on the option flag.
 
 

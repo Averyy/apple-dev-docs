@@ -1,14 +1,15 @@
 # addRegistration(_:)
 
 **Framework**: IdentityDocumentServices  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register a document with the system.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -26,11 +27,12 @@ If the provided registration contains a `documentIdentifier` that is already reg
 
 ## See Also
 
-- [init()](identitydocumentproviderregistrationstore/init.md)
+### Registering and removing mobile documents
+- [init()](./init%28%29.md)
   Initializes an identity document provider registration store.
-- [var registrations: [any IdentityDocumentRegistration]](identitydocumentproviderregistrationstore/registrations.md)
+- [var registrations: [any IdentityDocumentRegistration]](./registrations.md)
   A list of all documents registered with the system.
-- [func removeRegistration(forDocumentIdentifier: String) async throws](identitydocumentproviderregistrationstore/removeregistration(fordocumentidentifier:).md)
+- [func removeRegistration(forDocumentIdentifier: String) async throws](./removeregistration%28fordocumentidentifier%29.md)
   Unregister a specific document with the system.
 
 

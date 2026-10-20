@@ -1,7 +1,8 @@
 # kSecKeyEffectiveKeySize
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is the effective number of bits in this key.  For example, a DES key has a key size in bits (`kSecKeyKeySizeInBits`) of 64 but a value for `kSecKeyEffectiveKeySize` of 56.
 
@@ -12,6 +13,10 @@ Type uint32; value is the effective number of bits in this key.  For example, a 
 
 ```swift
 var kSecKeyEffectiveKeySize: Int32 { get }
+```
+
+```c
+kSecKeyEffectiveKeySize
 ```
 
 

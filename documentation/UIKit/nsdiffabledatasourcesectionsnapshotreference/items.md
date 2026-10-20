@@ -1,7 +1,8 @@
 # items
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of all items in the section snapshot.
 
@@ -18,11 +19,16 @@ The identifiers of all items in the section snapshot.
 var items: [Any] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<id> * items;
+```
+
 ## See Also
 
-- [var rootItems: [Any]](nsdiffabledatasourcesectionsnapshotreference/rootitems.md)
+### Accessing items
+- [var rootItems: [Any]](./rootitems.md)
   The identifiers of the items at the top level of the section snapshot’s hierarchy.
-- [var visibleItems: [Any]](nsdiffabledatasourcesectionsnapshotreference/visibleitems.md)
+- [var visibleItems: [Any]](./visibleitems.md)
   The identifiers of the currently visible items in the section snapshot.
 
 

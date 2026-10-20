@@ -1,13 +1,14 @@
 # Core Media
 
 **Framework**: Core Media  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Represent time-based audio-visual assets with essential data types.
 
 **Availability**:
 - iOS 4.0+
-- iPadOS ?+
+- iPadOS
 - Mac Catalyst 13.1+
 - macOS 10.7+
 - tvOS 9.0+
@@ -21,108 +22,108 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 ## Topics
 
 ### Sample Processing
-- [CMSampleBuffer](cmsamplebuffer-api.md)
+- [CMSampleBuffer](./cmsamplebuffer-api.md)
   An object that contains zero or more media samples of a uniform media type.
-- [CMBlockBuffer](cmblockbuffer-api.md)
+- [CMBlockBuffer](./cmblockbuffer-api.md)
   An object the system uses to move blocks of memory through a processing system.
-- [CMTaggedBufferGroup](cmtaggedbuffergroup.md)
+- [CMTaggedBufferGroup](./cmtaggedbuffergroup.md)
   Objective-C types and interfaces for working with Core Media tagged buffer groups.
-- [CMFormatDescription](cmformatdescription-api.md)
+- [CMFormatDescription](./cmformatdescription-api.md)
   A media format descriptor that describes the samples in a sample buffer.
-- [CMAttachment](cmattachment-api.md)
+- [CMAttachment](./cmattachment-api.md)
   Add supporting metadata to sample buffers.
-- [struct CMTaggedBuffer](cmtaggedbuffer.md)
+- [struct CMTaggedBuffer](./cmtaggedbuffer.md)
   An instance of a media buffer containing metadata tags.
-- [struct CMMutableDataBlockBuffer](cmmutabledatablockbuffer.md)
+- [struct CMMutableDataBlockBuffer](./cmmutabledatablockbuffer.md)
   A block buffer that provides read-write access to a range of bytes.
-- [struct CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
+- [struct CMReadOnlyDataBlockBuffer](./cmreadonlydatablockbuffer.md)
   A block buffer that provides read-only access to the a range of bytes.
-- [struct CMReadySampleBuffer](cmreadysamplebuffer.md)
+- [struct CMReadySampleBuffer](./cmreadysamplebuffer.md)
   Buffer carrying readily available samples of media data.
-- [struct CMSampleDataReference](cmsampledatareference.md)
+- [struct CMSampleDataReference](./cmsampledatareference.md)
   References sample data in at a URL.
-- [struct CMTaggedDynamicBuffer](cmtaggeddynamicbuffer.md)
+- [struct CMTaggedDynamicBuffer](./cmtaggeddynamicbuffer.md)
   Contains a collection of tags associated with a read-only media buffer.
 ### Time Representation
-- [CMTime](cmtime-api.md)
+- [CMTime](./cmtime-api.md)
   A structure that represents time.
-- [CMTimeRange](cmtimerange-api.md)
+- [CMTimeRange](./cmtimerange-api.md)
   A structure that represents a range of time.
-- [CMTimeMapping](cmtimemapping-api.md)
+- [CMTimeMapping](./cmtimemapping-api.md)
   A structure that maps a segment of a source time range to a target time range.
 ### Media Synchronization
-- [CMClock](cmclock-api.md)
+- [CMClock](./cmclock-api.md)
   A reference clock you use to synchronize applications and devices.
-- [CMAudioClock](cmaudioclock-api.md)
+- [CMAudioClock](./cmaudioclock-api.md)
   A specialized reference clock that synchronizes with audio sources.
-- [CMTimebase](cmtimebase-api.md)
+- [CMTimebase](./cmtimebase-api.md)
   A model of a timeline under application control.
 ### Text Markup
-- [CMTextMarkup](cmtextmarkup.md)
+- [CMTextMarkup](./cmtextmarkup.md)
   Attributes that specify text markup in legible media.
 ### Metadata
-- [CMMetadata](cmmetadata.md)
+- [CMMetadata](./cmmetadata.md)
   The APIs for working with the framework’s Metadata Identifier Services and Metadata Data Type Registry.
-- [CMTag](cmtag-api.md)
+- [CMTag](./cmtag-api.md)
   Types and interfaces for working with Core Media tags.
-- [class CMTag](cmtag-swift.class.md)
+- [class CMTag](./cmtag-swift.class.md)
   A tag to set additional metadata on media buffers.
-- [class CMTypedTag](cmtypedtag.md)
+- [class CMTypedTag](./cmtypedtag.md)
   A tag to set additional metadata on media buffers, with an associated Swift type for its value.
-- [CMTagCollection](cmtagcollection.md)
+- [CMTagCollection](./cmtagcollection.md)
   Objective-C types and interfaces for working with Core Media tag collections.
-- [enum CMProjectionType](cmprojectiontype.md)
+- [enum CMProjectionType](./cmprojectiontype.md)
   Constants describing the projection surface information in a 3D video buffer or channel.
-- [struct CMStereoViewComponents](cmstereoviewcomponents.md)
+- [struct CMStereoViewComponents](./cmstereoviewcomponents.md)
   Constants describing the stereo views contained within a buffer or channel.
-- [struct CMStereoViewInterpretationOptions](cmstereoviewinterpretationoptions.md)
+- [struct CMStereoViewInterpretationOptions](./cmstereoviewinterpretationoptions.md)
   Create a set of stereo view interpretation options from a constant.
-- [enum CMPackingType](cmpackingtype.md)
+- [enum CMPackingType](./cmpackingtype.md)
   The type of packing within each video frame, if any.
 ### Queues
-- [CMSimpleQueue](cmsimplequeue-api.md)
+- [CMSimpleQueue](./cmsimplequeue-api.md)
   A simple, lockless FIFO queue of elements.
-- [CMBufferQueue](cmbufferqueue-api.md)
+- [CMBufferQueue](./cmbufferqueue-api.md)
   A queue of timed buffers.
-- [CMMemoryPool](cmmemorypool-api.md)
+- [CMMemoryPool](./cmmemorypool-api.md)
   An object that optimizes memory allocation when working with large blocks of memory.
 ### Reference
-- [Core Media Constants](core-media-constants.md)
-- [Core Media Functions](core-media-functions.md)
-- [Core Media Type Aliases](core-media-type-aliases.md)
+- [Core Media Constants](./core-media-constants.md)
+- [Core Media Functions](./core-media-functions.md)
+- [Core Media Type Aliases](./core-media-type-aliases.md)
 ### Structures
-- [struct CMCameraIntrinsicMatrix](cmcameraintrinsicmatrix.md)
+- [struct CMCameraIntrinsicMatrix](./cmcameraintrinsicmatrix.md)
   A matrix that describes the camera’s intrinsic properties.
-- [struct CMCustomNotificationInfo](cmcustomnotificationinfo.md)
+- [struct CMCustomNotificationInfo](./cmcustomnotificationinfo.md)
   Holds custom userInfo for notification sent for a buffer event.
 ### Variables
-- [var COREMEDIA_SUPPORTS_GENLOCK_CLOCK: Int32](coremedia_supports_genlock_clock.md)
-- [var kCMClockError_PreferredStartTimeNotAvailable: OSStatus](kcmclockerror_preferredstarttimenotavailable.md)
-- [let kCMFormatDescriptionLogTransferFunction_AppleLog2: CFString](kcmformatdescriptionlogtransferfunction_applelog2.md)
+- [var COREMEDIA_SUPPORTS_GENLOCK_CLOCK: Int32](./coremedia_supports_genlock_clock.md)
+- [var kCMClockError_PreferredStartTimeNotAvailable: OSStatus](./kcmclockerror_preferredstarttimenotavailable.md)
+- [let kCMFormatDescriptionLogTransferFunction_AppleLog2: CFString](./kcmformatdescriptionlogtransferfunction_applelog2.md)
   Log Transfer Function identifier for Apple Log 2.
-- [let kCMGenlockClockNotificationPayload_AnyDisplayIsSynchronizedToLockedGenlockSignal: CFString](kcmgenlockclocknotificationpayload_anydisplayissynchronizedtolockedgenlocksignal.md)
-- [let kCMGenlockClockNotification_DisplayGenlockModeChanged: CFString](kcmgenlockclocknotification_displaygenlockmodechanged.md)
+- [let kCMGenlockClockNotificationPayload_AnyDisplayIsSynchronizedToLockedGenlockSignal: CFString](./kcmgenlockclocknotificationpayload_anydisplayissynchronizedtolockedgenlocksignal.md)
+- [let kCMGenlockClockNotification_DisplayGenlockModeChanged: CFString](./kcmgenlockclocknotification_displaygenlockmodechanged.md)
   Posted when the display mode changes from genlock to non-genlock or vice versa.
-- [let kCMMetadataBaseDataType_ISOLatin1: CFString](kcmmetadatabasedatatype_isolatin1.md)
-- [let kCMMetadataBaseDataType_MacRoman: CFString](kcmmetadatabasedatatype_macroman.md)
-- [let kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50: CFString](kcmmetadatadatatype_quicktimemetadatasmpte2094_50.md)
-- [let kCMMetadataFormatDescriptionKey_HumanReadableString: CFString](kcmmetadataformatdescriptionkey_humanreadablestring.md)
-- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_HumanReadableString: CFString](kcmmetadataformatdescriptionmetadataspecificationkey_humanreadablestring.md)
-- [let kCMMetadataIdentifier_ITUT_T35MetadataSMPTE2094_50: CFString](kcmmetadataidentifier_itut_t35metadatasmpte2094_50.md)
+- [let kCMMetadataBaseDataType_ISOLatin1: CFString](./kcmmetadatabasedatatype_isolatin1.md)
+- [let kCMMetadataBaseDataType_MacRoman: CFString](./kcmmetadatabasedatatype_macroman.md)
+- [let kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50: CFString](./kcmmetadatadatatype_quicktimemetadatasmpte2094_50.md)
+- [let kCMMetadataFormatDescriptionKey_HumanReadableString: CFString](./kcmmetadataformatdescriptionkey_humanreadablestring.md)
+- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_HumanReadableString: CFString](./kcmmetadataformatdescriptionmetadataspecificationkey_humanreadablestring.md)
+- [let kCMMetadataIdentifier_ITUT_T35MetadataSMPTE2094_50: CFString](./kcmmetadataidentifier_itut_t35metadatasmpte2094_50.md)
 ### Type Aliases
-- [typealias CMAttachmentAccess](cmattachmentaccess.md)
-- [typealias CMAttachmentContainer](cmattachmentcontainer.md)
-- [typealias CMAttachmentKeyDefinitions](cmattachmentkeydefinitions.md)
-- [typealias CMAttachmentPropagationMode](cmattachmentpropagationmode.md)
-- [typealias CMAttachmentRawValue](cmattachmentrawvalue.md)
-- [typealias CMAttachmentValueRepresentable](cmattachmentvaluerepresentable.md)
+- [typealias CMAttachmentAccess](./cmattachmentaccess.md)
+- [typealias CMAttachmentContainer](./cmattachmentcontainer.md)
+- [typealias CMAttachmentKeyDefinitions](./cmattachmentkeydefinitions.md)
+- [typealias CMAttachmentPropagationMode](./cmattachmentpropagationmode.md)
+- [typealias CMAttachmentRawValue](./cmattachmentrawvalue.md)
+- [typealias CMAttachmentValueRepresentable](./cmattachmentvaluerepresentable.md)
 ### Enumerations
-- [enum CMBlockBufferAttachmentKeyDefinitions](cmblockbufferattachmentkeydefinitions.md)
+- [enum CMBlockBufferAttachmentKeyDefinitions](./cmblockbufferattachmentkeydefinitions.md)
   A namespace for block buffer attachment keys.
-- [enum CMDroppedFrameReason](cmdroppedframereason.md)
-- [enum CMSampleBufferAttachmentKeyDefinitions](cmsamplebufferattachmentkeydefinitions.md)
+- [enum CMDroppedFrameReason](./cmdroppedframereason.md)
+- [enum CMSampleBufferAttachmentKeyDefinitions](./cmsamplebufferattachmentkeydefinitions.md)
   A namespace for sample buffer attachment keys.
-- [enum CMStillImageLensStabilization](cmstillimagelensstabilization.md)
+- [enum CMStillImageLensStabilization](./cmstillimagelensstabilization.md)
 
 
 ---

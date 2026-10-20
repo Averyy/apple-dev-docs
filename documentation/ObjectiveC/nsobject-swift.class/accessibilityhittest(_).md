@@ -1,15 +1,20 @@
 # accessibilityHitTest(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func accessibilityHitTest(_ point: NSPoint) -> Any?
+```
+
+```objc
+- (id) accessibilityHitTest:(NSPoint) point;
 ```
 
 

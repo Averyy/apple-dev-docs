@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the reduction operation you use for debugging.
 
@@ -18,27 +19,32 @@ A textual description of the reduction operation you use for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCReductionTypeDebugDescription(MLCReductionType reductionType);
+```
+
 ## See Also
 
-- [MLCReductionType.all](mlcreductiontype/all.md)
+### Enumeration Cases
+- [MLCReductionType.all](./all.md)
   A reduction operation that applies to all dimensions.
-- [MLCReductionType.any](mlcreductiontype/any.md)
+- [MLCReductionType.any](./any.md)
   A reduction operation that applies to any dimension.
-- [MLCReductionType.argMax](mlcreductiontype/argmax.md)
+- [MLCReductionType.argMax](./argmax.md)
   A reduction operation that applies to the maximum dimension you specify.
-- [MLCReductionType.argMin](mlcreductiontype/argmin.md)
+- [MLCReductionType.argMin](./argmin.md)
   A reduction operation that applies to the minimum dimension you specify.
-- [MLCReductionType.max](mlcreductiontype/max.md)
+- [MLCReductionType.max](./max.md)
   A reduction operation that applies to the maximum dimension.
-- [MLCReductionType.mean](mlcreductiontype/mean.md)
+- [MLCReductionType.mean](./mean.md)
   A reduction operation that applies to the mean of the dimensions.
-- [MLCReductionType.min](mlcreductiontype/min.md)
+- [MLCReductionType.min](./min.md)
   A reduction operation that applies to the minimum dimension.
-- [MLCReductionType.none](mlcreductiontype/none.md)
+- [MLCReductionType.none](./none.md)
   A reduction operation that applies no reduction.
-- [MLCReductionType.sum](mlcreductiontype/sum.md)
+- [MLCReductionType.sum](./sum.md)
   A reduction operation that applies to the sum of the dimensions.
-- [MLCReductionType.l1Norm](mlcreductiontype/l1norm.md)
+- [MLCReductionType.l1Norm](./l1norm.md)
   A reduction operation that applies a lasso regularization penalty.
 
 

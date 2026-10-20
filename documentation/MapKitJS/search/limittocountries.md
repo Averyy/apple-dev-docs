@@ -1,7 +1,8 @@
 # limitToCountries
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that constrains search results to be within the provided countries.
 
@@ -10,7 +11,7 @@ A string that constrains search results to be within the provided countries.
 
 ## Declaration
 
-```swift
+```
 get limitToCountries(): string | null;
 set limitToCountries(value: string | null);
 ```

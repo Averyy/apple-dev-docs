@@ -1,7 +1,8 @@
 # init(validationToken:recipients:)
 
 **Framework**: Messages  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(validationToken: String, recipients: [String])
+```
+
+```objc
+- (instancetype) initWithValidationToken:(NSString *) validationToken recipients:(NSArray<NSString *> *) recipients;
 ```
 
 #### Discussion

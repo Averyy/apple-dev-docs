@@ -1,7 +1,8 @@
 # addQuery(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Edits the query and exclusion arrays by adding the specified font descriptors.
 
@@ -14,17 +15,22 @@ Edits the query and exclusion arrays by adding the specified font descriptors.
 func addQuery(for descriptors: [NSFontDescriptor])
 ```
 
+```objc
+- (void) addQueryForDescriptors:(NSArray<NSFontDescriptor *> *) descriptors;
+```
+
 ## Parameters
 
 - `descriptors`: The font descriptors to add to the query.
 
 ## See Also
 
-- [var queryDescriptors: [NSFontDescriptor]?](nsmutablefontcollection/querydescriptors.md)
+### Getting the Font Descriptors
+- [var queryDescriptors: [NSFontDescriptor]?](./querydescriptors.md)
   The font descriptors to include in query results.
-- [func removeQuery(for: [NSFontDescriptor])](nsmutablefontcollection/removequery(for:).md)
+- [func removeQuery(for: [NSFontDescriptor])](./removequery%28for%29.md)
   Edits the query and exclusion arrays by removing the specified font descriptors.
-- [var exclusionDescriptors: [NSFontDescriptor]?](nsmutablefontcollection/exclusiondescriptors.md)
+- [var exclusionDescriptors: [NSFontDescriptor]?](./exclusiondescriptors.md)
   The font descriptors to exclude from query results.
 
 

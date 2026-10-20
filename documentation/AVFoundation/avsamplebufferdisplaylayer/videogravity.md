@@ -1,7 +1,8 @@
 # videoGravity
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates how the layer displays video within its bounds.
 
@@ -19,17 +20,22 @@ A value that indicates how the layer displays video within its bounds.
 var videoGravity: AVLayerVideoGravity { get set }
 ```
 
+```objc
+@property (copy) AVLayerVideoGravity videoGravity;
+```
+
 #### Discussion
 
-[`AVLayerVideoGravity`](avlayervideogravity.md) defines the supported video gravities. The default value is [`resizeAspect`](avlayervideogravity/resizeaspect.md).
+[`AVLayerVideoGravity`](../avlayervideogravity.md) defines the supported video gravities. The default value is [`resizeAspect`](../avlayervideogravity/resizeaspect.md).
 
 ## See Also
 
-- [var isReadyForDisplay: Bool](avsamplebufferdisplaylayer/isreadyfordisplay.md)
+### Configuring the layer
+- [var isReadyForDisplay: Bool](./isreadyfordisplay.md)
   A Boolean value that indicates whether the first video frame is ready for display.
-- [var controlTimebase: CMTimebase?](avsamplebufferdisplaylayer/controltimebase.md)
+- [var controlTimebase: CMTimebase?](./controltimebase.md)
   A timebase that determines how the layer interprets timestamps.
-- [struct AVLayerVideoGravity](avlayervideogravity.md)
+- [struct AVLayerVideoGravity](../avlayervideogravity.md)
   A structure that defines how a layer displays a player’s visual content within the layer’s bounds.
 
 

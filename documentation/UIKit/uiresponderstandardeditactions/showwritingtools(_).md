@@ -1,7 +1,8 @@
 # showWritingTools(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.2+
@@ -12,6 +13,10 @@
 
 ```swift
 optional func showWritingTools(_ sender: Any)
+```
+
+```objc
+- (void) showWritingTools:(id) sender;
 ```
 
 

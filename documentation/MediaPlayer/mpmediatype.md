@@ -1,7 +1,8 @@
 # MPMediaType
 
 **Framework**: Media Player  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties for defining the type for a media item.
 
@@ -20,60 +21,65 @@ The properties for defining the type for a media item.
 struct MPMediaType
 ```
 
+```c
+enum MPMediaType : NSUInteger;
+```
+
 #### Overview
 
-Media item types are possible values for the [`MPMediaItemPropertyMediaType`](mpmediaitempropertymediatype.md) property. A media item can have more than one media item type.
+Media item types are possible values for the [`MPMediaItemPropertyMediaType`](./mpmediaitempropertymediatype.md) property. A media item can have more than one media item type.
 
 ## Topics
 
 ### Constants
-- [static var music: MPMediaType](mpmediatype/music.md)
+- [static var music: MPMediaType](./mpmediatype/music.md)
   The media item contains music.
-- [static var podcast: MPMediaType](mpmediatype/podcast.md)
+- [static var podcast: MPMediaType](./mpmediatype/podcast.md)
   The media item contains a podcast.
-- [static var audioBook: MPMediaType](mpmediatype/audiobook.md)
+- [static var audioBook: MPMediaType](./mpmediatype/audiobook.md)
   The media item contains an audio book.
-- [static var audioITunesU: MPMediaType](mpmediatype/audioitunesu.md)
+- [static var audioITunesU: MPMediaType](./mpmediatype/audioitunesu.md)
   The media item contains an iTunes U audio lesson.
-- [static var anyAudio: MPMediaType](mpmediatype/anyaudio.md)
+- [static var anyAudio: MPMediaType](./mpmediatype/anyaudio.md)
   The media item contains an unspecified type of audio content.
-- [static var movie: MPMediaType](mpmediatype/movie.md)
+- [static var movie: MPMediaType](./mpmediatype/movie.md)
   The media item contains a movie.
-- [static var tvShow: MPMediaType](mpmediatype/tvshow.md)
+- [static var tvShow: MPMediaType](./mpmediatype/tvshow.md)
   The media item contains a TV show.
-- [static var videoPodcast: MPMediaType](mpmediatype/videopodcast.md)
+- [static var videoPodcast: MPMediaType](./mpmediatype/videopodcast.md)
   The media item contains a video podcast.
-- [static var musicVideo: MPMediaType](mpmediatype/musicvideo.md)
+- [static var musicVideo: MPMediaType](./mpmediatype/musicvideo.md)
   The media item contains a music video.
-- [static var videoITunesU: MPMediaType](mpmediatype/videoitunesu.md)
+- [static var videoITunesU: MPMediaType](./mpmediatype/videoitunesu.md)
   The media item contains an iTunes U video.
-- [static var homeVideo: MPMediaType](mpmediatype/homevideo.md)
+- [static var homeVideo: MPMediaType](./mpmediatype/homevideo.md)
   The media item contains a home video.
-- [static var anyVideo: MPMediaType](mpmediatype/anyvideo.md)
+- [static var anyVideo: MPMediaType](./mpmediatype/anyvideo.md)
   The media item contains an unspecified type of video content.
-- [static var any: MPMediaType](mpmediatype/any.md)
+- [static var any: MPMediaType](./mpmediatype/any.md)
   The media item contains an unspecified type of media content.
 ### Initializers
-- [init(rawValue: UInt)](mpmediatype/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mpmediatype/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [General media item property keys](general-media-item-property-keys.md)
+### Media item types and keys
+- [General media item property keys](./general-media-item-property-keys.md)
   System-defined properties for obtaining the metadata for a media item.
-- [User-defined property keys](user-defined-property-keys.md)
+- [User-defined property keys](./user-defined-property-keys.md)
   Properties for obtaining user-defined metadata for a media item.
 
 

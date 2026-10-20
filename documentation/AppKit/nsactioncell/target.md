@@ -1,12 +1,13 @@
 # target
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the receiver’s target object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Returns the receiver’s target object.
 weak var target: AnyObject? { get set }
 ```
 
+```objc
+@property (weak, nullable) id target;
+```
+
 ## See Also
 
-- [var action: Selector?](nsactioncell/action.md)
+### Assigning the Target and Action
+- [var action: Selector?](./action.md)
   Returns the receiver’s action-message selector.
 
 

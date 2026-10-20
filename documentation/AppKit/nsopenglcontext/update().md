@@ -1,12 +1,15 @@
 # update()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the OpenGL context’s drawable object.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use Metal or MetalKit.
 
 ## Declaration
 
@@ -15,15 +18,20 @@ Updates the OpenGL context’s drawable object.
 func update()
 ```
 
+```objc
+- (void) update;
+```
+
 #### Discussion
 
-Call this method whenever the receiver’s drawable object changes size or location. A multithreaded application must synchronize all threads that access the same drawable object and call [`update()`](nsopenglcontext/update().md) for each thread’s context serially.
+Call this method whenever the receiver’s drawable object changes size or location. A multithreaded application must synchronize all threads that access the same drawable object and call [`update()`](./update%28%29.md) for each thread’s context serially.
 
 ## See Also
 
-- [var view: NSView?](nsopenglcontext/view.md)
+### Managing the Drawable Object
+- [var view: NSView?](./view.md)
   Returns the OpenGL context’s view.
-- [func clearDrawable()](nsopenglcontext/cleardrawable.md)
+- [func clearDrawable()](./cleardrawable%28%29.md)
   Disassociates the OpenGL context from its viewport.
 
 

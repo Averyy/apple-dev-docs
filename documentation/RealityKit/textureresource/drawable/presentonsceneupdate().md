@@ -1,7 +1,8 @@
 # presentOnSceneUpdate()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the updated texture to the renderer atomically with the current scene update.
 

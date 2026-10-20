@@ -1,19 +1,20 @@
 # IOSleep
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sleep the calling thread for a number of milliseconds.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void IOSleep(uint64_t ms);
 ```
 
@@ -27,7 +28,8 @@ This function blocks the calling thread for at least the number of specified mil
 
 ## See Also
 
-- [IODelay](iodelay.md)
+### Thread Utilities
+- [IODelay](./iodelay.md)
   Sleep the calling thread for a number of microseconds.
 
 

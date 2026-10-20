@@ -1,7 +1,8 @@
 # safeAreaInsetsDidChange()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the safe area of the view changes.
 
@@ -18,15 +19,20 @@ Called when the safe area of the view changes.
 func safeAreaInsetsDidChange()
 ```
 
+```objc
+- (void) safeAreaInsetsDidChange;
+```
+
 ## See Also
 
-- [Positioning content relative to the safe area](positioning-content-relative-to-the-safe-area.md)
+### Getting the safe area
+- [Positioning content relative to the safe area](../positioning-content-relative-to-the-safe-area.md)
   Position views so that they aren’t obstructed by other content.
-- [var safeAreaInsets: UIEdgeInsets](uiview/safeareainsets.md)
+- [var safeAreaInsets: UIEdgeInsets](./safeareainsets.md)
   The insets that you use to determine the safe area for this view.
-- [var safeAreaLayoutGuide: UILayoutGuide](uiview/safearealayoutguide.md)
+- [var safeAreaLayoutGuide: UILayoutGuide](./safearealayoutguide.md)
   The layout guide representing the portion of your view that is unobscured by bars and other content.
-- [var insetsLayoutMarginsFromSafeArea: Bool](uiview/insetslayoutmarginsfromsafearea.md)
+- [var insetsLayoutMarginsFromSafeArea: Bool](./insetslayoutmarginsfromsafearea.md)
   A Boolean value indicating whether the view’s layout margins are updated automatically to reflect the safe area.
 
 

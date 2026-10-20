@@ -1,7 +1,8 @@
 # UIScrollView.KeyboardDismissMode.interactive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode in which the keyboard follows the dragging touch offscreen, and can be pulled upward again to cancel the dismiss.
 
@@ -9,7 +10,7 @@ A mode in which the keyboard follows the dragging touch offscreen, and can be pu
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
@@ -17,15 +18,20 @@ A mode in which the keyboard follows the dragging touch offscreen, and can be pu
 case interactive
 ```
 
+```c
+UIScrollViewKeyboardDismissModeInteractive
+```
+
 ## See Also
 
-- [UIScrollView.KeyboardDismissMode.none](uiscrollview/keyboarddismissmode-swift.enum/none.md)
+### Constants
+- [UIScrollView.KeyboardDismissMode.none](./none.md)
   A mode in which a drag doesn’t dismiss the keyboard.
-- [UIScrollView.KeyboardDismissMode.onDrag](uiscrollview/keyboarddismissmode-swift.enum/ondrag.md)
+- [UIScrollView.KeyboardDismissMode.onDrag](./ondrag.md)
   A mode in which the keyboard dismisses when a drag begins.
-- [UIScrollView.KeyboardDismissMode.onDragWithAccessory](uiscrollview/keyboarddismissmode-swift.enum/ondragwithaccessory.md)
+- [UIScrollView.KeyboardDismissMode.onDragWithAccessory](./ondragwithaccessory.md)
   A mode in which the keyboard and accessory view dismiss together when a drag begins.
-- [UIScrollView.KeyboardDismissMode.interactiveWithAccessory](uiscrollview/keyboarddismissmode-swift.enum/interactivewithaccessory.md)
+- [UIScrollView.KeyboardDismissMode.interactiveWithAccessory](./interactivewithaccessory.md)
   A mode in which the keyboard and accessory view both follow the dragging touch offscreen, and can be pulled upward again to cancel the dismiss.
 
 

@@ -1,7 +1,8 @@
 # requiresLinearPlayback
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the controller allows the user to skip media content.
 
@@ -17,6 +18,10 @@ A Boolean value that determines whether the controller allows the user to skip m
 
 ```swift
 var requiresLinearPlayback: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL requiresLinearPlayback;
 ```
 
 

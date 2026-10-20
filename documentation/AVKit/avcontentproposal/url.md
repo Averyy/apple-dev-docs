@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the proposed content.
 
@@ -14,21 +15,26 @@ The URL of the proposed content.
 var url: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) NSURL * URL;
+```
+
 #### Discussion
 
-Use this property value to initialize a new [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) to play when the user accepts the content proposal. If the value of this property is `nil`, the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) must handle the content proposal acceptance.
+Use this property value to initialize a new [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) to play when the user accepts the content proposal. If the value of this property is `nil`, the [`AVPlayerViewControllerDelegate`](../avplayerviewcontrollerdelegate.md) must handle the content proposal acceptance.
 
 ## See Also
 
-- [var contentTimeForTransition: CMTime](avcontentproposal/contenttimefortransition.md)
+### Configuring the content proposal
+- [var contentTimeForTransition: CMTime](./contenttimefortransition.md)
   The time within the timeline of the current player item when the content proposal presentation should begin.
-- [var title: String](avcontentproposal/title.md)
+- [var title: String](./title.md)
   The title of the proposed content.
-- [var previewImage: UIImage?](avcontentproposal/previewimage.md)
+- [var previewImage: UIImage?](./previewimage.md)
   The preview image of the proposed item.
-- [var metadata: [AVMetadataItem]](avcontentproposal/metadata.md)
+- [var metadata: [AVMetadataItem]](./metadata.md)
   Optional custom metadata associated with the proposed item.
-- [var automaticAcceptanceInterval: TimeInterval](avcontentproposal/automaticacceptanceinterval.md)
+- [var automaticAcceptanceInterval: TimeInterval](./automaticacceptanceinterval.md)
   The interval between the time playback ends and automatic acceptance of this content proposal.
 
 

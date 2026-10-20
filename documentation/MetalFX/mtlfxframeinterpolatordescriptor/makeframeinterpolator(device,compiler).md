@@ -1,7 +1,8 @@
 # makeFrameInterpolator(device:compiler:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a frame interpolator instance for a Metal device.
 
@@ -16,6 +17,10 @@ Creates a frame interpolator instance for a Metal device.
 
 ```swift
 func makeFrameInterpolator(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXFrameInterpolator)?
+```
+
+```objc
+- (id<MTL4FXFrameInterpolator>) newFrameInterpolatorWithDevice:(id<MTLDevice>) device compiler:(id<MTL4Compiler>) compiler;
 ```
 
 #### Return Value

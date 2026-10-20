@@ -1,7 +1,8 @@
 # NSMetadataUbiquitousItemDownloadingStatusNotDownloaded
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 7.0+
@@ -18,16 +19,21 @@
 let NSMetadataUbiquitousItemDownloadingStatusNotDownloaded: String
 ```
 
+```c
+extern NSString * const NSMetadataUbiquitousItemDownloadingStatusNotDownloaded;
+```
+
 #### Discussion
 
-A string used as the value for [`NSMetadataUbiquitousItemPercentUploadedKey`](nsmetadataubiquitousitempercentuploadedkey.md) to indicate that this item has not been downloaded yet.
+A string used as the value for [`NSMetadataUbiquitousItemPercentUploadedKey`](./nsmetadataubiquitousitempercentuploadedkey.md) to indicate that this item has not been downloaded yet.
 
-You can use [`startDownloadingUbiquitousItem(at:)`](filemanager/startdownloadingubiquitousitem(at:).md) to download the item.
+You can use [`startDownloadingUbiquitousItem(at:)`](./filemanager/startdownloadingubiquitousitem%28at%29.md) to download the item.
 
 ## See Also
 
-- [let NSMetadataUbiquitousItemDownloadingStatusCurrent: String](nsmetadataubiquitousitemdownloadingstatuscurrent.md)
-- [let NSMetadataUbiquitousItemDownloadingStatusDownloaded: String](nsmetadataubiquitousitemdownloadingstatusdownloaded.md)
+### iCloud Download Status Values
+- [let NSMetadataUbiquitousItemDownloadingStatusCurrent: String](./nsmetadataubiquitousitemdownloadingstatuscurrent.md)
+- [let NSMetadataUbiquitousItemDownloadingStatusDownloaded: String](./nsmetadataubiquitousitemdownloadingstatusdownloaded.md)
 
 
 ---

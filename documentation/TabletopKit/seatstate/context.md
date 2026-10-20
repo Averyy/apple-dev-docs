@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An integer value that your game uses.
@@ -17,9 +18,10 @@ var context: UInt64 { get }
 
 ## See Also
 
-- [var playerID: PlayerIdentifier?](seatstate/playerid.md)
+### Setting the data that syncs
+- [var playerID: PlayerIdentifier?](./playerid.md)
   The identifier for the player that occupies the seat.
-- [var pose: TableVisualState.Pose2D](seatstate/pose.md)
+- [var pose: TableVisualState.Pose2D](./pose.md)
   The position and orientation of the seat in table space.
 
 

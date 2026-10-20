@@ -1,7 +1,8 @@
 # convert(point:from:to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a 3D point from a RealityKit coordinate space to one in a SwiftUI coordinate space.
 

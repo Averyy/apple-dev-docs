@@ -1,7 +1,8 @@
 # WAConnection
 
 **Framework**: Wi-Fi Aware  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Provides access to the Wi-Fi Aware-specific configuration and information that underlies a given `Network/NetworkConnection`.
 
@@ -19,12 +20,13 @@ class WAConnection<ApplicationProtocol> where ApplicationProtocol : NetworkProto
 ## Topics
 
 ### Instance Methods
-- [func deriveSharedSecret(for: WASharedSecret.ProtocolName, method: WASharedSecret.DerivationMethod, context: WASharedSecret.Context) async -> WASharedSecret?](waconnection/derivesharedsecret(for:method:context:).md)
+- [func deriveSharedSecret(for: WASharedSecret.ProtocolName, method: WASharedSecret.DerivationMethod, context: WASharedSecret.Context) async -> WASharedSecret?](./waconnection/derivesharedsecret%28for,method,context%29.md)
   Derive a unique, high-entropy shared secret for this network connection, which can be used to pair and setup security for higher layer network protocols like TLS or IPSec without additional user action or entropy input.
 
 ## See Also
 
-- [struct WAEndpoint](waendpoint.md)
+### Connections
+- [struct WAEndpoint](./waendpoint.md)
   The endpoint of a Wi-Fi Aware connection.
 
 

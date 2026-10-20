@@ -1,7 +1,8 @@
 # Transaction.AdvancedCommerceInfo.Offer
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about the offer that was redeemed as part of the purchase.
 
@@ -23,31 +24,32 @@ struct Offer
 ## Topics
 
 ### Structures
-- [Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.struct.md)
+- [Transaction.AdvancedCommerceInfo.Offer.Reason](./offer/reason-swift.struct.md)
   The reasons why subscription offers are applied to the purchase of auto-renewable subscriptions.
 ### Instance Properties
-- [let period: SubscriptionPeriod](transaction/advancedcommerceinfo-swift.struct/offer/period.md)
+- [let period: SubscriptionPeriod](./offer/period.md)
   The duration of the offer.
-- [let periodCount: Int](transaction/advancedcommerceinfo-swift.struct/offer/periodcount.md)
+- [let periodCount: Int](./offer/periodcount.md)
   The number of periods the system applies the offer.
-- [let price: Decimal](transaction/advancedcommerceinfo-swift.struct/offer/price.md)
+- [let price: Decimal](./offer/price.md)
   The discounted price under the offer.
-- [let reason: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.property.md)
+- [let reason: Transaction.AdvancedCommerceInfo.Offer.Reason](./offer/reason-swift.property.md)
   The reason the offer was applied.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transaction.AdvancedCommerceInfo.Item](transaction/advancedcommerceinfo-swift.struct/item.md)
+### Structures
+- [Transaction.AdvancedCommerceInfo.Item](./item.md)
   The developer-defined product that was purchased.
-- [Transaction.AdvancedCommerceInfo.Refund](transaction/advancedcommerceinfo-swift.struct/refund.md)
+- [Transaction.AdvancedCommerceInfo.Refund](./refund.md)
   Information about refunds that were issued as part of this transaction.
 
 

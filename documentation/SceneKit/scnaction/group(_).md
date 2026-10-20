@@ -1,23 +1,28 @@
 # group(_:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that runs a collection of actions in parallel.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class func group(_ actions: [SCNAction]) -> SCNAction
+```
+
+```objc
++ (SCNAction *) group:(NSArray<SCNAction *> *) actions;
 ```
 
 #### Return Value
@@ -32,15 +37,16 @@ This action is reversible; it creates a new group action that contains the rever
 
 ## Parameters
 
-- `actions`: An array of [`SCNAction`](scnaction.md) objects.
+- `actions`: An array of [`SCNAction`](../scnaction.md) objects.
 
 ## See Also
 
-- [class func sequence([SCNAction]) -> SCNAction](scnaction/sequence(_:).md)
+### Creating Actions That Combine or Repeat Other Actions
+- [class func sequence([SCNAction]) -> SCNAction](./sequence%28_%29.md)
   Creates an action that runs a collection of actions sequentially.
-- [class func `repeat`(SCNAction, count: Int) -> SCNAction](scnaction/repeat(_:count:).md)
+- [class func `repeat`(SCNAction, count: Int) -> SCNAction](./repeat%28_,count%29.md)
   Creates an action that repeats another action a specified number of times.
-- [class func repeatForever(SCNAction) -> SCNAction](scnaction/repeatforever(_:).md)
+- [class func repeatForever(SCNAction) -> SCNAction](./repeatforever%28_%29.md)
   Creates an action that repeats another action forever.
 
 

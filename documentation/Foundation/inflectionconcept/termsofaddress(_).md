@@ -1,7 +1,8 @@
 # InflectionConcept.termsOfAddress(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system uses the associated terms of address for grammatical agreement when localizing text.
 
@@ -30,7 +31,8 @@ When inflecting text the first term of address which can be used in the target l
 
 ## See Also
 
-- [InflectionConcept.localizedPhrase(_:)](inflectionconcept/localizedphrase(_:).md)
+### Using inflection concepts
+- [InflectionConcept.localizedPhrase(_:)](./localizedphrase%28_%29.md)
   Indicates that the system uses the associated string for grammatical agreement when localizing text.
 
 

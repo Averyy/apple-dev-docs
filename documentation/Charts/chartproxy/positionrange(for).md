@@ -1,7 +1,8 @@
 # positionRange(for:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of x and y positions for the given pair of data values, or `nil` if the y scale is unavailable or if the value is invalid.
 

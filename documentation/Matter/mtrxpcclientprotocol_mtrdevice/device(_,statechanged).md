@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func device(_ nodeID: NSNumber, stateChanged state: MTRDeviceState)
+```
+
+```objc
+- (void) device:(NSNumber *) nodeID stateChanged:(MTRDeviceState) state;
 ```
 
 

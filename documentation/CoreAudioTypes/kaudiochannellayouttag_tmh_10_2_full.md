@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_TMH_10_2_full
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An extended TMH 10.2 multiple-channel surround-based layout, recommended for use by audio units.
 
@@ -20,9 +21,13 @@ An extended TMH 10.2 multiple-channel surround-based layout, recommended for use
 var kAudioChannelLayoutTag_TMH_10_2_full: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_TMH_10_2_full
+```
+
 #### Discussion
 
-This tag is equivalant to [`kAudioChannelLayoutTag_TMH_10_2_std`](kaudiochannellayouttag_tmh_10_2_std.md) plus additional channels. Your channel layout must be in the following order:
+This tag is equivalant to [`kAudioChannelLayoutTag_TMH_10_2_std`](./kaudiochannellayouttag_tmh_10_2_std.md) plus additional channels. Your channel layout must be in the following order:
 
 - Left
 - Right
@@ -48,23 +53,24 @@ This tag is equivalant to [`kAudioChannelLayoutTag_TMH_10_2_std`](kaudiochannell
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_AudioUnit_5_0: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_5_0.md)
+### Surround Based Layouts
+- [var kAudioChannelLayoutTag_AudioUnit_5_0: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_5_0.md)
   A 5-channel surround-based layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_6_0: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_6_0.md)
+- [var kAudioChannelLayoutTag_AudioUnit_6_0: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_6_0.md)
   A 6-channel surround-based layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_7_0: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_7_0.md)
+- [var kAudioChannelLayoutTag_AudioUnit_7_0: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_7_0.md)
   A 7-channel surround-based layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_7_0_Front: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_7_0_front.md)
+- [var kAudioChannelLayoutTag_AudioUnit_7_0_Front: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_7_0_front.md)
   An alternate 7-channel surround-based layout, for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_5_1: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_5_1.md)
+- [var kAudioChannelLayoutTag_AudioUnit_5_1: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_5_1.md)
   A 5.1-channel surround-based layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_6_1: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_6_1.md)
+- [var kAudioChannelLayoutTag_AudioUnit_6_1: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_6_1.md)
   A 6.1-channel surround-based layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_7_1: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_7_1.md)
+- [var kAudioChannelLayoutTag_AudioUnit_7_1: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_7_1.md)
   A 7.1-channel surround-based layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_AudioUnit_7_1_Front: AudioChannelLayoutTag](kaudiochannellayouttag_audiounit_7_1_front.md)
+- [var kAudioChannelLayoutTag_AudioUnit_7_1_Front: AudioChannelLayoutTag](./kaudiochannellayouttag_audiounit_7_1_front.md)
   A 7.1-channel surround-based layout, recommended for use by audio units.
-- [var kAudioChannelLayoutTag_TMH_10_2_std: AudioChannelLayoutTag](kaudiochannellayouttag_tmh_10_2_std.md)
+- [var kAudioChannelLayoutTag_TMH_10_2_std: AudioChannelLayoutTag](./kaudiochannellayouttag_tmh_10_2_std.md)
   A TMH 10.2 multiple-channel surround-based layout .
 
 

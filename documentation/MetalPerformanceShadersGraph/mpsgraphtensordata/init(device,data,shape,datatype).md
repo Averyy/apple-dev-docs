@@ -1,7 +1,8 @@
 # init(device:data:shape:dataType:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the tensor data with an `NSData` on a device.
 
@@ -17,6 +18,10 @@ Initializes the tensor data with an `NSData` on a device.
 
 ```swift
 init(device: MPSGraphDevice, data: Data, shape: [NSNumber], dataType: MPSDataType)
+```
+
+```objc
+- (instancetype) initWithDevice:(MPSGraphDevice *) device data:(NSData *) data shape:(MPSShape *) shape dataType:(MPSDataType) dataType;
 ```
 
 #### Return Value

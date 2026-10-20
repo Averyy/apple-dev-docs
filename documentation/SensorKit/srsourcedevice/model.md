@@ -1,7 +1,8 @@
 # model
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var model: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * model;
 ```
 
 #### Discussion

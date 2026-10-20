@@ -6,28 +6,11 @@ url: https://apple.github.io/coremltools/docs-guides/source/convert-a-tensorflow
 
 # Converting a TensorFlow 1 Image Classifier
 
-**
-
-- [.md](../_sources/source/convert-a-tensorflow-1-image-classifier.md)
-- **
-
-.pdf
-
-**
-
-# Converting a TensorFlow 1 Image Classifier
-
- Table of contents 
-
-## Contents
-
-# Converting a TensorFlow 1 Image Classifier
-
 The following example converts the TensorFlow Inception V1 image classifier to a Core ML classifier model that directly predicts the class label of the input image. It demonstrates the importance of setting the image preprocessing parameters correctly to get the right results.
 
 ## Requirements
 
-This model requires TensorFlow 1, which is deprecated and difficult to install directly with pip. You can use the appropriate [Miniconda installer](https://docs.conda.io/en/latest/miniconda.md) for your operating system and create a Miniconda environment specifically for Python 3.7, and then use conda to install TensorFlow 1.15:
+This model requires TensorFlow 1, which is deprecated and difficult to install directly with pip. You can use the appropriate [Miniconda installer](https://docs.conda.io/en/latest/miniconda.html) for your operating system and create a Miniconda environment specifically for Python 3.7, and then use conda to install TensorFlow 1.15:
 
 ```
 conda create -n tensorflow1-env python=3.7
@@ -149,7 +132,7 @@ You will use the new name when making a prediction.
 
 To make predictions on the same image using both the original model and the converted model, right-click the following image and save it as `Golden_Retriever_Carlos.jpg` in the same folder as your Python project:
 
-![Golden_Retriever_Carlos.jpg](../_images/Golden_Retriever_Carlos_full.jpg)
+![Golden_Retriever_Carlos.jpg](https://apple.github.io/coremltools/docs-guides/_images/Golden_Retriever_Carlos_full.jpg)
 
 This image of a golden retriever is from [Wikipedia](https://en.m.wikipedia.org/wiki/File:Golden_Retriever_Carlos_%2810581910556%29.jpg).
 
@@ -277,6 +260,4 @@ CoreML prediction class = English setter, probability = [1.68707207e-04 4.019639
 
 Predictions Can Vary Slightly
 
-Predictions with the default Core ML `predict` call may vary slightly, since by default it uses a lower-precision optimized path for faster execution. In previous versions of Core ML Tools, you would restrict execution to the CPU by specifying the `useCPUOnly=True` flag. This flag is now deprecated. Instead, use the `compute_units` parameter at load time or conversion time (that is, in [coremltools.models.MLModel](https://apple.github.io/coremltools/source/coremltools.models.html#module-coremltools.models.model) or [convert()](https://apple.github.io/coremltools/source/coremltools.converters.convert.html#module-coremltools.converters._converters_entry). For more information, see [Set the compute units](load-and-convert-model.html#set-the-compute-units).
-
-** Contents
+Predictions with the default Core ML `predict` call may vary slightly, since by default it uses a lower-precision optimized path for faster execution. In previous versions of Core ML Tools, you would restrict execution to the CPU by specifying the `useCPUOnly=True` flag. This flag is now deprecated. Instead, use the `compute_units` parameter at load time or conversion time (that is, in [coremltools.models.MLModel](https://apple.github.io/coremltools/source/coremltools.models.html#module-coremltools.models.model) or [convert()](https://apple.github.io/coremltools/source/coremltools.converters.convert.html#module-coremltools.converters._converters_entry). For more information, see [Set the compute units](load-and-convert-model.md#set-the-compute-units).

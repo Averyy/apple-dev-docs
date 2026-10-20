@@ -1,7 +1,8 @@
 # map
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var map: MDLMeshBufferMap { get set }
+```
+
+```objc
+@property (nonatomic, retain) MDLMeshBufferMap * map;
 ```
 
 

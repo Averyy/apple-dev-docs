@@ -1,7 +1,8 @@
 # dataRequest
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of requested resource data.
 
@@ -19,27 +20,32 @@ The range of requested resource data.
 var dataRequest: AVAssetResourceLoadingDataRequest? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVAssetResourceLoadingDataRequest * dataRequest;
+```
+
 #### Discussion
 
-An instance of [`AVAssetResourceLoadingDataRequest`](avassetresourceloadingdatarequest.md) that indicates the range of resource data that’s being requested. The value of this property is `nil` if no data is being requested.
+An instance of [`AVAssetResourceLoadingDataRequest`](../avassetresourceloadingdatarequest.md) that indicates the range of resource data that’s being requested. The value of this property is `nil` if no data is being requested.
 
-If the loading request’s [`contentInformationRequest`](avassetresourceloadingrequest/contentinformationrequest.md) isn’t `nil`, set that request’s properties before you respond to any data request.
+If the loading request’s [`contentInformationRequest`](./contentinformationrequest.md) isn’t `nil`, set that request’s properties before you respond to any data request.
 
 ## See Also
 
-- [var request: URLRequest](avassetresourceloadingrequest/request.md)
+### Accessing the request data
+- [var request: URLRequest](./request.md)
   The URL request object for the resource.
-- [var requestor: AVAssetResourceLoadingRequestor](avassetresourceloadingrequest/requestor.md)
+- [var requestor: AVAssetResourceLoadingRequestor](./requestor.md)
   The asset resource requestor that made the request.
-- [var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest?](avassetresourceloadingrequest/contentinformationrequest.md)
+- [var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest?](./contentinformationrequest.md)
   The information for a requested resource.
-- [var redirect: URLRequest?](avassetresourceloadingrequest/redirect.md)
+- [var redirect: URLRequest?](./redirect.md)
   An URL request instance if the loading request was redirected.
-- [func streamingContentKeyRequestData(forApp: Data, contentIdentifier: Data, options: [String : Any]?) throws -> Data](avassetresourceloadingrequest/streamingcontentkeyrequestdata(forapp:contentidentifier:options:).md)
+- [func streamingContentKeyRequestData(forApp: Data, contentIdentifier: Data, options: [String : Any]?) throws -> Data](./streamingcontentkeyrequestdata%28forapp,contentidentifier,options%29.md)
   Obtains key request data for a specific combination of application and content.
-- [func persistentContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](avassetresourceloadingrequest/persistentcontentkey(fromkeyvendorresponse:options:).md)
+- [func persistentContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](./persistentcontentkey%28fromkeyvendorresponse,options%29.md)
   Obtains a persistable content key from a context.
-- [let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String](avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey.md)
+- [let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String](../avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey.md)
   Specifies whether the content key request requires a persistable key to be returned from the key vendor.
 
 

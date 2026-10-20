@@ -1,7 +1,8 @@
 # MTAudioProcessingTapCreateWithPreferredFormat(_:_:_:_:_:)
 
 **Framework**: Media Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func MTAudioProcessingTapCreateWithPreferredFormat(_ allocator: CFAllocator?, _ callbacks: UnsafePointer<MTAudioProcessingTapCallbacks>, _ flags: MTAudioProcessingTapCreationFlags, _ preferredFormat: CMAudioFormatDescription?, _ tapOut: UnsafeMutablePointer<MTAudioProcessingTap?>) -> OSStatus
+```
+
+```c
+extern OSStatus MTAudioProcessingTapCreateWithPreferredFormat(CFAllocatorRef allocator, const MTAudioProcessingTapCallbacks *callbacks, MTAudioProcessingTapCreationFlags flags, CMAudioFormatDescriptionRef preferredFormat, MTAudioProcessingTapRef*tapOut);
 ```
 
 #### Return Value
@@ -31,8 +36,10 @@ This function creates a processing tap. The processing tap will then be used to 
 
 - `allocator`: The allocator to use to allocate memory for the new tap. Pass NULL or kCFAllocatorDefault to use the current default allocator.
 - `callbacks`: Callbacks struct.  MTAudioProcessingTap will make a copy of this struct.
-- `flags`: Flags that are used to control aspects of the processing tap. Valid flags are: - kMTAudioProcessingTapCreationFlag_PreEffects: processing is done before any further effects are applied by the audio queue to the audio.
-- kMTAudioProcessingTapCreationFlag_PostEffects: processing is done after all processing is done, including that of other taps.
+- `flags`: Flags that are used to control aspects of the processing tap. Valid flags are:
+
+  - kMTAudioProcessingTapCreationFlag_PreEffects: processing is done before any further effects are applied by the audio queue to the audio.
+  - kMTAudioProcessingTapCreationFlag_PostEffects: processing is done after all processing is done, including that of other taps.
 - `preferredFormat`: A CMAudioFormatDescription for the preferred format of audio processed by the tap. The format ID of the AudioStreamBasicDescription must be kAudioFormatLinearPCM. If the AudioStreamBasicDescription specified a channel count greater than 2, an AudioChannelLayout must also be specified. Because the actual format of the tap may differ from the specified preferred format in its LPCM numeric type, channel interleaving, and sample size, you should provide a prepare callback with particular attention to the mFormatFlags, mBytesPerPacket, and mBitsPerChannel fields of the AudioStreamBasicDescription. If any of these differs from the format in which you wish to operate, you can set up conversions between the tap’s format and your required processing format.
 - `tapOut`: The processing tap object.
 

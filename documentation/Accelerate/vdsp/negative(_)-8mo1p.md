@@ -1,7 +1,8 @@
 # negative(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the negative value of each element in the supplied single-precision vector.
 
@@ -11,7 +12,7 @@ Returns the negative value of each element in the supplied single-precision vect
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -39,11 +40,12 @@ For example, the following code calculates the negative values of the elements o
 
 ## See Also
 
-- [static func negative<U>(U) -> [Double]](vdsp/negative(_:)-24oe4.md)
+### Vector negation functions
+- [static func negative<U>(U) -> [Double]](./negative%28_%29-24oe4.md)
   Returns the negative value of each element in the supplied double-precision vector.
-- [static func negative<U, V>(U, result: inout V)](vdsp/negative(_:result:)-92caw.md)
+- [static func negative<U, V>(U, result: inout V)](./negative%28_,result%29-92caw.md)
   Calculates the negative value of each element in the supplied single-precision vector.
-- [static func negative<U, V>(U, result: inout V)](vdsp/negative(_:result:)-5bwqv.md)
+- [static func negative<U, V>(U, result: inout V)](./negative%28_,result%29-5bwqv.md)
   Calculates the negative value of each element in the supplied double-precision vector.
 
 

@@ -1,7 +1,8 @@
 # init(commands:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that contains the commands specified in the given array.
 
@@ -24,7 +25,8 @@ init(commands: [PresentationCommand] = [])
 
 ## See Also
 
-- [init(duration: CMTime?, commands: [PresentationCommand])](presentationdescriptor/init(duration:commands:).md)
+### Initializers
+- [init(duration: CMTime?, commands: [PresentationCommand])](./init%28duration,commands%29.md)
   Creates an instance that contains the commands specified in the array:
 
 

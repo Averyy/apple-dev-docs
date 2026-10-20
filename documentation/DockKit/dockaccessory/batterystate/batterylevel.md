@@ -1,7 +1,8 @@
 # batteryLevel
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current charge percentage (0..1) of the battery
 

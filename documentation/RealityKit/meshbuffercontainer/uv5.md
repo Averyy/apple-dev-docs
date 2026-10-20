@@ -1,7 +1,8 @@
 # uv5
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Buffer of UV data set 5, if any.
 

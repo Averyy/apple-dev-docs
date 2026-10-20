@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends playback of the current entry.
 

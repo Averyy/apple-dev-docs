@@ -1,7 +1,8 @@
 # HMCharacteristicValuePowerModeSelection
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values of power mode selections.
 
@@ -19,27 +20,31 @@ Values of power mode selections.
 enum HMCharacteristicValuePowerModeSelection
 ```
 
+```c
+enum HMCharacteristicValuePowerModeSelection : NSInteger;
+```
+
 #### Overview
 
 ## Topics
 
 ### Power mode status
-- [HMCharacteristicValuePowerModeSelection.hide](hmcharacteristicvaluepowermodeselection/hide.md)
+- [HMCharacteristicValuePowerModeSelection.hide](./hmcharacteristicvaluepowermodeselection/hide.md)
   The selection is hiding power mode.
-- [HMCharacteristicValuePowerModeSelection.show](hmcharacteristicvaluepowermodeselection/show.md)
+- [HMCharacteristicValuePowerModeSelection.show](./hmcharacteristicvaluepowermodeselection/show.md)
   The selection is showing power mode.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluepowermodeselection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluepowermodeselection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

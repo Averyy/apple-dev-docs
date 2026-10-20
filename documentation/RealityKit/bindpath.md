@@ -1,7 +1,8 @@
 # BindPath
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The components of a target’s path that refer to the animation properties of a nested scene or entity.
 
@@ -11,7 +12,7 @@ The components of a target’s path that refer to the animation properties of a 
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ struct BindPath
 
 #### Overview
 
-The following code demonstrates bind target paths with varying numbers of elements. For a multicomponent target, call the [`BindPath.Part`](bindpath/part.md) enumeration for each component. The individual elements form the path’s resulting [`parts`](bindpath/parts.md) array.
+The following code demonstrates bind target paths with varying numbers of elements. For a multicomponent target, call the [`BindPath.Part`](./bindpath/part.md) enumeration for each component. The individual elements form the path’s resulting [`parts`](./bindpath/parts.md) array.
 
 ```swift
 // Single-component paths:
@@ -42,22 +43,23 @@ let target5: BindTarget = .scene("sceneA").anchorEntity("entityA").entity("entit
 ## Topics
 
 ### Composing a property identifier
-- [var parts: [BindPath.Part]](bindpath/parts.md)
+- [var parts: [BindPath.Part]](./bindpath/parts.md)
   An array of the individual components of a complete bind path.
-- [BindPath.Part](bindpath/part.md)
+- [BindPath.Part](./bindpath/part.md)
   An individual piece of a larger path that refers to the target of an animation.
 
 ## See Also
 
-- [enum BindTarget](bindtarget.md)
+### Bindable animation targets
+- [enum BindTarget](./bindtarget.md)
   A reference to a particular scene, entity, or property that animates.
-- [struct BindableValue](bindablevalue.md)
+- [struct BindableValue](./bindablevalue.md)
   The value of a bindable target.
-- [struct BindableValuesReference](bindablevaluesreference.md)
+- [struct BindableValuesReference](./bindablevaluesreference.md)
   A reference to a bindable value of an animation.
-- [struct ParameterSet](parameterset.md)
+- [struct ParameterSet](./parameterset.md)
   A reference to general-purpose entity parameters for animations.
-- [struct InternalBindPath](internalbindpath.md)
+- [struct InternalBindPath](./internalbindpath.md)
   A bind target for framework-provided properties.
 
 

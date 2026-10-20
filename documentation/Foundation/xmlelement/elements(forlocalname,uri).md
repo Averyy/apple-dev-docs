@@ -1,7 +1,8 @@
 # elements(forLocalName:uri:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the child element nodes (as `NSXMLElement` objects) of the receiver that are matched with the specified local name and URI.
 
@@ -15,6 +16,10 @@ Returns the child element nodes (as `NSXMLElement` objects) of the receiver that
 func elements(forLocalName localName: String, uri URI: String?) -> [XMLElement]
 ```
 
+```objc
+- (NSArray<NSXMLElement *> *) elementsForLocalName:(NSString *) localName URI:(NSString *) URI;
+```
+
 #### Return Value
 
 An array of `NSXMLElement` objects or an empty array if no matching children could be found.
@@ -26,7 +31,8 @@ An array of `NSXMLElement` objects or an empty array if no matching children cou
 
 ## See Also
 
-- [func elements(forName: String) -> [XMLElement]](xmlelement/elements(forname:).md)
+### Obtaining Child Elements
+- [func elements(forName: String) -> [XMLElement]](./elements%28forname%29.md)
   Returns the child element nodes (as `NSXMLElement` objects) of the receiver that have a specified name.
 
 

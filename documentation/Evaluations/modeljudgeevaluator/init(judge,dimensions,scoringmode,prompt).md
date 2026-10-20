@@ -1,7 +1,8 @@
 # init(judge:dimensions:scoringMode:prompt:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a multi-metric evaluator with a custom judge prompt.
 
@@ -29,7 +30,8 @@ init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: Scorin
 
 ## See Also
 
-- [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode)](modeljudgeevaluator/init(judge:dimensions:scoringmode:).md)
+### Creating a multi-dimension evaluator
+- [init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode)](./init%28judge,dimensions,scoringmode%29.md)
   Creates a multi-metric evaluator with default prompt configuration.
 
 

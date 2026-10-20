@@ -1,7 +1,8 @@
 # MTAudioProcessingTapInitCallback
 
 **Framework**: Media Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An initialization callback function.
 
@@ -19,6 +20,10 @@ An initialization callback function.
 typealias MTAudioProcessingTapInitCallback = (MTAudioProcessingTap, UnsafeMutableRawPointer?, UnsafeMutablePointer<UnsafeMutableRawPointer?>) -> Void
 ```
 
+```c
+typedef void (*)(const struct opaqueMTAudioProcessingTap *, void *, void **) MTAudioProcessingTapInitCallback;
+```
+
 #### Overview
 
 An init callback that is invoked when MTAudioProcessingTapCreate() is called. The init callback is always balanced by a finalize callback when the MTAudioProcessingTap object is released.
@@ -31,13 +36,14 @@ An init callback that is invoked when MTAudioProcessingTapCreate() is called. Th
 
 ## See Also
 
-- [typealias MTAudioProcessingTapPrepareCallback](mtaudioprocessingtappreparecallback.md)
+### Callback functions
+- [typealias MTAudioProcessingTapPrepareCallback](./mtaudioprocessingtappreparecallback.md)
   An audio processing preparation callback function.
-- [typealias MTAudioProcessingTapProcessCallback](mtaudioprocessingtapprocesscallback.md)
+- [typealias MTAudioProcessingTapProcessCallback](./mtaudioprocessingtapprocesscallback.md)
   An audio processing callback function.
-- [typealias MTAudioProcessingTapUnprepareCallback](mtaudioprocessingtapunpreparecallback.md)
+- [typealias MTAudioProcessingTapUnprepareCallback](./mtaudioprocessingtapunpreparecallback.md)
   An audio processing unpreparation callback function.
-- [typealias MTAudioProcessingTapFinalizeCallback](mtaudioprocessingtapfinalizecallback.md)
+- [typealias MTAudioProcessingTapFinalizeCallback](./mtaudioprocessingtapfinalizecallback.md)
   A finalization callback function.
 
 

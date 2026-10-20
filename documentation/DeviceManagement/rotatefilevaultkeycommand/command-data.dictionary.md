@@ -1,7 +1,8 @@
 # RotateFileVaultKeyCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to change the FileVault primary password on a device.
 
@@ -10,24 +11,30 @@ The command to change the FileVault primary password on a device.
 
 ## Declaration
 
-```swift
+```
 object RotateFileVaultKeyCommand.Command
 ```
 
 ## Topics
 
 ### Objects
-- [object RotateFileVaultKeyCommand.Command.FileVaultUnlock](rotatefilevaultkeycommand/command-data.dictionary/filevaultunlock-data.dictionary.md)
+- [object RotateFileVaultKeyCommand.Command.FileVaultUnlock](./command-data.dictionary/filevaultunlock-data.dictionary.md)
   A dictionary that contains FileVault unlock options.
 
 ## Properties
 
 - `FileVaultUnlock` (RotateFileVaultKeyCommand.Command.FileVaultUnlock) *(required)*: A dictionary that contains FileVault unlock options.
 - `KeyType` (string) *(required)*: The type of FileVault key you want to change the password for. Set this value to `personal` and set a value for `Password` in the `FileVaultUnlock` dictionary to enable unlocking a device with a password. Set this value to `institutional` and set values for `PrivateKeyExport` and `PrivateKeyExportPassword` in the `FileVaultUnlock` dictionary.
+
+  **Allowed Values**: `personal`, `institutional`
 - `NewCertificate` (data): A DER-encoded certificate for creating a new institutional recovery key, which the system requires if `KeyType` is `institutional`.
 - `ReplyEncryptionCertificate` (data): A DER-encoded certificate for encrypting the new personal recovery key in a wrapper conforming to the IETF Cryptographic Message Syntax (CMS) standard.
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `RotateFileVaultKey`
 
 
 ---

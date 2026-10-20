@@ -1,14 +1,15 @@
 # xb_realloc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 void * xb_realloc(void *, size_t, size_t);
 ```
 

@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounds of this mesh instance, in model space, or `nil` to derive bounds from the mesh part.
 

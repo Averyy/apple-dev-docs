@@ -7,12 +7,12 @@ Returns the current state of the AGP bus.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOOptionBits getAGPStatus(
  IOOptionBits which = which );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns mask of status bits for the AGP bus.
 
@@ -26,17 +26,18 @@ Returns state bits for the AGP bus. Only one type of status is currently defined
 
 ## See Also
 
-- [commitAGPMemory](ioagpdevice/1811820-commitagpmemory.md)
+### Miscellaneous
+- [commitAGPMemory](./api-1811820-commitagpmemory.md)
   Makes memory addressable by AGP transactions.
-- [createAGPSpace](ioagpdevice/1811842-createagpspace.md)
+- [createAGPSpace](./api-1811842-createagpspace.md)
   Allocates the AGP space, and enables AGP transactions on the primary and secondary.
-- [destroyAGPSpace](ioagpdevice/1811870-destroyagpspace.md)
+- [destroyAGPSpace](./api-1811870-destroyagpspace.md)
   Destroys the AGP space, and disables AGP transactions on the primary and secondary.
-- [getAGPRangeAllocator](ioagpdevice/1811894-getagprangeallocator.md)
+- [getAGPRangeAllocator](./api-1811894-getagprangeallocator.md)
   Accessor to obtain the AGP range allocator.
-- [getAGPSpace](ioagpdevice/1811914-getagpspace.md)
+- [getAGPSpace](./api-1811914-getagpspace.md)
   Returns the allocated AGP space.
-- [releaseAGPMemory](ioagpdevice/1811943-releaseagpmemory.md)
+- [releaseAGPMemory](./api-1811943-releaseagpmemory.md)
   Releases memory addressable by AGP transactions.
 
 

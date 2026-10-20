@@ -1,7 +1,8 @@
 # kSecRevocationNetworkAccessDisabled
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Consult only locally cached replies; do not use network access.
 
@@ -18,6 +19,10 @@ Consult only locally cached replies; do not use network access.
 
 ```swift
 var kSecRevocationNetworkAccessDisabled: CFOptionFlags { get }
+```
+
+```c
+kSecRevocationNetworkAccessDisabled
 ```
 
 

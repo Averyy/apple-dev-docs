@@ -1,12 +1,15 @@
 # TVMediaItem.Highlight
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a media item highlight.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,35 +17,40 @@ An object that describes a media item highlight.
 class Highlight
 ```
 
+```objc
+@interface TVHighlight : NSObject
+```
+
 ## Topics
 
 ### Accessing a Highlight
-- [var highlightDescription: String?](tvmediaitem/highlight/highlightdescription.md)
+- [var highlightDescription: String?](./highlight/highlightdescription.md)
   A description for an individual highlight.
-- [var imageURL: URL?](tvmediaitem/highlight/imageurl.md)
+- [var imageURL: URL?](./highlight/imageurl.md)
   The URL for an image associated with a highlight.
-- [var localizedName: String?](tvmediaitem/highlight/localizedname.md)
+- [var localizedName: String?](./highlight/localizedname.md)
   The name associated with a highlight.
-- [var timeRange: TVMediaItem.TimeRange](tvmediaitem/highlight/timerange.md)
+- [var timeRange: TVMediaItem.TimeRange](./highlight/timerange.md)
   A time range that determines when a highlight begins and its duration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var localizedName: String?](tvmediaitem/highlightgroup/localizedname.md)
+### Accessing the Highlights
+- [var localizedName: String?](./highlightgroup/localizedname.md)
   The name of a highlight group.
-- [var highlights: [TVMediaItem.Highlight]](tvmediaitem/highlightgroup/highlights.md)
+- [var highlights: [TVMediaItem.Highlight]](./highlightgroup/highlights.md)
   An array of the individual highlights that make up a group.
 
 

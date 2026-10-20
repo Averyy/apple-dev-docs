@@ -1,7 +1,8 @@
 # readAttributeHoldTimeLimits(withClusterStateCache:endpoint:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+class func readAttributeHoldTimeLimits(withClusterStateCache clusterStateCacheContainer: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: @escaping @Sendable (MTROccupancySensingClusterHoldTimeLimitsStruct?, (any Error)?) -> Void)
+```
+
+```swift
 class func readAttributeHoldTimeLimits(withClusterStateCache clusterStateCacheContainer: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t) async throws -> MTROccupancySensingClusterHoldTimeLimitsStruct
+```
+
+```objc
++ (void) readAttributeHoldTimeLimitsWithClusterStateCache:(MTRClusterStateCacheContainer *) clusterStateCacheContainer endpoint:(NSNumber *) endpoint queue:(dispatch_queue_t) queue completion:(void (^)(MTROccupancySensingClusterHoldTimeLimitsStruct *value, NSError *error)) completion;
 ```
 
 

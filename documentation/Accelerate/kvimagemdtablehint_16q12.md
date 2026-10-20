@@ -1,7 +1,8 @@
 # kvImageMDTableHint_16Q12
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A table for transforming 16Q12 data.
 
@@ -10,7 +11,7 @@ A table for transforming 16Q12 data.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,14 @@ A table for transforming 16Q12 data.
 var kvImageMDTableHint_16Q12: vImageMDTableUsageHint { get }
 ```
 
+```c
+kvImageMDTableHint_16Q12
+```
+
 ## See Also
 
-- [var kvImageMDTableHint_Float: vImageMDTableUsageHint](kvimagemdtablehint_float.md)
+### Usage hint constants
+- [var kvImageMDTableHint_Float: vImageMDTableUsageHint](./kvimagemdtablehint_float.md)
   A table for transforming floating-point data.
 
 

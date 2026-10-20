@@ -1,7 +1,8 @@
 # availableOutputs
 
 **Framework**: BrowserEngineCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of output ports available for audio routing in the current session.
 
@@ -18,9 +19,10 @@ An array of output ports available for audio routing in the current session.
 
 ## See Also
 
-- [var preferredOutput: AVAudioSessionPortDescription?](beaudiosession-7bb2q/preferredoutput.md)
+### Managing audio output
+- [var preferredOutput: AVAudioSessionPortDescription?](./preferredoutput.md)
   The output port the person sets as their preference.
-- [func setPreferredOutput(AVAudioSessionPortDescription?) throws](beaudiosession-7bb2q/setpreferredoutput(_:).md)
+- [func setPreferredOutput(AVAudioSessionPortDescription?) throws](./setpreferredoutput%28_%29.md)
   Sets the preferred audio output port for the session.
 
 

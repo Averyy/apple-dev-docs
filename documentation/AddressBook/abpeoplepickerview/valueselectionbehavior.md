@@ -1,7 +1,8 @@
 # valueSelectionBehavior
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current selection behavior.
 
@@ -14,13 +15,18 @@ The current selection behavior.
 var valueSelectionBehavior: ABPeoplePickerSelectionBehavior { get set }
 ```
 
+```objc
+@property (nonatomic, assign) ABPeoplePickerSelectionBehavior valueSelectionBehavior;
+```
+
 #### Discussion
 
-The default behavior is [`ABSingleValueSelection`](absinglevalueselection.md).
+The default behavior is [`ABSingleValueSelection`](../absinglevalueselection.md).
 
 ## See Also
 
-- [struct ABPeoplePickerSelectionBehavior](abpeoplepickerselectionbehavior.md)
+### Specifying Selection Behavior
+- [struct ABPeoplePickerSelectionBehavior](../abpeoplepickerselectionbehavior.md)
   Constants indicating the possible value selection behaviors.
 
 

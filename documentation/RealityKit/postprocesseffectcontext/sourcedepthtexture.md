@@ -1,7 +1,8 @@
 # sourceDepthTexture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame’s depth buffer.
 

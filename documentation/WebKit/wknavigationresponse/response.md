@@ -1,7 +1,8 @@
 # response
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame’s response.
 
@@ -17,6 +18,10 @@ The frame’s response.
 ```swift
 @NSCopying
 var response: URLResponse { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSURLResponse * response;
 ```
 
 #### Discussion

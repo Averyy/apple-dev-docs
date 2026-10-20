@@ -1,7 +1,8 @@
 # linkCheckingResult(range:url:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified URL.
 
@@ -20,9 +21,13 @@ Creates and returns a text checking result with the specified URL.
 class func linkCheckingResult(range: NSRange, url: URL) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) linkCheckingResultWithRange:(NSRange) range URL:(NSURL *) url;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`link`](nstextcheckingresult/checkingtype/link.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`link`](./checkingtype/link.md).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [var url: URL?](nstextcheckingresult/url.md)
+### Text Checking Results for URLs
+- [var url: URL?](./url.md)
   The URL of a type checking result.
 
 

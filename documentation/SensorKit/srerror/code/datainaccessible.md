@@ -1,7 +1,8 @@
 # SRError.Code.dataInaccessible
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Occurs when the app can’t access the sensor’s data.
 
@@ -16,15 +17,20 @@ Occurs when the app can’t access the sensor’s data.
 case dataInaccessible
 ```
 
+```c
+SRErrorDataInaccessible
+```
+
 ## See Also
 
-- [SRError.Code.promptDeclined](srerror/code/promptdeclined.md)
+### Errors
+- [SRError.Code.promptDeclined](./promptdeclined.md)
   Occurs when the user cancels the sensor approval workflow.
-- [SRError.Code.fetchRequestInvalid](srerror/code/fetchrequestinvalid.md)
+- [SRError.Code.fetchRequestInvalid](./fetchrequestinvalid.md)
   Occurs when the app misconfigures a fetch request.
-- [SRError.Code.invalidEntitlement](srerror/code/invalidentitlement.md)
+- [SRError.Code.invalidEntitlement](./invalidentitlement.md)
   Occurs when the app lacks the required entitlement.
-- [SRError.Code.noAuthorization](srerror/code/noauthorization.md)
+- [SRError.Code.noAuthorization](./noauthorization.md)
   Occurs when the user declines sensor access in the Settings app.
 
 

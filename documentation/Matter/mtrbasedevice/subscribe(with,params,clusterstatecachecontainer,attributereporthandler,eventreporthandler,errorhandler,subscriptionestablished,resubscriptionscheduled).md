@@ -1,7 +1,8 @@
 # subscribe(with:params:clusterStateCacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribe(with queue: dispatch_queue_t, params: MTRSubscribeParams, clusterStateCacheContainer: MTRClusterStateCacheContainer?, attributeReportHandler: MTRDeviceReportHandler?, eventReportHandler: MTRDeviceReportHandler?, errorHandler: @escaping MTRDeviceErrorHandler, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, resubscriptionScheduled: MTRDeviceResubscriptionScheduledHandler? = nil)
+```
+
+```objc
+- (void) subscribeWithQueue:(dispatch_queue_t) queue params:(MTRSubscribeParams *) params clusterStateCacheContainer:(MTRClusterStateCacheContainer *) clusterStateCacheContainer attributeReportHandler:(MTRDeviceReportHandler) attributeReportHandler eventReportHandler:(MTRDeviceReportHandler) eventReportHandler errorHandler:(MTRDeviceErrorHandler) errorHandler subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished resubscriptionScheduled:(MTRDeviceResubscriptionScheduledHandler) resubscriptionScheduled;
 ```
 
 

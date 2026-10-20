@@ -1,7 +1,8 @@
 # numericConstraint
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constraints of this paramter description value, if and only if the value is numerical.
 
@@ -20,9 +21,14 @@ The constraints of this paramter description value, if and only if the value is 
 var numericConstraint: MLNumericConstraint? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MLNumericConstraint * numericConstraint;
+```
+
 ## See Also
 
-- [class MLNumericConstraint](mlnumericconstraint.md)
+### Constraining numeric values
+- [class MLNumericConstraint](../mlnumericconstraint.md)
   The value limitations of a number.
 
 

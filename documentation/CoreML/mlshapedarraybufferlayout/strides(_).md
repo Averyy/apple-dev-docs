@@ -1,7 +1,8 @@
 # MLShapedArrayBufferLayout.strides(_:)
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Layout scalars according to the strides.
 
@@ -22,9 +23,10 @@ case strides([Int])
 
 ## See Also
 
-- [MLShapedArrayBufferLayout.firstMajorContiguous](mlshapedarraybufferlayout/firstmajorcontiguous.md)
+### Buffer layouts
+- [MLShapedArrayBufferLayout.firstMajorContiguous](./firstmajorcontiguous.md)
   Layout scalars contiguously in first-major order.
-- [MLShapedArrayBufferLayout.lastMajorContiguous](mlshapedarraybufferlayout/lastmajorcontiguous.md)
+- [MLShapedArrayBufferLayout.lastMajorContiguous](./lastmajorcontiguous.md)
   Layout scalars contiguously in last-major order.
 
 

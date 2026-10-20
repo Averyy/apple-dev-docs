@@ -1,7 +1,8 @@
 # boolValue
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 1.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 1.0+
 - macOS 10.0+
 - tvOS 1.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration

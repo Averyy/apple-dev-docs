@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMicrosecondScale](1646292-anonymous/kmicrosecondscale.md)
-- [kMillisecondScale](1646292-anonymous/kmillisecondscale.md)
-- [kNanosecondScale](1646292-anonymous/knanosecondscale.md)
-- [kSecondScale](1646292-anonymous/ksecondscale.md)
-- [kTickScale](1646292-anonymous/ktickscale.md)
+- [kMicrosecondScale](./api-1646292-anonymous/kmicrosecondscale.md)
+- [kMillisecondScale](./api-1646292-anonymous/kmillisecondscale.md)
+- [kNanosecondScale](./api-1646292-anonymous/knanosecondscale.md)
+- [kSecondScale](./api-1646292-anonymous/ksecondscale.md)
+- [kTickScale](./api-1646292-anonymous/ktickscale.md)
 
 
 ---

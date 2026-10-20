@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 8.0+
@@ -20,10 +21,11 @@ static func == <RHS>(lhs: Self, rhs: RHS) -> Bool where RHS : StringProtocol
 
 ## See Also
 
-- [static func == (String, String) -> Bool](string/==(_:_:).md)
+### Comparing Strings Using Operators
+- [static func == (String, String) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != <RHS>(Self, RHS) -> Bool](string/!=(_:_:)-frzf.md)
-- [static func ~= (String, Substring) -> Bool](string/~=(_:_:).md)
+- [static func != <RHS>(Self, RHS) -> Bool](./noteq%28_,_%29-frzf.md)
+- [static func ~= (String, Substring) -> Bool](./tildeeq%28_,_%29.md)
 
 
 ---

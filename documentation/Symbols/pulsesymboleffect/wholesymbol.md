@@ -1,7 +1,8 @@
 # wholeSymbol
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect requesting an animation that pulses all layers simultaneously.
 
@@ -22,7 +23,8 @@ var wholeSymbol: PulseSymbolEffect { get }
 
 ## See Also
 
-- [var byLayer: PulseSymbolEffect](pulsesymboleffect/bylayer.md)
+### Determining effect scope
+- [var byLayer: PulseSymbolEffect](./bylayer.md)
   An effect requesting an animation that pulses only the layers marked to always pulse.
 
 

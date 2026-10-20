@@ -1,7 +1,8 @@
 # updateGammaAndBeta(withInstanceNormalizationStateBatch:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func updateGammaAndBeta(withInstanceNormalizationStateBatch instanceNormalizationStateBatch: [MPSCNNInstanceNormalizationGradientState]) -> Bool
+```
+
+```objc
+- (BOOL) updateGammaAndBetaWithInstanceNormalizationStateBatch:(MPSCNNInstanceNormalizationGradientStateBatch *) instanceNormalizationStateBatch;
 ```
 
 

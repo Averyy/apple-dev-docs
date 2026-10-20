@@ -1,14 +1,15 @@
 # init(frame:cameraMode:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an AR view with the specified dimensions and camera mode.
 
 **Availability**:
-- iOS 13.0+ - Deprecated
-- iPadOS 13.0+ - Deprecated
-- Mac Catalyst 14.0+ - Deprecated
+- iOS 13.0+ - Deprecated (renamed: init(frame:cameraMode:automaticallyConfigureSession:))
+- iPadOS 13.0+ - Deprecated (renamed: init(frame:cameraMode:automaticallyConfigureSession:))
+- Mac Catalyst 14.0+ - Deprecated (renamed: init(frame:cameraMode:automaticallyConfigureSession:))
 
 ## Declaration
 
@@ -24,11 +25,12 @@ Creates an AR view with the specified dimensions and camera mode.
 
 ## See Also
 
-- [init(frame: CGRect)](arview/init(frame:).md)
+### Creating a view
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates an AR view with the specified dimensions.
-- [init(frame: CGRect, cameraMode: ARView.CameraMode, automaticallyConfigureSession: Bool)](arview/init(frame:cameramode:automaticallyconfiguresession:).md)
+- [init(frame: CGRect, cameraMode: ARView.CameraMode, automaticallyConfigureSession: Bool)](./init%28frame,cameramode,automaticallyconfiguresession%29.md)
   Creates an AR view with the specified dimensions, camera mode, and session configuration state.
-- [init?(coder: NSCoder)](arview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates an AR view initialized from data in a given decoder.
 
 

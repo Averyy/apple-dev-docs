@@ -1,7 +1,8 @@
 # IntentPaymentMethod
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a form of payment supported by your app.
 
@@ -11,7 +12,7 @@ Information about a form of payment supported by your app.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,8 +23,8 @@ struct IntentPaymentMethod
 
 ## Mentions
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 #### Overview
 
@@ -32,42 +33,43 @@ An `IntentPaymentMethod` type describes a way someone pays for goods and service
 ## Topics
 
 ### Creating a payment method
-- [init(type: IntentPaymentMethod.PaymentType, name: LocalizedStringResource?, identificationHint: String?, icon: DisplayRepresentation.Image?)](intentpaymentmethod/init(type:name:identificationhint:icon:).md)
+- [init(type: IntentPaymentMethod.PaymentType, name: LocalizedStringResource?, identificationHint: String?, icon: DisplayRepresentation.Image?)](./intentpaymentmethod/init%28type,name,identificationhint,icon%29.md)
 ### Getting the payment details
-- [var paymentType: IntentPaymentMethod.PaymentType](intentpaymentmethod/paymenttype-swift.property.md)
+- [var paymentType: IntentPaymentMethod.PaymentType](./intentpaymentmethod/paymenttype-swift.property.md)
   The kind of payment method, such as a credit card or bank account
-- [var name: String?](intentpaymentmethod/name.md)
+- [var name: String?](./intentpaymentmethod/name.md)
   The user-visible name of the payment method
-- [var identificationHint: String?](intentpaymentmethod/identificationhint.md)
+- [var identificationHint: String?](./intentpaymentmethod/identificationhint.md)
   A hint making it easier for the user to identify the payment method among others of similar name or type, such as the last several digits of a credit card number
-- [var icon: DisplayRepresentation.Image?](intentpaymentmethod/icon.md)
+- [var icon: DisplayRepresentation.Image?](./intentpaymentmethod/icon.md)
   The icon or image representing this payment method
-- [IntentPaymentMethod.PaymentType](intentpaymentmethod/paymenttype-swift.enum.md)
+- [IntentPaymentMethod.PaymentType](./intentpaymentmethod/paymenttype-swift.enum.md)
   Constants that describe the available payment options, such as credit cards or bank accounts.
 ### Type Aliases
-- [IntentPaymentMethod.Specification](intentpaymentmethod/specification.md)
-- [IntentPaymentMethod.UnwrappedType](intentpaymentmethod/unwrappedtype.md)
-- [IntentPaymentMethod.ValueType](intentpaymentmethod/valuetype.md)
+- [IntentPaymentMethod.Specification](./intentpaymentmethod/specification.md)
+- [IntentPaymentMethod.UnwrappedType](./intentpaymentmethod/unwrappedtype.md)
+- [IntentPaymentMethod.ValueType](./intentpaymentmethod/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPaymentMethod>](intentpaymentmethod/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPaymentMethod>](./intentpaymentmethod/defaultresolverspecification.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [Escapable](../swift/escapable.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [IntentValueConvertible](intentvalueconvertible.md)
-- [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [Escapable](../Swift/escapable.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [IntentValueConvertible](./intentvalueconvertible.md)
+- [IntentValueExpressing](./intentvalueexpressing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 ## See Also
 
-- [struct IntentCurrencyAmount](intentcurrencyamount.md)
+### Monetary types
+- [struct IntentCurrencyAmount](./intentcurrencyamount.md)
   An amount of money to transfer during a financial transaction.
 
 

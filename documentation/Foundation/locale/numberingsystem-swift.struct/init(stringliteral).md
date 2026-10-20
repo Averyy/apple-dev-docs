@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a numbering system instance from a BCP 47 identifier as a string literal.
 
@@ -22,7 +23,8 @@ init(stringLiteral value: String)
 
 ## See Also
 
-- [init(String)](locale/numberingsystem-swift.struct/init(_:).md)
+### Creating a numbering system instance
+- [init(String)](./init%28_%29.md)
   Creates a numbering system instance from a BCP 47 identifier.
 
 

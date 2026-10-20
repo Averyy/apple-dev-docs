@@ -1,7 +1,8 @@
 # stateRestorationActivity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An activity object you can use to restore the previous contents of your scene’s interface.
 
@@ -18,15 +19,20 @@ An activity object you can use to restore the previous contents of your scene’
 var stateRestorationActivity: NSUserActivity? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSUserActivity * stateRestorationActivity;
+```
+
 #### Discussion
 
-Before disconnecting a scene, the system asks your delegate for an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object containing state information for that scene. If you provide that object, the system puts a copy of it in this property. Use the information in the user activity object to restore the scene to its previous state.
+Before disconnecting a scene, the system asks your delegate for an [`NSUserActivity`](../../Foundation/nsuseractivity.md) object containing state information for that scene. If you provide that object, the system puts a copy of it in this property. Use the information in the user activity object to restore the scene to its previous state.
 
 The system encrypts your app’s state restoration on disk. If the file is unavailable at scene-connection time, perhaps because the device is still locked, the initial value in this property is `nil`. When the data becomes available, the system updates the value accordingly.
 
 ## See Also
 
-- [var userInfo: [String : Any]?](uiscenesession/userinfo.md)
+### Getting additional session information
+- [var userInfo: [String : Any]?](./userinfo.md)
   Custom attributes that you can associate with the scene.
 
 

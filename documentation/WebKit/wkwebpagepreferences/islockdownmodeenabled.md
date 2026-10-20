@@ -1,7 +1,8 @@
 # isLockdownModeEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to use Lockdown Mode in the web view.
 
@@ -18,11 +19,15 @@ A Boolean value that indicates whether to use Lockdown Mode in the web view.
 var isLockdownModeEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isLockdownModeEnabled) BOOL lockdownModeEnabled;
+```
+
 #### Discussion
 
 By default, this reflects whether the user has enabled Lockdown Mode on the device. Update this preference to override the device setting when you implement a per-website or similar setting.
 
-For more information about Lockdown Mode, see [`About Lockdown Mode`](https://developer.apple.comhttps://support.apple.com/en-us/HT212650).
+For more information about Lockdown Mode, see [About Lockdown Mode](https://support.apple.com/en-us/HT212650).
 
 
 ---

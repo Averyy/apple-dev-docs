@@ -1,7 +1,8 @@
 # HKQuantityType
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A type that identifies samples that store numerical values.
 
@@ -19,13 +20,17 @@ A type that identifies samples that store numerical values.
 class HKQuantityType
 ```
 
+```objc
+@interface HKQuantityType : HKSampleType
+```
+
 ## Mentions
 
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
 #### Overview
 
-The [`HKQuantityType`](hkquantitytype.md) class is a concrete subclass of the [`HKObjectType`](hkobjecttype.md) class. To create a quantity type instance, use the object type’s [`quantityType(forIdentifier:)`](hkobjecttype/quantitytype(foridentifier:).md) convenience method.
+The [`HKQuantityType`](./hkquantitytype.md) class is a concrete subclass of the [`HKObjectType`](./hkobjecttype.md) class. To create a quantity type instance, use the object type’s [`quantityType(forIdentifier:)`](./hkobjecttype/quantitytype%28foridentifier%29.md) convenience method.
 
 Use quantity types to:
 
@@ -36,60 +41,62 @@ Use quantity types to:
 ## Topics
 
 ### Creating Quantity Types
-- [convenience init(HKQuantityTypeIdentifier)](hkquantitytype/init(_:).md)
+- [convenience init(HKQuantityTypeIdentifier)](./hkquantitytype/init%28_%29.md)
   Creates a quantity type using the provided identifier.
 ### Accessing Quantity Type Data
-- [var aggregationStyle: HKQuantityAggregationStyle](hkquantitytype/aggregationstyle.md)
+- [var aggregationStyle: HKQuantityAggregationStyle](./hkquantitytype/aggregationstyle.md)
   The aggregation style for the given quantity type.
-- [enum HKQuantityAggregationStyle](hkquantityaggregationstyle.md)
+- [enum HKQuantityAggregationStyle](./hkquantityaggregationstyle.md)
   Constant values that describe how quantities can be aggregated over time.
-- [func `is`(compatibleWith: HKUnit) -> Bool](hkquantitytype/is(compatiblewith:).md)
+- [func `is`(compatibleWith: HKUnit) -> Bool](./hkquantitytype/is%28compatiblewith%29.md)
   Returns a Boolean value that indicates whether the quantity type is compatible with the given unit.
 
 ## Relationships
 
 ### Inherits From
-- [HKSampleType](hksampletype.md)
+- [HKSampleType](./hksampletype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+### Related Documentation
+- [struct HKQuantityTypeIdentifier](./hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](./hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKCharacteristicType](hkcharacteristictype.md)
+### Object type subclasses
+- [class HKCharacteristicType](./hkcharacteristictype.md)
   A type that represents data that doesn’t typically change over time.
-- [class HKCategoryType](hkcategorytype.md)
+- [class HKCategoryType](./hkcategorytype.md)
   A type that identifies samples that contain a value from a small set of possible values.
-- [class HKCorrelationType](hkcorrelationtype.md)
+- [class HKCorrelationType](./hkcorrelationtype.md)
   A type that identifies samples that group multiple subsamples.
-- [class HKActivitySummaryType](hkactivitysummarytype.md)
+- [class HKActivitySummaryType](./hkactivitysummarytype.md)
   A type that identifies activity summary objects.
-- [class HKAudiogramSampleType](hkaudiogramsampletype.md)
+- [class HKAudiogramSampleType](./hkaudiogramsampletype.md)
   A type that identifies samples that contain audiogram data.
-- [class HKElectrocardiogramType](hkelectrocardiogramtype.md)
+- [class HKElectrocardiogramType](./hkelectrocardiogramtype.md)
   A type that identifies samples containing electrocardiogram data.
-- [class HKSeriesType](hkseriestype.md)
+- [class HKSeriesType](./hkseriestype.md)
   A type that indicates the data stored in a series sample.
-- [class HKClinicalType](hkclinicaltype.md)
+- [class HKClinicalType](./hkclinicaltype.md)
   A type that identifies samples that contain clinical record data.
-- [class HKWorkoutType](hkworkouttype.md)
+- [class HKWorkoutType](./hkworkouttype.md)
   A type that identifies samples that store information about a workout.
-- [class HKObjectType](hkobjecttype.md)
+- [class HKObjectType](./hkobjecttype.md)
   An abstract superclass with subclasses that identify a specific type of data for the HealthKit store.
-- [class HKSampleType](hksampletype.md)
+- [class HKSampleType](./hksampletype.md)
   An abstract superclass for all classes that identify a specific type of sample when working with the HealthKit store.
 
 

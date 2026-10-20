@@ -1,7 +1,8 @@
 # JoinExistingSession
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 6.0+
@@ -11,17 +12,21 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
+
+- **Name**: `JoinExistingSession`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
 ## See Also
 
-- [EnvironmentVariables](information-property-list/xpcservice/environmentvariables.md)
-- [RunLoopType](information-property-list/xpcservice/runlooptype.md)
-- [ServiceType](information-property-list/xpcservice/servicetype.md)
+### Property List Keys
+- [EnvironmentVariables](./environmentvariables.md)
+- [RunLoopType](./runlooptype.md)
+- [ServiceType](./servicetype.md)
 
 
 ---

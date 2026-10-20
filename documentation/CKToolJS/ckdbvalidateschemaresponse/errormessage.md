@@ -1,7 +1,8 @@
 # errorMessage
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A message if the schema string is not valid.
 
@@ -10,7 +11,7 @@ A message if the schema string is not valid.
 
 ## Declaration
 
-```swift
+```
 attribute string? errorMessage;
 ```
 

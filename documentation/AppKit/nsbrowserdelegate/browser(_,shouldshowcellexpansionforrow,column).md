@@ -1,7 +1,8 @@
 # browser(_:shouldShowCellExpansionForRow:column:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked to allow the delegate to control cell expansion for a specific row and column.
 
@@ -15,9 +16,13 @@ Invoked to allow the delegate to control cell expansion for a specific row and c
 optional func browser(_ browser: NSBrowser, shouldShowCellExpansionForRow row: Int, column: Int) -> Bool
 ```
 
+```objc
+- (BOOL) browser:(NSBrowser *) browser shouldShowCellExpansionForRow:(NSInteger) row column:(NSInteger) column;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the cell expansion tooltip; [`false`](https://developer.apple.com/documentation/swift/false) to disallow it.
+[`true`](../../Swift/true.md) to allow the cell expansion tooltip; [`false`](../../Swift/false.md) to disallow it.
 
 #### Discussion
 

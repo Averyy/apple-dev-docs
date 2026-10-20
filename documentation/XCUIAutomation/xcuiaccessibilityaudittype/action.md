@@ -1,7 +1,8 @@
 # action
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 14.0+
@@ -13,17 +14,22 @@
 static var action: XCUIAccessibilityAuditType { get }
 ```
 
+```c
+XCUIAccessibilityAuditTypeAction
+```
+
 ## See Also
 
-- [static var all: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/all.md)
-- [static var contrast: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/contrast.md)
-- [static var dynamicType: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/dynamictype.md)
-- [static var elementDetection: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/elementdetection.md)
-- [static var hitRegion: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/hitregion.md)
-- [static var parentChild: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/parentchild.md)
-- [static var sufficientElementDescription: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/sufficientelementdescription.md)
-- [static var textClipped: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/textclipped.md)
-- [static var trait: XCUIAccessibilityAuditType](xcuiaccessibilityaudittype/trait.md)
+### Accessibility audit types
+- [static var all: XCUIAccessibilityAuditType](./all.md)
+- [static var contrast: XCUIAccessibilityAuditType](./contrast.md)
+- [static var dynamicType: XCUIAccessibilityAuditType](./dynamictype.md)
+- [static var elementDetection: XCUIAccessibilityAuditType](./elementdetection.md)
+- [static var hitRegion: XCUIAccessibilityAuditType](./hitregion.md)
+- [static var parentChild: XCUIAccessibilityAuditType](./parentchild.md)
+- [static var sufficientElementDescription: XCUIAccessibilityAuditType](./sufficientelementdescription.md)
+- [static var textClipped: XCUIAccessibilityAuditType](./textclipped.md)
+- [static var trait: XCUIAccessibilityAuditType](./trait.md)
 
 
 ---

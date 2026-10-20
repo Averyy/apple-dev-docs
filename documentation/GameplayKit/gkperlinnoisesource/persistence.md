@@ -1,7 +1,8 @@
 # persistence
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which successive octaves of the noise function decrease in amplitude.
 
@@ -17,6 +18,10 @@ The rate at which successive octaves of the noise function decrease in amplitude
 
 ```swift
 var persistence: Double { get set }
+```
+
+```objc
+@property (nonatomic) double persistence;
 ```
 
 #### Discussion

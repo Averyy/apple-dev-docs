@@ -1,7 +1,8 @@
 # exposureMode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exposure mode for the device.
 
@@ -18,17 +19,22 @@ The exposure mode for the device.
 var exposureMode: AVCaptureDevice.ExposureMode { get set }
 ```
 
+```objc
+@property (nonatomic) AVCaptureExposureMode exposureMode;
+```
+
 #### Discussion
 
-Before changing the value of this property, you must call [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) to acquire exclusive access to the device’s configuration properties. Otherwise, setting the value of this property raises an exception. When you’re done configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock and allow other devices to configure the settings.
+Before changing the value of this property, you must call [`lockForConfiguration()`](./lockforconfiguration%28%29.md) to acquire exclusive access to the device’s configuration properties. Otherwise, setting the value of this property raises an exception. When you’re done configuring the device, call [`unlockForConfiguration()`](./unlockforconfiguration%28%29.md) to release the lock and allow other devices to configure the settings.
 
 This property is key-value observable.
 
 ## See Also
 
-- [func isExposureModeSupported(AVCaptureDevice.ExposureMode) -> Bool](avcapturedevice/isexposuremodesupported(_:).md)
+### Managing the exposure mode
+- [func isExposureModeSupported(AVCaptureDevice.ExposureMode) -> Bool](./isexposuremodesupported%28_%29.md)
   Returns a Boolean value that indicates whether a device supports the specified exposure mode.
-- [AVCaptureDevice.ExposureMode](avcapturedevice/exposuremode-swift.enum.md)
+- [AVCaptureDevice.ExposureMode](./exposuremode-swift.enum.md)
   Constants that specify the exposure mode of a capture device.
 
 

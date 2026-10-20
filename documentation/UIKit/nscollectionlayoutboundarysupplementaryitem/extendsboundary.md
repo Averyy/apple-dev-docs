@@ -1,7 +1,8 @@
 # extendsBoundary
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a boundary supplementary item extends the content area of the section or layout it’s attached to.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether a boundary supplementary item extends the
 var extendsBoundary: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL extendsBoundary;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var offset: CGPoint](nscollectionlayoutboundarysupplementaryitem/offset.md)
+### Specifying position
+- [var offset: CGPoint](./offset.md)
   The floating-point value of the boundary supplementary item’s offset from the section or layout it’s attached to.
-- [var alignment: NSRectAlignment](nscollectionlayoutboundarysupplementaryitem/alignment.md)
+- [var alignment: NSRectAlignment](./alignment.md)
   The alignment of the boundary supplementary item relative to the section or layout it’s attached to.
 
 

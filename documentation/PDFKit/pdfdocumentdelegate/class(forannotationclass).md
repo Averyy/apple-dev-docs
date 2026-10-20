@@ -1,12 +1,13 @@
 # class(forAnnotationClass:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `PDFAnnotation` subclass for a class.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Returns a `PDFAnnotation` subclass for a class.
 optional func `class`(forAnnotationClass annotationClass: AnyClass) -> AnyClass
 ```
 
+```objc
+- (Class) classForAnnotationClass:(Class) annotationClass;
+```
+
 ## See Also
 
-- [func classForPage() -> AnyClass](pdfdocumentdelegate/classforpage.md)
+### Wrapping Document Elements
+- [func classForPage() -> AnyClass](./classforpage%28%29.md)
   Returns a `PDFPage` subclass for a page object.
-- [func `class`(forAnnotationType: String) -> AnyClass](pdfdocumentdelegate/class(forannotationtype:).md)
+- [func `class`(forAnnotationType: String) -> AnyClass](./class%28forannotationtype%29.md)
   Returns a `PDFAnnotation` subclass for an annotation type.
 
 

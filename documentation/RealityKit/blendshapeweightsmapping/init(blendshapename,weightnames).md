@@ -1,7 +1,8 @@
 # init(blendShapeName:weightNames:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mapping that applies the weight names to mesh parts in a model component.
 
@@ -21,7 +22,7 @@ init(blendShapeName: String, weightNames: [String])
 
 #### Discussion
 
-This creates a mapping that applies the weight names to every mesh part in the [`ModelComponent`](modelcomponent.md) associated with the [`BlendShapeWeightsComponent`](blendshapeweightscomponent.md)’s entity.
+This creates a mapping that applies the weight names to every mesh part in the [`ModelComponent`](../modelcomponent.md) associated with the [`BlendShapeWeightsComponent`](../blendshapeweightscomponent.md)’s entity.
 
 Make sure the weight names match the weight names in the mesh resource data.  RealityKit will ignore weight names that do not match.
 

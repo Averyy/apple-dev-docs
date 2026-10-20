@@ -1,22 +1,27 @@
 # presetName
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If a factory preset, the name of the specified factory preset.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var presetName: Unmanaged<CFString>?
+```
+
+```c
+CFStringRef presetName;
 ```
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValuePictureMode.photo
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A photo picture mode.
 
@@ -19,33 +20,38 @@ A photo picture mode.
 case photo
 ```
 
+```c
+HMCharacteristicValuePictureModePhoto
+```
+
 ## See Also
 
-- [HMCharacteristicValuePictureMode.bright](hmcharacteristicvaluepicturemode/bright.md)
+### Television states
+- [HMCharacteristicValuePictureMode.bright](./bright.md)
   A bright picture mode.
-- [HMCharacteristicValuePictureMode.calibrated](hmcharacteristicvaluepicturemode/calibrated.md)
+- [HMCharacteristicValuePictureMode.calibrated](./calibrated.md)
   A calibrated picture mode.
-- [HMCharacteristicValuePictureMode.computer](hmcharacteristicvaluepicturemode/computer.md)
+- [HMCharacteristicValuePictureMode.computer](./computer.md)
   A computer picture mode.
-- [HMCharacteristicValuePictureMode.custom1](hmcharacteristicvaluepicturemode/custom1.md)
+- [HMCharacteristicValuePictureMode.custom1](./custom1.md)
   A customized picture mode.
-- [HMCharacteristicValuePictureMode.custom2](hmcharacteristicvaluepicturemode/custom2.md)
+- [HMCharacteristicValuePictureMode.custom2](./custom2.md)
   A customized picture mode.
-- [HMCharacteristicValuePictureMode.custom3](hmcharacteristicvaluepicturemode/custom3.md)
+- [HMCharacteristicValuePictureMode.custom3](./custom3.md)
   A customized picture mode.
-- [HMCharacteristicValuePictureMode.dark](hmcharacteristicvaluepicturemode/dark.md)
+- [HMCharacteristicValuePictureMode.dark](./dark.md)
   A dark picture mode.
-- [HMCharacteristicValuePictureMode.game](hmcharacteristicvaluepicturemode/game.md)
+- [HMCharacteristicValuePictureMode.game](./game.md)
   A game picture mode.
-- [HMCharacteristicValuePictureMode.movie](hmcharacteristicvaluepicturemode/movie.md)
+- [HMCharacteristicValuePictureMode.movie](./movie.md)
   A movie picture mode.
-- [HMCharacteristicValuePictureMode.night](hmcharacteristicvaluepicturemode/night.md)
+- [HMCharacteristicValuePictureMode.night](./night.md)
   A night picture mode.
-- [HMCharacteristicValuePictureMode.sport](hmcharacteristicvaluepicturemode/sport.md)
+- [HMCharacteristicValuePictureMode.sport](./sport.md)
   A sport picture mode.
-- [HMCharacteristicValuePictureMode.standard](hmcharacteristicvaluepicturemode/standard.md)
+- [HMCharacteristicValuePictureMode.standard](./standard.md)
   A standard picture mode.
-- [HMCharacteristicValuePictureMode.vivid](hmcharacteristicvaluepicturemode/vivid.md)
+- [HMCharacteristicValuePictureMode.vivid](./vivid.md)
   A vivid picture mode.
 
 

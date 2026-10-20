@@ -1,7 +1,8 @@
 # biometry(fallback:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a requirement that requires biometric authentication or a fallback requirement that you specify.
 
@@ -18,6 +19,10 @@ Creates a requirement that requires biometric authentication or a fallback requi
 class func biometry(fallback: LABiometryFallbackRequirement) -> Self
 ```
 
+```objc
++ (instancetype) biometryRequirementWithFallback:(LABiometryFallbackRequirement *) fallback;
+```
+
 #### Return Value
 
 Returns a requirement that requires biometric authentication or a fallback requirement that you specify.
@@ -28,11 +33,12 @@ Returns a requirement that requires biometric authentication or a fallback requi
 
 ## See Also
 
-- [class var `default`: LAAuthenticationRequirement](laauthenticationrequirement/default.md)
+### Specifying authentication requirements
+- [class var `default`: LAAuthenticationRequirement](./default.md)
   The requirement that requires user authentication.
-- [class var biometry: LAAuthenticationRequirement](laauthenticationrequirement/biometry.md)
+- [class var biometry: LAAuthenticationRequirement](./biometry.md)
   The requirement that requires biometric authentication.
-- [class var biometryCurrentSet: LAAuthenticationRequirement](laauthenticationrequirement/biometrycurrentset.md)
+- [class var biometryCurrentSet: LAAuthenticationRequirement](./biometrycurrentset.md)
   The requirement that requires user authentication with the current set of biometrics.
 
 

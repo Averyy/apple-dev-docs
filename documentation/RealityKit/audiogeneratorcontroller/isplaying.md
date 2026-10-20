@@ -1,7 +1,8 @@
 # isPlaying
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether playback is currently active.
 
@@ -22,7 +23,7 @@ var isPlaying: Bool { get }
 
 #### Discussion
 
-You may experience a small delay between when you call the [`play()`](audiogeneratorcontroller/play().md) method and when the [`isPlaying`](audiogeneratorcontroller/isplaying.md) property reports `true`.
+You may experience a small delay between when you call the [`play()`](./play%28%29.md) method and when the [`isPlaying`](./isplaying.md) property reports `true`.
 
 
 ---

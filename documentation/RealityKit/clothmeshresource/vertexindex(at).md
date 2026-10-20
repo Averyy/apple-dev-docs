@@ -1,7 +1,8 @@
 # vertexIndex(at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the vertex index at the given position in the mesh’s flattened primitive index array.
 
@@ -26,7 +27,7 @@ The mesh is formed by triangles with three vertices each. Different triangles ca
 
 For example, if you want to retrieve the index of the second vertex in the eleventh triangle, you would use `myMesh.vertexIndex(at: 3 * 10 + 1)`. This is because each triangle is formed by three vertices, and indices start at zero, so the eleventh triangle starts at index 3 ⨉ 10. You then add one to get the second vertex within that triangle.
 
-You can use the returned vertex index to inspect vertex properties. You can retrieve the position, for example, by using [`position(at:)`](clothmeshresource/position(at:).md):
+You can use the returned vertex index to inspect vertex properties. You can retrieve the position, for example, by using [`position(at:)`](./position%28at%29.md):
 
 ```swift
 let vertexIndex = myMesh.vertexIndex(at: 3 * 10 + 1)
@@ -38,15 +39,16 @@ print("The second vertex of the eleventh triangle is at X=\(vertexPosition.x)")
 
 ## See Also
 
-- [var vertexCount: Int](clothmeshresource/vertexcount.md)
+### Accessing vertex data
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices in the mesh.
-- [func position(at: UInt32) -> SIMD3<Float>](clothmeshresource/position(at:).md)
+- [func position(at: UInt32) -> SIMD3<Float>](./position%28at%29.md)
   Returns the position of the vertex at the given index.
-- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothmeshresource/withpositions(_:).md)
+- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](./withpositions%28_%29.md)
   Provides access to the positions of all the vertices within a callback.
-- [func vertexIndex(primitive: UInt32, vertex: UInt32) -> UInt32](clothmeshresource/vertexindex(primitive:vertex:).md)
+- [func vertexIndex(primitive: UInt32, vertex: UInt32) -> UInt32](./vertexindex%28primitive,vertex%29.md)
   Returns the vertex index of the specified vertex within the specified primitive.
-- [func vertices(in: ClothVolumeShape, center: SIMD3<Float>, orientation: simd_quatf) -> [UInt32]](clothmeshresource/vertices(in:center:orientation:).md)
+- [func vertices(in: ClothVolumeShape, center: SIMD3<Float>, orientation: simd_quatf) -> [UInt32]](./vertices%28in,center,orientation%29.md)
   Returns the indices of the vertices that lie inside the given volume shape.
 
 

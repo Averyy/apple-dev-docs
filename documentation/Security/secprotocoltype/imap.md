@@ -1,7 +1,8 @@
 # SecProtocolType.IMAP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates IMAP.
 
@@ -13,6 +14,10 @@ Indicates IMAP.
 
 ```swift
 case IMAP
+```
+
+```c
+kSecProtocolTypeIMAP
 ```
 
 

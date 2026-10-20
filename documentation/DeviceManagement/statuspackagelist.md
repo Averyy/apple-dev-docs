@@ -1,7 +1,8 @@
 # StatusPackageList
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that lists the device’s declarative packages.
 
@@ -10,17 +11,17 @@ The status item that lists the device’s declarative packages.
 
 ## Declaration
 
-```swift
+```
 object StatusPackageList
 ```
 
 ## Mentions
 
-- [Installing packages](installing-packages.md)
+- [Installing packages](./installing-packages.md)
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -33,10 +34,14 @@ object StatusPackageList
 
 ##### Reason Codes
 
-- `Error.DownloadFailed`: The package download failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last download failure.
-- `Error.InstallFailed`: The package install failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last install failure.
+- `Error.DownloadFailed`: The package download failed.
 
-##### Status Item Example
+  - `Timestamp`: (string) The RFC 3339 timestamp of the last download failure.
+- `Error.InstallFailed`: The package install failed.
+
+  - `Timestamp`: (string) The RFC 3339 timestamp of the last install failure.
+
+##### Status item example
 
 **New or updated package**:
 
@@ -78,7 +83,7 @@ Reports a removed package.
 ## Topics
 
 ### Objects
-- [object StatusPackageListPackageObject](statuspackagelistpackageobject.md)
+- [object StatusPackageListPackageObject](./statuspackagelistpackageobject.md)
   A dictionary that describes a declarative package.
 
 ## Properties
@@ -87,9 +92,10 @@ Reports a removed package.
 
 ## See Also
 
-- [object StatusAppManagedList](statusappmanagedlist.md)
+### App and package items
+- [object StatusAppManagedList](./statusappmanagedlist.md)
   The status item that lists the device’s declarative managed apps.
-- [object StatusMDMApp](statusmdmapp.md)
+- [object StatusMDMApp](./statusmdmapp.md)
   The status item that lists the devices’s MDM-installed apps.
 
 

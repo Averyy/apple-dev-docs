@@ -1,7 +1,8 @@
 # stencil(withSourceTensor:weightsTensor:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a stencil operation and returns the result tensor.
 
@@ -19,13 +20,17 @@ Creates a stencil operation and returns the result tensor.
 func stencil(withSourceTensor source: MPSGraphTensor, weightsTensor weights: MPSGraphTensor, descriptor: MPSGraphStencilOpDescriptor, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) stencilWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphStencilOpDescriptor *) descriptor name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid MPSGraphTensor object.
 
 #### Discussion
 
-Performs a weighted reduction operation (See [`reductionMode`](mpsgraphstencilopdescriptor/reductionmode.md)) on the last 4 dimensions of the `source` over the window determined by `weights`, according to the value defined in `descriptor`.
+Performs a weighted reduction operation (See [`reductionMode`](../mpsgraphstencilopdescriptor/reductionmode.md)) on the last 4 dimensions of the `source` over the window determined by `weights`, according to the value defined in `descriptor`.
 
 ```md
    y[i] = reduction{j \in w} ( x[ i + j ]w[j] )

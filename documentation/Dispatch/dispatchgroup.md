@@ -1,18 +1,19 @@
 # DispatchGroup
 
 **Framework**: Dispatch  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A group of tasks that you monitor as a single unit.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,51 +28,52 @@ Groups allow you to aggregate a set of tasks and synchronize behaviors on the gr
 ## Topics
 
 ### Creating a Dispatch Group
-- [init()](dispatchgroup/init.md)
+- [init()](./dispatchgroup/init%28%29.md)
   Creates a new group to which you can assign block objects.
 ### Adding a Completion Handler
-- [func notify(qos: DispatchQoS, flags: DispatchWorkItemFlags, queue: DispatchQueue, execute: () -> Void)](dispatchgroup/notify(qos:flags:queue:execute:).md)
+- [func notify(qos: DispatchQoS, flags: DispatchWorkItemFlags, queue: DispatchQueue, execute: () -> Void)](./dispatchgroup/notify%28qos,flags,queue,execute%29.md)
   Schedules the submission of a block with the specified attributes to a queue when all tasks in the current group have finished executing.
-- [func notify(queue: DispatchQueue, work: DispatchWorkItem)](dispatchgroup/notify(queue:work:).md)
+- [func notify(queue: DispatchQueue, work: DispatchWorkItem)](./dispatchgroup/notify%28queue,work%29.md)
   Schedules the submission of a block to a queue when all tasks in the current group have finished executing.
 ### Waiting for Tasks to Finish Executing
-- [func wait()](dispatchgroup/wait.md)
+- [func wait()](./dispatchgroup/wait%28%29.md)
   Waits synchronously for the previously submitted work to finish.
-- [func wait(timeout: DispatchTime) -> DispatchTimeoutResult](dispatchgroup/wait(timeout:).md)
+- [func wait(timeout: DispatchTime) -> DispatchTimeoutResult](./dispatchgroup/wait%28timeout%29.md)
   Waits synchronously for the previously submitted work to complete, and returns if the work is not completed before the specified timeout period has elapsed.
-- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](dispatchgroup/wait(walltimeout:).md)
+- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](./dispatchgroup/wait%28walltimeout%29.md)
   Waits synchronously for the previously submitted work to complete, and returns if the work is not completed before the specified timeout period has elapsed.
 ### Updating the Group Manually
-- [func enter()](dispatchgroup/enter.md)
+- [func enter()](./dispatchgroup/enter%28%29.md)
   Explicitly indicates that a block has entered the group.
-- [func leave()](dispatchgroup/leave.md)
+- [func leave()](./dispatchgroup/leave%28%29.md)
   Explicitly indicates that a block in the group finished executing.
 
 ## Relationships
 
 ### Inherits From
-- [DispatchObject](dispatchobject.md)
+- [DispatchObject](./dispatchobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class DispatchQueue](dispatchqueue.md)
+### Queues and Tasks
+- [class DispatchQueue](./dispatchqueue.md)
   An object that manages the execution of tasks serially or concurrently on your app’s main thread or on a background thread.
-- [class DispatchWorkItem](dispatchworkitem.md)
+- [class DispatchWorkItem](./dispatchworkitem.md)
   The work you want to perform, encapsulated in a way that lets you attach a completion handle or execution dependencies.
-- [Dispatch Queue](dispatch-queue.md)
+- [Dispatch Queue](./dispatch-queue.md)
   An object that manages the execution of tasks serially or concurrently on your app’s main thread or on a background thread.
-- [Dispatch Work Item](dispatch-work-item.md)
+- [Dispatch Work Item](./dispatch-work-item.md)
   The work you want to perform, encapsulated in a way that lets you attach a completion handle or execution dependencies.
-- [Dispatch Group](dispatch-group.md)
+- [Dispatch Group](./dispatch-group.md)
   A group of tasks that you monitor as a single unit.
-- [Workloop](workloop.md)
+- [Workloop](./workloop.md)
   A dispatch object that prioritizes the execution of tasks based on their quality-of-service (QoS) level.
 
 

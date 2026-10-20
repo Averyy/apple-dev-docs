@@ -1,7 +1,8 @@
 # layoutDirection
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction associated with the current environment.
 
@@ -26,13 +27,14 @@ Use this value to determine or set whether the environment uses a left-to-right 
 
 ## See Also
 
-- [func layoutDirectionBehavior(LayoutDirectionBehavior) -> some View](view/layoutdirectionbehavior(_:).md)
+### Setting a layout direction
+- [func layoutDirectionBehavior(LayoutDirectionBehavior) -> some View](../view/layoutdirectionbehavior%28_%29.md)
   Sets the behavior of this view for different layout directions.
-- [enum LayoutDirectionBehavior](layoutdirectionbehavior.md)
+- [enum LayoutDirectionBehavior](../layoutdirectionbehavior.md)
   A description of what should happen when the layout direction changes.
-- [enum LayoutDirection](layoutdirection.md)
+- [enum LayoutDirection](../layoutdirection.md)
   A direction in which SwiftUI can lay out content.
-- [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
+- [struct LayoutRotationUnaryLayout](../layoutrotationunarylayout.md)
   A layout that rotates the space containing a view.
 
 

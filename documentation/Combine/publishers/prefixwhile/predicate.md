@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that determines whether publishing should continue.
 
@@ -22,7 +23,8 @@ let predicate: (Publishers.PrefixWhile<Upstream>.Output) -> Bool
 
 ## See Also
 
-- [let upstream: Upstream](publishers/prefixwhile/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

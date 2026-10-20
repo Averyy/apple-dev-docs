@@ -1,7 +1,8 @@
 # ITLibMediaItemVideoInfo
 
 **Framework**: iTunes Library  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This class encapsulates the video information of a video media item.
 
@@ -15,6 +16,10 @@ This class encapsulates the video information of a video media item.
 class ITLibMediaItemVideoInfo
 ```
 
+```objc
+@interface ITLibMediaItemVideoInfo : NSObject
+```
+
 #### Overview
 
 Video media items include TV shows, movies, and video podcasts.
@@ -22,44 +27,45 @@ Video media items include TV shows, movies, and video podcasts.
 ## Topics
 
 ### Getting Video Information
-- [var videoWidth: Int](itlibmediaitemvideoinfo/videowidth.md)
+- [var videoWidth: Int](./itlibmediaitemvideoinfo/videowidth.md)
   The width of the video in pixels.
-- [var videoHeight: Int](itlibmediaitemvideoinfo/videoheight.md)
+- [var videoHeight: Int](./itlibmediaitemvideoinfo/videoheight.md)
   The height of the video in pixels.
-- [var series: String?](itlibmediaitemvideoinfo/series.md)
+- [var series: String?](./itlibmediaitemvideoinfo/series.md)
   The name of the corresponding TV series, if the media item is an episode in a TV series.
-- [var sortSeries: String?](itlibmediaitemvideoinfo/sortseries.md)
+- [var sortSeries: String?](./itlibmediaitemvideoinfo/sortseries.md)
   The sorting name of the corresponding TV series, if the media item is an episode in a TV series.
-- [var season: Int](itlibmediaitemvideoinfo/season.md)
+- [var season: Int](./itlibmediaitemvideoinfo/season.md)
   The corresponding TV season, if the media item is an episode of a TV series.
-- [var isHD: Bool](itlibmediaitemvideoinfo/ishd.md)
+- [var isHD: Bool](./itlibmediaitemvideoinfo/ishd.md)
   A Boolean value that indicates whether the video is high-definition.
-- [var episode: String?](itlibmediaitemvideoinfo/episode.md)
+- [var episode: String?](./itlibmediaitemvideoinfo/episode.md)
   The name of the episode, if the media item is an episode of a TV series.
-- [var episodeOrder: Int](itlibmediaitemvideoinfo/episodeorder.md)
+- [var episodeOrder: Int](./itlibmediaitemvideoinfo/episodeorder.md)
   The numerical order of the episode, if the media item is an episode of a TV series.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ITLibMediaItem](itlibmediaitem.md)
+### Media Items
+- [class ITLibMediaItem](./itlibmediaitem.md)
   This class describes a media item (a track) in the iTunes library, such as a song, a video, or a podcast.
-- [class ITLibMediaEntity](itlibmediaentity.md)
+- [class ITLibMediaEntity](./itlibmediaentity.md)
   This class describes a media entity, which can be a media item, such as an audio track.
-- [class ITLibArtist](itlibartist.md)
+- [class ITLibArtist](./itlibartist.md)
   This class represents an artist, such as the performer of a song.
-- [class ITLibArtwork](itlibartwork.md)
+- [class ITLibArtwork](./itlibartwork.md)
   This class represents the artwork for a media item.
 
 

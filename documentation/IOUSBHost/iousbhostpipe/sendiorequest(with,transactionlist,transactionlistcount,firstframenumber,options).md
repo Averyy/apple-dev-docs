@@ -1,7 +1,8 @@
 # sendIORequest(with:transactionList:transactionListCount:firstFrameNumber:options:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 func sendIORequest(with data: NSMutableData, transactionList: UnsafeMutablePointer<IOUSBHostIsochronousTransaction>, transactionListCount: Int, firstFrameNumber: UInt64, options: IOUSBHostIsochronousTransferOptions = []) throws
 ```
 
+```objc
+- (BOOL) sendIORequestWithData:(NSMutableData *) data transactionList:(IOUSBHostIsochronousTransaction *) transactionList transactionListCount:(NSUInteger) transactionListCount firstFrameNumber:(uint64_t) firstFrameNumber options:(IOUSBHostIsochronousTransferOptions) options error:(NSError **) error;
+```
+
 ## See Also
 
-- [func enqueueIORequest(with: NSMutableData, transactionList: UnsafeMutablePointer<IOUSBHostIsochronousTransaction>, transactionListCount: Int, firstFrameNumber: UInt64, options: IOUSBHostIsochronousTransferOptions, completionHandler: ((IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousTransaction>) -> Void)?) throws](iousbhostpipe/enqueueiorequest(with:transactionlist:transactionlistcount:firstframenumber:options:completionhandler:).md)
+### Instance Methods
+- [func enqueueIORequest(with: NSMutableData, transactionList: UnsafeMutablePointer<IOUSBHostIsochronousTransaction>, transactionListCount: Int, firstFrameNumber: UInt64, options: IOUSBHostIsochronousTransferOptions, completionHandler: ((IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousTransaction>) -> Void)?) throws](./enqueueiorequest%28with,transactionlist,transactionlistcount,firstframenumber,options,completionhandler%29.md)
 
 
 ---

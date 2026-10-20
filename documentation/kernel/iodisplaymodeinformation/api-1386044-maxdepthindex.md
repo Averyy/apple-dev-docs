@@ -1,7 +1,8 @@
 # maxDepthIndex
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Highest depth index available in this display mode.
 
@@ -10,7 +11,7 @@ Highest depth index available in this display mode.
 
 ## Declaration
 
-```swift
+```c
 IOIndex maxDepthIndex;
 ```
 

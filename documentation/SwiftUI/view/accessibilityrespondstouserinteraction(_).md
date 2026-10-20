@@ -1,7 +1,8 @@
 # accessibilityRespondsToUserInteraction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Explicitly set whether this Accessibility element responds to user interaction and would thus be interacted with by technologies such as Switch Control, Voice Control or Full Keyboard Access.
 
@@ -27,7 +28,8 @@ If this is not set, the value is inferred from the traits of the Accessibility e
 
 ## See Also
 
-- [func accessibilityRespondsToUserInteraction(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityrespondstouserinteraction(_:isenabled:).md)
+### Managing interactivity
+- [func accessibilityRespondsToUserInteraction(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilityrespondstouserinteraction%28_,isenabled%29.md)
   Explicitly set whether this Accessibility element responds to user interaction and would thus be interacted with by technologies such as Switch Control, Voice Control or Full Keyboard Access.
 
 

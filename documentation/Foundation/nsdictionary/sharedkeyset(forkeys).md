@@ -1,7 +1,8 @@
 # sharedKeySet(forKeys:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a shared key set object for the specified keys.
 
@@ -20,6 +21,10 @@ Creates a shared key set object for the specified keys.
 class func sharedKeySet(forKeys keys: [any NSCopying]) -> Any
 ```
 
+```objc
++ (id) sharedKeySetForKeys:(NSArray<id<NSCopying>> *) keys;
+```
+
 #### Return Value
 
 A shared key set object.
@@ -28,7 +33,7 @@ A shared key set object.
 
 The array of `keys` may contain duplicates which are quietly ignored. Duplicate hash values of the keys are quietly allowed, but may cause lower performance and increase memory usage.
 
-Typically you would create a shared key set for a given set of keys once, before creating shared key dictionaries, and retain and save the result of this method for use with the [`NSMutableDictionary`](nsmutabledictionary.md) class method `dictionaryWithSharedKeySet:.`
+Typically you would create a shared key set for a given set of keys once, before creating shared key dictionaries, and retain and save the result of this method for use with the [`NSMutableDictionary`](../nsmutabledictionary.md) class method `dictionaryWithSharedKeySet:.`
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(_:description:scale:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scoring dimension.
 

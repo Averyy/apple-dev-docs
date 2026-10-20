@@ -1,7 +1,8 @@
 # setConstantValue(_:type:withName:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a value for a function constant with a specific name.
 
@@ -17,6 +18,10 @@ Sets a value for a function constant with a specific name.
 
 ```swift
 func setConstantValue(_ value: UnsafeRawPointer, type: MTLDataType, withName name: String)
+```
+
+```objc
+- (void) setConstantValue:(const void *) value type:(MTLDataType) type withName:(NSString *) name;
 ```
 
 #### Discussion
@@ -53,9 +58,10 @@ MTLFunctionConstantValues* constantValues = [MTLFunctionConstantValues new];
 
 ## See Also
 
-- [func setConstantValue(UnsafeRawPointer, type: MTLDataType, index: Int)](mtlfunctionconstantvalues/setconstantvalue(_:type:index:).md)
+### Setting constant values
+- [func setConstantValue(UnsafeRawPointer, type: MTLDataType, index: Int)](./setconstantvalue%28_,type,index%29.md)
   Sets a value for a function constant at a specific index.
-- [func setConstantValues(UnsafeRawPointer, type: MTLDataType, range: Range<Int>)](mtlfunctionconstantvalues/setconstantvalues(_:type:range:).md)
+- [func setConstantValues(UnsafeRawPointer, type: MTLDataType, range: Range<Int>)](./setconstantvalues%28_,type,range%29.md)
   Sets values for a group of function constants within a specific index range.
 
 

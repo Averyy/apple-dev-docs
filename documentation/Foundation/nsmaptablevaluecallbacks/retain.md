@@ -1,7 +1,8 @@
 # retain
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Points to the function that increments a reference count for the given element. If `NULL`, then nothing is done for reference counting.
 
@@ -18,6 +19,10 @@ Points to the function that increments a reference count for the given element. 
 
 ```swift
 var retain: ((NSMapTable<AnyObject, AnyObject>, UnsafeRawPointer) -> Void)?
+```
+
+```c
+void (*)(NSMapTable *, const void *) retain;
 ```
 
 

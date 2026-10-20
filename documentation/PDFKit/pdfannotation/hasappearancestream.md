@@ -1,7 +1,8 @@
 # hasAppearanceStream
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value that indicates whether the annotation has an appearance stream associated with it.
 
@@ -19,13 +20,17 @@ Returns a Boolean value that indicates whether the annotation has an appearance 
 var hasAppearanceStream: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasAppearanceStream;
+```
+
 ## Mentions
 
-- [Adding Custom Graphics to a PDF](adding-custom-graphics-to-a-pdf.md)
+- [Adding Custom Graphics to a PDF](../adding-custom-graphics-to-a-pdf.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the annotation has an appearance stream; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the annotation has an appearance stream; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -33,23 +38,24 @@ An appearance stream is a sequence of draw instructions used to render a PDF ite
 
 ## See Also
 
-- [var alignment: NSTextAlignment](pdfannotation/alignment.md)
+### Managing Annotation Display Characteristics
+- [var alignment: NSTextAlignment](./alignment.md)
   The alignment of the free text and text widget annotation’s text content.
-- [var bounds: CGRect](pdfannotation/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   Returns the bounding box for the annotation in page space.
-- [var contents: String?](pdfannotation/contents.md)
+- [var contents: String?](./contents.md)
   Returns the textual content (if any) associated with the annotation.
-- [var font: UIFont?](pdfannotation/font.md)
+- [var font: UIFont?](./font.md)
   The font the annotation uses to display text.
-- [var fontColor: UIColor?](pdfannotation/fontcolor.md)
+- [var fontColor: UIColor?](./fontcolor.md)
   The font color the annotation uses to display text.
-- [var border: PDFBorder?](pdfannotation/border.md)
+- [var border: PDFBorder?](./border.md)
   Sets the border style for the annotation.
-- [class PDFBorder](pdfborder.md)
+- [class PDFBorder](../pdfborder.md)
   An optional border for an annotation that lies completely within the annotation rectangle.
-- [var isHighlighted: Bool](pdfannotation/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the annotation is in a highlighted state, such as when the mouse is down on a link annotation.
-- [var color: UIColor](pdfannotation/color.md)
+- [var color: UIColor](./color.md)
   Sets the stroke color for the annotation.
 
 

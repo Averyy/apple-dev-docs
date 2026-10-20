@@ -1,7 +1,8 @@
 # NSCollectionLayoutDimension
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An individual dimension representing an item’s width or height in a collection view.
 
@@ -15,9 +16,13 @@ An individual dimension representing an item’s width or height in a collection
 class NSCollectionLayoutDimension
 ```
 
+```objc
+@interface NSCollectionLayoutDimension : NSObject
+```
+
 #### Overview
 
-Each item in a collection view has an explicit width dimension and height dimension, which combine to define the item’s size ([`NSCollectionLayoutSize`](nscollectionlayoutsize.md)).
+Each item in a collection view has an explicit width dimension and height dimension, which combine to define the item’s size ([`NSCollectionLayoutSize`](./nscollectionlayoutsize.md)).
 
 You can express an item’s dimensions using an absolute, estimated, or fractional value.
 
@@ -69,50 +74,51 @@ NSCollectionLayoutSize *fractionalSize = [NSCollectionLayoutSize sizeWithWidthDi
 ## Topics
 
 ### Creating a dimension
-- [class func absolute(CGFloat) -> Self](nscollectionlayoutdimension/absolute(_:).md)
+- [class func absolute(CGFloat) -> Self](./nscollectionlayoutdimension/absolute%28_%29.md)
   Creates a dimension with an absolute point value.
-- [class func estimated(CGFloat) -> Self](nscollectionlayoutdimension/estimated(_:).md)
+- [class func estimated(CGFloat) -> Self](./nscollectionlayoutdimension/estimated%28_%29.md)
   Creates a dimension with an estimated point value.
-- [class func fractionalHeight(CGFloat) -> Self](nscollectionlayoutdimension/fractionalheight(_:).md)
+- [class func fractionalHeight(CGFloat) -> Self](./nscollectionlayoutdimension/fractionalheight%28_%29.md)
   Creates a dimension that is computed as a fraction of the height of the containing group.
-- [class func fractionalWidth(CGFloat) -> Self](nscollectionlayoutdimension/fractionalwidth(_:).md)
+- [class func fractionalWidth(CGFloat) -> Self](./nscollectionlayoutdimension/fractionalwidth%28_%29.md)
   Creates a dimension that is computed as a fraction of the width of the containing group.
 ### Getting the dimension value
-- [var dimension: CGFloat](nscollectionlayoutdimension/dimension.md)
+- [var dimension: CGFloat](./nscollectionlayoutdimension/dimension.md)
   The floating-point value of the dimension.
 ### Getting the dimension type
-- [var isAbsolute: Bool](nscollectionlayoutdimension/isabsolute.md)
+- [var isAbsolute: Bool](./nscollectionlayoutdimension/isabsolute.md)
   A Boolean value that indicates whether the dimension is expressed as an absolute value.
-- [var isEstimated: Bool](nscollectionlayoutdimension/isestimated.md)
+- [var isEstimated: Bool](./nscollectionlayoutdimension/isestimated.md)
   A Boolean value that indicates whether the dimension is expressed as an estimated value.
-- [var isFractionalHeight: Bool](nscollectionlayoutdimension/isfractionalheight.md)
+- [var isFractionalHeight: Bool](./nscollectionlayoutdimension/isfractionalheight.md)
   A Boolean value that indicates whether the dimension is expressed as a fraction of its container’s height.
-- [var isFractionalWidth: Bool](nscollectionlayoutdimension/isfractionalwidth.md)
+- [var isFractionalWidth: Bool](./nscollectionlayoutdimension/isfractionalwidth.md)
   A Boolean value that indicates whether the dimension is expressed as a fraction of its container’s width.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class NSCollectionLayoutSize](nscollectionlayoutsize.md)
+### Size and spacing
+- [class NSCollectionLayoutSize](./nscollectionlayoutsize.md)
   The width and the height of an item in a collection view.
-- [class NSCollectionLayoutSpacing](nscollectionlayoutspacing.md)
+- [class NSCollectionLayoutSpacing](./nscollectionlayoutspacing.md)
   An object that defines the space between or around items in a collection view.
-- [class NSCollectionLayoutEdgeSpacing](nscollectionlayoutedgespacing.md)
+- [class NSCollectionLayoutEdgeSpacing](./nscollectionlayoutedgespacing.md)
   An object that defines the space around the edges of items in a collection view.
-- [protocol NSCollectionLayoutContainer](nscollectionlayoutcontainer.md)
+- [protocol NSCollectionLayoutContainer](./nscollectionlayoutcontainer.md)
   A protocol used to provide information about the size and content insets of a layout’s container.
 
 

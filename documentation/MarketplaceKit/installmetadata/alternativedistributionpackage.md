@@ -1,7 +1,8 @@
 # alternativeDistributionPackage
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to the app’s assembled alternative distribution package.
 
@@ -19,17 +20,18 @@ let alternativeDistributionPackage: URL
 
 You ingest an available app’s alternative distribution package from App Store Connect in advance, then set this URL to the location that you store the alternative distribution package on your server.
 
-For more information, see [`Ingesting an alternative distribution package`](ingesting-an-alternative-distribution-package.md).
+For more information, see [Ingesting an alternative distribution package](../ingesting-an-alternative-distribution-package.md).
 
 ## See Also
 
-- [let appleItemID: AppleItemID](installmetadata/appleitemid.md)
+### Inspecting app and account information
+- [let appleItemID: AppleItemID](./appleitemid.md)
   A unique identifier for the app to install.
-- [var appShareURL: URL?](installmetadata/appshareurl.md)
+- [var appShareURL: URL?](./appshareurl.md)
   A URL to a product landing page for the app on your marketplace website.
-- [let isUpdate: Bool](installmetadata/isupdate.md)
+- [let isUpdate: Bool](./isupdate.md)
   A Boolean value that indicates whether the installation is an app update.
-- [let account: String](installmetadata/account.md)
+- [let account: String](./account.md)
   A user ID for the person installing the app.
 
 

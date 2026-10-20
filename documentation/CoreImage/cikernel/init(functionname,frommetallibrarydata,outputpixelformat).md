@@ -1,7 +1,8 @@
 # init(functionName:fromMetalLibraryData:outputPixelFormat:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a single kernel object using a Metal Shading Language kernel function with optional pixel format.
 
@@ -19,6 +20,10 @@ Creates a single kernel object using a Metal Shading Language kernel function wi
 convenience init(functionName name: String, fromMetalLibraryData data: Data, outputPixelFormat format: CIFormat) throws
 ```
 
+```objc
++ (instancetype) kernelWithFunctionName:(NSString *) name fromMetalLibraryData:(NSData *) data outputPixelFormat:(CIFormat) format error:(NSError **) error;
+```
+
 #### Discussion
 
 This method allows you to use MSL as the shader language for a Core Image kernel. Since MSL based kernels are precompiled, initializing them is faster than their than Core Image Kernel Language (CIKL) counterparts and Xcode can provide error diagnostics during development rather than at runtime. MSL is a more modern language than CIKL, and you can write shader code that uses arrays, structs and matrices.
@@ -33,11 +38,12 @@ MSL based kernels still support concatenation and tiling and can work in the sam
 
 ## See Also
 
-- [convenience init(functionName: String, fromMetalLibraryData: Data) throws](cikernel/init(functionname:frommetallibrarydata:).md)
+### Creating a Kernel Using Metal Shading Language
+- [convenience init(functionName: String, fromMetalLibraryData: Data) throws](./init%28functionname,frommetallibrarydata%29.md)
   Creates a single kernel object using a Metal Shading Language (MSL) kernel function.
-- [class func kernelNames(fromMetalLibraryData: Data) -> [String]](cikernel/kernelnames(frommetallibrarydata:).md)
+- [class func kernelNames(fromMetalLibraryData: Data) -> [String]](./kernelnames%28frommetallibrarydata%29.md)
   Return an array of strings containing the names of all of the kernels contained in the Metal library.
-- [class func kernels(withMetalString: String) throws -> [CIKernel]](cikernel/kernels(withmetalstring:).md)
+- [class func kernels(withMetalString: String) throws -> [CIKernel]](./kernels%28withmetalstring%29.md)
   Load kernels from a Metal language string.
 
 

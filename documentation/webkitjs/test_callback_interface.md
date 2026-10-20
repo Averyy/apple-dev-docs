@@ -1,14 +1,15 @@
 # TEST_CALLBACK_INTERFACE
 
 **Framework**: WebKit JS  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Safari Mobile 10.1+
 
 ## Declaration
 
-```swift
+```
 typedef  TEST_CALLBACK_INTERFACE;
 ```
 

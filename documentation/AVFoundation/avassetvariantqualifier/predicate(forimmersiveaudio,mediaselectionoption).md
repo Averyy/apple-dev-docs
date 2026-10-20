@@ -1,7 +1,8 @@
 # predicate(forImmersiveAudio:mediaSelectionOption:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a predicate for immersive audio.
 
@@ -20,9 +21,13 @@ Creates a predicate for immersive audio.
 class func predicate(forImmersiveAudio isImmersiveAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate
 ```
 
+```objc
++ (NSPredicate *) predicateForImmersiveAudio:(BOOL) isImmersiveAudio mediaSelectionOption:(AVMediaSelectionOption *) mediaSelectionOption;
+```
+
 #### Return Value
 
-A predicate object that you use to to create an [`AVAssetVariantQualifier`](avassetvariantqualifier.md).
+A predicate object that you use to to create an [`AVAssetVariantQualifier`](../avassetvariantqualifier.md).
 
 #### Discussion
 
@@ -35,27 +40,28 @@ Use the returned value, along with other predicates, to express variant preferen
 
 ## See Also
 
-- [class func predicate(forAudioSampleRate: Double, mediaSelectionOption: AVMediaSelectionOption?, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(foraudiosamplerate:mediaselectionoption:operatortype:).md)
+### Building predicates
+- [class func predicate(forAudioSampleRate: Double, mediaSelectionOption: AVMediaSelectionOption?, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](./predicate%28foraudiosamplerate,mediaselectionoption,operatortype%29.md)
   Creates a predicate for audio sample rate.
-- [class func predicate(forAudioSampleRate: Double, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(foraudiosamplerate:operatortype:).md)
+- [class func predicate(forAudioSampleRate: Double, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](./predicate%28foraudiosamplerate,operatortype%29.md)
   Creates a NSPredicate for audio sample rate which can be used with other NSPredicates to express variant preferences.
-- [class func predicate(forBinauralAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(forbinauralaudio:).md)
+- [class func predicate(forBinauralAudio: Bool) -> NSPredicate](./predicate%28forbinauralaudio%29.md)
   Creates a NSPredicate for binaural which can be used with other NSPredicates to express variant preferences.
-- [class func predicate(forBinauralAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate](avassetvariantqualifier/predicate(forbinauralaudio:mediaselectionoption:).md)
+- [class func predicate(forBinauralAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate](./predicate%28forbinauralaudio,mediaselectionoption%29.md)
   Creates a predicate for binaural audio.
-- [class func predicate(forChannelCount: Int, mediaSelectionOption: AVMediaSelectionOption?, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forchannelcount:mediaselectionoption:operatortype:).md)
+- [class func predicate(forChannelCount: Int, mediaSelectionOption: AVMediaSelectionOption?, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](./predicate%28forchannelcount,mediaselectionoption,operatortype%29.md)
   Creates a predicate with a channel count, media selection option, and operator type.
-- [class func predicate(forChannelCount: Int, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forchannelcount:operatortype:).md)
+- [class func predicate(forChannelCount: Int, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](./predicate%28forchannelcount,operatortype%29.md)
   Creates a NSPredicate for audio channel count which can be used with other NSPredicates to express variant preferences.
-- [class func predicate(forDownmixAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(fordownmixaudio:).md)
+- [class func predicate(forDownmixAudio: Bool) -> NSPredicate](./predicate%28fordownmixaudio%29.md)
   Creates a NSPredicate for immersive audio which can be used with other NSPredicates to express variant preferences.
-- [class func predicate(forDownmixAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate](avassetvariantqualifier/predicate(fordownmixaudio:mediaselectionoption:).md)
+- [class func predicate(forDownmixAudio: Bool, mediaSelectionOption: AVMediaSelectionOption?) -> NSPredicate](./predicate%28fordownmixaudio,mediaselectionoption%29.md)
   Creates a predicate for downmix audio.
-- [class func predicate(forImmersiveAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(forimmersiveaudio:).md)
+- [class func predicate(forImmersiveAudio: Bool) -> NSPredicate](./predicate%28forimmersiveaudio%29.md)
   Creates a NSPredicate for immersive audio which can be used with other NSPredicates to express variant preferences.
-- [class func predicate(forPresentationHeight: CGFloat, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forpresentationheight:operatortype:).md)
+- [class func predicate(forPresentationHeight: CGFloat, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](./predicate%28forpresentationheight,operatortype%29.md)
   Creates a predicate with a height and operator type.
-- [class func predicate(forPresentationWidth: CGFloat, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forpresentationwidth:operatortype:).md)
+- [class func predicate(forPresentationWidth: CGFloat, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](./predicate%28forpresentationwidth,operatortype%29.md)
   Creates a predicate with a width and operator type.
 
 

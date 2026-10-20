@@ -1,7 +1,8 @@
 # init(title:url:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL descriptor with the given title and URL.
 
@@ -17,6 +18,10 @@ Creates a URL descriptor with the given title and URL.
 
 ```swift
 init(title: String?, url URL: URL)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title URL:(NSURL *) URL;
 ```
 
 #### Return Value

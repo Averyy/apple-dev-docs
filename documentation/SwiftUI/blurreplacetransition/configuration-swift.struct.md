@@ -1,7 +1,8 @@
 # BlurReplaceTransition.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration properties for a transition.
 
@@ -23,23 +24,24 @@ struct Configuration
 ## Topics
 
 ### Getting the transition configuration
-- [static let downUp: BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.struct/downup.md)
+- [static let downUp: BlurReplaceTransition.Configuration](./configuration-swift.struct/downup.md)
   A configuration that requests a transition that scales the view down while removing it and up while inserting it.
-- [static let upUp: BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.struct/upup.md)
+- [static let upUp: BlurReplaceTransition.Configuration](./configuration-swift.struct/upup.md)
   A configuration that requests a transition that scales the view up while both removing and inserting it.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(configuration: BlurReplaceTransition.Configuration)](blurreplacetransition/init(configuration:).md)
+### Creating the transition
+- [init(configuration: BlurReplaceTransition.Configuration)](./init%28configuration%29.md)
   Creates a new transition.
-- [var configuration: BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.property.md)
+- [var configuration: BlurReplaceTransition.Configuration](./configuration-swift.property.md)
   The transition configuration.
 
 

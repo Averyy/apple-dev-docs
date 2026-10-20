@@ -1,7 +1,8 @@
 # isMuted
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the call is muted.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the call is muted.
 
 ```swift
 var isMuted: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isMuted) BOOL muted;
 ```
 
 

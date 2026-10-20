@@ -1,7 +1,8 @@
 # searchString(_:inUserInterfaceItemString:range:found:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches for the string in the user interface.
 
@@ -14,9 +15,13 @@ Searches for the string in the user interface.
 func searchString(_ searchString: String, inUserInterfaceItemString stringToSearch: String, range searchRange: NSRange, found foundRange: UnsafeMutablePointer<NSRange>?) -> Bool
 ```
 
+```objc
+- (BOOL) searchString:(NSString *) searchString inUserInterfaceItemString:(NSString *) stringToSearch searchRange:(NSRange) searchRange foundRange:(NSRange *) foundRange;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the searchString is matched, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the searchString is matched, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -31,15 +36,16 @@ The search uses the default matching rules for Spotlight for Help.
 
 ## See Also
 
-- [func registerUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](nsapplication/registeruserinterfaceitemsearchhandler(_:).md)
+### Providing help information
+- [func registerUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](./registeruserinterfaceitemsearchhandler%28_%29.md)
   Register an object that provides help data to your app.
-- [func unregisterUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](nsapplication/unregisteruserinterfaceitemsearchhandler(_:).md)
+- [func unregisterUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](./unregisteruserinterfaceitemsearchhandler%28_%29.md)
   Unregister an object that provides help data to your app.
-- [func showHelp(Any?)](nsapplication/showhelp(_:).md)
+- [func showHelp(Any?)](./showhelp%28_%29.md)
   If your project is properly registered, and the necessary keys have been set in the property list, this method launches Help Viewer and displays the first page of your app’s help book.
-- [func activateContextHelpMode(Any?)](nsapplication/activatecontexthelpmode(_:).md)
+- [func activateContextHelpMode(Any?)](./activatecontexthelpmode%28_%29.md)
   Places the receiver in context-sensitive help mode.
-- [var helpMenu: NSMenu?](nsapplication/helpmenu.md)
+- [var helpMenu: NSMenu?](./helpmenu.md)
   The help menu used by the app.
 
 

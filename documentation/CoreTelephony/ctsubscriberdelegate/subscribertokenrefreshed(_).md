@@ -2,6 +2,7 @@
 
 **Framework**: Core Telephony  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate the subscriber’s token refreshed.
@@ -15,6 +16,10 @@ Tells the delegate the subscriber’s token refreshed.
 
 ```swift
 func subscriberTokenRefreshed(_ subscriber: CTSubscriber)
+```
+
+```objc
+- (void) subscriberTokenRefreshed:(CTSubscriber *) subscriber;
 ```
 
 ## Parameters

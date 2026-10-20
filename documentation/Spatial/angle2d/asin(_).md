@@ -1,7 +1,8 @@
 # asin(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the inverse sine of the specified value.
 
@@ -11,7 +12,7 @@ Returns the inverse sine of the specified value.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,19 +27,20 @@ static func asin(_ x: Double) -> Angle2D
 
 ## See Also
 
-- [static func acos(Double) -> Angle2D](angle2d/acos(_:).md)
+### Geometry functions
+- [static func acos(Double) -> Angle2D](./acos%28_%29.md)
   Returns the inverse cosine of the specified value.
-- [static func acosh(Double) -> Angle2D](angle2d/acosh(_:).md)
+- [static func acosh(Double) -> Angle2D](./acosh%28_%29.md)
   Returns the inverse hyperbolic cosine of the specified value.
-- [static func asinh(Double) -> Angle2D](angle2d/asinh(_:).md)
+- [static func asinh(Double) -> Angle2D](./asinh%28_%29.md)
   Returns the inverse hyperbolic sine of the specified value.
-- [static func atan(Double) -> Angle2D](angle2d/atan(_:).md)
+- [static func atan(Double) -> Angle2D](./atan%28_%29.md)
   Returns the inverse hyperbolic tangent of the specified value.
-- [static func atan2(y: Double, x: Double) -> Angle2D](angle2d/atan2(y:x:).md)
+- [static func atan2(y: Double, x: Double) -> Angle2D](./atan2%28y,x%29.md)
   Returns the two-argument arctangent of the specified values.
-- [static func atanh(Double) -> Angle2D](angle2d/atanh(_:).md)
+- [static func atanh(Double) -> Angle2D](./atanh%28_%29.md)
   Returns the inverse hyperbolic tangent of the specified value.
-- [var normalized: Angle2D](angle2d/normalized.md)
+- [var normalized: Angle2D](./normalized.md)
   Returns the specified angle normalized between –180° and 180.0°.
 
 

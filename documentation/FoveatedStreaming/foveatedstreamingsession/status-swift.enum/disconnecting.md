@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.Status.disconnecting
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is disconnecting from a streaming endpoint.
 
@@ -16,7 +17,7 @@ case disconnecting
 
 #### Discussion
 
-The [`FoveatedStreamingSession`](foveatedstreamingsession.md) briefly enters this state after you call [`disconnect()`](foveatedstreamingsession/disconnect().md) while it completes the disconnection.
+The [`FoveatedStreamingSession`](../../foveatedstreamingsession.md) briefly enters this state after you call [`disconnect()`](../disconnect%28%29.md) while it completes the disconnection.
 
 
 ---

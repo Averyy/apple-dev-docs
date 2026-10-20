@@ -1,7 +1,8 @@
 # ProfileRemovalPassword
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures profile removal.
 
@@ -14,7 +15,7 @@ The payload that configures profile removal.
 
 ## Declaration
 
-```swift
+```
 object ProfileRemovalPassword
 ```
 
@@ -24,7 +25,7 @@ Specify `com.apple.profileRemovalPassword` as the payload type.
 
 This payload provides a password to allow users to remove a locked configuration profile from the device. If this payload is present and has a password value set, the device asks for the password when the user taps a profile’s Remove button. This system encrypts the payload with the rest of the profile.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ This payload provides a password to allow users to remove a locked configuration
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,13 +81,14 @@ This payload provides a password to allow users to remove a locked configuration
 
 ## See Also
 
-- [object EducationConfiguration](educationconfiguration.md)
+### Managed devices
+- [object EducationConfiguration](./educationconfiguration.md)
   The payload that configures the users, groups, and departments within an educational organization.
-- [object LightsOutManagementLOM](lightsoutmanagementlom.md)
+- [object LightsOutManagementLOM](./lightsoutmanagementlom.md)
   The payload that configures lights-out management (LOM) settings.
-- [object ManagedPreferences](managedpreferences.md)
+- [object ManagedPreferences](./managedpreferences.md)
   The payload that configures managed preferences.
-- [object MDM](mdm.md)
+- [object MDM](./mdm.md)
   The payload that configures mobile device management (MDM) settings.
 
 

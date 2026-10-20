@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new text layout manager with the coder you provide.
 
@@ -14,13 +15,18 @@ Creates a new text layout manager with the coder you provide.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
-- `coder`: A coder that implements [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder).
+- `coder`: A coder that implements [`NSCoder`](../../Foundation/nscoder.md).
 
 ## See Also
 
-- [init()](nstextlayoutmanager/init.md)
+### Creating a layout manager
+- [init()](./init%28%29.md)
   Creates a new text layout manager.
 
 

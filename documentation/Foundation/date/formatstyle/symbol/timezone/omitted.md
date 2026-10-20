@@ -1,7 +1,8 @@
 # omitted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option for not including the symbol in the formatted output.
 

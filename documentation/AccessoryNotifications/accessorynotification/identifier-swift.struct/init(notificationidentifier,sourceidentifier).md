@@ -1,7 +1,8 @@
 # init(notificationIdentifier:sourceIdentifier:)
 
 **Framework**: Accessory Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a notification identifier from its components.
 

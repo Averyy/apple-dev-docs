@@ -1,7 +1,8 @@
 # CiProduct.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Products resource.
 
@@ -10,7 +11,7 @@ The attributes that describe a Products resource.
 
 ## Declaration
 
-```swift
+```
 object CiProduct.Attributes
 ```
 
@@ -20,9 +21,12 @@ object CiProduct.Attributes
 - `name` (string): The name of the Xcode Cloud product.
 - `productType` (string): A string that indicates whether the Xcode Cloud product is a framework or an app.
 
+  **Allowed Values**: `APP`, `FRAMEWORK`
+
 ## See Also
 
-- [object CiProduct.Relationships](ciproduct/relationships-data.dictionary.md)
+### Objects
+- [object CiProduct.Relationships](./relationships-data.dictionary.md)
   The relationships of the Products resource you included in the request and those on which you can operate.
 
 

@@ -1,7 +1,8 @@
 # PredicateExpressions.RangeExpressionContains
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,23 +22,23 @@ struct RangeExpressionContains<RangeExpression, Element> where RangeExpression :
 ## Topics
 
 ### Initializers
-- [init(range: RangeExpression, element: Element)](predicateexpressions/rangeexpressioncontains/init(range:element:).md)
+- [init(range: RangeExpression, element: Element)](./rangeexpressioncontains/init%28range,element%29.md)
 ### Instance Properties
-- [let element: Element](predicateexpressions/rangeexpressioncontains/element.md)
-- [let range: RangeExpression](predicateexpressions/rangeexpressioncontains/range.md)
+- [let element: Element](./rangeexpressioncontains/element.md)
+- [let range: RangeExpression](./rangeexpressioncontains/range.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

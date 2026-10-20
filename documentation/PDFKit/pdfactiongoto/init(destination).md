@@ -1,7 +1,8 @@
 # init(destination:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the go-to action.
 
@@ -17,6 +18,10 @@ Initializes the go-to action.
 
 ```swift
 init(destination: PDFDestination)
+```
+
+```objc
+- (instancetype) initWithDestination:(PDFDestination *) destination;
 ```
 
 #### Return Value

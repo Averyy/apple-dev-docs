@@ -1,7 +1,8 @@
 # classCount
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of classes.
 
@@ -22,9 +23,10 @@ var classCount: Int { get }
 
 ## See Also
 
-- [var featureColumnNames: [String]](treeclassifiermodel/featurecolumnnames.md)
+### Getting the properties
+- [var featureColumnNames: [String]](./featurecolumnnames.md)
   The names of the columns containing feature values.
-- [var predictionColumnName: String](treeclassifiermodel/predictioncolumnname.md)
+- [var predictionColumnName: String](./predictioncolumnname.md)
   The name of the column containing the predicted labels.
 
 

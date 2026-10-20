@@ -1,7 +1,8 @@
 # textureRegion
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region in the texture to update, in tiles.
 
@@ -19,9 +20,13 @@ The region in the texture to update, in tiles.
 var textureRegion: MTLRegion
 ```
 
+```c
+MTLRegion textureRegion;
+```
+
 #### Discussion
 
-When [`textureLevel`](mtl4updatesparsetexturemappingoperation/texturelevel.md) is equal to the texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md), set `origin.y` to `0` and `size.height` to `1`.
+When [`textureLevel`](./texturelevel.md) is equal to the texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md), set `origin.y` to `0` and `size.height` to `1`.
 
 
 ---

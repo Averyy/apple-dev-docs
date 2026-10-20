@@ -1,7 +1,8 @@
 # firstValue(matchingCategory:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds the first tag matching the specified category and returns the value of the matching tag.
 
@@ -19,6 +20,8 @@ Finds the first tag matching the specified category and returns the value of the
 ```swift
 func firstValue<T>(matchingCategory category: CMTypedTag<T>.Category) -> T? where T : Sendable
 ```
+
+Available when `Element` inherits `CMTag`.
 
 #### Discussion
 

@@ -1,9 +1,10 @@
 # weightNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The name of each weight value defined in the [`weights`](blendshapeweightsdata/weights.md) variable.
+The name of each weight value defined in the [`weights`](./weights.md) variable.
 
 **Availability**:
 - iOS 18.0+

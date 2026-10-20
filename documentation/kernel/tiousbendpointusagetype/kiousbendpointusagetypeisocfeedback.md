@@ -1,7 +1,8 @@
 # kIOUSBEndpointUsageTypeIsocFeedback
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The isochronous feedback type.
 
@@ -10,7 +11,7 @@ The isochronous feedback type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointUsageTypeIsocFeedback = (kIOUSBEndpointDescriptorUsageTypeIsocFeedback >> kIOUSBEndpointDescriptorUsageTypePhase)
 ```
 

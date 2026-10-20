@@ -1,7 +1,8 @@
 # init(identifier:title:indexingKey:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent entity property.  Do not call this directly, use @ComputedProperty or @DeferredProperty
 
@@ -17,6 +18,8 @@ Creates an app intent entity property.  Do not call this directly, use @Computed
 ```swift
 convenience init(identifier: String, title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Calendar.RecurrenceRule`.
 
 ## Parameters
 

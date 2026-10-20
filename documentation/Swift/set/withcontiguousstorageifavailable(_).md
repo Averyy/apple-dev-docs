@@ -1,7 +1,8 @@
 # withContiguousStorageIfAvailable(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a closure on the sequence’s contiguous storage.
 
@@ -40,7 +41,8 @@ A `Collection` that provides its own implementation of this method must provide 
 
 ## See Also
 
-- [init(arrayLiteral: Element...)](set/init(arrayliteral:).md)
+### Infrequently Used Functionality
+- [init(arrayLiteral: Element...)](./init%28arrayliteral%29.md)
   Creates a set containing the elements of the given array literal.
 
 

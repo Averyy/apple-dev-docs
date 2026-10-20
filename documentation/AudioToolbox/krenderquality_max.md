@@ -1,15 +1,16 @@
 # kRenderQuality_Max
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var kRenderQuality_Max: Int { get }
 ```
 
+```c
+kRenderQuality_Max
+```
+
 ## See Also
 
-- [var kRenderQuality_High: Int](krenderquality_high.md)
-- [var kRenderQuality_Low: Int](krenderquality_low.md)
-- [var kRenderQuality_Medium: Int](krenderquality_medium.md)
-- [var kRenderQuality_Min: Int](krenderquality_min.md)
+### Constants
+- [var kRenderQuality_High: Int](./krenderquality_high.md)
+- [var kRenderQuality_Low: Int](./krenderquality_low.md)
+- [var kRenderQuality_Medium: Int](./krenderquality_medium.md)
+- [var kRenderQuality_Min: Int](./krenderquality_min.md)
 
 
 ---

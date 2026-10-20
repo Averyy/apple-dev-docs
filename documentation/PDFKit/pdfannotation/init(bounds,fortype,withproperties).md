@@ -1,7 +1,8 @@
 # init(bounds:forType:withProperties:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a PDF annotation with the specified bounds, type, and optional properties.
 
@@ -15,8 +16,28 @@ Creates a PDF annotation with the specified bounds, type, and optional propertie
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+init(bounds: CGRect, forType annotationType: PDFAnnotationSubtype, withProperties properties: [AnyHashable : Any]?)
+```
+
+*macOS*
+
 ```swift
 init(bounds: NSRect, forType annotationType: PDFAnnotationSubtype, withProperties properties: [AnyHashable : Any]?)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (instancetype) initWithBounds:(CGRect) bounds forType:(PDFAnnotationSubtype) annotationType withProperties:(NSDictionary *) properties;
+```
+
+*macOS*
+
+```objc
+- (instancetype) initWithBounds:(NSRect) bounds forType:(PDFAnnotationSubtype) annotationType withProperties:(NSDictionary *) properties;
 ```
 
 ## Parameters
@@ -27,7 +48,8 @@ init(bounds: NSRect, forType annotationType: PDFAnnotationSubtype, withPropertie
 
 ## See Also
 
-- [struct PDFAnnotationSubtype](pdfannotationsubtype.md)
+### Creating an Annotation
+- [struct PDFAnnotationSubtype](../pdfannotationsubtype.md)
   The type of annotation, such as circle, text, or ink.
 
 

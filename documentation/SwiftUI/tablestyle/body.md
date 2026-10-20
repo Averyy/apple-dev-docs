@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the body of a table.
@@ -21,9 +22,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](tablestyle/makebody(configuration:).md)
+### Creating custom table styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a table.
-- [TableStyle.Configuration](tablestyle/configuration.md)
+- [TableStyle.Configuration](./configuration.md)
   The properties of a table.
 
 

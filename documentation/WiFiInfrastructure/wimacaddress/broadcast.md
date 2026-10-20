@@ -1,7 +1,8 @@
 # broadcast
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The broadcast MAC Address, all-ones.
 
@@ -18,7 +19,8 @@ static let broadcast: WIMACAddress
 
 ## See Also
 
-- [static let zero: WIMACAddress](wimacaddress/zero.md)
+### Referencing Common MAC Addresses
+- [static let zero: WIMACAddress](./zero.md)
   The all-zero MAC Address.
 
 

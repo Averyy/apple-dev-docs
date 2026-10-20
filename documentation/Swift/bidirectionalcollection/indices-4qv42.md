@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The indices that are valid for subscripting the collection, in ascending order.
@@ -34,6 +35,12 @@ while i != c.endIndex {
 }
 // c == MyFancyCollection([2, 4, 6, 8, 10])
 ```
+
+## Default Implementations
+
+### BidirectionalCollection Implementations
+- [var indices: Range<Self.Index>](./indices-4jyvu.md)
+  The indices that are valid for subscripting the collection, in ascending order.
 
 
 ---

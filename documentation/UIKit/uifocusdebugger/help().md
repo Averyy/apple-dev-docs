@@ -1,7 +1,8 @@
 # help()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns information about how to use the commands of the debugger object.
 
@@ -16,6 +17,10 @@ Returns information about how to use the commands of the debugger object.
 
 ```swift
 class func help() -> any UIFocusDebuggerOutput
+```
+
+```objc
++ (id<UIFocusDebuggerOutput>) help;
 ```
 
 #### Discussion

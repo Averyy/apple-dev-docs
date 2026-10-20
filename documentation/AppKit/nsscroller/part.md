@@ -1,12 +1,13 @@
 # NSScroller.Part
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify the different parts of the scroller:
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,43 +15,48 @@ These constants specify the different parts of the scroller:
 enum Part
 ```
 
+```c
+enum NSScrollerPart : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSScroller.Part.knob](nsscroller/part/knob.md)
-  Directly to the scroller’s value, as given by [`floatValue`](nscontrol/floatvalue.md).
-- [NSScroller.Part.knobSlot](nsscroller/part/knobslot.md)
-  Directly to the scroller’s value, as given by [`floatValue`](nscontrol/floatvalue.md).
-- [NSScroller.Part.decrementPage](nsscroller/part/decrementpage.md)
+- [NSScroller.Part.knob](./part/knob.md)
+  Directly to the scroller’s value, as given by [`floatValue`](../nscontrol/floatvalue.md).
+- [NSScroller.Part.knobSlot](./part/knobslot.md)
+  Directly to the scroller’s value, as given by [`floatValue`](../nscontrol/floatvalue.md).
+- [NSScroller.Part.decrementPage](./part/decrementpage.md)
   Up or left by a large amount.
-- [NSScroller.Part.incrementPage](nsscroller/part/incrementpage.md)
+- [NSScroller.Part.incrementPage](./part/incrementpage.md)
   Down or right by a large amount.
-- [NSScroller.Part.noPart](nsscroller/part/nopart.md)
+- [NSScroller.Part.noPart](./part/nopart.md)
   Don’t scroll at all.
-- [NSScroller.Part.decrementLine](nsscroller/part/decrementline.md)
+- [NSScroller.Part.decrementLine](./part/decrementline.md)
   Up or left by a small amount.
-- [NSScroller.Part.incrementLine](nsscroller/part/incrementline.md)
+- [NSScroller.Part.incrementLine](./part/incrementline.md)
   Down or right by a small amount.
 ### Initializers
-- [init?(rawValue: UInt)](nsscroller/part/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./part/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSScroller.Style](nsscroller/style.md)
+### Constants
+- [NSScroller.Style](./style.md)
   Constants to specify the scroller style.
-- [NSScroller.KnobStyle](nsscroller/knobstyle-swift.enum.md)
+- [NSScroller.KnobStyle](./knobstyle-swift.enum.md)
   Specify different knob styles.
-- [NSScroller.UsableParts](nsscroller/usableparts-swift.enum.md)
+- [NSScroller.UsableParts](./usableparts-swift.enum.md)
   These constants specify which parts of the scroller are visible.
 
 

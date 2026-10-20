@@ -1,7 +1,8 @@
 # AXMenuItemModifiers
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that indicate the keyboard shortcut modifiers for a menu item (used with the kAXMenuItemCmdModifiersAttribute attribute).
 
@@ -14,25 +15,32 @@ Values that indicate the keyboard shortcut modifiers for a menu item (used with 
 struct AXMenuItemModifiers
 ```
 
+```c
+typedef enum AXMenuItemModifiers : UInt32 {
+    ...
+} AXMenuItemModifiers;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](axmenuitemmodifiers/1460320-init.md)
+- [init(rawValue: UInt32)](./axmenuitemmodifiers/api-1460320-init.md)
 ### Type Properties
-- [static var control: AXMenuItemModifiers](axmenuitemmodifiers/1464333-control.md)
-- [static var noCommand: AXMenuItemModifiers](axmenuitemmodifiers/1464506-nocommand.md)
-- [static var option: AXMenuItemModifiers](axmenuitemmodifiers/1462352-option.md)
-- [static var shift: AXMenuItemModifiers](axmenuitemmodifiers/1461092-shift.md)
+- [static var control: AXMenuItemModifiers](./axmenuitemmodifiers/api-1464333-control.md)
+- [static var noCommand: AXMenuItemModifiers](./axmenuitemmodifiers/api-1464506-nocommand.md)
+- [static var option: AXMenuItemModifiers](./axmenuitemmodifiers/api-1462352-option.md)
+- [static var shift: AXMenuItemModifiers](./axmenuitemmodifiers/api-1461092-shift.md)
 
 ## Relationships
 
 ### Conforms To
-- [OptionSet](../swift/optionset.md)
-- [Sendable](../swift/sendable.md)
+- [OptionSet](../Swift/optionset.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AXMenuItemModifiers](axmenuitemmodifiers.md)
+### Related Documentation
+- [struct AXMenuItemModifiers](./axmenuitemmodifiers.md)
   Values that indicate the keyboard shortcut modifiers for a menu item (used with the kAXMenuItemCmdModifiersAttribute attribute).
 
 

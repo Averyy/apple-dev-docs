@@ -1,7 +1,8 @@
 # parameter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event parameter data that can vary for each event.
 

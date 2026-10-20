@@ -1,7 +1,8 @@
 # supportsEmbeddedSIM
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device has hardware eSIM support.
 
@@ -16,15 +17,20 @@ A Boolean value that indicates whether the device has hardware eSIM support.
 var supportsEmbeddedSIM: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supportsEmbeddedSIM;
+```
+
 ## See Also
 
-- [func supportsCellularPlan() -> Bool](ctcellularplanprovisioning/supportscellularplan.md)
+### Provisioning an eSIM
+- [func supportsCellularPlan() -> Bool](./supportscellularplan%28%29.md)
   Returns whether the device and your app meet eSIM provisioning requirements.
-- [func addPlan(request: CTCellularPlanProvisioningRequest, properties: CTCellularPlanProperties?, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(request:properties:completionhandler:).md)
+- [func addPlan(request: CTCellularPlanProvisioningRequest, properties: CTCellularPlanProperties?, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](./addplan%28request,properties,completionhandler%29.md)
   Starts the provisioning process with optional properties for the specified eSIM.
-- [func addPlan(with: CTCellularPlanProvisioningRequest, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(with:completionhandler:).md)
+- [func addPlan(with: CTCellularPlanProvisioningRequest, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](./addplan%28with,completionhandler%29.md)
   Starts the provisioning process for a specified eSIM.
-- [enum CTCellularPlanProvisioningAddPlanResult](ctcellularplanprovisioningaddplanresult.md)
+- [enum CTCellularPlanProvisioningAddPlanResult](../ctcellularplanprovisioningaddplanresult.md)
   The result from attempting to provision an eSIM.
 
 

@@ -1,7 +1,8 @@
 # removeItems(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the items at the specified indexes from the scrubber.
 
@@ -14,15 +15,20 @@ Removes the items at the specified indexes from the scrubber.
 func removeItems(at indexes: IndexSet)
 ```
 
+```objc
+- (void) removeItemsAtIndexes:(NSIndexSet *) indexes;
+```
+
 ## Parameters
 
-- `indexes`: An index set ([`IndexSet`](https://developer.apple.com/documentation/foundation/indexset)) of the indexes of the items to remove.
+- `indexes`: An index set ([`IndexSet`](../../Foundation/indexset.md)) of the indexes of the items to remove.
 
 ## See Also
 
-- [func insertItems(at: IndexSet)](nsscrubber/insertitems(at:).md)
+### Inserting, moving, and deleting items
+- [func insertItems(at: IndexSet)](./insertitems%28at%29.md)
   Inserts new items at the specified indexes into the scrubber.
-- [func moveItem(at: Int, to: Int)](nsscrubber/moveitem(at:to:).md)
+- [func moveItem(at: Int, to: Int)](./moveitem%28at,to%29.md)
   Moves an item from one index to another in the scrubber.
 
 

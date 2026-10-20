@@ -1,7 +1,8 @@
 # init(x:y:domain:function:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mark that graphs a function y = f(x).
 
@@ -21,6 +22,8 @@ nonisolated
 init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>? = nil, function: @escaping @Sendable (Double) -> Double)
 ```
 
+Available when `Content` is `FunctionLinePlotContent`.
+
 #### Discussion
 
 Parameters:
@@ -34,11 +37,12 @@ Parameters:
 
 ## See Also
 
-- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-6m9gg.md)
+### Plotting functions
+- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](./init%28x,y,domain,function%29-6m9gg.md)
   Creates a mark that graphs a function y = f(x).
-- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-17i43.md)
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](./init%28x,y,domain,function%29-17i43.md)
   Creates a mark that graphs a function y = f(x).
-- [init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>?, function: (Double) -> Double)](lineplot/init(x:y:domain:function:)-6gv5v.md)
+- [init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>?, function: (Double) -> Double)](./init%28x,y,domain,function%29-6gv5v.md)
   Creates a mark that graphs a function y = f(x).
 
 

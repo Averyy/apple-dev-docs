@@ -1,7 +1,8 @@
 # substring
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The slice of the input which was captured, if there was a capture.
 

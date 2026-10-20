@@ -7,11 +7,11 @@ Provides an array containing the properties of a given object.
 
 ## Declaration
 
-```swift
+```
 propertiesOf(object)
 ```
 
-#### Return_value
+#### Return Value
 
 An array with the properties of `object`.
 

@@ -1,7 +1,8 @@
 # NSGridRow.Alignment.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.12+
@@ -12,11 +13,16 @@
 case none
 ```
 
+```c
+NSGridRowAlignmentNone
+```
+
 ## See Also
 
-- [NSGridRow.Alignment.firstBaseline](nsgridrow/alignment/firstbaseline.md)
-- [NSGridRow.Alignment.inherited](nsgridrow/alignment/inherited.md)
-- [NSGridRow.Alignment.lastBaseline](nsgridrow/alignment/lastbaseline.md)
+### Row Alignment Options
+- [NSGridRow.Alignment.firstBaseline](./firstbaseline.md)
+- [NSGridRow.Alignment.inherited](./inherited.md)
+- [NSGridRow.Alignment.lastBaseline](./lastbaseline.md)
 
 
 ---

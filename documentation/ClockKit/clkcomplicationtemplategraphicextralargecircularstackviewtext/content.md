@@ -1,12 +1,15 @@
 # content
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SwiftUI view displayed by the template.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -17,7 +20,8 @@ The SwiftUI view displayed by the template.
 
 ## See Also
 
-- [var textProvider: CLKTextProvider](clkcomplicationtemplategraphicextralargecircularstackviewtext/textprovider.md)
+### Accessing the Content
+- [var textProvider: CLKTextProvider](./textprovider.md)
   The text to display below the view.
 
 

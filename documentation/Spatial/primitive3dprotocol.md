@@ -1,7 +1,8 @@
 # Primitive3DProtocol
 
 **Framework**: Spatial  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods common to Spatial primitives.
 
@@ -23,62 +24,62 @@ protocol Primitive3DProtocol<Scalar> : Rotatable3DProtocol
 ## Topics
 
 ### Instance Properties
-- [var isFinite: Bool](primitive3dprotocol/isfinite.md)
+- [var isFinite: Bool](./primitive3dprotocol/isfinite.md)
   Returns whether the primitive is finite.
-- [var isNaN: Bool](primitive3dprotocol/isnan.md)
+- [var isNaN: Bool](./primitive3dprotocol/isnan.md)
   Returns whether the primitive contains any `NaN` values.
-- [var isZero: Bool](primitive3dprotocol/iszero.md)
+- [var isZero: Bool](./primitive3dprotocol/iszero.md)
   Returns whether the primitive is zero.
 ### Instance Methods
-- [func apply(Self.Pose)](primitive3dprotocol/apply(_:)-1qcu6.md)
+- [func apply(Self.Pose)](./primitive3dprotocol/apply%28_%29-1qcu6.md)
   Applies a pose.
-- [func apply(Self.ProjectiveTransform)](primitive3dprotocol/apply(_:)-3bne6.md)
+- [func apply(Self.ProjectiveTransform)](./primitive3dprotocol/apply%28_%29-3bne6.md)
   Applies a projective transform.
-- [func apply(Self.AffineTransform)](primitive3dprotocol/apply(_:)-6b1fd.md)
+- [func apply(Self.AffineTransform)](./primitive3dprotocol/apply%28_%29-6b1fd.md)
   Applies an affine transform.
-- [func applying(Self.AffineTransform) -> Self](primitive3dprotocol/applying(_:)-1tt2b.md)
+- [func applying(Self.AffineTransform) -> Self](./primitive3dprotocol/applying%28_%29-1tt2b.md)
   Returns the primitive that results from applying an affine transform to the primitive.
-- [func applying(Self.Pose) -> Self](primitive3dprotocol/applying(_:)-4ylq8.md)
+- [func applying(Self.Pose) -> Self](./primitive3dprotocol/applying%28_%29-4ylq8.md)
   Returns the primitive that results from applying a pose to the primitive.
-- [func applying(Self.ProjectiveTransform) -> Self](primitive3dprotocol/applying(_:)-690k5.md)
+- [func applying(Self.ProjectiveTransform) -> Self](./primitive3dprotocol/applying%28_%29-690k5.md)
   Returns the primitive that results from applying a projective transform to the primitive.
-- [func unapply(Self.ProjectiveTransform)](primitive3dprotocol/unapply(_:)-22esh.md)
+- [func unapply(Self.ProjectiveTransform)](./primitive3dprotocol/unapply%28_%29-22esh.md)
   Unapplies a projective transform.
-- [func unapply(Self.AffineTransform)](primitive3dprotocol/unapply(_:)-34afa.md)
+- [func unapply(Self.AffineTransform)](./primitive3dprotocol/unapply%28_%29-34afa.md)
   Unapplies an affine transform.
-- [func unapply(Self.Pose)](primitive3dprotocol/unapply(_:)-5dfj2.md)
+- [func unapply(Self.Pose)](./primitive3dprotocol/unapply%28_%29-5dfj2.md)
   Unapplies a pose.
-- [func unapplying(Self.ProjectiveTransform) -> Self](primitive3dprotocol/unapplying(_:)-1px2q.md)
+- [func unapplying(Self.ProjectiveTransform) -> Self](./primitive3dprotocol/unapplying%28_%29-1px2q.md)
   Returns the primitive that results from unapplying a projective transform to the primitive.
-- [func unapplying(Self.AffineTransform) -> Self](primitive3dprotocol/unapplying(_:)-53rsn.md)
+- [func unapplying(Self.AffineTransform) -> Self](./primitive3dprotocol/unapplying%28_%29-53rsn.md)
   Returns the primitive that results from unapplying an affine transform to the primitive.
-- [func unapplying(Self.Pose) -> Self](primitive3dprotocol/unapplying(_:)-5fmf2.md)
+- [func unapplying(Self.Pose) -> Self](./primitive3dprotocol/unapplying%28_%29-5fmf2.md)
   Returns the primitive that results from unapplying a pose to the primitive.
 ### Type Properties
-- [static var infinity: Self](primitive3dprotocol/infinity.md)
+- [static var infinity: Self](./primitive3dprotocol/infinity.md)
   A primitive with infinite values.
-- [static var zero: Self](primitive3dprotocol/zero.md)
+- [static var zero: Self](./primitive3dprotocol/zero.md)
   A primitive with zero values.
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Rotatable3DProtocol](rotatable3dprotocol.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Rotatable3DProtocol](./rotatable3dprotocol.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
 ### Conforming Types
-- [Point3D](point3d.md)
-- [Point3DFloat](point3dfloat.md)
-- [Ray3D](ray3d.md)
-- [Ray3DFloat](ray3dfloat.md)
-- [Rect3D](rect3d.md)
-- [Rect3DFloat](rect3dfloat.md)
-- [Size3D](size3d.md)
-- [Size3DFloat](size3dfloat.md)
-- [Vector3D](vector3d.md)
-- [Vector3DFloat](vector3dfloat.md)
+- [Point3D](./point3d.md)
+- [Point3DFloat](./point3dfloat.md)
+- [Ray3D](./ray3d.md)
+- [Ray3DFloat](./ray3dfloat.md)
+- [Rect3D](./rect3d.md)
+- [Rect3DFloat](./rect3dfloat.md)
+- [Size3D](./size3d.md)
+- [Size3DFloat](./size3dfloat.md)
+- [Vector3D](./vector3d.md)
+- [Vector3DFloat](./vector3dfloat.md)
 
 
 ---

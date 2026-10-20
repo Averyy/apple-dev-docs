@@ -1,7 +1,8 @@
 # backgroundFilters
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of Core Image filters to apply to the content immediately behind the layer. Animatable.
 
@@ -19,13 +20,17 @@ An array of Core Image filters to apply to the content immediately behind the la
 var backgroundFilters: [Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray * backgroundFilters;
+```
+
 #### Discussion
 
 Background filters affect the content behind the layer that shows through into the layer itself. Typically this content belongs to the superlayer that acts as the parent of the layer. These filters do not affect the content of the layer itself, including the layer’s background color and border.
 
 The default value of this property is `nil`.
 
-Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class) object directly after it is attached to the layer causes undefined behavior. In macOS, it is possible to modify filter parameters after attaching them to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkeypath:)) method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
+Changing the inputs of the [`CIFilter`](../../CoreImage/cifilter-swift.class.md) object directly after it is attached to the layer causes undefined behavior. In macOS, it is possible to modify filter parameters after attaching them to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](../../ObjectiveC/nsobject-swift.class/setvalue%28_,forkeypath%29.md) method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
 
 **Swift**:
 
@@ -51,9 +56,9 @@ layer.backgroundFilters = [NSArray arrayWithObject:filter];
 [layer setValue:[NSNumber numberWithInt:1] forKeyPath:@"backgroundFilters.myFilter.inputRadius"];
 ```
 
-You use the layer’s [`masksToBounds`](calayer/maskstobounds.md) to control the extent of its background filter’s effect.
+You use the layer’s [`masksToBounds`](./maskstobounds.md) to control the extent of its background filter’s effect.
 
-The following code shows how to create two overlapping text layers, `background` and `foreground`. A Gaussian blur filter is added to the foreground layer’s [`backgroundFilters`](calayer/backgroundfilters.md) array and its [`masksToBounds`](calayer/maskstobounds.md) is set to [`true`](https://developer.apple.com/documentation/swift/true):
+The following code shows how to create two overlapping text layers, `background` and `foreground`. A Gaussian blur filter is added to the foreground layer’s [`backgroundFilters`](./backgroundfilters.md) array and its [`masksToBounds`](./maskstobounds.md) is set to [`true`](../../Swift/true.md):
 
 ```swift
 view.layer = CALayer()
@@ -86,11 +91,11 @@ background.addSublayer(foreground)
 
 The following figure shows the result: the background layer is only blurred where it is overlapped by the foreground layer.
 
-![Background filter effect with mask to bounds](/images/com.apple.quartzcore/media-2851423@2x.png)
+![Background filter effect with mask to bounds](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851423@2x.png)
 
-However, if the foreground layer’s [`masksToBounds`](calayer/maskstobounds.md) is set to [`false`](https://developer.apple.com/documentation/swift/false), the entire background layer is blurred as illustrated in the following figure.
+However, if the foreground layer’s [`masksToBounds`](./maskstobounds.md) is set to [`false`](../../Swift/false.md), the entire background layer is blurred as illustrated in the following figure.
 
-![Background filter effect without mask to bounds](/images/com.apple.quartzcore/media-2851424@2x.png)
+![Background filter effect without mask to bounds](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851424@2x.png)
 
 ##### Special Considerations
 
@@ -98,15 +103,16 @@ This property is not supported on layers in iOS.
 
 ## See Also
 
-- [var filters: [Any]?](calayer/filters.md)
+### Layer filters
+- [var filters: [Any]?](./filters.md)
   An array of Core Image filters to apply to the contents of the layer and its sublayers. Animatable.
-- [var compositingFilter: Any?](calayer/compositingfilter.md)
+- [var compositingFilter: Any?](./compositingfilter.md)
   A CoreImage filter used to composite the layer and the content behind it. Animatable.
-- [var minificationFilter: CALayerContentsFilter](calayer/minificationfilter.md)
+- [var minificationFilter: CALayerContentsFilter](./minificationfilter.md)
   The filter used when reducing the size of the content.
-- [var minificationFilterBias: Float](calayer/minificationfilterbias.md)
+- [var minificationFilterBias: Float](./minificationfilterbias.md)
   The bias factor used by the minification filter to determine the levels of detail.
-- [var magnificationFilter: CALayerContentsFilter](calayer/magnificationfilter.md)
+- [var magnificationFilter: CALayerContentsFilter](./magnificationfilter.md)
   The filter used when increasing the size of the content.
 
 

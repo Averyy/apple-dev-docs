@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an `AccessibilityCustomContentKey` with the specified label.
 
@@ -20,13 +21,20 @@ Create an `AccessibilityCustomContentKey` with the specified label.
 init(_ label: LocalizedStringResource)
 ```
 
+**Other overloads**:
+
+```swift
+init(_ labelKey: LocalizedStringKey)
+```
+
 ## Parameters
 
 - `label`: Localized text describing to the user what is contained in this additional information entry. For example: “orientation”. This will also be used as the identifier.
 
 ## See Also
 
-- [init(_:id:)](accessibilitycustomcontentkey/init(_:id:).md)
+### Creating a key
+- [init(_:id:)](./init%28_,id%29.md)
   Create an `AccessibilityCustomContentKey` with the specified label and identifier.
 
 

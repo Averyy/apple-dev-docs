@@ -1,7 +1,8 @@
 # presentSettings(for:scenePersistentIdentifier:)
 
 **Framework**: Accessory Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents notification forwarding settings for an accessory.
 

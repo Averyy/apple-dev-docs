@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kPERawInput](1646497-anonymous/kperawinput.md)
-- [kPEWaitForInput](1646497-anonymous/kpewaitforinput.md)
+- [kPERawInput](./api-1646497-anonymous/kperawinput.md)
+- [kPEWaitForInput](./api-1646497-anonymous/kpewaitforinput.md)
 
 
 ---

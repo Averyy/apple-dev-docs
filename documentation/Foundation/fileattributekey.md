@@ -1,7 +1,8 @@
 # FileAttributeKey
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Keys in dictionaries used to get and set file attributes.
 
@@ -20,89 +21,94 @@ Keys in dictionaries used to get and set file attributes.
 struct FileAttributeKey
 ```
 
+```c
+typedef NSString * NSFileAttributeKey;
+```
+
 #### Discussion
 
-These keys are used with the methods listed in the Getting and Setting Attributes topic of [`FileManager`](filemanager.md).
+These keys are used with the methods listed in the Getting and Setting Attributes topic of [`FileManager`](./filemanager.md).
 
 ## Topics
 
 ### Creating a File Attribute Key
-- [init(String)](fileattributekey/init(_:).md)
+- [init(String)](./fileattributekey/init%28_%29.md)
   Creates a file attribute key from a string.
-- [init(rawValue: String)](fileattributekey/init(rawvalue:).md)
+- [init(rawValue: String)](./fileattributekey/init%28rawvalue%29.md)
   Creates a file attribute key from a raw value string.
 ### Accessing File Attributes
-- [static let appendOnly: FileAttributeKey](fileattributekey/appendonly.md)
+- [static let appendOnly: FileAttributeKey](./fileattributekey/appendonly.md)
   The key in a file attribute dictionary whose value indicates whether the file is read-only.
-- [static let busy: FileAttributeKey](fileattributekey/busy.md)
+- [static let busy: FileAttributeKey](./fileattributekey/busy.md)
   The key in a file attribute dictionary whose value indicates whether the file is busy.
-- [static let creationDate: FileAttributeKey](fileattributekey/creationdate.md)
+- [static let creationDate: FileAttributeKey](./fileattributekey/creationdate.md)
   The key in a file attribute dictionary whose value indicates the file’s creation date.
-- [static let deviceIdentifier: FileAttributeKey](fileattributekey/deviceidentifier.md)
+- [static let deviceIdentifier: FileAttributeKey](./fileattributekey/deviceidentifier.md)
   The key in a file attribute dictionary whose value indicates the identifier for the device on which the file resides.
-- [static let extensionHidden: FileAttributeKey](fileattributekey/extensionhidden.md)
+- [static let extensionHidden: FileAttributeKey](./fileattributekey/extensionhidden.md)
   The key in a file attribute dictionary whose value indicates whether the file’s extension is hidden.
-- [static let groupOwnerAccountID: FileAttributeKey](fileattributekey/groupowneraccountid.md)
+- [static let groupOwnerAccountID: FileAttributeKey](./fileattributekey/groupowneraccountid.md)
   The key in a file attribute dictionary whose value indicates the file’s group ID.
-- [static let groupOwnerAccountName: FileAttributeKey](fileattributekey/groupowneraccountname.md)
+- [static let groupOwnerAccountName: FileAttributeKey](./fileattributekey/groupowneraccountname.md)
   The key in a file attribute dictionary whose value indicates the group name of the file’s owner.
-- [static let hfsCreatorCode: FileAttributeKey](fileattributekey/hfscreatorcode.md)
+- [static let hfsCreatorCode: FileAttributeKey](./fileattributekey/hfscreatorcode.md)
   The key in a file attribute dictionary whose value indicates the file’s HFS creator code.
-- [static let hfsTypeCode: FileAttributeKey](fileattributekey/hfstypecode.md)
+- [static let hfsTypeCode: FileAttributeKey](./fileattributekey/hfstypecode.md)
   The key in a file attribute dictionary whose value indicates the file’s HFS type code.
-- [static let immutable: FileAttributeKey](fileattributekey/immutable.md)
+- [static let immutable: FileAttributeKey](./fileattributekey/immutable.md)
   The key in a file attribute dictionary whose value indicates whether the file is mutable.
-- [static let modificationDate: FileAttributeKey](fileattributekey/modificationdate.md)
+- [static let modificationDate: FileAttributeKey](./fileattributekey/modificationdate.md)
   The key in a file attribute dictionary whose value indicates the file’s last modified date.
-- [static let ownerAccountID: FileAttributeKey](fileattributekey/owneraccountid.md)
+- [static let ownerAccountID: FileAttributeKey](./fileattributekey/owneraccountid.md)
   The key in a file attribute dictionary whose value indicates the file’s owner’s account ID.
-- [static let ownerAccountName: FileAttributeKey](fileattributekey/owneraccountname.md)
+- [static let ownerAccountName: FileAttributeKey](./fileattributekey/owneraccountname.md)
   The key in a file attribute dictionary whose value indicates the name of the file’s owner.
-- [static let posixPermissions: FileAttributeKey](fileattributekey/posixpermissions.md)
+- [static let posixPermissions: FileAttributeKey](./fileattributekey/posixpermissions.md)
   The key in a file attribute dictionary whose value indicates the file’s Posix permissions.
-- [static let protectionKey: FileAttributeKey](fileattributekey/protectionkey.md)
+- [static let protectionKey: FileAttributeKey](./fileattributekey/protectionkey.md)
   The key in a file attribute dictionary whose value identifies the protection level for this file.
-- [static let referenceCount: FileAttributeKey](fileattributekey/referencecount.md)
+- [static let referenceCount: FileAttributeKey](./fileattributekey/referencecount.md)
   The key in a file attribute dictionary whose value indicates the file’s reference count.
-- [static let size: FileAttributeKey](fileattributekey/size.md)
+- [static let size: FileAttributeKey](./fileattributekey/size.md)
   The key in a file attribute dictionary whose value indicates the file’s size in bytes.
-- [static let systemFileNumber: FileAttributeKey](fileattributekey/systemfilenumber.md)
+- [static let systemFileNumber: FileAttributeKey](./fileattributekey/systemfilenumber.md)
   The key in a file attribute dictionary whose value indicates the file’s filesystem file number.
-- [static let systemFreeNodes: FileAttributeKey](fileattributekey/systemfreenodes.md)
+- [static let systemFreeNodes: FileAttributeKey](./fileattributekey/systemfreenodes.md)
   The key in a file system attribute dictionary whose value indicates the number of free nodes in the file system.
-- [static let systemFreeSize: FileAttributeKey](fileattributekey/systemfreesize.md)
+- [static let systemFreeSize: FileAttributeKey](./fileattributekey/systemfreesize.md)
   The key in a file system attribute dictionary whose value indicates the amount of free space on the file system.
-- [static let systemNodes: FileAttributeKey](fileattributekey/systemnodes.md)
+- [static let systemNodes: FileAttributeKey](./fileattributekey/systemnodes.md)
   The key in a file system attribute dictionary whose value indicates the number of nodes in the file system.
-- [static let systemNumber: FileAttributeKey](fileattributekey/systemnumber.md)
+- [static let systemNumber: FileAttributeKey](./fileattributekey/systemnumber.md)
   The key in a file system attribute dictionary whose value indicates the filesystem number of the file system.
-- [static let systemSize: FileAttributeKey](fileattributekey/systemsize.md)
+- [static let systemSize: FileAttributeKey](./fileattributekey/systemsize.md)
   The key in a file system attribute dictionary whose value indicates the size of the file system.
-- [static let type: FileAttributeKey](fileattributekey/type.md)
+- [static let type: FileAttributeKey](./fileattributekey/type.md)
   The key in a file attribute dictionary whose value indicates the file’s type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions.md)
+### Supporting Types
+- [FileManager.DirectoryEnumerationOptions](./filemanager/directoryenumerationoptions.md)
   Options for enumerating the contents of directories.
-- [FileManager.SearchPathDirectory](filemanager/searchpathdirectory.md)
+- [FileManager.SearchPathDirectory](./filemanager/searchpathdirectory.md)
   The location of significant directories.
-- [FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask.md)
+- [FileManager.SearchPathDomainMask](./filemanager/searchpathdomainmask.md)
   Domain constants specifying base locations to use when you search for significant directories.
-- [struct FileAttributeType](fileattributetype.md)
+- [struct FileAttributeType](./fileattributetype.md)
   Values representing a file’s type attribute.
-- [struct FileProtectionType](fileprotectiontype.md)
+- [struct FileProtectionType](./fileprotectiontype.md)
   Protection level values that can be associated with a file attribute key.
-- [struct URLFileProtection](urlfileprotection.md)
+- [struct URLFileProtection](./urlfileprotection.md)
   Protection-level values for a URL resource key.
 
 

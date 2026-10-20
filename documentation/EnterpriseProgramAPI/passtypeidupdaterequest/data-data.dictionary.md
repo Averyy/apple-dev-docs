@@ -1,27 +1,28 @@
 # PassTypeIdUpdateRequest.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object PassTypeIdUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object PassTypeIdUpdateRequest.Data.Attributes](passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object PassTypeIdUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
 ## Properties
 
 - `attributes` (PassTypeIdUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `passTypeIds`
 
 
 ---

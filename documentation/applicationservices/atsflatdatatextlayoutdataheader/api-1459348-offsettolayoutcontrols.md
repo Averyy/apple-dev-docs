@@ -1,7 +1,8 @@
 # offsetToLayoutControls
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var offsetToLayoutControls: UInt32
+```
+
+```c
+UInt32 offsetToLayoutControls;
 ```
 
 

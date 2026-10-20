@@ -1,7 +1,8 @@
 # scalingFactor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current scaling factor.
 
@@ -14,9 +15,14 @@ The current scaling factor.
 var scalingFactor: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat scalingFactor;
+```
+
 ## See Also
 
-- [var isSelectionOnly: Bool](nsprintinfo/isselectiononly.md)
+### Print Settings Convenience Methods
+- [var isSelectionOnly: Bool](./isselectiononly.md)
   A Boolean value that indicates whether only the currently selected contents should be printed.
 
 

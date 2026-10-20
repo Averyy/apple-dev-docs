@@ -1,7 +1,8 @@
 # makeBatch()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a batch object to handle generating multiple sample buffers.
 
@@ -20,6 +21,10 @@ Creates a batch object to handle generating multiple sample buffers.
 func makeBatch() -> AVSampleBufferGeneratorBatch
 ```
 
+```objc
+- (AVSampleBufferGeneratorBatch *) makeBatch;
+```
+
 #### Return Value
 
 An object to batch generate sample buffers.
@@ -30,11 +35,12 @@ Generating sample buffers in batches optimizes performance by allowing the syste
 
 ## See Also
 
-- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> sending CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
+### Creating a sample buffer
+- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> sending CMSampleBuffer](./makesamplebuffer%28for%29.md)
   Creates a sample buffer, and attempts to load its data asynchronously if requested.
-- [func makeSampleBuffer(for: AVSampleBufferRequest, addTo: AVSampleBufferGeneratorBatch) throws -> CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:addto:).md)
+- [func makeSampleBuffer(for: AVSampleBufferRequest, addTo: AVSampleBufferGeneratorBatch) throws -> CMSampleBuffer](./makesamplebuffer%28for,addto%29.md)
   Creates a sample buffer and attempts to defer I/O for its data.
-- [func createSampleBuffer(for: AVSampleBufferRequest) -> CMSampleBuffer?](avsamplebuffergenerator/createsamplebuffer(for:).md)
+- [func createSampleBuffer(for: AVSampleBufferRequest) -> CMSampleBuffer?](./createsamplebuffer%28for%29.md)
   Creates a new sample buffer reference for the specified buffer request.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the GPU supports an amplification factor.
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the GPU supports an amplification
 func supportsVertexAmplificationCount(_ count: Int) -> Bool
 ```
 
+```objc
+- (BOOL) supportsVertexAmplificationCount:(NSUInteger) count;
+```
+
 ## Mentions
 
-- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](../improving-rendering-performance-with-vertex-amplification.md)
 
 #### Discussion
 
@@ -30,7 +35,7 @@ A vertex amplification factor of `1` has no effect because it effectively disabl
 
 > ❗ **Important**:  Passing a vertex amplification factor of `1` or less to this method triggers an API validation error.
 
-For more information about vertex amplification, see [`Improving rendering performance with vertex amplification`](improving-rendering-performance-with-vertex-amplification.md).
+For more information about vertex amplification, see [Improving rendering performance with vertex amplification](../improving-rendering-performance-with-vertex-amplification.md).
 
 ## Parameters
 
@@ -38,23 +43,24 @@ For more information about vertex amplification, see [`Improving rendering perfo
 
 ## See Also
 
-- [var supportsRaytracing: Bool](mtldevice/supportsraytracing.md)
+### Checking render support
+- [var supportsRaytracing: Bool](./supportsraytracing.md)
   A Boolean value that indicates whether the GPU device supports ray tracing.
-- [var supportsPrimitiveMotionBlur: Bool](mtldevice/supportsprimitivemotionblur.md)
+- [var supportsPrimitiveMotionBlur: Bool](./supportsprimitivemotionblur.md)
   A Boolean value that indicates whether the GPU device supports motion blur for ray tracing.
-- [var supportsRaytracingFromRender: Bool](mtldevice/supportsraytracingfromrender.md)
+- [var supportsRaytracingFromRender: Bool](./supportsraytracingfromrender.md)
   A Boolean value that indicates whether you can call ray-tracing functions from a vertex or fragment shader.
-- [var supports32BitMSAA: Bool](mtldevice/supports32bitmsaa.md)
+- [var supports32BitMSAA: Bool](./supports32bitmsaa.md)
   A Boolean value that indicates whether the GPU can allocate 32-bit integer texture formats and resolve to 32-bit floating-point texture formats.
-- [var supportsPullModelInterpolation: Bool](mtldevice/supportspullmodelinterpolation.md)
+- [var supportsPullModelInterpolation: Bool](./supportspullmodelinterpolation.md)
   A Boolean value that indicates whether the GPU can compute multiple interpolations of a fragment function’s input.
-- [var supportsShaderBarycentricCoordinates: Bool](mtldevice/supportsshaderbarycentriccoordinates.md)
+- [var supportsShaderBarycentricCoordinates: Bool](./supportsshaderbarycentriccoordinates.md)
   A Boolean value that indicates whether the GPU supports barycentric coordinates.
-- [var areProgrammableSamplePositionsSupported: Bool](mtldevice/areprogrammablesamplepositionssupported.md)
+- [var areProgrammableSamplePositionsSupported: Bool](./areprogrammablesamplepositionssupported.md)
   A Boolean value that indicates whether the GPU supports programmable sample positions.
-- [var areRasterOrderGroupsSupported: Bool](mtldevice/arerasterordergroupssupported.md)
+- [var areRasterOrderGroupsSupported: Bool](./arerasterordergroupssupported.md)
   A Boolean value that indicates whether the GPU supports raster order groups.
-- [var areBarycentricCoordsSupported: Bool](mtldevice/arebarycentriccoordssupported.md)
+- [var areBarycentricCoordsSupported: Bool](./arebarycentriccoordssupported.md)
   A Boolean value that indicates whether the GPU supports barycentric coordinates.
 
 

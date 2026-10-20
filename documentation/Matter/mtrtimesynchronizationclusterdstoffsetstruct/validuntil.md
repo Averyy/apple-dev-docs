@@ -1,7 +1,8 @@
 # validUntil
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.5+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var validUntil: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * validUntil;
 ```
 
 

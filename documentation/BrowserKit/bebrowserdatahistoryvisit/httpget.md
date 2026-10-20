@@ -1,7 +1,8 @@
 # httpGet
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the visit is an HTTP GET request.
 
@@ -15,17 +16,22 @@ A Boolean value that indicates whether the visit is an HTTP GET request.
 var httpGet: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL httpGet;
+```
+
 ## See Also
 
-- [var dateOfLastVisit: Date](bebrowserdatahistoryvisit/dateoflastvisit.md)
+### Accessing visit properties
+- [var dateOfLastVisit: Date](./dateoflastvisit.md)
   The date of the person’s last page visit.
-- [var loadedSuccessfully: Bool](bebrowserdatahistoryvisit/loadedsuccessfully.md)
+- [var loadedSuccessfully: Bool](./loadedsuccessfully.md)
   A Boolean value that indicates whether the page loads without errors.
-- [var title: String?](bebrowserdatahistoryvisit/title.md)
+- [var title: String?](./title.md)
   A localized title for a visited page.
-- [var url: URL](bebrowserdatahistoryvisit/url.md)
+- [var url: URL](./url.md)
   A URL for the visited page.
-- [var visitCount: Int](bebrowserdatahistoryvisit/visitcount.md)
+- [var visitCount: Int](./visitcount.md)
   A count of how many visits the page received.
 
 

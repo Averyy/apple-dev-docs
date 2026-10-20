@@ -1,22 +1,27 @@
 # MPSGetCustomKernelBroadcastSourceIndex(_:_:_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the index of the specified nonbatched source texture argument.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func MPSGetCustomKernelBroadcastSourceIndex(_ c: MPSCustomKernelArgumentCount, _ sourceIndex: UInt, _ MPSMaxTextures: UInt) -> UInt
+```
+
+```c
+static unsigned long MPSGetCustomKernelBroadcastSourceIndex(MPSCustomKernelArgumentCount c, unsigned long sourceIndex, unsigned long MPSMaxTextures);
 ```
 
 

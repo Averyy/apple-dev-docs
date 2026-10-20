@@ -1,7 +1,8 @@
 # IIO_HAS_IOSURFACE
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 4.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var IIO_HAS_IOSURFACE: Int32 { get }
+```
+
+```c
+#define IIO_HAS_IOSURFACE
 ```
 
 

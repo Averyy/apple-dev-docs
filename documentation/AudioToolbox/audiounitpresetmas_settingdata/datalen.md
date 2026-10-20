@@ -1,15 +1,20 @@
 # dataLen
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var dataLen: UInt32
+```
+
+```c
+UInt32 dataLen;
 ```
 
 

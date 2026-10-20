@@ -1,7 +1,8 @@
 # rigDefinition
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The solver’s rig definition.
 

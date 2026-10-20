@@ -1,7 +1,8 @@
 # canRedo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the manager has any actions to redo.
 
@@ -20,17 +21,23 @@ A Boolean value that indicates whether the manager has any actions to redo.
 var canRedo: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canRedo;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the manager has any actions to redo, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the manager has any actions to redo, otherwise [`false`](../../Swift/false.md).
 
-Because any undo operation registered clears the redo stack, this method posts an [`NSUndoManagerCheckpoint`](nsnotification/name-swift.struct/nsundomanagercheckpoint.md) to allow clients to apply their pending operations before testing the redo stack.
+Because any undo operation registered clears the redo stack, this method posts an [`NSUndoManagerCheckpoint`](../nsnotification/name-swift.struct/nsundomanagercheckpoint.md) to allow clients to apply their pending operations before testing the redo stack.
 
 ## See Also
 
-- [func redo()](undomanager/redo.md)
+### Related Documentation
+- [func redo()](./redo%28%29.md)
   Performs the operations in the last group on the redo stack, if there are any, recording them on the undo stack as a single group.
-- [var canUndo: Bool](undomanager/canundo.md)
+### Checking undo ability
+- [var canUndo: Bool](./canundo.md)
   A Boolean value that indicates whether the manager has any actions to undo.
 
 

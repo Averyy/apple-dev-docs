@@ -1,14 +1,15 @@
 # attr_dataoffset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int32_t attr_dataoffset;
 ```
 

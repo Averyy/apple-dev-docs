@@ -1,7 +1,8 @@
 # CSSMERR_APPLEDL_FILE_TOO_BIG
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLEDL_FILE_TOO_BIG: Int { get }
+```
+
+```c
+CSSMERR_APPLEDL_FILE_TOO_BIG
 ```
 
 

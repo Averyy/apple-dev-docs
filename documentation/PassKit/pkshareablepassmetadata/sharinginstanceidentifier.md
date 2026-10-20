@@ -1,7 +1,8 @@
 # sharingInstanceIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A developer-defined unique value that you use to validate a shared pass.
 
@@ -9,13 +10,17 @@ A developer-defined unique value that you use to validate a shared pass.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var sharingInstanceIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSString * sharingInstanceIdentifier;
 ```
 
 

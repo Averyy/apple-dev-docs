@@ -1,7 +1,8 @@
 # targetLanguage
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output language to translate into.
 
@@ -19,13 +20,14 @@ final let targetLanguage: Locale.Language?
 
 #### Discussion
 
-If this value is set to `nil`, the session chooses an optimal language to translate into based on the `sourceLanguage` and the person’s [`preferredLanguages`](https://developer.apple.com/documentation/foundation/locale/preferredlanguages).
+If this value is set to `nil`, the session chooses an optimal language to translate into based on the `sourceLanguage` and the person’s [`preferredLanguages`](../../Foundation/locale/preferredlanguages.md).
 
-> **Note**: This value doesn’t update after translation. To see what target language the session uses for a particular translation, check the response [`targetLanguage`](translationsession/response/targetlanguage.md).
+> **Note**: This value doesn’t update after translation. To see what target language the session uses for a particular translation, check the response [`targetLanguage`](./response/targetlanguage.md).
 
 ## See Also
 
-- [let sourceLanguage: Locale.Language?](translationsession/sourcelanguage.md)
+### Getting the language configuration
+- [let sourceLanguage: Locale.Language?](./sourcelanguage.md)
   The input language to translate from.
 
 

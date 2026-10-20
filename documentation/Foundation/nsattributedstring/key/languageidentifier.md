@@ -1,7 +1,8 @@
 # languageIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The language identifier associated with the range of text.
 
@@ -20,25 +21,30 @@ The language identifier associated with the range of text.
 static let languageIdentifier: NSAttributedString.Key
 ```
 
+```c
+extern NSAttributedStringKey const NSLanguageIdentifierAttributeName;
+```
+
 #### Discussion
 
-The value of this property is an [`NSString`](nsstring.md) with the language identifier code in ISO 639 format.
+The value of this property is an [`NSString`](../../nsstring.md) with the language identifier code in ISO 639 format.
 
 ## See Also
 
-- [static let morphology: NSAttributedString.Key](nsattributedstring/key/morphology.md)
+### Getting translation-related attribute keys
+- [static let morphology: NSAttributedString.Key](./morphology.md)
   An attribute that contains grammatical properties to apply to the text.
-- [static let inflectionRule: NSAttributedString.Key](nsattributedstring/key/inflectionrule.md)
+- [static let inflectionRule: NSAttributedString.Key](./inflectionrule.md)
   An attribute that tells the system how to apply grammar rules and other modifiers to the range of text.
-- [static let inflectionAlternative: NSAttributedString.Key](nsattributedstring/key/inflectionalternative.md)
+- [static let inflectionAlternative: NSAttributedString.Key](./inflectionalternative.md)
   The alternative translation for a string when no suitable inflection exists.
-- [static let agreeWithArgument: NSAttributedString.Key](nsattributedstring/key/agreewithargument.md)
+- [static let agreeWithArgument: NSAttributedString.Key](./agreewithargument.md)
   An attribute key whose value indicates inflection agreement with a specific argument.
-- [static let agreeWithConcept: NSAttributedString.Key](nsattributedstring/key/agreewithconcept.md)
+- [static let agreeWithConcept: NSAttributedString.Key](./agreewithconcept.md)
   An attribute key whose value indicates inflection agreement with a specific concept.
-- [static let referentConcept: NSAttributedString.Key](nsattributedstring/key/referentconcept.md)
+- [static let referentConcept: NSAttributedString.Key](./referentconcept.md)
   An attribute key whose value indicates the referent concept for inflection.
-- [static let localizedNumberFormat: NSAttributedString.Key](nsattributedstring/key/localizednumberformat.md)
+- [static let localizedNumberFormat: NSAttributedString.Key](./localizednumberformat.md)
   An attribute key whose value specifies a localized number format.
 
 

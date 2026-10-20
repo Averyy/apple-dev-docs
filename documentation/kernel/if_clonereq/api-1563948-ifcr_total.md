@@ -1,14 +1,15 @@
 # ifcr_total
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 int ifcr_total;
 ```
 

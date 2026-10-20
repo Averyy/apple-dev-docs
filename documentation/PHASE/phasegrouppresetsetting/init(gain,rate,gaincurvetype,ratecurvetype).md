@@ -1,7 +1,8 @@
 # init(gain:rate:gainCurveType:rateCurveType:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group preset setting.
 
@@ -19,10 +20,14 @@ Creates a group preset setting.
 init(gain: Double, rate: Double, gainCurveType: PHASECurveType, rateCurveType: PHASECurveType)
 ```
 
+```objc
+- (instancetype) initWithGain:(double) gain rate:(double) rate gainCurveType:(PHASECurveType) gainCurveType rateCurveType:(PHASECurveType) rateCurveType;
+```
+
 ## Parameters
 
-- `gain`: The volume of audio playback. See [`gain`](phasegrouppresetsetting/gain.md).
-- `rate`: The playback speed for audio. See [`rate`](phasegrouppresetsetting/rate.md).
+- `gain`: The volume of audio playback. See [`gain`](./gain.md).
+- `rate`: The playback speed for audio. See [`rate`](./rate.md).
 - `gainCurveType`: A rate of change for the setting’s volume.
 - `rateCurveType`: A rate of change for the setting’s playback speed.
 

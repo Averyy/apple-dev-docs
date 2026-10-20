@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The color of the sun.
@@ -11,7 +12,7 @@ The color of the sun.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,19 +21,24 @@ The color of the sun.
 var color: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color;
+```
+
 ## See Also
 
-- [var center: CGPoint](cisunbeamsgenerator/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the sunbeam pattern.
-- [var maxStriationRadius: Float](cisunbeamsgenerator/maxstriationradius.md)
+- [var maxStriationRadius: Float](./maxstriationradius.md)
   The radius of the sunbeams.
-- [var striationContrast: Float](cisunbeamsgenerator/striationcontrast.md)
+- [var striationContrast: Float](./striationcontrast.md)
   The contrast of the sunbeams.
-- [var striationStrength: Float](cisunbeamsgenerator/striationstrength.md)
+- [var striationStrength: Float](./striationstrength.md)
   The intensity of the sunbeams.
-- [var sunRadius: Float](cisunbeamsgenerator/sunradius.md)
+- [var sunRadius: Float](./sunradius.md)
   The radius of the sun.
-- [var time: Float](cisunbeamsgenerator/time.md)
+- [var time: Float](./time.md)
   The duration of the effect.
 
 

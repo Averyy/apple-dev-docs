@@ -1,7 +1,8 @@
 # gradientFilter(withSources:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func gradientFilter(withSources gradientImages: [MPSNNImageNode]) -> MPSNNGradientFilterNode
+```
+
+```objc
+- (MPSNNGradientFilterNode *) gradientFilterWithSources:(NSArray<MPSNNImageNode *> *) gradientImages;
 ```
 
 

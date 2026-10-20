@@ -1,7 +1,8 @@
 # item(at:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the item at the relative offset from the current item.
 
@@ -16,6 +17,10 @@ Returns the item at the relative offset from the current item.
 
 ```swift
 func item(at index: Int) -> WKBackForwardListItem?
+```
+
+```objc
+- (WKBackForwardListItem *) itemAtIndex:(NSInteger) index;
 ```
 
 #### Return Value

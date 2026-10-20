@@ -1,7 +1,8 @@
 # ModelSampleProtocol
 
 **Framework**: Evaluations  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines language model evaluation samples with prompt, instructions, and expectations.
 
@@ -22,7 +23,7 @@ protocol ModelSampleProtocol : SampleProtocol where Self.ExpectedValue : Decodab
 
 #### Overview
 
-Extends [`SampleProtocol`](sampleprotocol.md) with prompt, instructions, and evaluation expectations. Use [`ModelSample`](modelsample.md) for the common case; create custom conformances when you need additional properties.
+Extends [`SampleProtocol`](./sampleprotocol.md) with prompt, instructions, and evaluation expectations. Use [`ModelSample`](./modelsample.md) for the common case; create custom conformances when you need additional properties.
 
 ```swift
 let sample = ModelSample(
@@ -37,28 +38,29 @@ let sample = ModelSample(
 ## Topics
 
 ### Associated Types
-- [associatedtype Expectation : Decodable, Encodable, Sendable](modelsampleprotocol/expectation.md)
+- [associatedtype Expectation : Decodable, Encodable, Sendable](./modelsampleprotocol/expectation.md)
   The type of evaluation expectations.
 ### Instance Properties
-- [var input: ModelSampleInput](modelsampleprotocol/input.md)
+- [var input: ModelSampleInput](./modelsampleprotocol/input.md)
   The bundled language model input, including prompt, instructions, and schema.
-- [var output: ModelSampleOutput<Self.ExpectedValue, Self.Expectation>](modelsampleprotocol/output.md)
+- [var output: ModelSampleOutput<Self.ExpectedValue, Self.Expectation>](./modelsampleprotocol/output.md)
   The expected output value and evaluation expectations.
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [SampleProtocol](sampleprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [SampleProtocol](./sampleprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [ModelSample](modelsample.md)
+- [ModelSample](./modelsample.md)
 
 ## See Also
 
-- [protocol SampleProtocol](sampleprotocol.md)
+### Protocols
+- [protocol SampleProtocol](./sampleprotocol.md)
   A type that defines evaluation samples.
 
 

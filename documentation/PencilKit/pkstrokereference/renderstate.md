@@ -1,7 +1,8 @@
 # renderState
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The render details of the stroke, such as particle positioning. Uses default rendering when nil.
 
@@ -16,6 +17,10 @@ The render details of the stroke, such as particle positioning. Uses default ren
 
 ```swift
 var renderState: PKStrokeRenderStateReference? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) PKStrokeRenderState * renderState;
 ```
 
 #### Discussion

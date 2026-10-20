@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determine CWChannel object equality.
 
@@ -12,6 +13,10 @@ Determine CWChannel object equality.
 
 ```swift
 func isEqual(to channel: CWChannel) -> Bool
+```
+
+```objc
+- (BOOL) isEqualToChannel:(CWChannel *) channel;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove all the models.
 
@@ -11,7 +12,7 @@ Remove all the models.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ mutating func removeAll()
 
 ## See Also
 
-- [func insert(MeshResource.Model) -> Bool](meshmodelcollection/insert(_:).md)
+### Using the collection
+- [func insert(MeshResource.Model) -> Bool](./insert%28_%29.md)
   Add a new model to the container. Returns true if added. Returns false if it already exists.
-- [func remove(id: String) -> MeshResource.Model?](meshmodelcollection/remove(id:).md)
+- [func remove(id: String) -> MeshResource.Model?](./remove%28id%29.md)
   Remove a model by id.
-- [func update(MeshResource.Model) -> MeshResource.Model?](meshmodelcollection/update(_:).md)
+- [func update(MeshResource.Model) -> MeshResource.Model?](./update%28_%29.md)
   Update an existing model. The old model is returned.
-- [subscript(String) -> MeshResource.Model?](meshmodelcollection/subscript(_:).md)
+- [subscript(String) -> MeshResource.Model?](./subscript%28_%29.md)
   Read a model given its id.
 
 

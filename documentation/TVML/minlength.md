@@ -1,6 +1,7 @@
 # minLength
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Reserves space for an element.
 
@@ -12,19 +13,20 @@ The amount of space reserved is equal to the amount of space taken up by an indi
 <ordinal minLength="3" >
 ```
 
-##### Values for Minlength
+##### Values for minLength
 
 - **Integer**: The amount of space reserved.
 
-##### Values That Use Minlength
+##### Values that Use minLength
 
-- [`ordinal`](ordinal.md)
+- [ordinal](./ordinal.md)
 
 ## See Also
 
-- [centered](centered.md)
+### Element Alignment
+- [centered](./centered.md)
   Centers media items in a shelf.
-- [rowCount](rowcount.md)
+- [rowCount](./rowcount.md)
   Specifies the number of rows in a shelf.
 
 

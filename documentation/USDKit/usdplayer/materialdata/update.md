@@ -1,7 +1,8 @@
 # USDPlayer.MaterialData.Update
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Delta update carrying only the material fields that changed since the last frame.
 
@@ -22,16 +23,16 @@ struct Update
 ## Topics
 
 ### Instance Properties
-- [let assignedTextures: [String : USDPlayer.TextureID]?](usdplayer/materialdata/update/assignedtextures.md)
+- [let assignedTextures: [String : USDPlayer.TextureID]?](./update/assignedtextures.md)
   Updated texture bindings.
-- [let id: USDPlayer.MaterialID](usdplayer/materialdata/update/id.md)
+- [let id: USDPlayer.MaterialID](./update/id.md)
   Unique identifier for the material being updated.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

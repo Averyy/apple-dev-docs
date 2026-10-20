@@ -18,32 +18,33 @@ The `footer` element displays additional information that describes its containi
 </formTemplate>
 ```
 
-##### Subelements of Footer
+##### Subelements of footer
 
-- [`button`](button.md)
-- [`text`](text.md)
+- [button](./button.md)
+- [text](./text.md)
 
-##### Elements That Use Footer
+##### Elements that Use footer
 
-- [`formTemplate`](formtemplate.md)
-- [`infoTable`](infotable.md)
+- [formTemplate](./formtemplate.md)
+- [infoTable](./infotable.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [header](header.md)
+### Header and Footer Elements
+- [header](./header.md)
   Contains information displayed at the bottom of an element.
 
 

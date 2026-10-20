@@ -1,7 +1,8 @@
 # attributionIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var attributionIdentifier: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * attributionIdentifier;
 ```
 
 

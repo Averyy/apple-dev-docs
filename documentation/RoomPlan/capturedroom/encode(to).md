@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Serializes a captured room to the specified encoder.
 
@@ -22,7 +23,8 @@ func encode(to encoder: any Encoder) throws
 
 ## See Also
 
-- [CapturedRoom.AttributesCodableRepresentation](capturedroom/attributescodablerepresentation.md)
+### Serializing a captured room
+- [CapturedRoom.AttributesCodableRepresentation](./attributescodablerepresentation.md)
   A serializable set of details that describe an object in the room.
 
 

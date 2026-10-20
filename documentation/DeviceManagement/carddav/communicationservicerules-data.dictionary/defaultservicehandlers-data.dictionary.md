@@ -1,7 +1,8 @@
 # CardDAV.CommunicationServiceRules.DefaultServiceHandlers
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary defining the default service handlers for this account.
 
@@ -13,7 +14,7 @@ A dictionary defining the default service handlers for this account.
 
 ## Declaration
 
-```swift
+```
 object CardDAV.CommunicationServiceRules.DefaultServiceHandlers
 ```
 

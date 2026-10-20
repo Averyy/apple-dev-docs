@@ -1,7 +1,8 @@
 # CNContactPropertyAttribute
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The contact’s name component property key.
 
@@ -19,11 +20,16 @@ The contact’s name component property key.
 let CNContactPropertyAttribute: String
 ```
 
+```c
+extern NSString * const CNContactPropertyAttribute;
+```
+
 ## See Also
 
-- [let CNContactIdentifierKey: String](cncontactidentifierkey.md)
+### Contact Identification
+- [let CNContactIdentifierKey: String](./cncontactidentifierkey.md)
   The contact’s unique identifier.
-- [let CNContactTypeKey: String](cncontacttypekey.md)
+- [let CNContactTypeKey: String](./cncontacttypekey.md)
   The type of contact.
 
 

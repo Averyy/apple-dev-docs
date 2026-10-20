@@ -1,7 +1,8 @@
 # MPSGraphRandomNormalSamplingMethod.invCDF
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use inverse erf to convert uniform values to values in the normal distribution
 
@@ -17,6 +18,10 @@ Use inverse erf to convert uniform values to values in the normal distribution
 
 ```swift
 case invCDF
+```
+
+```c
+MPSGraphRandomNormalSamplingInvCDF
 ```
 
 

@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The flags associated with each polygon in the generated Navigation Mesh.
 
@@ -21,19 +22,20 @@ var flags: [[NavigationMeshResource.Flag]] { get }
 
 ## See Also
 
-- [var vertices: [SIMD3<Float>]](navigationmeshresource/vertices.md)
+### Accessing mesh data
+- [var vertices: [SIMD3<Float>]](./vertices.md)
   The vertices of the generated Navigation Mesh.
-- [var polygonIndices: [[Int]]](navigationmeshresource/polygonindices.md)
+- [var polygonIndices: [[Int]]](./polygonindices.md)
   The polygon indices of the generated Navigation Mesh. Polygons may have different numbers of vertices, so each entry in the list is a list of indices into the vertices array for that polygon.
-- [var areas: [NavigationMeshResource.Area]](navigationmeshresource/areas.md)
+- [var areas: [NavigationMeshResource.Area]](./areas.md)
   The areas associated with each polygon in the generated Navigation Mesh.
-- [var offMeshConnections: [NavigationMeshResource.OffMeshConnection]](navigationmeshresource/offmeshconnections.md)
+- [var offMeshConnections: [NavigationMeshResource.OffMeshConnection]](./offmeshconnections.md)
   The off-mesh connections of the generated Navigation Mesh.
-- [var heightData: NavigationMeshResource.HeightData](navigationmeshresource/heightdata-swift.property.md)
+- [var heightData: NavigationMeshResource.HeightData](./heightdata-swift.property.md)
   The detailed height data of the generated Navigation Mesh.
-- [var layer: NavigationMeshResource.Layer?](navigationmeshresource/layer-swift.property.md)
+- [var layer: NavigationMeshResource.Layer?](./layer-swift.property.md)
   The identification of this NavigationMeshResource, used when entities are searching for a specific NavigationMeshResource in a scene.
-- [var configuration: NavigationMeshResource.Configuration](navigationmeshresource/configuration-swift.property.md)
+- [var configuration: NavigationMeshResource.Configuration](./configuration-swift.property.md)
   The configuration this Navigation Mesh was created with.
 
 

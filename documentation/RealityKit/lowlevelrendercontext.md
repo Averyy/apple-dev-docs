@@ -1,7 +1,8 @@
 # LowLevelRenderContext
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An entry point for creating rendering resources and compiling materials.
 
@@ -19,94 +20,95 @@ protocol LowLevelRenderContext : AnyObject
 
 #### Overview
 
-Use a `LowLevelRenderContext` to construct meshes, textures, buffers, argument tables, materials, and pipeline states. These objects are assembled into a [`LowLevelMeshInstanceArray`](lowlevelmeshinstancearray.md) consumed each frame by [`LowLevelRenderer`](lowlevelrenderer.md).
+Use a `LowLevelRenderContext` to construct meshes, textures, buffers, argument tables, materials, and pipeline states. These objects are assembled into a [`LowLevelMeshInstanceArray`](./lowlevelmeshinstancearray.md) consumed each frame by [`LowLevelRenderer`](./lowlevelrenderer.md).
 
 ## Topics
 
 ### Accessing the render context
-- [var device: any MTLDevice](lowlevelrendercontext/device.md)
+- [var device: any MTLDevice](./lowlevelrendercontext/device.md)
   The Metal device that backs this render context.
-- [var shaderGraph: any LowLevelRenderContextShaderGraph](lowlevelrendercontext/shadergraph.md)
+- [var shaderGraph: any LowLevelRenderContextShaderGraph](./lowlevelrendercontext/shadergraph.md)
   The ShaderGraph function creation interface for this render context.
 ### Creating resources
-- [func makeBufferResource(descriptor: LowLevelBufferResource.Descriptor) throws -> LowLevelBufferResource](lowlevelrendercontext/makebufferresource(descriptor:).md)
+- [func makeBufferResource(descriptor: LowLevelBufferResource.Descriptor) throws -> LowLevelBufferResource](./lowlevelrendercontext/makebufferresource%28descriptor%29.md)
   Creates a GPU-managed buffer resource from the given descriptor.
-- [func makeTextureResource(descriptor: LowLevelTextureResource.Descriptor) throws -> LowLevelTextureResource](lowlevelrendercontext/maketextureresource(descriptor:).md)
+- [func makeTextureResource(descriptor: LowLevelTextureResource.Descriptor) throws -> LowLevelTextureResource](./lowlevelrendercontext/maketextureresource%28descriptor%29.md)
   Creates a texture resource from the given descriptor.
-- [func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) throws -> sending LowLevelMaterialResource](lowlevelrendercontext/makematerialresource(descriptor:)-8hizx.md)
-  Synchronous variant of [`makeMaterialResource(descriptor:)`](lowlevelrendercontext/makematerialresource(descriptor:)-8hizx.md). Blocks the current thread until compilation completes.
-- [func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource](lowlevelrendercontext/makematerialresource(descriptor:)-9nufj.md)
+- [func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) throws -> sending LowLevelMaterialResource](./lowlevelrendercontext/makematerialresource%28descriptor%29-8hizx.md)
+  Synchronous variant of [`makeMaterialResource(descriptor:)`](./lowlevelrendercontext/makematerialresource%28descriptor%29-8hizx.md). Blocks the current thread until compilation completes.
+- [func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource](./lowlevelrendercontext/makematerialresource%28descriptor%29-9nufj.md)
   Asynchronously compiles a material resource from a geometry modifier, surface shader, and lighting function.
 ### Creating meshes
-- [func makeMeshResource(descriptor: LowLevelMeshResource.Descriptor) throws -> LowLevelMeshResource](lowlevelrendercontext/makemeshresource(descriptor:).md)
+- [func makeMeshResource(descriptor: LowLevelMeshResource.Descriptor) throws -> LowLevelMeshResource](./lowlevelrendercontext/makemeshresource%28descriptor%29.md)
   Creates a mesh resource from the given descriptor.
-- [func makeMeshPart(resource: LowLevelMeshResource, indexOffset: Int, indexCount: Int, primitive: MTLPrimitiveType, windingOrder: MTLWinding, bounds: BoundingSphereBox) throws -> LowLevelMeshPart](lowlevelrendercontext/makemeshpart(resource:indexoffset:indexcount:primitive:windingorder:bounds:).md)
+- [func makeMeshPart(resource: LowLevelMeshResource, indexOffset: Int, indexCount: Int, primitive: MTLPrimitiveType, windingOrder: MTLWinding, bounds: BoundingSphereBox) throws -> LowLevelMeshPart](./lowlevelrendercontext/makemeshpart%28resource,indexoffset,indexcount,primitive,windingorder,bounds%29.md)
   Creates a mesh part that selects a contiguous range of indices from a mesh resource.
-- [func makeMeshInstance(meshPart: LowLevelMeshPart, pipeline: LowLevelRenderPipelineState, geometryArguments: LowLevelArgumentTable?, surfaceArguments: LowLevelArgumentTable?, lightingArguments: LowLevelArgumentTable?, transform: simd_float4x4, sortCategory: LowLevelMeshInstance.SortCategory) throws -> LowLevelMeshInstance](lowlevelrendercontext/makemeshinstance(meshpart:pipeline:geometryarguments:surfacearguments:lightingarguments:transform:sortcategory:).md)
+- [func makeMeshInstance(meshPart: LowLevelMeshPart, pipeline: LowLevelRenderPipelineState, geometryArguments: LowLevelArgumentTable?, surfaceArguments: LowLevelArgumentTable?, lightingArguments: LowLevelArgumentTable?, transform: simd_float4x4, sortCategory: LowLevelMeshInstance.SortCategory) throws -> LowLevelMeshInstance](./lowlevelrendercontext/makemeshinstance%28meshpart,pipeline,geometryarguments,surfacearguments,lightingarguments,transform,sortcategory%29.md)
   Creates a drawable mesh instance pairing a mesh part with a compiled pipeline state and optional per-draw argument tables.
-- [func makeMeshInstanceArray(renderTargets: LowLevelRenderTarget.DescriptorSet, count: Int) throws -> LowLevelMeshInstanceArray](lowlevelrendercontext/makemeshinstancearray(rendertargets:count:).md)
+- [func makeMeshInstanceArray(renderTargets: LowLevelRenderTarget.DescriptorSet, count: Int) throws -> LowLevelMeshInstanceArray](./lowlevelrendercontext/makemeshinstancearray%28rendertargets,count%29.md)
   Creates a fixed-capacity ordered collection of mesh instances for the given render targets.
-- [func makeInstanceTransformResource(instanceCapacity: Int) throws -> LowLevelInstanceTransformResource](lowlevelrendercontext/makeinstancetransformresource(instancecapacity:).md)
+- [func makeInstanceTransformResource(instanceCapacity: Int) throws -> LowLevelInstanceTransformResource](./lowlevelrendercontext/makeinstancetransformresource%28instancecapacity%29.md)
   Creates a transform buffer resource for GPU instancing.
 ### Creating pipeline state
-- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) throws -> sending LowLevelRenderPipelineState](lowlevelrendercontext/makerenderpipelinestate(descriptor:)-7j32p.md)
-  Synchronous variant of [`makeRenderPipelineState(descriptor:)`](lowlevelrendercontext/makerenderpipelinestate(descriptor:)-7j32p.md). Blocks the current thread until compilation completes.
-- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState](lowlevelrendercontext/makerenderpipelinestate(descriptor:)-55ty6.md)
+- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) throws -> sending LowLevelRenderPipelineState](./lowlevelrendercontext/makerenderpipelinestate%28descriptor%29-7j32p.md)
+  Synchronous variant of [`makeRenderPipelineState(descriptor:)`](./lowlevelrendercontext/makerenderpipelinestate%28descriptor%29-7j32p.md). Blocks the current thread until compilation completes.
+- [func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState](./lowlevelrendercontext/makerenderpipelinestate%28descriptor%29-55ty6.md)
   Asynchronously compiles a Metal render pipeline state from the given descriptor.
-- [func makeArgumentTable(descriptor: LowLevelArgumentTable.Descriptor, buffers: [LowLevelBufferSlice], textures: [LowLevelTextureResource]) throws -> LowLevelArgumentTable](lowlevelrendercontext/makeargumenttable(descriptor:buffers:textures:).md)
+- [func makeArgumentTable(descriptor: LowLevelArgumentTable.Descriptor, buffers: [LowLevelBufferSlice], textures: [LowLevelTextureResource]) throws -> LowLevelArgumentTable](./lowlevelrendercontext/makeargumenttable%28descriptor,buffers,textures%29.md)
   Creates an argument table that binds the provided buffer slices and textures.
 ### Creating surface shaders
-- [func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) throws -> sending LowLevelMaterialResource.SurfaceShader](lowlevelrendercontext/makesurfaceshader(descriptor:)-66tq8.md)
-  Synchronous variant of [`makeSurfaceShader(descriptor:)`](lowlevelrendercontext/makesurfaceshader(descriptor:)-66tq8.md). Blocks the current thread until compilation completes.
-- [func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader](lowlevelrendercontext/makesurfaceshader(descriptor:)-9kdy6.md)
+- [func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) throws -> sending LowLevelMaterialResource.SurfaceShader](./lowlevelrendercontext/makesurfaceshader%28descriptor%29-66tq8.md)
+  Synchronous variant of [`makeSurfaceShader(descriptor:)`](./lowlevelrendercontext/makesurfaceshader%28descriptor%29-66tq8.md). Blocks the current thread until compilation completes.
+- [func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader](./lowlevelrendercontext/makesurfaceshader%28descriptor%29-9kdy6.md)
   Asynchronously creates a custom surface shader from a user-authored Metal function descriptor.
-- [func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) throws -> sending LowLevelMaterialResource.SurfaceShader](lowlevelrendercontext/makesimplesurfaceshader(descriptor:)-74vhb.md)
-  Synchronous variant of [`makeSimpleSurfaceShader(descriptor:)`](lowlevelrendercontext/makesimplesurfaceshader(descriptor:)-74vhb.md). Blocks the current thread until compilation completes.
-- [func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader](lowlevelrendercontext/makesimplesurfaceshader(descriptor:)-14ppx.md)
+- [func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) throws -> sending LowLevelMaterialResource.SurfaceShader](./lowlevelrendercontext/makesimplesurfaceshader%28descriptor%29-74vhb.md)
+  Synchronous variant of [`makeSimpleSurfaceShader(descriptor:)`](./lowlevelrendercontext/makesimplesurfaceshader%28descriptor%29-74vhb.md). Blocks the current thread until compilation completes.
+- [func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader](./lowlevelrendercontext/makesimplesurfaceshader%28descriptor%29-14ppx.md)
   Asynchronously creates a simple surface shader using a built-in tint color or texture implementation, as described by the given descriptor.
 ### Creating geometry modifiers
-- [func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) throws -> sending LowLevelMaterialResource.GeometryModifier](lowlevelrendercontext/makegeometrymodifier(descriptor:)-307ec.md)
-  Synchronous variant of [`makeGeometryModifier(descriptor:)`](lowlevelrendercontext/makegeometrymodifier(descriptor:)-307ec.md). Blocks the current thread until compilation completes.
-- [func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier](lowlevelrendercontext/makegeometrymodifier(descriptor:)-9tq7q.md)
+- [func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) throws -> sending LowLevelMaterialResource.GeometryModifier](./lowlevelrendercontext/makegeometrymodifier%28descriptor%29-307ec.md)
+  Synchronous variant of [`makeGeometryModifier(descriptor:)`](./lowlevelrendercontext/makegeometrymodifier%28descriptor%29-307ec.md). Blocks the current thread until compilation completes.
+- [func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier](./lowlevelrendercontext/makegeometrymodifier%28descriptor%29-9tq7q.md)
   Asynchronously creates a geometry modifier from a user-authored Metal function described by the given descriptor.
-- [func makeDefaultGeometryModifier() -> sending LowLevelMaterialResource.GeometryModifier](lowlevelrendercontext/makedefaultgeometrymodifier.md)
+- [func makeDefaultGeometryModifier() -> sending LowLevelMaterialResource.GeometryModifier](./lowlevelrendercontext/makedefaultgeometrymodifier%28%29.md)
   Returns a pass-through geometry modifier that performs no vertex transformation.
 ### Synchronizing command buffers
-- [func waitForCommandBuffer(any MTLCommandBuffer)](lowlevelrendercontext/waitforcommandbuffer(_:).md)
+- [func waitForCommandBuffer(any MTLCommandBuffer)](./lowlevelrendercontext/waitforcommandbuffer%28_%29.md)
   Adds a command buffer that the renderer should wait on before using resources for rendering.
 ### Instance Properties
-- [var lighting: any LowLevelRenderContextLighting](lowlevelrendercontext/lighting.md)
+- [var lighting: any LowLevelRenderContextLighting](./lowlevelrendercontext/lighting.md)
   The lighting function creation interface for this context.
 ### Instance Methods
-- [func makeGeometryModifier(descriptor:)](lowlevelrendercontext/makegeometrymodifier(descriptor:).md)
-  Synchronous variant of [`makeGeometryModifier(descriptor:)`](lowlevelrendercontext/makegeometrymodifier(descriptor:).md). Blocks the current thread until compilation completes.
-- [func makeMaterialResource(descriptor:)](lowlevelrendercontext/makematerialresource(descriptor:).md)
-  Synchronous variant of [`makeMaterialResource(descriptor:)`](lowlevelrendercontext/makematerialresource(descriptor:).md). Blocks the current thread until compilation completes.
-- [func makeRenderPipelineState(descriptor:)](lowlevelrendercontext/makerenderpipelinestate(descriptor:).md)
-  Synchronous variant of [`makeRenderPipelineState(descriptor:)`](lowlevelrendercontext/makerenderpipelinestate(descriptor:).md). Blocks the current thread until compilation completes.
-- [func makeSimpleSurfaceShader(descriptor:)](lowlevelrendercontext/makesimplesurfaceshader(descriptor:).md)
-  Synchronous variant of [`makeSimpleSurfaceShader(descriptor:)`](lowlevelrendercontext/makesimplesurfaceshader(descriptor:).md). Blocks the current thread until compilation completes.
-- [func makeSurfaceShader(descriptor:)](lowlevelrendercontext/makesurfaceshader(descriptor:).md)
-  Synchronous variant of [`makeSurfaceShader(descriptor:)`](lowlevelrendercontext/makesurfaceshader(descriptor:).md). Blocks the current thread until compilation completes.
+- [func makeGeometryModifier(descriptor:)](./lowlevelrendercontext/makegeometrymodifier%28descriptor%29.md)
+  Synchronous variant of [`makeGeometryModifier(descriptor:)`](./lowlevelrendercontext/makegeometrymodifier%28descriptor%29.md). Blocks the current thread until compilation completes.
+- [func makeMaterialResource(descriptor:)](./lowlevelrendercontext/makematerialresource%28descriptor%29.md)
+  Synchronous variant of [`makeMaterialResource(descriptor:)`](./lowlevelrendercontext/makematerialresource%28descriptor%29.md). Blocks the current thread until compilation completes.
+- [func makeRenderPipelineState(descriptor:)](./lowlevelrendercontext/makerenderpipelinestate%28descriptor%29.md)
+  Synchronous variant of [`makeRenderPipelineState(descriptor:)`](./lowlevelrendercontext/makerenderpipelinestate%28descriptor%29.md). Blocks the current thread until compilation completes.
+- [func makeSimpleSurfaceShader(descriptor:)](./lowlevelrendercontext/makesimplesurfaceshader%28descriptor%29.md)
+  Synchronous variant of [`makeSimpleSurfaceShader(descriptor:)`](./lowlevelrendercontext/makesimplesurfaceshader%28descriptor%29.md). Blocks the current thread until compilation completes.
+- [func makeSurfaceShader(descriptor:)](./lowlevelrendercontext/makesurfaceshader%28descriptor%29.md)
+  Synchronous variant of [`makeSurfaceShader(descriptor:)`](./lowlevelrendercontext/makesurfaceshader%28descriptor%29.md). Blocks the current thread until compilation completes.
 
 ## Relationships
 
 ### Conforming Types
-- [LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
+- [LowLevelRenderContextStandalone](./lowlevelrendercontextstandalone.md)
 
 ## See Also
 
-- [class LowLevelRenderer](lowlevelrenderer.md)
+### Render contexts
+- [class LowLevelRenderer](./lowlevelrenderer.md)
   A renderer that encodes draw calls for a collection of mesh instances into a Metal command buffer.
-- [protocol LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
+- [protocol LowLevelRenderContextLighting](./lowlevelrendercontextlighting.md)
   The interface for creating lighting functions for use in materials.
-- [protocol LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+- [protocol LowLevelRenderContextShaderGraph](./lowlevelrendercontextshadergraph.md)
   The interface for creating Metal shader functions from a ShaderGraph.
-- [class LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
+- [class LowLevelRenderContextStandalone](./lowlevelrendercontextstandalone.md)
   A standalone Metal-backed render context for creating low-level rendering resources.
-- [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
+- [struct LowLevelRenderContextError](./lowlevelrendercontexterror.md)
   An error thrown when binding or updating a low-level rendering resource fails.
-- [struct LowLevelRendererError](lowlevelrenderererror.md)
+- [struct LowLevelRendererError](./lowlevelrenderererror.md)
   An error thrown when creating or configuring a renderer.
 
 

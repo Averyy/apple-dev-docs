@@ -1,7 +1,8 @@
 # init(compactRepresentable:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a random P-521 private key for key agreement.
 
@@ -22,7 +23,7 @@ init(compactRepresentable: Bool = true)
 
 #### Discussion
 
-Keys that use a compact point encoding enable shorter public keys, but aren’t compliant with FIPS certification. If your app requires FIPS certification, create a key with [`init(rawRepresentation:)`](p521/keyagreement/privatekey/init(rawrepresentation:).md).
+Keys that use a compact point encoding enable shorter public keys, but aren’t compliant with FIPS certification. If your app requires FIPS certification, create a key with [`init(rawRepresentation:)`](./init%28rawrepresentation%29.md).
 
 ## Parameters
 
@@ -30,13 +31,14 @@ Keys that use a compact point encoding enable shorter public keys, but aren’t 
 
 ## See Also
 
-- [init<Bytes>(rawRepresentation: Bytes) throws](p521/keyagreement/privatekey/init(rawrepresentation:).md)
+### Creating a private key
+- [init<Bytes>(rawRepresentation: Bytes) throws](./init%28rawrepresentation%29.md)
   Creates a P-521 private key for key agreement from a collection of bytes.
-- [init<Bytes>(derRepresentation: Bytes) throws](p521/keyagreement/privatekey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./init%28derrepresentation%29.md)
   Creates a P-521 private key for key agreement from a Distinguished Encoding Rules (DER) encoded representation.
-- [init(pemRepresentation: String) throws](p521/keyagreement/privatekey/init(pemrepresentation:).md)
+- [init(pemRepresentation: String) throws](./init%28pemrepresentation%29.md)
   Creates a P-521 private key for key agreement from a Privacy-Enhanced Mail PEM) representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p521/keyagreement/privatekey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./init%28x963representation%29.md)
   Creates a P-521 private key for key agreement from an ANSI x9.63 representation.
 
 

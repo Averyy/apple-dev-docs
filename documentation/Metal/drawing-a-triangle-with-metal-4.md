@@ -1,6 +1,8 @@
 # Drawing a triangle with Metal 4
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [DrawingATriangleWithMetal4.zip](https://docs-assets.developer.apple.com/published/afbc1ba209ed/DrawingATriangleWithMetal4.zip)
 
 Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
 
@@ -14,7 +16,9 @@ Render a colorful, rotating 2D triangle by running draw commands with a render p
 
 #### Overview
 
-This sample demonstrates how to render imagery by sending commands to the GPU with the Metal 4 API, and relates to WWDC25 session 205: [`Discover Metal 4`](https://developer.apple.comhttps://developer.apple.com/wwdc25/205).
+This sample demonstrates how to render imagery by sending commands to the GPU with the Metal 4 API, and relates to WWDC25 session 205: [Discover Metal 4](https://developer.apple.com/wwdc25/205).
+
+[Video: A short video of a slowly rotating triangle on a dark background. The triangle's fill is a color gradient between its three corners, which are red, green, and blue](https://developer.apple.com/tutorials/videos/com.apple.metal/drawing-a-triangle-with-metal-4.mp4)
 
 Multiple times a second, the sample’s app displays a colorful triangle by:
 
@@ -33,16 +37,16 @@ The renderer encodes one frame at a time, and has three frames of content in fli
 
 The renderer manages the frames as each progresses through its three lifetime phases. The diagram below illustrates how the first frames move through time, where each column represents a snapshot of the app’s current frames and their states:
 
-![A timeline diagram that shows how frames progress through their lifetime phases by dividing time into vertical columns, each of which represents a snapshot in time as they flow from left to right. The first column has one box with the label “encode frame 1”. The second column has two boxes with the labels “encode frame 2” and “execute frame 1”. The third column has three boxes with the labels “encode frame 3”, “execute frame 2” and “display frame 1”. The next two columns continue the pattern with three boxes each, where column five has the labels “encode frame 5”, “execute frame 4”, and “display frame 3”. The final, right-most column has three boxes, each with an ellipsis that indicates the pattern continues indefinitely.](/images/com.apple.metal/drawing-a-triangle-with-metal-4-1@2x.png)
+![A timeline diagram that shows how frames progress through their lifetime phases by dividing time into vertical columns, each of which represents a snapshot in time as they flow from left to right. The first column has one box with the label “encode frame 1”. The second column has two boxes with the labels “encode frame 2” and “execute frame 1”. The third column has three boxes with the labels “encode frame 3”, “execute frame 2” and “display frame 1”. The next two columns continue the pattern with three boxes each, where column five has the labels “encode frame 5”, “execute frame 4”, and “display frame 3”. The final, right-most column has three boxes, each with an ellipsis that indicates the pattern continues indefinitely.](https://developer.apple.com/tutorials/images/com.apple.metal/drawing-a-triangle-with-metal-4-1@2x.png)
 
-##### Create a Renderer
+##### Create a renderer
 
 The sample implements two separate renderer classes and the app creates a new instance of the one that’s appropriate for the system it’s running on. The two classes are:
 
 - `Metal4Renderer`, a renderer class that works with the Metal 4 API
 - `MetalRenderer`, a renderer class that works with previous Metal API versions
 
-The app checks whether the system supports Metal 4 by calling [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) in the `MetalKitViewDelegate` class.
+The app checks whether the system supports Metal 4 by calling [`supportsFamily(_:)`](./mtldevice/supportsfamily%28_%29.md) in the `MetalKitViewDelegate` class.
 
 ```objective-c
 if ([view.device supportsFamily:MTLGPUFamilyMetal4]) {
@@ -53,7 +57,7 @@ if ([view.device supportsFamily:MTLGPUFamilyMetal4]) {
 }
 ```
 
-The app creates a Metal 4 renderer if the operating system supports [`MTLGPUFamily.metal4`](mtlgpufamily/metal4.md); otherwise it creates an instance of the other renderer, which supports previous versions of Metal.
+The app creates a Metal 4 renderer if the operating system supports [`MTLGPUFamily.metal4`](./mtlgpufamily/metal4.md); otherwise it creates an instance of the other renderer, which supports previous versions of Metal.
 
 ```objective-c
 // Create a Metal renderer instance for the app's lifetime.
@@ -64,9 +68,9 @@ The two renderers are identical in their behavior, but they use different Metal 
 
 > **Note**: You may only need to implement a renderer that supports one Metal API depending on the platforms and devices you want your app to support.
 
-##### Create Long Term Resources
+##### Create long-term resources
 
-The Metal 4 renderer’s initializer starts by creating an instance of [`MTL4CommandQueue`](mtl4commandqueue.md), [`MTL4CommandBuffer`](mtl4commandbuffer.md), and [`MTLLibrary`](mtllibrary.md) with the view’s [`MTLDevice`](mtldevice.md).
+The Metal 4 renderer’s initializer starts by creating an instance of [`MTL4CommandQueue`](./mtl4commandqueue.md), [`MTL4CommandBuffer`](./mtl4commandbuffer.md), and [`MTLLibrary`](./mtllibrary.md) with the view’s [`MTLDevice`](./mtldevice.md).
 
 ```objective-c
 // Retrieve the Metal device instance from the view.
@@ -114,7 +118,7 @@ The sample applies this constant when it creates separate instances of the resou
 NSArray<id<MTLBuffer>> *triangleVertexBuffers;
 ```
 
-Most of the helper methods that create the renderer’s long-term resources at launch are relatively short. For example, the `makeTriangleDataBuffers:` method creates `kMaxFramesInFlight` instances of [`MTLBuffer`](mtlbuffer.md) because each in-flight frame needs a separate buffer to store its triangle vertex data.
+Most of the helper methods that create the renderer’s long-term resources at launch are relatively short. For example, the `makeTriangleDataBuffers:` method creates `kMaxFramesInFlight` instances of [`MTLBuffer`](./mtlbuffer.md) because each in-flight frame needs a separate buffer to store its triangle vertex data.
 
 ```objective-c
 /// Creates new buffer instances for triangle data from the renderer's device
@@ -140,7 +144,7 @@ Most of the helper methods that create the renderer’s long-term resources at l
 
 Creating a separate buffer instance for each in-flight frame eliminates the possibility of modifying a buffer for a later frame before or as the GPU reads from the same buffer to render an earlier frame.
 
-The `makeArgumentTable` method creates just a single argument table that the renderer can reuse each time it encodes render commands into a render pass the GPU eventually runs. You set the resource bindings for any pass you encode with an [`MTL4CommandBuffer`](mtl4commandbuffer.md), including compute and render passes, by configuring an [`MTL4ArgumentTable`](mtl4argumenttable.md) instance.
+The `makeArgumentTable` method creates just a single argument table that the renderer can reuse each time it encodes render commands into a render pass the GPU eventually runs. You set the resource bindings for any pass you encode with an [`MTL4CommandBuffer`](./mtl4commandbuffer.md), including compute and render passes, by configuring an [`MTL4ArgumentTable`](./mtl4argumenttable.md) instance.
 
 ```objective-c
 /// Creates a new argument table from the renderer's device that stores two arguments.
@@ -165,17 +169,17 @@ The `makeArgumentTable` method creates just a single argument table that the ren
 
 Each argument table can store bindings to instances of various resource types, including:
 
-- [`MTLBuffer`](mtlbuffer.md)
-- [`MTLTexture`](mtltexture.md)
-- [`MTLTensor`](mtltensor.md)
-- [`MTLSamplerState`](mtlsamplerstate.md)
-- [`MTLAccelerationStructure`](mtlaccelerationstructure.md)
+- [`MTLBuffer`](./mtlbuffer.md)
+- [`MTLTexture`](./mtltexture.md)
+- [`MTLTensor`](./mtltensor.md)
+- [`MTLSamplerState`](./mtlsamplerstate.md)
+- [`MTLAccelerationStructure`](./mtlaccelerationstructure.md)
 
 For this sample, the argument table only needs to store two buffer bindings, one for the buffer that stores vertex triangle data, and another buffer that stores the viewport’s width and height.
 
 > 💡 **Tip**: You can help minimize an app’s memory footprint by reducing the number of binding entries in an argument table to what your renderer needs.
 
-The `makeResidencySet` and `makeCommandAllocators:` methods create a single [`MTLResidencySet`](mtlresidencyset.md) instance, and an [`MTL4CommandAllocator`](mtl4commandallocator.md) instance for each in-flight frame, respectively.
+The `makeResidencySet` and `makeCommandAllocators:` methods create a single [`MTLResidencySet`](./mtlresidencyset.md) instance, and an [`MTL4CommandAllocator`](./mtl4commandallocator.md) instance for each in-flight frame, respectively.
 
 The end of the initializer configures the renderer’s initial state so that it’s ready to render the first frame when the system requests it.
 
@@ -190,7 +194,7 @@ sharedEvent.signaledValue = frameNumber;
 
 The initializer adds two residency sets to the renderer’s command queue:
 
-- The long-term residency set, which the renderer configures to track all of its [`MTLBuffer`](mtlbuffer.md) instances
+- The long-term residency set, which the renderer configures to track all of its [`MTLBuffer`](./mtlbuffer.md) instances
 - The view’s residency set, which MetalKit configures
 
 ```objective-c
@@ -217,11 +221,11 @@ for (id<MTLBuffer> triangleVertexBuffer in triangleVertexBuffers) {
 [self updateViewportSize:view.drawableSize];
 ```
 
-See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) for more information about working with residency sets.
+See [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md) for more information about working with residency sets.
 
-##### Create a Render Pipeline
+##### Create a render pipeline
 
-The renderer’s `compileRenderPipeline:` method creates a render pipeline by configuring an [`MTL4RenderPipelineDescriptor`](mtl4renderpipelinedescriptor.md) instance and passing it to an [`MTL4Compiler`](mtl4compiler.md) instance’s [`newRenderPipelineStateWithDescriptor:compilerTaskOptions:error:`](mtl4compiler/newrenderpipelinestatewithdescriptor:compilertaskoptions:error:.md) method.
+The renderer’s `compileRenderPipeline:` method creates a render pipeline by configuring an [`MTL4RenderPipelineDescriptor`](./mtl4renderpipelinedescriptor.md) instance and passing it to an [`MTL4Compiler`](./mtl4compiler.md) instance’s [`newRenderPipelineStateWithDescriptor:compilerTaskOptions:error:`](./mtl4compiler/newrenderpipelinestatewithdescriptor_compilertaskoptions_error_.md) method.
 
 ```objective-c
 /// Creates the renderer's pipeline state that works with a specific pixel format.
@@ -284,7 +288,7 @@ The renderer’s `configureRenderPipeline:` method sets the various properties t
 }
 ```
 
-The `makeVertexShaderConfiguration` helper method creates an [`MTL4LibraryFunctionDescriptor`](mtl4libraryfunctiondescriptor.md) instance that refers to the renderer’s vertex shader.
+The `makeVertexShaderConfiguration` helper method creates an [`MTL4LibraryFunctionDescriptor`](./mtl4libraryfunctiondescriptor.md) instance that refers to the renderer’s vertex shader.
 
 ```objective-c
 /// Creates a library function descriptor for the app's vertex shader.
@@ -320,11 +324,11 @@ Similarly, the `makeFragmentShaderConfiguration` helper method creates another f
 }
 ```
 
-##### Draw a Frame By Encoding a Render Pass
+##### Draw a frame by encoding a render pass
 
-The app is ready to render frames after its renderer creates and sets up all its resources at launch, including data buffers and a render pipeline state. Each time the system calls the app’s [`draw(in:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/draw(in:)) method, its [`MTKViewDelegate`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate) implementation calls the renderer’s `renderFrameToView:` method, which encodes and runs the commands that render the frame with the following steps:
+The app is ready to render frames after its renderer creates and sets up all its resources at launch, including data buffers and a render pipeline state. Each time the system calls the app’s [`draw(in:)`](../MetalKit/mtkviewdelegate/draw%28in%29.md) method, its [`MTKViewDelegate`](../MetalKit/mtkviewdelegate.md) implementation calls the renderer’s `renderFrameToView:` method, which encodes and runs the commands that render the frame with the following steps:
 
-1. Check that the [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) parameter has valid [`currentDrawable`](https://developer.apple.com/documentation/metalkit/mtkview/currentdrawable) and [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/metalkit/mtkview/currentmtl4renderpassdescriptor) properties.
+1. Check that the [`MTKView`](../MetalKit/mtkview.md) parameter has valid [`currentDrawable`](../MetalKit/mtkview/currentdrawable.md) and [`currentMTL4RenderPassDescriptor`](../MetalKit/mtkview/currentmtl4renderpassdescriptor.md) properties.
 2. Increment the frame number, which tracks the resources it can reuse from previous frames that don’t need them any longer.
 3. Prepare a command buffer.
 4. Create and configure a render pass encoder.
@@ -337,11 +341,11 @@ The app is ready to render frames after its renderer creates and sets up all its
 
 The remaining sections explain the important details of these steps.
 
-##### Prepare a Command Buffer
+##### Prepare a command buffer
 
-The renderer uses the same [`MTL4CommandBuffer`](mtl4commandbuffer.md) instance to render every frame. You can reuse a Metal 4 command buffer instance immediately after submitting it to an [`MTL4CommandQueue`](mtl4commandqueue.md). This is because a command allocator stores a record of the command buffer’s contents when you submit it to a queue.
+The renderer uses the same [`MTL4CommandBuffer`](./mtl4commandbuffer.md) instance to render every frame. You can reuse a Metal 4 command buffer instance immediately after submitting it to an [`MTL4CommandQueue`](./mtl4commandqueue.md). This is because a command allocator stores a record of the command buffer’s contents when you submit it to a queue.
 
-The renderer prepares the command buffer for a new set of commands by calling its [`beginCommandBuffer(allocator:)`](mtl4commandbuffer/begincommandbuffer(allocator:).md) method.
+The renderer prepares the command buffer for a new set of commands by calling its [`beginCommandBuffer(allocator:)`](./mtl4commandbuffer/begincommandbuffer%28allocator%29.md) method.
 
 ```objective-c
 // Increment the frame number for this frame.
@@ -365,11 +369,11 @@ id<MTL4CommandAllocator> frameAllocator = commandAllocators[frameIndex];
 commandBuffer.label = label;
 ```
 
-The renderer reuses an [`MTL4CommandAllocator`](mtl4commandallocator.md) instance the GPU no longer needs by rotating through the `kMaxFramesInFlight` allocators it creates at launch.
+The renderer reuses an [`MTL4CommandAllocator`](./mtl4commandallocator.md) instance the GPU no longer needs by rotating through the `kMaxFramesInFlight` allocators it creates at launch.
 
 > ❗ **Important**: Unlike a command buffer, you can’t immediately reuse an allocator after submitting a command buffer to a queue, but you can after the device finishes running the passes in the command buffer you associate with the allocator.
 
-The renderer ensures the next allocator in the rotation is available by calling the `waitOnSharedEvent:forEarlierFrame:` method. That method calls the [`wait(untilSignaledValue:timeoutMS:)`](mtlsharedevent/wait(untilsignaledvalue:timeoutms:).md) method of the renderer’s [`MTLSharedEvent`](mtlsharedevent.md) instance, which can potentially block the caller for 10 milliseconds before it returns.
+The renderer ensures the next allocator in the rotation is available by calling the `waitOnSharedEvent:forEarlierFrame:` method. That method calls the [`wait(untilSignaledValue:timeoutMS:)`](./mtlsharedevent/wait%28untilsignaledvalue,timeoutms%29.md) method of the renderer’s [`MTLSharedEvent`](./mtlsharedevent.md) instance, which can potentially block the caller for 10 milliseconds before it returns.
 
 ```objective-c
 /// Pauses the CPU when the device is rendering a previous frame that needs the resources
@@ -397,9 +401,9 @@ The renderer ensures the next allocator in the rotation is available by calling 
 
 The command queue updates the shared event after the Metal device finishes rendering the previous frame that uses the same allocator, which indicates to this method that it’s now available to reuse. Ideally, the shared event’s method returns immediately because the earlier frame using the allocator is done rendering and no longer needs it.
 
-##### Create an Encoder for a Render Pass
+##### Create an encoder for a render pass
 
-The `renderFrameToView:` method creates a render command encoder by retrieving an [`MTL4RenderPassDescriptor`](mtl4renderpassdescriptor.md) instance from the view’s [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/metalkit/mtkview/currentmtl4renderpassdescriptor) property and passing it to the command buffer’s [`makeRenderCommandEncoder(descriptor:options:)`](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md) method. The view’s property represents a valid configuration for a render pass to render a frame in a format that’s compatible with that view.
+The `renderFrameToView:` method creates a render command encoder by retrieving an [`MTL4RenderPassDescriptor`](./mtl4renderpassdescriptor.md) instance from the view’s [`currentMTL4RenderPassDescriptor`](../MetalKit/mtkview/currentmtl4renderpassdescriptor.md) property and passing it to the command buffer’s [`makeRenderCommandEncoder(descriptor:options:)`](./mtl4commandbuffer/makerendercommandencoder%28descriptor,options%29.md) method. The view’s property represents a valid configuration for a render pass to render a frame in a format that’s compatible with that view.
 
 ```objective-c
 // Create a render pass encoder from the command buffer with the view's configuration.
@@ -409,16 +413,16 @@ renderPassEncoder = [commandBuffer renderCommandEncoderWithDescriptor:configurat
 renderPassEncoder.label = label;
 ```
 
-The command buffer’s factory method returns an [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) instance, which provides methods that configure a render pass and encode the commands for that pass.
+The command buffer’s factory method returns an [`MTL4RenderCommandEncoder`](./mtl4rendercommandencoder.md) instance, which provides methods that configure a render pass and encode the commands for that pass.
 
 The method also gives the render encoder a unique name that can help you identify its render pass from other passes in Metal debugger. For more information about Metal debugger and inspecting passes, see:
 
-- [`Metal debugger`](https://developer.apple.com/documentation/xcode/metal-debugger)
-- [`Analyzing your Metal workload`](https://developer.apple.com/documentation/xcode/analyzing-your-metal-workload)
+- [Metal debugger](../Xcode/metal-debugger.md)
+- [Analyzing your Metal workload](../Xcode/analyzing-your-metal-workload.md)
 
-##### Configure the Viewport for the Render Pass
+##### Configure the viewport for the render pass
 
-The renderer’s `setViewport` method configures an [`MTLViewport`](mtlviewport.md) and passes it to the encoder’s [`setViewport(_:)`](mtl4rendercommandencoder/setviewport(_:).md)method.
+The renderer’s `setViewport` method configures an [`MTLViewport`](./mtlviewport.md) and passes it to the encoder’s [`setViewport(_:)`](./mtl4rendercommandencoder/setviewport%28_%29.md)method.
 
 ```objective-c
 /// Configures the viewport for a render pass.
@@ -443,9 +447,9 @@ The renderer’s `setViewport` method configures an [`MTLViewport`](mtlviewport.
 
 The method configures the viewport’s 2D size by setting the `x` and `y` members to the dimensions of the app’s view, in pixels.
 
-##### Configure Any Arguments for the Render Pass
+##### Configure any arguments for the render pass
 
-The renderer’s `setRenderPassArguments:` method configures two arguments for the render pass, both of which are [`MTLBuffer`](mtlbuffer.md) instances.
+The renderer’s `setRenderPassArguments:` method configures two arguments for the render pass, both of which are [`MTLBuffer`](./mtlbuffer.md) instances.
 
 ```objective-c
 /// Configures the arguments for a render pass.
@@ -483,7 +487,7 @@ The renderer’s `setRenderPassArguments:` method configures two arguments for t
 
 The method retrieves the next triangle vertex buffer in the rotation. Each render pass needs its own copy of triangle vertex data because the data for each frame is unique, and the GPU needs access to each frame’s input data until it finishes rendering that frame. The renderer tracks and rotates through `kMaxFramesInFlight` buffers of triangle vertex data in an array, similar to the command allocators because each frame has slightly different coordinates for the triangle as it rotates.
 
-The method calls the renderer’s `configureVertexDataForBuffer:` method, which calculates the positions of the triangle’s vertices by applying a rotation angle and then copies the vertex data into the [`MTLBuffer`](mtlbuffer.md).
+The method calls the renderer’s `configureVertexDataForBuffer:` method, which calculates the positions of the triangle’s vertices by applying a rotation angle and then copies the vertex data into the [`MTLBuffer`](./mtlbuffer.md).
 
 ```objective-c
 /// Configures an equilateral triangle's vertex data
@@ -506,9 +510,9 @@ void configureVertexDataForBuffer(long rotationInDegrees,
 }
 ```
 
-##### Encode Draw Commands
+##### Encode draw commands
 
-The renderer draws exactly one triangle with a single call to [`drawPrimitives(primitiveType:vertexStart:vertexCount:)`](mtl4rendercommandencoder/drawprimitives(primitivetype:vertexstart:vertexcount:).md):
+The renderer draws exactly one triangle with a single call to [`drawPrimitives(primitiveType:vertexStart:vertexCount:)`](./mtl4rendercommandencoder/drawprimitives%28primitivetype,vertexstart,vertexcount%29.md):
 
 ```objective-c
 // Draw the triangle.
@@ -519,9 +523,9 @@ The renderer draws exactly one triangle with a single call to [`drawPrimitives(p
 
 This renderer only needs one draw command, but yours can encode multiple drawing commands in a single render pass.
 
-##### End the Render Pass
+##### End the render pass
 
-The `renderFrameToView:` method marks the conclusion of the render pass by calling the encoder’s [`endEncoding()`](mtl4commandencoder/endencoding().md) method.
+The `renderFrameToView:` method marks the conclusion of the render pass by calling the encoder’s [`endEncoding()`](./mtl4commandencoder/endencoding%28%29.md) method.
 
 ```objective-c
 // Finalize the render pass.
@@ -531,23 +535,23 @@ The `renderFrameToView:` method marks the conclusion of the render pass by calli
 [commandBuffer endCommandBuffer];
 ```
 
-It then marks the end of the command buffer by calling its [`endCommandBuffer()`](mtl4commandbuffer/endcommandbuffer().md) method because it only needs to encode a single render pass. However, your app can encode multiple passes of different types in a single command buffer with a series of encoder types, including the following:
+It then marks the end of the command buffer by calling its [`endCommandBuffer()`](./mtl4commandbuffer/endcommandbuffer%28%29.md) method because it only needs to encode a single render pass. However, your app can encode multiple passes of different types in a single command buffer with a series of encoder types, including the following:
 
-- [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md)
-- [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md)
-- [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md)
+- [`MTL4ComputeCommandEncoder`](./mtl4computecommandencoder.md)
+- [`MTL4RenderCommandEncoder`](./mtl4rendercommandencoder.md)
+- [`MTL4MachineLearningCommandEncoder`](./mtl4machinelearningcommandencoder.md)
 
-##### Run the Render Pass By Submitting the Command Buffer
+##### Run the render pass by submitting the command buffer
 
-The renderer sends the command buffer to run on the GPU in its `submitCommandBufferForView:` method. The method starts by retrieving the [`CAMetalDrawable`](https://developer.apple.com/documentation/quartzcore/cametaldrawable) instance the view stores in its [`currentDrawable`](https://developer.apple.com/documentation/metalkit/mtkview/currentdrawable) property.
+The renderer sends the command buffer to run on the GPU in its `submitCommandBufferForView:` method. The method starts by retrieving the [`CAMetalDrawable`](../QuartzCore/cametaldrawable.md) instance the view stores in its [`currentDrawable`](../MetalKit/mtkview/currentdrawable.md) property.
 
-> **Note**: The view’s current drawable is the same instance as the one in the view’s [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/metalkit/mtkview/currentmtl4renderpassdescriptor) convenience property, specifically the first entry in the descriptor’s [`colorAttachments`](mtl4renderpassdescriptor/colorattachments.md) property, which the renderer uses to create each render pass encoder.
+> **Note**: The view’s current drawable is the same instance as the one in the view’s [`currentMTL4RenderPassDescriptor`](../MetalKit/mtkview/currentmtl4renderpassdescriptor.md) convenience property, specifically the first entry in the descriptor’s [`colorAttachments`](./mtl4renderpassdescriptor/colorattachments.md) property, which the renderer uses to create each render pass encoder.
 
-The method adds the following actions to the renderer’s [`MTL4CommandQueue`](mtl4commandqueue.md) instance, which run on the GPU timeline:
+The method adds the following actions to the renderer’s [`MTL4CommandQueue`](./mtl4commandqueue.md) instance, which run on the GPU timeline:
 
-1. Wait for the view’s drawable with the [`waitForDrawable(_:)`](mtl4commandqueue/waitfordrawable(_:).md) method.
-2. Submit the command buffer to run on the GPU with the [`commit:count:`](mtl4commandqueue/commit:count:.md) method.
-3. Notify the drawable that the GPU is finished running the render pass with the [`signalDrawable(_:)`](mtl4commandqueue/signaldrawable(_:).md) method.
+1. Wait for the view’s drawable with the [`waitForDrawable(_:)`](./mtl4commandqueue/waitfordrawable%28_%29.md) method.
+2. Submit the command buffer to run on the GPU with the [`commit:count:`](./mtl4commandqueue/commit_count_.md) method.
+3. Notify the drawable that the GPU is finished running the render pass with the [`signalDrawable(_:)`](./mtl4commandqueue/signaldrawable%28_%29.md) method.
 
 ```objective-c
 /// Sends a command buffer to run on a Metal device by committing it to a
@@ -583,11 +587,11 @@ The Metal device needs to wait until the view’s drawable is available because 
 
 > **Note**: Your app can submit one or more Metal 4 command buffers to any command queue, if and only if the command buffers and command queues come from the same Metal device.
 
-The method concludes by calling the drawable’s [`present()`](mtldrawable/present().md) method, which instructs the drawable to show its content on the device’s display shortly after it gets the notification from the command queue. The [`MTLDrawable`](mtldrawable.md) protocol defines this method, which the [`CAMetalDrawable`](https://developer.apple.com/documentation/quartzcore/cametaldrawable) protocol inherits.
+The method concludes by calling the drawable’s [`present()`](./mtldrawable/present%28%29.md) method, which instructs the drawable to show its content on the device’s display shortly after it gets the notification from the command queue. The [`MTLDrawable`](./mtldrawable.md) protocol defines this method, which the [`CAMetalDrawable`](../QuartzCore/cametaldrawable.md) protocol inherits.
 
-##### Notify the Renderer When a Frames Resources Are Ready for Reuse
+##### Notify the renderer when a frame’s resources are ready for reuse
 
-The last command the `renderFrameToView:` method adds to the command queue notifies the renderer when it can reuse this frame’s triangle vertex buffer and command allocator, by signaling its [`MTLSharedEvent`](mtlsharedevent.md) instance with the current frame number.
+The last command the `renderFrameToView:` method adds to the command queue notifies the renderer when it can reuse this frame’s triangle vertex buffer and command allocator, by signaling its [`MTLSharedEvent`](./mtlsharedevent.md) instance with the current frame number.
 
 ```objective-c
 // Signal when the GPU finishes rendering this frame with a shared event.
@@ -598,11 +602,12 @@ For example, if the `frameNumber` equals `4` and `kMaxFramesInFlight` equals `3`
 
 ## See Also
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+### Essentials
+- [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
   Discover the features and functionality in the Metal 4 foundational APIs.
-- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
+- [Performing calculations on a GPU](./performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
-- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
+- [Using Metal to draw a view’s contents](./using-metal-to-draw-a-views-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
 
 

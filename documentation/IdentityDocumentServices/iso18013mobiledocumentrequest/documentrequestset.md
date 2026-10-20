@@ -1,14 +1,15 @@
 # ISO18013MobileDocumentRequest.DocumentRequestSet
 
 **Framework**: IdentityDocumentServices  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of document requests defined in a `PresentmentRequest`.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration
@@ -20,17 +21,17 @@ struct DocumentRequestSet
 ## Topics
 
 ### Initializers
-- [init(requests: [ISO18013MobileDocumentRequest.DocumentRequest])](iso18013mobiledocumentrequest/documentrequestset/init(requests:).md)
+- [init(requests: [ISO18013MobileDocumentRequest.DocumentRequest])](./documentrequestset/init%28requests%29.md)
   Initializes a document set.
 ### Instance Properties
-- [var requests: [ISO18013MobileDocumentRequest.DocumentRequest]](iso18013mobiledocumentrequest/documentrequestset/requests.md)
+- [var requests: [ISO18013MobileDocumentRequest.DocumentRequest]](./documentrequestset/requests.md)
   An array of document requests required to complete the document set.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

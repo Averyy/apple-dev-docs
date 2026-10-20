@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOEventSource *eventChainNext;
 ```
 
@@ -15,12 +15,13 @@ The next event source in the event chain. nil at end of chain.
 
 ## See Also
 
-- [workLoop](ioeventsource/workloop.md)
-- [reserved](ioeventsource/reserved.md)
-- [refcon](ioeventsource/refcon.md)
-- [owner](ioeventsource/owner.md)
-- [enabled](ioeventsource/enabled.md)
-- [action](ioeventsource/action-8l7.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [reserved](./reserved.md)
+- [refcon](./refcon.md)
+- [owner](./owner.md)
+- [enabled](./enabled.md)
+- [action](./action-8l7.md)
 
 
 ---

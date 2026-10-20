@@ -1,6 +1,8 @@
 # Detecting changes in the preferences window
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [DetectingChangesInThePreferencesWindow.zip](https://docs-assets.developer.apple.com/published/1b05ad2e7b73/DetectingChangesInThePreferencesWindow.zip)
 
 Listen for and respond to a user’s preference changes in your Mac app built with Mac Catalyst using Combine.
 
@@ -12,7 +14,7 @@ Listen for and respond to a user’s preference changes in your Mac app built wi
 
 #### Overview
 
-With [`Combine`](https://developer.apple.com/documentation/combine), your app can listen for changes a user makes to the app’s Preferences window, and respond to those changes. The sample app provides a Preferences window with one setting: background color. When the user selects a color, the background of the main view changes to match their selection.
+With [Combine](../Combine/Combine.md), your app can listen for changes a user makes to the app’s Preferences window, and respond to those changes. The sample app provides a Preferences window with one setting: background color. When the user selects a color, the background of the main view changes to match their selection.
 
 This sample code project shows how to:
 
@@ -23,15 +25,15 @@ This sample code project shows how to:
 
 To use the sample app, open the sample code project in Xcode and select My Mac as the destination. Then, build and run the sample project.
 
-##### Provide a Preferences Window in the App
+##### Provide a preferences window in the app
 
-The sample app includes a `Settings.bundle` file that the system uses to automatically add the standard Preferences menu item to the app menu. Selecting the menu item displays a Preferences window that the system generates based on the preference specifiers defined in the Settings bundle. To learn more, see [`Displaying a Settings window`](displaying-a-settings-window.md).
+The sample app includes a `Settings.bundle` file that the system uses to automatically add the standard Preferences menu item to the app menu. Selecting the menu item displays a Preferences window that the system generates based on the preference specifiers defined in the Settings bundle. To learn more, see [Displaying a Settings window](./displaying-a-settings-window.md).
 
 The Settings bundle for the sample app has a preference specifier for setting the background color of the main view. It also has a child pane preference specifier, which displays a second tab of preferences in the Preferences window. The Settings bundle file `Root.plist` defines these specifiers, while the file `OtherSettings.plist` defines the preference specifiers for the child pane.
 
-##### Register Default Preference Values
+##### Register default preference values
 
-When the user changes preferences in the Preferences window, the window saves them to the application domain of the user defaults system. To store and retrieve the preference values within the app, the sample app uses [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults). However, when the sample app launches for the first time, the preference values don’t exist in the user defaults system. If the app tries retrieving a value, [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) returns `nil`.
+When the user changes preferences in the Preferences window, the window saves them to the application domain of the user defaults system. To store and retrieve the preference values within the app, the sample app uses [`UserDefaults`](../Foundation/userdefaults.md). However, when the sample app launches for the first time, the preference values don’t exist in the user defaults system. If the app tries retrieving a value, [`UserDefaults`](../Foundation/userdefaults.md) returns `nil`.
 
 To ensure that the app always retrieves a non-`nil` value, the sample app registers the default preference values with the registration domain. However, this domain doesn’t persist these values between app launches, so the sample app registers the default values each time the user launches the app.
 
@@ -90,9 +92,9 @@ func parse(_ preferenceSpecifiers: [NSDictionary]) -> [String: Any] {
 }
 ```
 
-##### Retrieve Preference Values
+##### Retrieve preference values
 
-After registering the default values with the registration domain, the app can retrieve a preference value without the possibility of encountering an unavailable value. To simplify access to the background color preference value, the sample app extends [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) to include properties for each preference value.
+After registering the default values with the registration domain, the app can retrieve a preference value without the possibility of encountering an unavailable value. To simplify access to the background color preference value, the sample app extends [`UserDefaults`](../Foundation/userdefaults.md) to include properties for each preference value.
 
 ```swift
 extension UserDefaults {
@@ -108,9 +110,9 @@ extension UserDefaults {
 }
 ```
 
-##### Handle Changes Made in the Preferences Window
+##### Handle changes made in the preferences window
 
-As the user changes the background color setting in the Preferences window, the app changes the background color of its main view. To accomplish this, the view controller for the main view creates a subscriber in the [`viewDidLoad()`](uiviewcontroller/viewdidload().md) method. When the background color value changes, the subscriber receives the new value, maps it to a [`UIColor`](uicolor.md) object, and assigns the color to the view’s [`backgroundColor`](uiview/backgroundcolor.md) property.
+As the user changes the background color setting in the Preferences window, the app changes the background color of its main view. To accomplish this, the view controller for the main view creates a subscriber in the [`viewDidLoad()`](./uiviewcontroller/viewdidload%28%29.md) method. When the background color value changes, the subscriber receives the new value, maps it to a [`UIColor`](./uicolor.md) object, and assigns the color to the view’s [`backgroundColor`](./uiview/backgroundcolor.md) property.
 
 ```swift
 var subscriber: AnyCancellable?   // Subscriber of preference changes.
@@ -133,7 +135,8 @@ override func viewDidLoad() {
 
 ## See Also
 
-- [Displaying a Settings window](displaying-a-settings-window.md)
+### User preferences
+- [Displaying a Settings window](./displaying-a-settings-window.md)
   Provide a Settings window in your Mac app built with Mac Catalyst so users can manage app settings defined in a Settings bundle.
 
 

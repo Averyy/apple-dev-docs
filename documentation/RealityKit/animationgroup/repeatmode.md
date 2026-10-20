@@ -1,7 +1,8 @@
 # repeatMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option that determines how the animations repeat.
 
@@ -11,7 +12,7 @@ An option that determines how the animations repeat.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var repeatMode: AnimationRepeatMode { get set }
 
 #### Discussion
 
-If you call `FromToByAnimation/trimmed(start:end:duration:)` with a `start` or `end` that lies outside of the timeline defined by [`duration`](animationgroup/duration.md), the animation fills the additional playback by applying this property.
+If you call `FromToByAnimation/trimmed(start:end:duration:)` with a `start` or `end` that lies outside of the timeline defined by [`duration`](./duration.md), the animation fills the additional playback by applying this property.
 
 ## See Also
 
-- [var fillMode: AnimationFillMode](animationgroup/fillmode.md)
+### Repeating group playback
+- [var fillMode: AnimationFillMode](./fillmode.md)
   An option that determines which data displays outside of the normal duration.
 
 

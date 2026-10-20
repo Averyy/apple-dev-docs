@@ -1,7 +1,8 @@
 # CTFontCollectionCopyFontAttribute(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves an array of font descriptor attribute values.
 
@@ -20,6 +21,10 @@ Retrieves an array of font descriptor attribute values.
 func CTFontCollectionCopyFontAttribute(_ collection: CTFontCollection, _ attributeName: CFString, _ options: CTFontCollectionCopyOptions) -> CFArray
 ```
 
+```c
+extern CFArrayRefCTFontCollectionCopyFontAttribute(CTFontCollectionRef collection, CFStringRef attributeName, CTFontCollectionCopyOptions options);
+```
+
 #### Return Value
 
 An array that contains one value for each descriptor.
@@ -28,11 +33,12 @@ An array that contains one value for each descriptor.
 
 - `collection`: The font collection reference.
 - `attributeName`: The attribute to retrieve for each descriptor in the collection.
-- `options`: Options to alter the return value. With [`kCTFontCollectionCopyDefaultOptions`](ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.md), the values appear in the same order as the results from [`CTFontCollectionCreateMatchingFontDescriptors(_:)`](ctfontcollectioncreatematchingfontdescriptors(_:).md), and `NULL` values transform to [`kCFNull`](https://developer.apple.com/documentation/corefoundation/kcfnull). Setting [`unique`](ctfontcollectioncopyoptions/unique.md) removes duplicate values. Setting [`standardSort`](ctfontcollectioncopyoptions/standardsort.md) sorts the values in standard UI order.
+- `options`: Options to alter the return value. With [`kCTFontCollectionCopyDefaultOptions`](./ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.md), the values appear in the same order as the results from [`CTFontCollectionCreateMatchingFontDescriptors(_:)`](./ctfontcollectioncreatematchingfontdescriptors%28_%29.md), and `NULL` values transform to [`kCFNull`](../CoreFoundation/kcfnull.md). Setting [`unique`](./ctfontcollectioncopyoptions/unique.md) removes duplicate values. Setting [`standardSort`](./ctfontcollectioncopyoptions/standardsort.md) sorts the values in standard UI order.
 
 ## See Also
 
-- [func CTFontCollectionCopyFontAttributes(CTFontCollection, CFSet, CTFontCollectionCopyOptions) -> CFArray](ctfontcollectioncopyfontattributes(_:_:_:).md)
+### Get Font Descriptor Attributes
+- [func CTFontCollectionCopyFontAttributes(CTFontCollection, CFSet, CTFontCollectionCopyOptions) -> CFArray](./ctfontcollectioncopyfontattributes%28_,_,_%29.md)
   Retrieves an array of dictionaries containing font descriptor attribute values.
 
 

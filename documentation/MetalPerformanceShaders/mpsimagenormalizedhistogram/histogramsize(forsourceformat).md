@@ -1,7 +1,8 @@
 # histogramSize(forSourceFormat:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func histogramSize(forSourceFormat sourceFormat: MTLPixelFormat) -> Int
+```
+
+```objc
+- (size_t) histogramSizeForSourceFormat:(MTLPixelFormat) sourceFormat;
 ```
 
 

@@ -1,7 +1,8 @@
 # IOUSBHostCIMessageControlTypePhase
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,13 +14,18 @@
 var IOUSBHostCIMessageControlTypePhase: Int { get }
 ```
 
+```c
+IOUSBHostCIMessageControlTypePhase
+```
+
 ## See Also
 
-- [var IOUSBHostCIMessageControlNoResponse: Int](iousbhostcimessagecontrolnoresponse.md)
-- [var IOUSBHostCIMessageControlStatus: Int](iousbhostcimessagecontrolstatus.md)
-- [var IOUSBHostCIMessageControlStatusPhase: Int](iousbhostcimessagecontrolstatusphase.md)
-- [var IOUSBHostCIMessageControlType: Int](iousbhostcimessagecontroltype.md)
-- [var IOUSBHostCIMessageControlValid: Int](iousbhostcimessagecontrolvalid.md)
+### Constants
+- [var IOUSBHostCIMessageControlNoResponse: Int](./iousbhostcimessagecontrolnoresponse.md)
+- [var IOUSBHostCIMessageControlStatus: Int](./iousbhostcimessagecontrolstatus.md)
+- [var IOUSBHostCIMessageControlStatusPhase: Int](./iousbhostcimessagecontrolstatusphase.md)
+- [var IOUSBHostCIMessageControlType: Int](./iousbhostcimessagecontroltype.md)
+- [var IOUSBHostCIMessageControlValid: Int](./iousbhostcimessagecontrolvalid.md)
 
 
 ---

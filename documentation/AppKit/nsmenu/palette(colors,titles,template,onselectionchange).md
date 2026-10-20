@@ -1,7 +1,8 @@
 # palette(colors:titles:template:onSelectionChange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a palette style menu displaying user-selectable color tags that tint using the specified array of colors.
 
@@ -52,7 +53,7 @@ menuItem.submenu = menu
 parentMenu.addItem(menuItem)
 ```
 
-![A presentation style menu with five solid colored circles of various colors that display horizontally left to right. The first two circles have checkmarks in the middle.](/images/com.apple.appkit/media-4304328@2x.png)
+![A presentation style menu with five solid colored circles of various colors that display horizontally left to right. The first two circles have checkmarks in the middle.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-4304328@2x.png)
 
 This code is similar to the previous example, only here the menu displays the `templateImage` of a flag tinted to the corresponding color you set in the `colors` array. When you select an item in this menu the image changes from a flag to a checkmark.
 
@@ -85,11 +86,11 @@ menuItem.submenu = menu
 parentMenu.addItem(menuItem)
 ```
 
-![A presentation style menu showing two checkmarks and three flags of various colors that display horizontally left to right.](/images/com.apple.appkit/media-4304329@2x.png)
+![A presentation style menu showing two checkmarks and three flags of various colors that display horizontally left to right.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-4304329@2x.png)
 
 When setting the `template` image favor images that tint (such as system images). Raster images don’t tint in this presentation style.
 
-Menus that you create using this convenience method have a [`presentationStyle`](nsmenu/presentationstyle-swift.property.md) of type [`NSMenu.PresentationStyle.palette`](nsmenu/presentationstyle-swift.enum/palette.md) and a [`selectionMode`](nsmenu/selectionmode-swift.property.md) of type [`NSMenu.SelectionMode.selectAny`](nsmenu/selectionmode-swift.enum/selectany.md).
+Menus that you create using this convenience method have a [`presentationStyle`](./presentationstyle-swift.property.md) of type [`NSMenu.PresentationStyle.palette`](./presentationstyle-swift.enum/palette.md) and a [`selectionMode`](./selectionmode-swift.property.md) of type [`NSMenu.SelectionMode.selectAny`](./selectionmode-swift.enum/selectany.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(_:format:lenient:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a percentage decimal by parsing a string according to the provided format style.
 
@@ -27,20 +28,21 @@ This initializer throws an error if the format style fails to parse the string i
 ## Parameters
 
 - `value`: A string that contains a formatted decimal value.
-- `format`: A format style that describes percent formatting conventions used by the string. The initializer uses this format’s [`Decimal.ParseStrategy`](decimal/parsestrategy.md) to parse the string.
+- `format`: A format style that describes percent formatting conventions used by the string. The initializer uses this format’s [`Decimal.ParseStrategy`](./parsestrategy.md) to parse the string.
 - `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepancies when parsing. Defaults to `true`.
 
 ## See Also
 
-- [init(String, format: Decimal.FormatStyle, lenient: Bool) throws](decimal/init(_:format:lenient:)-6fk71.md)
+### Creating a decimal by parsing a string
+- [init(String, format: Decimal.FormatStyle, lenient: Bool) throws](./init%28_,format,lenient%29-6fk71.md)
   Creates and initializes a decimal by parsing a string according to the provided format style.
-- [init(String, format: Decimal.FormatStyle.Currency, lenient: Bool) throws](decimal/init(_:format:lenient:)-8t5o2.md)
+- [init(String, format: Decimal.FormatStyle.Currency, lenient: Bool) throws](./init%28_,format,lenient%29-8t5o2.md)
   Creates and initializes a decimal by parsing a string according to the provided currency format style.
-- [init?(string: String, locale: Locale?)](decimal/init(string:locale:).md)
+- [init?(string: String, locale: Locale?)](./init%28string,locale%29.md)
   Creates and initializes a decimal by parsing a string according to the provided locale’s conventions.
-- [init<S>(S.ParseInput, strategy: S) throws](decimal/init(_:strategy:).md)
+- [init<S>(S.ParseInput, strategy: S) throws](./init%28_,strategy%29.md)
   Creates and initializes a decimal by parsing an arbitrary type according to the provided parse strategy.
-- [Decimal.ParseStrategy](decimal/parsestrategy.md)
+- [Decimal.ParseStrategy](./parsestrategy.md)
   A parse strategy for creating decimal values from formatted strings.
 
 

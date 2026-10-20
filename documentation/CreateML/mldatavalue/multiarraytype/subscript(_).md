@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,12 @@
 
 ```swift
 subscript(index: Int) -> Double { get }
+```
+
+**Other overloads**:
+
+```swift
+subscript(index: [Int]) -> Double { get }
 ```
 
 

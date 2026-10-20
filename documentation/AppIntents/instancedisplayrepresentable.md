@@ -1,7 +1,8 @@
 # InstanceDisplayRepresentable
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for providing the visual representation for an instance of a specific type.
 
@@ -11,7 +12,7 @@ An interface for providing the visual representation for an instance of a specif
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,52 +24,53 @@ protocol InstanceDisplayRepresentable : CustomLocalizedStringResourceConvertible
 ## Topics
 
 ### Providing the visual content
-- [var displayRepresentation: DisplayRepresentation](instancedisplayrepresentable/displayrepresentation.md)
+- [var displayRepresentation: DisplayRepresentation](./instancedisplayrepresentable/displayrepresentation.md)
   The visual elements to display when presenting an instance of the type.
 ### Providing a localized description
-- [var localizedStringResource: LocalizedStringResource](instancedisplayrepresentable/localizedstringresource.md)
+- [var localizedStringResource: LocalizedStringResource](./instancedisplayrepresentable/localizedstringresource.md)
   A resource that helps provide a description of this instance.
 ### Default Implementations
-- [CustomLocalizedStringResourceConvertible Implementations](instancedisplayrepresentable/customlocalizedstringresourceconvertible-implementations.md)
+- [CustomLocalizedStringResourceConvertible Implementations](./instancedisplayrepresentable/customlocalizedstringresourceconvertible-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
 ### Inherited By
-- [AppEntity](appentity.md)
-- [AssistantEntity](assistantentity.md)
-- [AssistantSchemaEntity](assistantschemaentity.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [FileEntity](fileentity.md)
-- [IndexedEntity](indexedentity.md)
-- [OwnershipProvidingEntity](ownershipprovidingentity.md)
-- [SetFocusFilterIntent](setfocusfilterintent.md)
-- [StartWorkoutIntent](startworkoutintent.md)
-- [SyncableEntity](syncableentity.md)
-- [TransientAppEntity](transientappentity.md)
-- [URLRepresentableEntity](urlrepresentableentity.md)
-- [UniqueAppEntity](uniqueappentity.md)
+- [AppEntity](./appentity.md)
+- [AssistantEntity](./assistantentity.md)
+- [AssistantSchemaEntity](./assistantschemaentity.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [FileEntity](./fileentity.md)
+- [IndexedEntity](./indexedentity.md)
+- [OwnershipProvidingEntity](./ownershipprovidingentity.md)
+- [SetFocusFilterIntent](./setfocusfilterintent.md)
+- [StartWorkoutIntent](./startworkoutintent.md)
+- [SyncableEntity](./syncableentity.md)
+- [TransientAppEntity](./transientappentity.md)
+- [URLRepresentableEntity](./urlrepresentableentity.md)
+- [UniqueAppEntity](./uniqueappentity.md)
 ### Conforming Types
-- [IntentCurrencyAmount](intentcurrencyamount.md)
-- [IntentFile](intentfile.md)
-- [IntentPaymentMethod](intentpaymentmethod.md)
-- [IntentPerson](intentperson.md)
-- [SystemShortcut](systemshortcut.md)
+- [IntentCurrencyAmount](./intentcurrencyamount.md)
+- [IntentFile](./intentfile.md)
+- [IntentPaymentMethod](./intentpaymentmethod.md)
+- [IntentPerson](./intentperson.md)
+- [SystemShortcut](./systemshortcut.md)
 
 ## See Also
 
-- [struct DisplayRepresentation](displayrepresentation.md)
+### Data representations
+- [struct DisplayRepresentation](./displayrepresentation.md)
   A type that describes the user interface presentation of a custom type.
-- [protocol DisplayRepresentable](displayrepresentable.md)
+- [protocol DisplayRepresentable](./displayrepresentable.md)
   An interface for providing a dynamic visual representation of a specific type and instances of that type.
-- [protocol TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [protocol TypeDisplayRepresentable](./typedisplayrepresentable.md)
   An interface for providing the visual representation of a specific type.
-- [struct TypeDisplayRepresentation](typedisplayrepresentation.md)
+- [struct TypeDisplayRepresentation](./typedisplayrepresentation.md)
   A type that describes the user interface presentation of a custom type.
-- [protocol StaticDisplayRepresentable](staticdisplayrepresentable.md)
+- [protocol StaticDisplayRepresentable](./staticdisplayrepresentable.md)
   An interface for providing a static visual representation of a specific type.
-- [protocol CaseDisplayRepresentable](casedisplayrepresentable.md)
+- [protocol CaseDisplayRepresentable](./casedisplayrepresentable.md)
   An interface for providing the visual representation for an iterable collection of values.
 
 

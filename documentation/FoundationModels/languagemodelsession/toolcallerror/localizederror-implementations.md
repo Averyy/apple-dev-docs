@@ -1,11 +1,12 @@
 # LocalizedError Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var errorDescription: String?](languagemodelsession/toolcallerror/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A string representation of the error description.
 
 

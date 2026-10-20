@@ -1,7 +1,8 @@
 # clearVariantSelection(for:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the variant selection for the given variant set.
 

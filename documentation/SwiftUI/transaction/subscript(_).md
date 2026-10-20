@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the transaction value associated with a custom key.
 
@@ -22,7 +23,7 @@ subscript<K>(key: K.Type) -> K.Value where K : TransactionKey { get set }
 
 #### Overview
 
-Create custom transaction values by defining a key that conforms to the [`TransactionKey`](transactionkey.md) protocol, and then using that key with the subscript operator of the [`Transaction`](transaction.md) structure to get and set a value for that key:
+Create custom transaction values by defining a key that conforms to the [`TransactionKey`](../transactionkey.md) protocol, and then using that key with the subscript operator of the [`Transaction`](../transaction.md) structure to get and set a value for that key:
 
 ```swift
 private struct MyTransactionKey: TransactionKey {
@@ -39,11 +40,12 @@ extension Transaction {
 
 ## See Also
 
-- [var isContinuous: Bool](transaction/iscontinuous.md)
+### Getting information about a transaction
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value that indicates whether the transaction originated from an action that produces a sequence of values.
-- [var scrollTargetAnchor: UnitPoint?](transaction/scrolltargetanchor.md)
+- [var scrollTargetAnchor: UnitPoint?](./scrolltargetanchor.md)
   The preferred alignment of the view within a scroll view’s visible region when scrolling to a view.
-- [var tracksVelocity: Bool](transaction/tracksvelocity.md)
+- [var tracksVelocity: Bool](./tracksvelocity.md)
   Whether this transaction will track the velocity of any animatable properties that change.
 
 

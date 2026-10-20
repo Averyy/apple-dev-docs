@@ -1,7 +1,8 @@
 # slarf1l_(_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func slarf1l_(_ side: UnsafePointer<CChar>, _ m: UnsafePointer<__LAPACK_int>, _ n: UnsafePointer<__LAPACK_int>, _ v: UnsafePointer<Float>?, _ incv: UnsafePointer<__LAPACK_int>, _ tau: UnsafePointer<Float>, _ c: UnsafeMutablePointer<Float>?, _ ldc: UnsafePointer<__LAPACK_int>, _ work: UnsafeMutablePointer<Float>?)
+```
+
+```c
+void slarf1l_(const char *side, const __LAPACK_int *m, const __LAPACK_int *n, const float *v, const __LAPACK_int *incv, const float *tau, float *c, const __LAPACK_int *ldc, float *work);
 ```
 
 

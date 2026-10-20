@@ -1,14 +1,15 @@
 # ml_probe_read
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t ml_probe_read(vm_offset_t paddr, unsigned int *val);
 ```
 

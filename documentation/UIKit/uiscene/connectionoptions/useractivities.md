@@ -1,7 +1,8 @@
 # userActivities
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about user activities that you can use to configure your scene’s interface.
 
@@ -18,11 +19,15 @@ Information about user activities that you can use to configure your scene’s i
 var userActivities: Set<NSUserActivity> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<NSUserActivity *> * userActivities;
+```
+
 #### Discussion
 
-If this property contains one or more [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects, use those objects to configure your scene’s interface when the scene connects. These activity objects represent the user activities that are available at the time the scene connects, like from search results, other apps, or [`requestSceneSessionActivation(_:userActivity:options:errorHandler:)`](uiapplication/requestscenesessionactivation(_:useractivity:options:errorhandler:).md). For example, if the user was browsing a web page, an activity object might contain the URL of that page.
+If this property contains one or more [`NSUserActivity`](../../../Foundation/nsuseractivity.md) objects, use those objects to configure your scene’s interface when the scene connects. These activity objects represent the user activities that are available at the time the scene connects, like from search results, other apps, or [`requestSceneSessionActivation(_:userActivity:options:errorHandler:)`](../../uiapplication/requestscenesessionactivation%28_,useractivity,options,errorhandler%29.md). For example, if the user was browsing a web page, an activity object might contain the URL of that page.
 
-This property doesn’t contain user activity objects related to Handoff. At connection time, UIKit delivers only the type of a Handoff interaction in the [`handoffUserActivityType`](uiscene/connectionoptions/handoffuseractivitytype.md) property. Later, it calls additional methods of [`UISceneDelegate`](uiscenedelegate.md) to deliver the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object itself.
+This property doesn’t contain user activity objects related to Handoff. At connection time, UIKit delivers only the type of a Handoff interaction in the [`handoffUserActivityType`](./handoffuseractivitytype.md) property. Later, it calls additional methods of [`UISceneDelegate`](../../uiscenedelegate.md) to deliver the [`NSUserActivity`](../../../Foundation/nsuseractivity.md) object itself.
 
 
 ---

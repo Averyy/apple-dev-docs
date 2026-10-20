@@ -1,19 +1,26 @@
 # ENExposureDaySummary
 
 **Framework**: Exposure Notification  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The summary of exposure information for a single day.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 class ENExposureDaySummary
+```
+
+```objc
+@interface ENExposureDaySummary : NSObject
 ```
 
 #### Overview
@@ -23,36 +30,37 @@ class ENExposureDaySummary
 ## Topics
 
 ### Getting Exposure Summary Information
-- [var date: Date](enexposuredaysummary/date.md)
+- [var date: Date](./enexposuredaysummary/date.md)
   The date that the exposure occurred.
-- [var confirmedClinicalDiagnosisSummary: ENExposureSummaryItem?](enexposuredaysummary/confirmedclinicaldiagnosissummary.md)
+- [var confirmedClinicalDiagnosisSummary: ENExposureSummaryItem?](./enexposuredaysummary/confirmedclinicaldiagnosissummary.md)
   The summary of exposures from a clinically-originated diagnosis.
-- [var confirmedTestSummary: ENExposureSummaryItem?](enexposuredaysummary/confirmedtestsummary.md)
+- [var confirmedTestSummary: ENExposureSummaryItem?](./enexposuredaysummary/confirmedtestsummary.md)
   The summary of exposures with a confirmed diagnosis.
-- [var recursiveSummary: ENExposureSummaryItem?](enexposuredaysummary/recursivesummary.md)
+- [var recursiveSummary: ENExposureSummaryItem?](./enexposuredaysummary/recursivesummary.md)
   The summary of exposures that came from someone else who was exposed.
-- [var selfReportedSummary: ENExposureSummaryItem?](enexposuredaysummary/selfreportedsummary.md)
+- [var selfReportedSummary: ENExposureSummaryItem?](./enexposuredaysummary/selfreportedsummary.md)
   The summary of self-reported exposures.
-- [var daySummary: ENExposureSummaryItem](enexposuredaysummary/daysummary.md)
+- [var daySummary: ENExposureSummaryItem](./enexposuredaysummary/daysummary.md)
   The summary of all exposures for the day.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ENExposureDetectionSummary](enexposuredetectionsummary.md)
+### Summaries
+- [class ENExposureDetectionSummary](./enexposuredetectionsummary.md)
   A summary of exposures.
-- [class ENExposureSummaryItem](enexposuresummaryitem.md)
+- [class ENExposureSummaryItem](./enexposuresummaryitem.md)
   The summary of exposures for a specific time period or report type.
 
 

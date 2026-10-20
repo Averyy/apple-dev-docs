@@ -1,7 +1,8 @@
 # getOutputTypes(with:inputTypes:compilationDescriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get output shapes for a specialized executable.
 
@@ -17,6 +18,10 @@ Get output shapes for a specialized executable.
 
 ```swift
 func getOutputTypes(with device: MPSGraphDevice?, inputTypes: [MPSGraphType], compilationDescriptor: MPSGraphCompilationDescriptor?) -> [MPSGraphShapedType]?
+```
+
+```objc
+- (NSArray<MPSGraphShapedType *> *) getOutputTypesWithDevice:(MPSGraphDevice *) device inputTypes:(NSArray<MPSGraphType *> *) inputTypes compilationDescriptor:(MPSGraphCompilationDescriptor *) compilationDescriptor;
 ```
 
 #### Discussion

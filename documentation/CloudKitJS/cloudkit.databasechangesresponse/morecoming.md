@@ -1,7 +1,8 @@
 # moreComing
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates there are more database changes to fetch.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates there are more database changes to fetch.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean moreComing;
 ```
 
@@ -20,9 +21,10 @@ readonly attribute Boolean moreComing;
 
 ## See Also
 
-- [syncToken](cloudkit.databasechangesresponse/synctoken.md)
+### Response Properties
+- [syncToken](./synctoken.md)
   A point in the database’s change history.
-- [zones](cloudkit.databasechangesresponse/zones.md)
+- [zones](./zones.md)
   The zones in the database where the changes occurred.
 
 

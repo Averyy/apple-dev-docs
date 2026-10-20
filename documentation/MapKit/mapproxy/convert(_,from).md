@@ -1,7 +1,8 @@
 # convert(_:from:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a point in the specified coordinate space to a map coordinate.
 
@@ -11,7 +12,7 @@ Converts a point in the specified coordinate space to a map coordinate.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func convert(_ point: CGPoint, from space: some CoordinateSpaceProtocol) -> CLLo
 
 #### Return Value
 
-Returns a [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d); or `nil,` if the specified `point` isn’t represented by a point in the [`MapReader`](mapreader.md) associated with a [`Map`](map.md).
+Returns a [`CLLocationCoordinate2D`](../../CoreLocation/cllocationcoordinate2d.md); or `nil,` if the specified `point` isn’t represented by a point in the [`MapReader`](../mapreader.md) associated with a [`Map`](../map.md).
 
 ## Parameters
 
@@ -31,7 +32,8 @@ Returns a [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/c
 
 ## See Also
 
-- [func convert(CLLocationCoordinate2D, to: some CoordinateSpaceProtocol) -> CGPoint?](mapproxy/convert(_:to:).md)
+### Converting between coordinate spaces
+- [func convert(CLLocationCoordinate2D, to: some CoordinateSpaceProtocol) -> CGPoint?](./convert%28_,to%29.md)
   Converts a map coordinate to a point in the specified coordinate space.
 
 

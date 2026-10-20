@@ -1,7 +1,8 @@
 # ExtensibleSingleSignOnKerberos
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures an app extension that performs single sign-on with the Kerberos extension.
 
@@ -14,7 +15,7 @@ The payload that configures an app extension that performs single sign-on with t
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSingleSignOnKerberos
 ```
 
@@ -26,7 +27,7 @@ This is a version of the profile that defines the specific keys and values neede
 
 The system supports user channel installation in macOS 11 and later.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +39,7 @@ The system supports user channel installation in macOS 11 and later.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -92,30 +93,43 @@ The system supports user channel installation in macOS 11 and later.
 ## Topics
 
 ### Objects
-- [object ExtensibleSingleSignOnKerberos.ExtensionData](extensiblesinglesignonkerberos/extensiondata-data.dictionary.md)
+- [object ExtensibleSingleSignOnKerberos.ExtensionData](./extensiblesinglesignonkerberos/extensiondata-data.dictionary.md)
   The additional data to pass to the app extension.
 
 ## Properties
 
 - `ExtensionData` (ExtensibleSingleSignOnKerberos.ExtensionData): This is the dictionary used by the Apple built-in Kerberos extension.
 - `ExtensionIdentifier` (string) *(required)*: Set this to `com.apple.AppSSOKerberos.KerberosExtension` for this extension.
-- `Hosts` ([string]): One or more host or domain names for which the app extension performs SSO. The system: - Matches host or domain names case-insensitively
-- Requires that all the host and domain names of all installed Extensible SSO payloads are unique > **Note**:  Host names that begin with a “.” are wildcard suffixes that match all subdomains; otherwise the host name needs be an exact match.
+
+  **Allowed Values**: `com.apple.AppSSOKerberos.KerberosExtension`
+- `Hosts` ([string]): One or more host or domain names for which the app extension performs SSO.
+
+  The system:
+
+  - Matches host or domain names case-insensitively
+  - Requires that all the host and domain names of all installed Extensible SSO payloads are unique
+
+  > **Note**:  Host names that begin with a “.” are wildcard suffixes that match all subdomains; otherwise the host name needs be an exact match.
 - `Realm` (string) *(required)*: The Kerberos realm. Use proper capitalization for this value. If in an Active Directory forest, this is the realm where the user logs in.
 - `TeamIdentifier` (string) *(required)*: Set this to `apple` for this extension.
+
+  **Allowed Values**: `apple`
 - `Type` (string) *(required)*: Set this to `Credential` for this extension.
+
+  **Allowed Values**: `Credential`
 
 ## See Also
 
-- [object DirectoryService](directoryservice.md)
+### Authentication
+- [object DirectoryService](./directoryservice.md)
   The payload that configures an Active Directory (AD) domain.
-- [object ExtensibleSingleSignOn](extensiblesinglesignon.md)
+- [object ExtensibleSingleSignOn](./extensiblesinglesignon.md)
   The payload that configures an app extension that performs single sign-on (SSO).
-- [object Identification](identification.md)
+- [object Identification](./identification.md)
   The payload that configures the names of the account user.
-- [object IdentityPreference](identitypreference.md)
+- [object IdentityPreference](./identitypreference.md)
   The payload that configures the user’s identity on the device.
-- [object SingleSignOn](singlesignon.md)
+- [object SingleSignOn](./singlesignon.md)
   The payload that configures single sign-on (SSO).
 
 

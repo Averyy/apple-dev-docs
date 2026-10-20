@@ -1,7 +1,8 @@
 # ClothQueryVolumeEvents.NewBodyIntersections.Intersection
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An intersection with a cloth body.
 
@@ -19,22 +20,23 @@ struct Intersection
 ## Topics
 
 ### Inspecting the intersection
-- [let bodyEntity: Entity](clothqueryvolumeevents/newbodyintersections/intersection/bodyentity.md)
+- [let bodyEntity: Entity](./intersection/bodyentity.md)
   The entity of the body that intersected the volume.
-- [var bodyComponent: ClothBodyComponent?](clothqueryvolumeevents/newbodyintersections/intersection/bodycomponent.md)
-  The [`ClothBodyComponent`](clothbodycomponent.md) of the intersecting body, if still present on the entity.
-- [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](clothqueryvolumeevents/newbodyintersections/intersection/withparticleindices(_:).md)
+- [var bodyComponent: ClothBodyComponent?](./intersection/bodycomponent.md)
+  The [`ClothBodyComponent`](../../clothbodycomponent.md) of the intersecting body, if still present on the entity.
+- [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](./intersection/withparticleindices%28_%29.md)
   Provides access to the indices of particles that intersected the volume.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func withIntersections<Result>((Span<ClothQueryVolumeEvents.NewBodyIntersections.Intersection>) -> Result) -> Result](clothqueryvolumeevents/newbodyintersections/withintersections(_:).md)
+### Accessing the intersections
+- [func withIntersections<Result>((Span<ClothQueryVolumeEvents.NewBodyIntersections.Intersection>) -> Result) -> Result](./withintersections%28_%29.md)
   Provides access to the intersections with cloth bodies that took place.
 
 

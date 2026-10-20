@@ -1,7 +1,8 @@
 # suffix(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a subset of the column, given a number of final elements.
 
@@ -29,11 +30,12 @@ A new column.
 
 ## See Also
 
-- [subscript(Range<Int>) -> MLUntypedColumn](mluntypedcolumn/subscript(_:)-33ua2.md)
+### Selecting elements to generate an untyped column
+- [subscript(Range<Int>) -> MLUntypedColumn](./subscript%28_%29-33ua2.md)
   Creates a subset of the column, given a range of elements.
-- [subscript<R>(R) -> MLUntypedColumn](mluntypedcolumn/subscript(_:)-9dpy7.md)
+- [subscript<R>(R) -> MLUntypedColumn](./subscript%28_%29-9dpy7.md)
   Creates a subset of the column, given a range expression of elements.
-- [func prefix(Int) -> MLUntypedColumn](mluntypedcolumn/prefix(_:).md)
+- [func prefix(Int) -> MLUntypedColumn](./prefix%28_%29.md)
   Creates a subset of the column, given a number of initial elements.
 
 

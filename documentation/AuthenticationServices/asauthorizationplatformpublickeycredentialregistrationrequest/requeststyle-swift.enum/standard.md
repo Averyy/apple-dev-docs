@@ -1,7 +1,8 @@
 # ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle.standard
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Perform a request using the standard presentation style. This is the default style.
 
@@ -16,6 +17,10 @@ Perform a request using the standard presentation style. This is the default sty
 
 ```swift
 case standard
+```
+
+```c
+ASAuthorizationPlatformPublicKeyCredentialRegistrationRequestStyleStandard
 ```
 
 

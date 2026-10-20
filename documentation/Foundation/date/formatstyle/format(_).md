@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a locale-aware string representation from a date value.
 
@@ -26,7 +27,7 @@ A string representation of the date.
 
 #### Discussion
 
-The [`format(_:)`](date/formatstyle/format(_:).md) instance method generates a string from the provided date. Once you create a style, you can use it to format dates multiple times.
+The [`format(_:)`](./format%28_%29.md) instance method generates a string from the provided date. Once you create a style, you can use it to format dates multiple times.
 
 The following example creates a format style to guide parsing a set of string representations of dates. It also creates a second format style, applying it repeatedly to produce more detailed string representations of those dates for a different locale.
 

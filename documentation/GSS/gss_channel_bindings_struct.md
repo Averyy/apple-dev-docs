@@ -1,7 +1,8 @@
 # gss_channel_bindings_struct
 
 **Framework**: GSS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure defining a channel bindings descriptor that specifies the communications channel used to carry a context.
 
@@ -18,37 +19,42 @@ The structure defining a channel bindings descriptor that specifies the communic
 struct gss_channel_bindings_struct
 ```
 
+```c
+struct gss_channel_bindings_struct;
+```
+
 ## Topics
 
 ### Instance Properties
-- [var initiator_addrtype: OM_uint32](gss_channel_bindings_struct/initiator_addrtype.md)
-  The type of address contained in the [`initiator_address`](gss_channel_bindings_struct/initiator_address.md) field.
-- [var initiator_address: gss_buffer_desc](gss_channel_bindings_struct/initiator_address.md)
-  The network address of the acceptor, in the form specified by [`initiator_addrtype`](gss_channel_bindings_struct/initiator_addrtype.md).
-- [var acceptor_addrtype: OM_uint32](gss_channel_bindings_struct/acceptor_addrtype.md)
-  The type of address contained in the [`acceptor_address`](gss_channel_bindings_struct/acceptor_address.md) field.
-- [var acceptor_address: gss_buffer_desc](gss_channel_bindings_struct/acceptor_address.md)
-  The network address of the acceptor, in the form specified by [`acceptor_addrtype`](gss_channel_bindings_struct/acceptor_addrtype.md).
-- [var application_data: gss_buffer_desc](gss_channel_bindings_struct/application_data.md)
+- [var initiator_addrtype: OM_uint32](./gss_channel_bindings_struct/initiator_addrtype.md)
+  The type of address contained in the [`initiator_address`](./gss_channel_bindings_struct/initiator_address.md) field.
+- [var initiator_address: gss_buffer_desc](./gss_channel_bindings_struct/initiator_address.md)
+  The network address of the acceptor, in the form specified by [`initiator_addrtype`](./gss_channel_bindings_struct/initiator_addrtype.md).
+- [var acceptor_addrtype: OM_uint32](./gss_channel_bindings_struct/acceptor_addrtype.md)
+  The type of address contained in the [`acceptor_address`](./gss_channel_bindings_struct/acceptor_address.md) field.
+- [var acceptor_address: gss_buffer_desc](./gss_channel_bindings_struct/acceptor_address.md)
+  The network address of the acceptor, in the form specified by [`acceptor_addrtype`](./gss_channel_bindings_struct/acceptor_addrtype.md).
+- [var application_data: gss_buffer_desc](./gss_channel_bindings_struct/application_data.md)
   Application specific data for use in communicating a channel binding.
 ### Initialization
-- [init()](gss_channel_bindings_struct/init.md)
+- [init()](./gss_channel_bindings_struct/init%28%29.md)
   Initialize a new, empty channel bindings structure.
-- [init(initiator_addrtype: OM_uint32, initiator_address: gss_buffer_desc, acceptor_addrtype: OM_uint32, acceptor_address: gss_buffer_desc, application_data: gss_buffer_desc)](gss_channel_bindings_struct/init(initiator_addrtype:initiator_address:acceptor_addrtype:acceptor_address:application_data:).md)
+- [init(initiator_addrtype: OM_uint32, initiator_address: gss_buffer_desc, acceptor_addrtype: OM_uint32, acceptor_address: gss_buffer_desc, application_data: gss_buffer_desc)](./gss_channel_bindings_struct/init%28initiator_addrtype,initiator_address,acceptor_addrtype,acceptor_address,application_data%29.md)
   Initialize a new channel bindings structure with the given configuration.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [typealias gss_ctx_id_t](gss_ctx_id_t.md)
+### Channel Bindings
+- [typealias gss_ctx_id_t](./gss_ctx_id_t.md)
   A pointer to an opaque type that you use to communicate context pointers with GSS-API functions.
-- [typealias gss_channel_bindings_t](gss_channel_bindings_t.md)
+- [typealias gss_channel_bindings_t](./gss_channel_bindings_t.md)
   A pointer to a channel bindings descriptor that specifies the communications channel used to carry a context.
-- [typealias gss_const_channel_bindings_t](gss_const_channel_bindings_t.md)
+- [typealias gss_const_channel_bindings_t](./gss_const_channel_bindings_t.md)
   A pointer to an immutable channel bindings descriptor that you use to specify the communications channel used to carry a context.
 
 

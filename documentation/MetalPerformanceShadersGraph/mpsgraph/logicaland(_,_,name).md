@@ -1,7 +1,8 @@
 # logicalAND(_:_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elementwise logical AND of the input tensors.
 
@@ -17,6 +18,10 @@ Returns the elementwise logical AND of the input tensors.
 
 ```swift
 func logicalAND(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) logicalANDWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

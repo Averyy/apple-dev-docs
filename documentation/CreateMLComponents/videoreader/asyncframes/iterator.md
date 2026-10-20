@@ -1,7 +1,8 @@
 # VideoReader.AsyncFrames.Iterator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async iterator of video frames.
 
@@ -22,11 +23,12 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> VideoReader.AsyncFrames.Iterator](videoreader/asyncframes/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> VideoReader.AsyncFrames.Iterator](./makeasynciterator%28%29.md)
   Constructs an iterator.
 
 

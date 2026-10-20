@@ -1,7 +1,8 @@
 # crownSequencer
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object to use when directly tracking crown events.
 
@@ -14,9 +15,13 @@ The object to use when directly tracking crown events.
 var crownSequencer: WKCrownSequencer { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) WKCrownSequencer * crownSequencer;
+```
+
 #### Discussion
 
-Use the object in this property to monitor crown-related events yourself. You can use this object in an interface that also includes a [`WKInterfacePicker`](wkinterfacepicker.md), but only one of those objects can receive crown events at any given time. For information about how to configure a crown sequencer object, see [`WKCrownSequencer`](wkcrownsequencer.md).
+Use the object in this property to monitor crown-related events yourself. You can use this object in an interface that also includes a [`WKInterfacePicker`](../wkinterfacepicker.md), but only one of those objects can receive crown events at any given time. For information about how to configure a crown sequencer object, see [`WKCrownSequencer`](../wkcrownsequencer.md).
 
 
 ---

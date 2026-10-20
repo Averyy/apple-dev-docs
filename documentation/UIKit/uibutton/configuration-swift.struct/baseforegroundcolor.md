@@ -1,7 +1,8 @@
 # baseForegroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The untransformed color for foreground views.
 
@@ -10,7 +11,7 @@ The untransformed color for foreground views.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ The button configuration may transform the base color before applying it to fore
 
 ## See Also
 
-- [var baseBackgroundColor: UIColor?](uibutton/configuration-swift.struct/basebackgroundcolor.md)
+### Configuring button colors
+- [var baseBackgroundColor: UIColor?](./basebackgroundcolor.md)
   The untransformed color for background views.
 
 

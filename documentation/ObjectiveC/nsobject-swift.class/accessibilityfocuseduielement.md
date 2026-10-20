@@ -1,15 +1,20 @@
 # accessibilityFocusedUIElement
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var accessibilityFocusedUIElement: Any? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) id accessibilityFocusedUIElement;
 ```
 
 

@@ -1,14 +1,15 @@
 # iff_detached_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*iff_detached_func)(void *cookie, ifnet_t interface);
 ```
 

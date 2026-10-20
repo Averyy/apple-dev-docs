@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 An associated type that represents the result.
@@ -23,7 +24,8 @@ associatedtype Result
 
 ## See Also
 
-- [enum VisionResult](visionresult.md)
+### Performing the request
+- [enum VisionResult](../visionresult.md)
   The result the framework produces by performing a request.
 
 

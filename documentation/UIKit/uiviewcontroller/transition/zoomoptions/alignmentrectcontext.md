@@ -1,7 +1,8 @@
 # UIViewController.Transition.ZoomOptions.AlignmentRectContext
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains a zoom transition’s starting and ending views.
 
@@ -18,33 +19,38 @@ An object that contains a zoom transition’s starting and ending views.
 class AlignmentRectContext
 ```
 
+```objc
+@interface UIZoomTransitionAlignmentRectContext : NSObject
+```
+
 ## Topics
 
 ### Accessing views
-- [var sourceView: UIView](uiviewcontroller/transition/zoomoptions/alignmentrectcontext/sourceview.md)
+- [var sourceView: UIView](./alignmentrectcontext/sourceview.md)
   The zoomed-out view, for example a thumbnail image.
-- [var zoomedViewController: UIViewController](uiviewcontroller/transition/zoomoptions/alignmentrectcontext/zoomedviewcontroller.md)
+- [var zoomedViewController: UIViewController](./alignmentrectcontext/zoomedviewcontroller.md)
   The zoomed in view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../../Swift/customstringconvertible.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [NSObjectProtocol](../../../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var alignmentRectProvider: ((UIViewController.Transition.ZoomOptions.AlignmentRectContext) -> CGRect?)?](uiviewcontroller/transition/zoomoptions/alignmentrectprovider.md)
+### Setting options
+- [var alignmentRectProvider: ((UIViewController.Transition.ZoomOptions.AlignmentRectContext) -> CGRect?)?](./alignmentrectprovider.md)
   A closure that returns the alignment rectangle for the starting and ending views.
-- [var dimmingColor: UIColor?](uiviewcontroller/transition/zoomoptions/dimmingcolor.md)
+- [var dimmingColor: UIColor?](./dimmingcolor.md)
   The dimming color.
-- [var dimmingVisualEffect: UIBlurEffect?](uiviewcontroller/transition/zoomoptions/dimmingvisualeffect.md)
+- [var dimmingVisualEffect: UIBlurEffect?](./dimmingvisualeffect.md)
   The dimming visual effect.
 
 

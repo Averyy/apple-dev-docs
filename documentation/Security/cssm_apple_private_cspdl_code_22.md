@@ -1,7 +1,8 @@
 # CSSM_APPLE_PRIVATE_CSPDL_CODE_22
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var CSSM_APPLE_PRIVATE_CSPDL_CODE_22: Int { get }
+```
+
+```c
+CSSM_APPLE_PRIVATE_CSPDL_CODE_22
 ```
 
 

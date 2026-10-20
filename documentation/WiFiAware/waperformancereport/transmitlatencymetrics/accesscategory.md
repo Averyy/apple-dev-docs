@@ -1,7 +1,8 @@
 # accessCategory
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Wi-Fi quality-of-service (QoS) category that this latency data tracks.
 

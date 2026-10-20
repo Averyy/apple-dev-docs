@@ -1,7 +1,8 @@
 # init(forUnionSet:with:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an expression object that represents the union of a specified set and collection.
 
@@ -20,6 +21,10 @@ Creates an expression object that represents the union of a specified set and co
 init(forUnionSet left: NSExpression, with right: NSExpression)
 ```
 
+```objc
++ (NSExpression *) expressionForUnionSet:(NSExpression *) left with:(NSExpression *) right;
+```
+
 #### Return Value
 
 An new `NSExpression` object that represents the union of `left` and `right`.
@@ -31,11 +36,12 @@ An new `NSExpression` object that represents the union of `left` and `right`.
 
 ## See Also
 
-- [init(forAggregate: [NSExpression])](nsexpression/init(foraggregate:).md)
+### Creating a Collection Expression
+- [init(forAggregate: [NSExpression])](./init%28foraggregate%29.md)
   Creates an aggregate expression for a specified collection.
-- [init(forIntersectSet: NSExpression, with: NSExpression)](nsexpression/init(forintersectset:with:).md)
+- [init(forIntersectSet: NSExpression, with: NSExpression)](./init%28forintersectset,with%29.md)
   Creates an expression object that represents the intersection of a specified set and collection.
-- [init(forMinusSet: NSExpression, with: NSExpression)](nsexpression/init(forminusset:with:).md)
+- [init(forMinusSet: NSExpression, with: NSExpression)](./init%28forminusset,with%29.md)
   Creates an expression object that represents the subtraction of a specified collection from a specified set.
 
 

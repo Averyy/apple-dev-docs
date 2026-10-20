@@ -1,7 +1,8 @@
 # init(named:inBundle:compatibleWithTraitCollection:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object using the named asset that’s compatible with the specified trait collection.
 

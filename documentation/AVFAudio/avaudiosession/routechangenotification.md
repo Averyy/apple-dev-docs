@@ -1,7 +1,8 @@
 # routeChangeNotification
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when its audio route changes.
 
@@ -19,36 +20,41 @@ A notification the system posts when its audio route changes.
 class let routeChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVAudioSessionRouteChangeNotification;
+```
+
 ## Mentions
 
-- [Responding to audio route changes](responding-to-audio-route-changes.md)
+- [Responding to audio route changes](../responding-to-audio-route-changes.md)
 
 #### Discussion
 
-The [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/userinfo) dictionary of this notification contains the [`AVAudioSessionRouteChangeReasonKey`](avaudiosessionroutechangereasonkey.md) and [`AVAudioSessionRouteChangePreviousRouteKey`](avaudiosessionroutechangepreviousroutekey.md) keys, which provide information about the route change.
+The [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary of this notification contains the [`AVAudioSessionRouteChangeReasonKey`](../avaudiosessionroutechangereasonkey.md) and [`AVAudioSessionRouteChangePreviousRouteKey`](../avaudiosessionroutechangepreviousroutekey.md) keys, which provide information about the route change.
 
-See [`Responding to audio route changes`](responding-to-audio-route-changes.md) for more information on using this notification.
+See [Responding to audio route changes](../responding-to-audio-route-changes.md) for more information on using this notification.
 
 The system posts this notification on a secondary thread.
 
 ## Topics
 
 ### User info keys
-- [let AVAudioSessionRouteChangeReasonKey: String](avaudiosessionroutechangereasonkey.md)
+- [let AVAudioSessionRouteChangeReasonKey: String](../avaudiosessionroutechangereasonkey.md)
   A user info key that’s used to retrieve the route change reason.
-- [let AVAudioSessionRouteChangePreviousRouteKey: String](avaudiosessionroutechangepreviousroutekey.md)
+- [let AVAudioSessionRouteChangePreviousRouteKey: String](../avaudiosessionroutechangepreviousroutekey.md)
   A user info key that’s used to retrieve the previously active audio session route.
 ### User info values
-- [AVAudioSession.RouteChangeReason](avaudiosession/routechangereason.md)
+- [AVAudioSession.RouteChangeReason](./routechangereason.md)
   Constants that indicate the reason for an audio route change.
 
 ## See Also
 
-- [var currentRoute: AVAudioSessionRouteDescription](avaudiosession/currentroute.md)
+### Inspecting the current route
+- [var currentRoute: AVAudioSessionRouteDescription](./currentroute.md)
   A description of the current audio route’s input and output ports.
-- [class AVAudioSessionRouteDescription](avaudiosessionroutedescription.md)
+- [class AVAudioSessionRouteDescription](../avaudiosessionroutedescription.md)
   An object that describes the input and output ports associated with a session’s audio route.
-- [class AVAudioSessionPortDescription](avaudiosessionportdescription.md)
+- [class AVAudioSessionPortDescription](../avaudiosessionportdescription.md)
   Information about the capabilities of the port and the hardware channels it supports.
 
 

@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: StoreKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Facilitates accessing product properties on a picker option value.
 
@@ -21,13 +22,14 @@ subscript<T>(dynamicMember keyPath: KeyPath<Product, T>) -> T { get }
 
 #### Discussion
 
-You don’t use this subscript directly. Instead, access the properties of a [`Product`](product.md) instance directly on a [`SubscriptionStoreControlStyleConfiguration.PickerOption`](subscriptionstorecontrolstyleconfiguration/pickeroption.md) value.
+You don’t use this subscript directly. Instead, access the properties of a [`Product`](../../product.md) instance directly on a [`SubscriptionStoreControlStyleConfiguration.PickerOption`](../pickeroption.md) value.
 
 ## See Also
 
-- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T?>) -> T?](subscriptionstorecontrolstyleconfiguration/pickeroption/subscript(dynamicmember:)-2ahxy.md)
+### Dynamic member lookup support
+- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T?>) -> T?](./subscript%28dynamicmember%29-2ahxy.md)
   Facilitates accessing optional subscription properties on a picker option value.
-- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T>) -> T?](subscriptionstorecontrolstyleconfiguration/pickeroption/subscript(dynamicmember:)-4f3i1.md)
+- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T>) -> T?](./subscript%28dynamicmember%29-4f3i1.md)
   Facilitates accessing subscription properties on a picker option value.
 
 

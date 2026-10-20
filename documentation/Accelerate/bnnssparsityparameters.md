@@ -1,7 +1,8 @@
 # BNNSSparsityParameters
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -18,6 +19,10 @@
 struct BNNSSparsityParameters
 ```
 
+```c
+typedef struct { ... } BNNSSparsityParameters;
+```
+
 #### Overview
 
 Parameters to describe sparsity attributes
@@ -27,30 +32,31 @@ use this data structure as hint for BNNSNDArrayFullyConnectedSparsify for BNNSSp
 ## Topics
 
 ### Initializers
-- [init()](bnnssparsityparameters/init.md)
-- [init(flags: UInt64, sparsity_ratio: (UInt32, UInt32), sparsity_type: BNNSSparsityType, target_system: BNNSTargetSystem)](bnnssparsityparameters/init(flags:sparsity_ratio:sparsity_type:target_system:).md)
+- [init()](./bnnssparsityparameters/init%28%29.md)
+- [init(flags: UInt64, sparsity_ratio: (UInt32, UInt32), sparsity_type: BNNSSparsityType, target_system: BNNSTargetSystem)](./bnnssparsityparameters/init%28flags,sparsity_ratio,sparsity_type,target_system%29.md)
 ### Instance Properties
-- [var flags: UInt64](bnnssparsityparameters/flags.md)
-- [var sparsity_ratio: (UInt32, UInt32)](bnnssparsityparameters/sparsity_ratio.md)
-- [var sparsity_type: BNNSSparsityType](bnnssparsityparameters/sparsity_type.md)
-- [var target_system: BNNSTargetSystem](bnnssparsityparameters/target_system.md)
+- [var flags: UInt64](./bnnssparsityparameters/flags.md)
+- [var sparsity_ratio: (UInt32, UInt32)](./bnnssparsityparameters/sparsity_ratio.md)
+- [var sparsity_type: BNNSSparsityType](./bnnssparsityparameters/sparsity_type.md)
+- [var target_system: BNNSTargetSystem](./bnnssparsityparameters/target_system.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct BNNSDataType](bnnsdatatype.md)
+### Structures
+- [struct BNNSDataType](./bnnsdatatype.md)
   BNNS Data Types.
-- [struct BNNSSparsityType](bnnssparsitytype.md)
-- [struct BNNSTargetSystem](bnnstargetsystem.md)
-- [struct bnns_graph_argument_t](bnns_graph_argument_t.md)
+- [struct BNNSSparsityType](./bnnssparsitytype.md)
+- [struct BNNSTargetSystem](./bnnstargetsystem.md)
+- [struct bnns_graph_argument_t](./bnns_graph_argument_t.md)
   Describes data associated with an input or output argument
-- [struct BNNSImageStackDescriptor](bnnsimagestackdescriptor.md)
-- [struct BNNSVectorDescriptor](bnnsvectordescriptor.md)
+- [struct BNNSImageStackDescriptor](./bnnsimagestackdescriptor.md)
+- [struct BNNSVectorDescriptor](./bnnsvectordescriptor.md)
 
 
 ---

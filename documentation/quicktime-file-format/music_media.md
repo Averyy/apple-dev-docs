@@ -1,6 +1,7 @@
 # Music media
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Store note-based audio data, such as MIDI data, in QuickTime movies.
 
@@ -8,9 +9,9 @@ Store note-based audio data, such as MIDI data, in QuickTime movies.
 
 Music media is used to store note-based audio data, such as MIDI data, in QuickTime movies. It has a media type of `'musi'`.
 
-#### Music Sample Description
+#### Music sample description
 
-The music sample description uses the standard sample description header, as described in  [`Sample description atom`](sample_description_atom.md).
+The music sample description uses the standard sample description header, as described in  [`Sample description atom`](./sample_description_atom.md).
 
 The data format field in the sample description is always set to `'musi'`. The music media handler adds an additional 32-bit integer field to the sample description containing flags. Currently no flags are defined, and this field should be set to `0`.
 
@@ -22,15 +23,16 @@ The sample data for music samples consists entirely of data in the QuickTime mus
 
 ## See Also
 
-- [Video media](video_media.md)
+### Video and sound
+- [Video media](./video_media.md)
   Store compressed and uncompressed image data in QuickTime movies.
-- [Sound media](sound_media.md)
+- [Sound media](./sound_media.md)
   Store compressed and uncompressed audio data in QuickTime movies.
-- [MPEG-1 media](mpeg-1_media.md)
+- [MPEG-1 media](./mpeg-1_media.md)
   Store MPEG-1 video streams, MPEG-1, layer 2 audio streams, and multiplexed MPEG-1 audio and video streams in QuickTime movies.
-- [Movie media](movie_media.md)
+- [Movie media](./movie_media.md)
   Movie media is used to encapsulate embedded movies within QuickTime movies.
-- [Defining media data layouts](appendix_b_defining_media_data_layouts.md)
+- [Defining media data layouts](./appendix_b_defining_media_data_layouts.md)
   Use efficient media layouts.
 
 

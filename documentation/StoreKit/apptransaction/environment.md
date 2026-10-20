@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The server environment that signs the app transaction.
 
@@ -22,7 +23,8 @@ let environment: AppStore.Environment
 
 ## See Also
 
-- [AppStore.Environment](appstore/environment.md)
+### Getting the environment
+- [AppStore.Environment](../appstore/environment.md)
   Constants that represent the App Store server environment.
 
 

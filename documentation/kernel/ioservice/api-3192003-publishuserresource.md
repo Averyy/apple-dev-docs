@@ -1,14 +1,15 @@
 # publishUserResource
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 static void publishUserResource(const OSSymbol *key, OSObject *value);
 ```
 

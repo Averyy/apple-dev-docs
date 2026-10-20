@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object you use to respond to changes in the drawn content or with the selected tool.
 
@@ -17,9 +18,14 @@ The object you use to respond to changes in the drawn content or with the select
 weak var delegate: (any PKCanvasViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PKCanvasViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol PKCanvasViewDelegate](pkcanvasviewdelegate.md)
+### Responding to drawing-related changes
+- [protocol PKCanvasViewDelegate](../pkcanvasviewdelegate.md)
   Methods for monitoring drawing related changes in a canvas view.
 
 

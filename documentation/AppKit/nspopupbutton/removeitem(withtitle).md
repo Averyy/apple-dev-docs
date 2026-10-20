@@ -1,12 +1,13 @@
 # removeItem(withTitle:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the item with the specified title from the menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Removes the item with the specified title from the menu.
 func removeItem(withTitle title: String)
 ```
 
+```objc
+- (void) removeItemWithTitle:(NSString *) title;
+```
+
 #### Discussion
 
-This method removes the first item it finds with the specified name. This method then uses [`synchronizeTitleAndSelectedItem()`](nspopupbutton/synchronizetitleandselecteditem().md) to refresh the menu.
+This method removes the first item it finds with the specified name. This method then uses [`synchronizeTitleAndSelectedItem()`](./synchronizetitleandselecteditem%28%29.md) to refresh the menu.
 
 ## Parameters
 
@@ -24,15 +29,16 @@ This method removes the first item it finds with the specified name. This method
 
 ## See Also
 
-- [func addItem(withTitle: String)](nspopupbutton/additem(withtitle:).md)
+### Inserting and deleting items
+- [func addItem(withTitle: String)](./additem%28withtitle%29.md)
   Adds an item with the specified title to the end of the menu.
-- [func addItems(withTitles: [String])](nspopupbutton/additems(withtitles:).md)
+- [func addItems(withTitles: [String])](./additems%28withtitles%29.md)
   Adds multiple items to the end of the menu.
-- [func insertItem(withTitle: String, at: Int)](nspopupbutton/insertitem(withtitle:at:).md)
+- [func insertItem(withTitle: String, at: Int)](./insertitem%28withtitle,at%29.md)
   Inserts an item at the specified position in the menu.
-- [func removeAllItems()](nspopupbutton/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all items in the receiver’s item menu.
-- [func removeItem(at: Int)](nspopupbutton/removeitem(at:).md)
+- [func removeItem(at: Int)](./removeitem%28at%29.md)
   Removes the item at the specified index.
 
 

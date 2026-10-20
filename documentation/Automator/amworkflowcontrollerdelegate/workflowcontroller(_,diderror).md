@@ -1,7 +1,8 @@
 # workflowController(_:didError:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the workflow encounters an error.
 
@@ -15,10 +16,14 @@ Notifies the delegate when the workflow encounters an error.
 optional func workflowController(_ controller: AMWorkflowController, didError error: any Error)
 ```
 
+```objc
+- (void) workflowController:(AMWorkflowController *) controller didError:(NSError *) error;
+```
+
 ## Parameters
 
 - `controller`: The controller object sending the message.
-- `error`: If a workflow error occurs, upon return contains an instance of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that describes the problem.
+- `error`: If a workflow error occurs, upon return contains an instance of [`NSError`](../../Foundation/nserror.md) that describes the problem.
 
 
 ---

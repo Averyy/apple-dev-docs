@@ -7,7 +7,7 @@ Send a notification as with sendAsyncResult, but with finite queueing.
 
 ## Declaration
 
-```swift
+```c
 static IOReturn sendAsyncResult64WithOptions(
  OSAsyncReference64 reference, 
  IOReturn result,
@@ -22,12 +22,13 @@ IOUserClient::sendAsyncResult64() will infitely queue messages if the client is 
 
 ## See Also
 
-- [exportObjectToClient](iouserclient/1809421-exportobjecttoclient.md)
-- [releaseAsyncReference64](iouserclient/1809435-releaseasyncreference64.md)
+### Miscellaneous
+- [exportObjectToClient](./api-1809421-exportobjecttoclient.md)
+- [releaseAsyncReference64](./api-1809435-releaseasyncreference64.md)
   Release the mach_port_t reference held within the OSAsyncReference64 structure.
-- [releaseNotificationPort](iouserclient/1809442-releasenotificationport.md)
+- [releaseNotificationPort](./api-1809442-releasenotificationport.md)
   Release the mach_port_t passed to registerNotificationPort().
-- [removeMappingForDescriptor](iouserclient/1809451-removemappingfordescriptor.md)
+- [removeMappingForDescriptor](./api-1809451-removemappingfordescriptor.md)
 
 
 ---

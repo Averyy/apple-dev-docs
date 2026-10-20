@@ -1,7 +1,8 @@
 # Get Assets
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the set of assets that your organization manages.
 
@@ -10,10 +11,10 @@ Get the set of assets that your organization manages.
 
 ## Mentions
 
-- [Using paginated endpoints](using-paginated-endpoints.md)
-- [Getting started with the management API](getting-started-with-the-management-api.md)
-- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
-- [Managing assets](managing-assets.md)
+- [Using paginated endpoints](./using-paginated-endpoints.md)
+- [Getting started with the management API](./getting-started-with-the-management-api.md)
+- [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
+- [Managing assets](./managing-assets.md)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ Get the set of assets that your organization manages.
 
 **Request**:
 
-```None
+```
 ?pageIndex=0&pricingParam=STDQ&productType=App
 ```
 
@@ -103,12 +104,12 @@ Get the set of assets that your organization manages.
 ## Topics
 
 ### Response
-- [object GetAssetsResponse](getassetsresponse.md)
+- [object GetAssetsResponse](./getassetsresponse.md)
   The paginated response that contains the requested assets.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata
-- [Apps and books metadata for organizations](apps-and-books-metadata-for-organizations.md)
+- [Apps and books metadata for organizations](./apps-and-books-metadata-for-organizations.md)
   Get metadata for apps and books your organization owns.
 
 ## Endpoint
@@ -117,9 +118,15 @@ Get the set of assets that your organization manages.
 
 ## Parameters
 
+### Query Parameters
+
 - `pageIndex` (int32): The requested page index.
 - `productType` (string): The filter for the asset product type.
+
+  **Allowed Values**: `App`, `Book`
 - `pricingParam` (string): The filter for the asset product quality.
+
+  **Allowed Values**: `STDQ`, `PLUS`
 - `revocable` (boolean): The filter for asset revocability.
 - `deviceAssignable` (boolean): The filter for asset device assignability.
 - `maxAvailableCount` (int32): The filter for the maximum inclusive assets available count.
@@ -129,15 +136,23 @@ Get the set of assets that your organization manages.
 - `adamId` (string): The filter for the asset product unique identifier.
 - `unlimited` (boolean)
 
+## Responses
+
+- `200` OK (`GetAssetsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
+
 ## See Also
 
-- [Associate Assets](associate-assets.md)
+### Asset management
+- [Associate Assets](./associate-assets.md)
   Associate assets with client user IDs and serial numbers.
-- [Disassociate Assets](disassociate-assets.md)
+- [Disassociate Assets](./disassociate-assets.md)
   Disassociate assets from client user IDs and serial numbers.
-- [Revoke Assets](revoke-assets.md)
+- [Revoke Assets](./revoke-assets.md)
   Revoke assets from client user IDs and serial numbers.
-- [Get Assignments](get-assignments-9wv1e.md)
+- [Get Assignments](./get-assignments-9wv1e.md)
   Get the set of current assignments for users or devices.
 
 

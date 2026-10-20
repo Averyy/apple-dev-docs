@@ -1,7 +1,8 @@
 # AnalysisContext.UserDataTag
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -20,20 +21,21 @@ struct UserDataTag
 ## Topics
 
 ### Creating a tag
-- [init(AnalysisContext.UserDataTag.RawValue)](analysiscontext/userdatatag/init(_:).md)
+- [init(AnalysisContext.UserDataTag.RawValue)](./userdatatag/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var userData: [AnalysisContext.UserDataTag : any Sendable]](analysiscontext/userdata.md)
+### Preserving app-specific context
+- [var userData: [AnalysisContext.UserDataTag : any Sendable]](./userdata.md)
   A dictionary of application-specific contextual information.
 
 

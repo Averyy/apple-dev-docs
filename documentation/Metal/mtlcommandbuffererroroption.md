@@ -1,7 +1,8 @@
 # MTLCommandBufferErrorOption
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for reporting errors from a command buffer.
 
@@ -19,34 +20,39 @@ Options for reporting errors from a command buffer.
 struct MTLCommandBufferErrorOption
 ```
 
+```c
+enum MTLCommandBufferErrorOption : NSUInteger;
+```
+
 ## Topics
 
 ### Buffer error options
-- [static var encoderExecutionStatus: MTLCommandBufferErrorOption](mtlcommandbuffererroroption/encoderexecutionstatus.md)
+- [static var encoderExecutionStatus: MTLCommandBufferErrorOption](./mtlcommandbuffererroroption/encoderexecutionstatus.md)
   An option that instructs a command buffer to save additional details about a GPU runtime error.
 ### Protocol support
-- [init(rawValue: UInt)](mtlcommandbuffererroroption/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtlcommandbuffererroroption/init%28rawvalue%29.md)
   Creates a set of error options from a raw integer value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var logState: (any MTLLogState)?](mtlcommandbufferdescriptor/logstate.md)
+### Configuring the command buffer
+- [var logState: (any MTLLogState)?](./mtlcommandbufferdescriptor/logstate.md)
   The shader logging configuration that the command buffer uses.
-- [var retainedReferences: Bool](mtlcommandbufferdescriptor/retainedreferences.md)
+- [var retainedReferences: Bool](./mtlcommandbufferdescriptor/retainedreferences.md)
   A Boolean value that indicates whether the command buffer the descriptor creates maintains strong references to the resources it uses.
-- [var errorOptions: MTLCommandBufferErrorOption](mtlcommandbufferdescriptor/erroroptions.md)
+- [var errorOptions: MTLCommandBufferErrorOption](./mtlcommandbufferdescriptor/erroroptions.md)
   The reporting configuration that indicates which information the GPU driver stores in a command buffer’s error property.
 
 

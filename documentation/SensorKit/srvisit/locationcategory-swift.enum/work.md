@@ -1,7 +1,8 @@
 # SRVisit.LocationCategory.work
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user’s workplace.
 
@@ -16,15 +17,20 @@ The user’s workplace.
 case work
 ```
 
+```c
+SRLocationCategoryWork
+```
+
 ## See Also
 
-- [SRVisit.LocationCategory.gym](srvisit/locationcategory-swift.enum/gym.md)
+### Categories
+- [SRVisit.LocationCategory.gym](./gym.md)
   The user’s gym.
-- [SRVisit.LocationCategory.home](srvisit/locationcategory-swift.enum/home.md)
+- [SRVisit.LocationCategory.home](./home.md)
   The user’s home.
-- [SRVisit.LocationCategory.school](srvisit/locationcategory-swift.enum/school.md)
+- [SRVisit.LocationCategory.school](./school.md)
   The user’s school.
-- [SRVisit.LocationCategory.unknown](srvisit/locationcategory-swift.enum/unknown.md)
+- [SRVisit.LocationCategory.unknown](./unknown.md)
   A location the user frequents that’s an unknown type.
 
 

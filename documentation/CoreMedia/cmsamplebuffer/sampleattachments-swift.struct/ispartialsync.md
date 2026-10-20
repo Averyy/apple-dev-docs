@@ -1,7 +1,8 @@
 # isPartialSync
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the sample is a partial sync sample.
 

@@ -1,7 +1,8 @@
 # kAXPopoverRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXPopoverRole: String { get }
+```
+
+```c
+#define kAXPopoverRole
 ```
 
 

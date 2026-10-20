@@ -1,7 +1,8 @@
 # IOUSBHostCIDeviceSpeedOther
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var IOUSBHostCIDeviceSpeedOther: IOUSBHostCIDeviceSpeed { get }
+```
+
+```c
+IOUSBHostCIDeviceSpeedOther
 ```
 
 

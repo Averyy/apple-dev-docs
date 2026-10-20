@@ -1,7 +1,8 @@
 # indexPath
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contour object’s index path.
 
@@ -22,21 +23,22 @@ var indexPath: IndexPath { get }
 
 ## See Also
 
-- [var aspectRatio: Float](contoursobservation/contour/aspectratio.md)
+### Inspecting a contour
+- [var aspectRatio: Float](./aspectratio.md)
   The aspect ratio of the contour, which is the image’s width divided by its height.
-- [var boundingBox: NormalizedRect](contoursobservation/contour/boundingbox.md)
+- [var boundingBox: NormalizedRect](./boundingbox.md)
   The bounding box of the region.
-- [var boundingQuad: RectangleObservation](contoursobservation/contour/boundingquad.md)
+- [var boundingQuad: RectangleObservation](./boundingquad.md)
   The bounding quadrilateral of the region.
-- [var childContours: [ContoursObservation.Contour]](contoursobservation/contour/childcontours.md)
+- [var childContours: [ContoursObservation.Contour]](./childcontours.md)
   An array of contours that this contour encloses.
-- [var normalizedPath: CGPath](contoursobservation/contour/normalizedpath.md)
+- [var normalizedPath: CGPath](./normalizedpath.md)
   The contour object as a path in normalized coordinates.
-- [var normalizedPoints: [simd_float2]](contoursobservation/contour/normalizedpoints.md)
+- [var normalizedPoints: [simd_float2]](./normalizedpoints.md)
   The contour’s array of points in normalized coordinates.
-- [var pointCount: Int](contoursobservation/contour/pointcount.md)
+- [var pointCount: Int](./pointcount.md)
   The contour’s number of points.
-- [var points: [NormalizedPoint]](contoursobservation/contour/points.md)
+- [var points: [NormalizedPoint]](./points.md)
   The points of the region as an array of `NormalizedPoint`.
 
 

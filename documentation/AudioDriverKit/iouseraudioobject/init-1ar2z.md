@@ -1,7 +1,8 @@
 # init
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes an instance of the audio object base class.
 
@@ -10,7 +11,7 @@ Initializes an instance of the audio object base class.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init(IOUserAudioDriver *in_audio_driver);
 ```
 
@@ -20,15 +21,16 @@ A Boolean value that indicates the result of initialization: `true` if initializ
 
 #### Discussion
 
-Always pass in the [`IOUserAudioDriver`](iouseraudiodriver.md). The no-arg initializer, [`init`](iouseraudioobject/init-26qwx.md), always returns `false`.
+Always pass in the [`IOUserAudioDriver`](../iouseraudiodriver.md). The no-arg initializer, [`init`](./init-26qwx.md), always returns `false`.
 
 ## Parameters
 
-- `in_audio_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
+- `in_audio_driver`: The [`IOUserAudioDriver`](../iouseraudiodriver.md) that owns this object.
 
 ## See Also
 
-- [init](iouseraudioobject/init-26qwx.md)
+### Creating an Audio Object
+- [init](./init-26qwx.md)
   Initializes an empty object.
 
 

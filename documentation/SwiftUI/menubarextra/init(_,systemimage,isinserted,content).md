@@ -1,7 +1,8 @@
 # init(_:systemImage:isInserted:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu bar extra with a system image to use as the items label. The provided title will be used by the accessibility system.
 
@@ -13,6 +14,20 @@ Creates a menu bar extra with a system image to use as the items label. The prov
 ```swift
 @export(implementation)
 nonisolated init(_ titleResource: LocalizedStringResource, systemImage: String, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content)
+```
+
+Available when `Label` is `Label<Text, Image>` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, systemImage: String, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, systemImage: String, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content) where S : StringProtocol
 ```
 
 #### Discussion
@@ -28,11 +43,12 @@ The item will be displayed in the system menu bar when the specified binding is 
 
 ## See Also
 
-- [init(_:image:content:)](menubarextra/init(_:image:content:).md)
+### Creating a menu bar extra with an image
+- [init(_:image:content:)](./init%28_,image,content%29.md)
   Creates a menu bar extra with an image to use as the items label. The provided title will be used by the accessibility system.
-- [init(_:image:isInserted:content:)](menubarextra/init(_:image:isinserted:content:).md)
+- [init(_:image:isInserted:content:)](./init%28_,image,isinserted,content%29.md)
   Creates a menu bar extra with an image to use as the items label. The provided title will be used by the accessibility system.
-- [init(_:systemImage:content:)](menubarextra/init(_:systemimage:content:).md)
+- [init(_:systemImage:content:)](./init%28_,systemimage,content%29.md)
   Creates a menu bar extra with a system image to use as the items label. The provided title will be used by the accessibility system.
 
 

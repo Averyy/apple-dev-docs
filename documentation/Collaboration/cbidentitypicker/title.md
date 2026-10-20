@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the identity picker.
 
@@ -14,13 +15,18 @@ The title of the identity picker.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * title;
+```
+
 #### Discussion
 
 The value of this property is the title text that appears at the top of the panel. By default, the title is “Select a person to share with:”.
 
 ## See Also
 
-- [var allowsMultipleSelection: Bool](cbidentitypicker/allowsmultipleselection.md)
+### Setting and Getting Properties
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean value indicating whether the user is allowed to select multiple identities.
 
 

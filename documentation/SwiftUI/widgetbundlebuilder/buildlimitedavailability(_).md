@@ -1,7 +1,8 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an availability check within the builder
 
@@ -19,14 +20,22 @@ Builds an availability check within the builder
 static func buildLimitedAvailability(_ widget: some ControlWidget) -> any Widget & _LimitedAvailabilityWidgetMarker
 ```
 
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildLimitedAvailability(_ widget: some Widget) -> any Widget & _LimitedAvailabilityWidgetMarker
+```
+
 ## See Also
 
-- [static func buildBlock() -> some Widget](widgetbundlebuilder/buildblock.md)
+### Bundling widgets
+- [static func buildBlock() -> some Widget](./buildblock%28%29.md)
   Builds an empty Widget from a block containing no statements, `{ }`.
-- [static buildBlock(_:)](widgetbundlebuilder/buildblock(_:).md)
-- [static buildExpression(_:)](widgetbundlebuilder/buildexpression(_:).md)
+- [static buildBlock(_:)](./buildblock%28_%29.md)
+- [static buildExpression(_:)](./buildexpression%28_%29.md)
   Builds an expression within the builder.
-- [static func buildOptional((any Widget & _LimitedAvailabilityWidgetMarker)?) -> some Widget](widgetbundlebuilder/buildoptional(_:).md)
+- [static func buildOptional((any Widget & _LimitedAvailabilityWidgetMarker)?) -> some Widget](./buildoptional%28_%29.md)
   Produces an optional widget for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
 
 

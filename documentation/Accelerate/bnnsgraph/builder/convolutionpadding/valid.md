@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ConvolutionPadding.valid
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No padding
 

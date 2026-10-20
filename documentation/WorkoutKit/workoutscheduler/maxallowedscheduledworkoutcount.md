@@ -1,7 +1,8 @@
 # maxAllowedScheduledWorkoutCount
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of workouts your app can schedule.
 
@@ -20,13 +21,14 @@ static let maxAllowedScheduledWorkoutCount: Int
 
 ## See Also
 
-- [var scheduledWorkouts: [ScheduledWorkoutPlan]](workoutscheduler/scheduledworkouts.md)
+### Managing scheduled workouts
+- [var scheduledWorkouts: [ScheduledWorkoutPlan]](./scheduledworkouts.md)
   An array of all the workouts scheduled by your app.
-- [func markComplete(WorkoutPlan, at: DateComponents) async](workoutscheduler/markcomplete(_:at:).md)
+- [func markComplete(WorkoutPlan, at: DateComponents) async](./markcomplete%28_,at%29.md)
   Marks the workout as complete.
-- [func remove(WorkoutPlan, at: DateComponents) async](workoutscheduler/remove(_:at:).md)
+- [func remove(WorkoutPlan, at: DateComponents) async](./remove%28_,at%29.md)
   Removes the scheduled workout.
-- [func removeAllWorkouts() async](workoutscheduler/removeallworkouts.md)
+- [func removeAllWorkouts() async](./removeallworkouts%28%29.md)
   Removes all scheduled workouts.
 
 

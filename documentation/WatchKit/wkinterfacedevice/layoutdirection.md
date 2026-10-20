@@ -1,7 +1,8 @@
 # layoutDirection
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction of the user interface.
 
@@ -14,17 +15,22 @@ The layout direction of the user interface.
 var layoutDirection: WKInterfaceLayoutDirection { get }
 ```
 
+```objc
+@property (nonatomic, readonly) WKInterfaceLayoutDirection layoutDirection;
+```
+
 #### Discussion
 
-For a list of possible values, see [`WKInterfaceLayoutDirection`](wkinterfacelayoutdirection.md).
+For a list of possible values, see [`WKInterfaceLayoutDirection`](../wkinterfacelayoutdirection.md).
 
 ## See Also
 
-- [class func interfaceLayoutDirection(for: WKInterfaceSemanticContentAttribute) -> WKInterfaceLayoutDirection](wkinterfacedevice/interfacelayoutdirection(for:).md)
+### Accessing the Layout Direction
+- [class func interfaceLayoutDirection(for: WKInterfaceSemanticContentAttribute) -> WKInterfaceLayoutDirection](./interfacelayoutdirection%28for%29.md)
   Returns the user interface direction for the given semantic content attribute.
-- [enum WKInterfaceSemanticContentAttribute](wkinterfacesemanticcontentattribute.md)
+- [enum WKInterfaceSemanticContentAttribute](../wkinterfacesemanticcontentattribute.md)
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
-- [enum WKInterfaceLayoutDirection](wkinterfacelayoutdirection.md)
+- [enum WKInterfaceLayoutDirection](../wkinterfacelayoutdirection.md)
   Specifies the directional flow of the user interface.
 
 

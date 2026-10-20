@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 2.0+
@@ -14,9 +15,10 @@ init()
 
 ## See Also
 
-- [init(projecting: Point3D)](tablevisualstate/point2d/init(projecting:).md)
+### Creating 2D point states
+- [init(projecting: Point3D)](./init%28projecting%29.md)
   Initializes this point as the projection of the given 3D point on the XZ plane
-- [init(x: Double, z: Double)](tablevisualstate/point2d/init(x:z:).md)
+- [init(x: Double, z: Double)](./init%28x,z%29.md)
 
 
 ---

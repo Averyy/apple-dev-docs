@@ -1,7 +1,8 @@
 # errSecCSReqInvalid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid or corrupted code requirements.
 
@@ -13,6 +14,10 @@ Invalid or corrupted code requirements.
 
 ```swift
 var errSecCSReqInvalid: OSStatus { get }
+```
+
+```c
+errSecCSReqInvalid
 ```
 
 

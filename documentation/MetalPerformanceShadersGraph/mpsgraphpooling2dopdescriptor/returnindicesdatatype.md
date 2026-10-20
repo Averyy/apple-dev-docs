@@ -1,9 +1,10 @@
 # returnIndicesDataType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Defines the data type for returned indices. Use this in conjunction with [`maxPooling2DReturnIndices(_:descriptor:name:)`](mpsgraph/maxpooling2dreturnindices(_:descriptor:name:).md) API. Currently MPSGraph supports the following datatypes: `MPSDataTypeInt32`. Default value: `MPSDataTypeInt32`.
+Defines the data type for returned indices. Use this in conjunction with [`maxPooling2DReturnIndices(_:descriptor:name:)`](../mpsgraph/maxpooling2dreturnindices%28_,descriptor,name%29.md) API. Currently MPSGraph supports the following datatypes: `MPSDataTypeInt32`. Default value: `MPSDataTypeInt32`.
 
 **Availability**:
 - iOS 15.3+
@@ -17,6 +18,10 @@ Defines the data type for returned indices. Use this in conjunction with [`maxPo
 
 ```swift
 var returnIndicesDataType: MPSDataType { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSDataType returnIndicesDataType;
 ```
 
 

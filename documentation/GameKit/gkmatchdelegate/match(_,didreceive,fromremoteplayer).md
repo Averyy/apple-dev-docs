@@ -1,7 +1,8 @@
 # match(_:didReceive:fromRemotePlayer:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes the data sent from another player to the local player.
 
@@ -19,9 +20,13 @@ Processes the data sent from another player to the local player.
 optional func match(_ match: GKMatch, didReceive data: Data, fromRemotePlayer player: GKPlayer)
 ```
 
+```objc
+- (void) match:(GKMatch *) match didReceiveData:(NSData *) data fromRemotePlayer:(GKPlayer *) player;
+```
+
 ## Mentions
 
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
 #### Discussion
 
@@ -37,7 +42,8 @@ Your game defines its own format for data packets it transmits and receives over
 
 ## See Also
 
-- [func match(GKMatch, didReceive: Data, forRecipient: GKPlayer, fromRemotePlayer: GKPlayer)](gkmatchdelegate/match(_:didreceive:forrecipient:fromremoteplayer:).md)
+### Receiving Data from Other Players
+- [func match(GKMatch, didReceive: Data, forRecipient: GKPlayer, fromRemotePlayer: GKPlayer)](./match%28_,didreceive,forrecipient,fromremoteplayer%29.md)
   Processes the data sent from one player to another.
 
 

@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidFailToAnchor.Reason.unspecified
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 anchor fails with no specified reason
 

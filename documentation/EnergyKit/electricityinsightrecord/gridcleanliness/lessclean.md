@@ -1,14 +1,15 @@
 # lessClean
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A category for electricity usage during less-clean grid periods.
 
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,11 +23,12 @@ This category represents electricity usage during periods when the electrical gr
 
 ## See Also
 
-- [var cleaner: Measure?](electricityinsightrecord/gridcleanliness/cleaner.md)
+### Getting grid cleanliness information
+- [var cleaner: Measure?](./cleaner.md)
   A category for electricity usage during the cleanest grid periods.
-- [var avoid: Measure?](electricityinsightrecord/gridcleanliness/avoid.md)
+- [var avoid: Measure?](./avoid.md)
   A category for electricity usage during periods that the framework suggests a person avoid.
-- [var unknown: Measure?](electricityinsightrecord/gridcleanliness/unknown.md)
+- [var unknown: Measure?](./unknown.md)
   A category of electricity usage when grid cleanliness information is unavailable.
 
 

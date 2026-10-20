@@ -1,16 +1,19 @@
 # MLCRMSPropOptimizer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An optimizer that represents the root mean square propagation algorithm.
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.2+
-- macOS 11.0+
+- Mac Catalyst 14.2+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
 - tvOS 14.0+
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -18,45 +21,50 @@ An optimizer that represents the root mean square propagation algorithm.
 class MLCRMSPropOptimizer
 ```
 
+```objc
+@interface MLCRMSPropOptimizer : MLCOptimizer
+```
+
 ## Topics
 
 ### Creating an RMSProp Optimizer
-- [convenience init(descriptor: MLCOptimizerDescriptor)](mlcrmspropoptimizer/init(descriptor:).md)
+- [convenience init(descriptor: MLCOptimizerDescriptor)](./mlcrmspropoptimizer/init%28descriptor%29.md)
   Creates an RMSProp optimizer with the descriptor you specify.
-- [convenience init(descriptor: MLCOptimizerDescriptor, momentumScale: Float, alpha: Float, epsilon: Float, isCentered: Bool)](mlcrmspropoptimizer/init(descriptor:momentumscale:alpha:epsilon:iscentered:).md)
+- [convenience init(descriptor: MLCOptimizerDescriptor, momentumScale: Float, alpha: Float, epsilon: Float, isCentered: Bool)](./mlcrmspropoptimizer/init%28descriptor,momentumscale,alpha,epsilon,iscentered%29.md)
   Creates an RMSProp optimizer with the descriptor, momentum scale, smoothing, epsilon, and option to compute the centered RMSProp that you specify.
 ### Inspecting an RMSProp Optimizer
-- [var momentumScale: Float](mlcrmspropoptimizer/momentumscale.md)
+- [var momentumScale: Float](./mlcrmspropoptimizer/momentumscale.md)
   A hyper-parameter that specifies the momentum factor.
-- [var alpha: Float](mlcrmspropoptimizer/alpha.md)
+- [var alpha: Float](./mlcrmspropoptimizer/alpha.md)
   The constant for smoothing.
-- [var epsilon: Float](mlcrmspropoptimizer/epsilon.md)
+- [var epsilon: Float](./mlcrmspropoptimizer/epsilon.md)
   The epsilon value you use to improve numerical stability.
-- [var isCentered: Bool](mlcrmspropoptimizer/iscentered.md)
+- [var isCentered: Bool](./mlcrmspropoptimizer/iscentered.md)
   A Boolean that indicates whether you compute the centered RMSProp.
 
 ## Relationships
 
 ### Inherits From
-- [MLCOptimizer](mlcoptimizer.md)
+- [MLCOptimizer](./mlcoptimizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCSGDOptimizer](mlcsgdoptimizer.md)
+### Optimizer Types
+- [class MLCSGDOptimizer](./mlcsgdoptimizer.md)
   An optimizer that represents the stochastic gradient decent algorithm.
-- [class MLCAdamOptimizer](mlcadamoptimizer.md)
+- [class MLCAdamOptimizer](./mlcadamoptimizer.md)
   An optimizer that represents the adaptive moment estimation algorithm.
-- [class MLCAdamWOptimizer](mlcadamwoptimizer.md)
+- [class MLCAdamWOptimizer](./mlcadamwoptimizer.md)
   An optimizer that represents the Adam algorithm with weight decay.
-- [class MLCOptimizer](mlcoptimizer.md)
+- [class MLCOptimizer](./mlcoptimizer.md)
   The base class for all framework optimizers.
 
 

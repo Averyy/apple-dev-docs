@@ -1,18 +1,25 @@
 # rawFeaturePoints
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A coarse representation of the space-mapping data contained in the reference object.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
+- iOS 12.0+ - Deprecated in 27.0
+- iPadOS 12.0+ - Deprecated in 27.0
+
+> **Deprecated**: Only supported for legacy reference objects.
 
 ## Declaration
 
 ```swift
 var rawFeaturePoints: ARPointCloud { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) ARPointCloud * rawFeaturePoints;
 ```
 
 #### Discussion

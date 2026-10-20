@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The private key associated with this passkey.
 
@@ -24,15 +25,16 @@ This value must be a PKCS#8-formatted byte string, and Base64URL-encoded when en
 
 ## See Also
 
-- [var credentialID: Data](asimportablecredential/passkey/credentialid.md)
+### Accessing passkey properties
+- [var credentialID: Data](./credentialid.md)
   The credential ID associated with this passkey.
-- [var relyingPartyIdentifier: String](asimportablecredential/passkey/relyingpartyidentifier.md)
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The relying party identifier associated with the passkey.
-- [var userName: String](asimportablecredential/passkey/username.md)
+- [var userName: String](./username.md)
   The username associated with the passkey.
-- [var userDisplayName: String](asimportablecredential/passkey/userdisplayname.md)
+- [var userDisplayName: String](./userdisplayname.md)
   The human-readable name associated with the passkey.
-- [var userHandle: Data](asimportablecredential/passkey/userhandle.md)
+- [var userHandle: Data](./userhandle.md)
   The user handle associated with the passkey.
 
 

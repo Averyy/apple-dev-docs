@@ -1,7 +1,8 @@
 # performEditingTransaction(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an editing transaction and invokes a block upon completion.
 
@@ -18,9 +19,13 @@ Performs an editing transaction and invokes a block upon completion.
 func performEditingTransaction(_ transaction: () -> Void)
 ```
 
+```objc
+- (void) performEditingTransactionUsingBlock:(void (^)()) transaction;
+```
+
 #### Discussion
 
-The primary [`NSTextLayoutManager`](nstextlayoutmanager.md) controlling the active editing transaction invokes this method. It’s possible to nest multiple editing transactions. The outer most transaction toggles `hasEditingTransaction` and sends synchronization messages if enabled after invoking a transaction.
+The primary [`NSTextLayoutManager`](../nstextlayoutmanager.md) controlling the active editing transaction invokes this method. It’s possible to nest multiple editing transactions. The outer most transaction toggles `hasEditingTransaction` and sends synchronization messages if enabled after invoking a transaction.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ The primary [`NSTextLayoutManager`](nstextlayoutmanager.md) controlling the acti
 
 ## See Also
 
-- [var hasEditingTransaction: Bool](nstextcontentmanager/haseditingtransaction.md)
+### Performing transactions
+- [var hasEditingTransaction: Bool](./haseditingtransaction.md)
   Indicates there’s an active editing transaction from the primary text layout manager.
-- [func recordEditAction(in: NSTextRange, newTextRange: NSTextRange)](nstextcontentmanager/recordeditaction(in:newtextrange:).md)
+- [func recordEditAction(in: NSTextRange, newTextRange: NSTextRange)](./recordeditaction%28in,newtextrange%29.md)
   Records information about an edit action to the transaction.
 
 

@@ -1,7 +1,8 @@
 # MassFormatter.Unit.gram
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The gram unit.
 
@@ -20,15 +21,20 @@ The gram unit.
 case gram
 ```
 
+```c
+NSMassFormatterUnitGram
+```
+
 ## See Also
 
-- [MassFormatter.Unit.kilogram](massformatter/unit/kilogram.md)
+### Constants
+- [MassFormatter.Unit.kilogram](./kilogram.md)
   The kilogram unit.
-- [MassFormatter.Unit.ounce](massformatter/unit/ounce.md)
+- [MassFormatter.Unit.ounce](./ounce.md)
   The ounce unit.
-- [MassFormatter.Unit.pound](massformatter/unit/pound.md)
+- [MassFormatter.Unit.pound](./pound.md)
   The pound unit.
-- [MassFormatter.Unit.stone](massformatter/unit/stone.md)
+- [MassFormatter.Unit.stone](./stone.md)
   The stone unit.
 
 

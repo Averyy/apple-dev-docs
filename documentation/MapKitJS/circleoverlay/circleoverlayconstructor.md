@@ -1,7 +1,8 @@
 # new CircleOverlay(coordinate, radius, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a circle overlay with a center coordinate, radius, and style options.
 
@@ -10,7 +11,7 @@ Creates a circle overlay with a center coordinate, radius, and style options.
 
 ## Declaration
 
-```swift
+```
 constructor(
     coordinate: CoordinateData,
     radius: number,
@@ -44,7 +45,8 @@ An `options` parameter for a circle overlay resembles the following example:
 
 ## See Also
 
-- [interface OverlayOptions](overlayoptions.md)
+### Creating a circle overlay
+- [interface OverlayOptions](../overlayoptions.md)
   A dictionary of options that determines an overlay’s data, and indicates whether it’s visible, in an enabled state, and in a selected state.
 
 

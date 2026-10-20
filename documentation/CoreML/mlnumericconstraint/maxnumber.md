@@ -1,7 +1,8 @@
 # maxNumber
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The largest numerical value allowed by this constraint.
 
@@ -20,11 +21,16 @@ The largest numerical value allowed by this constraint.
 var maxNumber: NSNumber { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSNumber * maxNumber;
+```
+
 ## See Also
 
-- [var minNumber: NSNumber](mlnumericconstraint/minnumber.md)
+### Numeric Constraints
+- [var minNumber: NSNumber](./minnumber.md)
   The smallest numerical value allowed by this constraint.
-- [var enumeratedNumbers: Set<NSNumber>?](mlnumericconstraint/enumeratednumbers.md)
+- [var enumeratedNumbers: Set<NSNumber>?](./enumeratednumbers.md)
   A set of the numbers allowed in this constraint.
 
 

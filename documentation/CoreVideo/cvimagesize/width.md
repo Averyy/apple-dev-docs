@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Image width in pixels
 

@@ -1,7 +1,8 @@
 # GlobalCoordinateSpace
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The global coordinate space at the root of the view hierarchy.
 
@@ -23,18 +24,19 @@ struct GlobalCoordinateSpace
 ## Topics
 
 ### Creating the coordinate space
-- [init()](globalcoordinatespace/init.md)
+- [init()](./globalcoordinatespace/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CoordinateSpaceProtocol](coordinatespaceprotocol.md)
+- [CoordinateSpaceProtocol](./coordinatespaceprotocol.md)
 
 ## See Also
 
-- [struct LocalCoordinateSpace](localcoordinatespace.md)
+### Supporting types
+- [struct LocalCoordinateSpace](./localcoordinatespace.md)
   The local coordinate space of the current view.
-- [struct NamedCoordinateSpace](namedcoordinatespace.md)
+- [struct NamedCoordinateSpace](./namedcoordinatespace.md)
   A named coordinate space.
 
 

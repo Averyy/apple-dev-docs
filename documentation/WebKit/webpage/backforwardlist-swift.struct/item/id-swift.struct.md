@@ -1,7 +1,8 @@
 # WebPage.BackForwardList.Item.ID
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque type representing the identifier for an item.
 
@@ -21,18 +22,19 @@ struct ID
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
+### Observing navigation between webpages
+- [WebPage.BackForwardList](../../backforwardlist-swift.struct.md)
   An observable representation of a webpage’s previously loaded resources.
-- [WebPage.NavigationEvent](webpage/navigationevent.md)
+- [WebPage.NavigationEvent](../../navigationevent.md)
   A particular state that occurs during the progression of a navigation.
-- [WebPage.BackForwardList.Item](webpage/backforwardlist-swift.struct/item.md)
+- [WebPage.BackForwardList.Item](../item.md)
   A representation of a resource that a webpage previously visited.
 
 

@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the new app asset library placement resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the new app asset library placement resourc
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object AppAssetLibraryPlacementCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships](appassetlibraryplacementcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppAssetLibraryPlacementCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

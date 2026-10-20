@@ -1,7 +1,8 @@
 # attributesOfFileSystem(forPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary that describes the attributes of the mounted file system on which a given path resides.
 
@@ -20,9 +21,13 @@ Returns a dictionary that describes the attributes of the mounted file system on
 func attributesOfFileSystem(forPath path: String) throws -> [FileAttributeKey : Any]
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) attributesOfFileSystemForPath:(NSString *) path error:(NSError **) error;
+```
+
 ## Mentions
 
-- [About Apple File System](about-apple-file-system.md)
+- [About Apple File System](../about-apple-file-system.md)
 
 #### Return Value
 
@@ -32,7 +37,9 @@ A dictionary object that describes the attributes of the mounted file system on 
 
 This method does not traverse a terminal symbolic link.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -40,13 +47,14 @@ This method does not traverse a terminal symbolic link.
 
 ## See Also
 
-- [func componentsToDisplay(forPath: String) -> [String]?](filemanager/componentstodisplay(forpath:).md)
+### Getting and setting attributes
+- [func componentsToDisplay(forPath: String) -> [String]?](./componentstodisplay%28forpath%29.md)
   Returns an array of strings representing the user-visible components of a given path.
-- [func displayName(atPath: String) -> String](filemanager/displayname(atpath:).md)
+- [func displayName(atPath: String) -> String](./displayname%28atpath%29.md)
   Returns the display name of the file or directory at a specified path.
-- [func attributesOfItem(atPath: String) throws -> [FileAttributeKey : Any]](filemanager/attributesofitem(atpath:).md)
+- [func attributesOfItem(atPath: String) throws -> [FileAttributeKey : Any]](./attributesofitem%28atpath%29.md)
   Returns the attributes of the item at a given path.
-- [func setAttributes([FileAttributeKey : Any], ofItemAtPath: String) throws](filemanager/setattributes(_:ofitematpath:).md)
+- [func setAttributes([FileAttributeKey : Any], ofItemAtPath: String) throws](./setattributes%28_,ofitematpath%29.md)
   Sets the attributes of the specified file or directory.
 
 

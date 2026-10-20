@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The Metal device object that created the dynamic library.
@@ -20,11 +21,16 @@ The Metal device object that created the dynamic library.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (readonly) id<MTLDevice> device;
+```
+
 ## See Also
 
-- [var installName: String](mtldynamiclibrary/installname.md)
+### Identifying the library
+- [var installName: String](./installname.md)
   A file path for this dynamic library.
-- [var label: String?](mtldynamiclibrary/label.md)
+- [var label: String?](./label.md)
   A string that identifies the library.
 
 

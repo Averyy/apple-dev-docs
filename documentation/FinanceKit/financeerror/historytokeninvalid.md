@@ -1,7 +1,8 @@
 # FinanceError.historyTokenInvalid
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,9 +16,10 @@ case historyTokenInvalid
 
 ## See Also
 
-- [case dataRestricted(FinanceStore.DataType)](financeerror/datarestricted(_:).md)
+### Enumeration Cases
+- [case dataRestricted(FinanceStore.DataType)](./datarestricted%28_%29.md)
   The data is in a restricted state.
-- [FinanceError.unknown](financeerror/unknown.md)
+- [FinanceError.unknown](./unknown.md)
   An unknown error occurred.
 
 

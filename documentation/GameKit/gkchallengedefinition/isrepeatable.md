@@ -1,7 +1,8 @@
 # isRepeatable
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates if a challenge can be attempted more than once.
 
@@ -20,9 +21,14 @@ Indicates if a challenge can be attempted more than once.
 var isRepeatable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isRepeatable;
+```
+
 ## See Also
 
-- [var durationOptions: [DateComponents]](gkchallengedefinition/durationoptions.md)
+### Getting the challenge rules
+- [var durationOptions: [DateComponents]](./durationoptions.md)
   The duration options for the challenge, like `1 day` or `1 week`.
 
 

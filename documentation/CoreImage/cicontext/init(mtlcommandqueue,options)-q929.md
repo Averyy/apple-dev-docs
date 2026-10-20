@@ -1,7 +1,8 @@
 # init(MTLCommandQueue:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

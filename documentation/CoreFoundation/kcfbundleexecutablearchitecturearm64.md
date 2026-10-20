@@ -1,7 +1,8 @@
 # kCFBundleExecutableArchitectureARM64
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 14.0+
@@ -18,15 +19,20 @@
 var kCFBundleExecutableArchitectureARM64: Int { get }
 ```
 
+```c
+kCFBundleExecutableArchitectureARM64
+```
+
 ## See Also
 
-- [var kCFBundleExecutableArchitectureI386: Int](kcfbundleexecutablearchitecturei386.md)
+### Constants
+- [var kCFBundleExecutableArchitectureI386: Int](./kcfbundleexecutablearchitecturei386.md)
   Specifies the 32-bit Intel architecture.
-- [var kCFBundleExecutableArchitecturePPC: Int](kcfbundleexecutablearchitectureppc.md)
+- [var kCFBundleExecutableArchitecturePPC: Int](./kcfbundleexecutablearchitectureppc.md)
   Specifies the 32-bit PowerPC architecture.
-- [var kCFBundleExecutableArchitectureX86_64: Int](kcfbundleexecutablearchitecturex86_64.md)
+- [var kCFBundleExecutableArchitectureX86_64: Int](./kcfbundleexecutablearchitecturex86_64.md)
   Specifies the 64-bit Intel architecture.
-- [var kCFBundleExecutableArchitecturePPC64: Int](kcfbundleexecutablearchitectureppc64.md)
+- [var kCFBundleExecutableArchitecturePPC64: Int](./kcfbundleexecutablearchitectureppc64.md)
   Specifies the 64-bit PowerPC architecture.
 
 

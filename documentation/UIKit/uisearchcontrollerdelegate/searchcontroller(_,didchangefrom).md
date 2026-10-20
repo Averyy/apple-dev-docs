@@ -1,7 +1,8 @@
 # searchController(_:didChangeFrom:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate after the search bar placement changes.
 
@@ -17,11 +18,15 @@ Notifies the delegate after the search bar placement changes.
 optional func searchController(_ searchController: UISearchController, didChangeFrom previousPlacement: UINavigationItem.SearchBarPlacement)
 ```
 
+```objc
+- (void) searchController:(UISearchController *) searchController didChangeFromSearchBarPlacement:(UINavigationItemSearchBarPlacement) previousPlacement;
+```
+
 #### Discussion
 
 The system calls this method after a search bar placement change occurs. Implement this method if you need to make any custom changes to your search suggestions UI according to the previous search bar placement.
 
-The system calls this method after [`searchController(_:willChangeTo:)`](uisearchcontrollerdelegate/searchcontroller(_:willchangeto:).md).
+The system calls this method after [`searchController(_:willChangeTo:)`](./searchcontroller%28_,willchangeto%29.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ The system calls this method after [`searchController(_:willChangeTo:)`](uisearc
 
 ## See Also
 
-- [func searchController(UISearchController, willChangeTo: UINavigationItem.SearchBarPlacement)](uisearchcontrollerdelegate/searchcontroller(_:willchangeto:).md)
+### Responding to search bar placement updates
+- [func searchController(UISearchController, willChangeTo: UINavigationItem.SearchBarPlacement)](./searchcontroller%28_,willchangeto%29.md)
   Notifies the delegate before the search bar placement changes.
 
 

@@ -1,7 +1,8 @@
 # DetectHumanRectanglesRequest.Revision.revision2
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An algorithm or implementation that represents the second revision.
 
@@ -22,8 +23,9 @@ case revision2
 
 ## See Also
 
-- [DetectHumanRectanglesRequest.Revision.revision3](detecthumanrectanglesrequest/revision-swift.enum/revision3.md)
-  Compared to `.revision2`, this revision generally provides better precision and recall. This is the default revision on platforms that support it. Specify `.revision2` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](detecthumanrectanglesrequest/supportedrevisions.md) to check if this revision is supported on the platform.
+### Getting the revision
+- [DetectHumanRectanglesRequest.Revision.revision3](./revision3.md)
+  Compared to `.revision2`, this revision generally provides better precision and recall. This is the default revision on platforms that support it. Specify `.revision2` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](../supportedrevisions.md) to check if this revision is supported on the platform.
 
 
 ---

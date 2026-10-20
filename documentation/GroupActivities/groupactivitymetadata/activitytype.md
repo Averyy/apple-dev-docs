@@ -1,7 +1,8 @@
 # GroupActivityMetadata.ActivityType
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicate the group activity’s type to the system.
 
@@ -22,39 +23,40 @@ struct ActivityType
 ## Topics
 
 ### Getting the Activity Types
-- [static let generic: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/generic.md)
+- [static let generic: GroupActivityMetadata.ActivityType](./activitytype/generic.md)
   A generic activity.
-- [static let listenTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/listentogether.md)
+- [static let listenTogether: GroupActivityMetadata.ActivityType](./activitytype/listentogether.md)
   A shared listening activity, such as listening to music together.
-- [static let watchTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/watchtogether.md)
+- [static let watchTogether: GroupActivityMetadata.ActivityType](./activitytype/watchtogether.md)
   A shared watching activity, such as watching an episode of a television show together.
 ### Type Properties
-- [static let createTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/createtogether.md)
+- [static let createTogether: GroupActivityMetadata.ActivityType](./activitytype/createtogether.md)
   A shared creation activity, such as drawing on an art canvas together.
-- [static let exploreTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/exploretogether.md)
+- [static let exploreTogether: GroupActivityMetadata.ActivityType](./activitytype/exploretogether.md)
   A shared exploration activity, such as planning a trip together or browsing a web feed together.
-- [static let learnTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/learntogether.md)
+- [static let learnTogether: GroupActivityMetadata.ActivityType](./activitytype/learntogether.md)
   A shared learning activity, such as studying a topic together.
-- [static let playTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/playtogether.md)
+- [static let playTogether: GroupActivityMetadata.ActivityType](./activitytype/playtogether.md)
   A shared gaming activity, such as playing a Game Center game together.
-- [static let readTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/readtogether.md)
+- [static let readTogether: GroupActivityMetadata.ActivityType](./activitytype/readtogether.md)
   A shared reading activity, such as reading a book together.
-- [static let shopTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/shoptogether.md)
+- [static let shopTogether: GroupActivityMetadata.ActivityType](./activitytype/shoptogether.md)
   A shared shopping activity, such as browsing for products online together.
-- [static let workoutTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/workouttogether.md)
+- [static let workoutTogether: GroupActivityMetadata.ActivityType](./activitytype/workouttogether.md)
   A shared workout activity, such as participating in a fitness class together.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: GroupActivityMetadata.ActivityType](groupactivitymetadata/type.md)
+### Indicating the activity’s type
+- [var type: GroupActivityMetadata.ActivityType](./type.md)
   The type of shared experience.
 
 

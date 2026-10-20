@@ -1,14 +1,15 @@
 # mbuf_setnextpkt
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void mbuf_setnextpkt(mbuf_t mbuf, mbuf_t nextpkt);
 ```
 

@@ -1,18 +1,19 @@
 # availableMetadataFormats
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metadata formats available for the track.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ var availableMetadataFormats: [AVMetadataFormat] { get }
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]](avcompositiontrack/metadata.md)
+### Accessing metadata
+- [var metadata: [AVMetadataItem]](./metadata.md)
   An array of metadata items for all metadata identifiers that have a value.
-- [var commonMetadata: [AVMetadataItem]](avcompositiontrack/commonmetadata.md)
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   An array of metadata items for all common metadata keys that have a value.
-- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avcompositiontrack/metadata(forformat:).md)
+- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns metadata items that a track contains for the specified format.
 
 

@@ -13,22 +13,22 @@ When the ColorSync Manager calls your profile access procedure, it passes one of
 ## Topics
 
 ### Constants
-- [var cmOpenReadAccess: Int](cmopenreadaccess.md)
-- [var cmOpenWriteAccess: Int](cmopenwriteaccess.md)
+- [var cmOpenReadAccess: Int](../cmopenreadaccess.md)
+- [var cmOpenWriteAccess: Int](../cmopenwriteaccess.md)
   Open the profile for writing. The total size of the profile is specified in the `size` parameter. 
-- [var cmReadAccess: Int](cmreadaccess.md)
+- [var cmReadAccess: Int](../cmreadaccess.md)
   Read the number of bytes specified by the `size` parameter.
-- [var cmWriteAccess: Int](cmwriteaccess.md)
+- [var cmWriteAccess: Int](../cmwriteaccess.md)
   Write the number of bytes specified by the `size` parameter.
-- [var cmCloseAccess: Int](cmcloseaccess.md)
+- [var cmCloseAccess: Int](../cmcloseaccess.md)
   Close the profile for reading or writing.
-- [var cmCreateNewAccess: Int](cmcreatenewaccess.md)
+- [var cmCreateNewAccess: Int](../cmcreatenewaccess.md)
   Create a new data stream for the profile.
-- [var cmAbortWriteAccess: Int](cmabortwriteaccess.md)
+- [var cmAbortWriteAccess: Int](../cmabortwriteaccess.md)
   Cancel the current write attempt.
-- [var cmBeginAccess: Int](cmbeginaccess.md)
+- [var cmBeginAccess: Int](../cmbeginaccess.md)
   Begin the process of procedural access. This is always the first operation constant passed to the access procedure. If the call is successful, the `cmEndAccess` operation is guaranteed to be the last call to the procedure.
-- [var cmEndAccess: Int](cmendaccess.md)
+- [var cmEndAccess: Int](../cmendaccess.md)
   End the process of procedural access. This is always the last operation constant passed to the access procedure (unless the `cmBeginAccess` call failed).
 
 

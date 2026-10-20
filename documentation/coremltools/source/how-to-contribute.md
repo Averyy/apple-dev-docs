@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/how-to-contribute.ht
 
 # Contributing
 
-**
-
-- [.md](../_sources/source/how-to-contribute.md)
-- **
-
-.pdf
-
-**
-
-# Contributing
-
- Table of contents 
-
-## Contents
-
-# Contributing
-
 The Core ML `.mlmodel` file format is a publicly documented specification. The Core ML Tools source code is 100% open source under the [BSD license](https://en.wikipedia.org/wiki/BSD_licenses).
 
 As the Core ML open source community, we welcome all contributions and ideas to grow the product. We ask that you follow the contributing guidelines and code of conduct](https://github.com/apple/coremltools/blob/master/CONTRIBUTING.md, which are typical of open source communities. See [Contribution Guidelines](https://github.com/apple/coremltools/blob/master/CONTRIBUTING.md).
@@ -46,7 +29,10 @@ We encourage you to resolve or add comments to [any open issue](https://github.c
 If you find a software issue, follow these steps:
 
 1. Enter the following pip command to ensure that you are using the newest version of the `coremltools` package:
-pip install coremltools --upgrade
+
+   ```
+   pip install coremltools --upgrade
+   ```
 
 Install/upgrade instructions
 For instructions on installing or upgrading Core ML Tools, see [Installing Core ML Tools](installing-coremltools.md).
@@ -97,5 +83,3 @@ Core ML team members will add labels to your issues, requests, questions, or pul
 **question**: Question to the team, such as a request for clarification. Use this label with issues you create using the [question template](https://github.com/apple/coremltools/issues/new?assignees=&amp;labels=question&amp;template=-question.md&amp;title=).
 - Framework label (orange in color)*:* Use this label to specify the framework that this issue is appearing in. Examples include **caffe**, **onnx**, **pytorch**, **tf1.x** (TensorFlow 1), and **tf2.x / tf.keras** (TensorFlow 2 and TensorFlow Keras).
 - Issues for contributors to complete: If an issue is good for a contributor to self-assign, it may include the **good first issue** label.
-
-** Contents

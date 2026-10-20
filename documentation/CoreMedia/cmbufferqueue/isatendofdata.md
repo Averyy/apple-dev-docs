@@ -1,7 +1,8 @@
 # isAtEndOfData
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether that queue is at the end of its data.
 
@@ -22,13 +23,14 @@ var isAtEndOfData: Bool { get }
 
 ## See Also
 
-- [var isEmpty: Bool](cmbufferqueue/isempty.md)
+### Inspecting a Queue
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the queue contains buffers.
-- [var bufferCount: CMItemCount](cmbufferqueue/buffercount.md)
+- [var bufferCount: CMItemCount](./buffercount.md)
   The count of buffers in the queue.
-- [var head: CMBuffer?](cmbufferqueue/head.md)
+- [var head: CMBuffer?](./head.md)
   The element at the head of the queue.
-- [var containsEndOfData: Bool](cmbufferqueue/containsendofdata.md)
+- [var containsEndOfData: Bool](./containsendofdata.md)
   A Boolean value that indicates whether the buffer has its end-of-data state set.
 
 

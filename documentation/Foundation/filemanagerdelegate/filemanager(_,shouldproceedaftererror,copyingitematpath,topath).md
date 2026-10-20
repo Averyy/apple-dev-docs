@@ -1,7 +1,8 @@
 # fileManager(_:shouldProceedAfterError:copyingItemAtPath:toPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the move operation should continue after an error occurs while copying the item at the specified path.
 
@@ -20,15 +21,19 @@ Asks the delegate if the move operation should continue after an error occurs wh
 optional func fileManager(_ fileManager: FileManager, shouldProceedAfterError error: any Error, copyingItemAtPath srcPath: String, toPath dstPath: String) -> Bool
 ```
 
+```objc
+- (BOOL) fileManager:(NSFileManager *) fileManager shouldProceedAfterError:(NSError *) error copyingItemAtPath:(NSString *) srcPath toPath:(NSString *) dstPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed or [`false`](https://developer.apple.com/documentation/swift/false) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation should proceed or [`false`](../../Swift/false.md) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The file manager calls this method when there is a problem copying the item to the specified location. If you return [`true`](https://developer.apple.com/documentation/swift/true), the file manager continues copying any other items and ignores the error.
+The file manager calls this method when there is a problem copying the item to the specified location. If you return [`true`](../../Swift/true.md), the file manager continues copying any other items and ignores the error.
 
-This method performs the same task as the [`fileManager(_:shouldProceedAfterError:copyingItemAt:to:)`](filemanagerdelegate/filemanager(_:shouldproceedaftererror:copyingitemat:to:).md) method, which is preferred over this method in macOS 10.6 and later.
+This method performs the same task as the [`fileManager(_:shouldProceedAfterError:copyingItemAt:to:)`](./filemanager%28_,shouldproceedaftererror,copyingitemat,to%29.md) method, which is preferred over this method in macOS 10.6 and later.
 
 ## Parameters
 
@@ -39,15 +44,17 @@ This method performs the same task as the [`fileManager(_:shouldProceedAfterErro
 
 ## See Also
 
-- [func copyItem(atPath: String, toPath: String) throws](filemanager/copyitem(atpath:topath:).md)
+### Related Documentation
+- [func copyItem(atPath: String, toPath: String) throws](../filemanager/copyitem%28atpath,topath%29.md)
   Copies the item at the specified path to a new location synchronously.
-- [func copyItem(at: URL, to: URL) throws](filemanager/copyitem(at:to:).md)
+- [func copyItem(at: URL, to: URL) throws](../filemanager/copyitem%28at,to%29.md)
   Copies the file at the specified URL to a new location synchronously.
-- [func fileManager(FileManager, shouldCopyItemAt: URL, to: URL) -> Bool](filemanagerdelegate/filemanager(_:shouldcopyitemat:to:).md)
+### Copying  an Item
+- [func fileManager(FileManager, shouldCopyItemAt: URL, to: URL) -> Bool](./filemanager%28_,shouldcopyitemat,to%29.md)
   Asks the delegate if the file manager should copy the specified item to the new URL.
-- [func fileManager(FileManager, shouldCopyItemAtPath: String, toPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldcopyitematpath:topath:).md)
+- [func fileManager(FileManager, shouldCopyItemAtPath: String, toPath: String) -> Bool](./filemanager%28_,shouldcopyitematpath,topath%29.md)
   Asks the delegate if the file manager should copy the specified item to the new path.
-- [func fileManager(FileManager, shouldProceedAfterError: any Error, copyingItemAt: URL, to: URL) -> Bool](filemanagerdelegate/filemanager(_:shouldproceedaftererror:copyingitemat:to:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: any Error, copyingItemAt: URL, to: URL) -> Bool](./filemanager%28_,shouldproceedaftererror,copyingitemat,to%29.md)
   Asks the delegate if the move operation should continue after an error occurs while copying the item at the specified URL.
 
 

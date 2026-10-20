@@ -1,7 +1,8 @@
 # additive
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The particles are rendered using source-additive compositing.
 
@@ -19,15 +20,20 @@ The particles are rendered using source-additive compositing.
 static let additive: CAEmitterLayerRenderMode
 ```
 
+```c
+extern CAEmitterLayerRenderMode const kCAEmitterLayerAdditive;
+```
+
 ## See Also
 
-- [static let unordered: CAEmitterLayerRenderMode](caemitterlayerrendermode/unordered.md)
+### Constants
+- [static let unordered: CAEmitterLayerRenderMode](./unordered.md)
   Particles are rendered unordered. This mode uses source-over compositing.
-- [static let oldestFirst: CAEmitterLayerRenderMode](caemitterlayerrendermode/oldestfirst.md)
+- [static let oldestFirst: CAEmitterLayerRenderMode](./oldestfirst.md)
   Particles are rendered oldest first. This mode uses source-over compositing.
-- [static let oldestLast: CAEmitterLayerRenderMode](caemitterlayerrendermode/oldestlast.md)
+- [static let oldestLast: CAEmitterLayerRenderMode](./oldestlast.md)
   Particles are rendered oldest last. This mode uses source-over compositing.
-- [static let backToFront: CAEmitterLayerRenderMode](caemitterlayerrendermode/backtofront.md)
+- [static let backToFront: CAEmitterLayerRenderMode](./backtofront.md)
   Particles are rendered from back to front, sorted by z-position. This mode uses source-over compositing.
 
 

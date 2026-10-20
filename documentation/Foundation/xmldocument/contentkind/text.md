@@ -1,7 +1,8 @@
 # XMLDocument.ContentKind.text
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Outputs the string value of the document by extracting the string values from all text nodes.
 
@@ -15,13 +16,18 @@ Outputs the string value of the document by extracting the string values from al
 case text
 ```
 
+```c
+NSXMLDocumentTextKind
+```
+
 ## See Also
 
-- [XMLDocument.ContentKind.html](xmldocument/contentkind/html.md)
+### Enumeration Cases
+- [XMLDocument.ContentKind.html](./html.md)
   Outputs empty tags in HTML without a close tag, such as `<br>`.
-- [XMLDocument.ContentKind.xhtml](xmldocument/contentkind/xhtml.md)
+- [XMLDocument.ContentKind.xhtml](./xhtml.md)
   The document output is XHTML.
-- [XMLDocument.ContentKind.xml](xmldocument/contentkind/xml.md)
+- [XMLDocument.ContentKind.xml](./xml.md)
   The default type of document content type, which is XML.
 
 

@@ -1,7 +1,8 @@
 # vectorAxis
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var vectorAxis: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger vectorAxis;
 ```
 
 

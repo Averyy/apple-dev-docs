@@ -1,7 +1,8 @@
 # isIndefinite
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the sound loops or stops on its own.
 
@@ -19,9 +20,14 @@ A Boolean value that indicates whether the sound loops or stops on its own.
 var isIndefinite: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isIndefinite) BOOL indefinite;
+```
+
 ## See Also
 
-- [func stopAndInvalidate()](phasesoundevent/stopandinvalidate.md)
+### Stopping Playback
+- [func stopAndInvalidate()](./stopandinvalidate%28%29.md)
   Stops a sound event and prevents it from resuming.
 
 

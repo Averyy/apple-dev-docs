@@ -1,7 +1,8 @@
 # Head
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var Head: CSSM_LIST_ELEMENT_PTR!
+```
+
+```c
+CSSM_LIST_ELEMENT_PTR Head;
 ```
 
 

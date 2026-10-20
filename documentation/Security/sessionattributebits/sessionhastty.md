@@ -1,7 +1,8 @@
 # sessionHasTTY
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A bit that indicates `/dev/tty` is available.
 
@@ -13,6 +14,10 @@ A bit that indicates `/dev/tty` is available.
 
 ```swift
 static var sessionHasTTY: SessionAttributeBits { get }
+```
+
+```c
+sessionHasTTY
 ```
 
 

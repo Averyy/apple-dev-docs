@@ -1,7 +1,8 @@
 # init(title:dateRangeNavigationMarkers:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a navigation markers group with the specified title and array of date range navigation markers.
 
@@ -14,15 +15,19 @@ Initializes a navigation markers group with the specified title and array of dat
 init(title: String?, dateRangeNavigationMarkers navigationMarkers: [AVDateRangeMetadataGroup])
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title dateRangeNavigationMarkers:(NSArray<AVDateRangeMetadataGroup *> *) navigationMarkers;
+```
+
 #### Return Value
 
 A new navigation markers group.
 
 #### Discussion
 
-To associate marker groups with an asset for playback, use the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property of an [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object.
+To associate marker groups with an asset for playback, use the [`navigationMarkerGroups`](../../AVFoundation/avplayeritem/navigationmarkergroups.md) property of an [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) object.
 
-To create a chapter list, pass `nil` for the `title` parameter and set the group as the first item in the player item’s [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) array. To provide additional options for navigating media (such as a “Goals Scored” group for a recorded sporting event), provide a unique `title` value for each marker group in the array.
+To create a chapter list, pass `nil` for the `title` parameter and set the group as the first item in the player item’s [`navigationMarkerGroups`](../../AVFoundation/avplayeritem/navigationmarkergroups.md) array. To provide additional options for navigating media (such as a “Goals Scored” group for a recorded sporting event), provide a unique `title` value for each marker group in the array.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ To create a chapter list, pass `nil` for the `title` parameter and set the group
 
 ## See Also
 
-- [init(title: String?, timedNavigationMarkers: [AVTimedMetadataGroup])](avnavigationmarkersgroup/init(title:timednavigationmarkers:).md)
+### Creating a navigation marker group
+- [init(title: String?, timedNavigationMarkers: [AVTimedMetadataGroup])](./init%28title,timednavigationmarkers%29.md)
   Initializes a navigation markers group with the specified title and array of timed navigation markers.
 
 

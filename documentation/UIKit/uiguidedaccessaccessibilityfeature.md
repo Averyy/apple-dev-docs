@@ -1,7 +1,8 @@
 # UIGuidedAccessAccessibilityFeature
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe accessibility features for Guided Access.
 
@@ -17,40 +18,45 @@ Constants that describe accessibility features for Guided Access.
 struct UIGuidedAccessAccessibilityFeature
 ```
 
+```c
+enum UIGuidedAccessAccessibilityFeature : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/assistivetouch.md)
+- [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](./uiguidedaccessaccessibilityfeature/assistivetouch.md)
   The AssistiveTouch accessibility feature.
-- [static var grayscaleDisplay: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/grayscaledisplay.md)
+- [static var grayscaleDisplay: UIGuidedAccessAccessibilityFeature](./uiguidedaccessaccessibilityfeature/grayscaledisplay.md)
   The Grayscale accessibility feature.
-- [static var invertColors: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/invertcolors.md)
+- [static var invertColors: UIGuidedAccessAccessibilityFeature](./uiguidedaccessaccessibilityfeature/invertcolors.md)
   The Smart Invert accessibility feature.
-- [static var voiceOver: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/voiceover.md)
+- [static var voiceOver: UIGuidedAccessAccessibilityFeature](./uiguidedaccessaccessibilityfeature/voiceover.md)
   The VoiceOver assistive app.
-- [static var zoom: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/zoom.md)
+- [static var zoom: UIGuidedAccessAccessibilityFeature](./uiguidedaccessaccessibilityfeature/zoom.md)
   The Zoom accessibility feature.
 ### Initializers
-- [init(rawValue: UInt)](uiguidedaccessaccessibilityfeature/init(rawvalue:).md)
+- [init(rawValue: UInt)](./uiguidedaccessaccessibilityfeature/init%28rawvalue%29.md)
   Creates a Guided Access accessibility feature with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [static func configureForGuidedAccess(features: UIGuidedAccessAccessibilityFeature, enabled: Bool, completionHandler: (Bool, (any Error)?) -> Void)](uiaccessibility/configureforguidedaccess(features:enabled:completionhandler:).md)
+### Guided Access
+- [static func configureForGuidedAccess(features: UIGuidedAccessAccessibilityFeature, enabled: Bool, completionHandler: (Bool, (any Error)?) -> Void)](./uiaccessibility/configureforguidedaccess%28features,enabled,completionhandler%29.md)
   Enables or disables the specified accessibility features while using Guided Access.
-- [UIAccessibility.GuidedAccessError.Code](uiaccessibility/guidedaccesserror/code.md)
+- [UIAccessibility.GuidedAccessError.Code](./uiaccessibility/guidedaccesserror/code.md)
   Error codes for Guided Access.
 
 

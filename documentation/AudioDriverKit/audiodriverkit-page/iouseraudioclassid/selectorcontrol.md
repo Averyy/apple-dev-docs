@@ -1,7 +1,8 @@
 # SelectorControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio selector control class.
 
@@ -10,21 +11,22 @@ The identifier for the audio selector control class.
 
 ## Declaration
 
-```swift
+```c
 SelectorControl
 ```
 
 ## See Also
 
-- [DataDestinationControl](audiodriverkit/iouseraudioclassid/datadestinationcontrol.md)
+### Selector Controls
+- [DataDestinationControl](./datadestinationcontrol.md)
   The identifier for the audio data destination control class.
-- [DataSourceControl](audiodriverkit/iouseraudioclassid/datasourcecontrol.md)
+- [DataSourceControl](./datasourcecontrol.md)
   The identifier for the audio data source control class.
-- [ClockSourceControl](audiodriverkit/iouseraudioclassid/clocksourcecontrol.md)
+- [ClockSourceControl](./clocksourcecontrol.md)
   The identifier for the audio clock source control class.
-- [HighPassFilterControl](audiodriverkit/iouseraudioclassid/highpassfiltercontrol.md)
+- [HighPassFilterControl](./highpassfiltercontrol.md)
   The identifier for the audio high pass filter control class.
-- [LineLevelControl](audiodriverkit/iouseraudioclassid/linelevelcontrol.md)
+- [LineLevelControl](./linelevelcontrol.md)
   The identifier for the audio line level control class.
 
 

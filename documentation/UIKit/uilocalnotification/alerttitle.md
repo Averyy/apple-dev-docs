@@ -1,20 +1,25 @@
 # alertTitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short description of the reason for the alert.
 
 **Availability**:
-- iOS 8.2+
-- iPadOS 8.2+
-- Mac Catalyst 13.1+
-- watchOS 2.0+
+- iOS 8.2+ - Deprecated in 10.0
+- iPadOS 8.2+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- watchOS 2.0+ - Deprecated in 3.0
 
 ## Declaration
 
 ```swift
 var alertTitle: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * alertTitle;
 ```
 
 #### Discussion
@@ -25,15 +30,16 @@ Title strings should be short, usually only a couple of words describing the rea
 
 ## See Also
 
-- [var alertBody: String?](uilocalnotification/alertbody.md)
+### Composing the alert
+- [var alertBody: String?](./alertbody.md)
   The message displayed in the notification alert.
-- [var alertAction: String?](uilocalnotification/alertaction.md)
+- [var alertAction: String?](./alertaction.md)
   The title of the action button or slider.
-- [var hasAction: Bool](uilocalnotification/hasaction.md)
+- [var hasAction: Bool](./hasaction.md)
   A Boolean value that controls whether the notification shows or hides the alert action.
-- [var alertLaunchImage: String?](uilocalnotification/alertlaunchimage.md)
+- [var alertLaunchImage: String?](./alertlaunchimage.md)
   Identifies the image used as the launch image when the user taps (or slides) the action button (or slider).
-- [var category: String?](uilocalnotification/category.md)
+- [var category: String?](./category.md)
   The name of a group of actions to display in the alert.
 
 

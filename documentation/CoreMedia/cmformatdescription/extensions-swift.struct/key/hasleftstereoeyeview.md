@@ -1,7 +1,8 @@
 # hasLeftStereoEyeView
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A boolean indicating the stereo left eye is present in video frames.
 

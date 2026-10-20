@@ -1,7 +1,8 @@
 # onResume
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A callback function that is automatically called when the app moves to the foreground.
 
@@ -10,7 +11,7 @@ A callback function that is automatically called when the app moves to the foreg
 
 ## Declaration
 
-```swift
+```
 attribute function onResume;
 ```
 
@@ -20,13 +21,14 @@ Use the `onResume` attribute to start any required actions when the app moves fr
 
 ## See Also
 
-- [onError](app/1627353-onerror.md)
+### Responding to App Life Cycle Events
+- [onError](./api-1627353-onerror.md)
   A callback function that is automatically called when an error is sent from the Apple TV.
-- [onExit](app/1627419-onexit.md)
+- [onExit](./api-1627419-onexit.md)
   A callback function that is automatically called when the app has been exited.
-- [onLaunch](app/1627407-onlaunch.md)
+- [onLaunch](./api-1627407-onlaunch.md)
   A callback function that is automatically called when the app has been launched.
-- [onSuspend](app/1627431-onsuspend.md)
+- [onSuspend](./api-1627431-onsuspend.md)
   A callback function that is automatically called when the app is sent to the background.
 
 

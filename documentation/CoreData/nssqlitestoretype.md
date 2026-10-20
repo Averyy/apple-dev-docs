@@ -1,7 +1,8 @@
 # NSSQLiteStoreType
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The SQLite database store type.
 
@@ -10,7 +11,7 @@ The SQLite database store type.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,18 +21,23 @@ The SQLite database store type.
 let NSSQLiteStoreType: String
 ```
 
+```c
+extern NSString * const NSSQLiteStoreType;
+```
+
 ## Mentions
 
-- [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
-- [Mirroring a Core Data store with CloudKit](mirroring-a-core-data-store-with-cloudkit.md)
+- [Accessing data when the store changes](./accessing-data-when-the-store-changes.md)
+- [Mirroring a Core Data store with CloudKit](./mirroring-a-core-data-store-with-cloudkit.md)
 
 ## See Also
 
-- [let NSXMLStoreType: String](nsxmlstoretype.md)
+### Constants
+- [let NSXMLStoreType: String](./nsxmlstoretype.md)
   The XML store type.
-- [let NSBinaryStoreType: String](nsbinarystoretype.md)
+- [let NSBinaryStoreType: String](./nsbinarystoretype.md)
   The binary store type.
-- [let NSInMemoryStoreType: String](nsinmemorystoretype.md)
+- [let NSInMemoryStoreType: String](./nsinmemorystoretype.md)
   The in-memory store type.
 
 

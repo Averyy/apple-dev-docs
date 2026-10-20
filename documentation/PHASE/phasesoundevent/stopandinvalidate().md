@@ -1,7 +1,8 @@
 # stopAndInvalidate()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops a sound event and prevents it from resuming.
 
@@ -19,9 +20,14 @@ Stops a sound event and prevents it from resuming.
 func stopAndInvalidate()
 ```
 
+```objc
+- (void) stopAndInvalidate;
+```
+
 ## See Also
 
-- [var isIndefinite: Bool](phasesoundevent/isindefinite.md)
+### Stopping Playback
+- [var isIndefinite: Bool](./isindefinite.md)
   A Boolean value that indicates whether the sound loops or stops on its own.
 
 

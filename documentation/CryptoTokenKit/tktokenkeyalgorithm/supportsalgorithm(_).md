@@ -1,7 +1,8 @@
 # supportsAlgorithm(_:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Whether the specified algorithm is the target operation algorithm, or one of the other algorithms used.
 
@@ -20,9 +21,13 @@ Whether the specified algorithm is the target operation algorithm, or one of the
 func supportsAlgorithm(_ algorithm: SecKeyAlgorithm) -> Bool
 ```
 
+```objc
+- (BOOL) supportsAlgorithm:(SecKeyAlgorithm) algorithm;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `algorithm` is the target operation algorithm or one of the other algorithms used; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `algorithm` is the target operation algorithm or one of the other algorithms used; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ func supportsAlgorithm(_ algorithm: SecKeyAlgorithm) -> Bool
 
 ## See Also
 
-- [func isAlgorithm(SecKeyAlgorithm) -> Bool](tktokenkeyalgorithm/isalgorithm(_:).md)
+### Determining Algorithm Usage
+- [func isAlgorithm(SecKeyAlgorithm) -> Bool](./isalgorithm%28_%29.md)
   Returns whether the specified algorithm is the target operation algorithm.
 
 

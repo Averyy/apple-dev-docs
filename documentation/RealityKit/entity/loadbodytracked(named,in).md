@@ -1,7 +1,8 @@
 # loadBodyTracked(named:in:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Synchronously loads a body-tracked entity from a bundle.
 
@@ -19,15 +20,15 @@ Synchronously loads a body-tracked entity from a bundle.
 
 ## Mentions
 
-- [Loading entities from a file](loading-entities-from-a-file.md)
+- [Loading entities from a file](../loading-entities-from-a-file.md)
 
 #### Return Value
 
-The root entity in the loaded file, cast as a [`BodyTrackedEntity`](bodytrackedentity.md).
+The root entity in the loaded file, cast as a [`BodyTrackedEntity`](../bodytrackedentity.md).
 
 #### Discussion
 
-Loading an [`Entity`](entity.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive. See [`init(named:in:)`](entity/init(named:in:).md) for an example that demonstrates how to safely load content.
+Loading an [`Entity`](../entity.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive. See [`init(named:in:)`](./init%28named,in%29.md) for an example that demonstrates how to safely load content.
 
 ## Parameters
 
@@ -36,11 +37,12 @@ Loading an [`Entity`](entity.md) with this method blocks the main actor because 
 
 ## See Also
 
-- [static func loadBodyTracked(contentsOf: URL, withName: String?) throws -> BodyTrackedEntity](entity/loadbodytracked(contentsof:withname:).md)
+### Loading a flattened body-tracked entity
+- [static func loadBodyTracked(contentsOf: URL, withName: String?) throws -> BodyTrackedEntity](./loadbodytracked%28contentsof,withname%29.md)
   Synchronously loads a body-tracked entity from a file URL.
-- [static func loadBodyTrackedAsync(contentsOf: URL, withName: String?) -> LoadRequest<BodyTrackedEntity>](entity/loadbodytrackedasync(contentsof:withname:).md)
+- [static func loadBodyTrackedAsync(contentsOf: URL, withName: String?) -> LoadRequest<BodyTrackedEntity>](./loadbodytrackedasync%28contentsof,withname%29.md)
   Asynchronously loads a body-tracked entity from a file URL.
-- [static func loadBodyTrackedAsync(named: String, in: Bundle?) -> LoadRequest<BodyTrackedEntity>](entity/loadbodytrackedasync(named:in:).md)
+- [static func loadBodyTrackedAsync(named: String, in: Bundle?) -> LoadRequest<BodyTrackedEntity>](./loadbodytrackedasync%28named,in%29.md)
   Asynchronously loads a body-tracked entity from a bundle.
 
 

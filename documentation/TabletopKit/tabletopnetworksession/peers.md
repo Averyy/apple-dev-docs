@@ -1,7 +1,8 @@
 # peers
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of peers known by the game
 
@@ -16,11 +17,12 @@ var peers: Set<TabletopNetworkSession<Coordinator>.Peer> { get }
 
 ## See Also
 
-- [func addPeer(TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/addpeer(_:).md)
+### Managing network session peers
+- [func addPeer(TabletopNetworkSession<Coordinator>.Peer)](./addpeer%28_%29.md)
   Notify the game that a new peer has connected
-- [func removePeer(TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/removepeer(_:).md)
+- [func removePeer(TabletopNetworkSession<Coordinator>.Peer)](./removepeer%28_%29.md)
   Notify the game that an existing peer disconnected
-- [TabletopNetworkSession.Peer](tabletopnetworksession/peer.md)
+- [TabletopNetworkSession.Peer](./peer.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # supportedOutputPixelFormats
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of supported pixel format types.
 
@@ -22,11 +23,12 @@ final var supportedOutputPixelFormats: [OSType] { get }
 
 ## See Also
 
-- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.property.md)
+### Configuring a request
+- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.property.md)
   A value that indicates how the request balances accuracy and performance.
-- [GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.enum.md)
+- [GeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.enum.md)
   Constants that define the levels of quality for a person-segmentation request.
-- [var outputPixelFormatType: OSType](generatepersonsegmentationrequest/outputpixelformattype.md)
+- [var outputPixelFormatType: OSType](./outputpixelformattype.md)
   The desired pixel format of the observation.
 
 

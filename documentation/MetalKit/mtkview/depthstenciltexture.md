@@ -1,7 +1,8 @@
 # depthStencilTexture
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A packed depth and stencil texture associated with the current drawable objectâ€™s texture.
 
@@ -19,21 +20,26 @@ A packed depth and stencil texture associated with the current drawable objectâ€
 var depthStencilTexture: (any MTLTexture)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<MTLTexture> depthStencilTexture;
+```
+
 #### Discussion
 
-The value of [`depthStencilPixelFormat`](mtkview/depthstencilpixelformat.md) determines the format of this texture.
+The value of [`depthStencilPixelFormat`](./depthstencilpixelformat.md) determines the format of this texture.
 
-The default value is `nil`. This value is also `nil` if the specified pixel format is [`MTLPixelFormat.invalid`](https://developer.apple.com/documentation/metal/mtlpixelformat/invalid).
+The default value is `nil`. This value is also `nil` if the specified pixel format is [`MTLPixelFormat.invalid`](../../Metal/mtlpixelformat/invalid.md).
 
 ## See Also
 
-- [var currentRenderPassDescriptor: MTLRenderPassDescriptor?](mtkview/currentrenderpassdescriptor.md)
+### Retrieving Render Target Information
+- [var currentRenderPassDescriptor: MTLRenderPassDescriptor?](./currentrenderpassdescriptor.md)
   A render pass descriptor to draw into the current drawable.
-- [var currentDrawable: (any CAMetalDrawable)?](mtkview/currentdrawable.md)
+- [var currentDrawable: (any CAMetalDrawable)?](./currentdrawable.md)
   The drawable to use for the current frame.
-- [var depthStencilStorageMode: MTLStorageMode](mtkview/depthstencilstoragemode.md)
+- [var depthStencilStorageMode: MTLStorageMode](./depthstencilstoragemode.md)
   The storage mode that the packed depth and stencil texture use.
-- [var multisampleColorTexture: (any MTLTexture)?](mtkview/multisamplecolortexture.md)
+- [var multisampleColorTexture: (any MTLTexture)?](./multisamplecolortexture.md)
   The multisample color sample texture to render into.
 
 

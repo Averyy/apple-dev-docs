@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Virtio console port configuration.
 
@@ -12,6 +13,10 @@ Creates a new Virtio console port configuration.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

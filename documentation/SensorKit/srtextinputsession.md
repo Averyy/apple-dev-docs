@@ -1,7 +1,8 @@
 # SRTextInputSession
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The characters a user types for a particular keyboard.
 
@@ -16,6 +17,10 @@ The characters a user types for a particular keyboard.
 class SRTextInputSession
 ```
 
+```objc
+@interface SRTextInputSession : NSObject
+```
+
 #### Overview
 
 The framework instantiates a new instance of this class every time the keyboard displays after dismissal.
@@ -23,33 +28,34 @@ The framework instantiates a new instance of this class every time the keyboard 
 ## Topics
 
 ### Identifying the Session
-- [var sessionIdentifier: String](srtextinputsession/sessionidentifier.md)
+- [var sessionIdentifier: String](./srtextinputsession/sessionidentifier.md)
   A unique identifier for the keyboard session.
 ### Timing Text Input
-- [var duration: TimeInterval](srtextinputsession/duration.md)
+- [var duration: TimeInterval](./srtextinputsession/duration.md)
   The length of time, in seconds, that the session spans.
 ### Inspecting Text Source
-- [var sessionType: SRTextInputSession.SessionType](srtextinputsession/sessiontype-swift.property.md)
-- [SRTextInputSession.SessionType](srtextinputsession/sessiontype-swift.enum.md)
+- [var sessionType: SRTextInputSession.SessionType](./srtextinputsession/sessiontype-swift.property.md)
+- [SRTextInputSession.SessionType](./srtextinputsession/sessiontype-swift.enum.md)
   Methods to input text during a session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var textInputSessions: [SRTextInputSession]](srdeviceusagereport/applicationusage/textinputsessions.md)
+### Inspecting Text Input
+- [var textInputSessions: [SRTextInputSession]](./srdeviceusagereport/applicationusage/textinputsessions.md)
   The text input session types that occur during application usage.
 
 

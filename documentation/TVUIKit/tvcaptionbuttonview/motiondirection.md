@@ -1,7 +1,8 @@
 # motionDirection
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction that the caption button view tilts in response to user interaction on the remote.
 
@@ -14,13 +15,18 @@ The direction that the caption button view tilts in response to user interaction
 var motionDirection: TVCaptionButtonViewMotionDirection { get set }
 ```
 
+```objc
+@property (nonatomic, assign) TVCaptionButtonViewMotionDirection motionDirection;
+```
+
 #### Discussion
 
-The default value is [`TVCaptionButtonViewMotionDirection.horizontal`](tvcaptionbuttonviewmotiondirection/horizontal.md).
+The default value is [`TVCaptionButtonViewMotionDirection.horizontal`](../tvcaptionbuttonviewmotiondirection/horizontal.md).
 
 ## See Also
 
-- [enum TVCaptionButtonViewMotionDirection](tvcaptionbuttonviewmotiondirection.md)
+### Setting the Motion Direction
+- [enum TVCaptionButtonViewMotionDirection](../tvcaptionbuttonviewmotiondirection.md)
   The directions that the caption button view can tilt in response to user interactions on the remote.
 
 

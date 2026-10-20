@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate of the annotation while someone is dragging it.
 
@@ -10,7 +11,7 @@ The coordinate of the annotation while someone is dragging it.
 
 ## Declaration
 
-```swift
+```
 readonly coordinate: Coordinate | null;
 ```
 

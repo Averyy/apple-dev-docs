@@ -1,7 +1,8 @@
 # startProxy(options:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Start the network proxy.
 
@@ -15,7 +16,15 @@ Start the network proxy.
 ## Declaration
 
 ```swift
+func startProxy(options: [String : Any]? = nil, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func startProxy(options: [String : Any]? = nil) async throws
+```
+
+```objc
+- (void) startProxyWithOptions:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -31,13 +40,14 @@ The domain and code of the `NSError` object passed to the `completionHandler` bl
 ## Parameters
 
 - `options`: A dictionary passed by the app that requested that the proxy be started. If the starting app did not specify a dictionary of options then this parameter will be nil. If the proxy was started via Connect On Demand, then this parameter will be nil.
-- `completionHandler`: A block that must be executed when the proxy is fully established, or when the proxy cannot be started due to an error. If the proxy was successfully established, then the error parameter must be set to nil. If an error occurred, the error parameter passed to this block must be set to a non-nil [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object.
+- `completionHandler`: A block that must be executed when the proxy is fully established, or when the proxy cannot be started due to an error. If the proxy was successfully established, then the error parameter must be set to nil. If an error occurred, the error parameter passed to this block must be set to a non-nil [`NSError`](../../Foundation/nserror.md) object.
 
 ## See Also
 
-- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](neappproxyprovider/stopproxy(with:completionhandler:).md)
+### Managing the app proxy life cycle
+- [func stopProxy(with: NEProviderStopReason, completionHandler: () -> Void)](./stopproxy%28with,completionhandler%29.md)
   Stop the network proxy.
-- [func cancelProxyWithError((any Error)?)](neappproxyprovider/cancelproxywitherror(_:).md)
+- [func cancelProxyWithError((any Error)?)](./cancelproxywitherror%28_%29.md)
   Stop the network proxy from the App Proxy Provider.
 
 

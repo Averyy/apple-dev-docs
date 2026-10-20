@@ -1,7 +1,8 @@
 # UIDocumentViewController.LaunchOptions
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Options for customizing the document launch view.
 
@@ -18,58 +19,63 @@ Options for customizing the document launch view.
 class LaunchOptions
 ```
 
+```objc
+@interface UIDocumentViewControllerLaunchOptions : NSObject
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
 #### Overview
 
-When your app launches, the document view controller displays a view that contains a title and buttons to create new documents. It also displays the document browser as a sheet over the title view. For more information, see [`Customizing a document-based app’s launch experience`](customizing-a-document-based-app-s-launch-experience.md).
+When your app launches, the document view controller displays a view that contains a title and buttons to create new documents. It also displays the document browser as a sheet over the title view. For more information, see [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md).
 
 ## Topics
 
 ### Configuring the appearance
-- [var title: String](uidocumentviewcontroller/launchoptions-swift.class/title.md)
+- [var title: String](./launchoptions-swift.class/title.md)
   The title that appears in the title view.
-- [var background: UIBackgroundConfiguration](uidocumentviewcontroller/launchoptions-swift.class/background.md)
+- [var background: UIBackgroundConfiguration](./launchoptions-swift.class/background.md)
   A configuration that describes the launch scene’s background.
-- [var documentTargetView: UIView?](uidocumentviewcontroller/launchoptions-swift.class/documenttargetview.md)
+- [var documentTargetView: UIView?](./launchoptions-swift.class/documenttargetview.md)
   The document target view.
-- [var browserViewController: UIDocumentBrowserViewController](uidocumentviewcontroller/launchoptions-swift.class/browserviewcontroller.md)
+- [var browserViewController: UIDocumentBrowserViewController](./launchoptions-swift.class/browserviewcontroller.md)
   The document browser view controller.
 ### Adding accessory views
-- [var backgroundAccessoryView: UIView?](uidocumentviewcontroller/launchoptions-swift.class/backgroundaccessoryview.md)
+- [var backgroundAccessoryView: UIView?](./launchoptions-swift.class/backgroundaccessoryview.md)
   A view that appears behind the title view in the launch scene.
-- [var foregroundAccessoryView: UIView?](uidocumentviewcontroller/launchoptions-swift.class/foregroundaccessoryview.md)
+- [var foregroundAccessoryView: UIView?](./launchoptions-swift.class/foregroundaccessoryview.md)
   A view that appears in front of the title view in the launch scene.
 ### Adding actions
-- [var primaryAction: UIAction?](uidocumentviewcontroller/launchoptions-swift.class/primaryaction.md)
+- [var primaryAction: UIAction?](./launchoptions-swift.class/primaryaction.md)
   The launch scene’s primary action.
-- [var secondaryAction: UIAction?](uidocumentviewcontroller/launchoptions-swift.class/secondaryaction.md)
+- [var secondaryAction: UIAction?](./launchoptions-swift.class/secondaryaction.md)
   The launch scene’s secondary action.
 ### Creating documents
-- [class func createDocumentAction(withIntent: UIDocument.CreationIntent) -> UIAction](uidocumentviewcontroller/launchoptions-swift.class/createdocumentaction(withintent:).md)
+- [class func createDocumentAction(withIntent: UIDocument.CreationIntent) -> UIAction](./launchoptions-swift.class/createdocumentaction%28withintent%29.md)
   Creates an action that uses the specified intent.
 ### Instance Properties
-- [var subtitle: String?](uidocumentviewcontroller/launchoptions-swift.class/subtitle.md)
+- [var subtitle: String?](./launchoptions-swift.class/subtitle.md)
   The subtitle of the launch view. Default is `nil`. If `nil`, no subtitle will be displayed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [var launchOptions: UIDocumentViewController.LaunchOptions](uidocumentviewcontroller/launchoptions-swift.property.md)
+### Customizing the launch experience
+- [var launchOptions: UIDocumentViewController.LaunchOptions](./launchoptions-swift.property.md)
   Options that customize a document-based app’s launch view.
 
 

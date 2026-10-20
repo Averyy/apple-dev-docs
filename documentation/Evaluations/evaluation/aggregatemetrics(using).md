@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Aggregates the collected metric results.
@@ -23,8 +24,8 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator)
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
+- [Scoring with model-judge evaluators](../scoring-with-model-as-judge-evaluators.md)
 
 ## Parameters
 
@@ -32,13 +33,14 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator)
 
 ## See Also
 
-- [var evaluators: Self.Evaluators](evaluation/evaluators-swift.property.md)
+### Scoring results
+- [var evaluators: Self.Evaluators](./evaluators-swift.property.md)
   The evaluators to apply to each sample and its corresponding subject.
-- [Evaluation.Evaluators](evaluation/evaluators-swift.typealias.md)
+- [Evaluation.Evaluators](./evaluators-swift.typealias.md)
   The evaluator array type for this conformance.
-- [protocol EvaluatorProtocol](evaluatorprotocol.md)
+- [protocol EvaluatorProtocol](../evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
-- [struct EvaluatorsBuilder](evaluatorsbuilder.md)
+- [struct EvaluatorsBuilder](../evaluatorsbuilder.md)
   A result builder that enables declarative evaluator lists.
 
 

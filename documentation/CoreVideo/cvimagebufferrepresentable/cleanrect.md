@@ -1,7 +1,8 @@
 # cleanRect
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Source rectangle of a CVImageBuffer that represents the clean aperture of the buffer in encoded pixels. For example, an NTSC DV frame would return a CGRect with an origin of 8,0 and a size of 704,480. Note that the origin of this rect is always the lower left corner. This is the same coordinate system as used by CoreImage.
 

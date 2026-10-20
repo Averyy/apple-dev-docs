@@ -1,7 +1,8 @@
 # GCInputButtonHome
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the home or logo button element.
 
@@ -11,7 +12,7 @@ The name of the home or logo button element.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,21 @@ var GCInputButtonHome: String { get }
 
 ## See Also
 
-- [var buttonHome: GCControllerButtonInput?](gcextendedgamepad/buttonhome.md)
+### Related Documentation
+- [var buttonHome: GCControllerButtonInput?](./gcextendedgamepad/buttonhome.md)
   The main menu button element that players use to enter the secondary menu and pause the game.
-- [var GCInputButtonMenu: String](gcinputbuttonmenu-196mn.md)
+### Face button names
+- [var GCInputButtonMenu: String](./gcinputbuttonmenu-196mn.md)
   The name of the primary menu button element.
-- [var GCInputButtonOptions: String](gcinputbuttonoptions-84kj.md)
+- [var GCInputButtonOptions: String](./gcinputbuttonoptions-84kj.md)
   The name of the secondary menu button.
-- [var GCInputButtonA: String](gcinputbuttona-8z15w.md)
+- [var GCInputButtonA: String](./gcinputbuttona-8z15w.md)
   The name for the controller’s A button.
-- [var GCInputButtonB: String](gcinputbuttonb-6z361.md)
+- [var GCInputButtonB: String](./gcinputbuttonb-6z361.md)
   The name for the controller’s B button.
-- [var GCInputButtonX: String](gcinputbuttonx-32i2z.md)
+- [var GCInputButtonX: String](./gcinputbuttonx-32i2z.md)
   The name for the controller’s X button.
-- [var GCInputButtonY: String](gcinputbuttony-9x9i9.md)
+- [var GCInputButtonY: String](./gcinputbuttony-9x9i9.md)
   The name for the controller’s Y button.
 
 

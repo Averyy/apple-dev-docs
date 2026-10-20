@@ -1,7 +1,8 @@
 # default
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Defines default text scale
 
@@ -26,7 +27,8 @@ When specified uses the default text scale.
 
 ## See Also
 
-- [static let secondary: Text.Scale](text/scale/secondary.md)
+### Getting built-in text scales
+- [static let secondary: Text.Scale](./secondary.md)
   Defines secondary text scale
 
 

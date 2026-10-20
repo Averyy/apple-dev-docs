@@ -1,7 +1,8 @@
 # USDPrim.Specifier.def
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Creates a concrete prim.
 

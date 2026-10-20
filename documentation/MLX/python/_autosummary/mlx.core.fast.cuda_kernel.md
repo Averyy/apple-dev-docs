@@ -6,36 +6,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 # mlx.core.fast.cuda_kernel
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.fast.cuda_kernel.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.fast.cuda_kernel
-
- Table of contents 
-
-## Contents
-
-# mlx.core.fast.cuda_kernel
-
 **cuda_kernel(*name: str*, *input_names: Sequence[str]*, *output_names: Sequence[str]*, *source: str*, *header: str = ''*, *ensure_row_contiguous: bool = True*, *shared_memory: int = 0*) → [object](https://docs.python.org/3/builtins/functions.html#object)**
 : A jit-compiled custom CUDA kernel defined from a source string.
-This is the CUDA equivalent of [Custom Metal Kernels](../../dev/custom_metal_kernels.html#custom-metal-kernels).
+This is the CUDA equivalent of [Custom Metal Kernels](../../dev/custom_metal_kernels.md#custom-metal-kernels).
 
 Parameters:
 
@@ -58,32 +31,33 @@ Returns:
 Callable `cuda_kernel`.
 
 Example
-def exp_elementwise(a: mx.array):
-    source = '''
-        auto elem = cooperative_groups::this_grid().thread_rank();
-        T tmp = inp[elem];
-        out[elem] = exp(tmp);
-    '''
 
-    kernel = mx.fast.cuda_kernel(
-        name="myexp",
-        input_names=["inp"],
-        output_names=["out"],
-        source=source
-    )
-    outputs = kernel(
-        inputs=[a],
-        template=[("T", mx.float32)],
-        grid=(a.size, 1, 1),
-        threadgroup=(256, 1, 1),
-        output_shapes=[a.shape],
-        output_dtypes=[a.dtype],
-        verbose=True,
-    )
-    return outputs[0]
+  ```
+  def exp_elementwise(a: mx.array):
+      source = '''
+          auto elem = cooperative_groups::this_grid().thread_rank();
+          T tmp = inp[elem];
+          out[elem] = exp(tmp);
+      '''
 
-a = mx.random.normal(shape=(16, 16)).astype(mx.float16)
-b = exp_elementwise(a)
-assert mx.allclose(b, mx.exp(a))
+      kernel = mx.fast.cuda_kernel(
+          name="myexp",
+          input_names=["inp"],
+          output_names=["out"],
+          source=source
+      )
+      outputs = kernel(
+          inputs=[a],
+          template=[("T", mx.float32)],
+          grid=(a.size, 1, 1),
+          threadgroup=(256, 1, 1),
+          output_shapes=[a.shape],
+          output_dtypes=[a.dtype],
+          verbose=True,
+      )
+      return outputs[0]
 
-** Contents
+  a = mx.random.normal(shape=(16, 16)).astype(mx.float16)
+  b = exp_elementwise(a)
+  assert mx.allclose(b, mx.exp(a))
+  ```

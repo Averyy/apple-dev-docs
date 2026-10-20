@@ -1,7 +1,8 @@
 # init(x:y:domain:function:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mark that fills the area between zero and the given function.
 
@@ -21,6 +22,8 @@ nonisolated
 init<S1, S2>(x: S1, y: S2, domain: ClosedRange<Double>? = nil, function: @escaping @Sendable (Double) -> Double) where S1 : StringProtocol, S2 : StringProtocol
 ```
 
+Available when `Content` is `FunctionAreaPlotContent`.
+
 #### Discussion
 
 Parameters:
@@ -34,19 +37,20 @@ Parameters:
 
 ## See Also
 
-- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-2fab1.md)
+### Plotting functions
+- [init(x: Text, y: Text, domain: ClosedRange<Double>?, function: (Double) -> Double)](./init%28x,y,domain,function%29-2fab1.md)
   Creates a mark that fills the area between zero and the given function.
-- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-1jmpp.md)
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> Double)](./init%28x,y,domain,function%29-1jmpp.md)
   Creates a mark that fills the area between zero and the given function.
-- [init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> Double)](areaplot/init(x:y:domain:function:)-etud.md)
+- [init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> Double)](./init%28x,y,domain,function%29-etud.md)
   Creates a mark that fills the area between zero and the given function.
-- [init(x: Text, yStart: Text, yEnd: Text, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-etcn.md)
+- [init(x: Text, yStart: Text, yEnd: Text, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](./init%28x,ystart,yend,domain,function%29-etcn.md)
   Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
-- [init(x: LocalizedStringResource, yStart: LocalizedStringResource, yEnd: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-9gui6.md)
+- [init(x: LocalizedStringResource, yStart: LocalizedStringResource, yEnd: LocalizedStringResource, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](./init%28x,ystart,yend,domain,function%29-9gui6.md)
   Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
-- [init(x: LocalizedStringKey, yStart: LocalizedStringKey, yEnd: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-5akqm.md)
+- [init(x: LocalizedStringKey, yStart: LocalizedStringKey, yEnd: LocalizedStringKey, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](./init%28x,ystart,yend,domain,function%29-5akqm.md)
   Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
-- [init<S1, S2, S3>(x: S1, yStart: S2, yEnd: S3, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](areaplot/init(x:ystart:yend:domain:function:)-23gxe.md)
+- [init<S1, S2, S3>(x: S1, yStart: S2, yEnd: S3, domain: ClosedRange<Double>?, function: (Double) -> (yStart: Double, yEnd: Double))](./init%28x,ystart,yend,domain,function%29-23gxe.md)
   Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).
 
 

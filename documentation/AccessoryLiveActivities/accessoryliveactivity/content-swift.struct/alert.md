@@ -1,7 +1,8 @@
 # alert
 
 **Framework**: Accessory Live Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Live Activity update’s alert message.
 
@@ -21,7 +22,8 @@ The `alert` property is `nil` if the Live Activity update doesn’t require disp
 
 ## See Also
 
-- [AccessoryLiveActivity.Content.AlertMessage](accessoryliveactivity/content-swift.struct/alertmessage.md)
+### Alerting people
+- [AccessoryLiveActivity.Content.AlertMessage](./alertmessage.md)
   The content you use as an alert for a Live Activity update on your accessory.
 
 

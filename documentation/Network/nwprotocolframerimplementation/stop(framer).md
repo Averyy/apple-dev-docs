@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Requests that your protocol send any final messages to close the connection.
@@ -23,17 +24,18 @@ func stop(framer: NWProtocolFramer.Instance) -> Bool
 
 ## See Also
 
-- [init(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/init(framer:).md)
+### Handling Instance Lifetime
+- [init(framer: NWProtocolFramer.Instance)](./init%28framer%29.md)
   Initializes your custom framing protocol for use in one connection attempt.
-- [func start(framer: NWProtocolFramer.Instance) -> NWProtocolFramer.StartResult](nwprotocolframerimplementation/start(framer:).md)
+- [func start(framer: NWProtocolFramer.Instance) -> NWProtocolFramer.StartResult](./start%28framer%29.md)
   Requests that your protocol set up its state and begin a handshake, if necessary.
-- [NWProtocolFramer.StartResult](nwprotocolframer/startresult.md)
+- [NWProtocolFramer.StartResult](../nwprotocolframer/startresult.md)
   Results that you send to indicate the disposition of your protocol after receiving the call to start.
-- [func wakeup(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/wakeup(framer:).md)
+- [func wakeup(framer: NWProtocolFramer.Instance)](./wakeup%28framer%29.md)
   Delivers a scheduled wakeup event.
-- [func cleanup(framer: NWProtocolFramer.Instance)](nwprotocolframerimplementation/cleanup(framer:).md)
+- [func cleanup(framer: NWProtocolFramer.Instance)](./cleanup%28framer%29.md)
   Indicates that your protocol should clean up all allocations before being deallocated.
-- [static var label: String](nwprotocolframerimplementation/label.md)
+- [static var label: String](./label.md)
   A label defined by your custom protocol for use in debugging.
 
 

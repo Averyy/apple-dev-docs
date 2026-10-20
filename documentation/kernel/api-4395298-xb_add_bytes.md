@@ -1,14 +1,15 @@
 # xb_add_bytes
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int xb_add_bytes(struct xdrbuf *, const char *, size_t, int);
 ```
 

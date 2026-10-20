@@ -1,7 +1,8 @@
 # UTF8Span.CharacterIterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Iterate the `Character` contents of a `UTF8Span`.
 
@@ -46,33 +47,33 @@ countCharacters(string)
 ## Topics
 
 ### Initializers
-- [init(UTF8Span)](utf8span/characteriterator/init(_:).md)
+- [init(UTF8Span)](./characteriterator/init%28_%29.md)
 ### Instance Properties
-- [let codeUnits: UTF8Span](utf8span/characteriterator/codeunits.md)
-- [var currentCodeUnitOffset: Int](utf8span/characteriterator/currentcodeunitoffset.md)
+- [let codeUnits: UTF8Span](./characteriterator/codeunits.md)
+- [var currentCodeUnitOffset: Int](./characteriterator/currentcodeunitoffset.md)
   The byte offset of the start of the next `Character`. This is always scalar-aligned. It is always `Character`-aligned relative to the last call to `reset` (or the start of the span if not called).
 ### Instance Methods
-- [func next() -> Character?](utf8span/characteriterator/next.md)
+- [func next() -> Character?](./characteriterator/next%28%29.md)
   Return the `Character` starting at `currentCodeUnitOffset`. After the function returns, `currentCodeUnitOffset` holds the position at the end of the `Character`, which is also the start of the next `Character`.
-- [func prefix() -> UTF8Span](utf8span/characteriterator/prefix.md)
+- [func prefix() -> UTF8Span](./characteriterator/prefix%28%29.md)
   Returns the UTF8Span containing all the content up to the iterator’s current position.
-- [func previous() -> Character?](utf8span/characteriterator/previous.md)
+- [func previous() -> Character?](./characteriterator/previous%28%29.md)
   Return the `Character` ending at `currentCodeUnitOffset`. After the function returns, `currentCodeUnitOffset` holds the position at the start of the returned `Character`, which is also the end of the previous `Character`.
-- [func reset(roundingBackwardsFrom: Int)](utf8span/characteriterator/reset(roundingbackwardsfrom:).md)
+- [func reset(roundingBackwardsFrom: Int)](./characteriterator/reset%28roundingbackwardsfrom%29.md)
   Reset to the nearest character-aligned position `<= i`.
-- [func reset(roundingForwardsFrom: Int)](utf8span/characteriterator/reset(roundingforwardsfrom:).md)
+- [func reset(roundingForwardsFrom: Int)](./characteriterator/reset%28roundingforwardsfrom%29.md)
   Reset to the nearest character-aligned position `>= i`.
-- [func reset(toUnchecked: Int)](utf8span/characteriterator/reset(tounchecked:).md)
+- [func reset(toUnchecked: Int)](./characteriterator/reset%28tounchecked%29.md)
   Reset this iterator to `codeUnitOffset`, skipping *all* safety checks.
-- [func skipBack() -> Int](utf8span/characteriterator/skipback.md)
+- [func skipBack() -> Int](./characteriterator/skipback%28%29.md)
   Move `currentCodeUnitOffset` to the start of the previous `Character`, without constructing it.
-- [func skipBack(by: Int) -> Int](utf8span/characteriterator/skipback(by:).md)
+- [func skipBack(by: Int) -> Int](./characteriterator/skipback%28by%29.md)
   Move `currentCodeUnitOffset` to the start of the previous `n` `Character`s, without constructing them.
-- [func skipForward() -> Int](utf8span/characteriterator/skipforward.md)
+- [func skipForward() -> Int](./characteriterator/skipforward%28%29.md)
   Advance `currentCodeUnitOffset` to the end of the current `Character`, without constructing it.
-- [func skipForward(by: Int) -> Int](utf8span/characteriterator/skipforward(by:).md)
+- [func skipForward(by: Int) -> Int](./characteriterator/skipforward%28by%29.md)
   Advance `currentCodeUnitOffset` to the end of `n` `Characters`, without constructing them.
-- [func suffix() -> UTF8Span](utf8span/characteriterator/suffix.md)
+- [func suffix() -> UTF8Span](./characteriterator/suffix%28%29.md)
   Returns the UTF8Span containing all the content after the iterator’s current position.
 
 

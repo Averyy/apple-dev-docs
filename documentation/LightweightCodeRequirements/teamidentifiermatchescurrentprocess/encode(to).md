@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes this constraint into the given encoder.
 

@@ -1,7 +1,8 @@
 # expect(processExitsWith:observing:_:sourceLocation:performing:)
 
 **Framework**: Swift Testing  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Check that an expression causes the process to terminate in a given fashion.
 
@@ -18,11 +19,11 @@ Check that an expression causes the process to terminate in a given fashion.
 
 ## Mentions
 
-- [Exit testing](exit-testing.md)
+- [Exit testing](./exit-testing.md)
 
 #### Return Value
 
-If the exit test passes, an instance of [`ExitTest.Result`](exittest/result.md) describing the state of the exit test when it exited. If the exit test fails, the result is `nil`.
+If the exit test passes, an instance of [`ExitTest.Result`](./exittest/result.md) describing the state of the exit test when it exited. If the exit test fails, the result is `nil`.
 
 #### Overview
 
@@ -37,20 +38,21 @@ await #expect(processExitsWith: .failure) {
 ## Parameters
 
 - `expectedExitCondition`: The expected exit condition.
-- `observedValues`: An array of key paths representing results from within the exit test that should be observed and returned by this macro. The [`exitStatus`](exittest/result/exitstatus.md) property is always returned.
+- `observedValues`: An array of key paths representing results from within the exit test that should be observed and returned by this macro. The [`exitStatus`](./exittest/result/exitstatus.md) property is always returned.
 - `comment`: A comment describing the expectation.
 - `sourceLocation`: The source location to which recorded expectations and issues should be attributed.
 - `expression`: The expression to be evaluated.
 
 ## See Also
 
-- [Exit testing](exit-testing.md)
+### Checking how processes exit
+- [Exit testing](./exit-testing.md)
   Use exit tests to test functionality that might cause a test process to exit.
-- [macro require(processExitsWith: ExitTest.Condition, observing: [any PartialKeyPath<ExitTest.Result> & Sendable], @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> Void) -> ExitTest.Result](require(processexitswith:observing:_:sourcelocation:performing:).md)
+- [macro require(processExitsWith: ExitTest.Condition, observing: [any PartialKeyPath<ExitTest.Result> & Sendable], @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> Void) -> ExitTest.Result](./require%28processexitswith,observing,_,sourcelocation,performing%29.md)
   Check that an expression causes the process to terminate in a given fashion and throw an error if it did not.
-- [enum ExitStatus](exitstatus.md)
+- [enum ExitStatus](./exitstatus.md)
   An enumeration describing possible status a process will report on exit.
-- [struct ExitTest](exittest.md)
+- [struct ExitTest](./exittest.md)
   A type describing an exit test.
 
 

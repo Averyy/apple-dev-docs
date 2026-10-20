@@ -1,7 +1,8 @@
 # focusedFrameGuide
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A guide for positioning other elements with the content view image’s focused frame.
 
@@ -12,6 +13,10 @@ A guide for positioning other elements with the content view image’s focused f
 
 ```swift
 var focusedFrameGuide: UILayoutGuide { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) UILayoutGuide * focusedFrameGuide;
 ```
 
 

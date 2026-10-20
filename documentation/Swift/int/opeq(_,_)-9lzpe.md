@@ -1,7 +1,8 @@
 # /=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Divides the first value by the second and stores the quotient in the left-hand-side variable.
 
@@ -37,9 +38,10 @@ x /= 5
 
 ## See Also
 
-- [static func += (inout Int, Int)](int/+=(_:_:).md)
+### Arithmetic with Assignment
+- [static func += (inout Int, Int)](./pluseq%28_,_%29.md)
   Adds two values and stores the result in the left-hand-side variable.
-- [static func *= (inout Int, Int)](int/*=(_:_:).md)
+- [static func *= (inout Int, Int)](./stareq%28_,_%29.md)
   Multiplies two values and stores the result in the left-hand-side variable.
 
 

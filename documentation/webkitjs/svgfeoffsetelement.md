@@ -1,7 +1,8 @@
 # SVGFEOffsetElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFEOffsetElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [dx](svgfeoffsetelement/1633276-dx.md)
-- [dy](svgfeoffsetelement/1630947-dy.md)
-- [in1](svgfeoffsetelement/1630392-in1.md)
+- [dx](./svgfeoffsetelement/api-1633276-dx.md)
+- [dy](./svgfeoffsetelement/api-1630947-dy.md)
+- [in1](./svgfeoffsetelement/api-1630392-in1.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

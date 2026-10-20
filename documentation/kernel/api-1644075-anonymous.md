@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kID_DRIVE](1644075-anonymous/kid_drive.md)
-- [kPACKET](1644075-anonymous/kpacket.md)
-- [kSOFTRESET](1644075-anonymous/ksoftreset.md)
+- [kID_DRIVE](./api-1644075-anonymous/kid_drive.md)
+- [kPACKET](./api-1644075-anonymous/kpacket.md)
+- [kSOFTRESET](./api-1644075-anonymous/ksoftreset.md)
 
 
 ---

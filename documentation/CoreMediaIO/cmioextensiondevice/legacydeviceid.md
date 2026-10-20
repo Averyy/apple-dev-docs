@@ -1,7 +1,8 @@
 # legacyDeviceID
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A legacy device identifier.
 
@@ -15,11 +16,16 @@ A legacy device identifier.
 var legacyDeviceID: String { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSString * legacyDeviceID;
+```
+
 ## See Also
 
-- [var localizedName: String](cmioextensiondevice/localizedname.md)
+### Identifying a Device
+- [var localizedName: String](./localizedname.md)
   A localized name for a device.
-- [var deviceID: UUID](cmioextensiondevice/deviceid.md)
+- [var deviceID: UUID](./deviceid.md)
   A universally unique device identifier value.
 
 

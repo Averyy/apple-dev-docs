@@ -1,7 +1,8 @@
 # BNNSGraphCompileOptionsSetMessageLogMask(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the mask for compile-time messages.
 
@@ -20,11 +21,15 @@ Sets the mask for compile-time messages.
 func BNNSGraphCompileOptionsSetMessageLogMask(_ options: bnns_graph_compile_options_t, _ log_level_mask: UInt32)
 ```
 
+```c
+void BNNSGraphCompileOptionsSetMessageLogMask(bnns_graph_compile_options_t options, uint32_t log_level_mask);
+```
+
 #### Discussion
 
-The default log mask is [`BNNSGraphMessageLevelUnsupported`](bnnsgraphmessagelevelunsupported.md) | [`BNNSGraphMessageLevelWarning`](bnnsgraphmessagelevelwarning.md) | [`BNNSGraphMessageLevelError`](bnnsgraphmessagelevelerror.md).
+The default log mask is [`BNNSGraphMessageLevelUnsupported`](./bnnsgraphmessagelevelunsupported.md) | [`BNNSGraphMessageLevelWarning`](./bnnsgraphmessagelevelwarning.md) | [`BNNSGraphMessageLevelError`](./bnnsgraphmessagelevelerror.md).
 
-The following code adds a custom graph compile-message callback function that prints [`BNNSGraphMessageLevelInfo`](bnnsgraphmessagelevelinfo.md) level messages to the console:
+The following code adds a custom graph compile-message callback function that prints [`BNNSGraphMessageLevelInfo`](./bnnsgraphmessagelevelinfo.md) level messages to the console:
 
 ```swift
 let options = BNNSGraphCompileOptionsMakeDefault()
@@ -54,15 +59,16 @@ func messageLogCallback(msg_level: BNNSGraphMessageLevel,
 
 ## See Also
 
-- [func BNNSGraphContextSetMessageLogMask(bnns_graph_context_t, UInt32) -> Int32](bnnsgraphcontextsetmessagelogmask(_:_:).md)
+### Specifying a graph’s compile-time message callback
+- [func BNNSGraphContextSetMessageLogMask(bnns_graph_context_t, UInt32) -> Int32](./bnnsgraphcontextsetmessagelogmask%28_,_%29.md)
   Sets mask for log messages that are logged (either via `os_log` or the user specified callback)
-- [struct BNNSGraphMessageLevel](bnnsgraphmessagelevel.md)
+- [struct BNNSGraphMessageLevel](./bnnsgraphmessagelevel.md)
   Constants that specify the mask for compile-time messages.
-- [func BNNSGraphCompileOptionsSetMessageLogCallback(bnns_graph_compile_options_t, bnns_graph_compile_message_fn_t, UnsafeMutablePointer<bnns_user_message_data_t>?)](bnnsgraphcompileoptionssetmessagelogcallback(_:_:_:).md)
+- [func BNNSGraphCompileOptionsSetMessageLogCallback(bnns_graph_compile_options_t, bnns_graph_compile_message_fn_t, UnsafeMutablePointer<bnns_user_message_data_t>?)](./bnnsgraphcompileoptionssetmessagelogcallback%28_,_,_%29.md)
   Specifies a customized callback function that reports compile-time messages.
-- [typealias bnns_graph_compile_message_fn_t](bnns_graph_compile_message_fn_t.md)
+- [typealias bnns_graph_compile_message_fn_t](./bnns_graph_compile_message_fn_t.md)
   The graph compile-message logging callback function.
-- [struct bnns_user_message_data_t](bnns_user_message_data_t.md)
+- [struct bnns_user_message_data_t](./bnns_user_message_data_t.md)
   Additional user-defined logging argument for message-logging callbacks.
 
 

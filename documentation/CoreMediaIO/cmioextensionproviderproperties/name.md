@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The provider name.
 
@@ -15,17 +16,22 @@ The provider name.
 var name: String? { get set }
 ```
 
+```objc
+@property (atomic, strong, nullable) NSString * name;
+```
+
 #### Discussion
 
-The key for this property is [`providerName`](cmioextensionproperty/providername.md).
+The key for this property is [`providerName`](../cmioextensionproperty/providername.md).
 
 ## See Also
 
-- [var manufacturer: String?](cmioextensionproviderproperties/manufacturer.md)
+### Managing Properties
+- [var manufacturer: String?](./manufacturer.md)
   The provider manufacturer.
-- [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](cmioextensionproviderproperties/setpropertystate(_:forproperty:).md)
+- [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](./setpropertystate%28_,forproperty%29.md)
   Sets a state value for the specified property.
-- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](cmioextensionproviderproperties/propertiesdictionary.md)
+- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](./propertiesdictionary.md)
   A dictionary of properties for a provider.
 
 

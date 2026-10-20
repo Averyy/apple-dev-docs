@@ -1,7 +1,8 @@
 # CopyPhonemesFromText(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts the specified text string into its equivalent phonemic representation.
 
@@ -14,13 +15,17 @@ Converts the specified text string into its equivalent phonemic representation.
 func CopyPhonemesFromText(_ chan: SpeechChannel, _ text: CFString, _ phonemes: UnsafeMutablePointer<CFString?>) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr CopyPhonemesFromText(SpeechChannel chan, CFStringRef text, CFStringRef  _Nullable *phonemes);
+```
 
-A result code. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
-The `CopyPhonemesFromText` function is the Core Foundation-based equivalent of the [`TextToPhonemes`](1552235-texttophonemes.md) function.
+The `CopyPhonemesFromText` function is the Core Foundation-based equivalent of the [`TextToPhonemes`](./api-1552235-texttophonemes.md) function.
 
 Converting textual data into phonemic data is particularly useful during application development, when you might wish to adjust phrases that your application generates to produce smoother speech. By first converting the target phrase into phonemes, you can see what the synthesizer will try to speak. Then you need correct only the parts that would not have been spoken the way you want.
 

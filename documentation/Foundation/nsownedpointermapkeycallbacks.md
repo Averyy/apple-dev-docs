@@ -1,7 +1,8 @@
 # NSOwnedPointerMapKeyCallBacks
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 For keys that are pointers, with transfer of ownership upon insertion.
 
@@ -20,19 +21,24 @@ For keys that are pointers, with transfer of ownership upon insertion.
 let NSOwnedPointerMapKeyCallBacks: NSMapTableKeyCallBacks
 ```
 
+```c
+extern const NSMapTableKeyCallBacks NSOwnedPointerMapKeyCallBacks;
+```
+
 ## See Also
 
-- [let NSIntegerMapKeyCallBacks: NSMapTableKeyCallBacks](nsintegermapkeycallbacks.md)
+### Constants
+- [let NSIntegerMapKeyCallBacks: NSMapTableKeyCallBacks](./nsintegermapkeycallbacks.md)
   For keys that are pointer-sized quantities or smaller (for example, `int`, `long`, or `unichar`).
-- [let NSIntMapKeyCallBacks: NSMapTableKeyCallBacks](nsintmapkeycallbacks.md)
+- [let NSIntMapKeyCallBacks: NSMapTableKeyCallBacks](./nsintmapkeycallbacks.md)
   For keys that are pointer-sized quantities or smaller (for example, `int`, `long`, or `unichar`).
-- [let NSNonOwnedPointerMapKeyCallBacks: NSMapTableKeyCallBacks](nsnonownedpointermapkeycallbacks.md)
+- [let NSNonOwnedPointerMapKeyCallBacks: NSMapTableKeyCallBacks](./nsnonownedpointermapkeycallbacks.md)
   For keys that are pointers not freed.
-- [let NSNonOwnedPointerOrNullMapKeyCallBacks: NSMapTableKeyCallBacks](nsnonownedpointerornullmapkeycallbacks.md)
+- [let NSNonOwnedPointerOrNullMapKeyCallBacks: NSMapTableKeyCallBacks](./nsnonownedpointerornullmapkeycallbacks.md)
   For keys that are pointers not freed, or `NULL`.
-- [let NSNonRetainedObjectMapKeyCallBacks: NSMapTableKeyCallBacks](nsnonretainedobjectmapkeycallbacks.md)
+- [let NSNonRetainedObjectMapKeyCallBacks: NSMapTableKeyCallBacks](./nsnonretainedobjectmapkeycallbacks.md)
   For sets of objects, but without retaining/releasing.
-- [let NSObjectMapKeyCallBacks: NSMapTableKeyCallBacks](nsobjectmapkeycallbacks.md)
+- [let NSObjectMapKeyCallBacks: NSMapTableKeyCallBacks](./nsobjectmapkeycallbacks.md)
   For keys that are objects.
 
 

@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent language of this language, if available.
 
@@ -28,9 +29,10 @@ If the system can’t determine a parent language, this value is `nil`.
 
 ## See Also
 
-- [func hasCommonParent(with: Locale.Language) -> Bool](locale/language-swift.struct/hascommonparent(with:).md)
+### Examining language relationships
+- [func hasCommonParent(with: Locale.Language) -> Bool](./hascommonparent%28with%29.md)
   Returns a Boolean value that indicates if the given language shares a common parent with this language.
-- [func isEquivalent(to: Locale.Language) -> Bool](locale/language-swift.struct/isequivalent(to:).md)
+- [func isEquivalent(to: Locale.Language) -> Bool](./isequivalent%28to%29.md)
   Returns a Boolean value that indicates whether this language and another language are equivalent after expanding missing components.
 
 

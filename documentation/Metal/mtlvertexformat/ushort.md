@@ -1,7 +1,8 @@
 # MTLVertexFormat.ushort
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 16-bit, unsigned integer value.
 
@@ -19,21 +20,26 @@ A 16-bit, unsigned integer value.
 case ushort
 ```
 
+```c
+MTLVertexFormatUShort
+```
+
 ## See Also
 
-- [MTLVertexFormat.short](mtlvertexformat/short.md)
+### 16-bit integer formats
+- [MTLVertexFormat.short](./short.md)
   A 16-bit, signed integer value.
-- [MTLVertexFormat.short2](mtlvertexformat/short2.md)
+- [MTLVertexFormat.short2](./short2.md)
   A two-component vector with 16-bit, signed integer values.
-- [MTLVertexFormat.short3](mtlvertexformat/short3.md)
+- [MTLVertexFormat.short3](./short3.md)
   A three-component vector with 16-bit, signed integer values.
-- [MTLVertexFormat.short4](mtlvertexformat/short4.md)
+- [MTLVertexFormat.short4](./short4.md)
   A four-component vector with 16-bit, signed integer values.
-- [MTLVertexFormat.ushort2](mtlvertexformat/ushort2.md)
+- [MTLVertexFormat.ushort2](./ushort2.md)
   A two-component vector with 16-bit, unsigned integer values.
-- [MTLVertexFormat.ushort3](mtlvertexformat/ushort3.md)
+- [MTLVertexFormat.ushort3](./ushort3.md)
   A three-component vector with 16-bit, unsigned integer values.
-- [MTLVertexFormat.ushort4](mtlvertexformat/ushort4.md)
+- [MTLVertexFormat.ushort4](./ushort4.md)
   A four-component vector with 16-bit, unsigned integer values.
 
 

@@ -1,18 +1,19 @@
 # mbuf_mclhasreference
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 int mbuf_mclhasreference(mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 0 if there is no reference by another mbuf, 1 otherwise.
 

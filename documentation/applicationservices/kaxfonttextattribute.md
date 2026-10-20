@@ -1,7 +1,8 @@
 # kAXFontTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A dictionary (a `CFDictionaryRef`) of two or more font keys.
 
@@ -14,9 +15,13 @@ A dictionary (a `CFDictionaryRef`) of two or more font keys.
 var kAXFontTextAttribute: Unmanaged<CFString>
 ```
 
+```c
+CFStringRef kAXFontTextAttribute;
+```
+
 #### Discussion
 
-The dictionary associated with this attribute must contain the [`kAXFontNameKey`](kaxfontnamekey.md) and [`kAXFontSizeKey`](kaxfontsizekey.md) font keys. It may also contain the [`kAXFontFamilyKey`](kaxfontfamilykey.md) and [`kAXVisibleNameKey`](kaxvisiblenamekey.md) font keys.
+The dictionary associated with this attribute must contain the [`kAXFontNameKey`](./kaxfontnamekey.md) and [`kAXFontSizeKey`](./kaxfontsizekey.md) font keys. It may also contain the [`kAXFontFamilyKey`](./kaxfontfamilykey.md) and [`kAXVisibleNameKey`](./kaxvisiblenamekey.md) font keys.
 
 
 ---

@@ -1,7 +1,8 @@
 # kUCKeyOutputGetIndexMask
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 You can use this mask to test the bits (0–13) in a `UCKeyOutput` value that provide the actual index to another structure.
 

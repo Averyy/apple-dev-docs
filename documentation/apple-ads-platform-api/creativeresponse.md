@@ -1,7 +1,8 @@
 # CreativeResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for an ad creative operation.
 
@@ -10,7 +11,7 @@ The response object for an ad creative operation.
 
 ## Declaration
 
-```swift
+```
 object CreativeResponse
 ```
 
@@ -56,38 +57,38 @@ The `CreativeResponse` object is the single-item response envelope returned by a
 
 ## Properties
 
-- `result` (Creative): The full `Creative` object, populated on success and null on failure. See [`Creative`](creative.md). Read-only.
-- `error` (Error): Error details, populated on failure. See [`Error`](error.md). Read-only.
+- `result` (Creative): The full `Creative` object, populated on success and null on failure. See [`Creative`](./creative.md). Read-only.
+- `error` (Error): Error details, populated on failure. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object Creative](creative.md)
+- [object Creative](./creative.md)
   Ad creative containing all data for visually rendering an ad.
-- [object CreativeCreate](creativecreate.md)
+- [object CreativeCreate](./creativecreate.md)
   The request body for creating a new Creative object.
-- [object CreativeUpdate](creativeupdate.md)
+- [object CreativeUpdate](./creativeupdate.md)
   The request body for updating an existing Creative object.
-- [object CreativeQueryResponse](creativequeryresponse.md)
+- [object CreativeQueryResponse](./creativequeryresponse.md)
   The response object for a Creative query, containing matched results and pagination metadata.
-- [object CreativeEligibility](creativeeligibility.md)
+- [object CreativeEligibility](./creativeeligibility.md)
   Eligibility state for an ad creative across supply sources and placements.
-- [object AssetReference](assetreference.md)
+- [object AssetReference](./assetreference.md)
   A reference to an asset by its UUID.
-- [object AssetImage](assetimage.md)
+- [object AssetImage](./assetimage.md)
   Image-specific asset detail fields.
-- [object Destination](destination.md)
+- [object Destination](./destination.md)
   Post-tap destination entity embedded in a Creative.
-- [object DestinationCreate](destinationcreate.md)
+- [object DestinationCreate](./destinationcreate.md)
   Request payload for specifying the post-tap destination when creating an ad creative.
-- [object DestinationParameter](destinationparameter.md)
+- [object DestinationParameter](./destinationparameter.md)
   Destination-specific identifiers used when linking an ad creative to an App Store product page.
-- [object CreativeRejectionReason](creativerejectionreason.md)
+- [object CreativeRejectionReason](./creativerejectionreason.md)
   Detailed rejection reason for an ad creative that failed Apple review.
-- [object CreativeRejectionReasonQueryRequest](creativerejectionreasonqueryrequest.md)
+- [object CreativeRejectionReasonQueryRequest](./creativerejectionreasonqueryrequest.md)
   The request body for querying ad creative rejection reasons.
-- [object CreativeRejectionReasonQueryResponse](creativerejectionreasonqueryresponse.md)
+- [object CreativeRejectionReasonQueryResponse](./creativerejectionreasonqueryresponse.md)
   The response object for a creative rejection reason query, containing matched results and pagination metadata.
-- [object LocaleInfo](localeinfo.md)
+- [object LocaleInfo](./localeinfo.md)
   Represents a specific language and its corresponding language code.
 
 

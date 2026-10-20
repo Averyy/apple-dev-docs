@@ -1,7 +1,8 @@
 # isEdgeLightEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A class property indicating whether the Edge Light feature is currently enabled in Control Center.
 
@@ -16,6 +17,10 @@ A class property indicating whether the Edge Light feature is currently enabled 
 
 ```swift
 class var isEdgeLightEnabled: Bool { get }
+```
+
+```objc
+@property (class, readonly, getter=isEdgeLightEnabled) BOOL edgeLightEnabled;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # MEExtension
 
 **Framework**: MailKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that provides objects for manipulating email messages, such as performing actions on messages or blocking content when users view messages.
 
@@ -15,9 +16,13 @@ A type that provides objects for manipulating email messages, such as performing
 protocol MEExtension : NSObjectProtocol
 ```
 
+```objc
+@protocol MEExtension <NSObject>
+```
+
 #### Overview
 
-To implement an app extension, you provide an object that conforms to the [`MEExtension`](meextension.md) protocol. The [`MEExtensionCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities) key of your extension’s `Info.plist` defines the capabilities that you support, as follows:
+To implement an app extension, you provide an object that conforms to the [`MEExtension`](./meextension.md) protocol. The [`MEExtensionCapabilities`](../BundleResources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities.md) key of your extension’s `Info.plist` defines the capabilities that you support, as follows:
 
 ```plist
 <key>NSExtensionAttributes</key>
@@ -36,34 +41,35 @@ For each capability that your extension defines, you provide an object that impl
 
 | Capability Key | Method | Protocol |
 | --- | --- | --- |
-| `MEContentBlocker` | [`handler(for:)`](meextension/handler(for:).md) | [`MEContentBlocker`](mecontentblocker.md) |
-| `MEMessageActionHandler` | [`handlerForMessageActions()`](meextension/handlerformessageactions().md) | [`MEMessageActionHandler`](memessageactionhandler.md) |
-| `MEComposeSessionHandler` | [`handlerForContentBlocker()`](meextension/handlerforcontentblocker().md) | [`MEComposeSessionHandler`](mecomposesessionhandler.md) |
-| `MEMessageSecurityHandler` | [`handlerForMessageSecurity()`](meextension/handlerformessagesecurity().md) | [`MEMessageSecurityHandler`](memessagesecurityhandler.md) |
+| `MEContentBlocker` | [`handler(for:)`](./meextension/handler%28for%29.md) | [`MEContentBlocker`](./mecontentblocker.md) |
+| `MEMessageActionHandler` | [`handlerForMessageActions()`](./meextension/handlerformessageactions%28%29.md) | [`MEMessageActionHandler`](./memessageactionhandler.md) |
+| `MEComposeSessionHandler` | [`handlerForContentBlocker()`](./meextension/handlerforcontentblocker%28%29.md) | [`MEComposeSessionHandler`](./mecomposesessionhandler.md) |
+| `MEMessageSecurityHandler` | [`handlerForMessageSecurity()`](./meextension/handlerformessagesecurity%28%29.md) | [`MEMessageSecurityHandler`](./memessagesecurityhandler.md) |
 
 ## Topics
 
 ### Blocking Content
-- [func handlerForContentBlocker() -> any MEContentBlocker](meextension/handlerforcontentblocker.md)
+- [func handlerForContentBlocker() -> any MEContentBlocker](./meextension/handlerforcontentblocker%28%29.md)
   Returns an object that provides rules that the message viewer uses to block content.
 ### Performing Actions on Messages
-- [func handlerForMessageActions() -> any MEMessageActionHandler](meextension/handlerformessageactions.md)
+- [func handlerForMessageActions() -> any MEMessageActionHandler](./meextension/handlerformessageactions%28%29.md)
   Returns an object that performs actions on mail messages as the system downloads them.
 ### Enhancing the Compose Window
-- [func handler(for: MEComposeSession) -> any MEComposeSessionHandler](meextension/handler(for:).md)
+- [func handler(for: MEComposeSession) -> any MEComposeSessionHandler](./meextension/handler%28for%29.md)
   Returns an object that participates in the composition of a mail message.
 ### Encrypting and Signing Messages
-- [func handlerForMessageSecurity() -> any MEMessageSecurityHandler](meextension/handlerformessagesecurity.md)
+- [func handlerForMessageSecurity() -> any MEMessageSecurityHandler](./meextension/handlerformessagesecurity%28%29.md)
   Returns an object that applies security measures such as encryption and digital signatures to messages.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Build Mail App Extensions](build-mail-app-extensions.md)
+### Essentials
+- [Build Mail App Extensions](./build-mail-app-extensions.md)
   Create app extensions that block content, perform message and composing actions, and help message security.
 
 

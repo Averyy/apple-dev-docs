@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corner radius of the text mesh.
 

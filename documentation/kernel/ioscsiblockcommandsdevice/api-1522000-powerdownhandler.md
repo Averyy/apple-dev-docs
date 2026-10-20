@@ -1,14 +1,15 @@
 # PowerDownHandler
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn PowerDownHandler(void *refCon, UInt32 messageType, IOService *provider, void *messageArgument, vm_size_t argSize);
 ```
 

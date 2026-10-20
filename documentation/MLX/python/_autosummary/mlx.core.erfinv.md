@@ -6,43 +6,14 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.er
 
 # mlx.core.erfinv
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.erfinv.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.erfinv
-
- Table of contents 
-
-## Contents
-
-# mlx.core.erfinv
-
-**erfinv(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
-: Element-wise inverse of [erf()](mlx.core.erf.html#mlx.core.erf).
+**erfinv(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
+: Element-wise inverse of [erf()](mlx.core.erf.md#mlx.core.erf).
 
 Parameters:
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
 Returns:
 The inverse error function of `a`.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

@@ -1,7 +1,8 @@
 # init(buffer:initializedCount:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Unsafely create an OutputRawSpan over partly-initialized memory.
 

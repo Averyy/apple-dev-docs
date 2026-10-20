@@ -1,15 +1,20 @@
 # kBluetoothL2CAPInfoTypeMaxConnectionlessMTUSize
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kBluetoothL2CAPInfoTypeMaxConnectionlessMTUSize: Int { get }
+```
+
+```c
+kBluetoothL2CAPInfoTypeMaxConnectionlessMTUSize
 ```
 
 

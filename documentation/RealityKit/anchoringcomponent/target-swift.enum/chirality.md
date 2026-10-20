@@ -1,7 +1,8 @@
 # AnchoringComponent.Target.Chirality
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the chirality of tracked hands to look for.
 
@@ -17,25 +18,26 @@ enum Chirality
 ## Topics
 
 ### Enumeration Cases
-- [AnchoringComponent.Target.Chirality.either](anchoringcomponent/target-swift.enum/chirality/either.md)
-- [AnchoringComponent.Target.Chirality.left](anchoringcomponent/target-swift.enum/chirality/left.md)
-- [AnchoringComponent.Target.Chirality.right](anchoringcomponent/target-swift.enum/chirality/right.md)
+- [AnchoringComponent.Target.Chirality.either](./chirality/either.md)
+- [AnchoringComponent.Target.Chirality.left](./chirality/left.md)
+- [AnchoringComponent.Target.Chirality.right](./chirality/right.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [Happy Beam](../visionos/happybeam.md)
+### Hand tracking
+- [Happy Beam](../../../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [AnchoringComponent.Target.HandLocation](anchoringcomponent/target-swift.enum/handlocation.md)
+- [AnchoringComponent.Target.HandLocation](./handlocation.md)
   Defines the locations of tracked hands to look for.
 
 

@@ -1,7 +1,8 @@
 # StructureBuilder.BuildError.invalidInput
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework encounters invalid captured room data.
 

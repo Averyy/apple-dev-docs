@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time range of the reported observation.
@@ -27,15 +28,16 @@ When evaluating a sequence of image buffers, use this property to determine each
 
 ## See Also
 
-- [var uuid: UUID](visionobservation/uuid.md)
+### Inspecting an observation
+- [var uuid: UUID](./uuid.md)
   A unique alphanumeric value that the framework assigns the observation.
-- [var confidence: Float](visionobservation/confidence.md)
+- [var confidence: Float](./confidence.md)
   The level of confidence in the observation’s accuracy.
-- [var description: String](visionobservation/description.md)
+- [var description: String](./description.md)
   A textual representation of this instance.
-- [var originatingRequestDescriptor: RequestDescriptor?](visionobservation/originatingrequestdescriptor.md)
+- [var originatingRequestDescriptor: RequestDescriptor?](./originatingrequestdescriptor.md)
   The descriptor of the request that produces the observation.
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
 
 

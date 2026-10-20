@@ -1,10 +1,11 @@
 # init(rawValue:)
 
 **Framework**: Core WLAN  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 11.0
 
 ## Declaration
 

@@ -1,14 +1,16 @@
 # Matrix and submatrix copying functions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Copy the contents of a submatrix to another submatrix.
 
 ## See Also
 
-- [Multiplication](multiplication.md)
+### Matrix operations
+- [Multiplication](./multiplication.md)
   Multiply vectors that contain real or complex values.
-- [Transposition](transposition-vdsp.md)
+- [Transposition](./transposition-vdsp.md)
   Tranpose vectors that contain real values.
 
 

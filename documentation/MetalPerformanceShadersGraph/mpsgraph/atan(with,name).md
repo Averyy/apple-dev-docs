@@ -1,7 +1,8 @@
 # atan(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the inverse tangent operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the inverse tangent operation to the input tensor elements.
 
 ```swift
 func atan(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) atanWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,17 +1,22 @@
 # managedObjectContext
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The managed object context for the document.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var managedObjectContext: NSManagedObjectContext? { get set }
+```
+
+```objc
+@property (strong, nullable) NSManagedObjectContext * managedObjectContext;
 ```
 
 #### Discussion
@@ -20,14 +25,16 @@ If a managed object context for the document does not exist, one is created auto
 
 ## See Also
 
-- [Core Data Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
-- [class NSPersistentDocument](nspersistentdocument.md)
+### Related Documentation
+- [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
+- [class NSPersistentDocument](../nspersistentdocument.md)
   A document object that can integrate with Core Data.
-- [var managedObjectModel: NSManagedObjectModel?](nspersistentdocument/managedobjectmodel.md)
+### Managing the Persistence Objects
+- [var managedObjectModel: NSManagedObjectModel?](./managedobjectmodel.md)
   The managed object model of the document.
-- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [String : Any]?) throws](nspersistentdocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).md)
+- [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [String : Any]?) throws](./configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md)
   Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.
-- [func persistentStoreType(forFileType: String) -> String](nspersistentdocument/persistentstoretype(forfiletype:).md)
+- [func persistentStoreType(forFileType: String) -> String](./persistentstoretype%28forfiletype%29.md)
   Returns the type of persistent store associated with the specified file type.
 
 

@@ -1,7 +1,8 @@
 # images
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of image objects in all pasteboard items.
 
@@ -17,27 +18,32 @@ An array of image objects in all pasteboard items.
 var images: [UIImage]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<UIImage *> * images;
+```
+
 #### Discussion
 
-The value stored in this property is an array of [`UIImage`](uiimage.md) objects. The associated array of representation types is [`typeListImage`](uipasteboard/typelistimage.md), which includes types `kUTTypePNG` and `kUTTypeJPEG`. Setting this property replaces all current items in the pasteboard with the new items. The returned array may have fewer objects than the number of pasteboard items; this happens if a pasteboard item does not have a value of the indicated type.
+The value stored in this property is an array of [`UIImage`](../uiimage.md) objects. The associated array of representation types is [`typeListImage`](./typelistimage.md), which includes types `kUTTypePNG` and `kUTTypeJPEG`. Setting this property replaces all current items in the pasteboard with the new items. The returned array may have fewer objects than the number of pasteboard items; this happens if a pasteboard item does not have a value of the indicated type.
 
-> **Note**:  Do not use this property to determine if a pasteboard contains image data. Instead, use the [`hasImages`](uipasteboard/hasimages.md) property.
+> **Note**:  Do not use this property to determine if a pasteboard contains image data. Instead, use the [`hasImages`](./hasimages.md) property.
 
 ## See Also
 
-- [var string: String?](uipasteboard/string.md)
+### Getting and setting pasteboard items of standard data types
+- [var string: String?](./string.md)
   The string value of the first pasteboard item.
-- [var strings: [String]?](uipasteboard/strings.md)
+- [var strings: [String]?](./strings.md)
   An array of strings in all pasteboard items.
-- [var image: UIImage?](uipasteboard/image.md)
+- [var image: UIImage?](./image.md)
   The image object of the first pasteboard item.
-- [var url: URL?](uipasteboard/url.md)
+- [var url: URL?](./url.md)
   The URL object of the first pasteboard item.
-- [var urls: [URL]?](uipasteboard/urls.md)
+- [var urls: [URL]?](./urls.md)
   An array of URL objects in all pasteboard items.
-- [var color: UIColor?](uipasteboard/color.md)
+- [var color: UIColor?](./color.md)
   The color object of the first pasteboard item.
-- [var colors: [UIColor]?](uipasteboard/colors.md)
+- [var colors: [UIColor]?](./colors.md)
   An array of color objects in all pasteboard items.
 
 

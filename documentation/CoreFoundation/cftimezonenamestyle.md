@@ -1,7 +1,8 @@
 # CFTimeZoneNameStyle
 
 **Framework**: Core Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Index type for constants used to specify styles of time zone names.
 
@@ -20,37 +21,41 @@ Index type for constants used to specify styles of time zone names.
 enum CFTimeZoneNameStyle
 ```
 
+```c
+enum CFTimeZoneNameStyle : CFIndex;
+```
+
 #### Overview
 
-For values, see [`Time Zone Name Styles`](time_zone_name_styles.md)
+For values, see [Time Zone Name Styles](./time_zone_name_styles.md)
 
 ## Topics
 
 ### Enumeration Cases
-- [CFTimeZoneNameStyle.daylightSaving](cftimezonenamestyle/daylightsaving.md)
+- [CFTimeZoneNameStyle.daylightSaving](./cftimezonenamestyle/daylightsaving.md)
   Specifies the daylight saving name style; for example, “Central Daylight Time” for the Central time zone.
-- [CFTimeZoneNameStyle.generic](cftimezonenamestyle/generic.md)
+- [CFTimeZoneNameStyle.generic](./cftimezonenamestyle/generic.md)
   Specifies the generic name style, which does not distinguish between daylight saving and standard time; for example, “Central Time” for the Central time zone.
-- [CFTimeZoneNameStyle.shortDaylightSaving](cftimezonenamestyle/shortdaylightsaving.md)
+- [CFTimeZoneNameStyle.shortDaylightSaving](./cftimezonenamestyle/shortdaylightsaving.md)
   Specifies the short daylight saving name style; for example, “CDT” for the Central time zone.
-- [CFTimeZoneNameStyle.shortGeneric](cftimezonenamestyle/shortgeneric.md)
+- [CFTimeZoneNameStyle.shortGeneric](./cftimezonenamestyle/shortgeneric.md)
   Specifies the short generic name style, which does not distinguish between daylight saving and standard time; for example, “CT” for the Central time zone.
-- [CFTimeZoneNameStyle.shortStandard](cftimezonenamestyle/shortstandard.md)
+- [CFTimeZoneNameStyle.shortStandard](./cftimezonenamestyle/shortstandard.md)
   Specifies the short standard name style; for example, “CST” for the Central time zone.
-- [CFTimeZoneNameStyle.standard](cftimezonenamestyle/standard.md)
+- [CFTimeZoneNameStyle.standard](./cftimezonenamestyle/standard.md)
   Specifies the standard name style; for example, “Central Standard Time” for the Central time zone.
 ### Initializers
-- [init?(rawValue: CFIndex)](cftimezonenamestyle/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./cftimezonenamestyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

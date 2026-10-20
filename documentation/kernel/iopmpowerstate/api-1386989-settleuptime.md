@@ -1,7 +1,8 @@
 # settleUpTime
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes settle time required after entering this state from next lower state (microseconds). Unused; drivers may specify 0.
 
@@ -10,7 +11,7 @@ Describes settle time required after entering this state from next lower state (
 
 ## Declaration
 
-```swift
+```c
 unsigned long settleUpTime;
 ```
 

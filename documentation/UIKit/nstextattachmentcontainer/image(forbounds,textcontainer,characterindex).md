@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the image object that the layout manager renders in the specified image bounds rectangle inside the text container.
@@ -19,13 +20,17 @@ Returns the image object that the layout manager renders in the specified image 
 func image(forBounds imageBounds: CGRect, textContainer: NSTextContainer?, characterIndex charIndex: Int) -> UIImage?
 ```
 
+```objc
+- (UIImage *) imageForBounds:(CGRect) imageBounds textContainer:(NSTextContainer *) textContainer characterIndex:(NSUInteger) charIndex;
+```
+
 #### Return Value
 
 The image rendered in the bounds rectangle.
 
 #### Discussion
 
-The method should return an image appropriate for the target rendering context derived by arguments passed into this method. The `NSTextAttachment` implementation returns the text attachment’s [`image`](nstextattachment/image.md) when non-`nil`. If the image is `nil`, it returns an image based on the text attachment’s [`contents`](nstextattachment/contents.md) and [`fileType`](nstextattachment/filetype.md) properties.
+The method should return an image appropriate for the target rendering context derived by arguments passed into this method. The `NSTextAttachment` implementation returns the text attachment’s [`image`](../nstextattachment/image.md) when non-`nil`. If the image is `nil`, it returns an image based on the text attachment’s [`contents`](../nstextattachment/contents.md) and [`fileType`](../nstextattachment/filetype.md) properties.
 
 ## Parameters
 

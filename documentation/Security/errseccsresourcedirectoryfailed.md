@@ -1,7 +1,8 @@
 # errSecCSResourceDirectoryFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A directory or its signature has been modified and is therefore invalid.
 
@@ -13,6 +14,10 @@ A directory or its signature has been modified and is therefore invalid.
 
 ```swift
 var errSecCSResourceDirectoryFailed: OSStatus { get }
+```
+
+```c
+errSecCSResourceDirectoryFailed
 ```
 
 

@@ -1,7 +1,8 @@
 # init(responseValue:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams with a response-value dictionary of the sort that MTRDeviceResponseHandler would receive.
 
@@ -18,6 +19,10 @@ Initialize an MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams wit
 
 ```swift
 init(responseValue: [String : Any]) throws
+```
+
+```objc
+- (instancetype) initWithResponseValue:(NSDictionary<NSString *,id> *) responseValue error:(NSError **) error;
 ```
 
 #### Discussion

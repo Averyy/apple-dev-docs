@@ -1,7 +1,8 @@
 # barrier(afterQueueStages:beforeStages:visibilityOptions:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a consumer barrier on work you commit to the same command queue.
 
@@ -21,8 +22,8 @@ func barrier(afterQueueStages: MTLStages, beforeStages: MTLStages, visibilityOpt
 
 ## Mentions
 
-- [Synchronizing passes with consumer barriers](synchronizing-passes-with-consumer-barriers.md)
-- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
+- [Synchronizing passes with consumer barriers](../synchronizing-passes-with-consumer-barriers.md)
+- [Synchronizing stages within a pass](../synchronizing-stages-within-a-pass.md)
 
 #### Discussion
 
@@ -30,15 +31,15 @@ Encode a barrier that guarantees that any subsequent work you encode in the curr
 
 Metal can reorder the exact point where it applies the barrier, so encode the barrier as close to the command that consumes the resource as possible. Don’t use this method for synchronizing resource access within the same pass.
 
-If you need to synchronize work within a pass that you encode with an instance of a subclass of [`MTLCommandEncoder`](mtlcommandencoder.md), use memory barriers instead. For subclasses of [`MTL4CommandEncoder`](mtl4commandencoder.md), use encoder barriers.
+If you need to synchronize work within a pass that you encode with an instance of a subclass of [`MTLCommandEncoder`](../mtlcommandencoder.md), use memory barriers instead. For subclasses of [`MTL4CommandEncoder`](../mtl4commandencoder.md), use encoder barriers.
 
-You can specify `afterQueueStages` and `beforeStages` that contain [`MTLStages`](mtlstages.md) unrelated to the current command encoder.
+You can specify `afterQueueStages` and `beforeStages` that contain [`MTLStages`](../mtlstages.md) unrelated to the current command encoder.
 
 ## Parameters
 
-- `afterQueueStages`: [`MTLStages`](mtlstages.md) mask that represents the stages of work to wait for. This argument applies to work corresponding to these stages you encode in prior command encoders, and not for the current encoder.
-- `beforeStages`: [`MTLStages`](mtlstages.md) mask that represents the stages of work that wait. This argument applies to work you encode in the current command encoder.
-- `visibilityOptions`: [`MTL4VisibilityOptions`](mtl4visibilityoptions.md) of the barrier.
+- `afterQueueStages`: [`MTLStages`](../mtlstages.md) mask that represents the stages of work to wait for. This argument applies to work corresponding to these stages you encode in prior command encoders, and not for the current encoder.
+- `beforeStages`: [`MTLStages`](../mtlstages.md) mask that represents the stages of work that wait. This argument applies to work you encode in the current command encoder.
+- `visibilityOptions`: [`MTL4VisibilityOptions`](../mtl4visibilityoptions.md) of the barrier.
 
 
 ---

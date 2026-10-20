@@ -1,7 +1,8 @@
 # didDisconnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a mouse accessory disconnects from the device.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a mouse accessory disconnects fro
 ```swift
 static var didDisconnect: NotificationCenter.BaseMessageIdentifier<GCMouse.DidDisconnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCMouse.DidDisconnectMessage>`.
 
 
 ---

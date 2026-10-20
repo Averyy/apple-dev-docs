@@ -1,7 +1,8 @@
 # bias
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,14 +18,19 @@
 var bias: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float bias;
+```
+
 ## See Also
 
-- [var primaryScale: Float](mpsimagearithmetic/primaryscale.md)
-- [var primaryStrideInPixels: MTLSize](mpsimagearithmetic/primarystrideinpixels.md)
-- [var secondaryScale: Float](mpsimagearithmetic/secondaryscale.md)
-- [var secondaryStrideInPixels: MTLSize](mpsimagearithmetic/secondarystrideinpixels.md)
-- [var maximumValue: Float](mpsimagearithmetic/maximumvalue.md)
-- [var minimumValue: Float](mpsimagearithmetic/minimumvalue.md)
+### Instance Properties
+- [var primaryScale: Float](./primaryscale.md)
+- [var primaryStrideInPixels: MTLSize](./primarystrideinpixels.md)
+- [var secondaryScale: Float](./secondaryscale.md)
+- [var secondaryStrideInPixels: MTLSize](./secondarystrideinpixels.md)
+- [var maximumValue: Float](./maximumvalue.md)
+- [var minimumValue: Float](./minimumvalue.md)
 
 
 ---

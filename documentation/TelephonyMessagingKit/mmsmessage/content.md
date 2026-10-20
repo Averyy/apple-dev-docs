@@ -1,7 +1,8 @@
 # content
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The body content of the message.
 
@@ -16,7 +17,8 @@ var content: MMSContent
 
 ## See Also
 
-- [struct MMSContent](mmscontent.md)
+### Accessing message content
+- [struct MMSContent](../mmscontent.md)
   A structure that holds the content of an MMS message.
 
 

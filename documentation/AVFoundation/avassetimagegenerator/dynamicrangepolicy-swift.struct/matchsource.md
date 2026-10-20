@@ -1,7 +1,8 @@
 # matchSource
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A policy that preserves the color parameters of the source media.
 
@@ -19,13 +20,18 @@ A policy that preserves the color parameters of the source media.
 static let matchSource: AVAssetImageGenerator.DynamicRangePolicy
 ```
 
+```c
+extern AVAssetImageGeneratorDynamicRangePolicy const AVAssetImageGeneratorDynamicRangePolicyMatchSource;
+```
+
 #### Discussion
 
 By default, an image generator converts images to standard dynamic range. When working with HDR video, use this policy to preserve HDR color in the resulting images.
 
 ## See Also
 
-- [static let forceSDR: AVAssetImageGenerator.DynamicRangePolicy](avassetimagegenerator/dynamicrangepolicy-swift.struct/forcesdr.md)
+### Policies
+- [static let forceSDR: AVAssetImageGenerator.DynamicRangePolicy](./forcesdr.md)
   A policy that forces conversion to standard dynamic range.
 
 

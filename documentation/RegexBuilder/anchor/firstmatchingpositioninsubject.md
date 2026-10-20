@@ -1,7 +1,8 @@
 # firstMatchingPositionInSubject
 
 **Framework**: RegexBuilder  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor that matches at the first position of a match in the input string.
 
@@ -11,7 +12,7 @@ An anchor that matches at the first position of a match in the input string.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

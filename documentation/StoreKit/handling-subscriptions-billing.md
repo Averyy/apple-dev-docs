@@ -1,6 +1,7 @@
 # Handling Subscriptions Billing
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Build logic around the date and time constraints of subscription products, while planning for all scenarios where you control access to content.
 
@@ -8,9 +9,9 @@ Build logic around the date and time constraints of subscription products, while
 
 Apps that offer subscriptions have some unique behaviors and considerations. Because subscriptions involve an element of time, your app must be able to determine whether the subscription is currently active and determine the subscription states for past dates. Your app must also react to new, renewed, and lapsed subscriptions, and properly handle expired auto-renewable subscriptions that may be in a billing retry state.
 
-To validate changes in and identify the status of a subscription, you can use the different values in the receipt, which provides details on app and Apple In-App Purchases. For information about server-side receipt validation, see [`Validating receipts with the App Store`](validating-receipts-with-the-app-store.md).
+To validate changes in and identify the status of a subscription, you can use the different values in the receipt, which provides details on app and Apple In-App Purchases. For information about server-side receipt validation, see [Validating receipts with the App Store](./validating-receipts-with-the-app-store.md).
 
-> **Note**:  Each subscription has a unique product identifier associated with a single app. Apps with an iOS and a macOS version have separate products, with a unique product identifier on each platform. You could let users who have a subscription in an iOS app access the content from a macOS app, or vice versa, but implementing that functionality is your responsibility. In order to support cross-platform subscription products, you would need a system to identify users and keep track of the content to which they subscribe. For more information, see [`Offering a Subscription Across Multiple Apps`](offering-a-subscription-across-multiple-apps.md).
+> **Note**:  Each subscription has a unique product identifier associated with a single app. Apps with an iOS and a macOS version have separate products, with a unique product identifier on each platform. You could let users who have a subscription in an iOS app access the content from a macOS app, or vice versa, but implementing that functionality is your responsibility. In order to support cross-platform subscription products, you would need a system to identify users and keep track of the content to which they subscribe. For more information, see [Offering a Subscription Across Multiple Apps](./offering-a-subscription-across-multiple-apps.md).
 
 There are two types of subscriptions you can offer in your app: *non-renewing* and *auto-renewable*. Non-renewing subscriptions differ from auto-renewable subscriptions in a few key ways. These differences give your app the flexibility to implement the correct behavior for a non-renewing subscription, as follows:
 
@@ -18,15 +19,15 @@ There are two types of subscriptions you can offer in your app: *non-renewing* a
 - Your app is responsible for detecting that a non-renewing subscription is approaching its expiration date and prompting the user to renew the subscription by purchasing the same product again.
 - Your app is responsible for making purchased subscriptions available across all the user’s devices and for letting users restore past purchases. For example, most subscriptions are provided by a server; your server would need some mechanism to identify users and associate subscription purchases with the user who purchased them.
 
-The following sections provide guidance for handling auto-renewable subscriptions. To quickly react to changes in users’ auto-renewable subscriptions, you can choose to receive status update notifications on your server. Status update notifications inform you of real-time changes in a user’s subscription status and are only supported for auto-renewable subscriptions. For more information on setting up and handling server notifications, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md).
+The following sections provide guidance for handling auto-renewable subscriptions. To quickly react to changes in users’ auto-renewable subscriptions, you can choose to receive status update notifications on your server. Status update notifications inform you of real-time changes in a user’s subscription status and are only supported for auto-renewable subscriptions. For more information on setting up and handling server notifications, see [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md).
 
-##### Calculate a Subscriptions Promotional Offer Status
+##### Calculate a Subscription’s Promotional Offer Status
 
-You can set up promotional offers in App Store Connect to provide users with free or discounted service for a subscription. All new and eligible subscribers can redeem an introductory offer, and all lapsed and existing subscribers can redeem a subscription offer. There are multiple types of introductory and subscription offers, each with different billing cycles. Customers who redeem a free trial introductory offer or a downgrade subscription offer will not be billed for the subscription until the end of the free trial period. For more information, see [`Implementing introductory offers in your app`](implementing-introductory-offers-in-your-app.md) and [`Implementing promotional offers in your app`](implementing-promotional-offers-in-your-app.md).
+You can set up promotional offers in App Store Connect to provide users with free or discounted service for a subscription. All new and eligible subscribers can redeem an introductory offer, and all lapsed and existing subscribers can redeem a subscription offer. There are multiple types of introductory and subscription offers, each with different billing cycles. Customers who redeem a free trial introductory offer or a downgrade subscription offer will not be billed for the subscription until the end of the free trial period. For more information, see [Implementing introductory offers in your app](./implementing-introductory-offers-in-your-app.md) and [Implementing promotional offers in your app](./implementing-promotional-offers-in-your-app.md).
 
 Check the `is_in_intro_offer_period` or `is_trial_period` field from each receipt entry to validate whether the user redeemed an introductory offer at the beginning of their subscription. You can use this information to accurately present subscription products from the same subscription group at the end of the introductory offer period for that user. Check the `promotional_offer_id` field from each receipt entry to validate whether the user redeemed a subscription offer. You can use this information to determine eligibility for this user to redeem subscription offers in the future.
 
-##### Calculate a Subscriptions Active Period
+##### Calculate a Subscription’s Active Period
 
 Your app needs to determine which content the user has access to based on the period of time their auto-renewable subscription is active. To provide the customer access to the content to which they are entitled, keep a record of the date that each piece of content is published. Read the `original_purchase_date`, `purchase_date`, and `expires_date` field from each receipt entry to determine the start and end dates of each subscription period. The user has access to all content published between each subscription start and end date in addition to the content that was initially unlocked when the subscription was purchased.
 
@@ -80,17 +81,17 @@ You can check the receipt’s `auto_renew_product_id` field to learn about any p
 
 ##### Manage Subscription Price Consent
 
-When you increase the price of a subscription, the App Store informs the affected subscribers with an email, push notification, and in-app price consent sheet, and asks your subscribers to agree to the new price. In the app, the system asks your delegate’s function [`paymentQueueShouldShowPriceConsent(_:)`](skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent(_:).md) whether to immediately display the price consent sheet, or to delay displaying the sheet until later. For example, you may want to delay showing the sheet if it would interrupt a multistep user interaction, such as setting up a user account. Return `false` in [`paymentQueueShouldShowPriceConsent(_:)`](skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent(_:).md) to prevent the dialog from displaying immediately.
+When you increase the price of a subscription, the App Store informs the affected subscribers with an email, push notification, and in-app price consent sheet, and asks your subscribers to agree to the new price. In the app, the system asks your delegate’s function [`paymentQueueShouldShowPriceConsent(_:)`](./skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent%28_%29.md) whether to immediately display the price consent sheet, or to delay displaying the sheet until later. For example, you may want to delay showing the sheet if it would interrupt a multistep user interaction, such as setting up a user account. Return `false` in [`paymentQueueShouldShowPriceConsent(_:)`](./skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent%28_%29.md) to prevent the dialog from displaying immediately.
 
-To show the price consent sheet after a delay, call [`showPriceConsentIfNeeded()`](skpaymentqueue/showpriceconsentifneeded().md), which shows the sheet only if the user hasn’t responded to the price increase notifications.
+To show the price consent sheet after a delay, call [`showPriceConsentIfNeeded()`](./skpaymentqueue/showpriceconsentifneeded%28%29.md), which shows the sheet only if the user hasn’t responded to the price increase notifications.
 
-If users don’t agree to the subscription price increase or take no action, their subscription expires at the end of their current billing cycle. App Store attempts to notify users in the app twice. For a notification schedule, see [`Increase the price of an auto-renewable subscription`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devc9870599e).
+If users don’t agree to the subscription price increase or take no action, their subscription expires at the end of their current billing cycle. App Store attempts to notify users in the app twice. For a notification schedule, see [Increase the price of an auto-renewable subscription](https://help.apple.com/app-store-connect/#/devc9870599e).
 
 > **Note**:  The price consent sheet appears only on devices running iOS. All affected subscribers receive an email and push notification.
 
 ##### Enable Users to Manage Subscriptions
 
-Consider building auto-renewable subscription management UI in the app for subscribers to easily move between different subscription levels in their subscription group. Use the [`subscriptionGroupIdentifier`](skproduct/subscriptiongroupidentifier.md) property of `SKProduct` to determine which products to display in the UI. For users who wish to cancel their subscription, your app can open the following URL:
+Consider building auto-renewable subscription management UI in the app for subscribers to easily move between different subscription levels in their subscription group. Use the [`subscriptionGroupIdentifier`](./skproduct/subscriptiongroupidentifier.md) property of `SKProduct` to determine which products to display in the UI. For users who wish to cancel their subscription, your app can open the following URL:
 
 ```http
 https://apps.apple.com/account/subscriptions
@@ -100,11 +101,12 @@ Opening this URL launches iTunes or iTunes Store and displays the Manage Subscri
 
 ## See Also
 
-- [Enabling App Store Server Notifications](enabling-app-store-server-notifications.md)
+### Essentials
+- [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md)
   Configure your server and provide an HTTPS URL to receive notifications about Apple In-App Purchase events and unreported external purchase tokens.
-- [Offering a Subscription Across Multiple Apps](offering-a-subscription-across-multiple-apps.md)
+- [Offering a Subscription Across Multiple Apps](./offering-a-subscription-across-multiple-apps.md)
   Support a single auto-renewable subscription across multiple apps.
-- [Reducing Involuntary Subscriber Churn](reducing-involuntary-subscriber-churn.md)
+- [Reducing Involuntary Subscriber Churn](./reducing-involuntary-subscriber-churn.md)
   Prevent unintentional loss of subscribers due to billing issues.
 
 

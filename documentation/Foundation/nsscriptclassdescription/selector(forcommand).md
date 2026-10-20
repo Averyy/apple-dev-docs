@@ -1,7 +1,8 @@
 # selector(forCommand:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the selector associated with the receiver for the specified command description.
 
@@ -15,6 +16,10 @@ Returns the selector associated with the receiver for the specified command desc
 func selector(forCommand commandDescription: NSScriptCommandDescription) -> Selector?
 ```
 
+```objc
+- (SEL) selectorForCommand:(NSScriptCommandDescription *) commandDescription;
+```
+
 #### Return Value
 
 The selector from the receiver for the command specified by `commandDescription`. Searches in the receiver first, then in any superclass. Returns `NULL` if no matching selector is found.
@@ -25,7 +30,8 @@ The selector from the receiver for the command specified by `commandDescription`
 
 ## See Also
 
-- [func supportsCommand(NSScriptCommandDescription) -> Bool](nsscriptclassdescription/supportscommand(_:).md)
+### Getting command information
+- [func supportsCommand(NSScriptCommandDescription) -> Bool](./supportscommand%28_%29.md)
   Returns a Boolean value indicating whether the receiver or any superclass supports the specified command.
 
 

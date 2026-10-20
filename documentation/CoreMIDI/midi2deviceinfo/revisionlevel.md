@@ -1,7 +1,8 @@
 # revisionLevel
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var revisionLevel: MIDI2DeviceRevisionLevel { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDI2DeviceRevisionLevel revisionLevel;
 ```
 
 

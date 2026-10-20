@@ -1,7 +1,8 @@
 # USDLayer.Permission.public
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Accessible from any layer.
 

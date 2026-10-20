@@ -1,7 +1,8 @@
 # MusicSummaries.Views.TopArtistsView
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The top artists that the user listened to for the given period.
 
@@ -10,7 +11,7 @@ The top artists that the user listened to for the given period.
 
 ## Declaration
 
-```swift
+```
 object MusicSummaries.Views.TopArtistsView
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Binds a texture to the texture argument table, allowing compute kernels to access its data on the GPU.
@@ -11,7 +12,7 @@ Binds a texture to the texture argument table, allowing compute kernels to acces
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,14 +21,19 @@ Binds a texture to the texture argument table, allowing compute kernels to acces
 func setTexture(_ texture: (any MTLTexture)?, index: Int)
 ```
 
+```objc
+- (void) setTexture:(id<MTLTexture>) texture atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
-- `texture`: An [`MTLTexture`](mtltexture.md) instance to bind to the texture argument table.
+- `texture`: An [`MTLTexture`](../mtltexture.md) instance to bind to the texture argument table.
 - `index`: The index the texture binds to in the texture argument table.
 
 ## See Also
 
-- [func setTextures([(any MTLTexture)?], range: Range<Int>)](mtlcomputecommandencoder/settextures(_:range:).md)
+### Binding textures
+- [func setTextures([(any MTLTexture)?], range: Range<Int>)](./settextures%28_,range%29.md)
   Binds multiple textures to the texture argument table, allowing compute functions to access their data on the GPU.
 
 

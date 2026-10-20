@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 This should be set to zero (0).
 
@@ -13,6 +14,10 @@ This should be set to zero (0).
 
 ```swift
 var version: CFIndex
+```
+
+```c
+CFIndex version;
 ```
 
 

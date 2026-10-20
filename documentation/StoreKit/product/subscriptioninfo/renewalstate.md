@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.RenewalState
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The renewal states of auto-renewable subscriptions.
 
@@ -22,54 +23,55 @@ struct RenewalState
 
 ## Mentions
 
-- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
-- [Testing Apple In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Testing failing subscription renewals and Apple In-App Purchases](../../testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing Apple In-App Purchases in Xcode](../../testing-in-app-purchases-in-xcode.md)
 
 #### Overview
 
-A subscription’s renewal state indicates whether an auto-renewable subscription is entitled to service. Subscriptions in the [`subscribed`](product/subscriptioninfo/renewalstate/subscribed.md) and [`inGracePeriod`](product/subscriptioninfo/renewalstate/ingraceperiod.md) states are entitled to service.
+A subscription’s renewal state indicates whether an auto-renewable subscription is entitled to service. Subscriptions in the [`subscribed`](./renewalstate/subscribed.md) and [`inGracePeriod`](./renewalstate/ingraceperiod.md) states are entitled to service.
 
-Subscriptions in the [`expired`](product/subscriptioninfo/renewalstate/expired.md), [`inBillingRetryPeriod`](product/subscriptioninfo/renewalstate/inbillingretryperiod.md), and [`revoked`](product/subscriptioninfo/renewalstate/revoked.md) states aren’t entitled to service if the customer doesn’t have other [`Product.SubscriptionInfo.Status`](product/subscriptioninfo/status-swift.struct.md) items that give them entitlement to service for that subscription. For example, a customer may have a status in the [`expired`](product/subscriptioninfo/renewalstate/expired.md) state for a subscription that they purchased individually, and another status in the [`subscribed`](product/subscriptioninfo/renewalstate/subscribed.md) state for the same subscription, which they get through Family Sharing. In that case, the customer has an entitlement to service for that subscription.
+Subscriptions in the [`expired`](./renewalstate/expired.md), [`inBillingRetryPeriod`](./renewalstate/inbillingretryperiod.md), and [`revoked`](./renewalstate/revoked.md) states aren’t entitled to service if the customer doesn’t have other [`Product.SubscriptionInfo.Status`](./status-swift.struct.md) items that give them entitlement to service for that subscription. For example, a customer may have a status in the [`expired`](./renewalstate/expired.md) state for a subscription that they purchased individually, and another status in the [`subscribed`](./renewalstate/subscribed.md) state for the same subscription, which they get through Family Sharing. In that case, the customer has an entitlement to service for that subscription.
 
-For more information about Family Sharing, see [`Supporting Family Sharing in your app`](supporting-family-sharing-in-your-app.md). For more information about entitlements, see [`currentEntitlements`](transaction/currententitlements.md).
+For more information about Family Sharing, see [Supporting Family Sharing in your app](../../supporting-family-sharing-in-your-app.md). For more information about entitlements, see [`currentEntitlements`](../../transaction/currententitlements.md).
 
 ## Topics
 
 ### Getting the renewal state
-- [static let subscribed: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/subscribed.md)
+- [static let subscribed: Product.SubscriptionInfo.RenewalState](./renewalstate/subscribed.md)
   The customer is currently subscribed.
-- [static let expired: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/expired.md)
+- [static let expired: Product.SubscriptionInfo.RenewalState](./renewalstate/expired.md)
   The subscription expired.
-- [static let inBillingRetryPeriod: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/inbillingretryperiod.md)
+- [static let inBillingRetryPeriod: Product.SubscriptionInfo.RenewalState](./renewalstate/inbillingretryperiod.md)
   The subscription is in a billing retry period.
-- [static let inGracePeriod: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/ingraceperiod.md)
+- [static let inGracePeriod: Product.SubscriptionInfo.RenewalState](./renewalstate/ingraceperiod.md)
   The subscription is in a billing grace period state.
-- [static let revoked: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/revoked.md)
+- [static let revoked: Product.SubscriptionInfo.RenewalState](./renewalstate/revoked.md)
   The App Store has revoked the customer’s access to the subscription group.
 ### Getting a localized description
-- [var localizedDescription: String](product/subscriptioninfo/renewalstate/localizeddescription.md)
+- [var localizedDescription: String](./renewalstate/localizeddescription.md)
   A string containing the localized description of the renewal state.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Product.SubscriptionInfo.Status](product/subscriptioninfo/status-swift.struct.md)
+### Subscription status and renewal information
+- [Product.SubscriptionInfo.Status](./status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalInfo](product/subscriptioninfo/renewalinfo.md)
+- [Product.SubscriptionInfo.RenewalInfo](./renewalinfo.md)
   The renewal information for an auto-renewable subscription.
-- [typealias SubscriptionRenewalInfo](subscriptionrenewalinfo.md)
+- [typealias SubscriptionRenewalInfo](../../subscriptionrenewalinfo.md)
   Represents the renewal information for an auto-renewable subscription.
-- [typealias SubscriptionRenewalState](subscriptionrenewalstate.md)
+- [typealias SubscriptionRenewalState](../../subscriptionrenewalstate.md)
   The renewal states of auto-renewable subscriptions.
-- [typealias SubscriptionPeriod](subscriptionperiod.md)
+- [typealias SubscriptionPeriod](../../subscriptionperiod.md)
   Represents the duration of time between subscription renewals.
 
 

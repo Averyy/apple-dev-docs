@@ -1,7 +1,8 @@
 # PKPayLaterAction
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values you use to set the Apple Pay Later action.
 
@@ -10,35 +11,42 @@ Values you use to set the Apple Pay Later action.
 - iPadOS 17.0+
 - visionOS 1.0+
 
+> **Deprecated**: Apple Pay Later is deprecated.
+
 ## Declaration
 
 ```swift
 enum PKPayLaterAction
 ```
 
+```c
+enum PKPayLaterAction : NSInteger;
+```
+
 ## Topics
 
 ### Widget behaviors
-- [PKPayLaterAction.calculator](pkpaylateraction/calculator.md)
+- [PKPayLaterAction.calculator](./pkpaylateraction/calculator.md)
   An action the provides the standard price breakdown calculator for Apple Pay Later.
-- [PKPayLaterAction.learnMore](pkpaylateraction/learnmore.md)
+- [PKPayLaterAction.learnMore](./pkpaylateraction/learnmore.md)
   An action that displays a button that a person can tap to learn more about Apple Pay Later.
 ### Initializers
-- [init?(rawValue: Int)](pkpaylateraction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pkpaylateraction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var action: PKPayLaterAction](pkpaylaterview/action.md)
+### Setting the user action
+- [var action: PKPayLaterAction](./pkpaylaterview/action.md)
   The information style that the Apple Pay Later view presents.
 
 

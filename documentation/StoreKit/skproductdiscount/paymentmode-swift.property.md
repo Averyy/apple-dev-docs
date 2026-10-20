@@ -1,18 +1,21 @@
 # paymentMode
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The payment mode for this product discount.
 
 **Availability**:
-- iOS 11.2+
-- iPadOS 11.2+
-- Mac Catalyst 13.1+
-- macOS 10.13.2+
-- tvOS 11.2+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 11.2+ - Deprecated in 18.0
+- iPadOS 11.2+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.13.2+ - Deprecated in 15.0
+- tvOS 11.2+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use Product.SubscriptionOffer.paymentMode.
 
 ## Declaration
 
@@ -20,23 +23,28 @@ The payment mode for this product discount.
 var paymentMode: SKProductDiscount.PaymentMode { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SKProductDiscountPaymentMode paymentMode;
+```
+
 #### Discussion
 
-The payment mode indicates how the product discount [`price`](skproductdiscount/price.md) is charged:
+The payment mode indicates how the product discount [`price`](./price.md) is charged:
 
-- One or more times, for [`SKProductDiscount.PaymentMode.payAsYouGo`](skproductdiscount/paymentmode-swift.enum/payasyougo.md) mode
-- Once in advance, for [`SKProductDiscount.PaymentMode.payUpFront`](skproductdiscount/paymentmode-swift.enum/payupfront.md) mode
-- No initial charge, for [`SKProductDiscount.PaymentMode.freeTrial`](skproductdiscount/paymentmode-swift.enum/freetrial.md) mode.
+- One or more times, for [`SKProductDiscount.PaymentMode.payAsYouGo`](./paymentmode-swift.enum/payasyougo.md) mode
+- Once in advance, for [`SKProductDiscount.PaymentMode.payUpFront`](./paymentmode-swift.enum/payupfront.md) mode
+- No initial charge, for [`SKProductDiscount.PaymentMode.freeTrial`](./paymentmode-swift.enum/freetrial.md) mode.
 
-Use the payment mode to display an accurate description of the product discount in your UI. For design guidance, see [`Human Interface Guidelines > Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/).
+Use the payment mode to display an accurate description of the product discount in your UI. For design guidance, see [Human Interface Guidelines > Apple In-App Purchase](https://developer.apple.com/ios/human-interface-guidelines/technologies/in-app-purchase/).
 
 ## See Also
 
-- [var price: NSDecimalNumber](skproductdiscount/price.md)
+### Getting Price and Payment Mode
+- [var price: NSDecimalNumber](./price.md)
   The discount price of the product in the local currency.
-- [var priceLocale: Locale](skproductdiscount/pricelocale.md)
+- [var priceLocale: Locale](./pricelocale.md)
   The locale used to format the discount price of the product.
-- [SKProductDiscount.PaymentMode](skproductdiscount/paymentmode-swift.enum.md)
+- [SKProductDiscount.PaymentMode](./paymentmode-swift.enum.md)
   Values representing the payment modes for a product discount.
 
 

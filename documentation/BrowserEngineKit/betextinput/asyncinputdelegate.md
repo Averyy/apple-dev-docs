@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A delegate object that your text view notifies of events and changes in the text’s state.
@@ -18,9 +19,13 @@ A delegate object that your text view notifies of events and changes in the text
 weak var asyncInputDelegate: (any BETextInputDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<BETextInputDelegate> asyncInputDelegate;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 
 ---

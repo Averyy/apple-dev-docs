@@ -1,7 +1,8 @@
 # BackgroundDeliveryExtension
 
 **Framework**: FinanceKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An extension used to receive updates about changes to data within the finance store.
 
@@ -18,13 +19,13 @@ protocol BackgroundDeliveryExtension : AppExtension, BackgroundDeliveryExtension
 
 #### Overview
 
-Use [`enableBackgroundDelivery(for:frequency:)`](financestore/enablebackgrounddelivery(for:frequency:).md) to enable updates for an extension and see [`BackgroundDeliveryExtensionProviding`](backgrounddeliveryextensionproviding.md) to implement functions for an extension.
+Use [`enableBackgroundDelivery(for:frequency:)`](./financestore/enablebackgrounddelivery%28for,frequency%29.md) to enable updates for an extension and see [`BackgroundDeliveryExtensionProviding`](./backgrounddeliveryextensionproviding.md) to implement functions for an extension.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [BackgroundDeliveryExtensionProviding](backgrounddeliveryextensionproviding.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [BackgroundDeliveryExtensionProviding](./backgrounddeliveryextensionproviding.md)
 
 
 ---

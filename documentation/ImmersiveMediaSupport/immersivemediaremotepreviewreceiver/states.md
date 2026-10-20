@@ -1,7 +1,8 @@
 # states
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The states to use for monitoring the current state of the preview receiver so the app can monitor events.
 

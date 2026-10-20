@@ -1,7 +1,8 @@
 # replace(_:with:maxReplacements:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all occurrences of the sequence matching the given regex with a given collection.
 
@@ -19,6 +20,8 @@ Replaces all occurrences of the sequence matching the given regex with a given c
 ```swift
 mutating func replace<Replacement>(_ regex: some RegexComponent, with replacement: Replacement, maxReplacements: Int = .max) where Replacement : Collection, Replacement.Element == Character
 ```
+
+Available when `SubSequence` is `Substring`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # CTRunGetGlyphCount(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the glyph count for the run.
 
@@ -20,6 +21,10 @@ Gets the glyph count for the run.
 func CTRunGetGlyphCount(_ run: CTRun) -> CFIndex
 ```
 
+```c
+extern CFIndex CTRunGetGlyphCount(CTRunRef run);
+```
+
 #### Return Value
 
 The number of glyphs that the run contains, or if there are no glyphs in this run, a value of `0`.
@@ -30,27 +35,28 @@ The number of glyphs that the run contains, or if there are no glyphs in this ru
 
 ## See Also
 
-- [func CTRunGetAttributes(CTRun) -> CFDictionary](ctrungetattributes(_:).md)
+### Getting Glyph Run Data
+- [func CTRunGetAttributes(CTRun) -> CFDictionary](./ctrungetattributes%28_%29.md)
   Returns the attribute dictionary that was used to create the glyph run.
-- [func CTRunGetStatus(CTRun) -> CTRunStatus](ctrungetstatus(_:).md)
+- [func CTRunGetStatus(CTRun) -> CTRunStatus](./ctrungetstatus%28_%29.md)
   Returns the run’s status.
-- [func CTRunGetGlyphsPtr(CTRun) -> UnsafePointer<CGGlyph>?](ctrungetglyphsptr(_:).md)
+- [func CTRunGetGlyphsPtr(CTRun) -> UnsafePointer<CGGlyph>?](./ctrungetglyphsptr%28_%29.md)
   Returns a direct pointer for the glyph array stored in the run.
-- [func CTRunGetGlyphs(CTRun, CFRange, UnsafeMutablePointer<CGGlyph>)](ctrungetglyphs(_:_:_:).md)
+- [func CTRunGetGlyphs(CTRun, CFRange, UnsafeMutablePointer<CGGlyph>)](./ctrungetglyphs%28_,_,_%29.md)
   Copies a range of glyphs into a user-provided buffer.
-- [func CTRunGetPositionsPtr(CTRun) -> UnsafePointer<CGPoint>?](ctrungetpositionsptr(_:).md)
+- [func CTRunGetPositionsPtr(CTRun) -> UnsafePointer<CGPoint>?](./ctrungetpositionsptr%28_%29.md)
   Returns a direct pointer for the glyph position array stored in the run.
-- [func CTRunGetPositions(CTRun, CFRange, UnsafeMutablePointer<CGPoint>)](ctrungetpositions(_:_:_:).md)
+- [func CTRunGetPositions(CTRun, CFRange, UnsafeMutablePointer<CGPoint>)](./ctrungetpositions%28_,_,_%29.md)
   Copies a range of glyph positions into a user-provided buffer.
-- [func CTRunGetAdvancesPtr(CTRun) -> UnsafePointer<CGSize>?](ctrungetadvancesptr(_:).md)
+- [func CTRunGetAdvancesPtr(CTRun) -> UnsafePointer<CGSize>?](./ctrungetadvancesptr%28_%29.md)
   Returns a direct pointer for the glyph advance array stored in the run.
-- [func CTRunGetAdvances(CTRun, CFRange, UnsafeMutablePointer<CGSize>)](ctrungetadvances(_:_:_:).md)
+- [func CTRunGetAdvances(CTRun, CFRange, UnsafeMutablePointer<CGSize>)](./ctrungetadvances%28_,_,_%29.md)
   Copies a range of glyph advances into a user-provided buffer.
-- [func CTRunGetStringIndicesPtr(CTRun) -> UnsafePointer<CFIndex>?](ctrungetstringindicesptr(_:).md)
+- [func CTRunGetStringIndicesPtr(CTRun) -> UnsafePointer<CFIndex>?](./ctrungetstringindicesptr%28_%29.md)
   Returns a direct pointer for the string indices stored in the run.
-- [func CTRunGetStringIndices(CTRun, CFRange, UnsafeMutablePointer<CFIndex>)](ctrungetstringindices(_:_:_:).md)
+- [func CTRunGetStringIndices(CTRun, CFRange, UnsafeMutablePointer<CFIndex>)](./ctrungetstringindices%28_,_,_%29.md)
   Copies a range of string indices into a user-provided buffer.
-- [func CTRunGetStringRange(CTRun) -> CFRange](ctrungetstringrange(_:).md)
+- [func CTRunGetStringRange(CTRun) -> CFRange](./ctrungetstringrange%28_%29.md)
   Gets the range of characters that originally spawned the glyphs in the run.
 
 

@@ -1,7 +1,8 @@
 # ViewThatFits
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that adapts to the available space by providing the first child view that fits.
 
@@ -27,7 +28,7 @@ nonisolated struct ViewThatFits<Content> where Content : View
 
 The following example shows an `UploadProgressView` that uses `ViewThatFits` to display the upload progress in one of three ways. In order, it attempts to display:
 
-- An [`HStack`](hstack.md) that contains a [`Text`](text.md) view and a [`ProgressView`](progressview.md).
+- An [`HStack`](./hstack.md) that contains a [`Text`](./text.md) view and a [`ProgressView`](./progressview.md).
 - Only the `ProgressView`.
 - Only the `Text` view.
 
@@ -65,18 +66,18 @@ VStack {
 }
 ```
 
-![A vertical stack showing three expressions of progress, constrained by](/images/com.apple.SwiftUI/ViewThatFits-1@2x.png)
+![A vertical stack showing three expressions of progress, constrained by](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ViewThatFits-1@2x.png)
 
 ## Topics
 
 ### Creating a view that fits
-- [init(in: Axis.Set, content: () -> Content)](viewthatfits/init(in:content:).md)
+- [init(in: Axis.Set, content: () -> Content)](./viewthatfits/init%28in,content%29.md)
   Produces a view constrained in the given axes from one of several alternatives provided by a content builder.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

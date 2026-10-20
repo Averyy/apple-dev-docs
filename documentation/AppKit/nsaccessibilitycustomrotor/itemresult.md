@@ -1,7 +1,8 @@
 # NSAccessibilityCustomRotor.ItemResult
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A target accessibility element that a custom rotor references.
 
@@ -14,38 +15,43 @@ A target accessibility element that a custom rotor references.
 class ItemResult
 ```
 
+```objc
+@interface NSAccessibilityCustomRotorItemResult : NSObject
+```
+
 ## Topics
 
 ### Creating an Item Result
-- [init(targetElement: any NSAccessibilityElementProtocol)](nsaccessibilitycustomrotor/itemresult/init(targetelement:).md)
+- [init(targetElement: any NSAccessibilityElementProtocol)](./itemresult/init%28targetelement%29.md)
   Creates an item result with the specified target element.
-- [init(itemLoadingToken: NSAccessibilityLoadingToken, customLabel: String)](nsaccessibilitycustomrotor/itemresult/init(itemloadingtoken:customlabel:).md)
+- [init(itemLoadingToken: NSAccessibilityLoadingToken, customLabel: String)](./itemresult/init%28itemloadingtoken,customlabel%29.md)
   Creates an item result with the specified item load token and custom label.
 ### Identifying an Item Result
-- [var targetElement: (any NSAccessibilityElementProtocol)?](nsaccessibilitycustomrotor/itemresult/targetelement.md)
+- [var targetElement: (any NSAccessibilityElementProtocol)?](./itemresult/targetelement.md)
   A target element that references an element to message for accessibility properties.
-- [var itemLoadingToken: NSAccessibilityLoadingToken?](nsaccessibilitycustomrotor/itemresult/itemloadingtoken.md)
+- [var itemLoadingToken: NSAccessibilityLoadingToken?](./itemresult/itemloadingtoken.md)
   A token to determine which item to return.
-- [var targetRange: NSRange](nsaccessibilitycustomrotor/itemresult/targetrange.md)
+- [var targetRange: NSRange](./itemresult/targetrange.md)
   A range that specifies the area of interest for text-based elements.
-- [var customLabel: String?](nsaccessibilitycustomrotor/itemresult/customlabel.md)
+- [var customLabel: String?](./itemresult/customlabel.md)
   A localized label to use instead of the default item label to describe the item result.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var currentItem: NSAccessibilityCustomRotor.ItemResult?](nsaccessibilitycustomrotor/searchparameters/currentitem.md)
+### Managing the Current Item
+- [var currentItem: NSAccessibilityCustomRotor.ItemResult?](./searchparameters/currentitem.md)
   The current item that determines where the search starts.
 
 

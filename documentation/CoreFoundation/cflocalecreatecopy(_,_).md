@@ -1,18 +1,19 @@
 # CFLocaleCreateCopy(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a copy of a locale.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a copy of a locale.
 func CFLocaleCreateCopy(_ allocator: CFAllocator!, _ locale: CFLocale!) -> CFLocale!
 ```
 
+```c
+extern CFLocaleRefCFLocaleCreateCopy(CFAllocatorRef allocator, CFLocaleRef locale);
+```
+
 #### Return Value
 
-A new locale that is a copy of `locale`. Returns `NULL` if there was a problem creating the object. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new locale that is a copy of `locale`. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -31,11 +36,12 @@ A new locale that is a copy of `locale`. Returns `NULL` if there was a problem c
 
 ## See Also
 
-- [func CFLocaleCopyCurrent() -> CFLocale!](cflocalecopycurrent().md)
+### Creating a Locale
+- [func CFLocaleCopyCurrent() -> CFLocale!](./cflocalecopycurrent%28%29.md)
   Returns a copy of the logical locale for the current user.
-- [func CFLocaleCreate(CFAllocator!, CFLocaleIdentifier!) -> CFLocale!](cflocalecreate(_:_:).md)
+- [func CFLocaleCreate(CFAllocator!, CFLocaleIdentifier!) -> CFLocale!](./cflocalecreate%28_,_%29.md)
   Creates a locale for the given arbitrary locale identifier.
-- [func CFLocaleGetSystem() -> CFLocale!](cflocalegetsystem().md)
+- [func CFLocaleGetSystem() -> CFLocale!](./cflocalegetsystem%28%29.md)
   Returns the root, canonical locale.
 
 

@@ -1,7 +1,8 @@
 # distinct()
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a discontiguous slice that contains unique elements.
 
@@ -19,6 +20,8 @@ Generates a discontiguous slice that contains unique elements.
 ```swift
 func distinct() -> DiscontiguousColumnSlice<WrappedElement>
 ```
+
+Available when `WrappedElement` conforms to `Hashable`.
 
 #### Return Value
 

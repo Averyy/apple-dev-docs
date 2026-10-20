@@ -1,7 +1,8 @@
 # isHighlighted
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the cell is highlighted.
 
@@ -14,11 +15,16 @@ A Boolean value that indicates whether the cell is highlighted.
 var isHighlighted: Bool { get set }
 ```
 
+```objc
+@property (getter=isHighlighted) BOOL highlighted;
+```
+
 ## See Also
 
-- [NSControl.ImagePosition](nscontrol/imageposition.md)
+### Displaying a Cell
+- [NSControl.ImagePosition](./imageposition.md)
   A constant for specifying the position of a button’s image relative to its title.
-- [NSControl.StateValue](nscontrol/statevalue.md)
+- [NSControl.StateValue](./statevalue.md)
   A constant that indicates whether a control is on, off, or in a mixed state.
 
 

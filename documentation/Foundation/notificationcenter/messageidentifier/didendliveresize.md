@@ -1,7 +1,8 @@
 # didEndLiveResize
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didEndLiveResize: NotificationCenter.BaseMessageIdentifier<NSWindow.DidEndLiveResizeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSWindow.DidEndLiveResizeMessage>`.
 
 
 ---

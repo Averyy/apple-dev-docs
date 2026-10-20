@@ -1,7 +1,8 @@
 # cmReflective
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 If the bit 0 of the associated mask is `0` then reflective media; if `1` then transparency media.
 

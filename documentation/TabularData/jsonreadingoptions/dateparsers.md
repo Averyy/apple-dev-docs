@@ -1,7 +1,8 @@
 # dateParsers
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of closures that parse a date from a string.
 

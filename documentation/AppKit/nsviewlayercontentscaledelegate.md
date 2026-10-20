@@ -1,17 +1,22 @@
 # NSViewLayerContentScaleDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An optional layer delegate method for handling resolution changes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 protocol NSViewLayerContentScaleDelegate : NSObjectProtocol
+```
+
+```objc
+@protocol NSViewLayerContentScaleDelegate <NSObject>
 ```
 
 #### Overview
@@ -23,36 +28,38 @@ For all other layers, AppKit checks whether the layer has a delegate that implem
 ## Topics
 
 ### Responding to Resolution Changes
-- [func layer(CALayer, shouldInheritContentsScale: CGFloat, from: NSWindow) -> Bool](nsviewlayercontentscaledelegate/layer(_:shouldinheritcontentsscale:from:).md)
+- [func layer(CALayer, shouldInheritContentsScale: CGFloat, from: NSWindow) -> Bool](./nsviewlayercontentscaledelegate/layer%28_,shouldinheritcontentsscale,from%29.md)
   Notifies you when a resolution changes occurs for the window that hosts the layer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [View Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaViewsGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002978)
-- [var wantsLayer: Bool](nsview/wantslayer.md)
+### Related Documentation
+- [View Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaViewsGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002978)
+### Managing the View’s Layer
+- [var wantsLayer: Bool](./nsview/wantslayer.md)
   A Boolean value indicating whether the view uses a layer as its backing store.
-- [var wantsUpdateLayer: Bool](nsview/wantsupdatelayer.md)
+- [var wantsUpdateLayer: Bool](./nsview/wantsupdatelayer.md)
   A Boolean value indicating which drawing path the view takes when updating its contents.
-- [var layer: CALayer?](nsview/layer.md)
+- [var layer: CALayer?](./nsview/layer.md)
   The Core Animation layer that the view uses as its backing store.
-- [func makeBackingLayer() -> CALayer](nsview/makebackinglayer.md)
+- [func makeBackingLayer() -> CALayer](./nsview/makebackinglayer%28%29.md)
   Creates the view’s backing layer.
-- [var layerContentsPlacement: NSView.LayerContentsPlacement](nsview/layercontentsplacement-swift.property.md)
+- [var layerContentsPlacement: NSView.LayerContentsPlacement](./nsview/layercontentsplacement-swift.property.md)
   The current layer contents placement policy.
-- [NSView.LayerContentsPlacement](nsview/layercontentsplacement-swift.enum.md)
-  These constants specify the location of the layer content when the content is not rerendered in response to view resizing. For more information, see the [`layerContentsPlacement`](nsview/layercontentsplacement-swift.property.md) property.
-- [var layerContentsRedrawPolicy: NSView.LayerContentsRedrawPolicy](nsview/layercontentsredrawpolicy-swift.property.md)
+- [NSView.LayerContentsPlacement](./nsview/layercontentsplacement-swift.enum.md)
+  These constants specify the location of the layer content when the content is not rerendered in response to view resizing. For more information, see the [`layerContentsPlacement`](./nsview/layercontentsplacement-swift.property.md) property.
+- [var layerContentsRedrawPolicy: NSView.LayerContentsRedrawPolicy](./nsview/layercontentsredrawpolicy-swift.property.md)
   The contents redraw policy for the view’s layer.
-- [NSView.LayerContentsRedrawPolicy](nsview/layercontentsredrawpolicy-swift.enum.md)
-  Constants that specify how layer resizing is handled when a view is layer-backed or layer-hosting. For more information, see the  [`layerContentsRedrawPolicy`](nsview/layercontentsredrawpolicy-swift.property.md) property.
-- [var canDrawSubviewsIntoLayer: Bool](nsview/candrawsubviewsintolayer.md)
+- [NSView.LayerContentsRedrawPolicy](./nsview/layercontentsredrawpolicy-swift.enum.md)
+  Constants that specify how layer resizing is handled when a view is layer-backed or layer-hosting. For more information, see the  [`layerContentsRedrawPolicy`](./nsview/layercontentsredrawpolicy-swift.property.md) property.
+- [var canDrawSubviewsIntoLayer: Bool](./nsview/candrawsubviewsintolayer.md)
   A Boolean value indicating whether the view incorporates content from its subviews into its own layer.
-- [var layerUsesCoreImageFilters: Bool](nsview/layerusescoreimagefilters.md)
+- [var layerUsesCoreImageFilters: Bool](./nsview/layerusescoreimagefilters.md)
   A Boolean value indicating whether the view’s layer uses Core Image filters and needs in-process rendering.
 
 

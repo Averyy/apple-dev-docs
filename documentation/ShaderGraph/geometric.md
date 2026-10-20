@@ -1,7 +1,8 @@
 # Geometric
 
 **Framework**: ShaderGraph  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: ShaderGraph Node Group
 
 Access scene geometry while your graph runs.
 
@@ -12,56 +13,57 @@ When the GPU applies your graph to a scene, geometric nodes reflect the data val
 ## Topics
 
 ### Nodes
-- [Position](geometric/position.md)
+- [Position](./geometric/position.md)
   The coordinates of the currently-processed data in a given coordinate space.
-- [Normal](geometric/normal.md)
+- [Normal](./geometric/normal.md)
   The geometric normal of the currently-processed data in a given coordinate space.
-- [Tangent](geometric/tangent.md)
+- [Tangent](./geometric/tangent.md)
   The geometric tangent of the currently-processed data in a given coordinate space.
-- [Bitangent](geometric/bitangent.md)
+- [Bitangent](./geometric/bitangent.md)
   The geometric bitangent vector of the currently-processed data in a given coordinate space.
-- [Texture Coordinates](geometric/texture-coordinates.md)
+- [Texture Coordinates](./geometric/texture-coordinates.md)
   The 2D or 3D texture coordinates of the currently-processed data.
-- [Geometry Color](geometric/geometry-color.md)
+- [Geometry Color](./geometric/geometry-color.md)
   The color associated with the geometry at the currently-processed geometric position, typically defined by vertex color.
-- [Geometric Property](geometric/geometric-property.md)
+- [Geometric Property](./geometric/geometric-property.md)
   The value of the specified geometric property (defined using ) of the currently-bound geometry.
-- [Reflect (RealityKit)](geometric/reflect-(realitykit).md)
+- [Reflect (RealityKit)](./geometric/reflect-%28realitykit%29.md)
   Reflects a vector about another vector.
-- [Refract (RealityKit)](geometric/refract-(realitykit).md)
+- [Refract (RealityKit)](./geometric/refract-%28realitykit%29.md)
   Refracts a vector using a given normal and index of refraction (eta).
 
 ## See Also
 
-- [2D-Procedural](2d-procedural.md)
+### Node Categories
+- [2D-Procedural](./api-2d-procedural.md)
   Generate 2D gradients, noise, and other patterns programmatically for your material.
-- [2D-Texture](2d-texture.md)
+- [2D-Texture](./api-2d-texture.md)
   Load and configure 2D texture files.
-- [3D-Procedural](3d-procedural.md)
+- [3D-Procedural](./api-3d-procedural.md)
   Generate 3D noise patterns programmatically for your material.
-- [3D-Texture](3d-texture.md)
+- [3D-Texture](./api-3d-texture.md)
   Project multiple 2D images onto a surface to create a 3D texture.
-- [Adjustment](adjustment.md)
+- [Adjustment](./adjustment.md)
   Modify or convert values, or ranges of values, from one form to another.
-- [Application](application.md)
+- [Application](./application.md)
   Get system values such as the current time or the direction of the up vector.
-- [Compositing](compositing.md)
+- [Compositing](./compositing.md)
   Generate a single output from the combination of multiple data values.
-- [Data](data.md)
+- [Data](./data.md)
   Convert data values to different formats, or manipulate individual elements within a data structure.
-- [Logic](logic.md)
+- [Logic](./logic.md)
   Perform Boolean operations and other logical comparisons on data values.
-- [Material](material.md)
+- [Material](./material.md)
   Encapsulate a set of shader graph nodes into a single module.
-- [Math](math.md)
+- [Math](./math.md)
   Perform a wide variety of mathematical and transformative operations on data values.
-- [Organization](organization.md)
+- [Organization](./organization.md)
   Modify the visual flow of data within your graph without changing any values.
-- [Procedural](procedural.md)
+- [Procedural](./procedural.md)
   Add a constant number, vector, matrix, color, string, or other value to your graph.
-- [RealityKit](realitykit.md)
+- [RealityKit](./realitykit.md)
   Add RealityKit surfaces or textures to your material and access and manipulate scene geometry.
-- [Surface](surface.md)
+- [Surface](./surface.md)
   Generate a MaterialX preview surface.
 
 

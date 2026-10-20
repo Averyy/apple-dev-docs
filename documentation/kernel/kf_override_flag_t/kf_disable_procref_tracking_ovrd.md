@@ -1,14 +1,15 @@
 # KF_DISABLE_PROCREF_TRACKING_OVRD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 KF_DISABLE_PROCREF_TRACKING_OVRD
 ```
 

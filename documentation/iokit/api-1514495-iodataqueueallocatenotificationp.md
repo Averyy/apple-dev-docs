@@ -1,7 +1,8 @@
 # IODataQueueAllocateNotificationPort()
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Allocates and returns a new mach port able to receive data available notifications from an IODataQueue.
 
@@ -18,7 +19,11 @@ Allocates and returns a new mach port able to receive data available notificatio
 func IODataQueueAllocateNotificationPort() -> mach_port_t
 ```
 
-#### Return_value
+```c
+mach_port_t IODataQueueAllocateNotificationPort(void);
+```
+
+#### Return Value
 
 Returns a newly allocated mach port on success. On failure, it returns MACH_PORT_NULL.
 
@@ -28,17 +33,18 @@ This port is intended to be passed down into the kernel and into an IODataQueue 
 
 ## See Also
 
-- [func IODataQueueDataAvailable(UnsafeMutablePointer<IODataQueueMemory>!) -> Bool](1514386-iodataqueuedataavailable.md)
+### Miscellaneous
+- [func IODataQueueDataAvailable(UnsafeMutablePointer<IODataQueueMemory>!) -> Bool](./api-1514386-iodataqueuedataavailable.md)
   Used to determine if more data is avilable on the queue.
-- [func IODataQueueDequeue(UnsafeMutablePointer<IODataQueueMemory>!, UnsafeMutableRawPointer!, UnsafeMutablePointer<UInt32>!) -> IOReturn](1514287-iodataqueuedequeue.md)
+- [func IODataQueueDequeue(UnsafeMutablePointer<IODataQueueMemory>!, UnsafeMutableRawPointer!, UnsafeMutablePointer<UInt32>!) -> IOReturn](./api-1514287-iodataqueuedequeue.md)
   Dequeues the next available entry on the queue and copies it into the given data pointer.
-- [func IODataQueueEnqueue(UnsafeMutablePointer<IODataQueueMemory>!, UnsafeMutableRawPointer!, UInt32) -> IOReturn](1514482-iodataqueueenqueue.md)
+- [func IODataQueueEnqueue(UnsafeMutablePointer<IODataQueueMemory>!, UnsafeMutableRawPointer!, UInt32) -> IOReturn](./api-1514482-iodataqueueenqueue.md)
   Enqueues a new entry on the queue.
-- [func IODataQueuePeek(UnsafeMutablePointer<IODataQueueMemory>!) -> UnsafeMutablePointer<IODataQueueEntry>!](1514649-iodataqueuepeek.md)
+- [func IODataQueuePeek(UnsafeMutablePointer<IODataQueueMemory>!) -> UnsafeMutablePointer<IODataQueueEntry>!](./api-1514649-iodataqueuepeek.md)
   Used to peek at the next entry on the queue.
-- [func IODataQueueSetNotificationPort(UnsafeMutablePointer<IODataQueueMemory>!, mach_port_t) -> IOReturn](1514301-iodataqueuesetnotificationport.md)
+- [func IODataQueueSetNotificationPort(UnsafeMutablePointer<IODataQueueMemory>!, mach_port_t) -> IOReturn](./api-1514301-iodataqueuesetnotificationport.md)
   Creates a simple mach message targeting the mach port specified in port.
-- [func IODataQueueWaitForAvailableData(UnsafeMutablePointer<IODataQueueMemory>!, mach_port_t) -> IOReturn](1514696-iodataqueuewaitforavailabledata.md)
+- [func IODataQueueWaitForAvailableData(UnsafeMutablePointer<IODataQueueMemory>!, mach_port_t) -> IOReturn](./api-1514696-iodataqueuewaitforavailabledata.md)
   Wait for an incoming dataAvailable message on the given notifyPort.
 
 

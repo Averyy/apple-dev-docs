@@ -1,7 +1,8 @@
 # phonemeCode
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The opcode for the phoneme that the speech channel is currently processing.
 
@@ -12,6 +13,10 @@ The opcode for the phoneme that the speech channel is currently processing.
 
 ```swift
 var phonemeCode: Int16
+```
+
+```c
+SInt16 phonemeCode;
 ```
 
 

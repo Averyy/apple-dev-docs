@@ -1,7 +1,8 @@
 # post(name:object:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a notification with a given name and sender and posts it to the notification center.
 
@@ -20,9 +21,13 @@ Creates a notification with a given name and sender and posts it to the notifica
 func post(name aName: NSNotification.Name, object anObject: Any?)
 ```
 
+```objc
+- (void) postNotificationName:(NSNotificationName) aName object:(id) anObject;
+```
+
 #### Discussion
 
-This is a convenience method for calling [`post(name:object:userInfo:)`](notificationcenter/post(name:object:userinfo:).md) and passing `nil` to `aUserInfo`.
+This is a convenience method for calling [`post(name:object:userInfo:)`](./post%28name,object,userinfo%29.md) and passing `nil` to `aUserInfo`.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ This is a convenience method for calling [`post(name:object:userInfo:)`](notific
 
 ## See Also
 
-- [func post(Notification)](notificationcenter/post(_:)-3x2st.md)
+### Posting notifications
+- [func post(Notification)](./post%28_%29-3x2st.md)
   Posts a given notification to the notification center.
-- [func post(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](notificationcenter/post(name:object:userinfo:).md)
+- [func post(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./post%28name,object,userinfo%29.md)
   Creates a notification with a given name, sender, and information and posts it to the notification center.
 
 

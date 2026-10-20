@@ -1,7 +1,8 @@
 # readabilityHandler
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block to use for reading the contents of the file handle asynchronously.
 
@@ -20,9 +21,13 @@ The block to use for reading the contents of the file handle asynchronously.
 var readabilityHandler: (@Sendable (FileHandle) -> Void)? { get set }
 ```
 
+```objc
+@property (copy, nullable) void (^readabilityHandler)(NSFileHandle *);
+```
+
 #### Discussion
 
-The default value of this property is `nil`. Assigning a valid [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to this property creates a dispatch source for reading the contents of the file or socket. Your block is submitted to the file handle’s dispatch queue when there is data to read. When reading a file, your handler block is typically executed repeatedly until the entire contents of the file have been read. When reading data from a socket, your handler block is executed whenever there is data on the socket waiting to be read.
+The default value of this property is `nil`. Assigning a valid [Block object](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to this property creates a dispatch source for reading the contents of the file or socket. Your block is submitted to the file handle’s dispatch queue when there is data to read. When reading a file, your handler block is typically executed repeatedly until the entire contents of the file have been read. When reading data from a socket, your handler block is executed whenever there is data on the socket waiting to be read.
 
 The block you provide must accept a single parameter that is the current file handle. The return type of your block should be `void`.
 
@@ -30,7 +35,8 @@ To stop reading the file or socket, set the value of this property to `nil`. Doi
 
 ## See Also
 
-- [var writeabilityHandler: ((FileHandle) -> Void)?](filehandle/writeabilityhandler.md)
+### Monitoring for readability and writability
+- [var writeabilityHandler: ((FileHandle) -> Void)?](./writeabilityhandler.md)
   The block to use for writing the contents of the file handle asynchronously.
 
 

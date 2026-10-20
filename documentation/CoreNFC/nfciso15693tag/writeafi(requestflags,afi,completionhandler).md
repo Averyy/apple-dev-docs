@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends the Write AFI command (0x27 command code), as defined in the ISO 15693-3 specification, to the tag.
@@ -14,12 +15,21 @@ Sends the Write AFI command (0x27 command code), as defined in the ISO 15693-3 s
 ## Declaration
 
 ```swift
+func writeAFI(requestFlags flags: NFCISO15693RequestFlag, afi: UInt8, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAFI(requestFlags flags: NFCISO15693RequestFlag, afi: UInt8) async throws
+```
+
+```objc
+- (void) writeAFIWithRequestFlag:(NFCISO15693RequestFlag) flags afi:(uint8_t) afi completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## See Also
 
-- [func lockAFI(requestFlags: NFCISO15693RequestFlag, completionHandler: ((any Error)?) -> Void)](nfciso15693tag/lockafi(requestflags:completionhandler:).md)
+### Sending Application Family Identifier Commands
+- [func lockAFI(requestFlags: NFCISO15693RequestFlag, completionHandler: ((any Error)?) -> Void)](./lockafi%28requestflags,completionhandler%29.md)
   Sends the Lock AFI command (0x28 command code), as defined in the ISO 15693-3 specification, to the tag.
 
 

@@ -1,7 +1,8 @@
 # middleName
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The middle name of the contact.
 
@@ -19,25 +20,38 @@ The middle name of the contact.
 var middleName: String { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSString * middleName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSString * middleName;
+```
+
 ## See Also
 
-- [var namePrefix: String](cnmutablecontact/nameprefix.md)
+### Setting Name Information
+- [var namePrefix: String](./nameprefix.md)
   The name prefix of the contact.
-- [var givenName: String](cnmutablecontact/givenname.md)
+- [var givenName: String](./givenname.md)
   The given name of the contact.
-- [var familyName: String](cnmutablecontact/familyname.md)
+- [var familyName: String](./familyname.md)
   The family name of the contact.
-- [var previousFamilyName: String](cnmutablecontact/previousfamilyname.md)
+- [var previousFamilyName: String](./previousfamilyname.md)
   The previous family name of the contact.
-- [var nameSuffix: String](cnmutablecontact/namesuffix.md)
+- [var nameSuffix: String](./namesuffix.md)
   The name suffix of the contact.
-- [var nickname: String](cnmutablecontact/nickname.md)
+- [var nickname: String](./nickname.md)
   The nickname of the contact.
-- [var phoneticGivenName: String](cnmutablecontact/phoneticgivenname.md)
+- [var phoneticGivenName: String](./phoneticgivenname.md)
   The phonetic given name of the contact.
-- [var phoneticMiddleName: String](cnmutablecontact/phoneticmiddlename.md)
+- [var phoneticMiddleName: String](./phoneticmiddlename.md)
   The phonetic middle name of the contact.
-- [var phoneticFamilyName: String](cnmutablecontact/phoneticfamilyname.md)
+- [var phoneticFamilyName: String](./phoneticfamilyname.md)
   The phonetic family name of the contact.
 
 

@@ -1,7 +1,8 @@
 # accessibilityTextContentType(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an accessibility text content type.
 
@@ -25,17 +26,18 @@ func accessibilityTextContentType(_ value: AccessibilityTextContentType) -> Text
 
 Use this modifier to set the content type of this accessibility element. Assistive technologies can use this property to choose an appropriate way to output the text. For example, when encountering a source coding context, VoiceOver could choose to speak all punctuation.
 
-If you don’t set a value with this method, the default content type is [`plain`](accessibilitytextcontenttype/plain.md).
+If you don’t set a value with this method, the default content type is [`plain`](../accessibilitytextcontenttype/plain.md).
 
 ## Parameters
 
-- `value`: The accessibility content type from the available [`AccessibilityTextContentType`](accessibilitytextcontenttype.md) options.
+- `value`: The accessibility content type from the available [`AccessibilityTextContentType`](../accessibilitytextcontenttype.md) options.
 
 ## See Also
 
-- [func accessibilityHeading(AccessibilityHeadingLevel) -> Text](text/accessibilityheading(_:).md)
+### Providing accessibility information
+- [func accessibilityHeading(AccessibilityHeadingLevel) -> Text](./accessibilityheading%28_%29.md)
   Sets the accessibility level of this heading.
-- [func accessibilityLabel(_:)](text/accessibilitylabel(_:).md)
+- [func accessibilityLabel(_:)](./accessibilitylabel%28_%29.md)
   Adds a label to the view that describes its contents.
 
 

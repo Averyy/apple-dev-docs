@@ -1,7 +1,8 @@
 # axes(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an overlay arrangement that lays out its views along the axes you provide.
 

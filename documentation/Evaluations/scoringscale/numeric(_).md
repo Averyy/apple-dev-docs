@@ -1,7 +1,8 @@
 # numeric(_:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a scoring scale from a numeric dictionary.
 
@@ -30,11 +31,12 @@ Each key-value pair maps a numeric score to rubric guidance. The label for each 
 
 ## See Also
 
-- [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](scoringscale/passfail(passdescription:faildescription:).md)
+### Creating a scale
+- [static func passFail(passDescription: String, failDescription: String) -> ScoringScale](./passfail%28passdescription,faildescription%29.md)
   Creates a binary pass or fail scoring scale.
-- [static func custom<Level>(Level.Type) -> ScoringScale](scoringscale/custom(_:).md)
+- [static func custom<Level>(Level.Type) -> ScoringScale](./custom%28_%29.md)
   Creates a scoring scale from a typed score level enum.
-- [init(options: [ScaleOption])](scoringscale/init(options:).md)
+- [init(options: [ScaleOption])](./init%28options%29.md)
   Creates a scoring scale with explicit options.
 
 

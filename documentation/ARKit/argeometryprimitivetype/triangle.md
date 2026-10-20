@@ -1,7 +1,8 @@
 # ARGeometryPrimitiveType.triangle
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Three vertices that connect to form a triangle.
 
@@ -15,9 +16,14 @@ Three vertices that connect to form a triangle.
 case triangle
 ```
 
+```c
+ARGeometryPrimitiveTypeTriangle
+```
+
 ## See Also
 
-- [ARGeometryPrimitiveType.line](argeometryprimitivetype/line.md)
+### Type of Connection
+- [ARGeometryPrimitiveType.line](./line.md)
   A line segment in which a line connects two vertices.
 
 

@@ -1,7 +1,8 @@
 # localizedString(forCalendarIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the localized string for the specified calendar identifier.
 
@@ -20,13 +21,17 @@ Returns the localized string for the specified calendar identifier.
 func localizedString(forCalendarIdentifier calendarIdentifier: String) -> String?
 ```
 
+```objc
+- (NSString *) localizedStringForCalendarIdentifier:(NSString *) calendarIdentifier;
+```
+
 #### Return Value
 
 A human readable string suitable for display to the user corresponding to the given calendar.
 
 #### Discussion
 
-For example, on an American English (`en_US`) locale, passing [`gregorian`](nscalendar/identifier/gregorian.md) as the identifier, produces the string `"Gregorian Calendar"`.
+For example, on an American English (`en_US`) locale, passing [`gregorian`](../nscalendar/identifier/gregorian.md) as the identifier, produces the string `"Gregorian Calendar"`.
 
 ## Parameters
 
@@ -34,23 +39,24 @@ For example, on an American English (`en_US`) locale, passing [`gregorian`](nsca
 
 ## See Also
 
-- [func localizedString(forLocaleIdentifier: String) -> String](nslocale/localizedstring(forlocaleidentifier:).md)
+### Getting Display Information About a Locale
+- [func localizedString(forLocaleIdentifier: String) -> String](./localizedstring%28forlocaleidentifier%29.md)
   Returns the localized string for the specified locale identifier.
-- [func localizedString(forCountryCode: String) -> String?](nslocale/localizedstring(forcountrycode:).md)
+- [func localizedString(forCountryCode: String) -> String?](./localizedstring%28forcountrycode%29.md)
   Returns the localized string for a country or region code.
-- [func localizedString(forLanguageCode: String) -> String?](nslocale/localizedstring(forlanguagecode:).md)
+- [func localizedString(forLanguageCode: String) -> String?](./localizedstring%28forlanguagecode%29.md)
   Returns the localized string for the specified language code.
-- [func localizedString(forScriptCode: String) -> String?](nslocale/localizedstring(forscriptcode:).md)
+- [func localizedString(forScriptCode: String) -> String?](./localizedstring%28forscriptcode%29.md)
   Returns the localized string for the specified script code.
-- [func localizedString(forVariantCode: String) -> String?](nslocale/localizedstring(forvariantcode:).md)
+- [func localizedString(forVariantCode: String) -> String?](./localizedstring%28forvariantcode%29.md)
   Returns the localized string for the specified variant code.
-- [func localizedString(forCollationIdentifier: String) -> String?](nslocale/localizedstring(forcollationidentifier:).md)
+- [func localizedString(forCollationIdentifier: String) -> String?](./localizedstring%28forcollationidentifier%29.md)
   Returns the localized string for the specified collation identifier.
-- [func localizedString(forCollatorIdentifier: String) -> String?](nslocale/localizedstring(forcollatoridentifier:).md)
+- [func localizedString(forCollatorIdentifier: String) -> String?](./localizedstring%28forcollatoridentifier%29.md)
   Returns the localized string for the specified collator identifier.
-- [func localizedString(forCurrencyCode: String) -> String?](nslocale/localizedstring(forcurrencycode:).md)
+- [func localizedString(forCurrencyCode: String) -> String?](./localizedstring%28forcurrencycode%29.md)
   Returns the localized string for the specified currency code.
-- [Locale Calendar Identifiers](locale-calendar-identifiers.md)
+- [Locale Calendar Identifiers](../locale-calendar-identifiers.md)
   The types of calendars.
 
 

@@ -1,9 +1,10 @@
 # init(description:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a new [`XCTestExpectation`](xctestexpectation.md) with the provided description.
+Creates a new [`XCTestExpectation`](../xctestexpectation.md) with the provided description.
 
 ## Declaration
 
@@ -11,9 +12,13 @@ Creates a new [`XCTestExpectation`](xctestexpectation.md) with the provided desc
 init(description expectationDescription: String)
 ```
 
+```objc
+- (instancetype) initWithDescription:(NSString *) expectationDescription;
+```
+
 #### Discussion
 
-To fulfill an expectation that was created with this initializer, call the expectation’s [`fulfill()`](xctestexpectation/fulfill().md) method when the asynchronous task in your test has completed.
+To fulfill an expectation that was created with this initializer, call the expectation’s [`fulfill()`](./fulfill%28%29.md) method when the asynchronous task in your test has completed.
 
 ## Parameters
 
@@ -21,7 +26,8 @@ To fulfill an expectation that was created with this initializer, call the expec
 
 ## See Also
 
-- [var expectationDescription: String](xctestexpectation/expectationdescription.md)
+### Creating Expectations
+- [var expectationDescription: String](./expectationdescription.md)
   A human readable string used to describe the expectation in log output and test reports.
 
 

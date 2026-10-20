@@ -1,7 +1,8 @@
 # rateDidChangeNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The synchronizer’s rendering rate changed.
 
@@ -20,19 +21,24 @@ The synchronizer’s rendering rate changed.
 class let rateDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVSampleBufferRenderSynchronizerRateDidChangeNotification;
+```
+
 ## See Also
 
-- [func currentTime() -> CMTime](avsamplebufferrendersynchronizer/currenttime.md)
+### Accessing time information
+- [func currentTime() -> CMTime](./currenttime%28%29.md)
   Returns the current time of the synchronizer.
-- [var timebase: CMTimebase](avsamplebufferrendersynchronizer/timebase.md)
+- [var timebase: CMTimebase](./timebase.md)
   The synchronizer’s rendering timebase which determines how it interprets timestamps.
-- [var rate: Float](avsamplebufferrendersynchronizer/rate.md)
+- [var rate: Float](./rate.md)
   The current playback rate.
-- [func setRate(Float, time: CMTime)](avsamplebufferrendersynchronizer/setrate(_:time:).md)
+- [func setRate(Float, time: CMTime)](./setrate%28_,time%29.md)
   Sets the renderer’s time and rate.
-- [func setRate(Float, time: CMTime, atHostTime: CMTime)](avsamplebufferrendersynchronizer/setrate(_:time:athosttime:).md)
+- [func setRate(Float, time: CMTime, atHostTime: CMTime)](./setrate%28_,time,athosttime%29.md)
   Sets the playback rate and the relationship between the current time and host time.
-- [var delaysRateChangeUntilHasSufficientMediaData: Bool](avsamplebufferrendersynchronizer/delaysratechangeuntilhassufficientmediadata.md)
+- [var delaysRateChangeUntilHasSufficientMediaData: Bool](./delaysratechangeuntilhassufficientmediadata.md)
   A Boolean value that Indicates whether the playback should start immediately on rate change requests.
 
 

@@ -1,7 +1,8 @@
 # kColorSyncGenericCMYKProfile
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The generic CMYK color profile.
 
@@ -20,17 +21,22 @@ The generic CMYK color profile.
 var kColorSyncGenericCMYKProfile: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncGenericCMYKProfile;
+```
+
 ## See Also
 
-- [var kColorSyncGenericGrayProfile: Unmanaged<CFString>!](kcolorsyncgenericgrayprofile.md)
+### Accessing generic and special profiles
+- [var kColorSyncGenericGrayProfile: Unmanaged<CFString>!](./kcolorsyncgenericgrayprofile.md)
   The generic gray color profile.
-- [var kColorSyncGenericGrayGamma22Profile: Unmanaged<CFString>!](kcolorsyncgenericgraygamma22profile.md)
+- [var kColorSyncGenericGrayGamma22Profile: Unmanaged<CFString>!](./kcolorsyncgenericgraygamma22profile.md)
   The generic gray color profile with a gamma of 2.2.
-- [var kColorSyncGenericLabProfile: Unmanaged<CFString>!](kcolorsyncgenericlabprofile.md)
+- [var kColorSyncGenericLabProfile: Unmanaged<CFString>!](./kcolorsyncgenericlabprofile.md)
   The generic CIELAB color profile.
-- [var kColorSyncGenericXYZProfile: Unmanaged<CFString>!](kcolorsyncgenericxyzprofile.md)
+- [var kColorSyncGenericXYZProfile: Unmanaged<CFString>!](./kcolorsyncgenericxyzprofile.md)
   The generic CIEXYZ color profile.
-- [var kColorSyncWebSafeColorsProfile: Unmanaged<CFString>!](kcolorsyncwebsafecolorsprofile.md)
+- [var kColorSyncWebSafeColorsProfile: Unmanaged<CFString>!](./kcolorsyncwebsafecolorsprofile.md)
   The web-safe colors profile.
 
 

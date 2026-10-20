@@ -1,7 +1,8 @@
 # isPresentingFriendRequestViewController
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether your game presents the friends request view controller.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether your game presents the friends request vi
 var isPresentingFriendRequestViewController: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isPresentingFriendRequestViewController;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the friends request view controller appears; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the friends request view controller appears; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func presentFriendRequestCreator(from: UIViewController) throws](gklocalplayer/presentfriendrequestcreator(from:)-7j1kn.md)
+### Adding Friends
+- [func presentFriendRequestCreator(from: UIViewController) throws](./presentfriendrequestcreator%28from%29-7j1kn.md)
   Presents a view controller with a Messages sheet for the player to request friends.
-- [func presentFriendRequestCreator(from: NSWindow?) throws](gklocalplayer/presentfriendrequestcreator(from:)-7clh6.md)
+- [func presentFriendRequestCreator(from: NSWindow?) throws](./presentfriendrequestcreator%28from%29-7clh6.md)
   Opens the Messages app with a sheet for the player to request friends.
 
 

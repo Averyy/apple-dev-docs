@@ -1,7 +1,8 @@
 # currentZoneDuration
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that contains the zone duration just entered.
 
@@ -24,9 +25,10 @@ When this property is `nil`, no zone is currently active.
 
 ## See Also
 
-- [var previousZoneDuration: HKWorkoutZoneDuration?](hkliveworkoutzoneupdate/previouszoneduration.md)
+### Accessing zone data
+- [var previousZoneDuration: HKWorkoutZoneDuration?](./previouszoneduration.md)
   A property that contains the zone duration that just completed.
-- [var zoneGroup: HKWorkoutZoneGroup?](hkliveworkoutzoneupdate/zonegroup.md)
+- [var zoneGroup: HKWorkoutZoneGroup?](./zonegroup.md)
   The zone group that contains the current duration data.
 
 

@@ -1,17 +1,18 @@
 # PHASEError.Code.invalidObject
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates an object is invalid in a specific context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ An error that indicates an object is invalid in a specific context.
 case invalidObject
 ```
 
+```c
+PHASEErrorInvalidObject
+```
+
 #### Discussion
 
-The [`addChild(_:)`](phaseobject/addchild(_:).md) function throws this error if the specified child already has a parent in the scene graph hierarchy.
+The [`addChild(_:)`](../../phaseobject/addchild%28_%29.md) function throws this error if the specified child already has a parent in the scene graph hierarchy.
 
 ## See Also
 
-- [PHASEError.Code.initializeFailed](phaseerror-swift.struct/code/initializefailed.md)
+### Errors
+- [PHASEError.Code.initializeFailed](./initializefailed.md)
   An error that indicates the engine failed to initialize.
 
 

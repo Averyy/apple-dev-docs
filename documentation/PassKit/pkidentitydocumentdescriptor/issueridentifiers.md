@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A list of X.509 authority key identifiers your app accepts.
@@ -18,6 +19,10 @@ A list of X.509 authority key identifiers your app accepts.
 var issuerIdentifiers: [Data] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSData *> * issuerIdentifiers;
+```
+
 #### Discussion
 
 An empty list means any document signer certificate is acceptable.
@@ -26,9 +31,10 @@ An empty list means any document signer certificate is acceptable.
 
 ## See Also
 
-- [var elements: [PKIdentityElement]](pkidentitydocumentdescriptor/elements.md)
+### Inspecting elements
+- [var elements: [PKIdentityElement]](./elements.md)
   A list of identity elements to request.
-- [class PKIdentityElement](pkidentityelement.md)
+- [class PKIdentityElement](../pkidentityelement.md)
   An object that represents the elements an app requests from identity documents.
 
 

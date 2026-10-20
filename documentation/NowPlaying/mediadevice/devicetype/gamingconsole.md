@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.gamingConsole
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A gaming console.
 

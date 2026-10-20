@@ -1,7 +1,8 @@
 # Future.Promise
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a closure to invoke in the future, when an element or error is available.
 
@@ -22,15 +23,16 @@ typealias Promise = (Result<Output, Failure>) -> Void
 
 ## Mentions
 
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Using Combine for Your App’s Asynchronous Code](../using-combine-for-your-app-s-asynchronous-code.md)
 
 #### Discussion
 
-The promise closure receives one parameter: a `Result` that contains either a single element published by a [`Future`](future.md), or an error.
+The promise closure receives one parameter: a `Result` that contains either a single element published by a [`Future`](../future.md), or an error.
 
 ## See Also
 
-- [init((Future<Output, Failure>.Promise) -> Void)](future/init(_:).md)
+### Creating a future
+- [init((Future<Output, Failure>.Promise) -> Void)](./init%28_%29.md)
   Creates a publisher that invokes a promise closure when the publisher emits an element.
 
 

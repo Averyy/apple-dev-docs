@@ -1,7 +1,8 @@
 # EntityIdentifier
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that uniquely identifies a specific instance of an app entity.
 
@@ -11,7 +12,7 @@ A type that uniquely identifies a specific instance of an app entity.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ struct EntityIdentifier
 
 The value used should be unique across all entities of the given type. Entities which are relevant across executions of the application should have stable identifiers that persist across executions.
 
-Entities, by default, conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol. Use a type for the `id` that conforms to [`EntityIdentifierConvertible`](entityidentifierconvertible.md). Default implementations for `String`, `UUID` and `Int` are provided.
+Entities, by default, conform to the [`Identifiable`](../Swift/identifiable.md) protocol. Use a type for the `id` that conforms to [`EntityIdentifierConvertible`](./entityidentifierconvertible.md). Default implementations for `String`, `UUID` and `Int` are provided.
 
 For example:
 
@@ -34,71 +35,72 @@ struct Song: AppEntity {
 }
 ```
 
-#### Cross Device Stable Identifiers
+#### Cross-Device Stable Identifiers
 
-For entities that adopt [`SyncableEntity`](syncableentity.md), the framework automatically extracts stable identifiers for cross-device session syncing:
+For entities that adopt [`SyncableEntity`](./syncableentity.md), the framework automatically extracts stable identifiers for cross-device session syncing:
 
-- **Passthrough case**: If your entity’s ID is already stable across devices (like server UUIDs), just adopt [`SyncableEntity`](syncableentity.md) with no other changes. The framework uses your ID as both the local and stable identifier.
-- **Mapped case**: If your entity has different local and stable identifiers, use [`SyncableEntityIdentifier`](syncableentityidentifier.md) as your ID type. The framework extracts the stable ID from the wrapper.
+- **Passthrough case**: If your entity’s ID is already stable across devices (like server UUIDs), just adopt [`SyncableEntity`](./syncableentity.md) with no other changes. The framework uses your ID as both the local and stable identifier.
+- **Mapped case**: If your entity has different local and stable identifiers, use [`SyncableEntityIdentifier`](./syncableentityidentifier.md) as your ID type. The framework extracts the stable ID from the wrapper.
 
-Apps never interact with `EntityIdentifier.stableIdentifier` directly - they work with their entity’s ID type (plain types like [`UUID`](https://developer.apple.com/documentation/foundation/uuid), or [`SyncableEntityIdentifier`](syncableentityidentifier.md) for mapped IDs).
+Apps never interact with `EntityIdentifier.stableIdentifier` directly - they work with their entity’s ID type (plain types like [`UUID`](../Foundation/uuid.md), or [`SyncableEntityIdentifier`](./syncableentityidentifier.md) for mapped IDs).
 
 The stable identifier is NOT used for equality or hashing - two `EntityIdentifier` instances are equal if they have the same type and local identifier, regardless of stable identifier value.
 
 ## Topics
 
 ### Creating an entity identifier
-- [init<Entity>(for: Entity)](entityidentifier/init(for:).md)
+- [init<Entity>(for: Entity)](./entityidentifier/init%28for%29.md)
   Creates an identifier for the specified entity.
-- [init<Entity>(for: Entity.Type, identifier: Entity.ID)](entityidentifier/init(for:identifier:).md)
+- [init<Entity>(for: Entity.Type, identifier: Entity.ID)](./entityidentifier/init%28for,identifier%29.md)
   Creates an `EntityIdentifier` representing an instance of the specified entity type backed by the specified identifier value.
-- [init?(activityIdentifier: String)](entityidentifier/init(activityidentifier:).md)
+- [init?(activityIdentifier: String)](./entityidentifier/init%28activityidentifier%29.md)
 ### Getting the identifier details
-- [let identifier: String](entityidentifier/identifier.md)
+- [let identifier: String](./entityidentifier/identifier.md)
   Value uniquely identifying the entity instance within its type.
-- [let entityType: any AppEntity.Type](entityidentifier/entitytype.md)
+- [let entityType: any AppEntity.Type](./entityidentifier/entitytype.md)
   The type of `AppEntity` represented by this identifier
-- [static let valueMaximumLength: Int](entityidentifier/valuemaximumlength.md)
+- [static let valueMaximumLength: Int](./entityidentifier/valuemaximumlength.md)
   Maximum allowed length for the `identifier` value. This is a constraint imposed by the system and thus forces us to truncate the identifier if it exceeds the maximum length.
 ### Operators
-- [static func == (EntityIdentifier, EntityIdentifier) -> Bool](entityidentifier/==(_:_:).md)
+- [static func == (EntityIdentifier, EntityIdentifier) -> Bool](./entityidentifier/eqeq%28_,_%29.md)
   Compares two entity identifiers for equality.
 ### Instance Methods
-- [func hash(into: inout Hasher)](entityidentifier/hash(into:).md)
+- [func hash(into: inout Hasher)](./entityidentifier/hash%28into%29.md)
   Hashes the entity identifier.
 ### Type Aliases
-- [EntityIdentifier.Specification](entityidentifier/specification.md)
-- [EntityIdentifier.UnwrappedType](entityidentifier/unwrappedtype.md)
-- [EntityIdentifier.ValueType](entityidentifier/valuetype.md)
+- [EntityIdentifier.Specification](./entityidentifier/specification.md)
+- [EntityIdentifier.UnwrappedType](./entityidentifier/unwrappedtype.md)
+- [EntityIdentifier.ValueType](./entityidentifier/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: EmptyResolverSpecification<EntityIdentifier>](entityidentifier/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: EmptyResolverSpecification<EntityIdentifier>](./entityidentifier/defaultresolverspecification.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
+### Entity identity
+- [protocol EntityIdentifierConvertible](./entityidentifierconvertible.md)
   An interface for converting between an entity’s identifier and its string representation.
-- [struct FileEntityIdentifier](fileentityidentifier.md)
+- [struct FileEntityIdentifier](./fileentityidentifier.md)
   An identifier for an app entity that refers to a document or other file.
-- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
+- [protocol PersistentlyIdentifiable](./persistentlyidentifiable.md)
   Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
-- [struct SyncableEntityIdentifier](syncableentityidentifier.md)
+- [struct SyncableEntityIdentifier](./syncableentityidentifier.md)
   A type-safe wrapper you use to specify different local and stable identifiers for an entity.
-- [struct AttributedEntityIdentifier](attributedentityidentifier.md)
+- [struct AttributedEntityIdentifier](./attributedentityidentifier.md)
   A unique identifier for an app entity instance within an application.
-- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+- [struct AttributedTypeIdentifier](./attributedtypeidentifier.md)
   A unique identifier for an app entity or transient app entity type within an application bundle.
-- [protocol AppEntityAnnotatable](appentityannotatable.md)
+- [protocol AppEntityAnnotatable](./appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
 
 

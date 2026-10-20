@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the set contains no layers.
 
@@ -21,9 +22,10 @@ var isEmpty: Bool { get }
 
 ## See Also
 
-- [var count: Int](renderlayer/set/count.md)
+### Inspecting the set
+- [var count: Int](./count.md)
   The number of layers in the set.
-- [func contains(RenderLayer) -> Bool](renderlayer/set/contains(_:).md)
+- [func contains(RenderLayer) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the set contains the given layer.
 
 

@@ -1,7 +1,8 @@
 # CMSync
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents time syncing.
 
@@ -23,20 +24,21 @@ struct CMSync
 ## Topics
 
 ### Constants
-- [CMSync.Error](cmsync/error.md)
+- [CMSync.Error](./cmsync/error.md)
   Constants that describe syncing errors.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CMTimebase](cmtimebase.md)
+### Data Types
+- [class CMTimebase](./cmtimebase.md)
   A model of a timeline under application control.
-- [protocol CMSyncProtocol](cmsyncprotocol.md)
+- [protocol CMSyncProtocol](./cmsyncprotocol.md)
   A type that provides behavior for syncing time.
 
 

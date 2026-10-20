@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOEnetMulticastModeFilter](1645324-anonymous/kioenetmulticastmodefilter.md)
-- [kIOEnetMulticastModeOff](1645324-anonymous/kioenetmulticastmodeoff.md)
-- [kIOEnetPromiscuousModeAll](1645324-anonymous/kioenetpromiscuousmodeall.md)
-- [kIOEnetPromiscuousModeOff](1645324-anonymous/kioenetpromiscuousmodeoff.md)
-- [kIOEnetPromiscuousModeOn](1645324-anonymous/kioenetpromiscuousmodeon.md)
+- [kIOEnetMulticastModeFilter](./api-1645324-anonymous/kioenetmulticastmodefilter.md)
+- [kIOEnetMulticastModeOff](./api-1645324-anonymous/kioenetmulticastmodeoff.md)
+- [kIOEnetPromiscuousModeAll](./api-1645324-anonymous/kioenetpromiscuousmodeall.md)
+- [kIOEnetPromiscuousModeOff](./api-1645324-anonymous/kioenetpromiscuousmodeoff.md)
+- [kIOEnetPromiscuousModeOn](./api-1645324-anonymous/kioenetpromiscuousmodeon.md)
 
 
 ---

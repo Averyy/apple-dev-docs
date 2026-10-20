@@ -1,7 +1,8 @@
 # ObjectDetectionAnnotation
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object detection annotation.
 
@@ -26,36 +27,37 @@ The annotation consists of a list of bounding boxes and object labels for each i
 ## Topics
 
 ### Getting the properties
-- [let imageFileName: String](objectdetectionannotation/imagefilename.md)
+- [let imageFileName: String](./objectdetectionannotation/imagefilename.md)
   The name of the image file.
-- [let objects: [ObjectDetectionAnnotation<Label>.Annotation]](objectdetectionannotation/objects.md)
+- [let objects: [ObjectDetectionAnnotation<Label>.Annotation]](./objectdetectionannotation/objects.md)
   The list of object annotations in the image.
-- [ObjectDetectionAnnotation.Annotation](objectdetectionannotation/annotation.md)
+- [ObjectDetectionAnnotation.Annotation](./objectdetectionannotation/annotation.md)
   The annotation represented by an object label and its bounding box.
-- [let prominentObject: Label](objectdetectionannotation/prominentobject.md)
+- [let prominentObject: Label](./objectdetectionannotation/prominentobject.md)
   The most prominent object in the image.
 ### Encoding and decoding
-- [ObjectDetectionAnnotation.CodingKeys](objectdetectionannotation/codingkeys.md)
+- [ObjectDetectionAnnotation.CodingKeys](./objectdetectionannotation/codingkeys.md)
   Coding keys for object detection annotations
 ### Default Implementations
-- [Identifiable Implementations](objectdetectionannotation/identifiable-implementations.md)
+- [Identifiable Implementations](./objectdetectionannotation/identifiable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DetectedObject](detectedobject.md)
+### Object detection components
+- [struct DetectedObject](./detectedobject.md)
   An item in a detection result.
-- [struct ObjectDetectionMetrics](objectdetectionmetrics.md)
+- [struct ObjectDetectionMetrics](./objectdetectionmetrics.md)
   Metrics for object detection model.
 
 

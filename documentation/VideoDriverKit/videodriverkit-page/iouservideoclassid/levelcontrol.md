@@ -1,7 +1,8 @@
 # LevelControl
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The class identifier for the `IOUserVideoLevelControl` class.
 
@@ -10,19 +11,20 @@ The class identifier for the `IOUserVideoLevelControl` class.
 
 ## Declaration
 
-```swift
+```c
 LevelControl
 ```
 
 ## See Also
 
-- [Control](videodriverkit/iouservideoclassid/control.md)
+### Identifying generic control types
+- [Control](./control.md)
   The class identifier for the `IOUserVideoControl` class.
-- [BooleanControl](videodriverkit/iouservideoclassid/booleancontrol.md)
+- [BooleanControl](./booleancontrol.md)
   The class identifier for the `IOUserVideoBooleanControl` class.
-- [SliderControl](videodriverkit/iouservideoclassid/slidercontrol.md)
+- [SliderControl](./slidercontrol.md)
   The class identifier for the `IOUserVideoSliderControl` class.
-- [SelectorControl](videodriverkit/iouservideoclassid/selectorcontrol.md)
+- [SelectorControl](./selectorcontrol.md)
   The class identifier for the `IOUserVideoSelectorControl` class.
 
 

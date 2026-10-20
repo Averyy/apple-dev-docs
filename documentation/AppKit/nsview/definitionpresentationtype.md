@@ -1,12 +1,13 @@
 # NSView.DefinitionPresentationType
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Presentation options for the window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,32 +15,37 @@ Presentation options for the window.
 struct DefinitionPresentationType
 ```
 
+```c
+typedef NSString * NSDefinitionPresentationType;
+```
+
 ## Topics
 
 ### Presentation Values
-- [static let dictionaryApplication: NSView.DefinitionPresentationType](nsview/definitionpresentationtype/dictionaryapplication.md)
-  A possible value of the [`presentationType`](nsview/definitionoptionkey/presentationtype.md) dictionary key that invokes Dictionary application to display the definition.
-- [static let overlay: NSView.DefinitionPresentationType](nsview/definitionpresentationtype/overlay.md)
-  A possible value of the [`presentationType`](nsview/definitionoptionkey/presentationtype.md) dictionary key that produces a small overlay window at the string location,
+- [static let dictionaryApplication: NSView.DefinitionPresentationType](./definitionpresentationtype/dictionaryapplication.md)
+  A possible value of the [`presentationType`](./definitionoptionkey/presentationtype.md) dictionary key that invokes Dictionary application to display the definition.
+- [static let overlay: NSView.DefinitionPresentationType](./definitionpresentationtype/overlay.md)
+  A possible value of the [`presentationType`](./definitionoptionkey/presentationtype.md) dictionary key that produces a small overlay window at the string location,
 ### Initializers
-- [init(rawValue: String)](nsview/definitionpresentationtype/init(rawvalue:).md)
+- [init(rawValue: String)](./definitionpresentationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func showDefinition(for: NSAttributedString?, at: NSPoint)](nsview/showdefinition(for:at:).md)
+### Displaying Definition Windows
+- [func showDefinition(for: NSAttributedString?, at: NSPoint)](./showdefinition%28for,at%29.md)
   Shows a window displaying the definition of the attributed string at the specified point.
-- [func showDefinition(for: NSAttributedString?, range: NSRange, options: [NSView.DefinitionOptionKey : Any]?, baselineOriginProvider: ((NSRange) -> NSPoint)?)](nsview/showdefinition(for:range:options:baselineoriginprovider:).md)
+- [func showDefinition(for: NSAttributedString?, range: NSRange, options: [NSView.DefinitionOptionKey : Any]?, baselineOriginProvider: ((NSRange) -> NSPoint)?)](./showdefinition%28for,range,options,baselineoriginprovider%29.md)
   Shows a window displaying the definition of the specified range of the attributed string.
-- [NSView.DefinitionOptionKey](nsview/definitionoptionkey.md)
+- [NSView.DefinitionOptionKey](./definitionoptionkey.md)
   Keys to include in your definition.
 
 

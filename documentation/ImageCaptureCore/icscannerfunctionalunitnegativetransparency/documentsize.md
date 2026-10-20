@@ -1,7 +1,8 @@
 # documentSize
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,18 @@
 
 ```swift
 var documentSize: NSSize { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (readonly) CGSize documentSize;
+```
+
+*macOS*
+
+```objc
+@property (readonly) NSSize documentSize;
 ```
 
 

@@ -1,7 +1,8 @@
 # date
 
 **Framework**: ClassKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays the relevant assigned document date.
 

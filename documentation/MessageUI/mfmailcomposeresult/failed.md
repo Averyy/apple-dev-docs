@@ -1,7 +1,8 @@
 # MFMailComposeResult.failed
 
 **Framework**: Message UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The email message was not saved or queued, possibly due to an error.
 
@@ -17,13 +18,18 @@ The email message was not saved or queued, possibly due to an error.
 case failed
 ```
 
+```c
+MFMailComposeResultFailed
+```
+
 ## See Also
 
-- [MFMailComposeResult.cancelled](mfmailcomposeresult/cancelled.md)
+### Constants
+- [MFMailComposeResult.cancelled](./cancelled.md)
   The user canceled the operation.
-- [MFMailComposeResult.saved](mfmailcomposeresult/saved.md)
+- [MFMailComposeResult.saved](./saved.md)
   The email message was saved in the user’s drafts folder.
-- [MFMailComposeResult.sent](mfmailcomposeresult/sent.md)
+- [MFMailComposeResult.sent](./sent.md)
   The email message was queued in the user’s outbox.
 
 

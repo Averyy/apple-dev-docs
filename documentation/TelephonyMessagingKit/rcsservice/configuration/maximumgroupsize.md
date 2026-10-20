@@ -1,7 +1,8 @@
 # maximumGroupSize
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of participants allowed for a group chat.
 
@@ -20,7 +21,8 @@ This value is `nil` if group chat is disabled.
 
 ## See Also
 
-- [let chatRevokeTimeout: Duration?](rcsservice/configuration/chatrevoketimeout.md)
+### Inspecting chat configuration
+- [let chatRevokeTimeout: Duration?](./chatrevoketimeout.md)
   The maximum duration the service provider allows for delivery notification before it revokes a chat message.
 
 

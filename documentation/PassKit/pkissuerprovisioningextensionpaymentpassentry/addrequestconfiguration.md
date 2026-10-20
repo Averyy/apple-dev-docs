@@ -1,7 +1,8 @@
 # addRequestConfiguration
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration that the system uses to add a payment pass.
 
@@ -9,13 +10,17 @@ The configuration that the system uses to add a payment pass.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var addRequestConfiguration: PKAddPaymentPassRequestConfiguration { get }
+```
+
+```objc
+@property (nonatomic, readonly) PKAddPaymentPassRequestConfiguration * addRequestConfiguration;
 ```
 
 

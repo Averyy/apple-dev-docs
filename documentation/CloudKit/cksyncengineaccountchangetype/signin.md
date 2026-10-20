@@ -1,7 +1,8 @@
 # CKSyncEngineAccountChangeType.signIn
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A change indicating a sign-in to an iCloud account.
 
@@ -20,9 +21,13 @@ A change indicating a sign-in to an iCloud account.
 case signIn
 ```
 
+```c
+CKSyncEngineAccountChangeTypeSignIn
+```
+
 #### Discussion
 
-If your app has locally-stored data when [`CKSyncEngine`](cksyncengine-4b4w9.md) notifies it about the device signing in to an iCloud account, perform one of the following actions:
+If your app has locally-stored data when [`CKSyncEngine`](../cksyncengine-4b4w9.md) notifies it about the device signing in to an iCloud account, perform one of the following actions:
 
 - Keep the local data separate from any remote data
 - Merge the local data with the account’s remote data
@@ -31,9 +36,10 @@ If your app has locally-stored data when [`CKSyncEngine`](cksyncengine-4b4w9.md)
 
 ## See Also
 
-- [CKSyncEngineAccountChangeType.signOut](cksyncengineaccountchangetype/signout.md)
+### Account change types
+- [CKSyncEngineAccountChangeType.signOut](./signout.md)
   A change indicating a sign-out of an iCloud account.
-- [CKSyncEngineAccountChangeType.switchAccounts](cksyncengineaccountchangetype/switchaccounts.md)
+- [CKSyncEngineAccountChangeType.switchAccounts](./switchaccounts.md)
   A change indicating a switch between two iCloud accounts.
 
 

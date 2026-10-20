@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the accessory.
 
@@ -9,7 +10,7 @@ The shape of the accessory.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # NSUserInterfaceLayoutOrientation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The stack view layout directions, and user interface axes for hugging priority and clipping resistance.
 
@@ -14,41 +15,46 @@ The stack view layout directions, and user interface axes for hugging priority a
 enum NSUserInterfaceLayoutOrientation
 ```
 
+```c
+enum NSUserInterfaceLayoutOrientation : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSUserInterfaceLayoutOrientation.horizontal](nsuserinterfacelayoutorientation/horizontal.md)
+- [NSUserInterfaceLayoutOrientation.horizontal](./nsuserinterfacelayoutorientation/horizontal.md)
   The horizontal orientation.
-- [NSUserInterfaceLayoutOrientation.vertical](nsuserinterfacelayoutorientation/vertical.md)
+- [NSUserInterfaceLayoutOrientation.vertical](./nsuserinterfacelayoutorientation/vertical.md)
   The vertical orientation.
 ### Initializers
-- [init?(rawValue: Int)](nsuserinterfacelayoutorientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsuserinterfacelayoutorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var orientation: NSUserInterfaceLayoutOrientation](nsstackview/orientation.md)
+### Configuring the Stack View Layout
+- [var orientation: NSUserInterfaceLayoutOrientation](./nsstackview/orientation.md)
   The horizontal or vertical layout direction of the stack view.
-- [var alignment: NSLayoutConstraint.Attribute](nsstackview/alignment.md)
+- [var alignment: NSLayoutConstraint.Attribute](./nsstackview/alignment.md)
   The view alignment within the stack view.
-- [var spacing: CGFloat](nsstackview/spacing.md)
+- [var spacing: CGFloat](./nsstackview/spacing.md)
   The minimum spacing, in points, between adjacent views in the stack view.
-- [class let useDefaultSpacing: CGFloat](nsstackview/usedefaultspacing.md)
-- [var edgeInsets: NSEdgeInsets](nsstackview/edgeinsets.md)
+- [class let useDefaultSpacing: CGFloat](./nsstackview/usedefaultspacing.md)
+- [var edgeInsets: NSEdgeInsets](./nsstackview/edgeinsets.md)
   The geometric padding, in points, inside the stack view, surrounding its views.
-- [var distribution: NSStackView.Distribution](nsstackview/distribution-swift.property.md)
+- [var distribution: NSStackView.Distribution](./nsstackview/distribution-swift.property.md)
   The spacing and sizing distribution of stacked views along the primary axis.
-- [NSStackView.Distribution](nsstackview/distribution-swift.enum.md)
-- [var hasEqualSpacing: Bool](nsstackview/hasequalspacing.md)
+- [NSStackView.Distribution](./nsstackview/distribution-swift.enum.md)
+- [var hasEqualSpacing: Bool](./nsstackview/hasequalspacing.md)
   A Boolean value that indicates whether the spacing between adjacent views should be equal to each other.
 
 

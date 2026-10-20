@@ -1,7 +1,8 @@
 # init(platformString:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -11,6 +12,8 @@
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
+
+> **Deprecated**: Use FilePath.Root.init(_: String)
 
 ## Declaration
 

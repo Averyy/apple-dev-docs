@@ -1,7 +1,8 @@
 # CVMetalTextureCacheCreate(_:_:_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new texture cache.
 
@@ -19,25 +20,30 @@ Creates a new texture cache.
 func CVMetalTextureCacheCreate(_ allocator: CFAllocator?, _ cacheAttributes: CFDictionary?, _ metalDevice: any MTLDevice, _ textureAttributes: CFDictionary?, _ cacheOut: UnsafeMutablePointer<CVMetalTextureCache?>) -> CVReturn
 ```
 
+```c
+extern CVReturn CVMetalTextureCacheCreate(CFAllocatorRef allocator, CFDictionaryRef cacheAttributes, id<MTLDevice>metalDevice, CFDictionaryRef textureAttributes, CVMetalTextureCacheRef*cacheOut);
+```
+
 #### Return Value
 
-Upon successful creation of the texture cache, this function returns [`kCVReturnSuccess`](kcvreturnsuccess.md).
+Upon successful creation of the texture cache, this function returns [`kCVReturnSuccess`](./kcvreturnsuccess.md).
 
 ## Parameters
 
 - `allocator`: The memory allocator for the texture.
-- `cacheAttributes`: A dictionary specifying options for the cache’s behavior, or `NULL` to use default options. For applicable keys and values, see [`Cache Attributes`](cvmetaltexturecache-cache-attributes.md).
+- `cacheAttributes`: A dictionary specifying options for the cache’s behavior, or `NULL` to use default options. For applicable keys and values, see [Cache Attributes](./cvmetaltexturecache-cache-attributes.md).
 - `metalDevice`: The Metal device used to create texture objects.
 - `textureAttributes`: A dictionary specifying options for creating textures from the cache, or `NULL` to use default options.
 - `cacheOut`: Upon return, contains the newly created texture cache. When this value is `NULL`, an error occurred in texture creation.
 
 ## See Also
 
-- [func CVMetalTextureCacheCreateTextureFromImage(CFAllocator?, CVMetalTextureCache, CVImageBuffer, CFDictionary?, MTLPixelFormat, Int, Int, Int, UnsafeMutablePointer<CVMetalTexture?>) -> CVReturn](cvmetaltexturecachecreatetexturefromimage(_:_:_:_:_:_:_:_:_:).md)
+### Functions
+- [func CVMetalTextureCacheCreateTextureFromImage(CFAllocator?, CVMetalTextureCache, CVImageBuffer, CFDictionary?, MTLPixelFormat, Int, Int, Int, UnsafeMutablePointer<CVMetalTexture?>) -> CVReturn](./cvmetaltexturecachecreatetexturefromimage%28_,_,_,_,_,_,_,_,_%29.md)
   Creates a Core Video Metal texture buffer from an existing image buffer.
-- [func CVMetalTextureCacheFlush(CVMetalTextureCache, CVOptionFlags)](cvmetaltexturecacheflush(_:_:).md)
+- [func CVMetalTextureCacheFlush(CVMetalTextureCache, CVOptionFlags)](./cvmetaltexturecacheflush%28_,_%29.md)
   Manually flushes the contents of the provided texture cache.
-- [func CVMetalTextureCacheGetTypeID() -> CFTypeID](cvmetaltexturecachegettypeid().md)
+- [func CVMetalTextureCacheGetTypeID() -> CFTypeID](./cvmetaltexturecachegettypeid%28%29.md)
   Returns the Core Foundation type identifier for a Core Video Metal texture cache.
 
 

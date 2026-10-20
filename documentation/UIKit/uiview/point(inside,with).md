@@ -1,16 +1,17 @@
 # point(inside:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the receiver contains the specified point.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Returns a Boolean value indicating whether the receiver contains the specified p
 func point(inside point: CGPoint, with event: UIEvent?) -> Bool
 ```
 
+```objc
+- (BOOL) pointInside:(CGPoint) point withEvent:(UIEvent *) event;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `point` is inside the receiver’s bounds; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `point` is inside the receiver’s bounds; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ func point(inside point: CGPoint, with event: UIEvent?) -> Bool
 
 ## See Also
 
-- [func hitTest(CGPoint, with: UIEvent?) -> UIView?](uiview/hittest(_:with:).md)
+### Hit-testing in a view
+- [func hitTest(CGPoint, with: UIEvent?) -> UIView?](./hittest%28_,with%29.md)
   Returns the farthest descendant in the view hierarchy of the current view, including itself, that contains the specified point.
 
 

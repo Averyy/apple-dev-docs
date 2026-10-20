@@ -1,18 +1,20 @@
 # Model I/O Structures
 
-**Framework**: Model I/O
+**Framework**: Model I/O  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [struct MDLVoxelIndexExtent](mdlvoxelindexextent.md)
-  The corner voxel indices defining a solid rectangular volume of voxels. Used by the [`voxelIndexExtent`](mdlvoxelarray/voxelindexextent.md) property and [`voxels(within:)`](mdlvoxelarray/voxels(within:).md) method.
+- [struct MDLVoxelIndexExtent](./mdlvoxelindexextent.md)
+  The corner voxel indices defining a solid rectangular volume of voxels. Used by the [`voxelIndexExtent`](./mdlvoxelarray/voxelindexextent.md) property and [`voxels(within:)`](./mdlvoxelarray/voxels%28within%29.md) method.
 
 ## See Also
 
-- [Model I/O Data Types](model-i-o-data-types.md)
-- [Model I/O Enumerations](model-i-o-enumerations.md)
-- [Model I/O Constants](model-i-o-constants.md)
+### Reference
+- [Model I/O Data Types](./model-i-o-data-types.md)
+- [Model I/O Enumerations](./model-i-o-enumerations.md)
+- [Model I/O Constants](./model-i-o-constants.md)
 
 
 ---

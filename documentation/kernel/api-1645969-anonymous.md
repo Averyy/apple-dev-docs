@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,14 +18,14 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kFWAckBusyA](1645969-anonymous/kfwackbusya.md)
-- [kFWAckBusyB](1645969-anonymous/kfwackbusyb.md)
-- [kFWAckBusyX](1645969-anonymous/kfwackbusyx.md)
-- [kFWAckComplete](1645969-anonymous/kfwackcomplete.md)
-- [kFWAckDataError](1645969-anonymous/kfwackdataerror.md)
-- [kFWAckPending](1645969-anonymous/kfwackpending.md)
-- [kFWAckTimeout](1645969-anonymous/kfwacktimeout.md)
-- [kFWAckTypeError](1645969-anonymous/kfwacktypeerror.md)
+- [kFWAckBusyA](./api-1645969-anonymous/kfwackbusya.md)
+- [kFWAckBusyB](./api-1645969-anonymous/kfwackbusyb.md)
+- [kFWAckBusyX](./api-1645969-anonymous/kfwackbusyx.md)
+- [kFWAckComplete](./api-1645969-anonymous/kfwackcomplete.md)
+- [kFWAckDataError](./api-1645969-anonymous/kfwackdataerror.md)
+- [kFWAckPending](./api-1645969-anonymous/kfwackpending.md)
+- [kFWAckTimeout](./api-1645969-anonymous/kfwacktimeout.md)
+- [kFWAckTypeError](./api-1645969-anonymous/kfwacktypeerror.md)
 
 
 ---

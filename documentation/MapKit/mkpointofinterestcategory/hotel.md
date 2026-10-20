@@ -1,7 +1,8 @@
 # hotel
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for hotels.
 
@@ -20,19 +21,24 @@ The point of interest category for hotels.
 static let hotel: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryHotel;
+```
+
 ## See Also
 
-- [static let airport: MKPointOfInterestCategory](mkpointofinterestcategory/airport.md)
+### Travel
+- [static let airport: MKPointOfInterestCategory](./airport.md)
   The point of interest category for airports.
-- [static let carRental: MKPointOfInterestCategory](mkpointofinterestcategory/carrental.md)
+- [static let carRental: MKPointOfInterestCategory](./carrental.md)
   The point of interest category for car rentals.
-- [static let conventionCenter: MKPointOfInterestCategory](mkpointofinterestcategory/conventioncenter.md)
+- [static let conventionCenter: MKPointOfInterestCategory](./conventioncenter.md)
   The point of interest category for convention centers.
-- [static let gasStation: MKPointOfInterestCategory](mkpointofinterestcategory/gasstation.md)
+- [static let gasStation: MKPointOfInterestCategory](./gasstation.md)
   The point of interest category for gas stations.
-- [static let parking: MKPointOfInterestCategory](mkpointofinterestcategory/parking.md)
+- [static let parking: MKPointOfInterestCategory](./parking.md)
   The point of interest category for parking locations.
-- [static let publicTransport: MKPointOfInterestCategory](mkpointofinterestcategory/publictransport.md)
+- [static let publicTransport: MKPointOfInterestCategory](./publictransport.md)
   The point of interest category for locations of public transportation.
 
 

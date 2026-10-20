@@ -1,7 +1,8 @@
 # XCTKVOExpectation.Handler
 
 **Framework**: XCTest  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A custom handler to call when observing a KVO change for a specified key path.
 
@@ -11,9 +12,13 @@ A custom handler to call when observing a KVO change for a specified key path.
 typealias Handler = @Sendable (Any, [AnyHashable : Any]) -> Bool
 ```
 
+```c
+typedef _Bool (^)(id, NSDictionary *) XCKeyValueObservingExpectationHandler;
+```
+
 #### Return Value
 
-Your custom handler returns [`true`](https://developer.apple.com/documentation/swift/true) if the system fulfills the expectation after the observed change; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+Your custom handler returns [`true`](../../Swift/true.md) if the system fulfills the expectation after the observed change; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -22,7 +27,8 @@ Your custom handler returns [`true`](https://developer.apple.com/documentation/s
 
 ## See Also
 
-- [var handler: XCTKVOExpectation.Handler?](xctkvoexpectation/handler-swift.property.md)
+### Custom KVO evaluation
+- [var handler: XCTKVOExpectation.Handler?](./handler-swift.property.md)
   An optional handler that performs custom evaluation of changes to the observed key path.
 
 

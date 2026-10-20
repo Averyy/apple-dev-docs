@@ -1,7 +1,8 @@
 # SendReportSuccessResponse
 
 **Framework**: External Purchase Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains the request identifier and indicates the server successfully received your external purchase report.
 
@@ -10,25 +11,26 @@ A response that contains the request identifier and indicates the server success
 
 ## Declaration
 
-```swift
+```
 object SendReportSuccessResponse
 ```
 
 #### Discussion
 
-The [`Send External Purchase Report`](send-external-purchase-report.md) endpoint returns this response when the server successfully receives a report that passes validation checks. Record the [`requestIdentifier`](requestidentifier.md) in your system. Use the  `requestIdentifer` to get the report by sending a request to the [`Retrieve External Purchase Report`](retrieve-external-purchase-report.md) endpoint.
+The [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint returns this response when the server successfully receives a report that passes validation checks. Record the [`requestIdentifier`](./requestidentifier.md) in your system. Use the  `requestIdentifer` to get the report by sending a request to the [`Retrieve External Purchase Report`](./retrieve-external-purchase-report.md) endpoint.
 
 ## Properties
 
-- `requestIdentifier` (requestIdentifier) *(required)*: The UUID that you generated to uniquely identify the report when calling the [`Send External Purchase Report`](send-external-purchase-report.md) endpoint.
+- `requestIdentifier` (requestIdentifier) *(required)*: The UUID that you generated to uniquely identify the report when calling the [`Send External Purchase Report`](./send-external-purchase-report.md) endpoint.
 
 ## See Also
 
-- [Send External Purchase Report](send-external-purchase-report.md)
+### External purchase reporting
+- [Send External Purchase Report](./send-external-purchase-report.md)
   Report required information about external purchase tokens and associated transactions.
-- [object ExternalPurchaseReport](externalpurchasereport.md)
+- [object ExternalPurchaseReport](./externalpurchasereport.md)
   The contents of an external purchase report for a single token.
-- [object SendReportErrorResponse](sendreporterrorresponse.md)
+- [object SendReportErrorResponse](./sendreporterrorresponse.md)
   An error response that indicates your external purchase report didn’t succeed, including error details for the line items in your report.
 
 

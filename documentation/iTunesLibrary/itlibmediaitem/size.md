@@ -1,7 +1,8 @@
 # size
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size in bytes of the media item on disk.
 
@@ -9,17 +10,24 @@ The size in bytes of the media item on disk.
 - Mac Catalyst 14.0+
 - macOS 10.13+
 
+> **Deprecated**: Use [`fileSize`](./filesize.md) instead.
+
 ## Declaration
 
 ```swift
 var size: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSUInteger size;
+```
+
 ## See Also
 
-- [var fileType: Int](itlibmediaitem/filetype.md)
+### Deprecated
+- [var fileType: Int](./filetype.md)
   The file type of the media item.
-- [let ITLibMediaItemPropertyFileType: String](itlibmediaitempropertyfiletype.md)
+- [let ITLibMediaItemPropertyFileType: String](../itlibmediaitempropertyfiletype.md)
   The file type of the media item.
 
 

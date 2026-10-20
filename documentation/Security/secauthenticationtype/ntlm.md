@@ -1,7 +1,8 @@
 # SecAuthenticationType.NTLM
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies Windows NT LAN Manager authentication.
 
@@ -13,6 +14,10 @@ Specifies Windows NT LAN Manager authentication.
 
 ```swift
 case NTLM
+```
+
+```c
+kSecAuthenticationTypeNTLM
 ```
 
 

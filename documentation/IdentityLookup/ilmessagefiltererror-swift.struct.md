@@ -1,7 +1,8 @@
 # ILMessageFilterError
 
 **Framework**: SMS and Call Reporting  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error type that indicates problems with network requests and responses related to IdentityLookup APIs.
 
@@ -20,38 +21,39 @@ struct ILMessageFilterError
 ## Topics
 
 ### Enumerations
-- [ILMessageFilterError.Code](ilmessagefiltererror-swift.struct/code.md)
+- [ILMessageFilterError.Code](./ilmessagefiltererror-swift.struct/code.md)
   IdentityLookup error codes.
 ### Error Codes
-- [static var invalidNetworkURL: ILMessageFilterError.Code](ilmessagefiltererror-swift.struct/invalidnetworkurl.md)
+- [static var invalidNetworkURL: ILMessageFilterError.Code](./ilmessagefiltererror-swift.struct/invalidnetworkurl.md)
   The network request URL given by the `ILMessageFilterExtensionNetworkURL` key in the app extension’s information property list file is either missing or invalid.
-- [static var networkRequestFailed: ILMessageFilterError.Code](ilmessagefiltererror-swift.struct/networkrequestfailed.md)
+- [static var networkRequestFailed: ILMessageFilterError.Code](./ilmessagefiltererror-swift.struct/networkrequestfailed.md)
   The network request failed.
-- [static var networkURLUnauthorized: ILMessageFilterError.Code](ilmessagefiltererror-swift.struct/networkurlunauthorized.md)
+- [static var networkURLUnauthorized: ILMessageFilterError.Code](./ilmessagefiltererror-swift.struct/networkurlunauthorized.md)
   The app extension’s containing app isn’t authorized to allow the app extension to defer network requests to the host specified in its information property list file.
-- [static var redundantNetworkDeferral: ILMessageFilterError.Code](ilmessagefiltererror-swift.struct/redundantnetworkdeferral.md)
+- [static var redundantNetworkDeferral: ILMessageFilterError.Code](./ilmessagefiltererror-swift.struct/redundantnetworkdeferral.md)
   The app extension tried to defer a request to its network service more than once, which isn’t allowed.
-- [static var system: ILMessageFilterError.Code](ilmessagefiltererror-swift.struct/system.md)
+- [static var system: ILMessageFilterError.Code](./ilmessagefiltererror-swift.struct/system.md)
   An unspecified system error occurred.
 ### Error Domain
-- [let ILMessageFilterErrorDomain: String](ilmessagefiltererrordomain.md)
+- [let ILMessageFilterErrorDomain: String](./ilmessagefiltererrordomain.md)
   The error domain for errors associated with the IdentityLookup APIs.
 ### Type Properties
-- [static var errorDomain: String](ilmessagefiltererror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./ilmessagefiltererror-swift.struct/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let ILMessageFilterErrorDomain: String](ilmessagefiltererrordomain.md)
+### Errors
+- [let ILMessageFilterErrorDomain: String](./ilmessagefiltererrordomain.md)
   The error domain for errors associated with the IdentityLookup APIs.
 
 

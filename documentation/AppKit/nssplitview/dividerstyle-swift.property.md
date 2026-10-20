@@ -1,7 +1,8 @@
 # dividerStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of divider between views.
 
@@ -14,19 +15,24 @@ The style of divider between views.
 var dividerStyle: NSSplitView.DividerStyle { get set }
 ```
 
+```objc
+@property NSSplitViewDividerStyle dividerStyle;
+```
+
 #### Discussion
 
-See [`NSSplitView.DividerStyle`](nssplitview/dividerstyle-swift.enum.md) for the possible values.
+See [`NSSplitView.DividerStyle`](./dividerstyle-swift.enum.md) for the possible values.
 
 ## See Also
 
-- [NSSplitView.DividerStyle](nssplitview/dividerstyle-swift.enum.md)
+### Configuring and Drawing Dividers
+- [NSSplitView.DividerStyle](./dividerstyle-swift.enum.md)
   Constants that specify the style of the split view’s dividers.
-- [var dividerColor: NSColor](nssplitview/dividercolor.md)
+- [var dividerColor: NSColor](./dividercolor.md)
   The color of the dividers that the split view draws between subviews.
-- [var dividerThickness: CGFloat](nssplitview/dividerthickness.md)
+- [var dividerThickness: CGFloat](./dividerthickness.md)
   The thickness of the dividers for the split view.
-- [func drawDivider(in: NSRect)](nssplitview/drawdivider(in:).md)
+- [func drawDivider(in: NSRect)](./drawdivider%28in%29.md)
   Draws a divider between two of the split view’s subviews.
 
 

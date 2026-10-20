@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new option set with a given value.
 
@@ -22,7 +23,7 @@ init(rawValue: UInt64)
 
 #### Discussion
 
-> ❗ **Important**: Use constants from [`CMStereoViewInterpretationOptions`](cmstereoviewinterpretationoptions.md) instead of creating a new instance with this method.
+> ❗ **Important**: Use constants from [`CMStereoViewInterpretationOptions`](../cmstereoviewinterpretationoptions.md) instead of creating a new instance with this method.
 
 ## Parameters
 

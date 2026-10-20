@@ -1,7 +1,8 @@
 # maxUDPPayloadSize(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the maximum length of a QUIC packet that you are willing to receive on a connection, in bytes.
 

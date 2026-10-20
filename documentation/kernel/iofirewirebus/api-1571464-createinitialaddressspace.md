@@ -1,14 +1,15 @@
 # createInitialAddressSpace
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOFWPseudoAddressSpace * createInitialAddressSpace(UInt32 addressLo, UInt32 len, FWReadCallback reader, FWWriteCallback writer, void *refcon);
 ```
 

@@ -1,7 +1,8 @@
 # init(named:from:duration:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action of the given name from an action file with a new duration.
 
@@ -18,6 +19,10 @@ Creates an action of the given name from an action file with a new duration.
 
 ```swift
 init?(named name: String, from url: URL, duration: TimeInterval)
+```
+
+```objc
++ (SKAction *) actionNamed:(NSString *) name fromURL:(NSURL *) url duration:(NSTimeInterval) duration;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # sampleBufferPlaybackDelegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that responds to sample buffer playback events.
 
@@ -19,9 +20,14 @@ A delegate object that responds to sample buffer playback events.
 weak var sampleBufferPlaybackDelegate: (any AVPictureInPictureSampleBufferPlaybackDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<AVPictureInPictureSampleBufferPlaybackDelegate> sampleBufferPlaybackDelegate;
+```
+
 ## See Also
 
-- [protocol AVPictureInPictureSampleBufferPlaybackDelegate](avpictureinpicturesamplebufferplaybackdelegate.md)
+### Configuring the delegate
+- [protocol AVPictureInPictureSampleBufferPlaybackDelegate](../../avpictureinpicturesamplebufferplaybackdelegate.md)
   A protocol for controlling playback from a sample buffer display layer in Picture in Picture.
 
 

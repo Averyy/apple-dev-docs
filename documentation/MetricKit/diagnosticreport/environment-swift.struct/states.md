@@ -1,7 +1,8 @@
 # states
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All states that were active leading up to this diagnostic event.
 
@@ -19,8 +20,8 @@ let states: [MetricManager.ReportedState]
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../../monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 

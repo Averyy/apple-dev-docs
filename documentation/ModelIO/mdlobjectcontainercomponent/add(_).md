@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the specified object as a child of this object.
@@ -20,15 +21,20 @@ Adds the specified object as a child of this object.
 func add(_ object: MDLObject)
 ```
 
+```objc
+- (void) addObject:(MDLObject *) object;
+```
+
 ## Parameters
 
 - `object`: The object to add.
 
 ## See Also
 
-- [var objects: [MDLObject]](mdlobjectcontainercomponent/objects.md)
+### Working with Child Objects
+- [var objects: [MDLObject]](./objects.md)
   This object’s array of child objects.
-- [func remove(MDLObject)](mdlobjectcontainercomponent/remove(_:).md)
+- [func remove(MDLObject)](./remove%28_%29.md)
   Removes the specified object from this object’s array of children.
 
 

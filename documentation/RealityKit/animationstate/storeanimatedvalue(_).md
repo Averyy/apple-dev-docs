@@ -1,9 +1,10 @@
 # storeAnimatedValue(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-See: [`storeAnimatedValue(_:)`](animationstateprotocol/storeanimatedvalue(_:).md)
+See: [`storeAnimatedValue(_:)`](../animationstateprotocol/storeanimatedvalue%28_%29.md)
 
 **Availability**:
 - iOS 18.0+

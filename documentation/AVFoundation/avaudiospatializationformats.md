@@ -1,18 +1,19 @@
 # AVAudioSpatializationFormats
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines the spatialization formats that a player item supports.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,40 +21,45 @@ A structure that defines the spatialization formats that a player item supports.
 struct AVAudioSpatializationFormats
 ```
 
+```c
+enum AVAudioSpatializationFormats : NSUInteger;
+```
+
 ## Topics
 
 ### Spatialization formats
-- [static var monoAndStereo: AVAudioSpatializationFormats](avaudiospatializationformats/monoandstereo.md)
+- [static var monoAndStereo: AVAudioSpatializationFormats](./avaudiospatializationformats/monoandstereo.md)
   A value that indicates the player item only supports mono and stereo layouts for audio spatialization.
-- [static var multichannel: AVAudioSpatializationFormats](avaudiospatializationformats/multichannel.md)
+- [static var multichannel: AVAudioSpatializationFormats](./avaudiospatializationformats/multichannel.md)
   A value that indicates the player item only supports multichannel layouts for audio spatialization.
-- [static var monoStereoAndMultichannel: AVAudioSpatializationFormats](avaudiospatializationformats/monostereoandmultichannel.md)
+- [static var monoStereoAndMultichannel: AVAudioSpatializationFormats](./avaudiospatializationformats/monostereoandmultichannel.md)
   A value that indicates the player item supports mono, stereo, and multichannel layouts for audio spatialization.
 ### Initializers
-- [init(rawValue: UInt)](avaudiospatializationformats/init(rawvalue:).md)
+- [init(rawValue: UInt)](./avaudiospatializationformats/init%28rawvalue%29.md)
   Initializes a format with a string value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var audioMix: AVAudioMix?](avplayeritem/audiomix.md)
+### Configuring audio
+- [var audioMix: AVAudioMix?](./avplayeritem/audiomix.md)
   The audio mix parameters to be applied during playback.
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avplayeritem/audiotimepitchalgorithm.md)
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./avplayeritem/audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch for scaled audio edits.
-- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avplayeritem/allowedaudiospatializationformats.md)
+- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](./avplayeritem/allowedaudiospatializationformats.md)
   The source audio channel layouts the player item supports for spatialization.
-- [var isAudioSpatializationAllowed: Bool](avplayeritem/isaudiospatializationallowed.md)
+- [var isAudioSpatializationAllowed: Bool](./avplayeritem/isaudiospatializationallowed.md)
   A Boolean value that indicates whether the player item allows spatialized audio playback.
 
 

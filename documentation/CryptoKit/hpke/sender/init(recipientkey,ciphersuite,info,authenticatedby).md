@@ -1,7 +1,8 @@
 # init(recipientKey:ciphersuite:info:authenticatedBy:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sender in authentication mode.
 
@@ -24,7 +25,7 @@ init<SK>(recipientKey: SK.PublicKey, ciphersuite: HPKE.Ciphersuite, info: Data, 
 
 The `Sender` encrypts messages in authentication mode with a symmetric encryption key. Messages also include authentication data so that the recipient can verify the authenticity of the sender’s private key.
 
-> **Note**: The system throws errors from [`HPKE.Errors`](hpke/errors.md) when it encounters them.
+> **Note**: The system throws errors from [`HPKE.Errors`](../errors.md) when it encounters them.
 
 ## Parameters
 

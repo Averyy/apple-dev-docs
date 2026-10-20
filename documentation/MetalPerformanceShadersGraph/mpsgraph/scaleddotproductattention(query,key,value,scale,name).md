@@ -1,7 +1,8 @@
 # scaledDotProductAttention(query:key:value:scale:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a scaled dot product attention (SDPA) operation (without a mask) and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a scaled dot product attention (SDPA) operation (without a mask) and ret
 
 ```swift
 func scaledDotProductAttention(query queryTensor: MPSGraphTensor, key keyTensor: MPSGraphTensor, value valueTensor: MPSGraphTensor, scale: Float, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) scaledDotProductAttentionWithQueryTensor:(MPSGraphTensor *) queryTensor keyTensor:(MPSGraphTensor *) keyTensor valueTensor:(MPSGraphTensor *) valueTensor scale:(float) scale name:(NSString *) name;
 ```
 
 #### Return Value

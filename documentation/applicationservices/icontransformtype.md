@@ -1,7 +1,8 @@
 # IconTransformType
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias IconTransformType = Int16
+```
+
+```c
+typedef SInt16 IconTransformType;
 ```
 
 

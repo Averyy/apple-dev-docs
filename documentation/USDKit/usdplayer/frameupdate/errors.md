@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Errors encountered during this update.
 

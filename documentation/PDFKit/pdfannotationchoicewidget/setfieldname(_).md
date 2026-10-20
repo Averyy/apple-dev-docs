@@ -1,17 +1,22 @@
 # setFieldName(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the internal field name associated with the widget annotation’s value.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setFieldName(_ name: String!)
+```
+
+```objc
+- (void) setFieldName:(NSString *) name;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ If the widget annotation is backed by PDF form data, it can associate an optiona
 
 ## See Also
 
-- [func fieldName() -> String!](pdfannotationchoicewidget/fieldname.md)
+### Managing the Associated Field Name
+- [func fieldName() -> String!](./fieldname%28%29.md)
   Returns the internal field name associated with the widget annotation.
 
 

@@ -1,7 +1,8 @@
 # UIAccessibilityLocationDescriptor
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An accessibility descriptor for a specific geometric point of interest within a view, for use by assistive apps.
 
@@ -18,40 +19,44 @@ An accessibility descriptor for a specific geometric point of interest within a 
 class UIAccessibilityLocationDescriptor
 ```
 
+```objc
+@interface UIAccessibilityLocationDescriptor : NSObject
+```
+
 ## Topics
 
 ### Initializing the descriptor
-- [init(attributedName: NSAttributedString, point: CGPoint, in: UIView)](uiaccessibilitylocationdescriptor/init(attributedname:point:in:).md)
+- [init(attributedName: NSAttributedString, point: CGPoint, in: UIView)](./uiaccessibilitylocationdescriptor/init%28attributedname,point,in%29.md)
   Initializes a new accessibility location descriptor using an attributed string and a specified point in a view.
-- [convenience init(name: String, point: CGPoint, in: UIView)](uiaccessibilitylocationdescriptor/init(name:point:in:).md)
+- [convenience init(name: String, point: CGPoint, in: UIView)](./uiaccessibilitylocationdescriptor/init%28name,point,in%29.md)
   Initializes a new accessibility location descriptor with a specified point in a view.
-- [convenience init(name: String, view: UIView)](uiaccessibilitylocationdescriptor/init(name:view:).md)
+- [convenience init(name: String, view: UIView)](./uiaccessibilitylocationdescriptor/init%28name,view%29.md)
   Initializes a new accessibility location descriptor with a specified view’s activation point.
 ### Getting the descriptor information
-- [var name: String](uiaccessibilitylocationdescriptor/name.md)
+- [var name: String](./uiaccessibilitylocationdescriptor/name.md)
   Returns the plaintext string representation of the name for the accessibility location descriptor.
-- [var attributedName: NSAttributedString](uiaccessibilitylocationdescriptor/attributedname.md)
+- [var attributedName: NSAttributedString](./uiaccessibilitylocationdescriptor/attributedname.md)
   Returns the attributed string representation of the name for the accessibility location descriptor.
-- [var point: CGPoint](uiaccessibilitylocationdescriptor/point.md)
+- [var point: CGPoint](./uiaccessibilitylocationdescriptor/point.md)
   Returns the geometric point of interest for the accessibility location descriptor within its associated view and in the coordinate space of the view.
-- [var view: UIView?](uiaccessibilitylocationdescriptor/view.md)
+- [var view: UIView?](./uiaccessibilitylocationdescriptor/view.md)
   Returns the view associated with the accessibility location descriptor.
 ### Initializers
-- [init(attributedName: NSAttributedString, point: CGPoint, inView: UIView)](uiaccessibilitylocationdescriptor/init(attributedname:point:inview:).md)
-- [convenience init(name: String, point: CGPoint, inView: UIView)](uiaccessibilitylocationdescriptor/init(name:point:inview:).md)
+- [init(attributedName: NSAttributedString, point: CGPoint, inView: UIView)](./uiaccessibilitylocationdescriptor/init%28attributedname,point,inview%29.md)
+- [convenience init(name: String, point: CGPoint, inView: UIView)](./uiaccessibilitylocationdescriptor/init%28name,point,inview%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

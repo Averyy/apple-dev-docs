@@ -1,14 +1,15 @@
 # st_blocks
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 blkcnt_t st_blocks;
 ```
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [sock_data_filt_flag_oob](1645973-anonymous/sock_data_filt_flag_oob.md)
-- [sock_data_filt_flag_record](1645973-anonymous/sock_data_filt_flag_record.md)
+- [sock_data_filt_flag_oob](./api-1645973-anonymous/sock_data_filt_flag_oob.md)
+- [sock_data_filt_flag_record](./api-1645973-anonymous/sock_data_filt_flag_record.md)
 
 
 ---

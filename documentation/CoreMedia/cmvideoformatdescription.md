@@ -1,7 +1,8 @@
 # CMVideoFormatDescription
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type you use to interact with video format descriptions.
 
@@ -20,21 +21,26 @@ A type you use to interact with video format descriptions.
 typealias CMVideoFormatDescription = CMFormatDescription
 ```
 
+```c
+typedef CMFormatDescriptionRef CMVideoFormatDescriptionRef;
+```
+
 ## See Also
 
-- [class CMFormatDescription](cmformatdescription.md)
+### Format Description Types
+- [class CMFormatDescription](./cmformatdescription.md)
   An object that describes a media format descriptor.
-- [typealias CMAudioFormatDescription](cmaudioformatdescription.md)
+- [typealias CMAudioFormatDescription](./cmaudioformatdescription.md)
   A type you use to interact with audio format descriptions.
-- [typealias CMClosedCaptionFormatDescription](cmclosedcaptionformatdescription.md)
+- [typealias CMClosedCaptionFormatDescription](./cmclosedcaptionformatdescription.md)
   A type you use to interact with closed caption format descriptions.
-- [typealias CMMetadataFormatDescription](cmmetadataformatdescription.md)
+- [typealias CMMetadataFormatDescription](./cmmetadataformatdescription.md)
   A type you use to interact with metadata format descriptions.
-- [typealias CMMuxedFormatDescription](cmmuxedformatdescription.md)
+- [typealias CMMuxedFormatDescription](./cmmuxedformatdescription.md)
   A type you use to interact with muxed format descriptions.
-- [typealias CMTextFormatDescription](cmtextformatdescription.md)
+- [typealias CMTextFormatDescription](./cmtextformatdescription.md)
   A type you use to interact with text format descriptions.
-- [typealias CMTimeCodeFormatDescription](cmtimecodeformatdescription.md)
+- [typealias CMTimeCodeFormatDescription](./cmtimecodeformatdescription.md)
   A type you use to interact with time code format descriptions.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether an asset that supports fragment minding is currently associated with a fragment minder.
@@ -19,6 +20,10 @@ A Boolean value that indicates whether an asset that supports fragment minding i
 
 ```swift
 var isAssociatedWithFragmentMinder: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isAssociatedWithFragmentMinder) BOOL associatedWithFragmentMinder;
 ```
 
 #### Discussion

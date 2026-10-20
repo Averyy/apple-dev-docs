@@ -1,7 +1,8 @@
 # init(address:port:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a newly-allocated `NEProxyServer` object
 
@@ -17,6 +18,10 @@ Initialize a newly-allocated `NEProxyServer` object
 
 ```swift
 init(address: String, port: Int)
+```
+
+```objc
+- (instancetype) initWithAddress:(NSString *) address port:(NSInteger) port;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # flushUpdates
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Flush all pending updates (including traits, properties, and layout) whenever the animation context changes. This includes flushing updates:
 
@@ -16,6 +17,10 @@ Flush all pending updates (including traits, properties, and layout) whenever th
 
 ```swift
 var flushUpdates: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL flushUpdates;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # dockTile
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The application’s Dock tile.
 
@@ -12,6 +13,10 @@ The application’s Dock tile.
 
 ```swift
 var dockTile: NSDockTile { get }
+```
+
+```objc
+@property (strong, readonly) NSDockTile * dockTile;
 ```
 
 

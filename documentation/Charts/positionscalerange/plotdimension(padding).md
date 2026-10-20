@@ -1,7 +1,8 @@
 # plotDimension(padding:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A scale range that fills the plot area with the given padding value at start and end.
 
@@ -19,6 +20,8 @@ A scale range that fills the plot area with the given padding value at start and
 ```swift
 static func plotDimension(padding: CGFloat) -> PlotDimensionScaleRange
 ```
+
+Available when `Self` is `PlotDimensionScaleRange`.
 
 ## Parameters
 

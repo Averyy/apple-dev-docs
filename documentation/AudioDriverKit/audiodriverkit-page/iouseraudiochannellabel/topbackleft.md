@@ -1,7 +1,8 @@
 # TopBackLeft
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The top-rear–left channel.
 
@@ -10,17 +11,18 @@ The top-rear–left channel.
 
 ## Declaration
 
-```swift
+```c
 TopBackLeft
 ```
 
 ## See Also
 
-- [TopBackCenter](audiodriverkit/iouseraudiochannellabel/topbackcenter.md)
+### Back Channels
+- [TopBackCenter](./topbackcenter.md)
   The top-rear–center channel.
-- [TopCenterSurround](audiodriverkit/iouseraudiochannellabel/topcentersurround.md)
+- [TopCenterSurround](./topcentersurround.md)
   A synonym for the top-rear–center channel.
-- [TopBackRight](audiodriverkit/iouseraudiochannellabel/topbackright.md)
+- [TopBackRight](./topbackright.md)
   The top-rear–right channel.
 
 

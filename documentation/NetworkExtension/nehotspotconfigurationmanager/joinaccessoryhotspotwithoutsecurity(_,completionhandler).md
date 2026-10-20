@@ -1,7 +1,8 @@
 # joinAccessoryHotspotWithoutSecurity(_:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+func joinAccessoryHotspotWithoutSecurity(_ accessory: ASAccessory, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func joinAccessoryHotspotWithoutSecurity(_ accessory: ASAccessory) async throws
+```
+
+```objc
+- (void) joinAccessoryHotspotWithoutSecurity:(ASAccessory *) accessory completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 

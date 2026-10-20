@@ -1,7 +1,8 @@
 # textureCoordinateTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A two-dimensional transformation to apply to the entity’s primary texture coordinates.
 
@@ -32,7 +33,7 @@ material.textureCoordinateTransform = .init(offset: SIMD2<Float>(x:0.5, y: 0.5),
                                             rotation: rotationRadians)
 ```
 
-Some entities imported from USDZ files have more than one set of UV coordinates. This property affects the primary UV set (sometimes called “UV1”). To transform the secondary UV coordinates (”UV2”), use [`secondaryTextureCoordinateTransform`](unlitmaterial/secondarytexturecoordinatetransform.md).
+Some entities imported from USDZ files have more than one set of UV coordinates. This property affects the primary UV set (sometimes called “UV1”). To transform the secondary UV coordinates (”UV2”), use [`secondaryTextureCoordinateTransform`](./secondarytexturecoordinatetransform.md).
 
 
 ---

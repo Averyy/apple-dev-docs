@@ -1,7 +1,8 @@
 # kAEPrevious
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the Apple event object before the container.
 

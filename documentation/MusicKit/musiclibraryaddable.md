@@ -1,7 +1,8 @@
 # MusicLibraryAddable
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for music items that your app can add to the music library.
 
@@ -21,16 +22,16 @@ protocol MusicLibraryAddable : MusicItem
 ## Relationships
 
 ### Inherits From
-- [MusicItem](musicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MusicItem](./musicitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [Album](album.md)
-- [MusicVideo](musicvideo.md)
-- [Playlist](playlist.md)
-- [Playlist.Entry](playlist/entry.md)
-- [Song](song.md)
-- [Track](track.md)
+- [Album](./album.md)
+- [MusicVideo](./musicvideo.md)
+- [Playlist](./playlist.md)
+- [Playlist.Entry](./playlist/entry.md)
+- [Song](./song.md)
+- [Track](./track.md)
 
 
 ---

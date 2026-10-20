@@ -1,7 +1,8 @@
 # restOfDayForecast
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The forecast from now until midnight local time.
 

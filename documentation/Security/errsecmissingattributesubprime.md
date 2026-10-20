@@ -1,7 +1,8 @@
 # errSecMissingAttributeSubprime
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A subprime attribute is missing.
 
@@ -18,6 +19,10 @@ A subprime attribute is missing.
 
 ```swift
 var errSecMissingAttributeSubprime: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeSubprime
 ```
 
 

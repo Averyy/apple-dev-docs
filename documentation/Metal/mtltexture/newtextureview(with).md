@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func newTextureView(with descriptor: MTLTextureViewDescriptor) -> (any MTLTexture)?
+```
+
+```objc
+- (id<MTLTexture>) newTextureViewWithDescriptor:(MTLTextureViewDescriptor *) descriptor;
 ```
 
 #### Discussion

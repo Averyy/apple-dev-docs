@@ -1,14 +1,15 @@
 # GameCenterLeaderboardSetLocalizationV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetLocalizationV2.Attributes
 ```
 
@@ -24,7 +25,8 @@ object GameCenterLeaderboardSetLocalizationV2.Attributes
 
 ## See Also
 
-- [object GameCenterLeaderboardSetLocalizationV2.Relationships](gamecenterleaderboardsetlocalizationv2/relationships-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardSetLocalizationV2.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 

@@ -1,7 +1,8 @@
 # CMRotationRateData
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data object that contains a single rotation-rate measurement.
 
@@ -19,36 +20,41 @@ A data object that contains a single rotation-rate measurement.
 class CMRotationRateData
 ```
 
+```objc
+@interface CMRotationRateData : CMLogItem
+```
+
 ## Topics
 
 ### Accessing Rotation Data
-- [var rotationRate: CMRotationRate](cmrotationratedata/rotationrate.md)
+- [var rotationRate: CMRotationRate](./cmrotationratedata/rotationrate.md)
   The rotation rate measured by the gyroscope.
 
 ## Relationships
 
 ### Inherits From
-- [CMLogItem](cmlogitem.md)
+- [CMLogItem](./cmlogitem.md)
 ### Inherited By
-- [CMRecordedRotationRateData](cmrecordedrotationratedata.md)
+- [CMRecordedRotationRateData](./cmrecordedrotationratedata.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var rotationRate: CMRotationRate](cmgyrodata/rotationrate.md)
+### Getting the Rotation Rate
+- [var rotationRate: CMRotationRate](./cmgyrodata/rotationrate.md)
   The rotation rate as measured by the device’s gyroscope.
-- [struct CMRotationRate](cmrotationrate.md)
+- [struct CMRotationRate](./cmrotationrate.md)
   The type of structures representing a measurement of rotation rate.
-- [class CMRecordedRotationRateData](cmrecordedrotationratedata.md)
+- [class CMRecordedRotationRateData](./cmrecordedrotationratedata.md)
   A data object that contains a single rotation-rate measurement at a specific time.
 
 

@@ -1,7 +1,8 @@
 # NSWorkspace.AccessibilityDisplayOptionsDidChangeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,13 +16,13 @@ struct AccessibilityDisplayOptionsDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](nsworkspace/accessibilitydisplayoptionsdidchangemessage/init.md)
+- [init()](./accessibilitydisplayoptionsdidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

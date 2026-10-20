@@ -1,7 +1,8 @@
 # oid
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var oid: UnsafePointer<SecAsn1Oid>!
+```
+
+```c
+const SecAsn1Oid * oid;
 ```
 
 

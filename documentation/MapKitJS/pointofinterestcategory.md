@@ -1,7 +1,8 @@
 # PointOfInterestCategory
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Point-of-interest categories.
 
@@ -10,7 +11,7 @@ Point-of-interest categories.
 
 ## Declaration
 
-```swift
+```
 const PointOfInterestCategory: Readonly<{
     readonly Airport: "Airport";
     readonly AmusementPark: "AmusementPark";
@@ -93,177 +94,178 @@ type PointOfInterestCategory =
 ## Topics
 
 ### Point-of-interest categories
-- [Airport](pointofinterestcategory/airport.md)
+- [Airport](./pointofinterestcategory/airport.md)
   The point-of-interest category for airports.
-- [AmusementPark](pointofinterestcategory/amusementpark.md)
+- [AmusementPark](./pointofinterestcategory/amusementpark.md)
   The point-of-interest category for amusement parks.
-- [Aquarium](pointofinterestcategory/aquarium.md)
+- [Aquarium](./pointofinterestcategory/aquarium.md)
   The point-of-interest category for aquariums.
-- [ATM](pointofinterestcategory/atm.md)
+- [ATM](./pointofinterestcategory/atm.md)
   The point-of-interest category for ATMs.
-- [Bakery](pointofinterestcategory/bakery.md)
+- [Bakery](./pointofinterestcategory/bakery.md)
   The point-of-interest category for bakeries.
-- [Bank](pointofinterestcategory/bank.md)
+- [Bank](./pointofinterestcategory/bank.md)
   The point-of-interest category for banks.
-- [Beach](pointofinterestcategory/beach.md)
+- [Beach](./pointofinterestcategory/beach.md)
   The point-of-interest category for beaches.
-- [Brewery](pointofinterestcategory/brewery.md)
+- [Brewery](./pointofinterestcategory/brewery.md)
   The point-of-interest category for breweries.
-- [Cafe](pointofinterestcategory/cafe.md)
+- [Cafe](./pointofinterestcategory/cafe.md)
   The point-of-interest category for cafes.
-- [Campground](pointofinterestcategory/campground.md)
+- [Campground](./pointofinterestcategory/campground.md)
   The point-of-interest category for campgrounds.
-- [CarRental](pointofinterestcategory/carrental.md)
+- [CarRental](./pointofinterestcategory/carrental.md)
   The point-of-interest category for car rentals.
-- [EVCharger](pointofinterestcategory/evcharger.md)
+- [EVCharger](./pointofinterestcategory/evcharger.md)
   The point-of-interest category for EV chargers.
-- [FireStation](pointofinterestcategory/firestation.md)
+- [FireStation](./pointofinterestcategory/firestation.md)
   The point-of-interest category for fire stations.
-- [FitnessCenter](pointofinterestcategory/fitnesscenter.md)
+- [FitnessCenter](./pointofinterestcategory/fitnesscenter.md)
   The point-of-interest category for fitness centers.
-- [FoodMarket](pointofinterestcategory/foodmarket.md)
+- [FoodMarket](./pointofinterestcategory/foodmarket.md)
   The point-of-interest category for food markets, supermarkets, grocery stores, and convenience stores.
-- [GasStation](pointofinterestcategory/gasstation.md)
+- [GasStation](./pointofinterestcategory/gasstation.md)
   The point-of-interest category for gas stations.
-- [Hospital](pointofinterestcategory/hospital.md)
+- [Hospital](./pointofinterestcategory/hospital.md)
   The point-of-interest category for hospitals.
-- [Hotel](pointofinterestcategory/hotel.md)
+- [Hotel](./pointofinterestcategory/hotel.md)
   The point-of-interest category for hotels.
-- [Laundry](pointofinterestcategory/laundry.md)
+- [Laundry](./pointofinterestcategory/laundry.md)
   The point-of-interest category for laundries.
-- [Library](pointofinterestcategory/library.md)
+- [Library](./pointofinterestcategory/library.md)
   The point-of-interest category for libraries.
-- [Marina](pointofinterestcategory/marina.md)
+- [Marina](./pointofinterestcategory/marina.md)
   The point-of-interest category for marinas.
-- [MovieTheater](pointofinterestcategory/movietheater.md)
+- [MovieTheater](./pointofinterestcategory/movietheater.md)
   The point-of-interest category for movie theaters.
-- [Museum](pointofinterestcategory/museum.md)
+- [Museum](./pointofinterestcategory/museum.md)
   The point-of-interest category for museums.
-- [NationalPark](pointofinterestcategory/nationalpark.md)
+- [NationalPark](./pointofinterestcategory/nationalpark.md)
   The point-of-interest category for national parks.
-- [Nightlife](pointofinterestcategory/nightlife.md)
+- [Nightlife](./pointofinterestcategory/nightlife.md)
   The point-of-interest category for nightlife.
-- [Park](pointofinterestcategory/park.md)
+- [Park](./pointofinterestcategory/park.md)
   The point-of-interest category for parks.
-- [Parking](pointofinterestcategory/parking.md)
+- [Parking](./pointofinterestcategory/parking.md)
   The point-of-interest category for parking locations.
-- [Pharmacy](pointofinterestcategory/pharmacy.md)
+- [Pharmacy](./pointofinterestcategory/pharmacy.md)
   The point-of-interest category for pharmacies.
-- [Police](pointofinterestcategory/police.md)
+- [Police](./pointofinterestcategory/police.md)
   The point-of-interest category for police.
-- [PostOffice](pointofinterestcategory/postoffice.md)
+- [PostOffice](./pointofinterestcategory/postoffice.md)
   The point-of-interest category for post offices.
-- [PublicTransport](pointofinterestcategory/publictransport.md)
+- [PublicTransport](./pointofinterestcategory/publictransport.md)
   The point-of-interest category for locations of public transportation.
-- [Restaurant](pointofinterestcategory/restaurant.md)
+- [Restaurant](./pointofinterestcategory/restaurant.md)
   The point-of-interest category for restaurants.
-- [Restroom](pointofinterestcategory/restroom.md)
+- [Restroom](./pointofinterestcategory/restroom.md)
   The point-of-interest category for restrooms.
-- [School](pointofinterestcategory/school.md)
+- [School](./pointofinterestcategory/school.md)
   The point-of-interest category for schools.
-- [Stadium](pointofinterestcategory/stadium.md)
+- [Stadium](./pointofinterestcategory/stadium.md)
   The point-of-interest category for stadiums.
-- [Store](pointofinterestcategory/store.md)
+- [Store](./pointofinterestcategory/store.md)
   The point-of-interest category for stores.
-- [Theater](pointofinterestcategory/theater.md)
+- [Theater](./pointofinterestcategory/theater.md)
   The point-of-interest category for theaters.
-- [University](pointofinterestcategory/university.md)
+- [University](./pointofinterestcategory/university.md)
   The point-of-interest category for universities.
-- [Winery](pointofinterestcategory/winery.md)
+- [Winery](./pointofinterestcategory/winery.md)
   The point-of-interest category for wineries.
-- [Zoo](pointofinterestcategory/zoo.md)
+- [Zoo](./pointofinterestcategory/zoo.md)
   The point-of-interest category for zoos.
 ### Enumeration Cases
-- [AnimalService](pointofinterestcategory/animalservice.md)
+- [AnimalService](./pointofinterestcategory/animalservice.md)
   The point-of-interest category for animal services.
-- [AutomotiveRepair](pointofinterestcategory/automotiverepair.md)
+- [AutomotiveRepair](./pointofinterestcategory/automotiverepair.md)
   The point-of-interest category for automotive repair services.
-- [Baseball](pointofinterestcategory/baseball.md)
+- [Baseball](./pointofinterestcategory/baseball.md)
   The point-of-interest category for baseball parks.
-- [Basketball](pointofinterestcategory/basketball.md)
+- [Basketball](./pointofinterestcategory/basketball.md)
   The point-of-interest category for basketball courts.
-- [Beauty](pointofinterestcategory/beauty.md)
+- [Beauty](./pointofinterestcategory/beauty.md)
   The point-of-interest category for beauty services.
-- [Bowling](pointofinterestcategory/bowling.md)
+- [Bowling](./pointofinterestcategory/bowling.md)
   The point-of-interest category for bowling lanes.
-- [Castle](pointofinterestcategory/castle.md)
+- [Castle](./pointofinterestcategory/castle.md)
   The point-of-interest category for castles.
-- [ConventionCenter](pointofinterestcategory/conventioncenter.md)
+- [ConventionCenter](./pointofinterestcategory/conventioncenter.md)
   The point-of-interest category for convention centers.
-- [Distillery](pointofinterestcategory/distillery.md)
+- [Distillery](./pointofinterestcategory/distillery.md)
   The point-of-interest category for distilleries.
-- [Fairground](pointofinterestcategory/fairground.md)
+- [Fairground](./pointofinterestcategory/fairground.md)
   The point-of-interest category for fairgrounds.
-- [Fishing](pointofinterestcategory/fishing.md)
+- [Fishing](./pointofinterestcategory/fishing.md)
   The point-of-interest category for fishing locations.
-- [Fortress](pointofinterestcategory/fortress.md)
+- [Fortress](./pointofinterestcategory/fortress.md)
   The point-of-interest category for fortresses.
-- [GoKart](pointofinterestcategory/gokart.md)
+- [GoKart](./pointofinterestcategory/gokart.md)
   The point-of-interest category for go-kart services.
-- [Golf](pointofinterestcategory/golf.md)
+- [Golf](./pointofinterestcategory/golf.md)
   The point-of-interest category for golf courses.
-- [Hiking](pointofinterestcategory/hiking.md)
+- [Hiking](./pointofinterestcategory/hiking.md)
   The point-of-interest category for hiking areas.
-- [Kayaking](pointofinterestcategory/kayaking.md)
+- [Kayaking](./pointofinterestcategory/kayaking.md)
   The point-of-interest category for kayaking locations.
-- [Landmark](pointofinterestcategory/landmark.md)
+- [Landmark](./pointofinterestcategory/landmark.md)
   The point-of-interest category for landmarks.
-- [Mailbox](pointofinterestcategory/mailbox.md)
+- [Mailbox](./pointofinterestcategory/mailbox.md)
   The point-of-interest category for mailboxes.
-- [MiniGolf](pointofinterestcategory/minigolf.md)
+- [MiniGolf](./pointofinterestcategory/minigolf.md)
   The point-of-interest category for mini golf courses.
-- [MusicVenue](pointofinterestcategory/musicvenue.md)
+- [MusicVenue](./pointofinterestcategory/musicvenue.md)
   The point-of-interest category for music venues.
-- [NationalMonument](pointofinterestcategory/nationalmonument.md)
+- [NationalMonument](./pointofinterestcategory/nationalmonument.md)
   The point-of-interest category for national monuments.
-- [Planetarium](pointofinterestcategory/planetarium.md)
+- [Planetarium](./pointofinterestcategory/planetarium.md)
   The point-of-interest category for planetariums.
-- [RVPark](pointofinterestcategory/rvpark.md)
+- [RVPark](./pointofinterestcategory/rvpark.md)
   The point-of-interest category for recreational vehicle (RV) parks.
-- [RockClimbing](pointofinterestcategory/rockclimbing.md)
+- [RockClimbing](./pointofinterestcategory/rockclimbing.md)
   The point-of-interest category for rock-climbing facilities.
-- [SkatePark](pointofinterestcategory/skatepark.md)
+- [SkatePark](./pointofinterestcategory/skatepark.md)
   The point-of-interest category for skate parks.
-- [Skating](pointofinterestcategory/skating.md)
+- [Skating](./pointofinterestcategory/skating.md)
   The point-of-interest category for skating facilities.
-- [Skiing](pointofinterestcategory/skiing.md)
+- [Skiing](./pointofinterestcategory/skiing.md)
   The point-of-interest category for skiing facilities.
-- [Soccer](pointofinterestcategory/soccer.md)
+- [Soccer](./pointofinterestcategory/soccer.md)
   The point-of-interest category for soccer fields.
-- [Spa](pointofinterestcategory/spa.md)
+- [Spa](./pointofinterestcategory/spa.md)
   The point-of-interest category for spas.
-- [Surfing](pointofinterestcategory/surfing.md)
+- [Surfing](./pointofinterestcategory/surfing.md)
   The point-of-interest category for surfing locations.
-- [Swimming](pointofinterestcategory/swimming.md)
+- [Swimming](./pointofinterestcategory/swimming.md)
   The point-of-interest category for swimming facilities.
-- [Tennis](pointofinterestcategory/tennis.md)
+- [Tennis](./pointofinterestcategory/tennis.md)
   The point-of-interest category for tennis facilities.
-- [Volleyball](pointofinterestcategory/volleyball.md)
+- [Volleyball](./pointofinterestcategory/volleyball.md)
   The point-of-interest category for volleyball courts.
 
 ## See Also
 
-- [const AddressCategory](addresscategory.md)
+### Enumerations
+- [const AddressCategory](./addresscategory.md)
   The categories of address components that users can search for with an address filter.
-- [const AnnotationCollisionMode](annotationcollisionmode.md)
+- [const AnnotationCollisionMode](./annotationcollisionmode.md)
   Constants that indicate the collision mode for an annotation.
-- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+- [const AnnotationDisplayPriority](./annotationdisplaypriority.md)
   Constants that indicate the priority for displaying annotations on the map.
-- [const ColorScheme](colorscheme.md)
+- [const ColorScheme](./colorscheme.md)
   Constants that indicate the color scheme of the map or a place detail.
-- [const DistanceUnitSystem](distanceunitsystem.md)
+- [const DistanceUnitSystem](./distanceunitsystem.md)
   Constants that indicate the system of measurement that displays on the map.
-- [const FeatureVisibility](featurevisibility.md)
+- [const FeatureVisibility](./featurevisibility.md)
   Constants indicating the visibility of different adaptive map features.
-- [const MapFeatureType](mapfeaturetype.md)
+- [const MapFeatureType](./mapfeaturetype.md)
   Values that describe the feature type of a point of interest.
-- [const MapLoadPriority](maploadpriority.md)
+- [const MapLoadPriority](./maploadpriority.md)
   Constants that prioritize the visibility of specific map features during map loading.
-- [const MapType](maptype.md)
+- [const MapType](./maptype.md)
   Constants representing the type of map to display.
-- [const RegionPriority](regionpriority.md)
+- [const RegionPriority](./regionpriority.md)
   A value that indicates the importance of the configured region.
-- [const TransportType](transporttype.md)
+- [const TransportType](./transporttype.md)
   The modes of transportation.
 
 

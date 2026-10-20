@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the request to generate optical flow.
 
@@ -17,6 +18,10 @@ The results of the request to generate optical flow.
 
 ```swift
 var results: [VNPixelBufferObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNPixelBufferObservation *> * results;
 ```
 
 

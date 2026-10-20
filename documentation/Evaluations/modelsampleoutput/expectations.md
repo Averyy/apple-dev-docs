@@ -1,7 +1,8 @@
 # expectations
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected behavior, for example, tool-call trajectory.
 

@@ -1,12 +1,13 @@
 # performKeyEquivalent(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Looks for a cell that has the given key equivalent and, if found, makes that cell respond as if clicked.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Looks for a cell that has the given key equivalent and, if found, makes that cel
 func performKeyEquivalent(with event: NSEvent) -> Bool
 ```
 
+```objc
+- (BOOL) performKeyEquivalent:(NSEvent *) event;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a cell in the receiver responds to the key equivalent in `theEvent`, [`false`](https://developer.apple.com/documentation/swift/false) if no cell responds.
+[`true`](../../Swift/true.md) if a cell in the receiver responds to the key equivalent in `theEvent`, [`false`](../../Swift/false.md) if no cell responds.
 
 #### Discussion
 
@@ -30,11 +35,12 @@ Your code should never send this message—it is sent when the receiver or one o
 
 ## See Also
 
-- [func acceptsFirstMouse(for: NSEvent?) -> Bool](nsmatrix/acceptsfirstmouse(for:).md)
+### Handling Event and Action Messages
+- [func acceptsFirstMouse(for: NSEvent?) -> Bool](./acceptsfirstmouse%28for%29.md)
   Returns a Boolean value indicating whether the receiver accepts the first mouse.
-- [func mouseDown(with: NSEvent)](nsmatrix/mousedown(with:).md)
+- [func mouseDown(with: NSEvent)](./mousedown%28with%29.md)
   Responds to a mouse-down event.
-- [var mouseDownFlags: Int](nsmatrix/mousedownflags.md)
+- [var mouseDownFlags: Int](./mousedownflags.md)
   The flags in effect at the mouse-down event that started the current tracking session.
 
 

@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.SliceRange
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a range.
 
@@ -31,7 +32,7 @@ You can use standard Swift range operators to specify the range in slice operati
 
 For example, the following code shows a slice operation that selects dimensions using a `SliceRange`, a Swift range, and an integer.
 
-```None
+```
     let slice = src[BNNSGraph.Builder.SliceRange(startIndex: 1,
                                                  endIndex: -1),
                     5 ... 20,
@@ -41,22 +42,22 @@ For example, the following code shows a slice operation that selects dimensions 
 ## Topics
 
 ### Initializers
-- [init(startIndex: Int, endIndex: Int)](bnnsgraph/builder/slicerange/init(startindex:endindex:).md)
+- [init(startIndex: Int, endIndex: Int)](./slicerange/init%28startindex,endindex%29.md)
   Returns a new slice range structure.
 ### Instance Properties
-- [let endIndex: Int](bnnsgraph/builder/slicerange/endindex.md)
-- [let startIndex: Int](bnnsgraph/builder/slicerange/startindex.md)
+- [let endIndex: Int](./slicerange/endindex.md)
+- [let startIndex: Int](./slicerange/startindex.md)
 ### Type Properties
-- [static let fillAll: BNNSGraph.Builder.SliceRange](bnnsgraph/builder/slicerange/fillall.md)
+- [static let fillAll: BNNSGraph.Builder.SliceRange](./slicerange/fillall.md)
   The same as the ellipsis literal `...` used to indicate unspecified dimensions of the tensor.
 
 ## Relationships
 
 ### Conforms To
-- [BNNSGraph.Builder.SliceIndex](bnnsgraph/builder/sliceindex.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BNNSGraph.Builder.SliceIndex](./sliceindex.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

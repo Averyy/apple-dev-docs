@@ -1,23 +1,28 @@
 # SCNAntialiasingMode.multisampling4X
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Enables multisample antialiasing, with four samples per screen pixel.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 case multisampling4X
+```
+
+```c
+SCNAntialiasingModeMultisampling4X
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ This is the default antialiasing mode in macOS.
 
 ## See Also
 
-- [SCNAntialiasingMode.none](scnantialiasingmode/none.md)
+### Constants
+- [SCNAntialiasingMode.none](./none.md)
   Disables antialiased rendering.
-- [SCNAntialiasingMode.multisampling2X](scnantialiasingmode/multisampling2x.md)
+- [SCNAntialiasingMode.multisampling2X](./multisampling2x.md)
   Enables multisample antialiasing, with two samples per screen pixel.
-- [SCNAntialiasingMode.multisampling8X](scnantialiasingmode/multisampling8x.md)
+- [SCNAntialiasingMode.multisampling8X](./multisampling8x.md)
   Enables multisample antialiasing, with eight samples per screen pixel.
-- [SCNAntialiasingMode.multisampling16X](scnantialiasingmode/multisampling16x.md)
+- [SCNAntialiasingMode.multisampling16X](./multisampling16x.md)
   Enables multisample antialiasing, with sixteen samples per screen pixel.
 
 

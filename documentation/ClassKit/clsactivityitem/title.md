@@ -1,7 +1,8 @@
 # title
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human readable name for the activity item.
 
@@ -18,9 +19,14 @@ A human readable name for the activity item.
 var title: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * title;
+```
+
 ## See Also
 
-- [var identifier: String](clsactivityitem/identifier.md)
+### Accessing Activity Item Information
+- [var identifier: String](./identifier.md)
   An identifier for the activity item.
 
 

@@ -1,7 +1,8 @@
 # cameraCaptureMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture mode used by the camera.
 
@@ -16,17 +17,23 @@ The capture mode used by the camera.
 var cameraCaptureMode: UIImagePickerController.CameraCaptureMode { get set }
 ```
 
+```objc
+@property (nonatomic) UIImagePickerControllerCameraCaptureMode cameraCaptureMode;
+```
+
 #### Discussion
 
-The various capture modes are listed in the [`UIImagePickerController.CameraCaptureMode`](uiimagepickercontroller/cameracapturemode-swift.enum.md) enumeration. The default value is [`UIImagePickerController.CameraCaptureMode.photo`](uiimagepickercontroller/cameracapturemode-swift.enum/photo.md).
+The various capture modes are listed in the [`UIImagePickerController.CameraCaptureMode`](./cameracapturemode-swift.enum.md) enumeration. The default value is [`UIImagePickerController.CameraCaptureMode.photo`](./cameracapturemode-swift.enum/photo.md).
 
 ## See Also
 
-- [var cameraDevice: UIImagePickerController.CameraDevice](uiimagepickercontroller/cameradevice-swift.property.md)
+### Related Documentation
+- [var cameraDevice: UIImagePickerController.CameraDevice](./cameradevice-swift.property.md)
   The camera used by the image picker controller.
-- [class func availableCaptureModes(for: UIImagePickerController.CameraDevice) -> [NSNumber]?](uiimagepickercontroller/availablecapturemodes(for:).md)
+### Configuring the camera capture mode
+- [class func availableCaptureModes(for: UIImagePickerController.CameraDevice) -> [NSNumber]?](./availablecapturemodes%28for%29.md)
   Retrieves the capture modes supported by the specified camera device.
-- [UIImagePickerController.CameraCaptureMode](uiimagepickercontroller/cameracapturemode-swift.enum.md)
+- [UIImagePickerController.CameraCaptureMode](./cameracapturemode-swift.enum.md)
   Constants that specify the category of media for the camera to capture.
 
 

@@ -1,15 +1,16 @@
 # AUScheduledAudioSliceFlags
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,57 +18,62 @@
 struct AUScheduledAudioSliceFlags
 ```
 
+```c
+enum AUScheduledAudioSliceFlags : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [static var scheduledAudioSliceFlag_BeganToRender: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_begantorender.md)
-- [static var scheduledAudioSliceFlag_BeganToRenderLate: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_begantorenderlate.md)
-- [static var scheduledAudioSliceFlag_Complete: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_complete.md)
-- [static var scheduledAudioSliceFlag_Interrupt: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_interrupt.md)
-- [static var scheduledAudioSliceFlag_InterruptAtLoop: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_interruptatloop.md)
-- [static var scheduledAudioSliceFlag_Loop: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_loop.md)
+- [static var scheduledAudioSliceFlag_BeganToRender: AUScheduledAudioSliceFlags](./auscheduledaudiosliceflags/scheduledaudiosliceflag_begantorender.md)
+- [static var scheduledAudioSliceFlag_BeganToRenderLate: AUScheduledAudioSliceFlags](./auscheduledaudiosliceflags/scheduledaudiosliceflag_begantorenderlate.md)
+- [static var scheduledAudioSliceFlag_Complete: AUScheduledAudioSliceFlags](./auscheduledaudiosliceflags/scheduledaudiosliceflag_complete.md)
+- [static var scheduledAudioSliceFlag_Interrupt: AUScheduledAudioSliceFlags](./auscheduledaudiosliceflags/scheduledaudiosliceflag_interrupt.md)
+- [static var scheduledAudioSliceFlag_InterruptAtLoop: AUScheduledAudioSliceFlags](./auscheduledaudiosliceflags/scheduledaudiosliceflag_interruptatloop.md)
+- [static var scheduledAudioSliceFlag_Loop: AUScheduledAudioSliceFlags](./auscheduledaudiosliceflags/scheduledaudiosliceflag_loop.md)
 ### Initializers
-- [init(rawValue: UInt32)](auscheduledaudiosliceflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./auscheduledaudiosliceflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct AudioUnitConnection](audiounitconnection.md)
+### Structures
+- [struct AudioUnitConnection](./audiounitconnection.md)
   An audio unit source-to-destination connection specification.
-- [struct AudioUnitEvent](audiounitevent.md)
-- [struct AudioUnitExternalBuffer](audiounitexternalbuffer.md)
+- [struct AudioUnitEvent](./audiounitevent.md)
+- [struct AudioUnitExternalBuffer](./audiounitexternalbuffer.md)
   Allows an audio unit host application to tell an audio unit to use a specified buffer for its input callback.
-- [struct AudioUnitFrequencyResponseBin](audiounitfrequencyresponsebin.md)
+- [struct AudioUnitFrequencyResponseBin](./audiounitfrequencyresponsebin.md)
   An audio unit’s audio level at a particular frequency.
-- [struct AudioUnitMeterClipping](audiounitmeterclipping.md)
+- [struct AudioUnitMeterClipping](./audiounitmeterclipping.md)
   Audio clipping that has occurred in a mixer unit.
-- [struct AudioUnitMIDIControlMapping](audiounitmidicontrolmapping.md)
-- [struct AudioUnitOtherPluginDesc](audiounitotherplugindesc.md)
-- [struct AudioUnitParameter](audiounitparameter.md)
+- [struct AudioUnitMIDIControlMapping](./audiounitmidicontrolmapping.md)
+- [struct AudioUnitOtherPluginDesc](./audiounitotherplugindesc.md)
+- [struct AudioUnitParameter](./audiounitparameter.md)
   An adjustable audio unit attribute such as volume, pitch, or filter cutoff frequency.
-- [struct AudioUnitParameterEvent](audiounitparameterevent.md)
+- [struct AudioUnitParameterEvent](./audiounitparameterevent.md)
   A scheduled change to an audio unit parameter’s value.
-- [struct AudioUnitParameterHistoryInfo](audiounitparameterhistoryinfo.md)
-  The suggested update rate and history duration for parameters which have the [`flag_PlotHistory`](audiounitparameteroptions/flag_plothistory.md) flag set.
-- [struct AudioUnitParameterNameInfo](audiounitparameternameinfo.md)
+- [struct AudioUnitParameterHistoryInfo](./audiounitparameterhistoryinfo.md)
+  The suggested update rate and history duration for parameters which have the [`flag_PlotHistory`](./audiounitparameteroptions/flag_plothistory.md) flag set.
+- [struct AudioUnitParameterNameInfo](./audiounitparameternameinfo.md)
   A short version of the name for an audio unit parameter.
-- [typealias AudioUnitParameterIDName](audiounitparameteridname.md)
+- [typealias AudioUnitParameterIDName](./audiounitparameteridname.md)
   A type definition for a data type that defines the short version of the name for an audio unit parameter.
-- [struct AudioUnitParameterInfo](audiounitparameterinfo.md)
-- [struct AudioUnitParameterOptions](audiounitparameteroptions.md)
+- [struct AudioUnitParameterInfo](./audiounitparameterinfo.md)
+- [struct AudioUnitParameterOptions](./audiounitparameteroptions.md)
   Value options for audio unit parameters.
-- [struct AudioUnitParameterStringFromValue](audiounitparameterstringfromvalue.md)
+- [struct AudioUnitParameterStringFromValue](./audiounitparameterstringfromvalue.md)
   A string representation of a parameter’s value.
 
 

@@ -1,7 +1,8 @@
 # rationale
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional rationale describing the result.
 
@@ -22,13 +23,14 @@ let rationale: String?
 
 ## See Also
 
-- [let name: String](metric/name.md)
+### Inspecting a result
+- [let name: String](./name.md)
   The name of the metric, used as the DataFrame column name.
-- [let value: Metric.Value](metric/value-swift.property.md)
+- [let value: Metric.Value](./value-swift.property.md)
   The result value of this metric.
-- [var doubleValue: Double?](metric/doublevalue.md)
+- [var doubleValue: Double?](./doublevalue.md)
   The numeric value of this metric.
-- [Metric.Value](metric/value-swift.enum.md)
+- [Metric.Value](./value-swift.enum.md)
   A metric result value.
 
 

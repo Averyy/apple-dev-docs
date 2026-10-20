@@ -1,12 +1,15 @@
 # ringStyle
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the progress ring.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,11 +17,16 @@ The style of the progress ring.
 var ringStyle: CLKComplicationRingStyle { get set }
 ```
 
+```objc
+@property (nonatomic) CLKComplicationRingStyle ringStyle;
+```
+
 ## See Also
 
-- [var imageProvider: CLKImageProvider](clkcomplicationtemplatemodularsmallringimage/imageprovider.md)
+### Setting the Complication Data
+- [var imageProvider: CLKImageProvider](./imageprovider.md)
   The image to display in the complication.
-- [var fillFraction: Float](clkcomplicationtemplatemodularsmallringimage/fillfraction.md)
+- [var fillFraction: Float](./fillfraction.md)
   The fraction of the ring to fill.
 
 

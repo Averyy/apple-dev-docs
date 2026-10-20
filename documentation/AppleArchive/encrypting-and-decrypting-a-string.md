@@ -1,6 +1,8 @@
 # Encrypting and Decrypting a String
 
-**Framework**: Apple Archive
+**Framework**: Apple Archive  
+**Role**: Sample Code  
+**Download**: [EncryptingAndDecryptingAString.zip](https://docs-assets.developer.apple.com/published/39e29ae612d8/EncryptingAndDecryptingAString.zip)
 
 Encrypt the contents of a string and save the result to the file system, then decrypt and recreate the string from the archive file using Apple Encrypted Archive.
 
@@ -10,11 +12,11 @@ Encrypt the contents of a string and save the result to the file system, then de
 
 #### Overview
 
-This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a [`String`](https://developer.apple.com/documentation/swift/string) structure using a [`SymmetricKey`](https://developer.apple.com/documentation/cryptokit/symmetrickey). The sample saves the encrypted string to the user’s temporary directory and then calls a second function that decrypts the contents of the file and recreates the string.
+This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a [`String`](../Swift/string.md) structure using a [`SymmetricKey`](../CryptoKit/symmetrickey.md). The sample saves the encrypted string to the user’s temporary directory and then calls a second function that decrypts the contents of the file and recreates the string.
 
 ##### Generate a Symmetric Key
 
-The sample imports the [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) framework to create the symmetric cryptographic key.
+The sample imports the [Apple CryptoKit](../CryptoKit/CryptoKit.md) framework to create the symmetric cryptographic key.
 
 ```swift
 let key = SymmetricKey(size: SymmetricKeySize.bits256)
@@ -34,7 +36,7 @@ try context.setSymmetricKey(key)
 
 ##### Open the Destination File Stream
 
-The destination file stream writes the encrypted file to the file system. In this case, the file stream’s mode is [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly).  The options specify that the stream creates the file if it doesn’t exist, and if the file does exist, it should be truncated to zero bytes before the stream performs any operations.
+The destination file stream writes the encrypted file to the file system. In this case, the file stream’s mode is [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md).  The options specify that the stream creates the file if it doesn’t exist, and if the file does exist, it should be truncated to zero bytes before the stream performs any operations.
 
 ```swift
 guard let destinationFileStream = ArchiveByteStream.fileStream(
@@ -96,7 +98,7 @@ try encodeStream.writeHeader(header)
 
 ##### Write the String to the Encode Stream
 
-The sample calls [`writeBlob(key:from:)`](archivestreamprotocol/writeblob(key:from:).md) to write the contents of the string as a data buffer to the encode stream. In turn, the encode stream writes to the compression stream, and then the encryption stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
+The sample calls [`writeBlob(key:from:)`](./archivestreamprotocol/writeblob%28key,from%29.md) to write the contents of the string as a data buffer to the encode stream. In turn, the encode stream writes to the compression stream, and then the encryption stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
 
 ```swift
 var mutableString = string
@@ -198,16 +200,16 @@ defer {
 
 ##### Populate the Buffer with Decoded Data
 
-The [`readBlob(key:into:)`](archivestreamprotocol/readblob(key:into:).md) function reads the decompressed data from the `DAT` field and writes it to the raw buffer pointer. The decode stream parses its input from the decryption stream that, in turn, decrypts its input from the AppleArchive file supplied by the file stream.
+The [`readBlob(key:into:)`](./archivestreamprotocol/readblob%28key,into%29.md) function reads the decompressed data from the `DAT` field and writes it to the raw buffer pointer. The decode stream parses its input from the decryption stream that, in turn, decrypts its input from the AppleArchive file supplied by the file stream.
 
 ```swift
 try decodeStream.readBlob(key: ArchiveHeader.FieldKey("DAT"),
                           into: rawBufferPtr)
 ```
 
-##### Initialize a String From the Raw Buffer Pointer
+##### Initialize a String from the Raw Buffer Pointer
 
-The sample creates a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](https://developer.apple.com/documentation/swift/cchar), and calls [`init(cString:)`](https://developer.apple.com/documentation/swift/string/init(cstring:)-2p84k) to initialize the new string.
+The sample creates a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](../Swift/cchar.md), and calls [`init(cString:)`](../Swift/string/init%28cstring%29-2p84k.md) to initialize the new string.
 
 ```swift
 let typedPtr = rawBufferPtr.bindMemory(to: CChar.self)
@@ -216,11 +218,12 @@ let decryptedString = String(cString: typedPtr.baseAddress!)
 
 ## See Also
 
-- [Encrypting and Decrypting a Single File](encrypting-and-decrypting-a-single-file.md)
+### Apple Encrypted Archive essentials
+- [Encrypting and Decrypting a Single File](./encrypting-and-decrypting-a-single-file.md)
   Encrypt a single file and save the result to the file system, then decrypt and recreate the original file from the archive file using Apple Encrypted Archive.
-- [Encrypting and Decrypting Directories](encrypting-and-decrypting-directories.md)
+- [Encrypting and Decrypting Directories](./encrypting-and-decrypting-directories.md)
   Compress and encrypt the contents of an entire directory or decompress and decrypt an archived directory  using Apple Encrypted Archive.
-- [class ArchiveEncryptionContext](archiveencryptioncontext.md)
+- [class ArchiveEncryptionContext](./archiveencryptioncontext.md)
   An object that encapsulates all parameters, keys, and data necessary to open an encrypted archive for both encryption and decryption streams.
 
 

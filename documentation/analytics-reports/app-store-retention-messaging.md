@@ -1,6 +1,7 @@
 # App Store Retention Messaging
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze how users interact with retention messages during the subscription cancellation flow.
 
@@ -10,12 +11,14 @@ The Retention Messaging report shows how users respond to retention messages dis
 
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, visionOS
-- Availability: - Daily: Every day.
+- Availability:
+
+  - Daily: Every day.
 - Completeness: Within 4 days.
 - History: On request, data is available beginning from April 20, 2026.
 - Privacy: No privacy measures are applied as the report does not include fields related to uniquely identifiable user data.
 
-The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
+The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
 #### Report Fields
 
@@ -57,9 +60,10 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 ## See Also
 
-- [App Store Discovery and Engagement](app-store-discovery-and-engagement.md)
+### App Store Engagement
+- [App Store Discovery and Engagement](./app-store-discovery-and-engagement.md)
   Analyze how users interact with your app on the App Store.
-- [App Store Web Preview](app-store-web-preview.md)
+- [App Store Web Preview](./app-store-web-preview.md)
   Analyze how people engage with your app’s product pages and in-app events on web browsers.
 
 

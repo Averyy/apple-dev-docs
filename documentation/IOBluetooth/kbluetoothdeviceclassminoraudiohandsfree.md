@@ -1,10 +1,11 @@
 # kBluetoothDeviceClassMinorAudioHandsFree
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,23 +13,28 @@
 var kBluetoothDeviceClassMinorAudioHandsFree: Int { get }
 ```
 
+```c
+kBluetoothDeviceClassMinorAudioHandsFree
+```
+
 ## See Also
 
-- [var kBluetoothDeviceClassMinorAny: Int](kbluetoothdeviceclassminorany.md)
-- [var kBluetoothDeviceClassMinorAudioCamcorder: Int](kbluetoothdeviceclassminoraudiocamcorder.md)
-- [var kBluetoothDeviceClassMinorAudioCar: Int](kbluetoothdeviceclassminoraudiocar.md)
-- [var kBluetoothDeviceClassMinorAudioGamingToy: Int](kbluetoothdeviceclassminoraudiogamingtoy.md)
-- [var kBluetoothDeviceClassMinorAudioHeadphones: Int](kbluetoothdeviceclassminoraudioheadphones.md)
-- [var kBluetoothDeviceClassMinorAudioHeadset: Int](kbluetoothdeviceclassminoraudioheadset.md)
-- [var kBluetoothDeviceClassMinorAudioHiFi: Int](kbluetoothdeviceclassminoraudiohifi.md)
-- [var kBluetoothDeviceClassMinorAudioLoudspeaker: Int](kbluetoothdeviceclassminoraudioloudspeaker.md)
-- [var kBluetoothDeviceClassMinorAudioMicrophone: Int](kbluetoothdeviceclassminoraudiomicrophone.md)
-- [var kBluetoothDeviceClassMinorAudioPortable: Int](kbluetoothdeviceclassminoraudioportable.md)
-- [var kBluetoothDeviceClassMinorAudioReserved1: Int](kbluetoothdeviceclassminoraudioreserved1.md)
-- [var kBluetoothDeviceClassMinorAudioReserved2: Int](kbluetoothdeviceclassminoraudioreserved2.md)
-- [var kBluetoothDeviceClassMinorAudioSetTopBox: Int](kbluetoothdeviceclassminoraudiosettopbox.md)
-- [var kBluetoothDeviceClassMinorAudioUnclassified: Int](kbluetoothdeviceclassminoraudiounclassified.md)
-- [var kBluetoothDeviceClassMinorAudioVCR: Int](kbluetoothdeviceclassminoraudiovcr.md)
+### Constants
+- [var kBluetoothDeviceClassMinorAny: Int](./kbluetoothdeviceclassminorany.md)
+- [var kBluetoothDeviceClassMinorAudioCamcorder: Int](./kbluetoothdeviceclassminoraudiocamcorder.md)
+- [var kBluetoothDeviceClassMinorAudioCar: Int](./kbluetoothdeviceclassminoraudiocar.md)
+- [var kBluetoothDeviceClassMinorAudioGamingToy: Int](./kbluetoothdeviceclassminoraudiogamingtoy.md)
+- [var kBluetoothDeviceClassMinorAudioHeadphones: Int](./kbluetoothdeviceclassminoraudioheadphones.md)
+- [var kBluetoothDeviceClassMinorAudioHeadset: Int](./kbluetoothdeviceclassminoraudioheadset.md)
+- [var kBluetoothDeviceClassMinorAudioHiFi: Int](./kbluetoothdeviceclassminoraudiohifi.md)
+- [var kBluetoothDeviceClassMinorAudioLoudspeaker: Int](./kbluetoothdeviceclassminoraudioloudspeaker.md)
+- [var kBluetoothDeviceClassMinorAudioMicrophone: Int](./kbluetoothdeviceclassminoraudiomicrophone.md)
+- [var kBluetoothDeviceClassMinorAudioPortable: Int](./kbluetoothdeviceclassminoraudioportable.md)
+- [var kBluetoothDeviceClassMinorAudioReserved1: Int](./kbluetoothdeviceclassminoraudioreserved1.md)
+- [var kBluetoothDeviceClassMinorAudioReserved2: Int](./kbluetoothdeviceclassminoraudioreserved2.md)
+- [var kBluetoothDeviceClassMinorAudioSetTopBox: Int](./kbluetoothdeviceclassminoraudiosettopbox.md)
+- [var kBluetoothDeviceClassMinorAudioUnclassified: Int](./kbluetoothdeviceclassminoraudiounclassified.md)
+- [var kBluetoothDeviceClassMinorAudioVCR: Int](./kbluetoothdeviceclassminoraudiovcr.md)
 
 
 ---

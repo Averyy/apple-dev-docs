@@ -1,7 +1,8 @@
 # UICellAccessory.DisplayedState
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the cell-editing states that the accessory appears in.
 
@@ -10,7 +11,7 @@ Constants that describe the cell-editing states that the accessory appears in.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,24 +22,25 @@ enum DisplayedState
 ## Topics
 
 ### States
-- [UICellAccessory.DisplayedState.always](uicellaccessory-swift.struct/displayedstate/always.md)
+- [UICellAccessory.DisplayedState.always](./displayedstate/always.md)
   The accessory always displays.
-- [UICellAccessory.DisplayedState.whenEditing](uicellaccessory-swift.struct/displayedstate/whenediting.md)
+- [UICellAccessory.DisplayedState.whenEditing](./displayedstate/whenediting.md)
   The accessory displays only when the cell is in editing mode.
-- [UICellAccessory.DisplayedState.whenNotEditing](uicellaccessory-swift.struct/displayedstate/whennotediting.md)
+- [UICellAccessory.DisplayedState.whenNotEditing](./displayedstate/whennotediting.md)
   The accessory displays only when the cell isn’t in editing mode.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/layoutdimension.md)
+### Customizing appearance and placement
+- [UICellAccessory.LayoutDimension](./layoutdimension.md)
   Constants that describe the layout dimension for the accessory.
-- [UICellAccessory.Placement](uicellaccessory-swift.struct/placement.md)
+- [UICellAccessory.Placement](./placement.md)
   Constants that describe the placement of the accessory within the cell.
 
 

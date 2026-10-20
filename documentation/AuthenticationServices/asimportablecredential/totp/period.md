@@ -1,7 +1,8 @@
 # period
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The period, in seconds, used by the generator to refresh codes.
 
@@ -20,15 +21,16 @@ var period: UInt16
 
 ## See Also
 
-- [var secret: Data](asimportablecredential/totp/secret.md)
+### Accessing TOTP properties
+- [var secret: Data](./secret.md)
   The secret associated with this generator.
-- [var digits: UInt16](asimportablecredential/totp/digits.md)
+- [var digits: UInt16](./digits.md)
   The number of digits in the code used by the generator.
-- [var algorithm: ASImportableCredential.TOTP.Algorithm](asimportablecredential/totp/algorithm-swift.property.md)
+- [var algorithm: ASImportableCredential.TOTP.Algorithm](./algorithm-swift.property.md)
   The algorithm used by the generator.
-- [ASImportableCredential.TOTP.Algorithm](asimportablecredential/totp/algorithm-swift.enum.md)
+- [ASImportableCredential.TOTP.Algorithm](./algorithm-swift.enum.md)
   An enumeration of algorithm types that all importers are expected to support.
-- [var issuer: String?](asimportablecredential/totp/issuer.md)
+- [var issuer: String?](./issuer.md)
   The issuer of the generator, if any.
 
 

@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The singleton instance for interacting with the alarm system.
 

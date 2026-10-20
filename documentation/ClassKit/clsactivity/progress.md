@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A measure of progress through the task, given as a fraction in the range [0, 1].
 
@@ -18,9 +19,13 @@ A measure of progress through the task, given as a fraction in the range [0, 1].
 var progress: Double { get set }
 ```
 
+```objc
+@property (nonatomic, assign) double progress;
+```
+
 ## Mentions
 
-- [Recording student progress](recording-student-progress.md)
+- [Recording student progress](../recording-student-progress.md)
 
 #### Discussion
 
@@ -28,7 +33,8 @@ It’s up to you to define what progress means for each task in your app. For ex
 
 ## See Also
 
-- [func addProgressRange(fromStart: Double, toEnd: Double)](clsactivity/addprogressrange(fromstart:toend:).md)
+### Measuring progress
+- [func addProgressRange(fromStart: Double, toEnd: Double)](./addprogressrange%28fromstart,toend%29.md)
   Adds a progress range to a given activity.
 
 

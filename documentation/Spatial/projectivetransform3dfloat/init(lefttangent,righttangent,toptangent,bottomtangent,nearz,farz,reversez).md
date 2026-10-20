@@ -1,7 +1,8 @@
 # init(leftTangent:rightTangent:topTangent:bottomTangent:nearZ:farZ:reverseZ:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(leftTangent: Float, rightTangent: Float, topTangent: Float, bottomTangent: Float, nearZ: Float, farZ: Float, reverseZ: Bool)
+```
+
+```c
+static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMakeFromTangents(float leftTangent, float rightTangent, float topTangent, float bottomTangent, float nearZ, float farZ, bool reverseZ);
 ```
 
 #### Return Value

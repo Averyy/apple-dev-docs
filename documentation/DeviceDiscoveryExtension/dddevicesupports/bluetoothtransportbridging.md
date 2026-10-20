@@ -1,19 +1,24 @@
 # bluetoothTransportBridging
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 static var bluetoothTransportBridging: DDDeviceSupports { get }
+```
+
+```c
+DDDeviceSupportsBluetoothTransportBridging
 ```
 
 

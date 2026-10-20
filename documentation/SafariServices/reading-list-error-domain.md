@@ -1,18 +1,20 @@
 # Reading List Error Domain
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: API Collection
 
 The domain used for Reading List errors.
 
 ## Topics
 
 ### Constants
-- [let SSReadingListErrorDomain: String](ssreadinglisterrordomain.md)
+- [let SSReadingListErrorDomain: String](./ssreadinglisterrordomain.md)
   The domain for Safari Reading List errors.
 
 ## See Also
 
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
+### Constants
+- [SSReadingListError.Code](./ssreadinglisterror/code.md)
   Messages that describe a Safari Reading List error.
 
 

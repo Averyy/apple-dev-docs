@@ -1,19 +1,20 @@
 # isEqualTo
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the dictionary with an OSObject
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool isEqualTo(const OSMetaClassBase *anObject) const;
 ```
 
@@ -31,9 +32,10 @@ If the object is of class OSDictionary, the result of isEqualTo(const OSDictiona
 
 ## See Also
 
-- [isEqualTo](osdictionary/isequalto-3c1k0.md)
+### Comparing Dictionaries
+- [isEqualTo](./isequalto-3c1k0.md)
   Compares all members of two dictionaries with isEqualTo().
-- [isEqualTo](osdictionary/isequalto-2p9or.md)
+- [isEqualTo](./isequalto-2p9or.md)
   Compares certain members of two dictionaries with isEqualTo().
 
 

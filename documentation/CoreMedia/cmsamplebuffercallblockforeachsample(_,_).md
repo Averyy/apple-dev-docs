@@ -1,7 +1,8 @@
 # CMSampleBufferCallBlockForEachSample(_:_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calls a block for every individual sample in a sample buffer.
 
@@ -20,6 +21,10 @@ Calls a block for every individual sample in a sample buffer.
 func CMSampleBufferCallBlockForEachSample(_ sbuf: CMSampleBuffer, _ handler: (CMSampleBuffer, CMItemCount) -> OSStatus) -> OSStatus
 ```
 
+```c
+extern OSStatus CMSampleBufferCallBlockForEachSample(CMSampleBufferRef sbuf, int (^)(struct opaqueCMSampleBuffer *, long)handler);
+```
+
 #### Discussion
 
 Temporary sample buffers will be created for individual samples, referring to the sample data and containing its timing, size and attachments. The block may retain these sample buffers if desired. If the block returns an error, iteration will stop immediately and the error will be returned.
@@ -33,7 +38,8 @@ If there are no sample sizes in the provided sample buffer, `kCMSampleBufferErro
 
 ## See Also
 
-- [func CMSampleBufferCallForEachSample(CMSampleBuffer, callback: (CMSampleBuffer, CMItemCount, UnsafeMutableRawPointer?) -> OSStatus, refcon: UnsafeMutableRawPointer?) -> OSStatus](cmsamplebuffercallforeachsample(_:callback:refcon:).md)
+### Processing Samples
+- [func CMSampleBufferCallForEachSample(CMSampleBuffer, callback: (CMSampleBuffer, CMItemCount, UnsafeMutableRawPointer?) -> OSStatus, refcon: UnsafeMutableRawPointer?) -> OSStatus](./cmsamplebuffercallforeachsample%28_,callback,refcon%29.md)
   Calls a function for every individual sample in a sample buffer.
 
 

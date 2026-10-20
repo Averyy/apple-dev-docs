@@ -1,7 +1,8 @@
 # outerAngle
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An angle, in degrees, that determines the size of the audio emitting area outside the cone.
 
@@ -19,17 +20,22 @@ An angle, in degrees, that determines the size of the audio emitting area outsid
 var outerAngle: Double { get }
 ```
 
+```objc
+@property (readonly) double outerAngle;
+```
+
 #### Discussion
 
-To set this property, call [`setAngles(innerAngle:outerAngle:)`](phaseconedirectivitymodelsubbandparameters/setangles(innerangle:outerangle:).md).
+To set this property, call [`setAngles(innerAngle:outerAngle:)`](./setangles%28innerangle,outerangle%29.md).
 
 ## See Also
 
-- [var innerAngle: Double](phaseconedirectivitymodelsubbandparameters/innerangle.md)
+### Shaping Directivity
+- [var innerAngle: Double](./innerangle.md)
   An angle, in degrees, that determines the size of the audio emitting area inside the cone.
-- [var outerGain: Double](phaseconedirectivitymodelsubbandparameters/outergain.md)
+- [var outerGain: Double](./outergain.md)
   The loudness of the audio the outside area of the cone emits.
-- [func setAngles(innerAngle: Double, outerAngle: Double)](phaseconedirectivitymodelsubbandparameters/setangles(innerangle:outerangle:).md)
+- [func setAngles(innerAngle: Double, outerAngle: Double)](./setangles%28innerangle,outerangle%29.md)
   Configures a focus area for cone-based sound directivity.
 
 

@@ -1,12 +1,15 @@
 # SecKeychainOpen(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Opens a keychain.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Opens a keychain.
 func SecKeychainOpen(_ pathName: UnsafePointer<CChar>, _ keychain: UnsafeMutablePointer<SecKeychain?>) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainOpen(const char *pathName, SecKeychainRef*keychain);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 

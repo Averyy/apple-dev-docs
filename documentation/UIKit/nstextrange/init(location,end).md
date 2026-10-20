@@ -1,7 +1,8 @@
 # init(location:end:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new text range with the starting and ending locations you specify.
 
@@ -19,6 +20,10 @@ Creates a new text range with the starting and ending locations you specify.
 init?(location: any NSTextLocation, end endLocation: (any NSTextLocation)?)
 ```
 
+```objc
+- (instancetype) initWithLocation:(id<NSTextLocation>) location endLocation:(id<NSTextLocation>) endLocation;
+```
+
 #### Discussion
 
 Returns an empty range when `endLocation` is `nil`.
@@ -30,7 +35,8 @@ Returns an empty range when `endLocation` is `nil`.
 
 ## See Also
 
-- [convenience init(location: any NSTextLocation)](nstextrange/init(location:).md)
+### Creating a text range
+- [convenience init(location: any NSTextLocation)](./init%28location%29.md)
   Creates a new text range at the location you specify.
 
 

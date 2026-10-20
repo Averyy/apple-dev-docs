@@ -1,7 +1,8 @@
 # SecTrustCopyExceptions(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an opaque cookie containing exceptions to trust policies that will allow future evaluations of the current certificate to succeed.
 
@@ -20,13 +21,17 @@ Returns an opaque cookie containing exceptions to trust policies that will allow
 func SecTrustCopyExceptions(_ trust: SecTrust) -> CFData?
 ```
 
+```c
+CFDataRefSecTrustCopyExceptions(SecTrustRef trust);
+```
+
 #### Return Value
 
-An opaque cookie. If you pass this cookie to [`SecTrustSetExceptions(_:_:)`](sectrustsetexceptions(_:_:).md), that function sets a list of exceptions for future processing of the certificate. Once this list of exceptions are set, a subsequent call to [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) for that certificate will return `true`.
+An opaque cookie. If you pass this cookie to [`SecTrustSetExceptions(_:_:)`](./sectrustsetexceptions%28_,_%29.md), that function sets a list of exceptions for future processing of the certificate. Once this list of exceptions are set, a subsequent call to [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) for that certificate will return `true`.
 
 #### Discussion
 
-Note: If a new error occurs that did not occur when this function was called originally, the subsequent call to [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) can still fail. For example, if the certificate expires between calling `SecTrustCopyExceptions` and [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md), evaluation will fail.
+Note: If a new error occurs that did not occur when this function was called originally, the subsequent call to [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) can still fail. For example, if the certificate expires between calling `SecTrustCopyExceptions` and [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md), evaluation will fail.
 
 #### Discussion
 
@@ -38,7 +43,8 @@ Normally this API should only be called after asking the user how to proceed, an
 
 ## See Also
 
-- [func SecTrustSetPolicies(SecTrust, CFTypeRef) -> OSStatus](sectrustsetpolicies(_:_:).md)
+### Related Documentation
+- [func SecTrustSetPolicies(SecTrust, CFTypeRef) -> OSStatus](./sectrustsetpolicies%28_,_%29.md)
   Sets the policies to use in an evaluation.
 
 

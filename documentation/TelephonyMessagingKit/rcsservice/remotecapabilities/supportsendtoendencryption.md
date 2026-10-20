@@ -1,7 +1,8 @@
 # supportsEndToEndEncryption
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the remote end supports end-to-end encryption.
 

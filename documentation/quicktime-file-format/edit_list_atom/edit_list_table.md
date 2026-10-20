@@ -1,13 +1,14 @@
 # Edit list table
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An array of 32-bit values, grouped into entries containing 3 values each.
 
 ## Mentions
 
-- [Representing encoder delay explicitly](example_representing_encoder_delay_explicitly.md)
+- [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
 #### Overview
 
@@ -27,15 +28,16 @@ An edit list table entry contains the following elements.
 
 ## See Also
 
-- [Size](edit_list_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this edit list atom.
-- [Type](edit_list_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](edit_list_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this edit list atom.
-- [Flags](edit_list_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes of space for flags.
-- [Number of entries](edit_list_atom/number_of_entries.md)
+- [Number of entries](./number_of_entries.md)
   A 32-bit integer that specifies the number of entries in the edit list atom.
 
 

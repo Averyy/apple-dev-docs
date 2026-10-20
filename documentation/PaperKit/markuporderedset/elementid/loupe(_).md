@@ -1,7 +1,8 @@
 # MarkupOrderedSet.ElementID.loupe(_:)
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A loupe markup element ID.
 
@@ -20,13 +21,14 @@ case loupe(MarkupID<LoupeMarkup>)
 
 ## See Also
 
-- [MarkupOrderedSet.ElementID.shape(_:)](markuporderedset/elementid/shape(_:).md)
+### Switching on element kind
+- [MarkupOrderedSet.ElementID.shape(_:)](./shape%28_%29.md)
   A shape markup element ID.
-- [MarkupOrderedSet.ElementID.image(_:)](markuporderedset/elementid/image(_:).md)
+- [MarkupOrderedSet.ElementID.image(_:)](./image%28_%29.md)
   An image markup element ID.
-- [MarkupOrderedSet.ElementID.link(_:)](markuporderedset/elementid/link(_:).md)
+- [MarkupOrderedSet.ElementID.link(_:)](./link%28_%29.md)
   A link markup element ID.
-- [MarkupOrderedSet.ElementID.stroke(_:)](markuporderedset/elementid/stroke(_:).md)
+- [MarkupOrderedSet.ElementID.stroke(_:)](./stroke%28_%29.md)
   A stroke element ID.
 
 

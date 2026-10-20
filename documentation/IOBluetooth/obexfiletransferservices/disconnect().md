@@ -1,17 +1,22 @@
 # disconnect()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disconnect from the remote device
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func disconnect() -> OBEXError
+```
+
+```objc
+- (OBEXError) disconnect;
 ```
 
 #### Return Value

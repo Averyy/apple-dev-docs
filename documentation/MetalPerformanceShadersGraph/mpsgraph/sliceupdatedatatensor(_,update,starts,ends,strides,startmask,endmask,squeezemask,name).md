@@ -1,7 +1,8 @@
 # sliceUpdateDataTensor(_:update:starts:ends:strides:startMask:endMask:squeezeMask:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a strided-slice update operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a strided-slice update operation and returns the result tensor.
 
 ```swift
 func sliceUpdateDataTensor(_ dataTensor: MPSGraphTensor, update updateTensor: MPSGraphTensor, starts: [NSNumber], ends: [NSNumber], strides: [NSNumber], startMask: UInt32, endMask: UInt32, squeezeMask: UInt32, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) sliceUpdateDataTensor:(MPSGraphTensor *) dataTensor updateTensor:(MPSGraphTensor *) updateTensor starts:(NSArray<NSNumber *> *) starts ends:(NSArray<NSNumber *> *) ends strides:(NSArray<NSNumber *> *) strides startMask:(uint32_t) startMask endMask:(uint32_t) endMask squeezeMask:(uint32_t) squeezeMask name:(NSString *) name;
 ```
 
 #### Return Value

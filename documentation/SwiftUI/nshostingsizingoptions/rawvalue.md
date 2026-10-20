@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value.
 
@@ -16,7 +17,8 @@ let rawValue: Int
 
 ## See Also
 
-- [init(rawValue: Int)](nshostingsizingoptions/init(rawvalue:).md)
+### Creating a sizing option
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates a new options from a raw value.
 
 

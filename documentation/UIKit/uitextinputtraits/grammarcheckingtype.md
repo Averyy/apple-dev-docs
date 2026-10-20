@@ -1,7 +1,8 @@
 # grammarCheckingType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional var grammarCheckingType: UITextGrammarCheckingType { get set }
+```
+
+```objc
+@property (nonatomic) UITextGrammarCheckingType grammarCheckingType;
 ```
 
 

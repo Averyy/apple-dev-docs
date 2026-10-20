@@ -1,7 +1,8 @@
 # mayShareFileContentKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key for a Boolean value that indicates whether cloned files and their original files may share data blocks.
 
@@ -20,37 +21,42 @@ The key for a Boolean value that indicates whether cloned files and their origin
 static let mayShareFileContentKey: URLResourceKey
 ```
 
+```c
+extern NSURLResourceKey const NSURLMayShareFileContentKey;
+```
+
 ## See Also
 
-- [static let fileAllocatedSizeKey: URLResourceKey](urlresourcekey/fileallocatedsizekey.md)
+### File keys
+- [static let fileAllocatedSizeKey: URLResourceKey](./fileallocatedsizekey.md)
   The key for the total allocated size on-disk for the file.
-- [static let fileProtectionKey: URLResourceKey](urlresourcekey/fileprotectionkey.md)
+- [static let fileProtectionKey: URLResourceKey](./fileprotectionkey.md)
   The key for the protection level of the file.
-- [struct URLFileProtection](urlfileprotection.md)
+- [struct URLFileProtection](../urlfileprotection.md)
   Protection-level values for a URL resource key.
-- [static let fileContentIdentifierKey: URLResourceKey](urlresourcekey/filecontentidentifierkey.md)
+- [static let fileContentIdentifierKey: URLResourceKey](./filecontentidentifierkey.md)
   The key for a value that APFS assigns to identify a file’s content data stream.
-- [static let fileResourceIdentifierKey: URLResourceKey](urlresourcekey/fileresourceidentifierkey.md)
+- [static let fileResourceIdentifierKey: URLResourceKey](./fileresourceidentifierkey.md)
   The key for the resource’s unique identifier.
-- [static let fileResourceTypeKey: URLResourceKey](urlresourcekey/fileresourcetypekey.md)
+- [static let fileResourceTypeKey: URLResourceKey](./fileresourcetypekey.md)
   The key for the resource’s object type.
-- [struct URLFileResourceType](urlfileresourcetype.md)
+- [struct URLFileResourceType](../urlfileresourcetype.md)
   Possible values for the type of file resource.
-- [static let fileSecurityKey: URLResourceKey](urlresourcekey/filesecuritykey.md)
+- [static let fileSecurityKey: URLResourceKey](./filesecuritykey.md)
   The key for the resource’s security information.
-- [static let fileSizeKey: URLResourceKey](urlresourcekey/filesizekey.md)
+- [static let fileSizeKey: URLResourceKey](./filesizekey.md)
   The key for the file’s size, in bytes.
-- [static let isAliasFileKey: URLResourceKey](urlresourcekey/isaliasfilekey.md)
+- [static let isAliasFileKey: URLResourceKey](./isaliasfilekey.md)
   The key for determining whether the file is an alias.
-- [static let isPackageKey: URLResourceKey](urlresourcekey/ispackagekey.md)
+- [static let isPackageKey: URLResourceKey](./ispackagekey.md)
   The key for determining whether the resource is a file package.
-- [static let isRegularFileKey: URLResourceKey](urlresourcekey/isregularfilekey.md)
+- [static let isRegularFileKey: URLResourceKey](./isregularfilekey.md)
   The key for determining whether the resource is a regular file rather than a directory or a symbolic link.
-- [static let isPurgeableKey: URLResourceKey](urlresourcekey/ispurgeablekey.md)
+- [static let isPurgeableKey: URLResourceKey](./ispurgeablekey.md)
   The key for a Boolean value that indicates whether the file system can delete a file when the system needs to free space.
-- [static let isSparseKey: URLResourceKey](urlresourcekey/issparsekey.md)
+- [static let isSparseKey: URLResourceKey](./issparsekey.md)
   The key for a Boolean value that indicates whether the file has sparse regions.
-- [static let mayHaveExtendedAttributesKey: URLResourceKey](urlresourcekey/mayhaveextendedattributeskey.md)
+- [static let mayHaveExtendedAttributesKey: URLResourceKey](./mayhaveextendedattributeskey.md)
   The key for a Boolean value that indicates whether the file has extended attributes.
 
 

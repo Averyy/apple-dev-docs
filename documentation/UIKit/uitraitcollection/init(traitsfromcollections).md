@@ -1,14 +1,17 @@
 # init(traitsFromCollections:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 17.0
+- iPadOS 8.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- tvOS - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use UITraitCollection.init(mutations:) and UITraitCollection.modifyingTraits(_:) to create and modify trait collections
 
 ## Declaration
 
@@ -18,9 +21,10 @@ init(traitsFromCollections traitCollections: [UITraitCollection])
 
 ## See Also
 
-- [func containsTraits(in: UITraitCollection?) -> Bool](uitraitcollection/containstraits(in:).md)
+### Deprecated
+- [func containsTraits(in: UITraitCollection?) -> Bool](./containstraits%28in%29.md)
   Queries whether a trait collection contains all of another trait collection’s values.
-- [init(traitsFrom: [UITraitCollection])](uitraitcollection/init(traitsfrom:).md)
+- [init(traitsFrom: [UITraitCollection])](./init%28traitsfrom%29.md)
   Creates a trait collection that consists of traits merged from a specified array of trait collections.
 
 

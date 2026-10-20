@@ -1,7 +1,8 @@
 # AutomaticDisclosureGroupStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A disclosure group style that resolves its appearance automatically based on the current context.
 
@@ -21,18 +22,18 @@ A disclosure group style that resolves its appearance automatically based on the
 
 #### Overview
 
-Use [`automatic`](disclosuregroupstyle/automatic.md) to construct this style.
+Use [`automatic`](./disclosuregroupstyle/automatic.md) to construct this style.
 
 ## Topics
 
 ### Creating the disclosure group style
-- [init()](automaticdisclosuregroupstyle/init.md)
+- [init()](./automaticdisclosuregroupstyle/init%28%29.md)
   Creates an automatic disclosure group style.
 
 ## Relationships
 
 ### Conforms To
-- [DisclosureGroupStyle](disclosuregroupstyle.md)
+- [DisclosureGroupStyle](./disclosuregroupstyle.md)
 
 
 ---

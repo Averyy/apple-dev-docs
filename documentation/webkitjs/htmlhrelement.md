@@ -1,7 +1,8 @@
 # HTMLHRElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLHRElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [align](htmlhrelement/1630206-align.md)
-- [color](htmlhrelement/2871285-color.md)
-- [noShade](htmlhrelement/1633428-noshade.md)
-- [size](htmlhrelement/1630239-size.md)
-- [width](htmlhrelement/1631467-width.md)
+- [align](./htmlhrelement/api-1630206-align.md)
+- [color](./htmlhrelement/api-2871285-color.md)
+- [noShade](./htmlhrelement/api-1633428-noshade.md)
+- [size](./htmlhrelement/api-1630239-size.md)
+- [width](./htmlhrelement/api-1631467-width.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SSReadingListError.Code
 
 **Framework**: Safari Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Messages that describe a Safari Reading List error.
 
@@ -13,34 +14,47 @@ Messages that describe a Safari Reading List error.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+enum Code
+```
+
+*Mac Catalyst*
+
 ```swift
 enum SSReadingListErrorCode
+```
+
+```c
+enum SSReadingListErrorCode : NSInteger;
 ```
 
 ## Topics
 
 ### Constants
-- [SSReadingListError.Code.urlSchemeNotAllowed](ssreadinglisterror/code/urlschemenotallowed.md)
+- [SSReadingListError.Code.urlSchemeNotAllowed](./code/urlschemenotallowed.md)
 ### Initializers
-- [init?(rawValue: Int)](ssreadinglisterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SSReadingList](ssreadinglist.md)
+### Safari Reading List
+- [class SSReadingList](../ssreadinglist.md)
   An object for adding items to a user’s Safari Reading List.
-- [let SSReadingListErrorDomain: String](ssreadinglisterrordomain.md)
+- [let SSReadingListErrorDomain: String](../ssreadinglisterrordomain.md)
   The domain for Safari Reading List errors.
-- [struct SSReadingListError](ssreadinglisterror.md)
+- [struct SSReadingListError](../ssreadinglisterror.md)
   A Safari Reading List error.
 
 

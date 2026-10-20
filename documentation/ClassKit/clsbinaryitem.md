@@ -1,7 +1,8 @@
 # CLSBinaryItem
 
 **Framework**: ClassKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Activity information that is true or false, pass or fail, yes or no.
 
@@ -18,46 +19,51 @@ Activity information that is true or false, pass or fail, yes or no.
 class CLSBinaryItem
 ```
 
+```objc
+@interface CLSBinaryItem : CLSActivityItem
+```
+
 #### Overview
 
-Use an activity item of this type to indicate a binary condition, such as whether a student passed a test or failed it. Set the [`valueType`](clsbinaryitem/valuetype.md) property to specify how the binary condition should be reported to a teacher.
+Use an activity item of this type to indicate a binary condition, such as whether a student passed a test or failed it. Set the [`valueType`](./clsbinaryitem/valuetype.md) property to specify how the binary condition should be reported to a teacher.
 
 ## Topics
 
 ### Creating Binary Activity Items
-- [init(identifier: String, title: String, type: CLSBinaryValueType)](clsbinaryitem/init(identifier:title:type:).md)
+- [init(identifier: String, title: String, type: CLSBinaryValueType)](./clsbinaryitem/init%28identifier,title,type%29.md)
   Initializes a new binary activity item of the given type.
-- [enum CLSBinaryValueType](clsbinaryvaluetype.md)
+- [enum CLSBinaryValueType](./clsbinaryvaluetype.md)
   The kinds of outcomes that a binary activity item can represent.
 ### Managing the Value
-- [var value: Bool](clsbinaryitem/value.md)
+- [var value: Bool](./clsbinaryitem/value.md)
   The value that the binary activity item takes.
-- [var valueType: CLSBinaryValueType](clsbinaryitem/valuetype.md)
+- [var valueType: CLSBinaryValueType](./clsbinaryitem/valuetype.md)
   The kind of outcome that the binary activity item represents.
 
 ## Relationships
 
 ### Inherits From
-- [CLSActivityItem](clsactivityitem.md)
+- [CLSActivityItem](./clsactivityitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Recording additional metrics about a completed task](recording-additional-metrics-about-a-completed-task.md)
+### Activity items
+- [Recording additional metrics about a completed task](./recording-additional-metrics-about-a-completed-task.md)
   Add an activity item to an activity to record additional information about a student’s attempt to complete a task.
-- [class CLSScoreItem](clsscoreitem.md)
+- [class CLSScoreItem](./clsscoreitem.md)
   Activity information that signifies a score out of a possible maximum.
-- [class CLSQuantityItem](clsquantityitem.md)
+- [class CLSQuantityItem](./clsquantityitem.md)
   Activity information that signifies a quantity.
-- [class CLSActivityItem](clsactivityitem.md)
+- [class CLSActivityItem](./clsactivityitem.md)
   An abstract base class for gathering information about an activity.
 
 

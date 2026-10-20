@@ -1,7 +1,8 @@
 # MTLBufferSparseTier.tierNone
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the buffer is not sparse.
 
@@ -17,6 +18,10 @@ Indicates that the buffer is not sparse.
 
 ```swift
 case tierNone
+```
+
+```c
+MTLBufferSparseTierNone
 ```
 
 

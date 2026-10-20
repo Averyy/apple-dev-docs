@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The coordinates of the lower-right corner of quadrilateral.
@@ -23,11 +24,12 @@ var bottomRight: NormalizedPoint { get }
 
 ## See Also
 
-- [var bottomLeft: NormalizedPoint](quadrilateralproviding/bottomleft.md)
+### Getting the normalized points
+- [var bottomLeft: NormalizedPoint](./bottomleft.md)
   The coordinates of the lower-left corner of the quadrilateral.
-- [var topLeft: NormalizedPoint](quadrilateralproviding/topleft.md)
+- [var topLeft: NormalizedPoint](./topleft.md)
   The coordinates of the upper-left corner of the quadrilateral.
-- [var topRight: NormalizedPoint](quadrilateralproviding/topright.md)
+- [var topRight: NormalizedPoint](./topright.md)
   The coordinates of the upper-right corner of the quadrilateral.
 
 

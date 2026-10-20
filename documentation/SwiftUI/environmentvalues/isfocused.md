@@ -1,7 +1,8 @@
 # isFocused
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the nearest focusable ancestor has focus.
 
@@ -26,23 +27,24 @@ If there is no focusable ancestor, the value is `false`.
 
 ## See Also
 
-- [func focused<Value>(FocusState<Value>.Binding, equals: Value) -> some View](view/focused(_:equals:).md)
+### Managing focus state
+- [func focused<Value>(FocusState<Value>.Binding, equals: Value) -> some View](../view/focused%28_,equals%29.md)
   Modifies this view by binding its focus state to the given state value.
-- [func focused(FocusState<Bool>.Binding) -> some View](view/focused(_:).md)
+- [func focused(FocusState<Bool>.Binding) -> some View](../view/focused%28_%29.md)
   Modifies this view by binding its focus state to the given Boolean state value.
-- [struct FocusState](focusstate.md)
+- [struct FocusState](../focusstate.md)
   A property wrapper type that can read and write a value that SwiftUI updates as the placement of focus within the scene changes.
-- [struct FocusedValue](focusedvalue.md)
+- [struct FocusedValue](../focusedvalue.md)
   A property wrapper for observing values from the focused view or one of its ancestors.
-- [macro Entry()](entry().md)
+- [macro Entry()](../entry%28%29.md)
   Creates an environment values, transaction, container values, or focused values entry.
-- [protocol FocusedValueKey](focusedvaluekey.md)
+- [protocol FocusedValueKey](../focusedvaluekey.md)
   A protocol for identifier types used when publishing and observing focused values.
-- [struct FocusedBinding](focusedbinding.md)
+- [struct FocusedBinding](../focusedbinding.md)
   A convenience property wrapper for observing and automatically unwrapping state bindings from the focused view or one of its ancestors.
-- [func searchFocused(FocusState<Bool>.Binding) -> some View](view/searchfocused(_:).md)
+- [func searchFocused(FocusState<Bool>.Binding) -> some View](../view/searchfocused%28_%29.md)
   Modifies this view by binding the focus state of the search field associated with the nearest searchable modifier to the given Boolean value.
-- [func searchFocused<V>(FocusState<V>.Binding, equals: V) -> some View](view/searchfocused(_:equals:).md)
+- [func searchFocused<V>(FocusState<V>.Binding, equals: V) -> some View](../view/searchfocused%28_,equals%29.md)
   Modifies this view by binding the focus state of the search field associated with the nearest searchable modifier to the given value.
 
 

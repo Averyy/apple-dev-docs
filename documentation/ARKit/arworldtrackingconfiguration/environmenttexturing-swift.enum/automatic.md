@@ -1,7 +1,8 @@
 # ARWorldTrackingConfiguration.EnvironmentTexturing.automatic
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework automatically determines when and where to generate environment textures.
 
@@ -15,11 +16,15 @@ The framework automatically determines when and where to generate environment te
 case automatic
 ```
 
+```c
+AREnvironmentTexturingAutomatic
+```
+
 #### Discussion
 
-When you use this [`environmentTexturing`](arworldtrackingconfiguration/environmenttexturing-swift.property.md) option, ARKit automatically chooses positions in the scene to generate environment textures based on the camera imagery it has collected and the other anchors you’ve placed.
+When you use this [`environmentTexturing`](../environmenttexturing-swift.property.md) option, ARKit automatically chooses positions in the scene to generate environment textures based on the camera imagery it has collected and the other anchors you’ve placed.
 
-If you display AR content using [`ARSCNView`](arscnview.md), SceneKit automatically retrieves texture maps from probe anchors and uses them to light the scene. Otherwise, use a delegate method such as [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-3qtt8.md) to find out when the probe anchor’s texture has been updated and access the [`environmentTexture`](arenvironmentprobeanchor/environmenttexture.md) property.
+If you display AR content using [`ARSCNView`](../../arscnview.md), SceneKit automatically retrieves texture maps from probe anchors and uses them to light the scene. Otherwise, use a delegate method such as [`session(_:didUpdate:)`](../../arsessiondelegate/session%28_,didupdate%29-3qtt8.md) to find out when the probe anchor’s texture has been updated and access the [`environmentTexture`](../../arenvironmentprobeanchor/environmenttexture.md) property.
 
 
 ---

@@ -1,7 +1,8 @@
 # NSFileProviderPage
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A synchronization point that represents the next batch of items to be returned by an enumerator.
 
@@ -18,6 +19,10 @@ A synchronization point that represents the next batch of items to be returned b
 struct NSFileProviderPage
 ```
 
+```c
+typedef NSData * NSFileProviderPage;
+```
+
 #### Discussion
 
 Your file provider should populate the page with the information it needs to partition items into batches and to systematically return a batch of data at a time. For example, a simple page could contain the index of the next item to return. A request to enumerate items from that page would then return a batch of items starting at the specified index.
@@ -25,30 +30,31 @@ Your file provider should populate the page with the information it needs to par
 ## Topics
 
 ### Page Constants
-- [static let initialPageSortedByName: NSData](nsfileproviderpage/initialpagesortedbyname.md)
+- [static let initialPageSortedByName: NSData](./nsfileproviderpage/initialpagesortedbyname.md)
   The initial batch of items when sorted by name.
-- [static let initialPageSortedByDate: NSData](nsfileproviderpage/initialpagesortedbydate.md)
+- [static let initialPageSortedByDate: NSData](./nsfileproviderpage/initialpagesortedbydate.md)
   The initial batch of items when sorted by date.
 ### Initializers
-- [init(Data)](nsfileproviderpage/init(_:).md)
+- [init(Data)](./nsfileproviderpage/init%28_%29.md)
   Creates a new page structure from the given raw value.
-- [init(rawValue: Data)](nsfileproviderpage/init(rawvalue:).md)
+- [init(rawValue: Data)](./nsfileproviderpage/init%28rawvalue%29.md)
   Creates a new page structure from the given raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func enumerateSearchResults(for: any NSFileProviderSearchEnumerationObserver, startingAt: NSFileProviderPage?)](nsfileprovidersearchenumerator/enumeratesearchresults(for:startingat:).md)
+### Providing search results
+- [func enumerateSearchResults(for: any NSFileProviderSearchEnumerationObserver, startingAt: NSFileProviderPage?)](./nsfileprovidersearchenumerator/enumeratesearchresults%28for,startingat%29.md)
   Enumerates search results starting from the specified page, in response to a call from the framework.
-- [protocol NSFileProviderSearchEnumerationObserver](nsfileprovidersearchenumerationobserver.md)
+- [protocol NSFileProviderSearchEnumerationObserver](./nsfileprovidersearchenumerationobserver.md)
   A protocol that defines a type that receives enumerations of search results from your extension.
 
 

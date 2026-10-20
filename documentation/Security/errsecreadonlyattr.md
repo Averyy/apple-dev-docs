@@ -1,7 +1,8 @@
 # errSecReadOnlyAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The attribute is read-only.
 
@@ -18,6 +19,10 @@ The attribute is read-only.
 
 ```swift
 var errSecReadOnlyAttr: OSStatus { get }
+```
+
+```c
+errSecReadOnlyAttr
 ```
 
 

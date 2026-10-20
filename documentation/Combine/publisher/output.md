@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The kind of values published by this publisher.
@@ -23,11 +24,12 @@ associatedtype Output
 
 ## Mentions
 
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
+- [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
 ## See Also
 
-- [associatedtype Failure : Error](publisher/failure.md)
+### Declaring supporting types
+- [associatedtype Failure : Error](./failure.md)
   The kind of errors this publisher might publish.
 
 

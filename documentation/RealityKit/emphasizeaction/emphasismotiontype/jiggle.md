@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisMotionType.jiggle
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Oscillates back and forth before returning to its original place.
 

@@ -1,7 +1,8 @@
 # TKSmartCardSlot.State.missing
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,6 +19,10 @@
 case missing
 ```
 
+```c
+TKSmartCardSlotStateMissing
+```
+
 #### Discussion
 
 The Smart Card reader slot is no longer known to the system.
@@ -26,10 +31,11 @@ The Smart Card reader slot is no longer known to the system.
 
 ## See Also
 
-- [TKSmartCardSlot.State.empty](tksmartcardslot/state-swift.enum/empty.md)
-- [TKSmartCardSlot.State.probing](tksmartcardslot/state-swift.enum/probing.md)
-- [TKSmartCardSlot.State.muteCard](tksmartcardslot/state-swift.enum/mutecard.md)
-- [TKSmartCardSlot.State.validCard](tksmartcardslot/state-swift.enum/validcard.md)
+### Constants
+- [TKSmartCardSlot.State.empty](./empty.md)
+- [TKSmartCardSlot.State.probing](./probing.md)
+- [TKSmartCardSlot.State.muteCard](./mutecard.md)
+- [TKSmartCardSlot.State.validCard](./validcard.md)
 
 
 ---

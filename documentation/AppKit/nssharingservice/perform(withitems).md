@@ -1,7 +1,8 @@
 # perform(withItems:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Manually performs the service on the provided items.
 
@@ -14,6 +15,10 @@ Manually performs the service on the provided items.
 func perform(withItems items: [Any])
 ```
 
+```objc
+- (void) performWithItems:(NSArray *) items;
+```
+
 #### Discussion
 
 In most cases this will display a sharing window.
@@ -24,7 +29,8 @@ In most cases this will display a sharing window.
 
 ## See Also
 
-- [func canPerform(withItems: [Any]?) -> Bool](nssharingservice/canperform(withitems:).md)
+### Related Documentation
+- [func canPerform(withItems: [Any]?) -> Bool](./canperform%28withitems%29.md)
   Returns whether the service can share all the specified items.
 
 

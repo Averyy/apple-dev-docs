@@ -1,7 +1,8 @@
 # Locations
 
 **Framework**: Roster API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A list of locations, with a token for pagination.
 
@@ -10,23 +11,24 @@ A list of locations, with a token for pagination.
 
 ## Declaration
 
-```swift
+```
 object Locations
 ```
 
 ## Properties
 
-- `locations` ([Location]): A list of [`Location`](location.md) objects.
+- `locations` ([Location]): A list of [`Location`](./location.md) objects.
 - `moreToFollow` (boolean): A flag that indicates whether there are more locations. If `true`, use the `nextPageToken` to request another list from the remaining locations.
-- `nextPageToken` (string): A token to request additional locations, if any. Use this as the `nextPageToken` parameter for the [`List locations`](returns-a-list-of-locations-for-an-apple-school-manager-organization.md) request.
+- `nextPageToken` (string): A token to request additional locations, if any. Use this as the `nextPageToken` parameter for the [`List locations`](./returns-a-list-of-locations-for-an-apple-school-manager-organization.md) request.
 
 ## See Also
 
-- [Read a location](returns-a-specific-location-in-an-apple-school-manager-organization.md)
+### Information about locations
+- [Read a location](./returns-a-specific-location-in-an-apple-school-manager-organization.md)
   Returns a specific location in an Apple School Manager organization.
-- [object Location](location.md)
+- [object Location](./location.md)
   A location in an Apple School Manager organization.
-- [List locations](returns-a-list-of-locations-for-an-apple-school-manager-organization.md)
+- [List locations](./returns-a-list-of-locations-for-an-apple-school-manager-organization.md)
   Returns a list of locations in an Apple School Manager organization.
 
 

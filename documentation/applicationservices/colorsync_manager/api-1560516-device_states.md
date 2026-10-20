@@ -11,12 +11,12 @@ Specify possible values for device states accessible by the functions `CMGetDevi
 ## Topics
 
 ### Constants
-- [var cmDeviceStateDefault: Int](cmdevicestatedefault.md)
-- [var cmDeviceStateOffline: Int](cmdevicestateoffline.md)
-- [var cmDeviceStateBusy: Int](cmdevicestatebusy.md)
-- [var cmDeviceStateForceNotify: Int](cmdevicestateforcenotify.md)
-- [var cmDeviceStateDeviceRsvdBits: Int](cmdevicestatedevicersvdbits.md)
-- [var cmDeviceStateAppleRsvdBits: Int](cmdevicestateapplersvdbits.md)
+- [var cmDeviceStateDefault: Int](../cmdevicestatedefault.md)
+- [var cmDeviceStateOffline: Int](../cmdevicestateoffline.md)
+- [var cmDeviceStateBusy: Int](../cmdevicestatebusy.md)
+- [var cmDeviceStateForceNotify: Int](../cmdevicestateforcenotify.md)
+- [var cmDeviceStateDeviceRsvdBits: Int](../cmdevicestatedevicersvdbits.md)
+- [var cmDeviceStateAppleRsvdBits: Int](../cmdevicestateapplersvdbits.md)
 
 
 ---

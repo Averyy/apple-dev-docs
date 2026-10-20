@@ -1,37 +1,39 @@
 # checkCompletionExists
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value indicating whether to check for the existence of a completion action.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t checkCompletionExists;
 ```
 
 #### Discussion
 
-If the value of this field is a positive unsigned integer, the [`completion`](iouserclientmethodarguments/completion.md) field must be set to a valid action. If the value is `0`, the [`completion`](iouserclientmethodarguments/completion.md) field must be `NULL`. If the value of this field is -1U, the [`completion`](iouserclientmethodarguments/completion.md) field is ignored.
+If the value of this field is a positive unsigned integer, the [`completion`](../iouserclientmethodarguments/completion.md) field must be set to a valid action. If the value is `0`, the [`completion`](../iouserclientmethodarguments/completion.md) field must be `NULL`. If the value of this field is -1U, the [`completion`](../iouserclientmethodarguments/completion.md) field is ignored.
 
 ## See Also
 
-- [function](iouserclientmethoddispatch/function.md)
+### Getting the Dispatch Properties
+- [function](./function.md)
   The function to call after validating all of the specified values.
-- [checkScalarInputCount](iouserclientmethoddispatch/checkscalarinputcount.md)
+- [checkScalarInputCount](./checkscalarinputcount.md)
   The expected number of scalar inputs.
-- [checkStructureInputSize](iouserclientmethoddispatch/checkstructureinputsize.md)
+- [checkStructureInputSize](./checkstructureinputsize.md)
   The expected size of the scalar inputs.
-- [checkScalarOutputCount](iouserclientmethoddispatch/checkscalaroutputcount.md)
+- [checkScalarOutputCount](./checkscalaroutputcount.md)
   The expected number of scalar outputs.
-- [checkStructureOutputSize](iouserclientmethoddispatch/checkstructureoutputsize.md)
+- [checkStructureOutputSize](./checkstructureoutputsize.md)
   The expected size of the scalar outputs.
 
 

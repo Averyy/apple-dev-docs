@@ -1,7 +1,8 @@
 # subRegions(ofCategory:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An array of the sub-regions, matching the specified category of the region.
 

@@ -1,7 +1,8 @@
 # SubscriptionSubmissionCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionSubmissionCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionSubmissionCreateRequest.Data.Relationships.Subscription](subscriptionsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)
+- [object SubscriptionSubmissionCreateRequest.Data.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
 
 ## Properties
 

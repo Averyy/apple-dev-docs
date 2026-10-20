@@ -1,7 +1,8 @@
 # SkeletonResource.BlendMask
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes a single blend mask for selective animation control.
 
@@ -41,29 +42,30 @@ let handOnlyMask = BlendMask(
 ## Topics
 
 ### Creating a blend mask
-- [init(name: String, jointWeights: [String : Float])](skeletonresource/blendmask/init(name:jointweights:).md)
+- [init(name: String, jointWeights: [String : Float])](./blendmask/init%28name,jointweights%29.md)
   Creates a blend mask with the specified parameters.
 ### Accessing mask values
-- [var jointWeights: [String : Float]](skeletonresource/blendmask/jointweights.md)
+- [var jointWeights: [String : Float]](./blendmask/jointweights.md)
   Dictionary of joint weights keyed by joint name. Each weight corresponds to a joint in the skeleton, controlling how much that joint is affected by animations using this mask. Values range from 0.0 (no effect) to 1.0 (full effect). Joints not present in the dictionary are treated as having weight 1.0 (full animation effect).
-- [var id: String](skeletonresource/blendmask/id.md)
+- [var id: String](./blendmask/id.md)
   The identifier of the blend mask, derived from its name.
 ### Instance Properties
-- [let name: String](skeletonresource/blendmask/name.md)
+- [let name: String](./blendmask/name.md)
   The name of the blend mask. Must be unique within the skeleton. Used to identify and reference specific masks within animation systems.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let animationEvaluation: SkeletonResource.AnimationEvaluation](skeletonresource/animationevaluation-swift.property.md)
+### Configuring animation evaluation
+- [let animationEvaluation: SkeletonResource.AnimationEvaluation](./animationevaluation-swift.property.md)
   Animation-evaluation data baked into this resource at construction time.
-- [SkeletonResource.AnimationEvaluation](skeletonresource/animationevaluation-swift.struct.md)
+- [SkeletonResource.AnimationEvaluation](./animationevaluation-swift.struct.md)
   A bundle of additional animation-related skeletal data the runtime consumes when evaluating animations against this skeleton.
 
 

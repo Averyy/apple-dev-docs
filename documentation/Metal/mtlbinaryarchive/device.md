@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The Metal device object that created the binary archive.
@@ -20,9 +21,14 @@ The Metal device object that created the binary archive.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (readonly) id<MTLDevice> device;
+```
+
 ## See Also
 
-- [var label: String?](mtlbinaryarchive/label.md)
+### Identifying the archive
+- [var label: String?](./label.md)
   A string that identifies the library.
 
 

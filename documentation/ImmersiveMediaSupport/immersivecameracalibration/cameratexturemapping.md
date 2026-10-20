@@ -1,7 +1,8 @@
 # ImmersiveCameraCalibration.CameraTextureMapping
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that holds the matrices used for video frame texture mapping on the camera lens geometry.
 
@@ -21,24 +22,25 @@ struct CameraTextureMapping
 ## Topics
 
 ### Initializers
-- [init(left: matrix_float3x3, right: matrix_float3x3)](immersivecameracalibration/cameratexturemapping/init(left:right:).md)
+- [init(left: matrix_float3x3, right: matrix_float3x3)](./cameratexturemapping/init%28left,right%29.md)
 ### Type Properties
-- [static let identity: ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/cameratexturemapping/identity.md)
+- [static let identity: ImmersiveCameraCalibration.CameraTextureMapping](./cameratexturemapping/identity.md)
   The default camera texture matrix for the immersive camera.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/cameraorigin.md)
+### Calibration geometry
+- [ImmersiveCameraCalibration.CameraOrigin](./cameraorigin.md)
   A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the person’s eye.
-- [class ImmersiveCameraMeshCalibration](immersivecamerameshcalibration.md)
+- [class ImmersiveCameraMeshCalibration](../immersivecamerameshcalibration.md)
   Calibration mesh geometry based on USDZ data.
 
 

@@ -1,7 +1,8 @@
 # protocolFamily
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -17,13 +18,18 @@
 var protocolFamily: sa_family_t { get }
 ```
 
+```objc
+@property (readonly) sa_family_t protocolFamily;
+```
+
 ## See Also
 
-- [var data: Data](nepacket/data.md)
-- [var metadata: NEFlowMetaData?](nepacket/metadata.md)
-- [var direction: NETrafficDirection](nepacket/direction.md)
+### Accessing packet properties
+- [var data: Data](./data.md)
+- [var metadata: NEFlowMetaData?](./metadata.md)
+- [var direction: NETrafficDirection](./direction.md)
   The direction of the packet.
-- [enum NETrafficDirection](netrafficdirection.md)
+- [enum NETrafficDirection](../netrafficdirection.md)
   A type to represent the direction of network traffic.
 
 

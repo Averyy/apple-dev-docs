@@ -1,7 +1,8 @@
 # AVVideoScalingModeKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to retrieve the video scaling mode from a dictionary.
 
@@ -19,15 +20,20 @@ A key to retrieve the video scaling mode from a dictionary.
 let AVVideoScalingModeKey: String
 ```
 
+```c
+extern NSString * const AVVideoScalingModeKey;
+```
+
 ## See Also
 
-- [let AVVideoScalingModeFit: String](avvideoscalingmodefit.md)
+### Scaling mode
+- [let AVVideoScalingModeFit: String](./avvideoscalingmodefit.md)
   The string identifier for scaling a video to fit the surrounding view’s dimensions.
-- [let AVVideoScalingModeResize: String](avvideoscalingmoderesize.md)
+- [let AVVideoScalingModeResize: String](./avvideoscalingmoderesize.md)
   The string identifier for resizing a video to fit the surrounding view’s dimensions.
-- [let AVVideoScalingModeResizeAspect: String](avvideoscalingmoderesizeaspect.md)
+- [let AVVideoScalingModeResizeAspect: String](./avvideoscalingmoderesizeaspect.md)
   The string identifier for resizing a video to its surrounding view’s shorter dimension while preserving its aspect ratio.
-- [let AVVideoScalingModeResizeAspectFill: String](avvideoscalingmoderesizeaspectfill.md)
+- [let AVVideoScalingModeResizeAspectFill: String](./avvideoscalingmoderesizeaspectfill.md)
   The string identifier for resizing a video to fit the surrounding view’s longer dimension while preserving aspect ratio.
 
 

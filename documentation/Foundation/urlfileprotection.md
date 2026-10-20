@@ -1,7 +1,8 @@
 # URLFileProtection
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Protection-level values for a URL resource key.
 
@@ -20,49 +21,54 @@ Protection-level values for a URL resource key.
 struct URLFileProtection
 ```
 
+```c
+typedef NSString * NSURLFileProtectionType;
+```
+
 #### Overview
 
-These are values for the [`URLResourceKey`](urlresourcekey.md) key [`fileProtectionKey`](urlresourcekey/fileprotectionkey.md).
+These are values for the [`URLResourceKey`](./urlresourcekey.md) key [`fileProtectionKey`](./urlresourcekey/fileprotectionkey.md).
 
 ## Topics
 
 ### Creating a URL File Protection Type
-- [init(rawValue: String)](urlfileprotection/init(rawvalue:).md)
+- [init(rawValue: String)](./urlfileprotection/init%28rawvalue%29.md)
   Creates a URL file protection type value.
 ### Protection levels
-- [static let complete: URLFileProtection](urlfileprotection/complete.md)
+- [static let complete: URLFileProtection](./urlfileprotection/complete.md)
   An option that instructs the system to store the file in an encrypted format on-disk that your app can’t access for reading or writing to while the device is locked or booting.
-- [static let completeUnlessOpen: URLFileProtection](urlfileprotection/completeunlessopen.md)
+- [static let completeUnlessOpen: URLFileProtection](./urlfileprotection/completeunlessopen.md)
   An option that instructs the system to store the file in an encrypted format on-disk after it closes.
-- [static let completeUntilFirstUserAuthentication: URLFileProtection](urlfileprotection/completeuntilfirstuserauthentication.md)
+- [static let completeUntilFirstUserAuthentication: URLFileProtection](./urlfileprotection/completeuntilfirstuserauthentication.md)
   An option that instructs the system to store the file in an encrypted format on-disk that your app can’t access until after the device boots.
-- [static let completeWhenUserInactive: URLFileProtection](urlfileprotection/completewhenuserinactive.md)
+- [static let completeWhenUserInactive: URLFileProtection](./urlfileprotection/completewhenuserinactive.md)
   An option that instructs the system to store the file in an encrypted format on-disk that your app can access only after device unlock and before expiration.
-- [static let none: URLFileProtection](urlfileprotection/none.md)
+- [static let none: URLFileProtection](./urlfileprotection/none.md)
   An option that indicates the file has no special protections associated with it.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions.md)
+### Supporting Types
+- [FileManager.DirectoryEnumerationOptions](./filemanager/directoryenumerationoptions.md)
   Options for enumerating the contents of directories.
-- [FileManager.SearchPathDirectory](filemanager/searchpathdirectory.md)
+- [FileManager.SearchPathDirectory](./filemanager/searchpathdirectory.md)
   The location of significant directories.
-- [FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask.md)
+- [FileManager.SearchPathDomainMask](./filemanager/searchpathdomainmask.md)
   Domain constants specifying base locations to use when you search for significant directories.
-- [struct FileAttributeKey](fileattributekey.md)
+- [struct FileAttributeKey](./fileattributekey.md)
   Keys in dictionaries used to get and set file attributes.
-- [struct FileAttributeType](fileattributetype.md)
+- [struct FileAttributeType](./fileattributetype.md)
   Values representing a file’s type attribute.
-- [struct FileProtectionType](fileprotectiontype.md)
+- [struct FileProtectionType](./fileprotectiontype.md)
   Protection level values that can be associated with a file attribute key.
 
 

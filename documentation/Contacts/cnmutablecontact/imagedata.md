@@ -1,7 +1,8 @@
 # imageData
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The profile picture of a contact.
 
@@ -17,6 +18,18 @@ The profile picture of a contact.
 
 ```swift
 var imageData: Data? { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSData * imageData;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSData * imageData;
 ```
 
 #### Discussion

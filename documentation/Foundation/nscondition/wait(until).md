@@ -1,7 +1,8 @@
 # wait(until:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Blocks the current thread until the condition is signaled or the specified time limit is reached.
 
@@ -20,9 +21,13 @@ Blocks the current thread until the condition is signaled or the specified time 
 func wait(until limit: Date) -> Bool
 ```
 
+```objc
+- (BOOL) waitUntilDate:(NSDate *) limit;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the condition was signaled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if the time limit was reached.
+[`true`](../../Swift/true.md) if the condition was signaled; otherwise, [`false`](../../Swift/false.md) if the time limit was reached.
 
 #### Discussion
 
@@ -34,9 +39,11 @@ You must lock the receiver prior to calling this method.
 
 ## See Also
 
-- [func lock()](nslocking/lock.md)
+### Related Documentation
+- [func lock()](../nslocking/lock%28%29.md)
   Attempts to acquire a lock, blocking a thread’s execution until the lock can be acquired.
-- [func wait()](nscondition/wait.md)
+### Waiting for the Lock
+- [func wait()](./wait%28%29.md)
   Blocks the current thread until the condition is signaled.
 
 

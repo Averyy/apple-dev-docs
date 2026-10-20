@@ -1,7 +1,8 @@
 # controller(_:read:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notify the delegate when commissioning infomation has been read from the commissionee.
 
@@ -18,6 +19,10 @@ Notify the delegate when commissioning infomation has been read from the commiss
 
 ```swift
 optional func controller(_ controller: MTRDeviceController, read info: MTRCommissioneeInfo)
+```
+
+```objc
+- (void) controller:(MTRDeviceController *) controller readCommissioneeInfo:(MTRCommissioneeInfo *) info;
 ```
 
 #### Discussion

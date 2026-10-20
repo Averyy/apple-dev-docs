@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name for the data record.
 
@@ -18,9 +19,13 @@ The display name for the data record.
 var displayName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * displayName;
+```
+
 #### Discussion
 
-This property contains identifying information that you to display to users. Typically, the value is the website’s domain name and suffix taken from the host information in the resource’s security origin object. For more information, see [`WKSecurityOrigin`](wksecurityorigin.md).
+This property contains identifying information that you to display to users. Typically, the value is the website’s domain name and suffix taken from the host information in the resource’s security origin object. For more information, see [`WKSecurityOrigin`](../wksecurityorigin.md).
 
 
 ---

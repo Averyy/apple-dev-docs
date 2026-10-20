@@ -1,7 +1,8 @@
 # cancel
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cancel the operation.
 

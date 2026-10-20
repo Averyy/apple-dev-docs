@@ -1,7 +1,8 @@
 # CFHostClientCallBack
 
 **Framework**: CFNetwork  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines a pointer to the callback function that is called when an asynchronous resolution of a CFHost completes or an error occurs for an asynchronous CFHost resolution.
 
@@ -19,6 +20,10 @@ Defines a pointer to the callback function that is called when an asynchronous r
 typealias CFHostClientCallBack = (CFHost, CFHostInfoType, UnsafePointer<CFStreamError>?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFHost *, enum CFHostInfoType, const CFStreamError *, void *) CFHostClientCallBack;
+```
+
 #### Discussion
 
 If you name your callback `MyHostClientCallBack`, you would declare it like this:
@@ -30,20 +35,21 @@ The callback function for a CFHost object is called one or more times when an as
 ## Parameters
 
 - `theHost`: The host for which an asynchronous resolution has been completed.
-- `typeInfo`: Value of type `CFHostInfoType` representing the type of information (addresses, names, or reachability information) obtained by the completed resolution. See [`CFHostInfoType`](cfhostinfotype.md) for possible values.
-- `error`: If the resolution failed, contains a [`CFStreamError`](https://developer.apple.com/documentation/corefoundation/cfstreamerror) structure whose `error` field contains an error code.
-- `info`: User-defined context information. The value pointed to by `info` is the same as the value pointed to by the `info` field of the [`CFHostClientContext`](cfhostclientcontext.md) structure that was provided when the host was associated with this callback function.
+- `typeInfo`: Value of type `CFHostInfoType` representing the type of information (addresses, names, or reachability information) obtained by the completed resolution. See [`CFHostInfoType`](./cfhostinfotype.md) for possible values.
+- `error`: If the resolution failed, contains a [`CFStreamError`](../CoreFoundation/cfstreamerror.md) structure whose `error` field contains an error code.
+- `info`: User-defined context information. The value pointed to by `info` is the same as the value pointed to by the `info` field of the [`CFHostClientContext`](./cfhostclientcontext.md) structure that was provided when the host was associated with this callback function.
 
 ## See Also
 
-- [typealias CFNetServiceBrowserClientCallBack](cfnetservicebrowserclientcallback.md)
+### Data Types
+- [typealias CFNetServiceBrowserClientCallBack](./cfnetservicebrowserclientcallback.md)
   Defines a pointer to the callback function for a CFNetServiceBrowser.
-- [typealias CFNetServiceClientCallBack](cfnetserviceclientcallback.md)
+- [typealias CFNetServiceClientCallBack](./cfnetserviceclientcallback.md)
   Defines a pointer to the callback function for a CFNetService.
-- [typealias CFNetServiceMonitorClientCallBack](cfnetservicemonitorclientcallback.md)
+- [typealias CFNetServiceMonitorClientCallBack](./cfnetservicemonitorclientcallback.md)
   Defines a pointer to the callback function that is to be called when a monitored record type changes.
-- [typealias CFNetDiagnosticStatus](cfnetdiagnosticstatus.md)
-  A CFIndex type that is used to return status values from `CFNetDiagnostic` status and diagnostic functions. For a list of possible values, see [`CFNetDiagnosticStatusValues`](cfnetdiagnosticstatusvalues.md).
+- [typealias CFNetDiagnosticStatus](./cfnetdiagnosticstatus.md)
+  A CFIndex type that is used to return status values from `CFNetDiagnostic` status and diagnostic functions. For a list of possible values, see [`CFNetDiagnosticStatusValues`](./cfnetdiagnosticstatusvalues.md).
 
 
 ---

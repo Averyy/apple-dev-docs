@@ -1,7 +1,8 @@
 # style
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 An object literal of style properties.
 
@@ -10,7 +11,7 @@ An object literal of style properties.
 
 ## Declaration
 
-```swift
+```
 style?: Style;
 ```
 
@@ -37,13 +38,14 @@ The following table lists the available style properties:
 
 ## See Also
 
-- [data](overlayoptions/data.md)
+### Overlay options
+- [data](./data.md)
   Custom data to associate with the overlay.
-- [enabled](overlayoptions/enabled.md)
+- [enabled](./enabled.md)
   A Boolean value that determines whether the overlay responds to user interaction.
-- [selected](overlayoptions/selected.md)
+- [selected](./selected.md)
   A Boolean value that indicates whether the overlay is in a selected state.
-- [visible](overlayoptions/visible.md)
+- [visible](./visible.md)
   A Boolean value that determines if an overlay is visible.
 
 

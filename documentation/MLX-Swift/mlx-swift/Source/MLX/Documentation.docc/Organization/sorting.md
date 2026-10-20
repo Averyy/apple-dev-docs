@@ -31,7 +31,7 @@ let array = MLXRandom.randInt(0 ..< 100, [10])
 let sorted = sort(array)
 ```
 
-See related items in <doc:indexes>.
+See related items in [Indexes](indexes.md).
 
 ## Topics
 

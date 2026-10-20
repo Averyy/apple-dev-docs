@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -14,11 +15,16 @@
 func commitEditingWithoutPresentingError() throws
 ```
 
+```objc
+- (BOOL) commitEditingAndReturnError:(NSError **) error;
+```
+
 ## See Also
 
-- [func commitEditing() -> Bool](nseditor/commitediting.md)
-- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](nseditor/commitediting(withdelegate:didcommit:contextinfo:).md)
-- [func discardEditing()](nseditor/discardediting.md)
+### Instance Methods
+- [func commitEditing() -> Bool](./commitediting%28%29.md)
+- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](./commitediting%28withdelegate,didcommit,contextinfo%29.md)
+- [func discardEditing()](./discardediting%28%29.md)
 
 
 ---

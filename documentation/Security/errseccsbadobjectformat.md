@@ -1,7 +1,8 @@
 # errSecCSBadObjectFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The object file format invalid or unsuitable.
 
@@ -13,6 +14,10 @@ The object file format invalid or unsuitable.
 
 ```swift
 var errSecCSBadObjectFormat: OSStatus { get }
+```
+
+```c
+errSecCSBadObjectFormat
 ```
 
 

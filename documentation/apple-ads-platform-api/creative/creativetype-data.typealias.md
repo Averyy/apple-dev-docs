@@ -1,7 +1,8 @@
 # Creative.CreativeType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Type of ad creative, determining which ad placements it can serve on.
 
@@ -10,9 +11,15 @@ Type of ad creative, determining which ad placements it can serve on.
 
 ## Declaration
 
-```swift
+```
 string Creative.CreativeType
 ```
+
+## Possible Values
+
+- `CUSTOM_PRODUCT_PAGE`: Uses a custom App Store Connect product page as the pre-tap experience. Requires `productPageId` in the destination.
+- `DEFAULT_PRODUCT_PAGE`: Uses the app’s default App Store listing as the pre-tap experience. No `productPageId` required.
+- `LOCAL_ADS_SEARCH_CREATIVE`: Ad creative for Ads on Apple Maps.
 
 #### Discussion
 

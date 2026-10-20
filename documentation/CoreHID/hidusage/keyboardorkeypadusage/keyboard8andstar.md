@@ -1,7 +1,8 @@
 # HIDUsage.KeyboardOrKeypadUsage.keyboard8AndStar
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 15.0+

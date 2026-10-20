@@ -1,7 +1,8 @@
 # extensionContext
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The context your account authentication modification extension uses to provide information to the system.
 
@@ -17,9 +18,13 @@ The context your account authentication modification extension uses to provide i
 var extensionContext: ASAccountAuthenticationModificationExtensionContext { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) ASAccountAuthenticationModificationExtensionContext * extensionContext;
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 #### Discussion
 

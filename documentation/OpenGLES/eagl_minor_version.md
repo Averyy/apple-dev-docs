@@ -1,7 +1,8 @@
 # EAGL_MINOR_VERSION
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var EAGL_MINOR_VERSION: Int32 { get }
+```
+
+```c
+#define EAGL_MINOR_VERSION
 ```
 
 

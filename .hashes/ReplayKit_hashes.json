@@ -311,9 +311,8 @@
       "hash": "b154a023b9135a02c7b0a6e4fca7d5724ee43247a6da09266fe38a7006cfed20"
     },
     "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/!=(_:_:)": {
-      "etag": "W/\"04876811950d5b1c69bfb1c0b9e48887\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/noteq(_,_).md",
-      "hash": "a0fa4064244579b66954fde376a2752dc0d979f983f4c45c8b7c4778d920e6b9"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/replaykit/rprecordingerrorcode/activephonecall": {
       "etag": "\"69eb-65d5609c8ba66-df\"",
@@ -995,9 +994,8 @@
       "hash": "b154a023b9135a02c7b0a6e4fca7d5724ee43247a6da09266fe38a7006cfed20"
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/!=(_:_:).json": {
-      "etag": "W/\"04876811950d5b1c69bfb1c0b9e48887\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/noteq(_,_).md",
-      "hash": "a0fa4064244579b66954fde376a2752dc0d979f983f4c45c8b7c4778d920e6b9"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/activephonecall.json": {
       "etag": "\"69eb-65d5609c8ba66-df\"",
@@ -1366,6 +1364,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 273
   }
 }

@@ -1,18 +1,19 @@
 # vDSP_biquad_SetupD
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A data structure that contains precalculated data for use by the double-precision cascaded biquadratic IIR filter function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ A data structure that contains precalculated data for use by the double-precisio
 typealias vDSP_biquad_SetupD = OpaquePointer
 ```
 
+```c
+typedef struct vDSP_biquad_SetupStructD * vDSP_biquad_SetupD;
+```
+
 ## See Also
 
-- [typealias vDSP_biquad_Setup](vdsp_biquad_setup.md)
+### Creating a single-channel biquadratic filter setup
+- [typealias vDSP_biquad_Setup](./vdsp_biquad_setup.md)
   A data structure that contains precalculated data for use by the single-precision cascaded biquadratic IIR filter function.
 
 

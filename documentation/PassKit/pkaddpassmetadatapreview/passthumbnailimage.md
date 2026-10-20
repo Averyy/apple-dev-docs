@@ -1,7 +1,8 @@
 # passThumbnailImage
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A CGImage object representing the card artwork of the pass you use during provisioning.
 
@@ -9,7 +10,7 @@ A CGImage object representing the card artwork of the pass you use during provis
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS ?+
+- macOS
 - visionOS 2.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ A CGImage object representing the card artwork of the pass you use during provis
 unowned(unsafe) var passThumbnailImage: CGImage? { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, nullable) CGImageRef passThumbnailImage;
+```
+
 ## See Also
 
-- [init(passThumbnail: CGImage, localizedDescription: String)](pkaddpassmetadatapreview/init(passthumbnail:localizeddescription:).md)
+### Creating a preview of the pass
+- [init(passThumbnail: CGImage, localizedDescription: String)](./init%28passthumbnail,localizeddescription%29.md)
   Provides a preview of an image object that represents the pass you add to Wallet.
-- [var localizedDescription: String?](pkaddpassmetadatapreview/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A localized description of the pass.
 
 

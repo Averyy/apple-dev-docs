@@ -1,18 +1,19 @@
 # CFNumberType.sInt32Type
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Thirty-two-bit, signed integer. The `SInt32` data type is defined in `MacTypes.h`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,37 +21,42 @@ Thirty-two-bit, signed integer. The `SInt32` data type is defined in `MacTypes.h
 case sInt32Type
 ```
 
+```c
+kCFNumberSInt32Type
+```
+
 ## See Also
 
-- [CFNumberType.sInt8Type](cfnumbertype/sint8type.md)
+### Constants
+- [CFNumberType.sInt8Type](./sint8type.md)
   Eight-bit, signed integer. The `SInt8` data type is defined in `MacTypes.h`.
-- [CFNumberType.sInt16Type](cfnumbertype/sint16type.md)
+- [CFNumberType.sInt16Type](./sint16type.md)
   Sixteen-bit, signed integer. The `SInt16` data type is defined in `MacTypes.h`.
-- [CFNumberType.sInt64Type](cfnumbertype/sint64type.md)
+- [CFNumberType.sInt64Type](./sint64type.md)
   Sixty-four-bit, signed integer. The `SInt64` data type is defined in `MacTypes.h`.
-- [CFNumberType.float32Type](cfnumbertype/float32type.md)
+- [CFNumberType.float32Type](./float32type.md)
   Thirty-two-bit real. The `Float32` data type is defined in `MacTypes.h`.
-- [CFNumberType.float64Type](cfnumbertype/float64type.md)
+- [CFNumberType.float64Type](./float64type.md)
   Sixty-four-bit real. The `Float64` data type is defined in `MacTypes.h` and conforms to the 64-bit IEEE 754 standard.
-- [CFNumberType.charType](cfnumbertype/chartype.md)
+- [CFNumberType.charType](./chartype.md)
   Basic C `char` type.
-- [CFNumberType.shortType](cfnumbertype/shorttype.md)
+- [CFNumberType.shortType](./shorttype.md)
   Basic C `short` type.
-- [CFNumberType.intType](cfnumbertype/inttype.md)
+- [CFNumberType.intType](./inttype.md)
   Basic C `int` type.
-- [CFNumberType.longType](cfnumbertype/longtype.md)
+- [CFNumberType.longType](./longtype.md)
   Basic C `long` type.
-- [CFNumberType.longLongType](cfnumbertype/longlongtype.md)
+- [CFNumberType.longLongType](./longlongtype.md)
   Basic C `long long` type.
-- [CFNumberType.floatType](cfnumbertype/floattype.md)
+- [CFNumberType.floatType](./floattype.md)
   Basic C `float` type.
-- [CFNumberType.doubleType](cfnumbertype/doubletype.md)
+- [CFNumberType.doubleType](./doubletype.md)
   Basic C `double` type.
-- [CFNumberType.cfIndexType](cfnumbertype/cfindextype.md)
+- [CFNumberType.cfIndexType](./cfindextype.md)
   CFIndex value.
-- [CFNumberType.nsIntegerType](cfnumbertype/nsintegertype.md)
+- [CFNumberType.nsIntegerType](./nsintegertype.md)
   `NSInteger` value.
-- [CFNumberType.cgFloatType](cfnumbertype/cgfloattype.md)
+- [CFNumberType.cgFloatType](./cgfloattype.md)
   `CGFloat` value.
 
 

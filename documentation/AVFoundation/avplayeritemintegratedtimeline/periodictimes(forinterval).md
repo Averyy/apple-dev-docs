@@ -1,7 +1,8 @@
 # periodicTimes(forInterval:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous sequence of times periodically as playback progresses.
 
@@ -22,13 +23,14 @@ func periodicTimes(forInterval: CMTime) -> AVPlayerItemIntegratedTimeline.Period
 
 ## See Also
 
-- [func boundaryTimes(for: AVPlayerItemSegment, offsetsIntoSegment: [CMTime]) -> AVPlayerItemIntegratedTimeline.BoundaryTimes](avplayeritemintegratedtimeline/boundarytimes(for:offsetsintosegment:).md)
+### Observing time changes
+- [func boundaryTimes(for: AVPlayerItemSegment, offsetsIntoSegment: [CMTime]) -> AVPlayerItemIntegratedTimeline.BoundaryTimes](./boundarytimes%28for,offsetsintosegment%29.md)
   Returns an asynchronous sequence of times whenever playback reaches a segment time in the segment.
-- [AVPlayerItemIntegratedTimeline.BoundaryTimes](avplayeritemintegratedtimeline/boundarytimes.md)
+- [AVPlayerItemIntegratedTimeline.BoundaryTimes](./boundarytimes.md)
   An asynchronous sequence of boundary time values.
-- [AVPlayerItemIntegratedTimeline.PeriodicTimes](avplayeritemintegratedtimeline/periodictimes.md)
+- [AVPlayerItemIntegratedTimeline.PeriodicTimes](./periodictimes.md)
   An asynchronous sequence of periodic time values.
-- [protocol AVPlayerItemIntegratedTimelineObserver](avplayeritemintegratedtimelineobserver.md)
+- [protocol AVPlayerItemIntegratedTimelineObserver](../avplayeritemintegratedtimelineobserver.md)
   A protocol for objects that perform timeline observations.
 
 

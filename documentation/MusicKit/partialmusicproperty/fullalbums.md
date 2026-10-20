@@ -1,7 +1,8 @@
 # fullAlbums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of the artist’s full-release albums.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of the arti
 ```swift
 static let fullAlbums: MusicRelationshipProperty<Artist, Album>
 ```
+
+Available when `Root` is `Artist`.
 
 
 ---

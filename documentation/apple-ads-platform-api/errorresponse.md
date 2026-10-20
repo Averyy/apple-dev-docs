@@ -1,7 +1,8 @@
 # ErrorResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Certain endpoints return this envelope, which wraps an `Error` object, when a request fails.
 
@@ -10,7 +11,7 @@ Certain endpoints return this envelope, which wraps an `Error` object, when a re
 
 ## Declaration
 
-```swift
+```
 object ErrorResponse
 ```
 
@@ -18,7 +19,7 @@ object ErrorResponse
 
 The `ErrorResponse` object is a response envelope that wraps an `Error` object. Certain endpoints return it when a request fails, providing the full `Error` structure including `code`, `message`, and `details`.
 
-A `429` status indicates the caller has exceeded its request quota. See [`Applying Rate Limits`](rate-limits.md) for the rate-limit headers and a sample backoff implementation to use before retrying.
+A `429` status indicates the caller has exceeded its request quota. See [Applying Rate Limits](./rate-limits.md) for the rate-limit headers and a sample backoff implementation to use before retrying.
 
 ##### Example
 
@@ -42,15 +43,16 @@ A `429` status indicates the caller has exceeded its request quota. See [`Applyi
 
 ## Properties
 
-- `error` (Error): The error object containing details about the failure. See [`Error`](error.md).
+- `error` (Error): The error object containing details about the failure. See [`Error`](./error.md).
 
 ## See Also
 
-- [object Error](error.md)
+### Error Responses
+- [object Error](./error.md)
   The standard error envelope that the API returns when a request fails.
-- [object ErrorDetail](errordetail.md)
+- [object ErrorDetail](./errordetail.md)
   Field-level or request-level detail for a specific part of a failed API request.
-- [object Info](info.md)
+- [object Info](./info.md)
   Additional context that supplements an error detail’s message, varying by endpoint and error type.
 
 

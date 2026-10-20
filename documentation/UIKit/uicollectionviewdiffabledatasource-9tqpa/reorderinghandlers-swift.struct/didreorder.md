@@ -1,7 +1,8 @@
 # didReorder
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler that processes a reordering transaction.
 
@@ -10,7 +11,7 @@ The handler that processes a reordering transaction.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var didReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIde
 
 #### Discussion
 
-The system calls the [`didReorder`](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/didreorder.md) handler after a reordering transaction ([`NSDiffableDataSourceTransaction`](nsdiffabledatasourcetransaction-swift.struct.md)) occurs, so you can update your data backing store with information about the changes.
+The system calls the [`didReorder`](./didreorder.md) handler after a reordering transaction ([`NSDiffableDataSourceTransaction`](../../nsdiffabledatasourcetransaction-swift.struct.md)) occurs, so you can update your data backing store with information about the changes.
 
 ```swift
 // Allow every item to be reordered
@@ -45,9 +46,10 @@ dataSource.reorderingHandlers.didReorder = { [weak self] transaction in
 
 ## See Also
 
-- [var canReorderItem: ((ItemIdentifierType) -> Bool)?](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/canreorderitem.md)
+### Reordering items
+- [var canReorderItem: ((ItemIdentifierType) -> Bool)?](./canreorderitem.md)
   The handler that determines whether you can reorder a particular item.
-- [var willReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/willreorder.md)
+- [var willReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](./willreorder.md)
   The handler that prepares the diffable data source for reordering its items.
 
 

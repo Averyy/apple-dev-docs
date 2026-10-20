@@ -1,7 +1,8 @@
 # searchBar(_:shouldChangeTextInRanges:replacementText:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func searchBar(_ searchBar: UISearchBar, shouldChangeTextInRanges ranges: [NSValue], replacementText: String) -> Bool
+```
+
+```objc
+- (BOOL) searchBar:(UISearchBar *) searchBar shouldChangeTextInRanges:(NSArray<NSValue *> *) ranges replacementText:(NSString *) replacementText;
 ```
 
 #### Return Value

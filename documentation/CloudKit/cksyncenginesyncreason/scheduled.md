@@ -1,7 +1,8 @@
 # CKSyncEngineSyncReason.scheduled
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The sync engine automatically scheduled this sync.
 
@@ -20,9 +21,14 @@ The sync engine automatically scheduled this sync.
 case scheduled
 ```
 
+```c
+CKSyncEngineSyncReasonScheduled
+```
+
 ## See Also
 
-- [CKSyncEngineSyncReason.manual](cksyncenginesyncreason/manual.md)
+### Sync reasons
+- [CKSyncEngineSyncReason.manual](./manual.md)
   A manual sync operation.
 
 

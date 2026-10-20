@@ -1,7 +1,8 @@
 # Data.Iterator
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator that operates over the contents of data.
 
@@ -23,15 +24,16 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func makeIterator() -> Data.Iterator](data/makeiterator.md)
+### Iterating Over Bytes
+- [func makeIterator() -> Data.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the contents of the data.
-- [func enumerateBytes((UnsafeBufferPointer<UInt8>, Data.Index, inout Bool) -> Void)](data/enumeratebytes(_:).md)
+- [func enumerateBytes((UnsafeBufferPointer<UInt8>, Data.Index, inout Bool) -> Void)](./enumeratebytes%28_%29.md)
   Enumerates the contents of the data’s buffer.
 
 

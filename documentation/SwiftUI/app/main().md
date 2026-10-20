@@ -1,7 +1,8 @@
 # main()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Initializes and runs the app.
 
@@ -23,11 +24,12 @@ Initializes and runs the app.
 
 #### Discussion
 
-If you precede your [`App`](app.md) conformer’s declaration with the [`@main`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls the conformer’s `main()` method to launch the app. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
+If you precede your [`App`](../app.md) conformer’s declaration with the [@main](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls the conformer’s `main()` method to launch the app. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
 
 ## See Also
 
-- [init()](app/init.md)
+### Running an app
+- [init()](./init%28%29.md)
   Creates an instance of the app using the body that you define for its content.
 
 

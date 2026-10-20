@@ -1,7 +1,8 @@
 # errSecOCSPUnavailable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The online certificate status protocol (OCSP) service is unavailable.
 
@@ -18,6 +19,10 @@ The online certificate status protocol (OCSP) service is unavailable.
 
 ```swift
 var errSecOCSPUnavailable: OSStatus { get }
+```
+
+```c
+errSecOCSPUnavailable
 ```
 
 

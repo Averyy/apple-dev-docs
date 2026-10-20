@@ -1,7 +1,8 @@
 # NSLinguisticTaggerUnit.word
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An individual word.
 
@@ -20,19 +21,24 @@ An individual word.
 case word
 ```
 
+```c
+NSLinguisticTaggerUnitWord
+```
+
 ## Mentions
 
-- [Identifying Parts of Speech](identifying-parts-of-speech.md)
-- [Identifying People, Places, and Organizations](identifying-people-places-and-organizations.md)
-- [Tokenizing Natural Language Text](tokenizing-natural-language-text.md)
+- [Identifying Parts of Speech](../identifying-parts-of-speech.md)
+- [Identifying People, Places, and Organizations](../identifying-people-places-and-organizations.md)
+- [Tokenizing Natural Language Text](../tokenizing-natural-language-text.md)
 
 ## See Also
 
-- [NSLinguisticTaggerUnit.document](nslinguistictaggerunit/document.md)
+### Constants
+- [NSLinguisticTaggerUnit.document](./document.md)
   The document in its entirety.
-- [NSLinguisticTaggerUnit.paragraph](nslinguistictaggerunit/paragraph.md)
+- [NSLinguisticTaggerUnit.paragraph](./paragraph.md)
   An individual paragraph.
-- [NSLinguisticTaggerUnit.sentence](nslinguistictaggerunit/sentence.md)
+- [NSLinguisticTaggerUnit.sentence](./sentence.md)
   An individual sentence.
 
 

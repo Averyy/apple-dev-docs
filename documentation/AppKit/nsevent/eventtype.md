@@ -1,12 +1,13 @@
 # NSEvent.EventType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for the types of events that responder objects can handle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,108 +15,113 @@ Constants for the types of events that responder objects can handle.
 enum EventType
 ```
 
+```c
+enum NSEventType : NSUInteger;
+```
+
 #### Overview
 
-These constants appear in the event’s [`type`](nsevent/type.md) property. You also use them when you construct new events.
+These constants appear in the event’s [`type`](./type.md) property. You also use them when you construct new events.
 
 ## Topics
 
 ### Getting Mouse-Related Event Types
-- [NSEvent.EventType.leftMouseDown](nsevent/eventtype/leftmousedown.md)
+- [NSEvent.EventType.leftMouseDown](./eventtype/leftmousedown.md)
   The user pressed the left mouse button.
-- [NSEvent.EventType.leftMouseDragged](nsevent/eventtype/leftmousedragged.md)
+- [NSEvent.EventType.leftMouseDragged](./eventtype/leftmousedragged.md)
   The user moved the mouse while holding down the left mouse button.
-- [NSEvent.EventType.leftMouseUp](nsevent/eventtype/leftmouseup.md)
+- [NSEvent.EventType.leftMouseUp](./eventtype/leftmouseup.md)
   The user released the left mouse button.
-- [NSEvent.EventType.rightMouseDown](nsevent/eventtype/rightmousedown.md)
+- [NSEvent.EventType.rightMouseDown](./eventtype/rightmousedown.md)
   The user pressed the right mouse button.
-- [NSEvent.EventType.rightMouseUp](nsevent/eventtype/rightmouseup.md)
+- [NSEvent.EventType.rightMouseUp](./eventtype/rightmouseup.md)
   The user released the right mouse button.
-- [NSEvent.EventType.rightMouseDragged](nsevent/eventtype/rightmousedragged.md)
+- [NSEvent.EventType.rightMouseDragged](./eventtype/rightmousedragged.md)
   The user moved the mouse while holding down the right mouse button.
-- [NSEvent.EventType.otherMouseDown](nsevent/eventtype/othermousedown.md)
+- [NSEvent.EventType.otherMouseDown](./eventtype/othermousedown.md)
   The user pressed a tertiary mouse button.
-- [NSEvent.EventType.otherMouseDragged](nsevent/eventtype/othermousedragged.md)
+- [NSEvent.EventType.otherMouseDragged](./eventtype/othermousedragged.md)
   The user moved the mouse while holding down a tertiary mouse button.
-- [NSEvent.EventType.otherMouseUp](nsevent/eventtype/othermouseup.md)
+- [NSEvent.EventType.otherMouseUp](./eventtype/othermouseup.md)
   The user released a tertiary mouse button.
-- [NSEvent.EventType.mouseMoved](nsevent/eventtype/mousemoved.md)
+- [NSEvent.EventType.mouseMoved](./eventtype/mousemoved.md)
   The user moved the mouse in a way that caused the cursor to move onscreen.
-- [NSEvent.EventType.mouseEntered](nsevent/eventtype/mouseentered.md)
+- [NSEvent.EventType.mouseEntered](./eventtype/mouseentered.md)
   The cursor entered a well-defined area, such as a view.
-- [NSEvent.EventType.mouseExited](nsevent/eventtype/mouseexited.md)
+- [NSEvent.EventType.mouseExited](./eventtype/mouseexited.md)
   The cursor exited a well-defined area, such as a view.
 ### Getting Keyboard Event Types
-- [NSEvent.EventType.keyDown](nsevent/eventtype/keydown.md)
+- [NSEvent.EventType.keyDown](./eventtype/keydown.md)
   The user pressed a key on the keyboard.
-- [NSEvent.EventType.keyUp](nsevent/eventtype/keyup.md)
+- [NSEvent.EventType.keyUp](./eventtype/keyup.md)
   The user released a key on the keyboard.
 ### Getting Touch-Based Events
-- [NSEvent.EventType.magnify](nsevent/eventtype/magnify.md)
+- [NSEvent.EventType.magnify](./eventtype/magnify.md)
   The user performed a pinch-open or pinch-close gesture.
-- [NSEvent.EventType.smartMagnify](nsevent/eventtype/smartmagnify.md)
+- [NSEvent.EventType.smartMagnify](./eventtype/smartmagnify.md)
   The user performed a smart-zoom gesture.
-- [NSEvent.EventType.swipe](nsevent/eventtype/swipe.md)
+- [NSEvent.EventType.swipe](./eventtype/swipe.md)
   The user performed a swipe gesture.
-- [NSEvent.EventType.rotate](nsevent/eventtype/rotate.md)
+- [NSEvent.EventType.rotate](./eventtype/rotate.md)
   The user performed a rotate gesture.
-- [NSEvent.EventType.gesture](nsevent/eventtype/gesture.md)
+- [NSEvent.EventType.gesture](./eventtype/gesture.md)
   The user performed a nonspecific type of gesture.
-- [NSEvent.EventType.directTouch](nsevent/eventtype/directtouch.md)
+- [NSEvent.EventType.directTouch](./eventtype/directtouch.md)
   The user touched a portion of the touch bar.
-- [NSEvent.EventType.tabletPoint](nsevent/eventtype/tabletpoint.md)
+- [NSEvent.EventType.tabletPoint](./eventtype/tabletpoint.md)
   The user touched a point on a tablet.
-- [NSEvent.EventType.tabletProximity](nsevent/eventtype/tabletproximity.md)
+- [NSEvent.EventType.tabletProximity](./eventtype/tabletproximity.md)
   A pointing device is near, but not touching, the associated tablet.
-- [NSEvent.EventType.pressure](nsevent/eventtype/pressure.md)
+- [NSEvent.EventType.pressure](./eventtype/pressure.md)
   An event that reports a change in pressure on a pressure-sensitive device.
 ### Getting Other Input Types
-- [NSEvent.EventType.scrollWheel](nsevent/eventtype/scrollwheel.md)
+- [NSEvent.EventType.scrollWheel](./eventtype/scrollwheel.md)
   The scroll wheel position changed.
-- [NSEvent.EventType.changeMode](nsevent/eventtype/changemode.md)
+- [NSEvent.EventType.changeMode](./eventtype/changemode.md)
   The user changed the mode of a connected device.
 ### Getting System Event Types
-- [NSEvent.EventType.appKitDefined](nsevent/eventtype/appkitdefined.md)
+- [NSEvent.EventType.appKitDefined](./eventtype/appkitdefined.md)
   An AppKit-related event occurred.
-- [NSEvent.EventType.applicationDefined](nsevent/eventtype/applicationdefined.md)
+- [NSEvent.EventType.applicationDefined](./eventtype/applicationdefined.md)
   An app-defined event occurred.
-- [NSEvent.EventType.cursorUpdate](nsevent/eventtype/cursorupdate.md)
+- [NSEvent.EventType.cursorUpdate](./eventtype/cursorupdate.md)
   An event that updates the cursor.
-- [NSEvent.EventType.flagsChanged](nsevent/eventtype/flagschanged.md)
+- [NSEvent.EventType.flagsChanged](./eventtype/flagschanged.md)
   The event flags changed.
-- [NSEvent.EventType.periodic](nsevent/eventtype/periodic.md)
+- [NSEvent.EventType.periodic](./eventtype/periodic.md)
   An event that provides execution time to periodic tasks.
-- [NSEvent.EventType.quickLook](nsevent/eventtype/quicklook.md)
+- [NSEvent.EventType.quickLook](./eventtype/quicklook.md)
   An event that initiates a Quick Look request.
-- [NSEvent.EventType.systemDefined](nsevent/eventtype/systemdefined.md)
+- [NSEvent.EventType.systemDefined](./eventtype/systemdefined.md)
   A system-related event occurred.
 ### Deprecated
-- [Deprecated symbols](eventtype-deprecated-symbols.md)
+- [Deprecated symbols](../eventtype-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Enumeration Cases
-- [NSEvent.EventType.mouseCancelled](nsevent/eventtype/mousecancelled.md)
+- [NSEvent.EventType.mouseCancelled](./eventtype/mousecancelled.md)
 ### Initializers
-- [init?(rawValue: UInt)](nsevent/eventtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./eventtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: NSEvent.EventType](nsevent/type.md)
+### Getting the event type
+- [var type: NSEvent.EventType](./type.md)
   The event’s type.
-- [NSEvent.EventTypeMask](nsevent/eventtypemask.md)
+- [NSEvent.EventTypeMask](./eventtypemask.md)
   Constants that you use to filter out specific event types from the stream of incoming events.
-- [var subtype: NSEvent.EventSubtype](nsevent/subtype.md)
+- [var subtype: NSEvent.EventSubtype](./subtype.md)
   The event’s subtype.
-- [NSEvent.EventSubtype](nsevent/eventsubtype.md)
+- [NSEvent.EventSubtype](./eventsubtype.md)
   Subtypes for various types of events.
 
 

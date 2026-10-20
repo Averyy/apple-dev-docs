@@ -1,7 +1,8 @@
 # AnyColumn
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased column.
 
@@ -22,103 +23,104 @@ struct AnyColumn
 
 #### Overview
 
-`AnyColumn` is a column type that conceals the type of its elements, unlike [`Column`](column.md), its typed counterpart.
+`AnyColumn` is a column type that conceals the type of its elements, unlike [`Column`](./column.md), its typed counterpart.
 
 ## Topics
 
 ### Inspecting a Type-Erased Column
-- [var name: String](anycolumn/name.md)
+- [var name: String](./anycolumn/name.md)
   The name of the column.
-- [var count: Int](anycolumn/count.md)
+- [var count: Int](./anycolumn/count.md)
   The number of elements in the column.
-- [var missingCount: Int](anycolumn/missingcount.md)
+- [var missingCount: Int](./anycolumn/missingcount.md)
   The number of missing elements in the column.
-- [var wrappedElementType: any Any.Type](anycolumn/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./anycolumn/wrappedelementtype.md)
   The underlying type of the column’s elements.
-- [func isNil(at: Int) -> Bool](anycolumn/isnil(at:).md)
+- [func isNil(at: Int) -> Bool](./anycolumn/isnil%28at%29.md)
   Returns a Boolean that indicates whether the element at the index is missing.
 ### Creating a Column of the Same Type
-- [var prototype: any AnyColumnPrototype](anycolumn/prototype.md)
+- [var prototype: any AnyColumnPrototype](./anycolumn/prototype.md)
   A prototype that creates type-erased columns with the same underlying type as the column slice.
 ### Creating a Typed Column
-- [func assumingType<T>(T.Type) -> Column<T>](anycolumn/assumingtype(_:).md)
+- [func assumingType<T>(T.Type) -> Column<T>](./anycolumn/assumingtype%28_%29.md)
   Returns the underlying typed column.
 ### Adding Elements
-- [func append(Any?)](anycolumn/append(_:).md)
+- [func append(Any?)](./anycolumn/append%28_%29.md)
   Appends an optional element to the column.
-- [func append(contentsOf: AnyColumn)](anycolumn/append(contentsof:)-2in58.md)
+- [func append(contentsOf: AnyColumn)](./anycolumn/append%28contentsof%29-2in58.md)
   Appends the contents of another column to the column.
-- [func append(contentsOf: AnyColumnSlice)](anycolumn/append(contentsof:)-az5b.md)
+- [func append(contentsOf: AnyColumnSlice)](./anycolumn/append%28contentsof%29-az5b.md)
   Appends the contents of a column slice to the column.
 ### Removing an Element
-- [func remove(at: Int)](anycolumn/remove(at:).md)
+- [func remove(at: Int)](./anycolumn/remove%28at%29.md)
   Removes an element from the column.
 ### Accessing Elements
-- [subscript(Int) -> Any?](anycolumn/subscript(_:)-6z1b5.md)
+- [subscript(Int) -> Any?](./anycolumn/subscript%28_%29-6z1b5.md)
   Accesses an element at an index.
-- [subscript(Range<Int>) -> AnyColumnSlice](anycolumn/subscript(_:)-1n9t9.md)
+- [subscript(Range<Int>) -> AnyColumnSlice](./anycolumn/subscript%28_%29-1n9t9.md)
   Accesses a contiguous subrange of the elements.
 ### Creating a Slice of Unique Elements
-- [func distinct() -> AnyColumnSlice](anycolumn/distinct.md)
+- [func distinct() -> AnyColumnSlice](./anycolumn/distinct%28%29.md)
   Generates a column slice that contains unique elements.
 ### Creating a Slice by Masking Elements
-- [subscript<C>(C) -> AnyColumnSlice](anycolumn/subscript(_:)-3658g.md)
+- [subscript<C>(C) -> AnyColumnSlice](./anycolumn/subscript%28_%29-3658g.md)
   Returns a slice of the column by selecting elements with a collection of Booleans.
 ### Encoding a Column
-- [func encode<T, Encoder>(T.Type, using: Encoder) throws](anycolumn/encode(_:using:).md)
+- [func encode<T, Encoder>(T.Type, using: Encoder) throws](./anycolumn/encode%28_,using%29.md)
   Encodes each element of the column.
-- [func encoded<T, Encoder>(T.Type, using: Encoder) throws -> AnyColumn](anycolumn/encoded(_:using:).md)
+- [func encoded<T, Encoder>(T.Type, using: Encoder) throws -> AnyColumn](./anycolumn/encoded%28_,using%29.md)
   Generates a column by encoding each element’s value.
 ### Decoding a Column
-- [func decode<T, Decoder>(T.Type, using: Decoder) throws](anycolumn/decode(_:using:).md)
+- [func decode<T, Decoder>(T.Type, using: Decoder) throws](./anycolumn/decode%28_,using%29.md)
   Decodes the data in each element of the column.
-- [func decoded<T, Decoder>(T.Type, using: Decoder) throws -> AnyColumn](anycolumn/decoded(_:using:).md)
+- [func decoded<T, Decoder>(T.Type, using: Decoder) throws -> AnyColumn](./anycolumn/decoded%28_,using%29.md)
   Decodes data for each element of the column.
 ### Describing a Column
-- [var description: String](anycolumn/description.md)
+- [var description: String](./anycolumn/description.md)
   A text representation of the column.
-- [var debugDescription: String](anycolumn/debugdescription.md)
+- [var debugDescription: String](./anycolumn/debugdescription.md)
   A text representation of the column suitable for debugging.
-- [var customMirror: Mirror](anycolumn/custommirror.md)
+- [var customMirror: Mirror](./anycolumn/custommirror.md)
   A mirror that reflects the column.
 ### Comparing Two Columns
-- [static func == (AnyColumn, AnyColumn) -> Bool](anycolumn/==(_:_:).md)
+- [static func == (AnyColumn, AnyColumn) -> Bool](./anycolumn/eqeq%28_,_%29.md)
   Returns a Boolean that indicates whether the columns are equal.
 ### Hashing a Column
-- [func hash(into: inout Hasher)](anycolumn/hash(into:).md)
+- [func hash(into: inout Hasher)](./anycolumn/hash%28into%29.md)
   Hashes the essential components of the column by feeding them into a hasher.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](anycolumn/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](anycolumn/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](anycolumn/customstringconvertible-implementations.md)
-- [Equatable Implementations](anycolumn/equatable-implementations.md)
-- [Hashable Implementations](anycolumn/hashable-implementations.md)
-- [RandomAccessCollection Implementations](anycolumn/randomaccesscollection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./anycolumn/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./anycolumn/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./anycolumn/customstringconvertible-implementations.md)
+- [Equatable Implementations](./anycolumn/equatable-implementations.md)
+- [Hashable Implementations](./anycolumn/hashable-implementations.md)
+- [RandomAccessCollection Implementations](./anycolumn/randomaccesscollection-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AnyColumnProtocol](anycolumnprotocol.md)
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [AnyColumnProtocol](./anycolumnprotocol.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [MutableCollection](../Swift/mutablecollection.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct AnyColumnSlice](anycolumnslice.md)
+### Type-Erased Columns
+- [struct AnyColumnSlice](./anycolumnslice.md)
   A type-erased column slice.
-- [protocol AnyColumnProtocol](anycolumnprotocol.md)
+- [protocol AnyColumnProtocol](./anycolumnprotocol.md)
   A type that represents a type-erased column.
-- [protocol AnyColumnPrototype](anycolumnprototype.md)
+- [protocol AnyColumnPrototype](./anycolumnprototype.md)
   A prototype that creates type-erased columns.
 
 

@@ -1,7 +1,8 @@
 # decrease
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that an important value decreased below a significant threshold.
 
@@ -26,15 +27,16 @@ Only plays feedback on watchOS and visionOS.
 
 ## See Also
 
-- [static let alignment: SensoryFeedback](sensoryfeedback/alignment.md)
+### Indicating changes and selections
+- [static let alignment: SensoryFeedback](./alignment.md)
   Indicates the alignment of a dragged item.
-- [static let increase: SensoryFeedback](sensoryfeedback/increase.md)
+- [static let increase: SensoryFeedback](./increase.md)
   Indicates that an important value increased above a significant threshold.
-- [static let levelChange: SensoryFeedback](sensoryfeedback/levelchange.md)
+- [static let levelChange: SensoryFeedback](./levelchange.md)
   Indicates movement between discrete levels of pressure.
-- [static let selection: SensoryFeedback](sensoryfeedback/selection.md)
+- [static let selection: SensoryFeedback](./selection.md)
   Indicates that a UI element’s values are changing.
-- [static let pathComplete: SensoryFeedback](sensoryfeedback/pathcomplete.md)
+- [static let pathComplete: SensoryFeedback](./pathcomplete.md)
   Indicates a drawn path has completed and/or recognized.
 
 

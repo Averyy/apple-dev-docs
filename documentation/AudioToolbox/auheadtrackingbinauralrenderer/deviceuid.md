@@ -1,7 +1,8 @@
 # deviceUID
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Unique Identifier (UID) of the Bluetooth headphone device providing IMU sensor data for head tracking.
 
@@ -16,9 +17,13 @@ The Unique Identifier (UID) of the Bluetooth headphone device providing IMU sens
 var deviceUID: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * deviceUID;
+```
+
 ## Mentions
 
-- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
+- [Rendering Spatial Audio from Bluetooth headphones](../rendering-spatial-audio-from-bluetooth-headphones.md)
 
 #### Discussion
 

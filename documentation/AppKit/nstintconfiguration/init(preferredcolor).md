@@ -1,7 +1,8 @@
 # init(preferredColor:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tint configuration for the system to use when the app’s preferred accent color is in use.
 
@@ -14,6 +15,10 @@ Creates a new tint configuration for the system to use when the app’s preferre
 convenience init(preferredColor color: NSColor)
 ```
 
+```objc
++ (instancetype) tintConfigurationWithPreferredColor:(NSColor *) color;
+```
+
 #### Discussion
 
 Use this tint configuration for custom colors designed to match app-specific accent colors, but doesn’t look appropriate matched with a user-selected color. The tint configuation only uses the preferred color when the system accent color is `Multicolor`. If the system accent color is any other color, the tint configuration defers to the accent color.
@@ -24,7 +29,8 @@ Use this tint configuration for custom colors designed to match app-specific acc
 
 ## See Also
 
-- [convenience init(fixedColor: NSColor)](nstintconfiguration/init(fixedcolor:).md)
+### Initializing a Tint Configuration
+- [convenience init(fixedColor: NSColor)](./init%28fixedcolor%29.md)
   Creates a new tint configuration using a specific color value.
 
 

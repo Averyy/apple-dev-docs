@@ -1,7 +1,8 @@
 # CoordinateSpaceProtocol
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A frame of reference within the layout system.
 
@@ -42,57 +43,58 @@ You don’t typically create types conforming to this protocol yourself. Instead
 ## Topics
 
 ### Getting built-in coordinate spaces
-- [static var immersiveSpace: NamedCoordinateSpace](coordinatespaceprotocol/immersivespace.md)
-  The named coordinate space that represents the currently opened [`ImmersiveSpace`](immersivespace.md) scene. If no immersive space is currently opened, this CoordinateSpace provides the same behavior as the `.global` coordinate space.
-- [static var global: GlobalCoordinateSpace](coordinatespaceprotocol/global.md)
+- [static var immersiveSpace: NamedCoordinateSpace](./coordinatespaceprotocol/immersivespace.md)
+  The named coordinate space that represents the currently opened [`ImmersiveSpace`](./immersivespace.md) scene. If no immersive space is currently opened, this CoordinateSpace provides the same behavior as the `.global` coordinate space.
+- [static var global: GlobalCoordinateSpace](./coordinatespaceprotocol/global.md)
   The global coordinate space at the root of the view hierarchy.
-- [static var local: LocalCoordinateSpace](coordinatespaceprotocol/local.md)
+- [static var local: LocalCoordinateSpace](./coordinatespaceprotocol/local.md)
   The local coordinate space of the current view.
-- [static func named(some Hashable) -> NamedCoordinateSpace](coordinatespaceprotocol/named(_:).md)
+- [static func named(some Hashable) -> NamedCoordinateSpace](./coordinatespaceprotocol/named%28_%29.md)
   Creates a named coordinate space using the given value.
-- [static var scrollView: NamedCoordinateSpace](coordinatespaceprotocol/scrollview.md)
+- [static var scrollView: NamedCoordinateSpace](./coordinatespaceprotocol/scrollview.md)
   The named coordinate space that is added by the system for the innermost containing scroll view.
-- [static func scrollView(axis: Axis) -> Self](coordinatespaceprotocol/scrollview(axis:).md)
+- [static func scrollView(axis: Axis) -> Self](./coordinatespaceprotocol/scrollview%28axis%29.md)
   The named coordinate space that is added by the system for the innermost containing scroll view that allows scrolling along the provided axis.
 ### Getting the resolved coordinate space
-- [var coordinateSpace: CoordinateSpace](coordinatespaceprotocol/coordinatespace.md)
+- [var coordinateSpace: CoordinateSpace](./coordinatespaceprotocol/coordinatespace.md)
   The resolved coordinate space.
 ### Supporting types
-- [struct GlobalCoordinateSpace](globalcoordinatespace.md)
+- [struct GlobalCoordinateSpace](./globalcoordinatespace.md)
   The global coordinate space at the root of the view hierarchy.
-- [struct LocalCoordinateSpace](localcoordinatespace.md)
+- [struct LocalCoordinateSpace](./localcoordinatespace.md)
   The local coordinate space of the current view.
-- [struct NamedCoordinateSpace](namedcoordinatespace.md)
+- [struct NamedCoordinateSpace](./namedcoordinatespace.md)
   A named coordinate space.
 
 ## Relationships
 
 ### Conforming Types
-- [GlobalCoordinateSpace](globalcoordinatespace.md)
-- [LocalCoordinateSpace](localcoordinatespace.md)
-- [NamedCoordinateSpace](namedcoordinatespace.md)
+- [GlobalCoordinateSpace](./globalcoordinatespace.md)
+- [LocalCoordinateSpace](./localcoordinatespace.md)
+- [NamedCoordinateSpace](./namedcoordinatespace.md)
 
 ## See Also
 
-- [struct GeometryReader](geometryreader.md)
+### Measuring a view
+- [struct GeometryReader](./geometryreader.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryReader3D](geometryreader3d.md)
+- [struct GeometryReader3D](./geometryreader3d.md)
   A container view that defines its content as a function of its own size and coordinate space.
-- [struct GeometryProxy](geometryproxy.md)
+- [struct GeometryProxy](./geometryproxy.md)
   A proxy for access to the size and coordinate space (for anchor resolution) of the container view.
-- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](geometryproxy/reservedregions(kind:options:layoutdirectionbehavior:).md)
+- [func reservedRegions(kind: ReservedRegion.Kind, options: ReservedRegion.QueryOptions, layoutDirectionBehavior: LayoutDirectionBehavior) -> [ReservedRegion]](./geometryproxy/reservedregions%28kind,options,layoutdirectionbehavior%29.md)
   Returns an array of reserved regions that match the selection options you specify.
-- [struct ReservedRegion](reservedregion.md)
+- [struct ReservedRegion](./reservedregion.md)
   A region within a view’s coordinate space that another entity reserves.
-- [struct GeometryProxy3D](geometryproxy3d.md)
+- [struct GeometryProxy3D](./geometryproxy3d.md)
   A proxy for access to the size and coordinate space of the container view.
-- [func coordinateSpace(NamedCoordinateSpace) -> some View](view/coordinatespace(_:).md)
+- [func coordinateSpace(NamedCoordinateSpace) -> some View](./view/coordinatespace%28_%29.md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
-- [enum CoordinateSpace](coordinatespace.md)
+- [enum CoordinateSpace](./coordinatespace.md)
   A resolved coordinate space created by the coordinate space protocol.
-- [struct PhysicalMetric](physicalmetric.md)
+- [struct PhysicalMetric](./physicalmetric.md)
   Provides access to a value in points that corresponds to the specified physical measurement.
-- [struct PhysicalMetricsConverter](physicalmetricsconverter.md)
+- [struct PhysicalMetricsConverter](./physicalmetricsconverter.md)
   A physical metrics converter provides conversion between point values and their extent in 3D space, in the form of physical length measurements.
 
 
